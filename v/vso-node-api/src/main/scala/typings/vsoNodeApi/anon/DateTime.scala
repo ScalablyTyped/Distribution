@@ -38,8 +38,7 @@ trait DateTime extends StObject {
 }
 object DateTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boolean: scala.Double,
     dateTime: scala.Double,
     double: scala.Double,
@@ -60,52 +59,36 @@ object DateTime {
     __obj.asInstanceOf[DateTime]
   }
   
-  @scala.inline
-  implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
+  extension [Self <: DateTime](x: Self) {
     
-    @scala.inline
-    def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDouble(value: scala.Double): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
+    inline def setDouble(value: scala.Double): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: scala.Double): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: scala.Double): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistory(value: scala.Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: scala.Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: scala.Double): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: scala.Double): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: scala.Double): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: scala.Double): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteger(value: scala.Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+    inline def setInteger(value: scala.Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicklistDouble(value: scala.Double): Self = StObject.set(x, "picklistDouble", value.asInstanceOf[js.Any])
+    inline def setPicklistDouble(value: scala.Double): Self = StObject.set(x, "picklistDouble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicklistInteger(value: scala.Double): Self = StObject.set(x, "picklistInteger", value.asInstanceOf[js.Any])
+    inline def setPicklistInteger(value: scala.Double): Self = StObject.set(x, "picklistInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicklistString(value: scala.Double): Self = StObject.set(x, "picklistString", value.asInstanceOf[js.Any])
+    inline def setPicklistString(value: scala.Double): Self = StObject.set(x, "picklistString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlainText(value: scala.Double): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
+    inline def setPlainText(value: scala.Double): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamProject(value: scala.Double): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
+    inline def setTeamProject(value: scala.Double): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreePath(value: scala.Double): Self = StObject.set(x, "treePath", value.asInstanceOf[js.Any])
+    inline def setTreePath(value: scala.Double): Self = StObject.set(x, "treePath", value.asInstanceOf[js.Any])
   }
 }

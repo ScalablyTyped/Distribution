@@ -20,8 +20,7 @@ trait EmptyArray extends StObject {
 }
 object EmptyArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emptyArray: () => js.Array[scala.Nothing],
     `false`: () => Boolean,
     `null`: () => Null,
@@ -37,25 +36,18 @@ object EmptyArray {
     __obj.asInstanceOf[EmptyArray]
   }
   
-  @scala.inline
-  implicit class EmptyArrayMutableBuilder[Self <: EmptyArray] (val x: Self) extends AnyVal {
+  extension [Self <: EmptyArray](x: Self) {
     
-    @scala.inline
-    def setEmptyArray(value: () => js.Array[scala.Nothing]): Self = StObject.set(x, "emptyArray", js.Any.fromFunction0(value))
+    inline def setEmptyArray(value: () => js.Array[scala.Nothing]): Self = StObject.set(x, "emptyArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFalse(value: () => Boolean): Self = StObject.set(x, "false", js.Any.fromFunction0(value))
+    inline def setFalse(value: () => Boolean): Self = StObject.set(x, "false", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNull(value: () => Null): Self = StObject.set(x, "null", js.Any.fromFunction0(value))
+    inline def setNull(value: () => Null): Self = StObject.set(x, "null", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrue(value: () => Boolean): Self = StObject.set(x, "true", js.Any.fromFunction0(value))
+    inline def setTrue(value: () => Boolean): Self = StObject.set(x, "true", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUndefined(value: () => Unit): Self = StObject.set(x, "undefined", js.Any.fromFunction0(value))
+    inline def setUndefined(value: () => Unit): Self = StObject.set(x, "undefined", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def `setUse strict`(value: () => String): Self = StObject.set(x, "use strict", js.Any.fromFunction0(value))
+    inline def `setUse strict`(value: () => String): Self = StObject.set(x, "use strict", js.Any.fromFunction0(value))
   }
 }

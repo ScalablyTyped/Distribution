@@ -10,19 +10,15 @@ trait LocalCityOptions extends StObject {
 }
 object LocalCityOptions {
   
-  @scala.inline
-  def apply(): LocalCityOptions = {
+  inline def apply(): LocalCityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalCityOptions]
   }
   
-  @scala.inline
-  implicit class LocalCityOptionsMutableBuilder[Self <: LocalCityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocalCityOptions](x: Self) {
     
-    @scala.inline
-    def setRenderOptions(value: RenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
+    inline def setRenderOptions(value: RenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
+    inline def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
   }
 }

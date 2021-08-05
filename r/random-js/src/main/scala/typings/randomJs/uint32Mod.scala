@@ -11,6 +11,5 @@ object uint32Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def uint32(engine: Engine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uint32")(engine.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def uint32(engine: Engine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uint32")(engine.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

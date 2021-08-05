@@ -10,15 +10,11 @@ object msilo {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mdump(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mdump")().asInstanceOf[Double]
+  inline def mdump(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mdump")().asInstanceOf[Double]
   
-  @scala.inline
-  def mdumpUri(owner_s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mdump_uri")(owner_s.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def mdumpUri(owner_s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mdump_uri")(owner_s.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def mstore(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mstore")().asInstanceOf[Double]
+  inline def mstore(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mstore")().asInstanceOf[Double]
   
-  @scala.inline
-  def mstoreUri(owner_s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mstore_uri")(owner_s.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def mstoreUri(owner_s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mstore_uri")(owner_s.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

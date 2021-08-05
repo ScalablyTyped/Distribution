@@ -20,6 +20,5 @@ object NoncentralT {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fnm(nu: Double, mu: Double, x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fnm")(nu.asInstanceOf[js.Any], mu.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fnm(nu: Double, mu: Double, x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fnm")(nu.asInstanceOf[js.Any], mu.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

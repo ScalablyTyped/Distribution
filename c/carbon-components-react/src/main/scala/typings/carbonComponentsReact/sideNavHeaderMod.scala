@@ -26,29 +26,22 @@ object sideNavHeaderMod extends Shortcut {
   }
   object SideNavHeaderProps {
     
-    @scala.inline
-    def apply(renderIcon: js.Any): SideNavHeaderProps = {
+    inline def apply(renderIcon: js.Any): SideNavHeaderProps = {
       val __obj = js.Dynamic.literal(renderIcon = renderIcon.asInstanceOf[js.Any])
       __obj.asInstanceOf[SideNavHeaderProps]
     }
     
-    @scala.inline
-    implicit class SideNavHeaderPropsMutableBuilder[Self <: SideNavHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavHeaderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
     }
   }
   

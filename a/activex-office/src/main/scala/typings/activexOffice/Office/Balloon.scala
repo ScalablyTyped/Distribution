@@ -36,7 +36,7 @@ trait Balloon extends StObject {
   
   val Name: String
   
-  @JSName("Office.Balloon_typekey")
+  /* private */ @JSName("Office.Balloon_typekey")
   var OfficeDotBalloon_typekey: Balloon
   
   val Parent: js.Any
@@ -51,8 +51,7 @@ trait Balloon extends StObject {
 }
 object Balloon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Animation: MsoAnimationType,
     Application: js.Any,
     BalloonType: MsoBalloonType,
@@ -78,64 +77,44 @@ object Balloon {
     __obj.asInstanceOf[Balloon]
   }
   
-  @scala.inline
-  implicit class BalloonMutableBuilder[Self <: Balloon] (val x: Self) extends AnyVal {
+  extension [Self <: Balloon](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: MsoAnimationType): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: MsoAnimationType): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBalloonType(value: MsoBalloonType): Self = StObject.set(x, "BalloonType", value.asInstanceOf[js.Any])
+    inline def setBalloonType(value: MsoBalloonType): Self = StObject.set(x, "BalloonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: MsoButtonSetType): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
+    inline def setButton(value: MsoButtonSetType): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallback(value: String): Self = StObject.set(x, "Callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: String): Self = StObject.set(x, "Callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxes(value: BalloonCheckboxes): Self = StObject.set(x, "Checkboxes", value.asInstanceOf[js.Any])
+    inline def setCheckboxes(value: BalloonCheckboxes): Self = StObject.set(x, "Checkboxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeading(value: String): Self = StObject.set(x, "Heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: String): Self = StObject.set(x, "Heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: MsoIconType): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: MsoIconType): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: BalloonLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: BalloonLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: MsoModeType): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: MsoModeType): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotBalloon_typekey(value: Balloon): Self = StObject.set(x, "Office.Balloon_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotBalloon_typekey(value: Balloon): Self = StObject.set(x, "Office.Balloon_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Double): Self = StObject.set(x, "Private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Double): Self = StObject.set(x, "Private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAvoidRectangle(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "SetAvoidRectangle", js.Any.fromFunction4(value))
+    inline def setSetAvoidRectangle(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "SetAvoidRectangle", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setShow(value: () => MsoBalloonButtonType): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => MsoBalloonButtonType): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait CloudwatchLog extends StObject {
 }
 object CloudwatchLog {
   
-  @scala.inline
-  def apply(filter: String, logGroup: String): CloudwatchLog = {
+  inline def apply(filter: String, logGroup: String): CloudwatchLog = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], logGroup = logGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudwatchLog]
   }
   
-  @scala.inline
-  implicit class CloudwatchLogMutableBuilder[Self <: CloudwatchLog] (val x: Self) extends AnyVal {
+  extension [Self <: CloudwatchLog](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
+    inline def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -24,31 +24,23 @@ trait EnableRequest extends StObject {
 }
 object EnableRequest {
   
-  @scala.inline
-  def apply(): EnableRequest = {
+  inline def apply(): EnableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableRequest]
   }
   
-  @scala.inline
-  implicit class EnableRequestMutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableRequest](x: Self) {
     
-    @scala.inline
-    def setMaxPostDataSize(value: integer): Self = StObject.set(x, "maxPostDataSize", value.asInstanceOf[js.Any])
+    inline def setMaxPostDataSize(value: integer): Self = StObject.set(x, "maxPostDataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPostDataSizeUndefined: Self = StObject.set(x, "maxPostDataSize", js.undefined)
+    inline def setMaxPostDataSizeUndefined: Self = StObject.set(x, "maxPostDataSize", js.undefined)
     
-    @scala.inline
-    def setMaxResourceBufferSize(value: integer): Self = StObject.set(x, "maxResourceBufferSize", value.asInstanceOf[js.Any])
+    inline def setMaxResourceBufferSize(value: integer): Self = StObject.set(x, "maxResourceBufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResourceBufferSizeUndefined: Self = StObject.set(x, "maxResourceBufferSize", js.undefined)
+    inline def setMaxResourceBufferSizeUndefined: Self = StObject.set(x, "maxResourceBufferSize", js.undefined)
     
-    @scala.inline
-    def setMaxTotalBufferSize(value: integer): Self = StObject.set(x, "maxTotalBufferSize", value.asInstanceOf[js.Any])
+    inline def setMaxTotalBufferSize(value: integer): Self = StObject.set(x, "maxTotalBufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTotalBufferSizeUndefined: Self = StObject.set(x, "maxTotalBufferSize", js.undefined)
+    inline def setMaxTotalBufferSizeUndefined: Self = StObject.set(x, "maxTotalBufferSize", js.undefined)
   }
 }

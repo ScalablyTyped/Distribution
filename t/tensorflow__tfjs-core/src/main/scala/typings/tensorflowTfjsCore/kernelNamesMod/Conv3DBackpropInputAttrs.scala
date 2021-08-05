@@ -16,8 +16,7 @@ trait Conv3DBackpropInputAttrs extends StObject {
 }
 object Conv3DBackpropInputAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputShape: js.Tuple5[Double, Double, Double, Double, Double],
     pad: valid_ | same_,
     strides: (js.Tuple3[Double, Double, Double]) | Double
@@ -26,16 +25,12 @@ object Conv3DBackpropInputAttrs {
     __obj.asInstanceOf[Conv3DBackpropInputAttrs]
   }
   
-  @scala.inline
-  implicit class Conv3DBackpropInputAttrsMutableBuilder[Self <: Conv3DBackpropInputAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: Conv3DBackpropInputAttrs](x: Self) {
     
-    @scala.inline
-    def setInputShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
+    inline def setInputShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

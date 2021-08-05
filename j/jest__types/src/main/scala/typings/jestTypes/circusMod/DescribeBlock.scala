@@ -24,8 +24,7 @@ trait DescribeBlock extends StObject {
 }
 object DescribeBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[DescribeBlock | TestEntry],
     hooks: js.Array[Hook],
     mode: BlockMode,
@@ -37,40 +36,28 @@ object DescribeBlock {
     __obj.asInstanceOf[DescribeBlock]
   }
   
-  @scala.inline
-  implicit class DescribeBlockMutableBuilder[Self <: DescribeBlock] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBlock](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[DescribeBlock | TestEntry]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[DescribeBlock | TestEntry]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (DescribeBlock | TestEntry)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (DescribeBlock | TestEntry)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setHooks(value: js.Array[Hook]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: js.Array[Hook]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksVarargs(value: Hook*): Self = StObject.set(x, "hooks", js.Array(value :_*))
+    inline def setHooksVarargs(value: Hook*): Self = StObject.set(x, "hooks", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: BlockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: BlockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: BlockName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BlockName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: DescribeBlock): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: DescribeBlock): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setTests(value: js.Array[TestEntry]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    inline def setTests(value: js.Array[TestEntry]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsVarargs(value: TestEntry*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: TestEntry*): Self = StObject.set(x, "tests", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: describeBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: describeBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

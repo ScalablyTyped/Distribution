@@ -19,8 +19,7 @@ trait IJsonValueStatics extends StObject {
 }
 object IJsonValueStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createBooleanValue: Boolean => JsonValue,
     createNumberValue: Double => JsonValue,
     createStringValue: String => JsonValue,
@@ -31,22 +30,16 @@ object IJsonValueStatics {
     __obj.asInstanceOf[IJsonValueStatics]
   }
   
-  @scala.inline
-  implicit class IJsonValueStaticsMutableBuilder[Self <: IJsonValueStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonValueStatics](x: Self) {
     
-    @scala.inline
-    def setCreateBooleanValue(value: Boolean => JsonValue): Self = StObject.set(x, "createBooleanValue", js.Any.fromFunction1(value))
+    inline def setCreateBooleanValue(value: Boolean => JsonValue): Self = StObject.set(x, "createBooleanValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNumberValue(value: Double => JsonValue): Self = StObject.set(x, "createNumberValue", js.Any.fromFunction1(value))
+    inline def setCreateNumberValue(value: Double => JsonValue): Self = StObject.set(x, "createNumberValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateStringValue(value: String => JsonValue): Self = StObject.set(x, "createStringValue", js.Any.fromFunction1(value))
+    inline def setCreateStringValue(value: String => JsonValue): Self = StObject.set(x, "createStringValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParse(value: String => JsonValue): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => JsonValue): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryParse(value: String => Result): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
+    inline def setTryParse(value: String => Result): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
   }
 }

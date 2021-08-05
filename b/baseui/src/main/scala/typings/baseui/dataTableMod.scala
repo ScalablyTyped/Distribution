@@ -25,11 +25,9 @@ object dataTableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AnchorColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchorColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def AnchorColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AnchorColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def BooleanColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BooleanColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def BooleanColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BooleanColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait COLUMNS extends StObject {
     
@@ -53,40 +51,29 @@ object dataTableMod {
     @js.native
     val ^ : COLUMNS = js.native
     
-    @scala.inline
-    implicit class COLUMNSMutableBuilder[Self <: COLUMNS] (val x: Self) extends AnyVal {
+    extension [Self <: COLUMNS](x: Self) {
       
-      @scala.inline
-      def setANCHOR(value: ANCHOR): Self = StObject.set(x, "ANCHOR", value.asInstanceOf[js.Any])
+      inline def setANCHOR(value: ANCHOR): Self = StObject.set(x, "ANCHOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBOOLEAN(value: BOOLEAN): Self = StObject.set(x, "BOOLEAN", value.asInstanceOf[js.Any])
+      inline def setBOOLEAN(value: BOOLEAN): Self = StObject.set(x, "BOOLEAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCATEGORICAL(value: CATEGORICAL): Self = StObject.set(x, "CATEGORICAL", value.asInstanceOf[js.Any])
+      inline def setCATEGORICAL(value: CATEGORICAL): Self = StObject.set(x, "CATEGORICAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCUSTOM(value: CUSTOM): Self = StObject.set(x, "CUSTOM", value.asInstanceOf[js.Any])
+      inline def setCUSTOM(value: CUSTOM): Self = StObject.set(x, "CUSTOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDATETIME(value: DATETIME): Self = StObject.set(x, "DATETIME", value.asInstanceOf[js.Any])
+      inline def setDATETIME(value: DATETIME): Self = StObject.set(x, "DATETIME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMERICAL(value: NUMERICAL): Self = StObject.set(x, "NUMERICAL", value.asInstanceOf[js.Any])
+      inline def setNUMERICAL(value: NUMERICAL): Self = StObject.set(x, "NUMERICAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTRING(value: STRING): Self = StObject.set(x, "STRING", value.asInstanceOf[js.Any])
+      inline def setSTRING(value: STRING): Self = StObject.set(x, "STRING", value.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def CategoricalColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CategoricalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def CategoricalColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CategoricalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def CustomColumn[ValueT, FilterParamsT](options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def CustomColumn[ValueT, FilterParamsT](options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def DatetimeColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DatetimeColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def DatetimeColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DatetimeColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait NUMERICAL_FORMATS extends StObject {
     
@@ -102,22 +89,17 @@ object dataTableMod {
     @js.native
     val ^ : NUMERICAL_FORMATS = js.native
     
-    @scala.inline
-    implicit class NUMERICAL_FORMATSMutableBuilder[Self <: NUMERICAL_FORMATS] (val x: Self) extends AnyVal {
+    extension [Self <: NUMERICAL_FORMATS](x: Self) {
       
-      @scala.inline
-      def setACCOUNTING(value: ACCOUNTING): Self = StObject.set(x, "ACCOUNTING", value.asInstanceOf[js.Any])
+      inline def setACCOUNTING(value: ACCOUNTING): Self = StObject.set(x, "ACCOUNTING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEFAULT(value: DEFAULT): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
+      inline def setDEFAULT(value: DEFAULT): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPERCENTAGE(value: PERCENTAGE): Self = StObject.set(x, "PERCENTAGE", value.asInstanceOf[js.Any])
+      inline def setPERCENTAGE(value: PERCENTAGE): Self = StObject.set(x, "PERCENTAGE", value.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def NumericalColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("NumericalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def NumericalColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("NumericalColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait SORT_DIRECTIONS extends StObject {
     
@@ -131,14 +113,11 @@ object dataTableMod {
     @js.native
     val ^ : SORT_DIRECTIONS = js.native
     
-    @scala.inline
-    implicit class SORT_DIRECTIONSMutableBuilder[Self <: SORT_DIRECTIONS] (val x: Self) extends AnyVal {
+    extension [Self <: SORT_DIRECTIONS](x: Self) {
       
-      @scala.inline
-      def setASC(value: ASC): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
+      inline def setASC(value: ASC): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESC(value: DESC): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
+      inline def setDESC(value: DESC): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,8 +133,7 @@ object dataTableMod {
     def this(props: js.Any, context: js.Any) = this()
   }
   
-  @scala.inline
-  def StringColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("StringColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def StringColumn(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("StringColumn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait BatchActionT extends StObject {
     
@@ -167,26 +145,20 @@ object dataTableMod {
   }
   object BatchActionT {
     
-    @scala.inline
-    def apply(label: String, onClick: ClearSelection => js.Any): BatchActionT = {
+    inline def apply(label: String, onClick: ClearSelection => js.Any): BatchActionT = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[BatchActionT]
     }
     
-    @scala.inline
-    implicit class BatchActionTMutableBuilder[Self <: BatchActionT] (val x: Self) extends AnyVal {
+    extension [Self <: BatchActionT](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: ClearSelection => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: ClearSelection => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
+      inline def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
     }
   }
   
@@ -206,50 +178,36 @@ object dataTableMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(columns: js.Array[ColumnT], rows: js.Array[RowT]): Props = {
+    inline def apply(columns: js.Array[ColumnT], rows: js.Array[RowT]): Props = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setBatchActions(value: js.Array[BatchActionT]): Self = StObject.set(x, "batchActions", value.asInstanceOf[js.Any])
+      inline def setBatchActions(value: js.Array[BatchActionT]): Self = StObject.set(x, "batchActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchActionsUndefined: Self = StObject.set(x, "batchActions", js.undefined)
+      inline def setBatchActionsUndefined: Self = StObject.set(x, "batchActions", js.undefined)
       
-      @scala.inline
-      def setBatchActionsVarargs(value: BatchActionT*): Self = StObject.set(x, "batchActions", js.Array(value :_*))
+      inline def setBatchActionsVarargs(value: BatchActionT*): Self = StObject.set(x, "batchActions", js.Array(value :_*))
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnT]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnT]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: ColumnT*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnT*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setOnSelectionChange(value: /* rows */ js.Array[RowT] => js.Any): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
+      inline def setOnSelectionChange(value: /* rows */ js.Array[RowT] => js.Any): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
+      inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
-      @scala.inline
-      def setRowActions(value: js.Array[RowActionT]): Self = StObject.set(x, "rowActions", value.asInstanceOf[js.Any])
+      inline def setRowActions(value: js.Array[RowActionT]): Self = StObject.set(x, "rowActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowActionsUndefined: Self = StObject.set(x, "rowActions", js.undefined)
+      inline def setRowActionsUndefined: Self = StObject.set(x, "rowActions", js.undefined)
       
-      @scala.inline
-      def setRowActionsVarargs(value: RowActionT*): Self = StObject.set(x, "rowActions", js.Array(value :_*))
+      inline def setRowActionsVarargs(value: RowActionT*): Self = StObject.set(x, "rowActions", js.Array(value :_*))
       
-      @scala.inline
-      def setRows(value: js.Array[RowT]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[RowT]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: RowT*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: RowT*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
   
@@ -263,23 +221,18 @@ object dataTableMod {
   }
   object RowActionT {
     
-    @scala.inline
-    def apply(label: String, onClick: Event => js.Any, renderIcon: js.Any): RowActionT = {
+    inline def apply(label: String, onClick: Event => js.Any, renderIcon: js.Any): RowActionT = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), renderIcon = renderIcon.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowActionT]
     }
     
-    @scala.inline
-    implicit class RowActionTMutableBuilder[Self <: RowActionT] (val x: Self) extends AnyVal {
+    extension [Self <: RowActionT](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -291,20 +244,16 @@ object dataTableMod {
   }
   object RowT {
     
-    @scala.inline
-    def apply(data: js.Any, id: Double | String): RowT = {
+    inline def apply(data: js.Any, id: Double | String): RowT = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowT]
     }
     
-    @scala.inline
-    implicit class RowTMutableBuilder[Self <: RowT] (val x: Self) extends AnyVal {
+    extension [Self <: RowT](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

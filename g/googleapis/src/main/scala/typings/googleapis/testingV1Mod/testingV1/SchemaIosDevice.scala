@@ -35,37 +35,27 @@ trait SchemaIosDevice extends StObject {
 }
 object SchemaIosDevice {
   
-  @scala.inline
-  def apply(): SchemaIosDevice = {
+  inline def apply(): SchemaIosDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIosDevice]
   }
   
-  @scala.inline
-  implicit class SchemaIosDeviceMutableBuilder[Self <: SchemaIosDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIosDevice](x: Self) {
     
-    @scala.inline
-    def setIosModelId(value: String): Self = StObject.set(x, "iosModelId", value.asInstanceOf[js.Any])
+    inline def setIosModelId(value: String): Self = StObject.set(x, "iosModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosModelIdUndefined: Self = StObject.set(x, "iosModelId", js.undefined)
+    inline def setIosModelIdUndefined: Self = StObject.set(x, "iosModelId", js.undefined)
     
-    @scala.inline
-    def setIosVersionId(value: String): Self = StObject.set(x, "iosVersionId", value.asInstanceOf[js.Any])
+    inline def setIosVersionId(value: String): Self = StObject.set(x, "iosVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosVersionIdUndefined: Self = StObject.set(x, "iosVersionId", js.undefined)
+    inline def setIosVersionIdUndefined: Self = StObject.set(x, "iosVersionId", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

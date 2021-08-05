@@ -28,8 +28,7 @@ trait BootstrapClientAccordionItemEventArgs
 }
 object BootstrapClientAccordionItemEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     htmlElement: js.Any,
     htmlEvent: js.Any,
     item: BootstrapClientAccordionItem,
@@ -39,16 +38,12 @@ object BootstrapClientAccordionItemEventArgs {
     __obj.asInstanceOf[BootstrapClientAccordionItemEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientAccordionItemEventArgsMutableBuilder[Self <: BootstrapClientAccordionItemEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientAccordionItemEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: BootstrapClientAccordionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: BootstrapClientAccordionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

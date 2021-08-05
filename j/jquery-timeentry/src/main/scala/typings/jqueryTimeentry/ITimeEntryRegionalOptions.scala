@@ -43,49 +43,35 @@ trait ITimeEntryRegionalOptions extends StObject {
 }
 object ITimeEntryRegionalOptions {
   
-  @scala.inline
-  def apply(): ITimeEntryRegionalOptions = {
+  inline def apply(): ITimeEntryRegionalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITimeEntryRegionalOptions]
   }
   
-  @scala.inline
-  implicit class ITimeEntryRegionalOptionsMutableBuilder[Self <: ITimeEntryRegionalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITimeEntryRegionalOptions](x: Self) {
     
-    @scala.inline
-    def setAmpmNames(value: js.Array[String]): Self = StObject.set(x, "ampmNames", value.asInstanceOf[js.Any])
+    inline def setAmpmNames(value: js.Array[String]): Self = StObject.set(x, "ampmNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmpmNamesUndefined: Self = StObject.set(x, "ampmNames", js.undefined)
+    inline def setAmpmNamesUndefined: Self = StObject.set(x, "ampmNames", js.undefined)
     
-    @scala.inline
-    def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value :_*))
+    inline def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value :_*))
     
-    @scala.inline
-    def setAmpmPrefix(value: String): Self = StObject.set(x, "ampmPrefix", value.asInstanceOf[js.Any])
+    inline def setAmpmPrefix(value: String): Self = StObject.set(x, "ampmPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmpmPrefixUndefined: Self = StObject.set(x, "ampmPrefix", js.undefined)
+    inline def setAmpmPrefixUndefined: Self = StObject.set(x, "ampmPrefix", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setShow24Hours(value: Boolean): Self = StObject.set(x, "show24Hours", value.asInstanceOf[js.Any])
+    inline def setShow24Hours(value: Boolean): Self = StObject.set(x, "show24Hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow24HoursUndefined: Self = StObject.set(x, "show24Hours", js.undefined)
+    inline def setShow24HoursUndefined: Self = StObject.set(x, "show24Hours", js.undefined)
     
-    @scala.inline
-    def setSpinnerTexts(value: js.Array[String]): Self = StObject.set(x, "spinnerTexts", value.asInstanceOf[js.Any])
+    inline def setSpinnerTexts(value: js.Array[String]): Self = StObject.set(x, "spinnerTexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpinnerTextsUndefined: Self = StObject.set(x, "spinnerTexts", js.undefined)
+    inline def setSpinnerTextsUndefined: Self = StObject.set(x, "spinnerTexts", js.undefined)
     
-    @scala.inline
-    def setSpinnerTextsVarargs(value: String*): Self = StObject.set(x, "spinnerTexts", js.Array(value :_*))
+    inline def setSpinnerTextsVarargs(value: String*): Self = StObject.set(x, "spinnerTexts", js.Array(value :_*))
   }
 }

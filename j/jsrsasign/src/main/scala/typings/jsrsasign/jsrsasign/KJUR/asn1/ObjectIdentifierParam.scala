@@ -10,16 +10,13 @@ trait ObjectIdentifierParam extends StObject {
 }
 object ObjectIdentifierParam {
   
-  @scala.inline
-  def apply(oid: String): ObjectIdentifierParam = {
+  inline def apply(oid: String): ObjectIdentifierParam = {
     val __obj = js.Dynamic.literal(oid = oid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectIdentifierParam]
   }
   
-  @scala.inline
-  implicit class ObjectIdentifierParamMutableBuilder[Self <: ObjectIdentifierParam] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectIdentifierParam](x: Self) {
     
-    @scala.inline
-    def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+    inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
   }
 }

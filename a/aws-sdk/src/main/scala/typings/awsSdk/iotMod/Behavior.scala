@@ -28,34 +28,25 @@ trait Behavior extends StObject {
 }
 object Behavior {
   
-  @scala.inline
-  def apply(name: BehaviorName): Behavior = {
+  inline def apply(name: BehaviorName): Behavior = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Behavior]
   }
   
-  @scala.inline
-  implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
+  extension [Self <: Behavior](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: BehaviorCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: BehaviorCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setMetric(value: BehaviorMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: BehaviorMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDimension(value: MetricDimension): Self = StObject.set(x, "metricDimension", value.asInstanceOf[js.Any])
+    inline def setMetricDimension(value: MetricDimension): Self = StObject.set(x, "metricDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDimensionUndefined: Self = StObject.set(x, "metricDimension", js.undefined)
+    inline def setMetricDimensionUndefined: Self = StObject.set(x, "metricDimension", js.undefined)
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setName(value: BehaviorName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BehaviorName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

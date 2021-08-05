@@ -17,8 +17,7 @@ trait FlashMath extends StObject {
 }
 object FlashMath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     concatMatrix: (FlashMatrix, FlashMatrix) => FlashMatrix,
     invertMatrix: FlashMatrix => FlashMatrix,
     pointDistance: (FlashPoint, FlashPoint) => Double
@@ -27,16 +26,12 @@ object FlashMath {
     __obj.asInstanceOf[FlashMath]
   }
   
-  @scala.inline
-  implicit class FlashMathMutableBuilder[Self <: FlashMath] (val x: Self) extends AnyVal {
+  extension [Self <: FlashMath](x: Self) {
     
-    @scala.inline
-    def setConcatMatrix(value: (FlashMatrix, FlashMatrix) => FlashMatrix): Self = StObject.set(x, "concatMatrix", js.Any.fromFunction2(value))
+    inline def setConcatMatrix(value: (FlashMatrix, FlashMatrix) => FlashMatrix): Self = StObject.set(x, "concatMatrix", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInvertMatrix(value: FlashMatrix => FlashMatrix): Self = StObject.set(x, "invertMatrix", js.Any.fromFunction1(value))
+    inline def setInvertMatrix(value: FlashMatrix => FlashMatrix): Self = StObject.set(x, "invertMatrix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPointDistance(value: (FlashPoint, FlashPoint) => Double): Self = StObject.set(x, "pointDistance", js.Any.fromFunction2(value))
+    inline def setPointDistance(value: (FlashPoint, FlashPoint) => Double): Self = StObject.set(x, "pointDistance", js.Any.fromFunction2(value))
   }
 }

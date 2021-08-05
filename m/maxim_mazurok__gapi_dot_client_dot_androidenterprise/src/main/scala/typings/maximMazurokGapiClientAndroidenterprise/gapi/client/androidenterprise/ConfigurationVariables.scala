@@ -14,28 +14,21 @@ trait ConfigurationVariables extends StObject {
 }
 object ConfigurationVariables {
   
-  @scala.inline
-  def apply(): ConfigurationVariables = {
+  inline def apply(): ConfigurationVariables = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationVariables]
   }
   
-  @scala.inline
-  implicit class ConfigurationVariablesMutableBuilder[Self <: ConfigurationVariables] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationVariables](x: Self) {
     
-    @scala.inline
-    def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
+    inline def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
+    inline def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
     
-    @scala.inline
-    def setVariableSet(value: js.Array[VariableSet]): Self = StObject.set(x, "variableSet", value.asInstanceOf[js.Any])
+    inline def setVariableSet(value: js.Array[VariableSet]): Self = StObject.set(x, "variableSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableSetUndefined: Self = StObject.set(x, "variableSet", js.undefined)
+    inline def setVariableSetUndefined: Self = StObject.set(x, "variableSet", js.undefined)
     
-    @scala.inline
-    def setVariableSetVarargs(value: VariableSet*): Self = StObject.set(x, "variableSet", js.Array(value :_*))
+    inline def setVariableSetVarargs(value: VariableSet*): Self = StObject.set(x, "variableSet", js.Array(value :_*))
   }
 }

@@ -14,22 +14,17 @@ trait Large extends StObject {
 }
 object Large {
   
-  @scala.inline
-  def apply(large: scala.Double, medium: scala.Double, small: scala.Double): Large = {
+  inline def apply(large: scala.Double, medium: scala.Double, small: scala.Double): Large = {
     val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
     __obj.asInstanceOf[Large]
   }
   
-  @scala.inline
-  implicit class LargeMutableBuilder[Self <: Large] (val x: Self) extends AnyVal {
+  extension [Self <: Large](x: Self) {
     
-    @scala.inline
-    def setLarge(value: scala.Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: scala.Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedium(value: scala.Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: scala.Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmall(value: scala.Double): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: scala.Double): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
   }
 }

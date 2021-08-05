@@ -19,20 +19,16 @@ object rowEdit {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.rowEdit.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.rowEdit.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.rowEdit.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.rowEdit.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.rowEdit.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setRowEditWaitInterval(value: Double): Self = StObject.set(x, "rowEditWaitInterval", value.asInstanceOf[js.Any])
+      inline def setRowEditWaitInterval(value: Double): Self = StObject.set(x, "rowEditWaitInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowEditWaitIntervalUndefined: Self = StObject.set(x, "rowEditWaitInterval", js.undefined)
+      inline def setRowEditWaitIntervalUndefined: Self = StObject.set(x, "rowEditWaitInterval", js.undefined)
     }
   }
   

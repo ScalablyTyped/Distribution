@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LineMap protected () extends StObject {
   def this(text: String) = this()
   
-  var computeLineStarts: js.Any = js.native
+  /* private */ var computeLineStarts: js.Any = js.native
   
   def formatOffset(pos: Double): String = js.native
   
   def lineCount: Double = js.native
   
-  var lineStarts: js.Any = js.native
+  /* private */ var lineStarts: js.Any = js.native
   
   def offsetAt(position: Position2): Double = js.native
   
   def positionAt(offset: Double): Position2 = js.native
   
-  var text: js.Any = js.native
+  /* private */ var text: js.Any = js.native
 }

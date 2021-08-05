@@ -19,17 +19,14 @@ object flag {
   }
   object Flag {
     
-    @scala.inline
-    def apply(close: () => Unit): Flag = {
+    inline def apply(close: () => Unit): Flag = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
       __obj.asInstanceOf[Flag]
     }
     
-    @scala.inline
-    implicit class FlagMutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
+    extension [Self <: Flag](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
   }
 }

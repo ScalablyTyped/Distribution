@@ -19,15 +19,15 @@ object directiveResolverMod {
   class DirectiveResolver protected () extends StObject {
     def this(_reflector: CompileReflector) = this()
     
-    var _dedupeBindings: js.Any = js.native
+    /* private */ var _dedupeBindings: js.Any = js.native
     
-    var _extractPublicName: js.Any = js.native
+    /* private */ var _extractPublicName: js.Any = js.native
     
-    var _merge: js.Any = js.native
+    /* private */ var _merge: js.Any = js.native
     
-    var _mergeWithPropertyMetadata: js.Any = js.native
+    /* private */ var _mergeWithPropertyMetadata: js.Any = js.native
     
-    var _reflector: js.Any = js.native
+    /* private */ var _reflector: js.Any = js.native
     
     def isDirective(`type`: Type): Boolean = js.native
     
@@ -40,6 +40,5 @@ object directiveResolverMod {
     def resolve_true(`type`: Type, throwIfNotFound: `true`): Directive = js.native
   }
   
-  @scala.inline
-  def findLast[T](arr: js.Array[T], condition: js.Function1[/* value */ T, Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(arr.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  inline def findLast[T](arr: js.Array[T], condition: js.Function1[/* value */ T, Boolean]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(arr.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[T | Null]
 }

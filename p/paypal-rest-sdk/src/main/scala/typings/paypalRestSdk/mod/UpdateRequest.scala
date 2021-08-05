@@ -14,22 +14,17 @@ trait UpdateRequest extends StObject {
 }
 object UpdateRequest {
   
-  @scala.inline
-  def apply(op: String, path: String, value: js.Any): UpdateRequest = {
+  inline def apply(op: String, path: String, value: js.Any): UpdateRequest = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRequestMutableBuilder[Self <: UpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRequest](x: Self) {
     
-    @scala.inline
-    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

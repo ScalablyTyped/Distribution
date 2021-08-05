@@ -10,16 +10,13 @@ trait StateAddress extends StObject {
 }
 object StateAddress {
   
-  @scala.inline
-  def apply(name: String): StateAddress = {
+  inline def apply(name: String): StateAddress = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateAddress]
   }
   
-  @scala.inline
-  implicit class StateAddressMutableBuilder[Self <: StateAddress] (val x: Self) extends AnyVal {
+  extension [Self <: StateAddress](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

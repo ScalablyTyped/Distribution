@@ -38,8 +38,7 @@ trait HystrixConfig_ extends StObject {
 }
 object HystrixConfig_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     circuitBreakerErrorThresholdPercentage: () => Double,
     circuitBreakerForceClosed: () => Boolean,
     circuitBreakerForceOpened: () => Boolean,
@@ -60,52 +59,36 @@ object HystrixConfig_ {
     __obj.asInstanceOf[HystrixConfig_]
   }
   
-  @scala.inline
-  implicit class HystrixConfig_MutableBuilder[Self <: HystrixConfig_] (val x: Self) extends AnyVal {
+  extension [Self <: HystrixConfig_](x: Self) {
     
-    @scala.inline
-    def setCircuitBreakerErrorThresholdPercentage(value: () => Double): Self = StObject.set(x, "circuitBreakerErrorThresholdPercentage", js.Any.fromFunction0(value))
+    inline def setCircuitBreakerErrorThresholdPercentage(value: () => Double): Self = StObject.set(x, "circuitBreakerErrorThresholdPercentage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCircuitBreakerForceClosed(value: () => Boolean): Self = StObject.set(x, "circuitBreakerForceClosed", js.Any.fromFunction0(value))
+    inline def setCircuitBreakerForceClosed(value: () => Boolean): Self = StObject.set(x, "circuitBreakerForceClosed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCircuitBreakerForceOpened(value: () => Boolean): Self = StObject.set(x, "circuitBreakerForceOpened", js.Any.fromFunction0(value))
+    inline def setCircuitBreakerForceOpened(value: () => Boolean): Self = StObject.set(x, "circuitBreakerForceOpened", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCircuitBreakerRequestVolumeThreshold(value: () => Double): Self = StObject.set(x, "circuitBreakerRequestVolumeThreshold", js.Any.fromFunction0(value))
+    inline def setCircuitBreakerRequestVolumeThreshold(value: () => Double): Self = StObject.set(x, "circuitBreakerRequestVolumeThreshold", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCircuitBreakerRequestVolumeThresholdForceOverride(value: () => Boolean): Self = StObject.set(x, "circuitBreakerRequestVolumeThresholdForceOverride", js.Any.fromFunction0(value))
+    inline def setCircuitBreakerRequestVolumeThresholdForceOverride(value: () => Boolean): Self = StObject.set(x, "circuitBreakerRequestVolumeThresholdForceOverride", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCircuitBreakerRequestVolumeThresholdOverride(value: () => Double): Self = StObject.set(x, "circuitBreakerRequestVolumeThresholdOverride", js.Any.fromFunction0(value))
+    inline def setCircuitBreakerRequestVolumeThresholdOverride(value: () => Double): Self = StObject.set(x, "circuitBreakerRequestVolumeThresholdOverride", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCircuitBreakerSleepWindowInMilliseconds(value: () => Double): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", js.Any.fromFunction0(value))
+    inline def setCircuitBreakerSleepWindowInMilliseconds(value: () => Double): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecutionTimeoutInMilliseconds(value: () => Double): Self = StObject.set(x, "executionTimeoutInMilliseconds", js.Any.fromFunction0(value))
+    inline def setExecutionTimeoutInMilliseconds(value: () => Double): Self = StObject.set(x, "executionTimeoutInMilliseconds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: HystrixProperties => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: HystrixProperties => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMetricsPercentileWindowBuckets(value: () => Double): Self = StObject.set(x, "metricsPercentileWindowBuckets", js.Any.fromFunction0(value))
+    inline def setMetricsPercentileWindowBuckets(value: () => Double): Self = StObject.set(x, "metricsPercentileWindowBuckets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMetricsPercentileWindowInMilliseconds(value: () => Double): Self = StObject.set(x, "metricsPercentileWindowInMilliseconds", js.Any.fromFunction0(value))
+    inline def setMetricsPercentileWindowInMilliseconds(value: () => Double): Self = StObject.set(x, "metricsPercentileWindowInMilliseconds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMetricsStatisticalWindowBuckets(value: () => Double): Self = StObject.set(x, "metricsStatisticalWindowBuckets", js.Any.fromFunction0(value))
+    inline def setMetricsStatisticalWindowBuckets(value: () => Double): Self = StObject.set(x, "metricsStatisticalWindowBuckets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMetricsStatisticalWindowInMilliseconds(value: () => Double): Self = StObject.set(x, "metricsStatisticalWindowInMilliseconds", js.Any.fromFunction0(value))
+    inline def setMetricsStatisticalWindowInMilliseconds(value: () => Double): Self = StObject.set(x, "metricsStatisticalWindowInMilliseconds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestVolumeRejectionThreshold(value: () => Double): Self = StObject.set(x, "requestVolumeRejectionThreshold", js.Any.fromFunction0(value))
+    inline def setRequestVolumeRejectionThreshold(value: () => Double): Self = StObject.set(x, "requestVolumeRejectionThreshold", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetProperties(value: () => Unit): Self = StObject.set(x, "resetProperties", js.Any.fromFunction0(value))
+    inline def setResetProperties(value: () => Unit): Self = StObject.set(x, "resetProperties", js.Any.fromFunction0(value))
   }
 }

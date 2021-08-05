@@ -15,8 +15,7 @@ object global {
   @js.native
   def Morris_ : MorrisStatic = js.native
   
-  @scala.inline
-  def Morris__=(x: MorrisStatic): Unit = js.Dynamic.global.updateDynamic("Morris")(x.asInstanceOf[js.Any])
+  inline def Morris__=(x: MorrisStatic): Unit = js.Dynamic.global.updateDynamic("Morris")(x.asInstanceOf[js.Any])
   
   object morris {
     

@@ -13,16 +13,13 @@ trait DeleteSchemaRequest extends StObject {
 }
 object DeleteSchemaRequest {
   
-  @scala.inline
-  def apply(schemaArn: Arn): DeleteSchemaRequest = {
+  inline def apply(schemaArn: Arn): DeleteSchemaRequest = {
     val __obj = js.Dynamic.literal(schemaArn = schemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSchemaRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSchemaRequestMutableBuilder[Self <: DeleteSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "schemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "schemaArn", value.asInstanceOf[js.Any])
   }
 }

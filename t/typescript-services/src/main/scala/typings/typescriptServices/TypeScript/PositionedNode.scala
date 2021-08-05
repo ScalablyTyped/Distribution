@@ -12,8 +12,7 @@ trait PositionedNode
 }
 object PositionedNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _element: js.Any,
     _fullStart: js.Any,
     _parent: js.Any,
@@ -43,10 +42,8 @@ object PositionedNode {
     __obj.asInstanceOf[PositionedNode]
   }
   
-  @scala.inline
-  implicit class PositionedNodeMutableBuilder[Self <: PositionedNode] (val x: Self) extends AnyVal {
+  extension [Self <: PositionedNode](x: Self) {
     
-    @scala.inline
-    def setNode(value: () => SyntaxNode): Self = StObject.set(x, "node", js.Any.fromFunction0(value))
+    inline def setNode(value: () => SyntaxNode): Self = StObject.set(x, "node", js.Any.fromFunction0(value))
   }
 }

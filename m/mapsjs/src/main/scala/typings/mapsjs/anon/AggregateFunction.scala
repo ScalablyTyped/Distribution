@@ -24,8 +24,7 @@ trait AggregateFunction extends StObject {
 }
 object AggregateFunction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Array[js.Object],
     mapUnitsPerPixel: Double,
     pointKey: String,
@@ -35,40 +34,28 @@ object AggregateFunction {
     __obj.asInstanceOf[AggregateFunction]
   }
   
-  @scala.inline
-  implicit class AggregateFunctionMutableBuilder[Self <: AggregateFunction] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateFunction](x: Self) {
     
-    @scala.inline
-    def setAggregateFunction(value: (/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any) => Unit): Self = StObject.set(x, "aggregateFunction", js.Any.fromFunction3(value))
+    inline def setAggregateFunction(value: (/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any) => Unit): Self = StObject.set(x, "aggregateFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAggregateFunctionUndefined: Self = StObject.set(x, "aggregateFunction", js.undefined)
+    inline def setAggregateFunctionUndefined: Self = StObject.set(x, "aggregateFunction", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setMapUnitsPerPixel(value: Double): Self = StObject.set(x, "mapUnitsPerPixel", value.asInstanceOf[js.Any])
+    inline def setMapUnitsPerPixel(value: Double): Self = StObject.set(x, "mapUnitsPerPixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginPixels(value: Double): Self = StObject.set(x, "marginPixels", value.asInstanceOf[js.Any])
+    inline def setMarginPixels(value: Double): Self = StObject.set(x, "marginPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginPixelsUndefined: Self = StObject.set(x, "marginPixels", js.undefined)
+    inline def setMarginPixelsUndefined: Self = StObject.set(x, "marginPixels", js.undefined)
     
-    @scala.inline
-    def setPointKey(value: String): Self = StObject.set(x, "pointKey", value.asInstanceOf[js.Any])
+    inline def setPointKey(value: String): Self = StObject.set(x, "pointKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusFunction(value: js.Any => Double): Self = StObject.set(x, "radiusFunction", js.Any.fromFunction1(value))
+    inline def setRadiusFunction(value: js.Any => Double): Self = StObject.set(x, "radiusFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueFunction(value: /* row */ js.Any => Double): Self = StObject.set(x, "valueFunction", js.Any.fromFunction1(value))
+    inline def setValueFunction(value: /* row */ js.Any => Double): Self = StObject.set(x, "valueFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueFunctionUndefined: Self = StObject.set(x, "valueFunction", js.undefined)
+    inline def setValueFunctionUndefined: Self = StObject.set(x, "valueFunction", js.undefined)
   }
 }

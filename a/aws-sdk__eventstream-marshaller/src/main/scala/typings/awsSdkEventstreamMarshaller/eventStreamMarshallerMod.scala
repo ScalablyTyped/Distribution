@@ -23,7 +23,7 @@ object eventStreamMarshallerMod {
       */
     def formatHeaders(rawHeaders: MessageHeaders): Uint8Array = js.native
     
-    val headerMarshaller: js.Any = js.native
+    /* private */ val headerMarshaller: js.Any = js.native
     
     /**
       * Convert a structured JavaScript object with tagged headers into a binary

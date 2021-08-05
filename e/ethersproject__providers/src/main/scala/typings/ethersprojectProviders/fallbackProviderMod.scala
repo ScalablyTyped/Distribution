@@ -36,35 +36,26 @@ object fallbackProviderMod {
   }
   object FallbackProviderConfig {
     
-    @scala.inline
-    def apply(provider: Provider): FallbackProviderConfig = {
+    inline def apply(provider: Provider): FallbackProviderConfig = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[FallbackProviderConfig]
     }
     
-    @scala.inline
-    implicit class FallbackProviderConfigMutableBuilder[Self <: FallbackProviderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FallbackProviderConfig](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStallTimeout(value: Double): Self = StObject.set(x, "stallTimeout", value.asInstanceOf[js.Any])
+      inline def setStallTimeout(value: Double): Self = StObject.set(x, "stallTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStallTimeoutUndefined: Self = StObject.set(x, "stallTimeout", js.undefined)
+      inline def setStallTimeoutUndefined: Self = StObject.set(x, "stallTimeout", js.undefined)
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
 }

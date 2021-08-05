@@ -78,79 +78,56 @@ object typesUpdateFunctionCodeInputMod {
   }
   object UpdateFunctionCodeInput {
     
-    @scala.inline
-    def apply(FunctionName: String): UpdateFunctionCodeInput = {
+    inline def apply(FunctionName: String): UpdateFunctionCodeInput = {
       val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateFunctionCodeInput]
     }
     
-    @scala.inline
-    implicit class UpdateFunctionCodeInputMutableBuilder[Self <: UpdateFunctionCodeInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateFunctionCodeInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+      inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublish(value: Boolean): Self = StObject.set(x, "Publish", value.asInstanceOf[js.Any])
+      inline def setPublish(value: Boolean): Self = StObject.set(x, "Publish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishUndefined: Self = StObject.set(x, "Publish", js.undefined)
+      inline def setPublishUndefined: Self = StObject.set(x, "Publish", js.undefined)
       
-      @scala.inline
-      def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+      inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+      inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+      inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
       
-      @scala.inline
-      def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+      inline def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+      inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
       
-      @scala.inline
-      def setS3ObjectVersion(value: String): Self = StObject.set(x, "S3ObjectVersion", value.asInstanceOf[js.Any])
+      inline def setS3ObjectVersion(value: String): Self = StObject.set(x, "S3ObjectVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3ObjectVersionUndefined: Self = StObject.set(x, "S3ObjectVersion", js.undefined)
+      inline def setS3ObjectVersionUndefined: Self = StObject.set(x, "S3ObjectVersion", js.undefined)
       
-      @scala.inline
-      def setZipFile(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
+      inline def setZipFile(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
+      inline def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
     }
   }
 }

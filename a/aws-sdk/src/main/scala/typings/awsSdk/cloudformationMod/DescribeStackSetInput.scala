@@ -13,16 +13,13 @@ trait DescribeStackSetInput extends StObject {
 }
 object DescribeStackSetInput {
   
-  @scala.inline
-  def apply(StackSetName: StackSetName): DescribeStackSetInput = {
+  inline def apply(StackSetName: StackSetName): DescribeStackSetInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackSetInput]
   }
   
-  @scala.inline
-  implicit class DescribeStackSetInputMutableBuilder[Self <: DescribeStackSetInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackSetInput](x: Self) {
     
-    @scala.inline
-    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
+    inline def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

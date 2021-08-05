@@ -12,16 +12,13 @@ trait GridViewRowClickEventArgs
 }
 object GridViewRowClickEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Any, sender: Control, visibleIndex: Double): GridViewRowClickEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: js.Any, sender: Control, visibleIndex: Double): GridViewRowClickEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridViewRowClickEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewRowClickEventArgsMutableBuilder[Self <: GridViewRowClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewRowClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

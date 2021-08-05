@@ -52,209 +52,165 @@ object tabs {
   val TAB_ID_NONE: Double = js.native
   
   /** Captures an area of a specified tab. You must have <all_urls> permission to use this method. */
-  @scala.inline
-  def captureTab(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")().asInstanceOf[js.Promise[String]]
+  inline def captureTab(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")().asInstanceOf[js.Promise[String]]
   /** Captures an area of a specified tab. You must have <all_urls> permission to use this method. */
-  @scala.inline
-  def captureTab(options: ImageDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def captureTab(options: ImageDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   /**
     * Captures an area of a specified tab. You must have <all_urls> permission to use this method.
     * @param tabId The tab to capture. Defaults to the active tab of the current window.
     */
-  @scala.inline
-  def captureTab(tabId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def captureTab(tabId: Double, options: ImageDetails): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")(tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def captureTab(tabId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def captureTab(tabId: Double, options: ImageDetails): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureTab")(tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * Captures an area of the currently active tab in the specified window. You must have <all_urls> permission to use this method.
     */
-  @scala.inline
-  def captureVisibleTab(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")().asInstanceOf[js.Promise[String]]
+  inline def captureVisibleTab(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")().asInstanceOf[js.Promise[String]]
   /**
     * Captures an area of the currently active tab in the specified window. You must have <all_urls> permission to use this method.
     */
-  @scala.inline
-  def captureVisibleTab(options: ImageDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def captureVisibleTab(options: ImageDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   /**
     * Captures an area of the currently active tab in the specified window. You must have <all_urls> permission to use this method.
     * @param windowId The target window. Defaults to the current window.
     */
-  @scala.inline
-  def captureVisibleTab(windowId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def captureVisibleTab(windowId: Double, options: ImageDetails): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(windowId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def captureVisibleTab(windowId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def captureVisibleTab(windowId: Double, options: ImageDetails): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureVisibleTab")(windowId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * Connects to the content script(s) in the specified tab. The `runtime.onConnect` event is fired in each content script running in the specified tab for the current extension. For more details, see Content Script Messaging.
     * @returns A port that can be used to communicate with the content scripts running in the specified tab. The port's `runtime.Port` event is fired if the tab closes or does not exist.
     */
-  @scala.inline
-  def connect(tabId: Double): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(tabId.asInstanceOf[js.Any]).asInstanceOf[Port]
-  @scala.inline
-  def connect(tabId: Double, connectInfo: ConnectConnectInfo): Port = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(tabId.asInstanceOf[js.Any], connectInfo.asInstanceOf[js.Any])).asInstanceOf[Port]
+  inline def connect(tabId: Double): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(tabId.asInstanceOf[js.Any]).asInstanceOf[Port]
+  inline def connect(tabId: Double, connectInfo: ConnectConnectInfo): Port = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(tabId.asInstanceOf[js.Any], connectInfo.asInstanceOf[js.Any])).asInstanceOf[Port]
   
   /** Creates a new tab. */
-  @scala.inline
-  def create(createProperties: CreateCreateProperties): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
+  inline def create(createProperties: CreateCreateProperties): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
   
   /**
     * Detects the primary language of the content in a tab.
     * @param [tabId] Defaults to the active tab of the current window.
     */
-  @scala.inline
-  def detectLanguage(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def detectLanguage(tabId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def detectLanguage(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")().asInstanceOf[js.Promise[String]]
+  inline def detectLanguage(tabId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def discard(tabIds: js.Array[Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def discard(tabIds: js.Array[Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * discards one or more tabs.
     * @param tabIds The tab or list of tabs to discard.
     */
-  @scala.inline
-  def discard(tabIds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def discard(tabIds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("discard")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Duplicates a tab.
     * @param tabId The ID of the tab which is to be duplicated.
     */
-  @scala.inline
-  def duplicate(tabId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
-  @scala.inline
-  def duplicate(tabId: Double, duplicateProperties: DuplicateDuplicateProperties): js.Promise[Tab] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(tabId.asInstanceOf[js.Any], duplicateProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab]]
+  inline def duplicate(tabId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
+  inline def duplicate(tabId: Double, duplicateProperties: DuplicateDuplicateProperties): js.Promise[Tab] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(tabId.asInstanceOf[js.Any], duplicateProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab]]
   
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the script to run.
     */
-  @scala.inline
-  def executeScript(details: InjectDetails): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def executeScript(details: InjectDetails): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param tabId The ID of the tab in which to run the script; defaults to the active tab of the current window.
     * @param details Details of the script to run.
     */
-  @scala.inline
-  def executeScript(tabId: Double, details: InjectDetails): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def executeScript(tabId: Double, details: InjectDetails): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   /* tabs functions */
   /** Retrieves details about the specified tab. */
-  @scala.inline
-  def get(tabId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
+  inline def get(tabId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
   
   /**
     * Gets details about all tabs in the specified window.
     * @param [windowId] Defaults to the current window.
     * @deprecated Please use `tabs.query` `{windowId: windowId}`.
     */
-  @scala.inline
-  def getAllInWindow(): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")().asInstanceOf[js.Promise[js.Array[Tab]]]
-  @scala.inline
-  def getAllInWindow(windowId: Double): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Tab]]]
+  inline def getAllInWindow(): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")().asInstanceOf[js.Promise[js.Array[Tab]]]
+  inline def getAllInWindow(windowId: Double): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllInWindow")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Tab]]]
   
   /**
     * Gets the tab that this script call is being made from. May be undefined if called from a non-tab context (for example: a background page or popup view).
     */
-  @scala.inline
-  def getCurrent(): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")().asInstanceOf[js.Promise[Tab]]
+  inline def getCurrent(): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")().asInstanceOf[js.Promise[Tab]]
   
   /**
     * Gets the tab that is selected in the specified window.
     * @param [windowId] Defaults to the current window.
     * @deprecated Please use `tabs.query` `{active: true}`.
     */
-  @scala.inline
-  def getSelected(): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")().asInstanceOf[js.Promise[Tab]]
-  @scala.inline
-  def getSelected(windowId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
+  inline def getSelected(): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")().asInstanceOf[js.Promise[Tab]]
+  inline def getSelected(windowId: Double): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelected")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
   
   /**
     * Gets the current zoom factor of a specified tab.
     * @param [tabId] The ID of the tab to get the current zoom factor from; defaults to the active tab of the current window.
     */
-  @scala.inline
-  def getZoom(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoom")().asInstanceOf[js.Promise[Double]]
-  @scala.inline
-  def getZoom(tabId: Double): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoom")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def getZoom(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoom")().asInstanceOf[js.Promise[Double]]
+  inline def getZoom(tabId: Double): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoom")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
   /**
     * Gets the current zoom settings of a specified tab.
     * @param [tabId] The ID of the tab to get the current zoom settings from; defaults to the active tab of the current window.
     */
-  @scala.inline
-  def getZoomSettings(): js.Promise[ZoomSettings] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoomSettings")().asInstanceOf[js.Promise[ZoomSettings]]
-  @scala.inline
-  def getZoomSettings(tabId: Double): js.Promise[ZoomSettings] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoomSettings")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZoomSettings]]
+  inline def getZoomSettings(): js.Promise[ZoomSettings] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoomSettings")().asInstanceOf[js.Promise[ZoomSettings]]
+  inline def getZoomSettings(tabId: Double): js.Promise[ZoomSettings] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZoomSettings")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZoomSettings]]
   
   /**
     * Navigate to previous page in tab's history, if available.
     * @param [tabId] The ID of the tab to navigate backward.
     */
-  @scala.inline
-  def goBack(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def goBack(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def goBack(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[js.Promise[Unit]]
+  inline def goBack(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Navigate to next page in tab's history, if available
     * @param [tabId] The ID of the tab to navigate forward.
     */
-  @scala.inline
-  def goForward(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def goForward(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def goForward(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")().asInstanceOf[js.Promise[Unit]]
+  inline def goForward(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def hide(tabIds: js.Array[Double]): js.Promise[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Double]]]
+  inline def hide(tabIds: js.Array[Double]): js.Promise[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Double]]]
   /**
     * Hides one or more tabs. The `"tabHide"` permission is required to hide tabs. Not all tabs are hidable. Returns an array of hidden tabs.
     * @param tabIds The TAB ID or list of TAB IDs to hide.
     */
-  @scala.inline
-  def hide(tabIds: Double): js.Promise[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Double]]]
+  inline def hide(tabIds: Double): js.Promise[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Double]]]
   
   /** Highlights the given tabs. */
-  @scala.inline
-  def highlight(highlightInfo: HighlightHighlightInfo): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(highlightInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
+  inline def highlight(highlightInfo: HighlightHighlightInfo): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(highlightInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
   
   /**
     * Injects CSS into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the CSS text to insert.
     */
-  @scala.inline
-  def insertCSS(details: InjectDetails): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def insertCSS(details: InjectDetails): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Injects CSS into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param tabId The ID of the tab in which to insert the CSS; defaults to the active tab of the current window.
     * @param details Details of the CSS text to insert.
     */
-  @scala.inline
-  def insertCSS(tabId: Double, details: InjectDetails): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def insertCSS(tabId: Double, details: InjectDetails): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def move(tabIds: js.Array[Double], moveProperties: MoveMoveProperties): js.Promise[Tab | js.Array[Tab]] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabIds.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab | js.Array[Tab]]]
+  inline def move(tabIds: js.Array[Double], moveProperties: MoveMoveProperties): js.Promise[Tab | js.Array[Tab]] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabIds.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab | js.Array[Tab]]]
   /**
     * Moves one or more tabs to a new position within its window, or to a new window. Note that tabs can only be moved to and from normal (window.type === "normal") windows.
     * @param tabIds The tab or list of tabs to move.
     */
-  @scala.inline
-  def move(tabIds: Double, moveProperties: MoveMoveProperties): js.Promise[Tab | js.Array[Tab]] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabIds.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab | js.Array[Tab]]]
+  inline def move(tabIds: Double, moveProperties: MoveMoveProperties): js.Promise[Tab | js.Array[Tab]] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(tabIds.asInstanceOf[js.Any], moveProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab | js.Array[Tab]]]
   
   /**
     * Removes an array of tabs from their lines of succession and prepends or appends them in a chain to another tab.
     * @param tabIds An array of tab IDs to move in the line of succession. For each tab in the array, the tab's current predecessors will have their successor set to the tab's current successor, and each tab will then be set to be the successor of the previous tab in the array. Any tabs not in the same window as the tab indicated by the second argument (or the first tab in the array, if no second argument) will be skipped.
     * @param [tabId] The ID of a tab to set as the successor of the last tab in the array, or `tabs.TAB_ID_NONE` to leave the last tab without a successor. If options.append is true, then this tab is made the predecessor of the first tab in the array instead.
     */
-  @scala.inline
-  def moveInSuccession(tabIds: js.Array[Double]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def moveInSuccession(tabIds: js.Array[Double], tabId: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def moveInSuccession(tabIds: js.Array[Double], tabId: Double, options: MoveInSuccessionOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def moveInSuccession(tabIds: js.Array[Double], tabId: Unit, options: MoveInSuccessionOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Double, options: MoveInSuccessionOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def moveInSuccession(tabIds: js.Array[Double], tabId: Unit, options: MoveInSuccessionOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInSuccession")(tabIds.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Fires when the active tab in a window changes. Note that the tab's URL may not be set at the time this event fired, but you can listen to onUpdated events to be notified when a URL is set.
@@ -355,141 +311,114 @@ object tabs {
   val onZoomChange: WebExtEvent[js.Function1[/* ZoomChangeInfo */ OnZoomChangeZoomChangeInfo, Unit]] = js.native
   
   /** Prints page in active tab. */
-  @scala.inline
-  def print(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")().asInstanceOf[Unit]
+  inline def print(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")().asInstanceOf[Unit]
   
   /** Shows print preview for page in active tab. */
-  @scala.inline
-  def printPreview(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("printPreview")().asInstanceOf[js.Promise[Unit]]
+  inline def printPreview(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("printPreview")().asInstanceOf[js.Promise[Unit]]
   
   /** Gets all tabs that have the specified properties, or all tabs if no properties are specified. */
-  @scala.inline
-  def query(queryInfo: QueryQueryInfo): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(queryInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Tab]]]
+  inline def query(queryInfo: QueryQueryInfo): js.Promise[js.Array[Tab]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(queryInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Tab]]]
   
   /** Reload a tab. */
-  @scala.inline
-  def reload(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[js.Promise[Unit]]
+  inline def reload(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[js.Promise[Unit]]
   /** Reload a tab. */
-  @scala.inline
-  def reload(reloadProperties: ReloadReloadProperties): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def reload(reloadProperties: ReloadReloadProperties): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Reload a tab.
     * @param tabId The ID of the tab to reload; defaults to the selected tab of the current window.
     */
-  @scala.inline
-  def reload(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def reload(tabId: Double, reloadProperties: ReloadReloadProperties): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any], reloadProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def reload(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def reload(tabId: Double, reloadProperties: ReloadReloadProperties): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reload")(tabId.asInstanceOf[js.Any], reloadProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def remove(tabIds: js.Array[Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def remove(tabIds: js.Array[Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Closes one or more tabs.
     * @param tabIds The tab or list of tabs to close.
     */
-  @scala.inline
-  def remove(tabIds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def remove(tabIds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Removes injected CSS from a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the CSS text to remove.
     */
-  @scala.inline
-  def removeCSS(details: InjectDetails): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def removeCSS(details: InjectDetails): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Removes injected CSS from a page. For details, see the programmatic injection section of the content scripts doc.
     * @param tabId The ID of the tab from which to remove the injected CSS; defaults to the active tab of the current window.
     * @param details Details of the CSS text to remove.
     */
-  @scala.inline
-  def removeCSS(tabId: Double, details: InjectDetails): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def removeCSS(tabId: Double, details: InjectDetails): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(tabId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Saves page in active tab as a PDF file.
     * @param pageSettings The page settings used to save the PDF file.
     */
-  @scala.inline
-  def saveAsPDF(pageSettings: PageSettings): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAsPDF")(pageSettings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def saveAsPDF(pageSettings: PageSettings): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAsPDF")(pageSettings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /**
     * Sends a single message to the content script(s) in the specified tab, with an optional callback to run when a response is sent back. The `runtime.onMessage` event is fired in each content script running in the specified tab for the current extension.
     */
-  @scala.inline
-  def sendMessage(tabId: Double, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def sendMessage(tabId: Double, message: js.Any, options: SendMessageOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def sendMessage(tabId: Double, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def sendMessage(tabId: Double, message: js.Any, options: SendMessageOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(tabId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Sends a single request to the content script(s) in the specified tab, with an optional callback to run when a response is sent back. The `extension.onRequest` event is fired in each content script running in the specified tab for the current extension.
     * @deprecated Please use `runtime.sendMessage`.
     */
-  @scala.inline
-  def sendRequest(tabId: Double, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sendRequest(tabId: Double, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(tabId: Double, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest(tabId: Double, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(tabId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Zooms a specified tab.
     * @param tabId The ID of the tab to zoom; defaults to the active tab of the current window.
     * @param zoomFactor The new zoom factor. Use a value of 0 here to set the tab to its current default zoom factor. Values greater than zero specify a (possibly non-default) zoom factor for the tab.
     */
-  @scala.inline
-  def setZoom(tabId: Double, zoomFactor: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(tabId.asInstanceOf[js.Any], zoomFactor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setZoom(tabId: Double, zoomFactor: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(tabId.asInstanceOf[js.Any], zoomFactor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /**
     * Zooms a specified tab.
     * @param zoomFactor The new zoom factor. Use a value of 0 here to set the tab to its current default zoom factor. Values greater than zero specify a (possibly non-default) zoom factor for the tab.
     */
-  @scala.inline
-  def setZoom(zoomFactor: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(zoomFactor.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setZoom(zoomFactor: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setZoom")(zoomFactor.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Sets the zoom settings for a specified tab, which define how zoom changes are handled. These settings are reset to defaults upon navigating the tab.
     * @param tabId The ID of the tab to change the zoom settings for; defaults to the active tab of the current window.
     * @param zoomSettings Defines how zoom changes are handled and at what scope.
     */
-  @scala.inline
-  def setZoomSettings(tabId: Double, zoomSettings: ZoomSettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(tabId.asInstanceOf[js.Any], zoomSettings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setZoomSettings(tabId: Double, zoomSettings: ZoomSettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(tabId.asInstanceOf[js.Any], zoomSettings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /**
     * Sets the zoom settings for a specified tab, which define how zoom changes are handled. These settings are reset to defaults upon navigating the tab.
     * @param zoomSettings Defines how zoom changes are handled and at what scope.
     */
-  @scala.inline
-  def setZoomSettings(zoomSettings: ZoomSettings): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(zoomSettings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def setZoomSettings(zoomSettings: ZoomSettings): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setZoomSettings")(zoomSettings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def show(tabIds: js.Array[Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def show(tabIds: js.Array[Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Shows one or more tabs.
     * @param tabIds The TAB ID or list of TAB IDs to show.
     */
-  @scala.inline
-  def show(tabIds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def show(tabIds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(tabIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Toggles reader mode for the document in the tab.
     * @param [tabId] Defaults to the active tab of the current window.
     */
-  @scala.inline
-  def toggleReaderMode(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleReaderMode")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def toggleReaderMode(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleReaderMode")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def toggleReaderMode(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleReaderMode")().asInstanceOf[js.Promise[Unit]]
+  inline def toggleReaderMode(tabId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleReaderMode")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     * @param tabId Defaults to the selected tab of the current window.
     */
-  @scala.inline
-  def update(tabId: Double, updateProperties: UpdateUpdateProperties): js.Promise[Tab] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(tabId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab]]
+  inline def update(tabId: Double, updateProperties: UpdateUpdateProperties): js.Promise[Tab] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(tabId.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tab]]
   /**
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     */
-  @scala.inline
-  def update(updateProperties: UpdateUpdateProperties): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(updateProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
+  inline def update(updateProperties: UpdateUpdateProperties): js.Promise[Tab] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(updateProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Tab]]
   
   /**
     * Warm up a tab
     * @param tabId The ID of the tab to warm up.
     */
-  @scala.inline
-  def warmup(tabId: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("warmup")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def warmup(tabId: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("warmup")(tabId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

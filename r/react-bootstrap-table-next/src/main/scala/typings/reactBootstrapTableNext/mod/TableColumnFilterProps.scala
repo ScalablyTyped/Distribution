@@ -26,61 +26,43 @@ trait TableColumnFilterProps[FT, T /* <: js.Object */] extends StObject {
 }
 object TableColumnFilterProps {
   
-  @scala.inline
-  def apply[FT, T /* <: js.Object */](): TableColumnFilterProps[FT, T] = {
+  inline def apply[FT, T /* <: js.Object */](): TableColumnFilterProps[FT, T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableColumnFilterProps[FT, T]]
   }
   
-  @scala.inline
-  implicit class TableColumnFilterPropsMutableBuilder[Self <: TableColumnFilterProps[?, ?], FT, T /* <: js.Object */] (val x: Self & (TableColumnFilterProps[FT, T])) extends AnyVal {
+  extension [Self <: TableColumnFilterProps[?, ?], FT, T /* <: js.Object */](x: Self & (TableColumnFilterProps[FT, T])) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setGetFilter(value: /* filter */ FT => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+    inline def setGetFilter(value: /* filter */ FT => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
+    inline def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOnFilter(value: /* filterValue */ FT => Unit | js.Array[T]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+    inline def setOnFilter(value: /* filterValue */ FT => Unit | js.Array[T]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
+    inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

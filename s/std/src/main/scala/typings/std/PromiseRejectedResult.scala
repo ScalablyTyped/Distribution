@@ -15,19 +15,15 @@ trait PromiseRejectedResult
 }
 object PromiseRejectedResult {
   
-  @scala.inline
-  def apply(reason: js.Any): PromiseRejectedResult = {
+  inline def apply(reason: js.Any): PromiseRejectedResult = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
     __obj.asInstanceOf[PromiseRejectedResult]
   }
   
-  @scala.inline
-  implicit class PromiseRejectedResultMutableBuilder[Self <: PromiseRejectedResult] (val x: Self) extends AnyVal {
+  extension [Self <: PromiseRejectedResult](x: Self) {
     
-    @scala.inline
-    def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: rejected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: rejected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

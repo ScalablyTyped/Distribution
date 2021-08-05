@@ -38,6 +38,6 @@ trait Tables extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.Tables_typekey")
+  /* private */ @JSName("Word.Tables_typekey")
   var WordDotTables_typekey: Tables = js.native
 }

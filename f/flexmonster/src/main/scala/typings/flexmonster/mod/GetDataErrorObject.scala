@@ -14,22 +14,17 @@ trait GetDataErrorObject extends StObject {
 }
 object GetDataErrorObject {
   
-  @scala.inline
-  def apply(dataHeight: Double, dataWidth: Double, errorMessage: String): GetDataErrorObject = {
+  inline def apply(dataHeight: Double, dataWidth: Double, errorMessage: String): GetDataErrorObject = {
     val __obj = js.Dynamic.literal(dataHeight = dataHeight.asInstanceOf[js.Any], dataWidth = dataWidth.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataErrorObject]
   }
   
-  @scala.inline
-  implicit class GetDataErrorObjectMutableBuilder[Self <: GetDataErrorObject] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataErrorObject](x: Self) {
     
-    @scala.inline
-    def setDataHeight(value: Double): Self = StObject.set(x, "dataHeight", value.asInstanceOf[js.Any])
+    inline def setDataHeight(value: Double): Self = StObject.set(x, "dataHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataWidth(value: Double): Self = StObject.set(x, "dataWidth", value.asInstanceOf[js.Any])
+    inline def setDataWidth(value: Double): Self = StObject.set(x, "dataWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

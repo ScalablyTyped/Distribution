@@ -49,17 +49,16 @@ object stateBuilderMod {
     def builder(property: String, fn: BuilderFunction): js.Function = js.native
     
     /** An object that contains all the BuilderFunctions registered, key'd by the name of the State property they build */
-    var builders: js.Any = js.native
+    /* private */ var builders: js.Any = js.native
     
-    var matcher: js.Any = js.native
+    /* private */ var matcher: js.Any = js.native
     
     def name(state: StateObject): String = js.native
     
     def parentName(state: StateObject): String = js.native
   }
   
-  @scala.inline
-  def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[Resolvable]]
+  inline def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[Resolvable]]
   
   type BuilderFunction = js.Function2[
     /* state */ StateObject, 

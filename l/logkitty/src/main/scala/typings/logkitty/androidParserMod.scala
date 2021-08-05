@@ -31,14 +31,12 @@ object androidParserMod {
     @JSImport("logkitty/build/android/AndroidParser", "default.headerRegex")
     @js.native
     def headerRegex: RegExp = js.native
-    @scala.inline
-    def headerRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerRegex")(x.asInstanceOf[js.Any])
+    inline def headerRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerRegex")(x.asInstanceOf[js.Any])
     
     @JSImport("logkitty/build/android/AndroidParser", "default.timeRegex")
     @js.native
     def timeRegex: RegExp = js.native
-    @scala.inline
-    def timeRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeRegex")(x.asInstanceOf[js.Any])
+    inline def timeRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeRegex")(x.asInstanceOf[js.Any])
   }
   
   trait AndroidParser
@@ -46,8 +44,7 @@ object androidParserMod {
        with IParser
   object AndroidParser {
     
-    @scala.inline
-    def apply(parseMessages: js.Array[String] => js.Array[Entry], splitMessages: String => js.Array[String]): AndroidParser = {
+    inline def apply(parseMessages: js.Array[String] => js.Array[Entry], splitMessages: String => js.Array[String]): AndroidParser = {
       val __obj = js.Dynamic.literal(parseMessages = js.Any.fromFunction1(parseMessages), splitMessages = js.Any.fromFunction1(splitMessages))
       __obj.asInstanceOf[AndroidParser]
     }

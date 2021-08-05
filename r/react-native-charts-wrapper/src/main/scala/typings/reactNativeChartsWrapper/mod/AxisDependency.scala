@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisDependency extends StObject
 object AxisDependency {
   
-  @scala.inline
-  def LEFT: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT = "LEFT".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT]
+  inline def LEFT: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT = "LEFT".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT]
   
-  @scala.inline
-  def RIGHT: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT = "RIGHT".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT]
+  inline def RIGHT: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT = "RIGHT".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT]
 }

@@ -35,25 +35,21 @@ object spinMod {
       @JSImport("antd/lib/spin", "default.defaultProps.size")
       @js.native
       def size: small | large | typings.antd.antdStrings.default = js.native
-      @scala.inline
-      def size_=(x: small | large | typings.antd.antdStrings.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+      inline def size_=(x: small | large | typings.antd.antdStrings.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
       
       @JSImport("antd/lib/spin", "default.defaultProps.spinning")
       @js.native
       def spinning: Boolean = js.native
-      @scala.inline
-      def spinning_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spinning")(x.asInstanceOf[js.Any])
+      inline def spinning_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spinning")(x.asInstanceOf[js.Any])
       
       @JSImport("antd/lib/spin", "default.defaultProps.wrapperClassName")
       @js.native
       def wrapperClassName: String = js.native
-      @scala.inline
-      def wrapperClassName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapperClassName")(x.asInstanceOf[js.Any])
+      inline def wrapperClassName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapperClassName")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
-    @scala.inline
-    def setDefaultIndicator(indicator: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultIndicator")(indicator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaultIndicator(indicator: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultIndicator")(indicator.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @js.native
@@ -107,68 +103,48 @@ object spinMod {
   }
   object SpinProps {
     
-    @scala.inline
-    def apply(): SpinProps = {
+    inline def apply(): SpinProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinProps]
     }
     
-    @scala.inline
-    implicit class SpinPropsMutableBuilder[Self <: SpinProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpinProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setIndicator(value: SpinIndicator): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+      inline def setIndicator(value: SpinIndicator): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+      inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setSize(value: SpinSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SpinSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpinning(value: Boolean): Self = StObject.set(x, "spinning", value.asInstanceOf[js.Any])
+      inline def setSpinning(value: Boolean): Self = StObject.set(x, "spinning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinningUndefined: Self = StObject.set(x, "spinning", js.undefined)
+      inline def setSpinningUndefined: Self = StObject.set(x, "spinning", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTip(value: String): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+      inline def setTip(value: String): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTipUndefined: Self = StObject.set(x, "tip", js.undefined)
+      inline def setTipUndefined: Self = StObject.set(x, "tip", js.undefined)
       
-      @scala.inline
-      def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
+      inline def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
+      inline def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
     }
   }
   
@@ -187,26 +163,20 @@ object spinMod {
   }
   object SpinState {
     
-    @scala.inline
-    def apply(): SpinState = {
+    inline def apply(): SpinState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinState]
     }
     
-    @scala.inline
-    implicit class SpinStateMutableBuilder[Self <: SpinState] (val x: Self) extends AnyVal {
+    extension [Self <: SpinState](x: Self) {
       
-      @scala.inline
-      def setNotCssAnimationSupported(value: Boolean): Self = StObject.set(x, "notCssAnimationSupported", value.asInstanceOf[js.Any])
+      inline def setNotCssAnimationSupported(value: Boolean): Self = StObject.set(x, "notCssAnimationSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotCssAnimationSupportedUndefined: Self = StObject.set(x, "notCssAnimationSupported", js.undefined)
+      inline def setNotCssAnimationSupportedUndefined: Self = StObject.set(x, "notCssAnimationSupported", js.undefined)
       
-      @scala.inline
-      def setSpinning(value: Boolean): Self = StObject.set(x, "spinning", value.asInstanceOf[js.Any])
+      inline def setSpinning(value: Boolean): Self = StObject.set(x, "spinning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinningUndefined: Self = StObject.set(x, "spinning", js.undefined)
+      inline def setSpinningUndefined: Self = StObject.set(x, "spinning", js.undefined)
     }
   }
 }

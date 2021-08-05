@@ -19,32 +19,25 @@ trait BatchDeleteAlertsResponse extends StObject {
 }
 object BatchDeleteAlertsResponse {
   
-  @scala.inline
-  def apply(): BatchDeleteAlertsResponse = {
+  inline def apply(): BatchDeleteAlertsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteAlertsResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteAlertsResponseMutableBuilder[Self <: BatchDeleteAlertsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteAlertsResponse](x: Self) {
     
-    @scala.inline
-    def setFailedAlertStatus(
+    inline def setFailedAlertStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.alertcenter.gapi.client.alertcenter.Status}
       */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchDeleteAlertsResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "failedAlertStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedAlertStatusUndefined: Self = StObject.set(x, "failedAlertStatus", js.undefined)
+    inline def setFailedAlertStatusUndefined: Self = StObject.set(x, "failedAlertStatus", js.undefined)
     
-    @scala.inline
-    def setSuccessAlertIds(value: js.Array[String]): Self = StObject.set(x, "successAlertIds", value.asInstanceOf[js.Any])
+    inline def setSuccessAlertIds(value: js.Array[String]): Self = StObject.set(x, "successAlertIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessAlertIdsUndefined: Self = StObject.set(x, "successAlertIds", js.undefined)
+    inline def setSuccessAlertIdsUndefined: Self = StObject.set(x, "successAlertIds", js.undefined)
     
-    @scala.inline
-    def setSuccessAlertIdsVarargs(value: String*): Self = StObject.set(x, "successAlertIds", js.Array(value :_*))
+    inline def setSuccessAlertIdsVarargs(value: String*): Self = StObject.set(x, "successAlertIds", js.Array(value :_*))
   }
 }

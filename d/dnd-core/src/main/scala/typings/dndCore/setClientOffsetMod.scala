@@ -12,14 +12,9 @@ object setClientOffsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setClientOffset(): AnyAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")().asInstanceOf[AnyAction]
-  @scala.inline
-  def setClientOffset(clientOffset: Null, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
-  @scala.inline
-  def setClientOffset(clientOffset: Unit, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
-  @scala.inline
-  def setClientOffset(clientOffset: XYCoord): AnyAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any]).asInstanceOf[AnyAction]
-  @scala.inline
-  def setClientOffset(clientOffset: XYCoord, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
+  inline def setClientOffset(): AnyAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")().asInstanceOf[AnyAction]
+  inline def setClientOffset(clientOffset: Null, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
+  inline def setClientOffset(clientOffset: Unit, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
+  inline def setClientOffset(clientOffset: XYCoord): AnyAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any]).asInstanceOf[AnyAction]
+  inline def setClientOffset(clientOffset: XYCoord, sourceClientOffset: XYCoord): AnyAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientOffset")(clientOffset.asInstanceOf[js.Any], sourceClientOffset.asInstanceOf[js.Any])).asInstanceOf[AnyAction]
 }

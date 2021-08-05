@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "CanvasContext")
 @js.native
-class CanvasContext protected () extends StObject {
+/* private */ class CanvasContext () extends StObject {
   
   /**
     * Adds an arc to the path which is centered at *(x, y)* position with radius *r* starting at

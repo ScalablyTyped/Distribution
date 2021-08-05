@@ -12,19 +12,15 @@ trait SessionId extends StObject {
 }
 object SessionId {
   
-  @scala.inline
-  def apply(capabilities: BrowserName, sessionId: String): SessionId = {
+  inline def apply(capabilities: BrowserName, sessionId: String): SessionId = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionId]
   }
   
-  @scala.inline
-  implicit class SessionIdMutableBuilder[Self <: SessionId] (val x: Self) extends AnyVal {
+  extension [Self <: SessionId](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: BrowserName): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: BrowserName): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

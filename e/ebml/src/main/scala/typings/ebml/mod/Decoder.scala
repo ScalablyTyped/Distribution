@@ -85,8 +85,7 @@ object Decoder {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSchemaInfo(tag: Double): EBMLTagSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaInfo")(tag.asInstanceOf[js.Any]).asInstanceOf[EBMLTagSchema]
+  inline def getSchemaInfo(tag: Double): EBMLTagSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaInfo")(tag.asInstanceOf[js.Any]).asInstanceOf[EBMLTagSchema]
   
   trait EventListenerMap extends StObject {
     
@@ -102,8 +101,7 @@ object Decoder {
   }
   object EventListenerMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       data: StateAndTagData => Unit,
       end: () => Unit,
@@ -114,23 +112,17 @@ object Decoder {
       __obj.asInstanceOf[EventListenerMap]
     }
     
-    @scala.inline
-    implicit class EventListenerMapMutableBuilder[Self <: EventListenerMap] (val x: Self) extends AnyVal {
+    extension [Self <: EventListenerMap](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setData(value: StateAndTagData => Unit): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
+      inline def setData(value: StateAndTagData => Unit): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadable(value: () => Unit): Self = StObject.set(x, "readable", js.Any.fromFunction0(value))
+      inline def setReadable(value: () => Unit): Self = StObject.set(x, "readable", js.Any.fromFunction0(value))
     }
   }
   
@@ -142,13 +134,10 @@ object Decoder {
   trait State extends StObject
   object State {
     
-    @scala.inline
-    def `1`: typings.ebml.ebmlNumbers.`1` = 1.asInstanceOf[typings.ebml.ebmlNumbers.`1`]
+    inline def `1`: typings.ebml.ebmlNumbers.`1` = 1.asInstanceOf[typings.ebml.ebmlNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.ebml.ebmlNumbers.`2` = 2.asInstanceOf[typings.ebml.ebmlNumbers.`2`]
+    inline def `2`: typings.ebml.ebmlNumbers.`2` = 2.asInstanceOf[typings.ebml.ebmlNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.ebml.ebmlNumbers.`3` = 3.asInstanceOf[typings.ebml.ebmlNumbers.`3`]
+    inline def `3`: typings.ebml.ebmlNumbers.`3` = 3.asInstanceOf[typings.ebml.ebmlNumbers.`3`]
   }
 }

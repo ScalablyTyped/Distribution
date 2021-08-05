@@ -21,20 +21,17 @@ object ProgressBarType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ProgressBarType.Blocking")
   @js.native
   def Blocking: ProgressBarType = js.native
-  @scala.inline
-  def Blocking_=(x: ProgressBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Blocking")(x.asInstanceOf[js.Any])
+  inline def Blocking_=(x: ProgressBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Blocking")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ProgressBarType.NonBlocking")
   @js.native
   def NonBlocking: ProgressBarType = js.native
-  @scala.inline
-  def NonBlocking_=(x: ProgressBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NonBlocking")(x.asInstanceOf[js.Any])
+  inline def NonBlocking_=(x: ProgressBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NonBlocking")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ProgressBarType.None")
   @js.native
   def None: ProgressBarType = js.native
-  @scala.inline
-  def None_=(x: ProgressBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: ProgressBarType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
 }

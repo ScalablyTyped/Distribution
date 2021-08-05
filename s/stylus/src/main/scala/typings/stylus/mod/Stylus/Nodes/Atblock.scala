@@ -15,8 +15,7 @@ trait Atblock
 }
 object Atblock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     block: Block,
     coerce: Node => Node,
     column: Double,
@@ -37,16 +36,12 @@ object Atblock {
     __obj.asInstanceOf[Atblock]
   }
   
-  @scala.inline
-  implicit class AtblockMutableBuilder[Self <: Atblock] (val x: Self) extends AnyVal {
+  extension [Self <: Atblock](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

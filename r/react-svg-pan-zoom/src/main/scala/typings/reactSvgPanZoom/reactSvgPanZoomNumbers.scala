@@ -8,6 +8,5 @@ object reactSvgPanZoomNumbers {
   
   @js.native
   sealed trait `2` extends StObject
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
 }

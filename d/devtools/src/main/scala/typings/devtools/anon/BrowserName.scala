@@ -17,25 +17,19 @@ trait BrowserName extends StObject {
 }
 object BrowserName {
   
-  @scala.inline
-  def apply(browserName: String, browserVersion: String, platformName: Platform, platformVersion: String): BrowserName = {
+  inline def apply(browserName: String, browserVersion: String, platformName: Platform, platformVersion: String): BrowserName = {
     val __obj = js.Dynamic.literal(browserName = browserName.asInstanceOf[js.Any], browserVersion = browserVersion.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any], platformVersion = platformVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserName]
   }
   
-  @scala.inline
-  implicit class BrowserNameMutableBuilder[Self <: BrowserName] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserName](x: Self) {
     
-    @scala.inline
-    def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
+    inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserVersion(value: String): Self = StObject.set(x, "browserVersion", value.asInstanceOf[js.Any])
+    inline def setBrowserVersion(value: String): Self = StObject.set(x, "browserVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformName(value: Platform): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
+    inline def setPlatformName(value: Platform): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+    inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
   }
 }

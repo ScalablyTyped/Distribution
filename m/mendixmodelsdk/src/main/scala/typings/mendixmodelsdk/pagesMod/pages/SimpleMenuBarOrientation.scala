@@ -21,13 +21,11 @@ object SimpleMenuBarOrientation {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBarOrientation.Horizontal")
   @js.native
   def Horizontal: SimpleMenuBarOrientation = js.native
-  @scala.inline
-  def Horizontal_=(x: SimpleMenuBarOrientation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
+  inline def Horizontal_=(x: SimpleMenuBarOrientation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBarOrientation.Vertical")
   @js.native
   def Vertical: SimpleMenuBarOrientation = js.native
-  @scala.inline
-  def Vertical_=(x: SimpleMenuBarOrientation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
+  inline def Vertical_=(x: SimpleMenuBarOrientation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
 }

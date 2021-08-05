@@ -13,16 +13,13 @@ trait DescribeModelInput extends StObject {
 }
 object DescribeModelInput {
   
-  @scala.inline
-  def apply(ModelName: ModelName): DescribeModelInput = {
+  inline def apply(ModelName: ModelName): DescribeModelInput = {
     val __obj = js.Dynamic.literal(ModelName = ModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeModelInput]
   }
   
-  @scala.inline
-  implicit class DescribeModelInputMutableBuilder[Self <: DescribeModelInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeModelInput](x: Self) {
     
-    @scala.inline
-    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }
 }

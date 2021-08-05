@@ -43,8 +43,7 @@ trait TypeofwebNavigation extends StObject {
 }
 object TypeofwebNavigation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAllFrames: (GetAllFrameDetails, js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]) => Unit,
     getFrame: (GetFrameDetails, js.Function1[/* details */ GetFrameResultDetails | Null, Unit]) => Unit,
     onBeforeNavigate: WebNavigationParentedEvent,
@@ -61,42 +60,30 @@ object TypeofwebNavigation {
     __obj.asInstanceOf[TypeofwebNavigation]
   }
   
-  @scala.inline
-  implicit class TypeofwebNavigationMutableBuilder[Self <: TypeofwebNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofwebNavigation](x: Self) {
     
-    @scala.inline
-    def setGetAllFrames(
+    inline def setGetAllFrames(
       value: (GetAllFrameDetails, js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]) => Unit
     ): Self = StObject.set(x, "getAllFrames", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetFrame(value: (GetFrameDetails, js.Function1[/* details */ GetFrameResultDetails | Null, Unit]) => Unit): Self = StObject.set(x, "getFrame", js.Any.fromFunction2(value))
+    inline def setGetFrame(value: (GetFrameDetails, js.Function1[/* details */ GetFrameResultDetails | Null, Unit]) => Unit): Self = StObject.set(x, "getFrame", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnBeforeNavigate(value: WebNavigationParentedEvent): Self = StObject.set(x, "onBeforeNavigate", value.asInstanceOf[js.Any])
+    inline def setOnBeforeNavigate(value: WebNavigationParentedEvent): Self = StObject.set(x, "onBeforeNavigate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCommitted(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onCommitted", value.asInstanceOf[js.Any])
+    inline def setOnCommitted(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onCommitted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCompleted(value: WebNavigationFramedEvent): Self = StObject.set(x, "onCompleted", value.asInstanceOf[js.Any])
+    inline def setOnCompleted(value: WebNavigationFramedEvent): Self = StObject.set(x, "onCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCreatedNavigationTarget(value: WebNavigationSourceEvent): Self = StObject.set(x, "onCreatedNavigationTarget", value.asInstanceOf[js.Any])
+    inline def setOnCreatedNavigationTarget(value: WebNavigationSourceEvent): Self = StObject.set(x, "onCreatedNavigationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDOMContentLoaded(value: WebNavigationFramedEvent): Self = StObject.set(x, "onDOMContentLoaded", value.asInstanceOf[js.Any])
+    inline def setOnDOMContentLoaded(value: WebNavigationFramedEvent): Self = StObject.set(x, "onDOMContentLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorOccurred(value: WebNavigationFramedErrorEvent): Self = StObject.set(x, "onErrorOccurred", value.asInstanceOf[js.Any])
+    inline def setOnErrorOccurred(value: WebNavigationFramedErrorEvent): Self = StObject.set(x, "onErrorOccurred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHistoryStateUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onHistoryStateUpdated", value.asInstanceOf[js.Any])
+    inline def setOnHistoryStateUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onHistoryStateUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReferenceFragmentUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onReferenceFragmentUpdated", value.asInstanceOf[js.Any])
+    inline def setOnReferenceFragmentUpdated(value: WebNavigationTransitionalEvent): Self = StObject.set(x, "onReferenceFragmentUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTabReplaced(value: WebNavigationReplacementEvent): Self = StObject.set(x, "onTabReplaced", value.asInstanceOf[js.Any])
+    inline def setOnTabReplaced(value: WebNavigationReplacementEvent): Self = StObject.set(x, "onTabReplaced", value.asInstanceOf[js.Any])
   }
 }

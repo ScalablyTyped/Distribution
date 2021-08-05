@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatMessagePolicyViolationDlpActionTypes extends StObject
 object ChatMessagePolicyViolationDlpActionTypes {
   
-  @scala.inline
-  def blockAccess: typings.microsoftGraph.microsoftGraphStrings.blockAccess = "blockAccess".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockAccess]
+  inline def blockAccess: typings.microsoftGraph.microsoftGraphStrings.blockAccess = "blockAccess".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockAccess]
   
-  @scala.inline
-  def blockAccessExternal: typings.microsoftGraph.microsoftGraphStrings.blockAccessExternal = "blockAccessExternal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockAccessExternal]
+  inline def blockAccessExternal: typings.microsoftGraph.microsoftGraphStrings.blockAccessExternal = "blockAccessExternal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockAccessExternal]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def notifySender: typings.microsoftGraph.microsoftGraphStrings.notifySender = "notifySender".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifySender]
+  inline def notifySender: typings.microsoftGraph.microsoftGraphStrings.notifySender = "notifySender".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifySender]
 }

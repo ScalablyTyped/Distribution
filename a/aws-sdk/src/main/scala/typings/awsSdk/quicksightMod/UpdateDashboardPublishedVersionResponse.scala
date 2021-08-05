@@ -28,37 +28,27 @@ trait UpdateDashboardPublishedVersionResponse extends StObject {
 }
 object UpdateDashboardPublishedVersionResponse {
   
-  @scala.inline
-  def apply(): UpdateDashboardPublishedVersionResponse = {
+  inline def apply(): UpdateDashboardPublishedVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDashboardPublishedVersionResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDashboardPublishedVersionResponseMutableBuilder[Self <: UpdateDashboardPublishedVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDashboardPublishedVersionResponse](x: Self) {
     
-    @scala.inline
-    def setDashboardArn(value: Arn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
+    inline def setDashboardArn(value: Arn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
+    inline def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
     
-    @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
+    inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

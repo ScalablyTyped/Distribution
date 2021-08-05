@@ -10,16 +10,13 @@ trait PhishingFilterStatus extends StObject {
 }
 object PhishingFilterStatus {
   
-  @scala.inline
-  def apply(PhishingFilterStatus: Double): PhishingFilterStatus = {
+  inline def apply(PhishingFilterStatus: Double): PhishingFilterStatus = {
     val __obj = js.Dynamic.literal(PhishingFilterStatus = PhishingFilterStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhishingFilterStatus]
   }
   
-  @scala.inline
-  implicit class PhishingFilterStatusMutableBuilder[Self <: PhishingFilterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PhishingFilterStatus](x: Self) {
     
-    @scala.inline
-    def setPhishingFilterStatus(value: Double): Self = StObject.set(x, "PhishingFilterStatus", value.asInstanceOf[js.Any])
+    inline def setPhishingFilterStatus(value: Double): Self = StObject.set(x, "PhishingFilterStatus", value.asInstanceOf[js.Any])
   }
 }

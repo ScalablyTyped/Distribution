@@ -19,6 +19,5 @@ class Confirm protected ()
 }
 object Confirm {
   
-  @scala.inline
-  def apply: ComponentClass[ConfirmProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Confirm").asInstanceOf[ComponentClass[ConfirmProps, ComponentState]]
+  inline def apply: ComponentClass[ConfirmProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Confirm").asInstanceOf[ComponentClass[ConfirmProps, ComponentState]]
 }

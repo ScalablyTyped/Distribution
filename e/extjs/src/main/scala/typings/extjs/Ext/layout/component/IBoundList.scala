@@ -26,31 +26,23 @@ trait IBoundList
 }
 object IBoundList {
   
-  @scala.inline
-  def apply(): IBoundList = {
+  inline def apply(): IBoundList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBoundList]
   }
   
-  @scala.inline
-  implicit class IBoundListMutableBuilder[Self <: IBoundList] (val x: Self) extends AnyVal {
+  extension [Self <: IBoundList](x: Self) {
     
-    @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
+    inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
-    @scala.inline
-    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
+    inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
     
-    @scala.inline
-    def setIsValidParent(value: () => Unit): Self = StObject.set(x, "isValidParent", js.Any.fromFunction0(value))
+    inline def setIsValidParent(value: () => Unit): Self = StObject.set(x, "isValidParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
+    inline def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
   }
 }

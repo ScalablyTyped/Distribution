@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object microtimeMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(getAsFloat: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(getAsFloat.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(getAsFloat: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(getAsFloat.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/datetime/microtime", JSImport.Namespace)
   @js.native

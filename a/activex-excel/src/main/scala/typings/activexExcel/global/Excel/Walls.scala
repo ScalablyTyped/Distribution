@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Walls")
 @js.native
-class Walls protected ()
+/* private */ class Walls ()
   extends StObject
      with typings.activexExcel.Excel.Walls {
   
@@ -24,7 +24,7 @@ class Walls protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Walls_typekey")
   var ExcelDotWalls_typekey: typings.activexExcel.Excel.Walls = js.native
   

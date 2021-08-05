@@ -10,19 +10,15 @@ trait SetBucketStorageClassOptions extends StObject {
 }
 object SetBucketStorageClassOptions {
   
-  @scala.inline
-  def apply(): SetBucketStorageClassOptions = {
+  inline def apply(): SetBucketStorageClassOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetBucketStorageClassOptions]
   }
   
-  @scala.inline
-  implicit class SetBucketStorageClassOptionsMutableBuilder[Self <: SetBucketStorageClassOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetBucketStorageClassOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

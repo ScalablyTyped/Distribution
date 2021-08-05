@@ -14,22 +14,17 @@ trait ImeParameters extends StObject {
 }
 object ImeParameters {
   
-  @scala.inline
-  def apply(engineID: String, items: js.Array[MenuItem]): ImeParameters = {
+  inline def apply(engineID: String, items: js.Array[MenuItem]): ImeParameters = {
     val __obj = js.Dynamic.literal(engineID = engineID.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImeParameters]
   }
   
-  @scala.inline
-  implicit class ImeParametersMutableBuilder[Self <: ImeParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ImeParameters](x: Self) {
     
-    @scala.inline
-    def setEngineID(value: String): Self = StObject.set(x, "engineID", value.asInstanceOf[js.Any])
+    inline def setEngineID(value: String): Self = StObject.set(x, "engineID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[MenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[MenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: MenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: MenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

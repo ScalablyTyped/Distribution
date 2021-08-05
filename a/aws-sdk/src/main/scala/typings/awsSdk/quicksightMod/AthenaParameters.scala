@@ -13,19 +13,15 @@ trait AthenaParameters extends StObject {
 }
 object AthenaParameters {
   
-  @scala.inline
-  def apply(): AthenaParameters = {
+  inline def apply(): AthenaParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AthenaParameters]
   }
   
-  @scala.inline
-  implicit class AthenaParametersMutableBuilder[Self <: AthenaParameters] (val x: Self) extends AnyVal {
+  extension [Self <: AthenaParameters](x: Self) {
     
-    @scala.inline
-    def setWorkGroup(value: WorkGroup): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
+    inline def setWorkGroup(value: WorkGroup): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
+    inline def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
   }
 }

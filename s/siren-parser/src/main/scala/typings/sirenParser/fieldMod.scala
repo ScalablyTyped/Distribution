@@ -11,8 +11,7 @@ object fieldMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(field: js.Object): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(field.asInstanceOf[js.Any]).asInstanceOf[Field]
+  inline def default(field: js.Object): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(field.asInstanceOf[js.Any]).asInstanceOf[Field]
   
   @js.native
   sealed trait FieldType extends StObject

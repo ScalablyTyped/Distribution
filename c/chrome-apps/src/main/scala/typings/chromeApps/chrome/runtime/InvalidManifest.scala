@@ -41,8 +41,7 @@ trait InvalidManifest
 }
 object InvalidManifest {
   
-  @scala.inline
-  def apply(app: Background, externally_connectable: Accepttlschannelid, name: String, version: String): InvalidManifest = {
+  inline def apply(app: Background, externally_connectable: Accepttlschannelid, name: String, version: String): InvalidManifest = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], manifest_version = 2, name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidManifest]
   }

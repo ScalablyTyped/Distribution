@@ -11,16 +11,13 @@ trait Counter extends StObject {
 }
 object Counter {
   
-  @scala.inline
-  def apply(increment: Double => Unit): Counter = {
+  inline def apply(increment: Double => Unit): Counter = {
     val __obj = js.Dynamic.literal(increment = js.Any.fromFunction1(increment))
     __obj.asInstanceOf[Counter]
   }
   
-  @scala.inline
-  implicit class CounterMutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
+  extension [Self <: Counter](x: Self) {
     
-    @scala.inline
-    def setIncrement(value: Double => Unit): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
+    inline def setIncrement(value: Double => Unit): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
   }
 }

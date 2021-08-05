@@ -15,128 +15,112 @@ object conv3dTransposeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],

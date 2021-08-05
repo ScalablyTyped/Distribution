@@ -18,25 +18,19 @@ trait FailureInfo extends StObject {
 }
 object FailureInfo {
   
-  @scala.inline
-  def apply(): FailureInfo = {
+  inline def apply(): FailureInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailureInfo]
   }
   
-  @scala.inline
-  implicit class FailureInfoMutableBuilder[Self <: FailureInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FailureInfo](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setFailedRecordsS3Url(value: FailedRecordsS3Url): Self = StObject.set(x, "FailedRecordsS3Url", value.asInstanceOf[js.Any])
+    inline def setFailedRecordsS3Url(value: FailedRecordsS3Url): Self = StObject.set(x, "FailedRecordsS3Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedRecordsS3UrlUndefined: Self = StObject.set(x, "FailedRecordsS3Url", js.undefined)
+    inline def setFailedRecordsS3UrlUndefined: Self = StObject.set(x, "FailedRecordsS3Url", js.undefined)
   }
 }

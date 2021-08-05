@@ -58,80 +58,56 @@ object worldMapMod {
   }
   object WorldMapProps {
     
-    @scala.inline
-    def apply(): WorldMapProps = {
+    inline def apply(): WorldMapProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorldMapProps]
     }
     
-    @scala.inline
-    implicit class WorldMapPropsMutableBuilder[Self <: WorldMapProps] (val x: Self) extends AnyVal {
+    extension [Self <: WorldMapProps](x: Self) {
       
-      @scala.inline
-      def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
+      inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
+      inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
       
-      @scala.inline
-      def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      @scala.inline
-      def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setContinents(value: js.Array[Name]): Self = StObject.set(x, "continents", value.asInstanceOf[js.Any])
+      inline def setContinents(value: js.Array[Name]): Self = StObject.set(x, "continents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinentsUndefined: Self = StObject.set(x, "continents", js.undefined)
+      inline def setContinentsUndefined: Self = StObject.set(x, "continents", js.undefined)
       
-      @scala.inline
-      def setContinentsVarargs(value: Name*): Self = StObject.set(x, "continents", js.Array(value :_*))
+      inline def setContinentsVarargs(value: Name*): Self = StObject.set(x, "continents", js.Array(value :_*))
       
-      @scala.inline
-      def setFill(value: FillType): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: FillType): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+      inline def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+      inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      @scala.inline
-      def setHoverColor(value: String | Dark): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
+      inline def setHoverColor(value: String | Dark): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
+      inline def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
       
-      @scala.inline
-      def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setOnSelectPlace(value: /* place */ js.Array[Double] => Unit): Self = StObject.set(x, "onSelectPlace", js.Any.fromFunction1(value))
+      inline def setOnSelectPlace(value: /* place */ js.Array[Double] => Unit): Self = StObject.set(x, "onSelectPlace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectPlaceUndefined: Self = StObject.set(x, "onSelectPlace", js.undefined)
+      inline def setOnSelectPlaceUndefined: Self = StObject.set(x, "onSelectPlace", js.undefined)
       
-      @scala.inline
-      def setPlaces(value: js.Array[Location]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+      inline def setPlaces(value: js.Array[Location]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
+      inline def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
       
-      @scala.inline
-      def setPlacesVarargs(value: Location*): Self = StObject.set(x, "places", js.Array(value :_*))
+      inline def setPlacesVarargs(value: Location*): Self = StObject.set(x, "places", js.Array(value :_*))
     }
   }
 }

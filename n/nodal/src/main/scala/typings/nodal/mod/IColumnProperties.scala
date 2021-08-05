@@ -24,58 +24,41 @@ trait IColumnProperties extends StObject {
 }
 object IColumnProperties {
   
-  @scala.inline
-  def apply(): IColumnProperties = {
+  inline def apply(): IColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnProperties]
   }
   
-  @scala.inline
-  implicit class IColumnPropertiesMutableBuilder[Self <: IColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IColumnProperties](x: Self) {
     
-    @scala.inline
-    def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+    inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    @scala.inline
-    def setAuto_increment(value: Boolean): Self = StObject.set(x, "auto_increment", value.asInstanceOf[js.Any])
+    inline def setAuto_increment(value: Boolean): Self = StObject.set(x, "auto_increment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_incrementUndefined: Self = StObject.set(x, "auto_increment", js.undefined)
+    inline def setAuto_incrementUndefined: Self = StObject.set(x, "auto_increment", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthNull: Self = StObject.set(x, "length", null)
+    inline def setLengthNull: Self = StObject.set(x, "length", null)
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
     
-    @scala.inline
-    def setPrimary_key(value: `0` | `1` | Boolean): Self = StObject.set(x, "primary_key", value.asInstanceOf[js.Any])
+    inline def setPrimary_key(value: `0` | `1` | Boolean): Self = StObject.set(x, "primary_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_keyUndefined: Self = StObject.set(x, "primary_key", js.undefined)
+    inline def setPrimary_keyUndefined: Self = StObject.set(x, "primary_key", js.undefined)
     
-    @scala.inline
-    def setUnique(value: `0` | `1` | Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: `0` | `1` | Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

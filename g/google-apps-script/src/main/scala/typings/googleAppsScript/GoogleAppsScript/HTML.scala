@@ -145,8 +145,7 @@ object HTML {
   }
   object HtmlOutput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addMetaTag: (String, String) => HtmlOutput,
       append: String => HtmlOutput,
       appendUntrusted: String => HtmlOutput,
@@ -172,68 +171,47 @@ object HTML {
       __obj.asInstanceOf[HtmlOutput]
     }
     
-    @scala.inline
-    implicit class HtmlOutputMutableBuilder[Self <: HtmlOutput] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlOutput](x: Self) {
       
-      @scala.inline
-      def setAddMetaTag(value: (String, String) => HtmlOutput): Self = StObject.set(x, "addMetaTag", js.Any.fromFunction2(value))
+      inline def setAddMetaTag(value: (String, String) => HtmlOutput): Self = StObject.set(x, "addMetaTag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAppend(value: String => HtmlOutput): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+      inline def setAppend(value: String => HtmlOutput): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendUntrusted(value: String => HtmlOutput): Self = StObject.set(x, "appendUntrusted", js.Any.fromFunction1(value))
+      inline def setAppendUntrusted(value: String => HtmlOutput): Self = StObject.set(x, "appendUntrusted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAsTemplate(value: () => HtmlTemplate): Self = StObject.set(x, "asTemplate", js.Any.fromFunction0(value))
+      inline def setAsTemplate(value: () => HtmlTemplate): Self = StObject.set(x, "asTemplate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClear(value: () => HtmlOutput): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => HtmlOutput): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+      inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+      inline def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFaviconUrl(value: () => String): Self = StObject.set(x, "getFaviconUrl", js.Any.fromFunction0(value))
+      inline def setGetFaviconUrl(value: () => String): Self = StObject.set(x, "getFaviconUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeight(value: () => Integer): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      inline def setGetHeight(value: () => Integer): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMetaTags(value: () => js.Array[HtmlOutputMetaTag]): Self = StObject.set(x, "getMetaTags", js.Any.fromFunction0(value))
+      inline def setGetMetaTags(value: () => js.Array[HtmlOutputMetaTag]): Self = StObject.set(x, "getMetaTags", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetContent(value: String => HtmlOutput): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+      inline def setSetContent(value: String => HtmlOutput): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFaviconUrl(value: String => HtmlOutput): Self = StObject.set(x, "setFaviconUrl", js.Any.fromFunction1(value))
+      inline def setSetFaviconUrl(value: String => HtmlOutput): Self = StObject.set(x, "setFaviconUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHeight(value: Integer => HtmlOutput): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+      inline def setSetHeight(value: Integer => HtmlOutput): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSandboxMode(value: SandboxMode => HtmlOutput): Self = StObject.set(x, "setSandboxMode", js.Any.fromFunction1(value))
+      inline def setSetSandboxMode(value: SandboxMode => HtmlOutput): Self = StObject.set(x, "setSandboxMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitle(value: String => HtmlOutput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: String => HtmlOutput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWidth(value: Integer => HtmlOutput): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+      inline def setSetWidth(value: Integer => HtmlOutput): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetXFrameOptionsMode(value: XFrameOptionsMode => HtmlOutput): Self = StObject.set(x, "setXFrameOptionsMode", js.Any.fromFunction1(value))
+      inline def setSetXFrameOptionsMode(value: XFrameOptionsMode => HtmlOutput): Self = StObject.set(x, "setXFrameOptionsMode", js.Any.fromFunction1(value))
     }
   }
   
@@ -254,20 +232,16 @@ object HTML {
   }
   object HtmlOutputMetaTag {
     
-    @scala.inline
-    def apply(getContent: () => String, getName: () => String): HtmlOutputMetaTag = {
+    inline def apply(getContent: () => String, getName: () => String): HtmlOutputMetaTag = {
       val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction0(getContent), getName = js.Any.fromFunction0(getName))
       __obj.asInstanceOf[HtmlOutputMetaTag]
     }
     
-    @scala.inline
-    implicit class HtmlOutputMetaTagMutableBuilder[Self <: HtmlOutputMetaTag] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlOutputMetaTag](x: Self) {
       
-      @scala.inline
-      def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     }
   }
   
@@ -316,8 +290,7 @@ object HTML {
   }
   object HtmlTemplate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       evaluate: () => HtmlOutput,
       getCode: () => String,
       getCodeWithComments: () => String,
@@ -327,20 +300,15 @@ object HTML {
       __obj.asInstanceOf[HtmlTemplate]
     }
     
-    @scala.inline
-    implicit class HtmlTemplateMutableBuilder[Self <: HtmlTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlTemplate](x: Self) {
       
-      @scala.inline
-      def setEvaluate(value: () => HtmlOutput): Self = StObject.set(x, "evaluate", js.Any.fromFunction0(value))
+      inline def setEvaluate(value: () => HtmlOutput): Self = StObject.set(x, "evaluate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+      inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCodeWithComments(value: () => String): Self = StObject.set(x, "getCodeWithComments", js.Any.fromFunction0(value))
+      inline def setGetCodeWithComments(value: () => String): Self = StObject.set(x, "getCodeWithComments", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRawContent(value: () => String): Self = StObject.set(x, "getRawContent", js.Any.fromFunction0(value))
+      inline def setGetRawContent(value: () => String): Self = StObject.set(x, "getRawContent", js.Any.fromFunction0(value))
     }
   }
 }

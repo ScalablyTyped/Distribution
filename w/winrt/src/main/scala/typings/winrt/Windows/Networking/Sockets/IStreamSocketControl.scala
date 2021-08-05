@@ -18,8 +18,7 @@ trait IStreamSocketControl extends StObject {
 }
 object IStreamSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     keepAlive: Boolean,
     noDelay: Boolean,
     outboundBufferSizeInBytes: Double,
@@ -30,22 +29,16 @@ object IStreamSocketControl {
     __obj.asInstanceOf[IStreamSocketControl]
   }
   
-  @scala.inline
-  implicit class IStreamSocketControlMutableBuilder[Self <: IStreamSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamSocketControl](x: Self) {
     
-    @scala.inline
-    def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+    inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
+    inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
+    inline def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
+    inline def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
   }
 }

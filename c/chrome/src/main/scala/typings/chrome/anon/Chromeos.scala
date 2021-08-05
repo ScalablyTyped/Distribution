@@ -18,43 +18,31 @@ trait Chromeos extends StObject {
 }
 object Chromeos {
   
-  @scala.inline
-  def apply(): Chromeos = {
+  inline def apply(): Chromeos = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Chromeos]
   }
   
-  @scala.inline
-  implicit class ChromeosMutableBuilder[Self <: Chromeos] (val x: Self) extends AnyVal {
+  extension [Self <: Chromeos](x: Self) {
     
-    @scala.inline
-    def setChromeos(value: String): Self = StObject.set(x, "chromeos", value.asInstanceOf[js.Any])
+    inline def setChromeos(value: String): Self = StObject.set(x, "chromeos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromeosUndefined: Self = StObject.set(x, "chromeos", js.undefined)
+    inline def setChromeosUndefined: Self = StObject.set(x, "chromeos", js.undefined)
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setLinux(value: String): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
+    inline def setLinux(value: String): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
+    inline def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
     
-    @scala.inline
-    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+    inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
-    @scala.inline
-    def setWindows(value: String): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: String): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
+    inline def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
   }
 }

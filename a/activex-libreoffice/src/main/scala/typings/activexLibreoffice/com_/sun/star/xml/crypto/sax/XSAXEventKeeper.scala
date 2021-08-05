@@ -100,8 +100,7 @@ trait XSAXEventKeeper
 }
 object XSAXEventKeeper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentBlockingNode: XXMLElementWrapper,
     acquire: () => Unit,
     addBlocker: () => Double,
@@ -121,40 +120,28 @@ object XSAXEventKeeper {
     __obj.asInstanceOf[XSAXEventKeeper]
   }
   
-  @scala.inline
-  implicit class XSAXEventKeeperMutableBuilder[Self <: XSAXEventKeeper] (val x: Self) extends AnyVal {
+  extension [Self <: XSAXEventKeeper](x: Self) {
     
-    @scala.inline
-    def setAddBlocker(value: () => Double): Self = StObject.set(x, "addBlocker", js.Any.fromFunction0(value))
+    inline def setAddBlocker(value: () => Double): Self = StObject.set(x, "addBlocker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddElementCollector(value: () => Double): Self = StObject.set(x, "addElementCollector", js.Any.fromFunction0(value))
+    inline def setAddElementCollector(value: () => Double): Self = StObject.set(x, "addElementCollector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCurrentBlockingNode(value: XXMLElementWrapper): Self = StObject.set(x, "CurrentBlockingNode", value.asInstanceOf[js.Any])
+    inline def setCurrentBlockingNode(value: XXMLElementWrapper): Self = StObject.set(x, "CurrentBlockingNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentBlockingNode(value: () => XXMLElementWrapper): Self = StObject.set(x, "getCurrentBlockingNode", js.Any.fromFunction0(value))
+    inline def setGetCurrentBlockingNode(value: () => XXMLElementWrapper): Self = StObject.set(x, "getCurrentBlockingNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetElement(value: Double => XXMLElementWrapper): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
+    inline def setGetElement(value: Double => XXMLElementWrapper): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsBlocking(value: () => Boolean): Self = StObject.set(x, "isBlocking", js.Any.fromFunction0(value))
+    inline def setIsBlocking(value: () => Boolean): Self = StObject.set(x, "isBlocking", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintBufferNodeTree(value: () => String): Self = StObject.set(x, "printBufferNodeTree", js.Any.fromFunction0(value))
+    inline def setPrintBufferNodeTree(value: () => String): Self = StObject.set(x, "printBufferNodeTree", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveBlocker(value: Double => Unit): Self = StObject.set(x, "removeBlocker", js.Any.fromFunction1(value))
+    inline def setRemoveBlocker(value: Double => Unit): Self = StObject.set(x, "removeBlocker", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveElementCollector(value: Double => Unit): Self = StObject.set(x, "removeElementCollector", js.Any.fromFunction1(value))
+    inline def setRemoveElementCollector(value: Double => Unit): Self = StObject.set(x, "removeElementCollector", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetElement(value: (Double, XXMLElementWrapper) => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction2(value))
+    inline def setSetElement(value: (Double, XXMLElementWrapper) => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetNextHandler(value: XDocumentHandler => XDocumentHandler): Self = StObject.set(x, "setNextHandler", js.Any.fromFunction1(value))
+    inline def setSetNextHandler(value: XDocumentHandler => XDocumentHandler): Self = StObject.set(x, "setNextHandler", js.Any.fromFunction1(value))
   }
 }

@@ -11,22 +11,17 @@ trait ShapeDataItemCollectionData extends StObject {
 }
 object ShapeDataItemCollectionData {
   
-  @scala.inline
-  def apply(): ShapeDataItemCollectionData = {
+  inline def apply(): ShapeDataItemCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeDataItemCollectionData]
   }
   
-  @scala.inline
-  implicit class ShapeDataItemCollectionDataMutableBuilder[Self <: ShapeDataItemCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeDataItemCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ShapeDataItemData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ShapeDataItemData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ShapeDataItemData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ShapeDataItemData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

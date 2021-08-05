@@ -13,19 +13,15 @@ trait LabelingJobResourceConfig extends StObject {
 }
 object LabelingJobResourceConfig {
   
-  @scala.inline
-  def apply(): LabelingJobResourceConfig = {
+  inline def apply(): LabelingJobResourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelingJobResourceConfig]
   }
   
-  @scala.inline
-  implicit class LabelingJobResourceConfigMutableBuilder[Self <: LabelingJobResourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobResourceConfig](x: Self) {
     
-    @scala.inline
-    def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
+    inline def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
   }
 }

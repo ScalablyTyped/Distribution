@@ -15,19 +15,15 @@ trait NetworkOperatorTetheringOperationResult extends StObject {
 }
 object NetworkOperatorTetheringOperationResult {
   
-  @scala.inline
-  def apply(additionalErrorMessage: String, status: TetheringOperationStatus): NetworkOperatorTetheringOperationResult = {
+  inline def apply(additionalErrorMessage: String, status: TetheringOperationStatus): NetworkOperatorTetheringOperationResult = {
     val __obj = js.Dynamic.literal(additionalErrorMessage = additionalErrorMessage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkOperatorTetheringOperationResult]
   }
   
-  @scala.inline
-  implicit class NetworkOperatorTetheringOperationResultMutableBuilder[Self <: NetworkOperatorTetheringOperationResult] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkOperatorTetheringOperationResult](x: Self) {
     
-    @scala.inline
-    def setAdditionalErrorMessage(value: String): Self = StObject.set(x, "additionalErrorMessage", value.asInstanceOf[js.Any])
+    inline def setAdditionalErrorMessage(value: String): Self = StObject.set(x, "additionalErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TetheringOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TetheringOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

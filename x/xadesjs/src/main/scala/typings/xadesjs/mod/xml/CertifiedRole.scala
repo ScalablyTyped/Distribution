@@ -13,6 +13,5 @@ class CertifiedRole ()
   extends typings.xadesjs.xmlMod.CertifiedRole
 object CertifiedRole {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CertifiedRole] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertifiedRole").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertifiedRole]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CertifiedRole] = ^.asInstanceOf[js.Dynamic].selectDynamic("CertifiedRole").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CertifiedRole]]
 }

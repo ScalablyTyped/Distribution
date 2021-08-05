@@ -12,19 +12,15 @@ trait FontProps
 }
 object FontProps {
   
-  @scala.inline
-  def apply(): FontProps = {
+  inline def apply(): FontProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontProps]
   }
   
-  @scala.inline
-  implicit class FontPropsMutableBuilder[Self <: FontProps] (val x: Self) extends AnyVal {
+  extension [Self <: FontProps](x: Self) {
     
-    @scala.inline
-    def setFont(value: FontObject): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontObject): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
   }
 }

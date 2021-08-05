@@ -15,20 +15,16 @@ object anon {
   }
   object Compressed {
     
-    @scala.inline
-    def apply(compressed: Boolean, privateKey: Buffer): Compressed = {
+    inline def apply(compressed: Boolean, privateKey: Buffer): Compressed = {
       val __obj = js.Dynamic.literal(compressed = compressed.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Compressed]
     }
     
-    @scala.inline
-    implicit class CompressedMutableBuilder[Self <: Compressed] (val x: Self) extends AnyVal {
+    extension [Self <: Compressed](x: Self) {
       
-      @scala.inline
-      def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
+      inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     }
   }
 }

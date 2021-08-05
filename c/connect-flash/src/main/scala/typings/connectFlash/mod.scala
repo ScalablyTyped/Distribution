@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: IConnectFlashOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: IConnectFlashOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("connect-flash", JSImport.Namespace)
   @js.native
@@ -24,20 +22,16 @@ object mod {
   }
   object IConnectFlashOptions {
     
-    @scala.inline
-    def apply(): IConnectFlashOptions = {
+    inline def apply(): IConnectFlashOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IConnectFlashOptions]
     }
     
-    @scala.inline
-    implicit class IConnectFlashOptionsMutableBuilder[Self <: IConnectFlashOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IConnectFlashOptions](x: Self) {
       
-      @scala.inline
-      def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
+      inline def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
+      inline def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
     }
   }
 }

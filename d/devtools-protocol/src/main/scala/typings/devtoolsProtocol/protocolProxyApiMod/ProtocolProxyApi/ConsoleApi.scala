@@ -32,8 +32,7 @@ trait ConsoleApi extends StObject {
 }
 object ConsoleApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearMessages: () => js.Promise[Unit],
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
@@ -43,19 +42,14 @@ object ConsoleApi {
     __obj.asInstanceOf[ConsoleApi]
   }
   
-  @scala.inline
-  implicit class ConsoleApiMutableBuilder[Self <: ConsoleApi] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleApi](x: Self) {
     
-    @scala.inline
-    def setClearMessages(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearMessages", js.Any.fromFunction0(value))
+    inline def setClearMessages(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearMessages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (messageAdded, js.Function1[/* params */ MessageAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (messageAdded, js.Function1[/* params */ MessageAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

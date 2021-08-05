@@ -81,14 +81,12 @@ object operationsInterfacesMod {
     @JSImport("vso-node-api/interfaces/common/OperationsInterfaces", "TypeInfo.OperationReference")
     @js.native
     def OperationReference: Fields = js.native
-    @scala.inline
-    def OperationReference_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OperationReference")(x.asInstanceOf[js.Any])
+    inline def OperationReference_=(x: Fields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OperationReference")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/common/OperationsInterfaces", "TypeInfo.OperationStatus")
     @js.native
     def OperationStatus: EnumValuesCancelledFailed = js.native
-    @scala.inline
-    def OperationStatus_=(x: EnumValuesCancelledFailed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OperationStatus")(x.asInstanceOf[js.Any])
+    inline def OperationStatus_=(x: EnumValuesCancelledFailed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OperationStatus")(x.asInstanceOf[js.Any])
   }
   
   trait OperationReference extends StObject {
@@ -110,23 +108,18 @@ object operationsInterfacesMod {
   }
   object OperationReference {
     
-    @scala.inline
-    def apply(id: String, status: OperationStatus, url: String): OperationReference = {
+    inline def apply(id: String, status: OperationStatus, url: String): OperationReference = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[OperationReference]
     }
     
-    @scala.inline
-    implicit class OperationReferenceMutableBuilder[Self <: OperationReference] (val x: Self) extends AnyVal {
+    extension [Self <: OperationReference](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

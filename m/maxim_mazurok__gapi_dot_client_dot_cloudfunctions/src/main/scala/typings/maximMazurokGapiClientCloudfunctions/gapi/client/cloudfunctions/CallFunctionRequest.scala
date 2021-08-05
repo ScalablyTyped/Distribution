@@ -11,19 +11,15 @@ trait CallFunctionRequest extends StObject {
 }
 object CallFunctionRequest {
   
-  @scala.inline
-  def apply(): CallFunctionRequest = {
+  inline def apply(): CallFunctionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallFunctionRequest]
   }
   
-  @scala.inline
-  implicit class CallFunctionRequestMutableBuilder[Self <: CallFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CallFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

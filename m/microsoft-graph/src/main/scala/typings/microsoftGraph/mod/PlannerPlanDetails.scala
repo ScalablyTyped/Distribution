@@ -20,31 +20,23 @@ trait PlannerPlanDetails
 }
 object PlannerPlanDetails {
   
-  @scala.inline
-  def apply(): PlannerPlanDetails = {
+  inline def apply(): PlannerPlanDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerPlanDetails]
   }
   
-  @scala.inline
-  implicit class PlannerPlanDetailsMutableBuilder[Self <: PlannerPlanDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerPlanDetails](x: Self) {
     
-    @scala.inline
-    def setCategoryDescriptions(value: NullableOption[PlannerCategoryDescriptions]): Self = StObject.set(x, "categoryDescriptions", value.asInstanceOf[js.Any])
+    inline def setCategoryDescriptions(value: NullableOption[PlannerCategoryDescriptions]): Self = StObject.set(x, "categoryDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryDescriptionsNull: Self = StObject.set(x, "categoryDescriptions", null)
+    inline def setCategoryDescriptionsNull: Self = StObject.set(x, "categoryDescriptions", null)
     
-    @scala.inline
-    def setCategoryDescriptionsUndefined: Self = StObject.set(x, "categoryDescriptions", js.undefined)
+    inline def setCategoryDescriptionsUndefined: Self = StObject.set(x, "categoryDescriptions", js.undefined)
     
-    @scala.inline
-    def setSharedWith(value: NullableOption[PlannerUserIds]): Self = StObject.set(x, "sharedWith", value.asInstanceOf[js.Any])
+    inline def setSharedWith(value: NullableOption[PlannerUserIds]): Self = StObject.set(x, "sharedWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedWithNull: Self = StObject.set(x, "sharedWith", null)
+    inline def setSharedWithNull: Self = StObject.set(x, "sharedWith", null)
     
-    @scala.inline
-    def setSharedWithUndefined: Self = StObject.set(x, "sharedWith", js.undefined)
+    inline def setSharedWithUndefined: Self = StObject.set(x, "sharedWith", js.undefined)
   }
 }

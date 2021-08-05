@@ -10,16 +10,13 @@ trait Closing extends StObject {
 }
 object Closing {
   
-  @scala.inline
-  def apply(closing: Boolean): Closing = {
+  inline def apply(closing: Boolean): Closing = {
     val __obj = js.Dynamic.literal(closing = closing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Closing]
   }
   
-  @scala.inline
-  implicit class ClosingMutableBuilder[Self <: Closing] (val x: Self) extends AnyVal {
+  extension [Self <: Closing](x: Self) {
     
-    @scala.inline
-    def setClosing(value: Boolean): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
+    inline def setClosing(value: Boolean): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait DeleteProvisionedProductPlanInput extends StObject {
 }
 object DeleteProvisionedProductPlanInput {
   
-  @scala.inline
-  def apply(PlanId: Id): DeleteProvisionedProductPlanInput = {
+  inline def apply(PlanId: Id): DeleteProvisionedProductPlanInput = {
     val __obj = js.Dynamic.literal(PlanId = PlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProvisionedProductPlanInput]
   }
   
-  @scala.inline
-  implicit class DeleteProvisionedProductPlanInputMutableBuilder[Self <: DeleteProvisionedProductPlanInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProvisionedProductPlanInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setIgnoreErrors(value: IgnoreErrors): Self = StObject.set(x, "IgnoreErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreErrors(value: IgnoreErrors): Self = StObject.set(x, "IgnoreErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreErrorsUndefined: Self = StObject.set(x, "IgnoreErrors", js.undefined)
+    inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "IgnoreErrors", js.undefined)
     
-    @scala.inline
-    def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
   }
 }

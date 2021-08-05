@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MemberType extends StObject
 object MemberType {
   
-  @scala.inline
-  def METHOD: `0` = 0.asInstanceOf[`0`]
+  inline def METHOD: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def PROPERTY: `1` = 1.asInstanceOf[`1`]
+  inline def PROPERTY: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def UNKNOWN: `2` = 2.asInstanceOf[`2`]
+  inline def UNKNOWN: `2` = 2.asInstanceOf[`2`]
 }

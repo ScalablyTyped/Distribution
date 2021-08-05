@@ -11,14 +11,10 @@ object getOrderableClusterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOrderableCluster(): js.Promise[GetOrderableClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")().asInstanceOf[js.Promise[GetOrderableClusterResult]]
-  @scala.inline
-  def getOrderableCluster(args: Unit, opts: InvokeOptions): js.Promise[GetOrderableClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrderableClusterResult]]
-  @scala.inline
-  def getOrderableCluster(args: GetOrderableClusterArgs): js.Promise[GetOrderableClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrderableClusterResult]]
-  @scala.inline
-  def getOrderableCluster(args: GetOrderableClusterArgs, opts: InvokeOptions): js.Promise[GetOrderableClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrderableClusterResult]]
+  inline def getOrderableCluster(): js.Promise[GetOrderableClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")().asInstanceOf[js.Promise[GetOrderableClusterResult]]
+  inline def getOrderableCluster(args: Unit, opts: InvokeOptions): js.Promise[GetOrderableClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrderableClusterResult]]
+  inline def getOrderableCluster(args: GetOrderableClusterArgs): js.Promise[GetOrderableClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrderableClusterResult]]
+  inline def getOrderableCluster(args: GetOrderableClusterArgs, opts: InvokeOptions): js.Promise[GetOrderableClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrderableClusterResult]]
   
   trait GetOrderableClusterArgs extends StObject {
     
@@ -44,41 +40,30 @@ object getOrderableClusterMod {
   }
   object GetOrderableClusterArgs {
     
-    @scala.inline
-    def apply(): GetOrderableClusterArgs = {
+    inline def apply(): GetOrderableClusterArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetOrderableClusterArgs]
     }
     
-    @scala.inline
-    implicit class GetOrderableClusterArgsMutableBuilder[Self <: GetOrderableClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrderableClusterArgs](x: Self) {
       
-      @scala.inline
-      def setClusterType(value: String): Self = StObject.set(x, "clusterType", value.asInstanceOf[js.Any])
+      inline def setClusterType(value: String): Self = StObject.set(x, "clusterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterTypeUndefined: Self = StObject.set(x, "clusterType", js.undefined)
+      inline def setClusterTypeUndefined: Self = StObject.set(x, "clusterType", js.undefined)
       
-      @scala.inline
-      def setClusterVersion(value: String): Self = StObject.set(x, "clusterVersion", value.asInstanceOf[js.Any])
+      inline def setClusterVersion(value: String): Self = StObject.set(x, "clusterVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterVersionUndefined: Self = StObject.set(x, "clusterVersion", js.undefined)
+      inline def setClusterVersionUndefined: Self = StObject.set(x, "clusterVersion", js.undefined)
       
-      @scala.inline
-      def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
+      inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
       
-      @scala.inline
-      def setPreferredNodeTypes(value: js.Array[String]): Self = StObject.set(x, "preferredNodeTypes", value.asInstanceOf[js.Any])
+      inline def setPreferredNodeTypes(value: js.Array[String]): Self = StObject.set(x, "preferredNodeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredNodeTypesUndefined: Self = StObject.set(x, "preferredNodeTypes", js.undefined)
+      inline def setPreferredNodeTypesUndefined: Self = StObject.set(x, "preferredNodeTypes", js.undefined)
       
-      @scala.inline
-      def setPreferredNodeTypesVarargs(value: String*): Self = StObject.set(x, "preferredNodeTypes", js.Array(value :_*))
+      inline def setPreferredNodeTypesVarargs(value: String*): Self = StObject.set(x, "preferredNodeTypes", js.Array(value :_*))
     }
   }
   
@@ -104,8 +89,7 @@ object getOrderableClusterMod {
   }
   object GetOrderableClusterResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       availabilityZones: js.Array[String],
       clusterType: String,
       clusterVersion: String,
@@ -116,35 +100,25 @@ object getOrderableClusterMod {
       __obj.asInstanceOf[GetOrderableClusterResult]
     }
     
-    @scala.inline
-    implicit class GetOrderableClusterResultMutableBuilder[Self <: GetOrderableClusterResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrderableClusterResult](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setClusterType(value: String): Self = StObject.set(x, "clusterType", value.asInstanceOf[js.Any])
+      inline def setClusterType(value: String): Self = StObject.set(x, "clusterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterVersion(value: String): Self = StObject.set(x, "clusterVersion", value.asInstanceOf[js.Any])
+      inline def setClusterVersion(value: String): Self = StObject.set(x, "clusterVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredNodeTypes(value: js.Array[String]): Self = StObject.set(x, "preferredNodeTypes", value.asInstanceOf[js.Any])
+      inline def setPreferredNodeTypes(value: js.Array[String]): Self = StObject.set(x, "preferredNodeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredNodeTypesUndefined: Self = StObject.set(x, "preferredNodeTypes", js.undefined)
+      inline def setPreferredNodeTypesUndefined: Self = StObject.set(x, "preferredNodeTypes", js.undefined)
       
-      @scala.inline
-      def setPreferredNodeTypesVarargs(value: String*): Self = StObject.set(x, "preferredNodeTypes", js.Array(value :_*))
+      inline def setPreferredNodeTypesVarargs(value: String*): Self = StObject.set(x, "preferredNodeTypes", js.Array(value :_*))
     }
   }
 }

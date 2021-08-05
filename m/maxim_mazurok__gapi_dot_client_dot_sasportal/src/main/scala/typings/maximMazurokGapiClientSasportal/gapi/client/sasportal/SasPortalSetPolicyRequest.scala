@@ -14,25 +14,19 @@ trait SasPortalSetPolicyRequest extends StObject {
 }
 object SasPortalSetPolicyRequest {
   
-  @scala.inline
-  def apply(): SasPortalSetPolicyRequest = {
+  inline def apply(): SasPortalSetPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalSetPolicyRequest]
   }
   
-  @scala.inline
-  implicit class SasPortalSetPolicyRequestMutableBuilder[Self <: SasPortalSetPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalSetPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: SasPortalPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: SasPortalPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

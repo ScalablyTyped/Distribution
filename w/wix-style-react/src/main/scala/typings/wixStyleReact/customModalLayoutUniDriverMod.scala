@@ -13,8 +13,7 @@ object customModalLayoutUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def customModalLayoutDriverFactory(base: BaseUniDriver): CustomModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("customModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CustomModalLayoutUniDriver]
+  inline def customModalLayoutDriverFactory(base: BaseUniDriver): CustomModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("customModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CustomModalLayoutUniDriver]
   
   trait CustomModalLayoutUniDriver
     extends StObject
@@ -24,8 +23,7 @@ object customModalLayoutUniDriverMod {
   }
   object CustomModalLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childExists: String => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       clickCloseButton: () => js.Promise[Unit],
@@ -44,11 +42,9 @@ object customModalLayoutUniDriverMod {
       __obj.asInstanceOf[CustomModalLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class CustomModalLayoutUniDriverMutableBuilder[Self <: CustomModalLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CustomModalLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setHasContentPadding(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasContentPadding", js.Any.fromFunction0(value))
+      inline def setHasContentPadding(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasContentPadding", js.Any.fromFunction0(value))
     }
   }
 }

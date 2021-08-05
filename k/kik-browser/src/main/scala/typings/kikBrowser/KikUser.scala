@@ -20,8 +20,7 @@ trait KikUser extends StObject {
 }
 object KikUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     firstName: String,
     fullName: String,
     lastName: String,
@@ -33,25 +32,18 @@ object KikUser {
     __obj.asInstanceOf[KikUser]
   }
   
-  @scala.inline
-  implicit class KikUserMutableBuilder[Self <: KikUser] (val x: Self) extends AnyVal {
+  extension [Self <: KikUser](x: Self) {
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+    inline def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

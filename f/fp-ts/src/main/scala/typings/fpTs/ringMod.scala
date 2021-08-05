@@ -12,11 +12,9 @@ object ringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFunctionRing[A, B](ring: Ring[B]): Ring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionRing")(ring.asInstanceOf[js.Any]).asInstanceOf[Ring[js.Function1[/* a */ A, B]]]
+  inline def getFunctionRing[A, B](ring: Ring[B]): Ring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionRing")(ring.asInstanceOf[js.Any]).asInstanceOf[Ring[js.Function1[/* a */ A, B]]]
   
-  @scala.inline
-  def getTupleRing[T /* <: js.Array[Ring[js.Any]] */](
+  inline def getTupleRing[T /* <: js.Array[Ring[js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rings because its type T is not an array type */ rings: T
   ): Ring[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -28,8 +26,7 @@ object ringMod {
     */ typings.fpTs.fpTsStrings.getTupleRing & TopLevel[T]
   ]]
   
-  @scala.inline
-  def negate[A](ring: Ring[A]): js.Function1[/* a */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(ring.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, A]]
+  inline def negate[A](ring: Ring[A]): js.Function1[/* a */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(ring.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, A]]
   
   trait Ring[A]
     extends StObject
@@ -39,17 +36,14 @@ object ringMod {
   }
   object Ring {
     
-    @scala.inline
-    def apply[A](add: (A, A) => A, mul: (A, A) => A, one: A, sub: (A, A) => A, zero: A): Ring[A] = {
+    inline def apply[A](add: (A, A) => A, mul: (A, A) => A, one: A, sub: (A, A) => A, zero: A): Ring[A] = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), mul = js.Any.fromFunction2(mul), one = one.asInstanceOf[js.Any], sub = js.Any.fromFunction2(sub), zero = zero.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ring[A]]
     }
     
-    @scala.inline
-    implicit class RingMutableBuilder[Self <: Ring[?], A] (val x: Self & Ring[A]) extends AnyVal {
+    extension [Self <: Ring[?], A](x: Self & Ring[A]) {
       
-      @scala.inline
-      def setSub(value: (A, A) => A): Self = StObject.set(x, "sub", js.Any.fromFunction2(value))
+      inline def setSub(value: (A, A) => A): Self = StObject.set(x, "sub", js.Any.fromFunction2(value))
     }
   }
 }

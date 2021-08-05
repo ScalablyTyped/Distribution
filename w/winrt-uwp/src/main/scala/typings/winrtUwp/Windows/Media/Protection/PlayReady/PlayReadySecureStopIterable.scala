@@ -16,16 +16,13 @@ trait PlayReadySecureStopIterable extends StObject {
 }
 object PlayReadySecureStopIterable {
   
-  @scala.inline
-  def apply(first: () => IIterator[IPlayReadySecureStopServiceRequest]): PlayReadySecureStopIterable = {
+  inline def apply(first: () => IIterator[IPlayReadySecureStopServiceRequest]): PlayReadySecureStopIterable = {
     val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first))
     __obj.asInstanceOf[PlayReadySecureStopIterable]
   }
   
-  @scala.inline
-  implicit class PlayReadySecureStopIterableMutableBuilder[Self <: PlayReadySecureStopIterable] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadySecureStopIterable](x: Self) {
     
-    @scala.inline
-    def setFirst(value: () => IIterator[IPlayReadySecureStopServiceRequest]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IPlayReadySecureStopServiceRequest]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
   }
 }

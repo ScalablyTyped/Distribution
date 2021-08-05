@@ -35,8 +35,7 @@ trait XLabeled extends StObject {
 }
 object XLabeled {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Label: XTitle,
     LabelAnchor: RectanglePoint,
     Offset: SafeArray[Double],
@@ -54,43 +53,30 @@ object XLabeled {
     __obj.asInstanceOf[XLabeled]
   }
   
-  @scala.inline
-  implicit class XLabeledMutableBuilder[Self <: XLabeled] (val x: Self) extends AnyVal {
+  extension [Self <: XLabeled](x: Self) {
     
-    @scala.inline
-    def setGetLabel(value: () => XTitle): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    inline def setGetLabel(value: () => XTitle): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelAnchor(value: () => RectanglePoint): Self = StObject.set(x, "getLabelAnchor", js.Any.fromFunction0(value))
+    inline def setGetLabelAnchor(value: () => RectanglePoint): Self = StObject.set(x, "getLabelAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOffset(value: () => SafeArray[Double]): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
+    inline def setGetOffset(value: () => SafeArray[Double]): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnAnchor(value: () => RectanglePoint): Self = StObject.set(x, "getOwnAnchor", js.Any.fromFunction0(value))
+    inline def setGetOwnAnchor(value: () => RectanglePoint): Self = StObject.set(x, "getOwnAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabel(value: XTitle): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: XTitle): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAnchor(value: RectanglePoint): Self = StObject.set(x, "LabelAnchor", value.asInstanceOf[js.Any])
+    inline def setLabelAnchor(value: RectanglePoint): Self = StObject.set(x, "LabelAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: SafeArray[Double]): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: SafeArray[Double]): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnAnchor(value: RectanglePoint): Self = StObject.set(x, "OwnAnchor", value.asInstanceOf[js.Any])
+    inline def setOwnAnchor(value: RectanglePoint): Self = StObject.set(x, "OwnAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetLabel(value: XTitle => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: XTitle => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabelAnchor(value: RectanglePoint => Unit): Self = StObject.set(x, "setLabelAnchor", js.Any.fromFunction1(value))
+    inline def setSetLabelAnchor(value: RectanglePoint => Unit): Self = StObject.set(x, "setLabelAnchor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOffset(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
+    inline def setSetOffset(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOwnAnchor(value: RectanglePoint => Unit): Self = StObject.set(x, "setOwnAnchor", js.Any.fromFunction1(value))
+    inline def setSetOwnAnchor(value: RectanglePoint => Unit): Self = StObject.set(x, "setOwnAnchor", js.Any.fromFunction1(value))
   }
 }

@@ -15,17 +15,14 @@ trait JsonAttribute
 }
 object JsonAttribute {
   
-  @scala.inline
-  def apply(): JsonAttribute = {
+  inline def apply(): JsonAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("json")
     __obj.asInstanceOf[JsonAttribute]
   }
   
-  @scala.inline
-  implicit class JsonAttributeMutableBuilder[Self <: JsonAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: JsonAttribute](x: Self) {
     
-    @scala.inline
-    def setType(value: json): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: json): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

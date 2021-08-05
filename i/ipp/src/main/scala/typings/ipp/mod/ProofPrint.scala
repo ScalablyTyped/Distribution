@@ -14,31 +14,23 @@ trait ProofPrint extends StObject {
 }
 object ProofPrint {
   
-  @scala.inline
-  def apply(): ProofPrint = {
+  inline def apply(): ProofPrint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProofPrint]
   }
   
-  @scala.inline
-  implicit class ProofPrintMutableBuilder[Self <: ProofPrint] (val x: Self) extends AnyVal {
+  extension [Self <: ProofPrint](x: Self) {
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
+    inline def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
+    inline def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def `setProof-print-copies`(value: Double): Self = StObject.set(x, "proof-print-copies", value.asInstanceOf[js.Any])
+    inline def `setProof-print-copies`(value: Double): Self = StObject.set(x, "proof-print-copies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProof-print-copiesUndefined`: Self = StObject.set(x, "proof-print-copies", js.undefined)
+    inline def `setProof-print-copiesUndefined`: Self = StObject.set(x, "proof-print-copies", js.undefined)
   }
 }

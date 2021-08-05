@@ -13,16 +13,13 @@ trait DeleteWebhookResult extends StObject {
 }
 object DeleteWebhookResult {
   
-  @scala.inline
-  def apply(webhook: Webhook): DeleteWebhookResult = {
+  inline def apply(webhook: Webhook): DeleteWebhookResult = {
     val __obj = js.Dynamic.literal(webhook = webhook.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWebhookResult]
   }
   
-  @scala.inline
-  implicit class DeleteWebhookResultMutableBuilder[Self <: DeleteWebhookResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWebhookResult](x: Self) {
     
-    @scala.inline
-    def setWebhook(value: Webhook): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+    inline def setWebhook(value: Webhook): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
   }
 }

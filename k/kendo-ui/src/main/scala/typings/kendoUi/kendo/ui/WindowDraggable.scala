@@ -14,31 +14,23 @@ trait WindowDraggable extends StObject {
 }
 object WindowDraggable {
   
-  @scala.inline
-  def apply(): WindowDraggable = {
+  inline def apply(): WindowDraggable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowDraggable]
   }
   
-  @scala.inline
-  implicit class WindowDraggableMutableBuilder[Self <: WindowDraggable] (val x: Self) extends AnyVal {
+  extension [Self <: WindowDraggable](x: Self) {
     
-    @scala.inline
-    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setContainment(value: js.Any | String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: js.Any | String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+    inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
-    @scala.inline
-    def setDragHandle(value: js.Any | String): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
+    inline def setDragHandle(value: js.Any | String): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
+    inline def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
   }
 }

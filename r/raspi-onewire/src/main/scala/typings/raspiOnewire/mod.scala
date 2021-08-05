@@ -15,7 +15,7 @@ object mod {
     
     /* private */ def _convertIDToMappingKey(deviceID: js.Any): js.Any = js.native
     
-    var _deviceIdMapping: js.Any = js.native
+    /* private */ var _deviceIdMapping: js.Any = js.native
     
     /* private */ def _getNameFromID(deviceID: js.Any): js.Any = js.native
     

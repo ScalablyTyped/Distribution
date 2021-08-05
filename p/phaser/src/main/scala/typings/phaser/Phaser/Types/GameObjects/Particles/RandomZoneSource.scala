@@ -19,16 +19,13 @@ trait RandomZoneSource extends StObject {
 }
 object RandomZoneSource {
   
-  @scala.inline
-  def apply(getRandomPoint: /* point */ Vector2 => Unit): RandomZoneSource = {
+  inline def apply(getRandomPoint: /* point */ Vector2 => Unit): RandomZoneSource = {
     val __obj = js.Dynamic.literal(getRandomPoint = js.Any.fromFunction1(getRandomPoint))
     __obj.asInstanceOf[RandomZoneSource]
   }
   
-  @scala.inline
-  implicit class RandomZoneSourceMutableBuilder[Self <: RandomZoneSource] (val x: Self) extends AnyVal {
+  extension [Self <: RandomZoneSource](x: Self) {
     
-    @scala.inline
-    def setGetRandomPoint(value: /* point */ Vector2 => Unit): Self = StObject.set(x, "getRandomPoint", js.Any.fromFunction1(value))
+    inline def setGetRandomPoint(value: /* point */ Vector2 => Unit): Self = StObject.set(x, "getRandomPoint", js.Any.fromFunction1(value))
   }
 }

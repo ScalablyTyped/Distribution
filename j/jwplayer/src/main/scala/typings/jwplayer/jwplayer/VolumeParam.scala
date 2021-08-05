@@ -10,16 +10,13 @@ trait VolumeParam extends StObject {
 }
 object VolumeParam {
   
-  @scala.inline
-  def apply(volume: Double): VolumeParam = {
+  inline def apply(volume: Double): VolumeParam = {
     val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeParam]
   }
   
-  @scala.inline
-  implicit class VolumeParamMutableBuilder[Self <: VolumeParam] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeParam](x: Self) {
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

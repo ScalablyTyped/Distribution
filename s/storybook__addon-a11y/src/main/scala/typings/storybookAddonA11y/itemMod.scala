@@ -13,8 +13,7 @@ object itemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Item(props: ItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Item(props: ItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ItemProps extends StObject {
     
@@ -24,21 +23,17 @@ object itemMod {
   }
   object ItemProps {
     
-    @scala.inline
-    def apply(item: Result, `type`: RuleType): ItemProps = {
+    inline def apply(item: Result, `type`: RuleType): ItemProps = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemProps]
     }
     
-    @scala.inline
-    implicit class ItemPropsMutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ItemProps](x: Self) {
       
-      @scala.inline
-      def setItem(value: Result): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Result): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

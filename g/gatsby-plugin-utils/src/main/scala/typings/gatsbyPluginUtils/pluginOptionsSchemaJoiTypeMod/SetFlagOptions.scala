@@ -11,17 +11,14 @@ trait SetFlagOptions extends StObject {
 }
 object SetFlagOptions {
   
-  @scala.inline
-  def apply(clone_ : Boolean): SetFlagOptions = {
+  inline def apply(clone_ : Boolean): SetFlagOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetFlagOptions]
   }
   
-  @scala.inline
-  implicit class SetFlagOptionsMutableBuilder[Self <: SetFlagOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetFlagOptions](x: Self) {
     
-    @scala.inline
-    def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+    inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
   }
 }

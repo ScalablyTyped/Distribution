@@ -33,8 +33,7 @@ trait ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments
 }
 object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCommandName: () => String,
     align: String,
     autoPlay: Boolean,
@@ -50,19 +49,14 @@ object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorChangeHtml5MediaElementCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments](x: Self) {
     
-    @scala.inline
-    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadMode(value: String): Self = StObject.set(x, "preloadMode", value.asInstanceOf[js.Any])
+    inline def setPreloadMode(value: String): Self = StObject.set(x, "preloadMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPlayerControls(value: Boolean): Self = StObject.set(x, "showPlayerControls", value.asInstanceOf[js.Any])
+    inline def setShowPlayerControls(value: Boolean): Self = StObject.set(x, "showPlayerControls", value.asInstanceOf[js.Any])
   }
 }

@@ -37,20 +37,15 @@ object datastaxMod {
         def values(): Iterator[js.Any, js.Any, Unit] = js.native
       }
       
-      @scala.inline
-      def asDouble(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def asDouble(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asDouble")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @scala.inline
-      def asFloat(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asFloat")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def asFloat(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asFloat")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @scala.inline
-      def asInt(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asInt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def asInt(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asInt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @scala.inline
-      def asTimestamp(value: Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def asTimestamp(value: Date): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asTimestamp")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
-      @scala.inline
-      def asUdt(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asUdt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def asUdt(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("asUdt")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
       
       object direction {
         
@@ -103,44 +98,32 @@ object datastaxMod {
       }
       object Edge {
         
-        @scala.inline
-        def apply(id: js.Any, label: String): Edge = {
+        inline def apply(id: js.Any, label: String): Edge = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[Edge]
         }
         
-        @scala.inline
-        implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+        extension [Self <: Edge](x: Self) {
           
-          @scala.inline
-          def setInV(value: typings.cassandraDriver.graphMod.graph.Vertex): Self = StObject.set(x, "inV", value.asInstanceOf[js.Any])
+          inline def setInV(value: typings.cassandraDriver.graphMod.graph.Vertex): Self = StObject.set(x, "inV", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInVLabel(value: String): Self = StObject.set(x, "inVLabel", value.asInstanceOf[js.Any])
+          inline def setInVLabel(value: String): Self = StObject.set(x, "inVLabel", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInVLabelUndefined: Self = StObject.set(x, "inVLabel", js.undefined)
+          inline def setInVLabelUndefined: Self = StObject.set(x, "inVLabel", js.undefined)
           
-          @scala.inline
-          def setInVUndefined: Self = StObject.set(x, "inV", js.undefined)
+          inline def setInVUndefined: Self = StObject.set(x, "inV", js.undefined)
           
-          @scala.inline
-          def setOutV(value: typings.cassandraDriver.graphMod.graph.Vertex): Self = StObject.set(x, "outV", value.asInstanceOf[js.Any])
+          inline def setOutV(value: typings.cassandraDriver.graphMod.graph.Vertex): Self = StObject.set(x, "outV", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOutVLabel(value: String): Self = StObject.set(x, "outVLabel", value.asInstanceOf[js.Any])
+          inline def setOutVLabel(value: String): Self = StObject.set(x, "outVLabel", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOutVLabelUndefined: Self = StObject.set(x, "outVLabel", js.undefined)
+          inline def setOutVLabelUndefined: Self = StObject.set(x, "outVLabel", js.undefined)
           
-          @scala.inline
-          def setOutVUndefined: Self = StObject.set(x, "outV", js.undefined)
+          inline def setOutVUndefined: Self = StObject.set(x, "outV", js.undefined)
           
-          @scala.inline
-          def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+          inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+          inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         }
       }
       
@@ -152,20 +135,16 @@ object datastaxMod {
       }
       object Element {
         
-        @scala.inline
-        def apply(id: js.Any, label: String): Element = {
+        inline def apply(id: js.Any, label: String): Element = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[Element]
         }
         
-        @scala.inline
-        implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+        extension [Self <: Element](x: Self) {
           
-          @scala.inline
-          def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         }
       }
       
@@ -179,26 +158,20 @@ object datastaxMod {
       }
       object Path {
         
-        @scala.inline
-        def apply(labels: js.Array[js.Any], objects: js.Array[js.Any]): Path = {
+        inline def apply(labels: js.Array[js.Any], objects: js.Array[js.Any]): Path = {
           val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
           __obj.asInstanceOf[Path]
         }
         
-        @scala.inline
-        implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+        extension [Self <: Path](x: Self) {
           
-          @scala.inline
-          def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+          inline def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsVarargs(value: js.Any*): Self = StObject.set(x, "labels", js.Array(value :_*))
+          inline def setLabelsVarargs(value: js.Any*): Self = StObject.set(x, "labels", js.Array(value :_*))
           
-          @scala.inline
-          def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+          inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+          inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
         }
       }
       
@@ -210,20 +183,16 @@ object datastaxMod {
       }
       object Property {
         
-        @scala.inline
-        def apply(key: js.Any, value: js.Any): Property = {
+        inline def apply(key: js.Any, value: js.Any): Property = {
           val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[Property]
         }
         
-        @scala.inline
-        implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+        extension [Self <: Property](x: Self) {
           
-          @scala.inline
-          def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+          inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         }
       }
       
@@ -235,20 +204,16 @@ object datastaxMod {
       }
       object Vertex {
         
-        @scala.inline
-        def apply(id: js.Any, label: String): Vertex = {
+        inline def apply(id: js.Any, label: String): Vertex = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[Vertex]
         }
         
-        @scala.inline
-        implicit class VertexMutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
+        extension [Self <: Vertex](x: Self) {
           
-          @scala.inline
-          def setProperties(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+          inline def setProperties(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+          inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         }
       }
       
@@ -264,26 +229,20 @@ object datastaxMod {
       }
       object VertexProperty {
         
-        @scala.inline
-        def apply(id: js.Any, key: String, label: String, value: js.Any): VertexProperty = {
+        inline def apply(id: js.Any, key: String, label: String, value: js.Any): VertexProperty = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[VertexProperty]
         }
         
-        @scala.inline
-        implicit class VertexPropertyMutableBuilder[Self <: VertexProperty] (val x: Self) extends AnyVal {
+        extension [Self <: VertexProperty](x: Self) {
           
-          @scala.inline
-          def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+          inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+          inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+          inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
           
-          @scala.inline
-          def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -311,12 +270,10 @@ object datastaxMod {
         val ^ : js.Any = js.native
         
         /* static member */
-        @scala.inline
-        def fromBuffer(value: Buffer): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
+        inline def fromBuffer(value: Buffer): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
         
         /* static member */
-        @scala.inline
-        def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
+        inline def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRange]
       }
       
       @JSImport("cassandra-driver/lib/datastax", "datastax.search.DateRangeBound")
@@ -336,16 +293,13 @@ object datastaxMod {
         val ^ : js.Any = js.native
         
         /* static member */
-        @scala.inline
-        def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
+        inline def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
         
         /* static member */
-        @scala.inline
-        def toLowerBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
+        inline def toLowerBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
         
         /* static member */
-        @scala.inline
-        def toUpperBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
+        inline def toUpperBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperBound")(bound.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.searchMod.search.DateRangeBound]
       }
       
       @js.native

@@ -46,29 +46,22 @@ trait GoogleDevtoolsRemoteworkersV1test2CommandResult extends StObject {
 }
 object GoogleDevtoolsRemoteworkersV1test2CommandResult {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemoteworkersV1test2CommandResult = {
+  inline def apply(): GoogleDevtoolsRemoteworkersV1test2CommandResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandResult]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2CommandResultMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
+    inline def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
@@ -76,32 +69,24 @@ object GoogleDevtoolsRemoteworkersV1test2CommandResult {
         ]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMetadataVarargs(
+    inline def setMetadataVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemoteworkersV1test2CommandResult & TopLevel[js.Any])*
     ): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputs(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def setOverhead(value: String): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
+    inline def setOverhead(value: String): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
+    inline def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -19,25 +19,19 @@ trait FontSizes extends StObject {
 }
 object FontSizes {
   
-  @scala.inline
-  def apply(): FontSizes = {
+  inline def apply(): FontSizes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontSizes]
   }
   
-  @scala.inline
-  implicit class FontSizesMutableBuilder[Self <: FontSizes] (val x: Self) extends AnyVal {
+  extension [Self <: FontSizes](x: Self) {
     
-    @scala.inline
-    def setFixed(value: integer): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: integer): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setStandard(value: integer): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: integer): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

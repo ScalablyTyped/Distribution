@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AutoCorrect")
 @js.native
-class AutoCorrect protected ()
+/* private */ class AutoCorrect ()
   extends StObject
      with typings.activexExcel.Excel.AutoCorrect {
   
@@ -44,7 +44,7 @@ class AutoCorrect protected ()
   /* CompleteClass */
   var DisplayAutoCorrectOptions: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.AutoCorrect_typekey")
   var ExcelDotAutoCorrect_typekey: typings.activexExcel.Excel.AutoCorrect = js.native
   

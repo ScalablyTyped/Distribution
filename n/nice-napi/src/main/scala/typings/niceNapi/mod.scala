@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(inc: Double): Double = ^.asInstanceOf[js.Dynamic].apply(inc.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(inc: Double): Double = ^.asInstanceOf[js.Dynamic].apply(inc.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("nice-napi", JSImport.Namespace)
   @js.native

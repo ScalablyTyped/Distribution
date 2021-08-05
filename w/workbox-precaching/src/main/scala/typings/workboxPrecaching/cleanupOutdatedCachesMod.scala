@@ -10,6 +10,5 @@ object cleanupOutdatedCachesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanupOutdatedCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupOutdatedCaches")().asInstanceOf[Unit]
+  inline def cleanupOutdatedCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupOutdatedCaches")().asInstanceOf[Unit]
 }

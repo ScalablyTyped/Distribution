@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFileFindSortBy extends StObject
 object MsoFileFindSortBy {
   
-  @scala.inline
-  def msoFileFindSortbyAuthor: `1` = 1.asInstanceOf[`1`]
+  inline def msoFileFindSortbyAuthor: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoFileFindSortbyDateCreated: `2` = 2.asInstanceOf[`2`]
+  inline def msoFileFindSortbyDateCreated: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoFileFindSortbyDateSaved: `4` = 4.asInstanceOf[`4`]
+  inline def msoFileFindSortbyDateSaved: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoFileFindSortbyFileName: `5` = 5.asInstanceOf[`5`]
+  inline def msoFileFindSortbyFileName: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoFileFindSortbyLastSavedBy: `3` = 3.asInstanceOf[`3`]
+  inline def msoFileFindSortbyLastSavedBy: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoFileFindSortbySize: `6` = 6.asInstanceOf[`6`]
+  inline def msoFileFindSortbySize: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoFileFindSortbyTitle: `7` = 7.asInstanceOf[`7`]
+  inline def msoFileFindSortbyTitle: `7` = 7.asInstanceOf[`7`]
 }

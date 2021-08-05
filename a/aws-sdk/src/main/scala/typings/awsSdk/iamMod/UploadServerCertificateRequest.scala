@@ -33,8 +33,7 @@ trait UploadServerCertificateRequest extends StObject {
 }
 object UploadServerCertificateRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CertificateBody: certificateBodyType,
     PrivateKey: privateKeyType,
     ServerCertificateName: serverCertificateNameType
@@ -43,28 +42,20 @@ object UploadServerCertificateRequest {
     __obj.asInstanceOf[UploadServerCertificateRequest]
   }
   
-  @scala.inline
-  implicit class UploadServerCertificateRequestMutableBuilder[Self <: UploadServerCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UploadServerCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
+    inline def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChain(value: certificateChainType): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: certificateChainType): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
+    inline def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
     
-    @scala.inline
-    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setPrivateKey(value: privateKeyType): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: privateKeyType): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
+    inline def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait MarginHorizontal extends StObject {
 }
 object MarginHorizontal {
   
-  @scala.inline
-  def apply(marginHorizontal: Double, marginVertical: Double): MarginHorizontal = {
+  inline def apply(marginHorizontal: Double, marginVertical: Double): MarginHorizontal = {
     val __obj = js.Dynamic.literal(marginHorizontal = marginHorizontal.asInstanceOf[js.Any], marginVertical = marginVertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginHorizontal]
   }
   
-  @scala.inline
-  implicit class MarginHorizontalMutableBuilder[Self <: MarginHorizontal] (val x: Self) extends AnyVal {
+  extension [Self <: MarginHorizontal](x: Self) {
     
-    @scala.inline
-    def setMarginHorizontal(value: Double): Self = StObject.set(x, "marginHorizontal", value.asInstanceOf[js.Any])
+    inline def setMarginHorizontal(value: Double): Self = StObject.set(x, "marginHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginVertical(value: Double): Self = StObject.set(x, "marginVertical", value.asInstanceOf[js.Any])
+    inline def setMarginVertical(value: Double): Self = StObject.set(x, "marginVertical", value.asInstanceOf[js.Any])
   }
 }

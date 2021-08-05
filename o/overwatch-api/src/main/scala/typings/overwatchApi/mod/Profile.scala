@@ -32,8 +32,7 @@ trait Profile extends StObject {
 }
 object Profile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     competitive: Damage,
     endorsement: Frame,
     games: Competitive,
@@ -50,37 +49,26 @@ object Profile {
     __obj.asInstanceOf[Profile]
   }
   
-  @scala.inline
-  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+  extension [Self <: Profile](x: Self) {
     
-    @scala.inline
-    def setCompetitive(value: Damage): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
+    inline def setCompetitive(value: Damage): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndorsement(value: Frame): Self = StObject.set(x, "endorsement", value.asInstanceOf[js.Any])
+    inline def setEndorsement(value: Frame): Self = StObject.set(x, "endorsement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGames(value: Competitive): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
+    inline def setGames(value: Competitive): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelFrame(value: String): Self = StObject.set(x, "levelFrame", value.asInstanceOf[js.Any])
+    inline def setLevelFrame(value: String): Self = StObject.set(x, "levelFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaytime(value: Quickplay): Self = StObject.set(x, "playtime", value.asInstanceOf[js.Any])
+    inline def setPlaytime(value: Quickplay): Self = StObject.set(x, "playtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
+    inline def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+    inline def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

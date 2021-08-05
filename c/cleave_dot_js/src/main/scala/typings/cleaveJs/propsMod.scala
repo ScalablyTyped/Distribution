@@ -18,8 +18,7 @@ object propsMod {
        with typings.react.mod.ChangeEvent[T]
   object ChangeEvent {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: EventTarget & T,
@@ -61,35 +60,26 @@ object propsMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(options: CleaveOptions): Props = {
+    inline def apply(options: CleaveOptions): Props = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setHtmlRef(value: /* i */ js.Any => Unit): Self = StObject.set(x, "htmlRef", js.Any.fromFunction1(value))
+      inline def setHtmlRef(value: /* i */ js.Any => Unit): Self = StObject.set(x, "htmlRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHtmlRefUndefined: Self = StObject.set(x, "htmlRef", js.undefined)
+      inline def setHtmlRefUndefined: Self = StObject.set(x, "htmlRef", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnInit(value: /* owner */ ReactInstance => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
+      inline def setOnInit(value: /* owner */ ReactInstance => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+      inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      @scala.inline
-      def setOptions(value: CleaveOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: CleaveOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

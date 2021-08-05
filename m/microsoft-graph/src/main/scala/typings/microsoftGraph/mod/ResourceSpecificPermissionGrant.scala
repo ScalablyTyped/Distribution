@@ -20,58 +20,41 @@ trait ResourceSpecificPermissionGrant
 }
 object ResourceSpecificPermissionGrant {
   
-  @scala.inline
-  def apply(): ResourceSpecificPermissionGrant = {
+  inline def apply(): ResourceSpecificPermissionGrant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceSpecificPermissionGrant]
   }
   
-  @scala.inline
-  implicit class ResourceSpecificPermissionGrantMutableBuilder[Self <: ResourceSpecificPermissionGrant] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceSpecificPermissionGrant](x: Self) {
     
-    @scala.inline
-    def setClientAppId(value: NullableOption[String]): Self = StObject.set(x, "clientAppId", value.asInstanceOf[js.Any])
+    inline def setClientAppId(value: NullableOption[String]): Self = StObject.set(x, "clientAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAppIdNull: Self = StObject.set(x, "clientAppId", null)
+    inline def setClientAppIdNull: Self = StObject.set(x, "clientAppId", null)
     
-    @scala.inline
-    def setClientAppIdUndefined: Self = StObject.set(x, "clientAppId", js.undefined)
+    inline def setClientAppIdUndefined: Self = StObject.set(x, "clientAppId", js.undefined)
     
-    @scala.inline
-    def setClientId(value: NullableOption[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: NullableOption[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdNull: Self = StObject.set(x, "clientId", null)
+    inline def setClientIdNull: Self = StObject.set(x, "clientId", null)
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setPermission(value: NullableOption[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: NullableOption[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionNull: Self = StObject.set(x, "permission", null)
+    inline def setPermissionNull: Self = StObject.set(x, "permission", null)
     
-    @scala.inline
-    def setPermissionType(value: NullableOption[String]): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
+    inline def setPermissionType(value: NullableOption[String]): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionTypeNull: Self = StObject.set(x, "permissionType", null)
+    inline def setPermissionTypeNull: Self = StObject.set(x, "permissionType", null)
     
-    @scala.inline
-    def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
+    inline def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setResourceAppId(value: NullableOption[String]): Self = StObject.set(x, "resourceAppId", value.asInstanceOf[js.Any])
+    inline def setResourceAppId(value: NullableOption[String]): Self = StObject.set(x, "resourceAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAppIdNull: Self = StObject.set(x, "resourceAppId", null)
+    inline def setResourceAppIdNull: Self = StObject.set(x, "resourceAppId", null)
     
-    @scala.inline
-    def setResourceAppIdUndefined: Self = StObject.set(x, "resourceAppId", js.undefined)
+    inline def setResourceAppIdUndefined: Self = StObject.set(x, "resourceAppId", js.undefined)
   }
 }

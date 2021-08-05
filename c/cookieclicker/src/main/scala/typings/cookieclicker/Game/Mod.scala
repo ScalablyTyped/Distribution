@@ -16,37 +16,27 @@ trait Mod extends StObject {
 }
 object Mod {
   
-  @scala.inline
-  def apply(): Mod = {
+  inline def apply(): Mod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mod]
   }
   
-  @scala.inline
-  implicit class ModMutableBuilder[Self <: Mod] (val x: Self) extends AnyVal {
+  extension [Self <: Mod](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setLoad(value: /* data */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* data */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setSave(value: () => String): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => String): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
   }
 }

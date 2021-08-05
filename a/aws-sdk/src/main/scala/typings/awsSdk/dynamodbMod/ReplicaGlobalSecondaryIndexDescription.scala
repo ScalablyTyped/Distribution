@@ -18,25 +18,19 @@ trait ReplicaGlobalSecondaryIndexDescription extends StObject {
 }
 object ReplicaGlobalSecondaryIndexDescription {
   
-  @scala.inline
-  def apply(): ReplicaGlobalSecondaryIndexDescription = {
+  inline def apply(): ReplicaGlobalSecondaryIndexDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicaGlobalSecondaryIndexDescription]
   }
   
-  @scala.inline
-  implicit class ReplicaGlobalSecondaryIndexDescriptionMutableBuilder[Self <: ReplicaGlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicaGlobalSecondaryIndexDescription](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+    inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
   }
 }

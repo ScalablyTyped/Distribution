@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoLanguageIDHidden extends StObject
 object MsoLanguageIDHidden {
   
-  @scala.inline
-  def msoLanguageIDChineseHongKong: `3076` = 3076.asInstanceOf[`3076`]
+  inline def msoLanguageIDChineseHongKong: `3076` = 3076.asInstanceOf[`3076`]
   
-  @scala.inline
-  def msoLanguageIDChineseMacao: `5124` = 5124.asInstanceOf[`5124`]
+  inline def msoLanguageIDChineseMacao: `5124` = 5124.asInstanceOf[`5124`]
   
-  @scala.inline
-  def msoLanguageIDEnglishTrinidad: `11273` = 11273.asInstanceOf[`11273`]
+  inline def msoLanguageIDEnglishTrinidad: `11273` = 11273.asInstanceOf[`11273`]
 }

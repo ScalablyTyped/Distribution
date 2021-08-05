@@ -12,28 +12,21 @@ trait NavigationBackActionPayload extends StObject {
 }
 object NavigationBackActionPayload {
   
-  @scala.inline
-  def apply(): NavigationBackActionPayload = {
+  inline def apply(): NavigationBackActionPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationBackActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationBackActionPayloadMutableBuilder[Self <: NavigationBackActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBackActionPayload](x: Self) {
     
-    @scala.inline
-    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+    inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+    inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

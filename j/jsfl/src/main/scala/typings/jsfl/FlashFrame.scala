@@ -58,8 +58,7 @@ trait FlashFrame extends StObject {
 }
 object FlashFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionScript: js.Any,
     duration: js.Any,
     elements: js.Array[FlashElement],
@@ -90,85 +89,58 @@ object FlashFrame {
     __obj.asInstanceOf[FlashFrame]
   }
   
-  @scala.inline
-  implicit class FlashFrameMutableBuilder[Self <: FlashFrame] (val x: Self) extends AnyVal {
+  extension [Self <: FlashFrame](x: Self) {
     
-    @scala.inline
-    def setActionScript(value: js.Any): Self = StObject.set(x, "actionScript", value.asInstanceOf[js.Any])
+    inline def setActionScript(value: js.Any): Self = StObject.set(x, "actionScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElements(value: js.Array[FlashElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[FlashElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: FlashElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: FlashElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setGetCustomEase(value: () => js.Any): Self = StObject.set(x, "getCustomEase", js.Any.fromFunction0(value))
+    inline def setGetCustomEase(value: () => js.Any): Self = StObject.set(x, "getCustomEase", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasCustomEase(value: js.Any): Self = StObject.set(x, "hasCustomEase", value.asInstanceOf[js.Any])
+    inline def setHasCustomEase(value: js.Any): Self = StObject.set(x, "hasCustomEase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelType(value: js.Any): Self = StObject.set(x, "labelType", value.asInstanceOf[js.Any])
+    inline def setLabelType(value: js.Any): Self = StObject.set(x, "labelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionTweenOrientToPath(value: js.Any): Self = StObject.set(x, "motionTweenOrientToPath", value.asInstanceOf[js.Any])
+    inline def setMotionTweenOrientToPath(value: js.Any): Self = StObject.set(x, "motionTweenOrientToPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionTweenRotate(value: js.Any): Self = StObject.set(x, "motionTweenRotate", value.asInstanceOf[js.Any])
+    inline def setMotionTweenRotate(value: js.Any): Self = StObject.set(x, "motionTweenRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionTweenRotateTimes(value: js.Any): Self = StObject.set(x, "motionTweenRotateTimes", value.asInstanceOf[js.Any])
+    inline def setMotionTweenRotateTimes(value: js.Any): Self = StObject.set(x, "motionTweenRotateTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionTweenScale(value: js.Any): Self = StObject.set(x, "motionTweenScale", value.asInstanceOf[js.Any])
+    inline def setMotionTweenScale(value: js.Any): Self = StObject.set(x, "motionTweenScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionTweenSnap(value: js.Any): Self = StObject.set(x, "motionTweenSnap", value.asInstanceOf[js.Any])
+    inline def setMotionTweenSnap(value: js.Any): Self = StObject.set(x, "motionTweenSnap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionTweenSync(value: js.Any): Self = StObject.set(x, "motionTweenSync", value.asInstanceOf[js.Any])
+    inline def setMotionTweenSync(value: js.Any): Self = StObject.set(x, "motionTweenSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCustomEase(value: () => js.Any): Self = StObject.set(x, "setCustomEase", js.Any.fromFunction0(value))
+    inline def setSetCustomEase(value: () => js.Any): Self = StObject.set(x, "setCustomEase", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShapeTweenBlend(value: js.Any): Self = StObject.set(x, "shapeTweenBlend", value.asInstanceOf[js.Any])
+    inline def setShapeTweenBlend(value: js.Any): Self = StObject.set(x, "shapeTweenBlend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundEffect(value: js.Any): Self = StObject.set(x, "soundEffect", value.asInstanceOf[js.Any])
+    inline def setSoundEffect(value: js.Any): Self = StObject.set(x, "soundEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundLibraryItem(value: FlashSoundItem): Self = StObject.set(x, "soundLibraryItem", value.asInstanceOf[js.Any])
+    inline def setSoundLibraryItem(value: FlashSoundItem): Self = StObject.set(x, "soundLibraryItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundLoop(value: js.Any): Self = StObject.set(x, "soundLoop", value.asInstanceOf[js.Any])
+    inline def setSoundLoop(value: js.Any): Self = StObject.set(x, "soundLoop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundLoopMode(value: js.Any): Self = StObject.set(x, "soundLoopMode", value.asInstanceOf[js.Any])
+    inline def setSoundLoopMode(value: js.Any): Self = StObject.set(x, "soundLoopMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundName(value: js.Any): Self = StObject.set(x, "soundName", value.asInstanceOf[js.Any])
+    inline def setSoundName(value: js.Any): Self = StObject.set(x, "soundName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundSync(value: js.Any): Self = StObject.set(x, "soundSync", value.asInstanceOf[js.Any])
+    inline def setSoundSync(value: js.Any): Self = StObject.set(x, "soundSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFrame(value: js.Any): Self = StObject.set(x, "startFrame", value.asInstanceOf[js.Any])
+    inline def setStartFrame(value: js.Any): Self = StObject.set(x, "startFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTweenEasing(value: js.Any): Self = StObject.set(x, "tweenEasing", value.asInstanceOf[js.Any])
+    inline def setTweenEasing(value: js.Any): Self = StObject.set(x, "tweenEasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTweenType(value: js.Any): Self = StObject.set(x, "tweenType", value.asInstanceOf[js.Any])
+    inline def setTweenType(value: js.Any): Self = StObject.set(x, "tweenType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSingleEaseCurve(value: js.Any): Self = StObject.set(x, "useSingleEaseCurve", value.asInstanceOf[js.Any])
+    inline def setUseSingleEaseCurve(value: js.Any): Self = StObject.set(x, "useSingleEaseCurve", value.asInstanceOf[js.Any])
   }
 }

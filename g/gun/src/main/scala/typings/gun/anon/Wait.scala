@@ -11,17 +11,14 @@ trait Wait extends StObject {
 }
 object Wait {
   
-  @scala.inline
-  def apply(wait_ : Double): Wait = {
+  inline def apply(wait_ : Double): Wait = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wait]
   }
   
-  @scala.inline
-  implicit class WaitMutableBuilder[Self <: Wait] (val x: Self) extends AnyVal {
+  extension [Self <: Wait](x: Self) {
     
-    @scala.inline
-    def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
   }
 }

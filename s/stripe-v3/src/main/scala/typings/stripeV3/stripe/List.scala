@@ -29,29 +29,22 @@ trait List[T] extends StObject {
 }
 object List {
   
-  @scala.inline
-  def apply[T](data: js.Array[T], has_more: Boolean, url: String): List[T] = {
+  inline def apply[T](data: js.Array[T], has_more: Boolean, url: String): List[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("object")("list")
     __obj.asInstanceOf[List[T]]
   }
   
-  @scala.inline
-  implicit class ListMutableBuilder[Self <: List[?], T] (val x: Self & List[T]) extends AnyVal {
+  extension [Self <: List[?], T](x: Self & List[T]) {
     
-    @scala.inline
-    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
+    inline def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: list): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: list): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

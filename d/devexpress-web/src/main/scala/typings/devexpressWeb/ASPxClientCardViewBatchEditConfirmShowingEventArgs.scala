@@ -18,16 +18,13 @@ trait ASPxClientCardViewBatchEditConfirmShowingEventArgs
 }
 object ASPxClientCardViewBatchEditConfirmShowingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, requestTriggerID: String): ASPxClientCardViewBatchEditConfirmShowingEventArgs = {
+  inline def apply(cancel: Boolean, requestTriggerID: String): ASPxClientCardViewBatchEditConfirmShowingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], requestTriggerID = requestTriggerID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewBatchEditConfirmShowingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewBatchEditConfirmShowingEventArgsMutableBuilder[Self <: ASPxClientCardViewBatchEditConfirmShowingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewBatchEditConfirmShowingEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
+    inline def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
   }
 }

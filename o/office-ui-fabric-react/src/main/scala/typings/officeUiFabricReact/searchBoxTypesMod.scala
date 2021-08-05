@@ -30,20 +30,16 @@ object searchBoxTypesMod {
   }
   object ISearchBox {
     
-    @scala.inline
-    def apply(focus: () => Unit, hasFocus: () => Boolean): ISearchBox = {
+    inline def apply(focus: () => Unit, hasFocus: () => Boolean): ISearchBox = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus), hasFocus = js.Any.fromFunction0(hasFocus))
       __obj.asInstanceOf[ISearchBox]
     }
     
-    @scala.inline
-    implicit class ISearchBoxMutableBuilder[Self <: ISearchBox] (val x: Self) extends AnyVal {
+    extension [Self <: ISearchBox](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFocus(value: () => Boolean): Self = StObject.set(x, "hasFocus", js.Any.fromFunction0(value))
+      inline def setHasFocus(value: () => Boolean): Self = StObject.set(x, "hasFocus", js.Any.fromFunction0(value))
     }
   }
   
@@ -149,118 +145,82 @@ object searchBoxTypesMod {
   }
   object ISearchBoxProps {
     
-    @scala.inline
-    def apply(): ISearchBoxProps = {
+    inline def apply(): ISearchBoxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISearchBoxProps]
     }
     
-    @scala.inline
-    implicit class ISearchBoxPropsMutableBuilder[Self <: ISearchBoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISearchBoxProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setClearButtonProps(value: IButtonProps): Self = StObject.set(x, "clearButtonProps", value.asInstanceOf[js.Any])
+      inline def setClearButtonProps(value: IButtonProps): Self = StObject.set(x, "clearButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearButtonPropsUndefined: Self = StObject.set(x, "clearButtonProps", js.undefined)
+      inline def setClearButtonPropsUndefined: Self = StObject.set(x, "clearButtonProps", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ISearchBox]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ISearchBox]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ISearchBox | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ISearchBox | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
+      inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
+      inline def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
       
-      @scala.inline
-      def setIconProps(value: PickIIconPropsExcludekeyo): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
+      inline def setIconProps(value: PickIIconPropsExcludekeyo): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
+      inline def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
       
-      @scala.inline
-      def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
+      inline def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
+      inline def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], /* newValue */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnChanged(value: /* newValue */ js.Any => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
+      inline def setOnChanged(value: /* newValue */ js.Any => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
+      inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
       
-      @scala.inline
-      def setOnClear(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
+      inline def setOnClear(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+      inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      @scala.inline
-      def setOnEscape(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction1(value))
+      inline def setOnEscape(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
+      inline def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
       
-      @scala.inline
-      def setOnSearch(value: /* newValue */ js.Any => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: /* newValue */ js.Any => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+      inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ISearchBoxStyleProps, ISearchBoxStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ISearchBoxStyleProps, ISearchBoxStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ISearchBoxStyleProps => DeepPartial[ISearchBoxStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ISearchBoxStyleProps => DeepPartial[ISearchBoxStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUnderlined(value: Boolean): Self = StObject.set(x, "underlined", value.asInstanceOf[js.Any])
+      inline def setUnderlined(value: Boolean): Self = StObject.set(x, "underlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlinedUndefined: Self = StObject.set(x, "underlined", js.undefined)
+      inline def setUnderlinedUndefined: Self = StObject.set(x, "underlined", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -282,53 +242,38 @@ object searchBoxTypesMod {
   }
   object ISearchBoxStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ISearchBoxStyleProps = {
+    inline def apply(theme: ITheme): ISearchBoxStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISearchBoxStyleProps]
     }
     
-    @scala.inline
-    implicit class ISearchBoxStylePropsMutableBuilder[Self <: ISearchBoxStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISearchBoxStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
+      inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
+      inline def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
+      inline def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasFocusUndefined: Self = StObject.set(x, "hasFocus", js.undefined)
+      inline def setHasFocusUndefined: Self = StObject.set(x, "hasFocus", js.undefined)
       
-      @scala.inline
-      def setHasInput(value: Boolean): Self = StObject.set(x, "hasInput", value.asInstanceOf[js.Any])
+      inline def setHasInput(value: Boolean): Self = StObject.set(x, "hasInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasInputUndefined: Self = StObject.set(x, "hasInput", js.undefined)
+      inline def setHasInputUndefined: Self = StObject.set(x, "hasInput", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlined(value: Boolean): Self = StObject.set(x, "underlined", value.asInstanceOf[js.Any])
+      inline def setUnderlined(value: Boolean): Self = StObject.set(x, "underlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlinedUndefined: Self = StObject.set(x, "underlined", js.undefined)
+      inline def setUnderlinedUndefined: Self = StObject.set(x, "underlined", js.undefined)
     }
   }
   
@@ -346,59 +291,42 @@ object searchBoxTypesMod {
   }
   object ISearchBoxStyles {
     
-    @scala.inline
-    def apply(): ISearchBoxStyles = {
+    inline def apply(): ISearchBoxStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISearchBoxStyles]
     }
     
-    @scala.inline
-    implicit class ISearchBoxStylesMutableBuilder[Self <: ISearchBoxStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISearchBoxStyles](x: Self) {
       
-      @scala.inline
-      def setClearButton(value: IStyle): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
+      inline def setClearButton(value: IStyle): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearButtonNull: Self = StObject.set(x, "clearButton", null)
+      inline def setClearButtonNull: Self = StObject.set(x, "clearButton", null)
       
-      @scala.inline
-      def setClearButtonUndefined: Self = StObject.set(x, "clearButton", js.undefined)
+      inline def setClearButtonUndefined: Self = StObject.set(x, "clearButton", js.undefined)
       
-      @scala.inline
-      def setField(value: IStyle): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: IStyle): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNull: Self = StObject.set(x, "field", null)
+      inline def setFieldNull: Self = StObject.set(x, "field", null)
       
-      @scala.inline
-      def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainer(value: IStyle): Self = StObject.set(x, "iconContainer", value.asInstanceOf[js.Any])
+      inline def setIconContainer(value: IStyle): Self = StObject.set(x, "iconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainerNull: Self = StObject.set(x, "iconContainer", null)
+      inline def setIconContainerNull: Self = StObject.set(x, "iconContainer", null)
       
-      @scala.inline
-      def setIconContainerUndefined: Self = StObject.set(x, "iconContainer", js.undefined)
+      inline def setIconContainerUndefined: Self = StObject.set(x, "iconContainer", js.undefined)
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

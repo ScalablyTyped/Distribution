@@ -48,8 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ConversationNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     correlationKeys: js.Array[CorrelationKey],
@@ -64,61 +63,42 @@ object ConversationNode {
     __obj.asInstanceOf[ConversationNode]
   }
   
-  @scala.inline
-  implicit class ConversationNodeMutableBuilder[Self <: ConversationNode] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationNode](x: Self) {
     
-    @scala.inline
-    def set$attrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
+    inline def set$attrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$attrsUndefined: Self = StObject.set(x, "$attrs", js.undefined)
+    inline def set$attrsUndefined: Self = StObject.set(x, "$attrs", js.undefined)
     
-    @scala.inline
-    def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
+    inline def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
+    inline def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentation(value: js.Array[Documentation]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: js.Array[Documentation]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value :_*))
     
-    @scala.inline
-    def setExtensionDefinitions(value: js.Array[ExtensionDefinition]): Self = StObject.set(x, "extensionDefinitions", value.asInstanceOf[js.Any])
+    inline def setExtensionDefinitions(value: js.Array[ExtensionDefinition]): Self = StObject.set(x, "extensionDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionDefinitionsUndefined: Self = StObject.set(x, "extensionDefinitions", js.undefined)
+    inline def setExtensionDefinitionsUndefined: Self = StObject.set(x, "extensionDefinitions", js.undefined)
     
-    @scala.inline
-    def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value :_*))
+    inline def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setExtensionElements(value: ExtensionElements): Self = StObject.set(x, "extensionElements", value.asInstanceOf[js.Any])
+    inline def setExtensionElements(value: ExtensionElements): Self = StObject.set(x, "extensionElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionElementsUndefined: Self = StObject.set(x, "extensionElements", js.undefined)
+    inline def setExtensionElementsUndefined: Self = StObject.set(x, "extensionElements", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFlowRefs(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlowRefs", value.asInstanceOf[js.Any])
+    inline def setMessageFlowRefs(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlowRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFlowRefsVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRefs", js.Array(value :_*))
+    inline def setMessageFlowRefsVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRefs", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRefs(value: js.Array[Participant]): Self = StObject.set(x, "participantRefs", value.asInstanceOf[js.Any])
+    inline def setParticipantRefs(value: js.Array[Participant]): Self = StObject.set(x, "participantRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRefsVarargs(value: Participant*): Self = StObject.set(x, "participantRefs", js.Array(value :_*))
+    inline def setParticipantRefsVarargs(value: Participant*): Self = StObject.set(x, "participantRefs", js.Array(value :_*))
   }
 }

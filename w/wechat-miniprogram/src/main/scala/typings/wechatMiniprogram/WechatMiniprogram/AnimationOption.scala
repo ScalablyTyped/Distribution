@@ -25,25 +25,19 @@ trait AnimationOption extends StObject {
 }
 object AnimationOption {
   
-  @scala.inline
-  def apply(): AnimationOption = {
+  inline def apply(): AnimationOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationOption]
   }
   
-  @scala.inline
-  implicit class AnimationOptionMutableBuilder[Self <: AnimationOption] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationOption](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "timingFunc", value.asInstanceOf[js.Any])
+    inline def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "timingFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingFuncUndefined: Self = StObject.set(x, "timingFunc", js.undefined)
+    inline def setTimingFuncUndefined: Self = StObject.set(x, "timingFunc", js.undefined)
   }
 }

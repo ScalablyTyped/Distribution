@@ -34,43 +34,31 @@ trait PhysicalLocation extends StObject {
 }
 object PhysicalLocation {
   
-  @scala.inline
-  def apply(): PhysicalLocation = {
+  inline def apply(): PhysicalLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhysicalLocation]
   }
   
-  @scala.inline
-  implicit class PhysicalLocationMutableBuilder[Self <: PhysicalLocation] (val x: Self) extends AnyVal {
+  extension [Self <: PhysicalLocation](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setArtifactLocation(value: ArtifactLocation): Self = StObject.set(x, "artifactLocation", value.asInstanceOf[js.Any])
+    inline def setArtifactLocation(value: ArtifactLocation): Self = StObject.set(x, "artifactLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactLocationUndefined: Self = StObject.set(x, "artifactLocation", js.undefined)
+    inline def setArtifactLocationUndefined: Self = StObject.set(x, "artifactLocation", js.undefined)
     
-    @scala.inline
-    def setContextRegion(value: Region): Self = StObject.set(x, "contextRegion", value.asInstanceOf[js.Any])
+    inline def setContextRegion(value: Region): Self = StObject.set(x, "contextRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRegionUndefined: Self = StObject.set(x, "contextRegion", js.undefined)
+    inline def setContextRegionUndefined: Self = StObject.set(x, "contextRegion", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

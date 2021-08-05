@@ -15,16 +15,13 @@ trait PixelDataProvider extends StObject {
 }
 object PixelDataProvider {
   
-  @scala.inline
-  def apply(detachPixelData: () => js.Array[Double]): PixelDataProvider = {
+  inline def apply(detachPixelData: () => js.Array[Double]): PixelDataProvider = {
     val __obj = js.Dynamic.literal(detachPixelData = js.Any.fromFunction0(detachPixelData))
     __obj.asInstanceOf[PixelDataProvider]
   }
   
-  @scala.inline
-  implicit class PixelDataProviderMutableBuilder[Self <: PixelDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: PixelDataProvider](x: Self) {
     
-    @scala.inline
-    def setDetachPixelData(value: () => js.Array[Double]): Self = StObject.set(x, "detachPixelData", js.Any.fromFunction0(value))
+    inline def setDetachPixelData(value: () => js.Array[Double]): Self = StObject.set(x, "detachPixelData", js.Any.fromFunction0(value))
   }
 }

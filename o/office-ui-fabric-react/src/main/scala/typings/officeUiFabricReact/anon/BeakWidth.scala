@@ -25,8 +25,7 @@ trait BeakWidth extends StObject {
 }
 object BeakWidth {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beakWidth: Double,
     gapSpace: Double,
     isBeakVisible: Boolean,
@@ -39,31 +38,22 @@ object BeakWidth {
     __obj.asInstanceOf[BeakWidth]
   }
   
-  @scala.inline
-  implicit class BeakWidthMutableBuilder[Self <: BeakWidth] (val x: Self) extends AnyVal {
+  extension [Self <: BeakWidth](x: Self) {
     
-    @scala.inline
-    def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
+    inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionalHint(value: `7`): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
+    inline def setDirectionalHint(value: `7`): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
+    inline def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBeakVisible(value: Boolean): Self = StObject.set(x, "isBeakVisible", value.asInstanceOf[js.Any])
+    inline def setIsBeakVisible(value: Boolean): Self = StObject.set(x, "isBeakVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPagePadding(value: Double): Self = StObject.set(x, "minPagePadding", value.asInstanceOf[js.Any])
+    inline def setMinPagePadding(value: Double): Self = StObject.set(x, "minPagePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
+    inline def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDismissOnResize(value: Boolean): Self = StObject.set(x, "preventDismissOnResize", value.asInstanceOf[js.Any])
+    inline def setPreventDismissOnResize(value: Boolean): Self = StObject.set(x, "preventDismissOnResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDismissOnScroll(value: Boolean): Self = StObject.set(x, "preventDismissOnScroll", value.asInstanceOf[js.Any])
+    inline def setPreventDismissOnScroll(value: Boolean): Self = StObject.set(x, "preventDismissOnScroll", value.asInstanceOf[js.Any])
   }
 }

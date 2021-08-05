@@ -16,25 +16,19 @@ trait BackgroundSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] e
 }
 object BackgroundSizeProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BackgroundSizeProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BackgroundSizeProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundSizeProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BackgroundSizePropsMutableBuilder[Self <: BackgroundSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundSizeProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BackgroundSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BackgroundSizeProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBackgroundSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+    inline def setBackgroundSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundSizeNull: Self = StObject.set(x, "backgroundSize", null)
+    inline def setBackgroundSizeNull: Self = StObject.set(x, "backgroundSize", null)
     
-    @scala.inline
-    def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
+    inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
-    @scala.inline
-    def setBackgroundSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
+    inline def setBackgroundSizeVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait UpdateDistributionBundleRequest extends StObject {
 }
 object UpdateDistributionBundleRequest {
   
-  @scala.inline
-  def apply(): UpdateDistributionBundleRequest = {
+  inline def apply(): UpdateDistributionBundleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDistributionBundleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDistributionBundleRequestMutableBuilder[Self <: UpdateDistributionBundleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDistributionBundleRequest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
+    inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
+    inline def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
   }
 }

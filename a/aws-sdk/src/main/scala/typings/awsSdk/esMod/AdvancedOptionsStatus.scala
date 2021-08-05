@@ -18,19 +18,15 @@ trait AdvancedOptionsStatus extends StObject {
 }
 object AdvancedOptionsStatus {
   
-  @scala.inline
-  def apply(Options: AdvancedOptions, Status: OptionStatus): AdvancedOptionsStatus = {
+  inline def apply(Options: AdvancedOptions, Status: OptionStatus): AdvancedOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvancedOptionsStatus]
   }
   
-  @scala.inline
-  implicit class AdvancedOptionsStatusMutableBuilder[Self <: AdvancedOptionsStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedOptionsStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: AdvancedOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AdvancedOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

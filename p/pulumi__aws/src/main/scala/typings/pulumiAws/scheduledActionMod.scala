@@ -86,21 +86,16 @@ object scheduledActionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScheduledActionState): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScheduledActionState, opts: CustomResourceOptions): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
+    inline def get(name: String, id: Input[ID]): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
+    inline def get(name: String, id: Input[ID], state: ScheduledActionState): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
+    inline def get(name: String, id: Input[ID], state: ScheduledActionState, opts: CustomResourceOptions): ScheduledAction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScheduledAction]
     
     /**
       * Returns true if the given object is an instance of ScheduledAction.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/scheduledAction.ScheduledAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appautoscaling/scheduledAction.ScheduledAction */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/scheduledAction.ScheduledAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appautoscaling/scheduledAction.ScheduledAction */ Boolean]
   }
   
   trait ScheduledActionArgs extends StObject {
@@ -149,56 +144,40 @@ object scheduledActionMod {
   }
   object ScheduledActionArgs {
     
-    @scala.inline
-    def apply(resourceId: Input[String], serviceNamespace: Input[String]): ScheduledActionArgs = {
+    inline def apply(resourceId: Input[String], serviceNamespace: Input[String]): ScheduledActionArgs = {
       val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScheduledActionArgs]
     }
     
-    @scala.inline
-    implicit class ScheduledActionArgsMutableBuilder[Self <: ScheduledActionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduledActionArgs](x: Self) {
       
-      @scala.inline
-      def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
+      inline def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableDimensionUndefined: Self = StObject.set(x, "scalableDimension", js.undefined)
+      inline def setScalableDimensionUndefined: Self = StObject.set(x, "scalableDimension", js.undefined)
       
-      @scala.inline
-      def setScalableTargetAction(value: Input[typings.pulumiAws.inputMod.appautoscaling.ScheduledActionScalableTargetAction]): Self = StObject.set(x, "scalableTargetAction", value.asInstanceOf[js.Any])
+      inline def setScalableTargetAction(value: Input[typings.pulumiAws.inputMod.appautoscaling.ScheduledActionScalableTargetAction]): Self = StObject.set(x, "scalableTargetAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableTargetActionUndefined: Self = StObject.set(x, "scalableTargetAction", js.undefined)
+      inline def setScalableTargetActionUndefined: Self = StObject.set(x, "scalableTargetAction", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
+      inline def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     }
   }
   
@@ -253,68 +232,48 @@ object scheduledActionMod {
   }
   object ScheduledActionState {
     
-    @scala.inline
-    def apply(): ScheduledActionState = {
+    inline def apply(): ScheduledActionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScheduledActionState]
     }
     
-    @scala.inline
-    implicit class ScheduledActionStateMutableBuilder[Self <: ScheduledActionState] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduledActionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+      inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
       
-      @scala.inline
-      def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
+      inline def setScalableDimension(value: Input[String]): Self = StObject.set(x, "scalableDimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableDimensionUndefined: Self = StObject.set(x, "scalableDimension", js.undefined)
+      inline def setScalableDimensionUndefined: Self = StObject.set(x, "scalableDimension", js.undefined)
       
-      @scala.inline
-      def setScalableTargetAction(value: Input[typings.pulumiAws.inputMod.appautoscaling.ScheduledActionScalableTargetAction]): Self = StObject.set(x, "scalableTargetAction", value.asInstanceOf[js.Any])
+      inline def setScalableTargetAction(value: Input[typings.pulumiAws.inputMod.appautoscaling.ScheduledActionScalableTargetAction]): Self = StObject.set(x, "scalableTargetAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableTargetActionUndefined: Self = StObject.set(x, "scalableTargetAction", js.undefined)
+      inline def setScalableTargetActionUndefined: Self = StObject.set(x, "scalableTargetAction", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
+      inline def setServiceNamespace(value: Input[String]): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
+      inline def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     }
   }
 }

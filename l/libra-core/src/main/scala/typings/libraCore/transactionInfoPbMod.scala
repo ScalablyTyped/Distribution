@@ -55,11 +55,9 @@ object transactionInfoPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): TransactionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionInfo]
+    inline def deserializeBinary(bytes: Uint8Array): TransactionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionInfo]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: TransactionInfo, reader: BinaryReader): TransactionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionInfo]
+    inline def deserializeBinaryFromReader(message: TransactionInfo, reader: BinaryReader): TransactionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionInfo]
     
     @JSImport("libra-core/lib/@/generated/transaction_info_pb", "TransactionInfo.extensions")
     @js.native
@@ -68,17 +66,13 @@ object transactionInfoPbMod {
     @JSImport("libra-core/lib/@/generated/transaction_info_pb", "TransactionInfo.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: TransactionInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: TransactionInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: TransactionInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: TransactionInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -92,8 +86,7 @@ object transactionInfoPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         eventRootHash: Uint8Array | String,
         gasUsed: String,
         signedTransactionHash: Uint8Array | String,
@@ -103,20 +96,15 @@ object transactionInfoPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setEventRootHash(value: Uint8Array | String): Self = StObject.set(x, "eventRootHash", value.asInstanceOf[js.Any])
+        inline def setEventRootHash(value: Uint8Array | String): Self = StObject.set(x, "eventRootHash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGasUsed(value: String): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+        inline def setGasUsed(value: String): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignedTransactionHash(value: Uint8Array | String): Self = StObject.set(x, "signedTransactionHash", value.asInstanceOf[js.Any])
+        inline def setSignedTransactionHash(value: Uint8Array | String): Self = StObject.set(x, "signedTransactionHash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStateRootHash(value: Uint8Array | String): Self = StObject.set(x, "stateRootHash", value.asInstanceOf[js.Any])
+        inline def setStateRootHash(value: Uint8Array | String): Self = StObject.set(x, "stateRootHash", value.asInstanceOf[js.Any])
       }
     }
   }

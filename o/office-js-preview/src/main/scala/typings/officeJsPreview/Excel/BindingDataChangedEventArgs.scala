@@ -22,16 +22,13 @@ trait BindingDataChangedEventArgs extends StObject {
 }
 object BindingDataChangedEventArgs {
   
-  @scala.inline
-  def apply(binding: Binding): BindingDataChangedEventArgs = {
+  inline def apply(binding: Binding): BindingDataChangedEventArgs = {
     val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingDataChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class BindingDataChangedEventArgsMutableBuilder[Self <: BindingDataChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BindingDataChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setBinding(value: Binding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: Binding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
   }
 }

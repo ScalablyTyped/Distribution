@@ -23,40 +23,29 @@ trait NumericMenuExposed extends StObject {
 }
 object NumericMenuExposed {
   
-  @scala.inline
-  def apply(attribute: String, items: js.Array[End]): NumericMenuExposed = {
+  inline def apply(attribute: String, items: js.Array[End]): NumericMenuExposed = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericMenuExposed]
   }
   
-  @scala.inline
-  implicit class NumericMenuExposedMutableBuilder[Self <: NumericMenuExposed] (val x: Self) extends AnyVal {
+  extension [Self <: NumericMenuExposed](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
+    inline def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
+    inline def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[End]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[End]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: End*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: End*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    inline def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
+    inline def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
   }
 }

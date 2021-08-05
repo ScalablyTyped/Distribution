@@ -12,6 +12,5 @@ object getDisplayNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object PseudoFullscreen {
     
-    @scala.inline
-    def apply(pseudoFullscreen: Boolean): PseudoFullscreen = {
+    inline def apply(pseudoFullscreen: Boolean): PseudoFullscreen = {
       val __obj = js.Dynamic.literal(pseudoFullscreen = pseudoFullscreen.asInstanceOf[js.Any])
       __obj.asInstanceOf[PseudoFullscreen]
     }
     
-    @scala.inline
-    implicit class PseudoFullscreenMutableBuilder[Self <: PseudoFullscreen] (val x: Self) extends AnyVal {
+    extension [Self <: PseudoFullscreen](x: Self) {
       
-      @scala.inline
-      def setPseudoFullscreen(value: Boolean): Self = StObject.set(x, "pseudoFullscreen", value.asInstanceOf[js.Any])
+      inline def setPseudoFullscreen(value: Boolean): Self = StObject.set(x, "pseudoFullscreen", value.asInstanceOf[js.Any])
     }
   }
 }

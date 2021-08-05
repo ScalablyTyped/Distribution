@@ -11,22 +11,17 @@ trait Adloox extends StObject {
 }
 object Adloox {
   
-  @scala.inline
-  def apply(): Adloox = {
+  inline def apply(): Adloox = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Adloox]
   }
   
-  @scala.inline
-  implicit class AdlooxMutableBuilder[Self <: Adloox] (val x: Self) extends AnyVal {
+  extension [Self <: Adloox](x: Self) {
     
-    @scala.inline
-    def setExcludedAdlooxCategories(value: js.Array[String]): Self = StObject.set(x, "excludedAdlooxCategories", value.asInstanceOf[js.Any])
+    inline def setExcludedAdlooxCategories(value: js.Array[String]): Self = StObject.set(x, "excludedAdlooxCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedAdlooxCategoriesUndefined: Self = StObject.set(x, "excludedAdlooxCategories", js.undefined)
+    inline def setExcludedAdlooxCategoriesUndefined: Self = StObject.set(x, "excludedAdlooxCategories", js.undefined)
     
-    @scala.inline
-    def setExcludedAdlooxCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedAdlooxCategories", js.Array(value :_*))
+    inline def setExcludedAdlooxCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedAdlooxCategories", js.Array(value :_*))
   }
 }

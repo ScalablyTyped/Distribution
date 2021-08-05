@@ -14,16 +14,13 @@ trait InteractionOptions extends StObject {
 }
 object InteractionOptions {
   
-  @scala.inline
-  def apply(handleEvent: MapBrowserEvent => Boolean): InteractionOptions = {
+  inline def apply(handleEvent: MapBrowserEvent => Boolean): InteractionOptions = {
     val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
     __obj.asInstanceOf[InteractionOptions]
   }
   
-  @scala.inline
-  implicit class InteractionOptionsMutableBuilder[Self <: InteractionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionOptions](x: Self) {
     
-    @scala.inline
-    def setHandleEvent(value: MapBrowserEvent => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+    inline def setHandleEvent(value: MapBrowserEvent => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }
 }

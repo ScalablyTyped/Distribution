@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsUserSelect extends StObject
 object styleMsUserSelect {
   
-  @scala.inline
-  def styleMsUserSelectAuto: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsUserSelectAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsUserSelectElement: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsUserSelectElement: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsUserSelectNone: `3` = 3.asInstanceOf[`3`]
+  inline def styleMsUserSelectNone: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleMsUserSelectNotSet: `4` = 4.asInstanceOf[`4`]
+  inline def styleMsUserSelectNotSet: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleMsUserSelectText: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsUserSelectText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsUserSelect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsUserSelect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

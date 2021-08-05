@@ -46,55 +46,39 @@ trait IBoot extends StObject {
 }
 object IBoot {
   
-  @scala.inline
-  def apply(): IBoot = {
+  inline def apply(): IBoot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBoot]
   }
   
-  @scala.inline
-  implicit class IBootMutableBuilder[Self <: IBoot] (val x: Self) extends AnyVal {
+  extension [Self <: IBoot](x: Self) {
     
-    @scala.inline
-    def setBeforeClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "beforeClose", js.Any.fromFunction0(value))
+    inline def setBeforeClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "beforeClose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+    inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
-    @scala.inline
-    def setConfigDidLoad(value: () => Unit): Self = StObject.set(x, "configDidLoad", js.Any.fromFunction0(value))
+    inline def setConfigDidLoad(value: () => Unit): Self = StObject.set(x, "configDidLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConfigDidLoadUndefined: Self = StObject.set(x, "configDidLoad", js.undefined)
+    inline def setConfigDidLoadUndefined: Self = StObject.set(x, "configDidLoad", js.undefined)
     
-    @scala.inline
-    def setConfigWillLoad(value: () => Unit): Self = StObject.set(x, "configWillLoad", js.Any.fromFunction0(value))
+    inline def setConfigWillLoad(value: () => Unit): Self = StObject.set(x, "configWillLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConfigWillLoadUndefined: Self = StObject.set(x, "configWillLoad", js.undefined)
+    inline def setConfigWillLoadUndefined: Self = StObject.set(x, "configWillLoad", js.undefined)
     
-    @scala.inline
-    def setDidLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "didLoad", js.Any.fromFunction0(value))
+    inline def setDidLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "didLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDidLoadUndefined: Self = StObject.set(x, "didLoad", js.undefined)
+    inline def setDidLoadUndefined: Self = StObject.set(x, "didLoad", js.undefined)
     
-    @scala.inline
-    def setDidReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "didReady", js.Any.fromFunction0(value))
+    inline def setDidReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "didReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDidReadyUndefined: Self = StObject.set(x, "didReady", js.undefined)
+    inline def setDidReadyUndefined: Self = StObject.set(x, "didReady", js.undefined)
     
-    @scala.inline
-    def setServerDidReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "serverDidReady", js.Any.fromFunction0(value))
+    inline def setServerDidReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "serverDidReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setServerDidReadyUndefined: Self = StObject.set(x, "serverDidReady", js.undefined)
+    inline def setServerDidReadyUndefined: Self = StObject.set(x, "serverDidReady", js.undefined)
     
-    @scala.inline
-    def setWillReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "willReady", js.Any.fromFunction0(value))
+    inline def setWillReady(value: () => js.Promise[Unit]): Self = StObject.set(x, "willReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWillReadyUndefined: Self = StObject.set(x, "willReady", js.undefined)
+    inline def setWillReadyUndefined: Self = StObject.set(x, "willReady", js.undefined)
   }
 }

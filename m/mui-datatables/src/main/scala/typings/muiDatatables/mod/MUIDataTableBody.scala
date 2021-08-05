@@ -43,8 +43,7 @@ trait MUIDataTableBody extends StObject {
 }
 object MUIDataTableBody {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classes: js.Object,
     columns: js.Array[MUIDataTableColumnDef],
     count: Double,
@@ -55,109 +54,74 @@ object MUIDataTableBody {
     __obj.asInstanceOf[MUIDataTableBody]
   }
   
-  @scala.inline
-  implicit class MUIDataTableBodyMutableBuilder[Self <: MUIDataTableBody] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableBody](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnOrder(value: js.Array[Double]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
+    inline def setColumnOrder(value: js.Array[Double]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnOrderUndefined: Self = StObject.set(x, "columnOrder", js.undefined)
+    inline def setColumnOrderUndefined: Self = StObject.set(x, "columnOrder", js.undefined)
     
-    @scala.inline
-    def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
+    inline def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setColumns(value: js.Array[MUIDataTableColumnDef]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[MUIDataTableColumnDef]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: MUIDataTableColumnDef*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: MUIDataTableColumnDef*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[js.Object | (js.Array[Double | String])]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Object | (js.Array[Double | String])]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: (js.Object | (js.Array[Double | String]))*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (js.Object | (js.Array[Double | String]))*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setExpandedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
+    inline def setExpandedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedRowsUndefined: Self = StObject.set(x, "expandedRows", js.undefined)
+    inline def setExpandedRowsUndefined: Self = StObject.set(x, "expandedRows", js.undefined)
     
-    @scala.inline
-    def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
+    inline def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
+    inline def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
-    @scala.inline
-    def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
-    @scala.inline
-    def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
+    inline def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+    inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
-    @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPreviousSelectedRow(value: Double): Self = StObject.set(x, "previousSelectedRow", value.asInstanceOf[js.Any])
+    inline def setPreviousSelectedRow(value: Double): Self = StObject.set(x, "previousSelectedRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSelectedRowNull: Self = StObject.set(x, "previousSelectedRow", null)
+    inline def setPreviousSelectedRowNull: Self = StObject.set(x, "previousSelectedRow", null)
     
-    @scala.inline
-    def setPreviousSelectedRowUndefined: Self = StObject.set(x, "previousSelectedRow", js.undefined)
+    inline def setPreviousSelectedRowUndefined: Self = StObject.set(x, "previousSelectedRow", js.undefined)
     
-    @scala.inline
-    def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
+    inline def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
+    inline def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
     
-    @scala.inline
-    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+    inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
-    @scala.inline
-    def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
+    inline def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
+    inline def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
     
-    @scala.inline
-    def setSelectedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+    inline def setSelectedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
+    inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
-    @scala.inline
-    def setToggleExpandRow(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "toggleExpandRow", js.Any.fromFunction1(value))
+    inline def setToggleExpandRow(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "toggleExpandRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleExpandRowUndefined: Self = StObject.set(x, "toggleExpandRow", js.undefined)
+    inline def setToggleExpandRowUndefined: Self = StObject.set(x, "toggleExpandRow", js.undefined)
   }
 }

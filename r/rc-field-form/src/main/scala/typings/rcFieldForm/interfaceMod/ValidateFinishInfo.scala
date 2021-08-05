@@ -13,17 +13,14 @@ trait ValidateFinishInfo
 }
 object ValidateFinishInfo {
   
-  @scala.inline
-  def apply(): ValidateFinishInfo = {
+  inline def apply(): ValidateFinishInfo = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("validateFinish")
     __obj.asInstanceOf[ValidateFinishInfo]
   }
   
-  @scala.inline
-  implicit class ValidateFinishInfoMutableBuilder[Self <: ValidateFinishInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateFinishInfo](x: Self) {
     
-    @scala.inline
-    def setType(value: validateFinish): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: validateFinish): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

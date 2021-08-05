@@ -21,19 +21,14 @@ object AxisType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CATEGORY: `2` = 2.asInstanceOf[`2`]
+    inline def CATEGORY: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def DATE: `4` = 4.asInstanceOf[`4`]
+    inline def DATE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def PERCENT: `1` = 1.asInstanceOf[`1`]
+    inline def PERCENT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def REALNUMBER: `0` = 0.asInstanceOf[`0`]
+    inline def REALNUMBER: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SERIES: `3` = 3.asInstanceOf[`3`]
+    inline def SERIES: `3` = 3.asInstanceOf[`3`]
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsOverview extends StObject
 object DirectionsOverview {
   
-  @scala.inline
-  def full: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.full = "full".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.full]
+  inline def full: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.full = "full".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.full]
   
-  @scala.inline
-  def simplified: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.simplified = "simplified".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.simplified]
+  inline def simplified: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.simplified = "simplified".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.simplified]
 }

@@ -13,17 +13,14 @@ trait RecordingAppender
 }
 object RecordingAppender {
   
-  @scala.inline
-  def apply(): RecordingAppender = {
+  inline def apply(): RecordingAppender = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("recording")
     __obj.asInstanceOf[RecordingAppender]
   }
   
-  @scala.inline
-  implicit class RecordingAppenderMutableBuilder[Self <: RecordingAppender] (val x: Self) extends AnyVal {
+  extension [Self <: RecordingAppender](x: Self) {
     
-    @scala.inline
-    def setType(value: recording): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: recording): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

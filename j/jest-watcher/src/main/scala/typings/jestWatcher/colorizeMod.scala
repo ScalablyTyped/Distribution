@@ -10,6 +10,5 @@ object colorizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: String, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(str: String, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
 }

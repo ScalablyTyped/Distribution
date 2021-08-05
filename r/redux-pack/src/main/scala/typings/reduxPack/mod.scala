@@ -46,8 +46,7 @@ object mod {
     val SUCCESS: success = js.native
   }
   
-  @scala.inline
-  def handle[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
+  inline def handle[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
     state: TState,
     action: Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload],
     handlers: Handlers[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]
@@ -75,42 +74,31 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](`type`: js.Any): Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
+    inline def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](`type`: js.Any): Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[?, ?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self & (Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
+    extension [Self <: Action[?, ?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](x: Self & (Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) {
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMeta(value: (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) & TMetaPayload): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) & TMetaPayload): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setPayload(value: TSuccessPayload | TErrorPayload | TStartPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: TSuccessPayload | TErrorPayload | TStartPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setPromise(value: js.Promise[TSuccessPayload]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[TSuccessPayload]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     }
   }
   
@@ -140,56 +128,40 @@ object mod {
   }
   object ActionMeta {
     
-    @scala.inline
-    def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload](): ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload] = {
+    inline def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload](): ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]]
     }
     
-    @scala.inline
-    implicit class ActionMetaMutableBuilder[Self <: ActionMeta[?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload] (val x: Self & (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload])) extends AnyVal {
+    extension [Self <: ActionMeta[?, ?, ?, ?], TFullState, TSuccessPayload, TErrorPayload, TStartPayload](x: Self & (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload])) {
       
-      @scala.inline
-      def setOnFailure(value: (/* error */ TErrorPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
+      inline def setOnFailure(value: (/* error */ TErrorPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+      inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
       
-      @scala.inline
-      def setOnFinish(value: (/* resolved */ Boolean, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction2(value))
+      inline def setOnFinish(value: (/* resolved */ Boolean, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
+      inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: (/* payload */ TStartPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+      inline def setOnStart(value: (/* payload */ TStartPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: (/* response */ TSuccessPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
+      inline def setOnSuccess(value: (/* response */ TSuccessPayload, /* getState */ GetState[TFullState]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       
-      @scala.inline
-      def `setRedux-packSlashLIFECYCLE`(value: LIFECYCLEValues): Self = StObject.set(x, "redux-pack/LIFECYCLE", value.asInstanceOf[js.Any])
+      inline def `setRedux-packSlashLIFECYCLE`(value: LIFECYCLEValues): Self = StObject.set(x, "redux-pack/LIFECYCLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRedux-packSlashLIFECYCLEUndefined`: Self = StObject.set(x, "redux-pack/LIFECYCLE", js.undefined)
+      inline def `setRedux-packSlashLIFECYCLEUndefined`: Self = StObject.set(x, "redux-pack/LIFECYCLE", js.undefined)
       
-      @scala.inline
-      def `setRedux-packSlashTRANSACTION`(value: String): Self = StObject.set(x, "redux-pack/TRANSACTION", value.asInstanceOf[js.Any])
+      inline def `setRedux-packSlashTRANSACTION`(value: String): Self = StObject.set(x, "redux-pack/TRANSACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRedux-packSlashTRANSACTIONUndefined`: Self = StObject.set(x, "redux-pack/TRANSACTION", js.undefined)
+      inline def `setRedux-packSlashTRANSACTIONUndefined`: Self = StObject.set(x, "redux-pack/TRANSACTION", js.undefined)
       
-      @scala.inline
-      def setStartPayload(value: TStartPayload): Self = StObject.set(x, "startPayload", value.asInstanceOf[js.Any])
+      inline def setStartPayload(value: TStartPayload): Self = StObject.set(x, "startPayload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPayloadUndefined: Self = StObject.set(x, "startPayload", js.undefined)
+      inline def setStartPayloadUndefined: Self = StObject.set(x, "startPayload", js.undefined)
     }
   }
   
@@ -209,44 +181,32 @@ object mod {
   }
   object Handlers {
     
-    @scala.inline
-    def apply[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](): Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
+    inline def apply[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](): Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
     }
     
-    @scala.inline
-    implicit class HandlersMutableBuilder[Self <: Handlers[?, ?, ?, ?, ?], S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] (val x: Self & (Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) extends AnyVal {
+    extension [Self <: Handlers[?, ?, ?, ?, ?], S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](x: Self & (Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) {
       
-      @scala.inline
-      def setAlways(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
+      inline def setAlways(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+      inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
-      @scala.inline
-      def setFailure(value: (S, PackActionPayload[TErrorPayload, TMetaPayload]) => S): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
+      inline def setFailure(value: (S, PackActionPayload[TErrorPayload, TMetaPayload]) => S): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+      inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
-      @scala.inline
-      def setFinish(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "finish", js.Any.fromFunction2(value))
+      inline def setFinish(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "finish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+      inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
       
-      @scala.inline
-      def setStart(value: (S, PackActionPayload[TStartPayload, TMetaPayload]) => S): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      inline def setStart(value: (S, PackActionPayload[TStartPayload, TMetaPayload]) => S): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: (S, PackActionPayload[TSuccessPayload, TMetaPayload]) => S): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+      inline def setSuccess(value: (S, PackActionPayload[TSuccessPayload, TMetaPayload]) => S): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -258,14 +218,11 @@ object mod {
   trait LIFECYCLEValues extends StObject
   object LIFECYCLEValues {
     
-    @scala.inline
-    def failure: typings.reduxPack.reduxPackStrings.failure = "failure".asInstanceOf[typings.reduxPack.reduxPackStrings.failure]
+    inline def failure: typings.reduxPack.reduxPackStrings.failure = "failure".asInstanceOf[typings.reduxPack.reduxPackStrings.failure]
     
-    @scala.inline
-    def start: typings.reduxPack.reduxPackStrings.start = "start".asInstanceOf[typings.reduxPack.reduxPackStrings.start]
+    inline def start: typings.reduxPack.reduxPackStrings.start = "start".asInstanceOf[typings.reduxPack.reduxPackStrings.start]
     
-    @scala.inline
-    def success: typings.reduxPack.reduxPackStrings.success = "success".asInstanceOf[typings.reduxPack.reduxPackStrings.success]
+    inline def success: typings.reduxPack.reduxPackStrings.success = "success".asInstanceOf[typings.reduxPack.reduxPackStrings.success]
   }
   
   type MetaPayload[M] = M & ReduxpackLIFECYCLE
@@ -280,21 +237,17 @@ object mod {
   }
   object PackActionPayload {
     
-    @scala.inline
-    def apply[Payload, M](meta: MetaPayload[M], payload: Payload, `type`: js.Any): PackActionPayload[Payload, M] = {
+    inline def apply[Payload, M](meta: MetaPayload[M], payload: Payload, `type`: js.Any): PackActionPayload[Payload, M] = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackActionPayload[Payload, M]]
     }
     
-    @scala.inline
-    implicit class PackActionPayloadMutableBuilder[Self <: PackActionPayload[?, ?], Payload, M] (val x: Self & (PackActionPayload[Payload, M])) extends AnyVal {
+    extension [Self <: PackActionPayload[?, ?], Payload, M](x: Self & (PackActionPayload[Payload, M])) {
       
-      @scala.inline
-      def setMeta(value: MetaPayload[M]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: MetaPayload[M]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -306,20 +259,16 @@ object mod {
   }
   object PackError {
     
-    @scala.inline
-    def apply(error: Boolean, payload: js.Any): PackError = {
+    inline def apply(error: Boolean, payload: js.Any): PackError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackError]
     }
     
-    @scala.inline
-    implicit class PackErrorMutableBuilder[Self <: PackError] (val x: Self) extends AnyVal {
+    extension [Self <: PackError](x: Self) {
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   

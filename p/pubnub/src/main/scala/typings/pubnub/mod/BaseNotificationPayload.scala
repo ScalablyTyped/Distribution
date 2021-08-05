@@ -21,46 +21,33 @@ trait BaseNotificationPayload extends StObject {
 }
 object BaseNotificationPayload {
   
-  @scala.inline
-  def apply(payload: js.Object): BaseNotificationPayload = {
+  inline def apply(payload: js.Object): BaseNotificationPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNotificationPayload]
   }
   
-  @scala.inline
-  implicit class BaseNotificationPayloadMutableBuilder[Self <: BaseNotificationPayload] (val x: Self) extends AnyVal {
+  extension [Self <: BaseNotificationPayload](x: Self) {
     
-    @scala.inline
-    def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait DescribeDevicePolicyConfigurationResponse extends StObject {
 }
 object DescribeDevicePolicyConfigurationResponse {
   
-  @scala.inline
-  def apply(): DescribeDevicePolicyConfigurationResponse = {
+  inline def apply(): DescribeDevicePolicyConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDevicePolicyConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDevicePolicyConfigurationResponseMutableBuilder[Self <: DescribeDevicePolicyConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDevicePolicyConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setDeviceCaCertificate(value: Certificate): Self = StObject.set(x, "DeviceCaCertificate", value.asInstanceOf[js.Any])
+    inline def setDeviceCaCertificate(value: Certificate): Self = StObject.set(x, "DeviceCaCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceCaCertificateUndefined: Self = StObject.set(x, "DeviceCaCertificate", js.undefined)
+    inline def setDeviceCaCertificateUndefined: Self = StObject.set(x, "DeviceCaCertificate", js.undefined)
   }
 }

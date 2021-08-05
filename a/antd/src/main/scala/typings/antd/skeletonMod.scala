@@ -15,8 +15,7 @@ object skeletonMod {
   
   object default {
     
-    @scala.inline
-    def apply(props: SkeletonProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: SkeletonProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/skeleton", JSImport.Default)
     @js.native
@@ -25,28 +24,23 @@ object skeletonMod {
     @JSImport("antd/lib/skeleton", "default.Avatar")
     @js.native
     def Avatar: DefaultProps = js.native
-    @scala.inline
-    def Avatar_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
+    inline def Avatar_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/skeleton", "default.Button")
     @js.native
     def Button: Call = js.native
-    @scala.inline
-    def Button_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+    inline def Button_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Image(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Image")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def Image(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Image")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/skeleton", "default.Input")
     @js.native
     def Input: CallDefaultProps = js.native
-    @scala.inline
-    def Input_=(x: CallDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
+    inline def Input_=(x: CallDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/skeleton", "default.defaultProps")
     @js.native
     def defaultProps: Avatar = js.native
-    @scala.inline
-    def defaultProps_=(x: Avatar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Avatar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

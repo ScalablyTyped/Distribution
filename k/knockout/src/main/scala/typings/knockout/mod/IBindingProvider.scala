@@ -19,8 +19,7 @@ trait IBindingProvider extends StObject {
 }
 object IBindingProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBindingAccessors: (Node, BindingContext[js.Any]) => BindingAccessors,
     nodeHasBindings: Node => Boolean
   ): IBindingProvider = {
@@ -28,25 +27,18 @@ object IBindingProvider {
     __obj.asInstanceOf[IBindingProvider]
   }
   
-  @scala.inline
-  implicit class IBindingProviderMutableBuilder[Self <: IBindingProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IBindingProvider](x: Self) {
     
-    @scala.inline
-    def setGetBindingAccessors(value: (Node, BindingContext[js.Any]) => BindingAccessors): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
+    inline def setGetBindingAccessors(value: (Node, BindingContext[js.Any]) => BindingAccessors): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBindings(value: (/* node */ Node, /* bindingContext */ BindingContext[js.Any]) => js.Object): Self = StObject.set(x, "getBindings", js.Any.fromFunction2(value))
+    inline def setGetBindings(value: (/* node */ Node, /* bindingContext */ BindingContext[js.Any]) => js.Object): Self = StObject.set(x, "getBindings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBindingsUndefined: Self = StObject.set(x, "getBindings", js.undefined)
+    inline def setGetBindingsUndefined: Self = StObject.set(x, "getBindings", js.undefined)
     
-    @scala.inline
-    def setNodeHasBindings(value: Node => Boolean): Self = StObject.set(x, "nodeHasBindings", js.Any.fromFunction1(value))
+    inline def setNodeHasBindings(value: Node => Boolean): Self = StObject.set(x, "nodeHasBindings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreprocessNode(value: /* node */ Node => js.UndefOr[js.Array[Node]]): Self = StObject.set(x, "preprocessNode", js.Any.fromFunction1(value))
+    inline def setPreprocessNode(value: /* node */ Node => js.UndefOr[js.Array[Node]]): Self = StObject.set(x, "preprocessNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreprocessNodeUndefined: Self = StObject.set(x, "preprocessNode", js.undefined)
+    inline def setPreprocessNodeUndefined: Self = StObject.set(x, "preprocessNode", js.undefined)
   }
 }

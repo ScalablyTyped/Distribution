@@ -13,16 +13,13 @@ trait ExecutionContextCreatedEvent extends StObject {
 }
 object ExecutionContextCreatedEvent {
   
-  @scala.inline
-  def apply(context: ExecutionContextDescription): ExecutionContextCreatedEvent = {
+  inline def apply(context: ExecutionContextDescription): ExecutionContextCreatedEvent = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionContextCreatedEvent]
   }
   
-  @scala.inline
-  implicit class ExecutionContextCreatedEventMutableBuilder[Self <: ExecutionContextCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionContextCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setContext(value: ExecutionContextDescription): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ExecutionContextDescription): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

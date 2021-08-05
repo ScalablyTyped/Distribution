@@ -16,19 +16,15 @@ trait Done
 }
 object Done {
   
-  @scala.inline
-  def apply(): Done = {
+  inline def apply(): Done = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Done]
   }
   
-  @scala.inline
-  implicit class DoneMutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
+  extension [Self <: Done](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
   }
 }

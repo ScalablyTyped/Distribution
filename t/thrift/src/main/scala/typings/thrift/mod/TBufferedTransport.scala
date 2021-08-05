@@ -21,6 +21,5 @@ object TBufferedTransport {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def receiver(callback: js.Function2[/* trans */ this.type, /* seqid */ Double, Unit], seqid: Double): js.Function1[/* data */ Buffer, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("receiver")(callback.asInstanceOf[js.Any], seqid.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ Buffer, Unit]]
+  inline def receiver(callback: js.Function2[/* trans */ this.type, /* seqid */ Double, Unit], seqid: Double): js.Function1[/* data */ Buffer, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("receiver")(callback.asInstanceOf[js.Any], seqid.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ Buffer, Unit]]
 }

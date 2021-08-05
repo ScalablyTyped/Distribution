@@ -17,8 +17,8 @@ object helixMod {
   trait Helix
     extends typings.antvCoord.baseMod.default {
     
-    var a: js.Any = js.native
+    /* private */ var a: js.Any = js.native
     
-    var d: js.Any = js.native
+    /* private */ var d: js.Any = js.native
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdEmailHTMLFidelity extends StObject
 object WdEmailHTMLFidelity {
   
-  @scala.inline
-  def wdEmailHTMLFidelityHigh: `3` = 3.asInstanceOf[`3`]
+  inline def wdEmailHTMLFidelityHigh: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdEmailHTMLFidelityLow: `1` = 1.asInstanceOf[`1`]
+  inline def wdEmailHTMLFidelityLow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdEmailHTMLFidelityMedium: `2` = 2.asInstanceOf[`2`]
+  inline def wdEmailHTMLFidelityMedium: `2` = 2.asInstanceOf[`2`]
 }

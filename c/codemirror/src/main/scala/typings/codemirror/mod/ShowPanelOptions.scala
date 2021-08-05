@@ -32,43 +32,31 @@ trait ShowPanelOptions extends StObject {
 }
 object ShowPanelOptions {
   
-  @scala.inline
-  def apply(): ShowPanelOptions = {
+  inline def apply(): ShowPanelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShowPanelOptions]
   }
   
-  @scala.inline
-  implicit class ShowPanelOptionsMutableBuilder[Self <: ShowPanelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShowPanelOptions](x: Self) {
     
-    @scala.inline
-    def setAfter(value: Panel): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: Panel): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: Panel): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: Panel): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setPosition(value: top | `after-top` | bottom | `before-bottom`): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: top | `after-top` | bottom | `before-bottom`): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setReplace(value: Panel): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Panel): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
+    inline def setStable(value: Boolean): Self = StObject.set(x, "stable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
+    inline def setStableUndefined: Self = StObject.set(x, "stable", js.undefined)
   }
 }

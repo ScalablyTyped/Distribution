@@ -21,13 +21,11 @@ object StringTemplateParameterGrammar {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.StringTemplateParameterGrammar.Sql")
   @js.native
   def Sql: typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterGrammar = js.native
-  @scala.inline
-  def Sql_=(x: typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterGrammar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sql")(x.asInstanceOf[js.Any])
+  inline def Sql_=(x: typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterGrammar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sql")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.StringTemplateParameterGrammar.Text")
   @js.native
   def Text: typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterGrammar = js.native
-  @scala.inline
-  def Text_=(x: typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterGrammar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  inline def Text_=(x: typings.mendixmodelsdk.codeactionsMod.codeactions.StringTemplateParameterGrammar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

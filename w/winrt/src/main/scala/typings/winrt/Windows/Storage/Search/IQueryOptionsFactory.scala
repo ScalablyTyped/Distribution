@@ -13,8 +13,7 @@ trait IQueryOptionsFactory extends StObject {
 }
 object IQueryOptionsFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createCommonFileQuery: (CommonFileQuery, IIterable[String]) => QueryOptions,
     createCommonFolderQuery: CommonFolderQuery => QueryOptions
   ): IQueryOptionsFactory = {
@@ -22,13 +21,10 @@ object IQueryOptionsFactory {
     __obj.asInstanceOf[IQueryOptionsFactory]
   }
   
-  @scala.inline
-  implicit class IQueryOptionsFactoryMutableBuilder[Self <: IQueryOptionsFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IQueryOptionsFactory](x: Self) {
     
-    @scala.inline
-    def setCreateCommonFileQuery(value: (CommonFileQuery, IIterable[String]) => QueryOptions): Self = StObject.set(x, "createCommonFileQuery", js.Any.fromFunction2(value))
+    inline def setCreateCommonFileQuery(value: (CommonFileQuery, IIterable[String]) => QueryOptions): Self = StObject.set(x, "createCommonFileQuery", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateCommonFolderQuery(value: CommonFolderQuery => QueryOptions): Self = StObject.set(x, "createCommonFolderQuery", js.Any.fromFunction1(value))
+    inline def setCreateCommonFolderQuery(value: CommonFolderQuery => QueryOptions): Self = StObject.set(x, "createCommonFolderQuery", js.Any.fromFunction1(value))
   }
 }

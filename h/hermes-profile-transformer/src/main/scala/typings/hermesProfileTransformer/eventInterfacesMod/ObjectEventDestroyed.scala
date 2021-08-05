@@ -17,22 +17,17 @@ trait ObjectEventDestroyed
 }
 object ObjectEventDestroyed {
   
-  @scala.inline
-  def apply(ph: OBJECT_EVENTS_DESTROYED): ObjectEventDestroyed = {
+  inline def apply(ph: OBJECT_EVENTS_DESTROYED): ObjectEventDestroyed = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectEventDestroyed]
   }
   
-  @scala.inline
-  implicit class ObjectEventDestroyedMutableBuilder[Self <: ObjectEventDestroyed] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectEventDestroyed](x: Self) {
     
-    @scala.inline
-    def setPh(value: OBJECT_EVENTS_DESTROYED): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: OBJECT_EVENTS_DESTROYED): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

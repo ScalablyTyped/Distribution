@@ -20,42 +20,31 @@ trait IGetIntentRequest extends StObject {
 }
 object IGetIntentRequest {
   
-  @scala.inline
-  def apply(): IGetIntentRequest = {
+  inline def apply(): IGetIntentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetIntentRequest]
   }
   
-  @scala.inline
-  implicit class IGetIntentRequestMutableBuilder[Self <: IGetIntentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IGetIntentRequest](x: Self) {
     
-    @scala.inline
-    def setIntentView(
+    inline def setIntentView(
       value: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.IntentView * / any */ String)
     ): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentViewNull: Self = StObject.set(x, "intentView", null)
+    inline def setIntentViewNull: Self = StObject.set(x, "intentView", null)
     
-    @scala.inline
-    def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
+    inline def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

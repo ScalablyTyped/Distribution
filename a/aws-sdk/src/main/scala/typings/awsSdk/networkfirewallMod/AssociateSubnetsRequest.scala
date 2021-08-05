@@ -28,37 +28,27 @@ trait AssociateSubnetsRequest extends StObject {
 }
 object AssociateSubnetsRequest {
   
-  @scala.inline
-  def apply(SubnetMappings: SubnetMappings): AssociateSubnetsRequest = {
+  inline def apply(SubnetMappings: SubnetMappings): AssociateSubnetsRequest = {
     val __obj = js.Dynamic.literal(SubnetMappings = SubnetMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateSubnetsRequest]
   }
   
-  @scala.inline
-  implicit class AssociateSubnetsRequestMutableBuilder[Self <: AssociateSubnetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSubnetsRequest](x: Self) {
     
-    @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
+    inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
+    inline def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
-    @scala.inline
-    def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
+    inline def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
+    inline def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
     
-    @scala.inline
-    def setSubnetMappings(value: SubnetMappings): Self = StObject.set(x, "SubnetMappings", value.asInstanceOf[js.Any])
+    inline def setSubnetMappings(value: SubnetMappings): Self = StObject.set(x, "SubnetMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetMappingsVarargs(value: SubnetMapping*): Self = StObject.set(x, "SubnetMappings", js.Array(value :_*))
+    inline def setSubnetMappingsVarargs(value: SubnetMapping*): Self = StObject.set(x, "SubnetMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
+    inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
+    inline def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
   }
 }

@@ -66,14 +66,12 @@ object Schema {
   @JSImport("yaml/types", "Schema.defaultPrefix")
   @js.native
   def defaultPrefix: String = js.native
-  @scala.inline
-  def defaultPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPrefix")(x.asInstanceOf[js.Any])
+  inline def defaultPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPrefix")(x.asInstanceOf[js.Any])
   
   @JSImport("yaml/types", "Schema.defaultTags")
   @js.native
   def defaultTags: MAP = js.native
-  @scala.inline
-  def defaultTags_=(x: MAP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTags")(x.asInstanceOf[js.Any])
+  inline def defaultTags_=(x: MAP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTags")(x.asInstanceOf[js.Any])
   
   trait BaseTag extends StObject {
     
@@ -141,54 +139,40 @@ object Schema {
   }
   object BaseTag {
     
-    @scala.inline
-    def apply(identify: js.Any => Boolean, tag: String): BaseTag = {
+    inline def apply(identify: js.Any => Boolean, tag: String): BaseTag = {
       val __obj = js.Dynamic.literal(identify = js.Any.fromFunction1(identify), tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseTag]
     }
     
-    @scala.inline
-    implicit class BaseTagMutableBuilder[Self <: BaseTag] (val x: Self) extends AnyVal {
+    extension [Self <: BaseTag](x: Self) {
       
-      @scala.inline
-      def setCreateNode(
+      inline def setCreateNode(
         value: (/* schema */ Schema, /* value */ js.Any, /* ctx */ CreateNodeContext) => YAMLMap | YAMLSeq | Scalar
       ): Self = StObject.set(x, "createNode", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
+      inline def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setIdentify(value: js.Any => Boolean): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
+      inline def setIdentify(value: js.Any => Boolean): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNodeClass(value: Instantiable0[js.Any]): Self = StObject.set(x, "nodeClass", value.asInstanceOf[js.Any])
+      inline def setNodeClass(value: Instantiable0[js.Any]): Self = StObject.set(x, "nodeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeClassUndefined: Self = StObject.set(x, "nodeClass", js.undefined)
+      inline def setNodeClassUndefined: Self = StObject.set(x, "nodeClass", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStringify(
+      inline def setStringify(
         value: (/* item */ Node, /* ctx */ StringifyContext, /* onComment */ js.UndefOr[js.Function0[Unit]], /* onChompKeep */ js.UndefOr[js.Function0[Unit]]) => String
       ): Self = StObject.set(x, "stringify", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+      inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,20 +184,16 @@ object Schema {
   }
   object CreateNodeContext {
     
-    @scala.inline
-    def apply(): CreateNodeContext = {
+    inline def apply(): CreateNodeContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateNodeContext]
     }
     
-    @scala.inline
-    implicit class CreateNodeContextMutableBuilder[Self <: CreateNodeContext] (val x: Self) extends AnyVal {
+    extension [Self <: CreateNodeContext](x: Self) {
       
-      @scala.inline
-      def setWrapScalars(value: Boolean): Self = StObject.set(x, "wrapScalars", value.asInstanceOf[js.Any])
+      inline def setWrapScalars(value: Boolean): Self = StObject.set(x, "wrapScalars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapScalarsUndefined: Self = StObject.set(x, "wrapScalars", js.undefined)
+      inline def setWrapScalarsUndefined: Self = StObject.set(x, "wrapScalars", js.undefined)
     }
   }
   
@@ -236,8 +216,7 @@ object Schema {
   }
   object CustomTag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       identify: js.Any => Boolean,
       resolve: (Document, typings.yaml.parseCstMod.CST.Node) => Node | js.Any,
       tag: String
@@ -246,17 +225,13 @@ object Schema {
       __obj.asInstanceOf[CustomTag]
     }
     
-    @scala.inline
-    implicit class CustomTagMutableBuilder[Self <: CustomTag] (val x: Self) extends AnyVal {
+    extension [Self <: CustomTag](x: Self) {
       
-      @scala.inline
-      def setClass(value: Instantiable0[js.Any]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: Instantiable0[js.Any]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setResolve(value: (Document, typings.yaml.parseCstMod.CST.Node) => Node | js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+      inline def setResolve(value: (Document, typings.yaml.parseCstMod.CST.Node) => Node | js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
     }
   }
   
@@ -287,8 +262,7 @@ object Schema {
   }
   object DefaultTag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       identify: js.Any => Boolean,
       resolve: /* repeated */ String => Node | js.Any,
       tag: String,
@@ -298,17 +272,13 @@ object Schema {
       __obj.asInstanceOf[DefaultTag]
     }
     
-    @scala.inline
-    implicit class DefaultTagMutableBuilder[Self <: DefaultTag] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultTag](x: Self) {
       
-      @scala.inline
-      def setDefault(value: `true`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: `true`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve(value: /* repeated */ String => Node | js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: /* repeated */ String => Node | js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,17 +291,13 @@ object Schema {
   trait Name extends StObject
   object Name {
     
-    @scala.inline
-    def core: typings.yaml.yamlStrings.core = "core".asInstanceOf[typings.yaml.yamlStrings.core]
+    inline def core: typings.yaml.yamlStrings.core = "core".asInstanceOf[typings.yaml.yamlStrings.core]
     
-    @scala.inline
-    def failsafe: typings.yaml.yamlStrings.failsafe = "failsafe".asInstanceOf[typings.yaml.yamlStrings.failsafe]
+    inline def failsafe: typings.yaml.yamlStrings.failsafe = "failsafe".asInstanceOf[typings.yaml.yamlStrings.failsafe]
     
-    @scala.inline
-    def json: typings.yaml.yamlStrings.json = "json".asInstanceOf[typings.yaml.yamlStrings.json]
+    inline def json: typings.yaml.yamlStrings.json = "json".asInstanceOf[typings.yaml.yamlStrings.json]
     
-    @scala.inline
-    def `yaml-1Dot1`: typings.yaml.yamlStrings.`yaml-1Dot1` = "yaml-1.1".asInstanceOf[typings.yaml.yamlStrings.`yaml-1Dot1`]
+    inline def `yaml-1Dot1`: typings.yaml.yamlStrings.`yaml-1Dot1` = "yaml-1.1".asInstanceOf[typings.yaml.yamlStrings.`yaml-1Dot1`]
   }
   
   trait Options extends StObject {
@@ -374,59 +340,42 @@ object Schema {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCustomTags(value: (js.Array[TagId | Tag]) | (js.Function1[/* tags */ js.Array[Tag], js.Array[Tag]])): Self = StObject.set(x, "customTags", value.asInstanceOf[js.Any])
+      inline def setCustomTags(value: (js.Array[TagId | Tag]) | (js.Function1[/* tags */ js.Array[Tag], js.Array[Tag]])): Self = StObject.set(x, "customTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomTagsFunction1(value: /* tags */ js.Array[Tag] => js.Array[Tag]): Self = StObject.set(x, "customTags", js.Any.fromFunction1(value))
+      inline def setCustomTagsFunction1(value: /* tags */ js.Array[Tag] => js.Array[Tag]): Self = StObject.set(x, "customTags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomTagsUndefined: Self = StObject.set(x, "customTags", js.undefined)
+      inline def setCustomTagsUndefined: Self = StObject.set(x, "customTags", js.undefined)
       
-      @scala.inline
-      def setCustomTagsVarargs(value: (TagId | Tag)*): Self = StObject.set(x, "customTags", js.Array(value :_*))
+      inline def setCustomTagsVarargs(value: (TagId | Tag)*): Self = StObject.set(x, "customTags", js.Array(value :_*))
       
-      @scala.inline
-      def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+      inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+      inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
       
-      @scala.inline
-      def setSchema(value: Name): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Name): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSortMapEntries(value: Boolean | (js.Function2[/* a */ Pair, /* b */ Pair, Double])): Self = StObject.set(x, "sortMapEntries", value.asInstanceOf[js.Any])
+      inline def setSortMapEntries(value: Boolean | (js.Function2[/* a */ Pair, /* b */ Pair, Double])): Self = StObject.set(x, "sortMapEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortMapEntriesFunction2(value: (/* a */ Pair, /* b */ Pair) => Double): Self = StObject.set(x, "sortMapEntries", js.Any.fromFunction2(value))
+      inline def setSortMapEntriesFunction2(value: (/* a */ Pair, /* b */ Pair) => Double): Self = StObject.set(x, "sortMapEntries", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortMapEntriesUndefined: Self = StObject.set(x, "sortMapEntries", js.undefined)
+      inline def setSortMapEntriesUndefined: Self = StObject.set(x, "sortMapEntries", js.undefined)
       
-      @scala.inline
-      def setTags(value: (js.Array[TagId | Tag]) | (js.Function1[/* tags */ js.Array[Tag], js.Array[Tag]])): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: (js.Array[TagId | Tag]) | (js.Function1[/* tags */ js.Array[Tag], js.Array[Tag]])): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsFunction1(value: /* tags */ js.Array[Tag] => js.Array[Tag]): Self = StObject.set(x, "tags", js.Any.fromFunction1(value))
+      inline def setTagsFunction1(value: /* tags */ js.Array[Tag] => js.Array[Tag]): Self = StObject.set(x, "tags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: (TagId | Tag)*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: (TagId | Tag)*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -446,44 +395,32 @@ object Schema {
   }
   object StringifyContext {
     
-    @scala.inline
-    def apply(): StringifyContext = {
+    inline def apply(): StringifyContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StringifyContext]
     }
     
-    @scala.inline
-    implicit class StringifyContextMutableBuilder[Self <: StringifyContext] (val x: Self) extends AnyVal {
+    extension [Self <: StringifyContext](x: Self) {
       
-      @scala.inline
-      def setForceBlockIndent(value: Boolean): Self = StObject.set(x, "forceBlockIndent", value.asInstanceOf[js.Any])
+      inline def setForceBlockIndent(value: Boolean): Self = StObject.set(x, "forceBlockIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceBlockIndentUndefined: Self = StObject.set(x, "forceBlockIndent", js.undefined)
+      inline def setForceBlockIndentUndefined: Self = StObject.set(x, "forceBlockIndent", js.undefined)
       
-      @scala.inline
-      def setImplicitKey(value: Boolean): Self = StObject.set(x, "implicitKey", value.asInstanceOf[js.Any])
+      inline def setImplicitKey(value: Boolean): Self = StObject.set(x, "implicitKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicitKeyUndefined: Self = StObject.set(x, "implicitKey", js.undefined)
+      inline def setImplicitKeyUndefined: Self = StObject.set(x, "implicitKey", js.undefined)
       
-      @scala.inline
-      def setInFlow(value: Boolean): Self = StObject.set(x, "inFlow", value.asInstanceOf[js.Any])
+      inline def setInFlow(value: Boolean): Self = StObject.set(x, "inFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInFlowUndefined: Self = StObject.set(x, "inFlow", js.undefined)
+      inline def setInFlowUndefined: Self = StObject.set(x, "inFlow", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentAtStart(value: Double): Self = StObject.set(x, "indentAtStart", value.asInstanceOf[js.Any])
+      inline def setIndentAtStart(value: Double): Self = StObject.set(x, "indentAtStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentAtStartUndefined: Self = StObject.set(x, "indentAtStart", js.undefined)
+      inline def setIndentAtStartUndefined: Self = StObject.set(x, "indentAtStart", js.undefined)
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     }
   }
   
@@ -494,8 +431,7 @@ object Schema {
   trait Tag extends StObject
   object Tag {
     
-    @scala.inline
-    def CustomTag(
+    inline def CustomTag(
       identify: js.Any => Boolean,
       resolve: (Document, typings.yaml.parseCstMod.CST.Node) => Node | js.Any,
       tag: String
@@ -504,8 +440,7 @@ object Schema {
       __obj.asInstanceOf[typings.yaml.typesMod.Schema.CustomTag]
     }
     
-    @scala.inline
-    def DefaultTag(
+    inline def DefaultTag(
       identify: js.Any => Boolean,
       resolve: /* repeated */ String => Node | js.Any,
       tag: String,
@@ -536,49 +471,34 @@ object Schema {
   trait TagId extends StObject
   object TagId {
     
-    @scala.inline
-    def binary: typings.yaml.yamlStrings.binary = "binary".asInstanceOf[typings.yaml.yamlStrings.binary]
+    inline def binary: typings.yaml.yamlStrings.binary = "binary".asInstanceOf[typings.yaml.yamlStrings.binary]
     
-    @scala.inline
-    def bool: typings.yaml.yamlStrings.bool = "bool".asInstanceOf[typings.yaml.yamlStrings.bool]
+    inline def bool: typings.yaml.yamlStrings.bool = "bool".asInstanceOf[typings.yaml.yamlStrings.bool]
     
-    @scala.inline
-    def float: typings.yaml.yamlStrings.float = "float".asInstanceOf[typings.yaml.yamlStrings.float]
+    inline def float: typings.yaml.yamlStrings.float = "float".asInstanceOf[typings.yaml.yamlStrings.float]
     
-    @scala.inline
-    def floatExp: typings.yaml.yamlStrings.floatExp = "floatExp".asInstanceOf[typings.yaml.yamlStrings.floatExp]
+    inline def floatExp: typings.yaml.yamlStrings.floatExp = "floatExp".asInstanceOf[typings.yaml.yamlStrings.floatExp]
     
-    @scala.inline
-    def floatNaN: typings.yaml.yamlStrings.floatNaN = "floatNaN".asInstanceOf[typings.yaml.yamlStrings.floatNaN]
+    inline def floatNaN: typings.yaml.yamlStrings.floatNaN = "floatNaN".asInstanceOf[typings.yaml.yamlStrings.floatNaN]
     
-    @scala.inline
-    def floatTime: typings.yaml.yamlStrings.floatTime = "floatTime".asInstanceOf[typings.yaml.yamlStrings.floatTime]
+    inline def floatTime: typings.yaml.yamlStrings.floatTime = "floatTime".asInstanceOf[typings.yaml.yamlStrings.floatTime]
     
-    @scala.inline
-    def int: typings.yaml.yamlStrings.int = "int".asInstanceOf[typings.yaml.yamlStrings.int]
+    inline def int: typings.yaml.yamlStrings.int = "int".asInstanceOf[typings.yaml.yamlStrings.int]
     
-    @scala.inline
-    def intHex: typings.yaml.yamlStrings.intHex = "intHex".asInstanceOf[typings.yaml.yamlStrings.intHex]
+    inline def intHex: typings.yaml.yamlStrings.intHex = "intHex".asInstanceOf[typings.yaml.yamlStrings.intHex]
     
-    @scala.inline
-    def intOct: typings.yaml.yamlStrings.intOct = "intOct".asInstanceOf[typings.yaml.yamlStrings.intOct]
+    inline def intOct: typings.yaml.yamlStrings.intOct = "intOct".asInstanceOf[typings.yaml.yamlStrings.intOct]
     
-    @scala.inline
-    def intTime: typings.yaml.yamlStrings.intTime = "intTime".asInstanceOf[typings.yaml.yamlStrings.intTime]
+    inline def intTime: typings.yaml.yamlStrings.intTime = "intTime".asInstanceOf[typings.yaml.yamlStrings.intTime]
     
-    @scala.inline
-    def `null`: typings.yaml.yamlStrings.`null` = "null".asInstanceOf[typings.yaml.yamlStrings.`null`]
+    inline def `null`: typings.yaml.yamlStrings.`null` = "null".asInstanceOf[typings.yaml.yamlStrings.`null`]
     
-    @scala.inline
-    def omap: typings.yaml.yamlStrings.omap = "omap".asInstanceOf[typings.yaml.yamlStrings.omap]
+    inline def omap: typings.yaml.yamlStrings.omap = "omap".asInstanceOf[typings.yaml.yamlStrings.omap]
     
-    @scala.inline
-    def pairs: typings.yaml.yamlStrings.pairs = "pairs".asInstanceOf[typings.yaml.yamlStrings.pairs]
+    inline def pairs: typings.yaml.yamlStrings.pairs = "pairs".asInstanceOf[typings.yaml.yamlStrings.pairs]
     
-    @scala.inline
-    def set: typings.yaml.yamlStrings.set = "set".asInstanceOf[typings.yaml.yamlStrings.set]
+    inline def set: typings.yaml.yamlStrings.set = "set".asInstanceOf[typings.yaml.yamlStrings.set]
     
-    @scala.inline
-    def timestamp: typings.yaml.yamlStrings.timestamp = "timestamp".asInstanceOf[typings.yaml.yamlStrings.timestamp]
+    inline def timestamp: typings.yaml.yamlStrings.timestamp = "timestamp".asInstanceOf[typings.yaml.yamlStrings.timestamp]
   }
 }

@@ -29,8 +29,7 @@ trait UnaryExpression_
 }
 object UnaryExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argument: Expression,
     end: Double,
     loc: SourceLocation,
@@ -43,19 +42,14 @@ object UnaryExpression_ {
     __obj.asInstanceOf[UnaryExpression_]
   }
   
-  @scala.inline
-  implicit class UnaryExpression_MutableBuilder[Self <: UnaryExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: UnaryExpression_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UnaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UnaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

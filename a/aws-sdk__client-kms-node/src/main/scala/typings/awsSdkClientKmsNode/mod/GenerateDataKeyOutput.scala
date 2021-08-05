@@ -10,8 +10,7 @@ trait GenerateDataKeyOutput
      with typings.awsSdkClientKmsNode.typesGenerateDataKeyOutputMod.GenerateDataKeyOutput
 object GenerateDataKeyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GenerateDataKeyOutput = {
+  inline def apply($metadata: ResponseMetadata): GenerateDataKeyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyOutput]
   }

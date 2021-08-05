@@ -26,25 +26,19 @@ trait IgTreeGridUpdatingLocale
 }
 object IgTreeGridUpdatingLocale {
   
-  @scala.inline
-  def apply(): IgTreeGridUpdatingLocale = {
+  inline def apply(): IgTreeGridUpdatingLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridUpdatingLocale]
   }
   
-  @scala.inline
-  implicit class IgTreeGridUpdatingLocaleMutableBuilder[Self <: IgTreeGridUpdatingLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridUpdatingLocale](x: Self) {
     
-    @scala.inline
-    def setAddChildButtonLabel(value: String): Self = StObject.set(x, "addChildButtonLabel", value.asInstanceOf[js.Any])
+    inline def setAddChildButtonLabel(value: String): Self = StObject.set(x, "addChildButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddChildButtonLabelUndefined: Self = StObject.set(x, "addChildButtonLabel", js.undefined)
+    inline def setAddChildButtonLabelUndefined: Self = StObject.set(x, "addChildButtonLabel", js.undefined)
     
-    @scala.inline
-    def setAddChildTooltip(value: String): Self = StObject.set(x, "addChildTooltip", value.asInstanceOf[js.Any])
+    inline def setAddChildTooltip(value: String): Self = StObject.set(x, "addChildTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddChildTooltipUndefined: Self = StObject.set(x, "addChildTooltip", js.undefined)
+    inline def setAddChildTooltipUndefined: Self = StObject.set(x, "addChildTooltip", js.undefined)
   }
 }

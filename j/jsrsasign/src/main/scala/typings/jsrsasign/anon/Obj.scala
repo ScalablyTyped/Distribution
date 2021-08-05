@@ -15,19 +15,15 @@ trait Obj extends StObject {
 }
 object Obj {
   
-  @scala.inline
-  def apply(hex: String, obj: RSAKey | DSA | ECDSA): Obj = {
+  inline def apply(hex: String, obj: RSAKey | DSA | ECDSA): Obj = {
     val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any])
     __obj.asInstanceOf[Obj]
   }
   
-  @scala.inline
-  implicit class ObjMutableBuilder[Self <: Obj] (val x: Self) extends AnyVal {
+  extension [Self <: Obj](x: Self) {
     
-    @scala.inline
-    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+    inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObj(value: RSAKey | DSA | ECDSA): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+    inline def setObj(value: RSAKey | DSA | ECDSA): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
   }
 }

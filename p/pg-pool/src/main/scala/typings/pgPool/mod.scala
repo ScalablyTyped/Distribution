@@ -34,20 +34,16 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply[T /* <: Client */](): Config[T] = {
+    inline def apply[T /* <: Client */](): Config[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config[T]]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[?], T /* <: Client */] (val x: Self & Config[T]) extends AnyVal {
+    extension [Self <: Config[?], T /* <: Client */](x: Self & Config[T]) {
       
-      @scala.inline
-      def setClient(value: ClientLikeCtr[T]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+      inline def setClient(value: ClientLikeCtr[T]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "Client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "Client", js.undefined)
     }
   }
   

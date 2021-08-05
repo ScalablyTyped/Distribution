@@ -22,8 +22,7 @@ object multiSelectCheckboxDriverMod {
   }
   object MultiSelectCheckboxDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       driver: getNumOfLabelsnumbergetLa,
       dropdownLayoutDriver: DropdownLayoutDriver,
       exists: () => Boolean,
@@ -33,20 +32,15 @@ object multiSelectCheckboxDriverMod {
       __obj.asInstanceOf[MultiSelectCheckboxDriver]
     }
     
-    @scala.inline
-    implicit class MultiSelectCheckboxDriverMutableBuilder[Self <: MultiSelectCheckboxDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MultiSelectCheckboxDriver](x: Self) {
       
-      @scala.inline
-      def setDriver(value: getNumOfLabelsnumbergetLa): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: getNumOfLabelsnumbergetLa): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
+      inline def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
+      inline def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
     }
   }
 }

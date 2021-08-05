@@ -13,22 +13,17 @@ trait DescribeConditionalForwardersResult extends StObject {
 }
 object DescribeConditionalForwardersResult {
   
-  @scala.inline
-  def apply(): DescribeConditionalForwardersResult = {
+  inline def apply(): DescribeConditionalForwardersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConditionalForwardersResult]
   }
   
-  @scala.inline
-  implicit class DescribeConditionalForwardersResultMutableBuilder[Self <: DescribeConditionalForwardersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConditionalForwardersResult](x: Self) {
     
-    @scala.inline
-    def setConditionalForwarders(value: ConditionalForwarders): Self = StObject.set(x, "ConditionalForwarders", value.asInstanceOf[js.Any])
+    inline def setConditionalForwarders(value: ConditionalForwarders): Self = StObject.set(x, "ConditionalForwarders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionalForwardersUndefined: Self = StObject.set(x, "ConditionalForwarders", js.undefined)
+    inline def setConditionalForwardersUndefined: Self = StObject.set(x, "ConditionalForwarders", js.undefined)
     
-    @scala.inline
-    def setConditionalForwardersVarargs(value: ConditionalForwarder*): Self = StObject.set(x, "ConditionalForwarders", js.Array(value :_*))
+    inline def setConditionalForwardersVarargs(value: ConditionalForwarder*): Self = StObject.set(x, "ConditionalForwarders", js.Array(value :_*))
   }
 }

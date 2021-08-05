@@ -12,11 +12,8 @@ object configurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getJestCucumberConfiguration(): Errors = ^.asInstanceOf[js.Dynamic].applyDynamic("getJestCucumberConfiguration")().asInstanceOf[Errors]
-  @scala.inline
-  def getJestCucumberConfiguration(options: Options): Errors = ^.asInstanceOf[js.Dynamic].applyDynamic("getJestCucumberConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Errors]
+  inline def getJestCucumberConfiguration(): Errors = ^.asInstanceOf[js.Dynamic].applyDynamic("getJestCucumberConfiguration")().asInstanceOf[Errors]
+  inline def getJestCucumberConfiguration(options: Options): Errors = ^.asInstanceOf[js.Dynamic].applyDynamic("getJestCucumberConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Errors]
   
-  @scala.inline
-  def setJestCucumberConfiguration(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setJestCucumberConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setJestCucumberConfiguration(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setJestCucumberConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

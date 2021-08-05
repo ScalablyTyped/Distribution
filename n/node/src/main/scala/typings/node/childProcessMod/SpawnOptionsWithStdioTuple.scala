@@ -13,16 +13,13 @@ trait SpawnOptionsWithStdioTuple[Stdin /* <: StdioNull | StdioPipe */, Stdout /*
 }
 object SpawnOptionsWithStdioTuple {
   
-  @scala.inline
-  def apply[Stdin /* <: StdioNull | StdioPipe */, Stdout /* <: StdioNull | StdioPipe */, Stderr /* <: StdioNull | StdioPipe */](stdio: js.Tuple3[Stdin, Stdout, Stderr]): SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr] = {
+  inline def apply[Stdin /* <: StdioNull | StdioPipe */, Stdout /* <: StdioNull | StdioPipe */, Stderr /* <: StdioNull | StdioPipe */](stdio: js.Tuple3[Stdin, Stdout, Stderr]): SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr] = {
     val __obj = js.Dynamic.literal(stdio = stdio.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr]]
   }
   
-  @scala.inline
-  implicit class SpawnOptionsWithStdioTupleMutableBuilder[Self <: SpawnOptionsWithStdioTuple[?, ?, ?], Stdin /* <: StdioNull | StdioPipe */, Stdout /* <: StdioNull | StdioPipe */, Stderr /* <: StdioNull | StdioPipe */] (val x: Self & (SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr])) extends AnyVal {
+  extension [Self <: SpawnOptionsWithStdioTuple[?, ?, ?], Stdin /* <: StdioNull | StdioPipe */, Stdout /* <: StdioNull | StdioPipe */, Stderr /* <: StdioNull | StdioPipe */](x: Self & (SpawnOptionsWithStdioTuple[Stdin, Stdout, Stderr])) {
     
-    @scala.inline
-    def setStdio(value: js.Tuple3[Stdin, Stdout, Stderr]): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    inline def setStdio(value: js.Tuple3[Stdin, Stdout, Stderr]): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
   }
 }

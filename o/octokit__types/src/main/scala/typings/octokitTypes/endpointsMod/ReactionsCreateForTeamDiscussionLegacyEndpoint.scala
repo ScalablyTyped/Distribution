@@ -29,8 +29,7 @@ trait ReactionsCreateForTeamDiscussionLegacyEndpoint
 }
 object ReactionsCreateForTeamDiscussionLegacyEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     discussion_number: Double,
     mediaType: `0`[`squirrel-girl`],
@@ -40,16 +39,12 @@ object ReactionsCreateForTeamDiscussionLegacyEndpoint {
     __obj.asInstanceOf[ReactionsCreateForTeamDiscussionLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class ReactionsCreateForTeamDiscussionLegacyEndpointMutableBuilder[Self <: ReactionsCreateForTeamDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsCreateForTeamDiscussionLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
+    inline def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

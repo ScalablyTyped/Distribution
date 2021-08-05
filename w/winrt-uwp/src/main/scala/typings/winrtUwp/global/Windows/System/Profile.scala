@@ -26,16 +26,14 @@ object Profile {
     @JSGlobal("Windows.System.Profile.AnalyticsInfo.deviceForm")
     @js.native
     def deviceForm: String = js.native
-    @scala.inline
-    def deviceForm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceForm")(x.asInstanceOf[js.Any])
+    inline def deviceForm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceForm")(x.asInstanceOf[js.Any])
     
     /** Gets version info about the device family. */
     /* static member */
     @JSGlobal("Windows.System.Profile.AnalyticsInfo.versionInfo")
     @js.native
     def versionInfo: typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /** Provides version information about the device family. */
@@ -72,8 +70,7 @@ object Profile {
       * @return The hardware Id information.
       */
     /* static member */
-    @scala.inline
-    def getPackageSpecificToken(nonce: IBuffer): typings.winrtUwp.Windows.System.Profile.HardwareToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageSpecificToken")(nonce.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.Profile.HardwareToken]
+    inline def getPackageSpecificToken(nonce: IBuffer): typings.winrtUwp.Windows.System.Profile.HardwareToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageSpecificToken")(nonce.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.Profile.HardwareToken]
   }
   
   /** Represents a token that contains a hardware based identification that is sufficiently unique. */
@@ -113,176 +110,154 @@ object Profile {
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.batteryLifeDescription")
     @js.native
     def batteryLifeDescription: String = js.native
-    @scala.inline
-    def batteryLifeDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("batteryLifeDescription")(x.asInstanceOf[js.Any])
+    inline def batteryLifeDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("batteryLifeDescription")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the DisplayDescription retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.displayDescription")
     @js.native
     def displayDescription: String = js.native
-    @scala.inline
-    def displayDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayDescription")(x.asInstanceOf[js.Any])
+    inline def displayDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayDescription")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the DisplayModelName retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.displayModelName")
     @js.native
     def displayModelName: String = js.native
-    @scala.inline
-    def displayModelName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayModelName")(x.asInstanceOf[js.Any])
+    inline def displayModelName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayModelName")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the FormFactor retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.formFactor")
     @js.native
     def formFactor: String = js.native
-    @scala.inline
-    def formFactor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formFactor")(x.asInstanceOf[js.Any])
+    inline def formFactor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formFactor")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the FrontCameraDescription retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.frontCameraDescription")
     @js.native
     def frontCameraDescription: String = js.native
-    @scala.inline
-    def frontCameraDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frontCameraDescription")(x.asInstanceOf[js.Any])
+    inline def frontCameraDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frontCameraDescription")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the GraphicsDescription retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.graphicsDescription")
     @js.native
     def graphicsDescription: String = js.native
-    @scala.inline
-    def graphicsDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("graphicsDescription")(x.asInstanceOf[js.Any])
+    inline def graphicsDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("graphicsDescription")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the HasNfc retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.hasNfc")
     @js.native
     def hasNfc: String = js.native
-    @scala.inline
-    def hasNfc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasNfc")(x.asInstanceOf[js.Any])
+    inline def hasNfc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasNfc")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the HasOpticalDrive retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.hasOpticalDrive")
     @js.native
     def hasOpticalDrive: String = js.native
-    @scala.inline
-    def hasOpticalDrive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasOpticalDrive")(x.asInstanceOf[js.Any])
+    inline def hasOpticalDrive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasOpticalDrive")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the HasSdSlot retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.hasSdSlot")
     @js.native
     def hasSdSlot: String = js.native
-    @scala.inline
-    def hasSdSlot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasSdSlot")(x.asInstanceOf[js.Any])
+    inline def hasSdSlot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasSdSlot")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the IsFeatured retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.isFeatured")
     @js.native
     def isFeatured: String = js.native
-    @scala.inline
-    def isFeatured_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFeatured")(x.asInstanceOf[js.Any])
+    inline def isFeatured_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFeatured")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the IsOfficeInstalled retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.isOfficeInstalled")
     @js.native
     def isOfficeInstalled: String = js.native
-    @scala.inline
-    def isOfficeInstalled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isOfficeInstalled")(x.asInstanceOf[js.Any])
+    inline def isOfficeInstalled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isOfficeInstalled")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the ManufacturerName retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.manufacturerName")
     @js.native
     def manufacturerName: String = js.native
-    @scala.inline
-    def manufacturerName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manufacturerName")(x.asInstanceOf[js.Any])
+    inline def manufacturerName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manufacturerName")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the Memory retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.memory")
     @js.native
     def memory: String = js.native
-    @scala.inline
-    def memory_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memory")(x.asInstanceOf[js.Any])
+    inline def memory_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memory")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the ModelName retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.modelName")
     @js.native
     def modelName: String = js.native
-    @scala.inline
-    def modelName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modelName")(x.asInstanceOf[js.Any])
+    inline def modelName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modelName")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the Price retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.price")
     @js.native
     def price: String = js.native
-    @scala.inline
-    def price_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("price")(x.asInstanceOf[js.Any])
+    inline def price_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("price")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the ProcessorDescription retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.processorDescription")
     @js.native
     def processorDescription: String = js.native
-    @scala.inline
-    def processorDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("processorDescription")(x.asInstanceOf[js.Any])
+    inline def processorDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("processorDescription")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the RearCameraDescription retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.rearCameraDescription")
     @js.native
     def rearCameraDescription: String = js.native
-    @scala.inline
-    def rearCameraDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rearCameraDescription")(x.asInstanceOf[js.Any])
+    inline def rearCameraDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rearCameraDescription")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the RetailAccessCode retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.retailAccessCode")
     @js.native
     def retailAccessCode: String = js.native
-    @scala.inline
-    def retailAccessCode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("retailAccessCode")(x.asInstanceOf[js.Any])
+    inline def retailAccessCode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("retailAccessCode")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the ScreenSize retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.screenSize")
     @js.native
     def screenSize: String = js.native
-    @scala.inline
-    def screenSize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenSize")(x.asInstanceOf[js.Any])
+    inline def screenSize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenSize")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the StorageDescription retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.storageDescription")
     @js.native
     def storageDescription: String = js.native
-    @scala.inline
-    def storageDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageDescription")(x.asInstanceOf[js.Any])
+    inline def storageDescription_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storageDescription")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the Weight retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.weight")
     @js.native
     def weight: String = js.native
-    @scala.inline
-    def weight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weight")(x.asInstanceOf[js.Any])
+    inline def weight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weight")(x.asInstanceOf[js.Any])
     
     /** Gets the string that identifies the WindowsEdition retail demo property. */
     /* static member */
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties.windowsEdition")
     @js.native
     def windowsEdition: String = js.native
-    @scala.inline
-    def windowsEdition_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowsEdition")(x.asInstanceOf[js.Any])
+    inline def windowsEdition_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowsEdition")(x.asInstanceOf[js.Any])
   }
   
   object PlatformDataCollectionLevel {
@@ -295,28 +270,24 @@ object Profile {
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.basic")
     @js.native
     def basic: js.Any = js.native
-    @scala.inline
-    def basic_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basic")(x.asInstanceOf[js.Any])
+    inline def basic_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basic")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.enhanced")
     @js.native
     def enhanced: js.Any = js.native
-    @scala.inline
-    def enhanced_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enhanced")(x.asInstanceOf[js.Any])
+    inline def enhanced_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enhanced")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.full")
     @js.native
     def full: js.Any = js.native
-    @scala.inline
-    def full_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
+    inline def full_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.security")
     @js.native
     def security: js.Any = js.native
-    @scala.inline
-    def security_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("security")(x.asInstanceOf[js.Any])
+    inline def security_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("security")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings")
@@ -334,40 +305,35 @@ object Profile {
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.addEventListener")
     @js.native
     def addEventListener: js.Any = js.native
-    @scala.inline
-    def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
+    inline def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.canCollectDiagnostics")
     @js.native
     def canCollectDiagnostics: js.Any = js.native
-    @scala.inline
-    def canCollectDiagnostics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canCollectDiagnostics")(x.asInstanceOf[js.Any])
+    inline def canCollectDiagnostics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canCollectDiagnostics")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.collectionLevel")
     @js.native
     def collectionLevel: js.Any = js.native
-    @scala.inline
-    def collectionLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectionLevel")(x.asInstanceOf[js.Any])
+    inline def collectionLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectionLevel")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.oncollectionlevelchanged")
     @js.native
     def oncollectionlevelchanged: js.Any = js.native
-    @scala.inline
-    def oncollectionlevelchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncollectionlevelchanged")(x.asInstanceOf[js.Any])
+    inline def oncollectionlevelchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncollectionlevelchanged")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.removeEventListener")
     @js.native
     def removeEventListener: js.Any = js.native
-    @scala.inline
-    def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
+    inline def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
   }
   
   /** A utility class that supports one method, IsDemoModeEnabled , and one property, Properties . Call IsDemoModeEnabled to determine whether the device where the app is running has specifically enabled its retail demo mode. */
@@ -387,16 +353,14 @@ object Profile {
     @JSGlobal("Windows.System.Profile.RetailInfo.isDemoModeEnabled")
     @js.native
     def isDemoModeEnabled: Boolean = js.native
-    @scala.inline
-    def isDemoModeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDemoModeEnabled")(x.asInstanceOf[js.Any])
+    inline def isDemoModeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDemoModeEnabled")(x.asInstanceOf[js.Any])
     
     /** Gets an object that represents the set of available retail demo properties and their values. */
     /* static member */
     @JSGlobal("Windows.System.Profile.RetailInfo.properties")
     @js.native
     def properties: IMapView[String, js.Any] = js.native
-    @scala.inline
-    def properties_=(x: IMapView[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
+    inline def properties_=(x: IMapView[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
   }
   
   /** Provides info for hardware developers and OEMs. */
@@ -419,8 +383,7 @@ object Profile {
       @JSGlobal("Windows.System.Profile.SystemManufacturers.SmbiosInformation.serialNumber")
       @js.native
       def serialNumber: String = js.native
-      @scala.inline
-      def serialNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialNumber")(x.asInstanceOf[js.Any])
+      inline def serialNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialNumber")(x.asInstanceOf[js.Any])
     }
   }
 }

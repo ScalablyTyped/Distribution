@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndexKind extends StObject
 object IndexKind {
   
-  @scala.inline
-  def Hash: typings.documentdb.documentdbStrings.Hash = "Hash".asInstanceOf[typings.documentdb.documentdbStrings.Hash]
+  inline def Hash: typings.documentdb.documentdbStrings.Hash = "Hash".asInstanceOf[typings.documentdb.documentdbStrings.Hash]
   
-  @scala.inline
-  def Range: typings.documentdb.documentdbStrings.Range = "Range".asInstanceOf[typings.documentdb.documentdbStrings.Range]
+  inline def Range: typings.documentdb.documentdbStrings.Range = "Range".asInstanceOf[typings.documentdb.documentdbStrings.Range]
   
-  @scala.inline
-  def Spatial: typings.documentdb.documentdbStrings.Spatial = "Spatial".asInstanceOf[typings.documentdb.documentdbStrings.Spatial]
+  inline def Spatial: typings.documentdb.documentdbStrings.Spatial = "Spatial".asInstanceOf[typings.documentdb.documentdbStrings.Spatial]
 }

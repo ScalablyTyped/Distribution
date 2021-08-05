@@ -16,10 +16,10 @@ object mod {
        with Headers {
     def this(entries: Iterable[js.Tuple2[String, String]]) = this()
     
-    @JSName("clone")
+    /* private */ @JSName("clone")
     var clone_FHttpHeaders: js.Any = js.native
     
-    var originalHeaders: js.Any = js.native
+    /* private */ var originalHeaders: js.Any = js.native
     
     @JSName(js.Symbol.toStringTag)
     var toStringTag_HttpHeaders: Map = js.native

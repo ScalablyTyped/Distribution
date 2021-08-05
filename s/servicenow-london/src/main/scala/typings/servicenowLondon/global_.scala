@@ -21,8 +21,7 @@ object global_ {
       * Calling the constructor function (typically as part of a `new` statement) will invoke the
       * class's `initialize` method.
       */
-    @scala.inline
-    def create(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Function0[Unit]]
+    inline def create(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Function0[Unit]]
   }
   
   @JSGlobal("GlideDBFunctionBuilder")
@@ -395,14 +394,10 @@ object global_ {
       * // 1 Day
       */
     /* static member */
-    @scala.inline
-    def subtract(start: typings.servicenowLondon.GlideDate, end: typings.servicenowLondon.GlideDate): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
-    @scala.inline
-    def subtract(start: typings.servicenowLondon.GlideDate, end: typings.servicenowLondon.GlideTime): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
-    @scala.inline
-    def subtract(start: typings.servicenowLondon.GlideTime, end: typings.servicenowLondon.GlideDate): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
-    @scala.inline
-    def subtract(start: typings.servicenowLondon.GlideTime, end: typings.servicenowLondon.GlideTime): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
+    inline def subtract(start: typings.servicenowLondon.GlideDate, end: typings.servicenowLondon.GlideDate): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
+    inline def subtract(start: typings.servicenowLondon.GlideDate, end: typings.servicenowLondon.GlideTime): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
+    inline def subtract(start: typings.servicenowLondon.GlideTime, end: typings.servicenowLondon.GlideDate): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
+    inline def subtract(start: typings.servicenowLondon.GlideTime, end: typings.servicenowLondon.GlideTime): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
   }
   
   @JSGlobal("GlideDateTime")
@@ -449,10 +444,8 @@ object global_ {
       * gs.info(dur.getDisplayValue());
       */
     /* static member */
-    @scala.inline
-    def subtract(start: typings.servicenowLondon.GlideDateTime): typings.servicenowLondon.GlideDuration = ^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any]).asInstanceOf[typings.servicenowLondon.GlideDuration]
-    @scala.inline
-    def subtract(start: typings.servicenowLondon.GlideDateTime, end: typings.servicenowLondon.GlideDateTime): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
+    inline def subtract(start: typings.servicenowLondon.GlideDateTime): typings.servicenowLondon.GlideDuration = ^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any]).asInstanceOf[typings.servicenowLondon.GlideDuration]
+    inline def subtract(start: typings.servicenowLondon.GlideDateTime, end: typings.servicenowLondon.GlideDateTime): typings.servicenowLondon.GlideDuration = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.servicenowLondon.GlideDuration]
   }
   
   @JSGlobal("GlideDuration")
@@ -660,10 +653,8 @@ object global_ {
       *   gs.info('number ' + rec. number + ' is ' + bool);
       * }
       */
-    @scala.inline
-    def checkRecord(gr: ScopedGlideRecord, filter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def checkRecord(gr: ScopedGlideRecord, filter: String, matchAll: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], matchAll.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def checkRecord(gr: ScopedGlideRecord, filter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def checkRecord(gr: ScopedGlideRecord, filter: String, matchAll: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRecord")(gr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], matchAll.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSGlobal("GlideLocale")
@@ -714,8 +705,7 @@ object global_ {
       * var locale = GlideLocale.get();
       */
     /* static member */
-    @scala.inline
-    def get(): typings.servicenowLondon.GlideLocale = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.servicenowLondon.GlideLocale]
+    inline def get(): typings.servicenowLondon.GlideLocale = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.servicenowLondon.GlideLocale]
   }
   
   @JSGlobal("GlidePluginManager")
@@ -838,8 +828,7 @@ object global_ {
       *
       * gs.info(GlideSecureRandomUtil.getSecureRandomInt());
       */
-    @scala.inline
-    def getSecureRandomInt(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomInt")().asInstanceOf[Double]
+    inline def getSecureRandomInt(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomInt")().asInstanceOf[Double]
     
     /**
       * Generates a pseudo-random integer between 0 (inclusive) and the bound (exclusive) value that
@@ -851,8 +840,7 @@ object global_ {
       *
       * gs.info(GlideSecureRandomUtil.getSecureRandomIntBound(100));
       */
-    @scala.inline
-    def getSecureRandomIntBound(bound: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomIntBound")(bound.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getSecureRandomIntBound(bound: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomIntBound")(bound.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Generates pseudo-random long value.
@@ -862,8 +850,7 @@ object global_ {
       *
       * gs.info(GlideSecureRandomUtil.getSecureRandomLong());
       */
-    @scala.inline
-    def getSecureRandomLong(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomLong")().asInstanceOf[Double]
+    inline def getSecureRandomLong(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomLong")().asInstanceOf[Double]
     
     /**
       * Generates a random alpha-numeric String with the specified length.
@@ -874,8 +861,7 @@ object global_ {
       *
       * gs.info(GlideSecureRandomUtil.getSecureRandomString(12));
       */
-    @scala.inline
-    def getSecureRandomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getSecureRandomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecureRandomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object GlideStringUtil {
@@ -884,47 +870,33 @@ object global_ {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dotToUnderBar(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dotToUnderBar")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def dotToUnderBar(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dotToUnderBar")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def escapeAllQuotes(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAllQuotes")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeAllQuotes(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAllQuotes")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def escapeForHomePage(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHomePage")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeForHomePage(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHomePage")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def escapeHTML(htmlString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(htmlString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeHTML(htmlString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(htmlString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def escapeNonPrintable(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeNonPrintable")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeNonPrintable(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeNonPrintable")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def escapeQueryTermSeparator(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeQueryTermSeparator")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeQueryTermSeparator(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeQueryTermSeparator")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def escapeTicks(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeTicks")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeTicks(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeTicks")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getHTMLValue(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHTMLValue")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getHTMLValue(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHTMLValue")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getNumeric(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumeric")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getNumeric(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumeric")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def isBase64(sourceString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(sourceString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBase64(sourceString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(sourceString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isEligibleSysID(sourceString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEligibleSysID")(sourceString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isEligibleSysID(sourceString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEligibleSysID")(sourceString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def newLinesToBreaks(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newLinesToBreaks")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def newLinesToBreaks(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newLinesToBreaks")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def normalizeWhitespace(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeWhitespace")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalizeWhitespace(sourceString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeWhitespace")(sourceString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def unescapeHTML(htmlString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeHTML")(htmlString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def unescapeHTML(htmlString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeHTML")(htmlString.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("GlideSysAttachment")

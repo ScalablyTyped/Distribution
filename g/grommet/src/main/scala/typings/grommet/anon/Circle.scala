@@ -10,19 +10,15 @@ trait Circle extends StObject {
 }
 object Circle {
   
-  @scala.inline
-  def apply(): Circle = {
+  inline def apply(): Circle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Circle]
   }
   
-  @scala.inline
-  implicit class CircleMutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
+  extension [Self <: Circle](x: Self) {
     
-    @scala.inline
-    def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
   }
 }

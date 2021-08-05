@@ -12,19 +12,15 @@ trait LookupFunctions extends StObject {
 }
 object LookupFunctions {
   
-  @scala.inline
-  def apply(bindingBehaviors: String => js.Any, valueConverters: String => js.Any): LookupFunctions = {
+  inline def apply(bindingBehaviors: String => js.Any, valueConverters: String => js.Any): LookupFunctions = {
     val __obj = js.Dynamic.literal(bindingBehaviors = js.Any.fromFunction1(bindingBehaviors), valueConverters = js.Any.fromFunction1(valueConverters))
     __obj.asInstanceOf[LookupFunctions]
   }
   
-  @scala.inline
-  implicit class LookupFunctionsMutableBuilder[Self <: LookupFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: LookupFunctions](x: Self) {
     
-    @scala.inline
-    def setBindingBehaviors(value: String => js.Any): Self = StObject.set(x, "bindingBehaviors", js.Any.fromFunction1(value))
+    inline def setBindingBehaviors(value: String => js.Any): Self = StObject.set(x, "bindingBehaviors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueConverters(value: String => js.Any): Self = StObject.set(x, "valueConverters", js.Any.fromFunction1(value))
+    inline def setValueConverters(value: String => js.Any): Self = StObject.set(x, "valueConverters", js.Any.fromFunction1(value))
   }
 }

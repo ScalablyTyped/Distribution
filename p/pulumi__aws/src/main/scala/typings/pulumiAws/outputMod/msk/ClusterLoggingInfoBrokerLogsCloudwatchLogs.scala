@@ -18,22 +18,17 @@ trait ClusterLoggingInfoBrokerLogsCloudwatchLogs extends StObject {
 }
 object ClusterLoggingInfoBrokerLogsCloudwatchLogs {
   
-  @scala.inline
-  def apply(enabled: Boolean): ClusterLoggingInfoBrokerLogsCloudwatchLogs = {
+  inline def apply(enabled: Boolean): ClusterLoggingInfoBrokerLogsCloudwatchLogs = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterLoggingInfoBrokerLogsCloudwatchLogs]
   }
   
-  @scala.inline
-  implicit class ClusterLoggingInfoBrokerLogsCloudwatchLogsMutableBuilder[Self <: ClusterLoggingInfoBrokerLogsCloudwatchLogs] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterLoggingInfoBrokerLogsCloudwatchLogs](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
+    inline def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupUndefined: Self = StObject.set(x, "logGroup", js.undefined)
+    inline def setLogGroupUndefined: Self = StObject.set(x, "logGroup", js.undefined)
   }
 }

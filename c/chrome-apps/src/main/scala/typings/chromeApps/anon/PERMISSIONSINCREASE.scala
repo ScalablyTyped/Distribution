@@ -14,19 +14,15 @@ trait PERMISSIONSINCREASE extends StObject {
 }
 object PERMISSIONSINCREASE {
   
-  @scala.inline
-  def apply(): PERMISSIONSINCREASE = {
+  inline def apply(): PERMISSIONSINCREASE = {
     val __obj = js.Dynamic.literal(PERMISSIONS_INCREASE = "permissions_increase", UNKNOWN = "unknown")
     __obj.asInstanceOf[PERMISSIONSINCREASE]
   }
   
-  @scala.inline
-  implicit class PERMISSIONSINCREASEMutableBuilder[Self <: PERMISSIONSINCREASE] (val x: Self) extends AnyVal {
+  extension [Self <: PERMISSIONSINCREASE](x: Self) {
     
-    @scala.inline
-    def setPERMISSIONS_INCREASE(value: permissions_increase_): Self = StObject.set(x, "PERMISSIONS_INCREASE", value.asInstanceOf[js.Any])
+    inline def setPERMISSIONS_INCREASE(value: permissions_increase_): Self = StObject.set(x, "PERMISSIONS_INCREASE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNKNOWN(value: unknown__): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setUNKNOWN(value: unknown__): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait isScrollingbooleanSizeInf extends StObject {
 }
 object isScrollingbooleanSizeInf {
   
-  @scala.inline
-  def apply(height: Double, isScrolling: Boolean, width: Double): isScrollingbooleanSizeInf = {
+  inline def apply(height: Double, isScrolling: Boolean, width: Double): isScrollingbooleanSizeInf = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[isScrollingbooleanSizeInf]
   }
   
-  @scala.inline
-  implicit class isScrollingbooleanSizeInfMutableBuilder[Self <: isScrollingbooleanSizeInf] (val x: Self) extends AnyVal {
+  extension [Self <: isScrollingbooleanSizeInf](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+    inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

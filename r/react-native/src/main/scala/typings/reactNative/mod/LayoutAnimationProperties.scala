@@ -12,19 +12,15 @@ trait LayoutAnimationProperties extends StObject {
 }
 object LayoutAnimationProperties {
   
-  @scala.inline
-  def apply(opacity: String, scaleXY: String): LayoutAnimationProperties = {
+  inline def apply(opacity: String, scaleXY: String): LayoutAnimationProperties = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any], scaleXY = scaleXY.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutAnimationProperties]
   }
   
-  @scala.inline
-  implicit class LayoutAnimationPropertiesMutableBuilder[Self <: LayoutAnimationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutAnimationProperties](x: Self) {
     
-    @scala.inline
-    def setOpacity(value: String): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: String): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXY(value: String): Self = StObject.set(x, "scaleXY", value.asInstanceOf[js.Any])
+    inline def setScaleXY(value: String): Self = StObject.set(x, "scaleXY", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait AppEngineHttpQueue extends StObject {
 }
 object AppEngineHttpQueue {
   
-  @scala.inline
-  def apply(appEngineRoutingOverride: AppEngineRouting): AppEngineHttpQueue = {
+  inline def apply(appEngineRoutingOverride: AppEngineRouting): AppEngineHttpQueue = {
     val __obj = js.Dynamic.literal(appEngineRoutingOverride = appEngineRoutingOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineHttpQueue]
   }
   
-  @scala.inline
-  implicit class AppEngineHttpQueueMutableBuilder[Self <: AppEngineHttpQueue] (val x: Self) extends AnyVal {
+  extension [Self <: AppEngineHttpQueue](x: Self) {
     
-    @scala.inline
-    def setAppEngineRoutingOverride(value: AppEngineRouting): Self = StObject.set(x, "appEngineRoutingOverride", value.asInstanceOf[js.Any])
+    inline def setAppEngineRoutingOverride(value: AppEngineRouting): Self = StObject.set(x, "appEngineRoutingOverride", value.asInstanceOf[js.Any])
   }
 }

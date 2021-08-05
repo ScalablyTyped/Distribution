@@ -32,8 +32,7 @@ trait Dead extends StObject {
 }
 object Dead {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dead: Boolean,
     Error: String,
     ExitCode: Double,
@@ -50,46 +49,32 @@ object Dead {
     __obj.asInstanceOf[Dead]
   }
   
-  @scala.inline
-  implicit class DeadMutableBuilder[Self <: Dead] (val x: Self) extends AnyVal {
+  extension [Self <: Dead](x: Self) {
     
-    @scala.inline
-    def setDead(value: Boolean): Self = StObject.set(x, "Dead", value.asInstanceOf[js.Any])
+    inline def setDead(value: Boolean): Self = StObject.set(x, "Dead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedAt(value: String): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: String): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealth(value: FailingStreak): Self = StObject.set(x, "Health", value.asInstanceOf[js.Any])
+    inline def setHealth(value: FailingStreak): Self = StObject.set(x, "Health", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthUndefined: Self = StObject.set(x, "Health", js.undefined)
+    inline def setHealthUndefined: Self = StObject.set(x, "Health", js.undefined)
     
-    @scala.inline
-    def setOOMKilled(value: Boolean): Self = StObject.set(x, "OOMKilled", value.asInstanceOf[js.Any])
+    inline def setOOMKilled(value: Boolean): Self = StObject.set(x, "OOMKilled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "Paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "Paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestarting(value: Boolean): Self = StObject.set(x, "Restarting", value.asInstanceOf[js.Any])
+    inline def setRestarting(value: Boolean): Self = StObject.set(x, "Restarting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunning(value: Boolean): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Boolean): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAt(value: String): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: String): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

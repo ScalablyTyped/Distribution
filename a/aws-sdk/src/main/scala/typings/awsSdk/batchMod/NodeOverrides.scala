@@ -18,28 +18,21 @@ trait NodeOverrides extends StObject {
 }
 object NodeOverrides {
   
-  @scala.inline
-  def apply(): NodeOverrides = {
+  inline def apply(): NodeOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeOverrides]
   }
   
-  @scala.inline
-  implicit class NodeOverridesMutableBuilder[Self <: NodeOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: NodeOverrides](x: Self) {
     
-    @scala.inline
-    def setNodePropertyOverrides(value: NodePropertyOverrides): Self = StObject.set(x, "nodePropertyOverrides", value.asInstanceOf[js.Any])
+    inline def setNodePropertyOverrides(value: NodePropertyOverrides): Self = StObject.set(x, "nodePropertyOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePropertyOverridesUndefined: Self = StObject.set(x, "nodePropertyOverrides", js.undefined)
+    inline def setNodePropertyOverridesUndefined: Self = StObject.set(x, "nodePropertyOverrides", js.undefined)
     
-    @scala.inline
-    def setNodePropertyOverridesVarargs(value: NodePropertyOverride*): Self = StObject.set(x, "nodePropertyOverrides", js.Array(value :_*))
+    inline def setNodePropertyOverridesVarargs(value: NodePropertyOverride*): Self = StObject.set(x, "nodePropertyOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
+    inline def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumNodesUndefined: Self = StObject.set(x, "numNodes", js.undefined)
+    inline def setNumNodesUndefined: Self = StObject.set(x, "numNodes", js.undefined)
   }
 }

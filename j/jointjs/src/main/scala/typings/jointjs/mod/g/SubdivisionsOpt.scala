@@ -12,22 +12,17 @@ trait SubdivisionsOpt
 }
 object SubdivisionsOpt {
   
-  @scala.inline
-  def apply(): SubdivisionsOpt = {
+  inline def apply(): SubdivisionsOpt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubdivisionsOpt]
   }
   
-  @scala.inline
-  implicit class SubdivisionsOptMutableBuilder[Self <: SubdivisionsOpt] (val x: Self) extends AnyVal {
+  extension [Self <: SubdivisionsOpt](x: Self) {
     
-    @scala.inline
-    def setSubdivisions(value: js.Array[Curve]): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
+    inline def setSubdivisions(value: js.Array[Curve]): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
+    inline def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
     
-    @scala.inline
-    def setSubdivisionsVarargs(value: Curve*): Self = StObject.set(x, "subdivisions", js.Array(value :_*))
+    inline def setSubdivisionsVarargs(value: Curve*): Self = StObject.set(x, "subdivisions", js.Array(value :_*))
   }
 }

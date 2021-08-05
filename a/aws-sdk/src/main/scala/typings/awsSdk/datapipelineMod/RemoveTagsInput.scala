@@ -18,22 +18,17 @@ trait RemoveTagsInput extends StObject {
 }
 object RemoveTagsInput {
   
-  @scala.inline
-  def apply(pipelineId: id, tagKeys: stringList): RemoveTagsInput = {
+  inline def apply(pipelineId: id, tagKeys: stringList): RemoveTagsInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any], tagKeys = tagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTagsInput]
   }
   
-  @scala.inline
-  implicit class RemoveTagsInputMutableBuilder[Self <: RemoveTagsInput] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTagsInput](x: Self) {
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeys(value: stringList): Self = StObject.set(x, "tagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: stringList): Self = StObject.set(x, "tagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value :_*))
   }
 }

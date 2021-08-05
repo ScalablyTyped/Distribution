@@ -15,19 +15,15 @@ trait TypeofMenu extends StObject {
 }
 object TypeofMenu {
   
-  @scala.inline
-  def apply(extend: js.Object => Menu, fn: Menu): TypeofMenu = {
+  inline def apply(extend: js.Object => Menu, fn: Menu): TypeofMenu = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofMenu]
   }
   
-  @scala.inline
-  implicit class TypeofMenuMutableBuilder[Self <: TypeofMenu] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofMenu](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Menu): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Menu): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Menu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Menu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

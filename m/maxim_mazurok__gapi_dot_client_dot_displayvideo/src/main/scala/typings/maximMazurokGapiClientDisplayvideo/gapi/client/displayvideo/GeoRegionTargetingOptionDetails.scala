@@ -14,25 +14,19 @@ trait GeoRegionTargetingOptionDetails extends StObject {
 }
 object GeoRegionTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): GeoRegionTargetingOptionDetails = {
+  inline def apply(): GeoRegionTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoRegionTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class GeoRegionTargetingOptionDetailsMutableBuilder[Self <: GeoRegionTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GeoRegionTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setGeoRegionType(value: String): Self = StObject.set(x, "geoRegionType", value.asInstanceOf[js.Any])
+    inline def setGeoRegionType(value: String): Self = StObject.set(x, "geoRegionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoRegionTypeUndefined: Self = StObject.set(x, "geoRegionType", js.undefined)
+    inline def setGeoRegionTypeUndefined: Self = StObject.set(x, "geoRegionType", js.undefined)
   }
 }

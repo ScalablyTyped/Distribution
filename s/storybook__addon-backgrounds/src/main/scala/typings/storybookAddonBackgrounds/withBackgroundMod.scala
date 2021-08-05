@@ -12,6 +12,5 @@ object withBackgroundMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withBackground(StoryFn: StoryFn[js.Any], context: StoryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("withBackground")(StoryFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def withBackground(StoryFn: StoryFn[js.Any], context: StoryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("withBackground")(StoryFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

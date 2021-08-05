@@ -35,32 +35,24 @@ trait JavascriptDialogOpeningEvent extends StObject {
 }
 object JavascriptDialogOpeningEvent {
   
-  @scala.inline
-  def apply(hasBrowserHandler: Boolean, message: String, `type`: DialogType, url: String): JavascriptDialogOpeningEvent = {
+  inline def apply(hasBrowserHandler: Boolean, message: String, `type`: DialogType, url: String): JavascriptDialogOpeningEvent = {
     val __obj = js.Dynamic.literal(hasBrowserHandler = hasBrowserHandler.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JavascriptDialogOpeningEvent]
   }
   
-  @scala.inline
-  implicit class JavascriptDialogOpeningEventMutableBuilder[Self <: JavascriptDialogOpeningEvent] (val x: Self) extends AnyVal {
+  extension [Self <: JavascriptDialogOpeningEvent](x: Self) {
     
-    @scala.inline
-    def setDefaultPrompt(value: String): Self = StObject.set(x, "defaultPrompt", value.asInstanceOf[js.Any])
+    inline def setDefaultPrompt(value: String): Self = StObject.set(x, "defaultPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPromptUndefined: Self = StObject.set(x, "defaultPrompt", js.undefined)
+    inline def setDefaultPromptUndefined: Self = StObject.set(x, "defaultPrompt", js.undefined)
     
-    @scala.inline
-    def setHasBrowserHandler(value: Boolean): Self = StObject.set(x, "hasBrowserHandler", value.asInstanceOf[js.Any])
+    inline def setHasBrowserHandler(value: Boolean): Self = StObject.set(x, "hasBrowserHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DialogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DialogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

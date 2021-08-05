@@ -21,7 +21,7 @@ object locationMod {
     
     def path: String = js.native
     
-    var path_ : js.Any = js.native
+    /* private */ var path_ : js.Any = js.native
   }
   /* static members */
   object Location {
@@ -30,10 +30,8 @@ object locationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def makeFromBucketSpec(bucketString: String): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFromBucketSpec")(bucketString.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def makeFromBucketSpec(bucketString: String): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFromBucketSpec")(bucketString.asInstanceOf[js.Any]).asInstanceOf[Location]
     
-    @scala.inline
-    def makeFromUrl(url: String): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def makeFromUrl(url: String): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Location]
   }
 }

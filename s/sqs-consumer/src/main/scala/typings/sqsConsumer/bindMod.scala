@@ -10,6 +10,5 @@ object bindMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autoBind(obj: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("autoBind")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def autoBind(obj: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("autoBind")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

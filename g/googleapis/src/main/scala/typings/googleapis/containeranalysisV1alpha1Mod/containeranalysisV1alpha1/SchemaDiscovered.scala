@@ -34,37 +34,27 @@ trait SchemaDiscovered extends StObject {
 }
 object SchemaDiscovered {
   
-  @scala.inline
-  def apply(): SchemaDiscovered = {
+  inline def apply(): SchemaDiscovered = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiscovered]
   }
   
-  @scala.inline
-  implicit class SchemaDiscoveredMutableBuilder[Self <: SchemaDiscovered] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiscovered](x: Self) {
     
-    @scala.inline
-    def setAnalysisStatus(value: String): Self = StObject.set(x, "analysisStatus", value.asInstanceOf[js.Any])
+    inline def setAnalysisStatus(value: String): Self = StObject.set(x, "analysisStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisStatusError(value: SchemaStatus): Self = StObject.set(x, "analysisStatusError", value.asInstanceOf[js.Any])
+    inline def setAnalysisStatusError(value: SchemaStatus): Self = StObject.set(x, "analysisStatusError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisStatusErrorUndefined: Self = StObject.set(x, "analysisStatusError", js.undefined)
+    inline def setAnalysisStatusErrorUndefined: Self = StObject.set(x, "analysisStatusError", js.undefined)
     
-    @scala.inline
-    def setAnalysisStatusUndefined: Self = StObject.set(x, "analysisStatus", js.undefined)
+    inline def setAnalysisStatusUndefined: Self = StObject.set(x, "analysisStatus", js.undefined)
     
-    @scala.inline
-    def setContinuousAnalysis(value: String): Self = StObject.set(x, "continuousAnalysis", value.asInstanceOf[js.Any])
+    inline def setContinuousAnalysis(value: String): Self = StObject.set(x, "continuousAnalysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousAnalysisUndefined: Self = StObject.set(x, "continuousAnalysis", js.undefined)
+    inline def setContinuousAnalysisUndefined: Self = StObject.set(x, "continuousAnalysis", js.undefined)
     
-    @scala.inline
-    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

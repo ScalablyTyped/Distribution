@@ -201,20 +201,17 @@ object mod {
   @JSImport("zmq", "options")
   @js.native
   def options: SocketOptions = js.native
-  @scala.inline
-  def options_=(x: SocketOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+  inline def options_=(x: SocketOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
   @JSImport("zmq", "types")
   @js.native
   def types: SocketTypes = js.native
-  @scala.inline
-  def types_=(x: SocketTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+  inline def types_=(x: SocketTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
   
   @JSImport("zmq", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   trait EventEmitter extends StObject
   
@@ -258,8 +255,7 @@ object mod {
   }
   object SocketOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _fd: Double,
       _ioevents: Double,
       _receiveMore: Double,
@@ -283,62 +279,43 @@ object mod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    @scala.inline
-    implicit class SocketOptionsMutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SocketOptions](x: Self) {
       
-      @scala.inline
-      def setAffinity(value: Double): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
+      inline def setAffinity(value: Double): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
+      inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHwm(value: Double): Self = StObject.set(x, "hwm", value.asInstanceOf[js.Any])
+      inline def setHwm(value: Double): Self = StObject.set(x, "hwm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Double): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Double): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_endpoint(value: Double): Self = StObject.set(x, "last_endpoint", value.asInstanceOf[js.Any])
+      inline def setLast_endpoint(value: Double): Self = StObject.set(x, "last_endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinger(value: Double): Self = StObject.set(x, "linger", value.asInstanceOf[js.Any])
+      inline def setLinger(value: Double): Self = StObject.set(x, "linger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMcast_loop(value: Double): Self = StObject.set(x, "mcast_loop", value.asInstanceOf[js.Any])
+      inline def setMcast_loop(value: Double): Self = StObject.set(x, "mcast_loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRcvbuf(value: Double): Self = StObject.set(x, "rcvbuf", value.asInstanceOf[js.Any])
+      inline def setRcvbuf(value: Double): Self = StObject.set(x, "rcvbuf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnect_ivl(value: Double): Self = StObject.set(x, "reconnect_ivl", value.asInstanceOf[js.Any])
+      inline def setReconnect_ivl(value: Double): Self = StObject.set(x, "reconnect_ivl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecovery_ivl(value: Double): Self = StObject.set(x, "recovery_ivl", value.asInstanceOf[js.Any])
+      inline def setRecovery_ivl(value: Double): Self = StObject.set(x, "recovery_ivl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSndbuf(value: Double): Self = StObject.set(x, "sndbuf", value.asInstanceOf[js.Any])
+      inline def setSndbuf(value: Double): Self = StObject.set(x, "sndbuf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwap(value: Double): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
+      inline def setSwap(value: Double): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_fd(value: Double): Self = StObject.set(x, "_fd", value.asInstanceOf[js.Any])
+      inline def set_fd(value: Double): Self = StObject.set(x, "_fd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_ioevents(value: Double): Self = StObject.set(x, "_ioevents", value.asInstanceOf[js.Any])
+      inline def set_ioevents(value: Double): Self = StObject.set(x, "_ioevents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_receiveMore(value: Double): Self = StObject.set(x, "_receiveMore", value.asInstanceOf[js.Any])
+      inline def set_receiveMore(value: Double): Self = StObject.set(x, "_receiveMore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_subscribe(value: Double): Self = StObject.set(x, "_subscribe", value.asInstanceOf[js.Any])
+      inline def set_subscribe(value: Double): Self = StObject.set(x, "_subscribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unsubscribe(value: Double): Self = StObject.set(x, "_unsubscribe", value.asInstanceOf[js.Any])
+      inline def set_unsubscribe(value: Double): Self = StObject.set(x, "_unsubscribe", value.asInstanceOf[js.Any])
     }
   }
   
@@ -372,8 +349,7 @@ object mod {
   }
   object SocketTypes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dealer: Double,
       pair: Double,
       pub: Double,
@@ -392,47 +368,33 @@ object mod {
       __obj.asInstanceOf[SocketTypes]
     }
     
-    @scala.inline
-    implicit class SocketTypesMutableBuilder[Self <: SocketTypes] (val x: Self) extends AnyVal {
+    extension [Self <: SocketTypes](x: Self) {
       
-      @scala.inline
-      def setDealer(value: Double): Self = StObject.set(x, "dealer", value.asInstanceOf[js.Any])
+      inline def setDealer(value: Double): Self = StObject.set(x, "dealer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPair(value: Double): Self = StObject.set(x, "pair", value.asInstanceOf[js.Any])
+      inline def setPair(value: Double): Self = StObject.set(x, "pair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPub(value: Double): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+      inline def setPub(value: Double): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPull(value: Double): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+      inline def setPull(value: Double): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPush(value: Double): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Double): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRep(value: Double): Self = StObject.set(x, "rep", value.asInstanceOf[js.Any])
+      inline def setRep(value: Double): Self = StObject.set(x, "rep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: Double): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Double): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouter(value: Double): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: Double): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSub(value: Double): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: Double): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXpub(value: Double): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
+      inline def setXpub(value: Double): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrep(value: Double): Self = StObject.set(x, "xrep", value.asInstanceOf[js.Any])
+      inline def setXrep(value: Double): Self = StObject.set(x, "xrep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXreq(value: Double): Self = StObject.set(x, "xreq", value.asInstanceOf[js.Any])
+      inline def setXreq(value: Double): Self = StObject.set(x, "xreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsub(value: Double): Self = StObject.set(x, "xsub", value.asInstanceOf[js.Any])
+      inline def setXsub(value: Double): Self = StObject.set(x, "xsub", value.asInstanceOf[js.Any])
     }
   }
 }

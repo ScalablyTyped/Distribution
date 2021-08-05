@@ -14,25 +14,19 @@ trait GoogleAppsScriptTypeWebAppConfig extends StObject {
 }
 object GoogleAppsScriptTypeWebAppConfig {
   
-  @scala.inline
-  def apply(): GoogleAppsScriptTypeWebAppConfig = {
+  inline def apply(): GoogleAppsScriptTypeWebAppConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsScriptTypeWebAppConfig]
   }
   
-  @scala.inline
-  implicit class GoogleAppsScriptTypeWebAppConfigMutableBuilder[Self <: GoogleAppsScriptTypeWebAppConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsScriptTypeWebAppConfig](x: Self) {
     
-    @scala.inline
-    def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    @scala.inline
-    def setExecuteAs(value: String): Self = StObject.set(x, "executeAs", value.asInstanceOf[js.Any])
+    inline def setExecuteAs(value: String): Self = StObject.set(x, "executeAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecuteAsUndefined: Self = StObject.set(x, "executeAs", js.undefined)
+    inline def setExecuteAsUndefined: Self = StObject.set(x, "executeAs", js.undefined)
   }
 }

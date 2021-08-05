@@ -11,16 +11,13 @@ trait PickImplrevalidate extends StObject {
 }
 object PickImplrevalidate {
   
-  @scala.inline
-  def apply(revalidate: Boolean): PickImplrevalidate = {
+  inline def apply(revalidate: Boolean): PickImplrevalidate = {
     val __obj = js.Dynamic.literal(revalidate = revalidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrevalidate]
   }
   
-  @scala.inline
-  implicit class PickImplrevalidateMutableBuilder[Self <: PickImplrevalidate] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplrevalidate](x: Self) {
     
-    @scala.inline
-    def setRevalidate(value: Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
+    inline def setRevalidate(value: Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ object retryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](options: RetryOptions[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def default[V](options: RetryOptions[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
   
   trait RetryContext extends StObject {
     
@@ -23,20 +22,16 @@ object retryMod {
   }
   object RetryContext {
     
-    @scala.inline
-    def apply(error: js.Any, retriesDone: Double): RetryContext = {
+    inline def apply(error: js.Any, retriesDone: Double): RetryContext = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], retriesDone = retriesDone.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetryContext]
     }
     
-    @scala.inline
-    implicit class RetryContextMutableBuilder[Self <: RetryContext] (val x: Self) extends AnyVal {
+    extension [Self <: RetryContext](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesDone(value: Double): Self = StObject.set(x, "retriesDone", value.asInstanceOf[js.Any])
+      inline def setRetriesDone(value: Double): Self = StObject.set(x, "retriesDone", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,35 +59,26 @@ object retryMod {
   }
   object RetryOptions {
     
-    @scala.inline
-    def apply[V](source: Double => default[V]): RetryOptions[V] = {
+    inline def apply[V](source: Double => default[V]): RetryOptions[V] = {
       val __obj = js.Dynamic.literal(source = js.Any.fromFunction1(source))
       __obj.asInstanceOf[RetryOptions[V]]
     }
     
-    @scala.inline
-    implicit class RetryOptionsMutableBuilder[Self <: RetryOptions[?], V] (val x: Self & RetryOptions[V]) extends AnyVal {
+    extension [Self <: RetryOptions[?], V](x: Self & RetryOptions[V]) {
       
-      @scala.inline
-      def setDelay(value: /* context */ RetryContext => Double): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
+      inline def setDelay(value: /* context */ RetryContext => Double): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setIsRetryable(value: /* error */ js.Any => Boolean): Self = StObject.set(x, "isRetryable", js.Any.fromFunction1(value))
+      inline def setIsRetryable(value: /* error */ js.Any => Boolean): Self = StObject.set(x, "isRetryable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRetryableUndefined: Self = StObject.set(x, "isRetryable", js.undefined)
+      inline def setIsRetryableUndefined: Self = StObject.set(x, "isRetryable", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setSource(value: Double => default[V]): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
+      inline def setSource(value: Double => default[V]): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
     }
   }
 }

@@ -23,22 +23,17 @@ trait ASPxClientReportDesignerCustomizeFieldListActionsEventArgs
 }
 object ASPxClientReportDesignerCustomizeFieldListActionsEventArgs {
   
-  @scala.inline
-  def apply(Actions: js.Array[js.Any], Item: js.Any): ASPxClientReportDesignerCustomizeFieldListActionsEventArgs = {
+  inline def apply(Actions: js.Array[js.Any], Item: js.Any): ASPxClientReportDesignerCustomizeFieldListActionsEventArgs = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerCustomizeFieldListActionsEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerCustomizeFieldListActionsEventArgsMutableBuilder[Self <: ASPxClientReportDesignerCustomizeFieldListActionsEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerCustomizeFieldListActionsEventArgs](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }
 }

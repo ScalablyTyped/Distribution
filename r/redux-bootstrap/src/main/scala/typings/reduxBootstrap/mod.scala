@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bootstrap(options: BoostrapOptions): BootstrapResult = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(options.asInstanceOf[js.Any]).asInstanceOf[BootstrapResult]
+  inline def bootstrap(options: BoostrapOptions): BootstrapResult = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(options.asInstanceOf[js.Any]).asInstanceOf[BootstrapResult]
 }

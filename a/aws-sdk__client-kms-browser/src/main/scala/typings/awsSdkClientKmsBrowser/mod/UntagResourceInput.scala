@@ -10,8 +10,7 @@ trait UntagResourceInput
      with typings.awsSdkClientKmsBrowser.typesUntagResourceInputMod.UntagResourceInput
 object UntagResourceInput {
   
-  @scala.inline
-  def apply(KeyId: String, TagKeys: js.Array[String] | Iterable[String]): UntagResourceInput = {
+  inline def apply(KeyId: String, TagKeys: js.Array[String] | Iterable[String]): UntagResourceInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceInput]
   }

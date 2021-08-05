@@ -10,19 +10,15 @@ trait XmlState extends StObject {
 }
 object XmlState {
   
-  @scala.inline
-  def apply(): XmlState = {
+  inline def apply(): XmlState = {
     val __obj = js.Dynamic.literal(ast = null)
     __obj.asInstanceOf[XmlState]
   }
   
-  @scala.inline
-  implicit class XmlStateMutableBuilder[Self <: XmlState] (val x: Self) extends AnyVal {
+  extension [Self <: XmlState](x: Self) {
     
-    @scala.inline
-    def setAst(value: JsxAST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: JsxAST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstNull: Self = StObject.set(x, "ast", null)
+    inline def setAstNull: Self = StObject.set(x, "ast", null)
   }
 }

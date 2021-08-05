@@ -13,22 +13,17 @@ trait PathPatternConditionConfig extends StObject {
 }
 object PathPatternConditionConfig {
   
-  @scala.inline
-  def apply(): PathPatternConditionConfig = {
+  inline def apply(): PathPatternConditionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathPatternConditionConfig]
   }
   
-  @scala.inline
-  implicit class PathPatternConditionConfigMutableBuilder[Self <: PathPatternConditionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PathPatternConditionConfig](x: Self) {
     
-    @scala.inline
-    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

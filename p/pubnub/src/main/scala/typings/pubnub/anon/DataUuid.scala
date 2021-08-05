@@ -16,23 +16,18 @@ trait DataUuid extends StObject {
 }
 object DataUuid {
   
-  @scala.inline
-  def apply(data: Uuid): DataUuid = {
+  inline def apply(data: Uuid): DataUuid = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
     __obj.updateDynamic("type")("membership")
     __obj.asInstanceOf[DataUuid]
   }
   
-  @scala.inline
-  implicit class DataUuidMutableBuilder[Self <: DataUuid] (val x: Self) extends AnyVal {
+  extension [Self <: DataUuid](x: Self) {
     
-    @scala.inline
-    def setData(value: Uuid): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uuid): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

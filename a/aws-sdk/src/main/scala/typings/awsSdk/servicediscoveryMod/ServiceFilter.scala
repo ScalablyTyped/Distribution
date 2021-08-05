@@ -23,28 +23,21 @@ trait ServiceFilter extends StObject {
 }
 object ServiceFilter {
   
-  @scala.inline
-  def apply(Name: ServiceFilterName, Values: FilterValues): ServiceFilter = {
+  inline def apply(Name: ServiceFilterName, Values: FilterValues): ServiceFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceFilter]
   }
   
-  @scala.inline
-  implicit class ServiceFilterMutableBuilder[Self <: ServiceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceFilter](x: Self) {
     
-    @scala.inline
-    def setCondition(value: FilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: FilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setName(value: ServiceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ServiceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -35,8 +35,7 @@ trait TrustedAdvisorCheckResult extends StObject {
 }
 object TrustedAdvisorCheckResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categorySpecificSummary: TrustedAdvisorCategorySpecificSummary,
     checkId: String,
     flaggedResources: TrustedAdvisorResourceDetailList,
@@ -48,28 +47,20 @@ object TrustedAdvisorCheckResult {
     __obj.asInstanceOf[TrustedAdvisorCheckResult]
   }
   
-  @scala.inline
-  implicit class TrustedAdvisorCheckResultMutableBuilder[Self <: TrustedAdvisorCheckResult] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedAdvisorCheckResult](x: Self) {
     
-    @scala.inline
-    def setCategorySpecificSummary(value: TrustedAdvisorCategorySpecificSummary): Self = StObject.set(x, "categorySpecificSummary", value.asInstanceOf[js.Any])
+    inline def setCategorySpecificSummary(value: TrustedAdvisorCategorySpecificSummary): Self = StObject.set(x, "categorySpecificSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
+    inline def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlaggedResources(value: TrustedAdvisorResourceDetailList): Self = StObject.set(x, "flaggedResources", value.asInstanceOf[js.Any])
+    inline def setFlaggedResources(value: TrustedAdvisorResourceDetailList): Self = StObject.set(x, "flaggedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlaggedResourcesVarargs(value: TrustedAdvisorResourceDetail*): Self = StObject.set(x, "flaggedResources", js.Array(value :_*))
+    inline def setFlaggedResourcesVarargs(value: TrustedAdvisorResourceDetail*): Self = StObject.set(x, "flaggedResources", js.Array(value :_*))
     
-    @scala.inline
-    def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = StObject.set(x, "resourcesSummary", value.asInstanceOf[js.Any])
+    inline def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = StObject.set(x, "resourcesSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

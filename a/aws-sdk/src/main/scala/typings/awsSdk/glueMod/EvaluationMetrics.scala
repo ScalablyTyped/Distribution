@@ -18,22 +18,17 @@ trait EvaluationMetrics extends StObject {
 }
 object EvaluationMetrics {
   
-  @scala.inline
-  def apply(TransformType: TransformType): EvaluationMetrics = {
+  inline def apply(TransformType: TransformType): EvaluationMetrics = {
     val __obj = js.Dynamic.literal(TransformType = TransformType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationMetrics]
   }
   
-  @scala.inline
-  implicit class EvaluationMetricsMutableBuilder[Self <: EvaluationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationMetrics](x: Self) {
     
-    @scala.inline
-    def setFindMatchesMetrics(value: FindMatchesMetrics): Self = StObject.set(x, "FindMatchesMetrics", value.asInstanceOf[js.Any])
+    inline def setFindMatchesMetrics(value: FindMatchesMetrics): Self = StObject.set(x, "FindMatchesMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindMatchesMetricsUndefined: Self = StObject.set(x, "FindMatchesMetrics", js.undefined)
+    inline def setFindMatchesMetricsUndefined: Self = StObject.set(x, "FindMatchesMetrics", js.undefined)
     
-    @scala.inline
-    def setTransformType(value: TransformType): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
+    inline def setTransformType(value: TransformType): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
   }
 }

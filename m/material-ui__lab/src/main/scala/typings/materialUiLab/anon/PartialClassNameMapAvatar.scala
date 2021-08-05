@@ -13,25 +13,19 @@ trait PartialClassNameMapAvatar extends StObject {
 }
 object PartialClassNameMapAvatar {
   
-  @scala.inline
-  def apply(): PartialClassNameMapAvatar = {
+  inline def apply(): PartialClassNameMapAvatar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapAvatar]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapAvatarMutableBuilder[Self <: PartialClassNameMapAvatar] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapAvatar](x: Self) {
     
-    @scala.inline
-    def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+    inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

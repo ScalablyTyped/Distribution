@@ -19,19 +19,15 @@ trait ParamsResourceAchievementsResetall
 }
 object ParamsResourceAchievementsResetall {
   
-  @scala.inline
-  def apply(): ParamsResourceAchievementsResetall = {
+  inline def apply(): ParamsResourceAchievementsResetall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAchievementsResetall]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAchievementsResetallMutableBuilder[Self <: ParamsResourceAchievementsResetall] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAchievementsResetall](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

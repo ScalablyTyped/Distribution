@@ -106,20 +106,16 @@ object Deployment {
   }
   object DeploymentProgress {
     
-    @scala.inline
-    def apply(percentage: Double, state: DeploymentProgressState): DeploymentProgress = {
+    inline def apply(percentage: Double, state: DeploymentProgressState): DeploymentProgress = {
       val __obj = js.Dynamic.literal(percentage = percentage.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeploymentProgress]
     }
     
-    @scala.inline
-    implicit class DeploymentProgressMutableBuilder[Self <: DeploymentProgress] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentProgress](x: Self) {
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: DeploymentProgressState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: DeploymentProgressState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,8 +124,7 @@ object Deployment {
        with IDeploymentResult
   object DeploymentResult {
     
-    @scala.inline
-    def apply(activityId: String, errorText: String, extendedErrorCode: Double): DeploymentResult = {
+    inline def apply(activityId: String, errorText: String, extendedErrorCode: Double): DeploymentResult = {
       val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], extendedErrorCode = extendedErrorCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeploymentResult]
     }
@@ -145,23 +140,18 @@ object Deployment {
   }
   object IDeploymentResult {
     
-    @scala.inline
-    def apply(activityId: String, errorText: String, extendedErrorCode: Double): IDeploymentResult = {
+    inline def apply(activityId: String, errorText: String, extendedErrorCode: Double): IDeploymentResult = {
       val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], extendedErrorCode = extendedErrorCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDeploymentResult]
     }
     
-    @scala.inline
-    implicit class IDeploymentResultMutableBuilder[Self <: IDeploymentResult] (val x: Self) extends AnyVal {
+    extension [Self <: IDeploymentResult](x: Self) {
       
-      @scala.inline
-      def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+      inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+      inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedErrorCode(value: Double): Self = StObject.set(x, "extendedErrorCode", value.asInstanceOf[js.Any])
+      inline def setExtendedErrorCode(value: Double): Self = StObject.set(x, "extendedErrorCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,20 +195,16 @@ object Deployment {
   }
   object IPackageUserInformation {
     
-    @scala.inline
-    def apply(installState: PackageInstallState, userSecurityId: String): IPackageUserInformation = {
+    inline def apply(installState: PackageInstallState, userSecurityId: String): IPackageUserInformation = {
       val __obj = js.Dynamic.literal(installState = installState.asInstanceOf[js.Any], userSecurityId = userSecurityId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPackageUserInformation]
     }
     
-    @scala.inline
-    implicit class IPackageUserInformationMutableBuilder[Self <: IPackageUserInformation] (val x: Self) extends AnyVal {
+    extension [Self <: IPackageUserInformation](x: Self) {
       
-      @scala.inline
-      def setInstallState(value: PackageInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
+      inline def setInstallState(value: PackageInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserSecurityId(value: String): Self = StObject.set(x, "userSecurityId", value.asInstanceOf[js.Any])
+      inline def setUserSecurityId(value: String): Self = StObject.set(x, "userSecurityId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,8 +218,7 @@ object Deployment {
        with IPackageUserInformation
   object PackageUserInformation {
     
-    @scala.inline
-    def apply(installState: PackageInstallState, userSecurityId: String): PackageUserInformation = {
+    inline def apply(installState: PackageInstallState, userSecurityId: String): PackageUserInformation = {
       val __obj = js.Dynamic.literal(installState = installState.asInstanceOf[js.Any], userSecurityId = userSecurityId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackageUserInformation]
     }

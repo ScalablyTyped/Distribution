@@ -26,8 +26,7 @@ trait StateTransition[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object StateTransition {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     actions: js.Array[ActionObject[TContext, TEvent]],
     configuration: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]],
     entrySet: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]],
@@ -38,43 +37,30 @@ object StateTransition {
     __obj.asInstanceOf[StateTransition[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class StateTransitionMutableBuilder[Self <: StateTransition[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StateTransition[TContext, TEvent])) extends AnyVal {
+  extension [Self <: StateTransition[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (StateTransition[TContext, TEvent])) {
     
-    @scala.inline
-    def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setConfiguration(value: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "configuration", js.Array(value :_*))
+    inline def setConfigurationVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "configuration", js.Array(value :_*))
     
-    @scala.inline
-    def setEntrySet(value: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "entrySet", value.asInstanceOf[js.Any])
+    inline def setEntrySet(value: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "entrySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntrySetVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "entrySet", js.Array(value :_*))
+    inline def setEntrySetVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "entrySet", js.Array(value :_*))
     
-    @scala.inline
-    def setExitSet(value: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "exitSet", value.asInstanceOf[js.Any])
+    inline def setExitSet(value: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "exitSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitSetVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "exitSet", js.Array(value :_*))
+    inline def setExitSetVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "exitSet", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: State[TContext, EventObject, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: State[TContext, EventObject, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTransitions(value: js.Array[TransitionDefinition[TContext, TEvent]]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+    inline def setTransitions(value: js.Array[TransitionDefinition[TContext, TEvent]]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionsVarargs(value: (TransitionDefinition[TContext, TEvent])*): Self = StObject.set(x, "transitions", js.Array(value :_*))
+    inline def setTransitionsVarargs(value: (TransitionDefinition[TContext, TEvent])*): Self = StObject.set(x, "transitions", js.Array(value :_*))
   }
 }

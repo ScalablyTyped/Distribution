@@ -47,8 +47,7 @@ trait ChartDocument
 }
 object ChartDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Area: XPropertySet,
     Args: SafeArray[PropertyValue],
     CurrentController: XController,
@@ -103,16 +102,12 @@ object ChartDocument {
     __obj.asInstanceOf[ChartDocument]
   }
   
-  @scala.inline
-  implicit class ChartDocumentMutableBuilder[Self <: ChartDocument] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDocument](x: Self) {
     
-    @scala.inline
-    def setHasLegend(value: Boolean): Self = StObject.set(x, "HasLegend", value.asInstanceOf[js.Any])
+    inline def setHasLegend(value: Boolean): Self = StObject.set(x, "HasLegend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMainTitle(value: Boolean): Self = StObject.set(x, "HasMainTitle", value.asInstanceOf[js.Any])
+    inline def setHasMainTitle(value: Boolean): Self = StObject.set(x, "HasMainTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSubTitle(value: Boolean): Self = StObject.set(x, "HasSubTitle", value.asInstanceOf[js.Any])
+    inline def setHasSubTitle(value: Boolean): Self = StObject.set(x, "HasSubTitle", value.asInstanceOf[js.Any])
   }
 }

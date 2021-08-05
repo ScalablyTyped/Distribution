@@ -225,76 +225,53 @@ trait SchemaHttpRule extends StObject {
 }
 object SchemaHttpRule {
   
-  @scala.inline
-  def apply(): SchemaHttpRule = {
+  inline def apply(): SchemaHttpRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpRule]
   }
   
-  @scala.inline
-  implicit class SchemaHttpRuleMutableBuilder[Self <: SchemaHttpRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpRule](x: Self) {
     
-    @scala.inline
-    def setAdditionalBindings(value: js.Array[SchemaHttpRule]): Self = StObject.set(x, "additionalBindings", value.asInstanceOf[js.Any])
+    inline def setAdditionalBindings(value: js.Array[SchemaHttpRule]): Self = StObject.set(x, "additionalBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalBindingsUndefined: Self = StObject.set(x, "additionalBindings", js.undefined)
+    inline def setAdditionalBindingsUndefined: Self = StObject.set(x, "additionalBindings", js.undefined)
     
-    @scala.inline
-    def setAdditionalBindingsVarargs(value: SchemaHttpRule*): Self = StObject.set(x, "additionalBindings", js.Array(value :_*))
+    inline def setAdditionalBindingsVarargs(value: SchemaHttpRule*): Self = StObject.set(x, "additionalBindings", js.Array(value :_*))
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCustom(value: SchemaCustomHttpPattern): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: SchemaCustomHttpPattern): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+    inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
-    @scala.inline
-    def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setPut(value: String): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: String): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
+    inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
     
-    @scala.inline
-    def setResponseBody(value: String): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
+    inline def setResponseBody(value: String): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseBodyUndefined: Self = StObject.set(x, "responseBody", js.undefined)
+    inline def setResponseBodyUndefined: Self = StObject.set(x, "responseBody", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

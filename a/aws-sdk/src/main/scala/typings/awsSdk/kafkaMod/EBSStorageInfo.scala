@@ -15,19 +15,15 @@ trait EBSStorageInfo extends StObject {
 }
 object EBSStorageInfo {
   
-  @scala.inline
-  def apply(): EBSStorageInfo = {
+  inline def apply(): EBSStorageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EBSStorageInfo]
   }
   
-  @scala.inline
-  implicit class EBSStorageInfoMutableBuilder[Self <: EBSStorageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EBSStorageInfo](x: Self) {
     
-    @scala.inline
-    def setVolumeSize(value: integerMin1Max16384): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: integerMin1Max16384): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
+    inline def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
   }
 }

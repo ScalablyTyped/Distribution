@@ -120,58 +120,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object h {
   
-  @scala.inline
-  def apply(sel: js.Any): VNode = ^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, data: Null, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, data: Null, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, data: VNodeData, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, data: VNodeData, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: js.Any, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: Node): VNode = ^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
-  @scala.inline
-  def apply(sel: Node, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any): VNode = ^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, data: Null, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, data: Null, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, data: VNodeData, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, data: VNodeData, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: js.Any, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(sel: Node): VNode = ^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  inline def apply(sel: Node, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
   
   @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
   @js.native
   val ^ : js.Any = js.native
-  @scala.inline
-  def h(sel: js.Any): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, data: Null, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, data: Null, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, data: VNodeData, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, data: VNodeData, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: js.Any, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: Node): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
-  @scala.inline
-  def h(sel: Node, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  inline def h(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, data: Null, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, data: Null, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, data: VNodeData, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, data: VNodeData, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: js.Any, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(sel: Node): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  inline def h(sel: Node, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
   
   object JSX {
     
@@ -182,8 +158,7 @@ object h {
          with /* tagName */ StringDictionary[js.Any]
     object IntrinsicElements {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         a: AnchorHTMLAttributes[HTMLAnchorElement],
         abbr: HTMLAttributes[HTMLElement],
         address: HTMLAttributes[HTMLElement],

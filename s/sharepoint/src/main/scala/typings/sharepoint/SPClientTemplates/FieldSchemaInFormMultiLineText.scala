@@ -29,8 +29,7 @@ trait FieldSchemaInFormMultiLineText
 }
 object FieldSchemaInFormMultiLineText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     AllowHyperlink: Boolean,
     AppendOnly: Boolean,
@@ -56,25 +55,18 @@ object FieldSchemaInFormMultiLineText {
     __obj.asInstanceOf[FieldSchemaInFormMultiLineText]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormMultiLineTextMutableBuilder[Self <: FieldSchemaInFormMultiLineText] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormMultiLineText](x: Self) {
     
-    @scala.inline
-    def setAllowHyperlink(value: Boolean): Self = StObject.set(x, "AllowHyperlink", value.asInstanceOf[js.Any])
+    inline def setAllowHyperlink(value: Boolean): Self = StObject.set(x, "AllowHyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendOnly(value: Boolean): Self = StObject.set(x, "AppendOnly", value.asInstanceOf[js.Any])
+    inline def setAppendOnly(value: Boolean): Self = StObject.set(x, "AppendOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfLines(value: Double): Self = StObject.set(x, "NumberOfLines", value.asInstanceOf[js.Any])
+    inline def setNumberOfLines(value: Double): Self = StObject.set(x, "NumberOfLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRichText(value: Boolean): Self = StObject.set(x, "RichText", value.asInstanceOf[js.Any])
+    inline def setRichText(value: Boolean): Self = StObject.set(x, "RichText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRichTextMode(value: RichTextMode): Self = StObject.set(x, "RichTextMode", value.asInstanceOf[js.Any])
+    inline def setRichTextMode(value: RichTextMode): Self = StObject.set(x, "RichTextMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptEditorAdderId(value: String): Self = StObject.set(x, "ScriptEditorAdderId", value.asInstanceOf[js.Any])
+    inline def setScriptEditorAdderId(value: String): Self = StObject.set(x, "ScriptEditorAdderId", value.asInstanceOf[js.Any])
   }
 }

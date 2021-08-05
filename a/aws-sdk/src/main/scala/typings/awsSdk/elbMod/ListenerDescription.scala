@@ -18,28 +18,21 @@ trait ListenerDescription extends StObject {
 }
 object ListenerDescription {
   
-  @scala.inline
-  def apply(): ListenerDescription = {
+  inline def apply(): ListenerDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListenerDescription]
   }
   
-  @scala.inline
-  implicit class ListenerDescriptionMutableBuilder[Self <: ListenerDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerDescription](x: Self) {
     
-    @scala.inline
-    def setListener(value: Listener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: Listener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerUndefined: Self = StObject.set(x, "Listener", js.undefined)
+    inline def setListenerUndefined: Self = StObject.set(x, "Listener", js.undefined)
     
-    @scala.inline
-    def setPolicyNames(value: PolicyNames): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
+    inline def setPolicyNames(value: PolicyNames): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
+    inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
     
-    @scala.inline
-    def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
   }
 }

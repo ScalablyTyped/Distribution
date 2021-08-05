@@ -33,8 +33,7 @@ trait AggregationOperators extends StObject {
 }
 object AggregationOperators {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abs: Double => Double,
     add: /* repeated */ js.Any => js.Any,
     addToSet: String => js.Any,
@@ -51,40 +50,28 @@ object AggregationOperators {
     __obj.asInstanceOf[AggregationOperators]
   }
   
-  @scala.inline
-  implicit class AggregationOperatorsMutableBuilder[Self <: AggregationOperators] (val x: Self) extends AnyVal {
+  extension [Self <: AggregationOperators](x: Self) {
     
-    @scala.inline
-    def setAbs(value: Double => Double): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
+    inline def setAbs(value: Double => Double): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddToSet(value: String => js.Any): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
+    inline def setAddToSet(value: String => js.Any): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAllElementsTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "allElementsTrue", js.Any.fromFunction1(value))
+    inline def setAllElementsTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "allElementsTrue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnd(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    inline def setAnd(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnyElementTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "anyElementTrue", js.Any.fromFunction1(value))
+    inline def setAnyElementTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "anyElementTrue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArrayElemAt(value: js.Tuple2[String, Double] => js.Any): Self = StObject.set(x, "arrayElemAt", js.Any.fromFunction1(value))
+    inline def setArrayElemAt(value: js.Tuple2[String, Double] => js.Any): Self = StObject.set(x, "arrayElemAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArrayToObject(value: String => js.Object): Self = StObject.set(x, "arrayToObject", js.Any.fromFunction1(value))
+    inline def setArrayToObject(value: String => js.Object): Self = StObject.set(x, "arrayToObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAvg(value: String => Double): Self = StObject.set(x, "avg", js.Any.fromFunction1(value))
+    inline def setAvg(value: String => Double): Self = StObject.set(x, "avg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLt(value: (String, Double) => Boolean): Self = StObject.set(x, "lt", js.Any.fromFunction2(value))
+    inline def setLt(value: (String, Double) => Boolean): Self = StObject.set(x, "lt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLte(value: (String, Double) => Boolean): Self = StObject.set(x, "lte", js.Any.fromFunction2(value))
+    inline def setLte(value: (String, Double) => Boolean): Self = StObject.set(x, "lte", js.Any.fromFunction2(value))
   }
 }

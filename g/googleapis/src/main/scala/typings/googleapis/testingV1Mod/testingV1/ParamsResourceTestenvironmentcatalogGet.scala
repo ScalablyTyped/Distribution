@@ -30,31 +30,23 @@ trait ParamsResourceTestenvironmentcatalogGet
 }
 object ParamsResourceTestenvironmentcatalogGet {
   
-  @scala.inline
-  def apply(): ParamsResourceTestenvironmentcatalogGet = {
+  inline def apply(): ParamsResourceTestenvironmentcatalogGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTestenvironmentcatalogGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTestenvironmentcatalogGetMutableBuilder[Self <: ParamsResourceTestenvironmentcatalogGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTestenvironmentcatalogGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEnvironmentType(value: String): Self = StObject.set(x, "environmentType", value.asInstanceOf[js.Any])
+    inline def setEnvironmentType(value: String): Self = StObject.set(x, "environmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentTypeUndefined: Self = StObject.set(x, "environmentType", js.undefined)
+    inline def setEnvironmentTypeUndefined: Self = StObject.set(x, "environmentType", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

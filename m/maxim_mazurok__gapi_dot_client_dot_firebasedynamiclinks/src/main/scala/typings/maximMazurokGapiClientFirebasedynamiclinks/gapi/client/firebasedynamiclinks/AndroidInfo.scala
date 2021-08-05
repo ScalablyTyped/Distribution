@@ -20,37 +20,27 @@ trait AndroidInfo extends StObject {
 }
 object AndroidInfo {
   
-  @scala.inline
-  def apply(): AndroidInfo = {
+  inline def apply(): AndroidInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidInfo]
   }
   
-  @scala.inline
-  implicit class AndroidInfoMutableBuilder[Self <: AndroidInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidInfo](x: Self) {
     
-    @scala.inline
-    def setAndroidFallbackLink(value: String): Self = StObject.set(x, "androidFallbackLink", value.asInstanceOf[js.Any])
+    inline def setAndroidFallbackLink(value: String): Self = StObject.set(x, "androidFallbackLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidFallbackLinkUndefined: Self = StObject.set(x, "androidFallbackLink", js.undefined)
+    inline def setAndroidFallbackLinkUndefined: Self = StObject.set(x, "androidFallbackLink", js.undefined)
     
-    @scala.inline
-    def setAndroidLink(value: String): Self = StObject.set(x, "androidLink", value.asInstanceOf[js.Any])
+    inline def setAndroidLink(value: String): Self = StObject.set(x, "androidLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidLinkUndefined: Self = StObject.set(x, "androidLink", js.undefined)
+    inline def setAndroidLinkUndefined: Self = StObject.set(x, "androidLink", js.undefined)
     
-    @scala.inline
-    def setAndroidMinPackageVersionCode(value: String): Self = StObject.set(x, "androidMinPackageVersionCode", value.asInstanceOf[js.Any])
+    inline def setAndroidMinPackageVersionCode(value: String): Self = StObject.set(x, "androidMinPackageVersionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidMinPackageVersionCodeUndefined: Self = StObject.set(x, "androidMinPackageVersionCode", js.undefined)
+    inline def setAndroidMinPackageVersionCodeUndefined: Self = StObject.set(x, "androidMinPackageVersionCode", js.undefined)
     
-    @scala.inline
-    def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
+    inline def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidPackageNameUndefined: Self = StObject.set(x, "androidPackageName", js.undefined)
+    inline def setAndroidPackageNameUndefined: Self = StObject.set(x, "androidPackageName", js.undefined)
   }
 }

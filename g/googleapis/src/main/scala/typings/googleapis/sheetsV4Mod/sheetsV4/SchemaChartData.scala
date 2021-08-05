@@ -16,19 +16,15 @@ trait SchemaChartData extends StObject {
 }
 object SchemaChartData {
   
-  @scala.inline
-  def apply(): SchemaChartData = {
+  inline def apply(): SchemaChartData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChartData]
   }
   
-  @scala.inline
-  implicit class SchemaChartDataMutableBuilder[Self <: SchemaChartData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChartData](x: Self) {
     
-    @scala.inline
-    def setSourceRange(value: SchemaChartSourceRange): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
+    inline def setSourceRange(value: SchemaChartSourceRange): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
+    inline def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
   }
 }

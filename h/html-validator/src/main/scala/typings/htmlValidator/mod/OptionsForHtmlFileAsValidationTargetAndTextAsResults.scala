@@ -17,16 +17,13 @@ trait OptionsForHtmlFileAsValidationTargetAndTextAsResults
 }
 object OptionsForHtmlFileAsValidationTargetAndTextAsResults {
   
-  @scala.inline
-  def apply(data: String, format: html | xhtml | xml | gnu | text): OptionsForHtmlFileAsValidationTargetAndTextAsResults = {
+  inline def apply(data: String, format: html | xhtml | xml | gnu | text): OptionsForHtmlFileAsValidationTargetAndTextAsResults = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsForHtmlFileAsValidationTargetAndTextAsResults]
   }
   
-  @scala.inline
-  implicit class OptionsForHtmlFileAsValidationTargetAndTextAsResultsMutableBuilder[Self <: OptionsForHtmlFileAsValidationTargetAndTextAsResults] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsForHtmlFileAsValidationTargetAndTextAsResults](x: Self) {
     
-    @scala.inline
-    def setFormat(value: html | xhtml | xml | gnu | text): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: html | xhtml | xml | gnu | text): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

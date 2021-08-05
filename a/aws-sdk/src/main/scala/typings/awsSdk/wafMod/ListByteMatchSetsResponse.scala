@@ -18,28 +18,21 @@ trait ListByteMatchSetsResponse extends StObject {
 }
 object ListByteMatchSetsResponse {
   
-  @scala.inline
-  def apply(): ListByteMatchSetsResponse = {
+  inline def apply(): ListByteMatchSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListByteMatchSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListByteMatchSetsResponseMutableBuilder[Self <: ListByteMatchSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListByteMatchSetsResponse](x: Self) {
     
-    @scala.inline
-    def setByteMatchSets(value: ByteMatchSetSummaries): Self = StObject.set(x, "ByteMatchSets", value.asInstanceOf[js.Any])
+    inline def setByteMatchSets(value: ByteMatchSetSummaries): Self = StObject.set(x, "ByteMatchSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchSetsUndefined: Self = StObject.set(x, "ByteMatchSets", js.undefined)
+    inline def setByteMatchSetsUndefined: Self = StObject.set(x, "ByteMatchSets", js.undefined)
     
-    @scala.inline
-    def setByteMatchSetsVarargs(value: ByteMatchSetSummary*): Self = StObject.set(x, "ByteMatchSets", js.Array(value :_*))
+    inline def setByteMatchSetsVarargs(value: ByteMatchSetSummary*): Self = StObject.set(x, "ByteMatchSets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

@@ -33,43 +33,31 @@ trait StartContinuousExportResponse extends StObject {
 }
 object StartContinuousExportResponse {
   
-  @scala.inline
-  def apply(): StartContinuousExportResponse = {
+  inline def apply(): StartContinuousExportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartContinuousExportResponse]
   }
   
-  @scala.inline
-  implicit class StartContinuousExportResponseMutableBuilder[Self <: StartContinuousExportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartContinuousExportResponse](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
+    inline def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportIdUndefined: Self = StObject.set(x, "exportId", js.undefined)
+    inline def setExportIdUndefined: Self = StObject.set(x, "exportId", js.undefined)
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
-    @scala.inline
-    def setSchemaStorageConfig(value: SchemaStorageConfig): Self = StObject.set(x, "schemaStorageConfig", value.asInstanceOf[js.Any])
+    inline def setSchemaStorageConfig(value: SchemaStorageConfig): Self = StObject.set(x, "schemaStorageConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaStorageConfigUndefined: Self = StObject.set(x, "schemaStorageConfig", js.undefined)
+    inline def setSchemaStorageConfigUndefined: Self = StObject.set(x, "schemaStorageConfig", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

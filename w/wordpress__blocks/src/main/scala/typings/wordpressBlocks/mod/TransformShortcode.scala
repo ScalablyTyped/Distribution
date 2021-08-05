@@ -20,32 +20,24 @@ trait TransformShortcode[T /* <: Record[String, js.Any] */]
 }
 object TransformShortcode {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](tag: String): TransformShortcode[T] = {
+  inline def apply[T /* <: Record[String, js.Any] */](tag: String): TransformShortcode[T] = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("shortcode")
     __obj.asInstanceOf[TransformShortcode[T]]
   }
   
-  @scala.inline
-  implicit class TransformShortcodeMutableBuilder[Self <: TransformShortcode[?], T /* <: Record[String, js.Any] */] (val x: Self & TransformShortcode[T]) extends AnyVal {
+  extension [Self <: TransformShortcode[?], T /* <: Record[String, js.Any] */](x: Self & TransformShortcode[T]) {
     
-    @scala.inline
-    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: shortcode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: shortcode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

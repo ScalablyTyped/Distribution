@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ObjectDetectionMetricsMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics](x: Self) {
     
-    @scala.inline
-    def setPrCurve(value: GoogleCloudDatalabelingV1beta1PrCurve): Self = StObject.set(x, "prCurve", value.asInstanceOf[js.Any])
+    inline def setPrCurve(value: GoogleCloudDatalabelingV1beta1PrCurve): Self = StObject.set(x, "prCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrCurveUndefined: Self = StObject.set(x, "prCurve", js.undefined)
+    inline def setPrCurveUndefined: Self = StObject.set(x, "prCurve", js.undefined)
   }
 }

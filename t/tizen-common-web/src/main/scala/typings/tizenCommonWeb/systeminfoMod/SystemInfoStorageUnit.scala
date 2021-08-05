@@ -49,8 +49,7 @@ trait SystemInfoStorageUnit
 }
 object SystemInfoStorageUnit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availableCapacity: Double,
     capacity: Double,
     isRemovable: Boolean,
@@ -62,22 +61,16 @@ object SystemInfoStorageUnit {
     __obj.asInstanceOf[SystemInfoStorageUnit]
   }
   
-  @scala.inline
-  implicit class SystemInfoStorageUnitMutableBuilder[Self <: SystemInfoStorageUnit] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoStorageUnit](x: Self) {
     
-    @scala.inline
-    def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
+    inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRemovable(value: Boolean): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
+    inline def setIsRemovable(value: Boolean): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRemoveable(value: Boolean): Self = StObject.set(x, "isRemoveable", value.asInstanceOf[js.Any])
+    inline def setIsRemoveable(value: Boolean): Self = StObject.set(x, "isRemoveable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

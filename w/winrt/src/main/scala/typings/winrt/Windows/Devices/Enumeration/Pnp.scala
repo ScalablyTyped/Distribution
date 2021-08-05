@@ -54,8 +54,7 @@ object Pnp {
   }
   object IPnpObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       properties: IMapView[String, js.Any],
       `type`: PnpObjectType,
@@ -66,20 +65,15 @@ object Pnp {
       __obj.asInstanceOf[IPnpObject]
     }
     
-    @scala.inline
-    implicit class IPnpObjectMutableBuilder[Self <: IPnpObject] (val x: Self) extends AnyVal {
+    extension [Self <: IPnpObject](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: PnpObjectUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: PnpObjectUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -105,24 +99,19 @@ object Pnp {
   }
   object IPnpObjectUpdate {
     
-    @scala.inline
-    def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): IPnpObjectUpdate = {
+    inline def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): IPnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPnpObjectUpdate]
     }
     
-    @scala.inline
-    implicit class IPnpObjectUpdateMutableBuilder[Self <: IPnpObjectUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: IPnpObjectUpdate](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,8 +135,7 @@ object Pnp {
   }
   object IPnpObjectWatcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onadded: js.Any,
       onenumerationcompleted: js.Any,
       onremoved: js.Any,
@@ -161,32 +149,23 @@ object Pnp {
       __obj.asInstanceOf[IPnpObjectWatcher]
     }
     
-    @scala.inline
-    implicit class IPnpObjectWatcherMutableBuilder[Self <: IPnpObjectWatcher] (val x: Self) extends AnyVal {
+    extension [Self <: IPnpObjectWatcher](x: Self) {
       
-      @scala.inline
-      def setOnadded(value: js.Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
+      inline def setOnadded(value: js.Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
+      inline def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnremoved(value: js.Any): Self = StObject.set(x, "onremoved", value.asInstanceOf[js.Any])
+      inline def setOnremoved(value: js.Any): Self = StObject.set(x, "onremoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
+      inline def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnupdated(value: js.Any): Self = StObject.set(x, "onupdated", value.asInstanceOf[js.Any])
+      inline def setOnupdated(value: js.Any): Self = StObject.set(x, "onupdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatus(value: DeviceWatcherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: DeviceWatcherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -195,8 +174,7 @@ object Pnp {
        with IPnpObject
   object PnpObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       properties: IMapView[String, js.Any],
       `type`: PnpObjectType,
@@ -218,8 +196,7 @@ object Pnp {
        with IPnpObjectUpdate
   object PnpObjectUpdate {
     
-    @scala.inline
-    def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): PnpObjectUpdate = {
+    inline def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): PnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PnpObjectUpdate]
@@ -231,8 +208,7 @@ object Pnp {
        with IPnpObjectWatcher
   object PnpObjectWatcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onadded: js.Any,
       onenumerationcompleted: js.Any,
       onremoved: js.Any,

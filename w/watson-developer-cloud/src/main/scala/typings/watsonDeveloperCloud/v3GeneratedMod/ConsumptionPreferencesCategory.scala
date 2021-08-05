@@ -18,8 +18,7 @@ trait ConsumptionPreferencesCategory extends StObject {
 }
 object ConsumptionPreferencesCategory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     consumption_preference_category_id: String,
     consumption_preferences: js.Array[ConsumptionPreferences],
     name: String
@@ -28,19 +27,14 @@ object ConsumptionPreferencesCategory {
     __obj.asInstanceOf[ConsumptionPreferencesCategory]
   }
   
-  @scala.inline
-  implicit class ConsumptionPreferencesCategoryMutableBuilder[Self <: ConsumptionPreferencesCategory] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumptionPreferencesCategory](x: Self) {
     
-    @scala.inline
-    def setConsumption_preference_category_id(value: String): Self = StObject.set(x, "consumption_preference_category_id", value.asInstanceOf[js.Any])
+    inline def setConsumption_preference_category_id(value: String): Self = StObject.set(x, "consumption_preference_category_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumption_preferences(value: js.Array[ConsumptionPreferences]): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
+    inline def setConsumption_preferences(value: js.Array[ConsumptionPreferences]): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumption_preferencesVarargs(value: ConsumptionPreferences*): Self = StObject.set(x, "consumption_preferences", js.Array(value :_*))
+    inline def setConsumption_preferencesVarargs(value: ConsumptionPreferences*): Self = StObject.set(x, "consumption_preferences", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

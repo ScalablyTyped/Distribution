@@ -20,37 +20,27 @@ trait RefreshDataSourceRequest extends StObject {
 }
 object RefreshDataSourceRequest {
   
-  @scala.inline
-  def apply(): RefreshDataSourceRequest = {
+  inline def apply(): RefreshDataSourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class RefreshDataSourceRequestMutableBuilder[Self <: RefreshDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setIsAll(value: Boolean): Self = StObject.set(x, "isAll", value.asInstanceOf[js.Any])
+    inline def setIsAll(value: Boolean): Self = StObject.set(x, "isAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAllUndefined: Self = StObject.set(x, "isAll", js.undefined)
+    inline def setIsAllUndefined: Self = StObject.set(x, "isAll", js.undefined)
     
-    @scala.inline
-    def setReferences(value: DataSourceObjectReferences): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: DataSourceObjectReferences): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
   }
 }

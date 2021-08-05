@@ -23,10 +23,8 @@ object KeyValueDiffers {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create[S](factories: js.Array[KeyValueDifferFactory]): KeyValueDiffers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any]).asInstanceOf[KeyValueDiffers]
-  @scala.inline
-  def create[S](factories: js.Array[KeyValueDifferFactory], parent: KeyValueDiffers): KeyValueDiffers = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[KeyValueDiffers]
+  inline def create[S](factories: js.Array[KeyValueDifferFactory]): KeyValueDiffers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any]).asInstanceOf[KeyValueDiffers]
+  inline def create[S](factories: js.Array[KeyValueDifferFactory], parent: KeyValueDiffers): KeyValueDiffers = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[KeyValueDiffers]
   
   /**
     * Takes an array of {@link KeyValueDifferFactory} and returns a provider used to extend the
@@ -48,6 +46,5 @@ object KeyValueDiffers {
     * })
     * ```
     */
-  @scala.inline
-  def extend[S](factories: js.Array[KeyValueDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
+  inline def extend[S](factories: js.Array[KeyValueDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
 }

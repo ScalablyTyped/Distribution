@@ -36,40 +36,29 @@ trait SearchProperties extends StObject {
 }
 object SearchProperties {
   
-  @scala.inline
-  def apply(): SearchProperties = {
+  inline def apply(): SearchProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchProperties]
   }
   
-  @scala.inline
-  implicit class SearchPropertiesMutableBuilder[Self <: SearchProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SearchProperties](x: Self) {
     
-    @scala.inline
-    def setAddressSearchEnabled(value: Boolean): Self = StObject.set(x, "addressSearchEnabled", value.asInstanceOf[js.Any])
+    inline def setAddressSearchEnabled(value: Boolean): Self = StObject.set(x, "addressSearchEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressSearchEnabledUndefined: Self = StObject.set(x, "addressSearchEnabled", js.undefined)
+    inline def setAddressSearchEnabledUndefined: Self = StObject.set(x, "addressSearchEnabled", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
+    inline def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
+    inline def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
     
-    @scala.inline
-    def setLayers(value: CollectionProperties[SearchLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: CollectionProperties[SearchLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: SearchLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: SearchLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

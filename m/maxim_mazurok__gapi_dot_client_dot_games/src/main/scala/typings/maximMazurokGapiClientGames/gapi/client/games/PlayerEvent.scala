@@ -23,43 +23,31 @@ trait PlayerEvent extends StObject {
 }
 object PlayerEvent {
   
-  @scala.inline
-  def apply(): PlayerEvent = {
+  inline def apply(): PlayerEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayerEvent]
   }
   
-  @scala.inline
-  implicit class PlayerEventMutableBuilder[Self <: PlayerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerEvent](x: Self) {
     
-    @scala.inline
-    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
+    inline def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
-    @scala.inline
-    def setFormattedNumEvents(value: String): Self = StObject.set(x, "formattedNumEvents", value.asInstanceOf[js.Any])
+    inline def setFormattedNumEvents(value: String): Self = StObject.set(x, "formattedNumEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedNumEventsUndefined: Self = StObject.set(x, "formattedNumEvents", js.undefined)
+    inline def setFormattedNumEventsUndefined: Self = StObject.set(x, "formattedNumEvents", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNumEvents(value: String): Self = StObject.set(x, "numEvents", value.asInstanceOf[js.Any])
+    inline def setNumEvents(value: String): Self = StObject.set(x, "numEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumEventsUndefined: Self = StObject.set(x, "numEvents", js.undefined)
+    inline def setNumEventsUndefined: Self = StObject.set(x, "numEvents", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
   }
 }

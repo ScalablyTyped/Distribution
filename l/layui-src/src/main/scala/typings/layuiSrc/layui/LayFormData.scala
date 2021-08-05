@@ -25,28 +25,21 @@ trait LayFormData extends StObject {
 }
 object LayFormData {
   
-  @scala.inline
-  def apply(elem: js.Any, field: js.Any, form: HTMLFormElement, othis: JQuery[HTMLElement], value: String): LayFormData = {
+  inline def apply(elem: js.Any, field: js.Any, form: HTMLFormElement, othis: JQuery[HTMLElement], value: String): LayFormData = {
     val __obj = js.Dynamic.literal(elem = elem.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], othis = othis.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayFormData]
   }
   
-  @scala.inline
-  implicit class LayFormDataMutableBuilder[Self <: LayFormData] (val x: Self) extends AnyVal {
+  extension [Self <: LayFormData](x: Self) {
     
-    @scala.inline
-    def setElem(value: js.Any): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
+    inline def setElem(value: js.Any): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: js.Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: js.Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForm(value: HTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: HTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOthis(value: JQuery[HTMLElement]): Self = StObject.set(x, "othis", value.asInstanceOf[js.Any])
+    inline def setOthis(value: JQuery[HTMLElement]): Self = StObject.set(x, "othis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

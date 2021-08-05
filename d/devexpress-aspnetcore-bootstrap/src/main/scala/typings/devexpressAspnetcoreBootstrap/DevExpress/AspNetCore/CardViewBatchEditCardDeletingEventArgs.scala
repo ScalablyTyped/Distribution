@@ -14,19 +14,15 @@ trait CardViewBatchEditCardDeletingEventArgs
 }
 object CardViewBatchEditCardDeletingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, cardValues: js.Any, sender: Control, visibleIndex: Double): CardViewBatchEditCardDeletingEventArgs = {
+  inline def apply(cancel: Boolean, cardValues: js.Any, sender: Control, visibleIndex: Double): CardViewBatchEditCardDeletingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cardValues = cardValues.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardViewBatchEditCardDeletingEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewBatchEditCardDeletingEventArgsMutableBuilder[Self <: CardViewBatchEditCardDeletingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewBatchEditCardDeletingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
+    inline def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

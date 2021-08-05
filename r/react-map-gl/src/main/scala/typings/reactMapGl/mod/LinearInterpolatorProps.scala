@@ -12,31 +12,23 @@ trait LinearInterpolatorProps extends StObject {
 }
 object LinearInterpolatorProps {
   
-  @scala.inline
-  def apply(): LinearInterpolatorProps = {
+  inline def apply(): LinearInterpolatorProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearInterpolatorProps]
   }
   
-  @scala.inline
-  implicit class LinearInterpolatorPropsMutableBuilder[Self <: LinearInterpolatorProps] (val x: Self) extends AnyVal {
+  extension [Self <: LinearInterpolatorProps](x: Self) {
     
-    @scala.inline
-    def setAround(value: js.Array[Double]): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
+    inline def setAround(value: js.Array[Double]): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
+    inline def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
     
-    @scala.inline
-    def setAroundVarargs(value: Double*): Self = StObject.set(x, "around", js.Array(value :_*))
+    inline def setAroundVarargs(value: Double*): Self = StObject.set(x, "around", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitionProps(value: js.Array[String]): Self = StObject.set(x, "transitionProps", value.asInstanceOf[js.Any])
+    inline def setTransitionProps(value: js.Array[String]): Self = StObject.set(x, "transitionProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionPropsUndefined: Self = StObject.set(x, "transitionProps", js.undefined)
+    inline def setTransitionPropsUndefined: Self = StObject.set(x, "transitionProps", js.undefined)
     
-    @scala.inline
-    def setTransitionPropsVarargs(value: String*): Self = StObject.set(x, "transitionProps", js.Array(value :_*))
+    inline def setTransitionPropsVarargs(value: String*): Self = StObject.set(x, "transitionProps", js.Array(value :_*))
   }
 }

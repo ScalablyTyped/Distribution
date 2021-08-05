@@ -12,19 +12,15 @@ trait Starredat extends StObject {
 }
 object Starredat {
   
-  @scala.inline
-  def apply(starred_at: String, user: Avatarurl): Starredat = {
+  inline def apply(starred_at: String, user: Avatarurl): Starredat = {
     val __obj = js.Dynamic.literal(starred_at = starred_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Starredat]
   }
   
-  @scala.inline
-  implicit class StarredatMutableBuilder[Self <: Starredat] (val x: Self) extends AnyVal {
+  extension [Self <: Starredat](x: Self) {
     
-    @scala.inline
-    def setStarred_at(value: String): Self = StObject.set(x, "starred_at", value.asInstanceOf[js.Any])
+    inline def setStarred_at(value: String): Self = StObject.set(x, "starred_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

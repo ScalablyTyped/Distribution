@@ -51,10 +51,8 @@ object BatchDeleteEntitiesRequest {
     * @returns BatchDeleteEntitiesRequest instance
     */
   /* static member */
-  @scala.inline
-  def create(): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchDeleteEntitiesRequest]
-  @scala.inline
-  def create(properties: IBatchDeleteEntitiesRequest): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def create(): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def create(properties: IBatchDeleteEntitiesRequest): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Decodes a BatchDeleteEntitiesRequest message from the specified reader or buffer.
@@ -65,14 +63,10 @@ object BatchDeleteEntitiesRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): BatchDeleteEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchDeleteEntitiesRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): BatchDeleteEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def decode(reader: Reader): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def decode(reader: Reader, length: Double): BatchDeleteEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def decode(reader: Uint8Array): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def decode(reader: Uint8Array, length: Double): BatchDeleteEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Decodes a BatchDeleteEntitiesRequest message from the specified reader or buffer, length delimited.
@@ -82,10 +76,8 @@ object BatchDeleteEntitiesRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def decodeDelimited(reader: Reader): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def decodeDelimited(reader: Uint8Array): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Encodes the specified BatchDeleteEntitiesRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.verify|verify} messages.
@@ -94,10 +86,8 @@ object BatchDeleteEntitiesRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IBatchDeleteEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IBatchDeleteEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified BatchDeleteEntitiesRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.BatchDeleteEntitiesRequest.verify|verify} messages.
@@ -106,10 +96,8 @@ object BatchDeleteEntitiesRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IBatchDeleteEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IBatchDeleteEntitiesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IBatchDeleteEntitiesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a BatchDeleteEntitiesRequest message from a plain object. Also converts values to their respective internal types.
@@ -117,8 +105,7 @@ object BatchDeleteEntitiesRequest {
     * @returns BatchDeleteEntitiesRequest
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): BatchDeleteEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchDeleteEntitiesRequest]
   
   /**
     * Creates a plain object from a BatchDeleteEntitiesRequest message. Also converts values to other types if specified.
@@ -127,10 +114,8 @@ object BatchDeleteEntitiesRequest {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: BatchDeleteEntitiesRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: BatchDeleteEntitiesRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: BatchDeleteEntitiesRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: BatchDeleteEntitiesRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a BatchDeleteEntitiesRequest message.
@@ -138,6 +123,5 @@ object BatchDeleteEntitiesRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -26,8 +26,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ScriptingDotDictionary: Dictionary[js.Any, js.Any],
     ScriptingDotEncoder: Encoder,
     ScriptingDotFileSystemObject: FileSystemObject
@@ -39,16 +38,12 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setScriptingDotDictionary(value: Dictionary[js.Any, js.Any]): Self = StObject.set(x, "Scripting.Dictionary", value.asInstanceOf[js.Any])
+    inline def setScriptingDotDictionary(value: Dictionary[js.Any, js.Any]): Self = StObject.set(x, "Scripting.Dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptingDotEncoder(value: Encoder): Self = StObject.set(x, "Scripting.Encoder", value.asInstanceOf[js.Any])
+    inline def setScriptingDotEncoder(value: Encoder): Self = StObject.set(x, "Scripting.Encoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptingDotFileSystemObject(value: FileSystemObject): Self = StObject.set(x, "Scripting.FileSystemObject", value.asInstanceOf[js.Any])
+    inline def setScriptingDotFileSystemObject(value: FileSystemObject): Self = StObject.set(x, "Scripting.FileSystemObject", value.asInstanceOf[js.Any])
   }
 }

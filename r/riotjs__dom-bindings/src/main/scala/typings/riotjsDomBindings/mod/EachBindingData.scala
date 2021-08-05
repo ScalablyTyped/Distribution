@@ -21,43 +21,31 @@ trait EachBindingData
 }
 object EachBindingData {
   
-  @scala.inline
-  def apply(itemName: String, template: TemplateChunk[js.Any, js.Any]): EachBindingData = {
+  inline def apply(itemName: String, template: TemplateChunk[js.Any, js.Any]): EachBindingData = {
     val __obj = js.Dynamic.literal(itemName = itemName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[EachBindingData]
   }
   
-  @scala.inline
-  implicit class EachBindingDataMutableBuilder[Self <: EachBindingData] (val x: Self) extends AnyVal {
+  extension [Self <: EachBindingData](x: Self) {
     
-    @scala.inline
-    def setCondition(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    inline def setCondition(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConditionNull: Self = StObject.set(x, "condition", null)
+    inline def setConditionNull: Self = StObject.set(x, "condition", null)
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setGetKey(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetKeyNull: Self = StObject.set(x, "getKey", null)
+    inline def setGetKeyNull: Self = StObject.set(x, "getKey", null)
     
-    @scala.inline
-    def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+    inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
-    @scala.inline
-    def setIndexName(value: Double): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: Double): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

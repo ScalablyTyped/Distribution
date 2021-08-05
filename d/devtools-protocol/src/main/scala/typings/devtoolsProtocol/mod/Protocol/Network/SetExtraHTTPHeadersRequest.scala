@@ -13,16 +13,13 @@ trait SetExtraHTTPHeadersRequest extends StObject {
 }
 object SetExtraHTTPHeadersRequest {
   
-  @scala.inline
-  def apply(headers: Headers): SetExtraHTTPHeadersRequest = {
+  inline def apply(headers: Headers): SetExtraHTTPHeadersRequest = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetExtraHTTPHeadersRequest]
   }
   
-  @scala.inline
-  implicit class SetExtraHTTPHeadersRequestMutableBuilder[Self <: SetExtraHTTPHeadersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetExtraHTTPHeadersRequest](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

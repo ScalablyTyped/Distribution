@@ -12,19 +12,15 @@ trait TextNode extends StObject {
 }
 object TextNode {
   
-  @scala.inline
-  def apply(content: String, textStyles: TextStyle): TextNode = {
+  inline def apply(content: String, textStyles: TextStyle): TextNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], textStyles = textStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextNode]
   }
   
-  @scala.inline
-  implicit class TextNodeMutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
+  extension [Self <: TextNode](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyles(value: TextStyle): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
+    inline def setTextStyles(value: TextStyle): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
   }
 }

@@ -52,8 +52,7 @@ object Harness {
   }
   object IBrowser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alsoPreload: js.Array[js.Any],
       autoCheckGlobals: Boolean,
       autoRun: Boolean,
@@ -99,59 +98,41 @@ object Harness {
       __obj.asInstanceOf[IBrowser]
     }
     
-    @scala.inline
-    implicit class IBrowserMutableBuilder[Self <: IBrowser] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowser](x: Self) {
       
-      @scala.inline
-      def setAutoRun(value: Boolean): Self = StObject.set(x, "autoRun", value.asInstanceOf[js.Any])
+      inline def setAutoRun(value: Boolean): Self = StObject.set(x, "autoRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScrollElementsIntoView(value: Boolean): Self = StObject.set(x, "autoScrollElementsIntoView", value.asInstanceOf[js.Any])
+      inline def setAutoScrollElementsIntoView(value: Boolean): Self = StObject.set(x, "autoScrollElementsIntoView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakOnFail(value: Boolean): Self = StObject.set(x, "breakOnFail", value.asInstanceOf[js.Any])
+      inline def setBreakOnFail(value: Boolean): Self = StObject.set(x, "breakOnFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageUnit(value: String): Self = StObject.set(x, "coverageUnit", value.asInstanceOf[js.Any])
+      inline def setCoverageUnit(value: String): Self = StObject.set(x, "coverageUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
+      inline def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCodeCoverage(value: Boolean): Self = StObject.set(x, "enableCodeCoverage", value.asInstanceOf[js.Any])
+      inline def setEnableCodeCoverage(value: Boolean): Self = StObject.set(x, "enableCodeCoverage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeCoverageUnits(value: RegExp): Self = StObject.set(x, "excludeCoverageUnits", value.asInstanceOf[js.Any])
+      inline def setExcludeCoverageUnits(value: RegExp): Self = StObject.set(x, "excludeCoverageUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostPageUrl(value: String): Self = StObject.set(x, "hostPageUrl", value.asInstanceOf[js.Any])
+      inline def setHostPageUrl(value: String): Self = StObject.set(x, "hostPageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeCoverageUnits(value: RegExp): Self = StObject.set(x, "includeCoverageUnits", value.asInstanceOf[js.Any])
+      inline def setIncludeCoverageUnits(value: RegExp): Self = StObject.set(x, "includeCoverageUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintainViewportSize(value: Boolean): Self = StObject.set(x, "maintainViewportSize", value.asInstanceOf[js.Any])
+      inline def setMaintainViewportSize(value: Boolean): Self = StObject.set(x, "maintainViewportSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparateContext(value: Boolean): Self = StObject.set(x, "separateContext", value.asInstanceOf[js.Any])
+      inline def setSeparateContext(value: Boolean): Self = StObject.set(x, "separateContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimulateEventsWith(value: String): Self = StObject.set(x, "simulateEventsWith", value.asInstanceOf[js.Any])
+      inline def setSimulateEventsWith(value: String): Self = StObject.set(x, "simulateEventsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedRun(value: Boolean): Self = StObject.set(x, "speedRun", value.asInstanceOf[js.Any])
+      inline def setSpeedRun(value: Boolean): Self = StObject.set(x, "speedRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseStrictMode(value: Boolean): Self = StObject.set(x, "useStrictMode", value.asInstanceOf[js.Any])
+      inline def setUseStrictMode(value: Boolean): Self = StObject.set(x, "useStrictMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewDOM(value: Boolean): Self = StObject.set(x, "viewDOM", value.asInstanceOf[js.Any])
+      inline def setViewDOM(value: Boolean): Self = StObject.set(x, "viewDOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportHeight(value: Double): Self = StObject.set(x, "viewportHeight", value.asInstanceOf[js.Any])
+      inline def setViewportHeight(value: Double): Self = StObject.set(x, "viewportHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportWidth(value: Double): Self = StObject.set(x, "viewportWidth", value.asInstanceOf[js.Any])
+      inline def setViewportWidth(value: Double): Self = StObject.set(x, "viewportWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,8 +156,7 @@ object Harness {
   }
   object IBrowserExtJS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowExtVersionChange: Boolean,
       alsoPreload: js.Array[js.Any],
       autoCheckGlobals: Boolean,
@@ -227,23 +207,17 @@ object Harness {
       __obj.asInstanceOf[IBrowserExtJS]
     }
     
-    @scala.inline
-    implicit class IBrowserExtJSMutableBuilder[Self <: IBrowserExtJS] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowserExtJS](x: Self) {
       
-      @scala.inline
-      def setAllowExtVersionChange(value: Boolean): Self = StObject.set(x, "allowExtVersionChange", value.asInstanceOf[js.Any])
+      inline def setAllowExtVersionChange(value: Boolean): Self = StObject.set(x, "allowExtVersionChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallLoaderInstrumentationHook(value: Boolean): Self = StObject.set(x, "installLoaderInstrumentationHook", value.asInstanceOf[js.Any])
+      inline def setInstallLoaderInstrumentationHook(value: Boolean): Self = StObject.set(x, "installLoaderInstrumentationHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderPath(value: js.Any): Self = StObject.set(x, "loaderPath", value.asInstanceOf[js.Any])
+      inline def setLoaderPath(value: js.Any): Self = StObject.set(x, "loaderPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForAppReady(value: js.Any): Self = StObject.set(x, "waitForAppReady", value.asInstanceOf[js.Any])
+      inline def setWaitForAppReady(value: js.Any): Self = StObject.set(x, "waitForAppReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForExtReady(value: js.Any): Self = StObject.set(x, "waitForExtReady", value.asInstanceOf[js.Any])
+      inline def setWaitForExtReady(value: js.Any): Self = StObject.set(x, "waitForExtReady", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,23 +234,18 @@ object Harness {
   }
   object IBrowserExtJSCore {
     
-    @scala.inline
-    def apply(coverageUnit: String, excludeCoverageUnits: RegExp, installLoaderInstrumentationHook: Boolean): IBrowserExtJSCore = {
+    inline def apply(coverageUnit: String, excludeCoverageUnits: RegExp, installLoaderInstrumentationHook: Boolean): IBrowserExtJSCore = {
       val __obj = js.Dynamic.literal(coverageUnit = coverageUnit.asInstanceOf[js.Any], excludeCoverageUnits = excludeCoverageUnits.asInstanceOf[js.Any], installLoaderInstrumentationHook = installLoaderInstrumentationHook.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBrowserExtJSCore]
     }
     
-    @scala.inline
-    implicit class IBrowserExtJSCoreMutableBuilder[Self <: IBrowserExtJSCore] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowserExtJSCore](x: Self) {
       
-      @scala.inline
-      def setCoverageUnit(value: String): Self = StObject.set(x, "coverageUnit", value.asInstanceOf[js.Any])
+      inline def setCoverageUnit(value: String): Self = StObject.set(x, "coverageUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeCoverageUnits(value: RegExp): Self = StObject.set(x, "excludeCoverageUnits", value.asInstanceOf[js.Any])
+      inline def setExcludeCoverageUnits(value: RegExp): Self = StObject.set(x, "excludeCoverageUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallLoaderInstrumentationHook(value: Boolean): Self = StObject.set(x, "installLoaderInstrumentationHook", value.asInstanceOf[js.Any])
+      inline def setInstallLoaderInstrumentationHook(value: Boolean): Self = StObject.set(x, "installLoaderInstrumentationHook", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,8 +265,7 @@ object Harness {
   }
   object IBrowserSenchaTouch {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alsoPreload: js.Array[js.Any],
       autoCheckGlobals: Boolean,
       autoRun: Boolean,
@@ -346,17 +314,13 @@ object Harness {
       __obj.asInstanceOf[IBrowserSenchaTouch]
     }
     
-    @scala.inline
-    implicit class IBrowserSenchaTouchMutableBuilder[Self <: IBrowserSenchaTouch] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowserSenchaTouch](x: Self) {
       
-      @scala.inline
-      def setInstallLoaderInstrumentationHook(value: Boolean): Self = StObject.set(x, "installLoaderInstrumentationHook", value.asInstanceOf[js.Any])
+      inline def setInstallLoaderInstrumentationHook(value: Boolean): Self = StObject.set(x, "installLoaderInstrumentationHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderPath(value: js.Any): Self = StObject.set(x, "loaderPath", value.asInstanceOf[js.Any])
+      inline def setLoaderPath(value: js.Any): Self = StObject.set(x, "loaderPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerformSetup(value: Boolean): Self = StObject.set(x, "performSetup", value.asInstanceOf[js.Any])
+      inline def setPerformSetup(value: Boolean): Self = StObject.set(x, "performSetup", value.asInstanceOf[js.Any])
     }
   }
   
@@ -370,8 +334,7 @@ object Harness {
   }
   object IBrowserSingleton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ExtJS: IBrowserExtJS,
       SenchaTouch: IBrowserSenchaTouch,
       alsoPreload: js.Array[js.Any],
@@ -419,14 +382,11 @@ object Harness {
       __obj.asInstanceOf[IBrowserSingleton]
     }
     
-    @scala.inline
-    implicit class IBrowserSingletonMutableBuilder[Self <: IBrowserSingleton] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowserSingleton](x: Self) {
       
-      @scala.inline
-      def setExtJS(value: IBrowserExtJS): Self = StObject.set(x, "ExtJS", value.asInstanceOf[js.Any])
+      inline def setExtJS(value: IBrowserExtJS): Self = StObject.set(x, "ExtJS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenchaTouch(value: IBrowserSenchaTouch): Self = StObject.set(x, "SenchaTouch", value.asInstanceOf[js.Any])
+      inline def setSenchaTouch(value: IBrowserSenchaTouch): Self = StObject.set(x, "SenchaTouch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -443,21 +403,17 @@ object Harness {
   }
   object IPreloadContentDescriptor {
     
-    @scala.inline
-    def apply(content: String, `type`: String): IPreloadContentDescriptor = {
+    inline def apply(content: String, `type`: String): IPreloadContentDescriptor = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPreloadContentDescriptor]
     }
     
-    @scala.inline
-    implicit class IPreloadContentDescriptorMutableBuilder[Self <: IPreloadContentDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: IPreloadContentDescriptor](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -467,17 +423,14 @@ object Harness {
   }
   object IPreloadTextDescriptor {
     
-    @scala.inline
-    def apply(text: String): IPreloadTextDescriptor = {
+    inline def apply(text: String): IPreloadTextDescriptor = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPreloadTextDescriptor]
     }
     
-    @scala.inline
-    implicit class IPreloadTextDescriptorMutableBuilder[Self <: IPreloadTextDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: IPreloadTextDescriptor](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -489,21 +442,17 @@ object Harness {
   }
   object IPreloadUrlDescriptor {
     
-    @scala.inline
-    def apply(`type`: String, url: String): IPreloadUrlDescriptor = {
+    inline def apply(`type`: String, url: String): IPreloadUrlDescriptor = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPreloadUrlDescriptor]
     }
     
-    @scala.inline
-    implicit class IPreloadUrlDescriptorMutableBuilder[Self <: IPreloadUrlDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: IPreloadUrlDescriptor](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -515,23 +464,18 @@ object Harness {
   }
   object ITestGroupDescriptor {
     
-    @scala.inline
-    def apply(group: String, items: js.Array[js.Any]): ITestGroupDescriptor = {
+    inline def apply(group: String, items: js.Array[js.Any]): ITestGroupDescriptor = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITestGroupDescriptor]
     }
     
-    @scala.inline
-    implicit class ITestGroupDescriptorMutableBuilder[Self <: ITestGroupDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ITestGroupDescriptor](x: Self) {
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
@@ -541,17 +485,14 @@ object Harness {
   }
   object ITestUrlDescriptor {
     
-    @scala.inline
-    def apply(url: String): ITestUrlDescriptor = {
+    inline def apply(url: String): ITestUrlDescriptor = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITestUrlDescriptor]
     }
     
-    @scala.inline
-    implicit class ITestUrlDescriptorMutableBuilder[Self <: ITestUrlDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ITestUrlDescriptor](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

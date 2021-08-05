@@ -31,8 +31,7 @@ trait NetworkAdapter extends StObject {
 }
 object NetworkAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getConnectedProfileAsync: () => IPromiseWithIAsyncOperation[ConnectionProfile],
     ianaInterfaceType: Double,
     inboundMaxBitsPerSecond: Double,
@@ -44,25 +43,18 @@ object NetworkAdapter {
     __obj.asInstanceOf[NetworkAdapter]
   }
   
-  @scala.inline
-  implicit class NetworkAdapterMutableBuilder[Self <: NetworkAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkAdapter](x: Self) {
     
-    @scala.inline
-    def setGetConnectedProfileAsync(value: () => IPromiseWithIAsyncOperation[ConnectionProfile]): Self = StObject.set(x, "getConnectedProfileAsync", js.Any.fromFunction0(value))
+    inline def setGetConnectedProfileAsync(value: () => IPromiseWithIAsyncOperation[ConnectionProfile]): Self = StObject.set(x, "getConnectedProfileAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIanaInterfaceType(value: Double): Self = StObject.set(x, "ianaInterfaceType", value.asInstanceOf[js.Any])
+    inline def setIanaInterfaceType(value: Double): Self = StObject.set(x, "ianaInterfaceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundMaxBitsPerSecond(value: Double): Self = StObject.set(x, "inboundMaxBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setInboundMaxBitsPerSecond(value: Double): Self = StObject.set(x, "inboundMaxBitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAdapterId(value: String): Self = StObject.set(x, "networkAdapterId", value.asInstanceOf[js.Any])
+    inline def setNetworkAdapterId(value: String): Self = StObject.set(x, "networkAdapterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkItem(value: NetworkItem): Self = StObject.set(x, "networkItem", value.asInstanceOf[js.Any])
+    inline def setNetworkItem(value: NetworkItem): Self = StObject.set(x, "networkItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundMaxBitsPerSecond(value: Double): Self = StObject.set(x, "outboundMaxBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setOutboundMaxBitsPerSecond(value: Double): Self = StObject.set(x, "outboundMaxBitsPerSecond", value.asInstanceOf[js.Any])
   }
 }

@@ -18,17 +18,14 @@ object typesParentCommitIdOutdatedExceptionMod {
   }
   object ParentCommitIdOutdatedException {
     
-    @scala.inline
-    def apply(): ParentCommitIdOutdatedException = {
+    inline def apply(): ParentCommitIdOutdatedException = {
       val __obj = js.Dynamic.literal(name = "ParentCommitIdOutdatedException")
       __obj.asInstanceOf[ParentCommitIdOutdatedException]
     }
     
-    @scala.inline
-    implicit class ParentCommitIdOutdatedExceptionMutableBuilder[Self <: ParentCommitIdOutdatedException] (val x: Self) extends AnyVal {
+    extension [Self <: ParentCommitIdOutdatedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitIdOutdatedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

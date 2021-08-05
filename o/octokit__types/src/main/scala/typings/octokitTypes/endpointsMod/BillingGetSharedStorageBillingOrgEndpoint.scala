@@ -11,17 +11,14 @@ trait BillingGetSharedStorageBillingOrgEndpoint extends StObject {
 }
 object BillingGetSharedStorageBillingOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): BillingGetSharedStorageBillingOrgEndpoint = {
+  inline def apply(org_ : String): BillingGetSharedStorageBillingOrgEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingGetSharedStorageBillingOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class BillingGetSharedStorageBillingOrgEndpointMutableBuilder[Self <: BillingGetSharedStorageBillingOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGetSharedStorageBillingOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

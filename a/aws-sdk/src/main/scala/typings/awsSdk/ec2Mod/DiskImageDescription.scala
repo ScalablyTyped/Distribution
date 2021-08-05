@@ -28,37 +28,27 @@ trait DiskImageDescription extends StObject {
 }
 object DiskImageDescription {
   
-  @scala.inline
-  def apply(): DiskImageDescription = {
+  inline def apply(): DiskImageDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskImageDescription]
   }
   
-  @scala.inline
-  implicit class DiskImageDescriptionMutableBuilder[Self <: DiskImageDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DiskImageDescription](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
     
-    @scala.inline
-    def setFormat(value: DiskImageFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: DiskImageFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setImportManifestUrl(value: String): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
+    inline def setImportManifestUrl(value: String): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportManifestUrlUndefined: Self = StObject.set(x, "ImportManifestUrl", js.undefined)
+    inline def setImportManifestUrlUndefined: Self = StObject.set(x, "ImportManifestUrl", js.undefined)
     
-    @scala.inline
-    def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

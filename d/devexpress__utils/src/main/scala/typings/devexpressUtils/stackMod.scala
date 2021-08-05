@@ -10,7 +10,7 @@ object stackMod {
   @js.native
   class Stack[T] () extends StObject {
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
     val count: Double = js.native
     
@@ -18,7 +18,7 @@ object stackMod {
     
     var last: js.UndefOr[T] = js.native
     
-    var list: js.Any = js.native
+    /* private */ var list: js.Any = js.native
     
     def peek(): js.UndefOr[T] = js.native
     

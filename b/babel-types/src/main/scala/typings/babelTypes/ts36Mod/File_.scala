@@ -20,8 +20,7 @@ trait File_
 }
 object File_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comments: js.Array[Comment],
     end: Double,
     loc: SourceLocation,
@@ -34,25 +33,18 @@ object File_ {
     __obj.asInstanceOf[File_]
   }
   
-  @scala.inline
-  implicit class File_MutableBuilder[Self <: File_] (val x: Self) extends AnyVal {
+  extension [Self <: File_](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setProgram(value: Program_): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Program_): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensVarargs(value: js.Any*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: js.Any*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

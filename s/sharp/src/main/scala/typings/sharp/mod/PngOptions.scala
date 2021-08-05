@@ -35,67 +35,47 @@ trait PngOptions extends StObject {
 }
 object PngOptions {
   
-  @scala.inline
-  def apply(): PngOptions = {
+  inline def apply(): PngOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PngOptions]
   }
   
-  @scala.inline
-  implicit class PngOptionsMutableBuilder[Self <: PngOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PngOptions](x: Self) {
     
-    @scala.inline
-    def setAdaptiveFiltering(value: Boolean): Self = StObject.set(x, "adaptiveFiltering", value.asInstanceOf[js.Any])
+    inline def setAdaptiveFiltering(value: Boolean): Self = StObject.set(x, "adaptiveFiltering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptiveFilteringUndefined: Self = StObject.set(x, "adaptiveFiltering", js.undefined)
+    inline def setAdaptiveFilteringUndefined: Self = StObject.set(x, "adaptiveFiltering", js.undefined)
     
-    @scala.inline
-    def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColours(value: Double): Self = StObject.set(x, "colours", value.asInstanceOf[js.Any])
+    inline def setColours(value: Double): Self = StObject.set(x, "colours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColoursUndefined: Self = StObject.set(x, "colours", js.undefined)
+    inline def setColoursUndefined: Self = StObject.set(x, "colours", js.undefined)
     
-    @scala.inline
-    def setCompressionLevel(value: Double): Self = StObject.set(x, "compressionLevel", value.asInstanceOf[js.Any])
+    inline def setCompressionLevel(value: Double): Self = StObject.set(x, "compressionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionLevelUndefined: Self = StObject.set(x, "compressionLevel", js.undefined)
+    inline def setCompressionLevelUndefined: Self = StObject.set(x, "compressionLevel", js.undefined)
     
-    @scala.inline
-    def setDither(value: Double): Self = StObject.set(x, "dither", value.asInstanceOf[js.Any])
+    inline def setDither(value: Double): Self = StObject.set(x, "dither", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDitherUndefined: Self = StObject.set(x, "dither", js.undefined)
+    inline def setDitherUndefined: Self = StObject.set(x, "dither", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setPalette(value: Boolean): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: Boolean): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    @scala.inline
-    def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
+    inline def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
+    inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

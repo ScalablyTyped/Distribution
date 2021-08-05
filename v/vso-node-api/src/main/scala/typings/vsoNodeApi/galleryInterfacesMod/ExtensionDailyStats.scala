@@ -33,8 +33,7 @@ trait ExtensionDailyStats extends StObject {
 }
 object ExtensionDailyStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dailyStats: js.Array[ExtensionDailyStat],
     extensionId: String,
     extensionName: String,
@@ -45,25 +44,18 @@ object ExtensionDailyStats {
     __obj.asInstanceOf[ExtensionDailyStats]
   }
   
-  @scala.inline
-  implicit class ExtensionDailyStatsMutableBuilder[Self <: ExtensionDailyStats] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionDailyStats](x: Self) {
     
-    @scala.inline
-    def setDailyStats(value: js.Array[ExtensionDailyStat]): Self = StObject.set(x, "dailyStats", value.asInstanceOf[js.Any])
+    inline def setDailyStats(value: js.Array[ExtensionDailyStat]): Self = StObject.set(x, "dailyStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyStatsVarargs(value: ExtensionDailyStat*): Self = StObject.set(x, "dailyStats", js.Array(value :_*))
+    inline def setDailyStatsVarargs(value: ExtensionDailyStat*): Self = StObject.set(x, "dailyStats", js.Array(value :_*))
     
-    @scala.inline
-    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+    inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatCount(value: Double): Self = StObject.set(x, "statCount", value.asInstanceOf[js.Any])
+    inline def setStatCount(value: Double): Self = StObject.set(x, "statCount", value.asInstanceOf[js.Any])
   }
 }

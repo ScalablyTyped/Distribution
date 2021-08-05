@@ -18,25 +18,19 @@ trait ListFlowDefinitionsResponse extends StObject {
 }
 object ListFlowDefinitionsResponse {
   
-  @scala.inline
-  def apply(FlowDefinitionSummaries: FlowDefinitionSummaries): ListFlowDefinitionsResponse = {
+  inline def apply(FlowDefinitionSummaries: FlowDefinitionSummaries): ListFlowDefinitionsResponse = {
     val __obj = js.Dynamic.literal(FlowDefinitionSummaries = FlowDefinitionSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFlowDefinitionsResponse]
   }
   
-  @scala.inline
-  implicit class ListFlowDefinitionsResponseMutableBuilder[Self <: ListFlowDefinitionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFlowDefinitionsResponse](x: Self) {
     
-    @scala.inline
-    def setFlowDefinitionSummaries(value: FlowDefinitionSummaries): Self = StObject.set(x, "FlowDefinitionSummaries", value.asInstanceOf[js.Any])
+    inline def setFlowDefinitionSummaries(value: FlowDefinitionSummaries): Self = StObject.set(x, "FlowDefinitionSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowDefinitionSummariesVarargs(value: FlowDefinitionSummary*): Self = StObject.set(x, "FlowDefinitionSummaries", js.Array(value :_*))
+    inline def setFlowDefinitionSummariesVarargs(value: FlowDefinitionSummary*): Self = StObject.set(x, "FlowDefinitionSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

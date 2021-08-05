@@ -17,31 +17,23 @@ trait BodyMeasureReport extends StObject {
 }
 object BodyMeasureReport {
   
-  @scala.inline
-  def apply(body: MeasureReport): BodyMeasureReport = {
+  inline def apply(body: MeasureReport): BodyMeasureReport = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "MeasureReport")
     __obj.asInstanceOf[BodyMeasureReport]
   }
   
-  @scala.inline
-  implicit class BodyMeasureReportMutableBuilder[Self <: BodyMeasureReport] (val x: Self) extends AnyVal {
+  extension [Self <: BodyMeasureReport](x: Self) {
     
-    @scala.inline
-    def setBody(value: MeasureReport): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: MeasureReport): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.MeasureReport): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.MeasureReport): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

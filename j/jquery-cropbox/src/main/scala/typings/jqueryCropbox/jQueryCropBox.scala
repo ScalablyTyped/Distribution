@@ -88,8 +88,7 @@ object jQueryCropBox {
   }
   object Cropbox {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       drag: CropboxDragOptions => Unit,
       getBlob: () => js.Any,
       getDataURL: () => String,
@@ -105,38 +104,27 @@ object jQueryCropBox {
       __obj.asInstanceOf[Cropbox]
     }
     
-    @scala.inline
-    implicit class CropboxMutableBuilder[Self <: Cropbox] (val x: Self) extends AnyVal {
+    extension [Self <: Cropbox](x: Self) {
       
-      @scala.inline
-      def setDrag(value: CropboxDragOptions => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
+      inline def setDrag(value: CropboxDragOptions => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBlob(value: () => js.Any): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+      inline def setGetBlob(value: () => js.Any): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDataURL(value: () => String): Self = StObject.set(x, "getDataURL", js.Any.fromFunction0(value))
+      inline def setGetDataURL(value: () => String): Self = StObject.set(x, "getDataURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: (String, EventCallback) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, EventCallback) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCrop(value: CropboxSetCropOptions => Unit): Self = StObject.set(x, "setCrop", js.Any.fromFunction1(value))
+      inline def setSetCrop(value: CropboxSetCropOptions => Unit): Self = StObject.set(x, "setCrop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoom(value: Double => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
+      inline def setZoom(value: Double => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomIn(value: () => Unit): Self = StObject.set(x, "zoomIn", js.Any.fromFunction0(value))
+      inline def setZoomIn(value: () => Unit): Self = StObject.set(x, "zoomIn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZoomOut(value: () => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
+      inline def setZoomOut(value: () => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
     }
   }
   
@@ -152,26 +140,20 @@ object jQueryCropBox {
   }
   object CropboxArea {
     
-    @scala.inline
-    def apply(cropH: Double, cropW: Double, cropX: Double, cropY: Double): CropboxArea = {
+    inline def apply(cropH: Double, cropW: Double, cropX: Double, cropY: Double): CropboxArea = {
       val __obj = js.Dynamic.literal(cropH = cropH.asInstanceOf[js.Any], cropW = cropW.asInstanceOf[js.Any], cropX = cropX.asInstanceOf[js.Any], cropY = cropY.asInstanceOf[js.Any])
       __obj.asInstanceOf[CropboxArea]
     }
     
-    @scala.inline
-    implicit class CropboxAreaMutableBuilder[Self <: CropboxArea] (val x: Self) extends AnyVal {
+    extension [Self <: CropboxArea](x: Self) {
       
-      @scala.inline
-      def setCropH(value: Double): Self = StObject.set(x, "cropH", value.asInstanceOf[js.Any])
+      inline def setCropH(value: Double): Self = StObject.set(x, "cropH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropW(value: Double): Self = StObject.set(x, "cropW", value.asInstanceOf[js.Any])
+      inline def setCropW(value: Double): Self = StObject.set(x, "cropW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropX(value: Double): Self = StObject.set(x, "cropX", value.asInstanceOf[js.Any])
+      inline def setCropX(value: Double): Self = StObject.set(x, "cropX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropY(value: Double): Self = StObject.set(x, "cropY", value.asInstanceOf[js.Any])
+      inline def setCropY(value: Double): Self = StObject.set(x, "cropY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,26 +169,20 @@ object jQueryCropBox {
   }
   object CropboxDragOptions {
     
-    @scala.inline
-    def apply(dx: Double, dy: Double, startX: Double, startY: Double): CropboxDragOptions = {
+    inline def apply(dx: Double, dy: Double, startX: Double, startY: Double): CropboxDragOptions = {
       val __obj = js.Dynamic.literal(dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any], startY = startY.asInstanceOf[js.Any])
       __obj.asInstanceOf[CropboxDragOptions]
     }
     
-    @scala.inline
-    implicit class CropboxDragOptionsMutableBuilder[Self <: CropboxDragOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CropboxDragOptions](x: Self) {
       
-      @scala.inline
-      def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+      inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+      inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
+      inline def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
+      inline def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,56 +225,40 @@ object jQueryCropBox {
   }
   object CropboxOptions {
     
-    @scala.inline
-    def apply(): CropboxOptions = {
+    inline def apply(): CropboxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CropboxOptions]
     }
     
-    @scala.inline
-    implicit class CropboxOptionsMutableBuilder[Self <: CropboxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CropboxOptions](x: Self) {
       
-      @scala.inline
-      def setControls(value: js.Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: js.Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setResult(value: CropboxArea): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: CropboxArea): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setShowControls(value: ShowControls): Self = StObject.set(x, "showControls", value.asInstanceOf[js.Any])
+      inline def setShowControls(value: ShowControls): Self = StObject.set(x, "showControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowControlsUndefined: Self = StObject.set(x, "showControls", js.undefined)
+      inline def setShowControlsUndefined: Self = StObject.set(x, "showControls", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -314,26 +274,20 @@ object jQueryCropBox {
   }
   object CropboxSetCropOptions {
     
-    @scala.inline
-    def apply(cropH: Double, cropW: Double, cropX: Double, cropY: Double): CropboxSetCropOptions = {
+    inline def apply(cropH: Double, cropW: Double, cropX: Double, cropY: Double): CropboxSetCropOptions = {
       val __obj = js.Dynamic.literal(cropH = cropH.asInstanceOf[js.Any], cropW = cropW.asInstanceOf[js.Any], cropX = cropX.asInstanceOf[js.Any], cropY = cropY.asInstanceOf[js.Any])
       __obj.asInstanceOf[CropboxSetCropOptions]
     }
     
-    @scala.inline
-    implicit class CropboxSetCropOptionsMutableBuilder[Self <: CropboxSetCropOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CropboxSetCropOptions](x: Self) {
       
-      @scala.inline
-      def setCropH(value: Double): Self = StObject.set(x, "cropH", value.asInstanceOf[js.Any])
+      inline def setCropH(value: Double): Self = StObject.set(x, "cropH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropW(value: Double): Self = StObject.set(x, "cropW", value.asInstanceOf[js.Any])
+      inline def setCropW(value: Double): Self = StObject.set(x, "cropW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropX(value: Double): Self = StObject.set(x, "cropX", value.asInstanceOf[js.Any])
+      inline def setCropX(value: Double): Self = StObject.set(x, "cropX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropY(value: Double): Self = StObject.set(x, "cropY", value.asInstanceOf[js.Any])
+      inline def setCropY(value: Double): Self = StObject.set(x, "cropY", value.asInstanceOf[js.Any])
     }
   }
   

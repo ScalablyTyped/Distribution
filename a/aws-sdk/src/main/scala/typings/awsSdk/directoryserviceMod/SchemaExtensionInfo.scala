@@ -43,55 +43,39 @@ trait SchemaExtensionInfo extends StObject {
 }
 object SchemaExtensionInfo {
   
-  @scala.inline
-  def apply(): SchemaExtensionInfo = {
+  inline def apply(): SchemaExtensionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExtensionInfo]
   }
   
-  @scala.inline
-  implicit class SchemaExtensionInfoMutableBuilder[Self <: SchemaExtensionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExtensionInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: EndDateTime): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: EndDateTime): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
-    @scala.inline
-    def setSchemaExtensionId(value: SchemaExtensionId): Self = StObject.set(x, "SchemaExtensionId", value.asInstanceOf[js.Any])
+    inline def setSchemaExtensionId(value: SchemaExtensionId): Self = StObject.set(x, "SchemaExtensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaExtensionIdUndefined: Self = StObject.set(x, "SchemaExtensionId", js.undefined)
+    inline def setSchemaExtensionIdUndefined: Self = StObject.set(x, "SchemaExtensionId", js.undefined)
     
-    @scala.inline
-    def setSchemaExtensionStatus(value: SchemaExtensionStatus): Self = StObject.set(x, "SchemaExtensionStatus", value.asInstanceOf[js.Any])
+    inline def setSchemaExtensionStatus(value: SchemaExtensionStatus): Self = StObject.set(x, "SchemaExtensionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaExtensionStatusReason(value: SchemaExtensionStatusReason): Self = StObject.set(x, "SchemaExtensionStatusReason", value.asInstanceOf[js.Any])
+    inline def setSchemaExtensionStatusReason(value: SchemaExtensionStatusReason): Self = StObject.set(x, "SchemaExtensionStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaExtensionStatusReasonUndefined: Self = StObject.set(x, "SchemaExtensionStatusReason", js.undefined)
+    inline def setSchemaExtensionStatusReasonUndefined: Self = StObject.set(x, "SchemaExtensionStatusReason", js.undefined)
     
-    @scala.inline
-    def setSchemaExtensionStatusUndefined: Self = StObject.set(x, "SchemaExtensionStatus", js.undefined)
+    inline def setSchemaExtensionStatusUndefined: Self = StObject.set(x, "SchemaExtensionStatus", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: StartDateTime): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: StartDateTime): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
   }
 }

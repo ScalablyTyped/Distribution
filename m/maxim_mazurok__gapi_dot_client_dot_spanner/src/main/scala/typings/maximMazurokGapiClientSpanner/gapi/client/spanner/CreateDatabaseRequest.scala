@@ -20,28 +20,21 @@ trait CreateDatabaseRequest extends StObject {
 }
 object CreateDatabaseRequest {
   
-  @scala.inline
-  def apply(): CreateDatabaseRequest = {
+  inline def apply(): CreateDatabaseRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class CreateDatabaseRequestMutableBuilder[Self <: CreateDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setCreateStatement(value: String): Self = StObject.set(x, "createStatement", value.asInstanceOf[js.Any])
+    inline def setCreateStatement(value: String): Self = StObject.set(x, "createStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateStatementUndefined: Self = StObject.set(x, "createStatement", js.undefined)
+    inline def setCreateStatementUndefined: Self = StObject.set(x, "createStatement", js.undefined)
     
-    @scala.inline
-    def setExtraStatements(value: js.Array[String]): Self = StObject.set(x, "extraStatements", value.asInstanceOf[js.Any])
+    inline def setExtraStatements(value: js.Array[String]): Self = StObject.set(x, "extraStatements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraStatementsUndefined: Self = StObject.set(x, "extraStatements", js.undefined)
+    inline def setExtraStatementsUndefined: Self = StObject.set(x, "extraStatements", js.undefined)
     
-    @scala.inline
-    def setExtraStatementsVarargs(value: String*): Self = StObject.set(x, "extraStatements", js.Array(value :_*))
+    inline def setExtraStatementsVarargs(value: String*): Self = StObject.set(x, "extraStatements", js.Array(value :_*))
   }
 }

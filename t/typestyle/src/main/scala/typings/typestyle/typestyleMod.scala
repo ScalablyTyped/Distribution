@@ -21,29 +21,29 @@ object typestyleMod {
     /**
       * Only calls cb all sync operations settle
       */
-    var _afterAllSync: js.Any = js.native
+    /* private */ var _afterAllSync: js.Any = js.native
     
-    var _autoGenerateTag: js.Any = js.native
+    /* private */ var _autoGenerateTag: js.Any = js.native
     
-    var _freeStyle: js.Any = js.native
+    /* private */ var _freeStyle: js.Any = js.native
     
-    var _getTag: js.Any = js.native
+    /* private */ var _getTag: js.Any = js.native
     
     /**
       * We have a single stylesheet that we update as components register themselves
       */
-    var _lastFreeStyleChangeId: js.Any = js.native
+    /* private */ var _lastFreeStyleChangeId: js.Any = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
-    var _pendingRawChange: js.Any = js.native
+    /* private */ var _pendingRawChange: js.Any = js.native
     
-    var _raw: js.Any = js.native
+    /* private */ var _raw: js.Any = js.native
     
     /** Checks if the style tag needs updating and if so queues up the change */
-    var _styleUpdated: js.Any = js.native
+    /* private */ var _styleUpdated: js.Any = js.native
     
-    var _tag: js.Any = js.native
+    /* private */ var _tag: js.Any = js.native
     
     /**
       * Insert `raw` CSS as a string. This is useful for e.g.
@@ -111,20 +111,16 @@ object typestyleMod {
   }
   object StylesTarget {
     
-    @scala.inline
-    def apply(): StylesTarget = {
+    inline def apply(): StylesTarget = {
       val __obj = js.Dynamic.literal(textContent = null)
       __obj.asInstanceOf[StylesTarget]
     }
     
-    @scala.inline
-    implicit class StylesTargetMutableBuilder[Self <: StylesTarget] (val x: Self) extends AnyVal {
+    extension [Self <: StylesTarget](x: Self) {
       
-      @scala.inline
-      def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+      inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextContentNull: Self = StObject.set(x, "textContent", null)
+      inline def setTextContentNull: Self = StObject.set(x, "textContent", null)
     }
   }
 }

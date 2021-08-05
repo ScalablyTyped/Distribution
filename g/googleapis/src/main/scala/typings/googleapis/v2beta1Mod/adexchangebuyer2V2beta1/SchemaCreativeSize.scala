@@ -48,55 +48,39 @@ trait SchemaCreativeSize extends StObject {
 }
 object SchemaCreativeSize {
   
-  @scala.inline
-  def apply(): SchemaCreativeSize = {
+  inline def apply(): SchemaCreativeSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreativeSize]
   }
   
-  @scala.inline
-  implicit class SchemaCreativeSizeMutableBuilder[Self <: SchemaCreativeSize] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreativeSize](x: Self) {
     
-    @scala.inline
-    def setAllowedFormats(value: js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
+    inline def setAllowedFormats(value: js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
+    inline def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
     
-    @scala.inline
-    def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
+    inline def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setCompanionSizes(value: js.Array[SchemaSize]): Self = StObject.set(x, "companionSizes", value.asInstanceOf[js.Any])
+    inline def setCompanionSizes(value: js.Array[SchemaSize]): Self = StObject.set(x, "companionSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionSizesUndefined: Self = StObject.set(x, "companionSizes", js.undefined)
+    inline def setCompanionSizesUndefined: Self = StObject.set(x, "companionSizes", js.undefined)
     
-    @scala.inline
-    def setCompanionSizesVarargs(value: SchemaSize*): Self = StObject.set(x, "companionSizes", js.Array(value :_*))
+    inline def setCompanionSizesVarargs(value: SchemaSize*): Self = StObject.set(x, "companionSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setCreativeSizeType(value: String): Self = StObject.set(x, "creativeSizeType", value.asInstanceOf[js.Any])
+    inline def setCreativeSizeType(value: String): Self = StObject.set(x, "creativeSizeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeSizeTypeUndefined: Self = StObject.set(x, "creativeSizeType", js.undefined)
+    inline def setCreativeSizeTypeUndefined: Self = StObject.set(x, "creativeSizeType", js.undefined)
     
-    @scala.inline
-    def setNativeTemplate(value: String): Self = StObject.set(x, "nativeTemplate", value.asInstanceOf[js.Any])
+    inline def setNativeTemplate(value: String): Self = StObject.set(x, "nativeTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeTemplateUndefined: Self = StObject.set(x, "nativeTemplate", js.undefined)
+    inline def setNativeTemplateUndefined: Self = StObject.set(x, "nativeTemplate", js.undefined)
     
-    @scala.inline
-    def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSkippableAdType(value: String): Self = StObject.set(x, "skippableAdType", value.asInstanceOf[js.Any])
+    inline def setSkippableAdType(value: String): Self = StObject.set(x, "skippableAdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippableAdTypeUndefined: Self = StObject.set(x, "skippableAdType", js.undefined)
+    inline def setSkippableAdTypeUndefined: Self = StObject.set(x, "skippableAdType", js.undefined)
   }
 }

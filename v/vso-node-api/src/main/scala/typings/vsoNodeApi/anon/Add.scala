@@ -14,22 +14,17 @@ trait Add extends StObject {
 }
 object Add {
   
-  @scala.inline
-  def apply(add: scala.Double, delete: scala.Double, update: scala.Double): Add = {
+  inline def apply(add: scala.Double, delete: scala.Double, update: scala.Double): Add = {
     val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Add]
   }
   
-  @scala.inline
-  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
+  extension [Self <: Add](x: Self) {
     
-    @scala.inline
-    def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: scala.Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: scala.Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

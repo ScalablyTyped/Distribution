@@ -22,11 +22,11 @@ trait SkeletonDebugRenderer
   
   var boneWidth: Double = js.native
   
-  var bounds: js.Any = js.native
+  /* private */ var bounds: js.Any = js.native
   
   var clipColor: Color = js.native
   
-  var context: js.Any = js.native
+  /* private */ var context: js.Any = js.native
   
   def draw(shapes: ShapeRenderer, skeleton: Skeleton): Unit = js.native
   def draw(shapes: ShapeRenderer, skeleton: Skeleton, ignoredBones: js.Array[String]): Unit = js.native
@@ -53,9 +53,9 @@ trait SkeletonDebugRenderer
   
   var scale: Double = js.native
   
-  var temp: js.Any = js.native
+  /* private */ var temp: js.Any = js.native
   
   var triangleLineColor: Color = js.native
   
-  var vertices: js.Any = js.native
+  /* private */ var vertices: js.Any = js.native
 }

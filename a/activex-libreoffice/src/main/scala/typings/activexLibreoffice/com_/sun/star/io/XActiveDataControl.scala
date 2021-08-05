@@ -47,8 +47,7 @@ trait XActiveDataControl
 }
 object XActiveDataControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addListener: XStreamListener => Unit,
     queryInterface: `type` => js.Any,
@@ -61,19 +60,14 @@ object XActiveDataControl {
     __obj.asInstanceOf[XActiveDataControl]
   }
   
-  @scala.inline
-  implicit class XActiveDataControlMutableBuilder[Self <: XActiveDataControl] (val x: Self) extends AnyVal {
+  extension [Self <: XActiveDataControl](x: Self) {
     
-    @scala.inline
-    def setAddListener(value: XStreamListener => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+    inline def setAddListener(value: XStreamListener => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveListener(value: XStreamListener => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+    inline def setRemoveListener(value: XStreamListener => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

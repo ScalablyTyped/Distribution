@@ -18,28 +18,21 @@ trait CustomDataIdentifiers extends StObject {
 }
 object CustomDataIdentifiers {
   
-  @scala.inline
-  def apply(): CustomDataIdentifiers = {
+  inline def apply(): CustomDataIdentifiers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomDataIdentifiers]
   }
   
-  @scala.inline
-  implicit class CustomDataIdentifiersMutableBuilder[Self <: CustomDataIdentifiers] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDataIdentifiers](x: Self) {
     
-    @scala.inline
-    def setDetections(value: CustomDetections): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
+    inline def setDetections(value: CustomDetections): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
+    inline def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
-    @scala.inline
-    def setDetectionsVarargs(value: CustomDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
+    inline def setDetectionsVarargs(value: CustomDetection*): Self = StObject.set(x, "detections", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: long): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

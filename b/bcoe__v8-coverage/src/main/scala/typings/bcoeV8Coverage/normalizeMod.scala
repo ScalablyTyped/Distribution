@@ -14,21 +14,15 @@ object normalizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deepNormalizeProcessCov(processCov: ProcessCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepNormalizeProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deepNormalizeProcessCov(processCov: ProcessCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepNormalizeProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def deepNormalizeScriptCov(scriptCov: ScriptCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepNormalizeScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deepNormalizeScriptCov(scriptCov: ScriptCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepNormalizeScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def normalizeFunctionCov(funcCov: FunctionCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeFunctionCov")(funcCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def normalizeFunctionCov(funcCov: FunctionCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeFunctionCov")(funcCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def normalizeProcessCov(processCov: ProcessCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def normalizeProcessCov(processCov: ProcessCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def normalizeRangeTree(tree: RangeTree): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRangeTree")(tree.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def normalizeRangeTree(tree: RangeTree): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRangeTree")(tree.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def normalizeScriptCov(scriptCov: ScriptCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def normalizeScriptCov(scriptCov: ScriptCov): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

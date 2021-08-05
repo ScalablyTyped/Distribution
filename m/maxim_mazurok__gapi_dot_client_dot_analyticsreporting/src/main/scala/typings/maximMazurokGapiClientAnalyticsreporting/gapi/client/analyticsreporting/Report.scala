@@ -17,31 +17,23 @@ trait Report extends StObject {
 }
 object Report {
   
-  @scala.inline
-  def apply(): Report = {
+  inline def apply(): Report = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Report]
   }
   
-  @scala.inline
-  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+  extension [Self <: Report](x: Self) {
     
-    @scala.inline
-    def setColumnHeader(value: ColumnHeader): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
+    inline def setColumnHeader(value: ColumnHeader): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHeaderUndefined: Self = StObject.set(x, "columnHeader", js.undefined)
+    inline def setColumnHeaderUndefined: Self = StObject.set(x, "columnHeader", js.undefined)
     
-    @scala.inline
-    def setData(value: ReportData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ReportData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

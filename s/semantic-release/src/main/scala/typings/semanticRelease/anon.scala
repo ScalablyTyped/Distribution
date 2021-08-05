@@ -92,35 +92,26 @@ object anon {
   }
   object Channel {
     
-    @scala.inline
-    def apply(name: String): Channel = {
+    inline def apply(name: String): Channel = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Channel]
     }
     
-    @scala.inline
-    implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+    extension [Self <: Channel](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String | `false`): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String | `false`): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrerelease(value: String | Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+      inline def setPrerelease(value: String | Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
+      inline def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
   
@@ -150,8 +141,7 @@ object anon {
   }
   object Commits {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       commits: js.Array[Commit],
       lastRelease: LastRelease,
       nextRelease: NextRelease,
@@ -161,26 +151,19 @@ object anon {
       __obj.asInstanceOf[Commits]
     }
     
-    @scala.inline
-    implicit class CommitsMutableBuilder[Self <: Commits] (val x: Self) extends AnyVal {
+    extension [Self <: Commits](x: Self) {
       
-      @scala.inline
-      def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+      inline def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
       
-      @scala.inline
-      def setLastRelease(value: LastRelease): Self = StObject.set(x, "lastRelease", value.asInstanceOf[js.Any])
+      inline def setLastRelease(value: LastRelease): Self = StObject.set(x, "lastRelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextRelease(value: NextRelease): Self = StObject.set(x, "nextRelease", value.asInstanceOf[js.Any])
+      inline def setNextRelease(value: NextRelease): Self = StObject.set(x, "nextRelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
+      inline def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
+      inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
     }
   }
   
@@ -203,23 +186,18 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(email: String, name: String, short: String): Email = {
+    inline def apply(email: String, name: String, short: String): Email = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,20 +209,16 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: (String, /* repeated */ js.Any) => Unit, log: (String, /* repeated */ js.Any) => Unit): Error = {
+    inline def apply(error: (String, /* repeated */ js.Any) => Unit, log: (String, /* repeated */ js.Any) => Unit): Error = {
       val __obj = js.Dynamic.literal(error = js.Any.fromFunction2(error), log = js.Any.fromFunction2(log))
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLog(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     }
   }
   
@@ -262,20 +236,16 @@ object anon {
   }
   object Long {
     
-    @scala.inline
-    def apply(long: String, short: String): Long = {
+    inline def apply(long: String, short: String): Long = {
       val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
       __obj.asInstanceOf[Long]
     }
     
-    @scala.inline
-    implicit class LongMutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
+    extension [Self <: Long](x: Self) {
       
-      @scala.inline
-      def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     }
   }
 }

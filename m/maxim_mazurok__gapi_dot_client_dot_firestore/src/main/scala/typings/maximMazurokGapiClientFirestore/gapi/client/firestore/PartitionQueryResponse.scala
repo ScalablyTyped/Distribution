@@ -22,28 +22,21 @@ trait PartitionQueryResponse extends StObject {
 }
 object PartitionQueryResponse {
   
-  @scala.inline
-  def apply(): PartitionQueryResponse = {
+  inline def apply(): PartitionQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionQueryResponse]
   }
   
-  @scala.inline
-  implicit class PartitionQueryResponseMutableBuilder[Self <: PartitionQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionQueryResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPartitions(value: js.Array[Cursor]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
+    inline def setPartitions(value: js.Array[Cursor]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
+    inline def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
     
-    @scala.inline
-    def setPartitionsVarargs(value: Cursor*): Self = StObject.set(x, "partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Cursor*): Self = StObject.set(x, "partitions", js.Array(value :_*))
   }
 }

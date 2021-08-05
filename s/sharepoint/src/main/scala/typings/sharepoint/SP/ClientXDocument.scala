@@ -12,19 +12,15 @@ trait ClientXDocument extends StObject {
 }
 object ClientXDocument {
   
-  @scala.inline
-  def apply(get_root: () => XElement, set_root: XElement => Unit): ClientXDocument = {
+  inline def apply(get_root: () => XElement, set_root: XElement => Unit): ClientXDocument = {
     val __obj = js.Dynamic.literal(get_root = js.Any.fromFunction0(get_root), set_root = js.Any.fromFunction1(set_root))
     __obj.asInstanceOf[ClientXDocument]
   }
   
-  @scala.inline
-  implicit class ClientXDocumentMutableBuilder[Self <: ClientXDocument] (val x: Self) extends AnyVal {
+  extension [Self <: ClientXDocument](x: Self) {
     
-    @scala.inline
-    def setGet_root(value: () => XElement): Self = StObject.set(x, "get_root", js.Any.fromFunction0(value))
+    inline def setGet_root(value: () => XElement): Self = StObject.set(x, "get_root", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_root(value: XElement => Unit): Self = StObject.set(x, "set_root", js.Any.fromFunction1(value))
+    inline def setSet_root(value: XElement => Unit): Self = StObject.set(x, "set_root", js.Any.fromFunction1(value))
   }
 }

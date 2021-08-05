@@ -38,37 +38,27 @@ trait IColumnModel
 }
 object IColumnModel {
   
-  @scala.inline
-  def apply(): IColumnModel = {
+  inline def apply(): IColumnModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnModel]
   }
   
-  @scala.inline
-  implicit class IColumnModelMutableBuilder[Self <: IColumnModel] (val x: Self) extends AnyVal {
+  extension [Self <: IColumnModel](x: Self) {
     
-    @scala.inline
-    def setGetHeaderAtIndex(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.grid.column.IColumn): Self = StObject.set(x, "getHeaderAtIndex", js.Any.fromFunction1(value))
+    inline def setGetHeaderAtIndex(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.grid.column.IColumn): Self = StObject.set(x, "getHeaderAtIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHeaderAtIndexUndefined: Self = StObject.set(x, "getHeaderAtIndex", js.undefined)
+    inline def setGetHeaderAtIndexUndefined: Self = StObject.set(x, "getHeaderAtIndex", js.undefined)
     
-    @scala.inline
-    def setGetHeaderById(value: /* id */ js.UndefOr[String] => typings.extjs.Ext.grid.column.IColumn): Self = StObject.set(x, "getHeaderById", js.Any.fromFunction1(value))
+    inline def setGetHeaderById(value: /* id */ js.UndefOr[String] => typings.extjs.Ext.grid.column.IColumn): Self = StObject.set(x, "getHeaderById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHeaderByIdUndefined: Self = StObject.set(x, "getHeaderById", js.undefined)
+    inline def setGetHeaderByIdUndefined: Self = StObject.set(x, "getHeaderById", js.undefined)
     
-    @scala.inline
-    def setGetHeaderIndex(value: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double): Self = StObject.set(x, "getHeaderIndex", js.Any.fromFunction1(value))
+    inline def setGetHeaderIndex(value: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double): Self = StObject.set(x, "getHeaderIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHeaderIndexUndefined: Self = StObject.set(x, "getHeaderIndex", js.undefined)
+    inline def setGetHeaderIndexUndefined: Self = StObject.set(x, "getHeaderIndex", js.undefined)
     
-    @scala.inline
-    def setGetVisibleHeaderClosestToIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.Any.fromFunction1(value))
+    inline def setGetVisibleHeaderClosestToIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVisibleHeaderClosestToIndexUndefined: Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.undefined)
+    inline def setGetVisibleHeaderClosestToIndexUndefined: Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.undefined)
   }
 }

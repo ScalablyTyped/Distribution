@@ -13,28 +13,21 @@ trait PartialexcludeArraystring extends StObject {
 }
 object PartialexcludeArraystring {
   
-  @scala.inline
-  def apply(): PartialexcludeArraystring = {
+  inline def apply(): PartialexcludeArraystring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialexcludeArraystring]
   }
   
-  @scala.inline
-  implicit class PartialexcludeArraystringMutableBuilder[Self <: PartialexcludeArraystring] (val x: Self) extends AnyVal {
+  extension [Self <: PartialexcludeArraystring](x: Self) {
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

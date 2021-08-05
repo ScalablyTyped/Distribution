@@ -40,31 +40,23 @@ trait CellProperties
 }
 object CellProperties {
   
-  @scala.inline
-  def apply(): CellProperties = {
+  inline def apply(): CellProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellProperties]
   }
   
-  @scala.inline
-  implicit class CellPropertiesMutableBuilder[Self <: CellProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CellProperties](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    inline def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
   }
 }

@@ -24,25 +24,19 @@ trait SchemaSuggestedListProperties extends StObject {
 }
 object SchemaSuggestedListProperties {
   
-  @scala.inline
-  def apply(): SchemaSuggestedListProperties = {
+  inline def apply(): SchemaSuggestedListProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestedListProperties]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestedListPropertiesMutableBuilder[Self <: SchemaSuggestedListProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestedListProperties](x: Self) {
     
-    @scala.inline
-    def setListProperties(value: SchemaListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
+    inline def setListProperties(value: SchemaListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPropertiesSuggestionState(value: SchemaListPropertiesSuggestionState): Self = StObject.set(x, "listPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    inline def setListPropertiesSuggestionState(value: SchemaListPropertiesSuggestionState): Self = StObject.set(x, "listPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPropertiesSuggestionStateUndefined: Self = StObject.set(x, "listPropertiesSuggestionState", js.undefined)
+    inline def setListPropertiesSuggestionStateUndefined: Self = StObject.set(x, "listPropertiesSuggestionState", js.undefined)
     
-    @scala.inline
-    def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
+    inline def setListPropertiesUndefined: Self = StObject.set(x, "listProperties", js.undefined)
   }
 }

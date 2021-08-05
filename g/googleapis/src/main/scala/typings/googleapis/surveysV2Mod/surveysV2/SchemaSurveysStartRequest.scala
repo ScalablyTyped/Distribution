@@ -15,19 +15,15 @@ trait SchemaSurveysStartRequest extends StObject {
 }
 object SchemaSurveysStartRequest {
   
-  @scala.inline
-  def apply(): SchemaSurveysStartRequest = {
+  inline def apply(): SchemaSurveysStartRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveysStartRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSurveysStartRequestMutableBuilder[Self <: SchemaSurveysStartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveysStartRequest](x: Self) {
     
-    @scala.inline
-    def setMaxCostPerResponseNanos(value: String): Self = StObject.set(x, "maxCostPerResponseNanos", value.asInstanceOf[js.Any])
+    inline def setMaxCostPerResponseNanos(value: String): Self = StObject.set(x, "maxCostPerResponseNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCostPerResponseNanosUndefined: Self = StObject.set(x, "maxCostPerResponseNanos", js.undefined)
+    inline def setMaxCostPerResponseNanosUndefined: Self = StObject.set(x, "maxCostPerResponseNanos", js.undefined)
   }
 }

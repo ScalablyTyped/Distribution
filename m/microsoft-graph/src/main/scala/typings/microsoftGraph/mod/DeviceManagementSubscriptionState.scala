@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceManagementSubscriptionState extends StObject
 object DeviceManagementSubscriptionState {
   
-  @scala.inline
-  def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  inline def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
   
-  @scala.inline
-  def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = "blocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blocked]
+  inline def blocked: typings.microsoftGraph.microsoftGraphStrings.blocked = "blocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blocked]
   
-  @scala.inline
-  def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
+  inline def deleted: typings.microsoftGraph.microsoftGraphStrings.deleted = "deleted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deleted]
   
-  @scala.inline
-  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
+  inline def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
   
-  @scala.inline
-  def lockedOut: typings.microsoftGraph.microsoftGraphStrings.lockedOut = "lockedOut".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lockedOut]
+  inline def lockedOut: typings.microsoftGraph.microsoftGraphStrings.lockedOut = "lockedOut".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lockedOut]
   
-  @scala.inline
-  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
+  inline def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
   
-  @scala.inline
-  def warning: typings.microsoftGraph.microsoftGraphStrings.warning = "warning".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.warning]
+  inline def warning: typings.microsoftGraph.microsoftGraphStrings.warning = "warning".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.warning]
 }

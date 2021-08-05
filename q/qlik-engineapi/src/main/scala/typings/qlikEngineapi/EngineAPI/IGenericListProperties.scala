@@ -15,16 +15,13 @@ trait IGenericListProperties
 }
 object IGenericListProperties {
   
-  @scala.inline
-  def apply(qInfo: INxInfo, qListObjectDef: IListObjectDef): IGenericListProperties = {
+  inline def apply(qInfo: INxInfo, qListObjectDef: IListObjectDef): IGenericListProperties = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qListObjectDef = qListObjectDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericListProperties]
   }
   
-  @scala.inline
-  implicit class IGenericListPropertiesMutableBuilder[Self <: IGenericListProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericListProperties](x: Self) {
     
-    @scala.inline
-    def setQListObjectDef(value: IListObjectDef): Self = StObject.set(x, "qListObjectDef", value.asInstanceOf[js.Any])
+    inline def setQListObjectDef(value: IListObjectDef): Self = StObject.set(x, "qListObjectDef", value.asInstanceOf[js.Any])
   }
 }

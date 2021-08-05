@@ -14,22 +14,17 @@ trait InteractionsSetRestrictionsForOrgResponseData extends StObject {
 }
 object InteractionsSetRestrictionsForOrgResponseData {
   
-  @scala.inline
-  def apply(expires_at: String, limit: String, origin: String): InteractionsSetRestrictionsForOrgResponseData = {
+  inline def apply(expires_at: String, limit: String, origin: String): InteractionsSetRestrictionsForOrgResponseData = {
     val __obj = js.Dynamic.literal(expires_at = expires_at.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionsSetRestrictionsForOrgResponseData]
   }
   
-  @scala.inline
-  implicit class InteractionsSetRestrictionsForOrgResponseDataMutableBuilder[Self <: InteractionsSetRestrictionsForOrgResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionsSetRestrictionsForOrgResponseData](x: Self) {
     
-    @scala.inline
-    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+    inline def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

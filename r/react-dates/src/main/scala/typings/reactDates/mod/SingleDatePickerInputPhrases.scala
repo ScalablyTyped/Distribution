@@ -14,31 +14,23 @@ trait SingleDatePickerInputPhrases extends StObject {
 }
 object SingleDatePickerInputPhrases {
   
-  @scala.inline
-  def apply(): SingleDatePickerInputPhrases = {
+  inline def apply(): SingleDatePickerInputPhrases = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SingleDatePickerInputPhrases]
   }
   
-  @scala.inline
-  implicit class SingleDatePickerInputPhrasesMutableBuilder[Self <: SingleDatePickerInputPhrases] (val x: Self) extends AnyVal {
+  extension [Self <: SingleDatePickerInputPhrases](x: Self) {
     
-    @scala.inline
-    def setClearDate(value: String): Self = StObject.set(x, "clearDate", value.asInstanceOf[js.Any])
+    inline def setClearDate(value: String): Self = StObject.set(x, "clearDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearDateUndefined: Self = StObject.set(x, "clearDate", js.undefined)
+    inline def setClearDateUndefined: Self = StObject.set(x, "clearDate", js.undefined)
     
-    @scala.inline
-    def setKeyboardBackwardNavigationInstructions(value: String): Self = StObject.set(x, "keyboardBackwardNavigationInstructions", value.asInstanceOf[js.Any])
+    inline def setKeyboardBackwardNavigationInstructions(value: String): Self = StObject.set(x, "keyboardBackwardNavigationInstructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardBackwardNavigationInstructionsUndefined: Self = StObject.set(x, "keyboardBackwardNavigationInstructions", js.undefined)
+    inline def setKeyboardBackwardNavigationInstructionsUndefined: Self = StObject.set(x, "keyboardBackwardNavigationInstructions", js.undefined)
     
-    @scala.inline
-    def setKeyboardForwardNavigationInstructions(value: String): Self = StObject.set(x, "keyboardForwardNavigationInstructions", value.asInstanceOf[js.Any])
+    inline def setKeyboardForwardNavigationInstructions(value: String): Self = StObject.set(x, "keyboardForwardNavigationInstructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardForwardNavigationInstructionsUndefined: Self = StObject.set(x, "keyboardForwardNavigationInstructions", js.undefined)
+    inline def setKeyboardForwardNavigationInstructionsUndefined: Self = StObject.set(x, "keyboardForwardNavigationInstructions", js.undefined)
   }
 }

@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextAnchorType extends StObject
 object TextAnchorType {
   
-  @scala.inline
-  def end: typings.victory.victoryStrings.end = "end".asInstanceOf[typings.victory.victoryStrings.end]
+  inline def end: typings.victory.victoryStrings.end = "end".asInstanceOf[typings.victory.victoryStrings.end]
   
-  @scala.inline
-  def inherit: typings.victory.victoryStrings.inherit = "inherit".asInstanceOf[typings.victory.victoryStrings.inherit]
+  inline def inherit: typings.victory.victoryStrings.inherit = "inherit".asInstanceOf[typings.victory.victoryStrings.inherit]
   
-  @scala.inline
-  def middle: typings.victory.victoryStrings.middle = "middle".asInstanceOf[typings.victory.victoryStrings.middle]
+  inline def middle: typings.victory.victoryStrings.middle = "middle".asInstanceOf[typings.victory.victoryStrings.middle]
   
-  @scala.inline
-  def start: typings.victory.victoryStrings.start = "start".asInstanceOf[typings.victory.victoryStrings.start]
+  inline def start: typings.victory.victoryStrings.start = "start".asInstanceOf[typings.victory.victoryStrings.start]
 }

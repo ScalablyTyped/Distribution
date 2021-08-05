@@ -13,16 +13,13 @@ trait VizResizeEvent
 }
 object VizResizeEvent {
   
-  @scala.inline
-  def apply(getEventName: () => TableauEventName, getViz: () => Viz, getVizSize: () => Size): VizResizeEvent = {
+  inline def apply(getEventName: () => TableauEventName, getViz: () => Viz, getVizSize: () => Size): VizResizeEvent = {
     val __obj = js.Dynamic.literal(getEventName = js.Any.fromFunction0(getEventName), getViz = js.Any.fromFunction0(getViz), getVizSize = js.Any.fromFunction0(getVizSize))
     __obj.asInstanceOf[VizResizeEvent]
   }
   
-  @scala.inline
-  implicit class VizResizeEventMutableBuilder[Self <: VizResizeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: VizResizeEvent](x: Self) {
     
-    @scala.inline
-    def setGetVizSize(value: () => Size): Self = StObject.set(x, "getVizSize", js.Any.fromFunction0(value))
+    inline def setGetVizSize(value: () => Size): Self = StObject.set(x, "getVizSize", js.Any.fromFunction0(value))
   }
 }

@@ -20,37 +20,27 @@ trait Schedule extends StObject {
 }
 object Schedule {
   
-  @scala.inline
-  def apply(): Schedule = {
+  inline def apply(): Schedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Schedule]
   }
   
-  @scala.inline
-  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
+  extension [Self <: Schedule](x: Self) {
     
-    @scala.inline
-    def setCronJobDuration(value: String): Self = StObject.set(x, "cronJobDuration", value.asInstanceOf[js.Any])
+    inline def setCronJobDuration(value: String): Self = StObject.set(x, "cronJobDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCronJobDurationUndefined: Self = StObject.set(x, "cronJobDuration", js.undefined)
+    inline def setCronJobDurationUndefined: Self = StObject.set(x, "cronJobDuration", js.undefined)
     
-    @scala.inline
-    def setCronSpec(value: String): Self = StObject.set(x, "cronSpec", value.asInstanceOf[js.Any])
+    inline def setCronSpec(value: String): Self = StObject.set(x, "cronSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCronSpecUndefined: Self = StObject.set(x, "cronSpec", js.undefined)
+    inline def setCronSpecUndefined: Self = StObject.set(x, "cronSpec", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

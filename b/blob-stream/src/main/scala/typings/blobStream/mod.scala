@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): IBlobStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[IBlobStream]
+  inline def apply(): IBlobStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[IBlobStream]
   
   @JSImport("blob-stream", JSImport.Namespace)
   @js.native

@@ -43,8 +43,7 @@ trait AssessmentRunAgent extends StObject {
 }
 object AssessmentRunAgent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agentHealth: AgentHealth,
     agentHealthCode: AgentHealthCode,
     agentId: AgentId,
@@ -55,37 +54,26 @@ object AssessmentRunAgent {
     __obj.asInstanceOf[AssessmentRunAgent]
   }
   
-  @scala.inline
-  implicit class AssessmentRunAgentMutableBuilder[Self <: AssessmentRunAgent] (val x: Self) extends AnyVal {
+  extension [Self <: AssessmentRunAgent](x: Self) {
     
-    @scala.inline
-    def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
+    inline def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentHealthCode(value: AgentHealthCode): Self = StObject.set(x, "agentHealthCode", value.asInstanceOf[js.Any])
+    inline def setAgentHealthCode(value: AgentHealthCode): Self = StObject.set(x, "agentHealthCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentHealthDetails(value: Message): Self = StObject.set(x, "agentHealthDetails", value.asInstanceOf[js.Any])
+    inline def setAgentHealthDetails(value: Message): Self = StObject.set(x, "agentHealthDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentHealthDetailsUndefined: Self = StObject.set(x, "agentHealthDetails", js.undefined)
+    inline def setAgentHealthDetailsUndefined: Self = StObject.set(x, "agentHealthDetails", js.undefined)
     
-    @scala.inline
-    def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    inline def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
+    inline def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
     
-    @scala.inline
-    def setTelemetryMetadata(value: TelemetryMetadataList): Self = StObject.set(x, "telemetryMetadata", value.asInstanceOf[js.Any])
+    inline def setTelemetryMetadata(value: TelemetryMetadataList): Self = StObject.set(x, "telemetryMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryMetadataVarargs(value: TelemetryMetadata*): Self = StObject.set(x, "telemetryMetadata", js.Array(value :_*))
+    inline def setTelemetryMetadataVarargs(value: TelemetryMetadata*): Self = StObject.set(x, "telemetryMetadata", js.Array(value :_*))
   }
 }

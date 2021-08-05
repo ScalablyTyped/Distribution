@@ -14,10 +14,10 @@ object elementstoreMod {
     extends StObject
        with ElementStore {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _elementMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _index: js.Any = js.native
     
     /* CompleteClass */
@@ -32,9 +32,9 @@ object elementstoreMod {
   
   trait ElementStore extends StObject {
     
-    var _elementMap: js.Any
+    /* private */ var _elementMap: js.Any
     
-    var _index: js.Any
+    /* private */ var _index: js.Any
     
     def clear(): Unit
     
@@ -44,8 +44,7 @@ object elementstoreMod {
   }
   object ElementStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _elementMap: js.Any,
       _index: js.Any,
       clear: () => Unit,
@@ -56,23 +55,17 @@ object elementstoreMod {
       __obj.asInstanceOf[ElementStore]
     }
     
-    @scala.inline
-    implicit class ElementStoreMutableBuilder[Self <: ElementStore] (val x: Self) extends AnyVal {
+    extension [Self <: ElementStore](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => js.Promise[js.UndefOr[ElementHandle[Element]]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Promise[js.UndefOr[ElementHandle[Element]]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: ElementHandle[Element] => String): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: ElementHandle[Element] => String): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_elementMap(value: js.Any): Self = StObject.set(x, "_elementMap", value.asInstanceOf[js.Any])
+      inline def set_elementMap(value: js.Any): Self = StObject.set(x, "_elementMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_index(value: js.Any): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+      inline def set_index(value: js.Any): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     }
   }
 }

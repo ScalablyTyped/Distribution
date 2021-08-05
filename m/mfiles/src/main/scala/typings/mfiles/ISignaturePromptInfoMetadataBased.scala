@@ -18,8 +18,7 @@ trait ISignaturePromptInfoMetadataBased extends StObject {
 }
 object ISignaturePromptInfoMetadataBased {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => ISignaturePromptInfoMetadataBased,
     IsReferencedBySignatureObject: Boolean,
     MeaningPropertyID: Double,
@@ -30,22 +29,16 @@ object ISignaturePromptInfoMetadataBased {
     __obj.asInstanceOf[ISignaturePromptInfoMetadataBased]
   }
   
-  @scala.inline
-  implicit class ISignaturePromptInfoMetadataBasedMutableBuilder[Self <: ISignaturePromptInfoMetadataBased] (val x: Self) extends AnyVal {
+  extension [Self <: ISignaturePromptInfoMetadataBased](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ISignaturePromptInfoMetadataBased): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISignaturePromptInfoMetadataBased): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsReferencedBySignatureObject(value: Boolean): Self = StObject.set(x, "IsReferencedBySignatureObject", value.asInstanceOf[js.Any])
+    inline def setIsReferencedBySignatureObject(value: Boolean): Self = StObject.set(x, "IsReferencedBySignatureObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeaningPropertyID(value: Double): Self = StObject.set(x, "MeaningPropertyID", value.asInstanceOf[js.Any])
+    inline def setMeaningPropertyID(value: Double): Self = StObject.set(x, "MeaningPropertyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptInfoLookupPropertyID(value: Double): Self = StObject.set(x, "PromptInfoLookupPropertyID", value.asInstanceOf[js.Any])
+    inline def setPromptInfoLookupPropertyID(value: Double): Self = StObject.set(x, "PromptInfoLookupPropertyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonPropertyID(value: Double): Self = StObject.set(x, "ReasonPropertyID", value.asInstanceOf[js.Any])
+    inline def setReasonPropertyID(value: Double): Self = StObject.set(x, "ReasonPropertyID", value.asInstanceOf[js.Any])
   }
 }

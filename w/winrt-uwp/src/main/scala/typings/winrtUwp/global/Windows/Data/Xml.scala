@@ -1018,8 +1018,7 @@ object Xml {
         * @return The object that must be used to start the operation.
         */
       /* static member */
-      @scala.inline
-      def loadFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
+      inline def loadFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
       /**
         * Asynchronously loads an XML document from the specified file. The document is parsed using the provided settings.
         * @param file The file from which to load the document.
@@ -1027,8 +1026,7 @@ object Xml {
         * @return The object that must be used to start the operation.
         */
       /* static member */
-      @scala.inline
-      def loadFromFileAsync(file: IStorageFile, loadSettings: typings.winrtUwp.Windows.Data.Xml.Dom.XmlLoadSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
+      inline def loadFromFileAsync(file: IStorageFile, loadSettings: typings.winrtUwp.Windows.Data.Xml.Dom.XmlLoadSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
       
       /**
         * Asynchronously loads an XML document from the specified location. The document is parsed using the default parser settings.
@@ -1036,8 +1034,7 @@ object Xml {
         * @return The object that must be used to start the operation.
         */
       /* static member */
-      @scala.inline
-      def loadFromUriAsync(uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
+      inline def loadFromUriAsync(uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
       /**
         * Asynchronously loads an XML document from the specified location. The document is parsed using the provided settings.
         * @param uri A URL that specifies the location of the XML file.
@@ -1045,8 +1042,7 @@ object Xml {
         * @return An object that must be used to start the operation.
         */
       /* static member */
-      @scala.inline
-      def loadFromUriAsync(uri: Uri, loadSettings: typings.winrtUwp.Windows.Data.Xml.Dom.XmlLoadSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
+      inline def loadFromUriAsync(uri: Uri, loadSettings: typings.winrtUwp.Windows.Data.Xml.Dom.XmlLoadSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromUriAsync")(uri.asInstanceOf[js.Any], loadSettings.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument]]
     }
     
     /** Represents a lightweight object that is useful for tree insertion operations. */

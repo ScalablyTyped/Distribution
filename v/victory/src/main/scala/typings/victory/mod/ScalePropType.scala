@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScalePropType extends StObject
 object ScalePropType {
   
-  @scala.inline
-  def linear: typings.victory.victoryStrings.linear = "linear".asInstanceOf[typings.victory.victoryStrings.linear]
+  inline def linear: typings.victory.victoryStrings.linear = "linear".asInstanceOf[typings.victory.victoryStrings.linear]
   
-  @scala.inline
-  def log: typings.victory.victoryStrings.log = "log".asInstanceOf[typings.victory.victoryStrings.log]
+  inline def log: typings.victory.victoryStrings.log = "log".asInstanceOf[typings.victory.victoryStrings.log]
   
-  @scala.inline
-  def sqrt: typings.victory.victoryStrings.sqrt = "sqrt".asInstanceOf[typings.victory.victoryStrings.sqrt]
+  inline def sqrt: typings.victory.victoryStrings.sqrt = "sqrt".asInstanceOf[typings.victory.victoryStrings.sqrt]
   
-  @scala.inline
-  def time: typings.victory.victoryStrings.time = "time".asInstanceOf[typings.victory.victoryStrings.time]
+  inline def time: typings.victory.victoryStrings.time = "time".asInstanceOf[typings.victory.victoryStrings.time]
 }

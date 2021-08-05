@@ -68,26 +68,20 @@ object usZipcode {
   }
   object City {
     
-    @scala.inline
-    def apply(city: String, mailableCity: String, state: String, stateAbbreviation: String): City = {
+    inline def apply(city: String, mailableCity: String, state: String, stateAbbreviation: String): City = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], mailableCity = mailableCity.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stateAbbreviation = stateAbbreviation.asInstanceOf[js.Any])
       __obj.asInstanceOf[City]
     }
     
-    @scala.inline
-    implicit class CityMutableBuilder[Self <: City] (val x: Self) extends AnyVal {
+    extension [Self <: City](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailableCity(value: String): Self = StObject.set(x, "mailableCity", value.asInstanceOf[js.Any])
+      inline def setMailableCity(value: String): Self = StObject.set(x, "mailableCity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateAbbreviation(value: String): Self = StObject.set(x, "stateAbbreviation", value.asInstanceOf[js.Any])
+      inline def setStateAbbreviation(value: String): Self = StObject.set(x, "stateAbbreviation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,26 +97,20 @@ object usZipcode {
   }
   object County {
     
-    @scala.inline
-    def apply(countyFips: js.Any, countyName: String, state: String, stateAbbreviation: String): County = {
+    inline def apply(countyFips: js.Any, countyName: String, state: String, stateAbbreviation: String): County = {
       val __obj = js.Dynamic.literal(countyFips = countyFips.asInstanceOf[js.Any], countyName = countyName.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stateAbbreviation = stateAbbreviation.asInstanceOf[js.Any])
       __obj.asInstanceOf[County]
     }
     
-    @scala.inline
-    implicit class CountyMutableBuilder[Self <: County] (val x: Self) extends AnyVal {
+    extension [Self <: County](x: Self) {
       
-      @scala.inline
-      def setCountyFips(value: js.Any): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
+      inline def setCountyFips(value: js.Any): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountyName(value: String): Self = StObject.set(x, "countyName", value.asInstanceOf[js.Any])
+      inline def setCountyName(value: String): Self = StObject.set(x, "countyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateAbbreviation(value: String): Self = StObject.set(x, "stateAbbreviation", value.asInstanceOf[js.Any])
+      inline def setStateAbbreviation(value: String): Self = StObject.set(x, "stateAbbreviation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,8 +140,7 @@ object usZipcode {
   }
   object ZipCode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alternateCounties: js.Array[County],
       countyFips: js.Any,
       countyName: String,
@@ -170,44 +157,31 @@ object usZipcode {
       __obj.asInstanceOf[ZipCode]
     }
     
-    @scala.inline
-    implicit class ZipCodeMutableBuilder[Self <: ZipCode] (val x: Self) extends AnyVal {
+    extension [Self <: ZipCode](x: Self) {
       
-      @scala.inline
-      def setAlternateCounties(value: js.Array[County]): Self = StObject.set(x, "alternateCounties", value.asInstanceOf[js.Any])
+      inline def setAlternateCounties(value: js.Array[County]): Self = StObject.set(x, "alternateCounties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateCountiesVarargs(value: County*): Self = StObject.set(x, "alternateCounties", js.Array(value :_*))
+      inline def setAlternateCountiesVarargs(value: County*): Self = StObject.set(x, "alternateCounties", js.Array(value :_*))
       
-      @scala.inline
-      def setCountyFips(value: js.Any): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
+      inline def setCountyFips(value: js.Any): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountyName(value: String): Self = StObject.set(x, "countyName", value.asInstanceOf[js.Any])
+      inline def setCountyName(value: String): Self = StObject.set(x, "countyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCity(value: String): Self = StObject.set(x, "defaultCity", value.asInstanceOf[js.Any])
+      inline def setDefaultCity(value: String): Self = StObject.set(x, "defaultCity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateAbbreviation(value: String): Self = StObject.set(x, "stateAbbreviation", value.asInstanceOf[js.Any])
+      inline def setStateAbbreviation(value: String): Self = StObject.set(x, "stateAbbreviation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipcode(value: String): Self = StObject.set(x, "zipcode", value.asInstanceOf[js.Any])
+      inline def setZipcode(value: String): Self = StObject.set(x, "zipcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipcodeType(value: String): Self = StObject.set(x, "zipcodeType", value.asInstanceOf[js.Any])
+      inline def setZipcodeType(value: String): Self = StObject.set(x, "zipcodeType", value.asInstanceOf[js.Any])
     }
   }
 }

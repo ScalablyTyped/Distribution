@@ -24,52 +24,37 @@ trait Gap extends StObject {
 }
 object Gap {
   
-  @scala.inline
-  def apply(): Gap = {
+  inline def apply(): Gap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Gap]
   }
   
-  @scala.inline
-  implicit class GapMutableBuilder[Self <: Gap] (val x: Self) extends AnyVal {
+  extension [Self <: Gap](x: Self) {
     
-    @scala.inline
-    def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBorder(value: BorderType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: BorderType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setBorderVarargs(value: Error*): Self = StObject.set(x, "border", js.Array(value :_*))
+    inline def setBorderVarargs(value: Error*): Self = StObject.set(x, "border", js.Array(value :_*))
     
-    @scala.inline
-    def setFont(value: SizeWeight): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: SizeWeight): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setGap(value: GapType): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: GapType): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    @scala.inline
-    def setHover(value: `5`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `5`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

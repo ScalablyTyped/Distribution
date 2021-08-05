@@ -26,41 +26,30 @@ object aa {
   }
   object IExternalFormValidationConfig {
     
-    @scala.inline
-    def apply(validations: js.Any): IExternalFormValidationConfig = {
+    inline def apply(validations: js.Any): IExternalFormValidationConfig = {
       val __obj = js.Dynamic.literal(validations = validations.asInstanceOf[js.Any])
       __obj.asInstanceOf[IExternalFormValidationConfig]
     }
     
-    @scala.inline
-    implicit class IExternalFormValidationConfigMutableBuilder[Self <: IExternalFormValidationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IExternalFormValidationConfig](x: Self) {
       
-      @scala.inline
-      def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+      inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Any): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Any): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setResolve(value: js.Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: js.Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveFn(value: /* modelValue */ String => String): Self = StObject.set(x, "resolveFn", js.Any.fromFunction1(value))
+      inline def setResolveFn(value: /* modelValue */ String => String): Self = StObject.set(x, "resolveFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveFnUndefined: Self = StObject.set(x, "resolveFn", js.undefined)
+      inline def setResolveFnUndefined: Self = StObject.set(x, "resolveFn", js.undefined)
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      @scala.inline
-      def setValidations(value: js.Any): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
+      inline def setValidations(value: js.Any): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +93,7 @@ object aa {
   }
   object IFormExtensionsProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $get: js.Any,
       confirmResetStrategy: () => Boolean,
       defaultFieldGroupStrategy: String,
@@ -128,56 +116,39 @@ object aa {
       __obj.asInstanceOf[IFormExtensionsProvider]
     }
     
-    @scala.inline
-    implicit class IFormExtensionsProviderMutableBuilder[Self <: IFormExtensionsProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IFormExtensionsProvider](x: Self) {
       
-      @scala.inline
-      def setConfirmResetStrategy(value: () => Boolean): Self = StObject.set(x, "confirmResetStrategy", js.Any.fromFunction0(value))
+      inline def setConfirmResetStrategy(value: () => Boolean): Self = StObject.set(x, "confirmResetStrategy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultFieldGroupStrategy(value: String): Self = StObject.set(x, "defaultFieldGroupStrategy", value.asInstanceOf[js.Any])
+      inline def setDefaultFieldGroupStrategy(value: String): Self = StObject.set(x, "defaultFieldGroupStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLabelStrategy(value: String): Self = StObject.set(x, "defaultLabelStrategy", value.asInstanceOf[js.Any])
+      inline def setDefaultLabelStrategy(value: String): Self = StObject.set(x, "defaultLabelStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultNotifyTarget(value: String): Self = StObject.set(x, "defaultNotifyTarget", value.asInstanceOf[js.Any])
+      inline def setDefaultNotifyTarget(value: String): Self = StObject.set(x, "defaultNotifyTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOnNavigateAwayStrategy(value: String): Self = StObject.set(x, "defaultOnNavigateAwayStrategy", value.asInstanceOf[js.Any])
+      inline def setDefaultOnNavigateAwayStrategy(value: String): Self = StObject.set(x, "defaultOnNavigateAwayStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSpinnerClickStrategy(value: String): Self = StObject.set(x, "defaultSpinnerClickStrategy", value.asInstanceOf[js.Any])
+      inline def setDefaultSpinnerClickStrategy(value: String): Self = StObject.set(x, "defaultSpinnerClickStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValMsgPlacementStrategy(value: String): Self = StObject.set(x, "defaultValMsgPlacementStrategy", value.asInstanceOf[js.Any])
+      inline def setDefaultValMsgPlacementStrategy(value: String): Self = StObject.set(x, "defaultValMsgPlacementStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldGroupStrategies(value: IFieldGroupStrategies): Self = StObject.set(x, "fieldGroupStrategies", value.asInstanceOf[js.Any])
+      inline def setFieldGroupStrategies(value: IFieldGroupStrategies): Self = StObject.set(x, "fieldGroupStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSettings(value: IGlobalSettings): Self = StObject.set(x, "globalSettings", value.asInstanceOf[js.Any])
+      inline def setGlobalSettings(value: IGlobalSettings): Self = StObject.set(x, "globalSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelStrategies(value: ILabelStrategies): Self = StObject.set(x, "labelStrategies", value.asInstanceOf[js.Any])
+      inline def setLabelStrategies(value: ILabelStrategies): Self = StObject.set(x, "labelStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnNavigateAwayStrategies(value: IOnNavigateAwayStrategies): Self = StObject.set(x, "onNavigateAwayStrategies", value.asInstanceOf[js.Any])
+      inline def setOnNavigateAwayStrategies(value: IOnNavigateAwayStrategies): Self = StObject.set(x, "onNavigateAwayStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerClickStrategies(value: ISpinnerClickStrategies): Self = StObject.set(x, "spinnerClickStrategies", value.asInstanceOf[js.Any])
+      inline def setSpinnerClickStrategies(value: ISpinnerClickStrategies): Self = StObject.set(x, "spinnerClickStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValMsgForTemplate(value: String): Self = StObject.set(x, "valMsgForTemplate", value.asInstanceOf[js.Any])
+      inline def setValMsgForTemplate(value: String): Self = StObject.set(x, "valMsgForTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValMsgPlacementStrategies(value: IValMsgPlacementStrategies): Self = StObject.set(x, "valMsgPlacementStrategies", value.asInstanceOf[js.Any])
+      inline def setValMsgPlacementStrategies(value: IValMsgPlacementStrategies): Self = StObject.set(x, "valMsgPlacementStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidIconStrategy(value: IValidIconStrategy): Self = StObject.set(x, "validIconStrategy", value.asInstanceOf[js.Any])
+      inline def setValidIconStrategy(value: IValidIconStrategy): Self = StObject.set(x, "validIconStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationMessages(value: IValidationMessages): Self = StObject.set(x, "validationMessages", value.asInstanceOf[js.Any])
+      inline def setValidationMessages(value: IValidationMessages): Self = StObject.set(x, "validationMessages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,35 +177,26 @@ object aa {
   }
   object INotifyConfig {
     
-    @scala.inline
-    def apply(name: String, namedDefaults: INotifyDefaults, options: INotifyOptions): INotifyConfig = {
+    inline def apply(name: String, namedDefaults: INotifyDefaults, options: INotifyOptions): INotifyConfig = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namedDefaults = namedDefaults.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[INotifyConfig]
     }
     
-    @scala.inline
-    implicit class INotifyConfigMutableBuilder[Self <: INotifyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: INotifyConfig](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedDefaults(value: INotifyDefaults): Self = StObject.set(x, "namedDefaults", value.asInstanceOf[js.Any])
+      inline def setNamedDefaults(value: INotifyDefaults): Self = StObject.set(x, "namedDefaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: INotifyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: INotifyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+      inline def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
+      inline def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -254,8 +216,7 @@ object aa {
   }
   object INotifyConfigProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $get: js.Any,
       addOrUpdateNotifyConfig: (String, INotifyConfig) => Unit,
       defaultNotifyConfig: String,
@@ -267,23 +228,17 @@ object aa {
       __obj.asInstanceOf[INotifyConfigProvider]
     }
     
-    @scala.inline
-    implicit class INotifyConfigProviderMutableBuilder[Self <: INotifyConfigProvider] (val x: Self) extends AnyVal {
+    extension [Self <: INotifyConfigProvider](x: Self) {
       
-      @scala.inline
-      def setAddOrUpdateNotifyConfig(value: (String, INotifyConfig) => Unit): Self = StObject.set(x, "addOrUpdateNotifyConfig", js.Any.fromFunction2(value))
+      inline def setAddOrUpdateNotifyConfig(value: (String, INotifyConfig) => Unit): Self = StObject.set(x, "addOrUpdateNotifyConfig", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDefaultNotifyConfig(value: String): Self = StObject.set(x, "defaultNotifyConfig", value.asInstanceOf[js.Any])
+      inline def setDefaultNotifyConfig(value: String): Self = StObject.set(x, "defaultNotifyConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTargetContainerName(value: String): Self = StObject.set(x, "defaultTargetContainerName", value.asInstanceOf[js.Any])
+      inline def setDefaultTargetContainerName(value: String): Self = StObject.set(x, "defaultTargetContainerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifyConfigs(value: js.Any): Self = StObject.set(x, "notifyConfigs", value.asInstanceOf[js.Any])
+      inline def setNotifyConfigs(value: js.Any): Self = StObject.set(x, "notifyConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsTransformer(value: (INotifyOptions, ISCEService) => Unit): Self = StObject.set(x, "optionsTransformer", js.Any.fromFunction2(value))
+      inline def setOptionsTransformer(value: (INotifyOptions, ISCEService) => Unit): Self = StObject.set(x, "optionsTransformer", js.Any.fromFunction2(value))
     }
   }
   
@@ -311,8 +266,7 @@ object aa {
   }
   object INotifyDefaults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       danger: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
       error: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
       info: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
@@ -323,23 +277,17 @@ object aa {
       __obj.asInstanceOf[INotifyDefaults]
     }
     
-    @scala.inline
-    implicit class INotifyDefaultsMutableBuilder[Self <: INotifyDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: INotifyDefaults](x: Self) {
       
-      @scala.inline
-      def setDanger(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "danger", js.Any.fromFunction3(value))
+      inline def setDanger(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "danger", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setError(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      inline def setError(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInfo(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "info", js.Any.fromFunction3(value))
+      inline def setInfo(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "info", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSuccess(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWarning(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction3(value))
+      inline def setWarning(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction3(value))
     }
   }
   
@@ -355,29 +303,22 @@ object aa {
   }
   object INotifyOptions {
     
-    @scala.inline
-    def apply(allowHtml: Boolean, message: String, messageType: String): INotifyOptions = {
+    inline def apply(allowHtml: Boolean, message: String, messageType: String): INotifyOptions = {
       val __obj = js.Dynamic.literal(allowHtml = allowHtml.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any])
       __obj.asInstanceOf[INotifyOptions]
     }
     
-    @scala.inline
-    implicit class INotifyOptionsMutableBuilder[Self <: INotifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: INotifyOptions](x: Self) {
       
-      @scala.inline
-      def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
+      inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClasses(value: String): Self = StObject.set(x, "cssClasses", value.asInstanceOf[js.Any])
+      inline def setCssClasses(value: String): Self = StObject.set(x, "cssClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassesUndefined: Self = StObject.set(x, "cssClasses", js.undefined)
+      inline def setCssClassesUndefined: Self = StObject.set(x, "cssClasses", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+      inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -413,23 +354,18 @@ object aa {
   }
   object IValidIconStrategy {
     
-    @scala.inline
-    def apply(getContainer: IAugmentedJQueryStatic => Unit, invalidIcon: String, validIcon: String): IValidIconStrategy = {
+    inline def apply(getContainer: IAugmentedJQueryStatic => Unit, invalidIcon: String, validIcon: String): IValidIconStrategy = {
       val __obj = js.Dynamic.literal(getContainer = js.Any.fromFunction1(getContainer), invalidIcon = invalidIcon.asInstanceOf[js.Any], validIcon = validIcon.asInstanceOf[js.Any])
       __obj.asInstanceOf[IValidIconStrategy]
     }
     
-    @scala.inline
-    implicit class IValidIconStrategyMutableBuilder[Self <: IValidIconStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: IValidIconStrategy](x: Self) {
       
-      @scala.inline
-      def setGetContainer(value: IAugmentedJQueryStatic => Unit): Self = StObject.set(x, "getContainer", js.Any.fromFunction1(value))
+      inline def setGetContainer(value: IAugmentedJQueryStatic => Unit): Self = StObject.set(x, "getContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvalidIcon(value: String): Self = StObject.set(x, "invalidIcon", value.asInstanceOf[js.Any])
+      inline def setInvalidIcon(value: String): Self = StObject.set(x, "invalidIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidIcon(value: String): Self = StObject.set(x, "validIcon", value.asInstanceOf[js.Any])
+      inline def setValidIcon(value: String): Self = StObject.set(x, "validIcon", value.asInstanceOf[js.Any])
     }
   }
   

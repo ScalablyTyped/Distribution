@@ -11,8 +11,7 @@ trait FactoryFunctionMap
      with /* key */ StringDictionary[FactoryFunction[js.Any] | FactoryFunctionMap]
 object FactoryFunctionMap {
   
-  @scala.inline
-  def apply(): FactoryFunctionMap = {
+  inline def apply(): FactoryFunctionMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FactoryFunctionMap]
   }

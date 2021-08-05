@@ -33,8 +33,7 @@ trait CreateDimensionRequest extends StObject {
 }
 object CreateDimensionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientRequestToken: ClientRequestToken,
     name: DimensionName,
     stringValues: DimensionStringValues,
@@ -45,31 +44,22 @@ object CreateDimensionRequest {
     __obj.asInstanceOf[CreateDimensionRequest]
   }
   
-  @scala.inline
-  implicit class CreateDimensionRequestMutableBuilder[Self <: CreateDimensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDimensionRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValues(value: DimensionStringValues): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
+    inline def setStringValues(value: DimensionStringValues): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValuesVarargs(value: DimensionStringValue*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
+    inline def setStringValuesVarargs(value: DimensionStringValue*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: DimensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DimensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ trait ParametersActivityDeleteThreadSubscriptionEndpoint extends StObject {
 }
 object ParametersActivityDeleteThreadSubscriptionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityDeleteThreadSubscriptionEndpoint,
     request: ActivityDeleteThreadSubscriptionRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityDeleteThreadSubscriptionEndpoint {
     __obj.asInstanceOf[ParametersActivityDeleteThreadSubscriptionEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityDeleteThreadSubscriptionEndpointMutableBuilder[Self <: ParametersActivityDeleteThreadSubscriptionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityDeleteThreadSubscriptionEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityDeleteThreadSubscriptionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityDeleteThreadSubscriptionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityDeleteThreadSubscriptionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityDeleteThreadSubscriptionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

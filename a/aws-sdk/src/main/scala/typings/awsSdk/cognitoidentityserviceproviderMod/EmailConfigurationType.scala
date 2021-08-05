@@ -33,43 +33,31 @@ trait EmailConfigurationType extends StObject {
 }
 object EmailConfigurationType {
   
-  @scala.inline
-  def apply(): EmailConfigurationType = {
+  inline def apply(): EmailConfigurationType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailConfigurationType]
   }
   
-  @scala.inline
-  implicit class EmailConfigurationTypeMutableBuilder[Self <: EmailConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: EmailConfigurationType](x: Self) {
     
-    @scala.inline
-    def setConfigurationSet(value: SESConfigurationSet): Self = StObject.set(x, "ConfigurationSet", value.asInstanceOf[js.Any])
+    inline def setConfigurationSet(value: SESConfigurationSet): Self = StObject.set(x, "ConfigurationSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSetUndefined: Self = StObject.set(x, "ConfigurationSet", js.undefined)
+    inline def setConfigurationSetUndefined: Self = StObject.set(x, "ConfigurationSet", js.undefined)
     
-    @scala.inline
-    def setEmailSendingAccount(value: EmailSendingAccountType): Self = StObject.set(x, "EmailSendingAccount", value.asInstanceOf[js.Any])
+    inline def setEmailSendingAccount(value: EmailSendingAccountType): Self = StObject.set(x, "EmailSendingAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSendingAccountUndefined: Self = StObject.set(x, "EmailSendingAccount", js.undefined)
+    inline def setEmailSendingAccountUndefined: Self = StObject.set(x, "EmailSendingAccount", js.undefined)
     
-    @scala.inline
-    def setFrom(value: StringType): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: StringType): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
-    @scala.inline
-    def setReplyToEmailAddress(value: EmailAddressType): Self = StObject.set(x, "ReplyToEmailAddress", value.asInstanceOf[js.Any])
+    inline def setReplyToEmailAddress(value: EmailAddressType): Self = StObject.set(x, "ReplyToEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToEmailAddressUndefined: Self = StObject.set(x, "ReplyToEmailAddress", js.undefined)
+    inline def setReplyToEmailAddressUndefined: Self = StObject.set(x, "ReplyToEmailAddress", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: ArnType): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: ArnType): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
   }
 }

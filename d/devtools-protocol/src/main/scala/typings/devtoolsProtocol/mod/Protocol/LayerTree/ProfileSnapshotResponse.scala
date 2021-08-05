@@ -13,19 +13,15 @@ trait ProfileSnapshotResponse extends StObject {
 }
 object ProfileSnapshotResponse {
   
-  @scala.inline
-  def apply(timings: js.Array[PaintProfile]): ProfileSnapshotResponse = {
+  inline def apply(timings: js.Array[PaintProfile]): ProfileSnapshotResponse = {
     val __obj = js.Dynamic.literal(timings = timings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class ProfileSnapshotResponseMutableBuilder[Self <: ProfileSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setTimings(value: js.Array[PaintProfile]): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
+    inline def setTimings(value: js.Array[PaintProfile]): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingsVarargs(value: PaintProfile*): Self = StObject.set(x, "timings", js.Array(value :_*))
+    inline def setTimingsVarargs(value: PaintProfile*): Self = StObject.set(x, "timings", js.Array(value :_*))
   }
 }

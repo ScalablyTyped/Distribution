@@ -23,8 +23,7 @@ object feedExtraMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object FeedExtraProps {
     
-    @scala.inline
-    def apply(): FeedExtraProps = {
+    inline def apply(): FeedExtraProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeedExtraProps]
     }
@@ -52,53 +51,38 @@ object feedExtraMod extends Shortcut {
   }
   object StrictFeedExtraProps {
     
-    @scala.inline
-    def apply(): StrictFeedExtraProps = {
+    inline def apply(): StrictFeedExtraProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictFeedExtraProps]
     }
     
-    @scala.inline
-    implicit class StrictFeedExtraPropsMutableBuilder[Self <: StrictFeedExtraProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictFeedExtraProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setImages(value: Boolean | js.Array[SemanticShorthandCollection[HtmlImageProps]]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: Boolean | js.Array[SemanticShorthandCollection[HtmlImageProps]]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setImagesVarargs(value: SemanticShorthandCollection[HtmlImageProps]*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: SemanticShorthandCollection[HtmlImageProps]*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   

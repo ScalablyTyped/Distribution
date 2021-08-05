@@ -17,31 +17,23 @@ trait GoogleCloudDatacatalogV1beta1BigQueryTableSpec extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1BigQueryTableSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1BigQueryTableSpec = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1BigQueryTableSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1BigQueryTableSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1BigQueryTableSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1BigQueryTableSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1BigQueryTableSpec](x: Self) {
     
-    @scala.inline
-    def setTableSourceType(value: String): Self = StObject.set(x, "tableSourceType", value.asInstanceOf[js.Any])
+    inline def setTableSourceType(value: String): Self = StObject.set(x, "tableSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableSourceTypeUndefined: Self = StObject.set(x, "tableSourceType", js.undefined)
+    inline def setTableSourceTypeUndefined: Self = StObject.set(x, "tableSourceType", js.undefined)
     
-    @scala.inline
-    def setTableSpec(value: GoogleCloudDatacatalogV1beta1TableSpec): Self = StObject.set(x, "tableSpec", value.asInstanceOf[js.Any])
+    inline def setTableSpec(value: GoogleCloudDatacatalogV1beta1TableSpec): Self = StObject.set(x, "tableSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableSpecUndefined: Self = StObject.set(x, "tableSpec", js.undefined)
+    inline def setTableSpecUndefined: Self = StObject.set(x, "tableSpec", js.undefined)
     
-    @scala.inline
-    def setViewSpec(value: GoogleCloudDatacatalogV1beta1ViewSpec): Self = StObject.set(x, "viewSpec", value.asInstanceOf[js.Any])
+    inline def setViewSpec(value: GoogleCloudDatacatalogV1beta1ViewSpec): Self = StObject.set(x, "viewSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewSpecUndefined: Self = StObject.set(x, "viewSpec", js.undefined)
+    inline def setViewSpecUndefined: Self = StObject.set(x, "viewSpec", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait TestMethod extends StObject {
 }
 object TestMethod {
   
-  @scala.inline
-  def apply(container: String, name: String): TestMethod = {
+  inline def apply(container: String, name: String): TestMethod = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestMethod]
   }
   
-  @scala.inline
-  implicit class TestMethodMutableBuilder[Self <: TestMethod] (val x: Self) extends AnyVal {
+  extension [Self <: TestMethod](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

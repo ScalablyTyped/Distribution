@@ -12,19 +12,15 @@ trait IsFloatOptions
 }
 object IsFloatOptions {
   
-  @scala.inline
-  def apply(): IsFloatOptions = {
+  inline def apply(): IsFloatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsFloatOptions]
   }
   
-  @scala.inline
-  implicit class IsFloatOptionsMutableBuilder[Self <: IsFloatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsFloatOptions](x: Self) {
     
-    @scala.inline
-    def setLocale(value: AlphanumericLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: AlphanumericLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

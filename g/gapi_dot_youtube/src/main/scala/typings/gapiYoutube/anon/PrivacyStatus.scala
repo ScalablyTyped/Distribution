@@ -13,16 +13,13 @@ trait PrivacyStatus extends StObject {
 }
 object PrivacyStatus {
   
-  @scala.inline
-  def apply(privacyStatus: String): PrivacyStatus = {
+  inline def apply(privacyStatus: String): PrivacyStatus = {
     val __obj = js.Dynamic.literal(privacyStatus = privacyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivacyStatus]
   }
   
-  @scala.inline
-  implicit class PrivacyStatusMutableBuilder[Self <: PrivacyStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PrivacyStatus](x: Self) {
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
   }
 }

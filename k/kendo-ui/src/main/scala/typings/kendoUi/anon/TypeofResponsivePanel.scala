@@ -15,19 +15,15 @@ trait TypeofResponsivePanel extends StObject {
 }
 object TypeofResponsivePanel {
   
-  @scala.inline
-  def apply(extend: js.Object => ResponsivePanel, fn: ResponsivePanel): TypeofResponsivePanel = {
+  inline def apply(extend: js.Object => ResponsivePanel, fn: ResponsivePanel): TypeofResponsivePanel = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofResponsivePanel]
   }
   
-  @scala.inline
-  implicit class TypeofResponsivePanelMutableBuilder[Self <: TypeofResponsivePanel] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofResponsivePanel](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ResponsivePanel): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ResponsivePanel): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ResponsivePanel): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ResponsivePanel): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

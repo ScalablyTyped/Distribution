@@ -22,8 +22,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
   
   @JSImport("p-time", JSImport.Namespace)
   @js.native
@@ -33,16 +32,14 @@ object mod {
   @JSImport("p-time", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTime */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Measure the time a promise takes to resolve. Logs the elapsed time.
   	@param asyncFunction - Promise-returning/async function.
   	@returns A decorated version of `asyncFunction`.
   	*/
-  @scala.inline
-  def log[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
+  inline def log[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
   
   @js.native
   trait PromiseWithTime[ValueType]

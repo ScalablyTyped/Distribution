@@ -32,23 +32,19 @@ object signature {
     var packets: List = js.native
   }
   
-  @scala.inline
-  def read(input: ReadableStream[Uint8Array]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def read(input: ReadableStream[Uint8Array]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
   /**
     * reads an OpenPGP signature as byte array and returns a signature object
     * @param input binary signature
     * @returns new signature object
     */
-  @scala.inline
-  def read(input: Uint8Array): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def read(input: Uint8Array): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
   
   /**
     * reads an OpenPGP armored signature and returns a signature object
     * @param armoredText text to be parsed
     * @returns new signature object
     */
-  @scala.inline
-  def readArmored(armoredText: String): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
-  @scala.inline
-  def readArmored(armoredText: ReadableStream[String]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def readArmored(armoredText: String): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def readArmored(armoredText: ReadableStream[String]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
 }

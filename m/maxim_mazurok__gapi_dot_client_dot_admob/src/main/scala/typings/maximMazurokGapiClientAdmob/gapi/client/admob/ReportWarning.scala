@@ -14,25 +14,19 @@ trait ReportWarning extends StObject {
 }
 object ReportWarning {
   
-  @scala.inline
-  def apply(): ReportWarning = {
+  inline def apply(): ReportWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportWarning]
   }
   
-  @scala.inline
-  implicit class ReportWarningMutableBuilder[Self <: ReportWarning] (val x: Self) extends AnyVal {
+  extension [Self <: ReportWarning](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

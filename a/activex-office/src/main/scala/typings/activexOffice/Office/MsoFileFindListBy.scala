@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFileFindListBy extends StObject
 object MsoFileFindListBy {
   
-  @scala.inline
-  def msoListbyName: `1` = 1.asInstanceOf[`1`]
+  inline def msoListbyName: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoListbyTitle: `2` = 2.asInstanceOf[`2`]
+  inline def msoListbyTitle: `2` = 2.asInstanceOf[`2`]
 }

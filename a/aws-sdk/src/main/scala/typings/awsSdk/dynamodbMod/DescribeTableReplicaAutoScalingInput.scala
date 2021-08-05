@@ -13,16 +13,13 @@ trait DescribeTableReplicaAutoScalingInput extends StObject {
 }
 object DescribeTableReplicaAutoScalingInput {
   
-  @scala.inline
-  def apply(TableName: TableName): DescribeTableReplicaAutoScalingInput = {
+  inline def apply(TableName: TableName): DescribeTableReplicaAutoScalingInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableReplicaAutoScalingInput]
   }
   
-  @scala.inline
-  implicit class DescribeTableReplicaAutoScalingInputMutableBuilder[Self <: DescribeTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTableReplicaAutoScalingInput](x: Self) {
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

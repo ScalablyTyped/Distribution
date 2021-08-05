@@ -20,8 +20,7 @@ trait ParametersPullsMergeEndpoint extends StObject {
 }
 object ParametersPullsMergeEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: PullsMergeEndpoint,
     request: PullsMergeRequestOptions,
     response: OctokitResponse[PullsMergeResponseData | PullsMergeResponse405Data | PullsMergeResponse409Data]
@@ -30,17 +29,13 @@ object ParametersPullsMergeEndpoint {
     __obj.asInstanceOf[ParametersPullsMergeEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersPullsMergeEndpointMutableBuilder[Self <: ParametersPullsMergeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersPullsMergeEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PullsMergeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PullsMergeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: PullsMergeRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: PullsMergeRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[PullsMergeResponseData | PullsMergeResponse405Data | PullsMergeResponse409Data]
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

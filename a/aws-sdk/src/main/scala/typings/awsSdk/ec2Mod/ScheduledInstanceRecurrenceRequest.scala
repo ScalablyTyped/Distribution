@@ -33,46 +33,33 @@ trait ScheduledInstanceRecurrenceRequest extends StObject {
 }
 object ScheduledInstanceRecurrenceRequest {
   
-  @scala.inline
-  def apply(): ScheduledInstanceRecurrenceRequest = {
+  inline def apply(): ScheduledInstanceRecurrenceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledInstanceRecurrenceRequest]
   }
   
-  @scala.inline
-  implicit class ScheduledInstanceRecurrenceRequestMutableBuilder[Self <: ScheduledInstanceRecurrenceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledInstanceRecurrenceRequest](x: Self) {
     
-    @scala.inline
-    def setFrequency(value: String): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: String): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Integer): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Integer): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
-    @scala.inline
-    def setOccurrenceDays(value: OccurrenceDayRequestSet): Self = StObject.set(x, "OccurrenceDays", value.asInstanceOf[js.Any])
+    inline def setOccurrenceDays(value: OccurrenceDayRequestSet): Self = StObject.set(x, "OccurrenceDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceDaysUndefined: Self = StObject.set(x, "OccurrenceDays", js.undefined)
+    inline def setOccurrenceDaysUndefined: Self = StObject.set(x, "OccurrenceDays", js.undefined)
     
-    @scala.inline
-    def setOccurrenceDaysVarargs(value: Integer*): Self = StObject.set(x, "OccurrenceDays", js.Array(value :_*))
+    inline def setOccurrenceDaysVarargs(value: Integer*): Self = StObject.set(x, "OccurrenceDays", js.Array(value :_*))
     
-    @scala.inline
-    def setOccurrenceRelativeToEnd(value: Boolean): Self = StObject.set(x, "OccurrenceRelativeToEnd", value.asInstanceOf[js.Any])
+    inline def setOccurrenceRelativeToEnd(value: Boolean): Self = StObject.set(x, "OccurrenceRelativeToEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceRelativeToEndUndefined: Self = StObject.set(x, "OccurrenceRelativeToEnd", js.undefined)
+    inline def setOccurrenceRelativeToEndUndefined: Self = StObject.set(x, "OccurrenceRelativeToEnd", js.undefined)
     
-    @scala.inline
-    def setOccurrenceUnit(value: String): Self = StObject.set(x, "OccurrenceUnit", value.asInstanceOf[js.Any])
+    inline def setOccurrenceUnit(value: String): Self = StObject.set(x, "OccurrenceUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceUnitUndefined: Self = StObject.set(x, "OccurrenceUnit", js.undefined)
+    inline def setOccurrenceUnitUndefined: Self = StObject.set(x, "OccurrenceUnit", js.undefined)
   }
 }

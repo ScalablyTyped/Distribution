@@ -13,7 +13,7 @@ object abortSignalMod {
     extends StObject
        with typings.awsSdkTypes.abortMod.AbortSignal {
     
-    var _aborted: js.Any = js.native
+    /* private */ var _aborted: js.Any = js.native
     
     /**
       * Whether the action represented by this signal has been cancelled.

@@ -14,19 +14,15 @@ trait IAbstractUnitJson
 }
 object IAbstractUnitJson {
   
-  @scala.inline
-  def apply($ID: String, $Type: String, containerId: String, containmentName: String): IAbstractUnitJson = {
+  inline def apply($ID: String, $Type: String, containerId: String, containmentName: String): IAbstractUnitJson = {
     val __obj = js.Dynamic.literal($ID = $ID.asInstanceOf[js.Any], $Type = $Type.asInstanceOf[js.Any], containerId = containerId.asInstanceOf[js.Any], containmentName = containmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstractUnitJson]
   }
   
-  @scala.inline
-  implicit class IAbstractUnitJsonMutableBuilder[Self <: IAbstractUnitJson] (val x: Self) extends AnyVal {
+  extension [Self <: IAbstractUnitJson](x: Self) {
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainmentName(value: String): Self = StObject.set(x, "containmentName", value.asInstanceOf[js.Any])
+    inline def setContainmentName(value: String): Self = StObject.set(x, "containmentName", value.asInstanceOf[js.Any])
   }
 }

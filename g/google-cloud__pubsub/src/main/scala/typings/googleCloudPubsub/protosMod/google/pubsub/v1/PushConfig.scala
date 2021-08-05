@@ -83,10 +83,8 @@ object PushConfig {
       * @returns OidcToken instance
       */
     /* static member */
-    @scala.inline
-    def create(): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OidcToken]
-    @scala.inline
-    def create(properties: IOidcToken): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    inline def create(): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OidcToken]
+    inline def create(properties: IOidcToken): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
     
     /**
       * Decodes an OidcToken message from the specified reader or buffer.
@@ -97,14 +95,10 @@ object PushConfig {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
-    @scala.inline
-    def decode(reader: Reader, length: Double): OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OidcToken]
-    @scala.inline
-    def decode(reader: Uint8Array): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OidcToken]
+    inline def decode(reader: Reader): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    inline def decode(reader: Reader, length: Double): OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OidcToken]
+    inline def decode(reader: Uint8Array): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    inline def decode(reader: Uint8Array, length: Double): OidcToken = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OidcToken]
     
     /**
       * Decodes an OidcToken message from the specified reader or buffer, length delimited.
@@ -114,10 +108,8 @@ object PushConfig {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    inline def decodeDelimited(reader: Reader): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    inline def decodeDelimited(reader: Uint8Array): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
     
     /**
       * Encodes the specified OidcToken message. Does not implicitly {@link google.pubsub.v1.PushConfig.OidcToken.verify|verify} messages.
@@ -126,10 +118,8 @@ object PushConfig {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified OidcToken message, length delimited. Does not implicitly {@link google.pubsub.v1.PushConfig.OidcToken.verify|verify} messages.
@@ -138,10 +128,8 @@ object PushConfig {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IOidcToken): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IOidcToken, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an OidcToken message from a plain object. Also converts values to their respective internal types.
@@ -149,8 +137,7 @@ object PushConfig {
       * @returns OidcToken
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
+    inline def fromObject(`object`: StringDictionary[js.Any]): OidcToken = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OidcToken]
     
     /**
       * Creates a plain object from an OidcToken message. Also converts values to other types if specified.
@@ -159,10 +146,8 @@ object PushConfig {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: OidcToken): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: OidcToken, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: OidcToken): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: OidcToken, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an OidcToken message.
@@ -170,8 +155,7 @@ object PushConfig {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -180,10 +164,8 @@ object PushConfig {
     * @returns PushConfig instance
     */
   /* static member */
-  @scala.inline
-  def create(): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PushConfig]
-  @scala.inline
-  def create(properties: IPushConfig): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  inline def create(): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PushConfig]
+  inline def create(properties: IPushConfig): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
   
   /**
     * Decodes a PushConfig message from the specified reader or buffer.
@@ -194,14 +176,10 @@ object PushConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
-  @scala.inline
-  def decode(reader: Reader, length: Double): PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PushConfig]
-  @scala.inline
-  def decode(reader: Uint8Array): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PushConfig]
+  inline def decode(reader: Reader): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  inline def decode(reader: Reader, length: Double): PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PushConfig]
+  inline def decode(reader: Uint8Array): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  inline def decode(reader: Uint8Array, length: Double): PushConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PushConfig]
   
   /**
     * Decodes a PushConfig message from the specified reader or buffer, length delimited.
@@ -211,10 +189,8 @@ object PushConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  inline def decodeDelimited(reader: Reader): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  inline def decodeDelimited(reader: Uint8Array): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
   
   /**
     * Encodes the specified PushConfig message. Does not implicitly {@link google.pubsub.v1.PushConfig.verify|verify} messages.
@@ -223,10 +199,8 @@ object PushConfig {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified PushConfig message, length delimited. Does not implicitly {@link google.pubsub.v1.PushConfig.verify|verify} messages.
@@ -235,10 +209,8 @@ object PushConfig {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IPushConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IPushConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a PushConfig message from a plain object. Also converts values to their respective internal types.
@@ -246,8 +218,7 @@ object PushConfig {
     * @returns PushConfig
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
+  inline def fromObject(`object`: StringDictionary[js.Any]): PushConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PushConfig]
   
   /**
     * Creates a plain object from a PushConfig message. Also converts values to other types if specified.
@@ -256,10 +227,8 @@ object PushConfig {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: PushConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: PushConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: PushConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: PushConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a PushConfig message.
@@ -267,8 +236,7 @@ object PushConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an OidcToken. */
   trait IOidcToken extends StObject {
@@ -281,32 +249,24 @@ object PushConfig {
   }
   object IOidcToken {
     
-    @scala.inline
-    def apply(): IOidcToken = {
+    inline def apply(): IOidcToken = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOidcToken]
     }
     
-    @scala.inline
-    implicit class IOidcTokenMutableBuilder[Self <: IOidcToken] (val x: Self) extends AnyVal {
+    extension [Self <: IOidcToken](x: Self) {
       
-      @scala.inline
-      def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceNull: Self = StObject.set(x, "audience", null)
+      inline def setAudienceNull: Self = StObject.set(x, "audience", null)
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+      inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccountEmailNull: Self = StObject.set(x, "serviceAccountEmail", null)
+      inline def setServiceAccountEmailNull: Self = StObject.set(x, "serviceAccountEmail", null)
       
-      @scala.inline
-      def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+      inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     }
   }
 }

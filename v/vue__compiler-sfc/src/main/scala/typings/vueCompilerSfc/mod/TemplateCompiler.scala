@@ -16,19 +16,15 @@ trait TemplateCompiler extends StObject {
 }
 object TemplateCompiler {
   
-  @scala.inline
-  def apply(compile: (String, CompilerOptions) => CodegenResult, parse: (String, ParserOptions) => RootNode): TemplateCompiler = {
+  inline def apply(compile: (String, CompilerOptions) => CodegenResult, parse: (String, ParserOptions) => RootNode): TemplateCompiler = {
     val __obj = js.Dynamic.literal(compile = js.Any.fromFunction2(compile), parse = js.Any.fromFunction2(parse))
     __obj.asInstanceOf[TemplateCompiler]
   }
   
-  @scala.inline
-  implicit class TemplateCompilerMutableBuilder[Self <: TemplateCompiler] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateCompiler](x: Self) {
     
-    @scala.inline
-    def setCompile(value: (String, CompilerOptions) => CodegenResult): Self = StObject.set(x, "compile", js.Any.fromFunction2(value))
+    inline def setCompile(value: (String, CompilerOptions) => CodegenResult): Self = StObject.set(x, "compile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParse(value: (String, ParserOptions) => RootNode): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    inline def setParse(value: (String, ParserOptions) => RootNode): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
   }
 }

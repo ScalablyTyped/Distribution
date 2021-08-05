@@ -12,19 +12,15 @@ trait InsightsServicePostResponseImage extends StObject {
 }
 object InsightsServicePostResponseImage {
   
-  @scala.inline
-  def apply(height: Double, width: Double): InsightsServicePostResponseImage = {
+  inline def apply(height: Double, width: Double): InsightsServicePostResponseImage = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseImage]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseImageMutableBuilder[Self <: InsightsServicePostResponseImage] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseImage](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

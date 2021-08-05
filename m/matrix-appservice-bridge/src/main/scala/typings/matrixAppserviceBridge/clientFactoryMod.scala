@@ -12,13 +12,13 @@ object clientFactoryMod {
   class ClientFactory () extends StObject {
     def this(opts: ClientFactoryOpts) = this()
     
-    var _getClient: js.Any = js.native
+    /* private */ var _getClient: js.Any = js.native
     
-    var botUserId: js.Any = js.native
+    /* private */ var botUserId: js.Any = js.native
     
-    var clientSchedulerBuilder: js.Any = js.native
+    /* private */ var clientSchedulerBuilder: js.Any = js.native
     
-    var clients: js.Any = js.native
+    /* private */ var clients: js.Any = js.native
     
     /**
       * Configure the factory for generating clients.
@@ -56,7 +56,7 @@ object clientFactoryMod {
     def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: String, usingE2E: Boolean): js.Any = js.native
     def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
     
-    var sdk: js.Any = js.native
+    /* private */ var sdk: js.Any = js.native
     
     /**
       * Set a function to be called when logging requests and responses.
@@ -65,9 +65,9 @@ object clientFactoryMod {
       */
     def setLogFunction(func: js.Function2[/* msg */ String, /* error */ js.UndefOr[Boolean], Unit]): Unit = js.native
     
-    var token: js.Any = js.native
+    /* private */ var token: js.Any = js.native
     
-    var url: js.Any = js.native
+    /* private */ var url: js.Any = js.native
   }
   
   /**
@@ -100,44 +100,32 @@ object clientFactoryMod {
   }
   object ClientFactoryOpts {
     
-    @scala.inline
-    def apply(): ClientFactoryOpts = {
+    inline def apply(): ClientFactoryOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientFactoryOpts]
     }
     
-    @scala.inline
-    implicit class ClientFactoryOptsMutableBuilder[Self <: ClientFactoryOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ClientFactoryOpts](x: Self) {
       
-      @scala.inline
-      def setAppServiceUserId(value: String): Self = StObject.set(x, "appServiceUserId", value.asInstanceOf[js.Any])
+      inline def setAppServiceUserId(value: String): Self = StObject.set(x, "appServiceUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppServiceUserIdUndefined: Self = StObject.set(x, "appServiceUserId", js.undefined)
+      inline def setAppServiceUserIdUndefined: Self = StObject.set(x, "appServiceUserId", js.undefined)
       
-      @scala.inline
-      def setClientSchedulerBuilder(value: () => js.Any): Self = StObject.set(x, "clientSchedulerBuilder", js.Any.fromFunction0(value))
+      inline def setClientSchedulerBuilder(value: () => js.Any): Self = StObject.set(x, "clientSchedulerBuilder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClientSchedulerBuilderUndefined: Self = StObject.set(x, "clientSchedulerBuilder", js.undefined)
+      inline def setClientSchedulerBuilderUndefined: Self = StObject.set(x, "clientSchedulerBuilder", js.undefined)
       
-      @scala.inline
-      def setSdk(value: js.Any): Self = StObject.set(x, "sdk", value.asInstanceOf[js.Any])
+      inline def setSdk(value: js.Any): Self = StObject.set(x, "sdk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSdkUndefined: Self = StObject.set(x, "sdk", js.undefined)
+      inline def setSdkUndefined: Self = StObject.set(x, "sdk", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

@@ -22,8 +22,7 @@ trait ISeriesPointer extends StObject {
 }
 object ISeriesPointer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: IChart,
     colorEach: Boolean,
     format: IFormat,
@@ -36,28 +35,20 @@ object ISeriesPointer {
     __obj.asInstanceOf[ISeriesPointer]
   }
   
-  @scala.inline
-  implicit class ISeriesPointerMutableBuilder[Self <: ISeriesPointer] (val x: Self) extends AnyVal {
+  extension [Self <: ISeriesPointer](x: Self) {
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorEach(value: Boolean): Self = StObject.set(x, "colorEach", value.asInstanceOf[js.Any])
+    inline def setColorEach(value: Boolean): Self = StObject.set(x, "colorEach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

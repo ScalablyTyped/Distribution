@@ -22,20 +22,16 @@ object composeMod extends Shortcut {
   }
   object ComposeProps {
     
-    @scala.inline
-    def apply(): ComposeProps = {
+    inline def apply(): ComposeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComposeProps]
     }
     
-    @scala.inline
-    implicit class ComposePropsMutableBuilder[Self <: ComposeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComposeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

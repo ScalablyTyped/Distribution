@@ -18,28 +18,21 @@ trait DescribeEventTopicsRequest extends StObject {
 }
 object DescribeEventTopicsRequest {
   
-  @scala.inline
-  def apply(): DescribeEventTopicsRequest = {
+  inline def apply(): DescribeEventTopicsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventTopicsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEventTopicsRequestMutableBuilder[Self <: DescribeEventTopicsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventTopicsRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setTopicNames(value: TopicNames): Self = StObject.set(x, "TopicNames", value.asInstanceOf[js.Any])
+    inline def setTopicNames(value: TopicNames): Self = StObject.set(x, "TopicNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNamesUndefined: Self = StObject.set(x, "TopicNames", js.undefined)
+    inline def setTopicNamesUndefined: Self = StObject.set(x, "TopicNames", js.undefined)
     
-    @scala.inline
-    def setTopicNamesVarargs(value: TopicName*): Self = StObject.set(x, "TopicNames", js.Array(value :_*))
+    inline def setTopicNamesVarargs(value: TopicName*): Self = StObject.set(x, "TopicNames", js.Array(value :_*))
   }
 }

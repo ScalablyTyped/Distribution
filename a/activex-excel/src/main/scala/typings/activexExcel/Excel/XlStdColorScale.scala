@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlStdColorScale extends StObject
 object XlStdColorScale {
   
-  @scala.inline
-  def xlColorScaleBlackWhite: `3` = 3.asInstanceOf[`3`]
+  inline def xlColorScaleBlackWhite: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlColorScaleGYR: `2` = 2.asInstanceOf[`2`]
+  inline def xlColorScaleGYR: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlColorScaleRYG: `1` = 1.asInstanceOf[`1`]
+  inline def xlColorScaleRYG: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlColorScaleWhiteBlack: `4` = 4.asInstanceOf[`4`]
+  inline def xlColorScaleWhiteBlack: `4` = 4.asInstanceOf[`4`]
 }

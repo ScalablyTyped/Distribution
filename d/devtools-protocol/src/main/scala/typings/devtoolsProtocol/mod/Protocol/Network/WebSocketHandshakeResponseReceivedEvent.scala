@@ -23,22 +23,17 @@ trait WebSocketHandshakeResponseReceivedEvent extends StObject {
 }
 object WebSocketHandshakeResponseReceivedEvent {
   
-  @scala.inline
-  def apply(requestId: RequestId, response: WebSocketResponse, timestamp: MonotonicTime): WebSocketHandshakeResponseReceivedEvent = {
+  inline def apply(requestId: RequestId, response: WebSocketResponse, timestamp: MonotonicTime): WebSocketHandshakeResponseReceivedEvent = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketHandshakeResponseReceivedEvent]
   }
   
-  @scala.inline
-  implicit class WebSocketHandshakeResponseReceivedEventMutableBuilder[Self <: WebSocketHandshakeResponseReceivedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WebSocketHandshakeResponseReceivedEvent](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: WebSocketResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: WebSocketResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

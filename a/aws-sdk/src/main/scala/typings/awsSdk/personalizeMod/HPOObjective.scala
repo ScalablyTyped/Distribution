@@ -23,31 +23,23 @@ trait HPOObjective extends StObject {
 }
 object HPOObjective {
   
-  @scala.inline
-  def apply(): HPOObjective = {
+  inline def apply(): HPOObjective = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HPOObjective]
   }
   
-  @scala.inline
-  implicit class HPOObjectiveMutableBuilder[Self <: HPOObjective] (val x: Self) extends AnyVal {
+  extension [Self <: HPOObjective](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
-    @scala.inline
-    def setMetricRegex(value: MetricRegex): Self = StObject.set(x, "metricRegex", value.asInstanceOf[js.Any])
+    inline def setMetricRegex(value: MetricRegex): Self = StObject.set(x, "metricRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricRegexUndefined: Self = StObject.set(x, "metricRegex", js.undefined)
+    inline def setMetricRegexUndefined: Self = StObject.set(x, "metricRegex", js.undefined)
     
-    @scala.inline
-    def setType(value: HPOObjectiveType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HPOObjectiveType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

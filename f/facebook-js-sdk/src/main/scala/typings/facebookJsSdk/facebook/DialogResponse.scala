@@ -12,25 +12,19 @@ trait DialogResponse extends StObject {
 }
 object DialogResponse {
   
-  @scala.inline
-  def apply(): DialogResponse = {
+  inline def apply(): DialogResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogResponse]
   }
   
-  @scala.inline
-  implicit class DialogResponseMutableBuilder[Self <: DialogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DialogResponse](x: Self) {
     
-    @scala.inline
-    def setError_code(value: Double): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
+    inline def setError_code(value: Double): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_codeUndefined: Self = StObject.set(x, "error_code", js.undefined)
+    inline def setError_codeUndefined: Self = StObject.set(x, "error_code", js.undefined)
     
-    @scala.inline
-    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_messageUndefined: Self = StObject.set(x, "error_message", js.undefined)
+    inline def setError_messageUndefined: Self = StObject.set(x, "error_message", js.undefined)
   }
 }

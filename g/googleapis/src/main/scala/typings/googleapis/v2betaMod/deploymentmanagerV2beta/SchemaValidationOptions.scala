@@ -22,25 +22,19 @@ trait SchemaValidationOptions extends StObject {
 }
 object SchemaValidationOptions {
   
-  @scala.inline
-  def apply(): SchemaValidationOptions = {
+  inline def apply(): SchemaValidationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaValidationOptions]
   }
   
-  @scala.inline
-  implicit class SchemaValidationOptionsMutableBuilder[Self <: SchemaValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaValidationOptions](x: Self) {
     
-    @scala.inline
-    def setSchemaValidation(value: String): Self = StObject.set(x, "schemaValidation", value.asInstanceOf[js.Any])
+    inline def setSchemaValidation(value: String): Self = StObject.set(x, "schemaValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaValidationUndefined: Self = StObject.set(x, "schemaValidation", js.undefined)
+    inline def setSchemaValidationUndefined: Self = StObject.set(x, "schemaValidation", js.undefined)
     
-    @scala.inline
-    def setUndeclaredProperties(value: String): Self = StObject.set(x, "undeclaredProperties", value.asInstanceOf[js.Any])
+    inline def setUndeclaredProperties(value: String): Self = StObject.set(x, "undeclaredProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndeclaredPropertiesUndefined: Self = StObject.set(x, "undeclaredProperties", js.undefined)
+    inline def setUndeclaredPropertiesUndefined: Self = StObject.set(x, "undeclaredProperties", js.undefined)
   }
 }

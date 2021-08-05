@@ -12,19 +12,15 @@ trait CurrPage extends StObject {
 }
 object CurrPage {
   
-  @scala.inline
-  def apply(currPage: Double, currSizePerPage: Double): CurrPage = {
+  inline def apply(currPage: Double, currSizePerPage: Double): CurrPage = {
     val __obj = js.Dynamic.literal(currPage = currPage.asInstanceOf[js.Any], currSizePerPage = currSizePerPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrPage]
   }
   
-  @scala.inline
-  implicit class CurrPageMutableBuilder[Self <: CurrPage] (val x: Self) extends AnyVal {
+  extension [Self <: CurrPage](x: Self) {
     
-    @scala.inline
-    def setCurrPage(value: Double): Self = StObject.set(x, "currPage", value.asInstanceOf[js.Any])
+    inline def setCurrPage(value: Double): Self = StObject.set(x, "currPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrSizePerPage(value: Double): Self = StObject.set(x, "currSizePerPage", value.asInstanceOf[js.Any])
+    inline def setCurrSizePerPage(value: Double): Self = StObject.set(x, "currSizePerPage", value.asInstanceOf[js.Any])
   }
 }

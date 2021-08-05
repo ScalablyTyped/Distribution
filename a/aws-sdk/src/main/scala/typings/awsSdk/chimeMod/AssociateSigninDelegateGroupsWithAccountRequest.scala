@@ -18,22 +18,17 @@ trait AssociateSigninDelegateGroupsWithAccountRequest extends StObject {
 }
 object AssociateSigninDelegateGroupsWithAccountRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, SigninDelegateGroups: SigninDelegateGroupList): AssociateSigninDelegateGroupsWithAccountRequest = {
+  inline def apply(AccountId: NonEmptyString, SigninDelegateGroups: SigninDelegateGroupList): AssociateSigninDelegateGroupsWithAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], SigninDelegateGroups = SigninDelegateGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateSigninDelegateGroupsWithAccountRequest]
   }
   
-  @scala.inline
-  implicit class AssociateSigninDelegateGroupsWithAccountRequestMutableBuilder[Self <: AssociateSigninDelegateGroupsWithAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSigninDelegateGroupsWithAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninDelegateGroups(value: SigninDelegateGroupList): Self = StObject.set(x, "SigninDelegateGroups", value.asInstanceOf[js.Any])
+    inline def setSigninDelegateGroups(value: SigninDelegateGroupList): Self = StObject.set(x, "SigninDelegateGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninDelegateGroupsVarargs(value: SigninDelegateGroup*): Self = StObject.set(x, "SigninDelegateGroups", js.Array(value :_*))
+    inline def setSigninDelegateGroupsVarargs(value: SigninDelegateGroup*): Self = StObject.set(x, "SigninDelegateGroups", js.Array(value :_*))
   }
 }

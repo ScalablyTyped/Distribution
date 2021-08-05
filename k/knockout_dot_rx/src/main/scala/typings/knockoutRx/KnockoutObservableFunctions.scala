@@ -14,19 +14,15 @@ trait KnockoutObservableFunctions[T] extends StObject {
 }
 object KnockoutObservableFunctions {
   
-  @scala.inline
-  def apply[T](toObservableWithReplyLatest: () => Observable[T], toSubject: () => ISubject[T]): KnockoutObservableFunctions[T] = {
+  inline def apply[T](toObservableWithReplyLatest: () => Observable[T], toSubject: () => ISubject[T]): KnockoutObservableFunctions[T] = {
     val __obj = js.Dynamic.literal(toObservableWithReplyLatest = js.Any.fromFunction0(toObservableWithReplyLatest), toSubject = js.Any.fromFunction0(toSubject))
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }
   
-  @scala.inline
-  implicit class KnockoutObservableFunctionsMutableBuilder[Self <: KnockoutObservableFunctions[?], T] (val x: Self & KnockoutObservableFunctions[T]) extends AnyVal {
+  extension [Self <: KnockoutObservableFunctions[?], T](x: Self & KnockoutObservableFunctions[T]) {
     
-    @scala.inline
-    def setToObservableWithReplyLatest(value: () => Observable[T]): Self = StObject.set(x, "toObservableWithReplyLatest", js.Any.fromFunction0(value))
+    inline def setToObservableWithReplyLatest(value: () => Observable[T]): Self = StObject.set(x, "toObservableWithReplyLatest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToSubject(value: () => ISubject[T]): Self = StObject.set(x, "toSubject", js.Any.fromFunction0(value))
+    inline def setToSubject(value: () => ISubject[T]): Self = StObject.set(x, "toSubject", js.Any.fromFunction0(value))
   }
 }

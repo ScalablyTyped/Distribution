@@ -13,16 +13,13 @@ trait DictfieldName
 }
 object DictfieldName {
   
-  @scala.inline
-  def apply(_id: js.Any): DictfieldName = {
+  inline def apply(_id: js.Any): DictfieldName = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictfieldName]
   }
   
-  @scala.inline
-  implicit class DictfieldNameMutableBuilder[Self <: DictfieldName] (val x: Self) extends AnyVal {
+  extension [Self <: DictfieldName](x: Self) {
     
-    @scala.inline
-    def set_id(value: js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

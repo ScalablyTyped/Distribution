@@ -13,14 +13,10 @@ object getNatGatewayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNatGateway(): js.Promise[GetNatGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")().asInstanceOf[js.Promise[GetNatGatewayResult]]
-  @scala.inline
-  def getNatGateway(args: Unit, opts: InvokeOptions): js.Promise[GetNatGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNatGatewayResult]]
-  @scala.inline
-  def getNatGateway(args: GetNatGatewayArgs): js.Promise[GetNatGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNatGatewayResult]]
-  @scala.inline
-  def getNatGateway(args: GetNatGatewayArgs, opts: InvokeOptions): js.Promise[GetNatGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNatGatewayResult]]
+  inline def getNatGateway(): js.Promise[GetNatGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")().asInstanceOf[js.Promise[GetNatGatewayResult]]
+  inline def getNatGateway(args: Unit, opts: InvokeOptions): js.Promise[GetNatGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNatGatewayResult]]
+  inline def getNatGateway(args: GetNatGatewayArgs): js.Promise[GetNatGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNatGatewayResult]]
+  inline def getNatGateway(args: GetNatGatewayArgs, opts: InvokeOptions): js.Promise[GetNatGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNatGatewayResult]]
   
   trait GetNatGatewayArgs extends StObject {
     
@@ -57,53 +53,38 @@ object getNatGatewayMod {
   }
   object GetNatGatewayArgs {
     
-    @scala.inline
-    def apply(): GetNatGatewayArgs = {
+    inline def apply(): GetNatGatewayArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetNatGatewayArgs]
     }
     
-    @scala.inline
-    implicit class GetNatGatewayArgsMutableBuilder[Self <: GetNatGatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetNatGatewayArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetNatGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetNatGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetNatGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetNatGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
   
@@ -143,8 +124,7 @@ object getNatGatewayMod {
   }
   object GetNatGatewayResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allocationId: String,
       id: String,
       networkInterfaceId: String,
@@ -159,44 +139,31 @@ object getNatGatewayMod {
       __obj.asInstanceOf[GetNatGatewayResult]
     }
     
-    @scala.inline
-    implicit class GetNatGatewayResultMutableBuilder[Self <: GetNatGatewayResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetNatGatewayResult](x: Self) {
       
-      @scala.inline
-      def setAllocationId(value: String): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
+      inline def setAllocationId(value: String): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetNatGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetNatGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetNatGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetNatGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIp(value: String): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
+      inline def setPrivateIp(value: String): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+      inline def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
 }

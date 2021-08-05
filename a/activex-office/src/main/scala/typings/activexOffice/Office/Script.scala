@@ -20,7 +20,7 @@ trait Script extends StObject {
   
   val Location: MsoScriptLocation
   
-  @JSName("Office.Script_typekey")
+  /* private */ @JSName("Office.Script_typekey")
   var OfficeDotScript_typekey: Script
   
   val Parent: js.Any
@@ -31,8 +31,7 @@ trait Script extends StObject {
 }
 object Script {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Delete: () => Unit,
@@ -50,40 +49,28 @@ object Script {
     __obj.asInstanceOf[Script]
   }
   
-  @scala.inline
-  implicit class ScriptMutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
+  extension [Self <: Script](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtended(value: String): Self = StObject.set(x, "Extended", value.asInstanceOf[js.Any])
+    inline def setExtended(value: String): Self = StObject.set(x, "Extended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: MsoScriptLanguage): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: MsoScriptLanguage): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: MsoScriptLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: MsoScriptLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotScript_typekey(value: Script): Self = StObject.set(x, "Office.Script_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotScript_typekey(value: Script): Self = StObject.set(x, "Office.Script_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptText(value: String): Self = StObject.set(x, "ScriptText", value.asInstanceOf[js.Any])
+    inline def setScriptText(value: String): Self = StObject.set(x, "ScriptText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: js.Any): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: js.Any): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
   }
 }

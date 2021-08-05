@@ -78,21 +78,16 @@ object eventDestinationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventDestinationState): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventDestinationState, opts: CustomResourceOptions): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
+    inline def get(name: String, id: Input[ID]): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
+    inline def get(name: String, id: Input[ID], state: EventDestinationState): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
+    inline def get(name: String, id: Input[ID], state: EventDestinationState, opts: CustomResourceOptions): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
     
     /**
       * Returns true if the given object is an instance of EventDestination.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean]
   }
   
   trait EventDestinationArgs extends StObject {
@@ -138,60 +133,44 @@ object eventDestinationMod {
   }
   object EventDestinationArgs {
     
-    @scala.inline
-    def apply(configurationSetName: Input[String], matchingTypes: Input[js.Array[Input[String]]]): EventDestinationArgs = {
+    inline def apply(configurationSetName: Input[String], matchingTypes: Input[js.Array[Input[String]]]): EventDestinationArgs = {
       val __obj = js.Dynamic.literal(configurationSetName = configurationSetName.asInstanceOf[js.Any], matchingTypes = matchingTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventDestinationArgs]
     }
     
-    @scala.inline
-    implicit class EventDestinationArgsMutableBuilder[Self <: EventDestinationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EventDestinationArgs](x: Self) {
       
-      @scala.inline
-      def setCloudwatchDestinations(
+      inline def setCloudwatchDestinations(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]]
             ]
       ): Self = StObject.set(x, "cloudwatchDestinations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchDestinationsUndefined: Self = StObject.set(x, "cloudwatchDestinations", js.undefined)
+      inline def setCloudwatchDestinationsUndefined: Self = StObject.set(x, "cloudwatchDestinations", js.undefined)
       
-      @scala.inline
-      def setCloudwatchDestinationsVarargs(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]*): Self = StObject.set(x, "cloudwatchDestinations", js.Array(value :_*))
+      inline def setCloudwatchDestinationsVarargs(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]*): Self = StObject.set(x, "cloudwatchDestinations", js.Array(value :_*))
       
-      @scala.inline
-      def setConfigurationSetName(value: Input[String]): Self = StObject.set(x, "configurationSetName", value.asInstanceOf[js.Any])
+      inline def setConfigurationSetName(value: Input[String]): Self = StObject.set(x, "configurationSetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setKinesisDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]): Self = StObject.set(x, "kinesisDestination", value.asInstanceOf[js.Any])
+      inline def setKinesisDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]): Self = StObject.set(x, "kinesisDestination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisDestinationUndefined: Self = StObject.set(x, "kinesisDestination", js.undefined)
+      inline def setKinesisDestinationUndefined: Self = StObject.set(x, "kinesisDestination", js.undefined)
       
-      @scala.inline
-      def setMatchingTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "matchingTypes", value.asInstanceOf[js.Any])
+      inline def setMatchingTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "matchingTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchingTypesVarargs(value: Input[String]*): Self = StObject.set(x, "matchingTypes", js.Array(value :_*))
+      inline def setMatchingTypesVarargs(value: Input[String]*): Self = StObject.set(x, "matchingTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSnsDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]): Self = StObject.set(x, "snsDestination", value.asInstanceOf[js.Any])
+      inline def setSnsDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]): Self = StObject.set(x, "snsDestination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsDestinationUndefined: Self = StObject.set(x, "snsDestination", js.undefined)
+      inline def setSnsDestinationUndefined: Self = StObject.set(x, "snsDestination", js.undefined)
     }
   }
   
@@ -238,66 +217,48 @@ object eventDestinationMod {
   }
   object EventDestinationState {
     
-    @scala.inline
-    def apply(): EventDestinationState = {
+    inline def apply(): EventDestinationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventDestinationState]
     }
     
-    @scala.inline
-    implicit class EventDestinationStateMutableBuilder[Self <: EventDestinationState] (val x: Self) extends AnyVal {
+    extension [Self <: EventDestinationState](x: Self) {
       
-      @scala.inline
-      def setCloudwatchDestinations(
+      inline def setCloudwatchDestinations(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]]
             ]
       ): Self = StObject.set(x, "cloudwatchDestinations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchDestinationsUndefined: Self = StObject.set(x, "cloudwatchDestinations", js.undefined)
+      inline def setCloudwatchDestinationsUndefined: Self = StObject.set(x, "cloudwatchDestinations", js.undefined)
       
-      @scala.inline
-      def setCloudwatchDestinationsVarargs(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]*): Self = StObject.set(x, "cloudwatchDestinations", js.Array(value :_*))
+      inline def setCloudwatchDestinationsVarargs(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]*): Self = StObject.set(x, "cloudwatchDestinations", js.Array(value :_*))
       
-      @scala.inline
-      def setConfigurationSetName(value: Input[String]): Self = StObject.set(x, "configurationSetName", value.asInstanceOf[js.Any])
+      inline def setConfigurationSetName(value: Input[String]): Self = StObject.set(x, "configurationSetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationSetNameUndefined: Self = StObject.set(x, "configurationSetName", js.undefined)
+      inline def setConfigurationSetNameUndefined: Self = StObject.set(x, "configurationSetName", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setKinesisDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]): Self = StObject.set(x, "kinesisDestination", value.asInstanceOf[js.Any])
+      inline def setKinesisDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]): Self = StObject.set(x, "kinesisDestination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisDestinationUndefined: Self = StObject.set(x, "kinesisDestination", js.undefined)
+      inline def setKinesisDestinationUndefined: Self = StObject.set(x, "kinesisDestination", js.undefined)
       
-      @scala.inline
-      def setMatchingTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "matchingTypes", value.asInstanceOf[js.Any])
+      inline def setMatchingTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "matchingTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchingTypesUndefined: Self = StObject.set(x, "matchingTypes", js.undefined)
+      inline def setMatchingTypesUndefined: Self = StObject.set(x, "matchingTypes", js.undefined)
       
-      @scala.inline
-      def setMatchingTypesVarargs(value: Input[String]*): Self = StObject.set(x, "matchingTypes", js.Array(value :_*))
+      inline def setMatchingTypesVarargs(value: Input[String]*): Self = StObject.set(x, "matchingTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSnsDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]): Self = StObject.set(x, "snsDestination", value.asInstanceOf[js.Any])
+      inline def setSnsDestination(value: Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]): Self = StObject.set(x, "snsDestination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsDestinationUndefined: Self = StObject.set(x, "snsDestination", js.undefined)
+      inline def setSnsDestinationUndefined: Self = StObject.set(x, "snsDestination", js.undefined)
     }
   }
 }

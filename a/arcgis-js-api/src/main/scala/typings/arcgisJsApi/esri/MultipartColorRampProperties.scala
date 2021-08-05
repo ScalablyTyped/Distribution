@@ -17,22 +17,17 @@ trait MultipartColorRampProperties
 }
 object MultipartColorRampProperties {
   
-  @scala.inline
-  def apply(): MultipartColorRampProperties = {
+  inline def apply(): MultipartColorRampProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultipartColorRampProperties]
   }
   
-  @scala.inline
-  implicit class MultipartColorRampPropertiesMutableBuilder[Self <: MultipartColorRampProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MultipartColorRampProperties](x: Self) {
     
-    @scala.inline
-    def setColorRamps(value: js.Array[AlgorithmicColorRampProperties]): Self = StObject.set(x, "colorRamps", value.asInstanceOf[js.Any])
+    inline def setColorRamps(value: js.Array[AlgorithmicColorRampProperties]): Self = StObject.set(x, "colorRamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRampsUndefined: Self = StObject.set(x, "colorRamps", js.undefined)
+    inline def setColorRampsUndefined: Self = StObject.set(x, "colorRamps", js.undefined)
     
-    @scala.inline
-    def setColorRampsVarargs(value: AlgorithmicColorRampProperties*): Self = StObject.set(x, "colorRamps", js.Array(value :_*))
+    inline def setColorRampsVarargs(value: AlgorithmicColorRampProperties*): Self = StObject.set(x, "colorRamps", js.Array(value :_*))
   }
 }

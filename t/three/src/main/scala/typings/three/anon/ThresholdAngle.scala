@@ -10,16 +10,13 @@ trait ThresholdAngle extends StObject {
 }
 object ThresholdAngle {
   
-  @scala.inline
-  def apply(thresholdAngle: Double): ThresholdAngle = {
+  inline def apply(thresholdAngle: Double): ThresholdAngle = {
     val __obj = js.Dynamic.literal(thresholdAngle = thresholdAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThresholdAngle]
   }
   
-  @scala.inline
-  implicit class ThresholdAngleMutableBuilder[Self <: ThresholdAngle] (val x: Self) extends AnyVal {
+  extension [Self <: ThresholdAngle](x: Self) {
     
-    @scala.inline
-    def setThresholdAngle(value: Double): Self = StObject.set(x, "thresholdAngle", value.asInstanceOf[js.Any])
+    inline def setThresholdAngle(value: Double): Self = StObject.set(x, "thresholdAngle", value.asInstanceOf[js.Any])
   }
 }

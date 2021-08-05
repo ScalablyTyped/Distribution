@@ -18,28 +18,21 @@ trait DescribeVolumeStatusResult extends StObject {
 }
 object DescribeVolumeStatusResult {
   
-  @scala.inline
-  def apply(): DescribeVolumeStatusResult = {
+  inline def apply(): DescribeVolumeStatusResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVolumeStatusResult]
   }
   
-  @scala.inline
-  implicit class DescribeVolumeStatusResultMutableBuilder[Self <: DescribeVolumeStatusResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVolumeStatusResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVolumeStatuses(value: VolumeStatusList): Self = StObject.set(x, "VolumeStatuses", value.asInstanceOf[js.Any])
+    inline def setVolumeStatuses(value: VolumeStatusList): Self = StObject.set(x, "VolumeStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeStatusesUndefined: Self = StObject.set(x, "VolumeStatuses", js.undefined)
+    inline def setVolumeStatusesUndefined: Self = StObject.set(x, "VolumeStatuses", js.undefined)
     
-    @scala.inline
-    def setVolumeStatusesVarargs(value: VolumeStatusItem*): Self = StObject.set(x, "VolumeStatuses", js.Array(value :_*))
+    inline def setVolumeStatusesVarargs(value: VolumeStatusItem*): Self = StObject.set(x, "VolumeStatuses", js.Array(value :_*))
   }
 }

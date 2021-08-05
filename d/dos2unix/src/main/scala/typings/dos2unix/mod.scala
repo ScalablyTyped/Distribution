@@ -59,17 +59,14 @@ object mod {
   }
   object FileData {
     
-    @scala.inline
-    def apply(file: String): FileData = {
+    inline def apply(file: String): FileData = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileData]
     }
     
-    @scala.inline
-    implicit class FileDataMutableBuilder[Self <: FileData] (val x: Self) extends AnyVal {
+    extension [Self <: FileData](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,17 +78,14 @@ object mod {
   }
   object MessageData {
     
-    @scala.inline
-    def apply(file: String, message: String): MessageData = {
+    inline def apply(file: String, message: String): MessageData = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageData]
     }
     
-    @scala.inline
-    implicit class MessageDataMutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
+    extension [Self <: MessageData](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,26 +97,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGlob(value: IOptions): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: IOptions): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+      inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
+      inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
     }
   }
   
@@ -136,23 +124,18 @@ object mod {
   }
   object Stats {
     
-    @scala.inline
-    def apply(error: Double, fix: Double, skip: Double): Stats = {
+    inline def apply(error: Double, fix: Double, skip: Double): Stats = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], fix = fix.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFix(value: Double): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
+      inline def setFix(value: Double): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
 }

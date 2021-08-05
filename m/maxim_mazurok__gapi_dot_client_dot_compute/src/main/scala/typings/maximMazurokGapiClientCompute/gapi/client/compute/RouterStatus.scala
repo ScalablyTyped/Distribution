@@ -21,55 +21,39 @@ trait RouterStatus extends StObject {
 }
 object RouterStatus {
   
-  @scala.inline
-  def apply(): RouterStatus = {
+  inline def apply(): RouterStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouterStatus]
   }
   
-  @scala.inline
-  implicit class RouterStatusMutableBuilder[Self <: RouterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RouterStatus](x: Self) {
     
-    @scala.inline
-    def setBestRoutes(value: js.Array[Route]): Self = StObject.set(x, "bestRoutes", value.asInstanceOf[js.Any])
+    inline def setBestRoutes(value: js.Array[Route]): Self = StObject.set(x, "bestRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestRoutesForRouter(value: js.Array[Route]): Self = StObject.set(x, "bestRoutesForRouter", value.asInstanceOf[js.Any])
+    inline def setBestRoutesForRouter(value: js.Array[Route]): Self = StObject.set(x, "bestRoutesForRouter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestRoutesForRouterUndefined: Self = StObject.set(x, "bestRoutesForRouter", js.undefined)
+    inline def setBestRoutesForRouterUndefined: Self = StObject.set(x, "bestRoutesForRouter", js.undefined)
     
-    @scala.inline
-    def setBestRoutesForRouterVarargs(value: Route*): Self = StObject.set(x, "bestRoutesForRouter", js.Array(value :_*))
+    inline def setBestRoutesForRouterVarargs(value: Route*): Self = StObject.set(x, "bestRoutesForRouter", js.Array(value :_*))
     
-    @scala.inline
-    def setBestRoutesUndefined: Self = StObject.set(x, "bestRoutes", js.undefined)
+    inline def setBestRoutesUndefined: Self = StObject.set(x, "bestRoutes", js.undefined)
     
-    @scala.inline
-    def setBestRoutesVarargs(value: Route*): Self = StObject.set(x, "bestRoutes", js.Array(value :_*))
+    inline def setBestRoutesVarargs(value: Route*): Self = StObject.set(x, "bestRoutes", js.Array(value :_*))
     
-    @scala.inline
-    def setBgpPeerStatus(value: js.Array[RouterStatusBgpPeerStatus]): Self = StObject.set(x, "bgpPeerStatus", value.asInstanceOf[js.Any])
+    inline def setBgpPeerStatus(value: js.Array[RouterStatusBgpPeerStatus]): Self = StObject.set(x, "bgpPeerStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgpPeerStatusUndefined: Self = StObject.set(x, "bgpPeerStatus", js.undefined)
+    inline def setBgpPeerStatusUndefined: Self = StObject.set(x, "bgpPeerStatus", js.undefined)
     
-    @scala.inline
-    def setBgpPeerStatusVarargs(value: RouterStatusBgpPeerStatus*): Self = StObject.set(x, "bgpPeerStatus", js.Array(value :_*))
+    inline def setBgpPeerStatusVarargs(value: RouterStatusBgpPeerStatus*): Self = StObject.set(x, "bgpPeerStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setNatStatus(value: js.Array[RouterStatusNatStatus]): Self = StObject.set(x, "natStatus", value.asInstanceOf[js.Any])
+    inline def setNatStatus(value: js.Array[RouterStatusNatStatus]): Self = StObject.set(x, "natStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatStatusUndefined: Self = StObject.set(x, "natStatus", js.undefined)
+    inline def setNatStatusUndefined: Self = StObject.set(x, "natStatus", js.undefined)
     
-    @scala.inline
-    def setNatStatusVarargs(value: RouterStatusNatStatus*): Self = StObject.set(x, "natStatus", js.Array(value :_*))
+    inline def setNatStatusVarargs(value: RouterStatusNatStatus*): Self = StObject.set(x, "natStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

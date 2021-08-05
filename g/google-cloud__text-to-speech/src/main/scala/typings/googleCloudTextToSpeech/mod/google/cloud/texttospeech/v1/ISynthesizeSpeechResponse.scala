@@ -13,22 +13,17 @@ trait ISynthesizeSpeechResponse extends StObject {
 }
 object ISynthesizeSpeechResponse {
   
-  @scala.inline
-  def apply(): ISynthesizeSpeechResponse = {
+  inline def apply(): ISynthesizeSpeechResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISynthesizeSpeechResponse]
   }
   
-  @scala.inline
-  implicit class ISynthesizeSpeechResponseMutableBuilder[Self <: ISynthesizeSpeechResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ISynthesizeSpeechResponse](x: Self) {
     
-    @scala.inline
-    def setAudioContent(value: Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
+    inline def setAudioContent(value: Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioContentNull: Self = StObject.set(x, "audioContent", null)
+    inline def setAudioContentNull: Self = StObject.set(x, "audioContent", null)
     
-    @scala.inline
-    def setAudioContentUndefined: Self = StObject.set(x, "audioContent", js.undefined)
+    inline def setAudioContentUndefined: Self = StObject.set(x, "audioContent", js.undefined)
   }
 }

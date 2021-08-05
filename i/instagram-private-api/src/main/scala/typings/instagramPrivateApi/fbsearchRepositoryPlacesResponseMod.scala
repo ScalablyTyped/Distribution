@@ -22,8 +22,7 @@ object fbsearchRepositoryPlacesResponseMod {
   }
   object FbsearchRepositoryPlacesResponseItemsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       header_media: FbsearchRepositoryPlacesResponseHeaderMedia,
       location: FbsearchRepositoryPlacesResponseLocation,
       media_bundles: js.Array[js.Any],
@@ -34,26 +33,19 @@ object fbsearchRepositoryPlacesResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryPlacesResponseItemsItem]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryPlacesResponseItemsItemMutableBuilder[Self <: FbsearchRepositoryPlacesResponseItemsItem] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryPlacesResponseItemsItem](x: Self) {
       
-      @scala.inline
-      def setHeader_media(value: FbsearchRepositoryPlacesResponseHeaderMedia): Self = StObject.set(x, "header_media", value.asInstanceOf[js.Any])
+      inline def setHeader_media(value: FbsearchRepositoryPlacesResponseHeaderMedia): Self = StObject.set(x, "header_media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: FbsearchRepositoryPlacesResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: FbsearchRepositoryPlacesResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_bundles(value: js.Array[js.Any]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
+      inline def setMedia_bundles(value: js.Array[js.Any]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_bundlesVarargs(value: js.Any*): Self = StObject.set(x, "media_bundles", js.Array(value :_*))
+      inline def setMedia_bundlesVarargs(value: js.Any*): Self = StObject.set(x, "media_bundles", js.Array(value :_*))
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,8 +71,7 @@ object fbsearchRepositoryPlacesResponseMod {
   }
   object FbsearchRepositoryPlacesResponseLocation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       city: String,
       external_source: String,
@@ -95,35 +86,25 @@ object fbsearchRepositoryPlacesResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryPlacesResponseLocation]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryPlacesResponseLocationMutableBuilder[Self <: FbsearchRepositoryPlacesResponseLocation] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryPlacesResponseLocation](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
+      inline def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacebook_places_id(value: Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
+      inline def setFacebook_places_id(value: Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+      inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,8 +120,7 @@ object fbsearchRepositoryPlacesResponseMod {
   }
   object FbsearchRepositoryPlacesResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       has_more: Boolean,
       items: js.Array[FbsearchRepositoryPlacesResponseItemsItem],
       rank_token: String,
@@ -150,23 +130,17 @@ object fbsearchRepositoryPlacesResponseMod {
       __obj.asInstanceOf[FbsearchRepositoryPlacesResponseRootObject]
     }
     
-    @scala.inline
-    implicit class FbsearchRepositoryPlacesResponseRootObjectMutableBuilder[Self <: FbsearchRepositoryPlacesResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: FbsearchRepositoryPlacesResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
+      inline def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[FbsearchRepositoryPlacesResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[FbsearchRepositoryPlacesResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: FbsearchRepositoryPlacesResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: FbsearchRepositoryPlacesResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+      inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

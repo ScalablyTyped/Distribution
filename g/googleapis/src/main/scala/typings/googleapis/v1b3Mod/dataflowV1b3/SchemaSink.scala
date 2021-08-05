@@ -22,25 +22,19 @@ trait SchemaSink extends StObject {
 }
 object SchemaSink {
   
-  @scala.inline
-  def apply(): SchemaSink = {
+  inline def apply(): SchemaSink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSink]
   }
   
-  @scala.inline
-  implicit class SchemaSinkMutableBuilder[Self <: SchemaSink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSink](x: Self) {
     
-    @scala.inline
-    def setCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setSpec(value: StringDictionary[js.Any]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: StringDictionary[js.Any]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

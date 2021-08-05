@@ -20,37 +20,27 @@ trait GoogleCloudMlV1PredictionOutput extends StObject {
 }
 object GoogleCloudMlV1PredictionOutput {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1PredictionOutput = {
+  inline def apply(): GoogleCloudMlV1PredictionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1PredictionOutput]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1PredictionOutputMutableBuilder[Self <: GoogleCloudMlV1PredictionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1PredictionOutput](x: Self) {
     
-    @scala.inline
-    def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
-    @scala.inline
-    def setNodeHours(value: Double): Self = StObject.set(x, "nodeHours", value.asInstanceOf[js.Any])
+    inline def setNodeHours(value: Double): Self = StObject.set(x, "nodeHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeHoursUndefined: Self = StObject.set(x, "nodeHours", js.undefined)
+    inline def setNodeHoursUndefined: Self = StObject.set(x, "nodeHours", js.undefined)
     
-    @scala.inline
-    def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+    inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+    inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
     
-    @scala.inline
-    def setPredictionCount(value: String): Self = StObject.set(x, "predictionCount", value.asInstanceOf[js.Any])
+    inline def setPredictionCount(value: String): Self = StObject.set(x, "predictionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionCountUndefined: Self = StObject.set(x, "predictionCount", js.undefined)
+    inline def setPredictionCountUndefined: Self = StObject.set(x, "predictionCount", js.undefined)
   }
 }

@@ -18,37 +18,27 @@ trait Email extends StObject {
 }
 object Email {
   
-  @scala.inline
-  def apply(): Email = {
+  inline def apply(): Email = {
     val __obj = js.Dynamic.literal(address = null, email = null, name = null, phone = null)
     __obj.asInstanceOf[Email]
   }
   
-  @scala.inline
-  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+  extension [Self <: Email](x: Self) {
     
-    @scala.inline
-    def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressNull: Self = StObject.set(x, "address", null)
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNull: Self = StObject.set(x, "email", null)
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNull: Self = StObject.set(x, "phone", null)
+    inline def setPhoneNull: Self = StObject.set(x, "phone", null)
   }
 }

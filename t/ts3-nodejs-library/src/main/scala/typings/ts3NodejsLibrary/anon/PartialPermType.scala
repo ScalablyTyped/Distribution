@@ -17,37 +17,27 @@ trait PartialPermType extends StObject {
 }
 object PartialPermType {
   
-  @scala.inline
-  def apply(): PartialPermType = {
+  inline def apply(): PartialPermType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPermType]
   }
   
-  @scala.inline
-  implicit class PartialPermTypeMutableBuilder[Self <: PartialPermType] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPermType](x: Self) {
     
-    @scala.inline
-    def setPermname(value: String | Double): Self = StObject.set(x, "permname", value.asInstanceOf[js.Any])
+    inline def setPermname(value: String | Double): Self = StObject.set(x, "permname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermnameUndefined: Self = StObject.set(x, "permname", js.undefined)
+    inline def setPermnameUndefined: Self = StObject.set(x, "permname", js.undefined)
     
-    @scala.inline
-    def setPermnegated(value: Boolean): Self = StObject.set(x, "permnegated", value.asInstanceOf[js.Any])
+    inline def setPermnegated(value: Boolean): Self = StObject.set(x, "permnegated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermnegatedUndefined: Self = StObject.set(x, "permnegated", js.undefined)
+    inline def setPermnegatedUndefined: Self = StObject.set(x, "permnegated", js.undefined)
     
-    @scala.inline
-    def setPermskip(value: Boolean): Self = StObject.set(x, "permskip", value.asInstanceOf[js.Any])
+    inline def setPermskip(value: Boolean): Self = StObject.set(x, "permskip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermskipUndefined: Self = StObject.set(x, "permskip", js.undefined)
+    inline def setPermskipUndefined: Self = StObject.set(x, "permskip", js.undefined)
     
-    @scala.inline
-    def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
+    inline def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermvalueUndefined: Self = StObject.set(x, "permvalue", js.undefined)
+    inline def setPermvalueUndefined: Self = StObject.set(x, "permvalue", js.undefined)
   }
 }

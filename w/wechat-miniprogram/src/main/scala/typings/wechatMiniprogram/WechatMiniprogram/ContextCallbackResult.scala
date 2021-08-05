@@ -11,16 +11,13 @@ trait ContextCallbackResult extends StObject {
 }
 object ContextCallbackResult {
   
-  @scala.inline
-  def apply(context: IAnyObject): ContextCallbackResult = {
+  inline def apply(context: IAnyObject): ContextCallbackResult = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextCallbackResult]
   }
   
-  @scala.inline
-  implicit class ContextCallbackResultMutableBuilder[Self <: ContextCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ContextCallbackResult](x: Self) {
     
-    @scala.inline
-    def setContext(value: IAnyObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: IAnyObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

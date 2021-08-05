@@ -10,19 +10,15 @@ trait ArcOptions extends StObject {
 }
 object ArcOptions {
   
-  @scala.inline
-  def apply(): ArcOptions = {
+  inline def apply(): ArcOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArcOptions]
   }
   
-  @scala.inline
-  implicit class ArcOptionsMutableBuilder[Self <: ArcOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ArcOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

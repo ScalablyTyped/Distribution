@@ -12,19 +12,16 @@ trait `6`[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof Event
 }
 object `6` {
   
-  @scala.inline
-  def apply[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](
+  inline def apply[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](
     data: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
   ): `6`[EventMap, EventName] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`6`[EventMap, EventName]]
   }
   
-  @scala.inline
-  implicit class `6MutableBuilder`[Self <: `6`[?, ?], EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */] (val x: Self & (`6`[EventMap, EventName])) extends AnyVal {
+  extension [Self <: `6`[?, ?], EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](x: Self & (`6`[EventMap, EventName])) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

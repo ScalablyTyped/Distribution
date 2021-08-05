@@ -50,34 +50,25 @@ trait HandlerOptions extends StObject {
 }
 object HandlerOptions {
   
-  @scala.inline
-  def apply(): HandlerOptions = {
+  inline def apply(): HandlerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HandlerOptions]
   }
   
-  @scala.inline
-  implicit class HandlerOptionsMutableBuilder[Self <: HandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HandlerOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

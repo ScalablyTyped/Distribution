@@ -29,13 +29,11 @@ object componentsHorizontalMenuHorizontalMenuItemMod {
     @JSImport("wix-ui-core/src/components/horizontal-menu/horizontal-menu-item", "HorizontalMenuItem.defaultProps")
     @js.native
     def defaultProps: ExpandSize = js.native
-    @scala.inline
-    def defaultProps_=(x: ExpandSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ExpandSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/horizontal-menu/horizontal-menu-item", "HorizontalMenuItem.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

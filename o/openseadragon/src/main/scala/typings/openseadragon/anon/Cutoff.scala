@@ -20,28 +20,21 @@ trait Cutoff extends StObject {
 }
 object Cutoff {
   
-  @scala.inline
-  def apply(image: HTMLImageElement, tile: Tile, tiledImage: TiledImage): Cutoff = {
+  inline def apply(image: HTMLImageElement, tile: Tile, tiledImage: TiledImage): Cutoff = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], tile = tile.asInstanceOf[js.Any], tiledImage = tiledImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cutoff]
   }
   
-  @scala.inline
-  implicit class CutoffMutableBuilder[Self <: Cutoff] (val x: Self) extends AnyVal {
+  extension [Self <: Cutoff](x: Self) {
     
-    @scala.inline
-    def setCutoff(value: Double): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
+    inline def setCutoff(value: Double): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCutoffUndefined: Self = StObject.set(x, "cutoff", js.undefined)
+    inline def setCutoffUndefined: Self = StObject.set(x, "cutoff", js.undefined)
     
-    @scala.inline
-    def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTile(value: Tile): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: Tile): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiledImage(value: TiledImage): Self = StObject.set(x, "tiledImage", value.asInstanceOf[js.Any])
+    inline def setTiledImage(value: TiledImage): Self = StObject.set(x, "tiledImage", value.asInstanceOf[js.Any])
   }
 }

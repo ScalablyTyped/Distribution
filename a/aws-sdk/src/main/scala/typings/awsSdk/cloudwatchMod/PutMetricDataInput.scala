@@ -18,22 +18,17 @@ trait PutMetricDataInput extends StObject {
 }
 object PutMetricDataInput {
   
-  @scala.inline
-  def apply(MetricData: MetricData, Namespace: Namespace): PutMetricDataInput = {
+  inline def apply(MetricData: MetricData, Namespace: Namespace): PutMetricDataInput = {
     val __obj = js.Dynamic.literal(MetricData = MetricData.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutMetricDataInput]
   }
   
-  @scala.inline
-  implicit class PutMetricDataInputMutableBuilder[Self <: PutMetricDataInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutMetricDataInput](x: Self) {
     
-    @scala.inline
-    def setMetricData(value: MetricData): Self = StObject.set(x, "MetricData", value.asInstanceOf[js.Any])
+    inline def setMetricData(value: MetricData): Self = StObject.set(x, "MetricData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDataVarargs(value: MetricDatum*): Self = StObject.set(x, "MetricData", js.Array(value :_*))
+    inline def setMetricDataVarargs(value: MetricDatum*): Self = StObject.set(x, "MetricData", js.Array(value :_*))
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
   }
 }

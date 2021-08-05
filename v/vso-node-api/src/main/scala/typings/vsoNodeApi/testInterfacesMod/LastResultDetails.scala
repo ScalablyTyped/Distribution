@@ -16,22 +16,17 @@ trait LastResultDetails extends StObject {
 }
 object LastResultDetails {
   
-  @scala.inline
-  def apply(dateCompleted: Date, duration: Double, runBy: IdentityRef): LastResultDetails = {
+  inline def apply(dateCompleted: Date, duration: Double, runBy: IdentityRef): LastResultDetails = {
     val __obj = js.Dynamic.literal(dateCompleted = dateCompleted.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], runBy = runBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastResultDetails]
   }
   
-  @scala.inline
-  implicit class LastResultDetailsMutableBuilder[Self <: LastResultDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LastResultDetails](x: Self) {
     
-    @scala.inline
-    def setDateCompleted(value: Date): Self = StObject.set(x, "dateCompleted", value.asInstanceOf[js.Any])
+    inline def setDateCompleted(value: Date): Self = StObject.set(x, "dateCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunBy(value: IdentityRef): Self = StObject.set(x, "runBy", value.asInstanceOf[js.Any])
+    inline def setRunBy(value: IdentityRef): Self = StObject.set(x, "runBy", value.asInstanceOf[js.Any])
   }
 }

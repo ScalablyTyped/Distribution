@@ -32,8 +32,7 @@ trait TableRowProps extends StObject {
 }
 object TableRowProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     className: String,
     columns: js.Array[js.Any],
     index: Double,
@@ -46,61 +45,42 @@ object TableRowProps {
     __obj.asInstanceOf[TableRowProps]
   }
   
-  @scala.inline
-  implicit class TableRowPropsMutableBuilder[Self <: TableRowProps] (val x: Self) extends AnyVal {
+  extension [Self <: TableRowProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+    inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRowClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
+    inline def setOnRowClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+    inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
-    @scala.inline
-    def setOnRowDoubleClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnRowDoubleClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
+    inline def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
     
-    @scala.inline
-    def setOnRowMouseOut(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction1(value))
+    inline def setOnRowMouseOut(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
+    inline def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
     
-    @scala.inline
-    def setOnRowMouseOver(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction1(value))
+    inline def setOnRowMouseOver(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
+    inline def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
     
-    @scala.inline
-    def setOnRowRightClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowRightClick", js.Any.fromFunction1(value))
+    inline def setOnRowRightClick(value: /* params */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowRightClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowRightClickUndefined: Self = StObject.set(x, "onRowRightClick", js.undefined)
+    inline def setOnRowRightClickUndefined: Self = StObject.set(x, "onRowRightClick", js.undefined)
     
-    @scala.inline
-    def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

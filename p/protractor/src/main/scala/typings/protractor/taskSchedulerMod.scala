@@ -39,7 +39,7 @@ object taskSchedulerMod {
       */
     def this(config: Config) = this()
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     /**
       * Returns number of tasks currently running.
@@ -87,29 +87,22 @@ object taskSchedulerMod {
   }
   object Task {
     
-    @scala.inline
-    def apply(capabilities: js.Any, done: js.Any, specs: js.Array[String], taskId: String): Task = {
+    inline def apply(capabilities: js.Any, done: js.Any, specs: js.Array[String], taskId: String): Task = {
       val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Task]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    extension [Self <: Task](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDone(value: js.Any): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: js.Any): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+      inline def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
+      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
       
-      @scala.inline
-      def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+      inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     }
   }
 }

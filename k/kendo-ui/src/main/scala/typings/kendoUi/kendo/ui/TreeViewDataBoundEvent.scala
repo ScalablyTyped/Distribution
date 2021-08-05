@@ -13,19 +13,15 @@ trait TreeViewDataBoundEvent
 }
 object TreeViewDataBoundEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewDataBoundEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewDataBoundEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDataBoundEvent]
   }
   
-  @scala.inline
-  implicit class TreeViewDataBoundEventMutableBuilder[Self <: TreeViewDataBoundEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewDataBoundEvent](x: Self) {
     
-    @scala.inline
-    def setNode(value: JQuery): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: JQuery): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
   }
 }

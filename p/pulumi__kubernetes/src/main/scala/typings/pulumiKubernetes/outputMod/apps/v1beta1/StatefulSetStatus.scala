@@ -56,8 +56,7 @@ trait StatefulSetStatus extends StObject {
 }
 object StatefulSetStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collisionCount: Double,
     conditions: js.Array[StatefulSetCondition],
     currentReplicas: Double,
@@ -72,37 +71,26 @@ object StatefulSetStatus {
     __obj.asInstanceOf[StatefulSetStatus]
   }
   
-  @scala.inline
-  implicit class StatefulSetStatusMutableBuilder[Self <: StatefulSetStatus] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulSetStatus](x: Self) {
     
-    @scala.inline
-    def setCollisionCount(value: Double): Self = StObject.set(x, "collisionCount", value.asInstanceOf[js.Any])
+    inline def setCollisionCount(value: Double): Self = StObject.set(x, "collisionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditions(value: js.Array[StatefulSetCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[StatefulSetCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: StatefulSetCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: StatefulSetCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentReplicas(value: Double): Self = StObject.set(x, "currentReplicas", value.asInstanceOf[js.Any])
+    inline def setCurrentReplicas(value: Double): Self = StObject.set(x, "currentReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRevision(value: String): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
+    inline def setCurrentRevision(value: String): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
+    inline def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyReplicas(value: Double): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
+    inline def setReadyReplicas(value: Double): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRevision(value: String): Self = StObject.set(x, "updateRevision", value.asInstanceOf[js.Any])
+    inline def setUpdateRevision(value: String): Self = StObject.set(x, "updateRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedReplicas(value: Double): Self = StObject.set(x, "updatedReplicas", value.asInstanceOf[js.Any])
+    inline def setUpdatedReplicas(value: Double): Self = StObject.set(x, "updatedReplicas", value.asInstanceOf[js.Any])
   }
 }

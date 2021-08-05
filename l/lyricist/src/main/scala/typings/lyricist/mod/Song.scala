@@ -88,8 +88,7 @@ trait Song extends StObject {
 }
 object Song {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotation_count: Double,
     api_path: String,
     apple_music_player_url: String,
@@ -128,163 +127,110 @@ object Song {
     __obj.asInstanceOf[Song]
   }
   
-  @scala.inline
-  implicit class SongMutableBuilder[Self <: Song] (val x: Self) extends AnyVal {
+  extension [Self <: Song](x: Self) {
     
-    @scala.inline
-    def setAlbum(value: js.Any): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setAlbum(value: js.Any): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+    inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
-    @scala.inline
-    def setAnnotation_count(value: Double): Self = StObject.set(x, "annotation_count", value.asInstanceOf[js.Any])
+    inline def setAnnotation_count(value: Double): Self = StObject.set(x, "annotation_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
+    inline def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApple_music_id(value: js.Any): Self = StObject.set(x, "apple_music_id", value.asInstanceOf[js.Any])
+    inline def setApple_music_id(value: js.Any): Self = StObject.set(x, "apple_music_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApple_music_idUndefined: Self = StObject.set(x, "apple_music_id", js.undefined)
+    inline def setApple_music_idUndefined: Self = StObject.set(x, "apple_music_id", js.undefined)
     
-    @scala.inline
-    def setApple_music_player_url(value: String): Self = StObject.set(x, "apple_music_player_url", value.asInstanceOf[js.Any])
+    inline def setApple_music_player_url(value: String): Self = StObject.set(x, "apple_music_player_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent_user_metadata(value: Excludedpermissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
+    inline def setCurrent_user_metadata(value: Excludedpermissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_performances(value: js.Array[js.Any]): Self = StObject.set(x, "custom_performances", value.asInstanceOf[js.Any])
+    inline def setCustom_performances(value: js.Array[js.Any]): Self = StObject.set(x, "custom_performances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_performancesVarargs(value: js.Any*): Self = StObject.set(x, "custom_performances", js.Array(value :_*))
+    inline def setCustom_performancesVarargs(value: js.Any*): Self = StObject.set(x, "custom_performances", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription_annotation(value: DescriptionAnnotation): Self = StObject.set(x, "description_annotation", value.asInstanceOf[js.Any])
+    inline def setDescription_annotation(value: DescriptionAnnotation): Self = StObject.set(x, "description_annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbed_content(value: String): Self = StObject.set(x, "embed_content", value.asInstanceOf[js.Any])
+    inline def setEmbed_content(value: String): Self = StObject.set(x, "embed_content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatured_artists(value: js.Array[js.Any]): Self = StObject.set(x, "featured_artists", value.asInstanceOf[js.Any])
+    inline def setFeatured_artists(value: js.Array[js.Any]): Self = StObject.set(x, "featured_artists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatured_artistsVarargs(value: js.Any*): Self = StObject.set(x, "featured_artists", js.Array(value :_*))
+    inline def setFeatured_artistsVarargs(value: js.Any*): Self = StObject.set(x, "featured_artists", js.Array(value :_*))
     
-    @scala.inline
-    def setFeatured_video(value: Boolean): Self = StObject.set(x, "featured_video", value.asInstanceOf[js.Any])
+    inline def setFeatured_video(value: Boolean): Self = StObject.set(x, "featured_video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_title(value: String): Self = StObject.set(x, "full_title", value.asInstanceOf[js.Any])
+    inline def setFull_title(value: String): Self = StObject.set(x, "full_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader_image_thumbnail_url(value: String): Self = StObject.set(x, "header_image_thumbnail_url", value.asInstanceOf[js.Any])
+    inline def setHeader_image_thumbnail_url(value: String): Self = StObject.set(x, "header_image_thumbnail_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
+    inline def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics(value: String): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
+    inline def setLyrics(value: String): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_marked_complete_by(value: js.Any): Self = StObject.set(x, "lyrics_marked_complete_by", value.asInstanceOf[js.Any])
+    inline def setLyrics_marked_complete_by(value: js.Any): Self = StObject.set(x, "lyrics_marked_complete_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_marked_complete_byUndefined: Self = StObject.set(x, "lyrics_marked_complete_by", js.undefined)
+    inline def setLyrics_marked_complete_byUndefined: Self = StObject.set(x, "lyrics_marked_complete_by", js.undefined)
     
-    @scala.inline
-    def setLyrics_owner_id(value: Double): Self = StObject.set(x, "lyrics_owner_id", value.asInstanceOf[js.Any])
+    inline def setLyrics_owner_id(value: Double): Self = StObject.set(x, "lyrics_owner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_state(value: String): Self = StObject.set(x, "lyrics_state", value.asInstanceOf[js.Any])
+    inline def setLyrics_state(value: String): Self = StObject.set(x, "lyrics_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: js.Array[Media]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: js.Array[Media]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_artist(value: ArtistBrief): Self = StObject.set(x, "primary_artist", value.asInstanceOf[js.Any])
+    inline def setPrimary_artist(value: ArtistBrief): Self = StObject.set(x, "primary_artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducer_artists(value: js.Array[ArtistBrief]): Self = StObject.set(x, "producer_artists", value.asInstanceOf[js.Any])
+    inline def setProducer_artists(value: js.Array[ArtistBrief]): Self = StObject.set(x, "producer_artists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducer_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "producer_artists", js.Array(value :_*))
+    inline def setProducer_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "producer_artists", js.Array(value :_*))
     
-    @scala.inline
-    def setPyongs_count(value: js.Any): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
+    inline def setPyongs_count(value: js.Any): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPyongs_countUndefined: Self = StObject.set(x, "pyongs_count", js.undefined)
+    inline def setPyongs_countUndefined: Self = StObject.set(x, "pyongs_count", js.undefined)
     
-    @scala.inline
-    def setRecording_location(value: js.Any): Self = StObject.set(x, "recording_location", value.asInstanceOf[js.Any])
+    inline def setRecording_location(value: js.Any): Self = StObject.set(x, "recording_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecording_locationUndefined: Self = StObject.set(x, "recording_location", js.undefined)
+    inline def setRecording_locationUndefined: Self = StObject.set(x, "recording_location", js.undefined)
     
-    @scala.inline
-    def setRelease_date(value: String): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+    inline def setRelease_date(value: String): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSong_art_image_thumbnail_url(value: String): Self = StObject.set(x, "song_art_image_thumbnail_url", value.asInstanceOf[js.Any])
+    inline def setSong_art_image_thumbnail_url(value: String): Self = StObject.set(x, "song_art_image_thumbnail_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSong_art_image_url(value: String): Self = StObject.set(x, "song_art_image_url", value.asInstanceOf[js.Any])
+    inline def setSong_art_image_url(value: String): Self = StObject.set(x, "song_art_image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSong_relationships(value: js.Array[Songs]): Self = StObject.set(x, "song_relationships", value.asInstanceOf[js.Any])
+    inline def setSong_relationships(value: js.Array[Songs]): Self = StObject.set(x, "song_relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSong_relationshipsVarargs(value: Songs*): Self = StObject.set(x, "song_relationships", js.Array(value :_*))
+    inline def setSong_relationshipsVarargs(value: Songs*): Self = StObject.set(x, "song_relationships", js.Array(value :_*))
     
-    @scala.inline
-    def setStats(value: Acceptedannotations): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Acceptedannotations): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle_with_featured(value: String): Self = StObject.set(x, "title_with_featured", value.asInstanceOf[js.Any])
+    inline def setTitle_with_featured(value: String): Self = StObject.set(x, "title_with_featured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified_annotations_by(value: js.Array[js.Any]): Self = StObject.set(x, "verified_annotations_by", value.asInstanceOf[js.Any])
+    inline def setVerified_annotations_by(value: js.Array[js.Any]): Self = StObject.set(x, "verified_annotations_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified_annotations_byVarargs(value: js.Any*): Self = StObject.set(x, "verified_annotations_by", js.Array(value :_*))
+    inline def setVerified_annotations_byVarargs(value: js.Any*): Self = StObject.set(x, "verified_annotations_by", js.Array(value :_*))
     
-    @scala.inline
-    def setVerified_contributors(value: js.Array[js.Any]): Self = StObject.set(x, "verified_contributors", value.asInstanceOf[js.Any])
+    inline def setVerified_contributors(value: js.Array[js.Any]): Self = StObject.set(x, "verified_contributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified_contributorsVarargs(value: js.Any*): Self = StObject.set(x, "verified_contributors", js.Array(value :_*))
+    inline def setVerified_contributorsVarargs(value: js.Any*): Self = StObject.set(x, "verified_contributors", js.Array(value :_*))
     
-    @scala.inline
-    def setVerified_lyrics_by(value: js.Array[js.Any]): Self = StObject.set(x, "verified_lyrics_by", value.asInstanceOf[js.Any])
+    inline def setVerified_lyrics_by(value: js.Array[js.Any]): Self = StObject.set(x, "verified_lyrics_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified_lyrics_byVarargs(value: js.Any*): Self = StObject.set(x, "verified_lyrics_by", js.Array(value :_*))
+    inline def setVerified_lyrics_byVarargs(value: js.Any*): Self = StObject.set(x, "verified_lyrics_by", js.Array(value :_*))
     
-    @scala.inline
-    def setWriter_artists(value: js.Array[ArtistBrief]): Self = StObject.set(x, "writer_artists", value.asInstanceOf[js.Any])
+    inline def setWriter_artists(value: js.Array[ArtistBrief]): Self = StObject.set(x, "writer_artists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriter_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "writer_artists", js.Array(value :_*))
+    inline def setWriter_artistsVarargs(value: ArtistBrief*): Self = StObject.set(x, "writer_artists", js.Array(value :_*))
   }
 }

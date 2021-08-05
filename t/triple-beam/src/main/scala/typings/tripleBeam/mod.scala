@@ -31,20 +31,16 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(colors: StringDictionary[String], levels: StringDictionary[Double]): Config = {
+    inline def apply(colors: StringDictionary[String], levels: StringDictionary[Double]): Config = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setColors(value: StringDictionary[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: StringDictionary[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevels(value: StringDictionary[Double]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: StringDictionary[Double]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,23 +54,18 @@ object mod {
   }
   object Configs_ {
     
-    @scala.inline
-    def apply(cli: Config, npm: Config, syslog: Config): Configs_ = {
+    inline def apply(cli: Config, npm: Config, syslog: Config): Configs_ = {
       val __obj = js.Dynamic.literal(cli = cli.asInstanceOf[js.Any], npm = npm.asInstanceOf[js.Any], syslog = syslog.asInstanceOf[js.Any])
       __obj.asInstanceOf[Configs_]
     }
     
-    @scala.inline
-    implicit class Configs_MutableBuilder[Self <: Configs_] (val x: Self) extends AnyVal {
+    extension [Self <: Configs_](x: Self) {
       
-      @scala.inline
-      def setCli(value: Config): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
+      inline def setCli(value: Config): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNpm(value: Config): Self = StObject.set(x, "npm", value.asInstanceOf[js.Any])
+      inline def setNpm(value: Config): Self = StObject.set(x, "npm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyslog(value: Config): Self = StObject.set(x, "syslog", value.asInstanceOf[js.Any])
+      inline def setSyslog(value: Config): Self = StObject.set(x, "syslog", value.asInstanceOf[js.Any])
     }
   }
 }

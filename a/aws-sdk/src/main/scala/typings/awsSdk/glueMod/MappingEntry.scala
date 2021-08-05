@@ -38,49 +38,35 @@ trait MappingEntry extends StObject {
 }
 object MappingEntry {
   
-  @scala.inline
-  def apply(): MappingEntry = {
+  inline def apply(): MappingEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MappingEntry]
   }
   
-  @scala.inline
-  implicit class MappingEntryMutableBuilder[Self <: MappingEntry] (val x: Self) extends AnyVal {
+  extension [Self <: MappingEntry](x: Self) {
     
-    @scala.inline
-    def setSourcePath(value: SchemaPathString): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: SchemaPathString): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
+    inline def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
     
-    @scala.inline
-    def setSourceTable(value: TableName): Self = StObject.set(x, "SourceTable", value.asInstanceOf[js.Any])
+    inline def setSourceTable(value: TableName): Self = StObject.set(x, "SourceTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableUndefined: Self = StObject.set(x, "SourceTable", js.undefined)
+    inline def setSourceTableUndefined: Self = StObject.set(x, "SourceTable", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: FieldType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: FieldType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    @scala.inline
-    def setTargetPath(value: SchemaPathString): Self = StObject.set(x, "TargetPath", value.asInstanceOf[js.Any])
+    inline def setTargetPath(value: SchemaPathString): Self = StObject.set(x, "TargetPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPathUndefined: Self = StObject.set(x, "TargetPath", js.undefined)
+    inline def setTargetPathUndefined: Self = StObject.set(x, "TargetPath", js.undefined)
     
-    @scala.inline
-    def setTargetTable(value: TableName): Self = StObject.set(x, "TargetTable", value.asInstanceOf[js.Any])
+    inline def setTargetTable(value: TableName): Self = StObject.set(x, "TargetTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTableUndefined: Self = StObject.set(x, "TargetTable", js.undefined)
+    inline def setTargetTableUndefined: Self = StObject.set(x, "TargetTable", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: FieldType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: FieldType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
   }
 }

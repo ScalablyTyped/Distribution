@@ -10,10 +10,8 @@ object createGenerateClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
-  @scala.inline
-  def default(options: GenerateClassNameOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  inline def default(options: GenerateClassNameOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait GenerateClassNameOptions extends StObject {
     
@@ -25,32 +23,24 @@ object createGenerateClassNameMod {
   }
   object GenerateClassNameOptions {
     
-    @scala.inline
-    def apply(): GenerateClassNameOptions = {
+    inline def apply(): GenerateClassNameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateClassNameOptions]
     }
     
-    @scala.inline
-    implicit class GenerateClassNameOptionsMutableBuilder[Self <: GenerateClassNameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateClassNameOptions](x: Self) {
       
-      @scala.inline
-      def setDangerouslyUseGlobalCSS(value: Boolean): Self = StObject.set(x, "dangerouslyUseGlobalCSS", value.asInstanceOf[js.Any])
+      inline def setDangerouslyUseGlobalCSS(value: Boolean): Self = StObject.set(x, "dangerouslyUseGlobalCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerouslyUseGlobalCSSUndefined: Self = StObject.set(x, "dangerouslyUseGlobalCSS", js.undefined)
+      inline def setDangerouslyUseGlobalCSSUndefined: Self = StObject.set(x, "dangerouslyUseGlobalCSS", js.undefined)
       
-      @scala.inline
-      def setProductionPrefix(value: String): Self = StObject.set(x, "productionPrefix", value.asInstanceOf[js.Any])
+      inline def setProductionPrefix(value: String): Self = StObject.set(x, "productionPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionPrefixUndefined: Self = StObject.set(x, "productionPrefix", js.undefined)
+      inline def setProductionPrefixUndefined: Self = StObject.set(x, "productionPrefix", js.undefined)
       
-      @scala.inline
-      def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.AddIn")
 @js.native
-class AddIn protected ()
+/* private */ class AddIn ()
   extends StObject
      with typings.activexWord.Word.AddIn {
   
@@ -40,7 +40,7 @@ class AddIn protected ()
   /* CompleteClass */
   override val Path: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.AddIn_typekey")
   var WordDotAddIn_typekey: typings.activexWord.Word.AddIn = js.native
 }

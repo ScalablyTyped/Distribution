@@ -40,8 +40,7 @@ trait AccessibleToolBoxItem
      with XAccessibleValue
 object AccessibleToolBoxItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     AccessibleChildCount: Double,
     AccessibleDescription: String,

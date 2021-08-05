@@ -38,49 +38,35 @@ trait Bold extends StObject {
 }
 object Bold {
   
-  @scala.inline
-  def apply(): Bold = {
+  inline def apply(): Bold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bold]
   }
   
-  @scala.inline
-  implicit class BoldMutableBuilder[Self <: Bold] (val x: Self) extends AnyVal {
+  extension [Self <: Bold](x: Self) {
     
-    @scala.inline
-    def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
-    @scala.inline
-    def setCyan(value: String): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
+    inline def setCyan(value: String): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyanUndefined: Self = StObject.set(x, "cyan", js.undefined)
+    inline def setCyanUndefined: Self = StObject.set(x, "cyan", js.undefined)
     
-    @scala.inline
-    def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
+    inline def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
     
-    @scala.inline
-    def setMagenta(value: String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+    inline def setMagenta(value: String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagentaUndefined: Self = StObject.set(x, "magenta", js.undefined)
+    inline def setMagentaUndefined: Self = StObject.set(x, "magenta", js.undefined)
     
-    @scala.inline
-    def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
+    inline def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
     
-    @scala.inline
-    def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+    inline def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellowUndefined: Self = StObject.set(x, "yellow", js.undefined)
+    inline def setYellowUndefined: Self = StObject.set(x, "yellow", js.undefined)
   }
 }

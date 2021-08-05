@@ -13,19 +13,15 @@ trait EndNode extends StObject {
 }
 object EndNode {
   
-  @scala.inline
-  def apply(endNode: node, startNode: node): EndNode = {
+  inline def apply(endNode: node, startNode: node): EndNode = {
     val __obj = js.Dynamic.literal(endNode = endNode.asInstanceOf[js.Any], startNode = startNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndNode]
   }
   
-  @scala.inline
-  implicit class EndNodeMutableBuilder[Self <: EndNode] (val x: Self) extends AnyVal {
+  extension [Self <: EndNode](x: Self) {
     
-    @scala.inline
-    def setEndNode(value: node): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
+    inline def setEndNode(value: node): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartNode(value: node): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
+    inline def setStartNode(value: node): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
   }
 }

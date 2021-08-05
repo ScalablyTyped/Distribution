@@ -28,7 +28,7 @@ object childrenNodeMod {
       */
     def this(children_ : SortedMap[String, Node], priorityNode_ : Node, indexMap_ : IndexMap) = this()
     
-    val children_ : js.Any = js.native
+    /* private */ val children_ : js.Any = js.native
     
     /**
       * @inheritDoc
@@ -87,11 +87,11 @@ object childrenNodeMod {
       */
     def getReverseIteratorFrom(endPost: NamedNode, indexDefinition: Index): SortedMapIterator[String | NamedNode, Node, NamedNode] = js.native
     
-    var indexMap_ : js.Any = js.native
+    /* private */ var indexMap_ : js.Any = js.native
     
-    var lazyHash_ : js.Any = js.native
+    /* private */ var lazyHash_ : js.Any = js.native
     
-    val priorityNode_ : js.Any = js.native
+    /* private */ val priorityNode_ : js.Any = js.native
     
     /**
       * Returns a SortedMap ordered by index, or null if the default (by-key) ordering can be used
@@ -101,7 +101,7 @@ object childrenNodeMod {
       * @param {!Index} indexDefinition
       * @return {?SortedMap.<NamedNode, Node>}
       */
-    var resolveIndex_ : js.Any = js.native
+    /* private */ var resolveIndex_ : js.Any = js.native
   }
   /* static members */
   object ChildrenNode {
@@ -117,8 +117,7 @@ object childrenNodeMod {
     @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "ChildrenNode.INTEGER_REGEXP_")
     @js.native
     def INTEGER_REGEXP_ : js.Any = js.native
-    @scala.inline
-    def INTEGER_REGEXP__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTEGER_REGEXP_")(x.asInstanceOf[js.Any])
+    inline def INTEGER_REGEXP__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTEGER_REGEXP_")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "MAX_NODE")
@@ -156,8 +155,7 @@ object childrenNodeMod {
     }
     object NamedNode {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode,
         MIN: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
       ): typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode = {
@@ -165,16 +163,13 @@ object childrenNodeMod {
         __obj.asInstanceOf[typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode]
       }
       
-      @scala.inline
-      implicit class NamedNodeMutableBuilder[Self <: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode] (val x: Self) extends AnyVal {
+      extension [Self <: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode](x: Self) {
         
-        @scala.inline
-        def setMAX(
+        inline def setMAX(
           value: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
         ): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMIN(
+        inline def setMIN(
           value: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
         ): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
       }

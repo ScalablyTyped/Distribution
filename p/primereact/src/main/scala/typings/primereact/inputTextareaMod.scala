@@ -36,32 +36,24 @@ object inputTextareaMod {
   }
   object InputTextareaProps {
     
-    @scala.inline
-    def apply(): InputTextareaProps = {
+    inline def apply(): InputTextareaProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputTextareaProps]
     }
     
-    @scala.inline
-    implicit class InputTextareaPropsMutableBuilder[Self <: InputTextareaProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputTextareaProps](x: Self) {
       
-      @scala.inline
-      def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+      inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+      inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipOptions(value: TooltipOptions): Self = StObject.set(x, "tooltipOptions", value.asInstanceOf[js.Any])
+      inline def setTooltipOptions(value: TooltipOptions): Self = StObject.set(x, "tooltipOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipOptionsUndefined: Self = StObject.set(x, "tooltipOptions", js.undefined)
+      inline def setTooltipOptionsUndefined: Self = StObject.set(x, "tooltipOptions", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
 }

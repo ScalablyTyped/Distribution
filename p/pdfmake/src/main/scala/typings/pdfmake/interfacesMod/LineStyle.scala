@@ -11,19 +11,15 @@ trait LineStyle extends StObject {
 }
 object LineStyle {
   
-  @scala.inline
-  def apply(): LineStyle = {
+  inline def apply(): LineStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineStyle]
   }
   
-  @scala.inline
-  implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: LineStyle](x: Self) {
     
-    @scala.inline
-    def setDash(value: Length): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: Length): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
+    inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
   }
 }

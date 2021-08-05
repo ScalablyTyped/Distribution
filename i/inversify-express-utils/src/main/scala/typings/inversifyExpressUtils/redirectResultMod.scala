@@ -18,13 +18,13 @@ object redirectResultMod {
     def this(location: String, apiController: BaseHttpController) = this()
     def this(location: URL_, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
     override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var location: js.Any = js.native
   }
   
@@ -32,26 +32,22 @@ object redirectResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
-    var location: js.Any
+    /* private */ var location: js.Any
   }
   object RedirectResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], location: js.Any): RedirectResult = {
+    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], location: js.Any): RedirectResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync), location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedirectResult]
     }
     
-    @scala.inline
-    implicit class RedirectResultMutableBuilder[Self <: RedirectResult] (val x: Self) extends AnyVal {
+    extension [Self <: RedirectResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
 }

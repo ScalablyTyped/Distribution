@@ -16,37 +16,27 @@ trait Overrides extends StObject {
 }
 object Overrides {
   
-  @scala.inline
-  def apply(): Overrides = {
+  inline def apply(): Overrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Overrides]
   }
   
-  @scala.inline
-  implicit class OverridesMutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
+  extension [Self <: Overrides](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
+    inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

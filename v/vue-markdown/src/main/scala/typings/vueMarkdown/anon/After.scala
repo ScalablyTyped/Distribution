@@ -24,8 +24,7 @@ trait After extends StObject {
 }
 object After {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     after: js.Any,
     at: js.Any,
     before: js.Any,
@@ -39,31 +38,22 @@ object After {
     __obj.asInstanceOf[After]
   }
   
-  @scala.inline
-  implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+  extension [Self <: After](x: Self) {
     
-    @scala.inline
-    def setAfter(value: js.Any): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: js.Any): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAt(value: js.Any): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: js.Any): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBefore(value: js.Any): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: js.Any): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: js.Any): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableOnly(value: js.Any): Self = StObject.set(x, "enableOnly", value.asInstanceOf[js.Any])
+    inline def setEnableOnly(value: js.Any): Self = StObject.set(x, "enableOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRules(value: js.Any): Self = StObject.set(x, "getRules", value.asInstanceOf[js.Any])
+    inline def setGetRules(value: js.Any): Self = StObject.set(x, "getRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: js.Any): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: js.Any): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
   }
 }

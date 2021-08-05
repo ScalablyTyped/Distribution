@@ -17,29 +17,22 @@ object onTriggerMod {
   }
   object OnMarkTrigger {
     
-    @scala.inline
-    def apply(trigger: Expr): OnMarkTrigger = {
+    inline def apply(trigger: Expr): OnMarkTrigger = {
       val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnMarkTrigger]
     }
     
-    @scala.inline
-    implicit class OnMarkTriggerMutableBuilder[Self <: OnMarkTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: OnMarkTrigger](x: Self) {
       
-      @scala.inline
-      def setModify(value: Expr): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
+      inline def setModify(value: Expr): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyUndefined: Self = StObject.set(x, "modify", js.undefined)
+      inline def setModifyUndefined: Self = StObject.set(x, "modify", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: Expr): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: Expr): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: Expr): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Expr): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   
@@ -59,47 +52,34 @@ object onTriggerMod {
   }
   object OnTrigger {
     
-    @scala.inline
-    def apply(trigger: Expr): OnTrigger = {
+    inline def apply(trigger: Expr): OnTrigger = {
       val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnTrigger]
     }
     
-    @scala.inline
-    implicit class OnTriggerMutableBuilder[Self <: OnTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: OnTrigger](x: Self) {
       
-      @scala.inline
-      def setInsert(value: Expr): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: Expr): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      @scala.inline
-      def setModify(value: Expr): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
+      inline def setModify(value: Expr): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyUndefined: Self = StObject.set(x, "modify", js.undefined)
+      inline def setModifyUndefined: Self = StObject.set(x, "modify", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Boolean | Expr): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean | Expr): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setToggle(value: Expr): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+      inline def setToggle(value: Expr): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: Expr): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: Expr): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: Expr): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Expr): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
 }

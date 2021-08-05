@@ -13,19 +13,15 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(file: typings.typedoc.optionsDeclarationMod.SourceFileMode.File, modules: Modules): File = {
+  inline def apply(file: typings.typedoc.optionsDeclarationMod.SourceFileMode.File, modules: Modules): File = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setFile(value: typings.typedoc.optionsDeclarationMod.SourceFileMode.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: typings.typedoc.optionsDeclarationMod.SourceFileMode.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModules(value: Modules): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: Modules): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
   }
 }

@@ -20,31 +20,23 @@ trait GooglePrivacyDlpV2CreateStoredInfoTypeRequest extends StObject {
 }
 object GooglePrivacyDlpV2CreateStoredInfoTypeRequest {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2CreateStoredInfoTypeRequest = {
+  inline def apply(): GooglePrivacyDlpV2CreateStoredInfoTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2CreateStoredInfoTypeRequest]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2CreateStoredInfoTypeRequestMutableBuilder[Self <: GooglePrivacyDlpV2CreateStoredInfoTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2CreateStoredInfoTypeRequest](x: Self) {
     
-    @scala.inline
-    def setConfig(value: GooglePrivacyDlpV2StoredInfoTypeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: GooglePrivacyDlpV2StoredInfoTypeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setStoredInfoTypeId(value: String): Self = StObject.set(x, "storedInfoTypeId", value.asInstanceOf[js.Any])
+    inline def setStoredInfoTypeId(value: String): Self = StObject.set(x, "storedInfoTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredInfoTypeIdUndefined: Self = StObject.set(x, "storedInfoTypeId", js.undefined)
+    inline def setStoredInfoTypeIdUndefined: Self = StObject.set(x, "storedInfoTypeId", js.undefined)
   }
 }

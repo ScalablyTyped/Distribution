@@ -14,8 +14,7 @@ trait WebUIDeviceActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIDeviceActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     deviceInformationId: String,
     kind: ActivationKind,

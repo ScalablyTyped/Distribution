@@ -30,47 +30,34 @@ object facesRatingBarMod {
   }
   object FacesRatingBarProps {
     
-    @scala.inline
-    def apply(value: facesRatingBarValues): FacesRatingBarProps = {
+    inline def apply(value: facesRatingBarValues): FacesRatingBarProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FacesRatingBarProps]
     }
     
-    @scala.inline
-    implicit class FacesRatingBarPropsMutableBuilder[Self <: FacesRatingBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: FacesRatingBarProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDescriptionValues(value: js.Tuple5[String, String, String, String, String]): Self = StObject.set(x, "descriptionValues", value.asInstanceOf[js.Any])
+      inline def setDescriptionValues(value: js.Tuple5[String, String, String, String, String]): Self = StObject.set(x, "descriptionValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionValuesUndefined: Self = StObject.set(x, "descriptionValues", js.undefined)
+      inline def setDescriptionValuesUndefined: Self = StObject.set(x, "descriptionValues", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* rating */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* rating */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setValue(value: facesRatingBarValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: facesRatingBarValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,22 +72,16 @@ object facesRatingBarMod {
   trait facesRatingBarValues extends StObject
   object facesRatingBarValues {
     
-    @scala.inline
-    def `0`: typings.wixStyleReact.wixStyleReactNumbers.`0` = 0.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`0`]
+    inline def `0`: typings.wixStyleReact.wixStyleReactNumbers.`0` = 0.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.wixStyleReact.wixStyleReactNumbers.`1` = 1.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`1`]
+    inline def `1`: typings.wixStyleReact.wixStyleReactNumbers.`1` = 1.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.wixStyleReact.wixStyleReactNumbers.`2` = 2.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`2`]
+    inline def `2`: typings.wixStyleReact.wixStyleReactNumbers.`2` = 2.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.wixStyleReact.wixStyleReactNumbers.`3` = 3.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`3`]
+    inline def `3`: typings.wixStyleReact.wixStyleReactNumbers.`3` = 3.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.wixStyleReact.wixStyleReactNumbers.`4` = 4.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`4`]
+    inline def `4`: typings.wixStyleReact.wixStyleReactNumbers.`4` = 4.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.wixStyleReact.wixStyleReactNumbers.`5` = 5.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`5`]
+    inline def `5`: typings.wixStyleReact.wixStyleReactNumbers.`5` = 5.asInstanceOf[typings.wixStyleReact.wixStyleReactNumbers.`5`]
   }
 }

@@ -15,6 +15,5 @@ object VariableTypeTable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVariableType(`type`: typings.wonderJs.evariabletypeMod.EVariableType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getVariableType(`type`: typings.wonderJs.evariabletypeMod.EVariableType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

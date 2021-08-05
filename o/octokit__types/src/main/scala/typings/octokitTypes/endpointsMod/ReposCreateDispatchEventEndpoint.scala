@@ -22,28 +22,21 @@ trait ReposCreateDispatchEventEndpoint extends StObject {
 }
 object ReposCreateDispatchEventEndpoint {
   
-  @scala.inline
-  def apply(event_type: String, owner: String, repo: String): ReposCreateDispatchEventEndpoint = {
+  inline def apply(event_type: String, owner: String, repo: String): ReposCreateDispatchEventEndpoint = {
     val __obj = js.Dynamic.literal(event_type = event_type.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateDispatchEventEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCreateDispatchEventEndpointMutableBuilder[Self <: ReposCreateDispatchEventEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateDispatchEventEndpoint](x: Self) {
     
-    @scala.inline
-    def setClient_payload(value: ReposCreateDispatchEventParamsClientPayload): Self = StObject.set(x, "client_payload", value.asInstanceOf[js.Any])
+    inline def setClient_payload(value: ReposCreateDispatchEventParamsClientPayload): Self = StObject.set(x, "client_payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_payloadUndefined: Self = StObject.set(x, "client_payload", js.undefined)
+    inline def setClient_payloadUndefined: Self = StObject.set(x, "client_payload", js.undefined)
     
-    @scala.inline
-    def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
+    inline def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

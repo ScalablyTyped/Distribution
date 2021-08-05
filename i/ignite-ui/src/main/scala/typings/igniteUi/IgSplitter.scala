@@ -137,112 +137,77 @@ trait IgSplitter
 }
 object IgSplitter {
   
-  @scala.inline
-  def apply(): IgSplitter = {
+  inline def apply(): IgSplitter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgSplitter]
   }
   
-  @scala.inline
-  implicit class IgSplitterMutableBuilder[Self <: IgSplitter] (val x: Self) extends AnyVal {
+  extension [Self <: IgSplitter](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: (/* event */ Event, /* ui */ CollapsedEventUIParam) => Unit): Self = StObject.set(x, "collapsed", js.Any.fromFunction2(value))
+    inline def setCollapsed(value: (/* event */ Event, /* ui */ CollapsedEventUIParam) => Unit): Self = StObject.set(x, "collapsed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setDragDelta(value: Double): Self = StObject.set(x, "dragDelta", value.asInstanceOf[js.Any])
+    inline def setDragDelta(value: Double): Self = StObject.set(x, "dragDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragDeltaUndefined: Self = StObject.set(x, "dragDelta", js.undefined)
+    inline def setDragDeltaUndefined: Self = StObject.set(x, "dragDelta", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: (/* event */ Event, /* ui */ ExpandedEventUIParam) => Unit): Self = StObject.set(x, "expanded", js.Any.fromFunction2(value))
+    inline def setExpanded(value: (/* event */ Event, /* ui */ ExpandedEventUIParam) => Unit): Self = StObject.set(x, "expanded", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLayoutRefreshed(value: (/* event */ Event, /* ui */ LayoutRefreshedEventUIParam) => Unit): Self = StObject.set(x, "layoutRefreshed", js.Any.fromFunction2(value))
+    inline def setLayoutRefreshed(value: (/* event */ Event, /* ui */ LayoutRefreshedEventUIParam) => Unit): Self = StObject.set(x, "layoutRefreshed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLayoutRefreshedUndefined: Self = StObject.set(x, "layoutRefreshed", js.undefined)
+    inline def setLayoutRefreshedUndefined: Self = StObject.set(x, "layoutRefreshed", js.undefined)
     
-    @scala.inline
-    def setLayoutRefreshing(value: (/* event */ Event, /* ui */ LayoutRefreshingEventUIParam) => Unit): Self = StObject.set(x, "layoutRefreshing", js.Any.fromFunction2(value))
+    inline def setLayoutRefreshing(value: (/* event */ Event, /* ui */ LayoutRefreshingEventUIParam) => Unit): Self = StObject.set(x, "layoutRefreshing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLayoutRefreshingUndefined: Self = StObject.set(x, "layoutRefreshing", js.undefined)
+    inline def setLayoutRefreshingUndefined: Self = StObject.set(x, "layoutRefreshing", js.undefined)
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPanels(value: js.Array[IgSplitterPanel]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+    inline def setPanels(value: js.Array[IgSplitterPanel]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelsUndefined: Self = StObject.set(x, "panels", js.undefined)
+    inline def setPanelsUndefined: Self = StObject.set(x, "panels", js.undefined)
     
-    @scala.inline
-    def setPanelsVarargs(value: IgSplitterPanel*): Self = StObject.set(x, "panels", js.Array(value :_*))
+    inline def setPanelsVarargs(value: IgSplitterPanel*): Self = StObject.set(x, "panels", js.Array(value :_*))
     
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setResizeEnded(value: (/* event */ Event, /* ui */ ResizeEndedEventUIParam) => Unit): Self = StObject.set(x, "resizeEnded", js.Any.fromFunction2(value))
+    inline def setResizeEnded(value: (/* event */ Event, /* ui */ ResizeEndedEventUIParam) => Unit): Self = StObject.set(x, "resizeEnded", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResizeEndedUndefined: Self = StObject.set(x, "resizeEnded", js.undefined)
+    inline def setResizeEndedUndefined: Self = StObject.set(x, "resizeEnded", js.undefined)
     
-    @scala.inline
-    def setResizeOtherSplitters(value: Boolean): Self = StObject.set(x, "resizeOtherSplitters", value.asInstanceOf[js.Any])
+    inline def setResizeOtherSplitters(value: Boolean): Self = StObject.set(x, "resizeOtherSplitters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeOtherSplittersUndefined: Self = StObject.set(x, "resizeOtherSplitters", js.undefined)
+    inline def setResizeOtherSplittersUndefined: Self = StObject.set(x, "resizeOtherSplitters", js.undefined)
     
-    @scala.inline
-    def setResizeStarted(value: (/* event */ Event, /* ui */ ResizeStartedEventUIParam) => Unit): Self = StObject.set(x, "resizeStarted", js.Any.fromFunction2(value))
+    inline def setResizeStarted(value: (/* event */ Event, /* ui */ ResizeStartedEventUIParam) => Unit): Self = StObject.set(x, "resizeStarted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResizeStartedUndefined: Self = StObject.set(x, "resizeStarted", js.undefined)
+    inline def setResizeStartedUndefined: Self = StObject.set(x, "resizeStarted", js.undefined)
     
-    @scala.inline
-    def setResizing(value: (/* event */ Event, /* ui */ ResizingEventUIParam) => Unit): Self = StObject.set(x, "resizing", js.Any.fromFunction2(value))
+    inline def setResizing(value: (/* event */ Event, /* ui */ ResizingEventUIParam) => Unit): Self = StObject.set(x, "resizing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResizingUndefined: Self = StObject.set(x, "resizing", js.undefined)
+    inline def setResizingUndefined: Self = StObject.set(x, "resizing", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

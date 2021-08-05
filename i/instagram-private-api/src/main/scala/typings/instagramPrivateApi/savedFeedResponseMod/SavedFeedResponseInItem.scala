@@ -18,31 +18,23 @@ trait SavedFeedResponseInItem extends StObject {
 }
 object SavedFeedResponseInItem {
   
-  @scala.inline
-  def apply(position: js.Array[Double | String]): SavedFeedResponseInItem = {
+  inline def apply(position: js.Array[Double | String]): SavedFeedResponseInItem = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseInItem]
   }
   
-  @scala.inline
-  implicit class SavedFeedResponseInItemMutableBuilder[Self <: SavedFeedResponseInItem] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFeedResponseInItem](x: Self) {
     
-    @scala.inline
-    def setPosition(value: js.Array[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Array[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
     
-    @scala.inline
-    def setProduct(value: SavedFeedResponseProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: SavedFeedResponseProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setUser(value: SavedFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: SavedFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

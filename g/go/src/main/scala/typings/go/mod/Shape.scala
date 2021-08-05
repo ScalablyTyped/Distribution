@@ -89,16 +89,14 @@ object Shape {
     * @param {Geometry} geo the Geometry for the arrowhead
     */
   /* static member */
-  @scala.inline
-  def defineArrowheadGeometry(name: String, geo: Geometry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineArrowheadGeometry")(name.asInstanceOf[js.Any], geo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineArrowheadGeometry(name: String, geo: Geometry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineArrowheadGeometry")(name.asInstanceOf[js.Any], geo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * This static function defines a named arrowhead geometry.
     * @param {string} name the new arrowhead name must start with an uppercase letter, and must not be "None"
     * @param {string} pathstr a geometry path string that will be passed to Geometry.parse
     */
   /* static member */
-  @scala.inline
-  def defineArrowheadGeometry(name: String, pathstr: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineArrowheadGeometry")(name.asInstanceOf[js.Any], pathstr.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineArrowheadGeometry(name: String, pathstr: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineArrowheadGeometry")(name.asInstanceOf[js.Any], pathstr.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * This static function defines a named figure geometry generator for Shapes.
@@ -106,8 +104,7 @@ object Shape {
     * @param {function(Shape, number, number):Geometry} func returns a Geometry for the given Shape, width, and height
     */
   /* static member */
-  @scala.inline
-  def defineFigureGenerator(
+  inline def defineFigureGenerator(
     name: String,
     func: js.Function3[/* shape */ Shape, /* width */ Double, /* height */ Double, Geometry]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFigureGenerator")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -117,24 +114,21 @@ object Shape {
     * @param {string} synonym an existing figure name
     */
   /* static member */
-  @scala.inline
-  def defineFigureGenerator(name: String, synonym: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFigureGenerator")(name.asInstanceOf[js.Any], synonym.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineFigureGenerator(name: String, synonym: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFigureGenerator")(name.asInstanceOf[js.Any], synonym.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * This static function returns a read-only Map of named arrowhead geometries.
     * @return {Map} the keys are arrowhead names; the values are Geometry objects
     */
   /* static member */
-  @scala.inline
-  def getArrowheadGeometries(): Map[String, Geometry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrowheadGeometries")().asInstanceOf[Map[String, Geometry]]
+  inline def getArrowheadGeometries(): Map[String, Geometry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrowheadGeometries")().asInstanceOf[Map[String, Geometry]]
   
   /**
     * This static function returns a read-only Map of named geometry generators.
     * @return {Map} the keys are figure names; the values are either synonymed names or generator functions
     */
   /* static member */
-  @scala.inline
-  def getFigureGenerators(): Map[
+  inline def getFigureGenerators(): Map[
     String, 
     js.Function3[/* shape */ Shape, /* width */ Double, /* height */ Double, Geometry]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFigureGenerators")().asInstanceOf[Map[

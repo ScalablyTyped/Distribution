@@ -25,25 +25,19 @@ trait DataProvider[T /* <: SlickData */] extends StObject {
 }
 object DataProvider {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](getItem: Double => T, getLength: () => Double): DataProvider[T] = {
+  inline def apply[T /* <: SlickData */](getItem: Double => T, getLength: () => Double): DataProvider[T] = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), getLength = js.Any.fromFunction0(getLength))
     __obj.asInstanceOf[DataProvider[T]]
   }
   
-  @scala.inline
-  implicit class DataProviderMutableBuilder[Self <: DataProvider[?], T /* <: SlickData */] (val x: Self & DataProvider[T]) extends AnyVal {
+  extension [Self <: DataProvider[?], T /* <: SlickData */](x: Self & DataProvider[T]) {
     
-    @scala.inline
-    def setGetItem(value: Double => T): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: Double => T): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemMetadata(value: /* index */ Double => RowMetadata[T]): Self = StObject.set(x, "getItemMetadata", js.Any.fromFunction1(value))
+    inline def setGetItemMetadata(value: /* index */ Double => RowMetadata[T]): Self = StObject.set(x, "getItemMetadata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemMetadataUndefined: Self = StObject.set(x, "getItemMetadata", js.undefined)
+    inline def setGetItemMetadataUndefined: Self = StObject.set(x, "getItemMetadata", js.undefined)
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
   }
 }

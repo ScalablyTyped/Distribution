@@ -13,16 +13,13 @@ trait KinesisParameters extends StObject {
 }
 object KinesisParameters {
   
-  @scala.inline
-  def apply(PartitionKeyPath: TargetPartitionKeyPath): KinesisParameters = {
+  inline def apply(PartitionKeyPath: TargetPartitionKeyPath): KinesisParameters = {
     val __obj = js.Dynamic.literal(PartitionKeyPath = PartitionKeyPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisParameters]
   }
   
-  @scala.inline
-  implicit class KinesisParametersMutableBuilder[Self <: KinesisParameters] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisParameters](x: Self) {
     
-    @scala.inline
-    def setPartitionKeyPath(value: TargetPartitionKeyPath): Self = StObject.set(x, "PartitionKeyPath", value.asInstanceOf[js.Any])
+    inline def setPartitionKeyPath(value: TargetPartitionKeyPath): Self = StObject.set(x, "PartitionKeyPath", value.asInstanceOf[js.Any])
   }
 }

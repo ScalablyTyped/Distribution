@@ -83,79 +83,56 @@ object typesCreateBucketInputMod {
   }
   object CreateBucketInput {
     
-    @scala.inline
-    def apply(Bucket: String): CreateBucketInput = {
+    inline def apply(Bucket: String): CreateBucketInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateBucketInput]
     }
     
-    @scala.inline
-    implicit class CreateBucketInputMutableBuilder[Self <: CreateBucketInput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBucketInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setACL(value: `private` | `public-read` | `public-read-write` | `authenticated-read` | String): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
+      inline def setACL(value: `private` | `public-read` | `public-read-write` | `authenticated-read` | String): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACLUndefined: Self = StObject.set(x, "ACL", js.undefined)
+      inline def setACLUndefined: Self = StObject.set(x, "ACL", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateBucketConfiguration(value: CreateBucketConfiguration): Self = StObject.set(x, "CreateBucketConfiguration", value.asInstanceOf[js.Any])
+      inline def setCreateBucketConfiguration(value: CreateBucketConfiguration): Self = StObject.set(x, "CreateBucketConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateBucketConfigurationUndefined: Self = StObject.set(x, "CreateBucketConfiguration", js.undefined)
+      inline def setCreateBucketConfigurationUndefined: Self = StObject.set(x, "CreateBucketConfiguration", js.undefined)
       
-      @scala.inline
-      def setGrantFullControl(value: String): Self = StObject.set(x, "GrantFullControl", value.asInstanceOf[js.Any])
+      inline def setGrantFullControl(value: String): Self = StObject.set(x, "GrantFullControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantFullControlUndefined: Self = StObject.set(x, "GrantFullControl", js.undefined)
+      inline def setGrantFullControlUndefined: Self = StObject.set(x, "GrantFullControl", js.undefined)
       
-      @scala.inline
-      def setGrantRead(value: String): Self = StObject.set(x, "GrantRead", value.asInstanceOf[js.Any])
+      inline def setGrantRead(value: String): Self = StObject.set(x, "GrantRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantReadACP(value: String): Self = StObject.set(x, "GrantReadACP", value.asInstanceOf[js.Any])
+      inline def setGrantReadACP(value: String): Self = StObject.set(x, "GrantReadACP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantReadACPUndefined: Self = StObject.set(x, "GrantReadACP", js.undefined)
+      inline def setGrantReadACPUndefined: Self = StObject.set(x, "GrantReadACP", js.undefined)
       
-      @scala.inline
-      def setGrantReadUndefined: Self = StObject.set(x, "GrantRead", js.undefined)
+      inline def setGrantReadUndefined: Self = StObject.set(x, "GrantRead", js.undefined)
       
-      @scala.inline
-      def setGrantWrite(value: String): Self = StObject.set(x, "GrantWrite", value.asInstanceOf[js.Any])
+      inline def setGrantWrite(value: String): Self = StObject.set(x, "GrantWrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantWriteACP(value: String): Self = StObject.set(x, "GrantWriteACP", value.asInstanceOf[js.Any])
+      inline def setGrantWriteACP(value: String): Self = StObject.set(x, "GrantWriteACP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantWriteACPUndefined: Self = StObject.set(x, "GrantWriteACP", js.undefined)
+      inline def setGrantWriteACPUndefined: Self = StObject.set(x, "GrantWriteACP", js.undefined)
       
-      @scala.inline
-      def setGrantWriteUndefined: Self = StObject.set(x, "GrantWrite", js.undefined)
+      inline def setGrantWriteUndefined: Self = StObject.set(x, "GrantWrite", js.undefined)
     }
   }
 }

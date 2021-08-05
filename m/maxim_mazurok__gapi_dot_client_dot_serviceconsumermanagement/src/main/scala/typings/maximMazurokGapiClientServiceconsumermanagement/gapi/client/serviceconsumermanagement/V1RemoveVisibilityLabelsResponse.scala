@@ -11,22 +11,17 @@ trait V1RemoveVisibilityLabelsResponse extends StObject {
 }
 object V1RemoveVisibilityLabelsResponse {
   
-  @scala.inline
-  def apply(): V1RemoveVisibilityLabelsResponse = {
+  inline def apply(): V1RemoveVisibilityLabelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[V1RemoveVisibilityLabelsResponse]
   }
   
-  @scala.inline
-  implicit class V1RemoveVisibilityLabelsResponseMutableBuilder[Self <: V1RemoveVisibilityLabelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: V1RemoveVisibilityLabelsResponse](x: Self) {
     
-    @scala.inline
-    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
   }
 }

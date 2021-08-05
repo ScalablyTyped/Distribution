@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def constantCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("constantCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def constantCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("constantCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def constantCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("constantCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def constantCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("constantCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

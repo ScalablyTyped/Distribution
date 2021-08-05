@@ -21,37 +21,27 @@ trait Identity extends StObject {
 }
 object Identity {
   
-  @scala.inline
-  def apply(connection: String, isSocial: Boolean, provider: String, user_id: String): Identity = {
+  inline def apply(connection: String, isSocial: Boolean, provider: String, user_id: String): Identity = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSocial = isSocial.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identity]
   }
   
-  @scala.inline
-  implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+  extension [Self <: Identity](x: Self) {
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSocial(value: Boolean): Self = StObject.set(x, "isSocial", value.asInstanceOf[js.Any])
+    inline def setIsSocial(value: Boolean): Self = StObject.set(x, "isSocial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileData(value: Email): Self = StObject.set(x, "profileData", value.asInstanceOf[js.Any])
+    inline def setProfileData(value: Email): Self = StObject.set(x, "profileData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileDataUndefined: Self = StObject.set(x, "profileData", js.undefined)
+    inline def setProfileDataUndefined: Self = StObject.set(x, "profileData", js.undefined)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

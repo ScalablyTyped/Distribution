@@ -36,30 +36,21 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def cubicFromPoints(S: Point, B: Point, E: Point): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[Bezier]
-  @scala.inline
-  def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Bezier]
-  @scala.inline
-  def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[Bezier]
-  @scala.inline
-  def cubicFromPoints(S: Point, B: Point, E: Point, t: Unit, d1: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  inline def cubicFromPoints(S: Point, B: Point, E: Point): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  inline def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  inline def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  inline def cubicFromPoints(S: Point, B: Point, E: Point, t: Unit, d1: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("cubicFromPoints")(S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any], d1.asInstanceOf[js.Any])).asInstanceOf[Bezier]
   
   /* static member */
-  @scala.inline
-  def fromSVG(svgString: String): Bezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSVG")(svgString.asInstanceOf[js.Any]).asInstanceOf[Bezier]
+  inline def fromSVG(svgString: String): Bezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSVG")(svgString.asInstanceOf[js.Any]).asInstanceOf[Bezier]
   
   /* static member */
-  @scala.inline
-  def getABC(n: Double, S: Point, B: Point, E: Point, t: Double): ABC = (^.asInstanceOf[js.Dynamic].applyDynamic("getABC")(n.asInstanceOf[js.Any], S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[ABC]
+  inline def getABC(n: Double, S: Point, B: Point, E: Point, t: Double): ABC = (^.asInstanceOf[js.Dynamic].applyDynamic("getABC")(n.asInstanceOf[js.Any], S.asInstanceOf[js.Any], B.asInstanceOf[js.Any], E.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[ABC]
   
   /* static member */
-  @scala.inline
-  def getUtils(): Typeofutils = ^.asInstanceOf[js.Dynamic].applyDynamic("getUtils")().asInstanceOf[Typeofutils]
+  inline def getUtils(): Typeofutils = ^.asInstanceOf[js.Dynamic].applyDynamic("getUtils")().asInstanceOf[Typeofutils]
   
   /* static member */
-  @scala.inline
-  def quadraticFromPoints(p1: Point, p2: Point, p3: Point): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Bezier]
-  @scala.inline
-  def quadraticFromPoints(p1: Point, p2: Point, p3: Point, t: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  inline def quadraticFromPoints(p1: Point, p2: Point, p3: Point): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Bezier]
+  inline def quadraticFromPoints(p1: Point, p2: Point, p3: Point, t: Double): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("quadraticFromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Bezier]
 }

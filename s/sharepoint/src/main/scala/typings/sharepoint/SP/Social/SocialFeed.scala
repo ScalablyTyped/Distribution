@@ -34,8 +34,7 @@ trait SocialFeed
 }
 object SocialFeed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -51,22 +50,16 @@ object SocialFeed {
     __obj.asInstanceOf[SocialFeed]
   }
   
-  @scala.inline
-  implicit class SocialFeedMutableBuilder[Self <: SocialFeed] (val x: Self) extends AnyVal {
+  extension [Self <: SocialFeed](x: Self) {
     
-    @scala.inline
-    def setGet_attributes(value: () => SocialFeedAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
+    inline def setGet_attributes(value: () => SocialFeedAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_newestProcessed(value: () => String): Self = StObject.set(x, "get_newestProcessed", js.Any.fromFunction0(value))
+    inline def setGet_newestProcessed(value: () => String): Self = StObject.set(x, "get_newestProcessed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_oldestProcessed(value: () => String): Self = StObject.set(x, "get_oldestProcessed", js.Any.fromFunction0(value))
+    inline def setGet_oldestProcessed(value: () => String): Self = StObject.set(x, "get_oldestProcessed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_threads(value: () => js.Array[SocialThread]): Self = StObject.set(x, "get_threads", js.Any.fromFunction0(value))
+    inline def setGet_threads(value: () => js.Array[SocialThread]): Self = StObject.set(x, "get_threads", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_unreadMentionCount(value: () => Double): Self = StObject.set(x, "get_unreadMentionCount", js.Any.fromFunction0(value))
+    inline def setGet_unreadMentionCount(value: () => Double): Self = StObject.set(x, "get_unreadMentionCount", js.Any.fromFunction0(value))
   }
 }

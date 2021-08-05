@@ -54,62 +54,44 @@ object storage {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setGetDatabaseDisplayName(value: () => String): Self = StObject.set(x, "getDatabaseDisplayName", js.Any.fromFunction0(value))
+      inline def setGetDatabaseDisplayName(value: () => String): Self = StObject.set(x, "getDatabaseDisplayName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDatabaseDisplayNameUndefined: Self = StObject.set(x, "getDatabaseDisplayName", js.undefined)
+      inline def setGetDatabaseDisplayNameUndefined: Self = StObject.set(x, "getDatabaseDisplayName", js.undefined)
       
-      @scala.inline
-      def setGetDatabaseName(value: () => String): Self = StObject.set(x, "getDatabaseName", js.Any.fromFunction0(value))
+      inline def setGetDatabaseName(value: () => String): Self = StObject.set(x, "getDatabaseName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDatabaseNameUndefined: Self = StObject.set(x, "getDatabaseName", js.undefined)
+      inline def setGetDatabaseNameUndefined: Self = StObject.set(x, "getDatabaseName", js.undefined)
       
-      @scala.inline
-      def setGetDatabaseSize(value: () => js.Any): Self = StObject.set(x, "getDatabaseSize", js.Any.fromFunction0(value))
+      inline def setGetDatabaseSize(value: () => js.Any): Self = StObject.set(x, "getDatabaseSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDatabaseSizeUndefined: Self = StObject.set(x, "getDatabaseSize", js.undefined)
+      inline def setGetDatabaseSizeUndefined: Self = StObject.set(x, "getDatabaseSize", js.undefined)
       
-      @scala.inline
-      def setGetDatabaseVersion(value: () => String): Self = StObject.set(x, "getDatabaseVersion", js.Any.fromFunction0(value))
+      inline def setGetDatabaseVersion(value: () => String): Self = StObject.set(x, "getDatabaseVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDatabaseVersionUndefined: Self = StObject.set(x, "getDatabaseVersion", js.undefined)
+      inline def setGetDatabaseVersionUndefined: Self = StObject.set(x, "getDatabaseVersion", js.undefined)
       
-      @scala.inline
-      def setSetDatabaseDisplayName(value: /* databaseDisplayName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDatabaseDisplayName", js.Any.fromFunction1(value))
+      inline def setSetDatabaseDisplayName(value: /* databaseDisplayName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDatabaseDisplayName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDatabaseDisplayNameUndefined: Self = StObject.set(x, "setDatabaseDisplayName", js.undefined)
+      inline def setSetDatabaseDisplayNameUndefined: Self = StObject.set(x, "setDatabaseDisplayName", js.undefined)
       
-      @scala.inline
-      def setSetDatabaseName(value: /* databaseName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDatabaseName", js.Any.fromFunction1(value))
+      inline def setSetDatabaseName(value: /* databaseName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDatabaseName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDatabaseNameUndefined: Self = StObject.set(x, "setDatabaseName", js.undefined)
+      inline def setSetDatabaseNameUndefined: Self = StObject.set(x, "setDatabaseName", js.undefined)
       
-      @scala.inline
-      def setSetDatabaseSize(value: /* databaseSize */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDatabaseSize", js.Any.fromFunction1(value))
+      inline def setSetDatabaseSize(value: /* databaseSize */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDatabaseSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDatabaseSizeUndefined: Self = StObject.set(x, "setDatabaseSize", js.undefined)
+      inline def setSetDatabaseSizeUndefined: Self = StObject.set(x, "setDatabaseSize", js.undefined)
       
-      @scala.inline
-      def setSetDatabaseVersion(value: /* databaseVersion */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDatabaseVersion", js.Any.fromFunction1(value))
+      inline def setSetDatabaseVersion(value: /* databaseVersion */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDatabaseVersion", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDatabaseVersionUndefined: Self = StObject.set(x, "setDatabaseVersion", js.undefined)
+      inline def setSetDatabaseVersionUndefined: Self = StObject.set(x, "setDatabaseVersion", js.undefined)
     }
   }
   
@@ -141,22 +123,18 @@ object storage {
     }
     object IDatabase {
       
-      @scala.inline
-      def apply(): IDatabase = {
+      inline def apply(): IDatabase = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IDatabase]
       }
       
-      @scala.inline
-      implicit class IDatabaseMutableBuilder[Self <: IDatabase] (val x: Self) extends AnyVal {
+      extension [Self <: IDatabase](x: Self) {
         
-        @scala.inline
-        def setTransaction(
+        inline def setTransaction(
           value: (/* sql */ js.UndefOr[js.Any], /* success */ js.UndefOr[js.Any], /* failure */ js.UndefOr[js.Any]) => Unit
         ): Self = StObject.set(x, "transaction", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+        inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
       }
     }
     

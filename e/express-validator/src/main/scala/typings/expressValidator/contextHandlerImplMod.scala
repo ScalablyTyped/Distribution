@@ -16,9 +16,9 @@ object contextHandlerImplMod {
        with ContextHandler[Chain] {
     def this(builder: ContextBuilder, chain: Chain) = this()
     
-    val builder: js.Any = js.native
+    /* private */ val builder: js.Any = js.native
     
-    val chain: js.Any = js.native
+    /* private */ val chain: js.Any = js.native
     
     def optional(options: Optional): Chain = js.native
   }

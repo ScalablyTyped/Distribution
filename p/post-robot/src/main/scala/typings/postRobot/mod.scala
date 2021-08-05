@@ -15,41 +15,27 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def on(name: String, options: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
-  @scala.inline
-  def on(name: String, options: HandlerType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
-  @scala.inline
-  def on(name: String, options: ServerOptionsType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
-  @scala.inline
-  def on(name: String, options: ServerOptionsType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
+  inline def on(name: String, options: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
+  inline def on(name: String, options: HandlerType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
+  inline def on(name: String, options: ServerOptionsType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
+  inline def on(name: String, options: ServerOptionsType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
   
-  @scala.inline
-  def once(name: String): ZalgoPromise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Data]]
-  @scala.inline
-  def once(name: String, options: Unit, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  @scala.inline
-  def once(name: String, options: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  @scala.inline
-  def once(name: String, options: HandlerType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  @scala.inline
-  def once(name: String, options: ServerOptionsType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
-  @scala.inline
-  def once(name: String, options: ServerOptionsType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  inline def once(name: String): ZalgoPromise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Data]]
+  inline def once(name: String, options: Unit, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  inline def once(name: String, options: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  inline def once(name: String, options: HandlerType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  inline def once(name: String, options: ServerOptionsType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
+  inline def once(name: String, options: ServerOptionsType, handler: HandlerType): ZalgoPromise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Data]]
   
-  @scala.inline
-  def send(win: CrossDomainWindowType, name: String): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
-  @scala.inline
-  def send(win: CrossDomainWindowType, name: String, data: js.Object): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
-  @scala.inline
-  def send(
+  inline def send(win: CrossDomainWindowType, name: String): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  inline def send(win: CrossDomainWindowType, name: String, data: js.Object): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  inline def send(
     win: CrossDomainWindowType,
     name: String,
     data: js.Object,
     options: FireAndForgetRequestOptionsType & RegularRequestOptionsType
   ): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
-  @scala.inline
-  def send(
+  inline def send(
     win: CrossDomainWindowType,
     name: String,
     data: Unit,
@@ -62,17 +48,14 @@ object mod {
   }
   object CancelableType {
     
-    @scala.inline
-    def apply(cancel: () => Unit): CancelableType = {
+    inline def apply(cancel: () => Unit): CancelableType = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
       __obj.asInstanceOf[CancelableType]
     }
     
-    @scala.inline
-    implicit class CancelableTypeMutableBuilder[Self <: CancelableType] (val x: Self) extends AnyVal {
+    extension [Self <: CancelableType](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
   }
   
@@ -93,35 +76,26 @@ object mod {
   }
   object FireAndForgetRequestOptionsType {
     
-    @scala.inline
-    def apply(): FireAndForgetRequestOptionsType = {
+    inline def apply(): FireAndForgetRequestOptionsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FireAndForgetRequestOptionsType]
     }
     
-    @scala.inline
-    implicit class FireAndForgetRequestOptionsTypeMutableBuilder[Self <: FireAndForgetRequestOptionsType] (val x: Self) extends AnyVal {
+    extension [Self <: FireAndForgetRequestOptionsType](x: Self) {
       
-      @scala.inline
-      def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
       
-      @scala.inline
-      def setFireAndForget(value: `true`): Self = StObject.set(x, "fireAndForget", value.asInstanceOf[js.Any])
+      inline def setFireAndForget(value: `true`): Self = StObject.set(x, "fireAndForget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFireAndForgetUndefined: Self = StObject.set(x, "fireAndForget", js.undefined)
+      inline def setFireAndForgetUndefined: Self = StObject.set(x, "fireAndForget", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -142,35 +116,26 @@ object mod {
   }
   object RegularRequestOptionsType {
     
-    @scala.inline
-    def apply(): RegularRequestOptionsType = {
+    inline def apply(): RegularRequestOptionsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegularRequestOptionsType]
     }
     
-    @scala.inline
-    implicit class RegularRequestOptionsTypeMutableBuilder[Self <: RegularRequestOptionsType] (val x: Self) extends AnyVal {
+    extension [Self <: RegularRequestOptionsType](x: Self) {
       
-      @scala.inline
-      def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
       
-      @scala.inline
-      def setFireAndForget(value: `false`): Self = StObject.set(x, "fireAndForget", value.asInstanceOf[js.Any])
+      inline def setFireAndForget(value: `false`): Self = StObject.set(x, "fireAndForget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFireAndForgetUndefined: Self = StObject.set(x, "fireAndForget", js.undefined)
+      inline def setFireAndForgetUndefined: Self = StObject.set(x, "fireAndForget", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -184,26 +149,20 @@ object mod {
   }
   object ResponseMessageEvent {
     
-    @scala.inline
-    def apply(data: js.Object, origin: String): ResponseMessageEvent = {
+    inline def apply(data: js.Object, origin: String): ResponseMessageEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], source = null)
       __obj.asInstanceOf[ResponseMessageEvent]
     }
     
-    @scala.inline
-    implicit class ResponseMessageEventMutableBuilder[Self <: ResponseMessageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseMessageEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: CrossDomainWindowType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: CrossDomainWindowType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceNull: Self = StObject.set(x, "source", null)
+      inline def setSourceNull: Self = StObject.set(x, "source", null)
     }
   }
   
@@ -225,64 +184,46 @@ object mod {
   }
   object ServerOptionsType {
     
-    @scala.inline
-    def apply(): ServerOptionsType = {
+    inline def apply(): ServerOptionsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerOptionsType]
     }
     
-    @scala.inline
-    implicit class ServerOptionsTypeMutableBuilder[Self <: ServerOptionsType] (val x: Self) extends AnyVal {
+    extension [Self <: ServerOptionsType](x: Self) {
       
-      @scala.inline
-      def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: DomainMatcher): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
       
-      @scala.inline
-      def setErrorHandler(value: /* err */ js.Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandler(value: /* err */ js.Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setErrorOnClose(value: Boolean): Self = StObject.set(x, "errorOnClose", value.asInstanceOf[js.Any])
+      inline def setErrorOnClose(value: Boolean): Self = StObject.set(x, "errorOnClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOnCloseUndefined: Self = StObject.set(x, "errorOnClose", js.undefined)
+      inline def setErrorOnCloseUndefined: Self = StObject.set(x, "errorOnClose", js.undefined)
       
-      @scala.inline
-      def setHandler(
+      inline def setHandler(
         value: (/* source */ CrossDomainWindowType, /* origin */ String, /* data */ js.Object) => Unit | ZalgoPromise[js.Any]
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      @scala.inline
-      def setWindow(value: CrossDomainWindowType): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: CrossDomainWindowType): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowNull: Self = StObject.set(x, "window", null)
+      inline def setWindowNull: Self = StObject.set(x, "window", null)
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   

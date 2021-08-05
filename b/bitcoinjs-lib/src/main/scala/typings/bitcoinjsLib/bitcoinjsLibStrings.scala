@@ -11,125 +11,107 @@ object bitcoinjsLibStrings {
   sealed trait multisig
     extends StObject
        with AllScriptType
-  @scala.inline
-  def multisig: multisig = "multisig".asInstanceOf[multisig]
+  inline def multisig: multisig = "multisig".asInstanceOf[multisig]
   
   @js.native
   sealed trait nonstandard
     extends StObject
        with AllScriptType
-  @scala.inline
-  def nonstandard: nonstandard = "nonstandard".asInstanceOf[nonstandard]
+  inline def nonstandard: nonstandard = "nonstandard".asInstanceOf[nonstandard]
   
   @js.native
   sealed trait `p2sh-multisig`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-multisig`: `p2sh-multisig` = "p2sh-multisig".asInstanceOf[`p2sh-multisig`]
+  inline def `p2sh-multisig`: `p2sh-multisig` = "p2sh-multisig".asInstanceOf[`p2sh-multisig`]
   
   @js.native
   sealed trait `p2sh-nonstandard`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-nonstandard`: `p2sh-nonstandard` = "p2sh-nonstandard".asInstanceOf[`p2sh-nonstandard`]
+  inline def `p2sh-nonstandard`: `p2sh-nonstandard` = "p2sh-nonstandard".asInstanceOf[`p2sh-nonstandard`]
   
   @js.native
   sealed trait `p2sh-p2wsh-multisig`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-p2wsh-multisig`: `p2sh-p2wsh-multisig` = "p2sh-p2wsh-multisig".asInstanceOf[`p2sh-p2wsh-multisig`]
+  inline def `p2sh-p2wsh-multisig`: `p2sh-p2wsh-multisig` = "p2sh-p2wsh-multisig".asInstanceOf[`p2sh-p2wsh-multisig`]
   
   @js.native
   sealed trait `p2sh-p2wsh-nonstandard`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-p2wsh-nonstandard`: `p2sh-p2wsh-nonstandard` = "p2sh-p2wsh-nonstandard".asInstanceOf[`p2sh-p2wsh-nonstandard`]
+  inline def `p2sh-p2wsh-nonstandard`: `p2sh-p2wsh-nonstandard` = "p2sh-p2wsh-nonstandard".asInstanceOf[`p2sh-p2wsh-nonstandard`]
   
   @js.native
   sealed trait `p2sh-p2wsh-pubkey`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-p2wsh-pubkey`: `p2sh-p2wsh-pubkey` = "p2sh-p2wsh-pubkey".asInstanceOf[`p2sh-p2wsh-pubkey`]
+  inline def `p2sh-p2wsh-pubkey`: `p2sh-p2wsh-pubkey` = "p2sh-p2wsh-pubkey".asInstanceOf[`p2sh-p2wsh-pubkey`]
   
   @js.native
   sealed trait `p2sh-p2wsh-pubkeyhash`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-p2wsh-pubkeyhash`: `p2sh-p2wsh-pubkeyhash` = "p2sh-p2wsh-pubkeyhash".asInstanceOf[`p2sh-p2wsh-pubkeyhash`]
+  inline def `p2sh-p2wsh-pubkeyhash`: `p2sh-p2wsh-pubkeyhash` = "p2sh-p2wsh-pubkeyhash".asInstanceOf[`p2sh-p2wsh-pubkeyhash`]
   
   @js.native
   sealed trait `p2sh-pubkey`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-pubkey`: `p2sh-pubkey` = "p2sh-pubkey".asInstanceOf[`p2sh-pubkey`]
+  inline def `p2sh-pubkey`: `p2sh-pubkey` = "p2sh-pubkey".asInstanceOf[`p2sh-pubkey`]
   
   @js.native
   sealed trait `p2sh-pubkeyhash`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-pubkeyhash`: `p2sh-pubkeyhash` = "p2sh-pubkeyhash".asInstanceOf[`p2sh-pubkeyhash`]
+  inline def `p2sh-pubkeyhash`: `p2sh-pubkeyhash` = "p2sh-pubkeyhash".asInstanceOf[`p2sh-pubkeyhash`]
   
   @js.native
   sealed trait `p2sh-witnesspubkeyhash`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2sh-witnesspubkeyhash`: `p2sh-witnesspubkeyhash` = "p2sh-witnesspubkeyhash".asInstanceOf[`p2sh-witnesspubkeyhash`]
+  inline def `p2sh-witnesspubkeyhash`: `p2sh-witnesspubkeyhash` = "p2sh-witnesspubkeyhash".asInstanceOf[`p2sh-witnesspubkeyhash`]
   
   @js.native
   sealed trait `p2wsh-multisig`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2wsh-multisig`: `p2wsh-multisig` = "p2wsh-multisig".asInstanceOf[`p2wsh-multisig`]
+  inline def `p2wsh-multisig`: `p2wsh-multisig` = "p2wsh-multisig".asInstanceOf[`p2wsh-multisig`]
   
   @js.native
   sealed trait `p2wsh-nonstandard`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2wsh-nonstandard`: `p2wsh-nonstandard` = "p2wsh-nonstandard".asInstanceOf[`p2wsh-nonstandard`]
+  inline def `p2wsh-nonstandard`: `p2wsh-nonstandard` = "p2wsh-nonstandard".asInstanceOf[`p2wsh-nonstandard`]
   
   @js.native
   sealed trait `p2wsh-pubkey`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2wsh-pubkey`: `p2wsh-pubkey` = "p2wsh-pubkey".asInstanceOf[`p2wsh-pubkey`]
+  inline def `p2wsh-pubkey`: `p2wsh-pubkey` = "p2wsh-pubkey".asInstanceOf[`p2wsh-pubkey`]
   
   @js.native
   sealed trait `p2wsh-pubkeyhash`
     extends StObject
        with AllScriptType
-  @scala.inline
-  def `p2wsh-pubkeyhash`: `p2wsh-pubkeyhash` = "p2wsh-pubkeyhash".asInstanceOf[`p2wsh-pubkeyhash`]
+  inline def `p2wsh-pubkeyhash`: `p2wsh-pubkeyhash` = "p2wsh-pubkeyhash".asInstanceOf[`p2wsh-pubkeyhash`]
   
   @js.native
   sealed trait pubkey
     extends StObject
        with AllScriptType
-  @scala.inline
-  def pubkey: pubkey = "pubkey".asInstanceOf[pubkey]
+  inline def pubkey: pubkey = "pubkey".asInstanceOf[pubkey]
   
   @js.native
   sealed trait pubkeyhash
     extends StObject
        with AllScriptType
-  @scala.inline
-  def pubkeyhash: pubkeyhash = "pubkeyhash".asInstanceOf[pubkeyhash]
+  inline def pubkeyhash: pubkeyhash = "pubkeyhash".asInstanceOf[pubkeyhash]
   
   @js.native
   sealed trait witnesspubkeyhash
     extends StObject
        with AllScriptType
-  @scala.inline
-  def witnesspubkeyhash: witnesspubkeyhash = "witnesspubkeyhash".asInstanceOf[witnesspubkeyhash]
+  inline def witnesspubkeyhash: witnesspubkeyhash = "witnesspubkeyhash".asInstanceOf[witnesspubkeyhash]
 }

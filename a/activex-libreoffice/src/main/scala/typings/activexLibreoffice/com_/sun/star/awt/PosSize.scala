@@ -25,25 +25,18 @@ object PosSize {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HEIGHT: `8` = 8.asInstanceOf[`8`]
+    inline def HEIGHT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def POS: `3` = 3.asInstanceOf[`3`]
+    inline def POS: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def POSSIZE: `15` = 15.asInstanceOf[`15`]
+    inline def POSSIZE: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def SIZE: `12` = 12.asInstanceOf[`12`]
+    inline def SIZE: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def WIDTH: `4` = 4.asInstanceOf[`4`]
+    inline def WIDTH: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def X: `1` = 1.asInstanceOf[`1`]
+    inline def X: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Y: `2` = 2.asInstanceOf[`2`]
+    inline def Y: `2` = 2.asInstanceOf[`2`]
   }
 }

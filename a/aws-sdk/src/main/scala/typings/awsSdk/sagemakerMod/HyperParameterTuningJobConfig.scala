@@ -38,43 +38,31 @@ trait HyperParameterTuningJobConfig extends StObject {
 }
 object HyperParameterTuningJobConfig {
   
-  @scala.inline
-  def apply(ResourceLimits: ResourceLimits, Strategy: HyperParameterTuningJobStrategyType): HyperParameterTuningJobConfig = {
+  inline def apply(ResourceLimits: ResourceLimits, Strategy: HyperParameterTuningJobStrategyType): HyperParameterTuningJobConfig = {
     val __obj = js.Dynamic.literal(ResourceLimits = ResourceLimits.asInstanceOf[js.Any], Strategy = Strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperParameterTuningJobConfig]
   }
   
-  @scala.inline
-  implicit class HyperParameterTuningJobConfigMutableBuilder[Self <: HyperParameterTuningJobConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HyperParameterTuningJobConfig](x: Self) {
     
-    @scala.inline
-    def setHyperParameterTuningJobObjective(value: HyperParameterTuningJobObjective): Self = StObject.set(x, "HyperParameterTuningJobObjective", value.asInstanceOf[js.Any])
+    inline def setHyperParameterTuningJobObjective(value: HyperParameterTuningJobObjective): Self = StObject.set(x, "HyperParameterTuningJobObjective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperParameterTuningJobObjectiveUndefined: Self = StObject.set(x, "HyperParameterTuningJobObjective", js.undefined)
+    inline def setHyperParameterTuningJobObjectiveUndefined: Self = StObject.set(x, "HyperParameterTuningJobObjective", js.undefined)
     
-    @scala.inline
-    def setParameterRanges(value: ParameterRanges): Self = StObject.set(x, "ParameterRanges", value.asInstanceOf[js.Any])
+    inline def setParameterRanges(value: ParameterRanges): Self = StObject.set(x, "ParameterRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterRangesUndefined: Self = StObject.set(x, "ParameterRanges", js.undefined)
+    inline def setParameterRangesUndefined: Self = StObject.set(x, "ParameterRanges", js.undefined)
     
-    @scala.inline
-    def setResourceLimits(value: ResourceLimits): Self = StObject.set(x, "ResourceLimits", value.asInstanceOf[js.Any])
+    inline def setResourceLimits(value: ResourceLimits): Self = StObject.set(x, "ResourceLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategy(value: HyperParameterTuningJobStrategyType): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: HyperParameterTuningJobStrategyType): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobEarlyStoppingType(value: TrainingJobEarlyStoppingType): Self = StObject.set(x, "TrainingJobEarlyStoppingType", value.asInstanceOf[js.Any])
+    inline def setTrainingJobEarlyStoppingType(value: TrainingJobEarlyStoppingType): Self = StObject.set(x, "TrainingJobEarlyStoppingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobEarlyStoppingTypeUndefined: Self = StObject.set(x, "TrainingJobEarlyStoppingType", js.undefined)
+    inline def setTrainingJobEarlyStoppingTypeUndefined: Self = StObject.set(x, "TrainingJobEarlyStoppingType", js.undefined)
     
-    @scala.inline
-    def setTuningJobCompletionCriteria(value: TuningJobCompletionCriteria): Self = StObject.set(x, "TuningJobCompletionCriteria", value.asInstanceOf[js.Any])
+    inline def setTuningJobCompletionCriteria(value: TuningJobCompletionCriteria): Self = StObject.set(x, "TuningJobCompletionCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuningJobCompletionCriteriaUndefined: Self = StObject.set(x, "TuningJobCompletionCriteria", js.undefined)
+    inline def setTuningJobCompletionCriteriaUndefined: Self = StObject.set(x, "TuningJobCompletionCriteria", js.undefined)
   }
 }

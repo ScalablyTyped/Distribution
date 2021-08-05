@@ -11,17 +11,14 @@ trait `232` extends StObject {
 }
 object `232` {
   
-  @scala.inline
-  def apply(): `232` = {
+  inline def apply(): `232` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ArgumentPlaceholder")
     __obj.asInstanceOf[`232`]
   }
   
-  @scala.inline
-  implicit class `232MutableBuilder`[Self <: `232`] (val x: Self) extends AnyVal {
+  extension [Self <: `232`](x: Self) {
     
-    @scala.inline
-    def setType(value: ArgumentPlaceholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArgumentPlaceholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

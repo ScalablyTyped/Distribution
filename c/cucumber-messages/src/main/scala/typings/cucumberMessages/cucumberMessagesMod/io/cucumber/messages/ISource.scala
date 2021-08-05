@@ -21,40 +21,29 @@ trait ISource extends StObject {
 }
 object ISource {
   
-  @scala.inline
-  def apply(): ISource = {
+  inline def apply(): ISource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISource]
   }
   
-  @scala.inline
-  implicit class ISourceMutableBuilder[Self <: ISource] (val x: Self) extends AnyVal {
+  extension [Self <: ISource](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMedia(value: IMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: IMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaNull: Self = StObject.set(x, "media", null)
+    inline def setMediaNull: Self = StObject.set(x, "media", null)
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriNull: Self = StObject.set(x, "uri", null)
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

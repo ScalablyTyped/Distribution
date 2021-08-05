@@ -11,16 +11,13 @@ trait ServiceListOptions extends StObject {
 }
 object ServiceListOptions {
   
-  @scala.inline
-  def apply(Filters: Id): ServiceListOptions = {
+  inline def apply(Filters: Id): ServiceListOptions = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceListOptions]
   }
   
-  @scala.inline
-  implicit class ServiceListOptionsMutableBuilder[Self <: ServiceListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceListOptions](x: Self) {
     
-    @scala.inline
-    def setFilters(value: Id): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Id): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
   }
 }

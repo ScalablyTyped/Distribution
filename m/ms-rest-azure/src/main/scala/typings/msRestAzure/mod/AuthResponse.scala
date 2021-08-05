@@ -12,8 +12,7 @@ trait AuthResponse extends StObject {
 }
 object AuthResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     credentials: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials,
     subscriptions: js.Array[LinkedSubscription]
   ): AuthResponse = {
@@ -21,16 +20,12 @@ object AuthResponse {
     __obj.asInstanceOf[AuthResponse]
   }
   
-  @scala.inline
-  implicit class AuthResponseMutableBuilder[Self <: AuthResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AuthResponse](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptions(value: js.Array[LinkedSubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: js.Array[LinkedSubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: LinkedSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: LinkedSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(colors: (ColorInput | PositionedColorInput)*): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
-  @scala.inline
-  def apply(colors: js.Array[ColorInput | PositionedColorInput]): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
+  inline def apply(colors: (ColorInput | PositionedColorInput)*): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
+  inline def apply(colors: js.Array[ColorInput | PositionedColorInput]): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
   
   @JSImport("gradient-string", JSImport.Namespace)
   @js.native
@@ -90,26 +88,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHsvSpin(value: String): Self = StObject.set(x, "hsvSpin", value.asInstanceOf[js.Any])
+      inline def setHsvSpin(value: String): Self = StObject.set(x, "hsvSpin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsvSpinUndefined: Self = StObject.set(x, "hsvSpin", js.undefined)
+      inline def setHsvSpinUndefined: Self = StObject.set(x, "hsvSpin", js.undefined)
       
-      @scala.inline
-      def setInterpolation(value: String): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+      inline def setInterpolation(value: String): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+      inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     }
   }
   
@@ -121,20 +113,16 @@ object mod {
   }
   object PositionedColorInput {
     
-    @scala.inline
-    def apply(color: ColorInput, pos: Double): PositionedColorInput = {
+    inline def apply(color: ColorInput, pos: Double): PositionedColorInput = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[PositionedColorInput]
     }
     
-    @scala.inline
-    implicit class PositionedColorInputMutableBuilder[Self <: PositionedColorInput] (val x: Self) extends AnyVal {
+    extension [Self <: PositionedColorInput](x: Self) {
       
-      @scala.inline
-      def setColor(value: ColorInput): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorInput): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
 }

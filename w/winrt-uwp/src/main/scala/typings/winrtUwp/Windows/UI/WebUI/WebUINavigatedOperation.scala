@@ -15,16 +15,13 @@ trait WebUINavigatedOperation extends StObject {
 }
 object WebUINavigatedOperation {
   
-  @scala.inline
-  def apply(getDeferral: () => WebUINavigatedDeferral): WebUINavigatedOperation = {
+  inline def apply(getDeferral: () => WebUINavigatedDeferral): WebUINavigatedOperation = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[WebUINavigatedOperation]
   }
   
-  @scala.inline
-  implicit class WebUINavigatedOperationMutableBuilder[Self <: WebUINavigatedOperation] (val x: Self) extends AnyVal {
+  extension [Self <: WebUINavigatedOperation](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => WebUINavigatedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => WebUINavigatedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebExtensionManifestBrowserActionDefaultArea extends StObject
 object WebExtensionManifestBrowserActionDefaultArea {
   
-  @scala.inline
-  def menupanel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menupanel = "menupanel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menupanel]
+  inline def menupanel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menupanel = "menupanel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.menupanel]
   
-  @scala.inline
-  def navbar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.navbar = "navbar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.navbar]
+  inline def navbar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.navbar = "navbar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.navbar]
   
-  @scala.inline
-  def personaltoolbar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.personaltoolbar = "personaltoolbar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.personaltoolbar]
+  inline def personaltoolbar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.personaltoolbar = "personaltoolbar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.personaltoolbar]
   
-  @scala.inline
-  def tabstrip: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabstrip = "tabstrip".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabstrip]
+  inline def tabstrip: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabstrip = "tabstrip".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabstrip]
 }

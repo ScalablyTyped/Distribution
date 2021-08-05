@@ -18,25 +18,19 @@ trait InheritedStyleEntry extends StObject {
 }
 object InheritedStyleEntry {
   
-  @scala.inline
-  def apply(matchedCSSRules: js.Array[RuleMatch]): InheritedStyleEntry = {
+  inline def apply(matchedCSSRules: js.Array[RuleMatch]): InheritedStyleEntry = {
     val __obj = js.Dynamic.literal(matchedCSSRules = matchedCSSRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[InheritedStyleEntry]
   }
   
-  @scala.inline
-  implicit class InheritedStyleEntryMutableBuilder[Self <: InheritedStyleEntry] (val x: Self) extends AnyVal {
+  extension [Self <: InheritedStyleEntry](x: Self) {
     
-    @scala.inline
-    def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
+    inline def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
+    inline def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
     
-    @scala.inline
-    def setMatchedCSSRules(value: js.Array[RuleMatch]): Self = StObject.set(x, "matchedCSSRules", value.asInstanceOf[js.Any])
+    inline def setMatchedCSSRules(value: js.Array[RuleMatch]): Self = StObject.set(x, "matchedCSSRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedCSSRulesVarargs(value: RuleMatch*): Self = StObject.set(x, "matchedCSSRules", js.Array(value :_*))
+    inline def setMatchedCSSRulesVarargs(value: RuleMatch*): Self = StObject.set(x, "matchedCSSRules", js.Array(value :_*))
   }
 }

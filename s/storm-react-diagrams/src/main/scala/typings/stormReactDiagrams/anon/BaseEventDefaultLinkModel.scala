@@ -21,8 +21,7 @@ trait BaseEventDefaultLinkModel extends StObject {
 }
 object BaseEventDefaultLinkModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entity: BaseEntity[BaseListener[js.Any]],
     firing: Boolean,
     id: String,
@@ -32,25 +31,18 @@ object BaseEventDefaultLinkModel {
     __obj.asInstanceOf[BaseEventDefaultLinkModel]
   }
   
-  @scala.inline
-  implicit class BaseEventDefaultLinkModelMutableBuilder[Self <: BaseEventDefaultLinkModel] (val x: Self) extends AnyVal {
+  extension [Self <: BaseEventDefaultLinkModel](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
+    inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

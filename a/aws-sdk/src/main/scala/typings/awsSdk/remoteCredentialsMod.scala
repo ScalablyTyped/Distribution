@@ -26,26 +26,20 @@ object remoteCredentialsMod {
   }
   object RemoteCredentialsOptions {
     
-    @scala.inline
-    def apply(): RemoteCredentialsOptions = {
+    inline def apply(): RemoteCredentialsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoteCredentialsOptions]
     }
     
-    @scala.inline
-    implicit class RemoteCredentialsOptionsMutableBuilder[Self <: RemoteCredentialsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteCredentialsOptions](x: Self) {
       
-      @scala.inline
-      def setHttpOptions(value: Timeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
+      inline def setHttpOptions(value: Timeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
+      inline def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     }
   }
 }

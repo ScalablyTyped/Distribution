@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdChevronConvertRule extends StObject
 object WdChevronConvertRule {
   
-  @scala.inline
-  def wdAlwaysConvert: `1` = 1.asInstanceOf[`1`]
+  inline def wdAlwaysConvert: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdAskToConvert: `3` = 3.asInstanceOf[`3`]
+  inline def wdAskToConvert: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdAskToNotConvert: `2` = 2.asInstanceOf[`2`]
+  inline def wdAskToNotConvert: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdNeverConvert: `0` = 0.asInstanceOf[`0`]
+  inline def wdNeverConvert: `0` = 0.asInstanceOf[`0`]
 }

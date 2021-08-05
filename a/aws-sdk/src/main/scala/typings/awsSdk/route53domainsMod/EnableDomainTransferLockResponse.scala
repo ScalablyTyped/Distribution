@@ -13,16 +13,13 @@ trait EnableDomainTransferLockResponse extends StObject {
 }
 object EnableDomainTransferLockResponse {
   
-  @scala.inline
-  def apply(OperationId: OperationId): EnableDomainTransferLockResponse = {
+  inline def apply(OperationId: OperationId): EnableDomainTransferLockResponse = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableDomainTransferLockResponse]
   }
   
-  @scala.inline
-  implicit class EnableDomainTransferLockResponseMutableBuilder[Self <: EnableDomainTransferLockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EnableDomainTransferLockResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }
 }

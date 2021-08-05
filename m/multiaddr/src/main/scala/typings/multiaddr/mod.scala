@@ -23,10 +23,8 @@ object mod {
     * @param addr - If String or Uint8Array, needs to adhere
     * to the address format of a [multiaddr](https://github.com/multiformats/multiaddr#string-format)
     */
-  @scala.inline
-  def apply(): Multiaddr = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Multiaddr]
-  @scala.inline
-  def apply(input: MultiaddrInput): Multiaddr = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Multiaddr]
+  inline def apply(): Multiaddr = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Multiaddr]
+  inline def apply(input: MultiaddrInput): Multiaddr = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Multiaddr]
   
   @JSImport("multiaddr", JSImport.Namespace)
   @js.native
@@ -49,20 +47,17 @@ object mod {
   /**
     * Creates a Multiaddr from a node-friendly address object
     */
-  @scala.inline
-  def fromNodeAddress(addr: NodeAddress, transport: String): Multiaddr = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeAddress")(addr.asInstanceOf[js.Any], transport.asInstanceOf[js.Any])).asInstanceOf[Multiaddr]
+  inline def fromNodeAddress(addr: NodeAddress, transport: String): Multiaddr = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeAddress")(addr.asInstanceOf[js.Any], transport.asInstanceOf[js.Any])).asInstanceOf[Multiaddr]
   
   /**
     * Returns if something is a Multiaddr
     */
-  @scala.inline
-  def isMultiaddr(addr: js.Any): /* is multiaddr.multiaddr.Multiaddr */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiaddr")(addr.asInstanceOf[js.Any]).asInstanceOf[/* is multiaddr.multiaddr.Multiaddr */ Boolean]
+  inline def isMultiaddr(addr: js.Any): /* is multiaddr.multiaddr.Multiaddr */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiaddr")(addr.asInstanceOf[js.Any]).asInstanceOf[/* is multiaddr.multiaddr.Multiaddr */ Boolean]
   
   /**
     * Returns if something is a Multiaddr that is a name
     */
-  @scala.inline
-  def isName(addr: Multiaddr): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isName")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isName(addr: Multiaddr): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isName")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Object containing table, names and codes of all supported protocols.
@@ -78,8 +73,7 @@ object mod {
   /**
     * Returns an array of multiaddrs, by resolving the multiaddr that is a name
     */
-  @scala.inline
-  def resolve(addr: Multiaddr): js.Promise[js.Array[Multiaddr]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Multiaddr]]]
+  inline def resolve(addr: Multiaddr): js.Promise[js.Array[Multiaddr]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Multiaddr]]]
   
   @JSImport("multiaddr", "resolvers")
   @js.native
@@ -207,26 +201,20 @@ object mod {
   }
   object NetOptions {
     
-    @scala.inline
-    def apply(family: ipv4_ | ipv6_, host: String, port: Double, transport: tcp | udp): NetOptions = {
+    inline def apply(family: ipv4_ | ipv6_, host: String, port: Double, transport: tcp | udp): NetOptions = {
       val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetOptions]
     }
     
-    @scala.inline
-    implicit class NetOptionsMutableBuilder[Self <: NetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NetOptions](x: Self) {
       
-      @scala.inline
-      def setFamily(value: ipv4_ | ipv6_): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: ipv4_ | ipv6_): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransport(value: tcp | udp): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: tcp | udp): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     }
   }
   
@@ -240,23 +228,18 @@ object mod {
   }
   object NodeAddress {
     
-    @scala.inline
-    def apply(address: String, family: IPv4 | IPv6, port: String): NodeAddress = {
+    inline def apply(address: String, family: IPv4 | IPv6, port: String): NodeAddress = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeAddress]
     }
     
-    @scala.inline
-    implicit class NodeAddressMutableBuilder[Self <: NodeAddress] (val x: Self) extends AnyVal {
+    extension [Self <: NodeAddress](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamily(value: IPv4 | IPv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: IPv4 | IPv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,35 +257,26 @@ object mod {
   }
   object Protocol {
     
-    @scala.inline
-    def apply(code: Double, name: String, size: Double): Protocol = {
+    inline def apply(code: Double, name: String, size: Double): Protocol = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Protocol]
     }
     
-    @scala.inline
-    implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
+    extension [Self <: Protocol](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: Boolean): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Boolean): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setResolvable(value: Boolean): Self = StObject.set(x, "resolvable", value.asInstanceOf[js.Any])
+      inline def setResolvable(value: Boolean): Self = StObject.set(x, "resolvable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvableUndefined: Self = StObject.set(x, "resolvable", js.undefined)
+      inline def setResolvableUndefined: Self = StObject.set(x, "resolvable", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

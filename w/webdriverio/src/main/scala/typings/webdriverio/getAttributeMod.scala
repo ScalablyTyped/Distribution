@@ -10,6 +10,5 @@ object getAttributeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(attributeName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(attributeName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def default(attributeName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(attributeName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

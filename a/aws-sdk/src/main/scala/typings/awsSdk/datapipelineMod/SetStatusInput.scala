@@ -23,25 +23,19 @@ trait SetStatusInput extends StObject {
 }
 object SetStatusInput {
   
-  @scala.inline
-  def apply(objectIds: idList, pipelineId: id, status: String): SetStatusInput = {
+  inline def apply(objectIds: idList, pipelineId: id, status: String): SetStatusInput = {
     val __obj = js.Dynamic.literal(objectIds = objectIds.asInstanceOf[js.Any], pipelineId = pipelineId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStatusInput]
   }
   
-  @scala.inline
-  implicit class SetStatusInputMutableBuilder[Self <: SetStatusInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetStatusInput](x: Self) {
     
-    @scala.inline
-    def setObjectIds(value: idList): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    inline def setObjectIds(value: idList): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsVarargs(value: id*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: id*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

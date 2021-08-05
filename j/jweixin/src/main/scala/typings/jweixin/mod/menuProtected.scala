@@ -20,30 +20,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait menuProtected extends StObject
 object menuProtected {
   
-  @scala.inline
-  def menuItemColoncopyUrl: typings.jweixin.jweixinStrings.menuItemColoncopyUrl = "menuItem:copyUrl".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColoncopyUrl]
+  inline def menuItemColoncopyUrl: typings.jweixin.jweixinStrings.menuItemColoncopyUrl = "menuItem:copyUrl".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColoncopyUrl]
   
-  @scala.inline
-  def menuItemColondelete: typings.jweixin.jweixinStrings.menuItemColondelete = "menuItem:delete".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColondelete]
+  inline def menuItemColondelete: typings.jweixin.jweixinStrings.menuItemColondelete = "menuItem:delete".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColondelete]
   
-  @scala.inline
-  def menuItemColoneditTag: typings.jweixin.jweixinStrings.menuItemColoneditTag = "menuItem:editTag".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColoneditTag]
+  inline def menuItemColoneditTag: typings.jweixin.jweixinStrings.menuItemColoneditTag = "menuItem:editTag".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColoneditTag]
   
-  @scala.inline
-  def menuItemColonopenWithQQBrowser: typings.jweixin.jweixinStrings.menuItemColonopenWithQQBrowser = "menuItem:openWithQQBrowser".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonopenWithQQBrowser]
+  inline def menuItemColonopenWithQQBrowser: typings.jweixin.jweixinStrings.menuItemColonopenWithQQBrowser = "menuItem:openWithQQBrowser".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonopenWithQQBrowser]
   
-  @scala.inline
-  def menuItemColonopenWithSafari: typings.jweixin.jweixinStrings.menuItemColonopenWithSafari = "menuItem:openWithSafari".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonopenWithSafari]
+  inline def menuItemColonopenWithSafari: typings.jweixin.jweixinStrings.menuItemColonopenWithSafari = "menuItem:openWithSafari".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonopenWithSafari]
   
-  @scala.inline
-  def menuItemColonoriginPage: typings.jweixin.jweixinStrings.menuItemColonoriginPage = "menuItem:originPage".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonoriginPage]
+  inline def menuItemColonoriginPage: typings.jweixin.jweixinStrings.menuItemColonoriginPage = "menuItem:originPage".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonoriginPage]
   
-  @scala.inline
-  def menuItemColonreadMode: typings.jweixin.jweixinStrings.menuItemColonreadMode = "menuItem:readMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonreadMode]
+  inline def menuItemColonreadMode: typings.jweixin.jweixinStrings.menuItemColonreadMode = "menuItem:readMode".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonreadMode]
   
-  @scala.inline
-  def menuItemColonshareColonbrand: typings.jweixin.jweixinStrings.menuItemColonshareColonbrand = "menuItem:share:brand".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonshareColonbrand]
+  inline def menuItemColonshareColonbrand: typings.jweixin.jweixinStrings.menuItemColonshareColonbrand = "menuItem:share:brand".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonshareColonbrand]
   
-  @scala.inline
-  def menuItemColonshareColonemail: typings.jweixin.jweixinStrings.menuItemColonshareColonemail = "menuItem:share:email".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonshareColonemail]
+  inline def menuItemColonshareColonemail: typings.jweixin.jweixinStrings.menuItemColonshareColonemail = "menuItem:share:email".asInstanceOf[typings.jweixin.jweixinStrings.menuItemColonshareColonemail]
 }

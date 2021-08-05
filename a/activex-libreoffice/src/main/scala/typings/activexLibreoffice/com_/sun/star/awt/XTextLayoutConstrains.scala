@@ -19,8 +19,7 @@ trait XTextLayoutConstrains
 }
 object XTextLayoutConstrains {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getColumnsAndLines: (js.Array[Double], js.Array[Double]) => Unit,
     getMinimumSize: (Double, Double) => Size,
@@ -31,13 +30,10 @@ object XTextLayoutConstrains {
     __obj.asInstanceOf[XTextLayoutConstrains]
   }
   
-  @scala.inline
-  implicit class XTextLayoutConstrainsMutableBuilder[Self <: XTextLayoutConstrains] (val x: Self) extends AnyVal {
+  extension [Self <: XTextLayoutConstrains](x: Self) {
     
-    @scala.inline
-    def setGetColumnsAndLines(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "getColumnsAndLines", js.Any.fromFunction2(value))
+    inline def setGetColumnsAndLines(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "getColumnsAndLines", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMinimumSize(value: (Double, Double) => Size): Self = StObject.set(x, "getMinimumSize", js.Any.fromFunction2(value))
+    inline def setGetMinimumSize(value: (Double, Double) => Size): Self = StObject.set(x, "getMinimumSize", js.Any.fromFunction2(value))
   }
 }

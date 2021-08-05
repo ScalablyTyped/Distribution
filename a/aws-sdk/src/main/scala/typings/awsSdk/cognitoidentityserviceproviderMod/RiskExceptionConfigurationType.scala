@@ -18,31 +18,23 @@ trait RiskExceptionConfigurationType extends StObject {
 }
 object RiskExceptionConfigurationType {
   
-  @scala.inline
-  def apply(): RiskExceptionConfigurationType = {
+  inline def apply(): RiskExceptionConfigurationType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RiskExceptionConfigurationType]
   }
   
-  @scala.inline
-  implicit class RiskExceptionConfigurationTypeMutableBuilder[Self <: RiskExceptionConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: RiskExceptionConfigurationType](x: Self) {
     
-    @scala.inline
-    def setBlockedIPRangeList(value: BlockedIPRangeListType): Self = StObject.set(x, "BlockedIPRangeList", value.asInstanceOf[js.Any])
+    inline def setBlockedIPRangeList(value: BlockedIPRangeListType): Self = StObject.set(x, "BlockedIPRangeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedIPRangeListUndefined: Self = StObject.set(x, "BlockedIPRangeList", js.undefined)
+    inline def setBlockedIPRangeListUndefined: Self = StObject.set(x, "BlockedIPRangeList", js.undefined)
     
-    @scala.inline
-    def setBlockedIPRangeListVarargs(value: StringType*): Self = StObject.set(x, "BlockedIPRangeList", js.Array(value :_*))
+    inline def setBlockedIPRangeListVarargs(value: StringType*): Self = StObject.set(x, "BlockedIPRangeList", js.Array(value :_*))
     
-    @scala.inline
-    def setSkippedIPRangeList(value: SkippedIPRangeListType): Self = StObject.set(x, "SkippedIPRangeList", value.asInstanceOf[js.Any])
+    inline def setSkippedIPRangeList(value: SkippedIPRangeListType): Self = StObject.set(x, "SkippedIPRangeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedIPRangeListUndefined: Self = StObject.set(x, "SkippedIPRangeList", js.undefined)
+    inline def setSkippedIPRangeListUndefined: Self = StObject.set(x, "SkippedIPRangeList", js.undefined)
     
-    @scala.inline
-    def setSkippedIPRangeListVarargs(value: StringType*): Self = StObject.set(x, "SkippedIPRangeList", js.Array(value :_*))
+    inline def setSkippedIPRangeListVarargs(value: StringType*): Self = StObject.set(x, "SkippedIPRangeList", js.Array(value :_*))
   }
 }

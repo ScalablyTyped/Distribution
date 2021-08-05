@@ -45,49 +45,35 @@ trait SchemaPosition extends StObject {
 }
 object SchemaPosition {
   
-  @scala.inline
-  def apply(): SchemaPosition = {
+  inline def apply(): SchemaPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPosition]
   }
   
-  @scala.inline
-  implicit class SchemaPositionMutableBuilder[Self <: SchemaPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPosition](x: Self) {
     
-    @scala.inline
-    def setByteOffset(value: String): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
+    inline def setByteOffset(value: String): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteOffsetUndefined: Self = StObject.set(x, "byteOffset", js.undefined)
+    inline def setByteOffsetUndefined: Self = StObject.set(x, "byteOffset", js.undefined)
     
-    @scala.inline
-    def setConcatPosition(value: SchemaConcatPosition): Self = StObject.set(x, "concatPosition", value.asInstanceOf[js.Any])
+    inline def setConcatPosition(value: SchemaConcatPosition): Self = StObject.set(x, "concatPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcatPositionUndefined: Self = StObject.set(x, "concatPosition", js.undefined)
+    inline def setConcatPositionUndefined: Self = StObject.set(x, "concatPosition", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setRecordIndex(value: String): Self = StObject.set(x, "recordIndex", value.asInstanceOf[js.Any])
+    inline def setRecordIndex(value: String): Self = StObject.set(x, "recordIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
+    inline def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
     
-    @scala.inline
-    def setShufflePosition(value: String): Self = StObject.set(x, "shufflePosition", value.asInstanceOf[js.Any])
+    inline def setShufflePosition(value: String): Self = StObject.set(x, "shufflePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShufflePositionUndefined: Self = StObject.set(x, "shufflePosition", js.undefined)
+    inline def setShufflePositionUndefined: Self = StObject.set(x, "shufflePosition", js.undefined)
   }
 }

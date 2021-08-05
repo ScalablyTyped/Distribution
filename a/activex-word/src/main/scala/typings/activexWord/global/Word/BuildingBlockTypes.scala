@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.BuildingBlockTypes")
 @js.native
-class BuildingBlockTypes protected ()
+/* private */ class BuildingBlockTypes ()
   extends StObject
      with typings.activexWord.Word.BuildingBlockTypes {
   
@@ -26,7 +26,7 @@ class BuildingBlockTypes protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.BuildingBlockTypes_typekey")
   var WordDotBuildingBlockTypes_typekey: typings.activexWord.Word.BuildingBlockTypes = js.native
 }

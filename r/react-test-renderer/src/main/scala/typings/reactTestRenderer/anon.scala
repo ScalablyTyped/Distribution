@@ -12,17 +12,14 @@ object anon {
   }
   object Deep {
     
-    @scala.inline
-    def apply(deep: Boolean): Deep = {
+    inline def apply(deep: Boolean): Deep = {
       val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
       __obj.asInstanceOf[Deep]
     }
     
-    @scala.inline
-    implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+    extension [Self <: Deep](x: Self) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     }
   }
 }

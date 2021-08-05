@@ -59,6 +59,5 @@ object readMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintPathOffsetLengthTimeout: Length): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPathOffsetLengthTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintPathOffsetLengthTimeout: Length): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPathOffsetLengthTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

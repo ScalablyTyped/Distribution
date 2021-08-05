@@ -10,7 +10,7 @@ object groupInstanceIdCreatorMod {
   @js.native
   class GroupInstanceIdCreator () extends StObject {
     
-    var existingIds: js.Any = js.native
+    /* private */ var existingIds: js.Any = js.native
     
     def getInstanceIdForKey(key: String): Double = js.native
   }

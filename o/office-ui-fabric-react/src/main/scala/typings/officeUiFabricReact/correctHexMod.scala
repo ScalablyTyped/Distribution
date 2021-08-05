@@ -10,6 +10,5 @@ object correctHexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def correctHex(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHex")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def correctHex(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHex")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -32,56 +32,40 @@ object PortControl {
   }
   object Mapping {
     
-    @scala.inline
-    def apply(externalPort: Double, internalIp: String, internalPort: Double, lifetime: Double, protocol: String): Mapping = {
+    inline def apply(externalPort: Double, internalIp: String, internalPort: Double, lifetime: Double, protocol: String): Mapping = {
       val __obj = js.Dynamic.literal(externalPort = externalPort.asInstanceOf[js.Any], internalIp = internalIp.asInstanceOf[js.Any], internalPort = internalPort.asInstanceOf[js.Any], lifetime = lifetime.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mapping]
     }
     
-    @scala.inline
-    implicit class MappingMutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
+    extension [Self <: Mapping](x: Self) {
       
-      @scala.inline
-      def setErrInfo(value: String): Self = StObject.set(x, "errInfo", value.asInstanceOf[js.Any])
+      inline def setErrInfo(value: String): Self = StObject.set(x, "errInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrInfoUndefined: Self = StObject.set(x, "errInfo", js.undefined)
+      inline def setErrInfoUndefined: Self = StObject.set(x, "errInfo", js.undefined)
       
-      @scala.inline
-      def setExternalIp(value: String): Self = StObject.set(x, "externalIp", value.asInstanceOf[js.Any])
+      inline def setExternalIp(value: String): Self = StObject.set(x, "externalIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalIpUndefined: Self = StObject.set(x, "externalIp", js.undefined)
+      inline def setExternalIpUndefined: Self = StObject.set(x, "externalIp", js.undefined)
       
-      @scala.inline
-      def setExternalPort(value: Double): Self = StObject.set(x, "externalPort", value.asInstanceOf[js.Any])
+      inline def setExternalPort(value: Double): Self = StObject.set(x, "externalPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalIp(value: String): Self = StObject.set(x, "internalIp", value.asInstanceOf[js.Any])
+      inline def setInternalIp(value: String): Self = StObject.set(x, "internalIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalPort(value: Double): Self = StObject.set(x, "internalPort", value.asInstanceOf[js.Any])
+      inline def setInternalPort(value: Double): Self = StObject.set(x, "internalPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+      inline def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: js.Array[Double]): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: js.Array[Double]): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setNonceVarargs(value: Double*): Self = StObject.set(x, "nonce", js.Array(value :_*))
+      inline def setNonceVarargs(value: Double*): Self = StObject.set(x, "nonce", js.Array(value :_*))
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutId(value: Double): Self = StObject.set(x, "timeoutId", value.asInstanceOf[js.Any])
+      inline def setTimeoutId(value: Double): Self = StObject.set(x, "timeoutId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutIdUndefined: Self = StObject.set(x, "timeoutId", js.undefined)
+      inline def setTimeoutIdUndefined: Self = StObject.set(x, "timeoutId", js.undefined)
     }
   }
   
@@ -132,23 +116,18 @@ object PortControl {
   }
   object ProtocolSupport {
     
-    @scala.inline
-    def apply(natPmp: Boolean, pcp: Boolean, upnp: Boolean): ProtocolSupport = {
+    inline def apply(natPmp: Boolean, pcp: Boolean, upnp: Boolean): ProtocolSupport = {
       val __obj = js.Dynamic.literal(natPmp = natPmp.asInstanceOf[js.Any], pcp = pcp.asInstanceOf[js.Any], upnp = upnp.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProtocolSupport]
     }
     
-    @scala.inline
-    implicit class ProtocolSupportMutableBuilder[Self <: ProtocolSupport] (val x: Self) extends AnyVal {
+    extension [Self <: ProtocolSupport](x: Self) {
       
-      @scala.inline
-      def setNatPmp(value: Boolean): Self = StObject.set(x, "natPmp", value.asInstanceOf[js.Any])
+      inline def setNatPmp(value: Boolean): Self = StObject.set(x, "natPmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPcp(value: Boolean): Self = StObject.set(x, "pcp", value.asInstanceOf[js.Any])
+      inline def setPcp(value: Boolean): Self = StObject.set(x, "pcp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpnp(value: Boolean): Self = StObject.set(x, "upnp", value.asInstanceOf[js.Any])
+      inline def setUpnp(value: Boolean): Self = StObject.set(x, "upnp", value.asInstanceOf[js.Any])
     }
   }
 }

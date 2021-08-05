@@ -21,14 +21,11 @@ trait SynchronizePolicy extends StObject
 object SynchronizePolicy {
   
   /** Client is master. */
-  @scala.inline
-  def CLIENT_IS_MASTER: `1` = 1.asInstanceOf[`1`]
+  inline def CLIENT_IS_MASTER: `1` = 1.asInstanceOf[`1`]
   
   /** None is master. */
-  @scala.inline
-  def NONE_IS_MASTER: `2` = 2.asInstanceOf[`2`]
+  inline def NONE_IS_MASTER: `2` = 2.asInstanceOf[`2`]
   
   /** Server is master. */
-  @scala.inline
-  def SERVER_IS_MASTER: `0` = 0.asInstanceOf[`0`]
+  inline def SERVER_IS_MASTER: `0` = 0.asInstanceOf[`0`]
 }

@@ -12,20 +12,16 @@ trait TableOnSort extends StObject {
 }
 object TableOnSort {
   
-  @scala.inline
-  def apply(field: String, `type`: String): TableOnSort = {
+  inline def apply(field: String, `type`: String): TableOnSort = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOnSort]
   }
   
-  @scala.inline
-  implicit class TableOnSortMutableBuilder[Self <: TableOnSort] (val x: Self) extends AnyVal {
+  extension [Self <: TableOnSort](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

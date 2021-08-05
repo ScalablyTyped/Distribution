@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String, data: js.Any): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(str: String, data: js.Any, options: ReadonlyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, data: js.Any): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, data: js.Any, options: ReadonlyOptions): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("string-placeholder", JSImport.Namespace)
   @js.native
@@ -28,38 +26,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+      inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
       
-      @scala.inline
-      def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     }
   }
 }

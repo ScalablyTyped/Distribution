@@ -15,10 +15,8 @@ object mod {
   /**
     * Compress middleware for Koa
     */
-  @scala.inline
-  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(options: CompressOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(options: CompressOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-compress", JSImport.Namespace)
   @js.native
@@ -59,50 +57,36 @@ object mod {
   }
   object CompressOptions {
     
-    @scala.inline
-    def apply(): CompressOptions = {
+    inline def apply(): CompressOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompressOptions]
     }
     
-    @scala.inline
-    implicit class CompressOptionsMutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompressOptions](x: Self) {
       
-      @scala.inline
-      def setBr(value: BrotliOptions | `false`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: BrotliOptions | `false`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
+      inline def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
       
-      @scala.inline
-      def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+      inline def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+      inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
       
-      @scala.inline
-      def setDeflate(value: ZlibOptions | `false`): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
+      inline def setDeflate(value: ZlibOptions | `false`): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
+      inline def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* mimeType */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* mimeType */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setGzip(value: ZlibOptions | `false`): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+      inline def setGzip(value: ZlibOptions | `false`): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+      inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double | String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double | String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

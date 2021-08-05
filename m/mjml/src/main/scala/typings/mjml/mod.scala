@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(inp: String): MJMLParseResults = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[MJMLParseResults]
-  @scala.inline
-  def apply(inp: String, opts: MJMLParsingOpts): MJMLParseResults = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MJMLParseResults]
-  @scala.inline
-  def apply(inp: MJMLJsonObject): MJMLParseResults = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[MJMLParseResults]
-  @scala.inline
-  def apply(inp: MJMLJsonObject, opts: MJMLParsingOpts): MJMLParseResults = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MJMLParseResults]
+  inline def apply(inp: String): MJMLParseResults = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[MJMLParseResults]
+  inline def apply(inp: String, opts: MJMLParsingOpts): MJMLParseResults = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MJMLParseResults]
+  inline def apply(inp: MJMLJsonObject): MJMLParseResults = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[MJMLParseResults]
+  inline def apply(inp: MJMLJsonObject, opts: MJMLParsingOpts): MJMLParseResults = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MJMLParseResults]
   
   @JSImport("mjml", JSImport.Namespace)
   @js.native
@@ -35,35 +31,26 @@ object mod {
   }
   object MJMLJsonObject {
     
-    @scala.inline
-    def apply(attributes: js.Object, tagName: String): MJMLJsonObject = {
+    inline def apply(attributes: js.Object, tagName: String): MJMLJsonObject = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[MJMLJsonObject]
     }
     
-    @scala.inline
-    implicit class MJMLJsonObjectMutableBuilder[Self <: MJMLJsonObject] (val x: Self) extends AnyVal {
+    extension [Self <: MJMLJsonObject](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[MJMLJsonObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[MJMLJsonObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: MJMLJsonObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: MJMLJsonObject*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,32 +64,24 @@ object mod {
   }
   object MJMLMinifyOptions {
     
-    @scala.inline
-    def apply(): MJMLMinifyOptions = {
+    inline def apply(): MJMLMinifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MJMLMinifyOptions]
     }
     
-    @scala.inline
-    implicit class MJMLMinifyOptionsMutableBuilder[Self <: MJMLMinifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MJMLMinifyOptions](x: Self) {
       
-      @scala.inline
-      def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
+      inline def setCollapseWhitespace(value: Boolean): Self = StObject.set(x, "collapseWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
+      inline def setCollapseWhitespaceUndefined: Self = StObject.set(x, "collapseWhitespace", js.undefined)
       
-      @scala.inline
-      def setMinifyCSS(value: Boolean): Self = StObject.set(x, "minifyCSS", value.asInstanceOf[js.Any])
+      inline def setMinifyCSS(value: Boolean): Self = StObject.set(x, "minifyCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyCSSUndefined: Self = StObject.set(x, "minifyCSS", js.undefined)
+      inline def setMinifyCSSUndefined: Self = StObject.set(x, "minifyCSS", js.undefined)
       
-      @scala.inline
-      def setRemoveEmptyAttributes(value: Boolean): Self = StObject.set(x, "removeEmptyAttributes", value.asInstanceOf[js.Any])
+      inline def setRemoveEmptyAttributes(value: Boolean): Self = StObject.set(x, "removeEmptyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEmptyAttributesUndefined: Self = StObject.set(x, "removeEmptyAttributes", js.undefined)
+      inline def setRemoveEmptyAttributesUndefined: Self = StObject.set(x, "removeEmptyAttributes", js.undefined)
     }
   }
   
@@ -118,26 +97,20 @@ object mod {
   }
   object MJMLParseError {
     
-    @scala.inline
-    def apply(formattedMessage: String, line: Double, message: String, tagName: String): MJMLParseError = {
+    inline def apply(formattedMessage: String, line: Double, message: String, tagName: String): MJMLParseError = {
       val __obj = js.Dynamic.literal(formattedMessage = formattedMessage.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[MJMLParseError]
     }
     
-    @scala.inline
-    implicit class MJMLParseErrorMutableBuilder[Self <: MJMLParseError] (val x: Self) extends AnyVal {
+    extension [Self <: MJMLParseError](x: Self) {
       
-      @scala.inline
-      def setFormattedMessage(value: String): Self = StObject.set(x, "formattedMessage", value.asInstanceOf[js.Any])
+      inline def setFormattedMessage(value: String): Self = StObject.set(x, "formattedMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,23 +122,18 @@ object mod {
   }
   object MJMLParseResults {
     
-    @scala.inline
-    def apply(errors: js.Array[MJMLParseError], html: String): MJMLParseResults = {
+    inline def apply(errors: js.Array[MJMLParseError], html: String): MJMLParseResults = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any])
       __obj.asInstanceOf[MJMLParseResults]
     }
     
-    @scala.inline
-    implicit class MJMLParseResultsMutableBuilder[Self <: MJMLParseResults] (val x: Self) extends AnyVal {
+    extension [Self <: MJMLParseResults](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[MJMLParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[MJMLParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: MJMLParseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: MJMLParseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,56 +155,40 @@ object mod {
   }
   object MJMLParsingOpts {
     
-    @scala.inline
-    def apply(): MJMLParsingOpts = {
+    inline def apply(): MJMLParsingOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MJMLParsingOpts]
     }
     
-    @scala.inline
-    implicit class MJMLParsingOptsMutableBuilder[Self <: MJMLParsingOpts] (val x: Self) extends AnyVal {
+    extension [Self <: MJMLParsingOpts](x: Self) {
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+      inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
       
-      @scala.inline
-      def setFonts(value: StringDictionary[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+      inline def setFonts(value: StringDictionary[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+      inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      @scala.inline
-      def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
+      inline def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
+      inline def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
       
-      @scala.inline
-      def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyOptions(value: MJMLMinifyOptions): Self = StObject.set(x, "minifyOptions", value.asInstanceOf[js.Any])
+      inline def setMinifyOptions(value: MJMLMinifyOptions): Self = StObject.set(x, "minifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyOptionsUndefined: Self = StObject.set(x, "minifyOptions", js.undefined)
+      inline def setMinifyOptionsUndefined: Self = StObject.set(x, "minifyOptions", js.undefined)
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setValidationLevel(value: strict | soft | skip): Self = StObject.set(x, "validationLevel", value.asInstanceOf[js.Any])
+      inline def setValidationLevel(value: strict | soft | skip): Self = StObject.set(x, "validationLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationLevelUndefined: Self = StObject.set(x, "validationLevel", js.undefined)
+      inline def setValidationLevelUndefined: Self = StObject.set(x, "validationLevel", js.undefined)
     }
   }
 }

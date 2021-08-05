@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("FileSystemFileHandle")
 @js.native
-class FileSystemFileHandle protected () extends FileSystemHandle {
+/* protected */ class FileSystemFileHandle () extends FileSystemHandle {
   
   def createWritable(): js.Promise[FileSystemWritableFileStream] = js.native
   def createWritable(options: FileSystemCreateWritableOptions): js.Promise[FileSystemWritableFileStream] = js.native

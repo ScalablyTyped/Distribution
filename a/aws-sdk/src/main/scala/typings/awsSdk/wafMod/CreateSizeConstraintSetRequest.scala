@@ -18,19 +18,15 @@ trait CreateSizeConstraintSetRequest extends StObject {
 }
 object CreateSizeConstraintSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateSizeConstraintSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateSizeConstraintSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSizeConstraintSetRequest]
   }
   
-  @scala.inline
-  implicit class CreateSizeConstraintSetRequestMutableBuilder[Self <: CreateSizeConstraintSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSizeConstraintSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

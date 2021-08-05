@@ -29,8 +29,6 @@ object virtualKeyboard {
     * @param restrictions the preferences to enabled/disabled virtual keyboard features.
     * @param [callback] Invoked with the values which were updated.
     */
-  @scala.inline
-  def restrictFeatures(restrictions: FeatureRestrictions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictFeatures")(restrictions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def restrictFeatures(restrictions: FeatureRestrictions, callback: js.Function1[/* update */ FeatureRestrictions, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictFeatures")(restrictions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def restrictFeatures(restrictions: FeatureRestrictions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictFeatures")(restrictions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def restrictFeatures(restrictions: FeatureRestrictions, callback: js.Function1[/* update */ FeatureRestrictions, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictFeatures")(restrictions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

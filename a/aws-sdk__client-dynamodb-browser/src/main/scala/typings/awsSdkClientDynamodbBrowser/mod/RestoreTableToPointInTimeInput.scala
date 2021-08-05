@@ -9,8 +9,7 @@ trait RestoreTableToPointInTimeInput
      with typings.awsSdkClientDynamodbBrowser.typesRestoreTableToPointInTimeInputMod.RestoreTableToPointInTimeInput
 object RestoreTableToPointInTimeInput {
   
-  @scala.inline
-  def apply(SourceTableName: String, TargetTableName: String): RestoreTableToPointInTimeInput = {
+  inline def apply(SourceTableName: String, TargetTableName: String): RestoreTableToPointInTimeInput = {
     val __obj = js.Dynamic.literal(SourceTableName = SourceTableName.asInstanceOf[js.Any], TargetTableName = TargetTableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreTableToPointInTimeInput]
   }

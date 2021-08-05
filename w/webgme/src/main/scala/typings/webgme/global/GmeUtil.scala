@@ -10,15 +10,13 @@ object GmeUtil {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ASSERT(condition: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("ASSERT")(condition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def ASSERT(condition: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("ASSERT")(condition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
   @JSGlobal("GmeUtil.CANON")
   @js.native
   def CANON_ : typings.webgme.GmeUtil.Canon = js.native
   
-  @scala.inline
-  def CANON__=(x: typings.webgme.GmeUtil.Canon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANON")(x.asInstanceOf[js.Any])
+  inline def CANON__=(x: typings.webgme.GmeUtil.Canon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANON")(x.asInstanceOf[js.Any])
   
   @JSGlobal("GmeUtil.Canon")
   @js.native

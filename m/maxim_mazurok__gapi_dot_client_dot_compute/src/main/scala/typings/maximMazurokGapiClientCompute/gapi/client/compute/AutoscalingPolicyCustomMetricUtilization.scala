@@ -59,43 +59,31 @@ trait AutoscalingPolicyCustomMetricUtilization extends StObject {
 }
 object AutoscalingPolicyCustomMetricUtilization {
   
-  @scala.inline
-  def apply(): AutoscalingPolicyCustomMetricUtilization = {
+  inline def apply(): AutoscalingPolicyCustomMetricUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoscalingPolicyCustomMetricUtilization]
   }
   
-  @scala.inline
-  implicit class AutoscalingPolicyCustomMetricUtilizationMutableBuilder[Self <: AutoscalingPolicyCustomMetricUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscalingPolicyCustomMetricUtilization](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setSingleInstanceAssignment(value: Double): Self = StObject.set(x, "singleInstanceAssignment", value.asInstanceOf[js.Any])
+    inline def setSingleInstanceAssignment(value: Double): Self = StObject.set(x, "singleInstanceAssignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleInstanceAssignmentUndefined: Self = StObject.set(x, "singleInstanceAssignment", js.undefined)
+    inline def setSingleInstanceAssignmentUndefined: Self = StObject.set(x, "singleInstanceAssignment", js.undefined)
     
-    @scala.inline
-    def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
+    inline def setUtilizationTarget(value: Double): Self = StObject.set(x, "utilizationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationTargetType(value: String): Self = StObject.set(x, "utilizationTargetType", value.asInstanceOf[js.Any])
+    inline def setUtilizationTargetType(value: String): Self = StObject.set(x, "utilizationTargetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationTargetTypeUndefined: Self = StObject.set(x, "utilizationTargetType", js.undefined)
+    inline def setUtilizationTargetTypeUndefined: Self = StObject.set(x, "utilizationTargetType", js.undefined)
     
-    @scala.inline
-    def setUtilizationTargetUndefined: Self = StObject.set(x, "utilizationTarget", js.undefined)
+    inline def setUtilizationTargetUndefined: Self = StObject.set(x, "utilizationTarget", js.undefined)
   }
 }

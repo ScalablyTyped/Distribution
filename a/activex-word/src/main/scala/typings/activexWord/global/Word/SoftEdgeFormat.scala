@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SoftEdgeFormat")
 @js.native
-class SoftEdgeFormat protected ()
+/* private */ class SoftEdgeFormat ()
   extends StObject
      with typings.activexWord.Word.SoftEdgeFormat {
   
@@ -26,7 +26,7 @@ class SoftEdgeFormat protected ()
   /* CompleteClass */
   var Type: MsoSoftEdgeType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.SoftEdgeFormat_typekey")
   var WordDotSoftEdgeFormat_typekey: typings.activexWord.Word.SoftEdgeFormat = js.native
 }

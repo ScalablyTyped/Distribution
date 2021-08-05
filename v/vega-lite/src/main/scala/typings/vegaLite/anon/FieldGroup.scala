@@ -10,16 +10,13 @@ trait FieldGroup extends StObject {
 }
 object FieldGroup {
   
-  @scala.inline
-  def apply(field: Group): FieldGroup = {
+  inline def apply(field: Group): FieldGroup = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldGroup]
   }
   
-  @scala.inline
-  implicit class FieldGroupMutableBuilder[Self <: FieldGroup] (val x: Self) extends AnyVal {
+  extension [Self <: FieldGroup](x: Self) {
     
-    @scala.inline
-    def setField(value: Group): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: Group): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

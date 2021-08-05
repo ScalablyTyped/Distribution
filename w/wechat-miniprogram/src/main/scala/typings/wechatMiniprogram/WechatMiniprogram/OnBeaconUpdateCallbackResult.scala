@@ -11,19 +11,15 @@ trait OnBeaconUpdateCallbackResult extends StObject {
 }
 object OnBeaconUpdateCallbackResult {
   
-  @scala.inline
-  def apply(beacons: js.Array[IBeaconInfo]): OnBeaconUpdateCallbackResult = {
+  inline def apply(beacons: js.Array[IBeaconInfo]): OnBeaconUpdateCallbackResult = {
     val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeaconUpdateCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnBeaconUpdateCallbackResultMutableBuilder[Self <: OnBeaconUpdateCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnBeaconUpdateCallbackResult](x: Self) {
     
-    @scala.inline
-    def setBeacons(value: js.Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    inline def setBeacons(value: js.Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconsVarargs(value: IBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: IBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
   }
 }

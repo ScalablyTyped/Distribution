@@ -28,34 +28,25 @@ trait FileSystemSize extends StObject {
 }
 object FileSystemSize {
   
-  @scala.inline
-  def apply(Value: FileSystemSizeValue): FileSystemSize = {
+  inline def apply(Value: FileSystemSizeValue): FileSystemSize = {
     val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemSize]
   }
   
-  @scala.inline
-  implicit class FileSystemSizeMutableBuilder[Self <: FileSystemSize] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemSize](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setValue(value: FileSystemSizeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FileSystemSizeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueInIA(value: FileSystemNullableSizeValue): Self = StObject.set(x, "ValueInIA", value.asInstanceOf[js.Any])
+    inline def setValueInIA(value: FileSystemNullableSizeValue): Self = StObject.set(x, "ValueInIA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueInIAUndefined: Self = StObject.set(x, "ValueInIA", js.undefined)
+    inline def setValueInIAUndefined: Self = StObject.set(x, "ValueInIA", js.undefined)
     
-    @scala.inline
-    def setValueInStandard(value: FileSystemNullableSizeValue): Self = StObject.set(x, "ValueInStandard", value.asInstanceOf[js.Any])
+    inline def setValueInStandard(value: FileSystemNullableSizeValue): Self = StObject.set(x, "ValueInStandard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueInStandardUndefined: Self = StObject.set(x, "ValueInStandard", js.undefined)
+    inline def setValueInStandardUndefined: Self = StObject.set(x, "ValueInStandard", js.undefined)
   }
 }

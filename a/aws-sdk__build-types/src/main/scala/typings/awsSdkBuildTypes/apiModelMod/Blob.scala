@@ -17,23 +17,18 @@ trait Blob
 }
 object Blob {
   
-  @scala.inline
-  def apply(): Blob = {
+  inline def apply(): Blob = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("blob")
     __obj.asInstanceOf[Blob]
   }
   
-  @scala.inline
-  implicit class BlobMutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
+  extension [Self <: Blob](x: Self) {
     
-    @scala.inline
-    def setStreaming(value: scala.Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
+    inline def setStreaming(value: scala.Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
+    inline def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
     
-    @scala.inline
-    def setType(value: blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

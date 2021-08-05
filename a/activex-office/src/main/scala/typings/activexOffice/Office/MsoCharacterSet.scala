@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoCharacterSet extends StObject
 object MsoCharacterSet {
   
-  @scala.inline
-  def msoCharacterSetArabic: `1` = 1.asInstanceOf[`1`]
+  inline def msoCharacterSetArabic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCharacterSetCyrillic: `2` = 2.asInstanceOf[`2`]
+  inline def msoCharacterSetCyrillic: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoCharacterSetEnglishWesternEuropeanOtherLatinScript: `3` = 3.asInstanceOf[`3`]
+  inline def msoCharacterSetEnglishWesternEuropeanOtherLatinScript: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoCharacterSetGreek: `4` = 4.asInstanceOf[`4`]
+  inline def msoCharacterSetGreek: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoCharacterSetHebrew: `5` = 5.asInstanceOf[`5`]
+  inline def msoCharacterSetHebrew: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoCharacterSetJapanese: `6` = 6.asInstanceOf[`6`]
+  inline def msoCharacterSetJapanese: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoCharacterSetKorean: `7` = 7.asInstanceOf[`7`]
+  inline def msoCharacterSetKorean: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoCharacterSetMultilingualUnicode: `8` = 8.asInstanceOf[`8`]
+  inline def msoCharacterSetMultilingualUnicode: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoCharacterSetSimplifiedChinese: `9` = 9.asInstanceOf[`9`]
+  inline def msoCharacterSetSimplifiedChinese: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoCharacterSetThai: `10` = 10.asInstanceOf[`10`]
+  inline def msoCharacterSetThai: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoCharacterSetTraditionalChinese: `11` = 11.asInstanceOf[`11`]
+  inline def msoCharacterSetTraditionalChinese: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoCharacterSetVietnamese: `12` = 12.asInstanceOf[`12`]
+  inline def msoCharacterSetVietnamese: `12` = 12.asInstanceOf[`12`]
 }

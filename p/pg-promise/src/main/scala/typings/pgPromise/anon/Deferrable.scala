@@ -15,31 +15,23 @@ trait Deferrable extends StObject {
 }
 object Deferrable {
   
-  @scala.inline
-  def apply(): Deferrable = {
+  inline def apply(): Deferrable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deferrable]
   }
   
-  @scala.inline
-  implicit class DeferrableMutableBuilder[Self <: Deferrable] (val x: Self) extends AnyVal {
+  extension [Self <: Deferrable](x: Self) {
     
-    @scala.inline
-    def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
+    inline def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+    inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setTiLevel(value: isolationLevel): Self = StObject.set(x, "tiLevel", value.asInstanceOf[js.Any])
+    inline def setTiLevel(value: isolationLevel): Self = StObject.set(x, "tiLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiLevelUndefined: Self = StObject.set(x, "tiLevel", js.undefined)
+    inline def setTiLevelUndefined: Self = StObject.set(x, "tiLevel", js.undefined)
   }
 }

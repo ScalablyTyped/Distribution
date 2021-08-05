@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CommandBarComboBox")
 @js.native
-class CommandBarComboBox protected ()
+/* private */ class CommandBarComboBox ()
   extends StObject
      with typings.activexOffice.Office.CommandBarComboBox

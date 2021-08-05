@@ -18,20 +18,16 @@ trait MetaCommon
 }
 object MetaCommon {
   
-  @scala.inline
-  def apply(custom: Unit, name: StringOrTranslated, `type`: CommonType | metaDotuser | metaDotfolder): MetaCommon = {
+  inline def apply(custom: Unit, name: StringOrTranslated, `type`: CommonType | metaDotuser | metaDotfolder): MetaCommon = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaCommon]
   }
   
-  @scala.inline
-  implicit class MetaCommonMutableBuilder[Self <: MetaCommon] (val x: Self) extends AnyVal {
+  extension [Self <: MetaCommon](x: Self) {
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CommonType | metaDotuser | metaDotfolder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CommonType | metaDotuser | metaDotfolder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

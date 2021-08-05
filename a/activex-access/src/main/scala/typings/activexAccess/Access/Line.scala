@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Line extends StObject {
   
-  @JSName("Access.Line_typekey")
+  /* private */ @JSName("Access.Line_typekey")
   var AccessDotLine_typekey: Line = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

@@ -19,19 +19,15 @@ trait SchemaWatchCreativeRequest extends StObject {
 }
 object SchemaWatchCreativeRequest {
   
-  @scala.inline
-  def apply(): SchemaWatchCreativeRequest = {
+  inline def apply(): SchemaWatchCreativeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWatchCreativeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaWatchCreativeRequestMutableBuilder[Self <: SchemaWatchCreativeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWatchCreativeRequest](x: Self) {
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

@@ -76,8 +76,7 @@ trait CloneOperationInformation extends StObject {
 }
 object CloneOperationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloneStatistics: CloneStatistics,
     completionDate: Date,
     creationDate: Date,
@@ -97,49 +96,34 @@ object CloneOperationInformation {
     __obj.asInstanceOf[CloneOperationInformation]
   }
   
-  @scala.inline
-  implicit class CloneOperationInformationMutableBuilder[Self <: CloneOperationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: CloneOperationInformation](x: Self) {
     
-    @scala.inline
-    def setCloneStatistics(value: CloneStatistics): Self = StObject.set(x, "cloneStatistics", value.asInstanceOf[js.Any])
+    inline def setCloneStatistics(value: CloneStatistics): Self = StObject.set(x, "cloneStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionDate(value: Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationObject(value: ShallowReference): Self = StObject.set(x, "destinationObject", value.asInstanceOf[js.Any])
+    inline def setDestinationObject(value: ShallowReference): Self = StObject.set(x, "destinationObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPlan(value: ShallowReference): Self = StObject.set(x, "destinationPlan", value.asInstanceOf[js.Any])
+    inline def setDestinationPlan(value: ShallowReference): Self = StObject.set(x, "destinationPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationProject(value: ShallowReference): Self = StObject.set(x, "destinationProject", value.asInstanceOf[js.Any])
+    inline def setDestinationProject(value: ShallowReference): Self = StObject.set(x, "destinationProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpId(value: Double): Self = StObject.set(x, "opId", value.asInstanceOf[js.Any])
+    inline def setOpId(value: Double): Self = StObject.set(x, "opId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultObjectType(value: ResultObjectType): Self = StObject.set(x, "resultObjectType", value.asInstanceOf[js.Any])
+    inline def setResultObjectType(value: ResultObjectType): Self = StObject.set(x, "resultObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceObject(value: ShallowReference): Self = StObject.set(x, "sourceObject", value.asInstanceOf[js.Any])
+    inline def setSourceObject(value: ShallowReference): Self = StObject.set(x, "sourceObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePlan(value: ShallowReference): Self = StObject.set(x, "sourcePlan", value.asInstanceOf[js.Any])
+    inline def setSourcePlan(value: ShallowReference): Self = StObject.set(x, "sourcePlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProject(value: ShallowReference): Self = StObject.set(x, "sourceProject", value.asInstanceOf[js.Any])
+    inline def setSourceProject(value: ShallowReference): Self = StObject.set(x, "sourceProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: CloneOperationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CloneOperationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

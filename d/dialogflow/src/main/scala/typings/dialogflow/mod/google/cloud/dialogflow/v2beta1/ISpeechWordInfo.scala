@@ -22,49 +22,35 @@ trait ISpeechWordInfo extends StObject {
 }
 object ISpeechWordInfo {
   
-  @scala.inline
-  def apply(): ISpeechWordInfo = {
+  inline def apply(): ISpeechWordInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISpeechWordInfo]
   }
   
-  @scala.inline
-  implicit class ISpeechWordInfoMutableBuilder[Self <: ISpeechWordInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ISpeechWordInfo](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceNull: Self = StObject.set(x, "confidence", null)
+    inline def setConfidenceNull: Self = StObject.set(x, "confidence", null)
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setEndOffset(value: IDuration): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: IDuration): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetNull: Self = StObject.set(x, "endOffset", null)
+    inline def setEndOffsetNull: Self = StObject.set(x, "endOffset", null)
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
     
-    @scala.inline
-    def setStartOffset(value: IDuration): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: IDuration): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOffsetNull: Self = StObject.set(x, "startOffset", null)
+    inline def setStartOffsetNull: Self = StObject.set(x, "startOffset", null)
     
-    @scala.inline
-    def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
+    inline def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordNull: Self = StObject.set(x, "word", null)
+    inline def setWordNull: Self = StObject.set(x, "word", null)
     
-    @scala.inline
-    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+    inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

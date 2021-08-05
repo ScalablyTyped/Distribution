@@ -292,8 +292,7 @@ object metaInfo {
     }
     object Info {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         formats: StringDictionary[js.Any],
         languages: StringDictionary[js.Any],
         maps: StringDictionary[js.Any],
@@ -305,26 +304,19 @@ object metaInfo {
         __obj.asInstanceOf[Info]
       }
       
-      @scala.inline
-      implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+      extension [Self <: Info](x: Self) {
         
-        @scala.inline
-        def setFormats(value: StringDictionary[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+        inline def setFormats(value: StringDictionary[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguages(value: StringDictionary[js.Any]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+        inline def setLanguages(value: StringDictionary[js.Any]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaps(value: StringDictionary[js.Any]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+        inline def setMaps(value: StringDictionary[js.Any]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResolutions(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+        inline def setResolutions(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchemes(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+        inline def setSchemes(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTiletypes(value: StringDictionary[js.Any]): Self = StObject.set(x, "tiletypes", value.asInstanceOf[js.Any])
+        inline def setTiletypes(value: StringDictionary[js.Any]): Self = StObject.set(x, "tiletypes", value.asInstanceOf[js.Any])
       }
     }
     
@@ -344,32 +336,24 @@ object metaInfo {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setSubDomain(value: String): Self = StObject.set(x, "subDomain", value.asInstanceOf[js.Any])
+        inline def setSubDomain(value: String): Self = StObject.set(x, "subDomain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubDomainUndefined: Self = StObject.set(x, "subDomain", js.undefined)
+        inline def setSubDomainUndefined: Self = StObject.set(x, "subDomain", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
   }
@@ -401,53 +385,38 @@ object metaInfo {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCategoryFilter(value: js.Array[String]): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
+        inline def setCategoryFilter(value: js.Array[String]): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategoryFilterUndefined: Self = StObject.set(x, "categoryFilter", js.undefined)
+        inline def setCategoryFilterUndefined: Self = StObject.set(x, "categoryFilter", js.undefined)
         
-        @scala.inline
-        def setCategoryFilterVarargs(value: String*): Self = StObject.set(x, "categoryFilter", js.Array(value :_*))
+        inline def setCategoryFilterVarargs(value: String*): Self = StObject.set(x, "categoryFilter", js.Array(value :_*))
         
-        @scala.inline
-        def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+        inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+        inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
         
-        @scala.inline
-        def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+        inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+        inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
         
-        @scala.inline
-        def setTileCacheSize(value: Double): Self = StObject.set(x, "tileCacheSize", value.asInstanceOf[js.Any])
+        inline def setTileCacheSize(value: Double): Self = StObject.set(x, "tileCacheSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileCacheSizeUndefined: Self = StObject.set(x, "tileCacheSize", js.undefined)
+        inline def setTileCacheSizeUndefined: Self = StObject.set(x, "tileCacheSize", js.undefined)
         
-        @scala.inline
-        def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+        inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+        inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
         
-        @scala.inline
-        def setTileType(value: String): Self = StObject.set(x, "tileType", value.asInstanceOf[js.Any])
+        inline def setTileType(value: String): Self = StObject.set(x, "tileType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileTypeUndefined: Self = StObject.set(x, "tileType", js.undefined)
+        inline def setTileTypeUndefined: Self = StObject.set(x, "tileType", js.undefined)
       }
     }
   }

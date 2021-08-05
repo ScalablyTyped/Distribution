@@ -23,22 +23,17 @@ trait GlobalControlLevel extends StObject {
 }
 object GlobalControlLevel {
   
-  @scala.inline
-  def apply(level: Double, progress: Double, progressTotal: Double): GlobalControlLevel = {
+  inline def apply(level: Double, progress: Double, progressTotal: Double): GlobalControlLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], progressTotal = progressTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalControlLevel]
   }
   
-  @scala.inline
-  implicit class GlobalControlLevelMutableBuilder[Self <: GlobalControlLevel] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalControlLevel](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
+    inline def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
   }
 }

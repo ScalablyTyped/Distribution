@@ -39,8 +39,7 @@ object utilMod {
     * Shuffles a given array.
     * @param array The array to shuffle.
     */
-  @scala.inline
-  def shuffleArray(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleArray")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def shuffleArray(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleArray")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]:? std.Required<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
 }

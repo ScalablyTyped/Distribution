@@ -13,16 +13,13 @@ trait AddOnGateway extends StObject {
 }
 object AddOnGateway {
   
-  @scala.inline
-  def apply(all: () => js.Promise[js.Array[AddOn]]): AddOnGateway = {
+  inline def apply(all: () => js.Promise[js.Array[AddOn]]): AddOnGateway = {
     val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all))
     __obj.asInstanceOf[AddOnGateway]
   }
   
-  @scala.inline
-  implicit class AddOnGatewayMutableBuilder[Self <: AddOnGateway] (val x: Self) extends AnyVal {
+  extension [Self <: AddOnGateway](x: Self) {
     
-    @scala.inline
-    def setAll(value: () => js.Promise[js.Array[AddOn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+    inline def setAll(value: () => js.Promise[js.Array[AddOn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
   }
 }

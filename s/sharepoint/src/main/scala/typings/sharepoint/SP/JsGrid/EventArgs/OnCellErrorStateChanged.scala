@@ -23,8 +23,7 @@ trait OnCellErrorStateChanged
 }
 object OnCellErrorStateChanged {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bAddingError: Boolean,
     bCellCurrentlyHasError: Boolean,
     bCellHadError: Boolean,
@@ -36,25 +35,18 @@ object OnCellErrorStateChanged {
     __obj.asInstanceOf[OnCellErrorStateChanged]
   }
   
-  @scala.inline
-  implicit class OnCellErrorStateChangedMutableBuilder[Self <: OnCellErrorStateChanged] (val x: Self) extends AnyVal {
+  extension [Self <: OnCellErrorStateChanged](x: Self) {
     
-    @scala.inline
-    def setBAddingError(value: Boolean): Self = StObject.set(x, "bAddingError", value.asInstanceOf[js.Any])
+    inline def setBAddingError(value: Boolean): Self = StObject.set(x, "bAddingError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBCellCurrentlyHasError(value: Boolean): Self = StObject.set(x, "bCellCurrentlyHasError", value.asInstanceOf[js.Any])
+    inline def setBCellCurrentlyHasError(value: Boolean): Self = StObject.set(x, "bCellCurrentlyHasError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBCellHadError(value: Boolean): Self = StObject.set(x, "bCellHadError", value.asInstanceOf[js.Any])
+    inline def setBCellHadError(value: Boolean): Self = StObject.set(x, "bCellHadError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorId(value: Double): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
+    inline def setErrorId(value: Double): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+    inline def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }
 }

@@ -83,106 +83,73 @@ trait VideoParameters extends StObject {
 }
 object VideoParameters {
   
-  @scala.inline
-  def apply(): VideoParameters = {
+  inline def apply(): VideoParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoParameters]
   }
   
-  @scala.inline
-  implicit class VideoParametersMutableBuilder[Self <: VideoParameters] (val x: Self) extends AnyVal {
+  extension [Self <: VideoParameters](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
     
-    @scala.inline
-    def setBitRate(value: VideoBitRate): Self = StObject.set(x, "BitRate", value.asInstanceOf[js.Any])
+    inline def setBitRate(value: VideoBitRate): Self = StObject.set(x, "BitRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitRateUndefined: Self = StObject.set(x, "BitRate", js.undefined)
+    inline def setBitRateUndefined: Self = StObject.set(x, "BitRate", js.undefined)
     
-    @scala.inline
-    def setCodec(value: VideoCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: VideoCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecOptions(value: CodecOptions): Self = StObject.set(x, "CodecOptions", value.asInstanceOf[js.Any])
+    inline def setCodecOptions(value: CodecOptions): Self = StObject.set(x, "CodecOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecOptionsUndefined: Self = StObject.set(x, "CodecOptions", js.undefined)
+    inline def setCodecOptionsUndefined: Self = StObject.set(x, "CodecOptions", js.undefined)
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
-    @scala.inline
-    def setDisplayAspectRatio(value: AspectRatio): Self = StObject.set(x, "DisplayAspectRatio", value.asInstanceOf[js.Any])
+    inline def setDisplayAspectRatio(value: AspectRatio): Self = StObject.set(x, "DisplayAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAspectRatioUndefined: Self = StObject.set(x, "DisplayAspectRatio", js.undefined)
+    inline def setDisplayAspectRatioUndefined: Self = StObject.set(x, "DisplayAspectRatio", js.undefined)
     
-    @scala.inline
-    def setFixedGOP(value: FixedGOP): Self = StObject.set(x, "FixedGOP", value.asInstanceOf[js.Any])
+    inline def setFixedGOP(value: FixedGOP): Self = StObject.set(x, "FixedGOP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedGOPUndefined: Self = StObject.set(x, "FixedGOP", js.undefined)
+    inline def setFixedGOPUndefined: Self = StObject.set(x, "FixedGOP", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: FrameRate): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: FrameRate): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
-    @scala.inline
-    def setKeyframesMaxDist(value: KeyframesMaxDist): Self = StObject.set(x, "KeyframesMaxDist", value.asInstanceOf[js.Any])
+    inline def setKeyframesMaxDist(value: KeyframesMaxDist): Self = StObject.set(x, "KeyframesMaxDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframesMaxDistUndefined: Self = StObject.set(x, "KeyframesMaxDist", js.undefined)
+    inline def setKeyframesMaxDistUndefined: Self = StObject.set(x, "KeyframesMaxDist", js.undefined)
     
-    @scala.inline
-    def setMaxFrameRate(value: MaxFrameRate): Self = StObject.set(x, "MaxFrameRate", value.asInstanceOf[js.Any])
+    inline def setMaxFrameRate(value: MaxFrameRate): Self = StObject.set(x, "MaxFrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFrameRateUndefined: Self = StObject.set(x, "MaxFrameRate", js.undefined)
+    inline def setMaxFrameRateUndefined: Self = StObject.set(x, "MaxFrameRate", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
     
-    @scala.inline
-    def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
+    inline def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
+    inline def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
     
-    @scala.inline
-    def setResolution(value: Resolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Resolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
-    @scala.inline
-    def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
+    inline def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
+    inline def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
     
-    @scala.inline
-    def setWatermarks(value: PresetWatermarks): Self = StObject.set(x, "Watermarks", value.asInstanceOf[js.Any])
+    inline def setWatermarks(value: PresetWatermarks): Self = StObject.set(x, "Watermarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
+    inline def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
     
-    @scala.inline
-    def setWatermarksVarargs(value: PresetWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
+    inline def setWatermarksVarargs(value: PresetWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
   }
 }

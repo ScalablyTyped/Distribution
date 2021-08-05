@@ -14,22 +14,17 @@ trait DialogflowV1MessageSuggestions
 }
 object DialogflowV1MessageSuggestions {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageSuggestions = {
+  inline def apply(): DialogflowV1MessageSuggestions = {
     val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageSuggestions]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageSuggestionsMutableBuilder[Self <: DialogflowV1MessageSuggestions] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageSuggestions](x: Self) {
     
-    @scala.inline
-    def setSuggestions(value: js.Array[DialogflowV1MessageSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[DialogflowV1MessageSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+    inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    @scala.inline
-    def setSuggestionsVarargs(value: DialogflowV1MessageSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: DialogflowV1MessageSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

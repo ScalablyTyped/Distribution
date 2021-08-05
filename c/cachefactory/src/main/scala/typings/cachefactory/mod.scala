@@ -139,20 +139,16 @@ object mod {
   }
   object CacheFactoryInfo {
     
-    @scala.inline
-    def apply(caches: StringDictionary[CacheInfo], size: Double): CacheFactoryInfo = {
+    inline def apply(caches: StringDictionary[CacheInfo], size: Double): CacheFactoryInfo = {
       val __obj = js.Dynamic.literal(caches = caches.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheFactoryInfo]
     }
     
-    @scala.inline
-    implicit class CacheFactoryInfoMutableBuilder[Self <: CacheFactoryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CacheFactoryInfo](x: Self) {
       
-      @scala.inline
-      def setCaches(value: StringDictionary[CacheInfo]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
+      inline def setCaches(value: StringDictionary[CacheInfo]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,20 +162,16 @@ object mod {
   }
   object CacheInfo {
     
-    @scala.inline
-    def apply(id: String, size: Double): CacheInfo = {
+    inline def apply(id: String, size: Double): CacheInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheInfo]
     }
     
-    @scala.inline
-    implicit class CacheInfoMutableBuilder[Self <: CacheInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CacheInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,86 +203,60 @@ object mod {
   }
   object CacheOptions {
     
-    @scala.inline
-    def apply(): CacheOptions = {
+    inline def apply(): CacheOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheOptions]
     }
     
-    @scala.inline
-    implicit class CacheOptionsMutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CacheOptions](x: Self) {
       
-      @scala.inline
-      def setCacheFlushInterval(value: Double): Self = StObject.set(x, "cacheFlushInterval", value.asInstanceOf[js.Any])
+      inline def setCacheFlushInterval(value: Double): Self = StObject.set(x, "cacheFlushInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheFlushIntervalUndefined: Self = StObject.set(x, "cacheFlushInterval", js.undefined)
+      inline def setCacheFlushIntervalUndefined: Self = StObject.set(x, "cacheFlushInterval", js.undefined)
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+      inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
       
-      @scala.inline
-      def setDeleteOnExpire(value: DeleteOnExpire): Self = StObject.set(x, "deleteOnExpire", value.asInstanceOf[js.Any])
+      inline def setDeleteOnExpire(value: DeleteOnExpire): Self = StObject.set(x, "deleteOnExpire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteOnExpireUndefined: Self = StObject.set(x, "deleteOnExpire", js.undefined)
+      inline def setDeleteOnExpireUndefined: Self = StObject.set(x, "deleteOnExpire", js.undefined)
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setOnExpire(value: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
+      inline def setOnExpire(value: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
+      inline def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
       
-      @scala.inline
-      def setRecycleFreq(value: Double): Self = StObject.set(x, "recycleFreq", value.asInstanceOf[js.Any])
+      inline def setRecycleFreq(value: Double): Self = StObject.set(x, "recycleFreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecycleFreqUndefined: Self = StObject.set(x, "recycleFreq", js.undefined)
+      inline def setRecycleFreqUndefined: Self = StObject.set(x, "recycleFreq", js.undefined)
       
-      @scala.inline
-      def setStorageImpl(value: StorageImpl): Self = StObject.set(x, "storageImpl", value.asInstanceOf[js.Any])
+      inline def setStorageImpl(value: StorageImpl): Self = StObject.set(x, "storageImpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageImplUndefined: Self = StObject.set(x, "storageImpl", js.undefined)
+      inline def setStorageImplUndefined: Self = StObject.set(x, "storageImpl", js.undefined)
       
-      @scala.inline
-      def setStorageMode(value: StorageMode): Self = StObject.set(x, "storageMode", value.asInstanceOf[js.Any])
+      inline def setStorageMode(value: StorageMode): Self = StObject.set(x, "storageMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageModeUndefined: Self = StObject.set(x, "storageMode", js.undefined)
+      inline def setStorageModeUndefined: Self = StObject.set(x, "storageMode", js.undefined)
       
-      @scala.inline
-      def setStoragePrefix(value: String): Self = StObject.set(x, "storagePrefix", value.asInstanceOf[js.Any])
+      inline def setStoragePrefix(value: String): Self = StObject.set(x, "storagePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoragePrefixUndefined: Self = StObject.set(x, "storagePrefix", js.undefined)
+      inline def setStoragePrefixUndefined: Self = StObject.set(x, "storagePrefix", js.undefined)
       
-      @scala.inline
-      def setStoreOnReject(value: Boolean): Self = StObject.set(x, "storeOnReject", value.asInstanceOf[js.Any])
+      inline def setStoreOnReject(value: Boolean): Self = StObject.set(x, "storeOnReject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreOnRejectUndefined: Self = StObject.set(x, "storeOnReject", js.undefined)
+      inline def setStoreOnRejectUndefined: Self = StObject.set(x, "storeOnReject", js.undefined)
       
-      @scala.inline
-      def setStoreOnResolve(value: Boolean): Self = StObject.set(x, "storeOnResolve", value.asInstanceOf[js.Any])
+      inline def setStoreOnResolve(value: Boolean): Self = StObject.set(x, "storeOnResolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreOnResolveUndefined: Self = StObject.set(x, "storeOnResolve", js.undefined)
+      inline def setStoreOnResolveUndefined: Self = StObject.set(x, "storeOnResolve", js.undefined)
     }
   }
   
@@ -302,14 +268,11 @@ object mod {
   trait DeleteOnExpire extends StObject
   object DeleteOnExpire {
     
-    @scala.inline
-    def aggressive: typings.cachefactory.cachefactoryStrings.aggressive = "aggressive".asInstanceOf[typings.cachefactory.cachefactoryStrings.aggressive]
+    inline def aggressive: typings.cachefactory.cachefactoryStrings.aggressive = "aggressive".asInstanceOf[typings.cachefactory.cachefactoryStrings.aggressive]
     
-    @scala.inline
-    def none: typings.cachefactory.cachefactoryStrings.none = "none".asInstanceOf[typings.cachefactory.cachefactoryStrings.none]
+    inline def none: typings.cachefactory.cachefactoryStrings.none = "none".asInstanceOf[typings.cachefactory.cachefactoryStrings.none]
     
-    @scala.inline
-    def passive: typings.cachefactory.cachefactoryStrings.passive = "passive".asInstanceOf[typings.cachefactory.cachefactoryStrings.passive]
+    inline def passive: typings.cachefactory.cachefactoryStrings.passive = "passive".asInstanceOf[typings.cachefactory.cachefactoryStrings.passive]
   }
   
   trait GetPutOptions
@@ -326,38 +289,28 @@ object mod {
   }
   object GetPutOptions {
     
-    @scala.inline
-    def apply(): GetPutOptions = {
+    inline def apply(): GetPutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPutOptions]
     }
     
-    @scala.inline
-    implicit class GetPutOptionsMutableBuilder[Self <: GetPutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetPutOptions](x: Self) {
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setOnExpire(value: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
+      inline def setOnExpire(value: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
+      inline def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
       
-      @scala.inline
-      def setStoreOnReject(value: Boolean): Self = StObject.set(x, "storeOnReject", value.asInstanceOf[js.Any])
+      inline def setStoreOnReject(value: Boolean): Self = StObject.set(x, "storeOnReject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreOnRejectUndefined: Self = StObject.set(x, "storeOnReject", js.undefined)
+      inline def setStoreOnRejectUndefined: Self = StObject.set(x, "storeOnReject", js.undefined)
       
-      @scala.inline
-      def setStoreOnResolve(value: Boolean): Self = StObject.set(x, "storeOnResolve", value.asInstanceOf[js.Any])
+      inline def setStoreOnResolve(value: Boolean): Self = StObject.set(x, "storeOnResolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreOnResolveUndefined: Self = StObject.set(x, "storeOnResolve", js.undefined)
+      inline def setStoreOnResolveUndefined: Self = StObject.set(x, "storeOnResolve", js.undefined)
     }
   }
   
@@ -373,38 +326,28 @@ object mod {
   }
   object ItemInfo {
     
-    @scala.inline
-    def apply(): ItemInfo = {
+    inline def apply(): ItemInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemInfo]
     }
     
-    @scala.inline
-    implicit class ItemInfoMutableBuilder[Self <: ItemInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ItemInfo](x: Self) {
       
-      @scala.inline
-      def setAccessed(value: Double): Self = StObject.set(x, "accessed", value.asInstanceOf[js.Any])
+      inline def setAccessed(value: Double): Self = StObject.set(x, "accessed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessedUndefined: Self = StObject.set(x, "accessed", js.undefined)
+      inline def setAccessedUndefined: Self = StObject.set(x, "accessed", js.undefined)
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setIsExpired(value: Boolean): Self = StObject.set(x, "isExpired", value.asInstanceOf[js.Any])
+      inline def setIsExpired(value: Boolean): Self = StObject.set(x, "isExpired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpiredUndefined: Self = StObject.set(x, "isExpired", js.undefined)
+      inline def setIsExpiredUndefined: Self = StObject.set(x, "isExpired", js.undefined)
     }
   }
   
@@ -431,14 +374,11 @@ object mod {
   trait StorageMode extends StObject
   object StorageMode {
     
-    @scala.inline
-    def localStorage: typings.cachefactory.cachefactoryStrings.localStorage = "localStorage".asInstanceOf[typings.cachefactory.cachefactoryStrings.localStorage]
+    inline def localStorage: typings.cachefactory.cachefactoryStrings.localStorage = "localStorage".asInstanceOf[typings.cachefactory.cachefactoryStrings.localStorage]
     
-    @scala.inline
-    def memory: typings.cachefactory.cachefactoryStrings.memory = "memory".asInstanceOf[typings.cachefactory.cachefactoryStrings.memory]
+    inline def memory: typings.cachefactory.cachefactoryStrings.memory = "memory".asInstanceOf[typings.cachefactory.cachefactoryStrings.memory]
     
-    @scala.inline
-    def sessionStorage: typings.cachefactory.cachefactoryStrings.sessionStorage = "sessionStorage".asInstanceOf[typings.cachefactory.cachefactoryStrings.sessionStorage]
+    inline def sessionStorage: typings.cachefactory.cachefactoryStrings.sessionStorage = "sessionStorage".asInstanceOf[typings.cachefactory.cachefactoryStrings.sessionStorage]
   }
   
   trait Utils_ extends StObject {
@@ -459,8 +399,7 @@ object mod {
   }
   object Utils_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       equals_ : (js.Any, js.Any) => Boolean,
       fromJson: String => js.Any,
       isFunction: js.Any => Boolean,
@@ -473,32 +412,23 @@ object mod {
       __obj.asInstanceOf[Utils_]
     }
     
-    @scala.inline
-    implicit class Utils_MutableBuilder[Self <: Utils_] (val x: Self) extends AnyVal {
+    extension [Self <: Utils_](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromJson(value: String => js.Any): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
+      inline def setFromJson(value: String => js.Any): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFunction(value: js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
+      inline def setIsFunction(value: js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsNumber(value: js.Any => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
+      inline def setIsNumber(value: js.Any => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsObject(value: js.Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
+      inline def setIsObject(value: js.Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsString(value: js.Any => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
+      inline def setIsString(value: js.Any => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
     }
   }
 }

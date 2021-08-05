@@ -22,32 +22,24 @@ trait BooleanSupportOption
 }
 object BooleanSupportOption {
   
-  @scala.inline
-  def apply(category: String, default: Boolean, description: String, since: String): BooleanSupportOption = {
+  inline def apply(category: String, default: Boolean, description: String, since: String): BooleanSupportOption = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[BooleanSupportOption]
   }
   
-  @scala.inline
-  implicit class BooleanSupportOptionMutableBuilder[Self <: BooleanSupportOption] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanSupportOption](x: Self) {
     
-    @scala.inline
-    def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+    inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOppositeDescription(value: Boolean): Self = StObject.set(x, "oppositeDescription", value.asInstanceOf[js.Any])
+    inline def setOppositeDescription(value: Boolean): Self = StObject.set(x, "oppositeDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOppositeDescriptionUndefined: Self = StObject.set(x, "oppositeDescription", js.undefined)
+    inline def setOppositeDescriptionUndefined: Self = StObject.set(x, "oppositeDescription", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait UpdateSubscriberRequest extends StObject {
 }
 object UpdateSubscriberRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountId: AccountId,
     BudgetName: BudgetName,
     NewSubscriber: Subscriber,
@@ -45,22 +44,16 @@ object UpdateSubscriberRequest {
     __obj.asInstanceOf[UpdateSubscriberRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSubscriberRequestMutableBuilder[Self <: UpdateSubscriberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSubscriberRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewSubscriber(value: Subscriber): Self = StObject.set(x, "NewSubscriber", value.asInstanceOf[js.Any])
+    inline def setNewSubscriber(value: Subscriber): Self = StObject.set(x, "NewSubscriber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldSubscriber(value: Subscriber): Self = StObject.set(x, "OldSubscriber", value.asInstanceOf[js.Any])
+    inline def setOldSubscriber(value: Subscriber): Self = StObject.set(x, "OldSubscriber", value.asInstanceOf[js.Any])
   }
 }

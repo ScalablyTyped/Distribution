@@ -87,6 +87,5 @@ class StructureFactory protected ()
 }
 object StructureFactory {
   
-  @scala.inline
-  def apply: StructureFactoryConstructor = js.Dynamic.global.selectDynamic("StructureFactory").asInstanceOf[StructureFactoryConstructor]
+  inline def apply: StructureFactoryConstructor = js.Dynamic.global.selectDynamic("StructureFactory").asInstanceOf[StructureFactoryConstructor]
 }

@@ -18,25 +18,19 @@ trait CreateFindingsFilterResponse extends StObject {
 }
 object CreateFindingsFilterResponse {
   
-  @scala.inline
-  def apply(): CreateFindingsFilterResponse = {
+  inline def apply(): CreateFindingsFilterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFindingsFilterResponse]
   }
   
-  @scala.inline
-  implicit class CreateFindingsFilterResponseMutableBuilder[Self <: CreateFindingsFilterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFindingsFilterResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

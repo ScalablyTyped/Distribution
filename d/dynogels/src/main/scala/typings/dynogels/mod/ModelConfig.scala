@@ -15,31 +15,23 @@ trait ModelConfig extends StObject {
 }
 object ModelConfig {
   
-  @scala.inline
-  def apply(): ModelConfig = {
+  inline def apply(): ModelConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelConfig]
   }
   
-  @scala.inline
-  implicit class ModelConfigMutableBuilder[Self <: ModelConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ModelConfig](x: Self) {
     
-    @scala.inline
-    def setDocClient(value: js.Any): Self = StObject.set(x, "docClient", value.asInstanceOf[js.Any])
+    inline def setDocClient(value: js.Any): Self = StObject.set(x, "docClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocClientUndefined: Self = StObject.set(x, "docClient", js.undefined)
+    inline def setDocClientUndefined: Self = StObject.set(x, "docClient", js.undefined)
     
-    @scala.inline
-    def setDynamodb(value: DynamoDB): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+    inline def setDynamodb(value: DynamoDB): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+    inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
   }
 }

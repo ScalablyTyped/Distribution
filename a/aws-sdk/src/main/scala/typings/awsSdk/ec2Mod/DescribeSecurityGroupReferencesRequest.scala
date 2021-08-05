@@ -18,25 +18,19 @@ trait DescribeSecurityGroupReferencesRequest extends StObject {
 }
 object DescribeSecurityGroupReferencesRequest {
   
-  @scala.inline
-  def apply(GroupId: GroupIds): DescribeSecurityGroupReferencesRequest = {
+  inline def apply(GroupId: GroupIds): DescribeSecurityGroupReferencesRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecurityGroupReferencesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSecurityGroupReferencesRequestMutableBuilder[Self <: DescribeSecurityGroupReferencesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecurityGroupReferencesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: GroupIds): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: GroupIds): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdVarargs(value: SecurityGroupId*): Self = StObject.set(x, "GroupId", js.Array(value :_*))
+    inline def setGroupIdVarargs(value: SecurityGroupId*): Self = StObject.set(x, "GroupId", js.Array(value :_*))
   }
 }

@@ -20,26 +20,20 @@ trait CustomPropertyColorPicker
 }
 object CustomPropertyColorPicker {
   
-  @scala.inline
-  def apply(): CustomPropertyColorPicker = {
+  inline def apply(): CustomPropertyColorPicker = {
     val __obj = js.Dynamic.literal(component = "color-picker")
     __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[CustomPropertyColorPicker]
   }
   
-  @scala.inline
-  implicit class CustomPropertyColorPickerMutableBuilder[Self <: CustomPropertyColorPicker] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyColorPicker](x: Self) {
     
-    @scala.inline
-    def setComponent(value: `color-picker`): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: `color-picker`): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

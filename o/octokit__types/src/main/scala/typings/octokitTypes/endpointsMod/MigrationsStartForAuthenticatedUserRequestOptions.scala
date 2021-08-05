@@ -20,25 +20,19 @@ trait MigrationsStartForAuthenticatedUserRequestOptions extends StObject {
 }
 object MigrationsStartForAuthenticatedUserRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsStartForAuthenticatedUserRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsStartForAuthenticatedUserRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/user/migrations")
     __obj.asInstanceOf[MigrationsStartForAuthenticatedUserRequestOptions]
   }
   
-  @scala.inline
-  implicit class MigrationsStartForAuthenticatedUserRequestOptionsMutableBuilder[Self <: MigrationsStartForAuthenticatedUserRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsStartForAuthenticatedUserRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashuserSlashmigrations): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashuserSlashmigrations): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

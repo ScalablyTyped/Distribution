@@ -50,55 +50,39 @@ trait SchemaStyleSetting extends StObject {
 }
 object SchemaStyleSetting {
   
-  @scala.inline
-  def apply(): SchemaStyleSetting = {
+  inline def apply(): SchemaStyleSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStyleSetting]
   }
   
-  @scala.inline
-  implicit class SchemaStyleSettingMutableBuilder[Self <: SchemaStyleSetting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStyleSetting](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMarkerOptions(value: SchemaPointStyle): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+    inline def setMarkerOptions(value: SchemaPointStyle): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
+    inline def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPolygonOptions(value: SchemaPolygonStyle): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+    inline def setPolygonOptions(value: SchemaPolygonStyle): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+    inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
-    @scala.inline
-    def setPolylineOptions(value: SchemaLineStyle): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
+    inline def setPolylineOptions(value: SchemaLineStyle): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
+    inline def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
-    @scala.inline
-    def setStyleId(value: Double): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: Double): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleIdUndefined: Self = StObject.set(x, "styleId", js.undefined)
+    inline def setStyleIdUndefined: Self = StObject.set(x, "styleId", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

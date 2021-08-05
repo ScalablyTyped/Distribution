@@ -90,12 +90,10 @@ object dateMod {
   @js.native
   def dayNames: js.Array[String] = js.native
   
-  @scala.inline
-  def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_names")(x.asInstanceOf[js.Any])
+  inline def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_names")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def firstDayOfYear(year: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def firstDayOfYear(year: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait FlorealDate extends StObject {
     
@@ -145,8 +143,7 @@ object dateMod {
   }
   object FlorealDate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       day: () => Double,
       dayName: () => String,
       dayOfDecade: () => Double,
@@ -174,74 +171,51 @@ object dateMod {
       __obj.asInstanceOf[FlorealDate]
     }
     
-    @scala.inline
-    implicit class FlorealDateMutableBuilder[Self <: FlorealDate] (val x: Self) extends AnyVal {
+    extension [Self <: FlorealDate](x: Self) {
       
-      @scala.inline
-      def setDay(value: () => Double): Self = StObject.set(x, "day", js.Any.fromFunction0(value))
+      inline def setDay(value: () => Double): Self = StObject.set(x, "day", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDayName(value: () => String): Self = StObject.set(x, "dayName", js.Any.fromFunction0(value))
+      inline def setDayName(value: () => String): Self = StObject.set(x, "dayName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDayOfDecade(value: () => Double): Self = StObject.set(x, "dayOfDecade", js.Any.fromFunction0(value))
+      inline def setDayOfDecade(value: () => Double): Self = StObject.set(x, "dayOfDecade", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDayOfMonth(value: () => Double): Self = StObject.set(x, "dayOfMonth", js.Any.fromFunction0(value))
+      inline def setDayOfMonth(value: () => Double): Self = StObject.set(x, "dayOfMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDayOfWeek(value: () => Double): Self = StObject.set(x, "dayOfWeek", js.Any.fromFunction0(value))
+      inline def setDayOfWeek(value: () => Double): Self = StObject.set(x, "dayOfWeek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDayOfYear(value: () => Double): Self = StObject.set(x, "dayOfYear", js.Any.fromFunction0(value))
+      inline def setDayOfYear(value: () => Double): Self = StObject.set(x, "dayOfYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDayTitle(value: () => String): Self = StObject.set(x, "dayTitle", js.Any.fromFunction0(value))
+      inline def setDayTitle(value: () => String): Self = StObject.set(x, "dayTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDecade(value: () => Double): Self = StObject.set(x, "decade", js.Any.fromFunction0(value))
+      inline def setDecade(value: () => Double): Self = StObject.set(x, "decade", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFirstDayOfYear(value: () => Date): Self = StObject.set(x, "firstDayOfYear", js.Any.fromFunction0(value))
+      inline def setFirstDayOfYear(value: () => Date): Self = StObject.set(x, "firstDayOfYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsComplementaryDay(value: () => Boolean): Self = StObject.set(x, "isComplementaryDay", js.Any.fromFunction0(value))
+      inline def setIsComplementaryDay(value: () => Boolean): Self = StObject.set(x, "isComplementaryDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsYearSextile(value: () => Boolean): Self = StObject.set(x, "isYearSextile", js.Any.fromFunction0(value))
+      inline def setIsYearSextile(value: () => Boolean): Self = StObject.set(x, "isYearSextile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMonth(value: () => Double): Self = StObject.set(x, "month", js.Any.fromFunction0(value))
+      inline def setMonth(value: () => Double): Self = StObject.set(x, "month", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMonthName(value: () => String): Self = StObject.set(x, "monthName", js.Any.fromFunction0(value))
+      inline def setMonthName(value: () => String): Self = StObject.set(x, "monthName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction3(value))
+      inline def setSetDate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetDay(value: Double => Unit): Self = StObject.set(x, "setDay", js.Any.fromFunction1(value))
+      inline def setSetDay(value: Double => Unit): Self = StObject.set(x, "setDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMonth(value: Double => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
+      inline def setSetMonth(value: Double => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetYear(value: String => Unit): Self = StObject.set(x, "setYear", js.Any.fromFunction1(value))
+      inline def setSetYear(value: String => Unit): Self = StObject.set(x, "setYear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetYearDecimal(value: Double => Unit): Self = StObject.set(x, "setYearDecimal", js.Any.fromFunction1(value))
+      inline def setSetYearDecimal(value: Double => Unit): Self = StObject.set(x, "setYearDecimal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToFullDateString(value: () => String): Self = StObject.set(x, "toFullDateString", js.Any.fromFunction0(value))
+      inline def setToFullDateString(value: () => String): Self = StObject.set(x, "toFullDateString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToShortDateString(value: () => String): Self = StObject.set(x, "toShortDateString", js.Any.fromFunction0(value))
+      inline def setToShortDateString(value: () => String): Self = StObject.set(x, "toShortDateString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setYear(value: () => String): Self = StObject.set(x, "year", js.Any.fromFunction0(value))
+      inline def setYear(value: () => String): Self = StObject.set(x, "year", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setYearDecimal(value: () => Double): Self = StObject.set(x, "yearDecimal", js.Any.fromFunction0(value))
+      inline def setYearDecimal(value: () => Double): Self = StObject.set(x, "yearDecimal", js.Any.fromFunction0(value))
     }
   }
 }

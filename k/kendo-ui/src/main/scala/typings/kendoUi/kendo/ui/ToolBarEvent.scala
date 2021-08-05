@@ -14,22 +14,17 @@ trait ToolBarEvent extends StObject {
 }
 object ToolBarEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ToolBar): ToolBarEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ToolBar): ToolBarEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarEvent]
   }
   
-  @scala.inline
-  implicit class ToolBarEventMutableBuilder[Self <: ToolBarEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ToolBarEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: ToolBar): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: ToolBar): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

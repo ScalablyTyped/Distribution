@@ -13,19 +13,15 @@ trait CreateCustomerGatewayResult extends StObject {
 }
 object CreateCustomerGatewayResult {
   
-  @scala.inline
-  def apply(): CreateCustomerGatewayResult = {
+  inline def apply(): CreateCustomerGatewayResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCustomerGatewayResult]
   }
   
-  @scala.inline
-  implicit class CreateCustomerGatewayResultMutableBuilder[Self <: CreateCustomerGatewayResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCustomerGatewayResult](x: Self) {
     
-    @scala.inline
-    def setCustomerGateway(value: CustomerGateway): Self = StObject.set(x, "CustomerGateway", value.asInstanceOf[js.Any])
+    inline def setCustomerGateway(value: CustomerGateway): Self = StObject.set(x, "CustomerGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerGatewayUndefined: Self = StObject.set(x, "CustomerGateway", js.undefined)
+    inline def setCustomerGatewayUndefined: Self = StObject.set(x, "CustomerGateway", js.undefined)
   }
 }

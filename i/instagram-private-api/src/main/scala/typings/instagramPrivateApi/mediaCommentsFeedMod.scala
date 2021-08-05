@@ -17,9 +17,9 @@ object mediaCommentsFeedMod {
     
     var id: String = js.native
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
-    var nextMinId: js.Any = js.native
+    /* private */ var nextMinId: js.Any = js.native
     
     def request(): js.Promise[MediaCommentsFeedResponse] = js.native
   }

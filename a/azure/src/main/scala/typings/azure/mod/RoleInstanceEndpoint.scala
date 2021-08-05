@@ -14,22 +14,17 @@ trait RoleInstanceEndpoint extends StObject {
 }
 object RoleInstanceEndpoint {
   
-  @scala.inline
-  def apply(address: String, port: Double, protocol: String): RoleInstanceEndpoint = {
+  inline def apply(address: String, port: Double, protocol: String): RoleInstanceEndpoint = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleInstanceEndpoint]
   }
   
-  @scala.inline
-  implicit class RoleInstanceEndpointMutableBuilder[Self <: RoleInstanceEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: RoleInstanceEndpoint](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

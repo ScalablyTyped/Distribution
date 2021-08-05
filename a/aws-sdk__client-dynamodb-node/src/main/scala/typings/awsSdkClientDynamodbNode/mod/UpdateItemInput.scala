@@ -12,8 +12,7 @@ trait UpdateItemInput
      with typings.awsSdkClientDynamodbNode.typesUpdateItemInputMod.UpdateItemInput
 object UpdateItemInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
     TableName: String
   ): UpdateItemInput = {

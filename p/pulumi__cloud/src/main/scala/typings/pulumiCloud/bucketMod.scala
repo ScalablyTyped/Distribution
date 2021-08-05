@@ -81,8 +81,7 @@ object bucketMod {
     def this(name: String, opts: ResourceOptions) = this()
   }
   
-  @scala.inline
-  def Bucket_=(x: BucketConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bucket")(x.asInstanceOf[js.Any])
+  inline def Bucket_=(x: BucketConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bucket")(x.asInstanceOf[js.Any])
   
   @js.native
   trait BucketConstructor
@@ -104,26 +103,20 @@ object bucketMod {
   }
   object BucketFilter {
     
-    @scala.inline
-    def apply(): BucketFilter = {
+    inline def apply(): BucketFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketFilter]
     }
     
-    @scala.inline
-    implicit class BucketFilterMutableBuilder[Self <: BucketFilter] (val x: Self) extends AnyVal {
+    extension [Self <: BucketFilter](x: Self) {
       
-      @scala.inline
-      def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
+      inline def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
+      inline def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
       
-      @scala.inline
-      def setKeySuffix(value: String): Self = StObject.set(x, "keySuffix", value.asInstanceOf[js.Any])
+      inline def setKeySuffix(value: String): Self = StObject.set(x, "keySuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySuffixUndefined: Self = StObject.set(x, "keySuffix", js.undefined)
+      inline def setKeySuffixUndefined: Self = StObject.set(x, "keySuffix", js.undefined)
     }
   }
   
@@ -148,23 +141,18 @@ object bucketMod {
   }
   object BucketHandlerArgs {
     
-    @scala.inline
-    def apply(eventTime: String, key: String, size: Double): BucketHandlerArgs = {
+    inline def apply(eventTime: String, key: String, size: Double): BucketHandlerArgs = {
       val __obj = js.Dynamic.literal(eventTime = eventTime.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketHandlerArgs]
     }
     
-    @scala.inline
-    implicit class BucketHandlerArgsMutableBuilder[Self <: BucketHandlerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BucketHandlerArgs](x: Self) {
       
-      @scala.inline
-      def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+      inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

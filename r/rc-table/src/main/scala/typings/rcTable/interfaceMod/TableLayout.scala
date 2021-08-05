@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableLayout extends StObject
 object TableLayout {
   
-  @scala.inline
-  def auto: typings.rcTable.rcTableStrings.auto = "auto".asInstanceOf[typings.rcTable.rcTableStrings.auto]
+  inline def auto: typings.rcTable.rcTableStrings.auto = "auto".asInstanceOf[typings.rcTable.rcTableStrings.auto]
   
-  @scala.inline
-  def fixed: typings.rcTable.rcTableStrings.fixed = "fixed".asInstanceOf[typings.rcTable.rcTableStrings.fixed]
+  inline def fixed: typings.rcTable.rcTableStrings.fixed = "fixed".asInstanceOf[typings.rcTable.rcTableStrings.fixed]
 }

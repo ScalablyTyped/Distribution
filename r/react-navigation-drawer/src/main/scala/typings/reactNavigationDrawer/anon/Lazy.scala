@@ -10,17 +10,14 @@ trait Lazy extends StObject {
 }
 object Lazy {
   
-  @scala.inline
-  def apply(`lazy`: Boolean): Lazy = {
+  inline def apply(`lazy`: Boolean): Lazy = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lazy]
   }
   
-  @scala.inline
-  implicit class LazyMutableBuilder[Self <: Lazy] (val x: Self) extends AnyVal {
+  extension [Self <: Lazy](x: Self) {
     
-    @scala.inline
-    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+    inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
   }
 }

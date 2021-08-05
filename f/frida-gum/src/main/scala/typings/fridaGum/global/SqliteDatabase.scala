@@ -68,10 +68,8 @@ object SqliteDatabase {
     * @param options Options to customize how the database should be opened.
     */
   /* static member */
-  @scala.inline
-  def open(path: String): typings.fridaGum.SqliteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.SqliteDatabase]
-  @scala.inline
-  def open(path: String, options: SqliteOpenOptions): typings.fridaGum.SqliteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.SqliteDatabase]
+  inline def open(path: String): typings.fridaGum.SqliteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.SqliteDatabase]
+  inline def open(path: String, options: SqliteOpenOptions): typings.fridaGum.SqliteDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.SqliteDatabase]
   
   /**
     * Just like `open()` but the contents of the database is provided as a
@@ -87,6 +85,5 @@ object SqliteDatabase {
     * @param encodedContents Base64-encoded database contents.
     */
   /* static member */
-  @scala.inline
-  def openInline(encodedContents: String): typings.fridaGum.SqliteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("openInline")(encodedContents.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.SqliteDatabase]
+  inline def openInline(encodedContents: String): typings.fridaGum.SqliteDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("openInline")(encodedContents.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.SqliteDatabase]
 }

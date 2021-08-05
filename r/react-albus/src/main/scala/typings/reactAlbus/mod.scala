@@ -30,8 +30,7 @@ object mod {
   @js.native
   val Wizard: ComponentType[WizardProps] = js.native
   
-  @scala.inline
-  def withWizard[P](component: ComponentType[P & WizardComponentProps]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWizard")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
+  inline def withWizard[P](component: ComponentType[P & WizardComponentProps]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWizard")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
   
   trait StepObject extends StObject {
     
@@ -39,17 +38,14 @@ object mod {
   }
   object StepObject {
     
-    @scala.inline
-    def apply(id: String): StepObject = {
+    inline def apply(id: String): StepObject = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepObject]
     }
     
-    @scala.inline
-    implicit class StepObjectMutableBuilder[Self <: StepObject] (val x: Self) extends AnyVal {
+    extension [Self <: StepObject](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +57,16 @@ object mod {
   }
   object StepsProps {
     
-    @scala.inline
-    def apply(): StepsProps = {
+    inline def apply(): StepsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepsProps]
     }
     
-    @scala.inline
-    implicit class StepsPropsMutableBuilder[Self <: StepsProps] (val x: Self) extends AnyVal {
+    extension [Self <: StepsProps](x: Self) {
       
-      @scala.inline
-      def setStep(value: StepObject): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: StepObject): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -84,17 +76,14 @@ object mod {
   }
   object WizardComponentProps {
     
-    @scala.inline
-    def apply(wizard: WizardContext): WizardComponentProps = {
+    inline def apply(wizard: WizardContext): WizardComponentProps = {
       val __obj = js.Dynamic.literal(wizard = wizard.asInstanceOf[js.Any])
       __obj.asInstanceOf[WizardComponentProps]
     }
     
-    @scala.inline
-    implicit class WizardComponentPropsMutableBuilder[Self <: WizardComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: WizardComponentProps](x: Self) {
       
-      @scala.inline
-      def setWizard(value: WizardContext): Self = StObject.set(x, "wizard", value.asInstanceOf[js.Any])
+      inline def setWizard(value: WizardContext): Self = StObject.set(x, "wizard", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,14 +116,12 @@ object mod {
   trait WizardContextRenderProps extends StObject
   object WizardContextRenderProps {
     
-    @scala.inline
-    def Children(children: WizardContext => ReactNode): typings.reactAlbus.anon.Children = {
+    inline def Children(children: WizardContext => ReactNode): typings.reactAlbus.anon.Children = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[typings.reactAlbus.anon.Children]
     }
     
-    @scala.inline
-    def Render(): typings.reactAlbus.anon.Render = {
+    inline def Render(): typings.reactAlbus.anon.Render = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactAlbus.anon.Render]
     }
@@ -152,38 +139,28 @@ object mod {
   }
   object WizardProps {
     
-    @scala.inline
-    def apply(): WizardProps = {
+    inline def apply(): WizardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WizardProps]
     }
     
-    @scala.inline
-    implicit class WizardPropsMutableBuilder[Self <: WizardProps] (val x: Self) extends AnyVal {
+    extension [Self <: WizardProps](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setOnNext(value: /* wizard */ WizardContext => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+      inline def setOnNext(value: /* wizard */ WizardContext => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
+      inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* wizard */ WizardContext => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* wizard */ WizardContext => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

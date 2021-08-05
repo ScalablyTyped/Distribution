@@ -18,22 +18,17 @@ trait PortalStatus extends StObject {
 }
 object PortalStatus {
   
-  @scala.inline
-  def apply(state: PortalState): PortalStatus = {
+  inline def apply(state: PortalState): PortalStatus = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalStatus]
   }
   
-  @scala.inline
-  implicit class PortalStatusMutableBuilder[Self <: PortalStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PortalStatus](x: Self) {
     
-    @scala.inline
-    def setError(value: MonitorErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: MonitorErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setState(value: PortalState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PortalState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

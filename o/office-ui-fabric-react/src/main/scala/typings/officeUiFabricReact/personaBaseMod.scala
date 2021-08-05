@@ -17,16 +17,16 @@ object personaBaseMod {
     /**
       * Deprecation helper for getting text.
       */
-    var _getText: js.Any = js.native
+    /* private */ var _getText: js.Any = js.native
     
-    var _onRenderPersonaCoin: js.Any = js.native
+    /* private */ var _onRenderPersonaCoin: js.Any = js.native
     
     /**
       * using closure to wrap the default render behavior
       * to make it independent of the type of text passed
       * @param text - text to render
       */
-    var _onRenderText: js.Any = js.native
+    /* private */ var _onRenderText: js.Any = js.native
     
     /**
       * Renders various types of Text (primaryText, secondaryText, etc)
@@ -35,7 +35,7 @@ object personaBaseMod {
       * @param renderFunction - render function
       * @param defaultRenderFunction - default render function
       */
-    var _renderElement: js.Any = js.native
+    /* private */ var _renderElement: js.Any = js.native
   }
   /* static members */
   object PersonaBase {
@@ -47,7 +47,6 @@ object personaBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Persona/Persona.base", "PersonaBase.defaultProps")
     @js.native
     def defaultProps: IPersonaProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPersonaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPersonaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

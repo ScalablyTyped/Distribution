@@ -57,70 +57,49 @@ trait SchemaTransferOperation extends StObject {
 }
 object SchemaTransferOperation {
   
-  @scala.inline
-  def apply(): SchemaTransferOperation = {
+  inline def apply(): SchemaTransferOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTransferOperation]
   }
   
-  @scala.inline
-  implicit class SchemaTransferOperationMutableBuilder[Self <: SchemaTransferOperation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTransferOperation](x: Self) {
     
-    @scala.inline
-    def setCounters(value: SchemaTransferCounters): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
+    inline def setCounters(value: SchemaTransferCounters): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
+    inline def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setErrorBreakdowns(value: js.Array[SchemaErrorSummary]): Self = StObject.set(x, "errorBreakdowns", value.asInstanceOf[js.Any])
+    inline def setErrorBreakdowns(value: js.Array[SchemaErrorSummary]): Self = StObject.set(x, "errorBreakdowns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorBreakdownsUndefined: Self = StObject.set(x, "errorBreakdowns", js.undefined)
+    inline def setErrorBreakdownsUndefined: Self = StObject.set(x, "errorBreakdowns", js.undefined)
     
-    @scala.inline
-    def setErrorBreakdownsVarargs(value: SchemaErrorSummary*): Self = StObject.set(x, "errorBreakdowns", js.Array(value :_*))
+    inline def setErrorBreakdownsVarargs(value: SchemaErrorSummary*): Self = StObject.set(x, "errorBreakdowns", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTransferJobName(value: String): Self = StObject.set(x, "transferJobName", value.asInstanceOf[js.Any])
+    inline def setTransferJobName(value: String): Self = StObject.set(x, "transferJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferJobNameUndefined: Self = StObject.set(x, "transferJobName", js.undefined)
+    inline def setTransferJobNameUndefined: Self = StObject.set(x, "transferJobName", js.undefined)
     
-    @scala.inline
-    def setTransferSpec(value: SchemaTransferSpec): Self = StObject.set(x, "transferSpec", value.asInstanceOf[js.Any])
+    inline def setTransferSpec(value: SchemaTransferSpec): Self = StObject.set(x, "transferSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferSpecUndefined: Self = StObject.set(x, "transferSpec", js.undefined)
+    inline def setTransferSpecUndefined: Self = StObject.set(x, "transferSpec", js.undefined)
   }
 }

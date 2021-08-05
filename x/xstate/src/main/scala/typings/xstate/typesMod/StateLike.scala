@@ -16,8 +16,7 @@ trait StateLike[TContext] extends StObject {
 }
 object StateLike {
   
-  @scala.inline
-  def apply[TContext](
+  inline def apply[TContext](
     _event: typings.xstate.typesMod.SCXML.Event[EventObject],
     context: TContext,
     event: EventObject,
@@ -27,19 +26,14 @@ object StateLike {
     __obj.asInstanceOf[StateLike[TContext]]
   }
   
-  @scala.inline
-  implicit class StateLikeMutableBuilder[Self <: StateLike[?], TContext] (val x: Self & StateLike[TContext]) extends AnyVal {
+  extension [Self <: StateLike[?], TContext](x: Self & StateLike[TContext]) {
     
-    @scala.inline
-    def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: EventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: EventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: StateValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StateValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_event(value: typings.xstate.typesMod.SCXML.Event[EventObject]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
+    inline def set_event(value: typings.xstate.typesMod.SCXML.Event[EventObject]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
   }
 }

@@ -98,97 +98,67 @@ trait IgGridColumnMovingLocale
 }
 object IgGridColumnMovingLocale {
   
-  @scala.inline
-  def apply(): IgGridColumnMovingLocale = {
+  inline def apply(): IgGridColumnMovingLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridColumnMovingLocale]
   }
   
-  @scala.inline
-  implicit class IgGridColumnMovingLocaleMutableBuilder[Self <: IgGridColumnMovingLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridColumnMovingLocale](x: Self) {
     
-    @scala.inline
-    def setDropDownMoveFirstText(value: String): Self = StObject.set(x, "dropDownMoveFirstText", value.asInstanceOf[js.Any])
+    inline def setDropDownMoveFirstText(value: String): Self = StObject.set(x, "dropDownMoveFirstText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownMoveFirstTextUndefined: Self = StObject.set(x, "dropDownMoveFirstText", js.undefined)
+    inline def setDropDownMoveFirstTextUndefined: Self = StObject.set(x, "dropDownMoveFirstText", js.undefined)
     
-    @scala.inline
-    def setDropDownMoveLastText(value: String): Self = StObject.set(x, "dropDownMoveLastText", value.asInstanceOf[js.Any])
+    inline def setDropDownMoveLastText(value: String): Self = StObject.set(x, "dropDownMoveLastText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownMoveLastTextUndefined: Self = StObject.set(x, "dropDownMoveLastText", js.undefined)
+    inline def setDropDownMoveLastTextUndefined: Self = StObject.set(x, "dropDownMoveLastText", js.undefined)
     
-    @scala.inline
-    def setDropDownMoveLeftText(value: String): Self = StObject.set(x, "dropDownMoveLeftText", value.asInstanceOf[js.Any])
+    inline def setDropDownMoveLeftText(value: String): Self = StObject.set(x, "dropDownMoveLeftText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownMoveLeftTextUndefined: Self = StObject.set(x, "dropDownMoveLeftText", js.undefined)
+    inline def setDropDownMoveLeftTextUndefined: Self = StObject.set(x, "dropDownMoveLeftText", js.undefined)
     
-    @scala.inline
-    def setDropDownMoveRightText(value: String): Self = StObject.set(x, "dropDownMoveRightText", value.asInstanceOf[js.Any])
+    inline def setDropDownMoveRightText(value: String): Self = StObject.set(x, "dropDownMoveRightText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownMoveRightTextUndefined: Self = StObject.set(x, "dropDownMoveRightText", js.undefined)
+    inline def setDropDownMoveRightTextUndefined: Self = StObject.set(x, "dropDownMoveRightText", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserSubmenuText(value: String): Self = StObject.set(x, "featureChooserSubmenuText", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserSubmenuText(value: String): Self = StObject.set(x, "featureChooserSubmenuText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserSubmenuTextUndefined: Self = StObject.set(x, "featureChooserSubmenuText", js.undefined)
+    inline def setFeatureChooserSubmenuTextUndefined: Self = StObject.set(x, "featureChooserSubmenuText", js.undefined)
     
-    @scala.inline
-    def setMovingDialogButtonApplyText(value: String): Self = StObject.set(x, "movingDialogButtonApplyText", value.asInstanceOf[js.Any])
+    inline def setMovingDialogButtonApplyText(value: String): Self = StObject.set(x, "movingDialogButtonApplyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogButtonApplyTextUndefined: Self = StObject.set(x, "movingDialogButtonApplyText", js.undefined)
+    inline def setMovingDialogButtonApplyTextUndefined: Self = StObject.set(x, "movingDialogButtonApplyText", js.undefined)
     
-    @scala.inline
-    def setMovingDialogButtonCancelText(value: String): Self = StObject.set(x, "movingDialogButtonCancelText", value.asInstanceOf[js.Any])
+    inline def setMovingDialogButtonCancelText(value: String): Self = StObject.set(x, "movingDialogButtonCancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogButtonCancelTextUndefined: Self = StObject.set(x, "movingDialogButtonCancelText", js.undefined)
+    inline def setMovingDialogButtonCancelTextUndefined: Self = StObject.set(x, "movingDialogButtonCancelText", js.undefined)
     
-    @scala.inline
-    def setMovingDialogCaptionButtonAsc(value: String): Self = StObject.set(x, "movingDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
+    inline def setMovingDialogCaptionButtonAsc(value: String): Self = StObject.set(x, "movingDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogCaptionButtonAscUndefined: Self = StObject.set(x, "movingDialogCaptionButtonAsc", js.undefined)
+    inline def setMovingDialogCaptionButtonAscUndefined: Self = StObject.set(x, "movingDialogCaptionButtonAsc", js.undefined)
     
-    @scala.inline
-    def setMovingDialogCaptionButtonDesc(value: String): Self = StObject.set(x, "movingDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
+    inline def setMovingDialogCaptionButtonDesc(value: String): Self = StObject.set(x, "movingDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogCaptionButtonDescUndefined: Self = StObject.set(x, "movingDialogCaptionButtonDesc", js.undefined)
+    inline def setMovingDialogCaptionButtonDescUndefined: Self = StObject.set(x, "movingDialogCaptionButtonDesc", js.undefined)
     
-    @scala.inline
-    def setMovingDialogCaptionText(value: String): Self = StObject.set(x, "movingDialogCaptionText", value.asInstanceOf[js.Any])
+    inline def setMovingDialogCaptionText(value: String): Self = StObject.set(x, "movingDialogCaptionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogCaptionTextUndefined: Self = StObject.set(x, "movingDialogCaptionText", js.undefined)
+    inline def setMovingDialogCaptionTextUndefined: Self = StObject.set(x, "movingDialogCaptionText", js.undefined)
     
-    @scala.inline
-    def setMovingDialogCloseButtonTitle(value: String): Self = StObject.set(x, "movingDialogCloseButtonTitle", value.asInstanceOf[js.Any])
+    inline def setMovingDialogCloseButtonTitle(value: String): Self = StObject.set(x, "movingDialogCloseButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogCloseButtonTitleUndefined: Self = StObject.set(x, "movingDialogCloseButtonTitle", js.undefined)
+    inline def setMovingDialogCloseButtonTitleUndefined: Self = StObject.set(x, "movingDialogCloseButtonTitle", js.undefined)
     
-    @scala.inline
-    def setMovingDialogDisplayText(value: String): Self = StObject.set(x, "movingDialogDisplayText", value.asInstanceOf[js.Any])
+    inline def setMovingDialogDisplayText(value: String): Self = StObject.set(x, "movingDialogDisplayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogDisplayTextUndefined: Self = StObject.set(x, "movingDialogDisplayText", js.undefined)
+    inline def setMovingDialogDisplayTextUndefined: Self = StObject.set(x, "movingDialogDisplayText", js.undefined)
     
-    @scala.inline
-    def setMovingDialogDropTooltipText(value: String): Self = StObject.set(x, "movingDialogDropTooltipText", value.asInstanceOf[js.Any])
+    inline def setMovingDialogDropTooltipText(value: String): Self = StObject.set(x, "movingDialogDropTooltipText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingDialogDropTooltipTextUndefined: Self = StObject.set(x, "movingDialogDropTooltipText", js.undefined)
+    inline def setMovingDialogDropTooltipTextUndefined: Self = StObject.set(x, "movingDialogDropTooltipText", js.undefined)
     
-    @scala.inline
-    def setMovingToolTipMove(value: String): Self = StObject.set(x, "movingToolTipMove", value.asInstanceOf[js.Any])
+    inline def setMovingToolTipMove(value: String): Self = StObject.set(x, "movingToolTipMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingToolTipMoveUndefined: Self = StObject.set(x, "movingToolTipMove", js.undefined)
+    inline def setMovingToolTipMoveUndefined: Self = StObject.set(x, "movingToolTipMove", js.undefined)
   }
 }

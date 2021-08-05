@@ -25,25 +25,20 @@ object mod {
     var uri: String = js.native
   }
   
-  @scala.inline
-  def extractFiles[TFile](value: js.Any): Clone[TFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any]).asInstanceOf[Clone[TFile]]
-  @scala.inline
-  def extractFiles[TFile](value: js.Any, path: String): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
-  @scala.inline
-  def extractFiles[TFile](
+  inline def extractFiles[TFile](value: js.Any): Clone[TFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any]).asInstanceOf[Clone[TFile]]
+  inline def extractFiles[TFile](value: js.Any, path: String): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
+  inline def extractFiles[TFile](
     value: js.Any,
     path: String,
     isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
   ): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
-  @scala.inline
-  def extractFiles[TFile](
+  inline def extractFiles[TFile](
     value: js.Any,
     path: Unit,
     isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
   ): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
   
-  @scala.inline
-  def isExtractableFile(value: js.Any): /* is extract-files.extract-files.ExtractableFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtractableFile")(value.asInstanceOf[js.Any]).asInstanceOf[/* is extract-files.extract-files.ExtractableFile */ Boolean]
+  inline def isExtractableFile(value: js.Any): /* is extract-files.extract-files.ExtractableFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtractableFile")(value.asInstanceOf[js.Any]).asInstanceOf[/* is extract-files.extract-files.ExtractableFile */ Boolean]
   
   type ExtractableFile = File | Blob | ReactNativeFile
   
@@ -57,29 +52,22 @@ object mod {
   }
   object ReactNativeFileOptions {
     
-    @scala.inline
-    def apply(uri: String): ReactNativeFileOptions = {
+    inline def apply(uri: String): ReactNativeFileOptions = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactNativeFileOptions]
     }
     
-    @scala.inline
-    implicit class ReactNativeFileOptionsMutableBuilder[Self <: ReactNativeFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactNativeFileOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

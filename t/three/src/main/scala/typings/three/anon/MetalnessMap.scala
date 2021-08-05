@@ -11,16 +11,13 @@ trait MetalnessMap extends StObject {
 }
 object MetalnessMap {
   
-  @scala.inline
-  def apply(metalnessMap: IUniform): MetalnessMap = {
+  inline def apply(metalnessMap: IUniform): MetalnessMap = {
     val __obj = js.Dynamic.literal(metalnessMap = metalnessMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetalnessMap]
   }
   
-  @scala.inline
-  implicit class MetalnessMapMutableBuilder[Self <: MetalnessMap] (val x: Self) extends AnyVal {
+  extension [Self <: MetalnessMap](x: Self) {
     
-    @scala.inline
-    def setMetalnessMap(value: IUniform): Self = StObject.set(x, "metalnessMap", value.asInstanceOf[js.Any])
+    inline def setMetalnessMap(value: IUniform): Self = StObject.set(x, "metalnessMap", value.asInstanceOf[js.Any])
   }
 }

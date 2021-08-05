@@ -113,8 +113,7 @@ trait XRelationshipAccess
 }
 object XRelationshipAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllRelationships: SafeArray[SafeArray[StringPair]],
     acquire: () => Unit,
     clearRelationships: () => Unit,
@@ -134,40 +133,28 @@ object XRelationshipAccess {
     __obj.asInstanceOf[XRelationshipAccess]
   }
   
-  @scala.inline
-  implicit class XRelationshipAccessMutableBuilder[Self <: XRelationshipAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XRelationshipAccess](x: Self) {
     
-    @scala.inline
-    def setAllRelationships(value: SafeArray[SafeArray[StringPair]]): Self = StObject.set(x, "AllRelationships", value.asInstanceOf[js.Any])
+    inline def setAllRelationships(value: SafeArray[SafeArray[StringPair]]): Self = StObject.set(x, "AllRelationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearRelationships(value: () => Unit): Self = StObject.set(x, "clearRelationships", js.Any.fromFunction0(value))
+    inline def setClearRelationships(value: () => Unit): Self = StObject.set(x, "clearRelationships", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllRelationships(value: () => SafeArray[SafeArray[StringPair]]): Self = StObject.set(x, "getAllRelationships", js.Any.fromFunction0(value))
+    inline def setGetAllRelationships(value: () => SafeArray[SafeArray[StringPair]]): Self = StObject.set(x, "getAllRelationships", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRelationshipByID(value: String => SafeArray[StringPair]): Self = StObject.set(x, "getRelationshipByID", js.Any.fromFunction1(value))
+    inline def setGetRelationshipByID(value: String => SafeArray[StringPair]): Self = StObject.set(x, "getRelationshipByID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRelationshipsByType(value: String => SafeArray[SafeArray[StringPair]]): Self = StObject.set(x, "getRelationshipsByType", js.Any.fromFunction1(value))
+    inline def setGetRelationshipsByType(value: String => SafeArray[SafeArray[StringPair]]): Self = StObject.set(x, "getRelationshipsByType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTargetByID(value: String => String): Self = StObject.set(x, "getTargetByID", js.Any.fromFunction1(value))
+    inline def setGetTargetByID(value: String => String): Self = StObject.set(x, "getTargetByID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTypeByID(value: String => String): Self = StObject.set(x, "getTypeByID", js.Any.fromFunction1(value))
+    inline def setGetTypeByID(value: String => String): Self = StObject.set(x, "getTypeByID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasByID(value: String => Boolean): Self = StObject.set(x, "hasByID", js.Any.fromFunction1(value))
+    inline def setHasByID(value: String => Boolean): Self = StObject.set(x, "hasByID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertRelationshipByID(value: (String, SeqEquiv[StringPair], Boolean) => Unit): Self = StObject.set(x, "insertRelationshipByID", js.Any.fromFunction3(value))
+    inline def setInsertRelationshipByID(value: (String, SeqEquiv[StringPair], Boolean) => Unit): Self = StObject.set(x, "insertRelationshipByID", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInsertRelationships(value: (SeqEquiv[SeqEquiv[StringPair]], Boolean) => Unit): Self = StObject.set(x, "insertRelationships", js.Any.fromFunction2(value))
+    inline def setInsertRelationships(value: (SeqEquiv[SeqEquiv[StringPair]], Boolean) => Unit): Self = StObject.set(x, "insertRelationships", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveRelationshipByID(value: String => Unit): Self = StObject.set(x, "removeRelationshipByID", js.Any.fromFunction1(value))
+    inline def setRemoveRelationshipByID(value: String => Unit): Self = StObject.set(x, "removeRelationshipByID", js.Any.fromFunction1(value))
   }
 }

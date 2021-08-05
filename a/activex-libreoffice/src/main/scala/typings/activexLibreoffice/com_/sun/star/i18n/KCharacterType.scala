@@ -29,31 +29,22 @@ object KCharacterType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALPHA: `14` = 14.asInstanceOf[`14`]
+    inline def ALPHA: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def BASE_FORM: `64` = 64.asInstanceOf[`64`]
+    inline def BASE_FORM: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def CONTROL: `16` = 16.asInstanceOf[`16`]
+    inline def CONTROL: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def DIGIT: `1` = 1.asInstanceOf[`1`]
+    inline def DIGIT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LETTER: `128` = 128.asInstanceOf[`128`]
+    inline def LETTER: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def LOWER: `4` = 4.asInstanceOf[`4`]
+    inline def LOWER: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def PRINTABLE: `32` = 32.asInstanceOf[`32`]
+    inline def PRINTABLE: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def TITLE_CASE: `8` = 8.asInstanceOf[`8`]
+    inline def TITLE_CASE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def UPPER: `2` = 2.asInstanceOf[`2`]
+    inline def UPPER: `2` = 2.asInstanceOf[`2`]
   }
 }

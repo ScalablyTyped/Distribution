@@ -22,8 +22,7 @@ trait XSpreadsheetView
 }
 object XSpreadsheetView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveSheet: XSpreadsheet,
     acquire: () => Unit,
     getActiveSheet: () => XSpreadsheet,
@@ -35,16 +34,12 @@ object XSpreadsheetView {
     __obj.asInstanceOf[XSpreadsheetView]
   }
   
-  @scala.inline
-  implicit class XSpreadsheetViewMutableBuilder[Self <: XSpreadsheetView] (val x: Self) extends AnyVal {
+  extension [Self <: XSpreadsheetView](x: Self) {
     
-    @scala.inline
-    def setActiveSheet(value: XSpreadsheet): Self = StObject.set(x, "ActiveSheet", value.asInstanceOf[js.Any])
+    inline def setActiveSheet(value: XSpreadsheet): Self = StObject.set(x, "ActiveSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveSheet(value: () => XSpreadsheet): Self = StObject.set(x, "getActiveSheet", js.Any.fromFunction0(value))
+    inline def setGetActiveSheet(value: () => XSpreadsheet): Self = StObject.set(x, "getActiveSheet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActiveSheet(value: XSpreadsheet => Unit): Self = StObject.set(x, "setActiveSheet", js.Any.fromFunction1(value))
+    inline def setSetActiveSheet(value: XSpreadsheet => Unit): Self = StObject.set(x, "setActiveSheet", js.Any.fromFunction1(value))
   }
 }

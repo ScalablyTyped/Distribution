@@ -18,25 +18,19 @@ trait TargetConfiguration extends StObject {
 }
 object TargetConfiguration {
   
-  @scala.inline
-  def apply(): TargetConfiguration = {
+  inline def apply(): TargetConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetConfiguration]
   }
   
-  @scala.inline
-  implicit class TargetConfigurationMutableBuilder[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TargetConfiguration](x: Self) {
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setOfferingId(value: String): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: String): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
+    inline def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
   }
 }

@@ -18,27 +18,21 @@ trait SearchFirstOptionsBase extends StObject {
 }
 object SearchFirstOptionsBase {
   
-  @scala.inline
-  def apply(): SearchFirstOptionsBase = {
+  inline def apply(): SearchFirstOptionsBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchFirstOptionsBase]
   }
   
-  @scala.inline
-  implicit class SearchFirstOptionsBaseMutableBuilder[Self <: SearchFirstOptionsBase] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFirstOptionsBase](x: Self) {
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
-    @scala.inline
-    def setVisit(
+    inline def setVisit(
       value: (/* v */ NodeSingular, /* e */ EdgeSingular, /* u */ NodeSingular, /* i */ Double, /* depth */ Double) => Boolean | Unit
     ): Self = StObject.set(x, "visit", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
+    inline def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
   }
 }

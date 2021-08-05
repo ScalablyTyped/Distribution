@@ -13,16 +13,13 @@ trait UriOptions
 }
 object UriOptions {
   
-  @scala.inline
-  def apply(uri: String | Url): UriOptions = {
+  inline def apply(uri: String | Url): UriOptions = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[UriOptions]
   }
   
-  @scala.inline
-  implicit class UriOptionsMutableBuilder[Self <: UriOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UriOptions](x: Self) {
     
-    @scala.inline
-    def setUri(value: String | Url): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String | Url): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,14 @@ object injectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inject(stores: String*): js.Function1[
+  inline def inject(stores: String*): js.Function1[
     /* target */ IReactComponent[js.Any], 
     IReactComponent[js.Any] & IWrappedComponent[js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(stores.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* target */ IReactComponent[js.Any], 
     IReactComponent[js.Any] & IWrappedComponent[js.Any]
   ]]
-  @scala.inline
-  def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[
+  inline def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[
     /* target */ IReactComponent[js.Any], 
     IReactComponent[js.Any] & IWrappedComponent[P]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

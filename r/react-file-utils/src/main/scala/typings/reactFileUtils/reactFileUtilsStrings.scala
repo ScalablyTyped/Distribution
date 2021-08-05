@@ -11,20 +11,17 @@ object reactFileUtilsStrings {
   sealed trait failed
     extends StObject
        with UploadState
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait finished
     extends StObject
        with UploadState
-  @scala.inline
-  def finished: finished = "finished".asInstanceOf[finished]
+  inline def finished: finished = "finished".asInstanceOf[finished]
   
   @js.native
   sealed trait uploading
     extends StObject
        with UploadState
-  @scala.inline
-  def uploading: uploading = "uploading".asInstanceOf[uploading]
+  inline def uploading: uploading = "uploading".asInstanceOf[uploading]
 }

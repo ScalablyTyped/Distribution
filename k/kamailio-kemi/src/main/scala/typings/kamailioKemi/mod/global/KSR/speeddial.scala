@@ -10,9 +10,7 @@ object speeddial {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def lookup(stable: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(stable.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def lookup(stable: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(stable.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def lookupOwner(stable: String, sowner: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup_owner")(stable.asInstanceOf[js.Any], sowner.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def lookupOwner(stable: String, sowner: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup_owner")(stable.asInstanceOf[js.Any], sowner.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

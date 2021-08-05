@@ -25,23 +25,18 @@ object dateMod {
     @JSImport("@storybook/addon-knobs/dist/components/types/Date", "default.defaultProps")
     @js.native
     def defaultProps: DateTypeProps = js.native
-    @scala.inline
-    def defaultProps_=(x: DateTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DateTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deserialize(value: DateTypeKnobValue): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def deserialize(value: DateTypeKnobValue): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def getDerivedStateFromProps(): Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")().asInstanceOf[Valid]
+    inline def getDerivedStateFromProps(): Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")().asInstanceOf[Valid]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Date", "default.propTypes")
     @js.native
     def propTypes: KnobOnChange = js.native
-    @scala.inline
-    def propTypes_=(x: KnobOnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: KnobOnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serialize(value: DateTypeKnobValue): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def serialize(value: DateTypeKnobValue): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @js.native
@@ -53,9 +48,9 @@ object dateMod {
     
     var dateInput: HTMLInputElement = js.native
     
-    var onDateChange: js.Any = js.native
+    /* private */ var onDateChange: js.Any = js.native
     
-    var onTimeChange: js.Any = js.native
+    /* private */ var onTimeChange: js.Any = js.native
     
     var timeInput: HTMLInputElement = js.native
   }
@@ -72,20 +67,16 @@ object dateMod {
   }
   object DateTypeState {
     
-    @scala.inline
-    def apply(): DateTypeState = {
+    inline def apply(): DateTypeState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTypeState]
     }
     
-    @scala.inline
-    implicit class DateTypeStateMutableBuilder[Self <: DateTypeState] (val x: Self) extends AnyVal {
+    extension [Self <: DateTypeState](x: Self) {
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     }
   }
 }

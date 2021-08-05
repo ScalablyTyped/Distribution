@@ -14,22 +14,17 @@ trait Revision extends StObject {
 }
 object Revision {
   
-  @scala.inline
-  def apply(end: Double, revision: Double, start: Double): Revision = {
+  inline def apply(end: Double, revision: Double, start: Double): Revision = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Revision]
   }
   
-  @scala.inline
-  implicit class RevisionMutableBuilder[Self <: Revision] (val x: Self) extends AnyVal {
+  extension [Self <: Revision](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -23,43 +23,31 @@ trait CreateTapePrintParamsXmlParams extends StObject {
 }
 object CreateTapePrintParamsXmlParams {
   
-  @scala.inline
-  def apply(): CreateTapePrintParamsXmlParams = {
+  inline def apply(): CreateTapePrintParamsXmlParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTapePrintParamsXmlParams]
   }
   
-  @scala.inline
-  implicit class CreateTapePrintParamsXmlParamsMutableBuilder[Self <: CreateTapePrintParamsXmlParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTapePrintParamsXmlParams](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: TapeAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: TapeAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
+    inline def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopiesUndefined: Self = StObject.set(x, "copies", js.undefined)
+    inline def setCopiesUndefined: Self = StObject.set(x, "copies", js.undefined)
     
-    @scala.inline
-    def setCutMode(value: TapeCutMode): Self = StObject.set(x, "cutMode", value.asInstanceOf[js.Any])
+    inline def setCutMode(value: TapeCutMode): Self = StObject.set(x, "cutMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCutModeUndefined: Self = StObject.set(x, "cutMode", js.undefined)
+    inline def setCutModeUndefined: Self = StObject.set(x, "cutMode", js.undefined)
     
-    @scala.inline
-    def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
+    inline def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
+    inline def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
     
-    @scala.inline
-    def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
+    inline def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
+    inline def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
   }
 }

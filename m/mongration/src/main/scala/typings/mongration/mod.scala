@@ -47,53 +47,38 @@ object mod {
   }
   object DbConfig {
     
-    @scala.inline
-    def apply(migrationCollection: String): DbConfig = {
+    inline def apply(migrationCollection: String): DbConfig = {
       val __obj = js.Dynamic.literal(migrationCollection = migrationCollection.asInstanceOf[js.Any])
       __obj.asInstanceOf[DbConfig]
     }
     
-    @scala.inline
-    implicit class DbConfigMutableBuilder[Self <: DbConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DbConfig](x: Self) {
       
-      @scala.inline
-      def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+      inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      @scala.inline
-      def setMigrationCollection(value: String): Self = StObject.set(x, "migrationCollection", value.asInstanceOf[js.Any])
+      inline def setMigrationCollection(value: String): Self = StObject.set(x, "migrationCollection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongoUri(value: String): Self = StObject.set(x, "mongoUri", value.asInstanceOf[js.Any])
+      inline def setMongoUri(value: String): Self = StObject.set(x, "mongoUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongoUriUndefined: Self = StObject.set(x, "mongoUri", js.undefined)
+      inline def setMongoUriUndefined: Self = StObject.set(x, "mongoUri", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setReplicaSet(value: String): Self = StObject.set(x, "replicaSet", value.asInstanceOf[js.Any])
+      inline def setReplicaSet(value: String): Self = StObject.set(x, "replicaSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaSetUndefined: Self = StObject.set(x, "replicaSet", js.undefined)
+      inline def setReplicaSetUndefined: Self = StObject.set(x, "replicaSet", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -105,20 +90,16 @@ object mod {
   }
   object MigrationResponse {
     
-    @scala.inline
-    def apply(id: String, status: `not-run` | skipped | pending | ok | error | rollback | `rollback-error`): MigrationResponse = {
+    inline def apply(id: String, status: `not-run` | skipped | pending | ok | error | rollback | `rollback-error`): MigrationResponse = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[MigrationResponse]
     }
     
-    @scala.inline
-    implicit class MigrationResponseMutableBuilder[Self <: MigrationResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationResponse](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: `not-run` | skipped | pending | ok | error | rollback | `rollback-error`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: `not-run` | skipped | pending | ok | error | rollback | `rollback-error`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,26 +115,20 @@ object mod {
   }
   object MigrationStep {
     
-    @scala.inline
-    def apply(id: String, up: (Db, js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): MigrationStep = {
+    inline def apply(id: String, up: (Db, js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): MigrationStep = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], up = js.Any.fromFunction2(up))
       __obj.asInstanceOf[MigrationStep]
     }
     
-    @scala.inline
-    implicit class MigrationStepMutableBuilder[Self <: MigrationStep] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationStep](x: Self) {
       
-      @scala.inline
-      def setDown(value: (/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
+      inline def setDown(value: (/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+      inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp(value: (Db, js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): Self = StObject.set(x, "up", js.Any.fromFunction2(value))
+      inline def setUp(value: (Db, js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): Self = StObject.set(x, "up", js.Any.fromFunction2(value))
     }
   }
 }

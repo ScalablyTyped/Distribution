@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReporterVersion extends StObject
 object ReporterVersion {
   
-  @scala.inline
-  def `no-passes`: typings.axeCore.axeCoreStrings.`no-passes` = "no-passes".asInstanceOf[typings.axeCore.axeCoreStrings.`no-passes`]
+  inline def `no-passes`: typings.axeCore.axeCoreStrings.`no-passes` = "no-passes".asInstanceOf[typings.axeCore.axeCoreStrings.`no-passes`]
   
-  @scala.inline
-  def raw: typings.axeCore.axeCoreStrings.raw = "raw".asInstanceOf[typings.axeCore.axeCoreStrings.raw]
+  inline def raw: typings.axeCore.axeCoreStrings.raw = "raw".asInstanceOf[typings.axeCore.axeCoreStrings.raw]
   
-  @scala.inline
-  def `raw-env`: typings.axeCore.axeCoreStrings.`raw-env` = "raw-env".asInstanceOf[typings.axeCore.axeCoreStrings.`raw-env`]
+  inline def `raw-env`: typings.axeCore.axeCoreStrings.`raw-env` = "raw-env".asInstanceOf[typings.axeCore.axeCoreStrings.`raw-env`]
   
-  @scala.inline
-  def v1: typings.axeCore.axeCoreStrings.v1 = "v1".asInstanceOf[typings.axeCore.axeCoreStrings.v1]
+  inline def v1: typings.axeCore.axeCoreStrings.v1 = "v1".asInstanceOf[typings.axeCore.axeCoreStrings.v1]
   
-  @scala.inline
-  def v2: typings.axeCore.axeCoreStrings.v2 = "v2".asInstanceOf[typings.axeCore.axeCoreStrings.v2]
+  inline def v2: typings.axeCore.axeCoreStrings.v2 = "v2".asInstanceOf[typings.axeCore.axeCoreStrings.v2]
 }

@@ -59,59 +59,42 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
+      inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
       
-      @scala.inline
-      def setOnBuildEnd(value: js.Array[String]): Self = StObject.set(x, "onBuildEnd", value.asInstanceOf[js.Any])
+      inline def setOnBuildEnd(value: js.Array[String]): Self = StObject.set(x, "onBuildEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBuildEndUndefined: Self = StObject.set(x, "onBuildEnd", js.undefined)
+      inline def setOnBuildEndUndefined: Self = StObject.set(x, "onBuildEnd", js.undefined)
       
-      @scala.inline
-      def setOnBuildEndVarargs(value: String*): Self = StObject.set(x, "onBuildEnd", js.Array(value :_*))
+      inline def setOnBuildEndVarargs(value: String*): Self = StObject.set(x, "onBuildEnd", js.Array(value :_*))
       
-      @scala.inline
-      def setOnBuildExit(value: js.Array[String]): Self = StObject.set(x, "onBuildExit", value.asInstanceOf[js.Any])
+      inline def setOnBuildExit(value: js.Array[String]): Self = StObject.set(x, "onBuildExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBuildExitUndefined: Self = StObject.set(x, "onBuildExit", js.undefined)
+      inline def setOnBuildExitUndefined: Self = StObject.set(x, "onBuildExit", js.undefined)
       
-      @scala.inline
-      def setOnBuildExitVarargs(value: String*): Self = StObject.set(x, "onBuildExit", js.Array(value :_*))
+      inline def setOnBuildExitVarargs(value: String*): Self = StObject.set(x, "onBuildExit", js.Array(value :_*))
       
-      @scala.inline
-      def setOnBuildStart(value: js.Array[String]): Self = StObject.set(x, "onBuildStart", value.asInstanceOf[js.Any])
+      inline def setOnBuildStart(value: js.Array[String]): Self = StObject.set(x, "onBuildStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBuildStartUndefined: Self = StObject.set(x, "onBuildStart", js.undefined)
+      inline def setOnBuildStartUndefined: Self = StObject.set(x, "onBuildStart", js.undefined)
       
-      @scala.inline
-      def setOnBuildStartVarargs(value: String*): Self = StObject.set(x, "onBuildStart", js.Array(value :_*))
+      inline def setOnBuildStartVarargs(value: String*): Self = StObject.set(x, "onBuildStart", js.Array(value :_*))
       
-      @scala.inline
-      def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+      inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+      inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

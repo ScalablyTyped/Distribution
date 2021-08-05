@@ -15,7 +15,7 @@ object directiveResolverMockMod {
   class MockDirectiveResolver protected () extends DirectiveResolver {
     def this(reflector: CompileReflector) = this()
     
-    var _directives: js.Any = js.native
+    /* private */ var _directives: js.Any = js.native
     
     /**
       * Overrides the {@link core.Directive} for a directive.

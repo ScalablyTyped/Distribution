@@ -17,8 +17,7 @@ trait WindowOptionsChangedEvent[Topic, Type]
 }
 object WindowOptionsChangedEvent {
   
-  @scala.inline
-  def apply[Topic, Type](
+  inline def apply[Topic, Type](
     diff: WindowOptionDiff,
     name: String,
     options: WindowOption,
@@ -31,13 +30,10 @@ object WindowOptionsChangedEvent {
     __obj.asInstanceOf[WindowOptionsChangedEvent[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WindowOptionsChangedEventMutableBuilder[Self <: WindowOptionsChangedEvent[?, ?], Topic, Type] (val x: Self & (WindowOptionsChangedEvent[Topic, Type])) extends AnyVal {
+  extension [Self <: WindowOptionsChangedEvent[?, ?], Topic, Type](x: Self & (WindowOptionsChangedEvent[Topic, Type])) {
     
-    @scala.inline
-    def setDiff(value: WindowOptionDiff): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+    inline def setDiff(value: WindowOptionDiff): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: WindowOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: WindowOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

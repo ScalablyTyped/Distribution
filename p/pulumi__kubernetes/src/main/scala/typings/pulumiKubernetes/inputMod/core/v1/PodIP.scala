@@ -18,19 +18,15 @@ trait PodIP extends StObject {
 }
 object PodIP {
   
-  @scala.inline
-  def apply(): PodIP = {
+  inline def apply(): PodIP = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PodIP]
   }
   
-  @scala.inline
-  implicit class PodIPMutableBuilder[Self <: PodIP] (val x: Self) extends AnyVal {
+  extension [Self <: PodIP](x: Self) {
     
-    @scala.inline
-    def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
   }
 }

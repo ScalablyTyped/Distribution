@@ -27,31 +27,23 @@ trait Icon extends StObject {
 }
 object Icon {
   
-  @scala.inline
-  def apply(): Icon = {
+  inline def apply(): Icon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Icon]
   }
   
-  @scala.inline
-  implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+  extension [Self <: Icon](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    @scala.inline
-    def setPrimary_color(value: String): Self = StObject.set(x, "primary_color", value.asInstanceOf[js.Any])
+    inline def setPrimary_color(value: String): Self = StObject.set(x, "primary_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_colorUndefined: Self = StObject.set(x, "primary_color", js.undefined)
+    inline def setPrimary_colorUndefined: Self = StObject.set(x, "primary_color", js.undefined)
   }
 }

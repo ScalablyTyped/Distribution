@@ -18,17 +18,14 @@ object typesRepositoryTriggerEventsListRequiredExceptionMod {
   }
   object RepositoryTriggerEventsListRequiredException {
     
-    @scala.inline
-    def apply(): RepositoryTriggerEventsListRequiredException = {
+    inline def apply(): RepositoryTriggerEventsListRequiredException = {
       val __obj = js.Dynamic.literal(name = "RepositoryTriggerEventsListRequiredException")
       __obj.asInstanceOf[RepositoryTriggerEventsListRequiredException]
     }
     
-    @scala.inline
-    implicit class RepositoryTriggerEventsListRequiredExceptionMutableBuilder[Self <: RepositoryTriggerEventsListRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryTriggerEventsListRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerEventsListRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

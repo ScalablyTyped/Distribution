@@ -24,37 +24,27 @@ trait UserFeedback extends StObject {
 }
 object UserFeedback {
   
-  @scala.inline
-  def apply(): UserFeedback = {
+  inline def apply(): UserFeedback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserFeedback]
   }
   
-  @scala.inline
-  implicit class UserFeedbackMutableBuilder[Self <: UserFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: UserFeedback](x: Self) {
     
-    @scala.inline
-    def setRating(value: UserFeedbackRating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: UserFeedbackRating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+    inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
     
-    @scala.inline
-    def setText(value: NullableOption[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: NullableOption[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTokens(value: NullableOption[FeedbackTokenSet]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: NullableOption[FeedbackTokenSet]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensNull: Self = StObject.set(x, "tokens", null)
+    inline def setTokensNull: Self = StObject.set(x, "tokens", null)
     
-    @scala.inline
-    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+    inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
   }
 }

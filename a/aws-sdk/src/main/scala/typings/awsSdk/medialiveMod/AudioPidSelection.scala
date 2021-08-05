@@ -13,16 +13,13 @@ trait AudioPidSelection extends StObject {
 }
 object AudioPidSelection {
   
-  @scala.inline
-  def apply(Pid: integerMin0Max8191): AudioPidSelection = {
+  inline def apply(Pid: integerMin0Max8191): AudioPidSelection = {
     val __obj = js.Dynamic.literal(Pid = Pid.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioPidSelection]
   }
   
-  @scala.inline
-  implicit class AudioPidSelectionMutableBuilder[Self <: AudioPidSelection] (val x: Self) extends AnyVal {
+  extension [Self <: AudioPidSelection](x: Self) {
     
-    @scala.inline
-    def setPid(value: integerMin0Max8191): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: integerMin0Max8191): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
   }
 }

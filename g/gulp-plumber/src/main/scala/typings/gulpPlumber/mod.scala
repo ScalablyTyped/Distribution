@@ -53,29 +53,22 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setErrorHandler(value: ErrorHandlerFunction | Boolean): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
+      inline def setErrorHandler(value: ErrorHandlerFunction | Boolean): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorHandlerFunction1(value: /* error */ js.Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandlerFunction1(value: /* error */ js.Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+      inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+      inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     }
   }
   

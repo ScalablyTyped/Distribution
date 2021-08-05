@@ -10,16 +10,13 @@ trait StartAvailabilityMonitorTestInput extends StObject {
 }
 object StartAvailabilityMonitorTestInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): StartAvailabilityMonitorTestInput = {
+  inline def apply(GatewayARN: GatewayARN): StartAvailabilityMonitorTestInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartAvailabilityMonitorTestInput]
   }
   
-  @scala.inline
-  implicit class StartAvailabilityMonitorTestInputMutableBuilder[Self <: StartAvailabilityMonitorTestInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartAvailabilityMonitorTestInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

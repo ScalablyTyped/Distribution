@@ -23,31 +23,23 @@ trait AuditMitigationActionsTaskMetadata extends StObject {
 }
 object AuditMitigationActionsTaskMetadata {
   
-  @scala.inline
-  def apply(): AuditMitigationActionsTaskMetadata = {
+  inline def apply(): AuditMitigationActionsTaskMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditMitigationActionsTaskMetadata]
   }
   
-  @scala.inline
-  implicit class AuditMitigationActionsTaskMetadataMutableBuilder[Self <: AuditMitigationActionsTaskMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AuditMitigationActionsTaskMetadata](x: Self) {
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    @scala.inline
-    def setTaskStatus(value: AuditMitigationActionsTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
+    inline def setTaskStatus(value: AuditMitigationActionsTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
+    inline def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
   }
 }

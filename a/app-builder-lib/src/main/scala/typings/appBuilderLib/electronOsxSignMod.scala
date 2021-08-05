@@ -11,17 +11,13 @@ object electronOsxSignMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def flat(opts: FlatOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flat")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flat(opts: FlatOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flat")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flatAsync(opts: FlatOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def flatAsync(opts: FlatOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def sign(opts: SignOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(opts: SignOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def signAsync(opts: SignOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("signAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def signAsync(opts: SignOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("signAsync")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   trait BaseSignOptions extends StObject {
     
@@ -35,35 +31,26 @@ object electronOsxSignMod {
   }
   object BaseSignOptions {
     
-    @scala.inline
-    def apply(app: String): BaseSignOptions = {
+    inline def apply(app: String): BaseSignOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseSignOptions]
     }
     
-    @scala.inline
-    implicit class BaseSignOptionsMutableBuilder[Self <: BaseSignOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseSignOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+      inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      @scala.inline
-      def setKeychain(value: String): Self = StObject.set(x, "keychain", value.asInstanceOf[js.Any])
+      inline def setKeychain(value: String): Self = StObject.set(x, "keychain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeychainUndefined: Self = StObject.set(x, "keychain", js.undefined)
+      inline def setKeychainUndefined: Self = StObject.set(x, "keychain", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     }
   }
   
@@ -81,38 +68,28 @@ object electronOsxSignMod {
   }
   object FlatOptions {
     
-    @scala.inline
-    def apply(app: String): FlatOptions = {
+    inline def apply(app: String): FlatOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlatOptions]
     }
     
-    @scala.inline
-    implicit class FlatOptionsMutableBuilder[Self <: FlatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FlatOptions](x: Self) {
       
-      @scala.inline
-      def `setIdentity-validation`(value: Boolean): Self = StObject.set(x, "identity-validation", value.asInstanceOf[js.Any])
+      inline def `setIdentity-validation`(value: Boolean): Self = StObject.set(x, "identity-validation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIdentity-validationUndefined`: Self = StObject.set(x, "identity-validation", js.undefined)
+      inline def `setIdentity-validationUndefined`: Self = StObject.set(x, "identity-validation", js.undefined)
       
-      @scala.inline
-      def setInstall(value: String): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+      inline def setInstall(value: String): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
+      inline def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
       
-      @scala.inline
-      def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+      inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
       
-      @scala.inline
-      def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     }
   }
   
@@ -152,107 +129,74 @@ object electronOsxSignMod {
   }
   object SignOptions {
     
-    @scala.inline
-    def apply(app: String): SignOptions = {
+    inline def apply(app: String): SignOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignOptions]
     }
     
-    @scala.inline
-    implicit class SignOptionsMutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SignOptions](x: Self) {
       
-      @scala.inline
-      def setBinaries(value: js.Array[String]): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
+      inline def setBinaries(value: js.Array[String]): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinariesUndefined: Self = StObject.set(x, "binaries", js.undefined)
+      inline def setBinariesUndefined: Self = StObject.set(x, "binaries", js.undefined)
       
-      @scala.inline
-      def setBinariesVarargs(value: String*): Self = StObject.set(x, "binaries", js.Array(value :_*))
+      inline def setBinariesVarargs(value: String*): Self = StObject.set(x, "binaries", js.Array(value :_*))
       
-      @scala.inline
-      def setEntitlements(value: String): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
+      inline def setEntitlements(value: String): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setEntitlements-inherit`(value: String): Self = StObject.set(x, "entitlements-inherit", value.asInstanceOf[js.Any])
+      inline def `setEntitlements-inherit`(value: String): Self = StObject.set(x, "entitlements-inherit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setEntitlements-inheritUndefined`: Self = StObject.set(x, "entitlements-inherit", js.undefined)
+      inline def `setEntitlements-inheritUndefined`: Self = StObject.set(x, "entitlements-inherit", js.undefined)
       
-      @scala.inline
-      def `setEntitlements-loginhelper`(value: String): Self = StObject.set(x, "entitlements-loginhelper", value.asInstanceOf[js.Any])
+      inline def `setEntitlements-loginhelper`(value: String): Self = StObject.set(x, "entitlements-loginhelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setEntitlements-loginhelperUndefined`: Self = StObject.set(x, "entitlements-loginhelper", js.undefined)
+      inline def `setEntitlements-loginhelperUndefined`: Self = StObject.set(x, "entitlements-loginhelper", js.undefined)
       
-      @scala.inline
-      def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
+      inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
       
-      @scala.inline
-      def `setGatekeeper-assess`(value: Boolean): Self = StObject.set(x, "gatekeeper-assess", value.asInstanceOf[js.Any])
+      inline def `setGatekeeper-assess`(value: Boolean): Self = StObject.set(x, "gatekeeper-assess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGatekeeper-assessUndefined`: Self = StObject.set(x, "gatekeeper-assess", js.undefined)
+      inline def `setGatekeeper-assessUndefined`: Self = StObject.set(x, "gatekeeper-assess", js.undefined)
       
-      @scala.inline
-      def setHardenedRuntime(value: Boolean): Self = StObject.set(x, "hardenedRuntime", value.asInstanceOf[js.Any])
+      inline def setHardenedRuntime(value: Boolean): Self = StObject.set(x, "hardenedRuntime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardenedRuntimeUndefined: Self = StObject.set(x, "hardenedRuntime", js.undefined)
+      inline def setHardenedRuntimeUndefined: Self = StObject.set(x, "hardenedRuntime", js.undefined)
       
-      @scala.inline
-      def `setIdentity-validation`(value: Boolean): Self = StObject.set(x, "identity-validation", value.asInstanceOf[js.Any])
+      inline def `setIdentity-validation`(value: Boolean): Self = StObject.set(x, "identity-validation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIdentity-validationUndefined`: Self = StObject.set(x, "identity-validation", js.undefined)
+      inline def `setIdentity-validationUndefined`: Self = StObject.set(x, "identity-validation", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def `setPre-auto-entitlements`(value: Boolean): Self = StObject.set(x, "pre-auto-entitlements", value.asInstanceOf[js.Any])
+      inline def `setPre-auto-entitlements`(value: Boolean): Self = StObject.set(x, "pre-auto-entitlements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPre-auto-entitlementsUndefined`: Self = StObject.set(x, "pre-auto-entitlements", js.undefined)
+      inline def `setPre-auto-entitlementsUndefined`: Self = StObject.set(x, "pre-auto-entitlements", js.undefined)
       
-      @scala.inline
-      def `setPre-embed-provisioning-profile`(value: Boolean): Self = StObject.set(x, "pre-embed-provisioning-profile", value.asInstanceOf[js.Any])
+      inline def `setPre-embed-provisioning-profile`(value: Boolean): Self = StObject.set(x, "pre-embed-provisioning-profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPre-embed-provisioning-profileUndefined`: Self = StObject.set(x, "pre-embed-provisioning-profile", js.undefined)
+      inline def `setPre-embed-provisioning-profileUndefined`: Self = StObject.set(x, "pre-embed-provisioning-profile", js.undefined)
       
-      @scala.inline
-      def `setProvisioning-profile`(value: String): Self = StObject.set(x, "provisioning-profile", value.asInstanceOf[js.Any])
+      inline def `setProvisioning-profile`(value: String): Self = StObject.set(x, "provisioning-profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setProvisioning-profileUndefined`: Self = StObject.set(x, "provisioning-profile", js.undefined)
+      inline def `setProvisioning-profileUndefined`: Self = StObject.set(x, "provisioning-profile", js.undefined)
       
-      @scala.inline
-      def setRequirements(value: String): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+      inline def setRequirements(value: String): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+      inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
       
-      @scala.inline
-      def `setSignature-size`(value: Double): Self = StObject.set(x, "signature-size", value.asInstanceOf[js.Any])
+      inline def `setSignature-size`(value: Double): Self = StObject.set(x, "signature-size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSignature-sizeUndefined`: Self = StObject.set(x, "signature-size", js.undefined)
+      inline def `setSignature-sizeUndefined`: Self = StObject.set(x, "signature-size", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

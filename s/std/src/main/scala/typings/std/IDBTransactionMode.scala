@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDBTransactionMode extends StObject
 object IDBTransactionMode {
   
-  @scala.inline
-  def readonly: readonly_ = "readonly".asInstanceOf[readonly_]
+  inline def readonly: readonly_ = "readonly".asInstanceOf[readonly_]
   
-  @scala.inline
-  def readwrite: typings.std.stdStrings.readwrite = "readwrite".asInstanceOf[typings.std.stdStrings.readwrite]
+  inline def readwrite: typings.std.stdStrings.readwrite = "readwrite".asInstanceOf[typings.std.stdStrings.readwrite]
   
-  @scala.inline
-  def versionchange: typings.std.stdStrings.versionchange = "versionchange".asInstanceOf[typings.std.stdStrings.versionchange]
+  inline def versionchange: typings.std.stdStrings.versionchange = "versionchange".asInstanceOf[typings.std.stdStrings.versionchange]
 }

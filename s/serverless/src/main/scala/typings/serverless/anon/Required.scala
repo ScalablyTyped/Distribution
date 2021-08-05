@@ -14,31 +14,23 @@ trait Required extends StObject {
 }
 object Required {
   
-  @scala.inline
-  def apply(): Required = {
+  inline def apply(): Required = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Required]
   }
   
-  @scala.inline
-  implicit class RequiredMutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
+  extension [Self <: Required](x: Self) {
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setShortcut(value: String): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+    inline def setShortcut(value: String): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+    inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
     
-    @scala.inline
-    def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

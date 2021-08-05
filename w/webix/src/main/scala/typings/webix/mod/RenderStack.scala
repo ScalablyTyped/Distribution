@@ -30,6 +30,5 @@ trait RenderStack extends StObject {
 }
 object RenderStack {
   
-  @scala.inline
-  def apply: RenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("RenderStack").asInstanceOf[RenderStack]
+  inline def apply: RenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("RenderStack").asInstanceOf[RenderStack]
 }

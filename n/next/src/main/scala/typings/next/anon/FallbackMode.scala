@@ -15,25 +15,19 @@ trait FallbackMode extends StObject {
 }
 object FallbackMode {
   
-  @scala.inline
-  def apply(fallbackMode: static | blocking | `false`): FallbackMode = {
+  inline def apply(fallbackMode: static | blocking | `false`): FallbackMode = {
     val __obj = js.Dynamic.literal(fallbackMode = fallbackMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FallbackMode]
   }
   
-  @scala.inline
-  implicit class FallbackModeMutableBuilder[Self <: FallbackMode] (val x: Self) extends AnyVal {
+  extension [Self <: FallbackMode](x: Self) {
     
-    @scala.inline
-    def setFallbackMode(value: static | blocking | `false`): Self = StObject.set(x, "fallbackMode", value.asInstanceOf[js.Any])
+    inline def setFallbackMode(value: static | blocking | `false`): Self = StObject.set(x, "fallbackMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticPaths(value: js.Array[String]): Self = StObject.set(x, "staticPaths", value.asInstanceOf[js.Any])
+    inline def setStaticPaths(value: js.Array[String]): Self = StObject.set(x, "staticPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticPathsUndefined: Self = StObject.set(x, "staticPaths", js.undefined)
+    inline def setStaticPathsUndefined: Self = StObject.set(x, "staticPaths", js.undefined)
     
-    @scala.inline
-    def setStaticPathsVarargs(value: String*): Self = StObject.set(x, "staticPaths", js.Array(value :_*))
+    inline def setStaticPathsVarargs(value: String*): Self = StObject.set(x, "staticPaths", js.Array(value :_*))
   }
 }

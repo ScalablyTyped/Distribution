@@ -23,28 +23,21 @@ trait CreateServiceLinkedRoleRequest extends StObject {
 }
 object CreateServiceLinkedRoleRequest {
   
-  @scala.inline
-  def apply(AWSServiceName: groupNameType): CreateServiceLinkedRoleRequest = {
+  inline def apply(AWSServiceName: groupNameType): CreateServiceLinkedRoleRequest = {
     val __obj = js.Dynamic.literal(AWSServiceName = AWSServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateServiceLinkedRoleRequest]
   }
   
-  @scala.inline
-  implicit class CreateServiceLinkedRoleRequestMutableBuilder[Self <: CreateServiceLinkedRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateServiceLinkedRoleRequest](x: Self) {
     
-    @scala.inline
-    def setAWSServiceName(value: groupNameType): Self = StObject.set(x, "AWSServiceName", value.asInstanceOf[js.Any])
+    inline def setAWSServiceName(value: groupNameType): Self = StObject.set(x, "AWSServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSuffix(value: customSuffixType): Self = StObject.set(x, "CustomSuffix", value.asInstanceOf[js.Any])
+    inline def setCustomSuffix(value: customSuffixType): Self = StObject.set(x, "CustomSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSuffixUndefined: Self = StObject.set(x, "CustomSuffix", js.undefined)
+    inline def setCustomSuffixUndefined: Self = StObject.set(x, "CustomSuffix", js.undefined)
     
-    @scala.inline
-    def setDescription(value: roleDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: roleDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

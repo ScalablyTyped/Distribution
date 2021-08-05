@@ -23,31 +23,23 @@ trait RecordOutput extends StObject {
 }
 object RecordOutput {
   
-  @scala.inline
-  def apply(): RecordOutput = {
+  inline def apply(): RecordOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordOutput]
   }
   
-  @scala.inline
-  implicit class RecordOutputMutableBuilder[Self <: RecordOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RecordOutput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
+    inline def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
+    inline def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
     
-    @scala.inline
-    def setOutputValue(value: OutputValue): Self = StObject.set(x, "OutputValue", value.asInstanceOf[js.Any])
+    inline def setOutputValue(value: OutputValue): Self = StObject.set(x, "OutputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputValueUndefined: Self = StObject.set(x, "OutputValue", js.undefined)
+    inline def setOutputValueUndefined: Self = StObject.set(x, "OutputValue", js.undefined)
   }
 }

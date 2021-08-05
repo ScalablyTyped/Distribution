@@ -33,7 +33,7 @@ trait Recipient extends StObject {
   
   val Name: String = js.native
   
-  @JSName("Outlook.Recipient_typekey")
+  /* private */ @JSName("Outlook.Recipient_typekey")
   var OutlookDotRecipient_typekey: Recipient = js.native
   
   val Parent: js.Any = js.native

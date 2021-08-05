@@ -55,37 +55,27 @@ trait PlusBarcodeBarcodeOptions extends StObject {
 }
 object PlusBarcodeBarcodeOptions {
   
-  @scala.inline
-  def apply(): PlusBarcodeBarcodeOptions = {
+  inline def apply(): PlusBarcodeBarcodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusBarcodeBarcodeOptions]
   }
   
-  @scala.inline
-  implicit class PlusBarcodeBarcodeOptionsMutableBuilder[Self <: PlusBarcodeBarcodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusBarcodeBarcodeOptions](x: Self) {
     
-    @scala.inline
-    def setConserve(value: Boolean): Self = StObject.set(x, "conserve", value.asInstanceOf[js.Any])
+    inline def setConserve(value: Boolean): Self = StObject.set(x, "conserve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConserveUndefined: Self = StObject.set(x, "conserve", js.undefined)
+    inline def setConserveUndefined: Self = StObject.set(x, "conserve", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setSound(value: none | default): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: none | default): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def setVibrate(value: Boolean): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
+    inline def setVibrate(value: Boolean): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
+    inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
   }
 }

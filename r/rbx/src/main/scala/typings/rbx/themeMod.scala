@@ -28,19 +28,16 @@ object themeMod {
   }
   object ThemeContextValue {
     
-    @scala.inline
-    def apply[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
+    inline def apply[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
       transform: (/* props */ ClassName & Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]
     ): ThemeContextValue[TTransformProps, TNewProps] = {
       val __obj = js.Dynamic.literal(transform = js.Any.fromFunction3(transform))
       __obj.asInstanceOf[ThemeContextValue[TTransformProps, TNewProps]]
     }
     
-    @scala.inline
-    implicit class ThemeContextValueMutableBuilder[Self <: ThemeContextValue[?, ?], TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] (val x: Self & (ThemeContextValue[TTransformProps, TNewProps])) extends AnyVal {
+    extension [Self <: ThemeContextValue[?, ?], TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](x: Self & (ThemeContextValue[TTransformProps, TNewProps])) {
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (/* props */ ClassName & Partial[TTransformProps], /* componentName */ String, /* location */ js.UndefOr[String]) => ReturnType[TransformFunction[TTransformProps, TNewProps]]
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
     }

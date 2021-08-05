@@ -30,79 +30,55 @@ trait BorderStylesCSSProperties extends StObject {
 }
 object BorderStylesCSSProperties {
   
-  @scala.inline
-  def apply(): BorderStylesCSSProperties = {
+  inline def apply(): BorderStylesCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderStylesCSSProperties]
   }
   
-  @scala.inline
-  implicit class BorderStylesCSSPropertiesMutableBuilder[Self <: BorderStylesCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BorderStylesCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBorderBlockEndStyle(value: BorderStyles): Self = StObject.set(x, "borderBlockEndStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBlockEndStyle(value: BorderStyles): Self = StObject.set(x, "borderBlockEndStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBlockEndStyleUndefined: Self = StObject.set(x, "borderBlockEndStyle", js.undefined)
+    inline def setBorderBlockEndStyleUndefined: Self = StObject.set(x, "borderBlockEndStyle", js.undefined)
     
-    @scala.inline
-    def setBorderBlockStartStyle(value: BorderStyles): Self = StObject.set(x, "borderBlockStartStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStartStyle(value: BorderStyles): Self = StObject.set(x, "borderBlockStartStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBlockStartStyleUndefined: Self = StObject.set(x, "borderBlockStartStyle", js.undefined)
+    inline def setBorderBlockStartStyleUndefined: Self = StObject.set(x, "borderBlockStartStyle", js.undefined)
     
-    @scala.inline
-    def setBorderBlockStyle(value: BorderStyles): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStyle(value: BorderStyles): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBlockStyleUndefined: Self = StObject.set(x, "borderBlockStyle", js.undefined)
+    inline def setBorderBlockStyleUndefined: Self = StObject.set(x, "borderBlockStyle", js.undefined)
     
-    @scala.inline
-    def setBorderBottomStyle(value: BorderStyles): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBottomStyle(value: BorderStyles): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
+    inline def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
     
-    @scala.inline
-    def setBorderInlineEndStyle(value: BorderStyles): Self = StObject.set(x, "borderInlineEndStyle", value.asInstanceOf[js.Any])
+    inline def setBorderInlineEndStyle(value: BorderStyles): Self = StObject.set(x, "borderInlineEndStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderInlineEndStyleUndefined: Self = StObject.set(x, "borderInlineEndStyle", js.undefined)
+    inline def setBorderInlineEndStyleUndefined: Self = StObject.set(x, "borderInlineEndStyle", js.undefined)
     
-    @scala.inline
-    def setBorderInlineStartStyle(value: BorderStyles): Self = StObject.set(x, "borderInlineStartStyle", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStartStyle(value: BorderStyles): Self = StObject.set(x, "borderInlineStartStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderInlineStartStyleUndefined: Self = StObject.set(x, "borderInlineStartStyle", js.undefined)
+    inline def setBorderInlineStartStyleUndefined: Self = StObject.set(x, "borderInlineStartStyle", js.undefined)
     
-    @scala.inline
-    def setBorderInlineStyle(value: BorderStyles): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStyle(value: BorderStyles): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderInlineStyleUndefined: Self = StObject.set(x, "borderInlineStyle", js.undefined)
+    inline def setBorderInlineStyleUndefined: Self = StObject.set(x, "borderInlineStyle", js.undefined)
     
-    @scala.inline
-    def setBorderLeftStyle(value: BorderStyles): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
+    inline def setBorderLeftStyle(value: BorderStyles): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
+    inline def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
     
-    @scala.inline
-    def setBorderRightStyle(value: BorderStyles): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
+    inline def setBorderRightStyle(value: BorderStyles): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
+    inline def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
     
-    @scala.inline
-    def setBorderStyle(value: BorderStyles): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: BorderStyles): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+    inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
-    @scala.inline
-    def setBorderTopStyle(value: BorderStyles): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
+    inline def setBorderTopStyle(value: BorderStyles): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
+    inline def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
   }
 }

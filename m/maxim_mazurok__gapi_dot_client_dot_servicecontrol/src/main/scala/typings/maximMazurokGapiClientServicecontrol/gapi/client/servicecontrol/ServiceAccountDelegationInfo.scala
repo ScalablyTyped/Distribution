@@ -17,31 +17,23 @@ trait ServiceAccountDelegationInfo extends StObject {
 }
 object ServiceAccountDelegationInfo {
   
-  @scala.inline
-  def apply(): ServiceAccountDelegationInfo = {
+  inline def apply(): ServiceAccountDelegationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceAccountDelegationInfo]
   }
   
-  @scala.inline
-  implicit class ServiceAccountDelegationInfoMutableBuilder[Self <: ServiceAccountDelegationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccountDelegationInfo](x: Self) {
     
-    @scala.inline
-    def setFirstPartyPrincipal(value: FirstPartyPrincipal): Self = StObject.set(x, "firstPartyPrincipal", value.asInstanceOf[js.Any])
+    inline def setFirstPartyPrincipal(value: FirstPartyPrincipal): Self = StObject.set(x, "firstPartyPrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPartyPrincipalUndefined: Self = StObject.set(x, "firstPartyPrincipal", js.undefined)
+    inline def setFirstPartyPrincipalUndefined: Self = StObject.set(x, "firstPartyPrincipal", js.undefined)
     
-    @scala.inline
-    def setPrincipalSubject(value: String): Self = StObject.set(x, "principalSubject", value.asInstanceOf[js.Any])
+    inline def setPrincipalSubject(value: String): Self = StObject.set(x, "principalSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalSubjectUndefined: Self = StObject.set(x, "principalSubject", js.undefined)
+    inline def setPrincipalSubjectUndefined: Self = StObject.set(x, "principalSubject", js.undefined)
     
-    @scala.inline
-    def setThirdPartyPrincipal(value: ThirdPartyPrincipal): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
+    inline def setThirdPartyPrincipal(value: ThirdPartyPrincipal): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
+    inline def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
   }
 }

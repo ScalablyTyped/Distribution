@@ -19,46 +19,33 @@ trait StyleSheetManagerProps extends StObject {
 }
 object StyleSheetManagerProps {
   
-  @scala.inline
-  def apply(): StyleSheetManagerProps = {
+  inline def apply(): StyleSheetManagerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleSheetManagerProps]
   }
   
-  @scala.inline
-  implicit class StyleSheetManagerPropsMutableBuilder[Self <: StyleSheetManagerProps] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheetManagerProps](x: Self) {
     
-    @scala.inline
-    def setDisableCSSOMInjection(value: Boolean): Self = StObject.set(x, "disableCSSOMInjection", value.asInstanceOf[js.Any])
+    inline def setDisableCSSOMInjection(value: Boolean): Self = StObject.set(x, "disableCSSOMInjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCSSOMInjectionUndefined: Self = StObject.set(x, "disableCSSOMInjection", js.undefined)
+    inline def setDisableCSSOMInjectionUndefined: Self = StObject.set(x, "disableCSSOMInjection", js.undefined)
     
-    @scala.inline
-    def setDisableVendorPrefixes(value: Boolean): Self = StObject.set(x, "disableVendorPrefixes", value.asInstanceOf[js.Any])
+    inline def setDisableVendorPrefixes(value: Boolean): Self = StObject.set(x, "disableVendorPrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableVendorPrefixesUndefined: Self = StObject.set(x, "disableVendorPrefixes", js.undefined)
+    inline def setDisableVendorPrefixesUndefined: Self = StObject.set(x, "disableVendorPrefixes", js.undefined)
     
-    @scala.inline
-    def setSheet(value: ServerStyleSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: ServerStyleSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
+    inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
     
-    @scala.inline
-    def setStylisPlugins(value: js.Array[StylisPlugin]): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
+    inline def setStylisPlugins(value: js.Array[StylisPlugin]): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylisPluginsUndefined: Self = StObject.set(x, "stylisPlugins", js.undefined)
+    inline def setStylisPluginsUndefined: Self = StObject.set(x, "stylisPlugins", js.undefined)
     
-    @scala.inline
-    def setStylisPluginsVarargs(value: StylisPlugin*): Self = StObject.set(x, "stylisPlugins", js.Array(value :_*))
+    inline def setStylisPluginsVarargs(value: StylisPlugin*): Self = StObject.set(x, "stylisPlugins", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

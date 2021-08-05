@@ -43,8 +43,7 @@ trait JoinDomainInput extends StObject {
 }
 object JoinDomainInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DomainName: DomainName,
     GatewayARN: GatewayARN,
     Password: DomainUserPassword,
@@ -54,40 +53,28 @@ object JoinDomainInput {
     __obj.asInstanceOf[JoinDomainInput]
   }
   
-  @scala.inline
-  implicit class JoinDomainInputMutableBuilder[Self <: JoinDomainInput] (val x: Self) extends AnyVal {
+  extension [Self <: JoinDomainInput](x: Self) {
     
-    @scala.inline
-    def setDomainControllers(value: Hosts): Self = StObject.set(x, "DomainControllers", value.asInstanceOf[js.Any])
+    inline def setDomainControllers(value: Hosts): Self = StObject.set(x, "DomainControllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainControllersUndefined: Self = StObject.set(x, "DomainControllers", js.undefined)
+    inline def setDomainControllersUndefined: Self = StObject.set(x, "DomainControllers", js.undefined)
     
-    @scala.inline
-    def setDomainControllersVarargs(value: Host*): Self = StObject.set(x, "DomainControllers", js.Array(value :_*))
+    inline def setDomainControllersVarargs(value: Host*): Self = StObject.set(x, "DomainControllers", js.Array(value :_*))
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnit(value: OrganizationalUnit): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnit(value: OrganizationalUnit): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
+    inline def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
     
-    @scala.inline
-    def setPassword(value: DomainUserPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: DomainUserPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
+    inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
     
-    @scala.inline
-    def setUserName(value: DomainUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: DomainUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

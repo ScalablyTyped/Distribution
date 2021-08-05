@@ -21,19 +21,15 @@ trait SystemDependentXWindow extends StObject {
 }
 object SystemDependentXWindow {
   
-  @scala.inline
-  def apply(DisplayPointer: Double, WindowHandle: Double): SystemDependentXWindow = {
+  inline def apply(DisplayPointer: Double, WindowHandle: Double): SystemDependentXWindow = {
     val __obj = js.Dynamic.literal(DisplayPointer = DisplayPointer.asInstanceOf[js.Any], WindowHandle = WindowHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemDependentXWindow]
   }
   
-  @scala.inline
-  implicit class SystemDependentXWindowMutableBuilder[Self <: SystemDependentXWindow] (val x: Self) extends AnyVal {
+  extension [Self <: SystemDependentXWindow](x: Self) {
     
-    @scala.inline
-    def setDisplayPointer(value: Double): Self = StObject.set(x, "DisplayPointer", value.asInstanceOf[js.Any])
+    inline def setDisplayPointer(value: Double): Self = StObject.set(x, "DisplayPointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowHandle(value: Double): Self = StObject.set(x, "WindowHandle", value.asInstanceOf[js.Any])
+    inline def setWindowHandle(value: Double): Self = StObject.set(x, "WindowHandle", value.asInstanceOf[js.Any])
   }
 }

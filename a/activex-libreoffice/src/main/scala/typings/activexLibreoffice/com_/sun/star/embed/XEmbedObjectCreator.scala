@@ -80,8 +80,7 @@ trait XEmbedObjectCreator
 }
 object XEmbedObjectCreator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstanceInitFromEntry: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
     createInstanceInitFromMediaDescriptor: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
@@ -93,16 +92,12 @@ object XEmbedObjectCreator {
     __obj.asInstanceOf[XEmbedObjectCreator]
   }
   
-  @scala.inline
-  implicit class XEmbedObjectCreatorMutableBuilder[Self <: XEmbedObjectCreator] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbedObjectCreator](x: Self) {
     
-    @scala.inline
-    def setCreateInstanceInitFromEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceInitFromEntry", js.Any.fromFunction4(value))
+    inline def setCreateInstanceInitFromEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceInitFromEntry", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateInstanceInitFromMediaDescriptor(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceInitFromMediaDescriptor", js.Any.fromFunction4(value))
+    inline def setCreateInstanceInitFromMediaDescriptor(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceInitFromMediaDescriptor", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateInstanceInitNew(value: (SeqEquiv[Double], String, XStorage, String, SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceInitNew", js.Any.fromFunction5(value))
+    inline def setCreateInstanceInitNew(value: (SeqEquiv[Double], String, XStorage, String, SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceInitNew", js.Any.fromFunction5(value))
   }
 }

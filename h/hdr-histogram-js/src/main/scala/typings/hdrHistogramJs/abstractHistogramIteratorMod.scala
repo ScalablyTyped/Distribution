@@ -31,10 +31,10 @@ object abstractHistogramIteratorMod {
     /* CompleteClass */
     var currentValueAtIndex: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var exhaustedSubBuckets: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var freshSubBucket: js.Any = js.native
     
     /* CompleteClass */
@@ -115,9 +115,9 @@ object abstractHistogramIteratorMod {
     
     var currentValueAtIndex: Double
     
-    var exhaustedSubBuckets: js.Any
+    /* private */ var exhaustedSubBuckets: js.Any
     
-    var freshSubBucket: js.Any
+    /* private */ var freshSubBucket: js.Any
     
     def getPercentileIteratedFrom(): Double
     
@@ -167,8 +167,7 @@ object abstractHistogramIteratorMod {
   }
   object AbstractHistogramIterator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrayTotalCount: Double,
       countAtThisValue: Double,
       currentIndex: Double,
@@ -197,77 +196,53 @@ object abstractHistogramIteratorMod {
       __obj.asInstanceOf[AbstractHistogramIterator]
     }
     
-    @scala.inline
-    implicit class AbstractHistogramIteratorMutableBuilder[Self <: AbstractHistogramIterator] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractHistogramIterator](x: Self) {
       
-      @scala.inline
-      def setArrayTotalCount(value: Double): Self = StObject.set(x, "arrayTotalCount", value.asInstanceOf[js.Any])
+      inline def setArrayTotalCount(value: Double): Self = StObject.set(x, "arrayTotalCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountAtThisValue(value: Double): Self = StObject.set(x, "countAtThisValue", value.asInstanceOf[js.Any])
+      inline def setCountAtThisValue(value: Double): Self = StObject.set(x, "countAtThisValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+      inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIterationValue(value: typings.hdrHistogramJs.histogramIterationValueMod.default): Self = StObject.set(x, "currentIterationValue", value.asInstanceOf[js.Any])
+      inline def setCurrentIterationValue(value: typings.hdrHistogramJs.histogramIterationValueMod.default): Self = StObject.set(x, "currentIterationValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentValueAtIndex(value: Double): Self = StObject.set(x, "currentValueAtIndex", value.asInstanceOf[js.Any])
+      inline def setCurrentValueAtIndex(value: Double): Self = StObject.set(x, "currentValueAtIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExhaustedSubBuckets(value: js.Any): Self = StObject.set(x, "exhaustedSubBuckets", value.asInstanceOf[js.Any])
+      inline def setExhaustedSubBuckets(value: js.Any): Self = StObject.set(x, "exhaustedSubBuckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreshSubBucket(value: js.Any): Self = StObject.set(x, "freshSubBucket", value.asInstanceOf[js.Any])
+      inline def setFreshSubBucket(value: js.Any): Self = StObject.set(x, "freshSubBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPercentileIteratedFrom(value: () => Double): Self = StObject.set(x, "getPercentileIteratedFrom", js.Any.fromFunction0(value))
+      inline def setGetPercentileIteratedFrom(value: () => Double): Self = StObject.set(x, "getPercentileIteratedFrom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPercentileIteratedTo(value: () => Double): Self = StObject.set(x, "getPercentileIteratedTo", js.Any.fromFunction0(value))
+      inline def setGetPercentileIteratedTo(value: () => Double): Self = StObject.set(x, "getPercentileIteratedTo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValueIteratedTo(value: () => Double): Self = StObject.set(x, "getValueIteratedTo", js.Any.fromFunction0(value))
+      inline def setGetValueIteratedTo(value: () => Double): Self = StObject.set(x, "getValueIteratedTo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
+      inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistogram(value: AbstractHistogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
+      inline def setHistogram(value: AbstractHistogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementIterationLevel(value: () => Unit): Self = StObject.set(x, "incrementIterationLevel", js.Any.fromFunction0(value))
+      inline def setIncrementIterationLevel(value: () => Unit): Self = StObject.set(x, "incrementIterationLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncrementSubBucket(value: () => Unit): Self = StObject.set(x, "incrementSubBucket", js.Any.fromFunction0(value))
+      inline def setIncrementSubBucket(value: () => Unit): Self = StObject.set(x, "incrementSubBucket", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: () => typings.hdrHistogramJs.histogramIterationValueMod.default): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => typings.hdrHistogramJs.histogramIterationValueMod.default): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextValueAtIndex(value: Double): Self = StObject.set(x, "nextValueAtIndex", value.asInstanceOf[js.Any])
+      inline def setNextValueAtIndex(value: Double): Self = StObject.set(x, "nextValueAtIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevValueIteratedTo(value: Double): Self = StObject.set(x, "prevValueIteratedTo", value.asInstanceOf[js.Any])
+      inline def setPrevValueIteratedTo(value: Double): Self = StObject.set(x, "prevValueIteratedTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReachedIterationLevel(value: () => Boolean): Self = StObject.set(x, "reachedIterationLevel", js.Any.fromFunction0(value))
+      inline def setReachedIterationLevel(value: () => Boolean): Self = StObject.set(x, "reachedIterationLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetIterator(value: AbstractHistogram => Unit): Self = StObject.set(x, "resetIterator", js.Any.fromFunction1(value))
+      inline def setResetIterator(value: AbstractHistogram => Unit): Self = StObject.set(x, "resetIterator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSavedHistogramTotalRawCount(value: Double): Self = StObject.set(x, "savedHistogramTotalRawCount", value.asInstanceOf[js.Any])
+      inline def setSavedHistogramTotalRawCount(value: Double): Self = StObject.set(x, "savedHistogramTotalRawCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalCountToCurrentIndex(value: Double): Self = StObject.set(x, "totalCountToCurrentIndex", value.asInstanceOf[js.Any])
+      inline def setTotalCountToCurrentIndex(value: Double): Self = StObject.set(x, "totalCountToCurrentIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalCountToPrevIndex(value: Double): Self = StObject.set(x, "totalCountToPrevIndex", value.asInstanceOf[js.Any])
+      inline def setTotalCountToPrevIndex(value: Double): Self = StObject.set(x, "totalCountToPrevIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalValueToCurrentIndex(value: Double): Self = StObject.set(x, "totalValueToCurrentIndex", value.asInstanceOf[js.Any])
+      inline def setTotalValueToCurrentIndex(value: Double): Self = StObject.set(x, "totalValueToCurrentIndex", value.asInstanceOf[js.Any])
     }
   }
 }

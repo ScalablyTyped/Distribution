@@ -12,19 +12,15 @@ trait GridSortEvent
 }
 object GridSortEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Grid): GridSortEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Grid): GridSortEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridSortEvent]
   }
   
-  @scala.inline
-  implicit class GridSortEventMutableBuilder[Self <: GridSortEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GridSortEvent](x: Self) {
     
-    @scala.inline
-    def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

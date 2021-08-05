@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FolderItemType extends StObject
 object FolderItemType {
   
-  @scala.inline
-  def FILE: typings.qlikEngineapi.qlikEngineapiStrings.FILE = "FILE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.FILE]
+  inline def FILE: typings.qlikEngineapi.qlikEngineapiStrings.FILE = "FILE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.FILE]
   
-  @scala.inline
-  def FOLDER: typings.qlikEngineapi.qlikEngineapiStrings.FOLDER = "FOLDER".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.FOLDER]
+  inline def FOLDER: typings.qlikEngineapi.qlikEngineapiStrings.FOLDER = "FOLDER".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.FOLDER]
   
-  @scala.inline
-  def OTHER: typings.qlikEngineapi.qlikEngineapiStrings.OTHER = "OTHER".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER]
+  inline def OTHER: typings.qlikEngineapi.qlikEngineapiStrings.OTHER = "OTHER".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OTHER]
 }

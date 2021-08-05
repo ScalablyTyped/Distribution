@@ -20,35 +20,26 @@ trait FunctionDeclaration
 }
 object FunctionDeclaration {
   
-  @scala.inline
-  def apply(body: js.Array[Statement], isLocal: Boolean, parameters: js.Array[Identifier | VarargLiteral]): FunctionDeclaration = {
+  inline def apply(body: js.Array[Statement], isLocal: Boolean, parameters: js.Array[Identifier | VarargLiteral]): FunctionDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isLocal = isLocal.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], identifier = null)
     __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[FunctionDeclaration]
   }
   
-  @scala.inline
-  implicit class FunctionDeclarationMutableBuilder[Self <: FunctionDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionDeclaration](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: Identifier | MemberExpression): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier | MemberExpression): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierNull: Self = StObject.set(x, "identifier", null)
+    inline def setIdentifierNull: Self = StObject.set(x, "identifier", null)
     
-    @scala.inline
-    def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
+    inline def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: js.Array[Identifier | VarargLiteral]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[Identifier | VarargLiteral]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: (Identifier | VarargLiteral)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (Identifier | VarargLiteral)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

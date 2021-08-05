@@ -18,17 +18,14 @@ object anon {
   }
   object Dictindex {
     
-    @scala.inline
-    def apply[T](length: Double): Dictindex[T] = {
+    inline def apply[T](length: Double): Dictindex[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictindex[T]]
     }
     
-    @scala.inline
-    implicit class DictindexMutableBuilder[Self <: Dictindex[?], T] (val x: Self & Dictindex[T]) extends AnyVal {
+    extension [Self <: Dictindex[?], T](x: Self & Dictindex[T]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,17 +35,14 @@ object anon {
   }
   object GetDisposable {
     
-    @scala.inline
-    def apply(getDisposable: () => IDisposable): GetDisposable = {
+    inline def apply(getDisposable: () => IDisposable): GetDisposable = {
       val __obj = js.Dynamic.literal(getDisposable = js.Any.fromFunction0(getDisposable))
       __obj.asInstanceOf[GetDisposable]
     }
     
-    @scala.inline
-    implicit class GetDisposableMutableBuilder[Self <: GetDisposable] (val x: Self) extends AnyVal {
+    extension [Self <: GetDisposable](x: Self) {
       
-      @scala.inline
-      def setGetDisposable(value: () => IDisposable): Self = StObject.set(x, "getDisposable", js.Any.fromFunction0(value))
+      inline def setGetDisposable(value: () => IDisposable): Self = StObject.set(x, "getDisposable", js.Any.fromFunction0(value))
     }
   }
   
@@ -84,8 +78,7 @@ object anon {
   }
   object Off {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       off: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit,
       on: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit
     ): Off = {
@@ -93,14 +86,11 @@ object anon {
       __obj.asInstanceOf[Off]
     }
     
-    @scala.inline
-    implicit class OffMutableBuilder[Self <: Off] (val x: Self) extends AnyVal {
+    extension [Self <: Off](x: Self) {
       
-      @scala.inline
-      def setOff(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
 }

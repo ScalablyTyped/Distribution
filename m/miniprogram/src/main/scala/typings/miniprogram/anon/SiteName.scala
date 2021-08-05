@@ -10,16 +10,13 @@ trait SiteName extends StObject {
 }
 object SiteName {
   
-  @scala.inline
-  def apply(siteName: String): SiteName = {
+  inline def apply(siteName: String): SiteName = {
     val __obj = js.Dynamic.literal(siteName = siteName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteName]
   }
   
-  @scala.inline
-  implicit class SiteNameMutableBuilder[Self <: SiteName] (val x: Self) extends AnyVal {
+  extension [Self <: SiteName](x: Self) {
     
-    @scala.inline
-    def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
+    inline def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
   }
 }

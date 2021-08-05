@@ -14,25 +14,19 @@ trait ContactInformation extends StObject {
 }
 object ContactInformation {
   
-  @scala.inline
-  def apply(): ContactInformation = {
+  inline def apply(): ContactInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactInformation]
   }
   
-  @scala.inline
-  implicit class ContactInformationMutableBuilder[Self <: ContactInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ContactInformation](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

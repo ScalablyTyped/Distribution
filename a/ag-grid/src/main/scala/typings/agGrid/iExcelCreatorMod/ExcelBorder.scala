@@ -14,22 +14,17 @@ trait ExcelBorder extends StObject {
 }
 object ExcelBorder {
   
-  @scala.inline
-  def apply(color: String, lineStyle: String, weight: Double): ExcelBorder = {
+  inline def apply(color: String, lineStyle: String, weight: Double): ExcelBorder = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], lineStyle = lineStyle.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelBorder]
   }
   
-  @scala.inline
-  implicit class ExcelBorderMutableBuilder[Self <: ExcelBorder] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: String): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: String): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

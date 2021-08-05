@@ -12,16 +12,13 @@ trait CreateAgentJobResult
 }
 object CreateAgentJobResult {
   
-  @scala.inline
-  def apply(errorMessage: String, job: AgentJobInfo, success: Boolean): CreateAgentJobResult = {
+  inline def apply(errorMessage: String, job: AgentJobInfo, success: Boolean): CreateAgentJobResult = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAgentJobResult]
   }
   
-  @scala.inline
-  implicit class CreateAgentJobResultMutableBuilder[Self <: CreateAgentJobResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAgentJobResult](x: Self) {
     
-    @scala.inline
-    def setJob(value: AgentJobInfo): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: AgentJobInfo): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }
 }

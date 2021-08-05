@@ -26,8 +26,7 @@ trait DirectLineMeasurement3DViewModelMeasurementValue
 }
 object DirectLineMeasurement3DViewModelMeasurementValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object DirectLineMeasurement3DViewModelMeasurementValue {
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurementValue]
   }
   
-  @scala.inline
-  implicit class DirectLineMeasurement3DViewModelMeasurementValueMutableBuilder[Self <: DirectLineMeasurement3DViewModelMeasurementValue] (val x: Self) extends AnyVal {
+  extension [Self <: DirectLineMeasurement3DViewModelMeasurementValue](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

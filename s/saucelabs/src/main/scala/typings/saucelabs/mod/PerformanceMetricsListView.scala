@@ -13,22 +13,17 @@ trait PerformanceMetricsListView
 }
 object PerformanceMetricsListView {
   
-  @scala.inline
-  def apply(): PerformanceMetricsListView = {
+  inline def apply(): PerformanceMetricsListView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceMetricsListView]
   }
   
-  @scala.inline
-  implicit class PerformanceMetricsListViewMutableBuilder[Self <: PerformanceMetricsListView] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceMetricsListView](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PerformanceMetricsListViewItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PerformanceMetricsListViewItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: PerformanceMetricsListViewItems*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PerformanceMetricsListViewItems*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -25,8 +25,7 @@ trait UnlinkIdentityInput extends StObject {
 }
 object UnlinkIdentityInput {
   
-  @scala.inline
-  def apply(): UnlinkIdentityInput = {
+  inline def apply(): UnlinkIdentityInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnlinkIdentityInput]
   }
@@ -35,31 +34,22 @@ object UnlinkIdentityInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: UnlinkIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: UnlinkIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class UnlinkIdentityInputMutableBuilder[Self <: UnlinkIdentityInput] (val x: Self) extends AnyVal {
+  extension [Self <: UnlinkIdentityInput](x: Self) {
     
-    @scala.inline
-    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginsToRemove(value: js.Array[String]): Self = StObject.set(x, "LoginsToRemove", value.asInstanceOf[js.Any])
+    inline def setLoginsToRemove(value: js.Array[String]): Self = StObject.set(x, "LoginsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginsToRemoveUndefined: Self = StObject.set(x, "LoginsToRemove", js.undefined)
+    inline def setLoginsToRemoveUndefined: Self = StObject.set(x, "LoginsToRemove", js.undefined)
     
-    @scala.inline
-    def setLoginsToRemoveVarargs(value: String*): Self = StObject.set(x, "LoginsToRemove", js.Array(value :_*))
+    inline def setLoginsToRemoveVarargs(value: String*): Self = StObject.set(x, "LoginsToRemove", js.Array(value :_*))
     
-    @scala.inline
-    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }
 }

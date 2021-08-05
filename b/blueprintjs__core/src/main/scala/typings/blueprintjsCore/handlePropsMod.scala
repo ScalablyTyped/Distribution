@@ -32,8 +32,7 @@ object handlePropsMod {
     @JSImport("@blueprintjs/core/lib/esm/components/slider/handleProps", "HandleInteractionKind.LOCK")
     @js.native
     def LOCK: lock = js.native
-    @scala.inline
-    def LOCK_=(x: lock): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCK")(x.asInstanceOf[js.Any])
+    inline def LOCK_=(x: lock): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCK")(x.asInstanceOf[js.Any])
     
     /**
       * Handles marked "none" are not interactive and do not appear in the UI.
@@ -42,15 +41,13 @@ object handlePropsMod {
     @JSImport("@blueprintjs/core/lib/esm/components/slider/handleProps", "HandleInteractionKind.NONE")
     @js.native
     def NONE: none = js.native
-    @scala.inline
-    def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
+    inline def NONE_=(x: none): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
     
     /** Push handles move overlapping handles with them as they are dragged. */
     @JSImport("@blueprintjs/core/lib/esm/components/slider/handleProps", "HandleInteractionKind.PUSH")
     @js.native
     def PUSH: push = js.native
-    @scala.inline
-    def PUSH_=(x: push): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUSH")(x.asInstanceOf[js.Any])
+    inline def PUSH_=(x: push): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUSH")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined {  FULL :'full',   START :'start',   END :'end'}[keyof {  FULL :'full',   START :'start',   END :'end'}] */
@@ -70,22 +67,19 @@ object handlePropsMod {
     @JSImport("@blueprintjs/core/lib/esm/components/slider/handleProps", "HandleType.END")
     @js.native
     def END: end = js.native
-    @scala.inline
-    def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+    inline def END_=(x: end): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
     
     /** A full handle appears as a small square. */
     @JSImport("@blueprintjs/core/lib/esm/components/slider/handleProps", "HandleType.FULL")
     @js.native
     def FULL: full = js.native
-    @scala.inline
-    def FULL_=(x: full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULL")(x.asInstanceOf[js.Any])
+    inline def FULL_=(x: full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULL")(x.asInstanceOf[js.Any])
     
     /** A start handle appears as the left or top half of a square. */
     @JSImport("@blueprintjs/core/lib/esm/components/slider/handleProps", "HandleType.START")
     @js.native
     def START: start = js.native
-    @scala.inline
-    def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
+    inline def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
   }
   
   trait IHandleProps
@@ -131,65 +125,46 @@ object handlePropsMod {
   }
   object IHandleProps {
     
-    @scala.inline
-    def apply(value: Double): IHandleProps = {
+    inline def apply(value: Double): IHandleProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHandleProps]
     }
     
-    @scala.inline
-    implicit class IHandlePropsMutableBuilder[Self <: IHandleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHandleProps](x: Self) {
       
-      @scala.inline
-      def setIntentAfter(value: Intent): Self = StObject.set(x, "intentAfter", value.asInstanceOf[js.Any])
+      inline def setIntentAfter(value: Intent): Self = StObject.set(x, "intentAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentAfterUndefined: Self = StObject.set(x, "intentAfter", js.undefined)
+      inline def setIntentAfterUndefined: Self = StObject.set(x, "intentAfter", js.undefined)
       
-      @scala.inline
-      def setIntentBefore(value: Intent): Self = StObject.set(x, "intentBefore", value.asInstanceOf[js.Any])
+      inline def setIntentBefore(value: Intent): Self = StObject.set(x, "intentBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentBeforeUndefined: Self = StObject.set(x, "intentBefore", js.undefined)
+      inline def setIntentBeforeUndefined: Self = StObject.set(x, "intentBefore", js.undefined)
       
-      @scala.inline
-      def setInteractionKind(value: HandleInteractionKind): Self = StObject.set(x, "interactionKind", value.asInstanceOf[js.Any])
+      inline def setInteractionKind(value: HandleInteractionKind): Self = StObject.set(x, "interactionKind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
+      inline def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* newValue */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* newValue */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnRelease(value: /* newValue */ Double => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
+      inline def setOnRelease(value: /* newValue */ Double => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
+      inline def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
       
-      @scala.inline
-      def setTrackStyleAfter(value: CSSProperties): Self = StObject.set(x, "trackStyleAfter", value.asInstanceOf[js.Any])
+      inline def setTrackStyleAfter(value: CSSProperties): Self = StObject.set(x, "trackStyleAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackStyleAfterUndefined: Self = StObject.set(x, "trackStyleAfter", js.undefined)
+      inline def setTrackStyleAfterUndefined: Self = StObject.set(x, "trackStyleAfter", js.undefined)
       
-      @scala.inline
-      def setTrackStyleBefore(value: CSSProperties): Self = StObject.set(x, "trackStyleBefore", value.asInstanceOf[js.Any])
+      inline def setTrackStyleBefore(value: CSSProperties): Self = StObject.set(x, "trackStyleBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackStyleBeforeUndefined: Self = StObject.set(x, "trackStyleBefore", js.undefined)
+      inline def setTrackStyleBeforeUndefined: Self = StObject.set(x, "trackStyleBefore", js.undefined)
       
-      @scala.inline
-      def setType(value: HandleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HandleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

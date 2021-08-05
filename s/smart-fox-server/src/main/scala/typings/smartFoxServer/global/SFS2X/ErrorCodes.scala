@@ -21,6 +21,5 @@ object ErrorCodes {
     * @param {number} code    The code of the error message to be modified.
     * @param {string} message The new error message, including the placeholders for runtime informations.
     */
-  @scala.inline
-  def setErrorMessage(code: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setErrorMessage")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setErrorMessage(code: Double, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setErrorMessage")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

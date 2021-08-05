@@ -15,6 +15,5 @@ object valueTypesMod {
   @js.native
   val auto: ValueType = js.native
   
-  @scala.inline
-  def getValueType(v: js.Any): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(v.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+  inline def getValueType(v: js.Any): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(v.asInstanceOf[js.Any]).asInstanceOf[ValueType]
 }

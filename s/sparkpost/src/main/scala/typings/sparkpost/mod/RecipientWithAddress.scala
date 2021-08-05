@@ -11,16 +11,13 @@ trait RecipientWithAddress extends StObject {
 }
 object RecipientWithAddress {
   
-  @scala.inline
-  def apply(address: Address | String): RecipientWithAddress = {
+  inline def apply(address: Address | String): RecipientWithAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientWithAddress]
   }
   
-  @scala.inline
-  implicit class RecipientWithAddressMutableBuilder[Self <: RecipientWithAddress] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientWithAddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Address | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Address | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }
 }

@@ -22,25 +22,19 @@ trait ClientAuthentication extends StObject {
 }
 object ClientAuthentication {
   
-  @scala.inline
-  def apply(): ClientAuthentication = {
+  inline def apply(): ClientAuthentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientAuthentication]
   }
   
-  @scala.inline
-  implicit class ClientAuthenticationMutableBuilder[Self <: ClientAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: ClientAuthentication](x: Self) {
     
-    @scala.inline
-    def setSasl(value: Sasl): Self = StObject.set(x, "Sasl", value.asInstanceOf[js.Any])
+    inline def setSasl(value: Sasl): Self = StObject.set(x, "Sasl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaslUndefined: Self = StObject.set(x, "Sasl", js.undefined)
+    inline def setSaslUndefined: Self = StObject.set(x, "Sasl", js.undefined)
     
-    @scala.inline
-    def setTls(value: Tls): Self = StObject.set(x, "Tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Tls): Self = StObject.set(x, "Tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "Tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "Tls", js.undefined)
   }
 }

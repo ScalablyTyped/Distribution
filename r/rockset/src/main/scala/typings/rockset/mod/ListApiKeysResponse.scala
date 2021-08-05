@@ -11,22 +11,17 @@ trait ListApiKeysResponse extends StObject {
 }
 object ListApiKeysResponse {
   
-  @scala.inline
-  def apply(): ListApiKeysResponse = {
+  inline def apply(): ListApiKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApiKeysResponse]
   }
   
-  @scala.inline
-  implicit class ListApiKeysResponseMutableBuilder[Self <: ListApiKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListApiKeysResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[ApiKey]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[ApiKey]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: ApiKey*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ApiKey*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

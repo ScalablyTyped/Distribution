@@ -11,10 +11,8 @@ object shimMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def executeAsync(fn: js.Function, retries: Retries): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAsync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def executeAsync(fn: js.Function, retries: Retries, args: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAsync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def executeAsync(fn: js.Function, retries: Retries): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAsync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def executeAsync(fn: js.Function, retries: Retries, args: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAsync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("@wdio/utils/build/shim", "executeHooksWithArgs")
   @js.native
@@ -23,8 +21,7 @@ object shimMod {
     /* args */ js.UndefOr[js.Any | js.Array[js.Any]], 
     js.Promise[js.Array[Error | js.Any]]
   ] = js.native
-  @scala.inline
-  def executeHooksWithArgs_=(
+  inline def executeHooksWithArgs_=(
     x: js.Function2[
       /* hooks */ js.UndefOr[js.Function | js.Array[js.Function]], 
       /* args */ js.UndefOr[js.Any | js.Array[js.Any]], 
@@ -33,16 +30,13 @@ object shimMod {
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("executeHooksWithArgs")(x.asInstanceOf[js.Any])
   
   /* was `typeof executeSyncFn` */
-  @scala.inline
-  def executeSync(fn: js.Function, retries: Retries): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeSync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def executeSync(fn: js.Function, retries: Retries, args: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeSync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def executeSync(fn: js.Function, retries: Retries): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeSync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def executeSync(fn: js.Function, retries: Retries, args: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeSync")(fn.asInstanceOf[js.Any], retries.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("@wdio/utils/build/shim", "hasWdioSyncSupport")
   @js.native
   def hasWdioSyncSupport: Boolean = js.native
-  @scala.inline
-  def hasWdioSyncSupport_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasWdioSyncSupport")(x.asInstanceOf[js.Any])
+  inline def hasWdioSyncSupport_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasWdioSyncSupport")(x.asInstanceOf[js.Any])
   
   @JSImport("@wdio/utils/build/shim", "runFnInFiberContext")
   @js.native
@@ -50,8 +44,7 @@ object shimMod {
     /* fn */ js.Function, 
     js.ThisFunction1[/* this */ js.Any, /* repeated */ js.Any, js.Promise[js.Any]]
   ] = js.native
-  @scala.inline
-  def runFnInFiberContext_=(
+  inline def runFnInFiberContext_=(
     x: js.Function1[
       /* fn */ js.Function, 
       js.ThisFunction1[/* this */ js.Any, /* repeated */ js.Any, js.Promise[js.Any]]
@@ -67,8 +60,7 @@ object shimMod {
     /* args */ js.Array[js.Any], 
     js.Function2[/* resolve */ js.Function, /* reject */ js.Function, js.Any]
   ] = js.native
-  @scala.inline
-  def runSync_=(
+  inline def runSync_=(
     x: js.ThisFunction3[
       /* this */ js.Any, 
       /* fn */ js.Function, 
@@ -85,8 +77,7 @@ object shimMod {
     /* fn */ js.Function, 
     js.Function1[/* args */ js.Any, js.Promise[js.Any]]
   ] = js.native
-  @scala.inline
-  def wrapCommand_=(
+  inline def wrapCommand_=(
     x: js.Function2[
       /* commandName */ String, 
       /* fn */ js.Function, 
@@ -102,20 +93,16 @@ object shimMod {
   }
   object Retries {
     
-    @scala.inline
-    def apply(attempts: Double, limit: Double): Retries = {
+    inline def apply(attempts: Double, limit: Double): Retries = {
       val __obj = js.Dynamic.literal(attempts = attempts.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Retries]
     }
     
-    @scala.inline
-    implicit class RetriesMutableBuilder[Self <: Retries] (val x: Self) extends AnyVal {
+    extension [Self <: Retries](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     }
   }
 }

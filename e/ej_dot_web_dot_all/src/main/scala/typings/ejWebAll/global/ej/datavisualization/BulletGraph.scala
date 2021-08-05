@@ -93,8 +93,7 @@ object BulletGraph {
   @JSGlobal("ej.datavisualization.BulletGraph.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.BulletGraph.Orientation")
   @js.native
@@ -184,6 +183,5 @@ object BulletGraph {
   @JSGlobal("ej.datavisualization.BulletGraph.fn")
   @js.native
   def fn: typings.ejWebAll.ej.datavisualization.BulletGraph = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.datavisualization.BulletGraph): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.datavisualization.BulletGraph): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

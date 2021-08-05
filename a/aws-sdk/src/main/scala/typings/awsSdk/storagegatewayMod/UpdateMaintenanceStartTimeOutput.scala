@@ -10,19 +10,15 @@ trait UpdateMaintenanceStartTimeOutput extends StObject {
 }
 object UpdateMaintenanceStartTimeOutput {
   
-  @scala.inline
-  def apply(): UpdateMaintenanceStartTimeOutput = {
+  inline def apply(): UpdateMaintenanceStartTimeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMaintenanceStartTimeOutput]
   }
   
-  @scala.inline
-  implicit class UpdateMaintenanceStartTimeOutputMutableBuilder[Self <: UpdateMaintenanceStartTimeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMaintenanceStartTimeOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

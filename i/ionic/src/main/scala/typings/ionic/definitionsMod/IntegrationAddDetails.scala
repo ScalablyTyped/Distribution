@@ -16,34 +16,25 @@ trait IntegrationAddDetails extends StObject {
 }
 object IntegrationAddDetails {
   
-  @scala.inline
-  def apply(env: IonicEnvironment, root: String): IntegrationAddDetails = {
+  inline def apply(env: IonicEnvironment, root: String): IntegrationAddDetails = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationAddDetails]
   }
   
-  @scala.inline
-  implicit class IntegrationAddDetailsMutableBuilder[Self <: IntegrationAddDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IntegrationAddDetails](x: Self) {
     
-    @scala.inline
-    def setEnableArgs(value: js.Array[String]): Self = StObject.set(x, "enableArgs", value.asInstanceOf[js.Any])
+    inline def setEnableArgs(value: js.Array[String]): Self = StObject.set(x, "enableArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableArgsUndefined: Self = StObject.set(x, "enableArgs", js.undefined)
+    inline def setEnableArgsUndefined: Self = StObject.set(x, "enableArgs", js.undefined)
     
-    @scala.inline
-    def setEnableArgsVarargs(value: String*): Self = StObject.set(x, "enableArgs", js.Array(value :_*))
+    inline def setEnableArgsVarargs(value: String*): Self = StObject.set(x, "enableArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+    inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+    inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

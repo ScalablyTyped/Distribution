@@ -69,82 +69,57 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension extends StObje
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension](x: Self) {
     
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setFulfillmentInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo): Self = StObject.set(x, "fulfillmentInfo", value.asInstanceOf[js.Any])
+    inline def setFulfillmentInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfo): Self = StObject.set(x, "fulfillmentInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentInfoUndefined: Self = StObject.set(x, "fulfillmentInfo", js.undefined)
+    inline def setFulfillmentInfoUndefined: Self = StObject.set(x, "fulfillmentInfo", js.undefined)
     
-    @scala.inline
-    def setItemOptions(value: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption]): Self = StObject.set(x, "itemOptions", value.asInstanceOf[js.Any])
+    inline def setItemOptions(value: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption]): Self = StObject.set(x, "itemOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemOptionsUndefined: Self = StObject.set(x, "itemOptions", js.undefined)
+    inline def setItemOptionsUndefined: Self = StObject.set(x, "itemOptions", js.undefined)
     
-    @scala.inline
-    def setItemOptionsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption*): Self = StObject.set(x, "itemOptions", js.Array(value :_*))
+    inline def setItemOptionsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption*): Self = StObject.set(x, "itemOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setProductDetails(value: GoogleActionsOrdersV3VerticalsPurchaseProductDetails): Self = StObject.set(x, "productDetails", value.asInstanceOf[js.Any])
+    inline def setProductDetails(value: GoogleActionsOrdersV3VerticalsPurchaseProductDetails): Self = StObject.set(x, "productDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDetailsUndefined: Self = StObject.set(x, "productDetails", js.undefined)
+    inline def setProductDetailsUndefined: Self = StObject.set(x, "productDetails", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setReturnsInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo): Self = StObject.set(x, "returnsInfo", value.asInstanceOf[js.Any])
+    inline def setReturnsInfo(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo): Self = StObject.set(x, "returnsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnsInfoUndefined: Self = StObject.set(x, "returnsInfo", js.undefined)
+    inline def setReturnsInfoUndefined: Self = StObject.set(x, "returnsInfo", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnitMeasure(value: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure): Self = StObject.set(x, "unitMeasure", value.asInstanceOf[js.Any])
+    inline def setUnitMeasure(value: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure): Self = StObject.set(x, "unitMeasure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitMeasureUndefined: Self = StObject.set(x, "unitMeasure", js.undefined)
+    inline def setUnitMeasureUndefined: Self = StObject.set(x, "unitMeasure", js.undefined)
     
-    @scala.inline
-    def setUserVisibleStatusLabel(value: String): Self = StObject.set(x, "userVisibleStatusLabel", value.asInstanceOf[js.Any])
+    inline def setUserVisibleStatusLabel(value: String): Self = StObject.set(x, "userVisibleStatusLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleStatusLabelUndefined: Self = StObject.set(x, "userVisibleStatusLabel", js.undefined)
+    inline def setUserVisibleStatusLabelUndefined: Self = StObject.set(x, "userVisibleStatusLabel", js.undefined)
   }
 }

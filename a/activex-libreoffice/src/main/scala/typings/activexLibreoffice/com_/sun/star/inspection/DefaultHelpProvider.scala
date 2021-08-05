@@ -26,8 +26,7 @@ trait DefaultHelpProvider
 }
 object DefaultHelpProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     create: XObjectInspectorUI => Unit,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object DefaultHelpProvider {
     __obj.asInstanceOf[DefaultHelpProvider]
   }
   
-  @scala.inline
-  implicit class DefaultHelpProviderMutableBuilder[Self <: DefaultHelpProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultHelpProvider](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XObjectInspectorUI => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XObjectInspectorUI => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

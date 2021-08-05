@@ -59,103 +59,71 @@ trait HttpRequest extends StObject {
 }
 object HttpRequest {
   
-  @scala.inline
-  def apply(): HttpRequest = {
+  inline def apply(): HttpRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpRequest]
   }
   
-  @scala.inline
-  implicit class HttpRequestMutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HttpRequest](x: Self) {
     
-    @scala.inline
-    def setCacheFillBytes(value: String): Self = StObject.set(x, "cacheFillBytes", value.asInstanceOf[js.Any])
+    inline def setCacheFillBytes(value: String): Self = StObject.set(x, "cacheFillBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheFillBytesUndefined: Self = StObject.set(x, "cacheFillBytes", js.undefined)
+    inline def setCacheFillBytesUndefined: Self = StObject.set(x, "cacheFillBytes", js.undefined)
     
-    @scala.inline
-    def setCacheHit(value: Boolean): Self = StObject.set(x, "cacheHit", value.asInstanceOf[js.Any])
+    inline def setCacheHit(value: Boolean): Self = StObject.set(x, "cacheHit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheHitUndefined: Self = StObject.set(x, "cacheHit", js.undefined)
+    inline def setCacheHitUndefined: Self = StObject.set(x, "cacheHit", js.undefined)
     
-    @scala.inline
-    def setCacheLookup(value: Boolean): Self = StObject.set(x, "cacheLookup", value.asInstanceOf[js.Any])
+    inline def setCacheLookup(value: Boolean): Self = StObject.set(x, "cacheLookup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheLookupUndefined: Self = StObject.set(x, "cacheLookup", js.undefined)
+    inline def setCacheLookupUndefined: Self = StObject.set(x, "cacheLookup", js.undefined)
     
-    @scala.inline
-    def setCacheValidatedWithOriginServer(value: Boolean): Self = StObject.set(x, "cacheValidatedWithOriginServer", value.asInstanceOf[js.Any])
+    inline def setCacheValidatedWithOriginServer(value: Boolean): Self = StObject.set(x, "cacheValidatedWithOriginServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheValidatedWithOriginServerUndefined: Self = StObject.set(x, "cacheValidatedWithOriginServer", js.undefined)
+    inline def setCacheValidatedWithOriginServerUndefined: Self = StObject.set(x, "cacheValidatedWithOriginServer", js.undefined)
     
-    @scala.inline
-    def setLatency(value: String): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: String): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
+    inline def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefererUndefined: Self = StObject.set(x, "referer", js.undefined)
+    inline def setRefererUndefined: Self = StObject.set(x, "referer", js.undefined)
     
-    @scala.inline
-    def setRemoteIp(value: String): Self = StObject.set(x, "remoteIp", value.asInstanceOf[js.Any])
+    inline def setRemoteIp(value: String): Self = StObject.set(x, "remoteIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteIpUndefined: Self = StObject.set(x, "remoteIp", js.undefined)
+    inline def setRemoteIpUndefined: Self = StObject.set(x, "remoteIp", js.undefined)
     
-    @scala.inline
-    def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
+    inline def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMethodUndefined: Self = StObject.set(x, "requestMethod", js.undefined)
+    inline def setRequestMethodUndefined: Self = StObject.set(x, "requestMethod", js.undefined)
     
-    @scala.inline
-    def setRequestSize(value: String): Self = StObject.set(x, "requestSize", value.asInstanceOf[js.Any])
+    inline def setRequestSize(value: String): Self = StObject.set(x, "requestSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestSizeUndefined: Self = StObject.set(x, "requestSize", js.undefined)
+    inline def setRequestSizeUndefined: Self = StObject.set(x, "requestSize", js.undefined)
     
-    @scala.inline
-    def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
+    inline def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
+    inline def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
     
-    @scala.inline
-    def setResponseSize(value: String): Self = StObject.set(x, "responseSize", value.asInstanceOf[js.Any])
+    inline def setResponseSize(value: String): Self = StObject.set(x, "responseSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseSizeUndefined: Self = StObject.set(x, "responseSize", js.undefined)
+    inline def setResponseSizeUndefined: Self = StObject.set(x, "responseSize", js.undefined)
     
-    @scala.inline
-    def setServerIp(value: String): Self = StObject.set(x, "serverIp", value.asInstanceOf[js.Any])
+    inline def setServerIp(value: String): Self = StObject.set(x, "serverIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerIpUndefined: Self = StObject.set(x, "serverIp", js.undefined)
+    inline def setServerIpUndefined: Self = StObject.set(x, "serverIp", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+    inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

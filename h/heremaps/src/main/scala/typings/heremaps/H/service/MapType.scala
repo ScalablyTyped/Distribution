@@ -42,67 +42,47 @@ trait MapType extends StObject {
 }
 object MapType {
   
-  @scala.inline
-  def apply(base: TileLayer, labels: TileLayer, map: TileLayer, xbase: TileLayer): MapType = {
+  inline def apply(base: TileLayer, labels: TileLayer, map: TileLayer, xbase: TileLayer): MapType = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], xbase = xbase.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapType]
   }
   
-  @scala.inline
-  implicit class MapTypeMutableBuilder[Self <: MapType] (val x: Self) extends AnyVal {
+  extension [Self <: MapType](x: Self) {
     
-    @scala.inline
-    def setBase(value: TileLayer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: TileLayer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasenight(value: TileLayer): Self = StObject.set(x, "basenight", value.asInstanceOf[js.Any])
+    inline def setBasenight(value: TileLayer): Self = StObject.set(x, "basenight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasenightNull: Self = StObject.set(x, "basenight", null)
+    inline def setBasenightNull: Self = StObject.set(x, "basenight", null)
     
-    @scala.inline
-    def setBasenightUndefined: Self = StObject.set(x, "basenight", js.undefined)
+    inline def setBasenightUndefined: Self = StObject.set(x, "basenight", js.undefined)
     
-    @scala.inline
-    def setLabels(value: TileLayer): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: TileLayer): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: TileLayer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: TileLayer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapnight(value: TileLayer): Self = StObject.set(x, "mapnight", value.asInstanceOf[js.Any])
+    inline def setMapnight(value: TileLayer): Self = StObject.set(x, "mapnight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapnightNull: Self = StObject.set(x, "mapnight", null)
+    inline def setMapnightNull: Self = StObject.set(x, "mapnight", null)
     
-    @scala.inline
-    def setMapnightUndefined: Self = StObject.set(x, "mapnight", js.undefined)
+    inline def setMapnightUndefined: Self = StObject.set(x, "mapnight", js.undefined)
     
-    @scala.inline
-    def setTrafficincidents(value: MarkerTileLayer): Self = StObject.set(x, "trafficincidents", value.asInstanceOf[js.Any])
+    inline def setTrafficincidents(value: MarkerTileLayer): Self = StObject.set(x, "trafficincidents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficincidentsNull: Self = StObject.set(x, "trafficincidents", null)
+    inline def setTrafficincidentsNull: Self = StObject.set(x, "trafficincidents", null)
     
-    @scala.inline
-    def setTrafficincidentsUndefined: Self = StObject.set(x, "trafficincidents", js.undefined)
+    inline def setTrafficincidentsUndefined: Self = StObject.set(x, "trafficincidents", js.undefined)
     
-    @scala.inline
-    def setTransit(value: TileLayer): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
+    inline def setTransit(value: TileLayer): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitUndefined: Self = StObject.set(x, "transit", js.undefined)
+    inline def setTransitUndefined: Self = StObject.set(x, "transit", js.undefined)
     
-    @scala.inline
-    def setXbase(value: TileLayer): Self = StObject.set(x, "xbase", value.asInstanceOf[js.Any])
+    inline def setXbase(value: TileLayer): Self = StObject.set(x, "xbase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXbasenight(value: TileLayer): Self = StObject.set(x, "xbasenight", value.asInstanceOf[js.Any])
+    inline def setXbasenight(value: TileLayer): Self = StObject.set(x, "xbasenight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXbasenightNull: Self = StObject.set(x, "xbasenight", null)
+    inline def setXbasenightNull: Self = StObject.set(x, "xbasenight", null)
     
-    @scala.inline
-    def setXbasenightUndefined: Self = StObject.set(x, "xbasenight", js.undefined)
+    inline def setXbasenightUndefined: Self = StObject.set(x, "xbasenight", js.undefined)
   }
 }

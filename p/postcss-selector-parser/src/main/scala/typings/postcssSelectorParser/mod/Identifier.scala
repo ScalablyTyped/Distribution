@@ -14,8 +14,7 @@ trait Identifier
 }
 object Identifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -37,10 +36,8 @@ object Identifier {
     __obj.asInstanceOf[Identifier]
   }
   
-  @scala.inline
-  implicit class IdentifierMutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
+  extension [Self <: Identifier](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.id): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.id): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

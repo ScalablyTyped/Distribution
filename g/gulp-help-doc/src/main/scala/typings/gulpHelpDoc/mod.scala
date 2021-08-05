@@ -49,44 +49,32 @@ object mod extends Shortcut {
   }
   object UsageOptions {
     
-    @scala.inline
-    def apply(): UsageOptions = {
+    inline def apply(): UsageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsageOptions]
     }
     
-    @scala.inline
-    implicit class UsageOptionsMutableBuilder[Self <: UsageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UsageOptions](x: Self) {
       
-      @scala.inline
-      def setGulpfile(value: String): Self = StObject.set(x, "gulpfile", value.asInstanceOf[js.Any])
+      inline def setGulpfile(value: String): Self = StObject.set(x, "gulpfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGulpfileUndefined: Self = StObject.set(x, "gulpfile", js.undefined)
+      inline def setGulpfileUndefined: Self = StObject.set(x, "gulpfile", js.undefined)
       
-      @scala.inline
-      def setKeysColumnWidth(value: Double): Self = StObject.set(x, "keysColumnWidth", value.asInstanceOf[js.Any])
+      inline def setKeysColumnWidth(value: Double): Self = StObject.set(x, "keysColumnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysColumnWidthUndefined: Self = StObject.set(x, "keysColumnWidth", js.undefined)
+      inline def setKeysColumnWidthUndefined: Self = StObject.set(x, "keysColumnWidth", js.undefined)
       
-      @scala.inline
-      def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+      inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+      inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
   

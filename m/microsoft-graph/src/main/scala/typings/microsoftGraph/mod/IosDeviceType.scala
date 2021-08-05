@@ -14,25 +14,19 @@ trait IosDeviceType extends StObject {
 }
 object IosDeviceType {
   
-  @scala.inline
-  def apply(): IosDeviceType = {
+  inline def apply(): IosDeviceType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosDeviceType]
   }
   
-  @scala.inline
-  implicit class IosDeviceTypeMutableBuilder[Self <: IosDeviceType] (val x: Self) extends AnyVal {
+  extension [Self <: IosDeviceType](x: Self) {
     
-    @scala.inline
-    def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
+    inline def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPadUndefined: Self = StObject.set(x, "iPad", js.undefined)
+    inline def setIPadUndefined: Self = StObject.set(x, "iPad", js.undefined)
     
-    @scala.inline
-    def setIPhoneAndIPod(value: Boolean): Self = StObject.set(x, "iPhoneAndIPod", value.asInstanceOf[js.Any])
+    inline def setIPhoneAndIPod(value: Boolean): Self = StObject.set(x, "iPhoneAndIPod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPhoneAndIPodUndefined: Self = StObject.set(x, "iPhoneAndIPod", js.undefined)
+    inline def setIPhoneAndIPodUndefined: Self = StObject.set(x, "iPhoneAndIPod", js.undefined)
   }
 }

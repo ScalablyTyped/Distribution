@@ -10,19 +10,15 @@ trait SchemaSecurityPoliciesWafConfig extends StObject {
 }
 object SchemaSecurityPoliciesWafConfig {
   
-  @scala.inline
-  def apply(): SchemaSecurityPoliciesWafConfig = {
+  inline def apply(): SchemaSecurityPoliciesWafConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPoliciesWafConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPoliciesWafConfigMutableBuilder[Self <: SchemaSecurityPoliciesWafConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPoliciesWafConfig](x: Self) {
     
-    @scala.inline
-    def setWafRules(value: SchemaPreconfiguredWafSet): Self = StObject.set(x, "wafRules", value.asInstanceOf[js.Any])
+    inline def setWafRules(value: SchemaPreconfiguredWafSet): Self = StObject.set(x, "wafRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWafRulesUndefined: Self = StObject.set(x, "wafRules", js.undefined)
+    inline def setWafRulesUndefined: Self = StObject.set(x, "wafRules", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait ObjectWrapper
 }
 object ObjectWrapper {
   
-  @scala.inline
-  def apply(handle: NativePointer): ObjectWrapper = {
+  inline def apply(handle: NativePointer): ObjectWrapper = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectWrapper]
   }
   
-  @scala.inline
-  implicit class ObjectWrapperMutableBuilder[Self <: ObjectWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectWrapper](x: Self) {
     
-    @scala.inline
-    def setHandle(value: NativePointer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: NativePointer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }
 }

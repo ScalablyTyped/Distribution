@@ -28,34 +28,25 @@ trait GetUsagePlanKeysRequest extends StObject {
 }
 object GetUsagePlanKeysRequest {
   
-  @scala.inline
-  def apply(usagePlanId: String): GetUsagePlanKeysRequest = {
+  inline def apply(usagePlanId: String): GetUsagePlanKeysRequest = {
     val __obj = js.Dynamic.literal(usagePlanId = usagePlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsagePlanKeysRequest]
   }
   
-  @scala.inline
-  implicit class GetUsagePlanKeysRequestMutableBuilder[Self <: GetUsagePlanKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsagePlanKeysRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNameQuery(value: String): Self = StObject.set(x, "nameQuery", value.asInstanceOf[js.Any])
+    inline def setNameQuery(value: String): Self = StObject.set(x, "nameQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameQueryUndefined: Self = StObject.set(x, "nameQuery", js.undefined)
+    inline def setNameQueryUndefined: Self = StObject.set(x, "nameQuery", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+    inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }
 }

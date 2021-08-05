@@ -33,8 +33,7 @@ trait String extends StObject {
 }
 object String {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endsWith: java.lang.String => Boolean,
     trim: () => java.lang.String,
     trimEnd: () => java.lang.String,
@@ -44,19 +43,14 @@ object String {
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setEndsWith(value: java.lang.String => Boolean): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
+    inline def setEndsWith(value: java.lang.String => Boolean): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrim(value: () => java.lang.String): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
+    inline def setTrim(value: () => java.lang.String): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrimEnd(value: () => java.lang.String): Self = StObject.set(x, "trimEnd", js.Any.fromFunction0(value))
+    inline def setTrimEnd(value: () => java.lang.String): Self = StObject.set(x, "trimEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrimStart(value: () => java.lang.String): Self = StObject.set(x, "trimStart", js.Any.fromFunction0(value))
+    inline def setTrimStart(value: () => java.lang.String): Self = StObject.set(x, "trimStart", js.Any.fromFunction0(value))
   }
 }

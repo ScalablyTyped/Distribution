@@ -12,25 +12,19 @@ trait WorkflowConfigurationOptions extends StObject {
 }
 object WorkflowConfigurationOptions {
   
-  @scala.inline
-  def apply(): WorkflowConfigurationOptions = {
+  inline def apply(): WorkflowConfigurationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkflowConfigurationOptions]
   }
   
-  @scala.inline
-  implicit class WorkflowConfigurationOptionsMutableBuilder[Self <: WorkflowConfigurationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowConfigurationOptions](x: Self) {
     
-    @scala.inline
-    def setTaskRouting(value: TaskRoutingConfigurationOptions): Self = StObject.set(x, "taskRouting", value.asInstanceOf[js.Any])
+    inline def setTaskRouting(value: TaskRoutingConfigurationOptions): Self = StObject.set(x, "taskRouting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRoutingUndefined: Self = StObject.set(x, "taskRouting", js.undefined)
+    inline def setTaskRoutingUndefined: Self = StObject.set(x, "taskRouting", js.undefined)
     
-    @scala.inline
-    def setTask_routing(value: TaskRoutingConfigurationOptions): Self = StObject.set(x, "task_routing", value.asInstanceOf[js.Any])
+    inline def setTask_routing(value: TaskRoutingConfigurationOptions): Self = StObject.set(x, "task_routing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask_routingUndefined: Self = StObject.set(x, "task_routing", js.undefined)
+    inline def setTask_routingUndefined: Self = StObject.set(x, "task_routing", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ trait ViewSettings
 }
 object ViewSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     ShowHoriRuler: Boolean,
     ShowHoriScrollBar: Boolean,
@@ -54,22 +53,16 @@ object ViewSettings {
     __obj.asInstanceOf[ViewSettings]
   }
   
-  @scala.inline
-  implicit class ViewSettingsMutableBuilder[Self <: ViewSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ViewSettings](x: Self) {
     
-    @scala.inline
-    def setShowHoriRuler(value: Boolean): Self = StObject.set(x, "ShowHoriRuler", value.asInstanceOf[js.Any])
+    inline def setShowHoriRuler(value: Boolean): Self = StObject.set(x, "ShowHoriRuler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHoriScrollBar(value: Boolean): Self = StObject.set(x, "ShowHoriScrollBar", value.asInstanceOf[js.Any])
+    inline def setShowHoriScrollBar(value: Boolean): Self = StObject.set(x, "ShowHoriScrollBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowVertRuler(value: Boolean): Self = StObject.set(x, "ShowVertRuler", value.asInstanceOf[js.Any])
+    inline def setShowVertRuler(value: Boolean): Self = StObject.set(x, "ShowVertRuler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowVertScrollBar(value: Boolean): Self = StObject.set(x, "ShowVertScrollBar", value.asInstanceOf[js.Any])
+    inline def setShowVertScrollBar(value: Boolean): Self = StObject.set(x, "ShowVertScrollBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
+    inline def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
   }
 }

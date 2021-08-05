@@ -13,19 +13,15 @@ trait ContainerTaskSpec
 }
 object ContainerTaskSpec {
   
-  @scala.inline
-  def apply(): ContainerTaskSpec = {
+  inline def apply(): ContainerTaskSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerTaskSpec]
   }
   
-  @scala.inline
-  implicit class ContainerTaskSpecMutableBuilder[Self <: ContainerTaskSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerTaskSpec](x: Self) {
     
-    @scala.inline
-    def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "ContainerSpec", value.asInstanceOf[js.Any])
+    inline def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "ContainerSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerSpecUndefined: Self = StObject.set(x, "ContainerSpec", js.undefined)
+    inline def setContainerSpecUndefined: Self = StObject.set(x, "ContainerSpec", js.undefined)
   }
 }

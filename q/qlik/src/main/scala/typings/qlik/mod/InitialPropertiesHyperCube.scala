@@ -14,16 +14,13 @@ trait InitialPropertiesHyperCube
 }
 object InitialPropertiesHyperCube {
   
-  @scala.inline
-  def apply(qHyperCubeDef: HyperCubeDef): InitialPropertiesHyperCube = {
+  inline def apply(qHyperCubeDef: HyperCubeDef): InitialPropertiesHyperCube = {
     val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialPropertiesHyperCube]
   }
   
-  @scala.inline
-  implicit class InitialPropertiesHyperCubeMutableBuilder[Self <: InitialPropertiesHyperCube] (val x: Self) extends AnyVal {
+  extension [Self <: InitialPropertiesHyperCube](x: Self) {
     
-    @scala.inline
-    def setQHyperCubeDef(value: HyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
+    inline def setQHyperCubeDef(value: HyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
   }
 }

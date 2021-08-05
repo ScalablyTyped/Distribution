@@ -14,8 +14,7 @@ trait QuoteSingle
 }
 object QuoteSingle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -28,10 +27,8 @@ object QuoteSingle {
     __obj.asInstanceOf[QuoteSingle]
   }
   
-  @scala.inline
-  implicit class QuoteSingleMutableBuilder[Self <: QuoteSingle] (val x: Self) extends AnyVal {
+  extension [Self <: QuoteSingle](x: Self) {
     
-    @scala.inline
-    def setType(value: QUOTE_SINGLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: QUOTE_SINGLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

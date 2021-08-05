@@ -18,25 +18,19 @@ trait GetRateBasedStatementManagedKeysResponse extends StObject {
 }
 object GetRateBasedStatementManagedKeysResponse {
   
-  @scala.inline
-  def apply(): GetRateBasedStatementManagedKeysResponse = {
+  inline def apply(): GetRateBasedStatementManagedKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRateBasedStatementManagedKeysResponse]
   }
   
-  @scala.inline
-  implicit class GetRateBasedStatementManagedKeysResponseMutableBuilder[Self <: GetRateBasedStatementManagedKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRateBasedStatementManagedKeysResponse](x: Self) {
     
-    @scala.inline
-    def setManagedKeysIPV4(value: RateBasedStatementManagedKeysIPSet): Self = StObject.set(x, "ManagedKeysIPV4", value.asInstanceOf[js.Any])
+    inline def setManagedKeysIPV4(value: RateBasedStatementManagedKeysIPSet): Self = StObject.set(x, "ManagedKeysIPV4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedKeysIPV4Undefined: Self = StObject.set(x, "ManagedKeysIPV4", js.undefined)
+    inline def setManagedKeysIPV4Undefined: Self = StObject.set(x, "ManagedKeysIPV4", js.undefined)
     
-    @scala.inline
-    def setManagedKeysIPV6(value: RateBasedStatementManagedKeysIPSet): Self = StObject.set(x, "ManagedKeysIPV6", value.asInstanceOf[js.Any])
+    inline def setManagedKeysIPV6(value: RateBasedStatementManagedKeysIPSet): Self = StObject.set(x, "ManagedKeysIPV6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedKeysIPV6Undefined: Self = StObject.set(x, "ManagedKeysIPV6", js.undefined)
+    inline def setManagedKeysIPV6Undefined: Self = StObject.set(x, "ManagedKeysIPV6", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait FloodlightConfigurationsListResponse extends StObject {
 }
 object FloodlightConfigurationsListResponse {
   
-  @scala.inline
-  def apply(): FloodlightConfigurationsListResponse = {
+  inline def apply(): FloodlightConfigurationsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloodlightConfigurationsListResponse]
   }
   
-  @scala.inline
-  implicit class FloodlightConfigurationsListResponseMutableBuilder[Self <: FloodlightConfigurationsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FloodlightConfigurationsListResponse](x: Self) {
     
-    @scala.inline
-    def setFloodlightConfigurations(value: js.Array[FloodlightConfiguration]): Self = StObject.set(x, "floodlightConfigurations", value.asInstanceOf[js.Any])
+    inline def setFloodlightConfigurations(value: js.Array[FloodlightConfiguration]): Self = StObject.set(x, "floodlightConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightConfigurationsUndefined: Self = StObject.set(x, "floodlightConfigurations", js.undefined)
+    inline def setFloodlightConfigurationsUndefined: Self = StObject.set(x, "floodlightConfigurations", js.undefined)
     
-    @scala.inline
-    def setFloodlightConfigurationsVarargs(value: FloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value :_*))
+    inline def setFloodlightConfigurationsVarargs(value: FloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

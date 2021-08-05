@@ -24,26 +24,20 @@ object panelMod extends Shortcut {
   }
   object SafeTabProps {
     
-    @scala.inline
-    def apply(children: ReactElement, id: String, title: js.Function0[String] | String): SafeTabProps = {
+    inline def apply(children: ReactElement, id: String, title: js.Function0[String] | String): SafeTabProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[SafeTabProps]
     }
     
-    @scala.inline
-    implicit class SafeTabPropsMutableBuilder[Self <: SafeTabProps] (val x: Self) extends AnyVal {
+    extension [Self <: SafeTabProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: js.Function0[String] | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: js.Function0[String] | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFunction0(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+      inline def setTitleFunction0(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
     }
   }
   

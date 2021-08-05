@@ -107,8 +107,7 @@ object mod {
   @js.native
   val fromUint8Array: js.Function2[/* uint8Array */ Uint8Array, /* uriSafe */ js.UndefOr[Boolean], String] = js.native
   
-  @scala.inline
-  def noConflict(): typings.jsBase64.mod.Base64 = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.jsBase64.mod.Base64]
+  inline def noConflict(): typings.jsBase64.mod.Base64 = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.jsBase64.mod.Base64]
   
   @JSImport("js-base64", "toBase64")
   @js.native

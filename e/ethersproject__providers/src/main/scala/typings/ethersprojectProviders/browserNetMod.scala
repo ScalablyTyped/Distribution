@@ -10,6 +10,5 @@ object browserNetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Unit]
+  inline def connect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Unit]
 }

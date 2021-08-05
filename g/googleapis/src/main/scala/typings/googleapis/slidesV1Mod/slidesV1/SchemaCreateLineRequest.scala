@@ -47,37 +47,27 @@ trait SchemaCreateLineRequest extends StObject {
 }
 object SchemaCreateLineRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateLineRequest = {
+  inline def apply(): SchemaCreateLineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateLineRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateLineRequestMutableBuilder[Self <: SchemaCreateLineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateLineRequest](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setElementProperties(value: SchemaPageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+    inline def setElementProperties(value: SchemaPageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+    inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
     
-    @scala.inline
-    def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
+    inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
+    inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

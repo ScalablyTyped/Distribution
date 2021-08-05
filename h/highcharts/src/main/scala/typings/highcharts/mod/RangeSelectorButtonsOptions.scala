@@ -53,61 +53,43 @@ trait RangeSelectorButtonsOptions extends StObject {
 }
 object RangeSelectorButtonsOptions {
   
-  @scala.inline
-  def apply(): RangeSelectorButtonsOptions = {
+  inline def apply(): RangeSelectorButtonsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeSelectorButtonsOptions]
   }
   
-  @scala.inline
-  implicit class RangeSelectorButtonsOptionsMutableBuilder[Self <: RangeSelectorButtonsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeSelectorButtonsOptions](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
+    inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
+    inline def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
     
-    @scala.inline
-    def setEvents(value: RangeSelectorButtonsEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: RangeSelectorButtonsEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setOffsetMax(value: Double): Self = StObject.set(x, "offsetMax", value.asInstanceOf[js.Any])
+    inline def setOffsetMax(value: Double): Self = StObject.set(x, "offsetMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetMaxUndefined: Self = StObject.set(x, "offsetMax", js.undefined)
+    inline def setOffsetMaxUndefined: Self = StObject.set(x, "offsetMax", js.undefined)
     
-    @scala.inline
-    def setOffsetMin(value: Double): Self = StObject.set(x, "offsetMin", value.asInstanceOf[js.Any])
+    inline def setOffsetMin(value: Double): Self = StObject.set(x, "offsetMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetMinUndefined: Self = StObject.set(x, "offsetMin", js.undefined)
+    inline def setOffsetMinUndefined: Self = StObject.set(x, "offsetMin", js.undefined)
     
-    @scala.inline
-    def setPreserveDataGrouping(value: Boolean): Self = StObject.set(x, "preserveDataGrouping", value.asInstanceOf[js.Any])
+    inline def setPreserveDataGrouping(value: Boolean): Self = StObject.set(x, "preserveDataGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveDataGroupingUndefined: Self = StObject.set(x, "preserveDataGrouping", js.undefined)
+    inline def setPreserveDataGroupingUndefined: Self = StObject.set(x, "preserveDataGrouping", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: RangeSelectorButtonTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RangeSelectorButtonTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait BrowserLegacy extends StObject {
 }
 object BrowserLegacy {
   
-  @scala.inline
-  def apply(bBounding: Boolean, bScrollOversize: Boolean, bScrollbarLeft: Boolean, barWidth: Double): BrowserLegacy = {
+  inline def apply(bBounding: Boolean, bScrollOversize: Boolean, bScrollbarLeft: Boolean, barWidth: Double): BrowserLegacy = {
     val __obj = js.Dynamic.literal(bBounding = bBounding.asInstanceOf[js.Any], bScrollOversize = bScrollOversize.asInstanceOf[js.Any], bScrollbarLeft = bScrollbarLeft.asInstanceOf[js.Any], barWidth = barWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserLegacy]
   }
   
-  @scala.inline
-  implicit class BrowserLegacyMutableBuilder[Self <: BrowserLegacy] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserLegacy](x: Self) {
     
-    @scala.inline
-    def setBBounding(value: Boolean): Self = StObject.set(x, "bBounding", value.asInstanceOf[js.Any])
+    inline def setBBounding(value: Boolean): Self = StObject.set(x, "bBounding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBScrollOversize(value: Boolean): Self = StObject.set(x, "bScrollOversize", value.asInstanceOf[js.Any])
+    inline def setBScrollOversize(value: Boolean): Self = StObject.set(x, "bScrollOversize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBScrollbarLeft(value: Boolean): Self = StObject.set(x, "bScrollbarLeft", value.asInstanceOf[js.Any])
+    inline def setBScrollbarLeft(value: Boolean): Self = StObject.set(x, "bScrollbarLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
+    inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait SceneViewHitTestResultResults
 }
 object SceneViewHitTestResultResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     distance: Double,
     graphic: Graphic,
@@ -46,16 +45,12 @@ object SceneViewHitTestResultResults {
     __obj.asInstanceOf[SceneViewHitTestResultResults]
   }
   
-  @scala.inline
-  implicit class SceneViewHitTestResultResultsMutableBuilder[Self <: SceneViewHitTestResultResults] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewHitTestResultResults](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
+    inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
   }
 }

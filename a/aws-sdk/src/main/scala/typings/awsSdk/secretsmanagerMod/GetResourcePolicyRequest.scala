@@ -13,16 +13,13 @@ trait GetResourcePolicyRequest extends StObject {
 }
 object GetResourcePolicyRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): GetResourcePolicyRequest = {
+  inline def apply(SecretId: SecretIdType): GetResourcePolicyRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcePolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetResourcePolicyRequestMutableBuilder[Self <: GetResourcePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourcePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

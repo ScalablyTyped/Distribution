@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Responsive extends StObject
 object Responsive {
   
-  @scala.inline
-  def simple: typings.muiDatatables.muiDatatablesStrings.simple = "simple".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.simple]
+  inline def simple: typings.muiDatatables.muiDatatablesStrings.simple = "simple".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.simple]
   
-  @scala.inline
-  def standard: typings.muiDatatables.muiDatatablesStrings.standard = "standard".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.standard]
+  inline def standard: typings.muiDatatables.muiDatatablesStrings.standard = "standard".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.standard]
   
-  @scala.inline
-  def vertical: typings.muiDatatables.muiDatatablesStrings.vertical = "vertical".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.vertical]
+  inline def vertical: typings.muiDatatables.muiDatatablesStrings.vertical = "vertical".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.vertical]
 }

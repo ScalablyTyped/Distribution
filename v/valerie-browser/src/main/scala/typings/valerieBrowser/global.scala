@@ -13,8 +13,7 @@ object global {
   @JSGlobal("valerie")
   @js.native
   def valerie: Static = js.native
-  @scala.inline
-  def valerie_=(x: Static): Unit = js.Dynamic.global.updateDynamic("valerie")(x.asInstanceOf[js.Any])
+  inline def valerie_=(x: Static): Unit = js.Dynamic.global.updateDynamic("valerie")(x.asInstanceOf[js.Any])
   
   // additional types for Valerie (all inside this namespace)
   object Valerie_

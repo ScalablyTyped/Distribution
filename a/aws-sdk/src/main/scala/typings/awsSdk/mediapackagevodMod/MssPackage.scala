@@ -20,31 +20,23 @@ trait MssPackage extends StObject {
 }
 object MssPackage {
   
-  @scala.inline
-  def apply(MssManifests: listOfMssManifest): MssPackage = {
+  inline def apply(MssManifests: listOfMssManifest): MssPackage = {
     val __obj = js.Dynamic.literal(MssManifests = MssManifests.asInstanceOf[js.Any])
     __obj.asInstanceOf[MssPackage]
   }
   
-  @scala.inline
-  implicit class MssPackageMutableBuilder[Self <: MssPackage] (val x: Self) extends AnyVal {
+  extension [Self <: MssPackage](x: Self) {
     
-    @scala.inline
-    def setEncryption(value: MssEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: MssEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setMssManifests(value: listOfMssManifest): Self = StObject.set(x, "MssManifests", value.asInstanceOf[js.Any])
+    inline def setMssManifests(value: listOfMssManifest): Self = StObject.set(x, "MssManifests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMssManifestsVarargs(value: MssManifest*): Self = StObject.set(x, "MssManifests", js.Array(value :_*))
+    inline def setMssManifestsVarargs(value: MssManifest*): Self = StObject.set(x, "MssManifests", js.Array(value :_*))
     
-    @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
+    inline def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
   }
 }

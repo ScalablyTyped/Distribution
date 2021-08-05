@@ -81,8 +81,7 @@ trait XConversionDictionaryList
 }
 object XConversionDictionaryList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DictionaryContainer: XNameContainer,
     acquire: () => Unit,
     addNewDictionary: (String, Locale, Double) => XConversionDictionary,
@@ -96,22 +95,16 @@ object XConversionDictionaryList {
     __obj.asInstanceOf[XConversionDictionaryList]
   }
   
-  @scala.inline
-  implicit class XConversionDictionaryListMutableBuilder[Self <: XConversionDictionaryList] (val x: Self) extends AnyVal {
+  extension [Self <: XConversionDictionaryList](x: Self) {
     
-    @scala.inline
-    def setAddNewDictionary(value: (String, Locale, Double) => XConversionDictionary): Self = StObject.set(x, "addNewDictionary", js.Any.fromFunction3(value))
+    inline def setAddNewDictionary(value: (String, Locale, Double) => XConversionDictionary): Self = StObject.set(x, "addNewDictionary", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDictionaryContainer(value: XNameContainer): Self = StObject.set(x, "DictionaryContainer", value.asInstanceOf[js.Any])
+    inline def setDictionaryContainer(value: XNameContainer): Self = StObject.set(x, "DictionaryContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDictionaryContainer(value: () => XNameContainer): Self = StObject.set(x, "getDictionaryContainer", js.Any.fromFunction0(value))
+    inline def setGetDictionaryContainer(value: () => XNameContainer): Self = StObject.set(x, "getDictionaryContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryConversions(value: (String, Double, Double, Locale, Double, ConversionDirection, Double) => SafeArray[String]): Self = StObject.set(x, "queryConversions", js.Any.fromFunction7(value))
+    inline def setQueryConversions(value: (String, Double, Double, Locale, Double, ConversionDirection, Double) => SafeArray[String]): Self = StObject.set(x, "queryConversions", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setQueryMaxCharCount(value: (Locale, Double, ConversionDirection) => Double): Self = StObject.set(x, "queryMaxCharCount", js.Any.fromFunction3(value))
+    inline def setQueryMaxCharCount(value: (Locale, Double, ConversionDirection) => Double): Self = StObject.set(x, "queryMaxCharCount", js.Any.fromFunction3(value))
   }
 }

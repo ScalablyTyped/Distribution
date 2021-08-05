@@ -12,20 +12,16 @@ trait Mids extends StObject {
 }
 object Mids {
   
-  @scala.inline
-  def apply(mids: String, `type`: String): Mids = {
+  inline def apply(mids: String, `type`: String): Mids = {
     val __obj = js.Dynamic.literal(mids = mids.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mids]
   }
   
-  @scala.inline
-  implicit class MidsMutableBuilder[Self <: Mids] (val x: Self) extends AnyVal {
+  extension [Self <: Mids](x: Self) {
     
-    @scala.inline
-    def setMids(value: String): Self = StObject.set(x, "mids", value.asInstanceOf[js.Any])
+    inline def setMids(value: String): Self = StObject.set(x, "mids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

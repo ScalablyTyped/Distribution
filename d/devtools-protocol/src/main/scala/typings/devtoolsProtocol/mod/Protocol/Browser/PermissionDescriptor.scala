@@ -35,40 +35,29 @@ trait PermissionDescriptor extends StObject {
 }
 object PermissionDescriptor {
   
-  @scala.inline
-  def apply(name: String): PermissionDescriptor = {
+  inline def apply(name: String): PermissionDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionDescriptor]
   }
   
-  @scala.inline
-  implicit class PermissionDescriptorMutableBuilder[Self <: PermissionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionDescriptor](x: Self) {
     
-    @scala.inline
-    def setAllowWithoutSanitization(value: Boolean): Self = StObject.set(x, "allowWithoutSanitization", value.asInstanceOf[js.Any])
+    inline def setAllowWithoutSanitization(value: Boolean): Self = StObject.set(x, "allowWithoutSanitization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowWithoutSanitizationUndefined: Self = StObject.set(x, "allowWithoutSanitization", js.undefined)
+    inline def setAllowWithoutSanitizationUndefined: Self = StObject.set(x, "allowWithoutSanitization", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanTiltZoom(value: Boolean): Self = StObject.set(x, "panTiltZoom", value.asInstanceOf[js.Any])
+    inline def setPanTiltZoom(value: Boolean): Self = StObject.set(x, "panTiltZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanTiltZoomUndefined: Self = StObject.set(x, "panTiltZoom", js.undefined)
+    inline def setPanTiltZoomUndefined: Self = StObject.set(x, "panTiltZoom", js.undefined)
     
-    @scala.inline
-    def setSysex(value: Boolean): Self = StObject.set(x, "sysex", value.asInstanceOf[js.Any])
+    inline def setSysex(value: Boolean): Self = StObject.set(x, "sysex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSysexUndefined: Self = StObject.set(x, "sysex", js.undefined)
+    inline def setSysexUndefined: Self = StObject.set(x, "sysex", js.undefined)
     
-    @scala.inline
-    def setUserVisibleOnly(value: Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
+    inline def setUserVisibleOnly(value: Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
+    inline def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
   }
 }

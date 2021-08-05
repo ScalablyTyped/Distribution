@@ -20,8 +20,7 @@ trait FileReaderEventMap extends StObject {
 }
 object FileReaderEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: ProgressEvent[FileReader],
     error: ProgressEvent[FileReader],
     load: ProgressEvent[FileReader],
@@ -33,25 +32,18 @@ object FileReaderEventMap {
     __obj.asInstanceOf[FileReaderEventMap]
   }
   
-  @scala.inline
-  implicit class FileReaderEventMapMutableBuilder[Self <: FileReaderEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: FileReaderEventMap](x: Self) {
     
-    @scala.inline
-    def setAbort(value: ProgressEvent[FileReader]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    inline def setAbort(value: ProgressEvent[FileReader]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: ProgressEvent[FileReader]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ProgressEvent[FileReader]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: ProgressEvent[FileReader]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: ProgressEvent[FileReader]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadend(value: ProgressEvent[FileReader]): Self = StObject.set(x, "loadend", value.asInstanceOf[js.Any])
+    inline def setLoadend(value: ProgressEvent[FileReader]): Self = StObject.set(x, "loadend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadstart(value: ProgressEvent[FileReader]): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
+    inline def setLoadstart(value: ProgressEvent[FileReader]): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: ProgressEvent[FileReader]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: ProgressEvent[FileReader]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

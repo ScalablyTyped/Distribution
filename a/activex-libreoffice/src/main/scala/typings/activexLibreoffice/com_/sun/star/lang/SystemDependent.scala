@@ -27,28 +27,20 @@ object SystemDependent {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def SYSTEM_ANDROID: `8` = 8.asInstanceOf[`8`]
+    inline def SYSTEM_ANDROID: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def SYSTEM_IOS: `7` = 7.asInstanceOf[`7`]
+    inline def SYSTEM_IOS: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def SYSTEM_JAVA: `3` = 3.asInstanceOf[`3`]
+    inline def SYSTEM_JAVA: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def SYSTEM_MAC: `5` = 5.asInstanceOf[`5`]
+    inline def SYSTEM_MAC: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def SYSTEM_OS2: `4` = 4.asInstanceOf[`4`]
+    inline def SYSTEM_OS2: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def SYSTEM_WIN16: `2` = 2.asInstanceOf[`2`]
+    inline def SYSTEM_WIN16: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SYSTEM_WIN32: `1` = 1.asInstanceOf[`1`]
+    inline def SYSTEM_WIN32: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SYSTEM_XWINDOW: `6` = 6.asInstanceOf[`6`]
+    inline def SYSTEM_XWINDOW: `6` = 6.asInstanceOf[`6`]
   }
 }

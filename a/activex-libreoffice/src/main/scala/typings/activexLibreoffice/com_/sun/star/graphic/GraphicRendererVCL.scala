@@ -36,8 +36,7 @@ trait GraphicRendererVCL
 }
 object GraphicRendererVCL {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestinationRect: Rectangle,
     Device: js.Any,
     PropertySetInfo: XPropertySetInfo,
@@ -58,16 +57,12 @@ object GraphicRendererVCL {
     __obj.asInstanceOf[GraphicRendererVCL]
   }
   
-  @scala.inline
-  implicit class GraphicRendererVCLMutableBuilder[Self <: GraphicRendererVCL] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicRendererVCL](x: Self) {
     
-    @scala.inline
-    def setDestinationRect(value: Rectangle): Self = StObject.set(x, "DestinationRect", value.asInstanceOf[js.Any])
+    inline def setDestinationRect(value: Rectangle): Self = StObject.set(x, "DestinationRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: js.Any): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: js.Any): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderData(value: js.Any): Self = StObject.set(x, "RenderData", value.asInstanceOf[js.Any])
+    inline def setRenderData(value: js.Any): Self = StObject.set(x, "RenderData", value.asInstanceOf[js.Any])
   }
 }

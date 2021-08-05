@@ -22,43 +22,31 @@ trait RemoteAssistancePartner
 }
 object RemoteAssistancePartner {
   
-  @scala.inline
-  def apply(): RemoteAssistancePartner = {
+  inline def apply(): RemoteAssistancePartner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoteAssistancePartner]
   }
   
-  @scala.inline
-  implicit class RemoteAssistancePartnerMutableBuilder[Self <: RemoteAssistancePartner] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteAssistancePartner](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLastConnectionDateTime(value: String): Self = StObject.set(x, "lastConnectionDateTime", value.asInstanceOf[js.Any])
+    inline def setLastConnectionDateTime(value: String): Self = StObject.set(x, "lastConnectionDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastConnectionDateTimeUndefined: Self = StObject.set(x, "lastConnectionDateTime", js.undefined)
+    inline def setLastConnectionDateTimeUndefined: Self = StObject.set(x, "lastConnectionDateTime", js.undefined)
     
-    @scala.inline
-    def setOnboardingStatus(value: RemoteAssistanceOnboardingStatus): Self = StObject.set(x, "onboardingStatus", value.asInstanceOf[js.Any])
+    inline def setOnboardingStatus(value: RemoteAssistanceOnboardingStatus): Self = StObject.set(x, "onboardingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnboardingStatusUndefined: Self = StObject.set(x, "onboardingStatus", js.undefined)
+    inline def setOnboardingStatusUndefined: Self = StObject.set(x, "onboardingStatus", js.undefined)
     
-    @scala.inline
-    def setOnboardingUrl(value: NullableOption[String]): Self = StObject.set(x, "onboardingUrl", value.asInstanceOf[js.Any])
+    inline def setOnboardingUrl(value: NullableOption[String]): Self = StObject.set(x, "onboardingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnboardingUrlNull: Self = StObject.set(x, "onboardingUrl", null)
+    inline def setOnboardingUrlNull: Self = StObject.set(x, "onboardingUrl", null)
     
-    @scala.inline
-    def setOnboardingUrlUndefined: Self = StObject.set(x, "onboardingUrl", js.undefined)
+    inline def setOnboardingUrlUndefined: Self = StObject.set(x, "onboardingUrl", js.undefined)
   }
 }

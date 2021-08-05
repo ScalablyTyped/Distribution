@@ -13,19 +13,15 @@ trait UsersCreateGpgKeyForAuthenticatedEndpoint extends StObject {
 }
 object UsersCreateGpgKeyForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(): UsersCreateGpgKeyForAuthenticatedEndpoint = {
+  inline def apply(): UsersCreateGpgKeyForAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsersCreateGpgKeyForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersCreateGpgKeyForAuthenticatedEndpointMutableBuilder[Self <: UsersCreateGpgKeyForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersCreateGpgKeyForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setArmored_public_key(value: String): Self = StObject.set(x, "armored_public_key", value.asInstanceOf[js.Any])
+    inline def setArmored_public_key(value: String): Self = StObject.set(x, "armored_public_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArmored_public_keyUndefined: Self = StObject.set(x, "armored_public_key", js.undefined)
+    inline def setArmored_public_keyUndefined: Self = StObject.set(x, "armored_public_key", js.undefined)
   }
 }

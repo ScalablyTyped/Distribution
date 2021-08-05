@@ -32,37 +32,27 @@ trait PoolSpecificConfig extends StObject {
 }
 object PoolSpecificConfig {
   
-  @scala.inline
-  def apply(): PoolSpecificConfig = {
+  inline def apply(): PoolSpecificConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolSpecificConfig]
   }
   
-  @scala.inline
-  implicit class PoolSpecificConfigMutableBuilder[Self <: PoolSpecificConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PoolSpecificConfig](x: Self) {
     
-    @scala.inline
-    def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
+    inline def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquireTimeoutUndefined: Self = StObject.set(x, "acquireTimeout", js.undefined)
+    inline def setAcquireTimeoutUndefined: Self = StObject.set(x, "acquireTimeout", js.undefined)
     
-    @scala.inline
-    def setConnectionLimit(value: Double): Self = StObject.set(x, "connectionLimit", value.asInstanceOf[js.Any])
+    inline def setConnectionLimit(value: Double): Self = StObject.set(x, "connectionLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
+    inline def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
     
-    @scala.inline
-    def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
+    inline def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueLimitUndefined: Self = StObject.set(x, "queueLimit", js.undefined)
+    inline def setQueueLimitUndefined: Self = StObject.set(x, "queueLimit", js.undefined)
     
-    @scala.inline
-    def setWaitForConnections(value: Boolean): Self = StObject.set(x, "waitForConnections", value.asInstanceOf[js.Any])
+    inline def setWaitForConnections(value: Boolean): Self = StObject.set(x, "waitForConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForConnectionsUndefined: Self = StObject.set(x, "waitForConnections", js.undefined)
+    inline def setWaitForConnectionsUndefined: Self = StObject.set(x, "waitForConnections", js.undefined)
   }
 }

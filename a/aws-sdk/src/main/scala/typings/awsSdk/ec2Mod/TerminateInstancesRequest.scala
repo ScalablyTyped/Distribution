@@ -18,25 +18,19 @@ trait TerminateInstancesRequest extends StObject {
 }
 object TerminateInstancesRequest {
   
-  @scala.inline
-  def apply(InstanceIds: InstanceIdStringList): TerminateInstancesRequest = {
+  inline def apply(InstanceIds: InstanceIdStringList): TerminateInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateInstancesRequest]
   }
   
-  @scala.inline
-  implicit class TerminateInstancesRequestMutableBuilder[Self <: TerminateInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceIds(value: InstanceIdStringList): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
+    inline def setInstanceIds(value: InstanceIdStringList): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
   }
 }

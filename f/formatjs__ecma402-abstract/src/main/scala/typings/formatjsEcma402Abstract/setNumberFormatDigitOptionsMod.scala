@@ -13,8 +13,7 @@ object setNumberFormatDigitOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SetNumberFormatDigitOptions(
+  inline def SetNumberFormatDigitOptions(
     internalSlots: NumberFormatDigitInternalSlots,
     opts: NumberFormatDigitOptions,
     mnfdDefault: Double,

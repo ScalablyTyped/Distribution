@@ -221,14 +221,11 @@ object mod {
     def writeSync(text: String): Unit = js.native
   }
   
-  @scala.inline
-  def closeAllWatchers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAllWatchers")().asInstanceOf[Unit]
+  inline def closeAllWatchers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAllWatchers")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getWatchedPaths(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWatchedPaths")().asInstanceOf[js.Array[String]]
+  inline def getWatchedPaths(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWatchedPaths")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def watch(): PathWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")().asInstanceOf[PathWatcher]
+  inline def watch(): PathWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")().asInstanceOf[PathWatcher]
   
   trait PathWatchErrorThrownEvent extends StObject {
     
@@ -243,20 +240,16 @@ object mod {
   }
   object PathWatchErrorThrownEvent {
     
-    @scala.inline
-    def apply(error: Error, handle: () => Unit): PathWatchErrorThrownEvent = {
+    inline def apply(error: Error, handle: () => Unit): PathWatchErrorThrownEvent = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], handle = js.Any.fromFunction0(handle))
       __obj.asInstanceOf[PathWatchErrorThrownEvent]
     }
     
-    @scala.inline
-    implicit class PathWatchErrorThrownEventMutableBuilder[Self <: PathWatchErrorThrownEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PathWatchErrorThrownEvent](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
+      inline def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
     }
   }
   
@@ -268,8 +261,7 @@ object mod {
   }
   object PathWatcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       onDidChange: js.Function1[/* change */ WatchedFilePathChangedEvent, Unit] => Disposable
     ): PathWatcher = {
@@ -277,14 +269,11 @@ object mod {
       __obj.asInstanceOf[PathWatcher]
     }
     
-    @scala.inline
-    implicit class PathWatcherMutableBuilder[Self <: PathWatcher] (val x: Self) extends AnyVal {
+    extension [Self <: PathWatcher](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDidChange(value: js.Function1[/* change */ WatchedFilePathChangedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidChange", js.Any.fromFunction1(value))
+      inline def setOnDidChange(value: js.Function1[/* change */ WatchedFilePathChangedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidChange", js.Any.fromFunction1(value))
     }
   }
   
@@ -296,20 +285,16 @@ object mod {
   }
   object WatchedFilePathChangedEvent {
     
-    @scala.inline
-    def apply(event: String, newFilePath: String): WatchedFilePathChangedEvent = {
+    inline def apply(event: String, newFilePath: String): WatchedFilePathChangedEvent = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], newFilePath = newFilePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[WatchedFilePathChangedEvent]
     }
     
-    @scala.inline
-    implicit class WatchedFilePathChangedEventMutableBuilder[Self <: WatchedFilePathChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WatchedFilePathChangedEvent](x: Self) {
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewFilePath(value: String): Self = StObject.set(x, "newFilePath", value.asInstanceOf[js.Any])
+      inline def setNewFilePath(value: String): Self = StObject.set(x, "newFilePath", value.asInstanceOf[js.Any])
     }
   }
 }

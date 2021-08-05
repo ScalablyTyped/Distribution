@@ -14,22 +14,17 @@ trait Billing extends StObject {
 }
 object Billing {
   
-  @scala.inline
-  def apply(): Billing = {
+  inline def apply(): Billing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Billing]
   }
   
-  @scala.inline
-  implicit class BillingMutableBuilder[Self <: Billing] (val x: Self) extends AnyVal {
+  extension [Self <: Billing](x: Self) {
     
-    @scala.inline
-    def setConsumerDestinations(value: js.Array[BillingDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
+    inline def setConsumerDestinations(value: js.Array[BillingDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
+    inline def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
     
-    @scala.inline
-    def setConsumerDestinationsVarargs(value: BillingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
+    inline def setConsumerDestinationsVarargs(value: BillingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
   }
 }

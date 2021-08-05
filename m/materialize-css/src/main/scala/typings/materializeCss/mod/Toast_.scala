@@ -40,13 +40,11 @@ object Toast_ {
     * dismiss all toasts
     */
   /* static member */
-  @scala.inline
-  def dismissAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAll")().asInstanceOf[Unit]
+  inline def dismissAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissAll")().asInstanceOf[Unit]
   
   /**
     * Get Instance
     */
   /* static member */
-  @scala.inline
-  def getInstance(elem: Element): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[Toast]
+  inline def getInstance(elem: Element): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[Toast]
 }

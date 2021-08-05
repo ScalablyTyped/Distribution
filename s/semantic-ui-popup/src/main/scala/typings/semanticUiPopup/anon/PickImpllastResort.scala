@@ -11,16 +11,13 @@ trait PickImpllastResort extends StObject {
 }
 object PickImpllastResort {
   
-  @scala.inline
-  def apply(lastResort: Boolean | String): PickImpllastResort = {
+  inline def apply(lastResort: Boolean | String): PickImpllastResort = {
     val __obj = js.Dynamic.literal(lastResort = lastResort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpllastResort]
   }
   
-  @scala.inline
-  implicit class PickImpllastResortMutableBuilder[Self <: PickImpllastResort] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpllastResort](x: Self) {
     
-    @scala.inline
-    def setLastResort(value: Boolean | String): Self = StObject.set(x, "lastResort", value.asInstanceOf[js.Any])
+    inline def setLastResort(value: Boolean | String): Self = StObject.set(x, "lastResort", value.asInstanceOf[js.Any])
   }
 }

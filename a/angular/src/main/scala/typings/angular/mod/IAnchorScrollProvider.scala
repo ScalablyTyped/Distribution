@@ -12,16 +12,13 @@ trait IAnchorScrollProvider
 }
 object IAnchorScrollProvider {
   
-  @scala.inline
-  def apply($get: js.Any, disableAutoScrolling: () => Unit): IAnchorScrollProvider = {
+  inline def apply($get: js.Any, disableAutoScrolling: () => Unit): IAnchorScrollProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], disableAutoScrolling = js.Any.fromFunction0(disableAutoScrolling))
     __obj.asInstanceOf[IAnchorScrollProvider]
   }
   
-  @scala.inline
-  implicit class IAnchorScrollProviderMutableBuilder[Self <: IAnchorScrollProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IAnchorScrollProvider](x: Self) {
     
-    @scala.inline
-    def setDisableAutoScrolling(value: () => Unit): Self = StObject.set(x, "disableAutoScrolling", js.Any.fromFunction0(value))
+    inline def setDisableAutoScrolling(value: () => Unit): Self = StObject.set(x, "disableAutoScrolling", js.Any.fromFunction0(value))
   }
 }

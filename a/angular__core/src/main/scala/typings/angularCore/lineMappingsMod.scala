@@ -11,9 +11,7 @@ object lineMappingsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeLineStartsMap(text: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLineStartsMap")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def computeLineStartsMap(text: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLineStartsMap")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def getLineAndCharacterFromPosition(lineStartsMap: js.Array[Double], position: Double): Character = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineAndCharacterFromPosition")(lineStartsMap.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Character]
+  inline def getLineAndCharacterFromPosition(lineStartsMap: js.Array[Double], position: Double): Character = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineAndCharacterFromPosition")(lineStartsMap.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Character]
 }

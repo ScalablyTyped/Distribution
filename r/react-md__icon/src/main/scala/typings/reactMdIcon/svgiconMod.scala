@@ -72,44 +72,32 @@ object svgiconMod {
   }
   object SVGIconProps {
     
-    @scala.inline
-    def apply(): SVGIconProps = {
+    inline def apply(): SVGIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SVGIconProps]
     }
     
-    @scala.inline
-    implicit class SVGIconPropsMutableBuilder[Self <: SVGIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: SVGIconProps](x: Self) {
       
-      @scala.inline
-      def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+      inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+      inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
       
-      @scala.inline
-      def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+      inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
       
-      @scala.inline
-      def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
       
-      @scala.inline
-      def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+      inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+      inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
       
-      @scala.inline
-      def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+      inline def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
+      inline def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
     }
   }
 }

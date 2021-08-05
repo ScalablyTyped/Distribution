@@ -22,8 +22,7 @@ trait TableOnEdit extends StObject {
 }
 object TableOnEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Object,
     del: () => Unit,
     field: String,
@@ -35,25 +34,18 @@ object TableOnEdit {
     __obj.asInstanceOf[TableOnEdit]
   }
   
-  @scala.inline
-  implicit class TableOnEditMutableBuilder[Self <: TableOnEdit] (val x: Self) extends AnyVal {
+  extension [Self <: TableOnEdit](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDel(value: () => Unit): Self = StObject.set(x, "del", js.Any.fromFunction0(value))
+    inline def setDel(value: () => Unit): Self = StObject.set(x, "del", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTr(value: JQuery[HTMLElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+    inline def setTr(value: JQuery[HTMLElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

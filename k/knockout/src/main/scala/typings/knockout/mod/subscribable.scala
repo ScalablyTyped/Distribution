@@ -17,6 +17,5 @@ object subscribable {
   @JSImport("knockout", "subscribable.fn")
   @js.native
   def fn: SubscribableFunctions[js.Any] = js.native
-  @scala.inline
-  def fn_=(x: SubscribableFunctions[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: SubscribableFunctions[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

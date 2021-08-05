@@ -24,25 +24,19 @@ trait DistributionDefaultCacheBehaviorForwardedValuesCookies extends StObject {
 }
 object DistributionDefaultCacheBehaviorForwardedValuesCookies {
   
-  @scala.inline
-  def apply(forward: Input[String]): DistributionDefaultCacheBehaviorForwardedValuesCookies = {
+  inline def apply(forward: Input[String]): DistributionDefaultCacheBehaviorForwardedValuesCookies = {
     val __obj = js.Dynamic.literal(forward = forward.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionDefaultCacheBehaviorForwardedValuesCookies]
   }
   
-  @scala.inline
-  implicit class DistributionDefaultCacheBehaviorForwardedValuesCookiesMutableBuilder[Self <: DistributionDefaultCacheBehaviorForwardedValuesCookies] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionDefaultCacheBehaviorForwardedValuesCookies](x: Self) {
     
-    @scala.inline
-    def setForward(value: Input[String]): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Input[String]): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistedNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "whitelistedNames", value.asInstanceOf[js.Any])
+    inline def setWhitelistedNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "whitelistedNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistedNamesUndefined: Self = StObject.set(x, "whitelistedNames", js.undefined)
+    inline def setWhitelistedNamesUndefined: Self = StObject.set(x, "whitelistedNames", js.undefined)
     
-    @scala.inline
-    def setWhitelistedNamesVarargs(value: Input[String]*): Self = StObject.set(x, "whitelistedNames", js.Array(value :_*))
+    inline def setWhitelistedNamesVarargs(value: Input[String]*): Self = StObject.set(x, "whitelistedNames", js.Array(value :_*))
   }
 }

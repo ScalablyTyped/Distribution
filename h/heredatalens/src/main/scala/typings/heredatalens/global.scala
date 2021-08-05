@@ -129,8 +129,7 @@ object global {
         @JSGlobal("H.datalens.HeatmapLayer.aggregation")
         @js.native
         def aggregation: Aggregation = js.native
-        @scala.inline
-        def aggregation_=(x: Aggregation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aggregation")(x.asInstanceOf[js.Any])
+        inline def aggregation_=(x: Aggregation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aggregation")(x.asInstanceOf[js.Any])
         
         /**
           * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
@@ -139,8 +138,7 @@ object global {
         @JSGlobal("H.datalens.HeatmapLayer.defaultDataToRows")
         @js.native
         def defaultDataToRows: js.Function4[/* data */ Data, /* x */ X, /* y */ Y, /* zoom */ Zoom, js.Array[Row]] = js.native
-        @scala.inline
-        def defaultDataToRows_=(x: js.Function4[/* data */ Data, /* x */ X, /* y */ Y, /* zoom */ Zoom, js.Array[Row]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
+        inline def defaultDataToRows_=(x: js.Function4[/* data */ Data, /* x */ X, /* y */ Y, /* zoom */ Zoom, js.Array[Row]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
         
         /**
           * Set of possible values for the inputScale option
@@ -149,8 +147,7 @@ object global {
         @JSGlobal("H.datalens.HeatmapLayer.inputScale")
         @js.native
         def inputScale: InputScale = js.native
-        @scala.inline
-        def inputScale_=(x: InputScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputScale")(x.asInstanceOf[js.Any])
+        inline def inputScale_=(x: InputScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inputScale")(x.asInstanceOf[js.Any])
       }
       
       /**
@@ -228,29 +225,23 @@ object global {
           * @returns - Icon which can be used for marker or cluster
           */
         /* static member */
-        @scala.inline
-        def createIcon(svg: String): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
-        @scala.inline
-        def createIcon(svg: String, options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
-        @scala.inline
-        def createIcon(svg: js.Array[js.Any]): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
-        @scala.inline
-        def createIcon(svg: js.Array[js.Any], options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
+        inline def createIcon(svg: String): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
+        inline def createIcon(svg: String, options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
+        inline def createIcon(svg: js.Array[js.Any]): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
+        inline def createIcon(svg: js.Array[js.Any], options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
         
         /**
           * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
           */
         /* static member */
-        @scala.inline
-        def defaultDataToRows(data: Data): js.Array[typings.heredatalens.H.datalens.ObjectLayer.Row] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultDataToRows")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.heredatalens.H.datalens.ObjectLayer.Row]]
+        inline def defaultDataToRows(data: Data): js.Array[typings.heredatalens.H.datalens.ObjectLayer.Row] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultDataToRows")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.heredatalens.H.datalens.ObjectLayer.Row]]
         
         /**
           * Returns cache of icons created with the createIcon method. Can be used to clean the icon cache.
           * @return - Icon cache
           */
         /* static member */
-        @scala.inline
-        def getIconCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconCache")().asInstanceOf[Cache]
+        inline def getIconCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconCache")().asInstanceOf[Cache]
       }
       
       /**
@@ -375,8 +366,7 @@ object global {
         @JSGlobal("H.datalens.RasterLayer.defaultDataToRows")
         @js.native
         def defaultDataToRows: js.Any = js.native
-        @scala.inline
-        def defaultDataToRows_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
+        inline def defaultDataToRows_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
         
         /**
           * This is a default implementation of renderTile callback. This method represents each point as a black 1x1 pixel square.
@@ -384,8 +374,7 @@ object global {
           * @param canvas - The target canvas
           */
         /* static member */
-        @scala.inline
-        def defaultRenderTile(points: js.Array[TilePoint], canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderTile")(points.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def defaultRenderTile(points: js.Array[TilePoint], canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderTile")(points.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
       }
       
       /**
@@ -483,15 +472,13 @@ object global {
         @JSGlobal("H.datalens.SpatialLayer.DEFAULT_STATE")
         @js.native
         def DEFAULT_STATE: js.Any = js.native
-        @scala.inline
-        def DEFAULT_STATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STATE")(x.asInstanceOf[js.Any])
+        inline def DEFAULT_STATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_STATE")(x.asInstanceOf[js.Any])
         
         /* static member */
         @JSGlobal("H.datalens.SpatialLayer.Spatial")
         @js.native
         def Spatial: js.Any = js.native
-        @scala.inline
-        def Spatial_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spatial")(x.asInstanceOf[js.Any])
+        inline def Spatial_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Spatial")(x.asInstanceOf[js.Any])
         
         /**
           * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
@@ -500,8 +487,7 @@ object global {
         @JSGlobal("H.datalens.SpatialLayer.defaultDataToRows")
         @js.native
         def defaultDataToRows: js.Any = js.native
-        @scala.inline
-        def defaultDataToRows_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
+        inline def defaultDataToRows_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDataToRows")(x.asInstanceOf[js.Any])
       }
       
       /**
@@ -534,8 +520,7 @@ object global {
         @JSGlobal("H.datalens.SpatialTileProvider.VectorTile")
         @js.native
         def VectorTile: js.Any = js.native
-        @scala.inline
-        def VectorTile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VectorTile")(x.asInstanceOf[js.Any])
+        inline def VectorTile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VectorTile")(x.asInstanceOf[js.Any])
       }
     }
   }

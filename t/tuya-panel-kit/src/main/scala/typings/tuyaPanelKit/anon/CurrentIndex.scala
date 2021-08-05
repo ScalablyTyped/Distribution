@@ -20,46 +20,33 @@ trait CurrentIndex extends StObject {
 }
 object CurrentIndex {
   
-  @scala.inline
-  def apply(count: Double, currentIndex: Double): CurrentIndex = {
+  inline def apply(count: Double, currentIndex: Double): CurrentIndex = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], currentIndex = currentIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentIndex]
   }
   
-  @scala.inline
-  implicit class CurrentIndexMutableBuilder[Self <: CurrentIndex] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentIndex](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
+    inline def setDotActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotActiveStyleNull: Self = StObject.set(x, "dotActiveStyle", null)
+    inline def setDotActiveStyleNull: Self = StObject.set(x, "dotActiveStyle", null)
     
-    @scala.inline
-    def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
+    inline def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
     
-    @scala.inline
-    def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
+    inline def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
+    inline def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
     
-    @scala.inline
-    def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
+    inline def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
     
-    @scala.inline
-    def setDotWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotWrapperStyle", value.asInstanceOf[js.Any])
+    inline def setDotWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotWrapperStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotWrapperStyleNull: Self = StObject.set(x, "dotWrapperStyle", null)
+    inline def setDotWrapperStyleNull: Self = StObject.set(x, "dotWrapperStyle", null)
     
-    @scala.inline
-    def setDotWrapperStyleUndefined: Self = StObject.set(x, "dotWrapperStyle", js.undefined)
+    inline def setDotWrapperStyleUndefined: Self = StObject.set(x, "dotWrapperStyle", js.undefined)
   }
 }

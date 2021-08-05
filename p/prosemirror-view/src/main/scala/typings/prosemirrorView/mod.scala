@@ -88,20 +88,16 @@ object mod {
       * Creates an inline decoration, which adds the given attributes to
       * each inline node between `from` and `to`.
       */
-    @scala.inline
-    def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T & InlineDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & InlineDecorationSpec]]
-    @scala.inline
-    def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T & InlineDecorationSpec): Decoration[T & InlineDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & InlineDecorationSpec]]
+    inline def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T & InlineDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & InlineDecorationSpec]]
+    inline def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T & InlineDecorationSpec): Decoration[T & InlineDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & InlineDecorationSpec]]
     
     /**
       * Creates a node decoration. `from` and `to` should point precisely
       * before and after a node in the document. That node, and only that
       * node, will receive the given attributes.
       */
-    @scala.inline
-    def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration[T]]
-    @scala.inline
-    def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T): Decoration[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T]]
+    inline def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration[T]]
+    inline def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T): Decoration[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T]]
     
     /**
       * Creates a widget decoration, which is a DOM node that's shown in
@@ -111,21 +107,17 @@ object mod {
       * also directly pass a DOM node. getPos can be used to find the
       * widget's current document position.
       */
-    @scala.inline
-    def widget[T /* <: js.Object */](
+    inline def widget[T /* <: js.Object */](
       pos: Double,
       toDOM: js.Function2[/* view */ EditorView[js.Any], /* getPos */ js.Function0[Double], Node]
     ): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
-    @scala.inline
-    def widget[T /* <: js.Object */](
+    inline def widget[T /* <: js.Object */](
       pos: Double,
       toDOM: js.Function2[/* view */ EditorView[js.Any], /* getPos */ js.Function0[Double], Node],
       spec: T & WidgetDecorationSpec
     ): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
-    @scala.inline
-    def widget[T /* <: js.Object */](pos: Double, toDOM: Node): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
-    @scala.inline
-    def widget[T /* <: js.Object */](pos: Double, toDOM: Node, spec: T & WidgetDecorationSpec): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
+    inline def widget[T /* <: js.Object */](pos: Double, toDOM: Node): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
+    inline def widget[T /* <: js.Object */](pos: Double, toDOM: Node, spec: T & WidgetDecorationSpec): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
   }
   
   @JSImport("prosemirror-view", "DecorationSet")
@@ -183,8 +175,7 @@ object mod {
       * Create a set of decorations, using the structure of the given
       * document.
       */
-    @scala.inline
-    def create[S /* <: Schema[js.Any, js.Any] */](
+    inline def create[S /* <: Schema[js.Any, js.Any] */](
       doc: typings.prosemirrorModel.mod.Node[S],
       decorations: js.Array[Decoration[StringDictionary[js.Any]]]
     ): DecorationSet[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], decorations.asInstanceOf[js.Any])).asInstanceOf[DecorationSet[S]]
@@ -195,8 +186,7 @@ object mod {
     @JSImport("prosemirror-view", "DecorationSet.empty")
     @js.native
     def empty: DecorationSet[js.Any] = js.native
-    @scala.inline
-    def empty_=(x: DecorationSet[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
+    inline def empty_=(x: DecorationSet[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("prosemirror-view", "EditorView")
@@ -422,16 +412,12 @@ object mod {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def endComposition(view: EditorView[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("__endComposition")(view.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def endComposition(view: EditorView[js.Any], forceUpdate: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("__endComposition")(view.asInstanceOf[js.Any], forceUpdate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def endComposition(view: EditorView[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("__endComposition")(view.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def endComposition(view: EditorView[js.Any], forceUpdate: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("__endComposition")(view.asInstanceOf[js.Any], forceUpdate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseFromClipboard[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], text: String, html: String, plainText: Boolean, $context: ResolvedPos[S]): Slice[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("__parseFromClipboard")(view.asInstanceOf[js.Any], text.asInstanceOf[js.Any], html.asInstanceOf[js.Any], plainText.asInstanceOf[js.Any], $context.asInstanceOf[js.Any])).asInstanceOf[Slice[S]]
+  inline def parseFromClipboard[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], text: String, html: String, plainText: Boolean, $context: ResolvedPos[S]): Slice[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("__parseFromClipboard")(view.asInstanceOf[js.Any], text.asInstanceOf[js.Any], html.asInstanceOf[js.Any], plainText.asInstanceOf[js.Any], $context.asInstanceOf[js.Any])).asInstanceOf[Slice[S]]
   
-  @scala.inline
-  def serializeForClipboard[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], slice: Slice[S]): Dom = (^.asInstanceOf[js.Dynamic].applyDynamic("__serializeForClipboard")(view.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[Dom]
+  inline def serializeForClipboard[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], slice: Slice[S]): Dom = (^.asInstanceOf[js.Dynamic].applyDynamic("__serializeForClipboard")(view.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[Dom]
   
   trait DecorationAttrs
     extends StObject
@@ -460,41 +446,30 @@ object mod {
   }
   object DecorationAttrs {
     
-    @scala.inline
-    def apply(): DecorationAttrs = {
+    inline def apply(): DecorationAttrs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecorationAttrs]
     }
     
-    @scala.inline
-    implicit class DecorationAttrsMutableBuilder[Self <: DecorationAttrs] (val x: Self) extends AnyVal {
+    extension [Self <: DecorationAttrs](x: Self) {
       
-      @scala.inline
-      def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNull: Self = StObject.set(x, "class", null)
+      inline def setClassNull: Self = StObject.set(x, "class", null)
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNameNull: Self = StObject.set(x, "nodeName", null)
+      inline def setNodeNameNull: Self = StObject.set(x, "nodeName", null)
       
-      @scala.inline
-      def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
+      inline def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -526,19 +501,16 @@ object mod {
   }
   object DirectEditorProps {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](
       state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
     ): DirectEditorProps[S] = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectEditorProps[S]]
     }
     
-    @scala.inline
-    implicit class DirectEditorPropsMutableBuilder[Self <: DirectEditorProps[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & DirectEditorProps[S]) extends AnyVal {
+    extension [Self <: DirectEditorProps[?], S /* <: Schema[js.Any, js.Any] */](x: Self & DirectEditorProps[S]) {
       
-      @scala.inline
-      def setDispatchTransaction(
+      inline def setDispatchTransaction(
         value: js.ThisFunction1[
               /* this */ EditorView[S], 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Transaction<S> */ /* tr */ js.Any, 
@@ -546,14 +518,11 @@ object mod {
             ]
       ): Self = StObject.set(x, "dispatchTransaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatchTransactionNull: Self = StObject.set(x, "dispatchTransaction", null)
+      inline def setDispatchTransactionNull: Self = StObject.set(x, "dispatchTransaction", null)
       
-      @scala.inline
-      def setDispatchTransactionUndefined: Self = StObject.set(x, "dispatchTransaction", js.undefined)
+      inline def setDispatchTransactionUndefined: Self = StObject.set(x, "dispatchTransaction", js.undefined)
       
-      @scala.inline
-      def setState(
+      inline def setState(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
       ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -900,17 +869,14 @@ object mod {
   }
   object EditorProps {
     
-    @scala.inline
-    def apply[ThisT, S /* <: Schema[js.Any, js.Any] */](): EditorProps[ThisT, S] = {
+    inline def apply[ThisT, S /* <: Schema[js.Any, js.Any] */](): EditorProps[ThisT, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditorProps[ThisT, S]]
     }
     
-    @scala.inline
-    implicit class EditorPropsMutableBuilder[Self <: EditorProps[?, ?], ThisT, S /* <: Schema[js.Any, js.Any] */] (val x: Self & (EditorProps[ThisT, S])) extends AnyVal {
+    extension [Self <: EditorProps[?, ?], ThisT, S /* <: Schema[js.Any, js.Any] */](x: Self & (EditorProps[ThisT, S])) {
       
-      @scala.inline
-      def setAttributes(
+      inline def setAttributes(
         value: StringDictionary[String] | (js.ThisFunction1[
               /* this */ ThisT, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
@@ -918,32 +884,23 @@ object mod {
             ])
       ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesNull: Self = StObject.set(x, "attributes", null)
+      inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setClipboardParser(value: DOMParser[S]): Self = StObject.set(x, "clipboardParser", value.asInstanceOf[js.Any])
+      inline def setClipboardParser(value: DOMParser[S]): Self = StObject.set(x, "clipboardParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboardParserNull: Self = StObject.set(x, "clipboardParser", null)
+      inline def setClipboardParserNull: Self = StObject.set(x, "clipboardParser", null)
       
-      @scala.inline
-      def setClipboardParserUndefined: Self = StObject.set(x, "clipboardParser", js.undefined)
+      inline def setClipboardParserUndefined: Self = StObject.set(x, "clipboardParser", js.undefined)
       
-      @scala.inline
-      def setClipboardSerializer(value: DOMSerializer[S]): Self = StObject.set(x, "clipboardSerializer", value.asInstanceOf[js.Any])
+      inline def setClipboardSerializer(value: DOMSerializer[S]): Self = StObject.set(x, "clipboardSerializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboardSerializerNull: Self = StObject.set(x, "clipboardSerializer", null)
+      inline def setClipboardSerializerNull: Self = StObject.set(x, "clipboardSerializer", null)
       
-      @scala.inline
-      def setClipboardSerializerUndefined: Self = StObject.set(x, "clipboardSerializer", js.undefined)
+      inline def setClipboardSerializerUndefined: Self = StObject.set(x, "clipboardSerializer", js.undefined)
       
-      @scala.inline
-      def setClipboardTextParser(
+      inline def setClipboardTextParser(
         value: js.ThisFunction3[
               /* this */ ThisT, 
               /* text */ String, 
@@ -953,23 +910,17 @@ object mod {
             ]
       ): Self = StObject.set(x, "clipboardTextParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboardTextParserNull: Self = StObject.set(x, "clipboardTextParser", null)
+      inline def setClipboardTextParserNull: Self = StObject.set(x, "clipboardTextParser", null)
       
-      @scala.inline
-      def setClipboardTextParserUndefined: Self = StObject.set(x, "clipboardTextParser", js.undefined)
+      inline def setClipboardTextParserUndefined: Self = StObject.set(x, "clipboardTextParser", js.undefined)
       
-      @scala.inline
-      def setClipboardTextSerializer(value: js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], String]): Self = StObject.set(x, "clipboardTextSerializer", value.asInstanceOf[js.Any])
+      inline def setClipboardTextSerializer(value: js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], String]): Self = StObject.set(x, "clipboardTextSerializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboardTextSerializerNull: Self = StObject.set(x, "clipboardTextSerializer", null)
+      inline def setClipboardTextSerializerNull: Self = StObject.set(x, "clipboardTextSerializer", null)
       
-      @scala.inline
-      def setClipboardTextSerializerUndefined: Self = StObject.set(x, "clipboardTextSerializer", js.undefined)
+      inline def setClipboardTextSerializerUndefined: Self = StObject.set(x, "clipboardTextSerializer", js.undefined)
       
-      @scala.inline
-      def setCreateSelectionBetween(
+      inline def setCreateSelectionBetween(
         value: js.ThisFunction3[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -979,14 +930,11 @@ object mod {
             ]
       ): Self = StObject.set(x, "createSelectionBetween", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateSelectionBetweenNull: Self = StObject.set(x, "createSelectionBetween", null)
+      inline def setCreateSelectionBetweenNull: Self = StObject.set(x, "createSelectionBetween", null)
       
-      @scala.inline
-      def setCreateSelectionBetweenUndefined: Self = StObject.set(x, "createSelectionBetween", js.undefined)
+      inline def setCreateSelectionBetweenUndefined: Self = StObject.set(x, "createSelectionBetween", js.undefined)
       
-      @scala.inline
-      def setDecorations(
+      inline def setDecorations(
         value: js.ThisFunction1[
               /* this */ ThisT, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
@@ -994,23 +942,17 @@ object mod {
             ]
       ): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorationsNull: Self = StObject.set(x, "decorations", null)
+      inline def setDecorationsNull: Self = StObject.set(x, "decorations", null)
       
-      @scala.inline
-      def setDecorationsUndefined: Self = StObject.set(x, "decorations", js.undefined)
+      inline def setDecorationsUndefined: Self = StObject.set(x, "decorations", js.undefined)
       
-      @scala.inline
-      def setDomParser(value: DOMParser[S]): Self = StObject.set(x, "domParser", value.asInstanceOf[js.Any])
+      inline def setDomParser(value: DOMParser[S]): Self = StObject.set(x, "domParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomParserNull: Self = StObject.set(x, "domParser", null)
+      inline def setDomParserNull: Self = StObject.set(x, "domParser", null)
       
-      @scala.inline
-      def setDomParserUndefined: Self = StObject.set(x, "domParser", js.undefined)
+      inline def setDomParserUndefined: Self = StObject.set(x, "domParser", js.undefined)
       
-      @scala.inline
-      def setEditable(
+      inline def setEditable(
         value: js.ThisFunction1[
               /* this */ ThisT, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
@@ -1018,14 +960,11 @@ object mod {
             ]
       ): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableNull: Self = StObject.set(x, "editable", null)
+      inline def setEditableNull: Self = StObject.set(x, "editable", null)
       
-      @scala.inline
-      def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+      inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
-      @scala.inline
-      def setHandleClick(
+      inline def setHandleClick(
         value: js.ThisFunction3[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1035,11 +974,9 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleClickNull: Self = StObject.set(x, "handleClick", null)
+      inline def setHandleClickNull: Self = StObject.set(x, "handleClick", null)
       
-      @scala.inline
-      def setHandleClickOn(
+      inline def setHandleClickOn(
         value: js.ThisFunction6[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1052,26 +989,19 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleClickOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleClickOnNull: Self = StObject.set(x, "handleClickOn", null)
+      inline def setHandleClickOnNull: Self = StObject.set(x, "handleClickOn", null)
       
-      @scala.inline
-      def setHandleClickOnUndefined: Self = StObject.set(x, "handleClickOn", js.undefined)
+      inline def setHandleClickOnUndefined: Self = StObject.set(x, "handleClickOn", js.undefined)
       
-      @scala.inline
-      def setHandleClickUndefined: Self = StObject.set(x, "handleClick", js.undefined)
+      inline def setHandleClickUndefined: Self = StObject.set(x, "handleClick", js.undefined)
       
-      @scala.inline
-      def setHandleDOMEvents(value: HandleDOMEventsProp[ThisT, S]): Self = StObject.set(x, "handleDOMEvents", value.asInstanceOf[js.Any])
+      inline def setHandleDOMEvents(value: HandleDOMEventsProp[ThisT, S]): Self = StObject.set(x, "handleDOMEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleDOMEventsNull: Self = StObject.set(x, "handleDOMEvents", null)
+      inline def setHandleDOMEventsNull: Self = StObject.set(x, "handleDOMEvents", null)
       
-      @scala.inline
-      def setHandleDOMEventsUndefined: Self = StObject.set(x, "handleDOMEvents", js.undefined)
+      inline def setHandleDOMEventsUndefined: Self = StObject.set(x, "handleDOMEvents", js.undefined)
       
-      @scala.inline
-      def setHandleDoubleClick(
+      inline def setHandleDoubleClick(
         value: js.ThisFunction3[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1081,11 +1011,9 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleDoubleClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleDoubleClickNull: Self = StObject.set(x, "handleDoubleClick", null)
+      inline def setHandleDoubleClickNull: Self = StObject.set(x, "handleDoubleClick", null)
       
-      @scala.inline
-      def setHandleDoubleClickOn(
+      inline def setHandleDoubleClickOn(
         value: js.ThisFunction6[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1098,17 +1026,13 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleDoubleClickOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleDoubleClickOnNull: Self = StObject.set(x, "handleDoubleClickOn", null)
+      inline def setHandleDoubleClickOnNull: Self = StObject.set(x, "handleDoubleClickOn", null)
       
-      @scala.inline
-      def setHandleDoubleClickOnUndefined: Self = StObject.set(x, "handleDoubleClickOn", js.undefined)
+      inline def setHandleDoubleClickOnUndefined: Self = StObject.set(x, "handleDoubleClickOn", js.undefined)
       
-      @scala.inline
-      def setHandleDoubleClickUndefined: Self = StObject.set(x, "handleDoubleClick", js.undefined)
+      inline def setHandleDoubleClickUndefined: Self = StObject.set(x, "handleDoubleClick", js.undefined)
       
-      @scala.inline
-      def setHandleDrop(
+      inline def setHandleDrop(
         value: js.ThisFunction4[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1119,36 +1043,27 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleDropNull: Self = StObject.set(x, "handleDrop", null)
+      inline def setHandleDropNull: Self = StObject.set(x, "handleDrop", null)
       
-      @scala.inline
-      def setHandleDropUndefined: Self = StObject.set(x, "handleDrop", js.undefined)
+      inline def setHandleDropUndefined: Self = StObject.set(x, "handleDrop", js.undefined)
       
-      @scala.inline
-      def setHandleKeyDown(
+      inline def setHandleKeyDown(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
       ): Self = StObject.set(x, "handleKeyDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleKeyDownNull: Self = StObject.set(x, "handleKeyDown", null)
+      inline def setHandleKeyDownNull: Self = StObject.set(x, "handleKeyDown", null)
       
-      @scala.inline
-      def setHandleKeyDownUndefined: Self = StObject.set(x, "handleKeyDown", js.undefined)
+      inline def setHandleKeyDownUndefined: Self = StObject.set(x, "handleKeyDown", js.undefined)
       
-      @scala.inline
-      def setHandleKeyPress(
+      inline def setHandleKeyPress(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
       ): Self = StObject.set(x, "handleKeyPress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleKeyPressNull: Self = StObject.set(x, "handleKeyPress", null)
+      inline def setHandleKeyPressNull: Self = StObject.set(x, "handleKeyPress", null)
       
-      @scala.inline
-      def setHandleKeyPressUndefined: Self = StObject.set(x, "handleKeyPress", js.undefined)
+      inline def setHandleKeyPressUndefined: Self = StObject.set(x, "handleKeyPress", js.undefined)
       
-      @scala.inline
-      def setHandlePaste(
+      inline def setHandlePaste(
         value: js.ThisFunction3[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1158,23 +1073,17 @@ object mod {
             ]
       ): Self = StObject.set(x, "handlePaste", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlePasteNull: Self = StObject.set(x, "handlePaste", null)
+      inline def setHandlePasteNull: Self = StObject.set(x, "handlePaste", null)
       
-      @scala.inline
-      def setHandlePasteUndefined: Self = StObject.set(x, "handlePaste", js.undefined)
+      inline def setHandlePasteUndefined: Self = StObject.set(x, "handlePaste", js.undefined)
       
-      @scala.inline
-      def setHandleScrollToSelection(value: js.ThisFunction1[/* this */ ThisT, /* view */ EditorView[S], Boolean]): Self = StObject.set(x, "handleScrollToSelection", value.asInstanceOf[js.Any])
+      inline def setHandleScrollToSelection(value: js.ThisFunction1[/* this */ ThisT, /* view */ EditorView[S], Boolean]): Self = StObject.set(x, "handleScrollToSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleScrollToSelectionNull: Self = StObject.set(x, "handleScrollToSelection", null)
+      inline def setHandleScrollToSelectionNull: Self = StObject.set(x, "handleScrollToSelection", null)
       
-      @scala.inline
-      def setHandleScrollToSelectionUndefined: Self = StObject.set(x, "handleScrollToSelection", js.undefined)
+      inline def setHandleScrollToSelectionUndefined: Self = StObject.set(x, "handleScrollToSelection", js.undefined)
       
-      @scala.inline
-      def setHandleTextInput(
+      inline def setHandleTextInput(
         value: js.ThisFunction4[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1185,14 +1094,11 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleTextInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleTextInputNull: Self = StObject.set(x, "handleTextInput", null)
+      inline def setHandleTextInputNull: Self = StObject.set(x, "handleTextInput", null)
       
-      @scala.inline
-      def setHandleTextInputUndefined: Self = StObject.set(x, "handleTextInput", js.undefined)
+      inline def setHandleTextInputUndefined: Self = StObject.set(x, "handleTextInput", js.undefined)
       
-      @scala.inline
-      def setHandleTripleClick(
+      inline def setHandleTripleClick(
         value: js.ThisFunction3[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1202,11 +1108,9 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleTripleClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleTripleClickNull: Self = StObject.set(x, "handleTripleClick", null)
+      inline def setHandleTripleClickNull: Self = StObject.set(x, "handleTripleClick", null)
       
-      @scala.inline
-      def setHandleTripleClickOn(
+      inline def setHandleTripleClickOn(
         value: js.ThisFunction6[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -1219,17 +1123,13 @@ object mod {
             ]
       ): Self = StObject.set(x, "handleTripleClickOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleTripleClickOnNull: Self = StObject.set(x, "handleTripleClickOn", null)
+      inline def setHandleTripleClickOnNull: Self = StObject.set(x, "handleTripleClickOn", null)
       
-      @scala.inline
-      def setHandleTripleClickOnUndefined: Self = StObject.set(x, "handleTripleClickOn", js.undefined)
+      inline def setHandleTripleClickOnUndefined: Self = StObject.set(x, "handleTripleClickOn", js.undefined)
       
-      @scala.inline
-      def setHandleTripleClickUndefined: Self = StObject.set(x, "handleTripleClick", js.undefined)
+      inline def setHandleTripleClickUndefined: Self = StObject.set(x, "handleTripleClick", js.undefined)
       
-      @scala.inline
-      def setNodeViews(
+      inline def setNodeViews(
         value: StringDictionary[
               js.Function4[
                 /* node */ typings.prosemirrorModel.mod.Node[S], 
@@ -1241,56 +1141,39 @@ object mod {
             ]
       ): Self = StObject.set(x, "nodeViews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeViewsNull: Self = StObject.set(x, "nodeViews", null)
+      inline def setNodeViewsNull: Self = StObject.set(x, "nodeViews", null)
       
-      @scala.inline
-      def setNodeViewsUndefined: Self = StObject.set(x, "nodeViews", js.undefined)
+      inline def setNodeViewsUndefined: Self = StObject.set(x, "nodeViews", js.undefined)
       
-      @scala.inline
-      def setScrollMargin(value: Double | Right): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
+      inline def setScrollMargin(value: Double | Right): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollMarginNull: Self = StObject.set(x, "scrollMargin", null)
+      inline def setScrollMarginNull: Self = StObject.set(x, "scrollMargin", null)
       
-      @scala.inline
-      def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
+      inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
       
-      @scala.inline
-      def setScrollThreshold(value: Double | Right): Self = StObject.set(x, "scrollThreshold", value.asInstanceOf[js.Any])
+      inline def setScrollThreshold(value: Double | Right): Self = StObject.set(x, "scrollThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollThresholdNull: Self = StObject.set(x, "scrollThreshold", null)
+      inline def setScrollThresholdNull: Self = StObject.set(x, "scrollThreshold", null)
       
-      @scala.inline
-      def setScrollThresholdUndefined: Self = StObject.set(x, "scrollThreshold", js.undefined)
+      inline def setScrollThresholdUndefined: Self = StObject.set(x, "scrollThreshold", js.undefined)
       
-      @scala.inline
-      def setTransformPasted(value: js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], Slice[S]]): Self = StObject.set(x, "transformPasted", value.asInstanceOf[js.Any])
+      inline def setTransformPasted(value: js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], Slice[S]]): Self = StObject.set(x, "transformPasted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformPastedHTML(value: js.ThisFunction1[/* this */ ThisT, /* html */ String, String]): Self = StObject.set(x, "transformPastedHTML", value.asInstanceOf[js.Any])
+      inline def setTransformPastedHTML(value: js.ThisFunction1[/* this */ ThisT, /* html */ String, String]): Self = StObject.set(x, "transformPastedHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformPastedHTMLNull: Self = StObject.set(x, "transformPastedHTML", null)
+      inline def setTransformPastedHTMLNull: Self = StObject.set(x, "transformPastedHTML", null)
       
-      @scala.inline
-      def setTransformPastedHTMLUndefined: Self = StObject.set(x, "transformPastedHTML", js.undefined)
+      inline def setTransformPastedHTMLUndefined: Self = StObject.set(x, "transformPastedHTML", js.undefined)
       
-      @scala.inline
-      def setTransformPastedNull: Self = StObject.set(x, "transformPasted", null)
+      inline def setTransformPastedNull: Self = StObject.set(x, "transformPasted", null)
       
-      @scala.inline
-      def setTransformPastedText(value: js.ThisFunction2[/* this */ ThisT, /* text */ String, /* plain */ Boolean, String]): Self = StObject.set(x, "transformPastedText", value.asInstanceOf[js.Any])
+      inline def setTransformPastedText(value: js.ThisFunction2[/* this */ ThisT, /* text */ String, /* plain */ Boolean, String]): Self = StObject.set(x, "transformPastedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformPastedTextNull: Self = StObject.set(x, "transformPastedText", null)
+      inline def setTransformPastedTextNull: Self = StObject.set(x, "transformPastedText", null)
       
-      @scala.inline
-      def setTransformPastedTextUndefined: Self = StObject.set(x, "transformPastedText", js.undefined)
+      inline def setTransformPastedTextUndefined: Self = StObject.set(x, "transformPastedText", js.undefined)
       
-      @scala.inline
-      def setTransformPastedUndefined: Self = StObject.set(x, "transformPasted", js.undefined)
+      inline def setTransformPastedUndefined: Self = StObject.set(x, "transformPasted", js.undefined)
     }
   }
   
@@ -1697,505 +1580,368 @@ object mod {
   }
   object HandleDOMEventsProp {
     
-    @scala.inline
-    def apply[ThisT, S /* <: Schema[js.Any, js.Any] */](): HandleDOMEventsProp[ThisT, S] = {
+    inline def apply[ThisT, S /* <: Schema[js.Any, js.Any] */](): HandleDOMEventsProp[ThisT, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HandleDOMEventsProp[ThisT, S]]
     }
     
-    @scala.inline
-    implicit class HandleDOMEventsPropMutableBuilder[Self <: HandleDOMEventsProp[?, ?], ThisT, S /* <: Schema[js.Any, js.Any] */] (val x: Self & (HandleDOMEventsProp[ThisT, S])) extends AnyVal {
+    extension [Self <: HandleDOMEventsProp[?, ?], ThisT, S /* <: Schema[js.Any, js.Any] */](x: Self & (HandleDOMEventsProp[ThisT, S])) {
       
-      @scala.inline
-      def setAbort(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ UIEvent, Boolean]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+      inline def setAbort(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ UIEvent, Boolean]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+      inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
       
-      @scala.inline
-      def setAnimationcancel(
+      inline def setAnimationcancel(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
       ): Self = StObject.set(x, "animationcancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationcancelUndefined: Self = StObject.set(x, "animationcancel", js.undefined)
+      inline def setAnimationcancelUndefined: Self = StObject.set(x, "animationcancel", js.undefined)
       
-      @scala.inline
-      def setAnimationend(
+      inline def setAnimationend(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
       ): Self = StObject.set(x, "animationend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationendUndefined: Self = StObject.set(x, "animationend", js.undefined)
+      inline def setAnimationendUndefined: Self = StObject.set(x, "animationend", js.undefined)
       
-      @scala.inline
-      def setAnimationiteration(
+      inline def setAnimationiteration(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
       ): Self = StObject.set(x, "animationiteration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationiterationUndefined: Self = StObject.set(x, "animationiteration", js.undefined)
+      inline def setAnimationiterationUndefined: Self = StObject.set(x, "animationiteration", js.undefined)
       
-      @scala.inline
-      def setAnimationstart(
+      inline def setAnimationstart(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
       ): Self = StObject.set(x, "animationstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationstartUndefined: Self = StObject.set(x, "animationstart", js.undefined)
+      inline def setAnimationstartUndefined: Self = StObject.set(x, "animationstart", js.undefined)
       
-      @scala.inline
-      def setAuxclick(
+      inline def setAuxclick(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "auxclick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuxclickUndefined: Self = StObject.set(x, "auxclick", js.undefined)
+      inline def setAuxclickUndefined: Self = StObject.set(x, "auxclick", js.undefined)
       
-      @scala.inline
-      def setBlur(
+      inline def setBlur(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
       ): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setCancel(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setCanplay(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
+      inline def setCanplay(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "canplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanplayUndefined: Self = StObject.set(x, "canplay", js.undefined)
+      inline def setCanplayUndefined: Self = StObject.set(x, "canplay", js.undefined)
       
-      @scala.inline
-      def setCanplaythrough(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "canplaythrough", value.asInstanceOf[js.Any])
+      inline def setCanplaythrough(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "canplaythrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanplaythroughUndefined: Self = StObject.set(x, "canplaythrough", js.undefined)
+      inline def setCanplaythroughUndefined: Self = StObject.set(x, "canplaythrough", js.undefined)
       
-      @scala.inline
-      def setChange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+      inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
-      @scala.inline
-      def setClick(
+      inline def setClick(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setClose(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setContextmenu(
+      inline def setContextmenu(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
+      inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
       
-      @scala.inline
-      def setCopy(
+      inline def setCopy(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ClipboardEvent, Boolean]
       ): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setCuechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "cuechange", value.asInstanceOf[js.Any])
+      inline def setCuechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "cuechange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCuechangeUndefined: Self = StObject.set(x, "cuechange", js.undefined)
+      inline def setCuechangeUndefined: Self = StObject.set(x, "cuechange", js.undefined)
       
-      @scala.inline
-      def setCut(
+      inline def setCut(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ClipboardEvent, Boolean]
       ): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
+      inline def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
       
-      @scala.inline
-      def setDblclick(
+      inline def setDblclick(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
+      inline def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
       
-      @scala.inline
-      def setDrag(
+      inline def setDrag(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
       ): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+      inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
-      @scala.inline
-      def setDragend(
+      inline def setDragend(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
       ): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
+      inline def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
       
-      @scala.inline
-      def setDragenter(
+      inline def setDragenter(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
       ): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
+      inline def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
       
-      @scala.inline
-      def setDragexit(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
+      inline def setDragexit(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragexitUndefined: Self = StObject.set(x, "dragexit", js.undefined)
+      inline def setDragexitUndefined: Self = StObject.set(x, "dragexit", js.undefined)
       
-      @scala.inline
-      def setDragleave(
+      inline def setDragleave(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
       ): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
+      inline def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
       
-      @scala.inline
-      def setDragover(
+      inline def setDragover(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
       ): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
+      inline def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
       
-      @scala.inline
-      def setDragstart(
+      inline def setDragstart(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
       ): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
+      inline def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
       
-      @scala.inline
-      def setDrop(
+      inline def setDrop(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
       ): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setDurationchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "durationchange", value.asInstanceOf[js.Any])
+      inline def setDurationchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "durationchange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationchangeUndefined: Self = StObject.set(x, "durationchange", js.undefined)
+      inline def setDurationchangeUndefined: Self = StObject.set(x, "durationchange", js.undefined)
       
-      @scala.inline
-      def setEmptied(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "emptied", value.asInstanceOf[js.Any])
+      inline def setEmptied(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "emptied", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptiedUndefined: Self = StObject.set(x, "emptied", js.undefined)
+      inline def setEmptiedUndefined: Self = StObject.set(x, "emptied", js.undefined)
       
-      @scala.inline
-      def setEnded(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+      inline def setEnded(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
+      inline def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ErrorEvent, Boolean]
       ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFocus(
+      inline def setFocus(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
       ): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setFocusin(
+      inline def setFocusin(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
       ): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusinUndefined: Self = StObject.set(x, "focusin", js.undefined)
+      inline def setFocusinUndefined: Self = StObject.set(x, "focusin", js.undefined)
       
-      @scala.inline
-      def setFocusout(
+      inline def setFocusout(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
       ): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusoutUndefined: Self = StObject.set(x, "focusout", js.undefined)
+      inline def setFocusoutUndefined: Self = StObject.set(x, "focusout", js.undefined)
       
-      @scala.inline
-      def setFullscreenchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
+      inline def setFullscreenchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenchangeUndefined: Self = StObject.set(x, "fullscreenchange", js.undefined)
+      inline def setFullscreenchangeUndefined: Self = StObject.set(x, "fullscreenchange", js.undefined)
       
-      @scala.inline
-      def setFullscreenerror(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
+      inline def setFullscreenerror(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenerrorUndefined: Self = StObject.set(x, "fullscreenerror", js.undefined)
+      inline def setFullscreenerrorUndefined: Self = StObject.set(x, "fullscreenerror", js.undefined)
       
-      @scala.inline
-      def setGotpointercapture(
+      inline def setGotpointercapture(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "gotpointercapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGotpointercaptureUndefined: Self = StObject.set(x, "gotpointercapture", js.undefined)
+      inline def setGotpointercaptureUndefined: Self = StObject.set(x, "gotpointercapture", js.undefined)
       
-      @scala.inline
-      def setInput(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setKeydown(
+      inline def setKeydown(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
       ): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
+      inline def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
       
-      @scala.inline
-      def setKeypress(
+      inline def setKeypress(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
       ): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
+      inline def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
       
-      @scala.inline
-      def setKeyup(
+      inline def setKeyup(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
       ): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
+      inline def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
       
-      @scala.inline
-      def setLoad(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+      inline def setLoad(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setLoadeddata(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "loadeddata", value.asInstanceOf[js.Any])
+      inline def setLoadeddata(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "loadeddata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadeddataUndefined: Self = StObject.set(x, "loadeddata", js.undefined)
+      inline def setLoadeddataUndefined: Self = StObject.set(x, "loadeddata", js.undefined)
       
-      @scala.inline
-      def setLoadedmetadata(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "loadedmetadata", value.asInstanceOf[js.Any])
+      inline def setLoadedmetadata(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "loadedmetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedmetadataUndefined: Self = StObject.set(x, "loadedmetadata", js.undefined)
+      inline def setLoadedmetadataUndefined: Self = StObject.set(x, "loadedmetadata", js.undefined)
       
-      @scala.inline
-      def setLoadstart(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
+      inline def setLoadstart(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadstartUndefined: Self = StObject.set(x, "loadstart", js.undefined)
+      inline def setLoadstartUndefined: Self = StObject.set(x, "loadstart", js.undefined)
       
-      @scala.inline
-      def setLostpointercapture(
+      inline def setLostpointercapture(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "lostpointercapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLostpointercaptureUndefined: Self = StObject.set(x, "lostpointercapture", js.undefined)
+      inline def setLostpointercaptureUndefined: Self = StObject.set(x, "lostpointercapture", js.undefined)
       
-      @scala.inline
-      def setMousedown(
+      inline def setMousedown(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousedownUndefined: Self = StObject.set(x, "mousedown", js.undefined)
+      inline def setMousedownUndefined: Self = StObject.set(x, "mousedown", js.undefined)
       
-      @scala.inline
-      def setMouseenter(
+      inline def setMouseenter(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
+      inline def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
       
-      @scala.inline
-      def setMouseleave(
+      inline def setMouseleave(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
+      inline def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
       
-      @scala.inline
-      def setMousemove(
+      inline def setMousemove(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
+      inline def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
       
-      @scala.inline
-      def setMouseout(
+      inline def setMouseout(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
+      inline def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
       
-      @scala.inline
-      def setMouseover(
+      inline def setMouseover(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
+      inline def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
       
-      @scala.inline
-      def setMouseup(
+      inline def setMouseup(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
       ): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
+      inline def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
       
-      @scala.inline
-      def setPaste(
+      inline def setPaste(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ClipboardEvent, Boolean]
       ): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+      inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
       
-      @scala.inline
-      def setPause(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
       
-      @scala.inline
-      def setPlay(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+      inline def setPlay(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+      inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
       
-      @scala.inline
-      def setPlaying(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
+      inline def setPlaying(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
+      inline def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
       
-      @scala.inline
-      def setPointercancel(
+      inline def setPointercancel(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointercancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointercancelUndefined: Self = StObject.set(x, "pointercancel", js.undefined)
+      inline def setPointercancelUndefined: Self = StObject.set(x, "pointercancel", js.undefined)
       
-      @scala.inline
-      def setPointerdown(
+      inline def setPointerdown(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointerdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerdownUndefined: Self = StObject.set(x, "pointerdown", js.undefined)
+      inline def setPointerdownUndefined: Self = StObject.set(x, "pointerdown", js.undefined)
       
-      @scala.inline
-      def setPointerenter(
+      inline def setPointerenter(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointerenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerenterUndefined: Self = StObject.set(x, "pointerenter", js.undefined)
+      inline def setPointerenterUndefined: Self = StObject.set(x, "pointerenter", js.undefined)
       
-      @scala.inline
-      def setPointerleave(
+      inline def setPointerleave(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointerleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerleaveUndefined: Self = StObject.set(x, "pointerleave", js.undefined)
+      inline def setPointerleaveUndefined: Self = StObject.set(x, "pointerleave", js.undefined)
       
-      @scala.inline
-      def setPointerlockchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "pointerlockchange", value.asInstanceOf[js.Any])
+      inline def setPointerlockchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "pointerlockchange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerlockchangeUndefined: Self = StObject.set(x, "pointerlockchange", js.undefined)
+      inline def setPointerlockchangeUndefined: Self = StObject.set(x, "pointerlockchange", js.undefined)
       
-      @scala.inline
-      def setPointerlockerror(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "pointerlockerror", value.asInstanceOf[js.Any])
+      inline def setPointerlockerror(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "pointerlockerror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerlockerrorUndefined: Self = StObject.set(x, "pointerlockerror", js.undefined)
+      inline def setPointerlockerrorUndefined: Self = StObject.set(x, "pointerlockerror", js.undefined)
       
-      @scala.inline
-      def setPointermove(
+      inline def setPointermove(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointermove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointermoveUndefined: Self = StObject.set(x, "pointermove", js.undefined)
+      inline def setPointermoveUndefined: Self = StObject.set(x, "pointermove", js.undefined)
       
-      @scala.inline
-      def setPointerout(
+      inline def setPointerout(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointerout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointeroutUndefined: Self = StObject.set(x, "pointerout", js.undefined)
+      inline def setPointeroutUndefined: Self = StObject.set(x, "pointerout", js.undefined)
       
-      @scala.inline
-      def setPointerover(
+      inline def setPointerover(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointerover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointeroverUndefined: Self = StObject.set(x, "pointerover", js.undefined)
+      inline def setPointeroverUndefined: Self = StObject.set(x, "pointerover", js.undefined)
       
-      @scala.inline
-      def setPointerup(
+      inline def setPointerup(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
       ): Self = StObject.set(x, "pointerup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerupUndefined: Self = StObject.set(x, "pointerup", js.undefined)
+      inline def setPointerupUndefined: Self = StObject.set(x, "pointerup", js.undefined)
       
-      @scala.inline
-      def setProgress(
+      inline def setProgress(
         value: js.ThisFunction2[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -2204,41 +1950,29 @@ object mod {
             ]
       ): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setRatechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "ratechange", value.asInstanceOf[js.Any])
+      inline def setRatechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "ratechange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatechangeUndefined: Self = StObject.set(x, "ratechange", js.undefined)
+      inline def setRatechangeUndefined: Self = StObject.set(x, "ratechange", js.undefined)
       
-      @scala.inline
-      def setReadystatechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
+      inline def setReadystatechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadystatechangeUndefined: Self = StObject.set(x, "readystatechange", js.undefined)
+      inline def setReadystatechangeUndefined: Self = StObject.set(x, "readystatechange", js.undefined)
       
-      @scala.inline
-      def setReset(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      @scala.inline
-      def setResize(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ UIEvent, Boolean]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ UIEvent, Boolean]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setScroll(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setSecuritypolicyviolation(
+      inline def setSecuritypolicyviolation(
         value: js.ThisFunction2[
               /* this */ ThisT, 
               /* view */ EditorView[S], 
@@ -2247,158 +1981,113 @@ object mod {
             ]
       ): Self = StObject.set(x, "securitypolicyviolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecuritypolicyviolationUndefined: Self = StObject.set(x, "securitypolicyviolation", js.undefined)
+      inline def setSecuritypolicyviolationUndefined: Self = StObject.set(x, "securitypolicyviolation", js.undefined)
       
-      @scala.inline
-      def setSeeked(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "seeked", value.asInstanceOf[js.Any])
+      inline def setSeeked(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "seeked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekedUndefined: Self = StObject.set(x, "seeked", js.undefined)
+      inline def setSeekedUndefined: Self = StObject.set(x, "seeked", js.undefined)
       
-      @scala.inline
-      def setSeeking(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "seeking", value.asInstanceOf[js.Any])
+      inline def setSeeking(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "seeking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekingUndefined: Self = StObject.set(x, "seeking", js.undefined)
+      inline def setSeekingUndefined: Self = StObject.set(x, "seeking", js.undefined)
       
-      @scala.inline
-      def setSelect(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setSelectionchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "selectionchange", value.asInstanceOf[js.Any])
+      inline def setSelectionchange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "selectionchange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionchangeUndefined: Self = StObject.set(x, "selectionchange", js.undefined)
+      inline def setSelectionchangeUndefined: Self = StObject.set(x, "selectionchange", js.undefined)
       
-      @scala.inline
-      def setSelectstart(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "selectstart", value.asInstanceOf[js.Any])
+      inline def setSelectstart(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "selectstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectstartUndefined: Self = StObject.set(x, "selectstart", js.undefined)
+      inline def setSelectstartUndefined: Self = StObject.set(x, "selectstart", js.undefined)
       
-      @scala.inline
-      def setStalled(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "stalled", value.asInstanceOf[js.Any])
+      inline def setStalled(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "stalled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStalledUndefined: Self = StObject.set(x, "stalled", js.undefined)
+      inline def setStalledUndefined: Self = StObject.set(x, "stalled", js.undefined)
       
-      @scala.inline
-      def setSubmit(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+      inline def setSubmit(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
+      inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
       
-      @scala.inline
-      def setSuspend(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
+      inline def setSuspend(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "suspend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuspendUndefined: Self = StObject.set(x, "suspend", js.undefined)
+      inline def setSuspendUndefined: Self = StObject.set(x, "suspend", js.undefined)
       
-      @scala.inline
-      def setTimeupdate(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
+      inline def setTimeupdate(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "timeupdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeupdateUndefined: Self = StObject.set(x, "timeupdate", js.undefined)
+      inline def setTimeupdateUndefined: Self = StObject.set(x, "timeupdate", js.undefined)
       
-      @scala.inline
-      def setToggle(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+      inline def setToggle(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      @scala.inline
-      def setTouchcancel(
+      inline def setTouchcancel(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
       ): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchcancelUndefined: Self = StObject.set(x, "touchcancel", js.undefined)
+      inline def setTouchcancelUndefined: Self = StObject.set(x, "touchcancel", js.undefined)
       
-      @scala.inline
-      def setTouchend(
+      inline def setTouchend(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
       ): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
+      inline def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
       
-      @scala.inline
-      def setTouchmove(
+      inline def setTouchmove(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
       ): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
+      inline def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
       
-      @scala.inline
-      def setTouchstart(
+      inline def setTouchstart(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
       ): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
+      inline def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
       
-      @scala.inline
-      def setTransitioncancel(
+      inline def setTransitioncancel(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
       ): Self = StObject.set(x, "transitioncancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitioncancelUndefined: Self = StObject.set(x, "transitioncancel", js.undefined)
+      inline def setTransitioncancelUndefined: Self = StObject.set(x, "transitioncancel", js.undefined)
       
-      @scala.inline
-      def setTransitionend(
+      inline def setTransitionend(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
       ): Self = StObject.set(x, "transitionend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionendUndefined: Self = StObject.set(x, "transitionend", js.undefined)
+      inline def setTransitionendUndefined: Self = StObject.set(x, "transitionend", js.undefined)
       
-      @scala.inline
-      def setTransitionrun(
+      inline def setTransitionrun(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
       ): Self = StObject.set(x, "transitionrun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionrunUndefined: Self = StObject.set(x, "transitionrun", js.undefined)
+      inline def setTransitionrunUndefined: Self = StObject.set(x, "transitionrun", js.undefined)
       
-      @scala.inline
-      def setTransitionstart(
+      inline def setTransitionstart(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
       ): Self = StObject.set(x, "transitionstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionstartUndefined: Self = StObject.set(x, "transitionstart", js.undefined)
+      inline def setTransitionstartUndefined: Self = StObject.set(x, "transitionstart", js.undefined)
       
-      @scala.inline
-      def setVisibilitychange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "visibilitychange", value.asInstanceOf[js.Any])
+      inline def setVisibilitychange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "visibilitychange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilitychangeUndefined: Self = StObject.set(x, "visibilitychange", js.undefined)
+      inline def setVisibilitychangeUndefined: Self = StObject.set(x, "visibilitychange", js.undefined)
       
-      @scala.inline
-      def setVolumechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "volumechange", value.asInstanceOf[js.Any])
+      inline def setVolumechange(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "volumechange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumechangeUndefined: Self = StObject.set(x, "volumechange", js.undefined)
+      inline def setVolumechangeUndefined: Self = StObject.set(x, "volumechange", js.undefined)
       
-      @scala.inline
-      def setWaiting(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+      inline def setWaiting(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
+      inline def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
       
-      @scala.inline
-      def setWheel(
+      inline def setWheel(
         value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ WheelEvent, Boolean]
       ): Self = StObject.set(x, "wheel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelUndefined: Self = StObject.set(x, "wheel", js.undefined)
+      inline def setWheelUndefined: Self = StObject.set(x, "wheel", js.undefined)
     }
   }
   
@@ -2420,32 +2109,24 @@ object mod {
   }
   object InlineDecorationSpec {
     
-    @scala.inline
-    def apply(): InlineDecorationSpec = {
+    inline def apply(): InlineDecorationSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InlineDecorationSpec]
     }
     
-    @scala.inline
-    implicit class InlineDecorationSpecMutableBuilder[Self <: InlineDecorationSpec] (val x: Self) extends AnyVal {
+    extension [Self <: InlineDecorationSpec](x: Self) {
       
-      @scala.inline
-      def setInclusiveEnd(value: Boolean): Self = StObject.set(x, "inclusiveEnd", value.asInstanceOf[js.Any])
+      inline def setInclusiveEnd(value: Boolean): Self = StObject.set(x, "inclusiveEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusiveEndNull: Self = StObject.set(x, "inclusiveEnd", null)
+      inline def setInclusiveEndNull: Self = StObject.set(x, "inclusiveEnd", null)
       
-      @scala.inline
-      def setInclusiveEndUndefined: Self = StObject.set(x, "inclusiveEnd", js.undefined)
+      inline def setInclusiveEndUndefined: Self = StObject.set(x, "inclusiveEnd", js.undefined)
       
-      @scala.inline
-      def setInclusiveStart(value: Boolean): Self = StObject.set(x, "inclusiveStart", value.asInstanceOf[js.Any])
+      inline def setInclusiveStart(value: Boolean): Self = StObject.set(x, "inclusiveStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusiveStartNull: Self = StObject.set(x, "inclusiveStart", null)
+      inline def setInclusiveStartNull: Self = StObject.set(x, "inclusiveStart", null)
       
-      @scala.inline
-      def setInclusiveStartUndefined: Self = StObject.set(x, "inclusiveStart", js.undefined)
+      inline def setInclusiveStartUndefined: Self = StObject.set(x, "inclusiveStart", js.undefined)
     }
   }
   
@@ -2535,97 +2216,68 @@ object mod {
   }
   object NodeView {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](): NodeView[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](): NodeView[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeView[S]]
     }
     
-    @scala.inline
-    implicit class NodeViewMutableBuilder[Self <: NodeView[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & NodeView[S]) extends AnyVal {
+    extension [Self <: NodeView[?], S /* <: Schema[js.Any, js.Any] */](x: Self & NodeView[S]) {
       
-      @scala.inline
-      def setContentDOM(value: Node): Self = StObject.set(x, "contentDOM", value.asInstanceOf[js.Any])
+      inline def setContentDOM(value: Node): Self = StObject.set(x, "contentDOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentDOMNull: Self = StObject.set(x, "contentDOM", null)
+      inline def setContentDOMNull: Self = StObject.set(x, "contentDOM", null)
       
-      @scala.inline
-      def setContentDOMUndefined: Self = StObject.set(x, "contentDOM", js.undefined)
+      inline def setContentDOMUndefined: Self = StObject.set(x, "contentDOM", js.undefined)
       
-      @scala.inline
-      def setDeselectNode(value: () => Unit): Self = StObject.set(x, "deselectNode", js.Any.fromFunction0(value))
+      inline def setDeselectNode(value: () => Unit): Self = StObject.set(x, "deselectNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeselectNodeNull: Self = StObject.set(x, "deselectNode", null)
+      inline def setDeselectNodeNull: Self = StObject.set(x, "deselectNode", null)
       
-      @scala.inline
-      def setDeselectNodeUndefined: Self = StObject.set(x, "deselectNode", js.undefined)
+      inline def setDeselectNodeUndefined: Self = StObject.set(x, "deselectNode", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyNull: Self = StObject.set(x, "destroy", null)
+      inline def setDestroyNull: Self = StObject.set(x, "destroy", null)
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setDom(value: Node): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Node): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomNull: Self = StObject.set(x, "dom", null)
+      inline def setDomNull: Self = StObject.set(x, "dom", null)
       
-      @scala.inline
-      def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
+      inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
-      @scala.inline
-      def setIgnoreMutation(value: /* p */ MutationRecord | Target => Boolean): Self = StObject.set(x, "ignoreMutation", js.Any.fromFunction1(value))
+      inline def setIgnoreMutation(value: /* p */ MutationRecord | Target => Boolean): Self = StObject.set(x, "ignoreMutation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoreMutationNull: Self = StObject.set(x, "ignoreMutation", null)
+      inline def setIgnoreMutationNull: Self = StObject.set(x, "ignoreMutation", null)
       
-      @scala.inline
-      def setIgnoreMutationUndefined: Self = StObject.set(x, "ignoreMutation", js.undefined)
+      inline def setIgnoreMutationUndefined: Self = StObject.set(x, "ignoreMutation", js.undefined)
       
-      @scala.inline
-      def setSelectNode(value: () => Unit): Self = StObject.set(x, "selectNode", js.Any.fromFunction0(value))
+      inline def setSelectNode(value: () => Unit): Self = StObject.set(x, "selectNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectNodeNull: Self = StObject.set(x, "selectNode", null)
+      inline def setSelectNodeNull: Self = StObject.set(x, "selectNode", null)
       
-      @scala.inline
-      def setSelectNodeUndefined: Self = StObject.set(x, "selectNode", js.undefined)
+      inline def setSelectNodeUndefined: Self = StObject.set(x, "selectNode", js.undefined)
       
-      @scala.inline
-      def setSetSelection(value: (/* anchor */ Double, /* head */ Double, /* root */ Document) => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction3(value))
+      inline def setSetSelection(value: (/* anchor */ Double, /* head */ Double, /* root */ Document) => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetSelectionNull: Self = StObject.set(x, "setSelection", null)
+      inline def setSetSelectionNull: Self = StObject.set(x, "setSelection", null)
       
-      @scala.inline
-      def setSetSelectionUndefined: Self = StObject.set(x, "setSelection", js.undefined)
+      inline def setSetSelectionUndefined: Self = StObject.set(x, "setSelection", js.undefined)
       
-      @scala.inline
-      def setStopEvent(value: /* event */ Event => Boolean): Self = StObject.set(x, "stopEvent", js.Any.fromFunction1(value))
+      inline def setStopEvent(value: /* event */ Event => Boolean): Self = StObject.set(x, "stopEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopEventNull: Self = StObject.set(x, "stopEvent", null)
+      inline def setStopEventNull: Self = StObject.set(x, "stopEvent", null)
       
-      @scala.inline
-      def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
+      inline def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
       
-      @scala.inline
-      def setUpdate(
+      inline def setUpdate(
         value: (/* node */ typings.prosemirrorModel.mod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[js.Any]]]) => Boolean
       ): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateNull: Self = StObject.set(x, "update", null)
+      inline def setUpdateNull: Self = StObject.set(x, "update", null)
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -2676,53 +2328,38 @@ object mod {
   }
   object WidgetDecorationSpec {
     
-    @scala.inline
-    def apply(): WidgetDecorationSpec = {
+    inline def apply(): WidgetDecorationSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WidgetDecorationSpec]
     }
     
-    @scala.inline
-    implicit class WidgetDecorationSpecMutableBuilder[Self <: WidgetDecorationSpec] (val x: Self) extends AnyVal {
+    extension [Self <: WidgetDecorationSpec](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMarks(value: js.Array[Mark[js.Any]]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+      inline def setMarks(value: js.Array[Mark[js.Any]]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarksNull: Self = StObject.set(x, "marks", null)
+      inline def setMarksNull: Self = StObject.set(x, "marks", null)
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setMarksVarargs(value: Mark[js.Any]*): Self = StObject.set(x, "marks", js.Array(value :_*))
+      inline def setMarksVarargs(value: Mark[js.Any]*): Self = StObject.set(x, "marks", js.Array(value :_*))
       
-      @scala.inline
-      def setSide(value: Double): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: Double): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideNull: Self = StObject.set(x, "side", null)
+      inline def setSideNull: Self = StObject.set(x, "side", null)
       
-      @scala.inline
-      def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+      inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      @scala.inline
-      def setStopEvent(value: /* event */ Event => Boolean): Self = StObject.set(x, "stopEvent", js.Any.fromFunction1(value))
+      inline def setStopEvent(value: /* event */ Event => Boolean): Self = StObject.set(x, "stopEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopEventNull: Self = StObject.set(x, "stopEvent", null)
+      inline def setStopEventNull: Self = StObject.set(x, "stopEvent", null)
       
-      @scala.inline
-      def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
+      inline def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
     }
   }
 }

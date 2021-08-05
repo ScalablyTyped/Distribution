@@ -18,37 +18,27 @@ trait RevoluteConstraintOptions
 }
 object RevoluteConstraintOptions {
   
-  @scala.inline
-  def apply(): RevoluteConstraintOptions = {
+  inline def apply(): RevoluteConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevoluteConstraintOptions]
   }
   
-  @scala.inline
-  implicit class RevoluteConstraintOptionsMutableBuilder[Self <: RevoluteConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RevoluteConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setLocalPivotA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localPivotA", value.asInstanceOf[js.Any])
+    inline def setLocalPivotA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localPivotA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPivotAUndefined: Self = StObject.set(x, "localPivotA", js.undefined)
+    inline def setLocalPivotAUndefined: Self = StObject.set(x, "localPivotA", js.undefined)
     
-    @scala.inline
-    def setLocalPivotB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localPivotB", value.asInstanceOf[js.Any])
+    inline def setLocalPivotB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localPivotB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPivotBUndefined: Self = StObject.set(x, "localPivotB", js.undefined)
+    inline def setLocalPivotBUndefined: Self = StObject.set(x, "localPivotB", js.undefined)
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
     
-    @scala.inline
-    def setWorldPivot(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldPivot", value.asInstanceOf[js.Any])
+    inline def setWorldPivot(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldPivot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldPivotUndefined: Self = StObject.set(x, "worldPivot", js.undefined)
+    inline def setWorldPivotUndefined: Self = StObject.set(x, "worldPivot", js.undefined)
   }
 }

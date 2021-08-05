@@ -17,8 +17,7 @@ trait Section
 }
 object Section {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _lastHeightUpdate: Double,
     _lastLeftUpdate: Double,
     _lastTopUpdate: Double,
@@ -68,16 +67,12 @@ object Section {
     __obj.asInstanceOf[Section]
   }
   
-  @scala.inline
-  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
+  extension [Self <: Section](x: Self) {
     
-    @scala.inline
-    def setGetRow(value: Double => Row): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
+    inline def setGetRow(value: Double => Row): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_alignment(value: () => Double): Self = StObject.set(x, "get_alignment", js.Any.fromFunction0(value))
+    inline def setGet_alignment(value: () => Double): Self = StObject.set(x, "get_alignment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_type(value: () => Double): Self = StObject.set(x, "get_type", js.Any.fromFunction0(value))
+    inline def setGet_type(value: () => Double): Self = StObject.set(x, "get_type", js.Any.fromFunction0(value))
   }
 }

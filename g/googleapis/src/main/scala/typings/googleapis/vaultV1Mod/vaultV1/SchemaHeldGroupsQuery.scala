@@ -28,31 +28,23 @@ trait SchemaHeldGroupsQuery extends StObject {
 }
 object SchemaHeldGroupsQuery {
   
-  @scala.inline
-  def apply(): SchemaHeldGroupsQuery = {
+  inline def apply(): SchemaHeldGroupsQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeldGroupsQuery]
   }
   
-  @scala.inline
-  implicit class SchemaHeldGroupsQueryMutableBuilder[Self <: SchemaHeldGroupsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeldGroupsQuery](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: String): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
+    inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
   }
 }

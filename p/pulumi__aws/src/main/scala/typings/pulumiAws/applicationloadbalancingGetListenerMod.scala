@@ -12,14 +12,10 @@ object applicationloadbalancingGetListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getListener(): js.Promise[GetListenerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getListener")().asInstanceOf[js.Promise[GetListenerResult]]
-  @scala.inline
-  def getListener(args: Unit, opts: InvokeOptions): js.Promise[GetListenerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetListenerResult]]
-  @scala.inline
-  def getListener(args: GetListenerArgs): js.Promise[GetListenerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetListenerResult]]
-  @scala.inline
-  def getListener(args: GetListenerArgs, opts: InvokeOptions): js.Promise[GetListenerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetListenerResult]]
+  inline def getListener(): js.Promise[GetListenerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getListener")().asInstanceOf[js.Promise[GetListenerResult]]
+  inline def getListener(args: Unit, opts: InvokeOptions): js.Promise[GetListenerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetListenerResult]]
+  inline def getListener(args: GetListenerArgs): js.Promise[GetListenerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetListenerResult]]
+  inline def getListener(args: GetListenerArgs, opts: InvokeOptions): js.Promise[GetListenerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getListener")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetListenerResult]]
   
   trait GetListenerArgs extends StObject {
     
@@ -40,32 +36,24 @@ object applicationloadbalancingGetListenerMod {
   }
   object GetListenerArgs {
     
-    @scala.inline
-    def apply(): GetListenerArgs = {
+    inline def apply(): GetListenerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetListenerArgs]
     }
     
-    @scala.inline
-    implicit class GetListenerArgsMutableBuilder[Self <: GetListenerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetListenerArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setLoadBalancerArn(value: String): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerArn(value: String): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerArnUndefined: Self = StObject.set(x, "loadBalancerArn", js.undefined)
+      inline def setLoadBalancerArnUndefined: Self = StObject.set(x, "loadBalancerArn", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -92,8 +80,7 @@ object applicationloadbalancingGetListenerMod {
   }
   object GetListenerResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       certificateArn: String,
       defaultActions: js.Array[GetListenerDefaultAction],
@@ -107,35 +94,25 @@ object applicationloadbalancingGetListenerMod {
       __obj.asInstanceOf[GetListenerResult]
     }
     
-    @scala.inline
-    implicit class GetListenerResultMutableBuilder[Self <: GetListenerResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetListenerResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArn(value: String): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: String): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActions(value: js.Array[GetListenerDefaultAction]): Self = StObject.set(x, "defaultActions", value.asInstanceOf[js.Any])
+      inline def setDefaultActions(value: js.Array[GetListenerDefaultAction]): Self = StObject.set(x, "defaultActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActionsVarargs(value: GetListenerDefaultAction*): Self = StObject.set(x, "defaultActions", js.Array(value :_*))
+      inline def setDefaultActionsVarargs(value: GetListenerDefaultAction*): Self = StObject.set(x, "defaultActions", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerArn(value: String): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerArn(value: String): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
+      inline def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
     }
   }
 }

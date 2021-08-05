@@ -9,6 +9,5 @@ object global {
   @JSGlobal("postal")
   @js.native
   def postal: IPostal = js.native
-  @scala.inline
-  def postal_=(x: IPostal): Unit = js.Dynamic.global.updateDynamic("postal")(x.asInstanceOf[js.Any])
+  inline def postal_=(x: IPostal): Unit = js.Dynamic.global.updateDynamic("postal")(x.asInstanceOf[js.Any])
 }

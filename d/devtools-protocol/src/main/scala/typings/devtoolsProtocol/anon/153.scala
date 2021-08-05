@@ -13,22 +13,17 @@ trait `153` extends StObject {
 }
 object `153` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetFontFamiliesRequest], returnType: Unit): `153` = {
+  inline def apply(paramsType: js.Array[SetFontFamiliesRequest], returnType: Unit): `153` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`153`]
   }
   
-  @scala.inline
-  implicit class `153MutableBuilder`[Self <: `153`] (val x: Self) extends AnyVal {
+  extension [Self <: `153`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetFontFamiliesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetFontFamiliesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetFontFamiliesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetFontFamiliesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

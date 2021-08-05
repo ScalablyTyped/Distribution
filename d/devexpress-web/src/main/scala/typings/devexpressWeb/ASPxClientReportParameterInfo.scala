@@ -21,19 +21,15 @@ trait ASPxClientReportParameterInfo extends StObject {
 }
 object ASPxClientReportParameterInfo {
   
-  @scala.inline
-  def apply(Path: String, Value: js.Any): ASPxClientReportParameterInfo = {
+  inline def apply(Path: String, Value: js.Any): ASPxClientReportParameterInfo = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportParameterInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportParameterInfoMutableBuilder[Self <: ASPxClientReportParameterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportParameterInfo](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

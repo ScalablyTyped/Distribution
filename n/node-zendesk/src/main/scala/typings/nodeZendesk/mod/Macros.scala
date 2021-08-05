@@ -13,17 +13,14 @@ object Macros {
   }
   object ApplyTicketResponsePayload {
     
-    @scala.inline
-    def apply(result: Comment): ApplyTicketResponsePayload = {
+    inline def apply(result: Comment): ApplyTicketResponsePayload = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplyTicketResponsePayload]
     }
     
-    @scala.inline
-    implicit class ApplyTicketResponsePayloadMutableBuilder[Self <: ApplyTicketResponsePayload] (val x: Self) extends AnyVal {
+    extension [Self <: ApplyTicketResponsePayload](x: Self) {
       
-      @scala.inline
-      def setResult(value: Comment): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Comment): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   

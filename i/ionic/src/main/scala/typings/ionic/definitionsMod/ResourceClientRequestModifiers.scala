@@ -10,22 +10,17 @@ trait ResourceClientRequestModifiers extends StObject {
 }
 object ResourceClientRequestModifiers {
   
-  @scala.inline
-  def apply(): ResourceClientRequestModifiers = {
+  inline def apply(): ResourceClientRequestModifiers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceClientRequestModifiers]
   }
   
-  @scala.inline
-  implicit class ResourceClientRequestModifiersMutableBuilder[Self <: ResourceClientRequestModifiers] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceClientRequestModifiers](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

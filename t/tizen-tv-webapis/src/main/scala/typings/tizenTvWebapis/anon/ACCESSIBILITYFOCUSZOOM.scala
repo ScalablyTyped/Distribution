@@ -446,79 +446,55 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
 }
 object ACCESSIBILITYFOCUSZOOM {
   
-  @scala.inline
-  def apply(): ACCESSIBILITYFOCUSZOOM = {
+  inline def apply(): ACCESSIBILITYFOCUSZOOM = {
     val __obj = js.Dynamic.literal(ACCESSIBILITY_FOCUS_ZOOM = 12, ACCESSIBILITY_HIGH_CONTRAST = 13, ACCESSIBILITY_VOICE_GUIDE_SPEED = 20, CAPTION_BG_COLOR_KEY = 6, CAPTION_BG_OPACITY_KEY = 7, CAPTION_EDGE_COLOR_KEY = 9, CAPTION_EDGE_TYPE_KEY = 8, CAPTION_FG_COLOR_KEY = 4, CAPTION_FG_OPACITY_KEY = 5, CAPTION_FONT_SIZE_KEY = 2, CAPTION_FONT_STYLE_KEY = 3, CAPTION_MODE_KEY = 1, CAPTION_ONOFF_KEY = 0, CAPTION_STYLE_KEY = 21, CAPTION_WINDOW_COLOR_KEY = 10, CAPTION_WINDOW_OPACITY_KEY = 11, PRIMARY_AUDIO_LANGUAGE_KEY = 18, SECONDARY_AUDIO_LANGUAGE_KEY = 19, SMARTHUB_CHANNEL_BOUND_APPS_TICKER = 14, SUBTITLE_MODE_KEY = 17, SUBTITLE_ONOFF_KEY = 16, VOICE_GUIDE_KEY = 15)
     __obj.asInstanceOf[ACCESSIBILITYFOCUSZOOM]
   }
   
-  @scala.inline
-  implicit class ACCESSIBILITYFOCUSZOOMMutableBuilder[Self <: ACCESSIBILITYFOCUSZOOM] (val x: Self) extends AnyVal {
+  extension [Self <: ACCESSIBILITYFOCUSZOOM](x: Self) {
     
-    @scala.inline
-    def setACCESSIBILITY_FOCUS_ZOOM(value: `12`): Self = StObject.set(x, "ACCESSIBILITY_FOCUS_ZOOM", value.asInstanceOf[js.Any])
+    inline def setACCESSIBILITY_FOCUS_ZOOM(value: `12`): Self = StObject.set(x, "ACCESSIBILITY_FOCUS_ZOOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setACCESSIBILITY_HIGH_CONTRAST(value: `13`): Self = StObject.set(x, "ACCESSIBILITY_HIGH_CONTRAST", value.asInstanceOf[js.Any])
+    inline def setACCESSIBILITY_HIGH_CONTRAST(value: `13`): Self = StObject.set(x, "ACCESSIBILITY_HIGH_CONTRAST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setACCESSIBILITY_VOICE_GUIDE_SPEED(value: `20`): Self = StObject.set(x, "ACCESSIBILITY_VOICE_GUIDE_SPEED", value.asInstanceOf[js.Any])
+    inline def setACCESSIBILITY_VOICE_GUIDE_SPEED(value: `20`): Self = StObject.set(x, "ACCESSIBILITY_VOICE_GUIDE_SPEED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_BG_COLOR_KEY(value: `6`): Self = StObject.set(x, "CAPTION_BG_COLOR_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_BG_COLOR_KEY(value: `6`): Self = StObject.set(x, "CAPTION_BG_COLOR_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_BG_OPACITY_KEY(value: `7`): Self = StObject.set(x, "CAPTION_BG_OPACITY_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_BG_OPACITY_KEY(value: `7`): Self = StObject.set(x, "CAPTION_BG_OPACITY_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_EDGE_COLOR_KEY(value: `9`): Self = StObject.set(x, "CAPTION_EDGE_COLOR_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_EDGE_COLOR_KEY(value: `9`): Self = StObject.set(x, "CAPTION_EDGE_COLOR_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_EDGE_TYPE_KEY(value: `8`): Self = StObject.set(x, "CAPTION_EDGE_TYPE_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_EDGE_TYPE_KEY(value: `8`): Self = StObject.set(x, "CAPTION_EDGE_TYPE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_FG_COLOR_KEY(value: `4`): Self = StObject.set(x, "CAPTION_FG_COLOR_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_FG_COLOR_KEY(value: `4`): Self = StObject.set(x, "CAPTION_FG_COLOR_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_FG_OPACITY_KEY(value: `5`): Self = StObject.set(x, "CAPTION_FG_OPACITY_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_FG_OPACITY_KEY(value: `5`): Self = StObject.set(x, "CAPTION_FG_OPACITY_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_FONT_SIZE_KEY(value: `2`): Self = StObject.set(x, "CAPTION_FONT_SIZE_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_FONT_SIZE_KEY(value: `2`): Self = StObject.set(x, "CAPTION_FONT_SIZE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_FONT_STYLE_KEY(value: `3`): Self = StObject.set(x, "CAPTION_FONT_STYLE_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_FONT_STYLE_KEY(value: `3`): Self = StObject.set(x, "CAPTION_FONT_STYLE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_MODE_KEY(value: `1`): Self = StObject.set(x, "CAPTION_MODE_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_MODE_KEY(value: `1`): Self = StObject.set(x, "CAPTION_MODE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_ONOFF_KEY(value: `0`): Self = StObject.set(x, "CAPTION_ONOFF_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_ONOFF_KEY(value: `0`): Self = StObject.set(x, "CAPTION_ONOFF_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_STYLE_KEY(value: `21`): Self = StObject.set(x, "CAPTION_STYLE_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_STYLE_KEY(value: `21`): Self = StObject.set(x, "CAPTION_STYLE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_WINDOW_COLOR_KEY(value: `10`): Self = StObject.set(x, "CAPTION_WINDOW_COLOR_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_WINDOW_COLOR_KEY(value: `10`): Self = StObject.set(x, "CAPTION_WINDOW_COLOR_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_WINDOW_OPACITY_KEY(value: `11`): Self = StObject.set(x, "CAPTION_WINDOW_OPACITY_KEY", value.asInstanceOf[js.Any])
+    inline def setCAPTION_WINDOW_OPACITY_KEY(value: `11`): Self = StObject.set(x, "CAPTION_WINDOW_OPACITY_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPRIMARY_AUDIO_LANGUAGE_KEY(value: `18`): Self = StObject.set(x, "PRIMARY_AUDIO_LANGUAGE_KEY", value.asInstanceOf[js.Any])
+    inline def setPRIMARY_AUDIO_LANGUAGE_KEY(value: `18`): Self = StObject.set(x, "PRIMARY_AUDIO_LANGUAGE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSECONDARY_AUDIO_LANGUAGE_KEY(value: `19`): Self = StObject.set(x, "SECONDARY_AUDIO_LANGUAGE_KEY", value.asInstanceOf[js.Any])
+    inline def setSECONDARY_AUDIO_LANGUAGE_KEY(value: `19`): Self = StObject.set(x, "SECONDARY_AUDIO_LANGUAGE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMARTHUB_CHANNEL_BOUND_APPS_TICKER(value: `14`): Self = StObject.set(x, "SMARTHUB_CHANNEL_BOUND_APPS_TICKER", value.asInstanceOf[js.Any])
+    inline def setSMARTHUB_CHANNEL_BOUND_APPS_TICKER(value: `14`): Self = StObject.set(x, "SMARTHUB_CHANNEL_BOUND_APPS_TICKER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUBTITLE_MODE_KEY(value: `17`): Self = StObject.set(x, "SUBTITLE_MODE_KEY", value.asInstanceOf[js.Any])
+    inline def setSUBTITLE_MODE_KEY(value: `17`): Self = StObject.set(x, "SUBTITLE_MODE_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUBTITLE_ONOFF_KEY(value: `16`): Self = StObject.set(x, "SUBTITLE_ONOFF_KEY", value.asInstanceOf[js.Any])
+    inline def setSUBTITLE_ONOFF_KEY(value: `16`): Self = StObject.set(x, "SUBTITLE_ONOFF_KEY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVOICE_GUIDE_KEY(value: `15`): Self = StObject.set(x, "VOICE_GUIDE_KEY", value.asInstanceOf[js.Any])
+    inline def setVOICE_GUIDE_KEY(value: `15`): Self = StObject.set(x, "VOICE_GUIDE_KEY", value.asInstanceOf[js.Any])
   }
 }

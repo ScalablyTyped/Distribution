@@ -37,26 +37,22 @@ object listMod {
       @JSImport("react-movable/lib/List", "default.defaultProps.lockVertically")
       @js.native
       def lockVertically: Boolean = js.native
-      @scala.inline
-      def lockVertically_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lockVertically")(x.asInstanceOf[js.Any])
+      inline def lockVertically_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lockVertically")(x.asInstanceOf[js.Any])
       
       @JSImport("react-movable/lib/List", "default.defaultProps.removableByMove")
       @js.native
       def removableByMove: Boolean = js.native
-      @scala.inline
-      def removableByMove_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removableByMove")(x.asInstanceOf[js.Any])
+      inline def removableByMove_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removableByMove")(x.asInstanceOf[js.Any])
       
       @JSImport("react-movable/lib/List", "default.defaultProps.transitionDuration")
       @js.native
       def transitionDuration: Double = js.native
-      @scala.inline
-      def transitionDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionDuration")(x.asInstanceOf[js.Any])
+      inline def transitionDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionDuration")(x.asInstanceOf[js.Any])
       
       @JSImport("react-movable/lib/List", "default.defaultProps.voiceover")
       @js.native
       def voiceover: Canceled = js.native
-      @scala.inline
-      def voiceover_=(x: Canceled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voiceover")(x.asInstanceOf[js.Any])
+      inline def voiceover_=(x: Canceled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voiceover")(x.asInstanceOf[js.Any])
     }
   }
   

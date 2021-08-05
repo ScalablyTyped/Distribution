@@ -25,34 +25,25 @@ trait GetAppManifestResponse extends StObject {
 }
 object GetAppManifestResponse {
   
-  @scala.inline
-  def apply(errors: js.Array[AppManifestError], url: String): GetAppManifestResponse = {
+  inline def apply(errors: js.Array[AppManifestError], url: String): GetAppManifestResponse = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAppManifestResponse]
   }
   
-  @scala.inline
-  implicit class GetAppManifestResponseMutableBuilder[Self <: GetAppManifestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppManifestResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[AppManifestError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[AppManifestError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: AppManifestError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: AppManifestError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setParsed(value: AppManifestParsedProperties): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+    inline def setParsed(value: AppManifestParsedProperties): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
+    inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

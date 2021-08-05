@@ -33,43 +33,31 @@ trait ContainerServiceDeployment extends StObject {
 }
 object ContainerServiceDeployment {
   
-  @scala.inline
-  def apply(): ContainerServiceDeployment = {
+  inline def apply(): ContainerServiceDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerServiceDeployment]
   }
   
-  @scala.inline
-  implicit class ContainerServiceDeploymentMutableBuilder[Self <: ContainerServiceDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerServiceDeployment](x: Self) {
     
-    @scala.inline
-    def setContainers(value: ContainerMap): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: ContainerMap): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setPublicEndpoint(value: ContainerServiceEndpoint): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
+    inline def setPublicEndpoint(value: ContainerServiceEndpoint): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
+    inline def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
     
-    @scala.inline
-    def setState(value: ContainerServiceDeploymentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ContainerServiceDeploymentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setVersion(value: integer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: integer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

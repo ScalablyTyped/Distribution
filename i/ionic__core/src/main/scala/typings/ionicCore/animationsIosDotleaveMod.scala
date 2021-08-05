@@ -12,12 +12,8 @@ object animationsIosDotleaveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iosLeaveAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
-  @scala.inline
-  def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: Unit, duration: Double): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any], presentingEl.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Animation]
-  @scala.inline
-  def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: HTMLElement): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any], presentingEl.asInstanceOf[js.Any])).asInstanceOf[Animation]
-  @scala.inline
-  def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: HTMLElement, duration: Double): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any], presentingEl.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def iosLeaveAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: Unit, duration: Double): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any], presentingEl.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: HTMLElement): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any], presentingEl.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: HTMLElement, duration: Double): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosLeaveAnimation")(baseEl.asInstanceOf[js.Any], presentingEl.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Animation]
 }

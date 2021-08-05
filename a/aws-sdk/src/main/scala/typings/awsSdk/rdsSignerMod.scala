@@ -43,44 +43,32 @@ object rdsSignerMod {
     }
     object SignerOptions {
       
-      @scala.inline
-      def apply(): SignerOptions = {
+      inline def apply(): SignerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SignerOptions]
       }
       
-      @scala.inline
-      implicit class SignerOptionsMutableBuilder[Self <: SignerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SignerOptions](x: Self) {
         
-        @scala.inline
-        def setCredentials(value: Credentials | CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+        inline def setCredentials(value: Credentials | CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+        inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
         
-        @scala.inline
-        def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+        inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+        inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
         
-        @scala.inline
-        def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
         
-        @scala.inline
-        def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+        inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+        inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       }
     }
   }

@@ -20,19 +20,15 @@ trait KeyFilter extends StObject {
 }
 object KeyFilter {
   
-  @scala.inline
-  def apply(keys: Keys, members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): KeyFilter = {
+  inline def apply(keys: Keys, members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): KeyFilter = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], members = js.Any.fromFunction2(members))
     __obj.asInstanceOf[KeyFilter]
   }
   
-  @scala.inline
-  implicit class KeyFilterMutableBuilder[Self <: KeyFilter] (val x: Self) extends AnyVal {
+  extension [Self <: KeyFilter](x: Self) {
     
-    @scala.inline
-    def setKeys(value: Keys): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Keys): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
+    inline def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
   }
 }

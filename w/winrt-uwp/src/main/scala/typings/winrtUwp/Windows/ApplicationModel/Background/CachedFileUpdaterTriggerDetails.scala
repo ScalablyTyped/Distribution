@@ -20,22 +20,17 @@ trait CachedFileUpdaterTriggerDetails extends StObject {
 }
 object CachedFileUpdaterTriggerDetails {
   
-  @scala.inline
-  def apply(canRequestUserInput: Boolean, updateRequest: FileUpdateRequest, updateTarget: CachedFileTarget): CachedFileUpdaterTriggerDetails = {
+  inline def apply(canRequestUserInput: Boolean, updateRequest: FileUpdateRequest, updateTarget: CachedFileTarget): CachedFileUpdaterTriggerDetails = {
     val __obj = js.Dynamic.literal(canRequestUserInput = canRequestUserInput.asInstanceOf[js.Any], updateRequest = updateRequest.asInstanceOf[js.Any], updateTarget = updateTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachedFileUpdaterTriggerDetails]
   }
   
-  @scala.inline
-  implicit class CachedFileUpdaterTriggerDetailsMutableBuilder[Self <: CachedFileUpdaterTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CachedFileUpdaterTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setCanRequestUserInput(value: Boolean): Self = StObject.set(x, "canRequestUserInput", value.asInstanceOf[js.Any])
+    inline def setCanRequestUserInput(value: Boolean): Self = StObject.set(x, "canRequestUserInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRequest(value: FileUpdateRequest): Self = StObject.set(x, "updateRequest", value.asInstanceOf[js.Any])
+    inline def setUpdateRequest(value: FileUpdateRequest): Self = StObject.set(x, "updateRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTarget(value: CachedFileTarget): Self = StObject.set(x, "updateTarget", value.asInstanceOf[js.Any])
+    inline def setUpdateTarget(value: CachedFileTarget): Self = StObject.set(x, "updateTarget", value.asInstanceOf[js.Any])
   }
 }

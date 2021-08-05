@@ -14,25 +14,19 @@ trait GoogleCloudDialogflowCxV3beta1PageInfo extends StObject {
 }
 object GoogleCloudDialogflowCxV3beta1PageInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3beta1PageInfo = {
+  inline def apply(): GoogleCloudDialogflowCxV3beta1PageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1PageInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1PageInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1PageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3beta1PageInfo](x: Self) {
     
-    @scala.inline
-    def setCurrentPage(value: String): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: String): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+    inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
-    @scala.inline
-    def setFormInfo(value: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo): Self = StObject.set(x, "formInfo", value.asInstanceOf[js.Any])
+    inline def setFormInfo(value: GoogleCloudDialogflowCxV3beta1PageInfoFormInfo): Self = StObject.set(x, "formInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormInfoUndefined: Self = StObject.set(x, "formInfo", js.undefined)
+    inline def setFormInfoUndefined: Self = StObject.set(x, "formInfo", js.undefined)
   }
 }

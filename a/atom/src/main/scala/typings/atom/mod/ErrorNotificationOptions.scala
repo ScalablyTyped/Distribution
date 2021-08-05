@@ -12,19 +12,15 @@ trait ErrorNotificationOptions
 }
 object ErrorNotificationOptions {
   
-  @scala.inline
-  def apply(): ErrorNotificationOptions = {
+  inline def apply(): ErrorNotificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorNotificationOptions]
   }
   
-  @scala.inline
-  implicit class ErrorNotificationOptionsMutableBuilder[Self <: ErrorNotificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorNotificationOptions](x: Self) {
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

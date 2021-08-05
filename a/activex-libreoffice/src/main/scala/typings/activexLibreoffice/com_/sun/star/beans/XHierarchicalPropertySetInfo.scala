@@ -32,8 +32,7 @@ trait XHierarchicalPropertySetInfo
 }
 object XHierarchicalPropertySetInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getPropertyByHierarchicalName: String => Property,
     hasPropertyByHierarchicalName: String => Boolean,
@@ -44,13 +43,10 @@ object XHierarchicalPropertySetInfo {
     __obj.asInstanceOf[XHierarchicalPropertySetInfo]
   }
   
-  @scala.inline
-  implicit class XHierarchicalPropertySetInfoMutableBuilder[Self <: XHierarchicalPropertySetInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchicalPropertySetInfo](x: Self) {
     
-    @scala.inline
-    def setGetPropertyByHierarchicalName(value: String => Property): Self = StObject.set(x, "getPropertyByHierarchicalName", js.Any.fromFunction1(value))
+    inline def setGetPropertyByHierarchicalName(value: String => Property): Self = StObject.set(x, "getPropertyByHierarchicalName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPropertyByHierarchicalName(value: String => Boolean): Self = StObject.set(x, "hasPropertyByHierarchicalName", js.Any.fromFunction1(value))
+    inline def setHasPropertyByHierarchicalName(value: String => Boolean): Self = StObject.set(x, "hasPropertyByHierarchicalName", js.Any.fromFunction1(value))
   }
 }

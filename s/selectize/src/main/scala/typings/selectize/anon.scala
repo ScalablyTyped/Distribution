@@ -16,23 +16,18 @@ object anon {
   }
   object Direction {
     
-    @scala.inline
-    def apply(field: String): Direction = {
+    inline def apply(field: String): Direction = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direction]
     }
     
-    @scala.inline
-    implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+    extension [Self <: Direction](x: Self) {
       
-      @scala.inline
-      def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     }
   }
 }

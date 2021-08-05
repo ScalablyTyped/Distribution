@@ -24,8 +24,7 @@ object scrollEventsMod {
     }
     object ScrollEvent {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         register: (String, js.Function2[/* to */ String, /* element */ js.Any, Unit]) => Unit,
         remove: String => Unit
       ): ScrollEvent = {
@@ -33,14 +32,11 @@ object scrollEventsMod {
         __obj.asInstanceOf[ScrollEvent]
       }
       
-      @scala.inline
-      implicit class ScrollEventMutableBuilder[Self <: ScrollEvent] (val x: Self) extends AnyVal {
+      extension [Self <: ScrollEvent](x: Self) {
         
-        @scala.inline
-        def setRegister(value: (String, js.Function2[/* to */ String, /* element */ js.Any, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+        inline def setRegister(value: (String, js.Function2[/* to */ String, /* element */ js.Any, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+        inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       }
     }
   }

@@ -11,8 +11,7 @@ object mod {
   @param concurrency - Concurrency limit. Minimum: `1`.
   @returns A `limit` function.
   */
-  @scala.inline
-  def apply(concurrency: Double): Limit = ^.asInstanceOf[js.Dynamic].apply(concurrency.asInstanceOf[js.Any]).asInstanceOf[Limit]
+  inline def apply(concurrency: Double): Limit = ^.asInstanceOf[js.Dynamic].apply(concurrency.asInstanceOf[js.Any]).asInstanceOf[Limit]
   
   @JSImport("p-limit", JSImport.Namespace)
   @js.native

@@ -18,25 +18,19 @@ trait ExportServerEngineAttributeResponse extends StObject {
 }
 object ExportServerEngineAttributeResponse {
   
-  @scala.inline
-  def apply(): ExportServerEngineAttributeResponse = {
+  inline def apply(): ExportServerEngineAttributeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportServerEngineAttributeResponse]
   }
   
-  @scala.inline
-  implicit class ExportServerEngineAttributeResponseMutableBuilder[Self <: ExportServerEngineAttributeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportServerEngineAttributeResponse](x: Self) {
     
-    @scala.inline
-    def setEngineAttribute(value: EngineAttribute): Self = StObject.set(x, "EngineAttribute", value.asInstanceOf[js.Any])
+    inline def setEngineAttribute(value: EngineAttribute): Self = StObject.set(x, "EngineAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineAttributeUndefined: Self = StObject.set(x, "EngineAttribute", js.undefined)
+    inline def setEngineAttributeUndefined: Self = StObject.set(x, "EngineAttribute", js.undefined)
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
   }
 }

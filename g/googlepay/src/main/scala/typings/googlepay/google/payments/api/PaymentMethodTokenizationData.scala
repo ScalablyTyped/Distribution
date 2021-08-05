@@ -32,20 +32,16 @@ trait PaymentMethodTokenizationData extends StObject {
 }
 object PaymentMethodTokenizationData {
   
-  @scala.inline
-  def apply(token: String, `type`: PaymentMethodTokenizationType): PaymentMethodTokenizationData = {
+  inline def apply(token: String, `type`: PaymentMethodTokenizationType): PaymentMethodTokenizationData = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodTokenizationData]
   }
   
-  @scala.inline
-  implicit class PaymentMethodTokenizationDataMutableBuilder[Self <: PaymentMethodTokenizationData] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodTokenizationData](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PaymentMethodTokenizationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PaymentMethodTokenizationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

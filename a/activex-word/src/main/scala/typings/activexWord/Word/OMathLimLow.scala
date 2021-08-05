@@ -18,13 +18,12 @@ trait OMathLimLow extends StObject {
   
   def ToLimUpp(): OMathFunction
   
-  @JSName("Word.OMathLimLow_typekey")
+  /* private */ @JSName("Word.OMathLimLow_typekey")
   var WordDotOMathLimLow_typekey: OMathLimLow
 }
 object OMathLimLow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     E: OMath,
@@ -38,28 +37,20 @@ object OMathLimLow {
     __obj.asInstanceOf[OMathLimLow]
   }
   
-  @scala.inline
-  implicit class OMathLimLowMutableBuilder[Self <: OMathLimLow] (val x: Self) extends AnyVal {
+  extension [Self <: OMathLimLow](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLim(value: OMath): Self = StObject.set(x, "Lim", value.asInstanceOf[js.Any])
+    inline def setLim(value: OMath): Self = StObject.set(x, "Lim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToLimUpp(value: () => OMathFunction): Self = StObject.set(x, "ToLimUpp", js.Any.fromFunction0(value))
+    inline def setToLimUpp(value: () => OMathFunction): Self = StObject.set(x, "ToLimUpp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotOMathLimLow_typekey(value: OMathLimLow): Self = StObject.set(x, "Word.OMathLimLow_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathLimLow_typekey(value: OMathLimLow): Self = StObject.set(x, "Word.OMathLimLow_typekey", value.asInstanceOf[js.Any])
   }
 }

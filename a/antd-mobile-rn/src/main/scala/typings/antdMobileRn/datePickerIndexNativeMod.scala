@@ -24,14 +24,12 @@ object datePickerIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/date-picker/index.native", "default.contextTypes")
     @js.native
     def contextTypes: AntLocale = js.native
-    @scala.inline
-    def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/date-picker/index.native", "default.defaultProps")
     @js.native
     def defaultProps: MinuteStep = js.native
-    @scala.inline
-    def defaultProps_=(x: MinuteStep): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: MinuteStep): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -48,26 +46,20 @@ object datePickerIndexNativeMod {
   }
   object DatePickerNativeProps {
     
-    @scala.inline
-    def apply(): DatePickerNativeProps = {
+    inline def apply(): DatePickerNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatePickerNativeProps]
     }
     
-    @scala.inline
-    implicit class DatePickerNativePropsMutableBuilder[Self <: DatePickerNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: IPickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IPickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTriggerTypes(value: String): Self = StObject.set(x, "triggerTypes", value.asInstanceOf[js.Any])
+      inline def setTriggerTypes(value: String): Self = StObject.set(x, "triggerTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerTypesUndefined: Self = StObject.set(x, "triggerTypes", js.undefined)
+      inline def setTriggerTypesUndefined: Self = StObject.set(x, "triggerTypes", js.undefined)
     }
   }
 }

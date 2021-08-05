@@ -17,31 +17,23 @@ trait PolylineSelectors extends StObject {
 }
 object PolylineSelectors {
   
-  @scala.inline
-  def apply(): PolylineSelectors = {
+  inline def apply(): PolylineSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolylineSelectors]
   }
   
-  @scala.inline
-  implicit class PolylineSelectorsMutableBuilder[Self <: PolylineSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: PolylineSelectors](x: Self) {
     
-    @scala.inline
-    def setBody(value: SVGPolylineAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: SVGPolylineAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setLabel(value: SVGTextAttributes): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: SVGTextAttributes): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

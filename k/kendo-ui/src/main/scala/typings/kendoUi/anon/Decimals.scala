@@ -22,8 +22,7 @@ trait Decimals extends StObject {
 }
 object Decimals {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Comma: String,
     Dot: String,
     decimals: Double,
@@ -37,31 +36,22 @@ object Decimals {
     __obj.asInstanceOf[Decimals]
   }
   
-  @scala.inline
-  implicit class DecimalsMutableBuilder[Self <: Decimals] (val x: Self) extends AnyVal {
+  extension [Self <: Decimals](x: Self) {
     
-    @scala.inline
-    def setComma(value: String): Self = StObject.set(x, ",", value.asInstanceOf[js.Any])
+    inline def setComma(value: String): Self = StObject.set(x, ",", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDot(value: String): Self = StObject.set(x, ".", value.asInstanceOf[js.Any])
+    inline def setDot(value: String): Self = StObject.set(x, ".", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSize(value: js.Array[Double]): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
+    inline def setGroupSize(value: js.Array[Double]): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSizeVarargs(value: Double*): Self = StObject.set(x, "groupSize", js.Array(value :_*))
+    inline def setGroupSizeVarargs(value: Double*): Self = StObject.set(x, "groupSize", js.Array(value :_*))
     
-    @scala.inline
-    def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

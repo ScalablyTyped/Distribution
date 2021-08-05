@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IAPICompleteParam extends StObject
 object IAPICompleteParam {
   
-  @scala.inline
-  def IAPIError(errMsg: String): typings.wechatMiniprogram.IAPIError = {
+  inline def IAPIError(errMsg: String): typings.wechatMiniprogram.IAPIError = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.wechatMiniprogram.IAPIError]
   }
   
-  @scala.inline
-  def IAPISuccessParam(errMsg: String): typings.wechatMiniprogram.IAPISuccessParam = {
+  inline def IAPISuccessParam(errMsg: String): typings.wechatMiniprogram.IAPISuccessParam = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.wechatMiniprogram.IAPISuccessParam]
   }

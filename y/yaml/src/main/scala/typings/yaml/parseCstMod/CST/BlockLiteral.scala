@@ -17,8 +17,7 @@ trait BlockLiteral
 }
 object BlockLiteral {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chomping: CLIP | KEEP | STRIP,
     hasComment: Boolean,
     hasProps: Boolean,
@@ -33,10 +32,8 @@ object BlockLiteral {
     __obj.asInstanceOf[BlockLiteral]
   }
   
-  @scala.inline
-  implicit class BlockLiteralMutableBuilder[Self <: BlockLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: BlockLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: BLOCK_LITERAL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BLOCK_LITERAL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait GcsData extends StObject {
 }
 object GcsData {
   
-  @scala.inline
-  def apply(): GcsData = {
+  inline def apply(): GcsData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcsData]
   }
   
-  @scala.inline
-  implicit class GcsDataMutableBuilder[Self <: GcsData] (val x: Self) extends AnyVal {
+  extension [Self <: GcsData](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
   }
 }

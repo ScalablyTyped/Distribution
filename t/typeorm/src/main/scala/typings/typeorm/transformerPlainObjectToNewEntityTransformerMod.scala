@@ -16,7 +16,7 @@ object transformerPlainObjectToNewEntityTransformerMod {
       * Since db returns a duplicated rows of the data where accuracies of the same object can be duplicated
       * we need to group our result and we must have some unique id (primary key in our case)
       */
-    var groupAndTransform: js.Any = js.native
+    /* private */ var groupAndTransform: js.Any = js.native
     
     def transform[T](newEntity: T, `object`: ObjectLiteral, metadata: EntityMetadata): T = js.native
     def transform[T](

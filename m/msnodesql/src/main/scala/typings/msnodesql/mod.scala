@@ -12,33 +12,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def open(connectionString: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Connection]
-  @scala.inline
-  def open(connectionString: String, callback: OpenCallback): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connectionString.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def open(connectionString: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  inline def open(connectionString: String, callback: OpenCallback): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connectionString.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
-  @scala.inline
-  def query(connectionString: String, query: String): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  @scala.inline
-  def query(connectionString: String, query: String, callback: QueryCallback[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  @scala.inline
-  def query(connectionString: String, query: String, params: js.Array[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  @scala.inline
-  def query(connectionString: String, query: String, params: js.Array[js.Any], callback: QueryCallback[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query(connectionString: String, query: String): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query(connectionString: String, query: String, callback: QueryCallback[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query(connectionString: String, query: String, params: js.Array[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query(connectionString: String, query: String, params: js.Array[js.Any], callback: QueryCallback[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
   
-  @scala.inline
-  def queryRaw(connectionString: String, query: String): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  @scala.inline
-  def queryRaw(connectionString: String, query: String, callback: QueryRawCallback): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  @scala.inline
-  def queryRaw(connectionString: String, query: String, params: js.Array[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  @scala.inline
-  def queryRaw(connectionString: String, query: String, params: js.Array[js.Any], callback: QueryRawCallback): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def queryRaw(connectionString: String, query: String): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def queryRaw(connectionString: String, query: String, callback: QueryRawCallback): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def queryRaw(connectionString: String, query: String, params: js.Array[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def queryRaw(connectionString: String, query: String, params: js.Array[js.Any], callback: QueryRawCallback): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
   
-  @scala.inline
-  def query_T[T](connectionString: String, query: String, callback: QueryCallback[T]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  @scala.inline
-  def query_T[T](connectionString: String, query: String, params: js.Array[js.Any], callback: QueryCallback[T]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query_T[T](connectionString: String, query: String, callback: QueryCallback[T]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query_T[T](connectionString: String, query: String, params: js.Array[js.Any], callback: QueryCallback[T]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
   
   @js.native
   trait Connection extends StObject {
@@ -97,20 +85,16 @@ object mod {
   }
   object QueryRawColumn {
     
-    @scala.inline
-    def apply(): QueryRawColumn = {
+    inline def apply(): QueryRawColumn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryRawColumn]
     }
     
-    @scala.inline
-    implicit class QueryRawColumnMutableBuilder[Self <: QueryRawColumn] (val x: Self) extends AnyVal {
+    extension [Self <: QueryRawColumn](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -122,26 +106,20 @@ object mod {
   }
   object QueryRawResult {
     
-    @scala.inline
-    def apply(meta: js.Array[QueryRawColumn], rows: js.Array[js.Array[js.Any]]): QueryRawResult = {
+    inline def apply(meta: js.Array[QueryRawColumn], rows: js.Array[js.Array[js.Any]]): QueryRawResult = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryRawResult]
     }
     
-    @scala.inline
-    implicit class QueryRawResultMutableBuilder[Self <: QueryRawResult] (val x: Self) extends AnyVal {
+    extension [Self <: QueryRawResult](x: Self) {
       
-      @scala.inline
-      def setMeta(value: js.Array[QueryRawColumn]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Array[QueryRawColumn]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaVarargs(value: QueryRawColumn*): Self = StObject.set(x, "meta", js.Array(value :_*))
+      inline def setMetaVarargs(value: QueryRawColumn*): Self = StObject.set(x, "meta", js.Array(value :_*))
       
-      @scala.inline
-      def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
   

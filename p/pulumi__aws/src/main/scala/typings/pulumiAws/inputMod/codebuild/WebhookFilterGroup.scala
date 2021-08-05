@@ -14,22 +14,17 @@ trait WebhookFilterGroup extends StObject {
 }
 object WebhookFilterGroup {
   
-  @scala.inline
-  def apply(): WebhookFilterGroup = {
+  inline def apply(): WebhookFilterGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebhookFilterGroup]
   }
   
-  @scala.inline
-  implicit class WebhookFilterGroupMutableBuilder[Self <: WebhookFilterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookFilterGroup](x: Self) {
     
-    @scala.inline
-    def setFilters(value: Input[js.Array[Input[WebhookFilterGroupFilter]]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Input[js.Array[Input[WebhookFilterGroupFilter]]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Input[WebhookFilterGroupFilter]*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Input[WebhookFilterGroupFilter]*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

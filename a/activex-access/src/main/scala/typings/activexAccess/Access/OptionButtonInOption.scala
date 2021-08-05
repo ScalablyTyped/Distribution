@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OptionButtonInOption extends StObject {
   
-  @JSName("Access._OptionButtonInOption_typekey")
+  /* private */ @JSName("Access._OptionButtonInOption_typekey")
   var AccessDot_OptionButtonInOption_typekey: OptionButtonInOption = js.native
   
   var AddColon: Boolean = js.native

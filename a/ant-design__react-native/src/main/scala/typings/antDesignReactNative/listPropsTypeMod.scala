@@ -33,35 +33,26 @@ object listPropsTypeMod {
   }
   object BriefProps {
     
-    @scala.inline
-    def apply(): BriefProps = {
+    inline def apply(): BriefProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BriefProps]
     }
     
-    @scala.inline
-    implicit class BriefPropsMutableBuilder[Self <: BriefProps] (val x: Self) extends AnyVal {
+    extension [Self <: BriefProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -91,86 +82,60 @@ object listPropsTypeMod {
   }
   object ListItemPropsType {
     
-    @scala.inline
-    def apply(): ListItemPropsType = {
+    inline def apply(): ListItemPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListItemPropsType]
     }
     
-    @scala.inline
-    implicit class ListItemPropsTypeMutableBuilder[Self <: ListItemPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemPropsType](x: Self) {
       
-      @scala.inline
-      def setActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
+      inline def setActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveStyleNull: Self = StObject.set(x, "activeStyle", null)
+      inline def setActiveStyleNull: Self = StObject.set(x, "activeStyle", null)
       
-      @scala.inline
-      def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
+      inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
-      @scala.inline
-      def setAlign(value: top | middle | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: top | middle | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setArrow(value: horizontal | down | up | empty | _empty): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: horizontal | down | up | empty | _empty): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+      inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setMultipleLine(value: Boolean): Self = StObject.set(x, "multipleLine", value.asInstanceOf[js.Any])
+      inline def setMultipleLine(value: Boolean): Self = StObject.set(x, "multipleLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleLineUndefined: Self = StObject.set(x, "multipleLine", js.undefined)
+      inline def setMultipleLineUndefined: Self = StObject.set(x, "multipleLine", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: android | ios): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: android | ios): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setThumb(value: ReactNode): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+      inline def setThumb(value: ReactNode): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbNull: Self = StObject.set(x, "thumb", null)
+      inline def setThumbNull: Self = StObject.set(x, "thumb", null)
       
-      @scala.inline
-      def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+      inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -184,41 +149,30 @@ object listPropsTypeMod {
   }
   object ListPropsType {
     
-    @scala.inline
-    def apply(): ListPropsType = {
+    inline def apply(): ListPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListPropsType]
     }
     
-    @scala.inline
-    implicit class ListPropsTypeMutableBuilder[Self <: ListPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: ListPropsType](x: Self) {
       
-      @scala.inline
-      def setChildren(value: `false` | Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: `false` | Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setRenderFooter(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
+      inline def setRenderFooter(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderFooterFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
+      inline def setRenderFooterFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
+      inline def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
       
-      @scala.inline
-      def setRenderHeader(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
+      inline def setRenderHeader(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderHeaderFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
+      inline def setRenderHeaderFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
+      inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     }
   }
 }

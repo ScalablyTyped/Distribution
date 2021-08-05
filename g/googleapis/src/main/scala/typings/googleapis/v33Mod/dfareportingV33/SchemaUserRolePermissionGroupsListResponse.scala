@@ -22,28 +22,21 @@ trait SchemaUserRolePermissionGroupsListResponse extends StObject {
 }
 object SchemaUserRolePermissionGroupsListResponse {
   
-  @scala.inline
-  def apply(): SchemaUserRolePermissionGroupsListResponse = {
+  inline def apply(): SchemaUserRolePermissionGroupsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserRolePermissionGroupsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUserRolePermissionGroupsListResponseMutableBuilder[Self <: SchemaUserRolePermissionGroupsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserRolePermissionGroupsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUserRolePermissionGroups(value: js.Array[SchemaUserRolePermissionGroup]): Self = StObject.set(x, "userRolePermissionGroups", value.asInstanceOf[js.Any])
+    inline def setUserRolePermissionGroups(value: js.Array[SchemaUserRolePermissionGroup]): Self = StObject.set(x, "userRolePermissionGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRolePermissionGroupsUndefined: Self = StObject.set(x, "userRolePermissionGroups", js.undefined)
+    inline def setUserRolePermissionGroupsUndefined: Self = StObject.set(x, "userRolePermissionGroups", js.undefined)
     
-    @scala.inline
-    def setUserRolePermissionGroupsVarargs(value: SchemaUserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value :_*))
+    inline def setUserRolePermissionGroupsVarargs(value: SchemaUserRolePermissionGroup*): Self = StObject.set(x, "userRolePermissionGroups", js.Array(value :_*))
   }
 }

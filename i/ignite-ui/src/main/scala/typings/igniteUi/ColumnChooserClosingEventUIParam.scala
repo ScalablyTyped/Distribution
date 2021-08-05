@@ -18,25 +18,19 @@ trait ColumnChooserClosingEventUIParam extends StObject {
 }
 object ColumnChooserClosingEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnChooserClosingEventUIParam = {
+  inline def apply(): ColumnChooserClosingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnChooserClosingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnChooserClosingEventUIParamMutableBuilder[Self <: ColumnChooserClosingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnChooserClosingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
+    inline def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
+    inline def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -21,22 +21,17 @@ trait ShadowLocation extends StObject
 object ShadowLocation {
   
   /** shadow is located along the lower and left sides. */
-  @scala.inline
-  def BOTTOM_LEFT: `3` = 3.asInstanceOf[`3`]
+  inline def BOTTOM_LEFT: `3` = 3.asInstanceOf[`3`]
   
   /** shadow is located along the lower and right sides. */
-  @scala.inline
-  def BOTTOM_RIGHT: `4` = 4.asInstanceOf[`4`]
+  inline def BOTTOM_RIGHT: `4` = 4.asInstanceOf[`4`]
   
   /** no shadow. */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** shadow is located along the upper and left sides. */
-  @scala.inline
-  def TOP_LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def TOP_LEFT: `1` = 1.asInstanceOf[`1`]
   
   /** shadow is located along the upper and right sides. */
-  @scala.inline
-  def TOP_RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def TOP_RIGHT: `2` = 2.asInstanceOf[`2`]
 }

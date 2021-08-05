@@ -18,28 +18,21 @@ trait ListTablesOutput extends StObject {
 }
 object ListTablesOutput {
   
-  @scala.inline
-  def apply(): ListTablesOutput = {
+  inline def apply(): ListTablesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTablesOutput]
   }
   
-  @scala.inline
-  implicit class ListTablesOutputMutableBuilder[Self <: ListTablesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTablesOutput](x: Self) {
     
-    @scala.inline
-    def setLastEvaluatedTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedTableNameUndefined: Self = StObject.set(x, "LastEvaluatedTableName", js.undefined)
+    inline def setLastEvaluatedTableNameUndefined: Self = StObject.set(x, "LastEvaluatedTableName", js.undefined)
     
-    @scala.inline
-    def setTableNames(value: TableNameList): Self = StObject.set(x, "TableNames", value.asInstanceOf[js.Any])
+    inline def setTableNames(value: TableNameList): Self = StObject.set(x, "TableNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
+    inline def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
     
-    @scala.inline
-    def setTableNamesVarargs(value: TableName*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
+    inline def setTableNamesVarargs(value: TableName*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait PutAppsListRequest extends StObject {
 }
 object PutAppsListRequest {
   
-  @scala.inline
-  def apply(AppsList: AppsListData): PutAppsListRequest = {
+  inline def apply(AppsList: AppsListData): PutAppsListRequest = {
     val __obj = js.Dynamic.literal(AppsList = AppsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAppsListRequest]
   }
   
-  @scala.inline
-  implicit class PutAppsListRequestMutableBuilder[Self <: PutAppsListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAppsListRequest](x: Self) {
     
-    @scala.inline
-    def setAppsList(value: AppsListData): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
+    inline def setAppsList(value: AppsListData): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
+    inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
   }
 }

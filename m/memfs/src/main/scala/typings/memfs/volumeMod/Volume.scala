@@ -35,12 +35,12 @@ class Volume () extends StObject {
   
   var WriteStream: Instantiable1[/* args (repeated) */ js.Any, IWriteStream] = js.native
   
-  var _toJSON: js.Any = js.native
+  /* private */ var _toJSON: js.Any = js.native
   
   def access(path: PathLike, callback: TCallback[Unit]): js.Any = js.native
   def access(path: PathLike, mode: Double, callback: TCallback[Unit]): js.Any = js.native
   
-  var accessBase: js.Any = js.native
+  /* private */ var accessBase: js.Any = js.native
   
   def accessSync(path: PathLike): Unit = js.native
   def accessSync(path: PathLike, mode: Double): Unit = js.native
@@ -55,26 +55,26 @@ class Volume () extends StObject {
   
   def chmod(path: PathLike, mode: TMode, callback: TCallback[Unit]): Unit = js.native
   
-  var chmodBase: js.Any = js.native
+  /* private */ var chmodBase: js.Any = js.native
   
   def chmodSync(path: PathLike, mode: TMode): Unit = js.native
   
   def chown(path: PathLike, uid: Double, gid: Double, callback: TCallback[Unit]): Unit = js.native
   
-  var chownBase: js.Any = js.native
+  /* private */ var chownBase: js.Any = js.native
   
   def chownSync(path: PathLike, uid: Double, gid: Double): Unit = js.native
   
   def close(fd: Double, callback: TCallback[Unit]): Unit = js.native
   
-  var closeFile: js.Any = js.native
+  /* private */ var closeFile: js.Any = js.native
   
   def closeSync(fd: Double): Unit = js.native
   
   def copyFile(src: PathLike, dest: PathLike, callback: TCallback[Unit]): js.Any = js.native
   def copyFile(src: PathLike, dest: PathLike, flags: TFlagsCopy, callback: TCallback[Unit]): js.Any = js.native
   
-  var copyFileBase: js.Any = js.native
+  /* private */ var copyFileBase: js.Any = js.native
   
   def copyFileSync(src: PathLike, dest: PathLike): Unit = js.native
   def copyFileSync(src: PathLike, dest: PathLike, flags: TFlagsCopy): Unit = js.native
@@ -100,29 +100,29 @@ class Volume () extends StObject {
   
   def deleteLink(link: Link): Boolean = js.native
   
-  var deleteNode: js.Any = js.native
+  /* private */ var deleteNode: js.Any = js.native
   
   def exists(path: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
   
-  var existsBase: js.Any = js.native
+  /* private */ var existsBase: js.Any = js.native
   
   def existsSync(path: PathLike): Boolean = js.native
   
   def fchmod(fd: Double, mode: TMode, callback: TCallback[Unit]): Unit = js.native
   
-  var fchmodBase: js.Any = js.native
+  /* private */ var fchmodBase: js.Any = js.native
   
   def fchmodSync(fd: Double, mode: TMode): Unit = js.native
   
   def fchown(fd: Double, uid: Double, gid: Double, callback: TCallback[Unit]): Unit = js.native
   
-  var fchownBase: js.Any = js.native
+  /* private */ var fchownBase: js.Any = js.native
   
   def fchownSync(fd: Double, uid: Double, gid: Double): Unit = js.native
   
   def fdatasync(fd: Double, callback: TCallback[Unit]): Unit = js.native
   
-  var fdatasyncBase: js.Any = js.native
+  /* private */ var fdatasyncBase: js.Any = js.native
   
   def fdatasyncSync(fd: Double): Unit = js.native
   
@@ -137,7 +137,7 @@ class Volume () extends StObject {
   def fstat(fd: Double, callback: TCallback[default[TStatNumber]]): js.Any = js.native
   def fstat(fd: Double, options: IStatOptions, callback: TCallback[default[TStatNumber]]): js.Any = js.native
   
-  var fstatBase: js.Any = js.native
+  /* private */ var fstatBase: js.Any = js.native
   
   def fstatSync(fd: Double): default[Double] = js.native
   def fstatSync(fd: Double, options: Bigint): default[Double] = js.native
@@ -145,44 +145,44 @@ class Volume () extends StObject {
   
   def fsync(fd: Double, callback: TCallback[Unit]): Unit = js.native
   
-  var fsyncBase: js.Any = js.native
+  /* private */ var fsyncBase: js.Any = js.native
   
   def fsyncSync(fd: Double): Unit = js.native
   
   def ftruncate(fd: Double, callback: TCallback[Unit]): js.Any = js.native
   def ftruncate(fd: Double, len: Double, callback: TCallback[Unit]): js.Any = js.native
   
-  var ftruncateBase: js.Any = js.native
+  /* private */ var ftruncateBase: js.Any = js.native
   
   def ftruncateSync(fd: Double): Unit = js.native
   def ftruncateSync(fd: Double, len: Double): Unit = js.native
   
   def futimes(fd: Double, atime: TTime, mtime: TTime, callback: TCallback[Unit]): Unit = js.native
   
-  var futimesBase: js.Any = js.native
+  /* private */ var futimesBase: js.Any = js.native
   
   def futimesSync(fd: Double, atime: TTime, mtime: TTime): Unit = js.native
   
   def genRndStr(): js.Any = js.native
   
-  var getFileByFd: js.Any = js.native
+  /* private */ var getFileByFd: js.Any = js.native
   
-  var getFileByFdOrThrow: js.Any = js.native
+  /* private */ var getFileByFdOrThrow: js.Any = js.native
   
   def getLink(steps: js.Array[String]): Link | Null = js.native
   
-  var getLinkAsDirOrThrow: js.Any = js.native
+  /* private */ var getLinkAsDirOrThrow: js.Any = js.native
   
   def getLinkOrThrow(filename: String): Link = js.native
   def getLinkOrThrow(filename: String, funcName: String): Link = js.native
   
-  var getLinkParent: js.Any = js.native
+  /* private */ var getLinkParent: js.Any = js.native
   
-  var getLinkParentAsDirOrThrow: js.Any = js.native
+  /* private */ var getLinkParentAsDirOrThrow: js.Any = js.native
   
-  var getNode: js.Any = js.native
+  /* private */ var getNode: js.Any = js.native
   
-  var getNodeByIdOrCreate: js.Any = js.native
+  /* private */ var getNodeByIdOrCreate: js.Any = js.native
   
   def getResolvedLink(filenameOrSteps: String): Link | Null = js.native
   def getResolvedLink(filenameOrSteps: js.Array[String]): Link | Null = js.native
@@ -196,26 +196,26 @@ class Volume () extends StObject {
   
   def lchmod(path: PathLike, mode: TMode, callback: TCallback[Unit]): Unit = js.native
   
-  var lchmodBase: js.Any = js.native
+  /* private */ var lchmodBase: js.Any = js.native
   
   def lchmodSync(path: PathLike, mode: TMode): Unit = js.native
   
   def lchown(path: PathLike, uid: Double, gid: Double, callback: TCallback[Unit]): Unit = js.native
   
-  var lchownBase: js.Any = js.native
+  /* private */ var lchownBase: js.Any = js.native
   
   def lchownSync(path: PathLike, uid: Double, gid: Double): Unit = js.native
   
   def link(existingPath: PathLike, newPath: PathLike, callback: TCallback[Unit]): Unit = js.native
   
-  var linkBase: js.Any = js.native
+  /* private */ var linkBase: js.Any = js.native
   
   def linkSync(existingPath: PathLike, newPath: PathLike): Unit = js.native
   
   def lstat(path: PathLike, callback: TCallback[default[TStatNumber]]): js.Any = js.native
   def lstat(path: PathLike, options: IStatOptions, callback: TCallback[default[TStatNumber]]): js.Any = js.native
   
-  var lstatBase: js.Any = js.native
+  /* private */ var lstatBase: js.Any = js.native
   
   def lstatSync(path: PathLike): default[Double] = js.native
   def lstatSync(path: PathLike, options: Bigint): default[Double] = js.native
@@ -227,7 +227,7 @@ class Volume () extends StObject {
   def mkdir(path: PathLike, mode: IMkdirOptions, callback: TCallback[Unit]): js.Any = js.native
   def mkdir(path: PathLike, mode: TMode, callback: TCallback[Unit]): js.Any = js.native
   
-  var mkdirBase: js.Any = js.native
+  /* private */ var mkdirBase: js.Any = js.native
   
   def mkdirSync(path: PathLike): Unit = js.native
   def mkdirSync(path: PathLike, options: IMkdirOptions): Unit = js.native
@@ -241,7 +241,7 @@ class Volume () extends StObject {
     * @param filename
     * @param modeNum
     */
-  var mkdirpBase: js.Any = js.native
+  /* private */ var mkdirpBase: js.Any = js.native
   
   def mkdirpSync(path: PathLike): Unit = js.native
   def mkdirpSync(path: PathLike, mode: TMode): Unit = js.native
@@ -249,36 +249,36 @@ class Volume () extends StObject {
   def mkdtemp(prefix: String, callback: TCallback[Unit]): js.Any = js.native
   def mkdtemp(prefix: String, options: IOptions, callback: TCallback[Unit]): js.Any = js.native
   
-  var mkdtempBase: js.Any = js.native
+  /* private */ var mkdtempBase: js.Any = js.native
   
   def mkdtempSync(prefix: String): TDataOut = js.native
   def mkdtempSync(prefix: String, options: IOptions): TDataOut = js.native
   
   def mountSync(mountpoint: String, json: DirectoryJSON): Unit = js.native
   
-  var newFdNumber: js.Any = js.native
+  /* private */ var newFdNumber: js.Any = js.native
   
-  var newInoNumber: js.Any = js.native
+  /* private */ var newInoNumber: js.Any = js.native
   
   def open(path: PathLike, flags: TFlags, /* ... */ callback: TCallback[Double]): js.Any = js.native
   def open(path: PathLike, flags: TFlags, mode: TMode, callback: TCallback[Double]): js.Any = js.native
   
-  var openBase: js.Any = js.native
+  /* private */ var openBase: js.Any = js.native
   
-  var openFile: js.Any = js.native
+  /* private */ var openFile: js.Any = js.native
   
-  var openFileOrGetById: js.Any = js.native
+  /* private */ var openFileOrGetById: js.Any = js.native
   
   var openFiles: Double = js.native
   
-  var openLink: js.Any = js.native
+  /* private */ var openLink: js.Any = js.native
   
   def openSync(path: PathLike, flags: TFlags): Double = js.native
   def openSync(path: PathLike, flags: TFlags, mode: TMode): Double = js.native
   
   def promises: IPromisesAPI = js.native
   
-  var promisesApi: js.Any = js.native
+  /* private */ var promisesApi: js.Any = js.native
   
   var props: typings.memfs.anon.File = js.native
   
@@ -309,13 +309,13 @@ class Volume () extends StObject {
     ]
   ): Unit = js.native
   
-  var readBase: js.Any = js.native
+  /* private */ var readBase: js.Any = js.native
   
   def readFile(id: TFileId, callback: TCallback[TDataOut]): js.Any = js.native
   def readFile(id: TFileId, options: String, callback: TCallback[TDataOut]): js.Any = js.native
   def readFile(id: TFileId, options: IReadFileOptions, callback: TCallback[TDataOut]): js.Any = js.native
   
-  var readFileBase: js.Any = js.native
+  /* private */ var readFileBase: js.Any = js.native
   
   def readFileSync(file: TFileId): TDataOut = js.native
   def readFileSync(file: TFileId, options: String): TDataOut = js.native
@@ -336,7 +336,7 @@ class Volume () extends StObject {
     callback: TCallback[js.Array[TDataOut | typings.memfs.direntMod.default]]
   ): js.Any = js.native
   
-  var readdirBase: js.Any = js.native
+  /* private */ var readdirBase: js.Any = js.native
   
   def readdirSync(path: PathLike): js.Array[TDataOut | typings.memfs.direntMod.default] = js.native
   def readdirSync(path: PathLike, options: String): js.Array[TDataOut | typings.memfs.direntMod.default] = js.native
@@ -345,7 +345,7 @@ class Volume () extends StObject {
   def readlink(path: PathLike, callback: TCallback[TDataOut]): js.Any = js.native
   def readlink(path: PathLike, options: IOptions, callback: TCallback[TDataOut]): js.Any = js.native
   
-  var readlinkBase: js.Any = js.native
+  /* private */ var readlinkBase: js.Any = js.native
   
   def readlinkSync(path: PathLike): TDataOut = js.native
   def readlinkSync(path: PathLike, options: IOptions): TDataOut = js.native
@@ -354,7 +354,7 @@ class Volume () extends StObject {
   def realpath(path: PathLike, options: String, callback: TCallback[TDataOut]): js.Any = js.native
   def realpath(path: PathLike, options: IRealpathOptions, callback: TCallback[TDataOut]): js.Any = js.native
   
-  var realpathBase: js.Any = js.native
+  /* private */ var realpathBase: js.Any = js.native
   
   def realpathSync(path: PathLike): TDataOut = js.native
   def realpathSync(path: PathLike, options: String): TDataOut = js.native
@@ -366,7 +366,7 @@ class Volume () extends StObject {
   
   def rename(oldPath: PathLike, newPath: PathLike, callback: TCallback[Unit]): Unit = js.native
   
-  var renameBase: js.Any = js.native
+  /* private */ var renameBase: js.Any = js.native
   
   def renameSync(oldPath: PathLike, newPath: PathLike): Unit = js.native
   
@@ -377,7 +377,7 @@ class Volume () extends StObject {
   def rmdir(path: PathLike, callback: TCallback[Unit]): js.Any = js.native
   def rmdir(path: PathLike, options: IRmdirOptions, callback: TCallback[Unit]): js.Any = js.native
   
-  var rmdirBase: js.Any = js.native
+  /* private */ var rmdirBase: js.Any = js.native
   
   def rmdirSync(path: PathLike): Unit = js.native
   def rmdirSync(path: PathLike, options: IRmdirOptions): Unit = js.native
@@ -387,18 +387,18 @@ class Volume () extends StObject {
   def stat(path: PathLike, callback: TCallback[default[TStatNumber]]): js.Any = js.native
   def stat(path: PathLike, options: IStatOptions, callback: TCallback[default[TStatNumber]]): js.Any = js.native
   
-  var statBase: js.Any = js.native
+  /* private */ var statBase: js.Any = js.native
   
   def statSync(path: PathLike): default[Double] = js.native
   def statSync(path: PathLike, options: Bigint): default[Double] = js.native
   def statSync(path: PathLike, options: `0`): default[js.BigInt] = js.native
   
-  var statWatchers: js.Any = js.native
+  /* private */ var statWatchers: js.Any = js.native
   
   def symlink(target: PathLike, path: PathLike, callback: TCallback[Unit]): js.Any = js.native
   def symlink(target: PathLike, path: PathLike, `type`: Type, callback: TCallback[Unit]): js.Any = js.native
   
-  var symlinkBase: js.Any = js.native
+  /* private */ var symlinkBase: js.Any = js.native
   
   def symlinkSync(target: PathLike, path: PathLike): Unit = js.native
   def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = js.native
@@ -419,14 +419,14 @@ class Volume () extends StObject {
   def truncate(id: TFileId, callback: TCallback[Unit]): js.Any = js.native
   def truncate(id: TFileId, len: Double, callback: TCallback[Unit]): js.Any = js.native
   
-  var truncateBase: js.Any = js.native
+  /* private */ var truncateBase: js.Any = js.native
   
   def truncateSync(id: TFileId): Unit = js.native
   def truncateSync(id: TFileId, len: Double): Unit = js.native
   
   def unlink(path: PathLike, callback: TCallback[Unit]): Unit = js.native
   
-  var unlinkBase: js.Any = js.native
+  /* private */ var unlinkBase: js.Any = js.native
   
   def unlinkSync(path: PathLike): Unit = js.native
   
@@ -438,7 +438,7 @@ class Volume () extends StObject {
   
   def utimes(path: PathLike, atime: TTime, mtime: TTime, callback: TCallback[Unit]): Unit = js.native
   
-  var utimesBase: js.Any = js.native
+  /* private */ var utimesBase: js.Any = js.native
   
   def utimesSync(path: PathLike, atime: TTime, mtime: TTime): Unit = js.native
   
@@ -471,7 +471,7 @@ class Volume () extends StObject {
     listener: js.Function2[/* curr */ default[TStatNumber], /* prev */ default[TStatNumber], Unit]
   ): StatWatcher = js.native
   
-  var wrapAsync: js.Any = js.native
+  /* private */ var wrapAsync: js.Any = js.native
   
   def write(fd: Double, buffer: Buffer, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
   def write(fd: Double, buffer: Buffer, offset: Double, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
@@ -522,13 +522,13 @@ class Volume () extends StObject {
     callback: js.Function1[/* repeated */ js.Any, Unit]
   ): js.Any = js.native
   
-  var writeBase: js.Any = js.native
+  /* private */ var writeBase: js.Any = js.native
   
   def writeFile(id: TFileId, data: TData, callback: TCallback[Unit]): js.Any = js.native
   def writeFile(id: TFileId, data: TData, options: String, callback: TCallback[Unit]): js.Any = js.native
   def writeFile(id: TFileId, data: TData, options: IWriteFileOptions, callback: TCallback[Unit]): js.Any = js.native
   
-  var writeFileBase: js.Any = js.native
+  /* private */ var writeFileBase: js.Any = js.native
   
   def writeFileSync(id: TFileId, data: TData): Unit = js.native
   def writeFileSync(id: TFileId, data: TData, options: IWriteFileOptions): Unit = js.native
@@ -571,16 +571,11 @@ object Volume {
   @JSImport("memfs/lib/volume", "Volume.fd")
   @js.native
   def fd: Double = js.native
-  @scala.inline
-  def fd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
+  inline def fd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def fromJSON(json: DirectoryJSON): Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Volume]
-  @scala.inline
-  def fromJSON(json: DirectoryJSON, cwd: String): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Volume]
+  inline def fromJSON(json: DirectoryJSON): Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Volume]
+  inline def fromJSON(json: DirectoryJSON, cwd: String): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Volume]
   
-  @scala.inline
-  def fromNestedJSON(json: NestedDirectoryJSON): Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Volume]
-  @scala.inline
-  def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Volume]
+  inline def fromNestedJSON(json: NestedDirectoryJSON): Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Volume]
+  inline def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Volume]
 }

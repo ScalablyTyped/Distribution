@@ -23,25 +23,19 @@ trait PutEmailIdentityDkimSigningAttributesRequest extends StObject {
 }
 object PutEmailIdentityDkimSigningAttributesRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity, SigningAttributesOrigin: DkimSigningAttributesOrigin): PutEmailIdentityDkimSigningAttributesRequest = {
+  inline def apply(EmailIdentity: Identity, SigningAttributesOrigin: DkimSigningAttributesOrigin): PutEmailIdentityDkimSigningAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any], SigningAttributesOrigin = SigningAttributesOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityDkimSigningAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutEmailIdentityDkimSigningAttributesRequestMutableBuilder[Self <: PutEmailIdentityDkimSigningAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEmailIdentityDkimSigningAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAttributes(value: DkimSigningAttributes): Self = StObject.set(x, "SigningAttributes", value.asInstanceOf[js.Any])
+    inline def setSigningAttributes(value: DkimSigningAttributes): Self = StObject.set(x, "SigningAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAttributesOrigin(value: DkimSigningAttributesOrigin): Self = StObject.set(x, "SigningAttributesOrigin", value.asInstanceOf[js.Any])
+    inline def setSigningAttributesOrigin(value: DkimSigningAttributesOrigin): Self = StObject.set(x, "SigningAttributesOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAttributesUndefined: Self = StObject.set(x, "SigningAttributes", js.undefined)
+    inline def setSigningAttributesUndefined: Self = StObject.set(x, "SigningAttributes", js.undefined)
   }
 }

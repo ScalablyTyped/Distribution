@@ -19,7 +19,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_currentLocalID
     */
-  var _currentLocalID: Double
+  /* protected */ var _currentLocalID: Double
   
   /**
     * The X-coordinate value of the normalized local X axis,
@@ -28,7 +28,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_cx
     */
-  var _cx: Double
+  /* protected */ var _cx: Double
   
   /**
     * The X-coordinate value of the normalized local Y axis,
@@ -37,7 +37,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_cy
     */
-  var _cy: Double
+  /* protected */ var _cy: Double
   
   /**
     * The locally unique ID of the local transform.
@@ -45,7 +45,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_localID
     */
-  var _localID: Double
+  /* protected */ var _localID: Double
   
   /**
     * The locally unique ID of the parent's world transform
@@ -54,7 +54,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_parentID
     */
-  var _parentID: Double
+  /* protected */ var _parentID: Double
   
   /**
     * The rotation amount.
@@ -62,7 +62,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_rotation
     */
-  var _rotation: Double
+  /* protected */ var _rotation: Double
   
   /**
     * The Y-coordinate value of the normalized local X axis,
@@ -71,7 +71,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_sx
     */
-  var _sx: Double
+  /* protected */ var _sx: Double
   
   /**
     * The Y-coordinate value of the normalized local Y axis,
@@ -80,7 +80,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_sy
     */
-  var _sy: Double
+  /* protected */ var _sy: Double
   
   /**
     * The locally unique ID of the world transform.
@@ -88,7 +88,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_worldID
     */
-  var _worldID: Double
+  /* protected */ var _worldID: Double
   
   /**
     * The local transformation matrix.
@@ -174,8 +174,7 @@ trait Transform extends StObject {
 }
 object Transform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _currentLocalID: Double,
     _cx: Double,
     _cy: Double,
@@ -202,70 +201,48 @@ object Transform {
     __obj.asInstanceOf[Transform]
   }
   
-  @scala.inline
-  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+  extension [Self <: Transform](x: Self) {
     
-    @scala.inline
-    def setLocalTransform(value: Matrix): Self = StObject.set(x, "localTransform", value.asInstanceOf[js.Any])
+    inline def setLocalTransform(value: Matrix): Self = StObject.set(x, "localTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPivot(value: ObservablePoint): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
+    inline def setPivot(value: ObservablePoint): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: ObservablePoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ObservablePoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: ObservablePoint): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ObservablePoint): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFromMatrix(value: Matrix => Unit): Self = StObject.set(x, "setFromMatrix", js.Any.fromFunction1(value))
+    inline def setSetFromMatrix(value: Matrix => Unit): Self = StObject.set(x, "setFromMatrix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkew(value: ObservablePoint): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
+    inline def setSkew(value: ObservablePoint): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateLocalTransform(value: () => Unit): Self = StObject.set(x, "updateLocalTransform", js.Any.fromFunction0(value))
+    inline def setUpdateLocalTransform(value: () => Unit): Self = StObject.set(x, "updateLocalTransform", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateSkew(value: () => Unit): Self = StObject.set(x, "updateSkew", js.Any.fromFunction0(value))
+    inline def setUpdateSkew(value: () => Unit): Self = StObject.set(x, "updateSkew", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateTransform(value: Transform => Unit): Self = StObject.set(x, "updateTransform", js.Any.fromFunction1(value))
+    inline def setUpdateTransform(value: Transform => Unit): Self = StObject.set(x, "updateTransform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWorldTransform(value: Matrix): Self = StObject.set(x, "worldTransform", value.asInstanceOf[js.Any])
+    inline def setWorldTransform(value: Matrix): Self = StObject.set(x, "worldTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_currentLocalID(value: Double): Self = StObject.set(x, "_currentLocalID", value.asInstanceOf[js.Any])
+    inline def set_currentLocalID(value: Double): Self = StObject.set(x, "_currentLocalID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_cx(value: Double): Self = StObject.set(x, "_cx", value.asInstanceOf[js.Any])
+    inline def set_cx(value: Double): Self = StObject.set(x, "_cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_cy(value: Double): Self = StObject.set(x, "_cy", value.asInstanceOf[js.Any])
+    inline def set_cy(value: Double): Self = StObject.set(x, "_cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_localID(value: Double): Self = StObject.set(x, "_localID", value.asInstanceOf[js.Any])
+    inline def set_localID(value: Double): Self = StObject.set(x, "_localID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_parentID(value: Double): Self = StObject.set(x, "_parentID", value.asInstanceOf[js.Any])
+    inline def set_parentID(value: Double): Self = StObject.set(x, "_parentID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rotation(value: Double): Self = StObject.set(x, "_rotation", value.asInstanceOf[js.Any])
+    inline def set_rotation(value: Double): Self = StObject.set(x, "_rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sx(value: Double): Self = StObject.set(x, "_sx", value.asInstanceOf[js.Any])
+    inline def set_sx(value: Double): Self = StObject.set(x, "_sx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sy(value: Double): Self = StObject.set(x, "_sy", value.asInstanceOf[js.Any])
+    inline def set_sy(value: Double): Self = StObject.set(x, "_sy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_worldID(value: Double): Self = StObject.set(x, "_worldID", value.asInstanceOf[js.Any])
+    inline def set_worldID(value: Double): Self = StObject.set(x, "_worldID", value.asInstanceOf[js.Any])
   }
 }

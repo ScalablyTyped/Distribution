@@ -31,43 +31,31 @@ trait ServerExtOptions extends StObject {
 }
 object ServerExtOptions {
   
-  @scala.inline
-  def apply(): ServerExtOptions = {
+  inline def apply(): ServerExtOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerExtOptions]
   }
   
-  @scala.inline
-  implicit class ServerExtOptionsMutableBuilder[Self <: ServerExtOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerExtOptions](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String | js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String | js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
-    @scala.inline
-    def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+    inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
     
-    @scala.inline
-    def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+    inline def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+    inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
-    @scala.inline
-    def setSandbox(value: server | plugin): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: server | plugin): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
   }
 }

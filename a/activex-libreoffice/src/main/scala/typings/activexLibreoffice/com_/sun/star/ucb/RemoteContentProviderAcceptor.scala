@@ -14,8 +14,7 @@ trait RemoteContentProviderAcceptor
      with XRemoteContentProviderActivator
 object RemoteContentProviderAcceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     activateRemoteContentProviders: () => XContentProviderManager,
     addRemoteContentProvider: (String, XMultiServiceFactory, SeqEquiv[String], XRemoteContentProviderDoneListener) => Boolean,

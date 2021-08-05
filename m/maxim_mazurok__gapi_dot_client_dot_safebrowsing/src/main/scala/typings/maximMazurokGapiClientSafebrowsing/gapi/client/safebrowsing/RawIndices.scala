@@ -11,22 +11,17 @@ trait RawIndices extends StObject {
 }
 object RawIndices {
   
-  @scala.inline
-  def apply(): RawIndices = {
+  inline def apply(): RawIndices = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RawIndices]
   }
   
-  @scala.inline
-  implicit class RawIndicesMutableBuilder[Self <: RawIndices] (val x: Self) extends AnyVal {
+  extension [Self <: RawIndices](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    @scala.inline
-    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
   }
 }

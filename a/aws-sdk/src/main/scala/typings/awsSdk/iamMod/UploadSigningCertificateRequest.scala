@@ -18,22 +18,17 @@ trait UploadSigningCertificateRequest extends StObject {
 }
 object UploadSigningCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateBody: certificateBodyType): UploadSigningCertificateRequest = {
+  inline def apply(CertificateBody: certificateBodyType): UploadSigningCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateBody = CertificateBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadSigningCertificateRequest]
   }
   
-  @scala.inline
-  implicit class UploadSigningCertificateRequestMutableBuilder[Self <: UploadSigningCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UploadSigningCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
+    inline def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

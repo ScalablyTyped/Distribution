@@ -13,19 +13,15 @@ trait StackInstanceComprehensiveStatus extends StObject {
 }
 object StackInstanceComprehensiveStatus {
   
-  @scala.inline
-  def apply(): StackInstanceComprehensiveStatus = {
+  inline def apply(): StackInstanceComprehensiveStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackInstanceComprehensiveStatus]
   }
   
-  @scala.inline
-  implicit class StackInstanceComprehensiveStatusMutableBuilder[Self <: StackInstanceComprehensiveStatus] (val x: Self) extends AnyVal {
+  extension [Self <: StackInstanceComprehensiveStatus](x: Self) {
     
-    @scala.inline
-    def setDetailedStatus(value: StackInstanceDetailedStatus): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
+    inline def setDetailedStatus(value: StackInstanceDetailedStatus): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
+    inline def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
   }
 }

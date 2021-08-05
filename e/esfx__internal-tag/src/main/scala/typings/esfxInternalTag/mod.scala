@@ -10,13 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Tag(): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Tag")().asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
-  @scala.inline
-  def Tag(tag: String): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Tag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
+  inline def Tag(): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Tag")().asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
+  inline def Tag(tag: String): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Tag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
   
-  @scala.inline
-  def defineTag[T /* <: js.Object */](target: T, tag: String): T & Tagged = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTag")(target.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[T & Tagged]
+  inline def defineTag[T /* <: js.Object */](target: T, tag: String): T & Tagged = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTag")(target.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[T & Tagged]
   
   @js.native
   trait Tagged extends StObject {

@@ -144,50 +144,35 @@ object rectangleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def areIntersected(rectA: IRectangle, rectB: IRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersected")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def areIntersected(rectA: IRectangle, rectB: IRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersected")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def center(rect: IRectangle): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(rect.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def center(rect: IRectangle): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(rect.asInstanceOf[js.Any]).asInstanceOf[Point]
     
-    @scala.inline
-    def containsPoint(rect: IRectangle, point: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def containsPoint(rect: IRectangle, point: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def equals(a: IRectangle, b: IRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(a: IRectangle, b: IRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def fromCenter(center: Point, minRadius: Double): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCenter")(center.asInstanceOf[js.Any], minRadius.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
+    inline def fromCenter(center: Point, minRadius: Double): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCenter")(center.asInstanceOf[js.Any], minRadius.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
     
-    @scala.inline
-    def fromGeometry(point: IPoint, size: ISize): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGeometry")(point.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
+    inline def fromGeometry(point: IPoint, size: ISize): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGeometry")(point.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
     
-    @scala.inline
-    def fromPoints(pointA: IPoint, pointB: IPoint): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
+    inline def fromPoints(pointA: IPoint, pointB: IPoint): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
     
-    @scala.inline
-    def fromPositions(x1: Double, y1: Double, x2: Double, y2: Double): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
+    inline def fromPositions(x1: Double, y1: Double, x2: Double, y2: Double): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
     
-    @scala.inline
-    def getHorNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getHorNonCollapsedIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
+    inline def getHorNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getHorNonCollapsedIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
     
-    @scala.inline
-    def getHorizIntersection(objA: IRectangle, objB: IRectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getHorizIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
+    inline def getHorizIntersection(objA: IRectangle, objB: IRectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getHorizIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
     
-    @scala.inline
-    def getIntersection(objA: IRectangle, objB: IRectangle): Rectangle | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Rectangle | Null]
+    inline def getIntersection(objA: IRectangle, objB: IRectangle): Rectangle | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Rectangle | Null]
     
-    @scala.inline
-    def getNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): Rectangle | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNonCollapsedIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Rectangle | Null]
+    inline def getNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): Rectangle | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNonCollapsedIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Rectangle | Null]
     
-    @scala.inline
-    def getVertIntersection(objA: IRectangle, objB: IRectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getVertIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
+    inline def getVertIntersection(objA: IRectangle, objB: IRectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getVertIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
     
-    @scala.inline
-    def getVertNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getVertNonCollapsedIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
+    inline def getVertNonCollapsedIntersection(objA: Rectangle, objB: Rectangle): FixedInterval | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getVertNonCollapsedIntersection")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[FixedInterval | Null]
     
-    @scala.inline
-    def union(rectA: IRectangle, rectB: IRectangle): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
+    inline def union(rectA: IRectangle, rectB: IRectangle): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
   }
   
   @JSImport("@devexpress/utils/lib/geometry/rectangle", "RectangleDeviation")

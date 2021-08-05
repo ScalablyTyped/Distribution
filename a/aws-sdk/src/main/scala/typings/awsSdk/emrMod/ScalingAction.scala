@@ -18,22 +18,17 @@ trait ScalingAction extends StObject {
 }
 object ScalingAction {
   
-  @scala.inline
-  def apply(SimpleScalingPolicyConfiguration: SimpleScalingPolicyConfiguration): ScalingAction = {
+  inline def apply(SimpleScalingPolicyConfiguration: SimpleScalingPolicyConfiguration): ScalingAction = {
     val __obj = js.Dynamic.literal(SimpleScalingPolicyConfiguration = SimpleScalingPolicyConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingAction]
   }
   
-  @scala.inline
-  implicit class ScalingActionMutableBuilder[Self <: ScalingAction] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingAction](x: Self) {
     
-    @scala.inline
-    def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
+    inline def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketUndefined: Self = StObject.set(x, "Market", js.undefined)
+    inline def setMarketUndefined: Self = StObject.set(x, "Market", js.undefined)
     
-    @scala.inline
-    def setSimpleScalingPolicyConfiguration(value: SimpleScalingPolicyConfiguration): Self = StObject.set(x, "SimpleScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+    inline def setSimpleScalingPolicyConfiguration(value: SimpleScalingPolicyConfiguration): Self = StObject.set(x, "SimpleScalingPolicyConfiguration", value.asInstanceOf[js.Any])
   }
 }

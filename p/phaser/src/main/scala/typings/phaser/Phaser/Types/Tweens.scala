@@ -239,278 +239,188 @@ object Tweens {
   }
   object NumberTweenBuilderConfig {
     
-    @scala.inline
-    def apply(): NumberTweenBuilderConfig = {
+    inline def apply(): NumberTweenBuilderConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberTweenBuilderConfig]
     }
     
-    @scala.inline
-    implicit class NumberTweenBuilderConfigMutableBuilder[Self <: NumberTweenBuilderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NumberTweenBuilderConfig](x: Self) {
       
-      @scala.inline
-      def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
+      inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       
-      @scala.inline
-      def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
+      inline def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
+      inline def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
       
-      @scala.inline
-      def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
+      inline def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
+      inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      @scala.inline
-      def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+      inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      @scala.inline
-      def setLoop(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
+      inline def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
+      inline def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
       
-      @scala.inline
-      def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
+      inline def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
+      inline def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
       
-      @scala.inline
-      def setOffset(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOffsetVarargs(value: js.Any*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: js.Any*): Self = StObject.set(x, "offset", js.Array(value :_*))
       
-      @scala.inline
-      def setOnComplete(value: TweenOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+      inline def setOnComplete(value: TweenOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
+      inline def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
+      inline def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
       
-      @scala.inline
-      def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
+      inline def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
+      inline def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
+      inline def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnLoop(value: TweenOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
+      inline def setOnLoop(value: TweenOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
+      inline def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
+      inline def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
       
-      @scala.inline
-      def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
+      inline def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
+      inline def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
+      inline def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
       
-      @scala.inline
-      def setOnLoopUndefined: Self = StObject.set(x, "onLoop", js.undefined)
+      inline def setOnLoopUndefined: Self = StObject.set(x, "onLoop", js.undefined)
       
-      @scala.inline
-      def setOnRepeat(value: TweenOnRepeatCallback): Self = StObject.set(x, "onRepeat", value.asInstanceOf[js.Any])
+      inline def setOnRepeat(value: TweenOnRepeatCallback): Self = StObject.set(x, "onRepeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRepeatParams(value: js.Array[js.Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
+      inline def setOnRepeatParams(value: js.Array[js.Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRepeatParamsUndefined: Self = StObject.set(x, "onRepeatParams", js.undefined)
+      inline def setOnRepeatParamsUndefined: Self = StObject.set(x, "onRepeatParams", js.undefined)
       
-      @scala.inline
-      def setOnRepeatParamsVarargs(value: js.Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value :_*))
+      inline def setOnRepeatParamsVarargs(value: js.Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnRepeatScope(value: js.Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
+      inline def setOnRepeatScope(value: js.Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRepeatScopeUndefined: Self = StObject.set(x, "onRepeatScope", js.undefined)
+      inline def setOnRepeatScopeUndefined: Self = StObject.set(x, "onRepeatScope", js.undefined)
       
-      @scala.inline
-      def setOnRepeatUndefined: Self = StObject.set(x, "onRepeat", js.undefined)
+      inline def setOnRepeatUndefined: Self = StObject.set(x, "onRepeat", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: TweenOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: TweenOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
+      inline def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
+      inline def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
       
-      @scala.inline
-      def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
+      inline def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
+      inline def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
+      inline def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: TweenOnStopCallback): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
+      inline def setOnStop(value: TweenOnStopCallback): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
+      inline def setOnStopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStopParamsUndefined: Self = StObject.set(x, "onStopParams", js.undefined)
+      inline def setOnStopParamsUndefined: Self = StObject.set(x, "onStopParams", js.undefined)
       
-      @scala.inline
-      def setOnStopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStopParams", js.Array(value :_*))
+      inline def setOnStopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStopParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnStopScope(value: js.Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
+      inline def setOnStopScope(value: js.Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStopScopeUndefined: Self = StObject.set(x, "onStopScope", js.undefined)
+      inline def setOnStopScopeUndefined: Self = StObject.set(x, "onStopScope", js.undefined)
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: TweenOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: TweenOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
+      inline def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
+      inline def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
       
-      @scala.inline
-      def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
+      inline def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
+      inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setOnYoyo(value: TweenOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
+      inline def setOnYoyo(value: TweenOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
+      inline def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
+      inline def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
       
-      @scala.inline
-      def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
+      inline def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
+      inline def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
+      inline def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
       
-      @scala.inline
-      def setOnYoyoUndefined: Self = StObject.set(x, "onYoyo", js.undefined)
+      inline def setOnYoyoUndefined: Self = StObject.set(x, "onYoyo", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
+      inline def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFramesUndefined: Self = StObject.set(x, "useFrames", js.undefined)
+      inline def setUseFramesUndefined: Self = StObject.set(x, "useFrames", js.undefined)
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
+      inline def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
     }
   }
   
@@ -538,41 +448,30 @@ object Tweens {
   }
   object StaggerConfig {
     
-    @scala.inline
-    def apply(): StaggerConfig = {
+    inline def apply(): StaggerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StaggerConfig]
     }
     
-    @scala.inline
-    implicit class StaggerConfigMutableBuilder[Self <: StaggerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StaggerConfig](x: Self) {
       
-      @scala.inline
-      def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String | integer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String | integer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setGrid(value: js.Array[integer]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Array[integer]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setGridVarargs(value: integer*): Self = StObject.set(x, "grid", js.Array(value :_*))
+      inline def setGridVarargs(value: integer*): Self = StObject.set(x, "grid", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -750,248 +649,168 @@ object Tweens {
   }
   object TimelineBuilderConfig {
     
-    @scala.inline
-    def apply(): TimelineBuilderConfig = {
+    inline def apply(): TimelineBuilderConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimelineBuilderConfig]
     }
     
-    @scala.inline
-    implicit class TimelineBuilderConfigMutableBuilder[Self <: TimelineBuilderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineBuilderConfig](x: Self) {
       
-      @scala.inline
-      def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
+      inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       
-      @scala.inline
-      def setCompleteDelay(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
+      inline def setCompleteDelay(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
+      inline def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
       
-      @scala.inline
-      def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
+      inline def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
+      inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      @scala.inline
-      def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+      inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
       
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
       
-      @scala.inline
-      def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+      inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopDelay(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
+      inline def setLoopDelay(value: Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
+      inline def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
       
-      @scala.inline
-      def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
+      inline def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
+      inline def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
       
-      @scala.inline
-      def setOnComplete(value: TimelineOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+      inline def setOnComplete(value: TimelineOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
+      inline def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
+      inline def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
       
-      @scala.inline
-      def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
+      inline def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
+      inline def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
+      inline def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnLoop(value: TimelineOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
+      inline def setOnLoop(value: TimelineOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
+      inline def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
+      inline def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
       
-      @scala.inline
-      def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
+      inline def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
+      inline def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
+      inline def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
       
-      @scala.inline
-      def setOnLoopUndefined: Self = StObject.set(x, "onLoop", js.undefined)
+      inline def setOnLoopUndefined: Self = StObject.set(x, "onLoop", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: TimelineOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: TimelineOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
+      inline def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
+      inline def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
       
-      @scala.inline
-      def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
+      inline def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
+      inline def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
+      inline def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: TimelineOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: TimelineOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
+      inline def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
+      inline def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
       
-      @scala.inline
-      def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
+      inline def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
+      inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setOnYoyo(value: TimelineOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
+      inline def setOnYoyo(value: TimelineOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
+      inline def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
+      inline def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
       
-      @scala.inline
-      def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
+      inline def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
+      inline def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
+      inline def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
       
-      @scala.inline
-      def setOnYoyoUndefined: Self = StObject.set(x, "onYoyo", js.undefined)
+      inline def setOnYoyoUndefined: Self = StObject.set(x, "onYoyo", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setTargets(value: js.Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
+      inline def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDurationUndefined: Self = StObject.set(x, "totalDuration", js.undefined)
+      inline def setTotalDurationUndefined: Self = StObject.set(x, "totalDuration", js.undefined)
       
-      @scala.inline
-      def setTweens(value: (js.Array[js.Object | TweenBuilderConfig]) | js.Function): Self = StObject.set(x, "tweens", value.asInstanceOf[js.Any])
+      inline def setTweens(value: (js.Array[js.Object | TweenBuilderConfig]) | js.Function): Self = StObject.set(x, "tweens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTweensUndefined: Self = StObject.set(x, "tweens", js.undefined)
+      inline def setTweensUndefined: Self = StObject.set(x, "tweens", js.undefined)
       
-      @scala.inline
-      def setTweensVarargs(value: (js.Object | TweenBuilderConfig)*): Self = StObject.set(x, "tweens", js.Array(value :_*))
+      inline def setTweensVarargs(value: (js.Object | TweenBuilderConfig)*): Self = StObject.set(x, "tweens", js.Array(value :_*))
       
-      @scala.inline
-      def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
+      inline def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFramesUndefined: Self = StObject.set(x, "useFrames", js.undefined)
+      inline def setUseFramesUndefined: Self = StObject.set(x, "useFrames", js.undefined)
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
+      inline def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
     }
   }
   
@@ -1244,308 +1063,208 @@ object Tweens {
   }
   object TweenBuilderConfig {
     
-    @scala.inline
-    def apply(targets: js.Any): TweenBuilderConfig = {
+    inline def apply(targets: js.Any): TweenBuilderConfig = {
       val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
       __obj.asInstanceOf[TweenBuilderConfig]
     }
     
-    @scala.inline
-    implicit class TweenBuilderConfigMutableBuilder[Self <: TweenBuilderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TweenBuilderConfig](x: Self) {
       
-      @scala.inline
-      def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
+      inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       
-      @scala.inline
-      def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
+      inline def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "completeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
+      inline def setCompleteDelayUndefined: Self = StObject.set(x, "completeDelay", js.undefined)
       
-      @scala.inline
-      def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
+      inline def setCompleteDelayVarargs(value: js.Any*): Self = StObject.set(x, "completeDelay", js.Array(value :_*))
       
-      @scala.inline
-      def setDelay(value: Double | js.Function): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double | js.Function): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
+      inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      @scala.inline
-      def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+      inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
       
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
       
-      @scala.inline
-      def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+      inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      @scala.inline
-      def setLoop(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
+      inline def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "loopDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
+      inline def setLoopDelayUndefined: Self = StObject.set(x, "loopDelay", js.undefined)
       
-      @scala.inline
-      def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
+      inline def setLoopDelayVarargs(value: js.Any*): Self = StObject.set(x, "loopDelay", js.Array(value :_*))
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
+      inline def setLoopVarargs(value: js.Any*): Self = StObject.set(x, "loop", js.Array(value :_*))
       
-      @scala.inline
-      def setOffset(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: String | Double | js.Function | js.Object | js.Array[js.Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOffsetVarargs(value: js.Any*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: js.Any*): Self = StObject.set(x, "offset", js.Array(value :_*))
       
-      @scala.inline
-      def setOnActive(value: TweenOnActiveCallback): Self = StObject.set(x, "onActive", value.asInstanceOf[js.Any])
+      inline def setOnActive(value: TweenOnActiveCallback): Self = StObject.set(x, "onActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnActiveParams(value: js.Array[js.Any]): Self = StObject.set(x, "onActiveParams", value.asInstanceOf[js.Any])
+      inline def setOnActiveParams(value: js.Array[js.Any]): Self = StObject.set(x, "onActiveParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnActiveParamsUndefined: Self = StObject.set(x, "onActiveParams", js.undefined)
+      inline def setOnActiveParamsUndefined: Self = StObject.set(x, "onActiveParams", js.undefined)
       
-      @scala.inline
-      def setOnActiveParamsVarargs(value: js.Any*): Self = StObject.set(x, "onActiveParams", js.Array(value :_*))
+      inline def setOnActiveParamsVarargs(value: js.Any*): Self = StObject.set(x, "onActiveParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnActiveScope(value: js.Any): Self = StObject.set(x, "onActiveScope", value.asInstanceOf[js.Any])
+      inline def setOnActiveScope(value: js.Any): Self = StObject.set(x, "onActiveScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnActiveScopeUndefined: Self = StObject.set(x, "onActiveScope", js.undefined)
+      inline def setOnActiveScopeUndefined: Self = StObject.set(x, "onActiveScope", js.undefined)
       
-      @scala.inline
-      def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
+      inline def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: TweenOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+      inline def setOnComplete(value: TweenOnCompleteCallback): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
+      inline def setOnCompleteParams(value: js.Array[js.Any]): Self = StObject.set(x, "onCompleteParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
+      inline def setOnCompleteParamsUndefined: Self = StObject.set(x, "onCompleteParams", js.undefined)
       
-      @scala.inline
-      def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
+      inline def setOnCompleteParamsVarargs(value: js.Any*): Self = StObject.set(x, "onCompleteParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
+      inline def setOnCompleteScope(value: js.Any): Self = StObject.set(x, "onCompleteScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
+      inline def setOnCompleteScopeUndefined: Self = StObject.set(x, "onCompleteScope", js.undefined)
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnLoop(value: TweenOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
+      inline def setOnLoop(value: TweenOnLoopCallback): Self = StObject.set(x, "onLoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
+      inline def setOnLoopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onLoopParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
+      inline def setOnLoopParamsUndefined: Self = StObject.set(x, "onLoopParams", js.undefined)
       
-      @scala.inline
-      def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
+      inline def setOnLoopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onLoopParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
+      inline def setOnLoopScope(value: js.Any): Self = StObject.set(x, "onLoopScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
+      inline def setOnLoopScopeUndefined: Self = StObject.set(x, "onLoopScope", js.undefined)
       
-      @scala.inline
-      def setOnLoopUndefined: Self = StObject.set(x, "onLoop", js.undefined)
+      inline def setOnLoopUndefined: Self = StObject.set(x, "onLoop", js.undefined)
       
-      @scala.inline
-      def setOnRepeat(value: TweenOnRepeatCallback): Self = StObject.set(x, "onRepeat", value.asInstanceOf[js.Any])
+      inline def setOnRepeat(value: TweenOnRepeatCallback): Self = StObject.set(x, "onRepeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRepeatParams(value: js.Array[js.Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
+      inline def setOnRepeatParams(value: js.Array[js.Any]): Self = StObject.set(x, "onRepeatParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRepeatParamsUndefined: Self = StObject.set(x, "onRepeatParams", js.undefined)
+      inline def setOnRepeatParamsUndefined: Self = StObject.set(x, "onRepeatParams", js.undefined)
       
-      @scala.inline
-      def setOnRepeatParamsVarargs(value: js.Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value :_*))
+      inline def setOnRepeatParamsVarargs(value: js.Any*): Self = StObject.set(x, "onRepeatParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnRepeatScope(value: js.Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
+      inline def setOnRepeatScope(value: js.Any): Self = StObject.set(x, "onRepeatScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRepeatScopeUndefined: Self = StObject.set(x, "onRepeatScope", js.undefined)
+      inline def setOnRepeatScopeUndefined: Self = StObject.set(x, "onRepeatScope", js.undefined)
       
-      @scala.inline
-      def setOnRepeatUndefined: Self = StObject.set(x, "onRepeat", js.undefined)
+      inline def setOnRepeatUndefined: Self = StObject.set(x, "onRepeat", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: TweenOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: TweenOnStartCallback): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
+      inline def setOnStartParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStartParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
+      inline def setOnStartParamsUndefined: Self = StObject.set(x, "onStartParams", js.undefined)
       
-      @scala.inline
-      def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
+      inline def setOnStartParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStartParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
+      inline def setOnStartScope(value: js.Any): Self = StObject.set(x, "onStartScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
+      inline def setOnStartScopeUndefined: Self = StObject.set(x, "onStartScope", js.undefined)
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: TweenOnStopCallback): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
+      inline def setOnStop(value: TweenOnStopCallback): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
+      inline def setOnStopParams(value: js.Array[js.Any]): Self = StObject.set(x, "onStopParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStopParamsUndefined: Self = StObject.set(x, "onStopParams", js.undefined)
+      inline def setOnStopParamsUndefined: Self = StObject.set(x, "onStopParams", js.undefined)
       
-      @scala.inline
-      def setOnStopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStopParams", js.Array(value :_*))
+      inline def setOnStopParamsVarargs(value: js.Any*): Self = StObject.set(x, "onStopParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnStopScope(value: js.Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
+      inline def setOnStopScope(value: js.Any): Self = StObject.set(x, "onStopScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStopScopeUndefined: Self = StObject.set(x, "onStopScope", js.undefined)
+      inline def setOnStopScopeUndefined: Self = StObject.set(x, "onStopScope", js.undefined)
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: TweenOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: TweenOnUpdateCallback): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
+      inline def setOnUpdateParams(value: js.Array[js.Any]): Self = StObject.set(x, "onUpdateParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
+      inline def setOnUpdateParamsUndefined: Self = StObject.set(x, "onUpdateParams", js.undefined)
       
-      @scala.inline
-      def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
+      inline def setOnUpdateParamsVarargs(value: js.Any*): Self = StObject.set(x, "onUpdateParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
+      inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setOnYoyo(value: TweenOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
+      inline def setOnYoyo(value: TweenOnYoyoCallback): Self = StObject.set(x, "onYoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
+      inline def setOnYoyoParams(value: js.Array[js.Any]): Self = StObject.set(x, "onYoyoParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
+      inline def setOnYoyoParamsUndefined: Self = StObject.set(x, "onYoyoParams", js.undefined)
       
-      @scala.inline
-      def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
+      inline def setOnYoyoParamsVarargs(value: js.Any*): Self = StObject.set(x, "onYoyoParams", js.Array(value :_*))
       
-      @scala.inline
-      def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
+      inline def setOnYoyoScope(value: js.Any): Self = StObject.set(x, "onYoyoScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
+      inline def setOnYoyoScopeUndefined: Self = StObject.set(x, "onYoyoScope", js.undefined)
       
-      @scala.inline
-      def setOnYoyoUndefined: Self = StObject.set(x, "onYoyo", js.undefined)
+      inline def setOnYoyoUndefined: Self = StObject.set(x, "onYoyo", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setProps(value: StringDictionary[Double | String | GetEndCallback | TweenPropConfig]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: StringDictionary[Double | String | GetEndCallback | TweenPropConfig]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setTargets(value: js.Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
+      inline def setUseFrames(value: Boolean): Self = StObject.set(x, "useFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFramesUndefined: Self = StObject.set(x, "useFrames", js.undefined)
+      inline def setUseFramesUndefined: Self = StObject.set(x, "useFrames", js.undefined)
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
+      inline def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
     }
   }
   
@@ -1608,83 +1327,58 @@ object Tweens {
   }
   object TweenConfigDefaults {
     
-    @scala.inline
-    def apply(targets: js.Object | js.Array[js.Object]): TweenConfigDefaults = {
+    inline def apply(targets: js.Object | js.Array[js.Object]): TweenConfigDefaults = {
       val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
       __obj.asInstanceOf[TweenConfigDefaults]
     }
     
-    @scala.inline
-    implicit class TweenConfigDefaultsMutableBuilder[Self <: TweenConfigDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: TweenConfigDefaults](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: String): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
+      inline def setEaseParams(value: js.Array[js.Any]): Self = StObject.set(x, "easeParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
+      inline def setEaseParamsUndefined: Self = StObject.set(x, "easeParams", js.undefined)
       
-      @scala.inline
-      def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
+      inline def setEaseParamsVarargs(value: js.Any*): Self = StObject.set(x, "easeParams", js.Array(value :_*))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+      inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
       
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
       
-      @scala.inline
-      def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+      inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setTargets(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsVarargs(value: js.Object*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: js.Object*): Self = StObject.set(x, "targets", js.Array(value :_*))
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
+      inline def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
     }
   }
   
@@ -1863,8 +1557,7 @@ object Tweens {
   }
   object TweenDataConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ease: js.Function,
       getActiveValue: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit,
       getEndValue: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit,
@@ -1877,155 +1570,107 @@ object Tweens {
       __obj.asInstanceOf[TweenDataConfig]
     }
     
-    @scala.inline
-    implicit class TweenDataConfigMutableBuilder[Self <: TweenDataConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TweenDataConfig](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEase(value: js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+      inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapsedUndefined: Self = StObject.set(x, "elapsed", js.undefined)
+      inline def setElapsedUndefined: Self = StObject.set(x, "elapsed", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+      inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
       
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
       
-      @scala.inline
-      def setGen(value: TweenDataGenConfig): Self = StObject.set(x, "gen", value.asInstanceOf[js.Any])
+      inline def setGen(value: TweenDataGenConfig): Self = StObject.set(x, "gen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenUndefined: Self = StObject.set(x, "gen", js.undefined)
+      inline def setGenUndefined: Self = StObject.set(x, "gen", js.undefined)
       
-      @scala.inline
-      def setGetActiveValue(
+      inline def setGetActiveValue(
         value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getActiveValue", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setGetEndValue(
+      inline def setGetEndValue(
         value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getEndValue", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setGetStartValue(
+      inline def setGetStartValue(
         value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getStartValue", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+      inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      @scala.inline
-      def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatCounter(value: integer): Self = StObject.set(x, "repeatCounter", value.asInstanceOf[js.Any])
+      inline def setRepeatCounter(value: integer): Self = StObject.set(x, "repeatCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatCounterUndefined: Self = StObject.set(x, "repeatCounter", js.undefined)
+      inline def setRepeatCounterUndefined: Self = StObject.set(x, "repeatCounter", js.undefined)
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setState(value: integer): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: integer): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setT1(value: Double): Self = StObject.set(x, "t1", value.asInstanceOf[js.Any])
+      inline def setT1(value: Double): Self = StObject.set(x, "t1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT1Undefined: Self = StObject.set(x, "t1", js.undefined)
+      inline def setT1Undefined: Self = StObject.set(x, "t1", js.undefined)
       
-      @scala.inline
-      def setT2(value: Double): Self = StObject.set(x, "t2", value.asInstanceOf[js.Any])
+      inline def setT2(value: Double): Self = StObject.set(x, "t2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT2Undefined: Self = StObject.set(x, "t2", js.undefined)
+      inline def setT2Undefined: Self = StObject.set(x, "t2", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
+      inline def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDurationUndefined: Self = StObject.set(x, "totalDuration", js.undefined)
+      inline def setTotalDurationUndefined: Self = StObject.set(x, "totalDuration", js.undefined)
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
+      inline def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
     }
   }
   
@@ -2058,8 +1703,7 @@ object Tweens {
   }
   object TweenDataGenConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: js.Function,
       duration: js.Function,
       hold: js.Function,
@@ -2070,23 +1714,17 @@ object Tweens {
       __obj.asInstanceOf[TweenDataGenConfig]
     }
     
-    @scala.inline
-    implicit class TweenDataGenConfigMutableBuilder[Self <: TweenDataGenConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TweenDataGenConfig](x: Self) {
       
-      @scala.inline
-      def setDelay(value: js.Function): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: js.Function): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: js.Function): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: js.Function): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHold(value: js.Function): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      inline def setHold(value: js.Function): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeat(value: js.Function): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: js.Function): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: js.Function): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: js.Function): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2207,103 +1845,74 @@ object Tweens {
   }
   object TweenPropConfig {
     
-    @scala.inline
-    def apply(): TweenPropConfig = {
+    inline def apply(): TweenPropConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TweenPropConfig]
     }
     
-    @scala.inline
-    implicit class TweenPropConfigMutableBuilder[Self <: TweenPropConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TweenPropConfig](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+      inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
       
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
       
-      @scala.inline
-      def setGetActive(
+      inline def setGetActive(
         value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getActive", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
+      inline def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
       
-      @scala.inline
-      def setGetEnd(
+      inline def setGetEnd(
         value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getEnd", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setGetEndUndefined: Self = StObject.set(x, "getEnd", js.undefined)
+      inline def setGetEndUndefined: Self = StObject.set(x, "getEnd", js.undefined)
       
-      @scala.inline
-      def setGetStart(
+      inline def setGetStart(
         value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "getStart", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setGetStartUndefined: Self = StObject.set(x, "getStart", js.undefined)
+      inline def setGetStartUndefined: Self = StObject.set(x, "getStart", js.undefined)
       
-      @scala.inline
-      def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+      inline def setHold(value: Double): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+      inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String | GetEndCallback | TweenPropConfig): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String | GetEndCallback | TweenPropConfig): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueFunction6(
+      inline def setValueFunction6(
         value: (/* target */ js.Any, /* key */ String, /* value */ Double, /* targetIndex */ integer, /* totalTargets */ integer, /* tween */ Tween) => Unit
       ): Self = StObject.set(x, "value", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+      inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
+      inline def setYoyoUndefined: Self = StObject.set(x, "yoyo", js.undefined)
     }
   }
 }

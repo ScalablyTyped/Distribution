@@ -14,20 +14,16 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(file: String, root: String): File = {
+    inline def apply(file: String, root: String): File = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Serviceurl {
     
-    @scala.inline
-    def apply(service_url: String): Serviceurl = {
+    inline def apply(service_url: String): Serviceurl = {
       val __obj = js.Dynamic.literal(service_url = service_url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Serviceurl]
     }
     
-    @scala.inline
-    implicit class ServiceurlMutableBuilder[Self <: Serviceurl] (val x: Self) extends AnyVal {
+    extension [Self <: Serviceurl](x: Self) {
       
-      @scala.inline
-      def setService_url(value: String): Self = StObject.set(x, "service_url", value.asInstanceOf[js.Any])
+      inline def setService_url(value: String): Self = StObject.set(x, "service_url", value.asInstanceOf[js.Any])
     }
   }
 }

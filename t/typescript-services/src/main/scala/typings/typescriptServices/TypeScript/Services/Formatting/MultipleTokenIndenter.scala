@@ -100,7 +100,7 @@ trait MultipleTokenIndenter
   extends StObject
      with IndentationTrackingWalker {
   
-  var _edits: js.Any
+  /* private */ var _edits: js.Any
   
   def edits(): js.Array[TextEditInfo]
   
@@ -129,8 +129,7 @@ trait MultipleTokenIndenter
 }
 object MultipleTokenIndenter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _edits: js.Any,
     _indentationNodeContextPool: js.Any,
     _lastTriviaWasNewLine: js.Any,
@@ -258,31 +257,22 @@ object MultipleTokenIndenter {
     __obj.asInstanceOf[MultipleTokenIndenter]
   }
   
-  @scala.inline
-  implicit class MultipleTokenIndenterMutableBuilder[Self <: MultipleTokenIndenter] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleTokenIndenter](x: Self) {
     
-    @scala.inline
-    def setEdits(value: () => js.Array[TextEditInfo]): Self = StObject.set(x, "edits", js.Any.fromFunction0(value))
+    inline def setEdits(value: () => js.Array[TextEditInfo]): Self = StObject.set(x, "edits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecordEdit(value: (Double, Double, String) => Unit): Self = StObject.set(x, "recordEdit", js.Any.fromFunction3(value))
+    inline def setRecordEdit(value: (Double, Double, String) => Unit): Self = StObject.set(x, "recordEdit", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRecordIndentationEditsForMultiLineComment(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForMultiLineComment", js.Any.fromFunction5(value))
+    inline def setRecordIndentationEditsForMultiLineComment(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForMultiLineComment", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setRecordIndentationEditsForSegment(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForSegment", js.Any.fromFunction4(value))
+    inline def setRecordIndentationEditsForSegment(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForSegment", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRecordIndentationEditsForSingleLineOrSkippedText(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForSingleLineOrSkippedText", js.Any.fromFunction3(value))
+    inline def setRecordIndentationEditsForSingleLineOrSkippedText(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForSingleLineOrSkippedText", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRecordIndentationEditsForToken(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForToken", js.Any.fromFunction3(value))
+    inline def setRecordIndentationEditsForToken(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForToken", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRecordIndentationEditsForWhitespace(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForWhitespace", js.Any.fromFunction3(value))
+    inline def setRecordIndentationEditsForWhitespace(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "recordIndentationEditsForWhitespace", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set_edits(value: js.Any): Self = StObject.set(x, "_edits", value.asInstanceOf[js.Any])
+    inline def set_edits(value: js.Any): Self = StObject.set(x, "_edits", value.asInstanceOf[js.Any])
   }
 }

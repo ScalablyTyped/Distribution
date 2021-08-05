@@ -19,20 +19,16 @@ trait ISqlTypeWithTvpType
 }
 object ISqlTypeWithTvpType {
   
-  @scala.inline
-  def apply(tvpType: js.Any, `type`: ISqlTypeFactoryWithTvpType): ISqlTypeWithTvpType = {
+  inline def apply(tvpType: js.Any, `type`: ISqlTypeFactoryWithTvpType): ISqlTypeWithTvpType = {
     val __obj = js.Dynamic.literal(tvpType = tvpType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISqlTypeWithTvpType]
   }
   
-  @scala.inline
-  implicit class ISqlTypeWithTvpTypeMutableBuilder[Self <: ISqlTypeWithTvpType] (val x: Self) extends AnyVal {
+  extension [Self <: ISqlTypeWithTvpType](x: Self) {
     
-    @scala.inline
-    def setTvpType(value: js.Any): Self = StObject.set(x, "tvpType", value.asInstanceOf[js.Any])
+    inline def setTvpType(value: js.Any): Self = StObject.set(x, "tvpType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ISqlTypeFactoryWithTvpType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ISqlTypeFactoryWithTvpType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

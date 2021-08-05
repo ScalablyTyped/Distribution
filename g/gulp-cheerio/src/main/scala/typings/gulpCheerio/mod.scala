@@ -34,32 +34,24 @@ object mod extends Shortcut {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setCheerio(value: Root): Self = StObject.set(x, "cheerio", value.asInstanceOf[js.Any])
+      inline def setCheerio(value: Root): Self = StObject.set(x, "cheerio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheerioUndefined: Self = StObject.set(x, "cheerio", js.undefined)
+      inline def setCheerioUndefined: Self = StObject.set(x, "cheerio", js.undefined)
       
-      @scala.inline
-      def setParserOptions(value: CheerioParserOptions): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
+      inline def setParserOptions(value: CheerioParserOptions): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserOptionsUndefined: Self = StObject.set(x, "parserOptions", js.undefined)
+      inline def setParserOptionsUndefined: Self = StObject.set(x, "parserOptions", js.undefined)
       
-      @scala.inline
-      def setRun(value: (/* $ */ Root, /* file */ File, /* done */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+      inline def setRun(value: (/* $ */ Root, /* file */ File, /* done */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+      inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     }
   }
   

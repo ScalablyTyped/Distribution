@@ -13,19 +13,15 @@ trait CanPreventDefaultData extends StObject {
 }
 object CanPreventDefaultData {
   
-  @scala.inline
-  def apply(data: Action): CanPreventDefaultData = {
+  inline def apply(data: Action): CanPreventDefaultData = {
     val __obj = js.Dynamic.literal(canPreventDefault = true, data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanPreventDefaultData]
   }
   
-  @scala.inline
-  implicit class CanPreventDefaultDataMutableBuilder[Self <: CanPreventDefaultData] (val x: Self) extends AnyVal {
+  extension [Self <: CanPreventDefaultData](x: Self) {
     
-    @scala.inline
-    def setCanPreventDefault(value: `true`): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
+    inline def setCanPreventDefault(value: `true`): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: Action): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Action): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Fill extends StObject
 object Fill {
   
-  @scala.inline
-  def FillGradientAngle(degree: Double, stops: js.Array[GradientStop]): typings.exceljs.mod.FillGradientAngle = {
+  inline def FillGradientAngle(degree: Double, stops: js.Array[GradientStop]): typings.exceljs.mod.FillGradientAngle = {
     val __obj = js.Dynamic.literal(degree = degree.asInstanceOf[js.Any], gradient = "angle", stops = stops.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("gradient")
     __obj.asInstanceOf[typings.exceljs.mod.FillGradientAngle]
   }
   
-  @scala.inline
-  def FillGradientPath(center: Left, stops: js.Array[GradientStop]): typings.exceljs.mod.FillGradientPath = {
+  inline def FillGradientPath(center: Left, stops: js.Array[GradientStop]): typings.exceljs.mod.FillGradientPath = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = "path", stops = stops.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("gradient")
     __obj.asInstanceOf[typings.exceljs.mod.FillGradientPath]
   }
   
-  @scala.inline
-  def FillPattern(fgColor: PartialColor, pattern: FillPatterns): typings.exceljs.mod.FillPattern = {
+  inline def FillPattern(fgColor: PartialColor, pattern: FillPatterns): typings.exceljs.mod.FillPattern = {
     val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[typings.exceljs.mod.FillPattern]

@@ -21,28 +21,21 @@ trait ExportDataOptions extends StObject {
 }
 object ExportDataOptions {
   
-  @scala.inline
-  def apply(download: Boolean, format: OOXML | CSV_C | CSV_T, state: A | P): ExportDataOptions = {
+  inline def apply(download: Boolean, format: OOXML | CSV_C | CSV_T, state: A | P): ExportDataOptions = {
     val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportDataOptions]
   }
   
-  @scala.inline
-  implicit class ExportDataOptionsMutableBuilder[Self <: ExportDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportDataOptions](x: Self) {
     
-    @scala.inline
-    def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setFormat(value: OOXML | CSV_C | CSV_T): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: OOXML | CSV_C | CSV_T): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: A | P): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: A | P): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

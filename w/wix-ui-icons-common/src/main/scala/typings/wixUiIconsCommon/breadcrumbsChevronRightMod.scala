@@ -22,20 +22,16 @@ object breadcrumbsChevronRightMod extends Shortcut {
   }
   object BreadcrumbsChevronRightProps {
     
-    @scala.inline
-    def apply(): BreadcrumbsChevronRightProps = {
+    inline def apply(): BreadcrumbsChevronRightProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbsChevronRightProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsChevronRightPropsMutableBuilder[Self <: BreadcrumbsChevronRightProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsChevronRightProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

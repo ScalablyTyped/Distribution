@@ -53,47 +53,34 @@ object typesWriteCampaignRequestMod {
   }
   object UnmarshalledWriteCampaignRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledWriteCampaignRequest = {
+    inline def apply(): UnmarshalledWriteCampaignRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledWriteCampaignRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledWriteCampaignRequestMutableBuilder[Self <: UnmarshalledWriteCampaignRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledWriteCampaignRequest](x: Self) {
       
-      @scala.inline
-      def setAdditionalTreatments(value: js.Array[UnmarshalledWriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
+      inline def setAdditionalTreatments(value: js.Array[UnmarshalledWriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
+      inline def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
       
-      @scala.inline
-      def setAdditionalTreatmentsVarargs(value: UnmarshalledWriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
+      inline def setAdditionalTreatmentsVarargs(value: UnmarshalledWriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
       
-      @scala.inline
-      def setHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "Hook", value.asInstanceOf[js.Any])
+      inline def setHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "Hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHookUndefined: Self = StObject.set(x, "Hook", js.undefined)
+      inline def setHookUndefined: Self = StObject.set(x, "Hook", js.undefined)
       
-      @scala.inline
-      def setLimits(value: UnmarshalledCampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: UnmarshalledCampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
       
-      @scala.inline
-      def setMessageConfiguration(value: UnmarshalledMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+      inline def setMessageConfiguration(value: UnmarshalledMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
+      inline def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: UnmarshalledSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: UnmarshalledSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     }
   }
   
@@ -168,95 +155,66 @@ object typesWriteCampaignRequestMod {
   }
   object WriteCampaignRequest {
     
-    @scala.inline
-    def apply(): WriteCampaignRequest = {
+    inline def apply(): WriteCampaignRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteCampaignRequest]
     }
     
-    @scala.inline
-    implicit class WriteCampaignRequestMutableBuilder[Self <: WriteCampaignRequest] (val x: Self) extends AnyVal {
+    extension [Self <: WriteCampaignRequest](x: Self) {
       
-      @scala.inline
-      def setAdditionalTreatments(value: js.Array[WriteTreatmentResource] | Iterable[WriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
+      inline def setAdditionalTreatments(value: js.Array[WriteTreatmentResource] | Iterable[WriteTreatmentResource]): Self = StObject.set(x, "AdditionalTreatments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
+      inline def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
       
-      @scala.inline
-      def setAdditionalTreatmentsVarargs(value: WriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
+      inline def setAdditionalTreatmentsVarargs(value: WriteTreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setHoldoutPercent(value: Double): Self = StObject.set(x, "HoldoutPercent", value.asInstanceOf[js.Any])
+      inline def setHoldoutPercent(value: Double): Self = StObject.set(x, "HoldoutPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoldoutPercentUndefined: Self = StObject.set(x, "HoldoutPercent", js.undefined)
+      inline def setHoldoutPercentUndefined: Self = StObject.set(x, "HoldoutPercent", js.undefined)
       
-      @scala.inline
-      def setHook(value: CampaignHook): Self = StObject.set(x, "Hook", value.asInstanceOf[js.Any])
+      inline def setHook(value: CampaignHook): Self = StObject.set(x, "Hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHookUndefined: Self = StObject.set(x, "Hook", js.undefined)
+      inline def setHookUndefined: Self = StObject.set(x, "Hook", js.undefined)
       
-      @scala.inline
-      def setIsPaused(value: Boolean): Self = StObject.set(x, "IsPaused", value.asInstanceOf[js.Any])
+      inline def setIsPaused(value: Boolean): Self = StObject.set(x, "IsPaused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPausedUndefined: Self = StObject.set(x, "IsPaused", js.undefined)
+      inline def setIsPausedUndefined: Self = StObject.set(x, "IsPaused", js.undefined)
       
-      @scala.inline
-      def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
       
-      @scala.inline
-      def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+      inline def setMessageConfiguration(value: MessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
+      inline def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
       
-      @scala.inline
-      def setSegmentId(value: String): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+      inline def setSegmentId(value: String): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
+      inline def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
       
-      @scala.inline
-      def setSegmentVersion(value: Double): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
+      inline def setSegmentVersion(value: Double): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
+      inline def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
       
-      @scala.inline
-      def setTreatmentDescription(value: String): Self = StObject.set(x, "TreatmentDescription", value.asInstanceOf[js.Any])
+      inline def setTreatmentDescription(value: String): Self = StObject.set(x, "TreatmentDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreatmentDescriptionUndefined: Self = StObject.set(x, "TreatmentDescription", js.undefined)
+      inline def setTreatmentDescriptionUndefined: Self = StObject.set(x, "TreatmentDescription", js.undefined)
       
-      @scala.inline
-      def setTreatmentName(value: String): Self = StObject.set(x, "TreatmentName", value.asInstanceOf[js.Any])
+      inline def setTreatmentName(value: String): Self = StObject.set(x, "TreatmentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreatmentNameUndefined: Self = StObject.set(x, "TreatmentName", js.undefined)
+      inline def setTreatmentNameUndefined: Self = StObject.set(x, "TreatmentName", js.undefined)
     }
   }
 }

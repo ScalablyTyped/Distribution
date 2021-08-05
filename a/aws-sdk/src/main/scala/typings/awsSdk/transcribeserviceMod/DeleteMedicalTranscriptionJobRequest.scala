@@ -13,16 +13,13 @@ trait DeleteMedicalTranscriptionJobRequest extends StObject {
 }
 object DeleteMedicalTranscriptionJobRequest {
   
-  @scala.inline
-  def apply(MedicalTranscriptionJobName: TranscriptionJobName): DeleteMedicalTranscriptionJobRequest = {
+  inline def apply(MedicalTranscriptionJobName: TranscriptionJobName): DeleteMedicalTranscriptionJobRequest = {
     val __obj = js.Dynamic.literal(MedicalTranscriptionJobName = MedicalTranscriptionJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMedicalTranscriptionJobRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMedicalTranscriptionJobRequestMutableBuilder[Self <: DeleteMedicalTranscriptionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMedicalTranscriptionJobRequest](x: Self) {
     
-    @scala.inline
-    def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
+    inline def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
   }
 }

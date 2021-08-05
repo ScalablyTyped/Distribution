@@ -20,8 +20,7 @@ trait IVaultConnections extends StObject {
 }
 object IVaultConnections {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, IVaultConnection) => Unit,
     Count: Double,
     GetVaultConnectionByName: String => IVaultConnection,
@@ -33,25 +32,18 @@ object IVaultConnections {
     __obj.asInstanceOf[IVaultConnections]
   }
   
-  @scala.inline
-  implicit class IVaultConnectionsMutableBuilder[Self <: IVaultConnections] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultConnections](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, IVaultConnection) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, IVaultConnection) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetVaultConnectionByName(value: String => IVaultConnection): Self = StObject.set(x, "GetVaultConnectionByName", js.Any.fromFunction1(value))
+    inline def setGetVaultConnectionByName(value: String => IVaultConnection): Self = StObject.set(x, "GetVaultConnectionByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVaultConnectionIndexByName(value: String => Double): Self = StObject.set(x, "GetVaultConnectionIndexByName", js.Any.fromFunction1(value))
+    inline def setGetVaultConnectionIndexByName(value: String => Double): Self = StObject.set(x, "GetVaultConnectionIndexByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => IVaultConnection): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IVaultConnection): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

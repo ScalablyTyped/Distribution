@@ -28,43 +28,31 @@ trait DescribeIamInstanceProfileAssociationsRequest extends StObject {
 }
 object DescribeIamInstanceProfileAssociationsRequest {
   
-  @scala.inline
-  def apply(): DescribeIamInstanceProfileAssociationsRequest = {
+  inline def apply(): DescribeIamInstanceProfileAssociationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIamInstanceProfileAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIamInstanceProfileAssociationsRequestMutableBuilder[Self <: DescribeIamInstanceProfileAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIamInstanceProfileAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationIds(value: AssociationIdList): Self = StObject.set(x, "AssociationIds", value.asInstanceOf[js.Any])
+    inline def setAssociationIds(value: AssociationIdList): Self = StObject.set(x, "AssociationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdsUndefined: Self = StObject.set(x, "AssociationIds", js.undefined)
+    inline def setAssociationIdsUndefined: Self = StObject.set(x, "AssociationIds", js.undefined)
     
-    @scala.inline
-    def setAssociationIdsVarargs(value: IamInstanceProfileAssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value :_*))
+    inline def setAssociationIdsVarargs(value: IamInstanceProfileAssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeIamInstanceProfileAssociationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeIamInstanceProfileAssociationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

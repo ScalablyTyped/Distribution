@@ -18,8 +18,7 @@ trait FunctionalUtilities extends StObject {
 }
 object FunctionalUtilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forEach: (js.Array[VNode], js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], Unit]) => Unit,
     map: (js.Array[VNode], js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], ChildNode]) => js.Array[VNode]
   ): FunctionalUtilities = {
@@ -27,16 +26,13 @@ object FunctionalUtilities {
     __obj.asInstanceOf[FunctionalUtilities]
   }
   
-  @scala.inline
-  implicit class FunctionalUtilitiesMutableBuilder[Self <: FunctionalUtilities] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionalUtilities](x: Self) {
     
-    @scala.inline
-    def setForEach(
+    inline def setForEach(
       value: (js.Array[VNode], js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], Unit]) => Unit
     ): Self = StObject.set(x, "forEach", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (js.Array[VNode], js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], ChildNode]) => js.Array[VNode]
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
   }

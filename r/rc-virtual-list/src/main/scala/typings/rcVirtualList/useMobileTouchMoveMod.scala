@@ -12,8 +12,7 @@ object useMobileTouchMoveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     inVirtual: Boolean,
     listRef: RefObject[HTMLDivElement],
     callback: js.Function2[/* offsetY */ Double, /* smoothOffset */ js.UndefOr[Boolean], Boolean]

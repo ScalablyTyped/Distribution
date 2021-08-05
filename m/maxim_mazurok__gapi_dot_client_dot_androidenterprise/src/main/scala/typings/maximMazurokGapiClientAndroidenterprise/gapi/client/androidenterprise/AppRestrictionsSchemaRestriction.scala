@@ -38,70 +38,49 @@ trait AppRestrictionsSchemaRestriction extends StObject {
 }
 object AppRestrictionsSchemaRestriction {
   
-  @scala.inline
-  def apply(): AppRestrictionsSchemaRestriction = {
+  inline def apply(): AppRestrictionsSchemaRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppRestrictionsSchemaRestriction]
   }
   
-  @scala.inline
-  implicit class AppRestrictionsSchemaRestrictionMutableBuilder[Self <: AppRestrictionsSchemaRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: AppRestrictionsSchemaRestriction](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: AppRestrictionsSchemaRestrictionRestrictionValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: AppRestrictionsSchemaRestrictionRestrictionValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEntry(value: js.Array[String]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: js.Array[String]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+    inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
-    @scala.inline
-    def setEntryValue(value: js.Array[String]): Self = StObject.set(x, "entryValue", value.asInstanceOf[js.Any])
+    inline def setEntryValue(value: js.Array[String]): Self = StObject.set(x, "entryValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryValueUndefined: Self = StObject.set(x, "entryValue", js.undefined)
+    inline def setEntryValueUndefined: Self = StObject.set(x, "entryValue", js.undefined)
     
-    @scala.inline
-    def setEntryValueVarargs(value: String*): Self = StObject.set(x, "entryValue", js.Array(value :_*))
+    inline def setEntryValueVarargs(value: String*): Self = StObject.set(x, "entryValue", js.Array(value :_*))
     
-    @scala.inline
-    def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setNestedRestriction(value: js.Array[AppRestrictionsSchemaRestriction]): Self = StObject.set(x, "nestedRestriction", value.asInstanceOf[js.Any])
+    inline def setNestedRestriction(value: js.Array[AppRestrictionsSchemaRestriction]): Self = StObject.set(x, "nestedRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedRestrictionUndefined: Self = StObject.set(x, "nestedRestriction", js.undefined)
+    inline def setNestedRestrictionUndefined: Self = StObject.set(x, "nestedRestriction", js.undefined)
     
-    @scala.inline
-    def setNestedRestrictionVarargs(value: AppRestrictionsSchemaRestriction*): Self = StObject.set(x, "nestedRestriction", js.Array(value :_*))
+    inline def setNestedRestrictionVarargs(value: AppRestrictionsSchemaRestriction*): Self = StObject.set(x, "nestedRestriction", js.Array(value :_*))
     
-    @scala.inline
-    def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
+    inline def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionTypeUndefined: Self = StObject.set(x, "restrictionType", js.undefined)
+    inline def setRestrictionTypeUndefined: Self = StObject.set(x, "restrictionType", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

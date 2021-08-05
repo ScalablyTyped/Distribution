@@ -10,19 +10,15 @@ trait AnnotationsPitchforkTypeLineOptions extends StObject {
 }
 object AnnotationsPitchforkTypeLineOptions {
   
-  @scala.inline
-  def apply(): AnnotationsPitchforkTypeLineOptions = {
+  inline def apply(): AnnotationsPitchforkTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsPitchforkTypeLineOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsPitchforkTypeLineOptionsMutableBuilder[Self <: AnnotationsPitchforkTypeLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsPitchforkTypeLineOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

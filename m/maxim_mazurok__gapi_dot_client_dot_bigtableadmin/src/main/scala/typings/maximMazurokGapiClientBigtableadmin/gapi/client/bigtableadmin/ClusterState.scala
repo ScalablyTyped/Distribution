@@ -11,19 +11,15 @@ trait ClusterState extends StObject {
 }
 object ClusterState {
   
-  @scala.inline
-  def apply(): ClusterState = {
+  inline def apply(): ClusterState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterState]
   }
   
-  @scala.inline
-  implicit class ClusterStateMutableBuilder[Self <: ClusterState] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterState](x: Self) {
     
-    @scala.inline
-    def setReplicationState(value: String): Self = StObject.set(x, "replicationState", value.asInstanceOf[js.Any])
+    inline def setReplicationState(value: String): Self = StObject.set(x, "replicationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationStateUndefined: Self = StObject.set(x, "replicationState", js.undefined)
+    inline def setReplicationStateUndefined: Self = StObject.set(x, "replicationState", js.undefined)
   }
 }

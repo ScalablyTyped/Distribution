@@ -245,14 +245,11 @@ object Sms {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromIdAsync(deviceInstanceId: String): IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceInstanceId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice]]
+    inline def fromIdAsync(deviceInstanceId: String): IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceInstanceId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice]]
     
-    @scala.inline
-    def getDefaultAsync(): IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice]]
+    inline def getDefaultAsync(): IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.Devices.Sms.SmsDevice]]
     
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   @JSGlobal("Windows.Devices.Sms.SmsDeviceMessageStore")
@@ -439,10 +436,8 @@ object Sms {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromBinaryData(format: SmsDataFormat, value: Uint8Array): typings.winrt.Windows.Devices.Sms.SmsTextMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryData")(format.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Sms.SmsTextMessage]
+    inline def fromBinaryData(format: SmsDataFormat, value: Uint8Array): typings.winrt.Windows.Devices.Sms.SmsTextMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryData")(format.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winrt.Windows.Devices.Sms.SmsTextMessage]
     
-    @scala.inline
-    def fromBinaryMessage(binaryMessage: typings.winrt.Windows.Devices.Sms.SmsBinaryMessage): typings.winrt.Windows.Devices.Sms.SmsTextMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryMessage")(binaryMessage.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Sms.SmsTextMessage]
+    inline def fromBinaryMessage(binaryMessage: typings.winrt.Windows.Devices.Sms.SmsBinaryMessage): typings.winrt.Windows.Devices.Sms.SmsTextMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinaryMessage")(binaryMessage.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Sms.SmsTextMessage]
   }
 }

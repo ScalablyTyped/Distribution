@@ -93,32 +93,24 @@ object mod extends Shortcut {
   }
   object StartSetup {
     
-    @scala.inline
-    def apply(): StartSetup = {
+    inline def apply(): StartSetup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartSetup]
     }
     
-    @scala.inline
-    implicit class StartSetupMutableBuilder[Self <: StartSetup] (val x: Self) extends AnyVal {
+    extension [Self <: StartSetup](x: Self) {
       
-      @scala.inline
-      def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+      inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
       
-      @scala.inline
-      def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setRingback(value: String): Self = StObject.set(x, "ringback", value.asInstanceOf[js.Any])
+      inline def setRingback(value: String): Self = StObject.set(x, "ringback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRingbackUndefined: Self = StObject.set(x, "ringback", js.undefined)
+      inline def setRingbackUndefined: Self = StObject.set(x, "ringback", js.undefined)
     }
   }
   
@@ -128,20 +120,16 @@ object mod extends Shortcut {
   }
   object StopSetup {
     
-    @scala.inline
-    def apply(): StopSetup = {
+    inline def apply(): StopSetup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StopSetup]
     }
     
-    @scala.inline
-    implicit class StopSetupMutableBuilder[Self <: StopSetup] (val x: Self) extends AnyVal {
+    extension [Self <: StopSetup](x: Self) {
       
-      @scala.inline
-      def setBusytone(value: String): Self = StObject.set(x, "busytone", value.asInstanceOf[js.Any])
+      inline def setBusytone(value: String): Self = StObject.set(x, "busytone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusytoneUndefined: Self = StObject.set(x, "busytone", js.undefined)
+      inline def setBusytoneUndefined: Self = StObject.set(x, "busytone", js.undefined)
     }
   }
   

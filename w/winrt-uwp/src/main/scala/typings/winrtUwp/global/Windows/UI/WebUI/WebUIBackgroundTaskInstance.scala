@@ -22,6 +22,5 @@ object WebUIBackgroundTaskInstance {
   @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance.current")
   @js.native
   def current: IWebUIBackgroundTaskInstance = js.native
-  @scala.inline
-  def current_=(x: IWebUIBackgroundTaskInstance): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+  inline def current_=(x: IWebUIBackgroundTaskInstance): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
 }

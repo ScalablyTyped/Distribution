@@ -13,16 +13,13 @@ trait Printing3DMultiplePropertyMaterial extends StObject {
 }
 object Printing3DMultiplePropertyMaterial {
   
-  @scala.inline
-  def apply(materialIndices: IVector[Double]): Printing3DMultiplePropertyMaterial = {
+  inline def apply(materialIndices: IVector[Double]): Printing3DMultiplePropertyMaterial = {
     val __obj = js.Dynamic.literal(materialIndices = materialIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DMultiplePropertyMaterial]
   }
   
-  @scala.inline
-  implicit class Printing3DMultiplePropertyMaterialMutableBuilder[Self <: Printing3DMultiplePropertyMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DMultiplePropertyMaterial](x: Self) {
     
-    @scala.inline
-    def setMaterialIndices(value: IVector[Double]): Self = StObject.set(x, "materialIndices", value.asInstanceOf[js.Any])
+    inline def setMaterialIndices(value: IVector[Double]): Self = StObject.set(x, "materialIndices", value.asInstanceOf[js.Any])
   }
 }

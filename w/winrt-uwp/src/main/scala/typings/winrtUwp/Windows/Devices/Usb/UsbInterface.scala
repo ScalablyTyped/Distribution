@@ -31,8 +31,7 @@ trait UsbInterface extends StObject {
 }
 object UsbInterface {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bulkInPipes: IVectorView[UsbBulkInPipe],
     bulkOutPipes: IVectorView[UsbBulkOutPipe],
     descriptors: IVectorView[UsbDescriptor],
@@ -45,28 +44,20 @@ object UsbInterface {
     __obj.asInstanceOf[UsbInterface]
   }
   
-  @scala.inline
-  implicit class UsbInterfaceMutableBuilder[Self <: UsbInterface] (val x: Self) extends AnyVal {
+  extension [Self <: UsbInterface](x: Self) {
     
-    @scala.inline
-    def setBulkInPipes(value: IVectorView[UsbBulkInPipe]): Self = StObject.set(x, "bulkInPipes", value.asInstanceOf[js.Any])
+    inline def setBulkInPipes(value: IVectorView[UsbBulkInPipe]): Self = StObject.set(x, "bulkInPipes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkOutPipes(value: IVectorView[UsbBulkOutPipe]): Self = StObject.set(x, "bulkOutPipes", value.asInstanceOf[js.Any])
+    inline def setBulkOutPipes(value: IVectorView[UsbBulkOutPipe]): Self = StObject.set(x, "bulkOutPipes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    inline def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
+    inline def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceSettings(value: IVectorView[UsbInterfaceSetting]): Self = StObject.set(x, "interfaceSettings", value.asInstanceOf[js.Any])
+    inline def setInterfaceSettings(value: IVectorView[UsbInterfaceSetting]): Self = StObject.set(x, "interfaceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterruptInPipes(value: IVectorView[UsbInterruptInPipe]): Self = StObject.set(x, "interruptInPipes", value.asInstanceOf[js.Any])
+    inline def setInterruptInPipes(value: IVectorView[UsbInterruptInPipe]): Self = StObject.set(x, "interruptInPipes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterruptOutPipes(value: IVectorView[UsbInterruptOutPipe]): Self = StObject.set(x, "interruptOutPipes", value.asInstanceOf[js.Any])
+    inline def setInterruptOutPipes(value: IVectorView[UsbInterruptOutPipe]): Self = StObject.set(x, "interruptOutPipes", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: TaskMap */](tasks: T, names: js.Array[/* keyof T */ String], results: js.Array[/* keyof T */ String]): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], names.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply[T /* <: TaskMap */](
+  inline def apply[T /* <: TaskMap */](tasks: T, names: js.Array[/* keyof T */ String], results: js.Array[/* keyof T */ String]): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], names.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[T /* <: TaskMap */](
     tasks: T,
     names: js.Array[/* keyof T */ String],
     results: js.Array[/* keyof T */ String],
@@ -29,23 +27,18 @@ object mod {
   }
   object Task {
     
-    @scala.inline
-    def apply(dep: js.Array[String], name: String): Task = {
+    inline def apply(dep: js.Array[String], name: String): Task = {
       val __obj = js.Dynamic.literal(dep = dep.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Task]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    extension [Self <: Task](x: Self) {
       
-      @scala.inline
-      def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
+      inline def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value :_*))
+      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

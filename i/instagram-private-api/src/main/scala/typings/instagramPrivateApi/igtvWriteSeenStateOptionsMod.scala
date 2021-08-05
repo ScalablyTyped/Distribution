@@ -16,29 +16,22 @@ object igtvWriteSeenStateOptionsMod {
   }
   object IgtvWriteSeenStateOptions {
     
-    @scala.inline
-    def apply(): IgtvWriteSeenStateOptions = {
+    inline def apply(): IgtvWriteSeenStateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IgtvWriteSeenStateOptions]
     }
     
-    @scala.inline
-    implicit class IgtvWriteSeenStateOptionsMutableBuilder[Self <: IgtvWriteSeenStateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvWriteSeenStateOptions](x: Self) {
       
-      @scala.inline
-      def setGrid_impressions(value: js.Array[String]): Self = StObject.set(x, "grid_impressions", value.asInstanceOf[js.Any])
+      inline def setGrid_impressions(value: js.Array[String]): Self = StObject.set(x, "grid_impressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid_impressionsUndefined: Self = StObject.set(x, "grid_impressions", js.undefined)
+      inline def setGrid_impressionsUndefined: Self = StObject.set(x, "grid_impressions", js.undefined)
       
-      @scala.inline
-      def setGrid_impressionsVarargs(value: String*): Self = StObject.set(x, "grid_impressions", js.Array(value :_*))
+      inline def setGrid_impressionsVarargs(value: String*): Self = StObject.set(x, "grid_impressions", js.Array(value :_*))
       
-      @scala.inline
-      def setImpressions(value: StringDictionary[Viewprogresss]): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
+      inline def setImpressions(value: StringDictionary[Viewprogresss]): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
+      inline def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
     }
   }
 }

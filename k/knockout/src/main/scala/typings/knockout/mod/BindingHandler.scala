@@ -43,52 +43,39 @@ trait BindingHandler[T] extends StObject {
 }
 object BindingHandler {
   
-  @scala.inline
-  def apply[T](): BindingHandler[T] = {
+  inline def apply[T](): BindingHandler[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindingHandler[T]]
   }
   
-  @scala.inline
-  implicit class BindingHandlerMutableBuilder[Self <: BindingHandler[?], T] (val x: Self & BindingHandler[T]) extends AnyVal {
+  extension [Self <: BindingHandler[?], T](x: Self & BindingHandler[T]) {
     
-    @scala.inline
-    def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
-    @scala.inline
-    def setInit(
+    inline def setInit(
       value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[js.Any]) => Unit | BindingHandlerControlsDescendant
     ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPreprocess(
+    inline def setPreprocess(
       value: (/* value */ js.UndefOr[String], /* name */ String, /* addBinding */ BindingHandlerAddBinding) => js.UndefOr[String | Unit]
     ): Self = StObject.set(x, "preprocess", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
+    inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
     
-    @scala.inline
-    def setUpdate(
+    inline def setUpdate(
       value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[js.Any]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

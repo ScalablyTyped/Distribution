@@ -8,6 +8,5 @@ object angularSanitizeStrings {
   
   @js.native
   sealed trait linky extends StObject
-  @scala.inline
-  def linky: linky = "linky".asInstanceOf[linky]
+  inline def linky: linky = "linky".asInstanceOf[linky]
 }

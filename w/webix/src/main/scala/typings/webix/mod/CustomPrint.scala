@@ -17,10 +17,8 @@ object CustomPrint {
   @js.native
   val ^ : CustomPrint = js.native
   
-  @scala.inline
-  implicit class CustomPrintMutableBuilder[Self <: CustomPrint] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPrint](x: Self) {
     
-    @scala.inline
-    def set$customPrint(value: WebixCallback): Self = StObject.set(x, "$customPrint", value.asInstanceOf[js.Any])
+    inline def set$customPrint(value: WebixCallback): Self = StObject.set(x, "$customPrint", value.asInstanceOf[js.Any])
   }
 }

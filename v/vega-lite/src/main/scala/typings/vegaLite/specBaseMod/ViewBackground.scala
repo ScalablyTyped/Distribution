@@ -20,22 +20,17 @@ trait ViewBackground[ES /* <: ExprRef | SignalRef */]
 }
 object ViewBackground {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): ViewBackground[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): ViewBackground[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewBackground[ES]]
   }
   
-  @scala.inline
-  implicit class ViewBackgroundMutableBuilder[Self <: ViewBackground[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ViewBackground[ES]) extends AnyVal {
+  extension [Self <: ViewBackground[?], ES /* <: ExprRef | SignalRef */](x: Self & ViewBackground[ES]) {
     
-    @scala.inline
-    def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
   }
 }

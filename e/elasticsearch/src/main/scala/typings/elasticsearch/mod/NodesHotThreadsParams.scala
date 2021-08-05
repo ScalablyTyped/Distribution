@@ -27,55 +27,39 @@ trait NodesHotThreadsParams
 }
 object NodesHotThreadsParams {
   
-  @scala.inline
-  def apply(nodeId: NameList): NodesHotThreadsParams = {
+  inline def apply(nodeId: NameList): NodesHotThreadsParams = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesHotThreadsParams]
   }
   
-  @scala.inline
-  implicit class NodesHotThreadsParamsMutableBuilder[Self <: NodesHotThreadsParams] (val x: Self) extends AnyVal {
+  extension [Self <: NodesHotThreadsParams](x: Self) {
     
-    @scala.inline
-    def setIgnoreIdleThreads(value: Boolean): Self = StObject.set(x, "ignoreIdleThreads", value.asInstanceOf[js.Any])
+    inline def setIgnoreIdleThreads(value: Boolean): Self = StObject.set(x, "ignoreIdleThreads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIdleThreadsUndefined: Self = StObject.set(x, "ignoreIdleThreads", js.undefined)
+    inline def setIgnoreIdleThreadsUndefined: Self = StObject.set(x, "ignoreIdleThreads", js.undefined)
     
-    @scala.inline
-    def setInterval(value: TimeSpan): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: TimeSpan): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
     
-    @scala.inline
-    def setSnapshots(value: Double): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
+    inline def setSnapshots(value: Double): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
+    inline def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
     
-    @scala.inline
-    def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+    inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+    inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setType(value: cpu | wait | blocked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: cpu | wait | blocked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

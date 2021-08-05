@@ -16,8 +16,7 @@ trait CSSImportRule
 }
 object CSSImportRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CHARSET_RULE: Double,
     FONT_FACE_RULE: Double,
     IMPORT_RULE: Double,
@@ -39,16 +38,12 @@ object CSSImportRule {
     __obj.asInstanceOf[CSSImportRule]
   }
   
-  @scala.inline
-  implicit class CSSImportRuleMutableBuilder[Self <: CSSImportRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSImportRule](x: Self) {
     
-    @scala.inline
-    def setHref(value: java.lang.String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: java.lang.String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: MediaList): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: MediaList): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheet(value: CSSStyleSheet): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
+    inline def setStyleSheet(value: CSSStyleSheet): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
   }
 }

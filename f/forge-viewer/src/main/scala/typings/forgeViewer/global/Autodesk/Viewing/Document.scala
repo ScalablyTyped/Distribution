@@ -19,16 +19,13 @@ object Document {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getAecModelData(node: typings.forgeViewer.Autodesk.Viewing.BubbleNode): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAecModelData")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAecModelData(node: typings.forgeViewer.Autodesk.Viewing.BubbleNode): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAecModelData")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def getSubItemsWithProperties(item: js.Object, properties: Properties, recursive: Boolean): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubItemsWithProperties")(item.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+  inline def getSubItemsWithProperties(item: js.Object, properties: Properties, recursive: Boolean): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubItemsWithProperties")(item.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
   
   /* static member */
-  @scala.inline
-  def load(
+  inline def load(
     documentId: String,
     successCallback: js.Function1[/* doc */ typings.forgeViewer.Autodesk.Viewing.Document, Unit],
     errorCallback: js.Function3[
@@ -38,8 +35,7 @@ object Document {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(documentId.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def load(
+  inline def load(
     documentId: String,
     successCallback: js.Function1[/* doc */ typings.forgeViewer.Autodesk.Viewing.Document, Unit],
     errorCallback: js.Function3[

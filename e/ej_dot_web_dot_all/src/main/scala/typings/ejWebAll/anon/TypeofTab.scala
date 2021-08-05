@@ -15,19 +15,15 @@ trait TypeofTab extends StObject {
 }
 object TypeofTab {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Tab): TypeofTab = {
+  inline def apply(Locale: js.Any, fn: Tab): TypeofTab = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTab]
   }
   
-  @scala.inline
-  implicit class TypeofTabMutableBuilder[Self <: TypeofTab] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTab](x: Self) {
     
-    @scala.inline
-    def setFn(value: Tab): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Tab): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

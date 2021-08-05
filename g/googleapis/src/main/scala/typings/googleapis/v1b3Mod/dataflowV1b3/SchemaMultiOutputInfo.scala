@@ -17,19 +17,15 @@ trait SchemaMultiOutputInfo extends StObject {
 }
 object SchemaMultiOutputInfo {
   
-  @scala.inline
-  def apply(): SchemaMultiOutputInfo = {
+  inline def apply(): SchemaMultiOutputInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMultiOutputInfo]
   }
   
-  @scala.inline
-  implicit class SchemaMultiOutputInfoMutableBuilder[Self <: SchemaMultiOutputInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMultiOutputInfo](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

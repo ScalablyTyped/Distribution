@@ -15,30 +15,24 @@ object anon {
   }
   object Post {
     
-    @scala.inline
-    def apply(): Post = {
+    inline def apply(): Post = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Post]
     }
     
-    @scala.inline
-    implicit class PostMutableBuilder[Self <: Post] (val x: Self) extends AnyVal {
+    extension [Self <: Post](x: Self) {
       
-      @scala.inline
-      def setPost(
+      inline def setPost(
         value: (/* schema */ js.Object, /* jsonPtr */ String, /* rootSchema */ js.Object, /* parentJsonPtr */ String, /* parentKeyword */ String, /* parentSchema */ js.Object, /* keyIndex */ String | Double) => Unit
       ): Self = StObject.set(x, "post", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      @scala.inline
-      def setPre(
+      inline def setPre(
         value: (/* schema */ js.Object, /* jsonPtr */ String, /* rootSchema */ js.Object, /* parentJsonPtr */ String, /* parentKeyword */ String, /* parentSchema */ js.Object, /* keyIndex */ String | Double) => Unit
       ): Self = StObject.set(x, "pre", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     }
   }
 }

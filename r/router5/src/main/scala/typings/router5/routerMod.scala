@@ -46,8 +46,7 @@ object routerMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decoders: Record[String, js.Any],
       defaultParams: Record[String, js.Any],
       encoders: Record[String, js.Any],
@@ -57,20 +56,15 @@ object routerMod {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setDecoders(value: Record[String, js.Any]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      inline def setDecoders(value: Record[String, js.Any]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultParams(value: Record[String, js.Any]): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
+      inline def setDefaultParams(value: Record[String, js.Any]): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoders(value: Record[String, js.Any]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
+      inline def setEncoders(value: Record[String, js.Any]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardMap(value: Record[String, js.Any]): Self = StObject.set(x, "forwardMap", value.asInstanceOf[js.Any])
+      inline def setForwardMap(value: Record[String, js.Any]): Self = StObject.set(x, "forwardMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +78,14 @@ object routerMod {
   }
   object Listener {
     
-    @scala.inline
-    def apply(next: js.Any => js.Object): Listener = {
+    inline def apply(next: js.Any => js.Object): Listener = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Listener]
     }
     
-    @scala.inline
-    implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+    extension [Self <: Listener](x: Self) {
       
-      @scala.inline
-      def setNext(value: js.Any => js.Object): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: js.Any => js.Object): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -139,8 +130,7 @@ object routerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowNotFound: Boolean,
       autoCleanUp: Boolean,
       caseSensitive: Boolean,
@@ -154,56 +144,39 @@ object routerMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowNotFound(value: Boolean): Self = StObject.set(x, "allowNotFound", value.asInstanceOf[js.Any])
+      inline def setAllowNotFound(value: Boolean): Self = StObject.set(x, "allowNotFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCleanUp(value: Boolean): Self = StObject.set(x, "autoCleanUp", value.asInstanceOf[js.Any])
+      inline def setAutoCleanUp(value: Boolean): Self = StObject.set(x, "autoCleanUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultParams(value: Params): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
+      inline def setDefaultParams(value: Params): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultParamsUndefined: Self = StObject.set(x, "defaultParams", js.undefined)
+      inline def setDefaultParamsUndefined: Self = StObject.set(x, "defaultParams", js.undefined)
       
-      @scala.inline
-      def setDefaultRoute(value: String): Self = StObject.set(x, "defaultRoute", value.asInstanceOf[js.Any])
+      inline def setDefaultRoute(value: String): Self = StObject.set(x, "defaultRoute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRouteUndefined: Self = StObject.set(x, "defaultRoute", js.undefined)
+      inline def setDefaultRouteUndefined: Self = StObject.set(x, "defaultRoute", js.undefined)
       
-      @scala.inline
-      def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: IOptions): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsMode(value: QueryParamsMode): Self = StObject.set(x, "queryParamsMode", value.asInstanceOf[js.Any])
+      inline def setQueryParamsMode(value: QueryParamsMode): Self = StObject.set(x, "queryParamsMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setRewritePathOnMatch(value: Boolean): Self = StObject.set(x, "rewritePathOnMatch", value.asInstanceOf[js.Any])
+      inline def setRewritePathOnMatch(value: Boolean): Self = StObject.set(x, "rewritePathOnMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictTrailingSlash(value: Boolean): Self = StObject.set(x, "strictTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setStrictTrailingSlash(value: Boolean): Self = StObject.set(x, "strictTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongMatching(value: Boolean): Self = StObject.set(x, "strongMatching", value.asInstanceOf[js.Any])
+      inline def setStrongMatching(value: Boolean): Self = StObject.set(x, "strongMatching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingSlashMode(value: TrailingSlashMode): Self = StObject.set(x, "trailingSlashMode", value.asInstanceOf[js.Any])
+      inline def setTrailingSlashMode(value: TrailingSlashMode): Self = StObject.set(x, "trailingSlashMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlParamsEncoding(value: URLParamsEncodingType): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
+      inline def setUrlParamsEncoding(value: URLParamsEncodingType): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlParamsEncodingUndefined: Self = StObject.set(x, "urlParamsEncoding", js.undefined)
+      inline def setUrlParamsEncodingUndefined: Self = StObject.set(x, "urlParamsEncoding", js.undefined)
     }
   }
   
@@ -243,60 +216,44 @@ object routerMod {
   }
   object Plugin {
     
-    @scala.inline
-    def apply(): Plugin = {
+    inline def apply(): Plugin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Plugin]
     }
     
-    @scala.inline
-    implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+    extension [Self <: Plugin](x: Self) {
       
-      @scala.inline
-      def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
+      inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: () => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction0(value))
+      inline def setOnStop(value: () => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setOnTransitionCancel(value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State]) => Unit): Self = StObject.set(x, "onTransitionCancel", js.Any.fromFunction2(value))
+      inline def setOnTransitionCancel(value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State]) => Unit): Self = StObject.set(x, "onTransitionCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTransitionCancelUndefined: Self = StObject.set(x, "onTransitionCancel", js.undefined)
+      inline def setOnTransitionCancelUndefined: Self = StObject.set(x, "onTransitionCancel", js.undefined)
       
-      @scala.inline
-      def setOnTransitionError(
+      inline def setOnTransitionError(
         value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State], /* err */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "onTransitionError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnTransitionErrorUndefined: Self = StObject.set(x, "onTransitionError", js.undefined)
+      inline def setOnTransitionErrorUndefined: Self = StObject.set(x, "onTransitionError", js.undefined)
       
-      @scala.inline
-      def setOnTransitionStart(value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State]) => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction2(value))
+      inline def setOnTransitionStart(value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State]) => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
+      inline def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
       
-      @scala.inline
-      def setOnTransitionSuccess(
+      inline def setOnTransitionSuccess(
         value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State], /* opts */ js.UndefOr[NavigationOptions]) => Unit
       ): Self = StObject.set(x, "onTransitionSuccess", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnTransitionSuccessUndefined: Self = StObject.set(x, "onTransitionSuccess", js.undefined)
+      inline def setOnTransitionSuccessUndefined: Self = StObject.set(x, "onTransitionSuccess", js.undefined)
       
-      @scala.inline
-      def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+      inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
+      inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
     }
   }
   
@@ -326,61 +283,44 @@ object routerMod {
   }
   object Route {
     
-    @scala.inline
-    def apply[Dependencies /* <: DefaultDependencies */](name: String, path: String): Route[Dependencies] = {
+    inline def apply[Dependencies /* <: DefaultDependencies */](name: String, path: String): Route[Dependencies] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Route[Dependencies]]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route[?], Dependencies /* <: DefaultDependencies */] (val x: Self & Route[Dependencies]) extends AnyVal {
+    extension [Self <: Route[?], Dependencies /* <: DefaultDependencies */](x: Self & Route[Dependencies]) {
       
-      @scala.inline
-      def setCanActivate(
+      inline def setCanActivate(
         value: (/* router */ Router[DefaultDependencies], /* dependencies */ js.UndefOr[Dependencies]) => ActivationFn
       ): Self = StObject.set(x, "canActivate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
+      inline def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[Route[Dependencies]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Route[Dependencies]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: Route[Dependencies]*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Route[Dependencies]*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDecodeParams(value: /* pathParams */ Params => Params): Self = StObject.set(x, "decodeParams", js.Any.fromFunction1(value))
+      inline def setDecodeParams(value: /* pathParams */ Params => Params): Self = StObject.set(x, "decodeParams", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeParamsUndefined: Self = StObject.set(x, "decodeParams", js.undefined)
+      inline def setDecodeParamsUndefined: Self = StObject.set(x, "decodeParams", js.undefined)
       
-      @scala.inline
-      def setDefaultParams(value: Params): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
+      inline def setDefaultParams(value: Params): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultParamsUndefined: Self = StObject.set(x, "defaultParams", js.undefined)
+      inline def setDefaultParamsUndefined: Self = StObject.set(x, "defaultParams", js.undefined)
       
-      @scala.inline
-      def setEncodeParams(value: /* stateParams */ Params => Params): Self = StObject.set(x, "encodeParams", js.Any.fromFunction1(value))
+      inline def setEncodeParams(value: /* stateParams */ Params => Params): Self = StObject.set(x, "encodeParams", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeParamsUndefined: Self = StObject.set(x, "encodeParams", js.undefined)
+      inline def setEncodeParamsUndefined: Self = StObject.set(x, "encodeParams", js.undefined)
       
-      @scala.inline
-      def setForwardTo(value: String): Self = StObject.set(x, "forwardTo", value.asInstanceOf[js.Any])
+      inline def setForwardTo(value: String): Self = StObject.set(x, "forwardTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardToUndefined: Self = StObject.set(x, "forwardTo", js.undefined)
+      inline def setForwardToUndefined: Self = StObject.set(x, "forwardTo", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -547,20 +487,16 @@ object routerMod {
   }
   object SubscribeState {
     
-    @scala.inline
-    def apply(previousRoute: State, route: State): SubscribeState = {
+    inline def apply(previousRoute: State, route: State): SubscribeState = {
       val __obj = js.Dynamic.literal(previousRoute = previousRoute.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeState]
     }
     
-    @scala.inline
-    implicit class SubscribeStateMutableBuilder[Self <: SubscribeState] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeState](x: Self) {
       
-      @scala.inline
-      def setPreviousRoute(value: State): Self = StObject.set(x, "previousRoute", value.asInstanceOf[js.Any])
+      inline def setPreviousRoute(value: State): Self = StObject.set(x, "previousRoute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: State): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: State): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -572,17 +508,14 @@ object routerMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(unsubscribe: () => Unit): Subscription = {
+    inline def apply(unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
 }

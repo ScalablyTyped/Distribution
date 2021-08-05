@@ -18,28 +18,21 @@ trait DocumentKeyValuesFilter extends StObject {
 }
 object DocumentKeyValuesFilter {
   
-  @scala.inline
-  def apply(): DocumentKeyValuesFilter = {
+  inline def apply(): DocumentKeyValuesFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentKeyValuesFilter]
   }
   
-  @scala.inline
-  implicit class DocumentKeyValuesFilterMutableBuilder[Self <: DocumentKeyValuesFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentKeyValuesFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: DocumentKeyValuesFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: DocumentKeyValuesFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValues(value: DocumentKeyValuesFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: DocumentKeyValuesFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: DocumentKeyValuesFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: DocumentKeyValuesFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

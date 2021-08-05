@@ -24,8 +24,7 @@ trait XFormField
 }
 object XFormField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FieldType: String,
     Parameters: XNameContainer,
     acquire: () => Unit,
@@ -39,22 +38,16 @@ object XFormField {
     __obj.asInstanceOf[XFormField]
   }
   
-  @scala.inline
-  implicit class XFormFieldMutableBuilder[Self <: XFormField] (val x: Self) extends AnyVal {
+  extension [Self <: XFormField](x: Self) {
     
-    @scala.inline
-    def setFieldType(value: String): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: String): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFieldType(value: () => String): Self = StObject.set(x, "getFieldType", js.Any.fromFunction0(value))
+    inline def setGetFieldType(value: () => String): Self = StObject.set(x, "getFieldType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => XNameContainer): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => XNameContainer): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParameters(value: XNameContainer): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: XNameContainer): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFieldType(value: String => Unit): Self = StObject.set(x, "setFieldType", js.Any.fromFunction1(value))
+    inline def setSetFieldType(value: String => Unit): Self = StObject.set(x, "setFieldType", js.Any.fromFunction1(value))
   }
 }

@@ -32,404 +32,281 @@ object _underscore {
   @JSImport("ag-grid/dist/lib/main", "_.NUMPAD_DEL_NUMLOCK_ON_CHARCODE")
   @js.native
   def NUMPAD_DEL_NUMLOCK_ON_CHARCODE: js.Any = js.native
-  @scala.inline
-  def NUMPAD_DEL_NUMLOCK_ON_CHARCODE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_DEL_NUMLOCK_ON_CHARCODE")(x.asInstanceOf[js.Any])
+  inline def NUMPAD_DEL_NUMLOCK_ON_CHARCODE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_DEL_NUMLOCK_ON_CHARCODE")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "_.NUMPAD_DEL_NUMLOCK_ON_KEY")
   @js.native
   def NUMPAD_DEL_NUMLOCK_ON_KEY: js.Any = js.native
-  @scala.inline
-  def NUMPAD_DEL_NUMLOCK_ON_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_DEL_NUMLOCK_ON_KEY")(x.asInstanceOf[js.Any])
+  inline def NUMPAD_DEL_NUMLOCK_ON_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_DEL_NUMLOCK_ON_KEY")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "_.PRINTABLE_CHARACTERS")
   @js.native
   def PRINTABLE_CHARACTERS: js.Any = js.native
-  @scala.inline
-  def PRINTABLE_CHARACTERS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINTABLE_CHARACTERS")(x.asInstanceOf[js.Any])
+  inline def PRINTABLE_CHARACTERS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINTABLE_CHARACTERS")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def addAgGridEventPath(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAgGridEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addAgGridEventPath(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAgGridEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addChangeListener(element: HTMLElement, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(element.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addChangeListener(element: HTMLElement, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(element.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addOrRemoveCssClass(element: HTMLElement, className: String, addOrRemove: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrRemoveCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addOrRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addOrRemoveCssClass(element: HTMLElement, className: String, addOrRemove: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrRemoveCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any], addOrRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addSafePassiveEventListener(eElement: HTMLElement, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSafePassiveEventListener")(eElement.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addSafePassiveEventListener(eElement: HTMLElement, event: String, listener: js.Function1[/* event */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSafePassiveEventListener")(eElement.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addStylesToElement(eElement: js.Any, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addStylesToElement")(eElement.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addStylesToElement(eElement: js.Any, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addStylesToElement")(eElement.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def anyExists(values: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("anyExists")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def anyExists(values: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("anyExists")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def appendHtml(eContainer: HTMLElement, htmlTemplate: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendHtml")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def appendHtml(eContainer: HTMLElement, htmlTemplate: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendHtml")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def areEventsNear(e1: MouseEvent, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def areEventsNear(e1: MouseEvent, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def areEventsNear(e1: Touch, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def areEventsNear(e1: Touch, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areEventsNear(e1: MouseEvent, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areEventsNear(e1: MouseEvent, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areEventsNear(e1: Touch, e2: MouseEvent, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areEventsNear(e1: Touch, e2: Touch, pixelCount: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEventsNear")(e1.asInstanceOf[js.Any], e2.asInstanceOf[js.Any], pixelCount.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def assign(`object`: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(`object`.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def assign(`object`: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(`object`.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def callIfPresent(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callIfPresent")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def callIfPresent(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callIfPresent")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def camelCaseToHumanText(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHumanText")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def camelCaseToHumanText(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHumanText")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def camelCaseToHyphen(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHyphen")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def camelCaseToHyphen(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToHyphen")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def cleanNumber(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def cleanNumber(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def cloneObject[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def cloneObject[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def compareArrays(array1: js.Array[js.Any], array2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareArrays")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compareArrays(array1: js.Array[js.Any], array2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareArrays")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def containsClass(element: js.Any, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def containsClass(element: js.Any, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def copyNodeList(nodeList: NodeList): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyNodeList")(nodeList.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
+  inline def copyNodeList(nodeList: NodeList): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyNodeList")(nodeList.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
   
-  @scala.inline
-  def createArrayOfNumbers(first: Double, last: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayOfNumbers")(first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def createArrayOfNumbers(first: Double, last: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArrayOfNumbers")(first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def createEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
+  inline def createEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
   
   /**
     * If icon provided, use this (either a string, or a function callback).
     * if not, then use the default icon from the theme
     */
-  @scala.inline
-  def createIcon(
+  inline def createIcon(
     iconName: String,
     gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
     column: typings.agGrid.columnMod.Column
   ): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(iconName.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @scala.inline
-  def createIconNoSpan(
+  inline def createIconNoSpan(
     iconName: String,
     gridOptionsWrapper: typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper,
     column: typings.agGrid.columnMod.Column
   ): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createIconNoSpan")(iconName.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @scala.inline
-  def cssStyleObjectToMarkup(stylesToUse: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssStyleObjectToMarkup")(stylesToUse.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cssStyleObjectToMarkup(stylesToUse: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssStyleObjectToMarkup")(stylesToUse.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * https://stackoverflow.com/questions/24004791/can-someone-explain-the-debounce-function-in-javascript
     */
-  @scala.inline
-  def debounce(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def debounce(func: js.Function0[Unit], wait: Double, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def debounce(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def debounce(func: js.Function0[Unit], wait: Double, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @scala.inline
-  def defaultComparator(valueA: js.Any, valueB: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def defaultComparator(valueA: js.Any, valueB: js.Any, accentedCompare: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], accentedCompare.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def defaultComparator(valueA: js.Any, valueB: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def defaultComparator(valueA: js.Any, valueB: js.Any, accentedCompare: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], accentedCompare.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def doOnce(func: js.Function0[Unit], key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doOnce")(func.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def doOnce(func: js.Function0[Unit], key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doOnce")(func.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ag-grid/dist/lib/main", "_.doOnceFlags")
   @js.native
   def doOnceFlags: js.Any = js.native
-  @scala.inline
-  def doOnceFlags_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doOnceFlags")(x.asInstanceOf[js.Any])
+  inline def doOnceFlags_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doOnceFlags")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ensureDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def escape(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def every[T](items: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(items.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def every[T](items: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(items.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def executeAfter(funcs: js.Array[js.Function], millis: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAfter")(funcs.asInstanceOf[js.Any], millis.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def executeAfter(funcs: js.Array[js.Function], millis: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAfter")(funcs.asInstanceOf[js.Any], millis.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def executeInAWhile(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeInAWhile")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def executeInAWhile(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeInAWhile")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def executeNextVMTurn(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeNextVMTurn")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def executeNextVMTurn(funcs: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeNextVMTurn")(funcs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def exists(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def exists(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def existsAndNotEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsAndNotEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def existsAndNotEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsAndNotEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def filter[T](array: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def filter[T](array: js.Array[T], callback: js.Function1[/* item */ T, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def find[T](collection: js.Array[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: js.Array[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: js.Array[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: js.Array[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: StringDictionary[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: StringDictionary[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: StringDictionary[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def find[T](collection: StringDictionary[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: js.Array[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: js.Array[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: js.Array[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: js.Array[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: js.Array[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: StringDictionary[T], predicate: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: StringDictionary[T], predicate: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: StringDictionary[T], predicate: js.Function1[/* item */ T, Unit], value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: StringDictionary[T], predicate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](collection: StringDictionary[T], predicate: Boolean, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(collection.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def firstExistingValue[A](values: A*): A = ^.asInstanceOf[js.Dynamic].applyDynamic("firstExistingValue")(values.asInstanceOf[js.Any]).asInstanceOf[A]
+  inline def firstExistingValue[A](values: A*): A = ^.asInstanceOf[js.Dynamic].applyDynamic("firstExistingValue")(values.asInstanceOf[js.Any]).asInstanceOf[A]
   
-  @scala.inline
-  def forEach[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def forEachSnapshotFirst(list: js.Array[js.Any], callback: js.Function1[/* item */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachSnapshotFirst")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEachSnapshotFirst(list: js.Array[js.Any], callback: js.Function1[/* item */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachSnapshotFirst")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def formatNumberCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatNumberCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def formatNumberTwoDecimalPlacesAndCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberTwoDecimalPlacesAndCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatNumberTwoDecimalPlacesAndCommas(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumberTwoDecimalPlacesAndCommas")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def formatWidth(width: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def formatWidth(width: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatWidth(width: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatWidth(width: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWidth")(width.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fuzzyCheckStrings(inputValues: js.Array[String], validValues: js.Array[String], allSuggestions: js.Array[String]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyCheckStrings")(inputValues.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
+  inline def fuzzyCheckStrings(inputValues: js.Array[String], validValues: js.Array[String], allSuggestions: js.Array[String]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyCheckStrings")(inputValues.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
   
-  @scala.inline
-  def fuzzySuggestions(inputValue: String, validValues: js.Array[String], allSuggestions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzySuggestions")(inputValue.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def fuzzySuggestions(inputValue: String, validValues: js.Array[String], allSuggestions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzySuggestions")(inputValue.asInstanceOf[js.Any], validValues.asInstanceOf[js.Any], allSuggestions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def get(source: StringDictionary[js.Any], expression: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(source.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(source: StringDictionary[js.Any], expression: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(source.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getAllKeysInObjects(objects: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysInObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getAllKeysInObjects(objects: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysInObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getBigrams(from: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_bigrams")(from.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getBigrams(from: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_bigrams")(from.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getBodyHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyHeight")().asInstanceOf[Double]
+  inline def getBodyHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyHeight")().asInstanceOf[Double]
   
-  @scala.inline
-  def getBodyWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyWidth")().asInstanceOf[Double]
+  inline def getBodyWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyWidth")().asInstanceOf[Double]
   
-  @scala.inline
-  def getElementAttribute(element: js.Any, attributeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(element.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getElementAttribute(element: js.Any, attributeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(element.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
+  inline def getEventPath(event: Event): js.Array[EventTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventPath")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[EventTarget]]
   
-  @scala.inline
-  def getFunctionParameters(func: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionParameters")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getFunctionParameters(func: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionParameters")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getMaxDivHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxDivHeight")().asInstanceOf[Double]
+  inline def getMaxDivHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxDivHeight")().asInstanceOf[Double]
   
-  @scala.inline
-  def getNameOfClass(TheClass: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfClass")(TheClass.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getNameOfClass(TheClass: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfClass")(TheClass.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getScrollLeft(element: HTMLElement, rtl: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollLeft")(element.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getScrollLeft(element: HTMLElement, rtl: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollLeft")(element.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getScrollbarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollbarWidth")().asInstanceOf[Double]
+  inline def getScrollbarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollbarWidth")().asInstanceOf[Double]
   
-  @scala.inline
-  def getTarget(event: Event): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(event.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def getTarget(event: Event): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(event.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def getValueUsingField(data: js.Any, field: String, fieldContainsDots: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueUsingField")(data.asInstanceOf[js.Any], field.asInstanceOf[js.Any], fieldContainsDots.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getValueUsingField(data: js.Any, field: String, fieldContainsDots: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueUsingField")(data.asInstanceOf[js.Any], field.asInstanceOf[js.Any], fieldContainsDots.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hyphenToCamelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenToCamelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hyphenToCamelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenToCamelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def insertArrayIntoArray[T](dest: js.Array[T], src: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertArrayIntoArray")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertArrayIntoArray[T](dest: js.Array[T], src: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertArrayIntoArray")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def insertIntoArray[T](array: js.Array[T], `object`: T, toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertIntoArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertIntoArray[T](array: js.Array[T], `object`: T, toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertIntoArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def insertTemplateWithDomOrder(eContainer: HTMLElement, htmlTemplate: String, eChildBefore: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertTemplateWithDomOrder")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def insertTemplateWithDomOrder(eContainer: HTMLElement, htmlTemplate: String, eChildBefore: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertTemplateWithDomOrder")(eContainer.asInstanceOf[js.Any], htmlTemplate.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @scala.inline
-  def insertWithDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertWithDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertWithDomOrder(eContainer: HTMLElement, eChild: HTMLElement, eChildBefore: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertWithDomOrder")(eContainer.asInstanceOf[js.Any], eChild.asInstanceOf[js.Any], eChildBefore.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isBrowserChrome(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserChrome")().asInstanceOf[Boolean]
+  inline def isBrowserChrome(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserChrome")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBrowserEdge(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserEdge")().asInstanceOf[Boolean]
+  inline def isBrowserEdge(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserEdge")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBrowserFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserFirefox")().asInstanceOf[Boolean]
+  inline def isBrowserFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserFirefox")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBrowserIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserIE")().asInstanceOf[Boolean]
+  inline def isBrowserIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserIE")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBrowserSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserSafari")().asInstanceOf[Boolean]
+  inline def isBrowserSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserSafari")().asInstanceOf[Boolean]
   
   @JSImport("ag-grid/dist/lib/main", "_.isChrome")
   @js.native
   def isChrome: js.Any = js.native
-  @scala.inline
-  def isChrome_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isChrome")(x.asInstanceOf[js.Any])
+  inline def isChrome_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isChrome")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "_.isEdge")
   @js.native
   def isEdge: js.Any = js.native
-  @scala.inline
-  def isEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isEdge")(x.asInstanceOf[js.Any])
+  inline def isEdge_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isEdge")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isElementInEventPath(element: HTMLElement, event: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementInEventPath")(element.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isElementInEventPath(element: HTMLElement, event: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementInEventPath")(element.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEventFromPrintableCharacter(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFromPrintableCharacter")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEventFromPrintableCharacter(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFromPrintableCharacter")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("ag-grid/dist/lib/main", "_.isFirefox")
   @js.native
   def isFirefox: js.Any = js.native
-  @scala.inline
-  def isFirefox_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFirefox")(x.asInstanceOf[js.Any])
+  inline def isFirefox_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFirefox")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isHorizontalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHorizontalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHorizontalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHorizontalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("ag-grid/dist/lib/main", "_.isIE")
   @js.native
   def isIE: js.Any = js.native
-  @scala.inline
-  def isIE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isIE")(x.asInstanceOf[js.Any])
+  inline def isIE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isIE")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "_.isIPad")
   @js.native
   def isIPad: js.Any = js.native
-  @scala.inline
-  def isIPad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isIPad")(x.asInstanceOf[js.Any])
+  inline def isIPad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isIPad")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isKeyPressed(event: KeyboardEvent, keyToCheck: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyPressed")(event.asInstanceOf[js.Any], keyToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isKeyPressed(event: KeyboardEvent, keyToCheck: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyPressed")(event.asInstanceOf[js.Any], keyToCheck.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNode(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNode(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNodeOrElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeOrElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNodeOrElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeOrElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * From http://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
     */
-  @scala.inline
-  def isNumeric(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNumeric(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNumpadDelWithNumlockOnForEdgeOrIe(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumpadDelWithNumlockOnForEdgeOrIe")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isNumpadDelWithNumlockOnForEdgeOrIe(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumpadDelWithNumlockOnForEdgeOrIe")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("ag-grid/dist/lib/main", "_.isSafari")
   @js.native
   def isSafari: js.Any = js.native
-  @scala.inline
-  def isSafari_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSafari")(x.asInstanceOf[js.Any])
+  inline def isSafari_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSafari")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isStopPropagationForAgGrid(event: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStopPropagationForAgGrid(event: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUserAgentIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserAgentIPad")().asInstanceOf[Boolean]
+  inline def isUserAgentIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserAgentIPad")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isVerticalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVerticalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVerticalScrollShowing(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVerticalScrollShowing")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isVisible(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVisible(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def iterateArray[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateArray")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def iterateArray[T](array: js.Array[T], callback: js.Function2[/* item */ T, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateArray")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def iterateNamedNodeMap(map: NamedNodeMap, callback: js.Function2[/* key */ String, /* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateNamedNodeMap")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def iterateNamedNodeMap(map: NamedNodeMap, callback: js.Function2[/* key */ String, /* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateNamedNodeMap")(map.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def iterateObject[T](`object`: js.Array[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def iterateObject[T](`object`: StringDictionary[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def iterateObject[T](`object`: js.Array[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def iterateObject[T](`object`: StringDictionary[T], callback: js.Function2[/* key */ String, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * loads the template and returns it as an element. makes up for no simple way in
     * the dom api to load html directly, eg we cannot do this: document.createElement(template)
     */
-  @scala.inline
-  def loadTemplate(template: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def loadTemplate(template: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
-  @scala.inline
-  def makeNull[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeNull")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def makeNull[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeNull")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def map[TItem, TResult](array: js.Array[TItem], callback: js.Function1[/* item */ TItem, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
+  inline def map[TItem, TResult](array: js.Array[TItem], callback: js.Function1[/* item */ TItem, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
   
-  @scala.inline
-  def mapObject[TResult](`object`: js.Any, callback: js.Function1[/* item */ js.Any, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
+  inline def mapObject[TResult](`object`: js.Any, callback: js.Function1[/* item */ js.Any, TResult]): js.Array[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[TResult]]
   
-  @scala.inline
-  def mergeDeep(dest: js.Any, source: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mergeDeep(dest: js.Any, source: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def message(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("message")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def message(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("message")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def missing(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missing")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def missing(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missing")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def missingOrEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def missingOrEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def missingOrEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def missingOrEmpty(value: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def missingOrEmptyObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmptyObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def missingOrEmptyObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("missingOrEmptyObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def moveInArray[T](array: js.Array[T], objectsToMove: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInArray")(array.asInstanceOf[js.Any], objectsToMove.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def moveInArray[T](array: js.Array[T], objectsToMove: js.Array[T], toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveInArray")(array.asInstanceOf[js.Any], objectsToMove.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Mouse wheel (and 2-finger trackpad) support on the web sucks.  It is
@@ -531,99 +408,69 @@ object _underscore {
     *         Firefox v4/Win7  |     undefined    |       3
     *
     */
-  @scala.inline
-  def normalizeWheel(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeWheel")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def normalizeWheel(event: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeWheel")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def offsetHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def offsetHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def offsetWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def offsetWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def pad(num: Double, totalStringSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(num.asInstanceOf[js.Any], totalStringSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pad(num: Double, totalStringSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(num.asInstanceOf[js.Any], totalStringSize.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def parseYyyyMmDdToDate(yyyyMmDd: String, separator: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseYyyyMmDdToDate")(yyyyMmDd.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def parseYyyyMmDdToDate(yyyyMmDd: String, separator: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseYyyyMmDdToDate")(yyyyMmDd.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Date]
   
   @JSImport("ag-grid/dist/lib/main", "_.passiveEvents")
   @js.native
   def passiveEvents: js.Array[String] = js.native
-  @scala.inline
-  def passiveEvents_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("passiveEvents")(x.asInstanceOf[js.Any])
+  inline def passiveEvents_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("passiveEvents")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def prependDC(parent: HTMLElement, documentFragment: DocumentFragment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prependDC")(parent.asInstanceOf[js.Any], documentFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def prependDC(parent: HTMLElement, documentFragment: DocumentFragment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prependDC")(parent.asInstanceOf[js.Any], documentFragment.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def pushAll(target: js.Array[js.Any], source: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushAll")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pushAll(target: js.Array[js.Any], source: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushAll")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def referenceCompare(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("referenceCompare")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def referenceCompare(left: js.Any, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("referenceCompare")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def removeAllChildren(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllChildren")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeAllChildren(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllChildren")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeAllFromArray[T](array: js.Array[T], toRemove: js.Array[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllFromArray")(array.asInstanceOf[js.Any], toRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeAllFromArray[T](array: js.Array[T], toRemove: js.Array[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllFromArray")(array.asInstanceOf[js.Any], toRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeCssClass(element: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCssClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeElement(parent: HTMLElement, cssSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElement")(parent.asInstanceOf[js.Any], cssSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeElement(parent: HTMLElement, cssSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElement")(parent.asInstanceOf[js.Any], cssSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeFromParent(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromParent")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeFromParent(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromParent")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeRepeatsFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeRepeatsFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeRepeatsFromArray[T](array: js.Array[T], `object`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeRepeatsFromArray")(array.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def serializeDateToYyyyMmDd(date: Date, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeDateToYyyyMmDd")(date.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serializeDateToYyyyMmDd(date: Date, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeDateToYyyyMmDd")(date.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def setCheckboxState(eCheckbox: js.Any, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCheckboxState")(eCheckbox.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCheckboxState(eCheckbox: js.Any, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCheckboxState")(eCheckbox.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setHidden(element: HTMLElement, hidden: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(element.asInstanceOf[js.Any], hidden.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setHidden(element: HTMLElement, hidden: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHidden")(element.asInstanceOf[js.Any], hidden.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setScrollLeft(element: HTMLElement, value: Double, rtl: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScrollLeft")(element.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setScrollLeft(element: HTMLElement, value: Double, rtl: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScrollLeft")(element.asInstanceOf[js.Any], value.asInstanceOf[js.Any], rtl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setVisible(element: HTMLElement, visible: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVisible")(element.asInstanceOf[js.Any], visible.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setVisible(element: HTMLElement, visible: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVisible")(element.asInstanceOf[js.Any], visible.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def shallowCompare(arr1: js.Array[js.Any], arr2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shallowCompare(arr1: js.Array[js.Any], arr2: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def sortNumberArray(numberArray: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sortNumberArray")(numberArray.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sortNumberArray(numberArray: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sortNumberArray")(numberArray.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sortRowNodesByOrder(rowNodes: js.Array[typings.agGrid.rowNodeMod.RowNode], rowNodeOrder: StringDictionary[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sortRowNodesByOrder")(rowNodes.asInstanceOf[js.Any], rowNodeOrder.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sortRowNodesByOrder(rowNodes: js.Array[typings.agGrid.rowNodeMod.RowNode], rowNodeOrder: StringDictionary[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sortRowNodesByOrder")(rowNodes.asInstanceOf[js.Any], rowNodeOrder.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def stopPropagationForAgGrid(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stopPropagationForAgGrid(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagationForAgGrid")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def stringSimilarity(str1: String, str2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("string_similarity")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def stringSimilarity(str1: String, str2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("string_similarity")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def toStringOrNull(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringOrNull")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toStringOrNull(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringOrNull")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toStrings[T](array: js.Array[T]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStrings")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def toStrings[T](array: js.Array[T]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStrings")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def traverseNodesWithKey(
+  inline def traverseNodesWithKey(
     nodes: js.Array[typings.agGrid.rowNodeMod.RowNode],
     callback: js.Function2[/* node */ typings.agGrid.rowNodeMod.RowNode, /* key */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNodesWithKey")(nodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def values[T](`object`: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def values[T](`object`: StringDictionary[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

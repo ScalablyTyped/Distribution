@@ -18,8 +18,7 @@ object views {
   }
   object XAbstractView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Document: XDocumentView,
       acquire: () => Unit,
       getDocument: () => XDocumentView,
@@ -30,14 +29,11 @@ object views {
       __obj.asInstanceOf[XAbstractView]
     }
     
-    @scala.inline
-    implicit class XAbstractViewMutableBuilder[Self <: XAbstractView] (val x: Self) extends AnyVal {
+    extension [Self <: XAbstractView](x: Self) {
       
-      @scala.inline
-      def setDocument(value: XDocumentView): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: XDocumentView): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDocument(value: () => XDocumentView): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
+      inline def setGetDocument(value: () => XDocumentView): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
     }
   }
   
@@ -51,8 +47,7 @@ object views {
   }
   object XDocumentView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DefaultView: XAbstractView,
       acquire: () => Unit,
       getDefaultView: () => XAbstractView,
@@ -63,14 +58,11 @@ object views {
       __obj.asInstanceOf[XDocumentView]
     }
     
-    @scala.inline
-    implicit class XDocumentViewMutableBuilder[Self <: XDocumentView] (val x: Self) extends AnyVal {
+    extension [Self <: XDocumentView](x: Self) {
       
-      @scala.inline
-      def setDefaultView(value: XAbstractView): Self = StObject.set(x, "DefaultView", value.asInstanceOf[js.Any])
+      inline def setDefaultView(value: XAbstractView): Self = StObject.set(x, "DefaultView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDefaultView(value: () => XAbstractView): Self = StObject.set(x, "getDefaultView", js.Any.fromFunction0(value))
+      inline def setGetDefaultView(value: () => XAbstractView): Self = StObject.set(x, "getDefaultView", js.Any.fromFunction0(value))
     }
   }
 }

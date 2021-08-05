@@ -22,8 +22,7 @@ object anon {
   }
   object ContainerHeight {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerHeight: Double,
       containerWidth: Double,
       leftPosition: Double,
@@ -35,26 +34,19 @@ object anon {
       __obj.asInstanceOf[ContainerHeight]
     }
     
-    @scala.inline
-    implicit class ContainerHeightMutableBuilder[Self <: ContainerHeight] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerHeight](x: Self) {
       
-      @scala.inline
-      def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
+      inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftPosition(value: Double): Self = StObject.set(x, "leftPosition", value.asInstanceOf[js.Any])
+      inline def setLeftPosition(value: Double): Self = StObject.set(x, "leftPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealHeight(value: Double): Self = StObject.set(x, "realHeight", value.asInstanceOf[js.Any])
+      inline def setRealHeight(value: Double): Self = StObject.set(x, "realHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealWidth(value: Double): Self = StObject.set(x, "realWidth", value.asInstanceOf[js.Any])
+      inline def setRealWidth(value: Double): Self = StObject.set(x, "realWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopPosition(value: Double): Self = StObject.set(x, "topPosition", value.asInstanceOf[js.Any])
+      inline def setTopPosition(value: Double): Self = StObject.set(x, "topPosition", value.asInstanceOf[js.Any])
     }
   }
 }

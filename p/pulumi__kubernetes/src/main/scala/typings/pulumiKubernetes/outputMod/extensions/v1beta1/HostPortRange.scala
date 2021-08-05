@@ -21,19 +21,15 @@ trait HostPortRange extends StObject {
 }
 object HostPortRange {
   
-  @scala.inline
-  def apply(max: Double, min: Double): HostPortRange = {
+  inline def apply(max: Double, min: Double): HostPortRange = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostPortRange]
   }
   
-  @scala.inline
-  implicit class HostPortRangeMutableBuilder[Self <: HostPortRange] (val x: Self) extends AnyVal {
+  extension [Self <: HostPortRange](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

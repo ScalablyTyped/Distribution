@@ -42,8 +42,7 @@ trait Activation[T /* <: Tensor3D | Tensor4D */] extends StObject {
 }
 object Activation {
   
-  @scala.inline
-  def apply[T /* <: Tensor3D | Tensor4D */](
+  inline def apply[T /* <: Tensor3D | Tensor4D */](
     filter: Tensor4D | TensorLike,
     pad: valid_ | same_ | Double | ExplicitPadding,
     strides: (js.Tuple2[Double, Double]) | Double,
@@ -53,64 +52,44 @@ object Activation {
     __obj.asInstanceOf[Activation[T]]
   }
   
-  @scala.inline
-  implicit class ActivationMutableBuilder[Self <: Activation[?], T /* <: Tensor3D | Tensor4D */] (val x: Self & Activation[T]) extends AnyVal {
+  extension [Self <: Activation[?], T /* <: Tensor3D | Tensor4D */](x: Self & Activation[T]) {
     
-    @scala.inline
-    def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    inline def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+    inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     
-    @scala.inline
-    def setBias(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+    inline def setBias(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+    inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
-    @scala.inline
-    def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
+    inline def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
     
-    @scala.inline
-    def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+    inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
     
-    @scala.inline
-    def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
+    inline def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDilationsUndefined: Self = StObject.set(x, "dilations", js.undefined)
+    inline def setDilationsUndefined: Self = StObject.set(x, "dilations", js.undefined)
     
-    @scala.inline
-    def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
+    inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
+    inline def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
     
-    @scala.inline
-    def setFilter(value: Tensor4D | TensorLike): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Tensor4D | TensorLike): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterVarargs(value: Uint8Array*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Uint8Array*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double | ExplicitPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double | ExplicitPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
+    inline def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
+    inline def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
     
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: T | TensorLike): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: T | TensorLike): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXVarargs(value: Uint8Array*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: Uint8Array*): Self = StObject.set(x, "x", js.Array(value :_*))
   }
 }

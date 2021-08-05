@@ -31,6 +31,5 @@ object global {
   @JSGlobal("pace")
   @js.native
   def pace: Pace = js.native
-  @scala.inline
-  def pace_=(x: Pace): Unit = js.Dynamic.global.updateDynamic("pace")(x.asInstanceOf[js.Any])
+  inline def pace_=(x: Pace): Unit = js.Dynamic.global.updateDynamic("pace")(x.asInstanceOf[js.Any])
 }

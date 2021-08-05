@@ -11,16 +11,13 @@ trait RunnerOptionClient extends StObject {
 }
 object RunnerOptionClient {
   
-  @scala.inline
-  def apply(dbClient: ClientBase): RunnerOptionClient = {
+  inline def apply(dbClient: ClientBase): RunnerOptionClient = {
     val __obj = js.Dynamic.literal(dbClient = dbClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunnerOptionClient]
   }
   
-  @scala.inline
-  implicit class RunnerOptionClientMutableBuilder[Self <: RunnerOptionClient] (val x: Self) extends AnyVal {
+  extension [Self <: RunnerOptionClient](x: Self) {
     
-    @scala.inline
-    def setDbClient(value: ClientBase): Self = StObject.set(x, "dbClient", value.asInstanceOf[js.Any])
+    inline def setDbClient(value: ClientBase): Self = StObject.set(x, "dbClient", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait CertificateTrustDialogOptions extends StObject {
 }
 object CertificateTrustDialogOptions {
   
-  @scala.inline
-  def apply(certificate: Certificate, message: String): CertificateTrustDialogOptions = {
+  inline def apply(certificate: Certificate, message: String): CertificateTrustDialogOptions = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateTrustDialogOptions]
   }
   
-  @scala.inline
-  implicit class CertificateTrustDialogOptionsMutableBuilder[Self <: CertificateTrustDialogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateTrustDialogOptions](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

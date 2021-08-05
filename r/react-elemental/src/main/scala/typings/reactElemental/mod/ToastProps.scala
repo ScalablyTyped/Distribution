@@ -18,37 +18,27 @@ trait ToastProps extends StObject {
 }
 object ToastProps {
   
-  @scala.inline
-  def apply(): ToastProps = {
+  inline def apply(): ToastProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToastProps]
   }
   
-  @scala.inline
-  implicit class ToastPropsMutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
+  extension [Self <: ToastProps](x: Self) {
     
-    @scala.inline
-    def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+    inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
+    inline def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

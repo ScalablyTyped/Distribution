@@ -13,55 +13,55 @@ object readerwriterlockMod {
   @js.native
   class ReaderWriterLock () extends StObject {
     
-    var _canTakeReadLock: js.Any = js.native
+    /* private */ var _canTakeReadLock: js.Any = js.native
     
-    var _canTakeUpgradeLock: js.Any = js.native
+    /* private */ var _canTakeUpgradeLock: js.Any = js.native
     
-    var _canTakeUpgradeableReadLock: js.Any = js.native
+    /* private */ var _canTakeUpgradeableReadLock: js.Any = js.native
     
-    var _canTakeWriteLock: js.Any = js.native
+    /* private */ var _canTakeWriteLock: js.Any = js.native
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    var _processLockRequests: js.Any = js.native
+    /* private */ var _processLockRequests: js.Any = js.native
     
-    var _processReadLockRequests: js.Any = js.native
+    /* private */ var _processReadLockRequests: js.Any = js.native
     
-    var _processUpgradeRequest: js.Any = js.native
+    /* private */ var _processUpgradeRequest: js.Any = js.native
     
-    var _processUpgradeableReadLockRequest: js.Any = js.native
+    /* private */ var _processUpgradeableReadLockRequest: js.Any = js.native
     
-    var _processWriteLockRequest: js.Any = js.native
+    /* private */ var _processWriteLockRequest: js.Any = js.native
     
-    var _readers: js.Any = js.native
+    /* private */ var _readers: js.Any = js.native
     
-    var _releaseReadLock: js.Any = js.native
+    /* private */ var _releaseReadLock: js.Any = js.native
     
-    var _releaseUpgradeLock: js.Any = js.native
+    /* private */ var _releaseUpgradeLock: js.Any = js.native
     
-    var _releaseUpgradeableReadLock: js.Any = js.native
+    /* private */ var _releaseUpgradeableReadLock: js.Any = js.native
     
-    var _releaseWriteLock: js.Any = js.native
+    /* private */ var _releaseWriteLock: js.Any = js.native
     
-    var _takeReadLock: js.Any = js.native
+    /* private */ var _takeReadLock: js.Any = js.native
     
-    var _takeUpgradeLock: js.Any = js.native
+    /* private */ var _takeUpgradeLock: js.Any = js.native
     
-    var _takeUpgradeableReadLock: js.Any = js.native
+    /* private */ var _takeUpgradeableReadLock: js.Any = js.native
     
-    var _takeWriteLock: js.Any = js.native
+    /* private */ var _takeWriteLock: js.Any = js.native
     
-    var _upgrade: js.Any = js.native
+    /* private */ var _upgrade: js.Any = js.native
     
-    var _upgradeable: js.Any = js.native
+    /* private */ var _upgradeable: js.Any = js.native
     
-    var _upgradeables: js.Any = js.native
+    /* private */ var _upgradeables: js.Any = js.native
     
-    var _upgraded: js.Any = js.native
+    /* private */ var _upgraded: js.Any = js.native
     
-    var _upgrades: js.Any = js.native
+    /* private */ var _upgrades: js.Any = js.native
     
-    var _writers: js.Any = js.native
+    /* private */ var _writers: js.Any = js.native
     
     /**
       * Asynchronously waits for and takes a read lock on a resource.

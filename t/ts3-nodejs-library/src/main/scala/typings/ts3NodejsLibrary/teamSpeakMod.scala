@@ -389,9 +389,9 @@ object teamSpeakMod {
       */
     def channelSetPerms(channel: ChannelType, permissions: js.Array[Permid]): js.Promise[js.Array[js.Any]] = js.native
     
-    var channelgroups: js.Any = js.native
+    /* private */ var channelgroups: js.Any = js.native
     
-    var channels: js.Any = js.native
+    /* private */ var channels: js.Any = js.native
     
     /**
       * Adds a set of specified permissions to a client.
@@ -576,7 +576,7 @@ object teamSpeakMod {
       */
     def clientUpdate(props: ClientUpdate): js.Promise[js.Array[js.Any]] = js.native
     
-    var clients: js.Any = js.native
+    /* private */ var clients: js.Any = js.native
     
     /**
       * Submits a complaint about the client with database ID dbid to the server.
@@ -615,19 +615,19 @@ object teamSpeakMod {
       */
     def connectionInfo(): js.Promise[ServerRequestConnectionInfo] = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /** creates a channel group perm builder for the specified channel group id */
-    var createChannelGroupPermBuilder: js.Any = js.native
+    /* private */ var createChannelGroupPermBuilder: js.Any = js.native
     
     /** creates a channel perm builder for the specified channel id */
-    var createChannelPermBuilder: js.Any = js.native
+    /* private */ var createChannelPermBuilder: js.Any = js.native
     
     /** creates a client perm builder for the specified client database id */
-    var createClientPermBuilder: js.Any = js.native
+    /* private */ var createClientPermBuilder: js.Any = js.native
     
     /** creates a servergroup perm builder for the specified server group id */
-    var createServerGroupPermBuilder: js.Any = js.native
+    /* private */ var createServerGroupPermBuilder: js.Any = js.native
     
     /**
       * displays a snapshot of the selected virtual server containing all settings,
@@ -729,61 +729,61 @@ object teamSpeakMod {
       * Gets called when a channel gets edited
       * @param event the raw teamspeak event
       */
-    var evchannelcreated: js.Any = js.native
+    /* private */ var evchannelcreated: js.Any = js.native
     
     /**
       * Gets called when a channel gets deleted
       * @param event the raw teamspeak event
       */
-    var evchanneldeleted: js.Any = js.native
+    /* private */ var evchanneldeleted: js.Any = js.native
     
     /**
       * Gets called when a channel gets edited
       * @param event the raw teamspeak event
       */
-    var evchanneledited: js.Any = js.native
+    /* private */ var evchanneledited: js.Any = js.native
     
     /**
       * Gets called when a channel gets moved
       * @param event the raw teamspeak event
       */
-    var evchannelmoved: js.Any = js.native
+    /* private */ var evchannelmoved: js.Any = js.native
     
     /**
       * Gets called when a client connects to the TeamSpeak Server
       * @param event the raw teamspeak event
       */
-    var evcliententerview: js.Any = js.native
+    /* private */ var evcliententerview: js.Any = js.native
     
     /**
       * Gets called when a client discconnects from the TeamSpeak Server
       * @param event the raw teamspeak event
       */
-    var evclientleftview: js.Any = js.native
+    /* private */ var evclientleftview: js.Any = js.native
     
     /**
       * Gets called when a client moves to a different channel
       * @param event the raw teamspeak event
       */
-    var evclientmoved: js.Any = js.native
+    /* private */ var evclientmoved: js.Any = js.native
     
     /**
       * Gets called when the server has been edited
       * @param event the raw teamspeak event
       */
-    var evserveredited: js.Any = js.native
+    /* private */ var evserveredited: js.Any = js.native
     
     /**
       * Gets called when a chat message gets received
       * @param event the raw teamspeak event
       */
-    var evtextmessage: js.Any = js.native
+    /* private */ var evtextmessage: js.Any = js.native
     
     /**
       * Gets called when a client uses a privilege key
       * @param event the raw teamspeak event
       */
-    var evtokenused: js.Any = js.native
+    /* private */ var evtokenused: js.Any = js.native
     
     /**
       * Sends a raw command to the TeamSpeak Server.
@@ -936,7 +936,7 @@ object teamSpeakMod {
     /**
       * retrieves an instance of the Permission
       */
-    var getPermBuilder: js.Any = js.native
+    /* private */ var getPermBuilder: js.Any = js.native
     
     /**
       * Retrieves a single ServerGroup by the given ServerGroup ID
@@ -963,13 +963,13 @@ object teamSpeakMod {
       * @param key the key used to identify the object inside the cache
       * @param node the class which should be used
       */
-    var handleCache: js.Any = js.native
+    /* private */ var handleCache: js.Any = js.native
     
     /** subscribes to some query events if necessary */
-    var handleNewListener: js.Any = js.native
+    /* private */ var handleNewListener: js.Any = js.native
     
     /** handles initial commands after successfully connecting to a TeamSpeak Server */
-    var handleReady: js.Any = js.native
+    /* private */ var handleReady: js.Any = js.native
     
     /**
       * Displays detailed connection information about the server instance including uptime,
@@ -981,7 +981,7 @@ object teamSpeakMod {
       * wether the query client should get handled or not
       * @param type the client type
       */
-    var ignoreQueryClient: js.Any = js.native
+    /* private */ var ignoreQueryClient: js.Any = js.native
     
     /**
       * Changes the server instance configuration using given properties.
@@ -1000,7 +1000,7 @@ object teamSpeakMod {
       * @param event event name which was subscribed to
       * @param id context to check
       */
-    var isSubscribedToEvent: js.Any = js.native
+    /* private */ var isSubscribedToEvent: js.Any = js.native
     
     /**
       * Writes a custom entry into the servers log.
@@ -1170,7 +1170,7 @@ object teamSpeakMod {
     /** priorizes the next command, this commands will be first in execution */
     def priorize(): this.type = js.native
     
-    var priorizeNextCommand: js.Any = js.native
+    /* private */ var priorizeNextCommand: js.Any = js.native
     
     /**
       * Create a new token.+
@@ -1241,7 +1241,7 @@ object teamSpeakMod {
       */
     def privilegeKeyUse(token: String): js.Promise[js.Array[js.Any]] = js.native
     
-    var query: js.Any = js.native
+    /* private */ var query: js.Any = js.native
     
     /**
       * Adds a new query client login, or enables query login for existing clients.
@@ -1552,11 +1552,11 @@ object teamSpeakMod {
       */
     def serverTempPasswordList(): js.Promise[js.Array[ServerTempPasswordEntry]] = js.native
     
-    var serverVersion: js.Any = js.native
+    /* private */ var serverVersion: js.Any = js.native
     
-    var servergroups: js.Any = js.native
+    /* private */ var servergroups: js.Any = js.native
     
-    var servers: js.Any = js.native
+    /* private */ var servers: js.Any = js.native
     
     /**
       * Sets the channel group of a client
@@ -1575,21 +1575,21 @@ object teamSpeakMod {
       * updates the context with new data
       * @param data the data to update the context with
       */
-    var updateContext: js.Any = js.native
+    /* private */ var updateContext: js.Any = js.native
     
     /**
       * updates the context when the inner callback gets called
       * and throws the first parameter which is an error
       * @param context context data to update
       */
-    var updateContextReject: js.Any = js.native
+    /* private */ var updateContextReject: js.Any = js.native
     
     /**
       * updates the context when the inner callback gets called
       * and returns the first parameter
       * @param context context data to update
       */
-    var updateContextResolve: js.Any = js.native
+    /* private */ var updateContextResolve: js.Any = js.native
     
     /**
       * uploads a file
@@ -1672,41 +1672,34 @@ object teamSpeakMod {
       * connects via a Promise wrapper
       * @param config config options to connect
       */
-    @scala.inline
-    def connect(config: PartialConnectionParams): js.Promise[TeamSpeak] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TeamSpeak]]
+    inline def connect(config: PartialConnectionParams): js.Promise[TeamSpeak] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TeamSpeak]]
     
     /**
       * filters an array with given filter
       * @param array the array which should get filtered
       * @param filter filter object
       */
-    @scala.inline
-    def filter[T /* <: ResponseEntry */](array: js.Array[T], filter: Partial[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def filter[T /* <: ResponseEntry */](array: js.Array[T], filter: Partial[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
     /**
       * retrieves the first element of an array
       * @param input the response input
       */
-    @scala.inline
-    def singleResponse[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
-    @scala.inline
-    def singleResponse[T](input: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def singleResponse[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def singleResponse[T](input: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("singleResponse")(input.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Transforms an Input to an Array
       * @param input input data which should be converted to an array
       */
-    @scala.inline
-    def toArray[T](input: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-    @scala.inline
-    def toArray[T](input: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def toArray[T](input: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def toArray[T](input: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
     /**
       * waits a set time of ms
       * @param time time in ms to wait
       */
-    @scala.inline
-    def wait(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def wait(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
     trait ConnectionParams extends StObject {
       
@@ -1751,8 +1744,7 @@ object teamSpeakMod {
     }
     object ConnectionParams {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         host: String,
         ignoreQueries: Boolean,
         keepAlive: Boolean,
@@ -1765,65 +1757,45 @@ object teamSpeakMod {
         __obj.asInstanceOf[typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.ConnectionParams]
       }
       
-      @scala.inline
-      implicit class ConnectionParamsMutableBuilder[Self <: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.ConnectionParams] (val x: Self) extends AnyVal {
+      extension [Self <: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.ConnectionParams](x: Self) {
         
-        @scala.inline
-        def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
+        inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
+        inline def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
         
-        @scala.inline
-        def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+        inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreQueries(value: Boolean): Self = StObject.set(x, "ignoreQueries", value.asInstanceOf[js.Any])
+        inline def setIgnoreQueries(value: Boolean): Self = StObject.set(x, "ignoreQueries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+        inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepAliveTimeout(value: Double): Self = StObject.set(x, "keepAliveTimeout", value.asInstanceOf[js.Any])
+        inline def setKeepAliveTimeout(value: Double): Self = StObject.set(x, "keepAliveTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+        inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+        inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
         
-        @scala.inline
-        def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+        inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+        inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+        inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
         
-        @scala.inline
-        def setProtocol(value: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+        inline def setProtocol(value: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQueryport(value: Double): Self = StObject.set(x, "queryport", value.asInstanceOf[js.Any])
+        inline def setQueryport(value: Double): Self = StObject.set(x, "queryport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadyTimeout(value: Double): Self = StObject.set(x, "readyTimeout", value.asInstanceOf[js.Any])
+        inline def setReadyTimeout(value: Double): Self = StObject.set(x, "readyTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerport(value: Double): Self = StObject.set(x, "serverport", value.asInstanceOf[js.Any])
+        inline def setServerport(value: Double): Self = StObject.set(x, "serverport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerportUndefined: Self = StObject.set(x, "serverport", js.undefined)
+        inline def setServerportUndefined: Self = StObject.set(x, "serverport", js.undefined)
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+        inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       }
     }
   }

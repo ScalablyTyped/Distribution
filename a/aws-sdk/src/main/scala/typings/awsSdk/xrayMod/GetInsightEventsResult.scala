@@ -18,28 +18,21 @@ trait GetInsightEventsResult extends StObject {
 }
 object GetInsightEventsResult {
   
-  @scala.inline
-  def apply(): GetInsightEventsResult = {
+  inline def apply(): GetInsightEventsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInsightEventsResult]
   }
   
-  @scala.inline
-  implicit class GetInsightEventsResultMutableBuilder[Self <: GetInsightEventsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightEventsResult](x: Self) {
     
-    @scala.inline
-    def setInsightEvents(value: InsightEventList): Self = StObject.set(x, "InsightEvents", value.asInstanceOf[js.Any])
+    inline def setInsightEvents(value: InsightEventList): Self = StObject.set(x, "InsightEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightEventsUndefined: Self = StObject.set(x, "InsightEvents", js.undefined)
+    inline def setInsightEventsUndefined: Self = StObject.set(x, "InsightEvents", js.undefined)
     
-    @scala.inline
-    def setInsightEventsVarargs(value: InsightEvent*): Self = StObject.set(x, "InsightEvents", js.Array(value :_*))
+    inline def setInsightEventsVarargs(value: InsightEvent*): Self = StObject.set(x, "InsightEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

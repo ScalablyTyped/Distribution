@@ -23,31 +23,23 @@ trait SimpleCondition extends StObject {
 }
 object SimpleCondition {
   
-  @scala.inline
-  def apply(): SimpleCondition = {
+  inline def apply(): SimpleCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleCondition]
   }
   
-  @scala.inline
-  implicit class SimpleConditionMutableBuilder[Self <: SimpleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleCondition](x: Self) {
     
-    @scala.inline
-    def setEventCondition(value: EventCondition): Self = StObject.set(x, "EventCondition", value.asInstanceOf[js.Any])
+    inline def setEventCondition(value: EventCondition): Self = StObject.set(x, "EventCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventConditionUndefined: Self = StObject.set(x, "EventCondition", js.undefined)
+    inline def setEventConditionUndefined: Self = StObject.set(x, "EventCondition", js.undefined)
     
-    @scala.inline
-    def setSegmentCondition(value: SegmentCondition): Self = StObject.set(x, "SegmentCondition", value.asInstanceOf[js.Any])
+    inline def setSegmentCondition(value: SegmentCondition): Self = StObject.set(x, "SegmentCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentConditionUndefined: Self = StObject.set(x, "SegmentCondition", js.undefined)
+    inline def setSegmentConditionUndefined: Self = StObject.set(x, "SegmentCondition", js.undefined)
     
-    @scala.inline
-    def setSegmentDimensions(value: SegmentDimensions): Self = StObject.set(x, "SegmentDimensions", value.asInstanceOf[js.Any])
+    inline def setSegmentDimensions(value: SegmentDimensions): Self = StObject.set(x, "SegmentDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentDimensionsUndefined: Self = StObject.set(x, "SegmentDimensions", js.undefined)
+    inline def setSegmentDimensionsUndefined: Self = StObject.set(x, "SegmentDimensions", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteClusterParameterGroupMessage extends StObject {
 }
 object DeleteClusterParameterGroupMessage {
   
-  @scala.inline
-  def apply(ParameterGroupName: String): DeleteClusterParameterGroupMessage = {
+  inline def apply(ParameterGroupName: String): DeleteClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteClusterParameterGroupMessageMutableBuilder[Self <: DeleteClusterParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClusterParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
   }
 }

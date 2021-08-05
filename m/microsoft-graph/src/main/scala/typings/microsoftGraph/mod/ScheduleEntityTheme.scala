@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScheduleEntityTheme extends StObject
 object ScheduleEntityTheme {
   
-  @scala.inline
-  def blue: typings.microsoftGraph.microsoftGraphStrings.blue = "blue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blue]
+  inline def blue: typings.microsoftGraph.microsoftGraphStrings.blue = "blue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blue]
   
-  @scala.inline
-  def darkBlue: typings.microsoftGraph.microsoftGraphStrings.darkBlue = "darkBlue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkBlue]
+  inline def darkBlue: typings.microsoftGraph.microsoftGraphStrings.darkBlue = "darkBlue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkBlue]
   
-  @scala.inline
-  def darkGreen: typings.microsoftGraph.microsoftGraphStrings.darkGreen = "darkGreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkGreen]
+  inline def darkGreen: typings.microsoftGraph.microsoftGraphStrings.darkGreen = "darkGreen".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkGreen]
   
-  @scala.inline
-  def darkPink: typings.microsoftGraph.microsoftGraphStrings.darkPink = "darkPink".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkPink]
+  inline def darkPink: typings.microsoftGraph.microsoftGraphStrings.darkPink = "darkPink".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkPink]
   
-  @scala.inline
-  def darkPurple: typings.microsoftGraph.microsoftGraphStrings.darkPurple = "darkPurple".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkPurple]
+  inline def darkPurple: typings.microsoftGraph.microsoftGraphStrings.darkPurple = "darkPurple".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkPurple]
   
-  @scala.inline
-  def darkYellow: typings.microsoftGraph.microsoftGraphStrings.darkYellow = "darkYellow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkYellow]
+  inline def darkYellow: typings.microsoftGraph.microsoftGraphStrings.darkYellow = "darkYellow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.darkYellow]
   
-  @scala.inline
-  def gray: typings.microsoftGraph.microsoftGraphStrings.gray = "gray".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.gray]
+  inline def gray: typings.microsoftGraph.microsoftGraphStrings.gray = "gray".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.gray]
   
-  @scala.inline
-  def green: typings.microsoftGraph.microsoftGraphStrings.green = "green".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.green]
+  inline def green: typings.microsoftGraph.microsoftGraphStrings.green = "green".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.green]
   
-  @scala.inline
-  def pink: typings.microsoftGraph.microsoftGraphStrings.pink = "pink".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pink]
+  inline def pink: typings.microsoftGraph.microsoftGraphStrings.pink = "pink".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pink]
   
-  @scala.inline
-  def purple: typings.microsoftGraph.microsoftGraphStrings.purple = "purple".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.purple]
+  inline def purple: typings.microsoftGraph.microsoftGraphStrings.purple = "purple".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.purple]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def white: typings.microsoftGraph.microsoftGraphStrings.white = "white".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.white]
+  inline def white: typings.microsoftGraph.microsoftGraphStrings.white = "white".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.white]
   
-  @scala.inline
-  def yellow: typings.microsoftGraph.microsoftGraphStrings.yellow = "yellow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.yellow]
+  inline def yellow: typings.microsoftGraph.microsoftGraphStrings.yellow = "yellow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.yellow]
 }

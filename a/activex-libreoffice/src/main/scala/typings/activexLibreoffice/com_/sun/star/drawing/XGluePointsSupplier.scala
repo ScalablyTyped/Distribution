@@ -20,8 +20,7 @@ trait XGluePointsSupplier
 }
 object XGluePointsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GluePoints: XIndexContainer,
     acquire: () => Unit,
     getGluePoints: () => XIndexContainer,
@@ -32,13 +31,10 @@ object XGluePointsSupplier {
     __obj.asInstanceOf[XGluePointsSupplier]
   }
   
-  @scala.inline
-  implicit class XGluePointsSupplierMutableBuilder[Self <: XGluePointsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XGluePointsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetGluePoints(value: () => XIndexContainer): Self = StObject.set(x, "getGluePoints", js.Any.fromFunction0(value))
+    inline def setGetGluePoints(value: () => XIndexContainer): Self = StObject.set(x, "getGluePoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGluePoints(value: XIndexContainer): Self = StObject.set(x, "GluePoints", value.asInstanceOf[js.Any])
+    inline def setGluePoints(value: XIndexContainer): Self = StObject.set(x, "GluePoints", value.asInstanceOf[js.Any])
   }
 }

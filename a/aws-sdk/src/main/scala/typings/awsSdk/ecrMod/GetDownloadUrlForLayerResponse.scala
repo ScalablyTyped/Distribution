@@ -18,25 +18,19 @@ trait GetDownloadUrlForLayerResponse extends StObject {
 }
 object GetDownloadUrlForLayerResponse {
   
-  @scala.inline
-  def apply(): GetDownloadUrlForLayerResponse = {
+  inline def apply(): GetDownloadUrlForLayerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDownloadUrlForLayerResponse]
   }
   
-  @scala.inline
-  implicit class GetDownloadUrlForLayerResponseMutableBuilder[Self <: GetDownloadUrlForLayerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDownloadUrlForLayerResponse](x: Self) {
     
-    @scala.inline
-    def setDownloadUrl(value: Url): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: Url): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
-    @scala.inline
-    def setLayerDigest(value: LayerDigest): Self = StObject.set(x, "layerDigest", value.asInstanceOf[js.Any])
+    inline def setLayerDigest(value: LayerDigest): Self = StObject.set(x, "layerDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerDigestUndefined: Self = StObject.set(x, "layerDigest", js.undefined)
+    inline def setLayerDigestUndefined: Self = StObject.set(x, "layerDigest", js.undefined)
   }
 }

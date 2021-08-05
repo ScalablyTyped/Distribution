@@ -13,19 +13,15 @@ trait IPickerClosingOperation extends StObject {
 }
 object IPickerClosingOperation {
   
-  @scala.inline
-  def apply(deadline: Date, getDeferral: () => PickerClosingDeferral): IPickerClosingOperation = {
+  inline def apply(deadline: Date, getDeferral: () => PickerClosingDeferral): IPickerClosingOperation = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[IPickerClosingOperation]
   }
   
-  @scala.inline
-  implicit class IPickerClosingOperationMutableBuilder[Self <: IPickerClosingOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IPickerClosingOperation](x: Self) {
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => PickerClosingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => PickerClosingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

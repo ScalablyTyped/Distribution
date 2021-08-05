@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderToString(element: ReactElement, wrappedEpic: Epic[js.Any, js.Any, js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(element.asInstanceOf[js.Any], wrappedEpic.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def renderToString(element: ReactElement, wrappedEpic: Epic[js.Any, js.Any, js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(element.asInstanceOf[js.Any], wrappedEpic.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def wrapRootEpic[T /* <: Action */, S, D, O /* <: T */](epic: Epic[T, S, D, O]): Epic[T, S, D, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRootEpic")(epic.asInstanceOf[js.Any]).asInstanceOf[Epic[T, S, D, O]]
+  inline def wrapRootEpic[T /* <: Action */, S, D, O /* <: T */](epic: Epic[T, S, D, O]): Epic[T, S, D, O] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRootEpic")(epic.asInstanceOf[js.Any]).asInstanceOf[Epic[T, S, D, O]]
   
   trait Action extends StObject {
     
@@ -24,18 +22,15 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply(`type`: String): Action = {
+    inline def apply(`type`: String): Action = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

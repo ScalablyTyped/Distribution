@@ -14,22 +14,17 @@ trait Broadcast extends StObject {
 }
 object Broadcast {
   
-  @scala.inline
-  def apply(broadcastUrls: BroadcastUrlsResponse, id: String, status: String): Broadcast = {
+  inline def apply(broadcastUrls: BroadcastUrlsResponse, id: String, status: String): Broadcast = {
     val __obj = js.Dynamic.literal(broadcastUrls = broadcastUrls.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Broadcast]
   }
   
-  @scala.inline
-  implicit class BroadcastMutableBuilder[Self <: Broadcast] (val x: Self) extends AnyVal {
+  extension [Self <: Broadcast](x: Self) {
     
-    @scala.inline
-    def setBroadcastUrls(value: BroadcastUrlsResponse): Self = StObject.set(x, "broadcastUrls", value.asInstanceOf[js.Any])
+    inline def setBroadcastUrls(value: BroadcastUrlsResponse): Self = StObject.set(x, "broadcastUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

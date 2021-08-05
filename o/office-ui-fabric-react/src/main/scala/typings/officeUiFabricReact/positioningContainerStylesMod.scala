@@ -11,8 +11,7 @@ object positioningContainerStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClassNames(): IPositioningContainerNames = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")().asInstanceOf[IPositioningContainerNames]
+  inline def getClassNames(): IPositioningContainerNames = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")().asInstanceOf[IPositioningContainerNames]
   
   trait IPositioningContainerNames extends StObject {
     
@@ -33,38 +32,28 @@ object positioningContainerStylesMod {
   }
   object IPositioningContainerNames {
     
-    @scala.inline
-    def apply(container: String, main: String, overFlowYHidden: String, root: String): IPositioningContainerNames = {
+    inline def apply(container: String, main: String, overFlowYHidden: String, root: String): IPositioningContainerNames = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], overFlowYHidden = overFlowYHidden.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPositioningContainerNames]
     }
     
-    @scala.inline
-    implicit class IPositioningContainerNamesMutableBuilder[Self <: IPositioningContainerNames] (val x: Self) extends AnyVal {
+    extension [Self <: IPositioningContainerNames](x: Self) {
       
-      @scala.inline
-      def setBeak(value: String): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
+      inline def setBeak(value: String): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakCurtain(value: String): Self = StObject.set(x, "beakCurtain", value.asInstanceOf[js.Any])
+      inline def setBeakCurtain(value: String): Self = StObject.set(x, "beakCurtain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakCurtainUndefined: Self = StObject.set(x, "beakCurtain", js.undefined)
+      inline def setBeakCurtainUndefined: Self = StObject.set(x, "beakCurtain", js.undefined)
       
-      @scala.inline
-      def setBeakUndefined: Self = StObject.set(x, "beak", js.undefined)
+      inline def setBeakUndefined: Self = StObject.set(x, "beak", js.undefined)
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverFlowYHidden(value: String): Self = StObject.set(x, "overFlowYHidden", value.asInstanceOf[js.Any])
+      inline def setOverFlowYHidden(value: String): Self = StObject.set(x, "overFlowYHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,23 +66,18 @@ object positioningContainerStylesMod {
   }
   object IPositioningContainerStyles {
     
-    @scala.inline
-    def apply(): IPositioningContainerStyles = {
+    inline def apply(): IPositioningContainerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPositioningContainerStyles]
     }
     
-    @scala.inline
-    implicit class IPositioningContainerStylesMutableBuilder[Self <: IPositioningContainerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IPositioningContainerStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

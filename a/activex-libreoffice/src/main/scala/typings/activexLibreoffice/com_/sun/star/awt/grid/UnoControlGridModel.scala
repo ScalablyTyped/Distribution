@@ -228,8 +228,7 @@ trait UnoControlGridModel
 }
 object UnoControlGridModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveSelectionBackgroundColor: Color,
     ActiveSelectionTextColor: Color,
     ColumnHeaderHeight: Double,
@@ -296,94 +295,64 @@ object UnoControlGridModel {
     __obj.asInstanceOf[UnoControlGridModel]
   }
   
-  @scala.inline
-  implicit class UnoControlGridModelMutableBuilder[Self <: UnoControlGridModel] (val x: Self) extends AnyVal {
+  extension [Self <: UnoControlGridModel](x: Self) {
     
-    @scala.inline
-    def setActiveSelectionBackgroundColor(value: Color): Self = StObject.set(x, "ActiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setActiveSelectionBackgroundColor(value: Color): Self = StObject.set(x, "ActiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveSelectionTextColor(value: Color): Self = StObject.set(x, "ActiveSelectionTextColor", value.asInstanceOf[js.Any])
+    inline def setActiveSelectionTextColor(value: Color): Self = StObject.set(x, "ActiveSelectionTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "ColumnHeaderHeight", value.asInstanceOf[js.Any])
+    inline def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "ColumnHeaderHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnModel(value: XGridColumnModel): Self = StObject.set(x, "ColumnModel", value.asInstanceOf[js.Any])
+    inline def setColumnModel(value: XGridColumnModel): Self = StObject.set(x, "ColumnModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
+    inline def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
+    inline def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
+    inline def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGridDataModel(value: XGridDataModel): Self = StObject.set(x, "GridDataModel", value.asInstanceOf[js.Any])
+    inline def setGridDataModel(value: XGridDataModel): Self = StObject.set(x, "GridDataModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridLineColor(value: Color): Self = StObject.set(x, "GridLineColor", value.asInstanceOf[js.Any])
+    inline def setGridLineColor(value: Color): Self = StObject.set(x, "GridLineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHScroll(value: Boolean): Self = StObject.set(x, "HScroll", value.asInstanceOf[js.Any])
+    inline def setHScroll(value: Boolean): Self = StObject.set(x, "HScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderBackgroundColor(value: Color): Self = StObject.set(x, "HeaderBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHeaderBackgroundColor(value: Color): Self = StObject.set(x, "HeaderBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTextColor(value: Color): Self = StObject.set(x, "HeaderTextColor", value.asInstanceOf[js.Any])
+    inline def setHeaderTextColor(value: Color): Self = StObject.set(x, "HeaderTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveSelectionBackgroundColor(value: Color): Self = StObject.set(x, "InactiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setInactiveSelectionBackgroundColor(value: Color): Self = StObject.set(x, "InactiveSelectionBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveSelectionTextColor(value: Color): Self = StObject.set(x, "InactiveSelectionTextColor", value.asInstanceOf[js.Any])
+    inline def setInactiveSelectionTextColor(value: Color): Self = StObject.set(x, "InactiveSelectionTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowBackgroundColors(value: SafeArray[Color]): Self = StObject.set(x, "RowBackgroundColors", value.asInstanceOf[js.Any])
+    inline def setRowBackgroundColors(value: SafeArray[Color]): Self = StObject.set(x, "RowBackgroundColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeaderWidth(value: Double): Self = StObject.set(x, "RowHeaderWidth", value.asInstanceOf[js.Any])
+    inline def setRowHeaderWidth(value: Double): Self = StObject.set(x, "RowHeaderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeight(value: Double): Self = StObject.set(x, "RowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "RowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionModel(value: SelectionType): Self = StObject.set(x, "SelectionModel", value.asInstanceOf[js.Any])
+    inline def setSelectionModel(value: SelectionType): Self = StObject.set(x, "SelectionModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowColumnHeader(value: Boolean): Self = StObject.set(x, "ShowColumnHeader", value.asInstanceOf[js.Any])
+    inline def setShowColumnHeader(value: Boolean): Self = StObject.set(x, "ShowColumnHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRowHeader(value: Boolean): Self = StObject.set(x, "ShowRowHeader", value.asInstanceOf[js.Any])
+    inline def setShowRowHeader(value: Boolean): Self = StObject.set(x, "ShowRowHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
+    inline def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
+    inline def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseGridLines(value: Boolean): Self = StObject.set(x, "UseGridLines", value.asInstanceOf[js.Any])
+    inline def setUseGridLines(value: Boolean): Self = StObject.set(x, "UseGridLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVScroll(value: Boolean): Self = StObject.set(x, "VScroll", value.asInstanceOf[js.Any])
+    inline def setVScroll(value: Boolean): Self = StObject.set(x, "VScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
   }
 }

@@ -14,34 +14,25 @@ trait SchemaLiveChatPollOpenedDetails extends StObject {
 }
 object SchemaLiveChatPollOpenedDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveChatPollOpenedDetails = {
+  inline def apply(): SchemaLiveChatPollOpenedDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatPollOpenedDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatPollOpenedDetailsMutableBuilder[Self <: SchemaLiveChatPollOpenedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatPollOpenedDetails](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaLiveChatPollItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaLiveChatPollItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaLiveChatPollItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaLiveChatPollItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
   }
 }

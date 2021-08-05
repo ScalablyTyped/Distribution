@@ -147,16 +147,14 @@ object ConvexPolyhedron {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeNormal(
+  inline def computeNormal(
     va: typings.cannon.CANNON.Vec3,
     vb: typings.cannon.CANNON.Vec3,
     vc: typings.cannon.CANNON.Vec3,
     target: typings.cannon.CANNON.Vec3
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeNormal")(va.asInstanceOf[js.Any], vb.asInstanceOf[js.Any], vc.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def project(
+  inline def project(
     hull: typings.cannon.CANNON.ConvexPolyhedron,
     axis: typings.cannon.CANNON.Vec3,
     pos: typings.cannon.CANNON.Vec3,

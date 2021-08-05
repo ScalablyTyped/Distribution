@@ -32,8 +32,7 @@ trait GH extends StObject {
 }
 object GH {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GH: UpgradeController,
     GH2O: `4`,
     LH: Build,
@@ -51,43 +50,30 @@ object GH {
     __obj.asInstanceOf[GH]
   }
   
-  @scala.inline
-  implicit class GHMutableBuilder[Self <: GH] (val x: Self) extends AnyVal {
+  extension [Self <: GH](x: Self) {
     
-    @scala.inline
-    def setGH(value: UpgradeController): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
+    inline def setGH(value: UpgradeController): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGH2O(value: `4`): Self = StObject.set(x, "GH2O", value.asInstanceOf[js.Any])
+    inline def setGH2O(value: `4`): Self = StObject.set(x, "GH2O", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLH(value: Build): Self = StObject.set(x, "LH", value.asInstanceOf[js.Any])
+    inline def setLH(value: Build): Self = StObject.set(x, "LH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLH2O(value: Repair): Self = StObject.set(x, "LH2O", value.asInstanceOf[js.Any])
+    inline def setLH2O(value: Repair): Self = StObject.set(x, "LH2O", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUHO2(value: `0`): Self = StObject.set(x, "UHO2", value.asInstanceOf[js.Any])
+    inline def setUHO2(value: `0`): Self = StObject.set(x, "UHO2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUO(value: Harvest): Self = StObject.set(x, "UO", value.asInstanceOf[js.Any])
+    inline def setUO(value: Harvest): Self = StObject.set(x, "UO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXGH2O(value: `5`): Self = StObject.set(x, "XGH2O", value.asInstanceOf[js.Any])
+    inline def setXGH2O(value: `5`): Self = StObject.set(x, "XGH2O", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXLH2O(value: BuildRepair): Self = StObject.set(x, "XLH2O", value.asInstanceOf[js.Any])
+    inline def setXLH2O(value: BuildRepair): Self = StObject.set(x, "XLH2O", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUHO2(value: `1`): Self = StObject.set(x, "XUHO2", value.asInstanceOf[js.Any])
+    inline def setXUHO2(value: `1`): Self = StObject.set(x, "XUHO2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXZH2O(value: `3`): Self = StObject.set(x, "XZH2O", value.asInstanceOf[js.Any])
+    inline def setXZH2O(value: `3`): Self = StObject.set(x, "XZH2O", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZH(value: Dismantle): Self = StObject.set(x, "ZH", value.asInstanceOf[js.Any])
+    inline def setZH(value: Dismantle): Self = StObject.set(x, "ZH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZH2O(value: `2`): Self = StObject.set(x, "ZH2O", value.asInstanceOf[js.Any])
+    inline def setZH2O(value: `2`): Self = StObject.set(x, "ZH2O", value.asInstanceOf[js.Any])
   }
 }

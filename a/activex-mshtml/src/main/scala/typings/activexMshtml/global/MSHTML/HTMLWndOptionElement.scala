@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLWndOptionElement")
 @js.native
-class HTMLWndOptionElement protected ()
+/* private */ class HTMLWndOptionElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLWndOptionElement

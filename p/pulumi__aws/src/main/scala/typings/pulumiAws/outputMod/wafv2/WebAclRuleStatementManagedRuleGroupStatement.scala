@@ -23,28 +23,21 @@ trait WebAclRuleStatementManagedRuleGroupStatement extends StObject {
 }
 object WebAclRuleStatementManagedRuleGroupStatement {
   
-  @scala.inline
-  def apply(name: String, vendorName: String): WebAclRuleStatementManagedRuleGroupStatement = {
+  inline def apply(name: String, vendorName: String): WebAclRuleStatementManagedRuleGroupStatement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], vendorName = vendorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementManagedRuleGroupStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementManagedRuleGroupStatementMutableBuilder[Self <: WebAclRuleStatementManagedRuleGroupStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementManagedRuleGroupStatement](x: Self) {
     
-    @scala.inline
-    def setExcludedRules(value: js.Array[WebAclRuleStatementManagedRuleGroupStatementExcludedRule]): Self = StObject.set(x, "excludedRules", value.asInstanceOf[js.Any])
+    inline def setExcludedRules(value: js.Array[WebAclRuleStatementManagedRuleGroupStatementExcludedRule]): Self = StObject.set(x, "excludedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedRulesUndefined: Self = StObject.set(x, "excludedRules", js.undefined)
+    inline def setExcludedRulesUndefined: Self = StObject.set(x, "excludedRules", js.undefined)
     
-    @scala.inline
-    def setExcludedRulesVarargs(value: WebAclRuleStatementManagedRuleGroupStatementExcludedRule*): Self = StObject.set(x, "excludedRules", js.Array(value :_*))
+    inline def setExcludedRulesVarargs(value: WebAclRuleStatementManagedRuleGroupStatementExcludedRule*): Self = StObject.set(x, "excludedRules", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorName(value: String): Self = StObject.set(x, "vendorName", value.asInstanceOf[js.Any])
+    inline def setVendorName(value: String): Self = StObject.set(x, "vendorName", value.asInstanceOf[js.Any])
   }
 }

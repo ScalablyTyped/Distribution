@@ -10,8 +10,6 @@ object rotateUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getImageCenter(center: js.Tuple2[Double, Double], imageHeight: Double, imageWidth: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageCenter")(center.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
-  @scala.inline
-  def getImageCenter(center: Double, imageHeight: Double, imageWidth: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageCenter")(center.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def getImageCenter(center: js.Tuple2[Double, Double], imageHeight: Double, imageWidth: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageCenter")(center.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def getImageCenter(center: Double, imageHeight: Double, imageWidth: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageCenter")(center.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
 }

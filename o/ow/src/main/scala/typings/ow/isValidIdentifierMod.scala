@@ -11,8 +11,6 @@ object isValidIdentifierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.UndefOr[Boolean | _empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[Boolean | _empty]]
-  @scala.inline
-  def default(string: String): js.UndefOr[Boolean | _empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean | _empty]]
+  inline def default(): js.UndefOr[Boolean | _empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[Boolean | _empty]]
+  inline def default(string: String): js.UndefOr[Boolean | _empty] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean | _empty]]
 }

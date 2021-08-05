@@ -14,25 +14,19 @@ trait Sentence extends StObject {
 }
 object Sentence {
   
-  @scala.inline
-  def apply(): Sentence = {
+  inline def apply(): Sentence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sentence]
   }
   
-  @scala.inline
-  implicit class SentenceMutableBuilder[Self <: Sentence] (val x: Self) extends AnyVal {
+  extension [Self <: Sentence](x: Self) {
     
-    @scala.inline
-    def setSentiment(value: Sentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: Sentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
-    @scala.inline
-    def setText(value: TextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: TextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

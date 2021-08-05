@@ -42,11 +42,9 @@ object GetAccountTransactionBySequenceNumberResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): GetAccountTransactionBySequenceNumberResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetAccountTransactionBySequenceNumberResponse]
+  inline def deserializeBinary(bytes: Uint8Array): GetAccountTransactionBySequenceNumberResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetAccountTransactionBySequenceNumberResponse]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: GetAccountTransactionBySequenceNumberResponse, reader: BinaryReader): GetAccountTransactionBySequenceNumberResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetAccountTransactionBySequenceNumberResponse]
+  inline def deserializeBinaryFromReader(message: GetAccountTransactionBySequenceNumberResponse, reader: BinaryReader): GetAccountTransactionBySequenceNumberResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetAccountTransactionBySequenceNumberResponse]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberResponse.extensions")
   @js.native
@@ -55,17 +53,13 @@ object GetAccountTransactionBySequenceNumberResponse {
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberResponse.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: GetAccountTransactionBySequenceNumberResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: GetAccountTransactionBySequenceNumberResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: GetAccountTransactionBySequenceNumberResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: GetAccountTransactionBySequenceNumberResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -75,26 +69,20 @@ object GetAccountTransactionBySequenceNumberResponse {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(): AsObject = {
+    inline def apply(): AsObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setProofOfCurrentSequenceNumber(value: typings.libraCore.accountStateBlobPbMod.AccountStateWithProof.AsObject): Self = StObject.set(x, "proofOfCurrentSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setProofOfCurrentSequenceNumber(value: typings.libraCore.accountStateBlobPbMod.AccountStateWithProof.AsObject): Self = StObject.set(x, "proofOfCurrentSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProofOfCurrentSequenceNumberUndefined: Self = StObject.set(x, "proofOfCurrentSequenceNumber", js.undefined)
+      inline def setProofOfCurrentSequenceNumberUndefined: Self = StObject.set(x, "proofOfCurrentSequenceNumber", js.undefined)
       
-      @scala.inline
-      def setSignedTransactionWithProof(value: typings.libraCore.transactionPbMod.SignedTransactionWithProof.AsObject): Self = StObject.set(x, "signedTransactionWithProof", value.asInstanceOf[js.Any])
+      inline def setSignedTransactionWithProof(value: typings.libraCore.transactionPbMod.SignedTransactionWithProof.AsObject): Self = StObject.set(x, "signedTransactionWithProof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedTransactionWithProofUndefined: Self = StObject.set(x, "signedTransactionWithProof", js.undefined)
+      inline def setSignedTransactionWithProofUndefined: Self = StObject.set(x, "signedTransactionWithProof", js.undefined)
     }
   }
 }

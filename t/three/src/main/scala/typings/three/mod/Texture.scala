@@ -46,12 +46,10 @@ object Texture {
   @JSImport("three", "Texture.DEFAULT_IMAGE")
   @js.native
   def DEFAULT_IMAGE: js.Any = js.native
-  @scala.inline
-  def DEFAULT_IMAGE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_IMAGE")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_IMAGE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_IMAGE")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "Texture.DEFAULT_MAPPING")
   @js.native
   def DEFAULT_MAPPING: js.Any = js.native
-  @scala.inline
-  def DEFAULT_MAPPING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAPPING")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_MAPPING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAPPING")(x.asInstanceOf[js.Any])
 }

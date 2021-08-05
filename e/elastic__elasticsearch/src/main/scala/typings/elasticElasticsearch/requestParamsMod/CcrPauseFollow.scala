@@ -12,16 +12,13 @@ trait CcrPauseFollow
 }
 object CcrPauseFollow {
   
-  @scala.inline
-  def apply(index: String): CcrPauseFollow = {
+  inline def apply(index: String): CcrPauseFollow = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrPauseFollow]
   }
   
-  @scala.inline
-  implicit class CcrPauseFollowMutableBuilder[Self <: CcrPauseFollow] (val x: Self) extends AnyVal {
+  extension [Self <: CcrPauseFollow](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

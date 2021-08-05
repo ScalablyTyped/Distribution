@@ -25,28 +25,21 @@ trait ShapeGroupData extends StObject {
 }
 object ShapeGroupData {
   
-  @scala.inline
-  def apply(): ShapeGroupData = {
+  inline def apply(): ShapeGroupData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeGroupData]
   }
   
-  @scala.inline
-  implicit class ShapeGroupDataMutableBuilder[Self <: ShapeGroupData] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeGroupData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+    inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    @scala.inline
-    def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
   }
 }

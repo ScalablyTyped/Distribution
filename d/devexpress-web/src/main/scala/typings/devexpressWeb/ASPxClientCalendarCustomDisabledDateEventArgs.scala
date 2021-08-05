@@ -24,19 +24,15 @@ trait ASPxClientCalendarCustomDisabledDateEventArgs
 }
 object ASPxClientCalendarCustomDisabledDateEventArgs {
   
-  @scala.inline
-  def apply(date: Date, isDisabled: Boolean): ASPxClientCalendarCustomDisabledDateEventArgs = {
+  inline def apply(date: Date, isDisabled: Boolean): ASPxClientCalendarCustomDisabledDateEventArgs = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCalendarCustomDisabledDateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCalendarCustomDisabledDateEventArgsMutableBuilder[Self <: ASPxClientCalendarCustomDisabledDateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCalendarCustomDisabledDateEventArgs](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
   }
 }

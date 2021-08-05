@@ -223,6 +223,5 @@ object GmeConfig {
   @JSGlobal("GmeConfig.config")
   @js.native
   def config: typings.webgme.GmeConfig.PluginConfig = js.native
-  @scala.inline
-  def config_=(x: typings.webgme.GmeConfig.PluginConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+  inline def config_=(x: typings.webgme.GmeConfig.PluginConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
 }

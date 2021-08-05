@@ -14,13 +14,13 @@ class DefaultValueAccessor protected ()
   def this(_renderer: Renderer2, _elementRef: ElementRef[js.Any], _compositionMode: Boolean) = this()
   
   /** Whether the user is creating a composition string (IME events). */
-  var _composing: js.Any = js.native
+  /* private */ var _composing: js.Any = js.native
   
-  var _compositionMode: js.Any = js.native
+  /* private */ var _compositionMode: js.Any = js.native
   
-  var _elementRef: js.Any = js.native
+  /* private */ var _elementRef: js.Any = js.native
   
-  var _renderer: js.Any = js.native
+  /* private */ var _renderer: js.Any = js.native
   
   /**
     * The registered callback function called when an input event occurs on the input element.

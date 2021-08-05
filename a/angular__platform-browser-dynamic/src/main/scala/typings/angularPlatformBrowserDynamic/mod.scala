@@ -34,7 +34,7 @@ object mod {
   @js.native
   class JitCompilerFactory () extends CompilerFactory {
     
-    var _defaultOptions: js.Any = js.native
+    /* private */ var _defaultOptions: js.Any = js.native
   }
   
   @JSImport("@angular/platform-browser-dynamic", "RESOURCE_CACHE_PROVIDER")
@@ -45,10 +45,8 @@ object mod {
   @js.native
   val VERSION: Version = js.native
   
-  @scala.inline
-  def platformBrowserDynamic(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamic")().asInstanceOf[PlatformRef]
-  @scala.inline
-  def platformBrowserDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamic")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+  inline def platformBrowserDynamic(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamic")().asInstanceOf[PlatformRef]
+  inline def platformBrowserDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformBrowserDynamic")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
   
   @JSImport("@angular/platform-browser-dynamic", "\u0275COMPILER_PROVIDERS__POST_R3__")
   @js.native
@@ -71,13 +69,13 @@ object mod {
       console: ɵConsole
     ) = this()
     
-    var _delegate: js.Any = js.native
+    /* private */ var _delegate: js.Any = js.native
     
-    var _metadataResolver: js.Any = js.native
+    /* private */ var _metadataResolver: js.Any = js.native
     
     def getComponentFactory[T](component: Type[T]): ComponentFactory[T] = js.native
     
-    var getExtraNgModuleProviders: js.Any = js.native
+    /* private */ var getExtraNgModuleProviders: js.Any = js.native
     
     def hasAotSummary(ref: Type[js.Any]): Boolean = js.native
     
@@ -98,11 +96,9 @@ object mod {
   @js.native
   class ɵangularPackagesPlatformBrowserDynamicPlatformBrowserDynamicA () extends ResourceLoader {
     
-    var _cache: js.Any = js.native
+    /* private */ var _cache: js.Any = js.native
   }
   
-  @scala.inline
-  def ɵplatformCoreDynamic(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamic")().asInstanceOf[PlatformRef]
-  @scala.inline
-  def ɵplatformCoreDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamic")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+  inline def ɵplatformCoreDynamic(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamic")().asInstanceOf[PlatformRef]
+  inline def ɵplatformCoreDynamic(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275platformCoreDynamic")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
 }

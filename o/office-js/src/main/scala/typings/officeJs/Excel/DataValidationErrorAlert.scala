@@ -49,8 +49,7 @@ trait DataValidationErrorAlert extends StObject {
 }
 object DataValidationErrorAlert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: String,
     showAlert: Boolean,
     style: DataValidationAlertStyle | Stop | Warning | Information,
@@ -60,19 +59,14 @@ object DataValidationErrorAlert {
     __obj.asInstanceOf[DataValidationErrorAlert]
   }
   
-  @scala.inline
-  implicit class DataValidationErrorAlertMutableBuilder[Self <: DataValidationErrorAlert] (val x: Self) extends AnyVal {
+  extension [Self <: DataValidationErrorAlert](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
+    inline def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: DataValidationAlertStyle | Stop | Warning | Information): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: DataValidationAlertStyle | Stop | Warning | Information): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -36,43 +36,31 @@ trait ExportOptions extends StObject {
 }
 object ExportOptions {
   
-  @scala.inline
-  def apply(): ExportOptions = {
+  inline def apply(): ExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportOptions]
   }
   
-  @scala.inline
-  implicit class ExportOptionsMutableBuilder[Self <: ExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportOptions](x: Self) {
     
-    @scala.inline
-    def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+    inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+    inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

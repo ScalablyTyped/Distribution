@@ -17,31 +17,23 @@ trait ResourceUsageExportConfig extends StObject {
 }
 object ResourceUsageExportConfig {
   
-  @scala.inline
-  def apply(): ResourceUsageExportConfig = {
+  inline def apply(): ResourceUsageExportConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceUsageExportConfig]
   }
   
-  @scala.inline
-  implicit class ResourceUsageExportConfigMutableBuilder[Self <: ResourceUsageExportConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceUsageExportConfig](x: Self) {
     
-    @scala.inline
-    def setBigqueryDestination(value: BigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
+    inline def setBigqueryDestination(value: BigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
+    inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
-    @scala.inline
-    def setConsumptionMeteringConfig(value: ConsumptionMeteringConfig): Self = StObject.set(x, "consumptionMeteringConfig", value.asInstanceOf[js.Any])
+    inline def setConsumptionMeteringConfig(value: ConsumptionMeteringConfig): Self = StObject.set(x, "consumptionMeteringConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumptionMeteringConfigUndefined: Self = StObject.set(x, "consumptionMeteringConfig", js.undefined)
+    inline def setConsumptionMeteringConfigUndefined: Self = StObject.set(x, "consumptionMeteringConfig", js.undefined)
     
-    @scala.inline
-    def setEnableNetworkEgressMetering(value: Boolean): Self = StObject.set(x, "enableNetworkEgressMetering", value.asInstanceOf[js.Any])
+    inline def setEnableNetworkEgressMetering(value: Boolean): Self = StObject.set(x, "enableNetworkEgressMetering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNetworkEgressMeteringUndefined: Self = StObject.set(x, "enableNetworkEgressMetering", js.undefined)
+    inline def setEnableNetworkEgressMeteringUndefined: Self = StObject.set(x, "enableNetworkEgressMetering", js.undefined)
   }
 }

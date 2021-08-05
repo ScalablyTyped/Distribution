@@ -14,25 +14,19 @@ trait NotificationAction extends StObject {
 }
 object NotificationAction {
   
-  @scala.inline
-  def apply(action: java.lang.String, title: java.lang.String): NotificationAction = {
+  inline def apply(action: java.lang.String, title: java.lang.String): NotificationAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationAction]
   }
   
-  @scala.inline
-  implicit class NotificationActionMutableBuilder[Self <: NotificationAction] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: java.lang.String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: java.lang.String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

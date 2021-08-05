@@ -17,43 +17,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Security extends StObject
 object Security {
   
-  @scala.inline
-  def ApiKeySecurity(in: query | header, name: String): typings.swaggerSchemaOfficial.mod.ApiKeySecurity = {
+  inline def ApiKeySecurity(in: query | header, name: String): typings.swaggerSchemaOfficial.mod.ApiKeySecurity = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("apiKey")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.ApiKeySecurity]
   }
   
-  @scala.inline
-  def BasicAuthenticationSecurity(): typings.swaggerSchemaOfficial.mod.BasicAuthenticationSecurity = {
+  inline def BasicAuthenticationSecurity(): typings.swaggerSchemaOfficial.mod.BasicAuthenticationSecurity = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.BasicAuthenticationSecurity]
   }
   
-  @scala.inline
-  def OAuth2AccessCodeSecurity(authorizationUrl: String, tokenUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2AccessCodeSecurity = {
+  inline def OAuth2AccessCodeSecurity(authorizationUrl: String, tokenUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2AccessCodeSecurity = {
     val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = "accessCode", tokenUrl = tokenUrl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.OAuth2AccessCodeSecurity]
   }
   
-  @scala.inline
-  def OAuth2ApplicationSecurity(tokenUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2ApplicationSecurity = {
+  inline def OAuth2ApplicationSecurity(tokenUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2ApplicationSecurity = {
     val __obj = js.Dynamic.literal(flow = "application", tokenUrl = tokenUrl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.OAuth2ApplicationSecurity]
   }
   
-  @scala.inline
-  def OAuth2ImplicitSecurity(authorizationUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2ImplicitSecurity = {
+  inline def OAuth2ImplicitSecurity(authorizationUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2ImplicitSecurity = {
     val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = "implicit")
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.OAuth2ImplicitSecurity]
   }
   
-  @scala.inline
-  def OAuth2PasswordSecurity(tokenUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2PasswordSecurity = {
+  inline def OAuth2PasswordSecurity(tokenUrl: String): typings.swaggerSchemaOfficial.mod.OAuth2PasswordSecurity = {
     val __obj = js.Dynamic.literal(flow = "password", tokenUrl = tokenUrl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.OAuth2PasswordSecurity]

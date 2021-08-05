@@ -21,11 +21,11 @@ object converterConverterMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Application) = this()
     
-    var addNodeConverter: js.Any = js.native
+    /* private */ var addNodeConverter: js.Any = js.native
     
-    var addTypeConverter: js.Any = js.native
+    /* private */ var addTypeConverter: js.Any = js.native
     
-    var compile: js.Any = js.native
+    /* private */ var compile: js.Any = js.native
     
     def convert(fileNames: js.Array[String]): ConverterResult = js.native
     
@@ -53,7 +53,7 @@ object converterConverterMod {
     
     var externalPattern: js.Array[String] = js.native
     
-    var getCompilerErrors: js.Any = js.native
+    /* private */ var getCompilerErrors: js.Any = js.native
     
     def getDefaultLib(): String = js.native
     
@@ -61,17 +61,17 @@ object converterConverterMod {
     
     var name: String = js.native
     
-    var nodeConverters: js.Any = js.native
+    /* private */ var nodeConverters: js.Any = js.native
     
-    var removeNodeConverter: js.Any = js.native
+    /* private */ var removeNodeConverter: js.Any = js.native
     
-    var removeTypeConverter: js.Any = js.native
+    /* private */ var removeTypeConverter: js.Any = js.native
     
-    var resolve: js.Any = js.native
+    /* private */ var resolve: js.Any = js.native
     
-    var typeNodeConverters: js.Any = js.native
+    /* private */ var typeNodeConverters: js.Any = js.native
     
-    var typeTypeConverters: js.Any = js.native
+    /* private */ var typeTypeConverters: js.Any = js.native
   }
   /* static members */
   object Converter {
@@ -83,68 +83,57 @@ object converterConverterMod {
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_BEGIN")
     @js.native
     def EVENT_BEGIN: String = js.native
-    @scala.inline
-    def EVENT_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_BEGIN")(x.asInstanceOf[js.Any])
+    inline def EVENT_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_BEGIN")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_CREATE_DECLARATION")
     @js.native
     def EVENT_CREATE_DECLARATION: String = js.native
-    @scala.inline
-    def EVENT_CREATE_DECLARATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_DECLARATION")(x.asInstanceOf[js.Any])
+    inline def EVENT_CREATE_DECLARATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_DECLARATION")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_CREATE_PARAMETER")
     @js.native
     def EVENT_CREATE_PARAMETER: String = js.native
-    @scala.inline
-    def EVENT_CREATE_PARAMETER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_PARAMETER")(x.asInstanceOf[js.Any])
+    inline def EVENT_CREATE_PARAMETER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_PARAMETER")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_CREATE_SIGNATURE")
     @js.native
     def EVENT_CREATE_SIGNATURE: String = js.native
-    @scala.inline
-    def EVENT_CREATE_SIGNATURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_SIGNATURE")(x.asInstanceOf[js.Any])
+    inline def EVENT_CREATE_SIGNATURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_SIGNATURE")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_CREATE_TYPE_PARAMETER")
     @js.native
     def EVENT_CREATE_TYPE_PARAMETER: String = js.native
-    @scala.inline
-    def EVENT_CREATE_TYPE_PARAMETER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_TYPE_PARAMETER")(x.asInstanceOf[js.Any])
+    inline def EVENT_CREATE_TYPE_PARAMETER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_TYPE_PARAMETER")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_END")
     @js.native
     def EVENT_END: String = js.native
-    @scala.inline
-    def EVENT_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_END")(x.asInstanceOf[js.Any])
+    inline def EVENT_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_END")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_FILE_BEGIN")
     @js.native
     def EVENT_FILE_BEGIN: String = js.native
-    @scala.inline
-    def EVENT_FILE_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FILE_BEGIN")(x.asInstanceOf[js.Any])
+    inline def EVENT_FILE_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FILE_BEGIN")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_FUNCTION_IMPLEMENTATION")
     @js.native
     def EVENT_FUNCTION_IMPLEMENTATION: String = js.native
-    @scala.inline
-    def EVENT_FUNCTION_IMPLEMENTATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FUNCTION_IMPLEMENTATION")(x.asInstanceOf[js.Any])
+    inline def EVENT_FUNCTION_IMPLEMENTATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FUNCTION_IMPLEMENTATION")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_RESOLVE")
     @js.native
     def EVENT_RESOLVE: String = js.native
-    @scala.inline
-    def EVENT_RESOLVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE")(x.asInstanceOf[js.Any])
+    inline def EVENT_RESOLVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_RESOLVE_BEGIN")
     @js.native
     def EVENT_RESOLVE_BEGIN: String = js.native
-    @scala.inline
-    def EVENT_RESOLVE_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_BEGIN")(x.asInstanceOf[js.Any])
+    inline def EVENT_RESOLVE_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_BEGIN")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/converter/converter", "Converter.EVENT_RESOLVE_END")
     @js.native
     def EVENT_RESOLVE_END: String = js.native
-    @scala.inline
-    def EVENT_RESOLVE_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_END")(x.asInstanceOf[js.Any])
+    inline def EVENT_RESOLVE_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_END")(x.asInstanceOf[js.Any])
   }
   
   trait ConverterResult extends StObject {
@@ -155,23 +144,18 @@ object converterConverterMod {
   }
   object ConverterResult {
     
-    @scala.inline
-    def apply(errors: js.Array[Diagnostic], project: ProjectReflection): ConverterResult = {
+    inline def apply(errors: js.Array[Diagnostic], project: ProjectReflection): ConverterResult = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConverterResult]
     }
     
-    @scala.inline
-    implicit class ConverterResultMutableBuilder[Self <: ConverterResult] (val x: Self) extends AnyVal {
+    extension [Self <: ConverterResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setProject(value: ProjectReflection): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: ProjectReflection): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

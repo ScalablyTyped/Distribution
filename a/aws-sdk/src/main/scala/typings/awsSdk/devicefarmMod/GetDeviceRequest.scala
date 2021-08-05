@@ -13,16 +13,13 @@ trait GetDeviceRequest extends StObject {
 }
 object GetDeviceRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): GetDeviceRequest = {
+  inline def apply(arn: AmazonResourceName): GetDeviceRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeviceRequest]
   }
   
-  @scala.inline
-  implicit class GetDeviceRequestMutableBuilder[Self <: GetDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

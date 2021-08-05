@@ -11,8 +11,6 @@ object zerosMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def zeros(height: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(height.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  @scala.inline
-  def zeros(height: Double, width: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def zeros(height: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(height.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def zeros(height: Double, width: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

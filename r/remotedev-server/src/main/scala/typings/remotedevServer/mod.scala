@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(argv: Options): js.Promise[typings.socketcluster.mod.^ | PortUsedError] = ^.asInstanceOf[js.Dynamic].apply(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.socketcluster.mod.^ | PortUsedError]]
+  inline def apply(argv: Options): js.Promise[typings.socketcluster.mod.^ | PortUsedError] = ^.asInstanceOf[js.Dynamic].apply(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.socketcluster.mod.^ | PortUsedError]]
   
   @JSImport("remotedev-server", JSImport.Namespace)
   @js.native
@@ -83,74 +82,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setDbOptions(value: String): Self = StObject.set(x, "dbOptions", value.asInstanceOf[js.Any])
+      inline def setDbOptions(value: String): Self = StObject.set(x, "dbOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbOptionsUndefined: Self = StObject.set(x, "dbOptions", js.undefined)
+      inline def setDbOptionsUndefined: Self = StObject.set(x, "dbOptions", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLogHTTPRequests(value: Boolean): Self = StObject.set(x, "logHTTPRequests", value.asInstanceOf[js.Any])
+      inline def setLogHTTPRequests(value: Boolean): Self = StObject.set(x, "logHTTPRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogHTTPRequestsUndefined: Self = StObject.set(x, "logHTTPRequests", js.undefined)
+      inline def setLogHTTPRequestsUndefined: Self = StObject.set(x, "logHTTPRequests", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+      inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setWsEngine(value: String): Self = StObject.set(x, "wsEngine", value.asInstanceOf[js.Any])
+      inline def setWsEngine(value: String): Self = StObject.set(x, "wsEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsEngineUndefined: Self = StObject.set(x, "wsEngine", js.undefined)
+      inline def setWsEngineUndefined: Self = StObject.set(x, "wsEngine", js.undefined)
     }
   }
   
@@ -162,20 +139,16 @@ object mod {
   }
   object PortUsedError {
     
-    @scala.inline
-    def apply(on: (String, js.Function0[Unit]) => Unit): PortUsedError = {
+    inline def apply(on: (String, js.Function0[Unit]) => Unit): PortUsedError = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), portAlreadyUsed = true)
       __obj.asInstanceOf[PortUsedError]
     }
     
-    @scala.inline
-    implicit class PortUsedErrorMutableBuilder[Self <: PortUsedError] (val x: Self) extends AnyVal {
+    extension [Self <: PortUsedError](x: Self) {
       
-      @scala.inline
-      def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPortAlreadyUsed(value: `true`): Self = StObject.set(x, "portAlreadyUsed", value.asInstanceOf[js.Any])
+      inline def setPortAlreadyUsed(value: `true`): Self = StObject.set(x, "portAlreadyUsed", value.asInstanceOf[js.Any])
     }
   }
 }

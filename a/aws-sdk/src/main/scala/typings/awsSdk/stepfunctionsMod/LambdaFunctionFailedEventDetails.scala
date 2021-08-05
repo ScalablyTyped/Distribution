@@ -18,25 +18,19 @@ trait LambdaFunctionFailedEventDetails extends StObject {
 }
 object LambdaFunctionFailedEventDetails {
   
-  @scala.inline
-  def apply(): LambdaFunctionFailedEventDetails = {
+  inline def apply(): LambdaFunctionFailedEventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LambdaFunctionFailedEventDetails]
   }
   
-  @scala.inline
-  implicit class LambdaFunctionFailedEventDetailsMutableBuilder[Self <: LambdaFunctionFailedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaFunctionFailedEventDetails](x: Self) {
     
-    @scala.inline
-    def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setError(value: SensitiveError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SensitiveError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
   }
 }

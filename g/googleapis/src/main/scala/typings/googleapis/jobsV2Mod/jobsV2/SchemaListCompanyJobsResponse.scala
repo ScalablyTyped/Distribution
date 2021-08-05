@@ -36,40 +36,29 @@ trait SchemaListCompanyJobsResponse extends StObject {
 }
 object SchemaListCompanyJobsResponse {
   
-  @scala.inline
-  def apply(): SchemaListCompanyJobsResponse = {
+  inline def apply(): SchemaListCompanyJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListCompanyJobsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListCompanyJobsResponseMutableBuilder[Self <: SchemaListCompanyJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListCompanyJobsResponse](x: Self) {
     
-    @scala.inline
-    def setJobs(value: js.Array[SchemaJob]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: js.Array[SchemaJob]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
+    inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    @scala.inline
-    def setJobsVarargs(value: SchemaJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: SchemaJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: String): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: String): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

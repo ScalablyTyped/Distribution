@@ -16,16 +16,13 @@ trait ArtistSearchResponse extends StObject {
 }
 object ArtistSearchResponse {
   
-  @scala.inline
-  def apply(artists: PagingObject[ArtistObjectFull]): ArtistSearchResponse = {
+  inline def apply(artists: PagingObject[ArtistObjectFull]): ArtistSearchResponse = {
     val __obj = js.Dynamic.literal(artists = artists.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistSearchResponse]
   }
   
-  @scala.inline
-  implicit class ArtistSearchResponseMutableBuilder[Self <: ArtistSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ArtistSearchResponse](x: Self) {
     
-    @scala.inline
-    def setArtists(value: PagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+    inline def setArtists(value: PagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
   }
 }

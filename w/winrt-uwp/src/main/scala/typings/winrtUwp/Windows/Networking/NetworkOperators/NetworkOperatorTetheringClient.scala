@@ -17,19 +17,15 @@ trait NetworkOperatorTetheringClient extends StObject {
 }
 object NetworkOperatorTetheringClient {
   
-  @scala.inline
-  def apply(hostNames: IVectorView[HostName], macAddress: String): NetworkOperatorTetheringClient = {
+  inline def apply(hostNames: IVectorView[HostName], macAddress: String): NetworkOperatorTetheringClient = {
     val __obj = js.Dynamic.literal(hostNames = hostNames.asInstanceOf[js.Any], macAddress = macAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkOperatorTetheringClient]
   }
   
-  @scala.inline
-  implicit class NetworkOperatorTetheringClientMutableBuilder[Self <: NetworkOperatorTetheringClient] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkOperatorTetheringClient](x: Self) {
     
-    @scala.inline
-    def setHostNames(value: IVectorView[HostName]): Self = StObject.set(x, "hostNames", value.asInstanceOf[js.Any])
+    inline def setHostNames(value: IVectorView[HostName]): Self = StObject.set(x, "hostNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesError extends StObject {
 }
 object EnumValuesError {
   
-  @scala.inline
-  def apply(enumValues: Error): EnumValuesError = {
+  inline def apply(enumValues: Error): EnumValuesError = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesError]
   }
   
-  @scala.inline
-  implicit class EnumValuesErrorMutableBuilder[Self <: EnumValuesError] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesError](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Error): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Error): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

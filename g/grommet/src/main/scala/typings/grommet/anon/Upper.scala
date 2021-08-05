@@ -25,52 +25,37 @@ trait Upper extends StObject {
 }
 object Upper {
   
-  @scala.inline
-  def apply(): Upper = {
+  inline def apply(): Upper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Upper]
   }
   
-  @scala.inline
-  implicit class UpperMutableBuilder[Self <: Upper] (val x: Self) extends AnyVal {
+  extension [Self <: Upper](x: Self) {
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLower(value: `7`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+    inline def setLower(value: `7`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
+    inline def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: OpacityType): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: OpacityType): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setUpper(value: `7`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
+    inline def setUpper(value: `7`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
+    inline def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
   }
 }

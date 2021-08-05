@@ -14,22 +14,17 @@ trait PanoramaPov extends StObject {
 }
 object PanoramaPov {
   
-  @scala.inline
-  def apply(fov: Double, pan: Double, tilt: Double): PanoramaPov = {
+  inline def apply(fov: Double, pan: Double, tilt: Double): PanoramaPov = {
     val __obj = js.Dynamic.literal(fov = fov.asInstanceOf[js.Any], pan = pan.asInstanceOf[js.Any], tilt = tilt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoramaPov]
   }
   
-  @scala.inline
-  implicit class PanoramaPovMutableBuilder[Self <: PanoramaPov] (val x: Self) extends AnyVal {
+  extension [Self <: PanoramaPov](x: Self) {
     
-    @scala.inline
-    def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
+    inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+    inline def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
   }
 }

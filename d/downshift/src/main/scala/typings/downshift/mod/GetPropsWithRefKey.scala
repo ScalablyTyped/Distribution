@@ -10,19 +10,15 @@ trait GetPropsWithRefKey extends StObject {
 }
 object GetPropsWithRefKey {
   
-  @scala.inline
-  def apply(): GetPropsWithRefKey = {
+  inline def apply(): GetPropsWithRefKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPropsWithRefKey]
   }
   
-  @scala.inline
-  implicit class GetPropsWithRefKeyMutableBuilder[Self <: GetPropsWithRefKey] (val x: Self) extends AnyVal {
+  extension [Self <: GetPropsWithRefKey](x: Self) {
     
-    @scala.inline
-    def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
+    inline def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefKeyUndefined: Self = StObject.set(x, "refKey", js.undefined)
+    inline def setRefKeyUndefined: Self = StObject.set(x, "refKey", js.undefined)
   }
 }

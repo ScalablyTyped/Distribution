@@ -11,9 +11,7 @@ object getSDKMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSDK(hasNameUrlOnReadyIsLoadedResolveRequireIsRequireAllow: ISDKConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDK")(hasNameUrlOnReadyIsLoadedResolveRequireIsRequireAllow.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getSDK(hasNameUrlOnReadyIsLoadedResolveRequireIsRequireAllow: ISDKConfig): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDK")(hasNameUrlOnReadyIsLoadedResolveRequireIsRequireAllow.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def mockLoadjs(mockedLoadjs: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockLoadjs")(mockedLoadjs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mockLoadjs(mockedLoadjs: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockLoadjs")(mockedLoadjs.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

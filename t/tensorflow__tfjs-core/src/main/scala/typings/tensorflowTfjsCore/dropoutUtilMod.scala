@@ -12,8 +12,6 @@ object dropoutUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNoiseShape(x: Tensor[Rank]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNoiseShape")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getNoiseShape(x: Tensor[Rank], noiseShape: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNoiseShape")(x.asInstanceOf[js.Any], noiseShape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getNoiseShape(x: Tensor[Rank]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNoiseShape")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getNoiseShape(x: Tensor[Rank], noiseShape: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNoiseShape")(x.asInstanceOf[js.Any], noiseShape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

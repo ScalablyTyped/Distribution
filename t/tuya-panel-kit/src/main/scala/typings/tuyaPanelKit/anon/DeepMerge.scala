@@ -28,8 +28,7 @@ trait DeepMerge extends StObject {
 }
 object DeepMerge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ThemeConsumer: ElementType[ThemeConsumerProps],
     ThemeProvider: ElementType[ThemeProviderProps],
     deepMerge: (js.Object, /* repeated */ js.Object) => js.Object,
@@ -42,28 +41,20 @@ object DeepMerge {
     __obj.asInstanceOf[DeepMerge]
   }
   
-  @scala.inline
-  implicit class DeepMergeMutableBuilder[Self <: DeepMerge] (val x: Self) extends AnyVal {
+  extension [Self <: DeepMerge](x: Self) {
     
-    @scala.inline
-    def setDeepMerge(value: (js.Object, /* repeated */ js.Object) => js.Object): Self = StObject.set(x, "deepMerge", js.Any.fromFunction2(value))
+    inline def setDeepMerge(value: (js.Object, /* repeated */ js.Object) => js.Object): Self = StObject.set(x, "deepMerge", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTheme(value: (js.Object, String, js.Any) => js.Any): Self = StObject.set(x, "getTheme", js.Any.fromFunction3(value))
+    inline def setGetTheme(value: (js.Object, String, js.Any) => js.Any): Self = StObject.set(x, "getTheme", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setParseToCss(value: (js.Array[Double], String) => StringDictionary[Double]): Self = StObject.set(x, "parseToCss", js.Any.fromFunction2(value))
+    inline def setParseToCss(value: (js.Array[Double], String) => StringDictionary[Double]): Self = StObject.set(x, "parseToCss", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseToStyle(value: (js.Array[Double], String) => StringDictionary[Double]): Self = StObject.set(x, "parseToStyle", js.Any.fromFunction2(value))
+    inline def setParseToStyle(value: (js.Array[Double], String) => StringDictionary[Double]): Self = StObject.set(x, "parseToStyle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setThemeConsumer(value: ElementType[ThemeConsumerProps]): Self = StObject.set(x, "ThemeConsumer", value.asInstanceOf[js.Any])
+    inline def setThemeConsumer(value: ElementType[ThemeConsumerProps]): Self = StObject.set(x, "ThemeConsumer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeProvider(value: ElementType[ThemeProviderProps]): Self = StObject.set(x, "ThemeProvider", value.asInstanceOf[js.Any])
+    inline def setThemeProvider(value: ElementType[ThemeProviderProps]): Self = StObject.set(x, "ThemeProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithTheme(value: ComponentType[js.Any] => ComponentType[js.Any]): Self = StObject.set(x, "withTheme", js.Any.fromFunction1(value))
+    inline def setWithTheme(value: ComponentType[js.Any] => ComponentType[js.Any]): Self = StObject.set(x, "withTheme", js.Any.fromFunction1(value))
   }
 }

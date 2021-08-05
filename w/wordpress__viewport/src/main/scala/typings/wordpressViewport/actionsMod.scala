@@ -11,6 +11,5 @@ object actionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setIsMatching(values: Record[String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIsMatching")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setIsMatching(values: Record[String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIsMatching")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object Dispose {
     
-    @scala.inline
-    def apply(dispose: () => js.Any): Dispose = {
+    inline def apply(dispose: () => js.Any): Dispose = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[Dispose]
     }
     
-    @scala.inline
-    implicit class DisposeMutableBuilder[Self <: Dispose] (val x: Self) extends AnyVal {
+    extension [Self <: Dispose](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
 }

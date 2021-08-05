@@ -28,40 +28,29 @@ trait ListResolverQueryLogConfigAssociationsResponse extends StObject {
 }
 object ListResolverQueryLogConfigAssociationsResponse {
   
-  @scala.inline
-  def apply(): ListResolverQueryLogConfigAssociationsResponse = {
+  inline def apply(): ListResolverQueryLogConfigAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResolverQueryLogConfigAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class ListResolverQueryLogConfigAssociationsResponseMutableBuilder[Self <: ListResolverQueryLogConfigAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResolverQueryLogConfigAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResolverQueryLogConfigAssociations(value: ResolverQueryLogConfigAssociationList): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", value.asInstanceOf[js.Any])
+    inline def setResolverQueryLogConfigAssociations(value: ResolverQueryLogConfigAssociationList): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverQueryLogConfigAssociationsUndefined: Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.undefined)
+    inline def setResolverQueryLogConfigAssociationsUndefined: Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.undefined)
     
-    @scala.inline
-    def setResolverQueryLogConfigAssociationsVarargs(value: ResolverQueryLogConfigAssociation*): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.Array(value :_*))
+    inline def setResolverQueryLogConfigAssociationsVarargs(value: ResolverQueryLogConfigAssociation*): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalCount(value: Count): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Count): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
     
-    @scala.inline
-    def setTotalFilteredCount(value: Count): Self = StObject.set(x, "TotalFilteredCount", value.asInstanceOf[js.Any])
+    inline def setTotalFilteredCount(value: Count): Self = StObject.set(x, "TotalFilteredCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFilteredCountUndefined: Self = StObject.set(x, "TotalFilteredCount", js.undefined)
+    inline def setTotalFilteredCountUndefined: Self = StObject.set(x, "TotalFilteredCount", js.undefined)
   }
 }

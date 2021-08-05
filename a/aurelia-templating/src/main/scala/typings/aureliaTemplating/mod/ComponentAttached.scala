@@ -13,16 +13,13 @@ trait ComponentAttached extends StObject {
 }
 object ComponentAttached {
   
-  @scala.inline
-  def apply(attached: () => Unit): ComponentAttached = {
+  inline def apply(attached: () => Unit): ComponentAttached = {
     val __obj = js.Dynamic.literal(attached = js.Any.fromFunction0(attached))
     __obj.asInstanceOf[ComponentAttached]
   }
   
-  @scala.inline
-  implicit class ComponentAttachedMutableBuilder[Self <: ComponentAttached] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentAttached](x: Self) {
     
-    @scala.inline
-    def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
+    inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
   }
 }

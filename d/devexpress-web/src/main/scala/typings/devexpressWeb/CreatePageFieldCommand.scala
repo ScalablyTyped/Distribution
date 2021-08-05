@@ -18,16 +18,13 @@ trait CreatePageFieldCommand
 }
 object CreatePageFieldCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): CreatePageFieldCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): CreatePageFieldCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[CreatePageFieldCommand]
   }
   
-  @scala.inline
-  implicit class CreatePageFieldCommandMutableBuilder[Self <: CreatePageFieldCommand] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePageFieldCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

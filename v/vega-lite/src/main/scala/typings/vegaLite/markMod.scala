@@ -12,9 +12,7 @@ object markMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSort(model: UnitModel): Compare = ^.asInstanceOf[js.Dynamic].applyDynamic("getSort")(model.asInstanceOf[js.Any]).asInstanceOf[Compare]
+  inline def getSort(model: UnitModel): Compare = ^.asInstanceOf[js.Dynamic].applyDynamic("getSort")(model.asInstanceOf[js.Any]).asInstanceOf[Compare]
   
-  @scala.inline
-  def parseMarkGroups(model: UnitModel): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMarkGroups")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def parseMarkGroups(model: UnitModel): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMarkGroups")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

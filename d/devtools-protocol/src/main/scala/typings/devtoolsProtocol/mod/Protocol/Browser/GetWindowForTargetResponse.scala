@@ -19,19 +19,15 @@ trait GetWindowForTargetResponse extends StObject {
 }
 object GetWindowForTargetResponse {
   
-  @scala.inline
-  def apply(bounds: Bounds, windowId: WindowID): GetWindowForTargetResponse = {
+  inline def apply(bounds: Bounds, windowId: WindowID): GetWindowForTargetResponse = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWindowForTargetResponse]
   }
   
-  @scala.inline
-  implicit class GetWindowForTargetResponseMutableBuilder[Self <: GetWindowForTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWindowForTargetResponse](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowId(value: WindowID): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: WindowID): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }
 }

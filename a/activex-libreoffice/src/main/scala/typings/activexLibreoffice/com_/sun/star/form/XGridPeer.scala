@@ -33,8 +33,7 @@ trait XGridPeer
 }
 object XGridPeer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XIndexContainer,
     acquire: () => Unit,
     getColumns: () => XIndexContainer,
@@ -46,16 +45,12 @@ object XGridPeer {
     __obj.asInstanceOf[XGridPeer]
   }
   
-  @scala.inline
-  implicit class XGridPeerMutableBuilder[Self <: XGridPeer] (val x: Self) extends AnyVal {
+  extension [Self <: XGridPeer](x: Self) {
     
-    @scala.inline
-    def setColumns(value: XIndexContainer): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: XIndexContainer): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumns(value: () => XIndexContainer): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => XIndexContainer): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetColumns(value: XIndexContainer => Unit): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
+    inline def setSetColumns(value: XIndexContainer => Unit): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
   }
 }

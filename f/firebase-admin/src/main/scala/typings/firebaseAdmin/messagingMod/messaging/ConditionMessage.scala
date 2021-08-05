@@ -13,16 +13,13 @@ trait ConditionMessage
 }
 object ConditionMessage {
   
-  @scala.inline
-  def apply(condition: String): ConditionMessage = {
+  inline def apply(condition: String): ConditionMessage = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionMessage]
   }
   
-  @scala.inline
-  implicit class ConditionMessageMutableBuilder[Self <: ConditionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionMessage](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }
 }

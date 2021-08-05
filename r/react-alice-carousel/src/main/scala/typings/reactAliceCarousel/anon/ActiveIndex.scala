@@ -74,8 +74,7 @@ trait ActiveIndex extends StObject {
 }
 object ActiveIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeIndex: Double,
     animationDuration: Double,
     animationEasingFunction: String,
@@ -112,100 +111,68 @@ object ActiveIndex {
     __obj.asInstanceOf[ActiveIndex]
   }
   
-  @scala.inline
-  implicit class ActiveIndexMutableBuilder[Self <: ActiveIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveIndex](x: Self) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationEasingFunction(value: String): Self = StObject.set(x, "animationEasingFunction", value.asInstanceOf[js.Any])
+    inline def setAnimationEasingFunction(value: String): Self = StObject.set(x, "animationEasingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationType(value: AnimationType): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    inline def setAnimationType(value: AnimationType): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+    inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlayControls(value: Boolean): Self = StObject.set(x, "autoPlayControls", value.asInstanceOf[js.Any])
+    inline def setAutoPlayControls(value: Boolean): Self = StObject.set(x, "autoPlayControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlayDirection(value: AutoplayDirection): Self = StObject.set(x, "autoPlayDirection", value.asInstanceOf[js.Any])
+    inline def setAutoPlayDirection(value: AutoplayDirection): Self = StObject.set(x, "autoPlayDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlayInterval(value: Double): Self = StObject.set(x, "autoPlayInterval", value.asInstanceOf[js.Any])
+    inline def setAutoPlayInterval(value: Double): Self = StObject.set(x, "autoPlayInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlayStrategy(value: AutoPlayStrategy): Self = StObject.set(x, "autoPlayStrategy", value.asInstanceOf[js.Any])
+    inline def setAutoPlayStrategy(value: AutoPlayStrategy): Self = StObject.set(x, "autoPlayStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
+    inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsStrategy(value: ControlsStrategy): Self = StObject.set(x, "controlsStrategy", value.asInstanceOf[js.Any])
+    inline def setControlsStrategy(value: ControlsStrategy): Self = StObject.set(x, "controlsStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableButtonsControls(value: Boolean): Self = StObject.set(x, "disableButtonsControls", value.asInstanceOf[js.Any])
+    inline def setDisableButtonsControls(value: Boolean): Self = StObject.set(x, "disableButtonsControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableDotsControls(value: Boolean): Self = StObject.set(x, "disableDotsControls", value.asInstanceOf[js.Any])
+    inline def setDisableDotsControls(value: Boolean): Self = StObject.set(x, "disableDotsControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableSlideInfo(value: Boolean): Self = StObject.set(x, "disableSlideInfo", value.asInstanceOf[js.Any])
+    inline def setDisableSlideInfo(value: Boolean): Self = StObject.set(x, "disableSlideInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+    inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: Unit): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Unit): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseTracking(value: Boolean): Self = StObject.set(x, "mouseTracking", value.asInstanceOf[js.Any])
+    inline def setMouseTracking(value: Boolean): Self = StObject.set(x, "mouseTracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInitialized(value: () => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction0(value))
+    inline def setOnInitialized(value: () => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnResizeEvent(value: Unit): Self = StObject.set(x, "onResizeEvent", value.asInstanceOf[js.Any])
+    inline def setOnResizeEvent(value: Unit): Self = StObject.set(x, "onResizeEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResized(value: () => Unit): Self = StObject.set(x, "onResized", js.Any.fromFunction0(value))
+    inline def setOnResized(value: () => Unit): Self = StObject.set(x, "onResized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSlideChange(value: () => Unit): Self = StObject.set(x, "onSlideChange", js.Any.fromFunction0(value))
+    inline def setOnSlideChange(value: () => Unit): Self = StObject.set(x, "onSlideChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSlideChanged(value: () => Unit): Self = StObject.set(x, "onSlideChanged", js.Any.fromFunction0(value))
+    inline def setOnSlideChanged(value: () => Unit): Self = StObject.set(x, "onSlideChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsive(value: Unit): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    inline def setResponsive(value: Unit): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeDelta(value: Double): Self = StObject.set(x, "swipeDelta", value.asInstanceOf[js.Any])
+    inline def setSwipeDelta(value: Double): Self = StObject.set(x, "swipeDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeExtraPadding(value: Double): Self = StObject.set(x, "swipeExtraPadding", value.asInstanceOf[js.Any])
+    inline def setSwipeExtraPadding(value: Double): Self = StObject.set(x, "swipeExtraPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchMoveDefaultEvents(value: Boolean): Self = StObject.set(x, "touchMoveDefaultEvents", value.asInstanceOf[js.Any])
+    inline def setTouchMoveDefaultEvents(value: Boolean): Self = StObject.set(x, "touchMoveDefaultEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchTracking(value: Boolean): Self = StObject.set(x, "touchTracking", value.asInstanceOf[js.Any])
+    inline def setTouchTracking(value: Boolean): Self = StObject.set(x, "touchTracking", value.asInstanceOf[js.Any])
   }
 }

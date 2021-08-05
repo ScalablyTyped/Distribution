@@ -12,19 +12,15 @@ trait UpdateQueueMessagesOptions
 }
 object UpdateQueueMessagesOptions {
   
-  @scala.inline
-  def apply(): UpdateQueueMessagesOptions = {
+  inline def apply(): UpdateQueueMessagesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateQueueMessagesOptions]
   }
   
-  @scala.inline
-  implicit class UpdateQueueMessagesOptionsMutableBuilder[Self <: UpdateQueueMessagesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateQueueMessagesOptions](x: Self) {
     
-    @scala.inline
-    def setMessagetext(value: String): Self = StObject.set(x, "messagetext", value.asInstanceOf[js.Any])
+    inline def setMessagetext(value: String): Self = StObject.set(x, "messagetext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagetextUndefined: Self = StObject.set(x, "messagetext", js.undefined)
+    inline def setMessagetextUndefined: Self = StObject.set(x, "messagetext", js.undefined)
   }
 }

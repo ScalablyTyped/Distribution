@@ -17,25 +17,19 @@ trait ClearValuesResponse extends StObject {
 }
 object ClearValuesResponse {
   
-  @scala.inline
-  def apply(): ClearValuesResponse = {
+  inline def apply(): ClearValuesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearValuesResponse]
   }
   
-  @scala.inline
-  implicit class ClearValuesResponseMutableBuilder[Self <: ClearValuesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ClearValuesResponse](x: Self) {
     
-    @scala.inline
-    def setClearedRange(value: String): Self = StObject.set(x, "clearedRange", value.asInstanceOf[js.Any])
+    inline def setClearedRange(value: String): Self = StObject.set(x, "clearedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearedRangeUndefined: Self = StObject.set(x, "clearedRange", js.undefined)
+    inline def setClearedRangeUndefined: Self = StObject.set(x, "clearedRange", js.undefined)
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
   }
 }

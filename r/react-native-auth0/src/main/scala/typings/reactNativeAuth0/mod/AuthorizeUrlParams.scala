@@ -14,22 +14,17 @@ trait AuthorizeUrlParams extends StObject {
 }
 object AuthorizeUrlParams {
   
-  @scala.inline
-  def apply(redirectUri: String, responseType: String, state: String): AuthorizeUrlParams = {
+  inline def apply(redirectUri: String, responseType: String, state: String): AuthorizeUrlParams = {
     val __obj = js.Dynamic.literal(redirectUri = redirectUri.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeUrlParams]
   }
   
-  @scala.inline
-  implicit class AuthorizeUrlParamsMutableBuilder[Self <: AuthorizeUrlParams] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeUrlParams](x: Self) {
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

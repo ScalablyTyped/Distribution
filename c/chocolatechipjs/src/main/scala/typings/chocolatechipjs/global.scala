@@ -10,12 +10,10 @@ object global {
   @js.native
   def _empty: ChocolateChipStatic = js.native
   
-  @scala.inline
-  def _empty_=(x: ChocolateChipStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
+  inline def _empty_=(x: ChocolateChipStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chocolatechipjs")
   @js.native
   def chocolatechipjs: ChocolateChipStatic = js.native
-  @scala.inline
-  def chocolatechipjs_=(x: ChocolateChipStatic): Unit = js.Dynamic.global.updateDynamic("chocolatechipjs")(x.asInstanceOf[js.Any])
+  inline def chocolatechipjs_=(x: ChocolateChipStatic): Unit = js.Dynamic.global.updateDynamic("chocolatechipjs")(x.asInstanceOf[js.Any])
 }

@@ -10,19 +10,15 @@ trait ImageLoadEventDataAndroid extends StObject {
 }
 object ImageLoadEventDataAndroid {
   
-  @scala.inline
-  def apply(): ImageLoadEventDataAndroid = {
+  inline def apply(): ImageLoadEventDataAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageLoadEventDataAndroid]
   }
   
-  @scala.inline
-  implicit class ImageLoadEventDataAndroidMutableBuilder[Self <: ImageLoadEventDataAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: ImageLoadEventDataAndroid](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

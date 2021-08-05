@@ -12,22 +12,17 @@ trait SuiteTestCase extends StObject {
 }
 object SuiteTestCase {
   
-  @scala.inline
-  def apply(pointAssignments: js.Array[PointAssignment], testCase: WorkItemReference): SuiteTestCase = {
+  inline def apply(pointAssignments: js.Array[PointAssignment], testCase: WorkItemReference): SuiteTestCase = {
     val __obj = js.Dynamic.literal(pointAssignments = pointAssignments.asInstanceOf[js.Any], testCase = testCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuiteTestCase]
   }
   
-  @scala.inline
-  implicit class SuiteTestCaseMutableBuilder[Self <: SuiteTestCase] (val x: Self) extends AnyVal {
+  extension [Self <: SuiteTestCase](x: Self) {
     
-    @scala.inline
-    def setPointAssignments(value: js.Array[PointAssignment]): Self = StObject.set(x, "pointAssignments", value.asInstanceOf[js.Any])
+    inline def setPointAssignments(value: js.Array[PointAssignment]): Self = StObject.set(x, "pointAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointAssignmentsVarargs(value: PointAssignment*): Self = StObject.set(x, "pointAssignments", js.Array(value :_*))
+    inline def setPointAssignmentsVarargs(value: PointAssignment*): Self = StObject.set(x, "pointAssignments", js.Array(value :_*))
     
-    @scala.inline
-    def setTestCase(value: WorkItemReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
+    inline def setTestCase(value: WorkItemReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
   }
 }

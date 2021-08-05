@@ -16,25 +16,18 @@ object reporterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def countErrors(results: CompilationResult): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countErrors")(results.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def countErrors(results: CompilationResult): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countErrors")(results.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def defaultReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReporter")().asInstanceOf[Reporter]
+  inline def defaultReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReporter")().asInstanceOf[Reporter]
   
-  @scala.inline
-  def emptyCompilationResult(noEmit: Boolean): CompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyCompilationResult")(noEmit.asInstanceOf[js.Any]).asInstanceOf[CompilationResult]
+  inline def emptyCompilationResult(noEmit: Boolean): CompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyCompilationResult")(noEmit.asInstanceOf[js.Any]).asInstanceOf[CompilationResult]
   
-  @scala.inline
-  def fullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")().asInstanceOf[Reporter]
-  @scala.inline
-  def fullReporter(fullFilename: Boolean): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")(fullFilename.asInstanceOf[js.Any]).asInstanceOf[Reporter]
+  inline def fullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")().asInstanceOf[Reporter]
+  inline def fullReporter(fullFilename: Boolean): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("fullReporter")(fullFilename.asInstanceOf[js.Any]).asInstanceOf[Reporter]
   
-  @scala.inline
-  def longReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("longReporter")().asInstanceOf[Reporter]
+  inline def longReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("longReporter")().asInstanceOf[Reporter]
   
-  @scala.inline
-  def nullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("nullReporter")().asInstanceOf[Reporter]
+  inline def nullReporter(): Reporter = ^.asInstanceOf[js.Dynamic].applyDynamic("nullReporter")().asInstanceOf[Reporter]
   
   trait CompilationResult extends StObject {
     
@@ -61,8 +54,7 @@ object reporterMod {
   }
   object CompilationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       declarationErrors: Double,
       emitErrors: Double,
       emitSkipped: Boolean,
@@ -77,35 +69,25 @@ object reporterMod {
       __obj.asInstanceOf[CompilationResult]
     }
     
-    @scala.inline
-    implicit class CompilationResultMutableBuilder[Self <: CompilationResult] (val x: Self) extends AnyVal {
+    extension [Self <: CompilationResult](x: Self) {
       
-      @scala.inline
-      def setDeclarationErrors(value: Double): Self = StObject.set(x, "declarationErrors", value.asInstanceOf[js.Any])
+      inline def setDeclarationErrors(value: Double): Self = StObject.set(x, "declarationErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitErrors(value: Double): Self = StObject.set(x, "emitErrors", value.asInstanceOf[js.Any])
+      inline def setEmitErrors(value: Double): Self = StObject.set(x, "emitErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitSkipped(value: Boolean): Self = StObject.set(x, "emitSkipped", value.asInstanceOf[js.Any])
+      inline def setEmitSkipped(value: Boolean): Self = StObject.set(x, "emitSkipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalErrors(value: Double): Self = StObject.set(x, "globalErrors", value.asInstanceOf[js.Any])
+      inline def setGlobalErrors(value: Double): Self = StObject.set(x, "globalErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoEmit(value: Boolean): Self = StObject.set(x, "noEmit", value.asInstanceOf[js.Any])
+      inline def setNoEmit(value: Boolean): Self = StObject.set(x, "noEmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsErrors(value: Double): Self = StObject.set(x, "optionsErrors", value.asInstanceOf[js.Any])
+      inline def setOptionsErrors(value: Double): Self = StObject.set(x, "optionsErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSemanticErrors(value: Double): Self = StObject.set(x, "semanticErrors", value.asInstanceOf[js.Any])
+      inline def setSemanticErrors(value: Double): Self = StObject.set(x, "semanticErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntaxErrors(value: Double): Self = StObject.set(x, "syntaxErrors", value.asInstanceOf[js.Any])
+      inline def setSyntaxErrors(value: Double): Self = StObject.set(x, "syntaxErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranspileErrors(value: Double): Self = StObject.set(x, "transpileErrors", value.asInstanceOf[js.Any])
+      inline def setTranspileErrors(value: Double): Self = StObject.set(x, "transpileErrors", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,26 +99,20 @@ object reporterMod {
   }
   object Reporter {
     
-    @scala.inline
-    def apply(): Reporter = {
+    inline def apply(): Reporter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Reporter]
     }
     
-    @scala.inline
-    implicit class ReporterMutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
+    extension [Self <: Reporter](x: Self) {
       
-      @scala.inline
-      def setError(value: (/* error */ TypeScriptError, /* typescript */ Typeofts) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (/* error */ TypeScriptError, /* typescript */ Typeofts) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFinish(value: /* results */ CompilationResult => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
+      inline def setFinish(value: /* results */ CompilationResult => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+      inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     }
   }
   
@@ -160,53 +136,38 @@ object reporterMod {
   }
   object TypeScriptError {
     
-    @scala.inline
-    def apply(diagnostic: Diagnostic, message: String, name: String): TypeScriptError = {
+    inline def apply(diagnostic: Diagnostic, message: String, name: String): TypeScriptError = {
       val __obj = js.Dynamic.literal(diagnostic = diagnostic.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeScriptError]
     }
     
-    @scala.inline
-    implicit class TypeScriptErrorMutableBuilder[Self <: TypeScriptError] (val x: Self) extends AnyVal {
+    extension [Self <: TypeScriptError](x: Self) {
       
-      @scala.inline
-      def setDiagnostic(value: Diagnostic): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
+      inline def setDiagnostic(value: Diagnostic): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndPosition(value: Character): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+      inline def setEndPosition(value: Character): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+      inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
       
-      @scala.inline
-      def setFile(value: VinylFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: VinylFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFullFilename(value: String): Self = StObject.set(x, "fullFilename", value.asInstanceOf[js.Any])
+      inline def setFullFilename(value: String): Self = StObject.set(x, "fullFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullFilenameUndefined: Self = StObject.set(x, "fullFilename", js.undefined)
+      inline def setFullFilenameUndefined: Self = StObject.set(x, "fullFilename", js.undefined)
       
-      @scala.inline
-      def setRelativeFilename(value: String): Self = StObject.set(x, "relativeFilename", value.asInstanceOf[js.Any])
+      inline def setRelativeFilename(value: String): Self = StObject.set(x, "relativeFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFilenameUndefined: Self = StObject.set(x, "relativeFilename", js.undefined)
+      inline def setRelativeFilenameUndefined: Self = StObject.set(x, "relativeFilename", js.undefined)
       
-      @scala.inline
-      def setStartPosition(value: Character): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+      inline def setStartPosition(value: Character): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+      inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
       
-      @scala.inline
-      def setTsFile(value: SourceFile): Self = StObject.set(x, "tsFile", value.asInstanceOf[js.Any])
+      inline def setTsFile(value: SourceFile): Self = StObject.set(x, "tsFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsFileUndefined: Self = StObject.set(x, "tsFile", js.undefined)
+      inline def setTsFileUndefined: Self = StObject.set(x, "tsFile", js.undefined)
     }
   }
 }

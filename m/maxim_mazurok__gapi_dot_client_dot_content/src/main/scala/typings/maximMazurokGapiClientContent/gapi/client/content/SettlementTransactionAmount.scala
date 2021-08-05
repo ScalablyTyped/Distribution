@@ -30,37 +30,27 @@ trait SettlementTransactionAmount extends StObject {
 }
 object SettlementTransactionAmount {
   
-  @scala.inline
-  def apply(): SettlementTransactionAmount = {
+  inline def apply(): SettlementTransactionAmount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettlementTransactionAmount]
   }
   
-  @scala.inline
-  implicit class SettlementTransactionAmountMutableBuilder[Self <: SettlementTransactionAmount] (val x: Self) extends AnyVal {
+  extension [Self <: SettlementTransactionAmount](x: Self) {
     
-    @scala.inline
-    def setCommission(value: SettlementTransactionAmountCommission): Self = StObject.set(x, "commission", value.asInstanceOf[js.Any])
+    inline def setCommission(value: SettlementTransactionAmountCommission): Self = StObject.set(x, "commission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommissionUndefined: Self = StObject.set(x, "commission", js.undefined)
+    inline def setCommissionUndefined: Self = StObject.set(x, "commission", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTransactionAmount(value: Price): Self = StObject.set(x, "transactionAmount", value.asInstanceOf[js.Any])
+    inline def setTransactionAmount(value: Price): Self = StObject.set(x, "transactionAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionAmountUndefined: Self = StObject.set(x, "transactionAmount", js.undefined)
+    inline def setTransactionAmountUndefined: Self = StObject.set(x, "transactionAmount", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

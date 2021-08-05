@@ -13,19 +13,15 @@ trait BatchGetVariableRequest extends StObject {
 }
 object BatchGetVariableRequest {
   
-  @scala.inline
-  def apply(names: NameList): BatchGetVariableRequest = {
+  inline def apply(names: NameList): BatchGetVariableRequest = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetVariableRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetVariableRequestMutableBuilder[Self <: BatchGetVariableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetVariableRequest](x: Self) {
     
-    @scala.inline
-    def setNames(value: NameList): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: NameList): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

@@ -21,8 +21,7 @@ object a11yContextMod {
   @js.native
   val A11yContextProvider: FC[A11yContextProviderProps] = js.native
   
-  @scala.inline
-  def useA11yContext(): A11yContextStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useA11yContext")().asInstanceOf[A11yContextStore]
+  inline def useA11yContext(): A11yContextStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useA11yContext")().asInstanceOf[A11yContextStore]
   
   trait A11yContextProviderProps extends StObject {
     
@@ -30,17 +29,14 @@ object a11yContextMod {
   }
   object A11yContextProviderProps {
     
-    @scala.inline
-    def apply(active: Boolean): A11yContextProviderProps = {
+    inline def apply(active: Boolean): A11yContextProviderProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[A11yContextProviderProps]
     }
     
-    @scala.inline
-    implicit class A11yContextProviderPropsMutableBuilder[Self <: A11yContextProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: A11yContextProviderProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,8 +58,7 @@ object a11yContextMod {
   }
   object A11yContextStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearHighlights: () => Unit,
       highlighted: js.Array[String],
       results: Results,
@@ -76,32 +71,23 @@ object a11yContextMod {
       __obj.asInstanceOf[A11yContextStore]
     }
     
-    @scala.inline
-    implicit class A11yContextStoreMutableBuilder[Self <: A11yContextStore] (val x: Self) extends AnyVal {
+    extension [Self <: A11yContextStore](x: Self) {
       
-      @scala.inline
-      def setClearHighlights(value: () => Unit): Self = StObject.set(x, "clearHighlights", js.Any.fromFunction0(value))
+      inline def setClearHighlights(value: () => Unit): Self = StObject.set(x, "clearHighlights", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHighlighted(value: js.Array[String]): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+      inline def setHighlighted(value: js.Array[String]): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedVarargs(value: String*): Self = StObject.set(x, "highlighted", js.Array(value :_*))
+      inline def setHighlightedVarargs(value: String*): Self = StObject.set(x, "highlighted", js.Array(value :_*))
       
-      @scala.inline
-      def setResults(value: Results): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Results): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetResults(value: Results => Unit): Self = StObject.set(x, "setResults", js.Any.fromFunction1(value))
+      inline def setSetResults(value: Results => Unit): Self = StObject.set(x, "setResults", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTab(value: Double => Unit): Self = StObject.set(x, "setTab", js.Any.fromFunction1(value))
+      inline def setSetTab(value: Double => Unit): Self = StObject.set(x, "setTab", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTab(value: Double): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+      inline def setTab(value: Double): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleHighlight(value: (js.Array[String], Boolean) => Unit): Self = StObject.set(x, "toggleHighlight", js.Any.fromFunction2(value))
+      inline def setToggleHighlight(value: (js.Array[String], Boolean) => Unit): Self = StObject.set(x, "toggleHighlight", js.Any.fromFunction2(value))
     }
   }
   
@@ -115,32 +101,24 @@ object a11yContextMod {
   }
   object Results {
     
-    @scala.inline
-    def apply(incomplete: js.Array[Result], passes: js.Array[Result], violations: js.Array[Result]): Results = {
+    inline def apply(incomplete: js.Array[Result], passes: js.Array[Result], violations: js.Array[Result]): Results = {
       val __obj = js.Dynamic.literal(incomplete = incomplete.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], violations = violations.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
-    @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+    extension [Self <: Results](x: Self) {
       
-      @scala.inline
-      def setIncomplete(value: js.Array[Result]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
+      inline def setIncomplete(value: js.Array[Result]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value :_*))
+      inline def setIncompleteVarargs(value: Result*): Self = StObject.set(x, "incomplete", js.Array(value :_*))
       
-      @scala.inline
-      def setPasses(value: js.Array[Result]): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
+      inline def setPasses(value: js.Array[Result]): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value :_*))
+      inline def setPassesVarargs(value: Result*): Self = StObject.set(x, "passes", js.Array(value :_*))
       
-      @scala.inline
-      def setViolations(value: js.Array[Result]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
+      inline def setViolations(value: js.Array[Result]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value :_*))
+      inline def setViolationsVarargs(value: Result*): Self = StObject.set(x, "violations", js.Array(value :_*))
     }
   }
 }

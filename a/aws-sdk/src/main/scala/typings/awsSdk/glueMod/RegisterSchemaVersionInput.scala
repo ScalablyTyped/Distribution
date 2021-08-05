@@ -18,19 +18,15 @@ trait RegisterSchemaVersionInput extends StObject {
 }
 object RegisterSchemaVersionInput {
   
-  @scala.inline
-  def apply(SchemaDefinition: SchemaDefinitionString, SchemaId: SchemaId): RegisterSchemaVersionInput = {
+  inline def apply(SchemaDefinition: SchemaDefinitionString, SchemaId: SchemaId): RegisterSchemaVersionInput = {
     val __obj = js.Dynamic.literal(SchemaDefinition = SchemaDefinition.asInstanceOf[js.Any], SchemaId = SchemaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterSchemaVersionInput]
   }
   
-  @scala.inline
-  implicit class RegisterSchemaVersionInputMutableBuilder[Self <: RegisterSchemaVersionInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterSchemaVersionInput](x: Self) {
     
-    @scala.inline
-    def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
+    inline def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
   }
 }

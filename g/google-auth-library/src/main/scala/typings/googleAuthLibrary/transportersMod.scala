@@ -26,7 +26,7 @@ object transportersMod {
     /**
       * Changes the error to include details from the body.
       */
-    var processError: js.Any = js.native
+    /* private */ var processError: js.Any = js.native
     
     def request[T](opts: GaxiosOptions): Unit = js.native
     def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native

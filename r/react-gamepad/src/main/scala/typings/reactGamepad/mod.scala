@@ -24,8 +24,7 @@ object mod {
       @JSImport("react-gamepad", "default.layouts.XBOX")
       @js.native
       def XBOX: Layout = js.native
-      @scala.inline
-      def XBOX_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX")(x.asInstanceOf[js.Any])
+      inline def XBOX_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -38,8 +37,7 @@ object mod {
     @JSImport("react-gamepad", "layouts.XBOX")
     @js.native
     def XBOX: Layout = js.native
-    @scala.inline
-    def XBOX_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX")(x.asInstanceOf[js.Any])
+    inline def XBOX_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -53,23 +51,17 @@ object mod {
   trait Axis extends StObject
   object Axis {
     
-    @scala.inline
-    def LeftStickX: typings.reactGamepad.reactGamepadStrings.LeftStickX = "LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickX]
+    inline def LeftStickX: typings.reactGamepad.reactGamepadStrings.LeftStickX = "LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickX]
     
-    @scala.inline
-    def LeftStickY: typings.reactGamepad.reactGamepadStrings.LeftStickY = "LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickY]
+    inline def LeftStickY: typings.reactGamepad.reactGamepadStrings.LeftStickY = "LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickY]
     
-    @scala.inline
-    def LeftTrigger: typings.reactGamepad.reactGamepadStrings.LeftTrigger = "LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftTrigger]
+    inline def LeftTrigger: typings.reactGamepad.reactGamepadStrings.LeftTrigger = "LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftTrigger]
     
-    @scala.inline
-    def RightStickX: typings.reactGamepad.reactGamepadStrings.RightStickX = "RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickX]
+    inline def RightStickX: typings.reactGamepad.reactGamepadStrings.RightStickX = "RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickX]
     
-    @scala.inline
-    def RightStickY: typings.reactGamepad.reactGamepadStrings.RightStickY = "RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickY]
+    inline def RightStickY: typings.reactGamepad.reactGamepadStrings.RightStickY = "RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickY]
     
-    @scala.inline
-    def RightTrigger: typings.reactGamepad.reactGamepadStrings.RightTrigger = "RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightTrigger]
+    inline def RightTrigger: typings.reactGamepad.reactGamepadStrings.RightTrigger = "RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightTrigger]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -93,53 +85,37 @@ object mod {
   trait Button extends StObject
   object Button {
     
-    @scala.inline
-    def A: typings.reactGamepad.reactGamepadStrings.A = "A".asInstanceOf[typings.reactGamepad.reactGamepadStrings.A]
+    inline def A: typings.reactGamepad.reactGamepadStrings.A = "A".asInstanceOf[typings.reactGamepad.reactGamepadStrings.A]
     
-    @scala.inline
-    def B: typings.reactGamepad.reactGamepadStrings.B = "B".asInstanceOf[typings.reactGamepad.reactGamepadStrings.B]
+    inline def B: typings.reactGamepad.reactGamepadStrings.B = "B".asInstanceOf[typings.reactGamepad.reactGamepadStrings.B]
     
-    @scala.inline
-    def Back: typings.reactGamepad.reactGamepadStrings.Back = "Back".asInstanceOf[typings.reactGamepad.reactGamepadStrings.Back]
+    inline def Back: typings.reactGamepad.reactGamepadStrings.Back = "Back".asInstanceOf[typings.reactGamepad.reactGamepadStrings.Back]
     
-    @scala.inline
-    def DPadDown: typings.reactGamepad.reactGamepadStrings.DPadDown = "DPadDown".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadDown]
+    inline def DPadDown: typings.reactGamepad.reactGamepadStrings.DPadDown = "DPadDown".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadDown]
     
-    @scala.inline
-    def DPadLeft: typings.reactGamepad.reactGamepadStrings.DPadLeft = "DPadLeft".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadLeft]
+    inline def DPadLeft: typings.reactGamepad.reactGamepadStrings.DPadLeft = "DPadLeft".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadLeft]
     
-    @scala.inline
-    def DPadRight: typings.reactGamepad.reactGamepadStrings.DPadRight = "DPadRight".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadRight]
+    inline def DPadRight: typings.reactGamepad.reactGamepadStrings.DPadRight = "DPadRight".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadRight]
     
-    @scala.inline
-    def DPadUp: typings.reactGamepad.reactGamepadStrings.DPadUp = "DPadUp".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadUp]
+    inline def DPadUp: typings.reactGamepad.reactGamepadStrings.DPadUp = "DPadUp".asInstanceOf[typings.reactGamepad.reactGamepadStrings.DPadUp]
     
-    @scala.inline
-    def LB: typings.reactGamepad.reactGamepadStrings.LB = "LB".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LB]
+    inline def LB: typings.reactGamepad.reactGamepadStrings.LB = "LB".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LB]
     
-    @scala.inline
-    def LS: typings.reactGamepad.reactGamepadStrings.LS = "LS".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LS]
+    inline def LS: typings.reactGamepad.reactGamepadStrings.LS = "LS".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LS]
     
-    @scala.inline
-    def LT: typings.reactGamepad.reactGamepadStrings.LT = "LT".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LT]
+    inline def LT: typings.reactGamepad.reactGamepadStrings.LT = "LT".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LT]
     
-    @scala.inline
-    def RB: typings.reactGamepad.reactGamepadStrings.RB = "RB".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RB]
+    inline def RB: typings.reactGamepad.reactGamepadStrings.RB = "RB".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RB]
     
-    @scala.inline
-    def RS: typings.reactGamepad.reactGamepadStrings.RS = "RS".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RS]
+    inline def RS: typings.reactGamepad.reactGamepadStrings.RS = "RS".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RS]
     
-    @scala.inline
-    def RT: typings.reactGamepad.reactGamepadStrings.RT = "RT".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RT]
+    inline def RT: typings.reactGamepad.reactGamepadStrings.RT = "RT".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RT]
     
-    @scala.inline
-    def Start: typings.reactGamepad.reactGamepadStrings.Start = "Start".asInstanceOf[typings.reactGamepad.reactGamepadStrings.Start]
+    inline def Start: typings.reactGamepad.reactGamepadStrings.Start = "Start".asInstanceOf[typings.reactGamepad.reactGamepadStrings.Start]
     
-    @scala.inline
-    def X: typings.reactGamepad.reactGamepadStrings.X = "X".asInstanceOf[typings.reactGamepad.reactGamepadStrings.X]
+    inline def X: typings.reactGamepad.reactGamepadStrings.X = "X".asInstanceOf[typings.reactGamepad.reactGamepadStrings.X]
     
-    @scala.inline
-    def Y: typings.reactGamepad.reactGamepadStrings.Y = "Y".asInstanceOf[typings.reactGamepad.reactGamepadStrings.Y]
+    inline def Y: typings.reactGamepad.reactGamepadStrings.Y = "Y".asInstanceOf[typings.reactGamepad.reactGamepadStrings.Y]
   }
   
   type Gamepad = Component[Props, js.Object, js.Any]
@@ -155,23 +131,17 @@ object mod {
   trait InvertedAxis extends StObject
   object InvertedAxis {
     
-    @scala.inline
-    def `-LeftStickX`: typings.reactGamepad.reactGamepadStrings.`-LeftStickX` = "-LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickX`]
+    inline def `-LeftStickX`: typings.reactGamepad.reactGamepadStrings.`-LeftStickX` = "-LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickX`]
     
-    @scala.inline
-    def `-LeftStickY`: typings.reactGamepad.reactGamepadStrings.`-LeftStickY` = "-LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickY`]
+    inline def `-LeftStickY`: typings.reactGamepad.reactGamepadStrings.`-LeftStickY` = "-LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickY`]
     
-    @scala.inline
-    def `-LeftTrigger`: typings.reactGamepad.reactGamepadStrings.`-LeftTrigger` = "-LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftTrigger`]
+    inline def `-LeftTrigger`: typings.reactGamepad.reactGamepadStrings.`-LeftTrigger` = "-LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftTrigger`]
     
-    @scala.inline
-    def `-RightStickX`: typings.reactGamepad.reactGamepadStrings.`-RightStickX` = "-RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickX`]
+    inline def `-RightStickX`: typings.reactGamepad.reactGamepadStrings.`-RightStickX` = "-RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickX`]
     
-    @scala.inline
-    def `-RightStickY`: typings.reactGamepad.reactGamepadStrings.`-RightStickY` = "-RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickY`]
+    inline def `-RightStickY`: typings.reactGamepad.reactGamepadStrings.`-RightStickY` = "-RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickY`]
     
-    @scala.inline
-    def `-RightTrigger`: typings.reactGamepad.reactGamepadStrings.`-RightTrigger` = "-RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightTrigger`]
+    inline def `-RightTrigger`: typings.reactGamepad.reactGamepadStrings.`-RightTrigger` = "-RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightTrigger`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -191,41 +161,29 @@ object mod {
   trait InvertibleAxis extends StObject
   object InvertibleAxis {
     
-    @scala.inline
-    def `-LeftStickX`: typings.reactGamepad.reactGamepadStrings.`-LeftStickX` = "-LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickX`]
+    inline def `-LeftStickX`: typings.reactGamepad.reactGamepadStrings.`-LeftStickX` = "-LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickX`]
     
-    @scala.inline
-    def `-LeftStickY`: typings.reactGamepad.reactGamepadStrings.`-LeftStickY` = "-LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickY`]
+    inline def `-LeftStickY`: typings.reactGamepad.reactGamepadStrings.`-LeftStickY` = "-LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftStickY`]
     
-    @scala.inline
-    def `-LeftTrigger`: typings.reactGamepad.reactGamepadStrings.`-LeftTrigger` = "-LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftTrigger`]
+    inline def `-LeftTrigger`: typings.reactGamepad.reactGamepadStrings.`-LeftTrigger` = "-LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-LeftTrigger`]
     
-    @scala.inline
-    def `-RightStickX`: typings.reactGamepad.reactGamepadStrings.`-RightStickX` = "-RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickX`]
+    inline def `-RightStickX`: typings.reactGamepad.reactGamepadStrings.`-RightStickX` = "-RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickX`]
     
-    @scala.inline
-    def `-RightStickY`: typings.reactGamepad.reactGamepadStrings.`-RightStickY` = "-RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickY`]
+    inline def `-RightStickY`: typings.reactGamepad.reactGamepadStrings.`-RightStickY` = "-RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightStickY`]
     
-    @scala.inline
-    def `-RightTrigger`: typings.reactGamepad.reactGamepadStrings.`-RightTrigger` = "-RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightTrigger`]
+    inline def `-RightTrigger`: typings.reactGamepad.reactGamepadStrings.`-RightTrigger` = "-RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.`-RightTrigger`]
     
-    @scala.inline
-    def LeftStickX: typings.reactGamepad.reactGamepadStrings.LeftStickX = "LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickX]
+    inline def LeftStickX: typings.reactGamepad.reactGamepadStrings.LeftStickX = "LeftStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickX]
     
-    @scala.inline
-    def LeftStickY: typings.reactGamepad.reactGamepadStrings.LeftStickY = "LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickY]
+    inline def LeftStickY: typings.reactGamepad.reactGamepadStrings.LeftStickY = "LeftStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftStickY]
     
-    @scala.inline
-    def LeftTrigger: typings.reactGamepad.reactGamepadStrings.LeftTrigger = "LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftTrigger]
+    inline def LeftTrigger: typings.reactGamepad.reactGamepadStrings.LeftTrigger = "LeftTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.LeftTrigger]
     
-    @scala.inline
-    def RightStickX: typings.reactGamepad.reactGamepadStrings.RightStickX = "RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickX]
+    inline def RightStickX: typings.reactGamepad.reactGamepadStrings.RightStickX = "RightStickX".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickX]
     
-    @scala.inline
-    def RightStickY: typings.reactGamepad.reactGamepadStrings.RightStickY = "RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickY]
+    inline def RightStickY: typings.reactGamepad.reactGamepadStrings.RightStickY = "RightStickY".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightStickY]
     
-    @scala.inline
-    def RightTrigger: typings.reactGamepad.reactGamepadStrings.RightTrigger = "RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightTrigger]
+    inline def RightTrigger: typings.reactGamepad.reactGamepadStrings.RightTrigger = "RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightTrigger]
   }
   
   trait Layout extends StObject {
@@ -238,8 +196,7 @@ object mod {
   }
   object Layout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axis: js.Array[InvertibleAxis | Null],
       buttonAxis: js.Array[InvertibleAxis | Null],
       buttons: js.Array[Button | Null]
@@ -248,26 +205,19 @@ object mod {
       __obj.asInstanceOf[Layout]
     }
     
-    @scala.inline
-    implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+    extension [Self <: Layout](x: Self) {
       
-      @scala.inline
-      def setAxis(value: js.Array[InvertibleAxis | Null]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: js.Array[InvertibleAxis | Null]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "axis", js.Array(value :_*))
+      inline def setAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "axis", js.Array(value :_*))
       
-      @scala.inline
-      def setButtonAxis(value: js.Array[InvertibleAxis | Null]): Self = StObject.set(x, "buttonAxis", value.asInstanceOf[js.Any])
+      inline def setButtonAxis(value: js.Array[InvertibleAxis | Null]): Self = StObject.set(x, "buttonAxis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "buttonAxis", js.Array(value :_*))
+      inline def setButtonAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "buttonAxis", js.Array(value :_*))
       
-      @scala.inline
-      def setButtons(value: js.Array[Button | Null]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[Button | Null]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsVarargs(value: (Button | Null)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: (Button | Null)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     }
   }
   
@@ -397,158 +347,108 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setDeadZone(value: Double): Self = StObject.set(x, "deadZone", value.asInstanceOf[js.Any])
+      inline def setDeadZone(value: Double): Self = StObject.set(x, "deadZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadZoneUndefined: Self = StObject.set(x, "deadZone", js.undefined)
+      inline def setDeadZoneUndefined: Self = StObject.set(x, "deadZone", js.undefined)
       
-      @scala.inline
-      def setGamepadIndex(value: Double): Self = StObject.set(x, "gamepadIndex", value.asInstanceOf[js.Any])
+      inline def setGamepadIndex(value: Double): Self = StObject.set(x, "gamepadIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamepadIndexUndefined: Self = StObject.set(x, "gamepadIndex", js.undefined)
+      inline def setGamepadIndexUndefined: Self = StObject.set(x, "gamepadIndex", js.undefined)
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setOnA(value: () => Unit): Self = StObject.set(x, "onA", js.Any.fromFunction0(value))
+      inline def setOnA(value: () => Unit): Self = StObject.set(x, "onA", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAUndefined: Self = StObject.set(x, "onA", js.undefined)
+      inline def setOnAUndefined: Self = StObject.set(x, "onA", js.undefined)
       
-      @scala.inline
-      def setOnAxisChange(value: (/* axisName */ Axis, /* value */ Double, /* previousValue */ Double) => Unit): Self = StObject.set(x, "onAxisChange", js.Any.fromFunction3(value))
+      inline def setOnAxisChange(value: (/* axisName */ Axis, /* value */ Double, /* previousValue */ Double) => Unit): Self = StObject.set(x, "onAxisChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnAxisChangeUndefined: Self = StObject.set(x, "onAxisChange", js.undefined)
+      inline def setOnAxisChangeUndefined: Self = StObject.set(x, "onAxisChange", js.undefined)
       
-      @scala.inline
-      def setOnB(value: () => Unit): Self = StObject.set(x, "onB", js.Any.fromFunction0(value))
+      inline def setOnB(value: () => Unit): Self = StObject.set(x, "onB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBUndefined: Self = StObject.set(x, "onB", js.undefined)
+      inline def setOnBUndefined: Self = StObject.set(x, "onB", js.undefined)
       
-      @scala.inline
-      def setOnButtonChange(value: (/* buttonName */ Button, /* pressed */ Boolean) => Unit): Self = StObject.set(x, "onButtonChange", js.Any.fromFunction2(value))
+      inline def setOnButtonChange(value: (/* buttonName */ Button, /* pressed */ Boolean) => Unit): Self = StObject.set(x, "onButtonChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnButtonChangeUndefined: Self = StObject.set(x, "onButtonChange", js.undefined)
+      inline def setOnButtonChangeUndefined: Self = StObject.set(x, "onButtonChange", js.undefined)
       
-      @scala.inline
-      def setOnButtonDown(value: /* buttonName */ Button => Unit): Self = StObject.set(x, "onButtonDown", js.Any.fromFunction1(value))
+      inline def setOnButtonDown(value: /* buttonName */ Button => Unit): Self = StObject.set(x, "onButtonDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnButtonDownUndefined: Self = StObject.set(x, "onButtonDown", js.undefined)
+      inline def setOnButtonDownUndefined: Self = StObject.set(x, "onButtonDown", js.undefined)
       
-      @scala.inline
-      def setOnButtonUp(value: /* buttonName */ Button => Unit): Self = StObject.set(x, "onButtonUp", js.Any.fromFunction1(value))
+      inline def setOnButtonUp(value: /* buttonName */ Button => Unit): Self = StObject.set(x, "onButtonUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnButtonUpUndefined: Self = StObject.set(x, "onButtonUp", js.undefined)
+      inline def setOnButtonUpUndefined: Self = StObject.set(x, "onButtonUp", js.undefined)
       
-      @scala.inline
-      def setOnConnect(value: /* gamepadIndex */ Double => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* gamepadIndex */ Double => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setOnDisconnect(value: /* gamepadIndex */ Double => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
+      inline def setOnDisconnect(value: /* gamepadIndex */ Double => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
+      inline def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
       
-      @scala.inline
-      def setOnDown(value: () => Unit): Self = StObject.set(x, "onDown", js.Any.fromFunction0(value))
+      inline def setOnDown(value: () => Unit): Self = StObject.set(x, "onDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDownUndefined: Self = StObject.set(x, "onDown", js.undefined)
+      inline def setOnDownUndefined: Self = StObject.set(x, "onDown", js.undefined)
       
-      @scala.inline
-      def setOnLB(value: () => Unit): Self = StObject.set(x, "onLB", js.Any.fromFunction0(value))
+      inline def setOnLB(value: () => Unit): Self = StObject.set(x, "onLB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLBUndefined: Self = StObject.set(x, "onLB", js.undefined)
+      inline def setOnLBUndefined: Self = StObject.set(x, "onLB", js.undefined)
       
-      @scala.inline
-      def setOnLS(value: () => Unit): Self = StObject.set(x, "onLS", js.Any.fromFunction0(value))
+      inline def setOnLS(value: () => Unit): Self = StObject.set(x, "onLS", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLSUndefined: Self = StObject.set(x, "onLS", js.undefined)
+      inline def setOnLSUndefined: Self = StObject.set(x, "onLS", js.undefined)
       
-      @scala.inline
-      def setOnLT(value: () => Unit): Self = StObject.set(x, "onLT", js.Any.fromFunction0(value))
+      inline def setOnLT(value: () => Unit): Self = StObject.set(x, "onLT", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLTUndefined: Self = StObject.set(x, "onLT", js.undefined)
+      inline def setOnLTUndefined: Self = StObject.set(x, "onLT", js.undefined)
       
-      @scala.inline
-      def setOnLeft(value: () => Unit): Self = StObject.set(x, "onLeft", js.Any.fromFunction0(value))
+      inline def setOnLeft(value: () => Unit): Self = StObject.set(x, "onLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLeftUndefined: Self = StObject.set(x, "onLeft", js.undefined)
+      inline def setOnLeftUndefined: Self = StObject.set(x, "onLeft", js.undefined)
       
-      @scala.inline
-      def setOnRB(value: () => Unit): Self = StObject.set(x, "onRB", js.Any.fromFunction0(value))
+      inline def setOnRB(value: () => Unit): Self = StObject.set(x, "onRB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRBUndefined: Self = StObject.set(x, "onRB", js.undefined)
+      inline def setOnRBUndefined: Self = StObject.set(x, "onRB", js.undefined)
       
-      @scala.inline
-      def setOnRS(value: () => Unit): Self = StObject.set(x, "onRS", js.Any.fromFunction0(value))
+      inline def setOnRS(value: () => Unit): Self = StObject.set(x, "onRS", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRSUndefined: Self = StObject.set(x, "onRS", js.undefined)
+      inline def setOnRSUndefined: Self = StObject.set(x, "onRS", js.undefined)
       
-      @scala.inline
-      def setOnRT(value: () => Unit): Self = StObject.set(x, "onRT", js.Any.fromFunction0(value))
+      inline def setOnRT(value: () => Unit): Self = StObject.set(x, "onRT", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRTUndefined: Self = StObject.set(x, "onRT", js.undefined)
+      inline def setOnRTUndefined: Self = StObject.set(x, "onRT", js.undefined)
       
-      @scala.inline
-      def setOnRight(value: () => Unit): Self = StObject.set(x, "onRight", js.Any.fromFunction0(value))
+      inline def setOnRight(value: () => Unit): Self = StObject.set(x, "onRight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRightUndefined: Self = StObject.set(x, "onRight", js.undefined)
+      inline def setOnRightUndefined: Self = StObject.set(x, "onRight", js.undefined)
       
-      @scala.inline
-      def setOnUp(value: () => Unit): Self = StObject.set(x, "onUp", js.Any.fromFunction0(value))
+      inline def setOnUp(value: () => Unit): Self = StObject.set(x, "onUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUpUndefined: Self = StObject.set(x, "onUp", js.undefined)
+      inline def setOnUpUndefined: Self = StObject.set(x, "onUp", js.undefined)
       
-      @scala.inline
-      def setOnX(value: () => Unit): Self = StObject.set(x, "onX", js.Any.fromFunction0(value))
+      inline def setOnX(value: () => Unit): Self = StObject.set(x, "onX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnXUndefined: Self = StObject.set(x, "onX", js.undefined)
+      inline def setOnXUndefined: Self = StObject.set(x, "onX", js.undefined)
       
-      @scala.inline
-      def setOnY(value: () => Unit): Self = StObject.set(x, "onY", js.Any.fromFunction0(value))
+      inline def setOnY(value: () => Unit): Self = StObject.set(x, "onY", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnYUndefined: Self = StObject.set(x, "onY", js.undefined)
+      inline def setOnYUndefined: Self = StObject.set(x, "onY", js.undefined)
       
-      @scala.inline
-      def setStickThreshold(value: Double): Self = StObject.set(x, "stickThreshold", value.asInstanceOf[js.Any])
+      inline def setStickThreshold(value: Double): Self = StObject.set(x, "stickThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickThresholdUndefined: Self = StObject.set(x, "stickThreshold", js.undefined)
+      inline def setStickThresholdUndefined: Self = StObject.set(x, "stickThreshold", js.undefined)
     }
   }
 }

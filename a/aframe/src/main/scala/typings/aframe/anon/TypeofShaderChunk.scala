@@ -236,8 +236,7 @@ trait TypeofShaderChunk extends StObject {
 }
 object TypeofShaderChunk {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alphamap_fragment: String,
     alphamap_pars_fragment: String,
     alphatest_fragment: String,
@@ -357,349 +356,234 @@ object TypeofShaderChunk {
     __obj.asInstanceOf[TypeofShaderChunk]
   }
   
-  @scala.inline
-  implicit class TypeofShaderChunkMutableBuilder[Self <: TypeofShaderChunk] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofShaderChunk](x: Self) {
     
-    @scala.inline
-    def setAlphamap_fragment(value: String): Self = StObject.set(x, "alphamap_fragment", value.asInstanceOf[js.Any])
+    inline def setAlphamap_fragment(value: String): Self = StObject.set(x, "alphamap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphamap_pars_fragment(value: String): Self = StObject.set(x, "alphamap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setAlphamap_pars_fragment(value: String): Self = StObject.set(x, "alphamap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphatest_fragment(value: String): Self = StObject.set(x, "alphatest_fragment", value.asInstanceOf[js.Any])
+    inline def setAlphatest_fragment(value: String): Self = StObject.set(x, "alphatest_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAomap_fragment(value: String): Self = StObject.set(x, "aomap_fragment", value.asInstanceOf[js.Any])
+    inline def setAomap_fragment(value: String): Self = StObject.set(x, "aomap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAomap_pars_fragment(value: String): Self = StObject.set(x, "aomap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setAomap_pars_fragment(value: String): Self = StObject.set(x, "aomap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBegin_vertex(value: String): Self = StObject.set(x, "begin_vertex", value.asInstanceOf[js.Any])
+    inline def setBegin_vertex(value: String): Self = StObject.set(x, "begin_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginnormal_vertex(value: String): Self = StObject.set(x, "beginnormal_vertex", value.asInstanceOf[js.Any])
+    inline def setBeginnormal_vertex(value: String): Self = StObject.set(x, "beginnormal_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBsdfs(value: String): Self = StObject.set(x, "bsdfs", value.asInstanceOf[js.Any])
+    inline def setBsdfs(value: String): Self = StObject.set(x, "bsdfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBumpmap_pars_fragment(value: String): Self = StObject.set(x, "bumpmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setBumpmap_pars_fragment(value: String): Self = StObject.set(x, "bumpmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearcoat_normal_fragment_begin(value: String): Self = StObject.set(x, "clearcoat_normal_fragment_begin", value.asInstanceOf[js.Any])
+    inline def setClearcoat_normal_fragment_begin(value: String): Self = StObject.set(x, "clearcoat_normal_fragment_begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearcoat_normal_fragment_maps(value: String): Self = StObject.set(x, "clearcoat_normal_fragment_maps", value.asInstanceOf[js.Any])
+    inline def setClearcoat_normal_fragment_maps(value: String): Self = StObject.set(x, "clearcoat_normal_fragment_maps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearcoat_pars_fragment(value: String): Self = StObject.set(x, "clearcoat_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setClearcoat_pars_fragment(value: String): Self = StObject.set(x, "clearcoat_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipping_planes_fragment(value: String): Self = StObject.set(x, "clipping_planes_fragment", value.asInstanceOf[js.Any])
+    inline def setClipping_planes_fragment(value: String): Self = StObject.set(x, "clipping_planes_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipping_planes_pars_fragment(value: String): Self = StObject.set(x, "clipping_planes_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setClipping_planes_pars_fragment(value: String): Self = StObject.set(x, "clipping_planes_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipping_planes_pars_vertex(value: String): Self = StObject.set(x, "clipping_planes_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setClipping_planes_pars_vertex(value: String): Self = StObject.set(x, "clipping_planes_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipping_planes_vertex(value: String): Self = StObject.set(x, "clipping_planes_vertex", value.asInstanceOf[js.Any])
+    inline def setClipping_planes_vertex(value: String): Self = StObject.set(x, "clipping_planes_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor_fragment(value: String): Self = StObject.set(x, "color_fragment", value.asInstanceOf[js.Any])
+    inline def setColor_fragment(value: String): Self = StObject.set(x, "color_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor_pars_fragment(value: String): Self = StObject.set(x, "color_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setColor_pars_fragment(value: String): Self = StObject.set(x, "color_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor_pars_vertex(value: String): Self = StObject.set(x, "color_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setColor_pars_vertex(value: String): Self = StObject.set(x, "color_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor_vertex(value: String): Self = StObject.set(x, "color_vertex", value.asInstanceOf[js.Any])
+    inline def setColor_vertex(value: String): Self = StObject.set(x, "color_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommon(value: String): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: String): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCube_frag(value: String): Self = StObject.set(x, "cube_frag", value.asInstanceOf[js.Any])
+    inline def setCube_frag(value: String): Self = StObject.set(x, "cube_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCube_uv_reflection_fragment(value: String): Self = StObject.set(x, "cube_uv_reflection_fragment", value.asInstanceOf[js.Any])
+    inline def setCube_uv_reflection_fragment(value: String): Self = StObject.set(x, "cube_uv_reflection_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCube_vert(value: String): Self = StObject.set(x, "cube_vert", value.asInstanceOf[js.Any])
+    inline def setCube_vert(value: String): Self = StObject.set(x, "cube_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultnormal_vertex(value: String): Self = StObject.set(x, "defaultnormal_vertex", value.asInstanceOf[js.Any])
+    inline def setDefaultnormal_vertex(value: String): Self = StObject.set(x, "defaultnormal_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth_frag(value: String): Self = StObject.set(x, "depth_frag", value.asInstanceOf[js.Any])
+    inline def setDepth_frag(value: String): Self = StObject.set(x, "depth_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth_vert(value: String): Self = StObject.set(x, "depth_vert", value.asInstanceOf[js.Any])
+    inline def setDepth_vert(value: String): Self = StObject.set(x, "depth_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplacementmap_pars_vertex(value: String): Self = StObject.set(x, "displacementmap_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setDisplacementmap_pars_vertex(value: String): Self = StObject.set(x, "displacementmap_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplacementmap_vertex(value: String): Self = StObject.set(x, "displacementmap_vertex", value.asInstanceOf[js.Any])
+    inline def setDisplacementmap_vertex(value: String): Self = StObject.set(x, "displacementmap_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceRGBA_frag(value: String): Self = StObject.set(x, "distanceRGBA_frag", value.asInstanceOf[js.Any])
+    inline def setDistanceRGBA_frag(value: String): Self = StObject.set(x, "distanceRGBA_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceRGBA_vert(value: String): Self = StObject.set(x, "distanceRGBA_vert", value.asInstanceOf[js.Any])
+    inline def setDistanceRGBA_vert(value: String): Self = StObject.set(x, "distanceRGBA_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmissivemap_fragment(value: String): Self = StObject.set(x, "emissivemap_fragment", value.asInstanceOf[js.Any])
+    inline def setEmissivemap_fragment(value: String): Self = StObject.set(x, "emissivemap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmissivemap_pars_fragment(value: String): Self = StObject.set(x, "emissivemap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setEmissivemap_pars_fragment(value: String): Self = StObject.set(x, "emissivemap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodings_fragment(value: String): Self = StObject.set(x, "encodings_fragment", value.asInstanceOf[js.Any])
+    inline def setEncodings_fragment(value: String): Self = StObject.set(x, "encodings_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodings_pars_fragment(value: String): Self = StObject.set(x, "encodings_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setEncodings_pars_fragment(value: String): Self = StObject.set(x, "encodings_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvmap_common_pars_fragment(value: String): Self = StObject.set(x, "envmap_common_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setEnvmap_common_pars_fragment(value: String): Self = StObject.set(x, "envmap_common_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvmap_fragment(value: String): Self = StObject.set(x, "envmap_fragment", value.asInstanceOf[js.Any])
+    inline def setEnvmap_fragment(value: String): Self = StObject.set(x, "envmap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvmap_pars_fragment(value: String): Self = StObject.set(x, "envmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setEnvmap_pars_fragment(value: String): Self = StObject.set(x, "envmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvmap_pars_vertex(value: String): Self = StObject.set(x, "envmap_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setEnvmap_pars_vertex(value: String): Self = StObject.set(x, "envmap_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvmap_physical_pars_fragment(value: String): Self = StObject.set(x, "envmap_physical_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setEnvmap_physical_pars_fragment(value: String): Self = StObject.set(x, "envmap_physical_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvmap_vertex(value: String): Self = StObject.set(x, "envmap_vertex", value.asInstanceOf[js.Any])
+    inline def setEnvmap_vertex(value: String): Self = StObject.set(x, "envmap_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquirect_frag(value: String): Self = StObject.set(x, "equirect_frag", value.asInstanceOf[js.Any])
+    inline def setEquirect_frag(value: String): Self = StObject.set(x, "equirect_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquirect_vert(value: String): Self = StObject.set(x, "equirect_vert", value.asInstanceOf[js.Any])
+    inline def setEquirect_vert(value: String): Self = StObject.set(x, "equirect_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFog_fragment(value: String): Self = StObject.set(x, "fog_fragment", value.asInstanceOf[js.Any])
+    inline def setFog_fragment(value: String): Self = StObject.set(x, "fog_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFog_pars_fragment(value: String): Self = StObject.set(x, "fog_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setFog_pars_fragment(value: String): Self = StObject.set(x, "fog_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightmap_fragment(value: String): Self = StObject.set(x, "lightmap_fragment", value.asInstanceOf[js.Any])
+    inline def setLightmap_fragment(value: String): Self = StObject.set(x, "lightmap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightmap_pars_fragment(value: String): Self = StObject.set(x, "lightmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setLightmap_pars_fragment(value: String): Self = StObject.set(x, "lightmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_fragment_begin(value: String): Self = StObject.set(x, "lights_fragment_begin", value.asInstanceOf[js.Any])
+    inline def setLights_fragment_begin(value: String): Self = StObject.set(x, "lights_fragment_begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_fragment_end(value: String): Self = StObject.set(x, "lights_fragment_end", value.asInstanceOf[js.Any])
+    inline def setLights_fragment_end(value: String): Self = StObject.set(x, "lights_fragment_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_fragment_maps(value: String): Self = StObject.set(x, "lights_fragment_maps", value.asInstanceOf[js.Any])
+    inline def setLights_fragment_maps(value: String): Self = StObject.set(x, "lights_fragment_maps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_lambert_vertex(value: String): Self = StObject.set(x, "lights_lambert_vertex", value.asInstanceOf[js.Any])
+    inline def setLights_lambert_vertex(value: String): Self = StObject.set(x, "lights_lambert_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_pars_begin(value: String): Self = StObject.set(x, "lights_pars_begin", value.asInstanceOf[js.Any])
+    inline def setLights_pars_begin(value: String): Self = StObject.set(x, "lights_pars_begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_pars_map(value: String): Self = StObject.set(x, "lights_pars_map", value.asInstanceOf[js.Any])
+    inline def setLights_pars_map(value: String): Self = StObject.set(x, "lights_pars_map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_phong_fragment(value: String): Self = StObject.set(x, "lights_phong_fragment", value.asInstanceOf[js.Any])
+    inline def setLights_phong_fragment(value: String): Self = StObject.set(x, "lights_phong_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_phong_pars_fragment(value: String): Self = StObject.set(x, "lights_phong_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setLights_phong_pars_fragment(value: String): Self = StObject.set(x, "lights_phong_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_physical_fragment(value: String): Self = StObject.set(x, "lights_physical_fragment", value.asInstanceOf[js.Any])
+    inline def setLights_physical_fragment(value: String): Self = StObject.set(x, "lights_physical_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights_physical_pars_fragment(value: String): Self = StObject.set(x, "lights_physical_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setLights_physical_pars_fragment(value: String): Self = StObject.set(x, "lights_physical_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinedashed_frag(value: String): Self = StObject.set(x, "linedashed_frag", value.asInstanceOf[js.Any])
+    inline def setLinedashed_frag(value: String): Self = StObject.set(x, "linedashed_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinedashed_vert(value: String): Self = StObject.set(x, "linedashed_vert", value.asInstanceOf[js.Any])
+    inline def setLinedashed_vert(value: String): Self = StObject.set(x, "linedashed_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogdepthbuf_fragment(value: String): Self = StObject.set(x, "logdepthbuf_fragment", value.asInstanceOf[js.Any])
+    inline def setLogdepthbuf_fragment(value: String): Self = StObject.set(x, "logdepthbuf_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogdepthbuf_pars_fragment(value: String): Self = StObject.set(x, "logdepthbuf_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setLogdepthbuf_pars_fragment(value: String): Self = StObject.set(x, "logdepthbuf_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogdepthbuf_pars_vertex(value: String): Self = StObject.set(x, "logdepthbuf_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setLogdepthbuf_pars_vertex(value: String): Self = StObject.set(x, "logdepthbuf_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogdepthbuf_vertex(value: String): Self = StObject.set(x, "logdepthbuf_vertex", value.asInstanceOf[js.Any])
+    inline def setLogdepthbuf_vertex(value: String): Self = StObject.set(x, "logdepthbuf_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap_fragment(value: String): Self = StObject.set(x, "map_fragment", value.asInstanceOf[js.Any])
+    inline def setMap_fragment(value: String): Self = StObject.set(x, "map_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap_pars_fragment(value: String): Self = StObject.set(x, "map_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setMap_pars_fragment(value: String): Self = StObject.set(x, "map_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap_particle_fragment(value: String): Self = StObject.set(x, "map_particle_fragment", value.asInstanceOf[js.Any])
+    inline def setMap_particle_fragment(value: String): Self = StObject.set(x, "map_particle_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap_particle_pars_fragment(value: String): Self = StObject.set(x, "map_particle_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setMap_particle_pars_fragment(value: String): Self = StObject.set(x, "map_particle_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshbasic_frag(value: String): Self = StObject.set(x, "meshbasic_frag", value.asInstanceOf[js.Any])
+    inline def setMeshbasic_frag(value: String): Self = StObject.set(x, "meshbasic_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshbasic_vert(value: String): Self = StObject.set(x, "meshbasic_vert", value.asInstanceOf[js.Any])
+    inline def setMeshbasic_vert(value: String): Self = StObject.set(x, "meshbasic_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshlambert_frag(value: String): Self = StObject.set(x, "meshlambert_frag", value.asInstanceOf[js.Any])
+    inline def setMeshlambert_frag(value: String): Self = StObject.set(x, "meshlambert_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshlambert_vert(value: String): Self = StObject.set(x, "meshlambert_vert", value.asInstanceOf[js.Any])
+    inline def setMeshlambert_vert(value: String): Self = StObject.set(x, "meshlambert_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshphong_frag(value: String): Self = StObject.set(x, "meshphong_frag", value.asInstanceOf[js.Any])
+    inline def setMeshphong_frag(value: String): Self = StObject.set(x, "meshphong_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshphong_vert(value: String): Self = StObject.set(x, "meshphong_vert", value.asInstanceOf[js.Any])
+    inline def setMeshphong_vert(value: String): Self = StObject.set(x, "meshphong_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshphysical_frag(value: String): Self = StObject.set(x, "meshphysical_frag", value.asInstanceOf[js.Any])
+    inline def setMeshphysical_frag(value: String): Self = StObject.set(x, "meshphysical_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshphysical_vert(value: String): Self = StObject.set(x, "meshphysical_vert", value.asInstanceOf[js.Any])
+    inline def setMeshphysical_vert(value: String): Self = StObject.set(x, "meshphysical_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetalnessmap_fragment(value: String): Self = StObject.set(x, "metalnessmap_fragment", value.asInstanceOf[js.Any])
+    inline def setMetalnessmap_fragment(value: String): Self = StObject.set(x, "metalnessmap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetalnessmap_pars_fragment(value: String): Self = StObject.set(x, "metalnessmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setMetalnessmap_pars_fragment(value: String): Self = StObject.set(x, "metalnessmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMorphnormal_vertex(value: String): Self = StObject.set(x, "morphnormal_vertex", value.asInstanceOf[js.Any])
+    inline def setMorphnormal_vertex(value: String): Self = StObject.set(x, "morphnormal_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMorphtarget_pars_vertex(value: String): Self = StObject.set(x, "morphtarget_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setMorphtarget_pars_vertex(value: String): Self = StObject.set(x, "morphtarget_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMorphtarget_vertex(value: String): Self = StObject.set(x, "morphtarget_vertex", value.asInstanceOf[js.Any])
+    inline def setMorphtarget_vertex(value: String): Self = StObject.set(x, "morphtarget_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal_flip(value: String): Self = StObject.set(x, "normal_flip", value.asInstanceOf[js.Any])
+    inline def setNormal_flip(value: String): Self = StObject.set(x, "normal_flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal_frag(value: String): Self = StObject.set(x, "normal_frag", value.asInstanceOf[js.Any])
+    inline def setNormal_frag(value: String): Self = StObject.set(x, "normal_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal_fragment_begin(value: String): Self = StObject.set(x, "normal_fragment_begin", value.asInstanceOf[js.Any])
+    inline def setNormal_fragment_begin(value: String): Self = StObject.set(x, "normal_fragment_begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal_fragment_maps(value: String): Self = StObject.set(x, "normal_fragment_maps", value.asInstanceOf[js.Any])
+    inline def setNormal_fragment_maps(value: String): Self = StObject.set(x, "normal_fragment_maps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal_vert(value: String): Self = StObject.set(x, "normal_vert", value.asInstanceOf[js.Any])
+    inline def setNormal_vert(value: String): Self = StObject.set(x, "normal_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalmap_pars_fragment(value: String): Self = StObject.set(x, "normalmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setNormalmap_pars_fragment(value: String): Self = StObject.set(x, "normalmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacking(value: String): Self = StObject.set(x, "packing", value.asInstanceOf[js.Any])
+    inline def setPacking(value: String): Self = StObject.set(x, "packing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints_frag(value: String): Self = StObject.set(x, "points_frag", value.asInstanceOf[js.Any])
+    inline def setPoints_frag(value: String): Self = StObject.set(x, "points_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints_vert(value: String): Self = StObject.set(x, "points_vert", value.asInstanceOf[js.Any])
+    inline def setPoints_vert(value: String): Self = StObject.set(x, "points_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPremultiplied_alpha_fragment(value: String): Self = StObject.set(x, "premultiplied_alpha_fragment", value.asInstanceOf[js.Any])
+    inline def setPremultiplied_alpha_fragment(value: String): Self = StObject.set(x, "premultiplied_alpha_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject_vertex(value: String): Self = StObject.set(x, "project_vertex", value.asInstanceOf[js.Any])
+    inline def setProject_vertex(value: String): Self = StObject.set(x, "project_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoughnessmap_fragment(value: String): Self = StObject.set(x, "roughnessmap_fragment", value.asInstanceOf[js.Any])
+    inline def setRoughnessmap_fragment(value: String): Self = StObject.set(x, "roughnessmap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoughnessmap_pars_fragment(value: String): Self = StObject.set(x, "roughnessmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setRoughnessmap_pars_fragment(value: String): Self = StObject.set(x, "roughnessmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow_frag(value: String): Self = StObject.set(x, "shadow_frag", value.asInstanceOf[js.Any])
+    inline def setShadow_frag(value: String): Self = StObject.set(x, "shadow_frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow_vert(value: String): Self = StObject.set(x, "shadow_vert", value.asInstanceOf[js.Any])
+    inline def setShadow_vert(value: String): Self = StObject.set(x, "shadow_vert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowmap_pars_fragment(value: String): Self = StObject.set(x, "shadowmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setShadowmap_pars_fragment(value: String): Self = StObject.set(x, "shadowmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowmap_pars_vertex(value: String): Self = StObject.set(x, "shadowmap_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setShadowmap_pars_vertex(value: String): Self = StObject.set(x, "shadowmap_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowmap_vertex(value: String): Self = StObject.set(x, "shadowmap_vertex", value.asInstanceOf[js.Any])
+    inline def setShadowmap_vertex(value: String): Self = StObject.set(x, "shadowmap_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowmask_pars_fragment(value: String): Self = StObject.set(x, "shadowmask_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setShadowmask_pars_fragment(value: String): Self = StObject.set(x, "shadowmask_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinbase_vertex(value: String): Self = StObject.set(x, "skinbase_vertex", value.asInstanceOf[js.Any])
+    inline def setSkinbase_vertex(value: String): Self = StObject.set(x, "skinbase_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinning_pars_vertex(value: String): Self = StObject.set(x, "skinning_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setSkinning_pars_vertex(value: String): Self = StObject.set(x, "skinning_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinning_vertex(value: String): Self = StObject.set(x, "skinning_vertex", value.asInstanceOf[js.Any])
+    inline def setSkinning_vertex(value: String): Self = StObject.set(x, "skinning_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinnormal_vertex(value: String): Self = StObject.set(x, "skinnormal_vertex", value.asInstanceOf[js.Any])
+    inline def setSkinnormal_vertex(value: String): Self = StObject.set(x, "skinnormal_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecularmap_fragment(value: String): Self = StObject.set(x, "specularmap_fragment", value.asInstanceOf[js.Any])
+    inline def setSpecularmap_fragment(value: String): Self = StObject.set(x, "specularmap_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecularmap_pars_fragment(value: String): Self = StObject.set(x, "specularmap_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setSpecularmap_pars_fragment(value: String): Self = StObject.set(x, "specularmap_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTonemapping_fragment(value: String): Self = StObject.set(x, "tonemapping_fragment", value.asInstanceOf[js.Any])
+    inline def setTonemapping_fragment(value: String): Self = StObject.set(x, "tonemapping_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTonemapping_pars_fragment(value: String): Self = StObject.set(x, "tonemapping_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setTonemapping_pars_fragment(value: String): Self = StObject.set(x, "tonemapping_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUv2_pars_fragment(value: String): Self = StObject.set(x, "uv2_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setUv2_pars_fragment(value: String): Self = StObject.set(x, "uv2_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUv2_pars_vertex(value: String): Self = StObject.set(x, "uv2_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setUv2_pars_vertex(value: String): Self = StObject.set(x, "uv2_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUv2_vertex(value: String): Self = StObject.set(x, "uv2_vertex", value.asInstanceOf[js.Any])
+    inline def setUv2_vertex(value: String): Self = StObject.set(x, "uv2_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUv_pars_fragment(value: String): Self = StObject.set(x, "uv_pars_fragment", value.asInstanceOf[js.Any])
+    inline def setUv_pars_fragment(value: String): Self = StObject.set(x, "uv_pars_fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUv_pars_vertex(value: String): Self = StObject.set(x, "uv_pars_vertex", value.asInstanceOf[js.Any])
+    inline def setUv_pars_vertex(value: String): Self = StObject.set(x, "uv_pars_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUv_vertex(value: String): Self = StObject.set(x, "uv_vertex", value.asInstanceOf[js.Any])
+    inline def setUv_vertex(value: String): Self = StObject.set(x, "uv_vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldpos_vertex(value: String): Self = StObject.set(x, "worldpos_vertex", value.asInstanceOf[js.Any])
+    inline def setWorldpos_vertex(value: String): Self = StObject.set(x, "worldpos_vertex", value.asInstanceOf[js.Any])
   }
 }

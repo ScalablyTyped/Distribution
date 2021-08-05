@@ -10,16 +10,13 @@ trait Viewprogresss extends StObject {
 }
 object Viewprogresss {
   
-  @scala.inline
-  def apply(view_progress_s: Double): Viewprogresss = {
+  inline def apply(view_progress_s: Double): Viewprogresss = {
     val __obj = js.Dynamic.literal(view_progress_s = view_progress_s.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewprogresss]
   }
   
-  @scala.inline
-  implicit class ViewprogresssMutableBuilder[Self <: Viewprogresss] (val x: Self) extends AnyVal {
+  extension [Self <: Viewprogresss](x: Self) {
     
-    @scala.inline
-    def setView_progress_s(value: Double): Self = StObject.set(x, "view_progress_s", value.asInstanceOf[js.Any])
+    inline def setView_progress_s(value: Double): Self = StObject.set(x, "view_progress_s", value.asInstanceOf[js.Any])
   }
 }

@@ -52,68 +52,48 @@ object mod extends Shortcut {
       }
       object FileResizeOptions {
         
-        @scala.inline
-        def apply(): FileResizeOptions = {
+        inline def apply(): FileResizeOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[FileResizeOptions]
         }
         
-        @scala.inline
-        implicit class FileResizeOptionsMutableBuilder[Self <: FileResizeOptions] (val x: Self) extends AnyVal {
+        extension [Self <: FileResizeOptions](x: Self) {
           
-          @scala.inline
-          def setCenterCrop(value: Boolean): Self = StObject.set(x, "centerCrop", value.asInstanceOf[js.Any])
+          inline def setCenterCrop(value: Boolean): Self = StObject.set(x, "centerCrop", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCenterCropUndefined: Self = StObject.set(x, "centerCrop", js.undefined)
+          inline def setCenterCropUndefined: Self = StObject.set(x, "centerCrop", js.undefined)
           
-          @scala.inline
-          def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+          inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
           
-          @scala.inline
-          def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+          inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+          inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
           
-          @scala.inline
-          def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+          inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+          inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
           
-          @scala.inline
-          def setRatio(value: Double | String): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+          inline def setRatio(value: Double | String): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+          inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
           
-          @scala.inline
-          def setResizeIf(value: (/* width */ Double, /* height */ Double) => Boolean): Self = StObject.set(x, "resizeIf", js.Any.fromFunction2(value))
+          inline def setResizeIf(value: (/* width */ Double, /* height */ Double) => Boolean): Self = StObject.set(x, "resizeIf", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setResizeIfUndefined: Self = StObject.set(x, "resizeIf", js.undefined)
+          inline def setResizeIfUndefined: Self = StObject.set(x, "resizeIf", js.undefined)
           
-          @scala.inline
-          def setRestoreExif(value: Boolean): Self = StObject.set(x, "restoreExif", value.asInstanceOf[js.Any])
+          inline def setRestoreExif(value: Boolean): Self = StObject.set(x, "restoreExif", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRestoreExifUndefined: Self = StObject.set(x, "restoreExif", js.undefined)
+          inline def setRestoreExifUndefined: Self = StObject.set(x, "restoreExif", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
           
-          @scala.inline
-          def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+          inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         }
       }
       
@@ -213,104 +193,72 @@ object mod extends Shortcut {
       }
       object FileUploadOptions {
         
-        @scala.inline
-        def apply(): FileUploadOptions = {
+        inline def apply(): FileUploadOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[FileUploadOptions]
         }
         
-        @scala.inline
-        implicit class FileUploadOptionsMutableBuilder[Self <: FileUploadOptions] (val x: Self) extends AnyVal {
+        extension [Self <: FileUploadOptions](x: Self) {
           
-          @scala.inline
-          def setNgfAccept(value: String): Self = StObject.set(x, "ngfAccept", value.asInstanceOf[js.Any])
+          inline def setNgfAccept(value: String): Self = StObject.set(x, "ngfAccept", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfAcceptUndefined: Self = StObject.set(x, "ngfAccept", js.undefined)
+          inline def setNgfAcceptUndefined: Self = StObject.set(x, "ngfAccept", js.undefined)
           
-          @scala.inline
-          def setNgfAllowDir(value: Boolean): Self = StObject.set(x, "ngfAllowDir", value.asInstanceOf[js.Any])
+          inline def setNgfAllowDir(value: Boolean): Self = StObject.set(x, "ngfAllowDir", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfAllowDirUndefined: Self = StObject.set(x, "ngfAllowDir", js.undefined)
+          inline def setNgfAllowDirUndefined: Self = StObject.set(x, "ngfAllowDir", js.undefined)
           
-          @scala.inline
-          def setNgfEnableFirefoxPaste(value: Boolean): Self = StObject.set(x, "ngfEnableFirefoxPaste", value.asInstanceOf[js.Any])
+          inline def setNgfEnableFirefoxPaste(value: Boolean): Self = StObject.set(x, "ngfEnableFirefoxPaste", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfEnableFirefoxPasteUndefined: Self = StObject.set(x, "ngfEnableFirefoxPaste", js.undefined)
+          inline def setNgfEnableFirefoxPasteUndefined: Self = StObject.set(x, "ngfEnableFirefoxPaste", js.undefined)
           
-          @scala.inline
-          def setNgfHideOnDropNotAvailable(value: Boolean): Self = StObject.set(x, "ngfHideOnDropNotAvailable", value.asInstanceOf[js.Any])
+          inline def setNgfHideOnDropNotAvailable(value: Boolean): Self = StObject.set(x, "ngfHideOnDropNotAvailable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfHideOnDropNotAvailableUndefined: Self = StObject.set(x, "ngfHideOnDropNotAvailable", js.undefined)
+          inline def setNgfHideOnDropNotAvailableUndefined: Self = StObject.set(x, "ngfHideOnDropNotAvailable", js.undefined)
           
-          @scala.inline
-          def setNgfMaxDuration(value: Double | String): Self = StObject.set(x, "ngfMaxDuration", value.asInstanceOf[js.Any])
+          inline def setNgfMaxDuration(value: Double | String): Self = StObject.set(x, "ngfMaxDuration", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMaxDurationUndefined: Self = StObject.set(x, "ngfMaxDuration", js.undefined)
+          inline def setNgfMaxDurationUndefined: Self = StObject.set(x, "ngfMaxDuration", js.undefined)
           
-          @scala.inline
-          def setNgfMaxFiles(value: Double): Self = StObject.set(x, "ngfMaxFiles", value.asInstanceOf[js.Any])
+          inline def setNgfMaxFiles(value: Double): Self = StObject.set(x, "ngfMaxFiles", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMaxFilesUndefined: Self = StObject.set(x, "ngfMaxFiles", js.undefined)
+          inline def setNgfMaxFilesUndefined: Self = StObject.set(x, "ngfMaxFiles", js.undefined)
           
-          @scala.inline
-          def setNgfMaxSize(value: Double | String): Self = StObject.set(x, "ngfMaxSize", value.asInstanceOf[js.Any])
+          inline def setNgfMaxSize(value: Double | String): Self = StObject.set(x, "ngfMaxSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMaxSizeUndefined: Self = StObject.set(x, "ngfMaxSize", js.undefined)
+          inline def setNgfMaxSizeUndefined: Self = StObject.set(x, "ngfMaxSize", js.undefined)
           
-          @scala.inline
-          def setNgfMaxTotalSize(value: Double | String): Self = StObject.set(x, "ngfMaxTotalSize", value.asInstanceOf[js.Any])
+          inline def setNgfMaxTotalSize(value: Double | String): Self = StObject.set(x, "ngfMaxTotalSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMaxTotalSizeUndefined: Self = StObject.set(x, "ngfMaxTotalSize", js.undefined)
+          inline def setNgfMaxTotalSizeUndefined: Self = StObject.set(x, "ngfMaxTotalSize", js.undefined)
           
-          @scala.inline
-          def setNgfMinDuration(value: Double | String): Self = StObject.set(x, "ngfMinDuration", value.asInstanceOf[js.Any])
+          inline def setNgfMinDuration(value: Double | String): Self = StObject.set(x, "ngfMinDuration", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMinDurationUndefined: Self = StObject.set(x, "ngfMinDuration", js.undefined)
+          inline def setNgfMinDurationUndefined: Self = StObject.set(x, "ngfMinDuration", js.undefined)
           
-          @scala.inline
-          def setNgfMinRatio(value: Double | String): Self = StObject.set(x, "ngfMinRatio", value.asInstanceOf[js.Any])
+          inline def setNgfMinRatio(value: Double | String): Self = StObject.set(x, "ngfMinRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMinRatioUndefined: Self = StObject.set(x, "ngfMinRatio", js.undefined)
+          inline def setNgfMinRatioUndefined: Self = StObject.set(x, "ngfMinRatio", js.undefined)
           
-          @scala.inline
-          def setNgfMinSize(value: Double | String): Self = StObject.set(x, "ngfMinSize", value.asInstanceOf[js.Any])
+          inline def setNgfMinSize(value: Double | String): Self = StObject.set(x, "ngfMinSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMinSizeUndefined: Self = StObject.set(x, "ngfMinSize", js.undefined)
+          inline def setNgfMinSizeUndefined: Self = StObject.set(x, "ngfMinSize", js.undefined)
           
-          @scala.inline
-          def setNgfMultiple(value: Boolean): Self = StObject.set(x, "ngfMultiple", value.asInstanceOf[js.Any])
+          inline def setNgfMultiple(value: Boolean): Self = StObject.set(x, "ngfMultiple", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfMultipleUndefined: Self = StObject.set(x, "ngfMultiple", js.undefined)
+          inline def setNgfMultipleUndefined: Self = StObject.set(x, "ngfMultiple", js.undefined)
           
-          @scala.inline
-          def setNgfRatio(value: String): Self = StObject.set(x, "ngfRatio", value.asInstanceOf[js.Any])
+          inline def setNgfRatio(value: String): Self = StObject.set(x, "ngfRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfRatioUndefined: Self = StObject.set(x, "ngfRatio", js.undefined)
+          inline def setNgfRatioUndefined: Self = StObject.set(x, "ngfRatio", js.undefined)
           
-          @scala.inline
-          def setNgfStopPropagation(value: Boolean): Self = StObject.set(x, "ngfStopPropagation", value.asInstanceOf[js.Any])
+          inline def setNgfStopPropagation(value: Boolean): Self = StObject.set(x, "ngfStopPropagation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfStopPropagationUndefined: Self = StObject.set(x, "ngfStopPropagation", js.undefined)
+          inline def setNgfStopPropagationUndefined: Self = StObject.set(x, "ngfStopPropagation", js.undefined)
           
-          @scala.inline
-          def setNgfValidateForce(value: Boolean): Self = StObject.set(x, "ngfValidateForce", value.asInstanceOf[js.Any])
+          inline def setNgfValidateForce(value: Boolean): Self = StObject.set(x, "ngfValidateForce", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNgfValidateForceUndefined: Self = StObject.set(x, "ngfValidateForce", js.undefined)
+          inline def setNgfValidateForceUndefined: Self = StObject.set(x, "ngfValidateForce", js.undefined)
         }
       }
       
@@ -375,56 +323,40 @@ object mod extends Shortcut {
       }
       object IFileUploadConfigFile {
         
-        @scala.inline
-        def apply(method: String, url: String): IFileUploadConfigFile = {
+        inline def apply(method: String, url: String): IFileUploadConfigFile = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
           __obj.asInstanceOf[IFileUploadConfigFile]
         }
         
-        @scala.inline
-        implicit class IFileUploadConfigFileMutableBuilder[Self <: IFileUploadConfigFile] (val x: Self) extends AnyVal {
+        extension [Self <: IFileUploadConfigFile](x: Self) {
           
-          @scala.inline
-          def setArrayKey(value: String): Self = StObject.set(x, "arrayKey", value.asInstanceOf[js.Any])
+          inline def setArrayKey(value: String): Self = StObject.set(x, "arrayKey", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setArrayKeyUndefined: Self = StObject.set(x, "arrayKey", js.undefined)
+          inline def setArrayKeyUndefined: Self = StObject.set(x, "arrayKey", js.undefined)
           
-          @scala.inline
-          def setDisableProgress(value: Boolean): Self = StObject.set(x, "disableProgress", value.asInstanceOf[js.Any])
+          inline def setDisableProgress(value: Boolean): Self = StObject.set(x, "disableProgress", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisableProgressUndefined: Self = StObject.set(x, "disableProgress", js.undefined)
+          inline def setDisableProgressUndefined: Self = StObject.set(x, "disableProgress", js.undefined)
           
-          @scala.inline
-          def setObjectKey(value: String): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
+          inline def setObjectKey(value: String): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setObjectKeyUndefined: Self = StObject.set(x, "objectKey", js.undefined)
+          inline def setObjectKeyUndefined: Self = StObject.set(x, "objectKey", js.undefined)
           
-          @scala.inline
-          def setResumeChunkSize(value: Double | String): Self = StObject.set(x, "resumeChunkSize", value.asInstanceOf[js.Any])
+          inline def setResumeChunkSize(value: Double | String): Self = StObject.set(x, "resumeChunkSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResumeChunkSizeUndefined: Self = StObject.set(x, "resumeChunkSize", js.undefined)
+          inline def setResumeChunkSizeUndefined: Self = StObject.set(x, "resumeChunkSize", js.undefined)
           
-          @scala.inline
-          def setResumeSize(value: Function): Self = StObject.set(x, "resumeSize", value.asInstanceOf[js.Any])
+          inline def setResumeSize(value: Function): Self = StObject.set(x, "resumeSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResumeSizeResponseReader(value: Function): Self = StObject.set(x, "resumeSizeResponseReader", value.asInstanceOf[js.Any])
+          inline def setResumeSizeResponseReader(value: Function): Self = StObject.set(x, "resumeSizeResponseReader", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResumeSizeResponseReaderUndefined: Self = StObject.set(x, "resumeSizeResponseReader", js.undefined)
+          inline def setResumeSizeResponseReaderUndefined: Self = StObject.set(x, "resumeSizeResponseReader", js.undefined)
           
-          @scala.inline
-          def setResumeSizeUndefined: Self = StObject.set(x, "resumeSize", js.undefined)
+          inline def setResumeSizeUndefined: Self = StObject.set(x, "resumeSize", js.undefined)
           
-          @scala.inline
-          def setResumeSizeUrl(value: String): Self = StObject.set(x, "resumeSizeUrl", value.asInstanceOf[js.Any])
+          inline def setResumeSizeUrl(value: String): Self = StObject.set(x, "resumeSizeUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResumeSizeUrlUndefined: Self = StObject.set(x, "resumeSizeUrl", js.undefined)
+          inline def setResumeSizeUrlUndefined: Self = StObject.set(x, "resumeSizeUrl", js.undefined)
         }
       }
       
@@ -578,20 +510,16 @@ object mod extends Shortcut {
       }
       object ImageDimensions {
         
-        @scala.inline
-        def apply(height: Double, width: Double): ImageDimensions = {
+        inline def apply(height: Double, width: Double): ImageDimensions = {
           val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
           __obj.asInstanceOf[ImageDimensions]
         }
         
-        @scala.inline
-        implicit class ImageDimensionsMutableBuilder[Self <: ImageDimensions] (val x: Self) extends AnyVal {
+        extension [Self <: ImageDimensions](x: Self) {
           
-          @scala.inline
-          def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         }
       }
       

@@ -22,25 +22,19 @@ trait LineConnection extends StObject {
 }
 object LineConnection {
   
-  @scala.inline
-  def apply(): LineConnection = {
+  inline def apply(): LineConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineConnection]
   }
   
-  @scala.inline
-  implicit class LineConnectionMutableBuilder[Self <: LineConnection] (val x: Self) extends AnyVal {
+  extension [Self <: LineConnection](x: Self) {
     
-    @scala.inline
-    def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
+    inline def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedObjectIdUndefined: Self = StObject.set(x, "connectedObjectId", js.undefined)
+    inline def setConnectedObjectIdUndefined: Self = StObject.set(x, "connectedObjectId", js.undefined)
     
-    @scala.inline
-    def setConnectionSiteIndex(value: Double): Self = StObject.set(x, "connectionSiteIndex", value.asInstanceOf[js.Any])
+    inline def setConnectionSiteIndex(value: Double): Self = StObject.set(x, "connectionSiteIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionSiteIndexUndefined: Self = StObject.set(x, "connectionSiteIndex", js.undefined)
+    inline def setConnectionSiteIndexUndefined: Self = StObject.set(x, "connectionSiteIndex", js.undefined)
   }
 }

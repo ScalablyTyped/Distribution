@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ViewFont")
 @js.native
-class ViewFont protected ()
+/* private */ class ViewFont ()
   extends StObject
      with typings.activexOutlook.Outlook.ViewFont {
   
@@ -34,7 +34,7 @@ class ViewFont protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.ViewFont_typekey")
   var OutlookDotViewFont_typekey: typings.activexOutlook.Outlook.ViewFont = js.native
   

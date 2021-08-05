@@ -63,21 +63,16 @@ object resourceServerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceServerState): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceServerState, opts: CustomResourceOptions): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
+    inline def get(name: String, id: Input[ID]): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
+    inline def get(name: String, id: Input[ID], state: ResourceServerState): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
+    inline def get(name: String, id: Input[ID], state: ResourceServerState, opts: CustomResourceOptions): ResourceServer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceServer]
     
     /**
       * Returns true if the given object is an instance of ResourceServer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ Boolean]
   }
   
   trait ResourceServerArgs extends StObject {
@@ -101,35 +96,26 @@ object resourceServerMod {
   }
   object ResourceServerArgs {
     
-    @scala.inline
-    def apply(identifier: Input[String], userPoolId: Input[String]): ResourceServerArgs = {
+    inline def apply(identifier: Input[String], userPoolId: Input[String]): ResourceServerArgs = {
       val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceServerArgs]
     }
     
-    @scala.inline
-    implicit class ResourceServerArgsMutableBuilder[Self <: ResourceServerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceServerArgs](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: Input[String]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: Input[String]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setScopes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,50 +145,36 @@ object resourceServerMod {
   }
   object ResourceServerState {
     
-    @scala.inline
-    def apply(): ResourceServerState = {
+    inline def apply(): ResourceServerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceServerState]
     }
     
-    @scala.inline
-    implicit class ResourceServerStateMutableBuilder[Self <: ResourceServerState] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceServerState](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: Input[String]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: Input[String]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+      inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setScopeIdentifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "scopeIdentifiers", value.asInstanceOf[js.Any])
+      inline def setScopeIdentifiers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "scopeIdentifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeIdentifiersUndefined: Self = StObject.set(x, "scopeIdentifiers", js.undefined)
+      inline def setScopeIdentifiersUndefined: Self = StObject.set(x, "scopeIdentifiers", js.undefined)
       
-      @scala.inline
-      def setScopeIdentifiersVarargs(value: Input[String]*): Self = StObject.set(x, "scopeIdentifiers", js.Array(value :_*))
+      inline def setScopeIdentifiersVarargs(value: Input[String]*): Self = StObject.set(x, "scopeIdentifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setScopes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: Input[typings.pulumiAws.inputMod.cognito.ResourceServerScope]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
+      inline def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
     }
   }
 }

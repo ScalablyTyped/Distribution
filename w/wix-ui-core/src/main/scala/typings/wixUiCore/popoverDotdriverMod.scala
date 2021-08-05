@@ -12,6 +12,5 @@ object popoverDotdriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def popoverDriverFactory(hasElementEventTrigger: Element): GetArrowElement = ^.asInstanceOf[js.Dynamic].applyDynamic("popoverDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetArrowElement]
+  inline def popoverDriverFactory(hasElementEventTrigger: Element): GetArrowElement = ^.asInstanceOf[js.Dynamic].applyDynamic("popoverDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetArrowElement]
 }

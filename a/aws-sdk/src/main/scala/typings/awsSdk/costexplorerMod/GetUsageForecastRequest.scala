@@ -33,34 +33,25 @@ trait GetUsageForecastRequest extends StObject {
 }
 object GetUsageForecastRequest {
   
-  @scala.inline
-  def apply(Granularity: Granularity, Metric: Metric, TimePeriod: DateInterval): GetUsageForecastRequest = {
+  inline def apply(Granularity: Granularity, Metric: Metric, TimePeriod: DateInterval): GetUsageForecastRequest = {
     val __obj = js.Dynamic.literal(Granularity = Granularity.asInstanceOf[js.Any], Metric = Metric.asInstanceOf[js.Any], TimePeriod = TimePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageForecastRequest]
   }
   
-  @scala.inline
-  implicit class GetUsageForecastRequestMutableBuilder[Self <: GetUsageForecastRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsageForecastRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric(value: Metric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Metric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionIntervalLevel(value: PredictionIntervalLevel): Self = StObject.set(x, "PredictionIntervalLevel", value.asInstanceOf[js.Any])
+    inline def setPredictionIntervalLevel(value: PredictionIntervalLevel): Self = StObject.set(x, "PredictionIntervalLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionIntervalLevelUndefined: Self = StObject.set(x, "PredictionIntervalLevel", js.undefined)
+    inline def setPredictionIntervalLevelUndefined: Self = StObject.set(x, "PredictionIntervalLevel", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

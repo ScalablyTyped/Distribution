@@ -16,22 +16,17 @@ trait SchemaListServiceAccountKeysResponse extends StObject {
 }
 object SchemaListServiceAccountKeysResponse {
   
-  @scala.inline
-  def apply(): SchemaListServiceAccountKeysResponse = {
+  inline def apply(): SchemaListServiceAccountKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListServiceAccountKeysResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListServiceAccountKeysResponseMutableBuilder[Self <: SchemaListServiceAccountKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListServiceAccountKeysResponse](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Array[SchemaServiceAccountKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[SchemaServiceAccountKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: SchemaServiceAccountKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: SchemaServiceAccountKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

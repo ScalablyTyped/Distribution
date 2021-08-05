@@ -8,21 +8,17 @@ object maximMazurokGapiClientCloudresourcemanagerStrings {
   
   @js.native
   sealed trait Operation extends StObject
-  @scala.inline
-  def Operation: Operation = "Operation".asInstanceOf[Operation]
+  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait cloudresourcemanager extends StObject
-  @scala.inline
-  def cloudresourcemanager: cloudresourcemanager = "cloudresourcemanager".asInstanceOf[cloudresourcemanager]
+  inline def cloudresourcemanager: cloudresourcemanager = "cloudresourcemanager".asInstanceOf[cloudresourcemanager]
   
   @js.native
   sealed trait v2 extends StObject
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

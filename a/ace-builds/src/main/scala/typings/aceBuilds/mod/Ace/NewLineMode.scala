@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NewLineMode extends StObject
 object NewLineMode {
   
-  @scala.inline
-  def auto: typings.aceBuilds.aceBuildsStrings.auto = "auto".asInstanceOf[typings.aceBuilds.aceBuildsStrings.auto]
+  inline def auto: typings.aceBuilds.aceBuildsStrings.auto = "auto".asInstanceOf[typings.aceBuilds.aceBuildsStrings.auto]
   
-  @scala.inline
-  def unix: typings.aceBuilds.aceBuildsStrings.unix = "unix".asInstanceOf[typings.aceBuilds.aceBuildsStrings.unix]
+  inline def unix: typings.aceBuilds.aceBuildsStrings.unix = "unix".asInstanceOf[typings.aceBuilds.aceBuildsStrings.unix]
   
-  @scala.inline
-  def windows: typings.aceBuilds.aceBuildsStrings.windows = "windows".asInstanceOf[typings.aceBuilds.aceBuildsStrings.windows]
+  inline def windows: typings.aceBuilds.aceBuildsStrings.windows = "windows".asInstanceOf[typings.aceBuilds.aceBuildsStrings.windows]
 }

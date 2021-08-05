@@ -52,8 +52,7 @@ trait Polyline
 }
 object Polyline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCursor: () => String,
     getGeneralizable: () => Boolean,
     getLocations: () => js.Array[Location],
@@ -68,28 +67,20 @@ object Polyline {
     __obj.asInstanceOf[Polyline]
   }
   
-  @scala.inline
-  implicit class PolylineMutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
+  extension [Self <: Polyline](x: Self) {
     
-    @scala.inline
-    def setGetGeneralizable(value: () => Boolean): Self = StObject.set(x, "getGeneralizable", js.Any.fromFunction0(value))
+    inline def setGetGeneralizable(value: () => Boolean): Self = StObject.set(x, "getGeneralizable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocations(value: () => js.Array[Location]): Self = StObject.set(x, "getLocations", js.Any.fromFunction0(value))
+    inline def setGetLocations(value: () => js.Array[Location]): Self = StObject.set(x, "getLocations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStrokeColor(value: () => String | Color): Self = StObject.set(x, "getStrokeColor", js.Any.fromFunction0(value))
+    inline def setGetStrokeColor(value: () => String | Color): Self = StObject.set(x, "getStrokeColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStrokeDashArray(value: () => js.Array[Double] | String): Self = StObject.set(x, "getStrokeDashArray", js.Any.fromFunction0(value))
+    inline def setGetStrokeDashArray(value: () => js.Array[Double] | String): Self = StObject.set(x, "getStrokeDashArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStrokeThickness(value: () => Double): Self = StObject.set(x, "getStrokeThickness", js.Any.fromFunction0(value))
+    inline def setGetStrokeThickness(value: () => Double): Self = StObject.set(x, "getStrokeThickness", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLocations(value: js.Array[Location] => Unit): Self = StObject.set(x, "setLocations", js.Any.fromFunction1(value))
+    inline def setSetLocations(value: js.Array[Location] => Unit): Self = StObject.set(x, "setLocations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: IPolylineOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: IPolylineOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

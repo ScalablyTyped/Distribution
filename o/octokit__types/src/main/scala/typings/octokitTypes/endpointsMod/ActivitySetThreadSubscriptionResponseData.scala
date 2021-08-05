@@ -20,8 +20,7 @@ trait ActivitySetThreadSubscriptionResponseData extends StObject {
 }
 object ActivitySetThreadSubscriptionResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     ignored: Boolean,
     reason: String,
@@ -33,25 +32,18 @@ object ActivitySetThreadSubscriptionResponseData {
     __obj.asInstanceOf[ActivitySetThreadSubscriptionResponseData]
   }
   
-  @scala.inline
-  implicit class ActivitySetThreadSubscriptionResponseDataMutableBuilder[Self <: ActivitySetThreadSubscriptionResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySetThreadSubscriptionResponseData](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+    inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
+    inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThread_url(value: String): Self = StObject.set(x, "thread_url", value.asInstanceOf[js.Any])
+    inline def setThread_url(value: String): Self = StObject.set(x, "thread_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

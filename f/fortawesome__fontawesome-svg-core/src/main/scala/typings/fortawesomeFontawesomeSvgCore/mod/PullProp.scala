@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PullProp extends StObject
 object PullProp {
   
-  @scala.inline
-  def left: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.left = "left".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.left]
+  inline def left: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.left = "left".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.left]
   
-  @scala.inline
-  def right: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.right = "right".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.right]
+  inline def right: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.right = "right".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.right]
 }

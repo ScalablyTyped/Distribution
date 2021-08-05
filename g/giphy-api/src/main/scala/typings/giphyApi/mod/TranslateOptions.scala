@@ -12,16 +12,13 @@ trait TranslateOptions
 }
 object TranslateOptions {
   
-  @scala.inline
-  def apply(rating: Rating, s: String): TranslateOptions = {
+  inline def apply(rating: Rating, s: String): TranslateOptions = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateOptions]
   }
   
-  @scala.inline
-  implicit class TranslateOptionsMutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateOptions](x: Self) {
     
-    @scala.inline
-    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

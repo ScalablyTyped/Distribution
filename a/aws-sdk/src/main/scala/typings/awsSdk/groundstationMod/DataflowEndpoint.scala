@@ -28,37 +28,27 @@ trait DataflowEndpoint extends StObject {
 }
 object DataflowEndpoint {
   
-  @scala.inline
-  def apply(): DataflowEndpoint = {
+  inline def apply(): DataflowEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataflowEndpoint]
   }
   
-  @scala.inline
-  implicit class DataflowEndpointMutableBuilder[Self <: DataflowEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: DataflowEndpoint](x: Self) {
     
-    @scala.inline
-    def setAddress(value: SocketAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: SocketAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setMtu(value: DataflowEndpointmtuInteger): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
+    inline def setMtu(value: DataflowEndpointmtuInteger): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
+    inline def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
     
-    @scala.inline
-    def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: EndpointStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EndpointStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

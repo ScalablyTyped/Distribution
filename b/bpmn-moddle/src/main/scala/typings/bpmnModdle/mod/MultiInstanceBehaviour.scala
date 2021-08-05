@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MultiInstanceBehaviour extends StObject
 object MultiInstanceBehaviour {
   
-  @scala.inline
-  def All: typings.bpmnModdle.bpmnModdleStrings.All = "All".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.All]
+  inline def All: typings.bpmnModdle.bpmnModdleStrings.All = "All".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.All]
   
-  @scala.inline
-  def Complex: typings.bpmnModdle.bpmnModdleStrings.Complex = "Complex".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Complex]
+  inline def Complex: typings.bpmnModdle.bpmnModdleStrings.Complex = "Complex".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Complex]
   
-  @scala.inline
-  def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
+  inline def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
   
-  @scala.inline
-  def One: typings.bpmnModdle.bpmnModdleStrings.One = "One".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.One]
+  inline def One: typings.bpmnModdle.bpmnModdleStrings.One = "One".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.One]
 }

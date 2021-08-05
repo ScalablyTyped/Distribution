@@ -23,28 +23,21 @@ trait ListTargetsForPolicyRequest extends StObject {
 }
 object ListTargetsForPolicyRequest {
   
-  @scala.inline
-  def apply(policyName: PolicyName): ListTargetsForPolicyRequest = {
+  inline def apply(policyName: PolicyName): ListTargetsForPolicyRequest = {
     val __obj = js.Dynamic.literal(policyName = policyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTargetsForPolicyRequest]
   }
   
-  @scala.inline
-  implicit class ListTargetsForPolicyRequestMutableBuilder[Self <: ListTargetsForPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTargetsForPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait ServerOptions extends StObject {
 }
 object ServerOptions {
   
-  @scala.inline
-  def apply(loadTransaction: Boolean, store: js.Any): ServerOptions = {
+  inline def apply(loadTransaction: Boolean, store: js.Any): ServerOptions = {
     val __obj = js.Dynamic.literal(loadTransaction = loadTransaction.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
   
-  @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptions](x: Self) {
     
-    @scala.inline
-    def setLoadTransaction(value: Boolean): Self = StObject.set(x, "loadTransaction", value.asInstanceOf[js.Any])
+    inline def setLoadTransaction(value: Boolean): Self = StObject.set(x, "loadTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

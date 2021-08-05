@@ -18,25 +18,19 @@ trait ProblemDetail extends StObject {
 }
 object ProblemDetail {
   
-  @scala.inline
-  def apply(): ProblemDetail = {
+  inline def apply(): ProblemDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProblemDetail]
   }
   
-  @scala.inline
-  implicit class ProblemDetailMutableBuilder[Self <: ProblemDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ProblemDetail](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

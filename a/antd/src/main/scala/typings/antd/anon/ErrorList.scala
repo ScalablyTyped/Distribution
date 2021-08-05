@@ -15,25 +15,19 @@ trait ErrorList extends StObject {
 }
 object ErrorList {
   
-  @scala.inline
-  def apply(errorList: Element, input: Element): ErrorList = {
+  inline def apply(errorList: Element, input: Element): ErrorList = {
     val __obj = js.Dynamic.literal(errorList = errorList.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], extra = null)
     __obj.asInstanceOf[ErrorList]
   }
   
-  @scala.inline
-  implicit class ErrorListMutableBuilder[Self <: ErrorList] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorList](x: Self) {
     
-    @scala.inline
-    def setErrorList(value: Element): Self = StObject.set(x, "errorList", value.asInstanceOf[js.Any])
+    inline def setErrorList(value: Element): Self = StObject.set(x, "errorList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra(value: Element): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Element): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraNull: Self = StObject.set(x, "extra", null)
+    inline def setExtraNull: Self = StObject.set(x, "extra", null)
     
-    @scala.inline
-    def setInput(value: Element): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Element): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

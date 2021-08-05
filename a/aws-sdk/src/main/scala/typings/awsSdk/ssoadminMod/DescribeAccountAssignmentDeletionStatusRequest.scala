@@ -18,19 +18,15 @@ trait DescribeAccountAssignmentDeletionStatusRequest extends StObject {
 }
 object DescribeAccountAssignmentDeletionStatusRequest {
   
-  @scala.inline
-  def apply(AccountAssignmentDeletionRequestId: UUId, InstanceArn: InstanceArn): DescribeAccountAssignmentDeletionStatusRequest = {
+  inline def apply(AccountAssignmentDeletionRequestId: UUId, InstanceArn: InstanceArn): DescribeAccountAssignmentDeletionStatusRequest = {
     val __obj = js.Dynamic.literal(AccountAssignmentDeletionRequestId = AccountAssignmentDeletionRequestId.asInstanceOf[js.Any], InstanceArn = InstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountAssignmentDeletionStatusRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAccountAssignmentDeletionStatusRequestMutableBuilder[Self <: DescribeAccountAssignmentDeletionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountAssignmentDeletionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setAccountAssignmentDeletionRequestId(value: UUId): Self = StObject.set(x, "AccountAssignmentDeletionRequestId", value.asInstanceOf[js.Any])
+    inline def setAccountAssignmentDeletionRequestId(value: UUId): Self = StObject.set(x, "AccountAssignmentDeletionRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
   }
 }

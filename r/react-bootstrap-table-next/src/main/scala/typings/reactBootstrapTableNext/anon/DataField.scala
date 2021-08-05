@@ -14,22 +14,17 @@ trait DataField extends StObject {
 }
 object DataField {
   
-  @scala.inline
-  def apply(dataField: js.Any, newValue: js.Any, rowId: String): DataField = {
+  inline def apply(dataField: js.Any, newValue: js.Any, rowId: String): DataField = {
     val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], rowId = rowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataField]
   }
   
-  @scala.inline
-  implicit class DataFieldMutableBuilder[Self <: DataField] (val x: Self) extends AnyVal {
+  extension [Self <: DataField](x: Self) {
     
-    @scala.inline
-    def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    inline def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
   }
 }

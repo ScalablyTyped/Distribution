@@ -13,16 +13,13 @@ trait SecurityProfileTarget extends StObject {
 }
 object SecurityProfileTarget {
   
-  @scala.inline
-  def apply(arn: SecurityProfileTargetArn): SecurityProfileTarget = {
+  inline def apply(arn: SecurityProfileTargetArn): SecurityProfileTarget = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityProfileTarget]
   }
   
-  @scala.inline
-  implicit class SecurityProfileTargetMutableBuilder[Self <: SecurityProfileTarget] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityProfileTarget](x: Self) {
     
-    @scala.inline
-    def setArn(value: SecurityProfileTargetArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: SecurityProfileTargetArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

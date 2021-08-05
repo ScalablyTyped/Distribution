@@ -28,8 +28,7 @@ trait StoreVideo extends StObject {
 }
 object StoreVideo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: String,
     height: Double,
     previewImage: StoreImage,
@@ -41,25 +40,18 @@ object StoreVideo {
     __obj.asInstanceOf[StoreVideo]
   }
   
-  @scala.inline
-  implicit class StoreVideoMutableBuilder[Self <: StoreVideo] (val x: Self) extends AnyVal {
+  extension [Self <: StoreVideo](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewImage(value: StoreImage): Self = StObject.set(x, "previewImage", value.asInstanceOf[js.Any])
+    inline def setPreviewImage(value: StoreImage): Self = StObject.set(x, "previewImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPurposeTag(value: String): Self = StObject.set(x, "videoPurposeTag", value.asInstanceOf[js.Any])
+    inline def setVideoPurposeTag(value: String): Self = StObject.set(x, "videoPurposeTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

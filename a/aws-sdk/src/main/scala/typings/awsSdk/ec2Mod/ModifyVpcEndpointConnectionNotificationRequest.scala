@@ -28,37 +28,27 @@ trait ModifyVpcEndpointConnectionNotificationRequest extends StObject {
 }
 object ModifyVpcEndpointConnectionNotificationRequest {
   
-  @scala.inline
-  def apply(ConnectionNotificationId: ConnectionNotificationId): ModifyVpcEndpointConnectionNotificationRequest = {
+  inline def apply(ConnectionNotificationId: ConnectionNotificationId): ModifyVpcEndpointConnectionNotificationRequest = {
     val __obj = js.Dynamic.literal(ConnectionNotificationId = ConnectionNotificationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcEndpointConnectionNotificationRequest]
   }
   
-  @scala.inline
-  implicit class ModifyVpcEndpointConnectionNotificationRequestMutableBuilder[Self <: ModifyVpcEndpointConnectionNotificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpcEndpointConnectionNotificationRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionEvents(value: ValueStringList): Self = StObject.set(x, "ConnectionEvents", value.asInstanceOf[js.Any])
+    inline def setConnectionEvents(value: ValueStringList): Self = StObject.set(x, "ConnectionEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionEventsUndefined: Self = StObject.set(x, "ConnectionEvents", js.undefined)
+    inline def setConnectionEventsUndefined: Self = StObject.set(x, "ConnectionEvents", js.undefined)
     
-    @scala.inline
-    def setConnectionEventsVarargs(value: String*): Self = StObject.set(x, "ConnectionEvents", js.Array(value :_*))
+    inline def setConnectionEventsVarargs(value: String*): Self = StObject.set(x, "ConnectionEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectionNotificationArn(value: String): Self = StObject.set(x, "ConnectionNotificationArn", value.asInstanceOf[js.Any])
+    inline def setConnectionNotificationArn(value: String): Self = StObject.set(x, "ConnectionNotificationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionNotificationArnUndefined: Self = StObject.set(x, "ConnectionNotificationArn", js.undefined)
+    inline def setConnectionNotificationArnUndefined: Self = StObject.set(x, "ConnectionNotificationArn", js.undefined)
     
-    @scala.inline
-    def setConnectionNotificationId(value: ConnectionNotificationId): Self = StObject.set(x, "ConnectionNotificationId", value.asInstanceOf[js.Any])
+    inline def setConnectionNotificationId(value: ConnectionNotificationId): Self = StObject.set(x, "ConnectionNotificationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

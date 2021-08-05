@@ -12,8 +12,7 @@ trait ChangeTextBoxRelativeSizeCommand
      with ChangeFloatingObjectPropertyCommandBase[TextBoxRelativeSizeSettings]
 object ChangeTextBoxRelativeSizeCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: TextBoxRelativeSizeSettings => Boolean,
     getState: () => CommandState[TextBoxRelativeSizeSettings]
   ): ChangeTextBoxRelativeSizeCommand = {

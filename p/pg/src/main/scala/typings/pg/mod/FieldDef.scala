@@ -22,8 +22,7 @@ trait FieldDef extends StObject {
 }
 object FieldDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columnID: Double,
     dataTypeID: Double,
     dataTypeModifier: Double,
@@ -36,28 +35,20 @@ object FieldDef {
     __obj.asInstanceOf[FieldDef]
   }
   
-  @scala.inline
-  implicit class FieldDefMutableBuilder[Self <: FieldDef] (val x: Self) extends AnyVal {
+  extension [Self <: FieldDef](x: Self) {
     
-    @scala.inline
-    def setColumnID(value: Double): Self = StObject.set(x, "columnID", value.asInstanceOf[js.Any])
+    inline def setColumnID(value: Double): Self = StObject.set(x, "columnID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeID(value: Double): Self = StObject.set(x, "dataTypeID", value.asInstanceOf[js.Any])
+    inline def setDataTypeID(value: Double): Self = StObject.set(x, "dataTypeID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeModifier(value: Double): Self = StObject.set(x, "dataTypeModifier", value.asInstanceOf[js.Any])
+    inline def setDataTypeModifier(value: Double): Self = StObject.set(x, "dataTypeModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeSize(value: Double): Self = StObject.set(x, "dataTypeSize", value.asInstanceOf[js.Any])
+    inline def setDataTypeSize(value: Double): Self = StObject.set(x, "dataTypeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableID(value: Double): Self = StObject.set(x, "tableID", value.asInstanceOf[js.Any])
+    inline def setTableID(value: Double): Self = StObject.set(x, "tableID", value.asInstanceOf[js.Any])
   }
 }

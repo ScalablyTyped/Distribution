@@ -25,8 +25,7 @@ trait FileContentProvider
      with XFileIdentifierConverter
 object FileContentProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,

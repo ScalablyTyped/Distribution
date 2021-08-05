@@ -16,20 +16,16 @@ object anon {
   }
   object Content {
     
-    @scala.inline
-    def apply(content: String, encoding: String): Content = {
+    inline def apply(content: String, encoding: String): Content = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,23 +39,18 @@ object anon {
   }
   object Enabled {
     
-    @scala.inline
-    def apply(publicUri: String): Enabled = {
+    inline def apply(publicUri: String): Enabled = {
       val __obj = js.Dynamic.literal(enabled = true, publicUri = publicUri.asInstanceOf[js.Any], showWarning = false)
       __obj.asInstanceOf[Enabled]
     }
     
-    @scala.inline
-    implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+    extension [Self <: Enabled](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: `true`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: `true`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUri(value: String): Self = StObject.set(x, "publicUri", value.asInstanceOf[js.Any])
+      inline def setPublicUri(value: String): Self = StObject.set(x, "publicUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowWarning(value: `false`): Self = StObject.set(x, "showWarning", value.asInstanceOf[js.Any])
+      inline def setShowWarning(value: `false`): Self = StObject.set(x, "showWarning", value.asInstanceOf[js.Any])
     }
   }
 }

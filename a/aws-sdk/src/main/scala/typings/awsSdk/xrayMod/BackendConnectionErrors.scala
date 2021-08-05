@@ -38,49 +38,35 @@ trait BackendConnectionErrors extends StObject {
 }
 object BackendConnectionErrors {
   
-  @scala.inline
-  def apply(): BackendConnectionErrors = {
+  inline def apply(): BackendConnectionErrors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackendConnectionErrors]
   }
   
-  @scala.inline
-  implicit class BackendConnectionErrorsMutableBuilder[Self <: BackendConnectionErrors] (val x: Self) extends AnyVal {
+  extension [Self <: BackendConnectionErrors](x: Self) {
     
-    @scala.inline
-    def setConnectionRefusedCount(value: NullableInteger): Self = StObject.set(x, "ConnectionRefusedCount", value.asInstanceOf[js.Any])
+    inline def setConnectionRefusedCount(value: NullableInteger): Self = StObject.set(x, "ConnectionRefusedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionRefusedCountUndefined: Self = StObject.set(x, "ConnectionRefusedCount", js.undefined)
+    inline def setConnectionRefusedCountUndefined: Self = StObject.set(x, "ConnectionRefusedCount", js.undefined)
     
-    @scala.inline
-    def setHTTPCode4XXCount(value: NullableInteger): Self = StObject.set(x, "HTTPCode4XXCount", value.asInstanceOf[js.Any])
+    inline def setHTTPCode4XXCount(value: NullableInteger): Self = StObject.set(x, "HTTPCode4XXCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTTPCode4XXCountUndefined: Self = StObject.set(x, "HTTPCode4XXCount", js.undefined)
+    inline def setHTTPCode4XXCountUndefined: Self = StObject.set(x, "HTTPCode4XXCount", js.undefined)
     
-    @scala.inline
-    def setHTTPCode5XXCount(value: NullableInteger): Self = StObject.set(x, "HTTPCode5XXCount", value.asInstanceOf[js.Any])
+    inline def setHTTPCode5XXCount(value: NullableInteger): Self = StObject.set(x, "HTTPCode5XXCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTTPCode5XXCountUndefined: Self = StObject.set(x, "HTTPCode5XXCount", js.undefined)
+    inline def setHTTPCode5XXCountUndefined: Self = StObject.set(x, "HTTPCode5XXCount", js.undefined)
     
-    @scala.inline
-    def setOtherCount(value: NullableInteger): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
+    inline def setOtherCount(value: NullableInteger): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
+    inline def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
     
-    @scala.inline
-    def setTimeoutCount(value: NullableInteger): Self = StObject.set(x, "TimeoutCount", value.asInstanceOf[js.Any])
+    inline def setTimeoutCount(value: NullableInteger): Self = StObject.set(x, "TimeoutCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutCountUndefined: Self = StObject.set(x, "TimeoutCount", js.undefined)
+    inline def setTimeoutCountUndefined: Self = StObject.set(x, "TimeoutCount", js.undefined)
     
-    @scala.inline
-    def setUnknownHostCount(value: NullableInteger): Self = StObject.set(x, "UnknownHostCount", value.asInstanceOf[js.Any])
+    inline def setUnknownHostCount(value: NullableInteger): Self = StObject.set(x, "UnknownHostCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownHostCountUndefined: Self = StObject.set(x, "UnknownHostCount", js.undefined)
+    inline def setUnknownHostCountUndefined: Self = StObject.set(x, "UnknownHostCount", js.undefined)
   }
 }

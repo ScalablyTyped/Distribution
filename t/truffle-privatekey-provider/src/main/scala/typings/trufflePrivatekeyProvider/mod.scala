@@ -28,20 +28,16 @@ object mod {
   }
   object PrivateKeyProvider {
     
-    @scala.inline
-    def apply(send: /* repeated */ js.Any => js.Any, sendAsync: /* repeated */ js.Any => Unit): PrivateKeyProvider = {
+    inline def apply(send: /* repeated */ js.Any => js.Any, sendAsync: /* repeated */ js.Any => Unit): PrivateKeyProvider = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send), sendAsync = js.Any.fromFunction1(sendAsync))
       __obj.asInstanceOf[PrivateKeyProvider]
     }
     
-    @scala.inline
-    implicit class PrivateKeyProviderMutableBuilder[Self <: PrivateKeyProvider] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateKeyProvider](x: Self) {
       
-      @scala.inline
-      def setSend(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendAsync(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "sendAsync", js.Any.fromFunction1(value))
+      inline def setSendAsync(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "sendAsync", js.Any.fromFunction1(value))
     }
   }
 }

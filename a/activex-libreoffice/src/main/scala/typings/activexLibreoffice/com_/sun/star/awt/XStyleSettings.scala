@@ -131,8 +131,7 @@ trait XStyleSettings extends StObject {
 }
 object XStyleSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveBorderColor: Color,
     ActiveColor: Color,
     ActiveTabColor: Color,
@@ -193,172 +192,116 @@ object XStyleSettings {
     __obj.asInstanceOf[XStyleSettings]
   }
   
-  @scala.inline
-  implicit class XStyleSettingsMutableBuilder[Self <: XStyleSettings] (val x: Self) extends AnyVal {
+  extension [Self <: XStyleSettings](x: Self) {
     
-    @scala.inline
-    def setActiveBorderColor(value: Color): Self = StObject.set(x, "ActiveBorderColor", value.asInstanceOf[js.Any])
+    inline def setActiveBorderColor(value: Color): Self = StObject.set(x, "ActiveBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveColor(value: Color): Self = StObject.set(x, "ActiveColor", value.asInstanceOf[js.Any])
+    inline def setActiveColor(value: Color): Self = StObject.set(x, "ActiveColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTabColor(value: Color): Self = StObject.set(x, "ActiveTabColor", value.asInstanceOf[js.Any])
+    inline def setActiveTabColor(value: Color): Self = StObject.set(x, "ActiveTabColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTextColor(value: Color): Self = StObject.set(x, "ActiveTextColor", value.asInstanceOf[js.Any])
+    inline def setActiveTextColor(value: Color): Self = StObject.set(x, "ActiveTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddStyleChangeListener(value: XStyleChangeListener => Unit): Self = StObject.set(x, "addStyleChangeListener", js.Any.fromFunction1(value))
+    inline def setAddStyleChangeListener(value: XStyleChangeListener => Unit): Self = StObject.set(x, "addStyleChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplicationFont(value: FontDescriptor): Self = StObject.set(x, "ApplicationFont", value.asInstanceOf[js.Any])
+    inline def setApplicationFont(value: FontDescriptor): Self = StObject.set(x, "ApplicationFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonRolloverTextColor(value: Color): Self = StObject.set(x, "ButtonRolloverTextColor", value.asInstanceOf[js.Any])
+    inline def setButtonRolloverTextColor(value: Color): Self = StObject.set(x, "ButtonRolloverTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonTextColor(value: Color): Self = StObject.set(x, "ButtonTextColor", value.asInstanceOf[js.Any])
+    inline def setButtonTextColor(value: Color): Self = StObject.set(x, "ButtonTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedColor(value: Color): Self = StObject.set(x, "CheckedColor", value.asInstanceOf[js.Any])
+    inline def setCheckedColor(value: Color): Self = StObject.set(x, "CheckedColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkShadowColor(value: Color): Self = StObject.set(x, "DarkShadowColor", value.asInstanceOf[js.Any])
+    inline def setDarkShadowColor(value: Color): Self = StObject.set(x, "DarkShadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeactiveBorderColor(value: Color): Self = StObject.set(x, "DeactiveBorderColor", value.asInstanceOf[js.Any])
+    inline def setDeactiveBorderColor(value: Color): Self = StObject.set(x, "DeactiveBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeactiveColor(value: Color): Self = StObject.set(x, "DeactiveColor", value.asInstanceOf[js.Any])
+    inline def setDeactiveColor(value: Color): Self = StObject.set(x, "DeactiveColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeactiveTextColor(value: Color): Self = StObject.set(x, "DeactiveTextColor", value.asInstanceOf[js.Any])
+    inline def setDeactiveTextColor(value: Color): Self = StObject.set(x, "DeactiveTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogColor(value: Color): Self = StObject.set(x, "DialogColor", value.asInstanceOf[js.Any])
+    inline def setDialogColor(value: Color): Self = StObject.set(x, "DialogColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogTextColor(value: Color): Self = StObject.set(x, "DialogTextColor", value.asInstanceOf[js.Any])
+    inline def setDialogTextColor(value: Color): Self = StObject.set(x, "DialogTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableColor(value: Color): Self = StObject.set(x, "DisableColor", value.asInstanceOf[js.Any])
+    inline def setDisableColor(value: Color): Self = StObject.set(x, "DisableColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceColor(value: Color): Self = StObject.set(x, "FaceColor", value.asInstanceOf[js.Any])
+    inline def setFaceColor(value: Color): Self = StObject.set(x, "FaceColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceGradientColor(value: Color): Self = StObject.set(x, "FaceGradientColor", value.asInstanceOf[js.Any])
+    inline def setFaceGradientColor(value: Color): Self = StObject.set(x, "FaceGradientColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldColor(value: Color): Self = StObject.set(x, "FieldColor", value.asInstanceOf[js.Any])
+    inline def setFieldColor(value: Color): Self = StObject.set(x, "FieldColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldFont(value: FontDescriptor): Self = StObject.set(x, "FieldFont", value.asInstanceOf[js.Any])
+    inline def setFieldFont(value: FontDescriptor): Self = StObject.set(x, "FieldFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldRolloverTextColor(value: Color): Self = StObject.set(x, "FieldRolloverTextColor", value.asInstanceOf[js.Any])
+    inline def setFieldRolloverTextColor(value: Color): Self = StObject.set(x, "FieldRolloverTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTextColor(value: Color): Self = StObject.set(x, "FieldTextColor", value.asInstanceOf[js.Any])
+    inline def setFieldTextColor(value: Color): Self = StObject.set(x, "FieldTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatTitleFont(value: FontDescriptor): Self = StObject.set(x, "FloatTitleFont", value.asInstanceOf[js.Any])
+    inline def setFloatTitleFont(value: FontDescriptor): Self = StObject.set(x, "FloatTitleFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupFont(value: FontDescriptor): Self = StObject.set(x, "GroupFont", value.asInstanceOf[js.Any])
+    inline def setGroupFont(value: FontDescriptor): Self = StObject.set(x, "GroupFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupTextColor(value: Color): Self = StObject.set(x, "GroupTextColor", value.asInstanceOf[js.Any])
+    inline def setGroupTextColor(value: Color): Self = StObject.set(x, "GroupTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpColor(value: Color): Self = StObject.set(x, "HelpColor", value.asInstanceOf[js.Any])
+    inline def setHelpColor(value: Color): Self = StObject.set(x, "HelpColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpFont(value: FontDescriptor): Self = StObject.set(x, "HelpFont", value.asInstanceOf[js.Any])
+    inline def setHelpFont(value: FontDescriptor): Self = StObject.set(x, "HelpFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpTextColor(value: Color): Self = StObject.set(x, "HelpTextColor", value.asInstanceOf[js.Any])
+    inline def setHelpTextColor(value: Color): Self = StObject.set(x, "HelpTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighContrastMode(value: Boolean): Self = StObject.set(x, "HighContrastMode", value.asInstanceOf[js.Any])
+    inline def setHighContrastMode(value: Boolean): Self = StObject.set(x, "HighContrastMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightColor(value: Color): Self = StObject.set(x, "HighlightColor", value.asInstanceOf[js.Any])
+    inline def setHighlightColor(value: Color): Self = StObject.set(x, "HighlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightTextColor(value: Color): Self = StObject.set(x, "HighlightTextColor", value.asInstanceOf[js.Any])
+    inline def setHighlightTextColor(value: Color): Self = StObject.set(x, "HighlightTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveTabColor(value: Color): Self = StObject.set(x, "InactiveTabColor", value.asInstanceOf[js.Any])
+    inline def setInactiveTabColor(value: Color): Self = StObject.set(x, "InactiveTabColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFont(value: FontDescriptor): Self = StObject.set(x, "LabelFont", value.asInstanceOf[js.Any])
+    inline def setLabelFont(value: FontDescriptor): Self = StObject.set(x, "LabelFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelTextColor(value: Color): Self = StObject.set(x, "LabelTextColor", value.asInstanceOf[js.Any])
+    inline def setLabelTextColor(value: Color): Self = StObject.set(x, "LabelTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightColor(value: Color): Self = StObject.set(x, "LightColor", value.asInstanceOf[js.Any])
+    inline def setLightColor(value: Color): Self = StObject.set(x, "LightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuBarColor(value: Color): Self = StObject.set(x, "MenuBarColor", value.asInstanceOf[js.Any])
+    inline def setMenuBarColor(value: Color): Self = StObject.set(x, "MenuBarColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuBarTextColor(value: Color): Self = StObject.set(x, "MenuBarTextColor", value.asInstanceOf[js.Any])
+    inline def setMenuBarTextColor(value: Color): Self = StObject.set(x, "MenuBarTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuBorderColor(value: Color): Self = StObject.set(x, "MenuBorderColor", value.asInstanceOf[js.Any])
+    inline def setMenuBorderColor(value: Color): Self = StObject.set(x, "MenuBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuColor(value: Color): Self = StObject.set(x, "MenuColor", value.asInstanceOf[js.Any])
+    inline def setMenuColor(value: Color): Self = StObject.set(x, "MenuColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuFont(value: FontDescriptor): Self = StObject.set(x, "MenuFont", value.asInstanceOf[js.Any])
+    inline def setMenuFont(value: FontDescriptor): Self = StObject.set(x, "MenuFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuHighlightColor(value: Color): Self = StObject.set(x, "MenuHighlightColor", value.asInstanceOf[js.Any])
+    inline def setMenuHighlightColor(value: Color): Self = StObject.set(x, "MenuHighlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuHighlightTextColor(value: Color): Self = StObject.set(x, "MenuHighlightTextColor", value.asInstanceOf[js.Any])
+    inline def setMenuHighlightTextColor(value: Color): Self = StObject.set(x, "MenuHighlightTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuTextColor(value: Color): Self = StObject.set(x, "MenuTextColor", value.asInstanceOf[js.Any])
+    inline def setMenuTextColor(value: Color): Self = StObject.set(x, "MenuTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonoColor(value: Color): Self = StObject.set(x, "MonoColor", value.asInstanceOf[js.Any])
+    inline def setMonoColor(value: Color): Self = StObject.set(x, "MonoColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushButtonFont(value: FontDescriptor): Self = StObject.set(x, "PushButtonFont", value.asInstanceOf[js.Any])
+    inline def setPushButtonFont(value: FontDescriptor): Self = StObject.set(x, "PushButtonFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioCheckFont(value: FontDescriptor): Self = StObject.set(x, "RadioCheckFont", value.asInstanceOf[js.Any])
+    inline def setRadioCheckFont(value: FontDescriptor): Self = StObject.set(x, "RadioCheckFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioCheckTextColor(value: Color): Self = StObject.set(x, "RadioCheckTextColor", value.asInstanceOf[js.Any])
+    inline def setRadioCheckTextColor(value: Color): Self = StObject.set(x, "RadioCheckTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStyleChangeListener(value: XStyleChangeListener => Unit): Self = StObject.set(x, "removeStyleChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveStyleChangeListener(value: XStyleChangeListener => Unit): Self = StObject.set(x, "removeStyleChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparatorColor(value: Color): Self = StObject.set(x, "SeparatorColor", value.asInstanceOf[js.Any])
+    inline def setSeparatorColor(value: Color): Self = StObject.set(x, "SeparatorColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColor(value: Color): Self = StObject.set(x, "ShadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Color): Self = StObject.set(x, "ShadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFont(value: FontDescriptor): Self = StObject.set(x, "TitleFont", value.asInstanceOf[js.Any])
+    inline def setTitleFont(value: FontDescriptor): Self = StObject.set(x, "TitleFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolFont(value: FontDescriptor): Self = StObject.set(x, "ToolFont", value.asInstanceOf[js.Any])
+    inline def setToolFont(value: FontDescriptor): Self = StObject.set(x, "ToolFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowColor(value: Color): Self = StObject.set(x, "WindowColor", value.asInstanceOf[js.Any])
+    inline def setWindowColor(value: Color): Self = StObject.set(x, "WindowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTextColor(value: Color): Self = StObject.set(x, "WindowTextColor", value.asInstanceOf[js.Any])
+    inline def setWindowTextColor(value: Color): Self = StObject.set(x, "WindowTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceColor(value: Color): Self = StObject.set(x, "WorkspaceColor", value.asInstanceOf[js.Any])
+    inline def setWorkspaceColor(value: Color): Self = StObject.set(x, "WorkspaceColor", value.asInstanceOf[js.Any])
   }
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Tock = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Tock]
-  @scala.inline
-  def apply(opts: TockOptions): Tock = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Tock]
+  inline def apply(): Tock = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Tock]
+  inline def apply(opts: TockOptions): Tock = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Tock]
   
   @JSImport("tocktimer", JSImport.Namespace)
   @js.native
@@ -95,32 +93,24 @@ object mod {
   }
   object TockOptions {
     
-    @scala.inline
-    def apply(callback: () => Unit, complete: () => Unit): TockOptions = {
+    inline def apply(callback: () => Unit, complete: () => Unit): TockOptions = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), complete = js.Any.fromFunction0(complete))
       __obj.asInstanceOf[TockOptions]
     }
     
-    @scala.inline
-    implicit class TockOptionsMutableBuilder[Self <: TockOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TockOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCountdown(value: Boolean): Self = StObject.set(x, "countdown", value.asInstanceOf[js.Any])
+      inline def setCountdown(value: Boolean): Self = StObject.set(x, "countdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountdownUndefined: Self = StObject.set(x, "countdown", js.undefined)
+      inline def setCountdownUndefined: Self = StObject.set(x, "countdown", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     }
   }
 }

@@ -35,8 +35,7 @@ trait FeatureViewModelLastEditInfo
 }
 object FeatureViewModelLastEditInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     date: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -49,16 +48,12 @@ object FeatureViewModelLastEditInfo {
     __obj.asInstanceOf[FeatureViewModelLastEditInfo]
   }
   
-  @scala.inline
-  implicit class FeatureViewModelLastEditInfoMutableBuilder[Self <: FeatureViewModelLastEditInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureViewModelLastEditInfo](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: edit | create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: edit | create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

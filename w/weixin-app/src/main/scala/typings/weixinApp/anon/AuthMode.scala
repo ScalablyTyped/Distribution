@@ -22,28 +22,21 @@ trait AuthMode extends StObject {
 }
 object AuthMode {
   
-  @scala.inline
-  def apply(authMode: String, errCode: Double, errMsg: String, resultJSON: String, resultJSONSignature: String): AuthMode = {
+  inline def apply(authMode: String, errCode: Double, errMsg: String, resultJSON: String, resultJSONSignature: String): AuthMode = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], resultJSON = resultJSON.asInstanceOf[js.Any], resultJSONSignature = resultJSONSignature.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthMode]
   }
   
-  @scala.inline
-  implicit class AuthModeMutableBuilder[Self <: AuthMode] (val x: Self) extends AnyVal {
+  extension [Self <: AuthMode](x: Self) {
     
-    @scala.inline
-    def setAuthMode(value: String): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+    inline def setAuthMode(value: String): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultJSON(value: String): Self = StObject.set(x, "resultJSON", value.asInstanceOf[js.Any])
+    inline def setResultJSON(value: String): Self = StObject.set(x, "resultJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultJSONSignature(value: String): Self = StObject.set(x, "resultJSONSignature", value.asInstanceOf[js.Any])
+    inline def setResultJSONSignature(value: String): Self = StObject.set(x, "resultJSONSignature", value.asInstanceOf[js.Any])
   }
 }

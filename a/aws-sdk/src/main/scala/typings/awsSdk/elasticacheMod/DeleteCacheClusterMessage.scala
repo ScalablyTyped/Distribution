@@ -18,22 +18,17 @@ trait DeleteCacheClusterMessage extends StObject {
 }
 object DeleteCacheClusterMessage {
   
-  @scala.inline
-  def apply(CacheClusterId: String): DeleteCacheClusterMessage = {
+  inline def apply(CacheClusterId: String): DeleteCacheClusterMessage = {
     val __obj = js.Dynamic.literal(CacheClusterId = CacheClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCacheClusterMessage]
   }
   
-  @scala.inline
-  implicit class DeleteCacheClusterMessageMutableBuilder[Self <: DeleteCacheClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCacheClusterMessage](x: Self) {
     
-    @scala.inline
-    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
+    inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setFinalSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalSnapshotIdentifier", js.undefined)
+    inline def setFinalSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalSnapshotIdentifier", js.undefined)
   }
 }

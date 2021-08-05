@@ -11,13 +11,11 @@ object restifyPluginsStrings {
   sealed trait aborted
     extends StObject
        with _TMetricsCallback
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
   sealed trait close
     extends StObject
        with _TMetricsCallback
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
 }

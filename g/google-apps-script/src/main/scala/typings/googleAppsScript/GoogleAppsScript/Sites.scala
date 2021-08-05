@@ -128,8 +128,7 @@ object Sites {
   }
   object Attachment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deleteAttachment: () => Unit,
       getAs: String => Blob,
       getAttachmentType: () => AttachmentType,
@@ -152,59 +151,41 @@ object Sites {
       __obj.asInstanceOf[Attachment]
     }
     
-    @scala.inline
-    implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+    extension [Self <: Attachment](x: Self) {
       
-      @scala.inline
-      def setDeleteAttachment(value: () => Unit): Self = StObject.set(x, "deleteAttachment", js.Any.fromFunction0(value))
+      inline def setDeleteAttachment(value: () => Unit): Self = StObject.set(x, "deleteAttachment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+      inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttachmentType(value: () => AttachmentType): Self = StObject.set(x, "getAttachmentType", js.Any.fromFunction0(value))
+      inline def setGetAttachmentType(value: () => AttachmentType): Self = StObject.set(x, "getAttachmentType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+      inline def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
+      inline def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDatePublished(value: () => Date): Self = StObject.set(x, "getDatePublished", js.Any.fromFunction0(value))
+      inline def setGetDatePublished(value: () => Date): Self = StObject.set(x, "getDatePublished", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
+      inline def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLastUpdated(value: () => Date): Self = StObject.set(x, "getLastUpdated", js.Any.fromFunction0(value))
+      inline def setGetLastUpdated(value: () => Date): Self = StObject.set(x, "getLastUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+      inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetContentType(value: String => Attachment): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
+      inline def setSetContentType(value: String => Attachment): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDescription(value: String => Attachment): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
+      inline def setSetDescription(value: String => Attachment): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFrom(value: BlobSource => Attachment): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
+      inline def setSetFrom(value: BlobSource => Attachment): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetParent(value: Page => Attachment): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+      inline def setSetParent(value: Page => Attachment): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitle(value: String => Attachment): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: String => Attachment): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUrl(value: String => Attachment): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+      inline def setSetUrl(value: String => Attachment): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     }
   }
   
@@ -227,26 +208,20 @@ object Sites {
   }
   object Column {
     
-    @scala.inline
-    def apply(deleteColumn: () => Unit, getName: () => String, getParent: () => Page, setName: String => Column): Column = {
+    inline def apply(deleteColumn: () => Unit, getName: () => String, getParent: () => Page, setName: String => Column): Column = {
       val __obj = js.Dynamic.literal(deleteColumn = js.Any.fromFunction0(deleteColumn), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), setName = js.Any.fromFunction1(setName))
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setDeleteColumn(value: () => Unit): Self = StObject.set(x, "deleteColumn", js.Any.fromFunction0(value))
+      inline def setDeleteColumn(value: () => Unit): Self = StObject.set(x, "deleteColumn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetName(value: String => Column): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+      inline def setSetName(value: String => Column): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     }
   }
   
@@ -279,8 +254,7 @@ object Sites {
   }
   object Comment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deleteComment: () => Unit,
       getAuthorEmail: () => String,
       getAuthorName: () => String,
@@ -295,35 +269,25 @@ object Sites {
       __obj.asInstanceOf[Comment]
     }
     
-    @scala.inline
-    implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+    extension [Self <: Comment](x: Self) {
       
-      @scala.inline
-      def setDeleteComment(value: () => Unit): Self = StObject.set(x, "deleteComment", js.Any.fromFunction0(value))
+      inline def setDeleteComment(value: () => Unit): Self = StObject.set(x, "deleteComment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAuthorEmail(value: () => String): Self = StObject.set(x, "getAuthorEmail", js.Any.fromFunction0(value))
+      inline def setGetAuthorEmail(value: () => String): Self = StObject.set(x, "getAuthorEmail", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAuthorName(value: () => String): Self = StObject.set(x, "getAuthorName", js.Any.fromFunction0(value))
+      inline def setGetAuthorName(value: () => String): Self = StObject.set(x, "getAuthorName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDatePublished(value: () => Date): Self = StObject.set(x, "getDatePublished", js.Any.fromFunction0(value))
+      inline def setGetDatePublished(value: () => Date): Self = StObject.set(x, "getDatePublished", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLastUpdated(value: () => Date): Self = StObject.set(x, "getLastUpdated", js.Any.fromFunction0(value))
+      inline def setGetLastUpdated(value: () => Date): Self = StObject.set(x, "getLastUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetContent(value: String => Comment): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+      inline def setSetContent(value: String => Comment): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetParent(value: Page => Comment): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+      inline def setSetParent(value: Page => Comment): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
     }
   }
   
@@ -356,8 +320,7 @@ object Sites {
   }
   object ListItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deleteListItem: () => Unit,
       getDatePublished: () => Date,
       getLastUpdated: () => Date,
@@ -372,35 +335,25 @@ object Sites {
       __obj.asInstanceOf[ListItem]
     }
     
-    @scala.inline
-    implicit class ListItemMutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
+    extension [Self <: ListItem](x: Self) {
       
-      @scala.inline
-      def setDeleteListItem(value: () => Unit): Self = StObject.set(x, "deleteListItem", js.Any.fromFunction0(value))
+      inline def setDeleteListItem(value: () => Unit): Self = StObject.set(x, "deleteListItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDatePublished(value: () => Date): Self = StObject.set(x, "getDatePublished", js.Any.fromFunction0(value))
+      inline def setGetDatePublished(value: () => Date): Self = StObject.set(x, "getDatePublished", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLastUpdated(value: () => Date): Self = StObject.set(x, "getLastUpdated", js.Any.fromFunction0(value))
+      inline def setGetLastUpdated(value: () => Date): Self = StObject.set(x, "getLastUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => Page): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValueByIndex(value: Integer => String): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
+      inline def setGetValueByIndex(value: Integer => String): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueByName(value: String => String): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
+      inline def setGetValueByName(value: String => String): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetParent(value: Page => ListItem): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+      inline def setSetParent(value: Page => ListItem): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValueByIndex(value: (Integer, String) => ListItem): Self = StObject.set(x, "setValueByIndex", js.Any.fromFunction2(value))
+      inline def setSetValueByIndex(value: (Integer, String) => ListItem): Self = StObject.set(x, "setValueByIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetValueByName(value: (String, String) => ListItem): Self = StObject.set(x, "setValueByName", js.Any.fromFunction2(value))
+      inline def setSetValueByName(value: (String, String) => ListItem): Self = StObject.set(x, "setValueByName", js.Any.fromFunction2(value))
     }
   }
   
@@ -532,53 +485,38 @@ object Sites {
   }
   object PageAdvancedParameters {
     
-    @scala.inline
-    def apply(): PageAdvancedParameters = {
+    inline def apply(): PageAdvancedParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageAdvancedParameters]
     }
     
-    @scala.inline
-    implicit class PageAdvancedParametersMutableBuilder[Self <: PageAdvancedParameters] (val x: Self) extends AnyVal {
+    extension [Self <: PageAdvancedParameters](x: Self) {
       
-      @scala.inline
-      def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
+      inline def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeDeletedUndefined: Self = StObject.set(x, "includeDeleted", js.undefined)
+      inline def setIncludeDeletedUndefined: Self = StObject.set(x, "includeDeleted", js.undefined)
       
-      @scala.inline
-      def setIncludeDrafts(value: Boolean): Self = StObject.set(x, "includeDrafts", value.asInstanceOf[js.Any])
+      inline def setIncludeDrafts(value: Boolean): Self = StObject.set(x, "includeDrafts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeDraftsUndefined: Self = StObject.set(x, "includeDrafts", js.undefined)
+      inline def setIncludeDraftsUndefined: Self = StObject.set(x, "includeDrafts", js.undefined)
       
-      @scala.inline
-      def setMax(value: Integer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Integer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setStart(value: Integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setType(value: js.Array[PageType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Array[PageType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeVarargs(value: PageType*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: PageType*): Self = StObject.set(x, "type", js.Array(value :_*))
     }
   }
   

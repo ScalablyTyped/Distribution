@@ -20,8 +20,7 @@ object MockPromise {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     scheduler: typings.wonderFrp.testingTestSchedulerMod.TestScheduler,
     messages: js.Array[typings.wonderFrp.testingRecordMod.Record]
   ): typings.wonderFrp.testingMockPromiseMod.MockPromise = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any], messages.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingMockPromiseMod.MockPromise]

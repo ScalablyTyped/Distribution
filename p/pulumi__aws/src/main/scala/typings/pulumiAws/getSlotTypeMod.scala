@@ -12,10 +12,8 @@ object getSlotTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSlotType(args: GetSlotTypeArgs): js.Promise[GetSlotTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlotType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSlotTypeResult]]
-  @scala.inline
-  def getSlotType(args: GetSlotTypeArgs, opts: InvokeOptions): js.Promise[GetSlotTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlotType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSlotTypeResult]]
+  inline def getSlotType(args: GetSlotTypeArgs): js.Promise[GetSlotTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlotType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSlotTypeResult]]
+  inline def getSlotType(args: GetSlotTypeArgs, opts: InvokeOptions): js.Promise[GetSlotTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlotType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSlotTypeResult]]
   
   trait GetSlotTypeArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getSlotTypeMod {
   }
   object GetSlotTypeArgs {
     
-    @scala.inline
-    def apply(name: String): GetSlotTypeArgs = {
+    inline def apply(name: String): GetSlotTypeArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSlotTypeArgs]
     }
     
-    @scala.inline
-    implicit class GetSlotTypeArgsMutableBuilder[Self <: GetSlotTypeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSlotTypeArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -106,8 +99,7 @@ object getSlotTypeMod {
   }
   object GetSlotTypeResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checksum: String,
       createdDate: String,
       description: String,
@@ -121,41 +113,29 @@ object getSlotTypeMod {
       __obj.asInstanceOf[GetSlotTypeResult]
     }
     
-    @scala.inline
-    implicit class GetSlotTypeResultMutableBuilder[Self <: GetSlotTypeResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSlotTypeResult](x: Self) {
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerationValues(value: js.Array[GetSlotTypeEnumerationValue]): Self = StObject.set(x, "enumerationValues", value.asInstanceOf[js.Any])
+      inline def setEnumerationValues(value: js.Array[GetSlotTypeEnumerationValue]): Self = StObject.set(x, "enumerationValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerationValuesVarargs(value: GetSlotTypeEnumerationValue*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
+      inline def setEnumerationValuesVarargs(value: GetSlotTypeEnumerationValue*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueSelectionStrategy(value: String): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
+      inline def setValueSelectionStrategy(value: String): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

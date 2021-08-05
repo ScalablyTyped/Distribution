@@ -10,6 +10,5 @@ object isCodeVueSfcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(code: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(code: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -12,19 +12,15 @@ trait ShareTicket extends StObject {
 }
 object ShareTicket {
   
-  @scala.inline
-  def apply(shareTicket: String, timeout: Double): ShareTicket = {
+  inline def apply(shareTicket: String, timeout: Double): ShareTicket = {
     val __obj = js.Dynamic.literal(shareTicket = shareTicket.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareTicket]
   }
   
-  @scala.inline
-  implicit class ShareTicketMutableBuilder[Self <: ShareTicket] (val x: Self) extends AnyVal {
+  extension [Self <: ShareTicket](x: Self) {
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

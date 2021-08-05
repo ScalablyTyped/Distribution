@@ -10,6 +10,5 @@ object global {
   @JSGlobal("AppleID")
   @js.native
   def AppleID: typings.appleSigninApi.AppleSignInAPI.AppleID = js.native
-  @scala.inline
-  def AppleID_=(x: AppleID): Unit = js.Dynamic.global.updateDynamic("AppleID")(x.asInstanceOf[js.Any])
+  inline def AppleID_=(x: AppleID): Unit = js.Dynamic.global.updateDynamic("AppleID")(x.asInstanceOf[js.Any])
 }

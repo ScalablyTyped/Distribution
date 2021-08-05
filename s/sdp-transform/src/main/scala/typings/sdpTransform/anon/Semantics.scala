@@ -12,19 +12,15 @@ trait Semantics extends StObject {
 }
 object Semantics {
   
-  @scala.inline
-  def apply(semantics: String, ssrcs: String): Semantics = {
+  inline def apply(semantics: String, ssrcs: String): Semantics = {
     val __obj = js.Dynamic.literal(semantics = semantics.asInstanceOf[js.Any], ssrcs = ssrcs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Semantics]
   }
   
-  @scala.inline
-  implicit class SemanticsMutableBuilder[Self <: Semantics] (val x: Self) extends AnyVal {
+  extension [Self <: Semantics](x: Self) {
     
-    @scala.inline
-    def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
+    inline def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrcs(value: String): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
+    inline def setSsrcs(value: String): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
   }
 }

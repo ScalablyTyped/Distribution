@@ -23,31 +23,23 @@ trait ResourcePolicy extends StObject {
 }
 object ResourcePolicy {
   
-  @scala.inline
-  def apply(): ResourcePolicy = {
+  inline def apply(): ResourcePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePolicy]
   }
   
-  @scala.inline
-  implicit class ResourcePolicyMutableBuilder[Self <: ResourcePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePolicy](x: Self) {
     
-    @scala.inline
-    def setDocument(value: PolicyDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: PolicyDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     
-    @scala.inline
-    def setRevision(value: PolicyRevision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: PolicyRevision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
   }
 }

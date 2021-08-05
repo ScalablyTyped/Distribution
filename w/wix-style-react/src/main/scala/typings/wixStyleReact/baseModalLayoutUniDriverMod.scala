@@ -12,8 +12,7 @@ object baseModalLayoutUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def baseModalLayoutDriverFactory(base: BaseUniDriver): BaseModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseModalLayoutUniDriver]
+  inline def baseModalLayoutDriverFactory(base: BaseUniDriver): BaseModalLayoutUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseModalLayoutDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseModalLayoutUniDriver]
   
   trait BaseModalLayoutUniDriver
     extends StObject
@@ -39,8 +38,7 @@ object baseModalLayoutUniDriverMod {
   }
   object BaseModalLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childExists: String => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       clickCloseButton: () => js.Promise[Unit],
@@ -58,35 +56,25 @@ object baseModalLayoutUniDriverMod {
       __obj.asInstanceOf[BaseModalLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class BaseModalLayoutUniDriverMutableBuilder[Self <: BaseModalLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BaseModalLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setChildExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "childExists", js.Any.fromFunction1(value))
+      inline def setChildExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "childExists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
+      inline def setClickCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickHelpButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickHelpButton", js.Any.fromFunction0(value))
+      inline def setClickHelpButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickHelpButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIllustrationSrc(value: () => js.Promise[String]): Self = StObject.set(x, "getIllustrationSrc", js.Any.fromFunction0(value))
+      inline def setGetIllustrationSrc(value: () => js.Promise[String]): Self = StObject.set(x, "getIllustrationSrc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryButtonDriver(value: () => js.Promise[ButtonUniDriver]): Self = StObject.set(x, "getPrimaryButtonDriver", js.Any.fromFunction0(value))
+      inline def setGetPrimaryButtonDriver(value: () => js.Promise[ButtonUniDriver]): Self = StObject.set(x, "getPrimaryButtonDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecondaryButtonDriver(value: () => js.Promise[ButtonUniDriver]): Self = StObject.set(x, "getSecondaryButtonDriver", js.Any.fromFunction0(value))
+      inline def setGetSecondaryButtonDriver(value: () => js.Promise[ButtonUniDriver]): Self = StObject.set(x, "getSecondaryButtonDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
+      inline def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTheme(value: () => js.Promise[String]): Self = StObject.set(x, "getTheme", js.Any.fromFunction0(value))
+      inline def setGetTheme(value: () => js.Promise[String]): Self = StObject.set(x, "getTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
+      inline def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
     }
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.EmailAdapterObject")
 @js.native
-class EmailAdapterObject protected ()
+/* private */ class EmailAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.EmailAdapterObject {
   
@@ -24,7 +24,7 @@ class EmailAdapterObject protected ()
   /* CompleteClass */
   var CC: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.EmailAdapterObject_typekey")
   var InfoPathDotEmailAdapterObject_typekey: typings.activexInfopath.InfoPath.EmailAdapterObject = js.native
   

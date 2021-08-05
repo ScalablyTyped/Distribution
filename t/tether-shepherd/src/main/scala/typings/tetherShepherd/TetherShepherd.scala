@@ -90,20 +90,16 @@ object TetherShepherd {
   }
   object IShepherdTourAttachProperties {
     
-    @scala.inline
-    def apply(element: String, on: String): IShepherdTourAttachProperties = {
+    inline def apply(element: String, on: String): IShepherdTourAttachProperties = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShepherdTourAttachProperties]
     }
     
-    @scala.inline
-    implicit class IShepherdTourAttachPropertiesMutableBuilder[Self <: IShepherdTourAttachProperties] (val x: Self) extends AnyVal {
+    extension [Self <: IShepherdTourAttachProperties](x: Self) {
       
-      @scala.inline
-      def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,35 +115,26 @@ object TetherShepherd {
   }
   object IShepherdTourButton {
     
-    @scala.inline
-    def apply(text: String): IShepherdTourButton = {
+    inline def apply(text: String): IShepherdTourButton = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShepherdTourButton]
     }
     
-    @scala.inline
-    implicit class IShepherdTourButtonMutableBuilder[Self <: IShepherdTourButton] (val x: Self) extends AnyVal {
+    extension [Self <: IShepherdTourButton](x: Self) {
       
-      @scala.inline
-      def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setEvents(value: IShepherdTourButtonEventHash): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: IShepherdTourButtonEventHash): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,29 +148,22 @@ object TetherShepherd {
   }
   object IShepherdTourOptions {
     
-    @scala.inline
-    def apply(): IShepherdTourOptions = {
+    inline def apply(): IShepherdTourOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShepherdTourOptions]
     }
     
-    @scala.inline
-    implicit class IShepherdTourOptionsMutableBuilder[Self <: IShepherdTourOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IShepherdTourOptions](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: IShepherdTourStepOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: IShepherdTourStepOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setSteps(value: js.Array[IShepherdTourStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[IShepherdTourStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      @scala.inline
-      def setStepsVarargs(value: IShepherdTourStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: IShepherdTourStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
     }
   }
   
@@ -273,89 +253,62 @@ object TetherShepherd {
   }
   object IShepherdTourStepOptions {
     
-    @scala.inline
-    def apply(): IShepherdTourStepOptions = {
+    inline def apply(): IShepherdTourStepOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShepherdTourStepOptions]
     }
     
-    @scala.inline
-    implicit class IShepherdTourStepOptionsMutableBuilder[Self <: IShepherdTourStepOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IShepherdTourStepOptions](x: Self) {
       
-      @scala.inline
-      def setAdvanceOn(value: js.Any): Self = StObject.set(x, "advanceOn", value.asInstanceOf[js.Any])
+      inline def setAdvanceOn(value: js.Any): Self = StObject.set(x, "advanceOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvanceOnUndefined: Self = StObject.set(x, "advanceOn", js.undefined)
+      inline def setAdvanceOnUndefined: Self = StObject.set(x, "advanceOn", js.undefined)
       
-      @scala.inline
-      def setAttachTo(value: js.Any): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
+      inline def setAttachTo(value: js.Any): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
+      inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
       
-      @scala.inline
-      def setBeforeShowPromise(value: js.Any): Self = StObject.set(x, "beforeShowPromise", value.asInstanceOf[js.Any])
+      inline def setBeforeShowPromise(value: js.Any): Self = StObject.set(x, "beforeShowPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeShowPromiseUndefined: Self = StObject.set(x, "beforeShowPromise", js.undefined)
+      inline def setBeforeShowPromiseUndefined: Self = StObject.set(x, "beforeShowPromise", js.undefined)
       
-      @scala.inline
-      def setButtons(value: js.Array[IShepherdTourButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[IShepherdTourButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setButtonsVarargs(value: IShepherdTourButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: IShepherdTourButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setScrollTo(value: Boolean): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
+      inline def setScrollTo(value: Boolean): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
+      inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
       
-      @scala.inline
-      def setShowCancelLink(value: Boolean): Self = StObject.set(x, "showCancelLink", value.asInstanceOf[js.Any])
+      inline def setShowCancelLink(value: Boolean): Self = StObject.set(x, "showCancelLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCancelLinkUndefined: Self = StObject.set(x, "showCancelLink", js.undefined)
+      inline def setShowCancelLinkUndefined: Self = StObject.set(x, "showCancelLink", js.undefined)
       
-      @scala.inline
-      def setShowOn(value: () => Boolean): Self = StObject.set(x, "showOn", js.Any.fromFunction0(value))
+      inline def setShowOn(value: () => Boolean): Self = StObject.set(x, "showOn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
+      inline def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
       
-      @scala.inline
-      def setTetherOptions(value: js.Any): Self = StObject.set(x, "tetherOptions", value.asInstanceOf[js.Any])
+      inline def setTetherOptions(value: js.Any): Self = StObject.set(x, "tetherOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTetherOptionsUndefined: Self = StObject.set(x, "tetherOptions", js.undefined)
+      inline def setTetherOptionsUndefined: Self = StObject.set(x, "tetherOptions", js.undefined)
       
-      @scala.inline
-      def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setWhen(value: js.Any): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      inline def setWhen(value: js.Any): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+      inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
     }
   }
   

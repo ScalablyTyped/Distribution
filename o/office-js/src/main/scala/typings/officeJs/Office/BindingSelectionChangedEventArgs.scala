@@ -65,8 +65,7 @@ trait BindingSelectionChangedEventArgs extends StObject {
 }
 object BindingSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     binding: Binding,
     columnCount: Double,
     rowCount: Double,
@@ -79,25 +78,18 @@ object BindingSelectionChangedEventArgs {
     __obj.asInstanceOf[BindingSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class BindingSelectionChangedEventArgsMutableBuilder[Self <: BindingSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BindingSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setBinding(value: Binding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: Binding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+    inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

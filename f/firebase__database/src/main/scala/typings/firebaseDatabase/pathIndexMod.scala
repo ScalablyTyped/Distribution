@@ -22,7 +22,7 @@ object pathIndexMod {
       */
     /* protected */ def extractChild(snap: Node): Node = js.native
     
-    var indexPath_ : js.Any = js.native
+    /* private */ var indexPath_ : js.Any = js.native
     
     /**
       * @inheritDoc

@@ -13,19 +13,15 @@ trait CreateFileSystemFromBackupResponse extends StObject {
 }
 object CreateFileSystemFromBackupResponse {
   
-  @scala.inline
-  def apply(): CreateFileSystemFromBackupResponse = {
+  inline def apply(): CreateFileSystemFromBackupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFileSystemFromBackupResponse]
   }
   
-  @scala.inline
-  implicit class CreateFileSystemFromBackupResponseMutableBuilder[Self <: CreateFileSystemFromBackupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFileSystemFromBackupResponse](x: Self) {
     
-    @scala.inline
-    def setFileSystem(value: FileSystem): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
+    inline def setFileSystem(value: FileSystem): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemUndefined: Self = StObject.set(x, "FileSystem", js.undefined)
+    inline def setFileSystemUndefined: Self = StObject.set(x, "FileSystem", js.undefined)
   }
 }

@@ -23,34 +23,25 @@ trait ListOnPremisesInstancesInput extends StObject {
 }
 object ListOnPremisesInstancesInput {
   
-  @scala.inline
-  def apply(): ListOnPremisesInstancesInput = {
+  inline def apply(): ListOnPremisesInstancesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOnPremisesInstancesInput]
   }
   
-  @scala.inline
-  implicit class ListOnPremisesInstancesInputMutableBuilder[Self <: ListOnPremisesInstancesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListOnPremisesInstancesInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
+    inline def setRegistrationStatus(value: RegistrationStatus): Self = StObject.set(x, "registrationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationStatusUndefined: Self = StObject.set(x, "registrationStatus", js.undefined)
+    inline def setRegistrationStatusUndefined: Self = StObject.set(x, "registrationStatus", js.undefined)
     
-    @scala.inline
-    def setTagFilters(value: TagFilterList): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
+    inline def setTagFilters(value: TagFilterList): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
+    inline def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
-    @scala.inline
-    def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
   }
 }

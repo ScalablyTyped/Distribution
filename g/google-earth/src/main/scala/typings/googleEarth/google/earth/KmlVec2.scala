@@ -77,8 +77,7 @@ trait KmlVec2 extends StObject {
 }
 object KmlVec2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getX: () => Double,
     getXUnits: () => KmlUnitsEnum,
     getY: () => Double,
@@ -93,34 +92,24 @@ object KmlVec2 {
     __obj.asInstanceOf[KmlVec2]
   }
   
-  @scala.inline
-  implicit class KmlVec2MutableBuilder[Self <: KmlVec2] (val x: Self) extends AnyVal {
+  extension [Self <: KmlVec2](x: Self) {
     
-    @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+    inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetXUnits(value: () => KmlUnitsEnum): Self = StObject.set(x, "getXUnits", js.Any.fromFunction0(value))
+    inline def setGetXUnits(value: () => KmlUnitsEnum): Self = StObject.set(x, "getXUnits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+    inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYUnits(value: () => KmlUnitsEnum): Self = StObject.set(x, "getYUnits", js.Any.fromFunction0(value))
+    inline def setGetYUnits(value: () => KmlUnitsEnum): Self = StObject.set(x, "getYUnits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    inline def setSet(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetX(value: Double => Unit): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
+    inline def setSetX(value: Double => Unit): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXUnits(value: KmlUnitsEnum => Unit): Self = StObject.set(x, "setXUnits", js.Any.fromFunction1(value))
+    inline def setSetXUnits(value: KmlUnitsEnum => Unit): Self = StObject.set(x, "setXUnits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
+    inline def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYUnits(value: KmlUnitsEnum => Unit): Self = StObject.set(x, "setYUnits", js.Any.fromFunction1(value))
+    inline def setSetYUnits(value: KmlUnitsEnum => Unit): Self = StObject.set(x, "setYUnits", js.Any.fromFunction1(value))
   }
 }

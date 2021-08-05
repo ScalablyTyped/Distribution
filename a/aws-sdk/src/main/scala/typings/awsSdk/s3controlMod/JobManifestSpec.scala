@@ -18,25 +18,19 @@ trait JobManifestSpec extends StObject {
 }
 object JobManifestSpec {
   
-  @scala.inline
-  def apply(Format: JobManifestFormat): JobManifestSpec = {
+  inline def apply(Format: JobManifestFormat): JobManifestSpec = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobManifestSpec]
   }
   
-  @scala.inline
-  implicit class JobManifestSpecMutableBuilder[Self <: JobManifestSpec] (val x: Self) extends AnyVal {
+  extension [Self <: JobManifestSpec](x: Self) {
     
-    @scala.inline
-    def setFields(value: JobManifestFieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: JobManifestFieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: JobManifestFieldName*): Self = StObject.set(x, "Fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: JobManifestFieldName*): Self = StObject.set(x, "Fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFormat(value: JobManifestFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: JobManifestFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
   }
 }

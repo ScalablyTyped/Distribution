@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFillType extends StObject
 object MsoFillType {
   
-  @scala.inline
-  def msoFillBackground: `5` = 5.asInstanceOf[`5`]
+  inline def msoFillBackground: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoFillGradient: `3` = 3.asInstanceOf[`3`]
+  inline def msoFillGradient: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoFillMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoFillMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoFillPatterned: `2` = 2.asInstanceOf[`2`]
+  inline def msoFillPatterned: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoFillPicture: `6` = 6.asInstanceOf[`6`]
+  inline def msoFillPicture: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoFillSolid: `1` = 1.asInstanceOf[`1`]
+  inline def msoFillSolid: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoFillTextured: `4` = 4.asInstanceOf[`4`]
+  inline def msoFillTextured: `4` = 4.asInstanceOf[`4`]
 }

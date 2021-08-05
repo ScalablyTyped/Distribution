@@ -18,8 +18,7 @@ trait TransactionStats extends StObject {
 }
 object TransactionStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changedTableCount: () => Double,
     deletedRowCount: () => Double,
     insertedRowCount: () => Double,
@@ -30,22 +29,16 @@ object TransactionStats {
     __obj.asInstanceOf[TransactionStats]
   }
   
-  @scala.inline
-  implicit class TransactionStatsMutableBuilder[Self <: TransactionStats] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionStats](x: Self) {
     
-    @scala.inline
-    def setChangedTableCount(value: () => Double): Self = StObject.set(x, "changedTableCount", js.Any.fromFunction0(value))
+    inline def setChangedTableCount(value: () => Double): Self = StObject.set(x, "changedTableCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeletedRowCount(value: () => Double): Self = StObject.set(x, "deletedRowCount", js.Any.fromFunction0(value))
+    inline def setDeletedRowCount(value: () => Double): Self = StObject.set(x, "deletedRowCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertedRowCount(value: () => Double): Self = StObject.set(x, "insertedRowCount", js.Any.fromFunction0(value))
+    inline def setInsertedRowCount(value: () => Double): Self = StObject.set(x, "insertedRowCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccess(value: () => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdatedRowCount(value: () => Double): Self = StObject.set(x, "updatedRowCount", js.Any.fromFunction0(value))
+    inline def setUpdatedRowCount(value: () => Double): Self = StObject.set(x, "updatedRowCount", js.Any.fromFunction0(value))
   }
 }

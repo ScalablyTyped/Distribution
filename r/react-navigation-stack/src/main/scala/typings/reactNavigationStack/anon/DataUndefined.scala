@@ -10,16 +10,13 @@ trait DataUndefined extends StObject {
 }
 object DataUndefined {
   
-  @scala.inline
-  def apply(data: Unit): DataUndefined = {
+  inline def apply(data: Unit): DataUndefined = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataUndefined]
   }
   
-  @scala.inline
-  implicit class DataUndefinedMutableBuilder[Self <: DataUndefined] (val x: Self) extends AnyVal {
+  extension [Self <: DataUndefined](x: Self) {
     
-    @scala.inline
-    def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

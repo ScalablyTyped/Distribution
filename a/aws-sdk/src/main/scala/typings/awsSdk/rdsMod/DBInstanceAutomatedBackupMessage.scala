@@ -18,28 +18,21 @@ trait DBInstanceAutomatedBackupMessage extends StObject {
 }
 object DBInstanceAutomatedBackupMessage {
   
-  @scala.inline
-  def apply(): DBInstanceAutomatedBackupMessage = {
+  inline def apply(): DBInstanceAutomatedBackupMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBInstanceAutomatedBackupMessage]
   }
   
-  @scala.inline
-  implicit class DBInstanceAutomatedBackupMessageMutableBuilder[Self <: DBInstanceAutomatedBackupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBInstanceAutomatedBackupMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceAutomatedBackups(value: DBInstanceAutomatedBackupList): Self = StObject.set(x, "DBInstanceAutomatedBackups", value.asInstanceOf[js.Any])
+    inline def setDBInstanceAutomatedBackups(value: DBInstanceAutomatedBackupList): Self = StObject.set(x, "DBInstanceAutomatedBackups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceAutomatedBackupsUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackups", js.undefined)
+    inline def setDBInstanceAutomatedBackupsUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackups", js.undefined)
     
-    @scala.inline
-    def setDBInstanceAutomatedBackupsVarargs(value: DBInstanceAutomatedBackup*): Self = StObject.set(x, "DBInstanceAutomatedBackups", js.Array(value :_*))
+    inline def setDBInstanceAutomatedBackupsVarargs(value: DBInstanceAutomatedBackup*): Self = StObject.set(x, "DBInstanceAutomatedBackups", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

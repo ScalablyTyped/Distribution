@@ -17,13 +17,10 @@ object WizardTravelType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BACKWARD: `2` = 2.asInstanceOf[`2`]
+    inline def BACKWARD: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FINISH: `3` = 3.asInstanceOf[`3`]
+    inline def FINISH: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def FORWARD: `1` = 1.asInstanceOf[`1`]
+    inline def FORWARD: `1` = 1.asInstanceOf[`1`]
   }
 }

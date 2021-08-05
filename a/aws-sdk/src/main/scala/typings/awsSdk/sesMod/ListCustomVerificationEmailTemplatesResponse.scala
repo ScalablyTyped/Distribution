@@ -18,28 +18,21 @@ trait ListCustomVerificationEmailTemplatesResponse extends StObject {
 }
 object ListCustomVerificationEmailTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListCustomVerificationEmailTemplatesResponse = {
+  inline def apply(): ListCustomVerificationEmailTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCustomVerificationEmailTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListCustomVerificationEmailTemplatesResponseMutableBuilder[Self <: ListCustomVerificationEmailTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCustomVerificationEmailTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setCustomVerificationEmailTemplates(value: CustomVerificationEmailTemplates): Self = StObject.set(x, "CustomVerificationEmailTemplates", value.asInstanceOf[js.Any])
+    inline def setCustomVerificationEmailTemplates(value: CustomVerificationEmailTemplates): Self = StObject.set(x, "CustomVerificationEmailTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomVerificationEmailTemplatesUndefined: Self = StObject.set(x, "CustomVerificationEmailTemplates", js.undefined)
+    inline def setCustomVerificationEmailTemplatesUndefined: Self = StObject.set(x, "CustomVerificationEmailTemplates", js.undefined)
     
-    @scala.inline
-    def setCustomVerificationEmailTemplatesVarargs(value: CustomVerificationEmailTemplate*): Self = StObject.set(x, "CustomVerificationEmailTemplates", js.Array(value :_*))
+    inline def setCustomVerificationEmailTemplatesVarargs(value: CustomVerificationEmailTemplate*): Self = StObject.set(x, "CustomVerificationEmailTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

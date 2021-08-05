@@ -10,16 +10,13 @@ trait Card extends StObject {
 }
 object Card {
   
-  @scala.inline
-  def apply(card: String): Card = {
+  inline def apply(card: String): Card = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
     __obj.asInstanceOf[Card]
   }
   
-  @scala.inline
-  implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
+  extension [Self <: Card](x: Self) {
     
-    @scala.inline
-    def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
   }
 }

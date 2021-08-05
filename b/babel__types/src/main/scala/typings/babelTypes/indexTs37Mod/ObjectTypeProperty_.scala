@@ -34,8 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ObjectTypeProperty_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     key: Identifier_ | StringLiteral_,
     kind: init | get | set,
     optional: Boolean,
@@ -48,34 +47,24 @@ object ObjectTypeProperty_ {
     __obj.asInstanceOf[ObjectTypeProperty_]
   }
   
-  @scala.inline
-  implicit class ObjectTypeProperty_MutableBuilder[Self <: ObjectTypeProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectTypeProperty_](x: Self) {
     
-    @scala.inline
-    def setKey(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProto(value: Boolean): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
+    inline def setProto(value: Boolean): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ObjectTypeProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectTypeProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceNull: Self = StObject.set(x, "variance", null)
+    inline def setVarianceNull: Self = StObject.set(x, "variance", null)
   }
 }

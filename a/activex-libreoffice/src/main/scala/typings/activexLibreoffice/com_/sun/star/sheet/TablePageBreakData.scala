@@ -18,19 +18,15 @@ trait TablePageBreakData extends StObject {
 }
 object TablePageBreakData {
   
-  @scala.inline
-  def apply(ManualBreak: Boolean, Position: Double): TablePageBreakData = {
+  inline def apply(ManualBreak: Boolean, Position: Double): TablePageBreakData = {
     val __obj = js.Dynamic.literal(ManualBreak = ManualBreak.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TablePageBreakData]
   }
   
-  @scala.inline
-  implicit class TablePageBreakDataMutableBuilder[Self <: TablePageBreakData] (val x: Self) extends AnyVal {
+  extension [Self <: TablePageBreakData](x: Self) {
     
-    @scala.inline
-    def setManualBreak(value: Boolean): Self = StObject.set(x, "ManualBreak", value.asInstanceOf[js.Any])
+    inline def setManualBreak(value: Boolean): Self = StObject.set(x, "ManualBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

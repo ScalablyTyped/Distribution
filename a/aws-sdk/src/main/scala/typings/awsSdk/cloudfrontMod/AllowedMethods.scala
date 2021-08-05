@@ -20,28 +20,21 @@ trait AllowedMethods extends StObject {
 }
 object AllowedMethods {
   
-  @scala.inline
-  def apply(Items: MethodsList, Quantity: integer): AllowedMethods = {
+  inline def apply(Items: MethodsList, Quantity: integer): AllowedMethods = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowedMethods]
   }
   
-  @scala.inline
-  implicit class AllowedMethodsMutableBuilder[Self <: AllowedMethods] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedMethods](x: Self) {
     
-    @scala.inline
-    def setCachedMethods(value: CachedMethods): Self = StObject.set(x, "CachedMethods", value.asInstanceOf[js.Any])
+    inline def setCachedMethods(value: CachedMethods): Self = StObject.set(x, "CachedMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachedMethodsUndefined: Self = StObject.set(x, "CachedMethods", js.undefined)
+    inline def setCachedMethodsUndefined: Self = StObject.set(x, "CachedMethods", js.undefined)
     
-    @scala.inline
-    def setItems(value: MethodsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: MethodsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Method*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Method*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

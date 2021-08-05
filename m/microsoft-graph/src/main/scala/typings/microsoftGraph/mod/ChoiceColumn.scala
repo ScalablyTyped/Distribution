@@ -17,43 +17,31 @@ trait ChoiceColumn extends StObject {
 }
 object ChoiceColumn {
   
-  @scala.inline
-  def apply(): ChoiceColumn = {
+  inline def apply(): ChoiceColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChoiceColumn]
   }
   
-  @scala.inline
-  implicit class ChoiceColumnMutableBuilder[Self <: ChoiceColumn] (val x: Self) extends AnyVal {
+  extension [Self <: ChoiceColumn](x: Self) {
     
-    @scala.inline
-    def setAllowTextEntry(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTextEntry", value.asInstanceOf[js.Any])
+    inline def setAllowTextEntry(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTextEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTextEntryNull: Self = StObject.set(x, "allowTextEntry", null)
+    inline def setAllowTextEntryNull: Self = StObject.set(x, "allowTextEntry", null)
     
-    @scala.inline
-    def setAllowTextEntryUndefined: Self = StObject.set(x, "allowTextEntry", js.undefined)
+    inline def setAllowTextEntryUndefined: Self = StObject.set(x, "allowTextEntry", js.undefined)
     
-    @scala.inline
-    def setChoices(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoicesNull: Self = StObject.set(x, "choices", null)
+    inline def setChoicesNull: Self = StObject.set(x, "choices", null)
     
-    @scala.inline
-    def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
+    inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
     
-    @scala.inline
-    def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
+    inline def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
+    inline def setDisplayAsNull: Self = StObject.set(x, "displayAs", null)
     
-    @scala.inline
-    def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
+    inline def setDisplayAsUndefined: Self = StObject.set(x, "displayAs", js.undefined)
   }
 }

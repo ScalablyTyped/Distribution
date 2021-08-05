@@ -16,25 +16,19 @@ trait FactoryProvidedIn[T] extends StObject {
 }
 object FactoryProvidedIn {
   
-  @scala.inline
-  def apply[T](factory: () => T): FactoryProvidedIn[T] = {
+  inline def apply[T](factory: () => T): FactoryProvidedIn[T] = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory))
     __obj.asInstanceOf[FactoryProvidedIn[T]]
   }
   
-  @scala.inline
-  implicit class FactoryProvidedInMutableBuilder[Self <: FactoryProvidedIn[?], T] (val x: Self & FactoryProvidedIn[T]) extends AnyVal {
+  extension [Self <: FactoryProvidedIn[?], T](x: Self & FactoryProvidedIn[T]) {
     
-    @scala.inline
-    def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
+    inline def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
+    inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     
-    @scala.inline
-    def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
+    inline def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
   }
 }

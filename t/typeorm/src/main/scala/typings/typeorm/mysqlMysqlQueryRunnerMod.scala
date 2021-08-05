@@ -250,7 +250,7 @@ object mysqlMysqlQueryRunnerMod {
     /**
       * Promise used to obtain a database connection from a pool for a first time.
       */
-    var databaseConnectionPromise: js.Promise[js.Any] = js.native
+    /* protected */ var databaseConnectionPromise: js.Promise[js.Any] = js.native
     
     /* protected */ def deleteViewDefinitionSql(viewOrPath: String): js.Promise[Query] = js.native
     /**

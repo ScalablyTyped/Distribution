@@ -16,19 +16,15 @@ trait GoogleActionsTransactionsV3TransactionRequirementsCheckResult
 }
 object GoogleActionsTransactionsV3TransactionRequirementsCheckResult {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3TransactionRequirementsCheckResult = {
+  inline def apply(): GoogleActionsTransactionsV3TransactionRequirementsCheckResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3TransactionRequirementsCheckResult]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3TransactionRequirementsCheckResultMutableBuilder[Self <: GoogleActionsTransactionsV3TransactionRequirementsCheckResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3TransactionRequirementsCheckResult](x: Self) {
     
-    @scala.inline
-    def setResultType(value: GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+    inline def setResultType(value: GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
+    inline def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
   }
 }

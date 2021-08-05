@@ -18,37 +18,27 @@ trait MPNSNotificationPayload
 }
 object MPNSNotificationPayload {
   
-  @scala.inline
-  def apply(payload: js.Object): MPNSNotificationPayload = {
+  inline def apply(payload: js.Object): MPNSNotificationPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[MPNSNotificationPayload]
   }
   
-  @scala.inline
-  implicit class MPNSNotificationPayloadMutableBuilder[Self <: MPNSNotificationPayload] (val x: Self) extends AnyVal {
+  extension [Self <: MPNSNotificationPayload](x: Self) {
     
-    @scala.inline
-    def setBackContent(value: String): Self = StObject.set(x, "backContent", value.asInstanceOf[js.Any])
+    inline def setBackContent(value: String): Self = StObject.set(x, "backContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackContentUndefined: Self = StObject.set(x, "backContent", js.undefined)
+    inline def setBackContentUndefined: Self = StObject.set(x, "backContent", js.undefined)
     
-    @scala.inline
-    def setBackTitle(value: String): Self = StObject.set(x, "backTitle", value.asInstanceOf[js.Any])
+    inline def setBackTitle(value: String): Self = StObject.set(x, "backTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackTitleUndefined: Self = StObject.set(x, "backTitle", js.undefined)
+    inline def setBackTitleUndefined: Self = StObject.set(x, "backTitle", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

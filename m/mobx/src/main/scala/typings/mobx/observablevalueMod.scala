@@ -40,7 +40,7 @@ object observablevalueMod {
     def this(value: T, enhancer: IEnhancer[T], name: Unit, notifySpy: Boolean, equals: IEqualsComparer[js.Any]) = this()
     def this(value: T, enhancer: IEnhancer[T], name: Unit, notifySpy: Unit, equals: IEqualsComparer[js.Any]) = this()
     
-    var dehanceValue: js.Any = js.native
+    /* private */ var dehanceValue: js.Any = js.native
     
     var dehancer: js.Any = js.native
     
@@ -49,7 +49,7 @@ object observablevalueMod {
     @JSName("enhancer")
     var enhancer_Original: IEnhancer[T] = js.native
     
-    @JSName("equals")
+    /* private */ @JSName("equals")
     var equals_FObservableValue: js.Any = js.native
     
     var hasUnreportedChange: Boolean = js.native
@@ -57,7 +57,7 @@ object observablevalueMod {
     /* InferMemberOverrides */
     override def intercept(handler: IInterceptor[IValueWillChange[T]]): Lambda = js.native
     
-    var prepareNewValue: js.Any = js.native
+    /* private */ var prepareNewValue: js.Any = js.native
     
     def setNewValue(newValue: T): Unit = js.native
     
@@ -69,8 +69,7 @@ object observablevalueMod {
     var value: js.Any = js.native
   }
   
-  @scala.inline
-  def isObservableValue(x: js.Any): /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableValue")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean]
+  inline def isObservableValue(x: js.Any): /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableValue")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean]
   
   @js.native
   trait IObservableValue[T] extends StObject {
@@ -93,22 +92,18 @@ object observablevalueMod {
   }
   object IValueDidChange {
     
-    @scala.inline
-    def apply[T](newValue: T, `object`: js.Any): IValueDidChange[T] = {
+    inline def apply[T](newValue: T, `object`: js.Any): IValueDidChange[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[IValueDidChange[T]]
     }
     
-    @scala.inline
-    implicit class IValueDidChangeMutableBuilder[Self <: IValueDidChange[?], T] (val x: Self & IValueDidChange[T]) extends AnyVal {
+    extension [Self <: IValueDidChange[?], T](x: Self & IValueDidChange[T]) {
       
-      @scala.inline
-      def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+      inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }
   }
   
@@ -122,25 +117,20 @@ object observablevalueMod {
   }
   object IValueWillChange {
     
-    @scala.inline
-    def apply[T](newValue: T, `object`: js.Any): IValueWillChange[T] = {
+    inline def apply[T](newValue: T, `object`: js.Any): IValueWillChange[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[IValueWillChange[T]]
     }
     
-    @scala.inline
-    implicit class IValueWillChangeMutableBuilder[Self <: IValueWillChange[?], T] (val x: Self & IValueWillChange[T]) extends AnyVal {
+    extension [Self <: IValueWillChange[?], T](x: Self & IValueWillChange[T]) {
       
-      @scala.inline
-      def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

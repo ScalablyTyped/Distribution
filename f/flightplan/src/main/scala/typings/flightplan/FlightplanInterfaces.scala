@@ -15,26 +15,20 @@ object FlightplanInterfaces {
   }
   object CommandOptions {
     
-    @scala.inline
-    def apply(): CommandOptions = {
+    inline def apply(): CommandOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandOptions]
     }
     
-    @scala.inline
-    implicit class CommandOptionsMutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommandOptions](x: Self) {
       
-      @scala.inline
-      def setFailsafe(value: Boolean): Self = StObject.set(x, "failsafe", value.asInstanceOf[js.Any])
+      inline def setFailsafe(value: Boolean): Self = StObject.set(x, "failsafe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailsafeUndefined: Self = StObject.set(x, "failsafe", js.undefined)
+      inline def setFailsafeUndefined: Self = StObject.set(x, "failsafe", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -48,23 +42,18 @@ object FlightplanInterfaces {
   }
   object CommandResult {
     
-    @scala.inline
-    def apply(code: Double, stderr: String, stdout: String): CommandResult = {
+    inline def apply(code: Double, stderr: String, stdout: String): CommandResult = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandResult]
     }
     
-    @scala.inline
-    implicit class CommandResultMutableBuilder[Self <: CommandResult] (val x: Self) extends AnyVal {
+    extension [Self <: CommandResult](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,20 +86,16 @@ object FlightplanInterfaces {
   }
   object Host {
     
-    @scala.inline
-    def apply(host: String, port: Double): Host = {
+    inline def apply(host: String, port: Double): Host = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,26 +107,20 @@ object FlightplanInterfaces {
   }
   object PromptOptions {
     
-    @scala.inline
-    def apply(): PromptOptions = {
+    inline def apply(): PromptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromptOptions]
     }
     
-    @scala.inline
-    implicit class PromptOptionsMutableBuilder[Self <: PromptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PromptOptions](x: Self) {
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   
@@ -157,29 +136,22 @@ object FlightplanInterfaces {
   }
   object Runtime {
     
-    @scala.inline
-    def apply(hosts: js.Array[Host], options: js.Any, target: String, task: String): Runtime = {
+    inline def apply(hosts: js.Array[Host], options: js.Any, target: String, task: String): Runtime = {
       val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
       __obj.asInstanceOf[Runtime]
     }
     
-    @scala.inline
-    implicit class RuntimeMutableBuilder[Self <: Runtime] (val x: Self) extends AnyVal {
+    extension [Self <: Runtime](x: Self) {
       
-      @scala.inline
-      def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,20 +163,16 @@ object FlightplanInterfaces {
   }
   object SudoOptions {
     
-    @scala.inline
-    def apply(): SudoOptions = {
+    inline def apply(): SudoOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SudoOptions]
     }
     
-    @scala.inline
-    implicit class SudoOptionsMutableBuilder[Self <: SudoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SudoOptions](x: Self) {
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -220,29 +188,22 @@ object FlightplanInterfaces {
   }
   object TargetOptions {
     
-    @scala.inline
-    def apply(agent: String, host: String, username: String): TargetOptions = {
+    inline def apply(agent: String, host: String, username: String): TargetOptions = {
       val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[TargetOptions]
     }
     
-    @scala.inline
-    implicit class TargetOptionsMutableBuilder[Self <: TargetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TargetOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailsafe(value: Boolean): Self = StObject.set(x, "failsafe", value.asInstanceOf[js.Any])
+      inline def setFailsafe(value: Boolean): Self = StObject.set(x, "failsafe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailsafeUndefined: Self = StObject.set(x, "failsafe", js.undefined)
+      inline def setFailsafeUndefined: Self = StObject.set(x, "failsafe", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   

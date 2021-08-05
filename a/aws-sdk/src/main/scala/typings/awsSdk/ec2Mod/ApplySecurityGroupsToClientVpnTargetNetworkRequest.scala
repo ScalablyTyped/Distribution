@@ -28,8 +28,7 @@ trait ApplySecurityGroupsToClientVpnTargetNetworkRequest extends StObject {
 }
 object ApplySecurityGroupsToClientVpnTargetNetworkRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientVpnEndpointId: ClientVpnEndpointId,
     SecurityGroupIds: ClientVpnSecurityGroupIdSet,
     VpcId: VpcId
@@ -38,25 +37,18 @@ object ApplySecurityGroupsToClientVpnTargetNetworkRequest {
     __obj.asInstanceOf[ApplySecurityGroupsToClientVpnTargetNetworkRequest]
   }
   
-  @scala.inline
-  implicit class ApplySecurityGroupsToClientVpnTargetNetworkRequestMutableBuilder[Self <: ApplySecurityGroupsToClientVpnTargetNetworkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApplySecurityGroupsToClientVpnTargetNetworkRequest](x: Self) {
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

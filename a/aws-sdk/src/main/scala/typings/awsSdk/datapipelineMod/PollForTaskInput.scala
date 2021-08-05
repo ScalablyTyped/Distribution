@@ -23,28 +23,21 @@ trait PollForTaskInput extends StObject {
 }
 object PollForTaskInput {
   
-  @scala.inline
-  def apply(workerGroup: String): PollForTaskInput = {
+  inline def apply(workerGroup: String): PollForTaskInput = {
     val __obj = js.Dynamic.literal(workerGroup = workerGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollForTaskInput]
   }
   
-  @scala.inline
-  implicit class PollForTaskInputMutableBuilder[Self <: PollForTaskInput] (val x: Self) extends AnyVal {
+  extension [Self <: PollForTaskInput](x: Self) {
     
-    @scala.inline
-    def setHostname(value: id): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: id): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setInstanceIdentity(value: InstanceIdentity): Self = StObject.set(x, "instanceIdentity", value.asInstanceOf[js.Any])
+    inline def setInstanceIdentity(value: InstanceIdentity): Self = StObject.set(x, "instanceIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdentityUndefined: Self = StObject.set(x, "instanceIdentity", js.undefined)
+    inline def setInstanceIdentityUndefined: Self = StObject.set(x, "instanceIdentity", js.undefined)
     
-    @scala.inline
-    def setWorkerGroup(value: String): Self = StObject.set(x, "workerGroup", value.asInstanceOf[js.Any])
+    inline def setWorkerGroup(value: String): Self = StObject.set(x, "workerGroup", value.asInstanceOf[js.Any])
   }
 }

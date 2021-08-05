@@ -18,8 +18,7 @@ trait DocumentAcceleratorConfiguration
 }
 object DocumentAcceleratorConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllKeyEvents: SafeArray[KeyEvent],
     acquire: () => Unit,
     addConfigurationListener: XUIConfigurationListener => Unit,
@@ -46,10 +45,8 @@ object DocumentAcceleratorConfiguration {
     __obj.asInstanceOf[DocumentAcceleratorConfiguration]
   }
   
-  @scala.inline
-  implicit class DocumentAcceleratorConfigurationMutableBuilder[Self <: DocumentAcceleratorConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAcceleratorConfiguration](x: Self) {
     
-    @scala.inline
-    def setCreateWithDocumentRoot(value: XStorage => Unit): Self = StObject.set(x, "createWithDocumentRoot", js.Any.fromFunction1(value))
+    inline def setCreateWithDocumentRoot(value: XStorage => Unit): Self = StObject.set(x, "createWithDocumentRoot", js.Any.fromFunction1(value))
   }
 }

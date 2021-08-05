@@ -18,25 +18,19 @@ trait ErrorMessageDisplayingEventUIParam extends StObject {
 }
 object ErrorMessageDisplayingEventUIParam {
   
-  @scala.inline
-  def apply(): ErrorMessageDisplayingEventUIParam = {
+  inline def apply(): ErrorMessageDisplayingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorMessageDisplayingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ErrorMessageDisplayingEventUIParamMutableBuilder[Self <: ErrorMessageDisplayingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorMessageDisplayingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

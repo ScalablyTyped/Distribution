@@ -13,17 +13,14 @@ object anon {
   }
   object Create {
     
-    @scala.inline
-    def apply(create: /* repeated */ js.Any => Store): Create = {
+    inline def apply(create: /* repeated */ js.Any => Store): Create = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[Create]
     }
     
-    @scala.inline
-    implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+    extension [Self <: Create](x: Self) {
       
-      @scala.inline
-      def setCreate(value: /* repeated */ js.Any => Store): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* repeated */ js.Any => Store): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
 }

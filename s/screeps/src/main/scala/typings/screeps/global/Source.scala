@@ -61,6 +61,5 @@ class Source protected ()
 }
 object Source {
   
-  @scala.inline
-  def apply: SourceConstructor = js.Dynamic.global.selectDynamic("Source").asInstanceOf[SourceConstructor]
+  inline def apply: SourceConstructor = js.Dynamic.global.selectDynamic("Source").asInstanceOf[SourceConstructor]
 }

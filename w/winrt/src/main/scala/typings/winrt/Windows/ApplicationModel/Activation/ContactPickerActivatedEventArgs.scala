@@ -10,8 +10,7 @@ trait ContactPickerActivatedEventArgs
      with IContactPickerActivatedEventArgs
 object ContactPickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contactPickerUI: ContactPickerUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

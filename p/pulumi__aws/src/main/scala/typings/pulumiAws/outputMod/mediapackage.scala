@@ -15,20 +15,16 @@ object mediapackage {
   }
   object ChannelHlsIngest {
     
-    @scala.inline
-    def apply(ingestEndpoints: js.Array[ChannelHlsIngestIngestEndpoint]): ChannelHlsIngest = {
+    inline def apply(ingestEndpoints: js.Array[ChannelHlsIngestIngestEndpoint]): ChannelHlsIngest = {
       val __obj = js.Dynamic.literal(ingestEndpoints = ingestEndpoints.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelHlsIngest]
     }
     
-    @scala.inline
-    implicit class ChannelHlsIngestMutableBuilder[Self <: ChannelHlsIngest] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelHlsIngest](x: Self) {
       
-      @scala.inline
-      def setIngestEndpoints(value: js.Array[ChannelHlsIngestIngestEndpoint]): Self = StObject.set(x, "ingestEndpoints", value.asInstanceOf[js.Any])
+      inline def setIngestEndpoints(value: js.Array[ChannelHlsIngestIngestEndpoint]): Self = StObject.set(x, "ingestEndpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIngestEndpointsVarargs(value: ChannelHlsIngestIngestEndpoint*): Self = StObject.set(x, "ingestEndpoints", js.Array(value :_*))
+      inline def setIngestEndpointsVarargs(value: ChannelHlsIngestIngestEndpoint*): Self = StObject.set(x, "ingestEndpoints", js.Array(value :_*))
     }
   }
   
@@ -51,23 +47,18 @@ object mediapackage {
   }
   object ChannelHlsIngestIngestEndpoint {
     
-    @scala.inline
-    def apply(password: String, url: String, username: String): ChannelHlsIngestIngestEndpoint = {
+    inline def apply(password: String, url: String, username: String): ChannelHlsIngestIngestEndpoint = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelHlsIngestIngestEndpoint]
     }
     
-    @scala.inline
-    implicit class ChannelHlsIngestIngestEndpointMutableBuilder[Self <: ChannelHlsIngestIngestEndpoint] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelHlsIngestIngestEndpoint](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

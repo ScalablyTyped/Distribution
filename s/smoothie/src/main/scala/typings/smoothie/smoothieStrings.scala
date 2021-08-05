@@ -8,16 +8,13 @@ object smoothieStrings {
   
   @js.native
   sealed trait bezier extends StObject
-  @scala.inline
-  def bezier: bezier = "bezier".asInstanceOf[bezier]
+  inline def bezier: bezier = "bezier".asInstanceOf[bezier]
   
   @js.native
   sealed trait linear extends StObject
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
   sealed trait step extends StObject
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
+  inline def step: step = "step".asInstanceOf[step]
 }

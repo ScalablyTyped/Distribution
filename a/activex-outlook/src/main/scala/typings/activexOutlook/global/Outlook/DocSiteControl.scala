@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook._DocSiteControl")
 @js.native
-class DocSiteControl protected ()
+/* private */ class DocSiteControl ()
   extends StObject
      with typings.activexOutlook.Outlook.DocSiteControl {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook._DocSiteControl_typekey")
   var OutlookDot_DocSiteControl_typekey: typings.activexOutlook.Outlook.DocSiteControl = js.native
   

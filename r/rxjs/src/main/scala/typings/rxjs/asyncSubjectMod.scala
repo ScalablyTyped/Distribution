@@ -11,10 +11,10 @@ object asyncSubjectMod {
   @js.native
   class AsyncSubject[T] () extends Subject[T] {
     
-    var hasCompleted: js.Any = js.native
+    /* private */ var hasCompleted: js.Any = js.native
     
-    var hasNext: js.Any = js.native
+    /* private */ var hasNext: js.Any = js.native
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
   }
 }

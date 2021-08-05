@@ -15,8 +15,7 @@ trait PipeableProfunctor4[F /* <: /* import warning: transforms.QualifyReference
 }
 object PipeableProfunctor4 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
     map: js.Function1[js.Any, js.Any] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, B> */ js.Any
@@ -30,11 +29,9 @@ object PipeableProfunctor4 {
     __obj.asInstanceOf[PipeableProfunctor4[F]]
   }
   
-  @scala.inline
-  implicit class PipeableProfunctor4MutableBuilder[Self <: PipeableProfunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & PipeableProfunctor4[F]) extends AnyVal {
+  extension [Self <: PipeableProfunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & PipeableProfunctor4[F]) {
     
-    @scala.inline
-    def setPromap(
+    inline def setPromap(
       value: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fbc */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, D, B> */ js.Any

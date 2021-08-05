@@ -21,31 +21,23 @@ trait DescribeBlock
 }
 object DescribeBlock {
   
-  @scala.inline
-  def apply(hook: typings.jestTypes.circusMod.Hook): DescribeBlock = {
+  inline def apply(hook: typings.jestTypes.circusMod.Hook): DescribeBlock = {
     val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], name = "hook_success")
     __obj.asInstanceOf[DescribeBlock]
   }
   
-  @scala.inline
-  implicit class DescribeBlockMutableBuilder[Self <: DescribeBlock] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBlock](x: Self) {
     
-    @scala.inline
-    def setDescribeBlock(value: typings.jestTypes.circusMod.DescribeBlock): Self = StObject.set(x, "describeBlock", value.asInstanceOf[js.Any])
+    inline def setDescribeBlock(value: typings.jestTypes.circusMod.DescribeBlock): Self = StObject.set(x, "describeBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribeBlockUndefined: Self = StObject.set(x, "describeBlock", js.undefined)
+    inline def setDescribeBlockUndefined: Self = StObject.set(x, "describeBlock", js.undefined)
     
-    @scala.inline
-    def setHook(value: typings.jestTypes.circusMod.Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: typings.jestTypes.circusMod.Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: hook_success): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: hook_success): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

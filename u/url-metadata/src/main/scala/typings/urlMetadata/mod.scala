@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(url: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(url: String): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def apply(url: String, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   @JSImport("url-metadata", JSImport.Namespace)
   @js.native
@@ -36,62 +34,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDescriptionLength(value: Double): Self = StObject.set(x, "descriptionLength", value.asInstanceOf[js.Any])
+      inline def setDescriptionLength(value: Double): Self = StObject.set(x, "descriptionLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionLengthUndefined: Self = StObject.set(x, "descriptionLength", js.undefined)
+      inline def setDescriptionLengthUndefined: Self = StObject.set(x, "descriptionLength", js.undefined)
       
-      @scala.inline
-      def setEncode(value: () => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
+      inline def setEncode(value: () => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setEnsureSecureImageRequest(value: Boolean): Self = StObject.set(x, "ensureSecureImageRequest", value.asInstanceOf[js.Any])
+      inline def setEnsureSecureImageRequest(value: Boolean): Self = StObject.set(x, "ensureSecureImageRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnsureSecureImageRequestUndefined: Self = StObject.set(x, "ensureSecureImageRequest", js.undefined)
+      inline def setEnsureSecureImageRequestUndefined: Self = StObject.set(x, "ensureSecureImageRequest", js.undefined)
       
-      @scala.inline
-      def setFromEmail(value: String): Self = StObject.set(x, "fromEmail", value.asInstanceOf[js.Any])
+      inline def setFromEmail(value: String): Self = StObject.set(x, "fromEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromEmailUndefined: Self = StObject.set(x, "fromEmail", js.undefined)
+      inline def setFromEmailUndefined: Self = StObject.set(x, "fromEmail", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: StringDictionary[String]): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: StringDictionary[String]): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -190,8 +170,7 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       canonical: String,
       description: String,
@@ -231,143 +210,97 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setArticleColonauthor(value: String): Self = StObject.set(x, "article:author", value.asInstanceOf[js.Any])
+      inline def setArticleColonauthor(value: String): Self = StObject.set(x, "article:author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArticleColonauthorUndefined: Self = StObject.set(x, "article:author", js.undefined)
+      inline def setArticleColonauthorUndefined: Self = StObject.set(x, "article:author", js.undefined)
       
-      @scala.inline
-      def setArticleColonexpiration_time(value: String): Self = StObject.set(x, "article:expiration_time", value.asInstanceOf[js.Any])
+      inline def setArticleColonexpiration_time(value: String): Self = StObject.set(x, "article:expiration_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArticleColonexpiration_timeUndefined: Self = StObject.set(x, "article:expiration_time", js.undefined)
+      inline def setArticleColonexpiration_timeUndefined: Self = StObject.set(x, "article:expiration_time", js.undefined)
       
-      @scala.inline
-      def setArticleColonmodified_time(value: String): Self = StObject.set(x, "article:modified_time", value.asInstanceOf[js.Any])
+      inline def setArticleColonmodified_time(value: String): Self = StObject.set(x, "article:modified_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArticleColonmodified_timeUndefined: Self = StObject.set(x, "article:modified_time", js.undefined)
+      inline def setArticleColonmodified_timeUndefined: Self = StObject.set(x, "article:modified_time", js.undefined)
       
-      @scala.inline
-      def setArticleColonpublished_time(value: String): Self = StObject.set(x, "article:published_time", value.asInstanceOf[js.Any])
+      inline def setArticleColonpublished_time(value: String): Self = StObject.set(x, "article:published_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArticleColonpublished_timeUndefined: Self = StObject.set(x, "article:published_time", js.undefined)
+      inline def setArticleColonpublished_timeUndefined: Self = StObject.set(x, "article:published_time", js.undefined)
       
-      @scala.inline
-      def setArticleColonsection(value: String): Self = StObject.set(x, "article:section", value.asInstanceOf[js.Any])
+      inline def setArticleColonsection(value: String): Self = StObject.set(x, "article:section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArticleColonsectionUndefined: Self = StObject.set(x, "article:section", js.undefined)
+      inline def setArticleColonsectionUndefined: Self = StObject.set(x, "article:section", js.undefined)
       
-      @scala.inline
-      def setArticleColontag(value: String): Self = StObject.set(x, "article:tag", value.asInstanceOf[js.Any])
+      inline def setArticleColontag(value: String): Self = StObject.set(x, "article:tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArticleColontagUndefined: Self = StObject.set(x, "article:tag", js.undefined)
+      inline def setArticleColontagUndefined: Self = StObject.set(x, "article:tag", js.undefined)
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanonical(value: String): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
+      inline def setCanonical(value: String): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonarticleColonauthor(value: String): Self = StObject.set(x, "og:article:author", value.asInstanceOf[js.Any])
+      inline def setOgColonarticleColonauthor(value: String): Self = StObject.set(x, "og:article:author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonarticleColonauthorUndefined: Self = StObject.set(x, "og:article:author", js.undefined)
+      inline def setOgColonarticleColonauthorUndefined: Self = StObject.set(x, "og:article:author", js.undefined)
       
-      @scala.inline
-      def setOgColonarticleColonexpiration_time(value: String): Self = StObject.set(x, "og:article:expiration_time", value.asInstanceOf[js.Any])
+      inline def setOgColonarticleColonexpiration_time(value: String): Self = StObject.set(x, "og:article:expiration_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonarticleColonexpiration_timeUndefined: Self = StObject.set(x, "og:article:expiration_time", js.undefined)
+      inline def setOgColonarticleColonexpiration_timeUndefined: Self = StObject.set(x, "og:article:expiration_time", js.undefined)
       
-      @scala.inline
-      def setOgColonarticleColonmodified_time(value: String): Self = StObject.set(x, "og:article:modified_time", value.asInstanceOf[js.Any])
+      inline def setOgColonarticleColonmodified_time(value: String): Self = StObject.set(x, "og:article:modified_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonarticleColonmodified_timeUndefined: Self = StObject.set(x, "og:article:modified_time", js.undefined)
+      inline def setOgColonarticleColonmodified_timeUndefined: Self = StObject.set(x, "og:article:modified_time", js.undefined)
       
-      @scala.inline
-      def setOgColonarticleColonpublished_time(value: String): Self = StObject.set(x, "og:article:published_time", value.asInstanceOf[js.Any])
+      inline def setOgColonarticleColonpublished_time(value: String): Self = StObject.set(x, "og:article:published_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonarticleColonpublished_timeUndefined: Self = StObject.set(x, "og:article:published_time", js.undefined)
+      inline def setOgColonarticleColonpublished_timeUndefined: Self = StObject.set(x, "og:article:published_time", js.undefined)
       
-      @scala.inline
-      def setOgColonarticleColonsection(value: String): Self = StObject.set(x, "og:article:section", value.asInstanceOf[js.Any])
+      inline def setOgColonarticleColonsection(value: String): Self = StObject.set(x, "og:article:section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonarticleColonsectionUndefined: Self = StObject.set(x, "og:article:section", js.undefined)
+      inline def setOgColonarticleColonsectionUndefined: Self = StObject.set(x, "og:article:section", js.undefined)
       
-      @scala.inline
-      def setOgColonarticleColontag(value: String): Self = StObject.set(x, "og:article:tag", value.asInstanceOf[js.Any])
+      inline def setOgColonarticleColontag(value: String): Self = StObject.set(x, "og:article:tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonarticleColontagUndefined: Self = StObject.set(x, "og:article:tag", js.undefined)
+      inline def setOgColonarticleColontagUndefined: Self = StObject.set(x, "og:article:tag", js.undefined)
       
-      @scala.inline
-      def setOgColondescription(value: String): Self = StObject.set(x, "og:description", value.asInstanceOf[js.Any])
+      inline def setOgColondescription(value: String): Self = StObject.set(x, "og:description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColondeterminer(value: String): Self = StObject.set(x, "og:determiner", value.asInstanceOf[js.Any])
+      inline def setOgColondeterminer(value: String): Self = StObject.set(x, "og:determiner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonimage(value: String): Self = StObject.set(x, "og:image", value.asInstanceOf[js.Any])
+      inline def setOgColonimage(value: String): Self = StObject.set(x, "og:image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonimageColonheight(value: String): Self = StObject.set(x, "og:image:height", value.asInstanceOf[js.Any])
+      inline def setOgColonimageColonheight(value: String): Self = StObject.set(x, "og:image:height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonimageColonsecure_url(value: String): Self = StObject.set(x, "og:image:secure_url", value.asInstanceOf[js.Any])
+      inline def setOgColonimageColonsecure_url(value: String): Self = StObject.set(x, "og:image:secure_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonimageColontype(value: String): Self = StObject.set(x, "og:image:type", value.asInstanceOf[js.Any])
+      inline def setOgColonimageColontype(value: String): Self = StObject.set(x, "og:image:type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonimageColonwidth(value: String): Self = StObject.set(x, "og:image:width", value.asInstanceOf[js.Any])
+      inline def setOgColonimageColonwidth(value: String): Self = StObject.set(x, "og:image:width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonlocale(value: String): Self = StObject.set(x, "og:locale", value.asInstanceOf[js.Any])
+      inline def setOgColonlocale(value: String): Self = StObject.set(x, "og:locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonlocaleColonalternate(value: String): Self = StObject.set(x, "og:locale:alternate", value.asInstanceOf[js.Any])
+      inline def setOgColonlocaleColonalternate(value: String): Self = StObject.set(x, "og:locale:alternate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonsite_name(value: String): Self = StObject.set(x, "og:site_name", value.asInstanceOf[js.Any])
+      inline def setOgColonsite_name(value: String): Self = StObject.set(x, "og:site_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColontitle(value: String): Self = StObject.set(x, "og:title", value.asInstanceOf[js.Any])
+      inline def setOgColontitle(value: String): Self = StObject.set(x, "og:title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColontype(value: String): Self = StObject.set(x, "og:type", value.asInstanceOf[js.Any])
+      inline def setOgColontype(value: String): Self = StObject.set(x, "og:type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgColonurl(value: String): Self = StObject.set(x, "og:url", value.asInstanceOf[js.Any])
+      inline def setOgColonurl(value: String): Self = StObject.set(x, "og:url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

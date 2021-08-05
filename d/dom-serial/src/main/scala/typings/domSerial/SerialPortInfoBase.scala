@@ -22,8 +22,7 @@ trait SerialPortInfoBase extends StObject {
 }
 object SerialPortInfoBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     locationId: String,
     manufacturer: String,
     product: String,
@@ -36,28 +35,20 @@ object SerialPortInfoBase {
     __obj.asInstanceOf[SerialPortInfoBase]
   }
   
-  @scala.inline
-  implicit class SerialPortInfoBaseMutableBuilder[Self <: SerialPortInfoBase] (val x: Self) extends AnyVal {
+  extension [Self <: SerialPortInfoBase](x: Self) {
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorId(value: String): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+    inline def setVendorId(value: String): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
   }
 }

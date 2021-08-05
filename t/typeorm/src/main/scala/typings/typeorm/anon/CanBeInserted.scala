@@ -31,73 +31,51 @@ trait CanBeInserted extends StObject {
 }
 object CanBeInserted {
   
-  @scala.inline
-  def apply(metadata: typings.typeorm.entityMetadataMod.EntityMetadata): CanBeInserted = {
+  inline def apply(metadata: typings.typeorm.entityMetadataMod.EntityMetadata): CanBeInserted = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanBeInserted]
   }
   
-  @scala.inline
-  implicit class CanBeInsertedMutableBuilder[Self <: CanBeInserted] (val x: Self) extends AnyVal {
+  extension [Self <: CanBeInserted](x: Self) {
     
-    @scala.inline
-    def setCanBeInserted(value: Boolean): Self = StObject.set(x, "canBeInserted", value.asInstanceOf[js.Any])
+    inline def setCanBeInserted(value: Boolean): Self = StObject.set(x, "canBeInserted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeInsertedUndefined: Self = StObject.set(x, "canBeInserted", js.undefined)
+    inline def setCanBeInsertedUndefined: Self = StObject.set(x, "canBeInserted", js.undefined)
     
-    @scala.inline
-    def setCanBeRecovered(value: Boolean): Self = StObject.set(x, "canBeRecovered", value.asInstanceOf[js.Any])
+    inline def setCanBeRecovered(value: Boolean): Self = StObject.set(x, "canBeRecovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeRecoveredUndefined: Self = StObject.set(x, "canBeRecovered", js.undefined)
+    inline def setCanBeRecoveredUndefined: Self = StObject.set(x, "canBeRecovered", js.undefined)
     
-    @scala.inline
-    def setCanBeSoftRemoved(value: Boolean): Self = StObject.set(x, "canBeSoftRemoved", value.asInstanceOf[js.Any])
+    inline def setCanBeSoftRemoved(value: Boolean): Self = StObject.set(x, "canBeSoftRemoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeSoftRemovedUndefined: Self = StObject.set(x, "canBeSoftRemoved", js.undefined)
+    inline def setCanBeSoftRemovedUndefined: Self = StObject.set(x, "canBeSoftRemoved", js.undefined)
     
-    @scala.inline
-    def setCanBeUpdated(value: Boolean): Self = StObject.set(x, "canBeUpdated", value.asInstanceOf[js.Any])
+    inline def setCanBeUpdated(value: Boolean): Self = StObject.set(x, "canBeUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeUpdatedUndefined: Self = StObject.set(x, "canBeUpdated", js.undefined)
+    inline def setCanBeUpdatedUndefined: Self = StObject.set(x, "canBeUpdated", js.undefined)
     
-    @scala.inline
-    def setChangeMaps(value: js.Array[SubjectChangeMap]): Self = StObject.set(x, "changeMaps", value.asInstanceOf[js.Any])
+    inline def setChangeMaps(value: js.Array[SubjectChangeMap]): Self = StObject.set(x, "changeMaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeMapsUndefined: Self = StObject.set(x, "changeMaps", js.undefined)
+    inline def setChangeMapsUndefined: Self = StObject.set(x, "changeMaps", js.undefined)
     
-    @scala.inline
-    def setChangeMapsVarargs(value: SubjectChangeMap*): Self = StObject.set(x, "changeMaps", js.Array(value :_*))
+    inline def setChangeMapsVarargs(value: SubjectChangeMap*): Self = StObject.set(x, "changeMaps", js.Array(value :_*))
     
-    @scala.inline
-    def setEntity(value: ObjectLiteral): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: ObjectLiteral): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: ObjectLiteral): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: ObjectLiteral): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: typings.typeorm.entityMetadataMod.EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustBeRemoved(value: Boolean): Self = StObject.set(x, "mustBeRemoved", value.asInstanceOf[js.Any])
+    inline def setMustBeRemoved(value: Boolean): Self = StObject.set(x, "mustBeRemoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustBeRemovedUndefined: Self = StObject.set(x, "mustBeRemoved", js.undefined)
+    inline def setMustBeRemovedUndefined: Self = StObject.set(x, "mustBeRemoved", js.undefined)
     
-    @scala.inline
-    def setParentSubject(value: Subject): Self = StObject.set(x, "parentSubject", value.asInstanceOf[js.Any])
+    inline def setParentSubject(value: Subject): Self = StObject.set(x, "parentSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSubjectUndefined: Self = StObject.set(x, "parentSubject", js.undefined)
+    inline def setParentSubjectUndefined: Self = StObject.set(x, "parentSubject", js.undefined)
   }
 }

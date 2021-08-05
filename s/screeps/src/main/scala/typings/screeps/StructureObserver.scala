@@ -21,8 +21,7 @@ trait StructureObserver
 }
 object StructureObserver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -40,10 +39,8 @@ object StructureObserver {
     __obj.asInstanceOf[StructureObserver]
   }
   
-  @scala.inline
-  implicit class StructureObserverMutableBuilder[Self <: StructureObserver] (val x: Self) extends AnyVal {
+  extension [Self <: StructureObserver](x: Self) {
     
-    @scala.inline
-    def setObserveRoom(value: String => ScreepsReturnCode): Self = StObject.set(x, "observeRoom", js.Any.fromFunction1(value))
+    inline def setObserveRoom(value: String => ScreepsReturnCode): Self = StObject.set(x, "observeRoom", js.Any.fromFunction1(value))
   }
 }

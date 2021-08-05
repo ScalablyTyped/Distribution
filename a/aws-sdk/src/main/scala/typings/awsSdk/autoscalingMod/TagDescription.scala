@@ -33,43 +33,31 @@ trait TagDescription extends StObject {
 }
 object TagDescription {
   
-  @scala.inline
-  def apply(): TagDescription = {
+  inline def apply(): TagDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagDescription]
   }
   
-  @scala.inline
-  implicit class TagDescriptionMutableBuilder[Self <: TagDescription] (val x: Self) extends AnyVal {
+  extension [Self <: TagDescription](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setPropagateAtLaunch(value: PropagateAtLaunch): Self = StObject.set(x, "PropagateAtLaunch", value.asInstanceOf[js.Any])
+    inline def setPropagateAtLaunch(value: PropagateAtLaunch): Self = StObject.set(x, "PropagateAtLaunch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropagateAtLaunchUndefined: Self = StObject.set(x, "PropagateAtLaunch", js.undefined)
+    inline def setPropagateAtLaunchUndefined: Self = StObject.set(x, "PropagateAtLaunch", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: XmlString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: XmlString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: XmlString): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: XmlString): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setValue(value: TagValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TagValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

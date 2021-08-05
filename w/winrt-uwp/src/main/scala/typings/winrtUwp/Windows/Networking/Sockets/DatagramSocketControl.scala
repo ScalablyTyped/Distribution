@@ -24,8 +24,7 @@ trait DatagramSocketControl extends StObject {
 }
 object DatagramSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dontFragment: Boolean,
     inboundBufferSizeInBytes: Double,
     multicastOnly: Boolean,
@@ -36,22 +35,16 @@ object DatagramSocketControl {
     __obj.asInstanceOf[DatagramSocketControl]
   }
   
-  @scala.inline
-  implicit class DatagramSocketControlMutableBuilder[Self <: DatagramSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: DatagramSocketControl](x: Self) {
     
-    @scala.inline
-    def setDontFragment(value: Boolean): Self = StObject.set(x, "dontFragment", value.asInstanceOf[js.Any])
+    inline def setDontFragment(value: Boolean): Self = StObject.set(x, "dontFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "inboundBufferSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setInboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "inboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMulticastOnly(value: Boolean): Self = StObject.set(x, "multicastOnly", value.asInstanceOf[js.Any])
+    inline def setMulticastOnly(value: Boolean): Self = StObject.set(x, "multicastOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
+    inline def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
+    inline def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
   }
 }

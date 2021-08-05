@@ -33,7 +33,7 @@ object errorsMod {
          with Error {
       def this(message: String) = this()
       
-      var internalReason: BridgeErrorReason = js.native
+      /* protected */ var internalReason: BridgeErrorReason = js.native
       
       /* CompleteClass */
       var message: String = js.native
@@ -71,31 +71,23 @@ object errorsMod {
       def this(message: String) = this()
     }
     
-    @scala.inline
-    def wrap[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
-    @scala.inline
-    def wrap[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrap[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrap[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
     /**
       * @deprecated Use {@link wrapError}
       */
-    @scala.inline
-    def wrap[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
-    @scala.inline
-    def wrap[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrap[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrap[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
     
-    @scala.inline
-    def wrapError[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
-    @scala.inline
-    def wrapError[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrapError[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrapError[T /* <: EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
     /**
       * Append the old error message to the new one and keep its stack trace.
       * Example:
       *     throw wrapError(e, HighLevelError, "This error is more specific");
       */
-    @scala.inline
-    def wrapError[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
-    @scala.inline
-    def wrapError[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrapError[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
+    inline def wrapError[T /* <: EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[EventNotHandledError]
     
     /* Rewritten from type alias, can be one of: 
       - typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_not_handled
@@ -107,20 +99,15 @@ object errorsMod {
     trait BridgeErrorReason extends StObject
     object BridgeErrorReason {
       
-      @scala.inline
-      def mDotevent_not_handled: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_not_handled = "m.event_not_handled".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_not_handled]
+      inline def mDotevent_not_handled: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_not_handled = "m.event_not_handled".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_not_handled]
       
-      @scala.inline
-      def mDotevent_too_old: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_too_old = "m.event_too_old".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_too_old]
+      inline def mDotevent_too_old: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_too_old = "m.event_too_old".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_too_old]
       
-      @scala.inline
-      def mDotevent_unknown: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_unknown = "m.event_unknown".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_unknown]
+      inline def mDotevent_unknown: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_unknown = "m.event_unknown".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotevent_unknown]
       
-      @scala.inline
-      def mDotforeign_network_error: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotforeign_network_error = "m.foreign_network_error".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotforeign_network_error]
+      inline def mDotforeign_network_error: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotforeign_network_error = "m.foreign_network_error".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotforeign_network_error]
       
-      @scala.inline
-      def mDotinternal_error: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotinternal_error = "m.internal_error".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotinternal_error]
+      inline def mDotinternal_error: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotinternal_error = "m.internal_error".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mDotinternal_error]
     }
   }
 }

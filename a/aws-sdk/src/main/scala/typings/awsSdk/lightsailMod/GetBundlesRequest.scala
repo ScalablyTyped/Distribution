@@ -18,25 +18,19 @@ trait GetBundlesRequest extends StObject {
 }
 object GetBundlesRequest {
   
-  @scala.inline
-  def apply(): GetBundlesRequest = {
+  inline def apply(): GetBundlesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBundlesRequest]
   }
   
-  @scala.inline
-  implicit class GetBundlesRequestMutableBuilder[Self <: GetBundlesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBundlesRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
+    inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
+    inline def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

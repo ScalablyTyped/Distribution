@@ -17,40 +17,29 @@ trait HttpArchiveRequest extends StObject {
 }
 object HttpArchiveRequest {
   
-  @scala.inline
-  def apply(): HttpArchiveRequest = {
+  inline def apply(): HttpArchiveRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpArchiveRequest]
   }
   
-  @scala.inline
-  implicit class HttpArchiveRequestMutableBuilder[Self <: HttpArchiveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HttpArchiveRequest](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Array[NameValuePair]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[NameValuePair]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: NameValuePair*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: NameValuePair*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPostData(value: MimeType): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: MimeType): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
+    inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

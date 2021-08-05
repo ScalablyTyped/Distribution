@@ -25,31 +25,23 @@ trait SchemaInteraction extends StObject {
 }
 object SchemaInteraction {
   
-  @scala.inline
-  def apply(): SchemaInteraction = {
+  inline def apply(): SchemaInteraction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInteraction]
   }
   
-  @scala.inline
-  implicit class SchemaInteractionMutableBuilder[Self <: SchemaInteraction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInteraction](x: Self) {
     
-    @scala.inline
-    def setInteractionTime(value: String): Self = StObject.set(x, "interactionTime", value.asInstanceOf[js.Any])
+    inline def setInteractionTime(value: String): Self = StObject.set(x, "interactionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractionTimeUndefined: Self = StObject.set(x, "interactionTime", js.undefined)
+    inline def setInteractionTimeUndefined: Self = StObject.set(x, "interactionTime", js.undefined)
     
-    @scala.inline
-    def setPrincipal(value: SchemaPrincipal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: SchemaPrincipal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

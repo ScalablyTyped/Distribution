@@ -38,8 +38,7 @@ object tooltipContainerMod {
   }
   object ITooltipContainer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       getTooltipPositionStyles: ITooltipPosition => StringDictionary[String | Double]
@@ -48,17 +47,13 @@ object tooltipContainerMod {
       __obj.asInstanceOf[ITooltipContainer]
     }
     
-    @scala.inline
-    implicit class ITooltipContainerMutableBuilder[Self <: ITooltipContainer] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipContainer](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipPositionStyles(value: ITooltipPosition => StringDictionary[String | Double]): Self = StObject.set(x, "getTooltipPositionStyles", js.Any.fromFunction1(value))
+      inline def setGetTooltipPositionStyles(value: ITooltipPosition => StringDictionary[String | Double]): Self = StObject.set(x, "getTooltipPositionStyles", js.Any.fromFunction1(value))
     }
   }
   
@@ -67,14 +62,14 @@ object tooltipContainerMod {
     extends typings.playable.stylableMod.default[IStyles]
        with ITooltipContainer {
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _getTooltipLeftX: js.Any = js.native
+    /* private */ var _getTooltipLeftX: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _tooltip: js.Any = js.native
+    /* private */ var _tooltip: js.Any = js.native
     
     def getTooltipPositionStyles(position: ITooltipPositionFunction): Bottom | Left = js.native
   }

@@ -13,19 +13,15 @@ trait DescribeMigrationTaskResult extends StObject {
 }
 object DescribeMigrationTaskResult {
   
-  @scala.inline
-  def apply(): DescribeMigrationTaskResult = {
+  inline def apply(): DescribeMigrationTaskResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMigrationTaskResult]
   }
   
-  @scala.inline
-  implicit class DescribeMigrationTaskResultMutableBuilder[Self <: DescribeMigrationTaskResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMigrationTaskResult](x: Self) {
     
-    @scala.inline
-    def setMigrationTask(value: MigrationTask): Self = StObject.set(x, "MigrationTask", value.asInstanceOf[js.Any])
+    inline def setMigrationTask(value: MigrationTask): Self = StObject.set(x, "MigrationTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrationTaskUndefined: Self = StObject.set(x, "MigrationTask", js.undefined)
+    inline def setMigrationTaskUndefined: Self = StObject.set(x, "MigrationTask", js.undefined)
   }
 }

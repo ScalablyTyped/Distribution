@@ -23,8 +23,7 @@ trait XLayerSupplier
 }
 object XLayerSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LayerManager: XNameAccess,
     acquire: () => Unit,
     getLayerManager: () => XNameAccess,
@@ -35,13 +34,10 @@ object XLayerSupplier {
     __obj.asInstanceOf[XLayerSupplier]
   }
   
-  @scala.inline
-  implicit class XLayerSupplierMutableBuilder[Self <: XLayerSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XLayerSupplier](x: Self) {
     
-    @scala.inline
-    def setGetLayerManager(value: () => XNameAccess): Self = StObject.set(x, "getLayerManager", js.Any.fromFunction0(value))
+    inline def setGetLayerManager(value: () => XNameAccess): Self = StObject.set(x, "getLayerManager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLayerManager(value: XNameAccess): Self = StObject.set(x, "LayerManager", value.asInstanceOf[js.Any])
+    inline def setLayerManager(value: XNameAccess): Self = StObject.set(x, "LayerManager", value.asInstanceOf[js.Any])
   }
 }

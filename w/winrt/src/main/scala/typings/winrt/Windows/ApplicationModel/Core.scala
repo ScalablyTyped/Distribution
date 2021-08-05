@@ -17,8 +17,7 @@ object Core {
        with ICoreApplicationView
   object CoreApplicationView {
     
-    @scala.inline
-    def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: js.Any): CoreApplicationView = {
+    inline def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: js.Any): CoreApplicationView = {
       val __obj = js.Dynamic.literal(coreWindow = coreWindow.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoreApplicationView]
     }
@@ -42,8 +41,7 @@ object Core {
   }
   object ICoreApplication {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCurrentView: () => CoreApplicationView,
       id: String,
       onresuming: js.Any,
@@ -56,29 +54,21 @@ object Core {
       __obj.asInstanceOf[ICoreApplication]
     }
     
-    @scala.inline
-    implicit class ICoreApplicationMutableBuilder[Self <: ICoreApplication] (val x: Self) extends AnyVal {
+    extension [Self <: ICoreApplication](x: Self) {
       
-      @scala.inline
-      def setGetCurrentView(value: () => CoreApplicationView): Self = StObject.set(x, "getCurrentView", js.Any.fromFunction0(value))
+      inline def setGetCurrentView(value: () => CoreApplicationView): Self = StObject.set(x, "getCurrentView", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnresuming(value: js.Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
+      inline def setOnresuming(value: js.Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnsuspending(value: js.Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
+      inline def setOnsuspending(value: js.Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: IFrameworkViewSource => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+      inline def setRun(value: IFrameworkViewSource => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRunWithActivationFactories(value: IGetActivationFactory => Unit): Self = StObject.set(x, "runWithActivationFactories", js.Any.fromFunction1(value))
+      inline def setRunWithActivationFactories(value: IGetActivationFactory => Unit): Self = StObject.set(x, "runWithActivationFactories", js.Any.fromFunction1(value))
     }
   }
   
@@ -90,20 +80,16 @@ object Core {
   }
   object ICoreApplicationExit {
     
-    @scala.inline
-    def apply(exit: () => Unit, onexiting: js.Any): ICoreApplicationExit = {
+    inline def apply(exit: () => Unit, onexiting: js.Any): ICoreApplicationExit = {
       val __obj = js.Dynamic.literal(exit = js.Any.fromFunction0(exit), onexiting = onexiting.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICoreApplicationExit]
     }
     
-    @scala.inline
-    implicit class ICoreApplicationExitMutableBuilder[Self <: ICoreApplicationExit] (val x: Self) extends AnyVal {
+    extension [Self <: ICoreApplicationExit](x: Self) {
       
-      @scala.inline
-      def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+      inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnexiting(value: js.Any): Self = StObject.set(x, "onexiting", value.asInstanceOf[js.Any])
+      inline def setOnexiting(value: js.Any): Self = StObject.set(x, "onexiting", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,20 +101,16 @@ object Core {
   }
   object ICoreApplicationUseCount {
     
-    @scala.inline
-    def apply(decrementApplicationUseCount: () => Unit, incrementApplicationUseCount: () => Unit): ICoreApplicationUseCount = {
+    inline def apply(decrementApplicationUseCount: () => Unit, incrementApplicationUseCount: () => Unit): ICoreApplicationUseCount = {
       val __obj = js.Dynamic.literal(decrementApplicationUseCount = js.Any.fromFunction0(decrementApplicationUseCount), incrementApplicationUseCount = js.Any.fromFunction0(incrementApplicationUseCount))
       __obj.asInstanceOf[ICoreApplicationUseCount]
     }
     
-    @scala.inline
-    implicit class ICoreApplicationUseCountMutableBuilder[Self <: ICoreApplicationUseCount] (val x: Self) extends AnyVal {
+    extension [Self <: ICoreApplicationUseCount](x: Self) {
       
-      @scala.inline
-      def setDecrementApplicationUseCount(value: () => Unit): Self = StObject.set(x, "decrementApplicationUseCount", js.Any.fromFunction0(value))
+      inline def setDecrementApplicationUseCount(value: () => Unit): Self = StObject.set(x, "decrementApplicationUseCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncrementApplicationUseCount(value: () => Unit): Self = StObject.set(x, "incrementApplicationUseCount", js.Any.fromFunction0(value))
+      inline def setIncrementApplicationUseCount(value: () => Unit): Self = StObject.set(x, "incrementApplicationUseCount", js.Any.fromFunction0(value))
     }
   }
   
@@ -144,26 +126,20 @@ object Core {
   }
   object ICoreApplicationView {
     
-    @scala.inline
-    def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: js.Any): ICoreApplicationView = {
+    inline def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: js.Any): ICoreApplicationView = {
       val __obj = js.Dynamic.literal(coreWindow = coreWindow.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICoreApplicationView]
     }
     
-    @scala.inline
-    implicit class ICoreApplicationViewMutableBuilder[Self <: ICoreApplicationView] (val x: Self) extends AnyVal {
+    extension [Self <: ICoreApplicationView](x: Self) {
       
-      @scala.inline
-      def setCoreWindow(value: CoreWindow): Self = StObject.set(x, "coreWindow", value.asInstanceOf[js.Any])
+      inline def setCoreWindow(value: CoreWindow): Self = StObject.set(x, "coreWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHosted(value: Boolean): Self = StObject.set(x, "isHosted", value.asInstanceOf[js.Any])
+      inline def setIsHosted(value: Boolean): Self = StObject.set(x, "isHosted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
+      inline def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
+      inline def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,8 +153,7 @@ object Core {
   }
   object ICoreImmersiveApplication {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createNewView: (String, String) => CoreApplicationView,
       mainView: CoreApplicationView,
       views: IVectorView[CoreApplicationView]
@@ -187,17 +162,13 @@ object Core {
       __obj.asInstanceOf[ICoreImmersiveApplication]
     }
     
-    @scala.inline
-    implicit class ICoreImmersiveApplicationMutableBuilder[Self <: ICoreImmersiveApplication] (val x: Self) extends AnyVal {
+    extension [Self <: ICoreImmersiveApplication](x: Self) {
       
-      @scala.inline
-      def setCreateNewView(value: (String, String) => CoreApplicationView): Self = StObject.set(x, "createNewView", js.Any.fromFunction2(value))
+      inline def setCreateNewView(value: (String, String) => CoreApplicationView): Self = StObject.set(x, "createNewView", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMainView(value: CoreApplicationView): Self = StObject.set(x, "mainView", value.asInstanceOf[js.Any])
+      inline def setMainView(value: CoreApplicationView): Self = StObject.set(x, "mainView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViews(value: IVectorView[CoreApplicationView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: IVectorView[CoreApplicationView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,8 +186,7 @@ object Core {
   }
   object IFrameworkView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initialize: CoreApplicationView => Unit,
       load: String => Unit,
       run: () => Unit,
@@ -227,23 +197,17 @@ object Core {
       __obj.asInstanceOf[IFrameworkView]
     }
     
-    @scala.inline
-    implicit class IFrameworkViewMutableBuilder[Self <: IFrameworkView] (val x: Self) extends AnyVal {
+    extension [Self <: IFrameworkView](x: Self) {
       
-      @scala.inline
-      def setInitialize(value: CoreApplicationView => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: CoreApplicationView => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoad(value: String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetWindow(value: CoreWindow => Unit): Self = StObject.set(x, "setWindow", js.Any.fromFunction1(value))
+      inline def setSetWindow(value: CoreWindow => Unit): Self = StObject.set(x, "setWindow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
+      inline def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
     }
   }
   
@@ -253,17 +217,14 @@ object Core {
   }
   object IFrameworkViewSource {
     
-    @scala.inline
-    def apply(createView: () => IFrameworkView): IFrameworkViewSource = {
+    inline def apply(createView: () => IFrameworkView): IFrameworkViewSource = {
       val __obj = js.Dynamic.literal(createView = js.Any.fromFunction0(createView))
       __obj.asInstanceOf[IFrameworkViewSource]
     }
     
-    @scala.inline
-    implicit class IFrameworkViewSourceMutableBuilder[Self <: IFrameworkViewSource] (val x: Self) extends AnyVal {
+    extension [Self <: IFrameworkViewSource](x: Self) {
       
-      @scala.inline
-      def setCreateView(value: () => IFrameworkView): Self = StObject.set(x, "createView", js.Any.fromFunction0(value))
+      inline def setCreateView(value: () => IFrameworkView): Self = StObject.set(x, "createView", js.Any.fromFunction0(value))
     }
   }
 }

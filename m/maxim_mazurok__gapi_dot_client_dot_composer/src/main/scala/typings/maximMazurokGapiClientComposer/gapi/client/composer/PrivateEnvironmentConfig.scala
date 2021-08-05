@@ -26,43 +26,31 @@ trait PrivateEnvironmentConfig extends StObject {
 }
 object PrivateEnvironmentConfig {
   
-  @scala.inline
-  def apply(): PrivateEnvironmentConfig = {
+  inline def apply(): PrivateEnvironmentConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivateEnvironmentConfig]
   }
   
-  @scala.inline
-  implicit class PrivateEnvironmentConfigMutableBuilder[Self <: PrivateEnvironmentConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateEnvironmentConfig](x: Self) {
     
-    @scala.inline
-    def setCloudSqlIpv4CidrBlock(value: String): Self = StObject.set(x, "cloudSqlIpv4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setCloudSqlIpv4CidrBlock(value: String): Self = StObject.set(x, "cloudSqlIpv4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudSqlIpv4CidrBlockUndefined: Self = StObject.set(x, "cloudSqlIpv4CidrBlock", js.undefined)
+    inline def setCloudSqlIpv4CidrBlockUndefined: Self = StObject.set(x, "cloudSqlIpv4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setEnablePrivateEnvironment(value: Boolean): Self = StObject.set(x, "enablePrivateEnvironment", value.asInstanceOf[js.Any])
+    inline def setEnablePrivateEnvironment(value: Boolean): Self = StObject.set(x, "enablePrivateEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivateEnvironmentUndefined: Self = StObject.set(x, "enablePrivateEnvironment", js.undefined)
+    inline def setEnablePrivateEnvironmentUndefined: Self = StObject.set(x, "enablePrivateEnvironment", js.undefined)
     
-    @scala.inline
-    def setPrivateClusterConfig(value: PrivateClusterConfig): Self = StObject.set(x, "privateClusterConfig", value.asInstanceOf[js.Any])
+    inline def setPrivateClusterConfig(value: PrivateClusterConfig): Self = StObject.set(x, "privateClusterConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateClusterConfigUndefined: Self = StObject.set(x, "privateClusterConfig", js.undefined)
+    inline def setPrivateClusterConfigUndefined: Self = StObject.set(x, "privateClusterConfig", js.undefined)
     
-    @scala.inline
-    def setWebServerIpv4CidrBlock(value: String): Self = StObject.set(x, "webServerIpv4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setWebServerIpv4CidrBlock(value: String): Self = StObject.set(x, "webServerIpv4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebServerIpv4CidrBlockUndefined: Self = StObject.set(x, "webServerIpv4CidrBlock", js.undefined)
+    inline def setWebServerIpv4CidrBlockUndefined: Self = StObject.set(x, "webServerIpv4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setWebServerIpv4ReservedRange(value: String): Self = StObject.set(x, "webServerIpv4ReservedRange", value.asInstanceOf[js.Any])
+    inline def setWebServerIpv4ReservedRange(value: String): Self = StObject.set(x, "webServerIpv4ReservedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebServerIpv4ReservedRangeUndefined: Self = StObject.set(x, "webServerIpv4ReservedRange", js.undefined)
+    inline def setWebServerIpv4ReservedRangeUndefined: Self = StObject.set(x, "webServerIpv4ReservedRange", js.undefined)
   }
 }

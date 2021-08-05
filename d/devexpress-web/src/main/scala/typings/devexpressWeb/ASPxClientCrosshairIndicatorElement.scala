@@ -16,16 +16,13 @@ trait ASPxClientCrosshairIndicatorElement extends StObject {
 }
 object ASPxClientCrosshairIndicatorElement {
   
-  @scala.inline
-  def apply(Indicator: ASPxClientIndicator): ASPxClientCrosshairIndicatorElement = {
+  inline def apply(Indicator: ASPxClientIndicator): ASPxClientCrosshairIndicatorElement = {
     val __obj = js.Dynamic.literal(Indicator = Indicator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCrosshairIndicatorElement]
   }
   
-  @scala.inline
-  implicit class ASPxClientCrosshairIndicatorElementMutableBuilder[Self <: ASPxClientCrosshairIndicatorElement] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCrosshairIndicatorElement](x: Self) {
     
-    @scala.inline
-    def setIndicator(value: ASPxClientIndicator): Self = StObject.set(x, "Indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: ASPxClientIndicator): Self = StObject.set(x, "Indicator", value.asInstanceOf[js.Any])
   }
 }

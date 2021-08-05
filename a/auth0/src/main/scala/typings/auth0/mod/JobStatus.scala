@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobStatus extends StObject
 object JobStatus {
   
-  @scala.inline
-  def completed: typings.auth0.auth0Strings.completed = "completed".asInstanceOf[typings.auth0.auth0Strings.completed]
+  inline def completed: typings.auth0.auth0Strings.completed = "completed".asInstanceOf[typings.auth0.auth0Strings.completed]
   
-  @scala.inline
-  def failed: typings.auth0.auth0Strings.failed = "failed".asInstanceOf[typings.auth0.auth0Strings.failed]
+  inline def failed: typings.auth0.auth0Strings.failed = "failed".asInstanceOf[typings.auth0.auth0Strings.failed]
   
-  @scala.inline
-  def pending: typings.auth0.auth0Strings.pending = "pending".asInstanceOf[typings.auth0.auth0Strings.pending]
+  inline def pending: typings.auth0.auth0Strings.pending = "pending".asInstanceOf[typings.auth0.auth0Strings.pending]
   
-  @scala.inline
-  def processing: typings.auth0.auth0Strings.processing = "processing".asInstanceOf[typings.auth0.auth0Strings.processing]
+  inline def processing: typings.auth0.auth0Strings.processing = "processing".asInstanceOf[typings.auth0.auth0Strings.processing]
 }

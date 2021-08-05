@@ -19,22 +19,17 @@ trait BarcodeScannerReport extends StObject {
 }
 object BarcodeScannerReport {
   
-  @scala.inline
-  def apply(scanData: IBuffer, scanDataLabel: IBuffer, scanDataType: Double): BarcodeScannerReport = {
+  inline def apply(scanData: IBuffer, scanDataLabel: IBuffer, scanDataType: Double): BarcodeScannerReport = {
     val __obj = js.Dynamic.literal(scanData = scanData.asInstanceOf[js.Any], scanDataLabel = scanDataLabel.asInstanceOf[js.Any], scanDataType = scanDataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeScannerReport]
   }
   
-  @scala.inline
-  implicit class BarcodeScannerReportMutableBuilder[Self <: BarcodeScannerReport] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeScannerReport](x: Self) {
     
-    @scala.inline
-    def setScanData(value: IBuffer): Self = StObject.set(x, "scanData", value.asInstanceOf[js.Any])
+    inline def setScanData(value: IBuffer): Self = StObject.set(x, "scanData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanDataLabel(value: IBuffer): Self = StObject.set(x, "scanDataLabel", value.asInstanceOf[js.Any])
+    inline def setScanDataLabel(value: IBuffer): Self = StObject.set(x, "scanDataLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanDataType(value: Double): Self = StObject.set(x, "scanDataType", value.asInstanceOf[js.Any])
+    inline def setScanDataType(value: Double): Self = StObject.set(x, "scanDataType", value.asInstanceOf[js.Any])
   }
 }

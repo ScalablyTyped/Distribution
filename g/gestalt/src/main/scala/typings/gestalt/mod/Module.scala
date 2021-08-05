@@ -27,6 +27,5 @@ object Module {
   @JSImport("gestalt", "Module.Expandable")
   @js.native
   def Expandable: FC[ModuleExpandableProps] = js.native
-  @scala.inline
-  def Expandable_=(x: FC[ModuleExpandableProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expandable")(x.asInstanceOf[js.Any])
+  inline def Expandable_=(x: FC[ModuleExpandableProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expandable")(x.asInstanceOf[js.Any])
 }

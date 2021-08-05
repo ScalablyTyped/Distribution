@@ -54,94 +54,65 @@ trait TestMatrix extends StObject {
 }
 object TestMatrix {
   
-  @scala.inline
-  def apply(): TestMatrix = {
+  inline def apply(): TestMatrix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestMatrix]
   }
   
-  @scala.inline
-  implicit class TestMatrixMutableBuilder[Self <: TestMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: TestMatrix](x: Self) {
     
-    @scala.inline
-    def setClientInfo(value: ClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
+    inline def setClientInfo(value: ClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
+    inline def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
-    @scala.inline
-    def setEnvironmentMatrix(value: EnvironmentMatrix): Self = StObject.set(x, "environmentMatrix", value.asInstanceOf[js.Any])
+    inline def setEnvironmentMatrix(value: EnvironmentMatrix): Self = StObject.set(x, "environmentMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentMatrixUndefined: Self = StObject.set(x, "environmentMatrix", js.undefined)
+    inline def setEnvironmentMatrixUndefined: Self = StObject.set(x, "environmentMatrix", js.undefined)
     
-    @scala.inline
-    def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
+    inline def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailFastUndefined: Self = StObject.set(x, "failFast", js.undefined)
+    inline def setFailFastUndefined: Self = StObject.set(x, "failFast", js.undefined)
     
-    @scala.inline
-    def setFlakyTestAttempts(value: Double): Self = StObject.set(x, "flakyTestAttempts", value.asInstanceOf[js.Any])
+    inline def setFlakyTestAttempts(value: Double): Self = StObject.set(x, "flakyTestAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlakyTestAttemptsUndefined: Self = StObject.set(x, "flakyTestAttempts", js.undefined)
+    inline def setFlakyTestAttemptsUndefined: Self = StObject.set(x, "flakyTestAttempts", js.undefined)
     
-    @scala.inline
-    def setInvalidMatrixDetails(value: String): Self = StObject.set(x, "invalidMatrixDetails", value.asInstanceOf[js.Any])
+    inline def setInvalidMatrixDetails(value: String): Self = StObject.set(x, "invalidMatrixDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidMatrixDetailsUndefined: Self = StObject.set(x, "invalidMatrixDetails", js.undefined)
+    inline def setInvalidMatrixDetailsUndefined: Self = StObject.set(x, "invalidMatrixDetails", js.undefined)
     
-    @scala.inline
-    def setOutcomeSummary(value: String): Self = StObject.set(x, "outcomeSummary", value.asInstanceOf[js.Any])
+    inline def setOutcomeSummary(value: String): Self = StObject.set(x, "outcomeSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeSummaryUndefined: Self = StObject.set(x, "outcomeSummary", js.undefined)
+    inline def setOutcomeSummaryUndefined: Self = StObject.set(x, "outcomeSummary", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setResultStorage(value: ResultStorage): Self = StObject.set(x, "resultStorage", value.asInstanceOf[js.Any])
+    inline def setResultStorage(value: ResultStorage): Self = StObject.set(x, "resultStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultStorageUndefined: Self = StObject.set(x, "resultStorage", js.undefined)
+    inline def setResultStorageUndefined: Self = StObject.set(x, "resultStorage", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTestExecutions(value: js.Array[TestExecution]): Self = StObject.set(x, "testExecutions", value.asInstanceOf[js.Any])
+    inline def setTestExecutions(value: js.Array[TestExecution]): Self = StObject.set(x, "testExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestExecutionsUndefined: Self = StObject.set(x, "testExecutions", js.undefined)
+    inline def setTestExecutionsUndefined: Self = StObject.set(x, "testExecutions", js.undefined)
     
-    @scala.inline
-    def setTestExecutionsVarargs(value: TestExecution*): Self = StObject.set(x, "testExecutions", js.Array(value :_*))
+    inline def setTestExecutionsVarargs(value: TestExecution*): Self = StObject.set(x, "testExecutions", js.Array(value :_*))
     
-    @scala.inline
-    def setTestMatrixId(value: String): Self = StObject.set(x, "testMatrixId", value.asInstanceOf[js.Any])
+    inline def setTestMatrixId(value: String): Self = StObject.set(x, "testMatrixId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestMatrixIdUndefined: Self = StObject.set(x, "testMatrixId", js.undefined)
+    inline def setTestMatrixIdUndefined: Self = StObject.set(x, "testMatrixId", js.undefined)
     
-    @scala.inline
-    def setTestSpecification(value: TestSpecification): Self = StObject.set(x, "testSpecification", value.asInstanceOf[js.Any])
+    inline def setTestSpecification(value: TestSpecification): Self = StObject.set(x, "testSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSpecificationUndefined: Self = StObject.set(x, "testSpecification", js.undefined)
+    inline def setTestSpecificationUndefined: Self = StObject.set(x, "testSpecification", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

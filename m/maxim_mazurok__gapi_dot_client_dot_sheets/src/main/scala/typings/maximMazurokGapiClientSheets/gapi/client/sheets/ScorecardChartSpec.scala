@@ -35,61 +35,43 @@ trait ScorecardChartSpec extends StObject {
 }
 object ScorecardChartSpec {
   
-  @scala.inline
-  def apply(): ScorecardChartSpec = {
+  inline def apply(): ScorecardChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScorecardChartSpec]
   }
   
-  @scala.inline
-  implicit class ScorecardChartSpecMutableBuilder[Self <: ScorecardChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ScorecardChartSpec](x: Self) {
     
-    @scala.inline
-    def setAggregateType(value: String): Self = StObject.set(x, "aggregateType", value.asInstanceOf[js.Any])
+    inline def setAggregateType(value: String): Self = StObject.set(x, "aggregateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateTypeUndefined: Self = StObject.set(x, "aggregateType", js.undefined)
+    inline def setAggregateTypeUndefined: Self = StObject.set(x, "aggregateType", js.undefined)
     
-    @scala.inline
-    def setBaselineValueData(value: ChartData): Self = StObject.set(x, "baselineValueData", value.asInstanceOf[js.Any])
+    inline def setBaselineValueData(value: ChartData): Self = StObject.set(x, "baselineValueData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineValueDataUndefined: Self = StObject.set(x, "baselineValueData", js.undefined)
+    inline def setBaselineValueDataUndefined: Self = StObject.set(x, "baselineValueData", js.undefined)
     
-    @scala.inline
-    def setBaselineValueFormat(value: BaselineValueFormat): Self = StObject.set(x, "baselineValueFormat", value.asInstanceOf[js.Any])
+    inline def setBaselineValueFormat(value: BaselineValueFormat): Self = StObject.set(x, "baselineValueFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineValueFormatUndefined: Self = StObject.set(x, "baselineValueFormat", js.undefined)
+    inline def setBaselineValueFormatUndefined: Self = StObject.set(x, "baselineValueFormat", js.undefined)
     
-    @scala.inline
-    def setCustomFormatOptions(value: ChartCustomNumberFormatOptions): Self = StObject.set(x, "customFormatOptions", value.asInstanceOf[js.Any])
+    inline def setCustomFormatOptions(value: ChartCustomNumberFormatOptions): Self = StObject.set(x, "customFormatOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFormatOptionsUndefined: Self = StObject.set(x, "customFormatOptions", js.undefined)
+    inline def setCustomFormatOptionsUndefined: Self = StObject.set(x, "customFormatOptions", js.undefined)
     
-    @scala.inline
-    def setKeyValueData(value: ChartData): Self = StObject.set(x, "keyValueData", value.asInstanceOf[js.Any])
+    inline def setKeyValueData(value: ChartData): Self = StObject.set(x, "keyValueData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValueDataUndefined: Self = StObject.set(x, "keyValueData", js.undefined)
+    inline def setKeyValueDataUndefined: Self = StObject.set(x, "keyValueData", js.undefined)
     
-    @scala.inline
-    def setKeyValueFormat(value: KeyValueFormat): Self = StObject.set(x, "keyValueFormat", value.asInstanceOf[js.Any])
+    inline def setKeyValueFormat(value: KeyValueFormat): Self = StObject.set(x, "keyValueFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValueFormatUndefined: Self = StObject.set(x, "keyValueFormat", js.undefined)
+    inline def setKeyValueFormatUndefined: Self = StObject.set(x, "keyValueFormat", js.undefined)
     
-    @scala.inline
-    def setNumberFormatSource(value: String): Self = StObject.set(x, "numberFormatSource", value.asInstanceOf[js.Any])
+    inline def setNumberFormatSource(value: String): Self = StObject.set(x, "numberFormatSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatSourceUndefined: Self = StObject.set(x, "numberFormatSource", js.undefined)
+    inline def setNumberFormatSourceUndefined: Self = StObject.set(x, "numberFormatSource", js.undefined)
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
   }
 }

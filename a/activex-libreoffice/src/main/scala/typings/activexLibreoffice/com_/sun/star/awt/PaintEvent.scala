@@ -28,19 +28,15 @@ trait PaintEvent
 }
 object PaintEvent {
   
-  @scala.inline
-  def apply(Count: Double, Source: XInterface, UpdateRect: Rectangle): PaintEvent = {
+  inline def apply(Count: Double, Source: XInterface, UpdateRect: Rectangle): PaintEvent = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], UpdateRect = UpdateRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaintEvent]
   }
   
-  @scala.inline
-  implicit class PaintEventMutableBuilder[Self <: PaintEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PaintEvent](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRect(value: Rectangle): Self = StObject.set(x, "UpdateRect", value.asInstanceOf[js.Any])
+    inline def setUpdateRect(value: Rectangle): Self = StObject.set(x, "UpdateRect", value.asInstanceOf[js.Any])
   }
 }

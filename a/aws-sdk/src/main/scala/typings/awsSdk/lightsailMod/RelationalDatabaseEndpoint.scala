@@ -18,25 +18,19 @@ trait RelationalDatabaseEndpoint extends StObject {
 }
 object RelationalDatabaseEndpoint {
   
-  @scala.inline
-  def apply(): RelationalDatabaseEndpoint = {
+  inline def apply(): RelationalDatabaseEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationalDatabaseEndpoint]
   }
   
-  @scala.inline
-  implicit class RelationalDatabaseEndpointMutableBuilder[Self <: RelationalDatabaseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: RelationalDatabaseEndpoint](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NonEmptyString): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NonEmptyString): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

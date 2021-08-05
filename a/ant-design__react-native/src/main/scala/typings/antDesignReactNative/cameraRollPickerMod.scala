@@ -28,59 +28,49 @@ object cameraRollPickerMod {
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.assetType")
       @js.native
       def assetType: String = js.native
-      @scala.inline
-      def assetType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assetType")(x.asInstanceOf[js.Any])
+      inline def assetType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assetType")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.backgroundColor")
       @js.native
       def backgroundColor: String = js.native
-      @scala.inline
-      def backgroundColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
+      inline def backgroundColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def callback(selectedImages: js.Any, currentImage: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callback")(selectedImages.asInstanceOf[js.Any], currentImage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def callback(selectedImages: js.Any, currentImage: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callback")(selectedImages.asInstanceOf[js.Any], currentImage.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.first")
       @js.native
       def first: Double = js.native
-      @scala.inline
-      def first_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("first")(x.asInstanceOf[js.Any])
+      inline def first_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("first")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.groupTypes")
       @js.native
       def groupTypes: String = js.native
-      @scala.inline
-      def groupTypes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupTypes")(x.asInstanceOf[js.Any])
+      inline def groupTypes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.imageMargin")
       @js.native
       def imageMargin: Double = js.native
-      @scala.inline
-      def imageMargin_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imageMargin")(x.asInstanceOf[js.Any])
+      inline def imageMargin_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imageMargin")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.imagesPerRow")
       @js.native
       def imagesPerRow: Double = js.native
-      @scala.inline
-      def imagesPerRow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagesPerRow")(x.asInstanceOf[js.Any])
+      inline def imagesPerRow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagesPerRow")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.maximum")
       @js.native
       def maximum: Double = js.native
-      @scala.inline
-      def maximum_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maximum")(x.asInstanceOf[js.Any])
+      inline def maximum_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maximum")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.selectSingleItem")
       @js.native
       def selectSingleItem: Boolean = js.native
-      @scala.inline
-      def selectSingleItem_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectSingleItem")(x.asInstanceOf[js.Any])
+      inline def selectSingleItem_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectSingleItem")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.selected")
       @js.native
       def selected: js.Array[scala.Nothing] = js.native
-      @scala.inline
-      def selected_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selected")(x.asInstanceOf[js.Any])
+      inline def selected_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selected")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -129,62 +119,44 @@ object cameraRollPickerMod {
   }
   object CameraRollPickerProps {
     
-    @scala.inline
-    def apply(first: Double, imageMargin: Double, imagesPerRow: Double, maximum: Double): CameraRollPickerProps = {
+    inline def apply(first: Double, imageMargin: Double, imagesPerRow: Double, maximum: Double): CameraRollPickerProps = {
       val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], imageMargin = imageMargin.asInstanceOf[js.Any], imagesPerRow = imagesPerRow.asInstanceOf[js.Any], maximum = maximum.asInstanceOf[js.Any])
       __obj.asInstanceOf[CameraRollPickerProps]
     }
     
-    @scala.inline
-    implicit class CameraRollPickerPropsMutableBuilder[Self <: CameraRollPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: CameraRollPickerProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
+      inline def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
       
-      @scala.inline
-      def setImageMargin(value: Double): Self = StObject.set(x, "imageMargin", value.asInstanceOf[js.Any])
+      inline def setImageMargin(value: Double): Self = StObject.set(x, "imageMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesPerRow(value: Double): Self = StObject.set(x, "imagesPerRow", value.asInstanceOf[js.Any])
+      inline def setImagesPerRow(value: Double): Self = StObject.set(x, "imagesPerRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+      inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectSingleItem(value: Boolean): Self = StObject.set(x, "selectSingleItem", value.asInstanceOf[js.Any])
+      inline def setSelectSingleItem(value: Boolean): Self = StObject.set(x, "selectSingleItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectSingleItemUndefined: Self = StObject.set(x, "selectSingleItem", js.undefined)
+      inline def setSelectSingleItemUndefined: Self = StObject.set(x, "selectSingleItem", js.undefined)
       
-      @scala.inline
-      def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedMarker(value: Element): Self = StObject.set(x, "selectedMarker", value.asInstanceOf[js.Any])
+      inline def setSelectedMarker(value: Element): Self = StObject.set(x, "selectedMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedMarkerUndefined: Self = StObject.set(x, "selectedMarker", js.undefined)
+      inline def setSelectedMarkerUndefined: Self = StObject.set(x, "selectedMarker", js.undefined)
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
     }
   }
   
@@ -196,23 +168,18 @@ object cameraRollPickerMod {
   }
   object CameraRollPickerState {
     
-    @scala.inline
-    def apply(images: js.Array[js.Any], selected: js.Any): CameraRollPickerState = {
+    inline def apply(images: js.Array[js.Any], selected: js.Any): CameraRollPickerState = {
       val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[CameraRollPickerState]
     }
     
-    @scala.inline
-    implicit class CameraRollPickerStateMutableBuilder[Self <: CameraRollPickerState] (val x: Self) extends AnyVal {
+    extension [Self <: CameraRollPickerState](x: Self) {
       
-      @scala.inline
-      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,26 +195,20 @@ object cameraRollPickerMod {
   }
   object CameraRollPickerStyle {
     
-    @scala.inline
-    def apply(marker: ViewStyle, row: ViewStyle, spinner: ViewStyle, wrapper: ViewStyle): CameraRollPickerStyle = {
+    inline def apply(marker: ViewStyle, row: ViewStyle, spinner: ViewStyle, wrapper: ViewStyle): CameraRollPickerStyle = {
       val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], spinner = spinner.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[CameraRollPickerStyle]
     }
     
-    @scala.inline
-    implicit class CameraRollPickerStyleMutableBuilder[Self <: CameraRollPickerStyle] (val x: Self) extends AnyVal {
+    extension [Self <: CameraRollPickerStyle](x: Self) {
       
-      @scala.inline
-      def setMarker(value: ViewStyle): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: ViewStyle): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: ViewStyle): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: ViewStyle): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinner(value: ViewStyle): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      inline def setSpinner(value: ViewStyle): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

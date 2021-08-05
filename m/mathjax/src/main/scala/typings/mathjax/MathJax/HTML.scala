@@ -35,8 +35,7 @@ trait HTML extends StObject {
 }
 object HTML {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Element: (String, js.Any, js.Any) => js.Any,
     TextNode: String => js.Any,
     addElement: (js.Any, String, js.Any, js.Any) => js.Any,
@@ -48,31 +47,22 @@ object HTML {
     __obj.asInstanceOf[HTML]
   }
   
-  @scala.inline
-  implicit class HTMLMutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
+  extension [Self <: HTML](x: Self) {
     
-    @scala.inline
-    def setAddElement(value: (js.Any, String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction4(value))
+    inline def setAddElement(value: (js.Any, String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAddText(value: (js.Any, String) => js.Any): Self = StObject.set(x, "addText", js.Any.fromFunction2(value))
+    inline def setAddText(value: (js.Any, String) => js.Any): Self = StObject.set(x, "addText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCookie(value: Cookie): Self = StObject.set(x, "Cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: Cookie): Self = StObject.set(x, "Cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieUndefined: Self = StObject.set(x, "Cookie", js.undefined)
+    inline def setCookieUndefined: Self = StObject.set(x, "Cookie", js.undefined)
     
-    @scala.inline
-    def setElement(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "Element", js.Any.fromFunction3(value))
+    inline def setElement(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "Element", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetScript(value: String => String): Self = StObject.set(x, "getScript", js.Any.fromFunction1(value))
+    inline def setGetScript(value: String => String): Self = StObject.set(x, "getScript", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScript(value: (String, String) => Unit): Self = StObject.set(x, "setScript", js.Any.fromFunction2(value))
+    inline def setSetScript(value: (String, String) => Unit): Self = StObject.set(x, "setScript", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTextNode(value: String => js.Any): Self = StObject.set(x, "TextNode", js.Any.fromFunction1(value))
+    inline def setTextNode(value: String => js.Any): Self = StObject.set(x, "TextNode", js.Any.fromFunction1(value))
   }
 }

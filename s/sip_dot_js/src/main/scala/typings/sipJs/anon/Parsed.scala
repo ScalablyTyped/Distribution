@@ -12,22 +12,17 @@ trait Parsed extends StObject {
 }
 object Parsed {
   
-  @scala.inline
-  def apply(raw: String): Parsed = {
+  inline def apply(raw: String): Parsed = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parsed]
   }
   
-  @scala.inline
-  implicit class ParsedMutableBuilder[Self <: Parsed] (val x: Self) extends AnyVal {
+  extension [Self <: Parsed](x: Self) {
     
-    @scala.inline
-    def setParsed(value: js.Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+    inline def setParsed(value: js.Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
+    inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
   }
 }

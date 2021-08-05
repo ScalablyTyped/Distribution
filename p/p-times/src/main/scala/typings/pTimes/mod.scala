@@ -21,10 +21,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](count: Double, mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](count: Double, mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
+  inline def apply[ValueType](
     count: Double,
     mapper: js.Function1[/* index */ Double, ValueType | js.Thenable[ValueType]],
     options: Options
@@ -44,8 +42,7 @@ object mod {
   @JSImport("p-times", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimes */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type Options = typings.pMap.mod.Options
 }

@@ -18,20 +18,16 @@ object typesBucketLifecycleConfigurationMod {
   }
   object BucketLifecycleConfiguration {
     
-    @scala.inline
-    def apply(Rules: js.Array[LifecycleRule] | Iterable[LifecycleRule]): BucketLifecycleConfiguration = {
+    inline def apply(Rules: js.Array[LifecycleRule] | Iterable[LifecycleRule]): BucketLifecycleConfiguration = {
       val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketLifecycleConfiguration]
     }
     
-    @scala.inline
-    implicit class BucketLifecycleConfigurationMutableBuilder[Self <: BucketLifecycleConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: BucketLifecycleConfiguration](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[LifecycleRule] | Iterable[LifecycleRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[LifecycleRule] | Iterable[LifecycleRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
   
@@ -47,20 +43,16 @@ object typesBucketLifecycleConfigurationMod {
   }
   object UnmarshalledBucketLifecycleConfiguration {
     
-    @scala.inline
-    def apply(Rules: js.Array[UnmarshalledLifecycleRule]): UnmarshalledBucketLifecycleConfiguration = {
+    inline def apply(Rules: js.Array[UnmarshalledLifecycleRule]): UnmarshalledBucketLifecycleConfiguration = {
       val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledBucketLifecycleConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledBucketLifecycleConfigurationMutableBuilder[Self <: UnmarshalledBucketLifecycleConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledBucketLifecycleConfiguration](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[UnmarshalledLifecycleRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[UnmarshalledLifecycleRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: UnmarshalledLifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledLifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
 }

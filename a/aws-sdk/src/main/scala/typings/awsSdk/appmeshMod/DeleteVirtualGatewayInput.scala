@@ -23,25 +23,19 @@ trait DeleteVirtualGatewayInput extends StObject {
 }
 object DeleteVirtualGatewayInput {
   
-  @scala.inline
-  def apply(meshName: ResourceName, virtualGatewayName: ResourceName): DeleteVirtualGatewayInput = {
+  inline def apply(meshName: ResourceName, virtualGatewayName: ResourceName): DeleteVirtualGatewayInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], virtualGatewayName = virtualGatewayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualGatewayInput]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualGatewayInputMutableBuilder[Self <: DeleteVirtualGatewayInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualGatewayInput](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+    inline def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
+    inline def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
     
-    @scala.inline
-    def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
   }
 }

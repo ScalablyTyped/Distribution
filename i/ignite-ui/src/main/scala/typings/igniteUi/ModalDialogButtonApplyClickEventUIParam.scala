@@ -33,52 +33,37 @@ trait ModalDialogButtonApplyClickEventUIParam extends StObject {
 }
 object ModalDialogButtonApplyClickEventUIParam {
   
-  @scala.inline
-  def apply(): ModalDialogButtonApplyClickEventUIParam = {
+  inline def apply(): ModalDialogButtonApplyClickEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalDialogButtonApplyClickEventUIParam]
   }
   
-  @scala.inline
-  implicit class ModalDialogButtonApplyClickEventUIParamMutableBuilder[Self <: ModalDialogButtonApplyClickEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ModalDialogButtonApplyClickEventUIParam](x: Self) {
     
-    @scala.inline
-    def setGroupedColumnLayouts(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumnLayouts", value.asInstanceOf[js.Any])
+    inline def setGroupedColumnLayouts(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumnLayouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedColumnLayoutsUndefined: Self = StObject.set(x, "groupedColumnLayouts", js.undefined)
+    inline def setGroupedColumnLayoutsUndefined: Self = StObject.set(x, "groupedColumnLayouts", js.undefined)
     
-    @scala.inline
-    def setGroupedColumnLayoutsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumnLayouts", js.Array(value :_*))
+    inline def setGroupedColumnLayoutsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumnLayouts", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
+    inline def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
+    inline def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
     
-    @scala.inline
-    def setGroupedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
+    inline def setGroupedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
+    inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
+    inline def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSortingExpr(value: js.Array[js.Any]): Self = StObject.set(x, "sortingExpr", value.asInstanceOf[js.Any])
+    inline def setSortingExpr(value: js.Array[js.Any]): Self = StObject.set(x, "sortingExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortingExprUndefined: Self = StObject.set(x, "sortingExpr", js.undefined)
+    inline def setSortingExprUndefined: Self = StObject.set(x, "sortingExpr", js.undefined)
     
-    @scala.inline
-    def setSortingExprVarargs(value: js.Any*): Self = StObject.set(x, "sortingExpr", js.Array(value :_*))
+    inline def setSortingExprVarargs(value: js.Any*): Self = StObject.set(x, "sortingExpr", js.Array(value :_*))
   }
 }

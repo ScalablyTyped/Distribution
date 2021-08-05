@@ -23,8 +23,7 @@ trait ScreenOrientation extends StObject {
 }
 object ScreenOrientation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angle: integer,
     `type`: portraitPrimary | portraitSecondary | landscapePrimary | landscapeSecondary
   ): ScreenOrientation = {
@@ -33,13 +32,10 @@ object ScreenOrientation {
     __obj.asInstanceOf[ScreenOrientation]
   }
   
-  @scala.inline
-  implicit class ScreenOrientationMutableBuilder[Self <: ScreenOrientation] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenOrientation](x: Self) {
     
-    @scala.inline
-    def setAngle(value: integer): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: integer): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: portraitPrimary | portraitSecondary | landscapePrimary | landscapeSecondary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: portraitPrimary | portraitSecondary | landscapePrimary | landscapeSecondary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

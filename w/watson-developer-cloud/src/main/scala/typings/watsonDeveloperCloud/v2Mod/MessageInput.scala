@@ -27,55 +27,39 @@ trait MessageInput extends StObject {
 }
 object MessageInput {
   
-  @scala.inline
-  def apply(): MessageInput = {
+  inline def apply(): MessageInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageInput]
   }
   
-  @scala.inline
-  implicit class MessageInputMutableBuilder[Self <: MessageInput] (val x: Self) extends AnyVal {
+  extension [Self <: MessageInput](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[RuntimeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[RuntimeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: RuntimeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: RuntimeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setIntents(value: js.Array[RuntimeIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: js.Array[RuntimeIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+    inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    @scala.inline
-    def setIntentsVarargs(value: RuntimeIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: RuntimeIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage_type(value: String): Self = StObject.set(x, "message_type", value.asInstanceOf[js.Any])
+    inline def setMessage_type(value: String): Self = StObject.set(x, "message_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage_typeUndefined: Self = StObject.set(x, "message_type", js.undefined)
+    inline def setMessage_typeUndefined: Self = StObject.set(x, "message_type", js.undefined)
     
-    @scala.inline
-    def setOptions(value: MessageInputOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MessageInputOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSuggestion_id(value: String): Self = StObject.set(x, "suggestion_id", value.asInstanceOf[js.Any])
+    inline def setSuggestion_id(value: String): Self = StObject.set(x, "suggestion_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestion_idUndefined: Self = StObject.set(x, "suggestion_id", js.undefined)
+    inline def setSuggestion_idUndefined: Self = StObject.set(x, "suggestion_id", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

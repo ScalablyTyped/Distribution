@@ -24,19 +24,15 @@ trait ChangeFontSizeCommand
 }
 object ChangeFontSizeCommand {
   
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => CommandState[Double]): ChangeFontSizeCommand = {
+  inline def apply(execute: Double => Boolean, getState: () => CommandState[Double]): ChangeFontSizeCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeFontSizeCommand]
   }
   
-  @scala.inline
-  implicit class ChangeFontSizeCommandMutableBuilder[Self <: ChangeFontSizeCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeFontSizeCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[Double]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[Double]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

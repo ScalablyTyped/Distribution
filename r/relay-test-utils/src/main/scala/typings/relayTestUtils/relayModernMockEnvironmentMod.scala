@@ -19,10 +19,8 @@ object relayModernMockEnvironmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMockEnvironment(): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")().asInstanceOf[RelayMockEnvironment]
-  @scala.inline
-  def createMockEnvironment(config: HandlerProvider): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")(config.asInstanceOf[js.Any]).asInstanceOf[RelayMockEnvironment]
+  inline def createMockEnvironment(): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")().asInstanceOf[RelayMockEnvironment]
+  inline def createMockEnvironment(config: HandlerProvider): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")(config.asInstanceOf[js.Any]).asInstanceOf[RelayMockEnvironment]
   
   trait MockEnvironment extends StObject {
     
@@ -32,20 +30,16 @@ object relayModernMockEnvironmentMod {
   }
   object MockEnvironment {
     
-    @scala.inline
-    def apply(mock: MockFunctions, mockClear: () => Unit): MockEnvironment = {
+    inline def apply(mock: MockFunctions, mockClear: () => Unit): MockEnvironment = {
       val __obj = js.Dynamic.literal(mock = mock.asInstanceOf[js.Any], mockClear = js.Any.fromFunction0(mockClear))
       __obj.asInstanceOf[MockEnvironment]
     }
     
-    @scala.inline
-    implicit class MockEnvironmentMutableBuilder[Self <: MockEnvironment] (val x: Self) extends AnyVal {
+    extension [Self <: MockEnvironment](x: Self) {
       
-      @scala.inline
-      def setMock(value: MockFunctions): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
+      inline def setMock(value: MockFunctions): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockClear(value: () => Unit): Self = StObject.set(x, "mockClear", js.Any.fromFunction0(value))
+      inline def setMockClear(value: () => Unit): Self = StObject.set(x, "mockClear", js.Any.fromFunction0(value))
     }
   }
   

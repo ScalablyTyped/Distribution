@@ -14,25 +14,19 @@ trait WaypointsSplicedEvent extends StObject {
 }
 object WaypointsSplicedEvent {
   
-  @scala.inline
-  def apply(added: js.Array[Waypoint_], index: Double, nRemoved: Double): WaypointsSplicedEvent = {
+  inline def apply(added: js.Array[Waypoint_], index: Double, nRemoved: Double): WaypointsSplicedEvent = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nRemoved = nRemoved.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaypointsSplicedEvent]
   }
   
-  @scala.inline
-  implicit class WaypointsSplicedEventMutableBuilder[Self <: WaypointsSplicedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WaypointsSplicedEvent](x: Self) {
     
-    @scala.inline
-    def setAdded(value: js.Array[Waypoint_]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: js.Array[Waypoint_]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedVarargs(value: Waypoint_ *): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: Waypoint_ *): Self = StObject.set(x, "added", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNRemoved(value: Double): Self = StObject.set(x, "nRemoved", value.asInstanceOf[js.Any])
+    inline def setNRemoved(value: Double): Self = StObject.set(x, "nRemoved", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait RecoveryOptionType extends StObject {
 }
 object RecoveryOptionType {
   
-  @scala.inline
-  def apply(Name: RecoveryOptionNameType, Priority: PriorityType): RecoveryOptionType = {
+  inline def apply(Name: RecoveryOptionNameType, Priority: PriorityType): RecoveryOptionType = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecoveryOptionType]
   }
   
-  @scala.inline
-  implicit class RecoveryOptionTypeMutableBuilder[Self <: RecoveryOptionType] (val x: Self) extends AnyVal {
+  extension [Self <: RecoveryOptionType](x: Self) {
     
-    @scala.inline
-    def setName(value: RecoveryOptionNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecoveryOptionNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: PriorityType): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: PriorityType): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
   }
 }

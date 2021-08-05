@@ -14,23 +14,18 @@ trait ValidationMessageBasicInfoObject extends StObject {
 }
 object ValidationMessageBasicInfoObject {
   
-  @scala.inline
-  def apply(): ValidationMessageBasicInfoObject = {
+  inline def apply(): ValidationMessageBasicInfoObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("info")
     __obj.asInstanceOf[ValidationMessageBasicInfoObject]
   }
   
-  @scala.inline
-  implicit class ValidationMessageBasicInfoObjectMutableBuilder[Self <: ValidationMessageBasicInfoObject] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMessageBasicInfoObject](x: Self) {
     
-    @scala.inline
-    def setSubType(value: warning): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+    inline def setSubType(value: warning): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
+    inline def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
     
-    @scala.inline
-    def setType(value: info): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: info): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

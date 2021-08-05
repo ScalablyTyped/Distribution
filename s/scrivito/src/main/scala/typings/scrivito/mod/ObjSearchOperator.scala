@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjSearchOperator extends StObject
 object ObjSearchOperator {
   
-  @scala.inline
-  def contains: typings.scrivito.scrivitoStrings.contains = "contains".asInstanceOf[typings.scrivito.scrivitoStrings.contains]
+  inline def contains: typings.scrivito.scrivitoStrings.contains = "contains".asInstanceOf[typings.scrivito.scrivitoStrings.contains]
   
-  @scala.inline
-  def containsPrefix: typings.scrivito.scrivitoStrings.containsPrefix = "containsPrefix".asInstanceOf[typings.scrivito.scrivitoStrings.containsPrefix]
+  inline def containsPrefix: typings.scrivito.scrivitoStrings.containsPrefix = "containsPrefix".asInstanceOf[typings.scrivito.scrivitoStrings.containsPrefix]
   
-  @scala.inline
-  def equals: typings.scrivito.scrivitoStrings.equals = "equals".asInstanceOf[typings.scrivito.scrivitoStrings.equals]
+  inline def equals: typings.scrivito.scrivitoStrings.equals = "equals".asInstanceOf[typings.scrivito.scrivitoStrings.equals]
   
-  @scala.inline
-  def isGreaterThan: typings.scrivito.scrivitoStrings.isGreaterThan = "isGreaterThan".asInstanceOf[typings.scrivito.scrivitoStrings.isGreaterThan]
+  inline def isGreaterThan: typings.scrivito.scrivitoStrings.isGreaterThan = "isGreaterThan".asInstanceOf[typings.scrivito.scrivitoStrings.isGreaterThan]
   
-  @scala.inline
-  def isLessThan: typings.scrivito.scrivitoStrings.isLessThan = "isLessThan".asInstanceOf[typings.scrivito.scrivitoStrings.isLessThan]
+  inline def isLessThan: typings.scrivito.scrivitoStrings.isLessThan = "isLessThan".asInstanceOf[typings.scrivito.scrivitoStrings.isLessThan]
   
-  @scala.inline
-  def linksTo: typings.scrivito.scrivitoStrings.linksTo = "linksTo".asInstanceOf[typings.scrivito.scrivitoStrings.linksTo]
+  inline def linksTo: typings.scrivito.scrivitoStrings.linksTo = "linksTo".asInstanceOf[typings.scrivito.scrivitoStrings.linksTo]
   
-  @scala.inline
-  def refersTo: typings.scrivito.scrivitoStrings.refersTo = "refersTo".asInstanceOf[typings.scrivito.scrivitoStrings.refersTo]
+  inline def refersTo: typings.scrivito.scrivitoStrings.refersTo = "refersTo".asInstanceOf[typings.scrivito.scrivitoStrings.refersTo]
   
-  @scala.inline
-  def startsWith: typings.scrivito.scrivitoStrings.startsWith = "startsWith".asInstanceOf[typings.scrivito.scrivitoStrings.startsWith]
+  inline def startsWith: typings.scrivito.scrivitoStrings.startsWith = "startsWith".asInstanceOf[typings.scrivito.scrivitoStrings.startsWith]
 }

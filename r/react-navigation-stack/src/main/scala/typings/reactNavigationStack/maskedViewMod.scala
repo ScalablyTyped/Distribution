@@ -11,8 +11,7 @@ object maskedViewMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasChildren: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(hasChildren: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait Props extends StObject {
     
@@ -22,20 +21,16 @@ object maskedViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(children: ReactElement, maskElement: ReactElement): Props = {
+    inline def apply(children: ReactElement, maskElement: ReactElement): Props = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], maskElement = maskElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
+      inline def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
     }
   }
 }

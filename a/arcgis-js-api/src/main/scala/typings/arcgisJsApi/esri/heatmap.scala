@@ -20,16 +20,13 @@ trait heatmap extends StObject {
 }
 object heatmap {
   
-  @scala.inline
-  def apply(createRenderer: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): heatmap = {
+  inline def apply(createRenderer: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): heatmap = {
     val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
     __obj.asInstanceOf[heatmap]
   }
   
-  @scala.inline
-  implicit class heatmapMutableBuilder[Self <: heatmap] (val x: Self) extends AnyVal {
+  extension [Self <: heatmap](x: Self) {
     
-    @scala.inline
-    def setCreateRenderer(value: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: heatmapCreateRendererParams => js.Promise[HeatmapRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }
 }

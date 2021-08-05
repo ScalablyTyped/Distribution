@@ -13,22 +13,17 @@ trait OutputChannelMapping extends StObject {
 }
 object OutputChannelMapping {
   
-  @scala.inline
-  def apply(): OutputChannelMapping = {
+  inline def apply(): OutputChannelMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputChannelMapping]
   }
   
-  @scala.inline
-  implicit class OutputChannelMappingMutableBuilder[Self <: OutputChannelMapping] (val x: Self) extends AnyVal {
+  extension [Self <: OutputChannelMapping](x: Self) {
     
-    @scala.inline
-    def setInputChannels(value: listOfIntegerMinNegative60Max6): Self = StObject.set(x, "InputChannels", value.asInstanceOf[js.Any])
+    inline def setInputChannels(value: listOfIntegerMinNegative60Max6): Self = StObject.set(x, "InputChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputChannelsUndefined: Self = StObject.set(x, "InputChannels", js.undefined)
+    inline def setInputChannelsUndefined: Self = StObject.set(x, "InputChannels", js.undefined)
     
-    @scala.inline
-    def setInputChannelsVarargs(value: integerMinNegative60Max6*): Self = StObject.set(x, "InputChannels", js.Array(value :_*))
+    inline def setInputChannelsVarargs(value: integerMinNegative60Max6*): Self = StObject.set(x, "InputChannels", js.Array(value :_*))
   }
 }

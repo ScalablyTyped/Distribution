@@ -13,19 +13,15 @@ trait UpdateDistributionResult extends StObject {
 }
 object UpdateDistributionResult {
   
-  @scala.inline
-  def apply(): UpdateDistributionResult = {
+  inline def apply(): UpdateDistributionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDistributionResult]
   }
   
-  @scala.inline
-  implicit class UpdateDistributionResultMutableBuilder[Self <: UpdateDistributionResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDistributionResult](x: Self) {
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

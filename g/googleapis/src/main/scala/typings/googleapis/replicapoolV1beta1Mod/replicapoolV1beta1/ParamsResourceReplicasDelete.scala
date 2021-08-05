@@ -44,49 +44,35 @@ trait ParamsResourceReplicasDelete
 }
 object ParamsResourceReplicasDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceReplicasDelete = {
+  inline def apply(): ParamsResourceReplicasDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceReplicasDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceReplicasDeleteMutableBuilder[Self <: ParamsResourceReplicasDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceReplicasDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPoolName(value: String): Self = StObject.set(x, "poolName", value.asInstanceOf[js.Any])
+    inline def setPoolName(value: String): Self = StObject.set(x, "poolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolNameUndefined: Self = StObject.set(x, "poolName", js.undefined)
+    inline def setPoolNameUndefined: Self = StObject.set(x, "poolName", js.undefined)
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
+    inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
     
-    @scala.inline
-    def setReplicaName(value: String): Self = StObject.set(x, "replicaName", value.asInstanceOf[js.Any])
+    inline def setReplicaName(value: String): Self = StObject.set(x, "replicaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaNameUndefined: Self = StObject.set(x, "replicaName", js.undefined)
+    inline def setReplicaNameUndefined: Self = StObject.set(x, "replicaName", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaReplicasDeleteRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaReplicasDeleteRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

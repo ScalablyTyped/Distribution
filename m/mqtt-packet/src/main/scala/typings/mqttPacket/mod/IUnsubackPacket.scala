@@ -18,22 +18,17 @@ trait IUnsubackPacket
 }
 object IUnsubackPacket {
   
-  @scala.inline
-  def apply(): IUnsubackPacket = {
+  inline def apply(): IUnsubackPacket = {
     val __obj = js.Dynamic.literal(cmd = "unsuback")
     __obj.asInstanceOf[IUnsubackPacket]
   }
   
-  @scala.inline
-  implicit class IUnsubackPacketMutableBuilder[Self <: IUnsubackPacket] (val x: Self) extends AnyVal {
+  extension [Self <: IUnsubackPacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: unsuback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: unsuback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

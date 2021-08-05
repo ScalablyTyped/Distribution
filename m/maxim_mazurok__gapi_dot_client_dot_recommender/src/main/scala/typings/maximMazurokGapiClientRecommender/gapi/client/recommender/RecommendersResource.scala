@@ -10,16 +10,13 @@ trait RecommendersResource extends StObject {
 }
 object RecommendersResource {
   
-  @scala.inline
-  def apply(recommendations: RecommendationsResource): RecommendersResource = {
+  inline def apply(recommendations: RecommendationsResource): RecommendersResource = {
     val __obj = js.Dynamic.literal(recommendations = recommendations.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendersResource]
   }
   
-  @scala.inline
-  implicit class RecommendersResourceMutableBuilder[Self <: RecommendersResource] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendersResource](x: Self) {
     
-    @scala.inline
-    def setRecommendations(value: RecommendationsResource): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
+    inline def setRecommendations(value: RecommendationsResource): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
   }
 }

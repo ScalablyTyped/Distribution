@@ -27,8 +27,7 @@ trait RecommendationsSeedObject extends StObject {
 }
 object RecommendationsSeedObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     afterFilteringSize: Double,
     afterRelinkingSize: Double,
     href: String,
@@ -41,25 +40,18 @@ object RecommendationsSeedObject {
     __obj.asInstanceOf[RecommendationsSeedObject]
   }
   
-  @scala.inline
-  implicit class RecommendationsSeedObjectMutableBuilder[Self <: RecommendationsSeedObject] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendationsSeedObject](x: Self) {
     
-    @scala.inline
-    def setAfterFilteringSize(value: Double): Self = StObject.set(x, "afterFilteringSize", value.asInstanceOf[js.Any])
+    inline def setAfterFilteringSize(value: Double): Self = StObject.set(x, "afterFilteringSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterRelinkingSize(value: Double): Self = StObject.set(x, "afterRelinkingSize", value.asInstanceOf[js.Any])
+    inline def setAfterRelinkingSize(value: Double): Self = StObject.set(x, "afterRelinkingSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPoolSize(value: Double): Self = StObject.set(x, "initialPoolSize", value.asInstanceOf[js.Any])
+    inline def setInitialPoolSize(value: Double): Self = StObject.set(x, "initialPoolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: artist | track | genre): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: artist | track | genre): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait EmitOutput extends StObject {
 }
 object EmitOutput {
   
-  @scala.inline
-  def apply(emitOutputResult: EmitOutputResult, outputFiles: js.Array[OutputFile]): EmitOutput = {
+  inline def apply(emitOutputResult: EmitOutputResult, outputFiles: js.Array[OutputFile]): EmitOutput = {
     val __obj = js.Dynamic.literal(emitOutputResult = emitOutputResult.asInstanceOf[js.Any], outputFiles = outputFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitOutput]
   }
   
-  @scala.inline
-  implicit class EmitOutputMutableBuilder[Self <: EmitOutput] (val x: Self) extends AnyVal {
+  extension [Self <: EmitOutput](x: Self) {
     
-    @scala.inline
-    def setEmitOutputResult(value: EmitOutputResult): Self = StObject.set(x, "emitOutputResult", value.asInstanceOf[js.Any])
+    inline def setEmitOutputResult(value: EmitOutputResult): Self = StObject.set(x, "emitOutputResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFiles(value: js.Array[OutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
+    inline def setOutputFiles(value: js.Array[OutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFilesVarargs(value: OutputFile*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
+    inline def setOutputFilesVarargs(value: OutputFile*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
   }
 }

@@ -24,20 +24,16 @@ object tvinputdeviceMod {
   }
   object InputDeviceKey {
     
-    @scala.inline
-    def apply(code: Double, name: InputDeviceKeyName): InputDeviceKey = {
+    inline def apply(code: Double, name: InputDeviceKeyName): InputDeviceKey = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputDeviceKey]
     }
     
-    @scala.inline
-    implicit class InputDeviceKeyMutableBuilder[Self <: InputDeviceKey] (val x: Self) extends AnyVal {
+    extension [Self <: InputDeviceKey](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: InputDeviceKeyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: InputDeviceKeyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

@@ -16,31 +16,23 @@ trait Edge
 }
 object Edge {
   
-  @scala.inline
-  def apply(): Edge = {
+  inline def apply(): Edge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Edge]
   }
   
-  @scala.inline
-  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+  extension [Self <: Edge](x: Self) {
     
-    @scala.inline
-    def setFrom(value: IdType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: IdType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setId(value: IdType): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdType): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTo(value: IdType): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: IdType): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

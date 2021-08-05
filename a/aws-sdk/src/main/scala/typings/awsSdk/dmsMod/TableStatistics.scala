@@ -103,127 +103,87 @@ trait TableStatistics extends StObject {
 }
 object TableStatistics {
   
-  @scala.inline
-  def apply(): TableStatistics = {
+  inline def apply(): TableStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableStatistics]
   }
   
-  @scala.inline
-  implicit class TableStatisticsMutableBuilder[Self <: TableStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: TableStatistics](x: Self) {
     
-    @scala.inline
-    def setDdls(value: Long): Self = StObject.set(x, "Ddls", value.asInstanceOf[js.Any])
+    inline def setDdls(value: Long): Self = StObject.set(x, "Ddls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdlsUndefined: Self = StObject.set(x, "Ddls", js.undefined)
+    inline def setDdlsUndefined: Self = StObject.set(x, "Ddls", js.undefined)
     
-    @scala.inline
-    def setDeletes(value: Long): Self = StObject.set(x, "Deletes", value.asInstanceOf[js.Any])
+    inline def setDeletes(value: Long): Self = StObject.set(x, "Deletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletesUndefined: Self = StObject.set(x, "Deletes", js.undefined)
+    inline def setDeletesUndefined: Self = StObject.set(x, "Deletes", js.undefined)
     
-    @scala.inline
-    def setFullLoadCondtnlChkFailedRows(value: Long): Self = StObject.set(x, "FullLoadCondtnlChkFailedRows", value.asInstanceOf[js.Any])
+    inline def setFullLoadCondtnlChkFailedRows(value: Long): Self = StObject.set(x, "FullLoadCondtnlChkFailedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadCondtnlChkFailedRowsUndefined: Self = StObject.set(x, "FullLoadCondtnlChkFailedRows", js.undefined)
+    inline def setFullLoadCondtnlChkFailedRowsUndefined: Self = StObject.set(x, "FullLoadCondtnlChkFailedRows", js.undefined)
     
-    @scala.inline
-    def setFullLoadEndTime(value: TStamp): Self = StObject.set(x, "FullLoadEndTime", value.asInstanceOf[js.Any])
+    inline def setFullLoadEndTime(value: TStamp): Self = StObject.set(x, "FullLoadEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadEndTimeUndefined: Self = StObject.set(x, "FullLoadEndTime", js.undefined)
+    inline def setFullLoadEndTimeUndefined: Self = StObject.set(x, "FullLoadEndTime", js.undefined)
     
-    @scala.inline
-    def setFullLoadErrorRows(value: Long): Self = StObject.set(x, "FullLoadErrorRows", value.asInstanceOf[js.Any])
+    inline def setFullLoadErrorRows(value: Long): Self = StObject.set(x, "FullLoadErrorRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadErrorRowsUndefined: Self = StObject.set(x, "FullLoadErrorRows", js.undefined)
+    inline def setFullLoadErrorRowsUndefined: Self = StObject.set(x, "FullLoadErrorRows", js.undefined)
     
-    @scala.inline
-    def setFullLoadReloaded(value: BooleanOptional): Self = StObject.set(x, "FullLoadReloaded", value.asInstanceOf[js.Any])
+    inline def setFullLoadReloaded(value: BooleanOptional): Self = StObject.set(x, "FullLoadReloaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadReloadedUndefined: Self = StObject.set(x, "FullLoadReloaded", js.undefined)
+    inline def setFullLoadReloadedUndefined: Self = StObject.set(x, "FullLoadReloaded", js.undefined)
     
-    @scala.inline
-    def setFullLoadRows(value: Long): Self = StObject.set(x, "FullLoadRows", value.asInstanceOf[js.Any])
+    inline def setFullLoadRows(value: Long): Self = StObject.set(x, "FullLoadRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadRowsUndefined: Self = StObject.set(x, "FullLoadRows", js.undefined)
+    inline def setFullLoadRowsUndefined: Self = StObject.set(x, "FullLoadRows", js.undefined)
     
-    @scala.inline
-    def setFullLoadStartTime(value: TStamp): Self = StObject.set(x, "FullLoadStartTime", value.asInstanceOf[js.Any])
+    inline def setFullLoadStartTime(value: TStamp): Self = StObject.set(x, "FullLoadStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLoadStartTimeUndefined: Self = StObject.set(x, "FullLoadStartTime", js.undefined)
+    inline def setFullLoadStartTimeUndefined: Self = StObject.set(x, "FullLoadStartTime", js.undefined)
     
-    @scala.inline
-    def setInserts(value: Long): Self = StObject.set(x, "Inserts", value.asInstanceOf[js.Any])
+    inline def setInserts(value: Long): Self = StObject.set(x, "Inserts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertsUndefined: Self = StObject.set(x, "Inserts", js.undefined)
+    inline def setInsertsUndefined: Self = StObject.set(x, "Inserts", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: TStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: TStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
-    @scala.inline
-    def setTableState(value: String): Self = StObject.set(x, "TableState", value.asInstanceOf[js.Any])
+    inline def setTableState(value: String): Self = StObject.set(x, "TableState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStateUndefined: Self = StObject.set(x, "TableState", js.undefined)
+    inline def setTableStateUndefined: Self = StObject.set(x, "TableState", js.undefined)
     
-    @scala.inline
-    def setUpdates(value: Long): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: Long): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
     
-    @scala.inline
-    def setValidationFailedRecords(value: Long): Self = StObject.set(x, "ValidationFailedRecords", value.asInstanceOf[js.Any])
+    inline def setValidationFailedRecords(value: Long): Self = StObject.set(x, "ValidationFailedRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationFailedRecordsUndefined: Self = StObject.set(x, "ValidationFailedRecords", js.undefined)
+    inline def setValidationFailedRecordsUndefined: Self = StObject.set(x, "ValidationFailedRecords", js.undefined)
     
-    @scala.inline
-    def setValidationPendingRecords(value: Long): Self = StObject.set(x, "ValidationPendingRecords", value.asInstanceOf[js.Any])
+    inline def setValidationPendingRecords(value: Long): Self = StObject.set(x, "ValidationPendingRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationPendingRecordsUndefined: Self = StObject.set(x, "ValidationPendingRecords", js.undefined)
+    inline def setValidationPendingRecordsUndefined: Self = StObject.set(x, "ValidationPendingRecords", js.undefined)
     
-    @scala.inline
-    def setValidationState(value: String): Self = StObject.set(x, "ValidationState", value.asInstanceOf[js.Any])
+    inline def setValidationState(value: String): Self = StObject.set(x, "ValidationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationStateDetails(value: String): Self = StObject.set(x, "ValidationStateDetails", value.asInstanceOf[js.Any])
+    inline def setValidationStateDetails(value: String): Self = StObject.set(x, "ValidationStateDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationStateDetailsUndefined: Self = StObject.set(x, "ValidationStateDetails", js.undefined)
+    inline def setValidationStateDetailsUndefined: Self = StObject.set(x, "ValidationStateDetails", js.undefined)
     
-    @scala.inline
-    def setValidationStateUndefined: Self = StObject.set(x, "ValidationState", js.undefined)
+    inline def setValidationStateUndefined: Self = StObject.set(x, "ValidationState", js.undefined)
     
-    @scala.inline
-    def setValidationSuspendedRecords(value: Long): Self = StObject.set(x, "ValidationSuspendedRecords", value.asInstanceOf[js.Any])
+    inline def setValidationSuspendedRecords(value: Long): Self = StObject.set(x, "ValidationSuspendedRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationSuspendedRecordsUndefined: Self = StObject.set(x, "ValidationSuspendedRecords", js.undefined)
+    inline def setValidationSuspendedRecordsUndefined: Self = StObject.set(x, "ValidationSuspendedRecords", js.undefined)
   }
 }

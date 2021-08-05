@@ -8,6 +8,5 @@ object cytoscapeNumbers {
   
   @js.native
   sealed trait `10` extends StObject
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
+  inline def `10`: `10` = 10.asInstanceOf[`10`]
 }

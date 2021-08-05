@@ -14,15 +14,14 @@ trait HTMLOption extends StObject {
   
   var HTMLType: String
   
-  @JSName("MSForms.HTMLOption_typekey")
+  /* private */ @JSName("MSForms.HTMLOption_typekey")
   var MSFormsDotHTMLOption_typekey: HTMLOption
   
   var Value: String
 }
 object HTMLOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Checked: Boolean,
     DisplayStyle: fmDisplayStyle,
     HTMLName: String,
@@ -35,25 +34,18 @@ object HTMLOption {
     __obj.asInstanceOf[HTMLOption]
   }
   
-  @scala.inline
-  implicit class HTMLOptionMutableBuilder[Self <: HTMLOption] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLOption](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayStyle(value: fmDisplayStyle): Self = StObject.set(x, "DisplayStyle", value.asInstanceOf[js.Any])
+    inline def setDisplayStyle(value: fmDisplayStyle): Self = StObject.set(x, "DisplayStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
+    inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
+    inline def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotHTMLOption_typekey(value: HTMLOption): Self = StObject.set(x, "MSForms.HTMLOption_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotHTMLOption_typekey(value: HTMLOption): Self = StObject.set(x, "MSForms.HTMLOption_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

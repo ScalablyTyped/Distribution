@@ -13,16 +13,13 @@ trait ECKeyPairKeyObjectOptions extends StObject {
 }
 object ECKeyPairKeyObjectOptions {
   
-  @scala.inline
-  def apply(namedCurve: String): ECKeyPairKeyObjectOptions = {
+  inline def apply(namedCurve: String): ECKeyPairKeyObjectOptions = {
     val __obj = js.Dynamic.literal(namedCurve = namedCurve.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECKeyPairKeyObjectOptions]
   }
   
-  @scala.inline
-  implicit class ECKeyPairKeyObjectOptionsMutableBuilder[Self <: ECKeyPairKeyObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ECKeyPairKeyObjectOptions](x: Self) {
     
-    @scala.inline
-    def setNamedCurve(value: String): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
+    inline def setNamedCurve(value: String): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
   }
 }

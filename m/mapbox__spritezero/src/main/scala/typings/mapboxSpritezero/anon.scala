@@ -15,20 +15,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String, svg: Buffer): Id = {
+    inline def apply(id: String, svg: Buffer): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvg(value: Buffer): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: Buffer): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     }
   }
 }

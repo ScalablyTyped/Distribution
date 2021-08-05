@@ -12,16 +12,13 @@ trait UpdateUserLegalData
 }
 object UpdateUserLegalData {
   
-  @scala.inline
-  def apply(Id: String): UpdateUserLegalData = {
+  inline def apply(Id: String): UpdateUserLegalData = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PersonType = "LEGAL")
     __obj.asInstanceOf[UpdateUserLegalData]
   }
   
-  @scala.inline
-  implicit class UpdateUserLegalDataMutableBuilder[Self <: UpdateUserLegalData] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserLegalData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

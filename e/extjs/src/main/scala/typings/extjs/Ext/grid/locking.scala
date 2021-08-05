@@ -26,26 +26,20 @@ object locking {
   }
   object IHeaderContainer {
     
-    @scala.inline
-    def apply(): IHeaderContainer = {
+    inline def apply(): IHeaderContainer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHeaderContainer]
     }
     
-    @scala.inline
-    implicit class IHeaderContainerMutableBuilder[Self <: IHeaderContainer] (val x: Self) extends AnyVal {
+    extension [Self <: IHeaderContainer](x: Self) {
       
-      @scala.inline
-      def setGetGridColumns(value: () => Array): Self = StObject.set(x, "getGridColumns", js.Any.fromFunction0(value))
+      inline def setGetGridColumns(value: () => Array): Self = StObject.set(x, "getGridColumns", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGridColumnsUndefined: Self = StObject.set(x, "getGridColumns", js.undefined)
+      inline def setGetGridColumnsUndefined: Self = StObject.set(x, "getGridColumns", js.undefined)
       
-      @scala.inline
-      def setGetRefItems(value: () => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction0(value))
+      inline def setGetRefItems(value: () => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
+      inline def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
     }
   }
   
@@ -79,62 +73,44 @@ object locking {
   }
   object ILockable {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.grid.locking.ILockable = {
+    inline def apply(): typings.extjs.Ext.grid.locking.ILockable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.grid.locking.ILockable]
     }
     
-    @scala.inline
-    implicit class ILockableMutableBuilder[Self <: typings.extjs.Ext.grid.locking.ILockable] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.grid.locking.ILockable](x: Self) {
       
-      @scala.inline
-      def setLockedGridConfig(value: js.Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
+      inline def setLockedGridConfig(value: js.Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockedGridConfigUndefined: Self = StObject.set(x, "lockedGridConfig", js.undefined)
+      inline def setLockedGridConfigUndefined: Self = StObject.set(x, "lockedGridConfig", js.undefined)
       
-      @scala.inline
-      def setLockedViewConfig(value: js.Any): Self = StObject.set(x, "lockedViewConfig", value.asInstanceOf[js.Any])
+      inline def setLockedViewConfig(value: js.Any): Self = StObject.set(x, "lockedViewConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockedViewConfigUndefined: Self = StObject.set(x, "lockedViewConfig", js.undefined)
+      inline def setLockedViewConfigUndefined: Self = StObject.set(x, "lockedViewConfig", js.undefined)
       
-      @scala.inline
-      def setNormalGridConfig(value: js.Any): Self = StObject.set(x, "normalGridConfig", value.asInstanceOf[js.Any])
+      inline def setNormalGridConfig(value: js.Any): Self = StObject.set(x, "normalGridConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalGridConfigUndefined: Self = StObject.set(x, "normalGridConfig", js.undefined)
+      inline def setNormalGridConfigUndefined: Self = StObject.set(x, "normalGridConfig", js.undefined)
       
-      @scala.inline
-      def setNormalViewConfig(value: js.Any): Self = StObject.set(x, "normalViewConfig", value.asInstanceOf[js.Any])
+      inline def setNormalViewConfig(value: js.Any): Self = StObject.set(x, "normalViewConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalViewConfigUndefined: Self = StObject.set(x, "normalViewConfig", js.undefined)
+      inline def setNormalViewConfigUndefined: Self = StObject.set(x, "normalViewConfig", js.undefined)
       
-      @scala.inline
-      def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
+      inline def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDeltaUndefined: Self = StObject.set(x, "scrollDelta", js.undefined)
+      inline def setScrollDeltaUndefined: Self = StObject.set(x, "scrollDelta", js.undefined)
       
-      @scala.inline
-      def setSubGridXType(value: String): Self = StObject.set(x, "subGridXType", value.asInstanceOf[js.Any])
+      inline def setSubGridXType(value: String): Self = StObject.set(x, "subGridXType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubGridXTypeUndefined: Self = StObject.set(x, "subGridXType", js.undefined)
+      inline def setSubGridXTypeUndefined: Self = StObject.set(x, "subGridXType", js.undefined)
       
-      @scala.inline
-      def setSyncRowHeight(value: Boolean): Self = StObject.set(x, "syncRowHeight", value.asInstanceOf[js.Any])
+      inline def setSyncRowHeight(value: Boolean): Self = StObject.set(x, "syncRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncRowHeightUndefined: Self = StObject.set(x, "syncRowHeight", js.undefined)
+      inline def setSyncRowHeightUndefined: Self = StObject.set(x, "syncRowHeight", js.undefined)
       
-      @scala.inline
-      def setSyncRowHeights(value: () => Unit): Self = StObject.set(x, "syncRowHeights", js.Any.fromFunction0(value))
+      inline def setSyncRowHeights(value: () => Unit): Self = StObject.set(x, "syncRowHeights", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSyncRowHeightsUndefined: Self = StObject.set(x, "syncRowHeights", js.undefined)
+      inline def setSyncRowHeightsUndefined: Self = StObject.set(x, "syncRowHeights", js.undefined)
     }
   }
   
@@ -147,20 +123,16 @@ object locking {
   }
   object IView {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.grid.locking.IView = {
+    inline def apply(): typings.extjs.Ext.grid.locking.IView = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.grid.locking.IView]
     }
     
-    @scala.inline
-    implicit class IViewMutableBuilder[Self <: typings.extjs.Ext.grid.locking.IView] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.grid.locking.IView](x: Self) {
       
-      @scala.inline
-      def setIsLockingView(value: Boolean): Self = StObject.set(x, "isLockingView", value.asInstanceOf[js.Any])
+      inline def setIsLockingView(value: Boolean): Self = StObject.set(x, "isLockingView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLockingViewUndefined: Self = StObject.set(x, "isLockingView", js.undefined)
+      inline def setIsLockingViewUndefined: Self = StObject.set(x, "isLockingView", js.undefined)
     }
   }
 }

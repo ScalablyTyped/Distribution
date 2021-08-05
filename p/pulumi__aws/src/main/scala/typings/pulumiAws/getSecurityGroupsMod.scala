@@ -13,14 +13,10 @@ object getSecurityGroupsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSecurityGroups(): js.Promise[GetSecurityGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")().asInstanceOf[js.Promise[GetSecurityGroupsResult]]
-  @scala.inline
-  def getSecurityGroups(args: Unit, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
-  @scala.inline
-  def getSecurityGroups(args: GetSecurityGroupsArgs): js.Promise[GetSecurityGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
-  @scala.inline
-  def getSecurityGroups(args: GetSecurityGroupsArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  inline def getSecurityGroups(): js.Promise[GetSecurityGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")().asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  inline def getSecurityGroups(args: Unit, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  inline def getSecurityGroups(args: GetSecurityGroupsArgs): js.Promise[GetSecurityGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  inline def getSecurityGroups(args: GetSecurityGroupsArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
   
   trait GetSecurityGroupsArgs extends StObject {
     
@@ -39,29 +35,22 @@ object getSecurityGroupsMod {
   }
   object GetSecurityGroupsArgs {
     
-    @scala.inline
-    def apply(): GetSecurityGroupsArgs = {
+    inline def apply(): GetSecurityGroupsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetSecurityGroupsArgs]
     }
     
-    @scala.inline
-    implicit class GetSecurityGroupsArgsMutableBuilder[Self <: GetSecurityGroupsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecurityGroupsArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetSecurityGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetSecurityGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetSecurityGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetSecurityGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -89,41 +78,30 @@ object getSecurityGroupsMod {
   }
   object GetSecurityGroupsResult {
     
-    @scala.inline
-    def apply(id: String, ids: js.Array[String], tags: StringDictionary[String], vpcIds: js.Array[String]): GetSecurityGroupsResult = {
+    inline def apply(id: String, ids: js.Array[String], tags: StringDictionary[String], vpcIds: js.Array[String]): GetSecurityGroupsResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], vpcIds = vpcIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSecurityGroupsResult]
     }
     
-    @scala.inline
-    implicit class GetSecurityGroupsResultMutableBuilder[Self <: GetSecurityGroupsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecurityGroupsResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetSecurityGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetSecurityGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIds(value: js.Array[String]): Self = StObject.set(x, "vpcIds", value.asInstanceOf[js.Any])
+      inline def setVpcIds(value: js.Array[String]): Self = StObject.set(x, "vpcIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdsVarargs(value: String*): Self = StObject.set(x, "vpcIds", js.Array(value :_*))
+      inline def setVpcIdsVarargs(value: String*): Self = StObject.set(x, "vpcIds", js.Array(value :_*))
     }
   }
 }

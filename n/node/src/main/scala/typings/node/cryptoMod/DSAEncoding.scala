@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DSAEncoding extends StObject
 object DSAEncoding {
   
-  @scala.inline
-  def der: typings.node.nodeStrings.der = "der".asInstanceOf[typings.node.nodeStrings.der]
+  inline def der: typings.node.nodeStrings.der = "der".asInstanceOf[typings.node.nodeStrings.der]
   
-  @scala.inline
-  def `ieee-p1363`: typings.node.nodeStrings.`ieee-p1363` = "ieee-p1363".asInstanceOf[typings.node.nodeStrings.`ieee-p1363`]
+  inline def `ieee-p1363`: typings.node.nodeStrings.`ieee-p1363` = "ieee-p1363".asInstanceOf[typings.node.nodeStrings.`ieee-p1363`]
 }

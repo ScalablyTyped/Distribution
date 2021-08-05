@@ -18,22 +18,17 @@ trait RSAKeyPairKeyObjectOptions extends StObject {
 }
 object RSAKeyPairKeyObjectOptions {
   
-  @scala.inline
-  def apply(modulusLength: Double): RSAKeyPairKeyObjectOptions = {
+  inline def apply(modulusLength: Double): RSAKeyPairKeyObjectOptions = {
     val __obj = js.Dynamic.literal(modulusLength = modulusLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[RSAKeyPairKeyObjectOptions]
   }
   
-  @scala.inline
-  implicit class RSAKeyPairKeyObjectOptionsMutableBuilder[Self <: RSAKeyPairKeyObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RSAKeyPairKeyObjectOptions](x: Self) {
     
-    @scala.inline
-    def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
+    inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
+    inline def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
+    inline def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
   }
 }

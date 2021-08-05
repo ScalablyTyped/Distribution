@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsTickmarkPlacementValue extends StObject
 object OptionsTickmarkPlacementValue {
   
-  @scala.inline
-  def between: typings.highcharts.highchartsStrings.between = "between".asInstanceOf[typings.highcharts.highchartsStrings.between]
+  inline def between: typings.highcharts.highchartsStrings.between = "between".asInstanceOf[typings.highcharts.highchartsStrings.between]
   
-  @scala.inline
-  def on: typings.highcharts.highchartsStrings.on = "on".asInstanceOf[typings.highcharts.highchartsStrings.on]
+  inline def on: typings.highcharts.highchartsStrings.on = "on".asInstanceOf[typings.highcharts.highchartsStrings.on]
 }

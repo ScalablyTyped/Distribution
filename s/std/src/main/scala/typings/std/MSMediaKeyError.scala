@@ -24,8 +24,7 @@ trait MSMediaKeyError extends StObject {
 }
 object MSMediaKeyError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MS_MEDIA_KEYERR_CLIENT: Double,
     MS_MEDIA_KEYERR_DOMAIN: Double,
     MS_MEDIA_KEYERR_HARDWARECHANGE: Double,
@@ -39,31 +38,22 @@ object MSMediaKeyError {
     __obj.asInstanceOf[MSMediaKeyError]
   }
   
-  @scala.inline
-  implicit class MSMediaKeyErrorMutableBuilder[Self <: MSMediaKeyError] (val x: Self) extends AnyVal {
+  extension [Self <: MSMediaKeyError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMS_MEDIA_KEYERR_CLIENT(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_CLIENT", value.asInstanceOf[js.Any])
+    inline def setMS_MEDIA_KEYERR_CLIENT(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_CLIENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMS_MEDIA_KEYERR_DOMAIN(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_DOMAIN", value.asInstanceOf[js.Any])
+    inline def setMS_MEDIA_KEYERR_DOMAIN(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_DOMAIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMS_MEDIA_KEYERR_HARDWARECHANGE(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_HARDWARECHANGE", value.asInstanceOf[js.Any])
+    inline def setMS_MEDIA_KEYERR_HARDWARECHANGE(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_HARDWARECHANGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMS_MEDIA_KEYERR_OUTPUT(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_OUTPUT", value.asInstanceOf[js.Any])
+    inline def setMS_MEDIA_KEYERR_OUTPUT(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_OUTPUT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMS_MEDIA_KEYERR_SERVICE(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_SERVICE", value.asInstanceOf[js.Any])
+    inline def setMS_MEDIA_KEYERR_SERVICE(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_SERVICE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMS_MEDIA_KEYERR_UNKNOWN(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setMS_MEDIA_KEYERR_UNKNOWN(value: Double): Self = StObject.set(x, "MS_MEDIA_KEYERR_UNKNOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemCode(value: Double): Self = StObject.set(x, "systemCode", value.asInstanceOf[js.Any])
+    inline def setSystemCode(value: Double): Self = StObject.set(x, "systemCode", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ trait XEnhancedMouseClickHandler
 }
 object XEnhancedMouseClickHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     mousePressed: EnhancedMouseEvent => Boolean,
@@ -36,13 +35,10 @@ object XEnhancedMouseClickHandler {
     __obj.asInstanceOf[XEnhancedMouseClickHandler]
   }
   
-  @scala.inline
-  implicit class XEnhancedMouseClickHandlerMutableBuilder[Self <: XEnhancedMouseClickHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XEnhancedMouseClickHandler](x: Self) {
     
-    @scala.inline
-    def setMousePressed(value: EnhancedMouseEvent => Boolean): Self = StObject.set(x, "mousePressed", js.Any.fromFunction1(value))
+    inline def setMousePressed(value: EnhancedMouseEvent => Boolean): Self = StObject.set(x, "mousePressed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseReleased(value: EnhancedMouseEvent => Boolean): Self = StObject.set(x, "mouseReleased", js.Any.fromFunction1(value))
+    inline def setMouseReleased(value: EnhancedMouseEvent => Boolean): Self = StObject.set(x, "mouseReleased", js.Any.fromFunction1(value))
   }
 }

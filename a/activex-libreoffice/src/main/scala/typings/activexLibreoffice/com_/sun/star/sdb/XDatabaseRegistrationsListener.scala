@@ -32,8 +32,7 @@ trait XDatabaseRegistrationsListener
 }
 object XDatabaseRegistrationsListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     changedDatabaseLocation: DatabaseRegistrationEvent => Unit,
     disposing: EventObject => Unit,
@@ -46,16 +45,12 @@ object XDatabaseRegistrationsListener {
     __obj.asInstanceOf[XDatabaseRegistrationsListener]
   }
   
-  @scala.inline
-  implicit class XDatabaseRegistrationsListenerMutableBuilder[Self <: XDatabaseRegistrationsListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseRegistrationsListener](x: Self) {
     
-    @scala.inline
-    def setChangedDatabaseLocation(value: DatabaseRegistrationEvent => Unit): Self = StObject.set(x, "changedDatabaseLocation", js.Any.fromFunction1(value))
+    inline def setChangedDatabaseLocation(value: DatabaseRegistrationEvent => Unit): Self = StObject.set(x, "changedDatabaseLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisteredDatabaseLocation(value: DatabaseRegistrationEvent => Unit): Self = StObject.set(x, "registeredDatabaseLocation", js.Any.fromFunction1(value))
+    inline def setRegisteredDatabaseLocation(value: DatabaseRegistrationEvent => Unit): Self = StObject.set(x, "registeredDatabaseLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRevokedDatabaseLocation(value: DatabaseRegistrationEvent => Unit): Self = StObject.set(x, "revokedDatabaseLocation", js.Any.fromFunction1(value))
+    inline def setRevokedDatabaseLocation(value: DatabaseRegistrationEvent => Unit): Self = StObject.set(x, "revokedDatabaseLocation", js.Any.fromFunction1(value))
   }
 }

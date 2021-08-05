@@ -46,7 +46,7 @@ trait CustomLayout extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.CustomLayout_typekey")
+  /* private */ @JSName("PowerPoint.CustomLayout_typekey")
   var PowerPointDotCustomLayout_typekey: CustomLayout
   
   var Preserved: MsoTriState
@@ -67,8 +67,7 @@ trait CustomLayout extends StObject {
 }
 object CustomLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Background: ShapeRange,
     Copy: () => Unit,
@@ -101,85 +100,58 @@ object CustomLayout {
     __obj.asInstanceOf[CustomLayout]
   }
   
-  @scala.inline
-  implicit class CustomLayoutMutableBuilder[Self <: CustomLayout] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLayout](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground(value: ShapeRange): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: ShapeRange): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCustomerData(value: CustomerData): Self = StObject.set(x, "CustomerData", value.asInstanceOf[js.Any])
+    inline def setCustomerData(value: CustomerData): Self = StObject.set(x, "CustomerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
+    inline def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDesign(value: Design): Self = StObject.set(x, "Design", value.asInstanceOf[js.Any])
+    inline def setDesign(value: Design): Self = StObject.set(x, "Design", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayMasterShapes(value: MsoTriState): Self = StObject.set(x, "DisplayMasterShapes", value.asInstanceOf[js.Any])
+    inline def setDisplayMasterShapes(value: MsoTriState): Self = StObject.set(x, "DisplayMasterShapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicate(value: () => CustomLayout): Self = StObject.set(x, "Duplicate", js.Any.fromFunction0(value))
+    inline def setDuplicate(value: () => CustomLayout): Self = StObject.set(x, "Duplicate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFollowMasterBackground(value: MsoTriState): Self = StObject.set(x, "FollowMasterBackground", value.asInstanceOf[js.Any])
+    inline def setFollowMasterBackground(value: MsoTriState): Self = StObject.set(x, "FollowMasterBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersFooters(value: HeadersFooters): Self = StObject.set(x, "HeadersFooters", value.asInstanceOf[js.Any])
+    inline def setHeadersFooters(value: HeadersFooters): Self = StObject.set(x, "HeadersFooters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinks(value: Hyperlinks): Self = StObject.set(x, "Hyperlinks", value.asInstanceOf[js.Any])
+    inline def setHyperlinks(value: Hyperlinks): Self = StObject.set(x, "Hyperlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingName(value: String): Self = StObject.set(x, "MatchingName", value.asInstanceOf[js.Any])
+    inline def setMatchingName(value: String): Self = StObject.set(x, "MatchingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveTo(value: Double => Unit): Self = StObject.set(x, "MoveTo", js.Any.fromFunction1(value))
+    inline def setMoveTo(value: Double => Unit): Self = StObject.set(x, "MoveTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotCustomLayout_typekey(value: CustomLayout): Self = StObject.set(x, "PowerPoint.CustomLayout_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotCustomLayout_typekey(value: CustomLayout): Self = StObject.set(x, "PowerPoint.CustomLayout_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserved(value: MsoTriState): Self = StObject.set(x, "Preserved", value.asInstanceOf[js.Any])
+    inline def setPreserved(value: MsoTriState): Self = StObject.set(x, "Preserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShapes(value: Shapes): Self = StObject.set(x, "Shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: Shapes): Self = StObject.set(x, "Shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShowTransition(value: SlideShowTransition): Self = StObject.set(x, "SlideShowTransition", value.asInstanceOf[js.Any])
+    inline def setSlideShowTransition(value: SlideShowTransition): Self = StObject.set(x, "SlideShowTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeColorScheme(value: ThemeColorScheme): Self = StObject.set(x, "ThemeColorScheme", value.asInstanceOf[js.Any])
+    inline def setThemeColorScheme(value: ThemeColorScheme): Self = StObject.set(x, "ThemeColorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLine(value: TimeLine): Self = StObject.set(x, "TimeLine", value.asInstanceOf[js.Any])
+    inline def setTimeLine(value: TimeLine): Self = StObject.set(x, "TimeLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

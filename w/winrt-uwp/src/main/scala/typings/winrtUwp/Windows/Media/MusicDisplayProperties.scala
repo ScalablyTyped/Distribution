@@ -28,8 +28,7 @@ trait MusicDisplayProperties extends StObject {
 }
 object MusicDisplayProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     albumArtist: String,
     albumTitle: String,
     artist: String,
@@ -41,25 +40,18 @@ object MusicDisplayProperties {
     __obj.asInstanceOf[MusicDisplayProperties]
   }
   
-  @scala.inline
-  implicit class MusicDisplayPropertiesMutableBuilder[Self <: MusicDisplayProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MusicDisplayProperties](x: Self) {
     
-    @scala.inline
-    def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
+    inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumTitle(value: String): Self = StObject.set(x, "albumTitle", value.asInstanceOf[js.Any])
+    inline def setAlbumTitle(value: String): Self = StObject.set(x, "albumTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenres(value: IVector[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: IVector[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
+    inline def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
   }
 }

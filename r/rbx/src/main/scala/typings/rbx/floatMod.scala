@@ -16,10 +16,8 @@ object floatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  @scala.inline
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/float", "makeValidatingTransform")
   @js.native
@@ -37,26 +35,20 @@ object floatMod {
   }
   object FloatHelpersProps {
     
-    @scala.inline
-    def apply(): FloatHelpersProps = {
+    inline def apply(): FloatHelpersProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FloatHelpersProps]
     }
     
-    @scala.inline
-    implicit class FloatHelpersPropsMutableBuilder[Self <: FloatHelpersProps] (val x: Self) extends AnyVal {
+    extension [Self <: FloatHelpersProps](x: Self) {
       
-      @scala.inline
-      def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
+      inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
+      inline def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
       
-      @scala.inline
-      def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+      inline def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
+      inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     }
   }
 }

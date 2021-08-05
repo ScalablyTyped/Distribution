@@ -23,43 +23,31 @@ trait VideoStatistics extends StObject {
 }
 object VideoStatistics {
   
-  @scala.inline
-  def apply(): VideoStatistics = {
+  inline def apply(): VideoStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoStatistics]
   }
   
-  @scala.inline
-  implicit class VideoStatisticsMutableBuilder[Self <: VideoStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: VideoStatistics](x: Self) {
     
-    @scala.inline
-    def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
+    inline def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentCountUndefined: Self = StObject.set(x, "commentCount", js.undefined)
+    inline def setCommentCountUndefined: Self = StObject.set(x, "commentCount", js.undefined)
     
-    @scala.inline
-    def setDislikeCount(value: String): Self = StObject.set(x, "dislikeCount", value.asInstanceOf[js.Any])
+    inline def setDislikeCount(value: String): Self = StObject.set(x, "dislikeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDislikeCountUndefined: Self = StObject.set(x, "dislikeCount", js.undefined)
+    inline def setDislikeCountUndefined: Self = StObject.set(x, "dislikeCount", js.undefined)
     
-    @scala.inline
-    def setFavoriteCount(value: String): Self = StObject.set(x, "favoriteCount", value.asInstanceOf[js.Any])
+    inline def setFavoriteCount(value: String): Self = StObject.set(x, "favoriteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavoriteCountUndefined: Self = StObject.set(x, "favoriteCount", js.undefined)
+    inline def setFavoriteCountUndefined: Self = StObject.set(x, "favoriteCount", js.undefined)
     
-    @scala.inline
-    def setLikeCount(value: String): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
+    inline def setLikeCount(value: String): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikeCountUndefined: Self = StObject.set(x, "likeCount", js.undefined)
+    inline def setLikeCountUndefined: Self = StObject.set(x, "likeCount", js.undefined)
     
-    @scala.inline
-    def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
+    inline def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewCountUndefined: Self = StObject.set(x, "viewCount", js.undefined)
+    inline def setViewCountUndefined: Self = StObject.set(x, "viewCount", js.undefined)
   }
 }

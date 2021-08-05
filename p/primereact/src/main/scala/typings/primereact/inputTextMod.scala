@@ -46,50 +46,36 @@ object inputTextMod {
   }
   object InputTextProps {
     
-    @scala.inline
-    def apply(): InputTextProps = {
+    inline def apply(): InputTextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputTextProps]
     }
     
-    @scala.inline
-    implicit class InputTextPropsMutableBuilder[Self <: InputTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputTextProps](x: Self) {
       
-      @scala.inline
-      def setKeyfilter(value: js.Any): Self = StObject.set(x, "keyfilter", value.asInstanceOf[js.Any])
+      inline def setKeyfilter(value: js.Any): Self = StObject.set(x, "keyfilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyfilterUndefined: Self = StObject.set(x, "keyfilter", js.undefined)
+      inline def setKeyfilterUndefined: Self = StObject.set(x, "keyfilter", js.undefined)
       
-      @scala.inline
-      def setOnInput(value: /* event */ FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* event */ FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      @scala.inline
-      def setOnKeyPress(value: /* event */ KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: /* event */ KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipOptions(value: TooltipOptions): Self = StObject.set(x, "tooltipOptions", value.asInstanceOf[js.Any])
+      inline def setTooltipOptions(value: TooltipOptions): Self = StObject.set(x, "tooltipOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipOptionsUndefined: Self = StObject.set(x, "tooltipOptions", js.undefined)
+      inline def setTooltipOptionsUndefined: Self = StObject.set(x, "tooltipOptions", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+      inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+      inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
     }
   }
 }

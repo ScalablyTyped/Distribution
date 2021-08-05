@@ -11,19 +11,15 @@ trait InlineObjectProperties extends StObject {
 }
 object InlineObjectProperties {
   
-  @scala.inline
-  def apply(): InlineObjectProperties = {
+  inline def apply(): InlineObjectProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InlineObjectProperties]
   }
   
-  @scala.inline
-  implicit class InlineObjectPropertiesMutableBuilder[Self <: InlineObjectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: InlineObjectProperties](x: Self) {
     
-    @scala.inline
-    def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
+    inline def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
+    inline def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait BaselineValues
 }
 object BaselineValues {
   
-  @scala.inline
-  def apply(): BaselineValues = {
+  inline def apply(): BaselineValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaselineValues]
   }
   
-  @scala.inline
-  implicit class BaselineValuesMutableBuilder[Self <: BaselineValues] (val x: Self) extends AnyVal {
+  extension [Self <: BaselineValues](x: Self) {
     
-    @scala.inline
-    def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
+    inline def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
+    inline def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
     
-    @scala.inline
-    def setReal_value(value: Double): Self = StObject.set(x, "real_value", value.asInstanceOf[js.Any])
+    inline def setReal_value(value: Double): Self = StObject.set(x, "real_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReal_valueUndefined: Self = StObject.set(x, "real_value", js.undefined)
+    inline def setReal_valueUndefined: Self = StObject.set(x, "real_value", js.undefined)
   }
 }

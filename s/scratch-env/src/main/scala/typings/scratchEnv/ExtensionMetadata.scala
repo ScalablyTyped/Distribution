@@ -31,52 +31,37 @@ trait ExtensionMetadata extends StObject {
 }
 object ExtensionMetadata {
   
-  @scala.inline
-  def apply(blocks: js.Array[ExtensionBlockMetadata | String], id: String): ExtensionMetadata = {
+  inline def apply(blocks: js.Array[ExtensionBlockMetadata | String], id: String): ExtensionMetadata = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionMetadata]
   }
   
-  @scala.inline
-  implicit class ExtensionMetadataMutableBuilder[Self <: ExtensionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionMetadata](x: Self) {
     
-    @scala.inline
-    def setBlockIconURI(value: String): Self = StObject.set(x, "blockIconURI", value.asInstanceOf[js.Any])
+    inline def setBlockIconURI(value: String): Self = StObject.set(x, "blockIconURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIconURIUndefined: Self = StObject.set(x, "blockIconURI", js.undefined)
+    inline def setBlockIconURIUndefined: Self = StObject.set(x, "blockIconURI", js.undefined)
     
-    @scala.inline
-    def setBlocks(value: js.Array[ExtensionBlockMetadata | String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: js.Array[ExtensionBlockMetadata | String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksVarargs(value: (ExtensionBlockMetadata | String)*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: (ExtensionBlockMetadata | String)*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setDocsURI(value: String): Self = StObject.set(x, "docsURI", value.asInstanceOf[js.Any])
+    inline def setDocsURI(value: String): Self = StObject.set(x, "docsURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsURIUndefined: Self = StObject.set(x, "docsURI", js.undefined)
+    inline def setDocsURIUndefined: Self = StObject.set(x, "docsURI", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconURI(value: String): Self = StObject.set(x, "menuIconURI", value.asInstanceOf[js.Any])
+    inline def setMenuIconURI(value: String): Self = StObject.set(x, "menuIconURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconURIUndefined: Self = StObject.set(x, "menuIconURI", js.undefined)
+    inline def setMenuIconURIUndefined: Self = StObject.set(x, "menuIconURI", js.undefined)
     
-    @scala.inline
-    def setMenus(value: Record[String, ExtensionMenuMetadata]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
+    inline def setMenus(value: Record[String, ExtensionMenuMetadata]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenusUndefined: Self = StObject.set(x, "menus", js.undefined)
+    inline def setMenusUndefined: Self = StObject.set(x, "menus", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

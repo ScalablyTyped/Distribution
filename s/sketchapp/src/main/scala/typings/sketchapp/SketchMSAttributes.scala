@@ -16,8 +16,7 @@ trait SketchMSAttributes extends StObject {
 }
 object SketchMSAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSAttributedStringColorAttribute: SketchMSColor,
     MSAttributedStringFontAttribute: SketchMSFontAttribute,
     kerning: Double,
@@ -27,19 +26,14 @@ object SketchMSAttributes {
     __obj.asInstanceOf[SketchMSAttributes]
   }
   
-  @scala.inline
-  implicit class SketchMSAttributesMutableBuilder[Self <: SketchMSAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSAttributes](x: Self) {
     
-    @scala.inline
-    def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+    inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSAttributedStringColorAttribute(value: SketchMSColor): Self = StObject.set(x, "MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
+    inline def setMSAttributedStringColorAttribute(value: SketchMSColor): Self = StObject.set(x, "MSAttributedStringColorAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSAttributedStringFontAttribute(value: SketchMSFontAttribute): Self = StObject.set(x, "MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
+    inline def setMSAttributedStringFontAttribute(value: SketchMSFontAttribute): Self = StObject.set(x, "MSAttributedStringFontAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyle(value: SketchMSParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+    inline def setParagraphStyle(value: SketchMSParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
   }
 }

@@ -22,55 +22,39 @@ trait ImageFilters extends StObject {
 }
 object ImageFilters {
   
-  @scala.inline
-  def apply(): ImageFilters = {
+  inline def apply(): ImageFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageFilters]
   }
   
-  @scala.inline
-  implicit class ImageFiltersMutableBuilder[Self <: ImageFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ImageFilters](x: Self) {
     
-    @scala.inline
-    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
+    inline def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
-    @scala.inline
-    def setExposure(value: Double): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
+    inline def setExposure(value: Double): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureUndefined: Self = StObject.set(x, "exposure", js.undefined)
+    inline def setExposureUndefined: Self = StObject.set(x, "exposure", js.undefined)
     
-    @scala.inline
-    def setHighlights(value: Double): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
+    inline def setHighlights(value: Double): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
+    inline def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
-    @scala.inline
-    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+    inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+    inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     
-    @scala.inline
-    def setShadows(value: Double): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
+    inline def setShadows(value: Double): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
+    inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
-    @scala.inline
-    def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
+    inline def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemperatureUndefined: Self = StObject.set(x, "temperature", js.undefined)
+    inline def setTemperatureUndefined: Self = StObject.set(x, "temperature", js.undefined)
     
-    @scala.inline
-    def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+    inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
+    inline def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait ScaleBarViewModelProperties extends StObject {
 }
 object ScaleBarViewModelProperties {
   
-  @scala.inline
-  def apply(): ScaleBarViewModelProperties = {
+  inline def apply(): ScaleBarViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleBarViewModelProperties]
   }
   
-  @scala.inline
-  implicit class ScaleBarViewModelPropertiesMutableBuilder[Self <: ScaleBarViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleBarViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

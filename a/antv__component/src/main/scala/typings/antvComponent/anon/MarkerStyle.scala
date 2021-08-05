@@ -12,19 +12,15 @@ trait MarkerStyle extends StObject {
 }
 object MarkerStyle {
   
-  @scala.inline
-  def apply(markerStyle: FillStroke, nameStyle: FillString): MarkerStyle = {
+  inline def apply(markerStyle: FillStroke, nameStyle: FillString): MarkerStyle = {
     val __obj = js.Dynamic.literal(markerStyle = markerStyle.asInstanceOf[js.Any], nameStyle = nameStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerStyle]
   }
   
-  @scala.inline
-  implicit class MarkerStyleMutableBuilder[Self <: MarkerStyle] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerStyle](x: Self) {
     
-    @scala.inline
-    def setMarkerStyle(value: FillStroke): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
+    inline def setMarkerStyle(value: FillStroke): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameStyle(value: FillString): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
+    inline def setNameStyle(value: FillString): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
   }
 }

@@ -18,16 +18,13 @@ trait IDownloadProperties extends StObject {
 }
 object IDownloadProperties {
   
-  @scala.inline
-  def apply(path: String): IDownloadProperties = {
+  inline def apply(path: String): IDownloadProperties = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDownloadProperties]
   }
   
-  @scala.inline
-  implicit class IDownloadPropertiesMutableBuilder[Self <: IDownloadProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IDownloadProperties](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

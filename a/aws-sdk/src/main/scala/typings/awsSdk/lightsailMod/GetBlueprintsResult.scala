@@ -18,28 +18,21 @@ trait GetBlueprintsResult extends StObject {
 }
 object GetBlueprintsResult {
   
-  @scala.inline
-  def apply(): GetBlueprintsResult = {
+  inline def apply(): GetBlueprintsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBlueprintsResult]
   }
   
-  @scala.inline
-  implicit class GetBlueprintsResultMutableBuilder[Self <: GetBlueprintsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlueprintsResult](x: Self) {
     
-    @scala.inline
-    def setBlueprints(value: BlueprintList): Self = StObject.set(x, "blueprints", value.asInstanceOf[js.Any])
+    inline def setBlueprints(value: BlueprintList): Self = StObject.set(x, "blueprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueprintsUndefined: Self = StObject.set(x, "blueprints", js.undefined)
+    inline def setBlueprintsUndefined: Self = StObject.set(x, "blueprints", js.undefined)
     
-    @scala.inline
-    def setBlueprintsVarargs(value: Blueprint*): Self = StObject.set(x, "blueprints", js.Array(value :_*))
+    inline def setBlueprintsVarargs(value: Blueprint*): Self = StObject.set(x, "blueprints", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

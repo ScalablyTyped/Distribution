@@ -23,22 +23,17 @@ trait CertificateAuthorityConfiguration extends StObject {
 }
 object CertificateAuthorityConfiguration {
   
-  @scala.inline
-  def apply(KeyAlgorithm: KeyAlgorithm, SigningAlgorithm: SigningAlgorithm, Subject: ASN1Subject): CertificateAuthorityConfiguration = {
+  inline def apply(KeyAlgorithm: KeyAlgorithm, SigningAlgorithm: SigningAlgorithm, Subject: ASN1Subject): CertificateAuthorityConfiguration = {
     val __obj = js.Dynamic.literal(KeyAlgorithm = KeyAlgorithm.asInstanceOf[js.Any], SigningAlgorithm = SigningAlgorithm.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthorityConfiguration]
   }
   
-  @scala.inline
-  implicit class CertificateAuthorityConfigurationMutableBuilder[Self <: CertificateAuthorityConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateAuthorityConfiguration](x: Self) {
     
-    @scala.inline
-    def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "KeyAlgorithm", value.asInstanceOf[js.Any])
+    inline def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "KeyAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAlgorithm(value: SigningAlgorithm): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSigningAlgorithm(value: SigningAlgorithm): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: ASN1Subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: ASN1Subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
   }
 }

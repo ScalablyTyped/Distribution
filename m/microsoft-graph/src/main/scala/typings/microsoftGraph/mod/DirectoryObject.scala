@@ -12,22 +12,17 @@ trait DirectoryObject
 }
 object DirectoryObject {
   
-  @scala.inline
-  def apply(): DirectoryObject = {
+  inline def apply(): DirectoryObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectoryObject]
   }
   
-  @scala.inline
-  implicit class DirectoryObjectMutableBuilder[Self <: DirectoryObject] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryObject](x: Self) {
     
-    @scala.inline
-    def setDeletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "deletedDateTime", value.asInstanceOf[js.Any])
+    inline def setDeletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "deletedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedDateTimeNull: Self = StObject.set(x, "deletedDateTime", null)
+    inline def setDeletedDateTimeNull: Self = StObject.set(x, "deletedDateTime", null)
     
-    @scala.inline
-    def setDeletedDateTimeUndefined: Self = StObject.set(x, "deletedDateTime", js.undefined)
+    inline def setDeletedDateTimeUndefined: Self = StObject.set(x, "deletedDateTime", js.undefined)
   }
 }

@@ -59,11 +59,9 @@ object paginationMod {
     @js.native
     val ^ : STATE_CHANGE_TYPE = js.native
     
-    @scala.inline
-    implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+    extension [Self <: STATE_CHANGE_TYPE](x: Self) {
       
-      @scala.inline
-      def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,32 +108,24 @@ object paginationMod {
   }
   object Callbacks {
     
-    @scala.inline
-    def apply(): Callbacks = {
+    inline def apply(): Callbacks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Callbacks]
     }
     
-    @scala.inline
-    implicit class CallbacksMutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
+    extension [Self <: Callbacks](x: Self) {
       
-      @scala.inline
-      def setOnNextClick(value: /* args */ EventAny => js.Any): Self = StObject.set(x, "onNextClick", js.Any.fromFunction1(value))
+      inline def setOnNextClick(value: /* args */ EventAny => js.Any): Self = StObject.set(x, "onNextClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNextClickUndefined: Self = StObject.set(x, "onNextClick", js.undefined)
+      inline def setOnNextClickUndefined: Self = StObject.set(x, "onNextClick", js.undefined)
       
-      @scala.inline
-      def setOnPageChange(value: /* args */ NextPage => js.Any): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
+      inline def setOnPageChange(value: /* args */ NextPage => js.Any): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
+      inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
       
-      @scala.inline
-      def setOnPrevClick(value: /* args */ EventAny => js.Any): Self = StObject.set(x, "onPrevClick", js.Any.fromFunction1(value))
+      inline def setOnPrevClick(value: /* args */ EventAny => js.Any): Self = StObject.set(x, "onPrevClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPrevClickUndefined: Self = StObject.set(x, "onPrevClick", js.undefined)
+      inline def setOnPrevClickUndefined: Self = StObject.set(x, "onPrevClick", js.undefined)
     }
   }
   
@@ -149,32 +139,24 @@ object paginationMod {
   }
   object Labels {
     
-    @scala.inline
-    def apply(): Labels = {
+    inline def apply(): Labels = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Labels]
     }
     
-    @scala.inline
-    implicit class LabelsMutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
+    extension [Self <: Labels](x: Self) {
       
-      @scala.inline
-      def setNextButton(value: String): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
+      inline def setNextButton(value: String): Self = StObject.set(x, "nextButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
+      inline def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
       
-      @scala.inline
-      def setPreposition(value: String): Self = StObject.set(x, "preposition", value.asInstanceOf[js.Any])
+      inline def setPreposition(value: String): Self = StObject.set(x, "preposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrepositionUndefined: Self = StObject.set(x, "preposition", js.undefined)
+      inline def setPrepositionUndefined: Self = StObject.set(x, "preposition", js.undefined)
       
-      @scala.inline
-      def setPrevButton(value: String): Self = StObject.set(x, "prevButton", value.asInstanceOf[js.Any])
+      inline def setPrevButton(value: String): Self = StObject.set(x, "prevButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevButtonUndefined: Self = StObject.set(x, "prevButton", js.undefined)
+      inline def setPrevButtonUndefined: Self = StObject.set(x, "prevButton", js.undefined)
     }
   }
   
@@ -184,17 +166,14 @@ object paginationMod {
   }
   object PageOption {
     
-    @scala.inline
-    def apply(label: Double): PageOption = {
+    inline def apply(label: Double): PageOption = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageOption]
     }
     
-    @scala.inline
-    implicit class PageOptionMutableBuilder[Self <: PageOption] (val x: Self) extends AnyVal {
+    extension [Self <: PageOption](x: Self) {
       
-      @scala.inline
-      def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,62 +205,48 @@ object paginationMod {
   }
   object PaginationOverrides {
     
-    @scala.inline
-    def apply(): PaginationOverrides = {
+    inline def apply(): PaginationOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationOverrides]
     }
     
-    @scala.inline
-    implicit class PaginationOverridesMutableBuilder[Self <: PaginationOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationOverrides](x: Self) {
       
-      @scala.inline
-      def setDropdownContainer(
+      inline def setDropdownContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "DropdownContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownContainerUndefined: Self = StObject.set(x, "DropdownContainer", js.undefined)
+      inline def setDropdownContainerUndefined: Self = StObject.set(x, "DropdownContainer", js.undefined)
       
-      @scala.inline
-      def setMaxLabel(
+      inline def setMaxLabel(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "MaxLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLabelUndefined: Self = StObject.set(x, "MaxLabel", js.undefined)
+      inline def setMaxLabelUndefined: Self = StObject.set(x, "MaxLabel", js.undefined)
       
-      @scala.inline
-      def setNextButton(
+      inline def setNextButton(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "NextButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextButtonUndefined: Self = StObject.set(x, "NextButton", js.undefined)
+      inline def setNextButtonUndefined: Self = StObject.set(x, "NextButton", js.undefined)
       
-      @scala.inline
-      def setPrevButton(
+      inline def setPrevButton(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "PrevButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevButtonUndefined: Self = StObject.set(x, "PrevButton", js.undefined)
+      inline def setPrevButtonUndefined: Self = StObject.set(x, "PrevButton", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setSelect(
+      inline def setSelect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
     }
   }
   
@@ -301,38 +266,28 @@ object paginationMod {
   }
   object PaginationProps {
     
-    @scala.inline
-    def apply(currentPage: Double, numPages: Double): PaginationProps = {
+    inline def apply(currentPage: Double, numPages: Double): PaginationProps = {
       val __obj = js.Dynamic.literal(currentPage = currentPage.asInstanceOf[js.Any], numPages = numPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
     
-    @scala.inline
-    implicit class PaginationPropsMutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationProps](x: Self) {
       
-      @scala.inline
-      def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
+      inline def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrides(value: PaginationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: PaginationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | default_ | compact | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | default_ | compact | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -342,17 +297,14 @@ object paginationMod {
   }
   object State {
     
-    @scala.inline
-    def apply(currentPage: Double): State = {
+    inline def apply(currentPage: Double): State = {
       val __obj = js.Dynamic.literal(currentPage = currentPage.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -372,41 +324,30 @@ object paginationMod {
   }
   object StatefulContainerProps {
     
-    @scala.inline
-    def apply(numPages: Double): StatefulContainerProps = {
+    inline def apply(numPages: Double): StatefulContainerProps = {
       val __obj = js.Dynamic.literal(numPages = numPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    @scala.inline
-    implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulContainerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
+      inline def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPageChange(value: /* args */ NextPage => js.Any): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
+      inline def setOnPageChange(value: /* args */ NextPage => js.Any): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
+      inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (change_, /* changes */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (change_, /* changes */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
   
@@ -426,41 +367,30 @@ object paginationMod {
   }
   object StatefulPaginationProps {
     
-    @scala.inline
-    def apply(numPages: Double): StatefulPaginationProps = {
+    inline def apply(numPages: Double): StatefulPaginationProps = {
       val __obj = js.Dynamic.literal(numPages = numPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatefulPaginationProps]
     }
     
-    @scala.inline
-    implicit class StatefulPaginationPropsMutableBuilder[Self <: StatefulPaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulPaginationProps](x: Self) {
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
+      inline def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrides(value: PaginationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: PaginationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (change_, /* changes */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (change_, /* changes */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
 }

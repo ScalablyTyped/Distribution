@@ -17,22 +17,17 @@ trait ADAPTIVE extends StObject {
 }
 object ADAPTIVE {
   
-  @scala.inline
-  def apply(): ADAPTIVE = {
+  inline def apply(): ADAPTIVE = {
     val __obj = js.Dynamic.literal(ADAPTIVE = "adaptive", ASYNCHRONOUS = "asynchronous", SYNCHRONOUS = "synchronous")
     __obj.asInstanceOf[ADAPTIVE]
   }
   
-  @scala.inline
-  implicit class ADAPTIVEMutableBuilder[Self <: ADAPTIVE] (val x: Self) extends AnyVal {
+  extension [Self <: ADAPTIVE](x: Self) {
     
-    @scala.inline
-    def setADAPTIVE(value: adaptive_): Self = StObject.set(x, "ADAPTIVE", value.asInstanceOf[js.Any])
+    inline def setADAPTIVE(value: adaptive_): Self = StObject.set(x, "ADAPTIVE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setASYNCHRONOUS(value: asynchronous_): Self = StObject.set(x, "ASYNCHRONOUS", value.asInstanceOf[js.Any])
+    inline def setASYNCHRONOUS(value: asynchronous_): Self = StObject.set(x, "ASYNCHRONOUS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSYNCHRONOUS(value: synchronous_): Self = StObject.set(x, "SYNCHRONOUS", value.asInstanceOf[js.Any])
+    inline def setSYNCHRONOUS(value: synchronous_): Self = StObject.set(x, "SYNCHRONOUS", value.asInstanceOf[js.Any])
   }
 }

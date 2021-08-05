@@ -23,31 +23,23 @@ trait GetFileInfoSuccess extends StObject {
 }
 object GetFileInfoSuccess {
   
-  @scala.inline
-  def apply(): GetFileInfoSuccess = {
+  inline def apply(): GetFileInfoSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFileInfoSuccess]
   }
   
-  @scala.inline
-  implicit class GetFileInfoSuccessMutableBuilder[Self <: GetFileInfoSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileInfoSuccess](x: Self) {
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

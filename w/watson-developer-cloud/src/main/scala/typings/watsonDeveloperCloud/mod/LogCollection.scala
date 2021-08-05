@@ -15,22 +15,17 @@ trait LogCollection extends StObject {
 }
 object LogCollection {
   
-  @scala.inline
-  def apply(logs: js.Array[Log], pagination: LogPagination): LogCollection = {
+  inline def apply(logs: js.Array[Log], pagination: LogPagination): LogCollection = {
     val __obj = js.Dynamic.literal(logs = logs.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogCollection]
   }
   
-  @scala.inline
-  implicit class LogCollectionMutableBuilder[Self <: LogCollection] (val x: Self) extends AnyVal {
+  extension [Self <: LogCollection](x: Self) {
     
-    @scala.inline
-    def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    inline def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
     
-    @scala.inline
-    def setPagination(value: LogPagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: LogPagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

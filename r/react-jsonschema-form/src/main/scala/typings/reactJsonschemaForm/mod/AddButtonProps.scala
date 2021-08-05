@@ -16,8 +16,7 @@ trait AddButtonProps extends StObject {
 }
 object AddButtonProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     className: String,
     disabled: Boolean,
     onClick: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit
@@ -26,16 +25,12 @@ object AddButtonProps {
     __obj.asInstanceOf[AddButtonProps]
   }
   
-  @scala.inline
-  implicit class AddButtonPropsMutableBuilder[Self <: AddButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: AddButtonProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
   }
 }

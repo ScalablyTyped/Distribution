@@ -107,10 +107,8 @@ object ObjectCreationExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(newKeyword: ISyntaxToken, expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(newKeyword.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax]
+  inline def create(newKeyword: ISyntaxToken, expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(newKeyword.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax]
+  inline def create1(expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax]
 }

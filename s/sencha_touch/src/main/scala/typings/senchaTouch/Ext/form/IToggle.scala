@@ -78,103 +78,71 @@ trait IToggle
 }
 object IToggle {
   
-  @scala.inline
-  def apply(): IToggle = {
+  inline def apply(): IToggle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IToggle]
   }
   
-  @scala.inline
-  implicit class IToggleMutableBuilder[Self <: IToggle] (val x: Self) extends AnyVal {
+  extension [Self <: IToggle](x: Self) {
     
-    @scala.inline
-    def setActiveLabel(value: String): Self = StObject.set(x, "activeLabel", value.asInstanceOf[js.Any])
+    inline def setActiveLabel(value: String): Self = StObject.set(x, "activeLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveLabelUndefined: Self = StObject.set(x, "activeLabel", js.undefined)
+    inline def setActiveLabelUndefined: Self = StObject.set(x, "activeLabel", js.undefined)
     
-    @scala.inline
-    def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
+    inline def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
+    inline def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
     
-    @scala.inline
-    def setGetActiveLabel(value: () => String): Self = StObject.set(x, "getActiveLabel", js.Any.fromFunction0(value))
+    inline def setGetActiveLabel(value: () => String): Self = StObject.set(x, "getActiveLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveLabelUndefined: Self = StObject.set(x, "getActiveLabel", js.undefined)
+    inline def setGetActiveLabelUndefined: Self = StObject.set(x, "getActiveLabel", js.undefined)
     
-    @scala.inline
-    def setGetInactiveLabel(value: () => String): Self = StObject.set(x, "getInactiveLabel", js.Any.fromFunction0(value))
+    inline def setGetInactiveLabel(value: () => String): Self = StObject.set(x, "getInactiveLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInactiveLabelUndefined: Self = StObject.set(x, "getInactiveLabel", js.undefined)
+    inline def setGetInactiveLabelUndefined: Self = StObject.set(x, "getInactiveLabel", js.undefined)
     
-    @scala.inline
-    def setGetMaxValueCls(value: () => String): Self = StObject.set(x, "getMaxValueCls", js.Any.fromFunction0(value))
+    inline def setGetMaxValueCls(value: () => String): Self = StObject.set(x, "getMaxValueCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxValueClsUndefined: Self = StObject.set(x, "getMaxValueCls", js.undefined)
+    inline def setGetMaxValueClsUndefined: Self = StObject.set(x, "getMaxValueCls", js.undefined)
     
-    @scala.inline
-    def setGetMinValueCls(value: () => String): Self = StObject.set(x, "getMinValueCls", js.Any.fromFunction0(value))
+    inline def setGetMinValueCls(value: () => String): Self = StObject.set(x, "getMinValueCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinValueClsUndefined: Self = StObject.set(x, "getMinValueCls", js.undefined)
+    inline def setGetMinValueClsUndefined: Self = StObject.set(x, "getMinValueCls", js.undefined)
     
-    @scala.inline
-    def setInactiveLabel(value: String): Self = StObject.set(x, "inactiveLabel", value.asInstanceOf[js.Any])
+    inline def setInactiveLabel(value: String): Self = StObject.set(x, "inactiveLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveLabelUndefined: Self = StObject.set(x, "inactiveLabel", js.undefined)
+    inline def setInactiveLabelUndefined: Self = StObject.set(x, "inactiveLabel", js.undefined)
     
-    @scala.inline
-    def setMaxValueCls(value: String): Self = StObject.set(x, "maxValueCls", value.asInstanceOf[js.Any])
+    inline def setMaxValueCls(value: String): Self = StObject.set(x, "maxValueCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueClsUndefined: Self = StObject.set(x, "maxValueCls", js.undefined)
+    inline def setMaxValueClsUndefined: Self = StObject.set(x, "maxValueCls", js.undefined)
     
-    @scala.inline
-    def setMinValueCls(value: String): Self = StObject.set(x, "minValueCls", value.asInstanceOf[js.Any])
+    inline def setMinValueCls(value: String): Self = StObject.set(x, "minValueCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueClsUndefined: Self = StObject.set(x, "minValueCls", js.undefined)
+    inline def setMinValueClsUndefined: Self = StObject.set(x, "minValueCls", js.undefined)
     
-    @scala.inline
-    def setSetActiveLabel(value: /* activeLabel */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setActiveLabel", js.Any.fromFunction1(value))
+    inline def setSetActiveLabel(value: /* activeLabel */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setActiveLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActiveLabelUndefined: Self = StObject.set(x, "setActiveLabel", js.undefined)
+    inline def setSetActiveLabelUndefined: Self = StObject.set(x, "setActiveLabel", js.undefined)
     
-    @scala.inline
-    def setSetInactiveLabel(value: /* inactiveLabel */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInactiveLabel", js.Any.fromFunction1(value))
+    inline def setSetInactiveLabel(value: /* inactiveLabel */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setInactiveLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInactiveLabelUndefined: Self = StObject.set(x, "setInactiveLabel", js.undefined)
+    inline def setSetInactiveLabelUndefined: Self = StObject.set(x, "setInactiveLabel", js.undefined)
     
-    @scala.inline
-    def setSetMaxValueCls(value: /* maxValueCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMaxValueCls", js.Any.fromFunction1(value))
+    inline def setSetMaxValueCls(value: /* maxValueCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMaxValueCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxValueClsUndefined: Self = StObject.set(x, "setMaxValueCls", js.undefined)
+    inline def setSetMaxValueClsUndefined: Self = StObject.set(x, "setMaxValueCls", js.undefined)
     
-    @scala.inline
-    def setSetMinValueCls(value: /* minValueCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMinValueCls", js.Any.fromFunction1(value))
+    inline def setSetMinValueCls(value: /* minValueCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMinValueCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinValueClsUndefined: Self = StObject.set(x, "setMinValueCls", js.undefined)
+    inline def setSetMinValueClsUndefined: Self = StObject.set(x, "setMinValueCls", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* newValue */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* newValue */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setToggle(value: () => js.Any): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => js.Any): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

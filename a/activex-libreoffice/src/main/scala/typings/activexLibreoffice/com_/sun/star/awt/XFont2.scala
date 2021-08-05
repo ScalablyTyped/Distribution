@@ -24,8 +24,7 @@ trait XFont2
 }
 object XFont2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FontDescriptor: FontDescriptor,
     FontMetric: SimpleFontMetric,
     acquire: () => Unit,
@@ -44,10 +43,8 @@ object XFont2 {
     __obj.asInstanceOf[XFont2]
   }
   
-  @scala.inline
-  implicit class XFont2MutableBuilder[Self <: XFont2] (val x: Self) extends AnyVal {
+  extension [Self <: XFont2](x: Self) {
     
-    @scala.inline
-    def setHasGlyphs(value: String => Boolean): Self = StObject.set(x, "hasGlyphs", js.Any.fromFunction1(value))
+    inline def setHasGlyphs(value: String => Boolean): Self = StObject.set(x, "hasGlyphs", js.Any.fromFunction1(value))
   }
 }

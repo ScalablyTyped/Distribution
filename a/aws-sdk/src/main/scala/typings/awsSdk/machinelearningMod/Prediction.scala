@@ -22,37 +22,27 @@ trait Prediction extends StObject {
 }
 object Prediction {
   
-  @scala.inline
-  def apply(): Prediction = {
+  inline def apply(): Prediction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Prediction]
   }
   
-  @scala.inline
-  implicit class PredictionMutableBuilder[Self <: Prediction] (val x: Self) extends AnyVal {
+  extension [Self <: Prediction](x: Self) {
     
-    @scala.inline
-    def setDetails(value: DetailsMap): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: DetailsMap): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setPredictedLabel(value: Label): Self = StObject.set(x, "predictedLabel", value.asInstanceOf[js.Any])
+    inline def setPredictedLabel(value: Label): Self = StObject.set(x, "predictedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictedLabelUndefined: Self = StObject.set(x, "predictedLabel", js.undefined)
+    inline def setPredictedLabelUndefined: Self = StObject.set(x, "predictedLabel", js.undefined)
     
-    @scala.inline
-    def setPredictedScores(value: ScoreValuePerLabelMap): Self = StObject.set(x, "predictedScores", value.asInstanceOf[js.Any])
+    inline def setPredictedScores(value: ScoreValuePerLabelMap): Self = StObject.set(x, "predictedScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictedScoresUndefined: Self = StObject.set(x, "predictedScores", js.undefined)
+    inline def setPredictedScoresUndefined: Self = StObject.set(x, "predictedScores", js.undefined)
     
-    @scala.inline
-    def setPredictedValue(value: floatLabel): Self = StObject.set(x, "predictedValue", value.asInstanceOf[js.Any])
+    inline def setPredictedValue(value: floatLabel): Self = StObject.set(x, "predictedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictedValueUndefined: Self = StObject.set(x, "predictedValue", js.undefined)
+    inline def setPredictedValueUndefined: Self = StObject.set(x, "predictedValue", js.undefined)
   }
 }

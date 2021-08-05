@@ -14,8 +14,7 @@ trait Observer[T]
 }
 object Observer {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     asObserver: () => Observer[T],
     onCompleted: () => Unit,
     onError: js.Any => Unit,
@@ -26,13 +25,10 @@ object Observer {
     __obj.asInstanceOf[Observer[T]]
   }
   
-  @scala.inline
-  implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+  extension [Self <: Observer[?], T](x: Self & Observer[T]) {
     
-    @scala.inline
-    def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))
+    inline def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToNotifier(value: () => js.Function1[/* notification */ Notification[T], Unit]): Self = StObject.set(x, "toNotifier", js.Any.fromFunction0(value))
+    inline def setToNotifier(value: () => js.Function1[/* notification */ Notification[T], Unit]): Self = StObject.set(x, "toNotifier", js.Any.fromFunction0(value))
   }
 }

@@ -49,8 +49,7 @@ trait InfoWindowHandlerMap[T /* <: InfoWindow */] extends StObject {
 }
 object InfoWindowHandlerMap {
   
-  @scala.inline
-  def apply[T /* <: InfoWindow */](
+  inline def apply[T /* <: InfoWindow */](
     closeclick: () => Unit,
     content_changed: () => Unit,
     domready: () => Unit,
@@ -61,22 +60,16 @@ object InfoWindowHandlerMap {
     __obj.asInstanceOf[InfoWindowHandlerMap[T]]
   }
   
-  @scala.inline
-  implicit class InfoWindowHandlerMapMutableBuilder[Self <: InfoWindowHandlerMap[?], T /* <: InfoWindow */] (val x: Self & InfoWindowHandlerMap[T]) extends AnyVal {
+  extension [Self <: InfoWindowHandlerMap[?], T /* <: InfoWindow */](x: Self & InfoWindowHandlerMap[T]) {
     
-    @scala.inline
-    def setCloseclick(value: () => Unit): Self = StObject.set(x, "closeclick", js.Any.fromFunction0(value))
+    inline def setCloseclick(value: () => Unit): Self = StObject.set(x, "closeclick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContent_changed(value: () => Unit): Self = StObject.set(x, "content_changed", js.Any.fromFunction0(value))
+    inline def setContent_changed(value: () => Unit): Self = StObject.set(x, "content_changed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDomready(value: () => Unit): Self = StObject.set(x, "domready", js.Any.fromFunction0(value))
+    inline def setDomready(value: () => Unit): Self = StObject.set(x, "domready", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosition_changed(value: () => Unit): Self = StObject.set(x, "position_changed", js.Any.fromFunction0(value))
+    inline def setPosition_changed(value: () => Unit): Self = StObject.set(x, "position_changed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setZindex_changed(value: () => Unit): Self = StObject.set(x, "zindex_changed", js.Any.fromFunction0(value))
+    inline def setZindex_changed(value: () => Unit): Self = StObject.set(x, "zindex_changed", js.Any.fromFunction0(value))
   }
 }

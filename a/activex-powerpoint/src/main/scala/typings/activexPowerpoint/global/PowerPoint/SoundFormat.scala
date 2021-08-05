@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SoundFormat")
 @js.native
-class SoundFormat protected ()
+/* private */ class SoundFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SoundFormat {
   
@@ -20,7 +20,7 @@ class SoundFormat protected ()
   /* CompleteClass */
   override def Play(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.SoundFormat_typekey")
   var PowerPointDotSoundFormat_typekey: typings.activexPowerpoint.PowerPoint.SoundFormat = js.native
   

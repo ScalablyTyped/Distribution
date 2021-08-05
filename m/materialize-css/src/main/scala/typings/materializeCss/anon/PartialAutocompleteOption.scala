@@ -21,43 +21,31 @@ trait PartialAutocompleteOption extends StObject {
 }
 object PartialAutocompleteOption {
   
-  @scala.inline
-  def apply(): PartialAutocompleteOption = {
+  inline def apply(): PartialAutocompleteOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialAutocompleteOption]
   }
   
-  @scala.inline
-  implicit class PartialAutocompleteOptionMutableBuilder[Self <: PartialAutocompleteOption] (val x: Self) extends AnyVal {
+  extension [Self <: PartialAutocompleteOption](x: Self) {
     
-    @scala.inline
-    def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
-    @scala.inline
-    def setOnAutocomplete(value: js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit]): Self = StObject.set(x, "onAutocomplete", value.asInstanceOf[js.Any])
+    inline def setOnAutocomplete(value: js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit]): Self = StObject.set(x, "onAutocomplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAutocompleteUndefined: Self = StObject.set(x, "onAutocomplete", js.undefined)
+    inline def setOnAutocompleteUndefined: Self = StObject.set(x, "onAutocomplete", js.undefined)
     
-    @scala.inline
-    def setSortFunction(value: (/* a */ String, /* b */ String, /* inputText */ String) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
+    inline def setSortFunction(value: (/* a */ String, /* b */ String, /* inputText */ String) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSortFunctionUndefined: Self = StObject.set(x, "sortFunction", js.undefined)
+    inline def setSortFunctionUndefined: Self = StObject.set(x, "sortFunction", js.undefined)
   }
 }

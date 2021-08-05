@@ -26,8 +26,7 @@ trait DistanceMeasurement2DViewModelMeasurement
 }
 object DistanceMeasurement2DViewModelMeasurement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     geometry: js.Any,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object DistanceMeasurement2DViewModelMeasurement {
     __obj.asInstanceOf[DistanceMeasurement2DViewModelMeasurement]
   }
   
-  @scala.inline
-  implicit class DistanceMeasurement2DViewModelMeasurementMutableBuilder[Self <: DistanceMeasurement2DViewModelMeasurement] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceMeasurement2DViewModelMeasurement](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

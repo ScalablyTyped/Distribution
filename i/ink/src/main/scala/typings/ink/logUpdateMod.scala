@@ -14,10 +14,8 @@ object logUpdateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(stream: Writable): LogUpdate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any]).asInstanceOf[LogUpdate]
-    @scala.inline
-    def create(stream: Writable, hasShowCursor: ShowCursor): LogUpdate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], hasShowCursor.asInstanceOf[js.Any])).asInstanceOf[LogUpdate]
+    inline def create(stream: Writable): LogUpdate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any]).asInstanceOf[LogUpdate]
+    inline def create(stream: Writable, hasShowCursor: ShowCursor): LogUpdate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], hasShowCursor.asInstanceOf[js.Any])).asInstanceOf[LogUpdate]
   }
   
   @js.native

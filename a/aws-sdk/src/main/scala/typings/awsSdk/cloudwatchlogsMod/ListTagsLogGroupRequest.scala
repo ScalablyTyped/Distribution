@@ -13,16 +13,13 @@ trait ListTagsLogGroupRequest extends StObject {
 }
 object ListTagsLogGroupRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName): ListTagsLogGroupRequest = {
+  inline def apply(logGroupName: LogGroupName): ListTagsLogGroupRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsLogGroupRequest]
   }
   
-  @scala.inline
-  implicit class ListTagsLogGroupRequestMutableBuilder[Self <: ListTagsLogGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsLogGroupRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }
 }

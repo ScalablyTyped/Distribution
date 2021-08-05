@@ -25,28 +25,21 @@ trait PlayReadyDomain extends StObject {
 }
 object PlayReadyDomain {
   
-  @scala.inline
-  def apply(accountId: String, domainJoinUrl: Uri, friendlyName: String, revision: Double, serviceId: String): PlayReadyDomain = {
+  inline def apply(accountId: String, domainJoinUrl: Uri, friendlyName: String, revision: Double, serviceId: String): PlayReadyDomain = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], domainJoinUrl = domainJoinUrl.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayReadyDomain]
   }
   
-  @scala.inline
-  implicit class PlayReadyDomainMutableBuilder[Self <: PlayReadyDomain] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyDomain](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainJoinUrl(value: Uri): Self = StObject.set(x, "domainJoinUrl", value.asInstanceOf[js.Any])
+    inline def setDomainJoinUrl(value: Uri): Self = StObject.set(x, "domainJoinUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
   }
 }

@@ -210,8 +210,7 @@ trait SeriesOptionsRegistry extends StObject {
 }
 object SeriesOptionsRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SeriesAbandsOptions: SeriesAbandsOptions,
     SeriesAdOptions: SeriesAdOptions,
     SeriesAoOptions: SeriesAoOptions,
@@ -318,310 +317,208 @@ object SeriesOptionsRegistry {
     __obj.asInstanceOf[SeriesOptionsRegistry]
   }
   
-  @scala.inline
-  implicit class SeriesOptionsRegistryMutableBuilder[Self <: SeriesOptionsRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesOptionsRegistry](x: Self) {
     
-    @scala.inline
-    def setSeriesAbandsOptions(value: SeriesAbandsOptions): Self = StObject.set(x, "SeriesAbandsOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAbandsOptions(value: SeriesAbandsOptions): Self = StObject.set(x, "SeriesAbandsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAdOptions(value: SeriesAdOptions): Self = StObject.set(x, "SeriesAdOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAdOptions(value: SeriesAdOptions): Self = StObject.set(x, "SeriesAdOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAoOptions(value: SeriesAoOptions): Self = StObject.set(x, "SeriesAoOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAoOptions(value: SeriesAoOptions): Self = StObject.set(x, "SeriesAoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesApoOptions(value: SeriesApoOptions): Self = StObject.set(x, "SeriesApoOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesApoOptions(value: SeriesApoOptions): Self = StObject.set(x, "SeriesApoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAreaOptions(value: SeriesAreaOptions): Self = StObject.set(x, "SeriesAreaOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAreaOptions(value: SeriesAreaOptions): Self = StObject.set(x, "SeriesAreaOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesArearangeOptions(value: SeriesArearangeOptions): Self = StObject.set(x, "SeriesArearangeOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesArearangeOptions(value: SeriesArearangeOptions): Self = StObject.set(x, "SeriesArearangeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAreasplineOptions(value: SeriesAreasplineOptions): Self = StObject.set(x, "SeriesAreasplineOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAreasplineOptions(value: SeriesAreasplineOptions): Self = StObject.set(x, "SeriesAreasplineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAreasplinerangeOptions(value: SeriesAreasplinerangeOptions): Self = StObject.set(x, "SeriesAreasplinerangeOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAreasplinerangeOptions(value: SeriesAreasplinerangeOptions): Self = StObject.set(x, "SeriesAreasplinerangeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAroonOptions(value: SeriesAroonOptions): Self = StObject.set(x, "SeriesAroonOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAroonOptions(value: SeriesAroonOptions): Self = StObject.set(x, "SeriesAroonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAroonoscillatorOptions(value: SeriesAroonoscillatorOptions): Self = StObject.set(x, "SeriesAroonoscillatorOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAroonoscillatorOptions(value: SeriesAroonoscillatorOptions): Self = StObject.set(x, "SeriesAroonoscillatorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAtrOptions(value: SeriesAtrOptions): Self = StObject.set(x, "SeriesAtrOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesAtrOptions(value: SeriesAtrOptions): Self = StObject.set(x, "SeriesAtrOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesBarOptions(value: SeriesBarOptions): Self = StObject.set(x, "SeriesBarOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesBarOptions(value: SeriesBarOptions): Self = StObject.set(x, "SeriesBarOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesBbOptions(value: SeriesBbOptions): Self = StObject.set(x, "SeriesBbOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesBbOptions(value: SeriesBbOptions): Self = StObject.set(x, "SeriesBbOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesBellcurveOptions(value: SeriesBellcurveOptions): Self = StObject.set(x, "SeriesBellcurveOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesBellcurveOptions(value: SeriesBellcurveOptions): Self = StObject.set(x, "SeriesBellcurveOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesBoxplotOptions(value: SeriesBoxplotOptions): Self = StObject.set(x, "SeriesBoxplotOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesBoxplotOptions(value: SeriesBoxplotOptions): Self = StObject.set(x, "SeriesBoxplotOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesBubbleOptions(value: SeriesBubbleOptions): Self = StObject.set(x, "SeriesBubbleOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesBubbleOptions(value: SeriesBubbleOptions): Self = StObject.set(x, "SeriesBubbleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesBulletOptions(value: SeriesBulletOptions): Self = StObject.set(x, "SeriesBulletOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesBulletOptions(value: SeriesBulletOptions): Self = StObject.set(x, "SeriesBulletOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesCandlestickOptions(value: SeriesCandlestickOptions): Self = StObject.set(x, "SeriesCandlestickOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesCandlestickOptions(value: SeriesCandlestickOptions): Self = StObject.set(x, "SeriesCandlestickOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesCciOptions(value: SeriesCciOptions): Self = StObject.set(x, "SeriesCciOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesCciOptions(value: SeriesCciOptions): Self = StObject.set(x, "SeriesCciOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesChaikinOptions(value: SeriesChaikinOptions): Self = StObject.set(x, "SeriesChaikinOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesChaikinOptions(value: SeriesChaikinOptions): Self = StObject.set(x, "SeriesChaikinOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesCmfOptions(value: SeriesCmfOptions): Self = StObject.set(x, "SeriesCmfOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesCmfOptions(value: SeriesCmfOptions): Self = StObject.set(x, "SeriesCmfOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesColumnOptions(value: SeriesColumnOptions): Self = StObject.set(x, "SeriesColumnOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesColumnOptions(value: SeriesColumnOptions): Self = StObject.set(x, "SeriesColumnOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesColumnpyramidOptions(value: SeriesColumnpyramidOptions): Self = StObject.set(x, "SeriesColumnpyramidOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesColumnpyramidOptions(value: SeriesColumnpyramidOptions): Self = StObject.set(x, "SeriesColumnpyramidOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesColumnrangeOptions(value: SeriesColumnrangeOptions): Self = StObject.set(x, "SeriesColumnrangeOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesColumnrangeOptions(value: SeriesColumnrangeOptions): Self = StObject.set(x, "SeriesColumnrangeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesCylinderOptions(value: SeriesCylinderOptions): Self = StObject.set(x, "SeriesCylinderOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesCylinderOptions(value: SeriesCylinderOptions): Self = StObject.set(x, "SeriesCylinderOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesDemaOptions(value: SeriesDemaOptions): Self = StObject.set(x, "SeriesDemaOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesDemaOptions(value: SeriesDemaOptions): Self = StObject.set(x, "SeriesDemaOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesDependencywheelOptions(value: SeriesDependencywheelOptions): Self = StObject.set(x, "SeriesDependencywheelOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesDependencywheelOptions(value: SeriesDependencywheelOptions): Self = StObject.set(x, "SeriesDependencywheelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesDpoOptions(value: SeriesDpoOptions): Self = StObject.set(x, "SeriesDpoOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesDpoOptions(value: SeriesDpoOptions): Self = StObject.set(x, "SeriesDpoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesDumbbellOptions(value: SeriesDumbbellOptions): Self = StObject.set(x, "SeriesDumbbellOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesDumbbellOptions(value: SeriesDumbbellOptions): Self = StObject.set(x, "SeriesDumbbellOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesEmaOptions(value: SeriesEmaOptions): Self = StObject.set(x, "SeriesEmaOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesEmaOptions(value: SeriesEmaOptions): Self = StObject.set(x, "SeriesEmaOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesErrorbarOptions(value: SeriesErrorbarOptions): Self = StObject.set(x, "SeriesErrorbarOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesErrorbarOptions(value: SeriesErrorbarOptions): Self = StObject.set(x, "SeriesErrorbarOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesFlagsOptions(value: SeriesFlagsOptions): Self = StObject.set(x, "SeriesFlagsOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesFlagsOptions(value: SeriesFlagsOptions): Self = StObject.set(x, "SeriesFlagsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesFunnel3dOptions(value: SeriesFunnel3dOptions): Self = StObject.set(x, "SeriesFunnel3dOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesFunnel3dOptions(value: SeriesFunnel3dOptions): Self = StObject.set(x, "SeriesFunnel3dOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesFunnelOptions(value: SeriesFunnelOptions): Self = StObject.set(x, "SeriesFunnelOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesFunnelOptions(value: SeriesFunnelOptions): Self = StObject.set(x, "SeriesFunnelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesGanttOptions(value: SeriesGanttOptions): Self = StObject.set(x, "SeriesGanttOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesGanttOptions(value: SeriesGanttOptions): Self = StObject.set(x, "SeriesGanttOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesGaugeOptions(value: SeriesGaugeOptions): Self = StObject.set(x, "SeriesGaugeOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesGaugeOptions(value: SeriesGaugeOptions): Self = StObject.set(x, "SeriesGaugeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesHeatmapOptions(value: SeriesHeatmapOptions): Self = StObject.set(x, "SeriesHeatmapOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesHeatmapOptions(value: SeriesHeatmapOptions): Self = StObject.set(x, "SeriesHeatmapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesHistogramOptions(value: SeriesHistogramOptions): Self = StObject.set(x, "SeriesHistogramOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesHistogramOptions(value: SeriesHistogramOptions): Self = StObject.set(x, "SeriesHistogramOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesIkhOptions(value: SeriesIkhOptions): Self = StObject.set(x, "SeriesIkhOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesIkhOptions(value: SeriesIkhOptions): Self = StObject.set(x, "SeriesIkhOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesItemOptions(value: SeriesItemOptions): Self = StObject.set(x, "SeriesItemOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesItemOptions(value: SeriesItemOptions): Self = StObject.set(x, "SeriesItemOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesKeltnerchannelsOptions(value: SeriesKeltnerchannelsOptions): Self = StObject.set(x, "SeriesKeltnerchannelsOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesKeltnerchannelsOptions(value: SeriesKeltnerchannelsOptions): Self = StObject.set(x, "SeriesKeltnerchannelsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesLineOptions(value: SeriesLineOptions): Self = StObject.set(x, "SeriesLineOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesLineOptions(value: SeriesLineOptions): Self = StObject.set(x, "SeriesLineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesLinearregressionOptions(value: SeriesLinearregressionOptions): Self = StObject.set(x, "SeriesLinearregressionOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesLinearregressionOptions(value: SeriesLinearregressionOptions): Self = StObject.set(x, "SeriesLinearregressionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesLinearregressionangleOptions(value: SeriesLinearregressionangleOptions): Self = StObject.set(x, "SeriesLinearregressionangleOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesLinearregressionangleOptions(value: SeriesLinearregressionangleOptions): Self = StObject.set(x, "SeriesLinearregressionangleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesLinearregressioninterceptOptions(value: SeriesLinearregressioninterceptOptions): Self = StObject.set(x, "SeriesLinearregressioninterceptOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesLinearregressioninterceptOptions(value: SeriesLinearregressioninterceptOptions): Self = StObject.set(x, "SeriesLinearregressioninterceptOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesLinearregressionslopeOptions(value: SeriesLinearregressionslopeOptions): Self = StObject.set(x, "SeriesLinearregressionslopeOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesLinearregressionslopeOptions(value: SeriesLinearregressionslopeOptions): Self = StObject.set(x, "SeriesLinearregressionslopeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesLollipopOptions(value: SeriesLollipopOptions): Self = StObject.set(x, "SeriesLollipopOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesLollipopOptions(value: SeriesLollipopOptions): Self = StObject.set(x, "SeriesLollipopOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesMacdOptions(value: SeriesMacdOptions): Self = StObject.set(x, "SeriesMacdOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesMacdOptions(value: SeriesMacdOptions): Self = StObject.set(x, "SeriesMacdOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesMapOptions(value: SeriesMapOptions): Self = StObject.set(x, "SeriesMapOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesMapOptions(value: SeriesMapOptions): Self = StObject.set(x, "SeriesMapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesMapbubbleOptions(value: SeriesMapbubbleOptions): Self = StObject.set(x, "SeriesMapbubbleOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesMapbubbleOptions(value: SeriesMapbubbleOptions): Self = StObject.set(x, "SeriesMapbubbleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesMaplineOptions(value: SeriesMaplineOptions): Self = StObject.set(x, "SeriesMaplineOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesMaplineOptions(value: SeriesMaplineOptions): Self = StObject.set(x, "SeriesMaplineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesMappointOptions(value: SeriesMappointOptions): Self = StObject.set(x, "SeriesMappointOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesMappointOptions(value: SeriesMappointOptions): Self = StObject.set(x, "SeriesMappointOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesMfiOptions(value: SeriesMfiOptions): Self = StObject.set(x, "SeriesMfiOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesMfiOptions(value: SeriesMfiOptions): Self = StObject.set(x, "SeriesMfiOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesMomentumOptions(value: SeriesMomentumOptions): Self = StObject.set(x, "SeriesMomentumOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesMomentumOptions(value: SeriesMomentumOptions): Self = StObject.set(x, "SeriesMomentumOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesNatrOptions(value: SeriesNatrOptions): Self = StObject.set(x, "SeriesNatrOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesNatrOptions(value: SeriesNatrOptions): Self = StObject.set(x, "SeriesNatrOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesNetworkgraphOptions(value: SeriesNetworkgraphOptions): Self = StObject.set(x, "SeriesNetworkgraphOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesNetworkgraphOptions(value: SeriesNetworkgraphOptions): Self = StObject.set(x, "SeriesNetworkgraphOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOhlcOptions(value: SeriesOhlcOptions): Self = StObject.set(x, "SeriesOhlcOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesOhlcOptions(value: SeriesOhlcOptions): Self = StObject.set(x, "SeriesOhlcOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOrganizationOptions(value: SeriesOrganizationOptions): Self = StObject.set(x, "SeriesOrganizationOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesOrganizationOptions(value: SeriesOrganizationOptions): Self = StObject.set(x, "SeriesOrganizationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPackedbubbleOptions(value: SeriesPackedbubbleOptions): Self = StObject.set(x, "SeriesPackedbubbleOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPackedbubbleOptions(value: SeriesPackedbubbleOptions): Self = StObject.set(x, "SeriesPackedbubbleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesParetoOptions(value: SeriesParetoOptions): Self = StObject.set(x, "SeriesParetoOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesParetoOptions(value: SeriesParetoOptions): Self = StObject.set(x, "SeriesParetoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPcOptions(value: SeriesPcOptions): Self = StObject.set(x, "SeriesPcOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPcOptions(value: SeriesPcOptions): Self = StObject.set(x, "SeriesPcOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPieOptions(value: SeriesPieOptions): Self = StObject.set(x, "SeriesPieOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPieOptions(value: SeriesPieOptions): Self = StObject.set(x, "SeriesPieOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPivotpointsOptions(value: SeriesPivotpointsOptions): Self = StObject.set(x, "SeriesPivotpointsOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPivotpointsOptions(value: SeriesPivotpointsOptions): Self = StObject.set(x, "SeriesPivotpointsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPolygonOptions(value: SeriesPolygonOptions): Self = StObject.set(x, "SeriesPolygonOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPolygonOptions(value: SeriesPolygonOptions): Self = StObject.set(x, "SeriesPolygonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPpoOptions(value: SeriesPpoOptions): Self = StObject.set(x, "SeriesPpoOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPpoOptions(value: SeriesPpoOptions): Self = StObject.set(x, "SeriesPpoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPriceenvelopesOptions(value: SeriesPriceenvelopesOptions): Self = StObject.set(x, "SeriesPriceenvelopesOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPriceenvelopesOptions(value: SeriesPriceenvelopesOptions): Self = StObject.set(x, "SeriesPriceenvelopesOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPsarOptions(value: SeriesPsarOptions): Self = StObject.set(x, "SeriesPsarOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPsarOptions(value: SeriesPsarOptions): Self = StObject.set(x, "SeriesPsarOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPyramid3dOptions(value: SeriesPyramid3dOptions): Self = StObject.set(x, "SeriesPyramid3dOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPyramid3dOptions(value: SeriesPyramid3dOptions): Self = StObject.set(x, "SeriesPyramid3dOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesPyramidOptions(value: SeriesPyramidOptions): Self = StObject.set(x, "SeriesPyramidOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesPyramidOptions(value: SeriesPyramidOptions): Self = StObject.set(x, "SeriesPyramidOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesRocOptions(value: SeriesRocOptions): Self = StObject.set(x, "SeriesRocOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesRocOptions(value: SeriesRocOptions): Self = StObject.set(x, "SeriesRocOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesRsiOptions(value: SeriesRsiOptions): Self = StObject.set(x, "SeriesRsiOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesRsiOptions(value: SeriesRsiOptions): Self = StObject.set(x, "SeriesRsiOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSankeyOptions(value: SeriesSankeyOptions): Self = StObject.set(x, "SeriesSankeyOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesSankeyOptions(value: SeriesSankeyOptions): Self = StObject.set(x, "SeriesSankeyOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesScatter3dOptions(value: SeriesScatter3dOptions): Self = StObject.set(x, "SeriesScatter3dOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesScatter3dOptions(value: SeriesScatter3dOptions): Self = StObject.set(x, "SeriesScatter3dOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesScatterOptions(value: SeriesScatterOptions): Self = StObject.set(x, "SeriesScatterOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesScatterOptions(value: SeriesScatterOptions): Self = StObject.set(x, "SeriesScatterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSlowstochasticOptions(value: SeriesSlowstochasticOptions): Self = StObject.set(x, "SeriesSlowstochasticOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesSlowstochasticOptions(value: SeriesSlowstochasticOptions): Self = StObject.set(x, "SeriesSlowstochasticOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSmaOptions(value: SeriesSmaOptions): Self = StObject.set(x, "SeriesSmaOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesSmaOptions(value: SeriesSmaOptions): Self = StObject.set(x, "SeriesSmaOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSolidgaugeOptions(value: SeriesSolidgaugeOptions): Self = StObject.set(x, "SeriesSolidgaugeOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesSolidgaugeOptions(value: SeriesSolidgaugeOptions): Self = StObject.set(x, "SeriesSolidgaugeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSplineOptions(value: SeriesSplineOptions): Self = StObject.set(x, "SeriesSplineOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesSplineOptions(value: SeriesSplineOptions): Self = StObject.set(x, "SeriesSplineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesStochasticOptions(value: SeriesStochasticOptions): Self = StObject.set(x, "SeriesStochasticOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesStochasticOptions(value: SeriesStochasticOptions): Self = StObject.set(x, "SeriesStochasticOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesStreamgraphOptions(value: SeriesStreamgraphOptions): Self = StObject.set(x, "SeriesStreamgraphOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesStreamgraphOptions(value: SeriesStreamgraphOptions): Self = StObject.set(x, "SeriesStreamgraphOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSunburstOptions(value: SeriesSunburstOptions): Self = StObject.set(x, "SeriesSunburstOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesSunburstOptions(value: SeriesSunburstOptions): Self = StObject.set(x, "SeriesSunburstOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSupertrendOptions(value: SeriesSupertrendOptions): Self = StObject.set(x, "SeriesSupertrendOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesSupertrendOptions(value: SeriesSupertrendOptions): Self = StObject.set(x, "SeriesSupertrendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTemaOptions(value: SeriesTemaOptions): Self = StObject.set(x, "SeriesTemaOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesTemaOptions(value: SeriesTemaOptions): Self = StObject.set(x, "SeriesTemaOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTilemapOptions(value: SeriesTilemapOptions): Self = StObject.set(x, "SeriesTilemapOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesTilemapOptions(value: SeriesTilemapOptions): Self = StObject.set(x, "SeriesTilemapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTimelineOptions(value: SeriesTimelineOptions): Self = StObject.set(x, "SeriesTimelineOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesTimelineOptions(value: SeriesTimelineOptions): Self = StObject.set(x, "SeriesTimelineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTreemapOptions(value: SeriesTreemapOptions): Self = StObject.set(x, "SeriesTreemapOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesTreemapOptions(value: SeriesTreemapOptions): Self = StObject.set(x, "SeriesTreemapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTrendlineOptions(value: SeriesTrendlineOptions): Self = StObject.set(x, "SeriesTrendlineOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesTrendlineOptions(value: SeriesTrendlineOptions): Self = StObject.set(x, "SeriesTrendlineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesTrixOptions(value: SeriesTrixOptions): Self = StObject.set(x, "SeriesTrixOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesTrixOptions(value: SeriesTrixOptions): Self = StObject.set(x, "SeriesTrixOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesVariablepieOptions(value: SeriesVariablepieOptions): Self = StObject.set(x, "SeriesVariablepieOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesVariablepieOptions(value: SeriesVariablepieOptions): Self = StObject.set(x, "SeriesVariablepieOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesVariwideOptions(value: SeriesVariwideOptions): Self = StObject.set(x, "SeriesVariwideOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesVariwideOptions(value: SeriesVariwideOptions): Self = StObject.set(x, "SeriesVariwideOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesVbpOptions(value: SeriesVbpOptions): Self = StObject.set(x, "SeriesVbpOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesVbpOptions(value: SeriesVbpOptions): Self = StObject.set(x, "SeriesVbpOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesVectorOptions(value: SeriesVectorOptions): Self = StObject.set(x, "SeriesVectorOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesVectorOptions(value: SeriesVectorOptions): Self = StObject.set(x, "SeriesVectorOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesVennOptions(value: SeriesVennOptions): Self = StObject.set(x, "SeriesVennOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesVennOptions(value: SeriesVennOptions): Self = StObject.set(x, "SeriesVennOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesVwapOptions(value: SeriesVwapOptions): Self = StObject.set(x, "SeriesVwapOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesVwapOptions(value: SeriesVwapOptions): Self = StObject.set(x, "SeriesVwapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesWaterfallOptions(value: SeriesWaterfallOptions): Self = StObject.set(x, "SeriesWaterfallOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesWaterfallOptions(value: SeriesWaterfallOptions): Self = StObject.set(x, "SeriesWaterfallOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesWilliamsrOptions(value: SeriesWilliamsrOptions): Self = StObject.set(x, "SeriesWilliamsrOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesWilliamsrOptions(value: SeriesWilliamsrOptions): Self = StObject.set(x, "SeriesWilliamsrOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesWindbarbOptions(value: SeriesWindbarbOptions): Self = StObject.set(x, "SeriesWindbarbOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesWindbarbOptions(value: SeriesWindbarbOptions): Self = StObject.set(x, "SeriesWindbarbOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesWmaOptions(value: SeriesWmaOptions): Self = StObject.set(x, "SeriesWmaOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesWmaOptions(value: SeriesWmaOptions): Self = StObject.set(x, "SeriesWmaOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesWordcloudOptions(value: SeriesWordcloudOptions): Self = StObject.set(x, "SeriesWordcloudOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesWordcloudOptions(value: SeriesWordcloudOptions): Self = StObject.set(x, "SeriesWordcloudOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesXrangeOptions(value: SeriesXrangeOptions): Self = StObject.set(x, "SeriesXrangeOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesXrangeOptions(value: SeriesXrangeOptions): Self = StObject.set(x, "SeriesXrangeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesZigzagOptions(value: SeriesZigzagOptions): Self = StObject.set(x, "SeriesZigzagOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesZigzagOptions(value: SeriesZigzagOptions): Self = StObject.set(x, "SeriesZigzagOptions", value.asInstanceOf[js.Any])
   }
 }

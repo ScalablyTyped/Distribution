@@ -25,9 +25,7 @@ object sampler {
     def shouldSample(traceId: TraceId): IOption[Boolean] = js.native
   }
   
-  @scala.inline
-  def alwaysSample(traceId: TraceId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysSample")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def alwaysSample(traceId: TraceId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysSample")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def neverSample(traceId: TraceId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("neverSample")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def neverSample(traceId: TraceId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("neverSample")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

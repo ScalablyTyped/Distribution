@@ -14,10 +14,7 @@ object isWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: Document): Window | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window | `false`]
-  @scala.inline
-  def default(node: Element): Window | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window | `false`]
-  @scala.inline
-  def default(node: Window): Window | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window | `false`]
+  inline def default(node: Document): Window | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window | `false`]
+  inline def default(node: Element): Window | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window | `false`]
+  inline def default(node: Window): Window | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window | `false`]
 }

@@ -36,82 +36,57 @@ trait ContextOptions extends StObject {
 }
 object ContextOptions {
   
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement): ContextOptions = {
+  inline def apply(canvas: HTMLCanvasElement): ContextOptions = {
     val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextOptions]
   }
   
-  @scala.inline
-  implicit class ContextOptionsMutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContextOptions](x: Self) {
     
-    @scala.inline
-    def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextOptions(value: js.Any): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
+    inline def setContextOptions(value: js.Any): Self = StObject.set(x, "contextOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
+    inline def setContextOptionsUndefined: Self = StObject.set(x, "contextOptions", js.undefined)
     
-    @scala.inline
-    def setCreditContainer(value: Element): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
+    inline def setCreditContainer(value: Element): Self = StObject.set(x, "creditContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditContainerUndefined: Self = StObject.set(x, "creditContainer", js.undefined)
+    inline def setCreditContainerUndefined: Self = StObject.set(x, "creditContainer", js.undefined)
     
-    @scala.inline
-    def setCreditViewport(value: Element): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
+    inline def setCreditViewport(value: Element): Self = StObject.set(x, "creditViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditViewportUndefined: Self = StObject.set(x, "creditViewport", js.undefined)
+    inline def setCreditViewportUndefined: Self = StObject.set(x, "creditViewport", js.undefined)
     
-    @scala.inline
-    def setMapMode2D(value: MapMode2D): Self = StObject.set(x, "mapMode2D", value.asInstanceOf[js.Any])
+    inline def setMapMode2D(value: MapMode2D): Self = StObject.set(x, "mapMode2D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapMode2DUndefined: Self = StObject.set(x, "mapMode2D", js.undefined)
+    inline def setMapMode2DUndefined: Self = StObject.set(x, "mapMode2D", js.undefined)
     
-    @scala.inline
-    def setMapProjection(value: MapProjection): Self = StObject.set(x, "mapProjection", value.asInstanceOf[js.Any])
+    inline def setMapProjection(value: MapProjection): Self = StObject.set(x, "mapProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapProjectionUndefined: Self = StObject.set(x, "mapProjection", js.undefined)
+    inline def setMapProjectionUndefined: Self = StObject.set(x, "mapProjection", js.undefined)
     
-    @scala.inline
-    def setMaximumRenderTimeChange(value: Double): Self = StObject.set(x, "maximumRenderTimeChange", value.asInstanceOf[js.Any])
+    inline def setMaximumRenderTimeChange(value: Double): Self = StObject.set(x, "maximumRenderTimeChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumRenderTimeChangeUndefined: Self = StObject.set(x, "maximumRenderTimeChange", js.undefined)
+    inline def setMaximumRenderTimeChangeUndefined: Self = StObject.set(x, "maximumRenderTimeChange", js.undefined)
     
-    @scala.inline
-    def setOrderIndependentTranslucency(value: Boolean): Self = StObject.set(x, "orderIndependentTranslucency", value.asInstanceOf[js.Any])
+    inline def setOrderIndependentTranslucency(value: Boolean): Self = StObject.set(x, "orderIndependentTranslucency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIndependentTranslucencyUndefined: Self = StObject.set(x, "orderIndependentTranslucency", js.undefined)
+    inline def setOrderIndependentTranslucencyUndefined: Self = StObject.set(x, "orderIndependentTranslucency", js.undefined)
     
-    @scala.inline
-    def setRequestRenderMode(value: Boolean): Self = StObject.set(x, "requestRenderMode", value.asInstanceOf[js.Any])
+    inline def setRequestRenderMode(value: Boolean): Self = StObject.set(x, "requestRenderMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestRenderModeUndefined: Self = StObject.set(x, "requestRenderMode", js.undefined)
+    inline def setRequestRenderModeUndefined: Self = StObject.set(x, "requestRenderMode", js.undefined)
     
-    @scala.inline
-    def setScene3DOnly(value: Boolean): Self = StObject.set(x, "scene3DOnly", value.asInstanceOf[js.Any])
+    inline def setScene3DOnly(value: Boolean): Self = StObject.set(x, "scene3DOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene3DOnlyUndefined: Self = StObject.set(x, "scene3DOnly", js.undefined)
+    inline def setScene3DOnlyUndefined: Self = StObject.set(x, "scene3DOnly", js.undefined)
     
-    @scala.inline
-    def setShadows(value: Boolean): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
+    inline def setShadows(value: Boolean): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
+    inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
-    @scala.inline
-    def setTerrainExaggeration(value: Double): Self = StObject.set(x, "terrainExaggeration", value.asInstanceOf[js.Any])
+    inline def setTerrainExaggeration(value: Double): Self = StObject.set(x, "terrainExaggeration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerrainExaggerationUndefined: Self = StObject.set(x, "terrainExaggeration", js.undefined)
+    inline def setTerrainExaggerationUndefined: Self = StObject.set(x, "terrainExaggeration", js.undefined)
   }
 }

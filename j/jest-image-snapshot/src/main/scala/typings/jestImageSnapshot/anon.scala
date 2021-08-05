@@ -24,26 +24,20 @@ object anon {
   }
   object Counter {
     
-    @scala.inline
-    def apply(counter: Double, currentTestName: String, defaultIdentifier: String, testPath: String): Counter = {
+    inline def apply(counter: Double, currentTestName: String, defaultIdentifier: String, testPath: String): Counter = {
       val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], currentTestName = currentTestName.asInstanceOf[js.Any], defaultIdentifier = defaultIdentifier.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Counter]
     }
     
-    @scala.inline
-    implicit class CounterMutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
+    extension [Self <: Counter](x: Self) {
       
-      @scala.inline
-      def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
+      inline def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultIdentifier(value: String): Self = StObject.set(x, "defaultIdentifier", value.asInstanceOf[js.Any])
+      inline def setDefaultIdentifier(value: String): Self = StObject.set(x, "defaultIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
+      inline def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,20 +49,16 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: () => String, pass: Boolean): Message = {
+    inline def apply(message: () => String, pass: Boolean): Message = {
       val __obj = js.Dynamic.literal(message = js.Any.fromFunction0(message), pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+      inline def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,62 +83,44 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
+      inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitDepthUndefined: Self = StObject.set(x, "bitDepth", js.undefined)
+      inline def setBitDepthUndefined: Self = StObject.set(x, "bitDepth", js.undefined)
       
-      @scala.inline
-      def setDownsample(value: original | fast | `false`): Self = StObject.set(x, "downsample", value.asInstanceOf[js.Any])
+      inline def setDownsample(value: original | fast | `false`): Self = StObject.set(x, "downsample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownsampleUndefined: Self = StObject.set(x, "downsample", js.undefined)
+      inline def setDownsampleUndefined: Self = StObject.set(x, "downsample", js.undefined)
       
-      @scala.inline
-      def setK1(value: Double): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
+      inline def setK1(value: Double): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK1Undefined: Self = StObject.set(x, "k1", js.undefined)
+      inline def setK1Undefined: Self = StObject.set(x, "k1", js.undefined)
       
-      @scala.inline
-      def setK2(value: Double): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
+      inline def setK2(value: Double): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK2Undefined: Self = StObject.set(x, "k2", js.undefined)
+      inline def setK2Undefined: Self = StObject.set(x, "k2", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setRgb2grayVersion(value: original | integer): Self = StObject.set(x, "rgb2grayVersion", value.asInstanceOf[js.Any])
+      inline def setRgb2grayVersion(value: original | integer): Self = StObject.set(x, "rgb2grayVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgb2grayVersionUndefined: Self = StObject.set(x, "rgb2grayVersion", js.undefined)
+      inline def setRgb2grayVersionUndefined: Self = StObject.set(x, "rgb2grayVersion", js.undefined)
       
-      @scala.inline
-      def setSsim(value: fast | original | bezkrovny | weber): Self = StObject.set(x, "ssim", value.asInstanceOf[js.Any])
+      inline def setSsim(value: fast | original | bezkrovny | weber): Self = StObject.set(x, "ssim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsimUndefined: Self = StObject.set(x, "ssim", js.undefined)
+      inline def setSsimUndefined: Self = StObject.set(x, "ssim", js.undefined)
       
-      @scala.inline
-      def setWindowSize(value: Double): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
+      inline def setWindowSize(value: Double): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowSizeUndefined: Self = StObject.set(x, "windowSize", js.undefined)
+      inline def setWindowSizeUndefined: Self = StObject.set(x, "windowSize", js.undefined)
     }
   }
 }

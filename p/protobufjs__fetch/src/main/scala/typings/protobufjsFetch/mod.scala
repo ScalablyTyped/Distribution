@@ -16,8 +16,7 @@ object mod {
     * @param {FetchCallback} callback Callback function
     * @returns {undefined}
     */
-  @scala.inline
-  def apply(filename: String, options: FetchOptions, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(filename: String, options: FetchOptions, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Fetches the contents of a file.
     * @name util.fetch
@@ -27,8 +26,7 @@ object mod {
     * @returns {Promise<string|Uint8Array>} Promise
     * @variation 3
     */
-  @scala.inline
-  def apply(path: String): js.Promise[String | Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Uint8Array]]
+  inline def apply(path: String): js.Promise[String | Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Uint8Array]]
   /**
     * Fetches the contents of a file.
     * @name util.fetch
@@ -38,10 +36,8 @@ object mod {
     * @returns {undefined}
     * @variation 2
     */
-  @scala.inline
-  def apply(path: String, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: String, options: FetchOptions): js.Promise[String | Uint8Array] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Uint8Array]]
+  inline def apply(path: String, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, options: FetchOptions): js.Promise[String | Uint8Array] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Uint8Array]]
   
   @JSImport("@protobufjs/fetch", JSImport.Namespace)
   @js.native
@@ -72,26 +68,20 @@ object mod {
   }
   object FetchOptions {
     
-    @scala.inline
-    def apply(): FetchOptions = {
+    inline def apply(): FetchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchOptions]
     }
     
-    @scala.inline
-    implicit class FetchOptionsMutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FetchOptions](x: Self) {
       
-      @scala.inline
-      def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
 }

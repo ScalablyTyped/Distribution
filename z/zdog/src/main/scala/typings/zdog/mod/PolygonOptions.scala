@@ -16,25 +16,19 @@ trait PolygonOptions
 }
 object PolygonOptions {
   
-  @scala.inline
-  def apply(): PolygonOptions = {
+  inline def apply(): PolygonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolygonOptions]
   }
   
-  @scala.inline
-  implicit class PolygonOptionsMutableBuilder[Self <: PolygonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PolygonOptions](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
+    inline def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
+    inline def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
   }
 }

@@ -14,12 +14,10 @@ object pushMessaging {
   @JSImport("sinon-chrome", "pushMessaging.getChannelId")
   @js.native
   def getChannelId: SinonChromeStub = js.native
-  @scala.inline
-  def getChannelId_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getChannelId")(x.asInstanceOf[js.Any])
+  inline def getChannelId_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getChannelId")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "pushMessaging.onMessage")
   @js.native
   def onMessage: Event = js.native
-  @scala.inline
-  def onMessage_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onMessage")(x.asInstanceOf[js.Any])
+  inline def onMessage_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onMessage")(x.asInstanceOf[js.Any])
 }

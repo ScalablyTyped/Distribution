@@ -14,28 +14,21 @@ trait SDPMediaSource extends StObject {
 }
 object SDPMediaSource {
   
-  @scala.inline
-  def apply(ssrc: Double): SDPMediaSource = {
+  inline def apply(ssrc: Double): SDPMediaSource = {
     val __obj = js.Dynamic.literal(ssrc = ssrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPMediaSource]
   }
   
-  @scala.inline
-  implicit class SDPMediaSourceMutableBuilder[Self <: SDPMediaSource] (val x: Self) extends AnyVal {
+  extension [Self <: SDPMediaSource](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
+    inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

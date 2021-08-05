@@ -11,16 +11,13 @@ trait TrackSearchResult extends StObject {
 }
 object TrackSearchResult {
   
-  @scala.inline
-  def apply(message: Body): TrackSearchResult = {
+  inline def apply(message: Body): TrackSearchResult = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSearchResult]
   }
   
-  @scala.inline
-  implicit class TrackSearchResultMutableBuilder[Self <: TrackSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: TrackSearchResult](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Body): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Body): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

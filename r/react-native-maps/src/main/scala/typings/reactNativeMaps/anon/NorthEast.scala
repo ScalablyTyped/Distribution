@@ -13,19 +13,15 @@ trait NorthEast extends StObject {
 }
 object NorthEast {
   
-  @scala.inline
-  def apply(northEast: LatLng, southWest: LatLng): NorthEast = {
+  inline def apply(northEast: LatLng, southWest: LatLng): NorthEast = {
     val __obj = js.Dynamic.literal(northEast = northEast.asInstanceOf[js.Any], southWest = southWest.asInstanceOf[js.Any])
     __obj.asInstanceOf[NorthEast]
   }
   
-  @scala.inline
-  implicit class NorthEastMutableBuilder[Self <: NorthEast] (val x: Self) extends AnyVal {
+  extension [Self <: NorthEast](x: Self) {
     
-    @scala.inline
-    def setNorthEast(value: LatLng): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
+    inline def setNorthEast(value: LatLng): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSouthWest(value: LatLng): Self = StObject.set(x, "southWest", value.asInstanceOf[js.Any])
+    inline def setSouthWest(value: LatLng): Self = StObject.set(x, "southWest", value.asInstanceOf[js.Any])
   }
 }

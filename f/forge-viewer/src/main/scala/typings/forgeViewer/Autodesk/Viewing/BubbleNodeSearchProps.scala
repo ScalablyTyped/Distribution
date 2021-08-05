@@ -18,31 +18,23 @@ trait BubbleNodeSearchProps extends StObject {
 }
 object BubbleNodeSearchProps {
   
-  @scala.inline
-  def apply(): BubbleNodeSearchProps = {
+  inline def apply(): BubbleNodeSearchProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BubbleNodeSearchProps]
   }
   
-  @scala.inline
-  implicit class BubbleNodeSearchPropsMutableBuilder[Self <: BubbleNodeSearchProps] (val x: Self) extends AnyVal {
+  extension [Self <: BubbleNodeSearchProps](x: Self) {
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setRole(value: `3d` | `2d` | String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: `3d` | `2d` | String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setType(value: view | geometry | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: view | geometry | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

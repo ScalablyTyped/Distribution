@@ -11,16 +11,13 @@ trait PickImplexactLength extends StObject {
 }
 object PickImplexactLength {
   
-  @scala.inline
-  def apply(exactLength: String): PickImplexactLength = {
+  inline def apply(exactLength: String): PickImplexactLength = {
     val __obj = js.Dynamic.literal(exactLength = exactLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexactLength]
   }
   
-  @scala.inline
-  implicit class PickImplexactLengthMutableBuilder[Self <: PickImplexactLength] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplexactLength](x: Self) {
     
-    @scala.inline
-    def setExactLength(value: String): Self = StObject.set(x, "exactLength", value.asInstanceOf[js.Any])
+    inline def setExactLength(value: String): Self = StObject.set(x, "exactLength", value.asInstanceOf[js.Any])
   }
 }

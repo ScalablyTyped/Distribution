@@ -28,37 +28,27 @@ trait PutAutoScalingPolicyOutput extends StObject {
 }
 object PutAutoScalingPolicyOutput {
   
-  @scala.inline
-  def apply(): PutAutoScalingPolicyOutput = {
+  inline def apply(): PutAutoScalingPolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAutoScalingPolicyOutput]
   }
   
-  @scala.inline
-  implicit class PutAutoScalingPolicyOutputMutableBuilder[Self <: PutAutoScalingPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutAutoScalingPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setAutoScalingPolicy(value: AutoScalingPolicyDescription): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoScalingPolicy(value: AutoScalingPolicyDescription): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingPolicyUndefined: Self = StObject.set(x, "AutoScalingPolicy", js.undefined)
+    inline def setAutoScalingPolicyUndefined: Self = StObject.set(x, "AutoScalingPolicy", js.undefined)
     
-    @scala.inline
-    def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
+    inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupId(value: InstanceGroupId): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupId(value: InstanceGroupId): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
+    inline def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
   }
 }

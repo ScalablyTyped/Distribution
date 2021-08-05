@@ -26,46 +26,33 @@ trait GoogleCloudDatacatalogV1beta1ColumnSchema extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1ColumnSchema {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1ColumnSchema = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1ColumnSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1ColumnSchema]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ColumnSchemaMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ColumnSchema] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1ColumnSchema](x: Self) {
     
-    @scala.inline
-    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSubcolumns(value: js.Array[GoogleCloudDatacatalogV1beta1ColumnSchema]): Self = StObject.set(x, "subcolumns", value.asInstanceOf[js.Any])
+    inline def setSubcolumns(value: js.Array[GoogleCloudDatacatalogV1beta1ColumnSchema]): Self = StObject.set(x, "subcolumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubcolumnsUndefined: Self = StObject.set(x, "subcolumns", js.undefined)
+    inline def setSubcolumnsUndefined: Self = StObject.set(x, "subcolumns", js.undefined)
     
-    @scala.inline
-    def setSubcolumnsVarargs(value: GoogleCloudDatacatalogV1beta1ColumnSchema*): Self = StObject.set(x, "subcolumns", js.Array(value :_*))
+    inline def setSubcolumnsVarargs(value: GoogleCloudDatacatalogV1beta1ColumnSchema*): Self = StObject.set(x, "subcolumns", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

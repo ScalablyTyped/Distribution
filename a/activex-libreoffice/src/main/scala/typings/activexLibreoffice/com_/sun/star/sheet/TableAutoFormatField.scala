@@ -175,8 +175,7 @@ trait TableAutoFormatField
 }
 object TableAutoFormatField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CellBackColor: Color,
     CharColor: Color,
     CharContoured: Boolean,
@@ -237,139 +236,94 @@ object TableAutoFormatField {
     __obj.asInstanceOf[TableAutoFormatField]
   }
   
-  @scala.inline
-  implicit class TableAutoFormatFieldMutableBuilder[Self <: TableAutoFormatField] (val x: Self) extends AnyVal {
+  extension [Self <: TableAutoFormatField](x: Self) {
     
-    @scala.inline
-    def setCellBackColor(value: Color): Self = StObject.set(x, "CellBackColor", value.asInstanceOf[js.Any])
+    inline def setCellBackColor(value: Color): Self = StObject.set(x, "CellBackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharColor(value: Color): Self = StObject.set(x, "CharColor", value.asInstanceOf[js.Any])
+    inline def setCharColor(value: Color): Self = StObject.set(x, "CharColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharContoured(value: Boolean): Self = StObject.set(x, "CharContoured", value.asInstanceOf[js.Any])
+    inline def setCharContoured(value: Boolean): Self = StObject.set(x, "CharContoured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharCrossedOut(value: Boolean): Self = StObject.set(x, "CharCrossedOut", value.asInstanceOf[js.Any])
+    inline def setCharCrossedOut(value: Boolean): Self = StObject.set(x, "CharCrossedOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontCharSet(value: String): Self = StObject.set(x, "CharFontCharSet", value.asInstanceOf[js.Any])
+    inline def setCharFontCharSet(value: String): Self = StObject.set(x, "CharFontCharSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontCharSetAsian(value: String): Self = StObject.set(x, "CharFontCharSetAsian", value.asInstanceOf[js.Any])
+    inline def setCharFontCharSetAsian(value: String): Self = StObject.set(x, "CharFontCharSetAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontCharSetComplex(value: String): Self = StObject.set(x, "CharFontCharSetComplex", value.asInstanceOf[js.Any])
+    inline def setCharFontCharSetComplex(value: String): Self = StObject.set(x, "CharFontCharSetComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontFamily(value: String): Self = StObject.set(x, "CharFontFamily", value.asInstanceOf[js.Any])
+    inline def setCharFontFamily(value: String): Self = StObject.set(x, "CharFontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontFamilyAsian(value: String): Self = StObject.set(x, "CharFontFamilyAsian", value.asInstanceOf[js.Any])
+    inline def setCharFontFamilyAsian(value: String): Self = StObject.set(x, "CharFontFamilyAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontFamilyComplex(value: String): Self = StObject.set(x, "CharFontFamilyComplex", value.asInstanceOf[js.Any])
+    inline def setCharFontFamilyComplex(value: String): Self = StObject.set(x, "CharFontFamilyComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontName(value: String): Self = StObject.set(x, "CharFontName", value.asInstanceOf[js.Any])
+    inline def setCharFontName(value: String): Self = StObject.set(x, "CharFontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontNameAsian(value: String): Self = StObject.set(x, "CharFontNameAsian", value.asInstanceOf[js.Any])
+    inline def setCharFontNameAsian(value: String): Self = StObject.set(x, "CharFontNameAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontNameComplex(value: String): Self = StObject.set(x, "CharFontNameComplex", value.asInstanceOf[js.Any])
+    inline def setCharFontNameComplex(value: String): Self = StObject.set(x, "CharFontNameComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontPitch(value: String): Self = StObject.set(x, "CharFontPitch", value.asInstanceOf[js.Any])
+    inline def setCharFontPitch(value: String): Self = StObject.set(x, "CharFontPitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontPitchAsian(value: String): Self = StObject.set(x, "CharFontPitchAsian", value.asInstanceOf[js.Any])
+    inline def setCharFontPitchAsian(value: String): Self = StObject.set(x, "CharFontPitchAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontPitchComplex(value: String): Self = StObject.set(x, "CharFontPitchComplex", value.asInstanceOf[js.Any])
+    inline def setCharFontPitchComplex(value: String): Self = StObject.set(x, "CharFontPitchComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontStyleName(value: String): Self = StObject.set(x, "CharFontStyleName", value.asInstanceOf[js.Any])
+    inline def setCharFontStyleName(value: String): Self = StObject.set(x, "CharFontStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontStyleNameAsian(value: String): Self = StObject.set(x, "CharFontStyleNameAsian", value.asInstanceOf[js.Any])
+    inline def setCharFontStyleNameAsian(value: String): Self = StObject.set(x, "CharFontStyleNameAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharFontStyleNameComplex(value: String): Self = StObject.set(x, "CharFontStyleNameComplex", value.asInstanceOf[js.Any])
+    inline def setCharFontStyleNameComplex(value: String): Self = StObject.set(x, "CharFontStyleNameComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharHeight(value: Double): Self = StObject.set(x, "CharHeight", value.asInstanceOf[js.Any])
+    inline def setCharHeight(value: Double): Self = StObject.set(x, "CharHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharHeightAsian(value: Double): Self = StObject.set(x, "CharHeightAsian", value.asInstanceOf[js.Any])
+    inline def setCharHeightAsian(value: Double): Self = StObject.set(x, "CharHeightAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharHeightComplex(value: Double): Self = StObject.set(x, "CharHeightComplex", value.asInstanceOf[js.Any])
+    inline def setCharHeightComplex(value: Double): Self = StObject.set(x, "CharHeightComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharPosture(value: FontSlant): Self = StObject.set(x, "CharPosture", value.asInstanceOf[js.Any])
+    inline def setCharPosture(value: FontSlant): Self = StObject.set(x, "CharPosture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharPostureAsian(value: FontSlant): Self = StObject.set(x, "CharPostureAsian", value.asInstanceOf[js.Any])
+    inline def setCharPostureAsian(value: FontSlant): Self = StObject.set(x, "CharPostureAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharPostureComplex(value: FontSlant): Self = StObject.set(x, "CharPostureComplex", value.asInstanceOf[js.Any])
+    inline def setCharPostureComplex(value: FontSlant): Self = StObject.set(x, "CharPostureComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharShadowed(value: Boolean): Self = StObject.set(x, "CharShadowed", value.asInstanceOf[js.Any])
+    inline def setCharShadowed(value: Boolean): Self = StObject.set(x, "CharShadowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharUnderline(value: Double): Self = StObject.set(x, "CharUnderline", value.asInstanceOf[js.Any])
+    inline def setCharUnderline(value: Double): Self = StObject.set(x, "CharUnderline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharWeight(value: Double): Self = StObject.set(x, "CharWeight", value.asInstanceOf[js.Any])
+    inline def setCharWeight(value: Double): Self = StObject.set(x, "CharWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharWeightAsian(value: Double): Self = StObject.set(x, "CharWeightAsian", value.asInstanceOf[js.Any])
+    inline def setCharWeightAsian(value: Double): Self = StObject.set(x, "CharWeightAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharWeightComplex(value: Double): Self = StObject.set(x, "CharWeightComplex", value.asInstanceOf[js.Any])
+    inline def setCharWeightComplex(value: Double): Self = StObject.set(x, "CharWeightComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoriJustify(value: CellHoriJustify): Self = StObject.set(x, "HoriJustify", value.asInstanceOf[js.Any])
+    inline def setHoriJustify(value: CellHoriJustify): Self = StObject.set(x, "HoriJustify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCellBackgroundTransparent(value: Boolean): Self = StObject.set(x, "IsCellBackgroundTransparent", value.asInstanceOf[js.Any])
+    inline def setIsCellBackgroundTransparent(value: Boolean): Self = StObject.set(x, "IsCellBackgroundTransparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTextWrapped(value: Boolean): Self = StObject.set(x, "IsTextWrapped", value.asInstanceOf[js.Any])
+    inline def setIsTextWrapped(value: Boolean): Self = StObject.set(x, "IsTextWrapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: CellOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: CellOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaBottomMargin(value: Double): Self = StObject.set(x, "ParaBottomMargin", value.asInstanceOf[js.Any])
+    inline def setParaBottomMargin(value: Double): Self = StObject.set(x, "ParaBottomMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaLeftMargin(value: Double): Self = StObject.set(x, "ParaLeftMargin", value.asInstanceOf[js.Any])
+    inline def setParaLeftMargin(value: Double): Self = StObject.set(x, "ParaLeftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaRightMargin(value: Double): Self = StObject.set(x, "ParaRightMargin", value.asInstanceOf[js.Any])
+    inline def setParaRightMargin(value: Double): Self = StObject.set(x, "ParaRightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaTopMargin(value: Double): Self = StObject.set(x, "ParaTopMargin", value.asInstanceOf[js.Any])
+    inline def setParaTopMargin(value: Double): Self = StObject.set(x, "ParaTopMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateAngle(value: Double): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
+    inline def setRotateAngle(value: Double): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateReference(value: Double): Self = StObject.set(x, "RotateReference", value.asInstanceOf[js.Any])
+    inline def setRotateReference(value: Double): Self = StObject.set(x, "RotateReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowFormat(value: ShadowFormat): Self = StObject.set(x, "ShadowFormat", value.asInstanceOf[js.Any])
+    inline def setShadowFormat(value: ShadowFormat): Self = StObject.set(x, "ShadowFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableBorder(value: TableBorder): Self = StObject.set(x, "TableBorder", value.asInstanceOf[js.Any])
+    inline def setTableBorder(value: TableBorder): Self = StObject.set(x, "TableBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableBorder2(value: TableBorder2): Self = StObject.set(x, "TableBorder2", value.asInstanceOf[js.Any])
+    inline def setTableBorder2(value: TableBorder2): Self = StObject.set(x, "TableBorder2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertJustify(value: Double): Self = StObject.set(x, "VertJustify", value.asInstanceOf[js.Any])
+    inline def setVertJustify(value: Double): Self = StObject.set(x, "VertJustify", value.asInstanceOf[js.Any])
   }
 }

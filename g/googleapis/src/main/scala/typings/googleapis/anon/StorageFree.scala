@@ -14,31 +14,23 @@ trait StorageFree extends StObject {
 }
 object StorageFree {
   
-  @scala.inline
-  def apply(): StorageFree = {
+  inline def apply(): StorageFree = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageFree]
   }
   
-  @scala.inline
-  implicit class StorageFreeMutableBuilder[Self <: StorageFree] (val x: Self) extends AnyVal {
+  extension [Self <: StorageFree](x: Self) {
     
-    @scala.inline
-    def setStorageFree(value: String): Self = StObject.set(x, "storageFree", value.asInstanceOf[js.Any])
+    inline def setStorageFree(value: String): Self = StObject.set(x, "storageFree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageFreeUndefined: Self = StObject.set(x, "storageFree", js.undefined)
+    inline def setStorageFreeUndefined: Self = StObject.set(x, "storageFree", js.undefined)
     
-    @scala.inline
-    def setStorageTotal(value: String): Self = StObject.set(x, "storageTotal", value.asInstanceOf[js.Any])
+    inline def setStorageTotal(value: String): Self = StObject.set(x, "storageTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageTotalUndefined: Self = StObject.set(x, "storageTotal", js.undefined)
+    inline def setStorageTotalUndefined: Self = StObject.set(x, "storageTotal", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

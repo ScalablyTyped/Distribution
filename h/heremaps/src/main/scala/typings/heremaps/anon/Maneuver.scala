@@ -10,19 +10,15 @@ trait Maneuver extends StObject {
 }
 object Maneuver {
   
-  @scala.inline
-  def apply(maneuver: js.Array[Id]): Maneuver = {
+  inline def apply(maneuver: js.Array[Id]): Maneuver = {
     val __obj = js.Dynamic.literal(maneuver = maneuver.asInstanceOf[js.Any])
     __obj.asInstanceOf[Maneuver]
   }
   
-  @scala.inline
-  implicit class ManeuverMutableBuilder[Self <: Maneuver] (val x: Self) extends AnyVal {
+  extension [Self <: Maneuver](x: Self) {
     
-    @scala.inline
-    def setManeuver(value: js.Array[Id]): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
+    inline def setManeuver(value: js.Array[Id]): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManeuverVarargs(value: Id*): Self = StObject.set(x, "maneuver", js.Array(value :_*))
+    inline def setManeuverVarargs(value: Id*): Self = StObject.set(x, "maneuver", js.Array(value :_*))
   }
 }

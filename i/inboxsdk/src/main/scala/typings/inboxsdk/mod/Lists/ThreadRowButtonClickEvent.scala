@@ -13,22 +13,17 @@ trait ThreadRowButtonClickEvent extends StObject {
 }
 object ThreadRowButtonClickEvent {
   
-  @scala.inline
-  def apply(threadRowView: ThreadRowView): ThreadRowButtonClickEvent = {
+  inline def apply(threadRowView: ThreadRowView): ThreadRowButtonClickEvent = {
     val __obj = js.Dynamic.literal(threadRowView = threadRowView.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowButtonClickEvent]
   }
   
-  @scala.inline
-  implicit class ThreadRowButtonClickEventMutableBuilder[Self <: ThreadRowButtonClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadRowButtonClickEvent](x: Self) {
     
-    @scala.inline
-    def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+    inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     
-    @scala.inline
-    def setThreadRowView(value: ThreadRowView): Self = StObject.set(x, "threadRowView", value.asInstanceOf[js.Any])
+    inline def setThreadRowView(value: ThreadRowView): Self = StObject.set(x, "threadRowView", value.asInstanceOf[js.Any])
   }
 }

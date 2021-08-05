@@ -30,73 +30,51 @@ trait Capabilities
 }
 object Capabilities {
   
-  @scala.inline
-  def apply(): Capabilities = {
+  inline def apply(): Capabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Capabilities]
   }
   
-  @scala.inline
-  implicit class CapabilitiesMutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
+  extension [Self <: Capabilities](x: Self) {
     
-    @scala.inline
-    def setAcceptInsecureCerts(value: Boolean): Self = StObject.set(x, "acceptInsecureCerts", value.asInstanceOf[js.Any])
+    inline def setAcceptInsecureCerts(value: Boolean): Self = StObject.set(x, "acceptInsecureCerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptInsecureCertsUndefined: Self = StObject.set(x, "acceptInsecureCerts", js.undefined)
+    inline def setAcceptInsecureCertsUndefined: Self = StObject.set(x, "acceptInsecureCerts", js.undefined)
     
-    @scala.inline
-    def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
+    inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
+    inline def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
     
-    @scala.inline
-    def setBrowserVersion(value: String): Self = StObject.set(x, "browserVersion", value.asInstanceOf[js.Any])
+    inline def setBrowserVersion(value: String): Self = StObject.set(x, "browserVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserVersionUndefined: Self = StObject.set(x, "browserVersion", js.undefined)
+    inline def setBrowserVersionUndefined: Self = StObject.set(x, "browserVersion", js.undefined)
     
-    @scala.inline
-    def setPageLoadStrategy(value: PageLoadingStrategy): Self = StObject.set(x, "pageLoadStrategy", value.asInstanceOf[js.Any])
+    inline def setPageLoadStrategy(value: PageLoadingStrategy): Self = StObject.set(x, "pageLoadStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLoadStrategyUndefined: Self = StObject.set(x, "pageLoadStrategy", js.undefined)
+    inline def setPageLoadStrategyUndefined: Self = StObject.set(x, "pageLoadStrategy", js.undefined)
     
-    @scala.inline
-    def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
+    inline def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformNameUndefined: Self = StObject.set(x, "platformName", js.undefined)
+    inline def setPlatformNameUndefined: Self = StObject.set(x, "platformName", js.undefined)
     
-    @scala.inline
-    def setProxy(value: ProxyObject): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: ProxyObject): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setSetWindowRect(value: Boolean): Self = StObject.set(x, "setWindowRect", value.asInstanceOf[js.Any])
+    inline def setSetWindowRect(value: Boolean): Self = StObject.set(x, "setWindowRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWindowRectUndefined: Self = StObject.set(x, "setWindowRect", js.undefined)
+    inline def setSetWindowRectUndefined: Self = StObject.set(x, "setWindowRect", js.undefined)
     
-    @scala.inline
-    def setStrictFileInteractability(value: Boolean): Self = StObject.set(x, "strictFileInteractability", value.asInstanceOf[js.Any])
+    inline def setStrictFileInteractability(value: Boolean): Self = StObject.set(x, "strictFileInteractability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictFileInteractabilityUndefined: Self = StObject.set(x, "strictFileInteractability", js.undefined)
+    inline def setStrictFileInteractabilityUndefined: Self = StObject.set(x, "strictFileInteractability", js.undefined)
     
-    @scala.inline
-    def setTimeouts(value: Timeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
+    inline def setTimeouts(value: Timeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutsUndefined: Self = StObject.set(x, "timeouts", js.undefined)
+    inline def setTimeoutsUndefined: Self = StObject.set(x, "timeouts", js.undefined)
     
-    @scala.inline
-    def setUnhandledPromptBehavior(value: String): Self = StObject.set(x, "unhandledPromptBehavior", value.asInstanceOf[js.Any])
+    inline def setUnhandledPromptBehavior(value: String): Self = StObject.set(x, "unhandledPromptBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhandledPromptBehaviorUndefined: Self = StObject.set(x, "unhandledPromptBehavior", js.undefined)
+    inline def setUnhandledPromptBehaviorUndefined: Self = StObject.set(x, "unhandledPromptBehavior", js.undefined)
   }
 }

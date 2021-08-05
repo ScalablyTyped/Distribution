@@ -43,61 +43,43 @@ trait UserGroup extends StObject {
 }
 object UserGroup {
   
-  @scala.inline
-  def apply(): UserGroup = {
+  inline def apply(): UserGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserGroup]
   }
   
-  @scala.inline
-  implicit class UserGroupMutableBuilder[Self <: UserGroup] (val x: Self) extends AnyVal {
+  extension [Self <: UserGroup](x: Self) {
     
-    @scala.inline
-    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
-    @scala.inline
-    def setPendingChanges(value: UserGroupPendingChanges): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
+    inline def setPendingChanges(value: UserGroupPendingChanges): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingChangesUndefined: Self = StObject.set(x, "PendingChanges", js.undefined)
+    inline def setPendingChangesUndefined: Self = StObject.set(x, "PendingChanges", js.undefined)
     
-    @scala.inline
-    def setReplicationGroups(value: UGReplicationGroupIdList): Self = StObject.set(x, "ReplicationGroups", value.asInstanceOf[js.Any])
+    inline def setReplicationGroups(value: UGReplicationGroupIdList): Self = StObject.set(x, "ReplicationGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
+    inline def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
+    inline def setReplicationGroupsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
+    inline def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupIdUndefined: Self = StObject.set(x, "UserGroupId", js.undefined)
+    inline def setUserGroupIdUndefined: Self = StObject.set(x, "UserGroupId", js.undefined)
     
-    @scala.inline
-    def setUserIds(value: UserIdList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
+    inline def setUserIds(value: UserIdList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
+    inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    @scala.inline
-    def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: UserId*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

@@ -11,19 +11,15 @@ trait MapValue extends StObject {
 }
 object MapValue {
   
-  @scala.inline
-  def apply(): MapValue = {
+  inline def apply(): MapValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapValue]
   }
   
-  @scala.inline
-  implicit class MapValueMutableBuilder[Self <: MapValue] (val x: Self) extends AnyVal {
+  extension [Self <: MapValue](x: Self) {
     
-    @scala.inline
-    def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
+    inline def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpValUndefined: Self = StObject.set(x, "fpVal", js.undefined)
+    inline def setFpValUndefined: Self = StObject.set(x, "fpVal", js.undefined)
   }
 }

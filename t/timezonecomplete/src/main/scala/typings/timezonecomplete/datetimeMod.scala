@@ -359,30 +359,30 @@ object datetimeMod {
       * @throws Argument.Amount if amount is not finite or if it's not an integer and you're adding months or years
       * @throws Argument.Unit for invalid time unit
       */
-    var _addToTimeStruct: js.Any = js.native
+    /* private */ var _addToTimeStruct: js.Any = js.native
     
     /**
       *
       * @param n
       * @throws nothing
       */
-    var _unixTimeStampToExcel: js.Any = js.native
+    /* private */ var _unixTimeStampToExcel: js.Any = js.native
     
     /**
       * UTC timestamp (lazily calculated, use getter for utcDate instead)
       */
-    var _utcDate: js.Any = js.native
+    /* private */ var _utcDate: js.Any = js.native
     
     /**
       * Original time zone this instance was created for.
       * Can be undefined for unaware timestamps
       */
-    var _zone: js.Any = js.native
+    /* private */ var _zone: js.Any = js.native
     
     /**
       * Local timestamp (lazily calculated)
       */
-    var _zoneDate: js.Any = js.native
+    /* private */ var _zoneDate: js.Any = js.native
     
     /**
       * Add an amount of time relative to UTC, as regularly as possible. Returns a new DateTime
@@ -891,8 +891,7 @@ object datetimeMod {
     @JSImport("timezonecomplete/dist/lib/datetime", "DateTime._splitDateFromTimeZone")
     @js.native
     def _splitDateFromTimeZone: js.Any = js.native
-    @scala.inline
-    def _splitDateFromTimeZone_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_splitDateFromTimeZone")(x.asInstanceOf[js.Any])
+    inline def _splitDateFromTimeZone_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_splitDateFromTimeZone")(x.asInstanceOf[js.Any])
     
     /**
       * Check whether a given date exists in the given time zone.
@@ -905,8 +904,7 @@ object datetimeMod {
       * @param allowPre1970 (optional, default false): return true for pre-1970 dates
       * @throws nothing
       */
-    @scala.inline
-    def exists(
+    inline def exists(
       year: Double,
       month: js.UndefOr[Double],
       day: js.UndefOr[Double],
@@ -928,34 +926,28 @@ object datetimeMod {
       * @throws timezonecomplete.Argument.N if n is not a finite number
       * @throws timezonecomplete.Argument.TimeZone if the given time zone is invalid
       */
-    @scala.inline
-    def fromExcel(n: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-    @scala.inline
-    def fromExcel(n: Double, timeZone: TimeZone): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def fromExcel(n: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+    inline def fromExcel(n: Double, timeZone: TimeZone): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[DateTime]
     
     /**
       * Current date+time in the given time zone
       * @param timeZone	The desired time zone (optional, defaults to UTC).
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    @scala.inline
-    def now(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[DateTime]
-    @scala.inline
-    def now(timeZone: TimeZone): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+    inline def now(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[DateTime]
+    inline def now(timeZone: TimeZone): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[DateTime]
     
     /**
       * Current date+time in local time
       * @throws nothing
       */
-    @scala.inline
-    def nowLocal(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[DateTime]
+    inline def nowLocal(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[DateTime]
     
     /**
       * Current date+time in UTC time
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    @scala.inline
-    def nowUtc(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[DateTime]
+    inline def nowUtc(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[DateTime]
     
     /**
       * Parse a date in a given format
@@ -967,22 +959,14 @@ object datetimeMod {
       * @throws timezonecomplete.ParseError if the given dateTimeString is wrong or not according to the pattern
       * @throws timezonecomplete.Argument.FormatString if the given format string is invalid
       */
-    @scala.inline
-    def parse(s: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-    @scala.inline
-    def parse(s: String, format: String, zone: Unit, locale: Unit, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-    @scala.inline
-    def parse(s: String, format: String, zone: Unit, locale: PartialLocale): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-    @scala.inline
-    def parse(s: String, format: String, zone: Unit, locale: PartialLocale, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-    @scala.inline
-    def parse(s: String, format: String, zone: TimeZone): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-    @scala.inline
-    def parse(s: String, format: String, zone: TimeZone, locale: Unit, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-    @scala.inline
-    def parse(s: String, format: String, zone: TimeZone, locale: PartialLocale): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-    @scala.inline
-    def parse(s: String, format: String, zone: TimeZone, locale: PartialLocale, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String, zone: Unit, locale: Unit, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String, zone: Unit, locale: PartialLocale): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String, zone: Unit, locale: PartialLocale, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String, zone: TimeZone): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String, zone: TimeZone, locale: Unit, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String, zone: TimeZone, locale: PartialLocale): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+    inline def parse(s: String, format: String, zone: TimeZone, locale: PartialLocale, allowTrailing: Boolean): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[DateTime]
     
     /**
       * Actual time source in use. Setting this property allows to
@@ -992,21 +976,15 @@ object datetimeMod {
     @JSImport("timezonecomplete/dist/lib/datetime", "DateTime.timeSource")
     @js.native
     def timeSource: TimeSource = js.native
-    @scala.inline
-    def timeSource_=(x: TimeSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeSource")(x.asInstanceOf[js.Any])
+    inline def timeSource_=(x: TimeSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeSource")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
+  inline def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
   
-  @scala.inline
-  def now(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[DateTime]
-  @scala.inline
-  def now(timeZone: TimeZone): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def now(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[DateTime]
+  inline def now(timeZone: TimeZone): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @scala.inline
-  def nowLocal(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[DateTime]
+  inline def nowLocal(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[DateTime]
   
-  @scala.inline
-  def nowUtc(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[DateTime]
+  inline def nowUtc(): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[DateTime]
 }

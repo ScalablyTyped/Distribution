@@ -14,19 +14,15 @@ trait InvertedIndexNode
 }
 object InvertedIndexNode {
   
-  @scala.inline
-  def apply(df: Double, docs: InvertedIndexDocs): InvertedIndexNode = {
+  inline def apply(df: Double, docs: InvertedIndexDocs): InvertedIndexNode = {
     val __obj = js.Dynamic.literal(df = df.asInstanceOf[js.Any], docs = docs.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvertedIndexNode]
   }
   
-  @scala.inline
-  implicit class InvertedIndexNodeMutableBuilder[Self <: InvertedIndexNode] (val x: Self) extends AnyVal {
+  extension [Self <: InvertedIndexNode](x: Self) {
     
-    @scala.inline
-    def setDf(value: Double): Self = StObject.set(x, "df", value.asInstanceOf[js.Any])
+    inline def setDf(value: Double): Self = StObject.set(x, "df", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocs(value: InvertedIndexDocs): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: InvertedIndexDocs): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
   }
 }

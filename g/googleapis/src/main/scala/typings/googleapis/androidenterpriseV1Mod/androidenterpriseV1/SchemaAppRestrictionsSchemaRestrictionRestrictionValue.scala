@@ -38,46 +38,33 @@ trait SchemaAppRestrictionsSchemaRestrictionRestrictionValue extends StObject {
 }
 object SchemaAppRestrictionsSchemaRestrictionRestrictionValue {
   
-  @scala.inline
-  def apply(): SchemaAppRestrictionsSchemaRestrictionRestrictionValue = {
+  inline def apply(): SchemaAppRestrictionsSchemaRestrictionRestrictionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppRestrictionsSchemaRestrictionRestrictionValue]
   }
   
-  @scala.inline
-  implicit class SchemaAppRestrictionsSchemaRestrictionRestrictionValueMutableBuilder[Self <: SchemaAppRestrictionsSchemaRestrictionRestrictionValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAppRestrictionsSchemaRestrictionRestrictionValue](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValueBool(value: Boolean): Self = StObject.set(x, "valueBool", value.asInstanceOf[js.Any])
+    inline def setValueBool(value: Boolean): Self = StObject.set(x, "valueBool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBoolUndefined: Self = StObject.set(x, "valueBool", js.undefined)
+    inline def setValueBoolUndefined: Self = StObject.set(x, "valueBool", js.undefined)
     
-    @scala.inline
-    def setValueInteger(value: Double): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
+    inline def setValueInteger(value: Double): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
+    inline def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
-    @scala.inline
-    def setValueMultiselect(value: js.Array[String]): Self = StObject.set(x, "valueMultiselect", value.asInstanceOf[js.Any])
+    inline def setValueMultiselect(value: js.Array[String]): Self = StObject.set(x, "valueMultiselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueMultiselectUndefined: Self = StObject.set(x, "valueMultiselect", js.undefined)
+    inline def setValueMultiselectUndefined: Self = StObject.set(x, "valueMultiselect", js.undefined)
     
-    @scala.inline
-    def setValueMultiselectVarargs(value: String*): Self = StObject.set(x, "valueMultiselect", js.Array(value :_*))
+    inline def setValueMultiselectVarargs(value: String*): Self = StObject.set(x, "valueMultiselect", js.Array(value :_*))
     
-    @scala.inline
-    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
+    inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
+    inline def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
   }
 }

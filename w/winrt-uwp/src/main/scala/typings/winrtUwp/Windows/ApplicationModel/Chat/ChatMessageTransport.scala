@@ -34,8 +34,7 @@ trait ChatMessageTransport extends StObject {
 }
 object ChatMessageTransport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configuration: ChatMessageTransportConfiguration,
     isActive: Boolean,
     isAppSetAsNotificationProvider: Boolean,
@@ -48,28 +47,20 @@ object ChatMessageTransport {
     __obj.asInstanceOf[ChatMessageTransport]
   }
   
-  @scala.inline
-  implicit class ChatMessageTransportMutableBuilder[Self <: ChatMessageTransport] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageTransport](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ChatMessageTransportConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ChatMessageTransportConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAppSetAsNotificationProvider(value: Boolean): Self = StObject.set(x, "isAppSetAsNotificationProvider", value.asInstanceOf[js.Any])
+    inline def setIsAppSetAsNotificationProvider(value: Boolean): Self = StObject.set(x, "isAppSetAsNotificationProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestSetAsNotificationProviderAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "requestSetAsNotificationProviderAsync", js.Any.fromFunction0(value))
+    inline def setRequestSetAsNotificationProviderAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "requestSetAsNotificationProviderAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransportFriendlyName(value: String): Self = StObject.set(x, "transportFriendlyName", value.asInstanceOf[js.Any])
+    inline def setTransportFriendlyName(value: String): Self = StObject.set(x, "transportFriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
+    inline def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportKind(value: ChatMessageTransportKind): Self = StObject.set(x, "transportKind", value.asInstanceOf[js.Any])
+    inline def setTransportKind(value: ChatMessageTransportKind): Self = StObject.set(x, "transportKind", value.asInstanceOf[js.Any])
   }
 }

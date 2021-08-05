@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorInsertLinkCommandArguments
 }
 object ASPxClientHtmlEditorInsertLinkCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     selectedElement: js.Any,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     target: String,
@@ -51,22 +50,16 @@ object ASPxClientHtmlEditorInsertLinkCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertLinkCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorInsertLinkCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertLinkCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorInsertLinkCommandArguments](x: Self) {
     
-    @scala.inline
-    def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -15,10 +15,8 @@ object Endianness {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BIG: `1` = 1.asInstanceOf[`1`]
+    inline def BIG: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LITTLE: `0` = 0.asInstanceOf[`0`]
+    inline def LITTLE: `0` = 0.asInstanceOf[`0`]
   }
 }

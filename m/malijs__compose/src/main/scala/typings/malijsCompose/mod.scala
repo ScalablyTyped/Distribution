@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](middleware: js.Array[Middleware[T]]): ComposedMiddleware[T] = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[ComposedMiddleware[T]]
+  inline def apply[T](middleware: js.Array[Middleware[T]]): ComposedMiddleware[T] = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[ComposedMiddleware[T]]
   
   @JSImport("@malijs/compose", JSImport.Namespace)
   @js.native

@@ -24,25 +24,19 @@ trait SchemaUserLanguage extends StObject {
 }
 object SchemaUserLanguage {
   
-  @scala.inline
-  def apply(): SchemaUserLanguage = {
+  inline def apply(): SchemaUserLanguage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserLanguage]
   }
   
-  @scala.inline
-  implicit class SchemaUserLanguageMutableBuilder[Self <: SchemaUserLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserLanguage](x: Self) {
     
-    @scala.inline
-    def setCustomLanguage(value: String): Self = StObject.set(x, "customLanguage", value.asInstanceOf[js.Any])
+    inline def setCustomLanguage(value: String): Self = StObject.set(x, "customLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLanguageUndefined: Self = StObject.set(x, "customLanguage", js.undefined)
+    inline def setCustomLanguageUndefined: Self = StObject.set(x, "customLanguage", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

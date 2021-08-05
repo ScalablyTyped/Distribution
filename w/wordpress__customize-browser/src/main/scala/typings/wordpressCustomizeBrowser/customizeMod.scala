@@ -92,20 +92,16 @@ object customizeMod {
   }
   object DirtyValuesOptions {
     
-    @scala.inline
-    def apply(): DirtyValuesOptions = {
+    inline def apply(): DirtyValuesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirtyValuesOptions]
     }
     
-    @scala.inline
-    implicit class DirtyValuesOptionsMutableBuilder[Self <: DirtyValuesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DirtyValuesOptions](x: Self) {
       
-      @scala.inline
-      def setUnsaved(value: Boolean): Self = StObject.set(x, "unsaved", value.asInstanceOf[js.Any])
+      inline def setUnsaved(value: Boolean): Self = StObject.set(x, "unsaved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsavedUndefined: Self = StObject.set(x, "unsaved", js.undefined)
+      inline def setUnsavedUndefined: Self = StObject.set(x, "unsaved", js.undefined)
     }
   }
   
@@ -118,23 +114,18 @@ object customizeMod {
   }
   object HandleSettingValiditiesArgs {
     
-    @scala.inline
-    def apply(settingValidities: Record[String, js.Any]): HandleSettingValiditiesArgs = {
+    inline def apply(settingValidities: Record[String, js.Any]): HandleSettingValiditiesArgs = {
       val __obj = js.Dynamic.literal(settingValidities = settingValidities.asInstanceOf[js.Any])
       __obj.asInstanceOf[HandleSettingValiditiesArgs]
     }
     
-    @scala.inline
-    implicit class HandleSettingValiditiesArgsMutableBuilder[Self <: HandleSettingValiditiesArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HandleSettingValiditiesArgs](x: Self) {
       
-      @scala.inline
-      def setFocusInvalidControl(value: Boolean): Self = StObject.set(x, "focusInvalidControl", value.asInstanceOf[js.Any])
+      inline def setFocusInvalidControl(value: Boolean): Self = StObject.set(x, "focusInvalidControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusInvalidControlUndefined: Self = StObject.set(x, "focusInvalidControl", js.undefined)
+      inline def setFocusInvalidControlUndefined: Self = StObject.set(x, "focusInvalidControl", js.undefined)
       
-      @scala.inline
-      def setSettingValidities(value: Record[String, js.Any]): Self = StObject.set(x, "settingValidities", value.asInstanceOf[js.Any])
+      inline def setSettingValidities(value: Record[String, js.Any]): Self = StObject.set(x, "settingValidities", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,38 +141,28 @@ object customizeMod {
   }
   object RequestChangesetUpdateOptions {
     
-    @scala.inline
-    def apply(): RequestChangesetUpdateOptions = {
+    inline def apply(): RequestChangesetUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestChangesetUpdateOptions]
     }
     
-    @scala.inline
-    implicit class RequestChangesetUpdateOptionsMutableBuilder[Self <: RequestChangesetUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestChangesetUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
+      inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
+      inline def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

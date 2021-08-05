@@ -10,6 +10,5 @@ object dynamicMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(resolve: js.Function1[/* value */ js.UndefOr[js.Thenable[js.Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(resolve.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(resolve: js.Function1[/* value */ js.UndefOr[js.Thenable[js.Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(resolve.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

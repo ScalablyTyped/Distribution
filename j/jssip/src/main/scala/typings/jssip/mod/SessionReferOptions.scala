@@ -15,34 +15,25 @@ trait SessionReferOptions extends StObject {
 }
 object SessionReferOptions {
   
-  @scala.inline
-  def apply(): SessionReferOptions = {
+  inline def apply(): SessionReferOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionReferOptions]
   }
   
-  @scala.inline
-  implicit class SessionReferOptionsMutableBuilder[Self <: SessionReferOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SessionReferOptions](x: Self) {
     
-    @scala.inline
-    def setEventHandlers(value: StringDictionary[js.Function1[/* data */ js.Any, Unit]]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
+    inline def setEventHandlers(value: StringDictionary[js.Function1[/* data */ js.Any, Unit]]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
+    inline def setEventHandlersUndefined: Self = StObject.set(x, "eventHandlers", js.undefined)
     
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+    inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setReplaces(value: RTCSession): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
+    inline def setReplaces(value: RTCSession): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacesUndefined: Self = StObject.set(x, "replaces", js.undefined)
+    inline def setReplacesUndefined: Self = StObject.set(x, "replaces", js.undefined)
   }
 }

@@ -15,31 +15,23 @@ trait TypesettingEndpointParams extends StObject {
 }
 object TypesettingEndpointParams {
   
-  @scala.inline
-  def apply(): TypesettingEndpointParams = {
+  inline def apply(): TypesettingEndpointParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypesettingEndpointParams]
   }
   
-  @scala.inline
-  implicit class TypesettingEndpointParamsMutableBuilder[Self <: TypesettingEndpointParams] (val x: Self) extends AnyVal {
+  extension [Self <: TypesettingEndpointParams](x: Self) {
     
-    @scala.inline
-    def setTildetext(value: ImgixParamType): Self = StObject.set(x, "~text", value.asInstanceOf[js.Any])
+    inline def setTildetext(value: ImgixParamType): Self = StObject.set(x, "~text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTildetextUndefined: Self = StObject.set(x, "~text", js.undefined)
+    inline def setTildetextUndefined: Self = StObject.set(x, "~text", js.undefined)
     
-    @scala.inline
-    def `setTxt-lead`(value: ImgixParamType): Self = StObject.set(x, "txt-lead", value.asInstanceOf[js.Any])
+    inline def `setTxt-lead`(value: ImgixParamType): Self = StObject.set(x, "txt-lead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTxt-leadUndefined`: Self = StObject.set(x, "txt-lead", js.undefined)
+    inline def `setTxt-leadUndefined`: Self = StObject.set(x, "txt-lead", js.undefined)
     
-    @scala.inline
-    def `setTxt-track`(value: ImgixParamType): Self = StObject.set(x, "txt-track", value.asInstanceOf[js.Any])
+    inline def `setTxt-track`(value: ImgixParamType): Self = StObject.set(x, "txt-track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTxt-trackUndefined`: Self = StObject.set(x, "txt-track", js.undefined)
+    inline def `setTxt-trackUndefined`: Self = StObject.set(x, "txt-track", js.undefined)
   }
 }

@@ -62,44 +62,32 @@ object clientMod {
   }
   object ClientConnectOptions {
     
-    @scala.inline
-    def apply(): ClientConnectOptions = {
+    inline def apply(): ClientConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientConnectOptions]
     }
     
-    @scala.inline
-    implicit class ClientConnectOptionsMutableBuilder[Self <: ClientConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientConnectOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: js.Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: js.Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
+      inline def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
+      inline def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -111,26 +99,20 @@ object clientMod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double | Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWs(value: js.Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
+      inline def setWs(value: js.Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
+      inline def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
     }
   }
   
@@ -146,35 +128,26 @@ object clientMod {
   }
   object ClientRequestOptions {
     
-    @scala.inline
-    def apply(path: String): ClientRequestOptions = {
+    inline def apply(path: String): ClientRequestOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientRequestOptions]
     }
     
-    @scala.inline
-    implicit class ClientRequestOptionsMutableBuilder[Self <: ClientRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientRequestOptions](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   
@@ -184,20 +157,16 @@ object clientMod {
   }
   object ClientSubscribeFlags {
     
-    @scala.inline
-    def apply(): ClientSubscribeFlags = {
+    inline def apply(): ClientSubscribeFlags = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientSubscribeFlags]
     }
     
-    @scala.inline
-    implicit class ClientSubscribeFlagsMutableBuilder[Self <: ClientSubscribeFlags] (val x: Self) extends AnyVal {
+    extension [Self <: ClientSubscribeFlags](x: Self) {
       
-      @scala.inline
-      def setRevoked(value: Boolean): Self = StObject.set(x, "revoked", value.asInstanceOf[js.Any])
+      inline def setRevoked(value: Boolean): Self = StObject.set(x, "revoked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevokedUndefined: Self = StObject.set(x, "revoked", js.undefined)
+      inline def setRevokedUndefined: Self = StObject.set(x, "revoked", js.undefined)
     }
   }
   

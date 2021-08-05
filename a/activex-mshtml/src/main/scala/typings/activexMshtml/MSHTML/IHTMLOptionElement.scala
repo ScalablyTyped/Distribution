@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLOptionElement extends StObject {
   
-  @JSName("MSHTML.IHTMLOptionElement_typekey")
+  /* private */ @JSName("MSHTML.IHTMLOptionElement_typekey")
   var MSHTMLDotIHTMLOptionElement_typekey: IHTMLOptionElement
   
   var defaultSelected: Boolean
@@ -28,8 +28,7 @@ trait IHTMLOptionElement extends StObject {
 }
 object IHTMLOptionElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLOptionElement_typekey: IHTMLOptionElement,
     defaultSelected: Boolean,
     form: IHTMLFormElement,
@@ -43,28 +42,20 @@ object IHTMLOptionElement {
     __obj.asInstanceOf[IHTMLOptionElement]
   }
   
-  @scala.inline
-  implicit class IHTMLOptionElementMutableBuilder[Self <: IHTMLOptionElement] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLOptionElement](x: Self) {
     
-    @scala.inline
-    def setDefaultSelected(value: Boolean): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
+    inline def setDefaultSelected(value: Boolean): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForm(value: IHTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: IHTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLOptionElement_typekey(value: IHTMLOptionElement): Self = StObject.set(x, "MSHTML.IHTMLOptionElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLOptionElement_typekey(value: IHTMLOptionElement): Self = StObject.set(x, "MSHTML.IHTMLOptionElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

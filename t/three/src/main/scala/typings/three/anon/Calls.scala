@@ -18,28 +18,21 @@ trait Calls extends StObject {
 }
 object Calls {
   
-  @scala.inline
-  def apply(calls: Double, frame: Double, lines: Double, points: Double, triangles: Double): Calls = {
+  inline def apply(calls: Double, frame: Double, lines: Double, points: Double, triangles: Double): Calls = {
     val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], triangles = triangles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calls]
   }
   
-  @scala.inline
-  implicit class CallsMutableBuilder[Self <: Calls] (val x: Self) extends AnyVal {
+  extension [Self <: Calls](x: Self) {
     
-    @scala.inline
-    def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangles(value: Double): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
+    inline def setTriangles(value: Double): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
   }
 }

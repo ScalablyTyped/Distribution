@@ -11,13 +11,11 @@ object eventIteratorStrings {
   sealed trait highWater
     extends StObject
        with QueueEvent
-  @scala.inline
-  def highWater: highWater = "highWater".asInstanceOf[highWater]
+  inline def highWater: highWater = "highWater".asInstanceOf[highWater]
   
   @js.native
   sealed trait lowWater
     extends StObject
        with QueueEvent
-  @scala.inline
-  def lowWater: lowWater = "lowWater".asInstanceOf[lowWater]
+  inline def lowWater: lowWater = "lowWater".asInstanceOf[lowWater]
 }

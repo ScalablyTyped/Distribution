@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DialogType extends StObject
 object DialogType {
   
-  @scala.inline
-  def alert: typings.devtoolsProtocol.devtoolsProtocolStrings.alert = "alert".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.alert]
+  inline def alert: typings.devtoolsProtocol.devtoolsProtocolStrings.alert = "alert".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.alert]
   
-  @scala.inline
-  def beforeunload: typings.devtoolsProtocol.devtoolsProtocolStrings.beforeunload = "beforeunload".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.beforeunload]
+  inline def beforeunload: typings.devtoolsProtocol.devtoolsProtocolStrings.beforeunload = "beforeunload".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.beforeunload]
   
-  @scala.inline
-  def confirm: typings.devtoolsProtocol.devtoolsProtocolStrings.confirm = "confirm".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.confirm]
+  inline def confirm: typings.devtoolsProtocol.devtoolsProtocolStrings.confirm = "confirm".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.confirm]
   
-  @scala.inline
-  def prompt: typings.devtoolsProtocol.devtoolsProtocolStrings.prompt = "prompt".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.prompt]
+  inline def prompt: typings.devtoolsProtocol.devtoolsProtocolStrings.prompt = "prompt".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.prompt]
 }

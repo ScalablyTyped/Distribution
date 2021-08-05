@@ -705,35 +705,26 @@ object mod {
   }
   object ContentHash {
     
-    @scala.inline
-    def apply(): ContentHash = {
+    inline def apply(): ContentHash = {
       val __obj = js.Dynamic.literal(decoded = null, protocolType = null)
       __obj.asInstanceOf[ContentHash]
     }
     
-    @scala.inline
-    implicit class ContentHashMutableBuilder[Self <: ContentHash] (val x: Self) extends AnyVal {
+    extension [Self <: ContentHash](x: Self) {
       
-      @scala.inline
-      def setDecoded(value: String): Self = StObject.set(x, "decoded", value.asInstanceOf[js.Any])
+      inline def setDecoded(value: String): Self = StObject.set(x, "decoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodedNull: Self = StObject.set(x, "decoded", null)
+      inline def setDecodedNull: Self = StObject.set(x, "decoded", null)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setProtocolType(value: ipfs | bzz | onion | onion3): Self = StObject.set(x, "protocolType", value.asInstanceOf[js.Any])
+      inline def setProtocolType(value: ipfs | bzz | onion | onion3): Self = StObject.set(x, "protocolType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolTypeNull: Self = StObject.set(x, "protocolType", null)
+      inline def setProtocolTypeNull: Self = StObject.set(x, "protocolType", null)
     }
   }
 }

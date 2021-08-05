@@ -12,19 +12,15 @@ trait NestedMenuState extends StObject {
 }
 object NestedMenuState {
   
-  @scala.inline
-  def apply(menus: js.Array[Ref[HTMLElement]]): NestedMenuState = {
+  inline def apply(menus: js.Array[Ref[HTMLElement]]): NestedMenuState = {
     val __obj = js.Dynamic.literal(menus = menus.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestedMenuState]
   }
   
-  @scala.inline
-  implicit class NestedMenuStateMutableBuilder[Self <: NestedMenuState] (val x: Self) extends AnyVal {
+  extension [Self <: NestedMenuState](x: Self) {
     
-    @scala.inline
-    def setMenus(value: js.Array[Ref[HTMLElement]]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
+    inline def setMenus(value: js.Array[Ref[HTMLElement]]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenusVarargs(value: Ref[HTMLElement]*): Self = StObject.set(x, "menus", js.Array(value :_*))
+    inline def setMenusVarargs(value: Ref[HTMLElement]*): Self = StObject.set(x, "menus", js.Array(value :_*))
   }
 }

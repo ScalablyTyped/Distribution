@@ -11,8 +11,7 @@ object nodeMainMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def store[T](name: String): js.Promise[default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("store")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default[T]]]
+  inline def store[T](name: String): js.Promise[default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("store")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default[T]]]
   
   @JSImport("keya/out/node/main", "stores")
   @js.native

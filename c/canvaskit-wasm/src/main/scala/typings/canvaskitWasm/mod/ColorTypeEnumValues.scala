@@ -28,8 +28,7 @@ trait ColorTypeEnumValues
 }
 object ColorTypeEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alpha_8: ColorType,
     BGRA_8888: ColorType,
     Gray_8: ColorType,
@@ -45,34 +44,24 @@ object ColorTypeEnumValues {
     __obj.asInstanceOf[ColorTypeEnumValues]
   }
   
-  @scala.inline
-  implicit class ColorTypeEnumValuesMutableBuilder[Self <: ColorTypeEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: ColorTypeEnumValues](x: Self) {
     
-    @scala.inline
-    def setAlpha_8(value: ColorType): Self = StObject.set(x, "Alpha_8", value.asInstanceOf[js.Any])
+    inline def setAlpha_8(value: ColorType): Self = StObject.set(x, "Alpha_8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBGRA_8888(value: ColorType): Self = StObject.set(x, "BGRA_8888", value.asInstanceOf[js.Any])
+    inline def setBGRA_8888(value: ColorType): Self = StObject.set(x, "BGRA_8888", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGray_8(value: ColorType): Self = StObject.set(x, "Gray_8", value.asInstanceOf[js.Any])
+    inline def setGray_8(value: ColorType): Self = StObject.set(x, "Gray_8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGBA_1010102(value: ColorType): Self = StObject.set(x, "RGBA_1010102", value.asInstanceOf[js.Any])
+    inline def setRGBA_1010102(value: ColorType): Self = StObject.set(x, "RGBA_1010102", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGBA_8888(value: ColorType): Self = StObject.set(x, "RGBA_8888", value.asInstanceOf[js.Any])
+    inline def setRGBA_8888(value: ColorType): Self = StObject.set(x, "RGBA_8888", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGBA_F16(value: ColorType): Self = StObject.set(x, "RGBA_F16", value.asInstanceOf[js.Any])
+    inline def setRGBA_F16(value: ColorType): Self = StObject.set(x, "RGBA_F16", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGBA_F32(value: ColorType): Self = StObject.set(x, "RGBA_F32", value.asInstanceOf[js.Any])
+    inline def setRGBA_F32(value: ColorType): Self = StObject.set(x, "RGBA_F32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGB_101010x(value: ColorType): Self = StObject.set(x, "RGB_101010x", value.asInstanceOf[js.Any])
+    inline def setRGB_101010x(value: ColorType): Self = StObject.set(x, "RGB_101010x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGB_565(value: ColorType): Self = StObject.set(x, "RGB_565", value.asInstanceOf[js.Any])
+    inline def setRGB_565(value: ColorType): Self = StObject.set(x, "RGB_565", value.asInstanceOf[js.Any])
   }
 }

@@ -84,8 +84,7 @@ trait CommonQueryMethodsType extends StObject {
 }
 object CommonQueryMethodsType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     any: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]],
     anyFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
       js.Array[
@@ -113,14 +112,11 @@ object CommonQueryMethodsType {
     __obj.asInstanceOf[CommonQueryMethodsType]
   }
   
-  @scala.inline
-  implicit class CommonQueryMethodsTypeMutableBuilder[Self <: CommonQueryMethodsType] (val x: Self) extends AnyVal {
+  extension [Self <: CommonQueryMethodsType](x: Self) {
     
-    @scala.inline
-    def setAny(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
+    inline def setAny(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnyFirst(
+    inline def setAnyFirst(
       value: /* args */ QueryMethodParams[js.Any] => js.Promise[
           js.Array[
             /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
@@ -128,14 +124,11 @@ object CommonQueryMethodsType {
         ]
     ): Self = StObject.set(x, "anyFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExists(value: /* args */ QueryMethodParams[js.Any] => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
+    inline def setExists(value: /* args */ QueryMethodParams[js.Any] => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMany(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "many", js.Any.fromFunction1(value))
+    inline def setMany(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "many", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setManyFirst(
+    inline def setManyFirst(
       value: /* args */ QueryMethodParams[js.Any] => js.Promise[
           js.Array[
             /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
@@ -143,27 +136,22 @@ object CommonQueryMethodsType {
         ]
     ): Self = StObject.set(x, "manyFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaybeOne(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Any | Null]): Self = StObject.set(x, "maybeOne", js.Any.fromFunction1(value))
+    inline def setMaybeOne(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Any | Null]): Self = StObject.set(x, "maybeOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaybeOneFirst(
+    inline def setMaybeOneFirst(
       value: /* args */ QueryMethodParams[js.Any] => js.Promise[
           (/* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any) | Null
         ]
     ): Self = StObject.set(x, "maybeOneFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOne(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "one", js.Any.fromFunction1(value))
+    inline def setOne(value: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "one", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOneFirst(
+    inline def setOneFirst(
       value: /* args */ QueryMethodParams[js.Any] => js.Promise[
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
         ]
     ): Self = StObject.set(x, "oneFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQuery(value: /* args */ QueryMethodParams[js.Any] => js.Promise[QueryResultType[js.Any]]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+    inline def setQuery(value: /* args */ QueryMethodParams[js.Any] => js.Promise[QueryResultType[js.Any]]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
   }
 }

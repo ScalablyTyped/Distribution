@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCommentElement")
 @js.native
-class HTMLCommentElement protected ()
+/* private */ class HTMLCommentElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCommentElement

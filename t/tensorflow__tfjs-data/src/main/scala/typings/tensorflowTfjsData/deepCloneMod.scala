@@ -10,6 +10,5 @@ object deepCloneMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deepClone[T](container: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(container.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def deepClone[T](container: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(container.asInstanceOf[js.Any]).asInstanceOf[T]
 }

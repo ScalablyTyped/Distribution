@@ -14,5 +14,5 @@ class BaseContextClass protected ()
   /**
     * logger
     */
-  var logger: EggLogger = js.native
+  /* protected */ var logger: EggLogger = js.native
 }

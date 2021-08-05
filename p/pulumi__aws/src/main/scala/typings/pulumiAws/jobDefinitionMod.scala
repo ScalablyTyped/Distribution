@@ -90,21 +90,16 @@ object jobDefinitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: JobDefinitionState): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: JobDefinitionState, opts: CustomResourceOptions): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
+    inline def get(name: String, id: Input[ID]): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
+    inline def get(name: String, id: Input[ID], state: JobDefinitionState): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
+    inline def get(name: String, id: Input[ID], state: JobDefinitionState, opts: CustomResourceOptions): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
     
     /**
       * Returns true if the given object is an instance of JobDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean]
   }
   
   trait JobDefinitionArgs extends StObject {
@@ -148,54 +143,39 @@ object jobDefinitionMod {
   }
   object JobDefinitionArgs {
     
-    @scala.inline
-    def apply(`type`: Input[String]): JobDefinitionArgs = {
+    inline def apply(`type`: Input[String]): JobDefinitionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JobDefinitionArgs]
     }
     
-    @scala.inline
-    implicit class JobDefinitionArgsMutableBuilder[Self <: JobDefinitionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: JobDefinitionArgs](x: Self) {
       
-      @scala.inline
-      def setContainerProperties(value: Input[String]): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
+      inline def setContainerProperties(value: Input[String]): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
+      inline def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setRetryStrategy(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+      inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,68 +230,48 @@ object jobDefinitionMod {
   }
   object JobDefinitionState {
     
-    @scala.inline
-    def apply(): JobDefinitionState = {
+    inline def apply(): JobDefinitionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobDefinitionState]
     }
     
-    @scala.inline
-    implicit class JobDefinitionStateMutableBuilder[Self <: JobDefinitionState] (val x: Self) extends AnyVal {
+    extension [Self <: JobDefinitionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setContainerProperties(value: Input[String]): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
+      inline def setContainerProperties(value: Input[String]): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
+      inline def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setRetryStrategy(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+      inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
       
-      @scala.inline
-      def setRevision(value: Input[Double]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Input[Double]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+      inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

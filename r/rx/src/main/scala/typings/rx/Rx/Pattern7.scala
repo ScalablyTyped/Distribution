@@ -33,8 +33,7 @@ trait Pattern7[T1, T2, T3, T4, T5, T6, T7] extends StObject {
 }
 object Pattern7 {
   
-  @scala.inline
-  def apply[T1, T2, T3, T4, T5, T6, T7](
+  inline def apply[T1, T2, T3, T4, T5, T6, T7](
     and: Observable[js.Any] => Pattern8[T1, T2, T3, T4, T5, T6, T7, js.Any],
     thenDo: js.Function7[
       /* item1 */ T1, 
@@ -51,14 +50,11 @@ object Pattern7 {
     __obj.asInstanceOf[Pattern7[T1, T2, T3, T4, T5, T6, T7]]
   }
   
-  @scala.inline
-  implicit class Pattern7MutableBuilder[Self <: Pattern7[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, T7] (val x: Self & (Pattern7[T1, T2, T3, T4, T5, T6, T7])) extends AnyVal {
+  extension [Self <: Pattern7[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, T7](x: Self & (Pattern7[T1, T2, T3, T4, T5, T6, T7])) {
     
-    @scala.inline
-    def setAnd(value: Observable[js.Any] => Pattern8[T1, T2, T3, T4, T5, T6, T7, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    inline def setAnd(value: Observable[js.Any] => Pattern8[T1, T2, T3, T4, T5, T6, T7, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThenDo(
+    inline def setThenDo(
       value: js.Function7[
           /* item1 */ T1, 
           /* item2 */ T2, 

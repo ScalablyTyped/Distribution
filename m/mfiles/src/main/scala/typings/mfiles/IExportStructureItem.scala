@@ -17,8 +17,7 @@ trait IExportStructureItem extends StObject {
 }
 object IExportStructureItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IExportStructureItem,
     StructureItemGUID: String,
     StructureItemID: Double,
@@ -28,19 +27,14 @@ object IExportStructureItem {
     __obj.asInstanceOf[IExportStructureItem]
   }
   
-  @scala.inline
-  implicit class IExportStructureItemMutableBuilder[Self <: IExportStructureItem] (val x: Self) extends AnyVal {
+  extension [Self <: IExportStructureItem](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IExportStructureItem): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IExportStructureItem): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStructureItemGUID(value: String): Self = StObject.set(x, "StructureItemGUID", value.asInstanceOf[js.Any])
+    inline def setStructureItemGUID(value: String): Self = StObject.set(x, "StructureItemGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureItemID(value: Double): Self = StObject.set(x, "StructureItemID", value.asInstanceOf[js.Any])
+    inline def setStructureItemID(value: Double): Self = StObject.set(x, "StructureItemID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureItemType(value: MFMetadataStructureItem): Self = StObject.set(x, "StructureItemType", value.asInstanceOf[js.Any])
+    inline def setStructureItemType(value: MFMetadataStructureItem): Self = StObject.set(x, "StructureItemType", value.asInstanceOf[js.Any])
   }
 }

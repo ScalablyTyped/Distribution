@@ -26,8 +26,7 @@ trait PageList extends StObject {
 }
 object PageList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pageList: HTMLUListElement,
     sizePerPageDropDown: SizePerPageDropDown,
     totalText: String | ReactElement
@@ -36,16 +35,12 @@ object PageList {
     __obj.asInstanceOf[PageList]
   }
   
-  @scala.inline
-  implicit class PageListMutableBuilder[Self <: PageList] (val x: Self) extends AnyVal {
+  extension [Self <: PageList](x: Self) {
     
-    @scala.inline
-    def setPageList(value: HTMLUListElement): Self = StObject.set(x, "pageList", value.asInstanceOf[js.Any])
+    inline def setPageList(value: HTMLUListElement): Self = StObject.set(x, "pageList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPageDropDown(value: SizePerPageDropDown): Self = StObject.set(x, "sizePerPageDropDown", value.asInstanceOf[js.Any])
+    inline def setSizePerPageDropDown(value: SizePerPageDropDown): Self = StObject.set(x, "sizePerPageDropDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalText(value: String | ReactElement): Self = StObject.set(x, "totalText", value.asInstanceOf[js.Any])
+    inline def setTotalText(value: String | ReactElement): Self = StObject.set(x, "totalText", value.asInstanceOf[js.Any])
   }
 }

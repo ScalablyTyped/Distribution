@@ -27,31 +27,23 @@ trait SchemaHiddenPlayer extends StObject {
 }
 object SchemaHiddenPlayer {
   
-  @scala.inline
-  def apply(): SchemaHiddenPlayer = {
+  inline def apply(): SchemaHiddenPlayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHiddenPlayer]
   }
   
-  @scala.inline
-  implicit class SchemaHiddenPlayerMutableBuilder[Self <: SchemaHiddenPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHiddenPlayer](x: Self) {
     
-    @scala.inline
-    def setHiddenTimeMillis(value: String): Self = StObject.set(x, "hiddenTimeMillis", value.asInstanceOf[js.Any])
+    inline def setHiddenTimeMillis(value: String): Self = StObject.set(x, "hiddenTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenTimeMillisUndefined: Self = StObject.set(x, "hiddenTimeMillis", js.undefined)
+    inline def setHiddenTimeMillisUndefined: Self = StObject.set(x, "hiddenTimeMillis", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlayer(value: SchemaPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: SchemaPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
+    inline def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
   }
 }

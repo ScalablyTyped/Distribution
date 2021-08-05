@@ -12,25 +12,19 @@ trait InsertedId extends StObject {
 }
 object InsertedId {
   
-  @scala.inline
-  def apply(): InsertedId = {
+  inline def apply(): InsertedId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertedId]
   }
   
-  @scala.inline
-  implicit class InsertedIdMutableBuilder[Self <: InsertedId] (val x: Self) extends AnyVal {
+  extension [Self <: InsertedId](x: Self) {
     
-    @scala.inline
-    def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
+    inline def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedIdUndefined: Self = StObject.set(x, "insertedId", js.undefined)
+    inline def setInsertedIdUndefined: Self = StObject.set(x, "insertedId", js.undefined)
     
-    @scala.inline
-    def setNumberAffected(value: Double): Self = StObject.set(x, "numberAffected", value.asInstanceOf[js.Any])
+    inline def setNumberAffected(value: Double): Self = StObject.set(x, "numberAffected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberAffectedUndefined: Self = StObject.set(x, "numberAffected", js.undefined)
+    inline def setNumberAffectedUndefined: Self = StObject.set(x, "numberAffected", js.undefined)
   }
 }

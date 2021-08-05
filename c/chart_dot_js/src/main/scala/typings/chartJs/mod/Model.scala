@@ -57,8 +57,7 @@ trait Model extends StObject {
 }
 object Model {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     base: Double,
     borderColor: String,
@@ -79,100 +78,68 @@ object Model {
     __obj.asInstanceOf[Model]
   }
   
-  @scala.inline
-  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+  extension [Self <: Model](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderAlign(value: BorderAlignment): Self = StObject.set(x, "borderAlign", value.asInstanceOf[js.Any])
+    inline def setBorderAlign(value: BorderAlignment): Self = StObject.set(x, "borderAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderAlignUndefined: Self = StObject.set(x, "borderAlign", js.undefined)
+    inline def setBorderAlignUndefined: Self = StObject.set(x, "borderAlign", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    @scala.inline
-    def setCircumference(value: Double): Self = StObject.set(x, "circumference", value.asInstanceOf[js.Any])
+    inline def setCircumference(value: Double): Self = StObject.set(x, "circumference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircumferenceUndefined: Self = StObject.set(x, "circumference", js.undefined)
+    inline def setCircumferenceUndefined: Self = StObject.set(x, "circumference", js.undefined)
     
-    @scala.inline
-    def setControlPointNextX(value: Double): Self = StObject.set(x, "controlPointNextX", value.asInstanceOf[js.Any])
+    inline def setControlPointNextX(value: Double): Self = StObject.set(x, "controlPointNextX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointNextY(value: Double): Self = StObject.set(x, "controlPointNextY", value.asInstanceOf[js.Any])
+    inline def setControlPointNextY(value: Double): Self = StObject.set(x, "controlPointNextY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointPreviousX(value: Double): Self = StObject.set(x, "controlPointPreviousX", value.asInstanceOf[js.Any])
+    inline def setControlPointPreviousX(value: Double): Self = StObject.set(x, "controlPointPreviousX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointPreviousY(value: Double): Self = StObject.set(x, "controlPointPreviousY", value.asInstanceOf[js.Any])
+    inline def setControlPointPreviousY(value: Double): Self = StObject.set(x, "controlPointPreviousY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitRadius(value: Double): Self = StObject.set(x, "hitRadius", value.asInstanceOf[js.Any])
+    inline def setHitRadius(value: Double): Self = StObject.set(x, "hitRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+    inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
-    @scala.inline
-    def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
+    inline def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
+    inline def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
     
-    @scala.inline
-    def setPointStyle(value: String): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
+    inline def setPointStyle(value: String): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
-    @scala.inline
-    def setSteppedLine(value: Unit): Self = StObject.set(x, "steppedLine", value.asInstanceOf[js.Any])
+    inline def setSteppedLine(value: Unit): Self = StObject.set(x, "steppedLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
+    inline def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

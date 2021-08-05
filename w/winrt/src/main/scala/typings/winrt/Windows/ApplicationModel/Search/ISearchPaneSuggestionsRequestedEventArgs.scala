@@ -12,8 +12,7 @@ trait ISearchPaneSuggestionsRequestedEventArgs
 }
 object ISearchPaneSuggestionsRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     language: String,
     linguisticDetails: SearchPaneQueryLinguisticDetails,
     queryText: String,
@@ -23,10 +22,8 @@ object ISearchPaneSuggestionsRequestedEventArgs {
     __obj.asInstanceOf[ISearchPaneSuggestionsRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class ISearchPaneSuggestionsRequestedEventArgsMutableBuilder[Self <: ISearchPaneSuggestionsRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchPaneSuggestionsRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: SearchPaneSuggestionsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: SearchPaneSuggestionsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

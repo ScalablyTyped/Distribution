@@ -21,28 +21,21 @@ trait SchemaBatchUpdateDocumentRequest extends StObject {
 }
 object SchemaBatchUpdateDocumentRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchUpdateDocumentRequest = {
+  inline def apply(): SchemaBatchUpdateDocumentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchUpdateDocumentRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchUpdateDocumentRequestMutableBuilder[Self <: SchemaBatchUpdateDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchUpdateDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setRequests(value: js.Array[SchemaRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[SchemaRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: SchemaRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: SchemaRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
     
-    @scala.inline
-    def setWriteControl(value: SchemaWriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
+    inline def setWriteControl(value: SchemaWriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
+    inline def setWriteControlUndefined: Self = StObject.set(x, "writeControl", js.undefined)
   }
 }

@@ -26,31 +26,23 @@ trait ServerMethodOptions extends StObject {
 }
 object ServerMethodOptions {
   
-  @scala.inline
-  def apply(): ServerMethodOptions = {
+  inline def apply(): ServerMethodOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerMethodOptions]
   }
   
-  @scala.inline
-  implicit class ServerMethodOptionsMutableBuilder[Self <: ServerMethodOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerMethodOptions](x: Self) {
     
-    @scala.inline
-    def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+    inline def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+    inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
-    @scala.inline
-    def setCache(value: ServerMethodCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: ServerMethodCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setGenerateKey(value: /* repeated */ js.Any => String | Null): Self = StObject.set(x, "generateKey", js.Any.fromFunction1(value))
+    inline def setGenerateKey(value: /* repeated */ js.Any => String | Null): Self = StObject.set(x, "generateKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGenerateKeyUndefined: Self = StObject.set(x, "generateKey", js.undefined)
+    inline def setGenerateKeyUndefined: Self = StObject.set(x, "generateKey", js.undefined)
   }
 }

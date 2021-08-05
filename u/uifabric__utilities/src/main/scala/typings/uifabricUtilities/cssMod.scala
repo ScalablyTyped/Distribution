@@ -11,8 +11,7 @@ object cssMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ICssInput = js.UndefOr[String | ISerializableObject | IDictionary | Null | Boolean]
   
@@ -25,20 +24,16 @@ object cssMod {
   }
   object ISerializableObject {
     
-    @scala.inline
-    def apply(): ISerializableObject = {
+    inline def apply(): ISerializableObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISerializableObject]
     }
     
-    @scala.inline
-    implicit class ISerializableObjectMutableBuilder[Self <: ISerializableObject] (val x: Self) extends AnyVal {
+    extension [Self <: ISerializableObject](x: Self) {
       
-      @scala.inline
-      def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+      inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     }
   }
 }

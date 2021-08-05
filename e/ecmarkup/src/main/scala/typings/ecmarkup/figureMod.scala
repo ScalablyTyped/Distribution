@@ -44,11 +44,9 @@ object figureMod {
     @JSImport("ecmarkup/lib/Figure", "default.elements")
     @js.native
     def elements: js.Array[String] = js.native
-    @scala.inline
-    def elements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
+    inline def elements_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def enter(hasSpecNode: Context): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enter")(hasSpecNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def enter(hasSpecNode: Context): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enter")(hasSpecNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -68,39 +66,29 @@ object figureMod {
   }
   object Figure {
     
-    @scala.inline
-    def apply(caption: String, isInformative: Boolean, number: Double, `type`: String): Figure = {
+    inline def apply(caption: String, isInformative: Boolean, number: Double, `type`: String): Figure = {
       val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], isInformative = isInformative.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], captionElem = null, id = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Figure]
     }
     
-    @scala.inline
-    implicit class FigureMutableBuilder[Self <: Figure] (val x: Self) extends AnyVal {
+    extension [Self <: Figure](x: Self) {
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionElem(value: HTMLElement): Self = StObject.set(x, "captionElem", value.asInstanceOf[js.Any])
+      inline def setCaptionElem(value: HTMLElement): Self = StObject.set(x, "captionElem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionElemNull: Self = StObject.set(x, "captionElem", null)
+      inline def setCaptionElemNull: Self = StObject.set(x, "captionElem", null)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setIsInformative(value: Boolean): Self = StObject.set(x, "isInformative", value.asInstanceOf[js.Any])
+      inline def setIsInformative(value: Boolean): Self = StObject.set(x, "isInformative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

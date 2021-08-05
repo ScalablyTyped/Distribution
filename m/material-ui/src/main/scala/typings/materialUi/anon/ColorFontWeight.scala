@@ -12,25 +12,19 @@ trait ColorFontWeight extends StObject {
 }
 object ColorFontWeight {
   
-  @scala.inline
-  def apply(): ColorFontWeight = {
+  inline def apply(): ColorFontWeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorFontWeight]
   }
   
-  @scala.inline
-  implicit class ColorFontWeightMutableBuilder[Self <: ColorFontWeight] (val x: Self) extends AnyVal {
+  extension [Self <: ColorFontWeight](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
   }
 }

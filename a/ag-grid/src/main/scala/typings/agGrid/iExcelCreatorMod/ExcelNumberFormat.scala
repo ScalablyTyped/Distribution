@@ -10,16 +10,13 @@ trait ExcelNumberFormat extends StObject {
 }
 object ExcelNumberFormat {
   
-  @scala.inline
-  def apply(format: String): ExcelNumberFormat = {
+  inline def apply(format: String): ExcelNumberFormat = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelNumberFormat]
   }
   
-  @scala.inline
-  implicit class ExcelNumberFormatMutableBuilder[Self <: ExcelNumberFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelNumberFormat](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

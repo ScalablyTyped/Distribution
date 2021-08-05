@@ -41,43 +41,31 @@ trait PayPalLegacySettings extends StObject {
 }
 object PayPalLegacySettings {
   
-  @scala.inline
-  def apply(): PayPalLegacySettings = {
+  inline def apply(): PayPalLegacySettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PayPalLegacySettings]
   }
   
-  @scala.inline
-  implicit class PayPalLegacySettingsMutableBuilder[Self <: PayPalLegacySettings] (val x: Self) extends AnyVal {
+  extension [Self <: PayPalLegacySettings](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
+    inline def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
+    inline def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+    inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

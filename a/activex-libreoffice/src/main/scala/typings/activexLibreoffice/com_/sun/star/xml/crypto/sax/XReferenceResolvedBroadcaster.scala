@@ -35,8 +35,7 @@ trait XReferenceResolvedBroadcaster
 }
 object XReferenceResolvedBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addReferenceResolvedListener: (Double, XReferenceResolvedListener) => Unit,
     queryInterface: `type` => js.Any,
@@ -47,13 +46,10 @@ object XReferenceResolvedBroadcaster {
     __obj.asInstanceOf[XReferenceResolvedBroadcaster]
   }
   
-  @scala.inline
-  implicit class XReferenceResolvedBroadcasterMutableBuilder[Self <: XReferenceResolvedBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XReferenceResolvedBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddReferenceResolvedListener(value: (Double, XReferenceResolvedListener) => Unit): Self = StObject.set(x, "addReferenceResolvedListener", js.Any.fromFunction2(value))
+    inline def setAddReferenceResolvedListener(value: (Double, XReferenceResolvedListener) => Unit): Self = StObject.set(x, "addReferenceResolvedListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveReferenceResolvedListener(value: (Double, XReferenceResolvedListener) => Unit): Self = StObject.set(x, "removeReferenceResolvedListener", js.Any.fromFunction2(value))
+    inline def setRemoveReferenceResolvedListener(value: (Double, XReferenceResolvedListener) => Unit): Self = StObject.set(x, "removeReferenceResolvedListener", js.Any.fromFunction2(value))
   }
 }

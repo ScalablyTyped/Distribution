@@ -26,26 +26,20 @@ object docdb {
   }
   object ClusterParameterGroupParameter {
     
-    @scala.inline
-    def apply(name: Input[String], value: Input[String]): ClusterParameterGroupParameter = {
+    inline def apply(name: Input[String], value: Input[String]): ClusterParameterGroupParameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterParameterGroupParameter]
     }
     
-    @scala.inline
-    implicit class ClusterParameterGroupParameterMutableBuilder[Self <: ClusterParameterGroupParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterParameterGroupParameter](x: Self) {
       
-      @scala.inline
-      def setApplyMethod(value: Input[String]): Self = StObject.set(x, "applyMethod", value.asInstanceOf[js.Any])
+      inline def setApplyMethod(value: Input[String]): Self = StObject.set(x, "applyMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyMethodUndefined: Self = StObject.set(x, "applyMethod", js.undefined)
+      inline def setApplyMethodUndefined: Self = StObject.set(x, "applyMethod", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

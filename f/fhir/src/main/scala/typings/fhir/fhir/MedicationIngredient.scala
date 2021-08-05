@@ -38,43 +38,31 @@ trait MedicationIngredient
 }
 object MedicationIngredient {
   
-  @scala.inline
-  def apply(): MedicationIngredient = {
+  inline def apply(): MedicationIngredient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicationIngredient]
   }
   
-  @scala.inline
-  implicit class MedicationIngredientMutableBuilder[Self <: MedicationIngredient] (val x: Self) extends AnyVal {
+  extension [Self <: MedicationIngredient](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Ratio): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Ratio): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
+    inline def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
+    inline def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
+    inline def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
     
-    @scala.inline
-    def set_isActive(value: Element): Self = StObject.set(x, "_isActive", value.asInstanceOf[js.Any])
+    inline def set_isActive(value: Element): Self = StObject.set(x, "_isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_isActiveUndefined: Self = StObject.set(x, "_isActive", js.undefined)
+    inline def set_isActiveUndefined: Self = StObject.set(x, "_isActive", js.undefined)
   }
 }

@@ -22,28 +22,21 @@ trait SchemaContainerAccess extends StObject {
 }
 object SchemaContainerAccess {
   
-  @scala.inline
-  def apply(): SchemaContainerAccess = {
+  inline def apply(): SchemaContainerAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContainerAccess]
   }
   
-  @scala.inline
-  implicit class SchemaContainerAccessMutableBuilder[Self <: SchemaContainerAccess] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContainerAccess](x: Self) {
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setPermission(value: js.Array[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: js.Array[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
+    inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
   }
 }

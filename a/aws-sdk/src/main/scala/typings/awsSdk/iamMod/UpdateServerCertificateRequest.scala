@@ -23,28 +23,21 @@ trait UpdateServerCertificateRequest extends StObject {
 }
 object UpdateServerCertificateRequest {
   
-  @scala.inline
-  def apply(ServerCertificateName: serverCertificateNameType): UpdateServerCertificateRequest = {
+  inline def apply(ServerCertificateName: serverCertificateNameType): UpdateServerCertificateRequest = {
     val __obj = js.Dynamic.literal(ServerCertificateName = ServerCertificateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServerCertificateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateServerCertificateRequestMutableBuilder[Self <: UpdateServerCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateServerCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
+    inline def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
+    inline def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
     
-    @scala.inline
-    def setNewServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "NewServerCertificateName", value.asInstanceOf[js.Any])
+    inline def setNewServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "NewServerCertificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewServerCertificateNameUndefined: Self = StObject.set(x, "NewServerCertificateName", js.undefined)
+    inline def setNewServerCertificateNameUndefined: Self = StObject.set(x, "NewServerCertificateName", js.undefined)
     
-    @scala.inline
-    def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
+    inline def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
   }
 }

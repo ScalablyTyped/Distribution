@@ -30,8 +30,7 @@ trait XFocusListener
 }
 object XFocusListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     focusGained: FocusEvent => Unit,
@@ -43,13 +42,10 @@ object XFocusListener {
     __obj.asInstanceOf[XFocusListener]
   }
   
-  @scala.inline
-  implicit class XFocusListenerMutableBuilder[Self <: XFocusListener] (val x: Self) extends AnyVal {
+  extension [Self <: XFocusListener](x: Self) {
     
-    @scala.inline
-    def setFocusGained(value: FocusEvent => Unit): Self = StObject.set(x, "focusGained", js.Any.fromFunction1(value))
+    inline def setFocusGained(value: FocusEvent => Unit): Self = StObject.set(x, "focusGained", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFocusLost(value: FocusEvent => Unit): Self = StObject.set(x, "focusLost", js.Any.fromFunction1(value))
+    inline def setFocusLost(value: FocusEvent => Unit): Self = StObject.set(x, "focusLost", js.Any.fromFunction1(value))
   }
 }

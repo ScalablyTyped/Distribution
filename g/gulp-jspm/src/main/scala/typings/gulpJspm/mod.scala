@@ -28,44 +28,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArithmetic(value: String): Self = StObject.set(x, "arithmetic", value.asInstanceOf[js.Any])
+      inline def setArithmetic(value: String): Self = StObject.set(x, "arithmetic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArithmeticUndefined: Self = StObject.set(x, "arithmetic", js.undefined)
+      inline def setArithmeticUndefined: Self = StObject.set(x, "arithmetic", js.undefined)
       
-      @scala.inline
-      def setInject(value: Boolean): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: Boolean): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: Boolean | String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: Boolean | String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      @scala.inline
-      def setSelfExecutingBundle(value: Boolean): Self = StObject.set(x, "selfExecutingBundle", value.asInstanceOf[js.Any])
+      inline def setSelfExecutingBundle(value: Boolean): Self = StObject.set(x, "selfExecutingBundle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfExecutingBundleUndefined: Self = StObject.set(x, "selfExecutingBundle", js.undefined)
+      inline def setSelfExecutingBundleUndefined: Self = StObject.set(x, "selfExecutingBundle", js.undefined)
     }
   }
   

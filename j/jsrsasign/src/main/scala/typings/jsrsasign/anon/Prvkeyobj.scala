@@ -16,25 +16,19 @@ trait Prvkeyobj extends StObject {
 }
 object Prvkeyobj {
   
-  @scala.inline
-  def apply(): Prvkeyobj = {
+  inline def apply(): Prvkeyobj = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Prvkeyobj]
   }
   
-  @scala.inline
-  implicit class PrvkeyobjMutableBuilder[Self <: Prvkeyobj] (val x: Self) extends AnyVal {
+  extension [Self <: Prvkeyobj](x: Self) {
     
-    @scala.inline
-    def setPrvkeyobj(value: RSAKey | ECDSA | DSA): Self = StObject.set(x, "prvkeyobj", value.asInstanceOf[js.Any])
+    inline def setPrvkeyobj(value: RSAKey | ECDSA | DSA): Self = StObject.set(x, "prvkeyobj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrvkeyobjUndefined: Self = StObject.set(x, "prvkeyobj", js.undefined)
+    inline def setPrvkeyobjUndefined: Self = StObject.set(x, "prvkeyobj", js.undefined)
     
-    @scala.inline
-    def setTbscertobj(value: TBSCertificate): Self = StObject.set(x, "tbscertobj", value.asInstanceOf[js.Any])
+    inline def setTbscertobj(value: TBSCertificate): Self = StObject.set(x, "tbscertobj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTbscertobjUndefined: Self = StObject.set(x, "tbscertobj", js.undefined)
+    inline def setTbscertobjUndefined: Self = StObject.set(x, "tbscertobj", js.undefined)
   }
 }

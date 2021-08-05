@@ -1165,23 +1165,18 @@ object mod extends Shortcut {
     }
     object Window {
       
-      @scala.inline
-      def apply(WebAPIError: WebAPIException, WebAPIException: WebAPIException, tizen: Tizen): Window = {
+      inline def apply(WebAPIError: WebAPIException, WebAPIException: WebAPIException, tizen: Tizen): Window = {
         val __obj = js.Dynamic.literal(WebAPIError = WebAPIError.asInstanceOf[js.Any], WebAPIException = WebAPIException.asInstanceOf[js.Any], tizen = tizen.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setTizen(value: Tizen): Self = StObject.set(x, "tizen", value.asInstanceOf[js.Any])
+        inline def setTizen(value: Tizen): Self = StObject.set(x, "tizen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAPIError(value: WebAPIException): Self = StObject.set(x, "WebAPIError", value.asInstanceOf[js.Any])
+        inline def setWebAPIError(value: WebAPIException): Self = StObject.set(x, "WebAPIError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAPIException(value: WebAPIException): Self = StObject.set(x, "WebAPIException", value.asInstanceOf[js.Any])
+        inline def setWebAPIException(value: WebAPIException): Self = StObject.set(x, "WebAPIException", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -1237,8 +1232,7 @@ object mod extends Shortcut {
   }
   object Tizen {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ApplicationControl: ApplicationControlConstructor,
       ApplicationControlData: ApplicationControlDataConstructor,
       AttributeFilter: AttributeFilterConstructor,
@@ -1268,77 +1262,53 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Tizen]
     }
     
-    @scala.inline
-    implicit class TizenMutableBuilder[Self <: Tizen] (val x: Self) extends AnyVal {
+    extension [Self <: Tizen](x: Self) {
       
-      @scala.inline
-      def setApplication(value: ApplicationManager): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: ApplicationManager): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationControl(value: ApplicationControlConstructor): Self = StObject.set(x, "ApplicationControl", value.asInstanceOf[js.Any])
+      inline def setApplicationControl(value: ApplicationControlConstructor): Self = StObject.set(x, "ApplicationControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationControlData(value: ApplicationControlDataConstructor): Self = StObject.set(x, "ApplicationControlData", value.asInstanceOf[js.Any])
+      inline def setApplicationControlData(value: ApplicationControlDataConstructor): Self = StObject.set(x, "ApplicationControlData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeFilter(value: AttributeFilterConstructor): Self = StObject.set(x, "AttributeFilter", value.asInstanceOf[js.Any])
+      inline def setAttributeFilter(value: AttributeFilterConstructor): Self = StObject.set(x, "AttributeFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeRangeFilter(value: AttributeRangeFilterConstructor): Self = StObject.set(x, "AttributeRangeFilter", value.asInstanceOf[js.Any])
+      inline def setAttributeRangeFilter(value: AttributeRangeFilterConstructor): Self = StObject.set(x, "AttributeRangeFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundle(value: BundleConstructor): Self = StObject.set(x, "Bundle", value.asInstanceOf[js.Any])
+      inline def setBundle(value: BundleConstructor): Self = StObject.set(x, "Bundle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompositeFilter(value: CompositeFilterConstructor): Self = StObject.set(x, "CompositeFilter", value.asInstanceOf[js.Any])
+      inline def setCompositeFilter(value: CompositeFilterConstructor): Self = StObject.set(x, "CompositeFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownload(value: DownloadManager): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: DownloadManager): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadRequest(value: DownloadRequestConstructor): Self = StObject.set(x, "DownloadRequest", value.asInstanceOf[js.Any])
+      inline def setDownloadRequest(value: DownloadRequestConstructor): Self = StObject.set(x, "DownloadRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesystem(value: FilesystemManager): Self = StObject.set(x, "filesystem", value.asInstanceOf[js.Any])
+      inline def setFilesystem(value: FilesystemManager): Self = StObject.set(x, "filesystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpleCoordinates(value: SimpleCoordinatesConstructor): Self = StObject.set(x, "SimpleCoordinates", value.asInstanceOf[js.Any])
+      inline def setSimpleCoordinates(value: SimpleCoordinatesConstructor): Self = StObject.set(x, "SimpleCoordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortMode(value: SortModeConstructor): Self = StObject.set(x, "SortMode", value.asInstanceOf[js.Any])
+      inline def setSortMode(value: SortModeConstructor): Self = StObject.set(x, "SortMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSysteminfo(value: SystemInfoManager): Self = StObject.set(x, "systeminfo", value.asInstanceOf[js.Any])
+      inline def setSysteminfo(value: SystemInfoManager): Self = StObject.set(x, "systeminfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTZDate(value: TZDateConstructor): Self = StObject.set(x, "TZDate", value.asInstanceOf[js.Any])
+      inline def setTZDate(value: TZDateConstructor): Self = StObject.set(x, "TZDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: TimeUtil): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: TimeUtil): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDuration(value: TimeDurationConstructor): Self = StObject.set(x, "TimeDuration", value.asInstanceOf[js.Any])
+      inline def setTimeDuration(value: TimeDurationConstructor): Self = StObject.set(x, "TimeDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvaudiocontrol(value: TVAudioControlManager): Self = StObject.set(x, "tvaudiocontrol", value.asInstanceOf[js.Any])
+      inline def setTvaudiocontrol(value: TVAudioControlManager): Self = StObject.set(x, "tvaudiocontrol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvdisplaycontrol(value: TVDisplayControlManager): Self = StObject.set(x, "tvdisplaycontrol", value.asInstanceOf[js.Any])
+      inline def setTvdisplaycontrol(value: TVDisplayControlManager): Self = StObject.set(x, "tvdisplaycontrol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvinfo(value: TVInfoManager): Self = StObject.set(x, "tvinfo", value.asInstanceOf[js.Any])
+      inline def setTvinfo(value: TVInfoManager): Self = StObject.set(x, "tvinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvinputdevice(value: TVInputDeviceManager): Self = StObject.set(x, "tvinputdevice", value.asInstanceOf[js.Any])
+      inline def setTvinputdevice(value: TVInputDeviceManager): Self = StObject.set(x, "tvinputdevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvwindow(value: TVWindowManager): Self = StObject.set(x, "tvwindow", value.asInstanceOf[js.Any])
+      inline def setTvwindow(value: TVWindowManager): Self = StObject.set(x, "tvwindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsetting(value: WebSettingManager): Self = StObject.set(x, "websetting", value.asInstanceOf[js.Any])
+      inline def setWebsetting(value: WebSettingManager): Self = StObject.set(x, "websetting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_package(value: PackageManager): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: PackageManager): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     }
   }
   

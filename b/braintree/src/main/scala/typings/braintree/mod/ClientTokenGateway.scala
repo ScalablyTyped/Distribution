@@ -10,16 +10,13 @@ trait ClientTokenGateway extends StObject {
 }
 object ClientTokenGateway {
   
-  @scala.inline
-  def apply(generate: ClientTokenRequest => js.Promise[ValidatedResponse[ClientToken]]): ClientTokenGateway = {
+  inline def apply(generate: ClientTokenRequest => js.Promise[ValidatedResponse[ClientToken]]): ClientTokenGateway = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate))
     __obj.asInstanceOf[ClientTokenGateway]
   }
   
-  @scala.inline
-  implicit class ClientTokenGatewayMutableBuilder[Self <: ClientTokenGateway] (val x: Self) extends AnyVal {
+  extension [Self <: ClientTokenGateway](x: Self) {
     
-    @scala.inline
-    def setGenerate(value: ClientTokenRequest => js.Promise[ValidatedResponse[ClientToken]]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+    inline def setGenerate(value: ClientTokenRequest => js.Promise[ValidatedResponse[ClientToken]]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }
 }

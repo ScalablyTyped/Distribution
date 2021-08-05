@@ -12,19 +12,15 @@ trait IDialogsPromptResult extends StObject {
 }
 object IDialogsPromptResult {
   
-  @scala.inline
-  def apply(buttonIndex: Double, input1: String): IDialogsPromptResult = {
+  inline def apply(buttonIndex: Double, input1: String): IDialogsPromptResult = {
     val __obj = js.Dynamic.literal(buttonIndex = buttonIndex.asInstanceOf[js.Any], input1 = input1.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogsPromptResult]
   }
   
-  @scala.inline
-  implicit class IDialogsPromptResultMutableBuilder[Self <: IDialogsPromptResult] (val x: Self) extends AnyVal {
+  extension [Self <: IDialogsPromptResult](x: Self) {
     
-    @scala.inline
-    def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
+    inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput1(value: String): Self = StObject.set(x, "input1", value.asInstanceOf[js.Any])
+    inline def setInput1(value: String): Self = StObject.set(x, "input1", value.asInstanceOf[js.Any])
   }
 }

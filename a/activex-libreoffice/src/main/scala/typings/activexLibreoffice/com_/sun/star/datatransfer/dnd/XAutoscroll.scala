@@ -47,8 +47,7 @@ trait XAutoscroll
 }
 object XAutoscroll {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoscrollRegion: js.Any,
     acquire: () => Unit,
     autoscroll: (Double, Double) => Unit,
@@ -60,16 +59,12 @@ object XAutoscroll {
     __obj.asInstanceOf[XAutoscroll]
   }
   
-  @scala.inline
-  implicit class XAutoscrollMutableBuilder[Self <: XAutoscroll] (val x: Self) extends AnyVal {
+  extension [Self <: XAutoscroll](x: Self) {
     
-    @scala.inline
-    def setAutoscroll(value: (Double, Double) => Unit): Self = StObject.set(x, "autoscroll", js.Any.fromFunction2(value))
+    inline def setAutoscroll(value: (Double, Double) => Unit): Self = StObject.set(x, "autoscroll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAutoscrollRegion(value: js.Any): Self = StObject.set(x, "AutoscrollRegion", value.asInstanceOf[js.Any])
+    inline def setAutoscrollRegion(value: js.Any): Self = StObject.set(x, "AutoscrollRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAutoscrollRegion(value: () => js.Any): Self = StObject.set(x, "getAutoscrollRegion", js.Any.fromFunction0(value))
+    inline def setGetAutoscrollRegion(value: () => js.Any): Self = StObject.set(x, "getAutoscrollRegion", js.Any.fromFunction0(value))
   }
 }

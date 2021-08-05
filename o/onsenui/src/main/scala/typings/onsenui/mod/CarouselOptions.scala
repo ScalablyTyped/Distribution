@@ -14,31 +14,23 @@ trait CarouselOptions extends StObject {
 }
 object CarouselOptions {
   
-  @scala.inline
-  def apply(): CarouselOptions = {
+  inline def apply(): CarouselOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CarouselOptions]
   }
   
-  @scala.inline
-  implicit class CarouselOptionsMutableBuilder[Self <: CarouselOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CarouselOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOptions(value: js.Object): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
+    inline def setAnimationOptions(value: js.Object): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
+    inline def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
   }
 }

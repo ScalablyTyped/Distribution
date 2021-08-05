@@ -8,6 +8,5 @@ object writeStrings {
   
   @js.native
   sealed trait encoding extends StObject
-  @scala.inline
-  def encoding: encoding = "encoding".asInstanceOf[encoding]
+  inline def encoding: encoding = "encoding".asInstanceOf[encoding]
 }

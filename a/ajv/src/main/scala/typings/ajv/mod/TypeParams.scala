@@ -12,17 +12,14 @@ trait TypeParams
 }
 object TypeParams {
   
-  @scala.inline
-  def apply(`type`: String): TypeParams = {
+  inline def apply(`type`: String): TypeParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeParams]
   }
   
-  @scala.inline
-  implicit class TypeParamsMutableBuilder[Self <: TypeParams] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParams](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

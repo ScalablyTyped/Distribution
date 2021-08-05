@@ -75,65 +75,46 @@ object mod {
   }
   object CollapsibleProps {
     
-    @scala.inline
-    def apply(): CollapsibleProps = {
+    inline def apply(): CollapsibleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollapsibleProps]
     }
     
-    @scala.inline
-    implicit class CollapsiblePropsMutableBuilder[Self <: CollapsibleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapsibleProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedHeight(value: Double): Self = StObject.set(x, "collapsedHeight", value.asInstanceOf[js.Any])
+      inline def setCollapsedHeight(value: Double): Self = StObject.set(x, "collapsedHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedHeightUndefined: Self = StObject.set(x, "collapsedHeight", js.undefined)
+      inline def setCollapsedHeightUndefined: Self = StObject.set(x, "collapsedHeight", js.undefined)
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: EasingMode | js.Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: EasingMode | js.Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setEnablePointerEvents(value: Boolean): Self = StObject.set(x, "enablePointerEvents", value.asInstanceOf[js.Any])
+      inline def setEnablePointerEvents(value: Boolean): Self = StObject.set(x, "enablePointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePointerEventsUndefined: Self = StObject.set(x, "enablePointerEvents", js.undefined)
+      inline def setEnablePointerEventsUndefined: Self = StObject.set(x, "enablePointerEvents", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: () => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction0(value))
+      inline def setOnAnimationEnd(value: () => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -173,97 +154,66 @@ object mod {
   trait EasingMode extends StObject
   object EasingMode {
     
-    @scala.inline
-    def easeInBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBack = "easeInBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBack]
+    inline def easeInBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBack = "easeInBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBack]
     
-    @scala.inline
-    def easeInBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBounce]
+    inline def easeInBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBounce = "easeInBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInBounce]
     
-    @scala.inline
-    def easeInCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCirc]
+    inline def easeInCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCirc = "easeInCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCirc]
     
-    @scala.inline
-    def easeInCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCubic]
+    inline def easeInCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCubic = "easeInCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInCubic]
     
-    @scala.inline
-    def easeInElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInElastic]
+    inline def easeInElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInElastic = "easeInElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInElastic]
     
-    @scala.inline
-    def easeInExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInExpo]
+    inline def easeInExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInExpo = "easeInExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInExpo]
     
-    @scala.inline
-    def easeInOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBack]
+    inline def easeInOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBack = "easeInOutBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBack]
     
-    @scala.inline
-    def easeInOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBounce]
+    inline def easeInOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBounce = "easeInOutBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutBounce]
     
-    @scala.inline
-    def easeInOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCirc]
+    inline def easeInOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCirc = "easeInOutCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCirc]
     
-    @scala.inline
-    def easeInOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCubic]
+    inline def easeInOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutCubic]
     
-    @scala.inline
-    def easeInOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutElastic]
+    inline def easeInOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutElastic = "easeInOutElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutElastic]
     
-    @scala.inline
-    def easeInOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutExpo]
+    inline def easeInOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutExpo = "easeInOutExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutExpo]
     
-    @scala.inline
-    def easeInOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuad]
+    inline def easeInOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuad]
     
-    @scala.inline
-    def easeInOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuart]
+    inline def easeInOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuart]
     
-    @scala.inline
-    def easeInOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuint]
+    inline def easeInOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutQuint]
     
-    @scala.inline
-    def easeInOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutSine]
+    inline def easeInOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutSine = "easeInOutSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInOutSine]
     
-    @scala.inline
-    def easeInQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuad]
+    inline def easeInQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuad = "easeInQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuad]
     
-    @scala.inline
-    def easeInQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuart]
+    inline def easeInQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuart = "easeInQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuart]
     
-    @scala.inline
-    def easeInQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuint]
+    inline def easeInQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuint = "easeInQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInQuint]
     
-    @scala.inline
-    def easeInSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInSine = "easeInSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInSine]
+    inline def easeInSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInSine = "easeInSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeInSine]
     
-    @scala.inline
-    def easeOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBack]
+    inline def easeOutBack: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBack = "easeOutBack".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBack]
     
-    @scala.inline
-    def easeOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBounce]
+    inline def easeOutBounce: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBounce = "easeOutBounce".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutBounce]
     
-    @scala.inline
-    def easeOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCirc]
+    inline def easeOutCirc: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCirc = "easeOutCirc".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCirc]
     
-    @scala.inline
-    def easeOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCubic]
+    inline def easeOutCubic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutCubic]
     
-    @scala.inline
-    def easeOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutElastic]
+    inline def easeOutElastic: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutElastic = "easeOutElastic".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutElastic]
     
-    @scala.inline
-    def easeOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutExpo]
+    inline def easeOutExpo: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutExpo = "easeOutExpo".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutExpo]
     
-    @scala.inline
-    def easeOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuad]
+    inline def easeOutQuad: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuad]
     
-    @scala.inline
-    def easeOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuart]
+    inline def easeOutQuart: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuart]
     
-    @scala.inline
-    def easeOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuint]
+    inline def easeOutQuint: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutQuint]
     
-    @scala.inline
-    def easeOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutSine]
+    inline def easeOutSine: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutSine = "easeOutSine".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.easeOutSine]
     
-    @scala.inline
-    def linear: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.linear = "linear".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.linear]
+    inline def linear: typings.reactNativeCollapsible.reactNativeCollapsibleStrings.linear = "linear".asInstanceOf[typings.reactNativeCollapsible.reactNativeCollapsibleStrings.linear]
   }
 }

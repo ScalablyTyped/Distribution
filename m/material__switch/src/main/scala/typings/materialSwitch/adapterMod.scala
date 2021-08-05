@@ -35,8 +35,7 @@ object adapterMod {
   }
   object MDCSwitchAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       removeClass: String => Unit,
       setNativeControlAttr: (String, String) => Unit,
@@ -47,23 +46,17 @@ object adapterMod {
       __obj.asInstanceOf[MDCSwitchAdapter]
     }
     
-    @scala.inline
-    implicit class MDCSwitchAdapterMutableBuilder[Self <: MDCSwitchAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCSwitchAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNativeControlAttr(value: (String, String) => Unit): Self = StObject.set(x, "setNativeControlAttr", js.Any.fromFunction2(value))
+      inline def setSetNativeControlAttr(value: (String, String) => Unit): Self = StObject.set(x, "setNativeControlAttr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetNativeControlChecked(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlChecked", js.Any.fromFunction1(value))
+      inline def setSetNativeControlChecked(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlChecked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNativeControlDisabled(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
+      inline def setSetNativeControlDisabled(value: Boolean => Unit): Self = StObject.set(x, "setNativeControlDisabled", js.Any.fromFunction1(value))
     }
   }
 }

@@ -10,19 +10,15 @@ trait ResizeClusterResult extends StObject {
 }
 object ResizeClusterResult {
   
-  @scala.inline
-  def apply(): ResizeClusterResult = {
+  inline def apply(): ResizeClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizeClusterResult]
   }
   
-  @scala.inline
-  implicit class ResizeClusterResultMutableBuilder[Self <: ResizeClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeClusterResult](x: Self) {
     
-    @scala.inline
-    def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "Cluster", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait DateStampProperties extends StObject {
 }
 object DateStampProperties {
   
-  @scala.inline
-  def apply(): DateStampProperties = {
+  inline def apply(): DateStampProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateStampProperties]
   }
   
-  @scala.inline
-  implicit class DateStampPropertiesMutableBuilder[Self <: DateStampProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DateStampProperties](x: Self) {
     
-    @scala.inline
-    def setDateAreaHeight(value: String): Self = StObject.set(x, "dateAreaHeight", value.asInstanceOf[js.Any])
+    inline def setDateAreaHeight(value: String): Self = StObject.set(x, "dateAreaHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateAreaHeightUndefined: Self = StObject.set(x, "dateAreaHeight", js.undefined)
+    inline def setDateAreaHeightUndefined: Self = StObject.set(x, "dateAreaHeight", js.undefined)
     
-    @scala.inline
-    def setDateAreaWidth(value: String): Self = StObject.set(x, "dateAreaWidth", value.asInstanceOf[js.Any])
+    inline def setDateAreaWidth(value: String): Self = StObject.set(x, "dateAreaWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateAreaWidthUndefined: Self = StObject.set(x, "dateAreaWidth", js.undefined)
+    inline def setDateAreaWidthUndefined: Self = StObject.set(x, "dateAreaWidth", js.undefined)
     
-    @scala.inline
-    def setDateAreaX(value: String): Self = StObject.set(x, "dateAreaX", value.asInstanceOf[js.Any])
+    inline def setDateAreaX(value: String): Self = StObject.set(x, "dateAreaX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateAreaXUndefined: Self = StObject.set(x, "dateAreaX", js.undefined)
+    inline def setDateAreaXUndefined: Self = StObject.set(x, "dateAreaX", js.undefined)
     
-    @scala.inline
-    def setDateAreaY(value: String): Self = StObject.set(x, "dateAreaY", value.asInstanceOf[js.Any])
+    inline def setDateAreaY(value: String): Self = StObject.set(x, "dateAreaY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateAreaYUndefined: Self = StObject.set(x, "dateAreaY", js.undefined)
+    inline def setDateAreaYUndefined: Self = StObject.set(x, "dateAreaY", js.undefined)
   }
 }

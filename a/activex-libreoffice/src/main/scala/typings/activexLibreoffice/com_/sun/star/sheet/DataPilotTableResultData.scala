@@ -37,22 +37,17 @@ trait DataPilotTableResultData extends StObject {
 }
 object DataPilotTableResultData {
   
-  @scala.inline
-  def apply(DataFieldIndex: Double, FieldFilters: SafeArray[DataPilotFieldFilter], Result: DataResult): DataPilotTableResultData = {
+  inline def apply(DataFieldIndex: Double, FieldFilters: SafeArray[DataPilotFieldFilter], Result: DataResult): DataPilotTableResultData = {
     val __obj = js.Dynamic.literal(DataFieldIndex = DataFieldIndex.asInstanceOf[js.Any], FieldFilters = FieldFilters.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotTableResultData]
   }
   
-  @scala.inline
-  implicit class DataPilotTableResultDataMutableBuilder[Self <: DataPilotTableResultData] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotTableResultData](x: Self) {
     
-    @scala.inline
-    def setDataFieldIndex(value: Double): Self = StObject.set(x, "DataFieldIndex", value.asInstanceOf[js.Any])
+    inline def setDataFieldIndex(value: Double): Self = StObject.set(x, "DataFieldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldFilters(value: SafeArray[DataPilotFieldFilter]): Self = StObject.set(x, "FieldFilters", value.asInstanceOf[js.Any])
+    inline def setFieldFilters(value: SafeArray[DataPilotFieldFilter]): Self = StObject.set(x, "FieldFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: DataResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: DataResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

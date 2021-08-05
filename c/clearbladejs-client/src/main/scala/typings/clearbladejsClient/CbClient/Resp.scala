@@ -13,19 +13,15 @@ trait Resp extends StObject {
 }
 object Resp {
   
-  @scala.inline
-  def apply(error: js.Any => scala.Nothing, success: js.Any => scala.Nothing): Resp = {
+  inline def apply(error: js.Any => scala.Nothing, success: js.Any => scala.Nothing): Resp = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[Resp]
   }
   
-  @scala.inline
-  implicit class RespMutableBuilder[Self <: Resp] (val x: Self) extends AnyVal {
+  extension [Self <: Resp](x: Self) {
     
-    @scala.inline
-    def setError(value: js.Any => scala.Nothing): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Any => scala.Nothing): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccess(value: js.Any => scala.Nothing): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: js.Any => scala.Nothing): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

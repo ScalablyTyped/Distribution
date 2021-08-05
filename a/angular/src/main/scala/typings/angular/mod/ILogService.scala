@@ -33,8 +33,7 @@ trait ILogService extends StObject {
 }
 object ILogService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: /* repeated */ js.Any => Unit,
     error: /* repeated */ js.Any => Unit,
     info: /* repeated */ js.Any => Unit,
@@ -45,22 +44,16 @@ object ILogService {
     __obj.asInstanceOf[ILogService]
   }
   
-  @scala.inline
-  implicit class ILogServiceMutableBuilder[Self <: ILogService] (val x: Self) extends AnyVal {
+  extension [Self <: ILogService](x: Self) {
     
-    @scala.inline
-    def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

@@ -24,31 +24,23 @@ trait SchemaInventorySizeTargeting extends StObject {
 }
 object SchemaInventorySizeTargeting {
   
-  @scala.inline
-  def apply(): SchemaInventorySizeTargeting = {
+  inline def apply(): SchemaInventorySizeTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInventorySizeTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaInventorySizeTargetingMutableBuilder[Self <: SchemaInventorySizeTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInventorySizeTargeting](x: Self) {
     
-    @scala.inline
-    def setExcludedInventorySizes(value: js.Array[SchemaAdSize]): Self = StObject.set(x, "excludedInventorySizes", value.asInstanceOf[js.Any])
+    inline def setExcludedInventorySizes(value: js.Array[SchemaAdSize]): Self = StObject.set(x, "excludedInventorySizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedInventorySizesUndefined: Self = StObject.set(x, "excludedInventorySizes", js.undefined)
+    inline def setExcludedInventorySizesUndefined: Self = StObject.set(x, "excludedInventorySizes", js.undefined)
     
-    @scala.inline
-    def setExcludedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "excludedInventorySizes", js.Array(value :_*))
+    inline def setExcludedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "excludedInventorySizes", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetedInventorySizes(value: js.Array[SchemaAdSize]): Self = StObject.set(x, "targetedInventorySizes", value.asInstanceOf[js.Any])
+    inline def setTargetedInventorySizes(value: js.Array[SchemaAdSize]): Self = StObject.set(x, "targetedInventorySizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedInventorySizesUndefined: Self = StObject.set(x, "targetedInventorySizes", js.undefined)
+    inline def setTargetedInventorySizesUndefined: Self = StObject.set(x, "targetedInventorySizes", js.undefined)
     
-    @scala.inline
-    def setTargetedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "targetedInventorySizes", js.Array(value :_*))
+    inline def setTargetedInventorySizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "targetedInventorySizes", js.Array(value :_*))
   }
 }

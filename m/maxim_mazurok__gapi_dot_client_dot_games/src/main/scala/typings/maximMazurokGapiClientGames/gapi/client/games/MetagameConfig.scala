@@ -17,34 +17,25 @@ trait MetagameConfig extends StObject {
 }
 object MetagameConfig {
   
-  @scala.inline
-  def apply(): MetagameConfig = {
+  inline def apply(): MetagameConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetagameConfig]
   }
   
-  @scala.inline
-  implicit class MetagameConfigMutableBuilder[Self <: MetagameConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MetagameConfig](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlayerLevels(value: js.Array[PlayerLevel]): Self = StObject.set(x, "playerLevels", value.asInstanceOf[js.Any])
+    inline def setPlayerLevels(value: js.Array[PlayerLevel]): Self = StObject.set(x, "playerLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerLevelsUndefined: Self = StObject.set(x, "playerLevels", js.undefined)
+    inline def setPlayerLevelsUndefined: Self = StObject.set(x, "playerLevels", js.undefined)
     
-    @scala.inline
-    def setPlayerLevelsVarargs(value: PlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value :_*))
+    inline def setPlayerLevelsVarargs(value: PlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value :_*))
   }
 }

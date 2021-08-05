@@ -12,19 +12,15 @@ trait PartialWithWidth extends StObject {
 }
 object PartialWithWidth {
   
-  @scala.inline
-  def apply(): PartialWithWidth = {
+  inline def apply(): PartialWithWidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialWithWidth]
   }
   
-  @scala.inline
-  implicit class PartialWithWidthMutableBuilder[Self <: PartialWithWidth] (val x: Self) extends AnyVal {
+  extension [Self <: PartialWithWidth](x: Self) {
     
-    @scala.inline
-    def setWidth(value: Breakpoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Breakpoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

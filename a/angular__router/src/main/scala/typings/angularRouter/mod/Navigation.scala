@@ -56,8 +56,7 @@ trait Navigation extends StObject {
 }
 object Navigation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extractedUrl: UrlTree,
     extras: NavigationExtras,
     id: Double,
@@ -68,34 +67,24 @@ object Navigation {
     __obj.asInstanceOf[Navigation]
   }
   
-  @scala.inline
-  implicit class NavigationMutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
+  extension [Self <: Navigation](x: Self) {
     
-    @scala.inline
-    def setExtractedUrl(value: UrlTree): Self = StObject.set(x, "extractedUrl", value.asInstanceOf[js.Any])
+    inline def setExtractedUrl(value: UrlTree): Self = StObject.set(x, "extractedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtras(value: NavigationExtras): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: NavigationExtras): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUrl(value: UrlTree): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+    inline def setFinalUrl(value: UrlTree): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUrlUndefined: Self = StObject.set(x, "finalUrl", js.undefined)
+    inline def setFinalUrlUndefined: Self = StObject.set(x, "finalUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUrl(value: String | UrlTree): Self = StObject.set(x, "initialUrl", value.asInstanceOf[js.Any])
+    inline def setInitialUrl(value: String | UrlTree): Self = StObject.set(x, "initialUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousNavigation(value: Navigation): Self = StObject.set(x, "previousNavigation", value.asInstanceOf[js.Any])
+    inline def setPreviousNavigation(value: Navigation): Self = StObject.set(x, "previousNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousNavigationNull: Self = StObject.set(x, "previousNavigation", null)
+    inline def setPreviousNavigationNull: Self = StObject.set(x, "previousNavigation", null)
     
-    @scala.inline
-    def setTrigger(value: imperative | popstate | hashchange): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: imperative | popstate | hashchange): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

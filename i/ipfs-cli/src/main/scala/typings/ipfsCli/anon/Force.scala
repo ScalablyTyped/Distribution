@@ -18,28 +18,21 @@ trait Force extends StObject {
 }
 object Force {
   
-  @scala.inline
-  def apply(ctx: js.Any, force: js.Any, hash: js.Any, quiet: js.Any, timeout: js.Any): Force = {
+  inline def apply(ctx: js.Any, force: js.Any, hash: js.Any, quiet: js.Any, timeout: js.Any): Force = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Force]
   }
   
-  @scala.inline
-  implicit class ForceMutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
+  extension [Self <: Force](x: Self) {
     
-    @scala.inline
-    def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: js.Any): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: js.Any): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuiet(value: js.Any): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+    inline def setQuiet(value: js.Any): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

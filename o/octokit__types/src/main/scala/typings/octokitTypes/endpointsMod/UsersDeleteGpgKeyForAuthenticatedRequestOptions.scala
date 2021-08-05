@@ -20,25 +20,19 @@ trait UsersDeleteGpgKeyForAuthenticatedRequestOptions extends StObject {
 }
 object UsersDeleteGpgKeyForAuthenticatedRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersDeleteGpgKeyForAuthenticatedRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersDeleteGpgKeyForAuthenticatedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/user/gpg_keys/:gpg_key_id")
     __obj.asInstanceOf[UsersDeleteGpgKeyForAuthenticatedRequestOptions]
   }
   
-  @scala.inline
-  implicit class UsersDeleteGpgKeyForAuthenticatedRequestOptionsMutableBuilder[Self <: UsersDeleteGpgKeyForAuthenticatedRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UsersDeleteGpgKeyForAuthenticatedRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashuserSlashgpg_keysSlashColongpg_key_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashuserSlashgpg_keysSlashColongpg_key_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

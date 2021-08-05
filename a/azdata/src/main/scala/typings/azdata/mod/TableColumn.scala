@@ -22,52 +22,37 @@ trait TableColumn extends StObject {
 }
 object TableColumn {
   
-  @scala.inline
-  def apply(value: String): TableColumn = {
+  inline def apply(value: String): TableColumn = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumn]
   }
   
-  @scala.inline
-  implicit class TableColumnMutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
+  extension [Self <: TableColumn](x: Self) {
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setHeaderCssClass(value: String): Self = StObject.set(x, "headerCssClass", value.asInstanceOf[js.Any])
+    inline def setHeaderCssClass(value: String): Self = StObject.set(x, "headerCssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderCssClassUndefined: Self = StObject.set(x, "headerCssClass", js.undefined)
+    inline def setHeaderCssClassUndefined: Self = StObject.set(x, "headerCssClass", js.undefined)
     
-    @scala.inline
-    def setOptions(value: CheckboxColumnOption | TextColumnOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: CheckboxColumnOption | TextColumnOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+    inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
+    inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
     
-    @scala.inline
-    def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

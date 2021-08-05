@@ -28,19 +28,15 @@ trait ApplicationLoadEventArgs extends StObject {
 }
 object ApplicationLoadEventArgs {
   
-  @scala.inline
-  def apply(get_components: () => js.Array[Component], get_isPartialLoad: () => Boolean): ApplicationLoadEventArgs = {
+  inline def apply(get_components: () => js.Array[Component], get_isPartialLoad: () => Boolean): ApplicationLoadEventArgs = {
     val __obj = js.Dynamic.literal(get_components = js.Any.fromFunction0(get_components), get_isPartialLoad = js.Any.fromFunction0(get_isPartialLoad))
     __obj.asInstanceOf[ApplicationLoadEventArgs]
   }
   
-  @scala.inline
-  implicit class ApplicationLoadEventArgsMutableBuilder[Self <: ApplicationLoadEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationLoadEventArgs](x: Self) {
     
-    @scala.inline
-    def setGet_components(value: () => js.Array[Component]): Self = StObject.set(x, "get_components", js.Any.fromFunction0(value))
+    inline def setGet_components(value: () => js.Array[Component]): Self = StObject.set(x, "get_components", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isPartialLoad(value: () => Boolean): Self = StObject.set(x, "get_isPartialLoad", js.Any.fromFunction0(value))
+    inline def setGet_isPartialLoad(value: () => Boolean): Self = StObject.set(x, "get_isPartialLoad", js.Any.fromFunction0(value))
   }
 }

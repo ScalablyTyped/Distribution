@@ -34,8 +34,7 @@ trait XPagePrintable
 }
 object XPagePrintable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PagePrintSettings: SafeArray[PropertyValue],
     acquire: () => Unit,
     getPagePrintSettings: () => SafeArray[PropertyValue],
@@ -48,19 +47,14 @@ object XPagePrintable {
     __obj.asInstanceOf[XPagePrintable]
   }
   
-  @scala.inline
-  implicit class XPagePrintableMutableBuilder[Self <: XPagePrintable] (val x: Self) extends AnyVal {
+  extension [Self <: XPagePrintable](x: Self) {
     
-    @scala.inline
-    def setGetPagePrintSettings(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPagePrintSettings", js.Any.fromFunction0(value))
+    inline def setGetPagePrintSettings(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPagePrintSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPagePrintSettings(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PagePrintSettings", value.asInstanceOf[js.Any])
+    inline def setPagePrintSettings(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PagePrintSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintPages(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "printPages", js.Any.fromFunction1(value))
+    inline def setPrintPages(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "printPages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPagePrintSettings(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPagePrintSettings", js.Any.fromFunction1(value))
+    inline def setSetPagePrintSettings(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPagePrintSettings", js.Any.fromFunction1(value))
   }
 }

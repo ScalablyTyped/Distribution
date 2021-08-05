@@ -16,19 +16,15 @@ trait SchemaDisplayDevice extends StObject {
 }
 object SchemaDisplayDevice {
   
-  @scala.inline
-  def apply(): SchemaDisplayDevice = {
+  inline def apply(): SchemaDisplayDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisplayDevice]
   }
   
-  @scala.inline
-  implicit class SchemaDisplayDeviceMutableBuilder[Self <: SchemaDisplayDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDisplayDevice](x: Self) {
     
-    @scala.inline
-    def setEnableDisplay(value: Boolean): Self = StObject.set(x, "enableDisplay", value.asInstanceOf[js.Any])
+    inline def setEnableDisplay(value: Boolean): Self = StObject.set(x, "enableDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDisplayUndefined: Self = StObject.set(x, "enableDisplay", js.undefined)
+    inline def setEnableDisplayUndefined: Self = StObject.set(x, "enableDisplay", js.undefined)
   }
 }

@@ -8,6 +8,5 @@ object reactFocusLockStrings {
   
   @js.native
   sealed trait tail extends StObject
-  @scala.inline
-  def tail: tail = "tail".asInstanceOf[tail]
+  inline def tail: tail = "tail".asInstanceOf[tail]
 }

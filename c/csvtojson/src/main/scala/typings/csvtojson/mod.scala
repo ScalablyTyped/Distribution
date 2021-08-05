@@ -16,14 +16,10 @@ object mod {
     * @param    streamOptions stream options
     * @return Converter object
     */
-  @scala.inline
-  def apply(): Converter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Converter]
-  @scala.inline
-  def apply(options: Unit, streamOptions: StreamOptions): Converter = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], streamOptions.asInstanceOf[js.Any])).asInstanceOf[Converter]
-  @scala.inline
-  def apply(options: ConverterOptions): Converter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Converter]
-  @scala.inline
-  def apply(options: ConverterOptions, streamOptions: StreamOptions): Converter = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], streamOptions.asInstanceOf[js.Any])).asInstanceOf[Converter]
+  inline def apply(): Converter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Converter]
+  inline def apply(options: Unit, streamOptions: StreamOptions): Converter = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], streamOptions.asInstanceOf[js.Any])).asInstanceOf[Converter]
+  inline def apply(options: ConverterOptions): Converter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Converter]
+  inline def apply(options: ConverterOptions, streamOptions: StreamOptions): Converter = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], streamOptions.asInstanceOf[js.Any])).asInstanceOf[Converter]
   
   @JSImport("csvtojson", JSImport.Namespace)
   @js.native
@@ -247,134 +243,92 @@ object mod {
   }
   object ConverterOptions {
     
-    @scala.inline
-    def apply(): ConverterOptions = {
+    inline def apply(): ConverterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    @scala.inline
-    implicit class ConverterOptionsMutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConverterOptions](x: Self) {
       
-      @scala.inline
-      def setCheckColumn(value: Boolean): Self = StObject.set(x, "checkColumn", value.asInstanceOf[js.Any])
+      inline def setCheckColumn(value: Boolean): Self = StObject.set(x, "checkColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckColumnUndefined: Self = StObject.set(x, "checkColumn", js.undefined)
+      inline def setCheckColumnUndefined: Self = StObject.set(x, "checkColumn", js.undefined)
       
-      @scala.inline
-      def setCheckType(value: Boolean): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
+      inline def setCheckType(value: Boolean): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckTypeUndefined: Self = StObject.set(x, "checkType", js.undefined)
+      inline def setCheckTypeUndefined: Self = StObject.set(x, "checkType", js.undefined)
       
-      @scala.inline
-      def setConstructResult(value: Boolean): Self = StObject.set(x, "constructResult", value.asInstanceOf[js.Any])
+      inline def setConstructResult(value: Boolean): Self = StObject.set(x, "constructResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructResultUndefined: Self = StObject.set(x, "constructResult", js.undefined)
+      inline def setConstructResultUndefined: Self = StObject.set(x, "constructResult", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String | js.Array[String]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String | js.Array[String]): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDelimiterVarargs(value: String*): Self = StObject.set(x, "delimiter", js.Array(value :_*))
+      inline def setDelimiterVarargs(value: String*): Self = StObject.set(x, "delimiter", js.Array(value :_*))
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFlatKeys(value: Boolean): Self = StObject.set(x, "flatKeys", value.asInstanceOf[js.Any])
+      inline def setFlatKeys(value: Boolean): Self = StObject.set(x, "flatKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatKeysUndefined: Self = StObject.set(x, "flatKeys", js.undefined)
+      inline def setFlatKeysUndefined: Self = StObject.set(x, "flatKeys", js.undefined)
       
-      @scala.inline
-      def setFork(value: Double): Self = StObject.set(x, "fork", value.asInstanceOf[js.Any])
+      inline def setFork(value: Double): Self = StObject.set(x, "fork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForkUndefined: Self = StObject.set(x, "fork", js.undefined)
+      inline def setForkUndefined: Self = StObject.set(x, "fork", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreColumns(value: js.Array[Double]): Self = StObject.set(x, "ignoreColumns", value.asInstanceOf[js.Any])
+      inline def setIgnoreColumns(value: js.Array[Double]): Self = StObject.set(x, "ignoreColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreColumnsUndefined: Self = StObject.set(x, "ignoreColumns", js.undefined)
+      inline def setIgnoreColumnsUndefined: Self = StObject.set(x, "ignoreColumns", js.undefined)
       
-      @scala.inline
-      def setIgnoreColumnsVarargs(value: Double*): Self = StObject.set(x, "ignoreColumns", js.Array(value :_*))
+      inline def setIgnoreColumnsVarargs(value: Double*): Self = StObject.set(x, "ignoreColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreEmpty(value: Boolean): Self = StObject.set(x, "ignoreEmpty", value.asInstanceOf[js.Any])
+      inline def setIgnoreEmpty(value: Boolean): Self = StObject.set(x, "ignoreEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreEmptyUndefined: Self = StObject.set(x, "ignoreEmpty", js.undefined)
+      inline def setIgnoreEmptyUndefined: Self = StObject.set(x, "ignoreEmpty", js.undefined)
       
-      @scala.inline
-      def setIncludeColumns(value: js.Array[Double]): Self = StObject.set(x, "includeColumns", value.asInstanceOf[js.Any])
+      inline def setIncludeColumns(value: js.Array[Double]): Self = StObject.set(x, "includeColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeColumnsUndefined: Self = StObject.set(x, "includeColumns", js.undefined)
+      inline def setIncludeColumnsUndefined: Self = StObject.set(x, "includeColumns", js.undefined)
       
-      @scala.inline
-      def setIncludeColumnsVarargs(value: Double*): Self = StObject.set(x, "includeColumns", js.Array(value :_*))
+      inline def setIncludeColumnsVarargs(value: Double*): Self = StObject.set(x, "includeColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxRowLength(value: Double): Self = StObject.set(x, "maxRowLength", value.asInstanceOf[js.Any])
+      inline def setMaxRowLength(value: Double): Self = StObject.set(x, "maxRowLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRowLengthUndefined: Self = StObject.set(x, "maxRowLength", js.undefined)
+      inline def setMaxRowLengthUndefined: Self = StObject.set(x, "maxRowLength", js.undefined)
       
-      @scala.inline
-      def setNoheader(value: Boolean): Self = StObject.set(x, "noheader", value.asInstanceOf[js.Any])
+      inline def setNoheader(value: Boolean): Self = StObject.set(x, "noheader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoheaderUndefined: Self = StObject.set(x, "noheader", js.undefined)
+      inline def setNoheaderUndefined: Self = StObject.set(x, "noheader", js.undefined)
       
-      @scala.inline
-      def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       
-      @scala.inline
-      def setToArrayString(value: Boolean): Self = StObject.set(x, "toArrayString", value.asInstanceOf[js.Any])
+      inline def setToArrayString(value: Boolean): Self = StObject.set(x, "toArrayString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToArrayStringUndefined: Self = StObject.set(x, "toArrayString", js.undefined)
+      inline def setToArrayStringUndefined: Self = StObject.set(x, "toArrayString", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setWorkerNum(value: Double): Self = StObject.set(x, "workerNum", value.asInstanceOf[js.Any])
+      inline def setWorkerNum(value: Double): Self = StObject.set(x, "workerNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerNumUndefined: Self = StObject.set(x, "workerNum", js.undefined)
+      inline def setWorkerNumUndefined: Self = StObject.set(x, "workerNum", js.undefined)
     }
   }
   

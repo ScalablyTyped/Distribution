@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcExportXMLEncoding extends StObject
 object AcExportXMLEncoding {
   
-  @scala.inline
-  def acUTF16: `1` = 1.asInstanceOf[`1`]
+  inline def acUTF16: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acUTF8: `0` = 0.asInstanceOf[`0`]
+  inline def acUTF8: `0` = 0.asInstanceOf[`0`]
 }

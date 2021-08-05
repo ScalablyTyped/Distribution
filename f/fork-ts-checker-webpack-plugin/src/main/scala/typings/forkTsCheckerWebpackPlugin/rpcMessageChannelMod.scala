@@ -11,19 +11,15 @@ object rpcMessageChannelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
-  @scala.inline
-  def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort, linkPorts: js.Function0[js.Promise[Unit]]): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
-  @scala.inline
-  def createRpcMessageChannel(
+  inline def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  inline def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort, linkPorts: js.Function0[js.Promise[Unit]]): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  inline def createRpcMessageChannel(
     servicePort: RpcMessagePort,
     clientPort: RpcMessagePort,
     linkPorts: js.Function0[js.Promise[Unit]],
     unlinkPorts: js.Function0[js.Promise[Unit]]
   ): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any], unlinkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
-  @scala.inline
-  def createRpcMessageChannel(
+  inline def createRpcMessageChannel(
     servicePort: RpcMessagePort,
     clientPort: RpcMessagePort,
     linkPorts: Unit,
@@ -44,8 +40,7 @@ object rpcMessageChannelMod {
   }
   object RpcMessageChannel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientPort: RpcMessagePort,
       close: () => js.Promise[Unit],
       isOpen: () => Boolean,
@@ -56,23 +51,17 @@ object rpcMessageChannelMod {
       __obj.asInstanceOf[RpcMessageChannel]
     }
     
-    @scala.inline
-    implicit class RpcMessageChannelMutableBuilder[Self <: RpcMessageChannel] (val x: Self) extends AnyVal {
+    extension [Self <: RpcMessageChannel](x: Self) {
       
-      @scala.inline
-      def setClientPort(value: RpcMessagePort): Self = StObject.set(x, "clientPort", value.asInstanceOf[js.Any])
+      inline def setClientPort(value: RpcMessagePort): Self = StObject.set(x, "clientPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
+      inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setServicePort(value: RpcMessagePort): Self = StObject.set(x, "servicePort", value.asInstanceOf[js.Any])
+      inline def setServicePort(value: RpcMessagePort): Self = StObject.set(x, "servicePort", value.asInstanceOf[js.Any])
     }
   }
 }

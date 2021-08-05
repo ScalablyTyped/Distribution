@@ -23,28 +23,21 @@ trait VirtualGatewaySpec extends StObject {
 }
 object VirtualGatewaySpec {
   
-  @scala.inline
-  def apply(listener: VirtualGatewaySpecListener): VirtualGatewaySpec = {
+  inline def apply(listener: VirtualGatewaySpecListener): VirtualGatewaySpec = {
     val __obj = js.Dynamic.literal(listener = listener.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewaySpec]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecMutableBuilder[Self <: VirtualGatewaySpec] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpec](x: Self) {
     
-    @scala.inline
-    def setBackendDefaults(value: VirtualGatewaySpecBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
+    inline def setBackendDefaults(value: VirtualGatewaySpecBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
+    inline def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
     
-    @scala.inline
-    def setListener(value: VirtualGatewaySpecListener): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: VirtualGatewaySpecListener): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogging(value: VirtualGatewaySpecLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: VirtualGatewaySpecLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
   }
 }

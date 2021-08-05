@@ -18,25 +18,19 @@ trait ListTagsForProjectResult extends StObject {
 }
 object ListTagsForProjectResult {
   
-  @scala.inline
-  def apply(): ListTagsForProjectResult = {
+  inline def apply(): ListTagsForProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTagsForProjectResult]
   }
   
-  @scala.inline
-  implicit class ListTagsForProjectResultMutableBuilder[Self <: ListTagsForProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForProjectResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

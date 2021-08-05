@@ -11,16 +11,13 @@ trait PickImplloadingDuration extends StObject {
 }
 object PickImplloadingDuration {
   
-  @scala.inline
-  def apply(loadingDuration: Double): PickImplloadingDuration = {
+  inline def apply(loadingDuration: Double): PickImplloadingDuration = {
     val __obj = js.Dynamic.literal(loadingDuration = loadingDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplloadingDuration]
   }
   
-  @scala.inline
-  implicit class PickImplloadingDurationMutableBuilder[Self <: PickImplloadingDuration] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplloadingDuration](x: Self) {
     
-    @scala.inline
-    def setLoadingDuration(value: Double): Self = StObject.set(x, "loadingDuration", value.asInstanceOf[js.Any])
+    inline def setLoadingDuration(value: Double): Self = StObject.set(x, "loadingDuration", value.asInstanceOf[js.Any])
   }
 }

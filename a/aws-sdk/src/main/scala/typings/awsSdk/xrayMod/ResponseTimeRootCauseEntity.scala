@@ -23,31 +23,23 @@ trait ResponseTimeRootCauseEntity extends StObject {
 }
 object ResponseTimeRootCauseEntity {
   
-  @scala.inline
-  def apply(): ResponseTimeRootCauseEntity = {
+  inline def apply(): ResponseTimeRootCauseEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseTimeRootCauseEntity]
   }
   
-  @scala.inline
-  implicit class ResponseTimeRootCauseEntityMutableBuilder[Self <: ResponseTimeRootCauseEntity] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseTimeRootCauseEntity](x: Self) {
     
-    @scala.inline
-    def setCoverage(value: NullableDouble): Self = StObject.set(x, "Coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: NullableDouble): Self = StObject.set(x, "Coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageUndefined: Self = StObject.set(x, "Coverage", js.undefined)
+    inline def setCoverageUndefined: Self = StObject.set(x, "Coverage", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRemote(value: NullableBoolean): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: NullableBoolean): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
   }
 }

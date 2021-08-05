@@ -128,8 +128,7 @@ object Mocha_ {
       * Wrapper for setImmediate, process.nextTick, or browser polyfill.
       */
     /* static member */
-    @scala.inline
-    def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   // #endregion Suite "post-require" event
@@ -185,8 +184,7 @@ object Mocha_ {
       * @see https://mochajs.org/api/mocha#.exports.create
       */
     /* static member */
-    @scala.inline
-    def create(parent: Suite, title: String): Suite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Suite]
+    inline def create(parent: Suite, title: String): Suite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Suite]
   }
   
   /**
@@ -221,11 +219,9 @@ object Mocha_ {
   @JSGlobal("Mocha.afterEach")
   @js.native
   def afterEach: HookFunction = js.native
-  @scala.inline
-  def afterEach_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterEach")(x.asInstanceOf[js.Any])
+  inline def afterEach_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterEach")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def after_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("after")(x.asInstanceOf[js.Any])
+  inline def after_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("after")(x.asInstanceOf[js.Any])
   
   /**
     * Execute before running tests.
@@ -248,11 +244,9 @@ object Mocha_ {
   @JSGlobal("Mocha.beforeEach")
   @js.native
   def beforeEach: HookFunction = js.native
-  @scala.inline
-  def beforeEach_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeEach")(x.asInstanceOf[js.Any])
+  inline def beforeEach_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeEach")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def before_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("before")(x.asInstanceOf[js.Any])
+  inline def before_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("before")(x.asInstanceOf[js.Any])
   
   /**
     * Describe a "suite" containing nested suites and tests.
@@ -262,8 +256,7 @@ object Mocha_ {
   @JSGlobal("Mocha.describe")
   @js.native
   def describe: SuiteFunction = js.native
-  @scala.inline
-  def describe_=(x: SuiteFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("describe")(x.asInstanceOf[js.Any])
+  inline def describe_=(x: SuiteFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("describe")(x.asInstanceOf[js.Any])
   
   object interfaces {
     
@@ -271,17 +264,13 @@ object Mocha_ {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def bdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def bdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def exports(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exports")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def exports(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exports")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def qunit(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("qunit")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def qunit(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("qunit")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def tdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def tdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -292,8 +281,7 @@ object Mocha_ {
   @JSGlobal("Mocha.it")
   @js.native
   def it: TestFunction = js.native
-  @scala.inline
-  def it_=(x: TestFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("it")(x.asInstanceOf[js.Any])
+  inline def it_=(x: TestFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("it")(x.asInstanceOf[js.Any])
   
   // #endregion Test interface augmentations
   object reporters {
@@ -351,8 +339,7 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.color
         */
-      @scala.inline
-      def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Default color map
@@ -377,32 +364,27 @@ object Mocha_ {
         /**
           * Clears the line and moves to the beginning of the line.
           */
-        @scala.inline
-        def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
+        inline def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
         
         /**
           * Moves to the beginning of the line
           */
-        @scala.inline
-        def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
+        inline def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
         
         /**
           * Deletes the current line
           */
-        @scala.inline
-        def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
+        inline def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
         
         /**
           * Hides the cursor
           */
-        @scala.inline
-        def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+        inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
         
         /**
           * Shows the cursor
           */
-        @scala.inline
-        def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+        inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
       }
       
       /**
@@ -410,8 +392,7 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.generateDiff
         */
-      @scala.inline
-      def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Inline diffs instead of +/-
@@ -421,16 +402,14 @@ object Mocha_ {
       @JSGlobal("Mocha.reporters.Base.inlineDiffs")
       @js.native
       def inlineDiffs: Boolean = js.native
-      @scala.inline
-      def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
+      inline def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
       
       /**
         * Output the given `failures` as a list.
         *
         * @see https://mochajs.org/api/Mocha.reporters.Base.html#.exports.list1
         */
-      @scala.inline
-      def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Default symbol map
@@ -449,8 +428,7 @@ object Mocha_ {
       @JSGlobal("Mocha.reporters.Base.useColors")
       @js.native
       def useColors: Boolean = js.native
-      @scala.inline
-      def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
+      inline def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
       
       /**
         * Expose terminal window size
@@ -466,8 +444,7 @@ object Mocha_ {
         @JSGlobal("Mocha.reporters.Base.window.width")
         @js.native
         def width: Double = js.native
-        @scala.inline
-        def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+        inline def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
       }
     }
     
@@ -850,28 +827,28 @@ object Mocha_ {
       extends StObject
          with typings.mocha.Mocha.reporters.Nyan_ {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var appendRainbow: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var colorIndex: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cursorDown: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cursorUp: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var draw: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var drawNyanCat: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var drawRainbow: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var drawScoreboard: js.Any = js.native
       
       /**
@@ -882,7 +859,7 @@ object Mocha_ {
       /* CompleteClass */
       override def epilogue(): Unit = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var face: js.Any = js.native
       
       /**
@@ -891,16 +868,16 @@ object Mocha_ {
       /* CompleteClass */
       var failures: js.Array[Test] = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var generateColors: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var numberOfLines: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var rainbowColors: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var rainbowify: js.Any = js.native
       
       /**
@@ -909,7 +886,7 @@ object Mocha_ {
       /* CompleteClass */
       var runner: typings.mocha.Mocha.Runner = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var scoreboardWidth: js.Any = js.native
       
       /**
@@ -918,13 +895,13 @@ object Mocha_ {
       /* CompleteClass */
       var stats: Stats = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var tick: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var trajectories: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var trajectoryWidthMax: js.Any = js.native
     }
     
@@ -1164,8 +1141,7 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.color
         */
-      @scala.inline
-      def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def color(`type`: String, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(`type`.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Default color map
@@ -1190,32 +1166,27 @@ object Mocha_ {
         /**
           * Clears the line and moves to the beginning of the line.
           */
-        @scala.inline
-        def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
+        inline def CR(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CR")().asInstanceOf[Unit]
         
         /**
           * Moves to the beginning of the line
           */
-        @scala.inline
-        def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
+        inline def beginningOfLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beginningOfLine")().asInstanceOf[Unit]
         
         /**
           * Deletes the current line
           */
-        @scala.inline
-        def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
+        inline def deleteLine(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLine")().asInstanceOf[Unit]
         
         /**
           * Hides the cursor
           */
-        @scala.inline
-        def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+        inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
         
         /**
           * Shows the cursor
           */
-        @scala.inline
-        def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+        inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
       }
       
       /**
@@ -1223,8 +1194,7 @@ object Mocha_ {
         *
         * @see https://mochajs.org/api/module-base#.generateDiff
         */
-      @scala.inline
-      def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def generateDiff(actual: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateDiff")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
       
       /**
         * Inline diffs instead of +/-
@@ -1234,16 +1204,14 @@ object Mocha_ {
       @JSGlobal("Mocha.reporters.base.inlineDiffs")
       @js.native
       def inlineDiffs: Boolean = js.native
-      @scala.inline
-      def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
+      inline def inlineDiffs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineDiffs")(x.asInstanceOf[js.Any])
       
       /**
         * Output the given `failures` as a list.
         *
         * @see https://mochajs.org/api/Mocha.reporters.Base.html#.exports.list1
         */
-      @scala.inline
-      def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def list(failures: js.Array[Test]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(failures.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Default symbol map
@@ -1262,8 +1230,7 @@ object Mocha_ {
       @JSGlobal("Mocha.reporters.base.useColors")
       @js.native
       def useColors: Boolean = js.native
-      @scala.inline
-      def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
+      inline def useColors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useColors")(x.asInstanceOf[js.Any])
       
       /**
         * Expose terminal window size
@@ -1279,8 +1246,7 @@ object Mocha_ {
         @JSGlobal("Mocha.reporters.base.window.width")
         @js.native
         def width: Double = js.native
-        @scala.inline
-        def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+        inline def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
       }
     }
     
@@ -1595,28 +1561,28 @@ object Mocha_ {
       extends StObject
          with typings.mocha.Mocha.reporters.Nyan_ {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var appendRainbow: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var colorIndex: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cursorDown: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cursorUp: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var draw: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var drawNyanCat: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var drawRainbow: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var drawScoreboard: js.Any = js.native
       
       /**
@@ -1627,7 +1593,7 @@ object Mocha_ {
       /* CompleteClass */
       override def epilogue(): Unit = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var face: js.Any = js.native
       
       /**
@@ -1636,16 +1602,16 @@ object Mocha_ {
       /* CompleteClass */
       var failures: js.Array[Test] = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var generateColors: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var numberOfLines: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var rainbowColors: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var rainbowify: js.Any = js.native
       
       /**
@@ -1654,7 +1620,7 @@ object Mocha_ {
       /* CompleteClass */
       var runner: typings.mocha.Mocha.Runner = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var scoreboardWidth: js.Any = js.native
       
       /**
@@ -1663,13 +1629,13 @@ object Mocha_ {
       /* CompleteClass */
       var stats: Stats = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var tick: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var trajectories: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var trajectoryWidthMax: js.Any = js.native
     }
     
@@ -1871,8 +1837,7 @@ object Mocha_ {
     *
     * @see https://mochajs.org/api/global.html#runWithSuite
     */
-  @scala.inline
-  def run(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")().asInstanceOf[Unit]
+  inline def run(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")().asInstanceOf[Unit]
   
   /**
     * Execute before each test case.
@@ -1884,8 +1849,7 @@ object Mocha_ {
   @JSGlobal("Mocha.setup")
   @js.native
   def setup: HookFunction = js.native
-  @scala.inline
-  def setup_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
+  inline def setup_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
   
   /**
     * Describe a "suite" containing nested suites and tests.
@@ -1906,8 +1870,7 @@ object Mocha_ {
   @JSGlobal("Mocha.suiteSetup")
   @js.native
   def suiteSetup: HookFunction = js.native
-  @scala.inline
-  def suiteSetup_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suiteSetup")(x.asInstanceOf[js.Any])
+  inline def suiteSetup_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suiteSetup")(x.asInstanceOf[js.Any])
   
   /**
     * Execute after running tests.
@@ -1919,11 +1882,9 @@ object Mocha_ {
   @JSGlobal("Mocha.suiteTeardown")
   @js.native
   def suiteTeardown: HookFunction = js.native
-  @scala.inline
-  def suiteTeardown_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suiteTeardown")(x.asInstanceOf[js.Any])
+  inline def suiteTeardown_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suiteTeardown")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def suite_=(x: SuiteFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suite")(x.asInstanceOf[js.Any])
+  inline def suite_=(x: SuiteFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suite")(x.asInstanceOf[js.Any])
   
   /**
     * Execute after each test case.
@@ -1935,8 +1896,7 @@ object Mocha_ {
   @JSGlobal("Mocha.teardown")
   @js.native
   def teardown: HookFunction = js.native
-  @scala.inline
-  def teardown_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teardown")(x.asInstanceOf[js.Any])
+  inline def teardown_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teardown")(x.asInstanceOf[js.Any])
   
   /**
     * Describes a test case.
@@ -1946,8 +1906,7 @@ object Mocha_ {
   @JSGlobal("Mocha.test")
   @js.native
   def test: TestFunction = js.native
-  @scala.inline
-  def test_=(x: TestFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("test")(x.asInstanceOf[js.Any])
+  inline def test_=(x: TestFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("test")(x.asInstanceOf[js.Any])
   
   object utils {
     
@@ -1969,54 +1928,44 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.canonicalize
       */
-    @scala.inline
-    def canonicalize(value: js.Any, stack: js.Array[js.Any], typeHint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def canonicalize(value: js.Any, stack: js.Array[js.Any], typeHint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Strip the function definition from `str`, and re-indent for pre whitespace.
       *
       * @see https://mochajs.org/api/module-utils.html#.clean
       */
-    @scala.inline
-    def clean(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def clean(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Generate an undefined error if `err` is not defined.
       *
       * @see https://mochajs.org/api/module-utils.html#.getError
       */
-    @scala.inline
-    def getError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[Error]
-    @scala.inline
-    def getError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+    inline def getError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[Error]
+    inline def getError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
     
     /**
       * Highlight the given string of `js`.
       */
-    @scala.inline
-    def highlight(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def highlight(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Lookup file names at the given `path`.
       *
       * @see https://mochajs.org/api/Mocha.utils.html#.exports.lookupFiles
       */
-    @scala.inline
-    def lookupFiles(filepath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def lookupFiles(filepath: String, extensions: Unit, recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def lookupFiles(filepath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def lookupFiles(filepath: String, extensions: Unit, recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Compute a slug from the given `str`.
       *
       * @see https://mochajs.org/api/module-utils.html#.slug
       */
-    @scala.inline
-    def slug(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def slug(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * When invoking this function you get a filter function that get the Error.stack as an
@@ -2025,8 +1974,7 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.stackTraceFilter
       */
-    @scala.inline
-    def stackTraceFilter(): js.Function1[/* stack */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTraceFilter")().asInstanceOf[js.Function1[/* stack */ String, String]]
+    inline def stackTraceFilter(): js.Function1[/* stack */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTraceFilter")().asInstanceOf[js.Function1[/* stack */ String, String]]
     
     /**
       * Stringify `value`. Different behavior depending on type of value:
@@ -2038,22 +1986,19 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.stringify
       */
-    @scala.inline
-    def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Takes some variable and asks `Object.prototype.toString()` what it thinks it is.
       */
-    @scala.inline
-    def `type`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def `type`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Generate an undefined error with a message warning the user.
       *
       * @see https://mochajs.org/api/module-utils.html#.undefinedError
       */
-    @scala.inline
-    def undefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[Error]
+    inline def undefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[Error]
   }
   
   /**
@@ -2064,6 +2009,5 @@ object Mocha_ {
   @JSGlobal("Mocha.xit")
   @js.native
   def xit: PendingTestFunction = js.native
-  @scala.inline
-  def xit_=(x: PendingTestFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xit")(x.asInstanceOf[js.Any])
+  inline def xit_=(x: PendingTestFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xit")(x.asInstanceOf[js.Any])
 }

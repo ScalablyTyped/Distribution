@@ -45,34 +45,25 @@ trait SourceControlResourceState extends StObject {
 }
 object SourceControlResourceState {
   
-  @scala.inline
-  def apply(resourceUri: Uri): SourceControlResourceState = {
+  inline def apply(resourceUri: Uri): SourceControlResourceState = {
     val __obj = js.Dynamic.literal(resourceUri = resourceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceControlResourceState]
   }
   
-  @scala.inline
-  implicit class SourceControlResourceStateMutableBuilder[Self <: SourceControlResourceState] (val x: Self) extends AnyVal {
+  extension [Self <: SourceControlResourceState](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
+    inline def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
+    inline def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
     
-    @scala.inline
-    def setDecorations(value: SourceControlResourceDecorations): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
+    inline def setDecorations(value: SourceControlResourceDecorations): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecorationsUndefined: Self = StObject.set(x, "decorations", js.undefined)
+    inline def setDecorationsUndefined: Self = StObject.set(x, "decorations", js.undefined)
     
-    @scala.inline
-    def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
   }
 }

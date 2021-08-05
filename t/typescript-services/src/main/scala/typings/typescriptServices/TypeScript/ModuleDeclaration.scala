@@ -22,8 +22,7 @@ trait ModuleDeclaration
 }
 object ModuleDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -54,28 +53,20 @@ object ModuleDeclaration {
     __obj.asInstanceOf[ModuleDeclaration]
   }
   
-  @scala.inline
-  implicit class ModuleDeclarationMutableBuilder[Self <: ModuleDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleDeclaration](x: Self) {
     
-    @scala.inline
-    def setEndingToken(value: ASTSpan): Self = StObject.set(x, "endingToken", value.asInstanceOf[js.Any])
+    inline def setEndingToken(value: ASTSpan): Self = StObject.set(x, "endingToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setModuleElements(value: ISyntaxList2): Self = StObject.set(x, "moduleElements", value.asInstanceOf[js.Any])
+    inline def setModuleElements(value: ISyntaxList2): Self = StObject.set(x, "moduleElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringLiteral(value: StringLiteral): Self = StObject.set(x, "stringLiteral", value.asInstanceOf[js.Any])
+    inline def setStringLiteral(value: StringLiteral): Self = StObject.set(x, "stringLiteral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (ModuleDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ModuleDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

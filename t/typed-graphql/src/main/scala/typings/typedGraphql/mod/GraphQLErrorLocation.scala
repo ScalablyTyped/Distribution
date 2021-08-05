@@ -12,19 +12,15 @@ trait GraphQLErrorLocation extends StObject {
 }
 object GraphQLErrorLocation {
   
-  @scala.inline
-  def apply(column: Double, line: Double): GraphQLErrorLocation = {
+  inline def apply(column: Double, line: Double): GraphQLErrorLocation = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLErrorLocation]
   }
   
-  @scala.inline
-  implicit class GraphQLErrorLocationMutableBuilder[Self <: GraphQLErrorLocation] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLErrorLocation](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

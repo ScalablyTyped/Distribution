@@ -25,25 +25,19 @@ trait AnimationQueryOptions
 }
 object AnimationQueryOptions {
   
-  @scala.inline
-  def apply(): AnimationQueryOptions = {
+  inline def apply(): AnimationQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationQueryOptions]
   }
   
-  @scala.inline
-  implicit class AnimationQueryOptionsMutableBuilder[Self <: AnimationQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationQueryOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

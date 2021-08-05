@@ -11,19 +11,15 @@ trait IInt32Value extends StObject {
 }
 object IInt32Value {
   
-  @scala.inline
-  def apply(): IInt32Value = {
+  inline def apply(): IInt32Value = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInt32Value]
   }
   
-  @scala.inline
-  implicit class IInt32ValueMutableBuilder[Self <: IInt32Value] (val x: Self) extends AnyVal {
+  extension [Self <: IInt32Value](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait ParametersScimListProvisionedIdentitiesEndpoint extends StObject {
 }
 object ParametersScimListProvisionedIdentitiesEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ScimListProvisionedIdentitiesEndpoint,
     response: OctokitResponse[ScimListProvisionedIdentitiesResponseData] & `16`
   ): ParametersScimListProvisionedIdentitiesEndpoint = {
@@ -24,13 +23,10 @@ object ParametersScimListProvisionedIdentitiesEndpoint {
     __obj.asInstanceOf[ParametersScimListProvisionedIdentitiesEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersScimListProvisionedIdentitiesEndpointMutableBuilder[Self <: ParametersScimListProvisionedIdentitiesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersScimListProvisionedIdentitiesEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ScimListProvisionedIdentitiesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ScimListProvisionedIdentitiesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ScimListProvisionedIdentitiesResponseData] & `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ScimListProvisionedIdentitiesResponseData] & `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -98,8 +98,7 @@ object Module {
     * One such use-case is interacting with ObjC classes provided by a given module.
     */
   /* static member */
-  @scala.inline
-  def ensureInitialized(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureInitialized")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ensureInitialized(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureInitialized")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Looks up the base address of the `name` module. Returns null if the module isn’t loaded.
@@ -107,8 +106,7 @@ object Module {
     * @param name Module name or path.
     */
   /* static member */
-  @scala.inline
-  def findBaseAddress(name: String): typings.fridaGum.NativePointer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findBaseAddress")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer | Null]
+  inline def findBaseAddress(name: String): typings.fridaGum.NativePointer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findBaseAddress")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer | Null]
   
   /**
     * Looks up the absolute address of the export named `exportName` in `moduleName`. If the module isn’t known you may
@@ -120,10 +118,8 @@ object Module {
     * @param exportName Export name to find the address of.
     */
   /* static member */
-  @scala.inline
-  def findExportByName(moduleName: String, exportName: String): typings.fridaGum.NativePointer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer | Null]
-  @scala.inline
-  def findExportByName(moduleName: Null, exportName: String): typings.fridaGum.NativePointer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer | Null]
+  inline def findExportByName(moduleName: String, exportName: String): typings.fridaGum.NativePointer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer | Null]
+  inline def findExportByName(moduleName: Null, exportName: String): typings.fridaGum.NativePointer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer | Null]
   
   /**
     * Looks up the base address of the `name` module. Throws an exception if the module isn’t loaded.
@@ -131,8 +127,7 @@ object Module {
     * @param name Module name or path.
     */
   /* static member */
-  @scala.inline
-  def getBaseAddress(name: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseAddress")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
+  inline def getBaseAddress(name: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseAddress")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Looks up the absolute address of the export named `exportName` in `moduleName`. If the module isn’t known you may
@@ -144,15 +139,12 @@ object Module {
     * @param exportName Export name to find the address of.
     */
   /* static member */
-  @scala.inline
-  def getExportByName(moduleName: String, exportName: String): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("getExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
-  @scala.inline
-  def getExportByName(moduleName: Null, exportName: String): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("getExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
+  inline def getExportByName(moduleName: String, exportName: String): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("getExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
+  inline def getExportByName(moduleName: Null, exportName: String): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("getExportByName")(moduleName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Loads the specified module.
     */
   /* static member */
-  @scala.inline
-  def load(name: String): typings.fridaGum.Module = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Module]
+  inline def load(name: String): typings.fridaGum.Module = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Module]
 }

@@ -29,34 +29,25 @@ trait SchemaListEventsResponse extends StObject {
 }
 object SchemaListEventsResponse {
   
-  @scala.inline
-  def apply(): SchemaListEventsResponse = {
+  inline def apply(): SchemaListEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListEventsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListEventsResponseMutableBuilder[Self <: SchemaListEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListEventsResponse](x: Self) {
     
-    @scala.inline
-    def setErrorEvents(value: js.Array[SchemaErrorEvent]): Self = StObject.set(x, "errorEvents", value.asInstanceOf[js.Any])
+    inline def setErrorEvents(value: js.Array[SchemaErrorEvent]): Self = StObject.set(x, "errorEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorEventsUndefined: Self = StObject.set(x, "errorEvents", js.undefined)
+    inline def setErrorEventsUndefined: Self = StObject.set(x, "errorEvents", js.undefined)
     
-    @scala.inline
-    def setErrorEventsVarargs(value: SchemaErrorEvent*): Self = StObject.set(x, "errorEvents", js.Array(value :_*))
+    inline def setErrorEventsVarargs(value: SchemaErrorEvent*): Self = StObject.set(x, "errorEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTimeRangeBegin(value: String): Self = StObject.set(x, "timeRangeBegin", value.asInstanceOf[js.Any])
+    inline def setTimeRangeBegin(value: String): Self = StObject.set(x, "timeRangeBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeBeginUndefined: Self = StObject.set(x, "timeRangeBegin", js.undefined)
+    inline def setTimeRangeBeginUndefined: Self = StObject.set(x, "timeRangeBegin", js.undefined)
   }
 }

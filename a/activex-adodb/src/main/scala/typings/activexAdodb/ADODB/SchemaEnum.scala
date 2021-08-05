@@ -99,141 +99,95 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaEnum extends StObject
 object SchemaEnum {
   
-  @scala.inline
-  def adSchemaActions: `41` = 41.asInstanceOf[`41`]
+  inline def adSchemaActions: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def adSchemaAsserts: `0` = 0.asInstanceOf[`0`]
+  inline def adSchemaAsserts: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adSchemaCatalogs: `1` = 1.asInstanceOf[`1`]
+  inline def adSchemaCatalogs: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adSchemaCharacterSets: `2` = 2.asInstanceOf[`2`]
+  inline def adSchemaCharacterSets: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adSchemaCheckConstraints: `5` = 5.asInstanceOf[`5`]
+  inline def adSchemaCheckConstraints: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def adSchemaCollations: `3` = 3.asInstanceOf[`3`]
+  inline def adSchemaCollations: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def adSchemaColumnPrivileges: `13` = 13.asInstanceOf[`13`]
+  inline def adSchemaColumnPrivileges: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def adSchemaColumns: `4` = 4.asInstanceOf[`4`]
+  inline def adSchemaColumns: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adSchemaColumnsDomainUsage: `11` = 11.asInstanceOf[`11`]
+  inline def adSchemaColumnsDomainUsage: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def adSchemaCommands: `42` = 42.asInstanceOf[`42`]
+  inline def adSchemaCommands: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def adSchemaConstraintColumnUsage: `6` = 6.asInstanceOf[`6`]
+  inline def adSchemaConstraintColumnUsage: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def adSchemaConstraintTableUsage: `7` = 7.asInstanceOf[`7`]
+  inline def adSchemaConstraintTableUsage: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def adSchemaCubes: `32` = 32.asInstanceOf[`32`]
+  inline def adSchemaCubes: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def adSchemaDBInfoKeywords: `30` = 30.asInstanceOf[`30`]
+  inline def adSchemaDBInfoKeywords: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def adSchemaDBInfoLiterals: `31` = 31.asInstanceOf[`31`]
+  inline def adSchemaDBInfoLiterals: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def adSchemaDimensions: `33` = 33.asInstanceOf[`33`]
+  inline def adSchemaDimensions: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def adSchemaForeignKeys: `27` = 27.asInstanceOf[`27`]
+  inline def adSchemaForeignKeys: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def adSchemaFunctions: `40` = 40.asInstanceOf[`40`]
+  inline def adSchemaFunctions: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def adSchemaHierarchies: `34` = 34.asInstanceOf[`34`]
+  inline def adSchemaHierarchies: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def adSchemaIndexes: `12` = 12.asInstanceOf[`12`]
+  inline def adSchemaIndexes: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def adSchemaKeyColumnUsage: `8` = 8.asInstanceOf[`8`]
+  inline def adSchemaKeyColumnUsage: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def adSchemaLevels: `35` = 35.asInstanceOf[`35`]
+  inline def adSchemaLevels: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def adSchemaMeasures: `36` = 36.asInstanceOf[`36`]
+  inline def adSchemaMeasures: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def adSchemaMembers: `38` = 38.asInstanceOf[`38`]
+  inline def adSchemaMembers: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def adSchemaPrimaryKeys: `28` = 28.asInstanceOf[`28`]
+  inline def adSchemaPrimaryKeys: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def adSchemaProcedureColumns: `29` = 29.asInstanceOf[`29`]
+  inline def adSchemaProcedureColumns: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def adSchemaProcedureParameters: `26` = 26.asInstanceOf[`26`]
+  inline def adSchemaProcedureParameters: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def adSchemaProcedures: `16` = 16.asInstanceOf[`16`]
+  inline def adSchemaProcedures: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def adSchemaProperties: `37` = 37.asInstanceOf[`37`]
+  inline def adSchemaProperties: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def adSchemaProviderSpecific: `-1` = -1.asInstanceOf[`-1`]
+  inline def adSchemaProviderSpecific: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def adSchemaProviderTypes: `22` = 22.asInstanceOf[`22`]
+  inline def adSchemaProviderTypes: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def adSchemaReferentialConstraints: `9` = 9.asInstanceOf[`9`]
+  inline def adSchemaReferentialConstraints: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def adSchemaReferentialContraints: `9` = 9.asInstanceOf[`9`]
+  inline def adSchemaReferentialContraints: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def adSchemaSQLLanguages: `18` = 18.asInstanceOf[`18`]
+  inline def adSchemaSQLLanguages: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def adSchemaSchemata: `17` = 17.asInstanceOf[`17`]
+  inline def adSchemaSchemata: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def adSchemaSets: `43` = 43.asInstanceOf[`43`]
+  inline def adSchemaSets: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def adSchemaStatistics: `19` = 19.asInstanceOf[`19`]
+  inline def adSchemaStatistics: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def adSchemaTableConstraints: `10` = 10.asInstanceOf[`10`]
+  inline def adSchemaTableConstraints: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def adSchemaTablePrivileges: `14` = 14.asInstanceOf[`14`]
+  inline def adSchemaTablePrivileges: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def adSchemaTables: `20` = 20.asInstanceOf[`20`]
+  inline def adSchemaTables: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def adSchemaTranslations: `21` = 21.asInstanceOf[`21`]
+  inline def adSchemaTranslations: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def adSchemaTrustees: `39` = 39.asInstanceOf[`39`]
+  inline def adSchemaTrustees: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def adSchemaUsagePrivileges: `15` = 15.asInstanceOf[`15`]
+  inline def adSchemaUsagePrivileges: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def adSchemaViewColumnUsage: `24` = 24.asInstanceOf[`24`]
+  inline def adSchemaViewColumnUsage: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def adSchemaViewTableUsage: `25` = 25.asInstanceOf[`25`]
+  inline def adSchemaViewTableUsage: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def adSchemaViews: `23` = 23.asInstanceOf[`23`]
+  inline def adSchemaViews: `23` = 23.asInstanceOf[`23`]
 }

@@ -38,8 +38,7 @@ trait XScriptTypeDetector
 }
 object XScriptTypeDetector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     beginOfCTLScriptType: (String, Double) => Double,
     beginOfScriptDirection: (String, Double, Double) => Double,
@@ -54,25 +53,18 @@ object XScriptTypeDetector {
     __obj.asInstanceOf[XScriptTypeDetector]
   }
   
-  @scala.inline
-  implicit class XScriptTypeDetectorMutableBuilder[Self <: XScriptTypeDetector] (val x: Self) extends AnyVal {
+  extension [Self <: XScriptTypeDetector](x: Self) {
     
-    @scala.inline
-    def setBeginOfCTLScriptType(value: (String, Double) => Double): Self = StObject.set(x, "beginOfCTLScriptType", js.Any.fromFunction2(value))
+    inline def setBeginOfCTLScriptType(value: (String, Double) => Double): Self = StObject.set(x, "beginOfCTLScriptType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeginOfScriptDirection(value: (String, Double, Double) => Double): Self = StObject.set(x, "beginOfScriptDirection", js.Any.fromFunction3(value))
+    inline def setBeginOfScriptDirection(value: (String, Double, Double) => Double): Self = StObject.set(x, "beginOfScriptDirection", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEndOfCTLScriptType(value: (String, Double) => Double): Self = StObject.set(x, "endOfCTLScriptType", js.Any.fromFunction2(value))
+    inline def setEndOfCTLScriptType(value: (String, Double) => Double): Self = StObject.set(x, "endOfCTLScriptType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndOfScriptDirection(value: (String, Double, Double) => Double): Self = StObject.set(x, "endOfScriptDirection", js.Any.fromFunction3(value))
+    inline def setEndOfScriptDirection(value: (String, Double, Double) => Double): Self = StObject.set(x, "endOfScriptDirection", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetCTLScriptType(value: (String, Double) => Double): Self = StObject.set(x, "getCTLScriptType", js.Any.fromFunction2(value))
+    inline def setGetCTLScriptType(value: (String, Double) => Double): Self = StObject.set(x, "getCTLScriptType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetScriptDirection(value: (String, Double, Double) => Double): Self = StObject.set(x, "getScriptDirection", js.Any.fromFunction3(value))
+    inline def setGetScriptDirection(value: (String, Double, Double) => Double): Self = StObject.set(x, "getScriptDirection", js.Any.fromFunction3(value))
   }
 }

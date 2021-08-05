@@ -45,29 +45,22 @@ object certificateProvider {
   }
   object CertificateInfo {
     
-    @scala.inline
-    def apply(): CertificateInfo = {
+    inline def apply(): CertificateInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateInfo]
     }
     
-    @scala.inline
-    implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateInfo](x: Self) {
       
-      @scala.inline
-      def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+      inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
       
-      @scala.inline
-      def setSupportedHashes(value: js.Array[Hash]): Self = StObject.set(x, "supportedHashes", value.asInstanceOf[js.Any])
+      inline def setSupportedHashes(value: js.Array[Hash]): Self = StObject.set(x, "supportedHashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedHashesUndefined: Self = StObject.set(x, "supportedHashes", js.undefined)
+      inline def setSupportedHashesUndefined: Self = StObject.set(x, "supportedHashes", js.undefined)
       
-      @scala.inline
-      def setSupportedHashesVarargs(value: Hash*): Self = StObject.set(x, "supportedHashes", js.Array(value :_*))
+      inline def setSupportedHashesVarargs(value: Hash*): Self = StObject.set(x, "supportedHashes", js.Array(value :_*))
     }
   }
   
@@ -82,20 +75,15 @@ object certificateProvider {
   trait Hash extends StObject
   object Hash {
     
-    @scala.inline
-    def MD5_SHA1: typings.chromeApps.chromeAppsStrings.MD5_SHA1 = "MD5_SHA1".asInstanceOf[typings.chromeApps.chromeAppsStrings.MD5_SHA1]
+    inline def MD5_SHA1: typings.chromeApps.chromeAppsStrings.MD5_SHA1 = "MD5_SHA1".asInstanceOf[typings.chromeApps.chromeAppsStrings.MD5_SHA1]
     
-    @scala.inline
-    def SHA1: typings.chromeApps.chromeAppsStrings.SHA1 = "SHA1".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA1]
+    inline def SHA1: typings.chromeApps.chromeAppsStrings.SHA1 = "SHA1".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA1]
     
-    @scala.inline
-    def SHA256: typings.chromeApps.chromeAppsStrings.SHA256 = "SHA256".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA256]
+    inline def SHA256: typings.chromeApps.chromeAppsStrings.SHA256 = "SHA256".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA256]
     
-    @scala.inline
-    def SHA384: typings.chromeApps.chromeAppsStrings.SHA384 = "SHA384".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA384]
+    inline def SHA384: typings.chromeApps.chromeAppsStrings.SHA384 = "SHA384".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA384]
     
-    @scala.inline
-    def SHA512: typings.chromeApps.chromeAppsStrings.SHA512 = "SHA512".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA512]
+    inline def SHA512: typings.chromeApps.chromeAppsStrings.SHA512 = "SHA512".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA512]
   }
   
   trait PinResponseDetails extends StObject {
@@ -104,20 +92,16 @@ object certificateProvider {
   }
   object PinResponseDetails {
     
-    @scala.inline
-    def apply(): PinResponseDetails = {
+    inline def apply(): PinResponseDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PinResponseDetails]
     }
     
-    @scala.inline
-    implicit class PinResponseDetailsMutableBuilder[Self <: PinResponseDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PinResponseDetails](x: Self) {
       
-      @scala.inline
-      def setUserInput(value: String): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+      inline def setUserInput(value: String): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserInputUndefined: Self = StObject.set(x, "userInput", js.undefined)
+      inline def setUserInputUndefined: Self = StObject.set(x, "userInput", js.undefined)
     }
   }
   
@@ -170,23 +154,18 @@ object certificateProvider {
   }
   object RequestPinDetails {
     
-    @scala.inline
-    def apply(signRequestId: Double): RequestPinDetails = {
+    inline def apply(signRequestId: Double): RequestPinDetails = {
       val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestPinDetails]
     }
     
-    @scala.inline
-    implicit class RequestPinDetailsMutableBuilder[Self <: RequestPinDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RequestPinDetails](x: Self) {
       
-      @scala.inline
-      def setAttemptsLeft(value: Double): Self = StObject.set(x, "attemptsLeft", value.asInstanceOf[js.Any])
+      inline def setAttemptsLeft(value: Double): Self = StObject.set(x, "attemptsLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsLeftUndefined: Self = StObject.set(x, "attemptsLeft", js.undefined)
+      inline def setAttemptsLeftUndefined: Self = StObject.set(x, "attemptsLeft", js.undefined)
       
-      @scala.inline
-      def setErrorType(
+      inline def setErrorType(
         value: ToStringLiteral[
               INVALIDPIN, 
               /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
@@ -197,11 +176,9 @@ object certificateProvider {
             ]
       ): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
+      inline def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
       
-      @scala.inline
-      def setRequestType(
+      inline def setRequestType(
         value: ToStringLiteral[
               PIN, 
               /* keyof chrome-apps.anon.PIN */ typings.chromeApps.chromeAppsStrings.PIN | PUK, 
@@ -212,11 +189,9 @@ object certificateProvider {
             ]
       ): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
+      inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      @scala.inline
-      def setSignRequestId(value: Double): Self = StObject.set(x, "signRequestId", value.asInstanceOf[js.Any])
+      inline def setSignRequestId(value: Double): Self = StObject.set(x, "signRequestId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,26 +217,20 @@ object certificateProvider {
   }
   object SignRequest {
     
-    @scala.inline
-    def apply(certificate: ArrayBuffer, digest: ArrayBuffer, hash: Hash, signRequestId: integer): SignRequest = {
+    inline def apply(certificate: ArrayBuffer, digest: ArrayBuffer, hash: Hash, signRequestId: integer): SignRequest = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], signRequestId = signRequestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignRequest]
     }
     
-    @scala.inline
-    implicit class SignRequestMutableBuilder[Self <: SignRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SignRequest](x: Self) {
       
-      @scala.inline
-      def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigest(value: ArrayBuffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: ArrayBuffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignRequestId(value: integer): Self = StObject.set(x, "signRequestId", value.asInstanceOf[js.Any])
+      inline def setSignRequestId(value: integer): Self = StObject.set(x, "signRequestId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -291,17 +260,14 @@ object certificateProvider {
   }
   object StopRequestPinDetails {
     
-    @scala.inline
-    def apply(signRequestId: Double): StopRequestPinDetails = {
+    inline def apply(signRequestId: Double): StopRequestPinDetails = {
       val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[StopRequestPinDetails]
     }
     
-    @scala.inline
-    implicit class StopRequestPinDetailsMutableBuilder[Self <: StopRequestPinDetails] (val x: Self) extends AnyVal {
+    extension [Self <: StopRequestPinDetails](x: Self) {
       
-      @scala.inline
-      def setErrorType(
+      inline def setErrorType(
         value: ToStringLiteral[
               INVALIDPIN, 
               /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
@@ -312,11 +278,9 @@ object certificateProvider {
             ]
       ): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
+      inline def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
       
-      @scala.inline
-      def setSignRequestId(value: Double): Self = StObject.set(x, "signRequestId", value.asInstanceOf[js.Any])
+      inline def setSignRequestId(value: Double): Self = StObject.set(x, "signRequestId", value.asInstanceOf[js.Any])
     }
   }
 }

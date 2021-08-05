@@ -15,8 +15,7 @@ trait ParametersAppsListAccountsForPlanStubbedEndpoint extends StObject {
 }
 object ParametersAppsListAccountsForPlanStubbedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsListAccountsForPlanStubbedEndpoint,
     response: OctokitResponse[AppsListAccountsForPlanStubbedResponseData]
   ): ParametersAppsListAccountsForPlanStubbedEndpoint = {
@@ -24,13 +23,10 @@ object ParametersAppsListAccountsForPlanStubbedEndpoint {
     __obj.asInstanceOf[ParametersAppsListAccountsForPlanStubbedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsListAccountsForPlanStubbedEndpointMutableBuilder[Self <: ParametersAppsListAccountsForPlanStubbedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsListAccountsForPlanStubbedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsListAccountsForPlanStubbedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsListAccountsForPlanStubbedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsListAccountsForPlanStubbedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsListAccountsForPlanStubbedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

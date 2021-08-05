@@ -13,19 +13,15 @@ trait MetricCollectionType extends StObject {
 }
 object MetricCollectionType {
   
-  @scala.inline
-  def apply(): MetricCollectionType = {
+  inline def apply(): MetricCollectionType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricCollectionType]
   }
   
-  @scala.inline
-  implicit class MetricCollectionTypeMutableBuilder[Self <: MetricCollectionType] (val x: Self) extends AnyVal {
+  extension [Self <: MetricCollectionType](x: Self) {
     
-    @scala.inline
-    def setMetric(value: XmlStringMaxLen255): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: XmlStringMaxLen255): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "Metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "Metric", js.undefined)
   }
 }

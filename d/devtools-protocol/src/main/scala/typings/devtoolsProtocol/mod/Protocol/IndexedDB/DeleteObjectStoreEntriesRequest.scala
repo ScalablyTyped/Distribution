@@ -19,25 +19,19 @@ trait DeleteObjectStoreEntriesRequest extends StObject {
 }
 object DeleteObjectStoreEntriesRequest {
   
-  @scala.inline
-  def apply(databaseName: String, keyRange: KeyRange, objectStoreName: String, securityOrigin: String): DeleteObjectStoreEntriesRequest = {
+  inline def apply(databaseName: String, keyRange: KeyRange, objectStoreName: String, securityOrigin: String): DeleteObjectStoreEntriesRequest = {
     val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], keyRange = keyRange.asInstanceOf[js.Any], objectStoreName = objectStoreName.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectStoreEntriesRequest]
   }
   
-  @scala.inline
-  implicit class DeleteObjectStoreEntriesRequestMutableBuilder[Self <: DeleteObjectStoreEntriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteObjectStoreEntriesRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRange(value: KeyRange): Self = StObject.set(x, "keyRange", value.asInstanceOf[js.Any])
+    inline def setKeyRange(value: KeyRange): Self = StObject.set(x, "keyRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectStoreName(value: String): Self = StObject.set(x, "objectStoreName", value.asInstanceOf[js.Any])
+    inline def setObjectStoreName(value: String): Self = StObject.set(x, "objectStoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ListStreamsRequest extends StObject {
 }
 object ListStreamsRequest {
   
-  @scala.inline
-  def apply(): ListStreamsRequest = {
+  inline def apply(): ListStreamsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStreamsRequest]
   }
   
-  @scala.inline
-  implicit class ListStreamsRequestMutableBuilder[Self <: ListStreamsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListStreamsRequest](x: Self) {
     
-    @scala.inline
-    def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
+    inline def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingOrderUndefined: Self = StObject.set(x, "ascendingOrder", js.undefined)
+    inline def setAscendingOrderUndefined: Self = StObject.set(x, "ascendingOrder", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

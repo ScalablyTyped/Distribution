@@ -23,8 +23,7 @@ trait InteractiveLockingLockedException
 }
 object InteractiveLockingLockedException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     Message: String,
@@ -35,10 +34,8 @@ object InteractiveLockingLockedException {
     __obj.asInstanceOf[InteractiveLockingLockedException]
   }
   
-  @scala.inline
-  implicit class InteractiveLockingLockedExceptionMutableBuilder[Self <: InteractiveLockingLockedException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveLockingLockedException](x: Self) {
     
-    @scala.inline
-    def setSelfOwned(value: Boolean): Self = StObject.set(x, "SelfOwned", value.asInstanceOf[js.Any])
+    inline def setSelfOwned(value: Boolean): Self = StObject.set(x, "SelfOwned", value.asInstanceOf[js.Any])
   }
 }

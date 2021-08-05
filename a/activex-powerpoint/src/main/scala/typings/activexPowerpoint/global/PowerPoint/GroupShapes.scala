@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.GroupShapes")
 @js.native
-class GroupShapes protected ()
+/* private */ class GroupShapes ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.GroupShapes {
   
@@ -25,7 +25,7 @@ class GroupShapes protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.GroupShapes_typekey")
   var PowerPointDotGroupShapes_typekey: typings.activexPowerpoint.PowerPoint.GroupShapes = js.native
   

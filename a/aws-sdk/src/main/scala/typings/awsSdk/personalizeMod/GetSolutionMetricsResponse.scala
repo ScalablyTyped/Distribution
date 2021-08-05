@@ -18,25 +18,19 @@ trait GetSolutionMetricsResponse extends StObject {
 }
 object GetSolutionMetricsResponse {
   
-  @scala.inline
-  def apply(): GetSolutionMetricsResponse = {
+  inline def apply(): GetSolutionMetricsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSolutionMetricsResponse]
   }
   
-  @scala.inline
-  implicit class GetSolutionMetricsResponseMutableBuilder[Self <: GetSolutionMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSolutionMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
+    inline def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
   }
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndexMinPQ[T] extends StObject {
   
-  var N: js.Any
+  /* private */ var N: js.Any
   
-  var compare: js.Any
+  /* private */ var compare: js.Any
   
   def containsIndex(index: Double): Boolean
   
@@ -20,15 +20,15 @@ trait IndexMinPQ[T] extends StObject {
   
   def isEmpty(): Boolean
   
-  var keys: js.Any
+  /* private */ var keys: js.Any
   
   def min(): Double
   
   def minKey(): T | Null
   
-  var pq: js.Any
+  /* private */ var pq: js.Any
   
-  var qp: js.Any
+  /* private */ var qp: js.Any
   
   def sink(k: Double): Unit
   
@@ -38,8 +38,7 @@ trait IndexMinPQ[T] extends StObject {
 }
 object IndexMinPQ {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     N: js.Any,
     compare: js.Any,
     containsIndex: Double => Boolean,
@@ -60,52 +59,36 @@ object IndexMinPQ {
     __obj.asInstanceOf[IndexMinPQ[T]]
   }
   
-  @scala.inline
-  implicit class IndexMinPQMutableBuilder[Self <: IndexMinPQ[?], T] (val x: Self & IndexMinPQ[T]) extends AnyVal {
+  extension [Self <: IndexMinPQ[?], T](x: Self & IndexMinPQ[T]) {
     
-    @scala.inline
-    def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsIndex(value: Double => Boolean): Self = StObject.set(x, "containsIndex", js.Any.fromFunction1(value))
+    inline def setContainsIndex(value: Double => Boolean): Self = StObject.set(x, "containsIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecreaseKey(value: (Double, T) => Unit): Self = StObject.set(x, "decreaseKey", js.Any.fromFunction2(value))
+    inline def setDecreaseKey(value: (Double, T) => Unit): Self = StObject.set(x, "decreaseKey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDelMin(value: () => Double): Self = StObject.set(x, "delMin", js.Any.fromFunction0(value))
+    inline def setDelMin(value: () => Double): Self = StObject.set(x, "delMin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsert(value: (Double, T) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Double, T) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: () => Double): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
+    inline def setMin(value: () => Double): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinKey(value: () => T | Null): Self = StObject.set(x, "minKey", js.Any.fromFunction0(value))
+    inline def setMinKey(value: () => T | Null): Self = StObject.set(x, "minKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPq(value: js.Any): Self = StObject.set(x, "pq", value.asInstanceOf[js.Any])
+    inline def setPq(value: js.Any): Self = StObject.set(x, "pq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQp(value: js.Any): Self = StObject.set(x, "qp", value.asInstanceOf[js.Any])
+    inline def setQp(value: js.Any): Self = StObject.set(x, "qp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSink(value: Double => Unit): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
+    inline def setSink(value: Double => Unit): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+    inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSwim(value: Double => Unit): Self = StObject.set(x, "swim", js.Any.fromFunction1(value))
+    inline def setSwim(value: Double => Unit): Self = StObject.set(x, "swim", js.Any.fromFunction1(value))
   }
 }

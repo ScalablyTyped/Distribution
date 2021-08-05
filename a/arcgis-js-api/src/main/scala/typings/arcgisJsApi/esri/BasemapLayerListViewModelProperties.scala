@@ -36,37 +36,27 @@ trait BasemapLayerListViewModelProperties extends StObject {
 }
 object BasemapLayerListViewModelProperties {
   
-  @scala.inline
-  def apply(): BasemapLayerListViewModelProperties = {
+  inline def apply(): BasemapLayerListViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasemapLayerListViewModelProperties]
   }
   
-  @scala.inline
-  implicit class BasemapLayerListViewModelPropertiesMutableBuilder[Self <: BasemapLayerListViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapLayerListViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setBaseListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "baseListItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setBaseListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "baseListItemCreatedFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBaseListItemCreatedFunctionUndefined: Self = StObject.set(x, "baseListItemCreatedFunction", js.undefined)
+    inline def setBaseListItemCreatedFunctionUndefined: Self = StObject.set(x, "baseListItemCreatedFunction", js.undefined)
     
-    @scala.inline
-    def setBasemapTitle(value: String): Self = StObject.set(x, "basemapTitle", value.asInstanceOf[js.Any])
+    inline def setBasemapTitle(value: String): Self = StObject.set(x, "basemapTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTitleUndefined: Self = StObject.set(x, "basemapTitle", js.undefined)
+    inline def setBasemapTitleUndefined: Self = StObject.set(x, "basemapTitle", js.undefined)
     
-    @scala.inline
-    def setReferenceListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "referenceListItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setReferenceListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "referenceListItemCreatedFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReferenceListItemCreatedFunctionUndefined: Self = StObject.set(x, "referenceListItemCreatedFunction", js.undefined)
+    inline def setReferenceListItemCreatedFunctionUndefined: Self = StObject.set(x, "referenceListItemCreatedFunction", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -253,8 +253,7 @@ object mongoBinaryDownloadUrlMod {
   }
   object MongoBinaryDownloadUrl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arch: String,
       getArchiveName: () => js.Promise[String],
       getArchiveNameLinux: () => js.Promise[String],
@@ -279,71 +278,49 @@ object mongoBinaryDownloadUrlMod {
       __obj.asInstanceOf[MongoBinaryDownloadUrl]
     }
     
-    @scala.inline
-    implicit class MongoBinaryDownloadUrlMutableBuilder[Self <: MongoBinaryDownloadUrl] (val x: Self) extends AnyVal {
+    extension [Self <: MongoBinaryDownloadUrl](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetArchiveName(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveName", js.Any.fromFunction0(value))
+      inline def setGetArchiveName(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetArchiveNameLinux(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveNameLinux", js.Any.fromFunction0(value))
+      inline def setGetArchiveNameLinux(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveNameLinux", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetArchiveNameOsx(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveNameOsx", js.Any.fromFunction0(value))
+      inline def setGetArchiveNameOsx(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveNameOsx", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetArchiveNameWin(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveNameWin", js.Any.fromFunction0(value))
+      inline def setGetArchiveNameWin(value: () => js.Promise[String]): Self = StObject.set(x, "getArchiveNameWin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDebianVersionString(value: LinuxOS => String): Self = StObject.set(x, "getDebianVersionString", js.Any.fromFunction1(value))
+      inline def setGetDebianVersionString(value: LinuxOS => String): Self = StObject.set(x, "getDebianVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDownloadUrl(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadUrl", js.Any.fromFunction0(value))
+      inline def setGetDownloadUrl(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElementaryOSVersionString(value: LinuxOS => String): Self = StObject.set(x, "getElementaryOSVersionString", js.Any.fromFunction1(value))
+      inline def setGetElementaryOSVersionString(value: LinuxOS => String): Self = StObject.set(x, "getElementaryOSVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFedoraVersionString(value: LinuxOS => String): Self = StObject.set(x, "getFedoraVersionString", js.Any.fromFunction1(value))
+      inline def setGetFedoraVersionString(value: LinuxOS => String): Self = StObject.set(x, "getFedoraVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLegacyVersionString(value: AnyOS => String): Self = StObject.set(x, "getLegacyVersionString", js.Any.fromFunction1(value))
+      inline def setGetLegacyVersionString(value: AnyOS => String): Self = StObject.set(x, "getLegacyVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLinuxOSVersionString(value: LinuxOS => String): Self = StObject.set(x, "getLinuxOSVersionString", js.Any.fromFunction1(value))
+      inline def setGetLinuxOSVersionString(value: LinuxOS => String): Self = StObject.set(x, "getLinuxOSVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMintVersionString(value: LinuxOS => String): Self = StObject.set(x, "getMintVersionString", js.Any.fromFunction1(value))
+      inline def setGetMintVersionString(value: LinuxOS => String): Self = StObject.set(x, "getMintVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRhelVersionString(value: LinuxOS => String): Self = StObject.set(x, "getRhelVersionString", js.Any.fromFunction1(value))
+      inline def setGetRhelVersionString(value: LinuxOS => String): Self = StObject.set(x, "getRhelVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSuseVersionString(value: LinuxOS => String): Self = StObject.set(x, "getSuseVersionString", js.Any.fromFunction1(value))
+      inline def setGetSuseVersionString(value: LinuxOS => String): Self = StObject.set(x, "getSuseVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUbuntuVersionString(value: LinuxOS => String): Self = StObject.set(x, "getUbuntuVersionString", js.Any.fromFunction1(value))
+      inline def setGetUbuntuVersionString(value: LinuxOS => String): Self = StObject.set(x, "getUbuntuVersionString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOs(value: AnyOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: AnyOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+      inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateArch(value: (String, String) => String): Self = StObject.set(x, "translateArch", js.Any.fromFunction2(value))
+      inline def setTranslateArch(value: (String, String) => String): Self = StObject.set(x, "translateArch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTranslatePlatform(value: String => String): Self = StObject.set(x, "translatePlatform", js.Any.fromFunction1(value))
+      inline def setTranslatePlatform(value: String => String): Self = StObject.set(x, "translatePlatform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -359,29 +336,22 @@ object mongoBinaryDownloadUrlMod {
   }
   object MongoBinaryDownloadUrlOpts {
     
-    @scala.inline
-    def apply(arch: String, platform: String, version: String): MongoBinaryDownloadUrlOpts = {
+    inline def apply(arch: String, platform: String, version: String): MongoBinaryDownloadUrlOpts = {
       val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[MongoBinaryDownloadUrlOpts]
     }
     
-    @scala.inline
-    implicit class MongoBinaryDownloadUrlOptsMutableBuilder[Self <: MongoBinaryDownloadUrlOpts] (val x: Self) extends AnyVal {
+    extension [Self <: MongoBinaryDownloadUrlOpts](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: AnyOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: AnyOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+      inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

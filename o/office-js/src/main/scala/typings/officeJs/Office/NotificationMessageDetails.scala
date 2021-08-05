@@ -59,38 +59,28 @@ trait NotificationMessageDetails extends StObject {
 }
 object NotificationMessageDetails {
   
-  @scala.inline
-  def apply(message: String, `type`: ItemNotificationMessageType | String): NotificationMessageDetails = {
+  inline def apply(message: String, `type`: ItemNotificationMessageType | String): NotificationMessageDetails = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessageDetails]
   }
   
-  @scala.inline
-  implicit class NotificationMessageDetailsMutableBuilder[Self <: NotificationMessageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationMessageDetails](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
-    @scala.inline
-    def setType(value: ItemNotificationMessageType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ItemNotificationMessageType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait GeometricShapeData extends StObject {
 }
 object GeometricShapeData {
   
-  @scala.inline
-  def apply(): GeometricShapeData = {
+  inline def apply(): GeometricShapeData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeometricShapeData]
   }
   
-  @scala.inline
-  implicit class GeometricShapeDataMutableBuilder[Self <: GeometricShapeData] (val x: Self) extends AnyVal {
+  extension [Self <: GeometricShapeData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

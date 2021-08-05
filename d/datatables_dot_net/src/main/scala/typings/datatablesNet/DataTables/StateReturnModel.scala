@@ -20,8 +20,7 @@ trait StateReturnModel extends StObject {
 }
 object StateReturnModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columns: js.Array[StateReturnModelColumns],
     length: Double,
     order: js.Array[js.Array[String | Double]],
@@ -33,31 +32,22 @@ object StateReturnModel {
     __obj.asInstanceOf[StateReturnModel]
   }
   
-  @scala.inline
-  implicit class StateReturnModelMutableBuilder[Self <: StateReturnModel] (val x: Self) extends AnyVal {
+  extension [Self <: StateReturnModel](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[StateReturnModelColumns]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[StateReturnModelColumns]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: StateReturnModelColumns*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: StateReturnModelColumns*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: js.Array[js.Array[String | Double]]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: js.Array[js.Array[String | Double]]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderVarargs(value: (js.Array[String | Double])*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: (js.Array[String | Double])*): Self = StObject.set(x, "order", js.Array(value :_*))
     
-    @scala.inline
-    def setSearch(value: SearchSettings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: SearchSettings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

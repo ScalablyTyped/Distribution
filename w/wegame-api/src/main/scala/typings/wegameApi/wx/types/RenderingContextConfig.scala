@@ -23,31 +23,23 @@ trait RenderingContextConfig extends StObject {
 }
 object RenderingContextConfig {
   
-  @scala.inline
-  def apply(): RenderingContextConfig = {
+  inline def apply(): RenderingContextConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderingContextConfig]
   }
   
-  @scala.inline
-  implicit class RenderingContextConfigMutableBuilder[Self <: RenderingContextConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RenderingContextConfig](x: Self) {
     
-    @scala.inline
-    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntialiasSamples(value: Double): Self = StObject.set(x, "antialiasSamples", value.asInstanceOf[js.Any])
+    inline def setAntialiasSamples(value: Double): Self = StObject.set(x, "antialiasSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntialiasSamplesUndefined: Self = StObject.set(x, "antialiasSamples", js.undefined)
+    inline def setAntialiasSamplesUndefined: Self = StObject.set(x, "antialiasSamples", js.undefined)
     
-    @scala.inline
-    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
-    @scala.inline
-    def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
+    inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
   }
 }

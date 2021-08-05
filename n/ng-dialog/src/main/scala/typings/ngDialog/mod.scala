@@ -42,20 +42,16 @@ object mod {
       }
       object IDialogClosePromise {
         
-        @scala.inline
-        def apply(id: String, value: js.Any): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise = {
+        inline def apply(id: String, value: js.Any): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise]
         }
         
-        @scala.inline
-        implicit class IDialogClosePromiseMutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise](x: Self) {
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         }
       }
       
@@ -83,20 +79,16 @@ object mod {
       }
       object IDialogOpenConfirmOptions {
         
-        @scala.inline
-        def apply(template: String): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions = {
+        inline def apply(template: String): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions = {
           val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions]
         }
         
-        @scala.inline
-        implicit class IDialogOpenConfirmOptionsMutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions](x: Self) {
           
-          @scala.inline
-          def setScope(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogConfirmScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+          inline def setScope(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogConfirmScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+          inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
         }
       }
       
@@ -135,59 +127,42 @@ object mod {
       }
       object IDialogOpenOptions {
         
-        @scala.inline
-        def apply(template: String): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions = {
+        inline def apply(template: String): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions = {
           val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions]
         }
         
-        @scala.inline
-        implicit class IDialogOpenOptionsMutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions](x: Self) {
           
-          @scala.inline
-          def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
+          inline def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
+          inline def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
           
-          @scala.inline
-          def setController(value: String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+          inline def setController(value: String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+          inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+          inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
           
-          @scala.inline
-          def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+          inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
           
-          @scala.inline
-          def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
+          inline def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
           
-          @scala.inline
-          def setData(value: String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+          inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
           
-          @scala.inline
-          def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+          inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
           
-          @scala.inline
-          def setResolve(value: StringDictionary[String | Function]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+          inline def setResolve(value: StringDictionary[String | Function]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+          inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
           
-          @scala.inline
-          def setScope(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+          inline def setScope(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+          inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
           
-          @scala.inline
-          def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+          inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         }
       }
       
@@ -340,152 +315,104 @@ object mod {
       }
       object IDialogOptions {
         
-        @scala.inline
-        def apply(): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions = {
+        inline def apply(): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions]
         }
         
-        @scala.inline
-        implicit class IDialogOptionsMutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions](x: Self) {
           
-          @scala.inline
-          def setAppendClassName(value: String): Self = StObject.set(x, "appendClassName", value.asInstanceOf[js.Any])
+          inline def setAppendClassName(value: String): Self = StObject.set(x, "appendClassName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAppendClassNameUndefined: Self = StObject.set(x, "appendClassName", js.undefined)
+          inline def setAppendClassNameUndefined: Self = StObject.set(x, "appendClassName", js.undefined)
           
-          @scala.inline
-          def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+          inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+          inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
           
-          @scala.inline
-          def setAriaAuto(value: Boolean): Self = StObject.set(x, "ariaAuto", value.asInstanceOf[js.Any])
+          inline def setAriaAuto(value: Boolean): Self = StObject.set(x, "ariaAuto", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAriaAutoUndefined: Self = StObject.set(x, "ariaAuto", js.undefined)
+          inline def setAriaAutoUndefined: Self = StObject.set(x, "ariaAuto", js.undefined)
           
-          @scala.inline
-          def setAriaDescribedById(value: String): Self = StObject.set(x, "ariaDescribedById", value.asInstanceOf[js.Any])
+          inline def setAriaDescribedById(value: String): Self = StObject.set(x, "ariaDescribedById", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAriaDescribedByIdUndefined: Self = StObject.set(x, "ariaDescribedById", js.undefined)
+          inline def setAriaDescribedByIdUndefined: Self = StObject.set(x, "ariaDescribedById", js.undefined)
           
-          @scala.inline
-          def setAriaDescribedBySelector(value: String): Self = StObject.set(x, "ariaDescribedBySelector", value.asInstanceOf[js.Any])
+          inline def setAriaDescribedBySelector(value: String): Self = StObject.set(x, "ariaDescribedBySelector", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAriaDescribedBySelectorUndefined: Self = StObject.set(x, "ariaDescribedBySelector", js.undefined)
+          inline def setAriaDescribedBySelectorUndefined: Self = StObject.set(x, "ariaDescribedBySelector", js.undefined)
           
-          @scala.inline
-          def setAriaLabelledById(value: String): Self = StObject.set(x, "ariaLabelledById", value.asInstanceOf[js.Any])
+          inline def setAriaLabelledById(value: String): Self = StObject.set(x, "ariaLabelledById", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAriaLabelledByIdUndefined: Self = StObject.set(x, "ariaLabelledById", js.undefined)
+          inline def setAriaLabelledByIdUndefined: Self = StObject.set(x, "ariaLabelledById", js.undefined)
           
-          @scala.inline
-          def setAriaLabelledBySelector(value: String): Self = StObject.set(x, "ariaLabelledBySelector", value.asInstanceOf[js.Any])
+          inline def setAriaLabelledBySelector(value: String): Self = StObject.set(x, "ariaLabelledBySelector", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAriaLabelledBySelectorUndefined: Self = StObject.set(x, "ariaLabelledBySelector", js.undefined)
+          inline def setAriaLabelledBySelectorUndefined: Self = StObject.set(x, "ariaLabelledBySelector", js.undefined)
           
-          @scala.inline
-          def setAriaRole(value: String): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
+          inline def setAriaRole(value: String): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
+          inline def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
           
-          @scala.inline
-          def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+          inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+          inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
           
-          @scala.inline
-          def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+          inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+          inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
           
-          @scala.inline
-          def setCloseByDocument(value: Boolean): Self = StObject.set(x, "closeByDocument", value.asInstanceOf[js.Any])
+          inline def setCloseByDocument(value: Boolean): Self = StObject.set(x, "closeByDocument", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCloseByDocumentUndefined: Self = StObject.set(x, "closeByDocument", js.undefined)
+          inline def setCloseByDocumentUndefined: Self = StObject.set(x, "closeByDocument", js.undefined)
           
-          @scala.inline
-          def setCloseByEscape(value: Boolean): Self = StObject.set(x, "closeByEscape", value.asInstanceOf[js.Any])
+          inline def setCloseByEscape(value: Boolean): Self = StObject.set(x, "closeByEscape", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCloseByEscapeUndefined: Self = StObject.set(x, "closeByEscape", js.undefined)
+          inline def setCloseByEscapeUndefined: Self = StObject.set(x, "closeByEscape", js.undefined)
           
-          @scala.inline
-          def setCloseByNavigation(value: Boolean): Self = StObject.set(x, "closeByNavigation", value.asInstanceOf[js.Any])
+          inline def setCloseByNavigation(value: Boolean): Self = StObject.set(x, "closeByNavigation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCloseByNavigationUndefined: Self = StObject.set(x, "closeByNavigation", js.undefined)
+          inline def setCloseByNavigationUndefined: Self = StObject.set(x, "closeByNavigation", js.undefined)
           
-          @scala.inline
-          def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
+          inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
+          inline def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
           
-          @scala.inline
-          def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+          inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
           
-          @scala.inline
-          def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+          inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+          inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
           
-          @scala.inline
-          def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+          inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+          inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
           
-          @scala.inline
-          def setPreCloseCallback(value: String | Function): Self = StObject.set(x, "preCloseCallback", value.asInstanceOf[js.Any])
+          inline def setPreCloseCallback(value: String | Function): Self = StObject.set(x, "preCloseCallback", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreCloseCallbackUndefined: Self = StObject.set(x, "preCloseCallback", js.undefined)
+          inline def setPreCloseCallbackUndefined: Self = StObject.set(x, "preCloseCallback", js.undefined)
           
-          @scala.inline
-          def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
+          inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
+          inline def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
           
-          @scala.inline
-          def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
+          inline def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
+          inline def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
           
-          @scala.inline
-          def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
+          inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
+          inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
           
-          @scala.inline
-          def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+          inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         }
       }
       
@@ -517,8 +444,7 @@ object mod {
       }
       object IDialogProvider {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           $get: js.Any,
           setDefaults: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions => Unit,
           setForceBodyReload: Boolean => Unit,
@@ -528,17 +454,13 @@ object mod {
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogProvider]
         }
         
-        @scala.inline
-        implicit class IDialogProviderMutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogProvider] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogProvider](x: Self) {
           
-          @scala.inline
-          def setSetDefaults(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+          inline def setSetDefaults(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setSetForceBodyReload(value: Boolean => Unit): Self = StObject.set(x, "setForceBodyReload", js.Any.fromFunction1(value))
+          inline def setSetForceBodyReload(value: Boolean => Unit): Self = StObject.set(x, "setForceBodyReload", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setSetForceHtmlReload(value: Boolean => Unit): Self = StObject.set(x, "setForceHtmlReload", js.Any.fromFunction1(value))
+          inline def setSetForceHtmlReload(value: Boolean => Unit): Self = StObject.set(x, "setForceHtmlReload", js.Any.fromFunction1(value))
         }
       }
       

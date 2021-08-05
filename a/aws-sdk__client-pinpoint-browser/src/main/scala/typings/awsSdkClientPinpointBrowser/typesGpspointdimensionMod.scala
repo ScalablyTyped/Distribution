@@ -22,26 +22,20 @@ object typesGpspointdimensionMod {
   }
   object GPSPointDimension {
     
-    @scala.inline
-    def apply(): GPSPointDimension = {
+    inline def apply(): GPSPointDimension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GPSPointDimension]
     }
     
-    @scala.inline
-    implicit class GPSPointDimensionMutableBuilder[Self <: GPSPointDimension] (val x: Self) extends AnyVal {
+    extension [Self <: GPSPointDimension](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: GPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: GPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesUndefined: Self = StObject.set(x, "Coordinates", js.undefined)
+      inline def setCoordinatesUndefined: Self = StObject.set(x, "Coordinates", js.undefined)
       
-      @scala.inline
-      def setRangeInKilometers(value: Double): Self = StObject.set(x, "RangeInKilometers", value.asInstanceOf[js.Any])
+      inline def setRangeInKilometers(value: Double): Self = StObject.set(x, "RangeInKilometers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeInKilometersUndefined: Self = StObject.set(x, "RangeInKilometers", js.undefined)
+      inline def setRangeInKilometersUndefined: Self = StObject.set(x, "RangeInKilometers", js.undefined)
     }
   }
   
@@ -57,20 +51,16 @@ object typesGpspointdimensionMod {
   }
   object UnmarshalledGPSPointDimension {
     
-    @scala.inline
-    def apply(): UnmarshalledGPSPointDimension = {
+    inline def apply(): UnmarshalledGPSPointDimension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledGPSPointDimension]
     }
     
-    @scala.inline
-    implicit class UnmarshalledGPSPointDimensionMutableBuilder[Self <: UnmarshalledGPSPointDimension] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledGPSPointDimension](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: UnmarshalledGPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: UnmarshalledGPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesUndefined: Self = StObject.set(x, "Coordinates", js.undefined)
+      inline def setCoordinatesUndefined: Self = StObject.set(x, "Coordinates", js.undefined)
     }
   }
 }

@@ -10,7 +10,7 @@ trait HTMLCanvasElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLCanvasElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLCanvasElement_typekey")
   var MSHTMLDotHTMLCanvasElement_typekey: HTMLCanvasElement = js.native
   
   var accessKey: String = js.native

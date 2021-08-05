@@ -63,8 +63,7 @@ object customerTaxIds {
   }
   object ITaxId {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: Double,
       customer: String,
       id: String,
@@ -79,35 +78,25 @@ object customerTaxIds {
       __obj.asInstanceOf[ITaxId]
     }
     
-    @scala.inline
-    implicit class ITaxIdMutableBuilder[Self <: ITaxId] (val x: Self) extends AnyVal {
+    extension [Self <: ITaxId](x: Self) {
       
-      @scala.inline
-      def setCountry(value: string): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: string): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: tax_id): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: tax_id): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TaxIdType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TaxIdType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerification(value: ITaxIdVerification): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+      inline def setVerification(value: ITaxIdVerification): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,21 +114,17 @@ object customerTaxIds {
   }
   object ITaxIdCreationOptions {
     
-    @scala.inline
-    def apply(`type`: TaxIdType, value: String): ITaxIdCreationOptions = {
+    inline def apply(`type`: TaxIdType, value: String): ITaxIdCreationOptions = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITaxIdCreationOptions]
     }
     
-    @scala.inline
-    implicit class ITaxIdCreationOptionsMutableBuilder[Self <: ITaxIdCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITaxIdCreationOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: TaxIdType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TaxIdType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,8 +147,7 @@ object customerTaxIds {
   }
   object ITaxIdVerification {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       status: pending | unavailable | unverified | verified,
       verified_address: String,
       verified_name: String
@@ -172,17 +156,13 @@ object customerTaxIds {
       __obj.asInstanceOf[ITaxIdVerification]
     }
     
-    @scala.inline
-    implicit class ITaxIdVerificationMutableBuilder[Self <: ITaxIdVerification] (val x: Self) extends AnyVal {
+    extension [Self <: ITaxIdVerification](x: Self) {
       
-      @scala.inline
-      def setStatus(value: pending | unavailable | unverified | verified): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: pending | unavailable | unverified | verified): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified_address(value: String): Self = StObject.set(x, "verified_address", value.asInstanceOf[js.Any])
+      inline def setVerified_address(value: String): Self = StObject.set(x, "verified_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
+      inline def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,22 +177,16 @@ object customerTaxIds {
   trait TaxIdType extends StObject
   object TaxIdType {
     
-    @scala.inline
-    def au_abn: typings.stripe.stripeStrings.au_abn = "au_abn".asInstanceOf[typings.stripe.stripeStrings.au_abn]
+    inline def au_abn: typings.stripe.stripeStrings.au_abn = "au_abn".asInstanceOf[typings.stripe.stripeStrings.au_abn]
     
-    @scala.inline
-    def eu_vat: typings.stripe.stripeStrings.eu_vat = "eu_vat".asInstanceOf[typings.stripe.stripeStrings.eu_vat]
+    inline def eu_vat: typings.stripe.stripeStrings.eu_vat = "eu_vat".asInstanceOf[typings.stripe.stripeStrings.eu_vat]
     
-    @scala.inline
-    def in_gst: typings.stripe.stripeStrings.in_gst = "in_gst".asInstanceOf[typings.stripe.stripeStrings.in_gst]
+    inline def in_gst: typings.stripe.stripeStrings.in_gst = "in_gst".asInstanceOf[typings.stripe.stripeStrings.in_gst]
     
-    @scala.inline
-    def no_vat: typings.stripe.stripeStrings.no_vat = "no_vat".asInstanceOf[typings.stripe.stripeStrings.no_vat]
+    inline def no_vat: typings.stripe.stripeStrings.no_vat = "no_vat".asInstanceOf[typings.stripe.stripeStrings.no_vat]
     
-    @scala.inline
-    def nz_gst: typings.stripe.stripeStrings.nz_gst = "nz_gst".asInstanceOf[typings.stripe.stripeStrings.nz_gst]
+    inline def nz_gst: typings.stripe.stripeStrings.nz_gst = "nz_gst".asInstanceOf[typings.stripe.stripeStrings.nz_gst]
     
-    @scala.inline
-    def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+    inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   }
 }

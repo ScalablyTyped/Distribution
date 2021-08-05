@@ -12,8 +12,7 @@ trait SplitSolver
 }
 object SplitSolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEquation: Equation => Unit,
     equations: js.Array[Equation],
     iterations: Double,
@@ -26,10 +25,8 @@ object SplitSolver {
     __obj.asInstanceOf[SplitSolver]
   }
   
-  @scala.inline
-  implicit class SplitSolverMutableBuilder[Self <: SplitSolver] (val x: Self) extends AnyVal {
+  extension [Self <: SplitSolver](x: Self) {
     
-    @scala.inline
-    def setSubsolver(value: Solver): Self = StObject.set(x, "subsolver", value.asInstanceOf[js.Any])
+    inline def setSubsolver(value: Solver): Self = StObject.set(x, "subsolver", value.asInstanceOf[js.Any])
   }
 }

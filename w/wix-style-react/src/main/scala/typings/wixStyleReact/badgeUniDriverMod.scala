@@ -30,8 +30,7 @@ object badgeUniDriverMod {
   }
   object BadgeUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -47,29 +46,21 @@ object badgeUniDriverMod {
       __obj.asInstanceOf[BadgeUniDriver]
     }
     
-    @scala.inline
-    implicit class BadgeUniDriverMutableBuilder[Self <: BadgeUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetContent(value: () => js.Promise[String]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => js.Promise[String]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => js.Promise[BadgeSize]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => js.Promise[BadgeSize]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => js.Promise[BadgeSkin]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => js.Promise[BadgeSkin]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => js.Promise[BadgeType]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => js.Promise[BadgeType]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClickCursor(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasClickCursor", js.Any.fromFunction0(value))
+      inline def setHasClickCursor(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasClickCursor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUppercase(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isUppercase", js.Any.fromFunction0(value))
+      inline def setIsUppercase(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isUppercase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
 }

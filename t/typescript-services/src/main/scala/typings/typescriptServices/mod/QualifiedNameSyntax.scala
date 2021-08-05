@@ -90,6 +90,5 @@ object QualifiedNameSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(left: INameSyntax, right: ISyntaxToken): typings.typescriptServices.TypeScript.QualifiedNameSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.QualifiedNameSyntax]
+  inline def create1(left: INameSyntax, right: ISyntaxToken): typings.typescriptServices.TypeScript.QualifiedNameSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.QualifiedNameSyntax]
 }

@@ -18,28 +18,21 @@ trait ServerGroupReplicationConfiguration extends StObject {
 }
 object ServerGroupReplicationConfiguration {
   
-  @scala.inline
-  def apply(): ServerGroupReplicationConfiguration = {
+  inline def apply(): ServerGroupReplicationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerGroupReplicationConfiguration]
   }
   
-  @scala.inline
-  implicit class ServerGroupReplicationConfigurationMutableBuilder[Self <: ServerGroupReplicationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServerGroupReplicationConfiguration](x: Self) {
     
-    @scala.inline
-    def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
+    inline def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerGroupIdUndefined: Self = StObject.set(x, "serverGroupId", js.undefined)
+    inline def setServerGroupIdUndefined: Self = StObject.set(x, "serverGroupId", js.undefined)
     
-    @scala.inline
-    def setServerReplicationConfigurations(value: ServerReplicationConfigurations): Self = StObject.set(x, "serverReplicationConfigurations", value.asInstanceOf[js.Any])
+    inline def setServerReplicationConfigurations(value: ServerReplicationConfigurations): Self = StObject.set(x, "serverReplicationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerReplicationConfigurationsUndefined: Self = StObject.set(x, "serverReplicationConfigurations", js.undefined)
+    inline def setServerReplicationConfigurationsUndefined: Self = StObject.set(x, "serverReplicationConfigurations", js.undefined)
     
-    @scala.inline
-    def setServerReplicationConfigurationsVarargs(value: ServerReplicationConfiguration*): Self = StObject.set(x, "serverReplicationConfigurations", js.Array(value :_*))
+    inline def setServerReplicationConfigurationsVarargs(value: ServerReplicationConfiguration*): Self = StObject.set(x, "serverReplicationConfigurations", js.Array(value :_*))
   }
 }

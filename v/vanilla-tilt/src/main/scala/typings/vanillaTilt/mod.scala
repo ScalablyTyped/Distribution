@@ -62,19 +62,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def init(elements: js.Array[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def init(elements: js.Array[HTMLElement], settings: TiltOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def init(elements: js.Array[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(elements: js.Array[HTMLElement], settings: TiltOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Initializes one or multiple elements
       * @param elements The element, which should tilt
       * @param settings Settings, which configures the elements
       */
-    @scala.inline
-    def init(elements: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def init(elements: HTMLElement, settings: TiltOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def init(elements: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(elements: HTMLElement, settings: TiltOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(elements.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
@@ -206,149 +202,102 @@ object mod {
   }
   object TiltOptions {
     
-    @scala.inline
-    def apply(): TiltOptions = {
+    inline def apply(): TiltOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TiltOptions]
     }
     
-    @scala.inline
-    implicit class TiltOptionsMutableBuilder[Self <: TiltOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TiltOptions](x: Self) {
       
-      @scala.inline
-      def setAxis(value: typings.vanillaTilt.vanillaTiltStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: typings.vanillaTilt.vanillaTiltStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisNull: Self = StObject.set(x, "axis", null)
+      inline def setAxisNull: Self = StObject.set(x, "axis", null)
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def `setFull-page-listening`(value: Boolean): Self = StObject.set(x, "full-page-listening", value.asInstanceOf[js.Any])
+      inline def `setFull-page-listening`(value: Boolean): Self = StObject.set(x, "full-page-listening", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFull-page-listeningUndefined`: Self = StObject.set(x, "full-page-listening", js.undefined)
+      inline def `setFull-page-listeningUndefined`: Self = StObject.set(x, "full-page-listening", js.undefined)
       
-      @scala.inline
-      def setGlare(value: Boolean): Self = StObject.set(x, "glare", value.asInstanceOf[js.Any])
+      inline def setGlare(value: Boolean): Self = StObject.set(x, "glare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlare-prerender`(value: Boolean): Self = StObject.set(x, "glare-prerender", value.asInstanceOf[js.Any])
+      inline def `setGlare-prerender`(value: Boolean): Self = StObject.set(x, "glare-prerender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlare-prerenderUndefined`: Self = StObject.set(x, "glare-prerender", js.undefined)
+      inline def `setGlare-prerenderUndefined`: Self = StObject.set(x, "glare-prerender", js.undefined)
       
-      @scala.inline
-      def setGlareUndefined: Self = StObject.set(x, "glare", js.undefined)
+      inline def setGlareUndefined: Self = StObject.set(x, "glare", js.undefined)
       
-      @scala.inline
-      def setGyroscope(value: Boolean): Self = StObject.set(x, "gyroscope", value.asInstanceOf[js.Any])
+      inline def setGyroscope(value: Boolean): Self = StObject.set(x, "gyroscope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGyroscopeMaxAngleX(value: Double): Self = StObject.set(x, "gyroscopeMaxAngleX", value.asInstanceOf[js.Any])
+      inline def setGyroscopeMaxAngleX(value: Double): Self = StObject.set(x, "gyroscopeMaxAngleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGyroscopeMaxAngleXUndefined: Self = StObject.set(x, "gyroscopeMaxAngleX", js.undefined)
+      inline def setGyroscopeMaxAngleXUndefined: Self = StObject.set(x, "gyroscopeMaxAngleX", js.undefined)
       
-      @scala.inline
-      def setGyroscopeMaxAngleY(value: Double): Self = StObject.set(x, "gyroscopeMaxAngleY", value.asInstanceOf[js.Any])
+      inline def setGyroscopeMaxAngleY(value: Double): Self = StObject.set(x, "gyroscopeMaxAngleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGyroscopeMaxAngleYUndefined: Self = StObject.set(x, "gyroscopeMaxAngleY", js.undefined)
+      inline def setGyroscopeMaxAngleYUndefined: Self = StObject.set(x, "gyroscopeMaxAngleY", js.undefined)
       
-      @scala.inline
-      def setGyroscopeMinAngleX(value: Double): Self = StObject.set(x, "gyroscopeMinAngleX", value.asInstanceOf[js.Any])
+      inline def setGyroscopeMinAngleX(value: Double): Self = StObject.set(x, "gyroscopeMinAngleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGyroscopeMinAngleXUndefined: Self = StObject.set(x, "gyroscopeMinAngleX", js.undefined)
+      inline def setGyroscopeMinAngleXUndefined: Self = StObject.set(x, "gyroscopeMinAngleX", js.undefined)
       
-      @scala.inline
-      def setGyroscopeMinAngleY(value: Double): Self = StObject.set(x, "gyroscopeMinAngleY", value.asInstanceOf[js.Any])
+      inline def setGyroscopeMinAngleY(value: Double): Self = StObject.set(x, "gyroscopeMinAngleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGyroscopeMinAngleYUndefined: Self = StObject.set(x, "gyroscopeMinAngleY", js.undefined)
+      inline def setGyroscopeMinAngleYUndefined: Self = StObject.set(x, "gyroscopeMinAngleY", js.undefined)
       
-      @scala.inline
-      def setGyroscopeSamples(value: Double): Self = StObject.set(x, "gyroscopeSamples", value.asInstanceOf[js.Any])
+      inline def setGyroscopeSamples(value: Double): Self = StObject.set(x, "gyroscopeSamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGyroscopeSamplesUndefined: Self = StObject.set(x, "gyroscopeSamples", js.undefined)
+      inline def setGyroscopeSamplesUndefined: Self = StObject.set(x, "gyroscopeSamples", js.undefined)
       
-      @scala.inline
-      def setGyroscopeUndefined: Self = StObject.set(x, "gyroscope", js.undefined)
+      inline def setGyroscopeUndefined: Self = StObject.set(x, "gyroscope", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMax-glare`(value: Double): Self = StObject.set(x, "max-glare", value.asInstanceOf[js.Any])
+      inline def `setMax-glare`(value: Double): Self = StObject.set(x, "max-glare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMax-glareUndefined`: Self = StObject.set(x, "max-glare", js.undefined)
+      inline def `setMax-glareUndefined`: Self = StObject.set(x, "max-glare", js.undefined)
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def `setMouse-event-element`(value: String): Self = StObject.set(x, "mouse-event-element", value.asInstanceOf[js.Any])
+      inline def `setMouse-event-element`(value: String): Self = StObject.set(x, "mouse-event-element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMouse-event-elementUndefined`: Self = StObject.set(x, "mouse-event-element", js.undefined)
+      inline def `setMouse-event-elementUndefined`: Self = StObject.set(x, "mouse-event-element", js.undefined)
       
-      @scala.inline
-      def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+      inline def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
+      inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
       
-      @scala.inline
-      def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
+      inline def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartXUndefined: Self = StObject.set(x, "startX", js.undefined)
+      inline def setStartXUndefined: Self = StObject.set(x, "startX", js.undefined)
       
-      @scala.inline
-      def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
+      inline def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartYUndefined: Self = StObject.set(x, "startY", js.undefined)
+      inline def setStartYUndefined: Self = StObject.set(x, "startY", js.undefined)
       
-      @scala.inline
-      def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
   
@@ -376,26 +325,20 @@ object mod {
   }
   object TiltValues {
     
-    @scala.inline
-    def apply(percentageX: Double, percentageY: Double, tiltX: Double, tiltY: Double): TiltValues = {
+    inline def apply(percentageX: Double, percentageY: Double, tiltX: Double, tiltY: Double): TiltValues = {
       val __obj = js.Dynamic.literal(percentageX = percentageX.asInstanceOf[js.Any], percentageY = percentageY.asInstanceOf[js.Any], tiltX = tiltX.asInstanceOf[js.Any], tiltY = tiltY.asInstanceOf[js.Any])
       __obj.asInstanceOf[TiltValues]
     }
     
-    @scala.inline
-    implicit class TiltValuesMutableBuilder[Self <: TiltValues] (val x: Self) extends AnyVal {
+    extension [Self <: TiltValues](x: Self) {
       
-      @scala.inline
-      def setPercentageX(value: Double): Self = StObject.set(x, "percentageX", value.asInstanceOf[js.Any])
+      inline def setPercentageX(value: Double): Self = StObject.set(x, "percentageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageY(value: Double): Self = StObject.set(x, "percentageY", value.asInstanceOf[js.Any])
+      inline def setPercentageY(value: Double): Self = StObject.set(x, "percentageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
+      inline def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
+      inline def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -428,8 +371,7 @@ object mod {
   }
   object VanillaTilt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListeners: () => Unit,
       destroy: () => Unit,
       getValues: () => TiltValues,
@@ -440,23 +382,17 @@ object mod {
       __obj.asInstanceOf[VanillaTilt]
     }
     
-    @scala.inline
-    implicit class VanillaTiltMutableBuilder[Self <: VanillaTilt] (val x: Self) extends AnyVal {
+    extension [Self <: VanillaTilt](x: Self) {
       
-      @scala.inline
-      def setAddEventListeners(value: () => Unit): Self = StObject.set(x, "addEventListeners", js.Any.fromFunction0(value))
+      inline def setAddEventListeners(value: () => Unit): Self = StObject.set(x, "addEventListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValues(value: () => TiltValues): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => TiltValues): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: () => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction0(value))
+      inline def setRemoveEventListener(value: () => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
 }

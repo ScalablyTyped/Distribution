@@ -22,21 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShellFolderViewSelectItem extends StObject
 object ShellFolderViewSelectItem {
   
-  @scala.inline
-  def Deselect: `0` = 0.asInstanceOf[`0`]
+  inline def Deselect: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def DeselectAllButThis: `4` = 4.asInstanceOf[`4`]
+  inline def DeselectAllButThis: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def EditMode: `3` = 3.asInstanceOf[`3`]
+  inline def EditMode: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Focus: `16` = 16.asInstanceOf[`16`]
+  inline def Focus: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def ScrollIntoView: `8` = 8.asInstanceOf[`8`]
+  inline def ScrollIntoView: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Select: `1` = 1.asInstanceOf[`1`]
+  inline def Select: `1` = 1.asInstanceOf[`1`]
 }

@@ -13,19 +13,15 @@ trait GetVaultNotificationsOutput extends StObject {
 }
 object GetVaultNotificationsOutput {
   
-  @scala.inline
-  def apply(): GetVaultNotificationsOutput = {
+  inline def apply(): GetVaultNotificationsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVaultNotificationsOutput]
   }
   
-  @scala.inline
-  implicit class GetVaultNotificationsOutputMutableBuilder[Self <: GetVaultNotificationsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetVaultNotificationsOutput](x: Self) {
     
-    @scala.inline
-    def setVaultNotificationConfig(value: VaultNotificationConfig): Self = StObject.set(x, "vaultNotificationConfig", value.asInstanceOf[js.Any])
+    inline def setVaultNotificationConfig(value: VaultNotificationConfig): Self = StObject.set(x, "vaultNotificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultNotificationConfigUndefined: Self = StObject.set(x, "vaultNotificationConfig", js.undefined)
+    inline def setVaultNotificationConfigUndefined: Self = StObject.set(x, "vaultNotificationConfig", js.undefined)
   }
 }

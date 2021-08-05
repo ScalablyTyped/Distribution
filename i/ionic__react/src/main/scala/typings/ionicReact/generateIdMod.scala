@@ -10,8 +10,6 @@ object generateIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
-  @scala.inline
-  def generateId(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
+  inline def generateId(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

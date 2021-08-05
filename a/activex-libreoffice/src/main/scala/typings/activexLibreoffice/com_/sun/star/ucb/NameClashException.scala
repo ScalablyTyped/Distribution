@@ -17,16 +17,13 @@ trait NameClashException
 }
 object NameClashException {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Name: String): NameClashException = {
+  inline def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Name: String): NameClashException = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameClashException]
   }
   
-  @scala.inline
-  implicit class NameClashExceptionMutableBuilder[Self <: NameClashException] (val x: Self) extends AnyVal {
+  extension [Self <: NameClashException](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

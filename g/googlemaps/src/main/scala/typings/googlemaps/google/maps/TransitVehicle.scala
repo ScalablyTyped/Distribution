@@ -16,26 +16,20 @@ trait TransitVehicle extends StObject {
 }
 object TransitVehicle {
   
-  @scala.inline
-  def apply(icon: String, local_icon: String, name: String, `type`: VehicleType): TransitVehicle = {
+  inline def apply(icon: String, local_icon: String, name: String, `type`: VehicleType): TransitVehicle = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], local_icon = local_icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitVehicle]
   }
   
-  @scala.inline
-  implicit class TransitVehicleMutableBuilder[Self <: TransitVehicle] (val x: Self) extends AnyVal {
+  extension [Self <: TransitVehicle](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal_icon(value: String): Self = StObject.set(x, "local_icon", value.asInstanceOf[js.Any])
+    inline def setLocal_icon(value: String): Self = StObject.set(x, "local_icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: VehicleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: VehicleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

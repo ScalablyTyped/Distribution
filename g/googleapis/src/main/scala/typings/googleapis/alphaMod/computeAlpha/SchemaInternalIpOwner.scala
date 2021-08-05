@@ -23,34 +23,25 @@ trait SchemaInternalIpOwner extends StObject {
 }
 object SchemaInternalIpOwner {
   
-  @scala.inline
-  def apply(): SchemaInternalIpOwner = {
+  inline def apply(): SchemaInternalIpOwner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInternalIpOwner]
   }
   
-  @scala.inline
-  implicit class SchemaInternalIpOwnerMutableBuilder[Self <: SchemaInternalIpOwner] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInternalIpOwner](x: Self) {
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
-    @scala.inline
-    def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
-    @scala.inline
-    def setSystemOwned(value: Boolean): Self = StObject.set(x, "systemOwned", value.asInstanceOf[js.Any])
+    inline def setSystemOwned(value: Boolean): Self = StObject.set(x, "systemOwned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemOwnedUndefined: Self = StObject.set(x, "systemOwned", js.undefined)
+    inline def setSystemOwnedUndefined: Self = StObject.set(x, "systemOwned", js.undefined)
   }
 }

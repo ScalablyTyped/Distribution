@@ -18,22 +18,17 @@ trait DeleteLoadBalancerListenerInput extends StObject {
 }
 object DeleteLoadBalancerListenerInput {
   
-  @scala.inline
-  def apply(LoadBalancerName: AccessPointName, LoadBalancerPorts: Ports): DeleteLoadBalancerListenerInput = {
+  inline def apply(LoadBalancerName: AccessPointName, LoadBalancerPorts: Ports): DeleteLoadBalancerListenerInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], LoadBalancerPorts = LoadBalancerPorts.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLoadBalancerListenerInput]
   }
   
-  @scala.inline
-  implicit class DeleteLoadBalancerListenerInputMutableBuilder[Self <: DeleteLoadBalancerListenerInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLoadBalancerListenerInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerPorts(value: Ports): Self = StObject.set(x, "LoadBalancerPorts", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerPorts(value: Ports): Self = StObject.set(x, "LoadBalancerPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerPortsVarargs(value: AccessPointPort*): Self = StObject.set(x, "LoadBalancerPorts", js.Array(value :_*))
+    inline def setLoadBalancerPortsVarargs(value: AccessPointPort*): Self = StObject.set(x, "LoadBalancerPorts", js.Array(value :_*))
   }
 }

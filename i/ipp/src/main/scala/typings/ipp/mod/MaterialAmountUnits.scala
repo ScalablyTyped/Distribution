@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MaterialAmountUnits extends StObject
 object MaterialAmountUnits {
   
-  @scala.inline
-  def g: typings.ipp.ippStrings.g = "g".asInstanceOf[typings.ipp.ippStrings.g]
+  inline def g: typings.ipp.ippStrings.g = "g".asInstanceOf[typings.ipp.ippStrings.g]
   
-  @scala.inline
-  def kg: typings.ipp.ippStrings.kg = "kg".asInstanceOf[typings.ipp.ippStrings.kg]
+  inline def kg: typings.ipp.ippStrings.kg = "kg".asInstanceOf[typings.ipp.ippStrings.kg]
   
-  @scala.inline
-  def l: typings.ipp.ippStrings.l = "l".asInstanceOf[typings.ipp.ippStrings.l]
+  inline def l: typings.ipp.ippStrings.l = "l".asInstanceOf[typings.ipp.ippStrings.l]
   
-  @scala.inline
-  def m: typings.ipp.ippStrings.m = "m".asInstanceOf[typings.ipp.ippStrings.m]
+  inline def m: typings.ipp.ippStrings.m = "m".asInstanceOf[typings.ipp.ippStrings.m]
   
-  @scala.inline
-  def ml: typings.ipp.ippStrings.ml = "ml".asInstanceOf[typings.ipp.ippStrings.ml]
+  inline def ml: typings.ipp.ippStrings.ml = "ml".asInstanceOf[typings.ipp.ippStrings.ml]
   
-  @scala.inline
-  def mm: typings.ipp.ippStrings.mm = "mm".asInstanceOf[typings.ipp.ippStrings.mm]
+  inline def mm: typings.ipp.ippStrings.mm = "mm".asInstanceOf[typings.ipp.ippStrings.mm]
 }

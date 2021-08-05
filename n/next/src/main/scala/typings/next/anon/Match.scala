@@ -14,8 +14,7 @@ trait Match extends StObject {
 }
 object Match {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `match`: /* pathname */ js.UndefOr[String | Null] => `false` | typings.next.serverRouterMod.Params,
     page: String
   ): Match = {
@@ -24,13 +23,10 @@ object Match {
     __obj.asInstanceOf[Match]
   }
   
-  @scala.inline
-  implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+  extension [Self <: Match](x: Self) {
     
-    @scala.inline
-    def setMatch(value: /* pathname */ js.UndefOr[String | Null] => `false` | typings.next.serverRouterMod.Params): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+    inline def setMatch(value: /* pathname */ js.UndefOr[String | Null] => `false` | typings.next.serverRouterMod.Params): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
   }
 }

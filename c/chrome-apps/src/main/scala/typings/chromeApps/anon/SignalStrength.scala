@@ -11,19 +11,15 @@ trait SignalStrength extends StObject {
 }
 object SignalStrength {
   
-  @scala.inline
-  def apply(): SignalStrength = {
+  inline def apply(): SignalStrength = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignalStrength]
   }
   
-  @scala.inline
-  implicit class SignalStrengthMutableBuilder[Self <: SignalStrength] (val x: Self) extends AnyVal {
+  extension [Self <: SignalStrength](x: Self) {
     
-    @scala.inline
-    def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
+    inline def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
+    inline def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
   }
 }

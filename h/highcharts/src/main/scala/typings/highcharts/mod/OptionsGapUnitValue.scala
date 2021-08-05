@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsGapUnitValue extends StObject
 object OptionsGapUnitValue {
   
-  @scala.inline
-  def relative: typings.highcharts.highchartsStrings.relative = "relative".asInstanceOf[typings.highcharts.highchartsStrings.relative]
+  inline def relative: typings.highcharts.highchartsStrings.relative = "relative".asInstanceOf[typings.highcharts.highchartsStrings.relative]
   
-  @scala.inline
-  def value: typings.highcharts.highchartsStrings.value = "value".asInstanceOf[typings.highcharts.highchartsStrings.value]
+  inline def value: typings.highcharts.highchartsStrings.value = "value".asInstanceOf[typings.highcharts.highchartsStrings.value]
 }

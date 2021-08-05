@@ -10,16 +10,13 @@ trait PutEventsResponse extends StObject {
 }
 object PutEventsResponse {
   
-  @scala.inline
-  def apply(EventsResponse: EventsResponse): PutEventsResponse = {
+  inline def apply(EventsResponse: EventsResponse): PutEventsResponse = {
     val __obj = js.Dynamic.literal(EventsResponse = EventsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsResponse]
   }
   
-  @scala.inline
-  implicit class PutEventsResponseMutableBuilder[Self <: PutEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventsResponse](x: Self) {
     
-    @scala.inline
-    def setEventsResponse(value: EventsResponse): Self = StObject.set(x, "EventsResponse", value.asInstanceOf[js.Any])
+    inline def setEventsResponse(value: EventsResponse): Self = StObject.set(x, "EventsResponse", value.asInstanceOf[js.Any])
   }
 }

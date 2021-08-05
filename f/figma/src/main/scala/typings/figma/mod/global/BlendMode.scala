@@ -28,60 +28,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlendMode extends StObject
 object BlendMode {
   
-  @scala.inline
-  def COLOR: typings.figma.figmaStrings.COLOR = "COLOR".asInstanceOf[typings.figma.figmaStrings.COLOR]
+  inline def COLOR: typings.figma.figmaStrings.COLOR = "COLOR".asInstanceOf[typings.figma.figmaStrings.COLOR]
   
-  @scala.inline
-  def COLOR_BURN: typings.figma.figmaStrings.COLOR_BURN = "COLOR_BURN".asInstanceOf[typings.figma.figmaStrings.COLOR_BURN]
+  inline def COLOR_BURN: typings.figma.figmaStrings.COLOR_BURN = "COLOR_BURN".asInstanceOf[typings.figma.figmaStrings.COLOR_BURN]
   
-  @scala.inline
-  def COLOR_DODGE: typings.figma.figmaStrings.COLOR_DODGE = "COLOR_DODGE".asInstanceOf[typings.figma.figmaStrings.COLOR_DODGE]
+  inline def COLOR_DODGE: typings.figma.figmaStrings.COLOR_DODGE = "COLOR_DODGE".asInstanceOf[typings.figma.figmaStrings.COLOR_DODGE]
   
-  @scala.inline
-  def DARKEN: typings.figma.figmaStrings.DARKEN = "DARKEN".asInstanceOf[typings.figma.figmaStrings.DARKEN]
+  inline def DARKEN: typings.figma.figmaStrings.DARKEN = "DARKEN".asInstanceOf[typings.figma.figmaStrings.DARKEN]
   
-  @scala.inline
-  def DIFFERENCE: typings.figma.figmaStrings.DIFFERENCE = "DIFFERENCE".asInstanceOf[typings.figma.figmaStrings.DIFFERENCE]
+  inline def DIFFERENCE: typings.figma.figmaStrings.DIFFERENCE = "DIFFERENCE".asInstanceOf[typings.figma.figmaStrings.DIFFERENCE]
   
-  @scala.inline
-  def EXCLUSION: typings.figma.figmaStrings.EXCLUSION = "EXCLUSION".asInstanceOf[typings.figma.figmaStrings.EXCLUSION]
+  inline def EXCLUSION: typings.figma.figmaStrings.EXCLUSION = "EXCLUSION".asInstanceOf[typings.figma.figmaStrings.EXCLUSION]
   
-  @scala.inline
-  def HARD_LIGHT: typings.figma.figmaStrings.HARD_LIGHT = "HARD_LIGHT".asInstanceOf[typings.figma.figmaStrings.HARD_LIGHT]
+  inline def HARD_LIGHT: typings.figma.figmaStrings.HARD_LIGHT = "HARD_LIGHT".asInstanceOf[typings.figma.figmaStrings.HARD_LIGHT]
   
-  @scala.inline
-  def HUE: typings.figma.figmaStrings.HUE = "HUE".asInstanceOf[typings.figma.figmaStrings.HUE]
+  inline def HUE: typings.figma.figmaStrings.HUE = "HUE".asInstanceOf[typings.figma.figmaStrings.HUE]
   
-  @scala.inline
-  def LIGHTEN: typings.figma.figmaStrings.LIGHTEN = "LIGHTEN".asInstanceOf[typings.figma.figmaStrings.LIGHTEN]
+  inline def LIGHTEN: typings.figma.figmaStrings.LIGHTEN = "LIGHTEN".asInstanceOf[typings.figma.figmaStrings.LIGHTEN]
   
-  @scala.inline
-  def LINEAR_BURN: typings.figma.figmaStrings.LINEAR_BURN = "LINEAR_BURN".asInstanceOf[typings.figma.figmaStrings.LINEAR_BURN]
+  inline def LINEAR_BURN: typings.figma.figmaStrings.LINEAR_BURN = "LINEAR_BURN".asInstanceOf[typings.figma.figmaStrings.LINEAR_BURN]
   
-  @scala.inline
-  def LINEAR_DODGE: typings.figma.figmaStrings.LINEAR_DODGE = "LINEAR_DODGE".asInstanceOf[typings.figma.figmaStrings.LINEAR_DODGE]
+  inline def LINEAR_DODGE: typings.figma.figmaStrings.LINEAR_DODGE = "LINEAR_DODGE".asInstanceOf[typings.figma.figmaStrings.LINEAR_DODGE]
   
-  @scala.inline
-  def LUMINOSITY: typings.figma.figmaStrings.LUMINOSITY = "LUMINOSITY".asInstanceOf[typings.figma.figmaStrings.LUMINOSITY]
+  inline def LUMINOSITY: typings.figma.figmaStrings.LUMINOSITY = "LUMINOSITY".asInstanceOf[typings.figma.figmaStrings.LUMINOSITY]
   
-  @scala.inline
-  def MULTIPLY: typings.figma.figmaStrings.MULTIPLY = "MULTIPLY".asInstanceOf[typings.figma.figmaStrings.MULTIPLY]
+  inline def MULTIPLY: typings.figma.figmaStrings.MULTIPLY = "MULTIPLY".asInstanceOf[typings.figma.figmaStrings.MULTIPLY]
   
-  @scala.inline
-  def NORMAL: typings.figma.figmaStrings.NORMAL = "NORMAL".asInstanceOf[typings.figma.figmaStrings.NORMAL]
+  inline def NORMAL: typings.figma.figmaStrings.NORMAL = "NORMAL".asInstanceOf[typings.figma.figmaStrings.NORMAL]
   
-  @scala.inline
-  def OVERLAY: typings.figma.figmaStrings.OVERLAY = "OVERLAY".asInstanceOf[typings.figma.figmaStrings.OVERLAY]
+  inline def OVERLAY: typings.figma.figmaStrings.OVERLAY = "OVERLAY".asInstanceOf[typings.figma.figmaStrings.OVERLAY]
   
-  @scala.inline
-  def PASS_THROUGH: typings.figma.figmaStrings.PASS_THROUGH = "PASS_THROUGH".asInstanceOf[typings.figma.figmaStrings.PASS_THROUGH]
+  inline def PASS_THROUGH: typings.figma.figmaStrings.PASS_THROUGH = "PASS_THROUGH".asInstanceOf[typings.figma.figmaStrings.PASS_THROUGH]
   
-  @scala.inline
-  def SATURATION: typings.figma.figmaStrings.SATURATION = "SATURATION".asInstanceOf[typings.figma.figmaStrings.SATURATION]
+  inline def SATURATION: typings.figma.figmaStrings.SATURATION = "SATURATION".asInstanceOf[typings.figma.figmaStrings.SATURATION]
   
-  @scala.inline
-  def SCREEN: typings.figma.figmaStrings.SCREEN = "SCREEN".asInstanceOf[typings.figma.figmaStrings.SCREEN]
+  inline def SCREEN: typings.figma.figmaStrings.SCREEN = "SCREEN".asInstanceOf[typings.figma.figmaStrings.SCREEN]
   
-  @scala.inline
-  def SOFT_LIGHT: typings.figma.figmaStrings.SOFT_LIGHT = "SOFT_LIGHT".asInstanceOf[typings.figma.figmaStrings.SOFT_LIGHT]
+  inline def SOFT_LIGHT: typings.figma.figmaStrings.SOFT_LIGHT = "SOFT_LIGHT".asInstanceOf[typings.figma.figmaStrings.SOFT_LIGHT]
 }

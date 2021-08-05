@@ -60,21 +60,16 @@ object dmsCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /**
       * Returns true if the given object is an instance of Certificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ Boolean]
   }
   
   trait CertificateArgs extends StObject {
@@ -96,29 +91,22 @@ object dmsCertificateMod {
   }
   object CertificateArgs {
     
-    @scala.inline
-    def apply(certificateId: Input[String]): CertificateArgs = {
+    inline def apply(certificateId: Input[String]): CertificateArgs = {
       val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateArgs]
     }
     
-    @scala.inline
-    implicit class CertificateArgsMutableBuilder[Self <: CertificateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateArgs](x: Self) {
       
-      @scala.inline
-      def setCertificateId(value: Input[String]): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+      inline def setCertificateId(value: Input[String]): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePem(value: Input[String]): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+      inline def setCertificatePem(value: Input[String]): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
+      inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
       
-      @scala.inline
-      def setCertificateWallet(value: Input[String]): Self = StObject.set(x, "certificateWallet", value.asInstanceOf[js.Any])
+      inline def setCertificateWallet(value: Input[String]): Self = StObject.set(x, "certificateWallet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateWalletUndefined: Self = StObject.set(x, "certificateWallet", js.undefined)
+      inline def setCertificateWalletUndefined: Self = StObject.set(x, "certificateWallet", js.undefined)
     }
   }
   
@@ -146,38 +134,28 @@ object dmsCertificateMod {
   }
   object CertificateState {
     
-    @scala.inline
-    def apply(): CertificateState = {
+    inline def apply(): CertificateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateState]
     }
     
-    @scala.inline
-    implicit class CertificateStateMutableBuilder[Self <: CertificateState] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateState](x: Self) {
       
-      @scala.inline
-      def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+      inline def setCertificateArn(value: Input[String]): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+      inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
       
-      @scala.inline
-      def setCertificateId(value: Input[String]): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+      inline def setCertificateId(value: Input[String]): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+      inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
       
-      @scala.inline
-      def setCertificatePem(value: Input[String]): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+      inline def setCertificatePem(value: Input[String]): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
+      inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
       
-      @scala.inline
-      def setCertificateWallet(value: Input[String]): Self = StObject.set(x, "certificateWallet", value.asInstanceOf[js.Any])
+      inline def setCertificateWallet(value: Input[String]): Self = StObject.set(x, "certificateWallet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateWalletUndefined: Self = StObject.set(x, "certificateWallet", js.undefined)
+      inline def setCertificateWalletUndefined: Self = StObject.set(x, "certificateWallet", js.undefined)
     }
   }
 }

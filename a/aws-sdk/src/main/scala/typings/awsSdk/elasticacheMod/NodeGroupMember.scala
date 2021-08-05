@@ -38,49 +38,35 @@ trait NodeGroupMember extends StObject {
 }
 object NodeGroupMember {
   
-  @scala.inline
-  def apply(): NodeGroupMember = {
+  inline def apply(): NodeGroupMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupMember]
   }
   
-  @scala.inline
-  implicit class NodeGroupMemberMutableBuilder[Self <: NodeGroupMember] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupMember](x: Self) {
     
-    @scala.inline
-    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
+    inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
+    inline def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
-    @scala.inline
-    def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
+    inline def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
+    inline def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
     
-    @scala.inline
-    def setCurrentRole(value: String): Self = StObject.set(x, "CurrentRole", value.asInstanceOf[js.Any])
+    inline def setCurrentRole(value: String): Self = StObject.set(x, "CurrentRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRoleUndefined: Self = StObject.set(x, "CurrentRole", js.undefined)
+    inline def setCurrentRoleUndefined: Self = StObject.set(x, "CurrentRole", js.undefined)
     
-    @scala.inline
-    def setPreferredAvailabilityZone(value: String): Self = StObject.set(x, "PreferredAvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setPreferredAvailabilityZone(value: String): Self = StObject.set(x, "PreferredAvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredAvailabilityZoneUndefined: Self = StObject.set(x, "PreferredAvailabilityZone", js.undefined)
+    inline def setPreferredAvailabilityZoneUndefined: Self = StObject.set(x, "PreferredAvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setPreferredOutpostArn(value: String): Self = StObject.set(x, "PreferredOutpostArn", value.asInstanceOf[js.Any])
+    inline def setPreferredOutpostArn(value: String): Self = StObject.set(x, "PreferredOutpostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredOutpostArnUndefined: Self = StObject.set(x, "PreferredOutpostArn", js.undefined)
+    inline def setPreferredOutpostArnUndefined: Self = StObject.set(x, "PreferredOutpostArn", js.undefined)
     
-    @scala.inline
-    def setReadEndpoint(value: Endpoint): Self = StObject.set(x, "ReadEndpoint", value.asInstanceOf[js.Any])
+    inline def setReadEndpoint(value: Endpoint): Self = StObject.set(x, "ReadEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadEndpointUndefined: Self = StObject.set(x, "ReadEndpoint", js.undefined)
+    inline def setReadEndpointUndefined: Self = StObject.set(x, "ReadEndpoint", js.undefined)
   }
 }

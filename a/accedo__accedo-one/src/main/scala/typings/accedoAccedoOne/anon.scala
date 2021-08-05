@@ -16,20 +16,16 @@ object anon {
   }
   object Alpha2Code {
     
-    @scala.inline
-    def apply(alpha2Code: String, alpha3Code: String): Alpha2Code = {
+    inline def apply(alpha2Code: String, alpha3Code: String): Alpha2Code = {
       val __obj = js.Dynamic.literal(alpha2Code = alpha2Code.asInstanceOf[js.Any], alpha3Code = alpha3Code.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alpha2Code]
     }
     
-    @scala.inline
-    implicit class Alpha2CodeMutableBuilder[Self <: Alpha2Code] (val x: Self) extends AnyVal {
+    extension [Self <: Alpha2Code](x: Self) {
       
-      @scala.inline
-      def setAlpha2Code(value: String): Self = StObject.set(x, "alpha2Code", value.asInstanceOf[js.Any])
+      inline def setAlpha2Code(value: String): Self = StObject.set(x, "alpha2Code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha3Code(value: String): Self = StObject.set(x, "alpha3Code", value.asInstanceOf[js.Any])
+      inline def setAlpha3Code(value: String): Self = StObject.set(x, "alpha3Code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +37,16 @@ object anon {
   }
   object DeviceId {
     
-    @scala.inline
-    def apply(deviceId: String, sessionKey: String): DeviceId = {
+    inline def apply(deviceId: String, sessionKey: String): DeviceId = {
       val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], sessionKey = sessionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeviceId]
     }
     
-    @scala.inline
-    implicit class DeviceIdMutableBuilder[Self <: DeviceId] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceId](x: Self) {
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+      inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,20 +56,16 @@ object anon {
   }
   object Locales {
     
-    @scala.inline
-    def apply(locales: js.Array[AccedoLocale]): Locales = {
+    inline def apply(locales: js.Array[AccedoLocale]): Locales = {
       val __obj = js.Dynamic.literal(locales = locales.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locales]
     }
     
-    @scala.inline
-    implicit class LocalesMutableBuilder[Self <: Locales] (val x: Self) extends AnyVal {
+    extension [Self <: Locales](x: Self) {
       
-      @scala.inline
-      def setLocales(value: js.Array[AccedoLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[AccedoLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesVarargs(value: AccedoLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: AccedoLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
     }
   }
   
@@ -92,32 +80,24 @@ object anon {
   }
   object PickAccedoEntryParamsprev {
     
-    @scala.inline
-    def apply(): PickAccedoEntryParamsprev = {
+    inline def apply(): PickAccedoEntryParamsprev = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickAccedoEntryParamsprev]
     }
     
-    @scala.inline
-    implicit class PickAccedoEntryParamsprevMutableBuilder[Self <: PickAccedoEntryParamsprev] (val x: Self) extends AnyVal {
+    extension [Self <: PickAccedoEntryParamsprev](x: Self) {
       
-      @scala.inline
-      def setAt(value: String | Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      inline def setAt(value: String | Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+      inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     }
   }
   
@@ -138,47 +118,34 @@ object anon {
   }
   object ReadonlyDetails {
     
-    @scala.inline
-    def apply(message: String): ReadonlyDetails = {
+    inline def apply(message: String): ReadonlyDetails = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyDetails]
     }
     
-    @scala.inline
-    implicit class ReadonlyDetailsMutableBuilder[Self <: ReadonlyDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyDetails](x: Self) {
       
-      @scala.inline
-      def setDim1(value: String): Self = StObject.set(x, "dim1", value.asInstanceOf[js.Any])
+      inline def setDim1(value: String): Self = StObject.set(x, "dim1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDim1Undefined: Self = StObject.set(x, "dim1", js.undefined)
+      inline def setDim1Undefined: Self = StObject.set(x, "dim1", js.undefined)
       
-      @scala.inline
-      def setDim2(value: String): Self = StObject.set(x, "dim2", value.asInstanceOf[js.Any])
+      inline def setDim2(value: String): Self = StObject.set(x, "dim2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDim2Undefined: Self = StObject.set(x, "dim2", js.undefined)
+      inline def setDim2Undefined: Self = StObject.set(x, "dim2", js.undefined)
       
-      @scala.inline
-      def setDim3(value: String): Self = StObject.set(x, "dim3", value.asInstanceOf[js.Any])
+      inline def setDim3(value: String): Self = StObject.set(x, "dim3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDim3Undefined: Self = StObject.set(x, "dim3", js.undefined)
+      inline def setDim3Undefined: Self = StObject.set(x, "dim3", js.undefined)
       
-      @scala.inline
-      def setDim4(value: String): Self = StObject.set(x, "dim4", value.asInstanceOf[js.Any])
+      inline def setDim4(value: String): Self = StObject.set(x, "dim4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDim4Undefined: Self = StObject.set(x, "dim4", js.undefined)
+      inline def setDim4Undefined: Self = StObject.set(x, "dim4", js.undefined)
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

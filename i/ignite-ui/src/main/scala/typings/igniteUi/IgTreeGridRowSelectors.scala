@@ -126,109 +126,75 @@ trait IgTreeGridRowSelectors
 }
 object IgTreeGridRowSelectors {
   
-  @scala.inline
-  def apply(): IgTreeGridRowSelectors = {
+  inline def apply(): IgTreeGridRowSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridRowSelectors]
   }
   
-  @scala.inline
-  implicit class IgTreeGridRowSelectorsMutableBuilder[Self <: IgTreeGridRowSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridRowSelectors](x: Self) {
     
-    @scala.inline
-    def setCheckBoxMode(value: String): Self = StObject.set(x, "checkBoxMode", value.asInstanceOf[js.Any])
+    inline def setCheckBoxMode(value: String): Self = StObject.set(x, "checkBoxMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckBoxModeUndefined: Self = StObject.set(x, "checkBoxMode", js.undefined)
+    inline def setCheckBoxModeUndefined: Self = StObject.set(x, "checkBoxMode", js.undefined)
     
-    @scala.inline
-    def setCheckBoxStateChanged(value: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit): Self = StObject.set(x, "checkBoxStateChanged", js.Any.fromFunction2(value))
+    inline def setCheckBoxStateChanged(value: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit): Self = StObject.set(x, "checkBoxStateChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckBoxStateChangedUndefined: Self = StObject.set(x, "checkBoxStateChanged", js.undefined)
+    inline def setCheckBoxStateChangedUndefined: Self = StObject.set(x, "checkBoxStateChanged", js.undefined)
     
-    @scala.inline
-    def setCheckBoxStateChanging(value: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Unit): Self = StObject.set(x, "checkBoxStateChanging", js.Any.fromFunction2(value))
+    inline def setCheckBoxStateChanging(value: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Unit): Self = StObject.set(x, "checkBoxStateChanging", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckBoxStateChangingUndefined: Self = StObject.set(x, "checkBoxStateChanging", js.undefined)
+    inline def setCheckBoxStateChangingUndefined: Self = StObject.set(x, "checkBoxStateChanging", js.undefined)
     
-    @scala.inline
-    def setDeselectAllForPagingTemplate(value: String): Self = StObject.set(x, "deselectAllForPagingTemplate", value.asInstanceOf[js.Any])
+    inline def setDeselectAllForPagingTemplate(value: String): Self = StObject.set(x, "deselectAllForPagingTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeselectAllForPagingTemplateUndefined: Self = StObject.set(x, "deselectAllForPagingTemplate", js.undefined)
+    inline def setDeselectAllForPagingTemplateUndefined: Self = StObject.set(x, "deselectAllForPagingTemplate", js.undefined)
     
-    @scala.inline
-    def setEnableCheckBoxes(value: Boolean): Self = StObject.set(x, "enableCheckBoxes", value.asInstanceOf[js.Any])
+    inline def setEnableCheckBoxes(value: Boolean): Self = StObject.set(x, "enableCheckBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCheckBoxesUndefined: Self = StObject.set(x, "enableCheckBoxes", js.undefined)
+    inline def setEnableCheckBoxesUndefined: Self = StObject.set(x, "enableCheckBoxes", js.undefined)
     
-    @scala.inline
-    def setEnableRowNumbering(value: Boolean): Self = StObject.set(x, "enableRowNumbering", value.asInstanceOf[js.Any])
+    inline def setEnableRowNumbering(value: Boolean): Self = StObject.set(x, "enableRowNumbering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRowNumberingUndefined: Self = StObject.set(x, "enableRowNumbering", js.undefined)
+    inline def setEnableRowNumberingUndefined: Self = StObject.set(x, "enableRowNumbering", js.undefined)
     
-    @scala.inline
-    def setEnableSelectAllForPaging(value: Boolean): Self = StObject.set(x, "enableSelectAllForPaging", value.asInstanceOf[js.Any])
+    inline def setEnableSelectAllForPaging(value: Boolean): Self = StObject.set(x, "enableSelectAllForPaging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSelectAllForPagingUndefined: Self = StObject.set(x, "enableSelectAllForPaging", js.undefined)
+    inline def setEnableSelectAllForPagingUndefined: Self = StObject.set(x, "enableSelectAllForPaging", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgGridRowSelectorsLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgGridRowSelectorsLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRequireSelection(value: Boolean): Self = StObject.set(x, "requireSelection", value.asInstanceOf[js.Any])
+    inline def setRequireSelection(value: Boolean): Self = StObject.set(x, "requireSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireSelectionUndefined: Self = StObject.set(x, "requireSelection", js.undefined)
+    inline def setRequireSelectionUndefined: Self = StObject.set(x, "requireSelection", js.undefined)
     
-    @scala.inline
-    def setRowNumberingSeed(value: Double): Self = StObject.set(x, "rowNumberingSeed", value.asInstanceOf[js.Any])
+    inline def setRowNumberingSeed(value: Double): Self = StObject.set(x, "rowNumberingSeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowNumberingSeedUndefined: Self = StObject.set(x, "rowNumberingSeed", js.undefined)
+    inline def setRowNumberingSeedUndefined: Self = StObject.set(x, "rowNumberingSeed", js.undefined)
     
-    @scala.inline
-    def setRowSelectorClicked(value: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Unit): Self = StObject.set(x, "rowSelectorClicked", js.Any.fromFunction2(value))
+    inline def setRowSelectorClicked(value: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Unit): Self = StObject.set(x, "rowSelectorClicked", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowSelectorClickedUndefined: Self = StObject.set(x, "rowSelectorClicked", js.undefined)
+    inline def setRowSelectorClickedUndefined: Self = StObject.set(x, "rowSelectorClicked", js.undefined)
     
-    @scala.inline
-    def setRowSelectorColumnWidth(value: String | Double): Self = StObject.set(x, "rowSelectorColumnWidth", value.asInstanceOf[js.Any])
+    inline def setRowSelectorColumnWidth(value: String | Double): Self = StObject.set(x, "rowSelectorColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelectorColumnWidthUndefined: Self = StObject.set(x, "rowSelectorColumnWidth", js.undefined)
+    inline def setRowSelectorColumnWidthUndefined: Self = StObject.set(x, "rowSelectorColumnWidth", js.undefined)
     
-    @scala.inline
-    def setRowSelectorNumberingMode(value: String): Self = StObject.set(x, "rowSelectorNumberingMode", value.asInstanceOf[js.Any])
+    inline def setRowSelectorNumberingMode(value: String): Self = StObject.set(x, "rowSelectorNumberingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelectorNumberingModeUndefined: Self = StObject.set(x, "rowSelectorNumberingMode", js.undefined)
+    inline def setRowSelectorNumberingModeUndefined: Self = StObject.set(x, "rowSelectorNumberingMode", js.undefined)
     
-    @scala.inline
-    def setSelectAllForPagingTemplate(value: String): Self = StObject.set(x, "selectAllForPagingTemplate", value.asInstanceOf[js.Any])
+    inline def setSelectAllForPagingTemplate(value: String): Self = StObject.set(x, "selectAllForPagingTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAllForPagingTemplateUndefined: Self = StObject.set(x, "selectAllForPagingTemplate", js.undefined)
+    inline def setSelectAllForPagingTemplateUndefined: Self = StObject.set(x, "selectAllForPagingTemplate", js.undefined)
     
-    @scala.inline
-    def setShowCheckBoxesOnFocus(value: Boolean): Self = StObject.set(x, "showCheckBoxesOnFocus", value.asInstanceOf[js.Any])
+    inline def setShowCheckBoxesOnFocus(value: Boolean): Self = StObject.set(x, "showCheckBoxesOnFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCheckBoxesOnFocusUndefined: Self = StObject.set(x, "showCheckBoxesOnFocus", js.undefined)
+    inline def setShowCheckBoxesOnFocusUndefined: Self = StObject.set(x, "showCheckBoxesOnFocus", js.undefined)
   }
 }

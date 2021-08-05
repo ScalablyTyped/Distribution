@@ -67,8 +67,7 @@ trait StorageStream
 }
 object StorageStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     IsCompressed: Boolean,
     IsEncrypted: Boolean,
@@ -104,22 +103,16 @@ object StorageStream {
     __obj.asInstanceOf[StorageStream]
   }
   
-  @scala.inline
-  implicit class StorageStreamMutableBuilder[Self <: StorageStream] (val x: Self) extends AnyVal {
+  extension [Self <: StorageStream](x: Self) {
     
-    @scala.inline
-    def setIsCompressed(value: Boolean): Self = StObject.set(x, "IsCompressed", value.asInstanceOf[js.Any])
+    inline def setIsCompressed(value: Boolean): Self = StObject.set(x, "IsCompressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "IsEncrypted", value.asInstanceOf[js.Any])
+    inline def setIsEncrypted(value: Boolean): Self = StObject.set(x, "IsEncrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCommonStoragePasswordEncryption(value: Boolean): Self = StObject.set(x, "UseCommonStoragePasswordEncryption", value.asInstanceOf[js.Any])
+    inline def setUseCommonStoragePasswordEncryption(value: Boolean): Self = StObject.set(x, "UseCommonStoragePasswordEncryption", value.asInstanceOf[js.Any])
   }
 }

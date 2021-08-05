@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uIlluminance extends StObject
 object uIlluminance {
   
-  @scala.inline
-  def `ft-cd`: typings.convertUnits.convertUnitsStrings.`ft-cd` = "ft-cd".asInstanceOf[typings.convertUnits.convertUnitsStrings.`ft-cd`]
+  inline def `ft-cd`: typings.convertUnits.convertUnitsStrings.`ft-cd` = "ft-cd".asInstanceOf[typings.convertUnits.convertUnitsStrings.`ft-cd`]
   
-  @scala.inline
-  def lx: typings.convertUnits.convertUnitsStrings.lx = "lx".asInstanceOf[typings.convertUnits.convertUnitsStrings.lx]
+  inline def lx: typings.convertUnits.convertUnitsStrings.lx = "lx".asInstanceOf[typings.convertUnits.convertUnitsStrings.lx]
 }

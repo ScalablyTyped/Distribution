@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.AddIns")
 @js.native
-class AddIns protected ()
+/* private */ class AddIns ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.AddIns {
   
@@ -25,7 +25,7 @@ class AddIns protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.AddIns_typekey")
   var PowerPointDotAddIns_typekey: typings.activexPowerpoint.PowerPoint.AddIns = js.native
   

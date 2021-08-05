@@ -13,13 +13,10 @@ object groupsimultaneousMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](
+  inline def default[V](
     streams: (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
   ): EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(streams.asInstanceOf[js.Any]).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
   
-  @scala.inline
-  def groupSimultaneous[V](streams: js.Array[default[V]]): EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous_")(streams.asInstanceOf[js.Any]).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
-  @scala.inline
-  def groupSimultaneous[V](streams: js.Array[default[V]], options: EventStreamOptions): EventStream[js.Array[js.Array[V]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous_")(streams.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
+  inline def groupSimultaneous[V](streams: js.Array[default[V]]): EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous_")(streams.asInstanceOf[js.Any]).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
+  inline def groupSimultaneous[V](streams: js.Array[default[V]], options: EventStreamOptions): EventStream[js.Array[js.Array[V]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous_")(streams.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
 }

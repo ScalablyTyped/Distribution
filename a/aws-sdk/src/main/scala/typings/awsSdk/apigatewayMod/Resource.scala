@@ -33,43 +33,31 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(): Resource = {
+  inline def apply(): Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPart(value: String): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
+    inline def setPathPart(value: String): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPartUndefined: Self = StObject.set(x, "pathPart", js.undefined)
+    inline def setPathPartUndefined: Self = StObject.set(x, "pathPart", js.undefined)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setResourceMethods(value: MapOfMethod): Self = StObject.set(x, "resourceMethods", value.asInstanceOf[js.Any])
+    inline def setResourceMethods(value: MapOfMethod): Self = StObject.set(x, "resourceMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceMethodsUndefined: Self = StObject.set(x, "resourceMethods", js.undefined)
+    inline def setResourceMethodsUndefined: Self = StObject.set(x, "resourceMethods", js.undefined)
   }
 }

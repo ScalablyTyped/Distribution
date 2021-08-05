@@ -42,8 +42,7 @@ trait Cart
 }
 object Cart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkoutUrl: String,
     id: String | Double,
     lineItemCount: Double,
@@ -54,31 +53,22 @@ object Cart {
     __obj.asInstanceOf[Cart]
   }
   
-  @scala.inline
-  implicit class CartMutableBuilder[Self <: Cart] (val x: Self) extends AnyVal {
+  extension [Self <: Cart](x: Self) {
     
-    @scala.inline
-    def setCheckoutUrl(value: String): Self = StObject.set(x, "checkoutUrl", value.asInstanceOf[js.Any])
+    inline def setCheckoutUrl(value: String): Self = StObject.set(x, "checkoutUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedAt(value: String): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
+    inline def setCompletedAt(value: String): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedAtNull: Self = StObject.set(x, "completedAt", null)
+    inline def setCompletedAtNull: Self = StObject.set(x, "completedAt", null)
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemCount(value: Double): Self = StObject.set(x, "lineItemCount", value.asInstanceOf[js.Any])
+    inline def setLineItemCount(value: Double): Self = StObject.set(x, "lineItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItems(value: js.Array[LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: js.Array[LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
-    @scala.inline
-    def setSubtotalPrice(value: String): Self = StObject.set(x, "subtotalPrice", value.asInstanceOf[js.Any])
+    inline def setSubtotalPrice(value: String): Self = StObject.set(x, "subtotalPrice", value.asInstanceOf[js.Any])
   }
 }

@@ -19,19 +19,15 @@ trait CustomerLastContact extends StObject {
 }
 object CustomerLastContact {
   
-  @scala.inline
-  def apply(account: String, lastContactDate: Date): CustomerLastContact = {
+  inline def apply(account: String, lastContactDate: Date): CustomerLastContact = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], lastContactDate = lastContactDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerLastContact]
   }
   
-  @scala.inline
-  implicit class CustomerLastContactMutableBuilder[Self <: CustomerLastContact] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerLastContact](x: Self) {
     
-    @scala.inline
-    def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastContactDate(value: Date): Self = StObject.set(x, "lastContactDate", value.asInstanceOf[js.Any])
+    inline def setLastContactDate(value: Date): Self = StObject.set(x, "lastContactDate", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait AttemptDetail extends StObject {
 }
 object AttemptDetail {
   
-  @scala.inline
-  def apply(): AttemptDetail = {
+  inline def apply(): AttemptDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttemptDetail]
   }
   
-  @scala.inline
-  implicit class AttemptDetailMutableBuilder[Self <: AttemptDetail] (val x: Self) extends AnyVal {
+  extension [Self <: AttemptDetail](x: Self) {
     
-    @scala.inline
-    def setContainer(value: AttemptContainerDetail): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: AttemptContainerDetail): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setStartedAt(value: Long): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: Long): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
     
-    @scala.inline
-    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStoppedAt(value: Long): Self = StObject.set(x, "stoppedAt", value.asInstanceOf[js.Any])
+    inline def setStoppedAt(value: Long): Self = StObject.set(x, "stoppedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppedAtUndefined: Self = StObject.set(x, "stoppedAt", js.undefined)
+    inline def setStoppedAtUndefined: Self = StObject.set(x, "stoppedAt", js.undefined)
   }
 }

@@ -15,6 +15,5 @@ object EventTable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEventType(eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.eeventtypeMod.EEventType = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventType")(eventName.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.eeventtypeMod.EEventType]
+  inline def getEventType(eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.eeventtypeMod.EEventType = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventType")(eventName.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.eeventtypeMod.EEventType]
 }

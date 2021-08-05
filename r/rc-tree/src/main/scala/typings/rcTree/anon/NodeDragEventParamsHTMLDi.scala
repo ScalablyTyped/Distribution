@@ -19,8 +19,7 @@ trait NodeDragEventParamsHTMLDi extends StObject {
 }
 object NodeDragEventParamsHTMLDi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     event: MouseEvent[HTMLDivElement, NativeMouseEvent],
     expandedKeys: js.Array[typings.rcTree.interfaceMod.Key],
     node: EventDataNode
@@ -29,19 +28,14 @@ object NodeDragEventParamsHTMLDi {
     __obj.asInstanceOf[NodeDragEventParamsHTMLDi]
   }
   
-  @scala.inline
-  implicit class NodeDragEventParamsHTMLDiMutableBuilder[Self <: NodeDragEventParamsHTMLDi] (val x: Self) extends AnyVal {
+  extension [Self <: NodeDragEventParamsHTMLDi](x: Self) {
     
-    @scala.inline
-    def setEvent(value: MouseEvent[HTMLDivElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent[HTMLDivElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
+    inline def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
+    inline def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

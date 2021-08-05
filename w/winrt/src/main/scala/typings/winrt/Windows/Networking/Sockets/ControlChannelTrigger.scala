@@ -13,8 +13,7 @@ trait ControlChannelTrigger
 }
 object ControlChannelTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     controlChannelTriggerId: String,
     currentKeepAliveIntervalInMinutes: Double,
@@ -32,10 +31,8 @@ object ControlChannelTrigger {
     __obj.asInstanceOf[ControlChannelTrigger]
   }
   
-  @scala.inline
-  implicit class ControlChannelTriggerMutableBuilder[Self <: ControlChannelTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ControlChannelTrigger](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

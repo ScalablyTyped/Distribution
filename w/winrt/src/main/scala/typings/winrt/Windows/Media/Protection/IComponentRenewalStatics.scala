@@ -11,18 +11,15 @@ trait IComponentRenewalStatics extends StObject {
 }
 object IComponentRenewalStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     renewSystemComponentsAsync: RevocationAndRenewalInformation => IAsyncOperationWithProgress[RenewalStatus, Double]
   ): IComponentRenewalStatics = {
     val __obj = js.Dynamic.literal(renewSystemComponentsAsync = js.Any.fromFunction1(renewSystemComponentsAsync))
     __obj.asInstanceOf[IComponentRenewalStatics]
   }
   
-  @scala.inline
-  implicit class IComponentRenewalStaticsMutableBuilder[Self <: IComponentRenewalStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IComponentRenewalStatics](x: Self) {
     
-    @scala.inline
-    def setRenewSystemComponentsAsync(value: RevocationAndRenewalInformation => IAsyncOperationWithProgress[RenewalStatus, Double]): Self = StObject.set(x, "renewSystemComponentsAsync", js.Any.fromFunction1(value))
+    inline def setRenewSystemComponentsAsync(value: RevocationAndRenewalInformation => IAsyncOperationWithProgress[RenewalStatus, Double]): Self = StObject.set(x, "renewSystemComponentsAsync", js.Any.fromFunction1(value))
   }
 }

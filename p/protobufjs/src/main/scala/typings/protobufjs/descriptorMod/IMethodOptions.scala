@@ -10,19 +10,15 @@ trait IMethodOptions extends StObject {
 }
 object IMethodOptions {
   
-  @scala.inline
-  def apply(): IMethodOptions = {
+  inline def apply(): IMethodOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMethodOptions]
   }
   
-  @scala.inline
-  implicit class IMethodOptionsMutableBuilder[Self <: IMethodOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMethodOptions](x: Self) {
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
   }
 }

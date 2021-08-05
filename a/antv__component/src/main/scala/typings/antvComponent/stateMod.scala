@@ -11,6 +11,5 @@ object stateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStatesStyle(item: ListItem, elementName: String, stateStyles: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStatesStyle")(item.asInstanceOf[js.Any], elementName.asInstanceOf[js.Any], stateStyles.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getStatesStyle(item: ListItem, elementName: String, stateStyles: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStatesStyle")(item.asInstanceOf[js.Any], elementName.asInstanceOf[js.Any], stateStyles.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

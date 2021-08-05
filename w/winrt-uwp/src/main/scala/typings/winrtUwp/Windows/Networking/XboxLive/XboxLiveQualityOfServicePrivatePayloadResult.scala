@@ -19,8 +19,7 @@ trait XboxLiveQualityOfServicePrivatePayloadResult extends StObject {
 }
 object XboxLiveQualityOfServicePrivatePayloadResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceAddress: XboxLiveDeviceAddress,
     status: XboxLiveQualityOfServiceMeasurementStatus,
     value: IBuffer
@@ -29,16 +28,12 @@ object XboxLiveQualityOfServicePrivatePayloadResult {
     __obj.asInstanceOf[XboxLiveQualityOfServicePrivatePayloadResult]
   }
   
-  @scala.inline
-  implicit class XboxLiveQualityOfServicePrivatePayloadResultMutableBuilder[Self <: XboxLiveQualityOfServicePrivatePayloadResult] (val x: Self) extends AnyVal {
+  extension [Self <: XboxLiveQualityOfServicePrivatePayloadResult](x: Self) {
     
-    @scala.inline
-    def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
+    inline def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: XboxLiveQualityOfServiceMeasurementStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: XboxLiveQualityOfServiceMeasurementStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

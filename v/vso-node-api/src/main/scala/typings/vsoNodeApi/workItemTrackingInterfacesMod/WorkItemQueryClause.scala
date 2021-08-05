@@ -43,8 +43,7 @@ trait WorkItemQueryClause extends StObject {
 }
 object WorkItemQueryClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clauses: js.Array[WorkItemQueryClause],
     field: WorkItemFieldReference,
     fieldValue: WorkItemFieldReference,
@@ -57,31 +56,22 @@ object WorkItemQueryClause {
     __obj.asInstanceOf[WorkItemQueryClause]
   }
   
-  @scala.inline
-  implicit class WorkItemQueryClauseMutableBuilder[Self <: WorkItemQueryClause] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemQueryClause](x: Self) {
     
-    @scala.inline
-    def setClauses(value: js.Array[WorkItemQueryClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
+    inline def setClauses(value: js.Array[WorkItemQueryClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClausesVarargs(value: WorkItemQueryClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+    inline def setClausesVarargs(value: WorkItemQueryClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: WorkItemFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: WorkItemFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldValue(value: WorkItemFieldReference): Self = StObject.set(x, "fieldValue", value.asInstanceOf[js.Any])
+    inline def setFieldValue(value: WorkItemFieldReference): Self = StObject.set(x, "fieldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFieldValue(value: Boolean): Self = StObject.set(x, "isFieldValue", value.asInstanceOf[js.Any])
+    inline def setIsFieldValue(value: Boolean): Self = StObject.set(x, "isFieldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalOperator(value: LogicalOperation): Self = StObject.set(x, "logicalOperator", value.asInstanceOf[js.Any])
+    inline def setLogicalOperator(value: LogicalOperation): Self = StObject.set(x, "logicalOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: WorkItemFieldOperation): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: WorkItemFieldOperation): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

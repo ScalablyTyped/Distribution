@@ -13,19 +13,15 @@ trait LaunchConfiguration extends StObject {
 }
 object LaunchConfiguration {
   
-  @scala.inline
-  def apply(): LaunchConfiguration = {
+  inline def apply(): LaunchConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchConfiguration]
   }
   
-  @scala.inline
-  implicit class LaunchConfigurationMutableBuilder[Self <: LaunchConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchConfiguration](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceId): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceId): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

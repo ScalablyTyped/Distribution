@@ -75,8 +75,7 @@ object mod {
   }
   object Route {
     
-    @scala.inline
-    def apply[TParams /* <: js.Object */](
+    inline def apply[TParams /* <: js.Object */](
       `match`: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof TParams ]: string}
       */ typings.routeParser.routeParserStrings.Route & TopLevel[js.Any]) | `false`,
@@ -87,18 +86,15 @@ object mod {
       __obj.asInstanceOf[Route[TParams]]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route[?], TParams /* <: js.Object */] (val x: Self & Route[TParams]) extends AnyVal {
+    extension [Self <: Route[?], TParams /* <: js.Object */](x: Self & Route[TParams]) {
       
-      @scala.inline
-      def setMatch(
+      inline def setMatch(
         value: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ k in keyof TParams ]: string}
         */ typings.routeParser.routeParserStrings.Route & TopLevel[js.Any]) | `false`
       ): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReverse(value: TParams => String | `false`): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
+      inline def setReverse(value: TParams => String | `false`): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
     }
   }
 }

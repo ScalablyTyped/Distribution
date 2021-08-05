@@ -25,8 +25,7 @@ trait FileBrowserProvider
 }
 object FileBrowserProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeFileBrowser: String => Thenable[FileBrowserCloseResponse],
     expandFolderNode: (String, String) => Thenable[Boolean],
     openFileBrowser: (String, String, js.Array[String], Boolean) => Thenable[Boolean],
@@ -40,28 +39,20 @@ object FileBrowserProvider {
     __obj.asInstanceOf[FileBrowserProvider]
   }
   
-  @scala.inline
-  implicit class FileBrowserProviderMutableBuilder[Self <: FileBrowserProvider] (val x: Self) extends AnyVal {
+  extension [Self <: FileBrowserProvider](x: Self) {
     
-    @scala.inline
-    def setCloseFileBrowser(value: String => Thenable[FileBrowserCloseResponse]): Self = StObject.set(x, "closeFileBrowser", js.Any.fromFunction1(value))
+    inline def setCloseFileBrowser(value: String => Thenable[FileBrowserCloseResponse]): Self = StObject.set(x, "closeFileBrowser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandFolderNode(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "expandFolderNode", js.Any.fromFunction2(value))
+    inline def setExpandFolderNode(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "expandFolderNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOpenFileBrowser(value: (String, String, js.Array[String], Boolean) => Thenable[Boolean]): Self = StObject.set(x, "openFileBrowser", js.Any.fromFunction4(value))
+    inline def setOpenFileBrowser(value: (String, String, js.Array[String], Boolean) => Thenable[Boolean]): Self = StObject.set(x, "openFileBrowser", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRegisterOnFileBrowserOpened(value: js.Function1[/* response */ FileBrowserOpenedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnFileBrowserOpened", js.Any.fromFunction1(value))
+    inline def setRegisterOnFileBrowserOpened(value: js.Function1[/* response */ FileBrowserOpenedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnFileBrowserOpened", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnFilePathsValidated(value: js.Function1[/* response */ FileBrowserValidatedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnFilePathsValidated", js.Any.fromFunction1(value))
+    inline def setRegisterOnFilePathsValidated(value: js.Function1[/* response */ FileBrowserValidatedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnFilePathsValidated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnFolderNodeExpanded(value: js.Function1[/* response */ FileBrowserExpandedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnFolderNodeExpanded", js.Any.fromFunction1(value))
+    inline def setRegisterOnFolderNodeExpanded(value: js.Function1[/* response */ FileBrowserExpandedParams, js.Any] => Unit): Self = StObject.set(x, "registerOnFolderNodeExpanded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateFilePaths(value: (String, String, js.Array[String]) => Thenable[Boolean]): Self = StObject.set(x, "validateFilePaths", js.Any.fromFunction3(value))
+    inline def setValidateFilePaths(value: (String, String, js.Array[String]) => Thenable[Boolean]): Self = StObject.set(x, "validateFilePaths", js.Any.fromFunction3(value))
   }
 }

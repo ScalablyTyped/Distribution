@@ -12,8 +12,7 @@ trait IBackgroundTransferContentPartFactory extends StObject {
 }
 object IBackgroundTransferContentPartFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createWithName: String => BackgroundTransferContentPart,
     createWithNameAndFileName: (String, String) => BackgroundTransferContentPart
   ): IBackgroundTransferContentPartFactory = {
@@ -21,13 +20,10 @@ object IBackgroundTransferContentPartFactory {
     __obj.asInstanceOf[IBackgroundTransferContentPartFactory]
   }
   
-  @scala.inline
-  implicit class IBackgroundTransferContentPartFactoryMutableBuilder[Self <: IBackgroundTransferContentPartFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTransferContentPartFactory](x: Self) {
     
-    @scala.inline
-    def setCreateWithName(value: String => BackgroundTransferContentPart): Self = StObject.set(x, "createWithName", js.Any.fromFunction1(value))
+    inline def setCreateWithName(value: String => BackgroundTransferContentPart): Self = StObject.set(x, "createWithName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithNameAndFileName(value: (String, String) => BackgroundTransferContentPart): Self = StObject.set(x, "createWithNameAndFileName", js.Any.fromFunction2(value))
+    inline def setCreateWithNameAndFileName(value: (String, String) => BackgroundTransferContentPart): Self = StObject.set(x, "createWithNameAndFileName", js.Any.fromFunction2(value))
   }
 }

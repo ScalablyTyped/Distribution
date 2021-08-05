@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // engine/model/documentfragment
 @JSImport("@ckeditor/ckeditor5-engine", "model.DocumentFragment")
 @js.native
-class DocumentFragment protected ()
+/* protected */ class DocumentFragment ()
   extends StObject
      with _NodeSet {
-  protected def this(children: Node) = this()
-  protected def this(children: Iterable[Node]) = this()
+  /* protected */ def this(children: Node) = this()
+  /* protected */ def this(children: Iterable[Node]) = this()
   
   /* protected */ def _appendChild(items: Item): Unit = js.native
   /* protected */ def _appendChild(items: Iterable[Item]): Unit = js.native
@@ -66,6 +66,5 @@ object DocumentFragment {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromJSON(json: js.Object): DocumentFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
+  inline def fromJSON(json: js.Object): DocumentFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
 }

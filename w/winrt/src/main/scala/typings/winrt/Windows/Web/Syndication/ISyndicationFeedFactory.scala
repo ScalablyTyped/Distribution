@@ -11,16 +11,13 @@ trait ISyndicationFeedFactory extends StObject {
 }
 object ISyndicationFeedFactory {
   
-  @scala.inline
-  def apply(createSyndicationFeed: (String, String, Uri) => SyndicationFeed): ISyndicationFeedFactory = {
+  inline def apply(createSyndicationFeed: (String, String, Uri) => SyndicationFeed): ISyndicationFeedFactory = {
     val __obj = js.Dynamic.literal(createSyndicationFeed = js.Any.fromFunction3(createSyndicationFeed))
     __obj.asInstanceOf[ISyndicationFeedFactory]
   }
   
-  @scala.inline
-  implicit class ISyndicationFeedFactoryMutableBuilder[Self <: ISyndicationFeedFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationFeedFactory](x: Self) {
     
-    @scala.inline
-    def setCreateSyndicationFeed(value: (String, String, Uri) => SyndicationFeed): Self = StObject.set(x, "createSyndicationFeed", js.Any.fromFunction3(value))
+    inline def setCreateSyndicationFeed(value: (String, String, Uri) => SyndicationFeed): Self = StObject.set(x, "createSyndicationFeed", js.Any.fromFunction3(value))
   }
 }

@@ -12,22 +12,17 @@ trait IsOpen extends StObject {
 }
 object IsOpen {
   
-  @scala.inline
-  def apply(isOpen: Boolean, selectedIds: js.Array[js.Any]): IsOpen = {
+  inline def apply(isOpen: Boolean, selectedIds: js.Array[js.Any]): IsOpen = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], selectedIds = selectedIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsOpen]
   }
   
-  @scala.inline
-  implicit class IsOpenMutableBuilder[Self <: IsOpen] (val x: Self) extends AnyVal {
+  extension [Self <: IsOpen](x: Self) {
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIds(value: js.Array[js.Any]): Self = StObject.set(x, "selectedIds", value.asInstanceOf[js.Any])
+    inline def setSelectedIds(value: js.Array[js.Any]): Self = StObject.set(x, "selectedIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIdsVarargs(value: js.Any*): Self = StObject.set(x, "selectedIds", js.Array(value :_*))
+    inline def setSelectedIdsVarargs(value: js.Any*): Self = StObject.set(x, "selectedIds", js.Array(value :_*))
   }
 }

@@ -12,6 +12,5 @@ object computeExponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ComputeExponent(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `1`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def ComputeExponent(numberFormat: NumberFormat, x: Double, hasGetInternalSlots: `1`): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeExponent")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], hasGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
 }

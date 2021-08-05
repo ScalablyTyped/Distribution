@@ -71,8 +71,7 @@ trait XDispatchRecorder
 }
 object XDispatchRecorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RecordedMacro: String,
     acquire: () => Unit,
     endRecording: () => Unit,
@@ -87,25 +86,18 @@ object XDispatchRecorder {
     __obj.asInstanceOf[XDispatchRecorder]
   }
   
-  @scala.inline
-  implicit class XDispatchRecorderMutableBuilder[Self <: XDispatchRecorder] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchRecorder](x: Self) {
     
-    @scala.inline
-    def setEndRecording(value: () => Unit): Self = StObject.set(x, "endRecording", js.Any.fromFunction0(value))
+    inline def setEndRecording(value: () => Unit): Self = StObject.set(x, "endRecording", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecordedMacro(value: () => String): Self = StObject.set(x, "getRecordedMacro", js.Any.fromFunction0(value))
+    inline def setGetRecordedMacro(value: () => String): Self = StObject.set(x, "getRecordedMacro", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecordDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recordDispatch", js.Any.fromFunction2(value))
+    inline def setRecordDispatch(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recordDispatch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRecordDispatchAsComment(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recordDispatchAsComment", js.Any.fromFunction2(value))
+    inline def setRecordDispatchAsComment(value: (URL, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recordDispatchAsComment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRecordedMacro(value: String): Self = StObject.set(x, "RecordedMacro", value.asInstanceOf[js.Any])
+    inline def setRecordedMacro(value: String): Self = StObject.set(x, "RecordedMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRecording(value: XFrame => Unit): Self = StObject.set(x, "startRecording", js.Any.fromFunction1(value))
+    inline def setStartRecording(value: XFrame => Unit): Self = StObject.set(x, "startRecording", js.Any.fromFunction1(value))
   }
 }

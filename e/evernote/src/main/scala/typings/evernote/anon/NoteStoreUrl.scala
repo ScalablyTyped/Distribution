@@ -20,43 +20,31 @@ trait NoteStoreUrl extends StObject {
 }
 object NoteStoreUrl {
   
-  @scala.inline
-  def apply(): NoteStoreUrl = {
+  inline def apply(): NoteStoreUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoteStoreUrl]
   }
   
-  @scala.inline
-  implicit class NoteStoreUrlMutableBuilder[Self <: NoteStoreUrl] (val x: Self) extends AnyVal {
+  extension [Self <: NoteStoreUrl](x: Self) {
     
-    @scala.inline
-    def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
+    inline def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
+    inline def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
     
-    @scala.inline
-    def setServiceLevel(value: ServiceLevel): Self = StObject.set(x, "serviceLevel", value.asInstanceOf[js.Any])
+    inline def setServiceLevel(value: ServiceLevel): Self = StObject.set(x, "serviceLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceLevelUndefined: Self = StObject.set(x, "serviceLevel", js.undefined)
+    inline def setServiceLevelUndefined: Self = StObject.set(x, "serviceLevel", js.undefined)
     
-    @scala.inline
-    def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserID): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    @scala.inline
-    def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
+    inline def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
+    inline def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
   }
 }

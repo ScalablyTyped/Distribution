@@ -18,25 +18,19 @@ trait ChefConfiguration extends StObject {
 }
 object ChefConfiguration {
   
-  @scala.inline
-  def apply(): ChefConfiguration = {
+  inline def apply(): ChefConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChefConfiguration]
   }
   
-  @scala.inline
-  implicit class ChefConfigurationMutableBuilder[Self <: ChefConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ChefConfiguration](x: Self) {
     
-    @scala.inline
-    def setBerkshelfVersion(value: String): Self = StObject.set(x, "BerkshelfVersion", value.asInstanceOf[js.Any])
+    inline def setBerkshelfVersion(value: String): Self = StObject.set(x, "BerkshelfVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBerkshelfVersionUndefined: Self = StObject.set(x, "BerkshelfVersion", js.undefined)
+    inline def setBerkshelfVersionUndefined: Self = StObject.set(x, "BerkshelfVersion", js.undefined)
     
-    @scala.inline
-    def setManageBerkshelf(value: Boolean): Self = StObject.set(x, "ManageBerkshelf", value.asInstanceOf[js.Any])
+    inline def setManageBerkshelf(value: Boolean): Self = StObject.set(x, "ManageBerkshelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManageBerkshelfUndefined: Self = StObject.set(x, "ManageBerkshelf", js.undefined)
+    inline def setManageBerkshelfUndefined: Self = StObject.set(x, "ManageBerkshelf", js.undefined)
   }
 }

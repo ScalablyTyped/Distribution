@@ -58,8 +58,7 @@ trait RefreshModeChangedEventArgs extends StObject {
 }
 object RefreshModeChangedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     refreshMode: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic,
     serviceId: Double,
     source: EventSource | Local | Remote
@@ -69,19 +68,14 @@ object RefreshModeChangedEventArgs {
     __obj.asInstanceOf[RefreshModeChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class RefreshModeChangedEventArgsMutableBuilder[Self <: RefreshModeChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshModeChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRefreshMode(value: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
+    inline def setRefreshMode(value: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LinkedDataTypeRefreshModeChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LinkedDataTypeRefreshModeChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

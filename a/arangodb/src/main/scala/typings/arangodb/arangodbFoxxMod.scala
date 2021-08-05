@@ -11,6 +11,5 @@ object arangodbFoxxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRouter(): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")().asInstanceOf[Router]
+  inline def createRouter(): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")().asInstanceOf[Router]
 }

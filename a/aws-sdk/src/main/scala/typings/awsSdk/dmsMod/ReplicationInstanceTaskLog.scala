@@ -23,31 +23,23 @@ trait ReplicationInstanceTaskLog extends StObject {
 }
 object ReplicationInstanceTaskLog {
   
-  @scala.inline
-  def apply(): ReplicationInstanceTaskLog = {
+  inline def apply(): ReplicationInstanceTaskLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationInstanceTaskLog]
   }
   
-  @scala.inline
-  implicit class ReplicationInstanceTaskLogMutableBuilder[Self <: ReplicationInstanceTaskLog] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationInstanceTaskLog](x: Self) {
     
-    @scala.inline
-    def setReplicationInstanceTaskLogSize(value: Long): Self = StObject.set(x, "ReplicationInstanceTaskLogSize", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceTaskLogSize(value: Long): Self = StObject.set(x, "ReplicationInstanceTaskLogSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceTaskLogSizeUndefined: Self = StObject.set(x, "ReplicationInstanceTaskLogSize", js.undefined)
+    inline def setReplicationInstanceTaskLogSizeUndefined: Self = StObject.set(x, "ReplicationInstanceTaskLogSize", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
+    inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskName(value: String): Self = StObject.set(x, "ReplicationTaskName", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskName(value: String): Self = StObject.set(x, "ReplicationTaskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskNameUndefined: Self = StObject.set(x, "ReplicationTaskName", js.undefined)
+    inline def setReplicationTaskNameUndefined: Self = StObject.set(x, "ReplicationTaskName", js.undefined)
   }
 }

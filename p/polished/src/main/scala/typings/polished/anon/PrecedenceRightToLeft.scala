@@ -25,35 +25,27 @@ trait PrecedenceRightToLeft extends StObject {
 }
 object PrecedenceRightToLeft {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify comma */ js.Any
   ): PrecedenceRightToLeft = {
     val __obj = js.Dynamic.literal(argCount = 2, f = f.asInstanceOf[js.Any], notation = "infix", precedence = 1, rightToLeft = 0, symbol = ",")
     __obj.asInstanceOf[PrecedenceRightToLeft]
   }
   
-  @scala.inline
-  implicit class PrecedenceRightToLeftMutableBuilder[Self <: PrecedenceRightToLeft] (val x: Self) extends AnyVal {
+  extension [Self <: PrecedenceRightToLeft](x: Self) {
     
-    @scala.inline
-    def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
+    inline def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(
+    inline def setF(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify comma */ js.Any
     ): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotation(value: infix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: infix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecedence(value: `1`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+    inline def setPrecedence(value: `1`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
+    inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Comma): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Comma): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

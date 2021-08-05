@@ -18,28 +18,21 @@ trait LogSetup extends StObject {
 }
 object LogSetup {
   
-  @scala.inline
-  def apply(): LogSetup = {
+  inline def apply(): LogSetup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogSetup]
   }
   
-  @scala.inline
-  implicit class LogSetupMutableBuilder[Self <: LogSetup] (val x: Self) extends AnyVal {
+  extension [Self <: LogSetup](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: BoxedBoolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BoxedBoolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setTypes(value: LogTypes): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: LogTypes): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: LogType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: LogType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

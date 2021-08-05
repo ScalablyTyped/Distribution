@@ -30,34 +30,25 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(method: MethodType, path: String): Request = {
+  inline def apply(method: MethodType, path: String): Request = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
+    inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
+    inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
-    @scala.inline
-    def setData(value: (Record[String, js.Any]) | (js.Array[Record[String, js.Any]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: (Record[String, js.Any]) | (js.Array[Record[String, js.Any]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: MethodType): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: MethodType): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

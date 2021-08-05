@@ -18,25 +18,19 @@ trait PublishResponse extends StObject {
 }
 object PublishResponse {
   
-  @scala.inline
-  def apply(): PublishResponse = {
+  inline def apply(): PublishResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublishResponse]
   }
   
-  @scala.inline
-  implicit class PublishResponseMutableBuilder[Self <: PublishResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PublishResponse](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: messageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: messageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
-    @scala.inline
-    def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+    inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
   }
 }

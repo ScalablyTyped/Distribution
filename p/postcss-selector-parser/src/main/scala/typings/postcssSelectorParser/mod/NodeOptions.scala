@@ -17,34 +17,25 @@ trait NodeOptions[Value] extends StObject {
 }
 object NodeOptions {
   
-  @scala.inline
-  def apply[Value](value: Value): NodeOptions[Value] = {
+  inline def apply[Value](value: Value): NodeOptions[Value] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeOptions[Value]]
   }
   
-  @scala.inline
-  implicit class NodeOptionsMutableBuilder[Self <: NodeOptions[?], Value] (val x: Self & NodeOptions[Value]) extends AnyVal {
+  extension [Self <: NodeOptions[?], Value](x: Self & NodeOptions[Value]) {
     
-    @scala.inline
-    def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndexUndefined: Self = StObject.set(x, "sourceIndex", js.undefined)
+    inline def setSourceIndexUndefined: Self = StObject.set(x, "sourceIndex", js.undefined)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSpaces(value: PartialSpaces): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: PartialSpaces): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

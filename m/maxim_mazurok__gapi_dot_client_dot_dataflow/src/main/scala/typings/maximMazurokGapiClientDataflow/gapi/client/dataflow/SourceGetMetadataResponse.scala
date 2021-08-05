@@ -11,19 +11,15 @@ trait SourceGetMetadataResponse extends StObject {
 }
 object SourceGetMetadataResponse {
   
-  @scala.inline
-  def apply(): SourceGetMetadataResponse = {
+  inline def apply(): SourceGetMetadataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceGetMetadataResponse]
   }
   
-  @scala.inline
-  implicit class SourceGetMetadataResponseMutableBuilder[Self <: SourceGetMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SourceGetMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

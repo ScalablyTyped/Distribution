@@ -11,19 +11,15 @@ trait Viewport extends StObject {
 }
 object Viewport {
   
-  @scala.inline
-  def apply(): Viewport = {
+  inline def apply(): Viewport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Viewport]
   }
   
-  @scala.inline
-  implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
+  extension [Self <: Viewport](x: Self) {
     
-    @scala.inline
-    def setViewport(value: IViewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: IViewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+    inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

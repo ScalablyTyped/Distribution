@@ -40,13 +40,10 @@ object authorityKeyIdentifierMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait AuthorityKeyIdentifier extends StObject {
@@ -65,8 +62,7 @@ object authorityKeyIdentifierMod {
   }
   object AuthorityKeyIdentifier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorityCertIssuer: js.Array[typings.pkijs.accessDescriptionMod.default],
       authorityCertSerialNumber: Integer,
       fromSchema: js.Any => Unit,
@@ -78,29 +74,21 @@ object authorityKeyIdentifierMod {
       __obj.asInstanceOf[AuthorityKeyIdentifier]
     }
     
-    @scala.inline
-    implicit class AuthorityKeyIdentifierMutableBuilder[Self <: AuthorityKeyIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorityKeyIdentifier](x: Self) {
       
-      @scala.inline
-      def setAuthorityCertIssuer(value: js.Array[typings.pkijs.accessDescriptionMod.default]): Self = StObject.set(x, "authorityCertIssuer", value.asInstanceOf[js.Any])
+      inline def setAuthorityCertIssuer(value: js.Array[typings.pkijs.accessDescriptionMod.default]): Self = StObject.set(x, "authorityCertIssuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorityCertIssuerVarargs(value: typings.pkijs.accessDescriptionMod.default*): Self = StObject.set(x, "authorityCertIssuer", js.Array(value :_*))
+      inline def setAuthorityCertIssuerVarargs(value: typings.pkijs.accessDescriptionMod.default*): Self = StObject.set(x, "authorityCertIssuer", js.Array(value :_*))
       
-      @scala.inline
-      def setAuthorityCertSerialNumber(value: Integer): Self = StObject.set(x, "authorityCertSerialNumber", value.asInstanceOf[js.Any])
+      inline def setAuthorityCertSerialNumber(value: Integer): Self = StObject.set(x, "authorityCertSerialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyIdentifier(value: OctetString): Self = StObject.set(x, "keyIdentifier", value.asInstanceOf[js.Any])
+      inline def setKeyIdentifier(value: OctetString): Self = StObject.set(x, "keyIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

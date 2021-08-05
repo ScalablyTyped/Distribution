@@ -13,16 +13,13 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(VersionEndpointEnvironmentName: String): Dictkey = {
+  inline def apply(VersionEndpointEnvironmentName: String): Dictkey = {
     val __obj = js.Dynamic.literal(VersionEndpointEnvironmentName = VersionEndpointEnvironmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setVersionEndpointEnvironmentName(value: String): Self = StObject.set(x, "VersionEndpointEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setVersionEndpointEnvironmentName(value: String): Self = StObject.set(x, "VersionEndpointEnvironmentName", value.asInstanceOf[js.Any])
   }
 }

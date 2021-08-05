@@ -18,25 +18,19 @@ trait ListCodeRepositoriesOutput extends StObject {
 }
 object ListCodeRepositoriesOutput {
   
-  @scala.inline
-  def apply(CodeRepositorySummaryList: CodeRepositorySummaryList): ListCodeRepositoriesOutput = {
+  inline def apply(CodeRepositorySummaryList: CodeRepositorySummaryList): ListCodeRepositoriesOutput = {
     val __obj = js.Dynamic.literal(CodeRepositorySummaryList = CodeRepositorySummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCodeRepositoriesOutput]
   }
   
-  @scala.inline
-  implicit class ListCodeRepositoriesOutputMutableBuilder[Self <: ListCodeRepositoriesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListCodeRepositoriesOutput](x: Self) {
     
-    @scala.inline
-    def setCodeRepositorySummaryList(value: CodeRepositorySummaryList): Self = StObject.set(x, "CodeRepositorySummaryList", value.asInstanceOf[js.Any])
+    inline def setCodeRepositorySummaryList(value: CodeRepositorySummaryList): Self = StObject.set(x, "CodeRepositorySummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeRepositorySummaryListVarargs(value: CodeRepositorySummary*): Self = StObject.set(x, "CodeRepositorySummaryList", js.Array(value :_*))
+    inline def setCodeRepositorySummaryListVarargs(value: CodeRepositorySummary*): Self = StObject.set(x, "CodeRepositorySummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

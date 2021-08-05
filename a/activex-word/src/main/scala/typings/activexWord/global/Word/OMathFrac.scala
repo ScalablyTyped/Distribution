@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathFrac")
 @js.native
-class OMathFrac protected ()
+/* private */ class OMathFrac ()
   extends StObject
      with typings.activexWord.Word.OMathFrac {
   
@@ -29,7 +29,7 @@ class OMathFrac protected ()
   /* CompleteClass */
   var Type: WdOMathFracType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathFrac_typekey")
   var WordDotOMathFrac_typekey: typings.activexWord.Word.OMathFrac = js.native
 }

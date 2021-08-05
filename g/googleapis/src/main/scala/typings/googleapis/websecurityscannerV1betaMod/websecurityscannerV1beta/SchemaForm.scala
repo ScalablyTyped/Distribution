@@ -21,28 +21,21 @@ trait SchemaForm extends StObject {
 }
 object SchemaForm {
   
-  @scala.inline
-  def apply(): SchemaForm = {
+  inline def apply(): SchemaForm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaForm]
   }
   
-  @scala.inline
-  implicit class SchemaFormMutableBuilder[Self <: SchemaForm] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaForm](x: Self) {
     
-    @scala.inline
-    def setActionUri(value: String): Self = StObject.set(x, "actionUri", value.asInstanceOf[js.Any])
+    inline def setActionUri(value: String): Self = StObject.set(x, "actionUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUriUndefined: Self = StObject.set(x, "actionUri", js.undefined)
+    inline def setActionUriUndefined: Self = StObject.set(x, "actionUri", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

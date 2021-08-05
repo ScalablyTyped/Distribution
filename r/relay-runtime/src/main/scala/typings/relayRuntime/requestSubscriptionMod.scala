@@ -20,8 +20,7 @@ object requestSubscriptionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def requestSubscription[TSubscription /* <: OperationType */](
+  inline def requestSubscription[TSubscription /* <: OperationType */](
     environment: Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
@@ -56,8 +55,7 @@ object requestSubscriptionMod {
   }
   object GraphQLSubscriptionConfig {
     
-    @scala.inline
-    def apply[TSubscription /* <: OperationType */](
+    inline def apply[TSubscription /* <: OperationType */](
       subscription: GraphQLTaggedNode,
       variables: /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['variables'] */ js.Any
     ): GraphQLSubscriptionConfig[TSubscription] = {
@@ -65,58 +63,43 @@ object requestSubscriptionMod {
       __obj.asInstanceOf[GraphQLSubscriptionConfig[TSubscription]]
     }
     
-    @scala.inline
-    implicit class GraphQLSubscriptionConfigMutableBuilder[Self <: GraphQLSubscriptionConfig[?], TSubscription /* <: OperationType */] (val x: Self & GraphQLSubscriptionConfig[TSubscription]) extends AnyVal {
+    extension [Self <: GraphQLSubscriptionConfig[?], TSubscription /* <: OperationType */](x: Self & GraphQLSubscriptionConfig[TSubscription]) {
       
-      @scala.inline
-      def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
+      inline def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
+      inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
       
-      @scala.inline
-      def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
+      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
       
-      @scala.inline
-      def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
+      inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
+      inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnNext(
+      inline def setOnNext(
         value: /* response */ js.UndefOr[
               (/* import warning: importer.ImportType#apply Failed type conversion: TSubscription['response'] */ js.Any) | Null
             ] => Unit
       ): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
+      inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
       
-      @scala.inline
-      def setSubscription(value: GraphQLTaggedNode): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: GraphQLTaggedNode): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "subscription", js.Any.fromFunction0(value))
+      inline def setSubscriptionFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "subscription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdater(
+      inline def setUpdater(
         value: (/* store */ RecordSourceSelectorProxy[
               /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['response'] */ js.Any
             ], /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['response'] */ js.Any) => Unit
       ): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+      inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
       
-      @scala.inline
-      def setVariables(
+      inline def setVariables(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['variables'] */ js.Any
       ): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }

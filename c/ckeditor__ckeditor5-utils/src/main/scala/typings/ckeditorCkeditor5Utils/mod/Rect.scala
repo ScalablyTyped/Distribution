@@ -55,6 +55,5 @@ object Rect {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDomRangeRects(range: Range): js.Array[Rect] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomRangeRects")(range.asInstanceOf[js.Any]).asInstanceOf[js.Array[Rect]]
+  inline def getDomRangeRects(range: Range): js.Array[Rect] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomRangeRects")(range.asInstanceOf[js.Any]).asInstanceOf[js.Array[Rect]]
 }

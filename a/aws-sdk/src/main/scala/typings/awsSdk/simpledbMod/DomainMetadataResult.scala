@@ -43,55 +43,39 @@ trait DomainMetadataResult extends StObject {
 }
 object DomainMetadataResult {
   
-  @scala.inline
-  def apply(): DomainMetadataResult = {
+  inline def apply(): DomainMetadataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainMetadataResult]
   }
   
-  @scala.inline
-  implicit class DomainMetadataResultMutableBuilder[Self <: DomainMetadataResult] (val x: Self) extends AnyVal {
+  extension [Self <: DomainMetadataResult](x: Self) {
     
-    @scala.inline
-    def setAttributeNameCount(value: Integer): Self = StObject.set(x, "AttributeNameCount", value.asInstanceOf[js.Any])
+    inline def setAttributeNameCount(value: Integer): Self = StObject.set(x, "AttributeNameCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameCountUndefined: Self = StObject.set(x, "AttributeNameCount", js.undefined)
+    inline def setAttributeNameCountUndefined: Self = StObject.set(x, "AttributeNameCount", js.undefined)
     
-    @scala.inline
-    def setAttributeNamesSizeBytes(value: Long): Self = StObject.set(x, "AttributeNamesSizeBytes", value.asInstanceOf[js.Any])
+    inline def setAttributeNamesSizeBytes(value: Long): Self = StObject.set(x, "AttributeNamesSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNamesSizeBytesUndefined: Self = StObject.set(x, "AttributeNamesSizeBytes", js.undefined)
+    inline def setAttributeNamesSizeBytesUndefined: Self = StObject.set(x, "AttributeNamesSizeBytes", js.undefined)
     
-    @scala.inline
-    def setAttributeValueCount(value: Integer): Self = StObject.set(x, "AttributeValueCount", value.asInstanceOf[js.Any])
+    inline def setAttributeValueCount(value: Integer): Self = StObject.set(x, "AttributeValueCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueCountUndefined: Self = StObject.set(x, "AttributeValueCount", js.undefined)
+    inline def setAttributeValueCountUndefined: Self = StObject.set(x, "AttributeValueCount", js.undefined)
     
-    @scala.inline
-    def setAttributeValuesSizeBytes(value: Long): Self = StObject.set(x, "AttributeValuesSizeBytes", value.asInstanceOf[js.Any])
+    inline def setAttributeValuesSizeBytes(value: Long): Self = StObject.set(x, "AttributeValuesSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValuesSizeBytesUndefined: Self = StObject.set(x, "AttributeValuesSizeBytes", js.undefined)
+    inline def setAttributeValuesSizeBytesUndefined: Self = StObject.set(x, "AttributeValuesSizeBytes", js.undefined)
     
-    @scala.inline
-    def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
-    @scala.inline
-    def setItemNamesSizeBytes(value: Long): Self = StObject.set(x, "ItemNamesSizeBytes", value.asInstanceOf[js.Any])
+    inline def setItemNamesSizeBytes(value: Long): Self = StObject.set(x, "ItemNamesSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemNamesSizeBytesUndefined: Self = StObject.set(x, "ItemNamesSizeBytes", js.undefined)
+    inline def setItemNamesSizeBytesUndefined: Self = StObject.set(x, "ItemNamesSizeBytes", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Integer): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Integer): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait BuildSummary extends StObject {
 }
 object BuildSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: XamlBuildReference,
     finishTime: Date,
     keepForever: Boolean,
@@ -41,31 +40,22 @@ object BuildSummary {
     __obj.asInstanceOf[BuildSummary]
   }
   
-  @scala.inline
-  implicit class BuildSummaryMutableBuilder[Self <: BuildSummary] (val x: Self) extends AnyVal {
+  extension [Self <: BuildSummary](x: Self) {
     
-    @scala.inline
-    def setBuild(value: XamlBuildReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: XamlBuildReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepForever(value: Boolean): Self = StObject.set(x, "keepForever", value.asInstanceOf[js.Any])
+    inline def setKeepForever(value: Boolean): Self = StObject.set(x, "keepForever", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: BuildReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: BuildReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
+    inline def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: BuildStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BuildStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait AccessibleWindow
      with XAccessibleExtendedComponent
 object AccessibleWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

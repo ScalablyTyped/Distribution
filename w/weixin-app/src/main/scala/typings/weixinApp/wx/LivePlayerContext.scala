@@ -23,8 +23,7 @@ trait LivePlayerContext extends StObject {
 }
 object LivePlayerContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exitFullScreen: BaseOptions[js.Any, js.Any] => Unit,
     mute: BaseOptions[js.Any, js.Any] => Unit,
     play: BaseOptions[js.Any, js.Any] => Unit,
@@ -35,22 +34,16 @@ object LivePlayerContext {
     __obj.asInstanceOf[LivePlayerContext]
   }
   
-  @scala.inline
-  implicit class LivePlayerContextMutableBuilder[Self <: LivePlayerContext] (val x: Self) extends AnyVal {
+  extension [Self <: LivePlayerContext](x: Self) {
     
-    @scala.inline
-    def setExitFullScreen(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction1(value))
+    inline def setExitFullScreen(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMute(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "mute", js.Any.fromFunction1(value))
+    inline def setMute(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "mute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPlay(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
+    inline def setPlay(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestFullScreen(value: RequestFullScreenOptions => Unit): Self = StObject.set(x, "requestFullScreen", js.Any.fromFunction1(value))
+    inline def setRequestFullScreen(value: RequestFullScreenOptions => Unit): Self = StObject.set(x, "requestFullScreen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+    inline def setStop(value: BaseOptions[js.Any, js.Any] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
   }
 }

@@ -16,31 +16,23 @@ trait IUpdateContextRequest extends StObject {
 }
 object IUpdateContextRequest {
   
-  @scala.inline
-  def apply(): IUpdateContextRequest = {
+  inline def apply(): IUpdateContextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpdateContextRequest]
   }
   
-  @scala.inline
-  implicit class IUpdateContextRequestMutableBuilder[Self <: IUpdateContextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateContextRequest](x: Self) {
     
-    @scala.inline
-    def setContext(value: IContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: IContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContextNull: Self = StObject.set(x, "context", null)
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -28,20 +28,16 @@ trait DirectTokenizationSpecification
 }
 object DirectTokenizationSpecification {
   
-  @scala.inline
-  def apply(parameters: DirectTokenizationParameters): DirectTokenizationSpecification = {
+  inline def apply(parameters: DirectTokenizationParameters): DirectTokenizationSpecification = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DIRECT")
     __obj.asInstanceOf[DirectTokenizationSpecification]
   }
   
-  @scala.inline
-  implicit class DirectTokenizationSpecificationMutableBuilder[Self <: DirectTokenizationSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: DirectTokenizationSpecification](x: Self) {
     
-    @scala.inline
-    def setParameters(value: DirectTokenizationParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: DirectTokenizationParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DIRECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DIRECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

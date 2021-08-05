@@ -26,8 +26,7 @@ trait Adaptive extends StObject {
 }
 object Adaptive {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adaptive: Boolean,
     gpuAcceleration: Boolean,
     offsets: Partialxnumberynumbercent,
@@ -40,28 +39,20 @@ object Adaptive {
     __obj.asInstanceOf[Adaptive]
   }
   
-  @scala.inline
-  implicit class AdaptiveMutableBuilder[Self <: Adaptive] (val x: Self) extends AnyVal {
+  extension [Self <: Adaptive](x: Self) {
     
-    @scala.inline
-    def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
+    inline def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
+    inline def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsets(value: Partialxnumberynumbercent): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+    inline def setOffsets(value: Partialxnumberynumbercent): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacement(value: BasePlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: BasePlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopper(value: HTMLElement): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: HTMLElement): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopperRect(value: Rect): Self = StObject.set(x, "popperRect", value.asInstanceOf[js.Any])
+    inline def setPopperRect(value: Rect): Self = StObject.set(x, "popperRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: PositioningStrategy): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PositioningStrategy): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

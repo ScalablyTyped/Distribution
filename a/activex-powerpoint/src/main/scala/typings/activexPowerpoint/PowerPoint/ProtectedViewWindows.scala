@@ -25,6 +25,6 @@ trait ProtectedViewWindows extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.ProtectedViewWindows_typekey")
+  /* private */ @JSName("PowerPoint.ProtectedViewWindows_typekey")
   var PowerPointDotProtectedViewWindows_typekey: ProtectedViewWindows = js.native
 }

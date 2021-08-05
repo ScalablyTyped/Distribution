@@ -18,31 +18,23 @@ trait BatchMeterUsageResult extends StObject {
 }
 object BatchMeterUsageResult {
   
-  @scala.inline
-  def apply(): BatchMeterUsageResult = {
+  inline def apply(): BatchMeterUsageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchMeterUsageResult]
   }
   
-  @scala.inline
-  implicit class BatchMeterUsageResultMutableBuilder[Self <: BatchMeterUsageResult] (val x: Self) extends AnyVal {
+  extension [Self <: BatchMeterUsageResult](x: Self) {
     
-    @scala.inline
-    def setResults(value: UsageRecordResultList): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: UsageRecordResultList): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: UsageRecordResult*): Self = StObject.set(x, "Results", js.Array(value :_*))
+    inline def setResultsVarargs(value: UsageRecordResult*): Self = StObject.set(x, "Results", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedRecords(value: UsageRecordList): Self = StObject.set(x, "UnprocessedRecords", value.asInstanceOf[js.Any])
+    inline def setUnprocessedRecords(value: UsageRecordList): Self = StObject.set(x, "UnprocessedRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedRecordsUndefined: Self = StObject.set(x, "UnprocessedRecords", js.undefined)
+    inline def setUnprocessedRecordsUndefined: Self = StObject.set(x, "UnprocessedRecords", js.undefined)
     
-    @scala.inline
-    def setUnprocessedRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UnprocessedRecords", js.Array(value :_*))
+    inline def setUnprocessedRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UnprocessedRecords", js.Array(value :_*))
   }
 }

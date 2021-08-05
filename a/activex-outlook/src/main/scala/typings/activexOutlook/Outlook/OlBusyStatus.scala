@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlBusyStatus extends StObject
 object OlBusyStatus {
   
-  @scala.inline
-  def olBusy: `2` = 2.asInstanceOf[`2`]
+  inline def olBusy: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olFree: `0` = 0.asInstanceOf[`0`]
+  inline def olFree: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olOutOfOffice: `3` = 3.asInstanceOf[`3`]
+  inline def olOutOfOffice: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olTentative: `1` = 1.asInstanceOf[`1`]
+  inline def olTentative: `1` = 1.asInstanceOf[`1`]
 }

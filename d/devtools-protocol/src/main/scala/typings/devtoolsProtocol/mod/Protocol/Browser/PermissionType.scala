@@ -31,69 +31,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PermissionType extends StObject
 object PermissionType {
   
-  @scala.inline
-  def accessibilityEvents: typings.devtoolsProtocol.devtoolsProtocolStrings.accessibilityEvents = "accessibilityEvents".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.accessibilityEvents]
+  inline def accessibilityEvents: typings.devtoolsProtocol.devtoolsProtocolStrings.accessibilityEvents = "accessibilityEvents".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.accessibilityEvents]
   
-  @scala.inline
-  def audioCapture: typings.devtoolsProtocol.devtoolsProtocolStrings.audioCapture = "audioCapture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.audioCapture]
+  inline def audioCapture: typings.devtoolsProtocol.devtoolsProtocolStrings.audioCapture = "audioCapture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.audioCapture]
   
-  @scala.inline
-  def backgroundFetch: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch = "backgroundFetch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch]
+  inline def backgroundFetch: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch = "backgroundFetch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundFetch]
   
-  @scala.inline
-  def backgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync = "backgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync]
+  inline def backgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync = "backgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.backgroundSync]
   
-  @scala.inline
-  def clipboardReadWrite: typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardReadWrite = "clipboardReadWrite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardReadWrite]
+  inline def clipboardReadWrite: typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardReadWrite = "clipboardReadWrite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardReadWrite]
   
-  @scala.inline
-  def clipboardSanitizedWrite: typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardSanitizedWrite = "clipboardSanitizedWrite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardSanitizedWrite]
+  inline def clipboardSanitizedWrite: typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardSanitizedWrite = "clipboardSanitizedWrite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.clipboardSanitizedWrite]
   
-  @scala.inline
-  def durableStorage: typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage = "durableStorage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage]
+  inline def durableStorage: typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage = "durableStorage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.durableStorage]
   
-  @scala.inline
-  def flash: typings.devtoolsProtocol.devtoolsProtocolStrings.flash = "flash".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.flash]
+  inline def flash: typings.devtoolsProtocol.devtoolsProtocolStrings.flash = "flash".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.flash]
   
-  @scala.inline
-  def geolocation: typings.devtoolsProtocol.devtoolsProtocolStrings.geolocation = "geolocation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.geolocation]
+  inline def geolocation: typings.devtoolsProtocol.devtoolsProtocolStrings.geolocation = "geolocation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.geolocation]
   
-  @scala.inline
-  def idleDetection: typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection = "idleDetection".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection]
+  inline def idleDetection: typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection = "idleDetection".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.idleDetection]
   
-  @scala.inline
-  def midi: typings.devtoolsProtocol.devtoolsProtocolStrings.midi = "midi".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.midi]
+  inline def midi: typings.devtoolsProtocol.devtoolsProtocolStrings.midi = "midi".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.midi]
   
-  @scala.inline
-  def midiSysex: typings.devtoolsProtocol.devtoolsProtocolStrings.midiSysex = "midiSysex".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.midiSysex]
+  inline def midiSysex: typings.devtoolsProtocol.devtoolsProtocolStrings.midiSysex = "midiSysex".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.midiSysex]
   
-  @scala.inline
-  def nfc: typings.devtoolsProtocol.devtoolsProtocolStrings.nfc = "nfc".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.nfc]
+  inline def nfc: typings.devtoolsProtocol.devtoolsProtocolStrings.nfc = "nfc".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.nfc]
   
-  @scala.inline
-  def notifications: typings.devtoolsProtocol.devtoolsProtocolStrings.notifications = "notifications".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.notifications]
+  inline def notifications: typings.devtoolsProtocol.devtoolsProtocolStrings.notifications = "notifications".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.notifications]
   
-  @scala.inline
-  def paymentHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler = "paymentHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler]
+  inline def paymentHandler: typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler = "paymentHandler".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.paymentHandler]
   
-  @scala.inline
-  def periodicBackgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync = "periodicBackgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync]
+  inline def periodicBackgroundSync: typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync = "periodicBackgroundSync".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.periodicBackgroundSync]
   
-  @scala.inline
-  def protectedMediaIdentifier: typings.devtoolsProtocol.devtoolsProtocolStrings.protectedMediaIdentifier = "protectedMediaIdentifier".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.protectedMediaIdentifier]
+  inline def protectedMediaIdentifier: typings.devtoolsProtocol.devtoolsProtocolStrings.protectedMediaIdentifier = "protectedMediaIdentifier".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.protectedMediaIdentifier]
   
-  @scala.inline
-  def sensors: typings.devtoolsProtocol.devtoolsProtocolStrings.sensors = "sensors".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.sensors]
+  inline def sensors: typings.devtoolsProtocol.devtoolsProtocolStrings.sensors = "sensors".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.sensors]
   
-  @scala.inline
-  def videoCapture: typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture = "videoCapture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture]
+  inline def videoCapture: typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture = "videoCapture".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapture]
   
-  @scala.inline
-  def videoCapturePanTiltZoom: typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom = "videoCapturePanTiltZoom".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom]
+  inline def videoCapturePanTiltZoom: typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom = "videoCapturePanTiltZoom".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.videoCapturePanTiltZoom]
   
-  @scala.inline
-  def wakeLockScreen: typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen = "wakeLockScreen".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen]
+  inline def wakeLockScreen: typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen = "wakeLockScreen".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockScreen]
   
-  @scala.inline
-  def wakeLockSystem: typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockSystem = "wakeLockSystem".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockSystem]
+  inline def wakeLockSystem: typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockSystem = "wakeLockSystem".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.wakeLockSystem]
 }

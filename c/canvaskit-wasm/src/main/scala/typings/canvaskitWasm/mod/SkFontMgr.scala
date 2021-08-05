@@ -28,8 +28,7 @@ trait SkFontMgr
 }
 object SkFontMgr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     countFamilies: () => Double,
     delete: () => Unit,
     deleteAfter: () => Unit,
@@ -42,16 +41,12 @@ object SkFontMgr {
     __obj.asInstanceOf[SkFontMgr]
   }
   
-  @scala.inline
-  implicit class SkFontMgrMutableBuilder[Self <: SkFontMgr] (val x: Self) extends AnyVal {
+  extension [Self <: SkFontMgr](x: Self) {
     
-    @scala.inline
-    def setCountFamilies(value: () => Double): Self = StObject.set(x, "countFamilies", js.Any.fromFunction0(value))
+    inline def setCountFamilies(value: () => Double): Self = StObject.set(x, "countFamilies", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFamilyName(value: Double => String): Self = StObject.set(x, "getFamilyName", js.Any.fromFunction1(value))
+    inline def setGetFamilyName(value: Double => String): Self = StObject.set(x, "getFamilyName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMakeTypefaceFromData(value: ArrayBuffer => SkTypeface): Self = StObject.set(x, "makeTypefaceFromData", js.Any.fromFunction1(value))
+    inline def setMakeTypefaceFromData(value: ArrayBuffer => SkTypeface): Self = StObject.set(x, "makeTypefaceFromData", js.Any.fromFunction1(value))
   }
 }

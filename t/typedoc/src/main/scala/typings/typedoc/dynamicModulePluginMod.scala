@@ -14,14 +14,14 @@ object dynamicModulePluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var basePath: js.Any = js.native
+    /* private */ var basePath: js.Any = js.native
     
-    var onBegin: js.Any = js.native
+    /* private */ var onBegin: js.Any = js.native
     
-    var onBeginResolve: js.Any = js.native
+    /* private */ var onBeginResolve: js.Any = js.native
     
-    var onDeclaration: js.Any = js.native
+    /* private */ var onDeclaration: js.Any = js.native
     
-    var reflections: js.Any = js.native
+    /* private */ var reflections: js.Any = js.native
   }
 }

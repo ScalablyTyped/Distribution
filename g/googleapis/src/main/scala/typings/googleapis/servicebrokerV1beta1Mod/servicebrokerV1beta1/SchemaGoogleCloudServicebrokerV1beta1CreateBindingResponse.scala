@@ -47,52 +47,37 @@ trait SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponse extends StObjec
 }
 object SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponse = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponseMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1beta1CreateBindingResponse](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: StringDictionary[js.Any]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: StringDictionary[js.Any]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setRoute_service_url(value: String): Self = StObject.set(x, "route_service_url", value.asInstanceOf[js.Any])
+    inline def setRoute_service_url(value: String): Self = StObject.set(x, "route_service_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute_service_urlUndefined: Self = StObject.set(x, "route_service_url", js.undefined)
+    inline def setRoute_service_urlUndefined: Self = StObject.set(x, "route_service_url", js.undefined)
     
-    @scala.inline
-    def setSyslog_drain_url(value: String): Self = StObject.set(x, "syslog_drain_url", value.asInstanceOf[js.Any])
+    inline def setSyslog_drain_url(value: String): Self = StObject.set(x, "syslog_drain_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyslog_drain_urlUndefined: Self = StObject.set(x, "syslog_drain_url", js.undefined)
+    inline def setSyslog_drain_urlUndefined: Self = StObject.set(x, "syslog_drain_url", js.undefined)
     
-    @scala.inline
-    def setVolume_mounts(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "volume_mounts", value.asInstanceOf[js.Any])
+    inline def setVolume_mounts(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "volume_mounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume_mountsUndefined: Self = StObject.set(x, "volume_mounts", js.undefined)
+    inline def setVolume_mountsUndefined: Self = StObject.set(x, "volume_mounts", js.undefined)
     
-    @scala.inline
-    def setVolume_mountsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "volume_mounts", js.Array(value :_*))
+    inline def setVolume_mountsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "volume_mounts", js.Array(value :_*))
   }
 }

@@ -42,8 +42,7 @@ trait CoreTextFormatUpdatingEventArgs extends StObject {
 }
 object CoreTextFormatUpdatingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: UIElementType,
     getDeferral: () => Deferral,
     isCanceled: Boolean,
@@ -58,34 +57,24 @@ object CoreTextFormatUpdatingEventArgs {
     __obj.asInstanceOf[CoreTextFormatUpdatingEventArgs]
   }
   
-  @scala.inline
-  implicit class CoreTextFormatUpdatingEventArgsMutableBuilder[Self <: CoreTextFormatUpdatingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextFormatUpdatingEventArgs](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: UIElementType): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: UIElementType): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: CoreTextFormatUpdatingReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: CoreTextFormatUpdatingReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: CoreTextFormatUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: CoreTextFormatUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: UIElementType): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: UIElementType): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineColor(value: UIElementType): Self = StObject.set(x, "underlineColor", value.asInstanceOf[js.Any])
+    inline def setUnderlineColor(value: UIElementType): Self = StObject.set(x, "underlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineType(value: UnderlineType): Self = StObject.set(x, "underlineType", value.asInstanceOf[js.Any])
+    inline def setUnderlineType(value: UnderlineType): Self = StObject.set(x, "underlineType", value.asInstanceOf[js.Any])
   }
 }

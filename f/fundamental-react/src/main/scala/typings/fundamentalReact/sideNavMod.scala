@@ -51,50 +51,42 @@ object sideNavMod {
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[PartialSideNavListProps] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[PartialSideNavListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[PartialSideNavListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.displayName")
       @js.native
       def displayName: js.UndefOr[SideNavDotList | String] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[SideNavDotList | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[SideNavDotList | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[SideNavListProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[SideNavListProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[SideNavListProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[SideNavListProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[SideNavListProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[SideNavListProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.List.propTypes")
       @js.native
       def propTypes: js.UndefOr[WeakValidationMapSideNavL] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[WeakValidationMapSideNavL]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[WeakValidationMapSideNavL]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -116,58 +108,49 @@ object sideNavMod {
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[PartialSideNavListItemPro] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[PartialSideNavListItemPro]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[PartialSideNavListItemPro]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.displayName")
       @js.native
       def displayName: js.UndefOr[SideNavDotListItem | String] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[SideNavDotListItem | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[SideNavDotListItem | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[SideNavListItemProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[SideNavListItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[SideNavListItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[SideNavListItemProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[SideNavListItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[SideNavListItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.ListItem.propTypes")
       @js.native
       def propTypes: js.UndefOr[WeakValidationMapSideNavLAbout] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[WeakValidationMapSideNavLAbout]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[WeakValidationMapSideNavLAbout]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
     @JSImport("fundamental-react/lib/SideNavigation/SideNav", "default.displayName")
     @js.native
     def displayName: typings.fundamentalReact.fundamentalReactStrings.SideNav = js.native
-    @scala.inline
-    def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.SideNav): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.SideNav): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   type SideNav = Component[SideNavProps, js.Object, js.Any]
@@ -201,80 +184,56 @@ object sideNavMod {
   }
   object SideNavListItemProps {
     
-    @scala.inline
-    def apply(): SideNavListItemProps = {
+    inline def apply(): SideNavListItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideNavListItemProps]
     }
     
-    @scala.inline
-    implicit class SideNavListItemPropsMutableBuilder[Self <: SideNavListItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavListItemProps](x: Self) {
       
-      @scala.inline
-      def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
+      inline def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
+      inline def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
       
-      @scala.inline
-      def setExpandSubmenuLabel(value: String): Self = StObject.set(x, "expandSubmenuLabel", value.asInstanceOf[js.Any])
+      inline def setExpandSubmenuLabel(value: String): Self = StObject.set(x, "expandSubmenuLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandSubmenuLabelUndefined: Self = StObject.set(x, "expandSubmenuLabel", js.undefined)
+      inline def setExpandSubmenuLabelUndefined: Self = StObject.set(x, "expandSubmenuLabel", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
-      @scala.inline
-      def setGlyph(value: IconGlyph): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: IconGlyph): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+      inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
-      @scala.inline
-      def setIsSubItem(value: Boolean): Self = StObject.set(x, "isSubItem", value.asInstanceOf[js.Any])
+      inline def setIsSubItem(value: Boolean): Self = StObject.set(x, "isSubItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSubItemUndefined: Self = StObject.set(x, "isSubItem", js.undefined)
+      inline def setIsSubItemUndefined: Self = StObject.set(x, "isSubItem", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnItemSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
+      inline def setOnItemSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
+      inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+      inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
+      inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -304,74 +263,52 @@ object sideNavMod {
   }
   object SideNavListProps {
     
-    @scala.inline
-    def apply(): SideNavListProps = {
+    inline def apply(): SideNavListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideNavListProps]
     }
     
-    @scala.inline
-    implicit class SideNavListPropsMutableBuilder[Self <: SideNavListProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavListProps](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
+      inline def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
+      inline def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
       
-      @scala.inline
-      def setGroupLabel(value: String): Self = StObject.set(x, "groupLabel", value.asInstanceOf[js.Any])
+      inline def setGroupLabel(value: String): Self = StObject.set(x, "groupLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupLabelUndefined: Self = StObject.set(x, "groupLabel", js.undefined)
+      inline def setGroupLabelUndefined: Self = StObject.set(x, "groupLabel", js.undefined)
       
-      @scala.inline
-      def setHasParent(value: Boolean): Self = StObject.set(x, "hasParent", value.asInstanceOf[js.Any])
+      inline def setHasParent(value: Boolean): Self = StObject.set(x, "hasParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasParentUndefined: Self = StObject.set(x, "hasParent", js.undefined)
+      inline def setHasParentUndefined: Self = StObject.set(x, "hasParent", js.undefined)
       
-      @scala.inline
-      def setIsUtility(value: Boolean): Self = StObject.set(x, "isUtility", value.asInstanceOf[js.Any])
+      inline def setIsUtility(value: Boolean): Self = StObject.set(x, "isUtility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUtilityUndefined: Self = StObject.set(x, "isUtility", js.undefined)
+      inline def setIsUtilityUndefined: Self = StObject.set(x, "isUtility", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setOnItemSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
+      inline def setOnItemSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
+      inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+      inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
+      inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
       
-      @scala.inline
-      def setTitleProps(value: js.Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
+      inline def setTitleProps(value: js.Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
+      inline def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     }
   }
   
@@ -393,50 +330,36 @@ object sideNavMod {
   }
   object SideNavProps {
     
-    @scala.inline
-    def apply(): SideNavProps = {
+    inline def apply(): SideNavProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideNavProps]
     }
     
-    @scala.inline
-    implicit class SideNavPropsMutableBuilder[Self <: SideNavProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavProps](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
+      inline def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
+      inline def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setOnItemSelect(value: (/* e */ js.Any, /* id */ js.Any) => Unit): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction2(value))
+      inline def setOnItemSelect(value: (/* e */ js.Any, /* id */ js.Any) => Unit): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
+      inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
       
-      @scala.inline
-      def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+      inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
+      inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
       
-      @scala.inline
-      def setSkipLink(value: Href): Self = StObject.set(x, "skipLink", value.asInstanceOf[js.Any])
+      inline def setSkipLink(value: Href): Self = StObject.set(x, "skipLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipLinkUndefined: Self = StObject.set(x, "skipLink", js.undefined)
+      inline def setSkipLinkUndefined: Self = StObject.set(x, "skipLink", js.undefined)
     }
   }
 }

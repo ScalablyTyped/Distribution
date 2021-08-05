@@ -26,8 +26,7 @@ trait ILookupFieldExpression extends StObject {
 }
 object ILookupFieldExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Id: () => INumberFieldExpression,
     ValueAsBoolean: () => IBooleanFieldExpression,
     ValueAsDate: () => IDateTimeFieldExpression,
@@ -39,25 +38,18 @@ object ILookupFieldExpression {
     __obj.asInstanceOf[ILookupFieldExpression]
   }
   
-  @scala.inline
-  implicit class ILookupFieldExpressionMutableBuilder[Self <: ILookupFieldExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ILookupFieldExpression](x: Self) {
     
-    @scala.inline
-    def setId(value: () => INumberFieldExpression): Self = StObject.set(x, "Id", js.Any.fromFunction0(value))
+    inline def setId(value: () => INumberFieldExpression): Self = StObject.set(x, "Id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueAsBoolean(value: () => IBooleanFieldExpression): Self = StObject.set(x, "ValueAsBoolean", js.Any.fromFunction0(value))
+    inline def setValueAsBoolean(value: () => IBooleanFieldExpression): Self = StObject.set(x, "ValueAsBoolean", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueAsDate(value: () => IDateTimeFieldExpression): Self = StObject.set(x, "ValueAsDate", js.Any.fromFunction0(value))
+    inline def setValueAsDate(value: () => IDateTimeFieldExpression): Self = StObject.set(x, "ValueAsDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueAsDateTime(value: () => IDateTimeFieldExpression): Self = StObject.set(x, "ValueAsDateTime", js.Any.fromFunction0(value))
+    inline def setValueAsDateTime(value: () => IDateTimeFieldExpression): Self = StObject.set(x, "ValueAsDateTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueAsNumber(value: () => INumberFieldExpression): Self = StObject.set(x, "ValueAsNumber", js.Any.fromFunction0(value))
+    inline def setValueAsNumber(value: () => INumberFieldExpression): Self = StObject.set(x, "ValueAsNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
+    inline def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
   }
 }

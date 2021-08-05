@@ -13,25 +13,19 @@ trait MergeStrategy extends StObject {
 }
 object MergeStrategy {
   
-  @scala.inline
-  def apply(): MergeStrategy = {
+  inline def apply(): MergeStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeStrategy]
   }
   
-  @scala.inline
-  implicit class MergeStrategyMutableBuilder[Self <: MergeStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: MergeStrategy](x: Self) {
     
-    @scala.inline
-    def setMergeStrategy(value: MergeStrategySymbol): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
+    inline def setMergeStrategy(value: MergeStrategySymbol): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
+    inline def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
     
-    @scala.inline
-    def setMetadataVersionFn(value: /* any */ js.Any => Unit): Self = StObject.set(x, "metadataVersionFn", js.Any.fromFunction1(value))
+    inline def setMetadataVersionFn(value: /* any */ js.Any => Unit): Self = StObject.set(x, "metadataVersionFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMetadataVersionFnUndefined: Self = StObject.set(x, "metadataVersionFn", js.undefined)
+    inline def setMetadataVersionFnUndefined: Self = StObject.set(x, "metadataVersionFn", js.undefined)
   }
 }

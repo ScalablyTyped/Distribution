@@ -12,22 +12,17 @@ trait Format extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply(format: String, previews: js.Array[String]): Format = {
+  inline def apply(format: String, previews: js.Array[String]): Format = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], previews = previews.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+  extension [Self <: Format](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviews(value: js.Array[String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+    inline def setPreviews(value: js.Array[String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))
+    inline def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))
   }
 }

@@ -15,26 +15,20 @@ object anon {
   }
   object Done {
     
-    @scala.inline
-    def apply[T](): Done[T] = {
+    inline def apply[T](): Done[T] = {
       val __obj = js.Dynamic.literal(done = true)
       __obj.asInstanceOf[Done[T]]
     }
     
-    @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[?], T] (val x: Self & Done[T]) extends AnyVal {
+    extension [Self <: Done[?], T](x: Self & Done[T]) {
       
-      @scala.inline
-      def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait OwnershipControlsRule extends StObject {
 }
 object OwnershipControlsRule {
   
-  @scala.inline
-  def apply(ObjectOwnership: ObjectOwnership): OwnershipControlsRule = {
+  inline def apply(ObjectOwnership: ObjectOwnership): OwnershipControlsRule = {
     val __obj = js.Dynamic.literal(ObjectOwnership = ObjectOwnership.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnershipControlsRule]
   }
   
-  @scala.inline
-  implicit class OwnershipControlsRuleMutableBuilder[Self <: OwnershipControlsRule] (val x: Self) extends AnyVal {
+  extension [Self <: OwnershipControlsRule](x: Self) {
     
-    @scala.inline
-    def setObjectOwnership(value: ObjectOwnership): Self = StObject.set(x, "ObjectOwnership", value.asInstanceOf[js.Any])
+    inline def setObjectOwnership(value: ObjectOwnership): Self = StObject.set(x, "ObjectOwnership", value.asInstanceOf[js.Any])
   }
 }

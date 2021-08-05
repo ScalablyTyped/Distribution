@@ -12,16 +12,13 @@ trait AutoscalingGetAutoscalingPolicy
 }
 object AutoscalingGetAutoscalingPolicy {
   
-  @scala.inline
-  def apply(name: String): AutoscalingGetAutoscalingPolicy = {
+  inline def apply(name: String): AutoscalingGetAutoscalingPolicy = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalingGetAutoscalingPolicy]
   }
   
-  @scala.inline
-  implicit class AutoscalingGetAutoscalingPolicyMutableBuilder[Self <: AutoscalingGetAutoscalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscalingGetAutoscalingPolicy](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -29,13 +29,10 @@ object mod {
     def this(props: ProviderProps[A], context: js.Any) = this()
   }
   
-  @scala.inline
-  def intlReducer(state: Unit, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
-  @scala.inline
-  def intlReducer(state: IntlState, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
+  inline def intlReducer(state: Unit, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
+  inline def intlReducer(state: IntlState, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
   
-  @scala.inline
-  def updateIntl(opts: IntlState): IntlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("updateIntl")(opts.asInstanceOf[js.Any]).asInstanceOf[IntlAction]
+  inline def updateIntl(opts: IntlState): IntlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("updateIntl")(opts.asInstanceOf[js.Any]).asInstanceOf[IntlAction]
   
   trait IntlAction
     extends StObject
@@ -45,21 +42,17 @@ object mod {
   }
   object IntlAction {
     
-    @scala.inline
-    def apply(`type`: js.Any): IntlAction = {
+    inline def apply(`type`: js.Any): IntlAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntlAction]
     }
     
-    @scala.inline
-    implicit class IntlActionMutableBuilder[Self <: IntlAction] (val x: Self) extends AnyVal {
+    extension [Self <: IntlAction](x: Self) {
       
-      @scala.inline
-      def setPayload(value: IntlState): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: IntlState): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   
@@ -73,26 +66,20 @@ object mod {
   }
   object IntlState {
     
-    @scala.inline
-    def apply(locale: String, messages: js.Any): IntlState = {
+    inline def apply(locale: String, messages: js.Any): IntlState = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntlState]
     }
     
-    @scala.inline
-    implicit class IntlStateMutableBuilder[Self <: IntlState] (val x: Self) extends AnyVal {
+    extension [Self <: IntlState](x: Self) {
       
-      @scala.inline
-      def setFormats(value: js.Any): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: js.Any): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     }
   }
 }

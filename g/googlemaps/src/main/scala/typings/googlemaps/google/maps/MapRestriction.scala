@@ -32,22 +32,17 @@ trait MapRestriction extends StObject {
 }
 object MapRestriction {
   
-  @scala.inline
-  def apply(latLngBounds: LatLngBounds | LatLngBoundsLiteral): MapRestriction = {
+  inline def apply(latLngBounds: LatLngBounds | LatLngBoundsLiteral): MapRestriction = {
     val __obj = js.Dynamic.literal(latLngBounds = latLngBounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapRestriction]
   }
   
-  @scala.inline
-  implicit class MapRestrictionMutableBuilder[Self <: MapRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: MapRestriction](x: Self) {
     
-    @scala.inline
-    def setLatLngBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "latLngBounds", value.asInstanceOf[js.Any])
+    inline def setLatLngBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "latLngBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
+    inline def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
+    inline def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
   }
 }

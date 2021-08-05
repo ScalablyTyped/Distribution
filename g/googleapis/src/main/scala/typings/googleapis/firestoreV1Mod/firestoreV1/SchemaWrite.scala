@@ -46,43 +46,31 @@ trait SchemaWrite extends StObject {
 }
 object SchemaWrite {
   
-  @scala.inline
-  def apply(): SchemaWrite = {
+  inline def apply(): SchemaWrite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWrite]
   }
   
-  @scala.inline
-  implicit class SchemaWriteMutableBuilder[Self <: SchemaWrite] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWrite](x: Self) {
     
-    @scala.inline
-    def setCurrentDocument(value: SchemaPrecondition): Self = StObject.set(x, "currentDocument", value.asInstanceOf[js.Any])
+    inline def setCurrentDocument(value: SchemaPrecondition): Self = StObject.set(x, "currentDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDocumentUndefined: Self = StObject.set(x, "currentDocument", js.undefined)
+    inline def setCurrentDocumentUndefined: Self = StObject.set(x, "currentDocument", js.undefined)
     
-    @scala.inline
-    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setTransform(value: SchemaDocumentTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: SchemaDocumentTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: SchemaDocument): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: SchemaDocument): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMask(value: SchemaDocumentMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: SchemaDocumentMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait TreeIcons extends StObject {
 }
 object TreeIcons {
   
-  @scala.inline
-  def apply(): TreeIcons = {
+  inline def apply(): TreeIcons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeIcons]
   }
   
-  @scala.inline
-  implicit class TreeIconsMutableBuilder[Self <: TreeIcons] (val x: Self) extends AnyVal {
+  extension [Self <: TreeIcons](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    inline def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
   }
 }

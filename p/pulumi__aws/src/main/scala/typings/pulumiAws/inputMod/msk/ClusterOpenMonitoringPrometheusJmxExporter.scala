@@ -14,16 +14,13 @@ trait ClusterOpenMonitoringPrometheusJmxExporter extends StObject {
 }
 object ClusterOpenMonitoringPrometheusJmxExporter {
   
-  @scala.inline
-  def apply(enabledInBroker: Input[Boolean]): ClusterOpenMonitoringPrometheusJmxExporter = {
+  inline def apply(enabledInBroker: Input[Boolean]): ClusterOpenMonitoringPrometheusJmxExporter = {
     val __obj = js.Dynamic.literal(enabledInBroker = enabledInBroker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOpenMonitoringPrometheusJmxExporter]
   }
   
-  @scala.inline
-  implicit class ClusterOpenMonitoringPrometheusJmxExporterMutableBuilder[Self <: ClusterOpenMonitoringPrometheusJmxExporter] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterOpenMonitoringPrometheusJmxExporter](x: Self) {
     
-    @scala.inline
-    def setEnabledInBroker(value: Input[Boolean]): Self = StObject.set(x, "enabledInBroker", value.asInstanceOf[js.Any])
+    inline def setEnabledInBroker(value: Input[Boolean]): Self = StObject.set(x, "enabledInBroker", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait JSONWebKeySet extends StObject {
 }
 object JSONWebKeySet {
   
-  @scala.inline
-  def apply(keys: js.Array[JSONWebKey]): JSONWebKeySet = {
+  inline def apply(keys: js.Array[JSONWebKey]): JSONWebKeySet = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONWebKeySet]
   }
   
-  @scala.inline
-  implicit class JSONWebKeySetMutableBuilder[Self <: JSONWebKeySet] (val x: Self) extends AnyVal {
+  extension [Self <: JSONWebKeySet](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Array[JSONWebKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[JSONWebKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: JSONWebKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: JSONWebKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

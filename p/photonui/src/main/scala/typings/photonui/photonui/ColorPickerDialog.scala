@@ -15,8 +15,7 @@ trait ColorPickerDialog
 }
 object ColorPickerDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addButton: (Widget, js.Any) => Unit,
     addClass: String => Unit,
@@ -70,10 +69,8 @@ object ColorPickerDialog {
     __obj.asInstanceOf[ColorPickerDialog]
   }
   
-  @scala.inline
-  implicit class ColorPickerDialogMutableBuilder[Self <: ColorPickerDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPickerDialog](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

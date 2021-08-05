@@ -20,8 +20,7 @@ trait IQuestionPanelDynamicData extends StObject {
 }
 object IQuestionPanelDynamicData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getItemIndex: ISurveyData => Double,
     getPanelItemData: ISurveyData => js.Any,
     getRootData: () => ISurveyData,
@@ -33,25 +32,18 @@ object IQuestionPanelDynamicData {
     __obj.asInstanceOf[IQuestionPanelDynamicData]
   }
   
-  @scala.inline
-  implicit class IQuestionPanelDynamicDataMutableBuilder[Self <: IQuestionPanelDynamicData] (val x: Self) extends AnyVal {
+  extension [Self <: IQuestionPanelDynamicData](x: Self) {
     
-    @scala.inline
-    def setGetItemIndex(value: ISurveyData => Double): Self = StObject.set(x, "getItemIndex", js.Any.fromFunction1(value))
+    inline def setGetItemIndex(value: ISurveyData => Double): Self = StObject.set(x, "getItemIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPanelItemData(value: ISurveyData => js.Any): Self = StObject.set(x, "getPanelItemData", js.Any.fromFunction1(value))
+    inline def setGetPanelItemData(value: ISurveyData => js.Any): Self = StObject.set(x, "getPanelItemData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRootData(value: () => ISurveyData): Self = StObject.set(x, "getRootData", js.Any.fromFunction0(value))
+    inline def setGetRootData(value: () => ISurveyData): Self = StObject.set(x, "getRootData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSharedQuestionFromArray(value: (String, Double) => Question): Self = StObject.set(x, "getSharedQuestionFromArray", js.Any.fromFunction2(value))
+    inline def setGetSharedQuestionFromArray(value: (String, Double) => Question): Self = StObject.set(x, "getSharedQuestionFromArray", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
+    inline def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPanelItemData(value: (ISurveyData, String, js.Any) => js.Any): Self = StObject.set(x, "setPanelItemData", js.Any.fromFunction3(value))
+    inline def setSetPanelItemData(value: (ISurveyData, String, js.Any) => js.Any): Self = StObject.set(x, "setPanelItemData", js.Any.fromFunction3(value))
   }
 }

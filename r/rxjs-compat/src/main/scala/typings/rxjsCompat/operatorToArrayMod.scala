@@ -10,6 +10,5 @@ object operatorToArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toArray[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Any]
+  inline def toArray[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Any]
 }

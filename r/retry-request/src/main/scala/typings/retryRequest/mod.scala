@@ -13,21 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(requestOpts: typings.request.mod.Options): Abort = ^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any]).asInstanceOf[Abort]
-  @scala.inline
-  def apply(requestOpts: typings.request.mod.Options, callback: RequestCallback): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Abort]
-  @scala.inline
-  def apply(requestOpts: typings.request.mod.Options, opts: Options): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Abort]
-  @scala.inline
-  def apply(requestOpts: typings.request.mod.Options, opts: Options, callback: RequestCallback): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Abort]
+  inline def apply(requestOpts: typings.request.mod.Options): Abort = ^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any]).asInstanceOf[Abort]
+  inline def apply(requestOpts: typings.request.mod.Options, callback: RequestCallback): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Abort]
+  inline def apply(requestOpts: typings.request.mod.Options, opts: Options): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Abort]
+  inline def apply(requestOpts: typings.request.mod.Options, opts: Options, callback: RequestCallback): Abort = (^.asInstanceOf[js.Dynamic].apply(requestOpts.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Abort]
   
   @JSImport("retry-request", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNextRetryDelay(retryNumber: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextRetryDelay")(retryNumber.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getNextRetryDelay(retryNumber: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextRetryDelay")(retryNumber.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -45,50 +40,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
+      inline def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentRetryAttemptUndefined: Self = StObject.set(x, "currentRetryAttempt", js.undefined)
+      inline def setCurrentRetryAttemptUndefined: Self = StObject.set(x, "currentRetryAttempt", js.undefined)
       
-      @scala.inline
-      def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
+      inline def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
+      inline def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setRequest(value: RequestAPI[Request, CoreOptions, RequiredUriUrl]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: RequestAPI[Request, CoreOptions, RequiredUriUrl]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setShouldRetryFn(value: /* response */ RequestResponse => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
+      inline def setShouldRetryFn(value: /* response */ RequestResponse => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)
+      inline def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)
     }
   }
 }

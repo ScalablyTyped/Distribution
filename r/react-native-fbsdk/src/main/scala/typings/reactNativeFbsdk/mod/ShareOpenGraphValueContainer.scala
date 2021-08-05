@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ShareOpenGraphValueContainer protected () extends StObject {
   def this(properties: OpenGraphProperties) = this()
   
-  var _properties: OpenGraphProperties = js.native
+  /* private */ var _properties: OpenGraphProperties = js.native
   
   /**
     * Gets an entry for the given key.

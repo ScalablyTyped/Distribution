@@ -34,8 +34,7 @@ trait InputTypesBoolean extends StObject {
 }
 object InputTypesBoolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Boolean,
     date: Boolean,
     datetime: Boolean,
@@ -55,46 +54,32 @@ object InputTypesBoolean {
     __obj.asInstanceOf[InputTypesBoolean]
   }
   
-  @scala.inline
-  implicit class InputTypesBooleanMutableBuilder[Self <: InputTypesBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: InputTypesBoolean](x: Self) {
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetime(value: Boolean): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: Boolean): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDatetime-local`(value: Boolean): Self = StObject.set(x, "datetime-local", value.asInstanceOf[js.Any])
+    inline def `setDatetime-local`(value: Boolean): Self = StObject.set(x, "datetime-local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Boolean): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Boolean): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTel(value: Boolean): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
+    inline def setTel(value: Boolean): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek(value: Boolean): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: Boolean): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
   }
 }

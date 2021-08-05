@@ -9,8 +9,7 @@ trait ListTagsOfResourceInput
      with typings.awsSdkClientDynamodbBrowser.typesListTagsOfResourceInputMod.ListTagsOfResourceInput
 object ListTagsOfResourceInput {
   
-  @scala.inline
-  def apply(ResourceArn: String): ListTagsOfResourceInput = {
+  inline def apply(ResourceArn: String): ListTagsOfResourceInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsOfResourceInput]
   }

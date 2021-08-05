@@ -46,28 +46,21 @@ trait ContactPoint extends StObject {
 }
 object ContactPoint {
   
-  @scala.inline
-  def apply(localPoint: Vec3, localPointOther: Vec3, normal: Vec3, point: Vec3, pointOther: Vec3): ContactPoint = {
+  inline def apply(localPoint: Vec3, localPointOther: Vec3, normal: Vec3, point: Vec3, pointOther: Vec3): ContactPoint = {
     val __obj = js.Dynamic.literal(localPoint = localPoint.asInstanceOf[js.Any], localPointOther = localPointOther.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], pointOther = pointOther.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactPoint]
   }
   
-  @scala.inline
-  implicit class ContactPointMutableBuilder[Self <: ContactPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ContactPoint](x: Self) {
     
-    @scala.inline
-    def setLocalPoint(value: Vec3): Self = StObject.set(x, "localPoint", value.asInstanceOf[js.Any])
+    inline def setLocalPoint(value: Vec3): Self = StObject.set(x, "localPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPointOther(value: Vec3): Self = StObject.set(x, "localPointOther", value.asInstanceOf[js.Any])
+    inline def setLocalPointOther(value: Vec3): Self = StObject.set(x, "localPointOther", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: Vec3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Vec3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Vec3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Vec3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointOther(value: Vec3): Self = StObject.set(x, "pointOther", value.asInstanceOf[js.Any])
+    inline def setPointOther(value: Vec3): Self = StObject.set(x, "pointOther", value.asInstanceOf[js.Any])
   }
 }

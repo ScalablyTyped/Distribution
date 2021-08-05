@@ -10,19 +10,15 @@ trait MockOptions extends StObject {
 }
 object MockOptions {
   
-  @scala.inline
-  def apply(): MockOptions = {
+  inline def apply(): MockOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MockOptions]
   }
   
-  @scala.inline
-  implicit class MockOptionsMutableBuilder[Self <: MockOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MockOptions](x: Self) {
     
-    @scala.inline
-    def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+    inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+    inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
   }
 }

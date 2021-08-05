@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata e
 }
 object GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata = {
+  inline def apply(): GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
   }
 }

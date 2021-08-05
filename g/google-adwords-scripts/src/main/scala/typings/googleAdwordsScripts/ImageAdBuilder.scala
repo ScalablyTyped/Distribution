@@ -16,8 +16,7 @@ trait ImageAdBuilder[ImageAd]
 }
 object ImageAdBuilder {
   
-  @scala.inline
-  def apply[ImageAd](
+  inline def apply[ImageAd](
     build: () => AdWordsOperation[ImageAdBuilder[ImageAd]],
     withCustomParameters: js.Object => ImageAdBuilder[ImageAd],
     withDisplayUrl: String => ImageAdBuilder[ImageAd],
@@ -31,16 +30,12 @@ object ImageAdBuilder {
     __obj.asInstanceOf[ImageAdBuilder[ImageAd]]
   }
   
-  @scala.inline
-  implicit class ImageAdBuilderMutableBuilder[Self <: ImageAdBuilder[?], ImageAd] (val x: Self & ImageAdBuilder[ImageAd]) extends AnyVal {
+  extension [Self <: ImageAdBuilder[?], ImageAd](x: Self & ImageAdBuilder[ImageAd]) {
     
-    @scala.inline
-    def setWithDisplayUrl(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
+    inline def setWithDisplayUrl(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithImage(value: Media => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
+    inline def setWithImage(value: Media => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithName(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

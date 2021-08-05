@@ -10,16 +10,13 @@ trait TagFeedResponseAttribution extends StObject {
 }
 object TagFeedResponseAttribution {
   
-  @scala.inline
-  def apply(name: String): TagFeedResponseAttribution = {
+  inline def apply(name: String): TagFeedResponseAttribution = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFeedResponseAttribution]
   }
   
-  @scala.inline
-  implicit class TagFeedResponseAttributionMutableBuilder[Self <: TagFeedResponseAttribution] (val x: Self) extends AnyVal {
+  extension [Self <: TagFeedResponseAttribution](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ object styleInjectorContextMod {
   @js.native
   val StyleInjectorContext: Context[StyleInjector] = js.native
   
-  @scala.inline
-  def StyleInjectorProvider(hasChildrenInjector: StyleInjectorProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleInjectorProvider")(hasChildrenInjector.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def StyleInjectorProvider(hasChildrenInjector: StyleInjectorProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleInjectorProvider")(hasChildrenInjector.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait StyleInjectorProviderProps extends StObject {
     
@@ -29,26 +28,20 @@ object styleInjectorContextMod {
   }
   object StyleInjectorProviderProps {
     
-    @scala.inline
-    def apply(): StyleInjectorProviderProps = {
+    inline def apply(): StyleInjectorProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyleInjectorProviderProps]
     }
     
-    @scala.inline
-    implicit class StyleInjectorProviderPropsMutableBuilder[Self <: StyleInjectorProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyleInjectorProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInjector(value: StyleInjector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
+      inline def setInjector(value: StyleInjector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectorUndefined: Self = StObject.set(x, "injector", js.undefined)
+      inline def setInjectorUndefined: Self = StObject.set(x, "injector", js.undefined)
     }
   }
 }

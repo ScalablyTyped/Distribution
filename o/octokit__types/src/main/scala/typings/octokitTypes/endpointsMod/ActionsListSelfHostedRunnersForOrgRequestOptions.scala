@@ -20,25 +20,19 @@ trait ActionsListSelfHostedRunnersForOrgRequestOptions extends StObject {
 }
 object ActionsListSelfHostedRunnersForOrgRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsListSelfHostedRunnersForOrgRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsListSelfHostedRunnersForOrgRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/orgs/:org/actions/runners")
     __obj.asInstanceOf[ActionsListSelfHostedRunnersForOrgRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActionsListSelfHostedRunnersForOrgRequestOptionsMutableBuilder[Self <: ActionsListSelfHostedRunnersForOrgRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsListSelfHostedRunnersForOrgRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashorgsSlashColonorgSlashactionsSlashrunners): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashorgsSlashColonorgSlashactionsSlashrunners): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

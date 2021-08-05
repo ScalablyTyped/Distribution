@@ -14,8 +14,7 @@ trait ReaderPaginationFragment
 }
 object ReaderPaginationFragment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argumentDefinitions: js.Array[ReaderArgumentDefinition],
     kind: String,
     metadata: ConnectionRefetch,
@@ -28,10 +27,8 @@ object ReaderPaginationFragment {
     __obj.asInstanceOf[ReaderPaginationFragment]
   }
   
-  @scala.inline
-  implicit class ReaderPaginationFragmentMutableBuilder[Self <: ReaderPaginationFragment] (val x: Self) extends AnyVal {
+  extension [Self <: ReaderPaginationFragment](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: ConnectionRefetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ConnectionRefetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

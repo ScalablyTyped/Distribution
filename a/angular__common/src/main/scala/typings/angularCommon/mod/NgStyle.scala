@@ -16,19 +16,19 @@ class NgStyle protected ()
      with DoCheck {
   def this(_ngEl: ElementRef[js.Any], _differs: KeyValueDiffers, _renderer: Renderer2) = this()
   
-  var _applyChanges: js.Any = js.native
+  /* private */ var _applyChanges: js.Any = js.native
   
-  var _differ: js.Any = js.native
+  /* private */ var _differ: js.Any = js.native
   
-  var _differs: js.Any = js.native
+  /* private */ var _differs: js.Any = js.native
   
-  var _ngEl: js.Any = js.native
+  /* private */ var _ngEl: js.Any = js.native
   
-  var _ngStyle: js.Any = js.native
+  /* private */ var _ngStyle: js.Any = js.native
   
-  var _renderer: js.Any = js.native
+  /* private */ var _renderer: js.Any = js.native
   
-  var _setStyle: js.Any = js.native
+  /* private */ var _setStyle: js.Any = js.native
   
   /**
     * A callback method that performs change-detection, invoked

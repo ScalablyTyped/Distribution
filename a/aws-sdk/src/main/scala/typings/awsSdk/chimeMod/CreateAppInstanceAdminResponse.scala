@@ -18,25 +18,19 @@ trait CreateAppInstanceAdminResponse extends StObject {
 }
 object CreateAppInstanceAdminResponse {
   
-  @scala.inline
-  def apply(): CreateAppInstanceAdminResponse = {
+  inline def apply(): CreateAppInstanceAdminResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAppInstanceAdminResponse]
   }
   
-  @scala.inline
-  implicit class CreateAppInstanceAdminResponseMutableBuilder[Self <: CreateAppInstanceAdminResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAppInstanceAdminResponse](x: Self) {
     
-    @scala.inline
-    def setAppInstanceAdmin(value: Identity): Self = StObject.set(x, "AppInstanceAdmin", value.asInstanceOf[js.Any])
+    inline def setAppInstanceAdmin(value: Identity): Self = StObject.set(x, "AppInstanceAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceAdminUndefined: Self = StObject.set(x, "AppInstanceAdmin", js.undefined)
+    inline def setAppInstanceAdminUndefined: Self = StObject.set(x, "AppInstanceAdmin", js.undefined)
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceArnUndefined: Self = StObject.set(x, "AppInstanceArn", js.undefined)
+    inline def setAppInstanceArnUndefined: Self = StObject.set(x, "AppInstanceArn", js.undefined)
   }
 }

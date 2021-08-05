@@ -18,37 +18,27 @@ trait PrimitiveDefinition extends StObject {
 }
 object PrimitiveDefinition {
   
-  @scala.inline
-  def apply(): PrimitiveDefinition = {
+  inline def apply(): PrimitiveDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrimitiveDefinition]
   }
   
-  @scala.inline
-  implicit class PrimitiveDefinitionMutableBuilder[Self <: PrimitiveDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: PrimitiveDefinition](x: Self) {
     
-    @scala.inline
-    def setDefaultComponents(value: js.Any): Self = StObject.set(x, "defaultComponents", value.asInstanceOf[js.Any])
+    inline def setDefaultComponents(value: js.Any): Self = StObject.set(x, "defaultComponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultComponentsUndefined: Self = StObject.set(x, "defaultComponents", js.undefined)
+    inline def setDefaultComponentsUndefined: Self = StObject.set(x, "defaultComponents", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setMappings(value: js.Any): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: js.Any): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingsUndefined: Self = StObject.set(x, "mappings", js.undefined)
+    inline def setMappingsUndefined: Self = StObject.set(x, "mappings", js.undefined)
     
-    @scala.inline
-    def setTransforms(value: js.Any): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+    inline def setTransforms(value: js.Any): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+    inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
   }
 }

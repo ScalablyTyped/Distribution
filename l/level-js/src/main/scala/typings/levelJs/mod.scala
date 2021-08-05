@@ -58,26 +58,20 @@ object mod extends Shortcut {
   }
   object LevelOptions {
     
-    @scala.inline
-    def apply(): LevelOptions = {
+    inline def apply(): LevelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelOptions]
     }
     
-    @scala.inline
-    implicit class LevelOptionsMutableBuilder[Self <: LevelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelOptions](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String | Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String | Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

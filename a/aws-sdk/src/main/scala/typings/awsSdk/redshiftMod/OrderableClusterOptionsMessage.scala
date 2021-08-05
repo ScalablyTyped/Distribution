@@ -18,28 +18,21 @@ trait OrderableClusterOptionsMessage extends StObject {
 }
 object OrderableClusterOptionsMessage {
   
-  @scala.inline
-  def apply(): OrderableClusterOptionsMessage = {
+  inline def apply(): OrderableClusterOptionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderableClusterOptionsMessage]
   }
   
-  @scala.inline
-  implicit class OrderableClusterOptionsMessageMutableBuilder[Self <: OrderableClusterOptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: OrderableClusterOptionsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOrderableClusterOptions(value: OrderableClusterOptionsList): Self = StObject.set(x, "OrderableClusterOptions", value.asInstanceOf[js.Any])
+    inline def setOrderableClusterOptions(value: OrderableClusterOptionsList): Self = StObject.set(x, "OrderableClusterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderableClusterOptionsUndefined: Self = StObject.set(x, "OrderableClusterOptions", js.undefined)
+    inline def setOrderableClusterOptionsUndefined: Self = StObject.set(x, "OrderableClusterOptions", js.undefined)
     
-    @scala.inline
-    def setOrderableClusterOptionsVarargs(value: OrderableClusterOption*): Self = StObject.set(x, "OrderableClusterOptions", js.Array(value :_*))
+    inline def setOrderableClusterOptionsVarargs(value: OrderableClusterOption*): Self = StObject.set(x, "OrderableClusterOptions", js.Array(value :_*))
   }
 }

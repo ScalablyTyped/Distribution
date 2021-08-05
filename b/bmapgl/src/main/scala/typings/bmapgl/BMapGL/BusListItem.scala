@@ -10,16 +10,13 @@ trait BusListItem extends StObject {
 }
 object BusListItem {
   
-  @scala.inline
-  def apply(name: String): BusListItem = {
+  inline def apply(name: String): BusListItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusListItem]
   }
   
-  @scala.inline
-  implicit class BusListItemMutableBuilder[Self <: BusListItem] (val x: Self) extends AnyVal {
+  extension [Self <: BusListItem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

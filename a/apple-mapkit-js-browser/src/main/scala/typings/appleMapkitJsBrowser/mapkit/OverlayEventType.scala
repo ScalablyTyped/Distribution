@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OverlayEventType extends StObject
 object OverlayEventType {
   
-  @scala.inline
-  def deselect: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.deselect = "deselect".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.deselect]
+  inline def deselect: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.deselect = "deselect".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.deselect]
   
-  @scala.inline
-  def select: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.select = "select".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.select]
+  inline def select: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.select = "select".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.select]
 }

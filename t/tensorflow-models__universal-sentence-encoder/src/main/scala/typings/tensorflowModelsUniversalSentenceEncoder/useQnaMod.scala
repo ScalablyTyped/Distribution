@@ -29,17 +29,16 @@ object useQnaMod {
     
     def loadModel(): js.Promise[GraphModel] = js.native
     
-    var model: js.Any = js.native
+    /* private */ var model: js.Any = js.native
     
-    var shiftTokens: js.Any = js.native
+    /* private */ var shiftTokens: js.Any = js.native
     
-    var tokenizeStrings: js.Any = js.native
+    /* private */ var tokenizeStrings: js.Any = js.native
     
-    var tokenizer: js.Any = js.native
+    /* private */ var tokenizer: js.Any = js.native
   }
   
-  @scala.inline
-  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
+  inline def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
   
   @JSImport("@tensorflow-models/universal-sentence-encoder/dist/use_qna", "version")
   @js.native
@@ -55,35 +54,26 @@ object useQnaMod {
   }
   object ModelInput {
     
-    @scala.inline
-    def apply(queries: js.Array[String], responses: js.Array[String]): ModelInput = {
+    inline def apply(queries: js.Array[String], responses: js.Array[String]): ModelInput = {
       val __obj = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelInput]
     }
     
-    @scala.inline
-    implicit class ModelInputMutableBuilder[Self <: ModelInput] (val x: Self) extends AnyVal {
+    extension [Self <: ModelInput](x: Self) {
       
-      @scala.inline
-      def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+      inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      @scala.inline
-      def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
       
-      @scala.inline
-      def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+      inline def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
+      inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
       
-      @scala.inline
-      def setResponses(value: js.Array[String]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: js.Array[String]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value :_*))
     }
   }
   
@@ -95,20 +85,16 @@ object useQnaMod {
   }
   object ModelOutput {
     
-    @scala.inline
-    def apply(queryEmbedding: Tensor[Rank], responseEmbedding: Tensor[Rank]): ModelOutput = {
+    inline def apply(queryEmbedding: Tensor[Rank], responseEmbedding: Tensor[Rank]): ModelOutput = {
       val __obj = js.Dynamic.literal(queryEmbedding = queryEmbedding.asInstanceOf[js.Any], responseEmbedding = responseEmbedding.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelOutput]
     }
     
-    @scala.inline
-    implicit class ModelOutputMutableBuilder[Self <: ModelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ModelOutput](x: Self) {
       
-      @scala.inline
-      def setQueryEmbedding(value: Tensor[Rank]): Self = StObject.set(x, "queryEmbedding", value.asInstanceOf[js.Any])
+      inline def setQueryEmbedding(value: Tensor[Rank]): Self = StObject.set(x, "queryEmbedding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseEmbedding(value: Tensor[Rank]): Self = StObject.set(x, "responseEmbedding", value.asInstanceOf[js.Any])
+      inline def setResponseEmbedding(value: Tensor[Rank]): Self = StObject.set(x, "responseEmbedding", value.asInstanceOf[js.Any])
     }
   }
 }

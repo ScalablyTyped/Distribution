@@ -13,16 +13,13 @@ trait GetSubscriptionStateResponse extends StObject {
 }
 object GetSubscriptionStateResponse {
   
-  @scala.inline
-  def apply(SubscriptionState: SubscriptionState): GetSubscriptionStateResponse = {
+  inline def apply(SubscriptionState: SubscriptionState): GetSubscriptionStateResponse = {
     val __obj = js.Dynamic.literal(SubscriptionState = SubscriptionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSubscriptionStateResponse]
   }
   
-  @scala.inline
-  implicit class GetSubscriptionStateResponseMutableBuilder[Self <: GetSubscriptionStateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSubscriptionStateResponse](x: Self) {
     
-    @scala.inline
-    def setSubscriptionState(value: SubscriptionState): Self = StObject.set(x, "SubscriptionState", value.asInstanceOf[js.Any])
+    inline def setSubscriptionState(value: SubscriptionState): Self = StObject.set(x, "SubscriptionState", value.asInstanceOf[js.Any])
   }
 }

@@ -33,58 +33,41 @@ trait NetworkFirewallPolicyDescription extends StObject {
 }
 object NetworkFirewallPolicyDescription {
   
-  @scala.inline
-  def apply(): NetworkFirewallPolicyDescription = {
+  inline def apply(): NetworkFirewallPolicyDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkFirewallPolicyDescription]
   }
   
-  @scala.inline
-  implicit class NetworkFirewallPolicyDescriptionMutableBuilder[Self <: NetworkFirewallPolicyDescription] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkFirewallPolicyDescription](x: Self) {
     
-    @scala.inline
-    def setStatefulRuleGroups(value: StatefulRuleGroupList): Self = StObject.set(x, "StatefulRuleGroups", value.asInstanceOf[js.Any])
+    inline def setStatefulRuleGroups(value: StatefulRuleGroupList): Self = StObject.set(x, "StatefulRuleGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatefulRuleGroupsUndefined: Self = StObject.set(x, "StatefulRuleGroups", js.undefined)
+    inline def setStatefulRuleGroupsUndefined: Self = StObject.set(x, "StatefulRuleGroups", js.undefined)
     
-    @scala.inline
-    def setStatefulRuleGroupsVarargs(value: StatefulRuleGroup*): Self = StObject.set(x, "StatefulRuleGroups", js.Array(value :_*))
+    inline def setStatefulRuleGroupsVarargs(value: StatefulRuleGroup*): Self = StObject.set(x, "StatefulRuleGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessCustomActions(value: NetworkFirewallActionList): Self = StObject.set(x, "StatelessCustomActions", value.asInstanceOf[js.Any])
+    inline def setStatelessCustomActions(value: NetworkFirewallActionList): Self = StObject.set(x, "StatelessCustomActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessCustomActionsUndefined: Self = StObject.set(x, "StatelessCustomActions", js.undefined)
+    inline def setStatelessCustomActionsUndefined: Self = StObject.set(x, "StatelessCustomActions", js.undefined)
     
-    @scala.inline
-    def setStatelessCustomActionsVarargs(value: NetworkFirewallAction*): Self = StObject.set(x, "StatelessCustomActions", js.Array(value :_*))
+    inline def setStatelessCustomActionsVarargs(value: NetworkFirewallAction*): Self = StObject.set(x, "StatelessCustomActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessDefaultActions(value: NetworkFirewallActionList): Self = StObject.set(x, "StatelessDefaultActions", value.asInstanceOf[js.Any])
+    inline def setStatelessDefaultActions(value: NetworkFirewallActionList): Self = StObject.set(x, "StatelessDefaultActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessDefaultActionsUndefined: Self = StObject.set(x, "StatelessDefaultActions", js.undefined)
+    inline def setStatelessDefaultActionsUndefined: Self = StObject.set(x, "StatelessDefaultActions", js.undefined)
     
-    @scala.inline
-    def setStatelessDefaultActionsVarargs(value: NetworkFirewallAction*): Self = StObject.set(x, "StatelessDefaultActions", js.Array(value :_*))
+    inline def setStatelessDefaultActionsVarargs(value: NetworkFirewallAction*): Self = StObject.set(x, "StatelessDefaultActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessFragmentDefaultActions(value: NetworkFirewallActionList): Self = StObject.set(x, "StatelessFragmentDefaultActions", value.asInstanceOf[js.Any])
+    inline def setStatelessFragmentDefaultActions(value: NetworkFirewallActionList): Self = StObject.set(x, "StatelessFragmentDefaultActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessFragmentDefaultActionsUndefined: Self = StObject.set(x, "StatelessFragmentDefaultActions", js.undefined)
+    inline def setStatelessFragmentDefaultActionsUndefined: Self = StObject.set(x, "StatelessFragmentDefaultActions", js.undefined)
     
-    @scala.inline
-    def setStatelessFragmentDefaultActionsVarargs(value: NetworkFirewallAction*): Self = StObject.set(x, "StatelessFragmentDefaultActions", js.Array(value :_*))
+    inline def setStatelessFragmentDefaultActionsVarargs(value: NetworkFirewallAction*): Self = StObject.set(x, "StatelessFragmentDefaultActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessRuleGroups(value: StatelessRuleGroupList): Self = StObject.set(x, "StatelessRuleGroups", value.asInstanceOf[js.Any])
+    inline def setStatelessRuleGroups(value: StatelessRuleGroupList): Self = StObject.set(x, "StatelessRuleGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessRuleGroupsUndefined: Self = StObject.set(x, "StatelessRuleGroups", js.undefined)
+    inline def setStatelessRuleGroupsUndefined: Self = StObject.set(x, "StatelessRuleGroups", js.undefined)
     
-    @scala.inline
-    def setStatelessRuleGroupsVarargs(value: StatelessRuleGroup*): Self = StObject.set(x, "StatelessRuleGroups", js.Array(value :_*))
+    inline def setStatelessRuleGroupsVarargs(value: StatelessRuleGroup*): Self = StObject.set(x, "StatelessRuleGroups", js.Array(value :_*))
   }
 }

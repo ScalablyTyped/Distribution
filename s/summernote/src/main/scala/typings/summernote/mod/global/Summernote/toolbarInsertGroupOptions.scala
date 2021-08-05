@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait toolbarInsertGroupOptions extends StObject
 object toolbarInsertGroupOptions {
   
-  @scala.inline
-  def hr: typings.summernote.summernoteStrings.hr = "hr".asInstanceOf[typings.summernote.summernoteStrings.hr]
+  inline def hr: typings.summernote.summernoteStrings.hr = "hr".asInstanceOf[typings.summernote.summernoteStrings.hr]
   
-  @scala.inline
-  def link: typings.summernote.summernoteStrings.link = "link".asInstanceOf[typings.summernote.summernoteStrings.link]
+  inline def link: typings.summernote.summernoteStrings.link = "link".asInstanceOf[typings.summernote.summernoteStrings.link]
   
-  @scala.inline
-  def picture: typings.summernote.summernoteStrings.picture = "picture".asInstanceOf[typings.summernote.summernoteStrings.picture]
+  inline def picture: typings.summernote.summernoteStrings.picture = "picture".asInstanceOf[typings.summernote.summernoteStrings.picture]
   
-  @scala.inline
-  def table: typings.summernote.summernoteStrings.table = "table".asInstanceOf[typings.summernote.summernoteStrings.table]
+  inline def table: typings.summernote.summernoteStrings.table = "table".asInstanceOf[typings.summernote.summernoteStrings.table]
   
-  @scala.inline
-  def video: typings.summernote.summernoteStrings.video = "video".asInstanceOf[typings.summernote.summernoteStrings.video]
+  inline def video: typings.summernote.summernoteStrings.video = "video".asInstanceOf[typings.summernote.summernoteStrings.video]
 }

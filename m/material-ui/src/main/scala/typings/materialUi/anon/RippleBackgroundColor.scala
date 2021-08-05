@@ -12,25 +12,19 @@ trait RippleBackgroundColor extends StObject {
 }
 object RippleBackgroundColor {
   
-  @scala.inline
-  def apply(): RippleBackgroundColor = {
+  inline def apply(): RippleBackgroundColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RippleBackgroundColor]
   }
   
-  @scala.inline
-  implicit class RippleBackgroundColorMutableBuilder[Self <: RippleBackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: RippleBackgroundColor](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setRippleBackgroundColor(value: String): Self = StObject.set(x, "rippleBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setRippleBackgroundColor(value: String): Self = StObject.set(x, "rippleBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleBackgroundColorUndefined: Self = StObject.set(x, "rippleBackgroundColor", js.undefined)
+    inline def setRippleBackgroundColorUndefined: Self = StObject.set(x, "rippleBackgroundColor", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait IDialRequestedEventArgs extends StObject {
 }
 object IDialRequestedEventArgs {
   
-  @scala.inline
-  def apply(contact: js.Any, handled: () => Unit): IDialRequestedEventArgs = {
+  inline def apply(contact: js.Any, handled: () => Unit): IDialRequestedEventArgs = {
     val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], handled = js.Any.fromFunction0(handled))
     __obj.asInstanceOf[IDialRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class IDialRequestedEventArgsMutableBuilder[Self <: IDialRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IDialRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
+    inline def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
   }
 }

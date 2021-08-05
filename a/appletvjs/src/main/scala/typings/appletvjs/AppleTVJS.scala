@@ -68,8 +68,7 @@ object AppleTVJS {
   }
   object Device {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appIdentifier: String,
       appVersion: String,
       model: String,
@@ -81,26 +80,19 @@ object AppleTVJS {
       __obj.asInstanceOf[Device]
     }
     
-    @scala.inline
-    implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+    extension [Self <: Device](x: Self) {
       
-      @scala.inline
-      def setAppIdentifier(value: String): Self = StObject.set(x, "appIdentifier", value.asInstanceOf[js.Any])
+      inline def setAppIdentifier(value: String): Self = StObject.set(x, "appIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+      inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
+      inline def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemVersion(value: String): Self = StObject.set(x, "systemVersion", value.asInstanceOf[js.Any])
+      inline def setSystemVersion(value: String): Self = StObject.set(x, "systemVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdentifier(value: String): Self = StObject.set(x, "vendorIdentifier", value.asInstanceOf[js.Any])
+      inline def setVendorIdentifier(value: String): Self = StObject.set(x, "vendorIdentifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,29 +124,22 @@ object AppleTVJS {
   }
   object Highlight {
     
-    @scala.inline
-    def apply(description: String, duration: Double, imageURL: String, name: String, starttime: Double): Highlight = {
+    inline def apply(description: String, duration: Double, imageURL: String, name: String, starttime: Double): Highlight = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], imageURL = imageURL.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], starttime = starttime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Highlight]
     }
     
-    @scala.inline
-    implicit class HighlightMutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
+    extension [Self <: Highlight](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
+      inline def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarttime(value: Double): Self = StObject.set(x, "starttime", value.asInstanceOf[js.Any])
+      inline def setStarttime(value: Double): Self = StObject.set(x, "starttime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,23 +153,18 @@ object AppleTVJS {
   }
   object HighlightGroup {
     
-    @scala.inline
-    def apply(hightlights: js.Array[Highlight], name: String): HighlightGroup = {
+    inline def apply(hightlights: js.Array[Highlight], name: String): HighlightGroup = {
       val __obj = js.Dynamic.literal(hightlights = hightlights.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[HighlightGroup]
     }
     
-    @scala.inline
-    implicit class HighlightGroupMutableBuilder[Self <: HighlightGroup] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightGroup](x: Self) {
       
-      @scala.inline
-      def setHightlights(value: js.Array[Highlight]): Self = StObject.set(x, "hightlights", value.asInstanceOf[js.Any])
+      inline def setHightlights(value: js.Array[Highlight]): Self = StObject.set(x, "hightlights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHightlightsVarargs(value: Highlight*): Self = StObject.set(x, "hightlights", js.Array(value :_*))
+      inline def setHightlightsVarargs(value: Highlight*): Self = StObject.set(x, "hightlights", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,20 +178,16 @@ object AppleTVJS {
   }
   object Interstitial {
     
-    @scala.inline
-    def apply(duration: Double, starttime: Double): Interstitial = {
+    inline def apply(duration: Double, starttime: Double): Interstitial = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], starttime = starttime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Interstitial]
     }
     
-    @scala.inline
-    implicit class InterstitialMutableBuilder[Self <: Interstitial] (val x: Self) extends AnyVal {
+    extension [Self <: Interstitial](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarttime(value: Double): Self = StObject.set(x, "starttime", value.asInstanceOf[js.Any])
+      inline def setStarttime(value: Double): Self = StObject.set(x, "starttime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,20 +204,16 @@ object AppleTVJS {
   }
   object Keyboard {
     
-    @scala.inline
-    def apply(onTextChange: () => Unit, text: String): Keyboard = {
+    inline def apply(onTextChange: () => Unit, text: String): Keyboard = {
       val __obj = js.Dynamic.literal(onTextChange = js.Any.fromFunction0(onTextChange), text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Keyboard]
     }
     
-    @scala.inline
-    implicit class KeyboardMutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
+    extension [Self <: Keyboard](x: Self) {
       
-      @scala.inline
-      def setOnTextChange(value: () => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction0(value))
+      inline def setOnTextChange(value: () => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -318,8 +290,7 @@ object AppleTVJS {
   }
   object MediaItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       artworkImageURL: String,
       contentRatingDomain: String,
       contentRatingRanking: Double,
@@ -341,61 +312,43 @@ object AppleTVJS {
       __obj.asInstanceOf[MediaItem]
     }
     
-    @scala.inline
-    implicit class MediaItemMutableBuilder[Self <: MediaItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaItem](x: Self) {
       
-      @scala.inline
-      def setArtworkImageURL(value: String): Self = StObject.set(x, "artworkImageURL", value.asInstanceOf[js.Any])
+      inline def setArtworkImageURL(value: String): Self = StObject.set(x, "artworkImageURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentRatingDomain(value: String): Self = StObject.set(x, "contentRatingDomain", value.asInstanceOf[js.Any])
+      inline def setContentRatingDomain(value: String): Self = StObject.set(x, "contentRatingDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentRatingRanking(value: Double): Self = StObject.set(x, "contentRatingRanking", value.asInstanceOf[js.Any])
+      inline def setContentRatingRanking(value: Double): Self = StObject.set(x, "contentRatingRanking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightGroups(value: js.Array[HighlightGroup]): Self = StObject.set(x, "highlightGroups", value.asInstanceOf[js.Any])
+      inline def setHighlightGroups(value: js.Array[HighlightGroup]): Self = StObject.set(x, "highlightGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightGroupsVarargs(value: HighlightGroup*): Self = StObject.set(x, "highlightGroups", js.Array(value :_*))
+      inline def setHighlightGroupsVarargs(value: HighlightGroup*): Self = StObject.set(x, "highlightGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setInterstitials(value: js.Array[Interstitial]): Self = StObject.set(x, "interstitials", value.asInstanceOf[js.Any])
+      inline def setInterstitials(value: js.Array[Interstitial]): Self = StObject.set(x, "interstitials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterstitialsVarargs(value: Interstitial*): Self = StObject.set(x, "interstitials", js.Array(value :_*))
+      inline def setInterstitialsVarargs(value: Interstitial*): Self = StObject.set(x, "interstitials", js.Array(value :_*))
       
-      @scala.inline
-      def setIsExplicit(value: Boolean): Self = StObject.set(x, "isExplicit", value.asInstanceOf[js.Any])
+      inline def setIsExplicit(value: Boolean): Self = StObject.set(x, "isExplicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadAssetID(value: (String, js.Function2[/* assetID */ String, /* error */ String, Unit]) => Unit): Self = StObject.set(x, "loadAssetID", js.Any.fromFunction2(value))
+      inline def setLoadAssetID(value: (String, js.Function2[/* assetID */ String, /* error */ String, Unit]) => Unit): Self = StObject.set(x, "loadAssetID", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadCertificate(value: (String, js.Function2[/* certificate */ String, /* error */ String, Unit]) => Unit): Self = StObject.set(x, "loadCertificate", js.Any.fromFunction2(value))
+      inline def setLoadCertificate(value: (String, js.Function2[/* certificate */ String, /* error */ String, Unit]) => Unit): Self = StObject.set(x, "loadCertificate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadKey(
+      inline def setLoadKey(
         value: (String, js.Any, js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]) => Unit
       ): Self = StObject.set(x, "loadKey", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResumeTime(value: Double): Self = StObject.set(x, "resumeTime", value.asInstanceOf[js.Any])
+      inline def setResumeTime(value: Double): Self = StObject.set(x, "resumeTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -418,8 +371,7 @@ object AppleTVJS {
   }
   object MenuBarDocument {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDocument: Element => Document,
       setDocument: (Document, Element) => Unit,
       setSelectedItem: Element => Unit
@@ -428,17 +380,13 @@ object AppleTVJS {
       __obj.asInstanceOf[MenuBarDocument]
     }
     
-    @scala.inline
-    implicit class MenuBarDocumentMutableBuilder[Self <: MenuBarDocument] (val x: Self) extends AnyVal {
+    extension [Self <: MenuBarDocument](x: Self) {
       
-      @scala.inline
-      def setGetDocument(value: Element => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction1(value))
+      inline def setGetDocument(value: Element => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDocument(value: (Document, Element) => Unit): Self = StObject.set(x, "setDocument", js.Any.fromFunction2(value))
+      inline def setSetDocument(value: (Document, Element) => Unit): Self = StObject.set(x, "setDocument", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSelectedItem(value: Element => Unit): Self = StObject.set(x, "setSelectedItem", js.Any.fromFunction1(value))
+      inline def setSetSelectedItem(value: Element => Unit): Self = StObject.set(x, "setSelectedItem", js.Any.fromFunction1(value))
     }
   }
   
@@ -612,8 +560,7 @@ object AppleTVJS {
   }
   object Playlist {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       item: Double => MediaItem,
       length: Double,
       pop: () => MediaItem,
@@ -624,23 +571,17 @@ object AppleTVJS {
       __obj.asInstanceOf[Playlist]
     }
     
-    @scala.inline
-    implicit class PlaylistMutableBuilder[Self <: Playlist] (val x: Self) extends AnyVal {
+    extension [Self <: Playlist](x: Self) {
       
-      @scala.inline
-      def setItem(value: Double => MediaItem): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => MediaItem): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPop(value: () => MediaItem): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => MediaItem): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: MediaItem => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: MediaItem => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSplice(value: (Double, Double, MediaItem) => js.Array[MediaItem]): Self = StObject.set(x, "splice", js.Any.fromFunction3(value))
+      inline def setSplice(value: (Double, Double, MediaItem) => js.Array[MediaItem]): Self = StObject.set(x, "splice", js.Any.fromFunction3(value))
     }
   }
   
@@ -663,8 +604,7 @@ object AppleTVJS {
   }
   object Restrictions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowsExplicit: Boolean,
       maxMovieRank: Double,
       maxMovieRatingForCountry: String => String,
@@ -675,23 +615,17 @@ object AppleTVJS {
       __obj.asInstanceOf[Restrictions]
     }
     
-    @scala.inline
-    implicit class RestrictionsMutableBuilder[Self <: Restrictions] (val x: Self) extends AnyVal {
+    extension [Self <: Restrictions](x: Self) {
       
-      @scala.inline
-      def setAllowsExplicit(value: Boolean): Self = StObject.set(x, "allowsExplicit", value.asInstanceOf[js.Any])
+      inline def setAllowsExplicit(value: Boolean): Self = StObject.set(x, "allowsExplicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMovieRank(value: Double): Self = StObject.set(x, "maxMovieRank", value.asInstanceOf[js.Any])
+      inline def setMaxMovieRank(value: Double): Self = StObject.set(x, "maxMovieRank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMovieRatingForCountry(value: String => String): Self = StObject.set(x, "maxMovieRatingForCountry", js.Any.fromFunction1(value))
+      inline def setMaxMovieRatingForCountry(value: String => String): Self = StObject.set(x, "maxMovieRatingForCountry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxTVShowRank(value: Double): Self = StObject.set(x, "maxTVShowRank", value.asInstanceOf[js.Any])
+      inline def setMaxTVShowRank(value: Double): Self = StObject.set(x, "maxTVShowRank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTVShowRatingForCountry(value: String => String): Self = StObject.set(x, "maxTVShowRatingForCountry", js.Any.fromFunction1(value))
+      inline def setMaxTVShowRatingForCountry(value: String => String): Self = StObject.set(x, "maxTVShowRatingForCountry", js.Any.fromFunction1(value))
     }
   }
   
@@ -713,8 +647,7 @@ object AppleTVJS {
   }
   object Settings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       language: String,
       onRestrictionsChange: () => Unit,
       restrictions: Restrictions,
@@ -724,20 +657,15 @@ object AppleTVJS {
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRestrictionsChange(value: () => Unit): Self = StObject.set(x, "onRestrictionsChange", js.Any.fromFunction0(value))
+      inline def setOnRestrictionsChange(value: () => Unit): Self = StObject.set(x, "onRestrictionsChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRestrictions(value: Restrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+      inline def setRestrictions(value: Restrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorefrontCountryCode(value: String): Self = StObject.set(x, "storefrontCountryCode", value.asInstanceOf[js.Any])
+      inline def setStorefrontCountryCode(value: String): Self = StObject.set(x, "storefrontCountryCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -781,26 +709,20 @@ object AppleTVJS {
   }
   object TVError {
     
-    @scala.inline
-    def apply(code: String, description: String, domain: String, userInfo: js.Any): TVError = {
+    inline def apply(code: String, description: String, domain: String, userInfo: js.Any): TVError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[TVError]
     }
     
-    @scala.inline
-    implicit class TVErrorMutableBuilder[Self <: TVError] (val x: Self) extends AnyVal {
+    extension [Self <: TVError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+      inline def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     }
   }
 }

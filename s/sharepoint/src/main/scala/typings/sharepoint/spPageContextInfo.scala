@@ -249,8 +249,7 @@ trait spPageContextInfo extends StObject {
 }
 object spPageContextInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CorrelationId: String,
     PreviewFeaturesEnabled: Boolean,
     ProfileUrl: String,
@@ -339,256 +338,172 @@ object spPageContextInfo {
     __obj.asInstanceOf[spPageContextInfo]
   }
   
-  @scala.inline
-  implicit class spPageContextInfoMutableBuilder[Self <: spPageContextInfo] (val x: Self) extends AnyVal {
+  extension [Self <: spPageContextInfo](x: Self) {
     
-    @scala.inline
-    def setAlertsEnabled(value: Boolean): Self = StObject.set(x, "alertsEnabled", value.asInstanceOf[js.Any])
+    inline def setAlertsEnabled(value: Boolean): Self = StObject.set(x, "alertsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSilverlightPrompt(value: String): Self = StObject.set(x, "allowSilverlightPrompt", value.asInstanceOf[js.Any])
+    inline def setAllowSilverlightPrompt(value: String): Self = StObject.set(x, "allowSilverlightPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDownloadsExperienceEnabled(value: Boolean): Self = StObject.set(x, "blockDownloadsExperienceEnabled", value.asInstanceOf[js.Any])
+    inline def setBlockDownloadsExperienceEnabled(value: Boolean): Self = StObject.set(x, "blockDownloadsExperienceEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanUserCreateMicrosoftForm(value: Boolean): Self = StObject.set(x, "canUserCreateMicrosoftForm", value.asInstanceOf[js.Any])
+    inline def setCanUserCreateMicrosoftForm(value: Boolean): Self = StObject.set(x, "canUserCreateMicrosoftForm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdnPrefix(value: String): Self = StObject.set(x, "cdnPrefix", value.asInstanceOf[js.Any])
+    inline def setCdnPrefix(value: String): Self = StObject.set(x, "cdnPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientServerTimeDelta(value: Double): Self = StObject.set(x, "clientServerTimeDelta", value.asInstanceOf[js.Any])
+    inline def setClientServerTimeDelta(value: Double): Self = StObject.set(x, "clientServerTimeDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
+    inline def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossDomainPhotosEnabled(value: Boolean): Self = StObject.set(x, "crossDomainPhotosEnabled", value.asInstanceOf[js.Any])
+    inline def setCrossDomainPhotosEnabled(value: Boolean): Self = StObject.set(x, "crossDomainPhotosEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentCultureName(value: String): Self = StObject.set(x, "currentCultureName", value.asInstanceOf[js.Any])
+    inline def setCurrentCultureName(value: String): Self = StObject.set(x, "currentCultureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentLanguage(value: Double): Self = StObject.set(x, "currentLanguage", value.asInstanceOf[js.Any])
+    inline def setCurrentLanguage(value: Double): Self = StObject.set(x, "currentLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUICultureName(value: String): Self = StObject.set(x, "currentUICultureName", value.asInstanceOf[js.Any])
+    inline def setCurrentUICultureName(value: String): Self = StObject.set(x, "currentUICultureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAppViews(value: Boolean): Self = StObject.set(x, "disableAppViews", value.asInstanceOf[js.Any])
+    inline def setDisableAppViews(value: Boolean): Self = StObject.set(x, "disableAppViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFlows(value: Boolean): Self = StObject.set(x, "disableFlows", value.asInstanceOf[js.Any])
+    inline def setDisableFlows(value: Boolean): Self = StObject.set(x, "disableFlows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFarmLabel(value: String): Self = StObject.set(x, "farmLabel", value.asInstanceOf[js.Any])
+    inline def setFarmLabel(value: String): Self = StObject.set(x, "farmLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDigestTimeoutSeconds(value: Double): Self = StObject.set(x, "formDigestTimeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setFormDigestTimeoutSeconds(value: Double): Self = StObject.set(x, "formDigestTimeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDigestValue(value: String): Self = StObject.set(x, "formDigestValue", value.asInstanceOf[js.Any])
+    inline def setFormDigestValue(value: String): Self = StObject.set(x, "formDigestValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupColor(value: String): Self = StObject.set(x, "groupColor", value.asInstanceOf[js.Any])
+    inline def setGroupColor(value: String): Self = StObject.set(x, "groupColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupHasHomepage(value: Boolean): Self = StObject.set(x, "groupHasHomepage", value.asInstanceOf[js.Any])
+    inline def setGroupHasHomepage(value: Boolean): Self = StObject.set(x, "groupHasHomepage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestsEnabled(value: Boolean): Self = StObject.set(x, "guestsEnabled", value.asInstanceOf[js.Any])
+    inline def setGuestsEnabled(value: Boolean): Self = StObject.set(x, "guestsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasManageWebPermissions(value: Boolean): Self = StObject.set(x, "hasManageWebPermissions", value.asInstanceOf[js.Any])
+    inline def setHasManageWebPermissions(value: Boolean): Self = StObject.set(x, "hasManageWebPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAnonymousGuestUser(value: Boolean): Self = StObject.set(x, "isAnonymousGuestUser", value.asInstanceOf[js.Any])
+    inline def setIsAnonymousGuestUser(value: Boolean): Self = StObject.set(x, "isAnonymousGuestUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAppWeb(value: Boolean): Self = StObject.set(x, "isAppWeb", value.asInstanceOf[js.Any])
+    inline def setIsAppWeb(value: Boolean): Self = StObject.set(x, "isAppWeb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExternalGuestUser(value: Boolean): Self = StObject.set(x, "isExternalGuestUser", value.asInstanceOf[js.Any])
+    inline def setIsExternalGuestUser(value: Boolean): Self = StObject.set(x, "isExternalGuestUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNoScriptEnabled(value: Boolean): Self = StObject.set(x, "isNoScriptEnabled", value.asInstanceOf[js.Any])
+    inline def setIsNoScriptEnabled(value: Boolean): Self = StObject.set(x, "isNoScriptEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSPO(value: Boolean): Self = StObject.set(x, "isSPO", value.asInstanceOf[js.Any])
+    inline def setIsSPO(value: Boolean): Self = StObject.set(x, "isSPO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSiteAdmin(value: Boolean): Self = StObject.set(x, "isSiteAdmin", value.asInstanceOf[js.Any])
+    inline def setIsSiteAdmin(value: Boolean): Self = StObject.set(x, "isSiteAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTenantDevSite(value: Boolean): Self = StObject.set(x, "isTenantDevSite", value.asInstanceOf[js.Any])
+    inline def setIsTenantDevSite(value: Boolean): Self = StObject.set(x, "isTenantDevSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWebWelcomePage(value: Boolean): Self = StObject.set(x, "isWebWelcomePage", value.asInstanceOf[js.Any])
+    inline def setIsWebWelcomePage(value: Boolean): Self = StObject.set(x, "isWebWelcomePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutsUrl(value: String): Self = StObject.set(x, "layoutsUrl", value.asInstanceOf[js.Any])
+    inline def setLayoutsUrl(value: String): Self = StObject.set(x, "layoutsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListBaseTemplate(value: Double): Self = StObject.set(x, "listBaseTemplate", value.asInstanceOf[js.Any])
+    inline def setListBaseTemplate(value: Double): Self = StObject.set(x, "listBaseTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPermsMask(value: High): Self = StObject.set(x, "listPermsMask", value.asInstanceOf[js.Any])
+    inline def setListPermsMask(value: High): Self = StObject.set(x, "listPermsMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTitle(value: String): Self = StObject.set(x, "listTitle", value.asInstanceOf[js.Any])
+    inline def setListTitle(value: String): Self = StObject.set(x, "listTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
+    inline def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumFileSize(value: Double): Self = StObject.set(x, "maximumFileSize", value.asInstanceOf[js.Any])
+    inline def setMaximumFileSize(value: Double): Self = StObject.set(x, "maximumFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenInClient(value: Boolean): Self = StObject.set(x, "openInClient", value.asInstanceOf[js.Any])
+    inline def setOpenInClient(value: Boolean): Self = StObject.set(x, "openInClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageItemId(value: Double): Self = StObject.set(x, "pageItemId", value.asInstanceOf[js.Any])
+    inline def setPageItemId(value: Double): Self = StObject.set(x, "pageItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageListId(value: String): Self = StObject.set(x, "pageListId", value.asInstanceOf[js.Any])
+    inline def setPageListId(value: String): Self = StObject.set(x, "pageListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagePermsMask(value: High): Self = StObject.set(x, "pagePermsMask", value.asInstanceOf[js.Any])
+    inline def setPagePermsMask(value: High): Self = StObject.set(x, "pagePermsMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagePersonalizationScope(value: String): Self = StObject.set(x, "pagePersonalizationScope", value.asInstanceOf[js.Any])
+    inline def setPagePersonalizationScope(value: String): Self = StObject.set(x, "pagePersonalizationScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferUserTimeZone(value: Boolean): Self = StObject.set(x, "preferUserTimeZone", value.asInstanceOf[js.Any])
+    inline def setPreferUserTimeZone(value: Boolean): Self = StObject.set(x, "preferUserTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewFeaturesEnabled(value: Boolean): Self = StObject.set(x, "PreviewFeaturesEnabled", value.asInstanceOf[js.Any])
+    inline def setPreviewFeaturesEnabled(value: Boolean): Self = StObject.set(x, "PreviewFeaturesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUrl(value: String): Self = StObject.set(x, "ProfileUrl", value.asInstanceOf[js.Any])
+    inline def setProfileUrl(value: String): Self = StObject.set(x, "ProfileUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishingFeatureOn(value: Boolean): Self = StObject.set(x, "PublishingFeatureOn", value.asInstanceOf[js.Any])
+    inline def setPublishingFeatureOn(value: Boolean): Self = StObject.set(x, "PublishingFeatureOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecycleBinItemCount(value: Double): Self = StObject.set(x, "RecycleBinItemCount", value.asInstanceOf[js.Any])
+    inline def setRecycleBinItemCount(value: Double): Self = StObject.set(x, "RecycleBinItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerRedirectedUrl(value: String): Self = StObject.set(x, "serverRedirectedUrl", value.asInstanceOf[js.Any])
+    inline def setServerRedirectedUrl(value: String): Self = StObject.set(x, "serverRedirectedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerRequestPath(value: String): Self = StObject.set(x, "serverRequestPath", value.asInstanceOf[js.Any])
+    inline def setServerRequestPath(value: String): Self = StObject.set(x, "serverRequestPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTime(value: String): Self = StObject.set(x, "serverTime", value.asInstanceOf[js.Any])
+    inline def setServerTime(value: String): Self = StObject.set(x, "serverTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteAbsoluteUrl(value: String): Self = StObject.set(x, "siteAbsoluteUrl", value.asInstanceOf[js.Any])
+    inline def setSiteAbsoluteUrl(value: String): Self = StObject.set(x, "siteAbsoluteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteClassification(value: String): Self = StObject.set(x, "siteClassification", value.asInstanceOf[js.Any])
+    inline def setSiteClassification(value: String): Self = StObject.set(x, "siteClassification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteClientTag(value: String): Self = StObject.set(x, "siteClientTag", value.asInstanceOf[js.Any])
+    inline def setSiteClientTag(value: String): Self = StObject.set(x, "siteClientTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteColor(value: String): Self = StObject.set(x, "siteColor", value.asInstanceOf[js.Any])
+    inline def setSiteColor(value: String): Self = StObject.set(x, "siteColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSitePagesEnabled(value: Boolean): Self = StObject.set(x, "sitePagesEnabled", value.asInstanceOf[js.Any])
+    inline def setSitePagesEnabled(value: Boolean): Self = StObject.set(x, "sitePagesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteServerRelativeUrl(value: String): Self = StObject.set(x, "siteServerRelativeUrl", value.asInstanceOf[js.Any])
+    inline def setSiteServerRelativeUrl(value: String): Self = StObject.set(x, "siteServerRelativeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteSubscriptionId(value: String): Self = StObject.set(x, "siteSubscriptionId", value.asInstanceOf[js.Any])
+    inline def setSiteSubscriptionId(value: String): Self = StObject.set(x, "siteSubscriptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportPercentStorePath(value: Boolean): Self = StObject.set(x, "supportPercentStorePath", value.asInstanceOf[js.Any])
+    inline def setSupportPercentStorePath(value: Boolean): Self = StObject.set(x, "supportPercentStorePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportPoundStorePath(value: Boolean): Self = StObject.set(x, "supportPoundStorePath", value.asInstanceOf[js.Any])
+    inline def setSupportPoundStorePath(value: Boolean): Self = StObject.set(x, "supportPoundStorePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUserKey(value: String): Self = StObject.set(x, "systemUserKey", value.asInstanceOf[js.Any])
+    inline def setSystemUserKey(value: String): Self = StObject.set(x, "systemUserKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantAppVersion(value: String): Self = StObject.set(x, "tenantAppVersion", value.asInstanceOf[js.Any])
+    inline def setTenantAppVersion(value: String): Self = StObject.set(x, "tenantAppVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeCacheToken(value: String): Self = StObject.set(x, "themeCacheToken", value.asInstanceOf[js.Any])
+    inline def setThemeCacheToken(value: String): Self = StObject.set(x, "themeCacheToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemedCssFolderUrl(value: String): Self = StObject.set(x, "themedCssFolderUrl", value.asInstanceOf[js.Any])
+    inline def setThemedCssFolderUrl(value: String): Self = StObject.set(x, "themedCssFolderUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemedImageFileNames(value: String): Self = StObject.set(x, "themedImageFileNames", value.asInstanceOf[js.Any])
+    inline def setThemedImageFileNames(value: String): Self = StObject.set(x, "themedImageFileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateFormDigestPageLoaded(value: String): Self = StObject.set(x, "updateFormDigestPageLoaded", value.asInstanceOf[js.Any])
+    inline def setUpdateFormDigestPageLoaded(value: String): Self = StObject.set(x, "updateFormDigestPageLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
+    inline def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
+    inline def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLoginName(value: String): Self = StObject.set(x, "userLoginName", value.asInstanceOf[js.Any])
+    inline def setUserLoginName(value: String): Self = StObject.set(x, "userLoginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPrincipalName(value: String): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    inline def setUserPrincipalName(value: String): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+    inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewOnlyExperienceEnabled(value: Boolean): Self = StObject.set(x, "viewOnlyExperienceEnabled", value.asInstanceOf[js.Any])
+    inline def setViewOnlyExperienceEnabled(value: Boolean): Self = StObject.set(x, "viewOnlyExperienceEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAbsoluteUrl(value: String): Self = StObject.set(x, "webAbsoluteUrl", value.asInstanceOf[js.Any])
+    inline def setWebAbsoluteUrl(value: String): Self = StObject.set(x, "webAbsoluteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebDescription(value: String): Self = StObject.set(x, "webDescription", value.asInstanceOf[js.Any])
+    inline def setWebDescription(value: String): Self = StObject.set(x, "webDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebId(value: String): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
+    inline def setWebId(value: String): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebLanguage(value: Double): Self = StObject.set(x, "webLanguage", value.asInstanceOf[js.Any])
+    inline def setWebLanguage(value: Double): Self = StObject.set(x, "webLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebLogoUrl(value: String): Self = StObject.set(x, "webLogoUrl", value.asInstanceOf[js.Any])
+    inline def setWebLogoUrl(value: String): Self = StObject.set(x, "webLogoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPermMasks(value: High): Self = StObject.set(x, "webPermMasks", value.asInstanceOf[js.Any])
+    inline def setWebPermMasks(value: High): Self = StObject.set(x, "webPermMasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebServerRelativeUrl(value: String): Self = StObject.set(x, "webServerRelativeUrl", value.asInstanceOf[js.Any])
+    inline def setWebServerRelativeUrl(value: String): Self = StObject.set(x, "webServerRelativeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebTemplate(value: String): Self = StObject.set(x, "webTemplate", value.asInstanceOf[js.Any])
+    inline def setWebTemplate(value: String): Self = StObject.set(x, "webTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebTitle(value: String): Self = StObject.set(x, "webTitle", value.asInstanceOf[js.Any])
+    inline def setWebTitle(value: String): Self = StObject.set(x, "webTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUIVersion(value: Double): Self = StObject.set(x, "webUIVersion", value.asInstanceOf[js.Any])
+    inline def setWebUIVersion(value: Double): Self = StObject.set(x, "webUIVersion", value.asInstanceOf[js.Any])
   }
 }

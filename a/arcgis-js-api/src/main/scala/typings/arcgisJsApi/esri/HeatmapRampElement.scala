@@ -34,8 +34,7 @@ trait HeatmapRampElement
 }
 object HeatmapRampElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[HeatmapRampStop],
@@ -47,22 +46,16 @@ object HeatmapRampElement {
     __obj.asInstanceOf[HeatmapRampElement]
   }
   
-  @scala.inline
-  implicit class HeatmapRampElementMutableBuilder[Self <: HeatmapRampElement] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapRampElement](x: Self) {
     
-    @scala.inline
-    def setInfos(value: js.Array[HeatmapRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: js.Array[HeatmapRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfosVarargs(value: HeatmapRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: HeatmapRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

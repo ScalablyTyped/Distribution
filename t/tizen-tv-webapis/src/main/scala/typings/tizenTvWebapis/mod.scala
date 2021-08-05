@@ -35,17 +35,14 @@ object mod extends Shortcut {
     }
     object Window {
       
-      @scala.inline
-      def apply(webapis: Webapis): Window = {
+      inline def apply(webapis: Webapis): Window = {
         val __obj = js.Dynamic.literal(webapis = webapis.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setWebapis(value: Webapis): Self = StObject.set(x, "webapis", value.asInstanceOf[js.Any])
+        inline def setWebapis(value: Webapis): Self = StObject.set(x, "webapis", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -78,8 +75,7 @@ object mod extends Shortcut {
   }
   object Webapis {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       WebAPIException: WebAPIException,
       adinfo: AdInfoManager,
       appcommon: AppCommonManager,
@@ -97,44 +93,31 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Webapis]
     }
     
-    @scala.inline
-    implicit class WebapisMutableBuilder[Self <: Webapis] (val x: Self) extends AnyVal {
+    extension [Self <: Webapis](x: Self) {
       
-      @scala.inline
-      def setAdinfo(value: AdInfoManager): Self = StObject.set(x, "adinfo", value.asInstanceOf[js.Any])
+      inline def setAdinfo(value: AdInfoManager): Self = StObject.set(x, "adinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppcommon(value: AppCommonManager): Self = StObject.set(x, "appcommon", value.asInstanceOf[js.Any])
+      inline def setAppcommon(value: AppCommonManager): Self = StObject.set(x, "appcommon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvinfo(value: AVInfoManager): Self = StObject.set(x, "avinfo", value.asInstanceOf[js.Any])
+      inline def setAvinfo(value: AVInfoManager): Self = StObject.set(x, "avinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvplay(value: AVPlayManager): Self = StObject.set(x, "avplay", value.asInstanceOf[js.Any])
+      inline def setAvplay(value: AVPlayManager): Self = StObject.set(x, "avplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvplaystore(value: AVPlayStoreManager): Self = StObject.set(x, "avplaystore", value.asInstanceOf[js.Any])
+      inline def setAvplaystore(value: AVPlayStoreManager): Self = StObject.set(x, "avplaystore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilling(value: BillingManager): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
+      inline def setBilling(value: BillingManager): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: NetworkManager): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: NetworkManager): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductinfo(value: ProductInfoManager): Self = StObject.set(x, "productinfo", value.asInstanceOf[js.Any])
+      inline def setProductinfo(value: ProductInfoManager): Self = StObject.set(x, "productinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSso(value: SsoManager): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
+      inline def setSso(value: SsoManager): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvinfo(value: TvInfoManager): Self = StObject.set(x, "tvinfo", value.asInstanceOf[js.Any])
+      inline def setTvinfo(value: TvInfoManager): Self = StObject.set(x, "tvinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAPIException(value: WebAPIException): Self = StObject.set(x, "WebAPIException", value.asInstanceOf[js.Any])
+      inline def setWebAPIException(value: WebAPIException): Self = StObject.set(x, "WebAPIException", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetdata(value: WidgetDataManager): Self = StObject.set(x, "widgetdata", value.asInstanceOf[js.Any])
+      inline def setWidgetdata(value: WidgetDataManager): Self = StObject.set(x, "widgetdata", value.asInstanceOf[js.Any])
     }
   }
   

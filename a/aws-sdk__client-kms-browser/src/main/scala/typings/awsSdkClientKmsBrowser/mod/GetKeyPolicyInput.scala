@@ -9,8 +9,7 @@ trait GetKeyPolicyInput
      with typings.awsSdkClientKmsBrowser.typesGetKeyPolicyInputMod.GetKeyPolicyInput
 object GetKeyPolicyInput {
   
-  @scala.inline
-  def apply(KeyId: String, PolicyName: String): GetKeyPolicyInput = {
+  inline def apply(KeyId: String, PolicyName: String): GetKeyPolicyInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyPolicyInput]
   }

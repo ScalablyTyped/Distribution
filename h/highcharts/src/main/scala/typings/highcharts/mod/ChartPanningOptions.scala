@@ -19,25 +19,19 @@ trait ChartPanningOptions extends StObject {
 }
 object ChartPanningOptions {
   
-  @scala.inline
-  def apply(): ChartPanningOptions = {
+  inline def apply(): ChartPanningOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartPanningOptions]
   }
   
-  @scala.inline
-  implicit class ChartPanningOptionsMutableBuilder[Self <: ChartPanningOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartPanningOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setType(value: OptionsTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OptionsTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

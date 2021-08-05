@@ -15,25 +15,19 @@ trait ContainerMixin extends StObject {
 }
 object ContainerMixin {
   
-  @scala.inline
-  def apply(backgroundStyleId: String, backgrounds: js.Array[Paint], expanded: Boolean): ContainerMixin = {
+  inline def apply(backgroundStyleId: String, backgrounds: js.Array[Paint], expanded: Boolean): ContainerMixin = {
     val __obj = js.Dynamic.literal(backgroundStyleId = backgroundStyleId.asInstanceOf[js.Any], backgrounds = backgrounds.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerMixin]
   }
   
-  @scala.inline
-  implicit class ContainerMixinMutableBuilder[Self <: ContainerMixin] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerMixin](x: Self) {
     
-    @scala.inline
-    def setBackgroundStyleId(value: String): Self = StObject.set(x, "backgroundStyleId", value.asInstanceOf[js.Any])
+    inline def setBackgroundStyleId(value: String): Self = StObject.set(x, "backgroundStyleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgrounds(value: js.Array[Paint]): Self = StObject.set(x, "backgrounds", value.asInstanceOf[js.Any])
+    inline def setBackgrounds(value: js.Array[Paint]): Self = StObject.set(x, "backgrounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundsVarargs(value: Paint*): Self = StObject.set(x, "backgrounds", js.Array(value :_*))
+    inline def setBackgroundsVarargs(value: Paint*): Self = StObject.set(x, "backgrounds", js.Array(value :_*))
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }
 }

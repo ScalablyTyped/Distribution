@@ -15,19 +15,15 @@ object ArrayBuffer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(data: js.Array[Double], size: Double): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
-  @scala.inline
-  def create(
+  inline def create(data: js.Array[Double], size: Double): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
+  inline def create(
     data: js.Array[Double],
     size: Double,
     `type`: Unit,
     usage: typings.wonderJs.ebufferusageMod.EBufferUsage
   ): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
-  @scala.inline
-  def create(data: js.Array[Double], size: Double, `type`: typings.wonderJs.ebuffertypeMod.EBufferType): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
-  @scala.inline
-  def create(
+  inline def create(data: js.Array[Double], size: Double, `type`: typings.wonderJs.ebuffertypeMod.EBufferType): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
+  inline def create(
     data: js.Array[Double],
     size: Double,
     `type`: typings.wonderJs.ebuffertypeMod.EBufferType,

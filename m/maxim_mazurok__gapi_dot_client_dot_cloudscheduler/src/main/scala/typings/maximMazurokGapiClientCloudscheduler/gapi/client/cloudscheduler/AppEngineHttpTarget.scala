@@ -42,47 +42,35 @@ trait AppEngineHttpTarget extends StObject {
 }
 object AppEngineHttpTarget {
   
-  @scala.inline
-  def apply(): AppEngineHttpTarget = {
+  inline def apply(): AppEngineHttpTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppEngineHttpTarget]
   }
   
-  @scala.inline
-  implicit class AppEngineHttpTargetMutableBuilder[Self <: AppEngineHttpTarget] (val x: Self) extends AnyVal {
+  extension [Self <: AppEngineHttpTarget](x: Self) {
     
-    @scala.inline
-    def setAppEngineRouting(value: AppEngineRouting): Self = StObject.set(x, "appEngineRouting", value.asInstanceOf[js.Any])
+    inline def setAppEngineRouting(value: AppEngineRouting): Self = StObject.set(x, "appEngineRouting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineRoutingUndefined: Self = StObject.set(x, "appEngineRouting", js.undefined)
+    inline def setAppEngineRoutingUndefined: Self = StObject.set(x, "appEngineRouting", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeaders(
+    inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.AppEngineHttpTarget & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+    inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
-    @scala.inline
-    def setRelativeUri(value: String): Self = StObject.set(x, "relativeUri", value.asInstanceOf[js.Any])
+    inline def setRelativeUri(value: String): Self = StObject.set(x, "relativeUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeUriUndefined: Self = StObject.set(x, "relativeUri", js.undefined)
+    inline def setRelativeUriUndefined: Self = StObject.set(x, "relativeUri", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object statusPageMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(_req: IncomingMessage, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(_req: IncomingMessage, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -11,16 +11,13 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(): Region = {
+  inline def apply(): Region = {
     val __obj = js.Dynamic.literal(region = true)
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setRegion(value: `true`): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: `true`): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

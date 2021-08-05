@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaginationEvent extends StObject
 object PaginationEvent {
   
-  @scala.inline
-  def paginationRender: typings.swiper.swiperStrings.paginationRender = "paginationRender".asInstanceOf[typings.swiper.swiperStrings.paginationRender]
+  inline def paginationRender: typings.swiper.swiperStrings.paginationRender = "paginationRender".asInstanceOf[typings.swiper.swiperStrings.paginationRender]
   
-  @scala.inline
-  def paginationUpdate: typings.swiper.swiperStrings.paginationUpdate = "paginationUpdate".asInstanceOf[typings.swiper.swiperStrings.paginationUpdate]
+  inline def paginationUpdate: typings.swiper.swiperStrings.paginationUpdate = "paginationUpdate".asInstanceOf[typings.swiper.swiperStrings.paginationUpdate]
 }

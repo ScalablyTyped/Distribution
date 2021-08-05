@@ -18,22 +18,17 @@ trait UpdateConnectorDefinitionRequest extends StObject {
 }
 object UpdateConnectorDefinitionRequest {
   
-  @scala.inline
-  def apply(ConnectorDefinitionId: string): UpdateConnectorDefinitionRequest = {
+  inline def apply(ConnectorDefinitionId: string): UpdateConnectorDefinitionRequest = {
     val __obj = js.Dynamic.literal(ConnectorDefinitionId = ConnectorDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConnectorDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConnectorDefinitionRequestMutableBuilder[Self <: UpdateConnectorDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConnectorDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
+    inline def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

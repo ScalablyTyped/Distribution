@@ -22,20 +22,16 @@ object socialButtonPinterestMod extends Shortcut {
   }
   object SocialButtonPinterestProps {
     
-    @scala.inline
-    def apply(): SocialButtonPinterestProps = {
+    inline def apply(): SocialButtonPinterestProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocialButtonPinterestProps]
     }
     
-    @scala.inline
-    implicit class SocialButtonPinterestPropsMutableBuilder[Self <: SocialButtonPinterestProps] (val x: Self) extends AnyVal {
+    extension [Self <: SocialButtonPinterestProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

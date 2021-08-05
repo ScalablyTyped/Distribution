@@ -18,19 +18,15 @@ trait CreatePublicVirtualInterfaceRequest extends StObject {
 }
 object CreatePublicVirtualInterfaceRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId, newPublicVirtualInterface: NewPublicVirtualInterface): CreatePublicVirtualInterfaceRequest = {
+  inline def apply(connectionId: ConnectionId, newPublicVirtualInterface: NewPublicVirtualInterface): CreatePublicVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newPublicVirtualInterface = newPublicVirtualInterface.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePublicVirtualInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class CreatePublicVirtualInterfaceRequestMutableBuilder[Self <: CreatePublicVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePublicVirtualInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPublicVirtualInterface(value: NewPublicVirtualInterface): Self = StObject.set(x, "newPublicVirtualInterface", value.asInstanceOf[js.Any])
+    inline def setNewPublicVirtualInterface(value: NewPublicVirtualInterface): Self = StObject.set(x, "newPublicVirtualInterface", value.asInstanceOf[js.Any])
   }
 }

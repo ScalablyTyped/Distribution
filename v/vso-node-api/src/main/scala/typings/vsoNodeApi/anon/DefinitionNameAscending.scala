@@ -18,8 +18,7 @@ trait DefinitionNameAscending extends StObject {
 }
 object DefinitionNameAscending {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definitionNameAscending: scala.Double,
     definitionNameDescending: scala.Double,
     lastModifiedAscending: scala.Double,
@@ -30,22 +29,16 @@ object DefinitionNameAscending {
     __obj.asInstanceOf[DefinitionNameAscending]
   }
   
-  @scala.inline
-  implicit class DefinitionNameAscendingMutableBuilder[Self <: DefinitionNameAscending] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionNameAscending](x: Self) {
     
-    @scala.inline
-    def setDefinitionNameAscending(value: scala.Double): Self = StObject.set(x, "definitionNameAscending", value.asInstanceOf[js.Any])
+    inline def setDefinitionNameAscending(value: scala.Double): Self = StObject.set(x, "definitionNameAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionNameDescending(value: scala.Double): Self = StObject.set(x, "definitionNameDescending", value.asInstanceOf[js.Any])
+    inline def setDefinitionNameDescending(value: scala.Double): Self = StObject.set(x, "definitionNameDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedAscending(value: scala.Double): Self = StObject.set(x, "lastModifiedAscending", value.asInstanceOf[js.Any])
+    inline def setLastModifiedAscending(value: scala.Double): Self = StObject.set(x, "lastModifiedAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDescending(value: scala.Double): Self = StObject.set(x, "lastModifiedDescending", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDescending(value: scala.Double): Self = StObject.set(x, "lastModifiedDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

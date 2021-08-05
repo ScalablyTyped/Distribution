@@ -13,19 +13,15 @@ trait SetPausedInDebuggerMessageRequest extends StObject {
 }
 object SetPausedInDebuggerMessageRequest {
   
-  @scala.inline
-  def apply(): SetPausedInDebuggerMessageRequest = {
+  inline def apply(): SetPausedInDebuggerMessageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetPausedInDebuggerMessageRequest]
   }
   
-  @scala.inline
-  implicit class SetPausedInDebuggerMessageRequestMutableBuilder[Self <: SetPausedInDebuggerMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetPausedInDebuggerMessageRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

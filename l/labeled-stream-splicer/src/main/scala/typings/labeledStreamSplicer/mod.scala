@@ -14,27 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): splicer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[splicer]
-  @scala.inline
-  def apply(streams: Unit, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
-  @scala.inline
-  def apply(streams: LabeledStreamList): splicer = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[splicer]
-  @scala.inline
-  def apply(streams: LabeledStreamList, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
+  inline def apply(): splicer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[splicer]
+  inline def apply(streams: Unit, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
+  inline def apply(streams: LabeledStreamList): splicer = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[splicer]
+  inline def apply(streams: LabeledStreamList, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
   
   @JSImport("labeled-stream-splicer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def obj(): splicer = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")().asInstanceOf[splicer]
-  @scala.inline
-  def obj(streams: Unit, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
-  @scala.inline
-  def obj(streams: LabeledStreamList): splicer = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any]).asInstanceOf[splicer]
-  @scala.inline
-  def obj(streams: LabeledStreamList, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
+  inline def obj(): splicer = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")().asInstanceOf[splicer]
+  inline def obj(streams: Unit, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
+  inline def obj(streams: LabeledStreamList): splicer = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any]).asInstanceOf[splicer]
+  inline def obj(streams: LabeledStreamList, opts: TransformOptions): splicer = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[splicer]
   
   type Index = Double | String
   

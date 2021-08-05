@@ -18,28 +18,21 @@ trait ListBundlesResult extends StObject {
 }
 object ListBundlesResult {
   
-  @scala.inline
-  def apply(): ListBundlesResult = {
+  inline def apply(): ListBundlesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBundlesResult]
   }
   
-  @scala.inline
-  implicit class ListBundlesResultMutableBuilder[Self <: ListBundlesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListBundlesResult](x: Self) {
     
-    @scala.inline
-    def setBundleList(value: BundleList): Self = StObject.set(x, "bundleList", value.asInstanceOf[js.Any])
+    inline def setBundleList(value: BundleList): Self = StObject.set(x, "bundleList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleListUndefined: Self = StObject.set(x, "bundleList", js.undefined)
+    inline def setBundleListUndefined: Self = StObject.set(x, "bundleList", js.undefined)
     
-    @scala.inline
-    def setBundleListVarargs(value: BundleDetails*): Self = StObject.set(x, "bundleList", js.Array(value :_*))
+    inline def setBundleListVarargs(value: BundleDetails*): Self = StObject.set(x, "bundleList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

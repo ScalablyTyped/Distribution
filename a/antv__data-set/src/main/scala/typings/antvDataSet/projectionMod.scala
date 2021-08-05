@@ -14,26 +14,20 @@ object projectionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(projection: String): Options = {
+    inline def apply(projection: String): Options = {
       val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Array[String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Array[String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
+      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     }
   }
 }

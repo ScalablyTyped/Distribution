@@ -20,23 +20,19 @@ trait MendelDebugInput extends StObject {
 }
 object MendelDebugInput {
   
-  @scala.inline
-  def apply(): MendelDebugInput = {
+  inline def apply(): MendelDebugInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MendelDebugInput]
   }
   
-  @scala.inline
-  implicit class MendelDebugInputMutableBuilder[Self <: MendelDebugInput] (val x: Self) extends AnyVal {
+  extension [Self <: MendelDebugInput](x: Self) {
     
-    @scala.inline
-    def setNamespacedDebugInput(
+    inline def setNamespacedDebugInput(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput}
       */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.MendelDebugInput & TopLevel[js.Any]
     ): Self = StObject.set(x, "namespacedDebugInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacedDebugInputUndefined: Self = StObject.set(x, "namespacedDebugInput", js.undefined)
+    inline def setNamespacedDebugInputUndefined: Self = StObject.set(x, "namespacedDebugInput", js.undefined)
   }
 }

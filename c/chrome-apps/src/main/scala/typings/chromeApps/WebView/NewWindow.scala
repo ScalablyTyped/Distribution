@@ -20,19 +20,15 @@ trait NewWindow extends StObject {
 }
 object NewWindow {
   
-  @scala.inline
-  def apply(attach: HTMLWebViewElement => Unit, discard: () => Unit): NewWindow = {
+  inline def apply(attach: HTMLWebViewElement => Unit, discard: () => Unit): NewWindow = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), discard = js.Any.fromFunction0(discard))
     __obj.asInstanceOf[NewWindow]
   }
   
-  @scala.inline
-  implicit class NewWindowMutableBuilder[Self <: NewWindow] (val x: Self) extends AnyVal {
+  extension [Self <: NewWindow](x: Self) {
     
-    @scala.inline
-    def setAttach(value: HTMLWebViewElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+    inline def setAttach(value: HTMLWebViewElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDiscard(value: () => Unit): Self = StObject.set(x, "discard", js.Any.fromFunction0(value))
+    inline def setDiscard(value: () => Unit): Self = StObject.set(x, "discard", js.Any.fromFunction0(value))
   }
 }

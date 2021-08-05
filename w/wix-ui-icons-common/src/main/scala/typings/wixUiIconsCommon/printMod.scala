@@ -22,20 +22,16 @@ object printMod extends Shortcut {
   }
   object PrintProps {
     
-    @scala.inline
-    def apply(): PrintProps = {
+    inline def apply(): PrintProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrintProps]
     }
     
-    @scala.inline
-    implicit class PrintPropsMutableBuilder[Self <: PrintProps] (val x: Self) extends AnyVal {
+    extension [Self <: PrintProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

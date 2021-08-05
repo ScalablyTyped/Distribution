@@ -15,25 +15,19 @@ trait SmartContractInformation extends StObject {
 }
 object SmartContractInformation {
   
-  @scala.inline
-  def apply(): SmartContractInformation = {
+  inline def apply(): SmartContractInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmartContractInformation]
   }
   
-  @scala.inline
-  implicit class SmartContractInformationMutableBuilder[Self <: SmartContractInformation] (val x: Self) extends AnyVal {
+  extension [Self <: SmartContractInformation](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

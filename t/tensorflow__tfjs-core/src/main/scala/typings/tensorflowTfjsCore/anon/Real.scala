@@ -12,19 +12,15 @@ trait Real extends StObject {
 }
 object Real {
   
-  @scala.inline
-  def apply(imag: Double, real: Double): Real = {
+  inline def apply(imag: Double, real: Double): Real = {
     val __obj = js.Dynamic.literal(imag = imag.asInstanceOf[js.Any], real = real.asInstanceOf[js.Any])
     __obj.asInstanceOf[Real]
   }
   
-  @scala.inline
-  implicit class RealMutableBuilder[Self <: Real] (val x: Self) extends AnyVal {
+  extension [Self <: Real](x: Self) {
     
-    @scala.inline
-    def setImag(value: Double): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
+    inline def setImag(value: Double): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReal(value: Double): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+    inline def setReal(value: Double): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
   }
 }

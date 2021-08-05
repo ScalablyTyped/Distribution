@@ -16,37 +16,27 @@ trait DiagramConnectionDefaultsSelectionHandles extends StObject {
 }
 object DiagramConnectionDefaultsSelectionHandles {
   
-  @scala.inline
-  def apply(): DiagramConnectionDefaultsSelectionHandles = {
+  inline def apply(): DiagramConnectionDefaultsSelectionHandles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramConnectionDefaultsSelectionHandles]
   }
   
-  @scala.inline
-  implicit class DiagramConnectionDefaultsSelectionHandlesMutableBuilder[Self <: DiagramConnectionDefaultsSelectionHandles] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramConnectionDefaultsSelectionHandles](x: Self) {
     
-    @scala.inline
-    def setFill(value: String | DiagramConnectionDefaultsSelectionHandlesFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String | DiagramConnectionDefaultsSelectionHandlesFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setStroke(value: DiagramConnectionDefaultsSelectionHandlesStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: DiagramConnectionDefaultsSelectionHandlesStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

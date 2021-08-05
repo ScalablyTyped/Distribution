@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotFormula")
 @js.native
-class PivotFormula protected ()
+/* private */ class PivotFormula ()
   extends StObject
      with typings.activexExcel.Excel.PivotFormula {
   
@@ -20,7 +20,7 @@ class PivotFormula protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PivotFormula_typekey")
   var ExcelDotPivotFormula_typekey: typings.activexExcel.Excel.PivotFormula = js.native
   

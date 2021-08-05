@@ -11,6 +11,5 @@ object getRawSourceMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRawSourceMap(fileContents: String): RawSourceMap | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawSourceMap")(fileContents.asInstanceOf[js.Any]).asInstanceOf[RawSourceMap | Null]
+  inline def getRawSourceMap(fileContents: String): RawSourceMap | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawSourceMap")(fileContents.asInstanceOf[js.Any]).asInstanceOf[RawSourceMap | Null]
 }

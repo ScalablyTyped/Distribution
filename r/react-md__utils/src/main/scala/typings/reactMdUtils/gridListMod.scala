@@ -107,86 +107,60 @@ object gridListMod {
   }
   object GridListProps {
     
-    @scala.inline
-    def apply(): GridListProps = {
+    inline def apply(): GridListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridListProps]
     }
     
-    @scala.inline
-    implicit class GridListPropsMutableBuilder[Self <: GridListProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridListProps](x: Self) {
       
-      @scala.inline
-      def setCellMargin(value: String): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
+      inline def setCellMargin(value: String): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
+      inline def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode | RenderGridListChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | RenderGridListChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* size */ GridListSize => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* size */ GridListSize => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setContainerPadding(value: Double): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
+      inline def setContainerPadding(value: Double): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
+      inline def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
       
-      @scala.inline
-      def setDefaultSize(value: GridListSize | js.Function0[GridListSize]): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(value: GridListSize | js.Function0[GridListSize]): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSizeFunction0(value: () => GridListSize): Self = StObject.set(x, "defaultSize", js.Any.fromFunction0(value))
+      inline def setDefaultSizeFunction0(value: () => GridListSize): Self = StObject.set(x, "defaultSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
+      inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      @scala.inline
-      def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
+      inline def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeightObserver(value: Boolean): Self = StObject.set(x, "disableHeightObserver", value.asInstanceOf[js.Any])
+      inline def setDisableHeightObserver(value: Boolean): Self = StObject.set(x, "disableHeightObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeightObserverUndefined: Self = StObject.set(x, "disableHeightObserver", js.undefined)
+      inline def setDisableHeightObserverUndefined: Self = StObject.set(x, "disableHeightObserver", js.undefined)
       
-      @scala.inline
-      def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
+      inline def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
       
-      @scala.inline
-      def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
+      inline def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWidthObserver(value: Boolean): Self = StObject.set(x, "disableWidthObserver", value.asInstanceOf[js.Any])
+      inline def setDisableWidthObserver(value: Boolean): Self = StObject.set(x, "disableWidthObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWidthObserverUndefined: Self = StObject.set(x, "disableWidthObserver", js.undefined)
+      inline def setDisableWidthObserverUndefined: Self = StObject.set(x, "disableWidthObserver", js.undefined)
       
-      @scala.inline
-      def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
+      inline def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
       
-      @scala.inline
-      def setMaxCellSize(value: Double): Self = StObject.set(x, "maxCellSize", value.asInstanceOf[js.Any])
+      inline def setMaxCellSize(value: Double): Self = StObject.set(x, "maxCellSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCellSizeUndefined: Self = StObject.set(x, "maxCellSize", js.undefined)
+      inline def setMaxCellSizeUndefined: Self = StObject.set(x, "maxCellSize", js.undefined)
       
-      @scala.inline
-      def setWrapOnly(value: Boolean): Self = StObject.set(x, "wrapOnly", value.asInstanceOf[js.Any])
+      inline def setWrapOnly(value: Boolean): Self = StObject.set(x, "wrapOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapOnlyUndefined: Self = StObject.set(x, "wrapOnly", js.undefined)
+      inline def setWrapOnlyUndefined: Self = StObject.set(x, "wrapOnly", js.undefined)
     }
   }
   

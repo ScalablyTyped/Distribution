@@ -13,25 +13,19 @@ trait ProcessedResult[Result] extends StObject {
 }
 object ProcessedResult {
   
-  @scala.inline
-  def apply[Result](results: js.Array[Result]): ProcessedResult[Result] = {
+  inline def apply[Result](results: js.Array[Result]): ProcessedResult[Result] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessedResult[Result]]
   }
   
-  @scala.inline
-  implicit class ProcessedResultMutableBuilder[Self <: ProcessedResult[?], Result] (val x: Self & ProcessedResult[Result]) extends AnyVal {
+  extension [Self <: ProcessedResult[?], Result](x: Self & ProcessedResult[Result]) {
     
-    @scala.inline
-    def setPagination(value: More): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: More): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

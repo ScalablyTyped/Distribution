@@ -22,8 +22,7 @@ trait Endpoint extends StObject {
 }
 object Endpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agentLogin: String,
     endpointARN: String,
     endpointId: String,
@@ -37,28 +36,20 @@ object Endpoint {
     __obj.asInstanceOf[Endpoint]
   }
   
-  @scala.inline
-  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoint](x: Self) {
     
-    @scala.inline
-    def setAgentLogin(value: String): Self = StObject.set(x, "agentLogin", value.asInstanceOf[js.Any])
+    inline def setAgentLogin(value: String): Self = StObject.set(x, "agentLogin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointARN(value: String): Self = StObject.set(x, "endpointARN", value.asInstanceOf[js.Any])
+    inline def setEndpointARN(value: String): Self = StObject.set(x, "endpointARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
+    inline def setEndpointId(value: String): Self = StObject.set(x, "endpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EndpointType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EndpointType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

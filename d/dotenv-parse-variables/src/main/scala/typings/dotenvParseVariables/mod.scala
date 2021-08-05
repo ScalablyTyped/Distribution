@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(parsed: Parsed): ParsedVariables = ^.asInstanceOf[js.Dynamic].apply(parsed.asInstanceOf[js.Any]).asInstanceOf[ParsedVariables]
-  @scala.inline
-  def apply(parsed: Parsed, options: Options): ParsedVariables = (^.asInstanceOf[js.Dynamic].apply(parsed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedVariables]
+  inline def apply(parsed: Parsed): ParsedVariables = ^.asInstanceOf[js.Dynamic].apply(parsed.asInstanceOf[js.Any]).asInstanceOf[ParsedVariables]
+  inline def apply(parsed: Parsed, options: Options): ParsedVariables = (^.asInstanceOf[js.Dynamic].apply(parsed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedVariables]
   
   @JSImport("dotenv-parse-variables", JSImport.Namespace)
   @js.native
@@ -24,26 +22,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAssignToProcessEnv(value: Boolean): Self = StObject.set(x, "assignToProcessEnv", value.asInstanceOf[js.Any])
+      inline def setAssignToProcessEnv(value: Boolean): Self = StObject.set(x, "assignToProcessEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignToProcessEnvUndefined: Self = StObject.set(x, "assignToProcessEnv", js.undefined)
+      inline def setAssignToProcessEnvUndefined: Self = StObject.set(x, "assignToProcessEnv", js.undefined)
       
-      @scala.inline
-      def setOverrideProcessEnv(value: Boolean): Self = StObject.set(x, "overrideProcessEnv", value.asInstanceOf[js.Any])
+      inline def setOverrideProcessEnv(value: Boolean): Self = StObject.set(x, "overrideProcessEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideProcessEnvUndefined: Self = StObject.set(x, "overrideProcessEnv", js.undefined)
+      inline def setOverrideProcessEnvUndefined: Self = StObject.set(x, "overrideProcessEnv", js.undefined)
     }
   }
   

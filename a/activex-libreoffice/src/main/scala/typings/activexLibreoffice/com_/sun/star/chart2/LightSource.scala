@@ -20,25 +20,19 @@ trait LightSource extends StObject {
 }
 object LightSource {
   
-  @scala.inline
-  def apply(aDirection: Direction3D, bIsEnabled: Boolean, bSpecular: Boolean, nDiffuseColor: Double): LightSource = {
+  inline def apply(aDirection: Direction3D, bIsEnabled: Boolean, bSpecular: Boolean, nDiffuseColor: Double): LightSource = {
     val __obj = js.Dynamic.literal(aDirection = aDirection.asInstanceOf[js.Any], bIsEnabled = bIsEnabled.asInstanceOf[js.Any], bSpecular = bSpecular.asInstanceOf[js.Any], nDiffuseColor = nDiffuseColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightSource]
   }
   
-  @scala.inline
-  implicit class LightSourceMutableBuilder[Self <: LightSource] (val x: Self) extends AnyVal {
+  extension [Self <: LightSource](x: Self) {
     
-    @scala.inline
-    def setADirection(value: Direction3D): Self = StObject.set(x, "aDirection", value.asInstanceOf[js.Any])
+    inline def setADirection(value: Direction3D): Self = StObject.set(x, "aDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBIsEnabled(value: Boolean): Self = StObject.set(x, "bIsEnabled", value.asInstanceOf[js.Any])
+    inline def setBIsEnabled(value: Boolean): Self = StObject.set(x, "bIsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBSpecular(value: Boolean): Self = StObject.set(x, "bSpecular", value.asInstanceOf[js.Any])
+    inline def setBSpecular(value: Boolean): Self = StObject.set(x, "bSpecular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNDiffuseColor(value: Double): Self = StObject.set(x, "nDiffuseColor", value.asInstanceOf[js.Any])
+    inline def setNDiffuseColor(value: Double): Self = StObject.set(x, "nDiffuseColor", value.asInstanceOf[js.Any])
   }
 }

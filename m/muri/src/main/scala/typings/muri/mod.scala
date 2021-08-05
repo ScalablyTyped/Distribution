@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(uri: String): ParsedUri = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[ParsedUri]
+  inline def apply(uri: String): ParsedUri = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[ParsedUri]
   
   @JSImport("muri", JSImport.Namespace)
   @js.native
@@ -24,20 +23,16 @@ object mod {
   }
   object DefaultHost {
     
-    @scala.inline
-    def apply(host: String, port: Double): DefaultHost = {
+    inline def apply(host: String, port: Double): DefaultHost = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultHost]
     }
     
-    @scala.inline
-    implicit class DefaultHostMutableBuilder[Self <: DefaultHost] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultHost](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,14 +43,12 @@ object mod {
   trait Host extends StObject
   object Host {
     
-    @scala.inline
-    def DefaultHost(host: String, port: Double): typings.muri.mod.DefaultHost = {
+    inline def DefaultHost(host: String, port: Double): typings.muri.mod.DefaultHost = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.muri.mod.DefaultHost]
     }
     
-    @scala.inline
-    def SocketHost(ipc: String): typings.muri.mod.SocketHost = {
+    inline def SocketHost(ipc: String): typings.muri.mod.SocketHost = {
       val __obj = js.Dynamic.literal(ipc = ipc.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.muri.mod.SocketHost]
     }
@@ -73,32 +66,24 @@ object mod {
   }
   object ParsedUri {
     
-    @scala.inline
-    def apply(db: String, hosts: js.Array[Host], options: js.Any): ParsedUri = {
+    inline def apply(db: String, hosts: js.Array[Host], options: js.Any): ParsedUri = {
       val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], hosts = hosts.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedUri]
     }
     
-    @scala.inline
-    implicit class ParsedUriMutableBuilder[Self <: ParsedUri] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedUri](x: Self) {
       
-      @scala.inline
-      def setAuth(value: Pass): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Pass): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,17 +95,14 @@ object mod {
   }
   object SocketHost {
     
-    @scala.inline
-    def apply(ipc: String): SocketHost = {
+    inline def apply(ipc: String): SocketHost = {
       val __obj = js.Dynamic.literal(ipc = ipc.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketHost]
     }
     
-    @scala.inline
-    implicit class SocketHostMutableBuilder[Self <: SocketHost] (val x: Self) extends AnyVal {
+    extension [Self <: SocketHost](x: Self) {
       
-      @scala.inline
-      def setIpc(value: String): Self = StObject.set(x, "ipc", value.asInstanceOf[js.Any])
+      inline def setIpc(value: String): Self = StObject.set(x, "ipc", value.asInstanceOf[js.Any])
     }
   }
 }

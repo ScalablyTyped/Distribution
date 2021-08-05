@@ -27,37 +27,27 @@ trait CustomAttribute extends StObject {
 }
 object CustomAttribute {
   
-  @scala.inline
-  def apply(): CustomAttribute = {
+  inline def apply(): CustomAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomAttribute]
   }
   
-  @scala.inline
-  implicit class CustomAttributeMutableBuilder[Self <: CustomAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAttribute](x: Self) {
     
-    @scala.inline
-    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
-    @scala.inline
-    def setLongValues(value: js.Array[String]): Self = StObject.set(x, "longValues", value.asInstanceOf[js.Any])
+    inline def setLongValues(value: js.Array[String]): Self = StObject.set(x, "longValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValuesUndefined: Self = StObject.set(x, "longValues", js.undefined)
+    inline def setLongValuesUndefined: Self = StObject.set(x, "longValues", js.undefined)
     
-    @scala.inline
-    def setLongValuesVarargs(value: String*): Self = StObject.set(x, "longValues", js.Array(value :_*))
+    inline def setLongValuesVarargs(value: String*): Self = StObject.set(x, "longValues", js.Array(value :_*))
     
-    @scala.inline
-    def setStringValues(value: js.Array[String]): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
+    inline def setStringValues(value: js.Array[String]): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
+    inline def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
     
-    @scala.inline
-    def setStringValuesVarargs(value: String*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
+    inline def setStringValuesVarargs(value: String*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
   }
 }

@@ -97,15 +97,11 @@ object mod {
     def wait(callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @scala.inline
-  def createCondVariable(initialValue: js.Any): CondVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createCondVariable")(initialValue.asInstanceOf[js.Any]).asInstanceOf[CondVariable]
+  inline def createCondVariable(initialValue: js.Any): CondVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createCondVariable")(initialValue.asInstanceOf[js.Any]).asInstanceOf[CondVariable]
   
-  @scala.inline
-  def createMutex(): Mutex = ^.asInstanceOf[js.Dynamic].applyDynamic("createMutex")().asInstanceOf[Mutex]
+  inline def createMutex(): Mutex = ^.asInstanceOf[js.Dynamic].applyDynamic("createMutex")().asInstanceOf[Mutex]
   
-  @scala.inline
-  def createReadWriteLock(): ReadWriteLock = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadWriteLock")().asInstanceOf[ReadWriteLock]
+  inline def createReadWriteLock(): ReadWriteLock = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadWriteLock")().asInstanceOf[ReadWriteLock]
   
-  @scala.inline
-  def createSemaphore(initialValue: Double): Semaphore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSemaphore")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Semaphore]
+  inline def createSemaphore(initialValue: Double): Semaphore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSemaphore")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Semaphore]
 }

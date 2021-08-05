@@ -10,6 +10,5 @@ object isPrototypeAccessMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPrototypeAccess(context: js.Object, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPrototypeAccess")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPrototypeAccess(context: js.Object, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPrototypeAccess")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -27,8 +27,7 @@ trait SketchUpdateEvent extends StObject {
 }
 object SketchUpdateEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aborted: Boolean,
     graphics: js.Array[Graphic],
     state: start | active | complete,
@@ -40,28 +39,20 @@ object SketchUpdateEvent {
     __obj.asInstanceOf[SketchUpdateEvent]
   }
   
-  @scala.inline
-  implicit class SketchUpdateEventMutableBuilder[Self <: SketchUpdateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SketchUpdateEvent](x: Self) {
     
-    @scala.inline
-    def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+    inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
+    inline def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: start | active | complete): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: start | active | complete): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTool(value: move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolEventInfo(value: UpdateToolEventInfo): Self = StObject.set(x, "toolEventInfo", value.asInstanceOf[js.Any])
+    inline def setToolEventInfo(value: UpdateToolEventInfo): Self = StObject.set(x, "toolEventInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

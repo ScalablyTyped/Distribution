@@ -10,15 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(ajv: Ajv, validate: ValidateFunction): String = (^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any], validate.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(ajv: Ajv, validate: ValidateFunction): String = (^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any], validate.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("ajv-pack", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def instance(ajv: Ajv): AjvPack = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(ajv.asInstanceOf[js.Any]).asInstanceOf[AjvPack]
+  inline def instance(ajv: Ajv): AjvPack = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(ajv.asInstanceOf[js.Any]).asInstanceOf[AjvPack]
   
   trait AjvPack extends StObject {
     
@@ -78,8 +76,7 @@ object mod {
   }
   object AjvPack {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addKeyword: (/* keyword */ String, /* definition */ KeywordDefinition) => Ajv,
       addSchema: FnCall,
       compile: js.Object => ValidateFunction,
@@ -89,20 +86,15 @@ object mod {
       __obj.asInstanceOf[AjvPack]
     }
     
-    @scala.inline
-    implicit class AjvPackMutableBuilder[Self <: AjvPack] (val x: Self) extends AnyVal {
+    extension [Self <: AjvPack](x: Self) {
       
-      @scala.inline
-      def setAddKeyword(value: (/* keyword */ String, /* definition */ KeywordDefinition) => Ajv): Self = StObject.set(x, "addKeyword", js.Any.fromFunction2(value))
+      inline def setAddKeyword(value: (/* keyword */ String, /* definition */ KeywordDefinition) => Ajv): Self = StObject.set(x, "addKeyword", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddSchema(value: FnCall): Self = StObject.set(x, "addSchema", value.asInstanceOf[js.Any])
+      inline def setAddSchema(value: FnCall): Self = StObject.set(x, "addSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompile(value: js.Object => ValidateFunction): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
+      inline def setCompile(value: js.Object => ValidateFunction): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidate(value: (js.Object, js.Any) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidate(value: (js.Object, js.Any) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }
   }
 }

@@ -40,22 +40,17 @@ trait INxSelectionCell extends StObject {
 }
 object INxSelectionCell {
   
-  @scala.inline
-  def apply(qCol: Double, qRow: Double, qType: NxSelectionCellType): INxSelectionCell = {
+  inline def apply(qCol: Double, qRow: Double, qType: NxSelectionCellType): INxSelectionCell = {
     val __obj = js.Dynamic.literal(qCol = qCol.asInstanceOf[js.Any], qRow = qRow.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxSelectionCell]
   }
   
-  @scala.inline
-  implicit class INxSelectionCellMutableBuilder[Self <: INxSelectionCell] (val x: Self) extends AnyVal {
+  extension [Self <: INxSelectionCell](x: Self) {
     
-    @scala.inline
-    def setQCol(value: Double): Self = StObject.set(x, "qCol", value.asInstanceOf[js.Any])
+    inline def setQCol(value: Double): Self = StObject.set(x, "qCol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
+    inline def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: NxSelectionCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: NxSelectionCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

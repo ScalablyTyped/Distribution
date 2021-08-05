@@ -14,22 +14,17 @@ trait SimpleTextMarkerTemplate extends StObject {
 }
 object SimpleTextMarkerTemplate {
   
-  @scala.inline
-  def apply(getText: (js.Object, js.Object) => Unit, measure: js.Object => Unit, render: js.Object => Unit): SimpleTextMarkerTemplate = {
+  inline def apply(getText: (js.Object, js.Object) => Unit, measure: js.Object => Unit, render: js.Object => Unit): SimpleTextMarkerTemplate = {
     val __obj = js.Dynamic.literal(getText = js.Any.fromFunction2(getText), measure = js.Any.fromFunction1(measure), render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[SimpleTextMarkerTemplate]
   }
   
-  @scala.inline
-  implicit class SimpleTextMarkerTemplateMutableBuilder[Self <: SimpleTextMarkerTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleTextMarkerTemplate](x: Self) {
     
-    @scala.inline
-    def setGetText(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
+    inline def setGetText(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMeasure(value: js.Object => Unit): Self = StObject.set(x, "measure", js.Any.fromFunction1(value))
+    inline def setMeasure(value: js.Object => Unit): Self = StObject.set(x, "measure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRender(value: js.Object => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: js.Object => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }
 }

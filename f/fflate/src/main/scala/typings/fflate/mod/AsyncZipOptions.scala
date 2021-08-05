@@ -60,37 +60,27 @@ trait AsyncZipOptions extends StObject {
 }
 object AsyncZipOptions {
   
-  @scala.inline
-  def apply(): AsyncZipOptions = {
+  inline def apply(): AsyncZipOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncZipOptions]
   }
   
-  @scala.inline
-  implicit class AsyncZipOptionsMutableBuilder[Self <: AsyncZipOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncZipOptions](x: Self) {
     
-    @scala.inline
-    def setConsume(value: Boolean): Self = StObject.set(x, "consume", value.asInstanceOf[js.Any])
+    inline def setConsume(value: Boolean): Self = StObject.set(x, "consume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumeUndefined: Self = StObject.set(x, "consume", js.undefined)
+    inline def setConsumeUndefined: Self = StObject.set(x, "consume", js.undefined)
     
-    @scala.inline
-    def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMem(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
+    inline def setMem(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
+    inline def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
     
-    @scala.inline
-    def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+    inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
   }
 }

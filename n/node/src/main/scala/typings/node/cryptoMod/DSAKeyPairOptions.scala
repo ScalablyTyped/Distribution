@@ -24,8 +24,7 @@ trait DSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
 }
 object DSAKeyPairOptions {
   
-  @scala.inline
-  def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
+  inline def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
     divisorLength: Double,
     modulusLength: Double,
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & `0`,
@@ -35,19 +34,14 @@ object DSAKeyPairOptions {
     __obj.asInstanceOf[DSAKeyPairOptions[PubF, PrivF]]
   }
   
-  @scala.inline
-  implicit class DSAKeyPairOptionsMutableBuilder[Self <: DSAKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (DSAKeyPairOptions[PubF, PrivF])) extends AnyVal {
+  extension [Self <: DSAKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (DSAKeyPairOptions[PubF, PrivF])) {
     
-    @scala.inline
-    def setDivisorLength(value: Double): Self = StObject.set(x, "divisorLength", value.asInstanceOf[js.Any])
+    inline def setDivisorLength(value: Double): Self = StObject.set(x, "divisorLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
+    inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `0`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `0`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyEncoding(value: FormatType[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPublicKeyEncoding(value: FormatType[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait Algorithm extends StObject {
 }
 object Algorithm {
   
-  @scala.inline
-  def apply(algorithm: String, data: Uint8Array): Algorithm = {
+  inline def apply(algorithm: String, data: Uint8Array): Algorithm = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Algorithm]
   }
   
-  @scala.inline
-  implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
+  extension [Self <: Algorithm](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

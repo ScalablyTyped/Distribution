@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "to-px"
-version := "1.1-dt-20201001Z-0afa39"
+version := "1.1-dt-20201001Z-ed8eff"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

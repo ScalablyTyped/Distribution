@@ -23,31 +23,23 @@ trait ShaCertificate extends StObject {
 }
 object ShaCertificate {
   
-  @scala.inline
-  def apply(): ShaCertificate = {
+  inline def apply(): ShaCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShaCertificate]
   }
   
-  @scala.inline
-  implicit class ShaCertificateMutableBuilder[Self <: ShaCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: ShaCertificate](x: Self) {
     
-    @scala.inline
-    def setCertType(value: String): Self = StObject.set(x, "certType", value.asInstanceOf[js.Any])
+    inline def setCertType(value: String): Self = StObject.set(x, "certType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertTypeUndefined: Self = StObject.set(x, "certType", js.undefined)
+    inline def setCertTypeUndefined: Self = StObject.set(x, "certType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setShaHash(value: String): Self = StObject.set(x, "shaHash", value.asInstanceOf[js.Any])
+    inline def setShaHash(value: String): Self = StObject.set(x, "shaHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaHashUndefined: Self = StObject.set(x, "shaHash", js.undefined)
+    inline def setShaHashUndefined: Self = StObject.set(x, "shaHash", js.undefined)
   }
 }

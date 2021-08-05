@@ -14,10 +14,8 @@ object mod {
   
   object convert {
     
-    @scala.inline
-    def apply(args: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
-    @scala.inline
-    def apply(args: js.Any, timeout: Double, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(args: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(args: js.Any, timeout: Double, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
     
     @JSImport("imagemagick", "convert")
     @js.native
@@ -26,19 +24,15 @@ object mod {
     @JSImport("imagemagick", "convert.path")
     @js.native
     def path: String = js.native
-    @scala.inline
-    def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+    inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def crop(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("crop")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def crop(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("crop")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
   object identify {
     
-    @scala.inline
-    def apply(path: String, callback: js.Function2[/* err */ Error, /* features */ Features, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
-    @scala.inline
-    def apply(path: js.Array[js.Any], callback: js.Function2[/* err */ Error, /* result */ String, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(path: String, callback: js.Function2[/* err */ Error, /* features */ Features, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    inline def apply(path: js.Array[js.Any], callback: js.Function2[/* err */ Error, /* result */ String, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
     
     @JSImport("imagemagick", "identify")
     @js.native
@@ -47,18 +41,14 @@ object mod {
     @JSImport("imagemagick", "identify.path")
     @js.native
     def path: String = js.native
-    @scala.inline
-    def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+    inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def readMetadata(path: String, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("readMetadata")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def readMetadata(path: String, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("readMetadata")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @scala.inline
-  def resize(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def resize(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @scala.inline
-  def resizeArgs(options: Options): ResizeArgs_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeArgs")(options.asInstanceOf[js.Any]).asInstanceOf[ResizeArgs_]
+  inline def resizeArgs(options: Options): ResizeArgs_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeArgs")(options.asInstanceOf[js.Any]).asInstanceOf[ResizeArgs_]
   
   trait Features extends StObject {
     
@@ -72,38 +62,28 @@ object mod {
   }
   object Features {
     
-    @scala.inline
-    def apply(): Features = {
+    inline def apply(): Features = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Features]
     }
     
-    @scala.inline
-    implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
+    extension [Self <: Features](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -155,107 +135,74 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setColorspace(value: js.Any): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
+      inline def setColorspace(value: js.Any): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorspaceUndefined: Self = StObject.set(x, "colorspace", js.undefined)
+      inline def setColorspaceUndefined: Self = StObject.set(x, "colorspace", js.undefined)
       
-      @scala.inline
-      def setCustomArgs(value: js.Array[js.Any]): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
+      inline def setCustomArgs(value: js.Array[js.Any]): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomArgsUndefined: Self = StObject.set(x, "customArgs", js.undefined)
+      inline def setCustomArgsUndefined: Self = StObject.set(x, "customArgs", js.undefined)
       
-      @scala.inline
-      def setCustomArgsVarargs(value: js.Any*): Self = StObject.set(x, "customArgs", js.Array(value :_*))
+      inline def setCustomArgsVarargs(value: js.Any*): Self = StObject.set(x, "customArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setDstPath(value: String): Self = StObject.set(x, "dstPath", value.asInstanceOf[js.Any])
+      inline def setDstPath(value: String): Self = StObject.set(x, "dstPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDstPathUndefined: Self = StObject.set(x, "dstPath", js.undefined)
+      inline def setDstPathUndefined: Self = StObject.set(x, "dstPath", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
+      inline def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
+      inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSharpening(value: Double): Self = StObject.set(x, "sharpening", value.asInstanceOf[js.Any])
+      inline def setSharpening(value: Double): Self = StObject.set(x, "sharpening", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharpeningUndefined: Self = StObject.set(x, "sharpening", js.undefined)
+      inline def setSharpeningUndefined: Self = StObject.set(x, "sharpening", js.undefined)
       
-      @scala.inline
-      def setSrcData(value: String): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
+      inline def setSrcData(value: String): Self = StObject.set(x, "srcData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcDataUndefined: Self = StObject.set(x, "srcData", js.undefined)
+      inline def setSrcDataUndefined: Self = StObject.set(x, "srcData", js.undefined)
       
-      @scala.inline
-      def setSrcFormat(value: String): Self = StObject.set(x, "srcFormat", value.asInstanceOf[js.Any])
+      inline def setSrcFormat(value: String): Self = StObject.set(x, "srcFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcFormatUndefined: Self = StObject.set(x, "srcFormat", js.undefined)
+      inline def setSrcFormatUndefined: Self = StObject.set(x, "srcFormat", js.undefined)
       
-      @scala.inline
-      def setSrcPath(value: String): Self = StObject.set(x, "srcPath", value.asInstanceOf[js.Any])
+      inline def setSrcPath(value: String): Self = StObject.set(x, "srcPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcPathUndefined: Self = StObject.set(x, "srcPath", js.undefined)
+      inline def setSrcPathUndefined: Self = StObject.set(x, "srcPath", js.undefined)
       
-      @scala.inline
-      def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+      inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
+      inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -267,23 +214,18 @@ object mod {
   }
   object ResizeArgs_ {
     
-    @scala.inline
-    def apply(args: js.Array[String], opt: Options): ResizeArgs_ = {
+    inline def apply(args: js.Array[String], opt: Options): ResizeArgs_ = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], opt = opt.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResizeArgs_]
     }
     
-    @scala.inline
-    implicit class ResizeArgs_MutableBuilder[Self <: ResizeArgs_] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeArgs_](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setOpt(value: Options): Self = StObject.set(x, "opt", value.asInstanceOf[js.Any])
+      inline def setOpt(value: Options): Self = StObject.set(x, "opt", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -27,8 +27,7 @@ trait SimpleSetAccess
      with XContainer
 object SimpleSetAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementTemplateName: String,
     ElementType: `type`,

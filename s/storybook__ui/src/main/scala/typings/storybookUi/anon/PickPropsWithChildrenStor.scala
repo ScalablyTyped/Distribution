@@ -14,22 +14,17 @@ trait PickPropsWithChildrenStor extends StObject {
 }
 object PickPropsWithChildrenStor {
   
-  @scala.inline
-  def apply(alt: String): PickPropsWithChildrenStor = {
+  inline def apply(alt: String): PickPropsWithChildrenStor = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickPropsWithChildrenStor]
   }
   
-  @scala.inline
-  implicit class PickPropsWithChildrenStorMutableBuilder[Self <: PickPropsWithChildrenStor] (val x: Self) extends AnyVal {
+  extension [Self <: PickPropsWithChildrenStor](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

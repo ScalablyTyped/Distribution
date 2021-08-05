@@ -20,34 +20,25 @@ trait ListQualificationRequestsResponse extends StObject {
 }
 object ListQualificationRequestsResponse {
   
-  @scala.inline
-  def apply(): ListQualificationRequestsResponse = {
+  inline def apply(): ListQualificationRequestsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListQualificationRequestsResponse]
   }
   
-  @scala.inline
-  implicit class ListQualificationRequestsResponseMutableBuilder[Self <: ListQualificationRequestsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListQualificationRequestsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
+    inline def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
     
-    @scala.inline
-    def setQualificationRequests(value: QualificationRequestList): Self = StObject.set(x, "QualificationRequests", value.asInstanceOf[js.Any])
+    inline def setQualificationRequests(value: QualificationRequestList): Self = StObject.set(x, "QualificationRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationRequestsUndefined: Self = StObject.set(x, "QualificationRequests", js.undefined)
+    inline def setQualificationRequestsUndefined: Self = StObject.set(x, "QualificationRequests", js.undefined)
     
-    @scala.inline
-    def setQualificationRequestsVarargs(value: QualificationRequest*): Self = StObject.set(x, "QualificationRequests", js.Array(value :_*))
+    inline def setQualificationRequestsVarargs(value: QualificationRequest*): Self = StObject.set(x, "QualificationRequests", js.Array(value :_*))
   }
 }

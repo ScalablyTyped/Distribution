@@ -14,16 +14,13 @@ trait ChartInternal
 }
 object ChartInternal {
   
-  @scala.inline
-  def apply(api: ChartAPI): ChartInternal = {
+  inline def apply(api: ChartAPI): ChartInternal = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartInternal]
   }
   
-  @scala.inline
-  implicit class ChartInternalMutableBuilder[Self <: ChartInternal] (val x: Self) extends AnyVal {
+  extension [Self <: ChartInternal](x: Self) {
     
-    @scala.inline
-    def setApi(value: ChartAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: ChartAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
   }
 }

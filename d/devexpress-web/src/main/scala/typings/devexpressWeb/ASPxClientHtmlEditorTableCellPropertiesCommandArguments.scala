@@ -23,8 +23,7 @@ trait ASPxClientHtmlEditorTableCellPropertiesCommandArguments
 }
 object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyForAll: Boolean,
     selectedElement: js.Any,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
@@ -33,13 +32,10 @@ object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTableCellPropertiesCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorTableCellPropertiesCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTableCellPropertiesCommandArguments](x: Self) {
     
-    @scala.inline
-    def setApplyForAll(value: Boolean): Self = StObject.set(x, "applyForAll", value.asInstanceOf[js.Any])
+    inline def setApplyForAll(value: Boolean): Self = StObject.set(x, "applyForAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
   }
 }

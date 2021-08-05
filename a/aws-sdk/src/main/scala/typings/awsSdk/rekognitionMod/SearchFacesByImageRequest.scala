@@ -33,37 +33,27 @@ trait SearchFacesByImageRequest extends StObject {
 }
 object SearchFacesByImageRequest {
   
-  @scala.inline
-  def apply(CollectionId: CollectionId, Image: Image): SearchFacesByImageRequest = {
+  inline def apply(CollectionId: CollectionId, Image: Image): SearchFacesByImageRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesByImageRequest]
   }
   
-  @scala.inline
-  implicit class SearchFacesByImageRequestMutableBuilder[Self <: SearchFacesByImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFacesByImageRequest](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
+    inline def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
+    inline def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFaces(value: MaxFaces): Self = StObject.set(x, "MaxFaces", value.asInstanceOf[js.Any])
+    inline def setMaxFaces(value: MaxFaces): Self = StObject.set(x, "MaxFaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFacesUndefined: Self = StObject.set(x, "MaxFaces", js.undefined)
+    inline def setMaxFacesUndefined: Self = StObject.set(x, "MaxFaces", js.undefined)
     
-    @scala.inline
-    def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
+    inline def setQualityFilter(value: QualityFilter): Self = StObject.set(x, "QualityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityFilterUndefined: Self = StObject.set(x, "QualityFilter", js.undefined)
+    inline def setQualityFilterUndefined: Self = StObject.set(x, "QualityFilter", js.undefined)
   }
 }

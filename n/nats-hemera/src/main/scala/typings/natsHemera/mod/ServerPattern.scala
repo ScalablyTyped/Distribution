@@ -19,28 +19,21 @@ trait ServerPattern
 }
 object ServerPattern {
   
-  @scala.inline
-  def apply(topic: String): ServerPattern = {
+  inline def apply(topic: String): ServerPattern = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerPattern]
   }
   
-  @scala.inline
-  implicit class ServerPatternMutableBuilder[Self <: ServerPattern] (val x: Self) extends AnyVal {
+  extension [Self <: ServerPattern](x: Self) {
     
-    @scala.inline
-    def setMaxMessages$(value: Double): Self = StObject.set(x, "maxMessages$", value.asInstanceOf[js.Any])
+    inline def setMaxMessages$(value: Double): Self = StObject.set(x, "maxMessages$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessages$Undefined: Self = StObject.set(x, "maxMessages$", js.undefined)
+    inline def setMaxMessages$Undefined: Self = StObject.set(x, "maxMessages$", js.undefined)
     
-    @scala.inline
-    def setPubsub$(value: Boolean): Self = StObject.set(x, "pubsub$", value.asInstanceOf[js.Any])
+    inline def setPubsub$(value: Boolean): Self = StObject.set(x, "pubsub$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsub$Undefined: Self = StObject.set(x, "pubsub$", js.undefined)
+    inline def setPubsub$Undefined: Self = StObject.set(x, "pubsub$", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

@@ -22,23 +22,18 @@ object opencl {
   }
   object OpenCLDevice {
     
-    @scala.inline
-    def apply(Driver: String, Name: String, Vendor: String): OpenCLDevice = {
+    inline def apply(Driver: String, Name: String, Vendor: String): OpenCLDevice = {
       val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Vendor = Vendor.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenCLDevice]
     }
     
-    @scala.inline
-    implicit class OpenCLDeviceMutableBuilder[Self <: OpenCLDevice] (val x: Self) extends AnyVal {
+    extension [Self <: OpenCLDevice](x: Self) {
       
-      @scala.inline
-      def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendor(value: String): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
+      inline def setVendor(value: String): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,23 +48,18 @@ object opencl {
   }
   object OpenCLPlatform {
     
-    @scala.inline
-    def apply(Devices: SafeArray[OpenCLDevice], Name: String, Vendor: String): OpenCLPlatform = {
+    inline def apply(Devices: SafeArray[OpenCLDevice], Name: String, Vendor: String): OpenCLPlatform = {
       val __obj = js.Dynamic.literal(Devices = Devices.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Vendor = Vendor.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenCLPlatform]
     }
     
-    @scala.inline
-    implicit class OpenCLPlatformMutableBuilder[Self <: OpenCLPlatform] (val x: Self) extends AnyVal {
+    extension [Self <: OpenCLPlatform](x: Self) {
       
-      @scala.inline
-      def setDevices(value: SafeArray[OpenCLDevice]): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
+      inline def setDevices(value: SafeArray[OpenCLDevice]): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendor(value: String): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
+      inline def setVendor(value: String): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,8 +138,7 @@ object opencl {
   }
   object XOpenCLSelection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DeviceID: Double,
       FormulaCellNumberLimit: Double,
       OpenCLPlatforms: SafeArray[OpenCLPlatform],
@@ -175,59 +164,41 @@ object opencl {
       __obj.asInstanceOf[XOpenCLSelection]
     }
     
-    @scala.inline
-    implicit class XOpenCLSelectionMutableBuilder[Self <: XOpenCLSelection] (val x: Self) extends AnyVal {
+    extension [Self <: XOpenCLSelection](x: Self) {
       
-      @scala.inline
-      def setDeviceID(value: Double): Self = StObject.set(x, "DeviceID", value.asInstanceOf[js.Any])
+      inline def setDeviceID(value: Double): Self = StObject.set(x, "DeviceID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAutomaticDeviceSelection(value: () => Unit): Self = StObject.set(x, "disableAutomaticDeviceSelection", js.Any.fromFunction0(value))
+      inline def setDisableAutomaticDeviceSelection(value: () => Unit): Self = StObject.set(x, "disableAutomaticDeviceSelection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableOpcodeSubsetTest(value: () => Unit): Self = StObject.set(x, "disableOpcodeSubsetTest", js.Any.fromFunction0(value))
+      inline def setDisableOpcodeSubsetTest(value: () => Unit): Self = StObject.set(x, "disableOpcodeSubsetTest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableAutomaticDeviceSelection(value: Boolean => Unit): Self = StObject.set(x, "enableAutomaticDeviceSelection", js.Any.fromFunction1(value))
+      inline def setEnableAutomaticDeviceSelection(value: Boolean => Unit): Self = StObject.set(x, "enableAutomaticDeviceSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnableOpcodeSubsetTest(value: () => Unit): Self = StObject.set(x, "enableOpcodeSubsetTest", js.Any.fromFunction0(value))
+      inline def setEnableOpcodeSubsetTest(value: () => Unit): Self = StObject.set(x, "enableOpcodeSubsetTest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableOpenCL(value: Boolean => Unit): Self = StObject.set(x, "enableOpenCL", js.Any.fromFunction1(value))
+      inline def setEnableOpenCL(value: Boolean => Unit): Self = StObject.set(x, "enableOpenCL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormulaCellNumberLimit(value: Double): Self = StObject.set(x, "FormulaCellNumberLimit", value.asInstanceOf[js.Any])
+      inline def setFormulaCellNumberLimit(value: Double): Self = StObject.set(x, "FormulaCellNumberLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDeviceID(value: () => Double): Self = StObject.set(x, "getDeviceID", js.Any.fromFunction0(value))
+      inline def setGetDeviceID(value: () => Double): Self = StObject.set(x, "getDeviceID", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFormulaCellNumberLimit(value: () => Double): Self = StObject.set(x, "getFormulaCellNumberLimit", js.Any.fromFunction0(value))
+      inline def setGetFormulaCellNumberLimit(value: () => Double): Self = StObject.set(x, "getFormulaCellNumberLimit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOpenCLPlatforms(value: () => SafeArray[OpenCLPlatform]): Self = StObject.set(x, "getOpenCLPlatforms", js.Any.fromFunction0(value))
+      inline def setGetOpenCLPlatforms(value: () => SafeArray[OpenCLPlatform]): Self = StObject.set(x, "getOpenCLPlatforms", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPlatformID(value: () => Double): Self = StObject.set(x, "getPlatformID", js.Any.fromFunction0(value))
+      inline def setGetPlatformID(value: () => Double): Self = StObject.set(x, "getPlatformID", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOpcodeSubsetTested(value: () => Boolean): Self = StObject.set(x, "isOpcodeSubsetTested", js.Any.fromFunction0(value))
+      inline def setIsOpcodeSubsetTested(value: () => Boolean): Self = StObject.set(x, "isOpcodeSubsetTested", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOpenCLEnabled(value: () => Boolean): Self = StObject.set(x, "isOpenCLEnabled", js.Any.fromFunction0(value))
+      inline def setIsOpenCLEnabled(value: () => Boolean): Self = StObject.set(x, "isOpenCLEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenCLPlatforms(value: SafeArray[OpenCLPlatform]): Self = StObject.set(x, "OpenCLPlatforms", value.asInstanceOf[js.Any])
+      inline def setOpenCLPlatforms(value: SafeArray[OpenCLPlatform]): Self = StObject.set(x, "OpenCLPlatforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformID(value: Double): Self = StObject.set(x, "PlatformID", value.asInstanceOf[js.Any])
+      inline def setPlatformID(value: Double): Self = StObject.set(x, "PlatformID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectOpenCLDevice(value: (Double, Double) => Unit): Self = StObject.set(x, "selectOpenCLDevice", js.Any.fromFunction2(value))
+      inline def setSelectOpenCLDevice(value: (Double, Double) => Unit): Self = StObject.set(x, "selectOpenCLDevice", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetFormulaCellNumberLimit(value: Double => Unit): Self = StObject.set(x, "setFormulaCellNumberLimit", js.Any.fromFunction1(value))
+      inline def setSetFormulaCellNumberLimit(value: Double => Unit): Self = StObject.set(x, "setFormulaCellNumberLimit", js.Any.fromFunction1(value))
     }
   }
 }

@@ -31,37 +31,28 @@ trait CIMGeometricEffectExtension
 }
 object CIMGeometricEffectExtension {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectExtension = {
+  inline def apply(): CIMGeometricEffectExtension = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectExtension")
     __obj.asInstanceOf[CIMGeometricEffectExtension]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectExtensionMutableBuilder[Self <: CIMGeometricEffectExtension] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectExtension](x: Self) {
     
-    @scala.inline
-    def setDeflection(value: Double): Self = StObject.set(x, "deflection", value.asInstanceOf[js.Any])
+    inline def setDeflection(value: Double): Self = StObject.set(x, "deflection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeflectionUndefined: Self = StObject.set(x, "deflection", js.undefined)
+    inline def setDeflectionUndefined: Self = StObject.set(x, "deflection", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setOrigin(
+    inline def setOrigin(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectExtensionOrigin * / any */ String
     ): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectExtension): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

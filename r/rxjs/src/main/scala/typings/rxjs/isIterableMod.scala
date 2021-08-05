@@ -10,6 +10,5 @@ object isIterableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isIterable(input: js.Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
+  inline def isIterable(input: js.Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
 }

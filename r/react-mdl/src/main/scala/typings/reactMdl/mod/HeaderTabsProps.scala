@@ -19,25 +19,19 @@ trait HeaderTabsProps
 }
 object HeaderTabsProps {
   
-  @scala.inline
-  def apply(): HeaderTabsProps = {
+  inline def apply(): HeaderTabsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderTabsProps]
   }
   
-  @scala.inline
-  implicit class HeaderTabsPropsMutableBuilder[Self <: HeaderTabsProps] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderTabsProps](x: Self) {
     
-    @scala.inline
-    def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+    inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+    inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: FormEvent[Header] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: FormEvent[Header] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

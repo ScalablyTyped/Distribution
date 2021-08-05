@@ -18,28 +18,21 @@ trait ListAccountsForProvisionedPermissionSetResponse extends StObject {
 }
 object ListAccountsForProvisionedPermissionSetResponse {
   
-  @scala.inline
-  def apply(): ListAccountsForProvisionedPermissionSetResponse = {
+  inline def apply(): ListAccountsForProvisionedPermissionSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccountsForProvisionedPermissionSetResponse]
   }
   
-  @scala.inline
-  implicit class ListAccountsForProvisionedPermissionSetResponseMutableBuilder[Self <: ListAccountsForProvisionedPermissionSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccountsForProvisionedPermissionSetResponse](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

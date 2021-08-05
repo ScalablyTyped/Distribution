@@ -13,16 +13,13 @@ trait Variable extends StObject {
 }
 object Variable {
   
-  @scala.inline
-  def apply(value: String): Variable = {
+  inline def apply(value: String): Variable = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]
   }
   
-  @scala.inline
-  implicit class VariableMutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
+  extension [Self <: Variable](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

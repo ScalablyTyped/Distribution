@@ -51,8 +51,7 @@ object mod {
   }
   object Cleave {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getFormattedValue: () => String,
       getISOFormatDate: () => String,
@@ -64,26 +63,19 @@ object mod {
       __obj.asInstanceOf[Cleave]
     }
     
-    @scala.inline
-    implicit class CleaveMutableBuilder[Self <: Cleave] (val x: Self) extends AnyVal {
+    extension [Self <: Cleave](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFormattedValue(value: () => String): Self = StObject.set(x, "getFormattedValue", js.Any.fromFunction0(value))
+      inline def setGetFormattedValue(value: () => String): Self = StObject.set(x, "getFormattedValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetISOFormatDate(value: () => String): Self = StObject.set(x, "getISOFormatDate", js.Any.fromFunction0(value))
+      inline def setGetISOFormatDate(value: () => String): Self = StObject.set(x, "getISOFormatDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
+      inline def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetPhoneRegionCode(value: String => Unit): Self = StObject.set(x, "setPhoneRegionCode", js.Any.fromFunction1(value))
+      inline def setSetPhoneRegionCode(value: String => Unit): Self = StObject.set(x, "setPhoneRegionCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRawValue(value: String => Unit): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
+      inline def setSetRawValue(value: String => Unit): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
     }
   }
 }

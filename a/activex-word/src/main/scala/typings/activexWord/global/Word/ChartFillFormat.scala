@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartFillFormat")
 @js.native
-class ChartFillFormat protected ()
+/* private */ class ChartFillFormat ()
   extends StObject
      with typings.activexWord.Word.ChartFillFormat

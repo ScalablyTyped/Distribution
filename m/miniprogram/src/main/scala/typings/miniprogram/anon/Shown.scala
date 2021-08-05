@@ -15,16 +15,13 @@ trait Shown extends StObject {
 }
 object Shown {
   
-  @scala.inline
-  def apply(shown: Boolean): Shown = {
+  inline def apply(shown: Boolean): Shown = {
     val __obj = js.Dynamic.literal(shown = shown.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shown]
   }
   
-  @scala.inline
-  implicit class ShownMutableBuilder[Self <: Shown] (val x: Self) extends AnyVal {
+  extension [Self <: Shown](x: Self) {
     
-    @scala.inline
-    def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
+    inline def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
   }
 }

@@ -69,32 +69,24 @@ object mod {
   }
   object ValidatedMethodOptions {
     
-    @scala.inline
-    def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: TName & String, run: TRun): ValidatedMethodOptions[TName, TRun] = {
+    inline def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: TName & String, run: TRun): ValidatedMethodOptions[TName, TRun] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any], validate = null)
       __obj.asInstanceOf[ValidatedMethodOptions[TName, TRun]]
     }
     
-    @scala.inline
-    implicit class ValidatedMethodOptionsMutableBuilder[Self <: ValidatedMethodOptions[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & (ValidatedMethodOptions[TName, TRun])) extends AnyVal {
+    extension [Self <: ValidatedMethodOptions[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & (ValidatedMethodOptions[TName, TRun])) {
       
-      @scala.inline
-      def setApplyOptions(value: Dictkey): Self = StObject.set(x, "applyOptions", value.asInstanceOf[js.Any])
+      inline def setApplyOptions(value: Dictkey): Self = StObject.set(x, "applyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyOptionsUndefined: Self = StObject.set(x, "applyOptions", js.undefined)
+      inline def setApplyOptionsUndefined: Self = StObject.set(x, "applyOptions", js.undefined)
       
-      @scala.inline
-      def setName(value: TName & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: TName & String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: TRun): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+      inline def setRun(value: TRun): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: /* arg */ Argument[TRun] => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* arg */ Argument[TRun] => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateNull: Self = StObject.set(x, "validate", null)
+      inline def setValidateNull: Self = StObject.set(x, "validate", null)
     }
   }
   
@@ -113,23 +105,18 @@ object mod {
   }
   object ValidatedMethodOptionsWithMixins {
     
-    @scala.inline
-    def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: TName & String, run: TRun): ValidatedMethodOptionsWithMixins[TName, TRun] = {
+    inline def apply[TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: TName & String, run: TRun): ValidatedMethodOptionsWithMixins[TName, TRun] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any], validate = null)
       __obj.asInstanceOf[ValidatedMethodOptionsWithMixins[TName, TRun]]
     }
     
-    @scala.inline
-    implicit class ValidatedMethodOptionsWithMixinsMutableBuilder[Self <: ValidatedMethodOptionsWithMixins[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & (ValidatedMethodOptionsWithMixins[TName, TRun])) extends AnyVal {
+    extension [Self <: ValidatedMethodOptionsWithMixins[?, ?], TName /* <: String */, TRun /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & (ValidatedMethodOptionsWithMixins[TName, TRun])) {
       
-      @scala.inline
-      def setMixins(value: js.Array[Mixin[TName, js.Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      inline def setMixins(value: js.Array[Mixin[TName, js.Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+      inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      @scala.inline
-      def setMixinsVarargs(value: (Mixin[TName, js.Any])*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: (Mixin[TName, js.Any])*): Self = StObject.set(x, "mixins", js.Array(value :_*))
     }
   }
   

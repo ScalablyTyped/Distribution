@@ -12,19 +12,15 @@ trait InUndoRedoNewXMLNode extends StObject {
 }
 object InUndoRedoNewXMLNode {
   
-  @scala.inline
-  def apply(InUndoRedo: Boolean, NewXMLNode: typings.activexWord.Word.XMLNode): InUndoRedoNewXMLNode = {
+  inline def apply(InUndoRedo: Boolean, NewXMLNode: typings.activexWord.Word.XMLNode): InUndoRedoNewXMLNode = {
     val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo.asInstanceOf[js.Any], NewXMLNode = NewXMLNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InUndoRedoNewXMLNode]
   }
   
-  @scala.inline
-  implicit class InUndoRedoNewXMLNodeMutableBuilder[Self <: InUndoRedoNewXMLNode] (val x: Self) extends AnyVal {
+  extension [Self <: InUndoRedoNewXMLNode](x: Self) {
     
-    @scala.inline
-    def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
+    inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "NewXMLNode", value.asInstanceOf[js.Any])
+    inline def setNewXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "NewXMLNode", value.asInstanceOf[js.Any])
   }
 }

@@ -46,55 +46,39 @@ trait ICardLayout
 }
 object ICardLayout {
   
-  @scala.inline
-  def apply(): ICardLayout = {
+  inline def apply(): ICardLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICardLayout]
   }
   
-  @scala.inline
-  implicit class ICardLayoutMutableBuilder[Self <: ICardLayout] (val x: Self) extends AnyVal {
+  extension [Self <: ICardLayout](x: Self) {
     
-    @scala.inline
-    def setDeferredRender(value: Boolean): Self = StObject.set(x, "deferredRender", value.asInstanceOf[js.Any])
+    inline def setDeferredRender(value: Boolean): Self = StObject.set(x, "deferredRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredRenderUndefined: Self = StObject.set(x, "deferredRender", js.undefined)
+    inline def setDeferredRenderUndefined: Self = StObject.set(x, "deferredRender", js.undefined)
     
-    @scala.inline
-    def setGetActiveItem(value: () => IComponent): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
+    inline def setGetActiveItem(value: () => IComponent): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
+    inline def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
     
-    @scala.inline
-    def setGetNext(value: () => IComponent): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
+    inline def setGetNext(value: () => IComponent): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextUndefined: Self = StObject.set(x, "getNext", js.undefined)
+    inline def setGetNextUndefined: Self = StObject.set(x, "getNext", js.undefined)
     
-    @scala.inline
-    def setGetPrev(value: () => IComponent): Self = StObject.set(x, "getPrev", js.Any.fromFunction0(value))
+    inline def setGetPrev(value: () => IComponent): Self = StObject.set(x, "getPrev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrevUndefined: Self = StObject.set(x, "getPrev", js.undefined)
+    inline def setGetPrevUndefined: Self = StObject.set(x, "getPrev", js.undefined)
     
-    @scala.inline
-    def setNext(value: () => IComponent): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => IComponent): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setPrev(value: () => IComponent): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+    inline def setPrev(value: () => IComponent): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    @scala.inline
-    def setSetActiveItem(value: /* newCard */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
+    inline def setSetActiveItem(value: /* newCard */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
+    inline def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
   }
 }

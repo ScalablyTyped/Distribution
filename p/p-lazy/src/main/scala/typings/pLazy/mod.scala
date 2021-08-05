@@ -33,8 +33,7 @@ object mod {
   	```
   	*/
   /* static member */
-  @scala.inline
-  def from[ValueType](fn: js.Function0[ValueType | js.Thenable[ValueType]]): PLazy[ValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(fn.asInstanceOf[js.Any]).asInstanceOf[PLazy[ValueType]]
+  inline def from[ValueType](fn: js.Function0[ValueType | js.Thenable[ValueType]]): PLazy[ValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(fn.asInstanceOf[js.Any]).asInstanceOf[PLazy[ValueType]]
   
   type PLazy[ValueType] = js.Promise[ValueType]
 }

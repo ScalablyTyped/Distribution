@@ -34,13 +34,11 @@ object modelsTypesReferenceMod {
     @JSImport("typedoc/dist/lib/models/types/reference", "ReferenceType.SYMBOL_FQN_RESOLVED")
     @js.native
     def SYMBOL_FQN_RESOLVED: String = js.native
-    @scala.inline
-    def SYMBOL_FQN_RESOLVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVED")(x.asInstanceOf[js.Any])
+    inline def SYMBOL_FQN_RESOLVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVED")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/models/types/reference", "ReferenceType.SYMBOL_FQN_RESOLVE_BY_NAME")
     @js.native
     def SYMBOL_FQN_RESOLVE_BY_NAME: String = js.native
-    @scala.inline
-    def SYMBOL_FQN_RESOLVE_BY_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVE_BY_NAME")(x.asInstanceOf[js.Any])
+    inline def SYMBOL_FQN_RESOLVE_BY_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVE_BY_NAME")(x.asInstanceOf[js.Any])
   }
 }

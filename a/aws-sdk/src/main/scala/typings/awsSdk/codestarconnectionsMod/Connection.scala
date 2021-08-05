@@ -38,49 +38,35 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(): Connection = {
+  inline def apply(): Connection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
+    inline def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionArnUndefined: Self = StObject.set(x, "ConnectionArn", js.undefined)
+    inline def setConnectionArnUndefined: Self = StObject.set(x, "ConnectionArn", js.undefined)
     
-    @scala.inline
-    def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
+    inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
+    inline def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
     
-    @scala.inline
-    def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
+    inline def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
+    inline def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
-    @scala.inline
-    def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
+    inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
+    inline def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
     
-    @scala.inline
-    def setOwnerAccountId(value: AccountId): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
+    inline def setOwnerAccountId(value: AccountId): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
+    inline def setOwnerAccountIdUndefined: Self = StObject.set(x, "OwnerAccountId", js.undefined)
     
-    @scala.inline
-    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
+    inline def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
+    inline def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
   }
 }

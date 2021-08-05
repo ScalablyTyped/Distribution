@@ -23,28 +23,21 @@ trait ClusterLoggingInfoBrokerLogsS3 extends StObject {
 }
 object ClusterLoggingInfoBrokerLogsS3 {
   
-  @scala.inline
-  def apply(enabled: Boolean): ClusterLoggingInfoBrokerLogsS3 = {
+  inline def apply(enabled: Boolean): ClusterLoggingInfoBrokerLogsS3 = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterLoggingInfoBrokerLogsS3]
   }
   
-  @scala.inline
-  implicit class ClusterLoggingInfoBrokerLogsS3MutableBuilder[Self <: ClusterLoggingInfoBrokerLogsS3] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterLoggingInfoBrokerLogsS3](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

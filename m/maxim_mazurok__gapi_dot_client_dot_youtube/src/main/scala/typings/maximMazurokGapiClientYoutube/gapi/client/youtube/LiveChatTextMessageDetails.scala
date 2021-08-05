@@ -11,19 +11,15 @@ trait LiveChatTextMessageDetails extends StObject {
 }
 object LiveChatTextMessageDetails {
   
-  @scala.inline
-  def apply(): LiveChatTextMessageDetails = {
+  inline def apply(): LiveChatTextMessageDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveChatTextMessageDetails]
   }
   
-  @scala.inline
-  implicit class LiveChatTextMessageDetailsMutableBuilder[Self <: LiveChatTextMessageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LiveChatTextMessageDetails](x: Self) {
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
+    inline def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
   }
 }

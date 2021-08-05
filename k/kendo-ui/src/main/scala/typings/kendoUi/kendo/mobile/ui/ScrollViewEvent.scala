@@ -14,22 +14,17 @@ trait ScrollViewEvent extends StObject {
 }
 object ScrollViewEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ScrollView): ScrollViewEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ScrollView): ScrollViewEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewEvent]
   }
   
-  @scala.inline
-  implicit class ScrollViewEventMutableBuilder[Self <: ScrollViewEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollViewEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: ScrollView): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: ScrollView): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

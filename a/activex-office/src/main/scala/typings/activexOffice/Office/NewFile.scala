@@ -20,7 +20,7 @@ trait NewFile extends StObject {
   
   val Creator: Double = js.native
   
-  @JSName("Office.NewFile_typekey")
+  /* private */ @JSName("Office.NewFile_typekey")
   var OfficeDotNewFile_typekey: NewFile = js.native
   
   def Remove(FileName: String): Boolean = js.native

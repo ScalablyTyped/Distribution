@@ -14,22 +14,17 @@ trait ActionsGetWorkflowEndpoint extends StObject {
 }
 object ActionsGetWorkflowEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, workflow_id: Double): ActionsGetWorkflowEndpoint = {
+  inline def apply(owner: String, repo: String, workflow_id: Double): ActionsGetWorkflowEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], workflow_id = workflow_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsGetWorkflowEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsGetWorkflowEndpointMutableBuilder[Self <: ActionsGetWorkflowEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsGetWorkflowEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflow_id(value: Double): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
+    inline def setWorkflow_id(value: Double): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
   }
 }

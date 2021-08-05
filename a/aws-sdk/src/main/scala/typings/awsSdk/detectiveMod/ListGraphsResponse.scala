@@ -18,28 +18,21 @@ trait ListGraphsResponse extends StObject {
 }
 object ListGraphsResponse {
   
-  @scala.inline
-  def apply(): ListGraphsResponse = {
+  inline def apply(): ListGraphsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGraphsResponse]
   }
   
-  @scala.inline
-  implicit class ListGraphsResponseMutableBuilder[Self <: ListGraphsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGraphsResponse](x: Self) {
     
-    @scala.inline
-    def setGraphList(value: GraphList): Self = StObject.set(x, "GraphList", value.asInstanceOf[js.Any])
+    inline def setGraphList(value: GraphList): Self = StObject.set(x, "GraphList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphListUndefined: Self = StObject.set(x, "GraphList", js.undefined)
+    inline def setGraphListUndefined: Self = StObject.set(x, "GraphList", js.undefined)
     
-    @scala.inline
-    def setGraphListVarargs(value: Graph*): Self = StObject.set(x, "GraphList", js.Array(value :_*))
+    inline def setGraphListVarargs(value: Graph*): Self = StObject.set(x, "GraphList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

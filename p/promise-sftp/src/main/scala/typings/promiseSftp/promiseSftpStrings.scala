@@ -8,16 +8,13 @@ object promiseSftpStrings {
   
   @js.native
   sealed trait `-_` extends StObject
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
   sealed trait d extends StObject
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
   sealed trait l extends StObject
-  @scala.inline
-  def l: l = "l".asInstanceOf[l]
+  inline def l: l = "l".asInstanceOf[l]
 }

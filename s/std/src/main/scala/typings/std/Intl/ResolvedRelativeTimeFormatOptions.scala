@@ -25,8 +25,7 @@ trait ResolvedRelativeTimeFormatOptions extends StObject {
 }
 object ResolvedRelativeTimeFormatOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     locale: BCP47LanguageTag,
     numberingSystem: String,
     numeric: RelativeTimeFormatNumeric,
@@ -36,19 +35,14 @@ object ResolvedRelativeTimeFormatOptions {
     __obj.asInstanceOf[ResolvedRelativeTimeFormatOptions]
   }
   
-  @scala.inline
-  implicit class ResolvedRelativeTimeFormatOptionsMutableBuilder[Self <: ResolvedRelativeTimeFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedRelativeTimeFormatOptions](x: Self) {
     
-    @scala.inline
-    def setLocale(value: BCP47LanguageTag): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: BCP47LanguageTag): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+    inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumeric(value: RelativeTimeFormatNumeric): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    inline def setNumeric(value: RelativeTimeFormatNumeric): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: RelativeTimeFormatStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: RelativeTimeFormatStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

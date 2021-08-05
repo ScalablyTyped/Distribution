@@ -32,8 +32,7 @@ object mod {
   }
   object Meta {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       colorSpace: String,
       compression: String,
       fileSize: String,
@@ -46,29 +45,21 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    @scala.inline
-    implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+    extension [Self <: Meta](x: Self) {
       
-      @scala.inline
-      def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+      inline def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSize(value: imageSize): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
+      inline def setImageSize(value: imageSize): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuallity(value: String): Self = StObject.set(x, "quallity", value.asInstanceOf[js.Any])
+      inline def setQuallity(value: String): Self = StObject.set(x, "quallity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,95 +93,66 @@ object mod {
   }
   object S3UploaderOptions {
     
-    @scala.inline
-    def apply(): S3UploaderOptions = {
+    inline def apply(): S3UploaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3UploaderOptions]
     }
     
-    @scala.inline
-    implicit class S3UploaderOptionsMutableBuilder[Self <: S3UploaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3UploaderOptions](x: Self) {
       
-      @scala.inline
-      def setAwsAccessKeyId(value: String): Self = StObject.set(x, "awsAccessKeyId", value.asInstanceOf[js.Any])
+      inline def setAwsAccessKeyId(value: String): Self = StObject.set(x, "awsAccessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsAccessKeyIdUndefined: Self = StObject.set(x, "awsAccessKeyId", js.undefined)
+      inline def setAwsAccessKeyIdUndefined: Self = StObject.set(x, "awsAccessKeyId", js.undefined)
       
-      @scala.inline
-      def setAwsBucketAcl(value: String): Self = StObject.set(x, "awsBucketAcl", value.asInstanceOf[js.Any])
+      inline def setAwsBucketAcl(value: String): Self = StObject.set(x, "awsBucketAcl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsBucketAclUndefined: Self = StObject.set(x, "awsBucketAcl", js.undefined)
+      inline def setAwsBucketAclUndefined: Self = StObject.set(x, "awsBucketAcl", js.undefined)
       
-      @scala.inline
-      def setAwsBucketPath(value: String): Self = StObject.set(x, "awsBucketPath", value.asInstanceOf[js.Any])
+      inline def setAwsBucketPath(value: String): Self = StObject.set(x, "awsBucketPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsBucketPathUndefined: Self = StObject.set(x, "awsBucketPath", js.undefined)
+      inline def setAwsBucketPathUndefined: Self = StObject.set(x, "awsBucketPath", js.undefined)
       
-      @scala.inline
-      def setAwsBucketRegion(value: String): Self = StObject.set(x, "awsBucketRegion", value.asInstanceOf[js.Any])
+      inline def setAwsBucketRegion(value: String): Self = StObject.set(x, "awsBucketRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsBucketRegionUndefined: Self = StObject.set(x, "awsBucketRegion", js.undefined)
+      inline def setAwsBucketRegionUndefined: Self = StObject.set(x, "awsBucketRegion", js.undefined)
       
-      @scala.inline
-      def setAwsHttpTimeout(value: Double): Self = StObject.set(x, "awsHttpTimeout", value.asInstanceOf[js.Any])
+      inline def setAwsHttpTimeout(value: Double): Self = StObject.set(x, "awsHttpTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsHttpTimeoutUndefined: Self = StObject.set(x, "awsHttpTimeout", js.undefined)
+      inline def setAwsHttpTimeoutUndefined: Self = StObject.set(x, "awsHttpTimeout", js.undefined)
       
-      @scala.inline
-      def setAwsMaxRetries(value: Double): Self = StObject.set(x, "awsMaxRetries", value.asInstanceOf[js.Any])
+      inline def setAwsMaxRetries(value: Double): Self = StObject.set(x, "awsMaxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsMaxRetriesUndefined: Self = StObject.set(x, "awsMaxRetries", js.undefined)
+      inline def setAwsMaxRetriesUndefined: Self = StObject.set(x, "awsMaxRetries", js.undefined)
       
-      @scala.inline
-      def setAwsSecretAccessKey(value: String): Self = StObject.set(x, "awsSecretAccessKey", value.asInstanceOf[js.Any])
+      inline def setAwsSecretAccessKey(value: String): Self = StObject.set(x, "awsSecretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsSecretAccessKeyUndefined: Self = StObject.set(x, "awsSecretAccessKey", js.undefined)
+      inline def setAwsSecretAccessKeyUndefined: Self = StObject.set(x, "awsSecretAccessKey", js.undefined)
       
-      @scala.inline
-      def setResizeQuality(value: Double): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
+      inline def setResizeQuality(value: Double): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
+      inline def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
       
-      @scala.inline
-      def setReturnExif(value: Boolean): Self = StObject.set(x, "returnExif", value.asInstanceOf[js.Any])
+      inline def setReturnExif(value: Boolean): Self = StObject.set(x, "returnExif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnExifUndefined: Self = StObject.set(x, "returnExif", js.undefined)
+      inline def setReturnExifUndefined: Self = StObject.set(x, "returnExif", js.undefined)
       
-      @scala.inline
-      def setTmpDir(value: String): Self = StObject.set(x, "tmpDir", value.asInstanceOf[js.Any])
+      inline def setTmpDir(value: String): Self = StObject.set(x, "tmpDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpDirUndefined: Self = StObject.set(x, "tmpDir", js.undefined)
+      inline def setTmpDirUndefined: Self = StObject.set(x, "tmpDir", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setVersions(value: js.Array[S3UploaderVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      inline def setVersions(value: js.Array[S3UploaderVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+      inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
       
-      @scala.inline
-      def setVersionsVarargs(value: S3UploaderVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+      inline def setVersionsVarargs(value: S3UploaderVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+      inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     }
   }
   
@@ -208,44 +170,32 @@ object mod {
   }
   object S3UploaderVersion {
     
-    @scala.inline
-    def apply(): S3UploaderVersion = {
+    inline def apply(): S3UploaderVersion = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3UploaderVersion]
     }
     
-    @scala.inline
-    implicit class S3UploaderVersionMutableBuilder[Self <: S3UploaderVersion] (val x: Self) extends AnyVal {
+    extension [Self <: S3UploaderVersion](x: Self) {
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setOriginal(value: Boolean): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: Boolean): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
+      inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
   
@@ -288,8 +238,7 @@ object mod {
   }
   object image {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       etag: String,
       format: String,
       height: Double,
@@ -304,35 +253,25 @@ object mod {
       __obj.asInstanceOf[image]
     }
     
-    @scala.inline
-    implicit class imageMutableBuilder[Self <: image] (val x: Self) extends AnyVal {
+    extension [Self <: image](x: Self) {
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal(value: Boolean): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: Boolean): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -344,20 +283,16 @@ object mod {
   }
   object imageSize {
     
-    @scala.inline
-    def apply(height: Double, width: Double): imageSize = {
+    inline def apply(height: Double, width: Double): imageSize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[imageSize]
     }
     
-    @scala.inline
-    implicit class imageSizeMutableBuilder[Self <: imageSize] (val x: Self) extends AnyVal {
+    extension [Self <: imageSize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

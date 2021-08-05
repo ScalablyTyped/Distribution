@@ -11,19 +11,15 @@ trait CascadeSaveOption extends StObject {
 }
 object CascadeSaveOption {
   
-  @scala.inline
-  def apply(): CascadeSaveOption = {
+  inline def apply(): CascadeSaveOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CascadeSaveOption]
   }
   
-  @scala.inline
-  implicit class CascadeSaveOptionMutableBuilder[Self <: CascadeSaveOption] (val x: Self) extends AnyVal {
+  extension [Self <: CascadeSaveOption](x: Self) {
     
-    @scala.inline
-    def setCascadeSave(value: Boolean): Self = StObject.set(x, "cascadeSave", value.asInstanceOf[js.Any])
+    inline def setCascadeSave(value: Boolean): Self = StObject.set(x, "cascadeSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascadeSaveUndefined: Self = StObject.set(x, "cascadeSave", js.undefined)
+    inline def setCascadeSaveUndefined: Self = StObject.set(x, "cascadeSave", js.undefined)
   }
 }

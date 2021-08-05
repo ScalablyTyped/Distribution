@@ -21,8 +21,7 @@ trait UnifiedPosErrorData extends StObject {
 }
 object UnifiedPosErrorData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extendedReason: Double,
     message: String,
     reason: UnifiedPosErrorReason,
@@ -32,19 +31,14 @@ object UnifiedPosErrorData {
     __obj.asInstanceOf[UnifiedPosErrorData]
   }
   
-  @scala.inline
-  implicit class UnifiedPosErrorDataMutableBuilder[Self <: UnifiedPosErrorData] (val x: Self) extends AnyVal {
+  extension [Self <: UnifiedPosErrorData](x: Self) {
     
-    @scala.inline
-    def setExtendedReason(value: Double): Self = StObject.set(x, "extendedReason", value.asInstanceOf[js.Any])
+    inline def setExtendedReason(value: Double): Self = StObject.set(x, "extendedReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: UnifiedPosErrorReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: UnifiedPosErrorReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverity(value: UnifiedPosErrorSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: UnifiedPosErrorSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
   }
 }

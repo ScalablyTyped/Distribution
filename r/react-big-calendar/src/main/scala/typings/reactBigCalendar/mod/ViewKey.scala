@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewKey extends StObject
 object ViewKey {
   
-  @scala.inline
-  def AGENDA: typings.reactBigCalendar.reactBigCalendarStrings.AGENDA = "AGENDA".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.AGENDA]
+  inline def AGENDA: typings.reactBigCalendar.reactBigCalendarStrings.AGENDA = "AGENDA".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.AGENDA]
   
-  @scala.inline
-  def DAY: typings.reactBigCalendar.reactBigCalendarStrings.DAY = "DAY".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.DAY]
+  inline def DAY: typings.reactBigCalendar.reactBigCalendarStrings.DAY = "DAY".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.DAY]
   
-  @scala.inline
-  def MONTH: typings.reactBigCalendar.reactBigCalendarStrings.MONTH = "MONTH".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.MONTH]
+  inline def MONTH: typings.reactBigCalendar.reactBigCalendarStrings.MONTH = "MONTH".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.MONTH]
   
-  @scala.inline
-  def WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WEEK = "WEEK".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.WEEK]
+  inline def WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WEEK = "WEEK".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.WEEK]
   
-  @scala.inline
-  def WORK_WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK = "WORK_WEEK".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK]
+  inline def WORK_WEEK: typings.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK = "WORK_WEEK".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK]
 }

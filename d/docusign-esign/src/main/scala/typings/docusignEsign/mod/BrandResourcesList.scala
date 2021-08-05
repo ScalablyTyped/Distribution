@@ -13,22 +13,17 @@ trait BrandResourcesList extends StObject {
 }
 object BrandResourcesList {
   
-  @scala.inline
-  def apply(): BrandResourcesList = {
+  inline def apply(): BrandResourcesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrandResourcesList]
   }
   
-  @scala.inline
-  implicit class BrandResourcesListMutableBuilder[Self <: BrandResourcesList] (val x: Self) extends AnyVal {
+  extension [Self <: BrandResourcesList](x: Self) {
     
-    @scala.inline
-    def setResourcesContentTypes(value: js.Array[BrandResources]): Self = StObject.set(x, "resourcesContentTypes", value.asInstanceOf[js.Any])
+    inline def setResourcesContentTypes(value: js.Array[BrandResources]): Self = StObject.set(x, "resourcesContentTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesContentTypesUndefined: Self = StObject.set(x, "resourcesContentTypes", js.undefined)
+    inline def setResourcesContentTypesUndefined: Self = StObject.set(x, "resourcesContentTypes", js.undefined)
     
-    @scala.inline
-    def setResourcesContentTypesVarargs(value: BrandResources*): Self = StObject.set(x, "resourcesContentTypes", js.Array(value :_*))
+    inline def setResourcesContentTypesVarargs(value: BrandResources*): Self = StObject.set(x, "resourcesContentTypes", js.Array(value :_*))
   }
 }

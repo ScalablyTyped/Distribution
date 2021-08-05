@@ -14,5 +14,5 @@ class AsyncSingleFileHost protected () extends AsyncHost {
   
   val file: String = js.native
   
-  var hostFallback: js.Any = js.native
+  /* private */ var hostFallback: js.Any = js.native
 }

@@ -53,22 +53,18 @@ object Promise {
     * @param capture true to initiate capture, otherwise false.
     **/
   /* static member */
-  @scala.inline
-  def addEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addEventListener(`type`: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(`type`: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def any(value: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def any(value: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
   /**
     * Returns a promise that is fulfilled when one of the input promises has been fulfilled.
     * @param value An array that contains Promise objects or objects whose property values include Promise objects.
     * @returns A promise that on fulfillment yields the value of the input (complete or error).
     **/
   /* static member */
-  @scala.inline
-  def any(value: js.Array[IPromise[js.Any]]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def any(value: js.Array[IPromise[js.Any]]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
   
   /**
     * Returns a promise. If the object is already a Promise it is returned; otherwise the object is wrapped in a Promise. You can use this function when you need to treat a non-Promise object like a Promise, for example when you are calling a function that expects a promise, but already have the value needed rather than needing to get it asynchronously.
@@ -76,10 +72,8 @@ object Promise {
     * @returns The promise.
     **/
   /* static member */
-  @scala.inline
-  def as[U](): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("as")().asInstanceOf[IPromise[U]]
-  @scala.inline
-  def as[U](value: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("as")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
+  inline def as[U](): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("as")().asInstanceOf[IPromise[U]]
+  inline def as[U](value: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("as")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
   
   /**
     * Canceled promise value, can be returned from a promise completion handler to indicate cancelation of the promise chain.
@@ -88,8 +82,7 @@ object Promise {
   @JSGlobal("WinJS.Promise.cancel")
   @js.native
   def cancel: IPromise[js.Any] = js.native
-  @scala.inline
-  def cancel_=(x: IPromise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
+  inline def cancel_=(x: IPromise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
   
   /**
     * Raises an event of the specified type and properties.
@@ -98,8 +91,7 @@ object Promise {
     * @returns true if preventDefault was called on the event; otherwise, false.
     **/
   /* static member */
-  @scala.inline
-  def dispatchEvent(`type`: String, details: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def dispatchEvent(`type`: String, details: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Determines whether a value fulfills the promise contract.
@@ -107,8 +99,7 @@ object Promise {
     * @returns true if the object conforms to the promise contract (has a then function), otherwise false.
     **/
   /* static member */
-  @scala.inline
-  def is(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def is(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Creates a Promise that is fulfilled when all the values are fulfilled.
@@ -116,8 +107,7 @@ object Promise {
     * @returns A Promise whose value is an object with the same field names as those of the object in the values parameter, where each field value is the fulfilled value of a promise.
     **/
   /* static member */
-  @scala.inline
-  def join(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def join(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
   
   //#endregion Constructors
   //#region Events
@@ -126,8 +116,7 @@ object Promise {
     * @param eventInfo An object that contains information about the event.
     **/
   /* static member */
-  @scala.inline
-  def onerror(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onerror")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onerror(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onerror")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes an event listener from the control.
@@ -136,10 +125,8 @@ object Promise {
     * @param capture Specifies whether or not to initiate capture.
     **/
   /* static member */
-  @scala.inline
-  def removeEventListener(eventType: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeEventListener(eventType: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(eventType: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(eventType: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   //#endregion Methods
   //#region Properties
@@ -150,8 +137,7 @@ object Promise {
   @JSGlobal("WinJS.Promise.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
   
   /**
     * A static helper that functions identically to then() off a promise instance.
@@ -162,41 +148,33 @@ object Promise {
     * @returns The promise whose value is the result of executing the onComplete function.
     **/
   /* static member */
-  @scala.inline
-  def `then`(promise: IPromise[js.Any]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def `then`(promise: IPromise[js.Any], onComplete: js.Function1[/* value */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def `then`(
+  inline def `then`(promise: IPromise[js.Any]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def `then`(promise: IPromise[js.Any], onComplete: js.Function1[/* value */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def `then`(
     promise: IPromise[js.Any],
     onComplete: js.Function1[/* value */ js.Any, js.Any],
     onError: js.Function1[/* error */ js.Any, js.Any]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def `then`(
+  inline def `then`(
     promise: IPromise[js.Any],
     onComplete: js.Function1[/* value */ js.Any, js.Any],
     onError: js.Function1[/* error */ js.Any, js.Any],
     onProgress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def `then`(
+  inline def `then`(
     promise: IPromise[js.Any],
     onComplete: js.Function1[/* value */ js.Any, js.Any],
     onError: Unit,
     onProgress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def `then`(promise: IPromise[js.Any], onComplete: Unit, onError: js.Function1[/* error */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def `then`(
+  inline def `then`(promise: IPromise[js.Any], onComplete: Unit, onError: js.Function1[/* error */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def `then`(
     promise: IPromise[js.Any],
     onComplete: Unit,
     onError: js.Function1[/* error */ js.Any, js.Any],
     onProgress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def `then`(
+  inline def `then`(
     promise: IPromise[js.Any],
     onComplete: Unit,
     onError: Unit,
@@ -212,41 +190,33 @@ object Promise {
     * @returns A Promise that is the result of calling join on the values parameter.
     **/
   /* static member */
-  @scala.inline
-  def thenEach(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def thenEach(values: js.Any, complete: js.Function1[/* value */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def thenEach(
+  inline def thenEach(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def thenEach(values: js.Any, complete: js.Function1[/* value */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def thenEach(
     values: js.Any,
     complete: js.Function1[/* value */ js.Any, Unit],
     error: js.Function1[/* error */ js.Any, Unit]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def thenEach(
+  inline def thenEach(
     values: js.Any,
     complete: js.Function1[/* value */ js.Any, Unit],
     error: js.Function1[/* error */ js.Any, Unit],
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def thenEach(
+  inline def thenEach(
     values: js.Any,
     complete: js.Function1[/* value */ js.Any, Unit],
     error: Unit,
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def thenEach(values: js.Any, complete: Unit, error: js.Function1[/* error */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def thenEach(
+  inline def thenEach(values: js.Any, complete: Unit, error: js.Function1[/* error */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def thenEach(
     values: js.Any,
     complete: Unit,
     error: js.Function1[/* error */ js.Any, Unit],
     progress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def thenEach(values: js.Any, complete: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def thenEach(values: js.Any, complete: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
   
   /**
     * This method has two forms: WinJS.Promise.timeout(timeout) and WinJS.Promise.timeout(timeout, promise). WinJS.Promise.timeout(timeout) creates a promise that is completed asynchronously after the specified timeout, essentially wrapping a call to setTimeout within a promise. WinJS.Promise.timeout(timeout, promise) sets a timeout period for completion of the specified promise, automatically canceling the promise if it is not completed within the timeout period.
@@ -255,14 +225,10 @@ object Promise {
     * @returns If the promise parameter is omitted, returns a promise that will be fulfilled after the timeout period. If the promise paramater is provided, the same promise is returned.
     **/
   /* static member */
-  @scala.inline
-  def timeout(): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")().asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def timeout(timeout: Double): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def timeout(timeout: Double, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  @scala.inline
-  def timeout(timeout: Unit, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def timeout(): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")().asInstanceOf[IPromise[js.Any]]
+  inline def timeout(timeout: Double): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def timeout(timeout: Double, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def timeout(timeout: Unit, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
   
   /**
     * Wraps a non-promise value in a promise. This method is like wrapError, which allows you to produce a Promise in error conditions, in that it allows you to return a Promise in success conditions.
@@ -270,10 +236,8 @@ object Promise {
     * @returns A promise that is successfully fulfilled with the specified value.
     **/
   /* static member */
-  @scala.inline
-  def wrap[U](): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")().asInstanceOf[IPromise[U]]
-  @scala.inline
-  def wrap[U](value: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
+  inline def wrap[U](): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")().asInstanceOf[IPromise[U]]
+  inline def wrap[U](value: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
   
   /**
     * Wraps a non-promise error value in a promise. You can use this function if you need to pass an error to a function that requires a promise.
@@ -281,6 +245,5 @@ object Promise {
     * @returns A promise that is in an error state with the specified value.
     **/
   /* static member */
-  @scala.inline
-  def wrapError[U](error: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(error.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
+  inline def wrapError[U](error: U): IPromise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(error.asInstanceOf[js.Any]).asInstanceOf[IPromise[U]]
 }

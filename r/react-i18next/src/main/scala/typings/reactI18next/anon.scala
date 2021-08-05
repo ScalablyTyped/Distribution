@@ -29,23 +29,18 @@ object anon {
   }
   object I18n {
     
-    @scala.inline
-    def apply(i18n: i18n, ready: Boolean, t: TFunction): I18n = {
+    inline def apply(i18n: i18n, ready: Boolean, t: TFunction): I18n = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18n]
     }
     
-    @scala.inline
-    implicit class I18nMutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
+    extension [Self <: I18n](x: Self) {
       
-      @scala.inline
-      def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,17 +50,14 @@ object anon {
   }
   object I18nI18n {
     
-    @scala.inline
-    def apply(i18n: i18n): I18nI18n = {
+    inline def apply(i18n: i18n): I18nI18n = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18nI18n]
     }
     
-    @scala.inline
-    implicit class I18nI18nMutableBuilder[Self <: I18nI18n] (val x: Self) extends AnyVal {
+    extension [Self <: I18nI18n](x: Self) {
       
-      @scala.inline
-      def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,20 +69,16 @@ object anon {
   }
   object InitialI18nStore {
     
-    @scala.inline
-    def apply(initialI18nStore: StringDictionary[js.Object], initialLanguage: String): InitialI18nStore = {
+    inline def apply(initialI18nStore: StringDictionary[js.Object], initialLanguage: String): InitialI18nStore = {
       val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore.asInstanceOf[js.Any], initialLanguage = initialLanguage.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialI18nStore]
     }
     
-    @scala.inline
-    implicit class InitialI18nStoreMutableBuilder[Self <: InitialI18nStore] (val x: Self) extends AnyVal {
+    extension [Self <: InitialI18nStore](x: Self) {
       
-      @scala.inline
-      def setInitialI18nStore(value: StringDictionary[js.Object]): Self = StObject.set(x, "initialI18nStore", value.asInstanceOf[js.Any])
+      inline def setInitialI18nStore(value: StringDictionary[js.Object]): Self = StObject.set(x, "initialI18nStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialLanguage(value: String): Self = StObject.set(x, "initialLanguage", value.asInstanceOf[js.Any])
+      inline def setInitialLanguage(value: String): Self = StObject.set(x, "initialLanguage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,20 +90,16 @@ object anon {
   }
   object InitialLanguage {
     
-    @scala.inline
-    def apply(initialI18nStore: Resource, initialLanguage: String): InitialLanguage = {
+    inline def apply(initialI18nStore: Resource, initialLanguage: String): InitialLanguage = {
       val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore.asInstanceOf[js.Any], initialLanguage = initialLanguage.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialLanguage]
     }
     
-    @scala.inline
-    implicit class InitialLanguageMutableBuilder[Self <: InitialLanguage] (val x: Self) extends AnyVal {
+    extension [Self <: InitialLanguage](x: Self) {
       
-      @scala.inline
-      def setInitialI18nStore(value: Resource): Self = StObject.set(x, "initialI18nStore", value.asInstanceOf[js.Any])
+      inline def setInitialI18nStore(value: Resource): Self = StObject.set(x, "initialI18nStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialLanguage(value: String): Self = StObject.set(x, "initialLanguage", value.asInstanceOf[js.Any])
+      inline def setInitialLanguage(value: String): Self = StObject.set(x, "initialLanguage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,20 +111,16 @@ object anon {
   }
   object Lng {
     
-    @scala.inline
-    def apply(i18n: i18n, lng: String): Lng = {
+    inline def apply(i18n: i18n, lng: String): Lng = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lng]
     }
     
-    @scala.inline
-    implicit class LngMutableBuilder[Self <: Lng] (val x: Self) extends AnyVal {
+    extension [Self <: Lng](x: Self) {
       
-      @scala.inline
-      def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,20 +130,16 @@ object anon {
   }
   object WithRef {
     
-    @scala.inline
-    def apply(): WithRef = {
+    inline def apply(): WithRef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithRef]
     }
     
-    @scala.inline
-    implicit class WithRefMutableBuilder[Self <: WithRef] (val x: Self) extends AnyVal {
+    extension [Self <: WithRef](x: Self) {
       
-      @scala.inline
-      def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
+      inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
+      inline def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
     }
   }
 }

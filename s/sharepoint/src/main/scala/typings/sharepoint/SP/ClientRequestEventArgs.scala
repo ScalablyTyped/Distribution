@@ -13,16 +13,13 @@ trait ClientRequestEventArgs
 }
 object ClientRequestEventArgs {
   
-  @scala.inline
-  def apply(Empty: EventArgs, get_request: () => ClientRequest): ClientRequestEventArgs = {
+  inline def apply(Empty: EventArgs, get_request: () => ClientRequest): ClientRequestEventArgs = {
     val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_request = js.Any.fromFunction0(get_request))
     __obj.asInstanceOf[ClientRequestEventArgs]
   }
   
-  @scala.inline
-  implicit class ClientRequestEventArgsMutableBuilder[Self <: ClientRequestEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ClientRequestEventArgs](x: Self) {
     
-    @scala.inline
-    def setGet_request(value: () => ClientRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
+    inline def setGet_request(value: () => ClientRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
   }
 }

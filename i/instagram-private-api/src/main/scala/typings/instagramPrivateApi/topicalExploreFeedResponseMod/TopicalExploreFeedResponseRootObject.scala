@@ -22,8 +22,7 @@ trait TopicalExploreFeedResponseRootObject extends StObject {
 }
 object TopicalExploreFeedResponseRootObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auto_load_more_enabled: Boolean,
     max_id: String,
     more_available: Boolean,
@@ -36,31 +35,22 @@ object TopicalExploreFeedResponseRootObject {
     __obj.asInstanceOf[TopicalExploreFeedResponseRootObject]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseRootObjectMutableBuilder[Self <: TopicalExploreFeedResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
+    inline def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+    inline def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+    inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+    inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectional_items(value: js.Array[TopicalExploreFeedResponseSectionalItemsItem]): Self = StObject.set(x, "sectional_items", value.asInstanceOf[js.Any])
+    inline def setSectional_items(value: js.Array[TopicalExploreFeedResponseSectionalItemsItem]): Self = StObject.set(x, "sectional_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectional_itemsVarargs(value: TopicalExploreFeedResponseSectionalItemsItem*): Self = StObject.set(x, "sectional_items", js.Array(value :_*))
+    inline def setSectional_itemsVarargs(value: TopicalExploreFeedResponseSectionalItemsItem*): Self = StObject.set(x, "sectional_items", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

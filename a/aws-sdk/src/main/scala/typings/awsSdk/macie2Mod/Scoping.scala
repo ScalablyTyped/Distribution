@@ -18,25 +18,19 @@ trait Scoping extends StObject {
 }
 object Scoping {
   
-  @scala.inline
-  def apply(): Scoping = {
+  inline def apply(): Scoping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scoping]
   }
   
-  @scala.inline
-  implicit class ScopingMutableBuilder[Self <: Scoping] (val x: Self) extends AnyVal {
+  extension [Self <: Scoping](x: Self) {
     
-    @scala.inline
-    def setExcludes(value: JobScopingBlock): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+    inline def setExcludes(value: JobScopingBlock): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+    inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    @scala.inline
-    def setIncludes(value: JobScopingBlock): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: JobScopingBlock): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
+    inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
   }
 }

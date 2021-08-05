@@ -84,16 +84,14 @@ object mod {
     var type_LanguageDetector: typings.i18nextExpressMiddleware.i18nextExpressMiddlewareStrings.languageDetector = js.native
   }
   
-  @scala.inline
-  def addRoute(
+  inline def addRoute(
     i18next: I18next,
     route: String,
     lngs: js.Array[String],
     app: App,
     fc: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")(i18next.asInstanceOf[js.Any], route.asInstanceOf[js.Any], lngs.asInstanceOf[js.Any], app.asInstanceOf[js.Any], fc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addRoute(
+  inline def addRoute(
     i18next: I18next,
     route: String,
     lngs: js.Array[String],
@@ -102,20 +100,14 @@ object mod {
     fc: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")(i18next.asInstanceOf[js.Any], route.asInstanceOf[js.Any], lngs.asInstanceOf[js.Any], app.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], fc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getResourcesHandler(i18next: I18next): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourcesHandler")(i18next.asInstanceOf[js.Any]).asInstanceOf[Handler]
-  @scala.inline
-  def getResourcesHandler(i18next: I18next, options: GetResourcesHandlerOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourcesHandler")(i18next.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def getResourcesHandler(i18next: I18next): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourcesHandler")(i18next.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def getResourcesHandler(i18next: I18next, options: GetResourcesHandlerOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourcesHandler")(i18next.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
-  @scala.inline
-  def handle(i18next: I18next): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("handle")(i18next.asInstanceOf[js.Any]).asInstanceOf[Handler]
-  @scala.inline
-  def handle(i18next: I18next, options: HandleOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("handle")(i18next.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def handle(i18next: I18next): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("handle")(i18next.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def handle(i18next: I18next, options: HandleOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("handle")(i18next.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
-  @scala.inline
-  def missingKeyHandler(i18next: I18next): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("missingKeyHandler")(i18next.asInstanceOf[js.Any]).asInstanceOf[Handler]
-  @scala.inline
-  def missingKeyHandler(i18next: I18next, options: MissingKeyHandlerOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("missingKeyHandler")(i18next.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def missingKeyHandler(i18next: I18next): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("missingKeyHandler")(i18next.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def missingKeyHandler(i18next: I18next, options: MissingKeyHandlerOptions): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("missingKeyHandler")(i18next.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
   type App = Application_ | Router
   
@@ -131,38 +123,28 @@ object mod {
   }
   object GetResourcesHandlerOptions {
     
-    @scala.inline
-    def apply(): GetResourcesHandlerOptions = {
+    inline def apply(): GetResourcesHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetResourcesHandlerOptions]
     }
     
-    @scala.inline
-    implicit class GetResourcesHandlerOptionsMutableBuilder[Self <: GetResourcesHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetResourcesHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setLngParam(value: String): Self = StObject.set(x, "lngParam", value.asInstanceOf[js.Any])
+      inline def setLngParam(value: String): Self = StObject.set(x, "lngParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLngParamUndefined: Self = StObject.set(x, "lngParam", js.undefined)
+      inline def setLngParamUndefined: Self = StObject.set(x, "lngParam", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setNsParam(value: String): Self = StObject.set(x, "nsParam", value.asInstanceOf[js.Any])
+      inline def setNsParam(value: String): Self = StObject.set(x, "nsParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsParamUndefined: Self = StObject.set(x, "nsParam", js.undefined)
+      inline def setNsParamUndefined: Self = StObject.set(x, "nsParam", js.undefined)
     }
   }
   
@@ -174,34 +156,26 @@ object mod {
   }
   object HandleOptions {
     
-    @scala.inline
-    def apply(): HandleOptions = {
+    inline def apply(): HandleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HandleOptions]
     }
     
-    @scala.inline
-    implicit class HandleOptionsMutableBuilder[Self <: HandleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HandleOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreRoutes(value: js.Array[String] | IgnoreRoutesFunction): Self = StObject.set(x, "ignoreRoutes", value.asInstanceOf[js.Any])
+      inline def setIgnoreRoutes(value: js.Array[String] | IgnoreRoutesFunction): Self = StObject.set(x, "ignoreRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreRoutesFunction4(
+      inline def setIgnoreRoutesFunction4(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* options */ HandleOptions, /* i18next */ I18next) => Boolean
       ): Self = StObject.set(x, "ignoreRoutes", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setIgnoreRoutesUndefined: Self = StObject.set(x, "ignoreRoutes", js.undefined)
+      inline def setIgnoreRoutesUndefined: Self = StObject.set(x, "ignoreRoutes", js.undefined)
       
-      @scala.inline
-      def setIgnoreRoutesVarargs(value: String*): Self = StObject.set(x, "ignoreRoutes", js.Array(value :_*))
+      inline def setIgnoreRoutesVarargs(value: String*): Self = StObject.set(x, "ignoreRoutes", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoveLngFromUrl(value: Boolean): Self = StObject.set(x, "removeLngFromUrl", value.asInstanceOf[js.Any])
+      inline def setRemoveLngFromUrl(value: Boolean): Self = StObject.set(x, "removeLngFromUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveLngFromUrlUndefined: Self = StObject.set(x, "removeLngFromUrl", js.undefined)
+      inline def setRemoveLngFromUrlUndefined: Self = StObject.set(x, "removeLngFromUrl", js.undefined)
     }
   }
   
@@ -250,20 +224,16 @@ object mod {
   }
   object LanguageDetectorAllOptions {
     
-    @scala.inline
-    def apply(fallbackLng: Boolean | String | js.Array[String]): LanguageDetectorAllOptions = {
+    inline def apply(fallbackLng: Boolean | String | js.Array[String]): LanguageDetectorAllOptions = {
       val __obj = js.Dynamic.literal(fallbackLng = fallbackLng.asInstanceOf[js.Any])
       __obj.asInstanceOf[LanguageDetectorAllOptions]
     }
     
-    @scala.inline
-    implicit class LanguageDetectorAllOptionsMutableBuilder[Self <: LanguageDetectorAllOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageDetectorAllOptions](x: Self) {
       
-      @scala.inline
-      def setFallbackLng(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
+      inline def setFallbackLng(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
+      inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
     }
   }
   
@@ -314,68 +284,48 @@ object mod {
   }
   object LanguageDetectorOptions {
     
-    @scala.inline
-    def apply(): LanguageDetectorOptions = {
+    inline def apply(): LanguageDetectorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LanguageDetectorOptions]
     }
     
-    @scala.inline
-    implicit class LanguageDetectorOptionsMutableBuilder[Self <: LanguageDetectorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageDetectorOptions](x: Self) {
       
-      @scala.inline
-      def setCaches(value: LanguageDetectorCaches): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
+      inline def setCaches(value: LanguageDetectorCaches): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachesUndefined: Self = StObject.set(x, "caches", js.undefined)
+      inline def setCachesUndefined: Self = StObject.set(x, "caches", js.undefined)
       
-      @scala.inline
-      def setCachesVarargs(value: String*): Self = StObject.set(x, "caches", js.Array(value :_*))
+      inline def setCachesVarargs(value: String*): Self = StObject.set(x, "caches", js.Array(value :_*))
       
-      @scala.inline
-      def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+      inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
+      inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
       
-      @scala.inline
-      def setCookieExpirationDate(value: Date): Self = StObject.set(x, "cookieExpirationDate", value.asInstanceOf[js.Any])
+      inline def setCookieExpirationDate(value: Date): Self = StObject.set(x, "cookieExpirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieExpirationDateUndefined: Self = StObject.set(x, "cookieExpirationDate", js.undefined)
+      inline def setCookieExpirationDateUndefined: Self = StObject.set(x, "cookieExpirationDate", js.undefined)
       
-      @scala.inline
-      def setLookupCookie(value: String): Self = StObject.set(x, "lookupCookie", value.asInstanceOf[js.Any])
+      inline def setLookupCookie(value: String): Self = StObject.set(x, "lookupCookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupCookieUndefined: Self = StObject.set(x, "lookupCookie", js.undefined)
+      inline def setLookupCookieUndefined: Self = StObject.set(x, "lookupCookie", js.undefined)
       
-      @scala.inline
-      def setLookupFromPathIndex(value: Double): Self = StObject.set(x, "lookupFromPathIndex", value.asInstanceOf[js.Any])
+      inline def setLookupFromPathIndex(value: Double): Self = StObject.set(x, "lookupFromPathIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupFromPathIndexUndefined: Self = StObject.set(x, "lookupFromPathIndex", js.undefined)
+      inline def setLookupFromPathIndexUndefined: Self = StObject.set(x, "lookupFromPathIndex", js.undefined)
       
-      @scala.inline
-      def setLookupQuerystring(value: String): Self = StObject.set(x, "lookupQuerystring", value.asInstanceOf[js.Any])
+      inline def setLookupQuerystring(value: String): Self = StObject.set(x, "lookupQuerystring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupQuerystringUndefined: Self = StObject.set(x, "lookupQuerystring", js.undefined)
+      inline def setLookupQuerystringUndefined: Self = StObject.set(x, "lookupQuerystring", js.undefined)
       
-      @scala.inline
-      def setLookupSession(value: String): Self = StObject.set(x, "lookupSession", value.asInstanceOf[js.Any])
+      inline def setLookupSession(value: String): Self = StObject.set(x, "lookupSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupSessionUndefined: Self = StObject.set(x, "lookupSession", js.undefined)
+      inline def setLookupSessionUndefined: Self = StObject.set(x, "lookupSession", js.undefined)
       
-      @scala.inline
-      def setOrder(value: LanguageDetectorOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: LanguageDetectorOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
     }
   }
   
@@ -392,26 +342,20 @@ object mod {
   }
   object MissingKeyHandlerOptions {
     
-    @scala.inline
-    def apply(): MissingKeyHandlerOptions = {
+    inline def apply(): MissingKeyHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MissingKeyHandlerOptions]
     }
     
-    @scala.inline
-    implicit class MissingKeyHandlerOptionsMutableBuilder[Self <: MissingKeyHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MissingKeyHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setLngParam(value: String): Self = StObject.set(x, "lngParam", value.asInstanceOf[js.Any])
+      inline def setLngParam(value: String): Self = StObject.set(x, "lngParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLngParamUndefined: Self = StObject.set(x, "lngParam", js.undefined)
+      inline def setLngParamUndefined: Self = StObject.set(x, "lngParam", js.undefined)
       
-      @scala.inline
-      def setNsParam(value: String): Self = StObject.set(x, "nsParam", value.asInstanceOf[js.Any])
+      inline def setNsParam(value: String): Self = StObject.set(x, "nsParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsParamUndefined: Self = StObject.set(x, "nsParam", js.undefined)
+      inline def setNsParamUndefined: Self = StObject.set(x, "nsParam", js.undefined)
     }
   }
 }

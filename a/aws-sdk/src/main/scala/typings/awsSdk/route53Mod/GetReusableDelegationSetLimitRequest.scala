@@ -18,19 +18,15 @@ trait GetReusableDelegationSetLimitRequest extends StObject {
 }
 object GetReusableDelegationSetLimitRequest {
   
-  @scala.inline
-  def apply(DelegationSetId: ResourceId, Type: ReusableDelegationSetLimitType): GetReusableDelegationSetLimitRequest = {
+  inline def apply(DelegationSetId: ResourceId, Type: ReusableDelegationSetLimitType): GetReusableDelegationSetLimitRequest = {
     val __obj = js.Dynamic.literal(DelegationSetId = DelegationSetId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReusableDelegationSetLimitRequest]
   }
   
-  @scala.inline
-  implicit class GetReusableDelegationSetLimitRequestMutableBuilder[Self <: GetReusableDelegationSetLimitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetReusableDelegationSetLimitRequest](x: Self) {
     
-    @scala.inline
-    def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
+    inline def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ReusableDelegationSetLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ReusableDelegationSetLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

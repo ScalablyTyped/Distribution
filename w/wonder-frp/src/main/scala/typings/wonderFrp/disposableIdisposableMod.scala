@@ -12,17 +12,14 @@ object disposableIdisposableMod {
   }
   object IDisposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit): IDisposable = {
+    inline def apply(dispose: () => Unit): IDisposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[IDisposable]
     }
     
-    @scala.inline
-    implicit class IDisposableMutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
+    extension [Self <: IDisposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
 }

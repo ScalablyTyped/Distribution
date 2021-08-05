@@ -17,16 +17,13 @@ trait MeshbluStatic extends StObject {
 }
 object MeshbluStatic {
   
-  @scala.inline
-  def apply(createConnection: ConnectionOptions => Connection): MeshbluStatic = {
+  inline def apply(createConnection: ConnectionOptions => Connection): MeshbluStatic = {
     val __obj = js.Dynamic.literal(createConnection = js.Any.fromFunction1(createConnection))
     __obj.asInstanceOf[MeshbluStatic]
   }
   
-  @scala.inline
-  implicit class MeshbluStaticMutableBuilder[Self <: MeshbluStatic] (val x: Self) extends AnyVal {
+  extension [Self <: MeshbluStatic](x: Self) {
     
-    @scala.inline
-    def setCreateConnection(value: ConnectionOptions => Connection): Self = StObject.set(x, "createConnection", js.Any.fromFunction1(value))
+    inline def setCreateConnection(value: ConnectionOptions => Connection): Self = StObject.set(x, "createConnection", js.Any.fromFunction1(value))
   }
 }

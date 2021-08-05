@@ -12,19 +12,15 @@ trait IStruct extends StObject {
 }
 object IStruct {
   
-  @scala.inline
-  def apply(): IStruct = {
+  inline def apply(): IStruct = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStruct]
   }
   
-  @scala.inline
-  implicit class IStructMutableBuilder[Self <: IStruct] (val x: Self) extends AnyVal {
+  extension [Self <: IStruct](x: Self) {
     
-    @scala.inline
-    def setFields(value: StringDictionary[IValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[IValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

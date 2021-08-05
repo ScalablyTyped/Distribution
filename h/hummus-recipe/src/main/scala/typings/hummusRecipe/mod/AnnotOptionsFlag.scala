@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnnotOptionsFlag extends StObject
 object AnnotOptionsFlag {
   
-  @scala.inline
-  def hidden: typings.hummusRecipe.hummusRecipeStrings.hidden = "hidden".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.hidden]
+  inline def hidden: typings.hummusRecipe.hummusRecipeStrings.hidden = "hidden".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.hidden]
   
-  @scala.inline
-  def invisible: typings.hummusRecipe.hummusRecipeStrings.invisible = "invisible".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.invisible]
+  inline def invisible: typings.hummusRecipe.hummusRecipeStrings.invisible = "invisible".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.invisible]
   
-  @scala.inline
-  def locked: typings.hummusRecipe.hummusRecipeStrings.locked = "locked".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.locked]
+  inline def locked: typings.hummusRecipe.hummusRecipeStrings.locked = "locked".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.locked]
   
-  @scala.inline
-  def norotate: typings.hummusRecipe.hummusRecipeStrings.norotate = "norotate".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.norotate]
+  inline def norotate: typings.hummusRecipe.hummusRecipeStrings.norotate = "norotate".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.norotate]
   
-  @scala.inline
-  def noview: typings.hummusRecipe.hummusRecipeStrings.noview = "noview".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.noview]
+  inline def noview: typings.hummusRecipe.hummusRecipeStrings.noview = "noview".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.noview]
   
-  @scala.inline
-  def nozoom: typings.hummusRecipe.hummusRecipeStrings.nozoom = "nozoom".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.nozoom]
+  inline def nozoom: typings.hummusRecipe.hummusRecipeStrings.nozoom = "nozoom".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.nozoom]
   
-  @scala.inline
-  def print: typings.hummusRecipe.hummusRecipeStrings.print = "print".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.print]
+  inline def print: typings.hummusRecipe.hummusRecipeStrings.print = "print".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.print]
   
-  @scala.inline
-  def readonly: typings.hummusRecipe.hummusRecipeStrings.readonly = "readonly".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.readonly]
+  inline def readonly: typings.hummusRecipe.hummusRecipeStrings.readonly = "readonly".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.readonly]
   
-  @scala.inline
-  def togglenoview: typings.hummusRecipe.hummusRecipeStrings.togglenoview = "togglenoview".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.togglenoview]
+  inline def togglenoview: typings.hummusRecipe.hummusRecipeStrings.togglenoview = "togglenoview".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.togglenoview]
 }

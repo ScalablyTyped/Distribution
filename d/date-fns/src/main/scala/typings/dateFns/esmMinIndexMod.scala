@@ -9,8 +9,7 @@ object esmMinIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(datesArray: js.Array[Date | Double]): Date = ^.asInstanceOf[js.Dynamic].apply(datesArray.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def apply(datesArray: js.Array[Date | Double]): Date = ^.asInstanceOf[js.Dynamic].apply(datesArray.asInstanceOf[js.Any]).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/min/index", JSImport.Default)
     @js.native

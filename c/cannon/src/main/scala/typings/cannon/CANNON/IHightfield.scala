@@ -14,28 +14,21 @@ trait IHightfield extends StObject {
 }
 object IHightfield {
   
-  @scala.inline
-  def apply(elementSize: Double): IHightfield = {
+  inline def apply(elementSize: Double): IHightfield = {
     val __obj = js.Dynamic.literal(elementSize = elementSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHightfield]
   }
   
-  @scala.inline
-  implicit class IHightfieldMutableBuilder[Self <: IHightfield] (val x: Self) extends AnyVal {
+  extension [Self <: IHightfield](x: Self) {
     
-    @scala.inline
-    def setElementSize(value: Double): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
+    inline def setElementSize(value: Double): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

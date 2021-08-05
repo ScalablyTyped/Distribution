@@ -10,16 +10,13 @@ trait IConditionRunner extends StObject {
 }
 object IConditionRunner {
   
-  @scala.inline
-  def apply(runCondition: (HashTable[js.Any], HashTable[js.Any]) => js.Any): IConditionRunner = {
+  inline def apply(runCondition: (HashTable[js.Any], HashTable[js.Any]) => js.Any): IConditionRunner = {
     val __obj = js.Dynamic.literal(runCondition = js.Any.fromFunction2(runCondition))
     __obj.asInstanceOf[IConditionRunner]
   }
   
-  @scala.inline
-  implicit class IConditionRunnerMutableBuilder[Self <: IConditionRunner] (val x: Self) extends AnyVal {
+  extension [Self <: IConditionRunner](x: Self) {
     
-    @scala.inline
-    def setRunCondition(value: (HashTable[js.Any], HashTable[js.Any]) => js.Any): Self = StObject.set(x, "runCondition", js.Any.fromFunction2(value))
+    inline def setRunCondition(value: (HashTable[js.Any], HashTable[js.Any]) => js.Any): Self = StObject.set(x, "runCondition", js.Any.fromFunction2(value))
   }
 }

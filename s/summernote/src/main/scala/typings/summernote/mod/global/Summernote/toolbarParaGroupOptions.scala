@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait toolbarParaGroupOptions extends StObject
 object toolbarParaGroupOptions {
   
-  @scala.inline
-  def height: typings.summernote.summernoteStrings.height = "height".asInstanceOf[typings.summernote.summernoteStrings.height]
+  inline def height: typings.summernote.summernoteStrings.height = "height".asInstanceOf[typings.summernote.summernoteStrings.height]
   
-  @scala.inline
-  def ol: typings.summernote.summernoteStrings.ol = "ol".asInstanceOf[typings.summernote.summernoteStrings.ol]
+  inline def ol: typings.summernote.summernoteStrings.ol = "ol".asInstanceOf[typings.summernote.summernoteStrings.ol]
   
-  @scala.inline
-  def paragraph: typings.summernote.summernoteStrings.paragraph = "paragraph".asInstanceOf[typings.summernote.summernoteStrings.paragraph]
+  inline def paragraph: typings.summernote.summernoteStrings.paragraph = "paragraph".asInstanceOf[typings.summernote.summernoteStrings.paragraph]
   
-  @scala.inline
-  def style: typings.summernote.summernoteStrings.style = "style".asInstanceOf[typings.summernote.summernoteStrings.style]
+  inline def style: typings.summernote.summernoteStrings.style = "style".asInstanceOf[typings.summernote.summernoteStrings.style]
   
-  @scala.inline
-  def ul: typings.summernote.summernoteStrings.ul = "ul".asInstanceOf[typings.summernote.summernoteStrings.ul]
+  inline def ul: typings.summernote.summernoteStrings.ul = "ul".asInstanceOf[typings.summernote.summernoteStrings.ul]
 }

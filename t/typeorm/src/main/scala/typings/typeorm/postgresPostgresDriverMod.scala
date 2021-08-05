@@ -68,7 +68,7 @@ object postgresPostgresDriverMod {
       */
     def loadStreamDependency(): js.Any = js.native
     
-    var lowerDefaultValueIfNecessary: js.Any = js.native
+    /* private */ var lowerDefaultValueIfNecessary: js.Any = js.native
     
     /**
       * Pool for master database.

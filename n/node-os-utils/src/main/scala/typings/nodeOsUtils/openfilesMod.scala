@@ -22,17 +22,14 @@ object openfilesMod {
   }
   object OpenFiles {
     
-    @scala.inline
-    def apply(openFd: () => js.Promise[Double]): OpenFiles = {
+    inline def apply(openFd: () => js.Promise[Double]): OpenFiles = {
       val __obj = js.Dynamic.literal(openFd = js.Any.fromFunction0(openFd))
       __obj.asInstanceOf[OpenFiles]
     }
     
-    @scala.inline
-    implicit class OpenFilesMutableBuilder[Self <: OpenFiles] (val x: Self) extends AnyVal {
+    extension [Self <: OpenFiles](x: Self) {
       
-      @scala.inline
-      def setOpenFd(value: () => js.Promise[Double]): Self = StObject.set(x, "openFd", js.Any.fromFunction0(value))
+      inline def setOpenFd(value: () => js.Promise[Double]): Self = StObject.set(x, "openFd", js.Any.fromFunction0(value))
     }
   }
 }

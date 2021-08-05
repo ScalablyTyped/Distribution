@@ -11,19 +11,15 @@ trait IdentitytoolkitRelyingpartySetProjectConfigResponse extends StObject {
 }
 object IdentitytoolkitRelyingpartySetProjectConfigResponse {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartySetProjectConfigResponse = {
+  inline def apply(): IdentitytoolkitRelyingpartySetProjectConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySetProjectConfigResponse]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartySetProjectConfigResponseMutableBuilder[Self <: IdentitytoolkitRelyingpartySetProjectConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartySetProjectConfigResponse](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

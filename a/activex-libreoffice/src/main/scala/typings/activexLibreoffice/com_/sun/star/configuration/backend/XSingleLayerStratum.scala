@@ -44,8 +44,7 @@ trait XSingleLayerStratum
 }
 object XSingleLayerStratum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getLayer: (String, String) => XLayer,
     getUpdatableLayer: String => XUpdatableLayer,
@@ -56,13 +55,10 @@ object XSingleLayerStratum {
     __obj.asInstanceOf[XSingleLayerStratum]
   }
   
-  @scala.inline
-  implicit class XSingleLayerStratumMutableBuilder[Self <: XSingleLayerStratum] (val x: Self) extends AnyVal {
+  extension [Self <: XSingleLayerStratum](x: Self) {
     
-    @scala.inline
-    def setGetLayer(value: (String, String) => XLayer): Self = StObject.set(x, "getLayer", js.Any.fromFunction2(value))
+    inline def setGetLayer(value: (String, String) => XLayer): Self = StObject.set(x, "getLayer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUpdatableLayer(value: String => XUpdatableLayer): Self = StObject.set(x, "getUpdatableLayer", js.Any.fromFunction1(value))
+    inline def setGetUpdatableLayer(value: String => XUpdatableLayer): Self = StObject.set(x, "getUpdatableLayer", js.Any.fromFunction1(value))
   }
 }

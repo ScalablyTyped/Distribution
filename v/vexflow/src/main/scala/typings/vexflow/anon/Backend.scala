@@ -20,8 +20,7 @@ trait Backend extends StObject {
 }
 object Backend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backend: Double,
     background: String,
     context: js.Any,
@@ -33,25 +32,18 @@ object Backend {
     __obj.asInstanceOf[Backend]
   }
   
-  @scala.inline
-  implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
+  extension [Self <: Backend](x: Self) {
     
-    @scala.inline
-    def setBackend(value: Double): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: Double): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+    inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

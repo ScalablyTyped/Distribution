@@ -53,62 +53,44 @@ object pagerSelectorsMod {
   }
   object PagerSelectors {
     
-    @scala.inline
-    def apply(): PagerSelectors = {
+    inline def apply(): PagerSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PagerSelectors]
     }
     
-    @scala.inline
-    implicit class PagerSelectorsMutableBuilder[Self <: PagerSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: PagerSelectors](x: Self) {
       
-      @scala.inline
-      def setContainer(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setFirst(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setGotoPage(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "gotoPage", value.asInstanceOf[js.Any])
+      inline def setGotoPage(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "gotoPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGotoPageUndefined: Self = StObject.set(x, "gotoPage", js.undefined)
+      inline def setGotoPageUndefined: Self = StObject.set(x, "gotoPage", js.undefined)
       
-      @scala.inline
-      def setLast(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
-      @scala.inline
-      def setNext(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPageDisplay(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "pageDisplay", value.asInstanceOf[js.Any])
+      inline def setPageDisplay(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "pageDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageDisplayUndefined: Self = StObject.set(x, "pageDisplay", js.undefined)
+      inline def setPageDisplayUndefined: Self = StObject.set(x, "pageDisplay", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPrev(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     }
   }
 }

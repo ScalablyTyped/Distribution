@@ -27,31 +27,23 @@ trait EventSeries extends StObject {
 }
 object EventSeries {
   
-  @scala.inline
-  def apply(): EventSeries = {
+  inline def apply(): EventSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventSeries]
   }
   
-  @scala.inline
-  implicit class EventSeriesMutableBuilder[Self <: EventSeries] (val x: Self) extends AnyVal {
+  extension [Self <: EventSeries](x: Self) {
     
-    @scala.inline
-    def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setLastObservedTime(value: Input[String]): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
+    inline def setLastObservedTime(value: Input[String]): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastObservedTimeUndefined: Self = StObject.set(x, "lastObservedTime", js.undefined)
+    inline def setLastObservedTimeUndefined: Self = StObject.set(x, "lastObservedTime", js.undefined)
     
-    @scala.inline
-    def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ trait InvocationTypeArgumentInferenceContext
 }
 object InvocationTypeArgumentInferenceContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _finalizeInferredTypeArguments: () => js.Array[PullTypeSymbol],
     addCandidateForInference: (PullTypeParameterSymbol, PullTypeSymbol) => Unit,
     addInferenceRoot: PullTypeParameterSymbol => Unit,
@@ -34,10 +33,8 @@ object InvocationTypeArgumentInferenceContext {
     __obj.asInstanceOf[InvocationTypeArgumentInferenceContext]
   }
   
-  @scala.inline
-  implicit class InvocationTypeArgumentInferenceContextMutableBuilder[Self <: InvocationTypeArgumentInferenceContext] (val x: Self) extends AnyVal {
+  extension [Self <: InvocationTypeArgumentInferenceContext](x: Self) {
     
-    @scala.inline
-    def setArgumentASTs(value: ISeparatedSyntaxList2): Self = StObject.set(x, "argumentASTs", value.asInstanceOf[js.Any])
+    inline def setArgumentASTs(value: ISeparatedSyntaxList2): Self = StObject.set(x, "argumentASTs", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait MuteChangeRequestedEventArgs extends StObject {
 }
 object MuteChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(mute: Boolean): MuteChangeRequestedEventArgs = {
+  inline def apply(mute: Boolean): MuteChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(mute = mute.asInstanceOf[js.Any])
     __obj.asInstanceOf[MuteChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class MuteChangeRequestedEventArgsMutableBuilder[Self <: MuteChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MuteChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+    inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Null] | Null]
-  @scala.inline
-  def apply(options: Options): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null] | Null]
+  inline def apply(): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Null] | Null]
+  inline def apply(options: Options): js.Promise[Null] | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null] | Null]
   
   @JSImport("canvas-confetti", JSImport.Namespace)
   @js.native
@@ -22,19 +20,15 @@ object mod {
   @JSImport("canvas-confetti", "Promise")
   @js.native
   def Promise: js.Any = js.native
-  @scala.inline
-  def Promise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+  inline def Promise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
   
   /**
     * This method creates an instance of the confetti function that uses a custom canvas.
     */
-  @scala.inline
-  def create(canvas: HTMLCanvasElement): CreateTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any]).asInstanceOf[CreateTypes]
-  @scala.inline
-  def create(canvas: HTMLCanvasElement, options: GlobalOptions): CreateTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateTypes]
+  inline def create(canvas: HTMLCanvasElement): CreateTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any]).asInstanceOf[CreateTypes]
+  inline def create(canvas: HTMLCanvasElement, options: GlobalOptions): CreateTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateTypes]
   
-  @scala.inline
-  def reset(): Reset_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Reset_]
+  inline def reset(): Reset_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Reset_]
   
   @js.native
   trait CreateTypes extends StObject {
@@ -63,26 +57,20 @@ object mod {
   }
   object GlobalOptions {
     
-    @scala.inline
-    def apply(): GlobalOptions = {
+    inline def apply(): GlobalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    @scala.inline
-    implicit class GlobalOptionsMutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalOptions](x: Self) {
       
-      @scala.inline
-      def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
+      inline def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWorkerUndefined: Self = StObject.set(x, "useWorker", js.undefined)
+      inline def setUseWorkerUndefined: Self = StObject.set(x, "useWorker", js.undefined)
     }
   }
   
@@ -166,98 +154,68 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
+      inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecayUndefined: Self = StObject.set(x, "decay", js.undefined)
+      inline def setDecayUndefined: Self = StObject.set(x, "decay", js.undefined)
       
-      @scala.inline
-      def setDisableForReducedMotion(value: Boolean): Self = StObject.set(x, "disableForReducedMotion", value.asInstanceOf[js.Any])
+      inline def setDisableForReducedMotion(value: Boolean): Self = StObject.set(x, "disableForReducedMotion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableForReducedMotionUndefined: Self = StObject.set(x, "disableForReducedMotion", js.undefined)
+      inline def setDisableForReducedMotionUndefined: Self = StObject.set(x, "disableForReducedMotion", js.undefined)
       
-      @scala.inline
-      def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+      inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: Origin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Origin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setParticleCount(value: Double): Self = StObject.set(x, "particleCount", value.asInstanceOf[js.Any])
+      inline def setParticleCount(value: Double): Self = StObject.set(x, "particleCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticleCountUndefined: Self = StObject.set(x, "particleCount", js.undefined)
+      inline def setParticleCountUndefined: Self = StObject.set(x, "particleCount", js.undefined)
       
-      @scala.inline
-      def setScalar(value: Double): Self = StObject.set(x, "scalar", value.asInstanceOf[js.Any])
+      inline def setScalar(value: Double): Self = StObject.set(x, "scalar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalarUndefined: Self = StObject.set(x, "scalar", js.undefined)
+      inline def setScalarUndefined: Self = StObject.set(x, "scalar", js.undefined)
       
-      @scala.inline
-      def setShapes(value: js.Array[shape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+      inline def setShapes(value: js.Array[shape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+      inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
       
-      @scala.inline
-      def setShapesVarargs(value: shape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+      inline def setShapesVarargs(value: shape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
       
-      @scala.inline
-      def setSpread(value: Double): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+      inline def setSpread(value: Double): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
+      inline def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
       
-      @scala.inline
-      def setStartVelocity(value: Double): Self = StObject.set(x, "startVelocity", value.asInstanceOf[js.Any])
+      inline def setStartVelocity(value: Double): Self = StObject.set(x, "startVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVelocityUndefined: Self = StObject.set(x, "startVelocity", js.undefined)
+      inline def setStartVelocityUndefined: Self = StObject.set(x, "startVelocity", js.undefined)
       
-      @scala.inline
-      def setTicks(value: Double): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+      inline def setTicks(value: Double): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+      inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -277,26 +235,20 @@ object mod {
   }
   object Origin {
     
-    @scala.inline
-    def apply(): Origin = {
+    inline def apply(): Origin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Origin]
     }
     
-    @scala.inline
-    implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+    extension [Self <: Origin](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -312,10 +264,8 @@ object mod {
   trait shape extends StObject
   object shape {
     
-    @scala.inline
-    def circle: typings.canvasConfetti.canvasConfettiStrings.circle = "circle".asInstanceOf[typings.canvasConfetti.canvasConfettiStrings.circle]
+    inline def circle: typings.canvasConfetti.canvasConfettiStrings.circle = "circle".asInstanceOf[typings.canvasConfetti.canvasConfettiStrings.circle]
     
-    @scala.inline
-    def square: typings.canvasConfetti.canvasConfettiStrings.square = "square".asInstanceOf[typings.canvasConfetti.canvasConfettiStrings.square]
+    inline def square: typings.canvasConfetti.canvasConfettiStrings.square = "square".asInstanceOf[typings.canvasConfetti.canvasConfettiStrings.square]
   }
 }

@@ -18,19 +18,15 @@ trait DomainDomainEndpointOptions extends StObject {
 }
 object DomainDomainEndpointOptions {
   
-  @scala.inline
-  def apply(enforceHttps: Boolean, tlsSecurityPolicy: String): DomainDomainEndpointOptions = {
+  inline def apply(enforceHttps: Boolean, tlsSecurityPolicy: String): DomainDomainEndpointOptions = {
     val __obj = js.Dynamic.literal(enforceHttps = enforceHttps.asInstanceOf[js.Any], tlsSecurityPolicy = tlsSecurityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDomainEndpointOptions]
   }
   
-  @scala.inline
-  implicit class DomainDomainEndpointOptionsMutableBuilder[Self <: DomainDomainEndpointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDomainEndpointOptions](x: Self) {
     
-    @scala.inline
-    def setEnforceHttps(value: Boolean): Self = StObject.set(x, "enforceHttps", value.asInstanceOf[js.Any])
+    inline def setEnforceHttps(value: Boolean): Self = StObject.set(x, "enforceHttps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsSecurityPolicy(value: String): Self = StObject.set(x, "tlsSecurityPolicy", value.asInstanceOf[js.Any])
+    inline def setTlsSecurityPolicy(value: String): Self = StObject.set(x, "tlsSecurityPolicy", value.asInstanceOf[js.Any])
   }
 }

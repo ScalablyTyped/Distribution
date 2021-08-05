@@ -48,7 +48,7 @@ object refreshclientMod {
     def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
     def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     
-    var fromStreamAsync: js.Any = js.native
+    /* private */ var fromStreamAsync: js.Any = js.native
   }
   
   trait UserRefreshClientOptions
@@ -63,32 +63,24 @@ object refreshclientMod {
   }
   object UserRefreshClientOptions {
     
-    @scala.inline
-    def apply(): UserRefreshClientOptions = {
+    inline def apply(): UserRefreshClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserRefreshClientOptions]
     }
     
-    @scala.inline
-    implicit class UserRefreshClientOptionsMutableBuilder[Self <: UserRefreshClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UserRefreshClientOptions](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+      inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+      inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     }
   }
 }

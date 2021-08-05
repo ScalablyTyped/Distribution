@@ -10,9 +10,7 @@ object bandwidthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nrd(arr: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nrd")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def nrd(arr: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nrd")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def silverman(arr: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("silverman")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def silverman(arr: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("silverman")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

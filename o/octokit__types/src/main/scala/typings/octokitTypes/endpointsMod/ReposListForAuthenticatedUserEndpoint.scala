@@ -59,55 +59,39 @@ trait ReposListForAuthenticatedUserEndpoint extends StObject {
 }
 object ReposListForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(): ReposListForAuthenticatedUserEndpoint = {
+  inline def apply(): ReposListForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReposListForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposListForAuthenticatedUserEndpointMutableBuilder[Self <: ReposListForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposListForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
+    inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
+    inline def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
     
-    @scala.inline
-    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setSort(value: created | updated | pushed | full_name): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: created | updated | pushed | full_name): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setType(value: all | owner | public | `private` | member): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: all | owner | public | `private` | member): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: all | public | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: all | public | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

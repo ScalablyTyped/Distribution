@@ -351,38 +351,28 @@ object inputMod {
   }
   object IDirection {
     
-    @scala.inline
-    def apply(): IDirection = {
+    inline def apply(): IDirection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDirection]
     }
     
-    @scala.inline
-    implicit class IDirectionMutableBuilder[Self <: IDirection] (val x: Self) extends AnyVal {
+    extension [Self <: IDirection](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: Origin | WebElement): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Origin | WebElement): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -529,8 +519,7 @@ object inputMod {
   }
   object IKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ADD: String,
       ALT: String,
       ARROW_DOWN: String,
@@ -597,191 +586,129 @@ object inputMod {
       __obj.asInstanceOf[IKey]
     }
     
-    @scala.inline
-    implicit class IKeyMutableBuilder[Self <: IKey] (val x: Self) extends AnyVal {
+    extension [Self <: IKey](x: Self) {
       
-      @scala.inline
-      def setADD(value: String): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
+      inline def setADD(value: String): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALT(value: String): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
+      inline def setALT(value: String): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARROW_DOWN(value: String): Self = StObject.set(x, "ARROW_DOWN", value.asInstanceOf[js.Any])
+      inline def setARROW_DOWN(value: String): Self = StObject.set(x, "ARROW_DOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARROW_LEFT(value: String): Self = StObject.set(x, "ARROW_LEFT", value.asInstanceOf[js.Any])
+      inline def setARROW_LEFT(value: String): Self = StObject.set(x, "ARROW_LEFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARROW_RIGHT(value: String): Self = StObject.set(x, "ARROW_RIGHT", value.asInstanceOf[js.Any])
+      inline def setARROW_RIGHT(value: String): Self = StObject.set(x, "ARROW_RIGHT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARROW_UP(value: String): Self = StObject.set(x, "ARROW_UP", value.asInstanceOf[js.Any])
+      inline def setARROW_UP(value: String): Self = StObject.set(x, "ARROW_UP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBACK_SPACE(value: String): Self = StObject.set(x, "BACK_SPACE", value.asInstanceOf[js.Any])
+      inline def setBACK_SPACE(value: String): Self = StObject.set(x, "BACK_SPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCANCEL(value: String): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
+      inline def setCANCEL(value: String): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLEAR(value: String): Self = StObject.set(x, "CLEAR", value.asInstanceOf[js.Any])
+      inline def setCLEAR(value: String): Self = StObject.set(x, "CLEAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOMMAND(value: String): Self = StObject.set(x, "COMMAND", value.asInstanceOf[js.Any])
+      inline def setCOMMAND(value: String): Self = StObject.set(x, "COMMAND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTROL(value: String): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
+      inline def setCONTROL(value: String): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChord(value: /* repeated */ String | IKey => String): Self = StObject.set(x, "chord", js.Any.fromFunction1(value))
+      inline def setChord(value: /* repeated */ String | IKey => String): Self = StObject.set(x, "chord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDECIMAL(value: String): Self = StObject.set(x, "DECIMAL", value.asInstanceOf[js.Any])
+      inline def setDECIMAL(value: String): Self = StObject.set(x, "DECIMAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+      inline def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDIVIDE(value: String): Self = StObject.set(x, "DIVIDE", value.asInstanceOf[js.Any])
+      inline def setDIVIDE(value: String): Self = StObject.set(x, "DIVIDE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
+      inline def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEND(value: String): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
+      inline def setEND(value: String): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENTER(value: String): Self = StObject.set(x, "ENTER", value.asInstanceOf[js.Any])
+      inline def setENTER(value: String): Self = StObject.set(x, "ENTER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEQUALS(value: String): Self = StObject.set(x, "EQUALS", value.asInstanceOf[js.Any])
+      inline def setEQUALS(value: String): Self = StObject.set(x, "EQUALS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setESCAPE(value: String): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
+      inline def setESCAPE(value: String): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF1(value: String): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
+      inline def setF1(value: String): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF10(value: String): Self = StObject.set(x, "F10", value.asInstanceOf[js.Any])
+      inline def setF10(value: String): Self = StObject.set(x, "F10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF11(value: String): Self = StObject.set(x, "F11", value.asInstanceOf[js.Any])
+      inline def setF11(value: String): Self = StObject.set(x, "F11", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF12(value: String): Self = StObject.set(x, "F12", value.asInstanceOf[js.Any])
+      inline def setF12(value: String): Self = StObject.set(x, "F12", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF2(value: String): Self = StObject.set(x, "F2", value.asInstanceOf[js.Any])
+      inline def setF2(value: String): Self = StObject.set(x, "F2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF3(value: String): Self = StObject.set(x, "F3", value.asInstanceOf[js.Any])
+      inline def setF3(value: String): Self = StObject.set(x, "F3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF4(value: String): Self = StObject.set(x, "F4", value.asInstanceOf[js.Any])
+      inline def setF4(value: String): Self = StObject.set(x, "F4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF5(value: String): Self = StObject.set(x, "F5", value.asInstanceOf[js.Any])
+      inline def setF5(value: String): Self = StObject.set(x, "F5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF6(value: String): Self = StObject.set(x, "F6", value.asInstanceOf[js.Any])
+      inline def setF6(value: String): Self = StObject.set(x, "F6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF7(value: String): Self = StObject.set(x, "F7", value.asInstanceOf[js.Any])
+      inline def setF7(value: String): Self = StObject.set(x, "F7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF8(value: String): Self = StObject.set(x, "F8", value.asInstanceOf[js.Any])
+      inline def setF8(value: String): Self = StObject.set(x, "F8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF9(value: String): Self = StObject.set(x, "F9", value.asInstanceOf[js.Any])
+      inline def setF9(value: String): Self = StObject.set(x, "F9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHELP(value: String): Self = StObject.set(x, "HELP", value.asInstanceOf[js.Any])
+      inline def setHELP(value: String): Self = StObject.set(x, "HELP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOME(value: String): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
+      inline def setHOME(value: String): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINSERT(value: String): Self = StObject.set(x, "INSERT", value.asInstanceOf[js.Any])
+      inline def setINSERT(value: String): Self = StObject.set(x, "INSERT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLEFT(value: String): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
+      inline def setLEFT(value: String): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMETA(value: String): Self = StObject.set(x, "META", value.asInstanceOf[js.Any])
+      inline def setMETA(value: String): Self = StObject.set(x, "META", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMULTIPLY(value: String): Self = StObject.set(x, "MULTIPLY", value.asInstanceOf[js.Any])
+      inline def setMULTIPLY(value: String): Self = StObject.set(x, "MULTIPLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNULL(value: String): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
+      inline def setNULL(value: String): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD0(value: String): Self = StObject.set(x, "NUMPAD0", value.asInstanceOf[js.Any])
+      inline def setNUMPAD0(value: String): Self = StObject.set(x, "NUMPAD0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD1(value: String): Self = StObject.set(x, "NUMPAD1", value.asInstanceOf[js.Any])
+      inline def setNUMPAD1(value: String): Self = StObject.set(x, "NUMPAD1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD2(value: String): Self = StObject.set(x, "NUMPAD2", value.asInstanceOf[js.Any])
+      inline def setNUMPAD2(value: String): Self = StObject.set(x, "NUMPAD2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD3(value: String): Self = StObject.set(x, "NUMPAD3", value.asInstanceOf[js.Any])
+      inline def setNUMPAD3(value: String): Self = StObject.set(x, "NUMPAD3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD4(value: String): Self = StObject.set(x, "NUMPAD4", value.asInstanceOf[js.Any])
+      inline def setNUMPAD4(value: String): Self = StObject.set(x, "NUMPAD4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD5(value: String): Self = StObject.set(x, "NUMPAD5", value.asInstanceOf[js.Any])
+      inline def setNUMPAD5(value: String): Self = StObject.set(x, "NUMPAD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD6(value: String): Self = StObject.set(x, "NUMPAD6", value.asInstanceOf[js.Any])
+      inline def setNUMPAD6(value: String): Self = StObject.set(x, "NUMPAD6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD7(value: String): Self = StObject.set(x, "NUMPAD7", value.asInstanceOf[js.Any])
+      inline def setNUMPAD7(value: String): Self = StObject.set(x, "NUMPAD7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD8(value: String): Self = StObject.set(x, "NUMPAD8", value.asInstanceOf[js.Any])
+      inline def setNUMPAD8(value: String): Self = StObject.set(x, "NUMPAD8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUMPAD9(value: String): Self = StObject.set(x, "NUMPAD9", value.asInstanceOf[js.Any])
+      inline def setNUMPAD9(value: String): Self = StObject.set(x, "NUMPAD9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAGE_DOWN(value: String): Self = StObject.set(x, "PAGE_DOWN", value.asInstanceOf[js.Any])
+      inline def setPAGE_DOWN(value: String): Self = StObject.set(x, "PAGE_DOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAGE_UP(value: String): Self = StObject.set(x, "PAGE_UP", value.asInstanceOf[js.Any])
+      inline def setPAGE_UP(value: String): Self = StObject.set(x, "PAGE_UP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAUSE(value: String): Self = StObject.set(x, "PAUSE", value.asInstanceOf[js.Any])
+      inline def setPAUSE(value: String): Self = StObject.set(x, "PAUSE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRETURN(value: String): Self = StObject.set(x, "RETURN", value.asInstanceOf[js.Any])
+      inline def setRETURN(value: String): Self = StObject.set(x, "RETURN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRIGHT(value: String): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
+      inline def setRIGHT(value: String): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEMICOLON(value: String): Self = StObject.set(x, "SEMICOLON", value.asInstanceOf[js.Any])
+      inline def setSEMICOLON(value: String): Self = StObject.set(x, "SEMICOLON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEPARATOR(value: String): Self = StObject.set(x, "SEPARATOR", value.asInstanceOf[js.Any])
+      inline def setSEPARATOR(value: String): Self = StObject.set(x, "SEPARATOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHIFT(value: String): Self = StObject.set(x, "SHIFT", value.asInstanceOf[js.Any])
+      inline def setSHIFT(value: String): Self = StObject.set(x, "SHIFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPACE(value: String): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
+      inline def setSPACE(value: String): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUBTRACT(value: String): Self = StObject.set(x, "SUBTRACT", value.asInstanceOf[js.Any])
+      inline def setSUBTRACT(value: String): Self = StObject.set(x, "SUBTRACT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTAB(value: String): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
+      inline def setTAB(value: String): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUP(value: String): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
+      inline def setUP(value: String): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
     }
   }
 }

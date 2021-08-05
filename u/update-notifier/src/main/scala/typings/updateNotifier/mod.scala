@@ -14,10 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /** Checks if there is an available update */
-  @scala.inline
-  def apply(): UpdateNotifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UpdateNotifier]
-  @scala.inline
-  def apply(settings: Settings): UpdateNotifier = ^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any]).asInstanceOf[UpdateNotifier]
+  inline def apply(): UpdateNotifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UpdateNotifier]
+  inline def apply(settings: Settings): UpdateNotifier = ^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any]).asInstanceOf[UpdateNotifier]
   
   @JSImport("update-notifier", JSImport.Namespace)
   @js.native
@@ -62,38 +60,28 @@ object mod {
   }
   object NotifyOptions {
     
-    @scala.inline
-    def apply(): NotifyOptions = {
+    inline def apply(): NotifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotifyOptions]
     }
     
-    @scala.inline
-    implicit class NotifyOptionsMutableBuilder[Self <: NotifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NotifyOptions](x: Self) {
       
-      @scala.inline
-      def setBoxenOptions(value: Options): Self = StObject.set(x, "boxenOptions", value.asInstanceOf[js.Any])
+      inline def setBoxenOptions(value: Options): Self = StObject.set(x, "boxenOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxenOptionsUndefined: Self = StObject.set(x, "boxenOptions", js.undefined)
+      inline def setBoxenOptionsUndefined: Self = StObject.set(x, "boxenOptions", js.undefined)
       
-      @scala.inline
-      def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
-      @scala.inline
-      def setIsGlobal(value: Boolean): Self = StObject.set(x, "isGlobal", value.asInstanceOf[js.Any])
+      inline def setIsGlobal(value: Boolean): Self = StObject.set(x, "isGlobal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGlobalUndefined: Self = StObject.set(x, "isGlobal", js.undefined)
+      inline def setIsGlobalUndefined: Self = StObject.set(x, "isGlobal", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -105,20 +93,16 @@ object mod {
   }
   object Package {
     
-    @scala.inline
-    def apply(name: String, version: String): Package = {
+    inline def apply(name: String, version: String): Package = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Package]
     }
     
-    @scala.inline
-    implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
+    extension [Self <: Package](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,50 +134,36 @@ object mod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setDistTag(value: String): Self = StObject.set(x, "distTag", value.asInstanceOf[js.Any])
+      inline def setDistTag(value: String): Self = StObject.set(x, "distTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistTagUndefined: Self = StObject.set(x, "distTag", js.undefined)
+      inline def setDistTagUndefined: Self = StObject.set(x, "distTag", js.undefined)
       
-      @scala.inline
-      def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+      inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+      inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
       
-      @scala.inline
-      def setPackageVersion(value: String): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
+      inline def setPackageVersion(value: String): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageVersionUndefined: Self = StObject.set(x, "packageVersion", js.undefined)
+      inline def setPackageVersionUndefined: Self = StObject.set(x, "packageVersion", js.undefined)
       
-      @scala.inline
-      def setPkg(value: Package): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: Package): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+      inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
       
-      @scala.inline
-      def setShouldNotifyInNpmScript(value: Boolean): Self = StObject.set(x, "shouldNotifyInNpmScript", value.asInstanceOf[js.Any])
+      inline def setShouldNotifyInNpmScript(value: Boolean): Self = StObject.set(x, "shouldNotifyInNpmScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldNotifyInNpmScriptUndefined: Self = StObject.set(x, "shouldNotifyInNpmScript", js.undefined)
+      inline def setShouldNotifyInNpmScriptUndefined: Self = StObject.set(x, "shouldNotifyInNpmScript", js.undefined)
       
-      @scala.inline
-      def setUpdateCheckInterval(value: Double): Self = StObject.set(x, "updateCheckInterval", value.asInstanceOf[js.Any])
+      inline def setUpdateCheckInterval(value: Double): Self = StObject.set(x, "updateCheckInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateCheckIntervalUndefined: Self = StObject.set(x, "updateCheckInterval", js.undefined)
+      inline def setUpdateCheckIntervalUndefined: Self = StObject.set(x, "updateCheckInterval", js.undefined)
     }
   }
   
@@ -213,8 +183,7 @@ object mod {
   }
   object UpdateInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: String,
       latest: String,
       name: String,
@@ -225,20 +194,15 @@ object mod {
       __obj.asInstanceOf[UpdateInfo]
     }
     
-    @scala.inline
-    implicit class UpdateInfoMutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateInfo](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+      inline def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: latest | major | minor | patch | prerelease | build): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: latest | major | minor | patch | prerelease | build): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

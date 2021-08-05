@@ -14,22 +14,17 @@ trait Folder extends StObject {
 }
 object Folder {
   
-  @scala.inline
-  def apply(folder: scala.Double, invalid: scala.Double, ref: scala.Double): Folder = {
+  inline def apply(folder: scala.Double, invalid: scala.Double, ref: scala.Double): Folder = {
     val __obj = js.Dynamic.literal(folder = folder.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Folder]
   }
   
-  @scala.inline
-  implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+  extension [Self <: Folder](x: Self) {
     
-    @scala.inline
-    def setFolder(value: scala.Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: scala.Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalid(value: scala.Double): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: scala.Double): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: scala.Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: scala.Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait EventsResetMultipleForAllRequest extends StObject {
 }
 object EventsResetMultipleForAllRequest {
   
-  @scala.inline
-  def apply(): EventsResetMultipleForAllRequest = {
+  inline def apply(): EventsResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventsResetMultipleForAllRequest]
   }
   
-  @scala.inline
-  implicit class EventsResetMultipleForAllRequestMutableBuilder[Self <: EventsResetMultipleForAllRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EventsResetMultipleForAllRequest](x: Self) {
     
-    @scala.inline
-    def setEvent_ids(value: js.Array[String]): Self = StObject.set(x, "event_ids", value.asInstanceOf[js.Any])
+    inline def setEvent_ids(value: js.Array[String]): Self = StObject.set(x, "event_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_idsUndefined: Self = StObject.set(x, "event_ids", js.undefined)
+    inline def setEvent_idsUndefined: Self = StObject.set(x, "event_ids", js.undefined)
     
-    @scala.inline
-    def setEvent_idsVarargs(value: String*): Self = StObject.set(x, "event_ids", js.Array(value :_*))
+    inline def setEvent_idsVarargs(value: String*): Self = StObject.set(x, "event_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

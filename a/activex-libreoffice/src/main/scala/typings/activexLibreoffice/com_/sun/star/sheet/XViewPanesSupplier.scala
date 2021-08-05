@@ -23,8 +23,7 @@ trait XViewPanesSupplier
 }
 object XViewPanesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ViewPanes: XIndexAccess,
     acquire: () => Unit,
     getViewPanes: () => XIndexAccess,
@@ -35,13 +34,10 @@ object XViewPanesSupplier {
     __obj.asInstanceOf[XViewPanesSupplier]
   }
   
-  @scala.inline
-  implicit class XViewPanesSupplierMutableBuilder[Self <: XViewPanesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XViewPanesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetViewPanes(value: () => XIndexAccess): Self = StObject.set(x, "getViewPanes", js.Any.fromFunction0(value))
+    inline def setGetViewPanes(value: () => XIndexAccess): Self = StObject.set(x, "getViewPanes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setViewPanes(value: XIndexAccess): Self = StObject.set(x, "ViewPanes", value.asInstanceOf[js.Any])
+    inline def setViewPanes(value: XIndexAccess): Self = StObject.set(x, "ViewPanes", value.asInstanceOf[js.Any])
   }
 }

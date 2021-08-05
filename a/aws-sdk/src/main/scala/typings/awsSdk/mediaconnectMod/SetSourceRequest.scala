@@ -63,79 +63,55 @@ trait SetSourceRequest extends StObject {
 }
 object SetSourceRequest {
   
-  @scala.inline
-  def apply(): SetSourceRequest = {
+  inline def apply(): SetSourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetSourceRequest]
   }
   
-  @scala.inline
-  implicit class SetSourceRequestMutableBuilder[Self <: SetSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetSourceRequest](x: Self) {
     
-    @scala.inline
-    def setDecryption(value: Encryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
+    inline def setDecryption(value: Encryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecryptionUndefined: Self = StObject.set(x, "Decryption", js.undefined)
+    inline def setDecryptionUndefined: Self = StObject.set(x, "Decryption", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
+    inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
+    inline def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
     
-    @scala.inline
-    def setIngestPort(value: integer): Self = StObject.set(x, "IngestPort", value.asInstanceOf[js.Any])
+    inline def setIngestPort(value: integer): Self = StObject.set(x, "IngestPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestPortUndefined: Self = StObject.set(x, "IngestPort", js.undefined)
+    inline def setIngestPortUndefined: Self = StObject.set(x, "IngestPort", js.undefined)
     
-    @scala.inline
-    def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
+    inline def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
-    @scala.inline
-    def setMaxLatency(value: integer): Self = StObject.set(x, "MaxLatency", value.asInstanceOf[js.Any])
+    inline def setMaxLatency(value: integer): Self = StObject.set(x, "MaxLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLatencyUndefined: Self = StObject.set(x, "MaxLatency", js.undefined)
+    inline def setMaxLatencyUndefined: Self = StObject.set(x, "MaxLatency", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
     
-    @scala.inline
-    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
+    inline def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
+    inline def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
     
-    @scala.inline
-    def setWhitelistCidr(value: string): Self = StObject.set(x, "WhitelistCidr", value.asInstanceOf[js.Any])
+    inline def setWhitelistCidr(value: string): Self = StObject.set(x, "WhitelistCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistCidrUndefined: Self = StObject.set(x, "WhitelistCidr", js.undefined)
+    inline def setWhitelistCidrUndefined: Self = StObject.set(x, "WhitelistCidr", js.undefined)
   }
 }

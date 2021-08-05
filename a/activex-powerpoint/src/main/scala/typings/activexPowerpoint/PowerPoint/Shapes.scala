@@ -346,7 +346,7 @@ trait Shapes extends StObject {
   
   val Placeholders: typings.activexPowerpoint.PowerPoint.Placeholders = js.native
   
-  @JSName("PowerPoint.Shapes_typekey")
+  /* private */ @JSName("PowerPoint.Shapes_typekey")
   var PowerPointDotShapes_typekey: Shapes = js.native
   
   def Range(): ShapeRange = js.native

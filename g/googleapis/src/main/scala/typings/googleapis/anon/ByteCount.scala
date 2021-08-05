@@ -12,25 +12,19 @@ trait ByteCount extends StObject {
 }
 object ByteCount {
   
-  @scala.inline
-  def apply(): ByteCount = {
+  inline def apply(): ByteCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ByteCount]
   }
   
-  @scala.inline
-  implicit class ByteCountMutableBuilder[Self <: ByteCount] (val x: Self) extends AnyVal {
+  extension [Self <: ByteCount](x: Self) {
     
-    @scala.inline
-    def setByteCount(value: String): Self = StObject.set(x, "byteCount", value.asInstanceOf[js.Any])
+    inline def setByteCount(value: String): Self = StObject.set(x, "byteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteCountUndefined: Self = StObject.set(x, "byteCount", js.undefined)
+    inline def setByteCountUndefined: Self = StObject.set(x, "byteCount", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

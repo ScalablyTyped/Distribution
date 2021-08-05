@@ -109,8 +109,7 @@ trait Light extends StObject {
 }
 object Light {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     b: Double,
     g: Double,
     intensity: Double,
@@ -131,52 +130,36 @@ object Light {
     __obj.asInstanceOf[Light]
   }
   
-  @scala.inline
-  implicit class LightMutableBuilder[Self <: Light] (val x: Self) extends AnyVal {
+  extension [Self <: Light](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
+    inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollFactorX(value: Double): Self = StObject.set(x, "scrollFactorX", value.asInstanceOf[js.Any])
+    inline def setScrollFactorX(value: Double): Self = StObject.set(x, "scrollFactorX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollFactorY(value: Double): Self = StObject.set(x, "scrollFactorY", value.asInstanceOf[js.Any])
+    inline def setScrollFactorY(value: Double): Self = StObject.set(x, "scrollFactorY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: (Double, Double, Double, Double, Double, Double, Double) => Light): Self = StObject.set(x, "set", js.Any.fromFunction7(value))
+    inline def setSet(value: (Double, Double, Double, Double, Double, Double, Double) => Light): Self = StObject.set(x, "set", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setSetColor(value: Double => Light): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: Double => Light): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIntensity(value: Double => Light): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
+    inline def setSetIntensity(value: Double => Light): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosition(value: (Double, Double) => Light): Self = StObject.set(x, "setPosition", js.Any.fromFunction2(value))
+    inline def setSetPosition(value: (Double, Double) => Light): Self = StObject.set(x, "setPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetRadius(value: Double => Light): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
+    inline def setSetRadius(value: Double => Light): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScrollFactor(value: (Double, Double) => Light): Self = StObject.set(x, "setScrollFactor", js.Any.fromFunction2(value))
+    inline def setSetScrollFactor(value: (Double, Double) => Light): Self = StObject.set(x, "setScrollFactor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

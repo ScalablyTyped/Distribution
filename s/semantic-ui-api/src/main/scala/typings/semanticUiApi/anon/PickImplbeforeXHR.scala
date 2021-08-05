@@ -14,16 +14,13 @@ trait PickImplbeforeXHR extends StObject {
 }
 object PickImplbeforeXHR {
   
-  @scala.inline
-  def apply(beforeXHR: /* xhrObject */ jqXHR[js.Any] => js.Any): PickImplbeforeXHR = {
+  inline def apply(beforeXHR: /* xhrObject */ jqXHR[js.Any] => js.Any): PickImplbeforeXHR = {
     val __obj = js.Dynamic.literal(beforeXHR = js.Any.fromFunction1(beforeXHR))
     __obj.asInstanceOf[PickImplbeforeXHR]
   }
   
-  @scala.inline
-  implicit class PickImplbeforeXHRMutableBuilder[Self <: PickImplbeforeXHR] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplbeforeXHR](x: Self) {
     
-    @scala.inline
-    def setBeforeXHR(value: /* xhrObject */ jqXHR[js.Any] => js.Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
+    inline def setBeforeXHR(value: /* xhrObject */ jqXHR[js.Any] => js.Any): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
   }
 }

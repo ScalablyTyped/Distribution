@@ -11,19 +11,15 @@ trait RoadInfo extends StObject {
 }
 object RoadInfo {
   
-  @scala.inline
-  def apply(): RoadInfo = {
+  inline def apply(): RoadInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoadInfo]
   }
   
-  @scala.inline
-  implicit class RoadInfoMutableBuilder[Self <: RoadInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RoadInfo](x: Self) {
     
-    @scala.inline
-    def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+    inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
+    inline def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
   }
 }

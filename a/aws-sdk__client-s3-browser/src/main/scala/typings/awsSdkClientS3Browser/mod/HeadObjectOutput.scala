@@ -10,8 +10,7 @@ trait HeadObjectOutput
      with typings.awsSdkClientS3Browser.typesHeadObjectOutputMod.HeadObjectOutput
 object HeadObjectOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): HeadObjectOutput = {
+  inline def apply($metadata: ResponseMetadata): HeadObjectOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadObjectOutput]
   }

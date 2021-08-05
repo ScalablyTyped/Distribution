@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnCanNotWriteReason extends StObject
 object OnCanNotWriteReason {
   
-  @scala.inline
-  def cant_write: typings.vkOpenapi.vkOpenapiStrings.cant_write = "cant_write".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.cant_write]
+  inline def cant_write: typings.vkOpenapi.vkOpenapiStrings.cant_write = "cant_write".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.cant_write]
   
-  @scala.inline
-  def disabled_messages: typings.vkOpenapi.vkOpenapiStrings.disabled_messages = "disabled_messages".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.disabled_messages]
+  inline def disabled_messages: typings.vkOpenapi.vkOpenapiStrings.disabled_messages = "disabled_messages".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.disabled_messages]
   
-  @scala.inline
-  def no_access: typings.vkOpenapi.vkOpenapiStrings.no_access = "no_access".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.no_access]
+  inline def no_access: typings.vkOpenapi.vkOpenapiStrings.no_access = "no_access".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.no_access]
   
-  @scala.inline
-  def offline: typings.vkOpenapi.vkOpenapiStrings.offline = "offline".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.offline]
+  inline def offline: typings.vkOpenapi.vkOpenapiStrings.offline = "offline".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.offline]
 }

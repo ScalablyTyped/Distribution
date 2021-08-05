@@ -18,22 +18,17 @@ trait DeleteDiskRequest extends StObject {
 }
 object DeleteDiskRequest {
   
-  @scala.inline
-  def apply(diskName: ResourceName): DeleteDiskRequest = {
+  inline def apply(diskName: ResourceName): DeleteDiskRequest = {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDiskRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDiskRequestMutableBuilder[Self <: DeleteDiskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDiskRequest](x: Self) {
     
-    @scala.inline
-    def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteAddOns(value: Boolean): Self = StObject.set(x, "forceDeleteAddOns", value.asInstanceOf[js.Any])
+    inline def setForceDeleteAddOns(value: Boolean): Self = StObject.set(x, "forceDeleteAddOns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteAddOnsUndefined: Self = StObject.set(x, "forceDeleteAddOns", js.undefined)
+    inline def setForceDeleteAddOnsUndefined: Self = StObject.set(x, "forceDeleteAddOns", js.undefined)
   }
 }

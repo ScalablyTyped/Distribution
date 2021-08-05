@@ -9,8 +9,7 @@ trait IKeytipLayerState
      with typings.officeUiFabricReact.keytipLayerBaseMod.IKeytipLayerState
 object IKeytipLayerState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inKeytipMode: Boolean,
     keytips: js.Array[typings.officeUiFabricReact.keytipTypesMod.IKeytipProps],
     visibleKeytips: js.Array[typings.officeUiFabricReact.keytipTypesMod.IKeytipProps]

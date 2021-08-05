@@ -17,8 +17,7 @@ trait MobileAppUrls
 }
 object MobileAppUrls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearMobileFinalUrl: () => Unit,
     clearTrackingTemplate: () => Unit,
     getCustomParameters: () => js.Object,
@@ -34,13 +33,10 @@ object MobileAppUrls {
     __obj.asInstanceOf[MobileAppUrls]
   }
   
-  @scala.inline
-  implicit class MobileAppUrlsMutableBuilder[Self <: MobileAppUrls] (val x: Self) extends AnyVal {
+  extension [Self <: MobileAppUrls](x: Self) {
     
-    @scala.inline
-    def setClearMobileFinalUrl(value: () => Unit): Self = StObject.set(x, "clearMobileFinalUrl", js.Any.fromFunction0(value))
+    inline def setClearMobileFinalUrl(value: () => Unit): Self = StObject.set(x, "clearMobileFinalUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
+    inline def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
   }
 }

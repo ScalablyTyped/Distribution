@@ -12,13 +12,9 @@ object serializationUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertPythonicToTs(pythonicConfig: PyJsonValue): ConfigDictValue = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPythonicToTs")(pythonicConfig.asInstanceOf[js.Any]).asInstanceOf[ConfigDictValue]
-  @scala.inline
-  def convertPythonicToTs(pythonicConfig: PyJsonValue, key: String): ConfigDictValue = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPythonicToTs")(pythonicConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ConfigDictValue]
+  inline def convertPythonicToTs(pythonicConfig: PyJsonValue): ConfigDictValue = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPythonicToTs")(pythonicConfig.asInstanceOf[js.Any]).asInstanceOf[ConfigDictValue]
+  inline def convertPythonicToTs(pythonicConfig: PyJsonValue, key: String): ConfigDictValue = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPythonicToTs")(pythonicConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ConfigDictValue]
   
-  @scala.inline
-  def convertTsToPythonic(tsConfig: ConfigDictValue): PyJsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTsToPythonic")(tsConfig.asInstanceOf[js.Any]).asInstanceOf[PyJsonValue]
-  @scala.inline
-  def convertTsToPythonic(tsConfig: ConfigDictValue, key: String): PyJsonValue = (^.asInstanceOf[js.Dynamic].applyDynamic("convertTsToPythonic")(tsConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[PyJsonValue]
+  inline def convertTsToPythonic(tsConfig: ConfigDictValue): PyJsonValue = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTsToPythonic")(tsConfig.asInstanceOf[js.Any]).asInstanceOf[PyJsonValue]
+  inline def convertTsToPythonic(tsConfig: ConfigDictValue, key: String): PyJsonValue = (^.asInstanceOf[js.Dynamic].applyDynamic("convertTsToPythonic")(tsConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[PyJsonValue]
 }

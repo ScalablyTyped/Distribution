@@ -10,8 +10,7 @@ object useSetIntervalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useSetInterval(): UseSetIntervalReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetInterval")().asInstanceOf[UseSetIntervalReturnType]
+  inline def useSetInterval(): UseSetIntervalReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetInterval")().asInstanceOf[UseSetIntervalReturnType]
   
   trait UseSetIntervalReturnType extends StObject {
     
@@ -21,20 +20,16 @@ object useSetIntervalMod {
   }
   object UseSetIntervalReturnType {
     
-    @scala.inline
-    def apply(clearInterval: Double => Unit, setInterval: (js.Function0[Unit], Double) => Double): UseSetIntervalReturnType = {
+    inline def apply(clearInterval: Double => Unit, setInterval: (js.Function0[Unit], Double) => Double): UseSetIntervalReturnType = {
       val __obj = js.Dynamic.literal(clearInterval = js.Any.fromFunction1(clearInterval), setInterval = js.Any.fromFunction2(setInterval))
       __obj.asInstanceOf[UseSetIntervalReturnType]
     }
     
-    @scala.inline
-    implicit class UseSetIntervalReturnTypeMutableBuilder[Self <: UseSetIntervalReturnType] (val x: Self) extends AnyVal {
+    extension [Self <: UseSetIntervalReturnType](x: Self) {
       
-      @scala.inline
-      def setClearInterval(value: Double => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
+      inline def setClearInterval(value: Double => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetInterval(value: (js.Function0[Unit], Double) => Double): Self = StObject.set(x, "setInterval", js.Any.fromFunction2(value))
+      inline def setSetInterval(value: (js.Function0[Unit], Double) => Double): Self = StObject.set(x, "setInterval", js.Any.fromFunction2(value))
     }
   }
 }

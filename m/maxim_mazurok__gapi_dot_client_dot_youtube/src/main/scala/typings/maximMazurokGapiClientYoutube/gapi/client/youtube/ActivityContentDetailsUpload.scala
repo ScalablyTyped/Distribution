@@ -11,19 +11,15 @@ trait ActivityContentDetailsUpload extends StObject {
 }
 object ActivityContentDetailsUpload {
   
-  @scala.inline
-  def apply(): ActivityContentDetailsUpload = {
+  inline def apply(): ActivityContentDetailsUpload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetailsUpload]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsUploadMutableBuilder[Self <: ActivityContentDetailsUpload] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetailsUpload](x: Self) {
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

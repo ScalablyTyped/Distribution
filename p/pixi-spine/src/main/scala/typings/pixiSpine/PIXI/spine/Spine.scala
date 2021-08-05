@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container * / any */ @js.native
 trait Spine extends StObject {
   
-  var _autoUpdate: js.Any = js.native
+  /* private */ var _autoUpdate: js.Any = js.native
   
-  var _visible: js.Any = js.native
+  /* private */ var _visible: js.Any = js.native
   
   def autoUpdate: Boolean = js.native
   
@@ -82,7 +82,7 @@ trait Spine extends StObject {
     size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
   ): Boolean = js.native
   
-  var lastTime: Double = js.native
+  /* protected */ var lastTime: Double = js.native
   
   var localDelayLimit: Double = js.native
   
@@ -192,9 +192,9 @@ trait Spine extends StObject {
     tex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): SpineSprite = js.native
   
-  var setMeshRegion: js.Any = js.native
+  /* private */ var setMeshRegion: js.Any = js.native
   
-  var setSpriteRegion: js.Any = js.native
+  /* private */ var setSpriteRegion: js.Any = js.native
   
   var skeleton: Skeleton = js.native
   

@@ -33,28 +33,20 @@ object ObjectOrientedBoundingBox {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(box: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
-  @scala.inline
-  def clone_(box: ObjectOrientedBoundingBox, result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
+  inline def clone_(box: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
+  inline def clone_(box: ObjectOrientedBoundingBox, result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(box.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
   
   /* static member */
-  @scala.inline
-  def equals_(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def fromBoundingRectangle(boundingRectangle: BoundingRectangle): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingRectangle")(boundingRectangle.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
-  @scala.inline
-  def fromBoundingRectangle(boundingRectangle: BoundingRectangle, rotation: Double): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingRectangle")(boundingRectangle.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
+  inline def fromBoundingRectangle(boundingRectangle: BoundingRectangle): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingRectangle")(boundingRectangle.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
+  inline def fromBoundingRectangle(boundingRectangle: BoundingRectangle, rotation: Double): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingRectangle")(boundingRectangle.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
   
   /* static member */
-  @scala.inline
-  def fromPoints(positions: js.Array[Cartesian3]): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
-  @scala.inline
-  def fromPoints(positions: js.Array[Cartesian3], result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
+  inline def fromPoints(positions: js.Array[Cartesian3]): ObjectOrientedBoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any]).asInstanceOf[ObjectOrientedBoundingBox]
+  inline def fromPoints(positions: js.Array[Cartesian3], result: ObjectOrientedBoundingBox): ObjectOrientedBoundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[ObjectOrientedBoundingBox]
   
   /* static member */
-  @scala.inline
-  def intersect(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def intersect(left: ObjectOrientedBoundingBox, right: ObjectOrientedBoundingBox): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

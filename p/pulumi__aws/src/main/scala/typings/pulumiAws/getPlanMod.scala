@@ -12,10 +12,8 @@ object getPlanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPlan(args: GetPlanArgs): js.Promise[GetPlanResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlan")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPlanResult]]
-  @scala.inline
-  def getPlan(args: GetPlanArgs, opts: InvokeOptions): js.Promise[GetPlanResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlan")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPlanResult]]
+  inline def getPlan(args: GetPlanArgs): js.Promise[GetPlanResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlan")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPlanResult]]
+  inline def getPlan(args: GetPlanArgs, opts: InvokeOptions): js.Promise[GetPlanResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlan")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPlanResult]]
   
   trait GetPlanArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getPlanMod {
   }
   object GetPlanArgs {
     
-    @scala.inline
-    def apply(planId: String): GetPlanArgs = {
+    inline def apply(planId: String): GetPlanArgs = {
       val __obj = js.Dynamic.literal(planId = planId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPlanArgs]
     }
     
-    @scala.inline
-    implicit class GetPlanArgsMutableBuilder[Self <: GetPlanArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetPlanArgs](x: Self) {
       
-      @scala.inline
-      def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+      inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -82,8 +75,7 @@ object getPlanMod {
   }
   object GetPlanResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       id: String,
       name: String,
@@ -95,26 +87,19 @@ object getPlanMod {
       __obj.asInstanceOf[GetPlanResult]
     }
     
-    @scala.inline
-    implicit class GetPlanResultMutableBuilder[Self <: GetPlanResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPlanResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+      inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,28 +14,21 @@ trait SortRangeRequest extends StObject {
 }
 object SortRangeRequest {
   
-  @scala.inline
-  def apply(): SortRangeRequest = {
+  inline def apply(): SortRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SortRangeRequest]
   }
   
-  @scala.inline
-  implicit class SortRangeRequestMutableBuilder[Self <: SortRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SortRangeRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSortSpecs(value: js.Array[SortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
+    inline def setSortSpecs(value: js.Array[SortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
+    inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    @scala.inline
-    def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
   }
 }

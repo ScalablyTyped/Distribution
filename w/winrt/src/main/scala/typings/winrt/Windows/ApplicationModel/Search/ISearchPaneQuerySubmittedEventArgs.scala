@@ -12,19 +12,15 @@ trait ISearchPaneQuerySubmittedEventArgs extends StObject {
 }
 object ISearchPaneQuerySubmittedEventArgs {
   
-  @scala.inline
-  def apply(language: String, queryText: String): ISearchPaneQuerySubmittedEventArgs = {
+  inline def apply(language: String, queryText: String): ISearchPaneQuerySubmittedEventArgs = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchPaneQuerySubmittedEventArgs]
   }
   
-  @scala.inline
-  implicit class ISearchPaneQuerySubmittedEventArgsMutableBuilder[Self <: ISearchPaneQuerySubmittedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchPaneQuerySubmittedEventArgs](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+    inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
   }
 }

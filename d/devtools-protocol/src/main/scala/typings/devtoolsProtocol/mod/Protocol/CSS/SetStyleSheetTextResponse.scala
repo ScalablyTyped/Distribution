@@ -13,19 +13,15 @@ trait SetStyleSheetTextResponse extends StObject {
 }
 object SetStyleSheetTextResponse {
   
-  @scala.inline
-  def apply(): SetStyleSheetTextResponse = {
+  inline def apply(): SetStyleSheetTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetStyleSheetTextResponse]
   }
   
-  @scala.inline
-  implicit class SetStyleSheetTextResponseMutableBuilder[Self <: SetStyleSheetTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetStyleSheetTextResponse](x: Self) {
     
-    @scala.inline
-    def setSourceMapURL(value: String): Self = StObject.set(x, "sourceMapURL", value.asInstanceOf[js.Any])
+    inline def setSourceMapURL(value: String): Self = StObject.set(x, "sourceMapURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapURLUndefined: Self = StObject.set(x, "sourceMapURL", js.undefined)
+    inline def setSourceMapURLUndefined: Self = StObject.set(x, "sourceMapURL", js.undefined)
   }
 }

@@ -87,79 +87,55 @@ trait VictoryDatableProps extends StObject {
 }
 object VictoryDatableProps {
   
-  @scala.inline
-  def apply(): VictoryDatableProps = {
+  inline def apply(): VictoryDatableProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryDatableProps]
   }
   
-  @scala.inline
-  implicit class VictoryDatablePropsMutableBuilder[Self <: VictoryDatableProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryDatableProps](x: Self) {
     
-    @scala.inline
-    def setCategories(value: CategoryPropType): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: CategoryPropType): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])
+    inline def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataComponentUndefined: Self = StObject.set(x, "dataComponent", js.undefined)
+    inline def setDataComponentUndefined: Self = StObject.set(x, "dataComponent", js.undefined)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: DomainPropType): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainPropType): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setX(value: DataGetterPropType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: DataGetterPropType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
+    inline def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
     
-    @scala.inline
-    def setY(value: DataGetterPropType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: DataGetterPropType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY0(value: DataGetterPropType): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+    inline def setY0(value: DataGetterPropType): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY0Function1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y0", js.Any.fromFunction1(value))
+    inline def setY0Function1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y0", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+    inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
     
-    @scala.inline
-    def setY0Varargs(value: String*): Self = StObject.set(x, "y0", js.Array(value :_*))
+    inline def setY0Varargs(value: String*): Self = StObject.set(x, "y0", js.Array(value :_*))
     
-    @scala.inline
-    def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
+    inline def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

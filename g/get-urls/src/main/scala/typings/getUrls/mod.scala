@@ -19,10 +19,8 @@ object mod {
   //=> Set {'http://sindresorhus.com', 'http://yeoman.io'}
   ```
   */
-  @scala.inline
-  def apply(text: String): Set[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Set[String]]
-  @scala.inline
-  def apply(text: String, options: Options): Set[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Set[String]]
+  inline def apply(text: String): Set[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Set[String]]
+  inline def apply(text: String, options: Options): Set[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Set[String]]
   
   @JSImport("get-urls", JSImport.Namespace)
   @js.native
@@ -53,35 +51,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setExtractFromQueryString(value: Boolean): Self = StObject.set(x, "extractFromQueryString", value.asInstanceOf[js.Any])
+      inline def setExtractFromQueryString(value: Boolean): Self = StObject.set(x, "extractFromQueryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractFromQueryStringUndefined: Self = StObject.set(x, "extractFromQueryString", js.undefined)
+      inline def setExtractFromQueryStringUndefined: Self = StObject.set(x, "extractFromQueryString", js.undefined)
       
-      @scala.inline
-      def setRequireSchemeOrWww(value: Boolean): Self = StObject.set(x, "requireSchemeOrWww", value.asInstanceOf[js.Any])
+      inline def setRequireSchemeOrWww(value: Boolean): Self = StObject.set(x, "requireSchemeOrWww", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireSchemeOrWwwUndefined: Self = StObject.set(x, "requireSchemeOrWww", js.undefined)
+      inline def setRequireSchemeOrWwwUndefined: Self = StObject.set(x, "requireSchemeOrWww", js.undefined)
     }
   }
 }

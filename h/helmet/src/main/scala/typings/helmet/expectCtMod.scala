@@ -13,8 +13,7 @@ object expectCtMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function3[
+  inline def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -25,8 +24,7 @@ object expectCtMod {
     /* next */ js.Function0[Unit], 
     Unit
   ]]
-  @scala.inline
-  def default(options: ReadonlyExpectCtOptions): js.Function3[
+  inline def default(options: ReadonlyExpectCtOptions): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -48,32 +46,24 @@ object expectCtMod {
   }
   object ExpectCtOptions {
     
-    @scala.inline
-    def apply(): ExpectCtOptions = {
+    inline def apply(): ExpectCtOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpectCtOptions]
     }
     
-    @scala.inline
-    implicit class ExpectCtOptionsMutableBuilder[Self <: ExpectCtOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectCtOptions](x: Self) {
       
-      @scala.inline
-      def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
+      inline def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
+      inline def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
+      inline def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
+      inline def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
     }
   }
 }

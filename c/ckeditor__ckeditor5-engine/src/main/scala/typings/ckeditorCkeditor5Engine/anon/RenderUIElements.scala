@@ -20,49 +20,35 @@ trait RenderUIElements extends StObject {
 }
 object RenderUIElements {
   
-  @scala.inline
-  def apply(): RenderUIElements = {
+  inline def apply(): RenderUIElements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderUIElements]
   }
   
-  @scala.inline
-  implicit class RenderUIElementsMutableBuilder[Self <: RenderUIElements] (val x: Self) extends AnyVal {
+  extension [Self <: RenderUIElements](x: Self) {
     
-    @scala.inline
-    def setRenderUIElements(value: Boolean): Self = StObject.set(x, "renderUIElements", value.asInstanceOf[js.Any])
+    inline def setRenderUIElements(value: Boolean): Self = StObject.set(x, "renderUIElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUIElementsUndefined: Self = StObject.set(x, "renderUIElements", js.undefined)
+    inline def setRenderUIElementsUndefined: Self = StObject.set(x, "renderUIElements", js.undefined)
     
-    @scala.inline
-    def setRootName(value: Boolean): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
+    inline def setRootName(value: Boolean): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
+    inline def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
     
-    @scala.inline
-    def setShowAttributeElementId(value: Boolean): Self = StObject.set(x, "showAttributeElementId", value.asInstanceOf[js.Any])
+    inline def setShowAttributeElementId(value: Boolean): Self = StObject.set(x, "showAttributeElementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAttributeElementIdUndefined: Self = StObject.set(x, "showAttributeElementId", js.undefined)
+    inline def setShowAttributeElementIdUndefined: Self = StObject.set(x, "showAttributeElementId", js.undefined)
     
-    @scala.inline
-    def setShowPriority(value: Boolean): Self = StObject.set(x, "showPriority", value.asInstanceOf[js.Any])
+    inline def setShowPriority(value: Boolean): Self = StObject.set(x, "showPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPriorityUndefined: Self = StObject.set(x, "showPriority", js.undefined)
+    inline def setShowPriorityUndefined: Self = StObject.set(x, "showPriority", js.undefined)
     
-    @scala.inline
-    def setShowType(value: Boolean): Self = StObject.set(x, "showType", value.asInstanceOf[js.Any])
+    inline def setShowType(value: Boolean): Self = StObject.set(x, "showType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTypeUndefined: Self = StObject.set(x, "showType", js.undefined)
+    inline def setShowTypeUndefined: Self = StObject.set(x, "showType", js.undefined)
     
-    @scala.inline
-    def setWithoutSelection(value: Boolean): Self = StObject.set(x, "withoutSelection", value.asInstanceOf[js.Any])
+    inline def setWithoutSelection(value: Boolean): Self = StObject.set(x, "withoutSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithoutSelectionUndefined: Self = StObject.set(x, "withoutSelection", js.undefined)
+    inline def setWithoutSelectionUndefined: Self = StObject.set(x, "withoutSelection", js.undefined)
   }
 }

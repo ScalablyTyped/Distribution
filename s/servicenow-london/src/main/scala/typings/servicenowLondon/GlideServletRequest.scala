@@ -24,8 +24,7 @@ trait GlideServletRequest extends StObject {
 }
 object GlideServletRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContentType: () => String,
     getHeader: String => String,
     getHeaderNames: () => String,
@@ -39,31 +38,22 @@ object GlideServletRequest {
     __obj.asInstanceOf[GlideServletRequest]
   }
   
-  @scala.inline
-  implicit class GlideServletRequestMutableBuilder[Self <: GlideServletRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GlideServletRequest](x: Self) {
     
-    @scala.inline
-    def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
+    inline def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+    inline def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHeaderNames(value: () => String): Self = StObject.set(x, "getHeaderNames", js.Any.fromFunction0(value))
+    inline def setGetHeaderNames(value: () => String): Self = StObject.set(x, "getHeaderNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeaders(value: String => String): Self = StObject.set(x, "getHeaders", js.Any.fromFunction1(value))
+    inline def setGetHeaders(value: String => String): Self = StObject.set(x, "getHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameter(value: String => String): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
+    inline def setGetParameter(value: String => String): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameterNames(value: () => String): Self = StObject.set(x, "getParameterNames", js.Any.fromFunction0(value))
+    inline def setGetParameterNames(value: () => String): Self = StObject.set(x, "getParameterNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQueryString(value: () => String): Self = StObject.set(x, "getQueryString", js.Any.fromFunction0(value))
+    inline def setGetQueryString(value: () => String): Self = StObject.set(x, "getQueryString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteOutput(value: (String, String) => Unit): Self = StObject.set(x, "writeOutput", js.Any.fromFunction2(value))
+    inline def setWriteOutput(value: (String, String) => Unit): Self = StObject.set(x, "writeOutput", js.Any.fromFunction2(value))
   }
 }

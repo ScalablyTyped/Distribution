@@ -18,19 +18,15 @@ trait NumberConstructor extends StObject {
 }
 object NumberConstructor {
   
-  @scala.inline
-  def apply(parseInvariant: java.lang.String => Double, parseLocale: java.lang.String => Double): NumberConstructor = {
+  inline def apply(parseInvariant: java.lang.String => Double, parseLocale: java.lang.String => Double): NumberConstructor = {
     val __obj = js.Dynamic.literal(parseInvariant = js.Any.fromFunction1(parseInvariant), parseLocale = js.Any.fromFunction1(parseLocale))
     __obj.asInstanceOf[NumberConstructor]
   }
   
-  @scala.inline
-  implicit class NumberConstructorMutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: NumberConstructor](x: Self) {
     
-    @scala.inline
-    def setParseInvariant(value: java.lang.String => Double): Self = StObject.set(x, "parseInvariant", js.Any.fromFunction1(value))
+    inline def setParseInvariant(value: java.lang.String => Double): Self = StObject.set(x, "parseInvariant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseLocale(value: java.lang.String => Double): Self = StObject.set(x, "parseLocale", js.Any.fromFunction1(value))
+    inline def setParseLocale(value: java.lang.String => Double): Self = StObject.set(x, "parseLocale", js.Any.fromFunction1(value))
   }
 }

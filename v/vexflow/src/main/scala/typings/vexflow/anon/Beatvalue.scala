@@ -14,31 +14,23 @@ trait Beatvalue extends StObject {
 }
 object Beatvalue {
   
-  @scala.inline
-  def apply(): Beatvalue = {
+  inline def apply(): Beatvalue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Beatvalue]
   }
   
-  @scala.inline
-  implicit class BeatvalueMutableBuilder[Self <: Beatvalue] (val x: Self) extends AnyVal {
+  extension [Self <: Beatvalue](x: Self) {
     
-    @scala.inline
-    def setBeat_value(value: Double): Self = StObject.set(x, "beat_value", value.asInstanceOf[js.Any])
+    inline def setBeat_value(value: Double): Self = StObject.set(x, "beat_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeat_valueUndefined: Self = StObject.set(x, "beat_value", js.undefined)
+    inline def setBeat_valueUndefined: Self = StObject.set(x, "beat_value", js.undefined)
     
-    @scala.inline
-    def setNum_beats(value: Double): Self = StObject.set(x, "num_beats", value.asInstanceOf[js.Any])
+    inline def setNum_beats(value: Double): Self = StObject.set(x, "num_beats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_beatsUndefined: Self = StObject.set(x, "num_beats", js.undefined)
+    inline def setNum_beatsUndefined: Self = StObject.set(x, "num_beats", js.undefined)
     
-    @scala.inline
-    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

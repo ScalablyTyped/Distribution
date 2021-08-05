@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Series")
 @js.native
-class Series protected ()
+/* private */ class Series ()
   extends StObject
      with typings.activexExcel.Excel.Series

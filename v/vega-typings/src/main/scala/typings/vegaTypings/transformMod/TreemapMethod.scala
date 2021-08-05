@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TreemapMethod extends StObject
 object TreemapMethod {
   
-  @scala.inline
-  def binary: typings.vegaTypings.vegaTypingsStrings.binary = "binary".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.binary]
+  inline def binary: typings.vegaTypings.vegaTypingsStrings.binary = "binary".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.binary]
   
-  @scala.inline
-  def dice: typings.vegaTypings.vegaTypingsStrings.dice = "dice".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.dice]
+  inline def dice: typings.vegaTypings.vegaTypingsStrings.dice = "dice".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.dice]
   
-  @scala.inline
-  def resquarify: typings.vegaTypings.vegaTypingsStrings.resquarify = "resquarify".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.resquarify]
+  inline def resquarify: typings.vegaTypings.vegaTypingsStrings.resquarify = "resquarify".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.resquarify]
   
-  @scala.inline
-  def slice: typings.vegaTypings.vegaTypingsStrings.slice = "slice".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.slice]
+  inline def slice: typings.vegaTypings.vegaTypingsStrings.slice = "slice".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.slice]
   
-  @scala.inline
-  def slicedice: typings.vegaTypings.vegaTypingsStrings.slicedice = "slicedice".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.slicedice]
+  inline def slicedice: typings.vegaTypings.vegaTypingsStrings.slicedice = "slicedice".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.slicedice]
   
-  @scala.inline
-  def squarify: typings.vegaTypings.vegaTypingsStrings.squarify = "squarify".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.squarify]
+  inline def squarify: typings.vegaTypings.vegaTypingsStrings.squarify = "squarify".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.squarify]
 }

@@ -12,25 +12,19 @@ trait SchemaVersionNumber extends StObject {
 }
 object SchemaVersionNumber {
   
-  @scala.inline
-  def apply(): SchemaVersionNumber = {
+  inline def apply(): SchemaVersionNumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVersionNumber]
   }
   
-  @scala.inline
-  implicit class SchemaVersionNumberMutableBuilder[Self <: SchemaVersionNumber] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVersionNumber](x: Self) {
     
-    @scala.inline
-    def setLatestVersion(value: LatestSchemaVersionBoolean): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
+    inline def setLatestVersion(value: LatestSchemaVersionBoolean): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestVersionUndefined: Self = StObject.set(x, "LatestVersion", js.undefined)
+    inline def setLatestVersionUndefined: Self = StObject.set(x, "LatestVersion", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

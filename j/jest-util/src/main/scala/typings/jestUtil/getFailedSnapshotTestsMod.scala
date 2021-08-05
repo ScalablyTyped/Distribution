@@ -11,6 +11,5 @@ object getFailedSnapshotTestsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(testResults: AggregatedResult): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(testResults.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def default(testResults: AggregatedResult): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(testResults.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

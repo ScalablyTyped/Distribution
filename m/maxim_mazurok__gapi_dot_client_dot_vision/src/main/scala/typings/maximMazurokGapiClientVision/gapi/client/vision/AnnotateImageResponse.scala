@@ -50,115 +50,79 @@ trait AnnotateImageResponse extends StObject {
 }
 object AnnotateImageResponse {
   
-  @scala.inline
-  def apply(): AnnotateImageResponse = {
+  inline def apply(): AnnotateImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotateImageResponse]
   }
   
-  @scala.inline
-  implicit class AnnotateImageResponseMutableBuilder[Self <: AnnotateImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotateImageResponse](x: Self) {
     
-    @scala.inline
-    def setContext(value: ImageAnnotationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ImageAnnotationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setCropHintsAnnotation(value: CropHintsAnnotation): Self = StObject.set(x, "cropHintsAnnotation", value.asInstanceOf[js.Any])
+    inline def setCropHintsAnnotation(value: CropHintsAnnotation): Self = StObject.set(x, "cropHintsAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropHintsAnnotationUndefined: Self = StObject.set(x, "cropHintsAnnotation", js.undefined)
+    inline def setCropHintsAnnotationUndefined: Self = StObject.set(x, "cropHintsAnnotation", js.undefined)
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFaceAnnotations(value: js.Array[FaceAnnotation]): Self = StObject.set(x, "faceAnnotations", value.asInstanceOf[js.Any])
+    inline def setFaceAnnotations(value: js.Array[FaceAnnotation]): Self = StObject.set(x, "faceAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceAnnotationsUndefined: Self = StObject.set(x, "faceAnnotations", js.undefined)
+    inline def setFaceAnnotationsUndefined: Self = StObject.set(x, "faceAnnotations", js.undefined)
     
-    @scala.inline
-    def setFaceAnnotationsVarargs(value: FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value :_*))
+    inline def setFaceAnnotationsVarargs(value: FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setFullTextAnnotation(value: TextAnnotation): Self = StObject.set(x, "fullTextAnnotation", value.asInstanceOf[js.Any])
+    inline def setFullTextAnnotation(value: TextAnnotation): Self = StObject.set(x, "fullTextAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullTextAnnotationUndefined: Self = StObject.set(x, "fullTextAnnotation", js.undefined)
+    inline def setFullTextAnnotationUndefined: Self = StObject.set(x, "fullTextAnnotation", js.undefined)
     
-    @scala.inline
-    def setImagePropertiesAnnotation(value: ImageProperties): Self = StObject.set(x, "imagePropertiesAnnotation", value.asInstanceOf[js.Any])
+    inline def setImagePropertiesAnnotation(value: ImageProperties): Self = StObject.set(x, "imagePropertiesAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePropertiesAnnotationUndefined: Self = StObject.set(x, "imagePropertiesAnnotation", js.undefined)
+    inline def setImagePropertiesAnnotationUndefined: Self = StObject.set(x, "imagePropertiesAnnotation", js.undefined)
     
-    @scala.inline
-    def setLabelAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "labelAnnotations", value.asInstanceOf[js.Any])
+    inline def setLabelAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "labelAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAnnotationsUndefined: Self = StObject.set(x, "labelAnnotations", js.undefined)
+    inline def setLabelAnnotationsUndefined: Self = StObject.set(x, "labelAnnotations", js.undefined)
     
-    @scala.inline
-    def setLabelAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "labelAnnotations", js.Array(value :_*))
+    inline def setLabelAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "labelAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setLandmarkAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "landmarkAnnotations", value.asInstanceOf[js.Any])
+    inline def setLandmarkAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "landmarkAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandmarkAnnotationsUndefined: Self = StObject.set(x, "landmarkAnnotations", js.undefined)
+    inline def setLandmarkAnnotationsUndefined: Self = StObject.set(x, "landmarkAnnotations", js.undefined)
     
-    @scala.inline
-    def setLandmarkAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "landmarkAnnotations", js.Array(value :_*))
+    inline def setLandmarkAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "landmarkAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalizedObjectAnnotations(value: js.Array[LocalizedObjectAnnotation]): Self = StObject.set(x, "localizedObjectAnnotations", value.asInstanceOf[js.Any])
+    inline def setLocalizedObjectAnnotations(value: js.Array[LocalizedObjectAnnotation]): Self = StObject.set(x, "localizedObjectAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedObjectAnnotationsUndefined: Self = StObject.set(x, "localizedObjectAnnotations", js.undefined)
+    inline def setLocalizedObjectAnnotationsUndefined: Self = StObject.set(x, "localizedObjectAnnotations", js.undefined)
     
-    @scala.inline
-    def setLocalizedObjectAnnotationsVarargs(value: LocalizedObjectAnnotation*): Self = StObject.set(x, "localizedObjectAnnotations", js.Array(value :_*))
+    inline def setLocalizedObjectAnnotationsVarargs(value: LocalizedObjectAnnotation*): Self = StObject.set(x, "localizedObjectAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setLogoAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "logoAnnotations", value.asInstanceOf[js.Any])
+    inline def setLogoAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "logoAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoAnnotationsUndefined: Self = StObject.set(x, "logoAnnotations", js.undefined)
+    inline def setLogoAnnotationsUndefined: Self = StObject.set(x, "logoAnnotations", js.undefined)
     
-    @scala.inline
-    def setLogoAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "logoAnnotations", js.Array(value :_*))
+    inline def setLogoAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "logoAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setProductSearchResults(value: ProductSearchResults): Self = StObject.set(x, "productSearchResults", value.asInstanceOf[js.Any])
+    inline def setProductSearchResults(value: ProductSearchResults): Self = StObject.set(x, "productSearchResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSearchResultsUndefined: Self = StObject.set(x, "productSearchResults", js.undefined)
+    inline def setProductSearchResultsUndefined: Self = StObject.set(x, "productSearchResults", js.undefined)
     
-    @scala.inline
-    def setSafeSearchAnnotation(value: SafeSearchAnnotation): Self = StObject.set(x, "safeSearchAnnotation", value.asInstanceOf[js.Any])
+    inline def setSafeSearchAnnotation(value: SafeSearchAnnotation): Self = StObject.set(x, "safeSearchAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeSearchAnnotationUndefined: Self = StObject.set(x, "safeSearchAnnotation", js.undefined)
+    inline def setSafeSearchAnnotationUndefined: Self = StObject.set(x, "safeSearchAnnotation", js.undefined)
     
-    @scala.inline
-    def setTextAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "textAnnotations", value.asInstanceOf[js.Any])
+    inline def setTextAnnotations(value: js.Array[EntityAnnotation]): Self = StObject.set(x, "textAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
+    inline def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
     
-    @scala.inline
-    def setTextAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
+    inline def setTextAnnotationsVarargs(value: EntityAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setWebDetection(value: WebDetection): Self = StObject.set(x, "webDetection", value.asInstanceOf[js.Any])
+    inline def setWebDetection(value: WebDetection): Self = StObject.set(x, "webDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebDetectionUndefined: Self = StObject.set(x, "webDetection", js.undefined)
+    inline def setWebDetectionUndefined: Self = StObject.set(x, "webDetection", js.undefined)
   }
 }

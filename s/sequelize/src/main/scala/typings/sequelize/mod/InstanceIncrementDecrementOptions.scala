@@ -39,40 +39,29 @@ trait InstanceIncrementDecrementOptions extends StObject {
 }
 object InstanceIncrementDecrementOptions {
   
-  @scala.inline
-  def apply(): InstanceIncrementDecrementOptions = {
+  inline def apply(): InstanceIncrementDecrementOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceIncrementDecrementOptions]
   }
   
-  @scala.inline
-  implicit class InstanceIncrementDecrementOptionsMutableBuilder[Self <: InstanceIncrementDecrementOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceIncrementDecrementOptions](x: Self) {
     
-    @scala.inline
-    def setBy(value: Double): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    inline def setBy(value: Double): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
-    @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
-    @scala.inline
-    def setWhere(value: AnyWhereOptions | (js.Array[col | and | or | String])): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: AnyWhereOptions | (js.Array[col | and | or | String])): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
-    @scala.inline
-    def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
+    inline def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
   }
 }

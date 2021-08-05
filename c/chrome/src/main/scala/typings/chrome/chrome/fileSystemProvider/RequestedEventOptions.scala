@@ -14,19 +14,15 @@ trait RequestedEventOptions extends StObject {
 }
 object RequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, requestId: Double): RequestedEventOptions = {
+  inline def apply(fileSystemId: String, requestId: Double): RequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class RequestedEventOptionsMutableBuilder[Self <: RequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

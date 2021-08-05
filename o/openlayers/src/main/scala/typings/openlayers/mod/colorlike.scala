@@ -10,13 +10,11 @@ object colorlike {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asColorLike(color: ColorLike_): ColorLike_ = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike_]
+  inline def asColorLike(color: ColorLike_): ColorLike_ = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike_]
   /**
     * @param color Color.
     * @return The color as an ol.ColorLike
     * @api
     */
-  @scala.inline
-  def asColorLike(color: Color_): ColorLike_ = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike_]
+  inline def asColorLike(color: Color_): ColorLike_ = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike_]
 }

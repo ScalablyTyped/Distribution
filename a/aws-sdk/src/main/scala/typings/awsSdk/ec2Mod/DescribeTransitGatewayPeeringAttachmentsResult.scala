@@ -18,28 +18,21 @@ trait DescribeTransitGatewayPeeringAttachmentsResult extends StObject {
 }
 object DescribeTransitGatewayPeeringAttachmentsResult {
   
-  @scala.inline
-  def apply(): DescribeTransitGatewayPeeringAttachmentsResult = {
+  inline def apply(): DescribeTransitGatewayPeeringAttachmentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTransitGatewayPeeringAttachmentsResult]
   }
   
-  @scala.inline
-  implicit class DescribeTransitGatewayPeeringAttachmentsResultMutableBuilder[Self <: DescribeTransitGatewayPeeringAttachmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTransitGatewayPeeringAttachmentsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayPeeringAttachments(value: TransitGatewayPeeringAttachmentList): Self = StObject.set(x, "TransitGatewayPeeringAttachments", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayPeeringAttachments(value: TransitGatewayPeeringAttachmentList): Self = StObject.set(x, "TransitGatewayPeeringAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayPeeringAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayPeeringAttachments", js.undefined)
+    inline def setTransitGatewayPeeringAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayPeeringAttachments", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayPeeringAttachmentsVarargs(value: TransitGatewayPeeringAttachment*): Self = StObject.set(x, "TransitGatewayPeeringAttachments", js.Array(value :_*))
+    inline def setTransitGatewayPeeringAttachmentsVarargs(value: TransitGatewayPeeringAttachment*): Self = StObject.set(x, "TransitGatewayPeeringAttachments", js.Array(value :_*))
   }
 }

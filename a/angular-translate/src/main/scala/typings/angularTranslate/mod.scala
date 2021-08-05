@@ -52,26 +52,20 @@ object mod extends Shortcut {
       }
       object IStaticFilesLoaderOptions {
         
-        @scala.inline
-        def apply(prefix: String, suffix: String): IStaticFilesLoaderOptions = {
+        inline def apply(prefix: String, suffix: String): IStaticFilesLoaderOptions = {
           val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
           __obj.asInstanceOf[IStaticFilesLoaderOptions]
         }
         
-        @scala.inline
-        implicit class IStaticFilesLoaderOptionsMutableBuilder[Self <: IStaticFilesLoaderOptions] (val x: Self) extends AnyVal {
+        extension [Self <: IStaticFilesLoaderOptions](x: Self) {
           
-          @scala.inline
-          def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+          inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+          inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
           
-          @scala.inline
-          def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+          inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+          inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
         }
       }
       
@@ -83,20 +77,16 @@ object mod extends Shortcut {
       }
       object IStorage {
         
-        @scala.inline
-        def apply(get: String => String, put: (String, String) => Unit): IStorage = {
+        inline def apply(get: String => String, put: (String, String) => Unit): IStorage = {
           val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), put = js.Any.fromFunction2(put))
           __obj.asInstanceOf[IStorage]
         }
         
-        @scala.inline
-        implicit class IStorageMutableBuilder[Self <: IStorage] (val x: Self) extends AnyVal {
+        extension [Self <: IStorage](x: Self) {
           
-          @scala.inline
-          def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+          inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPut(value: (String, String) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
+          inline def setPut(value: (String, String) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
         }
       }
       
@@ -845,8 +835,7 @@ object mod extends Shortcut {
            with /* key */ StringDictionary[String | ITranslationTable]
       object ITranslationTable {
         
-        @scala.inline
-        def apply(): ITranslationTable = {
+        inline def apply(): ITranslationTable = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ITranslationTable]
         }

@@ -22,8 +22,7 @@ trait R3FactoryDefMetadataFacade extends StObject {
 }
 object R3FactoryDefMetadataFacade {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     injectFn: directiveInject | inject,
     name: String,
     target: R3FactoryTarget,
@@ -35,31 +34,22 @@ object R3FactoryDefMetadataFacade {
     __obj.asInstanceOf[R3FactoryDefMetadataFacade]
   }
   
-  @scala.inline
-  implicit class R3FactoryDefMetadataFacadeMutableBuilder[Self <: R3FactoryDefMetadataFacade] (val x: Self) extends AnyVal {
+  extension [Self <: R3FactoryDefMetadataFacade](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsNull: Self = StObject.set(x, "deps", null)
+    inline def setDepsNull: Self = StObject.set(x, "deps", null)
     
-    @scala.inline
-    def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setInjectFn(value: directiveInject | inject): Self = StObject.set(x, "injectFn", value.asInstanceOf[js.Any])
+    inline def setInjectFn(value: directiveInject | inject): Self = StObject.set(x, "injectFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: R3FactoryTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: R3FactoryTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
+    inline def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
   }
 }

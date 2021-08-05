@@ -32,8 +32,7 @@ trait ChownFileResult extends StObject {
 }
 object ChownFileResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acl: FileACL,
     createdAt: Double,
     file: String,
@@ -46,28 +45,20 @@ object ChownFileResult {
     __obj.asInstanceOf[ChownFileResult]
   }
   
-  @scala.inline
-  implicit class ChownFileResultMutableBuilder[Self <: ChownFileResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChownFileResult](x: Self) {
     
-    @scala.inline
-    def setAcl(value: FileACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: FileACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDir(value: Boolean): Self = StObject.set(x, "isDir", value.asInstanceOf[js.Any])
+    inline def setIsDir(value: Boolean): Self = StObject.set(x, "isDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedAt(value: Double): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
+    inline def setModifiedAt(value: Double): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

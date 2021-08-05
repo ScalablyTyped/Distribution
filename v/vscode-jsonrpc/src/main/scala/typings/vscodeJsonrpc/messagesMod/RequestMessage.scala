@@ -25,25 +25,19 @@ trait RequestMessage
 }
 object RequestMessage {
   
-  @scala.inline
-  def apply(id: Double | String, jsonrpc: String, method: String): RequestMessage = {
+  inline def apply(id: Double | String, jsonrpc: String, method: String): RequestMessage = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMessage]
   }
   
-  @scala.inline
-  implicit class RequestMessageMutableBuilder[Self <: RequestMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RequestMessage](x: Self) {
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

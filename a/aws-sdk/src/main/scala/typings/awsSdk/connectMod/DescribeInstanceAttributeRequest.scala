@@ -18,19 +18,15 @@ trait DescribeInstanceAttributeRequest extends StObject {
 }
 object DescribeInstanceAttributeRequest {
   
-  @scala.inline
-  def apply(AttributeType: InstanceAttributeType, InstanceId: InstanceId): DescribeInstanceAttributeRequest = {
+  inline def apply(AttributeType: InstanceAttributeType, InstanceId: InstanceId): DescribeInstanceAttributeRequest = {
     val __obj = js.Dynamic.literal(AttributeType = AttributeType.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceAttributeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceAttributeRequestMutableBuilder[Self <: DescribeInstanceAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeType(value: InstanceAttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+    inline def setAttributeType(value: InstanceAttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait AcknowledgeJobInput extends StObject {
 }
 object AcknowledgeJobInput {
   
-  @scala.inline
-  def apply(jobId: JobId, nonce: Nonce): AcknowledgeJobInput = {
+  inline def apply(jobId: JobId, nonce: Nonce): AcknowledgeJobInput = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcknowledgeJobInput]
   }
   
-  @scala.inline
-  implicit class AcknowledgeJobInputMutableBuilder[Self <: AcknowledgeJobInput] (val x: Self) extends AnyVal {
+  extension [Self <: AcknowledgeJobInput](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: Nonce): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: Nonce): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
   }
 }

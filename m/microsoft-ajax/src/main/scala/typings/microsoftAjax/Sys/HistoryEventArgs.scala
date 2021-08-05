@@ -23,16 +23,13 @@ trait HistoryEventArgs
 }
 object HistoryEventArgs {
   
-  @scala.inline
-  def apply(Empty: EventArgs, get_State: () => js.Any): HistoryEventArgs = {
+  inline def apply(Empty: EventArgs, get_State: () => js.Any): HistoryEventArgs = {
     val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_State = js.Any.fromFunction0(get_State))
     __obj.asInstanceOf[HistoryEventArgs]
   }
   
-  @scala.inline
-  implicit class HistoryEventArgsMutableBuilder[Self <: HistoryEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryEventArgs](x: Self) {
     
-    @scala.inline
-    def setGet_State(value: () => js.Any): Self = StObject.set(x, "get_State", js.Any.fromFunction0(value))
+    inline def setGet_State(value: () => js.Any): Self = StObject.set(x, "get_State", js.Any.fromFunction0(value))
   }
 }

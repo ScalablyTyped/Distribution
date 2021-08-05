@@ -18,25 +18,19 @@ trait ContainerServiceDeploymentRequest extends StObject {
 }
 object ContainerServiceDeploymentRequest {
   
-  @scala.inline
-  def apply(): ContainerServiceDeploymentRequest = {
+  inline def apply(): ContainerServiceDeploymentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerServiceDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class ContainerServiceDeploymentRequestMutableBuilder[Self <: ContainerServiceDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerServiceDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setContainers(value: ContainerMap): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: ContainerMap): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setPublicEndpoint(value: EndpointRequest): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
+    inline def setPublicEndpoint(value: EndpointRequest): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
+    inline def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
   }
 }

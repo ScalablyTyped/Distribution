@@ -23,28 +23,21 @@ trait ApplyEnvironmentManagedActionRequest extends StObject {
 }
 object ApplyEnvironmentManagedActionRequest {
   
-  @scala.inline
-  def apply(ActionId: String): ApplyEnvironmentManagedActionRequest = {
+  inline def apply(ActionId: String): ApplyEnvironmentManagedActionRequest = {
     val __obj = js.Dynamic.literal(ActionId = ActionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyEnvironmentManagedActionRequest]
   }
   
-  @scala.inline
-  implicit class ApplyEnvironmentManagedActionRequestMutableBuilder[Self <: ApplyEnvironmentManagedActionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyEnvironmentManagedActionRequest](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentId(value: String): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: String): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: String): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: String): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
   }
 }

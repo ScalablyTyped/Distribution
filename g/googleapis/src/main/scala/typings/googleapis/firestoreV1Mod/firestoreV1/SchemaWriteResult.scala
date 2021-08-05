@@ -24,28 +24,21 @@ trait SchemaWriteResult extends StObject {
 }
 object SchemaWriteResult {
   
-  @scala.inline
-  def apply(): SchemaWriteResult = {
+  inline def apply(): SchemaWriteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWriteResult]
   }
   
-  @scala.inline
-  implicit class SchemaWriteResultMutableBuilder[Self <: SchemaWriteResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWriteResult](x: Self) {
     
-    @scala.inline
-    def setTransformResults(value: js.Array[SchemaValue]): Self = StObject.set(x, "transformResults", value.asInstanceOf[js.Any])
+    inline def setTransformResults(value: js.Array[SchemaValue]): Self = StObject.set(x, "transformResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformResultsUndefined: Self = StObject.set(x, "transformResults", js.undefined)
+    inline def setTransformResultsUndefined: Self = StObject.set(x, "transformResults", js.undefined)
     
-    @scala.inline
-    def setTransformResultsVarargs(value: SchemaValue*): Self = StObject.set(x, "transformResults", js.Array(value :_*))
+    inline def setTransformResultsVarargs(value: SchemaValue*): Self = StObject.set(x, "transformResults", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

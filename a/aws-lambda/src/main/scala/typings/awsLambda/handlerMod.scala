@@ -23,26 +23,20 @@ object handlerMod {
   }
   object ClientContext {
     
-    @scala.inline
-    def apply(client: ClientContextClient, env: ClientContextEnv): ClientContext = {
+    inline def apply(client: ClientContextClient, env: ClientContextEnv): ClientContext = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientContext]
     }
     
-    @scala.inline
-    implicit class ClientContextMutableBuilder[Self <: ClientContext] (val x: Self) extends AnyVal {
+    extension [Self <: ClientContext](x: Self) {
       
-      @scala.inline
-      def setClient(value: ClientContextClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: ClientContextClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom(value: js.Any): Self = StObject.set(x, "Custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: js.Any): Self = StObject.set(x, "Custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "Custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "Custom", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ClientContextEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ClientContextEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +54,7 @@ object handlerMod {
   }
   object ClientContextClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appPackageName: String,
       appTitle: String,
       appVersionCode: String,
@@ -72,23 +65,17 @@ object handlerMod {
       __obj.asInstanceOf[ClientContextClient]
     }
     
-    @scala.inline
-    implicit class ClientContextClientMutableBuilder[Self <: ClientContextClient] (val x: Self) extends AnyVal {
+    extension [Self <: ClientContextClient](x: Self) {
       
-      @scala.inline
-      def setAppPackageName(value: String): Self = StObject.set(x, "appPackageName", value.asInstanceOf[js.Any])
+      inline def setAppPackageName(value: String): Self = StObject.set(x, "appPackageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppTitle(value: String): Self = StObject.set(x, "appTitle", value.asInstanceOf[js.Any])
+      inline def setAppTitle(value: String): Self = StObject.set(x, "appTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppVersionCode(value: String): Self = StObject.set(x, "appVersionCode", value.asInstanceOf[js.Any])
+      inline def setAppVersionCode(value: String): Self = StObject.set(x, "appVersionCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppVersionName(value: String): Self = StObject.set(x, "appVersionName", value.asInstanceOf[js.Any])
+      inline def setAppVersionName(value: String): Self = StObject.set(x, "appVersionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
+      inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,29 +93,22 @@ object handlerMod {
   }
   object ClientContextEnv {
     
-    @scala.inline
-    def apply(locale: String, make: String, model: String, platform: String, platformVersion: String): ClientContextEnv = {
+    inline def apply(locale: String, make: String, model: String, platform: String, platformVersion: String): ClientContextEnv = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], make = make.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], platformVersion = platformVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientContextEnv]
     }
     
-    @scala.inline
-    implicit class ClientContextEnvMutableBuilder[Self <: ClientContextEnv] (val x: Self) extends AnyVal {
+    extension [Self <: ClientContextEnv](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMake(value: String): Self = StObject.set(x, "make", value.asInstanceOf[js.Any])
+      inline def setMake(value: String): Self = StObject.set(x, "make", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+      inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,20 +120,16 @@ object handlerMod {
   }
   object CognitoIdentity {
     
-    @scala.inline
-    def apply(cognitoIdentityId: String, cognitoIdentityPoolId: String): CognitoIdentity = {
+    inline def apply(cognitoIdentityId: String, cognitoIdentityPoolId: String): CognitoIdentity = {
       val __obj = js.Dynamic.literal(cognitoIdentityId = cognitoIdentityId.asInstanceOf[js.Any], cognitoIdentityPoolId = cognitoIdentityPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CognitoIdentity]
     }
     
-    @scala.inline
-    implicit class CognitoIdentityMutableBuilder[Self <: CognitoIdentity] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoIdentity](x: Self) {
       
-      @scala.inline
-      def setCognitoIdentityId(value: String): Self = StObject.set(x, "cognitoIdentityId", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityId(value: String): Self = StObject.set(x, "cognitoIdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityPoolId(value: String): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityPoolId(value: String): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
     }
   }
   

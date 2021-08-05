@@ -16,20 +16,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setJsonToFileReporter(value: JsonToFileReporterOptions): Self = StObject.set(x, "jsonToFileReporter", value.asInstanceOf[js.Any])
+      inline def setJsonToFileReporter(value: JsonToFileReporterOptions): Self = StObject.set(x, "jsonToFileReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonToFileReporterUndefined: Self = StObject.set(x, "jsonToFileReporter", js.undefined)
+      inline def setJsonToFileReporterUndefined: Self = StObject.set(x, "jsonToFileReporter", js.undefined)
     }
   }
   
@@ -64,41 +60,30 @@ object mod {
   }
   object JsonToFileReporterOptions {
     
-    @scala.inline
-    def apply(): JsonToFileReporterOptions = {
+    inline def apply(): JsonToFileReporterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonToFileReporterOptions]
     }
     
-    @scala.inline
-    implicit class JsonToFileReporterOptionsMutableBuilder[Self <: JsonToFileReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsonToFileReporterOptions](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String | (js.Function1[/* obj */ js.Object, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String | (js.Function1[/* obj */ js.Object, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     }
   }
 }

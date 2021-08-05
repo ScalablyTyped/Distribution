@@ -13,19 +13,15 @@ trait StartAppReplicationRequest extends StObject {
 }
 object StartAppReplicationRequest {
   
-  @scala.inline
-  def apply(): StartAppReplicationRequest = {
+  inline def apply(): StartAppReplicationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartAppReplicationRequest]
   }
   
-  @scala.inline
-  implicit class StartAppReplicationRequestMutableBuilder[Self <: StartAppReplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartAppReplicationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
   }
 }

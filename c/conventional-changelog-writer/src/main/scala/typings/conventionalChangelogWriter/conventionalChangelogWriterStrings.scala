@@ -8,11 +8,9 @@ object conventionalChangelogWriterStrings {
   
   @js.native
   sealed trait Omit extends StObject
-  @scala.inline
-  def Omit: Omit = "Omit".asInstanceOf[Omit]
+  inline def Omit: Omit = "Omit".asInstanceOf[Omit]
   
   @js.native
   sealed trait raw extends StObject
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
+  inline def raw: raw = "raw".asInstanceOf[raw]
 }

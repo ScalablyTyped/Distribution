@@ -23,28 +23,21 @@ trait BatchPutDocumentRequest extends StObject {
 }
 object BatchPutDocumentRequest {
   
-  @scala.inline
-  def apply(Documents: DocumentList, IndexId: IndexId): BatchPutDocumentRequest = {
+  inline def apply(Documents: DocumentList, IndexId: IndexId): BatchPutDocumentRequest = {
     val __obj = js.Dynamic.literal(Documents = Documents.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPutDocumentRequest]
   }
   
-  @scala.inline
-  implicit class BatchPutDocumentRequestMutableBuilder[Self <: BatchPutDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: DocumentList): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: DocumentList): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsVarargs(value: Document*): Self = StObject.set(x, "Documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: Document*): Self = StObject.set(x, "Documents", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

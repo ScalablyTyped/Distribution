@@ -11,19 +11,15 @@ trait ProvidedSoftwareCatalog extends StObject {
 }
 object ProvidedSoftwareCatalog {
   
-  @scala.inline
-  def apply(): ProvidedSoftwareCatalog = {
+  inline def apply(): ProvidedSoftwareCatalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvidedSoftwareCatalog]
   }
   
-  @scala.inline
-  implicit class ProvidedSoftwareCatalogMutableBuilder[Self <: ProvidedSoftwareCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: ProvidedSoftwareCatalog](x: Self) {
     
-    @scala.inline
-    def setOrchestratorVersion(value: String): Self = StObject.set(x, "orchestratorVersion", value.asInstanceOf[js.Any])
+    inline def setOrchestratorVersion(value: String): Self = StObject.set(x, "orchestratorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrchestratorVersionUndefined: Self = StObject.set(x, "orchestratorVersion", js.undefined)
+    inline def setOrchestratorVersionUndefined: Self = StObject.set(x, "orchestratorVersion", js.undefined)
   }
 }

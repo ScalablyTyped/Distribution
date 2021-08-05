@@ -61,21 +61,16 @@ object organizationalUnitMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationalUnitState): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationalUnitState, opts: CustomResourceOptions): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
+    inline def get(name: String, id: Input[ID]): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
+    inline def get(name: String, id: Input[ID], state: OrganizationalUnitState): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
+    inline def get(name: String, id: Input[ID], state: OrganizationalUnitState, opts: CustomResourceOptions): OrganizationalUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationalUnit]
     
     /**
       * Returns true if the given object is an instance of OrganizationalUnit.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean]
   }
   
   trait OrganizationalUnitArgs extends StObject {
@@ -92,23 +87,18 @@ object organizationalUnitMod {
   }
   object OrganizationalUnitArgs {
     
-    @scala.inline
-    def apply(parentId: Input[String]): OrganizationalUnitArgs = {
+    inline def apply(parentId: Input[String]): OrganizationalUnitArgs = {
       val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationalUnitArgs]
     }
     
-    @scala.inline
-    implicit class OrganizationalUnitArgsMutableBuilder[Self <: OrganizationalUnitArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationalUnitArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,45 +130,34 @@ object organizationalUnitMod {
   }
   object OrganizationalUnitState {
     
-    @scala.inline
-    def apply(): OrganizationalUnitState = {
+    inline def apply(): OrganizationalUnitState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrganizationalUnitState]
     }
     
-    @scala.inline
-    implicit class OrganizationalUnitStateMutableBuilder[Self <: OrganizationalUnitState] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationalUnitState](x: Self) {
       
-      @scala.inline
-      def setAccounts(
+      inline def setAccounts(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationalUnitAccount]]
             ]
       ): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
+      inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
       
-      @scala.inline
-      def setAccountsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationalUnitAccount]*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+      inline def setAccountsVarargs(value: Input[typings.pulumiAws.inputMod.organizations.OrganizationalUnitAccount]*): Self = StObject.set(x, "accounts", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     }
   }
 }

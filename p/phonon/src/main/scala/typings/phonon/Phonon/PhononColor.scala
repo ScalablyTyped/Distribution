@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhononColor extends StObject
 object PhononColor {
   
-  @scala.inline
-  def negative: typings.phonon.phononStrings.negative = "negative".asInstanceOf[typings.phonon.phononStrings.negative]
+  inline def negative: typings.phonon.phononStrings.negative = "negative".asInstanceOf[typings.phonon.phononStrings.negative]
   
-  @scala.inline
-  def positive: typings.phonon.phononStrings.positive = "positive".asInstanceOf[typings.phonon.phononStrings.positive]
+  inline def positive: typings.phonon.phononStrings.positive = "positive".asInstanceOf[typings.phonon.phononStrings.positive]
 }

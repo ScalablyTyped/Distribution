@@ -18,40 +18,29 @@ trait PartialDecorator extends StObject {
 }
 object PartialDecorator {
   
-  @scala.inline
-  def apply(): PartialDecorator = {
+  inline def apply(): PartialDecorator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDecorator]
   }
   
-  @scala.inline
-  implicit class PartialDecoratorMutableBuilder[Self <: PartialDecorator] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDecorator](x: Self) {
     
-    @scala.inline
-    def setArguments(value: ModelToObject[js.UndefOr[js.Any]] | js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: ModelToObject[js.UndefOr[js.Any]] | js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ModelToObject[js.UndefOr[Type]] | Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[js.UndefOr[Type]] | Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

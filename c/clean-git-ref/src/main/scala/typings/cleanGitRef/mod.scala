@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clean(ref: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(ref.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def clean(ref: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(ref.asInstanceOf[js.Any]).asInstanceOf[String]
 }

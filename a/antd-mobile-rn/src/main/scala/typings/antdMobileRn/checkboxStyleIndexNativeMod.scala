@@ -25,17 +25,14 @@ object checkboxStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/checkbox/style/index.native", "default.agreeItemCheckbox")
     @js.native
     def agreeItemCheckbox: MarginLeftMarginRight = js.native
-    @scala.inline
-    def agreeItemCheckbox_=(x: MarginLeftMarginRight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("agreeItemCheckbox")(x.asInstanceOf[js.Any])
+    inline def agreeItemCheckbox_=(x: MarginLeftMarginRight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("agreeItemCheckbox")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def agreeItem_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("agreeItem")(x.asInstanceOf[js.Any])
+    inline def agreeItem_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("agreeItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/checkbox/style/index.native", "default.checkboxItemCheckbox")
     @js.native
     def checkboxItemCheckbox: AlignSelf = js.native
-    @scala.inline
-    def checkboxItemCheckbox_=(x: AlignSelf): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkboxItemCheckbox")(x.asInstanceOf[js.Any])
+    inline def checkboxItemCheckbox_=(x: AlignSelf): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkboxItemCheckbox")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/checkbox/style/index.native", "default.icon")
     @js.native
@@ -44,17 +41,14 @@ object checkboxStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/checkbox/style/index.native", "default.iconRight")
     @js.native
     def iconRight: MarginLeftNumber = js.native
-    @scala.inline
-    def iconRight_=(x: MarginLeftNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconRight")(x.asInstanceOf[js.Any])
+    inline def iconRight_=(x: MarginLeftNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconRight")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def icon_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
+    inline def icon_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/checkbox/style/index.native", "default.wrapper")
     @js.native
     def wrapper: AlignItemsFlexDirection = js.native
-    @scala.inline
-    def wrapper_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
+    inline def wrapper_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
   }
   
   trait ICheckboxStyle extends StObject {
@@ -73,8 +67,7 @@ object checkboxStyleIndexNativeMod {
   }
   object ICheckboxStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       agreeItem: ViewStyle,
       agreeItemCheckbox: ViewStyle,
       checkboxItemCheckbox: ViewStyle,
@@ -86,26 +79,19 @@ object checkboxStyleIndexNativeMod {
       __obj.asInstanceOf[ICheckboxStyle]
     }
     
-    @scala.inline
-    implicit class ICheckboxStyleMutableBuilder[Self <: ICheckboxStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ICheckboxStyle](x: Self) {
       
-      @scala.inline
-      def setAgreeItem(value: ViewStyle): Self = StObject.set(x, "agreeItem", value.asInstanceOf[js.Any])
+      inline def setAgreeItem(value: ViewStyle): Self = StObject.set(x, "agreeItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgreeItemCheckbox(value: ViewStyle): Self = StObject.set(x, "agreeItemCheckbox", value.asInstanceOf[js.Any])
+      inline def setAgreeItemCheckbox(value: ViewStyle): Self = StObject.set(x, "agreeItemCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxItemCheckbox(value: ViewStyle): Self = StObject.set(x, "checkboxItemCheckbox", value.asInstanceOf[js.Any])
+      inline def setCheckboxItemCheckbox(value: ViewStyle): Self = StObject.set(x, "checkboxItemCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconRight(value: ViewStyle): Self = StObject.set(x, "iconRight", value.asInstanceOf[js.Any])
+      inline def setIconRight(value: ViewStyle): Self = StObject.set(x, "iconRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,22 +13,17 @@ trait SchemaDealTermsNonGuaranteedFixedPriceTerms extends StObject {
 }
 object SchemaDealTermsNonGuaranteedFixedPriceTerms {
   
-  @scala.inline
-  def apply(): SchemaDealTermsNonGuaranteedFixedPriceTerms = {
+  inline def apply(): SchemaDealTermsNonGuaranteedFixedPriceTerms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDealTermsNonGuaranteedFixedPriceTerms]
   }
   
-  @scala.inline
-  implicit class SchemaDealTermsNonGuaranteedFixedPriceTermsMutableBuilder[Self <: SchemaDealTermsNonGuaranteedFixedPriceTerms] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDealTermsNonGuaranteedFixedPriceTerms](x: Self) {
     
-    @scala.inline
-    def setFixedPrices(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "fixedPrices", value.asInstanceOf[js.Any])
+    inline def setFixedPrices(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "fixedPrices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedPricesUndefined: Self = StObject.set(x, "fixedPrices", js.undefined)
+    inline def setFixedPricesUndefined: Self = StObject.set(x, "fixedPrices", js.undefined)
     
-    @scala.inline
-    def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value :_*))
+    inline def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value :_*))
   }
 }

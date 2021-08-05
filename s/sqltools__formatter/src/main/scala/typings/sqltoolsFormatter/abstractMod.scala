@@ -40,7 +40,7 @@ object abstractMod {
     
     def getTokenizerConfig(): TokenizerConfig
     
-    var tokenOverride: js.UndefOr[js.Function2[/* token */ Token, /* previousToken */ js.UndefOr[Token], Token]] = js.undefined
+    /* protected */ var tokenOverride: js.UndefOr[js.Function2[/* token */ Token, /* previousToken */ js.UndefOr[Token], Token]] = js.undefined
     
     def tokenize(query: String): js.Array[Token]
     
@@ -48,8 +48,7 @@ object abstractMod {
   }
   object AbstractFormatter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cfg: Config,
       format: String => String,
       getTokenizerConfig: () => TokenizerConfig,
@@ -60,29 +59,21 @@ object abstractMod {
       __obj.asInstanceOf[AbstractFormatter]
     }
     
-    @scala.inline
-    implicit class AbstractFormatterMutableBuilder[Self <: AbstractFormatter] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractFormatter](x: Self) {
       
-      @scala.inline
-      def setCfg(value: Config): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
+      inline def setCfg(value: Config): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTokenizerConfig(value: () => TokenizerConfig): Self = StObject.set(x, "getTokenizerConfig", js.Any.fromFunction0(value))
+      inline def setGetTokenizerConfig(value: () => TokenizerConfig): Self = StObject.set(x, "getTokenizerConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTokenOverride(value: (/* token */ Token, /* previousToken */ js.UndefOr[Token]) => Token): Self = StObject.set(x, "tokenOverride", js.Any.fromFunction2(value))
+      inline def setTokenOverride(value: (/* token */ Token, /* previousToken */ js.UndefOr[Token]) => Token): Self = StObject.set(x, "tokenOverride", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTokenOverrideUndefined: Self = StObject.set(x, "tokenOverride", js.undefined)
+      inline def setTokenOverrideUndefined: Self = StObject.set(x, "tokenOverride", js.undefined)
       
-      @scala.inline
-      def setTokenize(value: String => js.Array[Token]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
+      inline def setTokenize(value: String => js.Array[Token]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTokenizer(value: () => typings.sqltoolsFormatter.tokenizerMod.default): Self = StObject.set(x, "tokenizer", js.Any.fromFunction0(value))
+      inline def setTokenizer(value: () => typings.sqltoolsFormatter.tokenizerMod.default): Self = StObject.set(x, "tokenizer", js.Any.fromFunction0(value))
     }
   }
 }

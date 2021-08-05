@@ -11,22 +11,17 @@ trait WorksheetCustomPropertyCollectionData extends StObject {
 }
 object WorksheetCustomPropertyCollectionData {
   
-  @scala.inline
-  def apply(): WorksheetCustomPropertyCollectionData = {
+  inline def apply(): WorksheetCustomPropertyCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetCustomPropertyCollectionData]
   }
   
-  @scala.inline
-  implicit class WorksheetCustomPropertyCollectionDataMutableBuilder[Self <: WorksheetCustomPropertyCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetCustomPropertyCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[WorksheetCustomPropertyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[WorksheetCustomPropertyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: WorksheetCustomPropertyData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: WorksheetCustomPropertyData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

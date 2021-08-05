@@ -55,8 +55,7 @@ trait Range extends StObject {
 }
 object Range {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contains: (Double, Double) => Boolean,
     fromCell: Double,
     fromRow: Double,
@@ -69,28 +68,20 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+    inline def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFromCell(value: Double): Self = StObject.set(x, "fromCell", value.asInstanceOf[js.Any])
+    inline def setFromCell(value: Double): Self = StObject.set(x, "fromCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
+    inline def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSingleCell(value: () => Boolean): Self = StObject.set(x, "isSingleCell", js.Any.fromFunction0(value))
+    inline def setIsSingleCell(value: () => Boolean): Self = StObject.set(x, "isSingleCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSingleRow(value: () => Boolean): Self = StObject.set(x, "isSingleRow", js.Any.fromFunction0(value))
+    inline def setIsSingleRow(value: () => Boolean): Self = StObject.set(x, "isSingleRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToCell(value: Double): Self = StObject.set(x, "toCell", value.asInstanceOf[js.Any])
+    inline def setToCell(value: Double): Self = StObject.set(x, "toCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
+    inline def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
   }
 }

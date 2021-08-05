@@ -19,22 +19,17 @@ trait DescribeClusterRequestwai extends StObject {
 }
 object DescribeClusterRequestwai {
   
-  @scala.inline
-  def apply(name: String): DescribeClusterRequestwai = {
+  inline def apply(name: String): DescribeClusterRequestwai = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterRequestwai]
   }
   
-  @scala.inline
-  implicit class DescribeClusterRequestwaiMutableBuilder[Self <: DescribeClusterRequestwai] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClusterRequestwai](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

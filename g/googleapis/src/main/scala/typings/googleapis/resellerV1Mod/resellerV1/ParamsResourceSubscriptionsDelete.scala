@@ -42,37 +42,27 @@ trait ParamsResourceSubscriptionsDelete
 }
 object ParamsResourceSubscriptionsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceSubscriptionsDelete = {
+  inline def apply(): ParamsResourceSubscriptionsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSubscriptionsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSubscriptionsDeleteMutableBuilder[Self <: ParamsResourceSubscriptionsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSubscriptionsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setDeletionType(value: String): Self = StObject.set(x, "deletionType", value.asInstanceOf[js.Any])
+    inline def setDeletionType(value: String): Self = StObject.set(x, "deletionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionTypeUndefined: Self = StObject.set(x, "deletionType", js.undefined)
+    inline def setDeletionTypeUndefined: Self = StObject.set(x, "deletionType", js.undefined)
     
-    @scala.inline
-    def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionIdUndefined: Self = StObject.set(x, "subscriptionId", js.undefined)
+    inline def setSubscriptionIdUndefined: Self = StObject.set(x, "subscriptionId", js.undefined)
   }
 }

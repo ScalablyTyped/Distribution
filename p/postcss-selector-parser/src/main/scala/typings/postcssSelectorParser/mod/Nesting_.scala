@@ -14,8 +14,7 @@ trait Nesting_
 }
 object Nesting_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -37,10 +36,8 @@ object Nesting_ {
     __obj.asInstanceOf[Nesting_]
   }
   
-  @scala.inline
-  implicit class Nesting_MutableBuilder[Self <: Nesting_] (val x: Self) extends AnyVal {
+  extension [Self <: Nesting_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.nesting): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.nesting): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

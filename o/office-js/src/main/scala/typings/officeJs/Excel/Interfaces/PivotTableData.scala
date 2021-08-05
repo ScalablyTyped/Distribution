@@ -89,88 +89,61 @@ trait PivotTableData extends StObject {
 }
 object PivotTableData {
   
-  @scala.inline
-  def apply(): PivotTableData = {
+  inline def apply(): PivotTableData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotTableData]
   }
   
-  @scala.inline
-  implicit class PivotTableDataMutableBuilder[Self <: PivotTableData] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTableData](x: Self) {
     
-    @scala.inline
-    def setAllowMultipleFiltersPerField(value: Boolean): Self = StObject.set(x, "allowMultipleFiltersPerField", value.asInstanceOf[js.Any])
+    inline def setAllowMultipleFiltersPerField(value: Boolean): Self = StObject.set(x, "allowMultipleFiltersPerField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMultipleFiltersPerFieldUndefined: Self = StObject.set(x, "allowMultipleFiltersPerField", js.undefined)
+    inline def setAllowMultipleFiltersPerFieldUndefined: Self = StObject.set(x, "allowMultipleFiltersPerField", js.undefined)
     
-    @scala.inline
-    def setColumnHierarchies(value: js.Array[RowColumnPivotHierarchyData]): Self = StObject.set(x, "columnHierarchies", value.asInstanceOf[js.Any])
+    inline def setColumnHierarchies(value: js.Array[RowColumnPivotHierarchyData]): Self = StObject.set(x, "columnHierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHierarchiesUndefined: Self = StObject.set(x, "columnHierarchies", js.undefined)
+    inline def setColumnHierarchiesUndefined: Self = StObject.set(x, "columnHierarchies", js.undefined)
     
-    @scala.inline
-    def setColumnHierarchiesVarargs(value: RowColumnPivotHierarchyData*): Self = StObject.set(x, "columnHierarchies", js.Array(value :_*))
+    inline def setColumnHierarchiesVarargs(value: RowColumnPivotHierarchyData*): Self = StObject.set(x, "columnHierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setDataHierarchies(value: js.Array[DataPivotHierarchyData]): Self = StObject.set(x, "dataHierarchies", value.asInstanceOf[js.Any])
+    inline def setDataHierarchies(value: js.Array[DataPivotHierarchyData]): Self = StObject.set(x, "dataHierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHierarchiesUndefined: Self = StObject.set(x, "dataHierarchies", js.undefined)
+    inline def setDataHierarchiesUndefined: Self = StObject.set(x, "dataHierarchies", js.undefined)
     
-    @scala.inline
-    def setDataHierarchiesVarargs(value: DataPivotHierarchyData*): Self = StObject.set(x, "dataHierarchies", js.Array(value :_*))
+    inline def setDataHierarchiesVarargs(value: DataPivotHierarchyData*): Self = StObject.set(x, "dataHierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableDataValueEditing(value: Boolean): Self = StObject.set(x, "enableDataValueEditing", value.asInstanceOf[js.Any])
+    inline def setEnableDataValueEditing(value: Boolean): Self = StObject.set(x, "enableDataValueEditing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDataValueEditingUndefined: Self = StObject.set(x, "enableDataValueEditing", js.undefined)
+    inline def setEnableDataValueEditingUndefined: Self = StObject.set(x, "enableDataValueEditing", js.undefined)
     
-    @scala.inline
-    def setFilterHierarchies(value: js.Array[FilterPivotHierarchyData]): Self = StObject.set(x, "filterHierarchies", value.asInstanceOf[js.Any])
+    inline def setFilterHierarchies(value: js.Array[FilterPivotHierarchyData]): Self = StObject.set(x, "filterHierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterHierarchiesUndefined: Self = StObject.set(x, "filterHierarchies", js.undefined)
+    inline def setFilterHierarchiesUndefined: Self = StObject.set(x, "filterHierarchies", js.undefined)
     
-    @scala.inline
-    def setFilterHierarchiesVarargs(value: FilterPivotHierarchyData*): Self = StObject.set(x, "filterHierarchies", js.Array(value :_*))
+    inline def setFilterHierarchiesVarargs(value: FilterPivotHierarchyData*): Self = StObject.set(x, "filterHierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setHierarchies(value: js.Array[PivotHierarchyData]): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
+    inline def setHierarchies(value: js.Array[PivotHierarchyData]): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
+    inline def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
     
-    @scala.inline
-    def setHierarchiesVarargs(value: PivotHierarchyData*): Self = StObject.set(x, "hierarchies", js.Array(value :_*))
+    inline def setHierarchiesVarargs(value: PivotHierarchyData*): Self = StObject.set(x, "hierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRowHierarchies(value: js.Array[RowColumnPivotHierarchyData]): Self = StObject.set(x, "rowHierarchies", value.asInstanceOf[js.Any])
+    inline def setRowHierarchies(value: js.Array[RowColumnPivotHierarchyData]): Self = StObject.set(x, "rowHierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHierarchiesUndefined: Self = StObject.set(x, "rowHierarchies", js.undefined)
+    inline def setRowHierarchiesUndefined: Self = StObject.set(x, "rowHierarchies", js.undefined)
     
-    @scala.inline
-    def setRowHierarchiesVarargs(value: RowColumnPivotHierarchyData*): Self = StObject.set(x, "rowHierarchies", js.Array(value :_*))
+    inline def setRowHierarchiesVarargs(value: RowColumnPivotHierarchyData*): Self = StObject.set(x, "rowHierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setUseCustomSortLists(value: Boolean): Self = StObject.set(x, "useCustomSortLists", value.asInstanceOf[js.Any])
+    inline def setUseCustomSortLists(value: Boolean): Self = StObject.set(x, "useCustomSortLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCustomSortListsUndefined: Self = StObject.set(x, "useCustomSortLists", js.undefined)
+    inline def setUseCustomSortListsUndefined: Self = StObject.set(x, "useCustomSortLists", js.undefined)
   }
 }

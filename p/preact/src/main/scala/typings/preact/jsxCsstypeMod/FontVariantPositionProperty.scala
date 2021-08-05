@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontVariantPositionProperty extends StObject
 object FontVariantPositionProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def normal: typings.preact.preactStrings.normal = "normal".asInstanceOf[typings.preact.preactStrings.normal]
+  inline def normal: typings.preact.preactStrings.normal = "normal".asInstanceOf[typings.preact.preactStrings.normal]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def sub: typings.preact.preactStrings.sub = "sub".asInstanceOf[typings.preact.preactStrings.sub]
+  inline def sub: typings.preact.preactStrings.sub = "sub".asInstanceOf[typings.preact.preactStrings.sub]
   
-  @scala.inline
-  def `super`: typings.preact.preactStrings.`super` = "super".asInstanceOf[typings.preact.preactStrings.`super`]
+  inline def `super`: typings.preact.preactStrings.`super` = "super".asInstanceOf[typings.preact.preactStrings.`super`]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
 }

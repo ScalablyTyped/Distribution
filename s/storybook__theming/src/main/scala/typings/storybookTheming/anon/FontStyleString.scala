@@ -10,16 +10,13 @@ trait FontStyleString extends StObject {
 }
 object FontStyleString {
   
-  @scala.inline
-  def apply(fontStyle: String): FontStyleString = {
+  inline def apply(fontStyle: String): FontStyleString = {
     val __obj = js.Dynamic.literal(fontStyle = fontStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontStyleString]
   }
   
-  @scala.inline
-  implicit class FontStyleStringMutableBuilder[Self <: FontStyleString] (val x: Self) extends AnyVal {
+  extension [Self <: FontStyleString](x: Self) {
     
-    @scala.inline
-    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
   }
 }

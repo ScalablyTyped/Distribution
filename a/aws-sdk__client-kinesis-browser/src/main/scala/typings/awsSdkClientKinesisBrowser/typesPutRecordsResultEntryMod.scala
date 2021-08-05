@@ -30,38 +30,28 @@ object typesPutRecordsResultEntryMod {
   }
   object PutRecordsResultEntry {
     
-    @scala.inline
-    def apply(): PutRecordsResultEntry = {
+    inline def apply(): PutRecordsResultEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PutRecordsResultEntry]
     }
     
-    @scala.inline
-    implicit class PutRecordsResultEntryMutableBuilder[Self <: PutRecordsResultEntry] (val x: Self) extends AnyVal {
+    extension [Self <: PutRecordsResultEntry](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+      inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
       
-      @scala.inline
-      def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+      inline def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardIdUndefined: Self = StObject.set(x, "ShardId", js.undefined)
+      inline def setShardIdUndefined: Self = StObject.set(x, "ShardId", js.undefined)
     }
   }
   

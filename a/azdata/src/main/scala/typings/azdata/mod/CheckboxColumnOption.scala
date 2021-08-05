@@ -10,16 +10,13 @@ trait CheckboxColumnOption extends StObject {
 }
 object CheckboxColumnOption {
   
-  @scala.inline
-  def apply(actionOnCheckbox: ActionOnCellCheckboxCheck): CheckboxColumnOption = {
+  inline def apply(actionOnCheckbox: ActionOnCellCheckboxCheck): CheckboxColumnOption = {
     val __obj = js.Dynamic.literal(actionOnCheckbox = actionOnCheckbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxColumnOption]
   }
   
-  @scala.inline
-  implicit class CheckboxColumnOptionMutableBuilder[Self <: CheckboxColumnOption] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxColumnOption](x: Self) {
     
-    @scala.inline
-    def setActionOnCheckbox(value: ActionOnCellCheckboxCheck): Self = StObject.set(x, "actionOnCheckbox", value.asInstanceOf[js.Any])
+    inline def setActionOnCheckbox(value: ActionOnCellCheckboxCheck): Self = StObject.set(x, "actionOnCheckbox", value.asInstanceOf[js.Any])
   }
 }

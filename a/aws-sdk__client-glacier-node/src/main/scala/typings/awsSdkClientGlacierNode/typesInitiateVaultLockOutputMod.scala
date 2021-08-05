@@ -25,23 +25,18 @@ object typesInitiateVaultLockOutputMod {
   }
   object InitiateVaultLockOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): InitiateVaultLockOutput = {
+    inline def apply($metadata: ResponseMetadata): InitiateVaultLockOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitiateVaultLockOutput]
     }
     
-    @scala.inline
-    implicit class InitiateVaultLockOutputMutableBuilder[Self <: InitiateVaultLockOutput] (val x: Self) extends AnyVal {
+    extension [Self <: InitiateVaultLockOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
+      inline def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
+      inline def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
     }
   }
 }

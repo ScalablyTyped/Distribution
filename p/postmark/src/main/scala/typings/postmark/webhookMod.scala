@@ -64,20 +64,16 @@ object webhookMod {
   }
   object BounceWebhookTrigger {
     
-    @scala.inline
-    def apply(Enabled: Boolean): BounceWebhookTrigger = {
+    inline def apply(Enabled: Boolean): BounceWebhookTrigger = {
       val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[BounceWebhookTrigger]
     }
     
-    @scala.inline
-    implicit class BounceWebhookTriggerMutableBuilder[Self <: BounceWebhookTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: BounceWebhookTrigger](x: Self) {
       
-      @scala.inline
-      def setIncludeContent(value: Boolean): Self = StObject.set(x, "IncludeContent", value.asInstanceOf[js.Any])
+      inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "IncludeContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContentUndefined: Self = StObject.set(x, "IncludeContent", js.undefined)
+      inline def setIncludeContentUndefined: Self = StObject.set(x, "IncludeContent", js.undefined)
     }
   }
   
@@ -89,20 +85,16 @@ object webhookMod {
   }
   object HttpAuth {
     
-    @scala.inline
-    def apply(Password: String, Username: String): HttpAuth = {
+    inline def apply(Password: String, Username: String): HttpAuth = {
       val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpAuth]
     }
     
-    @scala.inline
-    implicit class HttpAuthMutableBuilder[Self <: HttpAuth] (val x: Self) extends AnyVal {
+    extension [Self <: HttpAuth](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,20 +106,16 @@ object webhookMod {
   }
   object OpenWebhookTrigger {
     
-    @scala.inline
-    def apply(Enabled: Boolean): OpenWebhookTrigger = {
+    inline def apply(Enabled: Boolean): OpenWebhookTrigger = {
       val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenWebhookTrigger]
     }
     
-    @scala.inline
-    implicit class OpenWebhookTriggerMutableBuilder[Self <: OpenWebhookTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: OpenWebhookTrigger](x: Self) {
       
-      @scala.inline
-      def setPostFirstOpenOnly(value: Boolean): Self = StObject.set(x, "PostFirstOpenOnly", value.asInstanceOf[js.Any])
+      inline def setPostFirstOpenOnly(value: Boolean): Self = StObject.set(x, "PostFirstOpenOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostFirstOpenOnlyUndefined: Self = StObject.set(x, "PostFirstOpenOnly", js.undefined)
+      inline def setPostFirstOpenOnlyUndefined: Self = StObject.set(x, "PostFirstOpenOnly", js.undefined)
     }
   }
   
@@ -139,20 +127,16 @@ object webhookMod {
   }
   object SpamWebhookTrigger {
     
-    @scala.inline
-    def apply(Enabled: Boolean): SpamWebhookTrigger = {
+    inline def apply(Enabled: Boolean): SpamWebhookTrigger = {
       val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpamWebhookTrigger]
     }
     
-    @scala.inline
-    implicit class SpamWebhookTriggerMutableBuilder[Self <: SpamWebhookTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: SpamWebhookTrigger](x: Self) {
       
-      @scala.inline
-      def setIncludeContent(value: Boolean): Self = StObject.set(x, "IncludeContent", value.asInstanceOf[js.Any])
+      inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "IncludeContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContentUndefined: Self = StObject.set(x, "IncludeContent", js.undefined)
+      inline def setIncludeContentUndefined: Self = StObject.set(x, "IncludeContent", js.undefined)
     }
   }
   
@@ -172,41 +156,30 @@ object webhookMod {
   }
   object Webhook {
     
-    @scala.inline
-    def apply(ID: Double, MessageStream: String, Triggers: Bounce, Url: String): Webhook = {
+    inline def apply(ID: Double, MessageStream: String, Triggers: Bounce, Url: String): Webhook = {
       val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], Triggers = Triggers.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Webhook]
     }
     
-    @scala.inline
-    implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
+    extension [Self <: Webhook](x: Self) {
       
-      @scala.inline
-      def setHttpAuth(value: HttpAuth): Self = StObject.set(x, "HttpAuth", value.asInstanceOf[js.Any])
+      inline def setHttpAuth(value: HttpAuth): Self = StObject.set(x, "HttpAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpAuthUndefined: Self = StObject.set(x, "HttpAuth", js.undefined)
+      inline def setHttpAuthUndefined: Self = StObject.set(x, "HttpAuth", js.undefined)
       
-      @scala.inline
-      def setHttpHeaders(value: js.Array[Header]): Self = StObject.set(x, "HttpHeaders", value.asInstanceOf[js.Any])
+      inline def setHttpHeaders(value: js.Array[Header]): Self = StObject.set(x, "HttpHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpHeadersUndefined: Self = StObject.set(x, "HttpHeaders", js.undefined)
+      inline def setHttpHeadersUndefined: Self = StObject.set(x, "HttpHeaders", js.undefined)
       
-      @scala.inline
-      def setHttpHeadersVarargs(value: Header*): Self = StObject.set(x, "HttpHeaders", js.Array(value :_*))
+      inline def setHttpHeadersVarargs(value: Header*): Self = StObject.set(x, "HttpHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
+      inline def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggers(value: Bounce): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: Bounce): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,44 +197,32 @@ object webhookMod {
   }
   object WebhookRequestTriggers {
     
-    @scala.inline
-    def apply(): WebhookRequestTriggers = {
+    inline def apply(): WebhookRequestTriggers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebhookRequestTriggers]
     }
     
-    @scala.inline
-    implicit class WebhookRequestTriggersMutableBuilder[Self <: WebhookRequestTriggers] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookRequestTriggers](x: Self) {
       
-      @scala.inline
-      def setBounce(value: BounceWebhookTrigger): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: BounceWebhookTrigger): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceUndefined: Self = StObject.set(x, "Bounce", js.undefined)
+      inline def setBounceUndefined: Self = StObject.set(x, "Bounce", js.undefined)
       
-      @scala.inline
-      def setClick(value: WebhookTrigger): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
+      inline def setClick(value: WebhookTrigger): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "Click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "Click", js.undefined)
       
-      @scala.inline
-      def setDelivery(value: WebhookTrigger): Self = StObject.set(x, "Delivery", value.asInstanceOf[js.Any])
+      inline def setDelivery(value: WebhookTrigger): Self = StObject.set(x, "Delivery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryUndefined: Self = StObject.set(x, "Delivery", js.undefined)
+      inline def setDeliveryUndefined: Self = StObject.set(x, "Delivery", js.undefined)
       
-      @scala.inline
-      def setOpen(value: OpenWebhookTrigger): Self = StObject.set(x, "Open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: OpenWebhookTrigger): Self = StObject.set(x, "Open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "Open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "Open", js.undefined)
       
-      @scala.inline
-      def setSpamComplaint(value: SpamWebhookTrigger): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
+      inline def setSpamComplaint(value: SpamWebhookTrigger): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpamComplaintUndefined: Self = StObject.set(x, "SpamComplaint", js.undefined)
+      inline def setSpamComplaintUndefined: Self = StObject.set(x, "SpamComplaint", js.undefined)
     }
   }
   
@@ -271,17 +232,14 @@ object webhookMod {
   }
   object WebhookTrigger {
     
-    @scala.inline
-    def apply(Enabled: Boolean): WebhookTrigger = {
+    inline def apply(Enabled: Boolean): WebhookTrigger = {
       val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebhookTrigger]
     }
     
-    @scala.inline
-    implicit class WebhookTriggerMutableBuilder[Self <: WebhookTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookTrigger](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     }
   }
 }

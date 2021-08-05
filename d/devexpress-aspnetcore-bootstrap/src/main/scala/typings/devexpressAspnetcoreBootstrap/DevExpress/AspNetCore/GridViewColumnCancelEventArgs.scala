@@ -12,16 +12,13 @@ trait GridViewColumnCancelEventArgs
 }
 object GridViewColumnCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, column: BootstrapGridViewColumn, sender: Control): GridViewColumnCancelEventArgs = {
+  inline def apply(cancel: Boolean, column: BootstrapGridViewColumn, sender: Control): GridViewColumnCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridViewColumnCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewColumnCancelEventArgsMutableBuilder[Self <: GridViewColumnCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewColumnCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

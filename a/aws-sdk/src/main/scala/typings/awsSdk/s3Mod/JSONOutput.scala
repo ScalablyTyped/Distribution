@@ -13,19 +13,15 @@ trait JSONOutput extends StObject {
 }
 object JSONOutput {
   
-  @scala.inline
-  def apply(): JSONOutput = {
+  inline def apply(): JSONOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONOutput]
   }
   
-  @scala.inline
-  implicit class JSONOutputMutableBuilder[Self <: JSONOutput] (val x: Self) extends AnyVal {
+  extension [Self <: JSONOutput](x: Self) {
     
-    @scala.inline
-    def setRecordDelimiter(value: RecordDelimiter): Self = StObject.set(x, "RecordDelimiter", value.asInstanceOf[js.Any])
+    inline def setRecordDelimiter(value: RecordDelimiter): Self = StObject.set(x, "RecordDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordDelimiterUndefined: Self = StObject.set(x, "RecordDelimiter", js.undefined)
+    inline def setRecordDelimiterUndefined: Self = StObject.set(x, "RecordDelimiter", js.undefined)
   }
 }

@@ -22,22 +22,17 @@ trait EndDockingEvent
 }
 object EndDockingEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, WindowRectangle: Rectangle, bCancelled: Boolean, bFloating: Boolean): EndDockingEvent = {
+  inline def apply(Source: XInterface, WindowRectangle: Rectangle, bCancelled: Boolean, bFloating: Boolean): EndDockingEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], WindowRectangle = WindowRectangle.asInstanceOf[js.Any], bCancelled = bCancelled.asInstanceOf[js.Any], bFloating = bFloating.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndDockingEvent]
   }
   
-  @scala.inline
-  implicit class EndDockingEventMutableBuilder[Self <: EndDockingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EndDockingEvent](x: Self) {
     
-    @scala.inline
-    def setBCancelled(value: Boolean): Self = StObject.set(x, "bCancelled", value.asInstanceOf[js.Any])
+    inline def setBCancelled(value: Boolean): Self = StObject.set(x, "bCancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBFloating(value: Boolean): Self = StObject.set(x, "bFloating", value.asInstanceOf[js.Any])
+    inline def setBFloating(value: Boolean): Self = StObject.set(x, "bFloating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowRectangle(value: Rectangle): Self = StObject.set(x, "WindowRectangle", value.asInstanceOf[js.Any])
+    inline def setWindowRectangle(value: Rectangle): Self = StObject.set(x, "WindowRectangle", value.asInstanceOf[js.Any])
   }
 }

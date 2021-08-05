@@ -18,31 +18,23 @@ trait SchemaFreeBusyGroup extends StObject {
 }
 object SchemaFreeBusyGroup {
   
-  @scala.inline
-  def apply(): SchemaFreeBusyGroup = {
+  inline def apply(): SchemaFreeBusyGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFreeBusyGroup]
   }
   
-  @scala.inline
-  implicit class SchemaFreeBusyGroupMutableBuilder[Self <: SchemaFreeBusyGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFreeBusyGroup](x: Self) {
     
-    @scala.inline
-    def setCalendars(value: js.Array[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+    inline def setCalendars(value: js.Array[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
+    inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    @scala.inline
-    def setCalendarsVarargs(value: String*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+    inline def setCalendarsVarargs(value: String*): Self = StObject.set(x, "calendars", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: js.Array[SchemaError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[SchemaError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: SchemaError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaError*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

@@ -18,19 +18,15 @@ trait DSAKeyPairKeyObjectOptions extends StObject {
 }
 object DSAKeyPairKeyObjectOptions {
   
-  @scala.inline
-  def apply(divisorLength: Double, modulusLength: Double): DSAKeyPairKeyObjectOptions = {
+  inline def apply(divisorLength: Double, modulusLength: Double): DSAKeyPairKeyObjectOptions = {
     val __obj = js.Dynamic.literal(divisorLength = divisorLength.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[DSAKeyPairKeyObjectOptions]
   }
   
-  @scala.inline
-  implicit class DSAKeyPairKeyObjectOptionsMutableBuilder[Self <: DSAKeyPairKeyObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DSAKeyPairKeyObjectOptions](x: Self) {
     
-    @scala.inline
-    def setDivisorLength(value: Double): Self = StObject.set(x, "divisorLength", value.asInstanceOf[js.Any])
+    inline def setDivisorLength(value: Double): Self = StObject.set(x, "divisorLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
+    inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
   }
 }

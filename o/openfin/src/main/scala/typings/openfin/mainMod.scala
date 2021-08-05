@@ -50,7 +50,7 @@ object mainMod {
   @js.native
   abstract class ChannelBase protected ()
     extends typings.openfin.contextChannelsMod.ChannelBase {
-    protected def this(id: String, `type`: String) = this()
+    /* protected */ def this(id: String, `type`: String) = this()
   }
   
   @JSImport("openfin/_v2/fdc3/main", "ChannelError")
@@ -158,56 +158,39 @@ object mainMod {
     def this(transport: SystemChannelTransport) = this()
   }
   
-  @scala.inline
-  def addContextListener(handler: js.Function1[/* context */ Context, Unit]): ContextListener = ^.asInstanceOf[js.Dynamic].applyDynamic("addContextListener")(handler.asInstanceOf[js.Any]).asInstanceOf[ContextListener]
+  inline def addContextListener(handler: js.Function1[/* context */ Context, Unit]): ContextListener = ^.asInstanceOf[js.Dynamic].applyDynamic("addContextListener")(handler.asInstanceOf[js.Any]).asInstanceOf[ContextListener]
   
-  @scala.inline
-  def addEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addIntentListener(intent: String, handler: js.Function1[/* context */ Context, js.Any]): IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IntentListener]
+  inline def addIntentListener(intent: String, handler: js.Function1[/* context */ Context, js.Any]): IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IntentListener]
   
-  @scala.inline
-  def broadcast(context: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def broadcast(context: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("openfin/_v2/fdc3/main", "defaultChannel")
   @js.native
   val defaultChannel: typings.openfin.contextChannelsMod.DefaultChannel_ = js.native
   
-  @scala.inline
-  def findIntent(intent: String): js.Promise[AppIntent] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppIntent]]
-  @scala.inline
-  def findIntent(intent: String, context: Context): js.Promise[AppIntent] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppIntent]]
+  inline def findIntent(intent: String): js.Promise[AppIntent] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppIntent]]
+  inline def findIntent(intent: String, context: Context): js.Promise[AppIntent] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppIntent]]
   
-  @scala.inline
-  def findIntentsByContext(context: Context): js.Promise[js.Array[AppIntent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntentsByContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AppIntent]]]
+  inline def findIntentsByContext(context: Context): js.Promise[js.Array[AppIntent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntentsByContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AppIntent]]]
   
-  @scala.inline
-  def getChannelById(channelId: ChannelId): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
+  inline def getChannelById(channelId: ChannelId): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @scala.inline
-  def getCurrentChannel(): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[Channel]]
-  @scala.inline
-  def getCurrentChannel(identity: Identity): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
+  inline def getCurrentChannel(): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[Channel]]
+  inline def getCurrentChannel(identity: Identity): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @scala.inline
-  def getOrCreateAppChannel(name: String): js.Promise[typings.openfin.contextChannelsMod.AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.AppChannel]]
+  inline def getOrCreateAppChannel(name: String): js.Promise[typings.openfin.contextChannelsMod.AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.AppChannel]]
   
-  @scala.inline
-  def getSystemChannels(): js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]]]
+  inline def getSystemChannels(): js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]]]
   
-  @scala.inline
-  def open(name: AppName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def open(name: AppName, context: Context): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def open(name: AppName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def open(name: AppName, context: Context): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def raiseIntent(intent: String, context: Context): js.Promise[IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntentResolution]]
-  @scala.inline
-  def raiseIntent(intent: String, context: Context, target: AppName): js.Promise[IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntentResolution]]
+  inline def raiseIntent(intent: String, context: Context): js.Promise[IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntentResolution]]
+  inline def raiseIntent(intent: String, context: Context, target: AppName): js.Promise[IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntentResolution]]
   
-  @scala.inline
-  def removeEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AppIntent extends StObject {
     
@@ -223,23 +206,18 @@ object mainMod {
   }
   object AppIntent {
     
-    @scala.inline
-    def apply(apps: js.Array[Application], intent: IntentMetadata): AppIntent = {
+    inline def apply(apps: js.Array[Application], intent: IntentMetadata): AppIntent = {
       val __obj = js.Dynamic.literal(apps = apps.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppIntent]
     }
     
-    @scala.inline
-    implicit class AppIntentMutableBuilder[Self <: AppIntent] (val x: Self) extends AnyVal {
+    extension [Self <: AppIntent](x: Self) {
       
-      @scala.inline
-      def setApps(value: js.Array[Application]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
+      inline def setApps(value: js.Array[Application]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppsVarargs(value: Application*): Self = StObject.set(x, "apps", js.Array(value :_*))
+      inline def setAppsVarargs(value: Application*): Self = StObject.set(x, "apps", js.Array(value :_*))
       
-      @scala.inline
-      def setIntent(value: IntentMetadata): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: IntentMetadata): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,20 +240,16 @@ object mainMod {
   }
   object ContextListener {
     
-    @scala.inline
-    def apply(handler: Context => Unit, unsubscribe: () => Unit): ContextListener = {
+    inline def apply(handler: Context => Unit, unsubscribe: () => Unit): ContextListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[ContextListener]
     }
     
-    @scala.inline
-    implicit class ContextListenerMutableBuilder[Self <: ContextListener] (val x: Self) extends AnyVal {
+    extension [Self <: ContextListener](x: Self) {
       
-      @scala.inline
-      def setHandler(value: Context => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: Context => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   
@@ -303,23 +277,18 @@ object mainMod {
   }
   object IntentListener {
     
-    @scala.inline
-    def apply(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): IntentListener = {
+    inline def apply(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): IntentListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), intent = intent.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[IntentListener]
     }
     
-    @scala.inline
-    implicit class IntentListenerMutableBuilder[Self <: IntentListener] (val x: Self) extends AnyVal {
+    extension [Self <: IntentListener](x: Self) {
       
-      @scala.inline
-      def setHandler(value: Context => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: Context => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   
@@ -337,20 +306,16 @@ object mainMod {
   }
   object IntentMetadata {
     
-    @scala.inline
-    def apply(displayName: String, name: String): IntentMetadata = {
+    inline def apply(displayName: String, name: String): IntentMetadata = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntentMetadata]
     }
     
-    @scala.inline
-    implicit class IntentMetadataMutableBuilder[Self <: IntentMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: IntentMetadata](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -376,26 +341,20 @@ object mainMod {
   }
   object IntentResolution {
     
-    @scala.inline
-    def apply(source: AppName, version: String): IntentResolution = {
+    inline def apply(source: AppName, version: String): IntentResolution = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntentResolution]
     }
     
-    @scala.inline
-    implicit class IntentResolutionMutableBuilder[Self <: IntentResolution] (val x: Self) extends AnyVal {
+    extension [Self <: IntentResolution](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setSource(value: AppName): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: AppName): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -407,20 +366,17 @@ object mainMod {
   trait Listener extends StObject
   object Listener {
     
-    @scala.inline
-    def ChannelContextListener(channel: Channel, handler: Context => Unit, unsubscribe: () => Unit): typings.openfin.contextChannelsMod.ChannelContextListener = {
+    inline def ChannelContextListener(channel: Channel, handler: Context => Unit, unsubscribe: () => Unit): typings.openfin.contextChannelsMod.ChannelContextListener = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler), unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[typings.openfin.contextChannelsMod.ChannelContextListener]
     }
     
-    @scala.inline
-    def ContextListener(handler: Context => Unit, unsubscribe: () => Unit): typings.openfin.mainMod.ContextListener = {
+    inline def ContextListener(handler: Context => Unit, unsubscribe: () => Unit): typings.openfin.mainMod.ContextListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[typings.openfin.mainMod.ContextListener]
     }
     
-    @scala.inline
-    def IntentListener(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): typings.openfin.mainMod.IntentListener = {
+    inline def IntentListener(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): typings.openfin.mainMod.IntentListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), intent = intent.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[typings.openfin.mainMod.IntentListener]
     }

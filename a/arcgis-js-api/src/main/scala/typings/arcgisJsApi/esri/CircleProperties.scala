@@ -51,43 +51,31 @@ trait CircleProperties
 }
 object CircleProperties {
   
-  @scala.inline
-  def apply(): CircleProperties = {
+  inline def apply(): CircleProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CircleProperties]
   }
   
-  @scala.inline
-  implicit class CirclePropertiesMutableBuilder[Self <: CircleProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CircleProperties](x: Self) {
     
-    @scala.inline
-    def setCenter(value: PointProperties): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: PointProperties): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
-    @scala.inline
-    def setNumberOfPoints(value: Double): Self = StObject.set(x, "numberOfPoints", value.asInstanceOf[js.Any])
+    inline def setNumberOfPoints(value: Double): Self = StObject.set(x, "numberOfPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfPointsUndefined: Self = StObject.set(x, "numberOfPoints", js.undefined)
+    inline def setNumberOfPointsUndefined: Self = StObject.set(x, "numberOfPoints", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setRadiusUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "radiusUnit", value.asInstanceOf[js.Any])
+    inline def setRadiusUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "radiusUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUnitUndefined: Self = StObject.set(x, "radiusUnit", js.undefined)
+    inline def setRadiusUnitUndefined: Self = StObject.set(x, "radiusUnit", js.undefined)
   }
 }

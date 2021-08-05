@@ -75,6 +75,5 @@ object Color_ {
     *
     * @return Color instance.
     */
-  @scala.inline
-  def parse(input: ColorType): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Color_]
+  inline def parse(input: ColorType): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Color_]
 }

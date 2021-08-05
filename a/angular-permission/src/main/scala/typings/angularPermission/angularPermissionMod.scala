@@ -13,18 +13,15 @@ object angularPermissionMod {
   @JSImport("angular-permission", "ngPermission")
   @js.native
   def ngPermission: String = js.native
-  @scala.inline
-  def ngPermission_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngPermission")(x.asInstanceOf[js.Any])
+  inline def ngPermission_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngPermission")(x.asInstanceOf[js.Any])
   
   @JSImport("angular-permission", "permission")
   @js.native
   def permission: String = js.native
-  @scala.inline
-  def permission_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("permission")(x.asInstanceOf[js.Any])
+  inline def permission_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("permission")(x.asInstanceOf[js.Any])
   
   @JSImport("angular-permission", "uiPermission")
   @js.native
   def uiPermission: String = js.native
-  @scala.inline
-  def uiPermission_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uiPermission")(x.asInstanceOf[js.Any])
+  inline def uiPermission_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uiPermission")(x.asInstanceOf[js.Any])
 }

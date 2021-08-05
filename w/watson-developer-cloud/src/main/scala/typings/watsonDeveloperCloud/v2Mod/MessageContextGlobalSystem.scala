@@ -18,31 +18,23 @@ trait MessageContextGlobalSystem extends StObject {
 }
 object MessageContextGlobalSystem {
   
-  @scala.inline
-  def apply(): MessageContextGlobalSystem = {
+  inline def apply(): MessageContextGlobalSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageContextGlobalSystem]
   }
   
-  @scala.inline
-  implicit class MessageContextGlobalSystemMutableBuilder[Self <: MessageContextGlobalSystem] (val x: Self) extends AnyVal {
+  extension [Self <: MessageContextGlobalSystem](x: Self) {
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    @scala.inline
-    def setTurn_count(value: Double): Self = StObject.set(x, "turn_count", value.asInstanceOf[js.Any])
+    inline def setTurn_count(value: Double): Self = StObject.set(x, "turn_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTurn_countUndefined: Self = StObject.set(x, "turn_count", js.undefined)
+    inline def setTurn_countUndefined: Self = StObject.set(x, "turn_count", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

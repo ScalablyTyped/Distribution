@@ -14,20 +14,16 @@ object global {
     }
     object Request {
       
-      @scala.inline
-      def apply(): Request = {
+      inline def apply(): Request = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setOauth2(value: OAuth2): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
+        inline def setOauth2(value: OAuth2): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
+        inline def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
       }
     }
   }

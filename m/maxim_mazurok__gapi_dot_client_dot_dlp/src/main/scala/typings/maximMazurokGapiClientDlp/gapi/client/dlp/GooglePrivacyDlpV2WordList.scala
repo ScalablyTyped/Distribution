@@ -11,22 +11,17 @@ trait GooglePrivacyDlpV2WordList extends StObject {
 }
 object GooglePrivacyDlpV2WordList {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2WordList = {
+  inline def apply(): GooglePrivacyDlpV2WordList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2WordList]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2WordListMutableBuilder[Self <: GooglePrivacyDlpV2WordList] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2WordList](x: Self) {
     
-    @scala.inline
-    def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

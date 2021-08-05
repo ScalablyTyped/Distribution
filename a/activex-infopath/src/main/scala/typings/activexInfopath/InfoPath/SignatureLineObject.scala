@@ -8,7 +8,7 @@ trait SignatureLineObject extends StObject {
   
   val Id: String
   
-  @JSName("InfoPath.SignatureLineObject_typekey")
+  /* private */ @JSName("InfoPath.SignatureLineObject_typekey")
   var InfoPathDotSignatureLineObject_typekey: SignatureLineObject
   
   def Sign(
@@ -30,8 +30,7 @@ trait SignatureLineObject extends StObject {
 }
 object SignatureLineObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Id: String,
     InfoPathDotSignatureLineObject_typekey: SignatureLineObject,
     Sign: (String, String, String, String) => Boolean,
@@ -46,31 +45,22 @@ object SignatureLineObject {
     __obj.asInstanceOf[SignatureLineObject]
   }
   
-  @scala.inline
-  implicit class SignatureLineObjectMutableBuilder[Self <: SignatureLineObject] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureLineObject](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotSignatureLineObject_typekey(value: SignatureLineObject): Self = StObject.set(x, "InfoPath.SignatureLineObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSignatureLineObject_typekey(value: SignatureLineObject): Self = StObject.set(x, "InfoPath.SignatureLineObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSign(value: (String, String, String, String) => Boolean): Self = StObject.set(x, "Sign", js.Any.fromFunction4(value))
+    inline def setSign(value: (String, String, String, String) => Boolean): Self = StObject.set(x, "Sign", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSignature(value: SignatureObject): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: SignatureObject): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAppearanceType(value: XdSignatureAppearanceType): Self = StObject.set(x, "SignatureAppearanceType", value.asInstanceOf[js.Any])
+    inline def setSignatureAppearanceType(value: XdSignatureAppearanceType): Self = StObject.set(x, "SignatureAppearanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedSigner(value: String): Self = StObject.set(x, "SuggestedSigner", value.asInstanceOf[js.Any])
+    inline def setSuggestedSigner(value: String): Self = StObject.set(x, "SuggestedSigner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedSignerEmailAddress(value: String): Self = StObject.set(x, "SuggestedSignerEmailAddress", value.asInstanceOf[js.Any])
+    inline def setSuggestedSignerEmailAddress(value: String): Self = StObject.set(x, "SuggestedSignerEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedSignerTitle(value: String): Self = StObject.set(x, "SuggestedSignerTitle", value.asInstanceOf[js.Any])
+    inline def setSuggestedSignerTitle(value: String): Self = StObject.set(x, "SuggestedSignerTitle", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait IStructureJson extends StObject {
 }
 object IStructureJson {
   
-  @scala.inline
-  def apply($ID: String, $Type: String): IStructureJson = {
+  inline def apply($ID: String, $Type: String): IStructureJson = {
     val __obj = js.Dynamic.literal($ID = $ID.asInstanceOf[js.Any], $Type = $Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStructureJson]
   }
   
-  @scala.inline
-  implicit class IStructureJsonMutableBuilder[Self <: IStructureJson] (val x: Self) extends AnyVal {
+  extension [Self <: IStructureJson](x: Self) {
     
-    @scala.inline
-    def set$ID(value: String): Self = StObject.set(x, "$ID", value.asInstanceOf[js.Any])
+    inline def set$ID(value: String): Self = StObject.set(x, "$ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$Type(value: String): Self = StObject.set(x, "$Type", value.asInstanceOf[js.Any])
+    inline def set$Type(value: String): Self = StObject.set(x, "$Type", value.asInstanceOf[js.Any])
   }
 }

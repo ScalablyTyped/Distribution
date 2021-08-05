@@ -31,35 +31,26 @@ object typesBatchGetRepositoriesOutputMod {
   }
   object BatchGetRepositoriesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): BatchGetRepositoriesOutput = {
+    inline def apply($metadata: ResponseMetadata): BatchGetRepositoriesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchGetRepositoriesOutput]
     }
     
-    @scala.inline
-    implicit class BatchGetRepositoriesOutputMutableBuilder[Self <: BatchGetRepositoriesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: BatchGetRepositoriesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositories(value: js.Array[UnmarshalledRepositoryMetadata]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+      inline def setRepositories(value: js.Array[UnmarshalledRepositoryMetadata]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoriesNotFound(value: js.Array[String]): Self = StObject.set(x, "repositoriesNotFound", value.asInstanceOf[js.Any])
+      inline def setRepositoriesNotFound(value: js.Array[String]): Self = StObject.set(x, "repositoriesNotFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoriesNotFoundUndefined: Self = StObject.set(x, "repositoriesNotFound", js.undefined)
+      inline def setRepositoriesNotFoundUndefined: Self = StObject.set(x, "repositoriesNotFound", js.undefined)
       
-      @scala.inline
-      def setRepositoriesNotFoundVarargs(value: String*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value :_*))
+      inline def setRepositoriesNotFoundVarargs(value: String*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value :_*))
       
-      @scala.inline
-      def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
+      inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
       
-      @scala.inline
-      def setRepositoriesVarargs(value: UnmarshalledRepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+      inline def setRepositoriesVarargs(value: UnmarshalledRepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value :_*))
     }
   }
 }

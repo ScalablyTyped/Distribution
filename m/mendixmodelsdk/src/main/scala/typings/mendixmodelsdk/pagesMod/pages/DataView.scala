@@ -113,8 +113,7 @@ object DataView {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def create(model: IModel): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -125,8 +124,7 @@ object DataView {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -137,8 +135,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -149,8 +146,7 @@ object DataView {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInDataViewUnderFooterWidget(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -161,8 +157,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidgets(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInDataViewUnderFooterWidgets(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -173,8 +168,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInDataViewUnderWidget(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -185,8 +179,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidgets(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInDataViewUnderWidgets(container: DataView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -197,8 +190,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInDivContainerUnderWidget(container: DivContainer): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -209,8 +201,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidgets(container: DivContainer): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInDivContainerUnderWidgets(container: DivContainer): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -221,8 +212,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -233,8 +223,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidgets(container: GroupBox): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInGroupBoxUnderWidgets(container: GroupBox): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -245,8 +234,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInHeaderUnderLeftWidget(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -257,8 +245,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidgets(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInHeaderUnderLeftWidgets(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -269,8 +256,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInHeaderUnderRightWidget(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -281,8 +267,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidgets(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInHeaderUnderRightWidgets(container: Header): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -293,8 +278,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -305,8 +289,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -317,8 +300,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -329,8 +311,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -341,8 +322,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInLayoutUnderWidget(container: Layout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -353,8 +333,7 @@ object DataView {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidgets(container: Layout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInLayoutUnderWidgets(container: Layout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -365,8 +344,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -377,8 +355,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -389,8 +366,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInListViewUnderWidget(container: ListView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -401,8 +377,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidgets(container: ListView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInListViewUnderWidgets(container: ListView): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -413,8 +388,7 @@ object DataView {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -425,8 +399,7 @@ object DataView {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -437,8 +410,7 @@ object DataView {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -449,8 +421,7 @@ object DataView {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -461,8 +432,7 @@ object DataView {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -473,8 +443,7 @@ object DataView {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInNativeLayoutUnderWidgets(container: NativeLayout): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -485,8 +454,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -497,8 +465,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -509,8 +476,7 @@ object DataView {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -521,8 +487,7 @@ object DataView {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -533,8 +498,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -545,8 +509,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -557,8 +520,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInSnippetUnderWidget(container: Snippet): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -569,8 +531,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidgets(container: Snippet): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInSnippetUnderWidgets(container: Snippet): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -581,8 +542,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -593,8 +553,7 @@ object DataView {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -605,8 +564,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -617,8 +575,7 @@ object DataView {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -629,8 +586,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInTabPageUnderWidget(container: TabPage): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -641,8 +597,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidgets(container: TabPage): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInTabPageUnderWidgets(container: TabPage): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -653,8 +608,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInTableCellUnderWidget(container: TableCell): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -665,8 +619,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidgets(container: TableCell): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInTableCellUnderWidgets(container: TableCell): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -677,8 +630,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -689,8 +641,7 @@ object DataView {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -701,8 +652,7 @@ object DataView {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -713,8 +663,7 @@ object DataView {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /**
     * Creates and returns a new DataView instance in the SDK and on the server.
@@ -725,20 +674,17 @@ object DataView {
     *  8.2.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderWidgets(container: WidgetValue): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
+  inline def createInWidgetValueUnderWidgets(container: WidgetValue): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataView.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

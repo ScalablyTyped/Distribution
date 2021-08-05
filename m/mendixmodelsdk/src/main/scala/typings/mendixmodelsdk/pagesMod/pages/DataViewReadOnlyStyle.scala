@@ -21,13 +21,11 @@ object DataViewReadOnlyStyle {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewReadOnlyStyle.Control")
   @js.native
   def Control: DataViewReadOnlyStyle = js.native
-  @scala.inline
-  def Control_=(x: DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
+  inline def Control_=(x: DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewReadOnlyStyle.Text")
   @js.native
   def Text: DataViewReadOnlyStyle = js.native
-  @scala.inline
-  def Text_=(x: DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  inline def Text_=(x: DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

@@ -23,31 +23,23 @@ trait AwsCredentials extends StObject {
 }
 object AwsCredentials {
   
-  @scala.inline
-  def apply(): AwsCredentials = {
+  inline def apply(): AwsCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCredentials]
   }
   
-  @scala.inline
-  implicit class AwsCredentialsMutableBuilder[Self <: AwsCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCredentials](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: NonEmptyString): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: NonEmptyString): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
+    inline def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
     
-    @scala.inline
-    def setSecretAccessKey(value: NonEmptyString): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
+    inline def setSecretAccessKey(value: NonEmptyString): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretAccessKeyUndefined: Self = StObject.set(x, "SecretAccessKey", js.undefined)
+    inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "SecretAccessKey", js.undefined)
     
-    @scala.inline
-    def setSessionToken(value: NonEmptyString): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
+    inline def setSessionToken(value: NonEmptyString): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
+    inline def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
   }
 }

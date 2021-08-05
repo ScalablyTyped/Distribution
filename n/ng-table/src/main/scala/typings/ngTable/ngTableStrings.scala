@@ -13,36 +13,31 @@ object ngTableStrings {
   sealed trait _empty
     extends StObject
        with GroupSort
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait asc
     extends StObject
        with GroupSort
        with SortDirection
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait desc
     extends StObject
        with GroupSort
        with SortDirection
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait horizontal
     extends StObject
        with FilterLayout
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait stack
     extends StObject
        with FilterLayout
-  @scala.inline
-  def stack: stack = "stack".asInstanceOf[stack]
+  inline def stack: stack = "stack".asInstanceOf[stack]
 }

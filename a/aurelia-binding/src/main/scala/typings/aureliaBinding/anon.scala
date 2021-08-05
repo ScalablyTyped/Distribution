@@ -481,20 +481,16 @@ object anon {
   }
   object Properties {
     
-    @scala.inline
-    def apply(properties: StringDictionary[js.Array[String]], tagName: String): Properties = {
+    inline def apply(properties: StringDictionary[js.Array[String]], tagName: String): Properties = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Properties]
     }
     
-    @scala.inline
-    implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+    extension [Self <: Properties](x: Self) {
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }
   }
 }

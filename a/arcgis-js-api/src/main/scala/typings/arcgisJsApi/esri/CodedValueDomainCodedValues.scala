@@ -26,8 +26,7 @@ trait CodedValueDomainCodedValues
 }
 object CodedValueDomainCodedValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String | Double,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object CodedValueDomainCodedValues {
     __obj.asInstanceOf[CodedValueDomainCodedValues]
   }
   
-  @scala.inline
-  implicit class CodedValueDomainCodedValuesMutableBuilder[Self <: CodedValueDomainCodedValues] (val x: Self) extends AnyVal {
+  extension [Self <: CodedValueDomainCodedValues](x: Self) {
     
-    @scala.inline
-    def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

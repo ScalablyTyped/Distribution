@@ -16,19 +16,15 @@ trait EnumOperatorOptions extends StObject {
 }
 object EnumOperatorOptions {
   
-  @scala.inline
-  def apply(): EnumOperatorOptions = {
+  inline def apply(): EnumOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnumOperatorOptions]
   }
   
-  @scala.inline
-  implicit class EnumOperatorOptionsMutableBuilder[Self <: EnumOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnumOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

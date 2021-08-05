@@ -13,16 +13,13 @@ trait DescribeBuildInput extends StObject {
 }
 object DescribeBuildInput {
   
-  @scala.inline
-  def apply(BuildId: BuildIdOrArn): DescribeBuildInput = {
+  inline def apply(BuildId: BuildIdOrArn): DescribeBuildInput = {
     val __obj = js.Dynamic.literal(BuildId = BuildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBuildInput]
   }
   
-  @scala.inline
-  implicit class DescribeBuildInputMutableBuilder[Self <: DescribeBuildInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBuildInput](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
   }
 }

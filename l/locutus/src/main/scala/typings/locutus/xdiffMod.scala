@@ -10,9 +10,7 @@ object xdiffMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def xdiffStringDiff(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xdiff_string_diff")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def xdiffStringDiff(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xdiff_string_diff")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def xdiffStringPatch(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xdiff_string_patch")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def xdiffStringPatch(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xdiff_string_patch")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

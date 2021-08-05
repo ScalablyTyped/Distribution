@@ -22,7 +22,6 @@ object cryptoMod {
     @JSImport("google-auth-library/build/src/crypto/browser/crypto", "BrowserCrypto.padBase64")
     @js.native
     def padBase64: js.Any = js.native
-    @scala.inline
-    def padBase64_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("padBase64")(x.asInstanceOf[js.Any])
+    inline def padBase64_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("padBase64")(x.asInstanceOf[js.Any])
   }
 }

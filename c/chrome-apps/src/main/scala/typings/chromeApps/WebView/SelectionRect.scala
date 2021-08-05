@@ -26,25 +26,19 @@ trait SelectionRect extends StObject {
 }
 object SelectionRect {
   
-  @scala.inline
-  def apply(height: integer, left: integer, top: integer, width: integer): SelectionRect = {
+  inline def apply(height: integer, left: integer, top: integer, width: integer): SelectionRect = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionRect]
   }
   
-  @scala.inline
-  implicit class SelectionRectMutableBuilder[Self <: SelectionRect] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionRect](x: Self) {
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -26,11 +26,9 @@ object viewCompilerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compileComponentFromMetadata(meta: R3ComponentMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3ComponentDef = (^.asInstanceOf[js.Dynamic].applyDynamic("compileComponentFromMetadata")(meta.asInstanceOf[js.Any], constantPool.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[R3ComponentDef]
+  inline def compileComponentFromMetadata(meta: R3ComponentMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3ComponentDef = (^.asInstanceOf[js.Dynamic].applyDynamic("compileComponentFromMetadata")(meta.asInstanceOf[js.Any], constantPool.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[R3ComponentDef]
   
-  @scala.inline
-  def compileComponentFromRender2(
+  inline def compileComponentFromRender2(
     outputCtx: OutputContext,
     component: CompileDirectiveMetadata,
     render3Ast: Render3ParseResult,
@@ -40,22 +38,18 @@ object viewCompilerMod {
     pipeTypeByName: Map[String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileComponentFromRender2")(outputCtx.asInstanceOf[js.Any], component.asInstanceOf[js.Any], render3Ast.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any], directiveTypeBySel.asInstanceOf[js.Any], pipeTypeByName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def compileDirectiveFromMetadata(meta: R3DirectiveMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3DirectiveDef = (^.asInstanceOf[js.Dynamic].applyDynamic("compileDirectiveFromMetadata")(meta.asInstanceOf[js.Any], constantPool.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[R3DirectiveDef]
+  inline def compileDirectiveFromMetadata(meta: R3DirectiveMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3DirectiveDef = (^.asInstanceOf[js.Dynamic].applyDynamic("compileDirectiveFromMetadata")(meta.asInstanceOf[js.Any], constantPool.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[R3DirectiveDef]
   
-  @scala.inline
-  def compileDirectiveFromRender2(
+  inline def compileDirectiveFromRender2(
     outputCtx: OutputContext,
     directive: CompileDirectiveMetadata,
     reflector: CompileReflector,
     bindingParser: BindingParser
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileDirectiveFromRender2")(outputCtx.asInstanceOf[js.Any], directive.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def parseHostBindings(host: StringDictionary[String | Expression]): ParsedHostBindings = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHostBindings")(host.asInstanceOf[js.Any]).asInstanceOf[ParsedHostBindings]
+  inline def parseHostBindings(host: StringDictionary[String | Expression]): ParsedHostBindings = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHostBindings")(host.asInstanceOf[js.Any]).asInstanceOf[ParsedHostBindings]
   
-  @scala.inline
-  def verifyHostBindings(bindings: ParsedHostBindings, sourceSpan: ParseSourceSpan): js.Array[ParseError] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyHostBindings")(bindings.asInstanceOf[js.Any], sourceSpan.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseError]]
+  inline def verifyHostBindings(bindings: ParsedHostBindings, sourceSpan: ParseSourceSpan): js.Array[ParseError] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyHostBindings")(bindings.asInstanceOf[js.Any], sourceSpan.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseError]]
   
   trait ParsedHostBindings extends StObject {
     
@@ -69,8 +63,7 @@ object viewCompilerMod {
   }
   object ParsedHostBindings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: StringDictionary[Expression],
       listeners: StringDictionary[String],
       properties: StringDictionary[String],
@@ -80,20 +73,15 @@ object viewCompilerMod {
       __obj.asInstanceOf[ParsedHostBindings]
     }
     
-    @scala.inline
-    implicit class ParsedHostBindingsMutableBuilder[Self <: ParsedHostBindings] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedHostBindings](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[Expression]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[Expression]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListeners(value: StringDictionary[String]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: StringDictionary[String]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecialAttributes(value: ClassAttr): Self = StObject.set(x, "specialAttributes", value.asInstanceOf[js.Any])
+      inline def setSpecialAttributes(value: ClassAttr): Self = StObject.set(x, "specialAttributes", value.asInstanceOf[js.Any])
     }
   }
 }

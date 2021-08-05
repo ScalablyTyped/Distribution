@@ -14,7 +14,7 @@ object transformMod {
     
     def addChild(child: Transform): Unit = js.native
     
-    var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Transform> */ js.Any = js.native
+    /* protected */ var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Transform> */ js.Any = js.native
     
     /* protected */ def clearCache(): Unit = js.native
     
@@ -39,7 +39,7 @@ object transformMod {
     
     var isTranslate: Boolean = js.native
     
-    var p_parent: Transform = js.native
+    /* protected */ var p_parent: Transform = js.native
     
     var parent: Transform = js.native
     

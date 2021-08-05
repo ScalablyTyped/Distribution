@@ -28,37 +28,27 @@ trait DescribeConfigurationRevisionResponse extends StObject {
 }
 object DescribeConfigurationRevisionResponse {
   
-  @scala.inline
-  def apply(): DescribeConfigurationRevisionResponse = {
+  inline def apply(): DescribeConfigurationRevisionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigurationRevisionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationRevisionResponseMutableBuilder[Self <: DescribeConfigurationRevisionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationRevisionResponse](x: Self) {
     
-    @scala.inline
-    def setConfigurationId(value: string): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: string): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIdUndefined: Self = StObject.set(x, "ConfigurationId", js.undefined)
+    inline def setConfigurationIdUndefined: Self = StObject.set(x, "ConfigurationId", js.undefined)
     
-    @scala.inline
-    def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
-    @scala.inline
-    def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

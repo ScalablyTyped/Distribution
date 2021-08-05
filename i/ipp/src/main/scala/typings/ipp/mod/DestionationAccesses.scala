@@ -18,46 +18,33 @@ trait DestionationAccesses extends StObject {
 }
 object DestionationAccesses {
   
-  @scala.inline
-  def apply(): DestionationAccesses = {
+  inline def apply(): DestionationAccesses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestionationAccesses]
   }
   
-  @scala.inline
-  implicit class DestionationAccessesMutableBuilder[Self <: DestionationAccesses] (val x: Self) extends AnyVal {
+  extension [Self <: DestionationAccesses](x: Self) {
     
-    @scala.inline
-    def `setAccess-oauth-token`(value: js.Array[String]): Self = StObject.set(x, "access-oauth-token", value.asInstanceOf[js.Any])
+    inline def `setAccess-oauth-token`(value: js.Array[String]): Self = StObject.set(x, "access-oauth-token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAccess-oauth-tokenUndefined`: Self = StObject.set(x, "access-oauth-token", js.undefined)
+    inline def `setAccess-oauth-tokenUndefined`: Self = StObject.set(x, "access-oauth-token", js.undefined)
     
-    @scala.inline
-    def `setAccess-oauth-tokenVarargs`(value: String*): Self = StObject.set(x, "access-oauth-token", js.Array(value :_*))
+    inline def `setAccess-oauth-tokenVarargs`(value: String*): Self = StObject.set(x, "access-oauth-token", js.Array(value :_*))
     
-    @scala.inline
-    def `setAccess-oauth-uri`(value: String): Self = StObject.set(x, "access-oauth-uri", value.asInstanceOf[js.Any])
+    inline def `setAccess-oauth-uri`(value: String): Self = StObject.set(x, "access-oauth-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAccess-oauth-uriUndefined`: Self = StObject.set(x, "access-oauth-uri", js.undefined)
+    inline def `setAccess-oauth-uriUndefined`: Self = StObject.set(x, "access-oauth-uri", js.undefined)
     
-    @scala.inline
-    def `setAccess-password`(value: String): Self = StObject.set(x, "access-password", value.asInstanceOf[js.Any])
+    inline def `setAccess-password`(value: String): Self = StObject.set(x, "access-password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAccess-passwordUndefined`: Self = StObject.set(x, "access-password", js.undefined)
+    inline def `setAccess-passwordUndefined`: Self = StObject.set(x, "access-password", js.undefined)
     
-    @scala.inline
-    def `setAccess-pin`(value: String): Self = StObject.set(x, "access-pin", value.asInstanceOf[js.Any])
+    inline def `setAccess-pin`(value: String): Self = StObject.set(x, "access-pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAccess-pinUndefined`: Self = StObject.set(x, "access-pin", js.undefined)
+    inline def `setAccess-pinUndefined`: Self = StObject.set(x, "access-pin", js.undefined)
     
-    @scala.inline
-    def `setAccess-user-name`(value: String): Self = StObject.set(x, "access-user-name", value.asInstanceOf[js.Any])
+    inline def `setAccess-user-name`(value: String): Self = StObject.set(x, "access-user-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAccess-user-nameUndefined`: Self = StObject.set(x, "access-user-name", js.undefined)
+    inline def `setAccess-user-nameUndefined`: Self = StObject.set(x, "access-user-name", js.undefined)
   }
 }

@@ -28,49 +28,35 @@ trait CloudSqlAdvancedParameters extends StObject {
 }
 object CloudSqlAdvancedParameters {
   
-  @scala.inline
-  def apply(): CloudSqlAdvancedParameters = {
+  inline def apply(): CloudSqlAdvancedParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudSqlAdvancedParameters]
   }
   
-  @scala.inline
-  implicit class CloudSqlAdvancedParametersMutableBuilder[Self <: CloudSqlAdvancedParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CloudSqlAdvancedParameters](x: Self) {
     
-    @scala.inline
-    def setConnectTimeoutSeconds(value: Integer): Self = StObject.set(x, "connectTimeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setConnectTimeoutSeconds(value: Integer): Self = StObject.set(x, "connectTimeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectTimeoutSecondsUndefined: Self = StObject.set(x, "connectTimeoutSeconds", js.undefined)
+    inline def setConnectTimeoutSecondsUndefined: Self = StObject.set(x, "connectTimeoutSeconds", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setQueryTimeoutSeconds(value: Integer): Self = StObject.set(x, "queryTimeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setQueryTimeoutSeconds(value: Integer): Self = StObject.set(x, "queryTimeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTimeoutSecondsUndefined: Self = StObject.set(x, "queryTimeoutSeconds", js.undefined)
+    inline def setQueryTimeoutSecondsUndefined: Self = StObject.set(x, "queryTimeoutSeconds", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

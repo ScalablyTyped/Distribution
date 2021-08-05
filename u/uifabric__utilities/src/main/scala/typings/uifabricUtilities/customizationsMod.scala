@@ -20,54 +20,41 @@ object customizationsMod {
     @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations._raiseChange")
     @js.native
     def _raiseChange: js.Any = js.native
-    @scala.inline
-    def _raiseChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_raiseChange")(x.asInstanceOf[js.Any])
+    inline def _raiseChange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_raiseChange")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations._suppressUpdates")
     @js.native
     def _suppressUpdates: js.Any = js.native
-    @scala.inline
-    def _suppressUpdates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_suppressUpdates")(x.asInstanceOf[js.Any])
+    inline def _suppressUpdates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_suppressUpdates")(x.asInstanceOf[js.Any])
     
     /** Used to run some code that sets Customizations without triggering an update until the end.
       * Useful for applying Customizations that don't affect anything currently rendered, or for
       * applying many customizations at once.
       * @param suppressUpdate - Do not raise the change event at the end, preventing all updates
       */
-    @scala.inline
-    def applyBatchedUpdates(code: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def applyBatchedUpdates(code: js.Function0[Unit], suppressUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any], suppressUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def applyBatchedUpdates(code: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def applyBatchedUpdates(code: js.Function0[Unit], suppressUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any], suppressUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Apply Customizations to a particular named scope, like a component.
       * @example Customizations.applyScopedSettings('Nav', \{ styles: () =\> \{\} \});
       */
-    @scala.inline
-    def applyScopedSettings(scopeName: String, settings: ISettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyScopedSettings")(scopeName.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def applyScopedSettings(scopeName: String, settings: ISettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyScopedSettings")(scopeName.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Apply global Customization settings.
       * @example Customizations.applySettings(\{ theme: \{...\} \});
       */
-    @scala.inline
-    def applySettings(settings: ISettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def applySettings(settings: ISettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getSettings(properties: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def getSettings(properties: js.Array[String], scopeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getSettings(properties: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getSettings(properties: js.Array[String], scopeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def observe(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def observe(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+    inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
-    @scala.inline
-    def unobserve(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unobserve")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unobserve(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unobserve")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait ICustomizations extends StObject {
@@ -80,26 +67,20 @@ object customizationsMod {
   }
   object ICustomizations {
     
-    @scala.inline
-    def apply(scopedSettings: StringDictionary[ISettings], settings: ISettings): ICustomizations = {
+    inline def apply(scopedSettings: StringDictionary[ISettings], settings: ISettings): ICustomizations = {
       val __obj = js.Dynamic.literal(scopedSettings = scopedSettings.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomizations]
     }
     
-    @scala.inline
-    implicit class ICustomizationsMutableBuilder[Self <: ICustomizations] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomizations](x: Self) {
       
-      @scala.inline
-      def setInCustomizerContext(value: Boolean): Self = StObject.set(x, "inCustomizerContext", value.asInstanceOf[js.Any])
+      inline def setInCustomizerContext(value: Boolean): Self = StObject.set(x, "inCustomizerContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInCustomizerContextUndefined: Self = StObject.set(x, "inCustomizerContext", js.undefined)
+      inline def setInCustomizerContextUndefined: Self = StObject.set(x, "inCustomizerContext", js.undefined)
       
-      @scala.inline
-      def setScopedSettings(value: StringDictionary[ISettings]): Self = StObject.set(x, "scopedSettings", value.asInstanceOf[js.Any])
+      inline def setScopedSettings(value: StringDictionary[ISettings]): Self = StObject.set(x, "scopedSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: ISettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: ISettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   

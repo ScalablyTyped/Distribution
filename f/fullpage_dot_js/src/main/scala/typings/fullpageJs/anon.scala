@@ -27,32 +27,24 @@ object anon {
   }
   object FadeBackground {
     
-    @scala.inline
-    def apply(): FadeBackground = {
+    inline def apply(): FadeBackground = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FadeBackground]
     }
     
-    @scala.inline
-    implicit class FadeBackgroundMutableBuilder[Self <: FadeBackground] (val x: Self) extends AnyVal {
+    extension [Self <: FadeBackground](x: Self) {
       
-      @scala.inline
-      def setFadeBackground(value: Boolean): Self = StObject.set(x, "fadeBackground", value.asInstanceOf[js.Any])
+      inline def setFadeBackground(value: Boolean): Self = StObject.set(x, "fadeBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeBackgroundUndefined: Self = StObject.set(x, "fadeBackground", js.undefined)
+      inline def setFadeBackgroundUndefined: Self = StObject.set(x, "fadeBackground", js.undefined)
       
-      @scala.inline
-      def setFadeContent(value: Boolean): Self = StObject.set(x, "fadeContent", value.asInstanceOf[js.Any])
+      inline def setFadeContent(value: Boolean): Self = StObject.set(x, "fadeContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeContentUndefined: Self = StObject.set(x, "fadeContent", js.undefined)
+      inline def setFadeContentUndefined: Self = StObject.set(x, "fadeContent", js.undefined)
       
-      @scala.inline
-      def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+      inline def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
+      inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
     }
   }
   
@@ -66,32 +58,24 @@ object anon {
   }
   object Percentage {
     
-    @scala.inline
-    def apply(): Percentage = {
+    inline def apply(): Percentage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Percentage]
     }
     
-    @scala.inline
-    implicit class PercentageMutableBuilder[Self <: Percentage] (val x: Self) extends AnyVal {
+    extension [Self <: Percentage](x: Self) {
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setType(value: cover | reveal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: cover | reveal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -112,20 +96,16 @@ object anon {
   }
   object ToSections {
     
-    @scala.inline
-    def apply(toSections: () => Unit, toSlides: () => Unit): ToSections = {
+    inline def apply(toSections: () => Unit, toSlides: () => Unit): ToSections = {
       val __obj = js.Dynamic.literal(toSections = js.Any.fromFunction0(toSections), toSlides = js.Any.fromFunction0(toSlides))
       __obj.asInstanceOf[ToSections]
     }
     
-    @scala.inline
-    implicit class ToSectionsMutableBuilder[Self <: ToSections] (val x: Self) extends AnyVal {
+    extension [Self <: ToSections](x: Self) {
       
-      @scala.inline
-      def setToSections(value: () => Unit): Self = StObject.set(x, "toSections", js.Any.fromFunction0(value))
+      inline def setToSections(value: () => Unit): Self = StObject.set(x, "toSections", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSlides(value: () => Unit): Self = StObject.set(x, "toSlides", js.Any.fromFunction0(value))
+      inline def setToSlides(value: () => Unit): Self = StObject.set(x, "toSlides", js.Any.fromFunction0(value))
     }
   }
 }

@@ -15,8 +15,7 @@ object notificationDismissIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -28,8 +27,7 @@ object notificationDismissIconMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dismissNotification: SyntheticEvent[typings.std.Element, Event] => Unit,
       notification: Notification
     ): Props = {
@@ -37,20 +35,15 @@ object notificationDismissIconMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setDismissNotification(value: SyntheticEvent[typings.std.Element, Event] => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
+      inline def setDismissNotification(value: SyntheticEvent[typings.std.Element, Event] => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

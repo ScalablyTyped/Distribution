@@ -12,17 +12,14 @@ object anon {
   }
   object Async {
     
-    @scala.inline
-    def apply(async: Boolean): Async = {
+    inline def apply(async: Boolean): Async = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[Async]
     }
     
-    @scala.inline
-    implicit class AsyncMutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
+    extension [Self <: Async](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     }
   }
 }

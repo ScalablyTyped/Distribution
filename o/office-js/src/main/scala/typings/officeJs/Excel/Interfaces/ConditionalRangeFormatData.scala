@@ -41,40 +41,29 @@ trait ConditionalRangeFormatData extends StObject {
 }
 object ConditionalRangeFormatData {
   
-  @scala.inline
-  def apply(): ConditionalRangeFormatData = {
+  inline def apply(): ConditionalRangeFormatData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalRangeFormatData]
   }
   
-  @scala.inline
-  implicit class ConditionalRangeFormatDataMutableBuilder[Self <: ConditionalRangeFormatData] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalRangeFormatData](x: Self) {
     
-    @scala.inline
-    def setBorders(value: js.Array[ConditionalRangeBorderData]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: js.Array[ConditionalRangeBorderData]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
+    inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
-    @scala.inline
-    def setBordersVarargs(value: ConditionalRangeBorderData*): Self = StObject.set(x, "borders", js.Array(value :_*))
+    inline def setBordersVarargs(value: ConditionalRangeBorderData*): Self = StObject.set(x, "borders", js.Array(value :_*))
     
-    @scala.inline
-    def setFill(value: ConditionalRangeFillData): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ConditionalRangeFillData): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setFont(value: ConditionalRangeFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: ConditionalRangeFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: js.Any): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: js.Any): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
   }
 }

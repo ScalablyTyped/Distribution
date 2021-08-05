@@ -17,28 +17,21 @@ trait ExternalCA extends StObject {
 }
 object ExternalCA {
   
-  @scala.inline
-  def apply(CACert: String, Protocol: ExternalCAProtocol, URL: String): ExternalCA = {
+  inline def apply(CACert: String, Protocol: ExternalCAProtocol, URL: String): ExternalCA = {
     val __obj = js.Dynamic.literal(CACert = CACert.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalCA]
   }
   
-  @scala.inline
-  implicit class ExternalCAMutableBuilder[Self <: ExternalCA] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalCA](x: Self) {
     
-    @scala.inline
-    def setCACert(value: String): Self = StObject.set(x, "CACert", value.asInstanceOf[js.Any])
+    inline def setCACert(value: String): Self = StObject.set(x, "CACert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: ExternalCAProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: ExternalCAProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

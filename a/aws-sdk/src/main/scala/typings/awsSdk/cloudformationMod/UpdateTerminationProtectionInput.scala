@@ -18,19 +18,15 @@ trait UpdateTerminationProtectionInput extends StObject {
 }
 object UpdateTerminationProtectionInput {
   
-  @scala.inline
-  def apply(EnableTerminationProtection: EnableTerminationProtection, StackName: StackNameOrId): UpdateTerminationProtectionInput = {
+  inline def apply(EnableTerminationProtection: EnableTerminationProtection, StackName: StackNameOrId): UpdateTerminationProtectionInput = {
     val __obj = js.Dynamic.literal(EnableTerminationProtection = EnableTerminationProtection.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTerminationProtectionInput]
   }
   
-  @scala.inline
-  implicit class UpdateTerminationProtectionInputMutableBuilder[Self <: UpdateTerminationProtectionInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTerminationProtectionInput](x: Self) {
     
-    @scala.inline
-    def setEnableTerminationProtection(value: EnableTerminationProtection): Self = StObject.set(x, "EnableTerminationProtection", value.asInstanceOf[js.Any])
+    inline def setEnableTerminationProtection(value: EnableTerminationProtection): Self = StObject.set(x, "EnableTerminationProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

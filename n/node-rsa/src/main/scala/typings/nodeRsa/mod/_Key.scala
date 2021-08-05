@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _Key extends StObject
 object _Key {
   
-  @scala.inline
-  def KeyComponentsPrivate(
+  inline def KeyComponentsPrivate(
     coeff: Buffer,
     d: Buffer,
     dmp1: Buffer,
@@ -23,8 +22,7 @@ object _Key {
     __obj.asInstanceOf[typings.nodeRsa.mod.KeyComponentsPrivate]
   }
   
-  @scala.inline
-  def KeyComponentsPublic(e: Buffer | Double, n: Buffer): typings.nodeRsa.mod.KeyComponentsPublic = {
+  inline def KeyComponentsPublic(e: Buffer | Double, n: Buffer): typings.nodeRsa.mod.KeyComponentsPublic = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.nodeRsa.mod.KeyComponentsPublic]
   }

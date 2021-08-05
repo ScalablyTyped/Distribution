@@ -15,25 +15,19 @@ trait AsyncHostOptions
 }
 object AsyncHostOptions {
   
-  @scala.inline
-  def apply(): AsyncHostOptions = {
+  inline def apply(): AsyncHostOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncHostOptions]
   }
   
-  @scala.inline
-  implicit class AsyncHostOptionsMutableBuilder[Self <: AsyncHostOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncHostOptions](x: Self) {
     
-    @scala.inline
-    def setReadFile(value: ReadFileCallback | LegacyReadFileCallback | `false`): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
+    inline def setReadFile(value: ReadFileCallback | LegacyReadFileCallback | `false`): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+    inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
     
-    @scala.inline
-    def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback | `false`): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
+    inline def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback | `false`): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
+    inline def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
   }
 }

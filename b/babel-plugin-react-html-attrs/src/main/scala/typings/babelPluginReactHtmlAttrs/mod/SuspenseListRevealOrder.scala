@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SuspenseListRevealOrder extends StObject
 object SuspenseListRevealOrder {
   
-  @scala.inline
-  def backwards: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.backwards = "backwards".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.backwards]
+  inline def backwards: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.backwards = "backwards".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.backwards]
   
-  @scala.inline
-  def forwards: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.forwards = "forwards".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.forwards]
+  inline def forwards: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.forwards = "forwards".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.forwards]
   
-  @scala.inline
-  def together: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.together = "together".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.together]
+  inline def together: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.together = "together".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.together]
 }

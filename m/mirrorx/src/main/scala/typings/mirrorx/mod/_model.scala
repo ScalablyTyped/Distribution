@@ -12,19 +12,15 @@ trait _model extends StObject {
 }
 object _model {
   
-  @scala.inline
-  def apply(name: String, reducers: js.Any): _model = {
+  inline def apply(name: String, reducers: js.Any): _model = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], reducers = reducers.asInstanceOf[js.Any])
     __obj.asInstanceOf[_model]
   }
   
-  @scala.inline
-  implicit class _modelMutableBuilder[Self <: _model] (val x: Self) extends AnyVal {
+  extension [Self <: _model](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReducers(value: js.Any): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
+    inline def setReducers(value: js.Any): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
   }
 }

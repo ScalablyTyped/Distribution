@@ -43,55 +43,39 @@ trait JobListEntry extends StObject {
 }
 object JobListEntry {
   
-  @scala.inline
-  def apply(): JobListEntry = {
+  inline def apply(): JobListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobListEntry]
   }
   
-  @scala.inline
-  implicit class JobListEntryMutableBuilder[Self <: JobListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: JobListEntry](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setIsMaster(value: Boolean): Self = StObject.set(x, "IsMaster", value.asInstanceOf[js.Any])
+    inline def setIsMaster(value: Boolean): Self = StObject.set(x, "IsMaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMasterUndefined: Self = StObject.set(x, "IsMaster", js.undefined)
+    inline def setIsMasterUndefined: Self = StObject.set(x, "IsMaster", js.undefined)
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setJobState(value: JobState): Self = StObject.set(x, "JobState", value.asInstanceOf[js.Any])
+    inline def setJobState(value: JobState): Self = StObject.set(x, "JobState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStateUndefined: Self = StObject.set(x, "JobState", js.undefined)
+    inline def setJobStateUndefined: Self = StObject.set(x, "JobState", js.undefined)
     
-    @scala.inline
-    def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
+    inline def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
+    inline def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
     
-    @scala.inline
-    def setSnowballType(value: SnowballType): Self = StObject.set(x, "SnowballType", value.asInstanceOf[js.Any])
+    inline def setSnowballType(value: SnowballType): Self = StObject.set(x, "SnowballType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowballTypeUndefined: Self = StObject.set(x, "SnowballType", js.undefined)
+    inline def setSnowballTypeUndefined: Self = StObject.set(x, "SnowballType", js.undefined)
   }
 }

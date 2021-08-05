@@ -32,37 +32,27 @@ trait status extends StObject {
 }
 object status {
   
-  @scala.inline
-  def apply(): status = {
+  inline def apply(): status = {
     val __obj = js.Dynamic.literal(ERROR = "error", FINISHED = "finished", IDLE = "idle", PAUSED = "paused", READY = "ready", RUNNING = "running", SKIPPED = "skipped", WAITING = "waiting")
     __obj.asInstanceOf[status]
   }
   
-  @scala.inline
-  implicit class statusMutableBuilder[Self <: status] (val x: Self) extends AnyVal {
+  extension [Self <: status](x: Self) {
     
-    @scala.inline
-    def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFINISHED(value: finished): Self = StObject.set(x, "FINISHED", value.asInstanceOf[js.Any])
+    inline def setFINISHED(value: finished): Self = StObject.set(x, "FINISHED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIDLE(value: idle): Self = StObject.set(x, "IDLE", value.asInstanceOf[js.Any])
+    inline def setIDLE(value: idle): Self = StObject.set(x, "IDLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPAUSED(value: paused): Self = StObject.set(x, "PAUSED", value.asInstanceOf[js.Any])
+    inline def setPAUSED(value: paused): Self = StObject.set(x, "PAUSED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREADY(value: ready): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
+    inline def setREADY(value: ready): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUNNING(value: running): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
+    inline def setRUNNING(value: running): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSKIPPED(value: skipped): Self = StObject.set(x, "SKIPPED", value.asInstanceOf[js.Any])
+    inline def setSKIPPED(value: skipped): Self = StObject.set(x, "SKIPPED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWAITING(value: waiting): Self = StObject.set(x, "WAITING", value.asInstanceOf[js.Any])
+    inline def setWAITING(value: waiting): Self = StObject.set(x, "WAITING", value.asInstanceOf[js.Any])
   }
 }

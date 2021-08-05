@@ -41,85 +41,59 @@ trait ResourceVisualization extends StObject {
 }
 object ResourceVisualization {
   
-  @scala.inline
-  def apply(): ResourceVisualization = {
+  inline def apply(): ResourceVisualization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceVisualization]
   }
   
-  @scala.inline
-  implicit class ResourceVisualizationMutableBuilder[Self <: ResourceVisualization] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceVisualization](x: Self) {
     
-    @scala.inline
-    def setContainerDisplayName(value: NullableOption[String]): Self = StObject.set(x, "containerDisplayName", value.asInstanceOf[js.Any])
+    inline def setContainerDisplayName(value: NullableOption[String]): Self = StObject.set(x, "containerDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerDisplayNameNull: Self = StObject.set(x, "containerDisplayName", null)
+    inline def setContainerDisplayNameNull: Self = StObject.set(x, "containerDisplayName", null)
     
-    @scala.inline
-    def setContainerDisplayNameUndefined: Self = StObject.set(x, "containerDisplayName", js.undefined)
+    inline def setContainerDisplayNameUndefined: Self = StObject.set(x, "containerDisplayName", js.undefined)
     
-    @scala.inline
-    def setContainerType(value: NullableOption[String]): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    inline def setContainerType(value: NullableOption[String]): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerTypeNull: Self = StObject.set(x, "containerType", null)
+    inline def setContainerTypeNull: Self = StObject.set(x, "containerType", null)
     
-    @scala.inline
-    def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
     
-    @scala.inline
-    def setContainerWebUrl(value: NullableOption[String]): Self = StObject.set(x, "containerWebUrl", value.asInstanceOf[js.Any])
+    inline def setContainerWebUrl(value: NullableOption[String]): Self = StObject.set(x, "containerWebUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerWebUrlNull: Self = StObject.set(x, "containerWebUrl", null)
+    inline def setContainerWebUrlNull: Self = StObject.set(x, "containerWebUrl", null)
     
-    @scala.inline
-    def setContainerWebUrlUndefined: Self = StObject.set(x, "containerWebUrl", js.undefined)
+    inline def setContainerWebUrlUndefined: Self = StObject.set(x, "containerWebUrl", js.undefined)
     
-    @scala.inline
-    def setMediaType(value: NullableOption[String]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: NullableOption[String]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeNull: Self = StObject.set(x, "mediaType", null)
+    inline def setMediaTypeNull: Self = StObject.set(x, "mediaType", null)
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
-    @scala.inline
-    def setPreviewImageUrl(value: NullableOption[String]): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
+    inline def setPreviewImageUrl(value: NullableOption[String]): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewImageUrlNull: Self = StObject.set(x, "previewImageUrl", null)
+    inline def setPreviewImageUrlNull: Self = StObject.set(x, "previewImageUrl", null)
     
-    @scala.inline
-    def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
+    inline def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
     
-    @scala.inline
-    def setPreviewText(value: NullableOption[String]): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
+    inline def setPreviewText(value: NullableOption[String]): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewTextNull: Self = StObject.set(x, "previewText", null)
+    inline def setPreviewTextNull: Self = StObject.set(x, "previewText", null)
     
-    @scala.inline
-    def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
+    inline def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
     
-    @scala.inline
-    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleNull: Self = StObject.set(x, "title", null)
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

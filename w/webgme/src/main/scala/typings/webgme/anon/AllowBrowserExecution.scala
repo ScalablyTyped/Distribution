@@ -41,8 +41,7 @@ trait AllowBrowserExecution extends StObject {
 }
 object AllowBrowserExecution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowBrowserExecution: Boolean,
     allowServerExecution: Boolean,
     basePaths: js.Array[String],
@@ -53,25 +52,18 @@ object AllowBrowserExecution {
     __obj.asInstanceOf[AllowBrowserExecution]
   }
   
-  @scala.inline
-  implicit class AllowBrowserExecutionMutableBuilder[Self <: AllowBrowserExecution] (val x: Self) extends AnyVal {
+  extension [Self <: AllowBrowserExecution](x: Self) {
     
-    @scala.inline
-    def setAllowBrowserExecution(value: Boolean): Self = StObject.set(x, "allowBrowserExecution", value.asInstanceOf[js.Any])
+    inline def setAllowBrowserExecution(value: Boolean): Self = StObject.set(x, "allowBrowserExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowServerExecution(value: Boolean): Self = StObject.set(x, "allowServerExecution", value.asInstanceOf[js.Any])
+    inline def setAllowServerExecution(value: Boolean): Self = StObject.set(x, "allowServerExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+    inline def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+    inline def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayAll(value: Boolean): Self = StObject.set(x, "displayAll", value.asInstanceOf[js.Any])
+    inline def setDisplayAll(value: Boolean): Self = StObject.set(x, "displayAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerResultTimeout(value: Double): Self = StObject.set(x, "serverResultTimeout", value.asInstanceOf[js.Any])
+    inline def setServerResultTimeout(value: Double): Self = StObject.set(x, "serverResultTimeout", value.asInstanceOf[js.Any])
   }
 }

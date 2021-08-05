@@ -8,9 +8,9 @@ trait FlowEdge extends StObject {
   
   def addResidualFlowTo(x: Double, deltaFlow: Double): Unit
   
-  var capacity: js.Any
+  /* private */ var capacity: js.Any
   
-  var flow: js.Any
+  /* private */ var flow: js.Any
   
   def from(): Double
   
@@ -22,14 +22,13 @@ trait FlowEdge extends StObject {
   
   def to(): Double
   
-  var v: js.Any
+  /* private */ var v: js.Any
   
-  var w: js.Any
+  /* private */ var w: js.Any
 }
 object FlowEdge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addResidualFlowTo: (Double, Double) => Unit,
     capacity: js.Any,
     flow: js.Any,
@@ -44,40 +43,28 @@ object FlowEdge {
     __obj.asInstanceOf[FlowEdge]
   }
   
-  @scala.inline
-  implicit class FlowEdgeMutableBuilder[Self <: FlowEdge] (val x: Self) extends AnyVal {
+  extension [Self <: FlowEdge](x: Self) {
     
-    @scala.inline
-    def setAddResidualFlowTo(value: (Double, Double) => Unit): Self = StObject.set(x, "addResidualFlowTo", js.Any.fromFunction2(value))
+    inline def setAddResidualFlowTo(value: (Double, Double) => Unit): Self = StObject.set(x, "addResidualFlowTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCapacity(value: js.Any): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: js.Any): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlow(value: js.Any): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: js.Any): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: () => Double): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
+    inline def setFrom(value: () => Double): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOther(value: Double => Double): Self = StObject.set(x, "other", js.Any.fromFunction1(value))
+    inline def setOther(value: Double => Double): Self = StObject.set(x, "other", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResidualCapacityTo(value: Double => Double): Self = StObject.set(x, "residualCapacityTo", js.Any.fromFunction1(value))
+    inline def setResidualCapacityTo(value: Double => Double): Self = StObject.set(x, "residualCapacityTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
+    inline def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

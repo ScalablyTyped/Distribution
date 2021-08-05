@@ -38,8 +38,7 @@ object mod extends Shortcut {
     extends StObject
        with Factory
   
-  @scala.inline
-  def Factory_=(x: Instantiable0[Factory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Factory")(x.asInstanceOf[js.Any])
+  inline def Factory_=(x: Instantiable0[Factory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Factory")(x.asInstanceOf[js.Any])
   
   trait Mechanism extends StObject {
     
@@ -51,23 +50,18 @@ object mod extends Shortcut {
   }
   object Mechanism {
     
-    @scala.inline
-    def apply(challenge: String => Unit, name: String, response: StringDictionary[js.Any] => String): Mechanism = {
+    inline def apply(challenge: String => Unit, name: String, response: StringDictionary[js.Any] => String): Mechanism = {
       val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[Mechanism]
     }
     
-    @scala.inline
-    implicit class MechanismMutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
+    extension [Self <: Mechanism](x: Self) {
       
-      @scala.inline
-      def setChallenge(value: String => Unit): Self = StObject.set(x, "challenge", js.Any.fromFunction1(value))
+      inline def setChallenge(value: String => Unit): Self = StObject.set(x, "challenge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: StringDictionary[js.Any] => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+      inline def setResponse(value: StringDictionary[js.Any] => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     }
   }
   

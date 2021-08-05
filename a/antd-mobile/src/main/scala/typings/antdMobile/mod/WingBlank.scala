@@ -19,6 +19,5 @@ object WingBlank {
   @JSImport("antd-mobile", "WingBlank.defaultProps")
   @js.native
   def defaultProps: PrefixClsSize = js.native
-  @scala.inline
-  def defaultProps_=(x: PrefixClsSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PrefixClsSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

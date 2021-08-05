@@ -12,22 +12,17 @@ trait DeleteParameters extends StObject {
 }
 object DeleteParameters {
   
-  @scala.inline
-  def apply(fileId: String): DeleteParameters = {
+  inline def apply(fileId: String): DeleteParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParameters]
   }
   
-  @scala.inline
-  implicit class DeleteParametersMutableBuilder[Self <: DeleteParameters] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteParameters](x: Self) {
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
   }
 }

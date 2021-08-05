@@ -14,13 +14,10 @@ object relayRecordStateMod {
   trait RecordState extends StObject
   object RecordState {
     
-    @scala.inline
-    def EXISTENT: typings.relayRuntime.relayRuntimeStrings.EXISTENT = "EXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.EXISTENT]
+    inline def EXISTENT: typings.relayRuntime.relayRuntimeStrings.EXISTENT = "EXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.EXISTENT]
     
-    @scala.inline
-    def NONEXISTENT: typings.relayRuntime.relayRuntimeStrings.NONEXISTENT = "NONEXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.NONEXISTENT]
+    inline def NONEXISTENT: typings.relayRuntime.relayRuntimeStrings.NONEXISTENT = "NONEXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.NONEXISTENT]
     
-    @scala.inline
-    def UNKNOWN: typings.relayRuntime.relayRuntimeStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.UNKNOWN]
+    inline def UNKNOWN: typings.relayRuntime.relayRuntimeStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.UNKNOWN]
   }
 }

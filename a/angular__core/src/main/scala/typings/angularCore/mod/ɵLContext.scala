@@ -40,52 +40,37 @@ trait ɵLContext extends StObject {
 }
 object ɵLContext {
   
-  @scala.inline
-  def apply(lView: ɵangularPackagesCoreCoreBv, native: RNode, nodeIndex: Double): ɵLContext = {
+  inline def apply(lView: ɵangularPackagesCoreCoreBv, native: RNode, nodeIndex: Double): ɵLContext = {
     val __obj = js.Dynamic.literal(lView = lView.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], nodeIndex = nodeIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵLContext]
   }
   
-  @scala.inline
-  implicit class ɵLContextMutableBuilder[Self <: ɵLContext] (val x: Self) extends AnyVal {
+  extension [Self <: ɵLContext](x: Self) {
     
-    @scala.inline
-    def setComponent(value: js.Object): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: js.Object): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentNull: Self = StObject.set(x, "component", null)
+    inline def setComponentNull: Self = StObject.set(x, "component", null)
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setDirectives(value: js.Array[js.Any]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[js.Any]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesNull: Self = StObject.set(x, "directives", null)
+    inline def setDirectivesNull: Self = StObject.set(x, "directives", null)
     
-    @scala.inline
-    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    @scala.inline
-    def setDirectivesVarargs(value: js.Any*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: js.Any*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setLView(value: ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "lView", value.asInstanceOf[js.Any])
+    inline def setLView(value: ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "lView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalRefs(value: StringDictionary[js.Any]): Self = StObject.set(x, "localRefs", value.asInstanceOf[js.Any])
+    inline def setLocalRefs(value: StringDictionary[js.Any]): Self = StObject.set(x, "localRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalRefsNull: Self = StObject.set(x, "localRefs", null)
+    inline def setLocalRefsNull: Self = StObject.set(x, "localRefs", null)
     
-    @scala.inline
-    def setLocalRefsUndefined: Self = StObject.set(x, "localRefs", js.undefined)
+    inline def setLocalRefsUndefined: Self = StObject.set(x, "localRefs", js.undefined)
     
-    @scala.inline
-    def setNative(value: RNode): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: RNode): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIndex(value: Double): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
+    inline def setNodeIndex(value: Double): Self = StObject.set(x, "nodeIndex", value.asInstanceOf[js.Any])
   }
 }

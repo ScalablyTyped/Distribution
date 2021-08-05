@@ -23,8 +23,7 @@ object staticMod {
     */
   object default {
     
-    @scala.inline
-    def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("ink/build/components/Static", JSImport.Default)
     @js.native
@@ -33,8 +32,7 @@ object staticMod {
     @JSImport("ink/build/components/Static", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait Props[T]
@@ -60,29 +58,22 @@ object staticMod {
   }
   object Props {
     
-    @scala.inline
-    def apply[T](children: (T, Double) => ReactNode, items: js.Array[T]): Props[T] = {
+    inline def apply[T](children: (T, Double) => ReactNode, items: js.Array[T]): Props[T] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props[T]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
+    extension [Self <: Props[?], T](x: Self & Props[T]) {
       
-      @scala.inline
-      def setChildren(value: (T, Double) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (T, Double) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

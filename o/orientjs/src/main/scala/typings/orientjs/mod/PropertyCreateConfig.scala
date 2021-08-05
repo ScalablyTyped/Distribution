@@ -40,98 +40,68 @@ trait PropertyCreateConfig extends StObject {
 }
 object PropertyCreateConfig {
   
-  @scala.inline
-  def apply(name: String, `type`: PropertyType): PropertyCreateConfig = {
+  inline def apply(name: String, `type`: PropertyType): PropertyCreateConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyCreateConfig]
   }
   
-  @scala.inline
-  implicit class PropertyCreateConfigMutableBuilder[Self <: PropertyCreateConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyCreateConfig](x: Self) {
     
-    @scala.inline
-    def setCollate(value: String): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
+    inline def setCollate(value: String): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollateUndefined: Self = StObject.set(x, "collate", js.undefined)
+    inline def setCollateUndefined: Self = StObject.set(x, "collate", js.undefined)
     
-    @scala.inline
-    def setCustom(value: Fields): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Fields): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setIfnotexist(value: Boolean): Self = StObject.set(x, "ifnotexist", value.asInstanceOf[js.Any])
+    inline def setIfnotexist(value: Boolean): Self = StObject.set(x, "ifnotexist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfnotexistUndefined: Self = StObject.set(x, "ifnotexist", js.undefined)
+    inline def setIfnotexistUndefined: Self = StObject.set(x, "ifnotexist", js.undefined)
     
-    @scala.inline
-    def setLinkedClass(value: String): Self = StObject.set(x, "linkedClass", value.asInstanceOf[js.Any])
+    inline def setLinkedClass(value: String): Self = StObject.set(x, "linkedClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedClassUndefined: Self = StObject.set(x, "linkedClass", js.undefined)
+    inline def setLinkedClassUndefined: Self = StObject.set(x, "linkedClass", js.undefined)
     
-    @scala.inline
-    def setLinkedType(value: String): Self = StObject.set(x, "linkedType", value.asInstanceOf[js.Any])
+    inline def setLinkedType(value: String): Self = StObject.set(x, "linkedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedTypeUndefined: Self = StObject.set(x, "linkedType", js.undefined)
+    inline def setLinkedTypeUndefined: Self = StObject.set(x, "linkedType", js.undefined)
     
-    @scala.inline
-    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+    inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+    inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
+    inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+    inline def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
-    @scala.inline
-    def setRegexp(value: RegExp | String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: RegExp | String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
+    inline def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     
-    @scala.inline
-    def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
+    inline def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
+    inline def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
   }
 }

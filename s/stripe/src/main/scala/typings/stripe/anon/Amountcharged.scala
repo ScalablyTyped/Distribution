@@ -26,8 +26,7 @@ trait Amountcharged extends StObject {
 }
 object Amountcharged {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     amount_charged: Double,
     amount_received: Double,
@@ -39,25 +38,18 @@ object Amountcharged {
     __obj.asInstanceOf[Amountcharged]
   }
   
-  @scala.inline
-  implicit class AmountchargedMutableBuilder[Self <: Amountcharged] (val x: Self) extends AnyVal {
+  extension [Self <: Amountcharged](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmount_charged(value: Double): Self = StObject.set(x, "amount_charged", value.asInstanceOf[js.Any])
+    inline def setAmount_charged(value: Double): Self = StObject.set(x, "amount_charged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmount_received(value: Double): Self = StObject.set(x, "amount_received", value.asInstanceOf[js.Any])
+    inline def setAmount_received(value: Double): Self = StObject.set(x, "amount_received", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmount_returned(value: Double): Self = StObject.set(x, "amount_returned", value.asInstanceOf[js.Any])
+    inline def setAmount_returned(value: Double): Self = StObject.set(x, "amount_returned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefund_attributes_method(value: email | manual | none): Self = StObject.set(x, "refund_attributes_method", value.asInstanceOf[js.Any])
+    inline def setRefund_attributes_method(value: email | manual | none): Self = StObject.set(x, "refund_attributes_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefund_attributes_status(value: missing | requested | available): Self = StObject.set(x, "refund_attributes_status", value.asInstanceOf[js.Any])
+    inline def setRefund_attributes_status(value: missing | requested | available): Self = StObject.set(x, "refund_attributes_status", value.asInstanceOf[js.Any])
   }
 }

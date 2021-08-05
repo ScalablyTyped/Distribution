@@ -76,8 +76,7 @@ object Proximity {
        with IConnectionRequestedEventArgs
   object ConnectionRequestedEventArgs {
     
-    @scala.inline
-    def apply(peerInformation: PeerInformation): ConnectionRequestedEventArgs = {
+    inline def apply(peerInformation: PeerInformation): ConnectionRequestedEventArgs = {
       val __obj = js.Dynamic.literal(peerInformation = peerInformation.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionRequestedEventArgs]
     }
@@ -93,17 +92,14 @@ object Proximity {
   }
   object IConnectionRequestedEventArgs {
     
-    @scala.inline
-    def apply(peerInformation: PeerInformation): IConnectionRequestedEventArgs = {
+    inline def apply(peerInformation: PeerInformation): IConnectionRequestedEventArgs = {
       val __obj = js.Dynamic.literal(peerInformation = peerInformation.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConnectionRequestedEventArgs]
     }
     
-    @scala.inline
-    implicit class IConnectionRequestedEventArgsMutableBuilder[Self <: IConnectionRequestedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IConnectionRequestedEventArgs](x: Self) {
       
-      @scala.inline
-      def setPeerInformation(value: PeerInformation): Self = StObject.set(x, "peerInformation", value.asInstanceOf[js.Any])
+      inline def setPeerInformation(value: PeerInformation): Self = StObject.set(x, "peerInformation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,17 +138,14 @@ object Proximity {
   }
   object IPeerInformation {
     
-    @scala.inline
-    def apply(displayName: String): IPeerInformation = {
+    inline def apply(displayName: String): IPeerInformation = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeerInformation]
     }
     
-    @scala.inline
-    implicit class IPeerInformationMutableBuilder[Self <: IPeerInformation] (val x: Self) extends AnyVal {
+    extension [Self <: IPeerInformation](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,8 +188,7 @@ object Proximity {
   }
   object IProximityDeviceStatics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromId: String => ProximityDevice,
       getDefault: () => ProximityDevice,
       getDeviceSelector: () => String
@@ -205,17 +197,13 @@ object Proximity {
       __obj.asInstanceOf[IProximityDeviceStatics]
     }
     
-    @scala.inline
-    implicit class IProximityDeviceStaticsMutableBuilder[Self <: IProximityDeviceStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IProximityDeviceStatics](x: Self) {
       
-      @scala.inline
-      def setFromId(value: String => ProximityDevice): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
+      inline def setFromId(value: String => ProximityDevice): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDefault(value: () => ProximityDevice): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+      inline def setGetDefault(value: () => ProximityDevice): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDeviceSelector(value: () => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction0(value))
+      inline def setGetDeviceSelector(value: () => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction0(value))
     }
   }
   
@@ -231,26 +219,20 @@ object Proximity {
   }
   object IProximityMessage {
     
-    @scala.inline
-    def apply(data: IBuffer, dataAsString: String, messageType: String, subscriptionId: Double): IProximityMessage = {
+    inline def apply(data: IBuffer, dataAsString: String, messageType: String, subscriptionId: Double): IProximityMessage = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataAsString = dataAsString.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProximityMessage]
     }
     
-    @scala.inline
-    implicit class IProximityMessageMutableBuilder[Self <: IProximityMessage] (val x: Self) extends AnyVal {
+    extension [Self <: IProximityMessage](x: Self) {
       
-      @scala.inline
-      def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataAsString(value: String): Self = StObject.set(x, "dataAsString", value.asInstanceOf[js.Any])
+      inline def setDataAsString(value: String): Self = StObject.set(x, "dataAsString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+      inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionId(value: Double): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+      inline def setSubscriptionId(value: Double): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,23 +246,18 @@ object Proximity {
   }
   object ITriggeredConnectionStateChangedEventArgs {
     
-    @scala.inline
-    def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): ITriggeredConnectionStateChangedEventArgs = {
+    inline def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): ITriggeredConnectionStateChangedEventArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITriggeredConnectionStateChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class ITriggeredConnectionStateChangedEventArgsMutableBuilder[Self <: ITriggeredConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ITriggeredConnectionStateChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: TriggeredConnectState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TriggeredConnectState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,8 +272,7 @@ object Proximity {
        with IPeerInformation
   object PeerInformation {
     
-    @scala.inline
-    def apply(displayName: String): PeerInformation = {
+    inline def apply(displayName: String): PeerInformation = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PeerInformation]
     }
@@ -312,8 +288,7 @@ object Proximity {
        with IProximityMessage
   object ProximityMessage {
     
-    @scala.inline
-    def apply(data: IBuffer, dataAsString: String, messageType: String, subscriptionId: Double): ProximityMessage = {
+    inline def apply(data: IBuffer, dataAsString: String, messageType: String, subscriptionId: Double): ProximityMessage = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataAsString = dataAsString.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProximityMessage]
     }
@@ -324,8 +299,7 @@ object Proximity {
        with ITriggeredConnectionStateChangedEventArgs
   object TriggeredConnectionStateChangedEventArgs {
     
-    @scala.inline
-    def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): TriggeredConnectionStateChangedEventArgs = {
+    inline def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): TriggeredConnectionStateChangedEventArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TriggeredConnectionStateChangedEventArgs]
     }

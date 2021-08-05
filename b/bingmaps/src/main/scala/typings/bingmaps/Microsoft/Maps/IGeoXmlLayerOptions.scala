@@ -25,43 +25,31 @@ trait IGeoXmlLayerOptions
 }
 object IGeoXmlLayerOptions {
   
-  @scala.inline
-  def apply(): IGeoXmlLayerOptions = {
+  inline def apply(): IGeoXmlLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeoXmlLayerOptions]
   }
   
-  @scala.inline
-  implicit class IGeoXmlLayerOptionsMutableBuilder[Self <: IGeoXmlLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoXmlLayerOptions](x: Self) {
     
-    @scala.inline
-    def setAutoUpdateMapView(value: Boolean): Self = StObject.set(x, "autoUpdateMapView", value.asInstanceOf[js.Any])
+    inline def setAutoUpdateMapView(value: Boolean): Self = StObject.set(x, "autoUpdateMapView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdateMapViewUndefined: Self = StObject.set(x, "autoUpdateMapView", js.undefined)
+    inline def setAutoUpdateMapViewUndefined: Self = StObject.set(x, "autoUpdateMapView", js.undefined)
     
-    @scala.inline
-    def setInfoboxOptions(value: IInfoboxOptions): Self = StObject.set(x, "infoboxOptions", value.asInstanceOf[js.Any])
+    inline def setInfoboxOptions(value: IInfoboxOptions): Self = StObject.set(x, "infoboxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoboxOptionsUndefined: Self = StObject.set(x, "infoboxOptions", js.undefined)
+    inline def setInfoboxOptionsUndefined: Self = StObject.set(x, "infoboxOptions", js.undefined)
     
-    @scala.inline
-    def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
+    inline def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
     
-    @scala.inline
-    def setSuppressInfoboxes(value: Boolean): Self = StObject.set(x, "suppressInfoboxes", value.asInstanceOf[js.Any])
+    inline def setSuppressInfoboxes(value: Boolean): Self = StObject.set(x, "suppressInfoboxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressInfoboxesUndefined: Self = StObject.set(x, "suppressInfoboxes", js.undefined)
+    inline def setSuppressInfoboxesUndefined: Self = StObject.set(x, "suppressInfoboxes", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

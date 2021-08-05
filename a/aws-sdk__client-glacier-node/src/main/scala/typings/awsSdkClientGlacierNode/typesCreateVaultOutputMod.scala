@@ -25,23 +25,18 @@ object typesCreateVaultOutputMod {
   }
   object CreateVaultOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateVaultOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateVaultOutput]
     }
     
-    @scala.inline
-    implicit class CreateVaultOutputMutableBuilder[Self <: CreateVaultOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateVaultOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
 }

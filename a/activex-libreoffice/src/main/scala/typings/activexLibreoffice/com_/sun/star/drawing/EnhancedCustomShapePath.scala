@@ -53,8 +53,7 @@ trait EnhancedCustomShapePath extends StObject {
 }
 object EnhancedCustomShapePath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConcentricGradientFillAllowed: Boolean,
     Coordinates: SafeArray[EnhancedCustomShapeParameterPair],
     ExtrusionAllowed: Boolean,
@@ -72,43 +71,30 @@ object EnhancedCustomShapePath {
     __obj.asInstanceOf[EnhancedCustomShapePath]
   }
   
-  @scala.inline
-  implicit class EnhancedCustomShapePathMutableBuilder[Self <: EnhancedCustomShapePath] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedCustomShapePath](x: Self) {
     
-    @scala.inline
-    def setConcentricGradientFillAllowed(value: Boolean): Self = StObject.set(x, "ConcentricGradientFillAllowed", value.asInstanceOf[js.Any])
+    inline def setConcentricGradientFillAllowed(value: Boolean): Self = StObject.set(x, "ConcentricGradientFillAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinates(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrusionAllowed(value: Boolean): Self = StObject.set(x, "ExtrusionAllowed", value.asInstanceOf[js.Any])
+    inline def setExtrusionAllowed(value: Boolean): Self = StObject.set(x, "ExtrusionAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGluePointLeavingDirections(value: SafeArray[Double]): Self = StObject.set(x, "GluePointLeavingDirections", value.asInstanceOf[js.Any])
+    inline def setGluePointLeavingDirections(value: SafeArray[Double]): Self = StObject.set(x, "GluePointLeavingDirections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGluePointType(value: Double): Self = StObject.set(x, "GluePointType", value.asInstanceOf[js.Any])
+    inline def setGluePointType(value: Double): Self = StObject.set(x, "GluePointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGluePoints(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = StObject.set(x, "GluePoints", value.asInstanceOf[js.Any])
+    inline def setGluePoints(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = StObject.set(x, "GluePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: SafeArray[EnhancedCustomShapeSegment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: SafeArray[EnhancedCustomShapeSegment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchX(value: Double): Self = StObject.set(x, "StretchX", value.asInstanceOf[js.Any])
+    inline def setStretchX(value: Double): Self = StObject.set(x, "StretchX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchY(value: Double): Self = StObject.set(x, "StretchY", value.asInstanceOf[js.Any])
+    inline def setStretchY(value: Double): Self = StObject.set(x, "StretchY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubViewSize(value: SafeArray[Size]): Self = StObject.set(x, "SubViewSize", value.asInstanceOf[js.Any])
+    inline def setSubViewSize(value: SafeArray[Size]): Self = StObject.set(x, "SubViewSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFrames(value: SafeArray[EnhancedCustomShapeTextFrame]): Self = StObject.set(x, "TextFrames", value.asInstanceOf[js.Any])
+    inline def setTextFrames(value: SafeArray[EnhancedCustomShapeTextFrame]): Self = StObject.set(x, "TextFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPathAllowed(value: Boolean): Self = StObject.set(x, "TextPathAllowed", value.asInstanceOf[js.Any])
+    inline def setTextPathAllowed(value: Boolean): Self = StObject.set(x, "TextPathAllowed", value.asInstanceOf[js.Any])
   }
 }

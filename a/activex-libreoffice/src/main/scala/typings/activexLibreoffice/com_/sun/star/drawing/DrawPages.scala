@@ -17,8 +17,7 @@ trait DrawPages
      with XDrawPageExpander
 object DrawPages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,

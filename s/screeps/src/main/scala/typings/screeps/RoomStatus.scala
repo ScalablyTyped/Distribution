@@ -15,14 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RoomStatus extends StObject
 object RoomStatus {
   
-  @scala.inline
-  def RoomStatusPermanent(status: normal | closed, timestamp: Null): typings.screeps.RoomStatusPermanent = {
+  inline def RoomStatusPermanent(status: normal | closed, timestamp: Null): typings.screeps.RoomStatusPermanent = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.screeps.RoomStatusPermanent]
   }
   
-  @scala.inline
-  def RoomStatusTemporary(status: novice | respawn, timestamp: Double): typings.screeps.RoomStatusTemporary = {
+  inline def RoomStatusTemporary(status: novice | respawn, timestamp: Double): typings.screeps.RoomStatusTemporary = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.screeps.RoomStatusTemporary]
   }

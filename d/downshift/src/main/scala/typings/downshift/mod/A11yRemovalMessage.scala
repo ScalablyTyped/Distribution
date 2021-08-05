@@ -18,8 +18,7 @@ trait A11yRemovalMessage[Item] extends StObject {
 }
 object A11yRemovalMessage {
   
-  @scala.inline
-  def apply[Item](
+  inline def apply[Item](
     activeIndex: Double,
     activeSelectedItem: Item,
     itemToString: Item => String,
@@ -30,22 +29,16 @@ object A11yRemovalMessage {
     __obj.asInstanceOf[A11yRemovalMessage[Item]]
   }
   
-  @scala.inline
-  implicit class A11yRemovalMessageMutableBuilder[Self <: A11yRemovalMessage[?], Item] (val x: Self & A11yRemovalMessage[Item]) extends AnyVal {
+  extension [Self <: A11yRemovalMessage[?], Item](x: Self & A11yRemovalMessage[Item]) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveSelectedItem(value: Item): Self = StObject.set(x, "activeSelectedItem", value.asInstanceOf[js.Any])
+    inline def setActiveSelectedItem(value: Item): Self = StObject.set(x, "activeSelectedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemToString(value: Item => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
+    inline def setItemToString(value: Item => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovedSelectedItem(value: Item): Self = StObject.set(x, "removedSelectedItem", value.asInstanceOf[js.Any])
+    inline def setRemovedSelectedItem(value: Item): Self = StObject.set(x, "removedSelectedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultCount(value: Double): Self = StObject.set(x, "resultCount", value.asInstanceOf[js.Any])
+    inline def setResultCount(value: Double): Self = StObject.set(x, "resultCount", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait MoveFolderMetadata extends StObject {
 }
 object MoveFolderMetadata {
   
-  @scala.inline
-  def apply(): MoveFolderMetadata = {
+  inline def apply(): MoveFolderMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveFolderMetadata]
   }
   
-  @scala.inline
-  implicit class MoveFolderMetadataMutableBuilder[Self <: MoveFolderMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MoveFolderMetadata](x: Self) {
     
-    @scala.inline
-    def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
+    inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationParentUndefined: Self = StObject.set(x, "destinationParent", js.undefined)
+    inline def setDestinationParentUndefined: Self = StObject.set(x, "destinationParent", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setSourceParent(value: String): Self = StObject.set(x, "sourceParent", value.asInstanceOf[js.Any])
+    inline def setSourceParent(value: String): Self = StObject.set(x, "sourceParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceParentUndefined: Self = StObject.set(x, "sourceParent", js.undefined)
+    inline def setSourceParentUndefined: Self = StObject.set(x, "sourceParent", js.undefined)
   }
 }

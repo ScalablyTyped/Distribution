@@ -38,8 +38,7 @@ trait GetArrowOffset extends StObject {
 }
 object GetArrowOffset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Promise[Unit],
     clickOutside: () => js.Promise[Unit],
     element: () => js.Promise[js.Any],
@@ -57,43 +56,30 @@ object GetArrowOffset {
     __obj.asInstanceOf[GetArrowOffset]
   }
   
-  @scala.inline
-  implicit class GetArrowOffsetMutableBuilder[Self <: GetArrowOffset] (val x: Self) extends AnyVal {
+  extension [Self <: GetArrowOffset](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClickOutside(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
+    inline def setClickOutside(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetArrowOffset(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getArrowOffset", js.Any.fromFunction0(value))
+    inline def setGetArrowOffset(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getArrowOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
+    inline def setGetContentElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPortalElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getPortalElement", js.Any.fromFunction0(value))
+    inline def setGetPortalElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getPortalElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTargetElement", js.Any.fromFunction0(value))
+    inline def setGetTargetElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTargetElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsContentElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isContentElementExists", js.Any.fromFunction0(value))
+    inline def setIsContentElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isContentElementExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTargetElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTargetElementExists", js.Any.fromFunction0(value))
+    inline def setIsTargetElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTargetElementExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+    inline def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+    inline def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
   }
 }

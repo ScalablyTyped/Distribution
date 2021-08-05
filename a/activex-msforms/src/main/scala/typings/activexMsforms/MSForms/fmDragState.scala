@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmDragState extends StObject
 object fmDragState {
   
-  @scala.inline
-  def fmDragStateEnter: `0` = 0.asInstanceOf[`0`]
+  inline def fmDragStateEnter: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmDragStateLeave: `1` = 1.asInstanceOf[`1`]
+  inline def fmDragStateLeave: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmDragStateOver: `2` = 2.asInstanceOf[`2`]
+  inline def fmDragStateOver: `2` = 2.asInstanceOf[`2`]
 }

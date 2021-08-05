@@ -10,18 +10,15 @@ object routesShutdownMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def handler(_request: js.Any, h: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def handler(_request: js.Any, h: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("ipfs-http-server/dist/src/api/routes/shutdown", "method")
   @js.native
   def method: String = js.native
-  @scala.inline
-  def method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("method")(x.asInstanceOf[js.Any])
+  inline def method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("method")(x.asInstanceOf[js.Any])
   
   @JSImport("ipfs-http-server/dist/src/api/routes/shutdown", "path")
   @js.native
   def path: String = js.native
-  @scala.inline
-  def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+  inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
 }

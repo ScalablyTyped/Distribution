@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlignType extends StObject
 object AlignType {
   
-  @scala.inline
-  def center: typings.rcTable.rcTableStrings.center = "center".asInstanceOf[typings.rcTable.rcTableStrings.center]
+  inline def center: typings.rcTable.rcTableStrings.center = "center".asInstanceOf[typings.rcTable.rcTableStrings.center]
   
-  @scala.inline
-  def left: typings.rcTable.rcTableStrings.left = "left".asInstanceOf[typings.rcTable.rcTableStrings.left]
+  inline def left: typings.rcTable.rcTableStrings.left = "left".asInstanceOf[typings.rcTable.rcTableStrings.left]
   
-  @scala.inline
-  def right: typings.rcTable.rcTableStrings.right = "right".asInstanceOf[typings.rcTable.rcTableStrings.right]
+  inline def right: typings.rcTable.rcTableStrings.right = "right".asInstanceOf[typings.rcTable.rcTableStrings.right]
 }

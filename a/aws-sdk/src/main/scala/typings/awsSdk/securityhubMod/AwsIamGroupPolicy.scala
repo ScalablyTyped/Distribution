@@ -13,19 +13,15 @@ trait AwsIamGroupPolicy extends StObject {
 }
 object AwsIamGroupPolicy {
   
-  @scala.inline
-  def apply(): AwsIamGroupPolicy = {
+  inline def apply(): AwsIamGroupPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamGroupPolicy]
   }
   
-  @scala.inline
-  implicit class AwsIamGroupPolicyMutableBuilder[Self <: AwsIamGroupPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamGroupPolicy](x: Self) {
     
-    @scala.inline
-    def setPolicyName(value: NonEmptyString): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: NonEmptyString): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
   }
 }

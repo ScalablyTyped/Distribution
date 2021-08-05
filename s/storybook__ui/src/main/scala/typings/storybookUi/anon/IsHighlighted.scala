@@ -13,19 +13,15 @@ trait IsHighlighted extends StObject {
 }
 object IsHighlighted {
   
-  @scala.inline
-  def apply(isHighlighted: Boolean, menu: MenuList): IsHighlighted = {
+  inline def apply(isHighlighted: Boolean, menu: MenuList): IsHighlighted = {
     val __obj = js.Dynamic.literal(isHighlighted = isHighlighted.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsHighlighted]
   }
   
-  @scala.inline
-  implicit class IsHighlightedMutableBuilder[Self <: IsHighlighted] (val x: Self) extends AnyVal {
+  extension [Self <: IsHighlighted](x: Self) {
     
-    @scala.inline
-    def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
+    inline def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu(value: MenuList): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: MenuList): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
   }
 }

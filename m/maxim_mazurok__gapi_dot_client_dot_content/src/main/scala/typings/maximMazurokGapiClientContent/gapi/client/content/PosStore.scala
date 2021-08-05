@@ -17,31 +17,23 @@ trait PosStore extends StObject {
 }
 object PosStore {
   
-  @scala.inline
-  def apply(): PosStore = {
+  inline def apply(): PosStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PosStore]
   }
   
-  @scala.inline
-  implicit class PosStoreMutableBuilder[Self <: PosStore] (val x: Self) extends AnyVal {
+  extension [Self <: PosStore](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setStoreAddress(value: String): Self = StObject.set(x, "storeAddress", value.asInstanceOf[js.Any])
+    inline def setStoreAddress(value: String): Self = StObject.set(x, "storeAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreAddressUndefined: Self = StObject.set(x, "storeAddress", js.undefined)
+    inline def setStoreAddressUndefined: Self = StObject.set(x, "storeAddress", js.undefined)
     
-    @scala.inline
-    def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
+    inline def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
+    inline def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
   }
 }

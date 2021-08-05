@@ -42,8 +42,7 @@ trait IEditControl extends StObject {
 }
 object IEditControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BindToCell: IEditControlCellContext => Unit,
     Dispose: () => Unit,
     OnBeginEdit: DomEvent => Unit,
@@ -54,88 +53,60 @@ object IEditControl {
     __obj.asInstanceOf[IEditControl]
   }
   
-  @scala.inline
-  implicit class IEditControlMutableBuilder[Self <: IEditControl] (val x: Self) extends AnyVal {
+  extension [Self <: IEditControl](x: Self) {
     
-    @scala.inline
-    def setBindToCell(value: IEditControlCellContext => Unit): Self = StObject.set(x, "BindToCell", js.Any.fromFunction1(value))
+    inline def setBindToCell(value: IEditControlCellContext => Unit): Self = StObject.set(x, "BindToCell", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "Dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "Dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: /* eventInfo */ DomEvent => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction1(value))
+    inline def setFocus(value: /* eventInfo */ DomEvent => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "Focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "Focus", js.undefined)
     
-    @scala.inline
-    def setGetCellContext(value: () => IEditControlCellContext): Self = StObject.set(x, "GetCellContext", js.Any.fromFunction0(value))
+    inline def setGetCellContext(value: () => IEditControlCellContext): Self = StObject.set(x, "GetCellContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCellContextUndefined: Self = StObject.set(x, "GetCellContext", js.undefined)
+    inline def setGetCellContextUndefined: Self = StObject.set(x, "GetCellContext", js.undefined)
     
-    @scala.inline
-    def setGetInputElement(value: () => HTMLElement): Self = StObject.set(x, "GetInputElement", js.Any.fromFunction0(value))
+    inline def setGetInputElement(value: () => HTMLElement): Self = StObject.set(x, "GetInputElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInputElementUndefined: Self = StObject.set(x, "GetInputElement", js.undefined)
+    inline def setGetInputElementUndefined: Self = StObject.set(x, "GetInputElement", js.undefined)
     
-    @scala.inline
-    def setGetOriginalValue(value: () => IValue): Self = StObject.set(x, "GetOriginalValue", js.Any.fromFunction0(value))
+    inline def setGetOriginalValue(value: () => IValue): Self = StObject.set(x, "GetOriginalValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOriginalValueUndefined: Self = StObject.set(x, "GetOriginalValue", js.undefined)
+    inline def setGetOriginalValueUndefined: Self = StObject.set(x, "GetOriginalValue", js.undefined)
     
-    @scala.inline
-    def setIsCurrentlyUsingGridTextInputElement(value: () => Boolean): Self = StObject.set(x, "IsCurrentlyUsingGridTextInputElement", js.Any.fromFunction0(value))
+    inline def setIsCurrentlyUsingGridTextInputElement(value: () => Boolean): Self = StObject.set(x, "IsCurrentlyUsingGridTextInputElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCurrentlyUsingGridTextInputElementUndefined: Self = StObject.set(x, "IsCurrentlyUsingGridTextInputElement", js.undefined)
+    inline def setIsCurrentlyUsingGridTextInputElementUndefined: Self = StObject.set(x, "IsCurrentlyUsingGridTextInputElement", js.undefined)
     
-    @scala.inline
-    def setOnBeginEdit(value: DomEvent => Unit): Self = StObject.set(x, "OnBeginEdit", js.Any.fromFunction1(value))
+    inline def setOnBeginEdit(value: DomEvent => Unit): Self = StObject.set(x, "OnBeginEdit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCellMove(value: () => Unit): Self = StObject.set(x, "OnCellMove", js.Any.fromFunction0(value))
+    inline def setOnCellMove(value: () => Unit): Self = StObject.set(x, "OnCellMove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnCellMoveUndefined: Self = StObject.set(x, "OnCellMove", js.undefined)
+    inline def setOnCellMoveUndefined: Self = StObject.set(x, "OnCellMove", js.undefined)
     
-    @scala.inline
-    def setOnEndEdit(value: () => Unit): Self = StObject.set(x, "OnEndEdit", js.Any.fromFunction0(value))
+    inline def setOnEndEdit(value: () => Unit): Self = StObject.set(x, "OnEndEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnValueChanged(value: /* newValue */ IValue => Unit): Self = StObject.set(x, "OnValueChanged", js.Any.fromFunction1(value))
+    inline def setOnValueChanged(value: /* newValue */ IValue => Unit): Self = StObject.set(x, "OnValueChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnValueChangedUndefined: Self = StObject.set(x, "OnValueChanged", js.undefined)
+    inline def setOnValueChangedUndefined: Self = StObject.set(x, "OnValueChanged", js.undefined)
     
-    @scala.inline
-    def setSetSize(value: (/* width */ Double, /* height */ Double) => Unit): Self = StObject.set(x, "SetSize", js.Any.fromFunction2(value))
+    inline def setSetSize(value: (/* width */ Double, /* height */ Double) => Unit): Self = StObject.set(x, "SetSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSizeUndefined: Self = StObject.set(x, "SetSize", js.undefined)
+    inline def setSetSizeUndefined: Self = StObject.set(x, "SetSize", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ IValue => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ IValue => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "SetValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "SetValue", js.undefined)
     
-    @scala.inline
-    def setSupportedReadMode(value: EditActorReadType): Self = StObject.set(x, "SupportedReadMode", value.asInstanceOf[js.Any])
+    inline def setSupportedReadMode(value: EditActorReadType): Self = StObject.set(x, "SupportedReadMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedReadModeUndefined: Self = StObject.set(x, "SupportedReadMode", js.undefined)
+    inline def setSupportedReadModeUndefined: Self = StObject.set(x, "SupportedReadMode", js.undefined)
     
-    @scala.inline
-    def setSupportedWriteMode(value: EditActorWriteType): Self = StObject.set(x, "SupportedWriteMode", value.asInstanceOf[js.Any])
+    inline def setSupportedWriteMode(value: EditActorWriteType): Self = StObject.set(x, "SupportedWriteMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedWriteModeUndefined: Self = StObject.set(x, "SupportedWriteMode", js.undefined)
+    inline def setSupportedWriteModeUndefined: Self = StObject.set(x, "SupportedWriteMode", js.undefined)
     
-    @scala.inline
-    def setUnbind(value: () => Unit): Self = StObject.set(x, "Unbind", js.Any.fromFunction0(value))
+    inline def setUnbind(value: () => Unit): Self = StObject.set(x, "Unbind", js.Any.fromFunction0(value))
   }
 }

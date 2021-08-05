@@ -11,6 +11,5 @@ object globToRegExpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def globToRegExp(glob: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("globToRegExp")(glob.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def globToRegExp(glob: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("globToRegExp")(glob.asInstanceOf[js.Any]).asInstanceOf[RegExp]
 }

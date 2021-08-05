@@ -51,67 +51,47 @@ trait Arcs extends StObject {
 }
 object Arcs {
   
-  @scala.inline
-  def apply(): Arcs = {
+  inline def apply(): Arcs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Arcs]
   }
   
-  @scala.inline
-  implicit class ArcsMutableBuilder[Self <: Arcs] (val x: Self) extends AnyVal {
+  extension [Self <: Arcs](x: Self) {
     
-    @scala.inline
-    def setArcs(value: MinWidth): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
+    inline def setArcs(value: MinWidth): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcsUndefined: Self = StObject.set(x, "arcs", js.undefined)
+    inline def setArcsUndefined: Self = StObject.set(x, "arcs", js.undefined)
     
-    @scala.inline
-    def setExpand(value: ExpandOptions): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: ExpandOptions): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setFullCircle(value: Boolean): Self = StObject.set(x, "fullCircle", value.asInstanceOf[js.Any])
+    inline def setFullCircle(value: Boolean): Self = StObject.set(x, "fullCircle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullCircleUndefined: Self = StObject.set(x, "fullCircle", js.undefined)
+    inline def setFullCircleUndefined: Self = StObject.set(x, "fullCircle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: LabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: LabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelLine(value: Show): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
+    inline def setLabelLine(value: Show): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelLineUndefined: Self = StObject.set(x, "labelLine", js.undefined)
+    inline def setLabelLineUndefined: Self = StObject.set(x, "labelLine", js.undefined)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

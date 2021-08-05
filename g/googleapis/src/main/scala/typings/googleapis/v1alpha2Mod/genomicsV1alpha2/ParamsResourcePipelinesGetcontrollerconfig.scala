@@ -29,31 +29,23 @@ trait ParamsResourcePipelinesGetcontrollerconfig
 }
 object ParamsResourcePipelinesGetcontrollerconfig {
   
-  @scala.inline
-  def apply(): ParamsResourcePipelinesGetcontrollerconfig = {
+  inline def apply(): ParamsResourcePipelinesGetcontrollerconfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePipelinesGetcontrollerconfig]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePipelinesGetcontrollerconfigMutableBuilder[Self <: ParamsResourcePipelinesGetcontrollerconfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePipelinesGetcontrollerconfig](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setValidationToken(value: String): Self = StObject.set(x, "validationToken", value.asInstanceOf[js.Any])
+    inline def setValidationToken(value: String): Self = StObject.set(x, "validationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationTokenUndefined: Self = StObject.set(x, "validationToken", js.undefined)
+    inline def setValidationTokenUndefined: Self = StObject.set(x, "validationToken", js.undefined)
   }
 }

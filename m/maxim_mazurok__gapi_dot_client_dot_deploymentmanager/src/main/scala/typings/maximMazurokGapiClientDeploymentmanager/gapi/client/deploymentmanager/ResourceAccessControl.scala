@@ -11,19 +11,15 @@ trait ResourceAccessControl extends StObject {
 }
 object ResourceAccessControl {
   
-  @scala.inline
-  def apply(): ResourceAccessControl = {
+  inline def apply(): ResourceAccessControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceAccessControl]
   }
   
-  @scala.inline
-  implicit class ResourceAccessControlMutableBuilder[Self <: ResourceAccessControl] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceAccessControl](x: Self) {
     
-    @scala.inline
-    def setGcpIamPolicy(value: String): Self = StObject.set(x, "gcpIamPolicy", value.asInstanceOf[js.Any])
+    inline def setGcpIamPolicy(value: String): Self = StObject.set(x, "gcpIamPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcpIamPolicyUndefined: Self = StObject.set(x, "gcpIamPolicy", js.undefined)
+    inline def setGcpIamPolicyUndefined: Self = StObject.set(x, "gcpIamPolicy", js.undefined)
   }
 }

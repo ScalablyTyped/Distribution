@@ -12,8 +12,7 @@ trait GetMessageFields
 }
 object GetMessageFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deliveryTag: Double,
     exchange: String,
     messageCount: Double,
@@ -24,10 +23,8 @@ object GetMessageFields {
     __obj.asInstanceOf[GetMessageFields]
   }
   
-  @scala.inline
-  implicit class GetMessageFieldsMutableBuilder[Self <: GetMessageFields] (val x: Self) extends AnyVal {
+  extension [Self <: GetMessageFields](x: Self) {
     
-    @scala.inline
-    def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+    inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
   }
 }

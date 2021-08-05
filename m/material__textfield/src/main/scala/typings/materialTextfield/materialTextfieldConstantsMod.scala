@@ -30,68 +30,57 @@ object materialTextfieldConstantsMod {
     @JSImport("@material/textfield/constants", "cssClasses.DISABLED")
     @js.native
     def DISABLED: String = js.native
-    @scala.inline
-    def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
+    inline def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.FOCUSED")
     @js.native
     def FOCUSED: String = js.native
-    @scala.inline
-    def FOCUSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSED")(x.asInstanceOf[js.Any])
+    inline def FOCUSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.HELPER_LINE")
     @js.native
     def HELPER_LINE: String = js.native
-    @scala.inline
-    def HELPER_LINE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_LINE")(x.asInstanceOf[js.Any])
+    inline def HELPER_LINE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_LINE")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.INVALID")
     @js.native
     def INVALID: String = js.native
-    @scala.inline
-    def INVALID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID")(x.asInstanceOf[js.Any])
+    inline def INVALID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.LABEL_FLOATING")
     @js.native
     def LABEL_FLOATING: String = js.native
-    @scala.inline
-    def LABEL_FLOATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_FLOATING")(x.asInstanceOf[js.Any])
+    inline def LABEL_FLOATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_FLOATING")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.NO_LABEL")
     @js.native
     def NO_LABEL: String = js.native
-    @scala.inline
-    def NO_LABEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_LABEL")(x.asInstanceOf[js.Any])
+    inline def NO_LABEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_LABEL")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.OUTLINED")
     @js.native
     def OUTLINED: String = js.native
-    @scala.inline
-    def OUTLINED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINED")(x.asInstanceOf[js.Any])
+    inline def OUTLINED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.TEXTAREA")
     @js.native
     def TEXTAREA: String = js.native
-    @scala.inline
-    def TEXTAREA_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXTAREA")(x.asInstanceOf[js.Any])
+    inline def TEXTAREA_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXTAREA")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.WITH_LEADING_ICON")
     @js.native
     def WITH_LEADING_ICON: String = js.native
-    @scala.inline
-    def WITH_LEADING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_LEADING_ICON")(x.asInstanceOf[js.Any])
+    inline def WITH_LEADING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_LEADING_ICON")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "cssClasses.WITH_TRAILING_ICON")
     @js.native
     def WITH_TRAILING_ICON: String = js.native
-    @scala.inline
-    def WITH_TRAILING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_TRAILING_ICON")(x.asInstanceOf[js.Any])
+    inline def WITH_TRAILING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_TRAILING_ICON")(x.asInstanceOf[js.Any])
   }
   
   object numbers {
@@ -103,8 +92,7 @@ object materialTextfieldConstantsMod {
     @JSImport("@material/textfield/constants", "numbers.LABEL_SCALE")
     @js.native
     def LABEL_SCALE: Double = js.native
-    @scala.inline
-    def LABEL_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SCALE")(x.asInstanceOf[js.Any])
+    inline def LABEL_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SCALE")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -138,61 +126,51 @@ object materialTextfieldConstantsMod {
     @JSImport("@material/textfield/constants", "strings.ARIA_CONTROLS")
     @js.native
     def ARIA_CONTROLS: String = js.native
-    @scala.inline
-    def ARIA_CONTROLS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CONTROLS")(x.asInstanceOf[js.Any])
+    inline def ARIA_CONTROLS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CONTROLS")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.ARIA_DESCRIBEDBY")
     @js.native
     def ARIA_DESCRIBEDBY: String = js.native
-    @scala.inline
-    def ARIA_DESCRIBEDBY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DESCRIBEDBY")(x.asInstanceOf[js.Any])
+    inline def ARIA_DESCRIBEDBY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DESCRIBEDBY")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.INPUT_SELECTOR")
     @js.native
     def INPUT_SELECTOR: String = js.native
-    @scala.inline
-    def INPUT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def INPUT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.LABEL_SELECTOR")
     @js.native
     def LABEL_SELECTOR: String = js.native
-    @scala.inline
-    def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.LEADING_ICON_SELECTOR")
     @js.native
     def LEADING_ICON_SELECTOR: String = js.native
-    @scala.inline
-    def LEADING_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEADING_ICON_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def LEADING_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEADING_ICON_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.LINE_RIPPLE_SELECTOR")
     @js.native
     def LINE_RIPPLE_SELECTOR: String = js.native
-    @scala.inline
-    def LINE_RIPPLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def LINE_RIPPLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.OUTLINE_SELECTOR")
     @js.native
     def OUTLINE_SELECTOR: String = js.native
-    @scala.inline
-    def OUTLINE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def OUTLINE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.PREFIX_SELECTOR")
     @js.native
     def PREFIX_SELECTOR: String = js.native
-    @scala.inline
-    def PREFIX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREFIX_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def PREFIX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREFIX_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.SUFFIX_SELECTOR")
     @js.native
     def SUFFIX_SELECTOR: String = js.native
-    @scala.inline
-    def SUFFIX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUFFIX_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def SUFFIX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUFFIX_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/constants", "strings.TRAILING_ICON_SELECTOR")
     @js.native
     def TRAILING_ICON_SELECTOR: String = js.native
-    @scala.inline
-    def TRAILING_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRAILING_ICON_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TRAILING_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRAILING_ICON_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

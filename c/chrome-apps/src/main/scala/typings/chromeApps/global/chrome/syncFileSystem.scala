@@ -70,14 +70,12 @@ object syncFileSystem {
     @JSGlobal("chrome.syncFileSystem.ConflictResolutionPolicy.LAST_WRITE_WIN")
     @js.native
     def LAST_WRITE_WIN: last_write_win_ = js.native
-    @scala.inline
-    def LAST_WRITE_WIN_=(x: last_write_win_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAST_WRITE_WIN")(x.asInstanceOf[js.Any])
+    inline def LAST_WRITE_WIN_=(x: last_write_win_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAST_WRITE_WIN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.ConflictResolutionPolicy.MANUAL")
     @js.native
     def MANUAL: manual__ = js.native
-    @scala.inline
-    def MANUAL_=(x: manual__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANUAL")(x.asInstanceOf[js.Any])
+    inline def MANUAL_=(x: manual__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANUAL")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -98,20 +96,17 @@ object syncFileSystem {
     @JSGlobal("chrome.syncFileSystem.FileStatus.CONFLICTING")
     @js.native
     def CONFLICTING: conflicting_ = js.native
-    @scala.inline
-    def CONFLICTING_=(x: conflicting_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONFLICTING")(x.asInstanceOf[js.Any])
+    inline def CONFLICTING_=(x: conflicting_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONFLICTING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.FileStatus.PENDING")
     @js.native
     def PENDING: pending_ = js.native
-    @scala.inline
-    def PENDING_=(x: pending_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
+    inline def PENDING_=(x: pending_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.FileStatus.SYNCED")
     @js.native
     def SYNCED: synced_ = js.native
-    @scala.inline
-    def SYNCED_=(x: synced_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNCED")(x.asInstanceOf[js.Any])
+    inline def SYNCED_=(x: synced_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNCED")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -136,32 +131,27 @@ object syncFileSystem {
     @JSGlobal("chrome.syncFileSystem.ServiceStatus.AUTHENTICATION_REQUIRED")
     @js.native
     def AUTHENTICATION_REQUIRED: authentication_required_ = js.native
-    @scala.inline
-    def AUTHENTICATION_REQUIRED_=(x: authentication_required_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTHENTICATION_REQUIRED")(x.asInstanceOf[js.Any])
+    inline def AUTHENTICATION_REQUIRED_=(x: authentication_required_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTHENTICATION_REQUIRED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.ServiceStatus.DISABLED")
     @js.native
     def DISABLED: disabled__ = js.native
-    @scala.inline
-    def DISABLED_=(x: disabled__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
+    inline def DISABLED_=(x: disabled__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.ServiceStatus.INITIALIZING")
     @js.native
     def INITIALIZING: initializing_ = js.native
-    @scala.inline
-    def INITIALIZING_=(x: initializing_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INITIALIZING")(x.asInstanceOf[js.Any])
+    inline def INITIALIZING_=(x: initializing_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INITIALIZING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.ServiceStatus.RUNNING")
     @js.native
     def RUNNING: running_ = js.native
-    @scala.inline
-    def RUNNING_=(x: running_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
+    inline def RUNNING_=(x: running_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.ServiceStatus.TEMPORARY_UNAVAILABLE")
     @js.native
     def TEMPORARY_UNAVAILABLE: temporary_unavailable_ = js.native
-    @scala.inline
-    def TEMPORARY_UNAVAILABLE_=(x: temporary_unavailable_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPORARY_UNAVAILABLE")(x.asInstanceOf[js.Any])
+    inline def TEMPORARY_UNAVAILABLE_=(x: temporary_unavailable_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPORARY_UNAVAILABLE")(x.asInstanceOf[js.Any])
   }
   
   object SyncAction {
@@ -173,20 +163,17 @@ object syncFileSystem {
     @JSGlobal("chrome.syncFileSystem.SyncAction.ADDED")
     @js.native
     def ADDED: added_ = js.native
-    @scala.inline
-    def ADDED_=(x: added_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDED")(x.asInstanceOf[js.Any])
+    inline def ADDED_=(x: added_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.SyncAction.DELETED")
     @js.native
     def DELETED: deleted_ = js.native
-    @scala.inline
-    def DELETED_=(x: deleted_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETED")(x.asInstanceOf[js.Any])
+    inline def DELETED_=(x: deleted_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.SyncAction.UPDATED")
     @js.native
     def UPDATED: updated_ = js.native
-    @scala.inline
-    def UPDATED_=(x: updated_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPDATED")(x.asInstanceOf[js.Any])
+    inline def UPDATED_=(x: updated_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPDATED")(x.asInstanceOf[js.Any])
   }
   
   object SyncDirection {
@@ -198,22 +185,19 @@ object syncFileSystem {
     @JSGlobal("chrome.syncFileSystem.SyncDirection.LOCAL_TO_REMOTE")
     @js.native
     def LOCAL_TO_REMOTE: local_to_remote_ = js.native
-    @scala.inline
-    def LOCAL_TO_REMOTE_=(x: local_to_remote_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL_TO_REMOTE")(x.asInstanceOf[js.Any])
+    inline def LOCAL_TO_REMOTE_=(x: local_to_remote_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL_TO_REMOTE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.syncFileSystem.SyncDirection.REMOTE_TO_LOCAL")
     @js.native
     def REMOTE_TO_LOCAL: remote_to_local_ = js.native
-    @scala.inline
-    def REMOTE_TO_LOCAL_=(x: remote_to_local_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOTE_TO_LOCAL")(x.asInstanceOf[js.Any])
+    inline def REMOTE_TO_LOCAL_=(x: remote_to_local_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOTE_TO_LOCAL")(x.asInstanceOf[js.Any])
   }
   
   /**
     * Gets the current conflict resolution policy.
     * @see ConflictResolutionPolicy
     */
-  @scala.inline
-  def getConflictResolutionPolicy(
+  inline def getConflictResolutionPolicy(
     callback: js.Function1[
       /* policy */ ToStringLiteral[
         LASTWRITEWIN, 
@@ -233,8 +217,7 @@ object syncFileSystem {
     * the service's conflict resolution policy is set to 'manual'.
     * @see FileStatus
     * */
-  @scala.inline
-  def getFileStatus(
+  inline def getFileStatus(
     fileEntry: FileEntry,
     callback: js.Function1[
       /* status */ ToStringLiteral[
@@ -250,8 +233,7 @@ object syncFileSystem {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileStatus")(fileEntry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Returns each FileStatus for the given fileEntry array. Typically called with the result from dirReader.readEntries(). */
-  @scala.inline
-  def getFileStatuses(
+  inline def getFileStatuses(
     fileEntries: js.Array[FileEntry],
     callback: js.Function1[/* status */ js.Array[FileStatusInfo], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileStatuses")(fileEntries.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -262,8 +244,7 @@ object syncFileSystem {
     * @param callback
     * @see ServiceStatus
     */
-  @scala.inline
-  def getServiceStatus(
+  inline def getServiceStatus(
     callback: js.Function1[
       /* status */ ToStringLiteral[
         AUTHENTICATIONREQUIRED, 
@@ -282,8 +263,7 @@ object syncFileSystem {
     * @param fileSystem
     * @param callback
     */
-  @scala.inline
-  def getUsageAndQuota(fileSystem: FileSystem, callback: js.Function1[/* info */ QuotaBytes, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsageAndQuota")(fileSystem.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getUsageAndQuota(fileSystem: FileSystem, callback: js.Function1[/* info */ QuotaBytes, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsageAndQuota")(fileSystem.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Fired when a file has been updated by the background sync service. */
   @JSGlobal("chrome.syncFileSystem.onFileStatusChanged")
@@ -313,8 +293,7 @@ object syncFileSystem {
     * checked in the callback.
     * @param callback A callback type for requestFileSystem.
     */
-  @scala.inline
-  def requestFileSystem(callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFileSystem")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def requestFileSystem(callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFileSystem")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets the default conflict resolution policy for the 'syncable' file storage
@@ -326,8 +305,7 @@ object syncFileSystem {
     * @see ConflictResolutionPolicy
     * @param [callback] A generic result callback to indicate success or failure.
     */
-  @scala.inline
-  def setConflictResolutionPolicy(
+  inline def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       LASTWRITEWIN, 
       /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 
@@ -337,8 +315,7 @@ object syncFileSystem {
       ]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConflictResolutionPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setConflictResolutionPolicy(
+  inline def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       LASTWRITEWIN, 
       /* keyof chrome-apps.anon.LASTWRITEWIN */ LAST_WRITE_WIN | MANUAL, 

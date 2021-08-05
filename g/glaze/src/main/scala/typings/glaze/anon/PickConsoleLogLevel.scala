@@ -13,19 +13,15 @@ trait PickConsoleLogLevel extends StObject {
 }
 object PickConsoleLogLevel {
   
-  @scala.inline
-  def apply(error: /* repeated */ js.Any => Unit, warn: /* repeated */ js.Any => Unit): PickConsoleLogLevel = {
+  inline def apply(error: /* repeated */ js.Any => Unit, warn: /* repeated */ js.Any => Unit): PickConsoleLogLevel = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[PickConsoleLogLevel]
   }
   
-  @scala.inline
-  implicit class PickConsoleLogLevelMutableBuilder[Self <: PickConsoleLogLevel] (val x: Self) extends AnyVal {
+  extension [Self <: PickConsoleLogLevel](x: Self) {
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

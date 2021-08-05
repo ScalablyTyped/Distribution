@@ -13,22 +13,17 @@ trait DescribePermissionsResult extends StObject {
 }
 object DescribePermissionsResult {
   
-  @scala.inline
-  def apply(): DescribePermissionsResult = {
+  inline def apply(): DescribePermissionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePermissionsResult]
   }
   
-  @scala.inline
-  implicit class DescribePermissionsResultMutableBuilder[Self <: DescribePermissionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePermissionsResult](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: Permissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Permissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
   }
 }

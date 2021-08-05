@@ -12,19 +12,15 @@ trait ProfilerSessionStoppedParams extends StObject {
 }
 object ProfilerSessionStoppedParams {
   
-  @scala.inline
-  def apply(ownerUri: String, sessionId: Double): ProfilerSessionStoppedParams = {
+  inline def apply(ownerUri: String, sessionId: Double): ProfilerSessionStoppedParams = {
     val __obj = js.Dynamic.literal(ownerUri = ownerUri.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilerSessionStoppedParams]
   }
   
-  @scala.inline
-  implicit class ProfilerSessionStoppedParamsMutableBuilder[Self <: ProfilerSessionStoppedParams] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilerSessionStoppedParams](x: Self) {
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: Double): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

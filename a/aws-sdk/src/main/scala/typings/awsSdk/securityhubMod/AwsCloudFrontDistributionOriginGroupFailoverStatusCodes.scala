@@ -18,28 +18,21 @@ trait AwsCloudFrontDistributionOriginGroupFailoverStatusCodes extends StObject {
 }
 object AwsCloudFrontDistributionOriginGroupFailoverStatusCodes {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionOriginGroupFailoverStatusCodes = {
+  inline def apply(): AwsCloudFrontDistributionOriginGroupFailoverStatusCodes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginGroupFailoverStatusCodes]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionOriginGroupFailoverStatusCodesMutableBuilder[Self <: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes](x: Self) {
     
-    @scala.inline
-    def setItems(value: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Integer*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Integer*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: Integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "Quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "Quantity", js.undefined)
   }
 }

@@ -23,7 +23,7 @@ object nativeCommandsSenderMod {
     
     def mergeOptions(componentId: String, options: js.Object): Unit = js.native
     
-    val nativeCommandsModule: js.Any = js.native
+    /* private */ val nativeCommandsModule: js.Any = js.native
     
     def pop(commandId: String, componentId: String): js.Promise[js.Any] = js.native
     def pop(commandId: String, componentId: String, options: js.Object): js.Promise[js.Any] = js.native

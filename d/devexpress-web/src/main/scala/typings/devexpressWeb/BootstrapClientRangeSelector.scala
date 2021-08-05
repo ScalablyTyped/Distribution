@@ -31,8 +31,7 @@ trait BootstrapClientRangeSelector
 }
 object BootstrapClientRangeSelector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Disposing: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]],
     Drawn: ASPxClientEvent[BootstrapUIWidgetDrawnEventHandler[BootstrapUIWidgetBase]],
@@ -73,17 +72,13 @@ object BootstrapClientRangeSelector {
     __obj.asInstanceOf[BootstrapClientRangeSelector]
   }
   
-  @scala.inline
-  implicit class BootstrapClientRangeSelectorMutableBuilder[Self <: BootstrapClientRangeSelector] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientRangeSelector](x: Self) {
     
-    @scala.inline
-    def setGetValue(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValue(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueChanged(
+    inline def setValueChanged(
       value: ASPxClientEvent[
           BootstrapClientRangeSelectorValueChangedEventHandler[BootstrapClientRangeSelector]
         ]

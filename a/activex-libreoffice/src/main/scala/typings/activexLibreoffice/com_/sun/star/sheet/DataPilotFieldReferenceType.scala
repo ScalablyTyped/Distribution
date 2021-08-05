@@ -29,31 +29,22 @@ object DataPilotFieldReferenceType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def COLUMN_PERCENTAGE: `6` = 6.asInstanceOf[`6`]
+    inline def COLUMN_PERCENTAGE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def INDEX: `8` = 8.asInstanceOf[`8`]
+    inline def INDEX: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def ITEM_DIFFERENCE: `1` = 1.asInstanceOf[`1`]
+    inline def ITEM_DIFFERENCE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def ITEM_PERCENTAGE: `2` = 2.asInstanceOf[`2`]
+    inline def ITEM_PERCENTAGE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def ITEM_PERCENTAGE_DIFFERENCE: `3` = 3.asInstanceOf[`3`]
+    inline def ITEM_PERCENTAGE_DIFFERENCE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def ROW_PERCENTAGE: `5` = 5.asInstanceOf[`5`]
+    inline def ROW_PERCENTAGE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def RUNNING_TOTAL: `4` = 4.asInstanceOf[`4`]
+    inline def RUNNING_TOTAL: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def TOTAL_PERCENTAGE: `7` = 7.asInstanceOf[`7`]
+    inline def TOTAL_PERCENTAGE: `7` = 7.asInstanceOf[`7`]
   }
 }

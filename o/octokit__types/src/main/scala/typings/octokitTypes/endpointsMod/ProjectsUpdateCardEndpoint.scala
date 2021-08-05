@@ -24,28 +24,21 @@ trait ProjectsUpdateCardEndpoint
 }
 object ProjectsUpdateCardEndpoint {
   
-  @scala.inline
-  def apply(card_id: Double, mediaType: `0`[inertia]): ProjectsUpdateCardEndpoint = {
+  inline def apply(card_id: Double, mediaType: `0`[inertia]): ProjectsUpdateCardEndpoint = {
     val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsUpdateCardEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsUpdateCardEndpointMutableBuilder[Self <: ProjectsUpdateCardEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsUpdateCardEndpoint](x: Self) {
     
-    @scala.inline
-    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
-    @scala.inline
-    def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
+    inline def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

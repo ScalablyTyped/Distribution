@@ -44,7 +44,7 @@ trait CubeField extends StObject {
   
   var EnableMultiplePageItems: Boolean = js.native
   
-  @JSName("Excel.CubeField_typekey")
+  /* private */ @JSName("Excel.CubeField_typekey")
   var ExcelDotCubeField_typekey: CubeField = js.native
   
   var FlattenHierarchies: Boolean = js.native

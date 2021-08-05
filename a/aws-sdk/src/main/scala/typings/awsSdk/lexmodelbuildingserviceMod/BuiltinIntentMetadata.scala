@@ -18,28 +18,21 @@ trait BuiltinIntentMetadata extends StObject {
 }
 object BuiltinIntentMetadata {
   
-  @scala.inline
-  def apply(): BuiltinIntentMetadata = {
+  inline def apply(): BuiltinIntentMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuiltinIntentMetadata]
   }
   
-  @scala.inline
-  implicit class BuiltinIntentMetadataMutableBuilder[Self <: BuiltinIntentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BuiltinIntentMetadata](x: Self) {
     
-    @scala.inline
-    def setSignature(value: BuiltinIntentSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: BuiltinIntentSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setSupportedLocales(value: LocaleList): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
+    inline def setSupportedLocales(value: LocaleList): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
+    inline def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
     
-    @scala.inline
-    def setSupportedLocalesVarargs(value: Locale*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
+    inline def setSupportedLocalesVarargs(value: Locale*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
   }
 }

@@ -43,58 +43,41 @@ trait InstanceInfo extends StObject {
 }
 object InstanceInfo {
   
-  @scala.inline
-  def apply(): InstanceInfo = {
+  inline def apply(): InstanceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceInfo]
   }
   
-  @scala.inline
-  implicit class InstanceInfoMutableBuilder[Self <: InstanceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceInfo](x: Self) {
     
-    @scala.inline
-    def setDeregisterTime(value: Timestamp): Self = StObject.set(x, "deregisterTime", value.asInstanceOf[js.Any])
+    inline def setDeregisterTime(value: Timestamp): Self = StObject.set(x, "deregisterTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeregisterTimeUndefined: Self = StObject.set(x, "deregisterTime", js.undefined)
+    inline def setDeregisterTimeUndefined: Self = StObject.set(x, "deregisterTime", js.undefined)
     
-    @scala.inline
-    def setIamSessionArn(value: IamSessionArn): Self = StObject.set(x, "iamSessionArn", value.asInstanceOf[js.Any])
+    inline def setIamSessionArn(value: IamSessionArn): Self = StObject.set(x, "iamSessionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamSessionArnUndefined: Self = StObject.set(x, "iamSessionArn", js.undefined)
+    inline def setIamSessionArnUndefined: Self = StObject.set(x, "iamSessionArn", js.undefined)
     
-    @scala.inline
-    def setIamUserArn(value: IamUserArn): Self = StObject.set(x, "iamUserArn", value.asInstanceOf[js.Any])
+    inline def setIamUserArn(value: IamUserArn): Self = StObject.set(x, "iamUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserArnUndefined: Self = StObject.set(x, "iamUserArn", js.undefined)
+    inline def setIamUserArnUndefined: Self = StObject.set(x, "iamUserArn", js.undefined)
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
+    inline def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    @scala.inline
-    def setRegisterTime(value: Timestamp): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
+    inline def setRegisterTime(value: Timestamp): Self = StObject.set(x, "registerTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterTimeUndefined: Self = StObject.set(x, "registerTime", js.undefined)
+    inline def setRegisterTimeUndefined: Self = StObject.set(x, "registerTime", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -37,28 +37,20 @@ object DragOrder {
   @js.native
   val ^ : DragOrder = js.native
   
-  @scala.inline
-  implicit class DragOrderMutableBuilder[Self <: DragOrder] (val x: Self) extends AnyVal {
+  extension [Self <: DragOrder](x: Self) {
     
-    @scala.inline
-    def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
+    inline def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$dragDestroy(value: Unit): Self = StObject.set(x, "$dragDestroy", value.asInstanceOf[js.Any])
+    inline def set$dragDestroy(value: Unit): Self = StObject.set(x, "$dragDestroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
+    inline def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set$dragMark(value: Boolean): Self = StObject.set(x, "$dragMark", value.asInstanceOf[js.Any])
+    inline def set$dragMark(value: Boolean): Self = StObject.set(x, "$dragMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement) => Unit): Self = StObject.set(x, "$dragOut", js.Any.fromFunction3(value))
+    inline def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement) => Unit): Self = StObject.set(x, "$dragOut", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set$dragPos(value: WebixCallback): Self = StObject.set(x, "$dragPos", value.asInstanceOf[js.Any])
+    inline def set$dragPos(value: WebixCallback): Self = StObject.set(x, "$dragPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$drop(value: (HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$drop", js.Any.fromFunction3(value))
+    inline def set$drop(value: (HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$drop", js.Any.fromFunction3(value))
   }
 }

@@ -26,8 +26,7 @@ trait colorRampsByTagParams
 }
 object colorRampsByTagParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,25 +35,18 @@ object colorRampsByTagParams {
     __obj.asInstanceOf[colorRampsByTagParams]
   }
   
-  @scala.inline
-  implicit class colorRampsByTagParamsMutableBuilder[Self <: colorRampsByTagParams] (val x: Self) extends AnyVal {
+  extension [Self <: colorRampsByTagParams](x: Self) {
     
-    @scala.inline
-    def setExcludedTags(value: js.Array[String]): Self = StObject.set(x, "excludedTags", value.asInstanceOf[js.Any])
+    inline def setExcludedTags(value: js.Array[String]): Self = StObject.set(x, "excludedTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
+    inline def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
     
-    @scala.inline
-    def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
+    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedTags(value: js.Array[String]): Self = StObject.set(x, "includedTags", value.asInstanceOf[js.Any])
+    inline def setIncludedTags(value: js.Array[String]): Self = StObject.set(x, "includedTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
+    inline def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
     
-    @scala.inline
-    def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
+    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
   }
 }

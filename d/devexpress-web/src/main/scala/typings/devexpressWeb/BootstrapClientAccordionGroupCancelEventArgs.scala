@@ -18,16 +18,13 @@ trait BootstrapClientAccordionGroupCancelEventArgs
 }
 object BootstrapClientAccordionGroupCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, group: BootstrapClientAccordionGroup, processOnServer: Boolean): BootstrapClientAccordionGroupCancelEventArgs = {
+  inline def apply(cancel: Boolean, group: BootstrapClientAccordionGroup, processOnServer: Boolean): BootstrapClientAccordionGroupCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapClientAccordionGroupCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientAccordionGroupCancelEventArgsMutableBuilder[Self <: BootstrapClientAccordionGroupCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientAccordionGroupCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setGroup(value: BootstrapClientAccordionGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: BootstrapClientAccordionGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

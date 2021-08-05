@@ -18,25 +18,19 @@ trait GoogleActionsV2OrdersMerchant extends StObject {
 }
 object GoogleActionsV2OrdersMerchant {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersMerchant = {
+  inline def apply(): GoogleActionsV2OrdersMerchant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersMerchant]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersMerchantMutableBuilder[Self <: GoogleActionsV2OrdersMerchant] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersMerchant](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait TimeToLiveSpecification extends StObject {
 }
 object TimeToLiveSpecification {
   
-  @scala.inline
-  def apply(AttributeName: TimeToLiveAttributeName, Enabled: TimeToLiveEnabled): TimeToLiveSpecification = {
+  inline def apply(AttributeName: TimeToLiveAttributeName, Enabled: TimeToLiveEnabled): TimeToLiveSpecification = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeToLiveSpecification]
   }
   
-  @scala.inline
-  implicit class TimeToLiveSpecificationMutableBuilder[Self <: TimeToLiveSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: TimeToLiveSpecification](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: TimeToLiveEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: TimeToLiveEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

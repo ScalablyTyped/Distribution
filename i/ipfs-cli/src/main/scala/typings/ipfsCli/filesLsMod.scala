@@ -24,20 +24,17 @@ object filesLsMod {
     @js.native
     def cidBase: `1` = js.native
     
-    @scala.inline
-    def cidBase_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/ls", "builder.long")
     @js.native
     def long: AliasCoerce = js.native
-    @scala.inline
-    def long_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("long")(x.asInstanceOf[js.Any])
+    inline def long_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("long")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/ls", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/files/ls", "command")
@@ -48,6 +45,5 @@ object filesLsMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintPathLongCidBaseTimeout: Long): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPathLongCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintPathLongCidBaseTimeout: Long): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPathLongCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

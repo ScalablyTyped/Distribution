@@ -23,22 +23,17 @@ trait AnalyticsApplicationReferenceDataSourcesS3 extends StObject {
 }
 object AnalyticsApplicationReferenceDataSourcesS3 {
   
-  @scala.inline
-  def apply(bucketArn: String, fileKey: String, roleArn: String): AnalyticsApplicationReferenceDataSourcesS3 = {
+  inline def apply(bucketArn: String, fileKey: String, roleArn: String): AnalyticsApplicationReferenceDataSourcesS3 = {
     val __obj = js.Dynamic.literal(bucketArn = bucketArn.asInstanceOf[js.Any], fileKey = fileKey.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesS3]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationReferenceDataSourcesS3MutableBuilder[Self <: AnalyticsApplicationReferenceDataSourcesS3] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationReferenceDataSourcesS3](x: Self) {
     
-    @scala.inline
-    def setBucketArn(value: String): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
+    inline def setBucketArn(value: String): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileKey(value: String): Self = StObject.set(x, "fileKey", value.asInstanceOf[js.Any])
+    inline def setFileKey(value: String): Self = StObject.set(x, "fileKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

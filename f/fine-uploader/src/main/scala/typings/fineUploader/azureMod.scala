@@ -112,23 +112,18 @@ object azureMod {
     }
     object AzureBlobPropertyOptions {
       
-      @scala.inline
-      def apply(): AzureBlobPropertyOptions = {
+      inline def apply(): AzureBlobPropertyOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureBlobPropertyOptions]
       }
       
-      @scala.inline
-      implicit class AzureBlobPropertyOptionsMutableBuilder[Self <: AzureBlobPropertyOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureBlobPropertyOptions](x: Self) {
         
-        @scala.inline
-        def setName(value: String | AzureBlobPropertyNameFunction): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String | AzureBlobPropertyNameFunction): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+        inline def setNameFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -153,26 +148,20 @@ object azureMod {
     }
     object AzureChunkingOptions {
       
-      @scala.inline
-      def apply(): AzureChunkingOptions = {
+      inline def apply(): AzureChunkingOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureChunkingOptions]
       }
       
-      @scala.inline
-      implicit class AzureChunkingOptionsMutableBuilder[Self <: AzureChunkingOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureChunkingOptions](x: Self) {
         
-        @scala.inline
-        def setMinFileSize(value: Double): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
+        inline def setMinFileSize(value: Double): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinFileSizeUndefined: Self = StObject.set(x, "minFileSize", js.undefined)
+        inline def setMinFileSizeUndefined: Self = StObject.set(x, "minFileSize", js.undefined)
         
-        @scala.inline
-        def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+        inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+        inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
       }
     }
     
@@ -215,50 +204,36 @@ object azureMod {
     }
     object AzureCoreOptions {
       
-      @scala.inline
-      def apply(): AzureCoreOptions = {
+      inline def apply(): AzureCoreOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureCoreOptions]
       }
       
-      @scala.inline
-      implicit class AzureCoreOptionsMutableBuilder[Self <: AzureCoreOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureCoreOptions](x: Self) {
         
-        @scala.inline
-        def setBlobProperties(value: AzureBlobPropertyOptions): Self = StObject.set(x, "blobProperties", value.asInstanceOf[js.Any])
+        inline def setBlobProperties(value: AzureBlobPropertyOptions): Self = StObject.set(x, "blobProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlobPropertiesUndefined: Self = StObject.set(x, "blobProperties", js.undefined)
+        inline def setBlobPropertiesUndefined: Self = StObject.set(x, "blobProperties", js.undefined)
         
-        @scala.inline
-        def setChunking(value: AzureChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
+        inline def setChunking(value: AzureChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
+        inline def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
         
-        @scala.inline
-        def setCors(value: AzureCorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+        inline def setCors(value: AzureCorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+        inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
         
-        @scala.inline
-        def setRequest(value: AzureRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: AzureRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+        inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
         
-        @scala.inline
-        def setSignature(value: AzureSignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+        inline def setSignature(value: AzureSignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+        inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
         
-        @scala.inline
-        def setUploadSuccess(value: AzureUploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
+        inline def setUploadSuccess(value: AzureUploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
+        inline def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
       }
     }
     
@@ -267,8 +242,7 @@ object azureMod {
          with CorsOptions
     object AzureCorsOptions {
       
-      @scala.inline
-      def apply(): AzureCorsOptions = {
+      inline def apply(): AzureCorsOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureCorsOptions]
       }
@@ -287,20 +261,16 @@ object azureMod {
     }
     object AzureFailedUploadTextDisplayOptions {
       
-      @scala.inline
-      def apply(): AzureFailedUploadTextDisplayOptions = {
+      inline def apply(): AzureFailedUploadTextDisplayOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureFailedUploadTextDisplayOptions]
       }
       
-      @scala.inline
-      implicit class AzureFailedUploadTextDisplayOptionsMutableBuilder[Self <: AzureFailedUploadTextDisplayOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureFailedUploadTextDisplayOptions](x: Self) {
         
-        @scala.inline
-        def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       }
     }
     
@@ -317,20 +287,16 @@ object azureMod {
     }
     object AzureRequestOptions {
       
-      @scala.inline
-      def apply(): AzureRequestOptions = {
+      inline def apply(): AzureRequestOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureRequestOptions]
       }
       
-      @scala.inline
-      implicit class AzureRequestOptionsMutableBuilder[Self <: AzureRequestOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureRequestOptions](x: Self) {
         
-        @scala.inline
-        def setContainerUrl(value: String): Self = StObject.set(x, "containerUrl", value.asInstanceOf[js.Any])
+        inline def setContainerUrl(value: String): Self = StObject.set(x, "containerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerUrlUndefined: Self = StObject.set(x, "containerUrl", js.undefined)
+        inline def setContainerUrlUndefined: Self = StObject.set(x, "containerUrl", js.undefined)
       }
     }
     
@@ -345,20 +311,16 @@ object azureMod {
     }
     object AzureResumableFileObject {
       
-      @scala.inline
-      def apply(): AzureResumableFileObject = {
+      inline def apply(): AzureResumableFileObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureResumableFileObject]
       }
       
-      @scala.inline
-      implicit class AzureResumableFileObjectMutableBuilder[Self <: AzureResumableFileObject] (val x: Self) extends AnyVal {
+      extension [Self <: AzureResumableFileObject](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       }
     }
     
@@ -384,29 +346,22 @@ object azureMod {
     }
     object AzureSignatureOptions {
       
-      @scala.inline
-      def apply(): AzureSignatureOptions = {
+      inline def apply(): AzureSignatureOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureSignatureOptions]
       }
       
-      @scala.inline
-      implicit class AzureSignatureOptionsMutableBuilder[Self <: AzureSignatureOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureSignatureOptions](x: Self) {
         
-        @scala.inline
-        def setCustomHeaders(value: js.Any | AzureCustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+        inline def setCustomHeaders(value: js.Any | AzureCustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomHeadersFunction1(value: /* id */ Double => Unit): Self = StObject.set(x, "customHeaders", js.Any.fromFunction1(value))
+        inline def setCustomHeadersFunction1(value: /* id */ Double => Unit): Self = StObject.set(x, "customHeaders", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+        inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
         
-        @scala.inline
-        def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+        inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+        inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       }
     }
     
@@ -457,56 +412,40 @@ object azureMod {
     }
     object AzureUIOptions {
       
-      @scala.inline
-      def apply(): AzureUIOptions = {
+      inline def apply(): AzureUIOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureUIOptions]
       }
       
-      @scala.inline
-      implicit class AzureUIOptionsMutableBuilder[Self <: AzureUIOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureUIOptions](x: Self) {
         
-        @scala.inline
-        def setBlobProperties(value: AzureBlobPropertyOptions): Self = StObject.set(x, "blobProperties", value.asInstanceOf[js.Any])
+        inline def setBlobProperties(value: AzureBlobPropertyOptions): Self = StObject.set(x, "blobProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlobPropertiesUndefined: Self = StObject.set(x, "blobProperties", js.undefined)
+        inline def setBlobPropertiesUndefined: Self = StObject.set(x, "blobProperties", js.undefined)
         
-        @scala.inline
-        def setChunking(value: AzureChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
+        inline def setChunking(value: AzureChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
+        inline def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
         
-        @scala.inline
-        def setCors(value: AzureCorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+        inline def setCors(value: AzureCorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+        inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
         
-        @scala.inline
-        def setFailedUploadTextDisplay(value: AzureFailedUploadTextDisplayOptions): Self = StObject.set(x, "failedUploadTextDisplay", value.asInstanceOf[js.Any])
+        inline def setFailedUploadTextDisplay(value: AzureFailedUploadTextDisplayOptions): Self = StObject.set(x, "failedUploadTextDisplay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFailedUploadTextDisplayUndefined: Self = StObject.set(x, "failedUploadTextDisplay", js.undefined)
+        inline def setFailedUploadTextDisplayUndefined: Self = StObject.set(x, "failedUploadTextDisplay", js.undefined)
         
-        @scala.inline
-        def setRequest(value: AzureRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: AzureRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+        inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
         
-        @scala.inline
-        def setSignature(value: AzureSignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+        inline def setSignature(value: AzureSignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+        inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
         
-        @scala.inline
-        def setUploadSuccess(value: AzureUploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
+        inline def setUploadSuccess(value: AzureUploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
+        inline def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
       }
     }
     
@@ -545,38 +484,28 @@ object azureMod {
     }
     object AzureUploadSuccessOptions {
       
-      @scala.inline
-      def apply(): AzureUploadSuccessOptions = {
+      inline def apply(): AzureUploadSuccessOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AzureUploadSuccessOptions]
       }
       
-      @scala.inline
-      implicit class AzureUploadSuccessOptionsMutableBuilder[Self <: AzureUploadSuccessOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AzureUploadSuccessOptions](x: Self) {
         
-        @scala.inline
-        def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+        inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+        inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
         
-        @scala.inline
-        def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+        inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+        inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+        inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        @scala.inline
-        def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       }
     }
   }

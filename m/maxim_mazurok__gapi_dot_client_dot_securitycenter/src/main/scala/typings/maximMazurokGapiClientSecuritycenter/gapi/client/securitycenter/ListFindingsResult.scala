@@ -17,31 +17,23 @@ trait ListFindingsResult extends StObject {
 }
 object ListFindingsResult {
   
-  @scala.inline
-  def apply(): ListFindingsResult = {
+  inline def apply(): ListFindingsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFindingsResult]
   }
   
-  @scala.inline
-  implicit class ListFindingsResultMutableBuilder[Self <: ListFindingsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListFindingsResult](x: Self) {
     
-    @scala.inline
-    def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
-    @scala.inline
-    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
+    inline def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
+    inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }
 }

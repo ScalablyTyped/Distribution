@@ -15,31 +15,23 @@ trait HostBaseOptions extends StObject {
 }
 object HostBaseOptions {
   
-  @scala.inline
-  def apply(): HostBaseOptions = {
+  inline def apply(): HostBaseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostBaseOptions]
   }
   
-  @scala.inline
-  implicit class HostBaseOptionsMutableBuilder[Self <: HostBaseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HostBaseOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
-    @scala.inline
-    def setKnownGrammars(value: Record[String, String]): Self = StObject.set(x, "knownGrammars", value.asInstanceOf[js.Any])
+    inline def setKnownGrammars(value: Record[String, String]): Self = StObject.set(x, "knownGrammars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnownGrammarsUndefined: Self = StObject.set(x, "knownGrammars", js.undefined)
+    inline def setKnownGrammarsUndefined: Self = StObject.set(x, "knownGrammars", js.undefined)
     
-    @scala.inline
-    def setUseBuiltinGrammars(value: Boolean): Self = StObject.set(x, "useBuiltinGrammars", value.asInstanceOf[js.Any])
+    inline def setUseBuiltinGrammars(value: Boolean): Self = StObject.set(x, "useBuiltinGrammars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBuiltinGrammarsUndefined: Self = StObject.set(x, "useBuiltinGrammars", js.undefined)
+    inline def setUseBuiltinGrammarsUndefined: Self = StObject.set(x, "useBuiltinGrammars", js.undefined)
   }
 }

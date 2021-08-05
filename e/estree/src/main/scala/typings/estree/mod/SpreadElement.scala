@@ -16,20 +16,16 @@ trait SpreadElement
 }
 object SpreadElement {
   
-  @scala.inline
-  def apply(argument: Expression): SpreadElement = {
+  inline def apply(argument: Expression): SpreadElement = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SpreadElement")
     __obj.asInstanceOf[SpreadElement]
   }
   
-  @scala.inline
-  implicit class SpreadElementMutableBuilder[Self <: SpreadElement] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadElement](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.SpreadElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.SpreadElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

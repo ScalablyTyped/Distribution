@@ -13,19 +13,15 @@ trait UpdateClusterVersionResponse extends StObject {
 }
 object UpdateClusterVersionResponse {
   
-  @scala.inline
-  def apply(): UpdateClusterVersionResponse = {
+  inline def apply(): UpdateClusterVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateClusterVersionResponse]
   }
   
-  @scala.inline
-  implicit class UpdateClusterVersionResponseMutableBuilder[Self <: UpdateClusterVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateClusterVersionResponse](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

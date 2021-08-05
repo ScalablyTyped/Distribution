@@ -18,25 +18,19 @@ trait DolbyVisionLevel6Metadata extends StObject {
 }
 object DolbyVisionLevel6Metadata {
   
-  @scala.inline
-  def apply(): DolbyVisionLevel6Metadata = {
+  inline def apply(): DolbyVisionLevel6Metadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DolbyVisionLevel6Metadata]
   }
   
-  @scala.inline
-  implicit class DolbyVisionLevel6MetadataMutableBuilder[Self <: DolbyVisionLevel6Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: DolbyVisionLevel6Metadata](x: Self) {
     
-    @scala.inline
-    def setMaxCll(value: integerMin0Max65535): Self = StObject.set(x, "MaxCll", value.asInstanceOf[js.Any])
+    inline def setMaxCll(value: integerMin0Max65535): Self = StObject.set(x, "MaxCll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCllUndefined: Self = StObject.set(x, "MaxCll", js.undefined)
+    inline def setMaxCllUndefined: Self = StObject.set(x, "MaxCll", js.undefined)
     
-    @scala.inline
-    def setMaxFall(value: integerMin0Max65535): Self = StObject.set(x, "MaxFall", value.asInstanceOf[js.Any])
+    inline def setMaxFall(value: integerMin0Max65535): Self = StObject.set(x, "MaxFall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFallUndefined: Self = StObject.set(x, "MaxFall", js.undefined)
+    inline def setMaxFallUndefined: Self = StObject.set(x, "MaxFall", js.undefined)
   }
 }

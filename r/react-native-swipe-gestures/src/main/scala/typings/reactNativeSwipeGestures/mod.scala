@@ -38,32 +38,24 @@ object mod {
   }
   object GestureRecognizerConfig {
     
-    @scala.inline
-    def apply(): GestureRecognizerConfig = {
+    inline def apply(): GestureRecognizerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GestureRecognizerConfig]
     }
     
-    @scala.inline
-    implicit class GestureRecognizerConfigMutableBuilder[Self <: GestureRecognizerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GestureRecognizerConfig](x: Self) {
       
-      @scala.inline
-      def setDirectionalOffsetThreshold(value: Double): Self = StObject.set(x, "directionalOffsetThreshold", value.asInstanceOf[js.Any])
+      inline def setDirectionalOffsetThreshold(value: Double): Self = StObject.set(x, "directionalOffsetThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalOffsetThresholdUndefined: Self = StObject.set(x, "directionalOffsetThreshold", js.undefined)
+      inline def setDirectionalOffsetThresholdUndefined: Self = StObject.set(x, "directionalOffsetThreshold", js.undefined)
       
-      @scala.inline
-      def setGestureIsClickThreshold(value: Double): Self = StObject.set(x, "gestureIsClickThreshold", value.asInstanceOf[js.Any])
+      inline def setGestureIsClickThreshold(value: Double): Self = StObject.set(x, "gestureIsClickThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestureIsClickThresholdUndefined: Self = StObject.set(x, "gestureIsClickThreshold", js.undefined)
+      inline def setGestureIsClickThresholdUndefined: Self = StObject.set(x, "gestureIsClickThreshold", js.undefined)
       
-      @scala.inline
-      def setVelocityThreshold(value: Double): Self = StObject.set(x, "velocityThreshold", value.asInstanceOf[js.Any])
+      inline def setVelocityThreshold(value: Double): Self = StObject.set(x, "velocityThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityThresholdUndefined: Self = StObject.set(x, "velocityThreshold", js.undefined)
+      inline def setVelocityThresholdUndefined: Self = StObject.set(x, "velocityThreshold", js.undefined)
     }
   }
   
@@ -87,50 +79,36 @@ object mod {
   }
   object GestureRecognizerProps {
     
-    @scala.inline
-    def apply(): GestureRecognizerProps = {
+    inline def apply(): GestureRecognizerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GestureRecognizerProps]
     }
     
-    @scala.inline
-    implicit class GestureRecognizerPropsMutableBuilder[Self <: GestureRecognizerProps] (val x: Self) extends AnyVal {
+    extension [Self <: GestureRecognizerProps](x: Self) {
       
-      @scala.inline
-      def setConfig(value: GestureRecognizerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: GestureRecognizerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setOnSwipe(value: (/* gestureName */ String, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onSwipe", js.Any.fromFunction2(value))
+      inline def setOnSwipe(value: (/* gestureName */ String, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onSwipe", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSwipeDown(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction1(value))
+      inline def setOnSwipeDown(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipeDownUndefined: Self = StObject.set(x, "onSwipeDown", js.undefined)
+      inline def setOnSwipeDownUndefined: Self = StObject.set(x, "onSwipeDown", js.undefined)
       
-      @scala.inline
-      def setOnSwipeLeft(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeLeft", js.Any.fromFunction1(value))
+      inline def setOnSwipeLeft(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeLeft", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipeLeftUndefined: Self = StObject.set(x, "onSwipeLeft", js.undefined)
+      inline def setOnSwipeLeftUndefined: Self = StObject.set(x, "onSwipeLeft", js.undefined)
       
-      @scala.inline
-      def setOnSwipeRight(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeRight", js.Any.fromFunction1(value))
+      inline def setOnSwipeRight(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeRight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipeRightUndefined: Self = StObject.set(x, "onSwipeRight", js.undefined)
+      inline def setOnSwipeRightUndefined: Self = StObject.set(x, "onSwipeRight", js.undefined)
       
-      @scala.inline
-      def setOnSwipeUndefined: Self = StObject.set(x, "onSwipe", js.undefined)
+      inline def setOnSwipeUndefined: Self = StObject.set(x, "onSwipe", js.undefined)
       
-      @scala.inline
-      def setOnSwipeUp(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeUp", js.Any.fromFunction1(value))
+      inline def setOnSwipeUp(value: /* gestureState */ PanResponderGestureState => Unit): Self = StObject.set(x, "onSwipeUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSwipeUpUndefined: Self = StObject.set(x, "onSwipeUp", js.undefined)
+      inline def setOnSwipeUpUndefined: Self = StObject.set(x, "onSwipeUp", js.undefined)
     }
   }
 }

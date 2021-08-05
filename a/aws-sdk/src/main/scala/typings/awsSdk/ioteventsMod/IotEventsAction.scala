@@ -18,22 +18,17 @@ trait IotEventsAction extends StObject {
 }
 object IotEventsAction {
   
-  @scala.inline
-  def apply(inputName: InputName): IotEventsAction = {
+  inline def apply(inputName: InputName): IotEventsAction = {
     val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IotEventsAction]
   }
   
-  @scala.inline
-  implicit class IotEventsActionMutableBuilder[Self <: IotEventsAction] (val x: Self) extends AnyVal {
+  extension [Self <: IotEventsAction](x: Self) {
     
-    @scala.inline
-    def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

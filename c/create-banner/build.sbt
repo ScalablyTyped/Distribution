@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "create-banner"
-version := "1.0-dt-20200728Z-60bdc0"
+version := "1.0-dt-20200728Z-d06444"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

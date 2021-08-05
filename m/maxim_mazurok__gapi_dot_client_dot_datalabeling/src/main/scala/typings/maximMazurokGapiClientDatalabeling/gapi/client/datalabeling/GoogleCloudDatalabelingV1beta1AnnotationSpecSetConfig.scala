@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig](x: Self) {
     
-    @scala.inline
-    def setAllowMultiLabel(value: Boolean): Self = StObject.set(x, "allowMultiLabel", value.asInstanceOf[js.Any])
+    inline def setAllowMultiLabel(value: Boolean): Self = StObject.set(x, "allowMultiLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMultiLabelUndefined: Self = StObject.set(x, "allowMultiLabel", js.undefined)
+    inline def setAllowMultiLabelUndefined: Self = StObject.set(x, "allowMultiLabel", js.undefined)
     
-    @scala.inline
-    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
+    inline def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
   }
 }

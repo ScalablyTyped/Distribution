@@ -19,25 +19,19 @@ trait DialogflowV1BaseMessage[TType /* <: Double */] extends StObject {
 }
 object DialogflowV1BaseMessage {
   
-  @scala.inline
-  def apply[TType /* <: Double */](): DialogflowV1BaseMessage[TType] = {
+  inline def apply[TType /* <: Double */](): DialogflowV1BaseMessage[TType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1BaseMessage[TType]]
   }
   
-  @scala.inline
-  implicit class DialogflowV1BaseMessageMutableBuilder[Self <: DialogflowV1BaseMessage[?], TType /* <: Double */] (val x: Self & DialogflowV1BaseMessage[TType]) extends AnyVal {
+  extension [Self <: DialogflowV1BaseMessage[?], TType /* <: Double */](x: Self & DialogflowV1BaseMessage[TType]) {
     
-    @scala.inline
-    def setPlatform(value: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -14,16 +14,13 @@ trait LatitudeGeolibLatitudeInputValue
 }
 object LatitudeGeolibLatitudeInputValue {
   
-  @scala.inline
-  def apply(latitude: GeolibLatitudeInputValue): LatitudeGeolibLatitudeInputValue = {
+  inline def apply(latitude: GeolibLatitudeInputValue): LatitudeGeolibLatitudeInputValue = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatitudeGeolibLatitudeInputValue]
   }
   
-  @scala.inline
-  implicit class LatitudeGeolibLatitudeInputValueMutableBuilder[Self <: LatitudeGeolibLatitudeInputValue] (val x: Self) extends AnyVal {
+  extension [Self <: LatitudeGeolibLatitudeInputValue](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: GeolibLatitudeInputValue): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: GeolibLatitudeInputValue): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
   }
 }

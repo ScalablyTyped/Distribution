@@ -12,19 +12,15 @@ trait ActiveDocument extends StObject {
 }
 object ActiveDocument {
   
-  @scala.inline
-  def apply(ActiveDocument: Boolean, Cancel: Boolean): ActiveDocument = {
+  inline def apply(ActiveDocument: Boolean, Cancel: Boolean): ActiveDocument = {
     val __obj = js.Dynamic.literal(ActiveDocument = ActiveDocument.asInstanceOf[js.Any], Cancel = Cancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveDocument]
   }
   
-  @scala.inline
-  implicit class ActiveDocumentMutableBuilder[Self <: ActiveDocument] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveDocument](x: Self) {
     
-    @scala.inline
-    def setActiveDocument(value: Boolean): Self = StObject.set(x, "ActiveDocument", value.asInstanceOf[js.Any])
+    inline def setActiveDocument(value: Boolean): Self = StObject.set(x, "ActiveDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
   }
 }

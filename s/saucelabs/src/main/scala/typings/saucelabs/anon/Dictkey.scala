@@ -15,25 +15,19 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(): Dictkey = {
+  inline def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setLower_boundary(value: Double): Self = StObject.set(x, "lower_boundary", value.asInstanceOf[js.Any])
+    inline def setLower_boundary(value: Double): Self = StObject.set(x, "lower_boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLower_boundaryUndefined: Self = StObject.set(x, "lower_boundary", js.undefined)
+    inline def setLower_boundaryUndefined: Self = StObject.set(x, "lower_boundary", js.undefined)
     
-    @scala.inline
-    def setUpper_boundary(value: Double): Self = StObject.set(x, "upper_boundary", value.asInstanceOf[js.Any])
+    inline def setUpper_boundary(value: Double): Self = StObject.set(x, "upper_boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpper_boundaryUndefined: Self = StObject.set(x, "upper_boundary", js.undefined)
+    inline def setUpper_boundaryUndefined: Self = StObject.set(x, "upper_boundary", js.undefined)
   }
 }

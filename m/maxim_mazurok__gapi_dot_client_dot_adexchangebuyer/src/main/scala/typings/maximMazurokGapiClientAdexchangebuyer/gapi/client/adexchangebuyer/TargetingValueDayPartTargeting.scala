@@ -12,28 +12,21 @@ trait TargetingValueDayPartTargeting extends StObject {
 }
 object TargetingValueDayPartTargeting {
   
-  @scala.inline
-  def apply(): TargetingValueDayPartTargeting = {
+  inline def apply(): TargetingValueDayPartTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetingValueDayPartTargeting]
   }
   
-  @scala.inline
-  implicit class TargetingValueDayPartTargetingMutableBuilder[Self <: TargetingValueDayPartTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: TargetingValueDayPartTargeting](x: Self) {
     
-    @scala.inline
-    def setDayParts(value: js.Array[TargetingValueDayPartTargetingDayPart]): Self = StObject.set(x, "dayParts", value.asInstanceOf[js.Any])
+    inline def setDayParts(value: js.Array[TargetingValueDayPartTargetingDayPart]): Self = StObject.set(x, "dayParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayPartsUndefined: Self = StObject.set(x, "dayParts", js.undefined)
+    inline def setDayPartsUndefined: Self = StObject.set(x, "dayParts", js.undefined)
     
-    @scala.inline
-    def setDayPartsVarargs(value: TargetingValueDayPartTargetingDayPart*): Self = StObject.set(x, "dayParts", js.Array(value :_*))
+    inline def setDayPartsVarargs(value: TargetingValueDayPartTargetingDayPart*): Self = StObject.set(x, "dayParts", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeZoneType(value: String): Self = StObject.set(x, "timeZoneType", value.asInstanceOf[js.Any])
+    inline def setTimeZoneType(value: String): Self = StObject.set(x, "timeZoneType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneTypeUndefined: Self = StObject.set(x, "timeZoneType", js.undefined)
+    inline def setTimeZoneTypeUndefined: Self = StObject.set(x, "timeZoneType", js.undefined)
   }
 }

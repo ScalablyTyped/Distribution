@@ -14,19 +14,15 @@ trait Message
 }
 object Message {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, id: String, itemRef: ItemDefinition, name: String): Message = {
+  inline def apply($parent: TypeDerived, $type: ElementType, id: String, itemRef: ItemDefinition, name: String): Message = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemRef = itemRef.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setItemRef(value: ItemDefinition): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
+    inline def setItemRef(value: ItemDefinition): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

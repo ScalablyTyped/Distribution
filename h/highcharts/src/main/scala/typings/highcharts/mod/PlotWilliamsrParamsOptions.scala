@@ -13,19 +13,15 @@ trait PlotWilliamsrParamsOptions extends StObject {
 }
 object PlotWilliamsrParamsOptions {
   
-  @scala.inline
-  def apply(): PlotWilliamsrParamsOptions = {
+  inline def apply(): PlotWilliamsrParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotWilliamsrParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotWilliamsrParamsOptionsMutableBuilder[Self <: PlotWilliamsrParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotWilliamsrParamsOptions](x: Self) {
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

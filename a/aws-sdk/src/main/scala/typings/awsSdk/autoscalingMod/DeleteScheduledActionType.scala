@@ -18,19 +18,15 @@ trait DeleteScheduledActionType extends StObject {
 }
 object DeleteScheduledActionType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName, ScheduledActionName: ResourceName): DeleteScheduledActionType = {
+  inline def apply(AutoScalingGroupName: ResourceName, ScheduledActionName: ResourceName): DeleteScheduledActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScheduledActionType]
   }
   
-  @scala.inline
-  implicit class DeleteScheduledActionTypeMutableBuilder[Self <: DeleteScheduledActionType] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScheduledActionType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionName(value: ResourceName): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
+    inline def setScheduledActionName(value: ResourceName): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
   }
 }

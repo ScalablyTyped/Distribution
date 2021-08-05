@@ -13,9 +13,7 @@ object passiveEventsMod {
   @JSImport("@react-md/utils/types/events/passiveEvents", "isSupported")
   @js.native
   def isSupported: Boolean = js.native
-  @scala.inline
-  def isSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupported")(x.asInstanceOf[js.Any])
+  inline def isSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupported")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def update(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("update")().asInstanceOf[Boolean]
+  inline def update(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("update")().asInstanceOf[Boolean]
 }

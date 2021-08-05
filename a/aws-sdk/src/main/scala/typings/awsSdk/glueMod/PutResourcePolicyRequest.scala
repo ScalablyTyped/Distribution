@@ -33,40 +33,29 @@ trait PutResourcePolicyRequest extends StObject {
 }
 object PutResourcePolicyRequest {
   
-  @scala.inline
-  def apply(PolicyInJson: PolicyJsonString): PutResourcePolicyRequest = {
+  inline def apply(PolicyInJson: PolicyJsonString): PutResourcePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyInJson = PolicyInJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResourcePolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutResourcePolicyRequestMutableBuilder[Self <: PutResourcePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutResourcePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setEnableHybrid(value: EnableHybridValues): Self = StObject.set(x, "EnableHybrid", value.asInstanceOf[js.Any])
+    inline def setEnableHybrid(value: EnableHybridValues): Self = StObject.set(x, "EnableHybrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHybridUndefined: Self = StObject.set(x, "EnableHybrid", js.undefined)
+    inline def setEnableHybridUndefined: Self = StObject.set(x, "EnableHybrid", js.undefined)
     
-    @scala.inline
-    def setPolicyExistsCondition(value: ExistCondition): Self = StObject.set(x, "PolicyExistsCondition", value.asInstanceOf[js.Any])
+    inline def setPolicyExistsCondition(value: ExistCondition): Self = StObject.set(x, "PolicyExistsCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyExistsConditionUndefined: Self = StObject.set(x, "PolicyExistsCondition", js.undefined)
+    inline def setPolicyExistsConditionUndefined: Self = StObject.set(x, "PolicyExistsCondition", js.undefined)
     
-    @scala.inline
-    def setPolicyHashCondition(value: HashString): Self = StObject.set(x, "PolicyHashCondition", value.asInstanceOf[js.Any])
+    inline def setPolicyHashCondition(value: HashString): Self = StObject.set(x, "PolicyHashCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyHashConditionUndefined: Self = StObject.set(x, "PolicyHashCondition", js.undefined)
+    inline def setPolicyHashConditionUndefined: Self = StObject.set(x, "PolicyHashCondition", js.undefined)
     
-    @scala.inline
-    def setPolicyInJson(value: PolicyJsonString): Self = StObject.set(x, "PolicyInJson", value.asInstanceOf[js.Any])
+    inline def setPolicyInJson(value: PolicyJsonString): Self = StObject.set(x, "PolicyInJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
   }
 }

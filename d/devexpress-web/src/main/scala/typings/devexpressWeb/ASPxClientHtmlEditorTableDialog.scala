@@ -88,8 +88,7 @@ trait ASPxClientHtmlEditorTableDialog
 }
 object ASPxClientHtmlEditorTableDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAccessibilityCheckBox: () => ASPxClientCheckBox,
     GetAlignmentComboBox: () => ASPxClientComboBox,
     GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
@@ -114,52 +113,36 @@ object ASPxClientHtmlEditorTableDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTableDialogMutableBuilder[Self <: ASPxClientHtmlEditorTableDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTableDialog](x: Self) {
     
-    @scala.inline
-    def setGetAccessibilityCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAccessibilityCheckBox", js.Any.fromFunction0(value))
+    inline def setGetAccessibilityCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAccessibilityCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAlignmentComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetAlignmentComboBox", js.Any.fromFunction0(value))
+    inline def setGetAlignmentComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetAlignmentComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBorderColorColorEdit(value: () => ASPxClientColorEdit): Self = StObject.set(x, "GetBorderColorColorEdit", js.Any.fromFunction0(value))
+    inline def setGetBorderColorColorEdit(value: () => ASPxClientColorEdit): Self = StObject.set(x, "GetBorderColorColorEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBorderWidthSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetBorderWidthSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetBorderWidthSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetBorderWidthSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCaptionTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetCaptionTextBox", js.Any.fromFunction0(value))
+    inline def setGetCaptionTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetCaptionTextBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCellPaddingSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetCellPaddingSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetCellPaddingSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetCellPaddingSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCellSpacingSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetCellSpacingSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetCellSpacingSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetCellSpacingSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeadersComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeadersComboBox", js.Any.fromFunction0(value))
+    inline def setGetHeadersComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeadersComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeightTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightTypeComboBox", js.Any.fromFunction0(value))
+    inline def setGetHeightTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightTypeComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeightValueSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightValueSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetHeightValueSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightValueSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeightValueTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightValueTypeComboBox", js.Any.fromFunction0(value))
+    inline def setGetHeightValueTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightValueTypeComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSummaryTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetSummaryTextBox", js.Any.fromFunction0(value))
+    inline def setGetSummaryTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetSummaryTextBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidthTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetWidthTypeComboBox", js.Any.fromFunction0(value))
+    inline def setGetWidthTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetWidthTypeComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidthValueSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetWidthValueSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetWidthValueSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetWidthValueSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidthValueTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetWidthValueTypeComboBox", js.Any.fromFunction0(value))
+    inline def setGetWidthValueTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetWidthValueTypeComboBox", js.Any.fromFunction0(value))
   }
 }

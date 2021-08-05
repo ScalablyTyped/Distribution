@@ -52,8 +52,7 @@ trait PaginationPanelProps extends StObject {
 }
 object PaginationPanelProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changePage: Double => Unit,
     changeSizePerPage: Double => Unit,
     components: PageList,
@@ -67,34 +66,24 @@ object PaginationPanelProps {
     __obj.asInstanceOf[PaginationPanelProps]
   }
   
-  @scala.inline
-  implicit class PaginationPanelPropsMutableBuilder[Self <: PaginationPanelProps] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationPanelProps](x: Self) {
     
-    @scala.inline
-    def setChangePage(value: Double => Unit): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
+    inline def setChangePage(value: Double => Unit): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeSizePerPage(value: Double => Unit): Self = StObject.set(x, "changeSizePerPage", js.Any.fromFunction1(value))
+    inline def setChangeSizePerPage(value: Double => Unit): Self = StObject.set(x, "changeSizePerPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponents(value: PageList): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: PageList): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrPage(value: Double): Self = StObject.set(x, "currPage", value.asInstanceOf[js.Any])
+    inline def setCurrPage(value: Double): Self = StObject.set(x, "currPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStartIndex(value: Double): Self = StObject.set(x, "pageStartIndex", value.asInstanceOf[js.Any])
+    inline def setPageStartIndex(value: Double): Self = StObject.set(x, "pageStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPage(value: Double): Self = StObject.set(x, "sizePerPage", value.asInstanceOf[js.Any])
+    inline def setSizePerPage(value: Double): Self = StObject.set(x, "sizePerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
+    inline def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
+    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
     
-    @scala.inline
-    def setToggleDropDown(value: () => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction0(value))
+    inline def setToggleDropDown(value: () => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction0(value))
   }
 }

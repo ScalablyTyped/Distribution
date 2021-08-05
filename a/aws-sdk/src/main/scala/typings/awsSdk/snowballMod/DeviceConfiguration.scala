@@ -13,19 +13,15 @@ trait DeviceConfiguration extends StObject {
 }
 object DeviceConfiguration {
   
-  @scala.inline
-  def apply(): DeviceConfiguration = {
+  inline def apply(): DeviceConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceConfiguration]
   }
   
-  @scala.inline
-  implicit class DeviceConfigurationMutableBuilder[Self <: DeviceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConfiguration](x: Self) {
     
-    @scala.inline
-    def setSnowconeDeviceConfiguration(value: SnowconeDeviceConfiguration): Self = StObject.set(x, "SnowconeDeviceConfiguration", value.asInstanceOf[js.Any])
+    inline def setSnowconeDeviceConfiguration(value: SnowconeDeviceConfiguration): Self = StObject.set(x, "SnowconeDeviceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnowconeDeviceConfigurationUndefined: Self = StObject.set(x, "SnowconeDeviceConfiguration", js.undefined)
+    inline def setSnowconeDeviceConfigurationUndefined: Self = StObject.set(x, "SnowconeDeviceConfiguration", js.undefined)
   }
 }

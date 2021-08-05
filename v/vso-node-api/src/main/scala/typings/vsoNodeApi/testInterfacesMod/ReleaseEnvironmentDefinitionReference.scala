@@ -12,19 +12,15 @@ trait ReleaseEnvironmentDefinitionReference extends StObject {
 }
 object ReleaseEnvironmentDefinitionReference {
   
-  @scala.inline
-  def apply(definitionId: Double, environmentDefinitionId: Double): ReleaseEnvironmentDefinitionReference = {
+  inline def apply(definitionId: Double, environmentDefinitionId: Double): ReleaseEnvironmentDefinitionReference = {
     val __obj = js.Dynamic.literal(definitionId = definitionId.asInstanceOf[js.Any], environmentDefinitionId = environmentDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseEnvironmentDefinitionReference]
   }
   
-  @scala.inline
-  implicit class ReleaseEnvironmentDefinitionReferenceMutableBuilder[Self <: ReleaseEnvironmentDefinitionReference] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseEnvironmentDefinitionReference](x: Self) {
     
-    @scala.inline
-    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentDefinitionId(value: Double): Self = StObject.set(x, "environmentDefinitionId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentDefinitionId(value: Double): Self = StObject.set(x, "environmentDefinitionId", value.asInstanceOf[js.Any])
   }
 }

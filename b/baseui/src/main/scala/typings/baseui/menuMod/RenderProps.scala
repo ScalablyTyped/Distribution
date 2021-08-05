@@ -14,8 +14,7 @@ trait RenderProps
 }
 object RenderProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps,
     highlightedIndex: Double,
     isFocused: Boolean,
@@ -25,16 +24,12 @@ object RenderProps {
     __obj.asInstanceOf[RenderProps]
   }
   
-  @scala.inline
-  implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+  extension [Self <: RenderProps](x: Self) {
     
-    @scala.inline
-    def setGetRequiredItemProps(value: (/* item */ js.Any, /* index */ Double) => RenderItemProps): Self = StObject.set(x, "getRequiredItemProps", js.Any.fromFunction2(value))
+    inline def setGetRequiredItemProps(value: (/* item */ js.Any, /* index */ Double) => RenderItemProps): Self = StObject.set(x, "getRequiredItemProps", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItems(value: ItemsT): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ItemsT): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ItemT*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ItemT*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteConfig extends StObject
 object RouteConfig {
   
-  @scala.inline
-  def RouteConfigMultipleViews(path: String): typings.vueRouter.routerMod.RouteConfigMultipleViews = {
+  inline def RouteConfigMultipleViews(path: String): typings.vueRouter.routerMod.RouteConfigMultipleViews = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vueRouter.routerMod.RouteConfigMultipleViews]
   }
   
-  @scala.inline
-  def RouteConfigSingleView(path: String): typings.vueRouter.routerMod.RouteConfigSingleView = {
+  inline def RouteConfigSingleView(path: String): typings.vueRouter.routerMod.RouteConfigSingleView = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vueRouter.routerMod.RouteConfigSingleView]
   }

@@ -11,14 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(nodes: js.Array[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(nodes: js.Array[js.Object], options: DomSerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(nodes: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(nodes: js.Object, options: DomSerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(nodes: js.Array[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(nodes: js.Array[js.Object], options: DomSerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(nodes: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(nodes: js.Object, options: DomSerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait DomSerializerOptions extends StObject {
     
@@ -28,26 +24,20 @@ object mod {
   }
   object DomSerializerOptions {
     
-    @scala.inline
-    def apply(): DomSerializerOptions = {
+    inline def apply(): DomSerializerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomSerializerOptions]
     }
     
-    @scala.inline
-    implicit class DomSerializerOptionsMutableBuilder[Self <: DomSerializerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomSerializerOptions](x: Self) {
       
-      @scala.inline
-      def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
+      inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
+      inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
       
-      @scala.inline
-      def setXmlMode(value: Boolean | foreign): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
+      inline def setXmlMode(value: Boolean | foreign): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
+      inline def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
     }
   }
 }

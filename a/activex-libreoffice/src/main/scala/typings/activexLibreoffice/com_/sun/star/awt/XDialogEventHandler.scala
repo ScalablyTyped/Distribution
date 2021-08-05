@@ -39,8 +39,7 @@ trait XDialogEventHandler
 }
 object XDialogEventHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedMethodNames: SafeArray[String],
     acquire: () => Unit,
     callHandlerMethod: (XDialog, js.Any, String) => Boolean,
@@ -52,16 +51,12 @@ object XDialogEventHandler {
     __obj.asInstanceOf[XDialogEventHandler]
   }
   
-  @scala.inline
-  implicit class XDialogEventHandlerMutableBuilder[Self <: XDialogEventHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XDialogEventHandler](x: Self) {
     
-    @scala.inline
-    def setCallHandlerMethod(value: (XDialog, js.Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
+    inline def setCallHandlerMethod(value: (XDialog, js.Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetSupportedMethodNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMethodNames", js.Any.fromFunction0(value))
+    inline def setGetSupportedMethodNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMethodNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSupportedMethodNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedMethodNames", value.asInstanceOf[js.Any])
+    inline def setSupportedMethodNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedMethodNames", value.asInstanceOf[js.Any])
   }
 }

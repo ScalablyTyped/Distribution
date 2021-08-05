@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkforceIntegrationEncryptionProtocol extends StObject
 object WorkforceIntegrationEncryptionProtocol {
   
-  @scala.inline
-  def sharedSecret: typings.microsoftGraph.microsoftGraphStrings.sharedSecret = "sharedSecret".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharedSecret]
+  inline def sharedSecret: typings.microsoftGraph.microsoftGraphStrings.sharedSecret = "sharedSecret".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharedSecret]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

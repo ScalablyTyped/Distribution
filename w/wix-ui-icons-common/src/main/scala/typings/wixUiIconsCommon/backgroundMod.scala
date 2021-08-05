@@ -22,20 +22,16 @@ object backgroundMod extends Shortcut {
   }
   object BackgroundProps {
     
-    @scala.inline
-    def apply(): BackgroundProps = {
+    inline def apply(): BackgroundProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackgroundProps]
     }
     
-    @scala.inline
-    implicit class BackgroundPropsMutableBuilder[Self <: BackgroundProps] (val x: Self) extends AnyVal {
+    extension [Self <: BackgroundProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

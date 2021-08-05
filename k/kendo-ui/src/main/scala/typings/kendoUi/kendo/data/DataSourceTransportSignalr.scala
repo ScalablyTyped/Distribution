@@ -16,37 +16,27 @@ trait DataSourceTransportSignalr extends StObject {
 }
 object DataSourceTransportSignalr {
   
-  @scala.inline
-  def apply(): DataSourceTransportSignalr = {
+  inline def apply(): DataSourceTransportSignalr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceTransportSignalr]
   }
   
-  @scala.inline
-  implicit class DataSourceTransportSignalrMutableBuilder[Self <: DataSourceTransportSignalr] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceTransportSignalr](x: Self) {
     
-    @scala.inline
-    def setClient(value: DataSourceTransportSignalrClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: DataSourceTransportSignalrClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setHub(value: js.Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+    inline def setHub(value: js.Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
+    inline def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
     
-    @scala.inline
-    def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
-    @scala.inline
-    def setServer(value: DataSourceTransportSignalrServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: DataSourceTransportSignalrServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

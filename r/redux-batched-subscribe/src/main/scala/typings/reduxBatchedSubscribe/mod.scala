@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def batchedSubscribe(batch: BatchFunction): StoreEnhancer[StoreExtension, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("batchedSubscribe")(batch.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[StoreExtension, js.Object]]
+  inline def batchedSubscribe(batch: BatchFunction): StoreEnhancer[StoreExtension, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("batchedSubscribe")(batch.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[StoreExtension, js.Object]]
   
   type BatchFunction = js.Function1[/* notify */ NotifyFunction, Unit]
   
@@ -27,17 +26,14 @@ object mod {
   }
   object StoreExtension {
     
-    @scala.inline
-    def apply(subscribeImmediate: /* listener */ js.Function0[Unit] => Unsubscribe): StoreExtension = {
+    inline def apply(subscribeImmediate: /* listener */ js.Function0[Unit] => Unsubscribe): StoreExtension = {
       val __obj = js.Dynamic.literal(subscribeImmediate = js.Any.fromFunction1(subscribeImmediate))
       __obj.asInstanceOf[StoreExtension]
     }
     
-    @scala.inline
-    implicit class StoreExtensionMutableBuilder[Self <: StoreExtension] (val x: Self) extends AnyVal {
+    extension [Self <: StoreExtension](x: Self) {
       
-      @scala.inline
-      def setSubscribeImmediate(value: /* listener */ js.Function0[Unit] => Unsubscribe): Self = StObject.set(x, "subscribeImmediate", js.Any.fromFunction1(value))
+      inline def setSubscribeImmediate(value: /* listener */ js.Function0[Unit] => Unsubscribe): Self = StObject.set(x, "subscribeImmediate", js.Any.fromFunction1(value))
     }
   }
 }

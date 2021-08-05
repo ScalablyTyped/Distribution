@@ -11,8 +11,7 @@ trait CSSSelectorObject
      with _SystemStyleObject
 object CSSSelectorObject {
   
-  @scala.inline
-  def apply(): CSSSelectorObject = {
+  inline def apply(): CSSSelectorObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSSelectorObject]
   }

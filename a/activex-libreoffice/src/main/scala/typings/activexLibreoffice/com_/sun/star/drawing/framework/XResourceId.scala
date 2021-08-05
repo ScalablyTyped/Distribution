@@ -95,8 +95,7 @@ trait XResourceId extends StObject {
 }
 object XResourceId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XResourceId,
     AnchorURLs: SafeArray[String],
     FullResourceURL: URL,
@@ -116,49 +115,34 @@ object XResourceId {
     __obj.asInstanceOf[XResourceId]
   }
   
-  @scala.inline
-  implicit class XResourceIdMutableBuilder[Self <: XResourceId] (val x: Self) extends AnyVal {
+  extension [Self <: XResourceId](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: XResourceId): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: XResourceId): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorURLs(value: SafeArray[String]): Self = StObject.set(x, "AnchorURLs", value.asInstanceOf[js.Any])
+    inline def setAnchorURLs(value: SafeArray[String]): Self = StObject.set(x, "AnchorURLs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareTo(value: XResourceId => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
+    inline def setCompareTo(value: XResourceId => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFullResourceURL(value: URL): Self = StObject.set(x, "FullResourceURL", value.asInstanceOf[js.Any])
+    inline def setFullResourceURL(value: URL): Self = StObject.set(x, "FullResourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAnchor(value: () => XResourceId): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
+    inline def setGetAnchor(value: () => XResourceId): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnchorURLs(value: () => SafeArray[String]): Self = StObject.set(x, "getAnchorURLs", js.Any.fromFunction0(value))
+    inline def setGetAnchorURLs(value: () => SafeArray[String]): Self = StObject.set(x, "getAnchorURLs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFullResourceURL(value: () => URL): Self = StObject.set(x, "getFullResourceURL", js.Any.fromFunction0(value))
+    inline def setGetFullResourceURL(value: () => URL): Self = StObject.set(x, "getFullResourceURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResourceTypePrefix(value: () => String): Self = StObject.set(x, "getResourceTypePrefix", js.Any.fromFunction0(value))
+    inline def setGetResourceTypePrefix(value: () => String): Self = StObject.set(x, "getResourceTypePrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResourceURL(value: () => String): Self = StObject.set(x, "getResourceURL", js.Any.fromFunction0(value))
+    inline def setGetResourceURL(value: () => String): Self = StObject.set(x, "getResourceURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasAnchor(value: () => Boolean): Self = StObject.set(x, "hasAnchor", js.Any.fromFunction0(value))
+    inline def setHasAnchor(value: () => Boolean): Self = StObject.set(x, "hasAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsBoundTo(value: (XResourceId, AnchorBindingMode) => Boolean): Self = StObject.set(x, "isBoundTo", js.Any.fromFunction2(value))
+    inline def setIsBoundTo(value: (XResourceId, AnchorBindingMode) => Boolean): Self = StObject.set(x, "isBoundTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsBoundToURL(value: (String, AnchorBindingMode) => Boolean): Self = StObject.set(x, "isBoundToURL", js.Any.fromFunction2(value))
+    inline def setIsBoundToURL(value: (String, AnchorBindingMode) => Boolean): Self = StObject.set(x, "isBoundToURL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResourceTypePrefix(value: String): Self = StObject.set(x, "ResourceTypePrefix", value.asInstanceOf[js.Any])
+    inline def setResourceTypePrefix(value: String): Self = StObject.set(x, "ResourceTypePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceURL(value: String): Self = StObject.set(x, "ResourceURL", value.asInstanceOf[js.Any])
+    inline def setResourceURL(value: String): Self = StObject.set(x, "ResourceURL", value.asInstanceOf[js.Any])
   }
 }

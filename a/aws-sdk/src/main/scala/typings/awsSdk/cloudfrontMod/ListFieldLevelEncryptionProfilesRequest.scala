@@ -18,25 +18,19 @@ trait ListFieldLevelEncryptionProfilesRequest extends StObject {
 }
 object ListFieldLevelEncryptionProfilesRequest {
   
-  @scala.inline
-  def apply(): ListFieldLevelEncryptionProfilesRequest = {
+  inline def apply(): ListFieldLevelEncryptionProfilesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFieldLevelEncryptionProfilesRequest]
   }
   
-  @scala.inline
-  implicit class ListFieldLevelEncryptionProfilesRequestMutableBuilder[Self <: ListFieldLevelEncryptionProfilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFieldLevelEncryptionProfilesRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

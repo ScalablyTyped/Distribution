@@ -23,25 +23,19 @@ trait PackageVersionSummary extends StObject {
 }
 object PackageVersionSummary {
   
-  @scala.inline
-  def apply(status: PackageVersionStatus, version: PackageVersion): PackageVersionSummary = {
+  inline def apply(status: PackageVersionStatus, version: PackageVersion): PackageVersionSummary = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageVersionSummary]
   }
   
-  @scala.inline
-  implicit class PackageVersionSummaryMutableBuilder[Self <: PackageVersionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: PackageVersionSummary](x: Self) {
     
-    @scala.inline
-    def setRevision(value: PackageVersionRevision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: PackageVersionRevision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
-    @scala.inline
-    def setStatus(value: PackageVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PackageVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: PackageVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PackageVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

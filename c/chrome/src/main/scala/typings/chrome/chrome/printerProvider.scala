@@ -43,29 +43,22 @@ object printerProvider {
   }
   object PrintJob {
     
-    @scala.inline
-    def apply(contentType: String, document: Blob, printerId: String, ticket: js.Object, title: String): PrintJob = {
+    inline def apply(contentType: String, document: Blob, printerId: String, ticket: js.Object, title: String): PrintJob = {
       val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], printerId = printerId.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrintJob]
     }
     
-    @scala.inline
-    implicit class PrintJobMutableBuilder[Self <: PrintJob] (val x: Self) extends AnyVal {
+    extension [Self <: PrintJob](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocument(value: Blob): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: Blob): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinterId(value: String): Self = StObject.set(x, "printerId", value.asInstanceOf[js.Any])
+      inline def setPrinterId(value: String): Self = StObject.set(x, "printerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket(value: js.Object): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+      inline def setTicket(value: js.Object): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +77,14 @@ object printerProvider {
   }
   object PrinterCapabilities {
     
-    @scala.inline
-    def apply(capabilities: js.Any): PrinterCapabilities = {
+    inline def apply(capabilities: js.Any): PrinterCapabilities = {
       val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrinterCapabilities]
     }
     
-    @scala.inline
-    implicit class PrinterCapabilitiesMutableBuilder[Self <: PrinterCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: PrinterCapabilities](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,26 +101,20 @@ object printerProvider {
   }
   object PrinterInfo {
     
-    @scala.inline
-    def apply(id: String, name: String): PrinterInfo = {
+    inline def apply(id: String, name: String): PrinterInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrinterInfo]
     }
     
-    @scala.inline
-    implicit class PrinterInfoMutableBuilder[Self <: PrinterInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PrinterInfo](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

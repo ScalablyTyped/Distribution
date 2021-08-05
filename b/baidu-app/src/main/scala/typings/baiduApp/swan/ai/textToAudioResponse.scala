@@ -10,16 +10,13 @@ trait textToAudioResponse extends StObject {
 }
 object textToAudioResponse {
   
-  @scala.inline
-  def apply(filePath: String): textToAudioResponse = {
+  inline def apply(filePath: String): textToAudioResponse = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[textToAudioResponse]
   }
   
-  @scala.inline
-  implicit class textToAudioResponseMutableBuilder[Self <: textToAudioResponse] (val x: Self) extends AnyVal {
+  extension [Self <: textToAudioResponse](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }
 }

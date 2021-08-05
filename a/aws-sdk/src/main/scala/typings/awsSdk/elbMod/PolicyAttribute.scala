@@ -18,25 +18,19 @@ trait PolicyAttribute extends StObject {
 }
 object PolicyAttribute {
   
-  @scala.inline
-  def apply(): PolicyAttribute = {
+  inline def apply(): PolicyAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyAttribute]
   }
   
-  @scala.inline
-  implicit class PolicyAttributeMutableBuilder[Self <: PolicyAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeValue(value: AttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: AttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
+    inline def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
   }
 }

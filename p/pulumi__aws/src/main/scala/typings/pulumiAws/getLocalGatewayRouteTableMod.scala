@@ -13,14 +13,10 @@ object getLocalGatewayRouteTableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLocalGatewayRouteTable(): js.Promise[GetLocalGatewayRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")().asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
-  @scala.inline
-  def getLocalGatewayRouteTable(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
-  @scala.inline
-  def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs): js.Promise[GetLocalGatewayRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
-  @scala.inline
-  def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  inline def getLocalGatewayRouteTable(): js.Promise[GetLocalGatewayRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")().asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  inline def getLocalGatewayRouteTable(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  inline def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs): js.Promise[GetLocalGatewayRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
+  inline def getLocalGatewayRouteTable(args: GetLocalGatewayRouteTableArgs, opts: InvokeOptions): js.Promise[GetLocalGatewayRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGatewayRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewayRouteTableResult]]
   
   trait GetLocalGatewayRouteTableArgs extends StObject {
     
@@ -54,53 +50,38 @@ object getLocalGatewayRouteTableMod {
   }
   object GetLocalGatewayRouteTableArgs {
     
-    @scala.inline
-    def apply(): GetLocalGatewayRouteTableArgs = {
+    inline def apply(): GetLocalGatewayRouteTableArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetLocalGatewayRouteTableArgs]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayRouteTableArgsMutableBuilder[Self <: GetLocalGatewayRouteTableArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayRouteTableArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetLocalGatewayRouteTableFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetLocalGatewayRouteTableFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetLocalGatewayRouteTableFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetLocalGatewayRouteTableFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalGatewayId(value: String): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayId(value: String): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayIdUndefined: Self = StObject.set(x, "localGatewayId", js.undefined)
+      inline def setLocalGatewayIdUndefined: Self = StObject.set(x, "localGatewayId", js.undefined)
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
+      inline def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
       
-      @scala.inline
-      def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
+      inline def setOutpostArnUndefined: Self = StObject.set(x, "outpostArn", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -125,8 +106,7 @@ object getLocalGatewayRouteTableMod {
   }
   object GetLocalGatewayRouteTableResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       localGatewayId: String,
       localGatewayRouteTableId: String,
@@ -138,35 +118,25 @@ object getLocalGatewayRouteTableMod {
       __obj.asInstanceOf[GetLocalGatewayRouteTableResult]
     }
     
-    @scala.inline
-    implicit class GetLocalGatewayRouteTableResultMutableBuilder[Self <: GetLocalGatewayRouteTableResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalGatewayRouteTableResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTableFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTableFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTableFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetLocalGatewayRouteTableFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayId(value: String): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayId(value: String): Self = StObject.set(x, "localGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

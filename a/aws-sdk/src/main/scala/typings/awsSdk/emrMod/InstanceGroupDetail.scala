@@ -78,8 +78,7 @@ trait InstanceGroupDetail extends StObject {
 }
 object InstanceGroupDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationDateTime: Date,
     InstanceRequestCount: Integer,
     InstanceRole: InstanceRoleType,
@@ -92,70 +91,48 @@ object InstanceGroupDetail {
     __obj.asInstanceOf[InstanceGroupDetail]
   }
   
-  @scala.inline
-  implicit class InstanceGroupDetailMutableBuilder[Self <: InstanceGroupDetail] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupDetail](x: Self) {
     
-    @scala.inline
-    def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
+    inline def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
+    inline def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
+    inline def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
     
-    @scala.inline
-    def setInstanceRequestCount(value: Integer): Self = StObject.set(x, "InstanceRequestCount", value.asInstanceOf[js.Any])
+    inline def setInstanceRequestCount(value: Integer): Self = StObject.set(x, "InstanceRequestCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRole(value: InstanceRoleType): Self = StObject.set(x, "InstanceRole", value.asInstanceOf[js.Any])
+    inline def setInstanceRole(value: InstanceRoleType): Self = StObject.set(x, "InstanceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRunningCount(value: Integer): Self = StObject.set(x, "InstanceRunningCount", value.asInstanceOf[js.Any])
+    inline def setInstanceRunningCount(value: Integer): Self = StObject.set(x, "InstanceRunningCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStateChangeReason(value: XmlString): Self = StObject.set(x, "LastStateChangeReason", value.asInstanceOf[js.Any])
+    inline def setLastStateChangeReason(value: XmlString): Self = StObject.set(x, "LastStateChangeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
+    inline def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
     
-    @scala.inline
-    def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
+    inline def setMarket(value: MarketType): Self = StObject.set(x, "Market", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
+    inline def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
+    inline def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
     
-    @scala.inline
-    def setState(value: InstanceGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: InstanceGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

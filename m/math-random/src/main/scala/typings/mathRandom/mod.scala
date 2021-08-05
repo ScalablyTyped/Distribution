@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
+  inline def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
   
   @JSImport("math-random", JSImport.Namespace)
   @js.native
@@ -17,6 +16,5 @@ object mod {
   @JSImport("math-random", "cryptographic")
   @js.native
   def cryptographic: js.UndefOr[`true`] = js.native
-  @scala.inline
-  def cryptographic_=(x: js.UndefOr[`true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cryptographic")(x.asInstanceOf[js.Any])
+  inline def cryptographic_=(x: js.UndefOr[`true`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cryptographic")(x.asInstanceOf[js.Any])
 }

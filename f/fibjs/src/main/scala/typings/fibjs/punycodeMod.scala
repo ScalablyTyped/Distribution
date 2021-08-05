@@ -15,15 +15,11 @@ object punycodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def encode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toASCII(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toASCII(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toUnicode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toUnicode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -16,18 +16,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def graphviz(selector: String): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  @scala.inline
-  def graphviz(selector: String, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  @scala.inline
-  def graphviz(selector: String, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  @scala.inline
-  def graphviz(selector: BaseType): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  @scala.inline
-  def graphviz(selector: BaseType, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  @scala.inline
-  def graphviz(selector: BaseType, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  inline def graphviz(selector: String): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  inline def graphviz(selector: String, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  inline def graphviz(selector: String, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  inline def graphviz(selector: BaseType): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  inline def graphviz(selector: BaseType, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  inline def graphviz(selector: BaseType, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
   
   trait DotAttributes extends StObject {
     
@@ -39,32 +33,24 @@ object mod {
   }
   object DotAttributes {
     
-    @scala.inline
-    def apply(): DotAttributes = {
+    inline def apply(): DotAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DotAttributes]
     }
     
-    @scala.inline
-    implicit class DotAttributesMutableBuilder[Self <: DotAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: DotAttributes](x: Self) {
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
+      inline def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
     }
   }
   
@@ -74,17 +60,14 @@ object mod {
   }
   object EdgeOptions {
     
-    @scala.inline
-    def apply(shortening: Double): EdgeOptions = {
+    inline def apply(shortening: Double): EdgeOptions = {
       val __obj = js.Dynamic.literal(shortening = shortening.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeOptions]
     }
     
-    @scala.inline
-    implicit class EdgeOptionsMutableBuilder[Self <: EdgeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EdgeOptions](x: Self) {
       
-      @scala.inline
-      def setShortening(value: Double): Self = StObject.set(x, "shortening", value.asInstanceOf[js.Any])
+      inline def setShortening(value: Double): Self = StObject.set(x, "shortening", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,26 +83,19 @@ object mod {
   trait Engine extends StObject
   object Engine {
     
-    @scala.inline
-    def circo: typings.d3Graphviz.d3GraphvizStrings.circo = "circo".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.circo]
+    inline def circo: typings.d3Graphviz.d3GraphvizStrings.circo = "circo".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.circo]
     
-    @scala.inline
-    def dot: typings.d3Graphviz.d3GraphvizStrings.dot = "dot".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.dot]
+    inline def dot: typings.d3Graphviz.d3GraphvizStrings.dot = "dot".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.dot]
     
-    @scala.inline
-    def fdp: typings.d3Graphviz.d3GraphvizStrings.fdp = "fdp".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.fdp]
+    inline def fdp: typings.d3Graphviz.d3GraphvizStrings.fdp = "fdp".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.fdp]
     
-    @scala.inline
-    def neato: typings.d3Graphviz.d3GraphvizStrings.neato = "neato".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.neato]
+    inline def neato: typings.d3Graphviz.d3GraphvizStrings.neato = "neato".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.neato]
     
-    @scala.inline
-    def osage: typings.d3Graphviz.d3GraphvizStrings.osage = "osage".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.osage]
+    inline def osage: typings.d3Graphviz.d3GraphvizStrings.osage = "osage".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.osage]
     
-    @scala.inline
-    def patchwork: typings.d3Graphviz.d3GraphvizStrings.patchwork = "patchwork".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.patchwork]
+    inline def patchwork: typings.d3Graphviz.d3GraphvizStrings.patchwork = "patchwork".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.patchwork]
     
-    @scala.inline
-    def twopi: typings.d3Graphviz.d3GraphvizStrings.twopi = "twopi".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.twopi]
+    inline def twopi: typings.d3Graphviz.d3GraphvizStrings.twopi = "twopi".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.twopi]
   }
   
   trait GraphvizOptions extends StObject {
@@ -160,116 +136,80 @@ object mod {
   }
   object GraphvizOptions {
     
-    @scala.inline
-    def apply(): GraphvizOptions = {
+    inline def apply(): GraphvizOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GraphvizOptions]
     }
     
-    @scala.inline
-    implicit class GraphvizOptionsMutableBuilder[Self <: GraphvizOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GraphvizOptions](x: Self) {
       
-      @scala.inline
-      def setConvertEqualSidedPolygons(value: Boolean): Self = StObject.set(x, "convertEqualSidedPolygons", value.asInstanceOf[js.Any])
+      inline def setConvertEqualSidedPolygons(value: Boolean): Self = StObject.set(x, "convertEqualSidedPolygons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConvertEqualSidedPolygonsUndefined: Self = StObject.set(x, "convertEqualSidedPolygons", js.undefined)
+      inline def setConvertEqualSidedPolygonsUndefined: Self = StObject.set(x, "convertEqualSidedPolygons", js.undefined)
       
-      @scala.inline
-      def setEngine(value: Engine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: Engine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+      inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+      inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
       
-      @scala.inline
-      def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+      inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+      inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
       
-      @scala.inline
-      def setGrowEnteringEdges(value: Boolean): Self = StObject.set(x, "growEnteringEdges", value.asInstanceOf[js.Any])
+      inline def setGrowEnteringEdges(value: Boolean): Self = StObject.set(x, "growEnteringEdges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowEnteringEdgesUndefined: Self = StObject.set(x, "growEnteringEdges", js.undefined)
+      inline def setGrowEnteringEdgesUndefined: Self = StObject.set(x, "growEnteringEdges", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setKeyMode(value: KeyMode): Self = StObject.set(x, "keyMode", value.asInstanceOf[js.Any])
+      inline def setKeyMode(value: KeyMode): Self = StObject.set(x, "keyMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyModeUndefined: Self = StObject.set(x, "keyMode", js.undefined)
+      inline def setKeyModeUndefined: Self = StObject.set(x, "keyMode", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setTotalMemory(value: Double): Self = StObject.set(x, "totalMemory", value.asInstanceOf[js.Any])
+      inline def setTotalMemory(value: Double): Self = StObject.set(x, "totalMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalMemoryUndefined: Self = StObject.set(x, "totalMemory", js.undefined)
+      inline def setTotalMemoryUndefined: Self = StObject.set(x, "totalMemory", js.undefined)
       
-      @scala.inline
-      def setTweenPaths(value: Boolean): Self = StObject.set(x, "tweenPaths", value.asInstanceOf[js.Any])
+      inline def setTweenPaths(value: Boolean): Self = StObject.set(x, "tweenPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTweenPathsUndefined: Self = StObject.set(x, "tweenPaths", js.undefined)
+      inline def setTweenPathsUndefined: Self = StObject.set(x, "tweenPaths", js.undefined)
       
-      @scala.inline
-      def setTweenPrecision(value: Double | String): Self = StObject.set(x, "tweenPrecision", value.asInstanceOf[js.Any])
+      inline def setTweenPrecision(value: Double | String): Self = StObject.set(x, "tweenPrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTweenPrecisionUndefined: Self = StObject.set(x, "tweenPrecision", js.undefined)
+      inline def setTweenPrecisionUndefined: Self = StObject.set(x, "tweenPrecision", js.undefined)
       
-      @scala.inline
-      def setTweenShapes(value: Boolean): Self = StObject.set(x, "tweenShapes", value.asInstanceOf[js.Any])
+      inline def setTweenShapes(value: Boolean): Self = StObject.set(x, "tweenShapes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTweenShapesUndefined: Self = StObject.set(x, "tweenShapes", js.undefined)
+      inline def setTweenShapesUndefined: Self = StObject.set(x, "tweenShapes", js.undefined)
       
-      @scala.inline
-      def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
+      inline def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWorkerUndefined: Self = StObject.set(x, "useWorker", js.undefined)
+      inline def setUseWorkerUndefined: Self = StObject.set(x, "useWorker", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomScaleExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zoomScaleExtent", value.asInstanceOf[js.Any])
+      inline def setZoomScaleExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zoomScaleExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomScaleExtentUndefined: Self = StObject.set(x, "zoomScaleExtent", js.undefined)
+      inline def setZoomScaleExtentUndefined: Self = StObject.set(x, "zoomScaleExtent", js.undefined)
       
-      @scala.inline
-      def setZoomTranslateExtent(value: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): Self = StObject.set(x, "zoomTranslateExtent", value.asInstanceOf[js.Any])
+      inline def setZoomTranslateExtent(value: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): Self = StObject.set(x, "zoomTranslateExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomTranslateExtentUndefined: Self = StObject.set(x, "zoomTranslateExtent", js.undefined)
+      inline def setZoomTranslateExtentUndefined: Self = StObject.set(x, "zoomTranslateExtent", js.undefined)
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -667,17 +607,13 @@ object mod {
   trait KeyMode extends StObject
   object KeyMode {
     
-    @scala.inline
-    def id: typings.d3Graphviz.d3GraphvizStrings.id = "id".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.id]
+    inline def id: typings.d3Graphviz.d3GraphvizStrings.id = "id".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.id]
     
-    @scala.inline
-    def index: typings.d3Graphviz.d3GraphvizStrings.index = "index".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.index]
+    inline def index: typings.d3Graphviz.d3GraphvizStrings.index = "index".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.index]
     
-    @scala.inline
-    def `tag-index`: typings.d3Graphviz.d3GraphvizStrings.`tag-index` = "tag-index".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.`tag-index`]
+    inline def `tag-index`: typings.d3Graphviz.d3GraphvizStrings.`tag-index` = "tag-index".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.`tag-index`]
     
-    @scala.inline
-    def title: typings.d3Graphviz.d3GraphvizStrings.title = "title".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.title]
+    inline def title: typings.d3Graphviz.d3GraphvizStrings.title = "title".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.title]
   }
   
   /* Rewritten from type alias, can be one of: 

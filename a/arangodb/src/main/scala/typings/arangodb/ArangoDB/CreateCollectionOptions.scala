@@ -25,64 +25,45 @@ trait CreateCollectionOptions extends StObject {
 }
 object CreateCollectionOptions {
   
-  @scala.inline
-  def apply(): CreateCollectionOptions = {
+  inline def apply(): CreateCollectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCollectionOptions]
   }
   
-  @scala.inline
-  implicit class CreateCollectionOptionsMutableBuilder[Self <: CreateCollectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCollectionOptions](x: Self) {
     
-    @scala.inline
-    def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
+    inline def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSystemUndefined: Self = StObject.set(x, "isSystem", js.undefined)
+    inline def setIsSystemUndefined: Self = StObject.set(x, "isSystem", js.undefined)
     
-    @scala.inline
-    def setIsVolatile(value: Boolean): Self = StObject.set(x, "isVolatile", value.asInstanceOf[js.Any])
+    inline def setIsVolatile(value: Boolean): Self = StObject.set(x, "isVolatile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVolatileUndefined: Self = StObject.set(x, "isVolatile", js.undefined)
+    inline def setIsVolatileUndefined: Self = StObject.set(x, "isVolatile", js.undefined)
     
-    @scala.inline
-    def setJournalSize(value: Double): Self = StObject.set(x, "journalSize", value.asInstanceOf[js.Any])
+    inline def setJournalSize(value: Double): Self = StObject.set(x, "journalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJournalSizeUndefined: Self = StObject.set(x, "journalSize", js.undefined)
+    inline def setJournalSizeUndefined: Self = StObject.set(x, "journalSize", js.undefined)
     
-    @scala.inline
-    def setKeyOptions(value: AllowUserKeys): Self = StObject.set(x, "keyOptions", value.asInstanceOf[js.Any])
+    inline def setKeyOptions(value: AllowUserKeys): Self = StObject.set(x, "keyOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyOptionsUndefined: Self = StObject.set(x, "keyOptions", js.undefined)
+    inline def setKeyOptionsUndefined: Self = StObject.set(x, "keyOptions", js.undefined)
     
-    @scala.inline
-    def setNumberOfShards(value: Double): Self = StObject.set(x, "numberOfShards", value.asInstanceOf[js.Any])
+    inline def setNumberOfShards(value: Double): Self = StObject.set(x, "numberOfShards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfShardsUndefined: Self = StObject.set(x, "numberOfShards", js.undefined)
+    inline def setNumberOfShardsUndefined: Self = StObject.set(x, "numberOfShards", js.undefined)
     
-    @scala.inline
-    def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
+    inline def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationFactorUndefined: Self = StObject.set(x, "replicationFactor", js.undefined)
+    inline def setReplicationFactorUndefined: Self = StObject.set(x, "replicationFactor", js.undefined)
     
-    @scala.inline
-    def setShardKeys(value: js.Array[String]): Self = StObject.set(x, "shardKeys", value.asInstanceOf[js.Any])
+    inline def setShardKeys(value: js.Array[String]): Self = StObject.set(x, "shardKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardKeysUndefined: Self = StObject.set(x, "shardKeys", js.undefined)
+    inline def setShardKeysUndefined: Self = StObject.set(x, "shardKeys", js.undefined)
     
-    @scala.inline
-    def setShardKeysVarargs(value: String*): Self = StObject.set(x, "shardKeys", js.Array(value :_*))
+    inline def setShardKeysVarargs(value: String*): Self = StObject.set(x, "shardKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

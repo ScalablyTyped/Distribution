@@ -18,8 +18,7 @@ trait ExcludedAudience
 }
 object ExcludedAudience {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAdGroup: () => AdGroup,
     getAudienceId: () => Double,
     getAudienceType: () => AudienceType,
@@ -31,19 +30,14 @@ object ExcludedAudience {
     __obj.asInstanceOf[ExcludedAudience]
   }
   
-  @scala.inline
-  implicit class ExcludedAudienceMutableBuilder[Self <: ExcludedAudience] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedAudience](x: Self) {
     
-    @scala.inline
-    def setGetAudienceId(value: () => Double): Self = StObject.set(x, "getAudienceId", js.Any.fromFunction0(value))
+    inline def setGetAudienceId(value: () => Double): Self = StObject.set(x, "getAudienceId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAudienceType(value: () => AudienceType): Self = StObject.set(x, "getAudienceType", js.Any.fromFunction0(value))
+    inline def setGetAudienceType(value: () => AudienceType): Self = StObject.set(x, "getAudienceType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

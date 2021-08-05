@@ -26,67 +26,47 @@ trait RoomState extends StObject {
 }
 object RoomState {
   
-  @scala.inline
-  def apply(): RoomState = {
+  inline def apply(): RoomState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoomState]
   }
   
-  @scala.inline
-  implicit class RoomStateMutableBuilder[Self <: RoomState] (val x: Self) extends AnyVal {
+  extension [Self <: RoomState](x: Self) {
     
-    @scala.inline
-    def `setBroadcaster-lang`(value: String): Self = StObject.set(x, "broadcaster-lang", value.asInstanceOf[js.Any])
+    inline def `setBroadcaster-lang`(value: String): Self = StObject.set(x, "broadcaster-lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBroadcaster-langUndefined`: Self = StObject.set(x, "broadcaster-lang", js.undefined)
+    inline def `setBroadcaster-langUndefined`: Self = StObject.set(x, "broadcaster-lang", js.undefined)
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def `setEmote-only`(value: Boolean): Self = StObject.set(x, "emote-only", value.asInstanceOf[js.Any])
+    inline def `setEmote-only`(value: Boolean): Self = StObject.set(x, "emote-only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEmote-onlyUndefined`: Self = StObject.set(x, "emote-only", js.undefined)
+    inline def `setEmote-onlyUndefined`: Self = StObject.set(x, "emote-only", js.undefined)
     
-    @scala.inline
-    def `setFollowers-only`(value: String | Boolean): Self = StObject.set(x, "followers-only", value.asInstanceOf[js.Any])
+    inline def `setFollowers-only`(value: String | Boolean): Self = StObject.set(x, "followers-only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFollowers-onlyUndefined`: Self = StObject.set(x, "followers-only", js.undefined)
+    inline def `setFollowers-onlyUndefined`: Self = StObject.set(x, "followers-only", js.undefined)
     
-    @scala.inline
-    def setR9k(value: Boolean): Self = StObject.set(x, "r9k", value.asInstanceOf[js.Any])
+    inline def setR9k(value: Boolean): Self = StObject.set(x, "r9k", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR9kUndefined: Self = StObject.set(x, "r9k", js.undefined)
+    inline def setR9kUndefined: Self = StObject.set(x, "r9k", js.undefined)
     
-    @scala.inline
-    def setRituals(value: Boolean): Self = StObject.set(x, "rituals", value.asInstanceOf[js.Any])
+    inline def setRituals(value: Boolean): Self = StObject.set(x, "rituals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRitualsUndefined: Self = StObject.set(x, "rituals", js.undefined)
+    inline def setRitualsUndefined: Self = StObject.set(x, "rituals", js.undefined)
     
-    @scala.inline
-    def `setRoom-id`(value: String): Self = StObject.set(x, "room-id", value.asInstanceOf[js.Any])
+    inline def `setRoom-id`(value: String): Self = StObject.set(x, "room-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRoom-idUndefined`: Self = StObject.set(x, "room-id", js.undefined)
+    inline def `setRoom-idUndefined`: Self = StObject.set(x, "room-id", js.undefined)
     
-    @scala.inline
-    def setSlow(value: String | Boolean): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+    inline def setSlow(value: String | Boolean): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
+    inline def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
     
-    @scala.inline
-    def `setSubs-only`(value: Boolean): Self = StObject.set(x, "subs-only", value.asInstanceOf[js.Any])
+    inline def `setSubs-only`(value: Boolean): Self = StObject.set(x, "subs-only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSubs-onlyUndefined`: Self = StObject.set(x, "subs-only", js.undefined)
+    inline def `setSubs-onlyUndefined`: Self = StObject.set(x, "subs-only", js.undefined)
   }
 }

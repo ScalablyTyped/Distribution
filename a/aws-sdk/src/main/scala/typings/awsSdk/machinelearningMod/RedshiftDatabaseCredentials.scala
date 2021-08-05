@@ -12,19 +12,15 @@ trait RedshiftDatabaseCredentials extends StObject {
 }
 object RedshiftDatabaseCredentials {
   
-  @scala.inline
-  def apply(Password: RedshiftDatabasePassword, Username: RedshiftDatabaseUsername): RedshiftDatabaseCredentials = {
+  inline def apply(Password: RedshiftDatabasePassword, Username: RedshiftDatabaseUsername): RedshiftDatabaseCredentials = {
     val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftDatabaseCredentials]
   }
   
-  @scala.inline
-  implicit class RedshiftDatabaseCredentialsMutableBuilder[Self <: RedshiftDatabaseCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftDatabaseCredentials](x: Self) {
     
-    @scala.inline
-    def setPassword(value: RedshiftDatabasePassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: RedshiftDatabasePassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: RedshiftDatabaseUsername): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: RedshiftDatabaseUsername): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

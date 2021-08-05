@@ -13,16 +13,13 @@ trait GetContainerPolicyOutput extends StObject {
 }
 object GetContainerPolicyOutput {
   
-  @scala.inline
-  def apply(Policy: ContainerPolicy): GetContainerPolicyOutput = {
+  inline def apply(Policy: ContainerPolicy): GetContainerPolicyOutput = {
     val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContainerPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetContainerPolicyOutputMutableBuilder[Self <: GetContainerPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: ContainerPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ContainerPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
   }
 }

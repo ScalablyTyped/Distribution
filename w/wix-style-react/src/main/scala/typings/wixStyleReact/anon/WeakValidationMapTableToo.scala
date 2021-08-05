@@ -13,19 +13,15 @@ trait WeakValidationMapTableToo extends StObject {
 }
 object WeakValidationMapTableToo {
   
-  @scala.inline
-  def apply(): WeakValidationMapTableToo = {
+  inline def apply(): WeakValidationMapTableToo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapTableToo]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapTableTooMutableBuilder[Self <: WeakValidationMapTableToo] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapTableToo](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Validator[js.UndefOr[Null | ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Validator[js.UndefOr[Null | ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

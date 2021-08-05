@@ -16,17 +16,17 @@ object rowNodeBlockMod {
   @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlock", "RowNodeBlock")
   @js.native
   abstract class RowNodeBlock protected () extends BeanStub {
-    protected def this(blockNumber: Double, rowNodeCacheParams: RowNodeCacheParams) = this()
+    /* protected */ def this(blockNumber: Double, rowNodeCacheParams: RowNodeCacheParams) = this()
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    val blockNumber: js.Any = js.native
+    /* private */ val blockNumber: js.Any = js.native
     
     /* protected */ def createBlankRowNode(rowIndex: Double): RowNode = js.native
     
     /* protected */ def createRowNodes(): Unit = js.native
     
-    val endRow: js.Any = js.native
+    /* private */ val endRow: js.Any = js.native
     
     /* private */ def forEachNode(callback: js.Any, sequence: js.Any, rowCount: js.Any, deep: js.Any): js.Any = js.native
     
@@ -67,7 +67,7 @@ object rowNodeBlockMod {
     
     def isAnyNodeOpen(rowCount: Double): Boolean = js.native
     
-    var lastAccessed: js.Any = js.native
+    /* private */ var lastAccessed: js.Any = js.native
     
     def load(): Unit = js.native
     
@@ -79,7 +79,7 @@ object rowNodeBlockMod {
     
     /* private */ def populateWithRowData(rows: js.Any): js.Any = js.native
     
-    var rowNodeCacheParams: js.Any = js.native
+    /* private */ var rowNodeCacheParams: js.Any = js.native
     
     var rowNodes: js.Array[RowNode] = js.native
     
@@ -95,11 +95,11 @@ object rowNodeBlockMod {
     
     def setRowNode(rowIndex: Double, rowNode: RowNode): Unit = js.native
     
-    val startRow: js.Any = js.native
+    /* private */ val startRow: js.Any = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
-    var version: js.Any = js.native
+    /* private */ var version: js.Any = js.native
   }
   /* static members */
   object RowNodeBlock {
@@ -111,32 +111,27 @@ object rowNodeBlockMod {
     @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlock", "RowNodeBlock.EVENT_LOAD_COMPLETE")
     @js.native
     def EVENT_LOAD_COMPLETE: String = js.native
-    @scala.inline
-    def EVENT_LOAD_COMPLETE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LOAD_COMPLETE")(x.asInstanceOf[js.Any])
+    inline def EVENT_LOAD_COMPLETE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LOAD_COMPLETE")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlock", "RowNodeBlock.STATE_DIRTY")
     @js.native
     def STATE_DIRTY: String = js.native
-    @scala.inline
-    def STATE_DIRTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_DIRTY")(x.asInstanceOf[js.Any])
+    inline def STATE_DIRTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_DIRTY")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlock", "RowNodeBlock.STATE_FAILED")
     @js.native
     def STATE_FAILED: String = js.native
-    @scala.inline
-    def STATE_FAILED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_FAILED")(x.asInstanceOf[js.Any])
+    inline def STATE_FAILED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_FAILED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlock", "RowNodeBlock.STATE_LOADED")
     @js.native
     def STATE_LOADED: String = js.native
-    @scala.inline
-    def STATE_LOADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_LOADED")(x.asInstanceOf[js.Any])
+    inline def STATE_LOADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_LOADED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlock", "RowNodeBlock.STATE_LOADING")
     @js.native
     def STATE_LOADING: String = js.native
-    @scala.inline
-    def STATE_LOADING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_LOADING")(x.asInstanceOf[js.Any])
+    inline def STATE_LOADING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_LOADING")(x.asInstanceOf[js.Any])
   }
   
   trait LoadCompleteEvent
@@ -151,24 +146,19 @@ object rowNodeBlockMod {
   }
   object LoadCompleteEvent {
     
-    @scala.inline
-    def apply(lastRow: Double, page: RowNodeBlock, success: Boolean, `type`: String): LoadCompleteEvent = {
+    inline def apply(lastRow: Double, page: RowNodeBlock, success: Boolean, `type`: String): LoadCompleteEvent = {
       val __obj = js.Dynamic.literal(lastRow = lastRow.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadCompleteEvent]
     }
     
-    @scala.inline
-    implicit class LoadCompleteEventMutableBuilder[Self <: LoadCompleteEvent] (val x: Self) extends AnyVal {
+    extension [Self <: LoadCompleteEvent](x: Self) {
       
-      @scala.inline
-      def setLastRow(value: Double): Self = StObject.set(x, "lastRow", value.asInstanceOf[js.Any])
+      inline def setLastRow(value: Double): Self = StObject.set(x, "lastRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: RowNodeBlock): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: RowNodeBlock): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,20 +170,16 @@ object rowNodeBlockMod {
   }
   object RowNodeBlockBeans {
     
-    @scala.inline
-    def apply(context: Context, rowRenderer: RowRenderer): RowNodeBlockBeans = {
+    inline def apply(context: Context, rowRenderer: RowRenderer): RowNodeBlockBeans = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], rowRenderer = rowRenderer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowNodeBlockBeans]
     }
     
-    @scala.inline
-    implicit class RowNodeBlockBeansMutableBuilder[Self <: RowNodeBlockBeans] (val x: Self) extends AnyVal {
+    extension [Self <: RowNodeBlockBeans](x: Self) {
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowRenderer(value: RowRenderer): Self = StObject.set(x, "rowRenderer", value.asInstanceOf[js.Any])
+      inline def setRowRenderer(value: RowRenderer): Self = StObject.set(x, "rowRenderer", value.asInstanceOf[js.Any])
     }
   }
 }

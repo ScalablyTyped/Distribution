@@ -16,31 +16,23 @@ trait DynaTreeAjaxOptions extends StObject {
 }
 object DynaTreeAjaxOptions {
   
-  @scala.inline
-  def apply(): DynaTreeAjaxOptions = {
+  inline def apply(): DynaTreeAjaxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynaTreeAjaxOptions]
   }
   
-  @scala.inline
-  implicit class DynaTreeAjaxOptionsMutableBuilder[Self <: DynaTreeAjaxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DynaTreeAjaxOptions](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

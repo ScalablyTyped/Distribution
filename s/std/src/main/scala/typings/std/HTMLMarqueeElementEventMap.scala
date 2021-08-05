@@ -16,8 +16,7 @@ trait HTMLMarqueeElementEventMap
 }
 object HTMLMarqueeElementEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -118,16 +117,12 @@ object HTMLMarqueeElementEventMap {
     __obj.asInstanceOf[HTMLMarqueeElementEventMap]
   }
   
-  @scala.inline
-  implicit class HTMLMarqueeElementEventMapMutableBuilder[Self <: HTMLMarqueeElementEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLMarqueeElementEventMap](x: Self) {
     
-    @scala.inline
-    def setBounce(value: Event): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+    inline def setBounce(value: Event): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinish(value: Event): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
+    inline def setFinish(value: Event): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

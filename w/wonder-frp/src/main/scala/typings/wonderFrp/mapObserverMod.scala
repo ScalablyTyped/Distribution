@@ -13,9 +13,9 @@ object mapObserverMod {
   class MapObserver protected () extends Observer {
     def this(currentObserver: IObserver, selector: js.Function) = this()
     
-    var _currentObserver: js.Any = js.native
+    /* private */ var _currentObserver: js.Any = js.native
     
-    var _selector: js.Any = js.native
+    /* private */ var _selector: js.Any = js.native
   }
   /* static members */
   object MapObserver {
@@ -24,7 +24,6 @@ object mapObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(currentObserver: IObserver, selector: js.Function): MapObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[MapObserver]
+    inline def create(currentObserver: IObserver, selector: js.Function): MapObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[MapObserver]
   }
 }

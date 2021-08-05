@@ -23,22 +23,17 @@ trait GetAssessmentReportRequest extends StObject {
 }
 object GetAssessmentReportRequest {
   
-  @scala.inline
-  def apply(assessmentRunArn: Arn, reportFileFormat: ReportFileFormat, reportType: ReportType): GetAssessmentReportRequest = {
+  inline def apply(assessmentRunArn: Arn, reportFileFormat: ReportFileFormat, reportType: ReportType): GetAssessmentReportRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any], reportFileFormat = reportFileFormat.asInstanceOf[js.Any], reportType = reportType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssessmentReportRequest]
   }
   
-  @scala.inline
-  implicit class GetAssessmentReportRequestMutableBuilder[Self <: GetAssessmentReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssessmentReportRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportFileFormat(value: ReportFileFormat): Self = StObject.set(x, "reportFileFormat", value.asInstanceOf[js.Any])
+    inline def setReportFileFormat(value: ReportFileFormat): Self = StObject.set(x, "reportFileFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
   }
 }

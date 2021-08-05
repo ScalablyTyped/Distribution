@@ -112,17 +112,17 @@ class Glyph protected () extends StObject {
   
   var path: Path | js.Function0[Path] = js.native
   
-  var points: js.Any = js.native
+  /* private */ var points: js.Any = js.native
   
   var unicode: Double = js.native
   
   var unicodes: js.Array[Double] = js.native
   
-  var xMax: js.Any = js.native
+  /* private */ var xMax: js.Any = js.native
   
-  var xMin: js.Any = js.native
+  /* private */ var xMin: js.Any = js.native
   
-  var yMax: js.Any = js.native
+  /* private */ var yMax: js.Any = js.native
   
-  var yMin: js.Any = js.native
+  /* private */ var yMin: js.Any = js.native
 }

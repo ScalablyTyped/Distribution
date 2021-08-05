@@ -10,8 +10,7 @@ trait RevokeGrantOutput
      with typings.awsSdkClientKmsBrowser.typesRevokeGrantOutputMod.RevokeGrantOutput
 object RevokeGrantOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): RevokeGrantOutput = {
+  inline def apply($metadata: ResponseMetadata): RevokeGrantOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeGrantOutput]
   }

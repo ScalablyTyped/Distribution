@@ -16,8 +16,7 @@ trait PoolStateType extends StObject {
 }
 object PoolStateType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeConnectionCount: Double,
     ended: Boolean,
     idleConnectionCount: Double,
@@ -27,19 +26,14 @@ object PoolStateType {
     __obj.asInstanceOf[PoolStateType]
   }
   
-  @scala.inline
-  implicit class PoolStateTypeMutableBuilder[Self <: PoolStateType] (val x: Self) extends AnyVal {
+  extension [Self <: PoolStateType](x: Self) {
     
-    @scala.inline
-    def setActiveConnectionCount(value: Double): Self = StObject.set(x, "activeConnectionCount", value.asInstanceOf[js.Any])
+    inline def setActiveConnectionCount(value: Double): Self = StObject.set(x, "activeConnectionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleConnectionCount(value: Double): Self = StObject.set(x, "idleConnectionCount", value.asInstanceOf[js.Any])
+    inline def setIdleConnectionCount(value: Double): Self = StObject.set(x, "idleConnectionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingClientCount(value: Double): Self = StObject.set(x, "waitingClientCount", value.asInstanceOf[js.Any])
+    inline def setWaitingClientCount(value: Double): Self = StObject.set(x, "waitingClientCount", value.asInstanceOf[js.Any])
   }
 }

@@ -22,10 +22,10 @@ object pluginMod {
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
     ): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var name: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var options: js.Any = js.native
   }
   
@@ -36,14 +36,13 @@ object pluginMod {
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
     ): Unit
     
-    var name: js.Any
+    /* private */ var name: js.Any
     
-    var options: js.Any
+    /* private */ var options: js.Any
   }
   object DocgenPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any => Unit,
       name: js.Any,
       options: js.Any
@@ -52,19 +51,15 @@ object pluginMod {
       __obj.asInstanceOf[DocgenPlugin]
     }
     
-    @scala.inline
-    implicit class DocgenPluginMutableBuilder[Self <: DocgenPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: DocgenPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,35 +102,26 @@ object pluginMod {
   }
   object LoaderOptions {
     
-    @scala.inline
-    def apply(): LoaderOptions = {
+    inline def apply(): LoaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    @scala.inline
-    implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderOptions](x: Self) {
       
-      @scala.inline
-      def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
+      inline def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocgenCollectionNameNull: Self = StObject.set(x, "docgenCollectionName", null)
+      inline def setDocgenCollectionNameNull: Self = StObject.set(x, "docgenCollectionName", null)
       
-      @scala.inline
-      def setDocgenCollectionNameUndefined: Self = StObject.set(x, "docgenCollectionName", js.undefined)
+      inline def setDocgenCollectionNameUndefined: Self = StObject.set(x, "docgenCollectionName", js.undefined)
       
-      @scala.inline
-      def setSetDisplayName(value: Boolean): Self = StObject.set(x, "setDisplayName", value.asInstanceOf[js.Any])
+      inline def setSetDisplayName(value: Boolean): Self = StObject.set(x, "setDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDisplayNameUndefined: Self = StObject.set(x, "setDisplayName", js.undefined)
+      inline def setSetDisplayNameUndefined: Self = StObject.set(x, "setDisplayName", js.undefined)
       
-      @scala.inline
-      def setTypePropName(value: String): Self = StObject.set(x, "typePropName", value.asInstanceOf[js.Any])
+      inline def setTypePropName(value: String): Self = StObject.set(x, "typePropName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypePropNameUndefined: Self = StObject.set(x, "typePropName", js.undefined)
+      inline def setTypePropNameUndefined: Self = StObject.set(x, "typePropName", js.undefined)
     }
   }
   
@@ -153,32 +139,24 @@ object pluginMod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(): PluginOptions = {
+    inline def apply(): PluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
     }
   }
   
@@ -195,26 +173,20 @@ object pluginMod {
   }
   object TypescriptOptions {
     
-    @scala.inline
-    def apply(): TypescriptOptions = {
+    inline def apply(): TypescriptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypescriptOptions]
     }
     
-    @scala.inline
-    implicit class TypescriptOptionsMutableBuilder[Self <: TypescriptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TypescriptOptions](x: Self) {
       
-      @scala.inline
-      def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
+      inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
       
-      @scala.inline
-      def setTsconfigPath(value: String): Self = StObject.set(x, "tsconfigPath", value.asInstanceOf[js.Any])
+      inline def setTsconfigPath(value: String): Self = StObject.set(x, "tsconfigPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsconfigPathUndefined: Self = StObject.set(x, "tsconfigPath", js.undefined)
+      inline def setTsconfigPathUndefined: Self = StObject.set(x, "tsconfigPath", js.undefined)
     }
   }
 }

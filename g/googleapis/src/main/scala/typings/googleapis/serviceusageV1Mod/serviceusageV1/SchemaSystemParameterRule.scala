@@ -26,28 +26,21 @@ trait SchemaSystemParameterRule extends StObject {
 }
 object SchemaSystemParameterRule {
   
-  @scala.inline
-  def apply(): SchemaSystemParameterRule = {
+  inline def apply(): SchemaSystemParameterRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSystemParameterRule]
   }
   
-  @scala.inline
-  implicit class SchemaSystemParameterRuleMutableBuilder[Self <: SchemaSystemParameterRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSystemParameterRule](x: Self) {
     
-    @scala.inline
-    def setParameters(value: js.Array[SchemaSystemParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[SchemaSystemParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: SchemaSystemParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SchemaSystemParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

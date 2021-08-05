@@ -14,31 +14,23 @@ trait DestinationStatuses extends StObject {
 }
 object DestinationStatuses {
   
-  @scala.inline
-  def apply(): DestinationStatuses = {
+  inline def apply(): DestinationStatuses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationStatuses]
   }
   
-  @scala.inline
-  implicit class DestinationStatusesMutableBuilder[Self <: DestinationStatuses] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationStatuses](x: Self) {
     
-    @scala.inline
-    def `setDestination-uri`(value: String): Self = StObject.set(x, "destination-uri", value.asInstanceOf[js.Any])
+    inline def `setDestination-uri`(value: String): Self = StObject.set(x, "destination-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDestination-uriUndefined`: Self = StObject.set(x, "destination-uri", js.undefined)
+    inline def `setDestination-uriUndefined`: Self = StObject.set(x, "destination-uri", js.undefined)
     
-    @scala.inline
-    def `setImages-completed`(value: Double): Self = StObject.set(x, "images-completed", value.asInstanceOf[js.Any])
+    inline def `setImages-completed`(value: Double): Self = StObject.set(x, "images-completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setImages-completedUndefined`: Self = StObject.set(x, "images-completed", js.undefined)
+    inline def `setImages-completedUndefined`: Self = StObject.set(x, "images-completed", js.undefined)
     
-    @scala.inline
-    def `setTransmission-status`(value: TransmissionStatus): Self = StObject.set(x, "transmission-status", value.asInstanceOf[js.Any])
+    inline def `setTransmission-status`(value: TransmissionStatus): Self = StObject.set(x, "transmission-status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTransmission-statusUndefined`: Self = StObject.set(x, "transmission-status", js.undefined)
+    inline def `setTransmission-statusUndefined`: Self = StObject.set(x, "transmission-status", js.undefined)
   }
 }

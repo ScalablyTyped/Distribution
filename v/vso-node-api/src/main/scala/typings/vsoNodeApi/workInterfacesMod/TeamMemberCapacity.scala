@@ -25,8 +25,7 @@ trait TeamMemberCapacity
 }
 object TeamMemberCapacity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     activities: js.Array[Activity],
     daysOff: js.Array[DateRange],
@@ -37,22 +36,16 @@ object TeamMemberCapacity {
     __obj.asInstanceOf[TeamMemberCapacity]
   }
   
-  @scala.inline
-  implicit class TeamMemberCapacityMutableBuilder[Self <: TeamMemberCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: TeamMemberCapacity](x: Self) {
     
-    @scala.inline
-    def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
-    @scala.inline
-    def setDaysOff(value: js.Array[DateRange]): Self = StObject.set(x, "daysOff", value.asInstanceOf[js.Any])
+    inline def setDaysOff(value: js.Array[DateRange]): Self = StObject.set(x, "daysOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOffVarargs(value: DateRange*): Self = StObject.set(x, "daysOff", js.Array(value :_*))
+    inline def setDaysOffVarargs(value: DateRange*): Self = StObject.set(x, "daysOff", js.Array(value :_*))
     
-    @scala.inline
-    def setTeamMember(value: Member): Self = StObject.set(x, "teamMember", value.asInstanceOf[js.Any])
+    inline def setTeamMember(value: Member): Self = StObject.set(x, "teamMember", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait GhostOptions extends StObject {
 }
 object GhostOptions {
   
-  @scala.inline
-  def apply(): GhostOptions = {
+  inline def apply(): GhostOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GhostOptions]
   }
   
-  @scala.inline
-  implicit class GhostOptionsMutableBuilder[Self <: GhostOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GhostOptions](x: Self) {
     
-    @scala.inline
-    def setClicks(value: Boolean): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
+    inline def setClicks(value: Boolean): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
+    inline def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
     
-    @scala.inline
-    def setForms(value: FormsOptions | Boolean): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
+    inline def setForms(value: FormsOptions | Boolean): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormsUndefined: Self = StObject.set(x, "forms", js.undefined)
+    inline def setFormsUndefined: Self = StObject.set(x, "forms", js.undefined)
     
-    @scala.inline
-    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }
 }

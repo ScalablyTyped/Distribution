@@ -68,8 +68,7 @@ trait DataPilotDescriptor
 }
 object DataPilotDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnFields: XIndexAccess,
     ColumnGrand: Boolean,
     DataFields: XIndexAccess,
@@ -121,37 +120,26 @@ object DataPilotDescriptor {
     __obj.asInstanceOf[DataPilotDescriptor]
   }
   
-  @scala.inline
-  implicit class DataPilotDescriptorMutableBuilder[Self <: DataPilotDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotDescriptor](x: Self) {
     
-    @scala.inline
-    def setColumnGrand(value: Boolean): Self = StObject.set(x, "ColumnGrand", value.asInstanceOf[js.Any])
+    inline def setColumnGrand(value: Boolean): Self = StObject.set(x, "ColumnGrand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillDownOnDoubleClick(value: Boolean): Self = StObject.set(x, "DrillDownOnDoubleClick", value.asInstanceOf[js.Any])
+    inline def setDrillDownOnDoubleClick(value: Boolean): Self = StObject.set(x, "DrillDownOnDoubleClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrandTotalName(value: String): Self = StObject.set(x, "GrandTotalName", value.asInstanceOf[js.Any])
+    inline def setGrandTotalName(value: String): Self = StObject.set(x, "GrandTotalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreEmptyRows(value: Boolean): Self = StObject.set(x, "IgnoreEmptyRows", value.asInstanceOf[js.Any])
+    inline def setIgnoreEmptyRows(value: Boolean): Self = StObject.set(x, "IgnoreEmptyRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ImportDescriptor", value.asInstanceOf[js.Any])
+    inline def setImportDescriptor(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ImportDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatIfEmpty(value: Boolean): Self = StObject.set(x, "RepeatIfEmpty", value.asInstanceOf[js.Any])
+    inline def setRepeatIfEmpty(value: Boolean): Self = StObject.set(x, "RepeatIfEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowGrand(value: Boolean): Self = StObject.set(x, "RowGrand", value.asInstanceOf[js.Any])
+    inline def setRowGrand(value: Boolean): Self = StObject.set(x, "RowGrand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceArguments(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ServiceArguments", value.asInstanceOf[js.Any])
+    inline def setServiceArguments(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ServiceArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFilterButton(value: Boolean): Self = StObject.set(x, "ShowFilterButton", value.asInstanceOf[js.Any])
+    inline def setShowFilterButton(value: Boolean): Self = StObject.set(x, "ShowFilterButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceServiceName(value: String): Self = StObject.set(x, "SourceServiceName", value.asInstanceOf[js.Any])
+    inline def setSourceServiceName(value: String): Self = StObject.set(x, "SourceServiceName", value.asInstanceOf[js.Any])
   }
 }

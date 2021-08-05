@@ -14,22 +14,17 @@ trait ReturnTypeGetRealtimeDataResponse extends StObject {
 }
 object ReturnTypeGetRealtimeDataResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetRealtimeDataRequest], returnType: GetRealtimeDataResponse): ReturnTypeGetRealtimeDataResponse = {
+  inline def apply(paramsType: js.Array[GetRealtimeDataRequest], returnType: GetRealtimeDataResponse): ReturnTypeGetRealtimeDataResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetRealtimeDataResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetRealtimeDataResponseMutableBuilder[Self <: ReturnTypeGetRealtimeDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetRealtimeDataResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetRealtimeDataRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetRealtimeDataRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetRealtimeDataRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetRealtimeDataRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetRealtimeDataResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetRealtimeDataResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

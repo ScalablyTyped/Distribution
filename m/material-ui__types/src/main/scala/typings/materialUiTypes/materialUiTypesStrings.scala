@@ -8,6 +8,5 @@ object materialUiTypesStrings {
   
   @js.native
   sealed trait ConsistentWith extends StObject
-  @scala.inline
-  def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
+  inline def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
 }

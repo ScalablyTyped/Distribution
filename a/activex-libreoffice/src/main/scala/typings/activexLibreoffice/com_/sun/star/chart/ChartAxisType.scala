@@ -17,13 +17,10 @@ object ChartAxisType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTOMATIC: `0` = 0.asInstanceOf[`0`]
+    inline def AUTOMATIC: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def CATEGORY: `1` = 1.asInstanceOf[`1`]
+    inline def CATEGORY: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DATE: `2` = 2.asInstanceOf[`2`]
+    inline def DATE: `2` = 2.asInstanceOf[`2`]
   }
 }

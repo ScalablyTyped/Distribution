@@ -11,19 +11,15 @@ trait Accessor[D /* <: js.Object */] extends StObject {
 }
 object Accessor {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): Accessor[D] = {
+  inline def apply[D /* <: js.Object */](): Accessor[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Accessor[D]]
   }
   
-  @scala.inline
-  implicit class AccessorMutableBuilder[Self <: Accessor[?], D /* <: js.Object */] (val x: Self & Accessor[D]) extends AnyVal {
+  extension [Self <: Accessor[?], D /* <: js.Object */](x: Self & Accessor[D]) {
     
-    @scala.inline
-    def setAccessor(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[js.Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
+    inline def setAccessor(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[js.Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
+    inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
   }
 }

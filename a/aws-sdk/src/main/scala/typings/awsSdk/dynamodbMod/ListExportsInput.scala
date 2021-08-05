@@ -23,31 +23,23 @@ trait ListExportsInput extends StObject {
 }
 object ListExportsInput {
   
-  @scala.inline
-  def apply(): ListExportsInput = {
+  inline def apply(): ListExportsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListExportsInput]
   }
   
-  @scala.inline
-  implicit class ListExportsInputMutableBuilder[Self <: ListExportsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListExportsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ListExportsMaxLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListExportsMaxLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+    inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+    inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
   }
 }

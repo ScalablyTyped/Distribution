@@ -25,10 +25,8 @@ object mod {
     * - Imports which are not modified (by `options.filter` or because they are remote imports) are moved to the top of the output.
     * - **This plugin attempts to follow the CSS `@import` spec**; `@import` statements must precede all other statements (besides `@charset`).
     */
-  @scala.inline
-  def apply(): Transformer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transformer]
-  @scala.inline
-  def apply(options: AtImportOptions): Transformer = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transformer]
+  inline def apply(): Transformer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transformer]
+  inline def apply(options: AtImportOptions): Transformer = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transformer]
   
   @JSImport("postcss-import", JSImport.Namespace)
   @js.native
@@ -93,67 +91,48 @@ object mod {
   }
   object AtImportOptions {
     
-    @scala.inline
-    def apply(): AtImportOptions = {
+    inline def apply(): AtImportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AtImportOptions]
     }
     
-    @scala.inline
-    implicit class AtImportOptionsMutableBuilder[Self <: AtImportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AtImportOptions](x: Self) {
       
-      @scala.inline
-      def setAddModulesDirectories(value: js.Array[String]): Self = StObject.set(x, "addModulesDirectories", value.asInstanceOf[js.Any])
+      inline def setAddModulesDirectories(value: js.Array[String]): Self = StObject.set(x, "addModulesDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddModulesDirectoriesUndefined: Self = StObject.set(x, "addModulesDirectories", js.undefined)
+      inline def setAddModulesDirectoriesUndefined: Self = StObject.set(x, "addModulesDirectories", js.undefined)
       
-      @scala.inline
-      def setAddModulesDirectoriesVarargs(value: String*): Self = StObject.set(x, "addModulesDirectories", js.Array(value :_*))
+      inline def setAddModulesDirectoriesVarargs(value: String*): Self = StObject.set(x, "addModulesDirectories", js.Array(value :_*))
       
-      @scala.inline
-      def setLoad(value: (/* filename */ String, AtImportOptions) => String | js.Promise[String]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+      inline def setLoad(value: (/* filename */ String, AtImportOptions) => String | js.Promise[String]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setPlugins(value: js.Array[AcceptedPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[AcceptedPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: AcceptedPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: AcceptedPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setResolve(
+      inline def setResolve(
         value: (/* id */ String, /* basedir */ String, AtImportOptions) => String | js.Array[String] | (js.Thenable[String | js.Array[String]])
       ): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "skipDuplicates", value.asInstanceOf[js.Any])
+      inline def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "skipDuplicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipDuplicatesUndefined: Self = StObject.set(x, "skipDuplicates", js.undefined)
+      inline def setSkipDuplicatesUndefined: Self = StObject.set(x, "skipDuplicates", js.undefined)
     }
   }
 }

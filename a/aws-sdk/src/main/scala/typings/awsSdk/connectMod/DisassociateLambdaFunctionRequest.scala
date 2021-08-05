@@ -18,19 +18,15 @@ trait DisassociateLambdaFunctionRequest extends StObject {
 }
 object DisassociateLambdaFunctionRequest {
   
-  @scala.inline
-  def apply(FunctionArn: FunctionArn, InstanceId: InstanceId): DisassociateLambdaFunctionRequest = {
+  inline def apply(FunctionArn: FunctionArn, InstanceId: InstanceId): DisassociateLambdaFunctionRequest = {
     val __obj = js.Dynamic.literal(FunctionArn = FunctionArn.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateLambdaFunctionRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateLambdaFunctionRequestMutableBuilder[Self <: DisassociateLambdaFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateLambdaFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

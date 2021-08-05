@@ -29,8 +29,7 @@ trait XMembersSupplier
 }
 object XMembersSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Members: XMembersAccess,
     acquire: () => Unit,
     getMembers: () => XMembersAccess,
@@ -41,13 +40,10 @@ object XMembersSupplier {
     __obj.asInstanceOf[XMembersSupplier]
   }
   
-  @scala.inline
-  implicit class XMembersSupplierMutableBuilder[Self <: XMembersSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XMembersSupplier](x: Self) {
     
-    @scala.inline
-    def setGetMembers(value: () => XMembersAccess): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
+    inline def setGetMembers(value: () => XMembersAccess): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMembers(value: XMembersAccess): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: XMembersAccess): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
   }
 }

@@ -42,62 +42,44 @@ object radialGradientMod {
   }
   object RadialGradientProps {
     
-    @scala.inline
-    def apply(cx: NumberProp, cy: NumberProp, fx: NumberProp, fy: NumberProp, id: String): RadialGradientProps = {
+    inline def apply(cx: NumberProp, cy: NumberProp, fx: NumberProp, fy: NumberProp, id: String): RadialGradientProps = {
       val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], fx = fx.asInstanceOf[js.Any], fy = fy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadialGradientProps]
     }
     
-    @scala.inline
-    implicit class RadialGradientPropsMutableBuilder[Self <: RadialGradientProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadialGradientProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+      inline def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+      inline def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFx(value: NumberProp): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+      inline def setFx(value: NumberProp): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFy(value: NumberProp): Self = StObject.set(x, "fy", value.asInstanceOf[js.Any])
+      inline def setFy(value: NumberProp): Self = StObject.set(x, "fy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientUnits(value: objectBoundingBox | userSpaceOnUse): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
+      inline def setGradientUnits(value: objectBoundingBox | userSpaceOnUse): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
+      inline def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: NumberProp): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: NumberProp): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
       
-      @scala.inline
-      def setRx(value: NumberProp): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+      inline def setRx(value: NumberProp): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+      inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
       
-      @scala.inline
-      def setRy(value: NumberProp): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+      inline def setRy(value: NumberProp): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+      inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     }
   }
 }

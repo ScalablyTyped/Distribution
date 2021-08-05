@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object implementationMod {
   
-  @scala.inline
-  def apply[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor]]
+  inline def apply[T](o: T): typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[typings.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^ & TopLevel[T] & StringDictionary[PropertyDescriptor]]
   
   @JSImport("object.getownpropertydescriptors/implementation", JSImport.Namespace)
   @js.native

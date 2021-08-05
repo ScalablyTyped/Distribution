@@ -10,19 +10,15 @@ trait ExplodeEffect extends StObject {
 }
 object ExplodeEffect {
   
-  @scala.inline
-  def apply(): ExplodeEffect = {
+  inline def apply(): ExplodeEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExplodeEffect]
   }
   
-  @scala.inline
-  implicit class ExplodeEffectMutableBuilder[Self <: ExplodeEffect] (val x: Self) extends AnyVal {
+  extension [Self <: ExplodeEffect](x: Self) {
     
-    @scala.inline
-    def setPieces(value: Double): Self = StObject.set(x, "pieces", value.asInstanceOf[js.Any])
+    inline def setPieces(value: Double): Self = StObject.set(x, "pieces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPiecesUndefined: Self = StObject.set(x, "pieces", js.undefined)
+    inline def setPiecesUndefined: Self = StObject.set(x, "pieces", js.undefined)
   }
 }

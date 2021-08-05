@@ -23,8 +23,7 @@ trait XSheetAnnotationAnchor
 }
 object XSheetAnnotationAnchor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Annotation: XSheetAnnotation,
     acquire: () => Unit,
     getAnnotation: () => XSheetAnnotation,
@@ -35,13 +34,10 @@ object XSheetAnnotationAnchor {
     __obj.asInstanceOf[XSheetAnnotationAnchor]
   }
   
-  @scala.inline
-  implicit class XSheetAnnotationAnchorMutableBuilder[Self <: XSheetAnnotationAnchor] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetAnnotationAnchor](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: XSheetAnnotation): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: XSheetAnnotation): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAnnotation(value: () => XSheetAnnotation): Self = StObject.set(x, "getAnnotation", js.Any.fromFunction0(value))
+    inline def setGetAnnotation(value: () => XSheetAnnotation): Self = StObject.set(x, "getAnnotation", js.Any.fromFunction0(value))
   }
 }

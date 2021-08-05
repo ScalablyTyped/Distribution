@@ -15,16 +15,13 @@ trait MissingBootstrapFileException
 }
 object MissingBootstrapFileException {
   
-  @scala.inline
-  def apply(BootstrapFileURL: String, Context: XInterface, Message: String): MissingBootstrapFileException = {
+  inline def apply(BootstrapFileURL: String, Context: XInterface, Message: String): MissingBootstrapFileException = {
     val __obj = js.Dynamic.literal(BootstrapFileURL = BootstrapFileURL.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MissingBootstrapFileException]
   }
   
-  @scala.inline
-  implicit class MissingBootstrapFileExceptionMutableBuilder[Self <: MissingBootstrapFileException] (val x: Self) extends AnyVal {
+  extension [Self <: MissingBootstrapFileException](x: Self) {
     
-    @scala.inline
-    def setBootstrapFileURL(value: String): Self = StObject.set(x, "BootstrapFileURL", value.asInstanceOf[js.Any])
+    inline def setBootstrapFileURL(value: String): Self = StObject.set(x, "BootstrapFileURL", value.asInstanceOf[js.Any])
   }
 }

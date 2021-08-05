@@ -28,8 +28,7 @@ trait FullTreegetNodeKeyGetNodeExpandAllMatchPaths extends StObject {
 }
 object FullTreegetNodeKeyGetNodeExpandAllMatchPaths {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
     searchMethod: SearchData => Boolean,
     treeData: js.Array[TreeItem]
@@ -38,43 +37,30 @@ object FullTreegetNodeKeyGetNodeExpandAllMatchPaths {
     __obj.asInstanceOf[FullTreegetNodeKeyGetNodeExpandAllMatchPaths]
   }
   
-  @scala.inline
-  implicit class FullTreegetNodeKeyGetNodeExpandAllMatchPathsMutableBuilder[Self <: FullTreegetNodeKeyGetNodeExpandAllMatchPaths] (val x: Self) extends AnyVal {
+  extension [Self <: FullTreegetNodeKeyGetNodeExpandAllMatchPaths](x: Self) {
     
-    @scala.inline
-    def setExpandAllMatchPaths(value: Boolean): Self = StObject.set(x, "expandAllMatchPaths", value.asInstanceOf[js.Any])
+    inline def setExpandAllMatchPaths(value: Boolean): Self = StObject.set(x, "expandAllMatchPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandAllMatchPathsUndefined: Self = StObject.set(x, "expandAllMatchPaths", js.undefined)
+    inline def setExpandAllMatchPathsUndefined: Self = StObject.set(x, "expandAllMatchPaths", js.undefined)
     
-    @scala.inline
-    def setExpandFocusMatchPaths(value: Boolean): Self = StObject.set(x, "expandFocusMatchPaths", value.asInstanceOf[js.Any])
+    inline def setExpandFocusMatchPaths(value: Boolean): Self = StObject.set(x, "expandFocusMatchPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandFocusMatchPathsUndefined: Self = StObject.set(x, "expandFocusMatchPaths", js.undefined)
+    inline def setExpandFocusMatchPathsUndefined: Self = StObject.set(x, "expandFocusMatchPaths", js.undefined)
     
-    @scala.inline
-    def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchFocusOffset(value: Double): Self = StObject.set(x, "searchFocusOffset", value.asInstanceOf[js.Any])
+    inline def setSearchFocusOffset(value: Double): Self = StObject.set(x, "searchFocusOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFocusOffsetUndefined: Self = StObject.set(x, "searchFocusOffset", js.undefined)
+    inline def setSearchFocusOffsetUndefined: Self = StObject.set(x, "searchFocusOffset", js.undefined)
     
-    @scala.inline
-    def setSearchMethod(value: SearchData => Boolean): Self = StObject.set(x, "searchMethod", js.Any.fromFunction1(value))
+    inline def setSearchMethod(value: SearchData => Boolean): Self = StObject.set(x, "searchMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchQuery(value: String | Double): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
+    inline def setSearchQuery(value: String | Double): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchQueryUndefined: Self = StObject.set(x, "searchQuery", js.undefined)
+    inline def setSearchQueryUndefined: Self = StObject.set(x, "searchQuery", js.undefined)
     
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+    inline def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+    inline def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

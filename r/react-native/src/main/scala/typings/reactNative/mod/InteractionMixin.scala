@@ -18,8 +18,7 @@ trait InteractionMixin extends StObject {
 }
 object InteractionMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearInteractionHandle: Double => Unit,
     createInteractionHandle: () => Double,
     runAfterInteractions: js.Function0[js.Any] => Unit
@@ -28,16 +27,12 @@ object InteractionMixin {
     __obj.asInstanceOf[InteractionMixin]
   }
   
-  @scala.inline
-  implicit class InteractionMixinMutableBuilder[Self <: InteractionMixin] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionMixin](x: Self) {
     
-    @scala.inline
-    def setClearInteractionHandle(value: Double => Unit): Self = StObject.set(x, "clearInteractionHandle", js.Any.fromFunction1(value))
+    inline def setClearInteractionHandle(value: Double => Unit): Self = StObject.set(x, "clearInteractionHandle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateInteractionHandle(value: () => Double): Self = StObject.set(x, "createInteractionHandle", js.Any.fromFunction0(value))
+    inline def setCreateInteractionHandle(value: () => Double): Self = StObject.set(x, "createInteractionHandle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRunAfterInteractions(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "runAfterInteractions", js.Any.fromFunction1(value))
+    inline def setRunAfterInteractions(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "runAfterInteractions", js.Any.fromFunction1(value))
   }
 }

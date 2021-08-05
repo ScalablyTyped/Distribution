@@ -13,22 +13,17 @@ trait S3SetObjectTaggingOperation extends StObject {
 }
 object S3SetObjectTaggingOperation {
   
-  @scala.inline
-  def apply(): S3SetObjectTaggingOperation = {
+  inline def apply(): S3SetObjectTaggingOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3SetObjectTaggingOperation]
   }
   
-  @scala.inline
-  implicit class S3SetObjectTaggingOperationMutableBuilder[Self <: S3SetObjectTaggingOperation] (val x: Self) extends AnyVal {
+  extension [Self <: S3SetObjectTaggingOperation](x: Self) {
     
-    @scala.inline
-    def setTagSet(value: S3TagSet): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
+    inline def setTagSet(value: S3TagSet): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSetUndefined: Self = StObject.set(x, "TagSet", js.undefined)
+    inline def setTagSetUndefined: Self = StObject.set(x, "TagSet", js.undefined)
     
-    @scala.inline
-    def setTagSetVarargs(value: S3Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
+    inline def setTagSetVarargs(value: S3Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
   }
 }

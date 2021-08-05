@@ -24,8 +24,7 @@ trait InteractionsSetRestrictionsForRepoEndpoint
 }
 object InteractionsSetRestrictionsForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     limit: existing_users | contributors_only | collaborators_only,
     mediaType: `0`[sombra],
     owner: String,
@@ -35,16 +34,12 @@ object InteractionsSetRestrictionsForRepoEndpoint {
     __obj.asInstanceOf[InteractionsSetRestrictionsForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class InteractionsSetRestrictionsForRepoEndpointMutableBuilder[Self <: InteractionsSetRestrictionsForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionsSetRestrictionsForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setLimit(value: existing_users | contributors_only | collaborators_only): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: existing_users | contributors_only | collaborators_only): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

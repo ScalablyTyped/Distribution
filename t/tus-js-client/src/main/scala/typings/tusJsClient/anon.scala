@@ -16,17 +16,14 @@ object anon {
   }
   object PickReadableStreamDefault {
     
-    @scala.inline
-    def apply(read: () => js.Promise[ReadableStreamReadResult[js.Any]]): PickReadableStreamDefault = {
+    inline def apply(read: () => js.Promise[ReadableStreamReadResult[js.Any]]): PickReadableStreamDefault = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read))
       __obj.asInstanceOf[PickReadableStreamDefault]
     }
     
-    @scala.inline
-    implicit class PickReadableStreamDefaultMutableBuilder[Self <: PickReadableStreamDefault] (val x: Self) extends AnyVal {
+    extension [Self <: PickReadableStreamDefault](x: Self) {
       
-      @scala.inline
-      def setRead(value: () => js.Promise[ReadableStreamReadResult[js.Any]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => js.Promise[ReadableStreamReadResult[js.Any]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     }
   }
 }

@@ -47,8 +47,7 @@ object mod {
       *
       * @returns An array of MarkdownCodeBlocks.
       */
-    @scala.inline
-    def findMarkdownCodeBlocks(text: String): js.Array[
+    inline def findMarkdownCodeBlocks(text: String): js.Array[
         typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findMarkdownCodeBlocks")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[
         typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
@@ -60,8 +59,7 @@ object mod {
       *
       * @returns true/false depending on whether this is a supported markdown extension
       */
-    @scala.inline
-    def isMarkdown(`extension`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdown")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isMarkdown(`extension`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdown")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object PageConfig {
@@ -98,36 +96,31 @@ object mod {
         *
         * @param id - The plugin ID.
         */
-      @scala.inline
-      def isDeferred(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isDeferred(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Returns whether a plugin is disabled.
         *
         * @param id - The plugin ID.
         */
-      @scala.inline
-      def isDisabled(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isDisabled(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */
-    @scala.inline
-    def getBaseUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseUrl")().asInstanceOf[String]
+    inline def getBaseUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseUrl")().asInstanceOf[String]
     
     /**
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
-    @scala.inline
-    def getNBConvertURL(hasPathFormatDownload: Download): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNBConvertURL")(hasPathFormatDownload.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getNBConvertURL(hasPathFormatDownload: Download): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNBConvertURL")(hasPathFormatDownload.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the Notebook version info [major, minor, patch].
       */
-    @scala.inline
-    def getNotebookVersion(): js.Tuple3[Double, Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotebookVersion")().asInstanceOf[js.Tuple3[Double, Double, Double]]
+    inline def getNotebookVersion(): js.Tuple3[Double, Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotebookVersion")().asInstanceOf[js.Tuple3[Double, Double, Double]]
     
     /**
       * Get global configuration data for the Jupyter application.
@@ -147,42 +140,35 @@ object mod {
       * with a `--jupyter-config-data` option pointing to a JSON settings
       * file.
       */
-    @scala.inline
-    def getOption(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getOption(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the base url for sharing links (usually baseUrl)
       */
-    @scala.inline
-    def getShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareUrl")().asInstanceOf[String]
+    inline def getShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareUrl")().asInstanceOf[String]
     
     /**
       * Get the authorization token for a Jupyter application.
       */
-    @scala.inline
-    def getToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[String]
+    inline def getToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[String]
     
     /**
       * Get the tree url for shareable links.
       * Usually the same as treeUrl,
       * but overrideable e.g. when sharing with JupyterHub.
       */
-    @scala.inline
-    def getTreeShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeShareUrl")().asInstanceOf[String]
+    inline def getTreeShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeShareUrl")().asInstanceOf[String]
     
     /**
       * Get the tree url for a JupyterLab application.
       */
-    @scala.inline
-    def getTreeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeUrl")().asInstanceOf[String]
+    inline def getTreeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeUrl")().asInstanceOf[String]
     
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
       */
-    @scala.inline
-    def getWsUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")().asInstanceOf[String]
-    @scala.inline
-    def getWsUrl(baseUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getWsUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")().asInstanceOf[String]
+    inline def getWsUrl(baseUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Set global configuration data for the Jupyter application.
@@ -192,8 +178,7 @@ object mod {
       *
       * @returns The last config value or an empty string if it doesn't exist.
       */
-    @scala.inline
-    def setOption(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def setOption(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object PathExt {
@@ -210,10 +195,8 @@ object mod {
       *
       * @param ext - An extension to remove from the result.
       */
-    @scala.inline
-    def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Get the directory name of a path, similar to the Unix dirname command.
@@ -221,8 +204,7 @@ object mod {
       *
       * @param path - The file path.
       */
-    @scala.inline
-    def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the extension of the path.
@@ -238,8 +220,7 @@ object mod {
       * character of the basename of path [[basename]] is `.`, then an
       * empty string is returned.
       */
-    @scala.inline
-    def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Join all arguments together and normalize the resulting path.
@@ -247,8 +228,7 @@ object mod {
       *
       * @param paths - The string paths to join.
       */
-    @scala.inline
-    def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalize a string path, reducing '..' and '.' parts.
@@ -257,8 +237,7 @@ object mod {
       *
       * @param path - The string path to normalize.
       */
-    @scala.inline
-    def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalize a file extension to be of the type `'.foo'`.
@@ -268,8 +247,7 @@ object mod {
       * #### Notes
       * Adds a leading dot if not present and converts to lower case.
       */
-    @scala.inline
-    def normalizeExtension(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalizeExtension(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Solve the relative path from {from} to {to}.
@@ -284,16 +262,14 @@ object mod {
       * If a zero-length string is passed as from or to, `/`
       * will be used instead of the zero-length strings.
       */
-    @scala.inline
-    def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove the leading slash from a path.
       *
       * @param path: the path from which to remove a leading slash.
       */
-    @scala.inline
-    def removeSlash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSlash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def removeSlash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSlash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Resolve a sequence of paths or path segments into an absolute path.
@@ -308,8 +284,7 @@ object mod {
       *
       * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
-    @scala.inline
-    def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object Text {
@@ -329,10 +304,8 @@ object mod {
       *
       * @returns the camel case version of the input string.
       */
-    @scala.inline
-    def camelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def camelCase(str: String, upper: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def camelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def camelCase(str: String, upper: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a unicode character offset to a javascript string index.
@@ -343,8 +316,7 @@ object mod {
       *
       * @returns The js-native index
       */
-    @scala.inline
-    def charIndexToJsIndex(charIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("charIndexToJsIndex")(charIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def charIndexToJsIndex(charIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("charIndexToJsIndex")(charIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Convert a javascript string index into a unicode character offset
@@ -355,8 +327,7 @@ object mod {
       *
       * @returns The unicode character offset
       */
-    @scala.inline
-    def jsIndexToCharIndex(jsIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jsIndexToCharIndex")(jsIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def jsIndexToCharIndex(jsIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jsIndexToCharIndex")(jsIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Given a string, title case the words in the string.
@@ -365,8 +336,7 @@ object mod {
       *
       * @returns the same string, but with each word capitalized.
       */
-    @scala.inline
-    def titleCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def titleCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object Time {
@@ -384,14 +354,10 @@ object mod {
       *
       * @returns A formatted date.
       */
-    @scala.inline
-    def format(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def format(value: String, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def format(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def format(value: Date, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(value: String, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(value: Date, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a timestring to a human readable string (e.g. 'two minutes ago').
@@ -400,10 +366,8 @@ object mod {
       *
       * @returns A formatted date.
       */
-    @scala.inline
-    def formatHuman(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def formatHuman(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def formatHuman(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def formatHuman(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object URLExt {
@@ -423,8 +387,7 @@ object mod {
       * Preserves the `'/'` separators.
       * Should not include the base url, since all parts are escaped.
       */
-    @scala.inline
-    def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Test whether the url is a local url.
@@ -433,8 +396,7 @@ object mod {
       * This function returns `false` for any fully qualified url, including
       * `data:`, `file:`, and `//` protocol URLs.
       */
-    @scala.inline
-    def isLocal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLocal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Join a sequence of url components and normalizes as in node `path.join`.
@@ -443,21 +405,16 @@ object mod {
       *
       * @returns the joined url.
       */
-    @scala.inline
-    def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
+    inline def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
     /**
       * Normalize a url.
       */
-    @scala.inline
-    def normalize(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def normalize(url: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def normalize(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalize(url: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def normalize_Union(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def normalize_Union(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /**
       * Return a serialized object string suitable for a query.
@@ -469,8 +426,7 @@ object mod {
       * #### Notes
       * Modified version of [stackoverflow](http://stackoverflow.com/a/30707423).
       */
-    @scala.inline
-    def objectToQueryString(value: PartialJSONObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def objectToQueryString(value: PartialJSONObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parse a url into a URL object.
@@ -479,13 +435,11 @@ object mod {
       *
       * @returns A URL object.
       */
-    @scala.inline
-    def parse(url: String): IUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[IUrl]
+    inline def parse(url: String): IUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[IUrl]
     
     /**
       * Return a parsed object that represents the values in a query string.
       */
-    @scala.inline
-    def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(value.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String]]]
+    inline def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(value.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String]]]
   }
 }

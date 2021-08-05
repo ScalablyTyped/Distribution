@@ -45,20 +45,16 @@ object mod extends Shortcut {
   }
   object RandInstance {
     
-    @scala.inline
-    def apply(generate: Double => Buffer | Uint8Array, rand: rand): RandInstance = {
+    inline def apply(generate: Double => Buffer | Uint8Array, rand: rand): RandInstance = {
       val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), rand = rand.asInstanceOf[js.Any])
       __obj.asInstanceOf[RandInstance]
     }
     
-    @scala.inline
-    implicit class RandInstanceMutableBuilder[Self <: RandInstance] (val x: Self) extends AnyVal {
+    extension [Self <: RandInstance](x: Self) {
       
-      @scala.inline
-      def setGenerate(value: Double => Buffer | Uint8Array): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+      inline def setGenerate(value: Double => Buffer | Uint8Array): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRand(value: rand): Self = StObject.set(x, "rand", value.asInstanceOf[js.Any])
+      inline def setRand(value: rand): Self = StObject.set(x, "rand", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,17 +74,14 @@ object mod extends Shortcut {
   }
   object rand {
     
-    @scala.inline
-    def apply(getByte: () => Double): rand = {
+    inline def apply(getByte: () => Double): rand = {
       val __obj = js.Dynamic.literal(getByte = js.Any.fromFunction0(getByte))
       __obj.asInstanceOf[rand]
     }
     
-    @scala.inline
-    implicit class randMutableBuilder[Self <: rand] (val x: Self) extends AnyVal {
+    extension [Self <: rand](x: Self) {
       
-      @scala.inline
-      def setGetByte(value: () => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction0(value))
+      inline def setGetByte(value: () => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction0(value))
     }
   }
 }

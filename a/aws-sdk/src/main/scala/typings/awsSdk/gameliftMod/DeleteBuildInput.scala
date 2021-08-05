@@ -13,16 +13,13 @@ trait DeleteBuildInput extends StObject {
 }
 object DeleteBuildInput {
   
-  @scala.inline
-  def apply(BuildId: BuildIdOrArn): DeleteBuildInput = {
+  inline def apply(BuildId: BuildIdOrArn): DeleteBuildInput = {
     val __obj = js.Dynamic.literal(BuildId = BuildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBuildInput]
   }
   
-  @scala.inline
-  implicit class DeleteBuildInputMutableBuilder[Self <: DeleteBuildInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBuildInput](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
   }
 }

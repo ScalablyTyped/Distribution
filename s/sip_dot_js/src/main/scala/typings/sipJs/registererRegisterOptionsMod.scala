@@ -18,26 +18,20 @@ object registererRegisterOptionsMod {
   }
   object RegistererRegisterOptions {
     
-    @scala.inline
-    def apply(): RegistererRegisterOptions = {
+    inline def apply(): RegistererRegisterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegistererRegisterOptions]
     }
     
-    @scala.inline
-    implicit class RegistererRegisterOptionsMutableBuilder[Self <: RegistererRegisterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegistererRegisterOptions](x: Self) {
       
-      @scala.inline
-      def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
+      inline def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDelegateUndefined: Self = StObject.set(x, "requestDelegate", js.undefined)
+      inline def setRequestDelegateUndefined: Self = StObject.set(x, "requestDelegate", js.undefined)
       
-      @scala.inline
-      def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+      inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+      inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     }
   }
 }

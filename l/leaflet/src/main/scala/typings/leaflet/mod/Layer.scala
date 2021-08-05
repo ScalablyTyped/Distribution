@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Layer () extends Evented {
   def this(options: LayerOptions) = this()
   
-  var _map: Map_ = js.native
+  /* protected */ var _map: Map_ = js.native
   
   def addTo(map: LayerGroup_[js.Any]): this.type = js.native
   def addTo(map: Map_): this.type = js.native

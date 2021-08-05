@@ -14,31 +14,23 @@ trait ClusterLoggingInfoBrokerLogs extends StObject {
 }
 object ClusterLoggingInfoBrokerLogs {
   
-  @scala.inline
-  def apply(): ClusterLoggingInfoBrokerLogs = {
+  inline def apply(): ClusterLoggingInfoBrokerLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterLoggingInfoBrokerLogs]
   }
   
-  @scala.inline
-  implicit class ClusterLoggingInfoBrokerLogsMutableBuilder[Self <: ClusterLoggingInfoBrokerLogs] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterLoggingInfoBrokerLogs](x: Self) {
     
-    @scala.inline
-    def setCloudwatchLogs(value: ClusterLoggingInfoBrokerLogsCloudwatchLogs): Self = StObject.set(x, "cloudwatchLogs", value.asInstanceOf[js.Any])
+    inline def setCloudwatchLogs(value: ClusterLoggingInfoBrokerLogsCloudwatchLogs): Self = StObject.set(x, "cloudwatchLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchLogsUndefined: Self = StObject.set(x, "cloudwatchLogs", js.undefined)
+    inline def setCloudwatchLogsUndefined: Self = StObject.set(x, "cloudwatchLogs", js.undefined)
     
-    @scala.inline
-    def setFirehose(value: ClusterLoggingInfoBrokerLogsFirehose): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
+    inline def setFirehose(value: ClusterLoggingInfoBrokerLogsFirehose): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
+    inline def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
     
-    @scala.inline
-    def setS3(value: ClusterLoggingInfoBrokerLogsS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: ClusterLoggingInfoBrokerLogsS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
   }
 }

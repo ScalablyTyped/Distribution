@@ -12,8 +12,7 @@ trait ResultBuilder[R /* <: QueryResultRow */]
 }
 object ResultBuilder {
   
-  @scala.inline
-  def apply[R /* <: QueryResultRow */](
+  inline def apply[R /* <: QueryResultRow */](
     addRow: R => Unit,
     command: String,
     fields: js.Array[FieldDef],
@@ -25,10 +24,8 @@ object ResultBuilder {
     __obj.asInstanceOf[ResultBuilder[R]]
   }
   
-  @scala.inline
-  implicit class ResultBuilderMutableBuilder[Self <: ResultBuilder[?], R /* <: QueryResultRow */] (val x: Self & ResultBuilder[R]) extends AnyVal {
+  extension [Self <: ResultBuilder[?], R /* <: QueryResultRow */](x: Self & ResultBuilder[R]) {
     
-    @scala.inline
-    def setAddRow(value: R => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
+    inline def setAddRow(value: R => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
   }
 }

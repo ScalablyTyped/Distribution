@@ -13,16 +13,13 @@ trait GetInsightSelectorsRequest extends StObject {
 }
 object GetInsightSelectorsRequest {
   
-  @scala.inline
-  def apply(TrailName: String): GetInsightSelectorsRequest = {
+  inline def apply(TrailName: String): GetInsightSelectorsRequest = {
     val __obj = js.Dynamic.literal(TrailName = TrailName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightSelectorsRequest]
   }
   
-  @scala.inline
-  implicit class GetInsightSelectorsRequestMutableBuilder[Self <: GetInsightSelectorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightSelectorsRequest](x: Self) {
     
-    @scala.inline
-    def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
+    inline def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
   }
 }

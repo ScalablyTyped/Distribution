@@ -47,61 +47,43 @@ trait IRestProxy
 }
 object IRestProxy {
   
-  @scala.inline
-  def apply(): IRestProxy = {
+  inline def apply(): IRestProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRestProxy]
   }
   
-  @scala.inline
-  implicit class IRestProxyMutableBuilder[Self <: IRestProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IRestProxy](x: Self) {
     
-    @scala.inline
-    def setAppendId(value: Boolean): Self = StObject.set(x, "appendId", value.asInstanceOf[js.Any])
+    inline def setAppendId(value: Boolean): Self = StObject.set(x, "appendId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendIdUndefined: Self = StObject.set(x, "appendId", js.undefined)
+    inline def setAppendIdUndefined: Self = StObject.set(x, "appendId", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setGetActionMethods(value: () => js.Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
+    inline def setGetActionMethods(value: () => js.Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActionMethodsUndefined: Self = StObject.set(x, "getActionMethods", js.undefined)
+    inline def setGetActionMethodsUndefined: Self = StObject.set(x, "getActionMethods", js.undefined)
     
-    @scala.inline
-    def setGetAppendId(value: () => Boolean): Self = StObject.set(x, "getAppendId", js.Any.fromFunction0(value))
+    inline def setGetAppendId(value: () => Boolean): Self = StObject.set(x, "getAppendId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAppendIdUndefined: Self = StObject.set(x, "getAppendId", js.undefined)
+    inline def setGetAppendIdUndefined: Self = StObject.set(x, "getAppendId", js.undefined)
     
-    @scala.inline
-    def setGetFormat(value: () => String): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
+    inline def setGetFormat(value: () => String): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormatUndefined: Self = StObject.set(x, "getFormat", js.undefined)
+    inline def setGetFormatUndefined: Self = StObject.set(x, "getFormat", js.undefined)
     
-    @scala.inline
-    def setSetActionMethods(value: /* actionMethods */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActionMethods", js.Any.fromFunction1(value))
+    inline def setSetActionMethods(value: /* actionMethods */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActionMethods", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActionMethodsUndefined: Self = StObject.set(x, "setActionMethods", js.undefined)
+    inline def setSetActionMethodsUndefined: Self = StObject.set(x, "setActionMethods", js.undefined)
     
-    @scala.inline
-    def setSetAppendId(value: /* appendId */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAppendId", js.Any.fromFunction1(value))
+    inline def setSetAppendId(value: /* appendId */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAppendId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAppendIdUndefined: Self = StObject.set(x, "setAppendId", js.undefined)
+    inline def setSetAppendIdUndefined: Self = StObject.set(x, "setAppendId", js.undefined)
     
-    @scala.inline
-    def setSetFormat(value: /* format */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFormat", js.Any.fromFunction1(value))
+    inline def setSetFormat(value: /* format */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFormatUndefined: Self = StObject.set(x, "setFormat", js.undefined)
+    inline def setSetFormatUndefined: Self = StObject.set(x, "setFormat", js.undefined)
   }
 }

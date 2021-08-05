@@ -207,6 +207,6 @@ trait Global extends StObject {
   
   val WordBasic: js.Any = js.native
   
-  @JSName("Word.Global_typekey")
+  /* private */ @JSName("Word.Global_typekey")
   var WordDotGlobal_typekey: Global = js.native
 }

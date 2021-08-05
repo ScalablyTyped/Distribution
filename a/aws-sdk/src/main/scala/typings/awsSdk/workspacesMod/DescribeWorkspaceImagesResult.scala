@@ -18,28 +18,21 @@ trait DescribeWorkspaceImagesResult extends StObject {
 }
 object DescribeWorkspaceImagesResult {
   
-  @scala.inline
-  def apply(): DescribeWorkspaceImagesResult = {
+  inline def apply(): DescribeWorkspaceImagesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspaceImagesResult]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceImagesResultMutableBuilder[Self <: DescribeWorkspaceImagesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceImagesResult](x: Self) {
     
-    @scala.inline
-    def setImages(value: WorkspaceImageList): Self = StObject.set(x, "Images", value.asInstanceOf[js.Any])
+    inline def setImages(value: WorkspaceImageList): Self = StObject.set(x, "Images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "Images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "Images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: WorkspaceImage*): Self = StObject.set(x, "Images", js.Array(value :_*))
+    inline def setImagesVarargs(value: WorkspaceImage*): Self = StObject.set(x, "Images", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

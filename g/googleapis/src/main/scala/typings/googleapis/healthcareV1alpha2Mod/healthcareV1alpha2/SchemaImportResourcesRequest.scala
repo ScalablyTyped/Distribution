@@ -36,31 +36,23 @@ trait SchemaImportResourcesRequest extends StObject {
 }
 object SchemaImportResourcesRequest {
   
-  @scala.inline
-  def apply(): SchemaImportResourcesRequest = {
+  inline def apply(): SchemaImportResourcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportResourcesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaImportResourcesRequestMutableBuilder[Self <: SchemaImportResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
+    inline def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
+    inline def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
     
-    @scala.inline
-    def setGcsErrorDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestination): Self = StObject.set(x, "gcsErrorDestination", value.asInstanceOf[js.Any])
+    inline def setGcsErrorDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsErrorDestination): Self = StObject.set(x, "gcsErrorDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsErrorDestinationUndefined: Self = StObject.set(x, "gcsErrorDestination", js.undefined)
+    inline def setGcsErrorDestinationUndefined: Self = StObject.set(x, "gcsErrorDestination", js.undefined)
     
-    @scala.inline
-    def setGcsSource(value: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

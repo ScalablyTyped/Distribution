@@ -28,28 +28,21 @@ trait CreatePackageRequest extends StObject {
 }
 object CreatePackageRequest {
   
-  @scala.inline
-  def apply(PackageName: PackageName, PackageSource: PackageSource, PackageType: PackageType): CreatePackageRequest = {
+  inline def apply(PackageName: PackageName, PackageSource: PackageSource, PackageType: PackageType): CreatePackageRequest = {
     val __obj = js.Dynamic.literal(PackageName = PackageName.asInstanceOf[js.Any], PackageSource = PackageSource.asInstanceOf[js.Any], PackageType = PackageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePackageRequest]
   }
   
-  @scala.inline
-  implicit class CreatePackageRequestMutableBuilder[Self <: CreatePackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePackageRequest](x: Self) {
     
-    @scala.inline
-    def setPackageDescription(value: PackageDescription): Self = StObject.set(x, "PackageDescription", value.asInstanceOf[js.Any])
+    inline def setPackageDescription(value: PackageDescription): Self = StObject.set(x, "PackageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageDescriptionUndefined: Self = StObject.set(x, "PackageDescription", js.undefined)
+    inline def setPackageDescriptionUndefined: Self = StObject.set(x, "PackageDescription", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: PackageName): Self = StObject.set(x, "PackageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: PackageName): Self = StObject.set(x, "PackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageSource(value: PackageSource): Self = StObject.set(x, "PackageSource", value.asInstanceOf[js.Any])
+    inline def setPackageSource(value: PackageSource): Self = StObject.set(x, "PackageSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageType(value: PackageType): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
+    inline def setPackageType(value: PackageType): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
   }
 }

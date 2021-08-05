@@ -52,19 +52,15 @@ trait BlobSource extends StObject {
 }
 object BlobSource {
   
-  @scala.inline
-  def apply(getAs: String => Blob, getBlob: () => Blob): BlobSource = {
+  inline def apply(getAs: String => Blob, getBlob: () => Blob): BlobSource = {
     val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob))
     __obj.asInstanceOf[BlobSource]
   }
   
-  @scala.inline
-  implicit class BlobSourceMutableBuilder[Self <: BlobSource] (val x: Self) extends AnyVal {
+  extension [Self <: BlobSource](x: Self) {
     
-    @scala.inline
-    def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+    inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+    inline def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
   }
 }

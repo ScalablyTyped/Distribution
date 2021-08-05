@@ -43,8 +43,7 @@ trait PatchComplianceData extends StObject {
 }
 object PatchComplianceData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: PatchClassification,
     InstalledTime: DateTime,
     KBId: PatchKbNumber,
@@ -56,31 +55,22 @@ object PatchComplianceData {
     __obj.asInstanceOf[PatchComplianceData]
   }
   
-  @scala.inline
-  implicit class PatchComplianceDataMutableBuilder[Self <: PatchComplianceData] (val x: Self) extends AnyVal {
+  extension [Self <: PatchComplianceData](x: Self) {
     
-    @scala.inline
-    def setCVEIds(value: PatchCVEIds): Self = StObject.set(x, "CVEIds", value.asInstanceOf[js.Any])
+    inline def setCVEIds(value: PatchCVEIds): Self = StObject.set(x, "CVEIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCVEIdsUndefined: Self = StObject.set(x, "CVEIds", js.undefined)
+    inline def setCVEIdsUndefined: Self = StObject.set(x, "CVEIds", js.undefined)
     
-    @scala.inline
-    def setClassification(value: PatchClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: PatchClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledTime(value: DateTime): Self = StObject.set(x, "InstalledTime", value.asInstanceOf[js.Any])
+    inline def setInstalledTime(value: DateTime): Self = StObject.set(x, "InstalledTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKBId(value: PatchKbNumber): Self = StObject.set(x, "KBId", value.asInstanceOf[js.Any])
+    inline def setKBId(value: PatchKbNumber): Self = StObject.set(x, "KBId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverity(value: PatchSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: PatchSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: PatchComplianceDataState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: PatchComplianceDataState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: PatchTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: PatchTitle): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

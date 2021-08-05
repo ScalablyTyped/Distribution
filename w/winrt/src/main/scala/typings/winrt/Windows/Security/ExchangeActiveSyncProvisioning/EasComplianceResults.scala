@@ -9,8 +9,7 @@ trait EasComplianceResults
      with IEasComplianceResults
 object EasComplianceResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compliant: Boolean,
     disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult,
     maxInactivityTimeLockResult: EasMaxInactivityTimeLockResult,

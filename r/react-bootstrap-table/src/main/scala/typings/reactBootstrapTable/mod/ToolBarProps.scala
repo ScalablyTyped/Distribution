@@ -20,19 +20,15 @@ trait ToolBarProps extends StObject {
 }
 object ToolBarProps {
   
-  @scala.inline
-  def apply(components: ButtonGroupPropssearchPan, event: CloseInsertModal): ToolBarProps = {
+  inline def apply(components: ButtonGroupPropssearchPan, event: CloseInsertModal): ToolBarProps = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarProps]
   }
   
-  @scala.inline
-  implicit class ToolBarPropsMutableBuilder[Self <: ToolBarProps] (val x: Self) extends AnyVal {
+  extension [Self <: ToolBarProps](x: Self) {
     
-    @scala.inline
-    def setComponents(value: ButtonGroupPropssearchPan): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: ButtonGroupPropssearchPan): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: CloseInsertModal): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: CloseInsertModal): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

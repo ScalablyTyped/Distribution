@@ -35,8 +35,7 @@ trait IErrorCodes extends StObject {
 }
 object IErrorCodes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BadRequest: Double,
     Conflict: Double,
     Forbidden: Double,
@@ -50,31 +49,22 @@ object IErrorCodes {
     __obj.asInstanceOf[IErrorCodes]
   }
   
-  @scala.inline
-  implicit class IErrorCodesMutableBuilder[Self <: IErrorCodes] (val x: Self) extends AnyVal {
+  extension [Self <: IErrorCodes](x: Self) {
     
-    @scala.inline
-    def setBadRequest(value: Double): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
+    inline def setBadRequest(value: Double): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflict(value: Double): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
+    inline def setConflict(value: Double): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForbidden(value: Double): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
+    inline def setForbidden(value: Double): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalServerError(value: Double): Self = StObject.set(x, "InternalServerError", value.asInstanceOf[js.Any])
+    inline def setInternalServerError(value: Double): Self = StObject.set(x, "InternalServerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFound(value: Double): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: Double): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreconditionFailed(value: Double): Self = StObject.set(x, "PreconditionFailed", value.asInstanceOf[js.Any])
+    inline def setPreconditionFailed(value: Double): Self = StObject.set(x, "PreconditionFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestEntityTooLarge(value: Double): Self = StObject.set(x, "RequestEntityTooLarge", value.asInstanceOf[js.Any])
+    inline def setRequestEntityTooLarge(value: Double): Self = StObject.set(x, "RequestEntityTooLarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryWith(value: Double): Self = StObject.set(x, "RetryWith", value.asInstanceOf[js.Any])
+    inline def setRetryWith(value: Double): Self = StObject.set(x, "RetryWith", value.asInstanceOf[js.Any])
   }
 }

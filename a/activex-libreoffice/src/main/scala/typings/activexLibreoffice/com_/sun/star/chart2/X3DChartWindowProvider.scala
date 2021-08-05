@@ -10,16 +10,13 @@ trait X3DChartWindowProvider extends StObject {
 }
 object X3DChartWindowProvider {
   
-  @scala.inline
-  def apply(setWindow: Double => Unit): X3DChartWindowProvider = {
+  inline def apply(setWindow: Double => Unit): X3DChartWindowProvider = {
     val __obj = js.Dynamic.literal(setWindow = js.Any.fromFunction1(setWindow))
     __obj.asInstanceOf[X3DChartWindowProvider]
   }
   
-  @scala.inline
-  implicit class X3DChartWindowProviderMutableBuilder[Self <: X3DChartWindowProvider] (val x: Self) extends AnyVal {
+  extension [Self <: X3DChartWindowProvider](x: Self) {
     
-    @scala.inline
-    def setSetWindow(value: Double => Unit): Self = StObject.set(x, "setWindow", js.Any.fromFunction1(value))
+    inline def setSetWindow(value: Double => Unit): Self = StObject.set(x, "setWindow", js.Any.fromFunction1(value))
   }
 }

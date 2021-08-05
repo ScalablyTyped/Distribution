@@ -28,73 +28,51 @@ trait IDropdownMenuOptions extends StObject {
 }
 object IDropdownMenuOptions {
   
-  @scala.inline
-  def apply(): IDropdownMenuOptions = {
+  inline def apply(): IDropdownMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDropdownMenuOptions]
   }
   
-  @scala.inline
-  implicit class IDropdownMenuOptionsMutableBuilder[Self <: IDropdownMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDropdownMenuOptions](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
+    inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
+    inline def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
-    @scala.inline
-    def setClickOpen(value: Boolean): Self = StObject.set(x, "clickOpen", value.asInstanceOf[js.Any])
+    inline def setClickOpen(value: Boolean): Self = StObject.set(x, "clickOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickOpenUndefined: Self = StObject.set(x, "clickOpen", js.undefined)
+    inline def setClickOpenUndefined: Self = StObject.set(x, "clickOpen", js.undefined)
     
-    @scala.inline
-    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+    inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
-    @scala.inline
-    def setClosingTime(value: Double): Self = StObject.set(x, "closingTime", value.asInstanceOf[js.Any])
+    inline def setClosingTime(value: Double): Self = StObject.set(x, "closingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosingTimeUndefined: Self = StObject.set(x, "closingTime", js.undefined)
+    inline def setClosingTimeUndefined: Self = StObject.set(x, "closingTime", js.undefined)
     
-    @scala.inline
-    def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
+    inline def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
+    inline def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
     
-    @scala.inline
-    def setForceFollow(value: Boolean): Self = StObject.set(x, "forceFollow", value.asInstanceOf[js.Any])
+    inline def setForceFollow(value: Boolean): Self = StObject.set(x, "forceFollow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceFollowUndefined: Self = StObject.set(x, "forceFollow", js.undefined)
+    inline def setForceFollowUndefined: Self = StObject.set(x, "forceFollow", js.undefined)
     
-    @scala.inline
-    def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
+    inline def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
+    inline def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
     
-    @scala.inline
-    def setRightClass(value: String): Self = StObject.set(x, "rightClass", value.asInstanceOf[js.Any])
+    inline def setRightClass(value: String): Self = StObject.set(x, "rightClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightClassUndefined: Self = StObject.set(x, "rightClass", js.undefined)
+    inline def setRightClassUndefined: Self = StObject.set(x, "rightClass", js.undefined)
     
-    @scala.inline
-    def setVerticalClass(value: String): Self = StObject.set(x, "verticalClass", value.asInstanceOf[js.Any])
+    inline def setVerticalClass(value: String): Self = StObject.set(x, "verticalClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalClassUndefined: Self = StObject.set(x, "verticalClass", js.undefined)
+    inline def setVerticalClassUndefined: Self = StObject.set(x, "verticalClass", js.undefined)
   }
 }

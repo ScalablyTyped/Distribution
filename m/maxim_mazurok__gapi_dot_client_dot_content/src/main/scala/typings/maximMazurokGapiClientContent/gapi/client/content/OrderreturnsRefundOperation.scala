@@ -26,43 +26,31 @@ trait OrderreturnsRefundOperation extends StObject {
 }
 object OrderreturnsRefundOperation {
   
-  @scala.inline
-  def apply(): OrderreturnsRefundOperation = {
+  inline def apply(): OrderreturnsRefundOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderreturnsRefundOperation]
   }
   
-  @scala.inline
-  implicit class OrderreturnsRefundOperationMutableBuilder[Self <: OrderreturnsRefundOperation] (val x: Self) extends AnyVal {
+  extension [Self <: OrderreturnsRefundOperation](x: Self) {
     
-    @scala.inline
-    def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
+    inline def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
+    inline def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
     
-    @scala.inline
-    def setPartialRefund(value: OrderreturnsPartialRefund): Self = StObject.set(x, "partialRefund", value.asInstanceOf[js.Any])
+    inline def setPartialRefund(value: OrderreturnsPartialRefund): Self = StObject.set(x, "partialRefund", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialRefundUndefined: Self = StObject.set(x, "partialRefund", js.undefined)
+    inline def setPartialRefundUndefined: Self = StObject.set(x, "partialRefund", js.undefined)
     
-    @scala.inline
-    def setPaymentType(value: String): Self = StObject.set(x, "paymentType", value.asInstanceOf[js.Any])
+    inline def setPaymentType(value: String): Self = StObject.set(x, "paymentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentTypeUndefined: Self = StObject.set(x, "paymentType", js.undefined)
+    inline def setPaymentTypeUndefined: Self = StObject.set(x, "paymentType", js.undefined)
     
-    @scala.inline
-    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
+    inline def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
+    inline def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
-    @scala.inline
-    def setReturnRefundReason(value: String): Self = StObject.set(x, "returnRefundReason", value.asInstanceOf[js.Any])
+    inline def setReturnRefundReason(value: String): Self = StObject.set(x, "returnRefundReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnRefundReasonUndefined: Self = StObject.set(x, "returnRefundReason", js.undefined)
+    inline def setReturnRefundReasonUndefined: Self = StObject.set(x, "returnRefundReason", js.undefined)
   }
 }

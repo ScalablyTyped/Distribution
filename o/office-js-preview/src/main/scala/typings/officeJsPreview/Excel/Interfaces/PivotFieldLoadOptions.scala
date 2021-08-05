@@ -52,43 +52,31 @@ trait PivotFieldLoadOptions extends StObject {
 }
 object PivotFieldLoadOptions {
   
-  @scala.inline
-  def apply(): PivotFieldLoadOptions = {
+  inline def apply(): PivotFieldLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotFieldLoadOptions]
   }
   
-  @scala.inline
-  implicit class PivotFieldLoadOptionsMutableBuilder[Self <: PivotFieldLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotFieldLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setShowAllItems(value: Boolean): Self = StObject.set(x, "showAllItems", value.asInstanceOf[js.Any])
+    inline def setShowAllItems(value: Boolean): Self = StObject.set(x, "showAllItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAllItemsUndefined: Self = StObject.set(x, "showAllItems", js.undefined)
+    inline def setShowAllItemsUndefined: Self = StObject.set(x, "showAllItems", js.undefined)
     
-    @scala.inline
-    def setSubtotals(value: Boolean): Self = StObject.set(x, "subtotals", value.asInstanceOf[js.Any])
+    inline def setSubtotals(value: Boolean): Self = StObject.set(x, "subtotals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotalsUndefined: Self = StObject.set(x, "subtotals", js.undefined)
+    inline def setSubtotalsUndefined: Self = StObject.set(x, "subtotals", js.undefined)
   }
 }

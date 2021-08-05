@@ -14,15 +14,14 @@ trait Corners extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Corners_typekey")
+  /* private */ @JSName("PowerPoint.Corners_typekey")
   var PowerPointDotCorners_typekey: Corners
   
   def Select(): js.Any
 }
 object Corners {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Name: String,
@@ -35,25 +34,18 @@ object Corners {
     __obj.asInstanceOf[Corners]
   }
   
-  @scala.inline
-  implicit class CornersMutableBuilder[Self <: Corners] (val x: Self) extends AnyVal {
+  extension [Self <: Corners](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotCorners_typekey(value: Corners): Self = StObject.set(x, "PowerPoint.Corners_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotCorners_typekey(value: Corners): Self = StObject.set(x, "PowerPoint.Corners_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

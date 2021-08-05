@@ -81,111 +81,75 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleWebkitAppearance extends StObject
 object styleWebkitAppearance {
   
-  @scala.inline
-  def styleWebkitAppearanceButton: `2` = 2.asInstanceOf[`2`]
+  inline def styleWebkitAppearanceButton: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleWebkitAppearanceButtonBevel: `3` = 3.asInstanceOf[`3`]
+  inline def styleWebkitAppearanceButtonBevel: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleWebkitAppearanceCapsLockIndicator: `1` = 1.asInstanceOf[`1`]
+  inline def styleWebkitAppearanceCapsLockIndicator: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleWebkitAppearanceCaret: `4` = 4.asInstanceOf[`4`]
+  inline def styleWebkitAppearanceCaret: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleWebkitAppearanceCheckbox: `5` = 5.asInstanceOf[`5`]
+  inline def styleWebkitAppearanceCheckbox: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def styleWebkitAppearanceDefaultButton: `6` = 6.asInstanceOf[`6`]
+  inline def styleWebkitAppearanceDefaultButton: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def styleWebkitAppearanceListbox: `7` = 7.asInstanceOf[`7`]
+  inline def styleWebkitAppearanceListbox: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def styleWebkitAppearanceListitem: `8` = 8.asInstanceOf[`8`]
+  inline def styleWebkitAppearanceListitem: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def styleWebkitAppearanceMediaFullscreenButton: `9` = 9.asInstanceOf[`9`]
+  inline def styleWebkitAppearanceMediaFullscreenButton: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def styleWebkitAppearanceMediaMuteButton: `10` = 10.asInstanceOf[`10`]
+  inline def styleWebkitAppearanceMediaMuteButton: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def styleWebkitAppearanceMediaPlayButton: `11` = 11.asInstanceOf[`11`]
+  inline def styleWebkitAppearanceMediaPlayButton: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def styleWebkitAppearanceMediaSeekBackButton: `12` = 12.asInstanceOf[`12`]
+  inline def styleWebkitAppearanceMediaSeekBackButton: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def styleWebkitAppearanceMediaSeekForwardButton: `13` = 13.asInstanceOf[`13`]
+  inline def styleWebkitAppearanceMediaSeekForwardButton: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def styleWebkitAppearanceMediaSlider: `14` = 14.asInstanceOf[`14`]
+  inline def styleWebkitAppearanceMediaSlider: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def styleWebkitAppearanceMediaSliderthumb: `15` = 15.asInstanceOf[`15`]
+  inline def styleWebkitAppearanceMediaSliderthumb: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def styleWebkitAppearanceMenulist: `16` = 16.asInstanceOf[`16`]
+  inline def styleWebkitAppearanceMenulist: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def styleWebkitAppearanceMenulistButton: `17` = 17.asInstanceOf[`17`]
+  inline def styleWebkitAppearanceMenulistButton: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def styleWebkitAppearanceMenulistText: `18` = 18.asInstanceOf[`18`]
+  inline def styleWebkitAppearanceMenulistText: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def styleWebkitAppearanceMenulistTextfield: `19` = 19.asInstanceOf[`19`]
+  inline def styleWebkitAppearanceMenulistTextfield: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def styleWebkitAppearanceNone: `0` = 0.asInstanceOf[`0`]
+  inline def styleWebkitAppearanceNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleWebkitAppearanceNotSet: `34` = 34.asInstanceOf[`34`]
+  inline def styleWebkitAppearanceNotSet: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def styleWebkitAppearancePushButton: `20` = 20.asInstanceOf[`20`]
+  inline def styleWebkitAppearancePushButton: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def styleWebkitAppearanceRadio: `21` = 21.asInstanceOf[`21`]
+  inline def styleWebkitAppearanceRadio: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def styleWebkitAppearanceSearchfield: `22` = 22.asInstanceOf[`22`]
+  inline def styleWebkitAppearanceSearchfield: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def styleWebkitAppearanceSearchfieldCancelButton: `23` = 23.asInstanceOf[`23`]
+  inline def styleWebkitAppearanceSearchfieldCancelButton: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def styleWebkitAppearanceSearchfieldDecoration: `24` = 24.asInstanceOf[`24`]
+  inline def styleWebkitAppearanceSearchfieldDecoration: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def styleWebkitAppearanceSearchfieldResultsButton: `25` = 25.asInstanceOf[`25`]
+  inline def styleWebkitAppearanceSearchfieldResultsButton: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def styleWebkitAppearanceSearchfieldResultsDecoration: `26` = 26.asInstanceOf[`26`]
+  inline def styleWebkitAppearanceSearchfieldResultsDecoration: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def styleWebkitAppearanceSliderHorizontal: `27` = 27.asInstanceOf[`27`]
+  inline def styleWebkitAppearanceSliderHorizontal: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def styleWebkitAppearanceSliderVertical: `28` = 28.asInstanceOf[`28`]
+  inline def styleWebkitAppearanceSliderVertical: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def styleWebkitAppearanceSliderthumbHorizontal: `29` = 29.asInstanceOf[`29`]
+  inline def styleWebkitAppearanceSliderthumbHorizontal: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def styleWebkitAppearanceSliderthumbVertical: `30` = 30.asInstanceOf[`30`]
+  inline def styleWebkitAppearanceSliderthumbVertical: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def styleWebkitAppearanceSquareButton: `31` = 31.asInstanceOf[`31`]
+  inline def styleWebkitAppearanceSquareButton: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def styleWebkitAppearanceTextarea: `32` = 32.asInstanceOf[`32`]
+  inline def styleWebkitAppearanceTextarea: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def styleWebkitAppearanceTextfield: `33` = 33.asInstanceOf[`33`]
+  inline def styleWebkitAppearanceTextfield: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def styleWebkitAppearance_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleWebkitAppearance_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

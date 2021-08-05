@@ -23,40 +23,29 @@ trait Content extends StObject {
 }
 object Content {
   
-  @scala.inline
-  def apply(): Content = {
+  inline def apply(): Content = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Content]
   }
   
-  @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+  extension [Self <: Content](x: Self) {
     
-    @scala.inline
-    def setAudioList(value: AudioList): Self = StObject.set(x, "AudioList", value.asInstanceOf[js.Any])
+    inline def setAudioList(value: AudioList): Self = StObject.set(x, "AudioList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioListUndefined: Self = StObject.set(x, "AudioList", js.undefined)
+    inline def setAudioListUndefined: Self = StObject.set(x, "AudioList", js.undefined)
     
-    @scala.inline
-    def setAudioListVarargs(value: Audio*): Self = StObject.set(x, "AudioList", js.Array(value :_*))
+    inline def setAudioListVarargs(value: Audio*): Self = StObject.set(x, "AudioList", js.Array(value :_*))
     
-    @scala.inline
-    def setSsmlList(value: SsmlList): Self = StObject.set(x, "SsmlList", value.asInstanceOf[js.Any])
+    inline def setSsmlList(value: SsmlList): Self = StObject.set(x, "SsmlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlListUndefined: Self = StObject.set(x, "SsmlList", js.undefined)
+    inline def setSsmlListUndefined: Self = StObject.set(x, "SsmlList", js.undefined)
     
-    @scala.inline
-    def setSsmlListVarargs(value: Ssml*): Self = StObject.set(x, "SsmlList", js.Array(value :_*))
+    inline def setSsmlListVarargs(value: Ssml*): Self = StObject.set(x, "SsmlList", js.Array(value :_*))
     
-    @scala.inline
-    def setTextList(value: TextList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
+    inline def setTextList(value: TextList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextListUndefined: Self = StObject.set(x, "TextList", js.undefined)
+    inline def setTextListUndefined: Self = StObject.set(x, "TextList", js.undefined)
     
-    @scala.inline
-    def setTextListVarargs(value: Text*): Self = StObject.set(x, "TextList", js.Array(value :_*))
+    inline def setTextListVarargs(value: Text*): Self = StObject.set(x, "TextList", js.Array(value :_*))
   }
 }

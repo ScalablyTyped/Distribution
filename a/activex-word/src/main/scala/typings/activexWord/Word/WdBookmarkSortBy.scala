@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdBookmarkSortBy extends StObject
 object WdBookmarkSortBy {
   
-  @scala.inline
-  def wdSortByLocation: `1` = 1.asInstanceOf[`1`]
+  inline def wdSortByLocation: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdSortByName: `0` = 0.asInstanceOf[`0`]
+  inline def wdSortByName: `0` = 0.asInstanceOf[`0`]
 }

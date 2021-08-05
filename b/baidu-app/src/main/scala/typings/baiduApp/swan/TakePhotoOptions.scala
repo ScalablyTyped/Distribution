@@ -17,25 +17,19 @@ trait TakePhotoOptions
 }
 object TakePhotoOptions {
   
-  @scala.inline
-  def apply(): TakePhotoOptions = {
+  inline def apply(): TakePhotoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TakePhotoOptions]
   }
   
-  @scala.inline
-  implicit class TakePhotoOptionsMutableBuilder[Self <: TakePhotoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TakePhotoOptions](x: Self) {
     
-    @scala.inline
-    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ TempImagePath => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ TempImagePath => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

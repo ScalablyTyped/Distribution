@@ -21,16 +21,13 @@ trait IGenericProperties
 }
 object IGenericProperties {
   
-  @scala.inline
-  def apply(qInfo: INxInfo): IGenericProperties = {
+  inline def apply(qInfo: INxInfo): IGenericProperties = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericProperties]
   }
   
-  @scala.inline
-  implicit class IGenericPropertiesMutableBuilder[Self <: IGenericProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericProperties](x: Self) {
     
-    @scala.inline
-    def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
   }
 }

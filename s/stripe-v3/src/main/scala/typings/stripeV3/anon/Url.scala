@@ -21,19 +21,15 @@ trait Url extends StObject {
 }
 object Url {
   
-  @scala.inline
-  def apply(return_url: String, url: String): Url = {
+  inline def apply(return_url: String, url: String): Url = {
     val __obj = js.Dynamic.literal(return_url = return_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Url]
   }
   
-  @scala.inline
-  implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+  extension [Self <: Url](x: Self) {
     
-    @scala.inline
-    def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
+    inline def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

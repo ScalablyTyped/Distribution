@@ -33,52 +33,37 @@ trait CreateCommitOutput extends StObject {
 }
 object CreateCommitOutput {
   
-  @scala.inline
-  def apply(): CreateCommitOutput = {
+  inline def apply(): CreateCommitOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCommitOutput]
   }
   
-  @scala.inline
-  implicit class CreateCommitOutputMutableBuilder[Self <: CreateCommitOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCommitOutput](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+    inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
-    @scala.inline
-    def setFilesAdded(value: FilesMetadata): Self = StObject.set(x, "filesAdded", value.asInstanceOf[js.Any])
+    inline def setFilesAdded(value: FilesMetadata): Self = StObject.set(x, "filesAdded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesAddedUndefined: Self = StObject.set(x, "filesAdded", js.undefined)
+    inline def setFilesAddedUndefined: Self = StObject.set(x, "filesAdded", js.undefined)
     
-    @scala.inline
-    def setFilesAddedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesAdded", js.Array(value :_*))
+    inline def setFilesAddedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesAdded", js.Array(value :_*))
     
-    @scala.inline
-    def setFilesDeleted(value: FilesMetadata): Self = StObject.set(x, "filesDeleted", value.asInstanceOf[js.Any])
+    inline def setFilesDeleted(value: FilesMetadata): Self = StObject.set(x, "filesDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesDeletedUndefined: Self = StObject.set(x, "filesDeleted", js.undefined)
+    inline def setFilesDeletedUndefined: Self = StObject.set(x, "filesDeleted", js.undefined)
     
-    @scala.inline
-    def setFilesDeletedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesDeleted", js.Array(value :_*))
+    inline def setFilesDeletedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesDeleted", js.Array(value :_*))
     
-    @scala.inline
-    def setFilesUpdated(value: FilesMetadata): Self = StObject.set(x, "filesUpdated", value.asInstanceOf[js.Any])
+    inline def setFilesUpdated(value: FilesMetadata): Self = StObject.set(x, "filesUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUpdatedUndefined: Self = StObject.set(x, "filesUpdated", js.undefined)
+    inline def setFilesUpdatedUndefined: Self = StObject.set(x, "filesUpdated", js.undefined)
     
-    @scala.inline
-    def setFilesUpdatedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesUpdated", js.Array(value :_*))
+    inline def setFilesUpdatedVarargs(value: FileMetadata*): Self = StObject.set(x, "filesUpdated", js.Array(value :_*))
     
-    @scala.inline
-    def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+    inline def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
+    inline def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
   }
 }

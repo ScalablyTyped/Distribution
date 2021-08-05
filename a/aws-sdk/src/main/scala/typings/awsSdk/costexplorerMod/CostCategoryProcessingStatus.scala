@@ -18,25 +18,19 @@ trait CostCategoryProcessingStatus extends StObject {
 }
 object CostCategoryProcessingStatus {
   
-  @scala.inline
-  def apply(): CostCategoryProcessingStatus = {
+  inline def apply(): CostCategoryProcessingStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CostCategoryProcessingStatus]
   }
   
-  @scala.inline
-  implicit class CostCategoryProcessingStatusMutableBuilder[Self <: CostCategoryProcessingStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CostCategoryProcessingStatus](x: Self) {
     
-    @scala.inline
-    def setComponent(value: CostCategoryStatusComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: CostCategoryStatusComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CostCategoryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CostCategoryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -14,36 +14,30 @@ object playerComponents {
   @JSImport("wix-ui-core/src", "playerComponents.dailymotion")
   @js.native
   def dailymotion: ComponentType[js.Any] = js.native
-  @scala.inline
-  def dailymotion_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dailymotion")(x.asInstanceOf[js.Any])
+  inline def dailymotion_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dailymotion")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "playerComponents.facebook")
   @js.native
   def facebook: ComponentType[js.Any] = js.native
-  @scala.inline
-  def facebook_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("facebook")(x.asInstanceOf[js.Any])
+  inline def facebook_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("facebook")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "playerComponents.playable")
   @js.native
   def playable: ComponentType[js.Any] = js.native
-  @scala.inline
-  def playable_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("playable")(x.asInstanceOf[js.Any])
+  inline def playable_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("playable")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "playerComponents.twitch")
   @js.native
   def twitch: ComponentType[js.Any] = js.native
-  @scala.inline
-  def twitch_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twitch")(x.asInstanceOf[js.Any])
+  inline def twitch_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("twitch")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "playerComponents.vimeo")
   @js.native
   def vimeo: ComponentType[js.Any] = js.native
-  @scala.inline
-  def vimeo_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vimeo")(x.asInstanceOf[js.Any])
+  inline def vimeo_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vimeo")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "playerComponents.youtube")
   @js.native
   def youtube: ComponentType[js.Any] = js.native
-  @scala.inline
-  def youtube_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("youtube")(x.asInstanceOf[js.Any])
+  inline def youtube_=(x: ComponentType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("youtube")(x.asInstanceOf[js.Any])
 }

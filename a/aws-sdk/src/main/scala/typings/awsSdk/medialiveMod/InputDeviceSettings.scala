@@ -13,19 +13,15 @@ trait InputDeviceSettings extends StObject {
 }
 object InputDeviceSettings {
   
-  @scala.inline
-  def apply(): InputDeviceSettings = {
+  inline def apply(): InputDeviceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputDeviceSettings]
   }
   
-  @scala.inline
-  implicit class InputDeviceSettingsMutableBuilder[Self <: InputDeviceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: InputDeviceSettings](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

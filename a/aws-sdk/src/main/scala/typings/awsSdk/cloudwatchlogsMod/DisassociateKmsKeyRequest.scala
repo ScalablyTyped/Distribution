@@ -13,16 +13,13 @@ trait DisassociateKmsKeyRequest extends StObject {
 }
 object DisassociateKmsKeyRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName): DisassociateKmsKeyRequest = {
+  inline def apply(logGroupName: LogGroupName): DisassociateKmsKeyRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateKmsKeyRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateKmsKeyRequestMutableBuilder[Self <: DisassociateKmsKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateKmsKeyRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }
 }

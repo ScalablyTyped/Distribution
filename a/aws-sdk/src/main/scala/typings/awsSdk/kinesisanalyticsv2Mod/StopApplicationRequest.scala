@@ -18,22 +18,17 @@ trait StopApplicationRequest extends StObject {
 }
 object StopApplicationRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName): StopApplicationRequest = {
+  inline def apply(ApplicationName: ApplicationName): StopApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopApplicationRequest]
   }
   
-  @scala.inline
-  implicit class StopApplicationRequestMutableBuilder[Self <: StopApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: BooleanObject): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: BooleanObject): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
   }
 }

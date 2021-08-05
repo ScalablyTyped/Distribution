@@ -23,8 +23,7 @@ trait CreateApprovalRuleTemplateInput extends StObject {
 }
 object CreateApprovalRuleTemplateInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approvalRuleTemplateContent: ApprovalRuleTemplateContent,
     approvalRuleTemplateName: ApprovalRuleTemplateName
   ): CreateApprovalRuleTemplateInput = {
@@ -32,19 +31,14 @@ object CreateApprovalRuleTemplateInput {
     __obj.asInstanceOf[CreateApprovalRuleTemplateInput]
   }
   
-  @scala.inline
-  implicit class CreateApprovalRuleTemplateInputMutableBuilder[Self <: CreateApprovalRuleTemplateInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateApprovalRuleTemplateInput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleTemplateContent(value: ApprovalRuleTemplateContent): Self = StObject.set(x, "approvalRuleTemplateContent", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateContent(value: ApprovalRuleTemplateContent): Self = StObject.set(x, "approvalRuleTemplateContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleTemplateDescription(value: ApprovalRuleTemplateDescription): Self = StObject.set(x, "approvalRuleTemplateDescription", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateDescription(value: ApprovalRuleTemplateDescription): Self = StObject.set(x, "approvalRuleTemplateDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleTemplateDescriptionUndefined: Self = StObject.set(x, "approvalRuleTemplateDescription", js.undefined)
+    inline def setApprovalRuleTemplateDescriptionUndefined: Self = StObject.set(x, "approvalRuleTemplateDescription", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
   }
 }

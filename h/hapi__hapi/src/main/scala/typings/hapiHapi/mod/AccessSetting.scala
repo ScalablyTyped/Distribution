@@ -13,22 +13,17 @@ trait AccessSetting extends StObject {
 }
 object AccessSetting {
   
-  @scala.inline
-  def apply(scope: AccessScopes | `false`): AccessSetting = {
+  inline def apply(scope: AccessScopes | `false`): AccessSetting = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessSetting]
   }
   
-  @scala.inline
-  implicit class AccessSettingMutableBuilder[Self <: AccessSetting] (val x: Self) extends AnyVal {
+  extension [Self <: AccessSetting](x: Self) {
     
-    @scala.inline
-    def setEntity(value: AccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: AccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setScope(value: AccessScopes | `false`): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: AccessScopes | `false`): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

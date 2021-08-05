@@ -34,29 +34,19 @@ object utilsMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def getEnvironmentVars(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsSauceIsSeleniumStandalone: PartialSessionFlags): IsAndroid = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentVars")(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[IsAndroid]
+  inline def getEnvironmentVars(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsSauceIsSeleniumStandalone: PartialSessionFlags): IsAndroid = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentVars")(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[IsAndroid]
   
-  @scala.inline
-  def getErrorFromResponseBody(body: js.Any): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFromResponseBody")(body.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def getErrorFromResponseBody(body: js.Any): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFromResponseBody")(body.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @scala.inline
-  def getPrototype(hasIsW3CIsChromeIsMobileIsSauceIsSeleniumStandalone: PartialSessionFlags): Record[String, PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(hasIsW3CIsChromeIsMobileIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[Record[String, PropertyDescriptor]]
+  inline def getPrototype(hasIsW3CIsChromeIsMobileIsSauceIsSeleniumStandalone: PartialSessionFlags): Record[String, PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(hasIsW3CIsChromeIsMobileIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[Record[String, PropertyDescriptor]]
   
-  @scala.inline
-  def getSessionError(err: JSONWPCommandError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getSessionError(err: JSONWPCommandError, params: PartialOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getSessionError(err: JSONWPCommandError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getSessionError(err: JSONWPCommandError, params: PartialOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def isSuccessfulResponse(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")().asInstanceOf[Boolean]
-  @scala.inline
-  def isSuccessfulResponse(statusCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isSuccessfulResponse(statusCode: Double, body: WebDriverResponse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isSuccessfulResponse(statusCode: Unit, body: WebDriverResponse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSuccessfulResponse(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")().asInstanceOf[Boolean]
+  inline def isSuccessfulResponse(statusCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSuccessfulResponse(statusCode: Double, body: WebDriverResponse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSuccessfulResponse(statusCode: Unit, body: WebDriverResponse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def startWebDriverSession(params: Options): js.Promise[Capabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("startWebDriverSession")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Capabilities]]
+  inline def startWebDriverSession(params: Options): js.Promise[Capabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("startWebDriverSession")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Capabilities]]
 }

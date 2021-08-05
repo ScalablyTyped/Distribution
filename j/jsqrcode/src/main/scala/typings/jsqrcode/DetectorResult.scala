@@ -12,8 +12,7 @@ trait DetectorResult extends StObject {
 }
 object DetectorResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bits: BitMatrix,
     points: (js.Tuple3[DetectorResult, DetectorResult, DetectorResult]) | (js.Tuple4[DetectorResult, DetectorResult, DetectorResult, DetectorResult])
   ): DetectorResult = {
@@ -21,14 +20,11 @@ object DetectorResult {
     __obj.asInstanceOf[DetectorResult]
   }
   
-  @scala.inline
-  implicit class DetectorResultMutableBuilder[Self <: DetectorResult] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorResult](x: Self) {
     
-    @scala.inline
-    def setBits(value: BitMatrix): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    inline def setBits(value: BitMatrix): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(
+    inline def setPoints(
       value: (js.Tuple3[DetectorResult, DetectorResult, DetectorResult]) | (js.Tuple4[DetectorResult, DetectorResult, DetectorResult, DetectorResult])
     ): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
   }

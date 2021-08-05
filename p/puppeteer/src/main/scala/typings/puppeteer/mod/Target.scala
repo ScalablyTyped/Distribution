@@ -32,8 +32,7 @@ trait Target extends StObject {
 }
 object Target {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     browser: () => Browser,
     browserContext: () => BrowserContext,
     createCDPSession: () => js.Promise[CDPSession],
@@ -48,31 +47,22 @@ object Target {
     __obj.asInstanceOf[Target]
   }
   
-  @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+  extension [Self <: Target](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: () => Browser): Self = StObject.set(x, "browser", js.Any.fromFunction0(value))
+    inline def setBrowser(value: () => Browser): Self = StObject.set(x, "browser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBrowserContext(value: () => BrowserContext): Self = StObject.set(x, "browserContext", js.Any.fromFunction0(value))
+    inline def setBrowserContext(value: () => BrowserContext): Self = StObject.set(x, "browserContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateCDPSession(value: () => js.Promise[CDPSession]): Self = StObject.set(x, "createCDPSession", js.Any.fromFunction0(value))
+    inline def setCreateCDPSession(value: () => js.Promise[CDPSession]): Self = StObject.set(x, "createCDPSession", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpener(value: () => Target | Null): Self = StObject.set(x, "opener", js.Any.fromFunction0(value))
+    inline def setOpener(value: () => Target | Null): Self = StObject.set(x, "opener", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPage(value: () => js.Promise[Page]): Self = StObject.set(x, "page", js.Any.fromFunction0(value))
+    inline def setPage(value: () => js.Promise[Page]): Self = StObject.set(x, "page", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: () => TargetType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setType(value: () => TargetType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
+    inline def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWorker(value: () => js.Promise[Worker | Null]): Self = StObject.set(x, "worker", js.Any.fromFunction0(value))
+    inline def setWorker(value: () => js.Promise[Worker | Null]): Self = StObject.set(x, "worker", js.Any.fromFunction0(value))
   }
 }

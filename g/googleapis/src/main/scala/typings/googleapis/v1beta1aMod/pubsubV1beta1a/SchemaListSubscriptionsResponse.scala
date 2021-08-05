@@ -23,28 +23,21 @@ trait SchemaListSubscriptionsResponse extends StObject {
 }
 object SchemaListSubscriptionsResponse {
   
-  @scala.inline
-  def apply(): SchemaListSubscriptionsResponse = {
+  inline def apply(): SchemaListSubscriptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListSubscriptionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListSubscriptionsResponseMutableBuilder[Self <: SchemaListSubscriptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListSubscriptionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: js.Array[SchemaSubscription]): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: js.Array[SchemaSubscription]): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setSubscriptionVarargs(value: SchemaSubscription*): Self = StObject.set(x, "subscription", js.Array(value :_*))
+    inline def setSubscriptionVarargs(value: SchemaSubscription*): Self = StObject.set(x, "subscription", js.Array(value :_*))
   }
 }

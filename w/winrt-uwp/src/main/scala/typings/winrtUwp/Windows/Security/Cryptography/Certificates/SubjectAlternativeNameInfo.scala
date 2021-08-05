@@ -28,8 +28,7 @@ trait SubjectAlternativeNameInfo extends StObject {
 }
 object SubjectAlternativeNameInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distinguishedName: IVectorView[String],
     dnsName: IVectorView[String],
     emailName: IVectorView[String],
@@ -41,25 +40,18 @@ object SubjectAlternativeNameInfo {
     __obj.asInstanceOf[SubjectAlternativeNameInfo]
   }
   
-  @scala.inline
-  implicit class SubjectAlternativeNameInfoMutableBuilder[Self <: SubjectAlternativeNameInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SubjectAlternativeNameInfo](x: Self) {
     
-    @scala.inline
-    def setDistinguishedName(value: IVectorView[String]): Self = StObject.set(x, "distinguishedName", value.asInstanceOf[js.Any])
+    inline def setDistinguishedName(value: IVectorView[String]): Self = StObject.set(x, "distinguishedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsName(value: IVectorView[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: IVectorView[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailName(value: IVectorView[String]): Self = StObject.set(x, "emailName", value.asInstanceOf[js.Any])
+    inline def setEmailName(value: IVectorView[String]): Self = StObject.set(x, "emailName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: IVectorView[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IVectorView[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalName(value: IVectorView[String]): Self = StObject.set(x, "principalName", value.asInstanceOf[js.Any])
+    inline def setPrincipalName(value: IVectorView[String]): Self = StObject.set(x, "principalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: IVectorView[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: IVectorView[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

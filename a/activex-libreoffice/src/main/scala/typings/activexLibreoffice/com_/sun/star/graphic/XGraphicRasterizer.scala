@@ -56,8 +56,7 @@ trait XGraphicRasterizer
 }
 object XGraphicRasterizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     initializeData: (XInputStream, Double, Double, js.Array[Size]) => Boolean,
     queryInterface: `type` => js.Any,
@@ -68,13 +67,10 @@ object XGraphicRasterizer {
     __obj.asInstanceOf[XGraphicRasterizer]
   }
   
-  @scala.inline
-  implicit class XGraphicRasterizerMutableBuilder[Self <: XGraphicRasterizer] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphicRasterizer](x: Self) {
     
-    @scala.inline
-    def setInitializeData(value: (XInputStream, Double, Double, js.Array[Size]) => Boolean): Self = StObject.set(x, "initializeData", js.Any.fromFunction4(value))
+    inline def setInitializeData(value: (XInputStream, Double, Double, js.Array[Size]) => Boolean): Self = StObject.set(x, "initializeData", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRasterize(value: (Double, Double, Double, Double, Double, PropertyValues) => XGraphic): Self = StObject.set(x, "rasterize", js.Any.fromFunction6(value))
+    inline def setRasterize(value: (Double, Double, Double, Double, Double, PropertyValues) => XGraphic): Self = StObject.set(x, "rasterize", js.Any.fromFunction6(value))
   }
 }

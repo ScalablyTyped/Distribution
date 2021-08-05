@@ -29,10 +29,8 @@ object mod {
   class default ()
     extends PureComponent[ReactResizeDetectorProps, js.Object, js.Any]
   
-  @scala.inline
-  def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T]): ComponentType[Omit[T, height | width]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withResizeDetector")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[T, height | width]]]
-  @scala.inline
-  def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T], props: ReactResizeDetectorProps): ComponentType[Omit[T, height | width]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withResizeDetector")(WrappedComponent.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ComponentType[Omit[T, height | width]]]
+  inline def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T]): ComponentType[Omit[T, height | width]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withResizeDetector")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[T, height | width]]]
+  inline def withResizeDetector[T /* <: PartialReactResizeDetecto */](WrappedComponent: ComponentType[T], props: ReactResizeDetectorProps): ComponentType[Omit[T, height | width]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withResizeDetector")(WrappedComponent.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ComponentType[Omit[T, height | width]]]
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
@@ -48,20 +46,16 @@ object mod {
   }
   object ReactResizeDetectorDimensions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): ReactResizeDetectorDimensions = {
+    inline def apply(height: Double, width: Double): ReactResizeDetectorDimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactResizeDetectorDimensions]
     }
     
-    @scala.inline
-    implicit class ReactResizeDetectorDimensionsMutableBuilder[Self <: ReactResizeDetectorDimensions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactResizeDetectorDimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,92 +157,64 @@ object mod {
   }
   object ReactResizeDetectorProps {
     
-    @scala.inline
-    def apply(): ReactResizeDetectorProps = {
+    inline def apply(): ReactResizeDetectorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactResizeDetectorProps]
     }
     
-    @scala.inline
-    implicit class ReactResizeDetectorPropsMutableBuilder[Self <: ReactResizeDetectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactResizeDetectorProps](x: Self) {
       
-      @scala.inline
-      def setHandleHeight(value: Boolean): Self = StObject.set(x, "handleHeight", value.asInstanceOf[js.Any])
+      inline def setHandleHeight(value: Boolean): Self = StObject.set(x, "handleHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleHeightUndefined: Self = StObject.set(x, "handleHeight", js.undefined)
+      inline def setHandleHeightUndefined: Self = StObject.set(x, "handleHeight", js.undefined)
       
-      @scala.inline
-      def setHandleWidth(value: Boolean): Self = StObject.set(x, "handleWidth", value.asInstanceOf[js.Any])
+      inline def setHandleWidth(value: Boolean): Self = StObject.set(x, "handleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleWidthUndefined: Self = StObject.set(x, "handleWidth", js.undefined)
+      inline def setHandleWidthUndefined: Self = StObject.set(x, "handleWidth", js.undefined)
       
-      @scala.inline
-      def setNodeType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
+      inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: (/* width */ Double, /* height */ Double) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
+      inline def setOnResize(value: (/* width */ Double, /* height */ Double) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setQuerySelector(value: String): Self = StObject.set(x, "querySelector", value.asInstanceOf[js.Any])
+      inline def setQuerySelector(value: String): Self = StObject.set(x, "querySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerySelectorUndefined: Self = StObject.set(x, "querySelector", js.undefined)
+      inline def setQuerySelectorUndefined: Self = StObject.set(x, "querySelector", js.undefined)
       
-      @scala.inline
-      def setRefreshMode(value: throttle | debounce): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
+      inline def setRefreshMode(value: throttle | debounce): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshModeUndefined: Self = StObject.set(x, "refreshMode", js.undefined)
+      inline def setRefreshModeUndefined: Self = StObject.set(x, "refreshMode", js.undefined)
       
-      @scala.inline
-      def setRefreshOptions(value: Leading): Self = StObject.set(x, "refreshOptions", value.asInstanceOf[js.Any])
+      inline def setRefreshOptions(value: Leading): Self = StObject.set(x, "refreshOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshOptionsUndefined: Self = StObject.set(x, "refreshOptions", js.undefined)
+      inline def setRefreshOptionsUndefined: Self = StObject.set(x, "refreshOptions", js.undefined)
       
-      @scala.inline
-      def setRefreshRate(value: Double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
+      inline def setRefreshRate(value: Double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshRateUndefined: Self = StObject.set(x, "refreshRate", js.undefined)
+      inline def setRefreshRateUndefined: Self = StObject.set(x, "refreshRate", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* props */ ReactResizeDetectorDimensions => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* props */ ReactResizeDetectorDimensions => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSkipOnMount(value: Boolean): Self = StObject.set(x, "skipOnMount", value.asInstanceOf[js.Any])
+      inline def setSkipOnMount(value: Boolean): Self = StObject.set(x, "skipOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipOnMountUndefined: Self = StObject.set(x, "skipOnMount", js.undefined)
+      inline def setSkipOnMountUndefined: Self = StObject.set(x, "skipOnMount", js.undefined)
       
-      @scala.inline
-      def setTargetDomEl(value: HTMLElement): Self = StObject.set(x, "targetDomEl", value.asInstanceOf[js.Any])
+      inline def setTargetDomEl(value: HTMLElement): Self = StObject.set(x, "targetDomEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetDomElUndefined: Self = StObject.set(x, "targetDomEl", js.undefined)
+      inline def setTargetDomElUndefined: Self = StObject.set(x, "targetDomEl", js.undefined)
       
-      @scala.inline
-      def setTargetRef(value: Ref[HTMLElement]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      inline def setTargetRef(value: Ref[HTMLElement]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "targetRef", js.Any.fromFunction1(value))
+      inline def setTargetRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "targetRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTargetRefNull: Self = StObject.set(x, "targetRef", null)
+      inline def setTargetRefNull: Self = StObject.set(x, "targetRef", null)
       
-      @scala.inline
-      def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
     }
   }
 }

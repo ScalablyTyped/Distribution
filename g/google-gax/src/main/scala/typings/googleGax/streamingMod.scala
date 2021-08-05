@@ -37,9 +37,9 @@ object streamingMod {
       */
     def this(`type`: StreamType, callback: APICallback) = this()
     
-    var _callback: js.Any = js.native
+    /* private */ var _callback: js.Any = js.native
     
-    var _isCancelCalled: js.Any = js.native
+    /* private */ var _isCancelCalled: js.Any = js.native
     
     /* CompleteClass */
     override def cancel(): Unit = js.native
@@ -203,20 +203,16 @@ object streamingMod {
   }
   object DuplexifyOptions {
     
-    @scala.inline
-    def apply(): DuplexifyOptions = {
+    inline def apply(): DuplexifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DuplexifyOptions]
     }
     
-    @scala.inline
-    implicit class DuplexifyOptionsMutableBuilder[Self <: DuplexifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DuplexifyOptions](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     }
   }
 }

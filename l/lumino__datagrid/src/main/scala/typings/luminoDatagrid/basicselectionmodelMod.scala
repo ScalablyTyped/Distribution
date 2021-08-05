@@ -18,12 +18,12 @@ object basicselectionmodelMod {
       */
     def this(options: IOptions) = this()
     
-    var _cursorColumn: js.Any = js.native
+    /* private */ var _cursorColumn: js.Any = js.native
     
-    var _cursorRectIndex: js.Any = js.native
+    /* private */ var _cursorRectIndex: js.Any = js.native
     
-    var _cursorRow: js.Any = js.native
+    /* private */ var _cursorRow: js.Any = js.native
     
-    var _selections: js.Any = js.native
+    /* private */ var _selections: js.Any = js.native
   }
 }

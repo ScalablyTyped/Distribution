@@ -15,19 +15,15 @@ trait PosPrinterStatus extends StObject {
 }
 object PosPrinterStatus {
   
-  @scala.inline
-  def apply(extendedStatus: Double, statusKind: PosPrinterStatusKind): PosPrinterStatus = {
+  inline def apply(extendedStatus: Double, statusKind: PosPrinterStatusKind): PosPrinterStatus = {
     val __obj = js.Dynamic.literal(extendedStatus = extendedStatus.asInstanceOf[js.Any], statusKind = statusKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PosPrinterStatus]
   }
   
-  @scala.inline
-  implicit class PosPrinterStatusMutableBuilder[Self <: PosPrinterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PosPrinterStatus](x: Self) {
     
-    @scala.inline
-    def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
+    inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusKind(value: PosPrinterStatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
+    inline def setStatusKind(value: PosPrinterStatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
   }
 }

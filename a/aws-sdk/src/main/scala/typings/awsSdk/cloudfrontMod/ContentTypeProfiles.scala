@@ -18,25 +18,19 @@ trait ContentTypeProfiles extends StObject {
 }
 object ContentTypeProfiles {
   
-  @scala.inline
-  def apply(Quantity: integer): ContentTypeProfiles = {
+  inline def apply(Quantity: integer): ContentTypeProfiles = {
     val __obj = js.Dynamic.literal(Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentTypeProfiles]
   }
   
-  @scala.inline
-  implicit class ContentTypeProfilesMutableBuilder[Self <: ContentTypeProfiles] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTypeProfiles](x: Self) {
     
-    @scala.inline
-    def setItems(value: ContentTypeProfileList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ContentTypeProfileList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ContentTypeProfile*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ContentTypeProfile*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

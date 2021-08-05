@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFApplicationLicenseStatus extends StObject
 object MFApplicationLicenseStatus {
   
-  @scala.inline
-  def FormatError: `6` = 6.asInstanceOf[`6`]
+  inline def FormatError: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def GracePeriod: `8` = 8.asInstanceOf[`8`]
+  inline def GracePeriod: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Installed: `3` = 3.asInstanceOf[`3`]
+  inline def Installed: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Invalid: `5` = 5.asInstanceOf[`5`]
+  inline def Invalid: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def NotInstalled: `2` = 2.asInstanceOf[`2`]
+  inline def NotInstalled: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def NotNeeded: `1` = 1.asInstanceOf[`1`]
+  inline def NotNeeded: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Trial: `7` = 7.asInstanceOf[`7`]
+  inline def Trial: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def Unknown: `0` = 0.asInstanceOf[`0`]
+  inline def Unknown: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Valid: `4` = 4.asInstanceOf[`4`]
+  inline def Valid: `4` = 4.asInstanceOf[`4`]
 }

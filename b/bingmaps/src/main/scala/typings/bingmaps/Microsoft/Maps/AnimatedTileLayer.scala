@@ -53,8 +53,7 @@ trait AnimatedTileLayer extends StObject {
 }
 object AnimatedTileLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFrameRate: () => Double,
     getLoadingScreen: () => CustomOverlay,
     getMaxTotalLoadTime: () => Double,
@@ -69,34 +68,24 @@ object AnimatedTileLayer {
     __obj.asInstanceOf[AnimatedTileLayer]
   }
   
-  @scala.inline
-  implicit class AnimatedTileLayerMutableBuilder[Self <: AnimatedTileLayer] (val x: Self) extends AnyVal {
+  extension [Self <: AnimatedTileLayer](x: Self) {
     
-    @scala.inline
-    def setGetFrameRate(value: () => Double): Self = StObject.set(x, "getFrameRate", js.Any.fromFunction0(value))
+    inline def setGetFrameRate(value: () => Double): Self = StObject.set(x, "getFrameRate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoadingScreen(value: () => CustomOverlay): Self = StObject.set(x, "getLoadingScreen", js.Any.fromFunction0(value))
+    inline def setGetLoadingScreen(value: () => CustomOverlay): Self = StObject.set(x, "getLoadingScreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxTotalLoadTime(value: () => Double): Self = StObject.set(x, "getMaxTotalLoadTime", js.Any.fromFunction0(value))
+    inline def setGetMaxTotalLoadTime(value: () => Double): Self = StObject.set(x, "getMaxTotalLoadTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTileSources(value: () => js.Array[TileSource]): Self = StObject.set(x, "getTileSources", js.Any.fromFunction0(value))
+    inline def setGetTileSources(value: () => js.Array[TileSource]): Self = StObject.set(x, "getTileSources", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetOptions(value: IAnimatedTileLayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: IAnimatedTileLayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

@@ -24,28 +24,21 @@ trait FleetLaunchTemplateConfigLaunchTemplateSpecification extends StObject {
 }
 object FleetLaunchTemplateConfigLaunchTemplateSpecification {
   
-  @scala.inline
-  def apply(version: Input[String]): FleetLaunchTemplateConfigLaunchTemplateSpecification = {
+  inline def apply(version: Input[String]): FleetLaunchTemplateConfigLaunchTemplateSpecification = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetLaunchTemplateConfigLaunchTemplateSpecification]
   }
   
-  @scala.inline
-  implicit class FleetLaunchTemplateConfigLaunchTemplateSpecificationMutableBuilder[Self <: FleetLaunchTemplateConfigLaunchTemplateSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: FleetLaunchTemplateConfigLaunchTemplateSpecification](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplateId(value: Input[String]): Self = StObject.set(x, "launchTemplateId", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateId(value: Input[String]): Self = StObject.set(x, "launchTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "launchTemplateId", js.undefined)
+    inline def setLaunchTemplateIdUndefined: Self = StObject.set(x, "launchTemplateId", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateName(value: Input[String]): Self = StObject.set(x, "launchTemplateName", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateName(value: Input[String]): Self = StObject.set(x, "launchTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "launchTemplateName", js.undefined)
+    inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "launchTemplateName", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

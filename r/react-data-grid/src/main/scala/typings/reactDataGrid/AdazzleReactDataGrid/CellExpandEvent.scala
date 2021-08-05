@@ -31,25 +31,19 @@ trait CellExpandEvent[T] extends StObject {
 }
 object CellExpandEvent {
   
-  @scala.inline
-  def apply[T](expandArgs: js.Any, idx: Double, rowData: T, rowIdx: Double): CellExpandEvent[T] = {
+  inline def apply[T](expandArgs: js.Any, idx: Double, rowData: T, rowIdx: Double): CellExpandEvent[T] = {
     val __obj = js.Dynamic.literal(expandArgs = expandArgs.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellExpandEvent[T]]
   }
   
-  @scala.inline
-  implicit class CellExpandEventMutableBuilder[Self <: CellExpandEvent[?], T] (val x: Self & CellExpandEvent[T]) extends AnyVal {
+  extension [Self <: CellExpandEvent[?], T](x: Self & CellExpandEvent[T]) {
     
-    @scala.inline
-    def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
+    inline def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+    inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
+    inline def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
   }
 }

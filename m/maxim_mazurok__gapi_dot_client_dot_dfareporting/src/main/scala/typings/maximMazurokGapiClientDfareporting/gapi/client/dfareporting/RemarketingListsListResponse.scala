@@ -17,34 +17,25 @@ trait RemarketingListsListResponse extends StObject {
 }
 object RemarketingListsListResponse {
   
-  @scala.inline
-  def apply(): RemarketingListsListResponse = {
+  inline def apply(): RemarketingListsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemarketingListsListResponse]
   }
   
-  @scala.inline
-  implicit class RemarketingListsListResponseMutableBuilder[Self <: RemarketingListsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemarketingListsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRemarketingLists(value: js.Array[RemarketingList]): Self = StObject.set(x, "remarketingLists", value.asInstanceOf[js.Any])
+    inline def setRemarketingLists(value: js.Array[RemarketingList]): Self = StObject.set(x, "remarketingLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarketingListsUndefined: Self = StObject.set(x, "remarketingLists", js.undefined)
+    inline def setRemarketingListsUndefined: Self = StObject.set(x, "remarketingLists", js.undefined)
     
-    @scala.inline
-    def setRemarketingListsVarargs(value: RemarketingList*): Self = StObject.set(x, "remarketingLists", js.Array(value :_*))
+    inline def setRemarketingListsVarargs(value: RemarketingList*): Self = StObject.set(x, "remarketingLists", js.Array(value :_*))
   }
 }

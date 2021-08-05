@@ -20,40 +20,29 @@ trait CreateKeyOpts
 }
 object CreateKeyOpts {
   
-  @scala.inline
-  def apply(capabilities: js.Array[String], keyName: String): CreateKeyOpts = {
+  inline def apply(capabilities: js.Array[String], keyName: String): CreateKeyOpts = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyOpts]
   }
   
-  @scala.inline
-  implicit class CreateKeyOptsMutableBuilder[Self <: CreateKeyOpts] (val x: Self) extends AnyVal {
+  extension [Self <: CreateKeyOpts](x: Self) {
     
-    @scala.inline
-    def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
+    inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketIdUndefined: Self = StObject.set(x, "bucketId", js.undefined)
+    inline def setBucketIdUndefined: Self = StObject.set(x, "bucketId", js.undefined)
     
-    @scala.inline
-    def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+    inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
     
-    @scala.inline
-    def setValidDurationInSeconds(value: Double): Self = StObject.set(x, "validDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setValidDurationInSeconds(value: Double): Self = StObject.set(x, "validDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidDurationInSecondsUndefined: Self = StObject.set(x, "validDurationInSeconds", js.undefined)
+    inline def setValidDurationInSecondsUndefined: Self = StObject.set(x, "validDurationInSeconds", js.undefined)
   }
 }

@@ -43,49 +43,35 @@ trait AuthorizeClientVpnIngressRequest extends StObject {
 }
 object AuthorizeClientVpnIngressRequest {
   
-  @scala.inline
-  def apply(ClientVpnEndpointId: ClientVpnEndpointId, TargetNetworkCidr: String): AuthorizeClientVpnIngressRequest = {
+  inline def apply(ClientVpnEndpointId: ClientVpnEndpointId, TargetNetworkCidr: String): AuthorizeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], TargetNetworkCidr = TargetNetworkCidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeClientVpnIngressRequest]
   }
   
-  @scala.inline
-  implicit class AuthorizeClientVpnIngressRequestMutableBuilder[Self <: AuthorizeClientVpnIngressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeClientVpnIngressRequest](x: Self) {
     
-    @scala.inline
-    def setAccessGroupId(value: String): Self = StObject.set(x, "AccessGroupId", value.asInstanceOf[js.Any])
+    inline def setAccessGroupId(value: String): Self = StObject.set(x, "AccessGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessGroupIdUndefined: Self = StObject.set(x, "AccessGroupId", js.undefined)
+    inline def setAccessGroupIdUndefined: Self = StObject.set(x, "AccessGroupId", js.undefined)
     
-    @scala.inline
-    def setAuthorizeAllGroups(value: Boolean): Self = StObject.set(x, "AuthorizeAllGroups", value.asInstanceOf[js.Any])
+    inline def setAuthorizeAllGroups(value: Boolean): Self = StObject.set(x, "AuthorizeAllGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizeAllGroupsUndefined: Self = StObject.set(x, "AuthorizeAllGroups", js.undefined)
+    inline def setAuthorizeAllGroupsUndefined: Self = StObject.set(x, "AuthorizeAllGroups", js.undefined)
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTargetNetworkCidr(value: String): Self = StObject.set(x, "TargetNetworkCidr", value.asInstanceOf[js.Any])
+    inline def setTargetNetworkCidr(value: String): Self = StObject.set(x, "TargetNetworkCidr", value.asInstanceOf[js.Any])
   }
 }

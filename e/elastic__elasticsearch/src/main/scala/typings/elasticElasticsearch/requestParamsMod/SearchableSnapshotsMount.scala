@@ -20,34 +20,25 @@ trait SearchableSnapshotsMount[T]
 }
 object SearchableSnapshotsMount {
   
-  @scala.inline
-  def apply[T](body: T, repository: String, snapshot: String): SearchableSnapshotsMount[T] = {
+  inline def apply[T](body: T, repository: String, snapshot: String): SearchableSnapshotsMount[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchableSnapshotsMount[T]]
   }
   
-  @scala.inline
-  implicit class SearchableSnapshotsMountMutableBuilder[Self <: SearchableSnapshotsMount[?], T] (val x: Self & SearchableSnapshotsMount[T]) extends AnyVal {
+  extension [Self <: SearchableSnapshotsMount[?], T](x: Self & SearchableSnapshotsMount[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
+    inline def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
+    inline def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
   }
 }

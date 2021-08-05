@@ -28,40 +28,29 @@ trait AwsCertificateManagerCertificateRenewalSummary extends StObject {
 }
 object AwsCertificateManagerCertificateRenewalSummary {
   
-  @scala.inline
-  def apply(): AwsCertificateManagerCertificateRenewalSummary = {
+  inline def apply(): AwsCertificateManagerCertificateRenewalSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCertificateManagerCertificateRenewalSummary]
   }
   
-  @scala.inline
-  implicit class AwsCertificateManagerCertificateRenewalSummaryMutableBuilder[Self <: AwsCertificateManagerCertificateRenewalSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCertificateManagerCertificateRenewalSummary](x: Self) {
     
-    @scala.inline
-    def setDomainValidationOptions(value: AwsCertificateManagerCertificateDomainValidationOptions): Self = StObject.set(x, "DomainValidationOptions", value.asInstanceOf[js.Any])
+    inline def setDomainValidationOptions(value: AwsCertificateManagerCertificateDomainValidationOptions): Self = StObject.set(x, "DomainValidationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainValidationOptionsUndefined: Self = StObject.set(x, "DomainValidationOptions", js.undefined)
+    inline def setDomainValidationOptionsUndefined: Self = StObject.set(x, "DomainValidationOptions", js.undefined)
     
-    @scala.inline
-    def setDomainValidationOptionsVarargs(value: AwsCertificateManagerCertificateDomainValidationOption*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
+    inline def setDomainValidationOptionsVarargs(value: AwsCertificateManagerCertificateDomainValidationOption*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setRenewalStatus(value: NonEmptyString): Self = StObject.set(x, "RenewalStatus", value.asInstanceOf[js.Any])
+    inline def setRenewalStatus(value: NonEmptyString): Self = StObject.set(x, "RenewalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalStatusReason(value: NonEmptyString): Self = StObject.set(x, "RenewalStatusReason", value.asInstanceOf[js.Any])
+    inline def setRenewalStatusReason(value: NonEmptyString): Self = StObject.set(x, "RenewalStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalStatusReasonUndefined: Self = StObject.set(x, "RenewalStatusReason", js.undefined)
+    inline def setRenewalStatusReasonUndefined: Self = StObject.set(x, "RenewalStatusReason", js.undefined)
     
-    @scala.inline
-    def setRenewalStatusUndefined: Self = StObject.set(x, "RenewalStatus", js.undefined)
+    inline def setRenewalStatusUndefined: Self = StObject.set(x, "RenewalStatus", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: NonEmptyString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: NonEmptyString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

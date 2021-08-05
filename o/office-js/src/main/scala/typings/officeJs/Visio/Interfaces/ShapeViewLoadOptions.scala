@@ -25,25 +25,19 @@ trait ShapeViewLoadOptions extends StObject {
 }
 object ShapeViewLoadOptions {
   
-  @scala.inline
-  def apply(): ShapeViewLoadOptions = {
+  inline def apply(): ShapeViewLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeViewLoadOptions]
   }
   
-  @scala.inline
-  implicit class ShapeViewLoadOptionsMutableBuilder[Self <: ShapeViewLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeViewLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
   }
 }

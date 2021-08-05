@@ -10,14 +10,9 @@ object getRelayHandleKeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(handleName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(handleName: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(handleName: String, key: String, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(handleName: String, key: Null, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(handleName: String, key: Unit, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(handleName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(handleName: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(handleName: String, key: String, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(handleName: String, key: Null, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(handleName: String, key: Unit, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(handleName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

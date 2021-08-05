@@ -14,22 +14,17 @@ trait LetterSpacing extends StObject {
 }
 object LetterSpacing {
   
-  @scala.inline
-  def apply(fontSize: String, letterSpacing: String, lineHeight: String): LetterSpacing = {
+  inline def apply(fontSize: String, letterSpacing: String, lineHeight: String): LetterSpacing = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[LetterSpacing]
   }
   
-  @scala.inline
-  implicit class LetterSpacingMutableBuilder[Self <: LetterSpacing] (val x: Self) extends AnyVal {
+  extension [Self <: LetterSpacing](x: Self) {
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacing(value: String): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: String): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }
 }

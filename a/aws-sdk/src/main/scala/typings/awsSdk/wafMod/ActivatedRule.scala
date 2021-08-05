@@ -38,46 +38,33 @@ trait ActivatedRule extends StObject {
 }
 object ActivatedRule {
   
-  @scala.inline
-  def apply(Priority: RulePriority, RuleId: ResourceId): ActivatedRule = {
+  inline def apply(Priority: RulePriority, RuleId: ResourceId): ActivatedRule = {
     val __obj = js.Dynamic.literal(Priority = Priority.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivatedRule]
   }
   
-  @scala.inline
-  implicit class ActivatedRuleMutableBuilder[Self <: ActivatedRule] (val x: Self) extends AnyVal {
+  extension [Self <: ActivatedRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: WafAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: WafAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
+    inline def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
+    inline def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
     
-    @scala.inline
-    def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
+    inline def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
     
-    @scala.inline
-    def setOverrideAction(value: WafOverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
+    inline def setOverrideAction(value: WafOverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideActionUndefined: Self = StObject.set(x, "OverrideAction", js.undefined)
+    inline def setOverrideActionUndefined: Self = StObject.set(x, "OverrideAction", js.undefined)
     
-    @scala.inline
-    def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WafRuleType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WafRuleType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait S3JobDefinition extends StObject {
 }
 object S3JobDefinition {
   
-  @scala.inline
-  def apply(): S3JobDefinition = {
+  inline def apply(): S3JobDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3JobDefinition]
   }
   
-  @scala.inline
-  implicit class S3JobDefinitionMutableBuilder[Self <: S3JobDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: S3JobDefinition](x: Self) {
     
-    @scala.inline
-    def setBucketDefinitions(value: listOfS3BucketDefinitionForJob): Self = StObject.set(x, "bucketDefinitions", value.asInstanceOf[js.Any])
+    inline def setBucketDefinitions(value: listOfS3BucketDefinitionForJob): Self = StObject.set(x, "bucketDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketDefinitionsUndefined: Self = StObject.set(x, "bucketDefinitions", js.undefined)
+    inline def setBucketDefinitionsUndefined: Self = StObject.set(x, "bucketDefinitions", js.undefined)
     
-    @scala.inline
-    def setBucketDefinitionsVarargs(value: S3BucketDefinitionForJob*): Self = StObject.set(x, "bucketDefinitions", js.Array(value :_*))
+    inline def setBucketDefinitionsVarargs(value: S3BucketDefinitionForJob*): Self = StObject.set(x, "bucketDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setScoping(value: Scoping): Self = StObject.set(x, "scoping", value.asInstanceOf[js.Any])
+    inline def setScoping(value: Scoping): Self = StObject.set(x, "scoping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopingUndefined: Self = StObject.set(x, "scoping", js.undefined)
+    inline def setScopingUndefined: Self = StObject.set(x, "scoping", js.undefined)
   }
 }

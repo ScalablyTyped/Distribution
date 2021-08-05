@@ -14,31 +14,23 @@ trait FormLayout extends StObject {
 }
 object FormLayout {
   
-  @scala.inline
-  def apply(): FormLayout = {
+  inline def apply(): FormLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormLayout]
   }
   
-  @scala.inline
-  implicit class FormLayoutMutableBuilder[Self <: FormLayout] (val x: Self) extends AnyVal {
+  extension [Self <: FormLayout](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

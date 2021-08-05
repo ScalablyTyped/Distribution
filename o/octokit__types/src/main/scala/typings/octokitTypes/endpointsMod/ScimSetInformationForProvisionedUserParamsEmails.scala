@@ -14,23 +14,18 @@ trait ScimSetInformationForProvisionedUserParamsEmails extends StObject {
 }
 object ScimSetInformationForProvisionedUserParamsEmails {
   
-  @scala.inline
-  def apply(primary: Boolean, `type`: String, value: String): ScimSetInformationForProvisionedUserParamsEmails = {
+  inline def apply(primary: Boolean, `type`: String, value: String): ScimSetInformationForProvisionedUserParamsEmails = {
     val __obj = js.Dynamic.literal(primary = primary.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScimSetInformationForProvisionedUserParamsEmails]
   }
   
-  @scala.inline
-  implicit class ScimSetInformationForProvisionedUserParamsEmailsMutableBuilder[Self <: ScimSetInformationForProvisionedUserParamsEmails] (val x: Self) extends AnyVal {
+  extension [Self <: ScimSetInformationForProvisionedUserParamsEmails](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

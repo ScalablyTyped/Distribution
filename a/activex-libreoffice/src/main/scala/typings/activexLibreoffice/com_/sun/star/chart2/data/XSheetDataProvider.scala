@@ -19,8 +19,7 @@ trait XSheetDataProvider
 }
 object XSheetDataProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDataSequenceByFormulaTokens: SeqEquiv[FormulaToken] => XDataSequence,
     createDataSequenceByFormulaTokensPossible: SeqEquiv[FormulaToken] => Boolean,
@@ -31,13 +30,10 @@ object XSheetDataProvider {
     __obj.asInstanceOf[XSheetDataProvider]
   }
   
-  @scala.inline
-  implicit class XSheetDataProviderMutableBuilder[Self <: XSheetDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetDataProvider](x: Self) {
     
-    @scala.inline
-    def setCreateDataSequenceByFormulaTokens(value: SeqEquiv[FormulaToken] => XDataSequence): Self = StObject.set(x, "createDataSequenceByFormulaTokens", js.Any.fromFunction1(value))
+    inline def setCreateDataSequenceByFormulaTokens(value: SeqEquiv[FormulaToken] => XDataSequence): Self = StObject.set(x, "createDataSequenceByFormulaTokens", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDataSequenceByFormulaTokensPossible(value: SeqEquiv[FormulaToken] => Boolean): Self = StObject.set(x, "createDataSequenceByFormulaTokensPossible", js.Any.fromFunction1(value))
+    inline def setCreateDataSequenceByFormulaTokensPossible(value: SeqEquiv[FormulaToken] => Boolean): Self = StObject.set(x, "createDataSequenceByFormulaTokensPossible", js.Any.fromFunction1(value))
   }
 }

@@ -18,31 +18,23 @@ trait ParameterOptions extends StObject {
 }
 object ParameterOptions {
   
-  @scala.inline
-  def apply(): ParameterOptions = {
+  inline def apply(): ParameterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterOptions]
   }
   
-  @scala.inline
-  implicit class ParameterOptionsMutableBuilder[Self <: ParameterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double | max): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double | max): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

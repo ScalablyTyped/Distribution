@@ -14,25 +14,19 @@ trait PathProps
 }
 object PathProps {
   
-  @scala.inline
-  def apply(): PathProps = {
+  inline def apply(): PathProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathProps]
   }
   
-  @scala.inline
-  implicit class PathPropsMutableBuilder[Self <: PathProps] (val x: Self) extends AnyVal {
+  extension [Self <: PathProps](x: Self) {
     
-    @scala.inline
-    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

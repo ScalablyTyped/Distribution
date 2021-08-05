@@ -26,67 +26,47 @@ trait PaneOptions extends StObject {
 }
 object PaneOptions {
   
-  @scala.inline
-  def apply(): PaneOptions = {
+  inline def apply(): PaneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaneOptions]
   }
   
-  @scala.inline
-  implicit class PaneOptionsMutableBuilder[Self <: PaneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaneOptions](x: Self) {
     
-    @scala.inline
-    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
-    @scala.inline
-    def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNavigate(value: /* e */ PaneNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+    inline def setNavigate(value: /* e */ PaneNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+    inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
-    @scala.inline
-    def setPortraitWidth(value: Double): Self = StObject.set(x, "portraitWidth", value.asInstanceOf[js.Any])
+    inline def setPortraitWidth(value: Double): Self = StObject.set(x, "portraitWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortraitWidthUndefined: Self = StObject.set(x, "portraitWidth", js.undefined)
+    inline def setPortraitWidthUndefined: Self = StObject.set(x, "portraitWidth", js.undefined)
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    @scala.inline
-    def setViewShow(value: /* e */ PaneViewShowEvent => Unit): Self = StObject.set(x, "viewShow", js.Any.fromFunction1(value))
+    inline def setViewShow(value: /* e */ PaneViewShowEvent => Unit): Self = StObject.set(x, "viewShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setViewShowUndefined: Self = StObject.set(x, "viewShow", js.undefined)
+    inline def setViewShowUndefined: Self = StObject.set(x, "viewShow", js.undefined)
   }
 }

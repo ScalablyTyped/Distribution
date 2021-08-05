@@ -14,6 +14,5 @@ object cleanMod {
   @JSImport("webdriver-manager/built/lib/cmds/clean", "program")
   @js.native
   def program: Program = js.native
-  @scala.inline
-  def program_=(x: Program): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("program")(x.asInstanceOf[js.Any])
+  inline def program_=(x: Program): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("program")(x.asInstanceOf[js.Any])
 }

@@ -13,16 +13,13 @@ trait DisassociateRepositoryRequest extends StObject {
 }
 object DisassociateRepositoryRequest {
   
-  @scala.inline
-  def apply(AssociationArn: AssociationArn): DisassociateRepositoryRequest = {
+  inline def apply(AssociationArn: AssociationArn): DisassociateRepositoryRequest = {
     val __obj = js.Dynamic.literal(AssociationArn = AssociationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateRepositoryRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateRepositoryRequestMutableBuilder[Self <: DisassociateRepositoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateRepositoryRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationArn(value: AssociationArn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
+    inline def setAssociationArn(value: AssociationArn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
   }
 }

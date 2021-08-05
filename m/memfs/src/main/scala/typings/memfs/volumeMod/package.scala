@@ -5,39 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def bufferToEncoding(buffer: typings.node.Buffer): typings.memfs.encodingMod.TDataOut = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("bufferToEncoding")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.encodingMod.TDataOut]
-@scala.inline
-def bufferToEncoding(buffer: typings.node.Buffer, encoding: typings.memfs.encodingMod.TEncodingExtended): typings.memfs.encodingMod.TDataOut = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("bufferToEncoding")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.encodingMod.TDataOut]
+inline def bufferToEncoding(buffer: typings.node.Buffer): typings.memfs.encodingMod.TDataOut = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("bufferToEncoding")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.encodingMod.TDataOut]
+inline def bufferToEncoding(buffer: typings.node.Buffer, encoding: typings.memfs.encodingMod.TEncodingExtended): typings.memfs.encodingMod.TDataOut = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("bufferToEncoding")(buffer.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.encodingMod.TDataOut]
 
-@scala.inline
-def dataToBuffer(data: typings.memfs.volumeMod.TData): typings.node.Buffer = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToBuffer")(data.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
-@scala.inline
-def dataToBuffer(data: typings.memfs.volumeMod.TData, encoding: java.lang.String): typings.node.Buffer = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToBuffer")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
+inline def dataToBuffer(data: typings.memfs.volumeMod.TData): typings.node.Buffer = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToBuffer")(data.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
+inline def dataToBuffer(data: typings.memfs.volumeMod.TData, encoding: java.lang.String): typings.node.Buffer = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToBuffer")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
 
-@scala.inline
-def dataToStr(data: typings.memfs.volumeMod.TData): java.lang.String = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToStr")(data.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def dataToStr(data: typings.memfs.volumeMod.TData, encoding: java.lang.String): java.lang.String = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToStr")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def dataToStr(data: typings.memfs.volumeMod.TData): java.lang.String = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToStr")(data.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def dataToStr(data: typings.memfs.volumeMod.TData, encoding: java.lang.String): java.lang.String = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("dataToStr")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def filenameToSteps(filename: java.lang.String): js.Array[java.lang.String] = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("filenameToSteps")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-@scala.inline
-def filenameToSteps(filename: java.lang.String, base: java.lang.String): js.Array[java.lang.String] = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("filenameToSteps")(filename.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def filenameToSteps(filename: java.lang.String): js.Array[java.lang.String] = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("filenameToSteps")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
+inline def filenameToSteps(filename: java.lang.String, base: java.lang.String): js.Array[java.lang.String] = (typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("filenameToSteps")(filename.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
 
-@scala.inline
-def flagsToNumber(): scala.Double = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("flagsToNumber")().asInstanceOf[scala.Double]
-@scala.inline
-def flagsToNumber(flags: typings.memfs.volumeMod.TFlags): scala.Double = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("flagsToNumber")(flags.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def flagsToNumber(): scala.Double = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("flagsToNumber")().asInstanceOf[scala.Double]
+inline def flagsToNumber(flags: typings.memfs.volumeMod.TFlags): scala.Double = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("flagsToNumber")(flags.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
 
-@scala.inline
-def pathToFilename(path: typings.node.fsMod.PathLike): java.lang.String = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("pathToFilename")(path.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def pathToFilename(path: typings.node.fsMod.PathLike): java.lang.String = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("pathToFilename")(path.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
-@scala.inline
-def pathToSteps(path: typings.node.fsMod.PathLike): js.Array[java.lang.String] = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("pathToSteps")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
+inline def pathToSteps(path: typings.node.fsMod.PathLike): js.Array[java.lang.String] = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("pathToSteps")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
 
-@scala.inline
-def toUnixTimestamp(time: js.Any): js.Any = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("toUnixTimestamp")(time.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def toUnixTimestamp(time: js.Any): js.Any = typings.memfs.volumeMod.^.asInstanceOf[js.Dynamic].applyDynamic("toUnixTimestamp")(time.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
 type DirectoryContent = java.lang.String | scala.Null
 

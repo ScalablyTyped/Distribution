@@ -18,19 +18,15 @@ trait OriginRequestPolicySummary extends StObject {
 }
 object OriginRequestPolicySummary {
   
-  @scala.inline
-  def apply(OriginRequestPolicy: OriginRequestPolicy, Type: OriginRequestPolicyType): OriginRequestPolicySummary = {
+  inline def apply(OriginRequestPolicy: OriginRequestPolicy, Type: OriginRequestPolicyType): OriginRequestPolicySummary = {
     val __obj = js.Dynamic.literal(OriginRequestPolicy = OriginRequestPolicy.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginRequestPolicySummary]
   }
   
-  @scala.inline
-  implicit class OriginRequestPolicySummaryMutableBuilder[Self <: OriginRequestPolicySummary] (val x: Self) extends AnyVal {
+  extension [Self <: OriginRequestPolicySummary](x: Self) {
     
-    @scala.inline
-    def setOriginRequestPolicy(value: OriginRequestPolicy): Self = StObject.set(x, "OriginRequestPolicy", value.asInstanceOf[js.Any])
+    inline def setOriginRequestPolicy(value: OriginRequestPolicy): Self = StObject.set(x, "OriginRequestPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: OriginRequestPolicyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: OriginRequestPolicyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,7 +16,7 @@ object kmsclientMod {
   class KMSClient protected () extends StObject {
     def this(configuration: KMSConfiguration) = this()
     
-    val config: KMSResolvedConfiguration = js.native
+    /* protected */ val config: KMSResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

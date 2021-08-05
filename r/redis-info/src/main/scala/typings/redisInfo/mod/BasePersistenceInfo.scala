@@ -36,8 +36,7 @@ trait BasePersistenceInfo extends StObject {
 }
 object BasePersistenceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aof_current_rewrite_time_sec: String,
     aof_last_bgrewrite_status: String,
     aof_last_cow_size: String,
@@ -57,49 +56,34 @@ object BasePersistenceInfo {
     __obj.asInstanceOf[BasePersistenceInfo]
   }
   
-  @scala.inline
-  implicit class BasePersistenceInfoMutableBuilder[Self <: BasePersistenceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BasePersistenceInfo](x: Self) {
     
-    @scala.inline
-    def setAof_current_rewrite_time_sec(value: String): Self = StObject.set(x, "aof_current_rewrite_time_sec", value.asInstanceOf[js.Any])
+    inline def setAof_current_rewrite_time_sec(value: String): Self = StObject.set(x, "aof_current_rewrite_time_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_last_bgrewrite_status(value: String): Self = StObject.set(x, "aof_last_bgrewrite_status", value.asInstanceOf[js.Any])
+    inline def setAof_last_bgrewrite_status(value: String): Self = StObject.set(x, "aof_last_bgrewrite_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_last_cow_size(value: String): Self = StObject.set(x, "aof_last_cow_size", value.asInstanceOf[js.Any])
+    inline def setAof_last_cow_size(value: String): Self = StObject.set(x, "aof_last_cow_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_last_rewrite_time_sec(value: String): Self = StObject.set(x, "aof_last_rewrite_time_sec", value.asInstanceOf[js.Any])
+    inline def setAof_last_rewrite_time_sec(value: String): Self = StObject.set(x, "aof_last_rewrite_time_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_last_write_status(value: String): Self = StObject.set(x, "aof_last_write_status", value.asInstanceOf[js.Any])
+    inline def setAof_last_write_status(value: String): Self = StObject.set(x, "aof_last_write_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_rewrite_in_progress(value: Flag): Self = StObject.set(x, "aof_rewrite_in_progress", value.asInstanceOf[js.Any])
+    inline def setAof_rewrite_in_progress(value: Flag): Self = StObject.set(x, "aof_rewrite_in_progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAof_rewrite_scheduled(value: Flag): Self = StObject.set(x, "aof_rewrite_scheduled", value.asInstanceOf[js.Any])
+    inline def setAof_rewrite_scheduled(value: Flag): Self = StObject.set(x, "aof_rewrite_scheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdb_bgsave_in_progress(value: Flag): Self = StObject.set(x, "rdb_bgsave_in_progress", value.asInstanceOf[js.Any])
+    inline def setRdb_bgsave_in_progress(value: Flag): Self = StObject.set(x, "rdb_bgsave_in_progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdb_changes_since_last_save(value: String): Self = StObject.set(x, "rdb_changes_since_last_save", value.asInstanceOf[js.Any])
+    inline def setRdb_changes_since_last_save(value: String): Self = StObject.set(x, "rdb_changes_since_last_save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdb_current_bgsave_time_sec(value: String): Self = StObject.set(x, "rdb_current_bgsave_time_sec", value.asInstanceOf[js.Any])
+    inline def setRdb_current_bgsave_time_sec(value: String): Self = StObject.set(x, "rdb_current_bgsave_time_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdb_last_bgsave_status(value: String): Self = StObject.set(x, "rdb_last_bgsave_status", value.asInstanceOf[js.Any])
+    inline def setRdb_last_bgsave_status(value: String): Self = StObject.set(x, "rdb_last_bgsave_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdb_last_bgsave_time_sec(value: String): Self = StObject.set(x, "rdb_last_bgsave_time_sec", value.asInstanceOf[js.Any])
+    inline def setRdb_last_bgsave_time_sec(value: String): Self = StObject.set(x, "rdb_last_bgsave_time_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdb_last_cow_size(value: String): Self = StObject.set(x, "rdb_last_cow_size", value.asInstanceOf[js.Any])
+    inline def setRdb_last_cow_size(value: String): Self = StObject.set(x, "rdb_last_cow_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdb_last_save_time(value: String): Self = StObject.set(x, "rdb_last_save_time", value.asInstanceOf[js.Any])
+    inline def setRdb_last_save_time(value: String): Self = StObject.set(x, "rdb_last_save_time", value.asInstanceOf[js.Any])
   }
 }

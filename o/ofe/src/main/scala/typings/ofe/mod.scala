@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def call(): done = ^.asInstanceOf[js.Dynamic].applyDynamic("call")().asInstanceOf[done]
+  inline def call(): done = ^.asInstanceOf[js.Dynamic].applyDynamic("call")().asInstanceOf[done]
 }

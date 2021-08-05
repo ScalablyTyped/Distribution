@@ -21,8 +21,7 @@ trait VoiceCommand extends StObject {
 }
 object VoiceCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commandName: String,
     properties: IMapView[String, IVectorView[js.Any]],
     speechRecognitionResult: SpeechRecognitionResult
@@ -31,16 +30,12 @@ object VoiceCommand {
     __obj.asInstanceOf[VoiceCommand]
   }
   
-  @scala.inline
-  implicit class VoiceCommandMutableBuilder[Self <: VoiceCommand] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommand](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMapView[String, IVectorView[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, IVectorView[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechRecognitionResult(value: SpeechRecognitionResult): Self = StObject.set(x, "speechRecognitionResult", value.asInstanceOf[js.Any])
+    inline def setSpeechRecognitionResult(value: SpeechRecognitionResult): Self = StObject.set(x, "speechRecognitionResult", value.asInstanceOf[js.Any])
   }
 }

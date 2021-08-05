@@ -13,16 +13,13 @@ trait FrameStartedLoadingEvent extends StObject {
 }
 object FrameStartedLoadingEvent {
   
-  @scala.inline
-  def apply(frameId: FrameId): FrameStartedLoadingEvent = {
+  inline def apply(frameId: FrameId): FrameStartedLoadingEvent = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameStartedLoadingEvent]
   }
   
-  @scala.inline
-  implicit class FrameStartedLoadingEventMutableBuilder[Self <: FrameStartedLoadingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FrameStartedLoadingEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }
 }

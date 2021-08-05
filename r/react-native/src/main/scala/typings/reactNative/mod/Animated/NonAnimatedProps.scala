@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NonAnimatedProps extends StObject
 object NonAnimatedProps {
   
-  @scala.inline
-  def key: typings.reactNative.reactNativeStrings.key = "key".asInstanceOf[typings.reactNative.reactNativeStrings.key]
+  inline def key: typings.reactNative.reactNativeStrings.key = "key".asInstanceOf[typings.reactNative.reactNativeStrings.key]
   
-  @scala.inline
-  def ref: typings.reactNative.reactNativeStrings.ref = "ref".asInstanceOf[typings.reactNative.reactNativeStrings.ref]
+  inline def ref: typings.reactNative.reactNativeStrings.ref = "ref".asInstanceOf[typings.reactNative.reactNativeStrings.ref]
 }

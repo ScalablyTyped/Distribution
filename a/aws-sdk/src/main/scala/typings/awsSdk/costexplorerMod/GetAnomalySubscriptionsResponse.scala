@@ -18,25 +18,19 @@ trait GetAnomalySubscriptionsResponse extends StObject {
 }
 object GetAnomalySubscriptionsResponse {
   
-  @scala.inline
-  def apply(AnomalySubscriptions: AnomalySubscriptions): GetAnomalySubscriptionsResponse = {
+  inline def apply(AnomalySubscriptions: AnomalySubscriptions): GetAnomalySubscriptionsResponse = {
     val __obj = js.Dynamic.literal(AnomalySubscriptions = AnomalySubscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAnomalySubscriptionsResponse]
   }
   
-  @scala.inline
-  implicit class GetAnomalySubscriptionsResponseMutableBuilder[Self <: GetAnomalySubscriptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAnomalySubscriptionsResponse](x: Self) {
     
-    @scala.inline
-    def setAnomalySubscriptions(value: AnomalySubscriptions): Self = StObject.set(x, "AnomalySubscriptions", value.asInstanceOf[js.Any])
+    inline def setAnomalySubscriptions(value: AnomalySubscriptions): Self = StObject.set(x, "AnomalySubscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomalySubscriptionsVarargs(value: AnomalySubscription*): Self = StObject.set(x, "AnomalySubscriptions", js.Array(value :_*))
+    inline def setAnomalySubscriptionsVarargs(value: AnomalySubscription*): Self = StObject.set(x, "AnomalySubscriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

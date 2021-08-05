@@ -51,10 +51,8 @@ object BehaviorInstruction {
     * @param type The HtmlBehaviorResource to create.
     * @return The created instruction.
     */
-  @scala.inline
-  def attribute(attrName: String): BehaviorInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(attrName.asInstanceOf[js.Any]).asInstanceOf[BehaviorInstruction]
-  @scala.inline
-  def attribute(attrName: String, `type`: HtmlBehaviorResource): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(attrName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
+  inline def attribute(attrName: String): BehaviorInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(attrName.asInstanceOf[js.Any]).asInstanceOf[BehaviorInstruction]
+  inline def attribute(attrName: String, `type`: HtmlBehaviorResource): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(attrName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
   
   /**
     * Creates a dynamic component instruction.
@@ -63,8 +61,7 @@ object BehaviorInstruction {
     * @param viewFactory A view factory used in generating the component's view.
     * @return The created instruction.
     */
-  @scala.inline
-  def dynamic(host: Element, viewModel: js.Object, viewFactory: ViewFactory): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(host.asInstanceOf[js.Any], viewModel.asInstanceOf[js.Any], viewFactory.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
+  inline def dynamic(host: Element, viewModel: js.Object, viewFactory: ViewFactory): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(host.asInstanceOf[js.Any], viewModel.asInstanceOf[js.Any], viewFactory.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
   
   /**
     * Creates a custom element instruction.
@@ -72,15 +69,13 @@ object BehaviorInstruction {
     * @param type The HtmlBehaviorResource to create.
     * @return The created instruction.
     */
-  @scala.inline
-  def element(node: Node, `type`: HtmlBehaviorResource): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
+  inline def element(node: Node, `type`: HtmlBehaviorResource): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
   
   /**
     * Creates an instruction for element enhancement.
     * @return The created instruction.
     */
-  @scala.inline
-  def enhance(): BehaviorInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("enhance")().asInstanceOf[BehaviorInstruction]
+  inline def enhance(): BehaviorInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("enhance")().asInstanceOf[BehaviorInstruction]
   
   /**
     * A default behavior used in scenarios where explicit configuration isn't available.
@@ -88,8 +83,7 @@ object BehaviorInstruction {
   @JSImport("aurelia-templating", "BehaviorInstruction.normal")
   @js.native
   def normal: BehaviorInstruction = js.native
-  @scala.inline
-  def normal_=(x: BehaviorInstruction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
+  inline def normal_=(x: BehaviorInstruction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
   
   /**
     * Creates an instruction for unit testing.
@@ -97,6 +91,5 @@ object BehaviorInstruction {
     * @param attributes A key/value lookup of attributes for the behaior.
     * @return The created instruction.
     */
-  @scala.inline
-  def unitTest(`type`: HtmlBehaviorResource, attributes: js.Object): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("unitTest")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
+  inline def unitTest(`type`: HtmlBehaviorResource, attributes: js.Object): BehaviorInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("unitTest")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[BehaviorInstruction]
 }

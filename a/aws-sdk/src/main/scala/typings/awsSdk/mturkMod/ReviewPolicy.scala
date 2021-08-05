@@ -18,25 +18,19 @@ trait ReviewPolicy extends StObject {
 }
 object ReviewPolicy {
   
-  @scala.inline
-  def apply(PolicyName: String): ReviewPolicy = {
+  inline def apply(PolicyName: String): ReviewPolicy = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewPolicy]
   }
   
-  @scala.inline
-  implicit class ReviewPolicyMutableBuilder[Self <: ReviewPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewPolicy](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PolicyParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PolicyParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: PolicyParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: PolicyParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyName(value: String): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: String): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

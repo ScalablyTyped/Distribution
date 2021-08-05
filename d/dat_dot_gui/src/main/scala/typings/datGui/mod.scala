@@ -94,80 +94,67 @@ object mod {
     @JSImport("dat.gui", "GUI.CLASS_AUTO_PLACE")
     @js.native
     def CLASS_AUTO_PLACE: String = js.native
-    @scala.inline
-    def CLASS_AUTO_PLACE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_AUTO_PLACE")(x.asInstanceOf[js.Any])
+    inline def CLASS_AUTO_PLACE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_AUTO_PLACE")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_AUTO_PLACE_CONTAINER")
     @js.native
     def CLASS_AUTO_PLACE_CONTAINER: String = js.native
-    @scala.inline
-    def CLASS_AUTO_PLACE_CONTAINER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_AUTO_PLACE_CONTAINER")(x.asInstanceOf[js.Any])
+    inline def CLASS_AUTO_PLACE_CONTAINER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_AUTO_PLACE_CONTAINER")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_CLOSED")
     @js.native
     def CLASS_CLOSED: String = js.native
-    @scala.inline
-    def CLASS_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSED")(x.asInstanceOf[js.Any])
+    inline def CLASS_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSED")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_CLOSE_BOTTOM")
     @js.native
     def CLASS_CLOSE_BOTTOM: String = js.native
-    @scala.inline
-    def CLASS_CLOSE_BOTTOM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSE_BOTTOM")(x.asInstanceOf[js.Any])
+    inline def CLASS_CLOSE_BOTTOM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSE_BOTTOM")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_CLOSE_BUTTON")
     @js.native
     def CLASS_CLOSE_BUTTON: String = js.native
-    @scala.inline
-    def CLASS_CLOSE_BUTTON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSE_BUTTON")(x.asInstanceOf[js.Any])
+    inline def CLASS_CLOSE_BUTTON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSE_BUTTON")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_CLOSE_TOP")
     @js.native
     def CLASS_CLOSE_TOP: String = js.native
-    @scala.inline
-    def CLASS_CLOSE_TOP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSE_TOP")(x.asInstanceOf[js.Any])
+    inline def CLASS_CLOSE_TOP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CLOSE_TOP")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_CONTROLLER_ROW")
     @js.native
     def CLASS_CONTROLLER_ROW: String = js.native
-    @scala.inline
-    def CLASS_CONTROLLER_ROW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CONTROLLER_ROW")(x.asInstanceOf[js.Any])
+    inline def CLASS_CONTROLLER_ROW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_CONTROLLER_ROW")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_DRAG")
     @js.native
     def CLASS_DRAG: String = js.native
-    @scala.inline
-    def CLASS_DRAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_DRAG")(x.asInstanceOf[js.Any])
+    inline def CLASS_DRAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_DRAG")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_MAIN")
     @js.native
     def CLASS_MAIN: String = js.native
-    @scala.inline
-    def CLASS_MAIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_MAIN")(x.asInstanceOf[js.Any])
+    inline def CLASS_MAIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_MAIN")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.CLASS_TOO_TALL")
     @js.native
     def CLASS_TOO_TALL: String = js.native
-    @scala.inline
-    def CLASS_TOO_TALL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_TOO_TALL")(x.asInstanceOf[js.Any])
+    inline def CLASS_TOO_TALL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_TOO_TALL")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.DEFAULT_WIDTH")
     @js.native
     def DEFAULT_WIDTH: Double = js.native
-    @scala.inline
-    def DEFAULT_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_WIDTH")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_WIDTH")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.TEXT_CLOSED")
     @js.native
     def TEXT_CLOSED: String = js.native
-    @scala.inline
-    def TEXT_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_CLOSED")(x.asInstanceOf[js.Any])
+    inline def TEXT_CLOSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_CLOSED")(x.asInstanceOf[js.Any])
     
     @JSImport("dat.gui", "GUI.TEXT_OPEN")
     @js.native
     def TEXT_OPEN: String = js.native
-    @scala.inline
-    def TEXT_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_OPEN")(x.asInstanceOf[js.Any])
+    inline def TEXT_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_OPEN")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("dat.gui", "GUIController")
@@ -260,62 +247,44 @@ object mod {
   }
   object GUIParams {
     
-    @scala.inline
-    def apply(): GUIParams = {
+    inline def apply(): GUIParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GUIParams]
     }
     
-    @scala.inline
-    implicit class GUIParamsMutableBuilder[Self <: GUIParams] (val x: Self) extends AnyVal {
+    extension [Self <: GUIParams](x: Self) {
       
-      @scala.inline
-      def setAutoPlace(value: Boolean): Self = StObject.set(x, "autoPlace", value.asInstanceOf[js.Any])
+      inline def setAutoPlace(value: Boolean): Self = StObject.set(x, "autoPlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPlaceUndefined: Self = StObject.set(x, "autoPlace", js.undefined)
+      inline def setAutoPlaceUndefined: Self = StObject.set(x, "autoPlace", js.undefined)
       
-      @scala.inline
-      def setCloseOnTop(value: Boolean): Self = StObject.set(x, "closeOnTop", value.asInstanceOf[js.Any])
+      inline def setCloseOnTop(value: Boolean): Self = StObject.set(x, "closeOnTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnTopUndefined: Self = StObject.set(x, "closeOnTop", js.undefined)
+      inline def setCloseOnTopUndefined: Self = StObject.set(x, "closeOnTop", js.undefined)
       
-      @scala.inline
-      def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+      inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       
-      @scala.inline
-      def setHideable(value: Boolean): Self = StObject.set(x, "hideable", value.asInstanceOf[js.Any])
+      inline def setHideable(value: Boolean): Self = StObject.set(x, "hideable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideableUndefined: Self = StObject.set(x, "hideable", js.undefined)
+      inline def setHideableUndefined: Self = StObject.set(x, "hideable", js.undefined)
       
-      @scala.inline
-      def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+      inline def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

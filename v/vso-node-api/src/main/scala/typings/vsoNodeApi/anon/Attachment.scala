@@ -12,19 +12,15 @@ trait Attachment extends StObject {
 }
 object Attachment {
   
-  @scala.inline
-  def apply(attachment: scala.Double, changeEntry: scala.Double): Attachment = {
+  inline def apply(attachment: scala.Double, changeEntry: scala.Double): Attachment = {
     val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], changeEntry = changeEntry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
   
-  @scala.inline
-  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+  extension [Self <: Attachment](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: scala.Double): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: scala.Double): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeEntry(value: scala.Double): Self = StObject.set(x, "changeEntry", value.asInstanceOf[js.Any])
+    inline def setChangeEntry(value: scala.Double): Self = StObject.set(x, "changeEntry", value.asInstanceOf[js.Any])
   }
 }

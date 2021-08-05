@@ -18,25 +18,19 @@ trait BuildNotDeleted extends StObject {
 }
 object BuildNotDeleted {
   
-  @scala.inline
-  def apply(): BuildNotDeleted = {
+  inline def apply(): BuildNotDeleted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildNotDeleted]
   }
   
-  @scala.inline
-  implicit class BuildNotDeletedMutableBuilder[Self <: BuildNotDeleted] (val x: Self) extends AnyVal {
+  extension [Self <: BuildNotDeleted](x: Self) {
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

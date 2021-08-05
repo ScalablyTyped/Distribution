@@ -28,22 +28,17 @@ trait ASPxClientSelectedTabPageChangedEventArgs
 }
 object ASPxClientSelectedTabPageChangedEventArgs {
   
-  @scala.inline
-  def apply(PreviousPage: String, SelectedPage: String, TabContainerName: String): ASPxClientSelectedTabPageChangedEventArgs = {
+  inline def apply(PreviousPage: String, SelectedPage: String, TabContainerName: String): ASPxClientSelectedTabPageChangedEventArgs = {
     val __obj = js.Dynamic.literal(PreviousPage = PreviousPage.asInstanceOf[js.Any], SelectedPage = SelectedPage.asInstanceOf[js.Any], TabContainerName = TabContainerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSelectedTabPageChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSelectedTabPageChangedEventArgsMutableBuilder[Self <: ASPxClientSelectedTabPageChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSelectedTabPageChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPreviousPage(value: String): Self = StObject.set(x, "PreviousPage", value.asInstanceOf[js.Any])
+    inline def setPreviousPage(value: String): Self = StObject.set(x, "PreviousPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedPage(value: String): Self = StObject.set(x, "SelectedPage", value.asInstanceOf[js.Any])
+    inline def setSelectedPage(value: String): Self = StObject.set(x, "SelectedPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabContainerName(value: String): Self = StObject.set(x, "TabContainerName", value.asInstanceOf[js.Any])
+    inline def setTabContainerName(value: String): Self = StObject.set(x, "TabContainerName", value.asInstanceOf[js.Any])
   }
 }

@@ -33,34 +33,25 @@ trait EncounterDiagnosis
 }
 object EncounterDiagnosis {
   
-  @scala.inline
-  def apply(condition: Reference): EncounterDiagnosis = {
+  inline def apply(condition: Reference): EncounterDiagnosis = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncounterDiagnosis]
   }
   
-  @scala.inline
-  implicit class EncounterDiagnosisMutableBuilder[Self <: EncounterDiagnosis] (val x: Self) extends AnyVal {
+  extension [Self <: EncounterDiagnosis](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Reference): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Reference): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: positiveInt): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: positiveInt): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def set_rank(value: Element): Self = StObject.set(x, "_rank", value.asInstanceOf[js.Any])
+    inline def set_rank(value: Element): Self = StObject.set(x, "_rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rankUndefined: Self = StObject.set(x, "_rank", js.undefined)
+    inline def set_rankUndefined: Self = StObject.set(x, "_rank", js.undefined)
   }
 }

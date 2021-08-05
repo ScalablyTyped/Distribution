@@ -12,8 +12,7 @@ object meanImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def meanImpl(
+  inline def meanImpl(
     x: TensorInfo,
     reduceShape: js.Array[Double],
     outShape: js.Array[Double],

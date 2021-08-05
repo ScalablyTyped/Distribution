@@ -21,7 +21,7 @@ object popoverControllerMod {
       */
     def this(props: Props, context: js.Any) = this()
     
-    var closePopover: js.Any = js.native
+    /* private */ var closePopover: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPopoverController(): Unit = js.native
@@ -29,15 +29,15 @@ object popoverControllerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MPopoverController(): Unit = js.native
     
-    var onOrientationChange: js.Any = js.native
+    /* private */ var onOrientationChange: js.Any = js.native
     
-    var onTouchableMeasured: js.Any = js.native
+    /* private */ var onTouchableMeasured: js.Any = js.native
     
-    var openPopover: js.Any = js.native
+    /* private */ var openPopover: js.Any = js.native
     
-    var setTouchableRef: js.Any = js.native
+    /* private */ var setTouchableRef: js.Any = js.native
     
-    var touchable: js.Any = js.native
+    /* private */ var touchable: js.Any = js.native
   }
   /* static members */
   object PopoverController {
@@ -49,8 +49,7 @@ object popoverControllerMod {
     @JSImport("react-native-modal-popover/lib/PopoverController", "PopoverController.propTypes")
     @js.native
     def propTypes: Children = js.native
-    @scala.inline
-    def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait PopoverControllerRenderProps extends StObject {
@@ -67,8 +66,7 @@ object popoverControllerMod {
   }
   object PopoverControllerRenderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closePopover: () => Unit,
       openPopover: () => Unit,
       popoverAnchorRect: Rect,
@@ -79,23 +77,17 @@ object popoverControllerMod {
       __obj.asInstanceOf[PopoverControllerRenderProps]
     }
     
-    @scala.inline
-    implicit class PopoverControllerRenderPropsMutableBuilder[Self <: PopoverControllerRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverControllerRenderProps](x: Self) {
       
-      @scala.inline
-      def setClosePopover(value: () => Unit): Self = StObject.set(x, "closePopover", js.Any.fromFunction0(value))
+      inline def setClosePopover(value: () => Unit): Self = StObject.set(x, "closePopover", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenPopover(value: () => Unit): Self = StObject.set(x, "openPopover", js.Any.fromFunction0(value))
+      inline def setOpenPopover(value: () => Unit): Self = StObject.set(x, "openPopover", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPopoverAnchorRect(value: Rect): Self = StObject.set(x, "popoverAnchorRect", value.asInstanceOf[js.Any])
+      inline def setPopoverAnchorRect(value: Rect): Self = StObject.set(x, "popoverAnchorRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverVisible(value: Boolean): Self = StObject.set(x, "popoverVisible", value.asInstanceOf[js.Any])
+      inline def setPopoverVisible(value: Boolean): Self = StObject.set(x, "popoverVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetPopoverAnchor(value: js.Any => Unit): Self = StObject.set(x, "setPopoverAnchor", js.Any.fromFunction1(value))
+      inline def setSetPopoverAnchor(value: js.Any => Unit): Self = StObject.set(x, "setPopoverAnchor", js.Any.fromFunction1(value))
     }
   }
   
@@ -105,17 +97,14 @@ object popoverControllerMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(children: PopoverControllerRenderProps => ReactElement): Props = {
+    inline def apply(children: PopoverControllerRenderProps => ReactElement): Props = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: PopoverControllerRenderProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: PopoverControllerRenderProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -127,20 +116,16 @@ object popoverControllerMod {
   }
   object State {
     
-    @scala.inline
-    def apply(popoverAnchor: Rect, showPopover: Boolean): State = {
+    inline def apply(popoverAnchor: Rect, showPopover: Boolean): State = {
       val __obj = js.Dynamic.literal(popoverAnchor = popoverAnchor.asInstanceOf[js.Any], showPopover = showPopover.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setPopoverAnchor(value: Rect): Self = StObject.set(x, "popoverAnchor", value.asInstanceOf[js.Any])
+      inline def setPopoverAnchor(value: Rect): Self = StObject.set(x, "popoverAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPopover(value: Boolean): Self = StObject.set(x, "showPopover", value.asInstanceOf[js.Any])
+      inline def setShowPopover(value: Boolean): Self = StObject.set(x, "showPopover", value.asInstanceOf[js.Any])
     }
   }
 }

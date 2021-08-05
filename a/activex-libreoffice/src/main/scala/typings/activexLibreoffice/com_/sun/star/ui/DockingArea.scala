@@ -27,22 +27,17 @@ trait DockingArea extends StObject
 object DockingArea {
   
   /** the bottom docking area above the status bar. */
-  @scala.inline
-  def DOCKINGAREA_BOTTOM: `1` = 1.asInstanceOf[`1`]
+  inline def DOCKINGAREA_BOTTOM: `1` = 1.asInstanceOf[`1`]
   
   /** a default docking area. It depends on the implementation how to treat this value. */
-  @scala.inline
-  def DOCKINGAREA_DEFAULT: `4` = 4.asInstanceOf[`4`]
+  inline def DOCKINGAREA_DEFAULT: `4` = 4.asInstanceOf[`4`]
   
   /** the left side docking area. */
-  @scala.inline
-  def DOCKINGAREA_LEFT: `2` = 2.asInstanceOf[`2`]
+  inline def DOCKINGAREA_LEFT: `2` = 2.asInstanceOf[`2`]
   
   /** the right side docking area. */
-  @scala.inline
-  def DOCKINGAREA_RIGHT: `3` = 3.asInstanceOf[`3`]
+  inline def DOCKINGAREA_RIGHT: `3` = 3.asInstanceOf[`3`]
   
   /** the top docking area below the menu bar. */
-  @scala.inline
-  def DOCKINGAREA_TOP: `0` = 0.asInstanceOf[`0`]
+  inline def DOCKINGAREA_TOP: `0` = 0.asInstanceOf[`0`]
 }

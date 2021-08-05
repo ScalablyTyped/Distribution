@@ -23,8 +23,7 @@ trait Mixin extends StObject {
 }
 object Mixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     __type: String,
     column: Double,
     filename: String,
@@ -38,28 +37,20 @@ object Mixin {
     __obj.asInstanceOf[Mixin]
   }
   
-  @scala.inline
-  implicit class MixinMutableBuilder[Self <: Mixin] (val x: Self) extends AnyVal {
+  extension [Self <: Mixin](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixin(value: Boolean): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
+    inline def setMixin(value: Boolean): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: Node): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: Node): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

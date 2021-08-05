@@ -17,17 +17,14 @@ trait ArcMark
 }
 object ArcMark {
   
-  @scala.inline
-  def apply(): ArcMark = {
+  inline def apply(): ArcMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("arc")
     __obj.asInstanceOf[ArcMark]
   }
   
-  @scala.inline
-  implicit class ArcMarkMutableBuilder[Self <: ArcMark] (val x: Self) extends AnyVal {
+  extension [Self <: ArcMark](x: Self) {
     
-    @scala.inline
-    def setType(value: arc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: arc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

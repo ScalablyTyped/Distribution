@@ -21,26 +21,20 @@ object typesCopyPartResultMod {
   }
   object CopyPartResult {
     
-    @scala.inline
-    def apply(): CopyPartResult = {
+    inline def apply(): CopyPartResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CopyPartResult]
     }
     
-    @scala.inline
-    implicit class CopyPartResultMutableBuilder[Self <: CopyPartResult] (val x: Self) extends AnyVal {
+    extension [Self <: CopyPartResult](x: Self) {
       
-      @scala.inline
-      def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+      inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+      inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
       
-      @scala.inline
-      def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     }
   }
   
@@ -56,20 +50,16 @@ object typesCopyPartResultMod {
   }
   object UnmarshalledCopyPartResult {
     
-    @scala.inline
-    def apply(): UnmarshalledCopyPartResult = {
+    inline def apply(): UnmarshalledCopyPartResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledCopyPartResult]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCopyPartResultMutableBuilder[Self <: UnmarshalledCopyPartResult] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCopyPartResult](x: Self) {
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     }
   }
 }

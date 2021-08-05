@@ -11,19 +11,15 @@ trait AddNamedRangeResponse extends StObject {
 }
 object AddNamedRangeResponse {
   
-  @scala.inline
-  def apply(): AddNamedRangeResponse = {
+  inline def apply(): AddNamedRangeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddNamedRangeResponse]
   }
   
-  @scala.inline
-  implicit class AddNamedRangeResponseMutableBuilder[Self <: AddNamedRangeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddNamedRangeResponse](x: Self) {
     
-    @scala.inline
-    def setNamedRange(value: NamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
+    inline def setNamedRange(value: NamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangeUndefined: Self = StObject.set(x, "namedRange", js.undefined)
+    inline def setNamedRangeUndefined: Self = StObject.set(x, "namedRange", js.undefined)
   }
 }

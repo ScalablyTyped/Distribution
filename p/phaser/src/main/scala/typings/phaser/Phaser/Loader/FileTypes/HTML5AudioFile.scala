@@ -40,8 +40,7 @@ trait HTML5AudioFile
 }
 object HTML5AudioFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,
@@ -77,16 +76,12 @@ object HTML5AudioFile {
     __obj.asInstanceOf[HTML5AudioFile]
   }
   
-  @scala.inline
-  implicit class HTML5AudioFileMutableBuilder[Self <: HTML5AudioFile] (val x: Self) extends AnyVal {
+  extension [Self <: HTML5AudioFile](x: Self) {
     
-    @scala.inline
-    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+    inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+    inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnProgress(value: () => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction0(value))
+    inline def setOnProgress(value: () => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction0(value))
   }
 }

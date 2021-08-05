@@ -43,52 +43,37 @@ trait ListCandidatesForAutoMLJobRequest extends StObject {
 }
 object ListCandidatesForAutoMLJobRequest {
   
-  @scala.inline
-  def apply(AutoMLJobName: AutoMLJobName): ListCandidatesForAutoMLJobRequest = {
+  inline def apply(AutoMLJobName: AutoMLJobName): ListCandidatesForAutoMLJobRequest = {
     val __obj = js.Dynamic.literal(AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCandidatesForAutoMLJobRequest]
   }
   
-  @scala.inline
-  implicit class ListCandidatesForAutoMLJobRequestMutableBuilder[Self <: ListCandidatesForAutoMLJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListCandidatesForAutoMLJobRequest](x: Self) {
     
-    @scala.inline
-    def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateNameEquals(value: CandidateName): Self = StObject.set(x, "CandidateNameEquals", value.asInstanceOf[js.Any])
+    inline def setCandidateNameEquals(value: CandidateName): Self = StObject.set(x, "CandidateNameEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateNameEqualsUndefined: Self = StObject.set(x, "CandidateNameEquals", js.undefined)
+    inline def setCandidateNameEqualsUndefined: Self = StObject.set(x, "CandidateNameEquals", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: AutoMLMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: AutoMLMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: CandidateSortBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: CandidateSortBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: AutoMLSortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: AutoMLSortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
-    @scala.inline
-    def setStatusEquals(value: CandidateStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
+    inline def setStatusEquals(value: CandidateStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
+    inline def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
   }
 }

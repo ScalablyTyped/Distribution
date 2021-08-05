@@ -29,31 +29,23 @@ trait SchemaResourceLocation extends StObject {
 }
 object SchemaResourceLocation {
   
-  @scala.inline
-  def apply(): SchemaResourceLocation = {
+  inline def apply(): SchemaResourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceLocation]
   }
   
-  @scala.inline
-  implicit class SchemaResourceLocationMutableBuilder[Self <: SchemaResourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceLocation](x: Self) {
     
-    @scala.inline
-    def setCurrentLocations(value: js.Array[String]): Self = StObject.set(x, "currentLocations", value.asInstanceOf[js.Any])
+    inline def setCurrentLocations(value: js.Array[String]): Self = StObject.set(x, "currentLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentLocationsUndefined: Self = StObject.set(x, "currentLocations", js.undefined)
+    inline def setCurrentLocationsUndefined: Self = StObject.set(x, "currentLocations", js.undefined)
     
-    @scala.inline
-    def setCurrentLocationsVarargs(value: String*): Self = StObject.set(x, "currentLocations", js.Array(value :_*))
+    inline def setCurrentLocationsVarargs(value: String*): Self = StObject.set(x, "currentLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setOriginalLocations(value: js.Array[String]): Self = StObject.set(x, "originalLocations", value.asInstanceOf[js.Any])
+    inline def setOriginalLocations(value: js.Array[String]): Self = StObject.set(x, "originalLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalLocationsUndefined: Self = StObject.set(x, "originalLocations", js.undefined)
+    inline def setOriginalLocationsUndefined: Self = StObject.set(x, "originalLocations", js.undefined)
     
-    @scala.inline
-    def setOriginalLocationsVarargs(value: String*): Self = StObject.set(x, "originalLocations", js.Array(value :_*))
+    inline def setOriginalLocationsVarargs(value: String*): Self = StObject.set(x, "originalLocations", js.Array(value :_*))
   }
 }

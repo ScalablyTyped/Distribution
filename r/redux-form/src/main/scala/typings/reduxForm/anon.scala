@@ -40,23 +40,18 @@ object anon {
   }
   object Form {
     
-    @scala.inline
-    def apply(form: String): Form = {
+    inline def apply(form: String): Form = {
       val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
       __obj.asInstanceOf[Form]
     }
     
-    @scala.inline
-    implicit class FormMutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
+    extension [Self <: Form](x: Self) {
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionPrefix(value: String): Self = StObject.set(x, "sectionPrefix", value.asInstanceOf[js.Any])
+      inline def setSectionPrefix(value: String): Self = StObject.set(x, "sectionPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionPrefixUndefined: Self = StObject.set(x, "sectionPrefix", js.undefined)
+      inline def setSectionPrefixUndefined: Self = StObject.set(x, "sectionPrefix", js.undefined)
     }
   }
   
@@ -73,38 +68,28 @@ object anon {
   }
   object PartialInitializeOptions {
     
-    @scala.inline
-    def apply(): PartialInitializeOptions = {
+    inline def apply(): PartialInitializeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialInitializeOptions]
     }
     
-    @scala.inline
-    implicit class PartialInitializeOptionsMutableBuilder[Self <: PartialInitializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialInitializeOptions](x: Self) {
       
-      @scala.inline
-      def setKeepDirty(value: Boolean): Self = StObject.set(x, "keepDirty", value.asInstanceOf[js.Any])
+      inline def setKeepDirty(value: Boolean): Self = StObject.set(x, "keepDirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepDirtyUndefined: Self = StObject.set(x, "keepDirty", js.undefined)
+      inline def setKeepDirtyUndefined: Self = StObject.set(x, "keepDirty", js.undefined)
       
-      @scala.inline
-      def setKeepSubmitSucceeded(value: Boolean): Self = StObject.set(x, "keepSubmitSucceeded", value.asInstanceOf[js.Any])
+      inline def setKeepSubmitSucceeded(value: Boolean): Self = StObject.set(x, "keepSubmitSucceeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepSubmitSucceededUndefined: Self = StObject.set(x, "keepSubmitSucceeded", js.undefined)
+      inline def setKeepSubmitSucceededUndefined: Self = StObject.set(x, "keepSubmitSucceeded", js.undefined)
       
-      @scala.inline
-      def setKeepValues(value: Boolean): Self = StObject.set(x, "keepValues", value.asInstanceOf[js.Any])
+      inline def setKeepValues(value: Boolean): Self = StObject.set(x, "keepValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
+      inline def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
       
-      @scala.inline
-      def setUpdateUnregisteredFields(value: Boolean): Self = StObject.set(x, "updateUnregisteredFields", value.asInstanceOf[js.Any])
+      inline def setUpdateUnregisteredFields(value: Boolean): Self = StObject.set(x, "updateUnregisteredFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUnregisteredFieldsUndefined: Self = StObject.set(x, "updateUnregisteredFields", js.undefined)
+      inline def setUpdateUnregisteredFieldsUndefined: Self = StObject.set(x, "updateUnregisteredFields", js.undefined)
     }
   }
   
@@ -114,17 +99,14 @@ object anon {
   }
   object Props {
     
-    @scala.inline
-    def apply[P](props: P): Props[P] = {
+    inline def apply[P](props: P): Props[P] = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props[P]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], P] (val x: Self & Props[P]) extends AnyVal {
+    extension [Self <: Props[?], P](x: Self & Props[P]) {
       
-      @scala.inline
-      def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,20 +116,16 @@ object anon {
   }
   object ReduxForm {
     
-    @scala.inline
-    def apply(): ReduxForm = {
+    inline def apply(): ReduxForm = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReduxForm]
     }
     
-    @scala.inline
-    implicit class ReduxFormMutableBuilder[Self <: ReduxForm] (val x: Self) extends AnyVal {
+    extension [Self <: ReduxForm](x: Self) {
       
-      @scala.inline
-      def set_reduxForm(value: WrappedReduxFormContext): Self = StObject.set(x, "_reduxForm", value.asInstanceOf[js.Any])
+      inline def set_reduxForm(value: WrappedReduxFormContext): Self = StObject.set(x, "_reduxForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_reduxFormUndefined: Self = StObject.set(x, "_reduxForm", js.undefined)
+      inline def set_reduxFormUndefined: Self = StObject.set(x, "_reduxForm", js.undefined)
     }
   }
 }

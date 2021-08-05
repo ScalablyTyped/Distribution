@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SsoDataResult extends StObject
 object SsoDataResult {
   
-  @scala.inline
-  def SsoSessionFoundResult(
+  inline def SsoSessionFoundResult(
     lastUsedClientID: String,
     lastUsedConnection: Name,
     lastUsedUserID: String,
@@ -24,8 +23,7 @@ object SsoDataResult {
     __obj.asInstanceOf[typings.auth0Js.mod.SsoSessionFoundResult]
   }
   
-  @scala.inline
-  def SsoSessionNotFoundResult(): typings.auth0Js.mod.SsoSessionNotFoundResult = {
+  inline def SsoSessionNotFoundResult(): typings.auth0Js.mod.SsoSessionNotFoundResult = {
     val __obj = js.Dynamic.literal(sso = false)
     __obj.asInstanceOf[typings.auth0Js.mod.SsoSessionNotFoundResult]
   }

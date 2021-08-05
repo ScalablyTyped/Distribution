@@ -39,8 +39,7 @@ trait DPlayer extends StObject {
 }
 object DPlayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     danmaku: Danmaku,
     destroy: () => Unit,
     events: js.Any,
@@ -61,52 +60,36 @@ object DPlayer {
     __obj.asInstanceOf[DPlayer]
   }
   
-  @scala.inline
-  implicit class DPlayerMutableBuilder[Self <: DPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: DPlayer](x: Self) {
     
-    @scala.inline
-    def setDanmaku(value: Danmaku): Self = StObject.set(x, "danmaku", value.asInstanceOf[js.Any])
+    inline def setDanmaku(value: Danmaku): Self = StObject.set(x, "danmaku", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreen(value: FullScreen): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: FullScreen): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotice(value: (String, Double, Double) => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction3(value))
+    inline def setNotice(value: (String, Double, Double) => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOn(value: (DPlayerEvents, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (DPlayerEvents, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+    inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpeed(value: Double => Unit): Self = StObject.set(x, "speed", js.Any.fromFunction1(value))
+    inline def setSpeed(value: Double => Unit): Self = StObject.set(x, "speed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchQuality(value: Double => Unit): Self = StObject.set(x, "switchQuality", js.Any.fromFunction1(value))
+    inline def setSwitchQuality(value: Double => Unit): Self = StObject.set(x, "switchQuality", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchVideo(value: (DPlayerVideo, DPlayerDanmaku) => Unit): Self = StObject.set(x, "switchVideo", js.Any.fromFunction2(value))
+    inline def setSwitchVideo(value: (DPlayerVideo, DPlayerDanmaku) => Unit): Self = StObject.set(x, "switchVideo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: (Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "volume", js.Any.fromFunction3(value))
+    inline def setVolume(value: (Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "volume", js.Any.fromFunction3(value))
   }
 }

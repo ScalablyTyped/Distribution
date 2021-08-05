@@ -75,61 +75,43 @@ trait TokenInfo extends StObject {
 }
 object TokenInfo {
   
-  @scala.inline
-  def apply(aud: String, expiry_date: Double, scopes: js.Array[String]): TokenInfo = {
+  inline def apply(aud: String, expiry_date: Double, scopes: js.Array[String]): TokenInfo = {
     val __obj = js.Dynamic.literal(aud = aud.asInstanceOf[js.Any], expiry_date = expiry_date.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenInfo]
   }
   
-  @scala.inline
-  implicit class TokenInfoMutableBuilder[Self <: TokenInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TokenInfo](x: Self) {
     
-    @scala.inline
-    def setAccess_type(value: String): Self = StObject.set(x, "access_type", value.asInstanceOf[js.Any])
+    inline def setAccess_type(value: String): Self = StObject.set(x, "access_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_typeUndefined: Self = StObject.set(x, "access_type", js.undefined)
+    inline def setAccess_typeUndefined: Self = StObject.set(x, "access_type", js.undefined)
     
-    @scala.inline
-    def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
+    inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzp(value: String): Self = StObject.set(x, "azp", value.asInstanceOf[js.Any])
+    inline def setAzp(value: String): Self = StObject.set(x, "azp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzpUndefined: Self = StObject.set(x, "azp", js.undefined)
+    inline def setAzpUndefined: Self = StObject.set(x, "azp", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
+    inline def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
+    inline def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
     
-    @scala.inline
-    def setExpiry_date(value: Double): Self = StObject.set(x, "expiry_date", value.asInstanceOf[js.Any])
+    inline def setExpiry_date(value: Double): Self = StObject.set(x, "expiry_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+    inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

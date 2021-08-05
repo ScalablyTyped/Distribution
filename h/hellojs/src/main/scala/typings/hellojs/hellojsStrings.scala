@@ -12,70 +12,60 @@ object hellojsStrings {
   sealed trait code
     extends StObject
        with HelloJSTokenResponseType
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait `code id_token`
     extends StObject
        with HelloJSTokenResponseType
-  @scala.inline
-  def `code id_token`: `code id_token` = ("code id_token").asInstanceOf[`code id_token`]
+  inline def `code id_token`: `code id_token` = ("code id_token").asInstanceOf[`code id_token`]
   
   @js.native
   sealed trait `code id_token token`
     extends StObject
        with HelloJSTokenResponseType
-  @scala.inline
-  def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
+  inline def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
   
   @js.native
   sealed trait `code token`
     extends StObject
        with HelloJSTokenResponseType
-  @scala.inline
-  def `code token`: `code token` = ("code token").asInstanceOf[`code token`]
+  inline def `code token`: `code token` = ("code token").asInstanceOf[`code token`]
   
   @js.native
   sealed trait id_token
     extends StObject
        with HelloJSTokenResponseType
-  @scala.inline
-  def id_token: id_token = "id_token".asInstanceOf[id_token]
+  inline def id_token: id_token = "id_token".asInstanceOf[id_token]
   
   @js.native
   sealed trait `id_token token`
     extends StObject
        with HelloJSTokenResponseType
-  @scala.inline
-  def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
+  inline def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   
   @js.native
   sealed trait none
     extends StObject
        with HelloJSDisplayType
        with HelloJSTokenResponseType
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait page
     extends StObject
        with HelloJSDisplayType
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait popup
     extends StObject
        with HelloJSDisplayType
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
+  inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
   sealed trait token
     extends StObject
        with HelloJSTokenResponseType
-  @scala.inline
-  def token: token = "token".asInstanceOf[token]
+  inline def token: token = "token".asInstanceOf[token]
 }

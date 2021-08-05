@@ -15,16 +15,12 @@ object CustomAttribute {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(config: Config, uuid: String, data: Custom): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
-  @scala.inline
-  def add(config: Config, uuid: String, data: CustomArray): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
+  inline def add(config: Config, uuid: String, data: Custom): js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Entries[typings.chartmogulNode.mod.Customer.Customer]]]
+  inline def add(config: Config, uuid: String, data: CustomArray): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
   
-  @scala.inline
-  def remove(config: Config, uuid: String, data: CustomStrings): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
+  inline def remove(config: Config, uuid: String, data: CustomStrings): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
   
-  @scala.inline
-  def update(config: Config, uuid: String, data: CustomAttributes): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
+  inline def update(config: Config, uuid: String, data: CustomAttributes): js.Promise[CustomAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CustomAttributes]]
   
   trait CustomAttributes extends StObject {
     
@@ -32,17 +28,14 @@ object CustomAttribute {
   }
   object CustomAttributes {
     
-    @scala.inline
-    def apply(custom: Map): CustomAttributes = {
+    inline def apply(custom: Map): CustomAttributes = {
       val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomAttributes]
     }
     
-    @scala.inline
-    implicit class CustomAttributesMutableBuilder[Self <: CustomAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: CustomAttributes](x: Self) {
       
-      @scala.inline
-      def setCustom(value: Map): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Map): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     }
   }
 }

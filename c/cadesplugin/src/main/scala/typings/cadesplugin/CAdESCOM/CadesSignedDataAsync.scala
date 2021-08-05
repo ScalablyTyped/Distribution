@@ -101,8 +101,7 @@ trait CadesSignedDataAsync extends StObject {
 }
 object CadesSignedDataAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Certificates: (// tslint:disable-line ban-types
   js.Promise[Unpacked[Certificates]]) | PromisifiedFunction[Certificates],
     Content: (// tslint:disable-line ban-types
@@ -183,50 +182,42 @@ object CadesSignedDataAsync {
     __obj.asInstanceOf[CadesSignedDataAsync]
   }
   
-  @scala.inline
-  implicit class CadesSignedDataAsyncMutableBuilder[Self <: CadesSignedDataAsync] (val x: Self) extends AnyVal {
+  extension [Self <: CadesSignedDataAsync](x: Self) {
     
-    @scala.inline
-    def setCertificates(
+    inline def setCertificates(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[Certificates]]) | PromisifiedFunction[Certificates]
     ): Self = StObject.set(x, "Certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesFunction1(
+    inline def setCertificatesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Certificates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContent(
+    inline def setContent(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentEncoding(
+    inline def setContentEncoding(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]]
     ): Self = StObject.set(x, "ContentEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentEncodingFunction1(
+    inline def setContentEncodingFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "ContentEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContentFunction1(
+    inline def setContentFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplay(
+    inline def setDisplay(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[
@@ -237,31 +228,26 @@ object CadesSignedDataAsync {
         ])
     ): Self = StObject.set(x, "Display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayData(
+    inline def setDisplayData(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CADESCOM_DISPLAY_DATA]]]) | PromisifiedFunction[ValuesOf[CADESCOM_DISPLAY_DATA]]
     ): Self = StObject.set(x, "DisplayData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayDataFunction1(
+    inline def setDisplayDataFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "DisplayData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplayFunction1(
+    inline def setDisplayFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Display", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplayFunction2(value: (/* hwndParent */ js.UndefOr[Double], /* title */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction2(value))
+    inline def setDisplayFunction2(value: (/* hwndParent */ js.UndefOr[Double], /* title */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnhanceCades(
+    inline def setEnhanceCades(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[
@@ -282,29 +268,23 @@ object CadesSignedDataAsync {
         ])
     ): Self = StObject.set(x, "EnhanceCades", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhanceCadesFunction1(
+    inline def setEnhanceCadesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "EnhanceCades", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnhanceCadesFunction3(
+    inline def setEnhanceCadesFunction3(
       value: (/* cadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], /* TSAAddress */ js.UndefOr[String], /* encodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]]) => String
     ): Self = StObject.set(x, "EnhanceCades", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPropset_Content(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_Content", js.Any.fromFunction1(value))
+    inline def setPropset_Content(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_Content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_ContentEncoding(value: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_ContentEncoding", js.Any.fromFunction1(value))
+    inline def setPropset_ContentEncoding(value: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_ContentEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_DisplayData(value: ValuesOf[CADESCOM_DISPLAY_DATA] => js.Promise[Unit]): Self = StObject.set(x, "propset_DisplayData", js.Any.fromFunction1(value))
+    inline def setPropset_DisplayData(value: ValuesOf[CADESCOM_DISPLAY_DATA] => js.Promise[Unit]): Self = StObject.set(x, "propset_DisplayData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSignCades(
+    inline def setSignCades(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[
@@ -327,20 +307,17 @@ object CadesSignedDataAsync {
         ])
     ): Self = StObject.set(x, "SignCades", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignCadesFunction1(
+    inline def setSignCadesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SignCades", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSignCadesFunction4(
+    inline def setSignCadesFunction4(
       value: (/* signer */ js.UndefOr[CPSigner], /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], /* bDetached */ js.UndefOr[Boolean], /* EncodingType */ js.UndefOr[ValuesOf[CAPICOM_ENCODING_TYPE]]) => String
     ): Self = StObject.set(x, "SignCades", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setVerifyCades(
+    inline def setVerifyCades(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[
@@ -361,15 +338,13 @@ object CadesSignedDataAsync {
         ])
     ): Self = StObject.set(x, "VerifyCades", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyCadesFunction1(
+    inline def setVerifyCadesFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "VerifyCades", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerifyCadesFunction3(
+    inline def setVerifyCadesFunction3(
       value: (/* SignedMessage */ String, /* CadesType */ js.UndefOr[ValuesOf[CADESCOM_CADES_TYPE]], /* bDetached */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "VerifyCades", js.Any.fromFunction3(value))
   }

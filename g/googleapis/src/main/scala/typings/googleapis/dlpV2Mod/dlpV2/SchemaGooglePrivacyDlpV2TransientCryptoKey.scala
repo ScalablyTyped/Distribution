@@ -22,19 +22,15 @@ trait SchemaGooglePrivacyDlpV2TransientCryptoKey extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TransientCryptoKey {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TransientCryptoKey = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TransientCryptoKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TransientCryptoKey]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TransientCryptoKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TransientCryptoKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TransientCryptoKey](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait FetchMessagesResponse extends StObject {
 }
 object FetchMessagesResponse {
   
-  @scala.inline
-  def apply(channels: StringDictionary[js.Array[Actions]]): FetchMessagesResponse = {
+  inline def apply(channels: StringDictionary[js.Array[Actions]]): FetchMessagesResponse = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchMessagesResponse]
   }
   
-  @scala.inline
-  implicit class FetchMessagesResponseMutableBuilder[Self <: FetchMessagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FetchMessagesResponse](x: Self) {
     
-    @scala.inline
-    def setChannels(value: StringDictionary[js.Array[Actions]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: StringDictionary[js.Array[Actions]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
   }
 }

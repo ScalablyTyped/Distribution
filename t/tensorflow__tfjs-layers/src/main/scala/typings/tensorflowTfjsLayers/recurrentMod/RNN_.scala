@@ -24,9 +24,9 @@ class RNN_ protected () extends Layer {
   
   val goBackwards: Boolean = js.native
   
-  var keptStates: js.Array[js.Array[Tensor[Rank]]] = js.native
+  /* protected */ var keptStates: js.Array[js.Array[Tensor[Rank]]] = js.native
   
-  var numConstants: js.Any = js.native
+  /* private */ var numConstants: js.Any = js.native
   
   def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
   def resetStates(states: js.Array[Tensor[Rank]], training: Boolean): Unit = js.native
@@ -50,7 +50,7 @@ class RNN_ protected () extends Layer {
     */
   var states: js.Array[Tensor[Rank]] = js.native
   
-  var states_ : js.Array[Tensor[Rank]] = js.native
+  /* protected */ var states_ : js.Array[Tensor[Rank]] = js.native
   
   val unroll: Boolean = js.native
 }
@@ -65,12 +65,9 @@ object RNN_ {
   @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   
   /** @nocollapse */
-  @scala.inline
-  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
 }

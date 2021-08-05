@@ -61,17 +61,13 @@ object taskEither {
   @js.native
   val URI: /* "TaskEither" */ String = js.native
   
-  @scala.inline
-  def alt[E, A](that: Lazy[TaskEither_[E, A]]): js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[E, A]]]
+  inline def alt[E, A](that: Lazy[TaskEither_[E, A]]): js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[E, A]]]
   
-  @scala.inline
-  def ap[E, A](fa: TaskEither_[E, A]): js.Function1[/* fab */ TaskEither_[E, js.Function1[/* a */ A, js.Any]], TaskEither_[E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ TaskEither_[E, js.Function1[/* a */ A, js.Any]], TaskEither_[E, js.Any]]]
+  inline def ap[E, A](fa: TaskEither_[E, A]): js.Function1[/* fab */ TaskEither_[E, js.Function1[/* a */ A, js.Any]], TaskEither_[E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ TaskEither_[E, js.Function1[/* a */ A, js.Any]], TaskEither_[E, js.Any]]]
   
-  @scala.inline
-  def apFirst[E, B](fb: TaskEither_[E, B]): js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, js.Any]]]
+  inline def apFirst[E, B](fb: TaskEither_[E, B]): js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, js.Any]]]
   
-  @scala.inline
-  def apS[A, N /* <: String */, E, B](name: Exclude[N, /* keyof A */ String], fb: TaskEither_[E, B]): js.Function1[
+  inline def apS[A, N /* <: String */, E, B](name: Exclude[N, /* keyof A */ String], fb: TaskEither_[E, B]): js.Function1[
     /* fa */ TaskEither_[E, A], 
     TaskEither_[
       E, 
@@ -89,8 +85,7 @@ object taskEither {
     ]
   ]]
   
-  @scala.inline
-  def apSW[A, N /* <: String */, D, B](name: Exclude[N, /* keyof A */ String], fb: TaskEither_[D, B]): js.Function1[
+  inline def apSW[A, N /* <: String */, D, B](name: Exclude[N, /* keyof A */ String], fb: TaskEither_[D, B]): js.Function1[
     /* fa */ TaskEither_[js.Any, A], 
     TaskEither_[
       D | js.Any, 
@@ -108,11 +103,9 @@ object taskEither {
     ]
   ]]
   
-  @scala.inline
-  def apSecond[E, B](fb: TaskEither_[E, B]): js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, B]]]
+  inline def apSecond[E, B](fb: TaskEither_[E, B]): js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[E, B]]]
   
-  @scala.inline
-  def apW[D, A](fa: TaskEither_[D, A]): js.Function1[
+  inline def apW[D, A](fa: TaskEither_[D, A]): js.Function1[
     /* fab */ TaskEither_[js.Any, js.Function1[/* a */ A, js.Any]], 
     TaskEither_[D | js.Any, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("apW")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -120,11 +113,9 @@ object taskEither {
     TaskEither_[D | js.Any, js.Any]
   ]]
   
-  @scala.inline
-  def bimap[E, G, A, B](f: js.Function1[/* e */ E, G], g: js.Function1[/* a */ A, B]): js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[G, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bimap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[G, B]]]
+  inline def bimap[E, G, A, B](f: js.Function1[/* e */ E, G], g: js.Function1[/* a */ A, B]): js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[G, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bimap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, A], TaskEither_[G, B]]]
   
-  @scala.inline
-  def bind[N /* <: String */, A, E, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[
+  inline def bind[N /* <: String */, A, E, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[
     /* fa */ TaskEither_[E, A], 
     TaskEither_[
       E, 
@@ -142,8 +133,7 @@ object taskEither {
     ]
   ]]
   
-  @scala.inline
-  def bindTo[N /* <: String */](name: N): js.Function1[
+  inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ TaskEither_[js.Any, js.Any], 
     TaskEither_[
       js.Any, 
@@ -161,8 +151,7 @@ object taskEither {
     ]
   ]]
   
-  @scala.inline
-  def bindW[N /* <: String */, A, D, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, TaskEither_[D, B]]): js.Function1[
+  inline def bindW[N /* <: String */, A, D, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, TaskEither_[D, B]]): js.Function1[
     /* fa */ TaskEither_[js.Any, A], 
     TaskEither_[
       D | js.Any, 
@@ -180,54 +169,39 @@ object taskEither {
     ]
   ]]
   
-  @scala.inline
-  def bracket[E, A, B](
+  inline def bracket[E, A, B](
     acquire: TaskEither_[E, A],
     use: js.Function1[/* a */ A, TaskEither_[E, B]],
     release: js.Function2[/* a */ A, /* e */ Either_[E, B], TaskEither_[E, Unit]]
   ): TaskEither_[E, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("bracket")(acquire.asInstanceOf[js.Any], use.asInstanceOf[js.Any], release.asInstanceOf[js.Any])).asInstanceOf[TaskEither_[E, B]]
   
-  @scala.inline
-  def chain[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
+  inline def chain[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
   
-  @scala.inline
-  def chainEitherK[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
+  inline def chainEitherK[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
   
-  @scala.inline
-  def chainEitherKW[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]]]
+  inline def chainEitherKW[E, A, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]]]
   
-  @scala.inline
-  def chainFirst[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]]]
+  inline def chainFirst[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]]]
   
-  @scala.inline
-  def chainFirstW[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, A]]]
+  inline def chainFirstW[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, A]]]
   
-  @scala.inline
-  def chainIOEitherK[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
+  inline def chainIOEitherK[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
   
-  @scala.inline
-  def chainIOEitherKW[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]]]
+  inline def chainIOEitherKW[E, A, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[js.Any | E, B]]]
   
-  @scala.inline
-  def chainW[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[E | js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[E | js.Any, B]]]
+  inline def chainW[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[E | js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[js.Any, A], TaskEither_[E | js.Any, B]]]
   
-  @scala.inline
-  def filterOrElse[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]]]
+  inline def filterOrElse[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, A]]]
   
-  @scala.inline
-  def filterOrElse_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
+  inline def filterOrElse_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[E, B]]]
   
-  @scala.inline
-  def flatten[E, A](mma: TaskEither_[E, TaskEither_[E, A]]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def flatten[E, A](mma: TaskEither_[E, TaskEither_[E, A]]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def fold[E, A, B](onLeft: js.Function1[/* e */ E, Task_[B]], onRight: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ TaskEither_[E, A], Task_[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onLeft.asInstanceOf[js.Any], onRight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], Task_[B]]]
+  inline def fold[E, A, B](onLeft: js.Function1[/* e */ E, Task_[B]], onRight: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ TaskEither_[E, A], Task_[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onLeft.asInstanceOf[js.Any], onRight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], Task_[B]]]
   
-  @scala.inline
-  def fromEither[E, A](ma: Either_[E, A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def fromEither[E, A](ma: Either_[E, A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def fromEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
+  inline def fromEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
   
   @JSImport("fp-ts", "taskEither.fromIO")
   @js.native
@@ -236,20 +210,15 @@ object taskEither {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def fromIOEither[E, A](fa: IOEither_[E, A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEither")(fa.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def fromIOEither[E, A](fa: IOEither_[E, A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEither")(fa.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def fromIOEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* a */ A, TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
+  inline def fromIOEitherK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* a */ A, TaskEither_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
   
-  @scala.inline
-  def fromOption[E](onNone: Lazy[E]): js.Function1[/* ma */ Option_[js.Any], TaskEither_[E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[js.Any], TaskEither_[E, js.Any]]]
+  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* ma */ Option_[js.Any], TaskEither_[E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[js.Any], TaskEither_[E, js.Any]]]
   
-  @scala.inline
-  def fromPredicate[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, TaskEither_[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, A]]]
+  inline def fromPredicate[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, TaskEither_[E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, A]]]
   
-  @scala.inline
-  def fromPredicate_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, TaskEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
+  inline def fromPredicate_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, TaskEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
   
   @JSImport("fp-ts", "taskEither.fromTask")
   @js.native
@@ -258,47 +227,33 @@ object taskEither {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def getAltTaskValidation[E](SE: Semigroup[E]): Alt2C[typings.fpTs.taskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltTaskValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[Alt2C[typings.fpTs.taskEitherMod.URI, E]]
+  inline def getAltTaskValidation[E](SE: Semigroup[E]): Alt2C[typings.fpTs.taskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltTaskValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[Alt2C[typings.fpTs.taskEitherMod.URI, E]]
   
-  @scala.inline
-  def getApplicativeTaskValidation[E](A: Apply1[typings.fpTs.taskMod.URI], SE: Semigroup[E]): Applicative2C[typings.fpTs.taskEitherMod.URI, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplicativeTaskValidation")(A.asInstanceOf[js.Any], SE.asInstanceOf[js.Any])).asInstanceOf[Applicative2C[typings.fpTs.taskEitherMod.URI, E]]
+  inline def getApplicativeTaskValidation[E](A: Apply1[typings.fpTs.taskMod.URI], SE: Semigroup[E]): Applicative2C[typings.fpTs.taskEitherMod.URI, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplicativeTaskValidation")(A.asInstanceOf[js.Any], SE.asInstanceOf[js.Any])).asInstanceOf[Applicative2C[typings.fpTs.taskEitherMod.URI, E]]
   
-  @scala.inline
-  def getApplyMonoid[E, A](M: Monoid[A]): Monoid[TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplyMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[TaskEither_[E, A]]]
+  inline def getApplyMonoid[E, A](M: Monoid[A]): Monoid[TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplyMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[TaskEither_[E, A]]]
   
-  @scala.inline
-  def getApplySemigroup[E, A](S: Semigroup[A]): Semigroup[TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplySemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[TaskEither_[E, A]]]
+  inline def getApplySemigroup[E, A](S: Semigroup[A]): Semigroup[TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplySemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[TaskEither_[E, A]]]
   
-  @scala.inline
-  def getFilterable[E](M: Monoid[E]): Filterable2C[typings.fpTs.taskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterable")(M.asInstanceOf[js.Any]).asInstanceOf[Filterable2C[typings.fpTs.taskEitherMod.URI, E]]
+  inline def getFilterable[E](M: Monoid[E]): Filterable2C[typings.fpTs.taskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterable")(M.asInstanceOf[js.Any]).asInstanceOf[Filterable2C[typings.fpTs.taskEitherMod.URI, E]]
   
-  @scala.inline
-  def getOrElse[E, A](onLeft: js.Function1[/* e */ E, Task_[A]]): js.Function1[/* ma */ TaskEither_[E, A], Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], Task_[A]]]
+  inline def getOrElse[E, A](onLeft: js.Function1[/* e */ E, Task_[A]]): js.Function1[/* ma */ TaskEither_[E, A], Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], Task_[A]]]
   
-  @scala.inline
-  def getOrElseW[E, B](onLeft: js.Function1[/* e */ E, Task_[B]]): js.Function1[/* ma */ TaskEither_[E, js.Any], Task_[B | js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, js.Any], Task_[B | js.Any]]]
+  inline def getOrElseW[E, B](onLeft: js.Function1[/* e */ E, Task_[B]]): js.Function1[/* ma */ TaskEither_[E, js.Any], Task_[B | js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, js.Any], Task_[B | js.Any]]]
   
-  @scala.inline
-  def getSemigroup[E, A](S: Semigroup[A]): Semigroup[TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[TaskEither_[E, A]]]
+  inline def getSemigroup[E, A](S: Semigroup[A]): Semigroup[TaskEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[TaskEither_[E, A]]]
   
-  @scala.inline
-  def getTaskValidation[E](SE: Semigroup[E]): (Monad2C[typings.fpTs.taskEitherMod.URI, E]) & Bifunctor2[typings.fpTs.taskEitherMod.URI] & (Alt2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadTask2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadThrow2C[typings.fpTs.taskEitherMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[(Monad2C[typings.fpTs.taskEitherMod.URI, E]) & Bifunctor2[typings.fpTs.taskEitherMod.URI] & (Alt2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadTask2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadThrow2C[typings.fpTs.taskEitherMod.URI, E])]
+  inline def getTaskValidation[E](SE: Semigroup[E]): (Monad2C[typings.fpTs.taskEitherMod.URI, E]) & Bifunctor2[typings.fpTs.taskEitherMod.URI] & (Alt2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadTask2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadThrow2C[typings.fpTs.taskEitherMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[(Monad2C[typings.fpTs.taskEitherMod.URI, E]) & Bifunctor2[typings.fpTs.taskEitherMod.URI] & (Alt2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadTask2C[typings.fpTs.taskEitherMod.URI, E]) & (MonadThrow2C[typings.fpTs.taskEitherMod.URI, E])]
   
-  @scala.inline
-  def left[E, A](e: E): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(e.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def left[E, A](e: E): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(e.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def leftIO[E, A](me: IO_[E]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftIO")(me.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def leftIO[E, A](me: IO_[E]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftIO")(me.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def leftTask[E, A](me: Task_[E]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftTask")(me.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def leftTask[E, A](me: Task_[E]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftTask")(me.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ TaskEither_[js.Any, A], TaskEither_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[js.Any, A], TaskEither_[js.Any, B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ TaskEither_[js.Any, A], TaskEither_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[js.Any, A], TaskEither_[js.Any, B]]]
   
-  @scala.inline
-  def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[G, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[G, js.Any]]]
+  inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[G, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskEither_[E, js.Any], TaskEither_[G, js.Any]]]
   
   @JSImport("fp-ts", "taskEither.of")
   @js.native
@@ -307,20 +262,15 @@ object taskEither {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def orElse[E, A, M](onLeft: js.Function1[/* e */ E, TaskEither_[M, A]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[M, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("orElse")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[M, A]]]
+  inline def orElse[E, A, M](onLeft: js.Function1[/* e */ E, TaskEither_[M, A]]): js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[M, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("orElse")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ TaskEither_[E, A], TaskEither_[M, A]]]
   
-  @scala.inline
-  def right[E, A](a: A): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(a.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def right[E, A](a: A): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(a.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def rightIO[E, A](ma: IO_[A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightIO")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def rightIO[E, A](ma: IO_[A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightIO")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def rightTask[E, A](ma: Task_[A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightTask")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
+  inline def rightTask[E, A](ma: Task_[A]): TaskEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightTask")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def swap[E, A](ma: TaskEither_[E, A]): TaskEither_[A, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("swap")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[A, E]]
+  inline def swap[E, A](ma: TaskEither_[E, A]): TaskEither_[A, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("swap")(ma.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[A, E]]
   
   @JSImport("fp-ts", "taskEither.taskEither")
   @js.native
@@ -330,23 +280,20 @@ object taskEither {
   @js.native
   val taskEitherSeq: Monad2[typings.fpTs.taskEitherMod.URI] & Bifunctor2[typings.fpTs.taskEitherMod.URI] & Alt2[typings.fpTs.taskEitherMod.URI] & MonadTask2[typings.fpTs.taskEitherMod.URI] & MonadThrow2[typings.fpTs.taskEitherMod.URI] = js.native
   
-  @scala.inline
-  def taskify[L, R](
+  inline def taskify[L, R](
     f: js.Function1[
       /* cb */ js.Function2[/* e */ js.UndefOr[L | Null], /* r */ js.UndefOr[R], Unit], 
       Unit
     ]
   ): js.Function0[TaskEither_[L, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("taskify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function0[TaskEither_[L, R]]]
-  @scala.inline
-  def taskify[A, L, R](
+  inline def taskify[A, L, R](
     f: js.Function2[
       /* a */ A, 
       /* cb */ js.Function2[/* e */ js.UndefOr[L | Null], /* r */ js.UndefOr[R], Unit], 
       Unit
     ]
   ): js.Function1[/* a */ A, TaskEither_[L, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("taskify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskEither_[L, R]]]
-  @scala.inline
-  def taskify[A, B, L, R](
+  inline def taskify[A, B, L, R](
     f: js.Function3[
       /* a */ A, 
       /* b */ B, 
@@ -354,8 +301,7 @@ object taskEither {
       Unit
     ]
   ): js.Function2[/* a */ A, /* b */ B, TaskEither_[L, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("taskify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ A, /* b */ B, TaskEither_[L, R]]]
-  @scala.inline
-  def taskify[A, B, C, L, R](
+  inline def taskify[A, B, C, L, R](
     f: js.Function4[
       /* a */ A, 
       /* b */ B, 
@@ -364,8 +310,7 @@ object taskEither {
       Unit
     ]
   ): js.Function3[/* a */ A, /* b */ B, /* c */ C, TaskEither_[L, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("taskify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a */ A, /* b */ B, /* c */ C, TaskEither_[L, R]]]
-  @scala.inline
-  def taskify[A, B, C, D, L, R](
+  inline def taskify[A, B, C, D, L, R](
     f: js.Function5[
       /* a */ A, 
       /* b */ B, 
@@ -375,8 +320,7 @@ object taskEither {
       Unit
     ]
   ): js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, TaskEither_[L, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("taskify")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, TaskEither_[L, R]]]
-  @scala.inline
-  def taskify[A, B, C, D, E, L, R](
+  inline def taskify[A, B, C, D, E, L, R](
     f: js.Function6[
       /* a */ A, 
       /* b */ B, 
@@ -395,11 +339,9 @@ object taskEither {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def tryCatch[E, A](f: Lazy[js.Promise[A]], onRejected: js.Function1[/* reason */ js.Any, E]): TaskEither_[E, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[TaskEither_[E, A]]
+  inline def tryCatch[E, A](f: Lazy[js.Promise[A]], onRejected: js.Function1[/* reason */ js.Any, E]): TaskEither_[E, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[TaskEither_[E, A]]
   
-  @scala.inline
-  def tryCatchK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, js.Promise[B]], onRejected: js.Function1[/* reason */ js.Any, E]): js.Function1[/* a */ A, TaskEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCatchK")(f.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
+  inline def tryCatchK[E, A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, js.Promise[B]], onRejected: js.Function1[/* reason */ js.Any, E]): js.Function1[/* a */ A, TaskEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCatchK")(f.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskEither_[E, B]]]
   
   object HKTAugmentingMod {
     

@@ -14,25 +14,19 @@ trait ShardingOption extends StObject {
 }
 object ShardingOption {
   
-  @scala.inline
-  def apply(): ShardingOption = {
+  inline def apply(): ShardingOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShardingOption]
   }
   
-  @scala.inline
-  implicit class ShardingOptionMutableBuilder[Self <: ShardingOption] (val x: Self) extends AnyVal {
+  extension [Self <: ShardingOption](x: Self) {
     
-    @scala.inline
-    def setManualSharding(value: ManualSharding): Self = StObject.set(x, "manualSharding", value.asInstanceOf[js.Any])
+    inline def setManualSharding(value: ManualSharding): Self = StObject.set(x, "manualSharding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualShardingUndefined: Self = StObject.set(x, "manualSharding", js.undefined)
+    inline def setManualShardingUndefined: Self = StObject.set(x, "manualSharding", js.undefined)
     
-    @scala.inline
-    def setUniformSharding(value: UniformSharding): Self = StObject.set(x, "uniformSharding", value.asInstanceOf[js.Any])
+    inline def setUniformSharding(value: UniformSharding): Self = StObject.set(x, "uniformSharding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniformShardingUndefined: Self = StObject.set(x, "uniformSharding", js.undefined)
+    inline def setUniformShardingUndefined: Self = StObject.set(x, "uniformSharding", js.undefined)
   }
 }

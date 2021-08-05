@@ -14,22 +14,17 @@ trait TaskDefinitionReference extends StObject {
 }
 object TaskDefinitionReference {
   
-  @scala.inline
-  def apply(definitionType: String, id: String, versionSpec: String): TaskDefinitionReference = {
+  inline def apply(definitionType: String, id: String, versionSpec: String): TaskDefinitionReference = {
     val __obj = js.Dynamic.literal(definitionType = definitionType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], versionSpec = versionSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionReference]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionReferenceMutableBuilder[Self <: TaskDefinitionReference] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinitionReference](x: Self) {
     
-    @scala.inline
-    def setDefinitionType(value: String): Self = StObject.set(x, "definitionType", value.asInstanceOf[js.Any])
+    inline def setDefinitionType(value: String): Self = StObject.set(x, "definitionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionSpec(value: String): Self = StObject.set(x, "versionSpec", value.asInstanceOf[js.Any])
+    inline def setVersionSpec(value: String): Self = StObject.set(x, "versionSpec", value.asInstanceOf[js.Any])
   }
 }

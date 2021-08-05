@@ -18,22 +18,17 @@ trait GetDefaultCreditSpecificationRequest extends StObject {
 }
 object GetDefaultCreditSpecificationRequest {
   
-  @scala.inline
-  def apply(InstanceFamily: UnlimitedSupportedInstanceFamily): GetDefaultCreditSpecificationRequest = {
+  inline def apply(InstanceFamily: UnlimitedSupportedInstanceFamily): GetDefaultCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(InstanceFamily = InstanceFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDefaultCreditSpecificationRequest]
   }
   
-  @scala.inline
-  implicit class GetDefaultCreditSpecificationRequestMutableBuilder[Self <: GetDefaultCreditSpecificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDefaultCreditSpecificationRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
+    inline def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
   }
 }

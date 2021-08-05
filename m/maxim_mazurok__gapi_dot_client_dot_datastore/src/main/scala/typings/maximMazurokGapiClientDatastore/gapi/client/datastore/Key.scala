@@ -20,28 +20,21 @@ trait Key extends StObject {
 }
 object Key {
   
-  @scala.inline
-  def apply(): Key = {
+  inline def apply(): Key = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Key]
   }
   
-  @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+  extension [Self <: Key](x: Self) {
     
-    @scala.inline
-    def setPartitionId(value: PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
+    inline def setPartitionId(value: PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
+    inline def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
     
-    @scala.inline
-    def setPath(value: js.Array[PathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[PathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPathVarargs(value: PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

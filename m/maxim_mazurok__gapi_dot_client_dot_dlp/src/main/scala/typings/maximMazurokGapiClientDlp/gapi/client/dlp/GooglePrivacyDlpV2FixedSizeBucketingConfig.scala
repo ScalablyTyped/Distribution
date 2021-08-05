@@ -26,31 +26,23 @@ trait GooglePrivacyDlpV2FixedSizeBucketingConfig extends StObject {
 }
 object GooglePrivacyDlpV2FixedSizeBucketingConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2FixedSizeBucketingConfig = {
+  inline def apply(): GooglePrivacyDlpV2FixedSizeBucketingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2FixedSizeBucketingConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2FixedSizeBucketingConfigMutableBuilder[Self <: GooglePrivacyDlpV2FixedSizeBucketingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2FixedSizeBucketingConfig](x: Self) {
     
-    @scala.inline
-    def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
+    inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
+    inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
-    @scala.inline
-    def setLowerBound(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
+    inline def setLowerBound(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
+    inline def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
-    @scala.inline
-    def setUpperBound(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
+    inline def setUpperBound(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
+    inline def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ListPlaybackKeyPairsResponse extends StObject {
 }
 object ListPlaybackKeyPairsResponse {
   
-  @scala.inline
-  def apply(keyPairs: PlaybackKeyPairList): ListPlaybackKeyPairsResponse = {
+  inline def apply(keyPairs: PlaybackKeyPairList): ListPlaybackKeyPairsResponse = {
     val __obj = js.Dynamic.literal(keyPairs = keyPairs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPlaybackKeyPairsResponse]
   }
   
-  @scala.inline
-  implicit class ListPlaybackKeyPairsResponseMutableBuilder[Self <: ListPlaybackKeyPairsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPlaybackKeyPairsResponse](x: Self) {
     
-    @scala.inline
-    def setKeyPairs(value: PlaybackKeyPairList): Self = StObject.set(x, "keyPairs", value.asInstanceOf[js.Any])
+    inline def setKeyPairs(value: PlaybackKeyPairList): Self = StObject.set(x, "keyPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairsVarargs(value: PlaybackKeyPairSummary*): Self = StObject.set(x, "keyPairs", js.Array(value :_*))
+    inline def setKeyPairsVarargs(value: PlaybackKeyPairSummary*): Self = StObject.set(x, "keyPairs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait PickImplmobileTransition extends StObject {
 }
 object PickImplmobileTransition {
   
-  @scala.inline
-  def apply(mobileTransition: String): PickImplmobileTransition = {
+  inline def apply(mobileTransition: String): PickImplmobileTransition = {
     val __obj = js.Dynamic.literal(mobileTransition = mobileTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmobileTransition]
   }
   
-  @scala.inline
-  implicit class PickImplmobileTransitionMutableBuilder[Self <: PickImplmobileTransition] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmobileTransition](x: Self) {
     
-    @scala.inline
-    def setMobileTransition(value: String): Self = StObject.set(x, "mobileTransition", value.asInstanceOf[js.Any])
+    inline def setMobileTransition(value: String): Self = StObject.set(x, "mobileTransition", value.asInstanceOf[js.Any])
   }
 }

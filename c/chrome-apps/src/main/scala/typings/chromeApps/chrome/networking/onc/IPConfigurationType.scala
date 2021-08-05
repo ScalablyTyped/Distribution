@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IPConfigurationType extends StObject
 object IPConfigurationType {
   
-  @scala.inline
-  def IPv4: typings.chromeApps.chromeAppsStrings.IPv4 = "IPv4".asInstanceOf[typings.chromeApps.chromeAppsStrings.IPv4]
+  inline def IPv4: typings.chromeApps.chromeAppsStrings.IPv4 = "IPv4".asInstanceOf[typings.chromeApps.chromeAppsStrings.IPv4]
   
-  @scala.inline
-  def IPv6: typings.chromeApps.chromeAppsStrings.IPv6 = "IPv6".asInstanceOf[typings.chromeApps.chromeAppsStrings.IPv6]
+  inline def IPv6: typings.chromeApps.chromeAppsStrings.IPv6 = "IPv6".asInstanceOf[typings.chromeApps.chromeAppsStrings.IPv6]
 }

@@ -43,8 +43,7 @@ trait DescribeAccessPolicyResponse extends StObject {
 }
 object DescribeAccessPolicyResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessPolicyArn: ARN,
     accessPolicyCreationDate: Timestamp,
     accessPolicyId: ID,
@@ -57,28 +56,20 @@ object DescribeAccessPolicyResponse {
     __obj.asInstanceOf[DescribeAccessPolicyResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAccessPolicyResponseMutableBuilder[Self <: DescribeAccessPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccessPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setAccessPolicyArn(value: ARN): Self = StObject.set(x, "accessPolicyArn", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyArn(value: ARN): Self = StObject.set(x, "accessPolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyCreationDate(value: Timestamp): Self = StObject.set(x, "accessPolicyCreationDate", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyCreationDate(value: Timestamp): Self = StObject.set(x, "accessPolicyCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyLastUpdateDate(value: Timestamp): Self = StObject.set(x, "accessPolicyLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyLastUpdateDate(value: Timestamp): Self = StObject.set(x, "accessPolicyLastUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
   }
 }

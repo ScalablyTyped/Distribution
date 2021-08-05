@@ -18,25 +18,19 @@ trait Principal extends StObject {
 }
 object Principal {
   
-  @scala.inline
-  def apply(): Principal = {
+  inline def apply(): Principal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Principal]
   }
   
-  @scala.inline
-  implicit class PrincipalMutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
+  extension [Self <: Principal](x: Self) {
     
-    @scala.inline
-    def setPrincipalARN(value: PrincipalARN): Self = StObject.set(x, "PrincipalARN", value.asInstanceOf[js.Any])
+    inline def setPrincipalARN(value: PrincipalARN): Self = StObject.set(x, "PrincipalARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalARNUndefined: Self = StObject.set(x, "PrincipalARN", js.undefined)
+    inline def setPrincipalARNUndefined: Self = StObject.set(x, "PrincipalARN", js.undefined)
     
-    @scala.inline
-    def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
+    inline def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
+    inline def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
   }
 }

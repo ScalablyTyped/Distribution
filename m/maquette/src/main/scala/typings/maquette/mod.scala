@@ -23,8 +23,7 @@ object mod {
   @JSImport("maquette", "createCache")
   @js.native
   def createCache: js.Function0[CalculationCache[js.Any]] = js.native
-  @scala.inline
-  def createCache_=(x: js.Function0[CalculationCache[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCache")(x.asInstanceOf[js.Any])
+  inline def createCache_=(x: js.Function0[CalculationCache[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCache")(x.asInstanceOf[js.Any])
   
   @JSImport("maquette", "createMapping")
   @js.native
@@ -34,8 +33,7 @@ object mod {
     /* updateResult */ js.Function3[/* source */ js.Any, /* target */ js.Any, /* index */ Double, Unit], 
     Mapping[js.Any, js.Any]
   ] = js.native
-  @scala.inline
-  def createMapping_=(
+  inline def createMapping_=(
     x: js.Function3[
       /* getSourceKey */ js.Function1[/* source */ js.Any, String | Double], 
       /* createResult */ js.Function2[/* source */ js.Any, /* index */ Double, js.Any], 
@@ -47,8 +45,7 @@ object mod {
   @JSImport("maquette", "createProjector")
   @js.native
   def createProjector: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector] = js.native
-  @scala.inline
-  def createProjector_=(x: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createProjector")(x.asInstanceOf[js.Any])
+  inline def createProjector_=(x: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createProjector")(x.asInstanceOf[js.Any])
   
   object dom {
     
@@ -65,10 +62,8 @@ object mod {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
-    @scala.inline
-    def append(parentNode: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(parentNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
-    @scala.inline
-    def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(parentNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def append(parentNode: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(parentNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def append(parentNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(parentNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Creates a real DOM tree from `vnode`. The [[Projection]] object returned will contain the resulting DOM Node in
@@ -79,10 +74,8 @@ object mod {
       * @param projectionOptions - Options to be used to create and update the projection.
       * @returns The [[Projection]] which also contains the DOM Node that was created.
       */
-    @scala.inline
-    def create(vnode: VNode): Projection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any]).asInstanceOf[Projection]
-    @scala.inline
-    def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def create(vnode: VNode): Projection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any]).asInstanceOf[Projection]
+    inline def create(vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Inserts a new DOM node which is generated from a [[VNode]].
@@ -93,10 +86,8 @@ object mod {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
-    @scala.inline
-    def insertBefore(beforeNode: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(beforeNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
-    @scala.inline
-    def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(beforeNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def insertBefore(beforeNode: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(beforeNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def insertBefore(beforeNode: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(beforeNode.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Merges a new DOM node which is generated from a [[VNode]] with an existing DOM Node.
@@ -109,10 +100,8 @@ object mod {
       * @param projectionOptions - Options to be used to create and update the projection, see [[createProjector]].
       * @returns The [[Projection]] that was created.
       */
-    @scala.inline
-    def merge(element: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
-    @scala.inline
-    def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def merge(element: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def merge(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
     
     /**
       * Replaces an existing DOM node with a node generated from a [[VNode]].
@@ -123,20 +112,13 @@ object mod {
       * @param projectionOptions - Options to be used to create and update the [[Projection]].
       * @returns The [[Projection]] that was created.
       */
-    @scala.inline
-    def replace(element: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
-    @scala.inline
-    def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def replace(element: Element, vnode: VNode): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any])).asInstanceOf[Projection]
+    inline def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(element.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], projectionOptions.asInstanceOf[js.Any])).asInstanceOf[Projection]
   }
   
-  @scala.inline
-  def h(selector: String): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any]).asInstanceOf[VNode]
-  @scala.inline
-  def h(selector: String, children: js.Array[VNodeChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(selector: String, properties: Unit, children: js.Array[VNodeChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(selector: String, properties: VNodeProperties): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[VNode]
-  @scala.inline
-  def h(selector: String, properties: VNodeProperties, children: js.Array[VNodeChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(selector: String): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  inline def h(selector: String, children: js.Array[VNodeChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(selector: String, properties: Unit, children: js.Array[VNodeChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(selector: String, properties: VNodeProperties): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def h(selector: String, properties: VNodeProperties, children: js.Array[VNodeChild]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
 }

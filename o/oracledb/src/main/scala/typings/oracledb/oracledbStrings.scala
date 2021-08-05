@@ -8,11 +8,9 @@ object oracledbStrings {
   
   @js.native
   sealed trait DBObject_IN extends StObject
-  @scala.inline
-  def DBObject_IN: DBObject_IN = "DBObject_IN".asInstanceOf[DBObject_IN]
+  inline def DBObject_IN: DBObject_IN = "DBObject_IN".asInstanceOf[DBObject_IN]
   
   @js.native
   sealed trait DBObject_OUT extends StObject
-  @scala.inline
-  def DBObject_OUT: DBObject_OUT = "DBObject_OUT".asInstanceOf[DBObject_OUT]
+  inline def DBObject_OUT: DBObject_OUT = "DBObject_OUT".asInstanceOf[DBObject_OUT]
 }

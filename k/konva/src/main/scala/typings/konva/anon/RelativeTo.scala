@@ -19,37 +19,27 @@ trait RelativeTo extends StObject {
 }
 object RelativeTo {
   
-  @scala.inline
-  def apply(): RelativeTo = {
+  inline def apply(): RelativeTo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelativeTo]
   }
   
-  @scala.inline
-  implicit class RelativeToMutableBuilder[Self <: RelativeTo] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeTo](x: Self) {
     
-    @scala.inline
-    def setRelativeTo(value: Container[Node[NodeConfig]]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+    inline def setRelativeTo(value: Container[Node[NodeConfig]]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
+    inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     
-    @scala.inline
-    def setSkipShadow(value: Boolean): Self = StObject.set(x, "skipShadow", value.asInstanceOf[js.Any])
+    inline def setSkipShadow(value: Boolean): Self = StObject.set(x, "skipShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipShadowUndefined: Self = StObject.set(x, "skipShadow", js.undefined)
+    inline def setSkipShadowUndefined: Self = StObject.set(x, "skipShadow", js.undefined)
     
-    @scala.inline
-    def setSkipStroke(value: Boolean): Self = StObject.set(x, "skipStroke", value.asInstanceOf[js.Any])
+    inline def setSkipStroke(value: Boolean): Self = StObject.set(x, "skipStroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipStrokeUndefined: Self = StObject.set(x, "skipStroke", js.undefined)
+    inline def setSkipStrokeUndefined: Self = StObject.set(x, "skipStroke", js.undefined)
     
-    @scala.inline
-    def setSkipTransform(value: Boolean): Self = StObject.set(x, "skipTransform", value.asInstanceOf[js.Any])
+    inline def setSkipTransform(value: Boolean): Self = StObject.set(x, "skipTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipTransformUndefined: Self = StObject.set(x, "skipTransform", js.undefined)
+    inline def setSkipTransformUndefined: Self = StObject.set(x, "skipTransform", js.undefined)
   }
 }

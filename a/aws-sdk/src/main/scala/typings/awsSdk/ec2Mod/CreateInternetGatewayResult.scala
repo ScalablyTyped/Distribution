@@ -13,19 +13,15 @@ trait CreateInternetGatewayResult extends StObject {
 }
 object CreateInternetGatewayResult {
   
-  @scala.inline
-  def apply(): CreateInternetGatewayResult = {
+  inline def apply(): CreateInternetGatewayResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateInternetGatewayResult]
   }
   
-  @scala.inline
-  implicit class CreateInternetGatewayResultMutableBuilder[Self <: CreateInternetGatewayResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInternetGatewayResult](x: Self) {
     
-    @scala.inline
-    def setInternetGateway(value: InternetGateway): Self = StObject.set(x, "InternetGateway", value.asInstanceOf[js.Any])
+    inline def setInternetGateway(value: InternetGateway): Self = StObject.set(x, "InternetGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternetGatewayUndefined: Self = StObject.set(x, "InternetGateway", js.undefined)
+    inline def setInternetGatewayUndefined: Self = StObject.set(x, "InternetGateway", js.undefined)
   }
 }

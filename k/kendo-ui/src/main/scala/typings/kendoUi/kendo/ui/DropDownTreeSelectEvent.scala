@@ -13,19 +13,15 @@ trait DropDownTreeSelectEvent
 }
 object DropDownTreeSelectEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: DropDownTree): DropDownTreeSelectEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: DropDownTree): DropDownTreeSelectEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownTreeSelectEvent]
   }
   
-  @scala.inline
-  implicit class DropDownTreeSelectEventMutableBuilder[Self <: DropDownTreeSelectEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownTreeSelectEvent](x: Self) {
     
-    @scala.inline
-    def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
   }
 }

@@ -27,25 +27,19 @@ trait GlusterfsVolumeSource extends StObject {
 }
 object GlusterfsVolumeSource {
   
-  @scala.inline
-  def apply(endpoints: Input[String], path: Input[String]): GlusterfsVolumeSource = {
+  inline def apply(endpoints: Input[String], path: Input[String]): GlusterfsVolumeSource = {
     val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlusterfsVolumeSource]
   }
   
-  @scala.inline
-  implicit class GlusterfsVolumeSourceMutableBuilder[Self <: GlusterfsVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: GlusterfsVolumeSource](x: Self) {
     
-    @scala.inline
-    def setEndpoints(value: Input[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: Input[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

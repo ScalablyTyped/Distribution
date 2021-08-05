@@ -28,29 +28,22 @@ trait SubmitFeedbackRequest extends StObject {
 }
 object SubmitFeedbackRequest {
   
-  @scala.inline
-  def apply(anomalyInstanceId: AnomalyInstanceId, profilingGroupName: ProfilingGroupName, `type`: FeedbackType): SubmitFeedbackRequest = {
+  inline def apply(anomalyInstanceId: AnomalyInstanceId, profilingGroupName: ProfilingGroupName, `type`: FeedbackType): SubmitFeedbackRequest = {
     val __obj = js.Dynamic.literal(anomalyInstanceId = anomalyInstanceId.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class SubmitFeedbackRequestMutableBuilder[Self <: SubmitFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setAnomalyInstanceId(value: AnomalyInstanceId): Self = StObject.set(x, "anomalyInstanceId", value.asInstanceOf[js.Any])
+    inline def setAnomalyInstanceId(value: AnomalyInstanceId): Self = StObject.set(x, "anomalyInstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: FeedbackType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FeedbackType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

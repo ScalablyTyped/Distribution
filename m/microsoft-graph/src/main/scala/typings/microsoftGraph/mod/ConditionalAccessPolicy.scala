@@ -42,76 +42,53 @@ trait ConditionalAccessPolicy
 }
 object ConditionalAccessPolicy {
   
-  @scala.inline
-  def apply(): ConditionalAccessPolicy = {
+  inline def apply(): ConditionalAccessPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalAccessPolicy]
   }
   
-  @scala.inline
-  implicit class ConditionalAccessPolicyMutableBuilder[Self <: ConditionalAccessPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalAccessPolicy](x: Self) {
     
-    @scala.inline
-    def setConditions(value: ConditionalAccessConditionSet): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: ConditionalAccessConditionSet): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setGrantControls(value: NullableOption[ConditionalAccessGrantControls]): Self = StObject.set(x, "grantControls", value.asInstanceOf[js.Any])
+    inline def setGrantControls(value: NullableOption[ConditionalAccessGrantControls]): Self = StObject.set(x, "grantControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantControlsNull: Self = StObject.set(x, "grantControls", null)
+    inline def setGrantControlsNull: Self = StObject.set(x, "grantControls", null)
     
-    @scala.inline
-    def setGrantControlsUndefined: Self = StObject.set(x, "grantControls", js.undefined)
+    inline def setGrantControlsUndefined: Self = StObject.set(x, "grantControls", js.undefined)
     
-    @scala.inline
-    def setModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "modifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "modifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDateTimeNull: Self = StObject.set(x, "modifiedDateTime", null)
+    inline def setModifiedDateTimeNull: Self = StObject.set(x, "modifiedDateTime", null)
     
-    @scala.inline
-    def setModifiedDateTimeUndefined: Self = StObject.set(x, "modifiedDateTime", js.undefined)
+    inline def setModifiedDateTimeUndefined: Self = StObject.set(x, "modifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setSessionControls(value: NullableOption[ConditionalAccessSessionControls]): Self = StObject.set(x, "sessionControls", value.asInstanceOf[js.Any])
+    inline def setSessionControls(value: NullableOption[ConditionalAccessSessionControls]): Self = StObject.set(x, "sessionControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionControlsNull: Self = StObject.set(x, "sessionControls", null)
+    inline def setSessionControlsNull: Self = StObject.set(x, "sessionControls", null)
     
-    @scala.inline
-    def setSessionControlsUndefined: Self = StObject.set(x, "sessionControls", js.undefined)
+    inline def setSessionControlsUndefined: Self = StObject.set(x, "sessionControls", js.undefined)
     
-    @scala.inline
-    def setState(value: ConditionalAccessPolicyState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ConditionalAccessPolicyState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

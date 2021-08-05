@@ -29,37 +29,27 @@ trait LocationRelationship extends StObject {
 }
 object LocationRelationship {
   
-  @scala.inline
-  def apply(target: Double): LocationRelationship = {
+  inline def apply(target: Double): LocationRelationship = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRelationship]
   }
   
-  @scala.inline
-  implicit class LocationRelationshipMutableBuilder[Self <: LocationRelationship] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRelationship](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
+    inline def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
+    inline def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
     
-    @scala.inline
-    def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
+    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

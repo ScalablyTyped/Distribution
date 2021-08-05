@@ -22,8 +22,7 @@ trait IToastService extends StObject {
 }
 object IToastService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     show: (String, String, String) => js.Any,
     showLongBottom: String => js.Any,
     showLongCenter: String => js.Any,
@@ -36,28 +35,20 @@ object IToastService {
     __obj.asInstanceOf[IToastService]
   }
   
-  @scala.inline
-  implicit class IToastServiceMutableBuilder[Self <: IToastService] (val x: Self) extends AnyVal {
+  extension [Self <: IToastService](x: Self) {
     
-    @scala.inline
-    def setShow(value: (String, String, String) => js.Any): Self = StObject.set(x, "show", js.Any.fromFunction3(value))
+    inline def setShow(value: (String, String, String) => js.Any): Self = StObject.set(x, "show", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setShowLongBottom(value: String => js.Any): Self = StObject.set(x, "showLongBottom", js.Any.fromFunction1(value))
+    inline def setShowLongBottom(value: String => js.Any): Self = StObject.set(x, "showLongBottom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowLongCenter(value: String => js.Any): Self = StObject.set(x, "showLongCenter", js.Any.fromFunction1(value))
+    inline def setShowLongCenter(value: String => js.Any): Self = StObject.set(x, "showLongCenter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowLongTop(value: String => js.Any): Self = StObject.set(x, "showLongTop", js.Any.fromFunction1(value))
+    inline def setShowLongTop(value: String => js.Any): Self = StObject.set(x, "showLongTop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowShortBottom(value: String => js.Any): Self = StObject.set(x, "showShortBottom", js.Any.fromFunction1(value))
+    inline def setShowShortBottom(value: String => js.Any): Self = StObject.set(x, "showShortBottom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowShortCenter(value: String => js.Any): Self = StObject.set(x, "showShortCenter", js.Any.fromFunction1(value))
+    inline def setShowShortCenter(value: String => js.Any): Self = StObject.set(x, "showShortCenter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowShortTop(value: String => js.Any): Self = StObject.set(x, "showShortTop", js.Any.fromFunction1(value))
+    inline def setShowShortTop(value: String => js.Any): Self = StObject.set(x, "showShortTop", js.Any.fromFunction1(value))
   }
 }

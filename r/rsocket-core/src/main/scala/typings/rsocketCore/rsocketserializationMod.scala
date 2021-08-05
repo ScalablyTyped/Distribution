@@ -20,14 +20,12 @@ object rsocketserializationMod {
     @JSImport("rsocket-core/RSocketSerialization", "IdentitySerializers.data")
     @js.native
     def data: Serializer[js.Any] = js.native
-    @scala.inline
-    def data_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+    inline def data_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketSerialization", "IdentitySerializers.metadata")
     @js.native
     def metadata: Serializer[js.Any] = js.native
-    @scala.inline
-    def metadata_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rsocket-core/RSocketSerialization", "JsonSerializer")
@@ -43,14 +41,12 @@ object rsocketserializationMod {
     @JSImport("rsocket-core/RSocketSerialization", "JsonSerializers.data")
     @js.native
     def data: Serializer[js.Any] = js.native
-    @scala.inline
-    def data_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+    inline def data_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketSerialization", "JsonSerializers.metadata")
     @js.native
     def metadata: Serializer[js.Any] = js.native
-    @scala.inline
-    def metadata_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   trait PayloadSerializers[D, M] extends StObject {
@@ -61,20 +57,16 @@ object rsocketserializationMod {
   }
   object PayloadSerializers {
     
-    @scala.inline
-    def apply[D, M](data: Serializer[D], metadata: Serializer[M]): PayloadSerializers[D, M] = {
+    inline def apply[D, M](data: Serializer[D], metadata: Serializer[M]): PayloadSerializers[D, M] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayloadSerializers[D, M]]
     }
     
-    @scala.inline
-    implicit class PayloadSerializersMutableBuilder[Self <: PayloadSerializers[?, ?], D, M] (val x: Self & (PayloadSerializers[D, M])) extends AnyVal {
+    extension [Self <: PayloadSerializers[?, ?], D, M](x: Self & (PayloadSerializers[D, M])) {
       
-      @scala.inline
-      def setData(value: Serializer[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Serializer[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: Serializer[M]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Serializer[M]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   

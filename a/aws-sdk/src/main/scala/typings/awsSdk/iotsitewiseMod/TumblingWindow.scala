@@ -13,16 +13,13 @@ trait TumblingWindow extends StObject {
 }
 object TumblingWindow {
   
-  @scala.inline
-  def apply(interval: Interval): TumblingWindow = {
+  inline def apply(interval: Interval): TumblingWindow = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[TumblingWindow]
   }
   
-  @scala.inline
-  implicit class TumblingWindowMutableBuilder[Self <: TumblingWindow] (val x: Self) extends AnyVal {
+  extension [Self <: TumblingWindow](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }
 }

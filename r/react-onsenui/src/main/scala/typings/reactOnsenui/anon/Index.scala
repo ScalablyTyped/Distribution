@@ -16,37 +16,27 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(): Index = {
+  inline def apply(): Index = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setOnPostChange(value: () => Unit): Self = StObject.set(x, "onPostChange", js.Any.fromFunction0(value))
+    inline def setOnPostChange(value: () => Unit): Self = StObject.set(x, "onPostChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPostChangeUndefined: Self = StObject.set(x, "onPostChange", js.undefined)
+    inline def setOnPostChangeUndefined: Self = StObject.set(x, "onPostChange", js.undefined)
     
-    @scala.inline
-    def setTabbarId(value: String): Self = StObject.set(x, "tabbarId", value.asInstanceOf[js.Any])
+    inline def setTabbarId(value: String): Self = StObject.set(x, "tabbarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabbarIdUndefined: Self = StObject.set(x, "tabbarId", js.undefined)
+    inline def setTabbarIdUndefined: Self = StObject.set(x, "tabbarId", js.undefined)
   }
 }

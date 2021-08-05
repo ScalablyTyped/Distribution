@@ -26,49 +26,35 @@ trait GetReleaseExecutableResponse extends StObject {
 }
 object GetReleaseExecutableResponse {
   
-  @scala.inline
-  def apply(): GetReleaseExecutableResponse = {
+  inline def apply(): GetReleaseExecutableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReleaseExecutableResponse]
   }
   
-  @scala.inline
-  implicit class GetReleaseExecutableResponseMutableBuilder[Self <: GetReleaseExecutableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetReleaseExecutableResponse](x: Self) {
     
-    @scala.inline
-    def setExecutable(value: String): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
+    inline def setExecutable(value: String): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutableUndefined: Self = StObject.set(x, "executable", js.undefined)
+    inline def setExecutableUndefined: Self = StObject.set(x, "executable", js.undefined)
     
-    @scala.inline
-    def setExecutableVersion(value: String): Self = StObject.set(x, "executableVersion", value.asInstanceOf[js.Any])
+    inline def setExecutableVersion(value: String): Self = StObject.set(x, "executableVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutableVersionUndefined: Self = StObject.set(x, "executableVersion", js.undefined)
+    inline def setExecutableVersionUndefined: Self = StObject.set(x, "executableVersion", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setRulesetName(value: String): Self = StObject.set(x, "rulesetName", value.asInstanceOf[js.Any])
+    inline def setRulesetName(value: String): Self = StObject.set(x, "rulesetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesetNameUndefined: Self = StObject.set(x, "rulesetName", js.undefined)
+    inline def setRulesetNameUndefined: Self = StObject.set(x, "rulesetName", js.undefined)
     
-    @scala.inline
-    def setSyncTime(value: String): Self = StObject.set(x, "syncTime", value.asInstanceOf[js.Any])
+    inline def setSyncTime(value: String): Self = StObject.set(x, "syncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncTimeUndefined: Self = StObject.set(x, "syncTime", js.undefined)
+    inline def setSyncTimeUndefined: Self = StObject.set(x, "syncTime", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

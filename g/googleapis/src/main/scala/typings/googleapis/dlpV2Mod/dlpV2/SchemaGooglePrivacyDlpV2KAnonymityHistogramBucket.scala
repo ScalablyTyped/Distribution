@@ -34,46 +34,33 @@ trait SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket extends StObject {
 }
 object SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket = {
+  inline def apply(): SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KAnonymityHistogramBucketMutableBuilder[Self <: SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket](x: Self) {
     
-    @scala.inline
-    def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
+    inline def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
+    inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
-    @scala.inline
-    def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
+    inline def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
+    inline def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
     
-    @scala.inline
-    def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass]): Self = StObject.set(x, "bucketValues", value.asInstanceOf[js.Any])
+    inline def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass]): Self = StObject.set(x, "bucketValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
+    inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    @scala.inline
-    def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
     
-    @scala.inline
-    def setEquivalenceClassSizeLowerBound(value: String): Self = StObject.set(x, "equivalenceClassSizeLowerBound", value.asInstanceOf[js.Any])
+    inline def setEquivalenceClassSizeLowerBound(value: String): Self = StObject.set(x, "equivalenceClassSizeLowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquivalenceClassSizeLowerBoundUndefined: Self = StObject.set(x, "equivalenceClassSizeLowerBound", js.undefined)
+    inline def setEquivalenceClassSizeLowerBoundUndefined: Self = StObject.set(x, "equivalenceClassSizeLowerBound", js.undefined)
     
-    @scala.inline
-    def setEquivalenceClassSizeUpperBound(value: String): Self = StObject.set(x, "equivalenceClassSizeUpperBound", value.asInstanceOf[js.Any])
+    inline def setEquivalenceClassSizeUpperBound(value: String): Self = StObject.set(x, "equivalenceClassSizeUpperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquivalenceClassSizeUpperBoundUndefined: Self = StObject.set(x, "equivalenceClassSizeUpperBound", js.undefined)
+    inline def setEquivalenceClassSizeUpperBoundUndefined: Self = StObject.set(x, "equivalenceClassSizeUpperBound", js.undefined)
   }
 }

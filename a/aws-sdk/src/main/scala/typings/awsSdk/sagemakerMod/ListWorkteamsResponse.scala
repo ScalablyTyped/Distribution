@@ -18,25 +18,19 @@ trait ListWorkteamsResponse extends StObject {
 }
 object ListWorkteamsResponse {
   
-  @scala.inline
-  def apply(Workteams: Workteams): ListWorkteamsResponse = {
+  inline def apply(Workteams: Workteams): ListWorkteamsResponse = {
     val __obj = js.Dynamic.literal(Workteams = Workteams.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkteamsResponse]
   }
   
-  @scala.inline
-  implicit class ListWorkteamsResponseMutableBuilder[Self <: ListWorkteamsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorkteamsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWorkteams(value: Workteams): Self = StObject.set(x, "Workteams", value.asInstanceOf[js.Any])
+    inline def setWorkteams(value: Workteams): Self = StObject.set(x, "Workteams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkteamsVarargs(value: Workteam*): Self = StObject.set(x, "Workteams", js.Array(value :_*))
+    inline def setWorkteamsVarargs(value: Workteam*): Self = StObject.set(x, "Workteams", js.Array(value :_*))
   }
 }

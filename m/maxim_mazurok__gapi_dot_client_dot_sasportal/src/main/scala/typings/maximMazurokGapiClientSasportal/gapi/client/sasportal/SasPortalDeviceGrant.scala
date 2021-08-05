@@ -35,67 +35,47 @@ trait SasPortalDeviceGrant extends StObject {
 }
 object SasPortalDeviceGrant {
   
-  @scala.inline
-  def apply(): SasPortalDeviceGrant = {
+  inline def apply(): SasPortalDeviceGrant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalDeviceGrant]
   }
   
-  @scala.inline
-  implicit class SasPortalDeviceGrantMutableBuilder[Self <: SasPortalDeviceGrant] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalDeviceGrant](x: Self) {
     
-    @scala.inline
-    def setChannelType(value: String): Self = StObject.set(x, "channelType", value.asInstanceOf[js.Any])
+    inline def setChannelType(value: String): Self = StObject.set(x, "channelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelTypeUndefined: Self = StObject.set(x, "channelType", js.undefined)
+    inline def setChannelTypeUndefined: Self = StObject.set(x, "channelType", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setFrequencyRange(value: SasPortalFrequencyRange): Self = StObject.set(x, "frequencyRange", value.asInstanceOf[js.Any])
+    inline def setFrequencyRange(value: SasPortalFrequencyRange): Self = StObject.set(x, "frequencyRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyRangeUndefined: Self = StObject.set(x, "frequencyRange", js.undefined)
+    inline def setFrequencyRangeUndefined: Self = StObject.set(x, "frequencyRange", js.undefined)
     
-    @scala.inline
-    def setGrantId(value: String): Self = StObject.set(x, "grantId", value.asInstanceOf[js.Any])
+    inline def setGrantId(value: String): Self = StObject.set(x, "grantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantIdUndefined: Self = StObject.set(x, "grantId", js.undefined)
+    inline def setGrantIdUndefined: Self = StObject.set(x, "grantId", js.undefined)
     
-    @scala.inline
-    def setMaxEirp(value: Double): Self = StObject.set(x, "maxEirp", value.asInstanceOf[js.Any])
+    inline def setMaxEirp(value: Double): Self = StObject.set(x, "maxEirp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEirpUndefined: Self = StObject.set(x, "maxEirp", js.undefined)
+    inline def setMaxEirpUndefined: Self = StObject.set(x, "maxEirp", js.undefined)
     
-    @scala.inline
-    def setMoveList(value: js.Array[SasPortalDpaMoveList]): Self = StObject.set(x, "moveList", value.asInstanceOf[js.Any])
+    inline def setMoveList(value: js.Array[SasPortalDpaMoveList]): Self = StObject.set(x, "moveList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveListUndefined: Self = StObject.set(x, "moveList", js.undefined)
+    inline def setMoveListUndefined: Self = StObject.set(x, "moveList", js.undefined)
     
-    @scala.inline
-    def setMoveListVarargs(value: SasPortalDpaMoveList*): Self = StObject.set(x, "moveList", js.Array(value :_*))
+    inline def setMoveListVarargs(value: SasPortalDpaMoveList*): Self = StObject.set(x, "moveList", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSuspensionReason(value: js.Array[String]): Self = StObject.set(x, "suspensionReason", value.asInstanceOf[js.Any])
+    inline def setSuspensionReason(value: js.Array[String]): Self = StObject.set(x, "suspensionReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspensionReasonUndefined: Self = StObject.set(x, "suspensionReason", js.undefined)
+    inline def setSuspensionReasonUndefined: Self = StObject.set(x, "suspensionReason", js.undefined)
     
-    @scala.inline
-    def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value :_*))
+    inline def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value :_*))
   }
 }

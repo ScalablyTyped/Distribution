@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Expired = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Expired]
-  @scala.inline
-  def apply(defaultOptions: defaultOptions): Expired = ^.asInstanceOf[js.Dynamic].apply(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Expired]
+  inline def apply(): Expired = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Expired]
+  inline def apply(defaultOptions: defaultOptions): Expired = ^.asInstanceOf[js.Dynamic].apply(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Expired]
   
   @JSImport("credential", JSImport.Namespace)
   @js.native
@@ -31,23 +29,18 @@ object mod {
   }
   object defaultOptions {
     
-    @scala.inline
-    def apply(hashMethod: String, keyLength: Double, work: Double): defaultOptions = {
+    inline def apply(hashMethod: String, keyLength: Double, work: Double): defaultOptions = {
       val __obj = js.Dynamic.literal(hashMethod = hashMethod.asInstanceOf[js.Any], keyLength = keyLength.asInstanceOf[js.Any], work = work.asInstanceOf[js.Any])
       __obj.asInstanceOf[defaultOptions]
     }
     
-    @scala.inline
-    implicit class defaultOptionsMutableBuilder[Self <: defaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: defaultOptions](x: Self) {
       
-      @scala.inline
-      def setHashMethod(value: String): Self = StObject.set(x, "hashMethod", value.asInstanceOf[js.Any])
+      inline def setHashMethod(value: String): Self = StObject.set(x, "hashMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWork(value: Double): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
+      inline def setWork(value: Double): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
     }
   }
 }

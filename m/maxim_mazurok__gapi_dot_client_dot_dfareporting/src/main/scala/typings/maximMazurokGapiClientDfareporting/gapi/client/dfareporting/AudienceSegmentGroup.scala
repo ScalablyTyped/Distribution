@@ -17,34 +17,25 @@ trait AudienceSegmentGroup extends StObject {
 }
 object AudienceSegmentGroup {
   
-  @scala.inline
-  def apply(): AudienceSegmentGroup = {
+  inline def apply(): AudienceSegmentGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudienceSegmentGroup]
   }
   
-  @scala.inline
-  implicit class AudienceSegmentGroupMutableBuilder[Self <: AudienceSegmentGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AudienceSegmentGroup](x: Self) {
     
-    @scala.inline
-    def setAudienceSegments(value: js.Array[AudienceSegment]): Self = StObject.set(x, "audienceSegments", value.asInstanceOf[js.Any])
+    inline def setAudienceSegments(value: js.Array[AudienceSegment]): Self = StObject.set(x, "audienceSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceSegmentsUndefined: Self = StObject.set(x, "audienceSegments", js.undefined)
+    inline def setAudienceSegmentsUndefined: Self = StObject.set(x, "audienceSegments", js.undefined)
     
-    @scala.inline
-    def setAudienceSegmentsVarargs(value: AudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value :_*))
+    inline def setAudienceSegmentsVarargs(value: AudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

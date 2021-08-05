@@ -22,8 +22,7 @@ trait IWorkflowAdmin extends StObject {
 }
 object IWorkflowAdmin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IWorkflowAdmin,
     Description: String,
     Permissions: IAccessControlList,
@@ -36,28 +35,20 @@ object IWorkflowAdmin {
     __obj.asInstanceOf[IWorkflowAdmin]
   }
   
-  @scala.inline
-  implicit class IWorkflowAdminMutableBuilder[Self <: IWorkflowAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: IWorkflowAdmin](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IWorkflowAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IWorkflowAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: IAccessControlList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: IAccessControlList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
+    inline def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateTransitions(value: IStateTransitions): Self = StObject.set(x, "StateTransitions", value.asInstanceOf[js.Any])
+    inline def setStateTransitions(value: IStateTransitions): Self = StObject.set(x, "StateTransitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStates(value: IStatesAdmin): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
+    inline def setStates(value: IStatesAdmin): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflow(value: IWorkflow): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
+    inline def setWorkflow(value: IWorkflow): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
   }
 }

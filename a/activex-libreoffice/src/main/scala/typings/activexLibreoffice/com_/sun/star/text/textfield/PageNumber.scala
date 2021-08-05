@@ -43,8 +43,7 @@ trait PageNumber
 }
 object PageNumber {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -77,19 +76,14 @@ object PageNumber {
     __obj.asInstanceOf[PageNumber]
   }
   
-  @scala.inline
-  implicit class PageNumberMutableBuilder[Self <: PageNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PageNumber](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubType(value: PageNumberType): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
+    inline def setSubType(value: PageNumberType): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserText(value: String): Self = StObject.set(x, "UserText", value.asInstanceOf[js.Any])
+    inline def setUserText(value: String): Self = StObject.set(x, "UserText", value.asInstanceOf[js.Any])
   }
 }

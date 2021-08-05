@@ -23,37 +23,37 @@ object splitlayoutMod {
       */
     def this(options: IOptions) = this()
     
-    var _alignment: js.Any = js.native
+    /* private */ var _alignment: js.Any = js.native
     
-    var _box: js.Any = js.native
+    /* private */ var _box: js.Any = js.native
     
-    var _dirty: js.Any = js.native
+    /* private */ var _dirty: js.Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    var _fit: js.Any = js.native
+    /* private */ var _fit: js.Any = js.native
     
-    var _fixed: js.Any = js.native
+    /* private */ var _fixed: js.Any = js.native
     
-    var _handles: js.Any = js.native
+    /* private */ var _handles: js.Any = js.native
     
-    var _hasNormedSizes: js.Any = js.native
+    /* private */ var _hasNormedSizes: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _orientation: js.Any = js.native
+    /* private */ var _orientation: js.Any = js.native
     
-    var _sizers: js.Any = js.native
+    /* private */ var _sizers: js.Any = js.native
     
-    var _spacing: js.Any = js.native
+    /* private */ var _spacing: js.Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    var _update: js.Any = js.native
+    /* private */ var _update: js.Any = js.native
     
     /**
       * Get the content alignment for the split layout.
@@ -154,8 +154,7 @@ object splitlayoutMod {
       *
       * @returns The split layout stretch factor for the widget.
       */
-    @scala.inline
-    def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Set the split layout stretch factor for the given widget.
@@ -164,8 +163,7 @@ object splitlayoutMod {
       *
       * @param value - The value for the stretch factor.
       */
-    @scala.inline
-    def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for a split layout alignment.
@@ -179,17 +177,13 @@ object splitlayoutMod {
     trait Alignment extends StObject
     object Alignment {
       
-      @scala.inline
-      def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
+      inline def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
       
-      @scala.inline
-      def end: typings.luminoWidgets.luminoWidgetsStrings.end = "end".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.end]
+      inline def end: typings.luminoWidgets.luminoWidgetsStrings.end = "end".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.end]
       
-      @scala.inline
-      def justify: typings.luminoWidgets.luminoWidgetsStrings.justify = "justify".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.justify]
+      inline def justify: typings.luminoWidgets.luminoWidgetsStrings.justify = "justify".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.justify]
       
-      @scala.inline
-      def start: typings.luminoWidgets.luminoWidgetsStrings.start = "start".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.start]
+      inline def start: typings.luminoWidgets.luminoWidgetsStrings.start = "start".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.start]
     }
     
     /**
@@ -225,35 +219,26 @@ object splitlayoutMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(renderer: IRenderer): IOptions = {
+      inline def apply(renderer: IRenderer): IOptions = {
         val __obj = js.Dynamic.literal(renderer = renderer.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+        inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+        inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+        inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       }
     }
     
@@ -271,17 +256,14 @@ object splitlayoutMod {
     }
     object IRenderer {
       
-      @scala.inline
-      def apply(createHandle: () => HTMLDivElement): IRenderer = {
+      inline def apply(createHandle: () => HTMLDivElement): IRenderer = {
         val __obj = js.Dynamic.literal(createHandle = js.Any.fromFunction0(createHandle))
         __obj.asInstanceOf[IRenderer]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderer](x: Self) {
         
-        @scala.inline
-        def setCreateHandle(value: () => HTMLDivElement): Self = StObject.set(x, "createHandle", js.Any.fromFunction0(value))
+        inline def setCreateHandle(value: () => HTMLDivElement): Self = StObject.set(x, "createHandle", js.Any.fromFunction0(value))
       }
     }
     
@@ -295,11 +277,9 @@ object splitlayoutMod {
     trait Orientation extends StObject
     object Orientation {
       
-      @scala.inline
-      def horizontal: typings.luminoWidgets.luminoWidgetsStrings.horizontal = "horizontal".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.horizontal]
+      inline def horizontal: typings.luminoWidgets.luminoWidgetsStrings.horizontal = "horizontal".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.horizontal]
       
-      @scala.inline
-      def vertical: typings.luminoWidgets.luminoWidgetsStrings.vertical = "vertical".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.vertical]
+      inline def vertical: typings.luminoWidgets.luminoWidgetsStrings.vertical = "vertical".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.vertical]
     }
   }
 }

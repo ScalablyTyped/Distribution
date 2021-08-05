@@ -174,50 +174,36 @@ object poolMod {
   }
   object PoolOptions {
     
-    @scala.inline
-    def apply(): PoolOptions = {
+    inline def apply(): PoolOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PoolOptions]
     }
     
-    @scala.inline
-    implicit class PoolOptionsMutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PoolOptions](x: Self) {
       
-      @scala.inline
-      def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
+      inline def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcquireTimeoutUndefined: Self = StObject.set(x, "acquireTimeout", js.undefined)
+      inline def setAcquireTimeoutUndefined: Self = StObject.set(x, "acquireTimeout", js.undefined)
       
-      @scala.inline
-      def setConnectionLimit(value: Double): Self = StObject.set(x, "connectionLimit", value.asInstanceOf[js.Any])
+      inline def setConnectionLimit(value: Double): Self = StObject.set(x, "connectionLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
+      inline def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
       
-      @scala.inline
-      def setEnableKeepAlive(value: `true`): Self = StObject.set(x, "enableKeepAlive", value.asInstanceOf[js.Any])
+      inline def setEnableKeepAlive(value: `true`): Self = StObject.set(x, "enableKeepAlive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableKeepAliveUndefined: Self = StObject.set(x, "enableKeepAlive", js.undefined)
+      inline def setEnableKeepAliveUndefined: Self = StObject.set(x, "enableKeepAlive", js.undefined)
       
-      @scala.inline
-      def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
+      inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+      inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
       
-      @scala.inline
-      def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
+      inline def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueLimitUndefined: Self = StObject.set(x, "queueLimit", js.undefined)
+      inline def setQueueLimitUndefined: Self = StObject.set(x, "queueLimit", js.undefined)
       
-      @scala.inline
-      def setWaitForConnections(value: Boolean): Self = StObject.set(x, "waitForConnections", value.asInstanceOf[js.Any])
+      inline def setWaitForConnections(value: Boolean): Self = StObject.set(x, "waitForConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForConnectionsUndefined: Self = StObject.set(x, "waitForConnections", js.undefined)
+      inline def setWaitForConnectionsUndefined: Self = StObject.set(x, "waitForConnections", js.undefined)
     }
   }
 }

@@ -23,31 +23,23 @@ trait PlannerAssignedToTaskBoardTaskFormat
 }
 object PlannerAssignedToTaskBoardTaskFormat {
   
-  @scala.inline
-  def apply(): PlannerAssignedToTaskBoardTaskFormat = {
+  inline def apply(): PlannerAssignedToTaskBoardTaskFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerAssignedToTaskBoardTaskFormat]
   }
   
-  @scala.inline
-  implicit class PlannerAssignedToTaskBoardTaskFormatMutableBuilder[Self <: PlannerAssignedToTaskBoardTaskFormat] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerAssignedToTaskBoardTaskFormat](x: Self) {
     
-    @scala.inline
-    def setOrderHintsByAssignee(value: NullableOption[PlannerOrderHintsByAssignee]): Self = StObject.set(x, "orderHintsByAssignee", value.asInstanceOf[js.Any])
+    inline def setOrderHintsByAssignee(value: NullableOption[PlannerOrderHintsByAssignee]): Self = StObject.set(x, "orderHintsByAssignee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderHintsByAssigneeNull: Self = StObject.set(x, "orderHintsByAssignee", null)
+    inline def setOrderHintsByAssigneeNull: Self = StObject.set(x, "orderHintsByAssignee", null)
     
-    @scala.inline
-    def setOrderHintsByAssigneeUndefined: Self = StObject.set(x, "orderHintsByAssignee", js.undefined)
+    inline def setOrderHintsByAssigneeUndefined: Self = StObject.set(x, "orderHintsByAssignee", js.undefined)
     
-    @scala.inline
-    def setUnassignedOrderHint(value: NullableOption[String]): Self = StObject.set(x, "unassignedOrderHint", value.asInstanceOf[js.Any])
+    inline def setUnassignedOrderHint(value: NullableOption[String]): Self = StObject.set(x, "unassignedOrderHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnassignedOrderHintNull: Self = StObject.set(x, "unassignedOrderHint", null)
+    inline def setUnassignedOrderHintNull: Self = StObject.set(x, "unassignedOrderHint", null)
     
-    @scala.inline
-    def setUnassignedOrderHintUndefined: Self = StObject.set(x, "unassignedOrderHint", js.undefined)
+    inline def setUnassignedOrderHintUndefined: Self = StObject.set(x, "unassignedOrderHint", js.undefined)
   }
 }

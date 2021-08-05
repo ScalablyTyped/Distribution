@@ -22,8 +22,7 @@ trait GlideTime extends StObject {
 }
 object GlideTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getByFormat: String => String,
     getDisplayValue: () => String,
     getDisplayValueinternal: () => String,
@@ -36,28 +35,20 @@ object GlideTime {
     __obj.asInstanceOf[GlideTime]
   }
   
-  @scala.inline
-  implicit class GlideTimeMutableBuilder[Self <: GlideTime] (val x: Self) extends AnyVal {
+  extension [Self <: GlideTime](x: Self) {
     
-    @scala.inline
-    def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
+    inline def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
+    inline def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayValueinternal(value: () => String): Self = StObject.set(x, "getDisplayValueinternal", js.Any.fromFunction0(value))
+    inline def setGetDisplayValueinternal(value: () => String): Self = StObject.set(x, "getDisplayValueinternal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
+    inline def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubtract(value: (GlideTime, GlideTime) => GlideDuration): Self = StObject.set(x, "subtract", js.Any.fromFunction2(value))
+    inline def setSubtract(value: (GlideTime, GlideTime) => GlideDuration): Self = StObject.set(x, "subtract", js.Any.fromFunction2(value))
   }
 }

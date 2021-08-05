@@ -14,25 +14,19 @@ trait FlowErrorDetails extends StObject {
 }
 object FlowErrorDetails {
   
-  @scala.inline
-  def apply(): FlowErrorDetails = {
+  inline def apply(): FlowErrorDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlowErrorDetails]
   }
   
-  @scala.inline
-  implicit class FlowErrorDetailsMutableBuilder[Self <: FlowErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: FlowErrorDetails](x: Self) {
     
-    @scala.inline
-    def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
+    inline def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionTypeUndefined: Self = StObject.set(x, "exceptionType", js.undefined)
+    inline def setExceptionTypeUndefined: Self = StObject.set(x, "exceptionType", js.undefined)
     
-    @scala.inline
-    def setFlowStepId(value: String): Self = StObject.set(x, "flowStepId", value.asInstanceOf[js.Any])
+    inline def setFlowStepId(value: String): Self = StObject.set(x, "flowStepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowStepIdUndefined: Self = StObject.set(x, "flowStepId", js.undefined)
+    inline def setFlowStepIdUndefined: Self = StObject.set(x, "flowStepId", js.undefined)
   }
 }

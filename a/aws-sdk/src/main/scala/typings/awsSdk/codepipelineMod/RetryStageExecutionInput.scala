@@ -28,8 +28,7 @@ trait RetryStageExecutionInput extends StObject {
 }
 object RetryStageExecutionInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pipelineExecutionId: PipelineExecutionId,
     pipelineName: PipelineName,
     retryMode: StageRetryMode,
@@ -39,19 +38,14 @@ object RetryStageExecutionInput {
     __obj.asInstanceOf[RetryStageExecutionInput]
   }
   
-  @scala.inline
-  implicit class RetryStageExecutionInputMutableBuilder[Self <: RetryStageExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: RetryStageExecutionInput](x: Self) {
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryMode(value: StageRetryMode): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
+    inline def setRetryMode(value: StageRetryMode): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
   }
 }

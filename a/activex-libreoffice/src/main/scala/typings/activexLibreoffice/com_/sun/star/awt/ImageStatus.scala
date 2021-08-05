@@ -19,16 +19,12 @@ object ImageStatus {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def IMAGESTATUS_ABORTED: `4` = 4.asInstanceOf[`4`]
+    inline def IMAGESTATUS_ABORTED: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def IMAGESTATUS_ERROR: `1` = 1.asInstanceOf[`1`]
+    inline def IMAGESTATUS_ERROR: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def IMAGESTATUS_SINGLEFRAMEDONE: `2` = 2.asInstanceOf[`2`]
+    inline def IMAGESTATUS_SINGLEFRAMEDONE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def IMAGESTATUS_STATICIMAGEDONE: `3` = 3.asInstanceOf[`3`]
+    inline def IMAGESTATUS_STATICIMAGEDONE: `3` = 3.asInstanceOf[`3`]
   }
 }

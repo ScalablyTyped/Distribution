@@ -23,7 +23,6 @@ object mod {
     @JSImport("rmc-nuka-carousel", "default.defaultProps")
     @js.native
     def defaultProps: ICarouselProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ICarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ICarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

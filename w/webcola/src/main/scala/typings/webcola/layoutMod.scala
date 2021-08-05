@@ -41,47 +41,47 @@ object layoutMod {
   @js.native
   class Layout () extends StObject {
     
-    var _alpha: js.Any = js.native
+    /* private */ var _alpha: js.Any = js.native
     
-    var _avoidOverlaps: js.Any = js.native
+    /* private */ var _avoidOverlaps: js.Any = js.native
     
-    var _canvasSize: js.Any = js.native
+    /* private */ var _canvasSize: js.Any = js.native
     
-    var _constraints: js.Any = js.native
+    /* private */ var _constraints: js.Any = js.native
     
-    var _defaultNodeSize: js.Any = js.native
+    /* private */ var _defaultNodeSize: js.Any = js.native
     
-    var _descent: js.Any = js.native
+    /* private */ var _descent: js.Any = js.native
     
-    var _directedLinkConstraints: js.Any = js.native
+    /* private */ var _directedLinkConstraints: js.Any = js.native
     
-    var _distanceMatrix: js.Any = js.native
+    /* private */ var _distanceMatrix: js.Any = js.native
     
-    var _groupCompactness: js.Any = js.native
+    /* private */ var _groupCompactness: js.Any = js.native
     
-    var _groups: js.Any = js.native
+    /* private */ var _groups: js.Any = js.native
     
-    var _handleDisconnected: js.Any = js.native
+    /* private */ var _handleDisconnected: js.Any = js.native
     
-    var _lastStress: js.Any = js.native
+    /* private */ var _lastStress: js.Any = js.native
     
-    var _linkDistance: js.Any = js.native
+    /* private */ var _linkDistance: js.Any = js.native
     
-    var _linkLengthCalculator: js.Any = js.native
+    /* private */ var _linkLengthCalculator: js.Any = js.native
     
-    var _linkType: js.Any = js.native
+    /* private */ var _linkType: js.Any = js.native
     
-    var _links: js.Any = js.native
+    /* private */ var _links: js.Any = js.native
     
-    var _nodes: js.Any = js.native
+    /* private */ var _nodes: js.Any = js.native
     
-    var _rootGroup: js.Any = js.native
+    /* private */ var _rootGroup: js.Any = js.native
     
-    var _running: js.Any = js.native
+    /* private */ var _running: js.Any = js.native
     
-    var _threshold: js.Any = js.native
+    /* private */ var _threshold: js.Any = js.native
     
-    var _visibilityGraph: js.Any = js.native
+    /* private */ var _visibilityGraph: js.Any = js.native
     
     def alpha(): Double = js.native
     def alpha(x: Double): this.type = js.native
@@ -101,7 +101,7 @@ object layoutMod {
     def distanceMatrix(): js.Array[js.Array[Double]] = js.native
     def distanceMatrix(d: js.Array[js.Array[Double]]): this.type = js.native
     
-    var event: js.Any = js.native
+    /* protected */ var event: js.Any = js.native
     
     def flowLayout(axis: String, minSeparation: js.Function1[/* t */ js.Any, Double]): this.type = js.native
     def flowLayout(axis: String, minSeparation: Double): this.type = js.native
@@ -119,7 +119,7 @@ object layoutMod {
     def handleDisconnected(): Boolean = js.native
     def handleDisconnected(v: Boolean): this.type = js.native
     
-    var initialLayout: js.Any = js.native
+    /* private */ var initialLayout: js.Any = js.native
     
     def jaccardLinkLengths(idealLength: Double): this.type = js.native
     def jaccardLinkLengths(idealLength: Double, w: Double): this.type = js.native
@@ -155,7 +155,7 @@ object layoutMod {
     
     def routeEdge(edge: js.Any, ah: Double, draw: js.Any): js.Array[js.Any] = js.native
     
-    var separateOverlappingComponents: js.Any = js.native
+    /* private */ var separateOverlappingComponents: js.Any = js.native
     
     def size(): js.Array[Double] = js.native
     def size(x: js.Array[Double]): this.type = js.native
@@ -178,7 +178,7 @@ object layoutMod {
     
     /* protected */ def trigger(e: Event): Unit = js.native
     
-    var updateNodePositions: js.Any = js.native
+    /* private */ var updateNodePositions: js.Any = js.native
   }
   /* static members */
   object Layout {
@@ -187,53 +187,38 @@ object layoutMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def drag(d: Group, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def drag(d: Node, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def drag(d: Group, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def drag(d: Node, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def dragEnd(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnd")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def dragEnd(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnd")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def dragOrigin(d: Group): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
-    @scala.inline
-    def dragOrigin(d: Node): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
+    inline def dragOrigin(d: Group): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
+    inline def dragOrigin(d: Node): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
     
-    @scala.inline
-    def dragStart(d: Group): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def dragStart(d: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def dragStart(d: Group): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def dragStart(d: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getSourceIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getSourceIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def getTargetIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getTargetIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def linkId(e: Link[Node | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkId")(e.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def linkId(e: Link[Node | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkId")(e.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def mouseOut(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOut")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mouseOut(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOut")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def mouseOver(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOver")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mouseOver(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOver")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setLinkLength(link: Link[Node | Double], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLinkLength")(link.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setLinkLength(link: Link[Node | Double], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLinkLength")(link.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("webcola/dist/src/layout", "Layout.stopNode")
     @js.native
     def stopNode: js.Any = js.native
-    @scala.inline
-    def stopNode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopNode")(x.asInstanceOf[js.Any])
+    inline def stopNode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopNode")(x.asInstanceOf[js.Any])
     
     @JSImport("webcola/dist/src/layout", "Layout.storeOffset")
     @js.native
     def storeOffset: js.Any = js.native
-    @scala.inline
-    def storeOffset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeOffset")(x.asInstanceOf[js.Any])
+    inline def storeOffset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeOffset")(x.asInstanceOf[js.Any])
   }
   
   trait Event extends StObject {
@@ -248,33 +233,25 @@ object layoutMod {
   }
   object Event {
     
-    @scala.inline
-    def apply(alpha: Double, `type`: EventType): Event = {
+    inline def apply(alpha: Double, `type`: EventType): Event = {
       val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListener(value: () => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction0(value))
+      inline def setListener(value: () => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
+      inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
       
-      @scala.inline
-      def setStress(value: Double): Self = StObject.set(x, "stress", value.asInstanceOf[js.Any])
+      inline def setStress(value: Double): Self = StObject.set(x, "stress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStressUndefined: Self = StObject.set(x, "stress", js.undefined)
+      inline def setStressUndefined: Self = StObject.set(x, "stress", js.undefined)
       
-      @scala.inline
-      def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,41 +267,30 @@ object layoutMod {
   }
   object Group {
     
-    @scala.inline
-    def apply(padding: Double): Group = {
+    inline def apply(padding: Double): Group = {
       val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Group]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+    extension [Self <: Group](x: Self) {
       
-      @scala.inline
-      def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[Group]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[Group]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setLeaves(value: js.Array[Node]): Self = StObject.set(x, "leaves", value.asInstanceOf[js.Any])
+      inline def setLeaves(value: js.Array[Node]): Self = StObject.set(x, "leaves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavesUndefined: Self = StObject.set(x, "leaves", js.undefined)
+      inline def setLeavesUndefined: Self = StObject.set(x, "leaves", js.undefined)
       
-      @scala.inline
-      def setLeavesVarargs(value: Node*): Self = StObject.set(x, "leaves", js.Array(value :_*))
+      inline def setLeavesVarargs(value: Node*): Self = StObject.set(x, "leaves", js.Array(value :_*))
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -344,50 +310,36 @@ object layoutMod {
   }
   object InputNode {
     
-    @scala.inline
-    def apply(): InputNode = {
+    inline def apply(): InputNode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputNode]
     }
     
-    @scala.inline
-    implicit class InputNodeMutableBuilder[Self <: InputNode] (val x: Self) extends AnyVal {
+    extension [Self <: InputNode](x: Self) {
       
-      @scala.inline
-      def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -403,32 +355,24 @@ object layoutMod {
   }
   object Link {
     
-    @scala.inline
-    def apply[NodeRefType](source: NodeRefType, target: NodeRefType): Link[NodeRefType] = {
+    inline def apply[NodeRefType](source: NodeRefType, target: NodeRefType): Link[NodeRefType] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Link[NodeRefType]]
     }
     
-    @scala.inline
-    implicit class LinkMutableBuilder[Self <: Link[?], NodeRefType] (val x: Self & Link[NodeRefType]) extends AnyVal {
+    extension [Self <: Link[?], NodeRefType](x: Self & Link[NodeRefType]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setSource(value: NodeRefType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: NodeRefType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: NodeRefType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: NodeRefType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
   
@@ -442,8 +386,7 @@ object layoutMod {
   }
   object LinkLengthTypeAccessor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getSourceIndex: Link[Node | Double] => Double,
       getTargetIndex: Link[Node | Double] => Double,
       getType: /* t */ Link[Node | Double] => Double,
@@ -453,11 +396,9 @@ object layoutMod {
       __obj.asInstanceOf[LinkLengthTypeAccessor]
     }
     
-    @scala.inline
-    implicit class LinkLengthTypeAccessorMutableBuilder[Self <: LinkLengthTypeAccessor] (val x: Self) extends AnyVal {
+    extension [Self <: LinkLengthTypeAccessor](x: Self) {
       
-      @scala.inline
-      def setGetType(value: /* t */ Link[Node | Double] => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
+      inline def setGetType(value: /* t */ Link[Node | Double] => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     }
   }
   
@@ -475,20 +416,16 @@ object layoutMod {
   }
   object Node {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Node = {
+    inline def apply(x: Double, y: Double): Node = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

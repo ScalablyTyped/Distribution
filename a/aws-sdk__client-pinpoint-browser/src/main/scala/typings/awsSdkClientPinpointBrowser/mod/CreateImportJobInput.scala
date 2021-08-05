@@ -10,8 +10,7 @@ trait CreateImportJobInput
      with typings.awsSdkClientPinpointBrowser.typesCreateImportJobInputMod.CreateImportJobInput
 object CreateImportJobInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, ImportJobRequest: ImportJobRequest): CreateImportJobInput = {
+  inline def apply(ApplicationId: String, ImportJobRequest: ImportJobRequest): CreateImportJobInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ImportJobRequest = ImportJobRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImportJobInput]
   }

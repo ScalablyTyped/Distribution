@@ -12,6 +12,5 @@ object fftImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fftImpl(x: TensorInfo, inverse: Boolean, backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("fftImpl")(x.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
+  inline def fftImpl(x: TensorInfo, inverse: Boolean, backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("fftImpl")(x.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
 }

@@ -13,16 +13,13 @@ trait StartCrawlerRequest extends StObject {
 }
 object StartCrawlerRequest {
   
-  @scala.inline
-  def apply(Name: NameString): StartCrawlerRequest = {
+  inline def apply(Name: NameString): StartCrawlerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartCrawlerRequest]
   }
   
-  @scala.inline
-  implicit class StartCrawlerRequestMutableBuilder[Self <: StartCrawlerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartCrawlerRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait NewDeviceMetadataType extends StObject {
 }
 object NewDeviceMetadataType {
   
-  @scala.inline
-  def apply(): NewDeviceMetadataType = {
+  inline def apply(): NewDeviceMetadataType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NewDeviceMetadataType]
   }
   
-  @scala.inline
-  implicit class NewDeviceMetadataTypeMutableBuilder[Self <: NewDeviceMetadataType] (val x: Self) extends AnyVal {
+  extension [Self <: NewDeviceMetadataType](x: Self) {
     
-    @scala.inline
-    def setDeviceGroupKey(value: StringType): Self = StObject.set(x, "DeviceGroupKey", value.asInstanceOf[js.Any])
+    inline def setDeviceGroupKey(value: StringType): Self = StObject.set(x, "DeviceGroupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceGroupKeyUndefined: Self = StObject.set(x, "DeviceGroupKey", js.undefined)
+    inline def setDeviceGroupKeyUndefined: Self = StObject.set(x, "DeviceGroupKey", js.undefined)
     
-    @scala.inline
-    def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
+    inline def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceKeyUndefined: Self = StObject.set(x, "DeviceKey", js.undefined)
+    inline def setDeviceKeyUndefined: Self = StObject.set(x, "DeviceKey", js.undefined)
   }
 }

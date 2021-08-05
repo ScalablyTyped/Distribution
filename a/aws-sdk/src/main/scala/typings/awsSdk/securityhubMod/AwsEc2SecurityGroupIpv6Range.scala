@@ -13,19 +13,15 @@ trait AwsEc2SecurityGroupIpv6Range extends StObject {
 }
 object AwsEc2SecurityGroupIpv6Range {
   
-  @scala.inline
-  def apply(): AwsEc2SecurityGroupIpv6Range = {
+  inline def apply(): AwsEc2SecurityGroupIpv6Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2SecurityGroupIpv6Range]
   }
   
-  @scala.inline
-  implicit class AwsEc2SecurityGroupIpv6RangeMutableBuilder[Self <: AwsEc2SecurityGroupIpv6Range] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2SecurityGroupIpv6Range](x: Self) {
     
-    @scala.inline
-    def setCidrIpv6(value: NonEmptyString): Self = StObject.set(x, "CidrIpv6", value.asInstanceOf[js.Any])
+    inline def setCidrIpv6(value: NonEmptyString): Self = StObject.set(x, "CidrIpv6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrIpv6Undefined: Self = StObject.set(x, "CidrIpv6", js.undefined)
+    inline def setCidrIpv6Undefined: Self = StObject.set(x, "CidrIpv6", js.undefined)
   }
 }

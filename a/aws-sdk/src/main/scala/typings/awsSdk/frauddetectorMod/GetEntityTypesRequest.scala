@@ -23,31 +23,23 @@ trait GetEntityTypesRequest extends StObject {
 }
 object GetEntityTypesRequest {
   
-  @scala.inline
-  def apply(): GetEntityTypesRequest = {
+  inline def apply(): GetEntityTypesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEntityTypesRequest]
   }
   
-  @scala.inline
-  implicit class GetEntityTypesRequestMutableBuilder[Self <: GetEntityTypesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEntityTypesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: entityTypesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: entityTypesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -53,67 +53,47 @@ trait FilterLogEventsRequest extends StObject {
 }
 object FilterLogEventsRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName): FilterLogEventsRequest = {
+  inline def apply(logGroupName: LogGroupName): FilterLogEventsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterLogEventsRequest]
   }
   
-  @scala.inline
-  implicit class FilterLogEventsRequestMutableBuilder[Self <: FilterLogEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FilterLogEventsRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+    inline def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
+    inline def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
     
-    @scala.inline
-    def setInterleaved(value: Interleaved): Self = StObject.set(x, "interleaved", value.asInstanceOf[js.Any])
+    inline def setInterleaved(value: Interleaved): Self = StObject.set(x, "interleaved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterleavedUndefined: Self = StObject.set(x, "interleaved", js.undefined)
+    inline def setInterleavedUndefined: Self = StObject.set(x, "interleaved", js.undefined)
     
-    @scala.inline
-    def setLimit(value: EventsLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: EventsLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNamePrefix(value: LogStreamName): Self = StObject.set(x, "logStreamNamePrefix", value.asInstanceOf[js.Any])
+    inline def setLogStreamNamePrefix(value: LogStreamName): Self = StObject.set(x, "logStreamNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNamePrefixUndefined: Self = StObject.set(x, "logStreamNamePrefix", js.undefined)
+    inline def setLogStreamNamePrefixUndefined: Self = StObject.set(x, "logStreamNamePrefix", js.undefined)
     
-    @scala.inline
-    def setLogStreamNames(value: InputLogStreamNames): Self = StObject.set(x, "logStreamNames", value.asInstanceOf[js.Any])
+    inline def setLogStreamNames(value: InputLogStreamNames): Self = StObject.set(x, "logStreamNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNamesUndefined: Self = StObject.set(x, "logStreamNames", js.undefined)
+    inline def setLogStreamNamesUndefined: Self = StObject.set(x, "logStreamNames", js.undefined)
     
-    @scala.inline
-    def setLogStreamNamesVarargs(value: LogStreamName*): Self = StObject.set(x, "logStreamNames", js.Array(value :_*))
+    inline def setLogStreamNamesVarargs(value: LogStreamName*): Self = StObject.set(x, "logStreamNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

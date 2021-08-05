@@ -17,17 +17,14 @@ object responseMod {
   }
   object MetadataBearer {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): MetadataBearer = {
+    inline def apply($metadata: ResponseMetadata): MetadataBearer = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetadataBearer]
     }
     
-    @scala.inline
-    implicit class MetadataBearerMutableBuilder[Self <: MetadataBearer] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataBearer](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,56 +69,40 @@ object responseMod {
   }
   object ResponseMetadata {
     
-    @scala.inline
-    def apply(): ResponseMetadata = {
+    inline def apply(): ResponseMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseMetadata]
     }
     
-    @scala.inline
-    implicit class ResponseMetadataMutableBuilder[Self <: ResponseMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseMetadata](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+      inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
       
-      @scala.inline
-      def setCfId(value: String): Self = StObject.set(x, "cfId", value.asInstanceOf[js.Any])
+      inline def setCfId(value: String): Self = StObject.set(x, "cfId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCfIdUndefined: Self = StObject.set(x, "cfId", js.undefined)
+      inline def setCfIdUndefined: Self = StObject.set(x, "cfId", js.undefined)
       
-      @scala.inline
-      def setExtendedRequestId(value: String): Self = StObject.set(x, "extendedRequestId", value.asInstanceOf[js.Any])
+      inline def setExtendedRequestId(value: String): Self = StObject.set(x, "extendedRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedRequestIdUndefined: Self = StObject.set(x, "extendedRequestId", js.undefined)
+      inline def setExtendedRequestIdUndefined: Self = StObject.set(x, "extendedRequestId", js.undefined)
       
-      @scala.inline
-      def setHttpHeaders(value: HeaderBag): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
+      inline def setHttpHeaders(value: HeaderBag): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
+      inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
       
-      @scala.inline
-      def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
+      inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
+      inline def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
       
-      @scala.inline
-      def setTotalRetryDelay(value: Double): Self = StObject.set(x, "totalRetryDelay", value.asInstanceOf[js.Any])
+      inline def setTotalRetryDelay(value: Double): Self = StObject.set(x, "totalRetryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalRetryDelayUndefined: Self = StObject.set(x, "totalRetryDelay", js.undefined)
+      inline def setTotalRetryDelayUndefined: Self = StObject.set(x, "totalRetryDelay", js.undefined)
     }
   }
 }

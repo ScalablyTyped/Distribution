@@ -18,34 +18,25 @@ trait DocumentAccepted extends StObject {
 }
 object DocumentAccepted {
   
-  @scala.inline
-  def apply(): DocumentAccepted = {
+  inline def apply(): DocumentAccepted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentAccepted]
   }
   
-  @scala.inline
-  implicit class DocumentAcceptedMutableBuilder[Self <: DocumentAccepted] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAccepted](x: Self) {
     
-    @scala.inline
-    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
+    inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
+    inline def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
-    @scala.inline
-    def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+    inline def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
+    inline def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
     
-    @scala.inline
-    def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
+    inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

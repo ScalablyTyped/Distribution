@@ -13,13 +13,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClientIp(req: Request): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientIp")(req.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getClientIp(req: Request): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientIp")(req.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def mw(): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")().asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
-  @scala.inline
-  def mw(options: Options): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
+  inline def mw(): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")().asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
+  inline def mw(options: Options): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
   
   trait Options extends StObject {
     
@@ -27,17 +24,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(attributeName: String): Options = {
+    inline def apply(attributeName: String): Options = {
       val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,32 +47,24 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply(connection: Socket, headers: RequestHeaders): Request = {
+    inline def apply(connection: Socket, headers: RequestHeaders): Request = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: RemoteAddress): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: RemoteAddress): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setSocket(value: RemoteAddress): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: RemoteAddress): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+      inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     }
   }
   
@@ -100,50 +86,36 @@ object mod {
   }
   object RequestHeaders {
     
-    @scala.inline
-    def apply(): RequestHeaders = {
+    inline def apply(): RequestHeaders = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    @scala.inline
-    implicit class RequestHeadersMutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
+    extension [Self <: RequestHeaders](x: Self) {
       
-      @scala.inline
-      def `setForwarded-for`(value: String): Self = StObject.set(x, "forwarded-for", value.asInstanceOf[js.Any])
+      inline def `setForwarded-for`(value: String): Self = StObject.set(x, "forwarded-for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setForwarded-forUndefined`: Self = StObject.set(x, "forwarded-for", js.undefined)
+      inline def `setForwarded-forUndefined`: Self = StObject.set(x, "forwarded-for", js.undefined)
       
-      @scala.inline
-      def `setX-client-ip`(value: String): Self = StObject.set(x, "x-client-ip", value.asInstanceOf[js.Any])
+      inline def `setX-client-ip`(value: String): Self = StObject.set(x, "x-client-ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-client-ipUndefined`: Self = StObject.set(x, "x-client-ip", js.undefined)
+      inline def `setX-client-ipUndefined`: Self = StObject.set(x, "x-client-ip", js.undefined)
       
-      @scala.inline
-      def `setX-cluster-client-ip`(value: String): Self = StObject.set(x, "x-cluster-client-ip", value.asInstanceOf[js.Any])
+      inline def `setX-cluster-client-ip`(value: String): Self = StObject.set(x, "x-cluster-client-ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-cluster-client-ipUndefined`: Self = StObject.set(x, "x-cluster-client-ip", js.undefined)
+      inline def `setX-cluster-client-ipUndefined`: Self = StObject.set(x, "x-cluster-client-ip", js.undefined)
       
-      @scala.inline
-      def `setX-forwarded`(value: String): Self = StObject.set(x, "x-forwarded", value.asInstanceOf[js.Any])
+      inline def `setX-forwarded`(value: String): Self = StObject.set(x, "x-forwarded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-forwarded-for`(value: String): Self = StObject.set(x, "x-forwarded-for", value.asInstanceOf[js.Any])
+      inline def `setX-forwarded-for`(value: String): Self = StObject.set(x, "x-forwarded-for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-forwarded-forUndefined`: Self = StObject.set(x, "x-forwarded-for", js.undefined)
+      inline def `setX-forwarded-forUndefined`: Self = StObject.set(x, "x-forwarded-for", js.undefined)
       
-      @scala.inline
-      def `setX-forwardedUndefined`: Self = StObject.set(x, "x-forwarded", js.undefined)
+      inline def `setX-forwardedUndefined`: Self = StObject.set(x, "x-forwarded", js.undefined)
       
-      @scala.inline
-      def `setX-real-ip`(value: String): Self = StObject.set(x, "x-real-ip", value.asInstanceOf[js.Any])
+      inline def `setX-real-ip`(value: String): Self = StObject.set(x, "x-real-ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-real-ipUndefined`: Self = StObject.set(x, "x-real-ip", js.undefined)
+      inline def `setX-real-ipUndefined`: Self = StObject.set(x, "x-real-ip", js.undefined)
     }
   }
   
@@ -157,20 +129,16 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(): typings.requestIp.mod.global.Express.Request = {
+        inline def apply(): typings.requestIp.mod.global.Express.Request = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.requestIp.mod.global.Express.Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: typings.requestIp.mod.global.Express.Request] (val x: Self) extends AnyVal {
+        extension [Self <: typings.requestIp.mod.global.Express.Request](x: Self) {
           
-          @scala.inline
-          def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
+          inline def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setClientIpUndefined: Self = StObject.set(x, "clientIp", js.undefined)
+          inline def setClientIpUndefined: Self = StObject.set(x, "clientIp", js.undefined)
         }
       }
     }

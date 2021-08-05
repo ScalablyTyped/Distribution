@@ -10,19 +10,15 @@ trait Models extends StObject {
 }
 object Models {
   
-  @scala.inline
-  def apply(): Models = {
+  inline def apply(): Models = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Models]
   }
   
-  @scala.inline
-  implicit class ModelsMutableBuilder[Self <: Models] (val x: Self) extends AnyVal {
+  extension [Self <: Models](x: Self) {
     
-    @scala.inline
-    def setModels(value: Account): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: Account): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
   }
 }

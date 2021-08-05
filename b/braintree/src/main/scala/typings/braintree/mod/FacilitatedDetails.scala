@@ -14,22 +14,17 @@ trait FacilitatedDetails extends StObject {
 }
 object FacilitatedDetails {
   
-  @scala.inline
-  def apply(merchantId: String, merchantName: String, paymentMethodNonce: String): FacilitatedDetails = {
+  inline def apply(merchantId: String, merchantName: String, paymentMethodNonce: String): FacilitatedDetails = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], merchantName = merchantName.asInstanceOf[js.Any], paymentMethodNonce = paymentMethodNonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacilitatedDetails]
   }
   
-  @scala.inline
-  implicit class FacilitatedDetailsMutableBuilder[Self <: FacilitatedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: FacilitatedDetails](x: Self) {
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantName(value: String): Self = StObject.set(x, "merchantName", value.asInstanceOf[js.Any])
+    inline def setMerchantName(value: String): Self = StObject.set(x, "merchantName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
   }
 }

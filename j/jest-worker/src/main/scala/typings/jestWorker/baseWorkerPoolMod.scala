@@ -17,16 +17,16 @@ object baseWorkerPoolMod {
        with BaseWorkerPool {
     def this(workerPath: String, options: WorkerPoolOptions) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val _options: WorkerPoolOptions = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _stderr: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _stdout: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _workers: js.Any = js.native
     
     /* CompleteClass */
@@ -50,13 +50,13 @@ object baseWorkerPoolMod {
   
   trait BaseWorkerPool extends StObject {
     
-    val _options: WorkerPoolOptions
+    /* protected */ val _options: WorkerPoolOptions
     
-    val _stderr: js.Any
+    /* private */ val _stderr: js.Any
     
-    val _stdout: js.Any
+    /* private */ val _stdout: js.Any
     
-    val _workers: js.Any
+    /* private */ val _workers: js.Any
     
     def createWorker(_workerOptions: WorkerOptions): WorkerInterface
     
@@ -72,8 +72,7 @@ object baseWorkerPoolMod {
   }
   object BaseWorkerPool {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _options: WorkerPoolOptions,
       _stderr: js.Any,
       _stdout: js.Any,
@@ -89,38 +88,27 @@ object baseWorkerPoolMod {
       __obj.asInstanceOf[BaseWorkerPool]
     }
     
-    @scala.inline
-    implicit class BaseWorkerPoolMutableBuilder[Self <: BaseWorkerPool] (val x: Self) extends AnyVal {
+    extension [Self <: BaseWorkerPool](x: Self) {
       
-      @scala.inline
-      def setCreateWorker(value: WorkerOptions => WorkerInterface): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
+      inline def setCreateWorker(value: WorkerOptions => WorkerInterface): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
+      inline def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
+      inline def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWorkerById(value: Double => WorkerInterface): Self = StObject.set(x, "getWorkerById", js.Any.fromFunction1(value))
+      inline def setGetWorkerById(value: Double => WorkerInterface): Self = StObject.set(x, "getWorkerById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetWorkers(value: () => js.Array[WorkerInterface]): Self = StObject.set(x, "getWorkers", js.Any.fromFunction0(value))
+      inline def setGetWorkers(value: () => js.Array[WorkerInterface]): Self = StObject.set(x, "getWorkers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_options(value: WorkerPoolOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: WorkerPoolOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stderr(value: js.Any): Self = StObject.set(x, "_stderr", value.asInstanceOf[js.Any])
+      inline def set_stderr(value: js.Any): Self = StObject.set(x, "_stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stdout(value: js.Any): Self = StObject.set(x, "_stdout", value.asInstanceOf[js.Any])
+      inline def set_stdout(value: js.Any): Self = StObject.set(x, "_stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_workers(value: js.Any): Self = StObject.set(x, "_workers", value.asInstanceOf[js.Any])
+      inline def set_workers(value: js.Any): Self = StObject.set(x, "_workers", value.asInstanceOf[js.Any])
     }
   }
 }

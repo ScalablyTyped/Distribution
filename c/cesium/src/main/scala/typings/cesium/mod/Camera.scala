@@ -206,22 +206,19 @@ object Camera {
   @JSImport("cesium", "Camera.DEFAULT_OFFSET")
   @js.native
   def DEFAULT_OFFSET: HeadingPitchRange = js.native
-  @scala.inline
-  def DEFAULT_OFFSET_=(x: HeadingPitchRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OFFSET")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_OFFSET_=(x: HeadingPitchRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OFFSET")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "Camera.DEFAULT_VIEW_FACTOR")
   @js.native
   def DEFAULT_VIEW_FACTOR: Double = js.native
-  @scala.inline
-  def DEFAULT_VIEW_FACTOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_VIEW_FACTOR")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_VIEW_FACTOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_VIEW_FACTOR")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "Camera.DEFAULT_VIEW_RECTANGLE")
   @js.native
   def DEFAULT_VIEW_RECTANGLE: Rectangle = js.native
-  @scala.inline
-  def DEFAULT_VIEW_RECTANGLE_=(x: Rectangle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_VIEW_RECTANGLE")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_VIEW_RECTANGLE_=(x: Rectangle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_VIEW_RECTANGLE")(x.asInstanceOf[js.Any])
   
   type FlightCancelledCallback = js.Function0[Unit]
   

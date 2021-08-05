@@ -20,8 +20,7 @@ trait IShellItems extends StObject {
 }
 object IShellItems {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     Folders: IFolderDefs,
     GetObjectVersionsCount: () => Double,
@@ -33,25 +32,18 @@ object IShellItems {
     __obj.asInstanceOf[IShellItems]
   }
   
-  @scala.inline
-  implicit class IShellItemsMutableBuilder[Self <: IShellItems] (val x: Self) extends AnyVal {
+  extension [Self <: IShellItems](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolders(value: IFolderDefs): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
+    inline def setFolders(value: IFolderDefs): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetObjectVersionsCount(value: () => Double): Self = StObject.set(x, "GetObjectVersionsCount", js.Any.fromFunction0(value))
+    inline def setGetObjectVersionsCount(value: () => Double): Self = StObject.set(x, "GetObjectVersionsCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObjectFiles(value: IObjectFileAndObjVerOfMultipleFiles): Self = StObject.set(x, "ObjectFiles", value.asInstanceOf[js.Any])
+    inline def setObjectFiles(value: IObjectFileAndObjVerOfMultipleFiles): Self = StObject.set(x, "ObjectFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersions(value: IObjectVersions): Self = StObject.set(x, "ObjectVersions", value.asInstanceOf[js.Any])
+    inline def setObjectVersions(value: IObjectVersions): Self = StObject.set(x, "ObjectVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionsAndProperties(value: IObjectVersionAndPropertiesOfMultipleObjects): Self = StObject.set(x, "ObjectVersionsAndProperties", value.asInstanceOf[js.Any])
+    inline def setObjectVersionsAndProperties(value: IObjectVersionAndPropertiesOfMultipleObjects): Self = StObject.set(x, "ObjectVersionsAndProperties", value.asInstanceOf[js.Any])
   }
 }

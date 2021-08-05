@@ -12,27 +12,23 @@ object apicalypseStrings {
   sealed trait asc
     extends StObject
        with SortDirection
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait body
     extends StObject
        with QueryMethod
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
   sealed trait desc
     extends StObject
        with SortDirection
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait url
     extends StObject
        with QueryMethod
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
 }

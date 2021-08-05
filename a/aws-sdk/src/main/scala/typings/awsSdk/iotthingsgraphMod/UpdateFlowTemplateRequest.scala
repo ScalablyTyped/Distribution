@@ -23,25 +23,19 @@ trait UpdateFlowTemplateRequest extends StObject {
 }
 object UpdateFlowTemplateRequest {
   
-  @scala.inline
-  def apply(definition: DefinitionDocument, id: Urn): UpdateFlowTemplateRequest = {
+  inline def apply(definition: DefinitionDocument, id: Urn): UpdateFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFlowTemplateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFlowTemplateRequestMutableBuilder[Self <: UpdateFlowTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFlowTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
+    inline def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
+    inline def setCompatibleNamespaceVersionUndefined: Self = StObject.set(x, "compatibleNamespaceVersion", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

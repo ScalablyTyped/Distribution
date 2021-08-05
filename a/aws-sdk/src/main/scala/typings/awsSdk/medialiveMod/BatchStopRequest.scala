@@ -18,31 +18,23 @@ trait BatchStopRequest extends StObject {
 }
 object BatchStopRequest {
   
-  @scala.inline
-  def apply(): BatchStopRequest = {
+  inline def apply(): BatchStopRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchStopRequest]
   }
   
-  @scala.inline
-  implicit class BatchStopRequestMutableBuilder[Self <: BatchStopRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchStopRequest](x: Self) {
     
-    @scala.inline
-    def setChannelIds(value: listOfString): Self = StObject.set(x, "ChannelIds", value.asInstanceOf[js.Any])
+    inline def setChannelIds(value: listOfString): Self = StObject.set(x, "ChannelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdsUndefined: Self = StObject.set(x, "ChannelIds", js.undefined)
+    inline def setChannelIdsUndefined: Self = StObject.set(x, "ChannelIds", js.undefined)
     
-    @scala.inline
-    def setChannelIdsVarargs(value: string*): Self = StObject.set(x, "ChannelIds", js.Array(value :_*))
+    inline def setChannelIdsVarargs(value: string*): Self = StObject.set(x, "ChannelIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMultiplexIds(value: listOfString): Self = StObject.set(x, "MultiplexIds", value.asInstanceOf[js.Any])
+    inline def setMultiplexIds(value: listOfString): Self = StObject.set(x, "MultiplexIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexIdsUndefined: Self = StObject.set(x, "MultiplexIds", js.undefined)
+    inline def setMultiplexIdsUndefined: Self = StObject.set(x, "MultiplexIds", js.undefined)
     
-    @scala.inline
-    def setMultiplexIdsVarargs(value: string*): Self = StObject.set(x, "MultiplexIds", js.Array(value :_*))
+    inline def setMultiplexIdsVarargs(value: string*): Self = StObject.set(x, "MultiplexIds", js.Array(value :_*))
   }
 }

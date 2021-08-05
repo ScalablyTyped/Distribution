@@ -11,16 +11,13 @@ trait EventLinkAdded extends StObject {
 }
 object EventLinkAdded {
   
-  @scala.inline
-  def apply(link: Link): EventLinkAdded = {
+  inline def apply(link: Link): EventLinkAdded = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventLinkAdded]
   }
   
-  @scala.inline
-  implicit class EventLinkAddedMutableBuilder[Self <: EventLinkAdded] (val x: Self) extends AnyVal {
+  extension [Self <: EventLinkAdded](x: Self) {
     
-    @scala.inline
-    def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
   }
 }

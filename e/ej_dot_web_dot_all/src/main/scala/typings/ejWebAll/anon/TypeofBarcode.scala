@@ -15,19 +15,15 @@ trait TypeofBarcode extends StObject {
 }
 object TypeofBarcode {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Barcode): TypeofBarcode = {
+  inline def apply(Locale: js.Any, fn: Barcode): TypeofBarcode = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofBarcode]
   }
   
-  @scala.inline
-  implicit class TypeofBarcodeMutableBuilder[Self <: TypeofBarcode] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofBarcode](x: Self) {
     
-    @scala.inline
-    def setFn(value: Barcode): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Barcode): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

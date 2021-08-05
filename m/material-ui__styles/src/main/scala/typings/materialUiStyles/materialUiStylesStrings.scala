@@ -8,36 +8,29 @@ object materialUiStylesStrings {
   
   @js.native
   sealed trait ThemeWithProps extends StObject
-  @scala.inline
-  def ThemeWithProps: ThemeWithProps = "ThemeWithProps".asInstanceOf[ThemeWithProps]
+  inline def ThemeWithProps: ThemeWithProps = "ThemeWithProps".asInstanceOf[ThemeWithProps]
   
   @js.native
   sealed trait className extends StObject
-  @scala.inline
-  def className: className = "className".asInstanceOf[className]
+  inline def className: className = "className".asInstanceOf[className]
   
   @js.native
   sealed trait classes extends StObject
-  @scala.inline
-  def classes: classes = "classes".asInstanceOf[classes]
+  inline def classes: classes = "classes".asInstanceOf[classes]
   
   @js.native
   sealed trait innerRef extends StObject
-  @scala.inline
-  def innerRef: innerRef = "innerRef".asInstanceOf[innerRef]
+  inline def innerRef: innerRef = "innerRef".asInstanceOf[innerRef]
   
   @js.native
   sealed trait root extends StObject
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
+  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
   sealed trait theme extends StObject
-  @scala.inline
-  def theme: theme = "theme".asInstanceOf[theme]
+  inline def theme: theme = "theme".asInstanceOf[theme]
   
   @js.native
   sealed trait withTheme extends StObject
-  @scala.inline
-  def withTheme: withTheme = "withTheme".asInstanceOf[withTheme]
+  inline def withTheme: withTheme = "withTheme".asInstanceOf[withTheme]
 }

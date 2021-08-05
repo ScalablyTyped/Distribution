@@ -30,31 +30,23 @@ trait SchemaOptimizationActivity extends StObject {
 }
 object SchemaOptimizationActivity {
   
-  @scala.inline
-  def apply(): SchemaOptimizationActivity = {
+  inline def apply(): SchemaOptimizationActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOptimizationActivity]
   }
   
-  @scala.inline
-  implicit class SchemaOptimizationActivityMutableBuilder[Self <: SchemaOptimizationActivity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOptimizationActivity](x: Self) {
     
-    @scala.inline
-    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "floodlightActivityIdDimensionValue", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "floodlightActivityIdDimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdDimensionValueUndefined: Self = StObject.set(x, "floodlightActivityIdDimensionValue", js.undefined)
+    inline def setFloodlightActivityIdDimensionValueUndefined: Self = StObject.set(x, "floodlightActivityIdDimensionValue", js.undefined)
     
-    @scala.inline
-    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
+    inline def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

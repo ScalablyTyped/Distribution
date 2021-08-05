@@ -15,19 +15,15 @@ trait DicomFilterConfig extends StObject {
 }
 object DicomFilterConfig {
   
-  @scala.inline
-  def apply(): DicomFilterConfig = {
+  inline def apply(): DicomFilterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DicomFilterConfig]
   }
   
-  @scala.inline
-  implicit class DicomFilterConfigMutableBuilder[Self <: DicomFilterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DicomFilterConfig](x: Self) {
     
-    @scala.inline
-    def setResourcePathsGcsUri(value: String): Self = StObject.set(x, "resourcePathsGcsUri", value.asInstanceOf[js.Any])
+    inline def setResourcePathsGcsUri(value: String): Self = StObject.set(x, "resourcePathsGcsUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePathsGcsUriUndefined: Self = StObject.set(x, "resourcePathsGcsUri", js.undefined)
+    inline def setResourcePathsGcsUriUndefined: Self = StObject.set(x, "resourcePathsGcsUri", js.undefined)
   }
 }

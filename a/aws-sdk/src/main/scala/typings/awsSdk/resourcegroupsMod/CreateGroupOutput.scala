@@ -28,37 +28,27 @@ trait CreateGroupOutput extends StObject {
 }
 object CreateGroupOutput {
   
-  @scala.inline
-  def apply(): CreateGroupOutput = {
+  inline def apply(): CreateGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGroupOutput]
   }
   
-  @scala.inline
-  implicit class CreateGroupOutputMutableBuilder[Self <: CreateGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGroupOutput](x: Self) {
     
-    @scala.inline
-    def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupConfiguration(value: GroupConfiguration): Self = StObject.set(x, "GroupConfiguration", value.asInstanceOf[js.Any])
+    inline def setGroupConfiguration(value: GroupConfiguration): Self = StObject.set(x, "GroupConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupConfigurationUndefined: Self = StObject.set(x, "GroupConfiguration", js.undefined)
+    inline def setGroupConfigurationUndefined: Self = StObject.set(x, "GroupConfiguration", js.undefined)
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
-    @scala.inline
-    def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
+    inline def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceQueryUndefined: Self = StObject.set(x, "ResourceQuery", js.undefined)
+    inline def setResourceQueryUndefined: Self = StObject.set(x, "ResourceQuery", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

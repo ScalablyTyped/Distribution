@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBarProtection extends StObject
 object MsoBarProtection {
   
-  @scala.inline
-  def msoBarNoChangeDock: `16` = 16.asInstanceOf[`16`]
+  inline def msoBarNoChangeDock: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def msoBarNoChangeVisible: `8` = 8.asInstanceOf[`8`]
+  inline def msoBarNoChangeVisible: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoBarNoCustomize: `1` = 1.asInstanceOf[`1`]
+  inline def msoBarNoCustomize: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoBarNoHorizontalDock: `64` = 64.asInstanceOf[`64`]
+  inline def msoBarNoHorizontalDock: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def msoBarNoMove: `4` = 4.asInstanceOf[`4`]
+  inline def msoBarNoMove: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoBarNoProtection: `0` = 0.asInstanceOf[`0`]
+  inline def msoBarNoProtection: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBarNoResize: `2` = 2.asInstanceOf[`2`]
+  inline def msoBarNoResize: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoBarNoVerticalDock: `32` = 32.asInstanceOf[`32`]
+  inline def msoBarNoVerticalDock: `32` = 32.asInstanceOf[`32`]
 }

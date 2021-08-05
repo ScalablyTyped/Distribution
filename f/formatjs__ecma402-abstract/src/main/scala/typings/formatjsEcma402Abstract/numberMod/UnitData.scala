@@ -17,8 +17,7 @@ trait UnitData extends StObject {
 }
 object UnitData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     long: LDMLPluralRuleMap[String],
     narrow: LDMLPluralRuleMap[String],
     perUnit: Recordnarrowshortlongstri,
@@ -28,19 +27,14 @@ object UnitData {
     __obj.asInstanceOf[UnitData]
   }
   
-  @scala.inline
-  implicit class UnitDataMutableBuilder[Self <: UnitData] (val x: Self) extends AnyVal {
+  extension [Self <: UnitData](x: Self) {
     
-    @scala.inline
-    def setLong(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrow(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerUnit(value: Recordnarrowshortlongstri): Self = StObject.set(x, "perUnit", value.asInstanceOf[js.Any])
+    inline def setPerUnit(value: Recordnarrowshortlongstri): Self = StObject.set(x, "perUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

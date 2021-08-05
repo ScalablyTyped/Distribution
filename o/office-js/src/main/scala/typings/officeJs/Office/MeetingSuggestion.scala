@@ -53,8 +53,7 @@ trait MeetingSuggestion extends StObject {
 }
 object MeetingSuggestion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attendees: js.Array[EmailUser],
     end: String,
     location: String,
@@ -66,28 +65,20 @@ object MeetingSuggestion {
     __obj.asInstanceOf[MeetingSuggestion]
   }
   
-  @scala.inline
-  implicit class MeetingSuggestionMutableBuilder[Self <: MeetingSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: MeetingSuggestion](x: Self) {
     
-    @scala.inline
-    def setAttendees(value: js.Array[EmailUser]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
+    inline def setAttendees(value: js.Array[EmailUser]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttendeesVarargs(value: EmailUser*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: EmailUser*): Self = StObject.set(x, "attendees", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingString(value: String): Self = StObject.set(x, "meetingString", value.asInstanceOf[js.Any])
+    inline def setMeetingString(value: String): Self = StObject.set(x, "meetingString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

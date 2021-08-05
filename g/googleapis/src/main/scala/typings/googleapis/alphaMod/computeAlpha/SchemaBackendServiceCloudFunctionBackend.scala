@@ -22,25 +22,19 @@ trait SchemaBackendServiceCloudFunctionBackend extends StObject {
 }
 object SchemaBackendServiceCloudFunctionBackend {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceCloudFunctionBackend = {
+  inline def apply(): SchemaBackendServiceCloudFunctionBackend = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceCloudFunctionBackend]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceCloudFunctionBackendMutableBuilder[Self <: SchemaBackendServiceCloudFunctionBackend] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceCloudFunctionBackend](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
-    @scala.inline
-    def setTargetProject(value: String): Self = StObject.set(x, "targetProject", value.asInstanceOf[js.Any])
+    inline def setTargetProject(value: String): Self = StObject.set(x, "targetProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetProjectUndefined: Self = StObject.set(x, "targetProject", js.undefined)
+    inline def setTargetProjectUndefined: Self = StObject.set(x, "targetProject", js.undefined)
   }
 }

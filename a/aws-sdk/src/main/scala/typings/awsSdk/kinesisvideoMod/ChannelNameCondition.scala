@@ -18,25 +18,19 @@ trait ChannelNameCondition extends StObject {
 }
 object ChannelNameCondition {
   
-  @scala.inline
-  def apply(): ChannelNameCondition = {
+  inline def apply(): ChannelNameCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelNameCondition]
   }
   
-  @scala.inline
-  implicit class ChannelNameConditionMutableBuilder[Self <: ChannelNameCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelNameCondition](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
+    inline def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
     
-    @scala.inline
-    def setComparisonValue(value: ChannelName): Self = StObject.set(x, "ComparisonValue", value.asInstanceOf[js.Any])
+    inline def setComparisonValue(value: ChannelName): Self = StObject.set(x, "ComparisonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonValueUndefined: Self = StObject.set(x, "ComparisonValue", js.undefined)
+    inline def setComparisonValueUndefined: Self = StObject.set(x, "ComparisonValue", js.undefined)
   }
 }

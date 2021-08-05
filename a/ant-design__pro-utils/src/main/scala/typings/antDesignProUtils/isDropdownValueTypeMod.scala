@@ -10,6 +10,5 @@ object isDropdownValueTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(valueType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(valueType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

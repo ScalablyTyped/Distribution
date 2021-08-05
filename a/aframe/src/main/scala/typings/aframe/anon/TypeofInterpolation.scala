@@ -17,8 +17,7 @@ trait TypeofInterpolation extends StObject {
 }
 object TypeofInterpolation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bezier: (js.Array[Double], Double) => Double,
     CatmullRom: (js.Array[Double], Double) => Double,
     Linear: (js.Array[Double], Double) => Double,
@@ -28,19 +27,14 @@ object TypeofInterpolation {
     __obj.asInstanceOf[TypeofInterpolation]
   }
   
-  @scala.inline
-  implicit class TypeofInterpolationMutableBuilder[Self <: TypeofInterpolation] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofInterpolation](x: Self) {
     
-    @scala.inline
-    def setBezier(value: (js.Array[Double], Double) => Double): Self = StObject.set(x, "Bezier", js.Any.fromFunction2(value))
+    inline def setBezier(value: (js.Array[Double], Double) => Double): Self = StObject.set(x, "Bezier", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCatmullRom(value: (js.Array[Double], Double) => Double): Self = StObject.set(x, "CatmullRom", js.Any.fromFunction2(value))
+    inline def setCatmullRom(value: (js.Array[Double], Double) => Double): Self = StObject.set(x, "CatmullRom", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLinear(value: (js.Array[Double], Double) => Double): Self = StObject.set(x, "Linear", js.Any.fromFunction2(value))
+    inline def setLinear(value: (js.Array[Double], Double) => Double): Self = StObject.set(x, "Linear", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUtils(value: Bernstein): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
+    inline def setUtils(value: Bernstein): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
   }
 }

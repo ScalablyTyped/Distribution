@@ -12,13 +12,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertToArray[T](`val`: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def convertToArray[T](`val`: Map[js.Any, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def convertToArray[T](`val`: Set[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def convertToArray[T](`val`: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def convertToArray[T](`val`: Map[js.Any, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def convertToArray[T](`val`: Set[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToArray")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def isPromise[T](p: js.Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(p.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
+  inline def isPromise[T](p: js.Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(p.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
 }

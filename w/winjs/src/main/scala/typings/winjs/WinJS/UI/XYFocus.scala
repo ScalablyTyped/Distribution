@@ -28,38 +28,28 @@ object XYFocus {
   }
   object IRect {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double, width: Double): IRect = {
+    inline def apply(height: Double, left: Double, top: Double, width: Double): IRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRect]
     }
     
-    @scala.inline
-    implicit class IRectMutableBuilder[Self <: IRect] (val x: Self) extends AnyVal {
+    extension [Self <: IRect](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,38 +86,28 @@ object XYFocus {
   }
   object XYFocusOptions {
     
-    @scala.inline
-    def apply(): XYFocusOptions = {
+    inline def apply(): XYFocusOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XYFocusOptions]
     }
     
-    @scala.inline
-    implicit class XYFocusOptionsMutableBuilder[Self <: XYFocusOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XYFocusOptions](x: Self) {
       
-      @scala.inline
-      def setFocusRoot(value: HTMLElement): Self = StObject.set(x, "focusRoot", value.asInstanceOf[js.Any])
+      inline def setFocusRoot(value: HTMLElement): Self = StObject.set(x, "focusRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusRootUndefined: Self = StObject.set(x, "focusRoot", js.undefined)
+      inline def setFocusRootUndefined: Self = StObject.set(x, "focusRoot", js.undefined)
       
-      @scala.inline
-      def setHistoryRect(value: IRect): Self = StObject.set(x, "historyRect", value.asInstanceOf[js.Any])
+      inline def setHistoryRect(value: IRect): Self = StObject.set(x, "historyRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryRectUndefined: Self = StObject.set(x, "historyRect", js.undefined)
+      inline def setHistoryRectUndefined: Self = StObject.set(x, "historyRect", js.undefined)
       
-      @scala.inline
-      def setReferenceElement(value: HTMLElement): Self = StObject.set(x, "referenceElement", value.asInstanceOf[js.Any])
+      inline def setReferenceElement(value: HTMLElement): Self = StObject.set(x, "referenceElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceElementUndefined: Self = StObject.set(x, "referenceElement", js.undefined)
+      inline def setReferenceElementUndefined: Self = StObject.set(x, "referenceElement", js.undefined)
       
-      @scala.inline
-      def setReferenceRect(value: IRect): Self = StObject.set(x, "referenceRect", value.asInstanceOf[js.Any])
+      inline def setReferenceRect(value: IRect): Self = StObject.set(x, "referenceRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceRectUndefined: Self = StObject.set(x, "referenceRect", js.undefined)
+      inline def setReferenceRectUndefined: Self = StObject.set(x, "referenceRect", js.undefined)
     }
   }
 }

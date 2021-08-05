@@ -22,8 +22,7 @@ trait Control
 }
 object Control {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createComponentForDisplayMode: String => js.Any,
     dispose: () => scala.Unit,
     get_enabled: () => Boolean,
@@ -35,22 +34,16 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  @scala.inline
-  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+  extension [Self <: Control](x: Self) {
     
-    @scala.inline
-    def setCreateComponentForDisplayMode(value: String => js.Any): Self = StObject.set(x, "createComponentForDisplayMode", js.Any.fromFunction1(value))
+    inline def setCreateComponentForDisplayMode(value: String => js.Any): Self = StObject.set(x, "createComponentForDisplayMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_enabled(value: () => Boolean): Self = StObject.set(x, "get_enabled", js.Any.fromFunction0(value))
+    inline def setGet_enabled(value: () => Boolean): Self = StObject.set(x, "get_enabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+    inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_root(value: () => Root): Self = StObject.set(x, "get_root", js.Any.fromFunction0(value))
+    inline def setGet_root(value: () => Root): Self = StObject.set(x, "get_root", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_enabled(value: Boolean => Boolean): Self = StObject.set(x, "set_enabled", js.Any.fromFunction1(value))
+    inline def setSet_enabled(value: Boolean => Boolean): Self = StObject.set(x, "set_enabled", js.Any.fromFunction1(value))
   }
 }

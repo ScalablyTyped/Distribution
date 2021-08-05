@@ -28,8 +28,7 @@ trait BootboxService extends StObject {
 }
 object BootboxService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addLocale: (String, BootboxLocaleValues) => Unit,
     alert: String => js.Promise[js.Any],
     confirm: String => js.Promise[js.Any],
@@ -44,34 +43,24 @@ object BootboxService {
     __obj.asInstanceOf[BootboxService]
   }
   
-  @scala.inline
-  implicit class BootboxServiceMutableBuilder[Self <: BootboxService] (val x: Self) extends AnyVal {
+  extension [Self <: BootboxService](x: Self) {
     
-    @scala.inline
-    def setAddLocale(value: (String, BootboxLocaleValues) => Unit): Self = StObject.set(x, "addLocale", js.Any.fromFunction2(value))
+    inline def setAddLocale(value: (String, BootboxLocaleValues) => Unit): Self = StObject.set(x, "addLocale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAlert(value: String => js.Promise[js.Any]): Self = StObject.set(x, "alert", js.Any.fromFunction1(value))
+    inline def setAlert(value: String => js.Promise[js.Any]): Self = StObject.set(x, "alert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConfirm(value: String => js.Promise[js.Any]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+    inline def setConfirm(value: String => js.Promise[js.Any]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomDialog(value: NgBootboxDialog => Unit): Self = StObject.set(x, "customDialog", js.Any.fromFunction1(value))
+    inline def setCustomDialog(value: NgBootboxDialog => Unit): Self = StObject.set(x, "customDialog", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
+    inline def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrompt(value: String => js.Promise[js.Any]): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
+    inline def setPrompt(value: String => js.Promise[js.Any]): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveLocale(value: String => Unit): Self = StObject.set(x, "removeLocale", js.Any.fromFunction1(value))
+    inline def setRemoveLocale(value: String => Unit): Self = StObject.set(x, "removeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaults(value: BootboxDefaultOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+    inline def setSetDefaults(value: BootboxDefaultOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
+    inline def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
   }
 }

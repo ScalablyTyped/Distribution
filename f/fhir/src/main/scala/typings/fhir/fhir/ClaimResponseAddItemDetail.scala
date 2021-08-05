@@ -53,73 +53,51 @@ trait ClaimResponseAddItemDetail
 }
 object ClaimResponseAddItemDetail {
   
-  @scala.inline
-  def apply(): ClaimResponseAddItemDetail = {
+  inline def apply(): ClaimResponseAddItemDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClaimResponseAddItemDetail]
   }
   
-  @scala.inline
-  implicit class ClaimResponseAddItemDetailMutableBuilder[Self <: ClaimResponseAddItemDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimResponseAddItemDetail](x: Self) {
     
-    @scala.inline
-    def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = StObject.set(x, "adjudication", value.asInstanceOf[js.Any])
+    inline def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = StObject.set(x, "adjudication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjudicationUndefined: Self = StObject.set(x, "adjudication", js.undefined)
+    inline def setAdjudicationUndefined: Self = StObject.set(x, "adjudication", js.undefined)
     
-    @scala.inline
-    def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = StObject.set(x, "adjudication", js.Array(value :_*))
+    inline def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = StObject.set(x, "adjudication", js.Array(value :_*))
     
-    @scala.inline
-    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setFee(value: Money): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
+    inline def setFee(value: Money): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
+    inline def setFeeUndefined: Self = StObject.set(x, "fee", js.undefined)
     
-    @scala.inline
-    def setModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "modifier", js.Array(value :_*))
+    inline def setModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "modifier", js.Array(value :_*))
     
-    @scala.inline
-    def setNoteNumber(value: js.Array[positiveInt]): Self = StObject.set(x, "noteNumber", value.asInstanceOf[js.Any])
+    inline def setNoteNumber(value: js.Array[positiveInt]): Self = StObject.set(x, "noteNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteNumberUndefined: Self = StObject.set(x, "noteNumber", js.undefined)
+    inline def setNoteNumberUndefined: Self = StObject.set(x, "noteNumber", js.undefined)
     
-    @scala.inline
-    def setNoteNumberVarargs(value: positiveInt*): Self = StObject.set(x, "noteNumber", js.Array(value :_*))
+    inline def setNoteNumberVarargs(value: positiveInt*): Self = StObject.set(x, "noteNumber", js.Array(value :_*))
     
-    @scala.inline
-    def setRevenue(value: CodeableConcept): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
+    inline def setRevenue(value: CodeableConcept): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
+    inline def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
     
-    @scala.inline
-    def setService(value: CodeableConcept): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: CodeableConcept): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def set_noteNumber(value: js.Array[Element]): Self = StObject.set(x, "_noteNumber", value.asInstanceOf[js.Any])
+    inline def set_noteNumber(value: js.Array[Element]): Self = StObject.set(x, "_noteNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_noteNumberUndefined: Self = StObject.set(x, "_noteNumber", js.undefined)
+    inline def set_noteNumberUndefined: Self = StObject.set(x, "_noteNumber", js.undefined)
     
-    @scala.inline
-    def set_noteNumberVarargs(value: Element*): Self = StObject.set(x, "_noteNumber", js.Array(value :_*))
+    inline def set_noteNumberVarargs(value: Element*): Self = StObject.set(x, "_noteNumber", js.Array(value :_*))
   }
 }

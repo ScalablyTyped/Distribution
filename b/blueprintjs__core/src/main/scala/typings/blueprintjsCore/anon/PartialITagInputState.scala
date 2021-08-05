@@ -17,37 +17,27 @@ trait PartialITagInputState extends StObject {
 }
 object PartialITagInputState {
   
-  @scala.inline
-  def apply(): PartialITagInputState = {
+  inline def apply(): PartialITagInputState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialITagInputState]
   }
   
-  @scala.inline
-  implicit class PartialITagInputStateMutableBuilder[Self <: PartialITagInputState] (val x: Self) extends AnyVal {
+  extension [Self <: PartialITagInputState](x: Self) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+    inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
     
-    @scala.inline
-    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+    inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
+    inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
-    @scala.inline
-    def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
+    inline def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInputFocusedUndefined: Self = StObject.set(x, "isInputFocused", js.undefined)
+    inline def setIsInputFocusedUndefined: Self = StObject.set(x, "isInputFocused", js.undefined)
     
-    @scala.inline
-    def setPrevInputValueProp(value: String): Self = StObject.set(x, "prevInputValueProp", value.asInstanceOf[js.Any])
+    inline def setPrevInputValueProp(value: String): Self = StObject.set(x, "prevInputValueProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevInputValuePropUndefined: Self = StObject.set(x, "prevInputValueProp", js.undefined)
+    inline def setPrevInputValuePropUndefined: Self = StObject.set(x, "prevInputValueProp", js.undefined)
   }
 }

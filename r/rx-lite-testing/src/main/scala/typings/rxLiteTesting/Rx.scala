@@ -22,20 +22,16 @@ object Rx {
   }
   object MockObserver {
     
-    @scala.inline
-    def apply[T](checked: () => Observer[js.Any], messages: js.Array[Recorded]): MockObserver[T] = {
+    inline def apply[T](checked: () => Observer[js.Any], messages: js.Array[Recorded]): MockObserver[T] = {
       val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked), messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockObserver[T]]
     }
     
-    @scala.inline
-    implicit class MockObserverMutableBuilder[Self <: MockObserver[?], T] (val x: Self & MockObserver[T]) extends AnyVal {
+    extension [Self <: MockObserver[?], T](x: Self & MockObserver[T]) {
       
-      @scala.inline
-      def setMessages(value: js.Array[Recorded]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[Recorded]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: Recorded*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: Recorded*): Self = StObject.set(x, "messages", js.Array(value :_*))
     }
   }
   
@@ -55,24 +51,19 @@ object Rx {
   }
   object Recorded {
     
-    @scala.inline
-    def apply(equals_ : Recorded => Boolean, time: Double, value: js.Any): Recorded = {
+    inline def apply(equals_ : Recorded => Boolean, time: Double, value: js.Any): Recorded = {
       val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[Recorded]
     }
     
-    @scala.inline
-    implicit class RecordedMutableBuilder[Self <: Recorded] (val x: Self) extends AnyVal {
+    extension [Self <: Recorded](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: Recorded => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: Recorded => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,18 +73,15 @@ object Rx {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(equals_ : Subscription => Boolean): Subscription = {
+    inline def apply(equals_ : Subscription => Boolean): Subscription = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: Subscription => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: Subscription => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     }
   }
   
@@ -115,8 +103,7 @@ object Rx {
   }
   object TestScheduler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (Double, Double) => Double,
       advanceBy: Double => Unit,
       advanceTo: Double => Unit,
@@ -158,26 +145,19 @@ object Rx {
       __obj.asInstanceOf[TestScheduler]
     }
     
-    @scala.inline
-    implicit class TestSchedulerMutableBuilder[Self <: TestScheduler] (val x: Self) extends AnyVal {
+    extension [Self <: TestScheduler](x: Self) {
       
-      @scala.inline
-      def setCreateColdObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = StObject.set(x, "createColdObservable", js.Any.fromFunction1(value))
+      inline def setCreateColdObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = StObject.set(x, "createColdObservable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateHotObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = StObject.set(x, "createHotObservable", js.Any.fromFunction1(value))
+      inline def setCreateHotObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = StObject.set(x, "createHotObservable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateObserver(value: () => MockObserver[js.Any]): Self = StObject.set(x, "createObserver", js.Any.fromFunction0(value))
+      inline def setCreateObserver(value: () => MockObserver[js.Any]): Self = StObject.set(x, "createObserver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartWithCreate(value: js.Function0[Observable[js.Any]] => MockObserver[js.Any]): Self = StObject.set(x, "startWithCreate", js.Any.fromFunction1(value))
+      inline def setStartWithCreate(value: js.Function0[Observable[js.Any]] => MockObserver[js.Any]): Self = StObject.set(x, "startWithCreate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartWithDispose(value: (js.Function0[Observable[js.Any]], Double) => MockObserver[js.Any]): Self = StObject.set(x, "startWithDispose", js.Any.fromFunction2(value))
+      inline def setStartWithDispose(value: (js.Function0[Observable[js.Any]], Double) => MockObserver[js.Any]): Self = StObject.set(x, "startWithDispose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStartWithTiming(value: (js.Function0[Observable[js.Any]], Double, Double, Double) => MockObserver[js.Any]): Self = StObject.set(x, "startWithTiming", js.Any.fromFunction4(value))
+      inline def setStartWithTiming(value: (js.Function0[Observable[js.Any]], Double, Double, Double) => MockObserver[js.Any]): Self = StObject.set(x, "startWithTiming", js.Any.fromFunction4(value))
     }
   }
 }

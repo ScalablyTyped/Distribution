@@ -38,49 +38,35 @@ trait AllocateAddressRequest extends StObject {
 }
 object AllocateAddressRequest {
   
-  @scala.inline
-  def apply(): AllocateAddressRequest = {
+  inline def apply(): AllocateAddressRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllocateAddressRequest]
   }
   
-  @scala.inline
-  implicit class AllocateAddressRequestMutableBuilder[Self <: AllocateAddressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AllocateAddressRequest](x: Self) {
     
-    @scala.inline
-    def setAddress(value: PublicIpAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: PublicIpAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setCustomerOwnedIpv4Pool(value: String): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+    inline def setCustomerOwnedIpv4Pool(value: String): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "CustomerOwnedIpv4Pool", js.undefined)
+    inline def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "CustomerOwnedIpv4Pool", js.undefined)
     
-    @scala.inline
-    def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
+    inline def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
+    inline def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
     
-    @scala.inline
-    def setPublicIpv4Pool(value: Ipv4PoolEc2Id): Self = StObject.set(x, "PublicIpv4Pool", value.asInstanceOf[js.Any])
+    inline def setPublicIpv4Pool(value: Ipv4PoolEc2Id): Self = StObject.set(x, "PublicIpv4Pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpv4PoolUndefined: Self = StObject.set(x, "PublicIpv4Pool", js.undefined)
+    inline def setPublicIpv4PoolUndefined: Self = StObject.set(x, "PublicIpv4Pool", js.undefined)
   }
 }

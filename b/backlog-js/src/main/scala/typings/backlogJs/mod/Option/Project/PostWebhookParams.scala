@@ -18,46 +18,33 @@ trait PostWebhookParams extends StObject {
 }
 object PostWebhookParams {
   
-  @scala.inline
-  def apply(): PostWebhookParams = {
+  inline def apply(): PostWebhookParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostWebhookParams]
   }
   
-  @scala.inline
-  implicit class PostWebhookParamsMutableBuilder[Self <: PostWebhookParams] (val x: Self) extends AnyVal {
+  extension [Self <: PostWebhookParams](x: Self) {
     
-    @scala.inline
-    def setActivityTypeIds(value: js.Array[Double]): Self = StObject.set(x, "activityTypeIds", value.asInstanceOf[js.Any])
+    inline def setActivityTypeIds(value: js.Array[Double]): Self = StObject.set(x, "activityTypeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypeIdsUndefined: Self = StObject.set(x, "activityTypeIds", js.undefined)
+    inline def setActivityTypeIdsUndefined: Self = StObject.set(x, "activityTypeIds", js.undefined)
     
-    @scala.inline
-    def setActivityTypeIdsVarargs(value: Double*): Self = StObject.set(x, "activityTypeIds", js.Array(value :_*))
+    inline def setActivityTypeIdsVarargs(value: Double*): Self = StObject.set(x, "activityTypeIds", js.Array(value :_*))
     
-    @scala.inline
-    def setAllEvent(value: Boolean): Self = StObject.set(x, "allEvent", value.asInstanceOf[js.Any])
+    inline def setAllEvent(value: Boolean): Self = StObject.set(x, "allEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllEventUndefined: Self = StObject.set(x, "allEvent", js.undefined)
+    inline def setAllEventUndefined: Self = StObject.set(x, "allEvent", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHookUrl(value: String): Self = StObject.set(x, "hookUrl", value.asInstanceOf[js.Any])
+    inline def setHookUrl(value: String): Self = StObject.set(x, "hookUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHookUrlUndefined: Self = StObject.set(x, "hookUrl", js.undefined)
+    inline def setHookUrlUndefined: Self = StObject.set(x, "hookUrl", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

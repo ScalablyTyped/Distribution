@@ -18,19 +18,15 @@ trait DeleteSlotTypeVersionRequest extends StObject {
 }
 object DeleteSlotTypeVersionRequest {
   
-  @scala.inline
-  def apply(name: SlotTypeName, version: NumericalVersion): DeleteSlotTypeVersionRequest = {
+  inline def apply(name: SlotTypeName, version: NumericalVersion): DeleteSlotTypeVersionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSlotTypeVersionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSlotTypeVersionRequestMutableBuilder[Self <: DeleteSlotTypeVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSlotTypeVersionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: NumericalVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NumericalVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

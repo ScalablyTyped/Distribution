@@ -26,49 +26,35 @@ trait GoogleCloudDatalabelingV1beta1LabelImageRequest extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1LabelImageRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1LabelImageRequest = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1LabelImageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1LabelImageRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1LabelImageRequestMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1LabelImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1LabelImageRequest](x: Self) {
     
-    @scala.inline
-    def setBasicConfig(value: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig): Self = StObject.set(x, "basicConfig", value.asInstanceOf[js.Any])
+    inline def setBasicConfig(value: GoogleCloudDatalabelingV1beta1HumanAnnotationConfig): Self = StObject.set(x, "basicConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicConfigUndefined: Self = StObject.set(x, "basicConfig", js.undefined)
+    inline def setBasicConfigUndefined: Self = StObject.set(x, "basicConfig", js.undefined)
     
-    @scala.inline
-    def setBoundingPolyConfig(value: GoogleCloudDatalabelingV1beta1BoundingPolyConfig): Self = StObject.set(x, "boundingPolyConfig", value.asInstanceOf[js.Any])
+    inline def setBoundingPolyConfig(value: GoogleCloudDatalabelingV1beta1BoundingPolyConfig): Self = StObject.set(x, "boundingPolyConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyConfigUndefined: Self = StObject.set(x, "boundingPolyConfig", js.undefined)
+    inline def setBoundingPolyConfigUndefined: Self = StObject.set(x, "boundingPolyConfig", js.undefined)
     
-    @scala.inline
-    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    @scala.inline
-    def setImageClassificationConfig(value: GoogleCloudDatalabelingV1beta1ImageClassificationConfig): Self = StObject.set(x, "imageClassificationConfig", value.asInstanceOf[js.Any])
+    inline def setImageClassificationConfig(value: GoogleCloudDatalabelingV1beta1ImageClassificationConfig): Self = StObject.set(x, "imageClassificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageClassificationConfigUndefined: Self = StObject.set(x, "imageClassificationConfig", js.undefined)
+    inline def setImageClassificationConfigUndefined: Self = StObject.set(x, "imageClassificationConfig", js.undefined)
     
-    @scala.inline
-    def setPolylineConfig(value: GoogleCloudDatalabelingV1beta1PolylineConfig): Self = StObject.set(x, "polylineConfig", value.asInstanceOf[js.Any])
+    inline def setPolylineConfig(value: GoogleCloudDatalabelingV1beta1PolylineConfig): Self = StObject.set(x, "polylineConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineConfigUndefined: Self = StObject.set(x, "polylineConfig", js.undefined)
+    inline def setPolylineConfigUndefined: Self = StObject.set(x, "polylineConfig", js.undefined)
     
-    @scala.inline
-    def setSegmentationConfig(value: GoogleCloudDatalabelingV1beta1SegmentationConfig): Self = StObject.set(x, "segmentationConfig", value.asInstanceOf[js.Any])
+    inline def setSegmentationConfig(value: GoogleCloudDatalabelingV1beta1SegmentationConfig): Self = StObject.set(x, "segmentationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationConfigUndefined: Self = StObject.set(x, "segmentationConfig", js.undefined)
+    inline def setSegmentationConfigUndefined: Self = StObject.set(x, "segmentationConfig", js.undefined)
   }
 }

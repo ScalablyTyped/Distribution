@@ -18,28 +18,21 @@ trait ConfluenceAttachmentConfiguration extends StObject {
 }
 object ConfluenceAttachmentConfiguration {
   
-  @scala.inline
-  def apply(): ConfluenceAttachmentConfiguration = {
+  inline def apply(): ConfluenceAttachmentConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfluenceAttachmentConfiguration]
   }
   
-  @scala.inline
-  implicit class ConfluenceAttachmentConfigurationMutableBuilder[Self <: ConfluenceAttachmentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConfluenceAttachmentConfiguration](x: Self) {
     
-    @scala.inline
-    def setAttachmentFieldMappings(value: ConfluenceAttachmentFieldMappingsList): Self = StObject.set(x, "AttachmentFieldMappings", value.asInstanceOf[js.Any])
+    inline def setAttachmentFieldMappings(value: ConfluenceAttachmentFieldMappingsList): Self = StObject.set(x, "AttachmentFieldMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentFieldMappingsUndefined: Self = StObject.set(x, "AttachmentFieldMappings", js.undefined)
+    inline def setAttachmentFieldMappingsUndefined: Self = StObject.set(x, "AttachmentFieldMappings", js.undefined)
     
-    @scala.inline
-    def setAttachmentFieldMappingsVarargs(value: ConfluenceAttachmentToIndexFieldMapping*): Self = StObject.set(x, "AttachmentFieldMappings", js.Array(value :_*))
+    inline def setAttachmentFieldMappingsVarargs(value: ConfluenceAttachmentToIndexFieldMapping*): Self = StObject.set(x, "AttachmentFieldMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setCrawlAttachments(value: Boolean): Self = StObject.set(x, "CrawlAttachments", value.asInstanceOf[js.Any])
+    inline def setCrawlAttachments(value: Boolean): Self = StObject.set(x, "CrawlAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlAttachmentsUndefined: Self = StObject.set(x, "CrawlAttachments", js.undefined)
+    inline def setCrawlAttachmentsUndefined: Self = StObject.set(x, "CrawlAttachments", js.undefined)
   }
 }

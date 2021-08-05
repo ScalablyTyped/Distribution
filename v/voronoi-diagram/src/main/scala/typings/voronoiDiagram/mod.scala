@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(points: js.Array[Point]): VoronoiDiagram = ^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any]).asInstanceOf[VoronoiDiagram]
+  inline def apply(points: js.Array[Point]): VoronoiDiagram = ^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any]).asInstanceOf[VoronoiDiagram]
   
   @JSImport("voronoi-diagram", JSImport.Namespace)
   @js.native
@@ -25,26 +24,20 @@ object mod {
   }
   object VoronoiDiagram {
     
-    @scala.inline
-    def apply(cells: js.Array[Cell], positions: js.Array[Point]): VoronoiDiagram = {
+    inline def apply(cells: js.Array[Cell], positions: js.Array[Point]): VoronoiDiagram = {
       val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], positions = positions.asInstanceOf[js.Any])
       __obj.asInstanceOf[VoronoiDiagram]
     }
     
-    @scala.inline
-    implicit class VoronoiDiagramMutableBuilder[Self <: VoronoiDiagram] (val x: Self) extends AnyVal {
+    extension [Self <: VoronoiDiagram](x: Self) {
       
-      @scala.inline
-      def setCells(value: js.Array[Cell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: js.Array[Cell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellsVarargs(value: Cell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: Cell*): Self = StObject.set(x, "cells", js.Array(value :_*))
       
-      @scala.inline
-      def setPositions(value: js.Array[Point]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+      inline def setPositions(value: js.Array[Point]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionsVarargs(value: Point*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: Point*): Self = StObject.set(x, "positions", js.Array(value :_*))
     }
   }
 }

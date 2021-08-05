@@ -38,8 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[ResBody](
+  inline def apply[ResBody](
     res: Response_[ResBody],
     callback: js.Function2[/* err */ Null, /* res */ HijackedResponse[ResBody], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

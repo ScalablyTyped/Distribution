@@ -24,37 +24,27 @@ trait DemoteMasterContext extends StObject {
 }
 object DemoteMasterContext {
   
-  @scala.inline
-  def apply(): DemoteMasterContext = {
+  inline def apply(): DemoteMasterContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DemoteMasterContext]
   }
   
-  @scala.inline
-  implicit class DemoteMasterContextMutableBuilder[Self <: DemoteMasterContext] (val x: Self) extends AnyVal {
+  extension [Self <: DemoteMasterContext](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMasterInstanceName(value: String): Self = StObject.set(x, "masterInstanceName", value.asInstanceOf[js.Any])
+    inline def setMasterInstanceName(value: String): Self = StObject.set(x, "masterInstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterInstanceNameUndefined: Self = StObject.set(x, "masterInstanceName", js.undefined)
+    inline def setMasterInstanceNameUndefined: Self = StObject.set(x, "masterInstanceName", js.undefined)
     
-    @scala.inline
-    def setReplicaConfiguration(value: DemoteMasterConfiguration): Self = StObject.set(x, "replicaConfiguration", value.asInstanceOf[js.Any])
+    inline def setReplicaConfiguration(value: DemoteMasterConfiguration): Self = StObject.set(x, "replicaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaConfigurationUndefined: Self = StObject.set(x, "replicaConfiguration", js.undefined)
+    inline def setReplicaConfigurationUndefined: Self = StObject.set(x, "replicaConfiguration", js.undefined)
     
-    @scala.inline
-    def setVerifyGtidConsistency(value: Boolean): Self = StObject.set(x, "verifyGtidConsistency", value.asInstanceOf[js.Any])
+    inline def setVerifyGtidConsistency(value: Boolean): Self = StObject.set(x, "verifyGtidConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyGtidConsistencyUndefined: Self = StObject.set(x, "verifyGtidConsistency", js.undefined)
+    inline def setVerifyGtidConsistencyUndefined: Self = StObject.set(x, "verifyGtidConsistency", js.undefined)
   }
 }

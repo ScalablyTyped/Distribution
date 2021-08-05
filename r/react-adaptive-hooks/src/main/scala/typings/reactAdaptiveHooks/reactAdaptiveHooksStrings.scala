@@ -11,47 +11,39 @@ object reactAdaptiveHooksStrings {
   sealed trait `2g`
     extends StObject
        with EffectiveConnectionType
-  @scala.inline
-  def `2g`: `2g` = "2g".asInstanceOf[`2g`]
+  inline def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   
   @js.native
   sealed trait `3g`
     extends StObject
        with EffectiveConnectionType
-  @scala.inline
-  def `3g`: `3g` = "3g".asInstanceOf[`3g`]
+  inline def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   
   @js.native
   sealed trait `4g`
     extends StObject
        with EffectiveConnectionType
-  @scala.inline
-  def `4g`: `4g` = "4g".asInstanceOf[`4g`]
+  inline def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait `media-source` extends StObject
-  @scala.inline
-  def `media-source`: `media-source` = "media-source".asInstanceOf[`media-source`]
+  inline def `media-source`: `media-source` = "media-source".asInstanceOf[`media-source`]
   
   @js.native
   sealed trait record extends StObject
-  @scala.inline
-  def record: record = "record".asInstanceOf[record]
+  inline def record: record = "record".asInstanceOf[record]
   
   @js.native
   sealed trait `slow-2g`
     extends StObject
        with EffectiveConnectionType
-  @scala.inline
-  def `slow-2g`: `slow-2g` = "slow-2g".asInstanceOf[`slow-2g`]
+  inline def `slow-2g`: `slow-2g` = "slow-2g".asInstanceOf[`slow-2g`]
   
   @js.native
   sealed trait transmission extends StObject
-  @scala.inline
-  def transmission: transmission = "transmission".asInstanceOf[transmission]
+  inline def transmission: transmission = "transmission".asInstanceOf[transmission]
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getStrippedLengthMod {
   
-  @scala.inline
-  def apply(str: String): Double = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(str: String): Double = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("cli-color/get-stripped-length", JSImport.Namespace)
   @js.native

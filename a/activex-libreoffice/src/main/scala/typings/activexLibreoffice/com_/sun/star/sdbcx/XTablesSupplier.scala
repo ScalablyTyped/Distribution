@@ -26,8 +26,7 @@ trait XTablesSupplier
 }
 object XTablesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Tables: XNameAccess,
     acquire: () => Unit,
     getTables: () => XNameAccess,
@@ -38,13 +37,10 @@ object XTablesSupplier {
     __obj.asInstanceOf[XTablesSupplier]
   }
   
-  @scala.inline
-  implicit class XTablesSupplierMutableBuilder[Self <: XTablesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTablesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetTables(value: () => XNameAccess): Self = StObject.set(x, "getTables", js.Any.fromFunction0(value))
+    inline def setGetTables(value: () => XNameAccess): Self = StObject.set(x, "getTables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTables(value: XNameAccess): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: XNameAccess): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
   }
 }

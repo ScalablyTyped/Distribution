@@ -20,11 +20,11 @@ object cordovaConfigMod {
   class CordovaConfig protected () extends StObject {
     def this(configXmlPath: String, packageJsonPath: String) = this()
     
-    var _doc: js.UndefOr[ElementTree] = js.native
+    /* protected */ var _doc: js.UndefOr[ElementTree] = js.native
     
-    var _pkg: js.UndefOr[CordovaPackageJson] = js.native
+    /* protected */ var _pkg: js.UndefOr[CordovaPackageJson] = js.native
     
-    var _sessionid: js.UndefOr[String] = js.native
+    /* protected */ var _sessionid: js.UndefOr[String] = js.native
     
     val configXmlPath: String = js.native
     
@@ -55,7 +55,7 @@ object cordovaConfigMod {
     
     def save(): js.Promise[Unit] = js.native
     
-    var saving: Boolean = js.native
+    /* protected */ var saving: Boolean = js.native
     
     def sessionid: String = js.native
     
@@ -78,12 +78,10 @@ object cordovaConfigMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def load(configXmlPath: String, packageJsonPath: String): js.Promise[CordovaConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(configXmlPath.asInstanceOf[js.Any], packageJsonPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CordovaConfig]]
+    inline def load(configXmlPath: String, packageJsonPath: String): js.Promise[CordovaConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(configXmlPath.asInstanceOf[js.Any], packageJsonPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CordovaConfig]]
   }
   
-  @scala.inline
-  def loadCordovaConfig(integration: RequiredProjectIntegratio): js.Promise[CordovaConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCordovaConfig")(integration.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CordovaConfig]]
+  inline def loadCordovaConfig(integration: RequiredProjectIntegratio): js.Promise[CordovaConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCordovaConfig")(integration.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CordovaConfig]]
   
   trait ConfiguredPlatform extends StObject {
     
@@ -93,23 +91,18 @@ object cordovaConfigMod {
   }
   object ConfiguredPlatform {
     
-    @scala.inline
-    def apply(name: String): ConfiguredPlatform = {
+    inline def apply(name: String): ConfiguredPlatform = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfiguredPlatform]
     }
     
-    @scala.inline
-    implicit class ConfiguredPlatformMutableBuilder[Self <: ConfiguredPlatform] (val x: Self) extends AnyVal {
+    extension [Self <: ConfiguredPlatform](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: String): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: String): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+      inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
     }
   }
 }

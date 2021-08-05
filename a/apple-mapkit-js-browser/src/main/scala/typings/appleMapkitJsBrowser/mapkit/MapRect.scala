@@ -74,8 +74,7 @@ trait MapRect extends StObject {
 }
 object MapRect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => MapRect,
     equals_ : MapRect => Boolean,
     maxX: Double,
@@ -94,43 +93,30 @@ object MapRect {
     __obj.asInstanceOf[MapRect]
   }
   
-  @scala.inline
-  implicit class MapRectMutableBuilder[Self <: MapRect] (val x: Self) extends AnyVal {
+  extension [Self <: MapRect](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => MapRect): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => MapRect): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEquals_(value: MapRect => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: MapRect => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+    inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+    inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidX(value: Double): Self = StObject.set(x, "midX", value.asInstanceOf[js.Any])
+    inline def setMidX(value: Double): Self = StObject.set(x, "midX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidY(value: Double): Self = StObject.set(x, "midY", value.asInstanceOf[js.Any])
+    inline def setMidY(value: Double): Self = StObject.set(x, "midY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+    inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+    inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: MapPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: MapPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: (Double, MapPoint) => MapRect): Self = StObject.set(x, "scale", js.Any.fromFunction2(value))
+    inline def setScale(value: (Double, MapPoint) => MapRect): Self = StObject.set(x, "scale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSize(value: MapSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: MapSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToCoordinateRegion(value: () => CoordinateRegion): Self = StObject.set(x, "toCoordinateRegion", js.Any.fromFunction0(value))
+    inline def setToCoordinateRegion(value: () => CoordinateRegion): Self = StObject.set(x, "toCoordinateRegion", js.Any.fromFunction0(value))
   }
 }

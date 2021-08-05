@@ -26,6 +26,5 @@ object RendererFactory {
   @JSImport("survey-knockout", "RendererFactory.Instance")
   @js.native
   def Instance: RendererFactory = js.native
-  @scala.inline
-  def Instance_=(x: RendererFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
+  inline def Instance_=(x: RendererFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
 }

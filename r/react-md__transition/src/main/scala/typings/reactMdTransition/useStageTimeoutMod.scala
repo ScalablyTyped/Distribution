@@ -11,8 +11,7 @@ object useStageTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useStageTimeout(
+  inline def useStageTimeout(
     timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionTimeout */ js.Any,
     actions: Required[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionActions */ js.Any

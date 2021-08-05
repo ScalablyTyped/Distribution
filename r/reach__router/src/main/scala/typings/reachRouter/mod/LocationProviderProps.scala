@@ -13,28 +13,21 @@ trait LocationProviderProps extends StObject {
 }
 object LocationProviderProps {
   
-  @scala.inline
-  def apply(): LocationProviderProps = {
+  inline def apply(): LocationProviderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationProviderProps]
   }
   
-  @scala.inline
-  implicit class LocationProviderPropsMutableBuilder[Self <: LocationProviderProps] (val x: Self) extends AnyVal {
+  extension [Self <: LocationProviderProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode | LocationProviderRenderFn): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode | LocationProviderRenderFn): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenFunction1(value: /* context */ LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildrenFunction1(value: /* context */ LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
   }
 }

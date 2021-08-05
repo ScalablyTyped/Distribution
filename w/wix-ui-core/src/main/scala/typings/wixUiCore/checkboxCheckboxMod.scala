@@ -28,19 +28,19 @@ object checkboxCheckboxMod {
       */
     def this(props: CheckboxProps, context: js.Any) = this()
     
-    var checkbox: js.Any = js.native
+    /* private */ var checkbox: js.Any = js.native
     
-    var focusedByMouse: js.Any = js.native
+    /* private */ var focusedByMouse: js.Any = js.native
     
-    val handleChange: js.Any = js.native
+    /* private */ val handleChange: js.Any = js.native
     
-    val handleInputBlur: js.Any = js.native
+    /* private */ val handleInputBlur: js.Any = js.native
     
-    val handleInputFocus: js.Any = js.native
+    /* private */ val handleInputFocus: js.Any = js.native
     
-    val handleInputKeyDown: js.Any = js.native
+    /* private */ val handleInputKeyDown: js.Any = js.native
     
-    val handleMouseDown: js.Any = js.native
+    /* private */ val handleMouseDown: js.Any = js.native
     
     @JSName("state")
     var state_Checkbox: FocusVisible = js.native
@@ -55,14 +55,12 @@ object checkboxCheckboxMod {
     @JSImport("wix-ui-core/dist/src/components/checkbox/Checkbox", "Checkbox.defaultProps")
     @js.native
     def defaultProps: PartialCheckboxProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialCheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialCheckboxProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/checkbox/Checkbox", "Checkbox.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait CheckboxProps
@@ -93,56 +91,40 @@ object checkboxCheckboxMod {
   }
   object CheckboxProps {
     
-    @scala.inline
-    def apply(): CheckboxProps = {
+    inline def apply(): CheckboxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    @scala.inline
-    implicit class CheckboxPropsMutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxProps](x: Self) {
       
-      @scala.inline
-      def setCheckedIcon(value: Element): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
+      inline def setCheckedIcon(value: Element): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
+      inline def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+      inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndeterminateIcon(value: Element): Self = StObject.set(x, "indeterminateIcon", value.asInstanceOf[js.Any])
+      inline def setIndeterminateIcon(value: Element): Self = StObject.set(x, "indeterminateIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndeterminateIconUndefined: Self = StObject.set(x, "indeterminateIcon", js.undefined)
+      inline def setIndeterminateIconUndefined: Self = StObject.set(x, "indeterminateIcon", js.undefined)
       
-      @scala.inline
-      def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+      inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: OnChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: OnChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setUncheckedIcon(value: Element): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
+      inline def setUncheckedIcon(value: Element): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
+      inline def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
     }
   }
   
@@ -154,20 +136,16 @@ object checkboxCheckboxMod {
   }
   object CheckboxState {
     
-    @scala.inline
-    def apply(focusVisible: Boolean, isFocused: Boolean): CheckboxState = {
+    inline def apply(focusVisible: Boolean, isFocused: Boolean): CheckboxState = {
       val __obj = js.Dynamic.literal(focusVisible = focusVisible.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckboxState]
     }
     
-    @scala.inline
-    implicit class CheckboxStateMutableBuilder[Self <: CheckboxState] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxState](x: Self) {
       
-      @scala.inline
-      def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+      inline def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,8 +157,7 @@ object checkboxCheckboxMod {
   }
   object OnChangeEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bubbles: Boolean,
       cancelable: Boolean,
       checked: Boolean,
@@ -203,11 +180,9 @@ object checkboxCheckboxMod {
       __obj.asInstanceOf[OnChangeEvent]
     }
     
-    @scala.inline
-    implicit class OnChangeEventMutableBuilder[Self <: OnChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangeEvent](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }
   }
 }

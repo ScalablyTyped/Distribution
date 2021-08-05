@@ -29,17 +29,17 @@ object slotMod {
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean, priority: Double) = this()
     def this(listener: js.Function, signal: IOnceSignal, once: Unit, priority: Double) = this()
     
-    var _enabled: Boolean = js.native
+    /* protected */ var _enabled: Boolean = js.native
     
-    var _listener: js.Function = js.native
+    /* protected */ var _listener: js.Function = js.native
     
-    var _once: Boolean = js.native
+    /* protected */ var _once: Boolean = js.native
     
-    var _params: js.Array[js.Any] = js.native
+    /* protected */ var _params: js.Array[js.Any] = js.native
     
-    var _priority: Double = js.native
+    /* protected */ var _priority: Double = js.native
     
-    var _signal: IOnceSignal = js.native
+    /* protected */ var _signal: IOnceSignal = js.native
     
     /**
       * Whether the listener is called on execution. Defaults to true.

@@ -25,8 +25,7 @@ trait StoryContext
 }
 object StoryContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argTypes: ArgTypes,
     args: Args,
     globals: Args,
@@ -39,31 +38,22 @@ object StoryContext {
     __obj.asInstanceOf[StoryContext]
   }
   
-  @scala.inline
-  implicit class StoryContextMutableBuilder[Self <: StoryContext] (val x: Self) extends AnyVal {
+  extension [Self <: StoryContext](x: Self) {
     
-    @scala.inline
-    def setArgTypes(value: ArgTypes): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
+    inline def setArgTypes(value: ArgTypes): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooks(value: HooksContext): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: HooksContext): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+    inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

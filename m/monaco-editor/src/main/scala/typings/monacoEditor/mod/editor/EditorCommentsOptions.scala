@@ -13,19 +13,15 @@ trait EditorCommentsOptions extends StObject {
 }
 object EditorCommentsOptions {
   
-  @scala.inline
-  def apply(ignoreEmptyLines: Boolean, insertSpace: Boolean): EditorCommentsOptions = {
+  inline def apply(ignoreEmptyLines: Boolean, insertSpace: Boolean): EditorCommentsOptions = {
     val __obj = js.Dynamic.literal(ignoreEmptyLines = ignoreEmptyLines.asInstanceOf[js.Any], insertSpace = insertSpace.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorCommentsOptions]
   }
   
-  @scala.inline
-  implicit class EditorCommentsOptionsMutableBuilder[Self <: EditorCommentsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EditorCommentsOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreEmptyLines(value: Boolean): Self = StObject.set(x, "ignoreEmptyLines", value.asInstanceOf[js.Any])
+    inline def setIgnoreEmptyLines(value: Boolean): Self = StObject.set(x, "ignoreEmptyLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSpace(value: Boolean): Self = StObject.set(x, "insertSpace", value.asInstanceOf[js.Any])
+    inline def setInsertSpace(value: Boolean): Self = StObject.set(x, "insertSpace", value.asInstanceOf[js.Any])
   }
 }

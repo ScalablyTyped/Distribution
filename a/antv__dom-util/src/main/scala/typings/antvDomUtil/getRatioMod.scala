@@ -10,6 +10,5 @@ object getRatioMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Double]
+  inline def default(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Double]
 }

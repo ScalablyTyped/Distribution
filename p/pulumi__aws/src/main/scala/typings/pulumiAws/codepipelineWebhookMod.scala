@@ -83,21 +83,16 @@ object codepipelineWebhookMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Webhook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebhookState): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Webhook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID]): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID], state: WebhookState): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
     
     /**
       * Returns true if the given object is an instance of Webhook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean]
   }
   
   trait WebhookArgs extends StObject {
@@ -141,8 +136,7 @@ object codepipelineWebhookMod {
   }
   object WebhookArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authentication: Input[String],
       filters: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]],
       targetAction: Input[String],
@@ -152,41 +146,29 @@ object codepipelineWebhookMod {
       __obj.asInstanceOf[WebhookArgs]
     }
     
-    @scala.inline
-    implicit class WebhookArgsMutableBuilder[Self <: WebhookArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookArgs](x: Self) {
       
-      @scala.inline
-      def setAuthentication(value: Input[String]): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+      inline def setAuthentication(value: Input[String]): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationConfiguration(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookAuthenticationConfiguration]): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
+      inline def setAuthenticationConfiguration(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookAuthenticationConfiguration]): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationConfigurationUndefined: Self = StObject.set(x, "authenticationConfiguration", js.undefined)
+      inline def setAuthenticationConfigurationUndefined: Self = StObject.set(x, "authenticationConfiguration", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetAction(value: Input[String]): Self = StObject.set(x, "targetAction", value.asInstanceOf[js.Any])
+      inline def setTargetAction(value: Input[String]): Self = StObject.set(x, "targetAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetPipeline(value: Input[String]): Self = StObject.set(x, "targetPipeline", value.asInstanceOf[js.Any])
+      inline def setTargetPipeline(value: Input[String]): Self = StObject.set(x, "targetPipeline", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,65 +218,46 @@ object codepipelineWebhookMod {
   }
   object WebhookState {
     
-    @scala.inline
-    def apply(): WebhookState = {
+    inline def apply(): WebhookState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebhookState]
     }
     
-    @scala.inline
-    implicit class WebhookStateMutableBuilder[Self <: WebhookState] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookState](x: Self) {
       
-      @scala.inline
-      def setAuthentication(value: Input[String]): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+      inline def setAuthentication(value: Input[String]): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationConfiguration(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookAuthenticationConfiguration]): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
+      inline def setAuthenticationConfiguration(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookAuthenticationConfiguration]): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationConfigurationUndefined: Self = StObject.set(x, "authenticationConfiguration", js.undefined)
+      inline def setAuthenticationConfigurationUndefined: Self = StObject.set(x, "authenticationConfiguration", js.undefined)
       
-      @scala.inline
-      def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+      inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
       
-      @scala.inline
-      def setFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.WebhookFilter]*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetAction(value: Input[String]): Self = StObject.set(x, "targetAction", value.asInstanceOf[js.Any])
+      inline def setTargetAction(value: Input[String]): Self = StObject.set(x, "targetAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetActionUndefined: Self = StObject.set(x, "targetAction", js.undefined)
+      inline def setTargetActionUndefined: Self = StObject.set(x, "targetAction", js.undefined)
       
-      @scala.inline
-      def setTargetPipeline(value: Input[String]): Self = StObject.set(x, "targetPipeline", value.asInstanceOf[js.Any])
+      inline def setTargetPipeline(value: Input[String]): Self = StObject.set(x, "targetPipeline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetPipelineUndefined: Self = StObject.set(x, "targetPipeline", js.undefined)
+      inline def setTargetPipelineUndefined: Self = StObject.set(x, "targetPipeline", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

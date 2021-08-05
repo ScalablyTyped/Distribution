@@ -12,9 +12,7 @@ object buttonThemesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def primaryStyles(theme: ITheme): IButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IButtonStyles]
+  inline def primaryStyles(theme: ITheme): IButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IButtonStyles]
   
-  @scala.inline
-  def standardStyles(theme: ITheme): IButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("standardStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IButtonStyles]
+  inline def standardStyles(theme: ITheme): IButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("standardStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IButtonStyles]
 }

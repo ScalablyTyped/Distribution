@@ -16,25 +16,19 @@ trait WindowsUpdateActiveHoursInstall
 }
 object WindowsUpdateActiveHoursInstall {
   
-  @scala.inline
-  def apply(): WindowsUpdateActiveHoursInstall = {
+  inline def apply(): WindowsUpdateActiveHoursInstall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsUpdateActiveHoursInstall]
   }
   
-  @scala.inline
-  implicit class WindowsUpdateActiveHoursInstallMutableBuilder[Self <: WindowsUpdateActiveHoursInstall] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsUpdateActiveHoursInstall](x: Self) {
     
-    @scala.inline
-    def setActiveHoursEnd(value: String): Self = StObject.set(x, "activeHoursEnd", value.asInstanceOf[js.Any])
+    inline def setActiveHoursEnd(value: String): Self = StObject.set(x, "activeHoursEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveHoursEndUndefined: Self = StObject.set(x, "activeHoursEnd", js.undefined)
+    inline def setActiveHoursEndUndefined: Self = StObject.set(x, "activeHoursEnd", js.undefined)
     
-    @scala.inline
-    def setActiveHoursStart(value: String): Self = StObject.set(x, "activeHoursStart", value.asInstanceOf[js.Any])
+    inline def setActiveHoursStart(value: String): Self = StObject.set(x, "activeHoursStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveHoursStartUndefined: Self = StObject.set(x, "activeHoursStart", js.undefined)
+    inline def setActiveHoursStartUndefined: Self = StObject.set(x, "activeHoursStart", js.undefined)
   }
 }

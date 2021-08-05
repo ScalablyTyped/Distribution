@@ -10,22 +10,17 @@ trait ParsedData extends StObject {
 }
 object ParsedData {
   
-  @scala.inline
-  def apply(): ParsedData = {
+  inline def apply(): ParsedData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParsedData]
   }
   
-  @scala.inline
-  implicit class ParsedDataMutableBuilder[Self <: ParsedData] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedData](x: Self) {
     
-    @scala.inline
-    def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

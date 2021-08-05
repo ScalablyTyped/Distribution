@@ -11,8 +11,7 @@ trait DeleteSmsChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesDeleteSmsChannelOutputMod.DeleteSmsChannelOutput
 object DeleteSmsChannelOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, SMSChannelResponse: UnmarshalledSMSChannelResponse): DeleteSmsChannelOutput = {
+  inline def apply($metadata: ResponseMetadata, SMSChannelResponse: UnmarshalledSMSChannelResponse): DeleteSmsChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSmsChannelOutput]
   }

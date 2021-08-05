@@ -33,8 +33,7 @@ object Vertices {
     * @return {number} The area
     */
   /* static member */
-  @scala.inline
-  def area(vertices: js.Array[typings.phaser.MatterJS.Vector], signed: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(vertices.asInstanceOf[js.Any], signed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def area(vertices: js.Array[typings.phaser.MatterJS.Vector], signed: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(vertices.asInstanceOf[js.Any], signed.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the centre (centroid) of the set of vertices.
@@ -43,11 +42,9 @@ object Vertices {
     * @return {vector} The centre point
     */
   /* static member */
-  @scala.inline
-  def centre(vertices: js.Array[typings.phaser.MatterJS.Vector]): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("centre")(vertices.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
+  inline def centre(vertices: js.Array[typings.phaser.MatterJS.Vector]): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("centre")(vertices.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
   
-  @scala.inline
-  def chamfer(
+  inline def chamfer(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     radius: js.Array[Double],
     quality: Double,
@@ -65,8 +62,7 @@ object Vertices {
     * @param {number} qualityMax
     */
   /* static member */
-  @scala.inline
-  def chamfer(
+  inline def chamfer(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     radius: Double,
     quality: Double,
@@ -81,8 +77,7 @@ object Vertices {
     * @return {vertices} vertices
     */
   /* static member */
-  @scala.inline
-  def clockwiseSort(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("clockwiseSort")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
+  inline def clockwiseSort(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("clockwiseSort")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Returns `true` if the `point` is inside the set of `vertices`.
@@ -92,8 +87,7 @@ object Vertices {
     * @return {boolean} True if the vertices contains point, otherwise false
     */
   /* static member */
-  @scala.inline
-  def contains(vertices: js.Array[typings.phaser.MatterJS.Vector], point: typings.phaser.MatterJS.Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(vertices.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(vertices: js.Array[typings.phaser.MatterJS.Vector], point: typings.phaser.MatterJS.Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(vertices.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Creates a new set of `Matter.Body` compatible vertices.
@@ -111,8 +105,7 @@ object Vertices {
     * @param {body} body
     */
   /* static member */
-  @scala.inline
-  def create(points: js.Array[typings.phaser.MatterJS.Vector], body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(points.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
+  inline def create(points: js.Array[typings.phaser.MatterJS.Vector], body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(points.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Parses a string containing ordered x y pairs separated by spaces (and optionally commas),
@@ -124,8 +117,7 @@ object Vertices {
     * @return {vertices} vertices
     */
   /* static member */
-  @scala.inline
-  def fromPath(path: String, body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPath")(path.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
+  inline def fromPath(path: String, body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPath")(path.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Returns the convex hull of the input vertices as a new array of points.
@@ -134,8 +126,7 @@ object Vertices {
     * @return [vertex] vertices
     */
   /* static member */
-  @scala.inline
-  def hull(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("hull")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
+  inline def hull(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("hull")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Returns the moment of inertia (second moment of area) of the set of vertices given the total mass.
@@ -145,8 +136,7 @@ object Vertices {
     * @return {number} The polygon's moment of inertia
     */
   /* static member */
-  @scala.inline
-  def inertia(vertices: js.Array[typings.phaser.MatterJS.Vector], mass: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(vertices.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def inertia(vertices: js.Array[typings.phaser.MatterJS.Vector], mass: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(vertices.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns true if the vertices form a convex shape (vertices must be in clockwise order).
@@ -155,8 +145,7 @@ object Vertices {
     * @return {bool} `true` if the `vertices` are convex, `false` if not (or `null` if not computable).
     */
   /* static member */
-  @scala.inline
-  def isConvex(vertices: js.Array[typings.phaser.MatterJS.Vector]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvex")(vertices.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isConvex(vertices: js.Array[typings.phaser.MatterJS.Vector]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvex")(vertices.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns the average (mean) of the set of vertices.
@@ -165,8 +154,7 @@ object Vertices {
     * @return {vector} The average point
     */
   /* static member */
-  @scala.inline
-  def mean(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
+  inline def mean(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Rotates the set of vertices in-place.
@@ -176,8 +164,7 @@ object Vertices {
     * @param {vector} point
     */
   /* static member */
-  @scala.inline
-  def rotate(
+  inline def rotate(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     angle: Double,
     point: typings.phaser.MatterJS.Vector
@@ -192,8 +179,7 @@ object Vertices {
     * @param {vector} point
     */
   /* static member */
-  @scala.inline
-  def scale(
+  inline def scale(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     scaleX: Double,
     scaleY: Double,
@@ -208,8 +194,7 @@ object Vertices {
     * @param {number} scalar
     */
   /* static member */
-  @scala.inline
-  def translate(
+  inline def translate(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     vector: typings.phaser.MatterJS.Vector,
     scalar: Double

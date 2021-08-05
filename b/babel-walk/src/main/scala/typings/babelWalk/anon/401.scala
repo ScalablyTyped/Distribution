@@ -16,25 +16,19 @@ trait `401`[TState] extends StObject {
 }
 object `401` {
   
-  @scala.inline
-  def apply[TState](): `401`[TState] = {
+  inline def apply[TState](): `401`[TState] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`401`[TState]]
   }
   
-  @scala.inline
-  implicit class `401MutableBuilder`[Self <: `401`[?], TState] (val x: Self & `401`[TState]) extends AnyVal {
+  extension [Self <: `401`[?], TState](x: Self & `401`[TState]) {
     
-    @scala.inline
-    def setEnter(value: (/* node */ NodeType[PatternLike], TState, /* ancestors */ js.Array[Node]) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
+    inline def setEnter(value: (/* node */ NodeType[PatternLike], TState, /* ancestors */ js.Array[Node]) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setExit(value: (/* node */ NodeType[PatternLike], TState, /* ancestors */ js.Array[Node]) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
+    inline def setExit(value: (/* node */ NodeType[PatternLike], TState, /* ancestors */ js.Array[Node]) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+    inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
   }
 }

@@ -23,19 +23,15 @@ trait INxMetaTitleDescription
 }
 object INxMetaTitleDescription {
   
-  @scala.inline
-  def apply(description: String, title: String): INxMetaTitleDescription = {
+  inline def apply(description: String, title: String): INxMetaTitleDescription = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMetaTitleDescription]
   }
   
-  @scala.inline
-  implicit class INxMetaTitleDescriptionMutableBuilder[Self <: INxMetaTitleDescription] (val x: Self) extends AnyVal {
+  extension [Self <: INxMetaTitleDescription](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

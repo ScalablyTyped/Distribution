@@ -43,11 +43,11 @@ class CriteriaBuilder[T] protected () extends StObject {
   
   def parent(): CriteriaBuilder[T] = js.native
   
-  var parentBuilder: CriteriaBuilder[js.Any] = js.native
+  /* private */ var parentBuilder: CriteriaBuilder[js.Any] = js.native
   
-  var primaryTable: Table[T] = js.native
+  /* private */ var primaryTable: Table[T] = js.native
   
-  var rawCriteria: js.Any = js.native
+  /* private */ var rawCriteria: js.Any = js.native
   
   def where(key: String, value: js.Any): CriteriaBuilder[T] = js.native
 }
@@ -58,6 +58,5 @@ object CriteriaBuilder {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def from[T](table: Table[T]): CriteriaBuilder[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(table.asInstanceOf[js.Any]).asInstanceOf[CriteriaBuilder[T]]
+  inline def from[T](table: Table[T]): CriteriaBuilder[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(table.asInstanceOf[js.Any]).asInstanceOf[CriteriaBuilder[T]]
 }

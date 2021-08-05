@@ -31,8 +31,7 @@ object normalizeBaseMod {
   }
   object ExtraNormalizer {
     
-    @scala.inline
-    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */, // Input type
+    inline def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */, // Input type
     O /* <: NormalizedSpec */, // Output Type
     SN /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */](
       hasMatchingType: (GenericSpec[js.Any, js.Any, js.Any, js.Any], Config[ExprRef | SignalRef]) => /* is S */ Boolean,
@@ -43,21 +42,17 @@ object normalizeBaseMod {
       __obj.asInstanceOf[ExtraNormalizer[S, O, SN]]
     }
     
-    @scala.inline
-    implicit class ExtraNormalizerMutableBuilder[Self <: ExtraNormalizer[?, ?, ?], S /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */, // Input type
+    extension [Self <: ExtraNormalizer[?, ?, ?], S /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */, // Input type
     O /* <: NormalizedSpec */, // Output Type
-    SN /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */] (val x: Self & (ExtraNormalizer[S, O, SN])) extends AnyVal {
+    SN /* <: GenericSpec[js.Any, js.Any, js.Any, FieldName] */](x: Self & (ExtraNormalizer[S, O, SN])) {
       
-      @scala.inline
-      def setHasMatchingType(
+      inline def setHasMatchingType(
         value: (GenericSpec[js.Any, js.Any, js.Any, js.Any], Config[ExprRef | SignalRef]) => /* is S */ Boolean
       ): Self = StObject.set(x, "hasMatchingType", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: (S, NormalizerParams, Normalize[SN, O]) => O): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+      inline def setRun(value: (S, NormalizerParams, Normalize[SN, O]) => O): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     }
   }
   
@@ -88,41 +83,30 @@ object normalizeBaseMod {
   }
   object NormalizerParams {
     
-    @scala.inline
-    def apply(config: Config[SignalRef]): NormalizerParams = {
+    inline def apply(config: Config[SignalRef]): NormalizerParams = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizerParams]
     }
     
-    @scala.inline
-    implicit class NormalizerParamsMutableBuilder[Self <: NormalizerParams] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizerParams](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentEncoding(value: Encoding[FieldName]): Self = StObject.set(x, "parentEncoding", value.asInstanceOf[js.Any])
+      inline def setParentEncoding(value: Encoding[FieldName]): Self = StObject.set(x, "parentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentEncodingUndefined: Self = StObject.set(x, "parentEncoding", js.undefined)
+      inline def setParentEncodingUndefined: Self = StObject.set(x, "parentEncoding", js.undefined)
       
-      @scala.inline
-      def setParentProjection(value: Projection): Self = StObject.set(x, "parentProjection", value.asInstanceOf[js.Any])
+      inline def setParentProjection(value: Projection): Self = StObject.set(x, "parentProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentProjectionUndefined: Self = StObject.set(x, "parentProjection", js.undefined)
+      inline def setParentProjectionUndefined: Self = StObject.set(x, "parentProjection", js.undefined)
       
-      @scala.inline
-      def setRepeater(value: RepeaterValue): Self = StObject.set(x, "repeater", value.asInstanceOf[js.Any])
+      inline def setRepeater(value: RepeaterValue): Self = StObject.set(x, "repeater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeaterPrefix(value: String): Self = StObject.set(x, "repeaterPrefix", value.asInstanceOf[js.Any])
+      inline def setRepeaterPrefix(value: String): Self = StObject.set(x, "repeaterPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeaterPrefixUndefined: Self = StObject.set(x, "repeaterPrefix", js.undefined)
+      inline def setRepeaterPrefixUndefined: Self = StObject.set(x, "repeaterPrefix", js.undefined)
       
-      @scala.inline
-      def setRepeaterUndefined: Self = StObject.set(x, "repeater", js.undefined)
+      inline def setRepeaterUndefined: Self = StObject.set(x, "repeater", js.undefined)
     }
   }
 }

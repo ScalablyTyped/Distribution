@@ -28,28 +28,21 @@ trait ObservationRelated
 }
 object ObservationRelated {
   
-  @scala.inline
-  def apply(target: Reference): ObservationRelated = {
+  inline def apply(target: Reference): ObservationRelated = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObservationRelated]
   }
   
-  @scala.inline
-  implicit class ObservationRelatedMutableBuilder[Self <: ObservationRelated] (val x: Self) extends AnyVal {
+  extension [Self <: ObservationRelated](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

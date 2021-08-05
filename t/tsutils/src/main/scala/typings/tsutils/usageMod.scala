@@ -99,14 +99,11 @@ object usageMod {
     /* 5 */ val ValueOrNamespace: typings.tsutils.usageMod.UsageDomain.ValueOrNamespace & Double = js.native
   }
   
-  @scala.inline
-  def collectVariableUsage(sourceFile: SourceFile): Map[Identifier, VariableInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectVariableUsage")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[Map[Identifier, VariableInfo]]
+  inline def collectVariableUsage(sourceFile: SourceFile): Map[Identifier, VariableInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectVariableUsage")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[Map[Identifier, VariableInfo]]
   
-  @scala.inline
-  def getDeclarationDomain(node: Identifier): js.UndefOr[DeclarationDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeclarationDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DeclarationDomain]]
+  inline def getDeclarationDomain(node: Identifier): js.UndefOr[DeclarationDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeclarationDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DeclarationDomain]]
   
-  @scala.inline
-  def getUsageDomain(node: Identifier): js.UndefOr[UsageDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsageDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[UsageDomain]]
+  inline def getUsageDomain(node: Identifier): js.UndefOr[UsageDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsageDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[UsageDomain]]
   
   trait VariableInfo extends StObject {
     
@@ -122,8 +119,7 @@ object usageMod {
   }
   object VariableInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       declarations: js.Array[Identifier],
       domain: DeclarationDomain,
       exported: Boolean,
@@ -134,29 +130,21 @@ object usageMod {
       __obj.asInstanceOf[VariableInfo]
     }
     
-    @scala.inline
-    implicit class VariableInfoMutableBuilder[Self <: VariableInfo] (val x: Self) extends AnyVal {
+    extension [Self <: VariableInfo](x: Self) {
       
-      @scala.inline
-      def setDeclarations(value: js.Array[Identifier]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+      inline def setDeclarations(value: js.Array[Identifier]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarationsVarargs(value: Identifier*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+      inline def setDeclarationsVarargs(value: Identifier*): Self = StObject.set(x, "declarations", js.Array(value :_*))
       
-      @scala.inline
-      def setDomain(value: DeclarationDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: DeclarationDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExported(value: Boolean): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+      inline def setExported(value: Boolean): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInGlobalScope(value: Boolean): Self = StObject.set(x, "inGlobalScope", value.asInstanceOf[js.Any])
+      inline def setInGlobalScope(value: Boolean): Self = StObject.set(x, "inGlobalScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUses(value: js.Array[VariableUse]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+      inline def setUses(value: js.Array[VariableUse]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsesVarargs(value: VariableUse*): Self = StObject.set(x, "uses", js.Array(value :_*))
+      inline def setUsesVarargs(value: VariableUse*): Self = StObject.set(x, "uses", js.Array(value :_*))
     }
   }
   
@@ -168,20 +156,16 @@ object usageMod {
   }
   object VariableUse {
     
-    @scala.inline
-    def apply(domain: UsageDomain, location: Identifier): VariableUse = {
+    inline def apply(domain: UsageDomain, location: Identifier): VariableUse = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[VariableUse]
     }
     
-    @scala.inline
-    implicit class VariableUseMutableBuilder[Self <: VariableUse] (val x: Self) extends AnyVal {
+    extension [Self <: VariableUse](x: Self) {
       
-      @scala.inline
-      def setDomain(value: UsageDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: UsageDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Identifier): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Identifier): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,22 +21,17 @@ trait LayoutSize extends StObject {
 }
 object LayoutSize {
   
-  @scala.inline
-  def apply(Maximum: Double, Minimum: Double, Preferred: Double): LayoutSize = {
+  inline def apply(Maximum: Double, Minimum: Double, Preferred: Double): LayoutSize = {
     val __obj = js.Dynamic.literal(Maximum = Maximum.asInstanceOf[js.Any], Minimum = Minimum.asInstanceOf[js.Any], Preferred = Preferred.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutSize]
   }
   
-  @scala.inline
-  implicit class LayoutSizeMutableBuilder[Self <: LayoutSize] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutSize](x: Self) {
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimum(value: Double): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Double): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferred(value: Double): Self = StObject.set(x, "Preferred", value.asInstanceOf[js.Any])
+    inline def setPreferred(value: Double): Self = StObject.set(x, "Preferred", value.asInstanceOf[js.Any])
   }
 }

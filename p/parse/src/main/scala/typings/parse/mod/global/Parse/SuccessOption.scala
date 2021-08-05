@@ -10,19 +10,15 @@ trait SuccessOption extends StObject {
 }
 object SuccessOption {
   
-  @scala.inline
-  def apply(): SuccessOption = {
+  inline def apply(): SuccessOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessOption]
   }
   
-  @scala.inline
-  implicit class SuccessOptionMutableBuilder[Self <: SuccessOption] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessOption](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

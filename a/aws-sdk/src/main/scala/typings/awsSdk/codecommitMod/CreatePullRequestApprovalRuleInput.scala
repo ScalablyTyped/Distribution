@@ -23,8 +23,7 @@ trait CreatePullRequestApprovalRuleInput extends StObject {
 }
 object CreatePullRequestApprovalRuleInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approvalRuleContent: ApprovalRuleContent,
     approvalRuleName: ApprovalRuleName,
     pullRequestId: PullRequestId
@@ -33,16 +32,12 @@ object CreatePullRequestApprovalRuleInput {
     __obj.asInstanceOf[CreatePullRequestApprovalRuleInput]
   }
   
-  @scala.inline
-  implicit class CreatePullRequestApprovalRuleInputMutableBuilder[Self <: CreatePullRequestApprovalRuleInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePullRequestApprovalRuleInput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "approvalRuleContent", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "approvalRuleContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

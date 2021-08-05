@@ -15,22 +15,17 @@ trait keyinAxisNamenumber extends StObject {
 }
 object keyinAxisNamenumber {
   
-  @scala.inline
-  def apply(x: Double, y: Double, y2: Double): keyinAxisNamenumber = {
+  inline def apply(x: Double, y: Double, y2: Double): keyinAxisNamenumber = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     __obj.asInstanceOf[keyinAxisNamenumber]
   }
   
-  @scala.inline
-  implicit class keyinAxisNamenumberMutableBuilder[Self <: keyinAxisNamenumber] (val x: Self) extends AnyVal {
+  extension [Self <: keyinAxisNamenumber](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

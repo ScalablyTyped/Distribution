@@ -28,32 +28,24 @@ object itemMod {
   }
   object SelectableAccordionItemCommonProps {
     
-    @scala.inline
-    def apply(): SelectableAccordionItemCommonProps = {
+    inline def apply(): SelectableAccordionItemCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectableAccordionItemCommonProps]
     }
     
-    @scala.inline
-    implicit class SelectableAccordionItemCommonPropsMutableBuilder[Self <: SelectableAccordionItemCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectableAccordionItemCommonProps](x: Self) {
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -69,32 +61,24 @@ object itemMod {
   }
   object SelectableAccordionItemProps {
     
-    @scala.inline
-    def apply(): SelectableAccordionItemProps = {
+    inline def apply(): SelectableAccordionItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectableAccordionItemProps]
     }
     
-    @scala.inline
-    implicit class SelectableAccordionItemPropsMutableBuilder[Self <: SelectableAccordionItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectableAccordionItemProps](x: Self) {
       
-      @scala.inline
-      def setOnChange(value: (/* idx */ Double, /* open */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* idx */ Double, /* open */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setType(value: radio | checkbox | toggle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: radio | checkbox | toggle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

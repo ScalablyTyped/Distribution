@@ -10,16 +10,13 @@ trait ConcatAttrs extends StObject {
 }
 object ConcatAttrs {
   
-  @scala.inline
-  def apply(axis: Double): ConcatAttrs = {
+  inline def apply(axis: Double): ConcatAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcatAttrs]
   }
   
-  @scala.inline
-  implicit class ConcatAttrsMutableBuilder[Self <: ConcatAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: ConcatAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
   }
 }

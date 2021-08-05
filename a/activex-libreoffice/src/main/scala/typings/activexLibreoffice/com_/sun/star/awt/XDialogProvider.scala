@@ -21,8 +21,7 @@ trait XDialogProvider
 }
 object XDialogProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDialog: String => XDialog,
     queryInterface: `type` => js.Any,
@@ -32,10 +31,8 @@ object XDialogProvider {
     __obj.asInstanceOf[XDialogProvider]
   }
   
-  @scala.inline
-  implicit class XDialogProviderMutableBuilder[Self <: XDialogProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XDialogProvider](x: Self) {
     
-    @scala.inline
-    def setCreateDialog(value: String => XDialog): Self = StObject.set(x, "createDialog", js.Any.fromFunction1(value))
+    inline def setCreateDialog(value: String => XDialog): Self = StObject.set(x, "createDialog", js.Any.fromFunction1(value))
   }
 }

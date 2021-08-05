@@ -23,10 +23,10 @@ object referenceMod {
     def this(`type`: String, referencedContext: typings.opentracing.spanContextMod.default) = this()
     def this(`type`: String, referencedContext: typings.opentracing.spanMod.default) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _referencedContext: typings.opentracing.spanContextMod.default = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _type: String = js.native
     
     /**
@@ -46,9 +46,9 @@ object referenceMod {
   
   trait Reference extends StObject {
     
-    var _referencedContext: typings.opentracing.spanContextMod.default
+    /* protected */ var _referencedContext: typings.opentracing.spanContextMod.default
     
-    var _type: String
+    /* protected */ var _type: String
     
     /**
       * @return {SpanContext} The SpanContext being referred to (e.g., the
@@ -64,8 +64,7 @@ object referenceMod {
   }
   object Reference {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _referencedContext: typings.opentracing.spanContextMod.default,
       _type: String,
       referencedContext: () => typings.opentracing.spanContextMod.default,
@@ -76,20 +75,15 @@ object referenceMod {
       __obj.asInstanceOf[Reference]
     }
     
-    @scala.inline
-    implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+    extension [Self <: Reference](x: Self) {
       
-      @scala.inline
-      def setReferencedContext(value: () => typings.opentracing.spanContextMod.default): Self = StObject.set(x, "referencedContext", js.Any.fromFunction0(value))
+      inline def setReferencedContext(value: () => typings.opentracing.spanContextMod.default): Self = StObject.set(x, "referencedContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_referencedContext(value: typings.opentracing.spanContextMod.default): Self = StObject.set(x, "_referencedContext", value.asInstanceOf[js.Any])
+      inline def set_referencedContext(value: typings.opentracing.spanContextMod.default): Self = StObject.set(x, "_referencedContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+      inline def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     }
   }
 }

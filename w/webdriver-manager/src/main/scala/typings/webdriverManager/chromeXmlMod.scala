@@ -33,6 +33,5 @@ object chromeXmlMod {
     var maxVersion: String = js.native
   }
   
-  @scala.inline
-  def getValidSemver(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidSemver")(version.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getValidSemver(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidSemver")(version.asInstanceOf[js.Any]).asInstanceOf[String]
 }

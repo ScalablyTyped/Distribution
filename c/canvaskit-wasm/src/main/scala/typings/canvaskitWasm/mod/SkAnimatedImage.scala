@@ -45,8 +45,7 @@ trait SkAnimatedImage
 }
 object SkAnimatedImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decodeNextFrame: () => Double,
     delete: () => Unit,
     deleteAfter: () => Unit,
@@ -63,28 +62,20 @@ object SkAnimatedImage {
     __obj.asInstanceOf[SkAnimatedImage]
   }
   
-  @scala.inline
-  implicit class SkAnimatedImageMutableBuilder[Self <: SkAnimatedImage] (val x: Self) extends AnyVal {
+  extension [Self <: SkAnimatedImage](x: Self) {
     
-    @scala.inline
-    def setDecodeNextFrame(value: () => Double): Self = StObject.set(x, "decodeNextFrame", js.Any.fromFunction0(value))
+    inline def setDecodeNextFrame(value: () => Double): Self = StObject.set(x, "decodeNextFrame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFrameCount(value: () => Double): Self = StObject.set(x, "getFrameCount", js.Any.fromFunction0(value))
+    inline def setGetFrameCount(value: () => Double): Self = StObject.set(x, "getFrameCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRepetitionCount(value: () => Double): Self = StObject.set(x, "getRepetitionCount", js.Any.fromFunction0(value))
+    inline def setGetRepetitionCount(value: () => Double): Self = StObject.set(x, "getRepetitionCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+    inline def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMakeImageAtCurrentFrame(value: () => SkImage | Null): Self = StObject.set(x, "makeImageAtCurrentFrame", js.Any.fromFunction0(value))
+    inline def setMakeImageAtCurrentFrame(value: () => SkImage | Null): Self = StObject.set(x, "makeImageAtCurrentFrame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+    inline def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
   }
 }

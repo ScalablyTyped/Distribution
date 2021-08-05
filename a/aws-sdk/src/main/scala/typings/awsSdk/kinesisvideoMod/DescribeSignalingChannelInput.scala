@@ -18,25 +18,19 @@ trait DescribeSignalingChannelInput extends StObject {
 }
 object DescribeSignalingChannelInput {
   
-  @scala.inline
-  def apply(): DescribeSignalingChannelInput = {
+  inline def apply(): DescribeSignalingChannelInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSignalingChannelInput]
   }
   
-  @scala.inline
-  implicit class DescribeSignalingChannelInputMutableBuilder[Self <: DescribeSignalingChannelInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSignalingChannelInput](x: Self) {
     
-    @scala.inline
-    def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
+    inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelARNUndefined: Self = StObject.set(x, "ChannelARN", js.undefined)
+    inline def setChannelARNUndefined: Self = StObject.set(x, "ChannelARN", js.undefined)
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelNameUndefined: Self = StObject.set(x, "ChannelName", js.undefined)
+    inline def setChannelNameUndefined: Self = StObject.set(x, "ChannelName", js.undefined)
   }
 }

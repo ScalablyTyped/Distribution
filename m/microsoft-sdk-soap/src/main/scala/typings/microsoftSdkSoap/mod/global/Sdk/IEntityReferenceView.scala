@@ -14,22 +14,17 @@ trait IEntityReferenceView extends StObject {
 }
 object IEntityReferenceView {
   
-  @scala.inline
-  def apply(Id: java.lang.String, Name: java.lang.String, Type: java.lang.String): IEntityReferenceView = {
+  inline def apply(Id: java.lang.String, Name: java.lang.String, Type: java.lang.String): IEntityReferenceView = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityReferenceView]
   }
   
-  @scala.inline
-  implicit class IEntityReferenceViewMutableBuilder[Self <: IEntityReferenceView] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityReferenceView](x: Self) {
     
-    @scala.inline
-    def setId(value: java.lang.String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

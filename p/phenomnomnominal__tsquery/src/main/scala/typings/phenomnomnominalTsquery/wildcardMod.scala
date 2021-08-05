@@ -10,6 +10,5 @@ object wildcardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wildcard(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("wildcard")().asInstanceOf[Boolean]
+  inline def wildcard(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("wildcard")().asInstanceOf[Boolean]
 }

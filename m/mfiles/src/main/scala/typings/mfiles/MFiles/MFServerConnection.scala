@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFServerConnection extends StObject
 object MFServerConnection {
   
-  @scala.inline
-  def nonymous: `2` = 2.asInstanceOf[`2`]
+  inline def nonymous: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def uthenticated: `1` = 1.asInstanceOf[`1`]
+  inline def uthenticated: `1` = 1.asInstanceOf[`1`]
 }

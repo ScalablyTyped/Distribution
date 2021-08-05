@@ -22,43 +22,31 @@ trait ClientOptions
 }
 object ClientOptions {
   
-  @scala.inline
-  def apply(): ClientOptions = {
+  inline def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientOptions]
   }
   
-  @scala.inline
-  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientOptions](x: Self) {
     
-    @scala.inline
-    def setAsanaBaseUrl(value: String): Self = StObject.set(x, "asanaBaseUrl", value.asInstanceOf[js.Any])
+    inline def setAsanaBaseUrl(value: String): Self = StObject.set(x, "asanaBaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsanaBaseUrlUndefined: Self = StObject.set(x, "asanaBaseUrl", js.undefined)
+    inline def setAsanaBaseUrlUndefined: Self = StObject.set(x, "asanaBaseUrl", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String | Double): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String | Double): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+    inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
     
-    @scala.inline
-    def setDefaultHeaders(value: StringDictionary[String]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+    inline def setDefaultHeaders(value: StringDictionary[String]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
+    inline def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
   }
 }

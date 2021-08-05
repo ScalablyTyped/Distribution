@@ -21,6 +21,5 @@ object KeyboardDeliveryInterceptor {
     * @return The KeyboardDeliveryInterceptor object associated with the current app.
     */
   /* static member */
-  @scala.inline
-  def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.KeyboardDeliveryInterceptor = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Input.KeyboardDeliveryInterceptor]
+  inline def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.KeyboardDeliveryInterceptor = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Input.KeyboardDeliveryInterceptor]
 }

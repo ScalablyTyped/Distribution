@@ -11,16 +11,13 @@ trait PickImplpreserveHTML extends StObject {
 }
 object PickImplpreserveHTML {
   
-  @scala.inline
-  def apply(preserveHTML: Boolean): PickImplpreserveHTML = {
+  inline def apply(preserveHTML: Boolean): PickImplpreserveHTML = {
     val __obj = js.Dynamic.literal(preserveHTML = preserveHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpreserveHTML]
   }
   
-  @scala.inline
-  implicit class PickImplpreserveHTMLMutableBuilder[Self <: PickImplpreserveHTML] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpreserveHTML](x: Self) {
     
-    @scala.inline
-    def setPreserveHTML(value: Boolean): Self = StObject.set(x, "preserveHTML", value.asInstanceOf[js.Any])
+    inline def setPreserveHTML(value: Boolean): Self = StObject.set(x, "preserveHTML", value.asInstanceOf[js.Any])
   }
 }

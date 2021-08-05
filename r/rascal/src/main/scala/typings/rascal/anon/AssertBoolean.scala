@@ -10,16 +10,13 @@ trait AssertBoolean extends StObject {
 }
 object AssertBoolean {
   
-  @scala.inline
-  def apply(assert: Boolean): AssertBoolean = {
+  inline def apply(assert: Boolean): AssertBoolean = {
     val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertBoolean]
   }
   
-  @scala.inline
-  implicit class AssertBooleanMutableBuilder[Self <: AssertBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: AssertBoolean](x: Self) {
     
-    @scala.inline
-    def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
   }
 }

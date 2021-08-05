@@ -22,8 +22,7 @@ trait ObjectTypeAnnotation_
 }
 object ObjectTypeAnnotation_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callProperties: js.Array[ObjectTypeCallProperty_],
     end: Double,
     indexers: js.Array[ObjectTypeIndexer_],
@@ -36,28 +35,20 @@ object ObjectTypeAnnotation_ {
     __obj.asInstanceOf[ObjectTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class ObjectTypeAnnotation_MutableBuilder[Self <: ObjectTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = StObject.set(x, "callProperties", value.asInstanceOf[js.Any])
+    inline def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = StObject.set(x, "callProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallPropertiesVarargs(value: ObjectTypeCallProperty_ *): Self = StObject.set(x, "callProperties", js.Array(value :_*))
+    inline def setCallPropertiesVarargs(value: ObjectTypeCallProperty_ *): Self = StObject.set(x, "callProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexers(value: js.Array[ObjectTypeIndexer_]): Self = StObject.set(x, "indexers", value.asInstanceOf[js.Any])
+    inline def setIndexers(value: js.Array[ObjectTypeIndexer_]): Self = StObject.set(x, "indexers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexersVarargs(value: ObjectTypeIndexer_ *): Self = StObject.set(x, "indexers", js.Array(value :_*))
+    inline def setIndexersVarargs(value: ObjectTypeIndexer_ *): Self = StObject.set(x, "indexers", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: js.Array[ObjectTypeProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[ObjectTypeProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: ObjectTypeProperty_ *): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: ObjectTypeProperty_ *): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ObjectTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

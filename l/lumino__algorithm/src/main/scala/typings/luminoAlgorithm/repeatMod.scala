@@ -25,9 +25,9 @@ object repeatMod {
       */
     def this(value: T, count: Double) = this()
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    var _value: js.Any = js.native
+    /* private */ var _value: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -62,9 +62,7 @@ object repeatMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  @scala.inline
-  def once[T](value: T): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def once[T](value: T): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
-  @scala.inline
-  def repeat[T](value: T, count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def repeat[T](value: T, count: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
 }

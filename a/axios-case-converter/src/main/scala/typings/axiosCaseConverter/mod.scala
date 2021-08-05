@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(axios: AxiosInstance): AxiosInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axios.asInstanceOf[js.Any]).asInstanceOf[AxiosInstance]
+  inline def default(axios: AxiosInstance): AxiosInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axios.asInstanceOf[js.Any]).asInstanceOf[AxiosInstance]
 }

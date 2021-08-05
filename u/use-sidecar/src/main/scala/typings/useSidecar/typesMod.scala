@@ -25,17 +25,14 @@ object typesMod {
   }
   object SideCarHOC {
     
-    @scala.inline
-    def apply(sideCar: SideCarMedium): SideCarHOC = {
+    inline def apply(sideCar: SideCarMedium): SideCarHOC = {
       val __obj = js.Dynamic.literal(sideCar = sideCar.asInstanceOf[js.Any])
       __obj.asInstanceOf[SideCarHOC]
     }
     
-    @scala.inline
-    implicit class SideCarHOCMutableBuilder[Self <: SideCarHOC] (val x: Self) extends AnyVal {
+    extension [Self <: SideCarHOC](x: Self) {
       
-      @scala.inline
-      def setSideCar(value: SideCarMedium): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
+      inline def setSideCar(value: SideCarMedium): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,26 +46,20 @@ object typesMod {
   }
   object SideCarMediumOptions {
     
-    @scala.inline
-    def apply(): SideCarMediumOptions = {
+    inline def apply(): SideCarMediumOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideCarMediumOptions]
     }
     
-    @scala.inline
-    implicit class SideCarMediumOptionsMutableBuilder[Self <: SideCarMediumOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SideCarMediumOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+      inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
+      inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     }
   }
   
@@ -86,8 +77,7 @@ object typesMod {
   }
   object SideMedium {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       assignMedium: MediumCallback[T] => Unit,
       assignSyncMedium: MediumCallback[T] => Unit,
       read: () => js.UndefOr[T],
@@ -97,26 +87,19 @@ object typesMod {
       __obj.asInstanceOf[SideMedium[T]]
     }
     
-    @scala.inline
-    implicit class SideMediumMutableBuilder[Self <: SideMedium[?], T] (val x: Self & SideMedium[T]) extends AnyVal {
+    extension [Self <: SideMedium[?], T](x: Self & SideMedium[T]) {
       
-      @scala.inline
-      def setAssignMedium(value: MediumCallback[T] => Unit): Self = StObject.set(x, "assignMedium", js.Any.fromFunction1(value))
+      inline def setAssignMedium(value: MediumCallback[T] => Unit): Self = StObject.set(x, "assignMedium", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAssignSyncMedium(value: MediumCallback[T] => Unit): Self = StObject.set(x, "assignSyncMedium", js.Any.fromFunction1(value))
+      inline def setAssignSyncMedium(value: MediumCallback[T] => Unit): Self = StObject.set(x, "assignSyncMedium", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRead(value: () => js.UndefOr[T]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => js.UndefOr[T]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUseMedium(value: T => removeCb): Self = StObject.set(x, "useMedium", js.Any.fromFunction1(value))
+      inline def setUseMedium(value: T => removeCb): Self = StObject.set(x, "useMedium", js.Any.fromFunction1(value))
     }
   }
   
@@ -130,26 +113,20 @@ object typesMod {
   }
   object SidePush {
     
-    @scala.inline
-    def apply[T](filter: js.Function1[/* x */ T, Boolean] => SidePush[T], push: T => Unit): SidePush[T] = {
+    inline def apply[T](filter: js.Function1[/* x */ T, Boolean] => SidePush[T], push: T => Unit): SidePush[T] = {
       val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), push = js.Any.fromFunction1(push))
       __obj.asInstanceOf[SidePush[T]]
     }
     
-    @scala.inline
-    implicit class SidePushMutableBuilder[Self <: SidePush[?], T] (val x: Self & SidePush[T]) extends AnyVal {
+    extension [Self <: SidePush[?], T](x: Self & SidePush[T]) {
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* x */ T, Boolean] => SidePush[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* x */ T, Boolean] => SidePush[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
   

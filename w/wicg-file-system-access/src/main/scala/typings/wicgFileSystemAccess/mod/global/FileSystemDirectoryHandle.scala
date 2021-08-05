@@ -85,6 +85,5 @@ object FileSystemDirectoryHandle {
     * @deprecated Old method just for Chromium <=85. Use `navigator.storage.getDirectory()` in the new API.
     */
   /* static member */
-  @scala.inline
-  def getSystemDirectory(options: GetSystemDirectoryOptions): js.Promise[FileSystemDirectoryHandle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemDirectory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystemDirectoryHandle]]
+  inline def getSystemDirectory(options: GetSystemDirectoryOptions): js.Promise[FileSystemDirectoryHandle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemDirectory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystemDirectoryHandle]]
 }

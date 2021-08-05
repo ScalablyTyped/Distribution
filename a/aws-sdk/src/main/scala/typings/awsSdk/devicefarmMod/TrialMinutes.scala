@@ -18,25 +18,19 @@ trait TrialMinutes extends StObject {
 }
 object TrialMinutes {
   
-  @scala.inline
-  def apply(): TrialMinutes = {
+  inline def apply(): TrialMinutes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrialMinutes]
   }
   
-  @scala.inline
-  implicit class TrialMinutesMutableBuilder[Self <: TrialMinutes] (val x: Self) extends AnyVal {
+  extension [Self <: TrialMinutes](x: Self) {
     
-    @scala.inline
-    def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+    inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
+    inline def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

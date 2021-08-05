@@ -13,28 +13,28 @@ object checkboxSelectionComponentMod {
     
     /* private */ def checkboxCallbackExists(): js.Any = js.native
     
-    var column: js.Any = js.native
+    /* private */ var column: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
     /* private */ def createAndAddIcons(): js.Any = js.native
     
-    var eCheckedIcon: js.Any = js.native
+    /* private */ var eCheckedIcon: js.Any = js.native
     
-    var eIndeterminateIcon: js.Any = js.native
+    /* private */ var eIndeterminateIcon: js.Any = js.native
     
-    var eUncheckedIcon: js.Any = js.native
+    /* private */ var eUncheckedIcon: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     @JSName("init")
     def init_MCheckboxSelectionComponent(params: js.Any): Unit = js.native
     
-    var isRowSelectableFunc: js.Any = js.native
+    /* private */ var isRowSelectableFunc: js.Any = js.native
     
     /* private */ def onCheckedClicked(): js.Any = js.native
     
@@ -48,7 +48,7 @@ object checkboxSelectionComponentMod {
     
     /* private */ def onUncheckedClicked(event: js.Any): js.Any = js.native
     
-    var rowNode: js.Any = js.native
+    /* private */ var rowNode: js.Any = js.native
     
     /* private */ def showOrHideSelect(): js.Any = js.native
   }

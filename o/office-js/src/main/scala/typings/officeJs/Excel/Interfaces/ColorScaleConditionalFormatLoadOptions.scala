@@ -36,31 +36,23 @@ trait ColorScaleConditionalFormatLoadOptions extends StObject {
 }
 object ColorScaleConditionalFormatLoadOptions {
   
-  @scala.inline
-  def apply(): ColorScaleConditionalFormatLoadOptions = {
+  inline def apply(): ColorScaleConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorScaleConditionalFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class ColorScaleConditionalFormatLoadOptionsMutableBuilder[Self <: ColorScaleConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ColorScaleConditionalFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setThreeColorScale(value: Boolean): Self = StObject.set(x, "threeColorScale", value.asInstanceOf[js.Any])
+    inline def setThreeColorScale(value: Boolean): Self = StObject.set(x, "threeColorScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeColorScaleUndefined: Self = StObject.set(x, "threeColorScale", js.undefined)
+    inline def setThreeColorScaleUndefined: Self = StObject.set(x, "threeColorScale", js.undefined)
   }
 }

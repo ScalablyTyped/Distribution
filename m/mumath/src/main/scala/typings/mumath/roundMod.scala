@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object roundMod {
   
-  @scala.inline
-  def apply(value: Double): Double = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def apply(value: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(value: Double): Double = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(value: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("mumath/round", JSImport.Namespace)
   @js.native

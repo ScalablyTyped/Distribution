@@ -28,8 +28,7 @@ trait TranslateTextRequest extends StObject {
 }
 object TranslateTextRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SourceLanguageCode: LanguageCodeString,
     TargetLanguageCode: LanguageCodeString,
     Text: BoundedLengthString
@@ -38,25 +37,18 @@ object TranslateTextRequest {
     __obj.asInstanceOf[TranslateTextRequest]
   }
   
-  @scala.inline
-  implicit class TranslateTextRequestMutableBuilder[Self <: TranslateTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateTextRequest](x: Self) {
     
-    @scala.inline
-    def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
+    inline def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "TargetLanguageCode", value.asInstanceOf[js.Any])
+    inline def setTargetLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "TargetLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyNames(value: ResourceNameList): Self = StObject.set(x, "TerminologyNames", value.asInstanceOf[js.Any])
+    inline def setTerminologyNames(value: ResourceNameList): Self = StObject.set(x, "TerminologyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyNamesUndefined: Self = StObject.set(x, "TerminologyNames", js.undefined)
+    inline def setTerminologyNamesUndefined: Self = StObject.set(x, "TerminologyNames", js.undefined)
     
-    @scala.inline
-    def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value :_*))
+    inline def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

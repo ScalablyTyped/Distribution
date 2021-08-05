@@ -18,28 +18,21 @@ trait InjectionItems extends StObject {
 }
 object InjectionItems {
   
-  @scala.inline
-  def apply(): InjectionItems = {
+  inline def apply(): InjectionItems = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InjectionItems]
   }
   
-  @scala.inline
-  implicit class InjectionItemsMutableBuilder[Self <: InjectionItems] (val x: Self) extends AnyVal {
+  extension [Self <: InjectionItems](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

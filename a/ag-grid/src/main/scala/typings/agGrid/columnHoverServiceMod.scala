@@ -14,15 +14,15 @@ object columnHoverServiceMod {
     
     def clearMouseOver(): Unit = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
     def isHovered(column: Column): Boolean = js.native
     
-    var selectedColumns: js.Any = js.native
+    /* private */ var selectedColumns: js.Any = js.native
     
     def setMouseOver(columns: js.Array[Column]): Unit = js.native
   }

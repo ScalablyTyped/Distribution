@@ -39,9 +39,9 @@ object interappbusMod {
     
     /* protected */ def createSubscriptionKey(uuid: String, name: String, topic: String): String = js.native
     
-    var emitSubscriverEvent: js.Any = js.native
+    /* private */ var emitSubscriverEvent: js.Any = js.native
     
-    var emitter: EventEmitter = js.native
+    /* protected */ var emitter: EventEmitter = js.native
     
     var events: SubscriberAdded = js.native
     
@@ -49,7 +49,7 @@ object interappbusMod {
     
     /* protected */ def onmessage(message: Message[InterAppPayload]): Boolean = js.native
     
-    var processMessage: js.Any = js.native
+    /* private */ var processMessage: js.Any = js.native
     
     /**
       * Publishes a message to all applications running on OpenFin Runtime that
@@ -63,7 +63,7 @@ object interappbusMod {
       */
     def publish(topic: String, message: js.Any): js.Promise[Unit] = js.native
     
-    var refCounter: js.Any = js.native
+    /* private */ var refCounter: js.Any = js.native
     
     var removeAllListeners: js.Any = js.native
     

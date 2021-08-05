@@ -23,46 +23,33 @@ trait LoadBalancerInfo extends StObject {
 }
 object LoadBalancerInfo {
   
-  @scala.inline
-  def apply(): LoadBalancerInfo = {
+  inline def apply(): LoadBalancerInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerInfo]
   }
   
-  @scala.inline
-  implicit class LoadBalancerInfoMutableBuilder[Self <: LoadBalancerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerInfo](x: Self) {
     
-    @scala.inline
-    def setBackendType(value: String): Self = StObject.set(x, "backendType", value.asInstanceOf[js.Any])
+    inline def setBackendType(value: String): Self = StObject.set(x, "backendType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendTypeUndefined: Self = StObject.set(x, "backendType", js.undefined)
+    inline def setBackendTypeUndefined: Self = StObject.set(x, "backendType", js.undefined)
     
-    @scala.inline
-    def setBackendUri(value: String): Self = StObject.set(x, "backendUri", value.asInstanceOf[js.Any])
+    inline def setBackendUri(value: String): Self = StObject.set(x, "backendUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendUriUndefined: Self = StObject.set(x, "backendUri", js.undefined)
+    inline def setBackendUriUndefined: Self = StObject.set(x, "backendUri", js.undefined)
     
-    @scala.inline
-    def setBackends(value: js.Array[LoadBalancerBackend]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
+    inline def setBackends(value: js.Array[LoadBalancerBackend]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
+    inline def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
     
-    @scala.inline
-    def setBackendsVarargs(value: LoadBalancerBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
+    inline def setBackendsVarargs(value: LoadBalancerBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
     
-    @scala.inline
-    def setHealthCheckUri(value: String): Self = StObject.set(x, "healthCheckUri", value.asInstanceOf[js.Any])
+    inline def setHealthCheckUri(value: String): Self = StObject.set(x, "healthCheckUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUriUndefined: Self = StObject.set(x, "healthCheckUri", js.undefined)
+    inline def setHealthCheckUriUndefined: Self = StObject.set(x, "healthCheckUri", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerType(value: String): Self = StObject.set(x, "loadBalancerType", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerType(value: String): Self = StObject.set(x, "loadBalancerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerTypeUndefined: Self = StObject.set(x, "loadBalancerType", js.undefined)
+    inline def setLoadBalancerTypeUndefined: Self = StObject.set(x, "loadBalancerType", js.undefined)
   }
 }

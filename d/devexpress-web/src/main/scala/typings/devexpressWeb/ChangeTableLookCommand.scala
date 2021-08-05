@@ -24,19 +24,15 @@ trait ChangeTableLookCommand
 }
 object ChangeTableLookCommand {
   
-  @scala.inline
-  def apply(execute: TableLookSettings => Boolean, getState: () => CommandState[TableLookSettings]): ChangeTableLookCommand = {
+  inline def apply(execute: TableLookSettings => Boolean, getState: () => CommandState[TableLookSettings]): ChangeTableLookCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTableLookCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTableLookCommandMutableBuilder[Self <: ChangeTableLookCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTableLookCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: TableLookSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: TableLookSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TableLookSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TableLookSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

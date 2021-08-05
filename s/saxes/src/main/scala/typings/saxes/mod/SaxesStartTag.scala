@@ -18,25 +18,19 @@ trait SaxesStartTag
 }
 object SaxesStartTag {
   
-  @scala.inline
-  def apply(attributes: Record[String, SaxesAttributeNS | String], name: String): SaxesStartTag = {
+  inline def apply(attributes: Record[String, SaxesAttributeNS | String], name: String): SaxesStartTag = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaxesStartTag]
   }
   
-  @scala.inline
-  implicit class SaxesStartTagMutableBuilder[Self <: SaxesStartTag] (val x: Self) extends AnyVal {
+  extension [Self <: SaxesStartTag](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Record[String, SaxesAttributeNS | String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Record[String, SaxesAttributeNS | String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNs(value: Record[String, String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+    inline def setNs(value: Record[String, String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
+    inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
   }
 }

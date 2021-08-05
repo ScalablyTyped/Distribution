@@ -33,25 +33,19 @@ trait ASPxClientTreeListContextMenuEventArgs
 }
 object ASPxClientTreeListContextMenuEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Any, objectKey: js.Any, objectType: String): ASPxClientTreeListContextMenuEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: js.Any, objectKey: js.Any, objectType: String): ASPxClientTreeListContextMenuEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], objectKey = objectKey.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListContextMenuEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListContextMenuEventArgsMutableBuilder[Self <: ASPxClientTreeListContextMenuEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListContextMenuEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectKey(value: js.Any): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
+    inline def setObjectKey(value: js.Any): Self = StObject.set(x, "objectKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
   }
 }

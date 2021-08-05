@@ -47,83 +47,59 @@ trait PivotTable extends StObject {
 }
 object PivotTable {
   
-  @scala.inline
-  def apply(): PivotTable = {
+  inline def apply(): PivotTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotTable]
   }
   
-  @scala.inline
-  implicit class PivotTableMutableBuilder[Self <: PivotTable] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTable](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[PivotGroup]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[PivotGroup]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: PivotGroup*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: PivotGroup*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setCriteria(
+    inline def setCriteria(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
       */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[js.Any]
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
+    inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
+    inline def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setFilterSpecs(value: js.Array[PivotFilterSpec]): Self = StObject.set(x, "filterSpecs", value.asInstanceOf[js.Any])
+    inline def setFilterSpecs(value: js.Array[PivotFilterSpec]): Self = StObject.set(x, "filterSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
+    inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
-    @scala.inline
-    def setFilterSpecsVarargs(value: PivotFilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
+    inline def setFilterSpecsVarargs(value: PivotFilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: js.Array[PivotGroup]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[PivotGroup]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: PivotGroup*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: PivotGroup*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setValueLayout(value: String): Self = StObject.set(x, "valueLayout", value.asInstanceOf[js.Any])
+    inline def setValueLayout(value: String): Self = StObject.set(x, "valueLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLayoutUndefined: Self = StObject.set(x, "valueLayout", js.undefined)
+    inline def setValueLayoutUndefined: Self = StObject.set(x, "valueLayout", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[PivotValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[PivotValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: PivotValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: PivotValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

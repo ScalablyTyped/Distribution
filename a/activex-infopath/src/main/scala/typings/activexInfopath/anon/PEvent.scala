@@ -11,16 +11,13 @@ trait PEvent extends StObject {
 }
 object PEvent {
   
-  @scala.inline
-  def apply(pEvent: DocActionEventObject): PEvent = {
+  inline def apply(pEvent: DocActionEventObject): PEvent = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PEvent]
   }
   
-  @scala.inline
-  implicit class PEventMutableBuilder[Self <: PEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PEvent](x: Self) {
     
-    @scala.inline
-    def setPEvent(value: DocActionEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
+    inline def setPEvent(value: DocActionEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }
 }

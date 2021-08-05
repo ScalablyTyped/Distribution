@@ -29,25 +29,19 @@ trait PlusKeyKeyEvent extends StObject {
 }
 object PlusKeyKeyEvent {
   
-  @scala.inline
-  def apply(): PlusKeyKeyEvent = {
+  inline def apply(): PlusKeyKeyEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusKeyKeyEvent]
   }
   
-  @scala.inline
-  implicit class PlusKeyKeyEventMutableBuilder[Self <: PlusKeyKeyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlusKeyKeyEvent](x: Self) {
     
-    @scala.inline
-    def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+    inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
+    inline def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: PlusKeyKeyType): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: PlusKeyKeyType): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
   }
 }

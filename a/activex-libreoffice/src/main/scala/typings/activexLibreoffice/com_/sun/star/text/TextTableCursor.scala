@@ -49,8 +49,7 @@ trait TextTableCursor
      with UserDefinedAttributesSupplier
 object TextTableCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderDistance: Double,
     BottomBorder: BorderLine,
     BottomBorderDistance: Double,

@@ -19,40 +19,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CityResponse {
   
-  @scala.inline
-  def apply(): CityResponse = {
+  inline def apply(): CityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CityResponse]
   }
   
-  @scala.inline
-  implicit class CityResponseMutableBuilder[Self <: CityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CityResponse](x: Self) {
     
-    @scala.inline
-    def setCity(value: CityRecord): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: CityRecord): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
-    @scala.inline
-    def setLocation(value: LocationRecord): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRecord): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPostal(value: PostalRecord): Self = StObject.set(x, "postal", value.asInstanceOf[js.Any])
+    inline def setPostal(value: PostalRecord): Self = StObject.set(x, "postal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalUndefined: Self = StObject.set(x, "postal", js.undefined)
+    inline def setPostalUndefined: Self = StObject.set(x, "postal", js.undefined)
     
-    @scala.inline
-    def setSubdivisions(value: js.Array[SubdivisionsRecord]): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
+    inline def setSubdivisions(value: js.Array[SubdivisionsRecord]): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
+    inline def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
     
-    @scala.inline
-    def setSubdivisionsVarargs(value: SubdivisionsRecord*): Self = StObject.set(x, "subdivisions", js.Array(value :_*))
+    inline def setSubdivisionsVarargs(value: SubdivisionsRecord*): Self = StObject.set(x, "subdivisions", js.Array(value :_*))
   }
 }

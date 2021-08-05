@@ -23,31 +23,23 @@ trait UserContext extends StObject {
 }
 object UserContext {
   
-  @scala.inline
-  def apply(): UserContext = {
+  inline def apply(): UserContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserContext]
   }
   
-  @scala.inline
-  implicit class UserContextMutableBuilder[Self <: UserContext] (val x: Self) extends AnyVal {
+  extension [Self <: UserContext](x: Self) {
     
-    @scala.inline
-    def setDomainId(value: String): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: String): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
+    inline def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
-    @scala.inline
-    def setUserProfileArn(value: String): Self = StObject.set(x, "UserProfileArn", value.asInstanceOf[js.Any])
+    inline def setUserProfileArn(value: String): Self = StObject.set(x, "UserProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfileArnUndefined: Self = StObject.set(x, "UserProfileArn", js.undefined)
+    inline def setUserProfileArnUndefined: Self = StObject.set(x, "UserProfileArn", js.undefined)
     
-    @scala.inline
-    def setUserProfileName(value: String): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
+    inline def setUserProfileName(value: String): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfileNameUndefined: Self = StObject.set(x, "UserProfileName", js.undefined)
+    inline def setUserProfileNameUndefined: Self = StObject.set(x, "UserProfileName", js.undefined)
   }
 }

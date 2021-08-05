@@ -13,16 +13,13 @@ trait DisassociateElasticIpRequest extends StObject {
 }
 object DisassociateElasticIpRequest {
   
-  @scala.inline
-  def apply(ElasticIp: String): DisassociateElasticIpRequest = {
+  inline def apply(ElasticIp: String): DisassociateElasticIpRequest = {
     val __obj = js.Dynamic.literal(ElasticIp = ElasticIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateElasticIpRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateElasticIpRequestMutableBuilder[Self <: DisassociateElasticIpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateElasticIpRequest](x: Self) {
     
-    @scala.inline
-    def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
+    inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
   }
 }

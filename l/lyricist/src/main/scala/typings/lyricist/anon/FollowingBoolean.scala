@@ -10,16 +10,13 @@ trait FollowingBoolean extends StObject {
 }
 object FollowingBoolean {
   
-  @scala.inline
-  def apply(following: Boolean): FollowingBoolean = {
+  inline def apply(following: Boolean): FollowingBoolean = {
     val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any])
     __obj.asInstanceOf[FollowingBoolean]
   }
   
-  @scala.inline
-  implicit class FollowingBooleanMutableBuilder[Self <: FollowingBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: FollowingBoolean](x: Self) {
     
-    @scala.inline
-    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+    inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
   }
 }

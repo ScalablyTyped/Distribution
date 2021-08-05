@@ -28,37 +28,27 @@ trait ArtifactContent extends StObject {
 }
 object ArtifactContent {
   
-  @scala.inline
-  def apply(): ArtifactContent = {
+  inline def apply(): ArtifactContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtifactContent]
   }
   
-  @scala.inline
-  implicit class ArtifactContentMutableBuilder[Self <: ArtifactContent] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactContent](x: Self) {
     
-    @scala.inline
-    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRendered(value: MultiformatMessageString): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRendered(value: MultiformatMessageString): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+    inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

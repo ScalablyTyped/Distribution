@@ -31,43 +31,31 @@ trait ChangeNotificationEncryptedContent extends StObject {
 }
 object ChangeNotificationEncryptedContent {
   
-  @scala.inline
-  def apply(): ChangeNotificationEncryptedContent = {
+  inline def apply(): ChangeNotificationEncryptedContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangeNotificationEncryptedContent]
   }
   
-  @scala.inline
-  implicit class ChangeNotificationEncryptedContentMutableBuilder[Self <: ChangeNotificationEncryptedContent] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeNotificationEncryptedContent](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
+    inline def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
+    inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
-    @scala.inline
-    def setDataSignature(value: String): Self = StObject.set(x, "dataSignature", value.asInstanceOf[js.Any])
+    inline def setDataSignature(value: String): Self = StObject.set(x, "dataSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSignatureUndefined: Self = StObject.set(x, "dataSignature", js.undefined)
+    inline def setDataSignatureUndefined: Self = StObject.set(x, "dataSignature", js.undefined)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEncryptionCertificateId(value: String): Self = StObject.set(x, "encryptionCertificateId", value.asInstanceOf[js.Any])
+    inline def setEncryptionCertificateId(value: String): Self = StObject.set(x, "encryptionCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionCertificateIdUndefined: Self = StObject.set(x, "encryptionCertificateId", js.undefined)
+    inline def setEncryptionCertificateIdUndefined: Self = StObject.set(x, "encryptionCertificateId", js.undefined)
     
-    @scala.inline
-    def setEncryptionCertificateThumbprint(value: String): Self = StObject.set(x, "encryptionCertificateThumbprint", value.asInstanceOf[js.Any])
+    inline def setEncryptionCertificateThumbprint(value: String): Self = StObject.set(x, "encryptionCertificateThumbprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionCertificateThumbprintUndefined: Self = StObject.set(x, "encryptionCertificateThumbprint", js.undefined)
+    inline def setEncryptionCertificateThumbprintUndefined: Self = StObject.set(x, "encryptionCertificateThumbprint", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait LinkFootnote
 }
 object LinkFootnote {
   
-  @scala.inline
-  def apply(id: String | Double, url: String): LinkFootnote = {
+  inline def apply(id: String | Double, url: String): LinkFootnote = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkFootnote]
   }
   
-  @scala.inline
-  implicit class LinkFootnoteMutableBuilder[Self <: LinkFootnote] (val x: Self) extends AnyVal {
+  extension [Self <: LinkFootnote](x: Self) {
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
+    inline def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortUrlUndefined: Self = StObject.set(x, "shortUrl", js.undefined)
+    inline def setShortUrlUndefined: Self = StObject.set(x, "shortUrl", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

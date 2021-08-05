@@ -15,31 +15,23 @@ trait Large extends StObject {
 }
 object Large {
   
-  @scala.inline
-  def apply(): Large = {
+  inline def apply(): Large = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Large]
   }
   
-  @scala.inline
-  implicit class LargeMutableBuilder[Self <: Large] (val x: Self) extends AnyVal {
+  extension [Self <: Large](x: Self) {
     
-    @scala.inline
-    def setLarge(value: FC[js.Object]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: FC[js.Object]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+    inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
-    @scala.inline
-    def setMedium(value: FC[js.Object]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: FC[js.Object]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
-    @scala.inline
-    def setSmall(value: FC[js.Object]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: FC[js.Object]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
   }
 }

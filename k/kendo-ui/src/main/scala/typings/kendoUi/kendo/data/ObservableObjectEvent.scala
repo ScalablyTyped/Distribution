@@ -12,25 +12,19 @@ trait ObservableObjectEvent extends StObject {
 }
 object ObservableObjectEvent {
   
-  @scala.inline
-  def apply(): ObservableObjectEvent = {
+  inline def apply(): ObservableObjectEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObservableObjectEvent]
   }
   
-  @scala.inline
-  implicit class ObservableObjectEventMutableBuilder[Self <: ObservableObjectEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ObservableObjectEvent](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setSender(value: ObservableObject): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: ObservableObject): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
   }
 }

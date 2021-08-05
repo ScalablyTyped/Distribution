@@ -20,17 +20,14 @@ object typesEnableKeyRotationOutputMod {
   }
   object EnableKeyRotationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): EnableKeyRotationOutput = {
+    inline def apply($metadata: ResponseMetadata): EnableKeyRotationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnableKeyRotationOutput]
     }
     
-    @scala.inline
-    implicit class EnableKeyRotationOutputMutableBuilder[Self <: EnableKeyRotationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: EnableKeyRotationOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

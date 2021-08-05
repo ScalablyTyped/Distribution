@@ -18,25 +18,19 @@ trait TimelineHiddenDateOption extends StObject {
 }
 object TimelineHiddenDateOption {
   
-  @scala.inline
-  def apply(end: DateType, start: DateType): TimelineHiddenDateOption = {
+  inline def apply(end: DateType, start: DateType): TimelineHiddenDateOption = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineHiddenDateOption]
   }
   
-  @scala.inline
-  implicit class TimelineHiddenDateOptionMutableBuilder[Self <: TimelineHiddenDateOption] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineHiddenDateOption](x: Self) {
     
-    @scala.inline
-    def setEnd(value: DateType): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: DateType): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeat(value: daily | weekly | monthly | yearly): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: daily | weekly | monthly | yearly): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
-    @scala.inline
-    def setStart(value: DateType): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: DateType): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

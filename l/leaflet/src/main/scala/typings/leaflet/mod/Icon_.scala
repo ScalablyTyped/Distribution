@@ -35,8 +35,7 @@ object Icon_ {
     @JSImport("leaflet", "Icon.Default.imagePath")
     @js.native
     def imagePath: js.UndefOr[String] = js.native
-    @scala.inline
-    def imagePath_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagePath")(x.asInstanceOf[js.Any])
+    inline def imagePath_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagePath")(x.asInstanceOf[js.Any])
   }
   
   trait DefaultIconOptions
@@ -47,20 +46,16 @@ object Icon_ {
   }
   object DefaultIconOptions {
     
-    @scala.inline
-    def apply(): DefaultIconOptions = {
+    inline def apply(): DefaultIconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultIconOptions]
     }
     
-    @scala.inline
-    implicit class DefaultIconOptionsMutableBuilder[Self <: DefaultIconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultIconOptions](x: Self) {
       
-      @scala.inline
-      def setImagePath(value: String): Self = StObject.set(x, "imagePath", value.asInstanceOf[js.Any])
+      inline def setImagePath(value: String): Self = StObject.set(x, "imagePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagePathUndefined: Self = StObject.set(x, "imagePath", js.undefined)
+      inline def setImagePathUndefined: Self = StObject.set(x, "imagePath", js.undefined)
     }
   }
 }

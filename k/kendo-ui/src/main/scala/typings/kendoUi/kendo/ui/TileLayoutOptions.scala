@@ -34,94 +34,65 @@ trait TileLayoutOptions extends StObject {
 }
 object TileLayoutOptions {
   
-  @scala.inline
-  def apply(): TileLayoutOptions = {
+  inline def apply(): TileLayoutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayoutOptions]
   }
   
-  @scala.inline
-  implicit class TileLayoutOptionsMutableBuilder[Self <: TileLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsWidth(value: String | Double): Self = StObject.set(x, "columnsWidth", value.asInstanceOf[js.Any])
+    inline def setColumnsWidth(value: String | Double): Self = StObject.set(x, "columnsWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsWidthUndefined: Self = StObject.set(x, "columnsWidth", js.undefined)
+    inline def setColumnsWidthUndefined: Self = StObject.set(x, "columnsWidth", js.undefined)
     
-    @scala.inline
-    def setContainers(value: js.Array[TileLayoutContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: js.Array[TileLayoutContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setContainersVarargs(value: TileLayoutContainer*): Self = StObject.set(x, "containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: TileLayoutContainer*): Self = StObject.set(x, "containers", js.Array(value :_*))
     
-    @scala.inline
-    def setGap(value: TileLayoutGap): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: TileLayoutGap): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReorder(value: /* e */ TileLayoutReorderEvent => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
+    inline def setReorder(value: /* e */ TileLayoutReorderEvent => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
+    inline def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
     
-    @scala.inline
-    def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
+    inline def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
+    inline def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
-    @scala.inline
-    def setResize(value: /* e */ TileLayoutResizeEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+    inline def setResize(value: /* e */ TileLayoutResizeEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsHeight(value: String | Double): Self = StObject.set(x, "rowsHeight", value.asInstanceOf[js.Any])
+    inline def setRowsHeight(value: String | Double): Self = StObject.set(x, "rowsHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsHeightUndefined: Self = StObject.set(x, "rowsHeight", js.undefined)
+    inline def setRowsHeightUndefined: Self = StObject.set(x, "rowsHeight", js.undefined)
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

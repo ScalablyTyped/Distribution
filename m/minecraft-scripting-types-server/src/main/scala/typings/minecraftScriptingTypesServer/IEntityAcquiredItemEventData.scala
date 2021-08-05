@@ -38,8 +38,7 @@ trait IEntityAcquiredItemEventData extends StObject {
 }
 object IEntityAcquiredItemEventData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquired_amount: Double,
     acquisition_method: String,
     entity: IEntity,
@@ -50,22 +49,16 @@ object IEntityAcquiredItemEventData {
     __obj.asInstanceOf[IEntityAcquiredItemEventData]
   }
   
-  @scala.inline
-  implicit class IEntityAcquiredItemEventDataMutableBuilder[Self <: IEntityAcquiredItemEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityAcquiredItemEventData](x: Self) {
     
-    @scala.inline
-    def setAcquired_amount(value: Double): Self = StObject.set(x, "acquired_amount", value.asInstanceOf[js.Any])
+    inline def setAcquired_amount(value: Double): Self = StObject.set(x, "acquired_amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquisition_method(value: String): Self = StObject.set(x, "acquisition_method", value.asInstanceOf[js.Any])
+    inline def setAcquisition_method(value: String): Self = StObject.set(x, "acquisition_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
+    inline def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondary_entity(value: IEntity): Self = StObject.set(x, "secondary_entity", value.asInstanceOf[js.Any])
+    inline def setSecondary_entity(value: IEntity): Self = StObject.set(x, "secondary_entity", value.asInstanceOf[js.Any])
   }
 }

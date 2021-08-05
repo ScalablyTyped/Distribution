@@ -69,8 +69,7 @@ object defaultLinkWidgetMod {
     @JSImport("storm-react-diagrams/dist/src/defaults/widgets/DefaultLinkWidget", "DefaultLinkWidget.defaultProps")
     @js.native
     def defaultProps: DefaultLinkProps = js.native
-    @scala.inline
-    def defaultProps_=(x: DefaultLinkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DefaultLinkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait DefaultLinkProps
@@ -91,44 +90,32 @@ object defaultLinkWidgetMod {
   }
   object DefaultLinkProps {
     
-    @scala.inline
-    def apply(diagramEngine: DiagramEngine, link: DefaultLinkModel): DefaultLinkProps = {
+    inline def apply(diagramEngine: DiagramEngine, link: DefaultLinkModel): DefaultLinkProps = {
       val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultLinkProps]
     }
     
-    @scala.inline
-    implicit class DefaultLinkPropsMutableBuilder[Self <: DefaultLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultLinkProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
+      inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: DefaultLinkModel): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: DefaultLinkModel): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointAdded(value: (/* point */ PointModel, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
+      inline def setPointAdded(value: (/* point */ PointModel, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointAddedUndefined: Self = StObject.set(x, "pointAdded", js.undefined)
+      inline def setPointAddedUndefined: Self = StObject.set(x, "pointAdded", js.undefined)
       
-      @scala.inline
-      def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+      inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -138,17 +125,14 @@ object defaultLinkWidgetMod {
   }
   object DefaultLinkState {
     
-    @scala.inline
-    def apply(selected: Boolean): DefaultLinkState = {
+    inline def apply(selected: Boolean): DefaultLinkState = {
       val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultLinkState]
     }
     
-    @scala.inline
-    implicit class DefaultLinkStateMutableBuilder[Self <: DefaultLinkState] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultLinkState](x: Self) {
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

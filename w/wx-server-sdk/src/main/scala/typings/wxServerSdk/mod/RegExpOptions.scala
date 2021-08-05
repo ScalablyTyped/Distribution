@@ -16,19 +16,15 @@ trait RegExpOptions extends StObject {
 }
 object RegExpOptions {
   
-  @scala.inline
-  def apply(options: i | m | s, regexp: String): RegExpOptions = {
+  inline def apply(options: i | m | s, regexp: String): RegExpOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegExpOptions]
   }
   
-  @scala.inline
-  implicit class RegExpOptionsMutableBuilder[Self <: RegExpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RegExpOptions](x: Self) {
     
-    @scala.inline
-    def setOptions(value: i | m | s): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: i | m | s): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
   }
 }

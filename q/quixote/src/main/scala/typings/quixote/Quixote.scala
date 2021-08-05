@@ -15,19 +15,16 @@ trait Quixote extends StObject {
 }
 object Quixote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createFrame: (QuixoteFrameOptions, js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]) => QFrame
   ): Quixote = {
     val __obj = js.Dynamic.literal(createFrame = js.Any.fromFunction2(createFrame))
     __obj.asInstanceOf[Quixote]
   }
   
-  @scala.inline
-  implicit class QuixoteMutableBuilder[Self <: Quixote] (val x: Self) extends AnyVal {
+  extension [Self <: Quixote](x: Self) {
     
-    @scala.inline
-    def setCreateFrame(
+    inline def setCreateFrame(
       value: (QuixoteFrameOptions, js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]) => QFrame
     ): Self = StObject.set(x, "createFrame", js.Any.fromFunction2(value))
   }

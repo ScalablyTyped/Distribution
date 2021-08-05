@@ -18,25 +18,19 @@ trait ShrinkPolicy extends StObject {
 }
 object ShrinkPolicy {
   
-  @scala.inline
-  def apply(): ShrinkPolicy = {
+  inline def apply(): ShrinkPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShrinkPolicy]
   }
   
-  @scala.inline
-  implicit class ShrinkPolicyMutableBuilder[Self <: ShrinkPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ShrinkPolicy](x: Self) {
     
-    @scala.inline
-    def setDecommissionTimeout(value: Integer): Self = StObject.set(x, "DecommissionTimeout", value.asInstanceOf[js.Any])
+    inline def setDecommissionTimeout(value: Integer): Self = StObject.set(x, "DecommissionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecommissionTimeoutUndefined: Self = StObject.set(x, "DecommissionTimeout", js.undefined)
+    inline def setDecommissionTimeoutUndefined: Self = StObject.set(x, "DecommissionTimeout", js.undefined)
     
-    @scala.inline
-    def setInstanceResizePolicy(value: InstanceResizePolicy): Self = StObject.set(x, "InstanceResizePolicy", value.asInstanceOf[js.Any])
+    inline def setInstanceResizePolicy(value: InstanceResizePolicy): Self = StObject.set(x, "InstanceResizePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceResizePolicyUndefined: Self = StObject.set(x, "InstanceResizePolicy", js.undefined)
+    inline def setInstanceResizePolicyUndefined: Self = StObject.set(x, "InstanceResizePolicy", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait ChartType
      with XPropertySet
 object ChartType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChartType: String,
     DataSeries: SafeArray[XDataSeries],
     PropertySetInfo: XPropertySetInfo,

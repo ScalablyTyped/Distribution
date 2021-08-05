@@ -18,22 +18,17 @@ trait UpdateAnomalyMonitorRequest extends StObject {
 }
 object UpdateAnomalyMonitorRequest {
   
-  @scala.inline
-  def apply(MonitorArn: GenericString): UpdateAnomalyMonitorRequest = {
+  inline def apply(MonitorArn: GenericString): UpdateAnomalyMonitorRequest = {
     val __obj = js.Dynamic.literal(MonitorArn = MonitorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAnomalyMonitorRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAnomalyMonitorRequestMutableBuilder[Self <: UpdateAnomalyMonitorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAnomalyMonitorRequest](x: Self) {
     
-    @scala.inline
-    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
+    inline def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorName(value: GenericString): Self = StObject.set(x, "MonitorName", value.asInstanceOf[js.Any])
+    inline def setMonitorName(value: GenericString): Self = StObject.set(x, "MonitorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorNameUndefined: Self = StObject.set(x, "MonitorName", js.undefined)
+    inline def setMonitorNameUndefined: Self = StObject.set(x, "MonitorName", js.undefined)
   }
 }

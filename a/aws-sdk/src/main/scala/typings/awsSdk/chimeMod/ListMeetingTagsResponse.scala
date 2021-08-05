@@ -13,22 +13,17 @@ trait ListMeetingTagsResponse extends StObject {
 }
 object ListMeetingTagsResponse {
   
-  @scala.inline
-  def apply(): ListMeetingTagsResponse = {
+  inline def apply(): ListMeetingTagsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMeetingTagsResponse]
   }
   
-  @scala.inline
-  implicit class ListMeetingTagsResponseMutableBuilder[Self <: ListMeetingTagsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMeetingTagsResponse](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

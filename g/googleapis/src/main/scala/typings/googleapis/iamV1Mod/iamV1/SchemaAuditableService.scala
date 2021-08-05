@@ -17,19 +17,15 @@ trait SchemaAuditableService extends StObject {
 }
 object SchemaAuditableService {
   
-  @scala.inline
-  def apply(): SchemaAuditableService = {
+  inline def apply(): SchemaAuditableService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuditableService]
   }
   
-  @scala.inline
-  implicit class SchemaAuditableServiceMutableBuilder[Self <: SchemaAuditableService] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuditableService](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("crypto", "Verify")
 @js.native
-class Verify_ protected () extends Writable {
+/* private */ class Verify_ () extends Writable {
   
   def update(data: String, input_encoding: Utf8AsciiLatin1Encoding): Verify_ = js.native
   def update(data: BinaryLike): Verify_ = js.native

@@ -25,12 +25,10 @@ object CellInsertMode {
     *
     * entire columns to the right of the inserted cells are moved right.
     */
-  @scala.inline
-  def COLUMNS: `4` = 4.asInstanceOf[`4`]
+  inline def COLUMNS: `4` = 4.asInstanceOf[`4`]
   
   /** the cells below the inserted cells are moved down. */
-  @scala.inline
-  def DOWN: `1` = 1.asInstanceOf[`1`]
+  inline def DOWN: `1` = 1.asInstanceOf[`1`]
   
   /**
     * no cells are moved.
@@ -45,22 +43,19 @@ object CellInsertMode {
     *
     * sheet is not linked.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * selects the right border.
     *
     * the cells to the right of the inserted cells are moved right.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
   
   /**
     * entire rows below the deleted cells are moved up.
     *
     * entire rows below the inserted cells are moved down.
     */
-  @scala.inline
-  def ROWS: `3` = 3.asInstanceOf[`3`]
+  inline def ROWS: `3` = 3.asInstanceOf[`3`]
 }

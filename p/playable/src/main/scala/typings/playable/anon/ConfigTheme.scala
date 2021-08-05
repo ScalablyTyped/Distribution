@@ -14,19 +14,15 @@ trait ConfigTheme extends StObject {
 }
 object ConfigTheme {
   
-  @scala.inline
-  def apply(config: IPlayerConfig, theme: IThemeService): ConfigTheme = {
+  inline def apply(config: IPlayerConfig, theme: IThemeService): ConfigTheme = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigTheme]
   }
   
-  @scala.inline
-  implicit class ConfigThemeMutableBuilder[Self <: ConfigTheme] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigTheme](x: Self) {
     
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

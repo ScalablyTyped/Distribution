@@ -25,8 +25,7 @@ trait PageProtection extends StObject {
 }
 object PageProtection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addUser: String => Unit,
     getUsers: () => js.Array[String],
     isProtected: () => Boolean,
@@ -37,22 +36,16 @@ object PageProtection {
     __obj.asInstanceOf[PageProtection]
   }
   
-  @scala.inline
-  implicit class PageProtectionMutableBuilder[Self <: PageProtection] (val x: Self) extends AnyVal {
+  extension [Self <: PageProtection](x: Self) {
     
-    @scala.inline
-    def setAddUser(value: String => Unit): Self = StObject.set(x, "addUser", js.Any.fromFunction1(value))
+    inline def setAddUser(value: String => Unit): Self = StObject.set(x, "addUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUsers(value: () => js.Array[String]): Self = StObject.set(x, "getUsers", js.Any.fromFunction0(value))
+    inline def setGetUsers(value: () => js.Array[String]): Self = StObject.set(x, "getUsers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsProtected(value: () => Boolean): Self = StObject.set(x, "isProtected", js.Any.fromFunction0(value))
+    inline def setIsProtected(value: () => Boolean): Self = StObject.set(x, "isProtected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveUser(value: String => Unit): Self = StObject.set(x, "removeUser", js.Any.fromFunction1(value))
+    inline def setRemoveUser(value: String => Unit): Self = StObject.set(x, "removeUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProtected(value: Boolean => Unit): Self = StObject.set(x, "setProtected", js.Any.fromFunction1(value))
+    inline def setSetProtected(value: Boolean => Unit): Self = StObject.set(x, "setProtected", js.Any.fromFunction1(value))
   }
 }

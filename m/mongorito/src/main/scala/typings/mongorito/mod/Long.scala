@@ -40,23 +40,18 @@ object Long {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @scala.inline
-  def fromBits(lowBits: Double, highBits: Double): typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Long]
+  inline def fromBits(lowBits: Double, highBits: Double): typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Long]
   
   /** Returns a Long representing the given (32-bit) integer value. */
-  @scala.inline
-  def fromInt(i: Double): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(i.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
+  inline def fromInt(i: Double): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(i.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
   
   /** Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned. */
-  @scala.inline
-  def fromNumber(n: Double): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
+  inline def fromNumber(n: Double): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(n.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
   
   /**
     * Returns a Long representation of the given string
     * @param opt_radix The radix in which the text is written. {default:10}
     */
-  @scala.inline
-  def fromString(s: String): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
-  @scala.inline
-  def fromString(s: String, opt_radix: Double): typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Long]
+  inline def fromString(s: String): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
+  inline def fromString(s: String, opt_radix: Double): typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Long]
 }

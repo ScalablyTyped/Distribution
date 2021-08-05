@@ -9,8 +9,7 @@ trait CurrentTimeChangeRequestedEventArgs
      with ICurrentTimeChangeRequestedEventArgs
 object CurrentTimeChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(time: Double): CurrentTimeChangeRequestedEventArgs = {
+  inline def apply(time: Double): CurrentTimeChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentTimeChangeRequestedEventArgs]
   }

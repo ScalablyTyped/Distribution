@@ -10,19 +10,15 @@ trait HighlightsRepositoryEditReelResponseFbUserTags extends StObject {
 }
 object HighlightsRepositoryEditReelResponseFbUserTags {
   
-  @scala.inline
-  def apply(in: js.Array[js.Any]): HighlightsRepositoryEditReelResponseFbUserTags = {
+  inline def apply(in: js.Array[js.Any]): HighlightsRepositoryEditReelResponseFbUserTags = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseFbUserTags]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseFbUserTagsMutableBuilder[Self <: HighlightsRepositoryEditReelResponseFbUserTags] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseFbUserTags](x: Self) {
     
-    @scala.inline
-    def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
+    inline def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
   }
 }

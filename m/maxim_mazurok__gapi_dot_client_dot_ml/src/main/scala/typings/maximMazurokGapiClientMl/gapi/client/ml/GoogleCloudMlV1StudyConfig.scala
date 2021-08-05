@@ -20,43 +20,31 @@ trait GoogleCloudMlV1StudyConfig extends StObject {
 }
 object GoogleCloudMlV1StudyConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1StudyConfig = {
+  inline def apply(): GoogleCloudMlV1StudyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1StudyConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1StudyConfigMutableBuilder[Self <: GoogleCloudMlV1StudyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1StudyConfig](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setAutomatedStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfig): Self = StObject.set(x, "automatedStoppingConfig", value.asInstanceOf[js.Any])
+    inline def setAutomatedStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfig): Self = StObject.set(x, "automatedStoppingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedStoppingConfigUndefined: Self = StObject.set(x, "automatedStoppingConfig", js.undefined)
+    inline def setAutomatedStoppingConfigUndefined: Self = StObject.set(x, "automatedStoppingConfig", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[GoogleCloudMlV1StudyConfigMetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[GoogleCloudMlV1StudyConfigMetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: GoogleCloudMlV1StudyConfigMetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: GoogleCloudMlV1StudyConfigMetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setParameters(value: js.Array[GoogleCloudMlV1StudyConfigParameterSpec]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[GoogleCloudMlV1StudyConfigParameterSpec]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

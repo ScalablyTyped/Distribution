@@ -15,19 +15,15 @@ trait CustomerManagedEncryption extends StObject {
 }
 object CustomerManagedEncryption {
   
-  @scala.inline
-  def apply(): CustomerManagedEncryption = {
+  inline def apply(): CustomerManagedEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerManagedEncryption]
   }
   
-  @scala.inline
-  implicit class CustomerManagedEncryptionMutableBuilder[Self <: CustomerManagedEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerManagedEncryption](x: Self) {
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait NameToken extends StObject {
 }
 object NameToken {
   
-  @scala.inline
-  def apply(Index: Double, Sheet: Double): NameToken = {
+  inline def apply(Index: Double, Sheet: Double): NameToken = {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any], Sheet = Sheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameToken]
   }
   
-  @scala.inline
-  implicit class NameTokenMutableBuilder[Self <: NameToken] (val x: Self) extends AnyVal {
+  extension [Self <: NameToken](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
   }
 }

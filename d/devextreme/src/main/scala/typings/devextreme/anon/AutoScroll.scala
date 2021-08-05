@@ -28,73 +28,51 @@ trait AutoScroll extends StObject {
 }
 object AutoScroll {
   
-  @scala.inline
-  def apply(): AutoScroll = {
+  inline def apply(): AutoScroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScroll]
   }
   
-  @scala.inline
-  implicit class AutoScrollMutableBuilder[Self <: AutoScroll] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScroll](x: Self) {
     
-    @scala.inline
-    def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
+    inline def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScrollUndefined: Self = StObject.set(x, "autoScroll", js.undefined)
+    inline def setAutoScrollUndefined: Self = StObject.set(x, "autoScroll", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setOnAdd(value: /* e */ EventFromComponent => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: /* e */ EventFromComponent => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
-    @scala.inline
-    def setOnDragEnd(value: /* e */ CancelEvent => js.Any): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    inline def setOnDragEnd(value: /* e */ CancelEvent => js.Any): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+    inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
-    @scala.inline
-    def setOnDragMove(value: /* e */ CancelEvent => js.Any): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
+    inline def setOnDragMove(value: /* e */ CancelEvent => js.Any): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
+    inline def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
     
-    @scala.inline
-    def setOnDragStart(value: /* e */ FromDataItemData => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: /* e */ FromDataItemData => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+    inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
-    @scala.inline
-    def setOnRemove(value: /* e */ FromComponentFromData => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+    inline def setOnRemove(value: /* e */ FromComponentFromData => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+    inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
     
-    @scala.inline
-    def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
+    inline def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
+    inline def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
     
-    @scala.inline
-    def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+    inline def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
+    inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
   }
 }

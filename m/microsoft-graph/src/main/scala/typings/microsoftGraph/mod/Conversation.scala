@@ -31,58 +31,41 @@ trait Conversation
 }
 object Conversation {
   
-  @scala.inline
-  def apply(): Conversation = {
+  inline def apply(): Conversation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Conversation]
   }
   
-  @scala.inline
-  implicit class ConversationMutableBuilder[Self <: Conversation] (val x: Self) extends AnyVal {
+  extension [Self <: Conversation](x: Self) {
     
-    @scala.inline
-    def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
+    inline def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
+    inline def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
     
-    @scala.inline
-    def setLastDeliveredDateTime(value: String): Self = StObject.set(x, "lastDeliveredDateTime", value.asInstanceOf[js.Any])
+    inline def setLastDeliveredDateTime(value: String): Self = StObject.set(x, "lastDeliveredDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDeliveredDateTimeUndefined: Self = StObject.set(x, "lastDeliveredDateTime", js.undefined)
+    inline def setLastDeliveredDateTimeUndefined: Self = StObject.set(x, "lastDeliveredDateTime", js.undefined)
     
-    @scala.inline
-    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setThreads(value: NullableOption[js.Array[ConversationThread]]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+    inline def setThreads(value: NullableOption[js.Array[ConversationThread]]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsNull: Self = StObject.set(x, "threads", null)
+    inline def setThreadsNull: Self = StObject.set(x, "threads", null)
     
-    @scala.inline
-    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+    inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
-    @scala.inline
-    def setThreadsVarargs(value: ConversationThread*): Self = StObject.set(x, "threads", js.Array(value :_*))
+    inline def setThreadsVarargs(value: ConversationThread*): Self = StObject.set(x, "threads", js.Array(value :_*))
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
-    @scala.inline
-    def setUniqueSenders(value: js.Array[String]): Self = StObject.set(x, "uniqueSenders", value.asInstanceOf[js.Any])
+    inline def setUniqueSenders(value: js.Array[String]): Self = StObject.set(x, "uniqueSenders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueSendersUndefined: Self = StObject.set(x, "uniqueSenders", js.undefined)
+    inline def setUniqueSendersUndefined: Self = StObject.set(x, "uniqueSenders", js.undefined)
     
-    @scala.inline
-    def setUniqueSendersVarargs(value: String*): Self = StObject.set(x, "uniqueSenders", js.Array(value :_*))
+    inline def setUniqueSendersVarargs(value: String*): Self = StObject.set(x, "uniqueSenders", js.Array(value :_*))
   }
 }

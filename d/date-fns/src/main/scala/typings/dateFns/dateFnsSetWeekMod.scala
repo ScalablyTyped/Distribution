@@ -10,14 +10,10 @@ object dateFnsSetWeekMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Double, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, week: Double): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, week: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], week.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/setWeek", JSImport.Default)
     @js.native

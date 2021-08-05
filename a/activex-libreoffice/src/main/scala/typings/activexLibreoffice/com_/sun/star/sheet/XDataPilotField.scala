@@ -29,8 +29,7 @@ trait XDataPilotField
 }
 object XDataPilotField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Items: XIndexAccess,
     acquire: () => Unit,
     getItems: () => XIndexAccess,
@@ -41,13 +40,10 @@ object XDataPilotField {
     __obj.asInstanceOf[XDataPilotField]
   }
   
-  @scala.inline
-  implicit class XDataPilotFieldMutableBuilder[Self <: XDataPilotField] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotField](x: Self) {
     
-    @scala.inline
-    def setGetItems(value: () => XIndexAccess): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+    inline def setGetItems(value: () => XIndexAccess): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItems(value: XIndexAccess): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: XIndexAccess): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
   }
 }

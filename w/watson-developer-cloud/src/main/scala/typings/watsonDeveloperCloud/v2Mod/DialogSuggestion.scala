@@ -18,25 +18,19 @@ trait DialogSuggestion extends StObject {
 }
 object DialogSuggestion {
   
-  @scala.inline
-  def apply(label: String, value: DialogSuggestionValue): DialogSuggestion = {
+  inline def apply(label: String, value: DialogSuggestionValue): DialogSuggestion = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogSuggestion]
   }
   
-  @scala.inline
-  implicit class DialogSuggestionMutableBuilder[Self <: DialogSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: DialogSuggestion](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: js.Object): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Object): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setValue(value: DialogSuggestionValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DialogSuggestionValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

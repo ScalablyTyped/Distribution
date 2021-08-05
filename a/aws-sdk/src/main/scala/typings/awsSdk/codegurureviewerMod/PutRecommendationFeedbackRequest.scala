@@ -23,25 +23,19 @@ trait PutRecommendationFeedbackRequest extends StObject {
 }
 object PutRecommendationFeedbackRequest {
   
-  @scala.inline
-  def apply(CodeReviewArn: Arn, Reactions: Reactions, RecommendationId: RecommendationId): PutRecommendationFeedbackRequest = {
+  inline def apply(CodeReviewArn: Arn, Reactions: Reactions, RecommendationId: RecommendationId): PutRecommendationFeedbackRequest = {
     val __obj = js.Dynamic.literal(CodeReviewArn = CodeReviewArn.asInstanceOf[js.Any], Reactions = Reactions.asInstanceOf[js.Any], RecommendationId = RecommendationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecommendationFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class PutRecommendationFeedbackRequestMutableBuilder[Self <: PutRecommendationFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecommendationFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
+    inline def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: Reactions): Self = StObject.set(x, "Reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
     
-    @scala.inline
-    def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
+    inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
   }
 }

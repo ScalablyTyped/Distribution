@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Project = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Project]
-  @scala.inline
-  def apply(options: Options): Project = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Project]
+  inline def apply(): Project = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Project]
+  inline def apply(options: Options): Project = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Project]
   
   @JSImport("project-name-generator", JSImport.Namespace)
   @js.native
@@ -38,32 +36,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlliterative(value: Boolean): Self = StObject.set(x, "alliterative", value.asInstanceOf[js.Any])
+      inline def setAlliterative(value: Boolean): Self = StObject.set(x, "alliterative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlliterativeUndefined: Self = StObject.set(x, "alliterative", js.undefined)
+      inline def setAlliterativeUndefined: Self = StObject.set(x, "alliterative", js.undefined)
       
-      @scala.inline
-      def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+      inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     }
   }
   
@@ -77,26 +67,20 @@ object mod {
   }
   object Project {
     
-    @scala.inline
-    def apply(dashed: String, raw: js.Array[String | Double], spaced: String): Project = {
+    inline def apply(dashed: String, raw: js.Array[String | Double], spaced: String): Project = {
       val __obj = js.Dynamic.literal(dashed = dashed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], spaced = spaced.asInstanceOf[js.Any])
       __obj.asInstanceOf[Project]
     }
     
-    @scala.inline
-    implicit class ProjectMutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
+    extension [Self <: Project](x: Self) {
       
-      @scala.inline
-      def setDashed(value: String): Self = StObject.set(x, "dashed", value.asInstanceOf[js.Any])
+      inline def setDashed(value: String): Self = StObject.set(x, "dashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: js.Array[String | Double]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: js.Array[String | Double]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawVarargs(value: (String | Double)*): Self = StObject.set(x, "raw", js.Array(value :_*))
+      inline def setRawVarargs(value: (String | Double)*): Self = StObject.set(x, "raw", js.Array(value :_*))
       
-      @scala.inline
-      def setSpaced(value: String): Self = StObject.set(x, "spaced", value.asInstanceOf[js.Any])
+      inline def setSpaced(value: String): Self = StObject.set(x, "spaced", value.asInstanceOf[js.Any])
     }
   }
 }

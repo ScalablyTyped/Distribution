@@ -12,25 +12,19 @@ trait CurrencyCode extends StObject {
 }
 object CurrencyCode {
   
-  @scala.inline
-  def apply(): CurrencyCode = {
+  inline def apply(): CurrencyCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrencyCode]
   }
   
-  @scala.inline
-  implicit class CurrencyCodeMutableBuilder[Self <: CurrencyCode] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencyCode](x: Self) {
     
-    @scala.inline
-    def setAmountInMicros(value: Double): Self = StObject.set(x, "amountInMicros", value.asInstanceOf[js.Any])
+    inline def setAmountInMicros(value: Double): Self = StObject.set(x, "amountInMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountInMicrosUndefined: Self = StObject.set(x, "amountInMicros", js.undefined)
+    inline def setAmountInMicrosUndefined: Self = StObject.set(x, "amountInMicros", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
   }
 }

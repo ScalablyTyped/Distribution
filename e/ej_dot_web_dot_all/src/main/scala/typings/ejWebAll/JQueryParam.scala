@@ -13,19 +13,15 @@ trait JQueryParam extends StObject {
 }
 object JQueryParam {
   
-  @scala.inline
-  def apply(): JQueryParam = {
+  inline def apply(): JQueryParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryParam]
   }
   
-  @scala.inline
-  implicit class JQueryParamMutableBuilder[Self <: JQueryParam] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryParam](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
   }
 }

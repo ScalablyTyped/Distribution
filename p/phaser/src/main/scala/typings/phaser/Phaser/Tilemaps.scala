@@ -1267,8 +1267,7 @@ object Tilemaps {
   }
   object ImageCollection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addImage: (integer, String) => ImageCollection,
       containsImageIndex: integer => Boolean,
       firstgid: integer,
@@ -1285,44 +1284,31 @@ object Tilemaps {
       __obj.asInstanceOf[ImageCollection]
     }
     
-    @scala.inline
-    implicit class ImageCollectionMutableBuilder[Self <: ImageCollection] (val x: Self) extends AnyVal {
+    extension [Self <: ImageCollection](x: Self) {
       
-      @scala.inline
-      def setAddImage(value: (integer, String) => ImageCollection): Self = StObject.set(x, "addImage", js.Any.fromFunction2(value))
+      inline def setAddImage(value: (integer, String) => ImageCollection): Self = StObject.set(x, "addImage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContainsImageIndex(value: integer => Boolean): Self = StObject.set(x, "containsImageIndex", js.Any.fromFunction1(value))
+      inline def setContainsImageIndex(value: integer => Boolean): Self = StObject.set(x, "containsImageIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirstgid(value: integer): Self = StObject.set(x, "firstgid", value.asInstanceOf[js.Any])
+      inline def setFirstgid(value: integer): Self = StObject.set(x, "firstgid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageHeight(value: integer): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+      inline def setImageHeight(value: integer): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageMarge(value: integer): Self = StObject.set(x, "imageMarge", value.asInstanceOf[js.Any])
+      inline def setImageMarge(value: integer): Self = StObject.set(x, "imageMarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSpacing(value: integer): Self = StObject.set(x, "imageSpacing", value.asInstanceOf[js.Any])
+      inline def setImageSpacing(value: integer): Self = StObject.set(x, "imageSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageWidth(value: integer): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+      inline def setImageWidth(value: integer): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: integer): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: integer): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1435,8 +1421,7 @@ object Tilemaps {
   }
   object LayerData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Double,
       baseTileHeight: Double,
       baseTileWidth: Double,
@@ -1462,86 +1447,59 @@ object Tilemaps {
       __obj.asInstanceOf[LayerData]
     }
     
-    @scala.inline
-    implicit class LayerDataMutableBuilder[Self <: LayerData] (val x: Self) extends AnyVal {
+    extension [Self <: LayerData](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseTileHeight(value: Double): Self = StObject.set(x, "baseTileHeight", value.asInstanceOf[js.Any])
+      inline def setBaseTileHeight(value: Double): Self = StObject.set(x, "baseTileHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseTileWidth(value: Double): Self = StObject.set(x, "baseTileWidth", value.asInstanceOf[js.Any])
+      inline def setBaseTileWidth(value: Double): Self = StObject.set(x, "baseTileWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodies(value: js.Array[js.Any]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
+      inline def setBodies(value: js.Array[js.Any]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodiesVarargs(value: js.Any*): Self = StObject.set(x, "bodies", js.Array(value :_*))
+      inline def setBodiesVarargs(value: js.Any*): Self = StObject.set(x, "bodies", js.Array(value :_*))
       
-      @scala.inline
-      def setCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
       
-      @scala.inline
-      def setCollideIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
+      inline def setCollideIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollideIndexesVarargs(value: js.Any*): Self = StObject.set(x, "collideIndexes", js.Array(value :_*))
+      inline def setCollideIndexesVarargs(value: js.Any*): Self = StObject.set(x, "collideIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Array[js.Array[Tile]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Array[Tile]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Array[Tile]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[Tile]*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightInPixels(value: Double): Self = StObject.set(x, "heightInPixels", value.asInstanceOf[js.Any])
+      inline def setHeightInPixels(value: Double): Self = StObject.set(x, "heightInPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+      inline def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+      inline def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Array[js.Object]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[js.Object]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesVarargs(value: js.Object*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: js.Object*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+      inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+      inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTilemapLayer(value: DynamicTilemapLayer | StaticTilemapLayer): Self = StObject.set(x, "tilemapLayer", value.asInstanceOf[js.Any])
+      inline def setTilemapLayer(value: DynamicTilemapLayer | StaticTilemapLayer): Self = StObject.set(x, "tilemapLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthInPixels(value: Double): Self = StObject.set(x, "widthInPixels", value.asInstanceOf[js.Any])
+      inline def setWidthInPixels(value: Double): Self = StObject.set(x, "widthInPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1659,8 +1617,7 @@ object Tilemaps {
   }
   object MapData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collision: js.Object,
       format: integer,
       height: Double,
@@ -1686,83 +1643,57 @@ object Tilemaps {
       __obj.asInstanceOf[MapData]
     }
     
-    @scala.inline
-    implicit class MapDataMutableBuilder[Self <: MapData] (val x: Self) extends AnyVal {
+    extension [Self <: MapData](x: Self) {
       
-      @scala.inline
-      def setCollision(value: js.Object): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
+      inline def setCollision(value: js.Object): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: integer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: integer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightInPixels(value: Double): Self = StObject.set(x, "heightInPixels", value.asInstanceOf[js.Any])
+      inline def setHeightInPixels(value: Double): Self = StObject.set(x, "heightInPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageCollections(value: js.Array[js.Any]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
+      inline def setImageCollections(value: js.Array[js.Any]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageCollectionsVarargs(value: js.Any*): Self = StObject.set(x, "imageCollections", js.Array(value :_*))
+      inline def setImageCollectionsVarargs(value: js.Any*): Self = StObject.set(x, "imageCollections", js.Array(value :_*))
       
-      @scala.inline
-      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+      inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayers(value: js.Array[LayerData] | ObjectLayer): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[LayerData] | ObjectLayer): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersVarargs(value: LayerData*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: LayerData*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjects(value: js.Object): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Object): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderOrder(value: String): Self = StObject.set(x, "renderOrder", value.asInstanceOf[js.Any])
+      inline def setRenderOrder(value: String): Self = StObject.set(x, "renderOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+      inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+      inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiles(value: js.Array[js.Any]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+      inline def setTiles(value: js.Array[js.Any]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTilesVarargs(value: js.Any*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+      inline def setTilesVarargs(value: js.Any*): Self = StObject.set(x, "tiles", js.Array(value :_*))
       
-      @scala.inline
-      def setTilesets(value: js.Array[Tileset]): Self = StObject.set(x, "tilesets", value.asInstanceOf[js.Any])
+      inline def setTilesets(value: js.Array[Tileset]): Self = StObject.set(x, "tilesets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTilesetsVarargs(value: Tileset*): Self = StObject.set(x, "tilesets", js.Array(value :_*))
+      inline def setTilesetsVarargs(value: Tileset*): Self = StObject.set(x, "tilesets", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthInPixels(value: Double): Self = StObject.set(x, "widthInPixels", value.asInstanceOf[js.Any])
+      inline def setWidthInPixels(value: Double): Self = StObject.set(x, "widthInPixels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1829,8 +1760,7 @@ object Tilemaps {
   }
   object ObjectLayer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       objects: js.Array[TiledObject],
       opacity: Double,
@@ -1844,32 +1774,23 @@ object Tilemaps {
       __obj.asInstanceOf[ObjectLayer]
     }
     
-    @scala.inline
-    implicit class ObjectLayerMutableBuilder[Self <: ObjectLayer] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectLayer](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjects(value: js.Array[TiledObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[TiledObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsVarargs(value: TiledObject*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: TiledObject*): Self = StObject.set(x, "objects", js.Array(value :_*))
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyTypes(value: js.Object): Self = StObject.set(x, "propertyTypes", value.asInstanceOf[js.Any])
+      inline def setPropertyTypes(value: js.Object): Self = StObject.set(x, "propertyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   

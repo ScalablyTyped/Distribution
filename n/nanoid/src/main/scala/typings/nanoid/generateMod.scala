@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object generateMod {
   
-  @scala.inline
-  def apply(alphabet: String, size: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(alphabet.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(alphabet: String, size: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(alphabet.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("nanoid/async/generate", JSImport.Namespace)
   @js.native

@@ -12,17 +12,14 @@ object anon {
   }
   object Cwd {
     
-    @scala.inline
-    def apply(cwd: String): Cwd = {
+    inline def apply(cwd: String): Cwd = {
       val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cwd]
     }
     
-    @scala.inline
-    implicit class CwdMutableBuilder[Self <: Cwd] (val x: Self) extends AnyVal {
+    extension [Self <: Cwd](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     }
   }
 }

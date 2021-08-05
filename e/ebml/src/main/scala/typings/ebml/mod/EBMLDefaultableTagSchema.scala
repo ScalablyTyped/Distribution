@@ -12,20 +12,16 @@ trait EBMLDefaultableTagSchema
 }
 object EBMLDefaultableTagSchema {
   
-  @scala.inline
-  def apply(description: String, level: Double, name: String, `type`: TagType): EBMLDefaultableTagSchema = {
+  inline def apply(description: String, level: Double, name: String, `type`: TagType): EBMLDefaultableTagSchema = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBMLDefaultableTagSchema]
   }
   
-  @scala.inline
-  implicit class EBMLDefaultableTagSchemaMutableBuilder[Self <: EBMLDefaultableTagSchema] (val x: Self) extends AnyVal {
+  extension [Self <: EBMLDefaultableTagSchema](x: Self) {
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

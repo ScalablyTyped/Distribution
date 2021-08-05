@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.XDocument")
 @js.native
-class XDocument protected ()
+/* private */ class XDocument ()
   extends StObject
      with typings.activexInfopath.InfoPath.XDocument {
   
@@ -50,7 +50,7 @@ class XDocument protected ()
   /* CompleteClass */
   override def ImportFile(bstrFileURI: String): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.XDocument_typekey")
   var InfoPathDotXDocument_typekey: typings.activexInfopath.InfoPath.XDocument = js.native
   

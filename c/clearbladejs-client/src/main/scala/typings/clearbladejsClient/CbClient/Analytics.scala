@@ -26,8 +26,7 @@ trait Analytics extends StObject {
 }
 object Analytics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     getCount: (QueryFilter, CbCallback) => Unit,
     getEventList: (QueryFilter, CbCallback) => Unit,
@@ -42,34 +41,24 @@ object Analytics {
     __obj.asInstanceOf[Analytics]
   }
   
-  @scala.inline
-  implicit class AnalyticsMutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
+  extension [Self <: Analytics](x: Self) {
     
-    @scala.inline
-    def setGetCount(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getCount", js.Any.fromFunction2(value))
+    inline def setGetCount(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getCount", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetEventList(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getEventList", js.Any.fromFunction2(value))
+    inline def setGetEventList(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getEventList", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetEventTotals(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getEventTotals", js.Any.fromFunction2(value))
+    inline def setGetEventTotals(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getEventTotals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetStorage(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getStorage", js.Any.fromFunction2(value))
+    inline def setGetStorage(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getStorage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUserEvents(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getUserEvents", js.Any.fromFunction2(value))
+    inline def setGetUserEvents(value: (QueryFilter, CbCallback) => Unit): Self = StObject.set(x, "getUserEvents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

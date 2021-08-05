@@ -21,19 +21,15 @@ trait DiagramItem extends StObject {
 }
 object DiagramItem {
   
-  @scala.inline
-  def apply(id: String, key: js.Any): DiagramItem = {
+  inline def apply(id: String, key: js.Any): DiagramItem = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramItem]
   }
   
-  @scala.inline
-  implicit class DiagramItemMutableBuilder[Self <: DiagramItem] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramItem](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

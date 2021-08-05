@@ -26,26 +26,20 @@ object ec2MetadataCredentialsMod {
   }
   object EC2MetadataCredentialsOptions {
     
-    @scala.inline
-    def apply(): EC2MetadataCredentialsOptions = {
+    inline def apply(): EC2MetadataCredentialsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EC2MetadataCredentialsOptions]
     }
     
-    @scala.inline
-    implicit class EC2MetadataCredentialsOptionsMutableBuilder[Self <: EC2MetadataCredentialsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EC2MetadataCredentialsOptions](x: Self) {
       
-      @scala.inline
-      def setHttpOptions(value: ConnectTimeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
+      inline def setHttpOptions(value: ConnectTimeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
+      inline def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     }
   }
 }

@@ -12,19 +12,15 @@ trait TfIdfTerm extends StObject {
 }
 object TfIdfTerm {
   
-  @scala.inline
-  def apply(term: String, tfidf: Double): TfIdfTerm = {
+  inline def apply(term: String, tfidf: Double): TfIdfTerm = {
     val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any], tfidf = tfidf.asInstanceOf[js.Any])
     __obj.asInstanceOf[TfIdfTerm]
   }
   
-  @scala.inline
-  implicit class TfIdfTermMutableBuilder[Self <: TfIdfTerm] (val x: Self) extends AnyVal {
+  extension [Self <: TfIdfTerm](x: Self) {
     
-    @scala.inline
-    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfidf(value: Double): Self = StObject.set(x, "tfidf", value.asInstanceOf[js.Any])
+    inline def setTfidf(value: Double): Self = StObject.set(x, "tfidf", value.asInstanceOf[js.Any])
   }
 }

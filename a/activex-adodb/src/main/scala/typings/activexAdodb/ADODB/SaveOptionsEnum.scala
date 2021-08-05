@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SaveOptionsEnum extends StObject
 object SaveOptionsEnum {
   
-  @scala.inline
-  def adSaveCreateNotExist: `1` = 1.asInstanceOf[`1`]
+  inline def adSaveCreateNotExist: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adSaveCreateOverWrite: `2` = 2.asInstanceOf[`2`]
+  inline def adSaveCreateOverWrite: `2` = 2.asInstanceOf[`2`]
 }

@@ -11,279 +11,239 @@ object asciiCatsStrings {
   sealed trait ^
     extends StObject
        with CatName
-  @scala.inline
-  def ^ : ^ = "^".asInstanceOf[^]
+  inline def ^ : ^ = "^".asInstanceOf[^]
   
   @js.native
   sealed trait angel
     extends StObject
        with CatName
-  @scala.inline
-  def angel: angel = "angel".asInstanceOf[angel]
+  inline def angel: angel = "angel".asInstanceOf[angel]
   
   @js.native
   sealed trait approaching
     extends StObject
        with CatName
-  @scala.inline
-  def approaching: approaching = "approaching".asInstanceOf[approaching]
+  inline def approaching: approaching = "approaching".asInstanceOf[approaching]
   
   @js.native
   sealed trait ass
     extends StObject
        with CatName
-  @scala.inline
-  def ass: ass = "ass".asInstanceOf[ass]
+  inline def ass: ass = "ass".asInstanceOf[ass]
   
   @js.native
   sealed trait awake
     extends StObject
        with CatName
-  @scala.inline
-  def awake: awake = "awake".asInstanceOf[awake]
+  inline def awake: awake = "awake".asInstanceOf[awake]
   
   @js.native
   sealed trait `big-cat`
     extends StObject
        with CatName
-  @scala.inline
-  def `big-cat`: `big-cat` = "big-cat".asInstanceOf[`big-cat`]
+  inline def `big-cat`: `big-cat` = "big-cat".asInstanceOf[`big-cat`]
   
   @js.native
   sealed trait box
     extends StObject
        with CatName
-  @scala.inline
-  def box: box = "box".asInstanceOf[box]
+  inline def box: box = "box".asInstanceOf[box]
   
   @js.native
   sealed trait bug
     extends StObject
        with CatName
-  @scala.inline
-  def bug: bug = "bug".asInstanceOf[bug]
+  inline def bug: bug = "bug".asInstanceOf[bug]
   
   @js.native
   sealed trait `cat-watch`
     extends StObject
        with CatName
-  @scala.inline
-  def `cat-watch`: `cat-watch` = "cat-watch".asInstanceOf[`cat-watch`]
+  inline def `cat-watch`: `cat-watch` = "cat-watch".asInstanceOf[`cat-watch`]
   
   @js.native
   sealed trait confused
     extends StObject
        with CatName
-  @scala.inline
-  def confused: confused = "confused".asInstanceOf[confused]
+  inline def confused: confused = "confused".asInstanceOf[confused]
   
   @js.native
   sealed trait couple
     extends StObject
        with CatName
-  @scala.inline
-  def couple: couple = "couple".asInstanceOf[couple]
+  inline def couple: couple = "couple".asInstanceOf[couple]
   
   @js.native
   sealed trait delighted
     extends StObject
        with CatName
-  @scala.inline
-  def delighted: delighted = "delighted".asInstanceOf[delighted]
+  inline def delighted: delighted = "delighted".asInstanceOf[delighted]
   
   @js.native
   sealed trait fat
     extends StObject
        with CatName
-  @scala.inline
-  def fat: fat = "fat".asInstanceOf[fat]
+  inline def fat: fat = "fat".asInstanceOf[fat]
   
   @js.native
   sealed trait `fish-bowl`
     extends StObject
        with CatName
-  @scala.inline
-  def `fish-bowl`: `fish-bowl` = "fish-bowl".asInstanceOf[`fish-bowl`]
+  inline def `fish-bowl`: `fish-bowl` = "fish-bowl".asInstanceOf[`fish-bowl`]
   
   @js.native
   sealed trait `got-dat-cat`
     extends StObject
        with CatName
-  @scala.inline
-  def `got-dat-cat`: `got-dat-cat` = "got-dat-cat".asInstanceOf[`got-dat-cat`]
+  inline def `got-dat-cat`: `got-dat-cat` = "got-dat-cat".asInstanceOf[`got-dat-cat`]
   
   @js.native
   sealed trait grumpy
     extends StObject
        with CatName
-  @scala.inline
-  def grumpy: grumpy = "grumpy".asInstanceOf[grumpy]
+  inline def grumpy: grumpy = "grumpy".asInstanceOf[grumpy]
   
   @js.native
   sealed trait halloween
     extends StObject
        with CatName
-  @scala.inline
-  def halloween: halloween = "halloween".asInstanceOf[halloween]
+  inline def halloween: halloween = "halloween".asInstanceOf[halloween]
   
   @js.native
   sealed trait hector
     extends StObject
        with CatName
-  @scala.inline
-  def hector: hector = "hector".asInstanceOf[hector]
+  inline def hector: hector = "hector".asInstanceOf[hector]
   
   @js.native
   sealed trait lazzzy
     extends StObject
        with CatName
-  @scala.inline
-  def lazzzy: lazzzy = "lazzzy".asInstanceOf[lazzzy]
+  inline def lazzzy: lazzzy = "lazzzy".asInstanceOf[lazzzy]
   
   @js.native
   sealed trait leroy
     extends StObject
        with CatName
-  @scala.inline
-  def leroy: leroy = "leroy".asInstanceOf[leroy]
+  inline def leroy: leroy = "leroy".asInstanceOf[leroy]
   
   @js.native
   sealed trait lion
     extends StObject
        with CatName
-  @scala.inline
-  def lion: lion = "lion".asInstanceOf[lion]
+  inline def lion: lion = "lion".asInstanceOf[lion]
   
   @js.native
   sealed trait longcat
     extends StObject
        with CatName
-  @scala.inline
-  def longcat: longcat = "longcat".asInstanceOf[longcat]
+  inline def longcat: longcat = "longcat".asInstanceOf[longcat]
   
   @js.native
   sealed trait lucky
     extends StObject
        with CatName
-  @scala.inline
-  def lucky: lucky = "lucky".asInstanceOf[lucky]
+  inline def lucky: lucky = "lucky".asInstanceOf[lucky]
   
   @js.native
   sealed trait mini
     extends StObject
        with CatName
-  @scala.inline
-  def mini: mini = "mini".asInstanceOf[mini]
+  inline def mini: mini = "mini".asInstanceOf[mini]
   
   @js.native
   sealed trait nyan
     extends StObject
        with CatName
-  @scala.inline
-  def nyan: nyan = "nyan".asInstanceOf[nyan]
+  inline def nyan: nyan = "nyan".asInstanceOf[nyan]
   
   @js.native
   sealed trait `nyancat-2`
     extends StObject
        with CatName
-  @scala.inline
-  def `nyancat-2`: `nyancat-2` = "nyancat-2".asInstanceOf[`nyancat-2`]
+  inline def `nyancat-2`: `nyancat-2` = "nyancat-2".asInstanceOf[`nyancat-2`]
   
   @js.native
   sealed trait octocat
     extends StObject
        with CatName
-  @scala.inline
-  def octocat: octocat = "octocat".asInstanceOf[octocat]
+  inline def octocat: octocat = "octocat".asInstanceOf[octocat]
   
   @js.native
   sealed trait panther
     extends StObject
        with CatName
-  @scala.inline
-  def panther: panther = "panther".asInstanceOf[panther]
+  inline def panther: panther = "panther".asInstanceOf[panther]
   
   @js.native
   sealed trait paws
     extends StObject
        with CatName
-  @scala.inline
-  def paws: paws = "paws".asInstanceOf[paws]
+  inline def paws: paws = "paws".asInstanceOf[paws]
   
   @js.native
   sealed trait playful
     extends StObject
        with CatName
-  @scala.inline
-  def playful: playful = "playful".asInstanceOf[playful]
+  inline def playful: playful = "playful".asInstanceOf[playful]
   
   @js.native
   sealed trait `ready-to-attack`
     extends StObject
        with CatName
-  @scala.inline
-  def `ready-to-attack`: `ready-to-attack` = "ready-to-attack".asInstanceOf[`ready-to-attack`]
+  inline def `ready-to-attack`: `ready-to-attack` = "ready-to-attack".asInstanceOf[`ready-to-attack`]
   
   @js.native
   sealed trait resting
     extends StObject
        with CatName
-  @scala.inline
-  def resting: resting = "resting".asInstanceOf[resting]
+  inline def resting: resting = "resting".asInstanceOf[resting]
   
   @js.native
   sealed trait sexy
     extends StObject
        with CatName
-  @scala.inline
-  def sexy: sexy = "sexy".asInstanceOf[sexy]
+  inline def sexy: sexy = "sexy".asInstanceOf[sexy]
   
   @js.native
   sealed trait sit
     extends StObject
        with CatName
-  @scala.inline
-  def sit: sit = "sit".asInstanceOf[sit]
+  inline def sit: sit = "sit".asInstanceOf[sit]
   
   @js.native
   sealed trait sleepy
     extends StObject
        with CatName
-  @scala.inline
-  def sleepy: sleepy = "sleepy".asInstanceOf[sleepy]
+  inline def sleepy: sleepy = "sleepy".asInstanceOf[sleepy]
   
   @js.native
   sealed trait tails
     extends StObject
        with CatName
-  @scala.inline
-  def tails: tails = "tails".asInstanceOf[tails]
+  inline def tails: tails = "tails".asInstanceOf[tails]
   
   @js.native
   sealed trait thoughtful
     extends StObject
        with CatName
-  @scala.inline
-  def thoughtful: thoughtful = "thoughtful".asInstanceOf[thoughtful]
+  inline def thoughtful: thoughtful = "thoughtful".asInstanceOf[thoughtful]
   
   @js.native
   sealed trait tiger
     extends StObject
        with CatName
-  @scala.inline
-  def tiger: tiger = "tiger".asInstanceOf[tiger]
+  inline def tiger: tiger = "tiger".asInstanceOf[tiger]
   
   @js.native
   sealed trait tree
     extends StObject
        with CatName
-  @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
+  inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
   sealed trait tubby
     extends StObject
        with CatName
-  @scala.inline
-  def tubby: tubby = "tubby".asInstanceOf[tubby]
+  inline def tubby: tubby = "tubby".asInstanceOf[tubby]
 }

@@ -34,8 +34,7 @@ object anon {
   }
   object AfterOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterOptions: SyncHook[Options, js.Any, js.Any],
       apply: SyncHook[WebpackAssetsManifest, js.Any, js.Any],
       customize: SyncWaterfallHook[Entry, AnyObject, WebpackAssetsManifest],
@@ -47,26 +46,19 @@ object anon {
       __obj.asInstanceOf[AfterOptions]
     }
     
-    @scala.inline
-    implicit class AfterOptionsMutableBuilder[Self <: AfterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AfterOptions](x: Self) {
       
-      @scala.inline
-      def setAfterOptions(value: SyncHook[Options, js.Any, js.Any]): Self = StObject.set(x, "afterOptions", value.asInstanceOf[js.Any])
+      inline def setAfterOptions(value: SyncHook[Options, js.Any, js.Any]): Self = StObject.set(x, "afterOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApply(value: SyncHook[WebpackAssetsManifest, js.Any, js.Any]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+      inline def setApply(value: SyncHook[WebpackAssetsManifest, js.Any, js.Any]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomize(value: SyncWaterfallHook[Entry, AnyObject, WebpackAssetsManifest]): Self = StObject.set(x, "customize", value.asInstanceOf[js.Any])
+      inline def setCustomize(value: SyncWaterfallHook[Entry, AnyObject, WebpackAssetsManifest]): Self = StObject.set(x, "customize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDone(value: SyncHook[WebpackAssetsManifest, AnyObject, js.Any]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: SyncHook[WebpackAssetsManifest, AnyObject, js.Any]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: SyncWaterfallHook[Options, js.Any, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: SyncWaterfallHook[Options, js.Any, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: SyncWaterfallHook[AnyObject, WebpackAssetsManifest, js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: SyncWaterfallHook[AnyObject, WebpackAssetsManifest, js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     }
   }
 }

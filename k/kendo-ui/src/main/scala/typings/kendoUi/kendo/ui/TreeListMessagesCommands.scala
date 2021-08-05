@@ -28,73 +28,51 @@ trait TreeListMessagesCommands extends StObject {
 }
 object TreeListMessagesCommands {
   
-  @scala.inline
-  def apply(): TreeListMessagesCommands = {
+  inline def apply(): TreeListMessagesCommands = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeListMessagesCommands]
   }
   
-  @scala.inline
-  implicit class TreeListMessagesCommandsMutableBuilder[Self <: TreeListMessagesCommands] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListMessagesCommands](x: Self) {
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setCanceledit(value: String): Self = StObject.set(x, "canceledit", value.asInstanceOf[js.Any])
+    inline def setCanceledit(value: String): Self = StObject.set(x, "canceledit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceleditUndefined: Self = StObject.set(x, "canceledit", js.undefined)
+    inline def setCanceleditUndefined: Self = StObject.set(x, "canceledit", js.undefined)
     
-    @scala.inline
-    def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setCreatechild(value: String): Self = StObject.set(x, "createchild", value.asInstanceOf[js.Any])
+    inline def setCreatechild(value: String): Self = StObject.set(x, "createchild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatechildUndefined: Self = StObject.set(x, "createchild", js.undefined)
+    inline def setCreatechildUndefined: Self = StObject.set(x, "createchild", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: String): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: String): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
-    @scala.inline
-    def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
+    inline def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
+    inline def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
     
-    @scala.inline
-    def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    inline def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
-    @scala.inline
-    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

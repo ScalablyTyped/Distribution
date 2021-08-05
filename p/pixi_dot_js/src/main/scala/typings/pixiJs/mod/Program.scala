@@ -40,8 +40,7 @@ object Program {
   @JSImport("pixi.js", "Program.defaultFragmentSrc")
   @js.native
   def defaultFragmentSrc: String = js.native
-  @scala.inline
-  def defaultFragmentSrc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFragmentSrc")(x.asInstanceOf[js.Any])
+  inline def defaultFragmentSrc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFragmentSrc")(x.asInstanceOf[js.Any])
   
   /**
     * The default vertex shader source
@@ -54,8 +53,7 @@ object Program {
   @JSImport("pixi.js", "Program.defaultVertexSrc")
   @js.native
   def defaultVertexSrc: String = js.native
-  @scala.inline
-  def defaultVertexSrc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertexSrc")(x.asInstanceOf[js.Any])
+  inline def defaultVertexSrc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertexSrc")(x.asInstanceOf[js.Any])
   
   /**
     * A short hand function to create a program based of a vertex and fragment shader
@@ -68,20 +66,12 @@ object Program {
     * @returns {PIXI.Program} an shiny new Pixi shader!
     */
   /* static member */
-  @scala.inline
-  def from(): typings.pixiJs.PIXI.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiJs.PIXI.Program]
-  @scala.inline
-  def from(vertexSrc: String): typings.pixiJs.PIXI.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Program]
-  @scala.inline
-  def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
-  @scala.inline
-  def from(vertexSrc: String, fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
-  @scala.inline
-  def from(vertexSrc: String, fragmentSrc: Unit, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
-  @scala.inline
-  def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
-  @scala.inline
-  def from(vertexSrc: Unit, fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
-  @scala.inline
-  def from(vertexSrc: Unit, fragmentSrc: Unit, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(): typings.pixiJs.PIXI.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(vertexSrc: String): typings.pixiJs.PIXI.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(vertexSrc: String, fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(vertexSrc: String, fragmentSrc: Unit, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(vertexSrc: Unit, fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
+  inline def from(vertexSrc: Unit, fragmentSrc: Unit, name: String): typings.pixiJs.PIXI.Program = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Program]
 }

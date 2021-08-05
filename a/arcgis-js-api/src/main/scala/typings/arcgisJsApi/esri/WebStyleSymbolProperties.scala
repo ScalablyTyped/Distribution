@@ -38,37 +38,27 @@ trait WebStyleSymbolProperties
 }
 object WebStyleSymbolProperties {
   
-  @scala.inline
-  def apply(): WebStyleSymbolProperties = {
+  inline def apply(): WebStyleSymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebStyleSymbolProperties]
   }
   
-  @scala.inline
-  implicit class WebStyleSymbolPropertiesMutableBuilder[Self <: WebStyleSymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WebStyleSymbolProperties](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    inline def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+    inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
-    @scala.inline
-    def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
+    inline def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
     
-    @scala.inline
-    def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
+    inline def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
+    inline def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ trait ShellString
      with ShellReturnValue
 object ShellString {
   
-  @scala.inline
-  def apply: ShellStringConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("ShellString").asInstanceOf[ShellStringConstructor]
+  inline def apply: ShellStringConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("ShellString").asInstanceOf[ShellStringConstructor]
 }

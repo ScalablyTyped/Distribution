@@ -24,31 +24,23 @@ trait SchemaManagedInstanceOverrideDiskOverride extends StObject {
 }
 object SchemaManagedInstanceOverrideDiskOverride {
   
-  @scala.inline
-  def apply(): SchemaManagedInstanceOverrideDiskOverride = {
+  inline def apply(): SchemaManagedInstanceOverrideDiskOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedInstanceOverrideDiskOverride]
   }
   
-  @scala.inline
-  implicit class SchemaManagedInstanceOverrideDiskOverrideMutableBuilder[Self <: SchemaManagedInstanceOverrideDiskOverride] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedInstanceOverrideDiskOverride](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

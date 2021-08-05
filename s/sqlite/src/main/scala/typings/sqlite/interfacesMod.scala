@@ -22,26 +22,20 @@ object interfacesMod {
     }
     object MigrationData {
       
-      @scala.inline
-      def apply(down: String, id: Double, name: String, up: String): MigrationData = {
+      inline def apply(down: String, id: Double, name: String, up: String): MigrationData = {
         val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
         __obj.asInstanceOf[MigrationData]
       }
       
-      @scala.inline
-      implicit class MigrationDataMutableBuilder[Self <: MigrationData] (val x: Self) extends AnyVal {
+      extension [Self <: MigrationData](x: Self) {
         
-        @scala.inline
-        def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+        inline def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUp(value: String): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+        inline def setUp(value: String): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       }
     }
     
@@ -55,23 +49,18 @@ object interfacesMod {
     }
     object MigrationFile {
       
-      @scala.inline
-      def apply(filename: String, id: Double, name: String): MigrationFile = {
+      inline def apply(filename: String, id: Double, name: String): MigrationFile = {
         val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[MigrationFile]
       }
       
-      @scala.inline
-      implicit class MigrationFileMutableBuilder[Self <: MigrationFile] (val x: Self) extends AnyVal {
+      extension [Self <: MigrationFile](x: Self) {
         
-        @scala.inline
-        def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -101,41 +90,30 @@ object interfacesMod {
     }
     object MigrationParams {
       
-      @scala.inline
-      def apply(): MigrationParams = {
+      inline def apply(): MigrationParams = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MigrationParams]
       }
       
-      @scala.inline
-      implicit class MigrationParamsMutableBuilder[Self <: MigrationParams] (val x: Self) extends AnyVal {
+      extension [Self <: MigrationParams](x: Self) {
         
-        @scala.inline
-        def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+        inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+        inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
         
-        @scala.inline
-        def setMigrations(value: js.Array[MigrationData]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
+        inline def setMigrations(value: js.Array[MigrationData]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMigrationsPath(value: String): Self = StObject.set(x, "migrationsPath", value.asInstanceOf[js.Any])
+        inline def setMigrationsPath(value: String): Self = StObject.set(x, "migrationsPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMigrationsPathUndefined: Self = StObject.set(x, "migrationsPath", js.undefined)
+        inline def setMigrationsPathUndefined: Self = StObject.set(x, "migrationsPath", js.undefined)
         
-        @scala.inline
-        def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
+        inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
         
-        @scala.inline
-        def setMigrationsVarargs(value: MigrationData*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+        inline def setMigrationsVarargs(value: MigrationData*): Self = StObject.set(x, "migrations", js.Array(value :_*))
         
-        @scala.inline
-        def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+        inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+        inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       }
     }
   }
@@ -175,26 +153,20 @@ object interfacesMod {
     }
     object Config {
       
-      @scala.inline
-      def apply(driver: js.Any, filename: String): Config = {
+      inline def apply(driver: js.Any, filename: String): Config = {
         val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+        inline def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       }
     }
     
@@ -206,14 +178,11 @@ object interfacesMod {
     trait ConfigureOption extends StObject
     object ConfigureOption {
       
-      @scala.inline
-      def busyTimeout: typings.sqlite.sqliteStrings.busyTimeout = "busyTimeout".asInstanceOf[typings.sqlite.sqliteStrings.busyTimeout]
+      inline def busyTimeout: typings.sqlite.sqliteStrings.busyTimeout = "busyTimeout".asInstanceOf[typings.sqlite.sqliteStrings.busyTimeout]
       
-      @scala.inline
-      def profile: typings.sqlite.sqliteStrings.profile = "profile".asInstanceOf[typings.sqlite.sqliteStrings.profile]
+      inline def profile: typings.sqlite.sqliteStrings.profile = "profile".asInstanceOf[typings.sqlite.sqliteStrings.profile]
       
-      @scala.inline
-      def trace: typings.sqlite.sqliteStrings.trace = "trace".asInstanceOf[typings.sqlite.sqliteStrings.trace]
+      inline def trace: typings.sqlite.sqliteStrings.trace = "trace".asInstanceOf[typings.sqlite.sqliteStrings.trace]
     }
     
     trait RunResult[Stmt /* <: Statement */] extends StObject {
@@ -245,29 +214,22 @@ object interfacesMod {
     }
     object RunResult {
       
-      @scala.inline
-      def apply[Stmt /* <: Statement */](stmt: typings.sqlite.statementMod.Statement[Stmt]): RunResult[Stmt] = {
+      inline def apply[Stmt /* <: Statement */](stmt: typings.sqlite.statementMod.Statement[Stmt]): RunResult[Stmt] = {
         val __obj = js.Dynamic.literal(stmt = stmt.asInstanceOf[js.Any])
         __obj.asInstanceOf[RunResult[Stmt]]
       }
       
-      @scala.inline
-      implicit class RunResultMutableBuilder[Self <: RunResult[?], Stmt /* <: Statement */] (val x: Self & RunResult[Stmt]) extends AnyVal {
+      extension [Self <: RunResult[?], Stmt /* <: Statement */](x: Self & RunResult[Stmt]) {
         
-        @scala.inline
-        def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+        inline def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+        inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
         
-        @scala.inline
-        def setLastID(value: Double): Self = StObject.set(x, "lastID", value.asInstanceOf[js.Any])
+        inline def setLastID(value: Double): Self = StObject.set(x, "lastID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastIDUndefined: Self = StObject.set(x, "lastID", js.undefined)
+        inline def setLastIDUndefined: Self = StObject.set(x, "lastID", js.undefined)
         
-        @scala.inline
-        def setStmt(value: typings.sqlite.statementMod.Statement[Stmt]): Self = StObject.set(x, "stmt", value.asInstanceOf[js.Any])
+        inline def setStmt(value: typings.sqlite.statementMod.Statement[Stmt]): Self = StObject.set(x, "stmt", value.asInstanceOf[js.Any])
       }
     }
     
@@ -279,26 +241,20 @@ object interfacesMod {
     }
     object SqlObj {
       
-      @scala.inline
-      def apply(sql: String): SqlObj = {
+      inline def apply(sql: String): SqlObj = {
         val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any])
         __obj.asInstanceOf[SqlObj]
       }
       
-      @scala.inline
-      implicit class SqlObjMutableBuilder[Self <: SqlObj] (val x: Self) extends AnyVal {
+      extension [Self <: SqlObj](x: Self) {
         
-        @scala.inline
-        def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+        inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
         
-        @scala.inline
-        def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+        inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       }
     }
     

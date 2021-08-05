@@ -73,13 +73,9 @@ object navigationItemMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(reflection: Reflection): NavigationItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any]).asInstanceOf[NavigationItem]
-    @scala.inline
-    def create(reflection: Reflection, parent: Unit, useShortNames: Boolean): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
-    @scala.inline
-    def create(reflection: Reflection, parent: NavigationItem): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
-    @scala.inline
-    def create(reflection: Reflection, parent: NavigationItem, useShortNames: Boolean): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
+    inline def create(reflection: Reflection): NavigationItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any]).asInstanceOf[NavigationItem]
+    inline def create(reflection: Reflection, parent: Unit, useShortNames: Boolean): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
+    inline def create(reflection: Reflection, parent: NavigationItem): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
+    inline def create(reflection: Reflection, parent: NavigationItem, useShortNames: Boolean): NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[NavigationItem]
   }
 }

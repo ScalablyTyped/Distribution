@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(items: js.Array[JustifiedLayoutItem]): JustifiedLayoutResult = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[JustifiedLayoutResult]
-  @scala.inline
-  def apply(items: js.Array[JustifiedLayoutItem], options: JustifiedLayoutOptions): JustifiedLayoutResult = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JustifiedLayoutResult]
+  inline def apply(items: js.Array[JustifiedLayoutItem]): JustifiedLayoutResult = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[JustifiedLayoutResult]
+  inline def apply(items: js.Array[JustifiedLayoutItem], options: JustifiedLayoutOptions): JustifiedLayoutResult = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JustifiedLayoutResult]
   
   @JSImport("justified-layout", JSImport.Namespace)
   @js.native
@@ -102,74 +100,52 @@ object mod {
   }
   object JustifiedLayoutOptions {
     
-    @scala.inline
-    def apply(): JustifiedLayoutOptions = {
+    inline def apply(): JustifiedLayoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JustifiedLayoutOptions]
     }
     
-    @scala.inline
-    implicit class JustifiedLayoutOptionsMutableBuilder[Self <: JustifiedLayoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JustifiedLayoutOptions](x: Self) {
       
-      @scala.inline
-      def setBoxSpacing(value: Double | Horizontal): Self = StObject.set(x, "boxSpacing", value.asInstanceOf[js.Any])
+      inline def setBoxSpacing(value: Double | Horizontal): Self = StObject.set(x, "boxSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxSpacingUndefined: Self = StObject.set(x, "boxSpacing", js.undefined)
+      inline def setBoxSpacingUndefined: Self = StObject.set(x, "boxSpacing", js.undefined)
       
-      @scala.inline
-      def setContainerPadding(value: Double | Bottom): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
+      inline def setContainerPadding(value: Double | Bottom): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
+      inline def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
+      inline def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
       
-      @scala.inline
-      def setForceAspectRatio(value: Boolean | Double): Self = StObject.set(x, "forceAspectRatio", value.asInstanceOf[js.Any])
+      inline def setForceAspectRatio(value: Boolean | Double): Self = StObject.set(x, "forceAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceAspectRatioUndefined: Self = StObject.set(x, "forceAspectRatio", js.undefined)
+      inline def setForceAspectRatioUndefined: Self = StObject.set(x, "forceAspectRatio", js.undefined)
       
-      @scala.inline
-      def setFullWidthBreakoutRowCadence(value: Boolean | Double): Self = StObject.set(x, "fullWidthBreakoutRowCadence", value.asInstanceOf[js.Any])
+      inline def setFullWidthBreakoutRowCadence(value: Boolean | Double): Self = StObject.set(x, "fullWidthBreakoutRowCadence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthBreakoutRowCadenceUndefined: Self = StObject.set(x, "fullWidthBreakoutRowCadence", js.undefined)
+      inline def setFullWidthBreakoutRowCadenceUndefined: Self = StObject.set(x, "fullWidthBreakoutRowCadence", js.undefined)
       
-      @scala.inline
-      def setMaxNumRows(value: Double): Self = StObject.set(x, "maxNumRows", value.asInstanceOf[js.Any])
+      inline def setMaxNumRows(value: Double): Self = StObject.set(x, "maxNumRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxNumRowsUndefined: Self = StObject.set(x, "maxNumRows", js.undefined)
+      inline def setMaxNumRowsUndefined: Self = StObject.set(x, "maxNumRows", js.undefined)
       
-      @scala.inline
-      def setShowWidows(value: Boolean): Self = StObject.set(x, "showWidows", value.asInstanceOf[js.Any])
+      inline def setShowWidows(value: Boolean): Self = StObject.set(x, "showWidows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowWidowsUndefined: Self = StObject.set(x, "showWidows", js.undefined)
+      inline def setShowWidowsUndefined: Self = StObject.set(x, "showWidows", js.undefined)
       
-      @scala.inline
-      def setTargetRowHeight(value: Double): Self = StObject.set(x, "targetRowHeight", value.asInstanceOf[js.Any])
+      inline def setTargetRowHeight(value: Double): Self = StObject.set(x, "targetRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRowHeightTolerance(value: Double): Self = StObject.set(x, "targetRowHeightTolerance", value.asInstanceOf[js.Any])
+      inline def setTargetRowHeightTolerance(value: Double): Self = StObject.set(x, "targetRowHeightTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRowHeightToleranceUndefined: Self = StObject.set(x, "targetRowHeightTolerance", js.undefined)
+      inline def setTargetRowHeightToleranceUndefined: Self = StObject.set(x, "targetRowHeightTolerance", js.undefined)
       
-      @scala.inline
-      def setTargetRowHeightUndefined: Self = StObject.set(x, "targetRowHeight", js.undefined)
+      inline def setTargetRowHeightUndefined: Self = StObject.set(x, "targetRowHeight", js.undefined)
       
-      @scala.inline
-      def setWidowLayoutStyle(value: left | justify | center): Self = StObject.set(x, "widowLayoutStyle", value.asInstanceOf[js.Any])
+      inline def setWidowLayoutStyle(value: left | justify | center): Self = StObject.set(x, "widowLayoutStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidowLayoutStyleUndefined: Self = StObject.set(x, "widowLayoutStyle", js.undefined)
+      inline def setWidowLayoutStyleUndefined: Self = StObject.set(x, "widowLayoutStyle", js.undefined)
     }
   }
   
@@ -195,26 +171,20 @@ object mod {
   }
   object JustifiedLayoutResult {
     
-    @scala.inline
-    def apply(boxes: js.Array[LayoutBox], containerHeight: Double, widowCount: Double): JustifiedLayoutResult = {
+    inline def apply(boxes: js.Array[LayoutBox], containerHeight: Double, widowCount: Double): JustifiedLayoutResult = {
       val __obj = js.Dynamic.literal(boxes = boxes.asInstanceOf[js.Any], containerHeight = containerHeight.asInstanceOf[js.Any], widowCount = widowCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[JustifiedLayoutResult]
     }
     
-    @scala.inline
-    implicit class JustifiedLayoutResultMutableBuilder[Self <: JustifiedLayoutResult] (val x: Self) extends AnyVal {
+    extension [Self <: JustifiedLayoutResult](x: Self) {
       
-      @scala.inline
-      def setBoxes(value: js.Array[LayoutBox]): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
+      inline def setBoxes(value: js.Array[LayoutBox]): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxesVarargs(value: LayoutBox*): Self = StObject.set(x, "boxes", js.Array(value :_*))
+      inline def setBoxesVarargs(value: LayoutBox*): Self = StObject.set(x, "boxes", js.Array(value :_*))
       
-      @scala.inline
-      def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
+      inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidowCount(value: Double): Self = StObject.set(x, "widowCount", value.asInstanceOf[js.Any])
+      inline def setWidowCount(value: Double): Self = StObject.set(x, "widowCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,29 +220,22 @@ object mod {
   }
   object LayoutBox {
     
-    @scala.inline
-    def apply(aspectRatio: Double, height: Double, left: Double, top: Double, width: Double): LayoutBox = {
+    inline def apply(aspectRatio: Double, height: Double, left: Double, top: Double, width: Double): LayoutBox = {
       val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutBox]
     }
     
-    @scala.inline
-    implicit class LayoutBoxMutableBuilder[Self <: LayoutBox] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutBox](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatepickerMode extends StObject
 object DatepickerMode {
   
-  @scala.inline
-  def day: typings.angularUiBootstrap.angularUiBootstrapStrings.day = "day".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.day]
+  inline def day: typings.angularUiBootstrap.angularUiBootstrapStrings.day = "day".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.day]
   
-  @scala.inline
-  def month: typings.angularUiBootstrap.angularUiBootstrapStrings.month = "month".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.month]
+  inline def month: typings.angularUiBootstrap.angularUiBootstrapStrings.month = "month".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.month]
   
-  @scala.inline
-  def year: typings.angularUiBootstrap.angularUiBootstrapStrings.year = "year".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.year]
+  inline def year: typings.angularUiBootstrap.angularUiBootstrapStrings.year = "year".asInstanceOf[typings.angularUiBootstrap.angularUiBootstrapStrings.year]
 }

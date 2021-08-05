@@ -21,28 +21,21 @@ trait SchemaBinaryClassificationMetrics extends StObject {
 }
 object SchemaBinaryClassificationMetrics {
   
-  @scala.inline
-  def apply(): SchemaBinaryClassificationMetrics = {
+  inline def apply(): SchemaBinaryClassificationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBinaryClassificationMetrics]
   }
   
-  @scala.inline
-  implicit class SchemaBinaryClassificationMetricsMutableBuilder[Self <: SchemaBinaryClassificationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBinaryClassificationMetrics](x: Self) {
     
-    @scala.inline
-    def setAggregateClassificationMetrics(value: SchemaAggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
+    inline def setAggregateClassificationMetrics(value: SchemaAggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
+    inline def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
     
-    @scala.inline
-    def setBinaryConfusionMatrixList(value: js.Array[SchemaBinaryConfusionMatrix]): Self = StObject.set(x, "binaryConfusionMatrixList", value.asInstanceOf[js.Any])
+    inline def setBinaryConfusionMatrixList(value: js.Array[SchemaBinaryConfusionMatrix]): Self = StObject.set(x, "binaryConfusionMatrixList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryConfusionMatrixListUndefined: Self = StObject.set(x, "binaryConfusionMatrixList", js.undefined)
+    inline def setBinaryConfusionMatrixListUndefined: Self = StObject.set(x, "binaryConfusionMatrixList", js.undefined)
     
-    @scala.inline
-    def setBinaryConfusionMatrixListVarargs(value: SchemaBinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value :_*))
+    inline def setBinaryConfusionMatrixListVarargs(value: SchemaBinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value :_*))
   }
 }

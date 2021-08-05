@@ -26,8 +26,7 @@ object friendshipRepositoryChangeResponseMod {
   }
   object FriendshipRepositoryChangeResponseFriendshipStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blocking: Boolean,
       followed_by: Boolean,
       following: Boolean,
@@ -41,32 +40,23 @@ object friendshipRepositoryChangeResponseMod {
       __obj.asInstanceOf[FriendshipRepositoryChangeResponseFriendshipStatus]
     }
     
-    @scala.inline
-    implicit class FriendshipRepositoryChangeResponseFriendshipStatusMutableBuilder[Self <: FriendshipRepositoryChangeResponseFriendshipStatus] (val x: Self) extends AnyVal {
+    extension [Self <: FriendshipRepositoryChangeResponseFriendshipStatus](x: Self) {
       
-      @scala.inline
-      def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
+      inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
+      inline def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+      inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+      inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
+      inline def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+      inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +68,16 @@ object friendshipRepositoryChangeResponseMod {
   }
   object FriendshipRepositoryChangeResponseRootObject {
     
-    @scala.inline
-    def apply(friendship_status: FriendshipRepositoryChangeResponseFriendshipStatus, status: String): FriendshipRepositoryChangeResponseRootObject = {
+    inline def apply(friendship_status: FriendshipRepositoryChangeResponseFriendshipStatus, status: String): FriendshipRepositoryChangeResponseRootObject = {
       val __obj = js.Dynamic.literal(friendship_status = friendship_status.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[FriendshipRepositoryChangeResponseRootObject]
     }
     
-    @scala.inline
-    implicit class FriendshipRepositoryChangeResponseRootObjectMutableBuilder[Self <: FriendshipRepositoryChangeResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: FriendshipRepositoryChangeResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setFriendship_status(value: FriendshipRepositoryChangeResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: FriendshipRepositoryChangeResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

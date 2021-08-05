@@ -94,8 +94,7 @@ trait XDriver
 }
 object XDriver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MajorVersion: Double,
     MinorVersion: Double,
     acceptsURL: String => Boolean,
@@ -111,28 +110,20 @@ object XDriver {
     __obj.asInstanceOf[XDriver]
   }
   
-  @scala.inline
-  implicit class XDriverMutableBuilder[Self <: XDriver] (val x: Self) extends AnyVal {
+  extension [Self <: XDriver](x: Self) {
     
-    @scala.inline
-    def setAcceptsURL(value: String => Boolean): Self = StObject.set(x, "acceptsURL", js.Any.fromFunction1(value))
+    inline def setAcceptsURL(value: String => Boolean): Self = StObject.set(x, "acceptsURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnect(value: (String, SeqEquiv[PropertyValue]) => XConnection): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
+    inline def setConnect(value: (String, SeqEquiv[PropertyValue]) => XConnection): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMajorVersion(value: () => Double): Self = StObject.set(x, "getMajorVersion", js.Any.fromFunction0(value))
+    inline def setGetMajorVersion(value: () => Double): Self = StObject.set(x, "getMajorVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinorVersion(value: () => Double): Self = StObject.set(x, "getMinorVersion", js.Any.fromFunction0(value))
+    inline def setGetMinorVersion(value: () => Double): Self = StObject.set(x, "getMinorVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyInfo(value: (String, SeqEquiv[PropertyValue]) => SafeArray[DriverPropertyInfo]): Self = StObject.set(x, "getPropertyInfo", js.Any.fromFunction2(value))
+    inline def setGetPropertyInfo(value: (String, SeqEquiv[PropertyValue]) => SafeArray[DriverPropertyInfo]): Self = StObject.set(x, "getPropertyInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMajorVersion(value: Double): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: Double): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersion(value: Double): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: Double): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
   }
 }

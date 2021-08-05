@@ -30,8 +30,7 @@ trait XAnimateTransform
 }
 object XAnimateTransform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     Accumulate: Boolean,
     Additive: Double,
@@ -73,10 +72,8 @@ object XAnimateTransform {
     __obj.asInstanceOf[XAnimateTransform]
   }
   
-  @scala.inline
-  implicit class XAnimateTransformMutableBuilder[Self <: XAnimateTransform] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimateTransform](x: Self) {
     
-    @scala.inline
-    def setTransformType(value: Double): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
+    inline def setTransformType(value: Double): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
   }
 }

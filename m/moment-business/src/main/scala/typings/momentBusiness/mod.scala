@@ -11,21 +11,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addWeekDays(moment: Moment, amount: Double): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeekDays")(moment.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  inline def addWeekDays(moment: Moment, amount: Double): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeekDays")(moment.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Moment]
   
-  @scala.inline
-  def isWeekDay(moment: Moment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekDay")(moment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWeekDay(moment: Moment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekDay")(moment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isWeekendDay(moment: Moment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekendDay")(moment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWeekendDay(moment: Moment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekendDay")(moment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def subtractWeekDays(moment: Moment, amount: Double): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractWeekDays")(moment.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  inline def subtractWeekDays(moment: Moment, amount: Double): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractWeekDays")(moment.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Moment]
   
-  @scala.inline
-  def weekDays(startMoment: Moment, endMoment: Moment): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDays")(startMoment.asInstanceOf[js.Any], endMoment.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def weekDays(startMoment: Moment, endMoment: Moment): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekDays")(startMoment.asInstanceOf[js.Any], endMoment.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def weekendDays(startMoment: Moment, endMoment: Moment): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekendDays")(startMoment.asInstanceOf[js.Any], endMoment.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def weekendDays(startMoment: Moment, endMoment: Moment): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekendDays")(startMoment.asInstanceOf[js.Any], endMoment.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -13,16 +13,13 @@ trait StartSessionRequest extends StObject {
 }
 object StartSessionRequest {
   
-  @scala.inline
-  def apply(LedgerName: LedgerName): StartSessionRequest = {
+  inline def apply(LedgerName: LedgerName): StartSessionRequest = {
     val __obj = js.Dynamic.literal(LedgerName = LedgerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSessionRequest]
   }
   
-  @scala.inline
-  implicit class StartSessionRequestMutableBuilder[Self <: StartSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSessionRequest](x: Self) {
     
-    @scala.inline
-    def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
+    inline def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
   }
 }

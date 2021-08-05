@@ -18,25 +18,19 @@ trait RestoreWindow extends StObject {
 }
 object RestoreWindow {
   
-  @scala.inline
-  def apply(): RestoreWindow = {
+  inline def apply(): RestoreWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreWindow]
   }
   
-  @scala.inline
-  implicit class RestoreWindowMutableBuilder[Self <: RestoreWindow] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreWindow](x: Self) {
     
-    @scala.inline
-    def setEarliestTime(value: TStamp): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
+    inline def setEarliestTime(value: TStamp): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarliestTimeUndefined: Self = StObject.set(x, "EarliestTime", js.undefined)
+    inline def setEarliestTimeUndefined: Self = StObject.set(x, "EarliestTime", js.undefined)
     
-    @scala.inline
-    def setLatestTime(value: TStamp): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
+    inline def setLatestTime(value: TStamp): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestTimeUndefined: Self = StObject.set(x, "LatestTime", js.undefined)
+    inline def setLatestTimeUndefined: Self = StObject.set(x, "LatestTime", js.undefined)
   }
 }

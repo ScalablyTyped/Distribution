@@ -18,7 +18,7 @@ object dbparentdataMod {
       * Check if it's an array
       * @param deletion
       */
-    var checkArray: js.Any = js.native
+    /* private */ var checkArray: js.Any = js.native
     
     val data: KeyValue = js.native
     

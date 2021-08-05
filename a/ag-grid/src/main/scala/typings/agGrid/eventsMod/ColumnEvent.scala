@@ -19,8 +19,7 @@ trait ColumnEvent
 }
 object ColumnEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     column: Column,
     columnApi: ColumnApi,
@@ -33,19 +32,14 @@ object ColumnEvent {
     __obj.asInstanceOf[ColumnEvent]
   }
   
-  @scala.inline
-  implicit class ColumnEventMutableBuilder[Self <: ColumnEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnEvent](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: ColumnEventType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ColumnEventType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

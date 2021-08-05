@@ -18,28 +18,21 @@ trait SegmentGroupList extends StObject {
 }
 object SegmentGroupList {
   
-  @scala.inline
-  def apply(): SegmentGroupList = {
+  inline def apply(): SegmentGroupList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentGroupList]
   }
   
-  @scala.inline
-  implicit class SegmentGroupListMutableBuilder[Self <: SegmentGroupList] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentGroupList](x: Self) {
     
-    @scala.inline
-    def setGroups(value: ListOfSegmentGroup): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: ListOfSegmentGroup): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: SegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: Include): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: Include): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
   }
 }

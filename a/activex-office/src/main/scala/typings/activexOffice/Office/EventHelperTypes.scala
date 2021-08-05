@@ -39,8 +39,7 @@ object EventHelperTypes {
   }
   object CommandBarButtonInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -54,32 +53,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[CommandBarButtonInvokeParameter]
     }
     
-    @scala.inline
-    implicit class CommandBarButtonInvokeParameterMutableBuilder[Self <: CommandBarButtonInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: CommandBarButtonInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +95,7 @@ object EventHelperTypes {
   }
   object CommandBarComboBoxInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -120,32 +109,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[CommandBarComboBoxInvokeParameter]
     }
     
-    @scala.inline
-    implicit class CommandBarComboBoxInvokeParameterMutableBuilder[Self <: CommandBarComboBoxInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: CommandBarComboBoxInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,8 +151,7 @@ object EventHelperTypes {
   }
   object CommandBarsInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -186,32 +165,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[CommandBarsInvokeParameter]
     }
     
-    @scala.inline
-    implicit class CommandBarsInvokeParameterMutableBuilder[Self <: CommandBarsInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: CommandBarsInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +207,7 @@ object EventHelperTypes {
   }
   object CustomTaskPaneInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -252,32 +221,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[CustomTaskPaneInvokeParameter]
     }
     
-    @scala.inline
-    implicit class CustomTaskPaneInvokeParameterMutableBuilder[Self <: CustomTaskPaneInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: CustomTaskPaneInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -303,8 +263,7 @@ object EventHelperTypes {
   }
   object CustomXMLPartInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -318,32 +277,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[CustomXMLPartInvokeParameter]
     }
     
-    @scala.inline
-    implicit class CustomXMLPartInvokeParameterMutableBuilder[Self <: CustomXMLPartInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: CustomXMLPartInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -369,8 +319,7 @@ object EventHelperTypes {
   }
   object CustomXMLPartsInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -384,32 +333,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[CustomXMLPartsInvokeParameter]
     }
     
-    @scala.inline
-    implicit class CustomXMLPartsInvokeParameterMutableBuilder[Self <: CustomXMLPartsInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: CustomXMLPartsInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
 }

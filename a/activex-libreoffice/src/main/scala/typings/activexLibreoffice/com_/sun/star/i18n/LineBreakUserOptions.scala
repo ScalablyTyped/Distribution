@@ -23,8 +23,7 @@ trait LineBreakUserOptions extends StObject {
 }
 object LineBreakUserOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowHyphenateEnglish: Boolean,
     allowPunctuationOutsideMargin: Boolean,
     applyForbiddenRules: Boolean,
@@ -35,22 +34,16 @@ object LineBreakUserOptions {
     __obj.asInstanceOf[LineBreakUserOptions]
   }
   
-  @scala.inline
-  implicit class LineBreakUserOptionsMutableBuilder[Self <: LineBreakUserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LineBreakUserOptions](x: Self) {
     
-    @scala.inline
-    def setAllowHyphenateEnglish(value: Boolean): Self = StObject.set(x, "allowHyphenateEnglish", value.asInstanceOf[js.Any])
+    inline def setAllowHyphenateEnglish(value: Boolean): Self = StObject.set(x, "allowHyphenateEnglish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPunctuationOutsideMargin(value: Boolean): Self = StObject.set(x, "allowPunctuationOutsideMargin", value.asInstanceOf[js.Any])
+    inline def setAllowPunctuationOutsideMargin(value: Boolean): Self = StObject.set(x, "allowPunctuationOutsideMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyForbiddenRules(value: Boolean): Self = StObject.set(x, "applyForbiddenRules", value.asInstanceOf[js.Any])
+    inline def setApplyForbiddenRules(value: Boolean): Self = StObject.set(x, "applyForbiddenRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForbiddenBeginCharacters(value: String): Self = StObject.set(x, "forbiddenBeginCharacters", value.asInstanceOf[js.Any])
+    inline def setForbiddenBeginCharacters(value: String): Self = StObject.set(x, "forbiddenBeginCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForbiddenEndCharacters(value: String): Self = StObject.set(x, "forbiddenEndCharacters", value.asInstanceOf[js.Any])
+    inline def setForbiddenEndCharacters(value: String): Self = StObject.set(x, "forbiddenEndCharacters", value.asInstanceOf[js.Any])
   }
 }

@@ -32,10 +32,8 @@ object traversableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTraversableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Traversable1[F], G: Traversable1[G]): TraversableComposition11[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTraversableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[TraversableComposition11[F, G]]
-  @scala.inline
-  def getTraversableComposition[F, G](F: Traversable[F], G: Traversable[G]): TraversableComposition[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTraversableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[TraversableComposition[F, G]]
+  inline def getTraversableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Traversable1[F], G: Traversable1[G]): TraversableComposition11[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTraversableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[TraversableComposition11[F, G]]
+  inline def getTraversableComposition[F, G](F: Traversable[F], G: Traversable[G]): TraversableComposition[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTraversableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[TraversableComposition[F, G]]
   
   @js.native
   trait PipeableTraverse1[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] extends StObject {
@@ -749,8 +747,7 @@ object traversableMod {
   }
   object TraversableComposition {
     
-    @scala.inline
-    def apply[F, G](
+    inline def apply[F, G](
       foldMap: Monoid[js.Any] => js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ /* fa */ js.Any, 
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
@@ -776,19 +773,16 @@ object traversableMod {
       __obj.asInstanceOf[TraversableComposition[F, G]]
     }
     
-    @scala.inline
-    implicit class TraversableCompositionMutableBuilder[Self <: TraversableComposition[?, ?], F, G] (val x: Self & (TraversableComposition[F, G])) extends AnyVal {
+    extension [Self <: TraversableComposition[?, ?], F, G](x: Self & (TraversableComposition[F, G])) {
       
-      @scala.inline
-      def setSequence(
+      inline def setSequence(
         value: Applicative[js.Any] => js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, HKT<H, A>>> */ /* fga */ js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<H, HKT<F, HKT<G, A>>> */ js.Any
             ]
       ): Self = StObject.set(x, "sequence", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTraverse(
+      inline def setTraverse(
         value: Applicative[js.Any] => js.Function2[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ /* fga */ js.Any, 
               /* f */ js.Function1[

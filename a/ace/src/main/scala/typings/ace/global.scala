@@ -571,8 +571,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def fromPoints(pos1: Position, pos2: Position): typings.ace.AceAjax.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pos1.asInstanceOf[js.Any], pos2.asInstanceOf[js.Any])).asInstanceOf[typings.ace.AceAjax.Range]
+      inline def fromPoints(pos1: Position, pos2: Position): typings.ace.AceAjax.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(pos1.asInstanceOf[js.Any], pos2.asInstanceOf[js.Any])).asInstanceOf[typings.ace.AceAjax.Range]
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -1530,6 +1529,5 @@ object global {
   @JSGlobal("ace")
   @js.native
   def ace: Ace = js.native
-  @scala.inline
-  def ace_=(x: Ace): Unit = js.Dynamic.global.updateDynamic("ace")(x.asInstanceOf[js.Any])
+  inline def ace_=(x: Ace): Unit = js.Dynamic.global.updateDynamic("ace")(x.asInstanceOf[js.Any])
 }

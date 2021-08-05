@@ -40,8 +40,7 @@ trait SceneViewConstraintsProperties
 }
 object SceneViewConstraintsProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -50,31 +49,22 @@ object SceneViewConstraintsProperties {
     __obj.asInstanceOf[SceneViewConstraintsProperties]
   }
   
-  @scala.inline
-  implicit class SceneViewConstraintsPropertiesMutableBuilder[Self <: SceneViewConstraintsProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewConstraintsProperties](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: SceneViewConstraintsAltitudeProperties): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: SceneViewConstraintsAltitudeProperties): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setClipDistance(value: SceneViewConstraintsClipDistanceProperties): Self = StObject.set(x, "clipDistance", value.asInstanceOf[js.Any])
+    inline def setClipDistance(value: SceneViewConstraintsClipDistanceProperties): Self = StObject.set(x, "clipDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipDistanceUndefined: Self = StObject.set(x, "clipDistance", js.undefined)
+    inline def setClipDistanceUndefined: Self = StObject.set(x, "clipDistance", js.undefined)
     
-    @scala.inline
-    def setCollision(value: SceneViewConstraintsCollision): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
+    inline def setCollision(value: SceneViewConstraintsCollision): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
+    inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
-    @scala.inline
-    def setTilt(value: SceneViewConstraintsTiltProperties): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+    inline def setTilt(value: SceneViewConstraintsTiltProperties): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
+    inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait EndUtcSec extends StObject {
 }
 object EndUtcSec {
   
-  @scala.inline
-  def apply(): EndUtcSec = {
+  inline def apply(): EndUtcSec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndUtcSec]
   }
   
-  @scala.inline
-  implicit class EndUtcSecMutableBuilder[Self <: EndUtcSec] (val x: Self) extends AnyVal {
+  extension [Self <: EndUtcSec](x: Self) {
     
-    @scala.inline
-    def setEndUtcSec(value: String): Self = StObject.set(x, "endUtcSec", value.asInstanceOf[js.Any])
+    inline def setEndUtcSec(value: String): Self = StObject.set(x, "endUtcSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUtcSecUndefined: Self = StObject.set(x, "endUtcSec", js.undefined)
+    inline def setEndUtcSecUndefined: Self = StObject.set(x, "endUtcSec", js.undefined)
     
-    @scala.inline
-    def setStartUtcSec(value: String): Self = StObject.set(x, "startUtcSec", value.asInstanceOf[js.Any])
+    inline def setStartUtcSec(value: String): Self = StObject.set(x, "startUtcSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUtcSecUndefined: Self = StObject.set(x, "startUtcSec", js.undefined)
+    inline def setStartUtcSecUndefined: Self = StObject.set(x, "startUtcSec", js.undefined)
   }
 }

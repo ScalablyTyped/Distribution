@@ -16,18 +16,15 @@ trait HandlebarsTemplatable extends StObject {
 }
 object HandlebarsTemplatable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     template: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String
   ): HandlebarsTemplatable = {
     val __obj = js.Dynamic.literal(template = js.Any.fromFunction2(template))
     __obj.asInstanceOf[HandlebarsTemplatable]
   }
   
-  @scala.inline
-  implicit class HandlebarsTemplatableMutableBuilder[Self <: HandlebarsTemplatable] (val x: Self) extends AnyVal {
+  extension [Self <: HandlebarsTemplatable](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplate(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
   }
 }

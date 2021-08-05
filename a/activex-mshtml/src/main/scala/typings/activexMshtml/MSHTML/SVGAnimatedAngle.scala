@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAnimatedAngle extends StObject {
   
-  @JSName("MSHTML.SVGAnimatedAngle_typekey")
+  /* private */ @JSName("MSHTML.SVGAnimatedAngle_typekey")
   var MSHTMLDotSVGAnimatedAngle_typekey: SVGAnimatedAngle
   
   var animVal: SVGAngle
@@ -15,23 +15,18 @@ trait SVGAnimatedAngle extends StObject {
 }
 object SVGAnimatedAngle {
   
-  @scala.inline
-  def apply(MSHTMLDotSVGAnimatedAngle_typekey: SVGAnimatedAngle, animVal: SVGAngle, baseVal: SVGAngle): SVGAnimatedAngle = {
+  inline def apply(MSHTMLDotSVGAnimatedAngle_typekey: SVGAnimatedAngle, animVal: SVGAngle, baseVal: SVGAngle): SVGAnimatedAngle = {
     val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.SVGAnimatedAngle_typekey")(MSHTMLDotSVGAnimatedAngle_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAnimatedAngle]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedAngleMutableBuilder[Self <: SVGAnimatedAngle] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedAngle](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: SVGAngle): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: SVGAngle): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: SVGAngle): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: SVGAngle): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedAngle_typekey(value: SVGAnimatedAngle): Self = StObject.set(x, "MSHTML.SVGAnimatedAngle_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGAnimatedAngle_typekey(value: SVGAnimatedAngle): Self = StObject.set(x, "MSHTML.SVGAnimatedAngle_typekey", value.asInstanceOf[js.Any])
   }
 }

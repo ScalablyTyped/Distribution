@@ -24,55 +24,39 @@ trait Desktop[TAsComponent /* <: ElementType[js.Any] */] extends StObject {
 }
 object Desktop {
   
-  @scala.inline
-  def apply[TAsComponent /* <: ElementType[js.Any] */](): Desktop[TAsComponent] = {
+  inline def apply[TAsComponent /* <: ElementType[js.Any] */](): Desktop[TAsComponent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Desktop[TAsComponent]]
   }
   
-  @scala.inline
-  implicit class DesktopMutableBuilder[Self <: Desktop[?], TAsComponent /* <: ElementType[js.Any] */] (val x: Self & Desktop[TAsComponent]) extends AnyVal {
+  extension [Self <: Desktop[?], TAsComponent /* <: ElementType[js.Any] */](x: Self & Desktop[TAsComponent]) {
     
-    @scala.inline
-    def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setDesktop(value: ColumnBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+    inline def setDesktop(value: ColumnBreakpointOptions): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+    inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
-    @scala.inline
-    def setFullhd(value: ColumnBreakpointOptions): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
+    inline def setFullhd(value: ColumnBreakpointOptions): Self = StObject.set(x, "fullhd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
+    inline def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
     
-    @scala.inline
-    def setMobile(value: ColumnBreakpointOptions): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: ColumnBreakpointOptions): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+    inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     
-    @scala.inline
-    def setTablet(value: ColumnBreakpointOptions): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: ColumnBreakpointOptions): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
+    inline def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
     
-    @scala.inline
-    def setTouch(value: ColumnBreakpointOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: ColumnBreakpointOptions): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+    inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
     
-    @scala.inline
-    def setWidescreen(value: ColumnBreakpointOptions): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
+    inline def setWidescreen(value: ColumnBreakpointOptions): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
+    inline def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
   }
 }

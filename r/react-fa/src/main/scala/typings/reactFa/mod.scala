@@ -63,11 +63,9 @@ object mod extends Shortcut {
   trait IconFlip extends StObject
   object IconFlip {
     
-    @scala.inline
-    def horizontal: typings.reactFa.reactFaStrings.horizontal = "horizontal".asInstanceOf[typings.reactFa.reactFaStrings.horizontal]
+    inline def horizontal: typings.reactFa.reactFaStrings.horizontal = "horizontal".asInstanceOf[typings.reactFa.reactFaStrings.horizontal]
     
-    @scala.inline
-    def vertical: typings.reactFa.reactFaStrings.vertical = "vertical".asInstanceOf[typings.reactFa.reactFaStrings.vertical]
+    inline def vertical: typings.reactFa.reactFaStrings.vertical = "vertical".asInstanceOf[typings.reactFa.reactFaStrings.vertical]
   }
   
   trait IconProps
@@ -98,71 +96,50 @@ object mod extends Shortcut {
   }
   object IconProps {
     
-    @scala.inline
-    def apply(name: String): IconProps = {
+    inline def apply(name: String): IconProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconProps]
     }
     
-    @scala.inline
-    implicit class IconPropsMutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: CustomComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: CustomComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
       
-      @scala.inline
-      def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
+      inline def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
+      inline def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
       
-      @scala.inline
-      def setFlip(value: IconFlip): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: IconFlip): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulse(value: Boolean): Self = StObject.set(x, "pulse", value.asInstanceOf[js.Any])
+      inline def setPulse(value: Boolean): Self = StObject.set(x, "pulse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
+      inline def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
       
-      @scala.inline
-      def setRotate(value: IconRotation): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: IconRotation): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setSize(value: IconSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: IconSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
+      inline def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
+      inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
       
-      @scala.inline
-      def setStack(value: IconStackSize): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: IconStackSize): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -178,26 +155,19 @@ object mod extends Shortcut {
   trait IconRotation extends StObject
   object IconRotation {
     
-    @scala.inline
-    def `135`: typings.reactFa.reactFaStrings.`135` = "135".asInstanceOf[typings.reactFa.reactFaStrings.`135`]
+    inline def `135`: typings.reactFa.reactFaStrings.`135` = "135".asInstanceOf[typings.reactFa.reactFaStrings.`135`]
     
-    @scala.inline
-    def `180`: typings.reactFa.reactFaStrings.`180` = "180".asInstanceOf[typings.reactFa.reactFaStrings.`180`]
+    inline def `180`: typings.reactFa.reactFaStrings.`180` = "180".asInstanceOf[typings.reactFa.reactFaStrings.`180`]
     
-    @scala.inline
-    def `225`: typings.reactFa.reactFaStrings.`225` = "225".asInstanceOf[typings.reactFa.reactFaStrings.`225`]
+    inline def `225`: typings.reactFa.reactFaStrings.`225` = "225".asInstanceOf[typings.reactFa.reactFaStrings.`225`]
     
-    @scala.inline
-    def `270`: typings.reactFa.reactFaStrings.`270` = "270".asInstanceOf[typings.reactFa.reactFaStrings.`270`]
+    inline def `270`: typings.reactFa.reactFaStrings.`270` = "270".asInstanceOf[typings.reactFa.reactFaStrings.`270`]
     
-    @scala.inline
-    def `315`: typings.reactFa.reactFaStrings.`315` = "315".asInstanceOf[typings.reactFa.reactFaStrings.`315`]
+    inline def `315`: typings.reactFa.reactFaStrings.`315` = "315".asInstanceOf[typings.reactFa.reactFaStrings.`315`]
     
-    @scala.inline
-    def `45`: typings.reactFa.reactFaStrings.`45` = "45".asInstanceOf[typings.reactFa.reactFaStrings.`45`]
+    inline def `45`: typings.reactFa.reactFaStrings.`45` = "45".asInstanceOf[typings.reactFa.reactFaStrings.`45`]
     
-    @scala.inline
-    def `90`: typings.reactFa.reactFaStrings.`90` = "90".asInstanceOf[typings.reactFa.reactFaStrings.`90`]
+    inline def `90`: typings.reactFa.reactFaStrings.`90` = "90".asInstanceOf[typings.reactFa.reactFaStrings.`90`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -210,20 +180,15 @@ object mod extends Shortcut {
   trait IconSize extends StObject
   object IconSize {
     
-    @scala.inline
-    def `2x`: typings.reactFa.reactFaStrings.`2x` = "2x".asInstanceOf[typings.reactFa.reactFaStrings.`2x`]
+    inline def `2x`: typings.reactFa.reactFaStrings.`2x` = "2x".asInstanceOf[typings.reactFa.reactFaStrings.`2x`]
     
-    @scala.inline
-    def `3x`: typings.reactFa.reactFaStrings.`3x` = "3x".asInstanceOf[typings.reactFa.reactFaStrings.`3x`]
+    inline def `3x`: typings.reactFa.reactFaStrings.`3x` = "3x".asInstanceOf[typings.reactFa.reactFaStrings.`3x`]
     
-    @scala.inline
-    def `4x`: typings.reactFa.reactFaStrings.`4x` = "4x".asInstanceOf[typings.reactFa.reactFaStrings.`4x`]
+    inline def `4x`: typings.reactFa.reactFaStrings.`4x` = "4x".asInstanceOf[typings.reactFa.reactFaStrings.`4x`]
     
-    @scala.inline
-    def `5x`: typings.reactFa.reactFaStrings.`5x` = "5x".asInstanceOf[typings.reactFa.reactFaStrings.`5x`]
+    inline def `5x`: typings.reactFa.reactFaStrings.`5x` = "5x".asInstanceOf[typings.reactFa.reactFaStrings.`5x`]
     
-    @scala.inline
-    def lg: typings.reactFa.reactFaStrings.lg = "lg".asInstanceOf[typings.reactFa.reactFaStrings.lg]
+    inline def lg: typings.reactFa.reactFaStrings.lg = "lg".asInstanceOf[typings.reactFa.reactFaStrings.lg]
   }
   
   trait IconStackProps
@@ -238,29 +203,22 @@ object mod extends Shortcut {
   }
   object IconStackProps {
     
-    @scala.inline
-    def apply(): IconStackProps = {
+    inline def apply(): IconStackProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconStackProps]
     }
     
-    @scala.inline
-    implicit class IconStackPropsMutableBuilder[Self <: IconStackProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconStackProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: IconSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: IconSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -271,11 +229,9 @@ object mod extends Shortcut {
   trait IconStackSize extends StObject
   object IconStackSize {
     
-    @scala.inline
-    def `1x`: typings.reactFa.reactFaStrings.`1x` = "1x".asInstanceOf[typings.reactFa.reactFaStrings.`1x`]
+    inline def `1x`: typings.reactFa.reactFaStrings.`1x` = "1x".asInstanceOf[typings.reactFa.reactFaStrings.`1x`]
     
-    @scala.inline
-    def `2x`: typings.reactFa.reactFaStrings.`2x` = "2x".asInstanceOf[typings.reactFa.reactFaStrings.`2x`]
+    inline def `2x`: typings.reactFa.reactFaStrings.`2x` = "2x".asInstanceOf[typings.reactFa.reactFaStrings.`2x`]
   }
   
   // fake intermediate interface to remove typing on size, as the typing
@@ -289,20 +245,16 @@ object mod extends Shortcut {
   }
   object SizeOverrideHTMLProps {
     
-    @scala.inline
-    def apply[T](): SizeOverrideHTMLProps[T] = {
+    inline def apply[T](): SizeOverrideHTMLProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SizeOverrideHTMLProps[T]]
     }
     
-    @scala.inline
-    implicit class SizeOverrideHTMLPropsMutableBuilder[Self <: SizeOverrideHTMLProps[?], T] (val x: Self & SizeOverrideHTMLProps[T]) extends AnyVal {
+    extension [Self <: SizeOverrideHTMLProps[?], T](x: Self & SizeOverrideHTMLProps[T]) {
       
-      @scala.inline
-      def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -18,25 +18,19 @@ trait StatusDetailFilters extends StObject {
 }
 object StatusDetailFilters {
   
-  @scala.inline
-  def apply(): StatusDetailFilters = {
+  inline def apply(): StatusDetailFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatusDetailFilters]
   }
   
-  @scala.inline
-  implicit class StatusDetailFiltersMutableBuilder[Self <: StatusDetailFilters] (val x: Self) extends AnyVal {
+  extension [Self <: StatusDetailFilters](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setMemberAccountRuleStatus(value: MemberAccountRuleStatus): Self = StObject.set(x, "MemberAccountRuleStatus", value.asInstanceOf[js.Any])
+    inline def setMemberAccountRuleStatus(value: MemberAccountRuleStatus): Self = StObject.set(x, "MemberAccountRuleStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberAccountRuleStatusUndefined: Self = StObject.set(x, "MemberAccountRuleStatus", js.undefined)
+    inline def setMemberAccountRuleStatusUndefined: Self = StObject.set(x, "MemberAccountRuleStatus", js.undefined)
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetaProjectionOperators extends StObject
 object MetaProjectionOperators {
   
-  @scala.inline
-  def indexKey: typings.mongodb.mongodbStrings.indexKey = "indexKey".asInstanceOf[typings.mongodb.mongodbStrings.indexKey]
+  inline def indexKey: typings.mongodb.mongodbStrings.indexKey = "indexKey".asInstanceOf[typings.mongodb.mongodbStrings.indexKey]
   
-  @scala.inline
-  def searchHighlights: typings.mongodb.mongodbStrings.searchHighlights = "searchHighlights".asInstanceOf[typings.mongodb.mongodbStrings.searchHighlights]
+  inline def searchHighlights: typings.mongodb.mongodbStrings.searchHighlights = "searchHighlights".asInstanceOf[typings.mongodb.mongodbStrings.searchHighlights]
   
-  @scala.inline
-  def searchScore: typings.mongodb.mongodbStrings.searchScore = "searchScore".asInstanceOf[typings.mongodb.mongodbStrings.searchScore]
+  inline def searchScore: typings.mongodb.mongodbStrings.searchScore = "searchScore".asInstanceOf[typings.mongodb.mongodbStrings.searchScore]
   
-  @scala.inline
-  def textScore: typings.mongodb.mongodbStrings.textScore = "textScore".asInstanceOf[typings.mongodb.mongodbStrings.textScore]
+  inline def textScore: typings.mongodb.mongodbStrings.textScore = "textScore".asInstanceOf[typings.mongodb.mongodbStrings.textScore]
 }

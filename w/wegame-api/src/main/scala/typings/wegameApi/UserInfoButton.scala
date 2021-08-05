@@ -11,8 +11,7 @@ trait UserInfoButton
      with CreatedButton
 object UserInfoButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     hide: () => Unit,
     image: String,

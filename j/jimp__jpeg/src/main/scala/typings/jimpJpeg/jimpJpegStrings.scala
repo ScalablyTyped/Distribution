@@ -8,6 +8,5 @@ object jimpJpegStrings {
   
   @js.native
   sealed trait imageSlashjpeg extends StObject
-  @scala.inline
-  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
+  inline def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
 }

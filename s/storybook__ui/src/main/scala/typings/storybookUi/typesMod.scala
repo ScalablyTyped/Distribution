@@ -31,8 +31,7 @@ object typesMod {
   }
   object ApplyWrappersProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       id: String,
       storyId: String,
@@ -43,26 +42,19 @@ object typesMod {
       __obj.asInstanceOf[ApplyWrappersProps]
     }
     
-    @scala.inline
-    implicit class ApplyWrappersPropsMutableBuilder[Self <: ApplyWrappersProps] (val x: Self) extends AnyVal {
+    extension [Self <: ApplyWrappersProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrappers(value: js.Array[Wrapper]): Self = StObject.set(x, "wrappers", value.asInstanceOf[js.Any])
+      inline def setWrappers(value: js.Array[Wrapper]): Self = StObject.set(x, "wrappers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrappersVarargs(value: Wrapper*): Self = StObject.set(x, "wrappers", js.Array(value :_*))
+      inline def setWrappersVarargs(value: Wrapper*): Self = StObject.set(x, "wrappers", js.Array(value :_*))
     }
   }
   
@@ -96,8 +88,7 @@ object typesMod {
   }
   object FramesRendererProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseUrl: String,
       queryParams: QueryParams,
       refId: String,
@@ -111,32 +102,23 @@ object typesMod {
       __obj.asInstanceOf[FramesRendererProps]
     }
     
-    @scala.inline
-    implicit class FramesRendererPropsMutableBuilder[Self <: FramesRendererProps] (val x: Self) extends AnyVal {
+    extension [Self <: FramesRendererProps](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      inline def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory(value: Story | Group): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+      inline def setStory(value: Story | Group): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,8 +154,7 @@ object typesMod {
   }
   object PreviewProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       api: API,
       baseUrl: String,
       description: String,
@@ -192,55 +173,39 @@ object typesMod {
       __obj.asInstanceOf[PreviewProps]
     }
     
-    @scala.inline
-    implicit class PreviewPropsMutableBuilder[Self <: PreviewProps] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewProps](x: Self) {
       
-      @scala.inline
-      def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCanvas(
+      inline def setCustomCanvas(
         value: (/* storyId */ String, /* viewMode */ typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String], /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
       ): Self = StObject.set(x, "customCanvas", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setCustomCanvasUndefined: Self = StObject.set(x, "customCanvas", js.undefined)
+      inline def setCustomCanvasUndefined: Self = StObject.set(x, "customCanvas", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+      inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: IsFullscreenIsToolshown): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: IsFullscreenIsToolshown): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      inline def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory(value: Group | Story): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+      inline def setStory(value: Group | Story): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithLoader(value: Boolean): Self = StObject.set(x, "withLoader", value.asInstanceOf[js.Any])
+      inline def setWithLoader(value: Boolean): Self = StObject.set(x, "withLoader", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,17 +217,14 @@ object typesMod {
   }
   object Wrapper {
     
-    @scala.inline
-    def apply(render: FunctionComponent[WrapperProps]): Wrapper = {
+    inline def apply(render: FunctionComponent[WrapperProps]): Wrapper = {
       val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
       __obj.asInstanceOf[Wrapper]
     }
     
-    @scala.inline
-    implicit class WrapperMutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
+    extension [Self <: Wrapper](x: Self) {
       
-      @scala.inline
-      def setRender(value: FunctionComponent[WrapperProps]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: FunctionComponent[WrapperProps]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
   
@@ -280,32 +242,24 @@ object typesMod {
   }
   object WrapperProps {
     
-    @scala.inline
-    def apply(active: Boolean, id: String, index: Double, storyId: String): WrapperProps = {
+    inline def apply(active: Boolean, id: String, index: Double, storyId: String): WrapperProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperProps]
     }
     
-    @scala.inline
-    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
     }
   }
 }

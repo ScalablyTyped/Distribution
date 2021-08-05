@@ -17,24 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcessIntegrityLevel extends StObject
 object ProcessIntegrityLevel {
   
-  @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
+  inline def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   
-  @scala.inline
-  def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
+  inline def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
   
-  @scala.inline
-  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
+  inline def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
   
-  @scala.inline
-  def system: typings.microsoftGraph.microsoftGraphStrings.system = "system".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.system]
+  inline def system: typings.microsoftGraph.microsoftGraphStrings.system = "system".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.system]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def untrusted: typings.microsoftGraph.microsoftGraphStrings.untrusted = "untrusted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.untrusted]
+  inline def untrusted: typings.microsoftGraph.microsoftGraphStrings.untrusted = "untrusted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.untrusted]
 }

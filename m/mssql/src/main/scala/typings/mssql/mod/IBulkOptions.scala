@@ -20,37 +20,27 @@ trait IBulkOptions extends StObject {
 }
 object IBulkOptions {
   
-  @scala.inline
-  def apply(): IBulkOptions = {
+  inline def apply(): IBulkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBulkOptions]
   }
   
-  @scala.inline
-  implicit class IBulkOptionsMutableBuilder[Self <: IBulkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IBulkOptions](x: Self) {
     
-    @scala.inline
-    def setCheckConstraints(value: Boolean): Self = StObject.set(x, "checkConstraints", value.asInstanceOf[js.Any])
+    inline def setCheckConstraints(value: Boolean): Self = StObject.set(x, "checkConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckConstraintsUndefined: Self = StObject.set(x, "checkConstraints", js.undefined)
+    inline def setCheckConstraintsUndefined: Self = StObject.set(x, "checkConstraints", js.undefined)
     
-    @scala.inline
-    def setFireTriggers(value: Boolean): Self = StObject.set(x, "fireTriggers", value.asInstanceOf[js.Any])
+    inline def setFireTriggers(value: Boolean): Self = StObject.set(x, "fireTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFireTriggersUndefined: Self = StObject.set(x, "fireTriggers", js.undefined)
+    inline def setFireTriggersUndefined: Self = StObject.set(x, "fireTriggers", js.undefined)
     
-    @scala.inline
-    def setKeepNulls(value: Boolean): Self = StObject.set(x, "keepNulls", value.asInstanceOf[js.Any])
+    inline def setKeepNulls(value: Boolean): Self = StObject.set(x, "keepNulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepNullsUndefined: Self = StObject.set(x, "keepNulls", js.undefined)
+    inline def setKeepNullsUndefined: Self = StObject.set(x, "keepNulls", js.undefined)
     
-    @scala.inline
-    def setTableLock(value: Boolean): Self = StObject.set(x, "tableLock", value.asInstanceOf[js.Any])
+    inline def setTableLock(value: Boolean): Self = StObject.set(x, "tableLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableLockUndefined: Self = StObject.set(x, "tableLock", js.undefined)
+    inline def setTableLockUndefined: Self = StObject.set(x, "tableLock", js.undefined)
   }
 }

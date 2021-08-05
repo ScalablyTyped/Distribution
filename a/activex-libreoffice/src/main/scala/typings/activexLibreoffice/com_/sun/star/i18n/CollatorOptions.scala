@@ -19,16 +19,12 @@ object CollatorOptions {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CollatorOptions_IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
+    inline def CollatorOptions_IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CollatorOptions_IGNORE_CASE_ACCENT: `8` = 8.asInstanceOf[`8`]
+    inline def CollatorOptions_IGNORE_CASE_ACCENT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def CollatorOptions_IGNORE_KANA: `2` = 2.asInstanceOf[`2`]
+    inline def CollatorOptions_IGNORE_KANA: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CollatorOptions_IGNORE_WIDTH: `4` = 4.asInstanceOf[`4`]
+    inline def CollatorOptions_IGNORE_WIDTH: `4` = 4.asInstanceOf[`4`]
   }
 }

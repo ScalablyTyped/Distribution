@@ -28,25 +28,19 @@ trait CapabilityStatementMessagingEndpoint
 }
 object CapabilityStatementMessagingEndpoint {
   
-  @scala.inline
-  def apply(address: uri, protocol: Coding): CapabilityStatementMessagingEndpoint = {
+  inline def apply(address: uri, protocol: Coding): CapabilityStatementMessagingEndpoint = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementMessagingEndpoint]
   }
   
-  @scala.inline
-  implicit class CapabilityStatementMessagingEndpointMutableBuilder[Self <: CapabilityStatementMessagingEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilityStatementMessagingEndpoint](x: Self) {
     
-    @scala.inline
-    def setAddress(value: uri): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: uri): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: Coding): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Coding): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_address(value: Element): Self = StObject.set(x, "_address", value.asInstanceOf[js.Any])
+    inline def set_address(value: Element): Self = StObject.set(x, "_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_addressUndefined: Self = StObject.set(x, "_address", js.undefined)
+    inline def set_addressUndefined: Self = StObject.set(x, "_address", js.undefined)
   }
 }

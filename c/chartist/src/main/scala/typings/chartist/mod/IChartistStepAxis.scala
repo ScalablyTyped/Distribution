@@ -16,34 +16,25 @@ trait IChartistStepAxis
 }
 object IChartistStepAxis {
   
-  @scala.inline
-  def apply(): IChartistStepAxis = {
+  inline def apply(): IChartistStepAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChartistStepAxis]
   }
   
-  @scala.inline
-  implicit class IChartistStepAxisMutableBuilder[Self <: IChartistStepAxis] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistStepAxis](x: Self) {
     
-    @scala.inline
-    def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+    inline def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+    inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
     
-    @scala.inline
-    def setTicks(value: js.Array[Double | String]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: js.Array[Double | String]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    @scala.inline
-    def setTicksVarargs(value: (Double | String)*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: (Double | String)*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: IStepAxisStatic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IStepAxisStatic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

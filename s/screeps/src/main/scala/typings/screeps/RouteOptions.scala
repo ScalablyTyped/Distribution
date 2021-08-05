@@ -13,16 +13,13 @@ trait RouteOptions extends StObject {
 }
 object RouteOptions {
   
-  @scala.inline
-  def apply(routeCallback: (String, String) => js.Any): RouteOptions = {
+  inline def apply(routeCallback: (String, String) => js.Any): RouteOptions = {
     val __obj = js.Dynamic.literal(routeCallback = js.Any.fromFunction2(routeCallback))
     __obj.asInstanceOf[RouteOptions]
   }
   
-  @scala.inline
-  implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptions](x: Self) {
     
-    @scala.inline
-    def setRouteCallback(value: (String, String) => js.Any): Self = StObject.set(x, "routeCallback", js.Any.fromFunction2(value))
+    inline def setRouteCallback(value: (String, String) => js.Any): Self = StObject.set(x, "routeCallback", js.Any.fromFunction2(value))
   }
 }

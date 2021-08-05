@@ -16,34 +16,25 @@ trait DistrictSearchOptions extends StObject {
 }
 object DistrictSearchOptions {
   
-  @scala.inline
-  def apply(level: String): DistrictSearchOptions = {
+  inline def apply(level: String): DistrictSearchOptions = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistrictSearchOptions]
   }
   
-  @scala.inline
-  implicit class DistrictSearchOptionsMutableBuilder[Self <: DistrictSearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DistrictSearchOptions](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowbiz(value: Boolean): Self = StObject.set(x, "showbiz", value.asInstanceOf[js.Any])
+    inline def setShowbiz(value: Boolean): Self = StObject.set(x, "showbiz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowbizUndefined: Self = StObject.set(x, "showbiz", js.undefined)
+    inline def setShowbizUndefined: Self = StObject.set(x, "showbiz", js.undefined)
     
-    @scala.inline
-    def setSubdistrict(value: Double): Self = StObject.set(x, "subdistrict", value.asInstanceOf[js.Any])
+    inline def setSubdistrict(value: Double): Self = StObject.set(x, "subdistrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdistrictUndefined: Self = StObject.set(x, "subdistrict", js.undefined)
+    inline def setSubdistrictUndefined: Self = StObject.set(x, "subdistrict", js.undefined)
   }
 }

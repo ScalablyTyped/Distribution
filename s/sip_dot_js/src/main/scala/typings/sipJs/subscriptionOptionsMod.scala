@@ -13,20 +13,16 @@ object subscriptionOptionsMod {
   }
   object SubscriptionOptions {
     
-    @scala.inline
-    def apply(): SubscriptionOptions = {
+    inline def apply(): SubscriptionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    @scala.inline
-    implicit class SubscriptionOptionsMutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionOptions](x: Self) {
       
-      @scala.inline
-      def setDelegate(value: SubscriptionDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: SubscriptionDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+      inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     }
   }
 }

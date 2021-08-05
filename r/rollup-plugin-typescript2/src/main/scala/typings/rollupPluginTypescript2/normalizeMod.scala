@@ -10,6 +10,5 @@ object normalizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalize(fileName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(fileName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalize(fileName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(fileName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

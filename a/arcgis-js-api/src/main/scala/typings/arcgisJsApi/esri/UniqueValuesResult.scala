@@ -19,8 +19,7 @@ trait UniqueValuesResult
 }
 object UniqueValuesResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,13 +29,10 @@ object UniqueValuesResult {
     __obj.asInstanceOf[UniqueValuesResult]
   }
   
-  @scala.inline
-  implicit class UniqueValuesResultMutableBuilder[Self <: UniqueValuesResult] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueValuesResult](x: Self) {
     
-    @scala.inline
-    def setUniqueValueInfos(value: js.Array[UniqueValuesResultUniqueValueInfos]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
+    inline def setUniqueValueInfos(value: js.Array[UniqueValuesResultUniqueValueInfos]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueValueInfosVarargs(value: UniqueValuesResultUniqueValueInfos*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
+    inline def setUniqueValueInfosVarargs(value: UniqueValuesResultUniqueValueInfos*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
   }
 }

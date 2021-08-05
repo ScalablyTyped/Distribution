@@ -48,61 +48,43 @@ trait DescribeOrderableDBInstanceOptionsMessage extends StObject {
 }
 object DescribeOrderableDBInstanceOptionsMessage {
   
-  @scala.inline
-  def apply(Engine: String): DescribeOrderableDBInstanceOptionsMessage = {
+  inline def apply(Engine: String): DescribeOrderableDBInstanceOptionsMessage = {
     val __obj = js.Dynamic.literal(Engine = Engine.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrderableDBInstanceOptionsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeOrderableDBInstanceOptionsMessageMutableBuilder[Self <: DescribeOrderableDBInstanceOptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrderableDBInstanceOptionsMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
+    inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceClassUndefined: Self = StObject.set(x, "DBInstanceClass", js.undefined)
+    inline def setDBInstanceClassUndefined: Self = StObject.set(x, "DBInstanceClass", js.undefined)
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setLicenseModel(value: String): Self = StObject.set(x, "LicenseModel", value.asInstanceOf[js.Any])
+    inline def setLicenseModel(value: String): Self = StObject.set(x, "LicenseModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseModelUndefined: Self = StObject.set(x, "LicenseModel", js.undefined)
+    inline def setLicenseModelUndefined: Self = StObject.set(x, "LicenseModel", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setVpc(value: BooleanOptional): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
+    inline def setVpc(value: BooleanOptional): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
+    inline def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
   }
 }

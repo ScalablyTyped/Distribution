@@ -30,14 +30,12 @@ object avatarAvatarMod {
     @JSImport("wix-ui-core/dist/src/components/avatar/avatar", "Avatar.defaultProps")
     @js.native
     def defaultProps: Placeholder = js.native
-    @scala.inline
-    def defaultProps_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/avatar/avatar", "Avatar.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/dist/src/components/avatar/avatar", "AvatarComponent")
@@ -89,14 +87,12 @@ object avatarAvatarMod {
     @JSImport("wix-ui-core/dist/src/components/avatar/avatar", "AvatarComponent.defaultProps")
     @js.native
     def defaultProps: Placeholder = js.native
-    @scala.inline
-    def defaultProps_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/avatar/avatar", "AvatarComponent.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait AvatarProps extends StObject {
@@ -133,74 +129,52 @@ object avatarAvatarMod {
   }
   object AvatarProps {
     
-    @scala.inline
-    def apply(): AvatarProps = {
+    inline def apply(): AvatarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AvatarProps]
     }
     
-    @scala.inline
-    implicit class AvatarPropsMutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setImgProps(value: ImgHTMLAttributesHTMLImag): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
+      inline def setImgProps(value: ImgHTMLAttributesHTMLImag): Self = StObject.set(x, "imgProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
+      inline def setImgPropsUndefined: Self = StObject.set(x, "imgProps", js.undefined)
       
-      @scala.inline
-      def setInitialsLimit(value: `1` | `2` | `3`): Self = StObject.set(x, "initialsLimit", value.asInstanceOf[js.Any])
+      inline def setInitialsLimit(value: `1` | `2` | `3`): Self = StObject.set(x, "initialsLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialsLimitUndefined: Self = StObject.set(x, "initialsLimit", js.undefined)
+      inline def setInitialsLimitUndefined: Self = StObject.set(x, "initialsLimit", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: ReactElement): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: ReactElement): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -210,17 +184,14 @@ object avatarAvatarMod {
   }
   object AvatarState {
     
-    @scala.inline
-    def apply(imgLoaded: Boolean): AvatarState = {
+    inline def apply(imgLoaded: Boolean): AvatarState = {
       val __obj = js.Dynamic.literal(imgLoaded = imgLoaded.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvatarState]
     }
     
-    @scala.inline
-    implicit class AvatarStateMutableBuilder[Self <: AvatarState] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarState](x: Self) {
       
-      @scala.inline
-      def setImgLoaded(value: Boolean): Self = StObject.set(x, "imgLoaded", value.asInstanceOf[js.Any])
+      inline def setImgLoaded(value: Boolean): Self = StObject.set(x, "imgLoaded", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,26 +203,20 @@ object avatarAvatarMod {
   }
   object FocusableHOCProps {
     
-    @scala.inline
-    def apply(): FocusableHOCProps = {
+    inline def apply(): FocusableHOCProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusableHOCProps]
     }
     
-    @scala.inline
-    implicit class FocusableHOCPropsMutableBuilder[Self <: FocusableHOCProps] (val x: Self) extends AnyVal {
+    extension [Self <: FocusableHOCProps](x: Self) {
       
-      @scala.inline
-      def setFocusableOnBlur(value: () => Unit): Self = StObject.set(x, "focusableOnBlur", js.Any.fromFunction0(value))
+      inline def setFocusableOnBlur(value: () => Unit): Self = StObject.set(x, "focusableOnBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusableOnBlurUndefined: Self = StObject.set(x, "focusableOnBlur", js.undefined)
+      inline def setFocusableOnBlurUndefined: Self = StObject.set(x, "focusableOnBlur", js.undefined)
       
-      @scala.inline
-      def setFocusableOnFocus(value: () => Unit): Self = StObject.set(x, "focusableOnFocus", js.Any.fromFunction0(value))
+      inline def setFocusableOnFocus(value: () => Unit): Self = StObject.set(x, "focusableOnFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusableOnFocusUndefined: Self = StObject.set(x, "focusableOnFocus", js.undefined)
+      inline def setFocusableOnFocusUndefined: Self = StObject.set(x, "focusableOnFocus", js.undefined)
     }
   }
 }

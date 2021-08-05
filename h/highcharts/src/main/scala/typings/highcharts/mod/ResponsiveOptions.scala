@@ -14,22 +14,17 @@ trait ResponsiveOptions extends StObject {
 }
 object ResponsiveOptions {
   
-  @scala.inline
-  def apply(): ResponsiveOptions = {
+  inline def apply(): ResponsiveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponsiveOptions]
   }
   
-  @scala.inline
-  implicit class ResponsiveOptionsMutableBuilder[Self <: ResponsiveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsiveOptions](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[ResponsiveRulesOptions]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[ResponsiveRulesOptions]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: ResponsiveRulesOptions*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ResponsiveRulesOptions*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

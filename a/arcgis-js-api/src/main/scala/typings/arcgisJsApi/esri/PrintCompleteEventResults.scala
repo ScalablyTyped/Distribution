@@ -14,8 +14,7 @@ trait PrintCompleteEventResults
 }
 object PrintCompleteEventResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     link: Collection[FileLink],
@@ -25,10 +24,8 @@ object PrintCompleteEventResults {
     __obj.asInstanceOf[PrintCompleteEventResults]
   }
   
-  @scala.inline
-  implicit class PrintCompleteEventResultsMutableBuilder[Self <: PrintCompleteEventResults] (val x: Self) extends AnyVal {
+  extension [Self <: PrintCompleteEventResults](x: Self) {
     
-    @scala.inline
-    def setLink(value: Collection[FileLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Collection[FileLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
   }
 }

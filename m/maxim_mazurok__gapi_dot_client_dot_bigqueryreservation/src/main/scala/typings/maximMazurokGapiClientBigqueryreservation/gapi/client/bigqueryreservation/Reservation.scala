@@ -30,43 +30,31 @@ trait Reservation extends StObject {
 }
 object Reservation {
   
-  @scala.inline
-  def apply(): Reservation = {
+  inline def apply(): Reservation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Reservation]
   }
   
-  @scala.inline
-  implicit class ReservationMutableBuilder[Self <: Reservation] (val x: Self) extends AnyVal {
+  extension [Self <: Reservation](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setIgnoreIdleSlots(value: Boolean): Self = StObject.set(x, "ignoreIdleSlots", value.asInstanceOf[js.Any])
+    inline def setIgnoreIdleSlots(value: Boolean): Self = StObject.set(x, "ignoreIdleSlots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIdleSlotsUndefined: Self = StObject.set(x, "ignoreIdleSlots", js.undefined)
+    inline def setIgnoreIdleSlotsUndefined: Self = StObject.set(x, "ignoreIdleSlots", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSlotCapacity(value: String): Self = StObject.set(x, "slotCapacity", value.asInstanceOf[js.Any])
+    inline def setSlotCapacity(value: String): Self = StObject.set(x, "slotCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotCapacityUndefined: Self = StObject.set(x, "slotCapacity", js.undefined)
+    inline def setSlotCapacityUndefined: Self = StObject.set(x, "slotCapacity", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

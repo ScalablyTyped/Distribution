@@ -31,21 +31,17 @@ object mediaGalleries {
   }
   object GalleryChangedEventArgs {
     
-    @scala.inline
-    def apply(galleryId: String, `type`: GalleryChangedType): GalleryChangedEventArgs = {
+    inline def apply(galleryId: String, `type`: GalleryChangedType): GalleryChangedEventArgs = {
       val __obj = js.Dynamic.literal(galleryId = galleryId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GalleryChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class GalleryChangedEventArgsMutableBuilder[Self <: GalleryChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GalleryChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
+      inline def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: GalleryChangedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: GalleryChangedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,11 +52,9 @@ object mediaGalleries {
   trait GalleryChangedType extends StObject
   object GalleryChangedType {
     
-    @scala.inline
-    def contents_changed: typings.chromeApps.chromeAppsStrings.contents_changed = "contents_changed".asInstanceOf[typings.chromeApps.chromeAppsStrings.contents_changed]
+    inline def contents_changed: typings.chromeApps.chromeAppsStrings.contents_changed = "contents_changed".asInstanceOf[typings.chromeApps.chromeAppsStrings.contents_changed]
     
-    @scala.inline
-    def watch_dropped: typings.chromeApps.chromeAppsStrings.watch_dropped = "watch_dropped".asInstanceOf[typings.chromeApps.chromeAppsStrings.watch_dropped]
+    inline def watch_dropped: typings.chromeApps.chromeAppsStrings.watch_dropped = "watch_dropped".asInstanceOf[typings.chromeApps.chromeAppsStrings.watch_dropped]
   }
   
   trait GalleryWatchResult extends StObject {
@@ -71,20 +65,16 @@ object mediaGalleries {
   }
   object GalleryWatchResult {
     
-    @scala.inline
-    def apply(galleryId: String, success: Boolean): GalleryWatchResult = {
+    inline def apply(galleryId: String, success: Boolean): GalleryWatchResult = {
       val __obj = js.Dynamic.literal(galleryId = galleryId.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[GalleryWatchResult]
     }
     
-    @scala.inline
-    implicit class GalleryWatchResultMutableBuilder[Self <: GalleryWatchResult] (val x: Self) extends AnyVal {
+    extension [Self <: GalleryWatchResult](x: Self) {
       
-      @scala.inline
-      def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
+      inline def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,14 +86,11 @@ object mediaGalleries {
   trait Interactive extends StObject
   object Interactive {
     
-    @scala.inline
-    def if_needed: typings.chromeApps.chromeAppsStrings.if_needed = "if_needed".asInstanceOf[typings.chromeApps.chromeAppsStrings.if_needed]
+    inline def if_needed: typings.chromeApps.chromeAppsStrings.if_needed = "if_needed".asInstanceOf[typings.chromeApps.chromeAppsStrings.if_needed]
     
-    @scala.inline
-    def no: typings.chromeApps.chromeAppsStrings.no = "no".asInstanceOf[typings.chromeApps.chromeAppsStrings.no]
+    inline def no: typings.chromeApps.chromeAppsStrings.no = "no".asInstanceOf[typings.chromeApps.chromeAppsStrings.no]
     
-    @scala.inline
-    def yes: typings.chromeApps.chromeAppsStrings.yes = "yes".asInstanceOf[typings.chromeApps.chromeAppsStrings.yes]
+    inline def yes: typings.chromeApps.chromeAppsStrings.yes = "yes".asInstanceOf[typings.chromeApps.chromeAppsStrings.yes]
   }
   
   trait MediaFileSystemMetadata extends StObject {
@@ -128,8 +115,7 @@ object mediaGalleries {
   }
   object MediaFileSystemMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       galleryId: String,
       isAvailable: Boolean,
       isMediaDevice: Boolean,
@@ -140,29 +126,21 @@ object mediaGalleries {
       __obj.asInstanceOf[MediaFileSystemMetadata]
     }
     
-    @scala.inline
-    implicit class MediaFileSystemMetadataMutableBuilder[Self <: MediaFileSystemMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: MediaFileSystemMetadata](x: Self) {
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+      inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
       
-      @scala.inline
-      def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
+      inline def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+      inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMediaDevice(value: Boolean): Self = StObject.set(x, "isMediaDevice", value.asInstanceOf[js.Any])
+      inline def setIsMediaDevice(value: Boolean): Self = StObject.set(x, "isMediaDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRemovable(value: Boolean): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
+      inline def setIsRemovable(value: Boolean): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,20 +163,16 @@ object mediaGalleries {
   }
   object MediaFileSystemsOptions {
     
-    @scala.inline
-    def apply(): MediaFileSystemsOptions = {
+    inline def apply(): MediaFileSystemsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaFileSystemsOptions]
     }
     
-    @scala.inline
-    implicit class MediaFileSystemsOptionsMutableBuilder[Self <: MediaFileSystemsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MediaFileSystemsOptions](x: Self) {
       
-      @scala.inline
-      def setInteractive(value: Interactive): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Interactive): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+      inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     }
   }
   
@@ -252,107 +226,74 @@ object mediaGalleries {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(attachedImages: js.Array[Blob], mimeType: String, rawTags: js.Array[RawTag]): Metadata = {
+    inline def apply(attachedImages: js.Array[Blob], mimeType: String, rawTags: js.Array[RawTag]): Metadata = {
       val __obj = js.Dynamic.literal(attachedImages = attachedImages.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], rawTags = rawTags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+      inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+      inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
       
-      @scala.inline
-      def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+      inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
+      inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
       
-      @scala.inline
-      def setAttachedImages(value: js.Array[Blob]): Self = StObject.set(x, "attachedImages", value.asInstanceOf[js.Any])
+      inline def setAttachedImages(value: js.Array[Blob]): Self = StObject.set(x, "attachedImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachedImagesVarargs(value: Blob*): Self = StObject.set(x, "attachedImages", js.Array(value :_*))
+      inline def setAttachedImagesVarargs(value: Blob*): Self = StObject.set(x, "attachedImages", js.Array(value :_*))
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setDisc(value: integer): Self = StObject.set(x, "disc", value.asInstanceOf[js.Any])
+      inline def setDisc(value: integer): Self = StObject.set(x, "disc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscUndefined: Self = StObject.set(x, "disc", js.undefined)
+      inline def setDiscUndefined: Self = StObject.set(x, "disc", js.undefined)
       
-      @scala.inline
-      def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+      inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
+      inline def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
       
-      @scala.inline
-      def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawTags(value: js.Array[RawTag]): Self = StObject.set(x, "rawTags", value.asInstanceOf[js.Any])
+      inline def setRawTags(value: js.Array[RawTag]): Self = StObject.set(x, "rawTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawTagsVarargs(value: RawTag*): Self = StObject.set(x, "rawTags", js.Array(value :_*))
+      inline def setRawTagsVarargs(value: RawTag*): Self = StObject.set(x, "rawTags", js.Array(value :_*))
       
-      @scala.inline
-      def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTrack(value: integer): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: integer): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+      inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
       
-      @scala.inline
-      def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -362,17 +303,14 @@ object mediaGalleries {
   }
   object MetadataOptions {
     
-    @scala.inline
-    def apply(metadataType: MetadataOptionsType): MetadataOptions = {
+    inline def apply(metadataType: MetadataOptionsType): MetadataOptions = {
       val __obj = js.Dynamic.literal(metadataType = metadataType.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetadataOptions]
     }
     
-    @scala.inline
-    implicit class MetadataOptionsMutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataOptions](x: Self) {
       
-      @scala.inline
-      def setMetadataType(value: MetadataOptionsType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
+      inline def setMetadataType(value: MetadataOptionsType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -384,14 +322,11 @@ object mediaGalleries {
   trait MetadataOptionsType extends StObject
   object MetadataOptionsType {
     
-    @scala.inline
-    def all: all__ = "all".asInstanceOf[all__]
+    inline def all: all__ = "all".asInstanceOf[all__]
     
-    @scala.inline
-    def mimeTypeAndTags: typings.chromeApps.chromeAppsStrings.mimeTypeAndTags = "mimeTypeAndTags".asInstanceOf[typings.chromeApps.chromeAppsStrings.mimeTypeAndTags]
+    inline def mimeTypeAndTags: typings.chromeApps.chromeAppsStrings.mimeTypeAndTags = "mimeTypeAndTags".asInstanceOf[typings.chromeApps.chromeAppsStrings.mimeTypeAndTags]
     
-    @scala.inline
-    def mimeTypeOnly: typings.chromeApps.chromeAppsStrings.mimeTypeOnly = "mimeTypeOnly".asInstanceOf[typings.chromeApps.chromeAppsStrings.mimeTypeOnly]
+    inline def mimeTypeOnly: typings.chromeApps.chromeAppsStrings.mimeTypeOnly = "mimeTypeOnly".asInstanceOf[typings.chromeApps.chromeAppsStrings.mimeTypeOnly]
   }
   
   trait RawTag extends StObject {
@@ -408,21 +343,17 @@ object mediaGalleries {
   }
   object RawTag {
     
-    @scala.inline
-    def apply(tags: StringDictionary[String], `type`: String): RawTag = {
+    inline def apply(tags: StringDictionary[String], `type`: String): RawTag = {
       val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawTag]
     }
     
-    @scala.inline
-    implicit class RawTagMutableBuilder[Self <: RawTag] (val x: Self) extends AnyVal {
+    extension [Self <: RawTag](x: Self) {
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -447,42 +378,31 @@ object mediaGalleries {
   }
   object ScanProgressEventArgs {
     
-    @scala.inline
-    def apply(`type`: ScanProgressType): ScanProgressEventArgs = {
+    inline def apply(`type`: ScanProgressType): ScanProgressEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScanProgressEventArgs]
     }
     
-    @scala.inline
-    implicit class ScanProgressEventArgsMutableBuilder[Self <: ScanProgressEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ScanProgressEventArgs](x: Self) {
       
-      @scala.inline
-      def setAudioCount(value: integer): Self = StObject.set(x, "audioCount", value.asInstanceOf[js.Any])
+      inline def setAudioCount(value: integer): Self = StObject.set(x, "audioCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioCountUndefined: Self = StObject.set(x, "audioCount", js.undefined)
+      inline def setAudioCountUndefined: Self = StObject.set(x, "audioCount", js.undefined)
       
-      @scala.inline
-      def setGalleryCount(value: integer): Self = StObject.set(x, "galleryCount", value.asInstanceOf[js.Any])
+      inline def setGalleryCount(value: integer): Self = StObject.set(x, "galleryCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGalleryCountUndefined: Self = StObject.set(x, "galleryCount", js.undefined)
+      inline def setGalleryCountUndefined: Self = StObject.set(x, "galleryCount", js.undefined)
       
-      @scala.inline
-      def setImageCount(value: integer): Self = StObject.set(x, "imageCount", value.asInstanceOf[js.Any])
+      inline def setImageCount(value: integer): Self = StObject.set(x, "imageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageCountUndefined: Self = StObject.set(x, "imageCount", js.undefined)
+      inline def setImageCountUndefined: Self = StObject.set(x, "imageCount", js.undefined)
       
-      @scala.inline
-      def setType(value: ScanProgressType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ScanProgressType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoCount(value: integer): Self = StObject.set(x, "videoCount", value.asInstanceOf[js.Any])
+      inline def setVideoCount(value: integer): Self = StObject.set(x, "videoCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoCountUndefined: Self = StObject.set(x, "videoCount", js.undefined)
+      inline def setVideoCountUndefined: Self = StObject.set(x, "videoCount", js.undefined)
     }
   }
   
@@ -495,16 +415,12 @@ object mediaGalleries {
   trait ScanProgressType extends StObject
   object ScanProgressType {
     
-    @scala.inline
-    def cancel: typings.chromeApps.chromeAppsStrings.cancel = "cancel".asInstanceOf[typings.chromeApps.chromeAppsStrings.cancel]
+    inline def cancel: typings.chromeApps.chromeAppsStrings.cancel = "cancel".asInstanceOf[typings.chromeApps.chromeAppsStrings.cancel]
     
-    @scala.inline
-    def error: error_ = "error".asInstanceOf[error_]
+    inline def error: error_ = "error".asInstanceOf[error_]
     
-    @scala.inline
-    def finish: typings.chromeApps.chromeAppsStrings.finish = "finish".asInstanceOf[typings.chromeApps.chromeAppsStrings.finish]
+    inline def finish: typings.chromeApps.chromeAppsStrings.finish = "finish".asInstanceOf[typings.chromeApps.chromeAppsStrings.finish]
     
-    @scala.inline
-    def start: typings.chromeApps.chromeAppsStrings.start = "start".asInstanceOf[typings.chromeApps.chromeAppsStrings.start]
+    inline def start: typings.chromeApps.chromeAppsStrings.start = "start".asInstanceOf[typings.chromeApps.chromeAppsStrings.start]
   }
 }

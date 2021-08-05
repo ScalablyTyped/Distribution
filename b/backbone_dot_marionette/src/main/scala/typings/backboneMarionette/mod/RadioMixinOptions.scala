@@ -26,31 +26,23 @@ trait RadioMixinOptions extends StObject {
 }
 object RadioMixinOptions {
   
-  @scala.inline
-  def apply(): RadioMixinOptions = {
+  inline def apply(): RadioMixinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadioMixinOptions]
   }
   
-  @scala.inline
-  implicit class RadioMixinOptionsMutableBuilder[Self <: RadioMixinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RadioMixinOptions](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+    inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
     
-    @scala.inline
-    def setRadioEvents(value: js.Any): Self = StObject.set(x, "radioEvents", value.asInstanceOf[js.Any])
+    inline def setRadioEvents(value: js.Any): Self = StObject.set(x, "radioEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioEventsUndefined: Self = StObject.set(x, "radioEvents", js.undefined)
+    inline def setRadioEventsUndefined: Self = StObject.set(x, "radioEvents", js.undefined)
     
-    @scala.inline
-    def setRadioRequests(value: js.Any): Self = StObject.set(x, "radioRequests", value.asInstanceOf[js.Any])
+    inline def setRadioRequests(value: js.Any): Self = StObject.set(x, "radioRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioRequestsUndefined: Self = StObject.set(x, "radioRequests", js.undefined)
+    inline def setRadioRequestsUndefined: Self = StObject.set(x, "radioRequests", js.undefined)
   }
 }

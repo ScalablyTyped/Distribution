@@ -46,88 +46,61 @@ trait ActivityHistoryItem
 }
 object ActivityHistoryItem {
   
-  @scala.inline
-  def apply(): ActivityHistoryItem = {
+  inline def apply(): ActivityHistoryItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityHistoryItem]
   }
   
-  @scala.inline
-  implicit class ActivityHistoryItemMutableBuilder[Self <: ActivityHistoryItem] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityHistoryItem](x: Self) {
     
-    @scala.inline
-    def setActiveDurationSeconds(value: NullableOption[Double]): Self = StObject.set(x, "activeDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setActiveDurationSeconds(value: NullableOption[Double]): Self = StObject.set(x, "activeDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDurationSecondsNull: Self = StObject.set(x, "activeDurationSeconds", null)
+    inline def setActiveDurationSecondsNull: Self = StObject.set(x, "activeDurationSeconds", null)
     
-    @scala.inline
-    def setActiveDurationSecondsUndefined: Self = StObject.set(x, "activeDurationSeconds", js.undefined)
+    inline def setActiveDurationSecondsUndefined: Self = StObject.set(x, "activeDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setActivity(value: UserActivity): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: UserActivity): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
+    inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
-    @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
+    inline def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
+    inline def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
-    @scala.inline
-    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
+    inline def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
-    @scala.inline
-    def setLastActiveDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActiveDateTime", value.asInstanceOf[js.Any])
+    inline def setLastActiveDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActiveDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastActiveDateTimeNull: Self = StObject.set(x, "lastActiveDateTime", null)
+    inline def setLastActiveDateTimeNull: Self = StObject.set(x, "lastActiveDateTime", null)
     
-    @scala.inline
-    def setLastActiveDateTimeUndefined: Self = StObject.set(x, "lastActiveDateTime", js.undefined)
+    inline def setLastActiveDateTimeUndefined: Self = StObject.set(x, "lastActiveDateTime", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setStartedDateTime(value: String): Self = StObject.set(x, "startedDateTime", value.asInstanceOf[js.Any])
+    inline def setStartedDateTime(value: String): Self = StObject.set(x, "startedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedDateTimeUndefined: Self = StObject.set(x, "startedDateTime", js.undefined)
+    inline def setStartedDateTimeUndefined: Self = StObject.set(x, "startedDateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NullableOption[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NullableOption[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUserTimezone(value: NullableOption[String]): Self = StObject.set(x, "userTimezone", value.asInstanceOf[js.Any])
+    inline def setUserTimezone(value: NullableOption[String]): Self = StObject.set(x, "userTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTimezoneNull: Self = StObject.set(x, "userTimezone", null)
+    inline def setUserTimezoneNull: Self = StObject.set(x, "userTimezone", null)
     
-    @scala.inline
-    def setUserTimezoneUndefined: Self = StObject.set(x, "userTimezone", js.undefined)
+    inline def setUserTimezoneUndefined: Self = StObject.set(x, "userTimezone", js.undefined)
   }
 }

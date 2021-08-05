@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveModuleName(
+  inline def resolveModuleName(
     moduleName: String,
     containingFile: String,
     options: CompilerOptions,
@@ -29,8 +28,7 @@ object mod {
     ]
   ): ResolvedModuleWithFailedLookupLocations = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveModuleName")(moduleName.asInstanceOf[js.Any], containingFile.asInstanceOf[js.Any], options.asInstanceOf[js.Any], moduleResolutionHost.asInstanceOf[js.Any], realResolveModuleName.asInstanceOf[js.Any])).asInstanceOf[ResolvedModuleWithFailedLookupLocations]
   
-  @scala.inline
-  def resolveModuleName_ResolvedTypeReferenceDirectiveWithFailedLookupLocations(
+  inline def resolveModuleName_ResolvedTypeReferenceDirectiveWithFailedLookupLocations(
     moduleName: String,
     containingFile: String,
     options: CompilerOptions,

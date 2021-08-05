@@ -36,8 +36,7 @@ trait DiskStat extends StObject {
 }
 object DiskStat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     device: String,
     device_number: String,
     device_number_minor: String,
@@ -57,49 +56,34 @@ object DiskStat {
     __obj.asInstanceOf[DiskStat]
   }
   
-  @scala.inline
-  implicit class DiskStatMutableBuilder[Self <: DiskStat] (val x: Self) extends AnyVal {
+  extension [Self <: DiskStat](x: Self) {
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice_number(value: String): Self = StObject.set(x, "device_number", value.asInstanceOf[js.Any])
+    inline def setDevice_number(value: String): Self = StObject.set(x, "device_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice_number_minor(value: String): Self = StObject.set(x, "device_number_minor", value.asInstanceOf[js.Any])
+    inline def setDevice_number_minor(value: String): Self = StObject.set(x, "device_number_minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIos_pending(value: String): Self = StObject.set(x, "ios_pending", value.asInstanceOf[js.Any])
+    inline def setIos_pending(value: String): Self = StObject.set(x, "ios_pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMs_io(value: String): Self = StObject.set(x, "ms_io", value.asInstanceOf[js.Any])
+    inline def setMs_io(value: String): Self = StObject.set(x, "ms_io", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMs_reading(value: String): Self = StObject.set(x, "ms_reading", value.asInstanceOf[js.Any])
+    inline def setMs_reading(value: String): Self = StObject.set(x, "ms_reading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMs_weighted_io(value: String): Self = StObject.set(x, "ms_weighted_io", value.asInstanceOf[js.Any])
+    inline def setMs_weighted_io(value: String): Self = StObject.set(x, "ms_weighted_io", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMs_writing(value: String): Self = StObject.set(x, "ms_writing", value.asInstanceOf[js.Any])
+    inline def setMs_writing(value: String): Self = StObject.set(x, "ms_writing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReads_completed(value: String): Self = StObject.set(x, "reads_completed", value.asInstanceOf[js.Any])
+    inline def setReads_completed(value: String): Self = StObject.set(x, "reads_completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReads_merged(value: String): Self = StObject.set(x, "reads_merged", value.asInstanceOf[js.Any])
+    inline def setReads_merged(value: String): Self = StObject.set(x, "reads_merged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectors_read(value: String): Self = StObject.set(x, "sectors_read", value.asInstanceOf[js.Any])
+    inline def setSectors_read(value: String): Self = StObject.set(x, "sectors_read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectors_written(value: String): Self = StObject.set(x, "sectors_written", value.asInstanceOf[js.Any])
+    inline def setSectors_written(value: String): Self = StObject.set(x, "sectors_written", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrites_completed(value: String): Self = StObject.set(x, "writes_completed", value.asInstanceOf[js.Any])
+    inline def setWrites_completed(value: String): Self = StObject.set(x, "writes_completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrites_merged(value: String): Self = StObject.set(x, "writes_merged", value.asInstanceOf[js.Any])
+    inline def setWrites_merged(value: String): Self = StObject.set(x, "writes_merged", value.asInstanceOf[js.Any])
   }
 }

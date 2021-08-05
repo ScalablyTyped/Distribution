@@ -56,37 +56,27 @@ trait GATEWAYCONNECTED extends StObject {
 }
 object GATEWAYCONNECTED {
   
-  @scala.inline
-  def apply(): GATEWAYCONNECTED = {
+  inline def apply(): GATEWAYCONNECTED = {
     val __obj = js.Dynamic.literal(GATEWAY_CONNECTED = 4, GATEWAY_DISCONNECTED = 5, LAN_CABLE_ATTACHED = 1, LAN_CABLE_DETACHED = 2, LAN_CABLE_STATE_UNKNOWN = 3, WIFI_MODULE_STATE_ATTACHED = 6, WIFI_MODULE_STATE_DETACHED = 7, WIFI_MODULE_STATE_UNKNOWN = 8)
     __obj.asInstanceOf[GATEWAYCONNECTED]
   }
   
-  @scala.inline
-  implicit class GATEWAYCONNECTEDMutableBuilder[Self <: GATEWAYCONNECTED] (val x: Self) extends AnyVal {
+  extension [Self <: GATEWAYCONNECTED](x: Self) {
     
-    @scala.inline
-    def setGATEWAY_CONNECTED(value: `4`): Self = StObject.set(x, "GATEWAY_CONNECTED", value.asInstanceOf[js.Any])
+    inline def setGATEWAY_CONNECTED(value: `4`): Self = StObject.set(x, "GATEWAY_CONNECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGATEWAY_DISCONNECTED(value: `5`): Self = StObject.set(x, "GATEWAY_DISCONNECTED", value.asInstanceOf[js.Any])
+    inline def setGATEWAY_DISCONNECTED(value: `5`): Self = StObject.set(x, "GATEWAY_DISCONNECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAN_CABLE_ATTACHED(value: `1`): Self = StObject.set(x, "LAN_CABLE_ATTACHED", value.asInstanceOf[js.Any])
+    inline def setLAN_CABLE_ATTACHED(value: `1`): Self = StObject.set(x, "LAN_CABLE_ATTACHED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAN_CABLE_DETACHED(value: `2`): Self = StObject.set(x, "LAN_CABLE_DETACHED", value.asInstanceOf[js.Any])
+    inline def setLAN_CABLE_DETACHED(value: `2`): Self = StObject.set(x, "LAN_CABLE_DETACHED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAN_CABLE_STATE_UNKNOWN(value: `3`): Self = StObject.set(x, "LAN_CABLE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setLAN_CABLE_STATE_UNKNOWN(value: `3`): Self = StObject.set(x, "LAN_CABLE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIFI_MODULE_STATE_ATTACHED(value: `6`): Self = StObject.set(x, "WIFI_MODULE_STATE_ATTACHED", value.asInstanceOf[js.Any])
+    inline def setWIFI_MODULE_STATE_ATTACHED(value: `6`): Self = StObject.set(x, "WIFI_MODULE_STATE_ATTACHED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIFI_MODULE_STATE_DETACHED(value: `7`): Self = StObject.set(x, "WIFI_MODULE_STATE_DETACHED", value.asInstanceOf[js.Any])
+    inline def setWIFI_MODULE_STATE_DETACHED(value: `7`): Self = StObject.set(x, "WIFI_MODULE_STATE_DETACHED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIFI_MODULE_STATE_UNKNOWN(value: `8`): Self = StObject.set(x, "WIFI_MODULE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setWIFI_MODULE_STATE_UNKNOWN(value: `8`): Self = StObject.set(x, "WIFI_MODULE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait DocumentsTarget extends StObject {
 }
 object DocumentsTarget {
   
-  @scala.inline
-  def apply(): DocumentsTarget = {
+  inline def apply(): DocumentsTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentsTarget]
   }
   
-  @scala.inline
-  implicit class DocumentsTargetMutableBuilder[Self <: DocumentsTarget] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentsTarget](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: js.Array[String]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: js.Array[String]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
+    inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    @scala.inline
-    def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value :_*))
   }
 }

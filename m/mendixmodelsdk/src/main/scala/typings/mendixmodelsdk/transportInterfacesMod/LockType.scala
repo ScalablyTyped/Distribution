@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LockType extends StObject
 object LockType {
   
-  @scala.inline
-  def bidi: typings.mendixmodelsdk.mendixmodelsdkStrings.bidi = "bidi".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.bidi]
+  inline def bidi: typings.mendixmodelsdk.mendixmodelsdkStrings.bidi = "bidi".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.bidi]
   
-  @scala.inline
-  def commit: typings.mendixmodelsdk.mendixmodelsdkStrings.commit = "commit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.commit]
+  inline def commit: typings.mendixmodelsdk.mendixmodelsdkStrings.commit = "commit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.commit]
   
-  @scala.inline
-  def `commit-wc`: typings.mendixmodelsdk.mendixmodelsdkStrings.`commit-wc` = "commit-wc".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.`commit-wc`]
+  inline def `commit-wc`: typings.mendixmodelsdk.mendixmodelsdkStrings.`commit-wc` = "commit-wc".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.`commit-wc`]
   
-  @scala.inline
-  def conversion: typings.mendixmodelsdk.mendixmodelsdkStrings.conversion = "conversion".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.conversion]
+  inline def conversion: typings.mendixmodelsdk.mendixmodelsdkStrings.conversion = "conversion".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.conversion]
   
-  @scala.inline
-  def edit: typings.mendixmodelsdk.mendixmodelsdkStrings.edit = "edit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.edit]
+  inline def edit: typings.mendixmodelsdk.mendixmodelsdkStrings.edit = "edit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.edit]
   
-  @scala.inline
-  def switch: typings.mendixmodelsdk.mendixmodelsdkStrings.switch = "switch".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.switch]
+  inline def switch: typings.mendixmodelsdk.mendixmodelsdkStrings.switch = "switch".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.switch]
   
-  @scala.inline
-  def update: typings.mendixmodelsdk.mendixmodelsdkStrings.update = "update".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.update]
+  inline def update: typings.mendixmodelsdk.mendixmodelsdkStrings.update = "update".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.update]
 }

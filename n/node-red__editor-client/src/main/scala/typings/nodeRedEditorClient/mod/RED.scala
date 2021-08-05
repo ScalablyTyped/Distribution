@@ -211,8 +211,7 @@ trait RED extends StObject {
 }
 object RED {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _underscore: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String,
     actionList: ActionList,
     actions: Actions,
@@ -262,133 +261,90 @@ object RED {
     __obj.asInstanceOf[RED]
   }
   
-  @scala.inline
-  implicit class REDMutableBuilder[Self <: RED] (val x: Self) extends AnyVal {
+  extension [Self <: RED](x: Self) {
     
-    @scala.inline
-    def setActionList(value: ActionList): Self = StObject.set(x, "actionList", value.asInstanceOf[js.Any])
+    inline def setActionList(value: ActionList): Self = StObject.set(x, "actionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActions(value: Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+    inline def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPicker(value: ColorPicker): Self = StObject.set(x, "colorPicker", value.asInstanceOf[js.Any])
+    inline def setColorPicker(value: ColorPicker): Self = StObject.set(x, "colorPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComms(value: Comms): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
+    inline def setComms(value: Comms): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploy(value: Deploy): Self = StObject.set(x, "deploy", value.asInstanceOf[js.Any])
+    inline def setDeploy(value: Deploy): Self = StObject.set(x, "deploy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiff(value: Diff): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+    inline def setDiff(value: Diff): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor(value: Editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLog(value: EventLog): Self = StObject.set(x, "eventLog", value.asInstanceOf[js.Any])
+    inline def setEventLog(value: EventLog): Self = StObject.set(x, "eventLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboard(value: Keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibrary(value: Library): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+    inline def setLibrary(value: Library): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: Nodes): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: Nodes): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: Notifications): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: Notifications): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_(value: FnCall): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: FnCall): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanels(value: Panels): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+    inline def setPanels(value: Panels): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopover(value: Popover): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: Popover): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjects(value: Projects): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: Projects): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: SettingsWithData): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: SettingsWithData): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidebar(value: Sidebar): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+    inline def setSidebar(value: Sidebar): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: Stack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Stack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ADDING): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ADDING): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBar(value: StatusBar): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: StatusBar): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubflow(value: Subflow): Self = StObject.set(x, "subflow", value.asInstanceOf[js.Any])
+    inline def setSubflow(value: Subflow): Self = StObject.set(x, "subflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabs(value: Tabs): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: Tabs): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: Text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch(value: Touch): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Touch): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTray(value: Tray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
+    inline def setTray(value: Tray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeSearch(value: TypeSearch): Self = StObject.set(x, "typeSearch", value.asInstanceOf[js.Any])
+    inline def setTypeSearch(value: TypeSearch): Self = StObject.set(x, "typeSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSettings(value: UserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
+    inline def setUserSettings(value: UserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+    inline def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidators(value: Validators): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: Validators): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaces(value: Workspaces): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+    inline def setWorkspaces(value: Workspaces): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
+    inline def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
   }
 }

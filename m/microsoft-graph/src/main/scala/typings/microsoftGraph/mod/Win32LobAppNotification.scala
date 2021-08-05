@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Win32LobAppNotification extends StObject
 object Win32LobAppNotification {
   
-  @scala.inline
-  def hideAll: typings.microsoftGraph.microsoftGraphStrings.hideAll = "hideAll".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hideAll]
+  inline def hideAll: typings.microsoftGraph.microsoftGraphStrings.hideAll = "hideAll".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hideAll]
   
-  @scala.inline
-  def showAll: typings.microsoftGraph.microsoftGraphStrings.showAll = "showAll".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showAll]
+  inline def showAll: typings.microsoftGraph.microsoftGraphStrings.showAll = "showAll".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showAll]
   
-  @scala.inline
-  def showReboot: typings.microsoftGraph.microsoftGraphStrings.showReboot = "showReboot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showReboot]
+  inline def showReboot: typings.microsoftGraph.microsoftGraphStrings.showReboot = "showReboot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.showReboot]
 }

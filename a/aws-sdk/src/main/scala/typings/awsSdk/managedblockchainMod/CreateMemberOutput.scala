@@ -13,19 +13,15 @@ trait CreateMemberOutput extends StObject {
 }
 object CreateMemberOutput {
   
-  @scala.inline
-  def apply(): CreateMemberOutput = {
+  inline def apply(): CreateMemberOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMemberOutput]
   }
   
-  @scala.inline
-  implicit class CreateMemberOutputMutableBuilder[Self <: CreateMemberOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMemberOutput](x: Self) {
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
+    inline def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
   }
 }

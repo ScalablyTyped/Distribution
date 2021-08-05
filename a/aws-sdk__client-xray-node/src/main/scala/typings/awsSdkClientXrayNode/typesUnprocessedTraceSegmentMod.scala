@@ -27,32 +27,24 @@ object typesUnprocessedTraceSegmentMod {
   }
   object UnprocessedTraceSegment {
     
-    @scala.inline
-    def apply(): UnprocessedTraceSegment = {
+    inline def apply(): UnprocessedTraceSegment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnprocessedTraceSegment]
     }
     
-    @scala.inline
-    implicit class UnprocessedTraceSegmentMutableBuilder[Self <: UnprocessedTraceSegment] (val x: Self) extends AnyVal {
+    extension [Self <: UnprocessedTraceSegment](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     }
   }
 }

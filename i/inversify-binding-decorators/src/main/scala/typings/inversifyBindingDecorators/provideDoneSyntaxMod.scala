@@ -20,6 +20,6 @@ object provideDoneSyntaxMod {
     extends StObject
        with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideDoneSyntax {
     
-    var _binding: js.Any = js.native
+    /* private */ var _binding: js.Any = js.native
   }
 }

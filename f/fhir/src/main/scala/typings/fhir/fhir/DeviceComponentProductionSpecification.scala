@@ -33,37 +33,27 @@ trait DeviceComponentProductionSpecification
 }
 object DeviceComponentProductionSpecification {
   
-  @scala.inline
-  def apply(): DeviceComponentProductionSpecification = {
+  inline def apply(): DeviceComponentProductionSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceComponentProductionSpecification]
   }
   
-  @scala.inline
-  implicit class DeviceComponentProductionSpecificationMutableBuilder[Self <: DeviceComponentProductionSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceComponentProductionSpecification](x: Self) {
     
-    @scala.inline
-    def setComponentId(value: Identifier): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+    inline def setComponentId(value: Identifier): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
+    inline def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
     
-    @scala.inline
-    def setProductionSpec(value: String): Self = StObject.set(x, "productionSpec", value.asInstanceOf[js.Any])
+    inline def setProductionSpec(value: String): Self = StObject.set(x, "productionSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductionSpecUndefined: Self = StObject.set(x, "productionSpec", js.undefined)
+    inline def setProductionSpecUndefined: Self = StObject.set(x, "productionSpec", js.undefined)
     
-    @scala.inline
-    def setSpecType(value: CodeableConcept): Self = StObject.set(x, "specType", value.asInstanceOf[js.Any])
+    inline def setSpecType(value: CodeableConcept): Self = StObject.set(x, "specType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecTypeUndefined: Self = StObject.set(x, "specType", js.undefined)
+    inline def setSpecTypeUndefined: Self = StObject.set(x, "specType", js.undefined)
     
-    @scala.inline
-    def set_productionSpec(value: Element): Self = StObject.set(x, "_productionSpec", value.asInstanceOf[js.Any])
+    inline def set_productionSpec(value: Element): Self = StObject.set(x, "_productionSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_productionSpecUndefined: Self = StObject.set(x, "_productionSpec", js.undefined)
+    inline def set_productionSpecUndefined: Self = StObject.set(x, "_productionSpec", js.undefined)
   }
 }

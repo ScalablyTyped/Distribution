@@ -45,49 +45,35 @@ trait SchemaParameter extends StObject {
 }
 object SchemaParameter {
   
-  @scala.inline
-  def apply(): SchemaParameter = {
+  inline def apply(): SchemaParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParameter]
   }
   
-  @scala.inline
-  implicit class SchemaParameterMutableBuilder[Self <: SchemaParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParameter](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setList(value: js.Array[SchemaParameter]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: js.Array[SchemaParameter]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setListVarargs(value: SchemaParameter*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: SchemaParameter*): Self = StObject.set(x, "list", js.Array(value :_*))
     
-    @scala.inline
-    def setMap(value: js.Array[SchemaParameter]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Array[SchemaParameter]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setMapVarargs(value: SchemaParameter*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: SchemaParameter*): Self = StObject.set(x, "map", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

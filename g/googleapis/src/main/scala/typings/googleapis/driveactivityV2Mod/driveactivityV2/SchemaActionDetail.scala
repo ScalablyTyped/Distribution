@@ -66,79 +66,55 @@ trait SchemaActionDetail extends StObject {
 }
 object SchemaActionDetail {
   
-  @scala.inline
-  def apply(): SchemaActionDetail = {
+  inline def apply(): SchemaActionDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActionDetail]
   }
   
-  @scala.inline
-  implicit class SchemaActionDetailMutableBuilder[Self <: SchemaActionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActionDetail](x: Self) {
     
-    @scala.inline
-    def setComment(value: SchemaComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: SchemaComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setCreate(value: SchemaCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: SchemaCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDelete(value: SchemaDelete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: SchemaDelete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setDlpChange(value: SchemaDataLeakPreventionChange): Self = StObject.set(x, "dlpChange", value.asInstanceOf[js.Any])
+    inline def setDlpChange(value: SchemaDataLeakPreventionChange): Self = StObject.set(x, "dlpChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDlpChangeUndefined: Self = StObject.set(x, "dlpChange", js.undefined)
+    inline def setDlpChangeUndefined: Self = StObject.set(x, "dlpChange", js.undefined)
     
-    @scala.inline
-    def setEdit(value: SchemaEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: SchemaEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
-    @scala.inline
-    def setMove(value: SchemaMove): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: SchemaMove): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
-    @scala.inline
-    def setPermissionChange(value: SchemaPermissionChange): Self = StObject.set(x, "permissionChange", value.asInstanceOf[js.Any])
+    inline def setPermissionChange(value: SchemaPermissionChange): Self = StObject.set(x, "permissionChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionChangeUndefined: Self = StObject.set(x, "permissionChange", js.undefined)
+    inline def setPermissionChangeUndefined: Self = StObject.set(x, "permissionChange", js.undefined)
     
-    @scala.inline
-    def setReference(value: SchemaApplicationReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: SchemaApplicationReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    @scala.inline
-    def setRename(value: SchemaRename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setRename(value: SchemaRename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+    inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     
-    @scala.inline
-    def setRestore(value: SchemaRestore): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+    inline def setRestore(value: SchemaRestore): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+    inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
-    @scala.inline
-    def setSettingsChange(value: SchemaSettingsChange): Self = StObject.set(x, "settingsChange", value.asInstanceOf[js.Any])
+    inline def setSettingsChange(value: SchemaSettingsChange): Self = StObject.set(x, "settingsChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsChangeUndefined: Self = StObject.set(x, "settingsChange", js.undefined)
+    inline def setSettingsChangeUndefined: Self = StObject.set(x, "settingsChange", js.undefined)
   }
 }

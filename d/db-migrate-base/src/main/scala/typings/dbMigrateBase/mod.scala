@@ -460,23 +460,18 @@ object mod {
   }
   object ColumnDef {
     
-    @scala.inline
-    def apply(constraints: String): ColumnDef = {
+    inline def apply(constraints: String): ColumnDef = {
       val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnDef]
     }
     
-    @scala.inline
-    implicit class ColumnDefMutableBuilder[Self <: ColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnDef](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeignKey(value: js.Any): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
+      inline def setForeignKey(value: js.Any): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
+      inline def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     }
   }
   
@@ -502,66 +497,47 @@ object mod {
   }
   object ColumnSpec {
     
-    @scala.inline
-    def apply(`type`: String): ColumnSpec = {
+    inline def apply(`type`: String): ColumnSpec = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnSpec]
     }
     
-    @scala.inline
-    implicit class ColumnSpecMutableBuilder[Self <: ColumnSpec] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnSpec](x: Self) {
       
-      @scala.inline
-      def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
+      inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
+      inline def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setForeignKey(value: ForeignKeySpec): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
+      inline def setForeignKey(value: ForeignKeySpec): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
+      inline def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
+      inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+      inline def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
       
-      @scala.inline
-      def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+      inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
       
-      @scala.inline
-      def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
+      inline def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
+      inline def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
     }
   }
   
@@ -573,29 +549,22 @@ object mod {
   }
   object CreateTableOptions {
     
-    @scala.inline
-    def apply(): CreateTableOptions = {
+    inline def apply(): CreateTableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateTableOptions]
     }
     
-    @scala.inline
-    implicit class CreateTableOptionsMutableBuilder[Self <: CreateTableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTableOptions](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnSpec]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnSpec]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: ColumnSpec*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnSpec*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
+      inline def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfNotExistsUndefined: Self = StObject.set(x, "ifNotExists", js.undefined)
+      inline def setIfNotExistsUndefined: Self = StObject.set(x, "ifNotExists", js.undefined)
     }
   }
   
@@ -605,20 +574,16 @@ object mod {
   }
   object DropTableOptions {
     
-    @scala.inline
-    def apply(): DropTableOptions = {
+    inline def apply(): DropTableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropTableOptions]
     }
     
-    @scala.inline
-    implicit class DropTableOptionsMutableBuilder[Self <: DropTableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DropTableOptions](x: Self) {
       
-      @scala.inline
-      def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
+      inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
+      inline def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
     }
   }
   
@@ -630,20 +595,16 @@ object mod {
   }
   object ForeignKeyRules {
     
-    @scala.inline
-    def apply(onDelete: String, onUpdate: String): ForeignKeyRules = {
+    inline def apply(onDelete: String, onUpdate: String): ForeignKeyRules = {
       val __obj = js.Dynamic.literal(onDelete = onDelete.asInstanceOf[js.Any], onUpdate = onUpdate.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForeignKeyRules]
     }
     
-    @scala.inline
-    implicit class ForeignKeyRulesMutableBuilder[Self <: ForeignKeyRules] (val x: Self) extends AnyVal {
+    extension [Self <: ForeignKeyRules](x: Self) {
       
-      @scala.inline
-      def setOnDelete(value: String): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: String): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdate(value: String): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: String): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -659,29 +620,22 @@ object mod {
   }
   object ForeignKeySpec {
     
-    @scala.inline
-    def apply(mapping: String | js.Any, name: String, table: String): ForeignKeySpec = {
+    inline def apply(mapping: String | js.Any, name: String, table: String): ForeignKeySpec = {
       val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForeignKeySpec]
     }
     
-    @scala.inline
-    implicit class ForeignKeySpecMutableBuilder[Self <: ForeignKeySpec] (val x: Self) extends AnyVal {
+    extension [Self <: ForeignKeySpec](x: Self) {
       
-      @scala.inline
-      def setMapping(value: String | js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: String | js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRules(value: ForeignKeyRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: ForeignKeyRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -693,21 +647,17 @@ object mod {
   }
   object InternalModule {
     
-    @scala.inline
-    def apply(log: js.Any, `type`: js.Any): InternalModule = {
+    inline def apply(log: js.Any, `type`: js.Any): InternalModule = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalModule]
     }
     
-    @scala.inline
-    implicit class InternalModuleMutableBuilder[Self <: InternalModule] (val x: Self) extends AnyVal {
+    extension [Self <: InternalModule](x: Self) {
       
-      @scala.inline
-      def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -717,17 +667,14 @@ object mod {
   }
   object InternalOptions {
     
-    @scala.inline
-    def apply(mod: InternalModule): InternalOptions = {
+    inline def apply(mod: InternalModule): InternalOptions = {
       val __obj = js.Dynamic.literal(mod = mod.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalOptions]
     }
     
-    @scala.inline
-    implicit class InternalOptionsMutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InternalOptions](x: Self) {
       
-      @scala.inline
-      def setMod(value: InternalModule): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+      inline def setMod(value: InternalModule): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
     }
   }
   
@@ -737,20 +684,16 @@ object mod {
   }
   object RemoveForeignKeyOptions {
     
-    @scala.inline
-    def apply(): RemoveForeignKeyOptions = {
+    inline def apply(): RemoveForeignKeyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoveForeignKeyOptions]
     }
     
-    @scala.inline
-    implicit class RemoveForeignKeyOptionsMutableBuilder[Self <: RemoveForeignKeyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveForeignKeyOptions](x: Self) {
       
-      @scala.inline
-      def setDropIndex(value: Boolean): Self = StObject.set(x, "dropIndex", value.asInstanceOf[js.Any])
+      inline def setDropIndex(value: Boolean): Self = StObject.set(x, "dropIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropIndexUndefined: Self = StObject.set(x, "dropIndex", js.undefined)
+      inline def setDropIndexUndefined: Self = StObject.set(x, "dropIndex", js.undefined)
     }
   }
 }

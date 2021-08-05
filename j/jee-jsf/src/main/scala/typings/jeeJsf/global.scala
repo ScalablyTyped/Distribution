@@ -20,15 +20,13 @@ object global {
         * Register a callback for error handling.
         * @param callback a reference to a function to call on an error
         */
-      @scala.inline
-      def addOnError(callback: js.Function1[/* data */ RequestData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addOnError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def addOnError(callback: js.Function1[/* data */ RequestData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addOnError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Register a callback for event handling.
         * @param callback a reference to a function to call on an event
         */
-      @scala.inline
-      def addOnEvent(callback: js.Function1[/* data */ RequestData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addOnEvent")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def addOnEvent(callback: js.Function1[/* data */ RequestData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addOnEvent")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Send an asynchronous Ajax request to the server.
@@ -36,14 +34,10 @@ object global {
         * @param event The DOM event that triggered this Ajax request. The event argument is optional.
         * @param options The set of available options that can be sent as request parameters to control client and/or server side request processing.
         */
-      @scala.inline
-      def request(source: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      @scala.inline
-      def request(source: js.Any, event: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def request(source: js.Any, event: String, options: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def request(source: js.Any, event: Unit, options: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def request(source: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def request(source: js.Any, event: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def request(source: js.Any, event: String, options: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def request(source: js.Any, event: Unit, options: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(source.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Receive an Ajax response from the server.
@@ -51,8 +45,7 @@ object global {
         * @param context An object containing the request context, including the following properties: the source element, per call onerror callback function, and per call onevent callback function.
         * @throws EmptyResponse error if request contains no data
         */
-      @scala.inline
-      def response(request: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("response")(request.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def response(request: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("response")(request.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

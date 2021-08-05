@@ -70,91 +70,63 @@ trait Tape extends StObject {
 }
 object Tape {
   
-  @scala.inline
-  def apply(): Tape = {
+  inline def apply(): Tape = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tape]
   }
   
-  @scala.inline
-  implicit class TapeMutableBuilder[Self <: Tape] (val x: Self) extends AnyVal {
+  extension [Self <: Tape](x: Self) {
     
-    @scala.inline
-    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
+    inline def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
+    inline def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
-    @scala.inline
-    def setPoolEntryDate(value: Time): Self = StObject.set(x, "PoolEntryDate", value.asInstanceOf[js.Any])
+    inline def setPoolEntryDate(value: Time): Self = StObject.set(x, "PoolEntryDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolEntryDateUndefined: Self = StObject.set(x, "PoolEntryDate", js.undefined)
+    inline def setPoolEntryDateUndefined: Self = StObject.set(x, "PoolEntryDate", js.undefined)
     
-    @scala.inline
-    def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
+    inline def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
-    @scala.inline
-    def setProgress(value: DoubleObject): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: DoubleObject): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    @scala.inline
-    def setRetentionStartDate(value: Time): Self = StObject.set(x, "RetentionStartDate", value.asInstanceOf[js.Any])
+    inline def setRetentionStartDate(value: Time): Self = StObject.set(x, "RetentionStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionStartDateUndefined: Self = StObject.set(x, "RetentionStartDate", js.undefined)
+    inline def setRetentionStartDateUndefined: Self = StObject.set(x, "RetentionStartDate", js.undefined)
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
+    inline def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
     
-    @scala.inline
-    def setTapeBarcode(value: TapeBarcode): Self = StObject.set(x, "TapeBarcode", value.asInstanceOf[js.Any])
+    inline def setTapeBarcode(value: TapeBarcode): Self = StObject.set(x, "TapeBarcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeBarcodeUndefined: Self = StObject.set(x, "TapeBarcode", js.undefined)
+    inline def setTapeBarcodeUndefined: Self = StObject.set(x, "TapeBarcode", js.undefined)
     
-    @scala.inline
-    def setTapeCreatedDate(value: Time): Self = StObject.set(x, "TapeCreatedDate", value.asInstanceOf[js.Any])
+    inline def setTapeCreatedDate(value: Time): Self = StObject.set(x, "TapeCreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeCreatedDateUndefined: Self = StObject.set(x, "TapeCreatedDate", js.undefined)
+    inline def setTapeCreatedDateUndefined: Self = StObject.set(x, "TapeCreatedDate", js.undefined)
     
-    @scala.inline
-    def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeSizeInBytesUndefined: Self = StObject.set(x, "TapeSizeInBytes", js.undefined)
+    inline def setTapeSizeInBytesUndefined: Self = StObject.set(x, "TapeSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setTapeStatus(value: TapeStatus): Self = StObject.set(x, "TapeStatus", value.asInstanceOf[js.Any])
+    inline def setTapeStatus(value: TapeStatus): Self = StObject.set(x, "TapeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeStatusUndefined: Self = StObject.set(x, "TapeStatus", js.undefined)
+    inline def setTapeStatusUndefined: Self = StObject.set(x, "TapeStatus", js.undefined)
     
-    @scala.inline
-    def setTapeUsedInBytes(value: TapeUsage): Self = StObject.set(x, "TapeUsedInBytes", value.asInstanceOf[js.Any])
+    inline def setTapeUsedInBytes(value: TapeUsage): Self = StObject.set(x, "TapeUsedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeUsedInBytesUndefined: Self = StObject.set(x, "TapeUsedInBytes", js.undefined)
+    inline def setTapeUsedInBytesUndefined: Self = StObject.set(x, "TapeUsedInBytes", js.undefined)
     
-    @scala.inline
-    def setVTLDevice(value: VTLDeviceARN): Self = StObject.set(x, "VTLDevice", value.asInstanceOf[js.Any])
+    inline def setVTLDevice(value: VTLDeviceARN): Self = StObject.set(x, "VTLDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVTLDeviceUndefined: Self = StObject.set(x, "VTLDevice", js.undefined)
+    inline def setVTLDeviceUndefined: Self = StObject.set(x, "VTLDevice", js.undefined)
     
-    @scala.inline
-    def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
+    inline def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
+    inline def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
   }
 }

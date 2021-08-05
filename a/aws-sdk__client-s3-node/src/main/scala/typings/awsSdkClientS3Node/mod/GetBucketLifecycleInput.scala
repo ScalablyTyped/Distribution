@@ -9,8 +9,7 @@ trait GetBucketLifecycleInput
      with typings.awsSdkClientS3Node.typesGetBucketLifecycleInputMod.GetBucketLifecycleInput
 object GetBucketLifecycleInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketLifecycleInput = {
+  inline def apply(Bucket: String): GetBucketLifecycleInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLifecycleInput]
   }

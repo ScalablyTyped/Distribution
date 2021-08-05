@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFarEastLineBreakLanguageID extends StObject
 object MsoFarEastLineBreakLanguageID {
   
-  @scala.inline
-  def MsoFarEastLineBreakLanguageJapanese: `1041` = 1041.asInstanceOf[`1041`]
+  inline def MsoFarEastLineBreakLanguageJapanese: `1041` = 1041.asInstanceOf[`1041`]
   
-  @scala.inline
-  def MsoFarEastLineBreakLanguageKorean: `1042` = 1042.asInstanceOf[`1042`]
+  inline def MsoFarEastLineBreakLanguageKorean: `1042` = 1042.asInstanceOf[`1042`]
   
-  @scala.inline
-  def MsoFarEastLineBreakLanguageSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
+  inline def MsoFarEastLineBreakLanguageSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
   
-  @scala.inline
-  def MsoFarEastLineBreakLanguageTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
+  inline def MsoFarEastLineBreakLanguageTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
 }

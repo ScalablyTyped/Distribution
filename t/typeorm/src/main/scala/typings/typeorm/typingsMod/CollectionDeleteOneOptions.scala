@@ -28,37 +28,27 @@ trait CollectionDeleteOneOptions extends StObject {
 }
 object CollectionDeleteOneOptions {
   
-  @scala.inline
-  def apply(): CollectionDeleteOneOptions = {
+  inline def apply(): CollectionDeleteOneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionDeleteOneOptions]
   }
   
-  @scala.inline
-  implicit class CollectionDeleteOneOptionsMutableBuilder[Self <: CollectionDeleteOneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionDeleteOneOptions](x: Self) {
     
-    @scala.inline
-    def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
+    inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
+    inline def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
     
-    @scala.inline
-    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
-    @scala.inline
-    def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setWtimmeout(value: scala.Double): Self = StObject.set(x, "wtimmeout", value.asInstanceOf[js.Any])
+    inline def setWtimmeout(value: scala.Double): Self = StObject.set(x, "wtimmeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWtimmeoutUndefined: Self = StObject.set(x, "wtimmeout", js.undefined)
+    inline def setWtimmeoutUndefined: Self = StObject.set(x, "wtimmeout", js.undefined)
   }
 }

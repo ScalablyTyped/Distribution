@@ -18,31 +18,23 @@ trait BatchGetTriggersResponse extends StObject {
 }
 object BatchGetTriggersResponse {
   
-  @scala.inline
-  def apply(): BatchGetTriggersResponse = {
+  inline def apply(): BatchGetTriggersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetTriggersResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetTriggersResponseMutableBuilder[Self <: BatchGetTriggersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetTriggersResponse](x: Self) {
     
-    @scala.inline
-    def setTriggers(value: TriggerList): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
+    inline def setTriggers(value: TriggerList): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggersNotFound(value: TriggerNameList): Self = StObject.set(x, "TriggersNotFound", value.asInstanceOf[js.Any])
+    inline def setTriggersNotFound(value: TriggerNameList): Self = StObject.set(x, "TriggersNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggersNotFoundUndefined: Self = StObject.set(x, "TriggersNotFound", js.undefined)
+    inline def setTriggersNotFoundUndefined: Self = StObject.set(x, "TriggersNotFound", js.undefined)
     
-    @scala.inline
-    def setTriggersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "TriggersNotFound", js.Array(value :_*))
+    inline def setTriggersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "TriggersNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggersUndefined: Self = StObject.set(x, "Triggers", js.undefined)
+    inline def setTriggersUndefined: Self = StObject.set(x, "Triggers", js.undefined)
     
-    @scala.inline
-    def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "Triggers", js.Array(value :_*))
   }
 }

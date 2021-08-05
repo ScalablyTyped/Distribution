@@ -13,19 +13,15 @@ trait MoveReplicationTaskResponse extends StObject {
 }
 object MoveReplicationTaskResponse {
   
-  @scala.inline
-  def apply(): MoveReplicationTaskResponse = {
+  inline def apply(): MoveReplicationTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveReplicationTaskResponse]
   }
   
-  @scala.inline
-  implicit class MoveReplicationTaskResponseMutableBuilder[Self <: MoveReplicationTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MoveReplicationTaskResponse](x: Self) {
     
-    @scala.inline
-    def setReplicationTask(value: ReplicationTask): Self = StObject.set(x, "ReplicationTask", value.asInstanceOf[js.Any])
+    inline def setReplicationTask(value: ReplicationTask): Self = StObject.set(x, "ReplicationTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskUndefined: Self = StObject.set(x, "ReplicationTask", js.undefined)
+    inline def setReplicationTaskUndefined: Self = StObject.set(x, "ReplicationTask", js.undefined)
   }
 }

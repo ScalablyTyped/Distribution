@@ -36,8 +36,7 @@ trait PreparedStatement
 }
 object PreparedStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connection: XConnection,
     CursorName: String,
     FetchDirection: Double,
@@ -110,10 +109,8 @@ object PreparedStatement {
     __obj.asInstanceOf[PreparedStatement]
   }
   
-  @scala.inline
-  implicit class PreparedStatementMutableBuilder[Self <: PreparedStatement] (val x: Self) extends AnyVal {
+  extension [Self <: PreparedStatement](x: Self) {
     
-    @scala.inline
-    def setUseBookmarks(value: Boolean): Self = StObject.set(x, "UseBookmarks", value.asInstanceOf[js.Any])
+    inline def setUseBookmarks(value: Boolean): Self = StObject.set(x, "UseBookmarks", value.asInstanceOf[js.Any])
   }
 }

@@ -34,25 +34,19 @@ trait AutoscalerStatusDetails extends StObject {
 }
 object AutoscalerStatusDetails {
   
-  @scala.inline
-  def apply(): AutoscalerStatusDetails = {
+  inline def apply(): AutoscalerStatusDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoscalerStatusDetails]
   }
   
-  @scala.inline
-  implicit class AutoscalerStatusDetailsMutableBuilder[Self <: AutoscalerStatusDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscalerStatusDetails](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

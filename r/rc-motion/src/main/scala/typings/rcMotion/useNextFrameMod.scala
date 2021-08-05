@@ -11,8 +11,7 @@ object useNextFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Tuple2[
+  inline def default(): js.Tuple2[
     js.Function1[/* callback */ js.Function1[/* info */ IsCanceled, Unit], Unit], 
     js.Function0[Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[

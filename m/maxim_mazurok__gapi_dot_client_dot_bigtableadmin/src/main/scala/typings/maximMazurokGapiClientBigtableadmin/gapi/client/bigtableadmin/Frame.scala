@@ -14,31 +14,23 @@ trait Frame extends StObject {
 }
 object Frame {
   
-  @scala.inline
-  def apply(): Frame = {
+  inline def apply(): Frame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Frame]
   }
   
-  @scala.inline
-  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
+  extension [Self <: Frame](x: Self) {
     
-    @scala.inline
-    def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+    inline def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
+    inline def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
     
-    @scala.inline
-    def setWorkflowGuid(value: String): Self = StObject.set(x, "workflowGuid", value.asInstanceOf[js.Any])
+    inline def setWorkflowGuid(value: String): Self = StObject.set(x, "workflowGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowGuidUndefined: Self = StObject.set(x, "workflowGuid", js.undefined)
+    inline def setWorkflowGuidUndefined: Self = StObject.set(x, "workflowGuid", js.undefined)
     
-    @scala.inline
-    def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+    inline def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+    inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
   }
 }

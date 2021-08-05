@@ -44,8 +44,7 @@ trait EntityEventMap extends StObject {
 }
 object EntityEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `child-attached`: DetailEvent[El],
     `child-detached`: DetailEvent[El],
     componentchanged: DetailEvent[Id],
@@ -64,40 +63,28 @@ object EntityEventMap {
     __obj.asInstanceOf[EntityEventMap]
   }
   
-  @scala.inline
-  implicit class EntityEventMapMutableBuilder[Self <: EntityEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: EntityEventMap](x: Self) {
     
-    @scala.inline
-    def `setChild-attached`(value: DetailEvent[El]): Self = StObject.set(x, "child-attached", value.asInstanceOf[js.Any])
+    inline def `setChild-attached`(value: DetailEvent[El]): Self = StObject.set(x, "child-attached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setChild-detached`(value: DetailEvent[El]): Self = StObject.set(x, "child-detached", value.asInstanceOf[js.Any])
+    inline def `setChild-detached`(value: DetailEvent[El]): Self = StObject.set(x, "child-detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentchanged(value: DetailEvent[Id]): Self = StObject.set(x, "componentchanged", value.asInstanceOf[js.Any])
+    inline def setComponentchanged(value: DetailEvent[Id]): Self = StObject.set(x, "componentchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentinitialized(value: DetailEvent[Data]): Self = StObject.set(x, "componentinitialized", value.asInstanceOf[js.Any])
+    inline def setComponentinitialized(value: DetailEvent[Data]): Self = StObject.set(x, "componentinitialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentremoved(value: DetailEvent[Name]): Self = StObject.set(x, "componentremoved", value.asInstanceOf[js.Any])
+    inline def setComponentremoved(value: DetailEvent[Name]): Self = StObject.set(x, "componentremoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: /* evt */ Event => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
+    inline def setLoaded(value: /* evt */ Event => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPause(value: /* evt */ Event => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
+    inline def setPause(value: /* evt */ Event => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPlay(value: /* evt */ Event => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
+    inline def setPlay(value: /* evt */ Event => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSchemachanged(value: DetailEvent[ComponentName]): Self = StObject.set(x, "schemachanged", value.asInstanceOf[js.Any])
+    inline def setSchemachanged(value: DetailEvent[ComponentName]): Self = StObject.set(x, "schemachanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateadded(value: DetailEvent[State]): Self = StObject.set(x, "stateadded", value.asInstanceOf[js.Any])
+    inline def setStateadded(value: DetailEvent[State]): Self = StObject.set(x, "stateadded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateremoved(value: DetailEvent[State]): Self = StObject.set(x, "stateremoved", value.asInstanceOf[js.Any])
+    inline def setStateremoved(value: DetailEvent[State]): Self = StObject.set(x, "stateremoved", value.asInstanceOf[js.Any])
   }
 }

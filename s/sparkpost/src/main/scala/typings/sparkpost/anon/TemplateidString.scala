@@ -10,16 +10,13 @@ trait TemplateidString extends StObject {
 }
 object TemplateidString {
   
-  @scala.inline
-  def apply(template_id: String): TemplateidString = {
+  inline def apply(template_id: String): TemplateidString = {
     val __obj = js.Dynamic.literal(template_id = template_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateidString]
   }
   
-  @scala.inline
-  implicit class TemplateidStringMutableBuilder[Self <: TemplateidString] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateidString](x: Self) {
     
-    @scala.inline
-    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
+    inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait ServiceCreateResponse extends StObject {
 }
 object ServiceCreateResponse {
   
-  @scala.inline
-  def apply(ID: String): ServiceCreateResponse = {
+  inline def apply(ID: String): ServiceCreateResponse = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceCreateResponse]
   }
   
-  @scala.inline
-  implicit class ServiceCreateResponseMutableBuilder[Self <: ServiceCreateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceCreateResponse](x: Self) {
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
   }
 }

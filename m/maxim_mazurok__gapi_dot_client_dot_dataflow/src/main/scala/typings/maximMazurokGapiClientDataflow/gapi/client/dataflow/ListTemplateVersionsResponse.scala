@@ -14,28 +14,21 @@ trait ListTemplateVersionsResponse extends StObject {
 }
 object ListTemplateVersionsResponse {
   
-  @scala.inline
-  def apply(): ListTemplateVersionsResponse = {
+  inline def apply(): ListTemplateVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTemplateVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListTemplateVersionsResponseMutableBuilder[Self <: ListTemplateVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTemplateVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTemplateVersions(value: js.Array[TemplateVersion]): Self = StObject.set(x, "templateVersions", value.asInstanceOf[js.Any])
+    inline def setTemplateVersions(value: js.Array[TemplateVersion]): Self = StObject.set(x, "templateVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateVersionsUndefined: Self = StObject.set(x, "templateVersions", js.undefined)
+    inline def setTemplateVersionsUndefined: Self = StObject.set(x, "templateVersions", js.undefined)
     
-    @scala.inline
-    def setTemplateVersionsVarargs(value: TemplateVersion*): Self = StObject.set(x, "templateVersions", js.Array(value :_*))
+    inline def setTemplateVersionsVarargs(value: TemplateVersion*): Self = StObject.set(x, "templateVersions", js.Array(value :_*))
   }
 }

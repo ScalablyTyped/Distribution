@@ -28,16 +28,13 @@ trait Ribbon extends StObject {
 }
 object Ribbon {
   
-  @scala.inline
-  def apply(requestUpdate: RibbonUpdaterData => js.Promise[Unit]): Ribbon = {
+  inline def apply(requestUpdate: RibbonUpdaterData => js.Promise[Unit]): Ribbon = {
     val __obj = js.Dynamic.literal(requestUpdate = js.Any.fromFunction1(requestUpdate))
     __obj.asInstanceOf[Ribbon]
   }
   
-  @scala.inline
-  implicit class RibbonMutableBuilder[Self <: Ribbon] (val x: Self) extends AnyVal {
+  extension [Self <: Ribbon](x: Self) {
     
-    @scala.inline
-    def setRequestUpdate(value: RibbonUpdaterData => js.Promise[Unit]): Self = StObject.set(x, "requestUpdate", js.Any.fromFunction1(value))
+    inline def setRequestUpdate(value: RibbonUpdaterData => js.Promise[Unit]): Self = StObject.set(x, "requestUpdate", js.Any.fromFunction1(value))
   }
 }

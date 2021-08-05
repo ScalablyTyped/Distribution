@@ -12,25 +12,19 @@ trait GridScrollable extends StObject {
 }
 object GridScrollable {
   
-  @scala.inline
-  def apply(): GridScrollable = {
+  inline def apply(): GridScrollable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridScrollable]
   }
   
-  @scala.inline
-  implicit class GridScrollableMutableBuilder[Self <: GridScrollable] (val x: Self) extends AnyVal {
+  extension [Self <: GridScrollable](x: Self) {
     
-    @scala.inline
-    def setEndless(value: Boolean): Self = StObject.set(x, "endless", value.asInstanceOf[js.Any])
+    inline def setEndless(value: Boolean): Self = StObject.set(x, "endless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndlessUndefined: Self = StObject.set(x, "endless", js.undefined)
+    inline def setEndlessUndefined: Self = StObject.set(x, "endless", js.undefined)
     
-    @scala.inline
-    def setVirtual(value: Boolean | String): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+    inline def setVirtual(value: Boolean | String): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+    inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
   }
 }

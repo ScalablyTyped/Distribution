@@ -15,25 +15,19 @@ trait CollectionUsage extends StObject {
 }
 object CollectionUsage {
   
-  @scala.inline
-  def apply(): CollectionUsage = {
+  inline def apply(): CollectionUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionUsage]
   }
   
-  @scala.inline
-  implicit class CollectionUsageMutableBuilder[Self <: CollectionUsage] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionUsage](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
+    inline def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
-    @scala.inline
-    def setMaximum_allowed(value: Double): Self = StObject.set(x, "maximum_allowed", value.asInstanceOf[js.Any])
+    inline def setMaximum_allowed(value: Double): Self = StObject.set(x, "maximum_allowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum_allowedUndefined: Self = StObject.set(x, "maximum_allowed", js.undefined)
+    inline def setMaximum_allowedUndefined: Self = StObject.set(x, "maximum_allowed", js.undefined)
   }
 }

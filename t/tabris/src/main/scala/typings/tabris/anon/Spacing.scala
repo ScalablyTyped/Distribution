@@ -16,25 +16,19 @@ trait Spacing extends StObject {
 }
 object Spacing {
   
-  @scala.inline
-  def apply(): Spacing = {
+  inline def apply(): Spacing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Spacing]
   }
   
-  @scala.inline
-  implicit class SpacingMutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
+  extension [Self <: Spacing](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: left | centerX | stretchX | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: left | centerX | stretchX | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

@@ -26,19 +26,15 @@ trait MML2jaxPreprocessor extends StObject {
 }
 object MML2jaxPreprocessor {
   
-  @scala.inline
-  def apply(): MML2jaxPreprocessor = {
+  inline def apply(): MML2jaxPreprocessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MML2jaxPreprocessor]
   }
   
-  @scala.inline
-  implicit class MML2jaxPreprocessorMutableBuilder[Self <: MML2jaxPreprocessor] (val x: Self) extends AnyVal {
+  extension [Self <: MML2jaxPreprocessor](x: Self) {
     
-    @scala.inline
-    def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
   }
 }

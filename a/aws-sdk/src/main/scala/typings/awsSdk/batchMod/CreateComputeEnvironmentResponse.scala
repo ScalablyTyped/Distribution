@@ -18,25 +18,19 @@ trait CreateComputeEnvironmentResponse extends StObject {
 }
 object CreateComputeEnvironmentResponse {
   
-  @scala.inline
-  def apply(): CreateComputeEnvironmentResponse = {
+  inline def apply(): CreateComputeEnvironmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateComputeEnvironmentResponse]
   }
   
-  @scala.inline
-  implicit class CreateComputeEnvironmentResponseMutableBuilder[Self <: CreateComputeEnvironmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateComputeEnvironmentResponse](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironmentArn(value: String): Self = StObject.set(x, "computeEnvironmentArn", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironmentArn(value: String): Self = StObject.set(x, "computeEnvironmentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeEnvironmentArnUndefined: Self = StObject.set(x, "computeEnvironmentArn", js.undefined)
+    inline def setComputeEnvironmentArnUndefined: Self = StObject.set(x, "computeEnvironmentArn", js.undefined)
     
-    @scala.inline
-    def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeEnvironmentNameUndefined: Self = StObject.set(x, "computeEnvironmentName", js.undefined)
+    inline def setComputeEnvironmentNameUndefined: Self = StObject.set(x, "computeEnvironmentName", js.undefined)
   }
 }

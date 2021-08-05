@@ -65,87 +65,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoShapeType extends StObject
 object MsoShapeType {
   
-  @scala.inline
-  def msoAutoShape: `1` = 1.asInstanceOf[`1`]
+  inline def msoAutoShape: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCallout: `2` = 2.asInstanceOf[`2`]
+  inline def msoCallout: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoCanvas: `20` = 20.asInstanceOf[`20`]
+  inline def msoCanvas: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def msoChart: `3` = 3.asInstanceOf[`3`]
+  inline def msoChart: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoComment: `4` = 4.asInstanceOf[`4`]
+  inline def msoComment: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoContentApp: `27` = 27.asInstanceOf[`27`]
+  inline def msoContentApp: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def msoDiagram: `21` = 21.asInstanceOf[`21`]
+  inline def msoDiagram: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def msoEmbeddedOLEObject: `7` = 7.asInstanceOf[`7`]
+  inline def msoEmbeddedOLEObject: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoFormControl: `8` = 8.asInstanceOf[`8`]
+  inline def msoFormControl: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoFreeform: `5` = 5.asInstanceOf[`5`]
+  inline def msoFreeform: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoGroup: `6` = 6.asInstanceOf[`6`]
+  inline def msoGroup: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoInk: `22` = 22.asInstanceOf[`22`]
+  inline def msoInk: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def msoInkComment: `23` = 23.asInstanceOf[`23`]
+  inline def msoInkComment: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def msoLine: `9` = 9.asInstanceOf[`9`]
+  inline def msoLine: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoLinkedOLEObject: `10` = 10.asInstanceOf[`10`]
+  inline def msoLinkedOLEObject: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoLinkedPicture: `11` = 11.asInstanceOf[`11`]
+  inline def msoLinkedPicture: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoMedia: `16` = 16.asInstanceOf[`16`]
+  inline def msoMedia: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def msoOLEControlObject: `12` = 12.asInstanceOf[`12`]
+  inline def msoOLEControlObject: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoPicture: `13` = 13.asInstanceOf[`13`]
+  inline def msoPicture: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def msoPlaceholder: `14` = 14.asInstanceOf[`14`]
+  inline def msoPlaceholder: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def msoScriptAnchor: `18` = 18.asInstanceOf[`18`]
+  inline def msoScriptAnchor: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def msoShapeTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoShapeTypeMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoSlicer: `25` = 25.asInstanceOf[`25`]
+  inline def msoSlicer: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def msoSmartArt: `24` = 24.asInstanceOf[`24`]
+  inline def msoSmartArt: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def msoTable: `19` = 19.asInstanceOf[`19`]
+  inline def msoTable: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def msoTextBox: `17` = 17.asInstanceOf[`17`]
+  inline def msoTextBox: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def msoTextEffect: `15` = 15.asInstanceOf[`15`]
+  inline def msoTextEffect: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def msoWebVideo: `26` = 26.asInstanceOf[`26`]
+  inline def msoWebVideo: `26` = 26.asInstanceOf[`26`]
 }

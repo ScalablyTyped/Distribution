@@ -18,19 +18,15 @@ trait PaymentMethodNotification
 }
 object PaymentMethodNotification {
   
-  @scala.inline
-  def apply(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: CustomerId, timestamp: Date): PaymentMethodNotification = {
+  inline def apply(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: CustomerId, timestamp: Date): PaymentMethodNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], revokedPaymentMethodMetadata = revokedPaymentMethodMetadata.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodNotification]
   }
   
-  @scala.inline
-  implicit class PaymentMethodNotificationMutableBuilder[Self <: PaymentMethodNotification] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodNotification](x: Self) {
     
-    @scala.inline
-    def setKind(value: PaymentMethodNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: PaymentMethodNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokedPaymentMethodMetadata(value: CustomerId): Self = StObject.set(x, "revokedPaymentMethodMetadata", value.asInstanceOf[js.Any])
+    inline def setRevokedPaymentMethodMetadata(value: CustomerId): Self = StObject.set(x, "revokedPaymentMethodMetadata", value.asInstanceOf[js.Any])
   }
 }

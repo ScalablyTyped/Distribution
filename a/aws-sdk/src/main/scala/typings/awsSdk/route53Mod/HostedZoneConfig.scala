@@ -18,25 +18,19 @@ trait HostedZoneConfig extends StObject {
 }
 object HostedZoneConfig {
   
-  @scala.inline
-  def apply(): HostedZoneConfig = {
+  inline def apply(): HostedZoneConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostedZoneConfig]
   }
   
-  @scala.inline
-  implicit class HostedZoneConfigMutableBuilder[Self <: HostedZoneConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HostedZoneConfig](x: Self) {
     
-    @scala.inline
-    def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setPrivateZone(value: IsPrivateZone): Self = StObject.set(x, "PrivateZone", value.asInstanceOf[js.Any])
+    inline def setPrivateZone(value: IsPrivateZone): Self = StObject.set(x, "PrivateZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateZoneUndefined: Self = StObject.set(x, "PrivateZone", js.undefined)
+    inline def setPrivateZoneUndefined: Self = StObject.set(x, "PrivateZone", js.undefined)
   }
 }

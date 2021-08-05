@@ -38,49 +38,35 @@ trait InstanceStatusEvent extends StObject {
 }
 object InstanceStatusEvent {
   
-  @scala.inline
-  def apply(): InstanceStatusEvent = {
+  inline def apply(): InstanceStatusEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceStatusEvent]
   }
   
-  @scala.inline
-  implicit class InstanceStatusEventMutableBuilder[Self <: InstanceStatusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceStatusEvent](x: Self) {
     
-    @scala.inline
-    def setCode(value: EventCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: EventCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setInstanceEventId(value: InstanceEventId): Self = StObject.set(x, "InstanceEventId", value.asInstanceOf[js.Any])
+    inline def setInstanceEventId(value: InstanceEventId): Self = StObject.set(x, "InstanceEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceEventIdUndefined: Self = StObject.set(x, "InstanceEventId", js.undefined)
+    inline def setInstanceEventIdUndefined: Self = StObject.set(x, "InstanceEventId", js.undefined)
     
-    @scala.inline
-    def setNotAfter(value: DateTime): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: DateTime): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
+    inline def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
-    @scala.inline
-    def setNotBefore(value: DateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: DateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBeforeDeadline(value: DateTime): Self = StObject.set(x, "NotBeforeDeadline", value.asInstanceOf[js.Any])
+    inline def setNotBeforeDeadline(value: DateTime): Self = StObject.set(x, "NotBeforeDeadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBeforeDeadlineUndefined: Self = StObject.set(x, "NotBeforeDeadline", js.undefined)
+    inline def setNotBeforeDeadlineUndefined: Self = StObject.set(x, "NotBeforeDeadline", js.undefined)
     
-    @scala.inline
-    def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
+    inline def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
   }
 }

@@ -11,7 +11,7 @@ class ɵangularPackagesCoreCoreN protected () extends StObject {
   def this(nativeNode: js.Any, parent: Null, _debugContext: ɵangularPackagesCoreCoreBa) = this()
   def this(nativeNode: js.Any, parent: DebugNode, _debugContext: ɵangularPackagesCoreCoreBa) = this()
   
-  val _debugContext: js.Any = js.native
+  /* private */ val _debugContext: js.Any = js.native
   
   def componentInstance: js.Any = js.native
   

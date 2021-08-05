@@ -18,20 +18,16 @@ trait Fee extends StObject {
 }
 object Fee {
   
-  @scala.inline
-  def apply(amount: MoneyHash, `type`: String): Fee = {
+  inline def apply(amount: MoneyHash, `type`: String): Fee = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fee]
   }
   
-  @scala.inline
-  implicit class FeeMutableBuilder[Self <: Fee] (val x: Self) extends AnyVal {
+  extension [Self <: Fee](x: Self) {
     
-    @scala.inline
-    def setAmount(value: MoneyHash): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: MoneyHash): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

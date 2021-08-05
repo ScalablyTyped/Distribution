@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Section")
 @js.native
-class Section protected ()
+/* private */ class Section ()
   extends StObject
      with typings.activexAccess.Access.Section {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.Section_typekey")
   var AccessDotSection_typekey: typings.activexAccess.Access.Section = js.native
   

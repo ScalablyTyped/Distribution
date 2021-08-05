@@ -12,19 +12,15 @@ trait Affix extends StObject {
 }
 object Affix {
   
-  @scala.inline
-  def apply(affix: Boolean, showInkInFixed: Boolean): Affix = {
+  inline def apply(affix: Boolean, showInkInFixed: Boolean): Affix = {
     val __obj = js.Dynamic.literal(affix = affix.asInstanceOf[js.Any], showInkInFixed = showInkInFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Affix]
   }
   
-  @scala.inline
-  implicit class AffixMutableBuilder[Self <: Affix] (val x: Self) extends AnyVal {
+  extension [Self <: Affix](x: Self) {
     
-    @scala.inline
-    def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
+    inline def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInkInFixed(value: Boolean): Self = StObject.set(x, "showInkInFixed", value.asInstanceOf[js.Any])
+    inline def setShowInkInFixed(value: Boolean): Self = StObject.set(x, "showInkInFixed", value.asInstanceOf[js.Any])
   }
 }

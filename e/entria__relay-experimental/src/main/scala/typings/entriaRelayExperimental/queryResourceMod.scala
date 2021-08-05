@@ -21,11 +21,9 @@ object queryResourceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createQueryResource(environment: Environment): QueryResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryResource")(environment.asInstanceOf[js.Any]).asInstanceOf[QueryResource]
+  inline def createQueryResource(environment: Environment): QueryResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryResource")(environment.asInstanceOf[js.Any]).asInstanceOf[QueryResource]
   
-  @scala.inline
-  def getQueryResourceForEnvironment(environment: Environment): QueryResourceImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryResourceForEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[QueryResourceImpl]
+  inline def getQueryResourceForEnvironment(environment: Environment): QueryResourceImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryResourceForEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[QueryResourceImpl]
   
   /* Rewritten from type alias, can be one of: 
     - typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only`
@@ -36,17 +34,13 @@ object queryResourceMod {
   trait FetchPolicy extends StObject
   object FetchPolicy {
     
-    @scala.inline
-    def `network-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`network-only` = "network-only".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`network-only`]
+    inline def `network-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`network-only` = "network-only".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`network-only`]
     
-    @scala.inline
-    def `store-and-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-and-network` = "store-and-network".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-and-network`]
+    inline def `store-and-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-and-network` = "store-and-network".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-and-network`]
     
-    @scala.inline
-    def `store-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only` = "store-only".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only`]
+    inline def `store-only`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only` = "store-only".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only`]
     
-    @scala.inline
-    def `store-or-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-or-network` = "store-or-network".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-or-network`]
+    inline def `store-or-network`: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-or-network` = "store-or-network".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-or-network`]
   }
   
   type QueryResource = QueryResourceImpl
@@ -277,8 +271,7 @@ object queryResourceMod {
   }
   object QueryResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheKey: String,
       fragmentNode: ReaderFragment,
       fragmentRef: FragmentPointer,
@@ -288,20 +281,15 @@ object queryResourceMod {
       __obj.asInstanceOf[QueryResult]
     }
     
-    @scala.inline
-    implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
+    extension [Self <: QueryResult](x: Self) {
       
-      @scala.inline
-      def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentNode(value: ReaderFragment): Self = StObject.set(x, "fragmentNode", value.asInstanceOf[js.Any])
+      inline def setFragmentNode(value: ReaderFragment): Self = StObject.set(x, "fragmentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentRef(value: FragmentPointer): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
+      inline def setFragmentRef(value: FragmentPointer): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,10 +300,8 @@ object queryResourceMod {
   trait RenderPolicy extends StObject
   object RenderPolicy {
     
-    @scala.inline
-    def full: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.full = "full".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.full]
+    inline def full: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.full = "full".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.full]
     
-    @scala.inline
-    def partial: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.partial = "partial".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.partial]
+    inline def partial: typings.entriaRelayExperimental.entriaRelayExperimentalStrings.partial = "partial".asInstanceOf[typings.entriaRelayExperimental.entriaRelayExperimentalStrings.partial]
   }
 }

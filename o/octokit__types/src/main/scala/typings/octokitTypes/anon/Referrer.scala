@@ -14,22 +14,17 @@ trait Referrer extends StObject {
 }
 object Referrer {
   
-  @scala.inline
-  def apply(count: Double, referrer: String, uniques: Double): Referrer = {
+  inline def apply(count: Double, referrer: String, uniques: Double): Referrer = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
     __obj.asInstanceOf[Referrer]
   }
   
-  @scala.inline
-  implicit class ReferrerMutableBuilder[Self <: Referrer] (val x: Self) extends AnyVal {
+  extension [Self <: Referrer](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
+    inline def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
   }
 }

@@ -33,43 +33,31 @@ trait VoiceMessage extends StObject {
 }
 object VoiceMessage {
   
-  @scala.inline
-  def apply(): VoiceMessage = {
+  inline def apply(): VoiceMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoiceMessage]
   }
   
-  @scala.inline
-  implicit class VoiceMessageMutableBuilder[Self <: VoiceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setOriginationNumber(value: string): Self = StObject.set(x, "OriginationNumber", value.asInstanceOf[js.Any])
+    inline def setOriginationNumber(value: string): Self = StObject.set(x, "OriginationNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginationNumberUndefined: Self = StObject.set(x, "OriginationNumber", js.undefined)
+    inline def setOriginationNumberUndefined: Self = StObject.set(x, "OriginationNumber", js.undefined)
     
-    @scala.inline
-    def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
+    inline def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+    inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     
-    @scala.inline
-    def setVoiceId(value: string): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
+    inline def setVoiceId(value: string): Self = StObject.set(x, "VoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceIdUndefined: Self = StObject.set(x, "VoiceId", js.undefined)
+    inline def setVoiceIdUndefined: Self = StObject.set(x, "VoiceId", js.undefined)
   }
 }

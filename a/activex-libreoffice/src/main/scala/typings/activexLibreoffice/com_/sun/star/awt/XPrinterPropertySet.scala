@@ -54,8 +54,7 @@ trait XPrinterPropertySet
 }
 object XPrinterPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BinarySetup: SafeArray[Double],
     FormDescriptions: SafeArray[String],
     PropertySetInfo: XPropertySetInfo,
@@ -79,28 +78,20 @@ object XPrinterPropertySet {
     __obj.asInstanceOf[XPrinterPropertySet]
   }
   
-  @scala.inline
-  implicit class XPrinterPropertySetMutableBuilder[Self <: XPrinterPropertySet] (val x: Self) extends AnyVal {
+  extension [Self <: XPrinterPropertySet](x: Self) {
     
-    @scala.inline
-    def setBinarySetup(value: SafeArray[Double]): Self = StObject.set(x, "BinarySetup", value.asInstanceOf[js.Any])
+    inline def setBinarySetup(value: SafeArray[Double]): Self = StObject.set(x, "BinarySetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDescriptions(value: SafeArray[String]): Self = StObject.set(x, "FormDescriptions", value.asInstanceOf[js.Any])
+    inline def setFormDescriptions(value: SafeArray[String]): Self = StObject.set(x, "FormDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBinarySetup(value: () => SafeArray[Double]): Self = StObject.set(x, "getBinarySetup", js.Any.fromFunction0(value))
+    inline def setGetBinarySetup(value: () => SafeArray[Double]): Self = StObject.set(x, "getBinarySetup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getFormDescriptions", js.Any.fromFunction0(value))
+    inline def setGetFormDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getFormDescriptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectForm(value: String => Unit): Self = StObject.set(x, "selectForm", js.Any.fromFunction1(value))
+    inline def setSelectForm(value: String => Unit): Self = StObject.set(x, "selectForm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBinarySetup(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setBinarySetup", js.Any.fromFunction1(value))
+    inline def setSetBinarySetup(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setBinarySetup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHorizontal(value: Boolean => Unit): Self = StObject.set(x, "setHorizontal", js.Any.fromFunction1(value))
+    inline def setSetHorizontal(value: Boolean => Unit): Self = StObject.set(x, "setHorizontal", js.Any.fromFunction1(value))
   }
 }

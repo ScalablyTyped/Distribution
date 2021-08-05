@@ -21,6 +21,5 @@ object VideoEffects {
   @JSGlobal("Windows.Media.VideoEffects.videoStabilization")
   @js.native
   def videoStabilization: String = js.native
-  @scala.inline
-  def videoStabilization_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("videoStabilization")(x.asInstanceOf[js.Any])
+  inline def videoStabilization_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("videoStabilization")(x.asInstanceOf[js.Any])
 }

@@ -29,31 +29,22 @@ object FrameSearchFlag {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL: `23` = 23.asInstanceOf[`23`]
+    inline def ALL: `23` = 23.asInstanceOf[`23`]
     
-    @scala.inline
-    def AUTO: `0` = 0.asInstanceOf[`0`]
+    inline def AUTO: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def CHILDREN: `4` = 4.asInstanceOf[`4`]
+    inline def CHILDREN: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def CREATE: `8` = 8.asInstanceOf[`8`]
+    inline def CREATE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def GLOBAL: `55` = 55.asInstanceOf[`55`]
+    inline def GLOBAL: `55` = 55.asInstanceOf[`55`]
     
-    @scala.inline
-    def PARENT: `1` = 1.asInstanceOf[`1`]
+    inline def PARENT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SELF: `2` = 2.asInstanceOf[`2`]
+    inline def SELF: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SIBLINGS: `16` = 16.asInstanceOf[`16`]
+    inline def SIBLINGS: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def TASKS: `32` = 32.asInstanceOf[`32`]
+    inline def TASKS: `32` = 32.asInstanceOf[`32`]
   }
 }

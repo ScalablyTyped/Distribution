@@ -18,25 +18,19 @@ trait IcmpTypeCode extends StObject {
 }
 object IcmpTypeCode {
   
-  @scala.inline
-  def apply(): IcmpTypeCode = {
+  inline def apply(): IcmpTypeCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IcmpTypeCode]
   }
   
-  @scala.inline
-  implicit class IcmpTypeCodeMutableBuilder[Self <: IcmpTypeCode] (val x: Self) extends AnyVal {
+  extension [Self <: IcmpTypeCode](x: Self) {
     
-    @scala.inline
-    def setCode(value: Integer): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Integer): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setType(value: Integer): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Integer): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

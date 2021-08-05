@@ -20,25 +20,19 @@ trait SchemaTeardownTag extends StObject {
 }
 object SchemaTeardownTag {
   
-  @scala.inline
-  def apply(): SchemaTeardownTag = {
+  inline def apply(): SchemaTeardownTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTeardownTag]
   }
   
-  @scala.inline
-  implicit class SchemaTeardownTagMutableBuilder[Self <: SchemaTeardownTag] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTeardownTag](x: Self) {
     
-    @scala.inline
-    def setStopTeardownOnFailure(value: Boolean): Self = StObject.set(x, "stopTeardownOnFailure", value.asInstanceOf[js.Any])
+    inline def setStopTeardownOnFailure(value: Boolean): Self = StObject.set(x, "stopTeardownOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopTeardownOnFailureUndefined: Self = StObject.set(x, "stopTeardownOnFailure", js.undefined)
+    inline def setStopTeardownOnFailureUndefined: Self = StObject.set(x, "stopTeardownOnFailure", js.undefined)
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }

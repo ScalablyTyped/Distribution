@@ -27,25 +27,19 @@ trait NonResourcePolicyRule extends StObject {
 }
 object NonResourcePolicyRule {
   
-  @scala.inline
-  def apply(nonResourceURLs: js.Array[String], verbs: js.Array[String]): NonResourcePolicyRule = {
+  inline def apply(nonResourceURLs: js.Array[String], verbs: js.Array[String]): NonResourcePolicyRule = {
     val __obj = js.Dynamic.literal(nonResourceURLs = nonResourceURLs.asInstanceOf[js.Any], verbs = verbs.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonResourcePolicyRule]
   }
   
-  @scala.inline
-  implicit class NonResourcePolicyRuleMutableBuilder[Self <: NonResourcePolicyRule] (val x: Self) extends AnyVal {
+  extension [Self <: NonResourcePolicyRule](x: Self) {
     
-    @scala.inline
-    def setNonResourceURLs(value: js.Array[String]): Self = StObject.set(x, "nonResourceURLs", value.asInstanceOf[js.Any])
+    inline def setNonResourceURLs(value: js.Array[String]): Self = StObject.set(x, "nonResourceURLs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonResourceURLsVarargs(value: String*): Self = StObject.set(x, "nonResourceURLs", js.Array(value :_*))
+    inline def setNonResourceURLsVarargs(value: String*): Self = StObject.set(x, "nonResourceURLs", js.Array(value :_*))
     
-    @scala.inline
-    def setVerbs(value: js.Array[String]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
+    inline def setVerbs(value: js.Array[String]): Self = StObject.set(x, "verbs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbsVarargs(value: String*): Self = StObject.set(x, "verbs", js.Array(value :_*))
+    inline def setVerbsVarargs(value: String*): Self = StObject.set(x, "verbs", js.Array(value :_*))
   }
 }

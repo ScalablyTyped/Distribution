@@ -14,25 +14,19 @@ trait BBox extends StObject {
 }
 object BBox {
   
-  @scala.inline
-  def apply(x: MinMax, y: MinMax): BBox = {
+  inline def apply(x: MinMax, y: MinMax): BBox = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[BBox]
   }
   
-  @scala.inline
-  implicit class BBoxMutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
+  extension [Self <: BBox](x: Self) {
     
-    @scala.inline
-    def setX(value: MinMax): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: MinMax): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: MinMax): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: MinMax): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: MinMax): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: MinMax): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

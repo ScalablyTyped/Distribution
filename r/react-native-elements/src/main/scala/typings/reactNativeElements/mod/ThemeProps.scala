@@ -15,8 +15,7 @@ trait ThemeProps[T] extends StObject {
 }
 object ThemeProps {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     replaceTheme: /* updates */ RecursivePartialFullTheme => Unit,
     theme: Theme[T],
     updateTheme: /* updates */ RecursivePartialFullTheme => Unit
@@ -25,16 +24,12 @@ object ThemeProps {
     __obj.asInstanceOf[ThemeProps[T]]
   }
   
-  @scala.inline
-  implicit class ThemePropsMutableBuilder[Self <: ThemeProps[?], T] (val x: Self & ThemeProps[T]) extends AnyVal {
+  extension [Self <: ThemeProps[?], T](x: Self & ThemeProps[T]) {
     
-    @scala.inline
-    def setReplaceTheme(value: /* updates */ RecursivePartialFullTheme => Unit): Self = StObject.set(x, "replaceTheme", js.Any.fromFunction1(value))
+    inline def setReplaceTheme(value: /* updates */ RecursivePartialFullTheme => Unit): Self = StObject.set(x, "replaceTheme", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTheme(value: Theme[T]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Theme[T]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTheme(value: /* updates */ RecursivePartialFullTheme => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
+    inline def setUpdateTheme(value: /* updates */ RecursivePartialFullTheme => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
   }
 }

@@ -18,25 +18,19 @@ trait DiskImageVolumeDescription extends StObject {
 }
 object DiskImageVolumeDescription {
   
-  @scala.inline
-  def apply(): DiskImageVolumeDescription = {
+  inline def apply(): DiskImageVolumeDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskImageVolumeDescription]
   }
   
-  @scala.inline
-  implicit class DiskImageVolumeDescriptionMutableBuilder[Self <: DiskImageVolumeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DiskImageVolumeDescription](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

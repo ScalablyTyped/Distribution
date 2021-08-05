@@ -8,11 +8,9 @@ object materialTabsStrings {
   
   @js.native
   sealed trait click extends StObject
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait resize extends StObject
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
+  inline def resize: resize = "resize".asInstanceOf[resize]
 }

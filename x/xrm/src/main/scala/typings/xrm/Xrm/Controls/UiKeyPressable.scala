@@ -36,8 +36,7 @@ trait UiKeyPressable extends StObject {
 }
 object UiKeyPressable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addOnKeyPress: ContextSensitiveHandler => Unit,
     fireOnKeyPress: () => Unit,
     removeOnKeyPress: ContextSensitiveHandler => Unit
@@ -46,16 +45,12 @@ object UiKeyPressable {
     __obj.asInstanceOf[UiKeyPressable]
   }
   
-  @scala.inline
-  implicit class UiKeyPressableMutableBuilder[Self <: UiKeyPressable] (val x: Self) extends AnyVal {
+  extension [Self <: UiKeyPressable](x: Self) {
     
-    @scala.inline
-    def setAddOnKeyPress(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnKeyPress", js.Any.fromFunction1(value))
+    inline def setAddOnKeyPress(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnKeyPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFireOnKeyPress(value: () => Unit): Self = StObject.set(x, "fireOnKeyPress", js.Any.fromFunction0(value))
+    inline def setFireOnKeyPress(value: () => Unit): Self = StObject.set(x, "fireOnKeyPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveOnKeyPress(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeOnKeyPress", js.Any.fromFunction1(value))
+    inline def setRemoveOnKeyPress(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeOnKeyPress", js.Any.fromFunction1(value))
   }
 }

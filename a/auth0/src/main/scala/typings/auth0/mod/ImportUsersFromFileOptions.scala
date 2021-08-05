@@ -13,16 +13,13 @@ trait ImportUsersFromFileOptions
 }
 object ImportUsersFromFileOptions {
   
-  @scala.inline
-  def apply(connection_id: String, users: String): ImportUsersFromFileOptions = {
+  inline def apply(connection_id: String, users: String): ImportUsersFromFileOptions = {
     val __obj = js.Dynamic.literal(connection_id = connection_id.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportUsersFromFileOptions]
   }
   
-  @scala.inline
-  implicit class ImportUsersFromFileOptionsMutableBuilder[Self <: ImportUsersFromFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImportUsersFromFileOptions](x: Self) {
     
-    @scala.inline
-    def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

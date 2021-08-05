@@ -16,34 +16,25 @@ trait IosMobileAppConfiguration
 }
 object IosMobileAppConfiguration {
   
-  @scala.inline
-  def apply(): IosMobileAppConfiguration = {
+  inline def apply(): IosMobileAppConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosMobileAppConfiguration]
   }
   
-  @scala.inline
-  implicit class IosMobileAppConfigurationMutableBuilder[Self <: IosMobileAppConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: IosMobileAppConfiguration](x: Self) {
     
-    @scala.inline
-    def setEncodedSettingXml(value: NullableOption[Double]): Self = StObject.set(x, "encodedSettingXml", value.asInstanceOf[js.Any])
+    inline def setEncodedSettingXml(value: NullableOption[Double]): Self = StObject.set(x, "encodedSettingXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedSettingXmlNull: Self = StObject.set(x, "encodedSettingXml", null)
+    inline def setEncodedSettingXmlNull: Self = StObject.set(x, "encodedSettingXml", null)
     
-    @scala.inline
-    def setEncodedSettingXmlUndefined: Self = StObject.set(x, "encodedSettingXml", js.undefined)
+    inline def setEncodedSettingXmlUndefined: Self = StObject.set(x, "encodedSettingXml", js.undefined)
     
-    @scala.inline
-    def setSettings(value: NullableOption[js.Array[AppConfigurationSettingItem]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: NullableOption[js.Array[AppConfigurationSettingItem]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsNull: Self = StObject.set(x, "settings", null)
+    inline def setSettingsNull: Self = StObject.set(x, "settings", null)
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: AppConfigurationSettingItem*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: AppConfigurationSettingItem*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

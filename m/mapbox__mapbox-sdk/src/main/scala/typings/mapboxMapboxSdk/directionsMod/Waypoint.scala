@@ -37,37 +37,27 @@ trait Waypoint extends StObject {
 }
 object Waypoint {
   
-  @scala.inline
-  def apply(location: js.Array[Double], name: String): Waypoint = {
+  inline def apply(location: js.Array[Double], name: String): Waypoint = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waypoint]
   }
   
-  @scala.inline
-  implicit class WaypointMutableBuilder[Self <: Waypoint] (val x: Self) extends AnyVal {
+  extension [Self <: Waypoint](x: Self) {
     
-    @scala.inline
-    def setBearing(value: js.Array[Double]): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    inline def setBearing(value: js.Array[Double]): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
+    inline def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
-    @scala.inline
-    def setBearingVarargs(value: Double*): Self = StObject.set(x, "bearing", js.Array(value :_*))
+    inline def setBearingVarargs(value: Double*): Self = StObject.set(x, "bearing", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointName(value: String): Self = StObject.set(x, "waypointName", value.asInstanceOf[js.Any])
+    inline def setWaypointName(value: String): Self = StObject.set(x, "waypointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointNameUndefined: Self = StObject.set(x, "waypointName", js.undefined)
+    inline def setWaypointNameUndefined: Self = StObject.set(x, "waypointName", js.undefined)
   }
 }

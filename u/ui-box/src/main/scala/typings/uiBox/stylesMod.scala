@@ -10,12 +10,9 @@ object stylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(styles: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def add(styles: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getAll(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[String]
+  inline def getAll(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[String]
 }

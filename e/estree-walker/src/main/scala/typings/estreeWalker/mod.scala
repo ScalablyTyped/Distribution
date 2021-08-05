@@ -13,9 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asyncWalk(ast: BaseNode, walker: AsyncWalker): js.Promise[BaseNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BaseNode]]
+  inline def asyncWalk(ast: BaseNode, walker: AsyncWalker): js.Promise[BaseNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BaseNode]]
   
-  @scala.inline
-  def walk(ast: BaseNode, walker: SyncWalker): BaseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[BaseNode]
+  inline def walk(ast: BaseNode, walker: SyncWalker): BaseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], walker.asInstanceOf[js.Any])).asInstanceOf[BaseNode]
 }

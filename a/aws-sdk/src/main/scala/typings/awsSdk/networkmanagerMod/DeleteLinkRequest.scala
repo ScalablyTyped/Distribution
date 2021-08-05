@@ -18,19 +18,15 @@ trait DeleteLinkRequest extends StObject {
 }
 object DeleteLinkRequest {
   
-  @scala.inline
-  def apply(GlobalNetworkId: String, LinkId: String): DeleteLinkRequest = {
+  inline def apply(GlobalNetworkId: String, LinkId: String): DeleteLinkRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], LinkId = LinkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLinkRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLinkRequestMutableBuilder[Self <: DeleteLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLinkRequest](x: Self) {
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
   }
 }

@@ -42,32 +42,24 @@ object mod extends Shortcut {
   }
   object DefaultOptions {
     
-    @scala.inline
-    def apply(): DefaultOptions = {
+    inline def apply(): DefaultOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    @scala.inline
-    implicit class DefaultOptionsMutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultOptions](x: Self) {
       
-      @scala.inline
-      def setNoIcon(value: Boolean): Self = StObject.set(x, "noIcon", value.asInstanceOf[js.Any])
+      inline def setNoIcon(value: Boolean): Self = StObject.set(x, "noIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoIconUndefined: Self = StObject.set(x, "noIcon", js.undefined)
+      inline def setNoIconUndefined: Self = StObject.set(x, "noIcon", js.undefined)
       
-      @scala.inline
-      def setNoPlugin(value: Boolean): Self = StObject.set(x, "noPlugin", value.asInstanceOf[js.Any])
+      inline def setNoPlugin(value: Boolean): Self = StObject.set(x, "noPlugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoPluginUndefined: Self = StObject.set(x, "noPlugin", js.undefined)
+      inline def setNoPluginUndefined: Self = StObject.set(x, "noPlugin", js.undefined)
       
-      @scala.inline
-      def setSortByPosition(value: Boolean): Self = StObject.set(x, "sortByPosition", value.asInstanceOf[js.Any])
+      inline def setSortByPosition(value: Boolean): Self = StObject.set(x, "sortByPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortByPositionUndefined: Self = StObject.set(x, "sortByPosition", js.undefined)
+      inline def setSortByPositionUndefined: Self = StObject.set(x, "sortByPosition", js.undefined)
     }
   }
   
@@ -127,59 +119,42 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClearAllMessages(value: Boolean): Self = StObject.set(x, "clearAllMessages", value.asInstanceOf[js.Any])
+      inline def setClearAllMessages(value: Boolean): Self = StObject.set(x, "clearAllMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearAllMessagesUndefined: Self = StObject.set(x, "clearAllMessages", js.undefined)
+      inline def setClearAllMessagesUndefined: Self = StObject.set(x, "clearAllMessages", js.undefined)
       
-      @scala.inline
-      def setClearReportedMessages(value: Boolean): Self = StObject.set(x, "clearReportedMessages", value.asInstanceOf[js.Any])
+      inline def setClearReportedMessages(value: Boolean): Self = StObject.set(x, "clearReportedMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearReportedMessagesUndefined: Self = StObject.set(x, "clearReportedMessages", js.undefined)
+      inline def setClearReportedMessagesUndefined: Self = StObject.set(x, "clearReportedMessages", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* message */ ResultMessage => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* message */ ResultMessage => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: /* input */ Messages => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* input */ Messages => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setPositionless(value: first | last | any): Self = StObject.set(x, "positionless", value.asInstanceOf[js.Any])
+      inline def setPositionless(value: first | last | any): Self = StObject.set(x, "positionless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionlessUndefined: Self = StObject.set(x, "positionless", js.undefined)
+      inline def setPositionlessUndefined: Self = StObject.set(x, "positionless", js.undefined)
       
-      @scala.inline
-      def setThrowError(value: Boolean): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
+      inline def setThrowError(value: Boolean): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowErrorUndefined: Self = StObject.set(x, "throwError", js.undefined)
+      inline def setThrowErrorUndefined: Self = StObject.set(x, "throwError", js.undefined)
     }
   }
   

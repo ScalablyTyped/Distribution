@@ -17,13 +17,10 @@ object SectionPageBreak {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTO: `2` = 2.asInstanceOf[`2`]
+    inline def AUTO: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SECTION: `1` = 1.asInstanceOf[`1`]
+    inline def SECTION: `1` = 1.asInstanceOf[`1`]
   }
 }

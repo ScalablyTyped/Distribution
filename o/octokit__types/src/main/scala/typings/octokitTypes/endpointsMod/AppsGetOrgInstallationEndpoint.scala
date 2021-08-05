@@ -11,17 +11,14 @@ trait AppsGetOrgInstallationEndpoint extends StObject {
 }
 object AppsGetOrgInstallationEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): AppsGetOrgInstallationEndpoint = {
+  inline def apply(org_ : String): AppsGetOrgInstallationEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsGetOrgInstallationEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsGetOrgInstallationEndpointMutableBuilder[Self <: AppsGetOrgInstallationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsGetOrgInstallationEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

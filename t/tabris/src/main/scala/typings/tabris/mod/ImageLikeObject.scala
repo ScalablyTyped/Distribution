@@ -20,34 +20,25 @@ trait ImageLikeObject
 }
 object ImageLikeObject {
   
-  @scala.inline
-  def apply(src: String | ImageBitmap | Blob): ImageLikeObject = {
+  inline def apply(src: String | ImageBitmap | Blob): ImageLikeObject = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLikeObject]
   }
   
-  @scala.inline
-  implicit class ImageLikeObjectMutableBuilder[Self <: ImageLikeObject] (val x: Self) extends AnyVal {
+  extension [Self <: ImageLikeObject](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double | auto): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double | auto): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String | ImageBitmap | Blob): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String | ImageBitmap | Blob): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

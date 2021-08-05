@@ -21,49 +21,35 @@ trait PartialTypeAction extends StObject {
 }
 object PartialTypeAction {
   
-  @scala.inline
-  def apply(): PartialTypeAction = {
+  inline def apply(): PartialTypeAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTypeAction]
   }
   
-  @scala.inline
-  implicit class PartialTypeActionMutableBuilder[Self <: PartialTypeAction] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTypeAction](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledBackground(value: String): Self = StObject.set(x, "disabledBackground", value.asInstanceOf[js.Any])
+    inline def setDisabledBackground(value: String): Self = StObject.set(x, "disabledBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledBackgroundUndefined: Self = StObject.set(x, "disabledBackground", js.undefined)
+    inline def setDisabledBackgroundUndefined: Self = StObject.set(x, "disabledBackground", js.undefined)
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverOpacity(value: Double): Self = StObject.set(x, "hoverOpacity", value.asInstanceOf[js.Any])
+    inline def setHoverOpacity(value: Double): Self = StObject.set(x, "hoverOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverOpacityUndefined: Self = StObject.set(x, "hoverOpacity", js.undefined)
+    inline def setHoverOpacityUndefined: Self = StObject.set(x, "hoverOpacity", js.undefined)
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

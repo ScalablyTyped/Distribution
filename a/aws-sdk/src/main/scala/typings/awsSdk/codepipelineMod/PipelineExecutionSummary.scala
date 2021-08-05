@@ -43,58 +43,41 @@ trait PipelineExecutionSummary extends StObject {
 }
 object PipelineExecutionSummary {
   
-  @scala.inline
-  def apply(): PipelineExecutionSummary = {
+  inline def apply(): PipelineExecutionSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineExecutionSummary]
   }
   
-  @scala.inline
-  implicit class PipelineExecutionSummaryMutableBuilder[Self <: PipelineExecutionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineExecutionSummary](x: Self) {
     
-    @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
+    inline def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
     
-    @scala.inline
-    def setSourceRevisions(value: SourceRevisionList): Self = StObject.set(x, "sourceRevisions", value.asInstanceOf[js.Any])
+    inline def setSourceRevisions(value: SourceRevisionList): Self = StObject.set(x, "sourceRevisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRevisionsUndefined: Self = StObject.set(x, "sourceRevisions", js.undefined)
+    inline def setSourceRevisionsUndefined: Self = StObject.set(x, "sourceRevisions", js.undefined)
     
-    @scala.inline
-    def setSourceRevisionsVarargs(value: SourceRevision*): Self = StObject.set(x, "sourceRevisions", js.Array(value :_*))
+    inline def setSourceRevisionsVarargs(value: SourceRevision*): Self = StObject.set(x, "sourceRevisions", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: PipelineExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PipelineExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStopTrigger(value: StopExecutionTrigger): Self = StObject.set(x, "stopTrigger", value.asInstanceOf[js.Any])
+    inline def setStopTrigger(value: StopExecutionTrigger): Self = StObject.set(x, "stopTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopTriggerUndefined: Self = StObject.set(x, "stopTrigger", js.undefined)
+    inline def setStopTriggerUndefined: Self = StObject.set(x, "stopTrigger", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: ExecutionTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: ExecutionTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

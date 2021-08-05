@@ -43,52 +43,37 @@ trait MeasureSupplementalData
 }
 object MeasureSupplementalData {
   
-  @scala.inline
-  def apply(): MeasureSupplementalData = {
+  inline def apply(): MeasureSupplementalData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeasureSupplementalData]
   }
   
-  @scala.inline
-  implicit class MeasureSupplementalDataMutableBuilder[Self <: MeasureSupplementalData] (val x: Self) extends AnyVal {
+  extension [Self <: MeasureSupplementalData](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: String): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: String): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setUsage(value: js.Array[CodeableConcept]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: js.Array[CodeableConcept]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     
-    @scala.inline
-    def setUsageVarargs(value: CodeableConcept*): Self = StObject.set(x, "usage", js.Array(value :_*))
+    inline def setUsageVarargs(value: CodeableConcept*): Self = StObject.set(x, "usage", js.Array(value :_*))
     
-    @scala.inline
-    def set_criteria(value: Element): Self = StObject.set(x, "_criteria", value.asInstanceOf[js.Any])
+    inline def set_criteria(value: Element): Self = StObject.set(x, "_criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_criteriaUndefined: Self = StObject.set(x, "_criteria", js.undefined)
+    inline def set_criteriaUndefined: Self = StObject.set(x, "_criteria", js.undefined)
     
-    @scala.inline
-    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
+    inline def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
+    inline def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
   }
 }

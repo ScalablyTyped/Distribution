@@ -24,12 +24,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EscapeDirection extends StObject
 object EscapeDirection {
   
-  @scala.inline
-  def DOWN: `4` = 4.asInstanceOf[`4`]
+  inline def DOWN: `4` = 4.asInstanceOf[`4`]
   
   /** mirror to the horizontal axis */
-  @scala.inline
-  def HORIZONTAL: `5` = 5.asInstanceOf[`5`]
+  inline def HORIZONTAL: `5` = 5.asInstanceOf[`5`]
   
   /**
     * the connection line leaves the connected object to the left,
@@ -38,8 +36,7 @@ object EscapeDirection {
     *
     * The left edge of the text is adjusted to the left edge of the shape.
     */
-  @scala.inline
-  def LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def LEFT: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the connection line leaves the connected object to the right,
@@ -48,16 +45,12 @@ object EscapeDirection {
     *
     * The right edge of the text is adjusted to the right edge of the shape.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SMART: `0` = 0.asInstanceOf[`0`]
+  inline def SMART: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def UP: `3` = 3.asInstanceOf[`3`]
+  inline def UP: `3` = 3.asInstanceOf[`3`]
   
   /** mirror to the vertical axis */
-  @scala.inline
-  def VERTICAL: `6` = 6.asInstanceOf[`6`]
+  inline def VERTICAL: `6` = 6.asInstanceOf[`6`]
 }

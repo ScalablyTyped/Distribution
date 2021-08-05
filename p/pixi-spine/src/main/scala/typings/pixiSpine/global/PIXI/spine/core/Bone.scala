@@ -31,6 +31,5 @@ object Bone {
   @JSGlobal("PIXI.spine.core.Bone.yDown")
   @js.native
   def yDown: Boolean = js.native
-  @scala.inline
-  def yDown_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yDown")(x.asInstanceOf[js.Any])
+  inline def yDown_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yDown")(x.asInstanceOf[js.Any])
 }

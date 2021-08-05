@@ -17,40 +17,29 @@ trait EmailOwnerDeliveryType extends StObject {
 }
 object EmailOwnerDeliveryType {
   
-  @scala.inline
-  def apply(): EmailOwnerDeliveryType = {
+  inline def apply(): EmailOwnerDeliveryType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailOwnerDeliveryType]
   }
   
-  @scala.inline
-  implicit class EmailOwnerDeliveryTypeMutableBuilder[Self <: EmailOwnerDeliveryType] (val x: Self) extends AnyVal {
+  extension [Self <: EmailOwnerDeliveryType](x: Self) {
     
-    @scala.inline
-    def setEmailOwner(value: Boolean): Self = StObject.set(x, "emailOwner", value.asInstanceOf[js.Any])
+    inline def setEmailOwner(value: Boolean): Self = StObject.set(x, "emailOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailOwnerDeliveryType(value: String): Self = StObject.set(x, "emailOwnerDeliveryType", value.asInstanceOf[js.Any])
+    inline def setEmailOwnerDeliveryType(value: String): Self = StObject.set(x, "emailOwnerDeliveryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailOwnerDeliveryTypeUndefined: Self = StObject.set(x, "emailOwnerDeliveryType", js.undefined)
+    inline def setEmailOwnerDeliveryTypeUndefined: Self = StObject.set(x, "emailOwnerDeliveryType", js.undefined)
     
-    @scala.inline
-    def setEmailOwnerUndefined: Self = StObject.set(x, "emailOwner", js.undefined)
+    inline def setEmailOwnerUndefined: Self = StObject.set(x, "emailOwner", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setRecipients(value: js.Array[SchemaRecipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: js.Array[SchemaRecipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+    inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    @scala.inline
-    def setRecipientsVarargs(value: SchemaRecipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: SchemaRecipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
   }
 }

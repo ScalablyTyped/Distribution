@@ -20,17 +20,14 @@ object typesUntagResourceOutputMod {
   }
   object UntagResourceOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UntagResourceOutput = {
+    inline def apply($metadata: ResponseMetadata): UntagResourceOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UntagResourceOutput]
     }
     
-    @scala.inline
-    implicit class UntagResourceOutputMutableBuilder[Self <: UntagResourceOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UntagResourceOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

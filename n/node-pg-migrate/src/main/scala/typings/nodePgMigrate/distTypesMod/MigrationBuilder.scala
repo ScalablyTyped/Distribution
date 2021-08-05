@@ -395,8 +395,7 @@ trait MigrationBuilder extends StObject {
 }
 object MigrationBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addColumn: Parameters[AddColumns] => Unit,
     addColumns: Parameters[AddColumns] => Unit,
     addConstraint: Parameters[CreateConstraint] => Unit,
@@ -482,247 +481,166 @@ object MigrationBuilder {
     __obj.asInstanceOf[MigrationBuilder]
   }
   
-  @scala.inline
-  implicit class MigrationBuilderMutableBuilder[Self <: MigrationBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationBuilder](x: Self) {
     
-    @scala.inline
-    def setAddColumn(value: Parameters[AddColumns] => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction1(value))
+    inline def setAddColumn(value: Parameters[AddColumns] => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddColumns(value: Parameters[AddColumns] => Unit): Self = StObject.set(x, "addColumns", js.Any.fromFunction1(value))
+    inline def setAddColumns(value: Parameters[AddColumns] => Unit): Self = StObject.set(x, "addColumns", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddConstraint(value: Parameters[CreateConstraint] => Unit): Self = StObject.set(x, "addConstraint", js.Any.fromFunction1(value))
+    inline def setAddConstraint(value: Parameters[CreateConstraint] => Unit): Self = StObject.set(x, "addConstraint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddExtension(value: Parameters[CreateExtension] => Unit): Self = StObject.set(x, "addExtension", js.Any.fromFunction1(value))
+    inline def setAddExtension(value: Parameters[CreateExtension] => Unit): Self = StObject.set(x, "addExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddIndex(value: Parameters[CreateIndex] => Unit): Self = StObject.set(x, "addIndex", js.Any.fromFunction1(value))
+    inline def setAddIndex(value: Parameters[CreateIndex] => Unit): Self = StObject.set(x, "addIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddToOperatorFamily(value: Parameters[AddToOperatorFamily] => Unit): Self = StObject.set(x, "addToOperatorFamily", js.Any.fromFunction1(value))
+    inline def setAddToOperatorFamily(value: Parameters[AddToOperatorFamily] => Unit): Self = StObject.set(x, "addToOperatorFamily", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddType(value: Parameters[CreateType] => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction1(value))
+    inline def setAddType(value: Parameters[CreateType] => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddTypeAttribute(value: Parameters[AddTypeAttribute] => Unit): Self = StObject.set(x, "addTypeAttribute", js.Any.fromFunction1(value))
+    inline def setAddTypeAttribute(value: Parameters[AddTypeAttribute] => Unit): Self = StObject.set(x, "addTypeAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddTypeValue(value: Parameters[AddTypeValue] => Unit): Self = StObject.set(x, "addTypeValue", js.Any.fromFunction1(value))
+    inline def setAddTypeValue(value: Parameters[AddTypeValue] => Unit): Self = StObject.set(x, "addTypeValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterColumn(value: Parameters[AlterColumn] => Unit): Self = StObject.set(x, "alterColumn", js.Any.fromFunction1(value))
+    inline def setAlterColumn(value: Parameters[AlterColumn] => Unit): Self = StObject.set(x, "alterColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterDomain(value: Parameters[AlterDomain] => Unit): Self = StObject.set(x, "alterDomain", js.Any.fromFunction1(value))
+    inline def setAlterDomain(value: Parameters[AlterDomain] => Unit): Self = StObject.set(x, "alterDomain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterMaterializedView(value: Parameters[AlterMaterializedView] => Unit): Self = StObject.set(x, "alterMaterializedView", js.Any.fromFunction1(value))
+    inline def setAlterMaterializedView(value: Parameters[AlterMaterializedView] => Unit): Self = StObject.set(x, "alterMaterializedView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterPolicy(value: Parameters[AlterPolicy] => Unit): Self = StObject.set(x, "alterPolicy", js.Any.fromFunction1(value))
+    inline def setAlterPolicy(value: Parameters[AlterPolicy] => Unit): Self = StObject.set(x, "alterPolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterRole(value: Parameters[AlterRole] => Unit): Self = StObject.set(x, "alterRole", js.Any.fromFunction1(value))
+    inline def setAlterRole(value: Parameters[AlterRole] => Unit): Self = StObject.set(x, "alterRole", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterSequence(value: Parameters[AlterSequence] => Unit): Self = StObject.set(x, "alterSequence", js.Any.fromFunction1(value))
+    inline def setAlterSequence(value: Parameters[AlterSequence] => Unit): Self = StObject.set(x, "alterSequence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterTable(value: Parameters[AlterTable] => Unit): Self = StObject.set(x, "alterTable", js.Any.fromFunction1(value))
+    inline def setAlterTable(value: Parameters[AlterTable] => Unit): Self = StObject.set(x, "alterTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterView(value: Parameters[AlterView] => Unit): Self = StObject.set(x, "alterView", js.Any.fromFunction1(value))
+    inline def setAlterView(value: Parameters[AlterView] => Unit): Self = StObject.set(x, "alterView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlterViewColumn(value: Parameters[AlterViewColumn] => Unit): Self = StObject.set(x, "alterViewColumn", js.Any.fromFunction1(value))
+    inline def setAlterViewColumn(value: Parameters[AlterViewColumn] => Unit): Self = StObject.set(x, "alterViewColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateConstraint(value: Parameters[CreateConstraint] => Unit): Self = StObject.set(x, "createConstraint", js.Any.fromFunction1(value))
+    inline def setCreateConstraint(value: Parameters[CreateConstraint] => Unit): Self = StObject.set(x, "createConstraint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDomain(value: Parameters[CreateDomain] => Unit): Self = StObject.set(x, "createDomain", js.Any.fromFunction1(value))
+    inline def setCreateDomain(value: Parameters[CreateDomain] => Unit): Self = StObject.set(x, "createDomain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateExtension(value: Parameters[CreateExtension] => Unit): Self = StObject.set(x, "createExtension", js.Any.fromFunction1(value))
+    inline def setCreateExtension(value: Parameters[CreateExtension] => Unit): Self = StObject.set(x, "createExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFunction(value: Parameters[CreateFunction] => Unit): Self = StObject.set(x, "createFunction", js.Any.fromFunction1(value))
+    inline def setCreateFunction(value: Parameters[CreateFunction] => Unit): Self = StObject.set(x, "createFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateIndex(value: Parameters[CreateIndex] => Unit): Self = StObject.set(x, "createIndex", js.Any.fromFunction1(value))
+    inline def setCreateIndex(value: Parameters[CreateIndex] => Unit): Self = StObject.set(x, "createIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateMaterializedView(value: Parameters[CreateMaterializedView] => Unit): Self = StObject.set(x, "createMaterializedView", js.Any.fromFunction1(value))
+    inline def setCreateMaterializedView(value: Parameters[CreateMaterializedView] => Unit): Self = StObject.set(x, "createMaterializedView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateOperator(value: Parameters[CreateOperator] => Unit): Self = StObject.set(x, "createOperator", js.Any.fromFunction1(value))
+    inline def setCreateOperator(value: Parameters[CreateOperator] => Unit): Self = StObject.set(x, "createOperator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateOperatorClass(value: Parameters[CreateOperatorClass] => Unit): Self = StObject.set(x, "createOperatorClass", js.Any.fromFunction1(value))
+    inline def setCreateOperatorClass(value: Parameters[CreateOperatorClass] => Unit): Self = StObject.set(x, "createOperatorClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateOperatorFamily(value: Parameters[CreateOperatorFamily] => Unit): Self = StObject.set(x, "createOperatorFamily", js.Any.fromFunction1(value))
+    inline def setCreateOperatorFamily(value: Parameters[CreateOperatorFamily] => Unit): Self = StObject.set(x, "createOperatorFamily", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePolicy(value: Parameters[CreatePolicy] => Unit): Self = StObject.set(x, "createPolicy", js.Any.fromFunction1(value))
+    inline def setCreatePolicy(value: Parameters[CreatePolicy] => Unit): Self = StObject.set(x, "createPolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateRole(value: Parameters[CreateRole] => Unit): Self = StObject.set(x, "createRole", js.Any.fromFunction1(value))
+    inline def setCreateRole(value: Parameters[CreateRole] => Unit): Self = StObject.set(x, "createRole", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSchema(value: Parameters[CreateSchema] => Unit): Self = StObject.set(x, "createSchema", js.Any.fromFunction1(value))
+    inline def setCreateSchema(value: Parameters[CreateSchema] => Unit): Self = StObject.set(x, "createSchema", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSequence(value: Parameters[CreateSequence] => Unit): Self = StObject.set(x, "createSequence", js.Any.fromFunction1(value))
+    inline def setCreateSequence(value: Parameters[CreateSequence] => Unit): Self = StObject.set(x, "createSequence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTable(value: Parameters[CreateTable] => Unit): Self = StObject.set(x, "createTable", js.Any.fromFunction1(value))
+    inline def setCreateTable(value: Parameters[CreateTable] => Unit): Self = StObject.set(x, "createTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTrigger(value: Parameters[CreateTrigger] => Unit): Self = StObject.set(x, "createTrigger", js.Any.fromFunction1(value))
+    inline def setCreateTrigger(value: Parameters[CreateTrigger] => Unit): Self = StObject.set(x, "createTrigger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateType(value: Parameters[CreateType] => Unit): Self = StObject.set(x, "createType", js.Any.fromFunction1(value))
+    inline def setCreateType(value: Parameters[CreateType] => Unit): Self = StObject.set(x, "createType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateView(value: Parameters[CreateView] => Unit): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
+    inline def setCreateView(value: Parameters[CreateView] => Unit): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDb(value: DB): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: DB): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropColumn(value: Parameters[DropColumns] => Unit): Self = StObject.set(x, "dropColumn", js.Any.fromFunction1(value))
+    inline def setDropColumn(value: Parameters[DropColumns] => Unit): Self = StObject.set(x, "dropColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropColumns(value: Parameters[DropColumns] => Unit): Self = StObject.set(x, "dropColumns", js.Any.fromFunction1(value))
+    inline def setDropColumns(value: Parameters[DropColumns] => Unit): Self = StObject.set(x, "dropColumns", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropConstraint(value: Parameters[DropConstraint] => Unit): Self = StObject.set(x, "dropConstraint", js.Any.fromFunction1(value))
+    inline def setDropConstraint(value: Parameters[DropConstraint] => Unit): Self = StObject.set(x, "dropConstraint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropDomain(value: Parameters[DropDomain] => Unit): Self = StObject.set(x, "dropDomain", js.Any.fromFunction1(value))
+    inline def setDropDomain(value: Parameters[DropDomain] => Unit): Self = StObject.set(x, "dropDomain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropExtension(value: Parameters[DropExtension] => Unit): Self = StObject.set(x, "dropExtension", js.Any.fromFunction1(value))
+    inline def setDropExtension(value: Parameters[DropExtension] => Unit): Self = StObject.set(x, "dropExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropFunction(value: Parameters[DropFunction] => Unit): Self = StObject.set(x, "dropFunction", js.Any.fromFunction1(value))
+    inline def setDropFunction(value: Parameters[DropFunction] => Unit): Self = StObject.set(x, "dropFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropIndex(value: Parameters[DropIndex] => Unit): Self = StObject.set(x, "dropIndex", js.Any.fromFunction1(value))
+    inline def setDropIndex(value: Parameters[DropIndex] => Unit): Self = StObject.set(x, "dropIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropMaterializedView(value: Parameters[DropMaterializedView] => Unit): Self = StObject.set(x, "dropMaterializedView", js.Any.fromFunction1(value))
+    inline def setDropMaterializedView(value: Parameters[DropMaterializedView] => Unit): Self = StObject.set(x, "dropMaterializedView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropOperator(value: Parameters[DropOperator] => Unit): Self = StObject.set(x, "dropOperator", js.Any.fromFunction1(value))
+    inline def setDropOperator(value: Parameters[DropOperator] => Unit): Self = StObject.set(x, "dropOperator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropOperatorClass(value: Parameters[DropOperatorClass] => Unit): Self = StObject.set(x, "dropOperatorClass", js.Any.fromFunction1(value))
+    inline def setDropOperatorClass(value: Parameters[DropOperatorClass] => Unit): Self = StObject.set(x, "dropOperatorClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropOperatorFamily(value: Parameters[DropOperatorFamily] => Unit): Self = StObject.set(x, "dropOperatorFamily", js.Any.fromFunction1(value))
+    inline def setDropOperatorFamily(value: Parameters[DropOperatorFamily] => Unit): Self = StObject.set(x, "dropOperatorFamily", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropPolicy(value: Parameters[DropPolicy] => Unit): Self = StObject.set(x, "dropPolicy", js.Any.fromFunction1(value))
+    inline def setDropPolicy(value: Parameters[DropPolicy] => Unit): Self = StObject.set(x, "dropPolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropRole(value: Parameters[DropRole] => Unit): Self = StObject.set(x, "dropRole", js.Any.fromFunction1(value))
+    inline def setDropRole(value: Parameters[DropRole] => Unit): Self = StObject.set(x, "dropRole", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropSchema(value: Parameters[DropSchema] => Unit): Self = StObject.set(x, "dropSchema", js.Any.fromFunction1(value))
+    inline def setDropSchema(value: Parameters[DropSchema] => Unit): Self = StObject.set(x, "dropSchema", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropSequence(value: Parameters[DropSequence] => Unit): Self = StObject.set(x, "dropSequence", js.Any.fromFunction1(value))
+    inline def setDropSequence(value: Parameters[DropSequence] => Unit): Self = StObject.set(x, "dropSequence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropTable(value: Parameters[DropTable] => Unit): Self = StObject.set(x, "dropTable", js.Any.fromFunction1(value))
+    inline def setDropTable(value: Parameters[DropTable] => Unit): Self = StObject.set(x, "dropTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropTrigger(value: Parameters[DropTrigger] => Unit): Self = StObject.set(x, "dropTrigger", js.Any.fromFunction1(value))
+    inline def setDropTrigger(value: Parameters[DropTrigger] => Unit): Self = StObject.set(x, "dropTrigger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropType(value: Parameters[DropType] => Unit): Self = StObject.set(x, "dropType", js.Any.fromFunction1(value))
+    inline def setDropType(value: Parameters[DropType] => Unit): Self = StObject.set(x, "dropType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropTypeAttribute(value: Parameters[DropTypeAttribute] => Unit): Self = StObject.set(x, "dropTypeAttribute", js.Any.fromFunction1(value))
+    inline def setDropTypeAttribute(value: Parameters[DropTypeAttribute] => Unit): Self = StObject.set(x, "dropTypeAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropView(value: Parameters[DropView] => Unit): Self = StObject.set(x, "dropView", js.Any.fromFunction1(value))
+    inline def setDropView(value: Parameters[DropView] => Unit): Self = StObject.set(x, "dropView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFunc(value: String => default): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
+    inline def setFunc(value: String => default): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNoTransaction(value: () => Unit): Self = StObject.set(x, "noTransaction", js.Any.fromFunction0(value))
+    inline def setNoTransaction(value: () => Unit): Self = StObject.set(x, "noTransaction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshMaterializedView(value: Parameters[RefreshMaterializedView] => Unit): Self = StObject.set(x, "refreshMaterializedView", js.Any.fromFunction1(value))
+    inline def setRefreshMaterializedView(value: Parameters[RefreshMaterializedView] => Unit): Self = StObject.set(x, "refreshMaterializedView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveFromOperatorFamily(value: Parameters[RemoveFromOperatorFamily] => Unit): Self = StObject.set(x, "removeFromOperatorFamily", js.Any.fromFunction1(value))
+    inline def setRemoveFromOperatorFamily(value: Parameters[RemoveFromOperatorFamily] => Unit): Self = StObject.set(x, "removeFromOperatorFamily", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameColumn(value: Parameters[RenameColumn] => Unit): Self = StObject.set(x, "renameColumn", js.Any.fromFunction1(value))
+    inline def setRenameColumn(value: Parameters[RenameColumn] => Unit): Self = StObject.set(x, "renameColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameConstraint(value: Parameters[RenameConstraint] => Unit): Self = StObject.set(x, "renameConstraint", js.Any.fromFunction1(value))
+    inline def setRenameConstraint(value: Parameters[RenameConstraint] => Unit): Self = StObject.set(x, "renameConstraint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameDomain(value: Parameters[RenameDomain] => Unit): Self = StObject.set(x, "renameDomain", js.Any.fromFunction1(value))
+    inline def setRenameDomain(value: Parameters[RenameDomain] => Unit): Self = StObject.set(x, "renameDomain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameFunction(value: Parameters[RenameFunction] => Unit): Self = StObject.set(x, "renameFunction", js.Any.fromFunction1(value))
+    inline def setRenameFunction(value: Parameters[RenameFunction] => Unit): Self = StObject.set(x, "renameFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameMaterializedView(value: Parameters[RenameMaterializedView] => Unit): Self = StObject.set(x, "renameMaterializedView", js.Any.fromFunction1(value))
+    inline def setRenameMaterializedView(value: Parameters[RenameMaterializedView] => Unit): Self = StObject.set(x, "renameMaterializedView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameMaterializedViewColumn(value: Parameters[RenameMaterializedViewColumn] => Unit): Self = StObject.set(x, "renameMaterializedViewColumn", js.Any.fromFunction1(value))
+    inline def setRenameMaterializedViewColumn(value: Parameters[RenameMaterializedViewColumn] => Unit): Self = StObject.set(x, "renameMaterializedViewColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameOperatorClass(value: Parameters[RenameOperatorClass] => Unit): Self = StObject.set(x, "renameOperatorClass", js.Any.fromFunction1(value))
+    inline def setRenameOperatorClass(value: Parameters[RenameOperatorClass] => Unit): Self = StObject.set(x, "renameOperatorClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameOperatorFamily(value: Parameters[RenameOperatorFamily] => Unit): Self = StObject.set(x, "renameOperatorFamily", js.Any.fromFunction1(value))
+    inline def setRenameOperatorFamily(value: Parameters[RenameOperatorFamily] => Unit): Self = StObject.set(x, "renameOperatorFamily", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenamePolicy(value: Parameters[RenamePolicy] => Unit): Self = StObject.set(x, "renamePolicy", js.Any.fromFunction1(value))
+    inline def setRenamePolicy(value: Parameters[RenamePolicy] => Unit): Self = StObject.set(x, "renamePolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameRole(value: Parameters[RenameRole] => Unit): Self = StObject.set(x, "renameRole", js.Any.fromFunction1(value))
+    inline def setRenameRole(value: Parameters[RenameRole] => Unit): Self = StObject.set(x, "renameRole", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameSchema(value: Parameters[RenameSchema] => Unit): Self = StObject.set(x, "renameSchema", js.Any.fromFunction1(value))
+    inline def setRenameSchema(value: Parameters[RenameSchema] => Unit): Self = StObject.set(x, "renameSchema", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameSequence(value: Parameters[RenameSequence] => Unit): Self = StObject.set(x, "renameSequence", js.Any.fromFunction1(value))
+    inline def setRenameSequence(value: Parameters[RenameSequence] => Unit): Self = StObject.set(x, "renameSequence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameTable(value: Parameters[RenameTable] => Unit): Self = StObject.set(x, "renameTable", js.Any.fromFunction1(value))
+    inline def setRenameTable(value: Parameters[RenameTable] => Unit): Self = StObject.set(x, "renameTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameTrigger(value: Parameters[RenameTrigger] => Unit): Self = StObject.set(x, "renameTrigger", js.Any.fromFunction1(value))
+    inline def setRenameTrigger(value: Parameters[RenameTrigger] => Unit): Self = StObject.set(x, "renameTrigger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameType(value: Parameters[RenameType] => Unit): Self = StObject.set(x, "renameType", js.Any.fromFunction1(value))
+    inline def setRenameType(value: Parameters[RenameType] => Unit): Self = StObject.set(x, "renameType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameTypeAttribute(value: Parameters[RenameTypeAttribute] => Unit): Self = StObject.set(x, "renameTypeAttribute", js.Any.fromFunction1(value))
+    inline def setRenameTypeAttribute(value: Parameters[RenameTypeAttribute] => Unit): Self = StObject.set(x, "renameTypeAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameTypeValue(value: Parameters[RenameTypeValue] => Unit): Self = StObject.set(x, "renameTypeValue", js.Any.fromFunction1(value))
+    inline def setRenameTypeValue(value: Parameters[RenameTypeValue] => Unit): Self = StObject.set(x, "renameTypeValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameView(value: Parameters[RenameView] => Unit): Self = StObject.set(x, "renameView", js.Any.fromFunction1(value))
+    inline def setRenameView(value: Parameters[RenameView] => Unit): Self = StObject.set(x, "renameView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTypeAttribute(value: Parameters[SetTypeAttribute] => Unit): Self = StObject.set(x, "setTypeAttribute", js.Any.fromFunction1(value))
+    inline def setSetTypeAttribute(value: Parameters[SetTypeAttribute] => Unit): Self = StObject.set(x, "setTypeAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSql(value: Parameters[Sql] => Unit): Self = StObject.set(x, "sql", js.Any.fromFunction1(value))
+    inline def setSql(value: Parameters[Sql] => Unit): Self = StObject.set(x, "sql", js.Any.fromFunction1(value))
   }
 }

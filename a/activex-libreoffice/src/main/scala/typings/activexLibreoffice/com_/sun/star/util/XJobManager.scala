@@ -22,8 +22,7 @@ trait XJobManager
 }
 object XJobManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancelAllJobs: () => Unit,
     queryInterface: `type` => js.Any,
@@ -35,16 +34,12 @@ object XJobManager {
     __obj.asInstanceOf[XJobManager]
   }
   
-  @scala.inline
-  implicit class XJobManagerMutableBuilder[Self <: XJobManager] (val x: Self) extends AnyVal {
+  extension [Self <: XJobManager](x: Self) {
     
-    @scala.inline
-    def setCancelAllJobs(value: () => Unit): Self = StObject.set(x, "cancelAllJobs", js.Any.fromFunction0(value))
+    inline def setCancelAllJobs(value: () => Unit): Self = StObject.set(x, "cancelAllJobs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterJob(value: XCancellable => Unit): Self = StObject.set(x, "registerJob", js.Any.fromFunction1(value))
+    inline def setRegisterJob(value: XCancellable => Unit): Self = StObject.set(x, "registerJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReleaseJob(value: XCancellable => Unit): Self = StObject.set(x, "releaseJob", js.Any.fromFunction1(value))
+    inline def setReleaseJob(value: XCancellable => Unit): Self = StObject.set(x, "releaseJob", js.Any.fromFunction1(value))
   }
 }

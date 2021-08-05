@@ -59,78 +59,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPresetTexture extends StObject
 object MsoPresetTexture {
   
-  @scala.inline
-  def msoPresetTextureMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoPresetTextureMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoTextureBlueTissuePaper: `17` = 17.asInstanceOf[`17`]
+  inline def msoTextureBlueTissuePaper: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def msoTextureBouquet: `20` = 20.asInstanceOf[`20`]
+  inline def msoTextureBouquet: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def msoTextureBrownMarble: `11` = 11.asInstanceOf[`11`]
+  inline def msoTextureBrownMarble: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoTextureCanvas: `2` = 2.asInstanceOf[`2`]
+  inline def msoTextureCanvas: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoTextureCork: `21` = 21.asInstanceOf[`21`]
+  inline def msoTextureCork: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def msoTextureDenim: `3` = 3.asInstanceOf[`3`]
+  inline def msoTextureDenim: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoTextureFishFossil: `7` = 7.asInstanceOf[`7`]
+  inline def msoTextureFishFossil: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoTextureGranite: `12` = 12.asInstanceOf[`12`]
+  inline def msoTextureGranite: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoTextureGreenMarble: `9` = 9.asInstanceOf[`9`]
+  inline def msoTextureGreenMarble: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoTextureMediumWood: `24` = 24.asInstanceOf[`24`]
+  inline def msoTextureMediumWood: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def msoTextureNewsprint: `13` = 13.asInstanceOf[`13`]
+  inline def msoTextureNewsprint: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def msoTextureOak: `23` = 23.asInstanceOf[`23`]
+  inline def msoTextureOak: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def msoTexturePaperBag: `6` = 6.asInstanceOf[`6`]
+  inline def msoTexturePaperBag: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoTexturePapyrus: `1` = 1.asInstanceOf[`1`]
+  inline def msoTexturePapyrus: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoTextureParchment: `15` = 15.asInstanceOf[`15`]
+  inline def msoTextureParchment: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def msoTexturePinkTissuePaper: `18` = 18.asInstanceOf[`18`]
+  inline def msoTexturePinkTissuePaper: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def msoTexturePurpleMesh: `19` = 19.asInstanceOf[`19`]
+  inline def msoTexturePurpleMesh: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def msoTextureRecycledPaper: `14` = 14.asInstanceOf[`14`]
+  inline def msoTextureRecycledPaper: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def msoTextureSand: `8` = 8.asInstanceOf[`8`]
+  inline def msoTextureSand: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoTextureStationery: `16` = 16.asInstanceOf[`16`]
+  inline def msoTextureStationery: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def msoTextureWalnut: `22` = 22.asInstanceOf[`22`]
+  inline def msoTextureWalnut: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def msoTextureWaterDroplets: `5` = 5.asInstanceOf[`5`]
+  inline def msoTextureWaterDroplets: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoTextureWhiteMarble: `10` = 10.asInstanceOf[`10`]
+  inline def msoTextureWhiteMarble: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoTextureWovenMat: `4` = 4.asInstanceOf[`4`]
+  inline def msoTextureWovenMat: `4` = 4.asInstanceOf[`4`]
 }

@@ -20,7 +20,7 @@ trait ThemeFontScheme extends StObject {
   @JSName("MinorFont")
   val MinorFont_Original: ThemeFonts
   
-  @JSName("Office.ThemeFontScheme_typekey")
+  /* private */ @JSName("Office.ThemeFontScheme_typekey")
   var OfficeDotThemeFontScheme_typekey: ThemeFontScheme
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait ThemeFontScheme extends StObject {
 }
 object ThemeFontScheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Load: String => Unit,
@@ -45,31 +44,22 @@ object ThemeFontScheme {
     __obj.asInstanceOf[ThemeFontScheme]
   }
   
-  @scala.inline
-  implicit class ThemeFontSchemeMutableBuilder[Self <: ThemeFontScheme] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeFontScheme](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
+    inline def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMajorFont(value: ThemeFonts): Self = StObject.set(x, "MajorFont", value.asInstanceOf[js.Any])
+    inline def setMajorFont(value: ThemeFonts): Self = StObject.set(x, "MajorFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorFont(value: ThemeFonts): Self = StObject.set(x, "MinorFont", value.asInstanceOf[js.Any])
+    inline def setMinorFont(value: ThemeFonts): Self = StObject.set(x, "MinorFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotThemeFontScheme_typekey(value: ThemeFontScheme): Self = StObject.set(x, "Office.ThemeFontScheme_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotThemeFontScheme_typekey(value: ThemeFontScheme): Self = StObject.set(x, "Office.ThemeFontScheme_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: String => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
+    inline def setSave(value: String => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction1(value))
   }
 }

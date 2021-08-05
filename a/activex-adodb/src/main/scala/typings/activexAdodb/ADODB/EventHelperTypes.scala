@@ -40,8 +40,7 @@ object EventHelperTypes {
   }
   object ConnectionExecuteCompleteParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RecordsAffected: Double,
       adStatus: EventStatusEnum,
       pCommand: Command,
@@ -53,26 +52,19 @@ object EventHelperTypes {
       __obj.asInstanceOf[ConnectionExecuteCompleteParameter]
     }
     
-    @scala.inline
-    implicit class ConnectionExecuteCompleteParameterMutableBuilder[Self <: ConnectionExecuteCompleteParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionExecuteCompleteParameter](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPCommand(value: Command): Self = StObject.set(x, "pCommand", value.asInstanceOf[js.Any])
+      inline def setPCommand(value: Command): Self = StObject.set(x, "pCommand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
+      inline def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
+      inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsAffected(value: Double): Self = StObject.set(x, "RecordsAffected", value.asInstanceOf[js.Any])
+      inline def setRecordsAffected(value: Double): Self = StObject.set(x, "RecordsAffected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +86,7 @@ object EventHelperTypes {
   }
   object ConnectionWillConnectParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ConnectionString: String,
       Options: Double,
       Password: String,
@@ -107,26 +98,19 @@ object EventHelperTypes {
       __obj.asInstanceOf[ConnectionWillConnectParameter]
     }
     
-    @scala.inline
-    implicit class ConnectionWillConnectParameterMutableBuilder[Self <: ConnectionWillConnectParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionWillConnectParameter](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionString(value: String): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
+      inline def setConnectionString(value: String): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Double): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Double): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
+      inline def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserID(value: String): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
+      inline def setUserID(value: String): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +139,7 @@ object EventHelperTypes {
   }
   object ConnectionWillExecuteParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CursorType: CursorTypeEnum,
       LockType: LockTypeEnum,
       Options: Double,
@@ -170,32 +153,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[ConnectionWillExecuteParameter]
     }
     
-    @scala.inline
-    implicit class ConnectionWillExecuteParameterMutableBuilder[Self <: ConnectionWillExecuteParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionWillExecuteParameter](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorType(value: CursorTypeEnum): Self = StObject.set(x, "CursorType", value.asInstanceOf[js.Any])
+      inline def setCursorType(value: CursorTypeEnum): Self = StObject.set(x, "CursorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockType(value: LockTypeEnum): Self = StObject.set(x, "LockType", value.asInstanceOf[js.Any])
+      inline def setLockType(value: LockTypeEnum): Self = StObject.set(x, "LockType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Double): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Double): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPCommand(value: Command): Self = StObject.set(x, "pCommand", value.asInstanceOf[js.Any])
+      inline def setPCommand(value: Command): Self = StObject.set(x, "pCommand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
+      inline def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     }
   }
 }

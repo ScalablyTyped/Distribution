@@ -43,53 +43,38 @@ trait DialogAction extends StObject {
 }
 object DialogAction {
   
-  @scala.inline
-  def apply(`type`: DialogActionType): DialogAction = {
+  inline def apply(`type`: DialogActionType): DialogAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogAction]
   }
   
-  @scala.inline
-  implicit class DialogActionMutableBuilder[Self <: DialogAction] (val x: Self) extends AnyVal {
+  extension [Self <: DialogAction](x: Self) {
     
-    @scala.inline
-    def setFulfillmentState(value: FulfillmentState): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
+    inline def setFulfillmentState(value: FulfillmentState): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentStateUndefined: Self = StObject.set(x, "fulfillmentState", js.undefined)
+    inline def setFulfillmentStateUndefined: Self = StObject.set(x, "fulfillmentState", js.undefined)
     
-    @scala.inline
-    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+    inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
+    inline def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+    inline def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+    inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
+    inline def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
+    inline def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
     
-    @scala.inline
-    def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
-    @scala.inline
-    def setType(value: DialogActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DialogActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

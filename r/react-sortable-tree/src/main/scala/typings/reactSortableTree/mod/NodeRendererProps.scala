@@ -80,8 +80,7 @@ trait NodeRendererProps extends StObject {
 }
 object NodeRendererProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canDrag: Boolean,
     connectDragPreview: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null,
     connectDragSource: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragSourceOptions]) => ReactElement | Null,
@@ -104,158 +103,108 @@ object NodeRendererProps {
     __obj.asInstanceOf[NodeRendererProps]
   }
   
-  @scala.inline
-  implicit class NodeRendererPropsMutableBuilder[Self <: NodeRendererProps] (val x: Self) extends AnyVal {
+  extension [Self <: NodeRendererProps](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[Element]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[Element]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: Element*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Element*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setCanDrag(value: Boolean): Self = StObject.set(x, "canDrag", value.asInstanceOf[js.Any])
+    inline def setCanDrag(value: Boolean): Self = StObject.set(x, "canDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
+    inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
+    inline def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setConnectDragPreview(
+    inline def setConnectDragPreview(
       value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null
     ): Self = StObject.set(x, "connectDragPreview", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConnectDragSource(
+    inline def setConnectDragSource(
       value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragSourceOptions]) => ReactElement | Null
     ): Self = StObject.set(x, "connectDragSource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDidDrop(value: Boolean): Self = StObject.set(x, "didDrop", value.asInstanceOf[js.Any])
+    inline def setDidDrop(value: Boolean): Self = StObject.set(x, "didDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
+    inline def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggedNodeUndefined: Self = StObject.set(x, "draggedNode", js.undefined)
+    inline def setDraggedNodeUndefined: Self = StObject.set(x, "draggedNode", js.undefined)
     
-    @scala.inline
-    def setEndDrag(value: js.Any): Self = StObject.set(x, "endDrag", value.asInstanceOf[js.Any])
+    inline def setEndDrag(value: js.Any): Self = StObject.set(x, "endDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcons(value: js.Array[Element]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: js.Array[Element]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setIconsVarargs(value: Element*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: Element*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
-    @scala.inline
-    def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+    inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
+    inline def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSearchFocus(value: Boolean): Self = StObject.set(x, "isSearchFocus", value.asInstanceOf[js.Any])
+    inline def setIsSearchFocus(value: Boolean): Self = StObject.set(x, "isSearchFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSearchMatch(value: Boolean): Self = StObject.set(x, "isSearchMatch", value.asInstanceOf[js.Any])
+    inline def setIsSearchMatch(value: Boolean): Self = StObject.set(x, "isSearchMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIndex(value: Double): Self = StObject.set(x, "listIndex", value.asInstanceOf[js.Any])
+    inline def setListIndex(value: Double): Self = StObject.set(x, "listIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
+    inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
+    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+    inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
-    @scala.inline
-    def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setRowDirection(value: ltr | rtl): Self = StObject.set(x, "rowDirection", value.asInstanceOf[js.Any])
+    inline def setRowDirection(value: ltr | rtl): Self = StObject.set(x, "rowDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDirectionUndefined: Self = StObject.set(x, "rowDirection", js.undefined)
+    inline def setRowDirectionUndefined: Self = StObject.set(x, "rowDirection", js.undefined)
     
-    @scala.inline
-    def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
+    inline def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDrag(value: js.Any): Self = StObject.set(x, "startDrag", value.asInstanceOf[js.Any])
+    inline def setStartDrag(value: js.Any): Self = StObject.set(x, "startDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: /* data */ NodeData => Element): Self = StObject.set(x, "subtitle", js.Any.fromFunction1(value))
+    inline def setSubtitle(value: /* data */ NodeData => Element): Self = StObject.set(x, "subtitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setSwapDepth(value: Double): Self = StObject.set(x, "swapDepth", value.asInstanceOf[js.Any])
+    inline def setSwapDepth(value: Double): Self = StObject.set(x, "swapDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapDepthUndefined: Self = StObject.set(x, "swapDepth", js.undefined)
+    inline def setSwapDepthUndefined: Self = StObject.set(x, "swapDepth", js.undefined)
     
-    @scala.inline
-    def setSwapFrom(value: Double): Self = StObject.set(x, "swapFrom", value.asInstanceOf[js.Any])
+    inline def setSwapFrom(value: Double): Self = StObject.set(x, "swapFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapFromUndefined: Self = StObject.set(x, "swapFrom", js.undefined)
+    inline def setSwapFromUndefined: Self = StObject.set(x, "swapFrom", js.undefined)
     
-    @scala.inline
-    def setSwapLength(value: Double): Self = StObject.set(x, "swapLength", value.asInstanceOf[js.Any])
+    inline def setSwapLength(value: Double): Self = StObject.set(x, "swapLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapLengthUndefined: Self = StObject.set(x, "swapLength", js.undefined)
+    inline def setSwapLengthUndefined: Self = StObject.set(x, "swapLength", js.undefined)
     
-    @scala.inline
-    def setTitle(value: /* data */ NodeData => Element): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+    inline def setTitle(value: /* data */ NodeData => Element): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setToggleChildrenVisibility(value: /* data */ NodeData => Unit): Self = StObject.set(x, "toggleChildrenVisibility", js.Any.fromFunction1(value))
+    inline def setToggleChildrenVisibility(value: /* data */ NodeData => Unit): Self = StObject.set(x, "toggleChildrenVisibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleChildrenVisibilityUndefined: Self = StObject.set(x, "toggleChildrenVisibility", js.undefined)
+    inline def setToggleChildrenVisibilityUndefined: Self = StObject.set(x, "toggleChildrenVisibility", js.undefined)
     
-    @scala.inline
-    def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+    inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
+    inline def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
   }
 }

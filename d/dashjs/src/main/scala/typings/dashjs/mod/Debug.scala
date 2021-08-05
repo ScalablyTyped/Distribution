@@ -22,8 +22,7 @@ trait Debug extends StObject {
 }
 object Debug {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getLogLevel: () => LogLevel,
     getLogToBrowserConsole: () => Boolean,
     getLogger: () => Logger,
@@ -36,28 +35,20 @@ object Debug {
     __obj.asInstanceOf[Debug]
   }
   
-  @scala.inline
-  implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+  extension [Self <: Debug](x: Self) {
     
-    @scala.inline
-    def setGetLogLevel(value: () => LogLevel): Self = StObject.set(x, "getLogLevel", js.Any.fromFunction0(value))
+    inline def setGetLogLevel(value: () => LogLevel): Self = StObject.set(x, "getLogLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLogToBrowserConsole(value: () => Boolean): Self = StObject.set(x, "getLogToBrowserConsole", js.Any.fromFunction0(value))
+    inline def setGetLogToBrowserConsole(value: () => Boolean): Self = StObject.set(x, "getLogToBrowserConsole", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLogger(value: () => Logger): Self = StObject.set(x, "getLogger", js.Any.fromFunction0(value))
+    inline def setGetLogger(value: () => Logger): Self = StObject.set(x, "getLogger", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCalleeNameVisible(value: Boolean => Unit): Self = StObject.set(x, "setCalleeNameVisible", js.Any.fromFunction1(value))
+    inline def setSetCalleeNameVisible(value: Boolean => Unit): Self = StObject.set(x, "setCalleeNameVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLogLevel(value: LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
+    inline def setSetLogLevel(value: LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLogTimestampVisible(value: Boolean => Unit): Self = StObject.set(x, "setLogTimestampVisible", js.Any.fromFunction1(value))
+    inline def setSetLogTimestampVisible(value: Boolean => Unit): Self = StObject.set(x, "setLogTimestampVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLogToBrowserConsole(value: Boolean => Unit): Self = StObject.set(x, "setLogToBrowserConsole", js.Any.fromFunction1(value))
+    inline def setSetLogToBrowserConsole(value: Boolean => Unit): Self = StObject.set(x, "setLogToBrowserConsole", js.Any.fromFunction1(value))
   }
 }

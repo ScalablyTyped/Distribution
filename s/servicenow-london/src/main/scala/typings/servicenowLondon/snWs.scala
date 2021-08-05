@@ -34,8 +34,7 @@ object snWs {
   }
   object RESTAPIRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: RESTAPIRequestBody,
       getHeader: String => String,
       getSupportedResponseContentTypes: () => js.Array[String],
@@ -50,35 +49,25 @@ object snWs {
       __obj.asInstanceOf[RESTAPIRequest]
     }
     
-    @scala.inline
-    implicit class RESTAPIRequestMutableBuilder[Self <: RESTAPIRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RESTAPIRequest](x: Self) {
       
-      @scala.inline
-      def setBody(value: RESTAPIRequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: RESTAPIRequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+      inline def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSupportedResponseContentTypes(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedResponseContentTypes", js.Any.fromFunction0(value))
+      inline def setGetSupportedResponseContentTypes(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedResponseContentTypes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParams(value: StringDictionary[String]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
+      inline def setPathParams(value: StringDictionary[String]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+      inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,8 +85,7 @@ object snWs {
   }
   object RESTAPIRequestBody {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Any,
       dataStream: js.Object,
       dataString: String,
@@ -108,23 +96,17 @@ object snWs {
       __obj.asInstanceOf[RESTAPIRequestBody]
     }
     
-    @scala.inline
-    implicit class RESTAPIRequestBodyMutableBuilder[Self <: RESTAPIRequestBody] (val x: Self) extends AnyVal {
+    extension [Self <: RESTAPIRequestBody](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataStream(value: js.Object): Self = StObject.set(x, "dataStream", value.asInstanceOf[js.Any])
+      inline def setDataStream(value: js.Object): Self = StObject.set(x, "dataStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataString(value: String): Self = StObject.set(x, "dataString", value.asInstanceOf[js.Any])
+      inline def setDataString(value: String): Self = StObject.set(x, "dataString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
+      inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextEntry(value: () => js.Any): Self = StObject.set(x, "nextEntry", js.Any.fromFunction0(value))
+      inline def setNextEntry(value: () => js.Any): Self = StObject.set(x, "nextEntry", js.Any.fromFunction0(value))
     }
   }
   
@@ -148,8 +130,7 @@ object snWs {
   }
   object RESTAPIResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getStreamWriter: () => RESTAPIResponseStream,
       setBody: js.Any => Unit,
       setContentType: String => Unit,
@@ -163,32 +144,23 @@ object snWs {
       __obj.asInstanceOf[RESTAPIResponse]
     }
     
-    @scala.inline
-    implicit class RESTAPIResponseMutableBuilder[Self <: RESTAPIResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RESTAPIResponse](x: Self) {
       
-      @scala.inline
-      def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
+      inline def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetBody(value: js.Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
+      inline def setSetBody(value: js.Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
+      inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetError(value: js.Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+      inline def setSetError(value: js.Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
+      inline def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetHeaders(value: js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+      inline def setSetHeaders(value: js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
+      inline def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
+      inline def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
     }
   }
   
@@ -200,20 +172,16 @@ object snWs {
   }
   object RESTAPIResponseStream {
     
-    @scala.inline
-    def apply(writeStream: js.Object => Unit, writeString: String => Unit): RESTAPIResponseStream = {
+    inline def apply(writeStream: js.Object => Unit, writeString: String => Unit): RESTAPIResponseStream = {
       val __obj = js.Dynamic.literal(writeStream = js.Any.fromFunction1(writeStream), writeString = js.Any.fromFunction1(writeString))
       __obj.asInstanceOf[RESTAPIResponseStream]
     }
     
-    @scala.inline
-    implicit class RESTAPIResponseStreamMutableBuilder[Self <: RESTAPIResponseStream] (val x: Self) extends AnyVal {
+    extension [Self <: RESTAPIResponseStream](x: Self) {
       
-      @scala.inline
-      def setWriteStream(value: js.Object => Unit): Self = StObject.set(x, "writeStream", js.Any.fromFunction1(value))
+      inline def setWriteStream(value: js.Object => Unit): Self = StObject.set(x, "writeStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
+      inline def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
     }
   }
   
@@ -944,8 +912,7 @@ object snWs {
   }
   object RESTResponseV2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAllHeaders: () => js.Array[Name],
       getBody: () => String,
       getCookies: () => Get,
@@ -963,44 +930,31 @@ object snWs {
       __obj.asInstanceOf[RESTResponseV2]
     }
     
-    @scala.inline
-    implicit class RESTResponseV2MutableBuilder[Self <: RESTResponseV2] (val x: Self) extends AnyVal {
+    extension [Self <: RESTResponseV2](x: Self) {
       
-      @scala.inline
-      def setGetAllHeaders(value: () => js.Array[Name]): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
+      inline def setGetAllHeaders(value: () => js.Array[Name]): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
+      inline def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCookies(value: () => Get): Self = StObject.set(x, "getCookies", js.Any.fromFunction0(value))
+      inline def setGetCookies(value: () => Get): Self = StObject.set(x, "getCookies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorCode(value: () => Double): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
+      inline def setGetErrorCode(value: () => Double): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
+      inline def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+      inline def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeaders(value: () => js.Object): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+      inline def setGetHeaders(value: () => js.Object): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetQueryString(value: () => String): Self = StObject.set(x, "getQueryString", js.Any.fromFunction0(value))
+      inline def setGetQueryString(value: () => String): Self = StObject.set(x, "getQueryString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResponseAttachmentSysid(value: () => String): Self = StObject.set(x, "getResponseAttachmentSysid", js.Any.fromFunction0(value))
+      inline def setGetResponseAttachmentSysid(value: () => String): Self = StObject.set(x, "getResponseAttachmentSysid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusCode(value: () => Double): Self = StObject.set(x, "getStatusCode", js.Any.fromFunction0(value))
+      inline def setGetStatusCode(value: () => Double): Self = StObject.set(x, "getStatusCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHaveError(value: () => Boolean): Self = StObject.set(x, "haveError", js.Any.fromFunction0(value))
+      inline def setHaveError(value: () => Boolean): Self = StObject.set(x, "haveError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWaitForResponse(value: Double => Unit): Self = StObject.set(x, "waitForResponse", js.Any.fromFunction1(value))
+      inline def setWaitForResponse(value: Double => Unit): Self = StObject.set(x, "waitForResponse", js.Any.fromFunction1(value))
     }
   }
   
@@ -1016,26 +970,19 @@ object snWs {
   trait RestHTTPMethods extends StObject
   object RestHTTPMethods {
     
-    @scala.inline
-    def delete: typings.servicenowLondon.servicenowLondonStrings.delete = "delete".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.delete]
+    inline def delete: typings.servicenowLondon.servicenowLondonStrings.delete = "delete".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.delete]
     
-    @scala.inline
-    def get: typings.servicenowLondon.servicenowLondonStrings.get = "get".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.get]
+    inline def get: typings.servicenowLondon.servicenowLondonStrings.get = "get".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.get]
     
-    @scala.inline
-    def head: typings.servicenowLondon.servicenowLondonStrings.head = "head".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.head]
+    inline def head: typings.servicenowLondon.servicenowLondonStrings.head = "head".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.head]
     
-    @scala.inline
-    def options: typings.servicenowLondon.servicenowLondonStrings.options = "options".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.options]
+    inline def options: typings.servicenowLondon.servicenowLondonStrings.options = "options".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.options]
     
-    @scala.inline
-    def patch: typings.servicenowLondon.servicenowLondonStrings.patch = "patch".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.patch]
+    inline def patch: typings.servicenowLondon.servicenowLondonStrings.patch = "patch".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.patch]
     
-    @scala.inline
-    def post: typings.servicenowLondon.servicenowLondonStrings.post = "post".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.post]
+    inline def post: typings.servicenowLondon.servicenowLondonStrings.post = "post".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.post]
     
-    @scala.inline
-    def put: typings.servicenowLondon.servicenowLondonStrings.put = "put".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.put]
+    inline def put: typings.servicenowLondon.servicenowLondonStrings.put = "put".asInstanceOf[typings.servicenowLondon.servicenowLondonStrings.put]
   }
   
   trait SOAPMessageV2 extends StObject {
@@ -1082,8 +1029,7 @@ object snWs {
   }
   object SOAPMessageV2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       execute: () => SOAPResponseV2,
       executeAsync: () => SOAPResponseV2,
       getEndpoint: () => String,
@@ -1109,68 +1055,47 @@ object snWs {
       __obj.asInstanceOf[SOAPMessageV2]
     }
     
-    @scala.inline
-    implicit class SOAPMessageV2MutableBuilder[Self <: SOAPMessageV2] (val x: Self) extends AnyVal {
+    extension [Self <: SOAPMessageV2](x: Self) {
       
-      @scala.inline
-      def setExecute(value: () => SOAPResponseV2): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => SOAPResponseV2): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecuteAsync(value: () => SOAPResponseV2): Self = StObject.set(x, "executeAsync", js.Any.fromFunction0(value))
+      inline def setExecuteAsync(value: () => SOAPResponseV2): Self = StObject.set(x, "executeAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEndpoint(value: () => String): Self = StObject.set(x, "getEndpoint", js.Any.fromFunction0(value))
+      inline def setGetEndpoint(value: () => String): Self = StObject.set(x, "getEndpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRequestBody(value: () => String): Self = StObject.set(x, "getRequestBody", js.Any.fromFunction0(value))
+      inline def setGetRequestBody(value: () => String): Self = StObject.set(x, "getRequestBody", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRequestHeader(value: String => String): Self = StObject.set(x, "getRequestHeader", js.Any.fromFunction1(value))
+      inline def setGetRequestHeader(value: String => String): Self = StObject.set(x, "getRequestHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRequestHeaders(value: () => js.Object): Self = StObject.set(x, "getRequestHeaders", js.Any.fromFunction0(value))
+      inline def setGetRequestHeaders(value: () => js.Object): Self = StObject.set(x, "getRequestHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetBasicAuth(value: (String, String) => Unit): Self = StObject.set(x, "setBasicAuth", js.Any.fromFunction2(value))
+      inline def setSetBasicAuth(value: (String, String) => Unit): Self = StObject.set(x, "setBasicAuth", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetEccCorrelator(value: String => Unit): Self = StObject.set(x, "setEccCorrelator", js.Any.fromFunction1(value))
+      inline def setSetEccCorrelator(value: String => Unit): Self = StObject.set(x, "setEccCorrelator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEccParameter(value: (String, String) => Unit): Self = StObject.set(x, "setEccParameter", js.Any.fromFunction2(value))
+      inline def setSetEccParameter(value: (String, String) => Unit): Self = StObject.set(x, "setEccParameter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetEndpoint(value: String => Unit): Self = StObject.set(x, "setEndpoint", js.Any.fromFunction1(value))
+      inline def setSetEndpoint(value: String => Unit): Self = StObject.set(x, "setEndpoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHttpMethod(value: String => Unit): Self = StObject.set(x, "setHttpMethod", js.Any.fromFunction1(value))
+      inline def setSetHttpMethod(value: String => Unit): Self = StObject.set(x, "setHttpMethod", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHttpTimeout(value: Double => Unit): Self = StObject.set(x, "setHttpTimeout", js.Any.fromFunction1(value))
+      inline def setSetHttpTimeout(value: Double => Unit): Self = StObject.set(x, "setHttpTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMIDServer(value: String => Unit): Self = StObject.set(x, "setMIDServer", js.Any.fromFunction1(value))
+      inline def setSetMIDServer(value: String => Unit): Self = StObject.set(x, "setMIDServer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMutualAuth(value: String => Unit): Self = StObject.set(x, "setMutualAuth", js.Any.fromFunction1(value))
+      inline def setSetMutualAuth(value: String => Unit): Self = StObject.set(x, "setMutualAuth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRequestBody(value: String => Unit): Self = StObject.set(x, "setRequestBody", js.Any.fromFunction1(value))
+      inline def setSetRequestBody(value: String => Unit): Self = StObject.set(x, "setRequestBody", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
+      inline def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSOAPAction(value: String => Unit): Self = StObject.set(x, "setSOAPAction", js.Any.fromFunction1(value))
+      inline def setSetSOAPAction(value: String => Unit): Self = StObject.set(x, "setSOAPAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStringParameter(value: (String, String) => Unit): Self = StObject.set(x, "setStringParameter", js.Any.fromFunction2(value))
+      inline def setSetStringParameter(value: (String, String) => Unit): Self = StObject.set(x, "setStringParameter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStringParameterNoEscape(value: (String, String) => Unit): Self = StObject.set(x, "setStringParameterNoEscape", js.Any.fromFunction2(value))
+      inline def setSetStringParameterNoEscape(value: (String, String) => Unit): Self = StObject.set(x, "setStringParameterNoEscape", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetWSSecurity(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setWSSecurity", js.Any.fromFunction4(value))
+      inline def setSetWSSecurity(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setWSSecurity", js.Any.fromFunction4(value))
     }
   }
   
@@ -1198,8 +1123,7 @@ object snWs {
   }
   object SOAPResponseV2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAllHeaders: () => js.Array[Name],
       getBody: () => String,
       getCookies: () => Get,
@@ -1215,38 +1139,27 @@ object snWs {
       __obj.asInstanceOf[SOAPResponseV2]
     }
     
-    @scala.inline
-    implicit class SOAPResponseV2MutableBuilder[Self <: SOAPResponseV2] (val x: Self) extends AnyVal {
+    extension [Self <: SOAPResponseV2](x: Self) {
       
-      @scala.inline
-      def setGetAllHeaders(value: () => js.Array[Name]): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
+      inline def setGetAllHeaders(value: () => js.Array[Name]): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
+      inline def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCookies(value: () => Get): Self = StObject.set(x, "getCookies", js.Any.fromFunction0(value))
+      inline def setGetCookies(value: () => Get): Self = StObject.set(x, "getCookies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorCode(value: () => Double): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
+      inline def setGetErrorCode(value: () => Double): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
+      inline def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+      inline def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeaders(value: () => js.Object): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+      inline def setGetHeaders(value: () => js.Object): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusCode(value: () => Double): Self = StObject.set(x, "getStatusCode", js.Any.fromFunction0(value))
+      inline def setGetStatusCode(value: () => Double): Self = StObject.set(x, "getStatusCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHaveError(value: () => Boolean): Self = StObject.set(x, "haveError", js.Any.fromFunction0(value))
+      inline def setHaveError(value: () => Boolean): Self = StObject.set(x, "haveError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWaitForResponse(value: Double => Unit): Self = StObject.set(x, "waitForResponse", js.Any.fromFunction1(value))
+      inline def setWaitForResponse(value: Double => Unit): Self = StObject.set(x, "waitForResponse", js.Any.fromFunction1(value))
     }
   }
 }

@@ -44,8 +44,7 @@ trait IMatrixDropdownData extends StObject {
 }
 object IMatrixDropdownData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columns: js.Array[MatrixDropdownColumn],
     createQuestion: (MatrixDropdownRowModelBase, MatrixDropdownColumn) => Question,
     createRowDetailPanel: MatrixDropdownRowModelBase => PanelModel,
@@ -69,64 +68,44 @@ object IMatrixDropdownData {
     __obj.asInstanceOf[IMatrixDropdownData]
   }
   
-  @scala.inline
-  implicit class IMatrixDropdownDataMutableBuilder[Self <: IMatrixDropdownData] (val x: Self) extends AnyVal {
+  extension [Self <: IMatrixDropdownData](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[MatrixDropdownColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[MatrixDropdownColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: MatrixDropdownColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: MatrixDropdownColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateQuestion(value: (MatrixDropdownRowModelBase, MatrixDropdownColumn) => Question): Self = StObject.set(x, "createQuestion", js.Any.fromFunction2(value))
+    inline def setCreateQuestion(value: (MatrixDropdownRowModelBase, MatrixDropdownColumn) => Question): Self = StObject.set(x, "createQuestion", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateRowDetailPanel(value: MatrixDropdownRowModelBase => PanelModel): Self = StObject.set(x, "createRowDetailPanel", js.Any.fromFunction1(value))
+    inline def setCreateRowDetailPanel(value: MatrixDropdownRowModelBase => PanelModel): Self = StObject.set(x, "createRowDetailPanel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIsDetailPanelShowing(value: MatrixDropdownRowModelBase => Boolean): Self = StObject.set(x, "getIsDetailPanelShowing", js.Any.fromFunction1(value))
+    inline def setGetIsDetailPanelShowing(value: MatrixDropdownRowModelBase => Boolean): Self = StObject.set(x, "getIsDetailPanelShowing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+    inline def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMarkdownHtml(value: String => String): Self = StObject.set(x, "getMarkdownHtml", js.Any.fromFunction1(value))
+    inline def setGetMarkdownHtml(value: String => String): Self = StObject.set(x, "getMarkdownHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProcessedText(value: String => String): Self = StObject.set(x, "getProcessedText", js.Any.fromFunction1(value))
+    inline def setGetProcessedText(value: String => String): Self = StObject.set(x, "getProcessedText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRowIndex(value: MatrixDropdownRowModelBase => Double): Self = StObject.set(x, "getRowIndex", js.Any.fromFunction1(value))
+    inline def setGetRowIndex(value: MatrixDropdownRowModelBase => Double): Self = StObject.set(x, "getRowIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRowValue(value: Double => js.Any): Self = StObject.set(x, "getRowValue", js.Any.fromFunction1(value))
+    inline def setGetRowValue(value: Double => js.Any): Self = StObject.set(x, "getRowValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSharedQuestionByName(value: (String, MatrixDropdownRowModelBase) => Question): Self = StObject.set(x, "getSharedQuestionByName", js.Any.fromFunction2(value))
+    inline def setGetSharedQuestionByName(value: (String, MatrixDropdownRowModelBase) => Question): Self = StObject.set(x, "getSharedQuestionByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
+    inline def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasDetailPanel(value: MatrixDropdownRowModelBase => Boolean): Self = StObject.set(x, "hasDetailPanel", js.Any.fromFunction1(value))
+    inline def setHasDetailPanel(value: MatrixDropdownRowModelBase => Boolean): Self = StObject.set(x, "hasDetailPanel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowChanged(value: (MatrixDropdownRowModelBase, String, js.Any, Boolean) => Unit): Self = StObject.set(x, "onRowChanged", js.Any.fromFunction4(value))
+    inline def setOnRowChanged(value: (MatrixDropdownRowModelBase, String, js.Any, Boolean) => Unit): Self = StObject.set(x, "onRowChanged", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnRowChanging(value: (MatrixDropdownRowModelBase, String, js.Any) => js.Any): Self = StObject.set(x, "onRowChanging", js.Any.fromFunction3(value))
+    inline def setOnRowChanging(value: (MatrixDropdownRowModelBase, String, js.Any) => js.Any): Self = StObject.set(x, "onRowChanging", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnTotalValueChanged(value: () => js.Any): Self = StObject.set(x, "onTotalValueChanged", js.Any.fromFunction0(value))
+    inline def setOnTotalValueChanged(value: () => js.Any): Self = StObject.set(x, "onTotalValueChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetIsDetailPanelShowing(value: (MatrixDropdownRowModelBase, Boolean) => Unit): Self = StObject.set(x, "setIsDetailPanelShowing", js.Any.fromFunction2(value))
+    inline def setSetIsDetailPanelShowing(value: (MatrixDropdownRowModelBase, Boolean) => Unit): Self = StObject.set(x, "setIsDetailPanelShowing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidateCell(value: (MatrixDropdownRowModelBase, String, js.Any) => SurveyError): Self = StObject.set(x, "validateCell", js.Any.fromFunction3(value))
+    inline def setValidateCell(value: (MatrixDropdownRowModelBase, String, js.Any) => SurveyError): Self = StObject.set(x, "validateCell", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

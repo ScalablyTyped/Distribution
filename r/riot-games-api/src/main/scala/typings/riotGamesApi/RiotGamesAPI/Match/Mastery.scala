@@ -12,19 +12,15 @@ trait Mastery extends StObject {
 }
 object Mastery {
   
-  @scala.inline
-  def apply(masteryId: Double, rank: Double): Mastery = {
+  inline def apply(masteryId: Double, rank: Double): Mastery = {
     val __obj = js.Dynamic.literal(masteryId = masteryId.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mastery]
   }
   
-  @scala.inline
-  implicit class MasteryMutableBuilder[Self <: Mastery] (val x: Self) extends AnyVal {
+  extension [Self <: Mastery](x: Self) {
     
-    @scala.inline
-    def setMasteryId(value: Double): Self = StObject.set(x, "masteryId", value.asInstanceOf[js.Any])
+    inline def setMasteryId(value: Double): Self = StObject.set(x, "masteryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait CSSRule extends StObject {
 }
 object CSSRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CHARSET_RULE: Double,
     FONT_FACE_RULE: Double,
     IMPORT_RULE: Double,
@@ -57,55 +56,38 @@ object CSSRule {
     __obj.asInstanceOf[CSSRule]
   }
   
-  @scala.inline
-  implicit class CSSRuleMutableBuilder[Self <: CSSRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSRule](x: Self) {
     
-    @scala.inline
-    def setCHARSET_RULE(value: Double): Self = StObject.set(x, "CHARSET_RULE", value.asInstanceOf[js.Any])
+    inline def setCHARSET_RULE(value: Double): Self = StObject.set(x, "CHARSET_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssText(value: java.lang.String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
+    inline def setCssText(value: java.lang.String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFONT_FACE_RULE(value: Double): Self = StObject.set(x, "FONT_FACE_RULE", value.asInstanceOf[js.Any])
+    inline def setFONT_FACE_RULE(value: Double): Self = StObject.set(x, "FONT_FACE_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIMPORT_RULE(value: Double): Self = StObject.set(x, "IMPORT_RULE", value.asInstanceOf[js.Any])
+    inline def setIMPORT_RULE(value: Double): Self = StObject.set(x, "IMPORT_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEYFRAMES_RULE(value: Double): Self = StObject.set(x, "KEYFRAMES_RULE", value.asInstanceOf[js.Any])
+    inline def setKEYFRAMES_RULE(value: Double): Self = StObject.set(x, "KEYFRAMES_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEYFRAME_RULE(value: Double): Self = StObject.set(x, "KEYFRAME_RULE", value.asInstanceOf[js.Any])
+    inline def setKEYFRAME_RULE(value: Double): Self = StObject.set(x, "KEYFRAME_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIA_RULE(value: Double): Self = StObject.set(x, "MEDIA_RULE", value.asInstanceOf[js.Any])
+    inline def setMEDIA_RULE(value: Double): Self = StObject.set(x, "MEDIA_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNAMESPACE_RULE(value: Double): Self = StObject.set(x, "NAMESPACE_RULE", value.asInstanceOf[js.Any])
+    inline def setNAMESPACE_RULE(value: Double): Self = StObject.set(x, "NAMESPACE_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPAGE_RULE(value: Double): Self = StObject.set(x, "PAGE_RULE", value.asInstanceOf[js.Any])
+    inline def setPAGE_RULE(value: Double): Self = StObject.set(x, "PAGE_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRule(value: CSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
+    inline def setParentRule(value: CSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRuleNull: Self = StObject.set(x, "parentRule", null)
+    inline def setParentRuleNull: Self = StObject.set(x, "parentRule", null)
     
-    @scala.inline
-    def setParentStyleSheet(value: CSSStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
+    inline def setParentStyleSheet(value: CSSStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentStyleSheetNull: Self = StObject.set(x, "parentStyleSheet", null)
+    inline def setParentStyleSheetNull: Self = StObject.set(x, "parentStyleSheet", null)
     
-    @scala.inline
-    def setSTYLE_RULE(value: Double): Self = StObject.set(x, "STYLE_RULE", value.asInstanceOf[js.Any])
+    inline def setSTYLE_RULE(value: Double): Self = StObject.set(x, "STYLE_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUPPORTS_RULE(value: Double): Self = StObject.set(x, "SUPPORTS_RULE", value.asInstanceOf[js.Any])
+    inline def setSUPPORTS_RULE(value: Double): Self = StObject.set(x, "SUPPORTS_RULE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

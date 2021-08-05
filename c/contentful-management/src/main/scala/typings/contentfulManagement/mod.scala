@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClient(params: ClientParams): ClientAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(params.asInstanceOf[js.Any]).asInstanceOf[ClientAPI]
+  inline def createClient(params: ClientParams): ClientAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(params.asInstanceOf[js.Any]).asInstanceOf[ClientAPI]
 }

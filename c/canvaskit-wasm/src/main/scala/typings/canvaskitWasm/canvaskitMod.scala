@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object canvaskitMod {
   
-  @scala.inline
-  def apply(opts: CanvasKitInitOptions): js.Promise[CanvasKit] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CanvasKit]]
+  inline def apply(opts: CanvasKitInitOptions): js.Promise[CanvasKit] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CanvasKit]]
   
   @JSImport("canvaskit-wasm/bin/canvaskit", JSImport.Namespace)
   @js.native

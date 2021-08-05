@@ -10,8 +10,7 @@ object profileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("ipfs-cli/dist/src/commands/config/profile", "command")
   @js.native

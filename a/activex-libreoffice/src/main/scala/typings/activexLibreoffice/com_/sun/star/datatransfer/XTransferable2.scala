@@ -22,8 +22,7 @@ trait XTransferable2
 }
 object XTransferable2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TransferDataFlavors: SafeArray[DataFlavor],
     acquire: () => Unit,
     getTransferData: DataFlavor => js.Any,
@@ -37,10 +36,8 @@ object XTransferable2 {
     __obj.asInstanceOf[XTransferable2]
   }
   
-  @scala.inline
-  implicit class XTransferable2MutableBuilder[Self <: XTransferable2] (val x: Self) extends AnyVal {
+  extension [Self <: XTransferable2](x: Self) {
     
-    @scala.inline
-    def setGetTransferData2(value: (DataFlavor, String) => js.Any): Self = StObject.set(x, "getTransferData2", js.Any.fromFunction2(value))
+    inline def setGetTransferData2(value: (DataFlavor, String) => js.Any): Self = StObject.set(x, "getTransferData2", js.Any.fromFunction2(value))
   }
 }

@@ -15,7 +15,7 @@ trait Application extends StObject {
   
   def FormatString(varInput: js.Any, bstrCategory: String, bstrOptions: String): String = js.native
   
-  @JSName("InfoPath.Application_typekey")
+  /* private */ @JSName("InfoPath.Application_typekey")
   var InfoPathDotApplication_typekey: Application = js.native
   
   def IsDestinationReachable(bstrDestination: String): Boolean = js.native

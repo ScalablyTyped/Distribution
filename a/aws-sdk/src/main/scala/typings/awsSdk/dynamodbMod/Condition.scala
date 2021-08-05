@@ -18,25 +18,19 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(ComparisonOperator: ComparisonOperator): Condition = {
+  inline def apply(ComparisonOperator: ComparisonOperator): Condition = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
+    inline def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
+    inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
     
-    @scala.inline
-    def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+    inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
   }
 }

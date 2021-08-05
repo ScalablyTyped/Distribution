@@ -21,6 +21,5 @@ object EdgeGesture {
     * @return The currently relevant instance of the EdgeGesture object.
     */
   /* static member */
-  @scala.inline
-  def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.EdgeGesture = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Input.EdgeGesture]
+  inline def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.EdgeGesture = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Input.EdgeGesture]
 }

@@ -24,28 +24,21 @@ trait SchemaGooglePrivacyDlpV2InfoTypeTransformation extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InfoTypeTransformation {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InfoTypeTransformation = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InfoTypeTransformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InfoTypeTransformation]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InfoTypeTransformationMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InfoTypeTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InfoTypeTransformation](x: Self) {
     
-    @scala.inline
-    def setInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2InfoType]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
+    inline def setInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2InfoType]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
+    inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    @scala.inline
-    def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimitiveTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "primitiveTransformation", value.asInstanceOf[js.Any])
+    inline def setPrimitiveTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "primitiveTransformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveTransformationUndefined: Self = StObject.set(x, "primitiveTransformation", js.undefined)
+    inline def setPrimitiveTransformationUndefined: Self = StObject.set(x, "primitiveTransformation", js.undefined)
   }
 }

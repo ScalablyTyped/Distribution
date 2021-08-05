@@ -113,8 +113,7 @@ trait JSONGameObject extends StObject {
 }
 object JSONGameObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alpha: Double,
     blendMode: integer | String,
     data: js.Object,
@@ -145,67 +144,46 @@ object JSONGameObject {
     __obj.asInstanceOf[JSONGameObject]
   }
   
-  @scala.inline
-  implicit class JSONGameObjectMutableBuilder[Self <: JSONGameObject] (val x: Self) extends AnyVal {
+  extension [Self <: JSONGameObject](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlendMode(value: integer | String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+    inline def setBlendMode(value: integer | String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+    inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+    inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameKey(value: String): Self = StObject.set(x, "frameKey", value.asInstanceOf[js.Any])
+    inline def setFrameKey(value: String): Self = StObject.set(x, "frameKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: js.Object): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: js.Object): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginDotx(value: Double): Self = StObject.set(x, "origin.x", value.asInstanceOf[js.Any])
+    inline def setOriginDotx(value: Double): Self = StObject.set(x, "origin.x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginDoty(value: Double): Self = StObject.set(x, "origin.y", value.asInstanceOf[js.Any])
+    inline def setOriginDoty(value: Double): Self = StObject.set(x, "origin.y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: js.Object): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: js.Object): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDotx(value: Double): Self = StObject.set(x, "scale.x", value.asInstanceOf[js.Any])
+    inline def setScaleDotx(value: Double): Self = StObject.set(x, "scale.x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDoty(value: Double): Self = StObject.set(x, "scale.y", value.asInstanceOf[js.Any])
+    inline def setScaleDoty(value: Double): Self = StObject.set(x, "scale.y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleMode(value: integer): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
+    inline def setScaleMode(value: integer): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureKey(value: String): Self = StObject.set(x, "textureKey", value.asInstanceOf[js.Any])
+    inline def setTextureKey(value: String): Self = StObject.set(x, "textureKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

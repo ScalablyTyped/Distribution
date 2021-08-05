@@ -13,14 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Compare extends StObject
 object Compare {
   
-  @scala.inline
-  def FieldOrder(field: js.Array[String | ExprRef | SignalRef]): typings.vegaTypings.anon.FieldOrder = {
+  inline def FieldOrder(field: js.Array[String | ExprRef | SignalRef]): typings.vegaTypings.anon.FieldOrder = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.anon.FieldOrder]
   }
   
-  @scala.inline
-  def Order(field: String | ExprRef | SignalRef): typings.vegaTypings.anon.Order = {
+  inline def Order(field: String | ExprRef | SignalRef): typings.vegaTypings.anon.Order = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.anon.Order]
   }

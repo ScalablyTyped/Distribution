@@ -65,8 +65,7 @@ object Custom {
       * @return Returns a custom device.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String, desiredAccess: DeviceAccessMode, sharingMode: DeviceSharingMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Custom.CustomDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any], desiredAccess.asInstanceOf[js.Any], sharingMode.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Custom.CustomDevice]]
+    inline def fromIdAsync(deviceId: String, desiredAccess: DeviceAccessMode, sharingMode: DeviceSharingMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Custom.CustomDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any], desiredAccess.asInstanceOf[js.Any], sharingMode.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Custom.CustomDevice]]
     
     /**
       * Gets a device selector.
@@ -74,8 +73,7 @@ object Custom {
       * @return The device selector.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(classGuid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(classGuid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(classGuid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(classGuid.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** The device access mode. */
@@ -198,7 +196,6 @@ object Custom {
     @JSGlobal("Windows.Devices.Custom.KnownDeviceTypes.unknown")
     @js.native
     def unknown: Double = js.native
-    @scala.inline
-    def unknown_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unknown")(x.asInstanceOf[js.Any])
+    inline def unknown_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unknown")(x.asInstanceOf[js.Any])
   }
 }

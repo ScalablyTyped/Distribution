@@ -27,32 +27,27 @@ object stylableMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extendStyleNames(styles: IStyles): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendStyleNames")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def extendStyleNames(styles: IStyles): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendStyleNames")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/core/stylable", "default._moduleTheme")
     @js.native
     def moduleTheme: js.Any = js.native
     
-    @scala.inline
-    def moduleTheme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_moduleTheme")(x.asInstanceOf[js.Any])
+    inline def moduleTheme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_moduleTheme")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def resetStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyles")().asInstanceOf[Unit]
+    inline def resetStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyles")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def setTheme(theme: ICSSRules): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setTheme(theme: ICSSRules): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/core/stylable", "default._styles")
     @js.native
     def styles: js.Any = js.native
     
-    @scala.inline
-    def styles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_styles")(x.asInstanceOf[js.Any])
+    inline def styles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_styles")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -60,7 +55,7 @@ object stylableMod {
     extends StObject
        with IStylable[TStyles] {
     
-    var _themeStyles: js.Any = js.native
+    /* private */ var _themeStyles: js.Any = js.native
     
     @JSName("styleNames")
     def styleNames_MStylable: TStyles = js.native

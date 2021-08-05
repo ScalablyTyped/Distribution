@@ -36,29 +36,22 @@ trait ReplicationControllerCondition extends StObject {
 }
 object ReplicationControllerCondition {
   
-  @scala.inline
-  def apply(lastTransitionTime: String, message: String, reason: String, status: String, `type`: String): ReplicationControllerCondition = {
+  inline def apply(lastTransitionTime: String, message: String, reason: String, status: String, `type`: String): ReplicationControllerCondition = {
     val __obj = js.Dynamic.literal(lastTransitionTime = lastTransitionTime.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationControllerCondition]
   }
   
-  @scala.inline
-  implicit class ReplicationControllerConditionMutableBuilder[Self <: ReplicationControllerCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationControllerCondition](x: Self) {
     
-    @scala.inline
-    def setLastTransitionTime(value: String): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+    inline def setLastTransitionTime(value: String): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait CertificateConfiguration extends StObject {
 }
 object CertificateConfiguration {
   
-  @scala.inline
-  def apply(CertificateType: CertificateType): CertificateConfiguration = {
+  inline def apply(CertificateType: CertificateType): CertificateConfiguration = {
     val __obj = js.Dynamic.literal(CertificateType = CertificateType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateConfiguration]
   }
   
-  @scala.inline
-  implicit class CertificateConfigurationMutableBuilder[Self <: CertificateConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateConfiguration](x: Self) {
     
-    @scala.inline
-    def setCertificateType(value: CertificateType): Self = StObject.set(x, "CertificateType", value.asInstanceOf[js.Any])
+    inline def setCertificateType(value: CertificateType): Self = StObject.set(x, "CertificateType", value.asInstanceOf[js.Any])
   }
 }

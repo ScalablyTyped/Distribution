@@ -12,19 +12,15 @@ trait BackgroundColorFlex extends StObject {
 }
 object BackgroundColorFlex {
   
-  @scala.inline
-  def apply(backgroundColor: String, flex: Double): BackgroundColorFlex = {
+  inline def apply(backgroundColor: String, flex: Double): BackgroundColorFlex = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundColorFlex]
   }
   
-  @scala.inline
-  implicit class BackgroundColorFlexMutableBuilder[Self <: BackgroundColorFlex] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColorFlex](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
   }
 }

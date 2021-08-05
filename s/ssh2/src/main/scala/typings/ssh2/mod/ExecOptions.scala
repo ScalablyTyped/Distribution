@@ -19,31 +19,23 @@ trait ExecOptions extends StObject {
 }
 object ExecOptions {
   
-  @scala.inline
-  def apply(): ExecOptions = {
+  inline def apply(): ExecOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecOptions]
   }
   
-  @scala.inline
-  implicit class ExecOptionsMutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecOptions](x: Self) {
     
-    @scala.inline
-    def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setPty(value: `true` | PseudoTtyOptions): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
+    inline def setPty(value: `true` | PseudoTtyOptions): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPtyUndefined: Self = StObject.set(x, "pty", js.undefined)
+    inline def setPtyUndefined: Self = StObject.set(x, "pty", js.undefined)
     
-    @scala.inline
-    def setX11(value: Boolean | Double | X11Options): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
+    inline def setX11(value: Boolean | Double | X11Options): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX11Undefined: Self = StObject.set(x, "x11", js.undefined)
+    inline def setX11Undefined: Self = StObject.set(x, "x11", js.undefined)
   }
 }

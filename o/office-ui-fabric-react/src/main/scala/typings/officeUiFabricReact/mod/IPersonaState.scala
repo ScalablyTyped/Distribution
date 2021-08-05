@@ -9,8 +9,7 @@ trait IPersonaState
      with typings.officeUiFabricReact.personaCoinBaseMod.IPersonaState
 object IPersonaState {
   
-  @scala.inline
-  def apply(): IPersonaState = {
+  inline def apply(): IPersonaState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPersonaState]
   }

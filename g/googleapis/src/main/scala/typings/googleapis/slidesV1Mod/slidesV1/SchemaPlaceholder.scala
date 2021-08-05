@@ -29,31 +29,23 @@ trait SchemaPlaceholder extends StObject {
 }
 object SchemaPlaceholder {
   
-  @scala.inline
-  def apply(): SchemaPlaceholder = {
+  inline def apply(): SchemaPlaceholder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlaceholder]
   }
   
-  @scala.inline
-  implicit class SchemaPlaceholderMutableBuilder[Self <: SchemaPlaceholder] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlaceholder](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setParentObjectId(value: String): Self = StObject.set(x, "parentObjectId", value.asInstanceOf[js.Any])
+    inline def setParentObjectId(value: String): Self = StObject.set(x, "parentObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentObjectIdUndefined: Self = StObject.set(x, "parentObjectId", js.undefined)
+    inline def setParentObjectIdUndefined: Self = StObject.set(x, "parentObjectId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

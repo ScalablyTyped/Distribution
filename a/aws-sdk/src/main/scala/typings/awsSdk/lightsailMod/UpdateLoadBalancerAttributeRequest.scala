@@ -23,8 +23,7 @@ trait UpdateLoadBalancerAttributeRequest extends StObject {
 }
 object UpdateLoadBalancerAttributeRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeName: LoadBalancerAttributeName,
     attributeValue: StringMax256,
     loadBalancerName: ResourceName
@@ -33,16 +32,12 @@ object UpdateLoadBalancerAttributeRequest {
     __obj.asInstanceOf[UpdateLoadBalancerAttributeRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLoadBalancerAttributeRequestMutableBuilder[Self <: UpdateLoadBalancerAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLoadBalancerAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: LoadBalancerAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: LoadBalancerAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValue(value: StringMax256): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: StringMax256): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }
 }

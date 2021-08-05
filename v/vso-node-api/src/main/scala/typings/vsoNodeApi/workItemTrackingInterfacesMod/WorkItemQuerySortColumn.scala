@@ -18,19 +18,15 @@ trait WorkItemQuerySortColumn extends StObject {
 }
 object WorkItemQuerySortColumn {
   
-  @scala.inline
-  def apply(descending: Boolean, field: WorkItemFieldReference): WorkItemQuerySortColumn = {
+  inline def apply(descending: Boolean, field: WorkItemFieldReference): WorkItemQuerySortColumn = {
     val __obj = js.Dynamic.literal(descending = descending.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemQuerySortColumn]
   }
   
-  @scala.inline
-  implicit class WorkItemQuerySortColumnMutableBuilder[Self <: WorkItemQuerySortColumn] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemQuerySortColumn](x: Self) {
     
-    @scala.inline
-    def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: WorkItemFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: WorkItemFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

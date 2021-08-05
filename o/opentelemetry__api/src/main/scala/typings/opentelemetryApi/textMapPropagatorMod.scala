@@ -42,8 +42,7 @@ object textMapPropagatorMod {
   }
   object TextMapPropagator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       extract: (Context, js.Any, GetterFunction[js.Any]) => Context,
       inject: (Context, js.Any, SetterFunction[js.Any]) => Unit
     ): TextMapPropagator = {
@@ -51,14 +50,11 @@ object textMapPropagatorMod {
       __obj.asInstanceOf[TextMapPropagator]
     }
     
-    @scala.inline
-    implicit class TextMapPropagatorMutableBuilder[Self <: TextMapPropagator] (val x: Self) extends AnyVal {
+    extension [Self <: TextMapPropagator](x: Self) {
       
-      @scala.inline
-      def setExtract(value: (Context, js.Any, GetterFunction[js.Any]) => Context): Self = StObject.set(x, "extract", js.Any.fromFunction3(value))
+      inline def setExtract(value: (Context, js.Any, GetterFunction[js.Any]) => Context): Self = StObject.set(x, "extract", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInject(value: (Context, js.Any, SetterFunction[js.Any]) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
+      inline def setInject(value: (Context, js.Any, SetterFunction[js.Any]) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
     }
   }
 }

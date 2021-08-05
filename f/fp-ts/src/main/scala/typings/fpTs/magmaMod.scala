@@ -12,17 +12,14 @@ object magmaMod {
   }
   object Magma {
     
-    @scala.inline
-    def apply[A](concat: (A, A) => A): Magma[A] = {
+    inline def apply[A](concat: (A, A) => A): Magma[A] = {
       val __obj = js.Dynamic.literal(concat = js.Any.fromFunction2(concat))
       __obj.asInstanceOf[Magma[A]]
     }
     
-    @scala.inline
-    implicit class MagmaMutableBuilder[Self <: Magma[?], A] (val x: Self & Magma[A]) extends AnyVal {
+    extension [Self <: Magma[?], A](x: Self & Magma[A]) {
       
-      @scala.inline
-      def setConcat(value: (A, A) => A): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
+      inline def setConcat(value: (A, A) => A): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
     }
   }
 }

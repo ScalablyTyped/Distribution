@@ -10,14 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def allEditors(): js.Array[Editor] = ^.asInstanceOf[js.Dynamic].applyDynamic("allEditors")().asInstanceOf[js.Array[Editor]]
+  inline def allEditors(): js.Array[Editor] = ^.asInstanceOf[js.Dynamic].applyDynamic("allEditors")().asInstanceOf[js.Array[Editor]]
   
-  @scala.inline
-  def defaultEditor(): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultEditor")().asInstanceOf[Editor]
+  inline def defaultEditor(): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultEditor")().asInstanceOf[Editor]
   
-  @scala.inline
-  def getEditor(editor: String): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditor")(editor.asInstanceOf[js.Any]).asInstanceOf[Editor]
+  inline def getEditor(editor: String): Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditor")(editor.asInstanceOf[js.Any]).asInstanceOf[Editor]
   
   trait Editor extends StObject {
     
@@ -35,8 +32,7 @@ object mod {
   }
   object Editor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       binary: String,
       id: String,
       isTerminalEditor: Boolean,
@@ -48,32 +44,23 @@ object mod {
       __obj.asInstanceOf[Editor]
     }
     
-    @scala.inline
-    implicit class EditorMutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
+    extension [Self <: Editor](x: Self) {
       
-      @scala.inline
-      def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTerminalEditor(value: Boolean): Self = StObject.set(x, "isTerminalEditor", value.asInstanceOf[js.Any])
+      inline def setIsTerminalEditor(value: Boolean): Self = StObject.set(x, "isTerminalEditor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     }
   }
 }

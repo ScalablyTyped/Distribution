@@ -8,6 +8,5 @@ object combineReducersStrings {
   
   @js.native
   sealed trait ReducersMapObject extends StObject
-  @scala.inline
-  def ReducersMapObject: ReducersMapObject = "ReducersMapObject".asInstanceOf[ReducersMapObject]
+  inline def ReducersMapObject: ReducersMapObject = "ReducersMapObject".asInstanceOf[ReducersMapObject]
 }

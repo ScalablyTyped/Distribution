@@ -18,20 +18,16 @@ trait InterpolationNode
 }
 object InterpolationNode {
   
-  @scala.inline
-  def apply(content: ExpressionNode, loc: SourceLocation): InterpolationNode = {
+  inline def apply(content: ExpressionNode, loc: SourceLocation): InterpolationNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(5)
     __obj.asInstanceOf[InterpolationNode]
   }
   
-  @scala.inline
-  implicit class InterpolationNodeMutableBuilder[Self <: InterpolationNode] (val x: Self) extends AnyVal {
+  extension [Self <: InterpolationNode](x: Self) {
     
-    @scala.inline
-    def setContent(value: ExpressionNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ExpressionNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `5`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `5`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -43,43 +43,31 @@ trait SchemaGoogleCloudDialogflowV2DetectIntentResponse extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2DetectIntentResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2DetectIntentResponse = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2DetectIntentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2DetectIntentResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2DetectIntentResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2DetectIntentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2DetectIntentResponse](x: Self) {
     
-    @scala.inline
-    def setOutputAudio(value: String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
+    inline def setOutputAudio(value: String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputAudioConfig(value: SchemaGoogleCloudDialogflowV2OutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
+    inline def setOutputAudioConfig(value: SchemaGoogleCloudDialogflowV2OutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
+    inline def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
     
-    @scala.inline
-    def setOutputAudioUndefined: Self = StObject.set(x, "outputAudio", js.undefined)
+    inline def setOutputAudioUndefined: Self = StObject.set(x, "outputAudio", js.undefined)
     
-    @scala.inline
-    def setQueryResult(value: SchemaGoogleCloudDialogflowV2QueryResult): Self = StObject.set(x, "queryResult", value.asInstanceOf[js.Any])
+    inline def setQueryResult(value: SchemaGoogleCloudDialogflowV2QueryResult): Self = StObject.set(x, "queryResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryResultUndefined: Self = StObject.set(x, "queryResult", js.undefined)
+    inline def setQueryResultUndefined: Self = StObject.set(x, "queryResult", js.undefined)
     
-    @scala.inline
-    def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
+    inline def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
+    inline def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
     
-    @scala.inline
-    def setWebhookStatus(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "webhookStatus", value.asInstanceOf[js.Any])
+    inline def setWebhookStatus(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "webhookStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookStatusUndefined: Self = StObject.set(x, "webhookStatus", js.undefined)
+    inline def setWebhookStatusUndefined: Self = StObject.set(x, "webhookStatus", js.undefined)
   }
 }

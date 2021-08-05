@@ -28,34 +28,25 @@ trait UpdateFleetCapacityInput extends StObject {
 }
 object UpdateFleetCapacityInput {
   
-  @scala.inline
-  def apply(FleetId: FleetIdOrArn): UpdateFleetCapacityInput = {
+  inline def apply(FleetId: FleetIdOrArn): UpdateFleetCapacityInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFleetCapacityInput]
   }
   
-  @scala.inline
-  implicit class UpdateFleetCapacityInputMutableBuilder[Self <: UpdateFleetCapacityInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFleetCapacityInput](x: Self) {
     
-    @scala.inline
-    def setDesiredInstances(value: WholeNumber): Self = StObject.set(x, "DesiredInstances", value.asInstanceOf[js.Any])
+    inline def setDesiredInstances(value: WholeNumber): Self = StObject.set(x, "DesiredInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredInstancesUndefined: Self = StObject.set(x, "DesiredInstances", js.undefined)
+    inline def setDesiredInstancesUndefined: Self = StObject.set(x, "DesiredInstances", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: WholeNumber): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: WholeNumber): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "MaxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "MaxSize", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: WholeNumber): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: WholeNumber): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "MinSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "MinSize", js.undefined)
   }
 }

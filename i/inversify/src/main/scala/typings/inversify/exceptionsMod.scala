@@ -11,6 +11,5 @@ object exceptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isStackOverflowExeption(error: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStackOverflowExeption")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStackOverflowExeption(error: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStackOverflowExeption")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

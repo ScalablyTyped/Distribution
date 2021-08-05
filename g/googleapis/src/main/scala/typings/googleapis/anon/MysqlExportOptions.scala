@@ -14,34 +14,25 @@ trait MysqlExportOptions extends StObject {
 }
 object MysqlExportOptions {
   
-  @scala.inline
-  def apply(): MysqlExportOptions = {
+  inline def apply(): MysqlExportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MysqlExportOptions]
   }
   
-  @scala.inline
-  implicit class MysqlExportOptionsMutableBuilder[Self <: MysqlExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MysqlExportOptions](x: Self) {
     
-    @scala.inline
-    def setMysqlExportOptions(value: MasterData): Self = StObject.set(x, "mysqlExportOptions", value.asInstanceOf[js.Any])
+    inline def setMysqlExportOptions(value: MasterData): Self = StObject.set(x, "mysqlExportOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMysqlExportOptionsUndefined: Self = StObject.set(x, "mysqlExportOptions", js.undefined)
+    inline def setMysqlExportOptionsUndefined: Self = StObject.set(x, "mysqlExportOptions", js.undefined)
     
-    @scala.inline
-    def setSchemaOnly(value: Boolean): Self = StObject.set(x, "schemaOnly", value.asInstanceOf[js.Any])
+    inline def setSchemaOnly(value: Boolean): Self = StObject.set(x, "schemaOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaOnlyUndefined: Self = StObject.set(x, "schemaOnly", js.undefined)
+    inline def setSchemaOnlyUndefined: Self = StObject.set(x, "schemaOnly", js.undefined)
     
-    @scala.inline
-    def setTables(value: js.Array[String]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: js.Array[String]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    @scala.inline
-    def setTablesVarargs(value: String*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: String*): Self = StObject.set(x, "tables", js.Array(value :_*))
   }
 }

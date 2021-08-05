@@ -14,34 +14,25 @@ trait PushSubscriptionJSON extends StObject {
 }
 object PushSubscriptionJSON {
   
-  @scala.inline
-  def apply(): PushSubscriptionJSON = {
+  inline def apply(): PushSubscriptionJSON = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushSubscriptionJSON]
   }
   
-  @scala.inline
-  implicit class PushSubscriptionJSONMutableBuilder[Self <: PushSubscriptionJSON] (val x: Self) extends AnyVal {
+  extension [Self <: PushSubscriptionJSON](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: java.lang.String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: java.lang.String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeNull: Self = StObject.set(x, "expirationTime", null)
+    inline def setExpirationTimeNull: Self = StObject.set(x, "expirationTime", null)
     
-    @scala.inline
-    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
-    @scala.inline
-    def setKeys(value: Record[java.lang.String, java.lang.String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Record[java.lang.String, java.lang.String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
   }
 }

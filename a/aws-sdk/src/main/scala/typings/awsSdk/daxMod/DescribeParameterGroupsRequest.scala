@@ -23,34 +23,25 @@ trait DescribeParameterGroupsRequest extends StObject {
 }
 object DescribeParameterGroupsRequest {
   
-  @scala.inline
-  def apply(): DescribeParameterGroupsRequest = {
+  inline def apply(): DescribeParameterGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeParameterGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeParameterGroupsRequestMutableBuilder[Self <: DescribeParameterGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeParameterGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParameterGroupNames(value: ParameterGroupNameList): Self = StObject.set(x, "ParameterGroupNames", value.asInstanceOf[js.Any])
+    inline def setParameterGroupNames(value: ParameterGroupNameList): Self = StObject.set(x, "ParameterGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupNamesUndefined: Self = StObject.set(x, "ParameterGroupNames", js.undefined)
+    inline def setParameterGroupNamesUndefined: Self = StObject.set(x, "ParameterGroupNames", js.undefined)
     
-    @scala.inline
-    def setParameterGroupNamesVarargs(value: String*): Self = StObject.set(x, "ParameterGroupNames", js.Array(value :_*))
+    inline def setParameterGroupNamesVarargs(value: String*): Self = StObject.set(x, "ParameterGroupNames", js.Array(value :_*))
   }
 }

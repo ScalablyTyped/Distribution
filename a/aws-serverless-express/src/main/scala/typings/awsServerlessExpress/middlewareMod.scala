@@ -15,10 +15,8 @@ object middlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def eventContext(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventContext")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def eventContext(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventContext")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def eventContext(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventContext")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def eventContext(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventContext")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   // tslint:disable-line:ban-types
   type NonFunctionProperties[T] = Pick[T, NonFunctionPropertyNames[T]]
@@ -33,26 +31,20 @@ object middlewareMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDeleteHeaders(value: Boolean): Self = StObject.set(x, "deleteHeaders", value.asInstanceOf[js.Any])
+      inline def setDeleteHeaders(value: Boolean): Self = StObject.set(x, "deleteHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteHeadersUndefined: Self = StObject.set(x, "deleteHeaders", js.undefined)
+      inline def setDeleteHeadersUndefined: Self = StObject.set(x, "deleteHeaders", js.undefined)
       
-      @scala.inline
-      def setReqPropKey(value: String): Self = StObject.set(x, "reqPropKey", value.asInstanceOf[js.Any])
+      inline def setReqPropKey(value: String): Self = StObject.set(x, "reqPropKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqPropKeyUndefined: Self = StObject.set(x, "reqPropKey", js.undefined)
+      inline def setReqPropKeyUndefined: Self = StObject.set(x, "reqPropKey", js.undefined)
     }
   }
   
@@ -65,20 +57,16 @@ object middlewareMod {
     }
     object IncomingMessage {
       
-      @scala.inline
-      def apply(): IncomingMessage = {
+      inline def apply(): IncomingMessage = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IncomingMessage]
       }
       
-      @scala.inline
-      implicit class IncomingMessageMutableBuilder[Self <: IncomingMessage] (val x: Self) extends AnyVal {
+      extension [Self <: IncomingMessage](x: Self) {
         
-        @scala.inline
-        def setApiGateway(value: Context): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
+        inline def setApiGateway(value: Context): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiGatewayUndefined: Self = StObject.set(x, "apiGateway", js.undefined)
+        inline def setApiGatewayUndefined: Self = StObject.set(x, "apiGateway", js.undefined)
       }
     }
   }

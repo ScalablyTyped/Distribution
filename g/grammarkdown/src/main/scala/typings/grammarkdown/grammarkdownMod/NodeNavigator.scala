@@ -10,25 +10,25 @@ class NodeNavigator protected () extends StObject {
   def this(other: NodeNavigator) = this()
   def this(sourceFile: SourceFile) = this()
   
-  var afterNavigate: js.Any = js.native
+  /* private */ var afterNavigate: js.Any = js.native
   
-  var arrayStack: js.Any = js.native
+  /* private */ var arrayStack: js.Any = js.native
   
-  var beforeNavigate: js.Any = js.native
+  /* private */ var beforeNavigate: js.Any = js.native
   
-  var copyOnNavigate: js.Any = js.native
+  /* private */ var copyOnNavigate: js.Any = js.native
   
-  var currentArray: js.Any = js.native
+  /* private */ var currentArray: js.Any = js.native
   
-  var currentDepth: js.Any = js.native
+  /* private */ var currentDepth: js.Any = js.native
   
-  var currentEdge: js.Any = js.native
+  /* private */ var currentEdge: js.Any = js.native
   
-  var currentNode: js.Any = js.native
+  /* private */ var currentNode: js.Any = js.native
   
-  var currentOffset: js.Any = js.native
+  /* private */ var currentOffset: js.Any = js.native
   
-  var edgeStack: js.Any = js.native
+  /* private */ var edgeStack: js.Any = js.native
   
   def getArray(): js.UndefOr[js.Array[Node2[SyntaxKind]]] = js.native
   
@@ -49,14 +49,14 @@ class NodeNavigator protected () extends StObject {
   def hasAncestor(): Boolean = js.native
   def hasAncestor(predicate: js.Function1[/* node */ Node2[SyntaxKind], Boolean]): Boolean = js.native
   
-  var hasAnyChildren: js.Any = js.native
+  /* private */ var hasAnyChildren: js.Any = js.native
   
-  var hasChild: js.Any = js.native
+  /* private */ var hasChild: js.Any = js.native
   
   def hasChildren(): Boolean = js.native
   def hasChildren(predicate: js.Function1[/* node */ Node2[SyntaxKind], Boolean]): Boolean = js.native
   
-  var initialize: js.Any = js.native
+  /* private */ var initialize: js.Any = js.native
   
   def isArray(): Boolean = js.native
   
@@ -68,11 +68,11 @@ class NodeNavigator protected () extends StObject {
   
   def moveToAncestorOrSelf(predicate: js.Function1[/* node */ Node2[SyntaxKind], Boolean]): Boolean = js.native
   
-  var moveToChild: js.Any = js.native
+  /* private */ var moveToChild: js.Any = js.native
   
   def moveToDeclaration(): Boolean = js.native
   
-  var moveToElement: js.Any = js.native
+  /* private */ var moveToElement: js.Any = js.native
   
   def moveToFirstChild(): Boolean = js.native
   def moveToFirstChild(name: String): Boolean = js.native
@@ -110,7 +110,7 @@ class NodeNavigator protected () extends StObject {
   
   def moveToPosition(position: Position2): Boolean = js.native
   
-  var moveToPositionWorker: js.Any = js.native
+  /* private */ var moveToPositionWorker: js.Any = js.native
   
   def moveToPreviousElement(): Boolean = js.native
   def moveToPreviousElement(predicate: js.Function1[/* node */ Node2[SyntaxKind], Boolean]): Boolean = js.native
@@ -121,23 +121,23 @@ class NodeNavigator protected () extends StObject {
   
   def moveToRoot(): Boolean = js.native
   
-  var moveToSibling: js.Any = js.native
+  /* private */ var moveToSibling: js.Any = js.native
   
   def moveToSourceElement(): Boolean = js.native
   
-  var nodeStack: js.Any = js.native
+  /* private */ var nodeStack: js.Any = js.native
   
-  var offsetStack: js.Any = js.native
+  /* private */ var offsetStack: js.Any = js.native
   
-  var parentNode: js.Any = js.native
+  /* private */ var parentNode: js.Any = js.native
   
-  var popEdge: js.Any = js.native
+  /* private */ var popEdge: js.Any = js.native
   
-  var pushEdge: js.Any = js.native
+  /* private */ var pushEdge: js.Any = js.native
   
-  var reset: js.Any = js.native
+  /* private */ var reset: js.Any = js.native
   
-  var setEdge: js.Any = js.native
+  /* private */ var setEdge: js.Any = js.native
   
-  var sourceFile: js.Any = js.native
+  /* private */ var sourceFile: js.Any = js.native
 }

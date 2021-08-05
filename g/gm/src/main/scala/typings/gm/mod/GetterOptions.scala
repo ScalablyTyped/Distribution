@@ -10,19 +10,15 @@ trait GetterOptions extends StObject {
 }
 object GetterOptions {
   
-  @scala.inline
-  def apply(): GetterOptions = {
+  inline def apply(): GetterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetterOptions]
   }
   
-  @scala.inline
-  implicit class GetterOptionsMutableBuilder[Self <: GetterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetterOptions](x: Self) {
     
-    @scala.inline
-    def setBufferStream(value: Boolean): Self = StObject.set(x, "bufferStream", value.asInstanceOf[js.Any])
+    inline def setBufferStream(value: Boolean): Self = StObject.set(x, "bufferStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferStreamUndefined: Self = StObject.set(x, "bufferStream", js.undefined)
+    inline def setBufferStreamUndefined: Self = StObject.set(x, "bufferStream", js.undefined)
   }
 }

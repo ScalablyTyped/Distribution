@@ -13,19 +13,15 @@ trait CommitDiscardOptions extends StObject {
 }
 object CommitDiscardOptions {
   
-  @scala.inline
-  def apply(): CommitDiscardOptions = {
+  inline def apply(): CommitDiscardOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitDiscardOptions]
   }
   
-  @scala.inline
-  implicit class CommitDiscardOptionsMutableBuilder[Self <: CommitDiscardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommitDiscardOptions](x: Self) {
     
-    @scala.inline
-    def setRetainLogs(value: Boolean): Self = StObject.set(x, "retainLogs", value.asInstanceOf[js.Any])
+    inline def setRetainLogs(value: Boolean): Self = StObject.set(x, "retainLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainLogsUndefined: Self = StObject.set(x, "retainLogs", js.undefined)
+    inline def setRetainLogsUndefined: Self = StObject.set(x, "retainLogs", js.undefined)
   }
 }

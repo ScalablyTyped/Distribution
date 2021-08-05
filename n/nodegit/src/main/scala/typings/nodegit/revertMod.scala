@@ -25,10 +25,8 @@ object revertMod {
     /**
       * Reverts the given commit against the given "our" commit, producing an index that reflects the result of the revert.
       */
-    @scala.inline
-    def commit(repo: Repository, revertCommit: Commit, ourCommit: Commit, mainline: Double): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], revertCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
-    @scala.inline
-    def commit(
+    inline def commit(repo: Repository, revertCommit: Commit, ourCommit: Commit, mainline: Double): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], revertCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
+    inline def commit(
       repo: Repository,
       revertCommit: Commit,
       ourCommit: Commit,
@@ -36,10 +34,8 @@ object revertMod {
       mergeOptions: MergeOptions
     ): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], revertCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any], mergeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
     
-    @scala.inline
-    def revert(repo: Repository, commit: Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-    @scala.inline
-    def revert(repo: Repository, commit: Commit, givenOpts: RevertOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], givenOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def revert(repo: Repository, commit: Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def revert(repo: Repository, commit: Commit, givenOpts: RevertOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], givenOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   }
   
   trait RevertOptions
@@ -56,38 +52,28 @@ object revertMod {
   }
   object RevertOptions {
     
-    @scala.inline
-    def apply(): RevertOptions = {
+    inline def apply(): RevertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RevertOptions]
     }
     
-    @scala.inline
-    implicit class RevertOptionsMutableBuilder[Self <: RevertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RevertOptions](x: Self) {
       
-      @scala.inline
-      def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
+      inline def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckoutOptsUndefined: Self = StObject.set(x, "checkoutOpts", js.undefined)
+      inline def setCheckoutOptsUndefined: Self = StObject.set(x, "checkoutOpts", js.undefined)
       
-      @scala.inline
-      def setMainline(value: Double): Self = StObject.set(x, "mainline", value.asInstanceOf[js.Any])
+      inline def setMainline(value: Double): Self = StObject.set(x, "mainline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainlineUndefined: Self = StObject.set(x, "mainline", js.undefined)
+      inline def setMainlineUndefined: Self = StObject.set(x, "mainline", js.undefined)
       
-      @scala.inline
-      def setMergeOpts(value: MergeOptions): Self = StObject.set(x, "mergeOpts", value.asInstanceOf[js.Any])
+      inline def setMergeOpts(value: MergeOptions): Self = StObject.set(x, "mergeOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeOptsUndefined: Self = StObject.set(x, "mergeOpts", js.undefined)
+      inline def setMergeOptsUndefined: Self = StObject.set(x, "mergeOpts", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

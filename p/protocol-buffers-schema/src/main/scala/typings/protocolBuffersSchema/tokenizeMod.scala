@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tokenizeMod {
   
-  @scala.inline
-  def apply(schema: Schema): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def apply(schema: Schema): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   @JSImport("protocol-buffers-schema/tokenize", JSImport.Namespace)
   @js.native

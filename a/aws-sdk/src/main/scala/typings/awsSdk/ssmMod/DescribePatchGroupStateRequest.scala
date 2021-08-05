@@ -13,16 +13,13 @@ trait DescribePatchGroupStateRequest extends StObject {
 }
 object DescribePatchGroupStateRequest {
   
-  @scala.inline
-  def apply(PatchGroup: PatchGroup): DescribePatchGroupStateRequest = {
+  inline def apply(PatchGroup: PatchGroup): DescribePatchGroupStateRequest = {
     val __obj = js.Dynamic.literal(PatchGroup = PatchGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePatchGroupStateRequest]
   }
   
-  @scala.inline
-  implicit class DescribePatchGroupStateRequestMutableBuilder[Self <: DescribePatchGroupStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePatchGroupStateRequest](x: Self) {
     
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
+    inline def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
   }
 }

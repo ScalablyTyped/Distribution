@@ -66,15 +66,13 @@ object xmlschemasMod {
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.MxSchema.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.MxSchema.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -104,8 +102,7 @@ object xmlschemasMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
+      inline def create(model: IModel): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
       
       /**
         * Creates and returns a new XmlElement instance in the SDK and on the server.
@@ -116,8 +113,7 @@ object xmlschemasMod {
         *  6.6.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInElementUnderChildren(container: Element): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
+      inline def createInElementUnderChildren(container: Element): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
       
       /**
         * Creates and returns a new XmlElement instance in the SDK and on the server.
@@ -128,22 +124,19 @@ object xmlschemasMod {
         *  6.6.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInJsonStructureUnderElements(container: JsonStructure): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
+      inline def createInJsonStructureUnderElements(container: JsonStructure): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType")
@@ -161,22 +154,19 @@ object xmlschemasMod {
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.AnyType")
       @js.native
       def AnyType: XmlPrimitiveType = js.native
-      @scala.inline
-      def AnyType_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnyType")(x.asInstanceOf[js.Any])
+      inline def AnyType_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnyType")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Binary")
       @js.native
       def Binary: XmlPrimitiveType = js.native
-      @scala.inline
-      def Binary_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
+      inline def Binary_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Boolean")
       @js.native
       def Boolean: XmlPrimitiveType = js.native
-      @scala.inline
-      def Boolean_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+      inline def Boolean_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Date")
@@ -187,60 +177,51 @@ object xmlschemasMod {
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.DateTime")
       @js.native
       def DateTime: XmlPrimitiveType = js.native
-      @scala.inline
-      def DateTime_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+      inline def DateTime_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Date_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+      inline def Date_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Decimal")
       @js.native
       def Decimal: XmlPrimitiveType = js.native
-      @scala.inline
-      def Decimal_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+      inline def Decimal_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Float")
       @js.native
       def Float: XmlPrimitiveType = js.native
-      @scala.inline
-      def Float_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+      inline def Float_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Integer")
       @js.native
       def Integer: XmlPrimitiveType = js.native
-      @scala.inline
-      def Integer_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+      inline def Integer_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Long")
       @js.native
       def Long: XmlPrimitiveType = js.native
-      @scala.inline
-      def Long_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
+      inline def Long_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.String")
       @js.native
       def String: XmlPrimitiveType = js.native
-      @scala.inline
-      def String_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+      inline def String_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Time")
       @js.native
       def Time: XmlPrimitiveType = js.native
-      @scala.inline
-      def Time_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+      inline def Time_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlPrimitiveType.Unknown")
       @js.native
       def Unknown: XmlPrimitiveType = js.native
-      @scala.inline
-      def Unknown_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unknown")(x.asInstanceOf[js.Any])
+      inline def Unknown_=(x: XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unknown")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -286,22 +267,19 @@ object xmlschemasMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IFolderBase): XmlSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchema]
+      inline def createIn(container: IFolderBase): XmlSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchema]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchema.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchema.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchemaEntry")
@@ -348,8 +326,7 @@ object xmlschemasMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
+      inline def create(model: IModel): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
       
       /**
         * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
@@ -357,8 +334,7 @@ object xmlschemasMod {
         * of the parent webservices.WsdlDescription element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWsdlDescriptionUnderSchemaEntries")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
+      inline def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWsdlDescriptionUnderSchemaEntries")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
       
       /**
         * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
@@ -366,22 +342,19 @@ object xmlschemasMod {
         * of the parent XmlSchema element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createInXmlSchemaUnderEntries(container: XmlSchema): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInXmlSchemaUnderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
+      inline def createInXmlSchemaUnderEntries(container: XmlSchema): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInXmlSchemaUnderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchemaEntry.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchemaEntry.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**

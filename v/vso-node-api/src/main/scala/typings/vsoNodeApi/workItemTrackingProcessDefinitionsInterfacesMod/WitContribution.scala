@@ -29,8 +29,7 @@ trait WitContribution extends StObject {
 }
 object WitContribution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contributionId: String,
     height: Double,
     inputs: StringDictionary[js.Any],
@@ -40,19 +39,14 @@ object WitContribution {
     __obj.asInstanceOf[WitContribution]
   }
   
-  @scala.inline
-  implicit class WitContributionMutableBuilder[Self <: WitContribution] (val x: Self) extends AnyVal {
+  extension [Self <: WitContribution](x: Self) {
     
-    @scala.inline
-    def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
+    inline def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOnDeletedWorkItem(value: Boolean): Self = StObject.set(x, "showOnDeletedWorkItem", value.asInstanceOf[js.Any])
+    inline def setShowOnDeletedWorkItem(value: Boolean): Self = StObject.set(x, "showOnDeletedWorkItem", value.asInstanceOf[js.Any])
   }
 }

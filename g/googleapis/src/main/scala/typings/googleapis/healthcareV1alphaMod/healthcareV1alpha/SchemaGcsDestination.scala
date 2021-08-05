@@ -33,25 +33,19 @@ trait SchemaGcsDestination extends StObject {
 }
 object SchemaGcsDestination {
   
-  @scala.inline
-  def apply(): SchemaGcsDestination = {
+  inline def apply(): SchemaGcsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGcsDestination]
   }
   
-  @scala.inline
-  implicit class SchemaGcsDestinationMutableBuilder[Self <: SchemaGcsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGcsDestination](x: Self) {
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
+    inline def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
+    inline def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
   }
 }

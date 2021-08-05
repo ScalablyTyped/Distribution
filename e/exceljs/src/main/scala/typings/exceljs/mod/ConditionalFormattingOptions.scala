@@ -12,22 +12,17 @@ trait ConditionalFormattingOptions extends StObject {
 }
 object ConditionalFormattingOptions {
   
-  @scala.inline
-  def apply(ref: String, rules: js.Array[ConditionalFormattingRule]): ConditionalFormattingOptions = {
+  inline def apply(ref: String, rules: js.Array[ConditionalFormattingRule]): ConditionalFormattingOptions = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormattingOptions]
   }
   
-  @scala.inline
-  implicit class ConditionalFormattingOptionsMutableBuilder[Self <: ConditionalFormattingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormattingOptions](x: Self) {
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: js.Array[ConditionalFormattingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[ConditionalFormattingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: ConditionalFormattingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ConditionalFormattingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

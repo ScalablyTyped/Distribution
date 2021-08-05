@@ -106,41 +106,29 @@ object Cropper {
   trait Action extends StObject
   object Action {
     
-    @scala.inline
-    def all: typings.cropperjs.cropperjsStrings.all = "all".asInstanceOf[typings.cropperjs.cropperjsStrings.all]
+    inline def all: typings.cropperjs.cropperjsStrings.all = "all".asInstanceOf[typings.cropperjs.cropperjsStrings.all]
     
-    @scala.inline
-    def crop: typings.cropperjs.cropperjsStrings.crop = "crop".asInstanceOf[typings.cropperjs.cropperjsStrings.crop]
+    inline def crop: typings.cropperjs.cropperjsStrings.crop = "crop".asInstanceOf[typings.cropperjs.cropperjsStrings.crop]
     
-    @scala.inline
-    def e: typings.cropperjs.cropperjsStrings.e = "e".asInstanceOf[typings.cropperjs.cropperjsStrings.e]
+    inline def e: typings.cropperjs.cropperjsStrings.e = "e".asInstanceOf[typings.cropperjs.cropperjsStrings.e]
     
-    @scala.inline
-    def move: typings.cropperjs.cropperjsStrings.move = "move".asInstanceOf[typings.cropperjs.cropperjsStrings.move]
+    inline def move: typings.cropperjs.cropperjsStrings.move = "move".asInstanceOf[typings.cropperjs.cropperjsStrings.move]
     
-    @scala.inline
-    def n: typings.cropperjs.cropperjsStrings.n = "n".asInstanceOf[typings.cropperjs.cropperjsStrings.n]
+    inline def n: typings.cropperjs.cropperjsStrings.n = "n".asInstanceOf[typings.cropperjs.cropperjsStrings.n]
     
-    @scala.inline
-    def ne: typings.cropperjs.cropperjsStrings.ne = "ne".asInstanceOf[typings.cropperjs.cropperjsStrings.ne]
+    inline def ne: typings.cropperjs.cropperjsStrings.ne = "ne".asInstanceOf[typings.cropperjs.cropperjsStrings.ne]
     
-    @scala.inline
-    def nw: typings.cropperjs.cropperjsStrings.nw = "nw".asInstanceOf[typings.cropperjs.cropperjsStrings.nw]
+    inline def nw: typings.cropperjs.cropperjsStrings.nw = "nw".asInstanceOf[typings.cropperjs.cropperjsStrings.nw]
     
-    @scala.inline
-    def s: typings.cropperjs.cropperjsStrings.s = "s".asInstanceOf[typings.cropperjs.cropperjsStrings.s]
+    inline def s: typings.cropperjs.cropperjsStrings.s = "s".asInstanceOf[typings.cropperjs.cropperjsStrings.s]
     
-    @scala.inline
-    def se: typings.cropperjs.cropperjsStrings.se = "se".asInstanceOf[typings.cropperjs.cropperjsStrings.se]
+    inline def se: typings.cropperjs.cropperjsStrings.se = "se".asInstanceOf[typings.cropperjs.cropperjsStrings.se]
     
-    @scala.inline
-    def sw: typings.cropperjs.cropperjsStrings.sw = "sw".asInstanceOf[typings.cropperjs.cropperjsStrings.sw]
+    inline def sw: typings.cropperjs.cropperjsStrings.sw = "sw".asInstanceOf[typings.cropperjs.cropperjsStrings.sw]
     
-    @scala.inline
-    def w: typings.cropperjs.cropperjsStrings.w = "w".asInstanceOf[typings.cropperjs.cropperjsStrings.w]
+    inline def w: typings.cropperjs.cropperjsStrings.w = "w".asInstanceOf[typings.cropperjs.cropperjsStrings.w]
     
-    @scala.inline
-    def zoom: typings.cropperjs.cropperjsStrings.zoom = "zoom".asInstanceOf[typings.cropperjs.cropperjsStrings.zoom]
+    inline def zoom: typings.cropperjs.cropperjsStrings.zoom = "zoom".asInstanceOf[typings.cropperjs.cropperjsStrings.zoom]
   }
   
   trait CanvasData extends StObject {
@@ -159,8 +147,7 @@ object Cropper {
   }
   object CanvasData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       height: Double,
       left: Double,
       naturalHeight: Double,
@@ -172,26 +159,19 @@ object Cropper {
       __obj.asInstanceOf[CanvasData]
     }
     
-    @scala.inline
-    implicit class CanvasDataMutableBuilder[Self <: CanvasData] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasData](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNaturalHeight(value: Double): Self = StObject.set(x, "naturalHeight", value.asInstanceOf[js.Any])
+      inline def setNaturalHeight(value: Double): Self = StObject.set(x, "naturalHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNaturalWidth(value: Double): Self = StObject.set(x, "naturalWidth", value.asInstanceOf[js.Any])
+      inline def setNaturalWidth(value: Double): Self = StObject.set(x, "naturalWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,20 +183,16 @@ object Cropper {
   }
   object ContainerData {
     
-    @scala.inline
-    def apply(height: Double, width: Double): ContainerData = {
+    inline def apply(height: Double, width: Double): ContainerData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerData]
     }
     
-    @scala.inline
-    implicit class ContainerDataMutableBuilder[Self <: ContainerData] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerData](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,26 +208,20 @@ object Cropper {
   }
   object CropBoxData {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double, width: Double): CropBoxData = {
+    inline def apply(height: Double, left: Double, top: Double, width: Double): CropBoxData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[CropBoxData]
     }
     
-    @scala.inline
-    implicit class CropBoxDataMutableBuilder[Self <: CropBoxData] (val x: Self) extends AnyVal {
+    extension [Self <: CropBoxData](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,20 +251,16 @@ object Cropper {
   }
   object CropEventData {
     
-    @scala.inline
-    def apply(action: Action, originalEvent: PointerEvent | MouseEvent | TouchEvent): CropEventData = {
+    inline def apply(action: Action, originalEvent: PointerEvent | MouseEvent | TouchEvent): CropEventData = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CropEventData]
     }
     
-    @scala.inline
-    implicit class CropEventDataMutableBuilder[Self <: CropEventData] (val x: Self) extends AnyVal {
+    extension [Self <: CropEventData](x: Self) {
       
-      @scala.inline
-      def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: PointerEvent | MouseEvent | TouchEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: PointerEvent | MouseEvent | TouchEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,8 +300,7 @@ object Cropper {
   }
   object Data {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       height: Double,
       rotate: Double,
       scaleX: Double,
@@ -348,29 +313,21 @@ object Cropper {
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -382,14 +339,11 @@ object Cropper {
   trait DragMode extends StObject
   object DragMode {
     
-    @scala.inline
-    def crop: typings.cropperjs.cropperjsStrings.crop = "crop".asInstanceOf[typings.cropperjs.cropperjsStrings.crop]
+    inline def crop: typings.cropperjs.cropperjsStrings.crop = "crop".asInstanceOf[typings.cropperjs.cropperjsStrings.crop]
     
-    @scala.inline
-    def move: typings.cropperjs.cropperjsStrings.move = "move".asInstanceOf[typings.cropperjs.cropperjsStrings.move]
+    inline def move: typings.cropperjs.cropperjsStrings.move = "move".asInstanceOf[typings.cropperjs.cropperjsStrings.move]
     
-    @scala.inline
-    def none: typings.cropperjs.cropperjsStrings.none = "none".asInstanceOf[typings.cropperjs.cropperjsStrings.none]
+    inline def none: typings.cropperjs.cropperjsStrings.none = "none".asInstanceOf[typings.cropperjs.cropperjsStrings.none]
   }
   
   trait GetCroppedCanvasOptions extends StObject {
@@ -414,68 +368,48 @@ object Cropper {
   }
   object GetCroppedCanvasOptions {
     
-    @scala.inline
-    def apply(): GetCroppedCanvasOptions = {
+    inline def apply(): GetCroppedCanvasOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCroppedCanvasOptions]
     }
     
-    @scala.inline
-    implicit class GetCroppedCanvasOptionsMutableBuilder[Self <: GetCroppedCanvasOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetCroppedCanvasOptions](x: Self) {
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+      inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setImageSmoothingEnabled(value: Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
+      inline def setImageSmoothingEnabled(value: Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSmoothingEnabledUndefined: Self = StObject.set(x, "imageSmoothingEnabled", js.undefined)
+      inline def setImageSmoothingEnabledUndefined: Self = StObject.set(x, "imageSmoothingEnabled", js.undefined)
       
-      @scala.inline
-      def setImageSmoothingQuality(value: ImageSmoothingQuality): Self = StObject.set(x, "imageSmoothingQuality", value.asInstanceOf[js.Any])
+      inline def setImageSmoothingQuality(value: ImageSmoothingQuality): Self = StObject.set(x, "imageSmoothingQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSmoothingQualityUndefined: Self = StObject.set(x, "imageSmoothingQuality", js.undefined)
+      inline def setImageSmoothingQualityUndefined: Self = StObject.set(x, "imageSmoothingQuality", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -503,8 +437,7 @@ object Cropper {
   }
   object ImageData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aspectRatio: Double,
       height: Double,
       left: Double,
@@ -520,38 +453,27 @@ object Cropper {
       __obj.asInstanceOf[ImageData]
     }
     
-    @scala.inline
-    implicit class ImageDataMutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
+    extension [Self <: ImageData](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNaturalHeight(value: Double): Self = StObject.set(x, "naturalHeight", value.asInstanceOf[js.Any])
+      inline def setNaturalHeight(value: Double): Self = StObject.set(x, "naturalHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNaturalWidth(value: Double): Self = StObject.set(x, "naturalWidth", value.asInstanceOf[js.Any])
+      inline def setNaturalWidth(value: Double): Self = StObject.set(x, "naturalWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -563,14 +485,11 @@ object Cropper {
   trait ImageSmoothingQuality extends StObject
   object ImageSmoothingQuality {
     
-    @scala.inline
-    def high: typings.cropperjs.cropperjsStrings.high = "high".asInstanceOf[typings.cropperjs.cropperjsStrings.high]
+    inline def high: typings.cropperjs.cropperjsStrings.high = "high".asInstanceOf[typings.cropperjs.cropperjsStrings.high]
     
-    @scala.inline
-    def low: typings.cropperjs.cropperjsStrings.low = "low".asInstanceOf[typings.cropperjs.cropperjsStrings.low]
+    inline def low: typings.cropperjs.cropperjsStrings.low = "low".asInstanceOf[typings.cropperjs.cropperjsStrings.low]
     
-    @scala.inline
-    def medium: typings.cropperjs.cropperjsStrings.medium = "medium".asInstanceOf[typings.cropperjs.cropperjsStrings.medium]
+    inline def medium: typings.cropperjs.cropperjsStrings.medium = "medium".asInstanceOf[typings.cropperjs.cropperjsStrings.medium]
   }
   
   trait Options extends StObject {
@@ -655,251 +574,170 @@ object Cropper {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
-      @scala.inline
-      def setAutoCrop(value: Boolean): Self = StObject.set(x, "autoCrop", value.asInstanceOf[js.Any])
+      inline def setAutoCrop(value: Boolean): Self = StObject.set(x, "autoCrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCropArea(value: Double): Self = StObject.set(x, "autoCropArea", value.asInstanceOf[js.Any])
+      inline def setAutoCropArea(value: Double): Self = StObject.set(x, "autoCropArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCropAreaUndefined: Self = StObject.set(x, "autoCropArea", js.undefined)
+      inline def setAutoCropAreaUndefined: Self = StObject.set(x, "autoCropArea", js.undefined)
       
-      @scala.inline
-      def setAutoCropUndefined: Self = StObject.set(x, "autoCrop", js.undefined)
+      inline def setAutoCropUndefined: Self = StObject.set(x, "autoCrop", js.undefined)
       
-      @scala.inline
-      def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setCheckCrossOrigin(value: Boolean): Self = StObject.set(x, "checkCrossOrigin", value.asInstanceOf[js.Any])
+      inline def setCheckCrossOrigin(value: Boolean): Self = StObject.set(x, "checkCrossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckCrossOriginUndefined: Self = StObject.set(x, "checkCrossOrigin", js.undefined)
+      inline def setCheckCrossOriginUndefined: Self = StObject.set(x, "checkCrossOrigin", js.undefined)
       
-      @scala.inline
-      def setCheckOrientation(value: Boolean): Self = StObject.set(x, "checkOrientation", value.asInstanceOf[js.Any])
+      inline def setCheckOrientation(value: Boolean): Self = StObject.set(x, "checkOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckOrientationUndefined: Self = StObject.set(x, "checkOrientation", js.undefined)
+      inline def setCheckOrientationUndefined: Self = StObject.set(x, "checkOrientation", js.undefined)
       
-      @scala.inline
-      def setCrop(value: /* event */ CropEvent => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction1(value))
+      inline def setCrop(value: /* event */ CropEvent => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCropBoxMovable(value: Boolean): Self = StObject.set(x, "cropBoxMovable", value.asInstanceOf[js.Any])
+      inline def setCropBoxMovable(value: Boolean): Self = StObject.set(x, "cropBoxMovable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropBoxMovableUndefined: Self = StObject.set(x, "cropBoxMovable", js.undefined)
+      inline def setCropBoxMovableUndefined: Self = StObject.set(x, "cropBoxMovable", js.undefined)
       
-      @scala.inline
-      def setCropBoxResizable(value: Boolean): Self = StObject.set(x, "cropBoxResizable", value.asInstanceOf[js.Any])
+      inline def setCropBoxResizable(value: Boolean): Self = StObject.set(x, "cropBoxResizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropBoxResizableUndefined: Self = StObject.set(x, "cropBoxResizable", js.undefined)
+      inline def setCropBoxResizableUndefined: Self = StObject.set(x, "cropBoxResizable", js.undefined)
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setCropend(value: /* event */ CropEndEvent => Unit): Self = StObject.set(x, "cropend", js.Any.fromFunction1(value))
+      inline def setCropend(value: /* event */ CropEndEvent => Unit): Self = StObject.set(x, "cropend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCropendUndefined: Self = StObject.set(x, "cropend", js.undefined)
+      inline def setCropendUndefined: Self = StObject.set(x, "cropend", js.undefined)
       
-      @scala.inline
-      def setCropmove(value: /* event */ CropMoveEvent => Unit): Self = StObject.set(x, "cropmove", js.Any.fromFunction1(value))
+      inline def setCropmove(value: /* event */ CropMoveEvent => Unit): Self = StObject.set(x, "cropmove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCropmoveUndefined: Self = StObject.set(x, "cropmove", js.undefined)
+      inline def setCropmoveUndefined: Self = StObject.set(x, "cropmove", js.undefined)
       
-      @scala.inline
-      def setCropstart(value: /* event */ CropStartEvent => Unit): Self = StObject.set(x, "cropstart", js.Any.fromFunction1(value))
+      inline def setCropstart(value: /* event */ CropStartEvent => Unit): Self = StObject.set(x, "cropstart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCropstartUndefined: Self = StObject.set(x, "cropstart", js.undefined)
+      inline def setCropstartUndefined: Self = StObject.set(x, "cropstart", js.undefined)
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDragMode(value: DragMode): Self = StObject.set(x, "dragMode", value.asInstanceOf[js.Any])
+      inline def setDragMode(value: DragMode): Self = StObject.set(x, "dragMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragModeUndefined: Self = StObject.set(x, "dragMode", js.undefined)
+      inline def setDragModeUndefined: Self = StObject.set(x, "dragMode", js.undefined)
       
-      @scala.inline
-      def setGuides(value: Boolean): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
+      inline def setGuides(value: Boolean): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuidesUndefined: Self = StObject.set(x, "guides", js.undefined)
+      inline def setGuidesUndefined: Self = StObject.set(x, "guides", js.undefined)
       
-      @scala.inline
-      def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setInitialAspectRatio(value: Double): Self = StObject.set(x, "initialAspectRatio", value.asInstanceOf[js.Any])
+      inline def setInitialAspectRatio(value: Double): Self = StObject.set(x, "initialAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialAspectRatioUndefined: Self = StObject.set(x, "initialAspectRatio", js.undefined)
+      inline def setInitialAspectRatioUndefined: Self = StObject.set(x, "initialAspectRatio", js.undefined)
       
-      @scala.inline
-      def setMinCanvasHeight(value: Double): Self = StObject.set(x, "minCanvasHeight", value.asInstanceOf[js.Any])
+      inline def setMinCanvasHeight(value: Double): Self = StObject.set(x, "minCanvasHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCanvasHeightUndefined: Self = StObject.set(x, "minCanvasHeight", js.undefined)
+      inline def setMinCanvasHeightUndefined: Self = StObject.set(x, "minCanvasHeight", js.undefined)
       
-      @scala.inline
-      def setMinCanvasWidth(value: Double): Self = StObject.set(x, "minCanvasWidth", value.asInstanceOf[js.Any])
+      inline def setMinCanvasWidth(value: Double): Self = StObject.set(x, "minCanvasWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCanvasWidthUndefined: Self = StObject.set(x, "minCanvasWidth", js.undefined)
+      inline def setMinCanvasWidthUndefined: Self = StObject.set(x, "minCanvasWidth", js.undefined)
       
-      @scala.inline
-      def setMinContainerHeight(value: Double): Self = StObject.set(x, "minContainerHeight", value.asInstanceOf[js.Any])
+      inline def setMinContainerHeight(value: Double): Self = StObject.set(x, "minContainerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinContainerHeightUndefined: Self = StObject.set(x, "minContainerHeight", js.undefined)
+      inline def setMinContainerHeightUndefined: Self = StObject.set(x, "minContainerHeight", js.undefined)
       
-      @scala.inline
-      def setMinContainerWidth(value: Double): Self = StObject.set(x, "minContainerWidth", value.asInstanceOf[js.Any])
+      inline def setMinContainerWidth(value: Double): Self = StObject.set(x, "minContainerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinContainerWidthUndefined: Self = StObject.set(x, "minContainerWidth", js.undefined)
+      inline def setMinContainerWidthUndefined: Self = StObject.set(x, "minContainerWidth", js.undefined)
       
-      @scala.inline
-      def setMinCropBoxHeight(value: Double): Self = StObject.set(x, "minCropBoxHeight", value.asInstanceOf[js.Any])
+      inline def setMinCropBoxHeight(value: Double): Self = StObject.set(x, "minCropBoxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCropBoxHeightUndefined: Self = StObject.set(x, "minCropBoxHeight", js.undefined)
+      inline def setMinCropBoxHeightUndefined: Self = StObject.set(x, "minCropBoxHeight", js.undefined)
       
-      @scala.inline
-      def setMinCropBoxWidth(value: Double): Self = StObject.set(x, "minCropBoxWidth", value.asInstanceOf[js.Any])
+      inline def setMinCropBoxWidth(value: Double): Self = StObject.set(x, "minCropBoxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCropBoxWidthUndefined: Self = StObject.set(x, "minCropBoxWidth", js.undefined)
+      inline def setMinCropBoxWidthUndefined: Self = StObject.set(x, "minCropBoxWidth", js.undefined)
       
-      @scala.inline
-      def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+      inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      @scala.inline
-      def setMovable(value: Boolean): Self = StObject.set(x, "movable", value.asInstanceOf[js.Any])
+      inline def setMovable(value: Boolean): Self = StObject.set(x, "movable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovableUndefined: Self = StObject.set(x, "movable", js.undefined)
+      inline def setMovableUndefined: Self = StObject.set(x, "movable", js.undefined)
       
-      @scala.inline
-      def setPreview(value: Element | js.Array[Element] | NodeList | String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: Element | js.Array[Element] | NodeList | String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      @scala.inline
-      def setPreviewVarargs(value: Element*): Self = StObject.set(x, "preview", js.Array(value :_*))
+      inline def setPreviewVarargs(value: Element*): Self = StObject.set(x, "preview", js.Array(value :_*))
       
-      @scala.inline
-      def setReady(value: /* event */ ReadyEvent => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+      inline def setReady(value: /* event */ ReadyEvent => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+      inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      @scala.inline
-      def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+      inline def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+      inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
       
-      @scala.inline
-      def setRotatable(value: Boolean): Self = StObject.set(x, "rotatable", value.asInstanceOf[js.Any])
+      inline def setRotatable(value: Boolean): Self = StObject.set(x, "rotatable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotatableUndefined: Self = StObject.set(x, "rotatable", js.undefined)
+      inline def setRotatableUndefined: Self = StObject.set(x, "rotatable", js.undefined)
       
-      @scala.inline
-      def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
+      inline def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableUndefined: Self = StObject.set(x, "scalable", js.undefined)
+      inline def setScalableUndefined: Self = StObject.set(x, "scalable", js.undefined)
       
-      @scala.inline
-      def setToggleDragModeOnDblclick(value: Boolean): Self = StObject.set(x, "toggleDragModeOnDblclick", value.asInstanceOf[js.Any])
+      inline def setToggleDragModeOnDblclick(value: Boolean): Self = StObject.set(x, "toggleDragModeOnDblclick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleDragModeOnDblclickUndefined: Self = StObject.set(x, "toggleDragModeOnDblclick", js.undefined)
+      inline def setToggleDragModeOnDblclickUndefined: Self = StObject.set(x, "toggleDragModeOnDblclick", js.undefined)
       
-      @scala.inline
-      def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
       
-      @scala.inline
-      def setWheelZoomRatio(value: Double): Self = StObject.set(x, "wheelZoomRatio", value.asInstanceOf[js.Any])
+      inline def setWheelZoomRatio(value: Double): Self = StObject.set(x, "wheelZoomRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelZoomRatioUndefined: Self = StObject.set(x, "wheelZoomRatio", js.undefined)
+      inline def setWheelZoomRatioUndefined: Self = StObject.set(x, "wheelZoomRatio", js.undefined)
       
-      @scala.inline
-      def setZoom(value: /* event */ ZoomEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
+      inline def setZoom(value: /* event */ ZoomEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomOnTouch(value: Boolean): Self = StObject.set(x, "zoomOnTouch", value.asInstanceOf[js.Any])
+      inline def setZoomOnTouch(value: Boolean): Self = StObject.set(x, "zoomOnTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomOnTouchUndefined: Self = StObject.set(x, "zoomOnTouch", js.undefined)
+      inline def setZoomOnTouchUndefined: Self = StObject.set(x, "zoomOnTouch", js.undefined)
       
-      @scala.inline
-      def setZoomOnWheel(value: Boolean): Self = StObject.set(x, "zoomOnWheel", value.asInstanceOf[js.Any])
+      inline def setZoomOnWheel(value: Boolean): Self = StObject.set(x, "zoomOnWheel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomOnWheelUndefined: Self = StObject.set(x, "zoomOnWheel", js.undefined)
+      inline def setZoomOnWheelUndefined: Self = StObject.set(x, "zoomOnWheel", js.undefined)
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
       
-      @scala.inline
-      def setZoomable(value: Boolean): Self = StObject.set(x, "zoomable", value.asInstanceOf[js.Any])
+      inline def setZoomable(value: Boolean): Self = StObject.set(x, "zoomable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomableUndefined: Self = StObject.set(x, "zoomable", js.undefined)
+      inline def setZoomableUndefined: Self = StObject.set(x, "zoomable", js.undefined)
     }
   }
   
@@ -917,38 +755,28 @@ object Cropper {
   }
   object SetCanvasDataOptions {
     
-    @scala.inline
-    def apply(): SetCanvasDataOptions = {
+    inline def apply(): SetCanvasDataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetCanvasDataOptions]
     }
     
-    @scala.inline
-    implicit class SetCanvasDataOptionsMutableBuilder[Self <: SetCanvasDataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetCanvasDataOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -964,38 +792,28 @@ object Cropper {
   }
   object SetCropBoxDataOptions {
     
-    @scala.inline
-    def apply(): SetCropBoxDataOptions = {
+    inline def apply(): SetCropBoxDataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetCropBoxDataOptions]
     }
     
-    @scala.inline
-    implicit class SetCropBoxDataOptionsMutableBuilder[Self <: SetCropBoxDataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetCropBoxDataOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -1017,56 +835,40 @@ object Cropper {
   }
   object SetDataOptions {
     
-    @scala.inline
-    def apply(): SetDataOptions = {
+    inline def apply(): SetDataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetDataOptions]
     }
     
-    @scala.inline
-    implicit class SetDataOptionsMutableBuilder[Self <: SetDataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetDataOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+      inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
       
-      @scala.inline
-      def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+      inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -1079,17 +881,13 @@ object Cropper {
   trait ViewMode extends StObject
   object ViewMode {
     
-    @scala.inline
-    def `0`: typings.cropperjs.cropperjsNumbers.`0` = 0.asInstanceOf[typings.cropperjs.cropperjsNumbers.`0`]
+    inline def `0`: typings.cropperjs.cropperjsNumbers.`0` = 0.asInstanceOf[typings.cropperjs.cropperjsNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.cropperjs.cropperjsNumbers.`1` = 1.asInstanceOf[typings.cropperjs.cropperjsNumbers.`1`]
+    inline def `1`: typings.cropperjs.cropperjsNumbers.`1` = 1.asInstanceOf[typings.cropperjs.cropperjsNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.cropperjs.cropperjsNumbers.`2` = 2.asInstanceOf[typings.cropperjs.cropperjsNumbers.`2`]
+    inline def `2`: typings.cropperjs.cropperjsNumbers.`2` = 2.asInstanceOf[typings.cropperjs.cropperjsNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.cropperjs.cropperjsNumbers.`3` = 3.asInstanceOf[typings.cropperjs.cropperjsNumbers.`3`]
+    inline def `3`: typings.cropperjs.cropperjsNumbers.`3` = 3.asInstanceOf[typings.cropperjs.cropperjsNumbers.`3`]
   }
   
   @js.native
@@ -1111,23 +909,18 @@ object Cropper {
   }
   object ZoomEventData {
     
-    @scala.inline
-    def apply(oldRatio: Double, originalEvent: WheelEvent | PointerEvent | TouchEvent, ratio: Double): ZoomEventData = {
+    inline def apply(oldRatio: Double, originalEvent: WheelEvent | PointerEvent | TouchEvent, ratio: Double): ZoomEventData = {
       val __obj = js.Dynamic.literal(oldRatio = oldRatio.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZoomEventData]
     }
     
-    @scala.inline
-    implicit class ZoomEventDataMutableBuilder[Self <: ZoomEventData] (val x: Self) extends AnyVal {
+    extension [Self <: ZoomEventData](x: Self) {
       
-      @scala.inline
-      def setOldRatio(value: Double): Self = StObject.set(x, "oldRatio", value.asInstanceOf[js.Any])
+      inline def setOldRatio(value: Double): Self = StObject.set(x, "oldRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: WheelEvent | PointerEvent | TouchEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: WheelEvent | PointerEvent | TouchEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait Grant extends StObject {
 }
 object Grant {
   
-  @scala.inline
-  def apply(): Grant = {
+  inline def apply(): Grant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Grant]
   }
   
-  @scala.inline
-  implicit class GrantMutableBuilder[Self <: Grant] (val x: Self) extends AnyVal {
+  extension [Self <: Grant](x: Self) {
     
-    @scala.inline
-    def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
+    inline def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
+    inline def setGranteeUndefined: Self = StObject.set(x, "Grantee", js.undefined)
     
-    @scala.inline
-    def setPermission(value: Permission): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: Permission): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
   }
 }

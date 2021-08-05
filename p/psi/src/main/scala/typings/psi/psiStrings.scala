@@ -8,11 +8,9 @@ object psiStrings {
   
   @js.native
   sealed trait desktop extends StObject
-  @scala.inline
-  def desktop: desktop = "desktop".asInstanceOf[desktop]
+  inline def desktop: desktop = "desktop".asInstanceOf[desktop]
   
   @js.native
   sealed trait mobile extends StObject
-  @scala.inline
-  def mobile: mobile = "mobile".asInstanceOf[mobile]
+  inline def mobile: mobile = "mobile".asInstanceOf[mobile]
 }

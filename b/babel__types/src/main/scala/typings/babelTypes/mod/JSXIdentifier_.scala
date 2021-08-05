@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object JSXIdentifier_ {
   
-  @scala.inline
-  def apply(name: String): JSXIdentifier_ = {
+  inline def apply(name: String): JSXIdentifier_ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("JSXIdentifier")
     __obj.asInstanceOf[JSXIdentifier_]
   }
   
-  @scala.inline
-  implicit class JSXIdentifier_MutableBuilder[Self <: JSXIdentifier_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXIdentifier_](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: JSXIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXIdentifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait Value[D /* <: js.Object */] extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](id: IdType[D], value: FilterValue): Value[D] = {
+  inline def apply[D /* <: js.Object */](id: IdType[D], value: FilterValue): Value[D] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value[D]]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value[?], D /* <: js.Object */] (val x: Self & Value[D]) extends AnyVal {
+  extension [Self <: Value[?], D /* <: js.Object */](x: Self & Value[D]) {
     
-    @scala.inline
-    def setId(value: IdType[D]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdType[D]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -10,7 +10,7 @@ object columnKeyCreatorMod {
   @js.native
   class ColumnKeyCreator () extends StObject {
     
-    var existingKeys: js.Any = js.native
+    /* private */ var existingKeys: js.Any = js.native
     
     def getUniqueKey(colId: String, colField: String): String = js.native
   }

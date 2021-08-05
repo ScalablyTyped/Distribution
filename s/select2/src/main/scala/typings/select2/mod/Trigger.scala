@@ -14,20 +14,16 @@ trait Trigger extends StObject {
 }
 object Trigger {
   
-  @scala.inline
-  def apply(params: Data): Trigger = {
+  inline def apply(params: Data): Trigger = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("select2:select")
     __obj.asInstanceOf[Trigger]
   }
   
-  @scala.inline
-  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
+  extension [Self <: Trigger](x: Self) {
     
-    @scala.inline
-    def setParams(value: Data): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Data): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: select2Colonselect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: select2Colonselect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

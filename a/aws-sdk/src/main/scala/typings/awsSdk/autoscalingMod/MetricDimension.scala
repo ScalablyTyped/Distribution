@@ -18,19 +18,15 @@ trait MetricDimension extends StObject {
 }
 object MetricDimension {
   
-  @scala.inline
-  def apply(Name: MetricDimensionName, Value: MetricDimensionValue): MetricDimension = {
+  inline def apply(Name: MetricDimensionName, Value: MetricDimensionValue): MetricDimension = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDimension]
   }
   
-  @scala.inline
-  implicit class MetricDimensionMutableBuilder[Self <: MetricDimension] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDimension](x: Self) {
     
-    @scala.inline
-    def setName(value: MetricDimensionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: MetricDimensionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: MetricDimensionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MetricDimensionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait ListRoutinesResponse extends StObject {
 }
 object ListRoutinesResponse {
   
-  @scala.inline
-  def apply(): ListRoutinesResponse = {
+  inline def apply(): ListRoutinesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRoutinesResponse]
   }
   
-  @scala.inline
-  implicit class ListRoutinesResponseMutableBuilder[Self <: ListRoutinesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRoutinesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRoutines(value: js.Array[Routine]): Self = StObject.set(x, "routines", value.asInstanceOf[js.Any])
+    inline def setRoutines(value: js.Array[Routine]): Self = StObject.set(x, "routines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutinesUndefined: Self = StObject.set(x, "routines", js.undefined)
+    inline def setRoutinesUndefined: Self = StObject.set(x, "routines", js.undefined)
     
-    @scala.inline
-    def setRoutinesVarargs(value: Routine*): Self = StObject.set(x, "routines", js.Array(value :_*))
+    inline def setRoutinesVarargs(value: Routine*): Self = StObject.set(x, "routines", js.Array(value :_*))
   }
 }

@@ -77,8 +77,7 @@ object bloomMod {
   }
   object Bloom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Buffer => Unit,
       bitvector: Buffer,
       check: Buffer => Boolean,
@@ -89,23 +88,17 @@ object bloomMod {
       __obj.asInstanceOf[Bloom]
     }
     
-    @scala.inline
-    implicit class BloomMutableBuilder[Self <: Bloom] (val x: Self) extends AnyVal {
+    extension [Self <: Bloom](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Buffer => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Buffer => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBitvector(value: Buffer): Self = StObject.set(x, "bitvector", value.asInstanceOf[js.Any])
+      inline def setBitvector(value: Buffer): Self = StObject.set(x, "bitvector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheck(value: Buffer => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+      inline def setCheck(value: Buffer => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiCheck(value: js.Array[Buffer] => Boolean): Self = StObject.set(x, "multiCheck", js.Any.fromFunction1(value))
+      inline def setMultiCheck(value: js.Array[Buffer] => Boolean): Self = StObject.set(x, "multiCheck", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOr(value: Bloom => Unit): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+      inline def setOr(value: Bloom => Unit): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     }
   }
 }

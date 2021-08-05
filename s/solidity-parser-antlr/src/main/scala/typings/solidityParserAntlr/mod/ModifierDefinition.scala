@@ -16,20 +16,16 @@ trait ModifierDefinition
 }
 object ModifierDefinition {
   
-  @scala.inline
-  def apply(name: String): ModifierDefinition = {
+  inline def apply(name: String): ModifierDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ModifierDefinition")
     __obj.asInstanceOf[ModifierDefinition]
   }
   
-  @scala.inline
-  implicit class ModifierDefinitionMutableBuilder[Self <: ModifierDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ModifierDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

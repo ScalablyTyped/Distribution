@@ -28,26 +28,20 @@ trait LogChannel extends StObject {
 }
 object LogChannel {
   
-  @scala.inline
-  def apply(channel: String, configuration: String, status: String, `type`: String): LogChannel = {
+  inline def apply(channel: String, configuration: String, status: String, `type`: String): LogChannel = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogChannel]
   }
   
-  @scala.inline
-  implicit class LogChannelMutableBuilder[Self <: LogChannel] (val x: Self) extends AnyVal {
+  extension [Self <: LogChannel](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

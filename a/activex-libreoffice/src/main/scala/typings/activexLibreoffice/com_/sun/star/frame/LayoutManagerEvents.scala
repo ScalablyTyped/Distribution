@@ -27,28 +27,20 @@ object LayoutManagerEvents {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def INVISIBLE: `4` = 4.asInstanceOf[`4`]
+    inline def INVISIBLE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def LAYOUT: `2` = 2.asInstanceOf[`2`]
+    inline def LAYOUT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def LOCK: `0` = 0.asInstanceOf[`0`]
+    inline def LOCK: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def MERGEDMENUBAR: `5` = 5.asInstanceOf[`5`]
+    inline def MERGEDMENUBAR: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def UIELEMENT_INVISIBLE: `7` = 7.asInstanceOf[`7`]
+    inline def UIELEMENT_INVISIBLE: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def UIELEMENT_VISIBLE: `6` = 6.asInstanceOf[`6`]
+    inline def UIELEMENT_VISIBLE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def UNLOCK: `1` = 1.asInstanceOf[`1`]
+    inline def UNLOCK: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def VISIBLE: `3` = 3.asInstanceOf[`3`]
+    inline def VISIBLE: `3` = 3.asInstanceOf[`3`]
   }
 }

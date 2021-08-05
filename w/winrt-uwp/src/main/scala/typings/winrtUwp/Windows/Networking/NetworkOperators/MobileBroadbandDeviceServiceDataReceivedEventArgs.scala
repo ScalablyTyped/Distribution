@@ -13,16 +13,13 @@ trait MobileBroadbandDeviceServiceDataReceivedEventArgs extends StObject {
 }
 object MobileBroadbandDeviceServiceDataReceivedEventArgs {
   
-  @scala.inline
-  def apply(receivedData: IBuffer): MobileBroadbandDeviceServiceDataReceivedEventArgs = {
+  inline def apply(receivedData: IBuffer): MobileBroadbandDeviceServiceDataReceivedEventArgs = {
     val __obj = js.Dynamic.literal(receivedData = receivedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandDeviceServiceDataReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandDeviceServiceDataReceivedEventArgsMutableBuilder[Self <: MobileBroadbandDeviceServiceDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandDeviceServiceDataReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReceivedData(value: IBuffer): Self = StObject.set(x, "receivedData", value.asInstanceOf[js.Any])
+    inline def setReceivedData(value: IBuffer): Self = StObject.set(x, "receivedData", value.asInstanceOf[js.Any])
   }
 }

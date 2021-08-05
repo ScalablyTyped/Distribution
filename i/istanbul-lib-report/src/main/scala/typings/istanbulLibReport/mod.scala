@@ -89,17 +89,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getOutput(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutput")().asInstanceOf[String]
+    inline def getOutput(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutput")().asInstanceOf[String]
     
-    @scala.inline
-    def resetOutput(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetOutput")().asInstanceOf[Unit]
+    inline def resetOutput(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetOutput")().asInstanceOf[Unit]
     
-    @scala.inline
-    def startCapture(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startCapture")().asInstanceOf[Unit]
+    inline def startCapture(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startCapture")().asInstanceOf[Unit]
     
-    @scala.inline
-    def stopCapture(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCapture")().asInstanceOf[Unit]
+    inline def stopCapture(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCapture")().asInstanceOf[Unit]
   }
   
   @JSImport("istanbul-lib-report", "ReportBase")
@@ -110,13 +106,10 @@ object mod {
     def execute(context: Context): Unit = js.native
   }
   
-  @scala.inline
-  def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
-  @scala.inline
-  def createContext(options: PartialContextOptions): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(options.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
+  inline def createContext(options: PartialContextOptions): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(options.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  @scala.inline
-  def getDefaultWatermarks(): Watermarks = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultWatermarks")().asInstanceOf[Watermarks]
+  inline def getDefaultWatermarks(): Watermarks = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultWatermarks")().asInstanceOf[Watermarks]
   
   @js.native
   trait Context extends StObject {
@@ -184,8 +177,7 @@ object mod {
   }
   object ContextOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coverageMap: CoverageMap,
       defaultSummarizer: Summarizers,
       dir: String,
@@ -196,23 +188,17 @@ object mod {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    @scala.inline
-    implicit class ContextOptionsMutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ContextOptions](x: Self) {
       
-      @scala.inline
-      def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
+      inline def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSummarizer(value: Summarizers): Self = StObject.set(x, "defaultSummarizer", value.asInstanceOf[js.Any])
+      inline def setDefaultSummarizer(value: Summarizers): Self = StObject.set(x, "defaultSummarizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFinder(value: String => String): Self = StObject.set(x, "sourceFinder", js.Any.fromFunction1(value))
+      inline def setSourceFinder(value: String => String): Self = StObject.set(x, "sourceFinder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWatermarks(value: PartialWatermarks): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
+      inline def setWatermarks(value: PartialWatermarks): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,20 +210,16 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(isRoot: () => Boolean, visit: (Visitor[Node], js.Any) => Unit): Node = {
+    inline def apply(isRoot: () => Boolean, visit: (Visitor[Node], js.Any) => Unit): Node = {
       val __obj = js.Dynamic.literal(isRoot = js.Any.fromFunction0(isRoot), visit = js.Any.fromFunction2(visit))
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setIsRoot(value: () => Boolean): Self = StObject.set(x, "isRoot", js.Any.fromFunction0(value))
+      inline def setIsRoot(value: () => Boolean): Self = StObject.set(x, "isRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisit(value: (Visitor[Node], js.Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (Visitor[Node], js.Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     }
   }
   
@@ -247,17 +229,14 @@ object mod {
   }
   object ReportBaseOptions {
     
-    @scala.inline
-    def apply(summarizer: Summarizers): ReportBaseOptions = {
+    inline def apply(summarizer: Summarizers): ReportBaseOptions = {
       val __obj = js.Dynamic.literal(summarizer = summarizer.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReportBaseOptions]
     }
     
-    @scala.inline
-    implicit class ReportBaseOptionsMutableBuilder[Self <: ReportBaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReportBaseOptions](x: Self) {
       
-      @scala.inline
-      def setSummarizer(value: Summarizers): Self = StObject.set(x, "summarizer", value.asInstanceOf[js.Any])
+      inline def setSummarizer(value: Summarizers): Self = StObject.set(x, "summarizer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,8 +272,7 @@ object mod {
   }
   object ReportNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addChild: ReportNode => Unit,
       asRelative: String => String,
       children: js.Array[ReportNode],
@@ -314,53 +292,37 @@ object mod {
       __obj.asInstanceOf[ReportNode]
     }
     
-    @scala.inline
-    implicit class ReportNodeMutableBuilder[Self <: ReportNode] (val x: Self) extends AnyVal {
+    extension [Self <: ReportNode](x: Self) {
       
-      @scala.inline
-      def setAddChild(value: ReportNode => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
+      inline def setAddChild(value: ReportNode => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAsRelative(value: String => String): Self = StObject.set(x, "asRelative", js.Any.fromFunction1(value))
+      inline def setAsRelative(value: String => String): Self = StObject.set(x, "asRelative", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildren(value: js.Array[ReportNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReportNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReportNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReportNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setFileCoverage(value: FileCoverage): Self = StObject.set(x, "fileCoverage", value.asInstanceOf[js.Any])
+      inline def setFileCoverage(value: FileCoverage): Self = StObject.set(x, "fileCoverage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetChildren(value: () => js.Array[Node]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => js.Array[Node]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCoverageSummary(value: Boolean => CoverageSummary): Self = StObject.set(x, "getCoverageSummary", js.Any.fromFunction1(value))
+      inline def setGetCoverageSummary(value: Boolean => CoverageSummary): Self = StObject.set(x, "getCoverageSummary", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFileCoverage(value: () => FileCoverage): Self = StObject.set(x, "getFileCoverage", js.Any.fromFunction0(value))
+      inline def setGetFileCoverage(value: () => FileCoverage): Self = StObject.set(x, "getFileCoverage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => Node): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => Node): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetQualifiedName(value: () => String): Self = StObject.set(x, "getQualifiedName", js.Any.fromFunction0(value))
+      inline def setGetQualifiedName(value: () => String): Self = StObject.set(x, "getQualifiedName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRelativeName(value: () => String): Self = StObject.set(x, "getRelativeName", js.Any.fromFunction0(value))
+      inline def setGetRelativeName(value: () => String): Self = StObject.set(x, "getRelativeName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSummary(value: () => Boolean): Self = StObject.set(x, "isSummary", js.Any.fromFunction0(value))
+      inline def setIsSummary(value: () => Boolean): Self = StObject.set(x, "isSummary", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParent(value: ReportNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ReportNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNull: Self = StObject.set(x, "parent", null)
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -373,17 +335,13 @@ object mod {
   trait Summarizers extends StObject
   object Summarizers {
     
-    @scala.inline
-    def defaultSummarizer: typings.istanbulLibReport.istanbulLibReportStrings.defaultSummarizer = "defaultSummarizer".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.defaultSummarizer]
+    inline def defaultSummarizer: typings.istanbulLibReport.istanbulLibReportStrings.defaultSummarizer = "defaultSummarizer".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.defaultSummarizer]
     
-    @scala.inline
-    def flat: typings.istanbulLibReport.istanbulLibReportStrings.flat = "flat".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.flat]
+    inline def flat: typings.istanbulLibReport.istanbulLibReportStrings.flat = "flat".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.flat]
     
-    @scala.inline
-    def nested: typings.istanbulLibReport.istanbulLibReportStrings.nested = "nested".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.nested]
+    inline def nested: typings.istanbulLibReport.istanbulLibReportStrings.nested = "nested".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.nested]
     
-    @scala.inline
-    def pkg: typings.istanbulLibReport.istanbulLibReportStrings.pkg = "pkg".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.pkg]
+    inline def pkg: typings.istanbulLibReport.istanbulLibReportStrings.pkg = "pkg".asInstanceOf[typings.istanbulLibReport.istanbulLibReportStrings.pkg]
   }
   
   trait Tree[N /* <: Node */] extends StObject {
@@ -394,20 +352,16 @@ object mod {
   }
   object Tree {
     
-    @scala.inline
-    def apply[N /* <: Node */](getRoot: () => N, visit: (Partial[Visitor[N]], js.Any) => Unit): Tree[N] = {
+    inline def apply[N /* <: Node */](getRoot: () => N, visit: (Partial[Visitor[N]], js.Any) => Unit): Tree[N] = {
       val __obj = js.Dynamic.literal(getRoot = js.Any.fromFunction0(getRoot), visit = js.Any.fromFunction2(visit))
       __obj.asInstanceOf[Tree[N]]
     }
     
-    @scala.inline
-    implicit class TreeMutableBuilder[Self <: Tree[?], N /* <: Node */] (val x: Self & Tree[N]) extends AnyVal {
+    extension [Self <: Tree[?], N /* <: Node */](x: Self & Tree[N]) {
       
-      @scala.inline
-      def setGetRoot(value: () => N): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+      inline def setGetRoot(value: () => N): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisit(value: (Partial[Visitor[N]], js.Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (Partial[Visitor[N]], js.Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     }
   }
   
@@ -425,8 +379,7 @@ object mod {
   }
   object Visitor {
     
-    @scala.inline
-    def apply[N /* <: Node */](
+    inline def apply[N /* <: Node */](
       onDetail: (N, js.Any) => Unit,
       onEnd: (N, js.Any) => Unit,
       onStart: (N, js.Any) => Unit,
@@ -437,23 +390,17 @@ object mod {
       __obj.asInstanceOf[Visitor[N]]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor[?], N /* <: Node */] (val x: Self & Visitor[N]) extends AnyVal {
+    extension [Self <: Visitor[?], N /* <: Node */](x: Self & Visitor[N]) {
       
-      @scala.inline
-      def setOnDetail(value: (N, js.Any) => Unit): Self = StObject.set(x, "onDetail", js.Any.fromFunction2(value))
+      inline def setOnDetail(value: (N, js.Any) => Unit): Self = StObject.set(x, "onDetail", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEnd(value: (N, js.Any) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
+      inline def setOnEnd(value: (N, js.Any) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStart(value: (N, js.Any) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+      inline def setOnStart(value: (N, js.Any) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSummary(value: (N, js.Any) => Unit): Self = StObject.set(x, "onSummary", js.Any.fromFunction2(value))
+      inline def setOnSummary(value: (N, js.Any) => Unit): Self = StObject.set(x, "onSummary", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSummaryEnd(value: (N, js.Any) => Unit): Self = StObject.set(x, "onSummaryEnd", js.Any.fromFunction2(value))
+      inline def setOnSummaryEnd(value: (N, js.Any) => Unit): Self = StObject.set(x, "onSummaryEnd", js.Any.fromFunction2(value))
     }
   }
   
@@ -471,26 +418,20 @@ object mod {
   }
   object Watermarks {
     
-    @scala.inline
-    def apply(branches: Watermark, functions: Watermark, lines: Watermark, statements: Watermark): Watermarks = {
+    inline def apply(branches: Watermark, functions: Watermark, lines: Watermark, statements: Watermark): Watermarks = {
       val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
       __obj.asInstanceOf[Watermarks]
     }
     
-    @scala.inline
-    implicit class WatermarksMutableBuilder[Self <: Watermarks] (val x: Self) extends AnyVal {
+    extension [Self <: Watermarks](x: Self) {
       
-      @scala.inline
-      def setBranches(value: Watermark): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: Watermark): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctions(value: Watermark): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: Watermark): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: Watermark): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Watermark): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatements(value: Watermark): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: Watermark): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     }
   }
   

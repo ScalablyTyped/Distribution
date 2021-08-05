@@ -5,38 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def OptionTypes: js.Object = typings.filepond.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OptionTypes").asInstanceOf[js.Object]
+inline def OptionTypes: js.Object = typings.filepond.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OptionTypes").asInstanceOf[js.Object]
 
-@scala.inline
-def create(): typings.filepond.anon.FilePond = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.filepond.anon.FilePond]
-@scala.inline
-def create(element: scala.Unit, options: typings.filepond.mod.FilePondOptions): typings.filepond.anon.FilePond = (typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.filepond.anon.FilePond]
-@scala.inline
-def create(element: typings.std.Element): typings.filepond.anon.FilePond = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.filepond.anon.FilePond]
-@scala.inline
-def create(element: typings.std.Element, options: typings.filepond.mod.FilePondOptions): typings.filepond.anon.FilePond = (typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.filepond.anon.FilePond]
+inline def create(): typings.filepond.anon.FilePond = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.filepond.anon.FilePond]
+inline def create(element: scala.Unit, options: typings.filepond.mod.FilePondOptions): typings.filepond.anon.FilePond = (typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.filepond.anon.FilePond]
+inline def create(element: typings.std.Element): typings.filepond.anon.FilePond = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.filepond.anon.FilePond]
+inline def create(element: typings.std.Element, options: typings.filepond.mod.FilePondOptions): typings.filepond.anon.FilePond = (typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.filepond.anon.FilePond]
 
-@scala.inline
-def destroy(element: typings.std.Element): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def destroy(element: typings.std.Element): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def find(element: typings.std.Element): typings.filepond.anon.FilePond = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("find")(element.asInstanceOf[js.Any]).asInstanceOf[typings.filepond.anon.FilePond]
+inline def find(element: typings.std.Element): typings.filepond.anon.FilePond = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("find")(element.asInstanceOf[js.Any]).asInstanceOf[typings.filepond.anon.FilePond]
 
-@scala.inline
-def getOptions(): typings.filepond.mod.FilePondOptions = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[typings.filepond.mod.FilePondOptions]
+inline def getOptions(): typings.filepond.mod.FilePondOptions = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[typings.filepond.mod.FilePondOptions]
 
-@scala.inline
-def parse(context: typings.std.Element): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(context.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def parse(context: typings.std.Element): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(context.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def registerPlugin(plugins: js.Any*): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugins.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def registerPlugin(plugins: js.Any*): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugins.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def setOptions(options: typings.filepond.mod.FilePondOptions): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setOptions(options: typings.filepond.mod.FilePondOptions): scala.Unit = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def supported(): scala.Boolean = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("supported")().asInstanceOf[scala.Boolean]
+inline def supported(): scala.Boolean = typings.filepond.mod.^.asInstanceOf[js.Dynamic].applyDynamic("supported")().asInstanceOf[scala.Boolean]
 
 type FetchServerConfigFunction = js.Function6[
 /* url */ java.lang.String, 

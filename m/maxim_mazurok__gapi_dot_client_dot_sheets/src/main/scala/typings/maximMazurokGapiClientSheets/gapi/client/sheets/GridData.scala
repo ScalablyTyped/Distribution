@@ -23,52 +23,37 @@ trait GridData extends StObject {
 }
 object GridData {
   
-  @scala.inline
-  def apply(): GridData = {
+  inline def apply(): GridData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridData]
   }
   
-  @scala.inline
-  implicit class GridDataMutableBuilder[Self <: GridData] (val x: Self) extends AnyVal {
+  extension [Self <: GridData](x: Self) {
     
-    @scala.inline
-    def setColumnMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
+    inline def setColumnMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
+    inline def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
     
-    @scala.inline
-    def setColumnMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
+    inline def setColumnMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setRowData(value: js.Array[RowData]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: js.Array[RowData]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
+    inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
     
-    @scala.inline
-    def setRowDataVarargs(value: RowData*): Self = StObject.set(x, "rowData", js.Array(value :_*))
+    inline def setRowDataVarargs(value: RowData*): Self = StObject.set(x, "rowData", js.Array(value :_*))
     
-    @scala.inline
-    def setRowMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "rowMetadata", value.asInstanceOf[js.Any])
+    inline def setRowMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "rowMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowMetadataUndefined: Self = StObject.set(x, "rowMetadata", js.undefined)
+    inline def setRowMetadataUndefined: Self = StObject.set(x, "rowMetadata", js.undefined)
     
-    @scala.inline
-    def setRowMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "rowMetadata", js.Array(value :_*))
+    inline def setRowMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "rowMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
+    inline def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
-    @scala.inline
-    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+    inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
+    inline def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
   }
 }

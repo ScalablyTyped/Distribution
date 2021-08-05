@@ -121,21 +121,16 @@ object firehoseDeliveryStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState, opts: CustomResourceOptions): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
+    inline def get(name: String, id: Input[ID]): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
+    inline def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
+    inline def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState, opts: CustomResourceOptions): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
     
     /**
       * Returns true if the given object is an instance of FirehoseDeliveryStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean]
   }
   
   trait FirehoseDeliveryStreamArgs extends StObject {
@@ -234,107 +229,78 @@ object firehoseDeliveryStreamMod {
   }
   object FirehoseDeliveryStreamArgs {
     
-    @scala.inline
-    def apply(destination: Input[String]): FirehoseDeliveryStreamArgs = {
+    inline def apply(destination: Input[String]): FirehoseDeliveryStreamArgs = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirehoseDeliveryStreamArgs]
     }
     
-    @scala.inline
-    implicit class FirehoseDeliveryStreamArgsMutableBuilder[Self <: FirehoseDeliveryStreamArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FirehoseDeliveryStreamArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationId(value: Input[String]): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
+      inline def setDestinationId(value: Input[String]): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationIdUndefined: Self = StObject.set(x, "destinationId", js.undefined)
+      inline def setDestinationIdUndefined: Self = StObject.set(x, "destinationId", js.undefined)
       
-      @scala.inline
-      def setElasticsearchConfiguration(
+      inline def setElasticsearchConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamElasticsearchConfiguration
             ]
       ): Self = StObject.set(x, "elasticsearchConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchConfigurationUndefined: Self = StObject.set(x, "elasticsearchConfiguration", js.undefined)
+      inline def setElasticsearchConfigurationUndefined: Self = StObject.set(x, "elasticsearchConfiguration", js.undefined)
       
-      @scala.inline
-      def setExtendedS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamExtendedS3Configuration]): Self = StObject.set(x, "extendedS3Configuration", value.asInstanceOf[js.Any])
+      inline def setExtendedS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamExtendedS3Configuration]): Self = StObject.set(x, "extendedS3Configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedS3ConfigurationUndefined: Self = StObject.set(x, "extendedS3Configuration", js.undefined)
+      inline def setExtendedS3ConfigurationUndefined: Self = StObject.set(x, "extendedS3Configuration", js.undefined)
       
-      @scala.inline
-      def setHttpEndpointConfiguration(
+      inline def setHttpEndpointConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamHttpEndpointConfiguration
             ]
       ): Self = StObject.set(x, "httpEndpointConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpEndpointConfigurationUndefined: Self = StObject.set(x, "httpEndpointConfiguration", js.undefined)
+      inline def setHttpEndpointConfigurationUndefined: Self = StObject.set(x, "httpEndpointConfiguration", js.undefined)
       
-      @scala.inline
-      def setKinesisSourceConfiguration(
+      inline def setKinesisSourceConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamKinesisSourceConfiguration
             ]
       ): Self = StObject.set(x, "kinesisSourceConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisSourceConfigurationUndefined: Self = StObject.set(x, "kinesisSourceConfiguration", js.undefined)
+      inline def setKinesisSourceConfigurationUndefined: Self = StObject.set(x, "kinesisSourceConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRedshiftConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamRedshiftConfiguration]): Self = StObject.set(x, "redshiftConfiguration", value.asInstanceOf[js.Any])
+      inline def setRedshiftConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamRedshiftConfiguration]): Self = StObject.set(x, "redshiftConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedshiftConfigurationUndefined: Self = StObject.set(x, "redshiftConfiguration", js.undefined)
+      inline def setRedshiftConfigurationUndefined: Self = StObject.set(x, "redshiftConfiguration", js.undefined)
       
-      @scala.inline
-      def setS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]): Self = StObject.set(x, "s3Configuration", value.asInstanceOf[js.Any])
+      inline def setS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]): Self = StObject.set(x, "s3Configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3ConfigurationUndefined: Self = StObject.set(x, "s3Configuration", js.undefined)
+      inline def setS3ConfigurationUndefined: Self = StObject.set(x, "s3Configuration", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
       
-      @scala.inline
-      def setSplunkConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamSplunkConfiguration]): Self = StObject.set(x, "splunkConfiguration", value.asInstanceOf[js.Any])
+      inline def setSplunkConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamSplunkConfiguration]): Self = StObject.set(x, "splunkConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplunkConfigurationUndefined: Self = StObject.set(x, "splunkConfiguration", js.undefined)
+      inline def setSplunkConfigurationUndefined: Self = StObject.set(x, "splunkConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersionId(value: Input[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: Input[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
     }
   }
   
@@ -434,110 +400,80 @@ object firehoseDeliveryStreamMod {
   }
   object FirehoseDeliveryStreamState {
     
-    @scala.inline
-    def apply(): FirehoseDeliveryStreamState = {
+    inline def apply(): FirehoseDeliveryStreamState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirehoseDeliveryStreamState]
     }
     
-    @scala.inline
-    implicit class FirehoseDeliveryStreamStateMutableBuilder[Self <: FirehoseDeliveryStreamState] (val x: Self) extends AnyVal {
+    extension [Self <: FirehoseDeliveryStreamState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationId(value: Input[String]): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
+      inline def setDestinationId(value: Input[String]): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationIdUndefined: Self = StObject.set(x, "destinationId", js.undefined)
+      inline def setDestinationIdUndefined: Self = StObject.set(x, "destinationId", js.undefined)
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setElasticsearchConfiguration(
+      inline def setElasticsearchConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamElasticsearchConfiguration
             ]
       ): Self = StObject.set(x, "elasticsearchConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchConfigurationUndefined: Self = StObject.set(x, "elasticsearchConfiguration", js.undefined)
+      inline def setElasticsearchConfigurationUndefined: Self = StObject.set(x, "elasticsearchConfiguration", js.undefined)
       
-      @scala.inline
-      def setExtendedS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamExtendedS3Configuration]): Self = StObject.set(x, "extendedS3Configuration", value.asInstanceOf[js.Any])
+      inline def setExtendedS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamExtendedS3Configuration]): Self = StObject.set(x, "extendedS3Configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedS3ConfigurationUndefined: Self = StObject.set(x, "extendedS3Configuration", js.undefined)
+      inline def setExtendedS3ConfigurationUndefined: Self = StObject.set(x, "extendedS3Configuration", js.undefined)
       
-      @scala.inline
-      def setHttpEndpointConfiguration(
+      inline def setHttpEndpointConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamHttpEndpointConfiguration
             ]
       ): Self = StObject.set(x, "httpEndpointConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpEndpointConfigurationUndefined: Self = StObject.set(x, "httpEndpointConfiguration", js.undefined)
+      inline def setHttpEndpointConfigurationUndefined: Self = StObject.set(x, "httpEndpointConfiguration", js.undefined)
       
-      @scala.inline
-      def setKinesisSourceConfiguration(
+      inline def setKinesisSourceConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamKinesisSourceConfiguration
             ]
       ): Self = StObject.set(x, "kinesisSourceConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisSourceConfigurationUndefined: Self = StObject.set(x, "kinesisSourceConfiguration", js.undefined)
+      inline def setKinesisSourceConfigurationUndefined: Self = StObject.set(x, "kinesisSourceConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRedshiftConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamRedshiftConfiguration]): Self = StObject.set(x, "redshiftConfiguration", value.asInstanceOf[js.Any])
+      inline def setRedshiftConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamRedshiftConfiguration]): Self = StObject.set(x, "redshiftConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedshiftConfigurationUndefined: Self = StObject.set(x, "redshiftConfiguration", js.undefined)
+      inline def setRedshiftConfigurationUndefined: Self = StObject.set(x, "redshiftConfiguration", js.undefined)
       
-      @scala.inline
-      def setS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]): Self = StObject.set(x, "s3Configuration", value.asInstanceOf[js.Any])
+      inline def setS3Configuration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]): Self = StObject.set(x, "s3Configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3ConfigurationUndefined: Self = StObject.set(x, "s3Configuration", js.undefined)
+      inline def setS3ConfigurationUndefined: Self = StObject.set(x, "s3Configuration", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
       
-      @scala.inline
-      def setSplunkConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamSplunkConfiguration]): Self = StObject.set(x, "splunkConfiguration", value.asInstanceOf[js.Any])
+      inline def setSplunkConfiguration(value: Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamSplunkConfiguration]): Self = StObject.set(x, "splunkConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplunkConfigurationUndefined: Self = StObject.set(x, "splunkConfiguration", js.undefined)
+      inline def setSplunkConfigurationUndefined: Self = StObject.set(x, "splunkConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersionId(value: Input[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: Input[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
     }
   }
 }

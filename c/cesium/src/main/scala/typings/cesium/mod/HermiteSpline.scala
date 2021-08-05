@@ -30,14 +30,11 @@ object HermiteSpline {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createC1(): HermiteSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createC1")().asInstanceOf[HermiteSpline]
+  inline def createC1(): HermiteSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createC1")().asInstanceOf[HermiteSpline]
   
   /* static member */
-  @scala.inline
-  def createClampedCubic(): HermiteSpline | LinearSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createClampedCubic")().asInstanceOf[HermiteSpline | LinearSpline]
+  inline def createClampedCubic(): HermiteSpline | LinearSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createClampedCubic")().asInstanceOf[HermiteSpline | LinearSpline]
   
   /* static member */
-  @scala.inline
-  def createNaturalCubic(): HermiteSpline | LinearSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createNaturalCubic")().asInstanceOf[HermiteSpline | LinearSpline]
+  inline def createNaturalCubic(): HermiteSpline | LinearSpline = ^.asInstanceOf[js.Dynamic].applyDynamic("createNaturalCubic")().asInstanceOf[HermiteSpline | LinearSpline]
 }

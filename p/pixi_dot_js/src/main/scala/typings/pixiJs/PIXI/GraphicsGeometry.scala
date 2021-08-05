@@ -27,7 +27,7 @@ trait GraphicsGeometry
     * @member {PIXI.Bounds} PIXI.GraphicsGeometry#_bounds
     * @protected
     */
-  var _bounds: Bounds = js.native
+  /* protected */ var _bounds: Bounds = js.native
   
   /**
     * Affinity check
@@ -99,7 +99,7 @@ trait GraphicsGeometry
     * @member {number} PIXI.GraphicsGeometry#batchDirty
     * @protected
     */
-  var batchDirty: Double = js.native
+  /* protected */ var batchDirty: Double = js.native
   
   /**
     * Intermediate abstract format sent to batch system.
@@ -108,7 +108,7 @@ trait GraphicsGeometry
     * @member {PIXI.graphicsUtils.BatchPart[]} PIXI.GraphicsGeometry#batches
     * @protected
     */
-  var batches: js.Array[BatchPart] = js.native
+  /* protected */ var batches: js.Array[BatchPart] = js.native
   
   /**
     * Get the current bounds of the graphic geometry.
@@ -124,7 +124,7 @@ trait GraphicsGeometry
     * @member {number} PIXI.GraphicsGeometry#boundsDirty
     * @protected
     */
-  var boundsDirty: Double = js.native
+  /* protected */ var boundsDirty: Double = js.native
   
   /**
     * Padding to add to the bounds.
@@ -147,7 +147,7 @@ trait GraphicsGeometry
     * @member {number} PIXI.GraphicsGeometry#cacheDirty
     * @protected
     */
-  var cacheDirty: Double = js.native
+  /* protected */ var cacheDirty: Double = js.native
   
   /**
     * Update the local bounds of the object. Expensive to use performance-wise.
@@ -170,7 +170,7 @@ trait GraphicsGeometry
     * @default 0
     * @protected
     */
-  var clearDirty: Double = js.native
+  /* protected */ var clearDirty: Double = js.native
   
   /**
     * Minimal distance between points that are considered different.
@@ -186,7 +186,7 @@ trait GraphicsGeometry
     * @member {number[]} PIXI.GraphicsGeometry#colors
     * @protected
     */
-  var colors: js.Array[Double] = js.native
+  /* protected */ var colors: js.Array[Double] = js.native
   
   /**
     * Check to see if a point is contained within this geometry.
@@ -208,7 +208,7 @@ trait GraphicsGeometry
     * @member {number} PIXI.GraphicsGeometry#dirty
     * @protected
     */
-  var dirty: Double = js.native
+  /* protected */ var dirty: Double = js.native
   
   /**
     * List of current draw calls drived from the batches.
@@ -216,7 +216,7 @@ trait GraphicsGeometry
     * @member {object[]} PIXI.GraphicsGeometry#drawCalls
     * @protected
     */
-  var drawCalls: js.Array[js.Any] = js.native
+  /* protected */ var drawCalls: js.Array[js.Any] = js.native
   
   /**
     * Draws the given shape to this Graphics object. Can be any of Circle, Rectangle, Ellipse, Line or Polygon.
@@ -252,7 +252,7 @@ trait GraphicsGeometry
     * @member {PIXI.GraphicsData[]} PIXI.GraphicsGeometry#graphicsData
     * @protected
     */
-  var graphicsData: js.Array[GraphicsData] = js.native
+  /* protected */ var graphicsData: js.Array[GraphicsData] = js.native
   
   /**
     * The indices of the vertices
@@ -260,7 +260,7 @@ trait GraphicsGeometry
     * @member {number[]} PIXI.GraphicsGeometry#indices
     * @protected
     */
-  var indices: js.Array[Double] = js.native
+  /* protected */ var indices: js.Array[Double] = js.native
   
   /**
     * Call if you changed graphicsData manually.
@@ -296,7 +296,7 @@ trait GraphicsGeometry
     * @member {number[]} PIXI.GraphicsGeometry#points
     * @protected
     */
-  var points: js.Array[Double] = js.native
+  /* protected */ var points: js.Array[Double] = js.native
   
   /**
     * Process fill part of Graphics.
@@ -328,7 +328,7 @@ trait GraphicsGeometry
     * @member {number} PIXI.GraphicsGeometry#shapeIndex
     * @protected
     */
-  var shapeIndex: Double = js.native
+  /* protected */ var shapeIndex: Double = js.native
   
   /**
     * Reference to the texture IDs.
@@ -336,7 +336,7 @@ trait GraphicsGeometry
     * @member {number[]} PIXI.GraphicsGeometry#textureIds
     * @protected
     */
-  var textureIds: js.Array[Double] = js.native
+  /* protected */ var textureIds: js.Array[Double] = js.native
   
   /**
     * Transform points using matrix.
@@ -362,7 +362,7 @@ trait GraphicsGeometry
     * @member {number[]} PIXI.GraphicsGeometry#uvs
     * @protected
     */
-  var uvs: js.Array[Double] = js.native
+  /* protected */ var uvs: js.Array[Double] = js.native
   
   /**
     * Test geometry for batching process.

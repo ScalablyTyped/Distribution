@@ -18,25 +18,19 @@ trait CreateRuleGroupResponse extends StObject {
 }
 object CreateRuleGroupResponse {
   
-  @scala.inline
-  def apply(): CreateRuleGroupResponse = {
+  inline def apply(): CreateRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRuleGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateRuleGroupResponseMutableBuilder[Self <: CreateRuleGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRuleGroupResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
+    inline def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupUndefined: Self = StObject.set(x, "RuleGroup", js.undefined)
+    inline def setRuleGroupUndefined: Self = StObject.set(x, "RuleGroup", js.undefined)
   }
 }

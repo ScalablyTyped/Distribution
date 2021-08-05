@@ -13,17 +13,14 @@ object anon {
   }
   object FileIds {
     
-    @scala.inline
-    def apply(fileIds: String): FileIds = {
+    inline def apply(fileIds: String): FileIds = {
       val __obj = js.Dynamic.literal(fileIds = fileIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileIds]
     }
     
-    @scala.inline
-    implicit class FileIdsMutableBuilder[Self <: FileIds] (val x: Self) extends AnyVal {
+    extension [Self <: FileIds](x: Self) {
       
-      @scala.inline
-      def setFileIds(value: String): Self = StObject.set(x, "fileIds", value.asInstanceOf[js.Any])
+      inline def setFileIds(value: String): Self = StObject.set(x, "fileIds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,23 +34,18 @@ object anon {
   }
   object SHIFTAFTERDELETE {
     
-    @scala.inline
-    def apply(SHIFT_AFTER_DELETE: String, SHIFT_BEFORE_DELETE: String, SHIFT_TO_INVALID: String): SHIFTAFTERDELETE = {
+    inline def apply(SHIFT_AFTER_DELETE: String, SHIFT_BEFORE_DELETE: String, SHIFT_TO_INVALID: String): SHIFTAFTERDELETE = {
       val __obj = js.Dynamic.literal(SHIFT_AFTER_DELETE = SHIFT_AFTER_DELETE.asInstanceOf[js.Any], SHIFT_BEFORE_DELETE = SHIFT_BEFORE_DELETE.asInstanceOf[js.Any], SHIFT_TO_INVALID = SHIFT_TO_INVALID.asInstanceOf[js.Any])
       __obj.asInstanceOf[SHIFTAFTERDELETE]
     }
     
-    @scala.inline
-    implicit class SHIFTAFTERDELETEMutableBuilder[Self <: SHIFTAFTERDELETE] (val x: Self) extends AnyVal {
+    extension [Self <: SHIFTAFTERDELETE](x: Self) {
       
-      @scala.inline
-      def setSHIFT_AFTER_DELETE(value: String): Self = StObject.set(x, "SHIFT_AFTER_DELETE", value.asInstanceOf[js.Any])
+      inline def setSHIFT_AFTER_DELETE(value: String): Self = StObject.set(x, "SHIFT_AFTER_DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHIFT_BEFORE_DELETE(value: String): Self = StObject.set(x, "SHIFT_BEFORE_DELETE", value.asInstanceOf[js.Any])
+      inline def setSHIFT_BEFORE_DELETE(value: String): Self = StObject.set(x, "SHIFT_BEFORE_DELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHIFT_TO_INVALID(value: String): Self = StObject.set(x, "SHIFT_TO_INVALID", value.asInstanceOf[js.Any])
+      inline def setSHIFT_TO_INVALID(value: String): Self = StObject.set(x, "SHIFT_TO_INVALID", value.asInstanceOf[js.Any])
     }
   }
 }

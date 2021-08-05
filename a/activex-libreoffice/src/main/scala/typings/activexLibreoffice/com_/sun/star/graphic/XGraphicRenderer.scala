@@ -20,8 +20,7 @@ trait XGraphicRenderer
 }
 object XGraphicRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -31,10 +30,8 @@ object XGraphicRenderer {
     __obj.asInstanceOf[XGraphicRenderer]
   }
   
-  @scala.inline
-  implicit class XGraphicRendererMutableBuilder[Self <: XGraphicRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphicRenderer](x: Self) {
     
-    @scala.inline
-    def setRender(value: XGraphic => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: XGraphic => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }
 }

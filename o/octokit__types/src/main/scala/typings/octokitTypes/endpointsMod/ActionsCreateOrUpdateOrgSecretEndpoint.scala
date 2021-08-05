@@ -39,47 +39,34 @@ trait ActionsCreateOrUpdateOrgSecretEndpoint extends StObject {
 }
 object ActionsCreateOrUpdateOrgSecretEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, secret_name: String): ActionsCreateOrUpdateOrgSecretEndpoint = {
+  inline def apply(org_ : String, secret_name: String): ActionsCreateOrUpdateOrgSecretEndpoint = {
     val __obj = js.Dynamic.literal(secret_name = secret_name.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsCreateOrUpdateOrgSecretEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsCreateOrUpdateOrgSecretEndpointMutableBuilder[Self <: ActionsCreateOrUpdateOrgSecretEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateOrUpdateOrgSecretEndpoint](x: Self) {
     
-    @scala.inline
-    def setEncrypted_value(value: String): Self = StObject.set(x, "encrypted_value", value.asInstanceOf[js.Any])
+    inline def setEncrypted_value(value: String): Self = StObject.set(x, "encrypted_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncrypted_valueUndefined: Self = StObject.set(x, "encrypted_value", js.undefined)
+    inline def setEncrypted_valueUndefined: Self = StObject.set(x, "encrypted_value", js.undefined)
     
-    @scala.inline
-    def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
+    inline def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_idUndefined: Self = StObject.set(x, "key_id", js.undefined)
+    inline def setKey_idUndefined: Self = StObject.set(x, "key_id", js.undefined)
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
+    inline def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repository_idsUndefined: Self = StObject.set(x, "selected_repository_ids", js.undefined)
+    inline def setSelected_repository_idsUndefined: Self = StObject.set(x, "selected_repository_ids", js.undefined)
     
-    @scala.inline
-    def setSelected_repository_idsVarargs(value: Double*): Self = StObject.set(x, "selected_repository_ids", js.Array(value :_*))
+    inline def setSelected_repository_idsVarargs(value: Double*): Self = StObject.set(x, "selected_repository_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibility(value: all | `private` | selected): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: all | `private` | selected): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

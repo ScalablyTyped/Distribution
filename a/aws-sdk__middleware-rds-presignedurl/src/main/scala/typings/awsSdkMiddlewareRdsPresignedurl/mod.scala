@@ -17,8 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildCrossRegionPresignedUrl[Input /* <: RDSInput */, Output /* <: js.Object */](
+  inline def buildCrossRegionPresignedUrl[Input /* <: RDSInput */, Output /* <: js.Object */](
     hasSourceIdentifierKeyRegionProviderCredentialsProviderEndpointProviderBase64EncoderUtf8DecoderSha256: BuildRDSPresignedUrlParameters
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildCrossRegionPresignedUrl")(hasSourceIdentifierKeyRegionProviderCredentialsProviderEndpointProviderBase64EncoderUtf8DecoderSha256.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
@@ -65,8 +64,7 @@ object mod {
   }
   object BuildRDSPresignedUrlParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base64Encoder: /* input */ Uint8Array => String,
       credentials: () => js.Promise[Credentials],
       endpoint: () => js.Promise[
@@ -81,33 +79,25 @@ object mod {
       __obj.asInstanceOf[BuildRDSPresignedUrlParameters]
     }
     
-    @scala.inline
-    implicit class BuildRDSPresignedUrlParametersMutableBuilder[Self <: BuildRDSPresignedUrlParameters] (val x: Self) extends AnyVal {
+    extension [Self <: BuildRDSPresignedUrlParameters](x: Self) {
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndpoint(
+      inline def setEndpoint(
         value: () => js.Promise[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
             ]
       ): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIdentifierKey(value: String): Self = StObject.set(x, "sourceIdentifierKey", value.asInstanceOf[js.Any])
+      inline def setSourceIdentifierKey(value: String): Self = StObject.set(x, "sourceIdentifierKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
     }
   }
   

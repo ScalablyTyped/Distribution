@@ -53,6 +53,5 @@ object FormatCodeOptions {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(objectToClone: typings.typescriptServices.TypeScript.Services.FormatCodeOptions): typings.typescriptServices.TypeScript.Services.FormatCodeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(objectToClone.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.FormatCodeOptions]
+  inline def clone_(objectToClone: typings.typescriptServices.TypeScript.Services.FormatCodeOptions): typings.typescriptServices.TypeScript.Services.FormatCodeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(objectToClone.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.FormatCodeOptions]
 }

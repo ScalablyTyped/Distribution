@@ -13,19 +13,15 @@ trait DeleteTransitGatewayRouteTableResult extends StObject {
 }
 object DeleteTransitGatewayRouteTableResult {
   
-  @scala.inline
-  def apply(): DeleteTransitGatewayRouteTableResult = {
+  inline def apply(): DeleteTransitGatewayRouteTableResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTransitGatewayRouteTableResult]
   }
   
-  @scala.inline
-  implicit class DeleteTransitGatewayRouteTableResultMutableBuilder[Self <: DeleteTransitGatewayRouteTableResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTransitGatewayRouteTableResult](x: Self) {
     
-    @scala.inline
-    def setTransitGatewayRouteTable(value: TransitGatewayRouteTable): Self = StObject.set(x, "TransitGatewayRouteTable", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTable(value: TransitGatewayRouteTable): Self = StObject.set(x, "TransitGatewayRouteTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTableUndefined: Self = StObject.set(x, "TransitGatewayRouteTable", js.undefined)
+    inline def setTransitGatewayRouteTableUndefined: Self = StObject.set(x, "TransitGatewayRouteTable", js.undefined)
   }
 }

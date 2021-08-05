@@ -34,64 +34,45 @@ trait UpdateEntityParams extends StObject {
 }
 object UpdateEntityParams {
   
-  @scala.inline
-  def apply(entity: String, workspace_id: String): UpdateEntityParams = {
+  inline def apply(entity: String, workspace_id: String): UpdateEntityParams = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEntityParams]
   }
   
-  @scala.inline
-  implicit class UpdateEntityParamsMutableBuilder[Self <: UpdateEntityParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEntityParams](x: Self) {
     
-    @scala.inline
-    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setNew_description(value: String): Self = StObject.set(x, "new_description", value.asInstanceOf[js.Any])
+    inline def setNew_description(value: String): Self = StObject.set(x, "new_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_descriptionUndefined: Self = StObject.set(x, "new_description", js.undefined)
+    inline def setNew_descriptionUndefined: Self = StObject.set(x, "new_description", js.undefined)
     
-    @scala.inline
-    def setNew_entity(value: String): Self = StObject.set(x, "new_entity", value.asInstanceOf[js.Any])
+    inline def setNew_entity(value: String): Self = StObject.set(x, "new_entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_entityUndefined: Self = StObject.set(x, "new_entity", js.undefined)
+    inline def setNew_entityUndefined: Self = StObject.set(x, "new_entity", js.undefined)
     
-    @scala.inline
-    def setNew_fuzzy_match(value: Boolean): Self = StObject.set(x, "new_fuzzy_match", value.asInstanceOf[js.Any])
+    inline def setNew_fuzzy_match(value: Boolean): Self = StObject.set(x, "new_fuzzy_match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_fuzzy_matchUndefined: Self = StObject.set(x, "new_fuzzy_match", js.undefined)
+    inline def setNew_fuzzy_matchUndefined: Self = StObject.set(x, "new_fuzzy_match", js.undefined)
     
-    @scala.inline
-    def setNew_metadata(value: js.Object): Self = StObject.set(x, "new_metadata", value.asInstanceOf[js.Any])
+    inline def setNew_metadata(value: js.Object): Self = StObject.set(x, "new_metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_metadataUndefined: Self = StObject.set(x, "new_metadata", js.undefined)
+    inline def setNew_metadataUndefined: Self = StObject.set(x, "new_metadata", js.undefined)
     
-    @scala.inline
-    def setNew_values(value: js.Array[CreateValue]): Self = StObject.set(x, "new_values", value.asInstanceOf[js.Any])
+    inline def setNew_values(value: js.Array[CreateValue]): Self = StObject.set(x, "new_values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_valuesUndefined: Self = StObject.set(x, "new_values", js.undefined)
+    inline def setNew_valuesUndefined: Self = StObject.set(x, "new_values", js.undefined)
     
-    @scala.inline
-    def setNew_valuesVarargs(value: CreateValue*): Self = StObject.set(x, "new_values", js.Array(value :_*))
+    inline def setNew_valuesVarargs(value: CreateValue*): Self = StObject.set(x, "new_values", js.Array(value :_*))
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
+    inline def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

@@ -63,70 +63,49 @@ trait TotpOptions
 }
 object TotpOptions {
   
-  @scala.inline
-  def apply(secret: String): TotpOptions = {
+  inline def apply(secret: String): TotpOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotpOptions]
   }
   
-  @scala.inline
-  implicit class TotpOptionsMutableBuilder[Self <: TotpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TotpOptions](x: Self) {
     
-    @scala.inline
-    def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+    inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
-    @scala.inline
-    def setDigest(value: Buffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: Buffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
-    @scala.inline
-    def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
+    inline def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
+    inline def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
     
-    @scala.inline
-    def setInitial_time(value: Double): Self = StObject.set(x, "initial_time", value.asInstanceOf[js.Any])
+    inline def setInitial_time(value: Double): Self = StObject.set(x, "initial_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitial_timeUndefined: Self = StObject.set(x, "initial_time", js.undefined)
+    inline def setInitial_timeUndefined: Self = StObject.set(x, "initial_time", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

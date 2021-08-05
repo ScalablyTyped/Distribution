@@ -41,109 +41,75 @@ trait ItineraryOptions extends StObject {
 }
 object ItineraryOptions {
   
-  @scala.inline
-  def apply(): ItineraryOptions = {
+  inline def apply(): ItineraryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItineraryOptions]
   }
   
-  @scala.inline
-  implicit class ItineraryOptionsMutableBuilder[Self <: ItineraryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ItineraryOptions](x: Self) {
     
-    @scala.inline
-    def setAlternativeClassName(value: String): Self = StObject.set(x, "alternativeClassName", value.asInstanceOf[js.Any])
+    inline def setAlternativeClassName(value: String): Self = StObject.set(x, "alternativeClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativeClassNameUndefined: Self = StObject.set(x, "alternativeClassName", js.undefined)
+    inline def setAlternativeClassNameUndefined: Self = StObject.set(x, "alternativeClassName", js.undefined)
     
-    @scala.inline
-    def setCollapseBtn(value: /* itinerary */ Itinerary_ => Unit): Self = StObject.set(x, "collapseBtn", js.Any.fromFunction1(value))
+    inline def setCollapseBtn(value: /* itinerary */ Itinerary_ => Unit): Self = StObject.set(x, "collapseBtn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCollapseBtnClass(value: String): Self = StObject.set(x, "collapseBtnClass", value.asInstanceOf[js.Any])
+    inline def setCollapseBtnClass(value: String): Self = StObject.set(x, "collapseBtnClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseBtnClassUndefined: Self = StObject.set(x, "collapseBtnClass", js.undefined)
+    inline def setCollapseBtnClassUndefined: Self = StObject.set(x, "collapseBtnClass", js.undefined)
     
-    @scala.inline
-    def setCollapseBtnUndefined: Self = StObject.set(x, "collapseBtn", js.undefined)
+    inline def setCollapseBtnUndefined: Self = StObject.set(x, "collapseBtn", js.undefined)
     
-    @scala.inline
-    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
-    @scala.inline
-    def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+    inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+    inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
     
-    @scala.inline
-    def setDistanceTemplate(value: String): Self = StObject.set(x, "distanceTemplate", value.asInstanceOf[js.Any])
+    inline def setDistanceTemplate(value: String): Self = StObject.set(x, "distanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceTemplateUndefined: Self = StObject.set(x, "distanceTemplate", js.undefined)
+    inline def setDistanceTemplateUndefined: Self = StObject.set(x, "distanceTemplate", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: Formatter_): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: Formatter_): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setItineraryBuilder(value: ItineraryBuilder_): Self = StObject.set(x, "itineraryBuilder", value.asInstanceOf[js.Any])
+    inline def setItineraryBuilder(value: ItineraryBuilder_): Self = StObject.set(x, "itineraryBuilder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItineraryBuilderUndefined: Self = StObject.set(x, "itineraryBuilder", js.undefined)
+    inline def setItineraryBuilderUndefined: Self = StObject.set(x, "itineraryBuilder", js.undefined)
     
-    @scala.inline
-    def setItineraryClassName(value: String): Self = StObject.set(x, "itineraryClassName", value.asInstanceOf[js.Any])
+    inline def setItineraryClassName(value: String): Self = StObject.set(x, "itineraryClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItineraryClassNameUndefined: Self = StObject.set(x, "itineraryClassName", js.undefined)
+    inline def setItineraryClassNameUndefined: Self = StObject.set(x, "itineraryClassName", js.undefined)
     
-    @scala.inline
-    def setItineraryFormatter(value: ItineraryBuilder_): Self = StObject.set(x, "itineraryFormatter", value.asInstanceOf[js.Any])
+    inline def setItineraryFormatter(value: ItineraryBuilder_): Self = StObject.set(x, "itineraryFormatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItineraryFormatterUndefined: Self = StObject.set(x, "itineraryFormatter", js.undefined)
+    inline def setItineraryFormatterUndefined: Self = StObject.set(x, "itineraryFormatter", js.undefined)
     
-    @scala.inline
-    def setMinimizedClassName(value: String): Self = StObject.set(x, "minimizedClassName", value.asInstanceOf[js.Any])
+    inline def setMinimizedClassName(value: String): Self = StObject.set(x, "minimizedClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimizedClassNameUndefined: Self = StObject.set(x, "minimizedClassName", js.undefined)
+    inline def setMinimizedClassNameUndefined: Self = StObject.set(x, "minimizedClassName", js.undefined)
     
-    @scala.inline
-    def setPointMarkerStyle(value: CircleMarkerOptions): Self = StObject.set(x, "pointMarkerStyle", value.asInstanceOf[js.Any])
+    inline def setPointMarkerStyle(value: CircleMarkerOptions): Self = StObject.set(x, "pointMarkerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointMarkerStyleUndefined: Self = StObject.set(x, "pointMarkerStyle", js.undefined)
+    inline def setPointMarkerStyleUndefined: Self = StObject.set(x, "pointMarkerStyle", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSummaryTemplate(value: String): Self = StObject.set(x, "summaryTemplate", value.asInstanceOf[js.Any])
+    inline def setSummaryTemplate(value: String): Self = StObject.set(x, "summaryTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryTemplateUndefined: Self = StObject.set(x, "summaryTemplate", js.undefined)
+    inline def setSummaryTemplateUndefined: Self = StObject.set(x, "summaryTemplate", js.undefined)
     
-    @scala.inline
-    def setTimeTemplate(value: String): Self = StObject.set(x, "timeTemplate", value.asInstanceOf[js.Any])
+    inline def setTimeTemplate(value: String): Self = StObject.set(x, "timeTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeTemplateUndefined: Self = StObject.set(x, "timeTemplate", js.undefined)
+    inline def setTimeTemplateUndefined: Self = StObject.set(x, "timeTemplate", js.undefined)
     
-    @scala.inline
-    def setTotalDistanceRoundingSensitivity(value: Double): Self = StObject.set(x, "totalDistanceRoundingSensitivity", value.asInstanceOf[js.Any])
+    inline def setTotalDistanceRoundingSensitivity(value: Double): Self = StObject.set(x, "totalDistanceRoundingSensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDistanceRoundingSensitivityUndefined: Self = StObject.set(x, "totalDistanceRoundingSensitivity", js.undefined)
+    inline def setTotalDistanceRoundingSensitivityUndefined: Self = StObject.set(x, "totalDistanceRoundingSensitivity", js.undefined)
   }
 }

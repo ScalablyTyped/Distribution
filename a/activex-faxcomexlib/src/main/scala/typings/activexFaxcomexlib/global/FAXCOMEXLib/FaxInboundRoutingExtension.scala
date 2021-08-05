@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxInboundRoutingExtension Class */
 @JSGlobal("FAXCOMEXLib.FaxInboundRoutingExtension")
 @js.native
-class FaxInboundRoutingExtension protected ()
+/* private */ class FaxInboundRoutingExtension ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxInboundRoutingExtension {
   
@@ -17,7 +17,7 @@ class FaxInboundRoutingExtension protected ()
   /* CompleteClass */
   override val Debug: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxInboundRoutingExtension_typekey")
   var FAXCOMEXLibDotFaxInboundRoutingExtension_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxInboundRoutingExtension = js.native
   

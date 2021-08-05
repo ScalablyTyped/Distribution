@@ -12,25 +12,19 @@ trait Initialize extends StObject {
 }
 object Initialize {
   
-  @scala.inline
-  def apply(): Initialize = {
+  inline def apply(): Initialize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Initialize]
   }
   
-  @scala.inline
-  implicit class InitializeMutableBuilder[Self <: Initialize] (val x: Self) extends AnyVal {
+  extension [Self <: Initialize](x: Self) {
     
-    @scala.inline
-    def setInitialize(value: Boolean): Self = StObject.set(x, "initialize", value.asInstanceOf[js.Any])
+    inline def setInitialize(value: Boolean): Self = StObject.set(x, "initialize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+    inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     
-    @scala.inline
-    def setShowNativeScrollbars(value: Boolean): Self = StObject.set(x, "showNativeScrollbars", value.asInstanceOf[js.Any])
+    inline def setShowNativeScrollbars(value: Boolean): Self = StObject.set(x, "showNativeScrollbars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNativeScrollbarsUndefined: Self = StObject.set(x, "showNativeScrollbars", js.undefined)
+    inline def setShowNativeScrollbarsUndefined: Self = StObject.set(x, "showNativeScrollbars", js.undefined)
   }
 }

@@ -20,7 +20,7 @@ object progressIndicatorBaseMod {
       */
     def this(props: IProgressIndicatorProps, context: js.Any) = this()
     
-    var _onRenderProgress: js.Any = js.native
+    /* private */ var _onRenderProgress: js.Any = js.native
   }
   /* static members */
   object ProgressIndicatorBase {
@@ -32,7 +32,6 @@ object progressIndicatorBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/ProgressIndicator/ProgressIndicator.base", "ProgressIndicatorBase.defaultProps")
     @js.native
     def defaultProps: Description = js.native
-    @scala.inline
-    def defaultProps_=(x: Description): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Description): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

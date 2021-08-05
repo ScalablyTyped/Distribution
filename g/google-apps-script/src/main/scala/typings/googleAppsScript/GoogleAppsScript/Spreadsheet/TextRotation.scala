@@ -16,19 +16,15 @@ trait TextRotation extends StObject {
 }
 object TextRotation {
   
-  @scala.inline
-  def apply(getDegrees: () => Integer, isVertical: () => Boolean): TextRotation = {
+  inline def apply(getDegrees: () => Integer, isVertical: () => Boolean): TextRotation = {
     val __obj = js.Dynamic.literal(getDegrees = js.Any.fromFunction0(getDegrees), isVertical = js.Any.fromFunction0(isVertical))
     __obj.asInstanceOf[TextRotation]
   }
   
-  @scala.inline
-  implicit class TextRotationMutableBuilder[Self <: TextRotation] (val x: Self) extends AnyVal {
+  extension [Self <: TextRotation](x: Self) {
     
-    @scala.inline
-    def setGetDegrees(value: () => Integer): Self = StObject.set(x, "getDegrees", js.Any.fromFunction0(value))
+    inline def setGetDegrees(value: () => Integer): Self = StObject.set(x, "getDegrees", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
+    inline def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
   }
 }

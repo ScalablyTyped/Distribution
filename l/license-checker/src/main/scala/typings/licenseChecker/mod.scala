@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(opts: InitOpts, callback: js.Function2[/* err */ Error, /* ret */ ModuleInfos, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(opts: InitOpts, callback: js.Function2[/* err */ Error, /* ret */ ModuleInfos, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait InitOpts extends StObject {
     
@@ -126,140 +125,96 @@ object mod {
   }
   object InitOpts {
     
-    @scala.inline
-    def apply(start: String): InitOpts = {
+    inline def apply(start: String): InitOpts = {
       val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitOpts]
     }
     
-    @scala.inline
-    implicit class InitOptsMutableBuilder[Self <: InitOpts] (val x: Self) extends AnyVal {
+    extension [Self <: InitOpts](x: Self) {
       
-      @scala.inline
-      def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCsv(value: Boolean): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+      inline def setCsv(value: Boolean): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvComponentPrefix(value: String): Self = StObject.set(x, "csvComponentPrefix", value.asInstanceOf[js.Any])
+      inline def setCsvComponentPrefix(value: String): Self = StObject.set(x, "csvComponentPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvComponentPrefixUndefined: Self = StObject.set(x, "csvComponentPrefix", js.undefined)
+      inline def setCsvComponentPrefixUndefined: Self = StObject.set(x, "csvComponentPrefix", js.undefined)
       
-      @scala.inline
-      def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+      inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
       
-      @scala.inline
-      def setCustomFormat(value: Record[String, js.Any]): Self = StObject.set(x, "customFormat", value.asInstanceOf[js.Any])
+      inline def setCustomFormat(value: Record[String, js.Any]): Self = StObject.set(x, "customFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFormatUndefined: Self = StObject.set(x, "customFormat", js.undefined)
+      inline def setCustomFormatUndefined: Self = StObject.set(x, "customFormat", js.undefined)
       
-      @scala.inline
-      def setCustomPath(value: String | ModuleInfo): Self = StObject.set(x, "customPath", value.asInstanceOf[js.Any])
+      inline def setCustomPath(value: String | ModuleInfo): Self = StObject.set(x, "customPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomPathUndefined: Self = StObject.set(x, "customPath", js.undefined)
+      inline def setCustomPathUndefined: Self = StObject.set(x, "customPath", js.undefined)
       
-      @scala.inline
-      def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
+      inline def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
+      inline def setDevelopmentUndefined: Self = StObject.set(x, "development", js.undefined)
       
-      @scala.inline
-      def setDirect(value: Boolean): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
+      inline def setDirect(value: Boolean): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectUndefined: Self = StObject.set(x, "direct", js.undefined)
+      inline def setDirectUndefined: Self = StObject.set(x, "direct", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludePackages(value: String): Self = StObject.set(x, "excludePackages", value.asInstanceOf[js.Any])
+      inline def setExcludePackages(value: String): Self = StObject.set(x, "excludePackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludePackagesUndefined: Self = StObject.set(x, "excludePackages", js.undefined)
+      inline def setExcludePackagesUndefined: Self = StObject.set(x, "excludePackages", js.undefined)
       
-      @scala.inline
-      def setExcludePrivatePackages(value: Boolean): Self = StObject.set(x, "excludePrivatePackages", value.asInstanceOf[js.Any])
+      inline def setExcludePrivatePackages(value: Boolean): Self = StObject.set(x, "excludePrivatePackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludePrivatePackagesUndefined: Self = StObject.set(x, "excludePrivatePackages", js.undefined)
+      inline def setExcludePrivatePackagesUndefined: Self = StObject.set(x, "excludePrivatePackages", js.undefined)
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setFailOn(value: String): Self = StObject.set(x, "failOn", value.asInstanceOf[js.Any])
+      inline def setFailOn(value: String): Self = StObject.set(x, "failOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOnUndefined: Self = StObject.set(x, "failOn", js.undefined)
+      inline def setFailOnUndefined: Self = StObject.set(x, "failOn", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setOnlyAllow(value: String): Self = StObject.set(x, "onlyAllow", value.asInstanceOf[js.Any])
+      inline def setOnlyAllow(value: String): Self = StObject.set(x, "onlyAllow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyAllowUndefined: Self = StObject.set(x, "onlyAllow", js.undefined)
+      inline def setOnlyAllowUndefined: Self = StObject.set(x, "onlyAllow", js.undefined)
       
-      @scala.inline
-      def setOnlyunknown(value: Boolean): Self = StObject.set(x, "onlyunknown", value.asInstanceOf[js.Any])
+      inline def setOnlyunknown(value: Boolean): Self = StObject.set(x, "onlyunknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyunknownUndefined: Self = StObject.set(x, "onlyunknown", js.undefined)
+      inline def setOnlyunknownUndefined: Self = StObject.set(x, "onlyunknown", js.undefined)
       
-      @scala.inline
-      def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+      inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
+      inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
       
-      @scala.inline
-      def setPackages(value: String): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+      inline def setPackages(value: String): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
+      inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
       
-      @scala.inline
-      def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+      inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
+      inline def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
       
-      @scala.inline
-      def setRelativeLicensePath(value: Boolean): Self = StObject.set(x, "relativeLicensePath", value.asInstanceOf[js.Any])
+      inline def setRelativeLicensePath(value: Boolean): Self = StObject.set(x, "relativeLicensePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeLicensePathUndefined: Self = StObject.set(x, "relativeLicensePath", js.undefined)
+      inline def setRelativeLicensePathUndefined: Self = StObject.set(x, "relativeLicensePath", js.undefined)
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: Boolean): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: Boolean): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
       
-      @scala.inline
-      def setUnknown(value: Boolean): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+      inline def setUnknown(value: Boolean): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
+      inline def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
     }
   }
   
@@ -342,107 +297,74 @@ object mod {
   }
   object ModuleInfo {
     
-    @scala.inline
-    def apply(): ModuleInfo = {
+    inline def apply(): ModuleInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModuleInfo]
     }
     
-    @scala.inline
-    implicit class ModuleInfoMutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ModuleInfo](x: Self) {
       
-      @scala.inline
-      def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setLicenseFile(value: String): Self = StObject.set(x, "licenseFile", value.asInstanceOf[js.Any])
+      inline def setLicenseFile(value: String): Self = StObject.set(x, "licenseFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseFileUndefined: Self = StObject.set(x, "licenseFile", js.undefined)
+      inline def setLicenseFileUndefined: Self = StObject.set(x, "licenseFile", js.undefined)
       
-      @scala.inline
-      def setLicenseModified(value: String): Self = StObject.set(x, "licenseModified", value.asInstanceOf[js.Any])
+      inline def setLicenseModified(value: String): Self = StObject.set(x, "licenseModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseModifiedUndefined: Self = StObject.set(x, "licenseModified", js.undefined)
+      inline def setLicenseModifiedUndefined: Self = StObject.set(x, "licenseModified", js.undefined)
       
-      @scala.inline
-      def setLicenseText(value: String): Self = StObject.set(x, "licenseText", value.asInstanceOf[js.Any])
+      inline def setLicenseText(value: String): Self = StObject.set(x, "licenseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseTextUndefined: Self = StObject.set(x, "licenseText", js.undefined)
+      inline def setLicenseTextUndefined: Self = StObject.set(x, "licenseText", js.undefined)
       
-      @scala.inline
-      def setLicenses(value: String | js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+      inline def setLicenses(value: String | js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
+      inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
       
-      @scala.inline
-      def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+      inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNoticeFile(value: String): Self = StObject.set(x, "noticeFile", value.asInstanceOf[js.Any])
+      inline def setNoticeFile(value: String): Self = StObject.set(x, "noticeFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoticeFileUndefined: Self = StObject.set(x, "noticeFile", js.undefined)
+      inline def setNoticeFileUndefined: Self = StObject.set(x, "noticeFile", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+      inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+      inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
       
-      @scala.inline
-      def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

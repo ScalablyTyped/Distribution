@@ -122,13 +122,13 @@ object Syntax {
       trailingTriviaInfo: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullText: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _leadingTriviaInfo: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _trailingTriviaInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -143,8 +143,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -227,8 +227,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -272,10 +272,10 @@ object Syntax {
       leadingTriviaInfo: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullText: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _leadingTriviaInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -290,8 +290,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -374,8 +374,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -427,8 +427,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -511,8 +511,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -556,10 +556,10 @@ object Syntax {
       trailingTriviaInfo: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullText: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _trailingTriviaInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -574,8 +574,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -658,8 +658,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -1776,13 +1776,13 @@ object Syntax {
       trailingTriviaInfo: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullText: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _leadingTriviaInfo: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _trailingTriviaInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -1797,8 +1797,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -1881,8 +1881,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -1926,10 +1926,10 @@ object Syntax {
       leadingTriviaInfo: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullText: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _leadingTriviaInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -1944,8 +1944,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -2028,8 +2028,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -2069,7 +2069,7 @@ object Syntax {
        with typings.typescriptServices.TypeScript.Syntax.VariableWidthTokenWithNoTrivia {
     def this(fullText: String, kind: typings.typescriptServices.TypeScript.SyntaxKind) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullText: js.Any = js.native
     
     /* CompleteClass */
@@ -2084,8 +2084,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -2168,8 +2168,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -2213,10 +2213,10 @@ object Syntax {
       trailingTriviaInfo: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullText: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _trailingTriviaInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -2231,8 +2231,8 @@ object Syntax {
     /* CompleteClass */
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -2315,8 +2315,8 @@ object Syntax {
     /* CompleteClass */
     override def leadingTriviaWidth(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def realize(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def realize(): js.Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
@@ -2349,173 +2349,126 @@ object Syntax {
     override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
   }
   
-  @scala.inline
-  def assignmentExpression(left: IExpressionSyntax, token: ISyntaxToken, right: IExpressionSyntax): typings.typescriptServices.TypeScript.BinaryExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentExpression")(left.asInstanceOf[js.Any], token.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.BinaryExpressionSyntax]
+  inline def assignmentExpression(left: IExpressionSyntax, token: ISyntaxToken, right: IExpressionSyntax): typings.typescriptServices.TypeScript.BinaryExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentExpression")(left.asInstanceOf[js.Any], token.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.BinaryExpressionSyntax]
   
   @JSGlobal("TypeScript.Syntax.carriageReturnLineFeedTrivia")
   @js.native
   def carriageReturnLineFeedTrivia: ISyntaxTrivia = js.native
-  @scala.inline
-  def carriageReturnLineFeedTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carriageReturnLineFeedTrivia")(x.asInstanceOf[js.Any])
+  inline def carriageReturnLineFeedTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carriageReturnLineFeedTrivia")(x.asInstanceOf[js.Any])
   
   @JSGlobal("TypeScript.Syntax.carriageReturnTrivia")
   @js.native
   def carriageReturnTrivia: ISyntaxTrivia = js.native
-  @scala.inline
-  def carriageReturnTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carriageReturnTrivia")(x.asInstanceOf[js.Any])
+  inline def carriageReturnTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carriageReturnTrivia")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def childIndex(parent: ISyntaxElement, child: ISyntaxElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("childIndex")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def childIndex(parent: ISyntaxElement, child: ISyntaxElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("childIndex")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def childOffset(parent: ISyntaxElement, child: ISyntaxElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("childOffset")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def childOffset(parent: ISyntaxElement, child: ISyntaxElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("childOffset")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def childOffsetAt(parent: ISyntaxElement, index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("childOffsetAt")(parent.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def childOffsetAt(parent: ISyntaxElement, index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("childOffsetAt")(parent.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def convertToIdentifierName(token: ISyntaxToken): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToIdentifierName")(token.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
+  inline def convertToIdentifierName(token: ISyntaxToken): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToIdentifierName")(token.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
   
-  @scala.inline
-  def deferredTrivia(
+  inline def deferredTrivia(
     kind: typings.typescriptServices.TypeScript.SyntaxKind,
     text: ISimpleText,
     fullStart: Double,
     fullWidth: Double
   ): ISyntaxTrivia = (^.asInstanceOf[js.Dynamic].applyDynamic("deferredTrivia")(kind.asInstanceOf[js.Any], text.asInstanceOf[js.Any], fullStart.asInstanceOf[js.Any], fullWidth.asInstanceOf[js.Any])).asInstanceOf[ISyntaxTrivia]
   
-  @scala.inline
-  def elementStructuralEquals(element1: ISyntaxElement, element2: ISyntaxElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementStructuralEquals")(element1.asInstanceOf[js.Any], element2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def elementStructuralEquals(element1: ISyntaxElement, element2: ISyntaxElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementStructuralEquals")(element1.asInstanceOf[js.Any], element2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSGlobal("TypeScript.Syntax.emptyList")
   @js.native
   def emptyList: ISyntaxList = js.native
-  @scala.inline
-  def emptyList_=(x: ISyntaxList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyList")(x.asInstanceOf[js.Any])
+  inline def emptyList_=(x: ISyntaxList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyList")(x.asInstanceOf[js.Any])
   
   @JSGlobal("TypeScript.Syntax.emptySeparatedList")
   @js.native
   def emptySeparatedList: ISeparatedSyntaxList = js.native
-  @scala.inline
-  def emptySeparatedList_=(x: ISeparatedSyntaxList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptySeparatedList")(x.asInstanceOf[js.Any])
+  inline def emptySeparatedList_=(x: ISeparatedSyntaxList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptySeparatedList")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def emptySourceUnit(): typings.typescriptServices.TypeScript.SourceUnitSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("emptySourceUnit")().asInstanceOf[typings.typescriptServices.TypeScript.SourceUnitSyntax]
+  inline def emptySourceUnit(): typings.typescriptServices.TypeScript.SourceUnitSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("emptySourceUnit")().asInstanceOf[typings.typescriptServices.TypeScript.SourceUnitSyntax]
   
-  @scala.inline
-  def emptyToken(kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyToken")(kind.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
+  inline def emptyToken(kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyToken")(kind.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
   
   @JSGlobal("TypeScript.Syntax.emptyTriviaList")
   @js.native
   def emptyTriviaList: ISyntaxTriviaList = js.native
-  @scala.inline
-  def emptyTriviaList_=(x: ISyntaxTriviaList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyTriviaList")(x.asInstanceOf[js.Any])
+  inline def emptyTriviaList_=(x: ISyntaxTriviaList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyTriviaList")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def falseExpression(): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("falseExpression")().asInstanceOf[IUnaryExpressionSyntax]
+  inline def falseExpression(): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("falseExpression")().asInstanceOf[IUnaryExpressionSyntax]
   
-  @scala.inline
-  def findSkippedTokenInLeadingTriviaList(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenInLeadingTriviaList")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
+  inline def findSkippedTokenInLeadingTriviaList(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenInLeadingTriviaList")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
   
-  @scala.inline
-  def findSkippedTokenInPositionedToken(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenInPositionedToken")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
+  inline def findSkippedTokenInPositionedToken(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenInPositionedToken")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
   
-  @scala.inline
-  def findSkippedTokenInTrailingTriviaList(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenInTrailingTriviaList")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
+  inline def findSkippedTokenInTrailingTriviaList(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenInTrailingTriviaList")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
   
-  @scala.inline
-  def findSkippedTokenOnLeft(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenOnLeft")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
+  inline def findSkippedTokenOnLeft(positionedToken: typings.typescriptServices.TypeScript.PositionedToken, position: Double): typings.typescriptServices.TypeScript.PositionedSkippedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("findSkippedTokenOnLeft")(positionedToken.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedSkippedToken]
   
-  @scala.inline
-  def getAncestorOfKind(
+  inline def getAncestorOfKind(
     positionedToken: typings.typescriptServices.TypeScript.PositionedElement,
     kind: typings.typescriptServices.TypeScript.SyntaxKind
   ): typings.typescriptServices.TypeScript.PositionedElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getAncestorOfKind")(positionedToken.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.PositionedElement]
   
-  @scala.inline
-  def getStandaloneExpression(positionedToken: typings.typescriptServices.TypeScript.PositionedToken): typings.typescriptServices.TypeScript.PositionedNodeOrToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getStandaloneExpression")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PositionedNodeOrToken]
+  inline def getStandaloneExpression(positionedToken: typings.typescriptServices.TypeScript.PositionedToken): typings.typescriptServices.TypeScript.PositionedNodeOrToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getStandaloneExpression")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PositionedNodeOrToken]
   
-  @scala.inline
-  def hasAncestorOfKind(
+  inline def hasAncestorOfKind(
     positionedToken: typings.typescriptServices.TypeScript.PositionedElement,
     kind: typings.typescriptServices.TypeScript.SyntaxKind
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasAncestorOfKind")(positionedToken.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def identifier(text: String): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("identifier")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
-  @scala.inline
-  def identifier(text: String, info: ITokenInfo): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("identifier")(text.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
+  inline def identifier(text: String): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("identifier")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
+  inline def identifier(text: String, info: ITokenInfo): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("identifier")(text.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
   
-  @scala.inline
-  def identifierName(text: String): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("identifierName")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
-  @scala.inline
-  def identifierName(text: String, info: ITokenInfo): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("identifierName")(text.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
+  inline def identifierName(text: String): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("identifierName")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
+  inline def identifierName(text: String, info: ITokenInfo): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("identifierName")(text.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
   
-  @scala.inline
-  def isEntirelyInStringOrRegularExpressionLiteral(sourceUnit: typings.typescriptServices.TypeScript.SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEntirelyInStringOrRegularExpressionLiteral")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEntirelyInStringOrRegularExpressionLiteral(sourceUnit: typings.typescriptServices.TypeScript.SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEntirelyInStringOrRegularExpressionLiteral")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEntirelyInsideComment(sourceUnit: typings.typescriptServices.TypeScript.SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEntirelyInsideComment")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEntirelyInsideComment(sourceUnit: typings.typescriptServices.TypeScript.SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEntirelyInsideComment")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEntirelyInsideCommentTrivia(trivia: ISyntaxTrivia, fullStart: Double, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEntirelyInsideCommentTrivia")(trivia.asInstanceOf[js.Any], fullStart.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEntirelyInsideCommentTrivia(trivia: ISyntaxTrivia, fullStart: Double, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEntirelyInsideCommentTrivia")(trivia.asInstanceOf[js.Any], fullStart.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExpression(token: ISyntaxToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpression")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExpression(token: ISyntaxToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpression")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isInModuleOrTypeContext(positionedToken: typings.typescriptServices.TypeScript.PositionedToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInModuleOrTypeContext")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInModuleOrTypeContext(positionedToken: typings.typescriptServices.TypeScript.PositionedToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInModuleOrTypeContext")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isInTypeOnlyContext(positionedToken: typings.typescriptServices.TypeScript.PositionedToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTypeOnlyContext")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInTypeOnlyContext(positionedToken: typings.typescriptServices.TypeScript.PositionedToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTypeOnlyContext")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIntegerLiteral(expression: IExpressionSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntegerLiteral")(expression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIntegerLiteral(expression: IExpressionSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntegerLiteral")(expression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSuperInvocationExpression(node: IExpressionSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperInvocationExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSuperInvocationExpression(node: IExpressionSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperInvocationExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSuperInvocationExpressionStatement(node: typings.typescriptServices.TypeScript.SyntaxNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperInvocationExpressionStatement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSuperInvocationExpressionStatement(node: typings.typescriptServices.TypeScript.SyntaxNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperInvocationExpressionStatement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSuperMemberAccessExpression(node: IExpressionSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperMemberAccessExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSuperMemberAccessExpression(node: IExpressionSyntax): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperMemberAccessExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSuperMemberAccessInvocationExpression(node: typings.typescriptServices.TypeScript.SyntaxNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperMemberAccessInvocationExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSuperMemberAccessInvocationExpression(node: typings.typescriptServices.TypeScript.SyntaxNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuperMemberAccessInvocationExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUnterminatedMultilineCommentTrivia(trivia: ISyntaxTrivia): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnterminatedMultilineCommentTrivia")(trivia.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUnterminatedMultilineCommentTrivia(trivia: ISyntaxTrivia): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnterminatedMultilineCommentTrivia")(trivia.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUnterminatedStringLiteral(token: ISyntaxToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnterminatedStringLiteral")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUnterminatedStringLiteral(token: ISyntaxToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnterminatedStringLiteral")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSGlobal("TypeScript.Syntax.lineFeedTrivia")
   @js.native
   def lineFeedTrivia: ISyntaxTrivia = js.native
-  @scala.inline
-  def lineFeedTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineFeedTrivia")(x.asInstanceOf[js.Any])
+  inline def lineFeedTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineFeedTrivia")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def list(nodes: js.Array[ISyntaxNodeOrToken]): ISyntaxList = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(nodes.asInstanceOf[js.Any]).asInstanceOf[ISyntaxList]
+  inline def list(nodes: js.Array[ISyntaxNodeOrToken]): ISyntaxList = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(nodes.asInstanceOf[js.Any]).asInstanceOf[ISyntaxList]
   
-  @scala.inline
-  def listStructuralEquals(list1: ISyntaxList, list2: ISyntaxList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listStructuralEquals")(list1.asInstanceOf[js.Any], list2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def listStructuralEquals(list1: ISyntaxList, list2: ISyntaxList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("listStructuralEquals")(list1.asInstanceOf[js.Any], list2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def massageEscapes(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("massageEscapes")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def massageEscapes(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("massageEscapes")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def multiLineComment(text: String): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("multiLineComment")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
+  inline def multiLineComment(text: String): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("multiLineComment")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
   
-  @scala.inline
-  def nodeHasSkippedOrMissingTokens(node: typings.typescriptServices.TypeScript.SyntaxNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeHasSkippedOrMissingTokens")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nodeHasSkippedOrMissingTokens(node: typings.typescriptServices.TypeScript.SyntaxNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeHasSkippedOrMissingTokens")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def nodeOrTokenStructuralEquals(node1: ISyntaxNodeOrToken, node2: ISyntaxNodeOrToken): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeOrTokenStructuralEquals")(node1.asInstanceOf[js.Any], node2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def nodeOrTokenStructuralEquals(node1: ISyntaxNodeOrToken, node2: ISyntaxNodeOrToken): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeOrTokenStructuralEquals")(node1.asInstanceOf[js.Any], node2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def nodeStructuralEquals(
+  inline def nodeStructuralEquals(
     node1: typings.typescriptServices.TypeScript.SyntaxNode,
     node2: typings.typescriptServices.TypeScript.SyntaxNode
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeStructuralEquals")(node1.asInstanceOf[js.Any], node2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -2523,26 +2476,19 @@ object Syntax {
   @JSGlobal("TypeScript.Syntax.normalModeFactory")
   @js.native
   def normalModeFactory: IFactory = js.native
-  @scala.inline
-  def normalModeFactory_=(x: IFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalModeFactory")(x.asInstanceOf[js.Any])
+  inline def normalModeFactory_=(x: IFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalModeFactory")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def numericLiteralExpression(text: String): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("numericLiteralExpression")(text.asInstanceOf[js.Any]).asInstanceOf[IUnaryExpressionSyntax]
+  inline def numericLiteralExpression(text: String): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("numericLiteralExpression")(text.asInstanceOf[js.Any]).asInstanceOf[IUnaryExpressionSyntax]
   
-  @scala.inline
-  def realizeToken(token: ISyntaxToken): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeToken")(token.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
+  inline def realizeToken(token: ISyntaxToken): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeToken")(token.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
   
-  @scala.inline
-  def separatedList(nodes: js.Array[ISyntaxNodeOrToken]): ISeparatedSyntaxList = ^.asInstanceOf[js.Dynamic].applyDynamic("separatedList")(nodes.asInstanceOf[js.Any]).asInstanceOf[ISeparatedSyntaxList]
+  inline def separatedList(nodes: js.Array[ISyntaxNodeOrToken]): ISeparatedSyntaxList = ^.asInstanceOf[js.Dynamic].applyDynamic("separatedList")(nodes.asInstanceOf[js.Any]).asInstanceOf[ISeparatedSyntaxList]
   
-  @scala.inline
-  def separatedListStructuralEquals(list1: ISeparatedSyntaxList, list2: ISeparatedSyntaxList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("separatedListStructuralEquals")(list1.asInstanceOf[js.Any], list2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def separatedListStructuralEquals(list1: ISeparatedSyntaxList, list2: ISeparatedSyntaxList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("separatedListStructuralEquals")(list1.asInstanceOf[js.Any], list2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def singleLineComment(text: String): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("singleLineComment")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
+  inline def singleLineComment(text: String): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("singleLineComment")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
   
-  @scala.inline
-  def skippedTokenTrivia(token: ISyntaxToken): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("skippedTokenTrivia")(token.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
+  inline def skippedTokenTrivia(token: ISyntaxToken): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("skippedTokenTrivia")(token.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
   
   @JSGlobal("TypeScript.Syntax.spaceTrivia")
   @js.native
@@ -2551,59 +2497,41 @@ object Syntax {
   @JSGlobal("TypeScript.Syntax.spaceTriviaList")
   @js.native
   def spaceTriviaList: ISyntaxTriviaList = js.native
-  @scala.inline
-  def spaceTriviaList_=(x: ISyntaxTriviaList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spaceTriviaList")(x.asInstanceOf[js.Any])
+  inline def spaceTriviaList_=(x: ISyntaxTriviaList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spaceTriviaList")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def spaceTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spaceTrivia")(x.asInstanceOf[js.Any])
+  inline def spaceTrivia_=(x: ISyntaxTrivia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spaceTrivia")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def spaces(count: Double): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("spaces")(count.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
+  inline def spaces(count: Double): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("spaces")(count.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
   
-  @scala.inline
-  def splitMultiLineCommentTriviaIntoMultipleLines(trivia: ISyntaxTrivia): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMultiLineCommentTriviaIntoMultipleLines")(trivia.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def splitMultiLineCommentTriviaIntoMultipleLines(trivia: ISyntaxTrivia): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMultiLineCommentTriviaIntoMultipleLines")(trivia.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   @JSGlobal("TypeScript.Syntax.strictModeFactory")
   @js.native
   def strictModeFactory: IFactory = js.native
-  @scala.inline
-  def strictModeFactory_=(x: IFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strictModeFactory")(x.asInstanceOf[js.Any])
+  inline def strictModeFactory_=(x: IFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strictModeFactory")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def stringLiteralExpression(text: String): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("stringLiteralExpression")(text.asInstanceOf[js.Any]).asInstanceOf[IUnaryExpressionSyntax]
+  inline def stringLiteralExpression(text: String): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("stringLiteralExpression")(text.asInstanceOf[js.Any]).asInstanceOf[IUnaryExpressionSyntax]
   
-  @scala.inline
-  def token(kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(kind.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
-  @scala.inline
-  def token(kind: typings.typescriptServices.TypeScript.SyntaxKind, info: ITokenInfo): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(kind.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
+  inline def token(kind: typings.typescriptServices.TypeScript.SyntaxKind): ISyntaxToken = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(kind.asInstanceOf[js.Any]).asInstanceOf[ISyntaxToken]
+  inline def token(kind: typings.typescriptServices.TypeScript.SyntaxKind, info: ITokenInfo): ISyntaxToken = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(kind.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[ISyntaxToken]
   
-  @scala.inline
-  def tokenStructuralEquals(token1: ISyntaxToken, token2: ISyntaxToken): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenStructuralEquals")(token1.asInstanceOf[js.Any], token2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def tokenStructuralEquals(token1: ISyntaxToken, token2: ISyntaxToken): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenStructuralEquals")(token1.asInstanceOf[js.Any], token2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def tokenToJSON(token: ISyntaxToken): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenToJSON")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def tokenToJSON(token: ISyntaxToken): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenToJSON")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def trivia(kind: typings.typescriptServices.TypeScript.SyntaxKind, text: String): ISyntaxTrivia = (^.asInstanceOf[js.Dynamic].applyDynamic("trivia")(kind.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[ISyntaxTrivia]
+  inline def trivia(kind: typings.typescriptServices.TypeScript.SyntaxKind, text: String): ISyntaxTrivia = (^.asInstanceOf[js.Dynamic].applyDynamic("trivia")(kind.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[ISyntaxTrivia]
   
-  @scala.inline
-  def triviaList(trivia: js.Array[ISyntaxTrivia]): ISyntaxTriviaList = ^.asInstanceOf[js.Dynamic].applyDynamic("triviaList")(trivia.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTriviaList]
+  inline def triviaList(trivia: js.Array[ISyntaxTrivia]): ISyntaxTriviaList = ^.asInstanceOf[js.Dynamic].applyDynamic("triviaList")(trivia.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTriviaList]
   
-  @scala.inline
-  def triviaListStructuralEquals(triviaList1: ISyntaxTriviaList, triviaList2: ISyntaxTriviaList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("triviaListStructuralEquals")(triviaList1.asInstanceOf[js.Any], triviaList2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def triviaListStructuralEquals(triviaList1: ISyntaxTriviaList, triviaList2: ISyntaxTriviaList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("triviaListStructuralEquals")(triviaList1.asInstanceOf[js.Any], triviaList2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def triviaStructuralEquals(trivia1: ISyntaxTrivia, trivia2: ISyntaxTrivia): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("triviaStructuralEquals")(trivia1.asInstanceOf[js.Any], trivia2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def triviaStructuralEquals(trivia1: ISyntaxTrivia, trivia2: ISyntaxTrivia): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("triviaStructuralEquals")(trivia1.asInstanceOf[js.Any], trivia2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def trueExpression(): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("trueExpression")().asInstanceOf[IUnaryExpressionSyntax]
+  inline def trueExpression(): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("trueExpression")().asInstanceOf[IUnaryExpressionSyntax]
   
-  @scala.inline
-  def value(token: ISyntaxToken): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def value(token: ISyntaxToken): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def valueText(token: ISyntaxToken): String = ^.asInstanceOf[js.Dynamic].applyDynamic("valueText")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def valueText(token: ISyntaxToken): String = ^.asInstanceOf[js.Dynamic].applyDynamic("valueText")(token.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def whitespace(text: String): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespace")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
+  inline def whitespace(text: String): ISyntaxTrivia = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespace")(text.asInstanceOf[js.Any]).asInstanceOf[ISyntaxTrivia]
 }

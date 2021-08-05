@@ -93,159 +93,109 @@ trait ConnectConfig extends StObject {
 }
 object ConnectConfig {
   
-  @scala.inline
-  def apply(): ConnectConfig = {
+  inline def apply(): ConnectConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectConfig]
   }
   
-  @scala.inline
-  implicit class ConnectConfigMutableBuilder[Self <: ConnectConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectConfig](x: Self) {
     
-    @scala.inline
-    def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentForward(value: Boolean): Self = StObject.set(x, "agentForward", value.asInstanceOf[js.Any])
+    inline def setAgentForward(value: Boolean): Self = StObject.set(x, "agentForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentForwardUndefined: Self = StObject.set(x, "agentForward", js.undefined)
+    inline def setAgentForwardUndefined: Self = StObject.set(x, "agentForward", js.undefined)
     
-    @scala.inline
-    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+    inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
     
-    @scala.inline
-    def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    inline def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
-    @scala.inline
-    def setAuthHandler(
+    inline def setAuthHandler(
       value: (/* methodsLeft */ js.Array[String] | Null, /* partialSuccess */ Boolean | Null, /* callback */ js.Function) => js.Any
     ): Self = StObject.set(x, "authHandler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAuthHandlerUndefined: Self = StObject.set(x, "authHandler", js.undefined)
+    inline def setAuthHandlerUndefined: Self = StObject.set(x, "authHandler", js.undefined)
     
-    @scala.inline
-    def setCompress(value: Boolean | force): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    inline def setCompress(value: Boolean | force): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
-    @scala.inline
-    def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setForceIPv4(value: Boolean): Self = StObject.set(x, "forceIPv4", value.asInstanceOf[js.Any])
+    inline def setForceIPv4(value: Boolean): Self = StObject.set(x, "forceIPv4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceIPv4Undefined: Self = StObject.set(x, "forceIPv4", js.undefined)
+    inline def setForceIPv4Undefined: Self = StObject.set(x, "forceIPv4", js.undefined)
     
-    @scala.inline
-    def setForceIPv6(value: Boolean): Self = StObject.set(x, "forceIPv6", value.asInstanceOf[js.Any])
+    inline def setForceIPv6(value: Boolean): Self = StObject.set(x, "forceIPv6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceIPv6Undefined: Self = StObject.set(x, "forceIPv6", js.undefined)
+    inline def setForceIPv6Undefined: Self = StObject.set(x, "forceIPv6", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostHash(value: md5 | sha1): Self = StObject.set(x, "hostHash", value.asInstanceOf[js.Any])
+    inline def setHostHash(value: md5 | sha1): Self = StObject.set(x, "hostHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostHashUndefined: Self = StObject.set(x, "hostHash", js.undefined)
+    inline def setHostHashUndefined: Self = StObject.set(x, "hostHash", js.undefined)
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setHostVerifier(value: /* keyHash */ String => Boolean): Self = StObject.set(x, "hostVerifier", js.Any.fromFunction1(value))
+    inline def setHostVerifier(value: /* keyHash */ String => Boolean): Self = StObject.set(x, "hostVerifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHostVerifierUndefined: Self = StObject.set(x, "hostVerifier", js.undefined)
+    inline def setHostVerifierUndefined: Self = StObject.set(x, "hostVerifier", js.undefined)
     
-    @scala.inline
-    def setKeepaliveCountMax(value: Double): Self = StObject.set(x, "keepaliveCountMax", value.asInstanceOf[js.Any])
+    inline def setKeepaliveCountMax(value: Double): Self = StObject.set(x, "keepaliveCountMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepaliveCountMaxUndefined: Self = StObject.set(x, "keepaliveCountMax", js.undefined)
+    inline def setKeepaliveCountMaxUndefined: Self = StObject.set(x, "keepaliveCountMax", js.undefined)
     
-    @scala.inline
-    def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
+    inline def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
+    inline def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
     
-    @scala.inline
-    def setLocalHostname(value: String): Self = StObject.set(x, "localHostname", value.asInstanceOf[js.Any])
+    inline def setLocalHostname(value: String): Self = StObject.set(x, "localHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalHostnameUndefined: Self = StObject.set(x, "localHostname", js.undefined)
+    inline def setLocalHostnameUndefined: Self = StObject.set(x, "localHostname", js.undefined)
     
-    @scala.inline
-    def setLocalUsername(value: String): Self = StObject.set(x, "localUsername", value.asInstanceOf[js.Any])
+    inline def setLocalUsername(value: String): Self = StObject.set(x, "localUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUsernameUndefined: Self = StObject.set(x, "localUsername", js.undefined)
+    inline def setLocalUsernameUndefined: Self = StObject.set(x, "localUsername", js.undefined)
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setPrivateKey(value: Buffer | String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: Buffer | String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+    inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
     
-    @scala.inline
-    def setReadyTimeout(value: Double): Self = StObject.set(x, "readyTimeout", value.asInstanceOf[js.Any])
+    inline def setReadyTimeout(value: Double): Self = StObject.set(x, "readyTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyTimeoutUndefined: Self = StObject.set(x, "readyTimeout", js.undefined)
+    inline def setReadyTimeoutUndefined: Self = StObject.set(x, "readyTimeout", js.undefined)
     
-    @scala.inline
-    def setSock(value: ReadableStream): Self = StObject.set(x, "sock", value.asInstanceOf[js.Any])
+    inline def setSock(value: ReadableStream): Self = StObject.set(x, "sock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSockUndefined: Self = StObject.set(x, "sock", js.undefined)
+    inline def setSockUndefined: Self = StObject.set(x, "sock", js.undefined)
     
-    @scala.inline
-    def setStrictVendor(value: Boolean): Self = StObject.set(x, "strictVendor", value.asInstanceOf[js.Any])
+    inline def setStrictVendor(value: Boolean): Self = StObject.set(x, "strictVendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictVendorUndefined: Self = StObject.set(x, "strictVendor", js.undefined)
+    inline def setStrictVendorUndefined: Self = StObject.set(x, "strictVendor", js.undefined)
     
-    @scala.inline
-    def setTryKeyboard(value: Boolean): Self = StObject.set(x, "tryKeyboard", value.asInstanceOf[js.Any])
+    inline def setTryKeyboard(value: Boolean): Self = StObject.set(x, "tryKeyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryKeyboardUndefined: Self = StObject.set(x, "tryKeyboard", js.undefined)
+    inline def setTryKeyboardUndefined: Self = StObject.set(x, "tryKeyboard", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

@@ -32,8 +32,7 @@ trait Spring extends StObject {
 }
 object Spring {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyForce: () => Unit,
     bodyA: Body,
     bodyB: Body,
@@ -51,43 +50,30 @@ object Spring {
     __obj.asInstanceOf[Spring]
   }
   
-  @scala.inline
-  implicit class SpringMutableBuilder[Self <: Spring] (val x: Self) extends AnyVal {
+  extension [Self <: Spring](x: Self) {
     
-    @scala.inline
-    def setApplyForce(value: () => Unit): Self = StObject.set(x, "applyForce", js.Any.fromFunction0(value))
+    inline def setApplyForce(value: () => Unit): Self = StObject.set(x, "applyForce", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBodyA(value: Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
+    inline def setBodyA(value: Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyB(value: Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
+    inline def setBodyB(value: Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+    inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetWorldAnchorA(value: Vec3 => Unit): Self = StObject.set(x, "getWorldAnchorA", js.Any.fromFunction1(value))
+    inline def setGetWorldAnchorA(value: Vec3 => Unit): Self = StObject.set(x, "getWorldAnchorA", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWorldAnchorB(value: Vec3 => Unit): Self = StObject.set(x, "getWorldAnchorB", js.Any.fromFunction1(value))
+    inline def setGetWorldAnchorB(value: Vec3 => Unit): Self = StObject.set(x, "getWorldAnchorB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocalAnchorA(value: Vec3): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorA(value: Vec3): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorB(value: Vec3): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorB(value: Vec3): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestLength(value: Double): Self = StObject.set(x, "restLength", value.asInstanceOf[js.Any])
+    inline def setRestLength(value: Double): Self = StObject.set(x, "restLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWorldAnchorA(value: Vec3 => Unit): Self = StObject.set(x, "setWorldAnchorA", js.Any.fromFunction1(value))
+    inline def setSetWorldAnchorA(value: Vec3 => Unit): Self = StObject.set(x, "setWorldAnchorA", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWorldAnchorB(value: Vec3 => Unit): Self = StObject.set(x, "setWorldAnchorB", js.Any.fromFunction1(value))
+    inline def setSetWorldAnchorB(value: Vec3 => Unit): Self = StObject.set(x, "setWorldAnchorB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStffness(value: Double): Self = StObject.set(x, "stffness", value.asInstanceOf[js.Any])
+    inline def setStffness(value: Double): Self = StObject.set(x, "stffness", value.asInstanceOf[js.Any])
   }
 }

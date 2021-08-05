@@ -29,8 +29,7 @@ trait XActiveDataSource
 }
 object XActiveDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputStream: XOutputStream,
     acquire: () => Unit,
     getOutputStream: () => XOutputStream,
@@ -42,16 +41,12 @@ object XActiveDataSource {
     __obj.asInstanceOf[XActiveDataSource]
   }
   
-  @scala.inline
-  implicit class XActiveDataSourceMutableBuilder[Self <: XActiveDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: XActiveDataSource](x: Self) {
     
-    @scala.inline
-    def setGetOutputStream(value: () => XOutputStream): Self = StObject.set(x, "getOutputStream", js.Any.fromFunction0(value))
+    inline def setGetOutputStream(value: () => XOutputStream): Self = StObject.set(x, "getOutputStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOutputStream(value: XOutputStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
+    inline def setOutputStream(value: XOutputStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetOutputStream(value: XOutputStream => Unit): Self = StObject.set(x, "setOutputStream", js.Any.fromFunction1(value))
+    inline def setSetOutputStream(value: XOutputStream => Unit): Self = StObject.set(x, "setOutputStream", js.Any.fromFunction1(value))
   }
 }

@@ -15,28 +15,21 @@ trait DescribeDataRepositoryTasksResponse extends StObject {
 }
 object DescribeDataRepositoryTasksResponse {
   
-  @scala.inline
-  def apply(): DescribeDataRepositoryTasksResponse = {
+  inline def apply(): DescribeDataRepositoryTasksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDataRepositoryTasksResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDataRepositoryTasksResponseMutableBuilder[Self <: DescribeDataRepositoryTasksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDataRepositoryTasksResponse](x: Self) {
     
-    @scala.inline
-    def setDataRepositoryTasks(value: DataRepositoryTasks): Self = StObject.set(x, "DataRepositoryTasks", value.asInstanceOf[js.Any])
+    inline def setDataRepositoryTasks(value: DataRepositoryTasks): Self = StObject.set(x, "DataRepositoryTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRepositoryTasksUndefined: Self = StObject.set(x, "DataRepositoryTasks", js.undefined)
+    inline def setDataRepositoryTasksUndefined: Self = StObject.set(x, "DataRepositoryTasks", js.undefined)
     
-    @scala.inline
-    def setDataRepositoryTasksVarargs(value: DataRepositoryTask*): Self = StObject.set(x, "DataRepositoryTasks", js.Array(value :_*))
+    inline def setDataRepositoryTasksVarargs(value: DataRepositoryTask*): Self = StObject.set(x, "DataRepositoryTasks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

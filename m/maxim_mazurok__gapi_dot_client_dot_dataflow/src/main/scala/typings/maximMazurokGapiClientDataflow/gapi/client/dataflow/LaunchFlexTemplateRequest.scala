@@ -14,25 +14,19 @@ trait LaunchFlexTemplateRequest extends StObject {
 }
 object LaunchFlexTemplateRequest {
   
-  @scala.inline
-  def apply(): LaunchFlexTemplateRequest = {
+  inline def apply(): LaunchFlexTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchFlexTemplateRequest]
   }
   
-  @scala.inline
-  implicit class LaunchFlexTemplateRequestMutableBuilder[Self <: LaunchFlexTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchFlexTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setLaunchParameter(value: LaunchFlexTemplateParameter): Self = StObject.set(x, "launchParameter", value.asInstanceOf[js.Any])
+    inline def setLaunchParameter(value: LaunchFlexTemplateParameter): Self = StObject.set(x, "launchParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchParameterUndefined: Self = StObject.set(x, "launchParameter", js.undefined)
+    inline def setLaunchParameterUndefined: Self = StObject.set(x, "launchParameter", js.undefined)
     
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

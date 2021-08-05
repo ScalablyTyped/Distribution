@@ -86,21 +86,16 @@ object botAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BotAliasState): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BotAliasState, opts: CustomResourceOptions): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
+    inline def get(name: String, id: Input[ID]): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
+    inline def get(name: String, id: Input[ID], state: BotAliasState): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
+    inline def get(name: String, id: Input[ID], state: BotAliasState, opts: CustomResourceOptions): BotAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BotAlias]
     
     /**
       * Returns true if the given object is an instance of BotAlias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/botAlias.BotAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/botAlias.BotAlias */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/botAlias.BotAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/botAlias.BotAlias */ Boolean]
   }
   
   trait BotAliasArgs extends StObject {
@@ -132,38 +127,28 @@ object botAliasMod {
   }
   object BotAliasArgs {
     
-    @scala.inline
-    def apply(botName: Input[String], botVersion: Input[String]): BotAliasArgs = {
+    inline def apply(botName: Input[String], botVersion: Input[String]): BotAliasArgs = {
       val __obj = js.Dynamic.literal(botName = botName.asInstanceOf[js.Any], botVersion = botVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[BotAliasArgs]
     }
     
-    @scala.inline
-    implicit class BotAliasArgsMutableBuilder[Self <: BotAliasArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BotAliasArgs](x: Self) {
       
-      @scala.inline
-      def setBotName(value: Input[String]): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+      inline def setBotName(value: Input[String]): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotVersion(value: Input[String]): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
+      inline def setBotVersion(value: Input[String]): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConversationLogs(value: Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]): Self = StObject.set(x, "conversationLogs", value.asInstanceOf[js.Any])
+      inline def setConversationLogs(value: Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]): Self = StObject.set(x, "conversationLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
+      inline def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -216,68 +201,48 @@ object botAliasMod {
   }
   object BotAliasState {
     
-    @scala.inline
-    def apply(): BotAliasState = {
+    inline def apply(): BotAliasState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BotAliasState]
     }
     
-    @scala.inline
-    implicit class BotAliasStateMutableBuilder[Self <: BotAliasState] (val x: Self) extends AnyVal {
+    extension [Self <: BotAliasState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBotName(value: Input[String]): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+      inline def setBotName(value: Input[String]): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
+      inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
       
-      @scala.inline
-      def setBotVersion(value: Input[String]): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
+      inline def setBotVersion(value: Input[String]): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
+      inline def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
       
-      @scala.inline
-      def setChecksum(value: Input[String]): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: Input[String]): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
       
-      @scala.inline
-      def setConversationLogs(value: Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]): Self = StObject.set(x, "conversationLogs", value.asInstanceOf[js.Any])
+      inline def setConversationLogs(value: Input[typings.pulumiAws.inputMod.lex.BotAliasConversationLogs]): Self = StObject.set(x, "conversationLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
+      inline def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
       
-      @scala.inline
-      def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+      inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
+      inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

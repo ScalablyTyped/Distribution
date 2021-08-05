@@ -12,25 +12,19 @@ trait LastModified extends StObject {
 }
 object LastModified {
   
-  @scala.inline
-  def apply(): LastModified = {
+  inline def apply(): LastModified = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LastModified]
   }
   
-  @scala.inline
-  implicit class LastModifiedMutableBuilder[Self <: LastModified] (val x: Self) extends AnyVal {
+  extension [Self <: LastModified](x: Self) {
     
-    @scala.inline
-    def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

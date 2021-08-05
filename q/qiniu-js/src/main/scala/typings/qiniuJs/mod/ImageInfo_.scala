@@ -29,8 +29,7 @@ trait ImageInfo_ extends StObject {
 }
 object ImageInfo_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colorModel: String,
     format: png | jpeg | gif | bmp,
     frameNumber: Double,
@@ -42,25 +41,18 @@ object ImageInfo_ {
     __obj.asInstanceOf[ImageInfo_]
   }
   
-  @scala.inline
-  implicit class ImageInfo_MutableBuilder[Self <: ImageInfo_] (val x: Self) extends AnyVal {
+  extension [Self <: ImageInfo_](x: Self) {
     
-    @scala.inline
-    def setColorModel(value: String): Self = StObject.set(x, "colorModel", value.asInstanceOf[js.Any])
+    inline def setColorModel(value: String): Self = StObject.set(x, "colorModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: png | jpeg | gif | bmp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: png | jpeg | gif | bmp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameNumber(value: Double): Self = StObject.set(x, "frameNumber", value.asInstanceOf[js.Any])
+    inline def setFrameNumber(value: Double): Self = StObject.set(x, "frameNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

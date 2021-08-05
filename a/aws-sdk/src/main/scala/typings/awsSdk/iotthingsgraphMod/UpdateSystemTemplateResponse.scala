@@ -13,19 +13,15 @@ trait UpdateSystemTemplateResponse extends StObject {
 }
 object UpdateSystemTemplateResponse {
   
-  @scala.inline
-  def apply(): UpdateSystemTemplateResponse = {
+  inline def apply(): UpdateSystemTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSystemTemplateResponse]
   }
   
-  @scala.inline
-  implicit class UpdateSystemTemplateResponseMutableBuilder[Self <: UpdateSystemTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSystemTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setSummary(value: SystemTemplateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: SystemTemplateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

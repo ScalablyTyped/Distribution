@@ -24,25 +24,19 @@ trait BotAbortStatementMessage extends StObject {
 }
 object BotAbortStatementMessage {
   
-  @scala.inline
-  def apply(content: String, contentType: String): BotAbortStatementMessage = {
+  inline def apply(content: String, contentType: String): BotAbortStatementMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BotAbortStatementMessage]
   }
   
-  @scala.inline
-  implicit class BotAbortStatementMessageMutableBuilder[Self <: BotAbortStatementMessage] (val x: Self) extends AnyVal {
+  extension [Self <: BotAbortStatementMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumber(value: Double): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
+    inline def setGroupNumber(value: Double): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
+    inline def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
   }
 }

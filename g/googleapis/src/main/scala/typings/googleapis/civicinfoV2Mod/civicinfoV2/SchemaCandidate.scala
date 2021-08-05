@@ -54,64 +54,45 @@ trait SchemaCandidate extends StObject {
 }
 object SchemaCandidate {
   
-  @scala.inline
-  def apply(): SchemaCandidate = {
+  inline def apply(): SchemaCandidate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCandidate]
   }
   
-  @scala.inline
-  implicit class SchemaCandidateMutableBuilder[Self <: SchemaCandidate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCandidate](x: Self) {
     
-    @scala.inline
-    def setCandidateUrl(value: String): Self = StObject.set(x, "candidateUrl", value.asInstanceOf[js.Any])
+    inline def setCandidateUrl(value: String): Self = StObject.set(x, "candidateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateUrlUndefined: Self = StObject.set(x, "candidateUrl", js.undefined)
+    inline def setCandidateUrlUndefined: Self = StObject.set(x, "candidateUrl", js.undefined)
     
-    @scala.inline
-    def setChannels(value: js.Array[SchemaChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[SchemaChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: SchemaChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: SchemaChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrderOnBallot(value: String): Self = StObject.set(x, "orderOnBallot", value.asInstanceOf[js.Any])
+    inline def setOrderOnBallot(value: String): Self = StObject.set(x, "orderOnBallot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderOnBallotUndefined: Self = StObject.set(x, "orderOnBallot", js.undefined)
+    inline def setOrderOnBallotUndefined: Self = StObject.set(x, "orderOnBallot", js.undefined)
     
-    @scala.inline
-    def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
+    inline def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
+    inline def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
+    inline def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
+    inline def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
   }
 }

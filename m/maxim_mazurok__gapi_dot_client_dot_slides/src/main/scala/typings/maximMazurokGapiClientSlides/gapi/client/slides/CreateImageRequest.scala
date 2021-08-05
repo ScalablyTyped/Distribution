@@ -30,31 +30,23 @@ trait CreateImageRequest extends StObject {
 }
 object CreateImageRequest {
   
-  @scala.inline
-  def apply(): CreateImageRequest = {
+  inline def apply(): CreateImageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateImageRequest]
   }
   
-  @scala.inline
-  implicit class CreateImageRequestMutableBuilder[Self <: CreateImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateImageRequest](x: Self) {
     
-    @scala.inline
-    def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+    inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+    inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

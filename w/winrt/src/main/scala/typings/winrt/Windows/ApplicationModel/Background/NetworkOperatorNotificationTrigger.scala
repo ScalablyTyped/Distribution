@@ -9,8 +9,7 @@ trait NetworkOperatorNotificationTrigger
      with INetworkOperatorNotificationTrigger
 object NetworkOperatorNotificationTrigger {
   
-  @scala.inline
-  def apply(networkAccountId: String): NetworkOperatorNotificationTrigger = {
+  inline def apply(networkAccountId: String): NetworkOperatorNotificationTrigger = {
     val __obj = js.Dynamic.literal(networkAccountId = networkAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkOperatorNotificationTrigger]
   }

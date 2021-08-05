@@ -17,34 +17,25 @@ trait ConversionsBatchInsertResponse extends StObject {
 }
 object ConversionsBatchInsertResponse {
   
-  @scala.inline
-  def apply(): ConversionsBatchInsertResponse = {
+  inline def apply(): ConversionsBatchInsertResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversionsBatchInsertResponse]
   }
   
-  @scala.inline
-  implicit class ConversionsBatchInsertResponseMutableBuilder[Self <: ConversionsBatchInsertResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ConversionsBatchInsertResponse](x: Self) {
     
-    @scala.inline
-    def setHasFailures(value: Boolean): Self = StObject.set(x, "hasFailures", value.asInstanceOf[js.Any])
+    inline def setHasFailures(value: Boolean): Self = StObject.set(x, "hasFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasFailuresUndefined: Self = StObject.set(x, "hasFailures", js.undefined)
+    inline def setHasFailuresUndefined: Self = StObject.set(x, "hasFailures", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setStatus(value: js.Array[ConversionStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[ConversionStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatusVarargs(value: ConversionStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: ConversionStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
   }
 }

@@ -14,25 +14,19 @@ trait MaskedInputProps
 }
 object MaskedInputProps {
   
-  @scala.inline
-  def apply(): MaskedInputProps = {
+  inline def apply(): MaskedInputProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaskedInputProps]
   }
   
-  @scala.inline
-  implicit class MaskedInputPropsMutableBuilder[Self <: MaskedInputProps] (val x: Self) extends AnyVal {
+  extension [Self <: MaskedInputProps](x: Self) {
     
-    @scala.inline
-    def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
+    inline def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
+    inline def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

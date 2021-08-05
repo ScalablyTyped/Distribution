@@ -15,25 +15,19 @@ trait SyntaxOptionsTokens extends StObject {
 }
 object SyntaxOptionsTokens {
   
-  @scala.inline
-  def apply(): SyntaxOptionsTokens = {
+  inline def apply(): SyntaxOptionsTokens = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyntaxOptionsTokens]
   }
   
-  @scala.inline
-  implicit class SyntaxOptionsTokensMutableBuilder[Self <: SyntaxOptionsTokens] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxOptionsTokens](x: Self) {
     
-    @scala.inline
-    def setLemma(value: Boolean): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
+    inline def setLemma(value: Boolean): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
+    inline def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
     
-    @scala.inline
-    def setPart_of_speech(value: Boolean): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
+    inline def setPart_of_speech(value: Boolean): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
+    inline def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
   }
 }

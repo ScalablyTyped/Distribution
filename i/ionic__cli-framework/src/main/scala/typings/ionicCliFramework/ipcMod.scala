@@ -39,7 +39,7 @@ object ipcMod {
         ]
     ): Unit = js.native
     
-    var rpc: RPCProcess = js.native
+    /* protected */ var rpc: RPCProcess = js.native
     
     def start(): Unit = js.native
   }
@@ -60,7 +60,7 @@ object ipcMod {
     
     val name: String = js.native
     
-    var proc: js.UndefOr[ChildProcess] = js.native
+    /* protected */ var proc: js.UndefOr[ChildProcess] = js.native
     
     def register[R /* <: RPCResponse[js.Any, js.Object] */](
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
@@ -72,7 +72,7 @@ object ipcMod {
         ]
     ): Unit = js.native
     
-    var responseProcedures: Map[String, js.Function1[/* args */ js.Array[js.Any], js.Promise[js.Any]]] = js.native
+    /* protected */ var responseProcedures: Map[String, js.Function1[/* args */ js.Array[js.Any], js.Promise[js.Any]]] = js.native
     
     def start(proc: ChildProcess): Unit = js.native
     def start(proc: Process): Unit = js.native
@@ -90,26 +90,20 @@ object ipcMod {
   }
   object RPCProcessOptions {
     
-    @scala.inline
-    def apply(): RPCProcessOptions = {
+    inline def apply(): RPCProcessOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RPCProcessOptions]
     }
     
-    @scala.inline
-    implicit class RPCProcessOptionsMutableBuilder[Self <: RPCProcessOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RPCProcessOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -125,27 +119,21 @@ object ipcMod {
   }
   object RPCRequest {
     
-    @scala.inline
-    def apply[P /* <: String */, A /* <: js.Array[js.Any] */](args: A, id: String, procedure: P): RPCRequest[P, A] = {
+    inline def apply[P /* <: String */, A /* <: js.Array[js.Any] */](args: A, id: String, procedure: P): RPCRequest[P, A] = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("rpc-request")
       __obj.asInstanceOf[RPCRequest[P, A]]
     }
     
-    @scala.inline
-    implicit class RPCRequestMutableBuilder[Self <: RPCRequest[?, ?], P /* <: String */, A /* <: js.Array[js.Any] */] (val x: Self & (RPCRequest[P, A])) extends AnyVal {
+    extension [Self <: RPCRequest[?, ?], P /* <: String */, A /* <: js.Array[js.Any] */](x: Self & (RPCRequest[P, A])) {
       
-      @scala.inline
-      def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcedure(value: P): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+      inline def setProcedure(value: P): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `rpc-request`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `rpc-request`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,8 +153,7 @@ object ipcMod {
   }
   object RPCResponse {
     
-    @scala.inline
-    def apply[R /* <: RPCRequest[js.Any, js.Any] */, D /* <: js.Object */](
+    inline def apply[R /* <: RPCRequest[js.Any, js.Any] */, D /* <: js.Object */](
       data: D,
       id: String,
       procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
@@ -177,31 +164,23 @@ object ipcMod {
       __obj.asInstanceOf[RPCResponse[R, D]]
     }
     
-    @scala.inline
-    implicit class RPCResponseMutableBuilder[Self <: RPCResponse[?, ?], R /* <: RPCRequest[js.Any, js.Any] */, D /* <: js.Object */] (val x: Self & (RPCResponse[R, D])) extends AnyVal {
+    extension [Self <: RPCResponse[?, ?], R /* <: RPCRequest[js.Any, js.Any] */, D /* <: js.Object */](x: Self & (RPCResponse[R, D])) {
       
-      @scala.inline
-      def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcedure(
+      inline def setProcedure(
         value: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any
       ): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: R): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: R): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `rpc-response`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `rpc-response`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

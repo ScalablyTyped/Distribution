@@ -30,13 +30,12 @@ trait Reference extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE
   
-  @JSName("VBIDE.Reference_typekey")
+  /* private */ @JSName("VBIDE.Reference_typekey")
   var VBIDEDotReference_typekey: Reference
 }
 object Reference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BuiltIn: Boolean,
     Collection: References,
     Description: String,
@@ -55,43 +54,30 @@ object Reference {
     __obj.asInstanceOf[Reference]
   }
   
-  @scala.inline
-  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+  extension [Self <: Reference](x: Self) {
     
-    @scala.inline
-    def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
+    inline def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: References): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: References): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullPath(value: String): Self = StObject.set(x, "FullPath", value.asInstanceOf[js.Any])
+    inline def setFullPath(value: String): Self = StObject.set(x, "FullPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBroken(value: Boolean): Self = StObject.set(x, "IsBroken", value.asInstanceOf[js.Any])
+    inline def setIsBroken(value: Boolean): Self = StObject.set(x, "IsBroken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "Major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "Major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "Minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "Minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: vbextRefKind): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: vbextRefKind): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
+    inline def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotReference_typekey(value: Reference): Self = StObject.set(x, "VBIDE.Reference_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotReference_typekey(value: Reference): Self = StObject.set(x, "VBIDE.Reference_typekey", value.asInstanceOf[js.Any])
   }
 }

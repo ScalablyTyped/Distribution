@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(reqHeaders: Headers, resHeaders: Headers): Boolean = (^.asInstanceOf[js.Dynamic].apply(reqHeaders.asInstanceOf[js.Any], resHeaders.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(reqHeaders: Headers, resHeaders: Headers): Boolean = (^.asInstanceOf[js.Dynamic].apply(reqHeaders.asInstanceOf[js.Any], resHeaders.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("fresh", JSImport.Namespace)
   @js.native

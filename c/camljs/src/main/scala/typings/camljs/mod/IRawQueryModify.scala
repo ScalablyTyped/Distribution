@@ -12,19 +12,15 @@ trait IRawQueryModify extends StObject {
 }
 object IRawQueryModify {
   
-  @scala.inline
-  def apply(AppendAnd: () => IFieldExpression, AppendOr: () => IFieldExpression): IRawQueryModify = {
+  inline def apply(AppendAnd: () => IFieldExpression, AppendOr: () => IFieldExpression): IRawQueryModify = {
     val __obj = js.Dynamic.literal(AppendAnd = js.Any.fromFunction0(AppendAnd), AppendOr = js.Any.fromFunction0(AppendOr))
     __obj.asInstanceOf[IRawQueryModify]
   }
   
-  @scala.inline
-  implicit class IRawQueryModifyMutableBuilder[Self <: IRawQueryModify] (val x: Self) extends AnyVal {
+  extension [Self <: IRawQueryModify](x: Self) {
     
-    @scala.inline
-    def setAppendAnd(value: () => IFieldExpression): Self = StObject.set(x, "AppendAnd", js.Any.fromFunction0(value))
+    inline def setAppendAnd(value: () => IFieldExpression): Self = StObject.set(x, "AppendAnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAppendOr(value: () => IFieldExpression): Self = StObject.set(x, "AppendOr", js.Any.fromFunction0(value))
+    inline def setAppendOr(value: () => IFieldExpression): Self = StObject.set(x, "AppendOr", js.Any.fromFunction0(value))
   }
 }

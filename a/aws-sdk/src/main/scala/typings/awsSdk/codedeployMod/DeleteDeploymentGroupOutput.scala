@@ -13,22 +13,17 @@ trait DeleteDeploymentGroupOutput extends StObject {
 }
 object DeleteDeploymentGroupOutput {
   
-  @scala.inline
-  def apply(): DeleteDeploymentGroupOutput = {
+  inline def apply(): DeleteDeploymentGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDeploymentGroupOutput]
   }
   
-  @scala.inline
-  implicit class DeleteDeploymentGroupOutputMutableBuilder[Self <: DeleteDeploymentGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeploymentGroupOutput](x: Self) {
     
-    @scala.inline
-    def setHooksNotCleanedUp(value: AutoScalingGroupList): Self = StObject.set(x, "hooksNotCleanedUp", value.asInstanceOf[js.Any])
+    inline def setHooksNotCleanedUp(value: AutoScalingGroupList): Self = StObject.set(x, "hooksNotCleanedUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksNotCleanedUpUndefined: Self = StObject.set(x, "hooksNotCleanedUp", js.undefined)
+    inline def setHooksNotCleanedUpUndefined: Self = StObject.set(x, "hooksNotCleanedUp", js.undefined)
     
-    @scala.inline
-    def setHooksNotCleanedUpVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "hooksNotCleanedUp", js.Array(value :_*))
+    inline def setHooksNotCleanedUpVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "hooksNotCleanedUp", js.Array(value :_*))
   }
 }

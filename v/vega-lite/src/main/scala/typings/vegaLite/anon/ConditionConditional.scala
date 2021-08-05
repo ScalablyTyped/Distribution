@@ -11,16 +11,13 @@ trait ConditionConditional extends StObject {
 }
 object ConditionConditional {
   
-  @scala.inline
-  def apply(condition: Conditional[js.Any]): ConditionConditional = {
+  inline def apply(condition: Conditional[js.Any]): ConditionConditional = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionConditional]
   }
   
-  @scala.inline
-  implicit class ConditionConditionalMutableBuilder[Self <: ConditionConditional] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionConditional](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Conditional[js.Any]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Conditional[js.Any]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }
 }

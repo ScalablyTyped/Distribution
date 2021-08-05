@@ -32,25 +32,19 @@ trait NamedSheetViewLoadOptions extends StObject {
 }
 object NamedSheetViewLoadOptions {
   
-  @scala.inline
-  def apply(): NamedSheetViewLoadOptions = {
+  inline def apply(): NamedSheetViewLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedSheetViewLoadOptions]
   }
   
-  @scala.inline
-  implicit class NamedSheetViewLoadOptionsMutableBuilder[Self <: NamedSheetViewLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NamedSheetViewLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

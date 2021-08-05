@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Recipient")
 @js.native
-class Recipient protected ()
+/* private */ class Recipient ()
   extends StObject
      with typings.activexOutlook.Outlook.Recipient

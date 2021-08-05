@@ -15,25 +15,19 @@ trait CreateEventResponse extends StObject {
 }
 object CreateEventResponse {
   
-  @scala.inline
-  def apply(): CreateEventResponse = {
+  inline def apply(): CreateEventResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEventResponse]
   }
   
-  @scala.inline
-  implicit class CreateEventResponseMutableBuilder[Self <: CreateEventResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEventResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: EventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: EventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -11,46 +11,39 @@ object firebaseInstallationsStrings {
   sealed trait `app-offline`
     extends StObject
        with ErrorCode
-  @scala.inline
-  def `app-offline`: `app-offline` = "app-offline".asInstanceOf[`app-offline`]
+  inline def `app-offline`: `app-offline` = "app-offline".asInstanceOf[`app-offline`]
   
   @js.native
   sealed trait `delete-pending-registration`
     extends StObject
        with ErrorCode
-  @scala.inline
-  def `delete-pending-registration`: `delete-pending-registration` = "delete-pending-registration".asInstanceOf[`delete-pending-registration`]
+  inline def `delete-pending-registration`: `delete-pending-registration` = "delete-pending-registration".asInstanceOf[`delete-pending-registration`]
   
   @js.native
   sealed trait `installation-not-found`
     extends StObject
        with ErrorCode
-  @scala.inline
-  def `installation-not-found`: `installation-not-found` = "installation-not-found".asInstanceOf[`installation-not-found`]
+  inline def `installation-not-found`: `installation-not-found` = "installation-not-found".asInstanceOf[`installation-not-found`]
   
   @js.native
   sealed trait `missing-app-config-values`
     extends StObject
        with ErrorCode
-  @scala.inline
-  def `missing-app-config-values`: `missing-app-config-values` = "missing-app-config-values".asInstanceOf[`missing-app-config-values`]
+  inline def `missing-app-config-values`: `missing-app-config-values` = "missing-app-config-values".asInstanceOf[`missing-app-config-values`]
   
   @js.native
   sealed trait `not-registered`
     extends StObject
        with ErrorCode
-  @scala.inline
-  def `not-registered`: `not-registered` = "not-registered".asInstanceOf[`not-registered`]
+  inline def `not-registered`: `not-registered` = "not-registered".asInstanceOf[`not-registered`]
   
   @js.native
   sealed trait `platform-logger` extends StObject
-  @scala.inline
-  def `platform-logger`: `platform-logger` = "platform-logger".asInstanceOf[`platform-logger`]
+  inline def `platform-logger`: `platform-logger` = "platform-logger".asInstanceOf[`platform-logger`]
   
   @js.native
   sealed trait `request-failed`
     extends StObject
        with ErrorCode
-  @scala.inline
-  def `request-failed`: `request-failed` = "request-failed".asInstanceOf[`request-failed`]
+  inline def `request-failed`: `request-failed` = "request-failed".asInstanceOf[`request-failed`]
 }

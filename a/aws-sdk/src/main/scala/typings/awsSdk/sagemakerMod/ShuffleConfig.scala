@@ -13,16 +13,13 @@ trait ShuffleConfig extends StObject {
 }
 object ShuffleConfig {
   
-  @scala.inline
-  def apply(Seed: Seed): ShuffleConfig = {
+  inline def apply(Seed: Seed): ShuffleConfig = {
     val __obj = js.Dynamic.literal(Seed = Seed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShuffleConfig]
   }
   
-  @scala.inline
-  implicit class ShuffleConfigMutableBuilder[Self <: ShuffleConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ShuffleConfig](x: Self) {
     
-    @scala.inline
-    def setSeed(value: Seed): Self = StObject.set(x, "Seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Seed): Self = StObject.set(x, "Seed", value.asInstanceOf[js.Any])
   }
 }

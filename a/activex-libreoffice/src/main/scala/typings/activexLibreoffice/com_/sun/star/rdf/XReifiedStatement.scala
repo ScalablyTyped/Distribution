@@ -17,16 +17,13 @@ trait XReifiedStatement
 }
 object XReifiedStatement {
   
-  @scala.inline
-  def apply(Statement: Statement, StringValue: String): XReifiedStatement = {
+  inline def apply(Statement: Statement, StringValue: String): XReifiedStatement = {
     val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[XReifiedStatement]
   }
   
-  @scala.inline
-  implicit class XReifiedStatementMutableBuilder[Self <: XReifiedStatement] (val x: Self) extends AnyVal {
+  extension [Self <: XReifiedStatement](x: Self) {
     
-    @scala.inline
-    def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
   }
 }

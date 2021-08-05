@@ -13,8 +13,7 @@ object tagsListUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeTagsListUniDriver(base: UniDriver[js.Any]): TagsListUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTagsListUniDriver")(base.asInstanceOf[js.Any]).asInstanceOf[TagsListUniDriver]
+  inline def makeTagsListUniDriver(base: UniDriver[js.Any]): TagsListUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTagsListUniDriver")(base.asInstanceOf[js.Any]).asInstanceOf[TagsListUniDriver]
   
   @js.native
   trait TagsListUniDriver

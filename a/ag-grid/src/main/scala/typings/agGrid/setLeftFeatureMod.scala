@@ -17,17 +17,17 @@ object setLeftFeatureMod {
     def this(columnOrGroup: ColumnGroupChild, eCell: HTMLElement, beans: Beans) = this()
     def this(columnOrGroup: ColumnGroupChild, eCell: HTMLElement, beans: Beans, colsSpanning: js.Array[Column]) = this()
     
-    var actualLeft: js.Any = js.native
+    /* private */ var actualLeft: js.Any = js.native
     
     /* private */ def animateInLeft(): js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    var colsSpanning: js.Any = js.native
+    /* private */ var colsSpanning: js.Any = js.native
     
-    var columnOrGroup: js.Any = js.native
+    /* private */ var columnOrGroup: js.Any = js.native
     
-    var eCell: js.Any = js.native
+    /* private */ var eCell: js.Any = js.native
     
     def getColumnOrGroup(): ColumnGroupChild = js.native
     

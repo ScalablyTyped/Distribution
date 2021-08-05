@@ -18,8 +18,7 @@ trait ConnectorProfileConfig extends StObject {
 }
 object ConnectorProfileConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectorProfileCredentials: ConnectorProfileCredentials,
     connectorProfileProperties: ConnectorProfileProperties
   ): ConnectorProfileConfig = {
@@ -27,13 +26,10 @@ object ConnectorProfileConfig {
     __obj.asInstanceOf[ConnectorProfileConfig]
   }
   
-  @scala.inline
-  implicit class ConnectorProfileConfigMutableBuilder[Self <: ConnectorProfileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorProfileConfig](x: Self) {
     
-    @scala.inline
-    def setConnectorProfileCredentials(value: ConnectorProfileCredentials): Self = StObject.set(x, "connectorProfileCredentials", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileCredentials(value: ConnectorProfileCredentials): Self = StObject.set(x, "connectorProfileCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = StObject.set(x, "connectorProfileProperties", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = StObject.set(x, "connectorProfileProperties", value.asInstanceOf[js.Any])
   }
 }

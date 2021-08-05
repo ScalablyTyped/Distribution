@@ -8,6 +8,5 @@ object nodeLocalstorageStrings {
   
   @js.native
   sealed trait storage extends StObject
-  @scala.inline
-  def storage: storage = "storage".asInstanceOf[storage]
+  inline def storage: storage = "storage".asInstanceOf[storage]
 }

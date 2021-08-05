@@ -17,31 +17,23 @@ trait MeshIstio extends StObject {
 }
 object MeshIstio {
   
-  @scala.inline
-  def apply(): MeshIstio = {
+  inline def apply(): MeshIstio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshIstio]
   }
   
-  @scala.inline
-  implicit class MeshIstioMutableBuilder[Self <: MeshIstio] (val x: Self) extends AnyVal {
+  extension [Self <: MeshIstio](x: Self) {
     
-    @scala.inline
-    def setMeshUid(value: String): Self = StObject.set(x, "meshUid", value.asInstanceOf[js.Any])
+    inline def setMeshUid(value: String): Self = StObject.set(x, "meshUid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshUidUndefined: Self = StObject.set(x, "meshUid", js.undefined)
+    inline def setMeshUidUndefined: Self = StObject.set(x, "meshUid", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
-    @scala.inline
-    def setServiceNamespace(value: String): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: String): Self = StObject.set(x, "serviceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
+    inline def setServiceNamespaceUndefined: Self = StObject.set(x, "serviceNamespace", js.undefined)
   }
 }

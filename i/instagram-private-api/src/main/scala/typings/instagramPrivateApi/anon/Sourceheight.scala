@@ -12,19 +12,15 @@ trait Sourceheight extends StObject {
 }
 object Sourceheight {
   
-  @scala.inline
-  def apply(source_height: Double, source_width: Double): Sourceheight = {
+  inline def apply(source_height: Double, source_width: Double): Sourceheight = {
     val __obj = js.Dynamic.literal(source_height = source_height.asInstanceOf[js.Any], source_width = source_width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sourceheight]
   }
   
-  @scala.inline
-  implicit class SourceheightMutableBuilder[Self <: Sourceheight] (val x: Self) extends AnyVal {
+  extension [Self <: Sourceheight](x: Self) {
     
-    @scala.inline
-    def setSource_height(value: Double): Self = StObject.set(x, "source_height", value.asInstanceOf[js.Any])
+    inline def setSource_height(value: Double): Self = StObject.set(x, "source_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_width(value: Double): Self = StObject.set(x, "source_width", value.asInstanceOf[js.Any])
+    inline def setSource_width(value: Double): Self = StObject.set(x, "source_width", value.asInstanceOf[js.Any])
   }
 }

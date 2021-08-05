@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSortDataOption extends StObject
 object XlSortDataOption {
   
-  @scala.inline
-  def xlSortNormal: `0` = 0.asInstanceOf[`0`]
+  inline def xlSortNormal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlSortTextAsNumbers: `1` = 1.asInstanceOf[`1`]
+  inline def xlSortTextAsNumbers: `1` = 1.asInstanceOf[`1`]
 }

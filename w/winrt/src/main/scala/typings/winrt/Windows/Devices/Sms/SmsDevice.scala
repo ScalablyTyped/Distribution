@@ -9,8 +9,7 @@ trait SmsDevice
      with ISmsDevice
 object SmsDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accountPhoneNumber: String,
     calculateLength: SmsTextMessage => SmsEncodedLength,
     cellularClass: CellularClass,

@@ -16,28 +16,21 @@ trait GoogleCloudDialogflowV2beta1IntentMessageMediaContent extends StObject {
 }
 object GoogleCloudDialogflowV2beta1IntentMessageMediaContent {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageMediaContent = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageMediaContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageMediaContent]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageMediaContentMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageMediaContent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageMediaContent](x: Self) {
     
-    @scala.inline
-    def setMediaObjects(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageMediaContentResponseMediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
+    inline def setMediaObjects(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageMediaContentResponseMediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
+    inline def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
     
-    @scala.inline
-    def setMediaObjectsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageMediaContentResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
+    inline def setMediaObjectsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageMediaContentResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
   }
 }

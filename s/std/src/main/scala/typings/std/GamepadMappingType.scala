@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GamepadMappingType extends StObject
 object GamepadMappingType {
   
-  @scala.inline
-  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
+  inline def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   
-  @scala.inline
-  def standard: typings.std.stdStrings.standard = "standard".asInstanceOf[typings.std.stdStrings.standard]
+  inline def standard: typings.std.stdStrings.standard = "standard".asInstanceOf[typings.std.stdStrings.standard]
 }

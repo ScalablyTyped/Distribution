@@ -36,8 +36,7 @@ object tiledrendering {
   }
   object XTiledRenderable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       paintTile: (js.Any, Double, Double, Double, Double, Double, Double) => Unit,
       queryInterface: `type` => js.Any,
@@ -47,11 +46,9 @@ object tiledrendering {
       __obj.asInstanceOf[XTiledRenderable]
     }
     
-    @scala.inline
-    implicit class XTiledRenderableMutableBuilder[Self <: XTiledRenderable] (val x: Self) extends AnyVal {
+    extension [Self <: XTiledRenderable](x: Self) {
       
-      @scala.inline
-      def setPaintTile(value: (js.Any, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "paintTile", js.Any.fromFunction7(value))
+      inline def setPaintTile(value: (js.Any, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "paintTile", js.Any.fromFunction7(value))
     }
   }
 }

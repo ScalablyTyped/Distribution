@@ -12,25 +12,19 @@ trait TokenResponse extends StObject {
 }
 object TokenResponse {
   
-  @scala.inline
-  def apply(): TokenResponse = {
+  inline def apply(): TokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenResponse]
   }
   
-  @scala.inline
-  implicit class TokenResponseMutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TokenResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

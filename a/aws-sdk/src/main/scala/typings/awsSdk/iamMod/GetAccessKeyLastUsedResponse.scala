@@ -18,25 +18,19 @@ trait GetAccessKeyLastUsedResponse extends StObject {
 }
 object GetAccessKeyLastUsedResponse {
   
-  @scala.inline
-  def apply(): GetAccessKeyLastUsedResponse = {
+  inline def apply(): GetAccessKeyLastUsedResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccessKeyLastUsedResponse]
   }
   
-  @scala.inline
-  implicit class GetAccessKeyLastUsedResponseMutableBuilder[Self <: GetAccessKeyLastUsedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessKeyLastUsedResponse](x: Self) {
     
-    @scala.inline
-    def setAccessKeyLastUsed(value: AccessKeyLastUsed): Self = StObject.set(x, "AccessKeyLastUsed", value.asInstanceOf[js.Any])
+    inline def setAccessKeyLastUsed(value: AccessKeyLastUsed): Self = StObject.set(x, "AccessKeyLastUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyLastUsedUndefined: Self = StObject.set(x, "AccessKeyLastUsed", js.undefined)
+    inline def setAccessKeyLastUsedUndefined: Self = StObject.set(x, "AccessKeyLastUsed", js.undefined)
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object createDirectoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: Path): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(path: Path): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

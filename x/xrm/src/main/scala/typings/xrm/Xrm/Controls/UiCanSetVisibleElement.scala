@@ -17,16 +17,13 @@ trait UiCanSetVisibleElement extends StObject {
 }
 object UiCanSetVisibleElement {
   
-  @scala.inline
-  def apply(setVisible: Boolean => Unit): UiCanSetVisibleElement = {
+  inline def apply(setVisible: Boolean => Unit): UiCanSetVisibleElement = {
     val __obj = js.Dynamic.literal(setVisible = js.Any.fromFunction1(setVisible))
     __obj.asInstanceOf[UiCanSetVisibleElement]
   }
   
-  @scala.inline
-  implicit class UiCanSetVisibleElementMutableBuilder[Self <: UiCanSetVisibleElement] (val x: Self) extends AnyVal {
+  extension [Self <: UiCanSetVisibleElement](x: Self) {
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

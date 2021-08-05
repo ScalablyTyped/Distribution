@@ -32,79 +32,55 @@ trait PartialStyleRulesListItemButton extends StObject {
 }
 object PartialStyleRulesListItemButton {
   
-  @scala.inline
-  def apply(): PartialStyleRulesListItemButton = {
+  inline def apply(): PartialStyleRulesListItemButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesListItemButton]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesListItemButtonMutableBuilder[Self <: PartialStyleRulesListItemButton] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesListItemButton](x: Self) {
     
-    @scala.inline
-    def setButton(value: CSSProperties): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: CSSProperties): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDefault(value: CSSProperties): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: CSSProperties): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setDense(value: CSSProperties): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: CSSProperties): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDivider(value: CSSProperties): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+    inline def setDivider(value: CSSProperties): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+    inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
     
-    @scala.inline
-    def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    inline def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
+    inline def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
-    @scala.inline
-    def setGutters(value: CSSProperties): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
+    inline def setGutters(value: CSSProperties): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
+    inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSecondaryAction(value: CSSProperties): Self = StObject.set(x, "secondaryAction", value.asInstanceOf[js.Any])
+    inline def setSecondaryAction(value: CSSProperties): Self = StObject.set(x, "secondaryAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryActionUndefined: Self = StObject.set(x, "secondaryAction", js.undefined)
+    inline def setSecondaryActionUndefined: Self = StObject.set(x, "secondaryAction", js.undefined)
     
-    @scala.inline
-    def setSelected(value: CSSProperties): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: CSSProperties): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition extends StObject
 object WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition {
   
-  @scala.inline
-  def pref: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pref = "pref".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pref]
+  inline def pref: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pref = "pref".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.pref]
   
-  @scala.inline
-  def purpose: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.purpose = "purpose".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.purpose]
+  inline def purpose: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.purpose = "purpose".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.purpose]
 }

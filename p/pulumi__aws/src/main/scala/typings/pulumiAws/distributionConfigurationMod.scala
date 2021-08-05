@@ -77,21 +77,16 @@ object distributionConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DistributionConfigurationState): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DistributionConfigurationState, opts: CustomResourceOptions): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
+    inline def get(name: String, id: Input[ID]): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
+    inline def get(name: String, id: Input[ID], state: DistributionConfigurationState): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
+    inline def get(name: String, id: Input[ID], state: DistributionConfigurationState, opts: CustomResourceOptions): DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DistributionConfiguration]
     
     /**
       * Returns true if the given object is an instance of DistributionConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean]
   }
   
   trait DistributionConfigurationArgs extends StObject {
@@ -122,8 +117,7 @@ object distributionConfigurationMod {
   }
   object DistributionConfigurationArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       distributions: Input[
           js.Array[
             Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]
@@ -134,17 +128,13 @@ object distributionConfigurationMod {
       __obj.asInstanceOf[DistributionConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class DistributionConfigurationArgsMutableBuilder[Self <: DistributionConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDistributions(
+      inline def setDistributions(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]
@@ -152,20 +142,15 @@ object distributionConfigurationMod {
             ]
       ): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributionsVarargs(value: Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+      inline def setDistributionsVarargs(value: Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]*): Self = StObject.set(x, "distributions", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -214,41 +199,30 @@ object distributionConfigurationMod {
   }
   object DistributionConfigurationState {
     
-    @scala.inline
-    def apply(): DistributionConfigurationState = {
+    inline def apply(): DistributionConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DistributionConfigurationState]
     }
     
-    @scala.inline
-    implicit class DistributionConfigurationStateMutableBuilder[Self <: DistributionConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionConfigurationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDateCreated(value: Input[String]): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: Input[String]): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
+      inline def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
       
-      @scala.inline
-      def setDateUpdated(value: Input[String]): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
+      inline def setDateUpdated(value: Input[String]): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUpdatedUndefined: Self = StObject.set(x, "dateUpdated", js.undefined)
+      inline def setDateUpdatedUndefined: Self = StObject.set(x, "dateUpdated", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDistributions(
+      inline def setDistributions(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]
@@ -256,23 +230,17 @@ object distributionConfigurationMod {
             ]
       ): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
+      inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
       
-      @scala.inline
-      def setDistributionsVarargs(value: Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+      inline def setDistributionsVarargs(value: Input[typings.pulumiAws.inputMod.imagebuilder.DistributionConfigurationDistribution]*): Self = StObject.set(x, "distributions", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

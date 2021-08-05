@@ -28,20 +28,17 @@ object dayPickerMod {
     @JSImport("react-day-picker/types/DayPicker", "default.DateUtils")
     @js.native
     def DateUtils: typings.reactDayPicker.dateUtilsMod.DateUtils = js.native
-    @scala.inline
-    def DateUtils_=(x: DateUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateUtils")(x.asInstanceOf[js.Any])
+    inline def DateUtils_=(x: DateUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateUtils")(x.asInstanceOf[js.Any])
     
     @JSImport("react-day-picker/types/DayPicker", "default.DayModifiers")
     @js.native
     def DayModifiers: typings.reactDayPicker.modifiersMod.DayModifiers = js.native
-    @scala.inline
-    def DayModifiers_=(x: DayModifiers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DayModifiers")(x.asInstanceOf[js.Any])
+    inline def DayModifiers_=(x: DayModifiers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DayModifiers")(x.asInstanceOf[js.Any])
     
     @JSImport("react-day-picker/types/DayPicker", "default.LocaleUtils")
     @js.native
     def LocaleUtils: typings.reactDayPicker.localeUtilsMod.LocaleUtils = js.native
-    @scala.inline
-    def LocaleUtils_=(x: LocaleUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocaleUtils")(x.asInstanceOf[js.Any])
+    inline def LocaleUtils_=(x: LocaleUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocaleUtils")(x.asInstanceOf[js.Any])
     
     @JSImport("react-day-picker/types/DayPicker", "default.Modifiers")
     @js.native
@@ -50,17 +47,14 @@ object dayPickerMod {
     @JSImport("react-day-picker/types/DayPicker", "default.ModifiersUtils")
     @js.native
     def ModifiersUtils: typings.reactDayPicker.modifiersMod.ModifiersUtils = js.native
-    @scala.inline
-    def ModifiersUtils_=(x: ModifiersUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModifiersUtils")(x.asInstanceOf[js.Any])
+    inline def ModifiersUtils_=(x: ModifiersUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModifiersUtils")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Modifiers_=(x: Modifiers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Modifiers")(x.asInstanceOf[js.Any])
+    inline def Modifiers_=(x: Modifiers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Modifiers")(x.asInstanceOf[js.Any])
     
     @JSImport("react-day-picker/types/DayPicker", "default.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
   
   @js.native

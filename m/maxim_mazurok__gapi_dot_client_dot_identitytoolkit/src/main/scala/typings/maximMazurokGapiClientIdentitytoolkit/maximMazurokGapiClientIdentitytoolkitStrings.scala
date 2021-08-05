@@ -8,16 +8,13 @@ object maximMazurokGapiClientIdentitytoolkitStrings {
   
   @js.native
   sealed trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends StObject
-  @scala.inline
-  def IdentitytoolkitRelyingpartyCreateAuthUriRequest: IdentitytoolkitRelyingpartyCreateAuthUriRequest = "IdentitytoolkitRelyingpartyCreateAuthUriRequest".asInstanceOf[IdentitytoolkitRelyingpartyCreateAuthUriRequest]
+  inline def IdentitytoolkitRelyingpartyCreateAuthUriRequest: IdentitytoolkitRelyingpartyCreateAuthUriRequest = "IdentitytoolkitRelyingpartyCreateAuthUriRequest".asInstanceOf[IdentitytoolkitRelyingpartyCreateAuthUriRequest]
   
   @js.native
   sealed trait identitytoolkit extends StObject
-  @scala.inline
-  def identitytoolkit: identitytoolkit = "identitytoolkit".asInstanceOf[identitytoolkit]
+  inline def identitytoolkit: identitytoolkit = "identitytoolkit".asInstanceOf[identitytoolkit]
   
   @js.native
   sealed trait v3 extends StObject
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
+  inline def v3: v3 = "v3".asInstanceOf[v3]
 }

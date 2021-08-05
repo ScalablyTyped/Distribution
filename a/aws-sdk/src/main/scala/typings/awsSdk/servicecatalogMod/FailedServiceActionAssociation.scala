@@ -33,43 +33,31 @@ trait FailedServiceActionAssociation extends StObject {
 }
 object FailedServiceActionAssociation {
   
-  @scala.inline
-  def apply(): FailedServiceActionAssociation = {
+  inline def apply(): FailedServiceActionAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedServiceActionAssociation]
   }
   
-  @scala.inline
-  implicit class FailedServiceActionAssociationMutableBuilder[Self <: FailedServiceActionAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: FailedServiceActionAssociation](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ServiceActionAssociationErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ServiceActionAssociationErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ServiceActionAssociationErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ServiceActionAssociationErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactIdUndefined: Self = StObject.set(x, "ProvisioningArtifactId", js.undefined)
+    inline def setProvisioningArtifactIdUndefined: Self = StObject.set(x, "ProvisioningArtifactId", js.undefined)
     
-    @scala.inline
-    def setServiceActionId(value: Id): Self = StObject.set(x, "ServiceActionId", value.asInstanceOf[js.Any])
+    inline def setServiceActionId(value: Id): Self = StObject.set(x, "ServiceActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceActionIdUndefined: Self = StObject.set(x, "ServiceActionId", js.undefined)
+    inline def setServiceActionIdUndefined: Self = StObject.set(x, "ServiceActionId", js.undefined)
   }
 }

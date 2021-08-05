@@ -16,11 +16,11 @@ object momentumOptimizerMod {
     def this(learningRate: Double, momentum: Double) = this()
     def this(learningRate: Double, momentum: Double, useNesterov: Boolean) = this()
     
-    var accumulations: js.Any = js.native
+    /* private */ var accumulations: js.Any = js.native
     
-    var m: js.Any = js.native
+    /* private */ var m: js.Any = js.native
     
-    var momentum: js.Any = js.native
+    /* private */ var momentum: js.Any = js.native
     
     /**
       * Sets the momentum of the optimizer.
@@ -29,7 +29,7 @@ object momentumOptimizerMod {
       */
     def setMomentum(momentum: Double): Unit = js.native
     
-    var useNesterov: js.Any = js.native
+    /* private */ var useNesterov: js.Any = js.native
   }
   /* static members */
   object MomentumOptimizer {
@@ -42,11 +42,9 @@ object momentumOptimizerMod {
     @JSImport("@tensorflow/tfjs-core/dist/optimizers/momentum_optimizer", "MomentumOptimizer.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

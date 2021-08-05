@@ -176,163 +176,111 @@ trait IgZoombar
 }
 object IgZoombar {
   
-  @scala.inline
-  def apply(): IgZoombar = {
+  inline def apply(): IgZoombar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgZoombar]
   }
   
-  @scala.inline
-  implicit class IgZoombarMutableBuilder[Self <: IgZoombar] (val x: Self) extends AnyVal {
+  extension [Self <: IgZoombar](x: Self) {
     
-    @scala.inline
-    def setClone_(value: String | js.Object): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+    inline def setClone_(value: String | js.Object): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    @scala.inline
-    def setDefaultZoomWindow(value: IgZoombarDefaultZoomWindow): Self = StObject.set(x, "defaultZoomWindow", value.asInstanceOf[js.Any])
+    inline def setDefaultZoomWindow(value: IgZoombarDefaultZoomWindow): Self = StObject.set(x, "defaultZoomWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultZoomWindowUndefined: Self = StObject.set(x, "defaultZoomWindow", js.undefined)
+    inline def setDefaultZoomWindowUndefined: Self = StObject.set(x, "defaultZoomWindow", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHoverStyleAnimationDuration(value: Double): Self = StObject.set(x, "hoverStyleAnimationDuration", value.asInstanceOf[js.Any])
+    inline def setHoverStyleAnimationDuration(value: Double): Self = StObject.set(x, "hoverStyleAnimationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverStyleAnimationDurationUndefined: Self = StObject.set(x, "hoverStyleAnimationDuration", js.undefined)
+    inline def setHoverStyleAnimationDurationUndefined: Self = StObject.set(x, "hoverStyleAnimationDuration", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setProvider(value: js.Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: js.Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderCreated(value: (/* event */ Event, /* ui */ ProviderCreatedEventUIParam) => Unit): Self = StObject.set(x, "providerCreated", js.Any.fromFunction2(value))
+    inline def setProviderCreated(value: (/* event */ Event, /* ui */ ProviderCreatedEventUIParam) => Unit): Self = StObject.set(x, "providerCreated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProviderCreatedUndefined: Self = StObject.set(x, "providerCreated", js.undefined)
+    inline def setProviderCreatedUndefined: Self = StObject.set(x, "providerCreated", js.undefined)
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String | js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String | js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWindowDragEnded(value: (/* event */ Event, /* ui */ WindowDragEndedEventUIParam) => Unit): Self = StObject.set(x, "windowDragEnded", js.Any.fromFunction2(value))
+    inline def setWindowDragEnded(value: (/* event */ Event, /* ui */ WindowDragEndedEventUIParam) => Unit): Self = StObject.set(x, "windowDragEnded", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWindowDragEndedUndefined: Self = StObject.set(x, "windowDragEnded", js.undefined)
+    inline def setWindowDragEndedUndefined: Self = StObject.set(x, "windowDragEnded", js.undefined)
     
-    @scala.inline
-    def setWindowDragEnding(value: (/* event */ Event, /* ui */ WindowDragEndingEventUIParam) => Unit): Self = StObject.set(x, "windowDragEnding", js.Any.fromFunction2(value))
+    inline def setWindowDragEnding(value: (/* event */ Event, /* ui */ WindowDragEndingEventUIParam) => Unit): Self = StObject.set(x, "windowDragEnding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWindowDragEndingUndefined: Self = StObject.set(x, "windowDragEnding", js.undefined)
+    inline def setWindowDragEndingUndefined: Self = StObject.set(x, "windowDragEnding", js.undefined)
     
-    @scala.inline
-    def setWindowDragStarted(value: (/* event */ Event, /* ui */ WindowDragStartedEventUIParam) => Unit): Self = StObject.set(x, "windowDragStarted", js.Any.fromFunction2(value))
+    inline def setWindowDragStarted(value: (/* event */ Event, /* ui */ WindowDragStartedEventUIParam) => Unit): Self = StObject.set(x, "windowDragStarted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWindowDragStartedUndefined: Self = StObject.set(x, "windowDragStarted", js.undefined)
+    inline def setWindowDragStartedUndefined: Self = StObject.set(x, "windowDragStarted", js.undefined)
     
-    @scala.inline
-    def setWindowDragStarting(value: (/* event */ Event, /* ui */ WindowDragStartingEventUIParam) => Unit): Self = StObject.set(x, "windowDragStarting", js.Any.fromFunction2(value))
+    inline def setWindowDragStarting(value: (/* event */ Event, /* ui */ WindowDragStartingEventUIParam) => Unit): Self = StObject.set(x, "windowDragStarting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWindowDragStartingUndefined: Self = StObject.set(x, "windowDragStarting", js.undefined)
+    inline def setWindowDragStartingUndefined: Self = StObject.set(x, "windowDragStarting", js.undefined)
     
-    @scala.inline
-    def setWindowDragging(value: (/* event */ Event, /* ui */ WindowDraggingEventUIParam) => Unit): Self = StObject.set(x, "windowDragging", js.Any.fromFunction2(value))
+    inline def setWindowDragging(value: (/* event */ Event, /* ui */ WindowDraggingEventUIParam) => Unit): Self = StObject.set(x, "windowDragging", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWindowDraggingUndefined: Self = StObject.set(x, "windowDragging", js.undefined)
+    inline def setWindowDraggingUndefined: Self = StObject.set(x, "windowDragging", js.undefined)
     
-    @scala.inline
-    def setWindowPanDuration(value: Double): Self = StObject.set(x, "windowPanDuration", value.asInstanceOf[js.Any])
+    inline def setWindowPanDuration(value: Double): Self = StObject.set(x, "windowPanDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowPanDurationUndefined: Self = StObject.set(x, "windowPanDuration", js.undefined)
+    inline def setWindowPanDurationUndefined: Self = StObject.set(x, "windowPanDuration", js.undefined)
     
-    @scala.inline
-    def setWindowResized(value: (/* event */ Event, /* ui */ WindowResizedEventUIParam) => Unit): Self = StObject.set(x, "windowResized", js.Any.fromFunction2(value))
+    inline def setWindowResized(value: (/* event */ Event, /* ui */ WindowResizedEventUIParam) => Unit): Self = StObject.set(x, "windowResized", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWindowResizedUndefined: Self = StObject.set(x, "windowResized", js.undefined)
+    inline def setWindowResizedUndefined: Self = StObject.set(x, "windowResized", js.undefined)
     
-    @scala.inline
-    def setWindowResizing(value: (/* event */ Event, /* ui */ WindowResizingEventUIParam) => Unit): Self = StObject.set(x, "windowResizing", js.Any.fromFunction2(value))
+    inline def setWindowResizing(value: (/* event */ Event, /* ui */ WindowResizingEventUIParam) => Unit): Self = StObject.set(x, "windowResizing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWindowResizingUndefined: Self = StObject.set(x, "windowResizing", js.undefined)
+    inline def setWindowResizingUndefined: Self = StObject.set(x, "windowResizing", js.undefined)
     
-    @scala.inline
-    def setZoomAction(value: String): Self = StObject.set(x, "zoomAction", value.asInstanceOf[js.Any])
+    inline def setZoomAction(value: String): Self = StObject.set(x, "zoomAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomActionUndefined: Self = StObject.set(x, "zoomAction", js.undefined)
+    inline def setZoomActionUndefined: Self = StObject.set(x, "zoomAction", js.undefined)
     
-    @scala.inline
-    def setZoomChanged(value: (/* event */ Event, /* ui */ ZoomChangedEventUIParam) => Unit): Self = StObject.set(x, "zoomChanged", js.Any.fromFunction2(value))
+    inline def setZoomChanged(value: (/* event */ Event, /* ui */ ZoomChangedEventUIParam) => Unit): Self = StObject.set(x, "zoomChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setZoomChangedUndefined: Self = StObject.set(x, "zoomChanged", js.undefined)
+    inline def setZoomChangedUndefined: Self = StObject.set(x, "zoomChanged", js.undefined)
     
-    @scala.inline
-    def setZoomChanging(value: (/* event */ Event, /* ui */ ZoomChangingEventUIParam) => Unit): Self = StObject.set(x, "zoomChanging", js.Any.fromFunction2(value))
+    inline def setZoomChanging(value: (/* event */ Event, /* ui */ ZoomChangingEventUIParam) => Unit): Self = StObject.set(x, "zoomChanging", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setZoomChangingUndefined: Self = StObject.set(x, "zoomChanging", js.undefined)
+    inline def setZoomChangingUndefined: Self = StObject.set(x, "zoomChanging", js.undefined)
     
-    @scala.inline
-    def setZoomWindowMinWidth(value: Double): Self = StObject.set(x, "zoomWindowMinWidth", value.asInstanceOf[js.Any])
+    inline def setZoomWindowMinWidth(value: Double): Self = StObject.set(x, "zoomWindowMinWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomWindowMinWidthUndefined: Self = StObject.set(x, "zoomWindowMinWidth", js.undefined)
+    inline def setZoomWindowMinWidthUndefined: Self = StObject.set(x, "zoomWindowMinWidth", js.undefined)
     
-    @scala.inline
-    def setZoomWindowMoveDistance(value: Double): Self = StObject.set(x, "zoomWindowMoveDistance", value.asInstanceOf[js.Any])
+    inline def setZoomWindowMoveDistance(value: Double): Self = StObject.set(x, "zoomWindowMoveDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomWindowMoveDistanceUndefined: Self = StObject.set(x, "zoomWindowMoveDistance", js.undefined)
+    inline def setZoomWindowMoveDistanceUndefined: Self = StObject.set(x, "zoomWindowMoveDistance", js.undefined)
   }
 }

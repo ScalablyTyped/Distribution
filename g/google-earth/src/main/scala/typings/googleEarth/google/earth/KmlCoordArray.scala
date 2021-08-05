@@ -68,8 +68,7 @@ trait KmlCoordArray extends StObject {
 }
 object KmlCoordArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     get: Double => KmlCoord,
     getLength: () => Double,
@@ -87,43 +86,30 @@ object KmlCoordArray {
     __obj.asInstanceOf[KmlCoordArray]
   }
   
-  @scala.inline
-  implicit class KmlCoordArrayMutableBuilder[Self <: KmlCoordArray] (val x: Self) extends AnyVal {
+  extension [Self <: KmlCoordArray](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: Double => KmlCoord): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => KmlCoord): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPop(value: () => KmlCoord): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    inline def setPop(value: () => KmlCoord): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: KmlCoord => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: KmlCoord => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPushLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "pushLatLngAlt", js.Any.fromFunction3(value))
+    inline def setPushLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "pushLatLngAlt", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReverse(value: () => Unit): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+    inline def setReverse(value: () => Unit): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, KmlCoord) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (Double, KmlCoord) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLatLngAlt(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setLatLngAlt", js.Any.fromFunction4(value))
+    inline def setSetLatLngAlt(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setLatLngAlt", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setShift(value: () => KmlCoord): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+    inline def setShift(value: () => KmlCoord): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnshift(value: KmlCoord => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+    inline def setUnshift(value: KmlCoord => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnshiftLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "unshiftLatLngAlt", js.Any.fromFunction3(value))
+    inline def setUnshiftLatLngAlt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "unshiftLatLngAlt", js.Any.fromFunction3(value))
   }
 }

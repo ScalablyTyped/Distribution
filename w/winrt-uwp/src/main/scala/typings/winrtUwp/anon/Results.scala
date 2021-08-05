@@ -14,19 +14,15 @@ trait Results extends StObject {
 }
 object Results {
   
-  @scala.inline
-  def apply(results: Vector3, returnValue: IPromiseWithIAsyncAction): Results = {
+  inline def apply(results: Vector3, returnValue: IPromiseWithIAsyncAction): Results = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results]
   }
   
-  @scala.inline
-  implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+  extension [Self <: Results](x: Self) {
     
-    @scala.inline
-    def setResults(value: Vector3): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Vector3): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: IPromiseWithIAsyncAction): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: IPromiseWithIAsyncAction): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

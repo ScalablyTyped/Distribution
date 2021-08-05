@@ -30,23 +30,17 @@ object createFormattedComponentMod {
   @js.native
   val FormattedNumberParts: FC[FormatNumberOptions & Value] = js.native
   
-  @scala.inline
-  def createFormattedComponent_formatDate(name: formatDate): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
+  inline def createFormattedComponent_formatDate(name: formatDate): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
   
-  @scala.inline
-  def createFormattedComponent_formatDisplayName(name: formatDisplayName): FC[FormatDisplayNameOptions & `3`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDisplayNameOptions & `3`]]
+  inline def createFormattedComponent_formatDisplayName(name: formatDisplayName): FC[FormatDisplayNameOptions & `3`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDisplayNameOptions & `3`]]
   
-  @scala.inline
-  def createFormattedComponent_formatList(name: formatList): FC[FormatListOptions & `2`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatListOptions & `2`]]
+  inline def createFormattedComponent_formatList(name: formatList): FC[FormatListOptions & `2`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatListOptions & `2`]]
   
-  @scala.inline
-  def createFormattedComponent_formatNumber(name: formatNumber): FC[FormatNumberOptions & `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatNumberOptions & `1`]]
+  inline def createFormattedComponent_formatNumber(name: formatNumber): FC[FormatNumberOptions & `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatNumberOptions & `1`]]
   
-  @scala.inline
-  def createFormattedComponent_formatTime(name: formatTime): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
+  inline def createFormattedComponent_formatTime(name: formatTime): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
   
-  @scala.inline
-  def createFormattedDateTimePartsComponent[Name /* <: formatDate | formatTime */](name: Name): FC[
+  inline def createFormattedDateTimePartsComponent[Name /* <: formatDate | formatTime */](name: Name): FC[
     (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/lib/src/components/createFormattedComponent.Formatter[Name] */ js.Any) & ChildrenValue[Name]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedDateTimePartsComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[
     (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/lib/src/components/createFormattedComponent.Formatter[Name] */ js.Any) & ChildrenValue[Name]
@@ -66,8 +60,7 @@ object createFormattedComponentMod {
   }
   object Formatter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       formatDate: FormatDateOptions,
       formatDisplayName: FormatDisplayNameOptions,
       formatList: FormatListOptions,
@@ -78,23 +71,17 @@ object createFormattedComponentMod {
       __obj.asInstanceOf[Formatter]
     }
     
-    @scala.inline
-    implicit class FormatterMutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
+    extension [Self <: Formatter](x: Self) {
       
-      @scala.inline
-      def setFormatDate(value: FormatDateOptions): Self = StObject.set(x, "formatDate", value.asInstanceOf[js.Any])
+      inline def setFormatDate(value: FormatDateOptions): Self = StObject.set(x, "formatDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatDisplayName(value: FormatDisplayNameOptions): Self = StObject.set(x, "formatDisplayName", value.asInstanceOf[js.Any])
+      inline def setFormatDisplayName(value: FormatDisplayNameOptions): Self = StObject.set(x, "formatDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatList(value: FormatListOptions): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
+      inline def setFormatList(value: FormatListOptions): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatNumber(value: FormatNumberOptions): Self = StObject.set(x, "formatNumber", value.asInstanceOf[js.Any])
+      inline def setFormatNumber(value: FormatNumberOptions): Self = StObject.set(x, "formatNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatTime(value: FormatDateOptions): Self = StObject.set(x, "formatTime", value.asInstanceOf[js.Any])
+      inline def setFormatTime(value: FormatDateOptions): Self = StObject.set(x, "formatTime", value.asInstanceOf[js.Any])
     }
   }
 }

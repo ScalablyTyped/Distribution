@@ -23,22 +23,16 @@ object OpenMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL: `0` = 0.asInstanceOf[`0`]
+    inline def ALL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def DOCUMENT: `2` = 2.asInstanceOf[`2`]
+    inline def DOCUMENT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def DOCUMENTS: `3` = 3.asInstanceOf[`3`]
+    inline def DOCUMENTS: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DOCUMENT_SHARE_DENY_NONE: `4` = 4.asInstanceOf[`4`]
+    inline def DOCUMENT_SHARE_DENY_NONE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def DOCUMENT_SHARE_DENY_WRITE: `5` = 5.asInstanceOf[`5`]
+    inline def DOCUMENT_SHARE_DENY_WRITE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def FOLDERS: `1` = 1.asInstanceOf[`1`]
+    inline def FOLDERS: `1` = 1.asInstanceOf[`1`]
   }
 }

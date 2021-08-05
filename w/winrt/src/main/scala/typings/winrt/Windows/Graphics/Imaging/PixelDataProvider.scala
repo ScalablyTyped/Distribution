@@ -10,8 +10,7 @@ trait PixelDataProvider
      with IPixelDataProvider
 object PixelDataProvider {
   
-  @scala.inline
-  def apply(detachPixelData: () => Uint8Array): PixelDataProvider = {
+  inline def apply(detachPixelData: () => Uint8Array): PixelDataProvider = {
     val __obj = js.Dynamic.literal(detachPixelData = js.Any.fromFunction0(detachPixelData))
     __obj.asInstanceOf[PixelDataProvider]
   }

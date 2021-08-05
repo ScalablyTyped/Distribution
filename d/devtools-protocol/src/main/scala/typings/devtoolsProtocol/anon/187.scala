@@ -13,22 +13,17 @@ trait `187` extends StObject {
 }
 object `187` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[TrackIndexedDBForOriginRequest], returnType: Unit): `187` = {
+  inline def apply(paramsType: js.Array[TrackIndexedDBForOriginRequest], returnType: Unit): `187` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`187`]
   }
   
-  @scala.inline
-  implicit class `187MutableBuilder`[Self <: `187`] (val x: Self) extends AnyVal {
+  extension [Self <: `187`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[TrackIndexedDBForOriginRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[TrackIndexedDBForOriginRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: TrackIndexedDBForOriginRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: TrackIndexedDBForOriginRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

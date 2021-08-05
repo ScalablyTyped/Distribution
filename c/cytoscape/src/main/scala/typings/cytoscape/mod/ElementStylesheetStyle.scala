@@ -18,16 +18,13 @@ trait ElementStylesheetStyle
 }
 object ElementStylesheetStyle {
   
-  @scala.inline
-  def apply(json: () => js.Any, selector: String, style: Node | Edge | typings.cytoscape.mod.Css.Core): ElementStylesheetStyle = {
+  inline def apply(json: () => js.Any, selector: String, style: Node | Edge | typings.cytoscape.mod.Css.Core): ElementStylesheetStyle = {
     val __obj = js.Dynamic.literal(json = js.Any.fromFunction0(json), selector = selector.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementStylesheetStyle]
   }
   
-  @scala.inline
-  implicit class ElementStylesheetStyleMutableBuilder[Self <: ElementStylesheetStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ElementStylesheetStyle](x: Self) {
     
-    @scala.inline
-    def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
   }
 }

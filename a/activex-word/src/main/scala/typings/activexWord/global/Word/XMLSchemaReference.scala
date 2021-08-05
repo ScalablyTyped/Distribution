@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XMLSchemaReference")
 @js.native
-class XMLSchemaReference protected ()
+/* private */ class XMLSchemaReference ()
   extends StObject
      with typings.activexWord.Word.XMLSchemaReference {
   
@@ -31,7 +31,7 @@ class XMLSchemaReference protected ()
   /* CompleteClass */
   override def Reload(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.XMLSchemaReference_typekey")
   var WordDotXMLSchemaReference_typekey: typings.activexWord.Word.XMLSchemaReference = js.native
 }

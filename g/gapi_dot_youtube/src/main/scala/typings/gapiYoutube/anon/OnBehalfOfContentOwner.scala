@@ -18,19 +18,15 @@ trait OnBehalfOfContentOwner extends StObject {
 }
 object OnBehalfOfContentOwner {
   
-  @scala.inline
-  def apply(RequestBody: String, onBehalfOfContentOwner: String): OnBehalfOfContentOwner = {
+  inline def apply(RequestBody: String, onBehalfOfContentOwner: String): OnBehalfOfContentOwner = {
     val __obj = js.Dynamic.literal(RequestBody = RequestBody.asInstanceOf[js.Any], onBehalfOfContentOwner = onBehalfOfContentOwner.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBehalfOfContentOwner]
   }
   
-  @scala.inline
-  implicit class OnBehalfOfContentOwnerMutableBuilder[Self <: OnBehalfOfContentOwner] (val x: Self) extends AnyVal {
+  extension [Self <: OnBehalfOfContentOwner](x: Self) {
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
   }
 }

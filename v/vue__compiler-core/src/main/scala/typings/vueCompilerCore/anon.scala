@@ -74,83 +74,58 @@ object anon {
   }
   object CodegenOptionsonContextCr {
     
-    @scala.inline
-    def apply(): CodegenOptionsonContextCr = {
+    inline def apply(): CodegenOptionsonContextCr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CodegenOptionsonContextCr]
     }
     
-    @scala.inline
-    implicit class CodegenOptionsonContextCrMutableBuilder[Self <: CodegenOptionsonContextCr] (val x: Self) extends AnyVal {
+    extension [Self <: CodegenOptionsonContextCr](x: Self) {
       
-      @scala.inline
-      def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
+      inline def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingMetadataUndefined: Self = StObject.set(x, "bindingMetadata", js.undefined)
+      inline def setBindingMetadataUndefined: Self = StObject.set(x, "bindingMetadata", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnContextCreated(value: /* context */ CodegenContext => Unit): Self = StObject.set(x, "onContextCreated", js.Any.fromFunction1(value))
+      inline def setOnContextCreated(value: /* context */ CodegenContext => Unit): Self = StObject.set(x, "onContextCreated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextCreatedUndefined: Self = StObject.set(x, "onContextCreated", js.undefined)
+      inline def setOnContextCreatedUndefined: Self = StObject.set(x, "onContextCreated", js.undefined)
       
-      @scala.inline
-      def setOptimizeImports(value: Boolean): Self = StObject.set(x, "optimizeImports", value.asInstanceOf[js.Any])
+      inline def setOptimizeImports(value: Boolean): Self = StObject.set(x, "optimizeImports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizeImportsUndefined: Self = StObject.set(x, "optimizeImports", js.undefined)
+      inline def setOptimizeImportsUndefined: Self = StObject.set(x, "optimizeImports", js.undefined)
       
-      @scala.inline
-      def setPrefixIdentifiers(value: Boolean): Self = StObject.set(x, "prefixIdentifiers", value.asInstanceOf[js.Any])
+      inline def setPrefixIdentifiers(value: Boolean): Self = StObject.set(x, "prefixIdentifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixIdentifiersUndefined: Self = StObject.set(x, "prefixIdentifiers", js.undefined)
+      inline def setPrefixIdentifiersUndefined: Self = StObject.set(x, "prefixIdentifiers", js.undefined)
       
-      @scala.inline
-      def setRuntimeGlobalName(value: String): Self = StObject.set(x, "runtimeGlobalName", value.asInstanceOf[js.Any])
+      inline def setRuntimeGlobalName(value: String): Self = StObject.set(x, "runtimeGlobalName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeGlobalNameUndefined: Self = StObject.set(x, "runtimeGlobalName", js.undefined)
+      inline def setRuntimeGlobalNameUndefined: Self = StObject.set(x, "runtimeGlobalName", js.undefined)
       
-      @scala.inline
-      def setRuntimeModuleName(value: String): Self = StObject.set(x, "runtimeModuleName", value.asInstanceOf[js.Any])
+      inline def setRuntimeModuleName(value: String): Self = StObject.set(x, "runtimeModuleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeModuleNameUndefined: Self = StObject.set(x, "runtimeModuleName", js.undefined)
+      inline def setRuntimeModuleNameUndefined: Self = StObject.set(x, "runtimeModuleName", js.undefined)
       
-      @scala.inline
-      def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
+      inline def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeIdNull: Self = StObject.set(x, "scopeId", null)
+      inline def setScopeIdNull: Self = StObject.set(x, "scopeId", null)
       
-      @scala.inline
-      def setScopeIdUndefined: Self = StObject.set(x, "scopeId", js.undefined)
+      inline def setScopeIdUndefined: Self = StObject.set(x, "scopeId", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+      inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
+      inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     }
   }
   
@@ -166,35 +141,26 @@ object anon {
   }
   object Directives {
     
-    @scala.inline
-    def apply(directives: js.Array[DirectiveNode], dynamicPropNames: js.Array[String], patchFlag: Double): Directives = {
+    inline def apply(directives: js.Array[DirectiveNode], dynamicPropNames: js.Array[String], patchFlag: Double): Directives = {
       val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], dynamicPropNames = dynamicPropNames.asInstanceOf[js.Any], patchFlag = patchFlag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Directives]
     }
     
-    @scala.inline
-    implicit class DirectivesMutableBuilder[Self <: Directives] (val x: Self) extends AnyVal {
+    extension [Self <: Directives](x: Self) {
       
-      @scala.inline
-      def setDirectives(value: js.Array[DirectiveNode]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      inline def setDirectives(value: js.Array[DirectiveNode]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectivesVarargs(value: DirectiveNode*): Self = StObject.set(x, "directives", js.Array(value :_*))
+      inline def setDirectivesVarargs(value: DirectiveNode*): Self = StObject.set(x, "directives", js.Array(value :_*))
       
-      @scala.inline
-      def setDynamicPropNames(value: js.Array[String]): Self = StObject.set(x, "dynamicPropNames", value.asInstanceOf[js.Any])
+      inline def setDynamicPropNames(value: js.Array[String]): Self = StObject.set(x, "dynamicPropNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicPropNamesVarargs(value: String*): Self = StObject.set(x, "dynamicPropNames", js.Array(value :_*))
+      inline def setDynamicPropNamesVarargs(value: String*): Self = StObject.set(x, "dynamicPropNames", js.Array(value :_*))
       
-      @scala.inline
-      def setPatchFlag(value: Double): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
+      inline def setPatchFlag(value: Double): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: PropsExpression): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: PropsExpression): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   
@@ -206,20 +172,16 @@ object anon {
   }
   object HasDynamicSlots {
     
-    @scala.inline
-    def apply(hasDynamicSlots: Boolean, slots: SlotsExpression): HasDynamicSlots = {
+    inline def apply(hasDynamicSlots: Boolean, slots: SlotsExpression): HasDynamicSlots = {
       val __obj = js.Dynamic.literal(hasDynamicSlots = hasDynamicSlots.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasDynamicSlots]
     }
     
-    @scala.inline
-    implicit class HasDynamicSlotsMutableBuilder[Self <: HasDynamicSlots] (val x: Self) extends AnyVal {
+    extension [Self <: HasDynamicSlots](x: Self) {
       
-      @scala.inline
-      def setHasDynamicSlots(value: Boolean): Self = StObject.set(x, "hasDynamicSlots", value.asInstanceOf[js.Any])
+      inline def setHasDynamicSlots(value: Boolean): Self = StObject.set(x, "hasDynamicSlots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlots(value: SlotsExpression): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: SlotsExpression): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,26 +197,20 @@ object anon {
   }
   object VFor {
     
-    @scala.inline
-    def apply(vFor: Double, vOnce: Double, vPre: Double, vSlot: Double): VFor = {
+    inline def apply(vFor: Double, vOnce: Double, vPre: Double, vSlot: Double): VFor = {
       val __obj = js.Dynamic.literal(vFor = vFor.asInstanceOf[js.Any], vOnce = vOnce.asInstanceOf[js.Any], vPre = vPre.asInstanceOf[js.Any], vSlot = vSlot.asInstanceOf[js.Any])
       __obj.asInstanceOf[VFor]
     }
     
-    @scala.inline
-    implicit class VForMutableBuilder[Self <: VFor] (val x: Self) extends AnyVal {
+    extension [Self <: VFor](x: Self) {
       
-      @scala.inline
-      def setVFor(value: Double): Self = StObject.set(x, "vFor", value.asInstanceOf[js.Any])
+      inline def setVFor(value: Double): Self = StObject.set(x, "vFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVOnce(value: Double): Self = StObject.set(x, "vOnce", value.asInstanceOf[js.Any])
+      inline def setVOnce(value: Double): Self = StObject.set(x, "vOnce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVPre(value: Double): Self = StObject.set(x, "vPre", value.asInstanceOf[js.Any])
+      inline def setVPre(value: Double): Self = StObject.set(x, "vPre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVSlot(value: Double): Self = StObject.set(x, "vSlot", value.asInstanceOf[js.Any])
+      inline def setVSlot(value: Double): Self = StObject.set(x, "vSlot", value.asInstanceOf[js.Any])
     }
   }
 }

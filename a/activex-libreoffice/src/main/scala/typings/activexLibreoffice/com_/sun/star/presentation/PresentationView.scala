@@ -46,8 +46,7 @@ trait PresentationView
 }
 object PresentationView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: XDrawPage,
     Frame: XFrame,
     Model: XModel,
@@ -115,10 +114,8 @@ object PresentationView {
     __obj.asInstanceOf[PresentationView]
   }
   
-  @scala.inline
-  implicit class PresentationViewMutableBuilder[Self <: PresentationView] (val x: Self) extends AnyVal {
+  extension [Self <: PresentationView](x: Self) {
     
-    @scala.inline
-    def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
+    inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }
 }

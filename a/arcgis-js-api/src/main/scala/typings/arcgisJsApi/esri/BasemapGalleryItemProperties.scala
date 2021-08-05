@@ -22,25 +22,19 @@ trait BasemapGalleryItemProperties extends StObject {
 }
 object BasemapGalleryItemProperties {
   
-  @scala.inline
-  def apply(): BasemapGalleryItemProperties = {
+  inline def apply(): BasemapGalleryItemProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasemapGalleryItemProperties]
   }
   
-  @scala.inline
-  implicit class BasemapGalleryItemPropertiesMutableBuilder[Self <: BasemapGalleryItemProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapGalleryItemProperties](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: BasemapProperties): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: BasemapProperties): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

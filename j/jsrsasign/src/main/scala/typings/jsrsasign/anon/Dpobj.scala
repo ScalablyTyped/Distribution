@@ -11,16 +11,13 @@ trait Dpobj extends StObject {
 }
 object Dpobj {
   
-  @scala.inline
-  def apply(dpobj: ASN1Object): Dpobj = {
+  inline def apply(dpobj: ASN1Object): Dpobj = {
     val __obj = js.Dynamic.literal(dpobj = dpobj.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dpobj]
   }
   
-  @scala.inline
-  implicit class DpobjMutableBuilder[Self <: Dpobj] (val x: Self) extends AnyVal {
+  extension [Self <: Dpobj](x: Self) {
     
-    @scala.inline
-    def setDpobj(value: ASN1Object): Self = StObject.set(x, "dpobj", value.asInstanceOf[js.Any])
+    inline def setDpobj(value: ASN1Object): Self = StObject.set(x, "dpobj", value.asInstanceOf[js.Any])
   }
 }

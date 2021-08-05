@@ -23,25 +23,19 @@ trait GetScriptDagEdge extends StObject {
 }
 object GetScriptDagEdge {
   
-  @scala.inline
-  def apply(source: String, target: String): GetScriptDagEdge = {
+  inline def apply(source: String, target: String): GetScriptDagEdge = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptDagEdge]
   }
   
-  @scala.inline
-  implicit class GetScriptDagEdgeMutableBuilder[Self <: GetScriptDagEdge] (val x: Self) extends AnyVal {
+  extension [Self <: GetScriptDagEdge](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetParameter(value: String): Self = StObject.set(x, "targetParameter", value.asInstanceOf[js.Any])
+    inline def setTargetParameter(value: String): Self = StObject.set(x, "targetParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetParameterUndefined: Self = StObject.set(x, "targetParameter", js.undefined)
+    inline def setTargetParameterUndefined: Self = StObject.set(x, "targetParameter", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait ParametersRateLimitGetEndpoint extends StObject {
 }
 object ParametersRateLimitGetEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RateLimitGetEndpoint,
     request: RateLimitGetRequestOptions,
     response: OctokitResponse[RateLimitGetResponseData]
@@ -28,16 +27,12 @@ object ParametersRateLimitGetEndpoint {
     __obj.asInstanceOf[ParametersRateLimitGetEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersRateLimitGetEndpointMutableBuilder[Self <: ParametersRateLimitGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersRateLimitGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RateLimitGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RateLimitGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RateLimitGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RateLimitGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[RateLimitGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[RateLimitGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait RemoveResponseHeaderParams extends StObject {
 }
 object RemoveResponseHeaderParams {
   
-  @scala.inline
-  def apply(name: String): RemoveResponseHeaderParams = {
+  inline def apply(name: String): RemoveResponseHeaderParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveResponseHeaderParams]
   }
   
-  @scala.inline
-  implicit class RemoveResponseHeaderParamsMutableBuilder[Self <: RemoveResponseHeaderParams] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveResponseHeaderParams](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

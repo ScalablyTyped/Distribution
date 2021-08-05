@@ -11,16 +11,13 @@ trait OnActiveChangedSelectInfo extends StObject {
 }
 object OnActiveChangedSelectInfo {
   
-  @scala.inline
-  def apply(windowId: Double): OnActiveChangedSelectInfo = {
+  inline def apply(windowId: Double): OnActiveChangedSelectInfo = {
     val __obj = js.Dynamic.literal(windowId = windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnActiveChangedSelectInfo]
   }
   
-  @scala.inline
-  implicit class OnActiveChangedSelectInfoMutableBuilder[Self <: OnActiveChangedSelectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OnActiveChangedSelectInfo](x: Self) {
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }
 }

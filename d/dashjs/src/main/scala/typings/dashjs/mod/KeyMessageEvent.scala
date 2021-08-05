@@ -16,20 +16,16 @@ trait KeyMessageEvent
 }
 object KeyMessageEvent {
   
-  @scala.inline
-  def apply(data: KeyMessage): KeyMessageEvent = {
+  inline def apply(data: KeyMessage): KeyMessageEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public_keyMessage")
     __obj.asInstanceOf[KeyMessageEvent]
   }
   
-  @scala.inline
-  implicit class KeyMessageEventMutableBuilder[Self <: KeyMessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyMessageEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: KeyMessage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: KeyMessage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: public_keyMessage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_keyMessage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

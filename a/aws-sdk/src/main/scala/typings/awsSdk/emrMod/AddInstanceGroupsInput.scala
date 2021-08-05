@@ -18,22 +18,17 @@ trait AddInstanceGroupsInput extends StObject {
 }
 object AddInstanceGroupsInput {
   
-  @scala.inline
-  def apply(InstanceGroups: InstanceGroupConfigList, JobFlowId: XmlStringMaxLen256): AddInstanceGroupsInput = {
+  inline def apply(InstanceGroups: InstanceGroupConfigList, JobFlowId: XmlStringMaxLen256): AddInstanceGroupsInput = {
     val __obj = js.Dynamic.literal(InstanceGroups = InstanceGroups.asInstanceOf[js.Any], JobFlowId = JobFlowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddInstanceGroupsInput]
   }
   
-  @scala.inline
-  implicit class AddInstanceGroupsInputMutableBuilder[Self <: AddInstanceGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddInstanceGroupsInput](x: Self) {
     
-    @scala.inline
-    def setInstanceGroups(value: InstanceGroupConfigList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
+    inline def setInstanceGroups(value: InstanceGroupConfigList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupsVarargs(value: InstanceGroupConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroupConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
+    inline def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
   }
 }

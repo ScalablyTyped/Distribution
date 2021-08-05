@@ -10,16 +10,13 @@ trait EnumValuesFlat extends StObject {
 }
 object EnumValuesFlat {
   
-  @scala.inline
-  def apply(enumValues: Flat): EnumValuesFlat = {
+  inline def apply(enumValues: Flat): EnumValuesFlat = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFlat]
   }
   
-  @scala.inline
-  implicit class EnumValuesFlatMutableBuilder[Self <: EnumValuesFlat] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFlat](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Flat): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Flat): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -33,6 +33,7 @@
 | 0.9011279932848253 | [dayjs](./d/dayjs) | 2KB immutable date time library alternative to Mom
 | 0.8992836971261073 | [cosmiconfig](./c/cosmiconfig) | Find and load configuration from a package.json pr
 | 0.8984501359541917 | [eventemitter3](./e/eventemitter3) | EventEmitter3 focuses on performance while maintai
+| 0.8982804698000768 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack
 | 0.8980650327331279 | [jsonfile](./j/jsonfile) | Easily read/write JSON files.
 | 0.8976823412918014 | [react-redux](./r/react-redux) | Official React bindings for Redux
 | 0.8968381897309006 | [immer](./i/immer) | Create your next immutable state by mutating the c
@@ -264,6 +265,7 @@
 | 0.8322850397255098 | [xtend](./x/xtend) | extend like a boss
 | 0.8322715457420148 | [cacache](./c/cacache) | Fast, fault-tolerant, cross-platform, disk-based, 
 | 0.8322069629766423 | [es6-promisify](./e/es6-promisify) | Converts callback-based functions to ES6 Promises
+| 0.8318029355662391 | [function-bind](./f/function-bind) | Implementation of Function.prototype.bind
 | 0.8317898167409371 | [supports-color](./s/supports-color) | Detect whether a terminal supports color
 | 0.8316922040268684 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns
 | 0.8314836993046593 | [accepts](./a/accepts) | Higher-level content negotiation
@@ -4171,6 +4173,7 @@
 | 0.6578288392374217 | [koa-log](./k/koa-log) | logger middlware for koa
 | 0.6578158316070146 | [destroy-on-hwm](./d/destroy-on-hwm) | Destroy a writable stream if it hits the high wate
 | 0.6577788765243353 | [ldapjs](./l/ldapjs) | LDAP client and server APIs
+| 0.6577489350816573 | [loader-utils](./l/loader-utils) | utils for webpack loaders
 | 0.6577331457050457 | [event-iterator](./e/event-iterator) | Convert event emitters and event targets to ES asy
 | 0.6576584959286997 | [rdfjs__fetch-lite](./r/rdfjs__fetch-lite) | Wrapper for fetch to simplify sending and receivin
 | 0.6576493911646202 | [kms-json](./k/kms-json) | Encrypting and decrypting JSON objects using AWS K
@@ -9087,6 +9090,7 @@
 | 0.14000766623909652 | [paho-mqtt](./p/paho-mqtt) | Eclipse Paho JavaScript MQTT client for Browsers
 | 0.13968530303833462 | [is-running](./i/is-running) | Test if a process with a given pid is running
 | 0.13916747975269364 | [jweixin](./j/jweixin) | wechat js-sdk
+| 0.138685382604264 | [tspromise](./t/tspromise) | A ES6-compatible node.js promise library for harmo
 | 0.13832569029216038 | [request-as-curl](./r/request-as-curl) | Serializes http.ClientRequest as curl(1) command s
 | 0.13799190050970195 | [react-addons-transition-g](./r/react-addons-transition-group) | The code in this package has moved. We recommend y
 | 0.13754895121416144 | [siesta](./s/siesta) | prototype RESTful services quickly

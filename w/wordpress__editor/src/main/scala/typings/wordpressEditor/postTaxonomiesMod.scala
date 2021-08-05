@@ -35,20 +35,16 @@ object postTaxonomiesMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setTaxonomyWrapper(value: (/* content */ ReactNode, /* taxonomy */ Taxonomy[edit]) => Element): Self = StObject.set(x, "taxonomyWrapper", js.Any.fromFunction2(value))
+        inline def setTaxonomyWrapper(value: (/* content */ ReactNode, /* taxonomy */ Taxonomy[edit]) => Element): Self = StObject.set(x, "taxonomyWrapper", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setTaxonomyWrapperUndefined: Self = StObject.set(x, "taxonomyWrapper", js.undefined)
+        inline def setTaxonomyWrapperUndefined: Self = StObject.set(x, "taxonomyWrapper", js.undefined)
       }
     }
   }

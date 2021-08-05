@@ -14,25 +14,19 @@ trait GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse extends StObject {
 }
 object GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse = {
+  inline def apply(): GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSecuritycenterV1RunAssetDiscoveryResponseMutableBuilder[Self <: GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

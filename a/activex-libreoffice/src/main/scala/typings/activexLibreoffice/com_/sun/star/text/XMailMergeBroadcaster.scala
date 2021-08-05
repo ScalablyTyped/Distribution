@@ -32,8 +32,7 @@ trait XMailMergeBroadcaster
 }
 object XMailMergeBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addMailMergeEventListener: XMailMergeListener => Unit,
     queryInterface: `type` => js.Any,
@@ -44,13 +43,10 @@ object XMailMergeBroadcaster {
     __obj.asInstanceOf[XMailMergeBroadcaster]
   }
   
-  @scala.inline
-  implicit class XMailMergeBroadcasterMutableBuilder[Self <: XMailMergeBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XMailMergeBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddMailMergeEventListener(value: XMailMergeListener => Unit): Self = StObject.set(x, "addMailMergeEventListener", js.Any.fromFunction1(value))
+    inline def setAddMailMergeEventListener(value: XMailMergeListener => Unit): Self = StObject.set(x, "addMailMergeEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMailMergeEventListener(value: XMailMergeListener => Unit): Self = StObject.set(x, "removeMailMergeEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveMailMergeEventListener(value: XMailMergeListener => Unit): Self = StObject.set(x, "removeMailMergeEventListener", js.Any.fromFunction1(value))
   }
 }

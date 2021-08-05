@@ -12,16 +12,13 @@ trait FragmentEvent extends StObject {
 }
 object FragmentEvent {
   
-  @scala.inline
-  def apply(fragment: Element): FragmentEvent = {
+  inline def apply(fragment: Element): FragmentEvent = {
     val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentEvent]
   }
   
-  @scala.inline
-  implicit class FragmentEventMutableBuilder[Self <: FragmentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentEvent](x: Self) {
     
-    @scala.inline
-    def setFragment(value: Element): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: Element): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
   }
 }

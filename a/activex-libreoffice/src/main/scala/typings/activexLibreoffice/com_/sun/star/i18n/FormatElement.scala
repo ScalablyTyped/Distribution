@@ -35,8 +35,7 @@ trait FormatElement extends StObject {
 }
 object FormatElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formatCode: String,
     formatIndex: Double,
     formatKey: String,
@@ -49,28 +48,20 @@ object FormatElement {
     __obj.asInstanceOf[FormatElement]
   }
   
-  @scala.inline
-  implicit class FormatElementMutableBuilder[Self <: FormatElement] (val x: Self) extends AnyVal {
+  extension [Self <: FormatElement](x: Self) {
     
-    @scala.inline
-    def setFormatCode(value: String): Self = StObject.set(x, "formatCode", value.asInstanceOf[js.Any])
+    inline def setFormatCode(value: String): Self = StObject.set(x, "formatCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatIndex(value: Double): Self = StObject.set(x, "formatIndex", value.asInstanceOf[js.Any])
+    inline def setFormatIndex(value: Double): Self = StObject.set(x, "formatIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatKey(value: String): Self = StObject.set(x, "formatKey", value.asInstanceOf[js.Any])
+    inline def setFormatKey(value: String): Self = StObject.set(x, "formatKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatName(value: String): Self = StObject.set(x, "formatName", value.asInstanceOf[js.Any])
+    inline def setFormatName(value: String): Self = StObject.set(x, "formatName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUsage(value: String): Self = StObject.set(x, "formatUsage", value.asInstanceOf[js.Any])
+    inline def setFormatUsage(value: String): Self = StObject.set(x, "formatUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
   }
 }

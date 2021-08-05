@@ -49,16 +49,16 @@ object dsinvokehistoryMod {
     /**
       * @hidden
       */
-    var process_ : js.Any = js.native
+    /* private */ var process_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var system_ : js.Any = js.native
+    /* private */ var system_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var weight_ : js.Any = js.native
+    /* private */ var weight_ : js.Any = js.native
   }
 }

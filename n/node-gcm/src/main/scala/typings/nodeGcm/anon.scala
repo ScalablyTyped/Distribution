@@ -16,32 +16,24 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(): Error = {
+    inline def apply(): Error = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+      inline def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage_idUndefined: Self = StObject.set(x, "message_id", js.undefined)
+      inline def setMessage_idUndefined: Self = StObject.set(x, "message_id", js.undefined)
       
-      @scala.inline
-      def setRegistration_id(value: String): Self = StObject.set(x, "registration_id", value.asInstanceOf[js.Any])
+      inline def setRegistration_id(value: String): Self = StObject.set(x, "registration_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistration_idUndefined: Self = StObject.set(x, "registration_id", js.undefined)
+      inline def setRegistration_idUndefined: Self = StObject.set(x, "registration_id", js.undefined)
     }
   }
 }

@@ -10,8 +10,7 @@ trait SocialMedia
      with Twitter
 object SocialMedia {
   
-  @scala.inline
-  def apply(): SocialMedia = {
+  inline def apply(): SocialMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SocialMedia]
   }

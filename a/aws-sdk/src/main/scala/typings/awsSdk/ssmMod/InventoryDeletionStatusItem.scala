@@ -43,55 +43,39 @@ trait InventoryDeletionStatusItem extends StObject {
 }
 object InventoryDeletionStatusItem {
   
-  @scala.inline
-  def apply(): InventoryDeletionStatusItem = {
+  inline def apply(): InventoryDeletionStatusItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventoryDeletionStatusItem]
   }
   
-  @scala.inline
-  implicit class InventoryDeletionStatusItemMutableBuilder[Self <: InventoryDeletionStatusItem] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryDeletionStatusItem](x: Self) {
     
-    @scala.inline
-    def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
+    inline def setDeletionId(value: UUID): Self = StObject.set(x, "DeletionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
+    inline def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
     
-    @scala.inline
-    def setDeletionStartTime(value: InventoryDeletionStartTime): Self = StObject.set(x, "DeletionStartTime", value.asInstanceOf[js.Any])
+    inline def setDeletionStartTime(value: InventoryDeletionStartTime): Self = StObject.set(x, "DeletionStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionStartTimeUndefined: Self = StObject.set(x, "DeletionStartTime", js.undefined)
+    inline def setDeletionStartTimeUndefined: Self = StObject.set(x, "DeletionStartTime", js.undefined)
     
-    @scala.inline
-    def setDeletionSummary(value: InventoryDeletionSummary): Self = StObject.set(x, "DeletionSummary", value.asInstanceOf[js.Any])
+    inline def setDeletionSummary(value: InventoryDeletionSummary): Self = StObject.set(x, "DeletionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionSummaryUndefined: Self = StObject.set(x, "DeletionSummary", js.undefined)
+    inline def setDeletionSummaryUndefined: Self = StObject.set(x, "DeletionSummary", js.undefined)
     
-    @scala.inline
-    def setLastStatus(value: InventoryDeletionStatus): Self = StObject.set(x, "LastStatus", value.asInstanceOf[js.Any])
+    inline def setLastStatus(value: InventoryDeletionStatus): Self = StObject.set(x, "LastStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusMessage(value: InventoryDeletionLastStatusMessage): Self = StObject.set(x, "LastStatusMessage", value.asInstanceOf[js.Any])
+    inline def setLastStatusMessage(value: InventoryDeletionLastStatusMessage): Self = StObject.set(x, "LastStatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusMessageUndefined: Self = StObject.set(x, "LastStatusMessage", js.undefined)
+    inline def setLastStatusMessageUndefined: Self = StObject.set(x, "LastStatusMessage", js.undefined)
     
-    @scala.inline
-    def setLastStatusUndefined: Self = StObject.set(x, "LastStatus", js.undefined)
+    inline def setLastStatusUndefined: Self = StObject.set(x, "LastStatus", js.undefined)
     
-    @scala.inline
-    def setLastStatusUpdateTime(value: InventoryDeletionLastStatusUpdateTime): Self = StObject.set(x, "LastStatusUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastStatusUpdateTime(value: InventoryDeletionLastStatusUpdateTime): Self = StObject.set(x, "LastStatusUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusUpdateTimeUndefined: Self = StObject.set(x, "LastStatusUpdateTime", js.undefined)
+    inline def setLastStatusUpdateTimeUndefined: Self = StObject.set(x, "LastStatusUpdateTime", js.undefined)
     
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
   }
 }

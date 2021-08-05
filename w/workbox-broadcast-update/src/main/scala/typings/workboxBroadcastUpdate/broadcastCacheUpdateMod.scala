@@ -32,35 +32,26 @@ object broadcastCacheUpdateMod {
     }
     object NotifyIfUpdatedOptions {
       
-      @scala.inline
-      def apply(cacheName: String, newResponse: Response, url: String): NotifyIfUpdatedOptions = {
+      inline def apply(cacheName: String, newResponse: Response, url: String): NotifyIfUpdatedOptions = {
         val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], newResponse = newResponse.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[NotifyIfUpdatedOptions]
       }
       
-      @scala.inline
-      implicit class NotifyIfUpdatedOptionsMutableBuilder[Self <: NotifyIfUpdatedOptions] (val x: Self) extends AnyVal {
+      extension [Self <: NotifyIfUpdatedOptions](x: Self) {
         
-        @scala.inline
-        def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+        inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+        inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+        inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
         
-        @scala.inline
-        def setNewResponse(value: Response): Self = StObject.set(x, "newResponse", value.asInstanceOf[js.Any])
+        inline def setNewResponse(value: Response): Self = StObject.set(x, "newResponse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldResponse(value: Response): Self = StObject.set(x, "oldResponse", value.asInstanceOf[js.Any])
+        inline def setOldResponse(value: Response): Self = StObject.set(x, "oldResponse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldResponseUndefined: Self = StObject.set(x, "oldResponse", js.undefined)
+        inline def setOldResponseUndefined: Self = StObject.set(x, "oldResponse", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -75,35 +66,26 @@ object broadcastCacheUpdateMod {
   }
   object BroadcastCacheUpdateOptions {
     
-    @scala.inline
-    def apply(): BroadcastCacheUpdateOptions = {
+    inline def apply(): BroadcastCacheUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BroadcastCacheUpdateOptions]
     }
     
-    @scala.inline
-    implicit class BroadcastCacheUpdateOptionsMutableBuilder[Self <: BroadcastCacheUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BroadcastCacheUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+      inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
       
-      @scala.inline
-      def setDeferNoticationTimeout(value: Double): Self = StObject.set(x, "deferNoticationTimeout", value.asInstanceOf[js.Any])
+      inline def setDeferNoticationTimeout(value: Double): Self = StObject.set(x, "deferNoticationTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferNoticationTimeoutUndefined: Self = StObject.set(x, "deferNoticationTimeout", js.undefined)
+      inline def setDeferNoticationTimeoutUndefined: Self = StObject.set(x, "deferNoticationTimeout", js.undefined)
       
-      @scala.inline
-      def setHeadersToCheck(value: js.Array[String]): Self = StObject.set(x, "headersToCheck", value.asInstanceOf[js.Any])
+      inline def setHeadersToCheck(value: js.Array[String]): Self = StObject.set(x, "headersToCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersToCheckUndefined: Self = StObject.set(x, "headersToCheck", js.undefined)
+      inline def setHeadersToCheckUndefined: Self = StObject.set(x, "headersToCheck", js.undefined)
       
-      @scala.inline
-      def setHeadersToCheckVarargs(value: String*): Self = StObject.set(x, "headersToCheck", js.Array(value :_*))
+      inline def setHeadersToCheckVarargs(value: String*): Self = StObject.set(x, "headersToCheck", js.Array(value :_*))
     }
   }
 }

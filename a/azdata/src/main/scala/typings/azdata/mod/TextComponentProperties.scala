@@ -19,40 +19,29 @@ trait TextComponentProperties
 }
 object TextComponentProperties {
   
-  @scala.inline
-  def apply(): TextComponentProperties = {
+  inline def apply(): TextComponentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextComponentProperties]
   }
   
-  @scala.inline
-  implicit class TextComponentPropertiesMutableBuilder[Self <: TextComponentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TextComponentProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLinks(value: js.Array[LinkArea]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[LinkArea]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: LinkArea*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: LinkArea*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredIndicator(value: Boolean): Self = StObject.set(x, "requiredIndicator", value.asInstanceOf[js.Any])
+    inline def setRequiredIndicator(value: Boolean): Self = StObject.set(x, "requiredIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredIndicatorUndefined: Self = StObject.set(x, "requiredIndicator", js.undefined)
+    inline def setRequiredIndicatorUndefined: Self = StObject.set(x, "requiredIndicator", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

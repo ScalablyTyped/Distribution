@@ -470,10 +470,8 @@ object mod {
       * @param options.generateMessage A function for defining a custom error
       *                                message.
       */
-    @scala.inline
-    def generateClass(name: String): ErrorConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("generateClass")(name.asInstanceOf[js.Any]).asInstanceOf[ErrorConstructor]
-    @scala.inline
-    def generateClass(name: String, options: Args): ErrorConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("generateClass")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ErrorConstructor]
+    inline def generateClass(name: String): ErrorConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("generateClass")(name.asInstanceOf[js.Any]).asInstanceOf[ErrorConstructor]
+    inline def generateClass(name: String, options: Args): ErrorConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("generateClass")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ErrorConstructor]
   }
   
   object io {
@@ -585,13 +583,10 @@ object mod {
     }
   }
   
-  @scala.inline
-  def log(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
-  @scala.inline
-  def log(err: Error, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def log(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def log(err: Error, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(err.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @scala.inline
-  def logError(err: Error, cb: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(err.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logError(err: Error, cb: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(err.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object middleware {
     
@@ -604,8 +599,7 @@ object mod {
       * an error is thrown from an asynchronous context. Any error that would
       * have caused a crash is logged to stderr.
       */
-    @scala.inline
-    def crashProtector(
+    inline def crashProtector(
       errorHandler: js.Function3[
           /* err */ Error, 
           /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
@@ -618,8 +612,7 @@ object mod {
       * Express middleware that translates common errors into HTTP status
       * codes and messages.
       */
-    @scala.inline
-    def errorHandler(
+    inline def errorHandler(
       err: Error,
       req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       res: Response_[js.Any],
@@ -627,8 +620,7 @@ object mod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(err.asInstanceOf[js.Any], req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def prependCurrentStack(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("prependCurrentStack")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def prependCurrentStack(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("prependCurrentStack")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   @js.native
   trait ErrorConstructor

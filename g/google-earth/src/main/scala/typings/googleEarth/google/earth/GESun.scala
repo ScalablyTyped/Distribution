@@ -20,19 +20,15 @@ trait GESun extends StObject {
 }
 object GESun {
   
-  @scala.inline
-  def apply(getVisibility: () => Boolean, setVisibility: Boolean => Unit): GESun = {
+  inline def apply(getVisibility: () => Boolean, setVisibility: Boolean => Unit): GESun = {
     val __obj = js.Dynamic.literal(getVisibility = js.Any.fromFunction0(getVisibility), setVisibility = js.Any.fromFunction1(setVisibility))
     __obj.asInstanceOf[GESun]
   }
   
-  @scala.inline
-  implicit class GESunMutableBuilder[Self <: GESun] (val x: Self) extends AnyVal {
+  extension [Self <: GESun](x: Self) {
     
-    @scala.inline
-    def setGetVisibility(value: () => Boolean): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
+    inline def setGetVisibility(value: () => Boolean): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetVisibility(value: Boolean => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
+    inline def setSetVisibility(value: Boolean => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
   }
 }

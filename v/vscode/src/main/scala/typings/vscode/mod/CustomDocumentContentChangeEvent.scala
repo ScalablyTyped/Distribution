@@ -19,16 +19,13 @@ trait CustomDocumentContentChangeEvent[T /* <: CustomDocument */] extends StObje
 }
 object CustomDocumentContentChangeEvent {
   
-  @scala.inline
-  def apply[T /* <: CustomDocument */](document: T): CustomDocumentContentChangeEvent[T] = {
+  inline def apply[T /* <: CustomDocument */](document: T): CustomDocumentContentChangeEvent[T] = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDocumentContentChangeEvent[T]]
   }
   
-  @scala.inline
-  implicit class CustomDocumentContentChangeEventMutableBuilder[Self <: CustomDocumentContentChangeEvent[?], T /* <: CustomDocument */] (val x: Self & CustomDocumentContentChangeEvent[T]) extends AnyVal {
+  extension [Self <: CustomDocumentContentChangeEvent[?], T /* <: CustomDocument */](x: Self & CustomDocumentContentChangeEvent[T]) {
     
-    @scala.inline
-    def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }
 }

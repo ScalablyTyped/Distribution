@@ -15,25 +15,19 @@ trait PartialTapTargetOptions extends StObject {
 }
 object PartialTapTargetOptions {
   
-  @scala.inline
-  def apply(): PartialTapTargetOptions = {
+  inline def apply(): PartialTapTargetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTapTargetOptions]
   }
   
-  @scala.inline
-  implicit class PartialTapTargetOptionsMutableBuilder[Self <: PartialTapTargetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTapTargetOptions](x: Self) {
     
-    @scala.inline
-    def setOnClose(value: js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    inline def setOnClose(value: js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    @scala.inline
-    def setOnOpen(value: js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
+    inline def setOnOpen(value: js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+    inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
   }
 }

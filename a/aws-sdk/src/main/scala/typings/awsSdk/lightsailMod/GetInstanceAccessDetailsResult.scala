@@ -13,19 +13,15 @@ trait GetInstanceAccessDetailsResult extends StObject {
 }
 object GetInstanceAccessDetailsResult {
   
-  @scala.inline
-  def apply(): GetInstanceAccessDetailsResult = {
+  inline def apply(): GetInstanceAccessDetailsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInstanceAccessDetailsResult]
   }
   
-  @scala.inline
-  implicit class GetInstanceAccessDetailsResultMutableBuilder[Self <: GetInstanceAccessDetailsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceAccessDetailsResult](x: Self) {
     
-    @scala.inline
-    def setAccessDetails(value: InstanceAccessDetails): Self = StObject.set(x, "accessDetails", value.asInstanceOf[js.Any])
+    inline def setAccessDetails(value: InstanceAccessDetails): Self = StObject.set(x, "accessDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessDetailsUndefined: Self = StObject.set(x, "accessDetails", js.undefined)
+    inline def setAccessDetailsUndefined: Self = StObject.set(x, "accessDetails", js.undefined)
   }
 }

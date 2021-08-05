@@ -70,14 +70,11 @@ object SpatialStyle {
   trait LineCap extends StObject
   object LineCap {
     
-    @scala.inline
-    def butt: typings.heremaps.heremapsStrings.butt = "butt".asInstanceOf[typings.heremaps.heremapsStrings.butt]
+    inline def butt: typings.heremaps.heremapsStrings.butt = "butt".asInstanceOf[typings.heremaps.heremapsStrings.butt]
     
-    @scala.inline
-    def round: typings.heremaps.heremapsStrings.round = "round".asInstanceOf[typings.heremaps.heremapsStrings.round]
+    inline def round: typings.heremaps.heremapsStrings.round = "round".asInstanceOf[typings.heremaps.heremapsStrings.round]
     
-    @scala.inline
-    def square: typings.heremaps.heremapsStrings.square = "square".asInstanceOf[typings.heremaps.heremapsStrings.square]
+    inline def square: typings.heremaps.heremapsStrings.square = "square".asInstanceOf[typings.heremaps.heremapsStrings.square]
   }
   
   /**
@@ -91,14 +88,11 @@ object SpatialStyle {
   trait LineJoin extends StObject
   object LineJoin {
     
-    @scala.inline
-    def bevel: typings.heremaps.heremapsStrings.bevel = "bevel".asInstanceOf[typings.heremaps.heremapsStrings.bevel]
+    inline def bevel: typings.heremaps.heremapsStrings.bevel = "bevel".asInstanceOf[typings.heremaps.heremapsStrings.bevel]
     
-    @scala.inline
-    def miter: typings.heremaps.heremapsStrings.miter = "miter".asInstanceOf[typings.heremaps.heremapsStrings.miter]
+    inline def miter: typings.heremaps.heremapsStrings.miter = "miter".asInstanceOf[typings.heremaps.heremapsStrings.miter]
     
-    @scala.inline
-    def round: typings.heremaps.heremapsStrings.round = "round".asInstanceOf[typings.heremaps.heremapsStrings.round]
+    inline def round: typings.heremaps.heremapsStrings.round = "round".asInstanceOf[typings.heremaps.heremapsStrings.round]
   }
   
   /**
@@ -133,65 +127,46 @@ object SpatialStyle {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+      inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      @scala.inline
-      def setLineCap(value: LineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+      inline def setLineCap(value: LineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+      inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
       
-      @scala.inline
-      def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
+      inline def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
+      inline def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
+      inline def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
       
-      @scala.inline
-      def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
+      inline def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
       
-      @scala.inline
-      def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
       
-      @scala.inline
-      def setLineJoin(value: LineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+      inline def setLineJoin(value: LineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+      inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
       
-      @scala.inline
-      def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+      inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+      inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
       
-      @scala.inline
-      def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+      inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
+      inline def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     }
   }
 }

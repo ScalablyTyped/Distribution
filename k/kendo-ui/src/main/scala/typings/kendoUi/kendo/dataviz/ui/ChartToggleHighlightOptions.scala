@@ -12,25 +12,19 @@ trait ChartToggleHighlightOptions extends StObject {
 }
 object ChartToggleHighlightOptions {
   
-  @scala.inline
-  def apply(): ChartToggleHighlightOptions = {
+  inline def apply(): ChartToggleHighlightOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartToggleHighlightOptions]
   }
   
-  @scala.inline
-  implicit class ChartToggleHighlightOptionsMutableBuilder[Self <: ChartToggleHighlightOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartToggleHighlightOptions](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
   }
 }

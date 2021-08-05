@@ -20,8 +20,7 @@ trait `644` extends StObject {
 }
 object `644` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[AppsListSubscriptionsForAuthenticatedUserEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData]
   ): `644` = {
@@ -29,15 +28,12 @@ object `644` {
     __obj.asInstanceOf[`644`]
   }
   
-  @scala.inline
-  implicit class `644MutableBuilder`[Self <: `644`] (val x: Self) extends AnyVal {
+  extension [Self <: `644`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[AppsListSubscriptionsForAuthenticatedUserEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsListSubscriptionsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

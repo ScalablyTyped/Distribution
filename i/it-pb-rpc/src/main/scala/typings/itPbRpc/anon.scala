@@ -15,17 +15,14 @@ object anon {
   }
   object Decode {
     
-    @scala.inline
-    def apply[T](decode: Buffer => T): Decode[T] = {
+    inline def apply[T](decode: Buffer => T): Decode[T] = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode))
       __obj.asInstanceOf[Decode[T]]
     }
     
-    @scala.inline
-    implicit class DecodeMutableBuilder[Self <: Decode[?], T] (val x: Self & Decode[T]) extends AnyVal {
+    extension [Self <: Decode[?], T](x: Self & Decode[T]) {
       
-      @scala.inline
-      def setDecode(value: Buffer => T): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: Buffer => T): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }
   }
   
@@ -37,20 +34,16 @@ object anon {
   }
   object DecodeEncode {
     
-    @scala.inline
-    def apply[Return](decode: Buffer => Return, encode: js.Any => Buffer): DecodeEncode[Return] = {
+    inline def apply[Return](decode: Buffer => Return, encode: js.Any => Buffer): DecodeEncode[Return] = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
       __obj.asInstanceOf[DecodeEncode[Return]]
     }
     
-    @scala.inline
-    implicit class DecodeEncodeMutableBuilder[Self <: DecodeEncode[?], Return] (val x: Self & DecodeEncode[Return]) extends AnyVal {
+    extension [Self <: DecodeEncode[?], Return](x: Self & DecodeEncode[Return]) {
       
-      @scala.inline
-      def setDecode(value: Buffer => Return): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: Buffer => Return): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode(value: js.Any => Buffer): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Any => Buffer): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   
@@ -60,17 +53,14 @@ object anon {
   }
   object Encode {
     
-    @scala.inline
-    def apply(encode: js.Any => Buffer): Encode = {
+    inline def apply(encode: js.Any => Buffer): Encode = {
       val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
       __obj.asInstanceOf[Encode]
     }
     
-    @scala.inline
-    implicit class EncodeMutableBuilder[Self <: Encode] (val x: Self) extends AnyVal {
+    extension [Self <: Encode](x: Self) {
       
-      @scala.inline
-      def setEncode(value: js.Any => Buffer): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Any => Buffer): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   
@@ -91,50 +81,36 @@ object anon {
   }
   object PartialOpts {
     
-    @scala.inline
-    def apply(): PartialOpts = {
+    inline def apply(): PartialOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOpts]
     }
     
-    @scala.inline
-    implicit class PartialOptsMutableBuilder[Self <: PartialOpts] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOpts](x: Self) {
       
-      @scala.inline
-      def setLengthDecoder(value: LengthDecoderFunction): Self = StObject.set(x, "lengthDecoder", value.asInstanceOf[js.Any])
+      inline def setLengthDecoder(value: LengthDecoderFunction): Self = StObject.set(x, "lengthDecoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthDecoderUndefined: Self = StObject.set(x, "lengthDecoder", js.undefined)
+      inline def setLengthDecoderUndefined: Self = StObject.set(x, "lengthDecoder", js.undefined)
       
-      @scala.inline
-      def setLengthEncoder(value: LengthEncoderFunction): Self = StObject.set(x, "lengthEncoder", value.asInstanceOf[js.Any])
+      inline def setLengthEncoder(value: LengthEncoderFunction): Self = StObject.set(x, "lengthEncoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthEncoderUndefined: Self = StObject.set(x, "lengthEncoder", js.undefined)
+      inline def setLengthEncoderUndefined: Self = StObject.set(x, "lengthEncoder", js.undefined)
       
-      @scala.inline
-      def setMaxDataLength(value: Double): Self = StObject.set(x, "maxDataLength", value.asInstanceOf[js.Any])
+      inline def setMaxDataLength(value: Double): Self = StObject.set(x, "maxDataLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDataLengthUndefined: Self = StObject.set(x, "maxDataLength", js.undefined)
+      inline def setMaxDataLengthUndefined: Self = StObject.set(x, "maxDataLength", js.undefined)
       
-      @scala.inline
-      def setMaxLengthLength(value: Double): Self = StObject.set(x, "maxLengthLength", value.asInstanceOf[js.Any])
+      inline def setMaxLengthLength(value: Double): Self = StObject.set(x, "maxLengthLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthLengthUndefined: Self = StObject.set(x, "maxLengthLength", js.undefined)
+      inline def setMaxLengthLengthUndefined: Self = StObject.set(x, "maxLengthLength", js.undefined)
       
-      @scala.inline
-      def setMinPoolSize(value: Double): Self = StObject.set(x, "minPoolSize", value.asInstanceOf[js.Any])
+      inline def setMinPoolSize(value: Double): Self = StObject.set(x, "minPoolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPoolSizeUndefined: Self = StObject.set(x, "minPoolSize", js.undefined)
+      inline def setMinPoolSizeUndefined: Self = StObject.set(x, "minPoolSize", js.undefined)
       
-      @scala.inline
-      def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
+      inline def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
+      inline def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
     }
   }
   
@@ -146,20 +122,16 @@ object anon {
   }
   object Read {
     
-    @scala.inline
-    def apply[Return](read: () => Return, write: Buffer => Unit): Read[Return] = {
+    inline def apply[Return](read: () => Return, write: Buffer => Unit): Read[Return] = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[Read[Return]]
     }
     
-    @scala.inline
-    implicit class ReadMutableBuilder[Self <: Read[?], Return] (val x: Self & Read[Return]) extends AnyVal {
+    extension [Self <: Read[?], Return](x: Self & Read[Return]) {
       
-      @scala.inline
-      def setRead(value: () => Return): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => Return): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWrite(value: Buffer => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Buffer => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

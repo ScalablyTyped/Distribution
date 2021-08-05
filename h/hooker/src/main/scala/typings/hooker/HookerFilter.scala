@@ -14,22 +14,17 @@ trait HookerFilter
 }
 object HookerFilter {
   
-  @scala.inline
-  def apply(args: js.Array[js.Any], context: js.Any): HookerFilter = {
+  inline def apply(args: js.Array[js.Any], context: js.Any): HookerFilter = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookerFilter]
   }
   
-  @scala.inline
-  implicit class HookerFilterMutableBuilder[Self <: HookerFilter] (val x: Self) extends AnyVal {
+  extension [Self <: HookerFilter](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

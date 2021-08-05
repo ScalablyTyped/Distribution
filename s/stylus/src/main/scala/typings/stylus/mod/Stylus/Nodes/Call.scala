@@ -15,8 +15,7 @@ trait Call
 }
 object Call {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: Expression,
     coerce: Node => Node,
     column: Double,
@@ -37,13 +36,10 @@ object Call {
     __obj.asInstanceOf[Call]
   }
   
-  @scala.inline
-  implicit class CallMutableBuilder[Self <: Call] (val x: Self) extends AnyVal {
+  extension [Self <: Call](x: Self) {
     
-    @scala.inline
-    def setArgs(value: Expression): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Expression): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

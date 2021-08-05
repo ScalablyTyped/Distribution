@@ -10,16 +10,13 @@ trait ProxyClass extends StObject {
 }
 object ProxyClass {
   
-  @scala.inline
-  def apply(setDelegate: js.Any => Unit): ProxyClass = {
+  inline def apply(setDelegate: js.Any => Unit): ProxyClass = {
     val __obj = js.Dynamic.literal(setDelegate = js.Any.fromFunction1(setDelegate))
     __obj.asInstanceOf[ProxyClass]
   }
   
-  @scala.inline
-  implicit class ProxyClassMutableBuilder[Self <: ProxyClass] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyClass](x: Self) {
     
-    @scala.inline
-    def setSetDelegate(value: js.Any => Unit): Self = StObject.set(x, "setDelegate", js.Any.fromFunction1(value))
+    inline def setSetDelegate(value: js.Any => Unit): Self = StObject.set(x, "setDelegate", js.Any.fromFunction1(value))
   }
 }

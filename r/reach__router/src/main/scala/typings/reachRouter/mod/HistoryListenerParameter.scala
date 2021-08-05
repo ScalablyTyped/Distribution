@@ -12,19 +12,15 @@ trait HistoryListenerParameter extends StObject {
 }
 object HistoryListenerParameter {
   
-  @scala.inline
-  def apply(action: HistoryActionType, location: HistoryLocation): HistoryListenerParameter = {
+  inline def apply(action: HistoryActionType, location: HistoryLocation): HistoryListenerParameter = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryListenerParameter]
   }
   
-  @scala.inline
-  implicit class HistoryListenerParameterMutableBuilder[Self <: HistoryListenerParameter] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryListenerParameter](x: Self) {
     
-    @scala.inline
-    def setAction(value: HistoryActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: HistoryActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: HistoryLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: HistoryLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

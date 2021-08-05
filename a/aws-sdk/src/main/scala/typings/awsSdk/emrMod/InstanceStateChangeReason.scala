@@ -18,25 +18,19 @@ trait InstanceStateChangeReason extends StObject {
 }
 object InstanceStateChangeReason {
   
-  @scala.inline
-  def apply(): InstanceStateChangeReason = {
+  inline def apply(): InstanceStateChangeReason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceStateChangeReason]
   }
   
-  @scala.inline
-  implicit class InstanceStateChangeReasonMutableBuilder[Self <: InstanceStateChangeReason] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceStateChangeReason](x: Self) {
     
-    @scala.inline
-    def setCode(value: InstanceStateChangeReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: InstanceStateChangeReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

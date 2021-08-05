@@ -8,16 +8,15 @@ trait StringLiteral
   extends StObject
      with IASTToken {
   
-  var _text: js.Any
+  /* private */ var _text: js.Any
   
-  var _valueText: js.Any
+  /* private */ var _valueText: js.Any
   
   def structuralEquals(ast: StringLiteral, includingPosition: Boolean): Boolean
 }
 object StringLiteral {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -47,16 +46,12 @@ object StringLiteral {
     __obj.asInstanceOf[StringLiteral]
   }
   
-  @scala.inline
-  implicit class StringLiteralMutableBuilder[Self <: StringLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: StringLiteral](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (StringLiteral, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (StringLiteral, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

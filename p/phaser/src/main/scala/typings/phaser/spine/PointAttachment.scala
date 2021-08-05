@@ -22,8 +22,7 @@ trait PointAttachment
 }
 object PointAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bones: js.Array[Double],
     color: Color,
     computeWorldPosition: (Bone, Vector2) => Vector2,
@@ -44,25 +43,18 @@ object PointAttachment {
     __obj.asInstanceOf[PointAttachment]
   }
   
-  @scala.inline
-  implicit class PointAttachmentMutableBuilder[Self <: PointAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: PointAttachment](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeWorldPosition(value: (Bone, Vector2) => Vector2): Self = StObject.set(x, "computeWorldPosition", js.Any.fromFunction2(value))
+    inline def setComputeWorldPosition(value: (Bone, Vector2) => Vector2): Self = StObject.set(x, "computeWorldPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComputeWorldRotation(value: Bone => Double): Self = StObject.set(x, "computeWorldRotation", js.Any.fromFunction1(value))
+    inline def setComputeWorldRotation(value: Bone => Double): Self = StObject.set(x, "computeWorldRotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

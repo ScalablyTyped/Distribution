@@ -18,8 +18,7 @@ trait INDClosedCaptionDataReceivedEventArgs extends StObject {
 }
 object INDClosedCaptionDataReceivedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closedCaptionData: Double,
     closedCaptionDataFormat: NDClosedCaptionFormat,
     presentationTimestamp: Double
@@ -28,16 +27,12 @@ object INDClosedCaptionDataReceivedEventArgs {
     __obj.asInstanceOf[INDClosedCaptionDataReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class INDClosedCaptionDataReceivedEventArgsMutableBuilder[Self <: INDClosedCaptionDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: INDClosedCaptionDataReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setClosedCaptionData(value: Double): Self = StObject.set(x, "closedCaptionData", value.asInstanceOf[js.Any])
+    inline def setClosedCaptionData(value: Double): Self = StObject.set(x, "closedCaptionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedCaptionDataFormat(value: NDClosedCaptionFormat): Self = StObject.set(x, "closedCaptionDataFormat", value.asInstanceOf[js.Any])
+    inline def setClosedCaptionDataFormat(value: NDClosedCaptionFormat): Self = StObject.set(x, "closedCaptionDataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationTimestamp(value: Double): Self = StObject.set(x, "presentationTimestamp", value.asInstanceOf[js.Any])
+    inline def setPresentationTimestamp(value: Double): Self = StObject.set(x, "presentationTimestamp", value.asInstanceOf[js.Any])
   }
 }

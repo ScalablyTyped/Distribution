@@ -29,8 +29,7 @@ trait BlockStatement
 }
 object BlockStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeStrip: StripFlags,
     hash: Hash,
     inverse: Program,
@@ -46,37 +45,26 @@ object BlockStatement {
     __obj.asInstanceOf[BlockStatement]
   }
   
-  @scala.inline
-  implicit class BlockStatementMutableBuilder[Self <: BlockStatement] (val x: Self) extends AnyVal {
+  extension [Self <: BlockStatement](x: Self) {
     
-    @scala.inline
-    def setCloseStrip(value: StripFlags): Self = StObject.set(x, "closeStrip", value.asInstanceOf[js.Any])
+    inline def setCloseStrip(value: StripFlags): Self = StObject.set(x, "closeStrip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverse(value: Program): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: Program): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverseStrip(value: StripFlags): Self = StObject.set(x, "inverseStrip", value.asInstanceOf[js.Any])
+    inline def setInverseStrip(value: StripFlags): Self = StObject.set(x, "inverseStrip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenStrip(value: StripFlags): Self = StObject.set(x, "openStrip", value.asInstanceOf[js.Any])
+    inline def setOpenStrip(value: StripFlags): Self = StObject.set(x, "openStrip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: PathExpression): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: PathExpression): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.BlockStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.BlockStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

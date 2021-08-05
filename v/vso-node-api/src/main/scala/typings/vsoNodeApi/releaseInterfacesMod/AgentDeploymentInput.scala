@@ -15,8 +15,7 @@ trait AgentDeploymentInput
 }
 object AgentDeploymentInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
     demands: js.Array[js.Any],
@@ -33,13 +32,10 @@ object AgentDeploymentInput {
     __obj.asInstanceOf[AgentDeploymentInput]
   }
   
-  @scala.inline
-  implicit class AgentDeploymentInputMutableBuilder[Self <: AgentDeploymentInput] (val x: Self) extends AnyVal {
+  extension [Self <: AgentDeploymentInput](x: Self) {
     
-    @scala.inline
-    def setImageId(value: Double): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: Double): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelExecution(value: ExecutionInput): Self = StObject.set(x, "parallelExecution", value.asInstanceOf[js.Any])
+    inline def setParallelExecution(value: ExecutionInput): Self = StObject.set(x, "parallelExecution", value.asInstanceOf[js.Any])
   }
 }

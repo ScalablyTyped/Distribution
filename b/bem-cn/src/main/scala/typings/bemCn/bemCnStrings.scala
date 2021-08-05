@@ -11,13 +11,11 @@ object bemCnStrings {
   sealed trait `has-`
     extends StObject
        with BemStatePrefix
-  @scala.inline
-  def `has-`: `has-` = "has-".asInstanceOf[`has-`]
+  inline def `has-`: `has-` = "has-".asInstanceOf[`has-`]
   
   @js.native
   sealed trait `is-`
     extends StObject
        with BemStatePrefix
-  @scala.inline
-  def `is-`: `is-` = "is-".asInstanceOf[`is-`]
+  inline def `is-`: `is-` = "is-".asInstanceOf[`is-`]
 }

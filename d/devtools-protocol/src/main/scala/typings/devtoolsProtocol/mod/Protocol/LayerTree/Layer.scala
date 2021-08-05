@@ -91,8 +91,7 @@ trait Layer extends StObject {
 }
 object Layer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     drawsContent: Boolean,
     height: Double,
     layerId: LayerId,
@@ -105,88 +104,60 @@ object Layer {
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
+    inline def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorXUndefined: Self = StObject.set(x, "anchorX", js.undefined)
+    inline def setAnchorXUndefined: Self = StObject.set(x, "anchorX", js.undefined)
     
-    @scala.inline
-    def setAnchorY(value: Double): Self = StObject.set(x, "anchorY", value.asInstanceOf[js.Any])
+    inline def setAnchorY(value: Double): Self = StObject.set(x, "anchorY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorYUndefined: Self = StObject.set(x, "anchorY", js.undefined)
+    inline def setAnchorYUndefined: Self = StObject.set(x, "anchorY", js.undefined)
     
-    @scala.inline
-    def setAnchorZ(value: Double): Self = StObject.set(x, "anchorZ", value.asInstanceOf[js.Any])
+    inline def setAnchorZ(value: Double): Self = StObject.set(x, "anchorZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorZUndefined: Self = StObject.set(x, "anchorZ", js.undefined)
+    inline def setAnchorZUndefined: Self = StObject.set(x, "anchorZ", js.undefined)
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+    inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
-    @scala.inline
-    def setDrawsContent(value: Boolean): Self = StObject.set(x, "drawsContent", value.asInstanceOf[js.Any])
+    inline def setDrawsContent(value: Boolean): Self = StObject.set(x, "drawsContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+    inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+    inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintCount(value: integer): Self = StObject.set(x, "paintCount", value.asInstanceOf[js.Any])
+    inline def setPaintCount(value: integer): Self = StObject.set(x, "paintCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLayerId(value: LayerId): Self = StObject.set(x, "parentLayerId", value.asInstanceOf[js.Any])
+    inline def setParentLayerId(value: LayerId): Self = StObject.set(x, "parentLayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLayerIdUndefined: Self = StObject.set(x, "parentLayerId", js.undefined)
+    inline def setParentLayerIdUndefined: Self = StObject.set(x, "parentLayerId", js.undefined)
     
-    @scala.inline
-    def setScrollRects(value: js.Array[ScrollRect]): Self = StObject.set(x, "scrollRects", value.asInstanceOf[js.Any])
+    inline def setScrollRects(value: js.Array[ScrollRect]): Self = StObject.set(x, "scrollRects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollRectsUndefined: Self = StObject.set(x, "scrollRects", js.undefined)
+    inline def setScrollRectsUndefined: Self = StObject.set(x, "scrollRects", js.undefined)
     
-    @scala.inline
-    def setScrollRectsVarargs(value: ScrollRect*): Self = StObject.set(x, "scrollRects", js.Array(value :_*))
+    inline def setScrollRectsVarargs(value: ScrollRect*): Self = StObject.set(x, "scrollRects", js.Array(value :_*))
     
-    @scala.inline
-    def setStickyPositionConstraint(value: StickyPositionConstraint): Self = StObject.set(x, "stickyPositionConstraint", value.asInstanceOf[js.Any])
+    inline def setStickyPositionConstraint(value: StickyPositionConstraint): Self = StObject.set(x, "stickyPositionConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyPositionConstraintUndefined: Self = StObject.set(x, "stickyPositionConstraint", js.undefined)
+    inline def setStickyPositionConstraintUndefined: Self = StObject.set(x, "stickyPositionConstraint", js.undefined)
     
-    @scala.inline
-    def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

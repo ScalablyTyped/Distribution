@@ -14,8 +14,7 @@ object processMod {
   @js.native
   val default: IProcess = js.native
   
-  @scala.inline
-  def createProcess(): IProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("createProcess")().asInstanceOf[IProcess]
+  inline def createProcess(): IProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("createProcess")().asInstanceOf[IProcess]
   
   trait IProcess extends StObject {
     
@@ -33,8 +32,7 @@ object processMod {
   }
   object IProcess {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cwd: () => String,
       emitWarning: (String, String) => Unit,
       getgid: () => Double,
@@ -46,26 +44,19 @@ object processMod {
       __obj.asInstanceOf[IProcess]
     }
     
-    @scala.inline
-    implicit class IProcessMutableBuilder[Self <: IProcess] (val x: Self) extends AnyVal {
+    extension [Self <: IProcess](x: Self) {
       
-      @scala.inline
-      def setCwd(value: () => String): Self = StObject.set(x, "cwd", js.Any.fromFunction0(value))
+      inline def setCwd(value: () => String): Self = StObject.set(x, "cwd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmitWarning(value: (String, String) => Unit): Self = StObject.set(x, "emitWarning", js.Any.fromFunction2(value))
+      inline def setEmitWarning(value: (String, String) => Unit): Self = StObject.set(x, "emitWarning", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetgid(value: () => Double): Self = StObject.set(x, "getgid", js.Any.fromFunction0(value))
+      inline def setGetgid(value: () => Double): Self = StObject.set(x, "getgid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetuid(value: () => Double): Self = StObject.set(x, "getuid", js.Any.fromFunction0(value))
+      inline def setGetuid(value: () => Double): Self = StObject.set(x, "getuid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextTick(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "nextTick", js.Any.fromFunction2(value))
+      inline def setNextTick(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "nextTick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
 }

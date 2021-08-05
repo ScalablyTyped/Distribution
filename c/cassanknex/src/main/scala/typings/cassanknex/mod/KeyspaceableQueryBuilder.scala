@@ -14,8 +14,7 @@ trait KeyspaceableQueryBuilder extends StObject {
 }
 object KeyspaceableQueryBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     withDurableWrites: Boolean => KeyspaceableQueryBuilder,
     withNetworkTopologyStrategy: MappedDict[Double] => KeyspaceableQueryBuilder,
     withSimpleStrategy: Double => KeyspaceableQueryBuilder
@@ -24,16 +23,12 @@ object KeyspaceableQueryBuilder {
     __obj.asInstanceOf[KeyspaceableQueryBuilder]
   }
   
-  @scala.inline
-  implicit class KeyspaceableQueryBuilderMutableBuilder[Self <: KeyspaceableQueryBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: KeyspaceableQueryBuilder](x: Self) {
     
-    @scala.inline
-    def setWithDurableWrites(value: Boolean => KeyspaceableQueryBuilder): Self = StObject.set(x, "withDurableWrites", js.Any.fromFunction1(value))
+    inline def setWithDurableWrites(value: Boolean => KeyspaceableQueryBuilder): Self = StObject.set(x, "withDurableWrites", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithNetworkTopologyStrategy(value: MappedDict[Double] => KeyspaceableQueryBuilder): Self = StObject.set(x, "withNetworkTopologyStrategy", js.Any.fromFunction1(value))
+    inline def setWithNetworkTopologyStrategy(value: MappedDict[Double] => KeyspaceableQueryBuilder): Self = StObject.set(x, "withNetworkTopologyStrategy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithSimpleStrategy(value: Double => KeyspaceableQueryBuilder): Self = StObject.set(x, "withSimpleStrategy", js.Any.fromFunction1(value))
+    inline def setWithSimpleStrategy(value: Double => KeyspaceableQueryBuilder): Self = StObject.set(x, "withSimpleStrategy", js.Any.fromFunction1(value))
   }
 }

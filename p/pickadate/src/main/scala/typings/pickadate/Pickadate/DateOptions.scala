@@ -94,142 +94,97 @@ trait DateOptions
 }
 object DateOptions {
   
-  @scala.inline
-  def apply(): DateOptions = {
+  inline def apply(): DateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateOptions]
   }
   
-  @scala.inline
-  implicit class DateOptionsMutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DateOptions](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
+    inline def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstDay(value: Boolean | Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
+    inline def setFirstDay(value: Boolean | Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDayUndefined: Self = StObject.set(x, "firstDay", js.undefined)
+    inline def setFirstDayUndefined: Self = StObject.set(x, "firstDay", js.undefined)
     
-    @scala.inline
-    def setKlass(value: DateKlassOptions): Self = StObject.set(x, "klass", value.asInstanceOf[js.Any])
+    inline def setKlass(value: DateKlassOptions): Self = StObject.set(x, "klass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKlassUndefined: Self = StObject.set(x, "klass", js.undefined)
+    inline def setKlassUndefined: Self = StObject.set(x, "klass", js.undefined)
     
-    @scala.inline
-    def setLabelMonthNext(value: String): Self = StObject.set(x, "labelMonthNext", value.asInstanceOf[js.Any])
+    inline def setLabelMonthNext(value: String): Self = StObject.set(x, "labelMonthNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelMonthNextUndefined: Self = StObject.set(x, "labelMonthNext", js.undefined)
+    inline def setLabelMonthNextUndefined: Self = StObject.set(x, "labelMonthNext", js.undefined)
     
-    @scala.inline
-    def setLabelMonthPrev(value: String): Self = StObject.set(x, "labelMonthPrev", value.asInstanceOf[js.Any])
+    inline def setLabelMonthPrev(value: String): Self = StObject.set(x, "labelMonthPrev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelMonthPrevUndefined: Self = StObject.set(x, "labelMonthPrev", js.undefined)
+    inline def setLabelMonthPrevUndefined: Self = StObject.set(x, "labelMonthPrev", js.undefined)
     
-    @scala.inline
-    def setLabelMonthSelect(value: String): Self = StObject.set(x, "labelMonthSelect", value.asInstanceOf[js.Any])
+    inline def setLabelMonthSelect(value: String): Self = StObject.set(x, "labelMonthSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelMonthSelectUndefined: Self = StObject.set(x, "labelMonthSelect", js.undefined)
+    inline def setLabelMonthSelectUndefined: Self = StObject.set(x, "labelMonthSelect", js.undefined)
     
-    @scala.inline
-    def setLabelYearSelect(value: String): Self = StObject.set(x, "labelYearSelect", value.asInstanceOf[js.Any])
+    inline def setLabelYearSelect(value: String): Self = StObject.set(x, "labelYearSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelYearSelectUndefined: Self = StObject.set(x, "labelYearSelect", js.undefined)
+    inline def setLabelYearSelectUndefined: Self = StObject.set(x, "labelYearSelect", js.undefined)
     
-    @scala.inline
-    def setMax(value: MinOrMaxDateOption): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: MinOrMaxDateOption): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: MinOrMaxDateOption): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: MinOrMaxDateOption): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMonthsFull(value: js.Array[String]): Self = StObject.set(x, "monthsFull", value.asInstanceOf[js.Any])
+    inline def setMonthsFull(value: js.Array[String]): Self = StObject.set(x, "monthsFull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthsFullUndefined: Self = StObject.set(x, "monthsFull", js.undefined)
+    inline def setMonthsFullUndefined: Self = StObject.set(x, "monthsFull", js.undefined)
     
-    @scala.inline
-    def setMonthsFullVarargs(value: String*): Self = StObject.set(x, "monthsFull", js.Array(value :_*))
+    inline def setMonthsFullVarargs(value: String*): Self = StObject.set(x, "monthsFull", js.Array(value :_*))
     
-    @scala.inline
-    def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
+    inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
+    inline def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
     
-    @scala.inline
-    def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectMonths(value: Boolean): Self = StObject.set(x, "selectMonths", value.asInstanceOf[js.Any])
+    inline def setSelectMonths(value: Boolean): Self = StObject.set(x, "selectMonths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectMonthsUndefined: Self = StObject.set(x, "selectMonths", js.undefined)
+    inline def setSelectMonthsUndefined: Self = StObject.set(x, "selectMonths", js.undefined)
     
-    @scala.inline
-    def setSelectYears(value: Boolean | Double): Self = StObject.set(x, "selectYears", value.asInstanceOf[js.Any])
+    inline def setSelectYears(value: Boolean | Double): Self = StObject.set(x, "selectYears", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectYearsUndefined: Self = StObject.set(x, "selectYears", js.undefined)
+    inline def setSelectYearsUndefined: Self = StObject.set(x, "selectYears", js.undefined)
     
-    @scala.inline
-    def setShowMonthsShort(value: Boolean): Self = StObject.set(x, "showMonthsShort", value.asInstanceOf[js.Any])
+    inline def setShowMonthsShort(value: Boolean): Self = StObject.set(x, "showMonthsShort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMonthsShortUndefined: Self = StObject.set(x, "showMonthsShort", js.undefined)
+    inline def setShowMonthsShortUndefined: Self = StObject.set(x, "showMonthsShort", js.undefined)
     
-    @scala.inline
-    def setShowWeekdaysFull(value: Boolean): Self = StObject.set(x, "showWeekdaysFull", value.asInstanceOf[js.Any])
+    inline def setShowWeekdaysFull(value: Boolean): Self = StObject.set(x, "showWeekdaysFull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowWeekdaysFullUndefined: Self = StObject.set(x, "showWeekdaysFull", js.undefined)
+    inline def setShowWeekdaysFullUndefined: Self = StObject.set(x, "showWeekdaysFull", js.undefined)
     
-    @scala.inline
-    def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+    inline def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
+    inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
     
-    @scala.inline
-    def setWeekdaysFull(value: js.Array[String]): Self = StObject.set(x, "weekdaysFull", value.asInstanceOf[js.Any])
+    inline def setWeekdaysFull(value: js.Array[String]): Self = StObject.set(x, "weekdaysFull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdaysFullUndefined: Self = StObject.set(x, "weekdaysFull", js.undefined)
+    inline def setWeekdaysFullUndefined: Self = StObject.set(x, "weekdaysFull", js.undefined)
     
-    @scala.inline
-    def setWeekdaysFullVarargs(value: String*): Self = StObject.set(x, "weekdaysFull", js.Array(value :_*))
+    inline def setWeekdaysFullVarargs(value: String*): Self = StObject.set(x, "weekdaysFull", js.Array(value :_*))
     
-    @scala.inline
-    def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
+    inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
+    inline def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
     
-    @scala.inline
-    def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
   }
 }

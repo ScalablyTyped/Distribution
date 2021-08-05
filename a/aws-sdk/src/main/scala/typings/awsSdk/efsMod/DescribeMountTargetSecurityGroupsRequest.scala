@@ -13,16 +13,13 @@ trait DescribeMountTargetSecurityGroupsRequest extends StObject {
 }
 object DescribeMountTargetSecurityGroupsRequest {
   
-  @scala.inline
-  def apply(MountTargetId: MountTargetId): DescribeMountTargetSecurityGroupsRequest = {
+  inline def apply(MountTargetId: MountTargetId): DescribeMountTargetSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal(MountTargetId = MountTargetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMountTargetSecurityGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeMountTargetSecurityGroupsRequestMutableBuilder[Self <: DescribeMountTargetSecurityGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMountTargetSecurityGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
+    inline def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
   }
 }

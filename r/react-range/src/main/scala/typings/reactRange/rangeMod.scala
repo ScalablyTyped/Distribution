@@ -35,50 +35,42 @@ object rangeMod {
       @JSImport("react-range/lib/Range", "default.defaultProps.allowOverlap")
       @js.native
       def allowOverlap: Boolean = js.native
-      @scala.inline
-      def allowOverlap_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowOverlap")(x.asInstanceOf[js.Any])
+      inline def allowOverlap_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowOverlap")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range/lib/Range", "default.defaultProps.direction")
       @js.native
       def direction: Direction = js.native
-      @scala.inline
-      def direction_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
+      inline def direction_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range/lib/Range", "default.defaultProps.disabled")
       @js.native
       def disabled: Boolean = js.native
-      @scala.inline
-      def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+      inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range/lib/Range", "default.defaultProps.draggableTrack")
       @js.native
       def draggableTrack: Boolean = js.native
-      @scala.inline
-      def draggableTrack_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("draggableTrack")(x.asInstanceOf[js.Any])
+      inline def draggableTrack_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("draggableTrack")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range/lib/Range", "default.defaultProps.max")
       @js.native
       def max: Double = js.native
-      @scala.inline
-      def max_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max")(x.asInstanceOf[js.Any])
+      inline def max_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range/lib/Range", "default.defaultProps.min")
       @js.native
       def min: Double = js.native
-      @scala.inline
-      def min_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("min")(x.asInstanceOf[js.Any])
+      inline def min_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("min")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range/lib/Range", "default.defaultProps.rtl")
       @js.native
       def rtl: Boolean = js.native
-      @scala.inline
-      def rtl_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtl")(x.asInstanceOf[js.Any])
+      inline def rtl_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtl")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range/lib/Range", "default.defaultProps.step")
       @js.native
       def step: Double = js.native
-      @scala.inline
-      def step_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("step")(x.asInstanceOf[js.Any])
+      inline def step_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("step")(x.asInstanceOf[js.Any])
     }
   }
   

@@ -13,22 +13,17 @@ trait Preview extends StObject {
 }
 object Preview {
   
-  @scala.inline
-  def apply(url: String): Preview = {
+  inline def apply(url: String): Preview = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Preview]
   }
   
-  @scala.inline
-  implicit class PreviewMutableBuilder[Self <: Preview] (val x: Self) extends AnyVal {
+  extension [Self <: Preview](x: Self) {
     
-    @scala.inline
-    def setArtwork(value: Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+    inline def setArtwork(value: Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
+    inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait Point
      with typings.uifabricUtilities.pointMod.Point
 object Point {
   
-  @scala.inline
-  def apply(): Point = {
+  inline def apply(): Point = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Point]
   }

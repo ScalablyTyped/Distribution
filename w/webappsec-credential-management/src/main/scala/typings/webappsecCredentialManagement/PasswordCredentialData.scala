@@ -18,16 +18,13 @@ trait PasswordCredentialData
 }
 object PasswordCredentialData {
   
-  @scala.inline
-  def apply(id: String, password: String): PasswordCredentialData = {
+  inline def apply(id: String, password: String): PasswordCredentialData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordCredentialData]
   }
   
-  @scala.inline
-  implicit class PasswordCredentialDataMutableBuilder[Self <: PasswordCredentialData] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordCredentialData](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation exten
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotationMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation](x: Self) {
     
-    @scala.inline
-    def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p2beta1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
   }
 }

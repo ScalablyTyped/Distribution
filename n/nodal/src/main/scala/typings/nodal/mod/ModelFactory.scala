@@ -14,7 +14,7 @@ class ModelFactory protected () extends StObject {
     */
   def this(modelConstructor: TypeofModel) = this()
   
-  var Model: js.Any = js.native
+  /* private */ var Model: js.Any = js.native
   
   /**
     * Creates models from an array of Objects containing the model data
@@ -35,20 +35,17 @@ object ModelFactory {
     * @param {Object} objModelData Keys are model names, values are arrays of model data you wish to create
     * @param {Function} callback What to execute upon completion
     */
-  @scala.inline
-  def createFromModels(Models: js.Array[TypeofModel], objModelData: IModelData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromModels")(Models.asInstanceOf[js.Any], objModelData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createFromModels(Models: js.Array[TypeofModel], objModelData: IModelData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromModels")(Models.asInstanceOf[js.Any], objModelData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Loads all model constructors in your ./app/models directory into an array
     * @return {Array} Array of model Constructors
     */
-  @scala.inline
-  def loadModels(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadModels")().asInstanceOf[js.Array[js.Any]]
+  inline def loadModels(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadModels")().asInstanceOf[js.Array[js.Any]]
   
   /**
     * Populates a large amount of model data from an Object.
     * @param {Array} Models Array of Model constructors
     */
-  @scala.inline
-  def populate(objModelData: IModelData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(objModelData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def populate(objModelData: IModelData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(objModelData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

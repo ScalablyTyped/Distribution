@@ -13,6 +13,5 @@ object isNanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isNaN[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def isNaN[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

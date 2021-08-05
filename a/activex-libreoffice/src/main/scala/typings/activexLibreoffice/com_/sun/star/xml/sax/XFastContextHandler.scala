@@ -61,8 +61,7 @@ trait XFastContextHandler
 }
 object XFastContextHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     characters: String => Unit,
     createFastChildContext: (Double, XFastAttributeList) => XFastContextHandler,
@@ -78,28 +77,20 @@ object XFastContextHandler {
     __obj.asInstanceOf[XFastContextHandler]
   }
   
-  @scala.inline
-  implicit class XFastContextHandlerMutableBuilder[Self <: XFastContextHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XFastContextHandler](x: Self) {
     
-    @scala.inline
-    def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
+    inline def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFastChildContext(value: (Double, XFastAttributeList) => XFastContextHandler): Self = StObject.set(x, "createFastChildContext", js.Any.fromFunction2(value))
+    inline def setCreateFastChildContext(value: (Double, XFastAttributeList) => XFastContextHandler): Self = StObject.set(x, "createFastChildContext", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUnknownChildContext(value: (String, String, XFastAttributeList) => XFastContextHandler): Self = StObject.set(x, "createUnknownChildContext", js.Any.fromFunction3(value))
+    inline def setCreateUnknownChildContext(value: (String, String, XFastAttributeList) => XFastContextHandler): Self = StObject.set(x, "createUnknownChildContext", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEndFastElement(value: Double => Unit): Self = StObject.set(x, "endFastElement", js.Any.fromFunction1(value))
+    inline def setEndFastElement(value: Double => Unit): Self = StObject.set(x, "endFastElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndUnknownElement(value: (String, String) => Unit): Self = StObject.set(x, "endUnknownElement", js.Any.fromFunction2(value))
+    inline def setEndUnknownElement(value: (String, String) => Unit): Self = StObject.set(x, "endUnknownElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartFastElement(value: (Double, XFastAttributeList) => Unit): Self = StObject.set(x, "startFastElement", js.Any.fromFunction2(value))
+    inline def setStartFastElement(value: (Double, XFastAttributeList) => Unit): Self = StObject.set(x, "startFastElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartUnknownElement(value: (String, String, XFastAttributeList) => Unit): Self = StObject.set(x, "startUnknownElement", js.Any.fromFunction3(value))
+    inline def setStartUnknownElement(value: (String, String, XFastAttributeList) => Unit): Self = StObject.set(x, "startUnknownElement", js.Any.fromFunction3(value))
   }
 }

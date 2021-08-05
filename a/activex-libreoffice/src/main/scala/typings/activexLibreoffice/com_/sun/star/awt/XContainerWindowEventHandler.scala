@@ -39,8 +39,7 @@ trait XContainerWindowEventHandler
 }
 object XContainerWindowEventHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedMethodNames: SafeArray[String],
     acquire: () => Unit,
     callHandlerMethod: (XWindow, js.Any, String) => Boolean,
@@ -52,16 +51,12 @@ object XContainerWindowEventHandler {
     __obj.asInstanceOf[XContainerWindowEventHandler]
   }
   
-  @scala.inline
-  implicit class XContainerWindowEventHandlerMutableBuilder[Self <: XContainerWindowEventHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XContainerWindowEventHandler](x: Self) {
     
-    @scala.inline
-    def setCallHandlerMethod(value: (XWindow, js.Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
+    inline def setCallHandlerMethod(value: (XWindow, js.Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetSupportedMethodNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMethodNames", js.Any.fromFunction0(value))
+    inline def setGetSupportedMethodNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMethodNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSupportedMethodNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedMethodNames", value.asInstanceOf[js.Any])
+    inline def setSupportedMethodNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedMethodNames", value.asInstanceOf[js.Any])
   }
 }

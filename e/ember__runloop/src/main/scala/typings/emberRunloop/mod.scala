@@ -17,19 +17,15 @@ object mod {
   @js.native
   val begin: js.Function0[Unit] = js.native
   
-  @scala.inline
-  def bind[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.Function1[/* repeated */ js.Any, Ret] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Ret]]
+  inline def bind[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.Function1[/* repeated */ js.Any, Ret] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Ret]]
   
   @JSImport("@ember/runloop", "cancel")
   @js.native
   val cancel: js.Function1[/* timer */ EmberRunTimer, Boolean] = js.native
   
-  @scala.inline
-  def debounce(method: js.Function1[/* repeated */ js.Any, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce(method: js.Function1[/* repeated */ js.Any, js.Any], wait: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce(method: js.Function1[/* repeated */ js.Any, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def debounce(method: js.Function1[/* repeated */ js.Any, js.Any], wait: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -40,8 +36,7 @@ object mod {
     arg5: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -53,8 +48,7 @@ object mod {
     wait: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -64,8 +58,7 @@ object mod {
     arg4: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -76,8 +69,7 @@ object mod {
     wait: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -86,8 +78,7 @@ object mod {
     arg3: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -97,8 +88,7 @@ object mod {
     wait: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -106,8 +96,7 @@ object mod {
     arg2: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -116,10 +105,8 @@ object mod {
     wait: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](
+  inline def debounce[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def debounce[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -127,28 +114,20 @@ object mod {
     wait: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, wait: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](target: Target, method: RunMethod[Target, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def debounce[Target](target: Target, method: RunMethod[Target, js.Any], wait: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def debounce[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def debounce[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, wait: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def debounce[Target](target: Target, method: RunMethod[Target, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def debounce[Target](target: Target, method: RunMethod[Target, js.Any], wait: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
   
   @JSImport("@ember/runloop", "end")
   @js.native
   val end: js.Function0[Unit] = js.native
   
-  @scala.inline
-  def join[Ret](method: js.Function1[/* repeated */ js.Any, Ret], args: js.Any*): js.UndefOr[Ret] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Ret]]
-  @scala.inline
-  def join[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.UndefOr[Ret] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Ret]]
+  inline def join[Ret](method: js.Function1[/* repeated */ js.Any, Ret], args: js.Any*): js.UndefOr[Ret] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Ret]]
+  inline def join[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.UndefOr[Ret] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Ret]]
   
-  @scala.inline
-  def later(method: js.Function1[/* repeated */ js.Any, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def later[Target](
+  inline def later(method: js.Function1[/* repeated */ js.Any, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def later[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -159,8 +138,7 @@ object mod {
     arg5: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def later[Target](
+  inline def later[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -170,8 +148,7 @@ object mod {
     arg4: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def later[Target](
+  inline def later[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -180,8 +157,7 @@ object mod {
     arg3: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def later[Target](
+  inline def later[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -189,39 +165,27 @@ object mod {
     arg2: js.Any,
     wait: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def later[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def later[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def later[Target](target: Target, method: RunMethod[Target, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def later[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def later[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def later[Target](target: Target, method: RunMethod[Target, js.Any], wait: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
   
-  @scala.inline
-  def next(method: js.Function0[Unit], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def next[Target](target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def next(method: js.Function0[Unit], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def next[Target](target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
   
-  @scala.inline
-  def once[Target](target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def once[Target](target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
   
   @JSImport("@ember/runloop", "run")
   @js.native
   val run: RunNamespace = js.native
   
-  @scala.inline
-  def schedule(queue: EmberRunQueues, method: js.Function1[/* args */ js.Array[js.Any], js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(queue.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def schedule[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(queue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def schedule(queue: EmberRunQueues, method: js.Function1[/* args */ js.Array[js.Any], js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(queue.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def schedule[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(queue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
   
-  @scala.inline
-  def scheduleOnce[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleOnce")(queue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def scheduleOnce[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, js.Any], args: js.Any*): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleOnce")(queue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
   
-  @scala.inline
-  def throttle(method: js.Function1[/* repeated */ js.Any, js.Any], spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle(method: js.Function1[/* repeated */ js.Any, js.Any], spacing: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle(method: js.Function1[/* repeated */ js.Any, js.Any], spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def throttle(method: js.Function1[/* repeated */ js.Any, js.Any], spacing: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -232,8 +196,7 @@ object mod {
     arg5: js.Any,
     spacing: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -245,8 +208,7 @@ object mod {
     spacing: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -256,8 +218,7 @@ object mod {
     arg4: js.Any,
     spacing: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -268,8 +229,7 @@ object mod {
     spacing: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -278,8 +238,7 @@ object mod {
     arg3: js.Any,
     spacing: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -289,8 +248,7 @@ object mod {
     spacing: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -298,8 +256,7 @@ object mod {
     arg2: js.Any,
     spacing: Double
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -308,10 +265,8 @@ object mod {
     spacing: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, arg1: js.Any, spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, arg1: js.Any, spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
@@ -319,20 +274,16 @@ object mod {
     spacing: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](
+  inline def throttle[Target](target: Target, method: RunMethod[Target, js.Any], arg0: js.Any, spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def throttle[Target](
     target: Target,
     method: RunMethod[Target, js.Any],
     arg0: js.Any,
     spacing: Double,
     immediate: Boolean
   ): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], arg0.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](target: Target, method: RunMethod[Target, js.Any], spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
-  @scala.inline
-  def throttle[Target](target: Target, method: RunMethod[Target, js.Any], spacing: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def throttle[Target](target: Target, method: RunMethod[Target, js.Any], spacing: Double): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
+  inline def throttle[Target](target: Target, method: RunMethod[Target, js.Any], spacing: Double, immediate: Boolean): EmberRunTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[EmberRunTimer]
   
   @js.native
   trait RunNamespace extends StObject {

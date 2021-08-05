@@ -33,49 +33,35 @@ trait DescribeCarrierGatewaysRequest extends StObject {
 }
 object DescribeCarrierGatewaysRequest {
   
-  @scala.inline
-  def apply(): DescribeCarrierGatewaysRequest = {
+  inline def apply(): DescribeCarrierGatewaysRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCarrierGatewaysRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCarrierGatewaysRequestMutableBuilder[Self <: DescribeCarrierGatewaysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCarrierGatewaysRequest](x: Self) {
     
-    @scala.inline
-    def setCarrierGatewayIds(value: CarrierGatewayIdSet): Self = StObject.set(x, "CarrierGatewayIds", value.asInstanceOf[js.Any])
+    inline def setCarrierGatewayIds(value: CarrierGatewayIdSet): Self = StObject.set(x, "CarrierGatewayIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierGatewayIdsUndefined: Self = StObject.set(x, "CarrierGatewayIds", js.undefined)
+    inline def setCarrierGatewayIdsUndefined: Self = StObject.set(x, "CarrierGatewayIds", js.undefined)
     
-    @scala.inline
-    def setCarrierGatewayIdsVarargs(value: CarrierGatewayId*): Self = StObject.set(x, "CarrierGatewayIds", js.Array(value :_*))
+    inline def setCarrierGatewayIdsVarargs(value: CarrierGatewayId*): Self = StObject.set(x, "CarrierGatewayIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: CarrierGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: CarrierGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

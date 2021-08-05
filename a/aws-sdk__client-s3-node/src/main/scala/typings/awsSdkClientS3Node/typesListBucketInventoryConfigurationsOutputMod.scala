@@ -37,41 +37,30 @@ object typesListBucketInventoryConfigurationsOutputMod {
   }
   object ListBucketInventoryConfigurationsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListBucketInventoryConfigurationsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListBucketInventoryConfigurationsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListBucketInventoryConfigurationsOutput]
     }
     
-    @scala.inline
-    implicit class ListBucketInventoryConfigurationsOutputMutableBuilder[Self <: ListBucketInventoryConfigurationsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBucketInventoryConfigurationsOutput](x: Self) {
       
-      @scala.inline
-      def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
+      inline def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
+      inline def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
       
-      @scala.inline
-      def setInventoryConfigurationList(value: js.Array[UnmarshalledInventoryConfiguration]): Self = StObject.set(x, "InventoryConfigurationList", value.asInstanceOf[js.Any])
+      inline def setInventoryConfigurationList(value: js.Array[UnmarshalledInventoryConfiguration]): Self = StObject.set(x, "InventoryConfigurationList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInventoryConfigurationListUndefined: Self = StObject.set(x, "InventoryConfigurationList", js.undefined)
+      inline def setInventoryConfigurationListUndefined: Self = StObject.set(x, "InventoryConfigurationList", js.undefined)
       
-      @scala.inline
-      def setInventoryConfigurationListVarargs(value: UnmarshalledInventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value :_*))
+      inline def setInventoryConfigurationListVarargs(value: UnmarshalledInventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value :_*))
       
-      @scala.inline
-      def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+      inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+      inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
       
-      @scala.inline
-      def setNextContinuationToken(value: String): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
+      inline def setNextContinuationToken(value: String): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
+      inline def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
     }
   }
 }

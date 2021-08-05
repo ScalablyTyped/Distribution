@@ -18,8 +18,7 @@ trait ParametersReposCreateCommitSignatureProtectionEndpoint extends StObject {
 }
 object ParametersReposCreateCommitSignatureProtectionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposCreateCommitSignatureProtectionEndpoint,
     request: ReposCreateCommitSignatureProtectionRequestOptions,
     response: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData]
@@ -28,16 +27,12 @@ object ParametersReposCreateCommitSignatureProtectionEndpoint {
     __obj.asInstanceOf[ParametersReposCreateCommitSignatureProtectionEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposCreateCommitSignatureProtectionEndpointMutableBuilder[Self <: ParametersReposCreateCommitSignatureProtectionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposCreateCommitSignatureProtectionEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposCreateCommitSignatureProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposCreateCommitSignatureProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposCreateCommitSignatureProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposCreateCommitSignatureProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait TimeZone extends StObject {
 }
 object TimeZone {
   
-  @scala.inline
-  def apply(date: date, dateTime: datetime): TimeZone = {
+  inline def apply(date: date, dateTime: datetime): TimeZone = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], dateTime = dateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZone]
   }
   
-  @scala.inline
-  implicit class TimeZoneMutableBuilder[Self <: TimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: TimeZone](x: Self) {
     
-    @scala.inline
-    def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTime(value: datetime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: datetime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

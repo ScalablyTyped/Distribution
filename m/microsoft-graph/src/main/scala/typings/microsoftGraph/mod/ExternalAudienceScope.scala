@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExternalAudienceScope extends StObject
 object ExternalAudienceScope {
   
-  @scala.inline
-  def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
+  inline def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
   
-  @scala.inline
-  def contactsOnly: typings.microsoftGraph.microsoftGraphStrings.contactsOnly = "contactsOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.contactsOnly]
+  inline def contactsOnly: typings.microsoftGraph.microsoftGraphStrings.contactsOnly = "contactsOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.contactsOnly]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
 }

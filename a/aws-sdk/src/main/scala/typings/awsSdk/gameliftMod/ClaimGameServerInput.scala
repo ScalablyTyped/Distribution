@@ -23,28 +23,21 @@ trait ClaimGameServerInput extends StObject {
 }
 object ClaimGameServerInput {
   
-  @scala.inline
-  def apply(GameServerGroupName: GameServerGroupNameOrArn): ClaimGameServerInput = {
+  inline def apply(GameServerGroupName: GameServerGroupNameOrArn): ClaimGameServerInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimGameServerInput]
   }
   
-  @scala.inline
-  implicit class ClaimGameServerInputMutableBuilder[Self <: ClaimGameServerInput] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimGameServerInput](x: Self) {
     
-    @scala.inline
-    def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
+    inline def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
+    inline def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
+    inline def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerIdUndefined: Self = StObject.set(x, "GameServerId", js.undefined)
+    inline def setGameServerIdUndefined: Self = StObject.set(x, "GameServerId", js.undefined)
   }
 }

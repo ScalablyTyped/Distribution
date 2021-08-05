@@ -48,43 +48,32 @@ object typesTestRepositoryTriggersInputMod {
   }
   object TestRepositoryTriggersInput {
     
-    @scala.inline
-    def apply(repositoryName: String, triggers: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): TestRepositoryTriggersInput = {
+    inline def apply(repositoryName: String, triggers: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): TestRepositoryTriggersInput = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestRepositoryTriggersInput]
     }
     
-    @scala.inline
-    implicit class TestRepositoryTriggersInputMutableBuilder[Self <: TestRepositoryTriggersInput] (val x: Self) extends AnyVal {
+    extension [Self <: TestRepositoryTriggersInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggers(value: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggersVarargs(value: RepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+      inline def setTriggersVarargs(value: RepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
     }
   }
 }

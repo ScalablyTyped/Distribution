@@ -10,16 +10,13 @@ trait IGyrometerStatics extends StObject {
 }
 object IGyrometerStatics {
   
-  @scala.inline
-  def apply(getDefault: () => Gyrometer): IGyrometerStatics = {
+  inline def apply(getDefault: () => Gyrometer): IGyrometerStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[IGyrometerStatics]
   }
   
-  @scala.inline
-  implicit class IGyrometerStaticsMutableBuilder[Self <: IGyrometerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IGyrometerStatics](x: Self) {
     
-    @scala.inline
-    def setGetDefault(value: () => Gyrometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => Gyrometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }
 }

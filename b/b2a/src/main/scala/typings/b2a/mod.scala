@@ -10,12 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atob(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def atob(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts text into base64 string
     */
-  @scala.inline
-  def btoa(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def btoa(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -16,7 +16,7 @@ trait NavigationGroup extends StObject {
   
   val NavigationFolders: typings.activexOutlook.Outlook.NavigationFolders
   
-  @JSName("Outlook.NavigationGroup_typekey")
+  /* private */ @JSName("Outlook.NavigationGroup_typekey")
   var OutlookDotNavigationGroup_typekey: NavigationGroup
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait NavigationGroup extends StObject {
 }
 object NavigationGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     GroupType: OlGroupType,
@@ -44,34 +43,24 @@ object NavigationGroup {
     __obj.asInstanceOf[NavigationGroup]
   }
   
-  @scala.inline
-  implicit class NavigationGroupMutableBuilder[Self <: NavigationGroup] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationGroup](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupType(value: OlGroupType): Self = StObject.set(x, "GroupType", value.asInstanceOf[js.Any])
+    inline def setGroupType(value: OlGroupType): Self = StObject.set(x, "GroupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationFolders(value: NavigationFolders): Self = StObject.set(x, "NavigationFolders", value.asInstanceOf[js.Any])
+    inline def setNavigationFolders(value: NavigationFolders): Self = StObject.set(x, "NavigationFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotNavigationGroup_typekey(value: NavigationGroup): Self = StObject.set(x, "Outlook.NavigationGroup_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotNavigationGroup_typekey(value: NavigationGroup): Self = StObject.set(x, "Outlook.NavigationGroup_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

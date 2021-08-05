@@ -21,14 +21,12 @@ object Inclinometer {
     * @return The default inclinometer or null if no inclinometers are found.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Inclinometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Inclinometer]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Inclinometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Inclinometer]
   
   /**
     * Returns the default inclinometer.
     * @return The default inclinometer or null if no inclinometers are found.
     */
   /* static member */
-  @scala.inline
-  def getDefaultForRelativeReadings(): typings.winrtUwp.Windows.Devices.Sensors.Inclinometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultForRelativeReadings")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Inclinometer]
+  inline def getDefaultForRelativeReadings(): typings.winrtUwp.Windows.Devices.Sensors.Inclinometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultForRelativeReadings")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Inclinometer]
 }

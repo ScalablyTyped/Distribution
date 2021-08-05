@@ -28,28 +28,21 @@ trait PostAgentProfileRequest extends StObject {
 }
 object PostAgentProfileRequest {
   
-  @scala.inline
-  def apply(agentProfile: AgentProfile, contentType: String, profilingGroupName: ProfilingGroupName): PostAgentProfileRequest = {
+  inline def apply(agentProfile: AgentProfile, contentType: String, profilingGroupName: ProfilingGroupName): PostAgentProfileRequest = {
     val __obj = js.Dynamic.literal(agentProfile = agentProfile.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostAgentProfileRequest]
   }
   
-  @scala.inline
-  implicit class PostAgentProfileRequestMutableBuilder[Self <: PostAgentProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PostAgentProfileRequest](x: Self) {
     
-    @scala.inline
-    def setAgentProfile(value: AgentProfile): Self = StObject.set(x, "agentProfile", value.asInstanceOf[js.Any])
+    inline def setAgentProfile(value: AgentProfile): Self = StObject.set(x, "agentProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileToken(value: ClientToken): Self = StObject.set(x, "profileToken", value.asInstanceOf[js.Any])
+    inline def setProfileToken(value: ClientToken): Self = StObject.set(x, "profileToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileTokenUndefined: Self = StObject.set(x, "profileToken", js.undefined)
+    inline def setProfileTokenUndefined: Self = StObject.set(x, "profileToken", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

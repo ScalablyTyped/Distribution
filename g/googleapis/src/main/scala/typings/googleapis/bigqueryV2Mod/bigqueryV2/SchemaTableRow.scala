@@ -14,22 +14,17 @@ trait SchemaTableRow extends StObject {
 }
 object SchemaTableRow {
   
-  @scala.inline
-  def apply(): SchemaTableRow = {
+  inline def apply(): SchemaTableRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableRow]
   }
   
-  @scala.inline
-  implicit class SchemaTableRowMutableBuilder[Self <: SchemaTableRow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableRow](x: Self) {
     
-    @scala.inline
-    def setF(value: js.Array[SchemaTableCell]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: js.Array[SchemaTableCell]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFUndefined: Self = StObject.set(x, "f", js.undefined)
+    inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
-    @scala.inline
-    def setFVarargs(value: SchemaTableCell*): Self = StObject.set(x, "f", js.Array(value :_*))
+    inline def setFVarargs(value: SchemaTableCell*): Self = StObject.set(x, "f", js.Array(value :_*))
   }
 }

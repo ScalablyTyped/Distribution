@@ -23,31 +23,23 @@ trait Export extends StObject {
 }
 object Export {
   
-  @scala.inline
-  def apply(): Export = {
+  inline def apply(): Export = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Export]
   }
   
-  @scala.inline
-  implicit class ExportMutableBuilder[Self <: Export] (val x: Self) extends AnyVal {
+  extension [Self <: Export](x: Self) {
     
-    @scala.inline
-    def setExportingStackId(value: StackId): Self = StObject.set(x, "ExportingStackId", value.asInstanceOf[js.Any])
+    inline def setExportingStackId(value: StackId): Self = StObject.set(x, "ExportingStackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportingStackIdUndefined: Self = StObject.set(x, "ExportingStackId", js.undefined)
+    inline def setExportingStackIdUndefined: Self = StObject.set(x, "ExportingStackId", js.undefined)
     
-    @scala.inline
-    def setName(value: ExportName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ExportName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: ExportValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ExportValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

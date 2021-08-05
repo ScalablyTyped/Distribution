@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineStyle extends StObject
 object LineStyle {
   
-  @scala.inline
-  def dashed: typings.cytoscape.cytoscapeStrings.dashed = "dashed".asInstanceOf[typings.cytoscape.cytoscapeStrings.dashed]
+  inline def dashed: typings.cytoscape.cytoscapeStrings.dashed = "dashed".asInstanceOf[typings.cytoscape.cytoscapeStrings.dashed]
   
-  @scala.inline
-  def dotted: typings.cytoscape.cytoscapeStrings.dotted = "dotted".asInstanceOf[typings.cytoscape.cytoscapeStrings.dotted]
+  inline def dotted: typings.cytoscape.cytoscapeStrings.dotted = "dotted".asInstanceOf[typings.cytoscape.cytoscapeStrings.dotted]
   
-  @scala.inline
-  def double: typings.cytoscape.cytoscapeStrings.double = "double".asInstanceOf[typings.cytoscape.cytoscapeStrings.double]
+  inline def double: typings.cytoscape.cytoscapeStrings.double = "double".asInstanceOf[typings.cytoscape.cytoscapeStrings.double]
   
-  @scala.inline
-  def solid: typings.cytoscape.cytoscapeStrings.solid = "solid".asInstanceOf[typings.cytoscape.cytoscapeStrings.solid]
+  inline def solid: typings.cytoscape.cytoscapeStrings.solid = "solid".asInstanceOf[typings.cytoscape.cytoscapeStrings.solid]
 }

@@ -18,25 +18,19 @@ trait SchemaFacet extends StObject {
 }
 object SchemaFacet {
   
-  @scala.inline
-  def apply(): SchemaFacet = {
+  inline def apply(): SchemaFacet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFacet]
   }
   
-  @scala.inline
-  implicit class SchemaFacetMutableBuilder[Self <: SchemaFacet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFacet](x: Self) {
     
-    @scala.inline
-    def setFacetName(value: FacetName): Self = StObject.set(x, "FacetName", value.asInstanceOf[js.Any])
+    inline def setFacetName(value: FacetName): Self = StObject.set(x, "FacetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetNameUndefined: Self = StObject.set(x, "FacetName", js.undefined)
+    inline def setFacetNameUndefined: Self = StObject.set(x, "FacetName", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
+    inline def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
   }
 }

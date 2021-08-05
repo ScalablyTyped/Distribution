@@ -24,12 +24,9 @@ object mod {
   	//=> [TimeoutError: Promise timed out after 50 milliseconds]
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](input: js.Thenable[ValueType], milliseconds: Double): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
-  @scala.inline
-  def apply[ValueType](input: js.Thenable[ValueType], milliseconds: Double, message: String): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
-  @scala.inline
-  def apply[ValueType](input: js.Thenable[ValueType], milliseconds: Double, message: Error): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
+  inline def apply[ValueType](input: js.Thenable[ValueType], milliseconds: Double): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
+  inline def apply[ValueType](input: js.Thenable[ValueType], milliseconds: Double, message: String): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
+  inline def apply[ValueType](input: js.Thenable[ValueType], milliseconds: Double, message: Error): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
   /**
   	Timeout a promise after a specified amount of time.
   	If you pass in a cancelable promise, specifically a promise with a `.cancel()` method, that method will be called when the `pTimeout` promise times out.
@@ -47,8 +44,7 @@ object mod {
   	});
   	```
   	*/
-  @scala.inline
-  def apply[ValueType, ReturnType](
+  inline def apply[ValueType, ReturnType](
     input: js.Thenable[ValueType],
     milliseconds: Double,
     fallback: js.Function0[ReturnType | js.Promise[ReturnType]]
@@ -86,11 +82,9 @@ object mod {
     override val name_TimeoutErrorClass: typings.pTimeout.pTimeoutStrings.TimeoutError = js.native
   }
   
-  @scala.inline
-  def TimeoutError_=(x: Instantiable1[/* message */ js.UndefOr[String], TimeoutErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimeoutError")(x.asInstanceOf[js.Any])
+  inline def TimeoutError_=(x: Instantiable1[/* message */ js.UndefOr[String], TimeoutErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimeoutError")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimeout */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimeout */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait TimeoutErrorClass
     extends StObject
@@ -101,17 +95,14 @@ object mod {
   }
   object TimeoutErrorClass {
     
-    @scala.inline
-    def apply(message: String): TimeoutErrorClass = {
+    inline def apply(message: String): TimeoutErrorClass = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "TimeoutError")
       __obj.asInstanceOf[TimeoutErrorClass]
     }
     
-    @scala.inline
-    implicit class TimeoutErrorClassMutableBuilder[Self <: TimeoutErrorClass] (val x: Self) extends AnyVal {
+    extension [Self <: TimeoutErrorClass](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.pTimeout.pTimeoutStrings.TimeoutError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.pTimeout.pTimeoutStrings.TimeoutError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

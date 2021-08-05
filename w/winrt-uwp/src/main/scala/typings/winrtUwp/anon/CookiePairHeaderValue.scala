@@ -13,19 +13,15 @@ trait CookiePairHeaderValue extends StObject {
 }
 object CookiePairHeaderValue {
   
-  @scala.inline
-  def apply(cookiePairHeaderValue: HttpCookiePairHeaderValue, returnValue: Boolean): CookiePairHeaderValue = {
+  inline def apply(cookiePairHeaderValue: HttpCookiePairHeaderValue, returnValue: Boolean): CookiePairHeaderValue = {
     val __obj = js.Dynamic.literal(cookiePairHeaderValue = cookiePairHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookiePairHeaderValue]
   }
   
-  @scala.inline
-  implicit class CookiePairHeaderValueMutableBuilder[Self <: CookiePairHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: CookiePairHeaderValue](x: Self) {
     
-    @scala.inline
-    def setCookiePairHeaderValue(value: HttpCookiePairHeaderValue): Self = StObject.set(x, "cookiePairHeaderValue", value.asInstanceOf[js.Any])
+    inline def setCookiePairHeaderValue(value: HttpCookiePairHeaderValue): Self = StObject.set(x, "cookiePairHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

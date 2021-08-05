@@ -12,8 +12,7 @@ trait ParameterRuleCustom
      with _ParameterRuleItem
 object ParameterRuleCustom {
   
-  @scala.inline
-  def apply(`type`: String): ParameterRuleCustom = {
+  inline def apply(`type`: String): ParameterRuleCustom = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleCustom]

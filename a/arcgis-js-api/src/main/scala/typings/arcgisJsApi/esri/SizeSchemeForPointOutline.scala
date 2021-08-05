@@ -26,8 +26,7 @@ trait SizeSchemeForPointOutline
 }
 object SizeSchemeForPointOutline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object SizeSchemeForPointOutline {
     __obj.asInstanceOf[SizeSchemeForPointOutline]
   }
   
-  @scala.inline
-  implicit class SizeSchemeForPointOutlineMutableBuilder[Self <: SizeSchemeForPointOutline] (val x: Self) extends AnyVal {
+  extension [Self <: SizeSchemeForPointOutline](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

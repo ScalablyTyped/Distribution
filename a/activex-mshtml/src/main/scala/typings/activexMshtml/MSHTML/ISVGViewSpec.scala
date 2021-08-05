@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISVGViewSpec extends StObject {
   
-  @JSName("MSHTML.ISVGViewSpec_typekey")
+  /* private */ @JSName("MSHTML.ISVGViewSpec_typekey")
   var MSHTMLDotISVGViewSpec_typekey: ISVGViewSpec
 }
 object ISVGViewSpec {
   
-  @scala.inline
-  def apply(MSHTMLDotISVGViewSpec_typekey: ISVGViewSpec): ISVGViewSpec = {
+  inline def apply(MSHTMLDotISVGViewSpec_typekey: ISVGViewSpec): ISVGViewSpec = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("MSHTML.ISVGViewSpec_typekey")(MSHTMLDotISVGViewSpec_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISVGViewSpec]
   }
   
-  @scala.inline
-  implicit class ISVGViewSpecMutableBuilder[Self <: ISVGViewSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ISVGViewSpec](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotISVGViewSpec_typekey(value: ISVGViewSpec): Self = StObject.set(x, "MSHTML.ISVGViewSpec_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotISVGViewSpec_typekey(value: ISVGViewSpec): Self = StObject.set(x, "MSHTML.ISVGViewSpec_typekey", value.asInstanceOf[js.Any])
   }
 }

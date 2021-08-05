@@ -12,8 +12,7 @@ trait ASPxClientMonthlyRecurrenceControl
      with ASPxClientRecurrenceControlBase
 object ASPxClientMonthlyRecurrenceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CreateValueAccessor: () => DefaultRecurrenceRuleValuesAccessor,
     GetClientVisible: () => Boolean,

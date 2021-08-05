@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.RulerLevel")
 @js.native
-class RulerLevel protected ()
+/* private */ class RulerLevel ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.RulerLevel {
   
@@ -22,7 +22,7 @@ class RulerLevel protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.RulerLevel_typekey")
   var PowerPointDotRulerLevel_typekey: typings.activexPowerpoint.PowerPoint.RulerLevel = js.native
 }

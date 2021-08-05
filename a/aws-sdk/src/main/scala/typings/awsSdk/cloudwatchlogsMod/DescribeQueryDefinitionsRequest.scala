@@ -20,31 +20,23 @@ trait DescribeQueryDefinitionsRequest extends StObject {
 }
 object DescribeQueryDefinitionsRequest {
   
-  @scala.inline
-  def apply(): DescribeQueryDefinitionsRequest = {
+  inline def apply(): DescribeQueryDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeQueryDefinitionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeQueryDefinitionsRequestMutableBuilder[Self <: DescribeQueryDefinitionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeQueryDefinitionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: QueryListMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: QueryListMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setQueryDefinitionNamePrefix(value: QueryDefinitionName): Self = StObject.set(x, "queryDefinitionNamePrefix", value.asInstanceOf[js.Any])
+    inline def setQueryDefinitionNamePrefix(value: QueryDefinitionName): Self = StObject.set(x, "queryDefinitionNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryDefinitionNamePrefixUndefined: Self = StObject.set(x, "queryDefinitionNamePrefix", js.undefined)
+    inline def setQueryDefinitionNamePrefixUndefined: Self = StObject.set(x, "queryDefinitionNamePrefix", js.undefined)
   }
 }

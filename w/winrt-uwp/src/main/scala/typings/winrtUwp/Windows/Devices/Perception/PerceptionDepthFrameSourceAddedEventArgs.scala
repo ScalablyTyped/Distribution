@@ -12,16 +12,13 @@ trait PerceptionDepthFrameSourceAddedEventArgs extends StObject {
 }
 object PerceptionDepthFrameSourceAddedEventArgs {
   
-  @scala.inline
-  def apply(frameSource: PerceptionDepthFrameSource): PerceptionDepthFrameSourceAddedEventArgs = {
+  inline def apply(frameSource: PerceptionDepthFrameSource): PerceptionDepthFrameSourceAddedEventArgs = {
     val __obj = js.Dynamic.literal(frameSource = frameSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerceptionDepthFrameSourceAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class PerceptionDepthFrameSourceAddedEventArgsMutableBuilder[Self <: PerceptionDepthFrameSourceAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionDepthFrameSourceAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFrameSource(value: PerceptionDepthFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
+    inline def setFrameSource(value: PerceptionDepthFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
   }
 }

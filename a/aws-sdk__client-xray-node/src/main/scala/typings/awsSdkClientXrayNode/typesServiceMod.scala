@@ -83,104 +83,72 @@ object typesServiceMod {
   }
   object Service {
     
-    @scala.inline
-    def apply(): Service = {
+    inline def apply(): Service = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
       
-      @scala.inline
-      def setDurationHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "DurationHistogram", value.asInstanceOf[js.Any])
+      inline def setDurationHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "DurationHistogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationHistogramUndefined: Self = StObject.set(x, "DurationHistogram", js.undefined)
+      inline def setDurationHistogramUndefined: Self = StObject.set(x, "DurationHistogram", js.undefined)
       
-      @scala.inline
-      def setDurationHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value :_*))
+      inline def setDurationHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value :_*))
       
-      @scala.inline
-      def setEdges(value: js.Array[Edge] | Iterable[Edge]): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Edge] | Iterable[Edge]): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
+      inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
       
-      @scala.inline
-      def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
       
-      @scala.inline
-      def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setNames(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+      inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
       
-      @scala.inline
-      def setReferenceId(value: Double): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+      inline def setReferenceId(value: Double): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
+      inline def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
       
-      @scala.inline
-      def setResponseTimeHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
+      inline def setResponseTimeHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
+      inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      @scala.inline
-      def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
       
-      @scala.inline
-      def setRoot(value: Boolean): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Boolean): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
       
-      @scala.inline
-      def setSummaryStatistics(value: ServiceStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
+      inline def setSummaryStatistics(value: ServiceStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
+      inline def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   
@@ -232,68 +200,48 @@ object typesServiceMod {
   }
   object UnmarshalledService {
     
-    @scala.inline
-    def apply(): UnmarshalledService = {
+    inline def apply(): UnmarshalledService = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledService]
     }
     
-    @scala.inline
-    implicit class UnmarshalledServiceMutableBuilder[Self <: UnmarshalledService] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledService](x: Self) {
       
-      @scala.inline
-      def setDurationHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "DurationHistogram", value.asInstanceOf[js.Any])
+      inline def setDurationHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "DurationHistogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationHistogramUndefined: Self = StObject.set(x, "DurationHistogram", js.undefined)
+      inline def setDurationHistogramUndefined: Self = StObject.set(x, "DurationHistogram", js.undefined)
       
-      @scala.inline
-      def setDurationHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value :_*))
+      inline def setDurationHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "DurationHistogram", js.Array(value :_*))
       
-      @scala.inline
-      def setEdges(value: js.Array[UnmarshalledEdge]): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[UnmarshalledEdge]): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
+      inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
       
-      @scala.inline
-      def setEdgesVarargs(value: UnmarshalledEdge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: UnmarshalledEdge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
       
-      @scala.inline
-      def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+      inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseTimeHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
+      inline def setResponseTimeHistogram(value: js.Array[UnmarshalledHistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
+      inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      @scala.inline
-      def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
-      @scala.inline
-      def setSummaryStatistics(value: UnmarshalledServiceStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
+      inline def setSummaryStatistics(value: UnmarshalledServiceStatistics): Self = StObject.set(x, "SummaryStatistics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
+      inline def setSummaryStatisticsUndefined: Self = StObject.set(x, "SummaryStatistics", js.undefined)
     }
   }
 }

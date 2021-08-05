@@ -12,8 +12,7 @@ object authContextProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: AuthContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: AuthContextProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait AuthContextConfig extends StObject {
     
@@ -23,20 +22,16 @@ object authContextProviderMod {
   }
   object AuthContextConfig {
     
-    @scala.inline
-    def apply(clientId: String, realm: String): AuthContextConfig = {
+    inline def apply(clientId: String, realm: String): AuthContextConfig = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthContextConfig]
     }
     
-    @scala.inline
-    implicit class AuthContextConfigMutableBuilder[Self <: AuthContextConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AuthContextConfig](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,23 +43,18 @@ object authContextProviderMod {
   }
   object AuthContextProps {
     
-    @scala.inline
-    def apply(config: AuthContextConfig): AuthContextProps = {
+    inline def apply(config: AuthContextConfig): AuthContextProps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthContextProps]
     }
     
-    @scala.inline
-    implicit class AuthContextPropsMutableBuilder[Self <: AuthContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: AuthContextProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setConfig(value: AuthContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AuthContextConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
 }

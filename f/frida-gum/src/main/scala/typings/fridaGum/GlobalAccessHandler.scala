@@ -21,19 +21,15 @@ trait GlobalAccessHandler extends StObject {
 }
 object GlobalAccessHandler {
   
-  @scala.inline
-  def apply(enumerate: () => js.Array[String], get: String => js.Any): GlobalAccessHandler = {
+  inline def apply(enumerate: () => js.Array[String], get: String => js.Any): GlobalAccessHandler = {
     val __obj = js.Dynamic.literal(enumerate = js.Any.fromFunction0(enumerate), get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[GlobalAccessHandler]
   }
   
-  @scala.inline
-  implicit class GlobalAccessHandlerMutableBuilder[Self <: GlobalAccessHandler] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalAccessHandler](x: Self) {
     
-    @scala.inline
-    def setEnumerate(value: () => js.Array[String]): Self = StObject.set(x, "enumerate", js.Any.fromFunction0(value))
+    inline def setEnumerate(value: () => js.Array[String]): Self = StObject.set(x, "enumerate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

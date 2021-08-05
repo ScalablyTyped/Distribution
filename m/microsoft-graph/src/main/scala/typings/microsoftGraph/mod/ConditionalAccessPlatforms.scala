@@ -14,31 +14,23 @@ trait ConditionalAccessPlatforms extends StObject {
 }
 object ConditionalAccessPlatforms {
   
-  @scala.inline
-  def apply(): ConditionalAccessPlatforms = {
+  inline def apply(): ConditionalAccessPlatforms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalAccessPlatforms]
   }
   
-  @scala.inline
-  implicit class ConditionalAccessPlatformsMutableBuilder[Self <: ConditionalAccessPlatforms] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalAccessPlatforms](x: Self) {
     
-    @scala.inline
-    def setExcludePlatforms(value: js.Array[ConditionalAccessDevicePlatform]): Self = StObject.set(x, "excludePlatforms", value.asInstanceOf[js.Any])
+    inline def setExcludePlatforms(value: js.Array[ConditionalAccessDevicePlatform]): Self = StObject.set(x, "excludePlatforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludePlatformsUndefined: Self = StObject.set(x, "excludePlatforms", js.undefined)
+    inline def setExcludePlatformsUndefined: Self = StObject.set(x, "excludePlatforms", js.undefined)
     
-    @scala.inline
-    def setExcludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "excludePlatforms", js.Array(value :_*))
+    inline def setExcludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "excludePlatforms", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludePlatforms(value: js.Array[ConditionalAccessDevicePlatform]): Self = StObject.set(x, "includePlatforms", value.asInstanceOf[js.Any])
+    inline def setIncludePlatforms(value: js.Array[ConditionalAccessDevicePlatform]): Self = StObject.set(x, "includePlatforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludePlatformsUndefined: Self = StObject.set(x, "includePlatforms", js.undefined)
+    inline def setIncludePlatformsUndefined: Self = StObject.set(x, "includePlatforms", js.undefined)
     
-    @scala.inline
-    def setIncludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "includePlatforms", js.Array(value :_*))
+    inline def setIncludePlatformsVarargs(value: ConditionalAccessDevicePlatform*): Self = StObject.set(x, "includePlatforms", js.Array(value :_*))
   }
 }

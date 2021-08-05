@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptivePortalStatus extends StObject
 object CaptivePortalStatus {
   
-  @scala.inline
-  def Offline: typings.chromeApps.chromeAppsStrings.Offline = "Offline".asInstanceOf[typings.chromeApps.chromeAppsStrings.Offline]
+  inline def Offline: typings.chromeApps.chromeAppsStrings.Offline = "Offline".asInstanceOf[typings.chromeApps.chromeAppsStrings.Offline]
   
-  @scala.inline
-  def Online: typings.chromeApps.chromeAppsStrings.Online = "Online".asInstanceOf[typings.chromeApps.chromeAppsStrings.Online]
+  inline def Online: typings.chromeApps.chromeAppsStrings.Online = "Online".asInstanceOf[typings.chromeApps.chromeAppsStrings.Online]
   
-  @scala.inline
-  def Portal: typings.chromeApps.chromeAppsStrings.Portal = "Portal".asInstanceOf[typings.chromeApps.chromeAppsStrings.Portal]
+  inline def Portal: typings.chromeApps.chromeAppsStrings.Portal = "Portal".asInstanceOf[typings.chromeApps.chromeAppsStrings.Portal]
   
-  @scala.inline
-  def ProxyAuthRequired: typings.chromeApps.chromeAppsStrings.ProxyAuthRequired = "ProxyAuthRequired".asInstanceOf[typings.chromeApps.chromeAppsStrings.ProxyAuthRequired]
+  inline def ProxyAuthRequired: typings.chromeApps.chromeAppsStrings.ProxyAuthRequired = "ProxyAuthRequired".asInstanceOf[typings.chromeApps.chromeAppsStrings.ProxyAuthRequired]
   
-  @scala.inline
-  def Unknown: Unknown_ = "Unknown".asInstanceOf[Unknown_]
+  inline def Unknown: Unknown_ = "Unknown".asInstanceOf[Unknown_]
 }

@@ -36,43 +36,31 @@ trait SchemaParentReference extends StObject {
 }
 object SchemaParentReference {
   
-  @scala.inline
-  def apply(): SchemaParentReference = {
+  inline def apply(): SchemaParentReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParentReference]
   }
   
-  @scala.inline
-  implicit class SchemaParentReferenceMutableBuilder[Self <: SchemaParentReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParentReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+    inline def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
+    inline def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setParentLink(value: String): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    inline def setParentLink(value: String): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
+    inline def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

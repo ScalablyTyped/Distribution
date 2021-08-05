@@ -17,25 +17,19 @@ trait ScaleControlProps
 }
 object ScaleControlProps {
   
-  @scala.inline
-  def apply(): ScaleControlProps = {
+  inline def apply(): ScaleControlProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleControlProps]
   }
   
-  @scala.inline
-  implicit class ScaleControlPropsMutableBuilder[Self <: ScaleControlProps] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleControlProps](x: Self) {
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setUnit(value: imperial | metric | nautical): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: imperial | metric | nautical): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

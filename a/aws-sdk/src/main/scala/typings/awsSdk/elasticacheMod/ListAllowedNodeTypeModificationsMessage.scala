@@ -18,25 +18,19 @@ trait ListAllowedNodeTypeModificationsMessage extends StObject {
 }
 object ListAllowedNodeTypeModificationsMessage {
   
-  @scala.inline
-  def apply(): ListAllowedNodeTypeModificationsMessage = {
+  inline def apply(): ListAllowedNodeTypeModificationsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAllowedNodeTypeModificationsMessage]
   }
   
-  @scala.inline
-  implicit class ListAllowedNodeTypeModificationsMessageMutableBuilder[Self <: ListAllowedNodeTypeModificationsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ListAllowedNodeTypeModificationsMessage](x: Self) {
     
-    @scala.inline
-    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
+    inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
+    inline def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
+    inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait BootstrapClientAccordionGroupClickEventArgs
 }
 object BootstrapClientAccordionGroupClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     group: BootstrapClientAccordionGroup,
     htmlElement: js.Any,
@@ -35,13 +34,10 @@ object BootstrapClientAccordionGroupClickEventArgs {
     __obj.asInstanceOf[BootstrapClientAccordionGroupClickEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientAccordionGroupClickEventArgsMutableBuilder[Self <: BootstrapClientAccordionGroupClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientAccordionGroupClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -36,8 +36,7 @@ object webfontsMod {
     @JSImport("googleapis/build/src/apis/webfonts", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Webfonts] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Webfonts]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object webfontsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object webfontsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def webfonts(options: Options): Webfonts = ^.asInstanceOf[js.Dynamic].applyDynamic("webfonts")(options.asInstanceOf[js.Any]).asInstanceOf[Webfonts]
+  inline def webfonts(options: Options): Webfonts = ^.asInstanceOf[js.Dynamic].applyDynamic("webfonts")(options.asInstanceOf[js.Any]).asInstanceOf[Webfonts]
   
-  @scala.inline
-  def webfonts_v1(version: v1): Webfonts = ^.asInstanceOf[js.Dynamic].applyDynamic("webfonts")(version.asInstanceOf[js.Any]).asInstanceOf[Webfonts]
+  inline def webfonts_v1(version: v1): Webfonts = ^.asInstanceOf[js.Dynamic].applyDynamic("webfonts")(version.asInstanceOf[js.Any]).asInstanceOf[Webfonts]
 }

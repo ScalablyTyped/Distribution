@@ -27,31 +27,23 @@ trait Affinity extends StObject {
 }
 object Affinity {
   
-  @scala.inline
-  def apply(): Affinity = {
+  inline def apply(): Affinity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Affinity]
   }
   
-  @scala.inline
-  implicit class AffinityMutableBuilder[Self <: Affinity] (val x: Self) extends AnyVal {
+  extension [Self <: Affinity](x: Self) {
     
-    @scala.inline
-    def setNodeAffinity(value: Input[NodeAffinity]): Self = StObject.set(x, "nodeAffinity", value.asInstanceOf[js.Any])
+    inline def setNodeAffinity(value: Input[NodeAffinity]): Self = StObject.set(x, "nodeAffinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeAffinityUndefined: Self = StObject.set(x, "nodeAffinity", js.undefined)
+    inline def setNodeAffinityUndefined: Self = StObject.set(x, "nodeAffinity", js.undefined)
     
-    @scala.inline
-    def setPodAffinity(value: Input[PodAffinity]): Self = StObject.set(x, "podAffinity", value.asInstanceOf[js.Any])
+    inline def setPodAffinity(value: Input[PodAffinity]): Self = StObject.set(x, "podAffinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodAffinityUndefined: Self = StObject.set(x, "podAffinity", js.undefined)
+    inline def setPodAffinityUndefined: Self = StObject.set(x, "podAffinity", js.undefined)
     
-    @scala.inline
-    def setPodAntiAffinity(value: Input[PodAntiAffinity]): Self = StObject.set(x, "podAntiAffinity", value.asInstanceOf[js.Any])
+    inline def setPodAntiAffinity(value: Input[PodAntiAffinity]): Self = StObject.set(x, "podAntiAffinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodAntiAffinityUndefined: Self = StObject.set(x, "podAntiAffinity", js.undefined)
+    inline def setPodAntiAffinityUndefined: Self = StObject.set(x, "podAntiAffinity", js.undefined)
   }
 }

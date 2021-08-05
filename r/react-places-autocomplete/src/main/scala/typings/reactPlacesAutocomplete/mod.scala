@@ -24,14 +24,11 @@ object mod {
   class default ()
     extends Component[PropTypes, js.Object, js.Any]
   
-  @scala.inline
-  def geocodeByAddress(address: String): js.Promise[js.Array[GeocoderResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GeocoderResult]]]
+  inline def geocodeByAddress(address: String): js.Promise[js.Array[GeocoderResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GeocoderResult]]]
   
-  @scala.inline
-  def geocodeByPlaceId(placeId: String): js.Promise[js.Array[GeocoderResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeByPlaceId")(placeId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GeocoderResult]]]
+  inline def geocodeByPlaceId(placeId: String): js.Promise[js.Array[GeocoderResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeByPlaceId")(placeId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GeocoderResult]]]
   
-  @scala.inline
-  def getLatLng(results: GeocoderResult): js.Promise[LatLngLiteral] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatLng")(results.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LatLngLiteral]]
+  inline def getLatLng(results: GeocoderResult): js.Promise[LatLngLiteral] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatLng")(results.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LatLngLiteral]]
   
   type AutocompletePrediction = typings.googlemaps.google.maps.places.AutocompletePrediction
   
@@ -63,71 +60,50 @@ object mod {
   }
   object PropTypes {
     
-    @scala.inline
-    def apply(children: Readonlyloadingbooleansug => ReactNode): PropTypes = {
+    inline def apply(children: Readonlyloadingbooleansug => ReactNode): PropTypes = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[PropTypes]
     }
     
-    @scala.inline
-    implicit class PropTypesMutableBuilder[Self <: PropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: PropTypes](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Readonlyloadingbooleansug => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: Readonlyloadingbooleansug => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+      inline def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
+      inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
       
-      @scala.inline
-      def setGoogleCallbackName(value: String): Self = StObject.set(x, "googleCallbackName", value.asInstanceOf[js.Any])
+      inline def setGoogleCallbackName(value: String): Self = StObject.set(x, "googleCallbackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogleCallbackNameUndefined: Self = StObject.set(x, "googleCallbackName", js.undefined)
+      inline def setGoogleCallbackNameUndefined: Self = StObject.set(x, "googleCallbackName", js.undefined)
       
-      @scala.inline
-      def setHighlightFirstSuggestion(value: Boolean): Self = StObject.set(x, "highlightFirstSuggestion", value.asInstanceOf[js.Any])
+      inline def setHighlightFirstSuggestion(value: Boolean): Self = StObject.set(x, "highlightFirstSuggestion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightFirstSuggestionUndefined: Self = StObject.set(x, "highlightFirstSuggestion", js.undefined)
+      inline def setHighlightFirstSuggestionUndefined: Self = StObject.set(x, "highlightFirstSuggestion", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnError(value: (/* status */ String, /* clearSuggestion */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* status */ String, /* clearSuggestion */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: (/* address */ String, /* placeID */ String) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (/* address */ String, /* placeID */ String) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setSearchOptions(value: Bounds): Self = StObject.set(x, "searchOptions", value.asInstanceOf[js.Any])
+      inline def setSearchOptions(value: Bounds): Self = StObject.set(x, "searchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchOptionsUndefined: Self = StObject.set(x, "searchOptions", js.undefined)
+      inline def setSearchOptionsUndefined: Self = StObject.set(x, "searchOptions", js.undefined)
       
-      @scala.inline
-      def setShouldFetchSuggestions(value: Boolean): Self = StObject.set(x, "shouldFetchSuggestions", value.asInstanceOf[js.Any])
+      inline def setShouldFetchSuggestions(value: Boolean): Self = StObject.set(x, "shouldFetchSuggestions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFetchSuggestionsUndefined: Self = StObject.set(x, "shouldFetchSuggestions", js.undefined)
+      inline def setShouldFetchSuggestionsUndefined: Self = StObject.set(x, "shouldFetchSuggestions", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -153,8 +129,7 @@ object mod {
   }
   object Suggestion {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       description: String,
       formattedSuggestion: MainText,
@@ -169,44 +144,31 @@ object mod {
       __obj.asInstanceOf[Suggestion]
     }
     
-    @scala.inline
-    implicit class SuggestionMutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
+    extension [Self <: Suggestion](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedSuggestion(value: MainText): Self = StObject.set(x, "formattedSuggestion", value.asInstanceOf[js.Any])
+      inline def setFormattedSuggestion(value: MainText): Self = StObject.set(x, "formattedSuggestion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedSubstrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matchedSubstrings", value.asInstanceOf[js.Any])
+      inline def setMatchedSubstrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matchedSubstrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedSubstringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matchedSubstrings", js.Array(value :_*))
+      inline def setMatchedSubstringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matchedSubstrings", js.Array(value :_*))
       
-      @scala.inline
-      def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+      inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+      inline def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+      inline def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
       
-      @scala.inline
-      def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
 }

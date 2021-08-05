@@ -317,164 +317,112 @@ trait InitOptions extends StObject {
 }
 object InitOptions {
   
-  @scala.inline
-  def apply(): InitOptions = {
+  inline def apply(): InitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitOptions]
   }
   
-  @scala.inline
-  implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitOptions](x: Self) {
     
-    @scala.inline
-    def setAppendNamespaceToCIMode(value: Boolean): Self = StObject.set(x, "appendNamespaceToCIMode", value.asInstanceOf[js.Any])
+    inline def setAppendNamespaceToCIMode(value: Boolean): Self = StObject.set(x, "appendNamespaceToCIMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendNamespaceToCIModeUndefined: Self = StObject.set(x, "appendNamespaceToCIMode", js.undefined)
+    inline def setAppendNamespaceToCIModeUndefined: Self = StObject.set(x, "appendNamespaceToCIMode", js.undefined)
     
-    @scala.inline
-    def setAppendNamespaceToMissingKey(value: Boolean): Self = StObject.set(x, "appendNamespaceToMissingKey", value.asInstanceOf[js.Any])
+    inline def setAppendNamespaceToMissingKey(value: Boolean): Self = StObject.set(x, "appendNamespaceToMissingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendNamespaceToMissingKeyUndefined: Self = StObject.set(x, "appendNamespaceToMissingKey", js.undefined)
+    inline def setAppendNamespaceToMissingKeyUndefined: Self = StObject.set(x, "appendNamespaceToMissingKey", js.undefined)
     
-    @scala.inline
-    def setBackend(value: js.Object): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: js.Object): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+    inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
     
-    @scala.inline
-    def setCache(value: js.Object): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: js.Object): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setCleanCode(value: Boolean): Self = StObject.set(x, "cleanCode", value.asInstanceOf[js.Any])
+    inline def setCleanCode(value: Boolean): Self = StObject.set(x, "cleanCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCleanCodeUndefined: Self = StObject.set(x, "cleanCode", js.undefined)
+    inline def setCleanCodeUndefined: Self = StObject.set(x, "cleanCode", js.undefined)
     
-    @scala.inline
-    def setCompatibilityJSON(value: v1 | v2 | v3): Self = StObject.set(x, "compatibilityJSON", value.asInstanceOf[js.Any])
+    inline def setCompatibilityJSON(value: v1 | v2 | v3): Self = StObject.set(x, "compatibilityJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibilityJSONUndefined: Self = StObject.set(x, "compatibilityJSON", js.undefined)
+    inline def setCompatibilityJSONUndefined: Self = StObject.set(x, "compatibilityJSON", js.undefined)
     
-    @scala.inline
-    def setContextSeparator(value: String): Self = StObject.set(x, "contextSeparator", value.asInstanceOf[js.Any])
+    inline def setContextSeparator(value: String): Self = StObject.set(x, "contextSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextSeparatorUndefined: Self = StObject.set(x, "contextSeparator", js.undefined)
+    inline def setContextSeparatorUndefined: Self = StObject.set(x, "contextSeparator", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDefaultNS(value: String): Self = StObject.set(x, "defaultNS", value.asInstanceOf[js.Any])
+    inline def setDefaultNS(value: String): Self = StObject.set(x, "defaultNS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNSUndefined: Self = StObject.set(x, "defaultNS", js.undefined)
+    inline def setDefaultNSUndefined: Self = StObject.set(x, "defaultNS", js.undefined)
     
-    @scala.inline
-    def setDetection(value: js.Object): Self = StObject.set(x, "detection", value.asInstanceOf[js.Any])
+    inline def setDetection(value: js.Object): Self = StObject.set(x, "detection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionUndefined: Self = StObject.set(x, "detection", js.undefined)
+    inline def setDetectionUndefined: Self = StObject.set(x, "detection", js.undefined)
     
-    @scala.inline
-    def setEditor(value: AutoOpen): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: AutoOpen): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
-    @scala.inline
-    def setFallbackLng(value: `false` | FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
+    inline def setFallbackLng(value: `false` | FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackLngFunction1(value: /* code */ String => String | js.Array[String] | FallbackLngObjList): Self = StObject.set(x, "fallbackLng", js.Any.fromFunction1(value))
+    inline def setFallbackLngFunction1(value: /* code */ String => String | js.Array[String] | FallbackLngObjList): Self = StObject.set(x, "fallbackLng", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFallbackLngUndefined: Self = StObject.set(x, "fallbackLng", js.undefined)
+    inline def setFallbackLngUndefined: Self = StObject.set(x, "fallbackLng", js.undefined)
     
-    @scala.inline
-    def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
+    inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
     
-    @scala.inline
-    def setFallbackNS(value: `false` | String | js.Array[String]): Self = StObject.set(x, "fallbackNS", value.asInstanceOf[js.Any])
+    inline def setFallbackNS(value: `false` | String | js.Array[String]): Self = StObject.set(x, "fallbackNS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackNSUndefined: Self = StObject.set(x, "fallbackNS", js.undefined)
+    inline def setFallbackNSUndefined: Self = StObject.set(x, "fallbackNS", js.undefined)
     
-    @scala.inline
-    def setFallbackNSVarargs(value: String*): Self = StObject.set(x, "fallbackNS", js.Array(value :_*))
+    inline def setFallbackNSVarargs(value: String*): Self = StObject.set(x, "fallbackNS", js.Array(value :_*))
     
-    @scala.inline
-    def setI18nFormat(value: js.Object): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
+    inline def setI18nFormat(value: js.Object): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18nFormatUndefined: Self = StObject.set(x, "i18nFormat", js.undefined)
+    inline def setI18nFormatUndefined: Self = StObject.set(x, "i18nFormat", js.undefined)
     
-    @scala.inline
-    def setInitImmediate(value: Boolean): Self = StObject.set(x, "initImmediate", value.asInstanceOf[js.Any])
+    inline def setInitImmediate(value: Boolean): Self = StObject.set(x, "initImmediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitImmediateUndefined: Self = StObject.set(x, "initImmediate", js.undefined)
+    inline def setInitImmediateUndefined: Self = StObject.set(x, "initImmediate", js.undefined)
     
-    @scala.inline
-    def setInterpolation(value: InterpolationOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: InterpolationOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setJoinArrays(value: `false` | String): Self = StObject.set(x, "joinArrays", value.asInstanceOf[js.Any])
+    inline def setJoinArrays(value: `false` | String): Self = StObject.set(x, "joinArrays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinArraysUndefined: Self = StObject.set(x, "joinArrays", js.undefined)
+    inline def setJoinArraysUndefined: Self = StObject.set(x, "joinArrays", js.undefined)
     
-    @scala.inline
-    def setKeySeparator(value: `false` | String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
+    inline def setKeySeparator(value: `false` | String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySeparatorUndefined: Self = StObject.set(x, "keySeparator", js.undefined)
+    inline def setKeySeparatorUndefined: Self = StObject.set(x, "keySeparator", js.undefined)
     
-    @scala.inline
-    def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
+    inline def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
     
-    @scala.inline
-    def setLoad(value: all | currentOnly | languageOnly): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: all | currentOnly | languageOnly): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setLocizeLastUsed(value: AllowedHosts): Self = StObject.set(x, "locizeLastUsed", value.asInstanceOf[js.Any])
+    inline def setLocizeLastUsed(value: AllowedHosts): Self = StObject.set(x, "locizeLastUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocizeLastUsedUndefined: Self = StObject.set(x, "locizeLastUsed", js.undefined)
+    inline def setLocizeLastUsedUndefined: Self = StObject.set(x, "locizeLastUsed", js.undefined)
     
-    @scala.inline
-    def setLowerCaseLng(value: Boolean): Self = StObject.set(x, "lowerCaseLng", value.asInstanceOf[js.Any])
+    inline def setLowerCaseLng(value: Boolean): Self = StObject.set(x, "lowerCaseLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerCaseLngUndefined: Self = StObject.set(x, "lowerCaseLng", js.undefined)
+    inline def setLowerCaseLngUndefined: Self = StObject.set(x, "lowerCaseLng", js.undefined)
     
-    @scala.inline
-    def setMissingInterpolationHandler(value: (/* text */ String, /* value */ js.Any, InitOptions) => js.Any): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
+    inline def setMissingInterpolationHandler(value: (/* text */ String, /* value */ js.Any, InitOptions) => js.Any): Self = StObject.set(x, "missingInterpolationHandler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMissingInterpolationHandlerUndefined: Self = StObject.set(x, "missingInterpolationHandler", js.undefined)
+    inline def setMissingInterpolationHandlerUndefined: Self = StObject.set(x, "missingInterpolationHandler", js.undefined)
     
-    @scala.inline
-    def setMissingKeyHandler(
+    inline def setMissingKeyHandler(
       value: `false` | (js.Function4[
           /* lngs */ js.Array[String], 
           /* ns */ String, 
@@ -484,165 +432,112 @@ object InitOptions {
         ])
     ): Self = StObject.set(x, "missingKeyHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingKeyHandlerFunction4(
+    inline def setMissingKeyHandlerFunction4(
       value: (/* lngs */ js.Array[String], /* ns */ String, /* key */ String, /* fallbackValue */ String) => Unit
     ): Self = StObject.set(x, "missingKeyHandler", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setMissingKeyHandlerUndefined: Self = StObject.set(x, "missingKeyHandler", js.undefined)
+    inline def setMissingKeyHandlerUndefined: Self = StObject.set(x, "missingKeyHandler", js.undefined)
     
-    @scala.inline
-    def setNonExplicitSupportedLngs(value: Boolean): Self = StObject.set(x, "nonExplicitSupportedLngs", value.asInstanceOf[js.Any])
+    inline def setNonExplicitSupportedLngs(value: Boolean): Self = StObject.set(x, "nonExplicitSupportedLngs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonExplicitSupportedLngsUndefined: Self = StObject.set(x, "nonExplicitSupportedLngs", js.undefined)
+    inline def setNonExplicitSupportedLngsUndefined: Self = StObject.set(x, "nonExplicitSupportedLngs", js.undefined)
     
-    @scala.inline
-    def setNonExplicitWhitelist(value: Boolean): Self = StObject.set(x, "nonExplicitWhitelist", value.asInstanceOf[js.Any])
+    inline def setNonExplicitWhitelist(value: Boolean): Self = StObject.set(x, "nonExplicitWhitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonExplicitWhitelistUndefined: Self = StObject.set(x, "nonExplicitWhitelist", js.undefined)
+    inline def setNonExplicitWhitelistUndefined: Self = StObject.set(x, "nonExplicitWhitelist", js.undefined)
     
-    @scala.inline
-    def setNs(value: String | js.Array[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+    inline def setNs(value: String | js.Array[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNsSeparator(value: `false` | String): Self = StObject.set(x, "nsSeparator", value.asInstanceOf[js.Any])
+    inline def setNsSeparator(value: `false` | String): Self = StObject.set(x, "nsSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNsSeparatorUndefined: Self = StObject.set(x, "nsSeparator", js.undefined)
+    inline def setNsSeparatorUndefined: Self = StObject.set(x, "nsSeparator", js.undefined)
     
-    @scala.inline
-    def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
+    inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
     
-    @scala.inline
-    def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
+    inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
     
-    @scala.inline
-    def setOverloadTranslationOptionHandler(value: /* args */ js.Array[String] => TOptions[StringMap]): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
+    inline def setOverloadTranslationOptionHandler(value: /* args */ js.Array[String] => TOptions[StringMap]): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverloadTranslationOptionHandlerUndefined: Self = StObject.set(x, "overloadTranslationOptionHandler", js.undefined)
+    inline def setOverloadTranslationOptionHandlerUndefined: Self = StObject.set(x, "overloadTranslationOptionHandler", js.undefined)
     
-    @scala.inline
-    def setParseMissingKeyHandler(value: /* key */ String => js.Any): Self = StObject.set(x, "parseMissingKeyHandler", js.Any.fromFunction1(value))
+    inline def setParseMissingKeyHandler(value: /* key */ String => js.Any): Self = StObject.set(x, "parseMissingKeyHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseMissingKeyHandlerUndefined: Self = StObject.set(x, "parseMissingKeyHandler", js.undefined)
+    inline def setParseMissingKeyHandlerUndefined: Self = StObject.set(x, "parseMissingKeyHandler", js.undefined)
     
-    @scala.inline
-    def setPartialBundledLanguages(value: Boolean): Self = StObject.set(x, "partialBundledLanguages", value.asInstanceOf[js.Any])
+    inline def setPartialBundledLanguages(value: Boolean): Self = StObject.set(x, "partialBundledLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialBundledLanguagesUndefined: Self = StObject.set(x, "partialBundledLanguages", js.undefined)
+    inline def setPartialBundledLanguagesUndefined: Self = StObject.set(x, "partialBundledLanguages", js.undefined)
     
-    @scala.inline
-    def setPluralSeparator(value: String): Self = StObject.set(x, "pluralSeparator", value.asInstanceOf[js.Any])
+    inline def setPluralSeparator(value: String): Self = StObject.set(x, "pluralSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluralSeparatorUndefined: Self = StObject.set(x, "pluralSeparator", js.undefined)
+    inline def setPluralSeparatorUndefined: Self = StObject.set(x, "pluralSeparator", js.undefined)
     
-    @scala.inline
-    def setPostProcess(value: `false` | String | js.Array[String]): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
+    inline def setPostProcess(value: `false` | String | js.Array[String]): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostProcessPassResolved(value: Boolean): Self = StObject.set(x, "postProcessPassResolved", value.asInstanceOf[js.Any])
+    inline def setPostProcessPassResolved(value: Boolean): Self = StObject.set(x, "postProcessPassResolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostProcessPassResolvedUndefined: Self = StObject.set(x, "postProcessPassResolved", js.undefined)
+    inline def setPostProcessPassResolvedUndefined: Self = StObject.set(x, "postProcessPassResolved", js.undefined)
     
-    @scala.inline
-    def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
+    inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
-    @scala.inline
-    def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value :_*))
+    inline def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value :_*))
     
-    @scala.inline
-    def setPreload(value: `false` | js.Array[String]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: `false` | js.Array[String]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+    inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
-    @scala.inline
-    def setPreloadVarargs(value: String*): Self = StObject.set(x, "preload", js.Array(value :_*))
+    inline def setPreloadVarargs(value: String*): Self = StObject.set(x, "preload", js.Array(value :_*))
     
-    @scala.inline
-    def setReact(value: ReactOptions): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
+    inline def setReact(value: ReactOptions): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactUndefined: Self = StObject.set(x, "react", js.undefined)
+    inline def setReactUndefined: Self = StObject.set(x, "react", js.undefined)
     
-    @scala.inline
-    def setResources(value: Resource): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Resource): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setReturnEmptyString(value: Boolean): Self = StObject.set(x, "returnEmptyString", value.asInstanceOf[js.Any])
+    inline def setReturnEmptyString(value: Boolean): Self = StObject.set(x, "returnEmptyString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnEmptyStringUndefined: Self = StObject.set(x, "returnEmptyString", js.undefined)
+    inline def setReturnEmptyStringUndefined: Self = StObject.set(x, "returnEmptyString", js.undefined)
     
-    @scala.inline
-    def setReturnNull(value: Boolean): Self = StObject.set(x, "returnNull", value.asInstanceOf[js.Any])
+    inline def setReturnNull(value: Boolean): Self = StObject.set(x, "returnNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnNullUndefined: Self = StObject.set(x, "returnNull", js.undefined)
+    inline def setReturnNullUndefined: Self = StObject.set(x, "returnNull", js.undefined)
     
-    @scala.inline
-    def setReturnObjects(value: Boolean): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
+    inline def setReturnObjects(value: Boolean): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnObjectsUndefined: Self = StObject.set(x, "returnObjects", js.undefined)
+    inline def setReturnObjectsUndefined: Self = StObject.set(x, "returnObjects", js.undefined)
     
-    @scala.inline
-    def setReturnedObjectHandler(value: (/* key */ String, /* value */ String, /* options */ js.Any) => Unit): Self = StObject.set(x, "returnedObjectHandler", js.Any.fromFunction3(value))
+    inline def setReturnedObjectHandler(value: (/* key */ String, /* value */ String, /* options */ js.Any) => Unit): Self = StObject.set(x, "returnedObjectHandler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReturnedObjectHandlerUndefined: Self = StObject.set(x, "returnedObjectHandler", js.undefined)
+    inline def setReturnedObjectHandlerUndefined: Self = StObject.set(x, "returnedObjectHandler", js.undefined)
     
-    @scala.inline
-    def setSaveMissing(value: Boolean): Self = StObject.set(x, "saveMissing", value.asInstanceOf[js.Any])
+    inline def setSaveMissing(value: Boolean): Self = StObject.set(x, "saveMissing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveMissingTo(value: current | all | fallback): Self = StObject.set(x, "saveMissingTo", value.asInstanceOf[js.Any])
+    inline def setSaveMissingTo(value: current | all | fallback): Self = StObject.set(x, "saveMissingTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveMissingToUndefined: Self = StObject.set(x, "saveMissingTo", js.undefined)
+    inline def setSaveMissingToUndefined: Self = StObject.set(x, "saveMissingTo", js.undefined)
     
-    @scala.inline
-    def setSaveMissingUndefined: Self = StObject.set(x, "saveMissing", js.undefined)
+    inline def setSaveMissingUndefined: Self = StObject.set(x, "saveMissing", js.undefined)
     
-    @scala.inline
-    def setSimplifyPluralSuffix(value: Boolean): Self = StObject.set(x, "simplifyPluralSuffix", value.asInstanceOf[js.Any])
+    inline def setSimplifyPluralSuffix(value: Boolean): Self = StObject.set(x, "simplifyPluralSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifyPluralSuffixUndefined: Self = StObject.set(x, "simplifyPluralSuffix", js.undefined)
+    inline def setSimplifyPluralSuffixUndefined: Self = StObject.set(x, "simplifyPluralSuffix", js.undefined)
     
-    @scala.inline
-    def setSupportedLngs(value: `false` | js.Array[String]): Self = StObject.set(x, "supportedLngs", value.asInstanceOf[js.Any])
+    inline def setSupportedLngs(value: `false` | js.Array[String]): Self = StObject.set(x, "supportedLngs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedLngsUndefined: Self = StObject.set(x, "supportedLngs", js.undefined)
+    inline def setSupportedLngsUndefined: Self = StObject.set(x, "supportedLngs", js.undefined)
     
-    @scala.inline
-    def setSupportedLngsVarargs(value: String*): Self = StObject.set(x, "supportedLngs", js.Array(value :_*))
+    inline def setSupportedLngsVarargs(value: String*): Self = StObject.set(x, "supportedLngs", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateMissing(value: Boolean): Self = StObject.set(x, "updateMissing", value.asInstanceOf[js.Any])
+    inline def setUpdateMissing(value: Boolean): Self = StObject.set(x, "updateMissing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMissingUndefined: Self = StObject.set(x, "updateMissing", js.undefined)
+    inline def setUpdateMissingUndefined: Self = StObject.set(x, "updateMissing", js.undefined)
     
-    @scala.inline
-    def setWhitelist(value: `false` | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+    inline def setWhitelist(value: `false` | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    @scala.inline
-    def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

@@ -10,12 +10,9 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def camelCaseDash(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseDash")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def camelCaseDash(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseDash")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def defaultRequestToExternal(request: String): String | Unit | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRequestToExternal")(request.asInstanceOf[js.Any]).asInstanceOf[String | Unit | js.Array[String]]
+  inline def defaultRequestToExternal(request: String): String | Unit | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRequestToExternal")(request.asInstanceOf[js.Any]).asInstanceOf[String | Unit | js.Array[String]]
   
-  @scala.inline
-  def defaultRequestToHandle(request: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRequestToHandle")(request.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  inline def defaultRequestToHandle(request: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRequestToHandle")(request.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
 }

@@ -12,14 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(socket: Socket, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(socket: Socket, fn: Listeners): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(socket: TLSSocket, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(socket: TLSSocket, fn: Listeners): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(socket: Socket, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(socket: Socket, fn: Listeners): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(socket: TLSSocket, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(socket: TLSSocket, fn: Listeners): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Listeners extends StObject {
     
@@ -31,32 +27,24 @@ object mod {
   }
   object Listeners {
     
-    @scala.inline
-    def apply(): Listeners = {
+    inline def apply(): Listeners = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Listeners]
     }
     
-    @scala.inline
-    implicit class ListenersMutableBuilder[Self <: Listeners] (val x: Self) extends AnyVal {
+    extension [Self <: Listeners](x: Self) {
       
-      @scala.inline
-      def setClose(value: /* hadError */ Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* hadError */ Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+      inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      @scala.inline
-      def setSecureConnect(value: () => Unit): Self = StObject.set(x, "secureConnect", js.Any.fromFunction0(value))
+      inline def setSecureConnect(value: () => Unit): Self = StObject.set(x, "secureConnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecureConnectUndefined: Self = StObject.set(x, "secureConnect", js.undefined)
+      inline def setSecureConnectUndefined: Self = StObject.set(x, "secureConnect", js.undefined)
     }
   }
 }

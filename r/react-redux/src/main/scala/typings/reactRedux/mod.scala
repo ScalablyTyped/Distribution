@@ -42,32 +42,26 @@ object mod {
   @js.native
   val ReactReduxContext: Context[ReactReduxContextValue[js.Any, AnyAction]] = js.native
   
-  @scala.inline
-  def batch(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def batch(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("react-redux", "connect")
   @js.native
   val connect: Connect_[DefaultRootState] = js.native
   
-  @scala.inline
-  def connectAdvanced[S, TProps, TOwnProps, TFactoryOptions](
+  inline def connectAdvanced[S, TProps, TOwnProps, TFactoryOptions](
     // tslint:disable-next-line no-unnecessary-generics
   selectorFactory: SelectorFactory[S, TProps, TOwnProps, TFactoryOptions]
   ): AdvancedComponentDecorator[TProps, TOwnProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectAdvanced")(selectorFactory.asInstanceOf[js.Any]).asInstanceOf[AdvancedComponentDecorator[TProps, TOwnProps]]
-  @scala.inline
-  def connectAdvanced[S, TProps, TOwnProps, TFactoryOptions](
+  inline def connectAdvanced[S, TProps, TOwnProps, TFactoryOptions](
     // tslint:disable-next-line no-unnecessary-generics
   selectorFactory: SelectorFactory[S, TProps, TOwnProps, TFactoryOptions],
     connectOptions: ConnectOptions & TFactoryOptions
   ): AdvancedComponentDecorator[TProps, TOwnProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("connectAdvanced")(selectorFactory.asInstanceOf[js.Any], connectOptions.asInstanceOf[js.Any])).asInstanceOf[AdvancedComponentDecorator[TProps, TOwnProps]]
   
-  @scala.inline
-  def createDispatchHook[S, A /* <: Action[js.Any] */](): js.Function0[Dispatch[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatchHook")().asInstanceOf[js.Function0[Dispatch[A]]]
-  @scala.inline
-  def createDispatchHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Dispatch[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatchHook")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Dispatch[A]]]
+  inline def createDispatchHook[S, A /* <: Action[js.Any] */](): js.Function0[Dispatch[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatchHook")().asInstanceOf[js.Function0[Dispatch[A]]]
+  inline def createDispatchHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Dispatch[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatchHook")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Dispatch[A]]]
   
-  @scala.inline
-  def createSelectorHook[S, A /* <: Action[js.Any] */](): js.Function2[
+  inline def createSelectorHook[S, A /* <: Action[js.Any] */](): js.Function2[
     /* selector */ js.Function1[/* state */ S, js.Any], 
     /* equalityFn */ js.UndefOr[js.Function2[/* previous */ js.Any, /* next */ js.Any, Boolean]], 
     js.Any
@@ -76,8 +70,7 @@ object mod {
     /* equalityFn */ js.UndefOr[js.Function2[/* previous */ js.Any, /* next */ js.Any, Boolean]], 
     js.Any
   ]]
-  @scala.inline
-  def createSelectorHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function2[
+  inline def createSelectorHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function2[
     /* selector */ js.Function1[/* state */ S, js.Any], 
     /* equalityFn */ js.UndefOr[js.Function2[/* previous */ js.Any, /* next */ js.Any, Boolean]], 
     js.Any
@@ -87,30 +80,22 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def createStoreHook[S, A /* <: Action[js.Any] */](): js.Function0[Store[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoreHook")().asInstanceOf[js.Function0[Store[S, A]]]
-  @scala.inline
-  def createStoreHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Store[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoreHook")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Store[S, A]]]
+  inline def createStoreHook[S, A /* <: Action[js.Any] */](): js.Function0[Store[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoreHook")().asInstanceOf[js.Function0[Store[S, A]]]
+  inline def createStoreHook[S, A /* <: Action[js.Any] */](context: Context[ReactReduxContextValue[S, A]]): js.Function0[Store[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStoreHook")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Store[S, A]]]
   
-  @scala.inline
-  def shallowEqual[T](left: T, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shallowEqual[T](left: T, right: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def useDispatch[A /* <: Action[js.Any] */](): Dispatch[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDispatch")().asInstanceOf[Dispatch[A]]
+  inline def useDispatch[A /* <: Action[js.Any] */](): Dispatch[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDispatch")().asInstanceOf[Dispatch[A]]
   
-  @scala.inline
-  def useDispatch_TDispatch_TDispatch[TDispatch](): TDispatch = ^.asInstanceOf[js.Dynamic].applyDynamic("useDispatch")().asInstanceOf[TDispatch]
+  inline def useDispatch_TDispatch_TDispatch[TDispatch](): TDispatch = ^.asInstanceOf[js.Dynamic].applyDynamic("useDispatch")().asInstanceOf[TDispatch]
   
-  @scala.inline
-  def useSelector[TState, TSelected](selector: js.Function1[/* state */ TState, TSelected]): TSelected = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[TSelected]
-  @scala.inline
-  def useSelector[TState, TSelected](
+  inline def useSelector[TState, TSelected](selector: js.Function1[/* state */ TState, TSelected]): TSelected = ^.asInstanceOf[js.Dynamic].applyDynamic("useSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[TSelected]
+  inline def useSelector[TState, TSelected](
     selector: js.Function1[/* state */ TState, TSelected],
     equalityFn: js.Function2[/* left */ TSelected, /* right */ TSelected, Boolean]
   ): TSelected = (^.asInstanceOf[js.Dynamic].applyDynamic("useSelector")(selector.asInstanceOf[js.Any], equalityFn.asInstanceOf[js.Any])).asInstanceOf[TSelected]
   
-  @scala.inline
-  def useStore[S, A /* <: Action[js.Any] */](): Store[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStore")().asInstanceOf[Store[S, A]]
+  inline def useStore[S, A /* <: Action[js.Any] */](): Store[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStore")().asInstanceOf[Store[S, A]]
   
   type AdvancedComponentDecorator[TProps, TOwnProps] = js.Function1[/* component */ ComponentType[TProps], NamedExoticComponent[TOwnProps]]
   
@@ -175,56 +160,40 @@ object mod {
   }
   object ConnectOptions {
     
-    @scala.inline
-    def apply(): ConnectOptions = {
+    inline def apply(): ConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    @scala.inline
-    implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: Context[ReactReduxContextValue[js.Any, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context[ReactReduxContextValue[js.Any, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setGetDisplayName(value: /* componentName */ String => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction1(value))
+      inline def setGetDisplayName(value: /* componentName */ String => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDisplayNameUndefined: Self = StObject.set(x, "getDisplayName", js.undefined)
+      inline def setGetDisplayNameUndefined: Self = StObject.set(x, "getDisplayName", js.undefined)
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+      inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
       
-      @scala.inline
-      def setRenderCountProp(value: String): Self = StObject.set(x, "renderCountProp", value.asInstanceOf[js.Any])
+      inline def setRenderCountProp(value: String): Self = StObject.set(x, "renderCountProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderCountPropUndefined: Self = StObject.set(x, "renderCountProp", js.undefined)
+      inline def setRenderCountPropUndefined: Self = StObject.set(x, "renderCountProp", js.undefined)
       
-      @scala.inline
-      def setShouldHandleStateChanges(value: Boolean): Self = StObject.set(x, "shouldHandleStateChanges", value.asInstanceOf[js.Any])
+      inline def setShouldHandleStateChanges(value: Boolean): Self = StObject.set(x, "shouldHandleStateChanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldHandleStateChangesUndefined: Self = StObject.set(x, "shouldHandleStateChanges", js.undefined)
+      inline def setShouldHandleStateChangesUndefined: Self = StObject.set(x, "shouldHandleStateChanges", js.undefined)
       
-      @scala.inline
-      def setStoreKey(value: String): Self = StObject.set(x, "storeKey", value.asInstanceOf[js.Any])
+      inline def setStoreKey(value: String): Self = StObject.set(x, "storeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreKeyUndefined: Self = StObject.set(x, "storeKey", js.undefined)
+      inline def setStoreKeyUndefined: Self = StObject.set(x, "storeKey", js.undefined)
       
-      @scala.inline
-      def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
+      inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
+      inline def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
     }
   }
   
@@ -407,17 +376,14 @@ object mod {
   }
   object DispatchProp {
     
-    @scala.inline
-    def apply[A /* <: Action[js.Any] */](dispatch: A => A): DispatchProp[A] = {
+    inline def apply[A /* <: Action[js.Any] */](dispatch: A => A): DispatchProp[A] = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch))
       __obj.asInstanceOf[DispatchProp[A]]
     }
     
-    @scala.inline
-    implicit class DispatchPropMutableBuilder[Self <: DispatchProp[?], A /* <: Action[js.Any] */] (val x: Self & DispatchProp[A]) extends AnyVal {
+    extension [Self <: DispatchProp[?], A /* <: Action[js.Any] */](x: Self & DispatchProp[A]) {
       
-      @scala.inline
-      def setDispatch(value: A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     }
   }
   
@@ -531,50 +497,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[State, TStateProps, TOwnProps, TMergedProps](): Options[State, TStateProps, TOwnProps, TMergedProps] = {
+    inline def apply[State, TStateProps, TOwnProps, TMergedProps](): Options[State, TStateProps, TOwnProps, TMergedProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[State, TStateProps, TOwnProps, TMergedProps]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?, ?, ?], State, TStateProps, TOwnProps, TMergedProps] (val x: Self & (Options[State, TStateProps, TOwnProps, TMergedProps])) extends AnyVal {
+    extension [Self <: Options[?, ?, ?, ?], State, TStateProps, TOwnProps, TMergedProps](x: Self & (Options[State, TStateProps, TOwnProps, TMergedProps])) {
       
-      @scala.inline
-      def setAreMergedPropsEqual(value: (/* nextMergedProps */ TMergedProps, /* prevMergedProps */ TMergedProps) => Boolean): Self = StObject.set(x, "areMergedPropsEqual", js.Any.fromFunction2(value))
+      inline def setAreMergedPropsEqual(value: (/* nextMergedProps */ TMergedProps, /* prevMergedProps */ TMergedProps) => Boolean): Self = StObject.set(x, "areMergedPropsEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAreMergedPropsEqualUndefined: Self = StObject.set(x, "areMergedPropsEqual", js.undefined)
+      inline def setAreMergedPropsEqualUndefined: Self = StObject.set(x, "areMergedPropsEqual", js.undefined)
       
-      @scala.inline
-      def setAreOwnPropsEqual(value: (/* nextOwnProps */ TOwnProps, /* prevOwnProps */ TOwnProps) => Boolean): Self = StObject.set(x, "areOwnPropsEqual", js.Any.fromFunction2(value))
+      inline def setAreOwnPropsEqual(value: (/* nextOwnProps */ TOwnProps, /* prevOwnProps */ TOwnProps) => Boolean): Self = StObject.set(x, "areOwnPropsEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAreOwnPropsEqualUndefined: Self = StObject.set(x, "areOwnPropsEqual", js.undefined)
+      inline def setAreOwnPropsEqualUndefined: Self = StObject.set(x, "areOwnPropsEqual", js.undefined)
       
-      @scala.inline
-      def setAreStatePropsEqual(value: (/* nextStateProps */ TStateProps, /* prevStateProps */ TStateProps) => Boolean): Self = StObject.set(x, "areStatePropsEqual", js.Any.fromFunction2(value))
+      inline def setAreStatePropsEqual(value: (/* nextStateProps */ TStateProps, /* prevStateProps */ TStateProps) => Boolean): Self = StObject.set(x, "areStatePropsEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAreStatePropsEqualUndefined: Self = StObject.set(x, "areStatePropsEqual", js.undefined)
+      inline def setAreStatePropsEqualUndefined: Self = StObject.set(x, "areStatePropsEqual", js.undefined)
       
-      @scala.inline
-      def setAreStatesEqual(value: (/* nextState */ State, /* prevState */ State) => Boolean): Self = StObject.set(x, "areStatesEqual", js.Any.fromFunction2(value))
+      inline def setAreStatesEqual(value: (/* nextState */ State, /* prevState */ State) => Boolean): Self = StObject.set(x, "areStatesEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAreStatesEqualUndefined: Self = StObject.set(x, "areStatesEqual", js.undefined)
+      inline def setAreStatesEqualUndefined: Self = StObject.set(x, "areStatesEqual", js.undefined)
       
-      @scala.inline
-      def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
+      inline def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
       
-      @scala.inline
-      def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+      inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+      inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
     }
   }
   
@@ -594,23 +546,18 @@ object mod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply[A /* <: Action[js.Any] */](store: Store[js.Any, A]): ProviderProps[A] = {
+    inline def apply[A /* <: Action[js.Any] */](store: Store[js.Any, A]): ProviderProps[A] = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderProps[A]]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps[?], A /* <: Action[js.Any] */] (val x: Self & ProviderProps[A]) extends AnyVal {
+    extension [Self <: ProviderProps[?], A /* <: Action[js.Any] */](x: Self & ProviderProps[A]) {
       
-      @scala.inline
-      def setContext(value: Context[ReactReduxContextValue[js.Any, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context[ReactReduxContextValue[js.Any, AnyAction]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setStore(value: Store[js.Any, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store[js.Any, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -622,20 +569,16 @@ object mod {
   }
   object ReactReduxContextValue {
     
-    @scala.inline
-    def apply[SS, A /* <: Action[js.Any] */](store: Store[SS, A], storeState: SS): ReactReduxContextValue[SS, A] = {
+    inline def apply[SS, A /* <: Action[js.Any] */](store: Store[SS, A], storeState: SS): ReactReduxContextValue[SS, A] = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any], storeState = storeState.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactReduxContextValue[SS, A]]
     }
     
-    @scala.inline
-    implicit class ReactReduxContextValueMutableBuilder[Self <: ReactReduxContextValue[?, ?], SS, A /* <: Action[js.Any] */] (val x: Self & (ReactReduxContextValue[SS, A])) extends AnyVal {
+    extension [Self <: ReactReduxContextValue[?, ?], SS, A /* <: Action[js.Any] */](x: Self & (ReactReduxContextValue[SS, A])) {
       
-      @scala.inline
-      def setStore(value: Store[SS, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store[SS, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreState(value: SS): Self = StObject.set(x, "storeState", value.asInstanceOf[js.Any])
+      inline def setStoreState(value: SS): Self = StObject.set(x, "storeState", value.asInstanceOf[js.Any])
     }
   }
   

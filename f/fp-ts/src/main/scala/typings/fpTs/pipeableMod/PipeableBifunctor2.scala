@@ -18,8 +18,7 @@ trait PipeableBifunctor2[F /* <: /* import warning: transforms.QualifyReferences
 }
 object PipeableBifunctor2 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
     bimap: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, G, B> */ js.Any
@@ -33,19 +32,16 @@ object PipeableBifunctor2 {
     __obj.asInstanceOf[PipeableBifunctor2[F]]
   }
   
-  @scala.inline
-  implicit class PipeableBifunctor2MutableBuilder[Self <: PipeableBifunctor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & PipeableBifunctor2[F]) extends AnyVal {
+  extension [Self <: PipeableBifunctor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & PipeableBifunctor2[F]) {
     
-    @scala.inline
-    def setBimap(
+    inline def setBimap(
       value: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, G, B> */ js.Any
         ]
     ): Self = StObject.set(x, "bimap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMapLeft(
+    inline def setMapLeft(
       value: js.Function1[js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, G, A> */ js.Any

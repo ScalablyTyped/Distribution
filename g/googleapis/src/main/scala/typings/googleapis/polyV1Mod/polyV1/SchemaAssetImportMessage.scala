@@ -32,37 +32,27 @@ trait SchemaAssetImportMessage extends StObject {
 }
 object SchemaAssetImportMessage {
   
-  @scala.inline
-  def apply(): SchemaAssetImportMessage = {
+  inline def apply(): SchemaAssetImportMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAssetImportMessage]
   }
   
-  @scala.inline
-  implicit class SchemaAssetImportMessageMutableBuilder[Self <: SchemaAssetImportMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAssetImportMessage](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setImageError(value: SchemaImageError): Self = StObject.set(x, "imageError", value.asInstanceOf[js.Any])
+    inline def setImageError(value: SchemaImageError): Self = StObject.set(x, "imageError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageErrorUndefined: Self = StObject.set(x, "imageError", js.undefined)
+    inline def setImageErrorUndefined: Self = StObject.set(x, "imageError", js.undefined)
     
-    @scala.inline
-    def setObjParseError(value: SchemaObjParseError): Self = StObject.set(x, "objParseError", value.asInstanceOf[js.Any])
+    inline def setObjParseError(value: SchemaObjParseError): Self = StObject.set(x, "objParseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjParseErrorUndefined: Self = StObject.set(x, "objParseError", js.undefined)
+    inline def setObjParseErrorUndefined: Self = StObject.set(x, "objParseError", js.undefined)
   }
 }

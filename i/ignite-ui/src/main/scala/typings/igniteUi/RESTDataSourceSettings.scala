@@ -19,19 +19,15 @@ trait RESTDataSourceSettings
 }
 object RESTDataSourceSettings {
   
-  @scala.inline
-  def apply(): RESTDataSourceSettings = {
+  inline def apply(): RESTDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RESTDataSourceSettings]
   }
   
-  @scala.inline
-  implicit class RESTDataSourceSettingsMutableBuilder[Self <: RESTDataSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RESTDataSourceSettings](x: Self) {
     
-    @scala.inline
-    def setRestSettings(value: RESTDataSourceSettingsRestSettings): Self = StObject.set(x, "restSettings", value.asInstanceOf[js.Any])
+    inline def setRestSettings(value: RESTDataSourceSettingsRestSettings): Self = StObject.set(x, "restSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestSettingsUndefined: Self = StObject.set(x, "restSettings", js.undefined)
+    inline def setRestSettingsUndefined: Self = StObject.set(x, "restSettings", js.undefined)
   }
 }

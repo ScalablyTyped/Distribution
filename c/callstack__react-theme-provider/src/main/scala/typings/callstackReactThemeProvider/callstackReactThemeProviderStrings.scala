@@ -8,16 +8,13 @@ object callstackReactThemeProviderStrings {
   
   @js.native
   sealed trait $DeepPartial extends StObject
-  @scala.inline
-  def $DeepPartial: $DeepPartial = "$DeepPartial".asInstanceOf[$DeepPartial]
+  inline def $DeepPartial: $DeepPartial = "$DeepPartial".asInstanceOf[$DeepPartial]
   
   @js.native
   sealed trait NonReactStatics extends StObject
-  @scala.inline
-  def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
+  inline def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
   
   @js.native
   sealed trait theme extends StObject
-  @scala.inline
-  def theme: theme = "theme".asInstanceOf[theme]
+  inline def theme: theme = "theme".asInstanceOf[theme]
 }

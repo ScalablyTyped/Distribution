@@ -20,49 +20,35 @@ trait ConfigOptions extends StObject {
 }
 object ConfigOptions {
   
-  @scala.inline
-  def apply(): ConfigOptions = {
+  inline def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigOptions]
   }
   
-  @scala.inline
-  implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigOptions](x: Self) {
     
-    @scala.inline
-    def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
+    inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpsilonUndefined: Self = StObject.set(x, "epsilon", js.undefined)
+    inline def setEpsilonUndefined: Self = StObject.set(x, "epsilon", js.undefined)
     
-    @scala.inline
-    def setMatrix(value: String): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: String): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
+    inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setParenthesis(value: String): Self = StObject.set(x, "parenthesis", value.asInstanceOf[js.Any])
+    inline def setParenthesis(value: String): Self = StObject.set(x, "parenthesis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParenthesisUndefined: Self = StObject.set(x, "parenthesis", js.undefined)
+    inline def setParenthesisUndefined: Self = StObject.set(x, "parenthesis", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setRandomSeed(value: String): Self = StObject.set(x, "randomSeed", value.asInstanceOf[js.Any])
+    inline def setRandomSeed(value: String): Self = StObject.set(x, "randomSeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomSeedUndefined: Self = StObject.set(x, "randomSeed", js.undefined)
+    inline def setRandomSeedUndefined: Self = StObject.set(x, "randomSeed", js.undefined)
   }
 }

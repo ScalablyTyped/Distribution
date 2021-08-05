@@ -13,17 +13,12 @@ object utils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cancelAnimationFrame(requestID: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimationFrame")(requestID.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancelAnimationFrame(requestID: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimationFrame")(requestID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getTimeZones(): js.Array[dxSchedulerTimeZone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeZones")().asInstanceOf[js.Array[dxSchedulerTimeZone]]
-  @scala.inline
-  def getTimeZones(date: Date): js.Array[dxSchedulerTimeZone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeZones")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[dxSchedulerTimeZone]]
+  inline def getTimeZones(): js.Array[dxSchedulerTimeZone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeZones")().asInstanceOf[js.Array[dxSchedulerTimeZone]]
+  inline def getTimeZones(date: Date): js.Array[dxSchedulerTimeZone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeZones")(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[dxSchedulerTimeZone]]
   
-  @scala.inline
-  def initMobileViewport(options: AllowPan): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initMobileViewport")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initMobileViewport(options: AllowPan): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initMobileViewport")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def requestAnimationFrame(callback: js.Function): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def requestAnimationFrame(callback: js.Function): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

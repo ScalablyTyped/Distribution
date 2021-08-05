@@ -19,25 +19,19 @@ trait DeploymentConfigTrafficRoutingConfigTimeBasedLinear extends StObject {
 }
 object DeploymentConfigTrafficRoutingConfigTimeBasedLinear {
   
-  @scala.inline
-  def apply(): DeploymentConfigTrafficRoutingConfigTimeBasedLinear = {
+  inline def apply(): DeploymentConfigTrafficRoutingConfigTimeBasedLinear = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentConfigTrafficRoutingConfigTimeBasedLinear]
   }
   
-  @scala.inline
-  implicit class DeploymentConfigTrafficRoutingConfigTimeBasedLinearMutableBuilder[Self <: DeploymentConfigTrafficRoutingConfigTimeBasedLinear] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentConfigTrafficRoutingConfigTimeBasedLinear](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: Input[Double]): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Input[Double]): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
   }
 }

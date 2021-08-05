@@ -20,7 +20,6 @@ object offlinestorageMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(productPayload: js.Any): OfflineProductStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(productPayload.asInstanceOf[js.Any]).asInstanceOf[OfflineProductStorage]
+    inline def create(productPayload: js.Any): OfflineProductStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(productPayload.asInstanceOf[js.Any]).asInstanceOf[OfflineProductStorage]
   }
 }

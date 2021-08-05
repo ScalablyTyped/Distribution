@@ -11,19 +11,15 @@ trait CertificateFingerprint extends StObject {
 }
 object CertificateFingerprint {
   
-  @scala.inline
-  def apply(): CertificateFingerprint = {
+  inline def apply(): CertificateFingerprint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateFingerprint]
   }
   
-  @scala.inline
-  implicit class CertificateFingerprintMutableBuilder[Self <: CertificateFingerprint] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateFingerprint](x: Self) {
     
-    @scala.inline
-    def setSha256Hash(value: String): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
+    inline def setSha256Hash(value: String): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
+    inline def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
   }
 }

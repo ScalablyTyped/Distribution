@@ -23,26 +23,20 @@ trait QualityChangeRenderedEvent
 }
 object QualityChangeRenderedEvent {
   
-  @scala.inline
-  def apply(mediaType: video | audio | fragmentedText, newQuality: Double, oldQuality: Double): QualityChangeRenderedEvent = {
+  inline def apply(mediaType: video | audio | fragmentedText, newQuality: Double, oldQuality: Double): QualityChangeRenderedEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], newQuality = newQuality.asInstanceOf[js.Any], oldQuality = oldQuality.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("qualityChangeRendered")
     __obj.asInstanceOf[QualityChangeRenderedEvent]
   }
   
-  @scala.inline
-  implicit class QualityChangeRenderedEventMutableBuilder[Self <: QualityChangeRenderedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: QualityChangeRenderedEvent](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewQuality(value: Double): Self = StObject.set(x, "newQuality", value.asInstanceOf[js.Any])
+    inline def setNewQuality(value: Double): Self = StObject.set(x, "newQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldQuality(value: Double): Self = StObject.set(x, "oldQuality", value.asInstanceOf[js.Any])
+    inline def setOldQuality(value: Double): Self = StObject.set(x, "oldQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: qualityChangeRendered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: qualityChangeRendered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

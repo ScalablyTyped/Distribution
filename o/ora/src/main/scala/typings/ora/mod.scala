@@ -21,12 +21,9 @@ object mod {
   	}, 1000);
   	```
   	*/
-  @scala.inline
-  def apply(): Ora = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Ora]
-  @scala.inline
-  def apply(options: String): Ora = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
-  @scala.inline
-  def apply(options: Options): Ora = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
+  inline def apply(): Ora = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Ora]
+  inline def apply(options: String): Ora = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
+  inline def apply(options: Options): Ora = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
   
   @JSImport("ora", JSImport.Namespace)
   @js.native
@@ -38,12 +35,9 @@ object mod {
   	@param options - If a string is provided, it is treated as a shortcut for `options.text`.
   	@returns The spinner instance.
   	*/
-  @scala.inline
-  def promise(action: js.Thenable[js.Any]): Ora = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any]).asInstanceOf[Ora]
-  @scala.inline
-  def promise(action: js.Thenable[js.Any], options: String): Ora = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ora]
-  @scala.inline
-  def promise(action: js.Thenable[js.Any], options: Options): Ora = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ora]
+  inline def promise(action: js.Thenable[js.Any]): Ora = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any]).asInstanceOf[Ora]
+  inline def promise(action: js.Thenable[js.Any], options: String): Ora = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ora]
+  inline def promise(action: js.Thenable[js.Any], options: Options): Ora = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ora]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ora.oraStrings.black
@@ -59,32 +53,23 @@ object mod {
   trait Color extends StObject
   object Color {
     
-    @scala.inline
-    def black: typings.ora.oraStrings.black = "black".asInstanceOf[typings.ora.oraStrings.black]
+    inline def black: typings.ora.oraStrings.black = "black".asInstanceOf[typings.ora.oraStrings.black]
     
-    @scala.inline
-    def blue: typings.ora.oraStrings.blue = "blue".asInstanceOf[typings.ora.oraStrings.blue]
+    inline def blue: typings.ora.oraStrings.blue = "blue".asInstanceOf[typings.ora.oraStrings.blue]
     
-    @scala.inline
-    def cyan: typings.ora.oraStrings.cyan = "cyan".asInstanceOf[typings.ora.oraStrings.cyan]
+    inline def cyan: typings.ora.oraStrings.cyan = "cyan".asInstanceOf[typings.ora.oraStrings.cyan]
     
-    @scala.inline
-    def gray: typings.ora.oraStrings.gray = "gray".asInstanceOf[typings.ora.oraStrings.gray]
+    inline def gray: typings.ora.oraStrings.gray = "gray".asInstanceOf[typings.ora.oraStrings.gray]
     
-    @scala.inline
-    def green: typings.ora.oraStrings.green = "green".asInstanceOf[typings.ora.oraStrings.green]
+    inline def green: typings.ora.oraStrings.green = "green".asInstanceOf[typings.ora.oraStrings.green]
     
-    @scala.inline
-    def magenta: typings.ora.oraStrings.magenta = "magenta".asInstanceOf[typings.ora.oraStrings.magenta]
+    inline def magenta: typings.ora.oraStrings.magenta = "magenta".asInstanceOf[typings.ora.oraStrings.magenta]
     
-    @scala.inline
-    def red: typings.ora.oraStrings.red = "red".asInstanceOf[typings.ora.oraStrings.red]
+    inline def red: typings.ora.oraStrings.red = "red".asInstanceOf[typings.ora.oraStrings.red]
     
-    @scala.inline
-    def white: typings.ora.oraStrings.white = "white".asInstanceOf[typings.ora.oraStrings.white]
+    inline def white: typings.ora.oraStrings.white = "white".asInstanceOf[typings.ora.oraStrings.white]
     
-    @scala.inline
-    def yellow: typings.ora.oraStrings.yellow = "yellow".asInstanceOf[typings.ora.oraStrings.yellow]
+    inline def yellow: typings.ora.oraStrings.yellow = "yellow".asInstanceOf[typings.ora.oraStrings.yellow]
   }
   
   trait Options extends StObject {
@@ -166,83 +151,58 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDiscardStdin(value: Boolean): Self = StObject.set(x, "discardStdin", value.asInstanceOf[js.Any])
+      inline def setDiscardStdin(value: Boolean): Self = StObject.set(x, "discardStdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscardStdinUndefined: Self = StObject.set(x, "discardStdin", js.undefined)
+      inline def setDiscardStdinUndefined: Self = StObject.set(x, "discardStdin", js.undefined)
       
-      @scala.inline
-      def setHideCursor(value: Boolean): Self = StObject.set(x, "hideCursor", value.asInstanceOf[js.Any])
+      inline def setHideCursor(value: Boolean): Self = StObject.set(x, "hideCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideCursorUndefined: Self = StObject.set(x, "hideCursor", js.undefined)
+      inline def setHideCursorUndefined: Self = StObject.set(x, "hideCursor", js.undefined)
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
+      inline def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSilentUndefined: Self = StObject.set(x, "isSilent", js.undefined)
+      inline def setIsSilentUndefined: Self = StObject.set(x, "isSilent", js.undefined)
       
-      @scala.inline
-      def setPrefixText(value: String | PrefixTextGenerator): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
+      inline def setPrefixText(value: String | PrefixTextGenerator): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixTextFunction0(value: () => String): Self = StObject.set(x, "prefixText", js.Any.fromFunction0(value))
+      inline def setPrefixTextFunction0(value: () => String): Self = StObject.set(x, "prefixText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
+      inline def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
       
-      @scala.inline
-      def setSpinner(value: SpinnerName | Spinner): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      inline def setSpinner(value: SpinnerName | Spinner): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
+      inline def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -373,35 +333,26 @@ object mod {
   }
   object PersistOptions {
     
-    @scala.inline
-    def apply(): PersistOptions = {
+    inline def apply(): PersistOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PersistOptions]
     }
     
-    @scala.inline
-    implicit class PersistOptionsMutableBuilder[Self <: PersistOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PersistOptions](x: Self) {
       
-      @scala.inline
-      def setPrefixText(value: String | PrefixTextGenerator): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
+      inline def setPrefixText(value: String | PrefixTextGenerator): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixTextFunction0(value: () => String): Self = StObject.set(x, "prefixText", js.Any.fromFunction0(value))
+      inline def setPrefixTextFunction0(value: () => String): Self = StObject.set(x, "prefixText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
+      inline def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -415,26 +366,20 @@ object mod {
   }
   object Spinner {
     
-    @scala.inline
-    def apply(frames: js.Array[String]): Spinner = {
+    inline def apply(frames: js.Array[String]): Spinner = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any])
       __obj.asInstanceOf[Spinner]
     }
     
-    @scala.inline
-    implicit class SpinnerMutableBuilder[Self <: Spinner] (val x: Self) extends AnyVal {
+    extension [Self <: Spinner](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     }
   }
 }

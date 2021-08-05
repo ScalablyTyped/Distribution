@@ -70,74 +70,52 @@ object typesCreateMultipartUploadOutputMod {
   }
   object CreateMultipartUploadOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateMultipartUploadOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateMultipartUploadOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateMultipartUploadOutput]
     }
     
-    @scala.inline
-    implicit class CreateMultipartUploadOutputMutableBuilder[Self <: CreateMultipartUploadOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateMultipartUploadOutput](x: Self) {
       
-      @scala.inline
-      def setAbortDate(value: Date): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
+      inline def setAbortDate(value: Date): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortDateUndefined: Self = StObject.set(x, "AbortDate", js.undefined)
+      inline def setAbortDateUndefined: Self = StObject.set(x, "AbortDate", js.undefined)
       
-      @scala.inline
-      def setAbortRuleId(value: String): Self = StObject.set(x, "AbortRuleId", value.asInstanceOf[js.Any])
+      inline def setAbortRuleId(value: String): Self = StObject.set(x, "AbortRuleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortRuleIdUndefined: Self = StObject.set(x, "AbortRuleId", js.undefined)
+      inline def setAbortRuleIdUndefined: Self = StObject.set(x, "AbortRuleId", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
       
-      @scala.inline
-      def setSSECustomerAlgorithm(value: String): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSSECustomerAlgorithm(value: String): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
+      inline def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
       
-      @scala.inline
-      def setSSECustomerKeyMD5(value: String): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+      inline def setSSECustomerKeyMD5(value: String): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
+      inline def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
       
-      @scala.inline
-      def setSSEKMSKeyId(value: String): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
+      inline def setSSEKMSKeyId(value: String): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
+      inline def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryption(value: AES256 | awsColonkms | String): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: AES256 | awsColonkms | String): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
       
-      @scala.inline
-      def setUploadId(value: String): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
+      inline def setUploadId(value: String): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
+      inline def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
     }
   }
 }

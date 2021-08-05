@@ -11,16 +11,13 @@ trait CurrentModule extends StObject {
 }
 object CurrentModule {
   
-  @scala.inline
-  def apply(CurrentModule: NavigationModule): CurrentModule = {
+  inline def apply(CurrentModule: NavigationModule): CurrentModule = {
     val __obj = js.Dynamic.literal(CurrentModule = CurrentModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentModule]
   }
   
-  @scala.inline
-  implicit class CurrentModuleMutableBuilder[Self <: CurrentModule] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentModule](x: Self) {
     
-    @scala.inline
-    def setCurrentModule(value: NavigationModule): Self = StObject.set(x, "CurrentModule", value.asInstanceOf[js.Any])
+    inline def setCurrentModule(value: NavigationModule): Self = StObject.set(x, "CurrentModule", value.asInstanceOf[js.Any])
   }
 }

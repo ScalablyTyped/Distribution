@@ -13,19 +13,15 @@ trait BillingPaymentRequest extends StObject {
 }
 object BillingPaymentRequest {
   
-  @scala.inline
-  def apply(): BillingPaymentRequest = {
+  inline def apply(): BillingPaymentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingPaymentRequest]
   }
   
-  @scala.inline
-  implicit class BillingPaymentRequestMutableBuilder[Self <: BillingPaymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPaymentRequest](x: Self) {
     
-    @scala.inline
-    def setPaymentAmount(value: String): Self = StObject.set(x, "paymentAmount", value.asInstanceOf[js.Any])
+    inline def setPaymentAmount(value: String): Self = StObject.set(x, "paymentAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentAmountUndefined: Self = StObject.set(x, "paymentAmount", js.undefined)
+    inline def setPaymentAmountUndefined: Self = StObject.set(x, "paymentAmount", js.undefined)
   }
 }

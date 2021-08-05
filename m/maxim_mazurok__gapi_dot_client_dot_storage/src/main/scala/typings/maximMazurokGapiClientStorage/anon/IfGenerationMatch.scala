@@ -14,19 +14,15 @@ trait IfGenerationMatch extends StObject {
 }
 object IfGenerationMatch {
   
-  @scala.inline
-  def apply(): IfGenerationMatch = {
+  inline def apply(): IfGenerationMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IfGenerationMatch]
   }
   
-  @scala.inline
-  implicit class IfGenerationMatchMutableBuilder[Self <: IfGenerationMatch] (val x: Self) extends AnyVal {
+  extension [Self <: IfGenerationMatch](x: Self) {
     
-    @scala.inline
-    def setIfGenerationMatch(value: String): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
+    inline def setIfGenerationMatch(value: String): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfGenerationMatchUndefined: Self = StObject.set(x, "ifGenerationMatch", js.undefined)
+    inline def setIfGenerationMatchUndefined: Self = StObject.set(x, "ifGenerationMatch", js.undefined)
   }
 }

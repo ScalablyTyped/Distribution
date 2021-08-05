@@ -33,8 +33,7 @@ trait ASPxClientHtmlEditorAudioDialog
 }
 object ASPxClientHtmlEditorAudioDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAutoPlayCheckBox: () => ASPxClientCheckBox,
     GetBorderColorColorEdit: () => ASPxClientColorEdit,
     GetBorderStyleComboBox: () => ASPxClientComboBox,
@@ -60,19 +59,14 @@ object ASPxClientHtmlEditorAudioDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorAudioDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorAudioDialogMutableBuilder[Self <: ASPxClientHtmlEditorAudioDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorAudioDialog](x: Self) {
     
-    @scala.inline
-    def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAutoPlayCheckBox", js.Any.fromFunction0(value))
+    inline def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAutoPlayCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoopCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetLoopCheckBox", js.Any.fromFunction0(value))
+    inline def setGetLoopCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetLoopCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreloadModeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetPreloadModeComboBox", js.Any.fromFunction0(value))
+    inline def setGetPreloadModeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetPreloadModeComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
+    inline def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
   }
 }

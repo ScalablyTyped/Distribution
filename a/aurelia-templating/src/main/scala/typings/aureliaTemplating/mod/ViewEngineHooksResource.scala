@@ -30,8 +30,6 @@ object ViewEngineHooksResource {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convention(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")().asInstanceOf[js.Any]
-  @scala.inline
-  def convention(name: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def convention(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")().asInstanceOf[js.Any]
+  inline def convention(name: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -20,16 +20,13 @@ trait EdgeZoneSource extends StObject {
 }
 object EdgeZoneSource {
   
-  @scala.inline
-  def apply(getPoints: (/* quantity */ integer, /* stepRate */ js.UndefOr[Double]) => Unit): EdgeZoneSource = {
+  inline def apply(getPoints: (/* quantity */ integer, /* stepRate */ js.UndefOr[Double]) => Unit): EdgeZoneSource = {
     val __obj = js.Dynamic.literal(getPoints = js.Any.fromFunction2(getPoints))
     __obj.asInstanceOf[EdgeZoneSource]
   }
   
-  @scala.inline
-  implicit class EdgeZoneSourceMutableBuilder[Self <: EdgeZoneSource] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeZoneSource](x: Self) {
     
-    @scala.inline
-    def setGetPoints(value: (/* quantity */ integer, /* stepRate */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "getPoints", js.Any.fromFunction2(value))
+    inline def setGetPoints(value: (/* quantity */ integer, /* stepRate */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "getPoints", js.Any.fromFunction2(value))
   }
 }

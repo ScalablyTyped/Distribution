@@ -68,8 +68,7 @@ trait LineItem
 }
 object LineItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     grams: Double,
     id: String | Double,
     image: Image,
@@ -85,43 +84,30 @@ object LineItem {
     __obj.asInstanceOf[LineItem]
   }
   
-  @scala.inline
-  implicit class LineItemMutableBuilder[Self <: LineItem] (val x: Self) extends AnyVal {
+  extension [Self <: LineItem](x: Self) {
     
-    @scala.inline
-    def setCompareAtPrice(value: String): Self = StObject.set(x, "compareAtPrice", value.asInstanceOf[js.Any])
+    inline def setCompareAtPrice(value: String): Self = StObject.set(x, "compareAtPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareAtPriceNull: Self = StObject.set(x, "compareAtPrice", null)
+    inline def setCompareAtPriceNull: Self = StObject.set(x, "compareAtPrice", null)
     
-    @scala.inline
-    def setGrams(value: Double): Self = StObject.set(x, "grams", value.asInstanceOf[js.Any])
+    inline def setGrams(value: Double): Self = StObject.set(x, "grams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinePrice(value: String): Self = StObject.set(x, "linePrice", value.asInstanceOf[js.Any])
+    inline def setLinePrice(value: String): Self = StObject.set(x, "linePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String | Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String | Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantId(value: String | Double): Self = StObject.set(x, "variantId", value.asInstanceOf[js.Any])
+    inline def setVariantId(value: String | Double): Self = StObject.set(x, "variantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantTitle(value: String): Self = StObject.set(x, "variantTitle", value.asInstanceOf[js.Any])
+    inline def setVariantTitle(value: String): Self = StObject.set(x, "variantTitle", value.asInstanceOf[js.Any])
   }
 }

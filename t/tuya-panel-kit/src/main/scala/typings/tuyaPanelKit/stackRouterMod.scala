@@ -28,8 +28,7 @@ object stackRouterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: StackRouterOptions): Router[
+  inline def default(options: StackRouterOptions): Router[
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | PayloadSource | SourceTarget | TargetType | SourceTargetType
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router[
@@ -43,25 +42,18 @@ object stackRouterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def pop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[StackActionType]
-    @scala.inline
-    def pop(count: Double): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(count.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    inline def pop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[StackActionType]
+    inline def pop(count: Double): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(count.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
     
-    @scala.inline
-    def popToTop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[StackActionType]
+    inline def popToTop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[StackActionType]
     
     // tslint:disable-next-line no-redundant-undefined
-    @scala.inline
-    def push(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
-    @scala.inline
-    def push(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
+    inline def push(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    inline def push(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
     
     // tslint:disable-next-line no-redundant-undefined
-    @scala.inline
-    def replace(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
-    @scala.inline
-    def replace(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
+    inline def replace(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    inline def replace(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
   }
   
   @js.native
@@ -114,29 +106,25 @@ object stackRouterMod {
   trait StackActionType extends StObject
   object StackActionType {
     
-    @scala.inline
-    def PayloadSource(payload: Params): typings.tuyaPanelKit.anon.PayloadSource = {
+    inline def PayloadSource(payload: Params): typings.tuyaPanelKit.anon.PayloadSource = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("REPLACE")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.PayloadSource]
     }
     
-    @scala.inline
-    def SourceTarget(payload: Params): typings.tuyaPanelKit.anon.SourceTarget = {
+    inline def SourceTarget(payload: Params): typings.tuyaPanelKit.anon.SourceTarget = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("PUSH")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.SourceTarget]
     }
     
-    @scala.inline
-    def SourceTargetType(): typings.tuyaPanelKit.anon.SourceTargetType = {
+    inline def SourceTargetType(): typings.tuyaPanelKit.anon.SourceTargetType = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("POP_TO_TOP")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.SourceTargetType]
     }
     
-    @scala.inline
-    def TargetType(payload: Count): typings.tuyaPanelKit.anon.TargetType = {
+    inline def TargetType(payload: Count): typings.tuyaPanelKit.anon.TargetType = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("POP")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.TargetType]
@@ -165,8 +153,7 @@ object stackRouterMod {
   }
   object StackNavigationState {
     
-    @scala.inline
-    def apply[ParamList /* <: ParamListBase */](
+    inline def apply[ParamList /* <: ParamListBase */](
       index: Double,
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
@@ -178,41 +165,29 @@ object stackRouterMod {
       __obj.asInstanceOf[StackNavigationState[ParamList]]
     }
     
-    @scala.inline
-    implicit class StackNavigationStateMutableBuilder[Self <: StackNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & StackNavigationState[ParamList]) extends AnyVal {
+    extension [Self <: StackNavigationState[?], ParamList /* <: ParamListBase */](x: Self & StackNavigationState[ParamList]) {
       
-      @scala.inline
-      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
+      inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String & stack): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String & stack): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

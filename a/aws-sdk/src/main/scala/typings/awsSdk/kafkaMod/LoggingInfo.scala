@@ -10,16 +10,13 @@ trait LoggingInfo extends StObject {
 }
 object LoggingInfo {
   
-  @scala.inline
-  def apply(BrokerLogs: BrokerLogs): LoggingInfo = {
+  inline def apply(BrokerLogs: BrokerLogs): LoggingInfo = {
     val __obj = js.Dynamic.literal(BrokerLogs = BrokerLogs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingInfo]
   }
   
-  @scala.inline
-  implicit class LoggingInfoMutableBuilder[Self <: LoggingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingInfo](x: Self) {
     
-    @scala.inline
-    def setBrokerLogs(value: BrokerLogs): Self = StObject.set(x, "BrokerLogs", value.asInstanceOf[js.Any])
+    inline def setBrokerLogs(value: BrokerLogs): Self = StObject.set(x, "BrokerLogs", value.asInstanceOf[js.Any])
   }
 }

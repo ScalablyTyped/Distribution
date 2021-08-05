@@ -12,19 +12,15 @@ trait ActPromiseResult[T] extends StObject {
 }
 object ActPromiseResult {
   
-  @scala.inline
-  def apply[T](context: Hemera[ClientRequest, ClientResponse], data: T): ActPromiseResult[T] = {
+  inline def apply[T](context: Hemera[ClientRequest, ClientResponse], data: T): ActPromiseResult[T] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActPromiseResult[T]]
   }
   
-  @scala.inline
-  implicit class ActPromiseResultMutableBuilder[Self <: ActPromiseResult[?], T] (val x: Self & ActPromiseResult[T]) extends AnyVal {
+  extension [Self <: ActPromiseResult[?], T](x: Self & ActPromiseResult[T]) {
     
-    @scala.inline
-    def setContext(value: Hemera[ClientRequest, ClientResponse]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Hemera[ClientRequest, ClientResponse]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

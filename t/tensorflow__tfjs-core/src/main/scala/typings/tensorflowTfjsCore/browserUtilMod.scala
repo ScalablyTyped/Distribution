@@ -10,6 +10,5 @@ object browserUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nextFrame(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextFrame")().asInstanceOf[js.Promise[Unit]]
+  inline def nextFrame(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextFrame")().asInstanceOf[js.Promise[Unit]]
 }

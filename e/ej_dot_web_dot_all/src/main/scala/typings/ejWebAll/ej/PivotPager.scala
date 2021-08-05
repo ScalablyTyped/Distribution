@@ -85,56 +85,40 @@ object PivotPager {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.PivotPager.Model = {
+    inline def apply(): typings.ejWebAll.ej.PivotPager.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.PivotPager.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.PivotPager.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.PivotPager.Model](x: Self) {
       
-      @scala.inline
-      def setCategoricalCurrentPage(value: Double): Self = StObject.set(x, "categoricalCurrentPage", value.asInstanceOf[js.Any])
+      inline def setCategoricalCurrentPage(value: Double): Self = StObject.set(x, "categoricalCurrentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoricalCurrentPageUndefined: Self = StObject.set(x, "categoricalCurrentPage", js.undefined)
+      inline def setCategoricalCurrentPageUndefined: Self = StObject.set(x, "categoricalCurrentPage", js.undefined)
       
-      @scala.inline
-      def setCategoricalPageCount(value: Double): Self = StObject.set(x, "categoricalPageCount", value.asInstanceOf[js.Any])
+      inline def setCategoricalPageCount(value: Double): Self = StObject.set(x, "categoricalPageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoricalPageCountUndefined: Self = StObject.set(x, "categoricalPageCount", js.undefined)
+      inline def setCategoricalPageCountUndefined: Self = StObject.set(x, "categoricalPageCount", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMode(value: Mode | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setSeriesCurrentPage(value: Double): Self = StObject.set(x, "seriesCurrentPage", value.asInstanceOf[js.Any])
+      inline def setSeriesCurrentPage(value: Double): Self = StObject.set(x, "seriesCurrentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeriesCurrentPageUndefined: Self = StObject.set(x, "seriesCurrentPage", js.undefined)
+      inline def setSeriesCurrentPageUndefined: Self = StObject.set(x, "seriesCurrentPage", js.undefined)
       
-      @scala.inline
-      def setSeriesPageCount(value: Double): Self = StObject.set(x, "seriesPageCount", value.asInstanceOf[js.Any])
+      inline def setSeriesPageCount(value: Double): Self = StObject.set(x, "seriesPageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeriesPageCountUndefined: Self = StObject.set(x, "seriesPageCount", js.undefined)
+      inline def setSeriesPageCountUndefined: Self = StObject.set(x, "seriesPageCount", js.undefined)
       
-      @scala.inline
-      def setTargetControlID(value: String): Self = StObject.set(x, "targetControlID", value.asInstanceOf[js.Any])
+      inline def setTargetControlID(value: String): Self = StObject.set(x, "targetControlID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetControlIDUndefined: Self = StObject.set(x, "targetControlID", js.undefined)
+      inline def setTargetControlIDUndefined: Self = StObject.set(x, "targetControlID", js.undefined)
     }
   }
 }

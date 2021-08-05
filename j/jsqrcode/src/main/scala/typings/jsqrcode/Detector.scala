@@ -51,8 +51,7 @@ trait Detector extends StObject {
 }
 object Detector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     calculateModuleSize: (AlignmentPattern, AlignmentPattern, AlignmentPattern) => Double,
     calculateModuleSizeOneWay: (AlignmentPattern, AlignmentPattern) => Double,
     computeDimension: (AlignmentPattern, AlignmentPattern, AlignmentPattern, Double) => Double,
@@ -71,48 +70,34 @@ object Detector {
     __obj.asInstanceOf[Detector]
   }
   
-  @scala.inline
-  implicit class DetectorMutableBuilder[Self <: Detector] (val x: Self) extends AnyVal {
+  extension [Self <: Detector](x: Self) {
     
-    @scala.inline
-    def setCalculateModuleSize(value: (AlignmentPattern, AlignmentPattern, AlignmentPattern) => Double): Self = StObject.set(x, "calculateModuleSize", js.Any.fromFunction3(value))
+    inline def setCalculateModuleSize(value: (AlignmentPattern, AlignmentPattern, AlignmentPattern) => Double): Self = StObject.set(x, "calculateModuleSize", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCalculateModuleSizeOneWay(value: (AlignmentPattern, AlignmentPattern) => Double): Self = StObject.set(x, "calculateModuleSizeOneWay", js.Any.fromFunction2(value))
+    inline def setCalculateModuleSizeOneWay(value: (AlignmentPattern, AlignmentPattern) => Double): Self = StObject.set(x, "calculateModuleSizeOneWay", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComputeDimension(value: (AlignmentPattern, AlignmentPattern, AlignmentPattern, Double) => Double): Self = StObject.set(x, "computeDimension", js.Any.fromFunction4(value))
+    inline def setComputeDimension(value: (AlignmentPattern, AlignmentPattern, AlignmentPattern, Double) => Double): Self = StObject.set(x, "computeDimension", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateTransform(
+    inline def setCreateTransform(
       value: (AlignmentPattern, AlignmentPattern, AlignmentPattern, AlignmentPattern, Double) => PerspectiveTransform
     ): Self = StObject.set(x, "createTransform", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDetect(value: () => DetectorResult): Self = StObject.set(x, "detect", js.Any.fromFunction0(value))
+    inline def setDetect(value: () => DetectorResult): Self = StObject.set(x, "detect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDistance(value: (AlignmentPattern, AlignmentPattern) => Double): Self = StObject.set(x, "distance", js.Any.fromFunction2(value))
+    inline def setDistance(value: (AlignmentPattern, AlignmentPattern) => Double): Self = StObject.set(x, "distance", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindAlignmentInRegion(value: (Double, Double, Double, Double) => AlignmentPattern): Self = StObject.set(x, "findAlignmentInRegion", js.Any.fromFunction4(value))
+    inline def setFindAlignmentInRegion(value: (Double, Double, Double, Double) => AlignmentPattern): Self = StObject.set(x, "findAlignmentInRegion", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessFinderPatternInfo(value: FinderPatternInfo => DetectorResult): Self = StObject.set(x, "processFinderPatternInfo", js.Any.fromFunction1(value))
+    inline def setProcessFinderPatternInfo(value: FinderPatternInfo => DetectorResult): Self = StObject.set(x, "processFinderPatternInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
+    inline def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleGrid(value: (Uint8Array, PerspectiveTransform, Double) => BitMatrix): Self = StObject.set(x, "sampleGrid", js.Any.fromFunction3(value))
+    inline def setSampleGrid(value: (Uint8Array, PerspectiveTransform, Double) => BitMatrix): Self = StObject.set(x, "sampleGrid", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSizeOfBlackWhiteBlackRun(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "sizeOfBlackWhiteBlackRun", js.Any.fromFunction4(value))
+    inline def setSizeOfBlackWhiteBlackRun(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "sizeOfBlackWhiteBlackRun", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSizeOfBlackWhiteBlackRunBothWays(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "sizeOfBlackWhiteBlackRunBothWays", js.Any.fromFunction4(value))
+    inline def setSizeOfBlackWhiteBlackRunBothWays(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "sizeOfBlackWhiteBlackRunBothWays", js.Any.fromFunction4(value))
   }
 }

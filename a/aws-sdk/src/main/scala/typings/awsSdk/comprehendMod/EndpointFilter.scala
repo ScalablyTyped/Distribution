@@ -28,37 +28,27 @@ trait EndpointFilter extends StObject {
 }
 object EndpointFilter {
   
-  @scala.inline
-  def apply(): EndpointFilter = {
+  inline def apply(): EndpointFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointFilter]
   }
   
-  @scala.inline
-  implicit class EndpointFilterMutableBuilder[Self <: EndpointFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointFilter](x: Self) {
     
-    @scala.inline
-    def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
+    inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    @scala.inline
-    def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
+    inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
-    @scala.inline
-    def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
+    inline def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelArnUndefined: Self = StObject.set(x, "ModelArn", js.undefined)
+    inline def setModelArnUndefined: Self = StObject.set(x, "ModelArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: EndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

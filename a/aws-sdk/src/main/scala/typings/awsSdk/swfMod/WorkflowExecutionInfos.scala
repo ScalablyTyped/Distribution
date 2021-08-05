@@ -18,25 +18,19 @@ trait WorkflowExecutionInfos extends StObject {
 }
 object WorkflowExecutionInfos {
   
-  @scala.inline
-  def apply(executionInfos: WorkflowExecutionInfoList): WorkflowExecutionInfos = {
+  inline def apply(executionInfos: WorkflowExecutionInfoList): WorkflowExecutionInfos = {
     val __obj = js.Dynamic.literal(executionInfos = executionInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionInfos]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionInfosMutableBuilder[Self <: WorkflowExecutionInfos] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionInfos](x: Self) {
     
-    @scala.inline
-    def setExecutionInfos(value: WorkflowExecutionInfoList): Self = StObject.set(x, "executionInfos", value.asInstanceOf[js.Any])
+    inline def setExecutionInfos(value: WorkflowExecutionInfoList): Self = StObject.set(x, "executionInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionInfosVarargs(value: WorkflowExecutionInfo*): Self = StObject.set(x, "executionInfos", js.Array(value :_*))
+    inline def setExecutionInfosVarargs(value: WorkflowExecutionInfo*): Self = StObject.set(x, "executionInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

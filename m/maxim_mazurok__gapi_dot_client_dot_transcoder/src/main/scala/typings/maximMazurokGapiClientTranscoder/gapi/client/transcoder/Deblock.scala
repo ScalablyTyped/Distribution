@@ -14,25 +14,19 @@ trait Deblock extends StObject {
 }
 object Deblock {
   
-  @scala.inline
-  def apply(): Deblock = {
+  inline def apply(): Deblock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deblock]
   }
   
-  @scala.inline
-  implicit class DeblockMutableBuilder[Self <: Deblock] (val x: Self) extends AnyVal {
+  extension [Self <: Deblock](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
   }
 }

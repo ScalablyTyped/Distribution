@@ -18,19 +18,15 @@ trait SchemaSearchQualityMetadata extends StObject {
 }
 object SchemaSearchQualityMetadata {
   
-  @scala.inline
-  def apply(): SchemaSearchQualityMetadata = {
+  inline def apply(): SchemaSearchQualityMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSearchQualityMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaSearchQualityMetadataMutableBuilder[Self <: SchemaSearchQualityMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSearchQualityMetadata](x: Self) {
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

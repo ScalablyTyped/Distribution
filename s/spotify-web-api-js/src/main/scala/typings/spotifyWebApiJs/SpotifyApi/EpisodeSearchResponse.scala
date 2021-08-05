@@ -16,16 +16,13 @@ trait EpisodeSearchResponse extends StObject {
 }
 object EpisodeSearchResponse {
   
-  @scala.inline
-  def apply(episodes: PagingObject[EpisodeObjectSimplified]): EpisodeSearchResponse = {
+  inline def apply(episodes: PagingObject[EpisodeObjectSimplified]): EpisodeSearchResponse = {
     val __obj = js.Dynamic.literal(episodes = episodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[EpisodeSearchResponse]
   }
   
-  @scala.inline
-  implicit class EpisodeSearchResponseMutableBuilder[Self <: EpisodeSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EpisodeSearchResponse](x: Self) {
     
-    @scala.inline
-    def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
+    inline def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
   }
 }

@@ -24,26 +24,20 @@ object orderedListOrderedListMod extends Shortcut {
   }
   object OrderedListProps {
     
-    @scala.inline
-    def apply(): OrderedListProps = {
+    inline def apply(): OrderedListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrderedListProps]
     }
     
-    @scala.inline
-    implicit class OrderedListPropsMutableBuilder[Self <: OrderedListProps] (val x: Self) extends AnyVal {
+    extension [Self <: OrderedListProps](x: Self) {
       
-      @scala.inline
-      def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+      inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
+      inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
       
-      @scala.inline
-      def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+      inline def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
+      inline def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
     }
   }
   

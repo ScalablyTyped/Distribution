@@ -15,13 +15,11 @@ object sendListChangeDeltasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sendListChangeDeltas[T, P](
+  inline def sendListChangeDeltas[T, P](
     property: (AbstractProperty[js.Array[T], IList[P]]) & ToRawChangeValue[P],
     change: IArrayWillChange[P]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendListChangeDeltas")(property.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sendListChangeDeltas[T, P](
+  inline def sendListChangeDeltas[T, P](
     property: (AbstractProperty[js.Array[T], IList[P]]) & ToRawChangeValue[P],
     change: IArrayWillSplice[P]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendListChangeDeltas")(property.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]

@@ -18,25 +18,19 @@ trait MultiConditionalBranch extends StObject {
 }
 object MultiConditionalBranch {
   
-  @scala.inline
-  def apply(): MultiConditionalBranch = {
+  inline def apply(): MultiConditionalBranch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiConditionalBranch]
   }
   
-  @scala.inline
-  implicit class MultiConditionalBranchMutableBuilder[Self <: MultiConditionalBranch] (val x: Self) extends AnyVal {
+  extension [Self <: MultiConditionalBranch](x: Self) {
     
-    @scala.inline
-    def setCondition(value: SimpleCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: SimpleCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
+    inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
+    inline def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
   }
 }

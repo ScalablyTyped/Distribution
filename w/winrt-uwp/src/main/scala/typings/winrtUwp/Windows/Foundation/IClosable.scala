@@ -12,16 +12,13 @@ trait IClosable extends StObject {
 }
 object IClosable {
   
-  @scala.inline
-  def apply(close: () => Unit): IClosable = {
+  inline def apply(close: () => Unit): IClosable = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[IClosable]
   }
   
-  @scala.inline
-  implicit class IClosableMutableBuilder[Self <: IClosable] (val x: Self) extends AnyVal {
+  extension [Self <: IClosable](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

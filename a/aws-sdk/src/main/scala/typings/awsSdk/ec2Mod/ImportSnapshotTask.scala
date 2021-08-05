@@ -28,40 +28,29 @@ trait ImportSnapshotTask extends StObject {
 }
 object ImportSnapshotTask {
   
-  @scala.inline
-  def apply(): ImportSnapshotTask = {
+  inline def apply(): ImportSnapshotTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportSnapshotTask]
   }
   
-  @scala.inline
-  implicit class ImportSnapshotTaskMutableBuilder[Self <: ImportSnapshotTask] (val x: Self) extends AnyVal {
+  extension [Self <: ImportSnapshotTask](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setImportTaskId(value: String): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
+    inline def setImportTaskId(value: String): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTaskIdUndefined: Self = StObject.set(x, "ImportTaskId", js.undefined)
+    inline def setImportTaskIdUndefined: Self = StObject.set(x, "ImportTaskId", js.undefined)
     
-    @scala.inline
-    def setSnapshotTaskDetail(value: SnapshotTaskDetail): Self = StObject.set(x, "SnapshotTaskDetail", value.asInstanceOf[js.Any])
+    inline def setSnapshotTaskDetail(value: SnapshotTaskDetail): Self = StObject.set(x, "SnapshotTaskDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotTaskDetailUndefined: Self = StObject.set(x, "SnapshotTaskDetail", js.undefined)
+    inline def setSnapshotTaskDetailUndefined: Self = StObject.set(x, "SnapshotTaskDetail", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

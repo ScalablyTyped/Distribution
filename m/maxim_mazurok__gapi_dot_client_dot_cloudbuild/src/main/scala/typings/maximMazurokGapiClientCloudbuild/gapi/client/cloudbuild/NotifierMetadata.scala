@@ -14,25 +14,19 @@ trait NotifierMetadata extends StObject {
 }
 object NotifierMetadata {
   
-  @scala.inline
-  def apply(): NotifierMetadata = {
+  inline def apply(): NotifierMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifierMetadata]
   }
   
-  @scala.inline
-  implicit class NotifierMetadataMutableBuilder[Self <: NotifierMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: NotifierMetadata](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotifier(value: String): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
+    inline def setNotifier(value: String): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifierUndefined: Self = StObject.set(x, "notifier", js.undefined)
+    inline def setNotifierUndefined: Self = StObject.set(x, "notifier", js.undefined)
   }
 }

@@ -62,58 +62,42 @@ object typesGetTraceSummariesInputMod {
   }
   object GetTraceSummariesInput {
     
-    @scala.inline
-    def apply(EndTime: Date | String | Double, StartTime: Date | String | Double): GetTraceSummariesInput = {
+    inline def apply(EndTime: Date | String | Double, StartTime: Date | String | Double): GetTraceSummariesInput = {
       val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTraceSummariesInput]
     }
     
-    @scala.inline
-    implicit class GetTraceSummariesInputMutableBuilder[Self <: GetTraceSummariesInput] (val x: Self) extends AnyVal {
+    extension [Self <: GetTraceSummariesInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterExpression(value: String): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
+      inline def setFilterExpression(value: String): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
+      inline def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setSampling(value: Boolean): Self = StObject.set(x, "Sampling", value.asInstanceOf[js.Any])
+      inline def setSampling(value: Boolean): Self = StObject.set(x, "Sampling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingUndefined: Self = StObject.set(x, "Sampling", js.undefined)
+      inline def setSamplingUndefined: Self = StObject.set(x, "Sampling", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     }
   }
 }

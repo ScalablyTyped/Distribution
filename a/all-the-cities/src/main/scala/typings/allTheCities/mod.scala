@@ -50,8 +50,7 @@ object mod extends Shortcut {
   }
   object AllTheCitiesCity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adminCode: String,
       altName: String,
       cityId: Double,
@@ -65,34 +64,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AllTheCitiesCity]
     }
     
-    @scala.inline
-    implicit class AllTheCitiesCityMutableBuilder[Self <: AllTheCitiesCity] (val x: Self) extends AnyVal {
+    extension [Self <: AllTheCitiesCity](x: Self) {
       
-      @scala.inline
-      def setAdminCode(value: String): Self = StObject.set(x, "adminCode", value.asInstanceOf[js.Any])
+      inline def setAdminCode(value: String): Self = StObject.set(x, "adminCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltName(value: String): Self = StObject.set(x, "altName", value.asInstanceOf[js.Any])
+      inline def setAltName(value: String): Self = StObject.set(x, "altName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityId(value: Double): Self = StObject.set(x, "cityId", value.asInstanceOf[js.Any])
+      inline def setCityId(value: Double): Self = StObject.set(x, "cityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureCode(
+      inline def setFeatureCode(
         value: PPL | PPLA | PPLC | PPLA2 | PPLW | PPLA3 | PPLX | PPLA4 | PPLL | PPLS | PPLQ | PPLF | PPLG | PPLH | PPLCH | PPLA5 | PPLR | STLMT
       ): Self = StObject.set(x, "featureCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc(value: Coordinates): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: Coordinates): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulation(value: Double): Self = StObject.set(x, "population", value.asInstanceOf[js.Any])
+      inline def setPopulation(value: Double): Self = StObject.set(x, "population", value.asInstanceOf[js.Any])
     }
   }
   

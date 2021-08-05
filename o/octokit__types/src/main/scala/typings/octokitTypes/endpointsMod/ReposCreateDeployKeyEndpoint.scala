@@ -29,34 +29,25 @@ trait ReposCreateDeployKeyEndpoint extends StObject {
 }
 object ReposCreateDeployKeyEndpoint {
   
-  @scala.inline
-  def apply(key: String, owner: String, repo: String): ReposCreateDeployKeyEndpoint = {
+  inline def apply(key: String, owner: String, repo: String): ReposCreateDeployKeyEndpoint = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateDeployKeyEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCreateDeployKeyEndpointMutableBuilder[Self <: ReposCreateDeployKeyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateDeployKeyEndpoint](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead_only(value: Boolean): Self = StObject.set(x, "read_only", value.asInstanceOf[js.Any])
+    inline def setRead_only(value: Boolean): Self = StObject.set(x, "read_only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead_onlyUndefined: Self = StObject.set(x, "read_only", js.undefined)
+    inline def setRead_onlyUndefined: Self = StObject.set(x, "read_only", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

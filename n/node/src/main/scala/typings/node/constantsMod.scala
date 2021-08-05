@@ -597,68 +597,57 @@ object constantsMod {
   @JSImport("constants", "SIGABRT")
   @js.native
   def SIGABRT: Double = js.native
-  @scala.inline
-  def SIGABRT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGABRT")(x.asInstanceOf[js.Any])
+  inline def SIGABRT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGABRT")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGALRM")
   @js.native
   def SIGALRM: Double = js.native
-  @scala.inline
-  def SIGALRM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGALRM")(x.asInstanceOf[js.Any])
+  inline def SIGALRM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGALRM")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGBREAK")
   @js.native
   def SIGBREAK: Double = js.native
-  @scala.inline
-  def SIGBREAK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGBREAK")(x.asInstanceOf[js.Any])
+  inline def SIGBREAK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGBREAK")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGBUS")
   @js.native
   def SIGBUS: Double = js.native
-  @scala.inline
-  def SIGBUS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGBUS")(x.asInstanceOf[js.Any])
+  inline def SIGBUS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGBUS")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGCHLD")
   @js.native
   def SIGCHLD: Double = js.native
-  @scala.inline
-  def SIGCHLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGCHLD")(x.asInstanceOf[js.Any])
+  inline def SIGCHLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGCHLD")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGCONT")
   @js.native
   def SIGCONT: Double = js.native
-  @scala.inline
-  def SIGCONT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGCONT")(x.asInstanceOf[js.Any])
+  inline def SIGCONT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGCONT")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGFPE")
   @js.native
   def SIGFPE: Double = js.native
-  @scala.inline
-  def SIGFPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGFPE")(x.asInstanceOf[js.Any])
+  inline def SIGFPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGFPE")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGHUP")
   @js.native
   def SIGHUP: Double = js.native
-  @scala.inline
-  def SIGHUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGHUP")(x.asInstanceOf[js.Any])
+  inline def SIGHUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGHUP")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGILL")
   @js.native
   def SIGILL: Double = js.native
-  @scala.inline
-  def SIGILL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGILL")(x.asInstanceOf[js.Any])
+  inline def SIGILL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGILL")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGINFO")
   @js.native
   def SIGINFO: Double = js.native
-  @scala.inline
-  def SIGINFO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGINFO")(x.asInstanceOf[js.Any])
+  inline def SIGINFO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGINFO")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGINT")
   @js.native
   def SIGINT: Double = js.native
-  @scala.inline
-  def SIGINT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGINT")(x.asInstanceOf[js.Any])
+  inline def SIGINT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGINT")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGIO")
   @js.native
@@ -667,155 +656,129 @@ object constantsMod {
   @JSImport("constants", "SIGIOT")
   @js.native
   def SIGIOT: Double = js.native
-  @scala.inline
-  def SIGIOT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGIOT")(x.asInstanceOf[js.Any])
+  inline def SIGIOT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGIOT")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def SIGIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGIO")(x.asInstanceOf[js.Any])
+  inline def SIGIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGIO")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGKILL")
   @js.native
   def SIGKILL: Double = js.native
-  @scala.inline
-  def SIGKILL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGKILL")(x.asInstanceOf[js.Any])
+  inline def SIGKILL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGKILL")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGLOST")
   @js.native
   def SIGLOST: Double = js.native
-  @scala.inline
-  def SIGLOST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGLOST")(x.asInstanceOf[js.Any])
+  inline def SIGLOST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGLOST")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGPIPE")
   @js.native
   def SIGPIPE: Double = js.native
-  @scala.inline
-  def SIGPIPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPIPE")(x.asInstanceOf[js.Any])
+  inline def SIGPIPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPIPE")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGPOLL")
   @js.native
   def SIGPOLL: Double = js.native
-  @scala.inline
-  def SIGPOLL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPOLL")(x.asInstanceOf[js.Any])
+  inline def SIGPOLL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPOLL")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGPROF")
   @js.native
   def SIGPROF: Double = js.native
-  @scala.inline
-  def SIGPROF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPROF")(x.asInstanceOf[js.Any])
+  inline def SIGPROF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPROF")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGPWR")
   @js.native
   def SIGPWR: Double = js.native
-  @scala.inline
-  def SIGPWR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPWR")(x.asInstanceOf[js.Any])
+  inline def SIGPWR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGPWR")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGQUIT")
   @js.native
   def SIGQUIT: Double = js.native
-  @scala.inline
-  def SIGQUIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGQUIT")(x.asInstanceOf[js.Any])
+  inline def SIGQUIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGQUIT")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGSEGV")
   @js.native
   def SIGSEGV: Double = js.native
-  @scala.inline
-  def SIGSEGV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSEGV")(x.asInstanceOf[js.Any])
+  inline def SIGSEGV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSEGV")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGSTKFLT")
   @js.native
   def SIGSTKFLT: Double = js.native
-  @scala.inline
-  def SIGSTKFLT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSTKFLT")(x.asInstanceOf[js.Any])
+  inline def SIGSTKFLT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSTKFLT")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGSTOP")
   @js.native
   def SIGSTOP: Double = js.native
-  @scala.inline
-  def SIGSTOP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSTOP")(x.asInstanceOf[js.Any])
+  inline def SIGSTOP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSTOP")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGSYS")
   @js.native
   def SIGSYS: Double = js.native
-  @scala.inline
-  def SIGSYS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSYS")(x.asInstanceOf[js.Any])
+  inline def SIGSYS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGSYS")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGTERM")
   @js.native
   def SIGTERM: Double = js.native
-  @scala.inline
-  def SIGTERM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTERM")(x.asInstanceOf[js.Any])
+  inline def SIGTERM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTERM")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGTRAP")
   @js.native
   def SIGTRAP: Double = js.native
-  @scala.inline
-  def SIGTRAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTRAP")(x.asInstanceOf[js.Any])
+  inline def SIGTRAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTRAP")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGTSTP")
   @js.native
   def SIGTSTP: Double = js.native
-  @scala.inline
-  def SIGTSTP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTSTP")(x.asInstanceOf[js.Any])
+  inline def SIGTSTP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTSTP")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGTTIN")
   @js.native
   def SIGTTIN: Double = js.native
-  @scala.inline
-  def SIGTTIN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTTIN")(x.asInstanceOf[js.Any])
+  inline def SIGTTIN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTTIN")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGTTOU")
   @js.native
   def SIGTTOU: Double = js.native
-  @scala.inline
-  def SIGTTOU_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTTOU")(x.asInstanceOf[js.Any])
+  inline def SIGTTOU_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGTTOU")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGUNUSED")
   @js.native
   def SIGUNUSED: Double = js.native
-  @scala.inline
-  def SIGUNUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGUNUSED")(x.asInstanceOf[js.Any])
+  inline def SIGUNUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGUNUSED")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGURG")
   @js.native
   def SIGURG: Double = js.native
-  @scala.inline
-  def SIGURG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGURG")(x.asInstanceOf[js.Any])
+  inline def SIGURG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGURG")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGUSR1")
   @js.native
   def SIGUSR1: Double = js.native
-  @scala.inline
-  def SIGUSR1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGUSR1")(x.asInstanceOf[js.Any])
+  inline def SIGUSR1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGUSR1")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGUSR2")
   @js.native
   def SIGUSR2: Double = js.native
-  @scala.inline
-  def SIGUSR2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGUSR2")(x.asInstanceOf[js.Any])
+  inline def SIGUSR2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGUSR2")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGVTALRM")
   @js.native
   def SIGVTALRM: Double = js.native
-  @scala.inline
-  def SIGVTALRM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGVTALRM")(x.asInstanceOf[js.Any])
+  inline def SIGVTALRM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGVTALRM")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGWINCH")
   @js.native
   def SIGWINCH: Double = js.native
-  @scala.inline
-  def SIGWINCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGWINCH")(x.asInstanceOf[js.Any])
+  inline def SIGWINCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGWINCH")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGXCPU")
   @js.native
   def SIGXCPU: Double = js.native
-  @scala.inline
-  def SIGXCPU_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGXCPU")(x.asInstanceOf[js.Any])
+  inline def SIGXCPU_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGXCPU")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SIGXFSZ")
   @js.native
   def SIGXFSZ: Double = js.native
-  @scala.inline
-  def SIGXFSZ_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGXFSZ")(x.asInstanceOf[js.Any])
+  inline def SIGXFSZ_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGXFSZ")(x.asInstanceOf[js.Any])
   
   @JSImport("constants", "SSL_OP_NO_SSLv2")
   @js.native

@@ -33,31 +33,23 @@ trait SchemaSystemUpdate extends StObject {
 }
 object SchemaSystemUpdate {
   
-  @scala.inline
-  def apply(): SchemaSystemUpdate = {
+  inline def apply(): SchemaSystemUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSystemUpdate]
   }
   
-  @scala.inline
-  implicit class SchemaSystemUpdateMutableBuilder[Self <: SchemaSystemUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSystemUpdate](x: Self) {
     
-    @scala.inline
-    def setEndMinutes(value: Double): Self = StObject.set(x, "endMinutes", value.asInstanceOf[js.Any])
+    inline def setEndMinutes(value: Double): Self = StObject.set(x, "endMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMinutesUndefined: Self = StObject.set(x, "endMinutes", js.undefined)
+    inline def setEndMinutesUndefined: Self = StObject.set(x, "endMinutes", js.undefined)
     
-    @scala.inline
-    def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
+    inline def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMinutesUndefined: Self = StObject.set(x, "startMinutes", js.undefined)
+    inline def setStartMinutesUndefined: Self = StObject.set(x, "startMinutes", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

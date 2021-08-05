@@ -18,28 +18,21 @@ trait DescribeTransitGatewayVpcAttachmentsResult extends StObject {
 }
 object DescribeTransitGatewayVpcAttachmentsResult {
   
-  @scala.inline
-  def apply(): DescribeTransitGatewayVpcAttachmentsResult = {
+  inline def apply(): DescribeTransitGatewayVpcAttachmentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTransitGatewayVpcAttachmentsResult]
   }
   
-  @scala.inline
-  implicit class DescribeTransitGatewayVpcAttachmentsResultMutableBuilder[Self <: DescribeTransitGatewayVpcAttachmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTransitGatewayVpcAttachmentsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayVpcAttachments(value: TransitGatewayVpcAttachmentList): Self = StObject.set(x, "TransitGatewayVpcAttachments", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayVpcAttachments(value: TransitGatewayVpcAttachmentList): Self = StObject.set(x, "TransitGatewayVpcAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayVpcAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayVpcAttachments", js.undefined)
+    inline def setTransitGatewayVpcAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayVpcAttachments", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayVpcAttachmentsVarargs(value: TransitGatewayVpcAttachment*): Self = StObject.set(x, "TransitGatewayVpcAttachments", js.Array(value :_*))
+    inline def setTransitGatewayVpcAttachmentsVarargs(value: TransitGatewayVpcAttachment*): Self = StObject.set(x, "TransitGatewayVpcAttachments", js.Array(value :_*))
   }
 }

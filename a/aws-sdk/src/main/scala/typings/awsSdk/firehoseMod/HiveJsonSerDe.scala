@@ -13,22 +13,17 @@ trait HiveJsonSerDe extends StObject {
 }
 object HiveJsonSerDe {
   
-  @scala.inline
-  def apply(): HiveJsonSerDe = {
+  inline def apply(): HiveJsonSerDe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HiveJsonSerDe]
   }
   
-  @scala.inline
-  implicit class HiveJsonSerDeMutableBuilder[Self <: HiveJsonSerDe] (val x: Self) extends AnyVal {
+  extension [Self <: HiveJsonSerDe](x: Self) {
     
-    @scala.inline
-    def setTimestampFormats(value: ListOfNonEmptyStrings): Self = StObject.set(x, "TimestampFormats", value.asInstanceOf[js.Any])
+    inline def setTimestampFormats(value: ListOfNonEmptyStrings): Self = StObject.set(x, "TimestampFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampFormatsUndefined: Self = StObject.set(x, "TimestampFormats", js.undefined)
+    inline def setTimestampFormatsUndefined: Self = StObject.set(x, "TimestampFormats", js.undefined)
     
-    @scala.inline
-    def setTimestampFormatsVarargs(value: NonEmptyString*): Self = StObject.set(x, "TimestampFormats", js.Array(value :_*))
+    inline def setTimestampFormatsVarargs(value: NonEmptyString*): Self = StObject.set(x, "TimestampFormats", js.Array(value :_*))
   }
 }

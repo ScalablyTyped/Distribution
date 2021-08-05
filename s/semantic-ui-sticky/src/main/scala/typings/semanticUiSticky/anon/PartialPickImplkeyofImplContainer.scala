@@ -19,43 +19,31 @@ trait PartialPickImplkeyofImplContainer extends StObject {
 }
 object PartialPickImplkeyofImplContainer {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplContainer = {
+  inline def apply(): PartialPickImplkeyofImplContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplContainer]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplContainerMutableBuilder[Self <: PartialPickImplkeyofImplContainer] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplContainer](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setElementSize(value: String): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
+    inline def setElementSize(value: String): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementSizeUndefined: Self = StObject.set(x, "elementSize", js.undefined)
+    inline def setElementSizeUndefined: Self = StObject.set(x, "elementSize", js.undefined)
     
-    @scala.inline
-    def setInvalidContext(value: String): Self = StObject.set(x, "invalidContext", value.asInstanceOf[js.Any])
+    inline def setInvalidContext(value: String): Self = StObject.set(x, "invalidContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidContextUndefined: Self = StObject.set(x, "invalidContext", js.undefined)
+    inline def setInvalidContextUndefined: Self = StObject.set(x, "invalidContext", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

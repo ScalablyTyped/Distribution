@@ -55,21 +55,16 @@ object groupMembershipMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GroupMembershipState): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GroupMembershipState, opts: CustomResourceOptions): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
+    inline def get(name: String, id: Input[ID]): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
+    inline def get(name: String, id: Input[ID], state: GroupMembershipState): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
+    inline def get(name: String, id: Input[ID], state: GroupMembershipState, opts: CustomResourceOptions): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
     
     /**
       * Returns true if the given object is an instance of GroupMembership.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ Boolean]
   }
   
   trait GroupMembershipArgs extends StObject {
@@ -91,29 +86,22 @@ object groupMembershipMod {
   }
   object GroupMembershipArgs {
     
-    @scala.inline
-    def apply(group: Input[String], users: Input[js.Array[Input[String]]]): GroupMembershipArgs = {
+    inline def apply(group: Input[String], users: Input[js.Array[Input[String]]]): GroupMembershipArgs = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[GroupMembershipArgs]
     }
     
-    @scala.inline
-    implicit class GroupMembershipArgsMutableBuilder[Self <: GroupMembershipArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GroupMembershipArgs](x: Self) {
       
-      @scala.inline
-      def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUsers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: Input[String]*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: Input[String]*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -136,35 +124,26 @@ object groupMembershipMod {
   }
   object GroupMembershipState {
     
-    @scala.inline
-    def apply(): GroupMembershipState = {
+    inline def apply(): GroupMembershipState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupMembershipState]
     }
     
-    @scala.inline
-    implicit class GroupMembershipStateMutableBuilder[Self <: GroupMembershipState] (val x: Self) extends AnyVal {
+    extension [Self <: GroupMembershipState](x: Self) {
       
-      @scala.inline
-      def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUsers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
       
-      @scala.inline
-      def setUsersVarargs(value: Input[String]*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: Input[String]*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
 }

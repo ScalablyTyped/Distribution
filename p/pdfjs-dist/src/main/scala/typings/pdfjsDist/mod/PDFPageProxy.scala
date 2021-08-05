@@ -65,8 +65,7 @@ trait PDFPageProxy extends StObject {
 }
 object PDFPageProxy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     getAnnotations: () => PDFPromise[PDFAnnotations],
     getTextContent: () => PDFPromise[TextContent],
@@ -82,40 +81,28 @@ object PDFPageProxy {
     __obj.asInstanceOf[PDFPageProxy]
   }
   
-  @scala.inline
-  implicit class PDFPageProxyMutableBuilder[Self <: PDFPageProxy] (val x: Self) extends AnyVal {
+  extension [Self <: PDFPageProxy](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnnotations(value: () => PDFPromise[PDFAnnotations]): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction0(value))
+    inline def setGetAnnotations(value: () => PDFPromise[PDFAnnotations]): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextContent(value: () => PDFPromise[TextContent]): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
+    inline def setGetTextContent(value: () => PDFPromise[TextContent]): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewport(value: ViewportParameters => PDFPageViewport): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
+    inline def setGetViewport(value: ViewportParameters => PDFPageViewport): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: PDFRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: PDFRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: PDFRenderParams => PDFRenderTask): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: PDFRenderParams => PDFRenderTask): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: js.Array[Double]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: js.Array[Double]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewVarargs(value: Double*): Self = StObject.set(x, "view", js.Array(value :_*))
+    inline def setViewVarargs(value: Double*): Self = StObject.set(x, "view", js.Array(value :_*))
   }
 }

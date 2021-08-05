@@ -88,41 +88,30 @@ object mod {
   }
   object BLAKE2sConfig {
     
-    @scala.inline
-    def apply(): BLAKE2sConfig = {
+    inline def apply(): BLAKE2sConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BLAKE2sConfig]
     }
     
-    @scala.inline
-    implicit class BLAKE2sConfigMutableBuilder[Self <: BLAKE2sConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BLAKE2sConfig](x: Self) {
       
-      @scala.inline
-      def setKey(value: ByteArray): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: ByteArray): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
       
-      @scala.inline
-      def setPersonalization(value: ByteArray): Self = StObject.set(x, "personalization", value.asInstanceOf[js.Any])
+      inline def setPersonalization(value: ByteArray): Self = StObject.set(x, "personalization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonalizationUndefined: Self = StObject.set(x, "personalization", js.undefined)
+      inline def setPersonalizationUndefined: Self = StObject.set(x, "personalization", js.undefined)
       
-      @scala.inline
-      def setPersonalizationVarargs(value: Double*): Self = StObject.set(x, "personalization", js.Array(value :_*))
+      inline def setPersonalizationVarargs(value: Double*): Self = StObject.set(x, "personalization", js.Array(value :_*))
       
-      @scala.inline
-      def setSalt(value: ByteArray): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: ByteArray): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      @scala.inline
-      def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
+      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
     }
   }
   

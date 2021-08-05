@@ -16,18 +16,13 @@ object contextMod {
   @js.native
   val counter: IdSourceType = js.native
   
-  @scala.inline
-  def createSource(): IdSourceType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSource")().asInstanceOf[IdSourceType]
-  @scala.inline
-  def createSource(prefix: String): IdSourceType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSource")(prefix.asInstanceOf[js.Any]).asInstanceOf[IdSourceType]
+  inline def createSource(): IdSourceType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSource")().asInstanceOf[IdSourceType]
+  inline def createSource(prefix: String): IdSourceType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSource")(prefix.asInstanceOf[js.Any]).asInstanceOf[IdSourceType]
   
-  @scala.inline
-  def getId(source: IdSourceType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(source.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getId(source: IdSourceType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(source.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getPrefix(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")().asInstanceOf[String]
-  @scala.inline
-  def getPrefix(source: IdSourceType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPrefix(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")().asInstanceOf[String]
+  inline def getPrefix(source: IdSourceType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")(source.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("react-uid/dist/es5/context", "source")
   @js.native
@@ -54,33 +49,26 @@ object contextMod {
   }
   object UIDProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: (String, js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]) => ReactNode
     ): UIDProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children))
       __obj.asInstanceOf[UIDProps]
     }
     
-    @scala.inline
-    implicit class UIDPropsMutableBuilder[Self <: UIDProps] (val x: Self) extends AnyVal {
+    extension [Self <: UIDProps](x: Self) {
       
-      @scala.inline
-      def setChildren(
+      inline def setChildren(
         value: (String, js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]) => ReactNode
       ): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIdSource(value: IdSourceType): Self = StObject.set(x, "idSource", value.asInstanceOf[js.Any])
+      inline def setIdSource(value: IdSourceType): Self = StObject.set(x, "idSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdSourceUndefined: Self = StObject.set(x, "idSource", js.undefined)
+      inline def setIdSourceUndefined: Self = StObject.set(x, "idSource", js.undefined)
       
-      @scala.inline
-      def setName(value: /* n */ String | Double => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+      inline def setName(value: /* n */ String | Double => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

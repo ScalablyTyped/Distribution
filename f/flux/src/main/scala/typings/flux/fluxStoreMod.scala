@@ -23,16 +23,16 @@ object fluxStoreMod {
       */
     def this(dispatcher: typings.flux.dispatcherMod.^[TPayload]) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var __changeEvent: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var __changed: Boolean = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var __className: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var __dispatcher: typings.flux.dispatcherMod.^[TPayload] = js.native
     
     /**
@@ -40,10 +40,10 @@ object fluxStoreMod {
       * This can only be invoked when dispatching.
       * Changes are de-duplicated and resolved at the end of this store's __onDispatch function.
       */
-    /* CompleteClass */
-    /* protected */ override def __emitChange(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def __emitChange(): Unit = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var __emitter: EventEmitter = js.native
     
     /**
@@ -51,16 +51,16 @@ object fluxStoreMod {
       * be used for things like catching changes and emitting them after the
       * subclass has handled a payload.
       */
-    /* CompleteClass */
-    /* protected */ override def __invokeOnDispatch(payload: TPayload): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def __invokeOnDispatch(payload: TPayload): Unit = js.native
     
     /**
       * Subclasses must override this method.
       * This is how the store receives actions from the dispatcher.
       * All state mutation logic must be done during this method.
       */
-    /* CompleteClass */
-    /* protected */ override def __onDispatch(payload: TPayload): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def __onDispatch(payload: TPayload): Unit = js.native
     
     /**
       * Adds a listener to the store, when the store changes the given callback will be called.
@@ -99,13 +99,13 @@ object fluxStoreMod {
     */
   trait FluxStore[TPayload] extends StObject {
     
-    var __changeEvent: String
+    /* protected */ var __changeEvent: String
     
-    var __changed: Boolean
+    /* protected */ var __changed: Boolean
     
-    var __className: String
+    /* protected */ var __className: String
     
-    var __dispatcher: typings.flux.dispatcherMod.^[TPayload]
+    /* protected */ var __dispatcher: typings.flux.dispatcherMod.^[TPayload]
     
     /**
       * Emit an event notifying all listeners that this store has changed.
@@ -114,7 +114,7 @@ object fluxStoreMod {
       */
     /* protected */ def __emitChange(): Unit
     
-    var __emitter: EventEmitter
+    /* protected */ var __emitter: EventEmitter
     
     /**
       * This method encapsulates all logic for invoking __onDispatch. It should
@@ -157,8 +157,7 @@ object fluxStoreMod {
   }
   object FluxStore {
     
-    @scala.inline
-    def apply[TPayload](
+    inline def apply[TPayload](
       __changeEvent: String,
       __changed: Boolean,
       __className: String,
@@ -176,44 +175,31 @@ object fluxStoreMod {
       __obj.asInstanceOf[FluxStore[TPayload]]
     }
     
-    @scala.inline
-    implicit class FluxStoreMutableBuilder[Self <: FluxStore[?], TPayload] (val x: Self & FluxStore[TPayload]) extends AnyVal {
+    extension [Self <: FluxStore[?], TPayload](x: Self & FluxStore[TPayload]) {
       
-      @scala.inline
-      def setAddListener(value: js.Function0[Unit] => EventSubscription): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: js.Function0[Unit] => EventSubscription): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDispatchToken(value: () => String): Self = StObject.set(x, "getDispatchToken", js.Any.fromFunction0(value))
+      inline def setGetDispatchToken(value: () => String): Self = StObject.set(x, "getDispatchToken", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDispatcher(value: () => typings.flux.dispatcherMod.^[TPayload]): Self = StObject.set(x, "getDispatcher", js.Any.fromFunction0(value))
+      inline def setGetDispatcher(value: () => typings.flux.dispatcherMod.^[TPayload]): Self = StObject.set(x, "getDispatcher", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasChanged(value: () => Boolean): Self = StObject.set(x, "hasChanged", js.Any.fromFunction0(value))
+      inline def setHasChanged(value: () => Boolean): Self = StObject.set(x, "hasChanged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set__changeEvent(value: String): Self = StObject.set(x, "__changeEvent", value.asInstanceOf[js.Any])
+      inline def set__changeEvent(value: String): Self = StObject.set(x, "__changeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__changed(value: Boolean): Self = StObject.set(x, "__changed", value.asInstanceOf[js.Any])
+      inline def set__changed(value: Boolean): Self = StObject.set(x, "__changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__className(value: String): Self = StObject.set(x, "__className", value.asInstanceOf[js.Any])
+      inline def set__className(value: String): Self = StObject.set(x, "__className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__dispatcher(value: typings.flux.dispatcherMod.^[TPayload]): Self = StObject.set(x, "__dispatcher", value.asInstanceOf[js.Any])
+      inline def set__dispatcher(value: typings.flux.dispatcherMod.^[TPayload]): Self = StObject.set(x, "__dispatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__emitChange(value: () => Unit): Self = StObject.set(x, "__emitChange", js.Any.fromFunction0(value))
+      inline def set__emitChange(value: () => Unit): Self = StObject.set(x, "__emitChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set__emitter(value: EventEmitter): Self = StObject.set(x, "__emitter", value.asInstanceOf[js.Any])
+      inline def set__emitter(value: EventEmitter): Self = StObject.set(x, "__emitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__invokeOnDispatch(value: TPayload => Unit): Self = StObject.set(x, "__invokeOnDispatch", js.Any.fromFunction1(value))
+      inline def set__invokeOnDispatch(value: TPayload => Unit): Self = StObject.set(x, "__invokeOnDispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__onDispatch(value: TPayload => Unit): Self = StObject.set(x, "__onDispatch", js.Any.fromFunction1(value))
+      inline def set__onDispatch(value: TPayload => Unit): Self = StObject.set(x, "__onDispatch", js.Any.fromFunction1(value))
     }
   }
 }

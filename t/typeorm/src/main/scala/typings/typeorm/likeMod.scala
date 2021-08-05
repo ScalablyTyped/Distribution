@@ -11,8 +11,6 @@ object likeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Like[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Like")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def Like[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Like")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def Like[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Like")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def Like[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Like")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
 }

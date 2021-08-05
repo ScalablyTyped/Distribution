@@ -49,7 +49,7 @@ object ruleWalkerMod {
     
     def deleteText(start: Double, length: Double): Replacement = js.native
     
-    val failures: js.Any = js.native
+    /* private */ val failures: js.Any = js.native
     
     /* CompleteClass */
     override def getFailures(): js.Array[RuleFailure] = js.native
@@ -67,13 +67,13 @@ object ruleWalkerMod {
     
     def hasOption(option: String): Boolean = js.native
     
-    val limit: js.Any = js.native
+    /* private */ val limit: js.Any = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    val ruleName: js.Any = js.native
+    /* private */ val ruleName: js.Any = js.native
     
-    val sourceFile: js.Any = js.native
+    /* private */ val sourceFile: js.Any = js.native
     
     /* CompleteClass */
     override def walk(sourceFile: SourceFile): Unit = js.native

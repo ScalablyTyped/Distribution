@@ -13,8 +13,7 @@ trait BitmapProperties
      with IBitmapProperties
 object BitmapProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPropertiesAsync: IIterable[String] => IAsyncOperation[BitmapPropertySet],
     setPropertiesAsync: IIterable[IKeyValuePair[String, BitmapTypedValue]] => IAsyncAction
   ): BitmapProperties = {

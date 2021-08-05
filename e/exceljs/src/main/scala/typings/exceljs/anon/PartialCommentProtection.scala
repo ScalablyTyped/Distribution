@@ -15,25 +15,19 @@ trait PartialCommentProtection extends StObject {
 }
 object PartialCommentProtection {
   
-  @scala.inline
-  def apply(): PartialCommentProtection = {
+  inline def apply(): PartialCommentProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCommentProtection]
   }
   
-  @scala.inline
-  implicit class PartialCommentProtectionMutableBuilder[Self <: PartialCommentProtection] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCommentProtection](x: Self) {
     
-    @scala.inline
-    def setLockText(value: True | False): Self = StObject.set(x, "lockText", value.asInstanceOf[js.Any])
+    inline def setLockText(value: True | False): Self = StObject.set(x, "lockText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockTextUndefined: Self = StObject.set(x, "lockText", js.undefined)
+    inline def setLockTextUndefined: Self = StObject.set(x, "lockText", js.undefined)
     
-    @scala.inline
-    def setLocked(value: True | False): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: True | False): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait StoreLicense extends StObject {
 }
 object StoreLicense {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expirationDate: Date,
     extendedJsonData: String,
     inAppOfferToken: String,
@@ -37,22 +36,16 @@ object StoreLicense {
     __obj.asInstanceOf[StoreLicense]
   }
   
-  @scala.inline
-  implicit class StoreLicenseMutableBuilder[Self <: StoreLicense] (val x: Self) extends AnyVal {
+  extension [Self <: StoreLicense](x: Self) {
     
-    @scala.inline
-    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
+    inline def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAppOfferToken(value: String): Self = StObject.set(x, "inAppOfferToken", value.asInstanceOf[js.Any])
+    inline def setInAppOfferToken(value: String): Self = StObject.set(x, "inAppOfferToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuStoreId(value: String): Self = StObject.set(x, "skuStoreId", value.asInstanceOf[js.Any])
+    inline def setSkuStoreId(value: String): Self = StObject.set(x, "skuStoreId", value.asInstanceOf[js.Any])
   }
 }

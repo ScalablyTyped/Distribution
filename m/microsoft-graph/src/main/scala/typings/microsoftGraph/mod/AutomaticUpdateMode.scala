@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutomaticUpdateMode extends StObject
 object AutomaticUpdateMode {
   
-  @scala.inline
-  def autoInstallAndRebootAtMaintenanceTime: typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtMaintenanceTime = "autoInstallAndRebootAtMaintenanceTime".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtMaintenanceTime]
+  inline def autoInstallAndRebootAtMaintenanceTime: typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtMaintenanceTime = "autoInstallAndRebootAtMaintenanceTime".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtMaintenanceTime]
   
-  @scala.inline
-  def autoInstallAndRebootAtScheduledTime: typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime = "autoInstallAndRebootAtScheduledTime".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime]
+  inline def autoInstallAndRebootAtScheduledTime: typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime = "autoInstallAndRebootAtScheduledTime".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime]
   
-  @scala.inline
-  def autoInstallAndRebootWithoutEndUserControl: typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl = "autoInstallAndRebootWithoutEndUserControl".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl]
+  inline def autoInstallAndRebootWithoutEndUserControl: typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl = "autoInstallAndRebootWithoutEndUserControl".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl]
   
-  @scala.inline
-  def autoInstallAtMaintenanceTime: typings.microsoftGraph.microsoftGraphStrings.autoInstallAtMaintenanceTime = "autoInstallAtMaintenanceTime".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAtMaintenanceTime]
+  inline def autoInstallAtMaintenanceTime: typings.microsoftGraph.microsoftGraphStrings.autoInstallAtMaintenanceTime = "autoInstallAtMaintenanceTime".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoInstallAtMaintenanceTime]
   
-  @scala.inline
-  def notifyDownload: typings.microsoftGraph.microsoftGraphStrings.notifyDownload = "notifyDownload".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifyDownload]
+  inline def notifyDownload: typings.microsoftGraph.microsoftGraphStrings.notifyDownload = "notifyDownload".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifyDownload]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

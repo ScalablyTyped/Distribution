@@ -22,8 +22,7 @@ trait Emitter extends StObject {
 }
 object Emitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addKeyword: (String, String) => Unit,
     addSublanguage: (Emitter, String) => Unit,
     addText: String => Unit,
@@ -36,28 +35,20 @@ object Emitter {
     __obj.asInstanceOf[Emitter]
   }
   
-  @scala.inline
-  implicit class EmitterMutableBuilder[Self <: Emitter] (val x: Self) extends AnyVal {
+  extension [Self <: Emitter](x: Self) {
     
-    @scala.inline
-    def setAddKeyword(value: (String, String) => Unit): Self = StObject.set(x, "addKeyword", js.Any.fromFunction2(value))
+    inline def setAddKeyword(value: (String, String) => Unit): Self = StObject.set(x, "addKeyword", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddSublanguage(value: (Emitter, String) => Unit): Self = StObject.set(x, "addSublanguage", js.Any.fromFunction2(value))
+    inline def setAddSublanguage(value: (Emitter, String) => Unit): Self = StObject.set(x, "addSublanguage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddText(value: String => Unit): Self = StObject.set(x, "addText", js.Any.fromFunction1(value))
+    inline def setAddText(value: String => Unit): Self = StObject.set(x, "addText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseAllNodes(value: () => Unit): Self = StObject.set(x, "closeAllNodes", js.Any.fromFunction0(value))
+    inline def setCloseAllNodes(value: () => Unit): Self = StObject.set(x, "closeAllNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloseNode(value: () => Unit): Self = StObject.set(x, "closeNode", js.Any.fromFunction0(value))
+    inline def setCloseNode(value: () => Unit): Self = StObject.set(x, "closeNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenNode(value: String => Unit): Self = StObject.set(x, "openNode", js.Any.fromFunction1(value))
+    inline def setOpenNode(value: String => Unit): Self = StObject.set(x, "openNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
+    inline def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
   }
 }

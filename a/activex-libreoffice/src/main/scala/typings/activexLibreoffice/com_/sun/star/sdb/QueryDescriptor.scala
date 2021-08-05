@@ -45,8 +45,7 @@ trait QueryDescriptor
 }
 object QueryDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplyFilter: Boolean,
     Columns: XNameAccess,
     Command: String,
@@ -80,22 +79,16 @@ object QueryDescriptor {
     __obj.asInstanceOf[QueryDescriptor]
   }
   
-  @scala.inline
-  implicit class QueryDescriptorMutableBuilder[Self <: QueryDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: QueryDescriptor](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
+    inline def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCatalogName(value: String): Self = StObject.set(x, "UpdateCatalogName", value.asInstanceOf[js.Any])
+    inline def setUpdateCatalogName(value: String): Self = StObject.set(x, "UpdateCatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSchemaName(value: String): Self = StObject.set(x, "UpdateSchemaName", value.asInstanceOf[js.Any])
+    inline def setUpdateSchemaName(value: String): Self = StObject.set(x, "UpdateSchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTableName(value: String): Self = StObject.set(x, "UpdateTableName", value.asInstanceOf[js.Any])
+    inline def setUpdateTableName(value: String): Self = StObject.set(x, "UpdateTableName", value.asInstanceOf[js.Any])
   }
 }

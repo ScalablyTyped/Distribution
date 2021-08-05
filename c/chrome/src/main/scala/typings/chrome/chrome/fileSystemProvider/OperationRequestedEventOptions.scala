@@ -13,16 +13,13 @@ trait OperationRequestedEventOptions
 }
 object OperationRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, operationRequestId: Double, requestId: Double): OperationRequestedEventOptions = {
+  inline def apply(fileSystemId: String, operationRequestId: Double, requestId: Double): OperationRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], operationRequestId = operationRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class OperationRequestedEventOptionsMutableBuilder[Self <: OperationRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OperationRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setOperationRequestId(value: Double): Self = StObject.set(x, "operationRequestId", value.asInstanceOf[js.Any])
+    inline def setOperationRequestId(value: Double): Self = StObject.set(x, "operationRequestId", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LOCK: TransactionLock,
     commit: () => typings.bluebird.mod.^[Unit],
     rollback: () => typings.bluebird.mod.^[Unit]
@@ -47,16 +46,12 @@ object Transaction {
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setCommit(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+    inline def setCommit(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLOCK(value: TransactionLock): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
+    inline def setLOCK(value: TransactionLock): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollback(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
+    inline def setRollback(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
   }
 }

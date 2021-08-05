@@ -8,6 +8,5 @@ object cluiStrings {
   
   @js.native
   sealed trait console extends StObject
-  @scala.inline
-  def console: console = "console".asInstanceOf[console]
+  inline def console: console = "console".asInstanceOf[console]
 }

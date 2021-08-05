@@ -14,25 +14,19 @@ trait UsesPermission extends StObject {
 }
 object UsesPermission {
   
-  @scala.inline
-  def apply(): UsesPermission = {
+  inline def apply(): UsesPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsesPermission]
   }
   
-  @scala.inline
-  implicit class UsesPermissionMutableBuilder[Self <: UsesPermission] (val x: Self) extends AnyVal {
+  extension [Self <: UsesPermission](x: Self) {
     
-    @scala.inline
-    def setMaxSdkVersion(value: Double): Self = StObject.set(x, "maxSdkVersion", value.asInstanceOf[js.Any])
+    inline def setMaxSdkVersion(value: Double): Self = StObject.set(x, "maxSdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSdkVersionUndefined: Self = StObject.set(x, "maxSdkVersion", js.undefined)
+    inline def setMaxSdkVersionUndefined: Self = StObject.set(x, "maxSdkVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

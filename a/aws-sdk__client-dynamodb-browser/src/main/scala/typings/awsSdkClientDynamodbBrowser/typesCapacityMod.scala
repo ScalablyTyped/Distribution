@@ -15,20 +15,16 @@ object typesCapacityMod {
   }
   object Capacity {
     
-    @scala.inline
-    def apply(): Capacity = {
+    inline def apply(): Capacity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Capacity]
     }
     
-    @scala.inline
-    implicit class CapacityMutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
+    extension [Self <: Capacity](x: Self) {
       
-      @scala.inline
-      def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+      inline def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
+      inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
     }
   }
   

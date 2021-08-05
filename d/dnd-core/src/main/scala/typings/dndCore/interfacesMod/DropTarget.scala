@@ -14,8 +14,7 @@ trait DropTarget extends StObject {
 }
 object DropTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canDrop: (DragDropMonitor, Identifier) => Boolean,
     drop: (DragDropMonitor, Identifier) => js.Any,
     hover: (DragDropMonitor, Identifier) => Unit
@@ -24,16 +23,12 @@ object DropTarget {
     __obj.asInstanceOf[DropTarget]
   }
   
-  @scala.inline
-  implicit class DropTargetMutableBuilder[Self <: DropTarget] (val x: Self) extends AnyVal {
+  extension [Self <: DropTarget](x: Self) {
     
-    @scala.inline
-    def setCanDrop(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
+    inline def setCanDrop(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrop(value: (DragDropMonitor, Identifier) => js.Any): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
+    inline def setDrop(value: (DragDropMonitor, Identifier) => js.Any): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHover(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction2(value))
+    inline def setHover(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction2(value))
   }
 }

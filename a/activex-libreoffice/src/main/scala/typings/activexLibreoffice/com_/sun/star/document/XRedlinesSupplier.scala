@@ -20,8 +20,7 @@ trait XRedlinesSupplier
 }
 object XRedlinesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Redlines: XEnumerationAccess,
     acquire: () => Unit,
     getRedlines: () => XEnumerationAccess,
@@ -32,13 +31,10 @@ object XRedlinesSupplier {
     __obj.asInstanceOf[XRedlinesSupplier]
   }
   
-  @scala.inline
-  implicit class XRedlinesSupplierMutableBuilder[Self <: XRedlinesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XRedlinesSupplier](x: Self) {
     
-    @scala.inline
-    def setGetRedlines(value: () => XEnumerationAccess): Self = StObject.set(x, "getRedlines", js.Any.fromFunction0(value))
+    inline def setGetRedlines(value: () => XEnumerationAccess): Self = StObject.set(x, "getRedlines", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRedlines(value: XEnumerationAccess): Self = StObject.set(x, "Redlines", value.asInstanceOf[js.Any])
+    inline def setRedlines(value: XEnumerationAccess): Self = StObject.set(x, "Redlines", value.asInstanceOf[js.Any])
   }
 }

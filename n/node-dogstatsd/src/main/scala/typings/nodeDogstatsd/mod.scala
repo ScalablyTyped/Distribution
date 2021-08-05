@@ -67,23 +67,18 @@ object mod {
   }
   object StatsDOptions {
     
-    @scala.inline
-    def apply(): StatsDOptions = {
+    inline def apply(): StatsDOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatsDOptions]
     }
     
-    @scala.inline
-    implicit class StatsDOptionsMutableBuilder[Self <: StatsDOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StatsDOptions](x: Self) {
       
-      @scala.inline
-      def setGlobal_tags(value: js.Array[String]): Self = StObject.set(x, "global_tags", value.asInstanceOf[js.Any])
+      inline def setGlobal_tags(value: js.Array[String]): Self = StObject.set(x, "global_tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal_tagsUndefined: Self = StObject.set(x, "global_tags", js.undefined)
+      inline def setGlobal_tagsUndefined: Self = StObject.set(x, "global_tags", js.undefined)
       
-      @scala.inline
-      def setGlobal_tagsVarargs(value: String*): Self = StObject.set(x, "global_tags", js.Array(value :_*))
+      inline def setGlobal_tagsVarargs(value: String*): Self = StObject.set(x, "global_tags", js.Array(value :_*))
     }
   }
 }

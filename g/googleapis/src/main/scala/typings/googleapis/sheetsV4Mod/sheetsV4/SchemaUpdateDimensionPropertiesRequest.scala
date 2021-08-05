@@ -28,31 +28,23 @@ trait SchemaUpdateDimensionPropertiesRequest extends StObject {
 }
 object SchemaUpdateDimensionPropertiesRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateDimensionPropertiesRequest = {
+  inline def apply(): SchemaUpdateDimensionPropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateDimensionPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateDimensionPropertiesRequestMutableBuilder[Self <: SchemaUpdateDimensionPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateDimensionPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setProperties(value: SchemaDimensionProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SchemaDimensionProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

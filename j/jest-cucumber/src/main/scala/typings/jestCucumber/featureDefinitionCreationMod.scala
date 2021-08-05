@@ -12,8 +12,7 @@ object featureDefinitionCreationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defineFeature(featureFromFile: ParsedFeature, scenariosDefinitionCallback: ScenariosDefinitionCallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFeature")(featureFromFile.asInstanceOf[js.Any], scenariosDefinitionCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineFeature(featureFromFile: ParsedFeature, scenariosDefinitionCallback: ScenariosDefinitionCallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFeature")(featureFromFile.asInstanceOf[js.Any], scenariosDefinitionCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type DefineScenarioFunction = js.Function3[
     /* scenarioTitle */ String, 
@@ -60,8 +59,7 @@ object featureDefinitionCreationMod {
   }
   object StepsDefinitionCallbackOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       and: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
       but: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
       defineStep: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any,
@@ -76,39 +74,31 @@ object featureDefinitionCreationMod {
       __obj.asInstanceOf[StepsDefinitionCallbackOptions]
     }
     
-    @scala.inline
-    implicit class StepsDefinitionCallbackOptionsMutableBuilder[Self <: StepsDefinitionCallbackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StepsDefinitionCallbackOptions](x: Self) {
       
-      @scala.inline
-      def setAnd(
+      inline def setAnd(
         value: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "and", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBut(
+      inline def setBut(
         value: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "but", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDefineStep(
+      inline def setDefineStep(
         value: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "defineStep", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGiven(
+      inline def setGiven(
         value: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "given", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPending(value: () => Unit): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
+      inline def setPending(value: () => Unit): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(
+      inline def setThen(
         value: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWhen(
+      inline def setWhen(
         value: (/* stepMatcher */ String | RegExp, /* stepDefinitionCallback */ js.Function1[/* repeated */ js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "when", js.Any.fromFunction2(value))
     }

@@ -13,19 +13,15 @@ trait ReplaceNetworkAclAssociationResult extends StObject {
 }
 object ReplaceNetworkAclAssociationResult {
   
-  @scala.inline
-  def apply(): ReplaceNetworkAclAssociationResult = {
+  inline def apply(): ReplaceNetworkAclAssociationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceNetworkAclAssociationResult]
   }
   
-  @scala.inline
-  implicit class ReplaceNetworkAclAssociationResultMutableBuilder[Self <: ReplaceNetworkAclAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceNetworkAclAssociationResult](x: Self) {
     
-    @scala.inline
-    def setNewAssociationId(value: String): Self = StObject.set(x, "NewAssociationId", value.asInstanceOf[js.Any])
+    inline def setNewAssociationId(value: String): Self = StObject.set(x, "NewAssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAssociationIdUndefined: Self = StObject.set(x, "NewAssociationId", js.undefined)
+    inline def setNewAssociationIdUndefined: Self = StObject.set(x, "NewAssociationId", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait SubnetworksSetPrivateIpGoogleAccessRequest extends StObject {
 }
 object SubnetworksSetPrivateIpGoogleAccessRequest {
   
-  @scala.inline
-  def apply(): SubnetworksSetPrivateIpGoogleAccessRequest = {
+  inline def apply(): SubnetworksSetPrivateIpGoogleAccessRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubnetworksSetPrivateIpGoogleAccessRequest]
   }
   
-  @scala.inline
-  implicit class SubnetworksSetPrivateIpGoogleAccessRequestMutableBuilder[Self <: SubnetworksSetPrivateIpGoogleAccessRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetworksSetPrivateIpGoogleAccessRequest](x: Self) {
     
-    @scala.inline
-    def setPrivateIpGoogleAccess(value: Boolean): Self = StObject.set(x, "privateIpGoogleAccess", value.asInstanceOf[js.Any])
+    inline def setPrivateIpGoogleAccess(value: Boolean): Self = StObject.set(x, "privateIpGoogleAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpGoogleAccessUndefined: Self = StObject.set(x, "privateIpGoogleAccess", js.undefined)
+    inline def setPrivateIpGoogleAccessUndefined: Self = StObject.set(x, "privateIpGoogleAccess", js.undefined)
   }
 }

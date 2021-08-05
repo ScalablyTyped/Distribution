@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InRestriction extends StObject
 object InRestriction {
   
-  @scala.inline
-  def IN: typings.cassanknex.cassanknexStrings.IN = "IN".asInstanceOf[typings.cassanknex.cassanknexStrings.IN]
+  inline def IN: typings.cassanknex.cassanknexStrings.IN = "IN".asInstanceOf[typings.cassanknex.cassanknexStrings.IN]
   
-  @scala.inline
-  def in: in_ = "in".asInstanceOf[in_]
+  inline def in: in_ = "in".asInstanceOf[in_]
 }

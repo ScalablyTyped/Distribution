@@ -60,50 +60,36 @@ object gridCellMod {
   }
   object GridCSSProperties {
     
-    @scala.inline
-    def apply(): GridCSSProperties = {
+    inline def apply(): GridCSSProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridCSSProperties]
     }
     
-    @scala.inline
-    implicit class GridCSSPropertiesMutableBuilder[Self <: GridCSSProperties] (val x: Self) extends AnyVal {
+    extension [Self <: GridCSSProperties](x: Self) {
       
-      @scala.inline
-      def setColEnd(value: Double | String): Self = StObject.set(x, "colEnd", value.asInstanceOf[js.Any])
+      inline def setColEnd(value: Double | String): Self = StObject.set(x, "colEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColEndUndefined: Self = StObject.set(x, "colEnd", js.undefined)
+      inline def setColEndUndefined: Self = StObject.set(x, "colEnd", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setColStart(value: Double | String): Self = StObject.set(x, "colStart", value.asInstanceOf[js.Any])
+      inline def setColStart(value: Double | String): Self = StObject.set(x, "colStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColStartUndefined: Self = StObject.set(x, "colStart", js.undefined)
+      inline def setColStartUndefined: Self = StObject.set(x, "colStart", js.undefined)
       
-      @scala.inline
-      def setRowEnd(value: Double | String): Self = StObject.set(x, "rowEnd", value.asInstanceOf[js.Any])
+      inline def setRowEnd(value: Double | String): Self = StObject.set(x, "rowEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowEndUndefined: Self = StObject.set(x, "rowEnd", js.undefined)
+      inline def setRowEndUndefined: Self = StObject.set(x, "rowEnd", js.undefined)
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setRowStart(value: Double | String): Self = StObject.set(x, "rowStart", value.asInstanceOf[js.Any])
+      inline def setRowStart(value: Double | String): Self = StObject.set(x, "rowStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowStartUndefined: Self = StObject.set(x, "rowStart", js.undefined)
+      inline def setRowStartUndefined: Self = StObject.set(x, "rowStart", js.undefined)
     }
   }
   
@@ -145,44 +131,32 @@ object gridCellMod {
   }
   object GridCellProps {
     
-    @scala.inline
-    def apply(): GridCellProps = {
+    inline def apply(): GridCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridCellProps]
     }
     
-    @scala.inline
-    implicit class GridCellPropsMutableBuilder[Self <: GridCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridCellProps](x: Self) {
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setDesktop(value: GridCSSProperties): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: GridCSSProperties): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+      inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
       
-      @scala.inline
-      def setLargeDesktop(value: GridCSSProperties): Self = StObject.set(x, "largeDesktop", value.asInstanceOf[js.Any])
+      inline def setLargeDesktop(value: GridCSSProperties): Self = StObject.set(x, "largeDesktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeDesktopUndefined: Self = StObject.set(x, "largeDesktop", js.undefined)
+      inline def setLargeDesktopUndefined: Self = StObject.set(x, "largeDesktop", js.undefined)
       
-      @scala.inline
-      def setPhone(value: GridCSSProperties): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: GridCSSProperties): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+      inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
       
-      @scala.inline
-      def setTablet(value: GridCSSProperties): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+      inline def setTablet(value: GridCSSProperties): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
+      inline def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
     }
   }
 }

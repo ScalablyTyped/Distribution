@@ -14,15 +14,14 @@ trait PrintRange extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.PrintRange_typekey")
+  /* private */ @JSName("PowerPoint.PrintRange_typekey")
   var PowerPointDotPrintRange_typekey: PrintRange
   
   val Start: Double
 }
 object PrintRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Delete: () => Unit,
     End: Double,
@@ -35,25 +34,18 @@ object PrintRange {
     __obj.asInstanceOf[PrintRange]
   }
   
-  @scala.inline
-  implicit class PrintRangeMutableBuilder[Self <: PrintRange] (val x: Self) extends AnyVal {
+  extension [Self <: PrintRange](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPrintRange_typekey(value: PrintRange): Self = StObject.set(x, "PowerPoint.PrintRange_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPrintRange_typekey(value: PrintRange): Self = StObject.set(x, "PowerPoint.PrintRange_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

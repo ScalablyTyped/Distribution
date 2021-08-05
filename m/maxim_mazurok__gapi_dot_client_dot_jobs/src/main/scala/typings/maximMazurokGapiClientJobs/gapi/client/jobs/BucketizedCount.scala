@@ -14,25 +14,19 @@ trait BucketizedCount extends StObject {
 }
 object BucketizedCount {
   
-  @scala.inline
-  def apply(): BucketizedCount = {
+  inline def apply(): BucketizedCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketizedCount]
   }
   
-  @scala.inline
-  implicit class BucketizedCountMutableBuilder[Self <: BucketizedCount] (val x: Self) extends AnyVal {
+  extension [Self <: BucketizedCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setRange(value: BucketRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: BucketRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

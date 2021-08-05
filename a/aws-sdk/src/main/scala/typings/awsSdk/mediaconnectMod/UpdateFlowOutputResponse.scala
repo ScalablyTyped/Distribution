@@ -18,25 +18,19 @@ trait UpdateFlowOutputResponse extends StObject {
 }
 object UpdateFlowOutputResponse {
   
-  @scala.inline
-  def apply(): UpdateFlowOutputResponse = {
+  inline def apply(): UpdateFlowOutputResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateFlowOutputResponse]
   }
   
-  @scala.inline
-  implicit class UpdateFlowOutputResponseMutableBuilder[Self <: UpdateFlowOutputResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFlowOutputResponse](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
-    @scala.inline
-    def setOutput(value: Output): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Output): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
   }
 }

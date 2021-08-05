@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimelineItemType extends StObject
 object TimelineItemType {
   
-  @scala.inline
-  def background: typings.vis.visStrings.background = "background".asInstanceOf[typings.vis.visStrings.background]
+  inline def background: typings.vis.visStrings.background = "background".asInstanceOf[typings.vis.visStrings.background]
   
-  @scala.inline
-  def box: typings.vis.visStrings.box = "box".asInstanceOf[typings.vis.visStrings.box]
+  inline def box: typings.vis.visStrings.box = "box".asInstanceOf[typings.vis.visStrings.box]
   
-  @scala.inline
-  def point: typings.vis.visStrings.point = "point".asInstanceOf[typings.vis.visStrings.point]
+  inline def point: typings.vis.visStrings.point = "point".asInstanceOf[typings.vis.visStrings.point]
   
-  @scala.inline
-  def range: typings.vis.visStrings.range = "range".asInstanceOf[typings.vis.visStrings.range]
+  inline def range: typings.vis.visStrings.range = "range".asInstanceOf[typings.vis.visStrings.range]
 }

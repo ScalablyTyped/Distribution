@@ -23,8 +23,7 @@ object serializersCommentsMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentTagSerializer")
@@ -43,7 +42,6 @@ object serializersCommentsMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentTagSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait RTCRtpSendParameters
 }
 object RTCRtpSendParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codecs: js.Array[RTCRtpCodecParameters],
     encodings: js.Array[RTCRtpEncodingParameters],
     headerExtensions: js.Array[RTCRtpHeaderExtensionParameters],
@@ -30,28 +29,20 @@ object RTCRtpSendParameters {
     __obj.asInstanceOf[RTCRtpSendParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpSendParametersMutableBuilder[Self <: RTCRtpSendParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpSendParameters](x: Self) {
     
-    @scala.inline
-    def setDegradationPreference(value: RTCDegradationPreference): Self = StObject.set(x, "degradationPreference", value.asInstanceOf[js.Any])
+    inline def setDegradationPreference(value: RTCDegradationPreference): Self = StObject.set(x, "degradationPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDegradationPreferenceUndefined: Self = StObject.set(x, "degradationPreference", js.undefined)
+    inline def setDegradationPreferenceUndefined: Self = StObject.set(x, "degradationPreference", js.undefined)
     
-    @scala.inline
-    def setEncodings(value: js.Array[RTCRtpEncodingParameters]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
+    inline def setEncodings(value: js.Array[RTCRtpEncodingParameters]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = StObject.set(x, "encodings", js.Array(value :_*))
+    inline def setEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = StObject.set(x, "encodings", js.Array(value :_*))
     
-    @scala.inline
-    def setPriority(value: RTCPriorityType): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: RTCPriorityType): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setTransactionId(value: java.lang.String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: java.lang.String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }
 }

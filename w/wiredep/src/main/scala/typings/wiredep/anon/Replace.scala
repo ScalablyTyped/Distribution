@@ -19,22 +19,17 @@ trait Replace extends StObject {
 }
 object Replace {
   
-  @scala.inline
-  def apply(block: RegExp, detect: Less, replace: CssLess): Replace = {
+  inline def apply(block: RegExp, detect: Less, replace: CssLess): Replace = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], detect = detect.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Replace]
   }
   
-  @scala.inline
-  implicit class ReplaceMutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
+  extension [Self <: Replace](x: Self) {
     
-    @scala.inline
-    def setBlock(value: RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetect(value: Less): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
+    inline def setDetect(value: Less): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: CssLess): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: CssLess): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
   }
 }

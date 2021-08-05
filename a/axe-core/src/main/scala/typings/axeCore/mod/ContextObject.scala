@@ -12,31 +12,23 @@ trait ContextObject extends StObject {
 }
 object ContextObject {
   
-  @scala.inline
-  def apply(): ContextObject = {
+  inline def apply(): ContextObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContextObject]
   }
   
-  @scala.inline
-  implicit class ContextObjectMutableBuilder[Self <: ContextObject] (val x: Self) extends AnyVal {
+  extension [Self <: ContextObject](x: Self) {
     
-    @scala.inline
-    def setExclude(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: js.Array[js.Array[String] | String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

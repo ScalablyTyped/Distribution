@@ -16,32 +16,24 @@ object anon {
   }
   object Exclude {
     
-    @scala.inline
-    def apply(): Exclude = {
+    inline def apply(): Exclude = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Exclude]
     }
     
-    @scala.inline
-    implicit class ExcludeMutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
+    extension [Self <: Exclude](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[Double]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[Double]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: Double*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: Double*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: js.Array[Double]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[Double]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: Double*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: Double*): Self = StObject.set(x, "include", js.Array(value :_*))
     }
   }
 }

@@ -38,52 +38,37 @@ trait CreateVpcPeeringConnectionRequest extends StObject {
 }
 object CreateVpcPeeringConnectionRequest {
   
-  @scala.inline
-  def apply(): CreateVpcPeeringConnectionRequest = {
+  inline def apply(): CreateVpcPeeringConnectionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVpcPeeringConnectionRequest]
   }
   
-  @scala.inline
-  implicit class CreateVpcPeeringConnectionRequestMutableBuilder[Self <: CreateVpcPeeringConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVpcPeeringConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPeerOwnerId(value: String): Self = StObject.set(x, "PeerOwnerId", value.asInstanceOf[js.Any])
+    inline def setPeerOwnerId(value: String): Self = StObject.set(x, "PeerOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerOwnerIdUndefined: Self = StObject.set(x, "PeerOwnerId", js.undefined)
+    inline def setPeerOwnerIdUndefined: Self = StObject.set(x, "PeerOwnerId", js.undefined)
     
-    @scala.inline
-    def setPeerRegion(value: String): Self = StObject.set(x, "PeerRegion", value.asInstanceOf[js.Any])
+    inline def setPeerRegion(value: String): Self = StObject.set(x, "PeerRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerRegionUndefined: Self = StObject.set(x, "PeerRegion", js.undefined)
+    inline def setPeerRegionUndefined: Self = StObject.set(x, "PeerRegion", js.undefined)
     
-    @scala.inline
-    def setPeerVpcId(value: String): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
+    inline def setPeerVpcId(value: String): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerVpcIdUndefined: Self = StObject.set(x, "PeerVpcId", js.undefined)
+    inline def setPeerVpcIdUndefined: Self = StObject.set(x, "PeerVpcId", js.undefined)
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

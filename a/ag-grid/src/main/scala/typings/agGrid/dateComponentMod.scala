@@ -20,20 +20,16 @@ object dateComponentMod {
   }
   object IDate {
     
-    @scala.inline
-    def apply(getDate: () => Date, setDate: Date => Unit): IDate = {
+    inline def apply(getDate: () => Date, setDate: Date => Unit): IDate = {
       val __obj = js.Dynamic.literal(getDate = js.Any.fromFunction0(getDate), setDate = js.Any.fromFunction1(setDate))
       __obj.asInstanceOf[IDate]
     }
     
-    @scala.inline
-    implicit class IDateMutableBuilder[Self <: IDate] (val x: Self) extends AnyVal {
+    extension [Self <: IDate](x: Self) {
       
-      @scala.inline
-      def setGetDate(value: () => Date): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+      inline def setGetDate(value: () => Date): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDate(value: Date => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
+      inline def setSetDate(value: Date => Unit): Self = StObject.set(x, "setDate", js.Any.fromFunction1(value))
     }
   }
   
@@ -43,8 +39,7 @@ object dateComponentMod {
        with IDate
   object IDateComp {
     
-    @scala.inline
-    def apply(getDate: () => Date, getGui: () => HTMLElement, setDate: Date => Unit): IDateComp = {
+    inline def apply(getDate: () => Date, getGui: () => HTMLElement, setDate: Date => Unit): IDateComp = {
       val __obj = js.Dynamic.literal(getDate = js.Any.fromFunction0(getDate), getGui = js.Any.fromFunction0(getGui), setDate = js.Any.fromFunction1(setDate))
       __obj.asInstanceOf[IDateComp]
     }
@@ -59,20 +54,16 @@ object dateComponentMod {
   }
   object IDateParams {
     
-    @scala.inline
-    def apply(filterParams: IDateFilterParams, onDateChanged: () => Unit): IDateParams = {
+    inline def apply(filterParams: IDateFilterParams, onDateChanged: () => Unit): IDateParams = {
       val __obj = js.Dynamic.literal(filterParams = filterParams.asInstanceOf[js.Any], onDateChanged = js.Any.fromFunction0(onDateChanged))
       __obj.asInstanceOf[IDateParams]
     }
     
-    @scala.inline
-    implicit class IDateParamsMutableBuilder[Self <: IDateParams] (val x: Self) extends AnyVal {
+    extension [Self <: IDateParams](x: Self) {
       
-      @scala.inline
-      def setFilterParams(value: IDateFilterParams): Self = StObject.set(x, "filterParams", value.asInstanceOf[js.Any])
+      inline def setFilterParams(value: IDateFilterParams): Self = StObject.set(x, "filterParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDateChanged(value: () => Unit): Self = StObject.set(x, "onDateChanged", js.Any.fromFunction0(value))
+      inline def setOnDateChanged(value: () => Unit): Self = StObject.set(x, "onDateChanged", js.Any.fromFunction0(value))
     }
   }
 }

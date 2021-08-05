@@ -182,6 +182,6 @@ trait ListFormat extends StObject {
   
   val SingleListTemplate: Boolean = js.native
   
-  @JSName("Word.ListFormat_typekey")
+  /* private */ @JSName("Word.ListFormat_typekey")
   var WordDotListFormat_typekey: ListFormat = js.native
 }

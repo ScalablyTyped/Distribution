@@ -20,19 +20,15 @@ trait SchemaApiLevelCondition extends StObject {
 }
 object SchemaApiLevelCondition {
   
-  @scala.inline
-  def apply(): SchemaApiLevelCondition = {
+  inline def apply(): SchemaApiLevelCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApiLevelCondition]
   }
   
-  @scala.inline
-  implicit class SchemaApiLevelConditionMutableBuilder[Self <: SchemaApiLevelCondition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApiLevelCondition](x: Self) {
     
-    @scala.inline
-    def setMinApiLevel(value: Double): Self = StObject.set(x, "minApiLevel", value.asInstanceOf[js.Any])
+    inline def setMinApiLevel(value: Double): Self = StObject.set(x, "minApiLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinApiLevelUndefined: Self = StObject.set(x, "minApiLevel", js.undefined)
+    inline def setMinApiLevelUndefined: Self = StObject.set(x, "minApiLevel", js.undefined)
   }
 }

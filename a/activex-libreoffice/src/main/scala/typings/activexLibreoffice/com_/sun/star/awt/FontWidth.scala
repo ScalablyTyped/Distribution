@@ -31,34 +31,24 @@ object FontWidth {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CONDENSED: `75.000000` = 75.000000.asInstanceOf[`75.000000`]
+    inline def CONDENSED: `75.000000` = 75.000000.asInstanceOf[`75.000000`]
     
-    @scala.inline
-    def DONTKNOW: `0.000000` = 0.000000.asInstanceOf[`0.000000`]
+    inline def DONTKNOW: `0.000000` = 0.000000.asInstanceOf[`0.000000`]
     
-    @scala.inline
-    def EXPANDED: `150.000000` = 150.000000.asInstanceOf[`150.000000`]
+    inline def EXPANDED: `150.000000` = 150.000000.asInstanceOf[`150.000000`]
     
-    @scala.inline
-    def EXTRACONDENSED: `60.000000` = 60.000000.asInstanceOf[`60.000000`]
+    inline def EXTRACONDENSED: `60.000000` = 60.000000.asInstanceOf[`60.000000`]
     
-    @scala.inline
-    def EXTRAEXPANDED: `175.000000` = 175.000000.asInstanceOf[`175.000000`]
+    inline def EXTRAEXPANDED: `175.000000` = 175.000000.asInstanceOf[`175.000000`]
     
-    @scala.inline
-    def NORMAL: `100.000000` = 100.000000.asInstanceOf[`100.000000`]
+    inline def NORMAL: `100.000000` = 100.000000.asInstanceOf[`100.000000`]
     
-    @scala.inline
-    def SEMICONDENSED: `90.000000` = 90.000000.asInstanceOf[`90.000000`]
+    inline def SEMICONDENSED: `90.000000` = 90.000000.asInstanceOf[`90.000000`]
     
-    @scala.inline
-    def SEMIEXPANDED: `110.000000` = 110.000000.asInstanceOf[`110.000000`]
+    inline def SEMIEXPANDED: `110.000000` = 110.000000.asInstanceOf[`110.000000`]
     
-    @scala.inline
-    def ULTRACONDENSED: `50.000000` = 50.000000.asInstanceOf[`50.000000`]
+    inline def ULTRACONDENSED: `50.000000` = 50.000000.asInstanceOf[`50.000000`]
     
-    @scala.inline
-    def ULTRAEXPANDED: `200.000000` = 200.000000.asInstanceOf[`200.000000`]
+    inline def ULTRAEXPANDED: `200.000000` = 200.000000.asInstanceOf[`200.000000`]
   }
 }

@@ -11,16 +11,13 @@ trait Object extends StObject {
 }
 object Object {
   
-  @scala.inline
-  def apply(getOwnPropertyDescriptors: js.Any => PropertyDescriptorMap): Object = {
+  inline def apply(getOwnPropertyDescriptors: js.Any => PropertyDescriptorMap): Object = {
     val __obj = js.Dynamic.literal(getOwnPropertyDescriptors = js.Any.fromFunction1(getOwnPropertyDescriptors))
     __obj.asInstanceOf[Object]
   }
   
-  @scala.inline
-  implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+  extension [Self <: Object](x: Self) {
     
-    @scala.inline
-    def setGetOwnPropertyDescriptors(value: js.Any => PropertyDescriptorMap): Self = StObject.set(x, "getOwnPropertyDescriptors", js.Any.fromFunction1(value))
+    inline def setGetOwnPropertyDescriptors(value: js.Any => PropertyDescriptorMap): Self = StObject.set(x, "getOwnPropertyDescriptors", js.Any.fromFunction1(value))
   }
 }

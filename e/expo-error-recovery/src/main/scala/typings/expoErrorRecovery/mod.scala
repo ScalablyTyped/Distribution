@@ -15,8 +15,7 @@ object mod {
   @js.native
   val recoveredProps: (Record[String, js.Any]) | Null = js.native
   
-  @scala.inline
-  def setRecoveryProps(props: ErrorRecoveryProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecoveryProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRecoveryProps(props: ErrorRecoveryProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRecoveryProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type ErrorRecoveryProps = Record[String, js.Any]
 }

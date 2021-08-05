@@ -28,28 +28,21 @@ trait ScalingRule extends StObject {
 }
 object ScalingRule {
   
-  @scala.inline
-  def apply(Action: ScalingAction, Name: String, Trigger: ScalingTrigger): ScalingRule = {
+  inline def apply(Action: ScalingAction, Name: String, Trigger: ScalingTrigger): ScalingRule = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Trigger = Trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingRule]
   }
   
-  @scala.inline
-  implicit class ScalingRuleMutableBuilder[Self <: ScalingRule] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: ScalingAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ScalingAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrigger(value: ScalingTrigger): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: ScalingTrigger): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
   }
 }

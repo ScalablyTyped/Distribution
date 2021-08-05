@@ -16,8 +16,7 @@ trait LiteralType
 }
 object LiteralType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     freshType: LiteralType,
     getApparentProperties: () => js.Array[Symbol],
@@ -50,16 +49,12 @@ object LiteralType {
     __obj.asInstanceOf[LiteralType]
   }
   
-  @scala.inline
-  implicit class LiteralTypeMutableBuilder[Self <: LiteralType] (val x: Self) extends AnyVal {
+  extension [Self <: LiteralType](x: Self) {
     
-    @scala.inline
-    def setFreshType(value: LiteralType): Self = StObject.set(x, "freshType", value.asInstanceOf[js.Any])
+    inline def setFreshType(value: LiteralType): Self = StObject.set(x, "freshType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegularType(value: LiteralType): Self = StObject.set(x, "regularType", value.asInstanceOf[js.Any])
+    inline def setRegularType(value: LiteralType): Self = StObject.set(x, "regularType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: java.lang.String | Double | PseudoBigInt): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: java.lang.String | Double | PseudoBigInt): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

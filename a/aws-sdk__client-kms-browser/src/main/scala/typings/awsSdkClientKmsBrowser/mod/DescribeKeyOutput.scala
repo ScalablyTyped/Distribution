@@ -10,8 +10,7 @@ trait DescribeKeyOutput
      with typings.awsSdkClientKmsBrowser.typesDescribeKeyOutputMod.DescribeKeyOutput
 object DescribeKeyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DescribeKeyOutput = {
+  inline def apply($metadata: ResponseMetadata): DescribeKeyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeKeyOutput]
   }

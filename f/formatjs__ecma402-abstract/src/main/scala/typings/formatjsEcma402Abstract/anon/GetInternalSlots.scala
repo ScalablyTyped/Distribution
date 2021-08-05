@@ -12,16 +12,13 @@ trait GetInternalSlots extends StObject {
 }
 object GetInternalSlots {
   
-  @scala.inline
-  def apply(getInternalSlots: NumberFormat => NumberFormatInternal): GetInternalSlots = {
+  inline def apply(getInternalSlots: NumberFormat => NumberFormatInternal): GetInternalSlots = {
     val __obj = js.Dynamic.literal(getInternalSlots = js.Any.fromFunction1(getInternalSlots))
     __obj.asInstanceOf[GetInternalSlots]
   }
   
-  @scala.inline
-  implicit class GetInternalSlotsMutableBuilder[Self <: GetInternalSlots] (val x: Self) extends AnyVal {
+  extension [Self <: GetInternalSlots](x: Self) {
     
-    @scala.inline
-    def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
+    inline def setGetInternalSlots(value: NumberFormat => NumberFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
   }
 }

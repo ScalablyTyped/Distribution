@@ -20,17 +20,14 @@ object mod extends Shortcut {
   }
   object CreateQueue {
     
-    @scala.inline
-    def apply(add: (String, QueueOptions) => Queue[js.Any]): CreateQueue = {
+    inline def apply(add: (String, QueueOptions) => Queue[js.Any]): CreateQueue = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
       __obj.asInstanceOf[CreateQueue]
     }
     
-    @scala.inline
-    implicit class CreateQueueMutableBuilder[Self <: CreateQueue] (val x: Self) extends AnyVal {
+    extension [Self <: CreateQueue](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (String, QueueOptions) => Queue[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, QueueOptions) => Queue[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     }
   }
   

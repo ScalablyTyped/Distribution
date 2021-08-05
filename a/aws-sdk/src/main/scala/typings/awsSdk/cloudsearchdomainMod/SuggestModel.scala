@@ -23,34 +23,25 @@ trait SuggestModel extends StObject {
 }
 object SuggestModel {
   
-  @scala.inline
-  def apply(): SuggestModel = {
+  inline def apply(): SuggestModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestModel]
   }
   
-  @scala.inline
-  implicit class SuggestModelMutableBuilder[Self <: SuggestModel] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestModel](x: Self) {
     
-    @scala.inline
-    def setFound(value: Long): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: Long): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
+    inline def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSuggestions(value: Suggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: Suggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+    inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    @scala.inline
-    def setSuggestionsVarargs(value: SuggestionMatch*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: SuggestionMatch*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

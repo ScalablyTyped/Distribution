@@ -39,8 +39,7 @@ trait XPrimitive2DRenderer
 }
 object XPrimitive2DRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     rasterize: (SeqEquiv[XPrimitive2D], SeqEquiv[PropertyValue], Double, Double, RealRectangle2D, Double) => XBitmap,
@@ -50,11 +49,9 @@ object XPrimitive2DRenderer {
     __obj.asInstanceOf[XPrimitive2DRenderer]
   }
   
-  @scala.inline
-  implicit class XPrimitive2DRendererMutableBuilder[Self <: XPrimitive2DRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: XPrimitive2DRenderer](x: Self) {
     
-    @scala.inline
-    def setRasterize(
+    inline def setRasterize(
       value: (SeqEquiv[XPrimitive2D], SeqEquiv[PropertyValue], Double, Double, RealRectangle2D, Double) => XBitmap
     ): Self = StObject.set(x, "rasterize", js.Any.fromFunction6(value))
   }

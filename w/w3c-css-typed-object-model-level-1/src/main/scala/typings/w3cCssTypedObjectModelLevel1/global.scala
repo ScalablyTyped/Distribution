@@ -14,107 +14,73 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Hz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("Hz")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def Hz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("Hz")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def Q(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("Q")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def Q(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("Q")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def ch(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ch")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def ch(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ch")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def cm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("cm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def cm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("cm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def deg(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deg")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def deg(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deg")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def dpcm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dpcm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def dpcm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dpcm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def dpi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dpi")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def dpi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dpi")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def dppx(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dppx")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def dppx(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("dppx")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def em(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def em(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def ex(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ex")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def ex(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ex")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def fr(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fr")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def fr(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fr")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def grad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("grad")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def grad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("grad")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def ic(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ic")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def ic(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ic")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def in(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("_in")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def in(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("_in")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def kHz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("kHz")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def kHz(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("kHz")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def lh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("lh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def lh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("lh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def mm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("mm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def mm(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("mm")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def ms(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def ms(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def number(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def number(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def pc(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pc")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def pc(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pc")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def percent(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("percent")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def percent(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("percent")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def pt(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def pt(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def px(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("px")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def px(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("px")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def rad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rad")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def rad(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rad")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def rem(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def rem(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def rlh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rlh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def rlh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("rlh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def s(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def s(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def turn(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("turn")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def turn(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("turn")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def vb(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vb")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def vb(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vb")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def vh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def vh(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vh")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def vi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vi")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def vi(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vi")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def vmax(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vmax")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def vmax(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vmax")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def vmin(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vmin")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def vmin(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vmin")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
     
-    @scala.inline
-    def vw(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vw")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
+    inline def vw(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vw")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
   }
   
   @JSGlobal("CSSImageValue")
@@ -558,8 +524,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cssText.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSNumericValue]
+    inline def parse(cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cssText.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSNumericValue]
   }
   
   /* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),
@@ -706,12 +671,10 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(property: String, cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSStyleValue = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]
+    inline def parse(property: String, cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSStyleValue = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]
     
     /* static member */
-    @scala.inline
-    def parseAll(property: String, cssText: String): js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]]
+    inline def parseAll(property: String, cssText: String): js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]]
   }
   
   @JSGlobal("CSSTransformComponent")

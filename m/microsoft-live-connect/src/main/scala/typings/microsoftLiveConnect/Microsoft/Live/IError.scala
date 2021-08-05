@@ -18,16 +18,13 @@ trait IError extends StObject {
 }
 object IError {
   
-  @scala.inline
-  def apply(error: Code): IError = {
+  inline def apply(error: Code): IError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]
   }
   
-  @scala.inline
-  implicit class IErrorMutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
+  extension [Self <: IError](x: Self) {
     
-    @scala.inline
-    def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

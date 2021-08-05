@@ -13,7 +13,7 @@ trait ADOAdapterObject extends StObject {
   
   var Connection: String
   
-  @JSName("InfoPath.ADOAdapterObject_typekey")
+  /* private */ @JSName("InfoPath.ADOAdapterObject_typekey")
   var InfoPathDotADOAdapterObject_typekey: ADOAdapterObject
   
   val Name: String
@@ -30,8 +30,7 @@ trait ADOAdapterObject extends StObject {
 }
 object ADOAdapterObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BuildSQLFromXMLNodes: IXMLDOMNode => String,
     Command: String,
     Connection: String,
@@ -48,37 +47,26 @@ object ADOAdapterObject {
     __obj.asInstanceOf[ADOAdapterObject]
   }
   
-  @scala.inline
-  implicit class ADOAdapterObjectMutableBuilder[Self <: ADOAdapterObject] (val x: Self) extends AnyVal {
+  extension [Self <: ADOAdapterObject](x: Self) {
     
-    @scala.inline
-    def setBuildSQLFromXMLNodes(value: IXMLDOMNode => String): Self = StObject.set(x, "BuildSQLFromXMLNodes", js.Any.fromFunction1(value))
+    inline def setBuildSQLFromXMLNodes(value: IXMLDOMNode => String): Self = StObject.set(x, "BuildSQLFromXMLNodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotADOAdapterObject_typekey(value: ADOAdapterObject): Self = StObject.set(x, "InfoPath.ADOAdapterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotADOAdapterObject_typekey(value: ADOAdapterObject): Self = StObject.set(x, "InfoPath.ADOAdapterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
+    inline def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
+    inline def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
   }
 }

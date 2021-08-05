@@ -19,13 +19,12 @@ trait DeviceEvent extends StObject {
   /** Returns the Type of this Event */
   val Type: WiaEventFlag
   
-  @JSName("WIA.DeviceEvent_typekey")
+  /* private */ @JSName("WIA.DeviceEvent_typekey")
   var WIADotDeviceEvent_typekey: DeviceEvent
 }
 object DeviceEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     EventID: String,
     Name: String,
@@ -37,22 +36,16 @@ object DeviceEvent {
     __obj.asInstanceOf[DeviceEvent]
   }
   
-  @scala.inline
-  implicit class DeviceEventMutableBuilder[Self <: DeviceEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceEvent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventID(value: String): Self = StObject.set(x, "EventID", value.asInstanceOf[js.Any])
+    inline def setEventID(value: String): Self = StObject.set(x, "EventID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WiaEventFlag): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WiaEventFlag): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotDeviceEvent_typekey(value: DeviceEvent): Self = StObject.set(x, "WIA.DeviceEvent_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotDeviceEvent_typekey(value: DeviceEvent): Self = StObject.set(x, "WIA.DeviceEvent_typekey", value.asInstanceOf[js.Any])
   }
 }

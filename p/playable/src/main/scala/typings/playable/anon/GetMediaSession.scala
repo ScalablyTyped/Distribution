@@ -10,16 +10,13 @@ trait GetMediaSession extends StObject {
 }
 object GetMediaSession {
   
-  @scala.inline
-  def apply(getMediaSession: () => GetEstimatedTime): GetMediaSession = {
+  inline def apply(getMediaSession: () => GetEstimatedTime): GetMediaSession = {
     val __obj = js.Dynamic.literal(getMediaSession = js.Any.fromFunction0(getMediaSession))
     __obj.asInstanceOf[GetMediaSession]
   }
   
-  @scala.inline
-  implicit class GetMediaSessionMutableBuilder[Self <: GetMediaSession] (val x: Self) extends AnyVal {
+  extension [Self <: GetMediaSession](x: Self) {
     
-    @scala.inline
-    def setGetMediaSession(value: () => GetEstimatedTime): Self = StObject.set(x, "getMediaSession", js.Any.fromFunction0(value))
+    inline def setGetMediaSession(value: () => GetEstimatedTime): Self = StObject.set(x, "getMediaSession", js.Any.fromFunction0(value))
   }
 }

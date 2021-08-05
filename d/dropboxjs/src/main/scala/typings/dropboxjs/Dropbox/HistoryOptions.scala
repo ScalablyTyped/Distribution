@@ -12,25 +12,19 @@ trait HistoryOptions extends StObject {
 }
 object HistoryOptions {
   
-  @scala.inline
-  def apply(): HistoryOptions = {
+  inline def apply(): HistoryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryOptions]
   }
   
-  @scala.inline
-  implicit class HistoryOptionsMutableBuilder[Self <: HistoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryOptions](x: Self) {
     
-    @scala.inline
-    def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
+    inline def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpCacheUndefined: Self = StObject.set(x, "httpCache", js.undefined)
+    inline def setHttpCacheUndefined: Self = StObject.set(x, "httpCache", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

@@ -13,17 +13,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def country(countryCodeOrName: String): CountryInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("country")(countryCodeOrName.asInstanceOf[js.Any]).asInstanceOf[CountryInfo | Null]
+  inline def country(countryCodeOrName: String): CountryInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("country")(countryCodeOrName.asInstanceOf[js.Any]).asInstanceOf[CountryInfo | Null]
   
   @JSImport("iso-3166-2", "data")
   @js.native
   val data: Map = js.native
   
-  @scala.inline
-  def subdivision(countryCodeOrFullSubdivisionCode: String): SubdivisionInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("subdivision")(countryCodeOrFullSubdivisionCode.asInstanceOf[js.Any]).asInstanceOf[SubdivisionInfo | Null]
-  @scala.inline
-  def subdivision(countryCodeOrFullSubdivisionCode: String, subdivisionCodeOrName: String): SubdivisionInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("subdivision")(countryCodeOrFullSubdivisionCode.asInstanceOf[js.Any], subdivisionCodeOrName.asInstanceOf[js.Any])).asInstanceOf[SubdivisionInfo | Null]
+  inline def subdivision(countryCodeOrFullSubdivisionCode: String): SubdivisionInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("subdivision")(countryCodeOrFullSubdivisionCode.asInstanceOf[js.Any]).asInstanceOf[SubdivisionInfo | Null]
+  inline def subdivision(countryCodeOrFullSubdivisionCode: String, subdivisionCodeOrName: String): SubdivisionInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("subdivision")(countryCodeOrFullSubdivisionCode.asInstanceOf[js.Any], subdivisionCodeOrName.asInstanceOf[js.Any])).asInstanceOf[SubdivisionInfo | Null]
   
   object CountryInfo {
     
@@ -35,17 +32,14 @@ object mod {
     }
     object Full {
       
-      @scala.inline
-      def apply(code: String, name: String, sub: typings.iso31662.mod.SubdivisionInfo.Map): Full = {
+      inline def apply(code: String, name: String, sub: typings.iso31662.mod.SubdivisionInfo.Map): Full = {
         val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
         __obj.asInstanceOf[Full]
       }
       
-      @scala.inline
-      implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
+      extension [Self <: Full](x: Self) {
         
-        @scala.inline
-        def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       }
     }
     
@@ -60,20 +54,16 @@ object mod {
     }
     object Partial {
       
-      @scala.inline
-      def apply(name: String, sub: typings.iso31662.mod.SubdivisionInfo.Map): Partial = {
+      inline def apply(name: String, sub: typings.iso31662.mod.SubdivisionInfo.Map): Partial = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
         __obj.asInstanceOf[Partial]
       }
       
-      @scala.inline
-      implicit class PartialMutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
+      extension [Self <: Partial](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSub(value: typings.iso31662.mod.SubdivisionInfo.Map): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+        inline def setSub(value: typings.iso31662.mod.SubdivisionInfo.Map): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -95,8 +85,7 @@ object mod {
     }
     object Full {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         code: String,
         countryCode: String,
         countryName: String,
@@ -109,20 +98,15 @@ object mod {
         __obj.asInstanceOf[typings.iso31662.mod.SubdivisionInfo.Full]
       }
       
-      @scala.inline
-      implicit class FullMutableBuilder[Self <: typings.iso31662.mod.SubdivisionInfo.Full] (val x: Self) extends AnyVal {
+      extension [Self <: typings.iso31662.mod.SubdivisionInfo.Full](x: Self) {
         
-        @scala.inline
-        def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+        inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
+        inline def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+        inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
       }
     }
     
@@ -137,21 +121,17 @@ object mod {
     }
     object Partial {
       
-      @scala.inline
-      def apply(name: String, `type`: String): Partial = {
+      inline def apply(name: String, `type`: String): Partial = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Partial]
       }
       
-      @scala.inline
-      implicit class PartialMutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
+      extension [Self <: Partial](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }

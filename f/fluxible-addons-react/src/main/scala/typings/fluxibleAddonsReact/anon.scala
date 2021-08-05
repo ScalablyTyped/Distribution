@@ -35,20 +35,16 @@ object anon {
   }
   object TypeofComponent {
     
-    @scala.inline
-    def apply(): TypeofComponent = {
+    inline def apply(): TypeofComponent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    @scala.inline
-    implicit class TypeofComponentMutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofComponent](x: Self) {
       
-      @scala.inline
-      def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      inline def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
+      inline def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
     }
   }
 }

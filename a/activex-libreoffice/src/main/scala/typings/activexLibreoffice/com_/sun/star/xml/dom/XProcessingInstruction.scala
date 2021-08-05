@@ -26,8 +26,7 @@ trait XProcessingInstruction
 }
 object XProcessingInstruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: XNamedNodeMap,
     ChildNodes: XNodeList,
     Data: String,
@@ -80,22 +79,16 @@ object XProcessingInstruction {
     __obj.asInstanceOf[XProcessingInstruction]
   }
   
-  @scala.inline
-  implicit class XProcessingInstructionMutableBuilder[Self <: XProcessingInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: XProcessingInstruction](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTarget(value: () => String): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => String): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

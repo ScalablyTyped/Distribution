@@ -18,25 +18,19 @@ trait ListReusableDelegationSetsRequest extends StObject {
 }
 object ListReusableDelegationSetsRequest {
   
-  @scala.inline
-  def apply(): ListReusableDelegationSetsRequest = {
+  inline def apply(): ListReusableDelegationSetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReusableDelegationSetsRequest]
   }
   
-  @scala.inline
-  implicit class ListReusableDelegationSetsRequestMutableBuilder[Self <: ListReusableDelegationSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListReusableDelegationSetsRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

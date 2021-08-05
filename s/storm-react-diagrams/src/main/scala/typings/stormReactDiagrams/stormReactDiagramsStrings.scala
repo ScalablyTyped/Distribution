@@ -11,27 +11,23 @@ object stormReactDiagramsStrings {
   sealed trait link
     extends StObject
        with BaseEntityType
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait node
     extends StObject
        with BaseEntityType
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait point
     extends StObject
        with BaseEntityType
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
+  inline def point: point = "point".asInstanceOf[point]
   
   @js.native
   sealed trait port
     extends StObject
        with BaseEntityType
-  @scala.inline
-  def port: port = "port".asInstanceOf[port]
+  inline def port: port = "port".asInstanceOf[port]
 }

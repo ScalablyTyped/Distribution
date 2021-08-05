@@ -12,19 +12,15 @@ trait UIkitDropdownElement extends StObject {
 }
 object UIkitDropdownElement {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: () => Unit): UIkitDropdownElement = {
+  inline def apply(hide: () => Unit, show: () => Unit): UIkitDropdownElement = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[UIkitDropdownElement]
   }
   
-  @scala.inline
-  implicit class UIkitDropdownElementMutableBuilder[Self <: UIkitDropdownElement] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitDropdownElement](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

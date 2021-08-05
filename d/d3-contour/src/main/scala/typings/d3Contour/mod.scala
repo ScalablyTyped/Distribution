@@ -14,11 +14,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def contourDensity[Datum](): ContourDensity_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("contourDensity")().asInstanceOf[ContourDensity_[Datum]]
+  inline def contourDensity[Datum](): ContourDensity_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("contourDensity")().asInstanceOf[ContourDensity_[Datum]]
   
-  @scala.inline
-  def contours(): Contours_ = ^.asInstanceOf[js.Dynamic].applyDynamic("contours")().asInstanceOf[Contours_]
+  inline def contours(): Contours_ = ^.asInstanceOf[js.Dynamic].applyDynamic("contours")().asInstanceOf[Contours_]
   
   @js.native
   trait ContourDensity_[Datum] extends StObject {
@@ -161,18 +159,15 @@ object mod {
   }
   object ContourMultiPolygon {
     
-    @scala.inline
-    def apply(coordinates: js.Array[js.Array[js.Array[Position]]], value: Double): ContourMultiPolygon = {
+    inline def apply(coordinates: js.Array[js.Array[js.Array[Position]]], value: Double): ContourMultiPolygon = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("MultiPolygon")
       __obj.asInstanceOf[ContourMultiPolygon]
     }
     
-    @scala.inline
-    implicit class ContourMultiPolygonMutableBuilder[Self <: ContourMultiPolygon] (val x: Self) extends AnyVal {
+    extension [Self <: ContourMultiPolygon](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

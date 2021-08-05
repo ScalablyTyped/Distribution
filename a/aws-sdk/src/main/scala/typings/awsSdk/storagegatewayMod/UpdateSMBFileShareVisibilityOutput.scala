@@ -10,19 +10,15 @@ trait UpdateSMBFileShareVisibilityOutput extends StObject {
 }
 object UpdateSMBFileShareVisibilityOutput {
   
-  @scala.inline
-  def apply(): UpdateSMBFileShareVisibilityOutput = {
+  inline def apply(): UpdateSMBFileShareVisibilityOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSMBFileShareVisibilityOutput]
   }
   
-  @scala.inline
-  implicit class UpdateSMBFileShareVisibilityOutputMutableBuilder[Self <: UpdateSMBFileShareVisibilityOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSMBFileShareVisibilityOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

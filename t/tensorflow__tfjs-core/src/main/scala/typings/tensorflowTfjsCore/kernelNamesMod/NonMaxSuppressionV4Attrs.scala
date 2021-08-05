@@ -16,25 +16,19 @@ trait NonMaxSuppressionV4Attrs extends StObject {
 }
 object NonMaxSuppressionV4Attrs {
   
-  @scala.inline
-  def apply(iouThreshold: Double, maxOutputSize: Double, padToMaxOutputSize: Boolean, scoreThreshold: Double): NonMaxSuppressionV4Attrs = {
+  inline def apply(iouThreshold: Double, maxOutputSize: Double, padToMaxOutputSize: Boolean, scoreThreshold: Double): NonMaxSuppressionV4Attrs = {
     val __obj = js.Dynamic.literal(iouThreshold = iouThreshold.asInstanceOf[js.Any], maxOutputSize = maxOutputSize.asInstanceOf[js.Any], padToMaxOutputSize = padToMaxOutputSize.asInstanceOf[js.Any], scoreThreshold = scoreThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonMaxSuppressionV4Attrs]
   }
   
-  @scala.inline
-  implicit class NonMaxSuppressionV4AttrsMutableBuilder[Self <: NonMaxSuppressionV4Attrs] (val x: Self) extends AnyVal {
+  extension [Self <: NonMaxSuppressionV4Attrs](x: Self) {
     
-    @scala.inline
-    def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
+    inline def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOutputSize(value: Double): Self = StObject.set(x, "maxOutputSize", value.asInstanceOf[js.Any])
+    inline def setMaxOutputSize(value: Double): Self = StObject.set(x, "maxOutputSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadToMaxOutputSize(value: Boolean): Self = StObject.set(x, "padToMaxOutputSize", value.asInstanceOf[js.Any])
+    inline def setPadToMaxOutputSize(value: Boolean): Self = StObject.set(x, "padToMaxOutputSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
+    inline def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
   }
 }

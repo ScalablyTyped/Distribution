@@ -14,25 +14,19 @@ trait BucketRange extends StObject {
 }
 object BucketRange {
   
-  @scala.inline
-  def apply(): BucketRange = {
+  inline def apply(): BucketRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketRange]
   }
   
-  @scala.inline
-  implicit class BucketRangeMutableBuilder[Self <: BucketRange] (val x: Self) extends AnyVal {
+  extension [Self <: BucketRange](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

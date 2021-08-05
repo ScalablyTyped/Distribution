@@ -14,19 +14,15 @@ trait Mimetype extends StObject {
 }
 object Mimetype {
   
-  @scala.inline
-  def apply(mime_type: String, path: String): Mimetype = {
+  inline def apply(mime_type: String, path: String): Mimetype = {
     val __obj = js.Dynamic.literal(mime_type = mime_type.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mimetype]
   }
   
-  @scala.inline
-  implicit class MimetypeMutableBuilder[Self <: Mimetype] (val x: Self) extends AnyVal {
+  extension [Self <: Mimetype](x: Self) {
     
-    @scala.inline
-    def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
+    inline def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

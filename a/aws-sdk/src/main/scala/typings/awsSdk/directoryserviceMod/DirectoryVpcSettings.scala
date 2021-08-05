@@ -18,22 +18,17 @@ trait DirectoryVpcSettings extends StObject {
 }
 object DirectoryVpcSettings {
   
-  @scala.inline
-  def apply(SubnetIds: SubnetIds, VpcId: VpcId): DirectoryVpcSettings = {
+  inline def apply(SubnetIds: SubnetIds, VpcId: VpcId): DirectoryVpcSettings = {
     val __obj = js.Dynamic.literal(SubnetIds = SubnetIds.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryVpcSettings]
   }
   
-  @scala.inline
-  implicit class DirectoryVpcSettingsMutableBuilder[Self <: DirectoryVpcSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryVpcSettings](x: Self) {
     
-    @scala.inline
-    def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

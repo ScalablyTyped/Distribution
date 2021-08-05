@@ -38,25 +38,19 @@ trait Property extends StObject {
 }
 object Property {
   
-  @scala.inline
-  def apply(Attributes: Double, Handle: Double, Name: String, Type: `type`): Property = {
+  inline def apply(Attributes: Double, Handle: Double, Name: String, Type: `type`): Property = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Handle = Handle.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property]
   }
   
-  @scala.inline
-  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+  extension [Self <: Property](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Double): Self = StObject.set(x, "Handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `type`): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: `type`): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

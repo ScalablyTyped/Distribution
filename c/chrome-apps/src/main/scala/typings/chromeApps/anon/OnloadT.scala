@@ -17,25 +17,19 @@ trait OnloadT extends StObject {
 }
 object OnloadT {
   
-  @scala.inline
-  def apply(onloadT: integer, pageT: integer, startE: integer, tran: integer): OnloadT = {
+  inline def apply(onloadT: integer, pageT: integer, startE: integer, tran: integer): OnloadT = {
     val __obj = js.Dynamic.literal(onloadT = onloadT.asInstanceOf[js.Any], pageT = pageT.asInstanceOf[js.Any], startE = startE.asInstanceOf[js.Any], tran = tran.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnloadT]
   }
   
-  @scala.inline
-  implicit class OnloadTMutableBuilder[Self <: OnloadT] (val x: Self) extends AnyVal {
+  extension [Self <: OnloadT](x: Self) {
     
-    @scala.inline
-    def setOnloadT(value: integer): Self = StObject.set(x, "onloadT", value.asInstanceOf[js.Any])
+    inline def setOnloadT(value: integer): Self = StObject.set(x, "onloadT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageT(value: integer): Self = StObject.set(x, "pageT", value.asInstanceOf[js.Any])
+    inline def setPageT(value: integer): Self = StObject.set(x, "pageT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartE(value: integer): Self = StObject.set(x, "startE", value.asInstanceOf[js.Any])
+    inline def setStartE(value: integer): Self = StObject.set(x, "startE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTran(value: integer): Self = StObject.set(x, "tran", value.asInstanceOf[js.Any])
+    inline def setTran(value: integer): Self = StObject.set(x, "tran", value.asInstanceOf[js.Any])
   }
 }

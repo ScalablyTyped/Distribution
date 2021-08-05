@@ -30,8 +30,7 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRule: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Parameter.addRule */ js.Any,
     t: ParameterTranslateFunction,
     validate: (ParameterRules, js.Any) => js.Array[ValidateError] | Unit
@@ -40,18 +39,14 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setAddRule(
+    inline def setAddRule(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Parameter.addRule */ js.Any
     ): Self = StObject.set(x, "addRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: ParameterTranslateFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: ParameterTranslateFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: (ParameterRules, js.Any) => js.Array[ValidateError] | Unit): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    inline def setValidate(value: (ParameterRules, js.Any) => js.Array[ValidateError] | Unit): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
   }
 }

@@ -63,8 +63,7 @@ trait XLocaleData
 }
 object XLocaleData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllInstalledLocaleNames: SafeArray[Locale],
     acquire: () => Unit,
     getAllCalendars: Locale => SafeArray[Calendar],
@@ -86,46 +85,32 @@ object XLocaleData {
     __obj.asInstanceOf[XLocaleData]
   }
   
-  @scala.inline
-  implicit class XLocaleDataMutableBuilder[Self <: XLocaleData] (val x: Self) extends AnyVal {
+  extension [Self <: XLocaleData](x: Self) {
     
-    @scala.inline
-    def setAllInstalledLocaleNames(value: SafeArray[Locale]): Self = StObject.set(x, "AllInstalledLocaleNames", value.asInstanceOf[js.Any])
+    inline def setAllInstalledLocaleNames(value: SafeArray[Locale]): Self = StObject.set(x, "AllInstalledLocaleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllCalendars(value: Locale => SafeArray[Calendar]): Self = StObject.set(x, "getAllCalendars", js.Any.fromFunction1(value))
+    inline def setGetAllCalendars(value: Locale => SafeArray[Calendar]): Self = StObject.set(x, "getAllCalendars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllCurrencies(value: Locale => SafeArray[Currency]): Self = StObject.set(x, "getAllCurrencies", js.Any.fromFunction1(value))
+    inline def setGetAllCurrencies(value: Locale => SafeArray[Currency]): Self = StObject.set(x, "getAllCurrencies", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllFormats(value: Locale => SafeArray[FormatElement]): Self = StObject.set(x, "getAllFormats", js.Any.fromFunction1(value))
+    inline def setGetAllFormats(value: Locale => SafeArray[FormatElement]): Self = StObject.set(x, "getAllFormats", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllInstalledLocaleNames(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAllInstalledLocaleNames", js.Any.fromFunction0(value))
+    inline def setGetAllInstalledLocaleNames(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAllInstalledLocaleNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCollationOptions(value: Locale => SafeArray[String]): Self = StObject.set(x, "getCollationOptions", js.Any.fromFunction1(value))
+    inline def setGetCollationOptions(value: Locale => SafeArray[String]): Self = StObject.set(x, "getCollationOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCollatorImplementations(value: Locale => SafeArray[Implementation]): Self = StObject.set(x, "getCollatorImplementations", js.Any.fromFunction1(value))
+    inline def setGetCollatorImplementations(value: Locale => SafeArray[Implementation]): Self = StObject.set(x, "getCollatorImplementations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetForbiddenCharacters(value: Locale => ForbiddenCharacters): Self = StObject.set(x, "getForbiddenCharacters", js.Any.fromFunction1(value))
+    inline def setGetForbiddenCharacters(value: Locale => ForbiddenCharacters): Self = StObject.set(x, "getForbiddenCharacters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLanguageCountryInfo(value: Locale => LanguageCountryInfo): Self = StObject.set(x, "getLanguageCountryInfo", js.Any.fromFunction1(value))
+    inline def setGetLanguageCountryInfo(value: Locale => LanguageCountryInfo): Self = StObject.set(x, "getLanguageCountryInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLocaleItem(value: Locale => LocaleDataItem): Self = StObject.set(x, "getLocaleItem", js.Any.fromFunction1(value))
+    inline def setGetLocaleItem(value: Locale => LocaleDataItem): Self = StObject.set(x, "getLocaleItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetReservedWord(value: Locale => SafeArray[String]): Self = StObject.set(x, "getReservedWord", js.Any.fromFunction1(value))
+    inline def setGetReservedWord(value: Locale => SafeArray[String]): Self = StObject.set(x, "getReservedWord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSearchOptions(value: Locale => SafeArray[String]): Self = StObject.set(x, "getSearchOptions", js.Any.fromFunction1(value))
+    inline def setGetSearchOptions(value: Locale => SafeArray[String]): Self = StObject.set(x, "getSearchOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTransliterations(value: Locale => SafeArray[String]): Self = StObject.set(x, "getTransliterations", js.Any.fromFunction1(value))
+    inline def setGetTransliterations(value: Locale => SafeArray[String]): Self = StObject.set(x, "getTransliterations", js.Any.fromFunction1(value))
   }
 }

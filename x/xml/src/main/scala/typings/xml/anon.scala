@@ -17,17 +17,14 @@ object anon {
   }
   object Attr {
     
-    @scala.inline
-    def apply(_attr: XmlAttrs): Attr = {
+    inline def apply(_attr: XmlAttrs): Attr = {
       val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attr]
     }
     
-    @scala.inline
-    implicit class AttrMutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
+    extension [Self <: Attr](x: Self) {
       
-      @scala.inline
-      def set_attr(value: XmlAttrs): Self = StObject.set(x, "_attr", value.asInstanceOf[js.Any])
+      inline def set_attr(value: XmlAttrs): Self = StObject.set(x, "_attr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +38,16 @@ object anon {
   }
   object AttrCdata {
     
-    @scala.inline
-    def apply(_attr: XmlAttrs, _cdata: String): AttrCdata = {
+    inline def apply(_attr: XmlAttrs, _cdata: String): AttrCdata = {
       val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any], _cdata = _cdata.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttrCdata]
     }
     
-    @scala.inline
-    implicit class AttrCdataMutableBuilder[Self <: AttrCdata] (val x: Self) extends AnyVal {
+    extension [Self <: AttrCdata](x: Self) {
       
-      @scala.inline
-      def set_attr(value: XmlAttrs): Self = StObject.set(x, "_attr", value.asInstanceOf[js.Any])
+      inline def set_attr(value: XmlAttrs): Self = StObject.set(x, "_attr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_cdata(value: String): Self = StObject.set(x, "_cdata", value.asInstanceOf[js.Any])
+      inline def set_cdata(value: String): Self = StObject.set(x, "_cdata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,17 +59,14 @@ object anon {
   }
   object Cdata {
     
-    @scala.inline
-    def apply(_cdata: String): Cdata = {
+    inline def apply(_cdata: String): Cdata = {
       val __obj = js.Dynamic.literal(_cdata = _cdata.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cdata]
     }
     
-    @scala.inline
-    implicit class CdataMutableBuilder[Self <: Cdata] (val x: Self) extends AnyVal {
+    extension [Self <: Cdata](x: Self) {
       
-      @scala.inline
-      def set_cdata(value: String): Self = StObject.set(x, "_cdata", value.asInstanceOf[js.Any])
+      inline def set_cdata(value: String): Self = StObject.set(x, "_cdata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,26 +78,20 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(): Encoding = {
+    inline def apply(): Encoding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      inline def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     }
   }
   
@@ -119,23 +103,18 @@ object anon {
   }
   object Indent {
     
-    @scala.inline
-    def apply(): Indent = {
+    inline def apply(): Indent = {
       val __obj = js.Dynamic.literal(stream = true)
       __obj.asInstanceOf[Indent]
     }
     
-    @scala.inline
-    implicit class IndentMutableBuilder[Self <: Indent] (val x: Self) extends AnyVal {
+    extension [Self <: Indent](x: Self) {
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setStream(value: `true`): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: `true`): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

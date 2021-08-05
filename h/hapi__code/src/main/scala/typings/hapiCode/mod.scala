@@ -13,19 +13,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
+  inline def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
   
   object expect {
     
-    @scala.inline
-    def apply[T](value: T): Assertion[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T]]
-    @scala.inline
-    def apply[T](value: T, prefix: String): Assertion[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T]]
-    @scala.inline
-    def apply[T](value: js.Array[T]): Assertion[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T]]
-    @scala.inline
-    def apply[T](value: js.Array[T], prefix: String): Assertion[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T]]
+    inline def apply[T](value: T): Assertion[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T]]
+    inline def apply[T](value: T, prefix: String): Assertion[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T]]
+    inline def apply[T](value: js.Array[T]): Assertion[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T]]
+    inline def apply[T](value: js.Array[T], prefix: String): Assertion[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T]]
     
     @JSImport("@hapi/code", "expect")
     @js.native
@@ -544,13 +539,10 @@ object mod {
     }
   }
   
-  @scala.inline
-  def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
-  @scala.inline
-  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
+  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
+  inline def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
   
   @JSImport("@hapi/code", "settings")
   @js.native
@@ -558,10 +550,8 @@ object mod {
   
   object thrownAt {
     
-    @scala.inline
-    def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
-    @scala.inline
-    def apply(error: Error): Location = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
+    inline def apply(error: Error): Location = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     @JSImport("@hapi/code", "thrownAt")
     @js.native
@@ -577,23 +567,18 @@ object mod {
     }
     object Location {
       
-      @scala.inline
-      def apply(column: String, filename: String, line: String): Location = {
+      inline def apply(column: String, filename: String, line: String): Location = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
         __obj.asInstanceOf[Location]
       }
       
-      @scala.inline
-      implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+      extension [Self <: Location](x: Self) {
         
-        @scala.inline
-        def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -616,26 +601,20 @@ object mod {
   }
   object Settings_ {
     
-    @scala.inline
-    def apply(): Settings_ = {
+    inline def apply(): Settings_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings_]
     }
     
-    @scala.inline
-    implicit class Settings_MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
+    extension [Self <: Settings_](x: Self) {
       
-      @scala.inline
-      def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
+      inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
+      inline def setComparePrototypesUndefined: Self = StObject.set(x, "comparePrototypes", js.undefined)
       
-      @scala.inline
-      def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
+      inline def setTruncateMessages(value: Boolean): Self = StObject.set(x, "truncateMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
+      inline def setTruncateMessagesUndefined: Self = StObject.set(x, "truncateMessages", js.undefined)
     }
   }
 }

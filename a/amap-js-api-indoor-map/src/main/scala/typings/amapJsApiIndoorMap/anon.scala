@@ -32,26 +32,20 @@ object anon {
   }
   object Buildingid {
     
-    @scala.inline
-    def apply(building_id: String, floor: Double, lnglat: LngLat, shop: Shop): Buildingid = {
+    inline def apply(building_id: String, floor: Double, lnglat: LngLat, shop: Shop): Buildingid = {
       val __obj = js.Dynamic.literal(building_id = building_id.asInstanceOf[js.Any], floor = floor.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], shop = shop.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buildingid]
     }
     
-    @scala.inline
-    implicit class BuildingidMutableBuilder[Self <: Buildingid] (val x: Self) extends AnyVal {
+    extension [Self <: Buildingid](x: Self) {
       
-      @scala.inline
-      def setBuilding_id(value: String): Self = StObject.set(x, "building_id", value.asInstanceOf[js.Any])
+      inline def setBuilding_id(value: String): Self = StObject.set(x, "building_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloor(value: Double): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+      inline def setFloor(value: Double): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+      inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShop(value: Shop): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
+      inline def setShop(value: Shop): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
     }
   }
 }

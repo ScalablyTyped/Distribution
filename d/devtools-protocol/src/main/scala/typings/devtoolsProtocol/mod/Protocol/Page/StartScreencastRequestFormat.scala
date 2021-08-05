@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartScreencastRequestFormat extends StObject
 object StartScreencastRequestFormat {
   
-  @scala.inline
-  def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  inline def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
-  @scala.inline
-  def Png: png = "png".asInstanceOf[png]
+  inline def Png: png = "png".asInstanceOf[png]
 }

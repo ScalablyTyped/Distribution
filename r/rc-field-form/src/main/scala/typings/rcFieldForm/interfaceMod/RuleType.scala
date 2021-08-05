@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RuleType extends StObject
 object RuleType {
   
-  @scala.inline
-  def boolean: typings.rcFieldForm.rcFieldFormStrings.boolean = "boolean".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.boolean]
+  inline def boolean: typings.rcFieldForm.rcFieldFormStrings.boolean = "boolean".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.boolean]
   
-  @scala.inline
-  def date: typings.rcFieldForm.rcFieldFormStrings.date = "date".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.date]
+  inline def date: typings.rcFieldForm.rcFieldFormStrings.date = "date".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.date]
   
-  @scala.inline
-  def email: typings.rcFieldForm.rcFieldFormStrings.email = "email".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.email]
+  inline def email: typings.rcFieldForm.rcFieldFormStrings.email = "email".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.email]
   
-  @scala.inline
-  def `enum`: typings.rcFieldForm.rcFieldFormStrings.`enum` = "enum".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.`enum`]
+  inline def `enum`: typings.rcFieldForm.rcFieldFormStrings.`enum` = "enum".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.`enum`]
   
-  @scala.inline
-  def float: typings.rcFieldForm.rcFieldFormStrings.float = "float".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.float]
+  inline def float: typings.rcFieldForm.rcFieldFormStrings.float = "float".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.float]
   
-  @scala.inline
-  def hex: typings.rcFieldForm.rcFieldFormStrings.hex = "hex".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.hex]
+  inline def hex: typings.rcFieldForm.rcFieldFormStrings.hex = "hex".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.hex]
   
-  @scala.inline
-  def integer: typings.rcFieldForm.rcFieldFormStrings.integer = "integer".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.integer]
+  inline def integer: typings.rcFieldForm.rcFieldFormStrings.integer = "integer".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.integer]
   
-  @scala.inline
-  def method: typings.rcFieldForm.rcFieldFormStrings.method = "method".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.method]
+  inline def method: typings.rcFieldForm.rcFieldFormStrings.method = "method".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.method]
   
-  @scala.inline
-  def number: typings.rcFieldForm.rcFieldFormStrings.number = "number".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.number]
+  inline def number: typings.rcFieldForm.rcFieldFormStrings.number = "number".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.number]
   
-  @scala.inline
-  def `object`: typings.rcFieldForm.rcFieldFormStrings.`object` = "object".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.`object`]
+  inline def `object`: typings.rcFieldForm.rcFieldFormStrings.`object` = "object".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.`object`]
   
-  @scala.inline
-  def regexp: typings.rcFieldForm.rcFieldFormStrings.regexp = "regexp".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.regexp]
+  inline def regexp: typings.rcFieldForm.rcFieldFormStrings.regexp = "regexp".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.regexp]
   
-  @scala.inline
-  def string: typings.rcFieldForm.rcFieldFormStrings.string = "string".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.string]
+  inline def string: typings.rcFieldForm.rcFieldFormStrings.string = "string".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.string]
   
-  @scala.inline
-  def url: typings.rcFieldForm.rcFieldFormStrings.url = "url".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.url]
+  inline def url: typings.rcFieldForm.rcFieldFormStrings.url = "url".asInstanceOf[typings.rcFieldForm.rcFieldFormStrings.url]
 }

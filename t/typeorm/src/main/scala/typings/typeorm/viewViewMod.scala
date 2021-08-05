@@ -42,7 +42,6 @@ object viewViewMod {
     /**
       * Creates view from a given entity metadata.
       */
-    @scala.inline
-    def create(entityMetadata: EntityMetadata, driver: Driver): View = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def create(entityMetadata: EntityMetadata, driver: Driver): View = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[View]
   }
 }

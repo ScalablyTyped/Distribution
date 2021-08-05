@@ -22,20 +22,16 @@ object foodInStockMod extends Shortcut {
   }
   object FoodInStockProps {
     
-    @scala.inline
-    def apply(): FoodInStockProps = {
+    inline def apply(): FoodInStockProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FoodInStockProps]
     }
     
-    @scala.inline
-    implicit class FoodInStockPropsMutableBuilder[Self <: FoodInStockProps] (val x: Self) extends AnyVal {
+    extension [Self <: FoodInStockProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

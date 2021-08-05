@@ -13,19 +13,15 @@ trait AutomatedDiscoveryInformation extends StObject {
 }
 object AutomatedDiscoveryInformation {
   
-  @scala.inline
-  def apply(): AutomatedDiscoveryInformation = {
+  inline def apply(): AutomatedDiscoveryInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomatedDiscoveryInformation]
   }
   
-  @scala.inline
-  implicit class AutomatedDiscoveryInformationMutableBuilder[Self <: AutomatedDiscoveryInformation] (val x: Self) extends AnyVal {
+  extension [Self <: AutomatedDiscoveryInformation](x: Self) {
     
-    @scala.inline
-    def setLastRunTime(value: DateTime): Self = StObject.set(x, "LastRunTime", value.asInstanceOf[js.Any])
+    inline def setLastRunTime(value: DateTime): Self = StObject.set(x, "LastRunTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRunTimeUndefined: Self = StObject.set(x, "LastRunTime", js.undefined)
+    inline def setLastRunTimeUndefined: Self = StObject.set(x, "LastRunTime", js.undefined)
   }
 }

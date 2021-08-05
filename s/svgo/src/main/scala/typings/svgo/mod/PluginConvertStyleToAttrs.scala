@@ -12,16 +12,13 @@ trait PluginConvertStyleToAttrs
 }
 object PluginConvertStyleToAttrs {
   
-  @scala.inline
-  def apply(convertStyleToAttrs: Boolean | js.Object): PluginConvertStyleToAttrs = {
+  inline def apply(convertStyleToAttrs: Boolean | js.Object): PluginConvertStyleToAttrs = {
     val __obj = js.Dynamic.literal(convertStyleToAttrs = convertStyleToAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginConvertStyleToAttrs]
   }
   
-  @scala.inline
-  implicit class PluginConvertStyleToAttrsMutableBuilder[Self <: PluginConvertStyleToAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: PluginConvertStyleToAttrs](x: Self) {
     
-    @scala.inline
-    def setConvertStyleToAttrs(value: Boolean | js.Object): Self = StObject.set(x, "convertStyleToAttrs", value.asInstanceOf[js.Any])
+    inline def setConvertStyleToAttrs(value: Boolean | js.Object): Self = StObject.set(x, "convertStyleToAttrs", value.asInstanceOf[js.Any])
   }
 }

@@ -17,17 +17,14 @@ object iStatusBarMod {
   }
   object IStatusBar {
     
-    @scala.inline
-    def apply(getGui: () => HTMLElement, registerGridPanel: GridPanel => Unit): IStatusBar = {
+    inline def apply(getGui: () => HTMLElement, registerGridPanel: GridPanel => Unit): IStatusBar = {
       val __obj = js.Dynamic.literal(getGui = js.Any.fromFunction0(getGui), registerGridPanel = js.Any.fromFunction1(registerGridPanel))
       __obj.asInstanceOf[IStatusBar]
     }
     
-    @scala.inline
-    implicit class IStatusBarMutableBuilder[Self <: IStatusBar] (val x: Self) extends AnyVal {
+    extension [Self <: IStatusBar](x: Self) {
       
-      @scala.inline
-      def setRegisterGridPanel(value: GridPanel => Unit): Self = StObject.set(x, "registerGridPanel", js.Any.fromFunction1(value))
+      inline def setRegisterGridPanel(value: GridPanel => Unit): Self = StObject.set(x, "registerGridPanel", js.Any.fromFunction1(value))
     }
   }
 }

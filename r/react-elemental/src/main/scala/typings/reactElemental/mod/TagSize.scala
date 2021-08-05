@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagSize extends StObject
 object TagSize {
   
-  @scala.inline
-  def alpha: typings.reactElemental.reactElementalStrings.alpha = "alpha".asInstanceOf[typings.reactElemental.reactElementalStrings.alpha]
+  inline def alpha: typings.reactElemental.reactElementalStrings.alpha = "alpha".asInstanceOf[typings.reactElemental.reactElementalStrings.alpha]
   
-  @scala.inline
-  def beta: typings.reactElemental.reactElementalStrings.beta = "beta".asInstanceOf[typings.reactElemental.reactElementalStrings.beta]
+  inline def beta: typings.reactElemental.reactElementalStrings.beta = "beta".asInstanceOf[typings.reactElemental.reactElementalStrings.beta]
 }

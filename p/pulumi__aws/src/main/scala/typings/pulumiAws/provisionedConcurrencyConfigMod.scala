@@ -55,21 +55,16 @@ object provisionedConcurrencyConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState, opts: CustomResourceOptions): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
+    inline def get(name: String, id: Input[ID]): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
+    inline def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
+    inline def get(name: String, id: Input[ID], state: ProvisionedConcurrencyConfigState, opts: CustomResourceOptions): ProvisionedConcurrencyConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProvisionedConcurrencyConfig]
     
     /**
       * Returns true if the given object is an instance of ProvisionedConcurrencyConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/provisionedConcurrencyConfig.ProvisionedConcurrencyConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/provisionedConcurrencyConfig.ProvisionedConcurrencyConfig */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/provisionedConcurrencyConfig.ProvisionedConcurrencyConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/provisionedConcurrencyConfig.ProvisionedConcurrencyConfig */ Boolean]
   }
   
   trait ProvisionedConcurrencyConfigArgs extends StObject {
@@ -91,8 +86,7 @@ object provisionedConcurrencyConfigMod {
   }
   object ProvisionedConcurrencyConfigArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       functionName: Input[String],
       provisionedConcurrentExecutions: Input[Double],
       qualifier: Input[String]
@@ -101,17 +95,13 @@ object provisionedConcurrencyConfigMod {
       __obj.asInstanceOf[ProvisionedConcurrencyConfigArgs]
     }
     
-    @scala.inline
-    implicit class ProvisionedConcurrencyConfigArgsMutableBuilder[Self <: ProvisionedConcurrencyConfigArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedConcurrencyConfigArgs](x: Self) {
       
-      @scala.inline
-      def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "provisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setProvisionedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "provisionedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,32 +124,24 @@ object provisionedConcurrencyConfigMod {
   }
   object ProvisionedConcurrencyConfigState {
     
-    @scala.inline
-    def apply(): ProvisionedConcurrencyConfigState = {
+    inline def apply(): ProvisionedConcurrencyConfigState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProvisionedConcurrencyConfigState]
     }
     
-    @scala.inline
-    implicit class ProvisionedConcurrencyConfigStateMutableBuilder[Self <: ProvisionedConcurrencyConfigState] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedConcurrencyConfigState](x: Self) {
       
-      @scala.inline
-      def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      @scala.inline
-      def setProvisionedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "provisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setProvisionedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "provisionedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedConcurrentExecutionsUndefined: Self = StObject.set(x, "provisionedConcurrentExecutions", js.undefined)
+      inline def setProvisionedConcurrentExecutionsUndefined: Self = StObject.set(x, "provisionedConcurrentExecutions", js.undefined)
       
-      @scala.inline
-      def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
     }
   }
 }

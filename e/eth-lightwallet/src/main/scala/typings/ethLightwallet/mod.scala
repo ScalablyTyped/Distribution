@@ -35,19 +35,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createVault(options: js.Any): keystore = ^.asInstanceOf[js.Dynamic].applyDynamic("createVault")(options.asInstanceOf[js.Any]).asInstanceOf[keystore]
-    @scala.inline
-    def createVault(options: js.Any, callback: js.Function2[/* error */ Error, /* keystore */ this.type, Unit]): keystore = (^.asInstanceOf[js.Dynamic].applyDynamic("createVault")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[keystore]
+    inline def createVault(options: js.Any): keystore = ^.asInstanceOf[js.Dynamic].applyDynamic("createVault")(options.asInstanceOf[js.Any]).asInstanceOf[keystore]
+    inline def createVault(options: js.Any, callback: js.Function2[/* error */ Error, /* keystore */ this.type, Unit]): keystore = (^.asInstanceOf[js.Dynamic].applyDynamic("createVault")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[keystore]
     
-    @scala.inline
-    def deserialize(keystore: String): keystore = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(keystore.asInstanceOf[js.Any]).asInstanceOf[keystore]
+    inline def deserialize(keystore: String): keystore = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(keystore.asInstanceOf[js.Any]).asInstanceOf[keystore]
     
-    @scala.inline
-    def generateRandomSeed(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomSeed")().asInstanceOf[String]
+    inline def generateRandomSeed(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomSeed")().asInstanceOf[String]
     
-    @scala.inline
-    def isSeedValid(seed: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSeedValid")(seed.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSeedValid(seed: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSeedValid")(seed.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object signing {
@@ -56,17 +51,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def concatSig(signature: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("concatSig")(signature.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def concatSig(signature: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("concatSig")(signature.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def signMsg(keystore: keystore, pwDerivedKey: Uint8Array, rawMsg: String, signingAddress: String): ECSignatureBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("signMsg")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], rawMsg.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[ECSignatureBuffer]
+    inline def signMsg(keystore: keystore, pwDerivedKey: Uint8Array, rawMsg: String, signingAddress: String): ECSignatureBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("signMsg")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], rawMsg.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[ECSignatureBuffer]
     
-    @scala.inline
-    def signMsgHash(keystore: keystore, pwDerivedKey: Uint8Array, msgHash: String, signingAddress: String): ECSignatureBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("signMsgHash")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], msgHash.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[ECSignatureBuffer]
+    inline def signMsgHash(keystore: keystore, pwDerivedKey: Uint8Array, msgHash: String, signingAddress: String): ECSignatureBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("signMsgHash")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], msgHash.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[ECSignatureBuffer]
     
-    @scala.inline
-    def signTx(keystore: keystore, pwDerivedKey: Uint8Array, rawTx: String, signingAddress: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signTx")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], rawTx.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def signTx(keystore: keystore, pwDerivedKey: Uint8Array, rawTx: String, signingAddress: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signTx")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], rawTx.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   trait ECSignatureBuffer extends StObject {
@@ -79,23 +70,18 @@ object mod {
   }
   object ECSignatureBuffer {
     
-    @scala.inline
-    def apply(r: Buffer, s: Buffer, v: Double): ECSignatureBuffer = {
+    inline def apply(r: Buffer, s: Buffer, v: Double): ECSignatureBuffer = {
       val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[ECSignatureBuffer]
     }
     
-    @scala.inline
-    implicit class ECSignatureBufferMutableBuilder[Self <: ECSignatureBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: ECSignatureBuffer](x: Self) {
       
-      @scala.inline
-      def setR(value: Buffer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Buffer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Buffer): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Buffer): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,29 +97,22 @@ object mod {
   }
   object VaultOptions {
     
-    @scala.inline
-    def apply(hdPathString: String, password: String, seedPhrase: String): VaultOptions = {
+    inline def apply(hdPathString: String, password: String, seedPhrase: String): VaultOptions = {
       val __obj = js.Dynamic.literal(hdPathString = hdPathString.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], seedPhrase = seedPhrase.asInstanceOf[js.Any])
       __obj.asInstanceOf[VaultOptions]
     }
     
-    @scala.inline
-    implicit class VaultOptionsMutableBuilder[Self <: VaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VaultOptions](x: Self) {
       
-      @scala.inline
-      def setHdPathString(value: String): Self = StObject.set(x, "hdPathString", value.asInstanceOf[js.Any])
+      inline def setHdPathString(value: String): Self = StObject.set(x, "hdPathString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      @scala.inline
-      def setSeedPhrase(value: String): Self = StObject.set(x, "seedPhrase", value.asInstanceOf[js.Any])
+      inline def setSeedPhrase(value: String): Self = StObject.set(x, "seedPhrase", value.asInstanceOf[js.Any])
     }
   }
 }

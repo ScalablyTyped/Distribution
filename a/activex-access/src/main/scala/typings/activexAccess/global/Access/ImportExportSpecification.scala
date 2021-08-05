@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.ImportExportSpecification")
 @js.native
-class ImportExportSpecification protected ()
+/* private */ class ImportExportSpecification ()
   extends StObject
      with typings.activexAccess.Access.ImportExportSpecification

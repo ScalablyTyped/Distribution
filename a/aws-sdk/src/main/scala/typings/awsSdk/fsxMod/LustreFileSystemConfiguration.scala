@@ -44,67 +44,47 @@ trait LustreFileSystemConfiguration extends StObject {
 }
 object LustreFileSystemConfiguration {
   
-  @scala.inline
-  def apply(): LustreFileSystemConfiguration = {
+  inline def apply(): LustreFileSystemConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LustreFileSystemConfiguration]
   }
   
-  @scala.inline
-  implicit class LustreFileSystemConfigurationMutableBuilder[Self <: LustreFileSystemConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LustreFileSystemConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
+    inline def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "AutomaticBackupRetentionDays", js.undefined)
+    inline def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "AutomaticBackupRetentionDays", js.undefined)
     
-    @scala.inline
-    def setCopyTagsToBackups(value: Flag): Self = StObject.set(x, "CopyTagsToBackups", value.asInstanceOf[js.Any])
+    inline def setCopyTagsToBackups(value: Flag): Self = StObject.set(x, "CopyTagsToBackups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "CopyTagsToBackups", js.undefined)
+    inline def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "CopyTagsToBackups", js.undefined)
     
-    @scala.inline
-    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = StObject.set(x, "DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+    inline def setDailyAutomaticBackupStartTime(value: DailyTime): Self = StObject.set(x, "DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "DailyAutomaticBackupStartTime", js.undefined)
+    inline def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "DailyAutomaticBackupStartTime", js.undefined)
     
-    @scala.inline
-    def setDataRepositoryConfiguration(value: DataRepositoryConfiguration): Self = StObject.set(x, "DataRepositoryConfiguration", value.asInstanceOf[js.Any])
+    inline def setDataRepositoryConfiguration(value: DataRepositoryConfiguration): Self = StObject.set(x, "DataRepositoryConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRepositoryConfigurationUndefined: Self = StObject.set(x, "DataRepositoryConfiguration", js.undefined)
+    inline def setDataRepositoryConfigurationUndefined: Self = StObject.set(x, "DataRepositoryConfiguration", js.undefined)
     
-    @scala.inline
-    def setDeploymentType(value: LustreDeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
+    inline def setDeploymentType(value: LustreDeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
+    inline def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
     
-    @scala.inline
-    def setDriveCacheType(value: DriveCacheType): Self = StObject.set(x, "DriveCacheType", value.asInstanceOf[js.Any])
+    inline def setDriveCacheType(value: DriveCacheType): Self = StObject.set(x, "DriveCacheType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveCacheTypeUndefined: Self = StObject.set(x, "DriveCacheType", js.undefined)
+    inline def setDriveCacheTypeUndefined: Self = StObject.set(x, "DriveCacheType", js.undefined)
     
-    @scala.inline
-    def setMountName(value: LustreFileSystemMountName): Self = StObject.set(x, "MountName", value.asInstanceOf[js.Any])
+    inline def setMountName(value: LustreFileSystemMountName): Self = StObject.set(x, "MountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountNameUndefined: Self = StObject.set(x, "MountName", js.undefined)
+    inline def setMountNameUndefined: Self = StObject.set(x, "MountName", js.undefined)
     
-    @scala.inline
-    def setPerUnitStorageThroughput(value: PerUnitStorageThroughput): Self = StObject.set(x, "PerUnitStorageThroughput", value.asInstanceOf[js.Any])
+    inline def setPerUnitStorageThroughput(value: PerUnitStorageThroughput): Self = StObject.set(x, "PerUnitStorageThroughput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "PerUnitStorageThroughput", js.undefined)
+    inline def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "PerUnitStorageThroughput", js.undefined)
     
-    @scala.inline
-    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = StObject.set(x, "WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
+    inline def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = StObject.set(x, "WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "WeeklyMaintenanceStartTime", js.undefined)
+    inline def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "WeeklyMaintenanceStartTime", js.undefined)
   }
 }

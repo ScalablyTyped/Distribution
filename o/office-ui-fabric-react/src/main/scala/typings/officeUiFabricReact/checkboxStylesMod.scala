@@ -12,6 +12,5 @@ object checkboxStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ICheckboxStyleProps): ICheckboxStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICheckboxStyles]
+  inline def getStyles(props: ICheckboxStyleProps): ICheckboxStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICheckboxStyles]
 }

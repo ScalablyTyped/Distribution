@@ -28,40 +28,29 @@ trait FunctionConfigurationEnvironment extends StObject {
 }
 object FunctionConfigurationEnvironment {
   
-  @scala.inline
-  def apply(): FunctionConfigurationEnvironment = {
+  inline def apply(): FunctionConfigurationEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionConfigurationEnvironment]
   }
   
-  @scala.inline
-  implicit class FunctionConfigurationEnvironmentMutableBuilder[Self <: FunctionConfigurationEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionConfigurationEnvironment](x: Self) {
     
-    @scala.inline
-    def setAccessSysfs(value: boolean): Self = StObject.set(x, "AccessSysfs", value.asInstanceOf[js.Any])
+    inline def setAccessSysfs(value: boolean): Self = StObject.set(x, "AccessSysfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessSysfsUndefined: Self = StObject.set(x, "AccessSysfs", js.undefined)
+    inline def setAccessSysfsUndefined: Self = StObject.set(x, "AccessSysfs", js.undefined)
     
-    @scala.inline
-    def setExecution(value: FunctionExecutionConfig): Self = StObject.set(x, "Execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: FunctionExecutionConfig): Self = StObject.set(x, "Execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionUndefined: Self = StObject.set(x, "Execution", js.undefined)
+    inline def setExecutionUndefined: Self = StObject.set(x, "Execution", js.undefined)
     
-    @scala.inline
-    def setResourceAccessPolicies(value: listOfResourceAccessPolicy): Self = StObject.set(x, "ResourceAccessPolicies", value.asInstanceOf[js.Any])
+    inline def setResourceAccessPolicies(value: listOfResourceAccessPolicy): Self = StObject.set(x, "ResourceAccessPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAccessPoliciesUndefined: Self = StObject.set(x, "ResourceAccessPolicies", js.undefined)
+    inline def setResourceAccessPoliciesUndefined: Self = StObject.set(x, "ResourceAccessPolicies", js.undefined)
     
-    @scala.inline
-    def setResourceAccessPoliciesVarargs(value: ResourceAccessPolicy*): Self = StObject.set(x, "ResourceAccessPolicies", js.Array(value :_*))
+    inline def setResourceAccessPoliciesVarargs(value: ResourceAccessPolicy*): Self = StObject.set(x, "ResourceAccessPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: mapOfString): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: mapOfString): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
   }
 }

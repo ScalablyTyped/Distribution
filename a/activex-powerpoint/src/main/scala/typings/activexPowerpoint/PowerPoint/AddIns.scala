@@ -16,15 +16,14 @@ trait AddIns extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.AddIns_typekey")
+  /* private */ @JSName("PowerPoint.AddIns_typekey")
   var PowerPointDotAddIns_typekey: AddIns
   
   def Remove(Index: js.Any): Unit
 }
 object AddIns {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: String => AddIn,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object AddIns {
     __obj.asInstanceOf[AddIns]
   }
   
-  @scala.inline
-  implicit class AddInsMutableBuilder[Self <: AddIns] (val x: Self) extends AnyVal {
+  extension [Self <: AddIns](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => AddIn): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => AddIn): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => AddIn): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => AddIn): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotAddIns_typekey(value: AddIns): Self = StObject.set(x, "PowerPoint.AddIns_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotAddIns_typekey(value: AddIns): Self = StObject.set(x, "PowerPoint.AddIns_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

@@ -15,22 +15,17 @@ trait Origin extends StObject {
 }
 object Origin {
   
-  @scala.inline
-  def apply(CustomOriginConfig: OriginProtocolPolicy, DomainName: String, OriginPath: String): Origin = {
+  inline def apply(CustomOriginConfig: OriginProtocolPolicy, DomainName: String, OriginPath: String): Origin = {
     val __obj = js.Dynamic.literal(CustomOriginConfig = CustomOriginConfig.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], OriginPath = OriginPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Origin]
   }
   
-  @scala.inline
-  implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+  extension [Self <: Origin](x: Self) {
     
-    @scala.inline
-    def setCustomOriginConfig(value: OriginProtocolPolicy): Self = StObject.set(x, "CustomOriginConfig", value.asInstanceOf[js.Any])
+    inline def setCustomOriginConfig(value: OriginProtocolPolicy): Self = StObject.set(x, "CustomOriginConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginPath(value: String): Self = StObject.set(x, "OriginPath", value.asInstanceOf[js.Any])
+    inline def setOriginPath(value: String): Self = StObject.set(x, "OriginPath", value.asInstanceOf[js.Any])
   }
 }

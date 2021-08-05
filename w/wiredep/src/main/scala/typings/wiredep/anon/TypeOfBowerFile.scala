@@ -14,16 +14,13 @@ trait TypeOfBowerFile extends StObject {
 }
 object TypeOfBowerFile {
   
-  @scala.inline
-  def apply(typeOfBowerFile: RegExp): TypeOfBowerFile = {
+  inline def apply(typeOfBowerFile: RegExp): TypeOfBowerFile = {
     val __obj = js.Dynamic.literal(typeOfBowerFile = typeOfBowerFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeOfBowerFile]
   }
   
-  @scala.inline
-  implicit class TypeOfBowerFileMutableBuilder[Self <: TypeOfBowerFile] (val x: Self) extends AnyVal {
+  extension [Self <: TypeOfBowerFile](x: Self) {
     
-    @scala.inline
-    def setTypeOfBowerFile(value: RegExp): Self = StObject.set(x, "typeOfBowerFile", value.asInstanceOf[js.Any])
+    inline def setTypeOfBowerFile(value: RegExp): Self = StObject.set(x, "typeOfBowerFile", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ListIdentitiesRequest extends StObject {
 }
 object ListIdentitiesRequest {
   
-  @scala.inline
-  def apply(): ListIdentitiesRequest = {
+  inline def apply(): ListIdentitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListIdentitiesRequest]
   }
   
-  @scala.inline
-  implicit class ListIdentitiesRequestMutableBuilder[Self <: ListIdentitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentitiesRequest](x: Self) {
     
-    @scala.inline
-    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
+    inline def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: MaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

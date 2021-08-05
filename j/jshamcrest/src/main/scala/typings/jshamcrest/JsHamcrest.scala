@@ -12,17 +12,14 @@ object JsHamcrest {
   }
   object BetweenBuilder {
     
-    @scala.inline
-    def apply(and: js.Any => SimpleMatcher): BetweenBuilder = {
+    inline def apply(and: js.Any => SimpleMatcher): BetweenBuilder = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and))
       __obj.asInstanceOf[BetweenBuilder]
     }
     
-    @scala.inline
-    implicit class BetweenBuilderMutableBuilder[Self <: BetweenBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: BetweenBuilder](x: Self) {
       
-      @scala.inline
-      def setAnd(value: js.Any => SimpleMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: js.Any => SimpleMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     }
   }
   
@@ -48,8 +45,7 @@ object JsHamcrest {
   }
   object CombinableMatcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       and: js.Any => CombinableMatcher,
       describeTo: /* description */ Description => Unit,
       describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
@@ -60,14 +56,11 @@ object JsHamcrest {
       __obj.asInstanceOf[CombinableMatcher]
     }
     
-    @scala.inline
-    implicit class CombinableMatcherMutableBuilder[Self <: CombinableMatcher] (val x: Self) extends AnyVal {
+    extension [Self <: CombinableMatcher](x: Self) {
       
-      @scala.inline
-      def setAnd(value: js.Any => CombinableMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: js.Any => CombinableMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOr(value: js.Any => CombinableMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+      inline def setOr(value: js.Any => CombinableMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     }
   }
   
@@ -141,8 +134,7 @@ object JsHamcrest {
   }
   object Description {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: js.Any => Description,
       appendDescriptionOf: SelfDescribing => Description,
       appendList: (String, String, String, js.Array[js.Any]) => Description,
@@ -154,26 +146,19 @@ object JsHamcrest {
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setAppend(value: js.Any => Description): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+      inline def setAppend(value: js.Any => Description): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendDescriptionOf(value: SelfDescribing => Description): Self = StObject.set(x, "appendDescriptionOf", js.Any.fromFunction1(value))
+      inline def setAppendDescriptionOf(value: SelfDescribing => Description): Self = StObject.set(x, "appendDescriptionOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendList(value: (String, String, String, js.Array[js.Any]) => Description): Self = StObject.set(x, "appendList", js.Any.fromFunction4(value))
+      inline def setAppendList(value: (String, String, String, js.Array[js.Any]) => Description): Self = StObject.set(x, "appendList", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setAppendLiteral(value: js.Any => Description): Self = StObject.set(x, "appendLiteral", js.Any.fromFunction1(value))
+      inline def setAppendLiteral(value: js.Any => Description): Self = StObject.set(x, "appendLiteral", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendValueList(value: (String, String, String, js.Array[SelfDescribing]) => Description): Self = StObject.set(x, "appendValueList", js.Any.fromFunction4(value))
+      inline def setAppendValueList(value: (String, String, String, js.Array[SelfDescribing]) => Description): Self = StObject.set(x, "appendValueList", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -196,8 +181,7 @@ object JsHamcrest {
   }
   object Matcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       describeTo: /* description */ Description => Unit,
       describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
       matches: /* value */ js.Any => Boolean
@@ -206,14 +190,11 @@ object JsHamcrest {
       __obj.asInstanceOf[Matcher]
     }
     
-    @scala.inline
-    implicit class MatcherMutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
+    extension [Self <: Matcher](x: Self) {
       
-      @scala.inline
-      def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
+      inline def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+      inline def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     }
   }
   
@@ -234,26 +215,20 @@ object JsHamcrest {
   }
   object MatcherConfig {
     
-    @scala.inline
-    def apply(describeTo: /* description */ Description => Unit, matches: /* value */ js.Any => Boolean): MatcherConfig = {
+    inline def apply(describeTo: /* description */ Description => Unit, matches: /* value */ js.Any => Boolean): MatcherConfig = {
       val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo), matches = js.Any.fromFunction1(matches))
       __obj.asInstanceOf[MatcherConfig]
     }
     
-    @scala.inline
-    implicit class MatcherConfigMutableBuilder[Self <: MatcherConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MatcherConfig](x: Self) {
       
-      @scala.inline
-      def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
+      inline def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
+      inline def setDescribeValueTo(value: (/* value */ js.Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDescribeValueToUndefined: Self = StObject.set(x, "describeValueTo", js.undefined)
+      inline def setDescribeValueToUndefined: Self = StObject.set(x, "describeValueTo", js.undefined)
       
-      @scala.inline
-      def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+      inline def setMatches(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     }
   }
   
@@ -288,32 +263,24 @@ object JsHamcrest {
     }
     object AssertOptions {
       
-      @scala.inline
-      def apply(): AssertOptions = {
+      inline def apply(): AssertOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AssertOptions]
       }
       
-      @scala.inline
-      implicit class AssertOptionsMutableBuilder[Self <: AssertOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AssertOptions](x: Self) {
         
-        @scala.inline
-        def setFail(value: /* description */ String => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+        inline def setFail(value: /* description */ String => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+        inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
         
-        @scala.inline
-        def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setPass(value: /* description */ String => Unit): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
+        inline def setPass(value: /* description */ String => Unit): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+        inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       }
     }
   }
@@ -326,17 +293,14 @@ object JsHamcrest {
   }
   object SelfDescribing {
     
-    @scala.inline
-    def apply(describeTo: /* description */ Description => Unit): SelfDescribing = {
+    inline def apply(describeTo: /* description */ Description => Unit): SelfDescribing = {
       val __obj = js.Dynamic.literal(describeTo = js.Any.fromFunction1(describeTo))
       __obj.asInstanceOf[SelfDescribing]
     }
     
-    @scala.inline
-    implicit class SelfDescribingMutableBuilder[Self <: SelfDescribing] (val x: Self) extends AnyVal {
+    extension [Self <: SelfDescribing](x: Self) {
       
-      @scala.inline
-      def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
+      inline def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
     }
   }
   
@@ -345,8 +309,7 @@ object JsHamcrest {
        with Matcher
   object SimpleMatcher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       describeTo: /* description */ Description => Unit,
       describeValueTo: (/* value */ js.Any, /* description */ Description) => Unit,
       matches: /* value */ js.Any => Boolean

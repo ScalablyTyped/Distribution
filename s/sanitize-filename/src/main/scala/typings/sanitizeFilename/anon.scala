@@ -12,23 +12,18 @@ object anon {
   }
   object Replacement {
     
-    @scala.inline
-    def apply(): Replacement = {
+    inline def apply(): Replacement = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Replacement]
     }
     
-    @scala.inline
-    implicit class ReplacementMutableBuilder[Self <: Replacement] (val x: Self) extends AnyVal {
+    extension [Self <: Replacement](x: Self) {
       
-      @scala.inline
-      def setReplacement(value: String | (js.Function1[/* substring */ String, String])): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+      inline def setReplacement(value: String | (js.Function1[/* substring */ String, String])): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacementFunction1(value: /* substring */ String => String): Self = StObject.set(x, "replacement", js.Any.fromFunction1(value))
+      inline def setReplacementFunction1(value: /* substring */ String => String): Self = StObject.set(x, "replacement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
+      inline def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
     }
   }
 }

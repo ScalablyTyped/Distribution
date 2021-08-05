@@ -17,18 +17,15 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(_empty: TanninDomainMetadata | (js.Tuple2[String, String])): Dictkey = {
+    inline def apply(_empty: TanninDomainMetadata | (js.Tuple2[String, String])): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("")(_empty.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def set_empty(value: TanninDomainMetadata | (js.Tuple2[String, String])): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
+      inline def set_empty(value: TanninDomainMetadata | (js.Tuple2[String, String])): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
     }
   }
 }

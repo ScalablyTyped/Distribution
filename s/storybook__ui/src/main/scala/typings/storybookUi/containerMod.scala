@@ -76,32 +76,24 @@ object containerMod {
   }
   object BasePanelRenderProps {
     
-    @scala.inline
-    def apply(animate: Boolean, position: Bounds): BasePanelRenderProps = {
+    inline def apply(animate: Boolean, position: Bounds): BasePanelRenderProps = {
       val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasePanelRenderProps]
     }
     
-    @scala.inline
-    implicit class BasePanelRenderPropsMutableBuilder[Self <: BasePanelRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: BasePanelRenderProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+      inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
+      inline def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Bounds): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Bounds): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
   
@@ -117,26 +109,20 @@ object containerMod {
   }
   object Bounds {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double, width: Double): Bounds = {
+    inline def apply(height: Double, left: Double, top: Double, width: Double): Bounds = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bounds]
     }
     
-    @scala.inline
-    implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+    extension [Self <: Bounds](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,20 +134,16 @@ object containerMod {
   }
   object Coordinates {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Coordinates = {
+    inline def apply(x: Double, y: Double): Coordinates = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coordinates]
     }
     
-    @scala.inline
-    implicit class CoordinatesMutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
+    extension [Self <: Coordinates](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,8 +165,7 @@ object containerMod {
   }
   object LayoutProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bounds: Left,
       children: LayoutRenderProps => ReactNode,
       docsOnly: Boolean,
@@ -197,29 +178,21 @@ object containerMod {
       __obj.asInstanceOf[LayoutProps]
     }
     
-    @scala.inline
-    implicit class LayoutPropsMutableBuilder[Self <: LayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutProps](x: Self) {
       
-      @scala.inline
-      def setBounds(value: Left): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Left): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: LayoutRenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: LayoutRenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+      inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: IsToolshown): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: IsToolshown): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
+      inline def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,8 +208,7 @@ object containerMod {
   }
   object LayoutRenderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mainProps: BasePanelRenderProps,
       navProps: BasePanelRenderPropshidde,
       panelProps: BasePanelRenderPropsalign,
@@ -246,20 +218,15 @@ object containerMod {
       __obj.asInstanceOf[LayoutRenderProps]
     }
     
-    @scala.inline
-    implicit class LayoutRenderPropsMutableBuilder[Self <: LayoutRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutRenderProps](x: Self) {
       
-      @scala.inline
-      def setMainProps(value: BasePanelRenderProps): Self = StObject.set(x, "mainProps", value.asInstanceOf[js.Any])
+      inline def setMainProps(value: BasePanelRenderProps): Self = StObject.set(x, "mainProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavProps(value: BasePanelRenderPropshidde): Self = StObject.set(x, "navProps", value.asInstanceOf[js.Any])
+      inline def setNavProps(value: BasePanelRenderPropshidde): Self = StObject.set(x, "navProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelProps(value: BasePanelRenderPropsalign): Self = StObject.set(x, "panelProps", value.asInstanceOf[js.Any])
+      inline def setPanelProps(value: BasePanelRenderPropsalign): Self = StObject.set(x, "panelProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewProps(value: BasePanelRenderPropsdocsO): Self = StObject.set(x, "previewProps", value.asInstanceOf[js.Any])
+      inline def setPreviewProps(value: BasePanelRenderPropsdocsO): Self = StObject.set(x, "previewProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,23 +240,18 @@ object containerMod {
   }
   object LayoutState {
     
-    @scala.inline
-    def apply(isDragging: nav | panel | `false`, resizerNav: Coordinates, resizerPanel: Coordinates): LayoutState = {
+    inline def apply(isDragging: nav | panel | `false`, resizerNav: Coordinates, resizerPanel: Coordinates): LayoutState = {
       val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any], resizerNav = resizerNav.asInstanceOf[js.Any], resizerPanel = resizerPanel.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutState]
     }
     
-    @scala.inline
-    implicit class LayoutStateMutableBuilder[Self <: LayoutState] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutState](x: Self) {
       
-      @scala.inline
-      def setIsDragging(value: nav | panel | `false`): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+      inline def setIsDragging(value: nav | panel | `false`): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizerNav(value: Coordinates): Self = StObject.set(x, "resizerNav", value.asInstanceOf[js.Any])
+      inline def setResizerNav(value: Coordinates): Self = StObject.set(x, "resizerNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizerPanel(value: Coordinates): Self = StObject.set(x, "resizerPanel", value.asInstanceOf[js.Any])
+      inline def setResizerPanel(value: Coordinates): Self = StObject.set(x, "resizerPanel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,10 +262,8 @@ object containerMod {
   trait PanelPosition extends StObject
   object PanelPosition {
     
-    @scala.inline
-    def bottom: typings.storybookUi.storybookUiStrings.bottom = "bottom".asInstanceOf[typings.storybookUi.storybookUiStrings.bottom]
+    inline def bottom: typings.storybookUi.storybookUiStrings.bottom = "bottom".asInstanceOf[typings.storybookUi.storybookUiStrings.bottom]
     
-    @scala.inline
-    def right: typings.storybookUi.storybookUiStrings.right = "right".asInstanceOf[typings.storybookUi.storybookUiStrings.right]
+    inline def right: typings.storybookUi.storybookUiStrings.right = "right".asInstanceOf[typings.storybookUi.storybookUiStrings.right]
   }
 }

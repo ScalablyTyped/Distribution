@@ -25,8 +25,7 @@ trait SketchMSStyleShadow extends StObject {
 }
 object SketchMSStyleShadow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blurRadius: Double,
     color: SketchMSColor,
     contextSettings: SketchMSGraphicsContextSettings,
@@ -39,31 +38,22 @@ object SketchMSStyleShadow {
     __obj.asInstanceOf[SketchMSStyleShadow]
   }
   
-  @scala.inline
-  implicit class SketchMSStyleShadowMutableBuilder[Self <: SketchMSStyleShadow] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSStyleShadow](x: Self) {
     
-    @scala.inline
-    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
+    inline def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpread(value: Double): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+    inline def setSpread(value: Double): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: styleShadow): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: styleShadow): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

@@ -43,55 +43,39 @@ trait HlsEncryptionSettings extends StObject {
 }
 object HlsEncryptionSettings {
   
-  @scala.inline
-  def apply(): HlsEncryptionSettings = {
+  inline def apply(): HlsEncryptionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsEncryptionSettings]
   }
   
-  @scala.inline
-  implicit class HlsEncryptionSettingsMutableBuilder[Self <: HlsEncryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsEncryptionSettings](x: Self) {
     
-    @scala.inline
-    def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
+    inline def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantInitializationVectorUndefined: Self = StObject.set(x, "ConstantInitializationVector", js.undefined)
+    inline def setConstantInitializationVectorUndefined: Self = StObject.set(x, "ConstantInitializationVector", js.undefined)
     
-    @scala.inline
-    def setEncryptionMethod(value: HlsEncryptionType): Self = StObject.set(x, "EncryptionMethod", value.asInstanceOf[js.Any])
+    inline def setEncryptionMethod(value: HlsEncryptionType): Self = StObject.set(x, "EncryptionMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionMethodUndefined: Self = StObject.set(x, "EncryptionMethod", js.undefined)
+    inline def setEncryptionMethodUndefined: Self = StObject.set(x, "EncryptionMethod", js.undefined)
     
-    @scala.inline
-    def setInitializationVectorInManifest(value: HlsInitializationVectorInManifest): Self = StObject.set(x, "InitializationVectorInManifest", value.asInstanceOf[js.Any])
+    inline def setInitializationVectorInManifest(value: HlsInitializationVectorInManifest): Self = StObject.set(x, "InitializationVectorInManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationVectorInManifestUndefined: Self = StObject.set(x, "InitializationVectorInManifest", js.undefined)
+    inline def setInitializationVectorInManifestUndefined: Self = StObject.set(x, "InitializationVectorInManifest", js.undefined)
     
-    @scala.inline
-    def setOfflineEncrypted(value: HlsOfflineEncrypted): Self = StObject.set(x, "OfflineEncrypted", value.asInstanceOf[js.Any])
+    inline def setOfflineEncrypted(value: HlsOfflineEncrypted): Self = StObject.set(x, "OfflineEncrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfflineEncryptedUndefined: Self = StObject.set(x, "OfflineEncrypted", js.undefined)
+    inline def setOfflineEncryptedUndefined: Self = StObject.set(x, "OfflineEncrypted", js.undefined)
     
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
+    inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
+    inline def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
     
-    @scala.inline
-    def setStaticKeyProvider(value: StaticKeyProvider): Self = StObject.set(x, "StaticKeyProvider", value.asInstanceOf[js.Any])
+    inline def setStaticKeyProvider(value: StaticKeyProvider): Self = StObject.set(x, "StaticKeyProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticKeyProviderUndefined: Self = StObject.set(x, "StaticKeyProvider", js.undefined)
+    inline def setStaticKeyProviderUndefined: Self = StObject.set(x, "StaticKeyProvider", js.undefined)
     
-    @scala.inline
-    def setType(value: HlsKeyProviderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: HlsKeyProviderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

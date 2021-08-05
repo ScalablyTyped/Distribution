@@ -26,9 +26,9 @@ object virtualTimeSchedulerMod {
       index: Double
     ) = this()
     
-    var active: Boolean = js.native
+    /* protected */ var active: Boolean = js.native
     
-    var index: Double = js.native
+    /* protected */ var index: Double = js.native
     
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: js.Any): js.Any = js.native
@@ -40,7 +40,7 @@ object virtualTimeSchedulerMod {
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Unit, delay: Double): js.Any = js.native
     
-    @JSName("scheduler")
+    /* protected */ @JSName("scheduler")
     var scheduler_VirtualAction: VirtualTimeScheduler = js.native
   }
   /* static members */
@@ -50,8 +50,7 @@ object virtualTimeSchedulerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def sortActions[T](a: VirtualAction[T], b: VirtualAction[T]): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("sortActions")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+    inline def sortActions[T](a: VirtualAction[T], b: VirtualAction[T]): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("sortActions")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   }
   
   @JSImport("rxjs/internal/scheduler/VirtualTimeScheduler", "VirtualTimeScheduler")
@@ -103,7 +102,6 @@ object virtualTimeSchedulerMod {
     @JSImport("rxjs/internal/scheduler/VirtualTimeScheduler", "VirtualTimeScheduler.frameTimeFactor")
     @js.native
     def frameTimeFactor: Double = js.native
-    @scala.inline
-    def frameTimeFactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameTimeFactor")(x.asInstanceOf[js.Any])
+    inline def frameTimeFactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameTimeFactor")(x.asInstanceOf[js.Any])
   }
 }

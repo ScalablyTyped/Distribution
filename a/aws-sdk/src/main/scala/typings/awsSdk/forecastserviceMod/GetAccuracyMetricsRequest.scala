@@ -13,16 +13,13 @@ trait GetAccuracyMetricsRequest extends StObject {
 }
 object GetAccuracyMetricsRequest {
   
-  @scala.inline
-  def apply(PredictorArn: Arn): GetAccuracyMetricsRequest = {
+  inline def apply(PredictorArn: Arn): GetAccuracyMetricsRequest = {
     val __obj = js.Dynamic.literal(PredictorArn = PredictorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccuracyMetricsRequest]
   }
   
-  @scala.inline
-  implicit class GetAccuracyMetricsRequestMutableBuilder[Self <: GetAccuracyMetricsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccuracyMetricsRequest](x: Self) {
     
-    @scala.inline
-    def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
+    inline def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
   }
 }

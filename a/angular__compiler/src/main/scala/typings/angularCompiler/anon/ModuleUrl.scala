@@ -14,37 +14,27 @@ trait ModuleUrl extends StObject {
 }
 object ModuleUrl {
   
-  @scala.inline
-  def apply(): ModuleUrl = {
+  inline def apply(): ModuleUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModuleUrl]
   }
   
-  @scala.inline
-  implicit class ModuleUrlMutableBuilder[Self <: ModuleUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleUrl](x: Self) {
     
-    @scala.inline
-    def setModuleUrl(value: String): Self = StObject.set(x, "moduleUrl", value.asInstanceOf[js.Any])
+    inline def setModuleUrl(value: String): Self = StObject.set(x, "moduleUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleUrlUndefined: Self = StObject.set(x, "moduleUrl", js.undefined)
+    inline def setModuleUrlUndefined: Self = StObject.set(x, "moduleUrl", js.undefined)
     
-    @scala.inline
-    def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
+    inline def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
+    inline def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
     
-    @scala.inline
-    def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
+    inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

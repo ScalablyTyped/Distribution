@@ -33,8 +33,7 @@ trait TrafficPolicySummary extends StObject {
 }
 object TrafficPolicySummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Id: TrafficPolicyId,
     LatestVersion: TrafficPolicyVersion,
     Name: TrafficPolicyName,
@@ -45,22 +44,16 @@ object TrafficPolicySummary {
     __obj.asInstanceOf[TrafficPolicySummary]
   }
   
-  @scala.inline
-  implicit class TrafficPolicySummaryMutableBuilder[Self <: TrafficPolicySummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficPolicySummary](x: Self) {
     
-    @scala.inline
-    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
+    inline def setLatestVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: TrafficPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TrafficPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyCount(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyCount", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyCount(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

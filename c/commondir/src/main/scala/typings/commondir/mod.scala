@@ -12,15 +12,13 @@ object mod {
     *
     * @see \`{@link https://github.com/substack/node-commondir#commondirbasedir-relativepaths }\`
     */
-  @scala.inline
-  def apply(absolutePaths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].apply(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(absolutePaths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].apply(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Compute the closest common parent directory for an array absolutePaths.
     *
     * @see \`{@link https://github.com/substack/node-commondir#commondirabsolutepaths }\`
     */
-  @scala.inline
-  def apply(basedir: String, relativePaths: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].apply(basedir.asInstanceOf[js.Any], relativePaths.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(basedir: String, relativePaths: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].apply(basedir.asInstanceOf[js.Any], relativePaths.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("commondir", JSImport.Namespace)
   @js.native

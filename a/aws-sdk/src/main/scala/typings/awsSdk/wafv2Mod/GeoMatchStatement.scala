@@ -18,28 +18,21 @@ trait GeoMatchStatement extends StObject {
 }
 object GeoMatchStatement {
   
-  @scala.inline
-  def apply(): GeoMatchStatement = {
+  inline def apply(): GeoMatchStatement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoMatchStatement]
   }
   
-  @scala.inline
-  implicit class GeoMatchStatementMutableBuilder[Self <: GeoMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: GeoMatchStatement](x: Self) {
     
-    @scala.inline
-    def setCountryCodes(value: CountryCodes): Self = StObject.set(x, "CountryCodes", value.asInstanceOf[js.Any])
+    inline def setCountryCodes(value: CountryCodes): Self = StObject.set(x, "CountryCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodesUndefined: Self = StObject.set(x, "CountryCodes", js.undefined)
+    inline def setCountryCodesUndefined: Self = StObject.set(x, "CountryCodes", js.undefined)
     
-    @scala.inline
-    def setCountryCodesVarargs(value: CountryCode*): Self = StObject.set(x, "CountryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: CountryCode*): Self = StObject.set(x, "CountryCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardedIPConfig(value: ForwardedIPConfig): Self = StObject.set(x, "ForwardedIPConfig", value.asInstanceOf[js.Any])
+    inline def setForwardedIPConfig(value: ForwardedIPConfig): Self = StObject.set(x, "ForwardedIPConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIPConfigUndefined: Self = StObject.set(x, "ForwardedIPConfig", js.undefined)
+    inline def setForwardedIPConfigUndefined: Self = StObject.set(x, "ForwardedIPConfig", js.undefined)
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGSwitchElement")
 @js.native
-class SVGSwitchElement protected ()
+/* private */ class SVGSwitchElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGSwitchElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGSwitchElement_typekey")
   var MSHTMLDotSVGSwitchElement_typekey: typings.activexMshtml.MSHTML.SVGSwitchElement = js.native
   

@@ -104,24 +104,21 @@ object Font {
     * and `'initial'` the method throws.
     * @param fontValue The value to create a Font instance from
     */
-  @scala.inline
-  def from(fontValue: FontValue): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(fontValue.asInstanceOf[js.Any]).asInstanceOf[Font]
+  inline def from(fontValue: FontValue): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(fontValue.asInstanceOf[js.Any]).asInstanceOf[Font]
   
   /**
     * Returns true if value is a FontValue. This includes `null` and `'initial'`. Use this to check if a
     * value will be accepted by a font property. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isFontValue(value: js.Any): /* is tabris.tabris.FontValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFontValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.FontValue */ Boolean]
+  inline def isFontValue(value: js.Any): /* is tabris.tabris.FontValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFontValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.FontValue */ Boolean]
   
   /**
     * Returns true if value is a valid FontValue. This excludes `null` and `'initial'`. Use this to check
     * if a value will be accepted by Font.from. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  @scala.inline
-  def isValidFontValue(value: js.Any): /* is tabris.tabris.FontValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFontValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.FontValue */ Boolean]
+  inline def isValidFontValue(value: js.Any): /* is tabris.tabris.FontValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFontValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.FontValue */ Boolean]
   
   @JSImport("tabris", "Font.monospace")
   @js.native

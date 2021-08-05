@@ -31,30 +31,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Scope extends StObject
 object Scope {
   
-  @scala.inline
-  def address: typings.weappApi.weappApiStrings.address = "address".asInstanceOf[typings.weappApi.weappApiStrings.address]
+  inline def address: typings.weappApi.weappApiStrings.address = "address".asInstanceOf[typings.weappApi.weappApiStrings.address]
   
-  @scala.inline
-  def camera: typings.weappApi.weappApiStrings.camera = "camera".asInstanceOf[typings.weappApi.weappApiStrings.camera]
+  inline def camera: typings.weappApi.weappApiStrings.camera = "camera".asInstanceOf[typings.weappApi.weappApiStrings.camera]
   
-  @scala.inline
-  def invoice: typings.weappApi.weappApiStrings.invoice = "invoice".asInstanceOf[typings.weappApi.weappApiStrings.invoice]
+  inline def invoice: typings.weappApi.weappApiStrings.invoice = "invoice".asInstanceOf[typings.weappApi.weappApiStrings.invoice]
   
-  @scala.inline
-  def invoiceTitle: typings.weappApi.weappApiStrings.invoiceTitle = "invoiceTitle".asInstanceOf[typings.weappApi.weappApiStrings.invoiceTitle]
+  inline def invoiceTitle: typings.weappApi.weappApiStrings.invoiceTitle = "invoiceTitle".asInstanceOf[typings.weappApi.weappApiStrings.invoiceTitle]
   
-  @scala.inline
-  def record: typings.weappApi.weappApiStrings.record = "record".asInstanceOf[typings.weappApi.weappApiStrings.record]
+  inline def record: typings.weappApi.weappApiStrings.record = "record".asInstanceOf[typings.weappApi.weappApiStrings.record]
   
-  @scala.inline
-  def userInfo: typings.weappApi.weappApiStrings.userInfo = "userInfo".asInstanceOf[typings.weappApi.weappApiStrings.userInfo]
+  inline def userInfo: typings.weappApi.weappApiStrings.userInfo = "userInfo".asInstanceOf[typings.weappApi.weappApiStrings.userInfo]
   
-  @scala.inline
-  def userLocation: typings.weappApi.weappApiStrings.userLocation = "userLocation".asInstanceOf[typings.weappApi.weappApiStrings.userLocation]
+  inline def userLocation: typings.weappApi.weappApiStrings.userLocation = "userLocation".asInstanceOf[typings.weappApi.weappApiStrings.userLocation]
   
-  @scala.inline
-  def werun: typings.weappApi.weappApiStrings.werun = "werun".asInstanceOf[typings.weappApi.weappApiStrings.werun]
+  inline def werun: typings.weappApi.weappApiStrings.werun = "werun".asInstanceOf[typings.weappApi.weappApiStrings.werun]
   
-  @scala.inline
-  def writePhotosAlbum: typings.weappApi.weappApiStrings.writePhotosAlbum = "writePhotosAlbum".asInstanceOf[typings.weappApi.weappApiStrings.writePhotosAlbum]
+  inline def writePhotosAlbum: typings.weappApi.weappApiStrings.writePhotosAlbum = "writePhotosAlbum".asInstanceOf[typings.weappApi.weappApiStrings.writePhotosAlbum]
 }

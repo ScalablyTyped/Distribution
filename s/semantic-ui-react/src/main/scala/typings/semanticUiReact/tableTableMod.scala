@@ -137,204 +137,140 @@ object tableTableMod extends Shortcut {
   }
   object StrictTableProps {
     
-    @scala.inline
-    def apply(): StrictTableProps = {
+    inline def apply(): StrictTableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTableProps]
     }
     
-    @scala.inline
-    implicit class StrictTablePropsMutableBuilder[Self <: StrictTableProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTableProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAttached(value: Boolean | top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Boolean | top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
+      inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
-      @scala.inline
-      def setBasic(value: Boolean | very): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+      inline def setBasic(value: Boolean | very): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+      inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
       
-      @scala.inline
-      def setCelled(value: Boolean | internally): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
+      inline def setCelled(value: Boolean | internally): Self = StObject.set(x, "celled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCelledUndefined: Self = StObject.set(x, "celled", js.undefined)
+      inline def setCelledUndefined: Self = StObject.set(x, "celled", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCollapsing(value: Boolean): Self = StObject.set(x, "collapsing", value.asInstanceOf[js.Any])
+      inline def setCollapsing(value: Boolean): Self = StObject.set(x, "collapsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsingUndefined: Self = StObject.set(x, "collapsing", js.undefined)
+      inline def setCollapsingUndefined: Self = StObject.set(x, "collapsing", js.undefined)
       
-      @scala.inline
-      def setColor(value: SemanticCOLORS): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: SemanticCOLORS): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setColumns(value: SemanticWIDTHS): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: SemanticWIDTHS): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean | very): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean | very): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setDefinition(value: Boolean): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+      inline def setDefinition(value: Boolean): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+      inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFooterRow(value: SemanticShorthandItem[TableRowProps]): Self = StObject.set(x, "footerRow", value.asInstanceOf[js.Any])
+      inline def setFooterRow(value: SemanticShorthandItem[TableRowProps]): Self = StObject.set(x, "footerRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterRowFunction3(
+      inline def setFooterRowFunction3(
         value: (/* component */ ElementType[TableRowProps], TableRowProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "footerRow", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFooterRowUndefined: Self = StObject.set(x, "footerRow", js.undefined)
+      inline def setFooterRowUndefined: Self = StObject.set(x, "footerRow", js.undefined)
       
-      @scala.inline
-      def setHeaderRow(value: SemanticShorthandItem[TableRowProps]): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
+      inline def setHeaderRow(value: SemanticShorthandItem[TableRowProps]): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderRowFunction3(
+      inline def setHeaderRowFunction3(
         value: (/* component */ ElementType[TableRowProps], TableRowProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "headerRow", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
+      inline def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
       
-      @scala.inline
-      def setHeaderRows(value: SemanticShorthandCollection[TableRowProps]): Self = StObject.set(x, "headerRows", value.asInstanceOf[js.Any])
+      inline def setHeaderRows(value: SemanticShorthandCollection[TableRowProps]): Self = StObject.set(x, "headerRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderRowsUndefined: Self = StObject.set(x, "headerRows", js.undefined)
+      inline def setHeaderRowsUndefined: Self = StObject.set(x, "headerRows", js.undefined)
       
-      @scala.inline
-      def setHeaderRowsVarargs(value: SemanticShorthandItem[TableRowProps]*): Self = StObject.set(x, "headerRows", js.Array(value :_*))
+      inline def setHeaderRowsVarargs(value: SemanticShorthandItem[TableRowProps]*): Self = StObject.set(x, "headerRows", js.Array(value :_*))
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setPadded(value: Boolean | very): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+      inline def setPadded(value: Boolean | very): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
+      inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
       
-      @scala.inline
-      def setRenderBodyRow(value: (/* data */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderBodyRow", js.Any.fromFunction2(value))
+      inline def setRenderBodyRow(value: (/* data */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderBodyRow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderBodyRowUndefined: Self = StObject.set(x, "renderBodyRow", js.undefined)
+      inline def setRenderBodyRowUndefined: Self = StObject.set(x, "renderBodyRow", js.undefined)
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setSingleLine(value: Boolean): Self = StObject.set(x, "singleLine", value.asInstanceOf[js.Any])
+      inline def setSingleLine(value: Boolean): Self = StObject.set(x, "singleLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleLineUndefined: Self = StObject.set(x, "singleLine", js.undefined)
+      inline def setSingleLineUndefined: Self = StObject.set(x, "singleLine", js.undefined)
       
-      @scala.inline
-      def setSize(value: small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+      inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
       
-      @scala.inline
-      def setStackable(value: Boolean): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
+      inline def setStackable(value: Boolean): Self = StObject.set(x, "stackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
+      inline def setStackableUndefined: Self = StObject.set(x, "stackable", js.undefined)
       
-      @scala.inline
-      def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
+      inline def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
+      inline def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
       
-      @scala.inline
-      def setStructured(value: Boolean): Self = StObject.set(x, "structured", value.asInstanceOf[js.Any])
+      inline def setStructured(value: Boolean): Self = StObject.set(x, "structured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStructuredUndefined: Self = StObject.set(x, "structured", js.undefined)
+      inline def setStructuredUndefined: Self = StObject.set(x, "structured", js.undefined)
       
-      @scala.inline
-      def setTableData(value: js.Array[js.Any]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
+      inline def setTableData(value: js.Array[js.Any]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDataUndefined: Self = StObject.set(x, "tableData", js.undefined)
+      inline def setTableDataUndefined: Self = StObject.set(x, "tableData", js.undefined)
       
-      @scala.inline
-      def setTableDataVarargs(value: js.Any*): Self = StObject.set(x, "tableData", js.Array(value :_*))
+      inline def setTableDataVarargs(value: js.Any*): Self = StObject.set(x, "tableData", js.Array(value :_*))
       
-      @scala.inline
-      def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
+      inline def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
+      inline def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     }
   }
   
@@ -362,8 +298,7 @@ object tableTableMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TableProps {
     
-    @scala.inline
-    def apply(): TableProps = {
+    inline def apply(): TableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableProps]
     }

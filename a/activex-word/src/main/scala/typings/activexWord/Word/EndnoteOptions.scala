@@ -20,13 +20,12 @@ trait EndnoteOptions extends StObject {
   
   var StartingNumber: Double
   
-  @JSName("Word.EndnoteOptions_typekey")
+  /* private */ @JSName("Word.EndnoteOptions_typekey")
   var WordDotEndnoteOptions_typekey: EndnoteOptions
 }
 object EndnoteOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Location: WdEndnoteLocation,
@@ -41,31 +40,22 @@ object EndnoteOptions {
     __obj.asInstanceOf[EndnoteOptions]
   }
   
-  @scala.inline
-  implicit class EndnoteOptionsMutableBuilder[Self <: EndnoteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EndnoteOptions](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: WdEndnoteLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WdEndnoteLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberStyle(value: WdNoteNumberStyle): Self = StObject.set(x, "NumberStyle", value.asInstanceOf[js.Any])
+    inline def setNumberStyle(value: WdNoteNumberStyle): Self = StObject.set(x, "NumberStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingRule(value: WdNumberingRule): Self = StObject.set(x, "NumberingRule", value.asInstanceOf[js.Any])
+    inline def setNumberingRule(value: WdNumberingRule): Self = StObject.set(x, "NumberingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingNumber(value: Double): Self = StObject.set(x, "StartingNumber", value.asInstanceOf[js.Any])
+    inline def setStartingNumber(value: Double): Self = StObject.set(x, "StartingNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotEndnoteOptions_typekey(value: EndnoteOptions): Self = StObject.set(x, "Word.EndnoteOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotEndnoteOptions_typekey(value: EndnoteOptions): Self = StObject.set(x, "Word.EndnoteOptions_typekey", value.asInstanceOf[js.Any])
   }
 }

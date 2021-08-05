@@ -17,34 +17,25 @@ trait LoadElement extends StObject {
 }
 object LoadElement {
   
-  @scala.inline
-  def apply(): LoadElement = {
+  inline def apply(): LoadElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadElement]
   }
   
-  @scala.inline
-  implicit class LoadElementMutableBuilder[Self <: LoadElement] (val x: Self) extends AnyVal {
+  extension [Self <: LoadElement](x: Self) {
     
-    @scala.inline
-    def setLoadElement(value: HTMLImageElement | HTMLAudioElement | HTMLVideoElement): Self = StObject.set(x, "loadElement", value.asInstanceOf[js.Any])
+    inline def setLoadElement(value: HTMLImageElement | HTMLAudioElement | HTMLVideoElement): Self = StObject.set(x, "loadElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadElementUndefined: Self = StObject.set(x, "loadElement", js.undefined)
+    inline def setLoadElementUndefined: Self = StObject.set(x, "loadElement", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String | js.Array[String]): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String | js.Array[String]): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setMimeTypeVarargs(value: String*): Self = StObject.set(x, "mimeType", js.Array(value :_*))
+    inline def setMimeTypeVarargs(value: String*): Self = StObject.set(x, "mimeType", js.Array(value :_*))
     
-    @scala.inline
-    def setSkipSource(value: Boolean): Self = StObject.set(x, "skipSource", value.asInstanceOf[js.Any])
+    inline def setSkipSource(value: Boolean): Self = StObject.set(x, "skipSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipSourceUndefined: Self = StObject.set(x, "skipSource", js.undefined)
+    inline def setSkipSourceUndefined: Self = StObject.set(x, "skipSource", js.undefined)
   }
 }

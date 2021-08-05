@@ -33,8 +33,7 @@ trait RunScheduledInstancesRequest extends StObject {
 }
 object RunScheduledInstancesRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LaunchSpecification: ScheduledInstancesLaunchSpecification,
     ScheduledInstanceId: ScheduledInstanceId
   ): RunScheduledInstancesRequest = {
@@ -42,31 +41,22 @@ object RunScheduledInstancesRequest {
     __obj.asInstanceOf[RunScheduledInstancesRequest]
   }
   
-  @scala.inline
-  implicit class RunScheduledInstancesRequestMutableBuilder[Self <: RunScheduledInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunScheduledInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setLaunchSpecification(value: ScheduledInstancesLaunchSpecification): Self = StObject.set(x, "LaunchSpecification", value.asInstanceOf[js.Any])
+    inline def setLaunchSpecification(value: ScheduledInstancesLaunchSpecification): Self = StObject.set(x, "LaunchSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledInstanceId(value: ScheduledInstanceId): Self = StObject.set(x, "ScheduledInstanceId", value.asInstanceOf[js.Any])
+    inline def setScheduledInstanceId(value: ScheduledInstanceId): Self = StObject.set(x, "ScheduledInstanceId", value.asInstanceOf[js.Any])
   }
 }

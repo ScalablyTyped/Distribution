@@ -23,25 +23,19 @@ trait ExportFilter extends StObject {
 }
 object ExportFilter {
   
-  @scala.inline
-  def apply(condition: Condition, name: FilterName, values: FilterValues): ExportFilter = {
+  inline def apply(condition: Condition, name: FilterName, values: FilterValues): ExportFilter = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportFilter]
   }
   
-  @scala.inline
-  implicit class ExportFilterMutableBuilder[Self <: ExportFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ExportFilter](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: FilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: FilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait ShaderDescriptor[T /* <: Shader */] extends StObject {
 }
 object ShaderDescriptor {
   
-  @scala.inline
-  def apply[T /* <: Shader */](Shader: ShaderConstructor[T], schema: Schema_[js.Object]): ShaderDescriptor[T] = {
+  inline def apply[T /* <: Shader */](Shader: ShaderConstructor[T], schema: Schema_[js.Object]): ShaderDescriptor[T] = {
     val __obj = js.Dynamic.literal(Shader = Shader.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaderDescriptor[T]]
   }
   
-  @scala.inline
-  implicit class ShaderDescriptorMutableBuilder[Self <: ShaderDescriptor[?], T /* <: Shader */] (val x: Self & ShaderDescriptor[T]) extends AnyVal {
+  extension [Self <: ShaderDescriptor[?], T /* <: Shader */](x: Self & ShaderDescriptor[T]) {
     
-    @scala.inline
-    def setSchema(value: Schema_[js.Object]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema_[js.Object]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShader(value: ShaderConstructor[T]): Self = StObject.set(x, "Shader", value.asInstanceOf[js.Any])
+    inline def setShader(value: ShaderConstructor[T]): Self = StObject.set(x, "Shader", value.asInstanceOf[js.Any])
   }
 }

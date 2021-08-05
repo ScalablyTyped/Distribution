@@ -19,19 +19,15 @@ trait SetVisibleSizeRequest extends StObject {
 }
 object SetVisibleSizeRequest {
   
-  @scala.inline
-  def apply(height: integer, width: integer): SetVisibleSizeRequest = {
+  inline def apply(height: integer, width: integer): SetVisibleSizeRequest = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetVisibleSizeRequest]
   }
   
-  @scala.inline
-  implicit class SetVisibleSizeRequestMutableBuilder[Self <: SetVisibleSizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetVisibleSizeRequest](x: Self) {
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

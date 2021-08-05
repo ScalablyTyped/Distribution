@@ -26,8 +26,7 @@ trait ILookupPropertyType
 }
 object ILookupPropertyType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
     DataToLocalized: js.Any => String,
     GetImageSource: (IRecord, js.Any) => String,
@@ -42,28 +41,20 @@ object ILookupPropertyType {
     __obj.asInstanceOf[ILookupPropertyType]
   }
   
-  @scala.inline
-  implicit class ILookupPropertyTypeMutableBuilder[Self <: ILookupPropertyType] (val x: Self) extends AnyVal {
+  extension [Self <: ILookupPropertyType](x: Self) {
     
-    @scala.inline
-    def setDataToLocalized(value: js.Any => String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
+    inline def setDataToLocalized(value: js.Any => String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetImageSource(value: (IRecord, js.Any) => String): Self = StObject.set(x, "GetImageSource", js.Any.fromFunction2(value))
+    inline def setGetImageSource(value: (IRecord, js.Any) => String): Self = StObject.set(x, "GetImageSource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetIsLimitedToList(value: () => Boolean): Self = StObject.set(x, "GetIsLimitedToList", js.Any.fromFunction0(value))
+    inline def setGetIsLimitedToList(value: () => Boolean): Self = StObject.set(x, "GetIsLimitedToList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItems(value: js.Any => Unit): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
+    inline def setGetItems(value: js.Any => Unit): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSerializableLookupPropType(value: () => BLimitToList): Self = StObject.set(x, "GetSerializableLookupPropType", js.Any.fromFunction0(value))
+    inline def setGetSerializableLookupPropType(value: () => BLimitToList): Self = StObject.set(x, "GetSerializableLookupPropType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStyleId(value: js.Any => String): Self = StObject.set(x, "GetStyleId", js.Any.fromFunction1(value))
+    inline def setGetStyleId(value: js.Any => String): Self = StObject.set(x, "GetStyleId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocalizedToData(value: String => js.Any): Self = StObject.set(x, "LocalizedToData", js.Any.fromFunction1(value))
+    inline def setLocalizedToData(value: String => js.Any): Self = StObject.set(x, "LocalizedToData", js.Any.fromFunction1(value))
   }
 }

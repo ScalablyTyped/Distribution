@@ -16,37 +16,27 @@ trait FloaterProps extends StObject {
 }
 object FloaterProps {
   
-  @scala.inline
-  def apply(): FloaterProps = {
+  inline def apply(): FloaterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloaterProps]
   }
   
-  @scala.inline
-  implicit class FloaterPropsMutableBuilder[Self <: FloaterProps] (val x: Self) extends AnyVal {
+  extension [Self <: FloaterProps](x: Self) {
     
-    @scala.inline
-    def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
+    inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
+    inline def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
     
-    @scala.inline
-    def setOptions(value: GenericObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: GenericObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setStyles(value: GenericObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: GenericObject): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setWrapperOptions(value: GenericObject): Self = StObject.set(x, "wrapperOptions", value.asInstanceOf[js.Any])
+    inline def setWrapperOptions(value: GenericObject): Self = StObject.set(x, "wrapperOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperOptionsUndefined: Self = StObject.set(x, "wrapperOptions", js.undefined)
+    inline def setWrapperOptionsUndefined: Self = StObject.set(x, "wrapperOptions", js.undefined)
   }
 }

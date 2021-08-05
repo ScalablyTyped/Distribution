@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLMapElement")
 @js.native
-class HTMLMapElement protected ()
+/* private */ class HTMLMapElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLMapElement

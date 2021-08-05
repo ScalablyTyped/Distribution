@@ -11,16 +11,13 @@ trait PointWorkItemProperty extends StObject {
 }
 object PointWorkItemProperty {
   
-  @scala.inline
-  def apply(workItem: ValueAny): PointWorkItemProperty = {
+  inline def apply(workItem: ValueAny): PointWorkItemProperty = {
     val __obj = js.Dynamic.literal(workItem = workItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointWorkItemProperty]
   }
   
-  @scala.inline
-  implicit class PointWorkItemPropertyMutableBuilder[Self <: PointWorkItemProperty] (val x: Self) extends AnyVal {
+  extension [Self <: PointWorkItemProperty](x: Self) {
     
-    @scala.inline
-    def setWorkItem(value: ValueAny): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
+    inline def setWorkItem(value: ValueAny): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object jansson {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def get(spath: String, sdoc: String, spv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(spath.asInstanceOf[js.Any], sdoc.asInstanceOf[js.Any], spv.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def get(spath: String, sdoc: String, spv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(spath.asInstanceOf[js.Any], sdoc.asInstanceOf[js.Any], spv.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

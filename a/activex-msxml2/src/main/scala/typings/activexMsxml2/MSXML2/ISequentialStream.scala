@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISequentialStream extends StObject {
   
-  @JSName("MSXML2.ISequentialStream_typekey")
+  /* private */ @JSName("MSXML2.ISequentialStream_typekey")
   var MSXML2DotISequentialStream_typekey: ISequentialStream
   
   def RemoteRead(pv: Double, cb: Double, pcbRead: Double): Unit
@@ -15,8 +15,7 @@ trait ISequentialStream extends StObject {
 }
 object ISequentialStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotISequentialStream_typekey: ISequentialStream,
     RemoteRead: (Double, Double, Double) => Unit,
     RemoteWrite: (Double, Double, Double) => Unit
@@ -26,16 +25,12 @@ object ISequentialStream {
     __obj.asInstanceOf[ISequentialStream]
   }
   
-  @scala.inline
-  implicit class ISequentialStreamMutableBuilder[Self <: ISequentialStream] (val x: Self) extends AnyVal {
+  extension [Self <: ISequentialStream](x: Self) {
     
-    @scala.inline
-    def setMSXML2DotISequentialStream_typekey(value: ISequentialStream): Self = StObject.set(x, "MSXML2.ISequentialStream_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotISequentialStream_typekey(value: ISequentialStream): Self = StObject.set(x, "MSXML2.ISequentialStream_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteRead(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "RemoteRead", js.Any.fromFunction3(value))
+    inline def setRemoteRead(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "RemoteRead", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoteWrite(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "RemoteWrite", js.Any.fromFunction3(value))
+    inline def setRemoteWrite(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "RemoteWrite", js.Any.fromFunction3(value))
   }
 }

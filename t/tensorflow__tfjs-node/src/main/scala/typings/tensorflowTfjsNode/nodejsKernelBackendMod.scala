@@ -40,11 +40,11 @@ object nodejsKernelBackendMod {
   class NodeJSKernelBackend protected () extends KernelBackend {
     def this(binding: TFJSBinding, packageName: String) = this()
     
-    var applyActivation: js.Any = js.native
+    /* private */ var applyActivation: js.Any = js.native
     
     var binding: TFJSBinding = js.native
     
-    var createOutputTensor: js.Any = js.native
+    /* private */ var createOutputTensor: js.Any = js.native
     
     def createReductionOpAttrs(tensor: TensorInfo): js.Array[TFEOpAttr] = js.native
     def createReductionOpAttrs(tensor: TensorInfo, keepDims: Boolean): js.Array[TFEOpAttr] = js.native
@@ -238,11 +238,11 @@ object nodejsKernelBackendMod {
     
     def flushSummaryWriter(resourceHandle: Tensor[Rank]): Unit = js.native
     
-    var getDTypeInteger: js.Any = js.native
+    /* private */ var getDTypeInteger: js.Any = js.native
     
-    var getInputTensorIds: js.Any = js.native
+    /* private */ var getInputTensorIds: js.Any = js.native
     
-    var getMappedInputTensorIds: js.Any = js.native
+    /* private */ var getMappedInputTensorIds: js.Any = js.native
     
     def getNumOfSavedModels(): Double = js.native
     
@@ -270,7 +270,7 @@ object nodejsKernelBackendMod {
     
     def summaryWriter(logdir: String): Tensor1D = js.native
     
-    var tensorMap: js.Any = js.native
+    /* private */ var tensorMap: js.Any = js.native
     
     def topKIndices(x: Tensor[Rank], k: Double): Tensor1D = js.native
     
@@ -280,32 +280,23 @@ object nodejsKernelBackendMod {
     def topk[T /* <: Tensor[Rank] */](x: T, k: Double): js.Tuple2[T, T] = js.native
     def topk[T /* <: Tensor[Rank] */](x: T, k: Unit, sorted: Boolean): js.Tuple2[T, T] = js.native
     
-    var typeAttributeFromTensor: js.Any = js.native
+    /* private */ var typeAttributeFromTensor: js.Any = js.native
     
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Double): Unit = js.native
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Scalar): Unit = js.native
   }
   
-  @scala.inline
-  def createOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]], value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
-  @scala.inline
-  def createOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank], value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
-  @scala.inline
-  def createOpAttr(attrName: String, tensorsOrDtype: DataType, value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  inline def createOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]], value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  inline def createOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank], value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  inline def createOpAttr(attrName: String, tensorsOrDtype: DataType, value: ScalarLike): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
   
-  @scala.inline
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]]): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
-  @scala.inline
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank]): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
-  @scala.inline
-  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: DataType): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  inline def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]]): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  inline def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank]): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
+  inline def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: DataType): TFEOpAttr = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsTypeOpAttr")(attrName.asInstanceOf[js.Any], tensorsOrDtype.asInstanceOf[js.Any])).asInstanceOf[TFEOpAttr]
   
-  @scala.inline
-  def ensureTensorflowBackend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorflowBackend")().asInstanceOf[Unit]
+  inline def ensureTensorflowBackend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorflowBackend")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getTFDType(dataType: DataType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTFDType")(dataType.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getTFDType(dataType: DataType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTFDType")(dataType.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def nodeBackend(): NodeJSKernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeBackend")().asInstanceOf[NodeJSKernelBackend]
+  inline def nodeBackend(): NodeJSKernelBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeBackend")().asInstanceOf[NodeJSKernelBackend]
 }

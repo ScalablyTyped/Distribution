@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionType extends StObject
 object DirectionType {
   
-  @scala.inline
-  def from: typings.vis.visStrings.from = "from".asInstanceOf[typings.vis.visStrings.from]
+  inline def from: typings.vis.visStrings.from = "from".asInstanceOf[typings.vis.visStrings.from]
   
-  @scala.inline
-  def to: typings.vis.visStrings.to = "to".asInstanceOf[typings.vis.visStrings.to]
+  inline def to: typings.vis.visStrings.to = "to".asInstanceOf[typings.vis.visStrings.to]
 }

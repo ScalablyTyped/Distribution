@@ -26,15 +26,14 @@ trait CodePane extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE
   
-  @JSName("VBIDE.CodePane_typekey")
+  /* private */ @JSName("VBIDE.CodePane_typekey")
   var VBIDEDotCodePane_typekey: CodePane
   
   val Window: typings.activexVbide.VBIDE.Window
 }
 object CodePane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CodeModule: CodeModule,
     CodePaneView: vbextCodePaneview,
     Collection: CodePanes,
@@ -52,40 +51,28 @@ object CodePane {
     __obj.asInstanceOf[CodePane]
   }
   
-  @scala.inline
-  implicit class CodePaneMutableBuilder[Self <: CodePane] (val x: Self) extends AnyVal {
+  extension [Self <: CodePane](x: Self) {
     
-    @scala.inline
-    def setCodeModule(value: CodeModule): Self = StObject.set(x, "CodeModule", value.asInstanceOf[js.Any])
+    inline def setCodeModule(value: CodeModule): Self = StObject.set(x, "CodeModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodePaneView(value: vbextCodePaneview): Self = StObject.set(x, "CodePaneView", value.asInstanceOf[js.Any])
+    inline def setCodePaneView(value: vbextCodePaneview): Self = StObject.set(x, "CodePaneView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: CodePanes): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: CodePanes): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountOfVisibleLines(value: Double): Self = StObject.set(x, "CountOfVisibleLines", value.asInstanceOf[js.Any])
+    inline def setCountOfVisibleLines(value: Double): Self = StObject.set(x, "CountOfVisibleLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSelection(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "GetSelection", js.Any.fromFunction4(value))
+    inline def setGetSelection(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "GetSelection", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetSelection(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "SetSelection", js.Any.fromFunction4(value))
+    inline def setSetSelection(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "SetSelection", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTopLine(value: Double): Self = StObject.set(x, "TopLine", value.asInstanceOf[js.Any])
+    inline def setTopLine(value: Double): Self = StObject.set(x, "TopLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
+    inline def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotCodePane_typekey(value: CodePane): Self = StObject.set(x, "VBIDE.CodePane_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotCodePane_typekey(value: CodePane): Self = StObject.set(x, "VBIDE.CodePane_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: Window): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Window): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

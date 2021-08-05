@@ -25,8 +25,7 @@ object mod {
     *
     * Pass in an options object to generate an uninitialized MotorHat object.
     */
-  @scala.inline
-  def default(options: MotorHatOptions): MotorHat = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[MotorHat]
+  inline def default(options: MotorHatOptions): MotorHat = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[MotorHat]
   
   type Callback = js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]
   
@@ -132,35 +131,26 @@ object mod {
   }
   object DCOptions {
     
-    @scala.inline
-    def apply(pins: PinDefinition, pwm: js.Object): DCOptions = {
+    inline def apply(pins: PinDefinition, pwm: js.Object): DCOptions = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
       __obj.asInstanceOf[DCOptions]
     }
     
-    @scala.inline
-    implicit class DCOptionsMutableBuilder[Self <: DCOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DCOptions](x: Self) {
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setPins(value: PinDefinition): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: PinDefinition): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value :_*))
+      inline def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value :_*))
       
-      @scala.inline
-      def setPwm(value: js.Object): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
+      inline def setPwm(value: js.Object): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     }
   }
   
@@ -171,11 +161,9 @@ object mod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def back: typings.motorHat.motorHatStrings.back = "back".asInstanceOf[typings.motorHat.motorHatStrings.back]
+    inline def back: typings.motorHat.motorHatStrings.back = "back".asInstanceOf[typings.motorHat.motorHatStrings.back]
     
-    @scala.inline
-    def fwd: typings.motorHat.motorHatStrings.fwd = "fwd".asInstanceOf[typings.motorHat.motorHatStrings.fwd]
+    inline def fwd: typings.motorHat.motorHatStrings.fwd = "fwd".asInstanceOf[typings.motorHat.motorHatStrings.fwd]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -187,17 +175,13 @@ object mod {
   trait Motor extends StObject
   object Motor {
     
-    @scala.inline
-    def M1: typings.motorHat.motorHatStrings.M1 = "M1".asInstanceOf[typings.motorHat.motorHatStrings.M1]
+    inline def M1: typings.motorHat.motorHatStrings.M1 = "M1".asInstanceOf[typings.motorHat.motorHatStrings.M1]
     
-    @scala.inline
-    def M2: typings.motorHat.motorHatStrings.M2 = "M2".asInstanceOf[typings.motorHat.motorHatStrings.M2]
+    inline def M2: typings.motorHat.motorHatStrings.M2 = "M2".asInstanceOf[typings.motorHat.motorHatStrings.M2]
     
-    @scala.inline
-    def M3: typings.motorHat.motorHatStrings.M3 = "M3".asInstanceOf[typings.motorHat.motorHatStrings.M3]
+    inline def M3: typings.motorHat.motorHatStrings.M3 = "M3".asInstanceOf[typings.motorHat.motorHatStrings.M3]
     
-    @scala.inline
-    def M4: typings.motorHat.motorHatStrings.M4 = "M4".asInstanceOf[typings.motorHat.motorHatStrings.M4]
+    inline def M4: typings.motorHat.motorHatStrings.M4 = "M4".asInstanceOf[typings.motorHat.motorHatStrings.M4]
   }
   
   @js.native
@@ -300,53 +284,38 @@ object mod {
   }
   object MotorHatOptions {
     
-    @scala.inline
-    def apply(): MotorHatOptions = {
+    inline def apply(): MotorHatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MotorHatOptions]
     }
     
-    @scala.inline
-    implicit class MotorHatOptionsMutableBuilder[Self <: MotorHatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MotorHatOptions](x: Self) {
       
-      @scala.inline
-      def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setBusnum(value: Double): Self = StObject.set(x, "busnum", value.asInstanceOf[js.Any])
+      inline def setBusnum(value: Double): Self = StObject.set(x, "busnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusnumUndefined: Self = StObject.set(x, "busnum", js.undefined)
+      inline def setBusnumUndefined: Self = StObject.set(x, "busnum", js.undefined)
       
-      @scala.inline
-      def setDcs(value: js.Array[Motor]): Self = StObject.set(x, "dcs", value.asInstanceOf[js.Any])
+      inline def setDcs(value: js.Array[Motor]): Self = StObject.set(x, "dcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDcsUndefined: Self = StObject.set(x, "dcs", js.undefined)
+      inline def setDcsUndefined: Self = StObject.set(x, "dcs", js.undefined)
       
-      @scala.inline
-      def setDcsVarargs(value: Motor*): Self = StObject.set(x, "dcs", js.Array(value :_*))
+      inline def setDcsVarargs(value: Motor*): Self = StObject.set(x, "dcs", js.Array(value :_*))
       
-      @scala.inline
-      def setServos(value: js.Array[Double]): Self = StObject.set(x, "servos", value.asInstanceOf[js.Any])
+      inline def setServos(value: js.Array[Double]): Self = StObject.set(x, "servos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServosUndefined: Self = StObject.set(x, "servos", js.undefined)
+      inline def setServosUndefined: Self = StObject.set(x, "servos", js.undefined)
       
-      @scala.inline
-      def setServosVarargs(value: Double*): Self = StObject.set(x, "servos", js.Array(value :_*))
+      inline def setServosVarargs(value: Double*): Self = StObject.set(x, "servos", js.Array(value :_*))
       
-      @scala.inline
-      def setSteppers(value: js.Array[W2]): Self = StObject.set(x, "steppers", value.asInstanceOf[js.Any])
+      inline def setSteppers(value: js.Array[W2]): Self = StObject.set(x, "steppers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteppersUndefined: Self = StObject.set(x, "steppers", js.undefined)
+      inline def setSteppersUndefined: Self = StObject.set(x, "steppers", js.undefined)
       
-      @scala.inline
-      def setSteppersVarargs(value: W2*): Self = StObject.set(x, "steppers", js.Array(value :_*))
+      inline def setSteppersVarargs(value: W2*): Self = StObject.set(x, "steppers", js.Array(value :_*))
     }
   }
   
@@ -360,23 +329,18 @@ object mod {
   }
   object MotorPins {
     
-    @scala.inline
-    def apply(IN1: Double, IN2: Double, PWM: Double): MotorPins = {
+    inline def apply(IN1: Double, IN2: Double, PWM: Double): MotorPins = {
       val __obj = js.Dynamic.literal(IN1 = IN1.asInstanceOf[js.Any], IN2 = IN2.asInstanceOf[js.Any], PWM = PWM.asInstanceOf[js.Any])
       __obj.asInstanceOf[MotorPins]
     }
     
-    @scala.inline
-    implicit class MotorPinsMutableBuilder[Self <: MotorPins] (val x: Self) extends AnyVal {
+    extension [Self <: MotorPins](x: Self) {
       
-      @scala.inline
-      def setIN1(value: Double): Self = StObject.set(x, "IN1", value.asInstanceOf[js.Any])
+      inline def setIN1(value: Double): Self = StObject.set(x, "IN1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIN2(value: Double): Self = StObject.set(x, "IN2", value.asInstanceOf[js.Any])
+      inline def setIN2(value: Double): Self = StObject.set(x, "IN2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPWM(value: Double): Self = StObject.set(x, "PWM", value.asInstanceOf[js.Any])
+      inline def setPWM(value: Double): Self = StObject.set(x, "PWM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -401,23 +365,18 @@ object mod {
   }
   object PinDefinitionObject {
     
-    @scala.inline
-    def apply(IN1: Double, IN2: Double, PWM: Double): PinDefinitionObject = {
+    inline def apply(IN1: Double, IN2: Double, PWM: Double): PinDefinitionObject = {
       val __obj = js.Dynamic.literal(IN1 = IN1.asInstanceOf[js.Any], IN2 = IN2.asInstanceOf[js.Any], PWM = PWM.asInstanceOf[js.Any])
       __obj.asInstanceOf[PinDefinitionObject]
     }
     
-    @scala.inline
-    implicit class PinDefinitionObjectMutableBuilder[Self <: PinDefinitionObject] (val x: Self) extends AnyVal {
+    extension [Self <: PinDefinitionObject](x: Self) {
       
-      @scala.inline
-      def setIN1(value: Double): Self = StObject.set(x, "IN1", value.asInstanceOf[js.Any])
+      inline def setIN1(value: Double): Self = StObject.set(x, "IN1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIN2(value: Double): Self = StObject.set(x, "IN2", value.asInstanceOf[js.Any])
+      inline def setIN2(value: Double): Self = StObject.set(x, "IN2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPWM(value: Double): Self = StObject.set(x, "PWM", value.asInstanceOf[js.Any])
+      inline def setPWM(value: Double): Self = StObject.set(x, "PWM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -441,20 +400,16 @@ object mod {
   }
   object Servo {
     
-    @scala.inline
-    def apply(calibrate: (Double, Double, Double) => Unit, moveTo: Double => Unit): Servo = {
+    inline def apply(calibrate: (Double, Double, Double) => Unit, moveTo: Double => Unit): Servo = {
       val __obj = js.Dynamic.literal(calibrate = js.Any.fromFunction3(calibrate), moveTo = js.Any.fromFunction1(moveTo))
       __obj.asInstanceOf[Servo]
     }
     
-    @scala.inline
-    implicit class ServoMutableBuilder[Self <: Servo] (val x: Self) extends AnyVal {
+    extension [Self <: Servo](x: Self) {
       
-      @scala.inline
-      def setCalibrate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "calibrate", js.Any.fromFunction3(value))
+      inline def setCalibrate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "calibrate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMoveTo(value: Double => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction1(value))
+      inline def setMoveTo(value: Double => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction1(value))
     }
   }
   
@@ -487,38 +442,28 @@ object mod {
   }
   object ServoOptions {
     
-    @scala.inline
-    def apply(pin: Double, pwm: js.Object): ServoOptions = {
+    inline def apply(pin: Double, pwm: js.Object): ServoOptions = {
       val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServoOptions]
     }
     
-    @scala.inline
-    implicit class ServoOptionsMutableBuilder[Self <: ServoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServoOptions](x: Self) {
       
-      @scala.inline
-      def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+      inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+      inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPin(value: Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      inline def setPin(value: Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPwm(value: js.Object): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
+      inline def setPwm(value: js.Object): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
     }
   }
   
@@ -546,26 +491,20 @@ object mod {
   }
   object StepResult {
     
-    @scala.inline
-    def apply(dir: Direction, duration: Double, retried: Double, steps: Double): StepResult = {
+    inline def apply(dir: Direction, duration: Double, retried: Double, steps: Double): StepResult = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], retried = retried.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepResult]
     }
     
-    @scala.inline
-    implicit class StepResultMutableBuilder[Self <: StepResult] (val x: Self) extends AnyVal {
+    extension [Self <: StepResult](x: Self) {
       
-      @scala.inline
-      def setDir(value: Direction): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: Direction): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetried(value: Double): Self = StObject.set(x, "retried", value.asInstanceOf[js.Any])
+      inline def setRetried(value: Double): Self = StObject.set(x, "retried", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -588,23 +527,18 @@ object mod {
   }
   object StepSyncResult {
     
-    @scala.inline
-    def apply(dir: Direction, duration: Double, steps: Double): StepSyncResult = {
+    inline def apply(dir: Direction, duration: Double, steps: Double): StepSyncResult = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepSyncResult]
     }
     
-    @scala.inline
-    implicit class StepSyncResultMutableBuilder[Self <: StepSyncResult] (val x: Self) extends AnyVal {
+    extension [Self <: StepSyncResult](x: Self) {
       
-      @scala.inline
-      def setDir(value: Direction): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: Direction): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -799,68 +733,48 @@ object mod {
   }
   object StepperOptions {
     
-    @scala.inline
-    def apply(pins: W1, pwm: js.Object): StepperOptions = {
+    inline def apply(pins: W1, pwm: js.Object): StepperOptions = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepperOptions]
     }
     
-    @scala.inline
-    implicit class StepperOptionsMutableBuilder[Self <: StepperOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StepperOptions](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setMicrosteps(value: `8` | `16`): Self = StObject.set(x, "microsteps", value.asInstanceOf[js.Any])
+      inline def setMicrosteps(value: `8` | `16`): Self = StObject.set(x, "microsteps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicrostepsUndefined: Self = StObject.set(x, "microsteps", js.undefined)
+      inline def setMicrostepsUndefined: Self = StObject.set(x, "microsteps", js.undefined)
       
-      @scala.inline
-      def setPins(value: W1): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: W1): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPps(value: Double): Self = StObject.set(x, "pps", value.asInstanceOf[js.Any])
+      inline def setPps(value: Double): Self = StObject.set(x, "pps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpsUndefined: Self = StObject.set(x, "pps", js.undefined)
+      inline def setPpsUndefined: Self = StObject.set(x, "pps", js.undefined)
       
-      @scala.inline
-      def setPwm(value: js.Object): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
+      inline def setPwm(value: js.Object): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRpm(value: Double): Self = StObject.set(x, "rpm", value.asInstanceOf[js.Any])
+      inline def setRpm(value: Double): Self = StObject.set(x, "rpm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRpmUndefined: Self = StObject.set(x, "rpm", js.undefined)
+      inline def setRpmUndefined: Self = StObject.set(x, "rpm", js.undefined)
       
-      @scala.inline
-      def setSps(value: Double): Self = StObject.set(x, "sps", value.asInstanceOf[js.Any])
+      inline def setSps(value: Double): Self = StObject.set(x, "sps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpsUndefined: Self = StObject.set(x, "sps", js.undefined)
+      inline def setSpsUndefined: Self = StObject.set(x, "sps", js.undefined)
       
-      @scala.inline
-      def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      @scala.inline
-      def setStyle(value: single | double | interleaved | microstep): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: single | double | interleaved | microstep): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -883,32 +797,24 @@ object mod {
   }
   object StepperSpeed {
     
-    @scala.inline
-    def apply(): StepperSpeed = {
+    inline def apply(): StepperSpeed = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepperSpeed]
     }
     
-    @scala.inline
-    implicit class StepperSpeedMutableBuilder[Self <: StepperSpeed] (val x: Self) extends AnyVal {
+    extension [Self <: StepperSpeed](x: Self) {
       
-      @scala.inline
-      def setPps(value: Double): Self = StObject.set(x, "pps", value.asInstanceOf[js.Any])
+      inline def setPps(value: Double): Self = StObject.set(x, "pps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpsUndefined: Self = StObject.set(x, "pps", js.undefined)
+      inline def setPpsUndefined: Self = StObject.set(x, "pps", js.undefined)
       
-      @scala.inline
-      def setRpm(value: Double): Self = StObject.set(x, "rpm", value.asInstanceOf[js.Any])
+      inline def setRpm(value: Double): Self = StObject.set(x, "rpm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRpmUndefined: Self = StObject.set(x, "rpm", js.undefined)
+      inline def setRpmUndefined: Self = StObject.set(x, "rpm", js.undefined)
       
-      @scala.inline
-      def setSps(value: Double): Self = StObject.set(x, "sps", value.asInstanceOf[js.Any])
+      inline def setSps(value: Double): Self = StObject.set(x, "sps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpsUndefined: Self = StObject.set(x, "sps", js.undefined)
+      inline def setSpsUndefined: Self = StObject.set(x, "sps", js.undefined)
     }
   }
 }

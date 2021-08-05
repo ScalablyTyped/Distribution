@@ -41,37 +41,29 @@ object zipMod {
     
     /* protected */ def _tryresultSelector(args: js.Array[js.Any]): Unit = js.native
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
     def checkIterators(): Unit = js.native
     
-    var iterators: js.Any = js.native
+    /* private */ var iterators: js.Any = js.native
     
     def notifyInactive(): Unit = js.native
     
-    var resultSelector: js.Any = js.native
+    /* private */ var resultSelector: js.Any = js.native
   }
   
-  @scala.inline
-  def zip[R](array: js.Array[ObservableInput[js.Any]]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[R](array: js.Array[ObservableInput[js.Any]], resultSelector: js.Function1[/* repeated */ js.Any, R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[R](observables: (ObservableInput[js.Any] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, R](
+  inline def zip[R](array: js.Array[ObservableInput[js.Any]]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def zip[R](array: js.Array[ObservableInput[js.Any]], resultSelector: js.Function1[/* repeated */ js.Any, R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def zip[R](observables: (ObservableInput[js.Any] | (js.Function1[/* repeated */ js.Any, R]))*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, R](v1: O1, resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2): Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]]]
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     resultSelector: js.Function2[/* v1 */ ObservedValueOf[O1], /* v2 */ ObservedValueOf[O2], R]
   ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3): Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Observable[js.Tuple3[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3]]]]
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -82,14 +74,12 @@ object zipMod {
       R
     ]
   ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4): Observable[
     js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Observable[
     js.Tuple4[ObservedValueOf[O1], ObservedValueOf[O2], ObservedValueOf[O3], ObservedValueOf[O4]]
   ]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -102,8 +92,7 @@ object zipMod {
       R
     ]
   ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5): Observable[
     js.Tuple5[
       ObservedValueOf[O1], 
       ObservedValueOf[O2], 
@@ -120,8 +109,7 @@ object zipMod {
       ObservedValueOf[O5]
     ]
   ]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -136,8 +124,7 @@ object zipMod {
       R
     ]
   ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */](v1: O1, v2: O2, v3: O3, v4: O4, v5: O5, v6: O6): Observable[
     js.Tuple6[
       ObservedValueOf[O1], 
       ObservedValueOf[O2], 
@@ -156,8 +143,7 @@ object zipMod {
       ObservedValueOf[O6]
     ]
   ]]
-  @scala.inline
-  def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
+  inline def zip[O1 /* <: ObservableInput[js.Any] */, O2 /* <: ObservableInput[js.Any] */, O3 /* <: ObservableInput[js.Any] */, O4 /* <: ObservableInput[js.Any] */, O5 /* <: ObservableInput[js.Any] */, O6 /* <: ObservableInput[js.Any] */, R](
     v1: O1,
     v2: O2,
     v3: O3,
@@ -175,13 +161,9 @@ object zipMod {
     ]
   ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
   
-  @scala.inline
-  def zip_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](array: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
-  @scala.inline
-  def zip_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](observables: O*): Observable[js.Array[ObservedValueOf[O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
+  inline def zip_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](array: js.Array[O]): Observable[js.Array[ObservedValueOf[O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
+  inline def zip_O_ObservableInputAny[O /* <: ObservableInput[js.Any] */](observables: O*): Observable[js.Array[ObservedValueOf[O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[js.Array[ObservedValueOf[O]]]]
   
-  @scala.inline
-  def zip_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](array: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
-  @scala.inline
-  def zip_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](observables: (O | (js.Function1[/* repeated */ ObservedValueOf[O], R]))*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def zip_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](array: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(array.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
+  inline def zip_O_ObservableInputAnyR[O /* <: ObservableInput[js.Any] */, R](observables: (O | (js.Function1[/* repeated */ ObservedValueOf[O], R]))*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(observables.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
 }

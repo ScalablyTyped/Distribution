@@ -35,37 +35,27 @@ trait SchemaGoogleApiServiceusageV1Service extends StObject {
 }
 object SchemaGoogleApiServiceusageV1Service {
   
-  @scala.inline
-  def apply(): SchemaGoogleApiServiceusageV1Service = {
+  inline def apply(): SchemaGoogleApiServiceusageV1Service = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleApiServiceusageV1Service]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleApiServiceusageV1ServiceMutableBuilder[Self <: SchemaGoogleApiServiceusageV1Service] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleApiServiceusageV1Service](x: Self) {
     
-    @scala.inline
-    def setConfig(value: SchemaGoogleApiServiceusageV1ServiceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaGoogleApiServiceusageV1ServiceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -15,16 +15,13 @@ trait CMsgClientLogonPassword
 }
 object CMsgClientLogonPassword {
   
-  @scala.inline
-  def apply(account_name: String, password: String): CMsgClientLogonPassword = {
+  inline def apply(account_name: String, password: String): CMsgClientLogonPassword = {
     val __obj = js.Dynamic.literal(account_name = account_name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMsgClientLogonPassword]
   }
   
-  @scala.inline
-  implicit class CMsgClientLogonPasswordMutableBuilder[Self <: CMsgClientLogonPassword] (val x: Self) extends AnyVal {
+  extension [Self <: CMsgClientLogonPassword](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

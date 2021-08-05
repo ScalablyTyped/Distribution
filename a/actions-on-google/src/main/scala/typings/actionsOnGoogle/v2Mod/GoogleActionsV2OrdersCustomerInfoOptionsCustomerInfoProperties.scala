@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties extends StObject
 object GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties {
   
-  @scala.inline
-  def CUSTOMER_INFO_PROPERTY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_INFO_PROPERTY_UNSPECIFIED = "CUSTOMER_INFO_PROPERTY_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_INFO_PROPERTY_UNSPECIFIED]
+  inline def CUSTOMER_INFO_PROPERTY_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_INFO_PROPERTY_UNSPECIFIED = "CUSTOMER_INFO_PROPERTY_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CUSTOMER_INFO_PROPERTY_UNSPECIFIED]
   
-  @scala.inline
-  def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = "EMAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL]
+  inline def EMAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL = "EMAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL]
 }

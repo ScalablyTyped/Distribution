@@ -20,25 +20,19 @@ trait MainPageSuffix extends StObject {
 }
 object MainPageSuffix {
   
-  @scala.inline
-  def apply(): MainPageSuffix = {
+  inline def apply(): MainPageSuffix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MainPageSuffix]
   }
   
-  @scala.inline
-  implicit class MainPageSuffixMutableBuilder[Self <: MainPageSuffix] (val x: Self) extends AnyVal {
+  extension [Self <: MainPageSuffix](x: Self) {
     
-    @scala.inline
-    def setMainPageSuffix(value: String): Self = StObject.set(x, "mainPageSuffix", value.asInstanceOf[js.Any])
+    inline def setMainPageSuffix(value: String): Self = StObject.set(x, "mainPageSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainPageSuffixUndefined: Self = StObject.set(x, "mainPageSuffix", js.undefined)
+    inline def setMainPageSuffixUndefined: Self = StObject.set(x, "mainPageSuffix", js.undefined)
     
-    @scala.inline
-    def setNotFoundPage(value: String): Self = StObject.set(x, "notFoundPage", value.asInstanceOf[js.Any])
+    inline def setNotFoundPage(value: String): Self = StObject.set(x, "notFoundPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundPageUndefined: Self = StObject.set(x, "notFoundPage", js.undefined)
+    inline def setNotFoundPageUndefined: Self = StObject.set(x, "notFoundPage", js.undefined)
   }
 }

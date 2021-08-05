@@ -12,7 +12,7 @@ trait GradientStop extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.GradientStop_typekey")
+  /* private */ @JSName("Office.GradientStop_typekey")
   var OfficeDotGradientStop_typekey: GradientStop
   
   var Position: Double
@@ -21,8 +21,7 @@ trait GradientStop extends StObject {
 }
 object GradientStop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Color: ColorFormat,
     Creator: Double,
@@ -35,25 +34,18 @@ object GradientStop {
     __obj.asInstanceOf[GradientStop]
   }
   
-  @scala.inline
-  implicit class GradientStopMutableBuilder[Self <: GradientStop] (val x: Self) extends AnyVal {
+  extension [Self <: GradientStop](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: ColorFormat): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorFormat): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotGradientStop_typekey(value: GradientStop): Self = StObject.set(x, "Office.GradientStop_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotGradientStop_typekey(value: GradientStop): Self = StObject.set(x, "Office.GradientStop_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
   }
 }

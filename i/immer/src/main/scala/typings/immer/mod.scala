@@ -151,28 +151,23 @@ object mod {
     val useProxies: Boolean = js.native
   }
   
-  @scala.inline
-  def applyPatches[S](base: S, patches: js.Array[Patch]): S = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatches")(base.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[S]
+  inline def applyPatches[S](base: S, patches: js.Array[Patch]): S = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatches")(base.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[S]
   
-  @scala.inline
-  def isDraft(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDraft")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDraft(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDraft")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("immer", "nothing")
   @js.native
   val nothing: Nothing_ = js.native
   
-  @scala.inline
-  def original[T](value: T): T | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("original")(value.asInstanceOf[js.Any]).asInstanceOf[T | Unit]
+  inline def original[T](value: T): T | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("original")(value.asInstanceOf[js.Any]).asInstanceOf[T | Unit]
   
   @JSImport("immer", "produce")
   @js.native
   val produce: IProduce = js.native
   
-  @scala.inline
-  def setAutoFreeze(autoFreeze: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoFreeze")(autoFreeze.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAutoFreeze(autoFreeze: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoFreeze")(autoFreeze.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setUseProxies(useProxies: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseProxies")(useProxies.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUseProxies(useProxies: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseProxies")(useProxies.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type ArrayMethod = Exclude[/* keyof [] */ String, Double]
   
@@ -251,29 +246,22 @@ object mod {
   }
   object ImmerState {
     
-    @scala.inline
-    def apply[T](assigned: StringDictionary[Boolean], base: T, copy: T): ImmerState[T] = {
+    inline def apply[T](assigned: StringDictionary[Boolean], base: T, copy: T): ImmerState[T] = {
       val __obj = js.Dynamic.literal(assigned = assigned.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImmerState[T]]
     }
     
-    @scala.inline
-    implicit class ImmerStateMutableBuilder[Self <: ImmerState[?], T] (val x: Self & ImmerState[T]) extends AnyVal {
+    extension [Self <: ImmerState[?], T](x: Self & ImmerState[T]) {
       
-      @scala.inline
-      def setAssigned(value: StringDictionary[Boolean]): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
+      inline def setAssigned(value: StringDictionary[Boolean]): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase(value: T): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: T): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopy(value: T): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: T): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: ImmerState[js.Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ImmerState[js.Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     }
   }
   
@@ -290,23 +278,20 @@ object mod {
   trait Nothing_ extends StObject {
     
     // This lets us do `Exclude<T, Nothing>`
-    @JSName("_")
+    /* private */ @JSName("_")
     var _underscore: js.Any
   }
   object Nothing_ {
     
-    @scala.inline
-    def apply(_underscore: js.Any): Nothing_ = {
+    inline def apply(_underscore: js.Any): Nothing_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
       __obj.asInstanceOf[Nothing_]
     }
     
-    @scala.inline
-    implicit class Nothing_MutableBuilder[Self <: Nothing_] (val x: Self) extends AnyVal {
+    extension [Self <: Nothing_](x: Self) {
       
-      @scala.inline
-      def set_underscore(value: js.Any): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+      inline def set_underscore(value: js.Any): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
     }
   }
   
@@ -320,29 +305,22 @@ object mod {
   }
   object Patch {
     
-    @scala.inline
-    def apply(op: replace | remove | add, path: js.Array[String | Double]): Patch = {
+    inline def apply(op: replace | remove | add, path: js.Array[String | Double]): Patch = {
       val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Patch]
     }
     
-    @scala.inline
-    implicit class PatchMutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
+    extension [Self <: Patch](x: Self) {
       
-      @scala.inline
-      def setOp(value: replace | remove | add): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: replace | remove | add): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

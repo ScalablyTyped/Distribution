@@ -13,16 +13,13 @@ trait SetNavigatorOverridesRequest extends StObject {
 }
 object SetNavigatorOverridesRequest {
   
-  @scala.inline
-  def apply(platform: String): SetNavigatorOverridesRequest = {
+  inline def apply(platform: String): SetNavigatorOverridesRequest = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetNavigatorOverridesRequest]
   }
   
-  @scala.inline
-  implicit class SetNavigatorOverridesRequestMutableBuilder[Self <: SetNavigatorOverridesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetNavigatorOverridesRequest](x: Self) {
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
   }
 }

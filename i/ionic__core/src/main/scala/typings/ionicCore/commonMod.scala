@@ -13,24 +13,18 @@ object commonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isFocused(input: HTMLInputElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocused")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isFocused(input: HTMLTextAreaElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocused")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFocused(input: HTMLInputElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocused")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFocused(input: HTMLTextAreaElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocused")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def relocateInput(componentEl: HTMLElement, inputEl: HTMLInputElement, shouldRelocate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def relocateInput(
+  inline def relocateInput(componentEl: HTMLElement, inputEl: HTMLInputElement, shouldRelocate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def relocateInput(
     componentEl: HTMLElement,
     inputEl: HTMLInputElement,
     shouldRelocate: Boolean,
     inputRelativeY: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any], inputRelativeY.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def relocateInput(componentEl: HTMLElement, inputEl: HTMLTextAreaElement, shouldRelocate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def relocateInput(
+  inline def relocateInput(componentEl: HTMLElement, inputEl: HTMLTextAreaElement, shouldRelocate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("relocateInput")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], shouldRelocate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def relocateInput(
     componentEl: HTMLElement,
     inputEl: HTMLTextAreaElement,
     shouldRelocate: Boolean,

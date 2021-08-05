@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @hidden
   */
-class QuickInputButtons protected () extends StObject
+/* private */ class QuickInputButtons () extends StObject
 /* static members */
 object QuickInputButtons {
   

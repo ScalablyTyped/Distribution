@@ -61,82 +61,57 @@ trait PivotGridDataSourceOptions extends StObject {
 }
 object PivotGridDataSourceOptions {
   
-  @scala.inline
-  def apply(): PivotGridDataSourceOptions = {
+  inline def apply(): PivotGridDataSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotGridDataSourceOptions]
   }
   
-  @scala.inline
-  implicit class PivotGridDataSourceOptionsMutableBuilder[Self <: PivotGridDataSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGridDataSourceOptions](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[PivotGridDataSourceField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[PivotGridDataSourceField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: PivotGridDataSourceField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: PivotGridDataSourceField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String | js.Array[js.Any] | js.Function): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
-    @scala.inline
-    def setOnChanged(value: js.Function): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
+    inline def setOnChanged(value: js.Function): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
+    inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
     
-    @scala.inline
-    def setOnFieldsPrepared(value: /* fields */ js.Array[PivotGridDataSourceField] => js.Any): Self = StObject.set(x, "onFieldsPrepared", js.Any.fromFunction1(value))
+    inline def setOnFieldsPrepared(value: /* fields */ js.Array[PivotGridDataSourceField] => js.Any): Self = StObject.set(x, "onFieldsPrepared", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFieldsPreparedUndefined: Self = StObject.set(x, "onFieldsPrepared", js.undefined)
+    inline def setOnFieldsPreparedUndefined: Self = StObject.set(x, "onFieldsPrepared", js.undefined)
     
-    @scala.inline
-    def setOnLoadError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+    inline def setOnLoadError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
+    inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
     
-    @scala.inline
-    def setOnLoadingChanged(value: /* isLoading */ Boolean => js.Any): Self = StObject.set(x, "onLoadingChanged", js.Any.fromFunction1(value))
+    inline def setOnLoadingChanged(value: /* isLoading */ Boolean => js.Any): Self = StObject.set(x, "onLoadingChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadingChangedUndefined: Self = StObject.set(x, "onLoadingChanged", js.undefined)
+    inline def setOnLoadingChangedUndefined: Self = StObject.set(x, "onLoadingChanged", js.undefined)
     
-    @scala.inline
-    def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    inline def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+    inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
     
-    @scala.inline
-    def setRemoteOperations(value: Boolean): Self = StObject.set(x, "remoteOperations", value.asInstanceOf[js.Any])
+    inline def setRemoteOperations(value: Boolean): Self = StObject.set(x, "remoteOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteOperationsUndefined: Self = StObject.set(x, "remoteOperations", js.undefined)
+    inline def setRemoteOperationsUndefined: Self = StObject.set(x, "remoteOperations", js.undefined)
     
-    @scala.inline
-    def setRetrieveFields(value: Boolean): Self = StObject.set(x, "retrieveFields", value.asInstanceOf[js.Any])
+    inline def setRetrieveFields(value: Boolean): Self = StObject.set(x, "retrieveFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrieveFieldsUndefined: Self = StObject.set(x, "retrieveFields", js.undefined)
+    inline def setRetrieveFieldsUndefined: Self = StObject.set(x, "retrieveFields", js.undefined)
     
-    @scala.inline
-    def setStore(value: Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[Type] | Type): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Store | StoreOptions[Store] | XmlaStore | XmlaStoreOptions | js.Array[Type] | Type): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    @scala.inline
-    def setStoreVarargs(value: Type*): Self = StObject.set(x, "store", js.Array(value :_*))
+    inline def setStoreVarargs(value: Type*): Self = StObject.set(x, "store", js.Array(value :_*))
   }
 }

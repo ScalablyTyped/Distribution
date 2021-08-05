@@ -15,17 +15,14 @@ object anon {
   }
   object Dictx {
     
-    @scala.inline
-    def apply[T](length: Double): Dictx[T] = {
+    inline def apply[T](length: Double): Dictx[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictx[T]]
     }
     
-    @scala.inline
-    implicit class DictxMutableBuilder[Self <: Dictx[?], T] (val x: Self & Dictx[T]) extends AnyVal {
+    extension [Self <: Dictx[?], T](x: Self & Dictx[T]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +34,14 @@ object anon {
   }
   object DictxLength {
     
-    @scala.inline
-    def apply[TCollection](length: Double): DictxLength[TCollection] = {
+    inline def apply[TCollection](length: Double): DictxLength[TCollection] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[DictxLength[TCollection]]
     }
     
-    @scala.inline
-    implicit class DictxLengthMutableBuilder[Self <: DictxLength[?], TCollection] (val x: Self & DictxLength[TCollection]) extends AnyVal {
+    extension [Self <: DictxLength[?], TCollection](x: Self & DictxLength[TCollection]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,17 +53,14 @@ object anon {
   }
   object DictxNumberTInner {
     
-    @scala.inline
-    def apply[TInner](length: Double): DictxNumberTInner[TInner] = {
+    inline def apply[TInner](length: Double): DictxNumberTInner[TInner] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[DictxNumberTInner[TInner]]
     }
     
-    @scala.inline
-    implicit class DictxNumberTInnerMutableBuilder[Self <: DictxNumberTInner[?], TInner] (val x: Self & DictxNumberTInner[TInner]) extends AnyVal {
+    extension [Self <: DictxNumberTInner[?], TInner](x: Self & DictxNumberTInner[TInner]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,17 +72,14 @@ object anon {
   }
   object DictxNumberTResult {
     
-    @scala.inline
-    def apply[TResult](length: Double): DictxNumberTResult[TResult] = {
+    inline def apply[TResult](length: Double): DictxNumberTResult[TResult] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[DictxNumberTResult[TResult]]
     }
     
-    @scala.inline
-    implicit class DictxNumberTResultMutableBuilder[Self <: DictxNumberTResult[?], TResult] (val x: Self & DictxNumberTResult[TResult]) extends AnyVal {
+    extension [Self <: DictxNumberTResult[?], TResult](x: Self & DictxNumberTResult[TResult]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,17 +91,14 @@ object anon {
   }
   object DictxNumberU {
     
-    @scala.inline
-    def apply[U](length: Double): DictxNumberU[U] = {
+    inline def apply[U](length: Double): DictxNumberU[U] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[DictxNumberU[U]]
     }
     
-    @scala.inline
-    implicit class DictxNumberUMutableBuilder[Self <: DictxNumberU[?], U] (val x: Self & DictxNumberU[U]) extends AnyVal {
+    extension [Self <: DictxNumberU[?], U](x: Self & DictxNumberU[U]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,20 +110,16 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String, value: js.Any): Key = {
+    inline def apply(key: String, value: js.Any): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,17 +131,14 @@ object anon {
   }
   object Length {
     
-    @scala.inline
-    def apply[TOther](length: Double): Length[TOther] = {
+    inline def apply[TOther](length: Double): Length[TOther] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Length[TOther]]
     }
     
-    @scala.inline
-    implicit class LengthMutableBuilder[Self <: Length[?], TOther] (val x: Self & Length[TOther]) extends AnyVal {
+    extension [Self <: Length[?], TOther](x: Self & Length[TOther]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,20 +150,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply[TKey, TValue](key: TKey, value: TValue): Value[TKey, TValue] = {
+    inline def apply[TKey, TValue](key: TKey, value: TValue): Value[TKey, TValue] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value[TKey, TValue]]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[?, ?], TKey, TValue] (val x: Self & (Value[TKey, TValue])) extends AnyVal {
+    extension [Self <: Value[?, ?], TKey, TValue](x: Self & (Value[TKey, TValue])) {
       
-      @scala.inline
-      def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

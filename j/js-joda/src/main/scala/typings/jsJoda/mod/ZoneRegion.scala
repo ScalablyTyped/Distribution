@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ZoneRegion")
 @js.native
-class ZoneRegion protected () extends ZoneId
+/* private */ class ZoneRegion () extends ZoneId
 object ZoneRegion {
   
   @JSImport("js-joda", "ZoneRegion")
@@ -14,6 +14,5 @@ object ZoneRegion {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def ofId(zoneId: String): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("ofId")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneId]
+  inline def ofId(zoneId: String): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("ofId")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneId]
 }

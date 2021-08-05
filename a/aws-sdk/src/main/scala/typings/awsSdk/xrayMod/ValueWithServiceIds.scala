@@ -18,28 +18,21 @@ trait ValueWithServiceIds extends StObject {
 }
 object ValueWithServiceIds {
   
-  @scala.inline
-  def apply(): ValueWithServiceIds = {
+  inline def apply(): ValueWithServiceIds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueWithServiceIds]
   }
   
-  @scala.inline
-  implicit class ValueWithServiceIdsMutableBuilder[Self <: ValueWithServiceIds] (val x: Self) extends AnyVal {
+  extension [Self <: ValueWithServiceIds](x: Self) {
     
-    @scala.inline
-    def setAnnotationValue(value: AnnotationValue): Self = StObject.set(x, "AnnotationValue", value.asInstanceOf[js.Any])
+    inline def setAnnotationValue(value: AnnotationValue): Self = StObject.set(x, "AnnotationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationValueUndefined: Self = StObject.set(x, "AnnotationValue", js.undefined)
+    inline def setAnnotationValueUndefined: Self = StObject.set(x, "AnnotationValue", js.undefined)
     
-    @scala.inline
-    def setServiceIds(value: ServiceIds): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+    inline def setServiceIds(value: ServiceIds): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
+    inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
     
-    @scala.inline
-    def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
   }
 }

@@ -16,19 +16,15 @@ trait NewDocument
 }
 object NewDocument {
   
-  @scala.inline
-  def apply(id: String): NewDocument = {
+  inline def apply(id: String): NewDocument = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewDocument]
   }
   
-  @scala.inline
-  implicit class NewDocumentMutableBuilder[Self <: NewDocument] (val x: Self) extends AnyVal {
+  extension [Self <: NewDocument](x: Self) {
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

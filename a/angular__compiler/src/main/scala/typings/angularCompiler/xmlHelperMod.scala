@@ -78,11 +78,9 @@ object xmlHelperMod {
     override def visit(visitor: IVisitor): js.Any = js.native
   }
   
-  @scala.inline
-  def escapeXml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeXml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def serialize(nodes: js.Array[Node]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(nodes: js.Array[Node]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait IVisitor extends StObject {
     
@@ -96,8 +94,7 @@ object xmlHelperMod {
   }
   object IVisitor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       visitDeclaration: Declaration => js.Any,
       visitDoctype: Doctype => js.Any,
       visitTag: Tag => js.Any,
@@ -107,20 +104,15 @@ object xmlHelperMod {
       __obj.asInstanceOf[IVisitor]
     }
     
-    @scala.inline
-    implicit class IVisitorMutableBuilder[Self <: IVisitor] (val x: Self) extends AnyVal {
+    extension [Self <: IVisitor](x: Self) {
       
-      @scala.inline
-      def setVisitDeclaration(value: Declaration => js.Any): Self = StObject.set(x, "visitDeclaration", js.Any.fromFunction1(value))
+      inline def setVisitDeclaration(value: Declaration => js.Any): Self = StObject.set(x, "visitDeclaration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitDoctype(value: Doctype => js.Any): Self = StObject.set(x, "visitDoctype", js.Any.fromFunction1(value))
+      inline def setVisitDoctype(value: Doctype => js.Any): Self = StObject.set(x, "visitDoctype", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitTag(value: Tag => js.Any): Self = StObject.set(x, "visitTag", js.Any.fromFunction1(value))
+      inline def setVisitTag(value: Tag => js.Any): Self = StObject.set(x, "visitTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitText(value: Text => js.Any): Self = StObject.set(x, "visitText", js.Any.fromFunction1(value))
+      inline def setVisitText(value: Text => js.Any): Self = StObject.set(x, "visitText", js.Any.fromFunction1(value))
     }
   }
   
@@ -130,17 +122,14 @@ object xmlHelperMod {
   }
   object Node {
     
-    @scala.inline
-    def apply(visit: IVisitor => js.Any): Node = {
+    inline def apply(visit: IVisitor => js.Any): Node = {
       val __obj = js.Dynamic.literal(visit = js.Any.fromFunction1(visit))
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setVisit(value: IVisitor => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
+      inline def setVisit(value: IVisitor => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
     }
   }
 }

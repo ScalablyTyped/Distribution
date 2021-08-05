@@ -11,16 +11,13 @@ trait PickImplmaxSearchDepth extends StObject {
 }
 object PickImplmaxSearchDepth {
   
-  @scala.inline
-  def apply(maxSearchDepth: Double): PickImplmaxSearchDepth = {
+  inline def apply(maxSearchDepth: Double): PickImplmaxSearchDepth = {
     val __obj = js.Dynamic.literal(maxSearchDepth = maxSearchDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxSearchDepth]
   }
   
-  @scala.inline
-  implicit class PickImplmaxSearchDepthMutableBuilder[Self <: PickImplmaxSearchDepth] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmaxSearchDepth](x: Self) {
     
-    @scala.inline
-    def setMaxSearchDepth(value: Double): Self = StObject.set(x, "maxSearchDepth", value.asInstanceOf[js.Any])
+    inline def setMaxSearchDepth(value: Double): Self = StObject.set(x, "maxSearchDepth", value.asInstanceOf[js.Any])
   }
 }

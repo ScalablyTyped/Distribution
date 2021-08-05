@@ -27,67 +27,47 @@ trait PreserveQueryParameters extends StObject {
 }
 object PreserveQueryParameters {
   
-  @scala.inline
-  def apply(): PreserveQueryParameters = {
+  inline def apply(): PreserveQueryParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreserveQueryParameters]
   }
   
-  @scala.inline
-  implicit class PreserveQueryParametersMutableBuilder[Self <: PreserveQueryParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PreserveQueryParameters](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setPreserveQueryParameters(value: Boolean): Self = StObject.set(x, "preserveQueryParameters", value.asInstanceOf[js.Any])
+    inline def setPreserveQueryParameters(value: Boolean): Self = StObject.set(x, "preserveQueryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveQueryParametersUndefined: Self = StObject.set(x, "preserveQueryParameters", js.undefined)
+    inline def setPreserveQueryParametersUndefined: Self = StObject.set(x, "preserveQueryParameters", js.undefined)
     
-    @scala.inline
-    def setProxy(value: DefaultProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: DefaultProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setQueryParameters(value: js.Any): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: js.Any): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+    inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
-    @scala.inline
-    def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
+    inline def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryAttemptsUndefined: Self = StObject.set(x, "retryAttempts", js.undefined)
+    inline def setRetryAttemptsUndefined: Self = StObject.set(x, "retryAttempts", js.undefined)
     
-    @scala.inline
-    def setRetryCallback(value: js.Any): Self = StObject.set(x, "retryCallback", value.asInstanceOf[js.Any])
+    inline def setRetryCallback(value: js.Any): Self = StObject.set(x, "retryCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryCallbackUndefined: Self = StObject.set(x, "retryCallback", js.undefined)
+    inline def setRetryCallbackUndefined: Self = StObject.set(x, "retryCallback", js.undefined)
     
-    @scala.inline
-    def setTemplateValues(value: js.Any): Self = StObject.set(x, "templateValues", value.asInstanceOf[js.Any])
+    inline def setTemplateValues(value: js.Any): Self = StObject.set(x, "templateValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateValuesUndefined: Self = StObject.set(x, "templateValues", js.undefined)
+    inline def setTemplateValuesUndefined: Self = StObject.set(x, "templateValues", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

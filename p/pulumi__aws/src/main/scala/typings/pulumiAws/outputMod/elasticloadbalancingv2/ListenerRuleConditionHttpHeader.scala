@@ -18,22 +18,17 @@ trait ListenerRuleConditionHttpHeader extends StObject {
 }
 object ListenerRuleConditionHttpHeader {
   
-  @scala.inline
-  def apply(httpHeaderName: String, values: js.Array[String]): ListenerRuleConditionHttpHeader = {
+  inline def apply(httpHeaderName: String, values: js.Array[String]): ListenerRuleConditionHttpHeader = {
     val __obj = js.Dynamic.literal(httpHeaderName = httpHeaderName.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleConditionHttpHeader]
   }
   
-  @scala.inline
-  implicit class ListenerRuleConditionHttpHeaderMutableBuilder[Self <: ListenerRuleConditionHttpHeader] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleConditionHttpHeader](x: Self) {
     
-    @scala.inline
-    def setHttpHeaderName(value: String): Self = StObject.set(x, "httpHeaderName", value.asInstanceOf[js.Any])
+    inline def setHttpHeaderName(value: String): Self = StObject.set(x, "httpHeaderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

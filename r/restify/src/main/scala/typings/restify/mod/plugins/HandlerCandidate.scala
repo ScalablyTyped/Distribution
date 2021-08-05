@@ -18,40 +18,29 @@ trait HandlerCandidate extends StObject {
 }
 object HandlerCandidate {
   
-  @scala.inline
-  def apply(handler: RequestHandler | js.Array[RequestHandler]): HandlerCandidate = {
+  inline def apply(handler: RequestHandler | js.Array[RequestHandler]): HandlerCandidate = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandlerCandidate]
   }
   
-  @scala.inline
-  implicit class HandlerCandidateMutableBuilder[Self <: HandlerCandidate] (val x: Self) extends AnyVal {
+  extension [Self <: HandlerCandidate](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String | js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String | js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
+    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
     
-    @scala.inline
-    def setHandler(value: RequestHandler | js.Array[RequestHandler]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: RequestHandler | js.Array[RequestHandler]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+    inline def setHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHandlerVarargs(value: RequestHandler*): Self = StObject.set(x, "handler", js.Array(value :_*))
+    inline def setHandlerVarargs(value: RequestHandler*): Self = StObject.set(x, "handler", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String | js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String | js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

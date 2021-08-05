@@ -24,8 +24,7 @@ trait ProjectsGetColumnResponseData extends StObject {
 }
 object ProjectsGetColumnResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cards_url: String,
     created_at: String,
     id: Double,
@@ -39,31 +38,22 @@ object ProjectsGetColumnResponseData {
     __obj.asInstanceOf[ProjectsGetColumnResponseData]
   }
   
-  @scala.inline
-  implicit class ProjectsGetColumnResponseDataMutableBuilder[Self <: ProjectsGetColumnResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsGetColumnResponseData](x: Self) {
     
-    @scala.inline
-    def setCards_url(value: String): Self = StObject.set(x, "cards_url", value.asInstanceOf[js.Any])
+    inline def setCards_url(value: String): Self = StObject.set(x, "cards_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject_url(value: String): Self = StObject.set(x, "project_url", value.asInstanceOf[js.Any])
+    inline def setProject_url(value: String): Self = StObject.set(x, "project_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

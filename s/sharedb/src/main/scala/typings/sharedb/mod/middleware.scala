@@ -48,8 +48,7 @@ object middleware {
   }
   object ActionContextMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterSubmit: SubmitContext,
       apply: ApplyContext,
       commit: CommitContext,
@@ -66,41 +65,29 @@ object middleware {
       __obj.asInstanceOf[ActionContextMap]
     }
     
-    @scala.inline
-    implicit class ActionContextMapMutableBuilder[Self <: ActionContextMap] (val x: Self) extends AnyVal {
+    extension [Self <: ActionContextMap](x: Self) {
       
-      @scala.inline
-      def setAfterSubmit(value: SubmitContext): Self = StObject.set(x, "afterSubmit", value.asInstanceOf[js.Any])
+      inline def setAfterSubmit(value: SubmitContext): Self = StObject.set(x, "afterSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApply(value: ApplyContext): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+      inline def setApply(value: ApplyContext): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommit(value: CommitContext): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: CommitContext): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnect(value: ConnectContext): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+      inline def setConnect(value: ConnectContext): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoc(value: DocContext): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: DocContext): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: OpContext): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: OpContext): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: QueryContext): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: QueryContext): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadSnapshots(value: ReadSnapshotsContext): Self = StObject.set(x, "readSnapshots", value.asInstanceOf[js.Any])
+      inline def setReadSnapshots(value: ReadSnapshotsContext): Self = StObject.set(x, "readSnapshots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceive(value: ReceiveContext): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
+      inline def setReceive(value: ReceiveContext): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReply(value: ReplyContext): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+      inline def setReply(value: ReplyContext): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmit(value: SubmitContext): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+      inline def setSubmit(value: SubmitContext): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,8 +97,7 @@ object middleware {
        with SubmitRequest
   object ApplyContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -139,8 +125,7 @@ object middleware {
   }
   object BaseContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb
@@ -149,19 +134,15 @@ object middleware {
       __obj.asInstanceOf[BaseContext]
     }
     
-    @scala.inline
-    implicit class BaseContextMutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
+    extension [Self <: BaseContext](x: Self) {
       
-      @scala.inline
-      def setAction(
+      inline def setAction(
         value: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit
       ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgent(value: typings.sharedb.agentMod.^): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: typings.sharedb.agentMod.^): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackend(value: sharedb): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: sharedb): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,8 +152,7 @@ object middleware {
        with SubmitRequest
   object CommitContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -200,8 +180,7 @@ object middleware {
   }
   object ConnectContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -212,14 +191,11 @@ object middleware {
       __obj.asInstanceOf[ConnectContext]
     }
     
-    @scala.inline
-    implicit class ConnectContextMutableBuilder[Self <: ConnectContext] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectContext](x: Self) {
       
-      @scala.inline
-      def setReq(value: js.Any): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: js.Any): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,8 +211,7 @@ object middleware {
   }
   object DocContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -248,17 +223,13 @@ object middleware {
       __obj.asInstanceOf[DocContext]
     }
     
-    @scala.inline
-    implicit class DocContextMutableBuilder[Self <: DocContext] (val x: Self) extends AnyVal {
+    extension [Self <: DocContext](x: Self) {
       
-      @scala.inline
-      def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+      inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,8 +245,7 @@ object middleware {
   }
   object OpContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -287,17 +257,13 @@ object middleware {
       __obj.asInstanceOf[OpContext]
     }
     
-    @scala.inline
-    implicit class OpContextMutableBuilder[Self <: OpContext] (val x: Self) extends AnyVal {
+    extension [Self <: OpContext](x: Self) {
       
-      @scala.inline
-      def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: typings.sharedb.sharedbMod.Op): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: typings.sharedb.sharedbMod.Op): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,8 +291,7 @@ object middleware {
   }
   object QueryContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -339,50 +304,35 @@ object middleware {
       __obj.asInstanceOf[QueryContext]
     }
     
-    @scala.inline
-    implicit class QueryContextMutableBuilder[Self <: QueryContext] (val x: Self) extends AnyVal {
+    extension [Self <: QueryContext](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDb(value: DB): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: DB): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbNull: Self = StObject.set(x, "db", null)
+      inline def setDbNull: Self = StObject.set(x, "db", null)
       
-      @scala.inline
-      def setFields(value: ProjectionFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: ProjectionFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotProjection(value: Projection): Self = StObject.set(x, "snapshotProjection", value.asInstanceOf[js.Any])
+      inline def setSnapshotProjection(value: Projection): Self = StObject.set(x, "snapshotProjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotProjectionNull: Self = StObject.set(x, "snapshotProjection", null)
+      inline def setSnapshotProjectionNull: Self = StObject.set(x, "snapshotProjection", null)
     }
   }
   
@@ -398,8 +348,7 @@ object middleware {
   }
   object ReadSnapshotsContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -411,20 +360,15 @@ object middleware {
       __obj.asInstanceOf[ReadSnapshotsContext]
     }
     
-    @scala.inline
-    implicit class ReadSnapshotsContextMutableBuilder[Self <: ReadSnapshotsContext] (val x: Self) extends AnyVal {
+    extension [Self <: ReadSnapshotsContext](x: Self) {
       
-      @scala.inline
-      def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotType(value: SnapshotType): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
+      inline def setSnapshotType(value: SnapshotType): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshots(value: js.Array[Snapshot]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
+      inline def setSnapshots(value: js.Array[Snapshot]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
+      inline def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
     }
   }
   
@@ -436,8 +380,7 @@ object middleware {
   }
   object ReceiveContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -447,11 +390,9 @@ object middleware {
       __obj.asInstanceOf[ReceiveContext]
     }
     
-    @scala.inline
-    implicit class ReceiveContextMutableBuilder[Self <: ReceiveContext] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiveContext](x: Self) {
       
-      @scala.inline
-      def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -465,8 +406,7 @@ object middleware {
   }
   object ReplyContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,
@@ -477,14 +417,11 @@ object middleware {
       __obj.asInstanceOf[ReplyContext]
     }
     
-    @scala.inline
-    implicit class ReplyContextMutableBuilder[Self <: ReplyContext] (val x: Self) extends AnyVal {
+    extension [Self <: ReplyContext](x: Self) {
       
-      @scala.inline
-      def setReply(value: StringDictionary[js.Any]): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+      inline def setReply(value: StringDictionary[js.Any]): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: ClientRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ClientRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -496,14 +433,11 @@ object middleware {
   trait SnapshotType extends StObject
   object SnapshotType {
     
-    @scala.inline
-    def byTimestamp: typings.sharedb.sharedbStrings.byTimestamp = "byTimestamp".asInstanceOf[typings.sharedb.sharedbStrings.byTimestamp]
+    inline def byTimestamp: typings.sharedb.sharedbStrings.byTimestamp = "byTimestamp".asInstanceOf[typings.sharedb.sharedbStrings.byTimestamp]
     
-    @scala.inline
-    def byVersion: typings.sharedb.sharedbStrings.byVersion = "byVersion".asInstanceOf[typings.sharedb.sharedbStrings.byVersion]
+    inline def byVersion: typings.sharedb.sharedbStrings.byVersion = "byVersion".asInstanceOf[typings.sharedb.sharedbStrings.byVersion]
     
-    @scala.inline
-    def current: typings.sharedb.sharedbStrings.current = "current".asInstanceOf[typings.sharedb.sharedbStrings.current]
+    inline def current: typings.sharedb.sharedbStrings.current = "current".asInstanceOf[typings.sharedb.sharedbStrings.current]
   }
   
   trait SubmitContext
@@ -512,8 +446,7 @@ object middleware {
        with SubmitRequest
   object SubmitContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: afterSubmit | apply | commit | connect | doc | op | query | readSnapshots | receive | reply | submit,
       agent: typings.sharedb.agentMod.^,
       backend: sharedb,

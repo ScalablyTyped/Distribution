@@ -23,34 +23,25 @@ trait ErrorDetail extends StObject {
 }
 object ErrorDetail {
   
-  @scala.inline
-  def apply(): ErrorDetail = {
+  inline def apply(): ErrorDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorDetail]
   }
   
-  @scala.inline
-  implicit class ErrorDetailMutableBuilder[Self <: ErrorDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorDetail](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setResourceIds(value: StringList): Self = StObject.set(x, "resourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: StringList): Self = StObject.set(x, "resourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
+    inline def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
     
-    @scala.inline
-    def setResourceIdsVarargs(value: String*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: String*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
   }
 }

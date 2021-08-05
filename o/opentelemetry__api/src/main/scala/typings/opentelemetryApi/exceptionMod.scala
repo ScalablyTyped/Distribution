@@ -28,35 +28,26 @@ object exceptionMod {
   }
   object ExceptionWithCode {
     
-    @scala.inline
-    def apply(code: String): ExceptionWithCode = {
+    inline def apply(code: String): ExceptionWithCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionWithCode]
     }
     
-    @scala.inline
-    implicit class ExceptionWithCodeMutableBuilder[Self <: ExceptionWithCode] (val x: Self) extends AnyVal {
+    extension [Self <: ExceptionWithCode](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -74,35 +65,26 @@ object exceptionMod {
   }
   object ExceptionWithMessage {
     
-    @scala.inline
-    def apply(message: String): ExceptionWithMessage = {
+    inline def apply(message: String): ExceptionWithMessage = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionWithMessage]
     }
     
-    @scala.inline
-    implicit class ExceptionWithMessageMutableBuilder[Self <: ExceptionWithMessage] (val x: Self) extends AnyVal {
+    extension [Self <: ExceptionWithMessage](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -120,55 +102,43 @@ object exceptionMod {
   }
   object ExceptionWithName {
     
-    @scala.inline
-    def apply(name: String): ExceptionWithName = {
+    inline def apply(name: String): ExceptionWithName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionWithName]
     }
     
-    @scala.inline
-    implicit class ExceptionWithNameMutableBuilder[Self <: ExceptionWithName] (val x: Self) extends AnyVal {
+    extension [Self <: ExceptionWithName](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
   trait _Exception extends StObject
   object _Exception {
     
-    @scala.inline
-    def ExceptionWithCode(code: String): typings.opentelemetryApi.exceptionMod.ExceptionWithCode = {
+    inline def ExceptionWithCode(code: String): typings.opentelemetryApi.exceptionMod.ExceptionWithCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.opentelemetryApi.exceptionMod.ExceptionWithCode]
     }
     
-    @scala.inline
-    def ExceptionWithMessage(message: String): typings.opentelemetryApi.exceptionMod.ExceptionWithMessage = {
+    inline def ExceptionWithMessage(message: String): typings.opentelemetryApi.exceptionMod.ExceptionWithMessage = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.opentelemetryApi.exceptionMod.ExceptionWithMessage]
     }
     
-    @scala.inline
-    def ExceptionWithName(name: String): typings.opentelemetryApi.exceptionMod.ExceptionWithName = {
+    inline def ExceptionWithName(name: String): typings.opentelemetryApi.exceptionMod.ExceptionWithName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.opentelemetryApi.exceptionMod.ExceptionWithName]
     }

@@ -46,8 +46,7 @@ trait XEncryptionProtectedStorage
 }
 object XEncryptionProtectedStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EncryptionAlgorithms: SafeArray[NamedValue],
     acquire: () => Unit,
     getEncryptionAlgorithms: () => SafeArray[NamedValue],
@@ -63,16 +62,12 @@ object XEncryptionProtectedStorage {
     __obj.asInstanceOf[XEncryptionProtectedStorage]
   }
   
-  @scala.inline
-  implicit class XEncryptionProtectedStorageMutableBuilder[Self <: XEncryptionProtectedStorage] (val x: Self) extends AnyVal {
+  extension [Self <: XEncryptionProtectedStorage](x: Self) {
     
-    @scala.inline
-    def setEncryptionAlgorithms(value: SafeArray[NamedValue]): Self = StObject.set(x, "EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    inline def setEncryptionAlgorithms(value: SafeArray[NamedValue]): Self = StObject.set(x, "EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEncryptionAlgorithms(value: () => SafeArray[NamedValue]): Self = StObject.set(x, "getEncryptionAlgorithms", js.Any.fromFunction0(value))
+    inline def setGetEncryptionAlgorithms(value: () => SafeArray[NamedValue]): Self = StObject.set(x, "getEncryptionAlgorithms", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEncryptionAlgorithms(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "setEncryptionAlgorithms", js.Any.fromFunction1(value))
+    inline def setSetEncryptionAlgorithms(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "setEncryptionAlgorithms", js.Any.fromFunction1(value))
   }
 }

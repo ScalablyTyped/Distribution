@@ -13,19 +13,15 @@ trait SendVoiceMessageResponse extends StObject {
 }
 object SendVoiceMessageResponse {
   
-  @scala.inline
-  def apply(): SendVoiceMessageResponse = {
+  inline def apply(): SendVoiceMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendVoiceMessageResponse]
   }
   
-  @scala.inline
-  implicit class SendVoiceMessageResponseMutableBuilder[Self <: SendVoiceMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendVoiceMessageResponse](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
   }
 }

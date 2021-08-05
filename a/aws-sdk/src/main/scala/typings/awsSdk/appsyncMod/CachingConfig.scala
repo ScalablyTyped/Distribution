@@ -18,28 +18,21 @@ trait CachingConfig extends StObject {
 }
 object CachingConfig {
   
-  @scala.inline
-  def apply(): CachingConfig = {
+  inline def apply(): CachingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CachingConfig]
   }
   
-  @scala.inline
-  implicit class CachingConfigMutableBuilder[Self <: CachingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CachingConfig](x: Self) {
     
-    @scala.inline
-    def setCachingKeys(value: CachingKeys): Self = StObject.set(x, "cachingKeys", value.asInstanceOf[js.Any])
+    inline def setCachingKeys(value: CachingKeys): Self = StObject.set(x, "cachingKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachingKeysUndefined: Self = StObject.set(x, "cachingKeys", js.undefined)
+    inline def setCachingKeysUndefined: Self = StObject.set(x, "cachingKeys", js.undefined)
     
-    @scala.inline
-    def setCachingKeysVarargs(value: String*): Self = StObject.set(x, "cachingKeys", js.Array(value :_*))
+    inline def setCachingKeysVarargs(value: String*): Self = StObject.set(x, "cachingKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setTtl(value: Long): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Long): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

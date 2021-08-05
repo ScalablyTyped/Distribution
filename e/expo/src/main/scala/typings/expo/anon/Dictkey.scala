@@ -15,25 +15,19 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(): Dictkey = {
+  inline def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setErrorRecovery(value: js.Any): Self = StObject.set(x, "errorRecovery", value.asInstanceOf[js.Any])
+    inline def setErrorRecovery(value: js.Any): Self = StObject.set(x, "errorRecovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorRecoveryUndefined: Self = StObject.set(x, "errorRecovery", js.undefined)
+    inline def setErrorRecoveryUndefined: Self = StObject.set(x, "errorRecovery", js.undefined)
     
-    @scala.inline
-    def setNotification(value: js.Any): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: js.Any): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
   }
 }

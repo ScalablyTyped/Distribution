@@ -16,23 +16,19 @@ trait Scopes extends StObject {
 }
 object Scopes {
   
-  @scala.inline
-  def apply(): Scopes = {
+  inline def apply(): Scopes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scopes]
   }
   
-  @scala.inline
-  implicit class ScopesMutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
+  extension [Self <: Scopes](x: Self) {
     
-    @scala.inline
-    def setScopes(
+    inline def setScopes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: {  description :string | undefined}}
       */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[js.Any]
     ): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
   }
 }

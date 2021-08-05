@@ -222,187 +222,127 @@ trait JQueryJqGridOptions extends StObject {
 }
 object JQueryJqGridOptions {
   
-  @scala.inline
-  def apply(): JQueryJqGridOptions = {
+  inline def apply(): JQueryJqGridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryJqGridOptions]
   }
   
-  @scala.inline
-  implicit class JQueryJqGridOptionsMutableBuilder[Self <: JQueryJqGridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryJqGridOptions](x: Self) {
     
-    @scala.inline
-    def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
+    inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+    inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
     
-    @scala.inline
-    def setAutoencode(value: Boolean): Self = StObject.set(x, "autoencode", value.asInstanceOf[js.Any])
+    inline def setAutoencode(value: Boolean): Self = StObject.set(x, "autoencode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoencodeUndefined: Self = StObject.set(x, "autoencode", js.undefined)
+    inline def setAutoencodeUndefined: Self = StObject.set(x, "autoencode", js.undefined)
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setColModel(value: js.Array[JQueryJqGridColumn]): Self = StObject.set(x, "colModel", value.asInstanceOf[js.Any])
+    inline def setColModel(value: js.Array[JQueryJqGridColumn]): Self = StObject.set(x, "colModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColModelUndefined: Self = StObject.set(x, "colModel", js.undefined)
+    inline def setColModelUndefined: Self = StObject.set(x, "colModel", js.undefined)
     
-    @scala.inline
-    def setColModelVarargs(value: JQueryJqGridColumn*): Self = StObject.set(x, "colModel", js.Array(value :_*))
+    inline def setColModelVarargs(value: JQueryJqGridColumn*): Self = StObject.set(x, "colModel", js.Array(value :_*))
     
-    @scala.inline
-    def setColNames(value: js.Array[String]): Self = StObject.set(x, "colNames", value.asInstanceOf[js.Any])
+    inline def setColNames(value: js.Array[String]): Self = StObject.set(x, "colNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColNamesUndefined: Self = StObject.set(x, "colNames", js.undefined)
+    inline def setColNamesUndefined: Self = StObject.set(x, "colNames", js.undefined)
     
-    @scala.inline
-    def setColNamesVarargs(value: String*): Self = StObject.set(x, "colNames", js.Array(value :_*))
+    inline def setColNamesVarargs(value: String*): Self = StObject.set(x, "colNames", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDatatype(value: xml | xmlstring | json | jsonstring | local | javascript | js.Function | clientSide): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    inline def setDatatype(value: xml | xmlstring | json | jsonstring | local | javascript | js.Function | clientSide): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
-    @scala.inline
-    def setForceFit(value: Boolean): Self = StObject.set(x, "forceFit", value.asInstanceOf[js.Any])
+    inline def setForceFit(value: Boolean): Self = StObject.set(x, "forceFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceFitUndefined: Self = StObject.set(x, "forceFit", js.undefined)
+    inline def setForceFitUndefined: Self = StObject.set(x, "forceFit", js.undefined)
     
-    @scala.inline
-    def setGridComplete(value: () => Unit): Self = StObject.set(x, "gridComplete", js.Any.fromFunction0(value))
+    inline def setGridComplete(value: () => Unit): Self = StObject.set(x, "gridComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGridCompleteUndefined: Self = StObject.set(x, "gridComplete", js.undefined)
+    inline def setGridCompleteUndefined: Self = StObject.set(x, "gridComplete", js.undefined)
     
-    @scala.inline
-    def setGridview(value: Boolean): Self = StObject.set(x, "gridview", value.asInstanceOf[js.Any])
+    inline def setGridview(value: Boolean): Self = StObject.set(x, "gridview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridviewUndefined: Self = StObject.set(x, "gridview", js.undefined)
+    inline def setGridviewUndefined: Self = StObject.set(x, "gridview", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setJsonReader(value: IJqGridJsonReader): Self = StObject.set(x, "jsonReader", value.asInstanceOf[js.Any])
+    inline def setJsonReader(value: IJqGridJsonReader): Self = StObject.set(x, "jsonReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonReaderUndefined: Self = StObject.set(x, "jsonReader", js.undefined)
+    inline def setJsonReaderUndefined: Self = StObject.set(x, "jsonReader", js.undefined)
     
-    @scala.inline
-    def setLoadonce(value: Boolean): Self = StObject.set(x, "loadonce", value.asInstanceOf[js.Any])
+    inline def setLoadonce(value: Boolean): Self = StObject.set(x, "loadonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadonceUndefined: Self = StObject.set(x, "loadonce", js.undefined)
+    inline def setLoadonceUndefined: Self = StObject.set(x, "loadonce", js.undefined)
     
-    @scala.inline
-    def setMtype(value: GET | POST): Self = StObject.set(x, "mtype", value.asInstanceOf[js.Any])
+    inline def setMtype(value: GET | POST): Self = StObject.set(x, "mtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtypeUndefined: Self = StObject.set(x, "mtype", js.undefined)
+    inline def setMtypeUndefined: Self = StObject.set(x, "mtype", js.undefined)
     
-    @scala.inline
-    def setMultiboxonly(value: Boolean): Self = StObject.set(x, "multiboxonly", value.asInstanceOf[js.Any])
+    inline def setMultiboxonly(value: Boolean): Self = StObject.set(x, "multiboxonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiboxonlyUndefined: Self = StObject.set(x, "multiboxonly", js.undefined)
+    inline def setMultiboxonlyUndefined: Self = StObject.set(x, "multiboxonly", js.undefined)
     
-    @scala.inline
-    def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    inline def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
+    inline def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
     
-    @scala.inline
-    def setOnRightClickRow(value: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event) => Unit): Self = StObject.set(x, "onRightClickRow", js.Any.fromFunction4(value))
+    inline def setOnRightClickRow(value: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event) => Unit): Self = StObject.set(x, "onRightClickRow", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnRightClickRowUndefined: Self = StObject.set(x, "onRightClickRow", js.undefined)
+    inline def setOnRightClickRowUndefined: Self = StObject.set(x, "onRightClickRow", js.undefined)
     
-    @scala.inline
-    def setOnSelectRow(value: (/* id */ String, /* status */ js.Any, /* e */ Event) => Unit): Self = StObject.set(x, "onSelectRow", js.Any.fromFunction3(value))
+    inline def setOnSelectRow(value: (/* id */ String, /* status */ js.Any, /* e */ Event) => Unit): Self = StObject.set(x, "onSelectRow", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnSelectRowUndefined: Self = StObject.set(x, "onSelectRow", js.undefined)
+    inline def setOnSelectRowUndefined: Self = StObject.set(x, "onSelectRow", js.undefined)
     
-    @scala.inline
-    def setPager(value: String): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: String): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+    inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
     
-    @scala.inline
-    def setRowList(value: js.Array[Double]): Self = StObject.set(x, "rowList", value.asInstanceOf[js.Any])
+    inline def setRowList(value: js.Array[Double]): Self = StObject.set(x, "rowList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowListUndefined: Self = StObject.set(x, "rowList", js.undefined)
+    inline def setRowListUndefined: Self = StObject.set(x, "rowList", js.undefined)
     
-    @scala.inline
-    def setRowListVarargs(value: Double*): Self = StObject.set(x, "rowList", js.Array(value :_*))
+    inline def setRowListVarargs(value: Double*): Self = StObject.set(x, "rowList", js.Array(value :_*))
     
-    @scala.inline
-    def setRowNum(value: Double): Self = StObject.set(x, "rowNum", value.asInstanceOf[js.Any])
+    inline def setRowNum(value: Double): Self = StObject.set(x, "rowNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowNumUndefined: Self = StObject.set(x, "rowNum", js.undefined)
+    inline def setRowNumUndefined: Self = StObject.set(x, "rowNum", js.undefined)
     
-    @scala.inline
-    def setShrinkToFit(value: Boolean | Double): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
+    inline def setShrinkToFit(value: Boolean | Double): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
+    inline def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
     
-    @scala.inline
-    def setSortname(value: String): Self = StObject.set(x, "sortname", value.asInstanceOf[js.Any])
+    inline def setSortname(value: String): Self = StObject.set(x, "sortname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortnameUndefined: Self = StObject.set(x, "sortname", js.undefined)
+    inline def setSortnameUndefined: Self = StObject.set(x, "sortname", js.undefined)
     
-    @scala.inline
-    def setSortorder(value: asc | desc): Self = StObject.set(x, "sortorder", value.asInstanceOf[js.Any])
+    inline def setSortorder(value: asc | desc): Self = StObject.set(x, "sortorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortorderUndefined: Self = StObject.set(x, "sortorder", js.undefined)
+    inline def setSortorderUndefined: Self = StObject.set(x, "sortorder", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String | clientArray): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | clientArray): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setViewrecords(value: Boolean): Self = StObject.set(x, "viewrecords", value.asInstanceOf[js.Any])
+    inline def setViewrecords(value: Boolean): Self = StObject.set(x, "viewrecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewrecordsUndefined: Self = StObject.set(x, "viewrecords", js.undefined)
+    inline def setViewrecordsUndefined: Self = StObject.set(x, "viewrecords", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

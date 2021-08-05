@@ -13,19 +13,15 @@ trait LaunchAppRequest extends StObject {
 }
 object LaunchAppRequest {
   
-  @scala.inline
-  def apply(): LaunchAppRequest = {
+  inline def apply(): LaunchAppRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchAppRequest]
   }
   
-  @scala.inline
-  implicit class LaunchAppRequestMutableBuilder[Self <: LaunchAppRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchAppRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
   }
 }

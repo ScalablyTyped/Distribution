@@ -20,8 +20,7 @@ trait Instance extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     forceUpdate: () => Unit,
     setOptions: PartialOptionsGenericany => js.Promise[PartialState],
@@ -32,22 +31,16 @@ object Instance {
     __obj.asInstanceOf[Instance]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+  extension [Self <: Instance](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
+    inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetOptions(value: PartialOptionsGenericany => js.Promise[PartialState]): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: PartialOptionsGenericany => js.Promise[PartialState]): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => js.Promise[PartialState]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => js.Promise[PartialState]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

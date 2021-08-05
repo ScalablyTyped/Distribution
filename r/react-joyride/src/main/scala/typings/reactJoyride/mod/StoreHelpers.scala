@@ -24,8 +24,7 @@ trait StoreHelpers extends StObject {
 }
 object StoreHelpers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     go: Double => Unit,
     info: () => StoreState,
@@ -39,31 +38,22 @@ object StoreHelpers {
     __obj.asInstanceOf[StoreHelpers]
   }
   
-  @scala.inline
-  implicit class StoreHelpersMutableBuilder[Self <: StoreHelpers] (val x: Self) extends AnyVal {
+  extension [Self <: StoreHelpers](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGo(value: Double => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
+    inline def setGo(value: Double => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: () => StoreState): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
+    inline def setInfo(value: () => StoreState): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+    inline def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: Boolean => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+    inline def setReset(value: Boolean => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkip(value: () => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction0(value))
+    inline def setSkip(value: () => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction0(value))
   }
 }

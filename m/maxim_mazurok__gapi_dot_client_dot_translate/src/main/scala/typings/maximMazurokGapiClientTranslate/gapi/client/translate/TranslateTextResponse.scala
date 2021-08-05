@@ -14,31 +14,23 @@ trait TranslateTextResponse extends StObject {
 }
 object TranslateTextResponse {
   
-  @scala.inline
-  def apply(): TranslateTextResponse = {
+  inline def apply(): TranslateTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TranslateTextResponse]
   }
   
-  @scala.inline
-  implicit class TranslateTextResponseMutableBuilder[Self <: TranslateTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateTextResponse](x: Self) {
     
-    @scala.inline
-    def setGlossaryTranslations(value: js.Array[Translation]): Self = StObject.set(x, "glossaryTranslations", value.asInstanceOf[js.Any])
+    inline def setGlossaryTranslations(value: js.Array[Translation]): Self = StObject.set(x, "glossaryTranslations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlossaryTranslationsUndefined: Self = StObject.set(x, "glossaryTranslations", js.undefined)
+    inline def setGlossaryTranslationsUndefined: Self = StObject.set(x, "glossaryTranslations", js.undefined)
     
-    @scala.inline
-    def setGlossaryTranslationsVarargs(value: Translation*): Self = StObject.set(x, "glossaryTranslations", js.Array(value :_*))
+    inline def setGlossaryTranslationsVarargs(value: Translation*): Self = StObject.set(x, "glossaryTranslations", js.Array(value :_*))
     
-    @scala.inline
-    def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    @scala.inline
-    def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
   }
 }

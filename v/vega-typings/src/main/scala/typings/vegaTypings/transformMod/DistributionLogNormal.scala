@@ -18,28 +18,21 @@ trait DistributionLogNormal
 }
 object DistributionLogNormal {
   
-  @scala.inline
-  def apply(): DistributionLogNormal = {
+  inline def apply(): DistributionLogNormal = {
     val __obj = js.Dynamic.literal(function = "lognormal")
     __obj.asInstanceOf[DistributionLogNormal]
   }
   
-  @scala.inline
-  implicit class DistributionLogNormalMutableBuilder[Self <: DistributionLogNormal] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionLogNormal](x: Self) {
     
-    @scala.inline
-    def setFunction(value: lognormal): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: lognormal): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMean(value: Double | SignalRef): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double | SignalRef): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+    inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
-    @scala.inline
-    def setStdev(value: Double | SignalRef): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
+    inline def setStdev(value: Double | SignalRef): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdevUndefined: Self = StObject.set(x, "stdev", js.undefined)
+    inline def setStdevUndefined: Self = StObject.set(x, "stdev", js.undefined)
   }
 }

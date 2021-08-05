@@ -38,43 +38,31 @@ trait Viewport extends StObject {
 }
 object Viewport {
   
-  @scala.inline
-  def apply(height: Double, width: Double): Viewport = {
+  inline def apply(height: Double, width: Double): Viewport = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewport]
   }
   
-  @scala.inline
-  implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
+  extension [Self <: Viewport](x: Self) {
     
-    @scala.inline
-    def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+    inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceScaleFactorUndefined: Self = StObject.set(x, "deviceScaleFactor", js.undefined)
+    inline def setDeviceScaleFactorUndefined: Self = StObject.set(x, "deviceScaleFactor", js.undefined)
     
-    @scala.inline
-    def setHasTouch(value: Boolean): Self = StObject.set(x, "hasTouch", value.asInstanceOf[js.Any])
+    inline def setHasTouch(value: Boolean): Self = StObject.set(x, "hasTouch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasTouchUndefined: Self = StObject.set(x, "hasTouch", js.undefined)
+    inline def setHasTouchUndefined: Self = StObject.set(x, "hasTouch", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
+    inline def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLandscapeUndefined: Self = StObject.set(x, "isLandscape", js.undefined)
+    inline def setIsLandscapeUndefined: Self = StObject.set(x, "isLandscape", js.undefined)
     
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+    inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

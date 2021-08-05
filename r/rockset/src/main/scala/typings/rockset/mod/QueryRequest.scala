@@ -11,19 +11,15 @@ trait QueryRequest extends StObject {
 }
 object QueryRequest {
   
-  @scala.inline
-  def apply(): QueryRequest = {
+  inline def apply(): QueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRequest]
   }
   
-  @scala.inline
-  implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRequest](x: Self) {
     
-    @scala.inline
-    def setSql(value: QueryRequestSql): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: QueryRequestSql): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+    inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
   }
 }

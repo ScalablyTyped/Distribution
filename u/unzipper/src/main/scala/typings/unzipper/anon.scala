@@ -54,8 +54,7 @@ object anon {
   }
   object CompressedSize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compressedSize: Double,
       compressionMethod: Double,
       crc32: Double,
@@ -69,38 +68,27 @@ object anon {
       __obj.asInstanceOf[CompressedSize]
     }
     
-    @scala.inline
-    implicit class CompressedSizeMutableBuilder[Self <: CompressedSize] (val x: Self) extends AnyVal {
+    extension [Self <: CompressedSize](x: Self) {
       
-      @scala.inline
-      def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
+      inline def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionMethod(value: Double): Self = StObject.set(x, "compressionMethod", value.asInstanceOf[js.Any])
+      inline def setCompressionMethod(value: Double): Self = StObject.set(x, "compressionMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrc32(value: Double): Self = StObject.set(x, "crc32", value.asInstanceOf[js.Any])
+      inline def setCrc32(value: Double): Self = StObject.set(x, "crc32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraFieldLength(value: Double): Self = StObject.set(x, "extraFieldLength", value.asInstanceOf[js.Any])
+      inline def setExtraFieldLength(value: Double): Self = StObject.set(x, "extraFieldLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameLength(value: Double): Self = StObject.set(x, "fileNameLength", value.asInstanceOf[js.Any])
+      inline def setFileNameLength(value: Double): Self = StObject.set(x, "fileNameLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedTime(value: Double): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+      inline def setLastModifiedTime(value: Double): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: Double): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Double): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+      inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
       
-      @scala.inline
-      def setVersionsNeededToExtract(value: Double): Self = StObject.set(x, "versionsNeededToExtract", value.asInstanceOf[js.Any])
+      inline def setVersionsNeededToExtract(value: Double): Self = StObject.set(x, "versionsNeededToExtract", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,8 +108,7 @@ object anon {
   }
   object Disknum {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compressedSize: Double,
       disknum: Double,
       offset: Double,
@@ -133,26 +120,19 @@ object anon {
       __obj.asInstanceOf[Disknum]
     }
     
-    @scala.inline
-    implicit class DisknumMutableBuilder[Self <: Disknum] (val x: Self) extends AnyVal {
+    extension [Self <: Disknum](x: Self) {
       
-      @scala.inline
-      def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
+      inline def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisknum(value: Double): Self = StObject.set(x, "disknum", value.asInstanceOf[js.Any])
+      inline def setDisknum(value: Double): Self = StObject.set(x, "disknum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsize(value: Double): Self = StObject.set(x, "partsize", value.asInstanceOf[js.Any])
+      inline def setPartsize(value: Double): Self = StObject.set(x, "partsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: Double): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Double): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncompressedSize(value: Double): Self = StObject.set(x, "uncompressedSize", value.asInstanceOf[js.Any])
+      inline def setUncompressedSize(value: Double): Self = StObject.set(x, "uncompressedSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,17 +142,14 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(path: String): Path = {
+    inline def apply(path: String): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,20 +161,16 @@ object anon {
   }
   object Size {
     
-    @scala.inline
-    def apply(size: () => js.Promise[Double], stream: Readable): Size = {
+    inline def apply(size: () => js.Promise[Double], stream: Readable): Size = {
       val __obj = js.Dynamic.literal(size = js.Any.fromFunction0(size), stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setSize(value: () => js.Promise[Double]): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => js.Promise[Double]): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStream(value: Readable): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Readable): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   

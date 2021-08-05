@@ -71,8 +71,7 @@ object esListMod {
     @JSImport("react-virtualized/dist/es/List", "List.defaultProps")
     @js.native
     def defaultProps: AutoHeight = js.native
-    @scala.inline
-    def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ListProps
@@ -108,8 +107,7 @@ object esListMod {
   }
   object ListProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       height: Double,
       rowCount: Double,
       rowHeight: Double | (js.Function1[/* params */ Index, Double]),
@@ -120,41 +118,29 @@ object esListMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListProps](x: Self) {
       
-      @scala.inline
-      def setNoRowsRenderer(value: () => Element): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
+      inline def setNoRowsRenderer(value: () => Element): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNoRowsRendererUndefined: Self = StObject.set(x, "noRowsRenderer", js.undefined)
+      inline def setNoRowsRendererUndefined: Self = StObject.set(x, "noRowsRenderer", js.undefined)
       
-      @scala.inline
-      def setOnRowsRendered(value: /* info */ RenderedRows => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
+      inline def setOnRowsRendered(value: /* info */ RenderedRows => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
+      inline def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: /* params */ OnScrollParams => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* params */ OnScrollParams => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setRowRenderer(value: /* props */ ListRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
+      inline def setRowRenderer(value: /* props */ ListRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollToAlignment(value: String): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+      inline def setScrollToAlignment(value: String): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
+      inline def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
       
-      @scala.inline
-      def setScrollToIndex(value: Double): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
+      inline def setScrollToIndex(value: Double): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToIndexUndefined: Self = StObject.set(x, "scrollToIndex", js.undefined)
+      inline def setScrollToIndexUndefined: Self = StObject.set(x, "scrollToIndex", js.undefined)
     }
   }
   
@@ -177,8 +163,7 @@ object esListMod {
   }
   object ListRowProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnIndex: Double,
       index: Double,
       isScrolling: Boolean,
@@ -191,29 +176,21 @@ object esListMod {
       __obj.asInstanceOf[ListRowProps]
     }
     
-    @scala.inline
-    implicit class ListRowPropsMutableBuilder[Self <: ListRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListRowProps](x: Self) {
       
-      @scala.inline
-      def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+      inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,8 +202,7 @@ object esListMod {
        with IndexRange
   object RenderedRows {
     
-    @scala.inline
-    def apply(overscanStartIndex: Double, overscanStopIndex: Double, startIndex: Double, stopIndex: Double): RenderedRows = {
+    inline def apply(overscanStartIndex: Double, overscanStopIndex: Double, startIndex: Double, stopIndex: Double): RenderedRows = {
       val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex.asInstanceOf[js.Any], overscanStopIndex = overscanStopIndex.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], stopIndex = stopIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderedRows]
     }

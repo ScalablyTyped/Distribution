@@ -25,7 +25,7 @@ class IonRippleEffect protected ()
   /* CompleteClass */
   override def addRipple(x: Double, y: Double): js.Promise[js.Function0[Unit]] = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * Sets the type of ripple-effect:  - `bounded`: the ripple effect expands from the user's click position - `unbounded`: the ripple effect expands from the center of the button and overflows the container.  NOTE: Surfaces for bounded ripples should have the overflow property set to hidden, while surfaces for unbounded ripples should have it set to visible.
@@ -33,5 +33,5 @@ class IonRippleEffect protected ()
   /* CompleteClass */
   var `type`: bounded | unbounded = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

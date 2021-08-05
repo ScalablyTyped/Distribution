@@ -18,25 +18,19 @@ trait ListenerTlsCertificate extends StObject {
 }
 object ListenerTlsCertificate {
   
-  @scala.inline
-  def apply(): ListenerTlsCertificate = {
+  inline def apply(): ListenerTlsCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListenerTlsCertificate]
   }
   
-  @scala.inline
-  implicit class ListenerTlsCertificateMutableBuilder[Self <: ListenerTlsCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerTlsCertificate](x: Self) {
     
-    @scala.inline
-    def setAcm(value: ListenerTlsAcmCertificate): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
+    inline def setAcm(value: ListenerTlsAcmCertificate): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
+    inline def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
     
-    @scala.inline
-    def setFile(value: ListenerTlsFileCertificate): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: ListenerTlsFileCertificate): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "lambda-wrapper"
-version := "0.3-dt-20200219Z-5d3746"
+version := "0.3-dt-20200219Z-6f0cf1"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20201013Z-509290",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20201013Z-d5a7f8",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

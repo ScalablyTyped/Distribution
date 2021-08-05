@@ -14,25 +14,19 @@ trait GitSourceContext extends StObject {
 }
 object GitSourceContext {
   
-  @scala.inline
-  def apply(): GitSourceContext = {
+  inline def apply(): GitSourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GitSourceContext]
   }
   
-  @scala.inline
-  implicit class GitSourceContextMutableBuilder[Self <: GitSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: GitSourceContext](x: Self) {
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait TranslationArg extends StObject {
 }
 object TranslationArg {
   
-  @scala.inline
-  def apply(input: String, maximum: Double, minimum: Double): TranslationArg = {
+  inline def apply(input: String, maximum: Double, minimum: Double): TranslationArg = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], maximum = maximum.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationArg]
   }
   
-  @scala.inline
-  implicit class TranslationArgMutableBuilder[Self <: TranslationArg] (val x: Self) extends AnyVal {
+  extension [Self <: TranslationArg](x: Self) {
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
   }
 }

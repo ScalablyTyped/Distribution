@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with DefaultState
 object State {
   
-  @scala.inline
-  def apply(fields: js.Object, unset: js.Array[String]): State = {
+  inline def apply(fields: js.Object, unset: js.Array[String]): State = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], unset = unset.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }

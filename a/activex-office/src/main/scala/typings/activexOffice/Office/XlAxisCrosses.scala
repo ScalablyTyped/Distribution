@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlAxisCrosses extends StObject
 object XlAxisCrosses {
   
-  @scala.inline
-  def xlAxisCrossesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlAxisCrossesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlAxisCrossesCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  inline def xlAxisCrossesCustom: `-4114` = -4114.asInstanceOf[`-4114`]
   
-  @scala.inline
-  def xlAxisCrossesMaximum: `2` = 2.asInstanceOf[`2`]
+  inline def xlAxisCrossesMaximum: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlAxisCrossesMinimum: `4` = 4.asInstanceOf[`4`]
+  inline def xlAxisCrossesMinimum: `4` = 4.asInstanceOf[`4`]
 }

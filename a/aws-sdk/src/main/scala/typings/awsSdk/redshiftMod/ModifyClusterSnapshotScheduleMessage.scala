@@ -23,28 +23,21 @@ trait ModifyClusterSnapshotScheduleMessage extends StObject {
 }
 object ModifyClusterSnapshotScheduleMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): ModifyClusterSnapshotScheduleMessage = {
+  inline def apply(ClusterIdentifier: String): ModifyClusterSnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterSnapshotScheduleMessage]
   }
   
-  @scala.inline
-  implicit class ModifyClusterSnapshotScheduleMessageMutableBuilder[Self <: ModifyClusterSnapshotScheduleMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterSnapshotScheduleMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociateSchedule(value: BooleanOptional): Self = StObject.set(x, "DisassociateSchedule", value.asInstanceOf[js.Any])
+    inline def setDisassociateSchedule(value: BooleanOptional): Self = StObject.set(x, "DisassociateSchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociateScheduleUndefined: Self = StObject.set(x, "DisassociateSchedule", js.undefined)
+    inline def setDisassociateScheduleUndefined: Self = StObject.set(x, "DisassociateSchedule", js.undefined)
     
-    @scala.inline
-    def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
+    inline def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleIdentifierUndefined: Self = StObject.set(x, "ScheduleIdentifier", js.undefined)
+    inline def setScheduleIdentifierUndefined: Self = StObject.set(x, "ScheduleIdentifier", js.undefined)
   }
 }

@@ -36,29 +36,22 @@ trait StatefulSetCondition extends StObject {
 }
 object StatefulSetCondition {
   
-  @scala.inline
-  def apply(lastTransitionTime: String, message: String, reason: String, status: String, `type`: String): StatefulSetCondition = {
+  inline def apply(lastTransitionTime: String, message: String, reason: String, status: String, `type`: String): StatefulSetCondition = {
     val __obj = js.Dynamic.literal(lastTransitionTime = lastTransitionTime.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulSetCondition]
   }
   
-  @scala.inline
-  implicit class StatefulSetConditionMutableBuilder[Self <: StatefulSetCondition] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulSetCondition](x: Self) {
     
-    @scala.inline
-    def setLastTransitionTime(value: String): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+    inline def setLastTransitionTime(value: String): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

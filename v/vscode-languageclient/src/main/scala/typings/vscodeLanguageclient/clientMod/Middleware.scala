@@ -21,8 +21,7 @@ trait Middleware
      with SelectionRangeProviderMiddleware
 object Middleware {
   
-  @scala.inline
-  def apply(): Middleware = {
+  inline def apply(): Middleware = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Middleware]
   }

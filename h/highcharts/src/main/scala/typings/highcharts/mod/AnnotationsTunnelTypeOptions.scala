@@ -43,58 +43,41 @@ trait AnnotationsTunnelTypeOptions extends StObject {
 }
 object AnnotationsTunnelTypeOptions {
   
-  @scala.inline
-  def apply(): AnnotationsTunnelTypeOptions = {
+  inline def apply(): AnnotationsTunnelTypeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsTunnelTypeOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsTunnelTypeOptionsMutableBuilder[Self <: AnnotationsTunnelTypeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsTunnelTypeOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: js.Object | AnnotationsTunnelTypeBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: js.Object | AnnotationsTunnelTypeBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightControlPoint(value: AnnotationsTunnelTypeHeightControlPointOptions): Self = StObject.set(x, "heightControlPoint", value.asInstanceOf[js.Any])
+    inline def setHeightControlPoint(value: AnnotationsTunnelTypeHeightControlPointOptions): Self = StObject.set(x, "heightControlPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightControlPointUndefined: Self = StObject.set(x, "heightControlPoint", js.undefined)
+    inline def setHeightControlPointUndefined: Self = StObject.set(x, "heightControlPoint", js.undefined)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLine(value: AnnotationsTunnelTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: AnnotationsTunnelTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setPoints(value: js.Array[AnnotationsTunnelTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[AnnotationsTunnelTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: AnnotationsTunnelTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: AnnotationsTunnelTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    @scala.inline
-    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

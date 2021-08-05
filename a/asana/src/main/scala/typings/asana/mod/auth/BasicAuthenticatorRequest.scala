@@ -11,16 +11,13 @@ trait BasicAuthenticatorRequest extends StObject {
 }
 object BasicAuthenticatorRequest {
   
-  @scala.inline
-  def apply(auth: Password): BasicAuthenticatorRequest = {
+  inline def apply(auth: Password): BasicAuthenticatorRequest = {
     val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicAuthenticatorRequest]
   }
   
-  @scala.inline
-  implicit class BasicAuthenticatorRequestMutableBuilder[Self <: BasicAuthenticatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BasicAuthenticatorRequest](x: Self) {
     
-    @scala.inline
-    def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
   }
 }

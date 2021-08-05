@@ -16,19 +16,16 @@ trait SelectionRangeProvider extends StObject {
 }
 object SelectionRangeProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideSelectionRanges: (ITextModel, js.Array[Position], CancellationToken) => ProviderResult[js.Array[js.Array[SelectionRange]]]
   ): SelectionRangeProvider = {
     val __obj = js.Dynamic.literal(provideSelectionRanges = js.Any.fromFunction3(provideSelectionRanges))
     __obj.asInstanceOf[SelectionRangeProvider]
   }
   
-  @scala.inline
-  implicit class SelectionRangeProviderMutableBuilder[Self <: SelectionRangeProvider] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionRangeProvider](x: Self) {
     
-    @scala.inline
-    def setProvideSelectionRanges(
+    inline def setProvideSelectionRanges(
       value: (ITextModel, js.Array[Position], CancellationToken) => ProviderResult[js.Array[js.Array[SelectionRange]]]
     ): Self = StObject.set(x, "provideSelectionRanges", js.Any.fromFunction3(value))
   }

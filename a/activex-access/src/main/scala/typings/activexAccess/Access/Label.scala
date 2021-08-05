@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Label extends StObject {
   
-  @JSName("Access.Label_typekey")
+  /* private */ @JSName("Access.Label_typekey")
   var AccessDotLabel_typekey: Label = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

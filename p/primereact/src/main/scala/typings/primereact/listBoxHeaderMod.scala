@@ -30,32 +30,24 @@ object listBoxHeaderMod {
   }
   object ListBoxHeaderProps {
     
-    @scala.inline
-    def apply(): ListBoxHeaderProps = {
+    inline def apply(): ListBoxHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListBoxHeaderProps]
     }
     
-    @scala.inline
-    implicit class ListBoxHeaderPropsMutableBuilder[Self <: ListBoxHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListBoxHeaderProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setOnFilter(value: /* e */ Value => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* e */ Value => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
+      inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
     }
   }
 }

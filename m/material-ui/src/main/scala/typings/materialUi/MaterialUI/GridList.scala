@@ -34,38 +34,28 @@ object GridList {
   }
   object GridListProps {
     
-    @scala.inline
-    def apply(): GridListProps = {
+    inline def apply(): GridListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridListProps]
     }
     
-    @scala.inline
-    implicit class GridListPropsMutableBuilder[Self <: GridListProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridListProps](x: Self) {
       
-      @scala.inline
-      def setCellHeight(value: Double | auto): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+      inline def setCellHeight(value: Double | auto): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+      inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -101,92 +91,64 @@ object GridList {
   }
   object GridTileProps {
     
-    @scala.inline
-    def apply(): GridTileProps = {
+    inline def apply(): GridTileProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridTileProps]
     }
     
-    @scala.inline
-    implicit class GridTilePropsMutableBuilder[Self <: GridTileProps] (val x: Self) extends AnyVal {
+    extension [Self <: GridTileProps](x: Self) {
       
-      @scala.inline
-      def setActionIcon(value: ReactElement): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
+      inline def setActionIcon(value: ReactElement): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
+      inline def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
       
-      @scala.inline
-      def setActionPosition(value: left | right): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
+      inline def setActionPosition(value: left | right): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
+      inline def setActionPositionUndefined: Self = StObject.set(x, "actionPosition", js.undefined)
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setContainerElement(value: String | ReactElement | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
+      inline def setContainerElement(value: String | ReactElement | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
+      inline def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleStyle(value: CSSProperties): Self = StObject.set(x, "subtitleStyle", value.asInstanceOf[js.Any])
+      inline def setSubtitleStyle(value: CSSProperties): Self = StObject.set(x, "subtitleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleStyleUndefined: Self = StObject.set(x, "subtitleStyle", js.undefined)
+      inline def setSubtitleStyleUndefined: Self = StObject.set(x, "subtitleStyle", js.undefined)
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleBackground(value: String): Self = StObject.set(x, "titleBackground", value.asInstanceOf[js.Any])
+      inline def setTitleBackground(value: String): Self = StObject.set(x, "titleBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleBackgroundUndefined: Self = StObject.set(x, "titleBackground", js.undefined)
+      inline def setTitleBackgroundUndefined: Self = StObject.set(x, "titleBackground", js.undefined)
       
-      @scala.inline
-      def setTitlePosition(value: top | bottom): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
+      inline def setTitlePosition(value: top | bottom): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePositionUndefined: Self = StObject.set(x, "titlePosition", js.undefined)
+      inline def setTitlePositionUndefined: Self = StObject.set(x, "titlePosition", js.undefined)
       
-      @scala.inline
-      def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+      inline def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+      inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

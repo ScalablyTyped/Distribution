@@ -12,17 +12,14 @@ object anon {
   }
   object Created {
     
-    @scala.inline
-    def apply(created: Boolean): Created = {
+    inline def apply(created: Boolean): Created = {
       val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any])
       __obj.asInstanceOf[Created]
     }
     
-    @scala.inline
-    implicit class CreatedMutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
+    extension [Self <: Created](x: Self) {
       
-      @scala.inline
-      def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,26 +33,20 @@ object anon {
   }
   object ProjectId {
     
-    @scala.inline
-    def apply(projectId: String, writeKey: String): ProjectId = {
+    inline def apply(projectId: String, writeKey: String): ProjectId = {
       val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], writeKey = writeKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProjectId]
     }
     
-    @scala.inline
-    implicit class ProjectIdMutableBuilder[Self <: ProjectId] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectId](x: Self) {
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+      inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
+      inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      @scala.inline
-      def setWriteKey(value: String): Self = StObject.set(x, "writeKey", value.asInstanceOf[js.Any])
+      inline def setWriteKey(value: String): Self = StObject.set(x, "writeKey", value.asInstanceOf[js.Any])
     }
   }
 }

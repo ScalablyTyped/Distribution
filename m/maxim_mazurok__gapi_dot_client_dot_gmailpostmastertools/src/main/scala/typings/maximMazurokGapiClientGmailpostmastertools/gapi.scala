@@ -27,32 +27,24 @@ object gapi {
       }
       object DeliveryError {
         
-        @scala.inline
-        def apply(): DeliveryError = {
+        inline def apply(): DeliveryError = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[DeliveryError]
         }
         
-        @scala.inline
-        implicit class DeliveryErrorMutableBuilder[Self <: DeliveryError] (val x: Self) extends AnyVal {
+        extension [Self <: DeliveryError](x: Self) {
           
-          @scala.inline
-          def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
+          inline def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorClassUndefined: Self = StObject.set(x, "errorClass", js.undefined)
+          inline def setErrorClassUndefined: Self = StObject.set(x, "errorClass", js.undefined)
           
-          @scala.inline
-          def setErrorRatio(value: Double): Self = StObject.set(x, "errorRatio", value.asInstanceOf[js.Any])
+          inline def setErrorRatio(value: Double): Self = StObject.set(x, "errorRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorRatioUndefined: Self = StObject.set(x, "errorRatio", js.undefined)
+          inline def setErrorRatioUndefined: Self = StObject.set(x, "errorRatio", js.undefined)
           
-          @scala.inline
-          def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+          inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
+          inline def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
         }
       }
       
@@ -69,32 +61,24 @@ object gapi {
       }
       object Domain {
         
-        @scala.inline
-        def apply(): Domain = {
+        inline def apply(): Domain = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Domain]
         }
         
-        @scala.inline
-        implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+        extension [Self <: Domain](x: Self) {
           
-          @scala.inline
-          def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+          inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+          inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+          inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+          inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
         }
       }
       
@@ -125,26 +109,20 @@ object gapi {
       }
       object FeedbackLoop {
         
-        @scala.inline
-        def apply(): FeedbackLoop = {
+        inline def apply(): FeedbackLoop = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[FeedbackLoop]
         }
         
-        @scala.inline
-        implicit class FeedbackLoopMutableBuilder[Self <: FeedbackLoop] (val x: Self) extends AnyVal {
+        extension [Self <: FeedbackLoop](x: Self) {
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setSpamRatio(value: Double): Self = StObject.set(x, "spamRatio", value.asInstanceOf[js.Any])
+          inline def setSpamRatio(value: Double): Self = StObject.set(x, "spamRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpamRatioUndefined: Self = StObject.set(x, "spamRatio", js.undefined)
+          inline def setSpamRatioUndefined: Self = StObject.set(x, "spamRatio", js.undefined)
         }
       }
       
@@ -161,35 +139,26 @@ object gapi {
       }
       object IpReputation {
         
-        @scala.inline
-        def apply(): IpReputation = {
+        inline def apply(): IpReputation = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IpReputation]
         }
         
-        @scala.inline
-        implicit class IpReputationMutableBuilder[Self <: IpReputation] (val x: Self) extends AnyVal {
+        extension [Self <: IpReputation](x: Self) {
           
-          @scala.inline
-          def setNumIps(value: String): Self = StObject.set(x, "numIps", value.asInstanceOf[js.Any])
+          inline def setNumIps(value: String): Self = StObject.set(x, "numIps", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNumIpsUndefined: Self = StObject.set(x, "numIps", js.undefined)
+          inline def setNumIpsUndefined: Self = StObject.set(x, "numIps", js.undefined)
           
-          @scala.inline
-          def setReputation(value: String): Self = StObject.set(x, "reputation", value.asInstanceOf[js.Any])
+          inline def setReputation(value: String): Self = StObject.set(x, "reputation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReputationUndefined: Self = StObject.set(x, "reputation", js.undefined)
+          inline def setReputationUndefined: Self = StObject.set(x, "reputation", js.undefined)
           
-          @scala.inline
-          def setSampleIps(value: js.Array[String]): Self = StObject.set(x, "sampleIps", value.asInstanceOf[js.Any])
+          inline def setSampleIps(value: js.Array[String]): Self = StObject.set(x, "sampleIps", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSampleIpsUndefined: Self = StObject.set(x, "sampleIps", js.undefined)
+          inline def setSampleIpsUndefined: Self = StObject.set(x, "sampleIps", js.undefined)
           
-          @scala.inline
-          def setSampleIpsVarargs(value: String*): Self = StObject.set(x, "sampleIps", js.Array(value :_*))
+          inline def setSampleIpsVarargs(value: String*): Self = StObject.set(x, "sampleIps", js.Array(value :_*))
         }
       }
       
@@ -203,29 +172,22 @@ object gapi {
       }
       object ListDomainsResponse {
         
-        @scala.inline
-        def apply(): ListDomainsResponse = {
+        inline def apply(): ListDomainsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListDomainsResponse]
         }
         
-        @scala.inline
-        implicit class ListDomainsResponseMutableBuilder[Self <: ListDomainsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListDomainsResponse](x: Self) {
           
-          @scala.inline
-          def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+          inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+          inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
           
-          @scala.inline
-          def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+          inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -239,29 +201,22 @@ object gapi {
       }
       object ListTrafficStatsResponse {
         
-        @scala.inline
-        def apply(): ListTrafficStatsResponse = {
+        inline def apply(): ListTrafficStatsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListTrafficStatsResponse]
         }
         
-        @scala.inline
-        implicit class ListTrafficStatsResponseMutableBuilder[Self <: ListTrafficStatsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListTrafficStatsResponse](x: Self) {
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
           
-          @scala.inline
-          def setTrafficStats(value: js.Array[TrafficStats]): Self = StObject.set(x, "trafficStats", value.asInstanceOf[js.Any])
+          inline def setTrafficStats(value: js.Array[TrafficStats]): Self = StObject.set(x, "trafficStats", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTrafficStatsUndefined: Self = StObject.set(x, "trafficStats", js.undefined)
+          inline def setTrafficStatsUndefined: Self = StObject.set(x, "trafficStats", js.undefined)
           
-          @scala.inline
-          def setTrafficStatsVarargs(value: TrafficStats*): Self = StObject.set(x, "trafficStats", js.Array(value :_*))
+          inline def setTrafficStatsVarargs(value: TrafficStats*): Self = StObject.set(x, "trafficStats", js.Array(value :_*))
         }
       }
       
@@ -318,89 +273,62 @@ object gapi {
       }
       object TrafficStats {
         
-        @scala.inline
-        def apply(): TrafficStats = {
+        inline def apply(): TrafficStats = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[TrafficStats]
         }
         
-        @scala.inline
-        implicit class TrafficStatsMutableBuilder[Self <: TrafficStats] (val x: Self) extends AnyVal {
+        extension [Self <: TrafficStats](x: Self) {
           
-          @scala.inline
-          def setDeliveryErrors(value: js.Array[DeliveryError]): Self = StObject.set(x, "deliveryErrors", value.asInstanceOf[js.Any])
+          inline def setDeliveryErrors(value: js.Array[DeliveryError]): Self = StObject.set(x, "deliveryErrors", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDeliveryErrorsUndefined: Self = StObject.set(x, "deliveryErrors", js.undefined)
+          inline def setDeliveryErrorsUndefined: Self = StObject.set(x, "deliveryErrors", js.undefined)
           
-          @scala.inline
-          def setDeliveryErrorsVarargs(value: DeliveryError*): Self = StObject.set(x, "deliveryErrors", js.Array(value :_*))
+          inline def setDeliveryErrorsVarargs(value: DeliveryError*): Self = StObject.set(x, "deliveryErrors", js.Array(value :_*))
           
-          @scala.inline
-          def setDkimSuccessRatio(value: Double): Self = StObject.set(x, "dkimSuccessRatio", value.asInstanceOf[js.Any])
+          inline def setDkimSuccessRatio(value: Double): Self = StObject.set(x, "dkimSuccessRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDkimSuccessRatioUndefined: Self = StObject.set(x, "dkimSuccessRatio", js.undefined)
+          inline def setDkimSuccessRatioUndefined: Self = StObject.set(x, "dkimSuccessRatio", js.undefined)
           
-          @scala.inline
-          def setDmarcSuccessRatio(value: Double): Self = StObject.set(x, "dmarcSuccessRatio", value.asInstanceOf[js.Any])
+          inline def setDmarcSuccessRatio(value: Double): Self = StObject.set(x, "dmarcSuccessRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDmarcSuccessRatioUndefined: Self = StObject.set(x, "dmarcSuccessRatio", js.undefined)
+          inline def setDmarcSuccessRatioUndefined: Self = StObject.set(x, "dmarcSuccessRatio", js.undefined)
           
-          @scala.inline
-          def setDomainReputation(value: String): Self = StObject.set(x, "domainReputation", value.asInstanceOf[js.Any])
+          inline def setDomainReputation(value: String): Self = StObject.set(x, "domainReputation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDomainReputationUndefined: Self = StObject.set(x, "domainReputation", js.undefined)
+          inline def setDomainReputationUndefined: Self = StObject.set(x, "domainReputation", js.undefined)
           
-          @scala.inline
-          def setInboundEncryptionRatio(value: Double): Self = StObject.set(x, "inboundEncryptionRatio", value.asInstanceOf[js.Any])
+          inline def setInboundEncryptionRatio(value: Double): Self = StObject.set(x, "inboundEncryptionRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInboundEncryptionRatioUndefined: Self = StObject.set(x, "inboundEncryptionRatio", js.undefined)
+          inline def setInboundEncryptionRatioUndefined: Self = StObject.set(x, "inboundEncryptionRatio", js.undefined)
           
-          @scala.inline
-          def setIpReputations(value: js.Array[IpReputation]): Self = StObject.set(x, "ipReputations", value.asInstanceOf[js.Any])
+          inline def setIpReputations(value: js.Array[IpReputation]): Self = StObject.set(x, "ipReputations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIpReputationsUndefined: Self = StObject.set(x, "ipReputations", js.undefined)
+          inline def setIpReputationsUndefined: Self = StObject.set(x, "ipReputations", js.undefined)
           
-          @scala.inline
-          def setIpReputationsVarargs(value: IpReputation*): Self = StObject.set(x, "ipReputations", js.Array(value :_*))
+          inline def setIpReputationsVarargs(value: IpReputation*): Self = StObject.set(x, "ipReputations", js.Array(value :_*))
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setOutboundEncryptionRatio(value: Double): Self = StObject.set(x, "outboundEncryptionRatio", value.asInstanceOf[js.Any])
+          inline def setOutboundEncryptionRatio(value: Double): Self = StObject.set(x, "outboundEncryptionRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOutboundEncryptionRatioUndefined: Self = StObject.set(x, "outboundEncryptionRatio", js.undefined)
+          inline def setOutboundEncryptionRatioUndefined: Self = StObject.set(x, "outboundEncryptionRatio", js.undefined)
           
-          @scala.inline
-          def setSpammyFeedbackLoops(value: js.Array[FeedbackLoop]): Self = StObject.set(x, "spammyFeedbackLoops", value.asInstanceOf[js.Any])
+          inline def setSpammyFeedbackLoops(value: js.Array[FeedbackLoop]): Self = StObject.set(x, "spammyFeedbackLoops", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpammyFeedbackLoopsUndefined: Self = StObject.set(x, "spammyFeedbackLoops", js.undefined)
+          inline def setSpammyFeedbackLoopsUndefined: Self = StObject.set(x, "spammyFeedbackLoops", js.undefined)
           
-          @scala.inline
-          def setSpammyFeedbackLoopsVarargs(value: FeedbackLoop*): Self = StObject.set(x, "spammyFeedbackLoops", js.Array(value :_*))
+          inline def setSpammyFeedbackLoopsVarargs(value: FeedbackLoop*): Self = StObject.set(x, "spammyFeedbackLoops", js.Array(value :_*))
           
-          @scala.inline
-          def setSpfSuccessRatio(value: Double): Self = StObject.set(x, "spfSuccessRatio", value.asInstanceOf[js.Any])
+          inline def setSpfSuccessRatio(value: Double): Self = StObject.set(x, "spfSuccessRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpfSuccessRatioUndefined: Self = StObject.set(x, "spfSuccessRatio", js.undefined)
+          inline def setSpfSuccessRatioUndefined: Self = StObject.set(x, "spfSuccessRatio", js.undefined)
           
-          @scala.inline
-          def setUserReportedSpamRatio(value: Double): Self = StObject.set(x, "userReportedSpamRatio", value.asInstanceOf[js.Any])
+          inline def setUserReportedSpamRatio(value: Double): Self = StObject.set(x, "userReportedSpamRatio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUserReportedSpamRatioUndefined: Self = StObject.set(x, "userReportedSpamRatio", js.undefined)
+          inline def setUserReportedSpamRatioUndefined: Self = StObject.set(x, "userReportedSpamRatio", js.undefined)
         }
       }
       

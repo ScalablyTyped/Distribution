@@ -14,25 +14,19 @@ trait SendVideoNoteOptions
 }
 object SendVideoNoteOptions {
   
-  @scala.inline
-  def apply(): SendVideoNoteOptions = {
+  inline def apply(): SendVideoNoteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendVideoNoteOptions]
   }
   
-  @scala.inline
-  implicit class SendVideoNoteOptionsMutableBuilder[Self <: SendVideoNoteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendVideoNoteOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall extends StO
 }
 object GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCallMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
   }
 }

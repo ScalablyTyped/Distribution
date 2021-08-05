@@ -33,8 +33,7 @@ trait VirtualNodeData extends StObject {
 }
 object VirtualNodeData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     meshName: ResourceName,
     metadata: ResourceMetadata,
     spec: VirtualNodeSpec,
@@ -45,22 +44,16 @@ object VirtualNodeData {
     __obj.asInstanceOf[VirtualNodeData]
   }
   
-  @scala.inline
-  implicit class VirtualNodeDataMutableBuilder[Self <: VirtualNodeData] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeData](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: VirtualNodeSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: VirtualNodeSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: VirtualNodeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualNodeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNodeName(value: ResourceName): Self = StObject.set(x, "virtualNodeName", value.asInstanceOf[js.Any])
+    inline def setVirtualNodeName(value: ResourceName): Self = StObject.set(x, "virtualNodeName", value.asInstanceOf[js.Any])
   }
 }

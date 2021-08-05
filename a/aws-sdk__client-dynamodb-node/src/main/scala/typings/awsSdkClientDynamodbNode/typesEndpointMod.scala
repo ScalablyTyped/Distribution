@@ -20,20 +20,16 @@ object typesEndpointMod {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply(Address: String, CachePeriodInMinutes: Double): Endpoint = {
+    inline def apply(Address: String, CachePeriodInMinutes: Double): Endpoint = {
       val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], CachePeriodInMinutes = CachePeriodInMinutes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Endpoint]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Endpoint](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachePeriodInMinutes(value: Double): Self = StObject.set(x, "CachePeriodInMinutes", value.asInstanceOf[js.Any])
+      inline def setCachePeriodInMinutes(value: Double): Self = StObject.set(x, "CachePeriodInMinutes", value.asInstanceOf[js.Any])
     }
   }
   

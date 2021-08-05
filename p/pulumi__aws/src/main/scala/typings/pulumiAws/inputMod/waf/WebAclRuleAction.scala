@@ -14,17 +14,14 @@ trait WebAclRuleAction extends StObject {
 }
 object WebAclRuleAction {
   
-  @scala.inline
-  def apply(`type`: Input[String]): WebAclRuleAction = {
+  inline def apply(`type`: Input[String]): WebAclRuleAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleAction]
   }
   
-  @scala.inline
-  implicit class WebAclRuleActionMutableBuilder[Self <: WebAclRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleAction](x: Self) {
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

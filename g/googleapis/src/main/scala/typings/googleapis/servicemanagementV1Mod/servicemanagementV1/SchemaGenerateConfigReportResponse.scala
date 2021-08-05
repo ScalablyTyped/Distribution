@@ -33,43 +33,31 @@ trait SchemaGenerateConfigReportResponse extends StObject {
 }
 object SchemaGenerateConfigReportResponse {
   
-  @scala.inline
-  def apply(): SchemaGenerateConfigReportResponse = {
+  inline def apply(): SchemaGenerateConfigReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateConfigReportResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateConfigReportResponseMutableBuilder[Self <: SchemaGenerateConfigReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateConfigReportResponse](x: Self) {
     
-    @scala.inline
-    def setChangeReports(value: js.Array[SchemaChangeReport]): Self = StObject.set(x, "changeReports", value.asInstanceOf[js.Any])
+    inline def setChangeReports(value: js.Array[SchemaChangeReport]): Self = StObject.set(x, "changeReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeReportsUndefined: Self = StObject.set(x, "changeReports", js.undefined)
+    inline def setChangeReportsUndefined: Self = StObject.set(x, "changeReports", js.undefined)
     
-    @scala.inline
-    def setChangeReportsVarargs(value: SchemaChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value :_*))
+    inline def setChangeReportsVarargs(value: SchemaChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value :_*))
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

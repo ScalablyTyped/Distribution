@@ -154,199 +154,135 @@ trait ButtonGroupProps extends StObject {
 }
 object ButtonGroupProps {
   
-  @scala.inline
-  def apply(buttons: js.Array[ElementObject | String], onPress: Double => Unit): ButtonGroupProps = {
+  inline def apply(buttons: js.Array[ElementObject | String], onPress: Double => Unit): ButtonGroupProps = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], onPress = js.Any.fromFunction1(onPress))
     __obj.asInstanceOf[ButtonGroupProps]
   }
   
-  @scala.inline
-  implicit class ButtonGroupPropsMutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonGroupProps](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
-    @scala.inline
-    def setButtonContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonContainerStyle", value.asInstanceOf[js.Any])
+    inline def setButtonContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonContainerStyleNull: Self = StObject.set(x, "buttonContainerStyle", null)
+    inline def setButtonContainerStyleNull: Self = StObject.set(x, "buttonContainerStyle", null)
     
-    @scala.inline
-    def setButtonContainerStyleUndefined: Self = StObject.set(x, "buttonContainerStyle", js.undefined)
+    inline def setButtonContainerStyleUndefined: Self = StObject.set(x, "buttonContainerStyle", js.undefined)
     
-    @scala.inline
-    def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+    inline def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
+    inline def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
     
-    @scala.inline
-    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+    inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
-    @scala.inline
-    def setButtons(value: js.Array[ElementObject | String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[ElementObject | String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: (ElementObject | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: (ElementObject | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
-    @scala.inline
-    def setContainerBorderRadius(value: Double): Self = StObject.set(x, "containerBorderRadius", value.asInstanceOf[js.Any])
+    inline def setContainerBorderRadius(value: Double): Self = StObject.set(x, "containerBorderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerBorderRadiusUndefined: Self = StObject.set(x, "containerBorderRadius", js.undefined)
+    inline def setContainerBorderRadiusUndefined: Self = StObject.set(x, "containerBorderRadius", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean | js.Array[Double]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean | js.Array[Double]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledSelectedStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledSelectedStyle", value.asInstanceOf[js.Any])
+    inline def setDisabledSelectedStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledSelectedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledSelectedStyleNull: Self = StObject.set(x, "disabledSelectedStyle", null)
+    inline def setDisabledSelectedStyleNull: Self = StObject.set(x, "disabledSelectedStyle", null)
     
-    @scala.inline
-    def setDisabledSelectedStyleUndefined: Self = StObject.set(x, "disabledSelectedStyle", js.undefined)
+    inline def setDisabledSelectedStyleUndefined: Self = StObject.set(x, "disabledSelectedStyle", js.undefined)
     
-    @scala.inline
-    def setDisabledSelectedTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "disabledSelectedTextStyle", value.asInstanceOf[js.Any])
+    inline def setDisabledSelectedTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "disabledSelectedTextStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledSelectedTextStyleNull: Self = StObject.set(x, "disabledSelectedTextStyle", null)
+    inline def setDisabledSelectedTextStyleNull: Self = StObject.set(x, "disabledSelectedTextStyle", null)
     
-    @scala.inline
-    def setDisabledSelectedTextStyleUndefined: Self = StObject.set(x, "disabledSelectedTextStyle", js.undefined)
+    inline def setDisabledSelectedTextStyleUndefined: Self = StObject.set(x, "disabledSelectedTextStyle", js.undefined)
     
-    @scala.inline
-    def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
+    inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
+    inline def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
     
-    @scala.inline
-    def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
+    inline def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
     
-    @scala.inline
-    def setDisabledTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "disabledTextStyle", value.asInstanceOf[js.Any])
+    inline def setDisabledTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "disabledTextStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledTextStyleNull: Self = StObject.set(x, "disabledTextStyle", null)
+    inline def setDisabledTextStyleNull: Self = StObject.set(x, "disabledTextStyle", null)
     
-    @scala.inline
-    def setDisabledTextStyleUndefined: Self = StObject.set(x, "disabledTextStyle", js.undefined)
+    inline def setDisabledTextStyleUndefined: Self = StObject.set(x, "disabledTextStyle", js.undefined)
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDisabledVarargs(value: Double*): Self = StObject.set(x, "disabled", js.Array(value :_*))
+    inline def setDisabledVarargs(value: Double*): Self = StObject.set(x, "disabled", js.Array(value :_*))
     
-    @scala.inline
-    def setInnerBorderStyle(value: InnerBorderStyleProperty): Self = StObject.set(x, "innerBorderStyle", value.asInstanceOf[js.Any])
+    inline def setInnerBorderStyle(value: InnerBorderStyleProperty): Self = StObject.set(x, "innerBorderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerBorderStyleUndefined: Self = StObject.set(x, "innerBorderStyle", js.undefined)
+    inline def setInnerBorderStyleUndefined: Self = StObject.set(x, "innerBorderStyle", js.undefined)
     
-    @scala.inline
-    def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
+    inline def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
+    inline def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: Double => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: Double => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
+    inline def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
+    inline def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
     
-    @scala.inline
-    def setSelectMultiple(value: Boolean): Self = StObject.set(x, "selectMultiple", value.asInstanceOf[js.Any])
+    inline def setSelectMultiple(value: Boolean): Self = StObject.set(x, "selectMultiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectMultipleUndefined: Self = StObject.set(x, "selectMultiple", js.undefined)
+    inline def setSelectMultipleUndefined: Self = StObject.set(x, "selectMultiple", js.undefined)
     
-    @scala.inline
-    def setSelectedButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "selectedButtonStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "selectedButtonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedButtonStyleNull: Self = StObject.set(x, "selectedButtonStyle", null)
+    inline def setSelectedButtonStyleNull: Self = StObject.set(x, "selectedButtonStyle", null)
     
-    @scala.inline
-    def setSelectedButtonStyleUndefined: Self = StObject.set(x, "selectedButtonStyle", js.undefined)
+    inline def setSelectedButtonStyleUndefined: Self = StObject.set(x, "selectedButtonStyle", js.undefined)
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndexNull: Self = StObject.set(x, "selectedIndex", null)
+    inline def setSelectedIndexNull: Self = StObject.set(x, "selectedIndex", null)
     
-    @scala.inline
-    def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
     
-    @scala.inline
-    def setSelectedIndexes(value: js.Array[Double]): Self = StObject.set(x, "selectedIndexes", value.asInstanceOf[js.Any])
+    inline def setSelectedIndexes(value: js.Array[Double]): Self = StObject.set(x, "selectedIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndexesUndefined: Self = StObject.set(x, "selectedIndexes", js.undefined)
+    inline def setSelectedIndexesUndefined: Self = StObject.set(x, "selectedIndexes", js.undefined)
     
-    @scala.inline
-    def setSelectedIndexesVarargs(value: Double*): Self = StObject.set(x, "selectedIndexes", js.Array(value :_*))
+    inline def setSelectedIndexesVarargs(value: Double*): Self = StObject.set(x, "selectedIndexes", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "selectedTextStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "selectedTextStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedTextStyleNull: Self = StObject.set(x, "selectedTextStyle", null)
+    inline def setSelectedTextStyleNull: Self = StObject.set(x, "selectedTextStyle", null)
     
-    @scala.inline
-    def setSelectedTextStyleUndefined: Self = StObject.set(x, "selectedTextStyle", js.undefined)
+    inline def setSelectedTextStyleUndefined: Self = StObject.set(x, "selectedTextStyle", js.undefined)
     
-    @scala.inline
-    def setSetOpacityTo(value: /* value */ Double => Unit): Self = StObject.set(x, "setOpacityTo", js.Any.fromFunction1(value))
+    inline def setSetOpacityTo(value: /* value */ Double => Unit): Self = StObject.set(x, "setOpacityTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpacityToUndefined: Self = StObject.set(x, "setOpacityTo", js.undefined)
+    inline def setSetOpacityToUndefined: Self = StObject.set(x, "setOpacityTo", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+    inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    @scala.inline
-    def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+    inline def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
+    inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

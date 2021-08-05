@@ -65,49 +65,35 @@ trait BoostDebugOptions extends StObject {
 }
 object BoostDebugOptions {
   
-  @scala.inline
-  def apply(): BoostDebugOptions = {
+  inline def apply(): BoostDebugOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoostDebugOptions]
   }
   
-  @scala.inline
-  implicit class BoostDebugOptionsMutableBuilder[Self <: BoostDebugOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BoostDebugOptions](x: Self) {
     
-    @scala.inline
-    def setShowSkipSummary(value: Boolean): Self = StObject.set(x, "showSkipSummary", value.asInstanceOf[js.Any])
+    inline def setShowSkipSummary(value: Boolean): Self = StObject.set(x, "showSkipSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSkipSummaryUndefined: Self = StObject.set(x, "showSkipSummary", js.undefined)
+    inline def setShowSkipSummaryUndefined: Self = StObject.set(x, "showSkipSummary", js.undefined)
     
-    @scala.inline
-    def setTimeBufferCopy(value: Boolean): Self = StObject.set(x, "timeBufferCopy", value.asInstanceOf[js.Any])
+    inline def setTimeBufferCopy(value: Boolean): Self = StObject.set(x, "timeBufferCopy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeBufferCopyUndefined: Self = StObject.set(x, "timeBufferCopy", js.undefined)
+    inline def setTimeBufferCopyUndefined: Self = StObject.set(x, "timeBufferCopy", js.undefined)
     
-    @scala.inline
-    def setTimeKDTree(value: Boolean): Self = StObject.set(x, "timeKDTree", value.asInstanceOf[js.Any])
+    inline def setTimeKDTree(value: Boolean): Self = StObject.set(x, "timeKDTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeKDTreeUndefined: Self = StObject.set(x, "timeKDTree", js.undefined)
+    inline def setTimeKDTreeUndefined: Self = StObject.set(x, "timeKDTree", js.undefined)
     
-    @scala.inline
-    def setTimeRendering(value: Boolean): Self = StObject.set(x, "timeRendering", value.asInstanceOf[js.Any])
+    inline def setTimeRendering(value: Boolean): Self = StObject.set(x, "timeRendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRenderingUndefined: Self = StObject.set(x, "timeRendering", js.undefined)
+    inline def setTimeRenderingUndefined: Self = StObject.set(x, "timeRendering", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesProcessing(value: Boolean): Self = StObject.set(x, "timeSeriesProcessing", value.asInstanceOf[js.Any])
+    inline def setTimeSeriesProcessing(value: Boolean): Self = StObject.set(x, "timeSeriesProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesProcessingUndefined: Self = StObject.set(x, "timeSeriesProcessing", js.undefined)
+    inline def setTimeSeriesProcessingUndefined: Self = StObject.set(x, "timeSeriesProcessing", js.undefined)
     
-    @scala.inline
-    def setTimeSetup(value: Boolean): Self = StObject.set(x, "timeSetup", value.asInstanceOf[js.Any])
+    inline def setTimeSetup(value: Boolean): Self = StObject.set(x, "timeSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSetupUndefined: Self = StObject.set(x, "timeSetup", js.undefined)
+    inline def setTimeSetupUndefined: Self = StObject.set(x, "timeSetup", js.undefined)
   }
 }

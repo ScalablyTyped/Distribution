@@ -10,8 +10,6 @@ object nameValueToObjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(name: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def default(name: js.Object, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def default(name: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def default(name: js.Object, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 }

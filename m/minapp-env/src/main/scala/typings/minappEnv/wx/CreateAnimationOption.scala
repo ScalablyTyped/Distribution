@@ -37,37 +37,27 @@ trait CreateAnimationOption extends StObject {
 }
 object CreateAnimationOption {
   
-  @scala.inline
-  def apply(): CreateAnimationOption = {
+  inline def apply(): CreateAnimationOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAnimationOption]
   }
   
-  @scala.inline
-  implicit class CreateAnimationOptionMutableBuilder[Self <: CreateAnimationOption] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAnimationOption](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setTimingFunction(value: linear | ease | `ease-in` | `ease-in-out` | `ease-out` | `step-start` | `step-end`): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
+    inline def setTimingFunction(value: linear | ease | `ease-in` | `ease-in-out` | `ease-out` | `step-start` | `step-end`): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
+    inline def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
     
-    @scala.inline
-    def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+    inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+    inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
   }
 }

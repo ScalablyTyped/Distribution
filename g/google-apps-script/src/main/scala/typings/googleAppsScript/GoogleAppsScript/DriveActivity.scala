@@ -26,8 +26,7 @@ trait DriveActivity extends StObject {
 }
 object DriveActivity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newConsolidationStrategy: () => ConsolidationStrategy,
     newLegacy: () => js.Any,
     newNoConsolidation: () => js.Any,
@@ -46,41 +45,31 @@ object DriveActivity {
     }
     object ActivityCollection {
       
-      @scala.inline
-      def apply(query: QueryDriveActivityRequest => QueryDriveActivityResponse): ActivityCollection = {
+      inline def apply(query: QueryDriveActivityRequest => QueryDriveActivityResponse): ActivityCollection = {
         val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
         __obj.asInstanceOf[ActivityCollection]
       }
       
-      @scala.inline
-      implicit class ActivityCollectionMutableBuilder[Self <: ActivityCollection] (val x: Self) extends AnyVal {
+      extension [Self <: ActivityCollection](x: Self) {
         
-        @scala.inline
-        def setQuery(value: QueryDriveActivityRequest => QueryDriveActivityResponse): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+        inline def setQuery(value: QueryDriveActivityRequest => QueryDriveActivityResponse): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       }
     }
   }
   
-  @scala.inline
-  implicit class DriveActivityMutableBuilder[Self <: DriveActivity] (val x: Self) extends AnyVal {
+  extension [Self <: DriveActivity](x: Self) {
     
-    @scala.inline
-    def setActivity(value: ActivityCollection): Self = StObject.set(x, "Activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: ActivityCollection): Self = StObject.set(x, "Activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityUndefined: Self = StObject.set(x, "Activity", js.undefined)
+    inline def setActivityUndefined: Self = StObject.set(x, "Activity", js.undefined)
     
-    @scala.inline
-    def setNewConsolidationStrategy(value: () => ConsolidationStrategy): Self = StObject.set(x, "newConsolidationStrategy", js.Any.fromFunction0(value))
+    inline def setNewConsolidationStrategy(value: () => ConsolidationStrategy): Self = StObject.set(x, "newConsolidationStrategy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLegacy(value: () => js.Any): Self = StObject.set(x, "newLegacy", js.Any.fromFunction0(value))
+    inline def setNewLegacy(value: () => js.Any): Self = StObject.set(x, "newLegacy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewNoConsolidation(value: () => js.Any): Self = StObject.set(x, "newNoConsolidation", js.Any.fromFunction0(value))
+    inline def setNewNoConsolidation(value: () => js.Any): Self = StObject.set(x, "newNoConsolidation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewQueryDriveActivityRequest(value: () => QueryDriveActivityRequest): Self = StObject.set(x, "newQueryDriveActivityRequest", js.Any.fromFunction0(value))
+    inline def setNewQueryDriveActivityRequest(value: () => QueryDriveActivityRequest): Self = StObject.set(x, "newQueryDriveActivityRequest", js.Any.fromFunction0(value))
   }
   
   object Schema {
@@ -99,44 +88,32 @@ object DriveActivity {
     }
     object Action {
       
-      @scala.inline
-      def apply(): Action = {
+      inline def apply(): Action = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Action]
       }
       
-      @scala.inline
-      implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+      extension [Self <: Action](x: Self) {
         
-        @scala.inline
-        def setActor(value: Actor): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+        inline def setActor(value: Actor): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+        inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
         
-        @scala.inline
-        def setDetail(value: ActionDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+        inline def setDetail(value: ActionDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+        inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
         
-        @scala.inline
-        def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+        inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         
-        @scala.inline
-        def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
+        inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
+        inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
         
-        @scala.inline
-        def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+        inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+        inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       }
     }
     
@@ -166,80 +143,56 @@ object DriveActivity {
     }
     object ActionDetail {
       
-      @scala.inline
-      def apply(): ActionDetail = {
+      inline def apply(): ActionDetail = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ActionDetail]
       }
       
-      @scala.inline
-      implicit class ActionDetailMutableBuilder[Self <: ActionDetail] (val x: Self) extends AnyVal {
+      extension [Self <: ActionDetail](x: Self) {
         
-        @scala.inline
-        def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+        inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+        inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
         
-        @scala.inline
-        def setCreate(value: Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+        inline def setCreate(value: Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+        inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
         
-        @scala.inline
-        def setDelete(value: Delete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+        inline def setDelete(value: Delete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+        inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
         
-        @scala.inline
-        def setDlpChange(value: DataLeakPreventionChange): Self = StObject.set(x, "dlpChange", value.asInstanceOf[js.Any])
+        inline def setDlpChange(value: DataLeakPreventionChange): Self = StObject.set(x, "dlpChange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDlpChangeUndefined: Self = StObject.set(x, "dlpChange", js.undefined)
+        inline def setDlpChangeUndefined: Self = StObject.set(x, "dlpChange", js.undefined)
         
-        @scala.inline
-        def setEdit(value: js.Any): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+        inline def setEdit(value: js.Any): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+        inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
         
-        @scala.inline
-        def setMove(value: Move): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+        inline def setMove(value: Move): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+        inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
         
-        @scala.inline
-        def setPermissionChange(value: PermissionChange): Self = StObject.set(x, "permissionChange", value.asInstanceOf[js.Any])
+        inline def setPermissionChange(value: PermissionChange): Self = StObject.set(x, "permissionChange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionChangeUndefined: Self = StObject.set(x, "permissionChange", js.undefined)
+        inline def setPermissionChangeUndefined: Self = StObject.set(x, "permissionChange", js.undefined)
         
-        @scala.inline
-        def setReference(value: ApplicationReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+        inline def setReference(value: ApplicationReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+        inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
         
-        @scala.inline
-        def setRename(value: Rename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+        inline def setRename(value: Rename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+        inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
         
-        @scala.inline
-        def setRestore(value: Restore): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
+        inline def setRestore(value: Restore): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+        inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
         
-        @scala.inline
-        def setSettingsChange(value: SettingsChange): Self = StObject.set(x, "settingsChange", value.asInstanceOf[js.Any])
+        inline def setSettingsChange(value: SettingsChange): Self = StObject.set(x, "settingsChange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSettingsChangeUndefined: Self = StObject.set(x, "settingsChange", js.undefined)
+        inline def setSettingsChangeUndefined: Self = StObject.set(x, "settingsChange", js.undefined)
       }
     }
     
@@ -257,44 +210,32 @@ object DriveActivity {
     }
     object Actor {
       
-      @scala.inline
-      def apply(): Actor = {
+      inline def apply(): Actor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Actor]
       }
       
-      @scala.inline
-      implicit class ActorMutableBuilder[Self <: Actor] (val x: Self) extends AnyVal {
+      extension [Self <: Actor](x: Self) {
         
-        @scala.inline
-        def setAdministrator(value: String): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
+        inline def setAdministrator(value: String): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
+        inline def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
         
-        @scala.inline
-        def setAnonymous(value: String): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+        inline def setAnonymous(value: String): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+        inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
         
-        @scala.inline
-        def setImpersonation(value: Impersonation): Self = StObject.set(x, "impersonation", value.asInstanceOf[js.Any])
+        inline def setImpersonation(value: Impersonation): Self = StObject.set(x, "impersonation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImpersonationUndefined: Self = StObject.set(x, "impersonation", js.undefined)
+        inline def setImpersonationUndefined: Self = StObject.set(x, "impersonation", js.undefined)
         
-        @scala.inline
-        def setSystem(value: SystemEvent): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+        inline def setSystem(value: SystemEvent): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+        inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
         
-        @scala.inline
-        def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       }
     }
     
@@ -304,20 +245,16 @@ object DriveActivity {
     }
     object ApplicationReference {
       
-      @scala.inline
-      def apply(): ApplicationReference = {
+      inline def apply(): ApplicationReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ApplicationReference]
       }
       
-      @scala.inline
-      implicit class ApplicationReferenceMutableBuilder[Self <: ApplicationReference] (val x: Self) extends AnyVal {
+      extension [Self <: ApplicationReference](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -327,20 +264,16 @@ object DriveActivity {
     }
     object Assignment {
       
-      @scala.inline
-      def apply(): Assignment = {
+      inline def apply(): Assignment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Assignment]
       }
       
-      @scala.inline
-      implicit class AssignmentMutableBuilder[Self <: Assignment] (val x: Self) extends AnyVal {
+      extension [Self <: Assignment](x: Self) {
         
-        @scala.inline
-        def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+        inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+        inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
       }
     }
     
@@ -356,41 +289,30 @@ object DriveActivity {
     }
     object Comment {
       
-      @scala.inline
-      def apply(): Comment = {
+      inline def apply(): Comment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Comment]
       }
       
-      @scala.inline
-      implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+      extension [Self <: Comment](x: Self) {
         
-        @scala.inline
-        def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
+        inline def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
+        inline def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
         
-        @scala.inline
-        def setMentionedUsers(value: js.Array[User]): Self = StObject.set(x, "mentionedUsers", value.asInstanceOf[js.Any])
+        inline def setMentionedUsers(value: js.Array[User]): Self = StObject.set(x, "mentionedUsers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
+        inline def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
         
-        @scala.inline
-        def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
+        inline def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
         
-        @scala.inline
-        def setPost(value: Post): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+        inline def setPost(value: Post): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+        inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
         
-        @scala.inline
-        def setSuggestion(value: Suggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+        inline def setSuggestion(value: Suggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
+        inline def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
       }
     }
     
@@ -402,26 +324,20 @@ object DriveActivity {
     }
     object ConsolidationStrategy {
       
-      @scala.inline
-      def apply(): ConsolidationStrategy = {
+      inline def apply(): ConsolidationStrategy = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConsolidationStrategy]
       }
       
-      @scala.inline
-      implicit class ConsolidationStrategyMutableBuilder[Self <: ConsolidationStrategy] (val x: Self) extends AnyVal {
+      extension [Self <: ConsolidationStrategy](x: Self) {
         
-        @scala.inline
-        def setLegacy(value: js.Any): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+        inline def setLegacy(value: js.Any): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
+        inline def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
         
-        @scala.inline
-        def setNone(value: js.Any): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+        inline def setNone(value: js.Any): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
+        inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
       }
     }
     
@@ -431,20 +347,16 @@ object DriveActivity {
     }
     object Copy {
       
-      @scala.inline
-      def apply(): Copy = {
+      inline def apply(): Copy = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Copy]
       }
       
-      @scala.inline
-      implicit class CopyMutableBuilder[Self <: Copy] (val x: Self) extends AnyVal {
+      extension [Self <: Copy](x: Self) {
         
-        @scala.inline
-        def setOriginalObject(value: TargetReference): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
+        inline def setOriginalObject(value: TargetReference): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
+        inline def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
       }
     }
     
@@ -458,32 +370,24 @@ object DriveActivity {
     }
     object Create {
       
-      @scala.inline
-      def apply(): Create = {
+      inline def apply(): Create = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Create]
       }
       
-      @scala.inline
-      implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+      extension [Self <: Create](x: Self) {
         
-        @scala.inline
-        def setCopy(value: Copy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+        inline def setCopy(value: Copy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+        inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
         
-        @scala.inline
-        def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+        inline def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
+        inline def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
         
-        @scala.inline
-        def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+        inline def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+        inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
       }
     }
     
@@ -493,20 +397,16 @@ object DriveActivity {
     }
     object DataLeakPreventionChange {
       
-      @scala.inline
-      def apply(): DataLeakPreventionChange = {
+      inline def apply(): DataLeakPreventionChange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DataLeakPreventionChange]
       }
       
-      @scala.inline
-      implicit class DataLeakPreventionChangeMutableBuilder[Self <: DataLeakPreventionChange] (val x: Self) extends AnyVal {
+      extension [Self <: DataLeakPreventionChange](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -516,20 +416,16 @@ object DriveActivity {
     }
     object Delete {
       
-      @scala.inline
-      def apply(): Delete = {
+      inline def apply(): Delete = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Delete]
       }
       
-      @scala.inline
-      implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+      extension [Self <: Delete](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -541,26 +437,20 @@ object DriveActivity {
     }
     object Domain {
       
-      @scala.inline
-      def apply(): Domain = {
+      inline def apply(): Domain = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Domain]
       }
       
-      @scala.inline
-      implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+      extension [Self <: Domain](x: Self) {
         
-        @scala.inline
-        def setLegacyId(value: String): Self = StObject.set(x, "legacyId", value.asInstanceOf[js.Any])
+        inline def setLegacyId(value: String): Self = StObject.set(x, "legacyId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLegacyIdUndefined: Self = StObject.set(x, "legacyId", js.undefined)
+        inline def setLegacyIdUndefined: Self = StObject.set(x, "legacyId", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -580,59 +470,42 @@ object DriveActivity {
     }
     object DriveActivity {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity]
       }
       
-      @scala.inline
-      implicit class DriveActivityMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity](x: Self) {
         
-        @scala.inline
-        def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+        inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+        inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
         
-        @scala.inline
-        def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
         
-        @scala.inline
-        def setActors(value: js.Array[Actor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
+        inline def setActors(value: js.Array[Actor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
+        inline def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
         
-        @scala.inline
-        def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value :_*))
+        inline def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value :_*))
         
-        @scala.inline
-        def setPrimaryActionDetail(value: ActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
+        inline def setPrimaryActionDetail(value: ActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimaryActionDetailUndefined: Self = StObject.set(x, "primaryActionDetail", js.undefined)
+        inline def setPrimaryActionDetailUndefined: Self = StObject.set(x, "primaryActionDetail", js.undefined)
         
-        @scala.inline
-        def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+        inline def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+        inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
         
-        @scala.inline
-        def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
+        inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
         
-        @scala.inline
-        def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
+        inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
+        inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
         
-        @scala.inline
-        def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+        inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+        inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       }
     }
     
@@ -652,50 +525,36 @@ object DriveActivity {
     }
     object DriveItem {
       
-      @scala.inline
-      def apply(): DriveItem = {
+      inline def apply(): DriveItem = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DriveItem]
       }
       
-      @scala.inline
-      implicit class DriveItemMutableBuilder[Self <: DriveItem] (val x: Self) extends AnyVal {
+      extension [Self <: DriveItem](x: Self) {
         
-        @scala.inline
-        def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+        inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         
-        @scala.inline
-        def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+        inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+        inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
         
-        @scala.inline
-        def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+        inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+        inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+        inline def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+        inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -711,38 +570,28 @@ object DriveActivity {
     }
     object DriveItemReference {
       
-      @scala.inline
-      def apply(): DriveItemReference = {
+      inline def apply(): DriveItemReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DriveItemReference]
       }
       
-      @scala.inline
-      implicit class DriveItemReferenceMutableBuilder[Self <: DriveItemReference] (val x: Self) extends AnyVal {
+      extension [Self <: DriveItemReference](x: Self) {
         
-        @scala.inline
-        def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+        inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         
-        @scala.inline
-        def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+        inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+        inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -758,38 +607,28 @@ object DriveActivity {
     }
     object FileComment {
       
-      @scala.inline
-      def apply(): FileComment = {
+      inline def apply(): FileComment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FileComment]
       }
       
-      @scala.inline
-      implicit class FileCommentMutableBuilder[Self <: FileComment] (val x: Self) extends AnyVal {
+      extension [Self <: FileComment](x: Self) {
         
-        @scala.inline
-        def setLegacyCommentId(value: String): Self = StObject.set(x, "legacyCommentId", value.asInstanceOf[js.Any])
+        inline def setLegacyCommentId(value: String): Self = StObject.set(x, "legacyCommentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLegacyCommentIdUndefined: Self = StObject.set(x, "legacyCommentId", js.undefined)
+        inline def setLegacyCommentIdUndefined: Self = StObject.set(x, "legacyCommentId", js.undefined)
         
-        @scala.inline
-        def setLegacyDiscussionId(value: String): Self = StObject.set(x, "legacyDiscussionId", value.asInstanceOf[js.Any])
+        inline def setLegacyDiscussionId(value: String): Self = StObject.set(x, "legacyDiscussionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLegacyDiscussionIdUndefined: Self = StObject.set(x, "legacyDiscussionId", js.undefined)
+        inline def setLegacyDiscussionIdUndefined: Self = StObject.set(x, "legacyDiscussionId", js.undefined)
         
-        @scala.inline
-        def setLinkToDiscussion(value: String): Self = StObject.set(x, "linkToDiscussion", value.asInstanceOf[js.Any])
+        inline def setLinkToDiscussion(value: String): Self = StObject.set(x, "linkToDiscussion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkToDiscussionUndefined: Self = StObject.set(x, "linkToDiscussion", js.undefined)
+        inline def setLinkToDiscussionUndefined: Self = StObject.set(x, "linkToDiscussion", js.undefined)
         
-        @scala.inline
-        def setParent(value: DriveItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: DriveItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+        inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       }
     }
     
@@ -799,20 +638,16 @@ object DriveActivity {
     }
     object Folder {
       
-      @scala.inline
-      def apply(): Folder = {
+      inline def apply(): Folder = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Folder]
       }
       
-      @scala.inline
-      implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+      extension [Self <: Folder](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -824,26 +659,20 @@ object DriveActivity {
     }
     object Group {
       
-      @scala.inline
-      def apply(): Group = {
+      inline def apply(): Group = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Group]
       }
       
-      @scala.inline
-      implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+      extension [Self <: Group](x: Self) {
         
-        @scala.inline
-        def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+        inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+        inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -853,20 +682,16 @@ object DriveActivity {
     }
     object Impersonation {
       
-      @scala.inline
-      def apply(): Impersonation = {
+      inline def apply(): Impersonation = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Impersonation]
       }
       
-      @scala.inline
-      implicit class ImpersonationMutableBuilder[Self <: Impersonation] (val x: Self) extends AnyVal {
+      extension [Self <: Impersonation](x: Self) {
         
-        @scala.inline
-        def setImpersonatedUser(value: User): Self = StObject.set(x, "impersonatedUser", value.asInstanceOf[js.Any])
+        inline def setImpersonatedUser(value: User): Self = StObject.set(x, "impersonatedUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImpersonatedUserUndefined: Self = StObject.set(x, "impersonatedUser", js.undefined)
+        inline def setImpersonatedUserUndefined: Self = StObject.set(x, "impersonatedUser", js.undefined)
       }
     }
     
@@ -878,26 +703,20 @@ object DriveActivity {
     }
     object KnownUser {
       
-      @scala.inline
-      def apply(): KnownUser = {
+      inline def apply(): KnownUser = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[KnownUser]
       }
       
-      @scala.inline
-      implicit class KnownUserMutableBuilder[Self <: KnownUser] (val x: Self) extends AnyVal {
+      extension [Self <: KnownUser](x: Self) {
         
-        @scala.inline
-        def setIsCurrentUser(value: Boolean): Self = StObject.set(x, "isCurrentUser", value.asInstanceOf[js.Any])
+        inline def setIsCurrentUser(value: Boolean): Self = StObject.set(x, "isCurrentUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsCurrentUserUndefined: Self = StObject.set(x, "isCurrentUser", js.undefined)
+        inline def setIsCurrentUserUndefined: Self = StObject.set(x, "isCurrentUser", js.undefined)
         
-        @scala.inline
-        def setPersonName(value: String): Self = StObject.set(x, "personName", value.asInstanceOf[js.Any])
+        inline def setPersonName(value: String): Self = StObject.set(x, "personName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPersonNameUndefined: Self = StObject.set(x, "personName", js.undefined)
+        inline def setPersonNameUndefined: Self = StObject.set(x, "personName", js.undefined)
       }
     }
     
@@ -909,32 +728,24 @@ object DriveActivity {
     }
     object Move {
       
-      @scala.inline
-      def apply(): Move = {
+      inline def apply(): Move = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Move]
       }
       
-      @scala.inline
-      implicit class MoveMutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
+      extension [Self <: Move](x: Self) {
         
-        @scala.inline
-        def setAddedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
+        inline def setAddedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
+        inline def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
         
-        @scala.inline
-        def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
+        inline def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
         
-        @scala.inline
-        def setRemovedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
+        inline def setRemovedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
+        inline def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
         
-        @scala.inline
-        def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
+        inline def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
       }
     }
     
@@ -948,32 +759,24 @@ object DriveActivity {
     }
     object Owner {
       
-      @scala.inline
-      def apply(): Owner = {
+      inline def apply(): Owner = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Owner]
       }
       
-      @scala.inline
-      implicit class OwnerMutableBuilder[Self <: Owner] (val x: Self) extends AnyVal {
+      extension [Self <: Owner](x: Self) {
         
-        @scala.inline
-        def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+        inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+        inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        @scala.inline
-        def setTeamDrive(value: TeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
+        inline def setTeamDrive(value: TeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
+        inline def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
         
-        @scala.inline
-        def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       }
     }
     
@@ -993,50 +796,36 @@ object DriveActivity {
     }
     object Permission {
       
-      @scala.inline
-      def apply(): Permission = {
+      inline def apply(): Permission = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Permission]
       }
       
-      @scala.inline
-      implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+      extension [Self <: Permission](x: Self) {
         
-        @scala.inline
-        def setAllowDiscovery(value: Boolean): Self = StObject.set(x, "allowDiscovery", value.asInstanceOf[js.Any])
+        inline def setAllowDiscovery(value: Boolean): Self = StObject.set(x, "allowDiscovery", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
+        inline def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
         
-        @scala.inline
-        def setAnyone(value: js.Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
+        inline def setAnyone(value: js.Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnyoneUndefined: Self = StObject.set(x, "anyone", js.undefined)
+        inline def setAnyoneUndefined: Self = StObject.set(x, "anyone", js.undefined)
         
-        @scala.inline
-        def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+        inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+        inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        @scala.inline
-        def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
-        @scala.inline
-        def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+        inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         
-        @scala.inline
-        def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       }
     }
     
@@ -1048,32 +837,24 @@ object DriveActivity {
     }
     object PermissionChange {
       
-      @scala.inline
-      def apply(): PermissionChange = {
+      inline def apply(): PermissionChange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PermissionChange]
       }
       
-      @scala.inline
-      implicit class PermissionChangeMutableBuilder[Self <: PermissionChange] (val x: Self) extends AnyVal {
+      extension [Self <: PermissionChange](x: Self) {
         
-        @scala.inline
-        def setAddedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
+        inline def setAddedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
+        inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
         
-        @scala.inline
-        def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+        inline def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
         
-        @scala.inline
-        def setRemovedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
+        inline def setRemovedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
+        inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
         
-        @scala.inline
-        def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+        inline def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
       }
     }
     
@@ -1083,20 +864,16 @@ object DriveActivity {
     }
     object Post {
       
-      @scala.inline
-      def apply(): Post = {
+      inline def apply(): Post = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Post]
       }
       
-      @scala.inline
-      implicit class PostMutableBuilder[Self <: Post] (val x: Self) extends AnyVal {
+      extension [Self <: Post](x: Self) {
         
-        @scala.inline
-        def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+        inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+        inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
       }
     }
     
@@ -1116,50 +893,36 @@ object DriveActivity {
     }
     object QueryDriveActivityRequest {
       
-      @scala.inline
-      def apply(): QueryDriveActivityRequest = {
+      inline def apply(): QueryDriveActivityRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[QueryDriveActivityRequest]
       }
       
-      @scala.inline
-      implicit class QueryDriveActivityRequestMutableBuilder[Self <: QueryDriveActivityRequest] (val x: Self) extends AnyVal {
+      extension [Self <: QueryDriveActivityRequest](x: Self) {
         
-        @scala.inline
-        def setAncestorName(value: String): Self = StObject.set(x, "ancestorName", value.asInstanceOf[js.Any])
+        inline def setAncestorName(value: String): Self = StObject.set(x, "ancestorName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAncestorNameUndefined: Self = StObject.set(x, "ancestorName", js.undefined)
+        inline def setAncestorNameUndefined: Self = StObject.set(x, "ancestorName", js.undefined)
         
-        @scala.inline
-        def setConsolidationStrategy(value: ConsolidationStrategy): Self = StObject.set(x, "consolidationStrategy", value.asInstanceOf[js.Any])
+        inline def setConsolidationStrategy(value: ConsolidationStrategy): Self = StObject.set(x, "consolidationStrategy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsolidationStrategyUndefined: Self = StObject.set(x, "consolidationStrategy", js.undefined)
+        inline def setConsolidationStrategyUndefined: Self = StObject.set(x, "consolidationStrategy", js.undefined)
         
-        @scala.inline
-        def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+        inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        @scala.inline
-        def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+        inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
+        inline def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
       }
     }
     
@@ -1173,29 +936,22 @@ object DriveActivity {
     }
     object QueryDriveActivityResponse {
       
-      @scala.inline
-      def apply(): QueryDriveActivityResponse = {
+      inline def apply(): QueryDriveActivityResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[QueryDriveActivityResponse]
       }
       
-      @scala.inline
-      implicit class QueryDriveActivityResponseMutableBuilder[Self <: QueryDriveActivityResponse] (val x: Self) extends AnyVal {
+      extension [Self <: QueryDriveActivityResponse](x: Self) {
         
-        @scala.inline
-        def setActivities(value: js.Array[typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+        inline def setActivities(value: js.Array[typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+        inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
         
-        @scala.inline
-        def setActivitiesVarargs(value: typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+        inline def setActivitiesVarargs(value: typings.googleAppsScript.GoogleAppsScript.DriveActivity.Schema.DriveActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1207,26 +963,20 @@ object DriveActivity {
     }
     object Rename {
       
-      @scala.inline
-      def apply(): Rename = {
+      inline def apply(): Rename = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Rename]
       }
       
-      @scala.inline
-      implicit class RenameMutableBuilder[Self <: Rename] (val x: Self) extends AnyVal {
+      extension [Self <: Rename](x: Self) {
         
-        @scala.inline
-        def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
+        inline def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
+        inline def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
         
-        @scala.inline
-        def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
+        inline def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
+        inline def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
       }
     }
     
@@ -1236,20 +986,16 @@ object DriveActivity {
     }
     object Restore {
       
-      @scala.inline
-      def apply(): Restore = {
+      inline def apply(): Restore = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Restore]
       }
       
-      @scala.inline
-      implicit class RestoreMutableBuilder[Self <: Restore] (val x: Self) extends AnyVal {
+      extension [Self <: Restore](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -1261,26 +1007,20 @@ object DriveActivity {
     }
     object RestrictionChange {
       
-      @scala.inline
-      def apply(): RestrictionChange = {
+      inline def apply(): RestrictionChange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RestrictionChange]
       }
       
-      @scala.inline
-      implicit class RestrictionChangeMutableBuilder[Self <: RestrictionChange] (val x: Self) extends AnyVal {
+      extension [Self <: RestrictionChange](x: Self) {
         
-        @scala.inline
-        def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+        inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+        inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
         
-        @scala.inline
-        def setNewRestriction(value: String): Self = StObject.set(x, "newRestriction", value.asInstanceOf[js.Any])
+        inline def setNewRestriction(value: String): Self = StObject.set(x, "newRestriction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewRestrictionUndefined: Self = StObject.set(x, "newRestriction", js.undefined)
+        inline def setNewRestrictionUndefined: Self = StObject.set(x, "newRestriction", js.undefined)
       }
     }
     
@@ -1290,23 +1030,18 @@ object DriveActivity {
     }
     object SettingsChange {
       
-      @scala.inline
-      def apply(): SettingsChange = {
+      inline def apply(): SettingsChange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SettingsChange]
       }
       
-      @scala.inline
-      implicit class SettingsChangeMutableBuilder[Self <: SettingsChange] (val x: Self) extends AnyVal {
+      extension [Self <: SettingsChange](x: Self) {
         
-        @scala.inline
-        def setRestrictionChanges(value: js.Array[RestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
+        inline def setRestrictionChanges(value: js.Array[RestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
+        inline def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
         
-        @scala.inline
-        def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
+        inline def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
       }
     }
     
@@ -1316,20 +1051,16 @@ object DriveActivity {
     }
     object Suggestion {
       
-      @scala.inline
-      def apply(): Suggestion = {
+      inline def apply(): Suggestion = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Suggestion]
       }
       
-      @scala.inline
-      implicit class SuggestionMutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
+      extension [Self <: Suggestion](x: Self) {
         
-        @scala.inline
-        def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+        inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+        inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
       }
     }
     
@@ -1339,20 +1070,16 @@ object DriveActivity {
     }
     object SystemEvent {
       
-      @scala.inline
-      def apply(): SystemEvent = {
+      inline def apply(): SystemEvent = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SystemEvent]
       }
       
-      @scala.inline
-      implicit class SystemEventMutableBuilder[Self <: SystemEvent] (val x: Self) extends AnyVal {
+      extension [Self <: SystemEvent](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -1366,32 +1093,24 @@ object DriveActivity {
     }
     object Target {
       
-      @scala.inline
-      def apply(): Target = {
+      inline def apply(): Target = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Target]
       }
       
-      @scala.inline
-      implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+      extension [Self <: Target](x: Self) {
         
-        @scala.inline
-        def setDriveItem(value: DriveItem): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
+        inline def setDriveItem(value: DriveItem): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
+        inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
         
-        @scala.inline
-        def setFileComment(value: js.Any): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
+        inline def setFileComment(value: js.Any): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileCommentUndefined: Self = StObject.set(x, "fileComment", js.undefined)
+        inline def setFileCommentUndefined: Self = StObject.set(x, "fileComment", js.undefined)
         
-        @scala.inline
-        def setTeamDrive(value: TeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
+        inline def setTeamDrive(value: TeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
+        inline def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
       }
     }
     
@@ -1403,26 +1122,20 @@ object DriveActivity {
     }
     object TargetReference {
       
-      @scala.inline
-      def apply(): TargetReference = {
+      inline def apply(): TargetReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TargetReference]
       }
       
-      @scala.inline
-      implicit class TargetReferenceMutableBuilder[Self <: TargetReference] (val x: Self) extends AnyVal {
+      extension [Self <: TargetReference](x: Self) {
         
-        @scala.inline
-        def setDriveItem(value: DriveItemReference): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
+        inline def setDriveItem(value: DriveItemReference): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
+        inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
         
-        @scala.inline
-        def setTeamDrive(value: TeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
+        inline def setTeamDrive(value: TeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
+        inline def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
       }
     }
     
@@ -1436,32 +1149,24 @@ object DriveActivity {
     }
     object TeamDrive {
       
-      @scala.inline
-      def apply(): TeamDrive = {
+      inline def apply(): TeamDrive = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TeamDrive]
       }
       
-      @scala.inline
-      implicit class TeamDriveMutableBuilder[Self <: TeamDrive] (val x: Self) extends AnyVal {
+      extension [Self <: TeamDrive](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setRoot(value: DriveItem): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+        inline def setRoot(value: DriveItem): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+        inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -1473,26 +1178,20 @@ object DriveActivity {
     }
     object TeamDriveReference {
       
-      @scala.inline
-      def apply(): TeamDriveReference = {
+      inline def apply(): TeamDriveReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TeamDriveReference]
       }
       
-      @scala.inline
-      implicit class TeamDriveReferenceMutableBuilder[Self <: TeamDriveReference] (val x: Self) extends AnyVal {
+      extension [Self <: TeamDriveReference](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -1504,26 +1203,20 @@ object DriveActivity {
     }
     object TimeRange {
       
-      @scala.inline
-      def apply(): TimeRange = {
+      inline def apply(): TimeRange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TimeRange]
       }
       
-      @scala.inline
-      implicit class TimeRangeMutableBuilder[Self <: TimeRange] (val x: Self) extends AnyVal {
+      extension [Self <: TimeRange](x: Self) {
         
-        @scala.inline
-        def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+        inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+        inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
         
-        @scala.inline
-        def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+        inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+        inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       }
     }
     
@@ -1537,32 +1230,24 @@ object DriveActivity {
     }
     object User {
       
-      @scala.inline
-      def apply(): User = {
+      inline def apply(): User = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[User]
       }
       
-      @scala.inline
-      implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+      extension [Self <: User](x: Self) {
         
-        @scala.inline
-        def setDeletedUser(value: js.Any): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
+        inline def setDeletedUser(value: js.Any): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
+        inline def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
         
-        @scala.inline
-        def setKnownUser(value: KnownUser): Self = StObject.set(x, "knownUser", value.asInstanceOf[js.Any])
+        inline def setKnownUser(value: KnownUser): Self = StObject.set(x, "knownUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
+        inline def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
         
-        @scala.inline
-        def setUnknownUser(value: js.Any): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
+        inline def setUnknownUser(value: js.Any): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
+        inline def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
       }
     }
   }

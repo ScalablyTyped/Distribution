@@ -14,8 +14,7 @@ object withFallbackStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[FSP](
+  inline def default[FSP](
     mapNodeToProps: js.Function2[/* parentNode */ HTMLDivElement, /* ownProps */ StringDictionary[js.Any], FSP]
   ): js.Function1[
     /* wrappedComponent */ ComponentType[js.Any], 

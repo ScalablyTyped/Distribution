@@ -17,31 +17,23 @@ trait MountBatchSize extends StObject {
 }
 object MountBatchSize {
   
-  @scala.inline
-  def apply(): MountBatchSize = {
+  inline def apply(): MountBatchSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MountBatchSize]
   }
   
-  @scala.inline
-  implicit class MountBatchSizeMutableBuilder[Self <: MountBatchSize] (val x: Self) extends AnyVal {
+  extension [Self <: MountBatchSize](x: Self) {
     
-    @scala.inline
-    def setMountBatchSize(value: Double): Self = StObject.set(x, "mountBatchSize", value.asInstanceOf[js.Any])
+    inline def setMountBatchSize(value: Double): Self = StObject.set(x, "mountBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountBatchSizeUndefined: Self = StObject.set(x, "mountBatchSize", js.undefined)
+    inline def setMountBatchSizeUndefined: Self = StObject.set(x, "mountBatchSize", js.undefined)
     
-    @scala.inline
-    def setUnmountBatchSize(value: Double): Self = StObject.set(x, "unmountBatchSize", value.asInstanceOf[js.Any])
+    inline def setUnmountBatchSize(value: Double): Self = StObject.set(x, "unmountBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmountBatchSizeUndefined: Self = StObject.set(x, "unmountBatchSize", js.undefined)
+    inline def setUnmountBatchSizeUndefined: Self = StObject.set(x, "unmountBatchSize", js.undefined)
     
-    @scala.inline
-    def setViewport(value: (/* view */ View[js.Any], /* isMounted */ Boolean, /* paper */ Paper) => Boolean): Self = StObject.set(x, "viewport", js.Any.fromFunction3(value))
+    inline def setViewport(value: (/* view */ View[js.Any], /* isMounted */ Boolean, /* paper */ Paper) => Boolean): Self = StObject.set(x, "viewport", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+    inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

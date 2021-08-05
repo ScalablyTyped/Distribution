@@ -12,19 +12,15 @@ trait SpeechGrammar extends StObject {
 }
 object SpeechGrammar {
   
-  @scala.inline
-  def apply(src: java.lang.String, weight: Double): SpeechGrammar = {
+  inline def apply(src: java.lang.String, weight: Double): SpeechGrammar = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechGrammar]
   }
   
-  @scala.inline
-  implicit class SpeechGrammarMutableBuilder[Self <: SpeechGrammar] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechGrammar](x: Self) {
     
-    @scala.inline
-    def setSrc(value: java.lang.String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: java.lang.String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

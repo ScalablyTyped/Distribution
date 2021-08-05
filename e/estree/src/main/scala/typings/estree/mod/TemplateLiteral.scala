@@ -18,29 +18,22 @@ trait TemplateLiteral
 }
 object TemplateLiteral {
   
-  @scala.inline
-  def apply(expressions: js.Array[Expression], quasis: js.Array[TemplateElement]): TemplateLiteral = {
+  inline def apply(expressions: js.Array[Expression], quasis: js.Array[TemplateElement]): TemplateLiteral = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TemplateLiteral")
     __obj.asInstanceOf[TemplateLiteral]
   }
   
-  @scala.inline
-  implicit class TemplateLiteralMutableBuilder[Self <: TemplateLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateLiteral](x: Self) {
     
-    @scala.inline
-    def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
-    @scala.inline
-    def setQuasis(value: js.Array[TemplateElement]): Self = StObject.set(x, "quasis", value.asInstanceOf[js.Any])
+    inline def setQuasis(value: js.Array[TemplateElement]): Self = StObject.set(x, "quasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasisVarargs(value: TemplateElement*): Self = StObject.set(x, "quasis", js.Array(value :_*))
+    inline def setQuasisVarargs(value: TemplateElement*): Self = StObject.set(x, "quasis", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.TemplateLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.TemplateLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

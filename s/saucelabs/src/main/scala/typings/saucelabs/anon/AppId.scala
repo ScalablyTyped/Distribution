@@ -10,19 +10,15 @@ trait AppId extends StObject {
 }
 object AppId {
   
-  @scala.inline
-  def apply(): AppId = {
+  inline def apply(): AppId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppId]
   }
   
-  @scala.inline
-  implicit class AppIdMutableBuilder[Self <: AppId] (val x: Self) extends AnyVal {
+  extension [Self <: AppId](x: Self) {
     
-    @scala.inline
-    def setAppId(value: Double): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: Double): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
   }
 }

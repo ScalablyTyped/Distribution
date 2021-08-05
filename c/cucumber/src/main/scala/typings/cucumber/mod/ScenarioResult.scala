@@ -15,25 +15,19 @@ trait ScenarioResult extends StObject {
 }
 object ScenarioResult {
   
-  @scala.inline
-  def apply(duration: Double, status: Status): ScenarioResult = {
+  inline def apply(duration: Double, status: Status): ScenarioResult = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScenarioResult]
   }
   
-  @scala.inline
-  implicit class ScenarioResultMutableBuilder[Self <: ScenarioResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScenarioResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setException(value: Error): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: Error): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+    inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

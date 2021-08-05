@@ -19,8 +19,7 @@ trait AddEventListener extends StObject {
 }
 object AddEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: () => Unit,
     dispatchEvent: Event => Boolean,
     getAttribute: String => String | Null,
@@ -31,22 +30,16 @@ object AddEventListener {
     __obj.asInstanceOf[AddEventListener]
   }
   
-  @scala.inline
-  implicit class AddEventListenerMutableBuilder[Self <: AddEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: AddEventListener](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: () => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction0(value))
+    inline def setAddEventListener(value: () => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDispatchEvent(value: Event => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+    inline def setDispatchEvent(value: Event => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+    inline def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveEventListener(value: () => Boolean): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction0(value))
+    inline def setRemoveEventListener(value: () => Boolean): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

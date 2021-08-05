@@ -14,8 +14,7 @@ trait PropertySetRegistry
      with XNameAccess
 object PropertySetRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,

@@ -11,15 +11,11 @@ object loggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDiffText(result: js.Array[ChangeObject]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffText")(result.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDiffText")(result.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getDiffText(result: js.Array[ChangeObject]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffText")(result.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDiffText")(result.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def logDiffText(result: js.Array[ChangeObject]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDiffText")(result.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def logDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDiffText")(result.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def logDiffText(result: js.Array[ChangeObject]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDiffText")(result.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def logDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDiffText")(result.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait LoggerOptions extends StObject {
     
@@ -31,20 +27,16 @@ object loggerMod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setCharsAroundDiff(value: Double): Self = StObject.set(x, "charsAroundDiff", value.asInstanceOf[js.Any])
+      inline def setCharsAroundDiff(value: Double): Self = StObject.set(x, "charsAroundDiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsAroundDiffUndefined: Self = StObject.set(x, "charsAroundDiff", js.undefined)
+      inline def setCharsAroundDiffUndefined: Self = StObject.set(x, "charsAroundDiff", js.undefined)
     }
   }
 }

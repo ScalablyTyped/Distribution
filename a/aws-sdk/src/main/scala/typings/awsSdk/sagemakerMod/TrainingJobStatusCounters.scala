@@ -33,43 +33,31 @@ trait TrainingJobStatusCounters extends StObject {
 }
 object TrainingJobStatusCounters {
   
-  @scala.inline
-  def apply(): TrainingJobStatusCounters = {
+  inline def apply(): TrainingJobStatusCounters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingJobStatusCounters]
   }
   
-  @scala.inline
-  implicit class TrainingJobStatusCountersMutableBuilder[Self <: TrainingJobStatusCounters] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingJobStatusCounters](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: TrainingJobStatusCounter): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: TrainingJobStatusCounter): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
+    inline def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
     
-    @scala.inline
-    def setInProgress(value: TrainingJobStatusCounter): Self = StObject.set(x, "InProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: TrainingJobStatusCounter): Self = StObject.set(x, "InProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressUndefined: Self = StObject.set(x, "InProgress", js.undefined)
+    inline def setInProgressUndefined: Self = StObject.set(x, "InProgress", js.undefined)
     
-    @scala.inline
-    def setNonRetryableError(value: TrainingJobStatusCounter): Self = StObject.set(x, "NonRetryableError", value.asInstanceOf[js.Any])
+    inline def setNonRetryableError(value: TrainingJobStatusCounter): Self = StObject.set(x, "NonRetryableError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonRetryableErrorUndefined: Self = StObject.set(x, "NonRetryableError", js.undefined)
+    inline def setNonRetryableErrorUndefined: Self = StObject.set(x, "NonRetryableError", js.undefined)
     
-    @scala.inline
-    def setRetryableError(value: TrainingJobStatusCounter): Self = StObject.set(x, "RetryableError", value.asInstanceOf[js.Any])
+    inline def setRetryableError(value: TrainingJobStatusCounter): Self = StObject.set(x, "RetryableError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryableErrorUndefined: Self = StObject.set(x, "RetryableError", js.undefined)
+    inline def setRetryableErrorUndefined: Self = StObject.set(x, "RetryableError", js.undefined)
     
-    @scala.inline
-    def setStopped(value: TrainingJobStatusCounter): Self = StObject.set(x, "Stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: TrainingJobStatusCounter): Self = StObject.set(x, "Stopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppedUndefined: Self = StObject.set(x, "Stopped", js.undefined)
+    inline def setStoppedUndefined: Self = StObject.set(x, "Stopped", js.undefined)
   }
 }

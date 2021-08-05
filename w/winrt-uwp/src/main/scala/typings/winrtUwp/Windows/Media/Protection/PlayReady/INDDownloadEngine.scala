@@ -44,8 +44,7 @@ trait INDDownloadEngine extends StObject {
 }
 object INDDownloadEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bufferFullMaxThresholdInSamples: Double,
     bufferFullMinThresholdInSamples: Double,
     canSeek: Boolean,
@@ -60,34 +59,24 @@ object INDDownloadEngine {
     __obj.asInstanceOf[INDDownloadEngine]
   }
   
-  @scala.inline
-  implicit class INDDownloadEngineMutableBuilder[Self <: INDDownloadEngine] (val x: Self) extends AnyVal {
+  extension [Self <: INDDownloadEngine](x: Self) {
     
-    @scala.inline
-    def setBufferFullMaxThresholdInSamples(value: Double): Self = StObject.set(x, "bufferFullMaxThresholdInSamples", value.asInstanceOf[js.Any])
+    inline def setBufferFullMaxThresholdInSamples(value: Double): Self = StObject.set(x, "bufferFullMaxThresholdInSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferFullMinThresholdInSamples(value: Double): Self = StObject.set(x, "bufferFullMinThresholdInSamples", value.asInstanceOf[js.Any])
+    inline def setBufferFullMinThresholdInSamples(value: Double): Self = StObject.set(x, "bufferFullMinThresholdInSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSeek(value: Boolean): Self = StObject.set(x, "canSeek", value.asInstanceOf[js.Any])
+    inline def setCanSeek(value: Boolean): Self = StObject.set(x, "canSeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotifier(value: NDDownloadEngineNotifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
+    inline def setNotifier(value: NDDownloadEngineNotifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: (Uri, js.Array[Double]) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
+    inline def setOpen(value: (Uri, js.Array[Double]) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+    inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
   }
 }

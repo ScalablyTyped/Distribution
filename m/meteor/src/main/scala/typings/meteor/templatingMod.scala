@@ -74,8 +74,7 @@ object templatingMod {
   @JSImport("meteor/templating", "Template")
   @js.native
   def Template: typings.meteor.templatingMod.TemplateStatic = js.native
-  @scala.inline
-  def Template_=(x: typings.meteor.templatingMod.TemplateStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Template")(x.asInstanceOf[js.Any])
+  inline def Template_=(x: typings.meteor.templatingMod.TemplateStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Template")(x.asInstanceOf[js.Any])
   
   @js.native
   trait TemplateStatic

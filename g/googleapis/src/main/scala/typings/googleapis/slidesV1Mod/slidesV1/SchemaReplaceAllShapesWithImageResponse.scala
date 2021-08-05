@@ -16,19 +16,15 @@ trait SchemaReplaceAllShapesWithImageResponse extends StObject {
 }
 object SchemaReplaceAllShapesWithImageResponse {
   
-  @scala.inline
-  def apply(): SchemaReplaceAllShapesWithImageResponse = {
+  inline def apply(): SchemaReplaceAllShapesWithImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplaceAllShapesWithImageResponse]
   }
   
-  @scala.inline
-  implicit class SchemaReplaceAllShapesWithImageResponseMutableBuilder[Self <: SchemaReplaceAllShapesWithImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplaceAllShapesWithImageResponse](x: Self) {
     
-    @scala.inline
-    def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+    inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+    inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
   }
 }

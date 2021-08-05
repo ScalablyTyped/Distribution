@@ -13,16 +13,13 @@ trait Scte35ReturnToNetworkScheduleActionSettings extends StObject {
 }
 object Scte35ReturnToNetworkScheduleActionSettings {
   
-  @scala.inline
-  def apply(SpliceEventId: longMin0Max4294967295): Scte35ReturnToNetworkScheduleActionSettings = {
+  inline def apply(SpliceEventId: longMin0Max4294967295): Scte35ReturnToNetworkScheduleActionSettings = {
     val __obj = js.Dynamic.literal(SpliceEventId = SpliceEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35ReturnToNetworkScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class Scte35ReturnToNetworkScheduleActionSettingsMutableBuilder[Self <: Scte35ReturnToNetworkScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Scte35ReturnToNetworkScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setSpliceEventId(value: longMin0Max4294967295): Self = StObject.set(x, "SpliceEventId", value.asInstanceOf[js.Any])
+    inline def setSpliceEventId(value: longMin0Max4294967295): Self = StObject.set(x, "SpliceEventId", value.asInstanceOf[js.Any])
   }
 }

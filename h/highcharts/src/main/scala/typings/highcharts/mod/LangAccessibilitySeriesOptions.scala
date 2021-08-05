@@ -51,49 +51,35 @@ trait LangAccessibilitySeriesOptions extends StObject {
 }
 object LangAccessibilitySeriesOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilitySeriesOptions = {
+  inline def apply(): LangAccessibilitySeriesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilitySeriesOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilitySeriesOptionsMutableBuilder[Self <: LangAccessibilitySeriesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilitySeriesOptions](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setNullPointValue(value: String): Self = StObject.set(x, "nullPointValue", value.asInstanceOf[js.Any])
+    inline def setNullPointValue(value: String): Self = StObject.set(x, "nullPointValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullPointValueUndefined: Self = StObject.set(x, "nullPointValue", js.undefined)
+    inline def setNullPointValueUndefined: Self = StObject.set(x, "nullPointValue", js.undefined)
     
-    @scala.inline
-    def setPointAnnotationsDescription(value: String): Self = StObject.set(x, "pointAnnotationsDescription", value.asInstanceOf[js.Any])
+    inline def setPointAnnotationsDescription(value: String): Self = StObject.set(x, "pointAnnotationsDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointAnnotationsDescriptionUndefined: Self = StObject.set(x, "pointAnnotationsDescription", js.undefined)
+    inline def setPointAnnotationsDescriptionUndefined: Self = StObject.set(x, "pointAnnotationsDescription", js.undefined)
     
-    @scala.inline
-    def setSummary(value: LangAccessibilitySeriesSummaryOptions): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: LangAccessibilitySeriesSummaryOptions): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setXAxisDescription(value: String): Self = StObject.set(x, "xAxisDescription", value.asInstanceOf[js.Any])
+    inline def setXAxisDescription(value: String): Self = StObject.set(x, "xAxisDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisDescriptionUndefined: Self = StObject.set(x, "xAxisDescription", js.undefined)
+    inline def setXAxisDescriptionUndefined: Self = StObject.set(x, "xAxisDescription", js.undefined)
     
-    @scala.inline
-    def setYAxisDescription(value: String): Self = StObject.set(x, "yAxisDescription", value.asInstanceOf[js.Any])
+    inline def setYAxisDescription(value: String): Self = StObject.set(x, "yAxisDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisDescriptionUndefined: Self = StObject.set(x, "yAxisDescription", js.undefined)
+    inline def setYAxisDescriptionUndefined: Self = StObject.set(x, "yAxisDescription", js.undefined)
   }
 }

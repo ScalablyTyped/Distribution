@@ -9,8 +9,7 @@ trait PrintTaskRequestedDeferral
      with IPrintTaskRequestedDeferral
 object PrintTaskRequestedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): PrintTaskRequestedDeferral = {
+  inline def apply(complete: () => Unit): PrintTaskRequestedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[PrintTaskRequestedDeferral]
   }

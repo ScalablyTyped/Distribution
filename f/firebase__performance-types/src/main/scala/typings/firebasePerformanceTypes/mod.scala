@@ -30,23 +30,18 @@ object mod {
   }
   object FirebasePerformance {
     
-    @scala.inline
-    def apply(dataCollectionEnabled: Boolean, instrumentationEnabled: Boolean, trace: String => PerformanceTrace): FirebasePerformance = {
+    inline def apply(dataCollectionEnabled: Boolean, instrumentationEnabled: Boolean, trace: String => PerformanceTrace): FirebasePerformance = {
       val __obj = js.Dynamic.literal(dataCollectionEnabled = dataCollectionEnabled.asInstanceOf[js.Any], instrumentationEnabled = instrumentationEnabled.asInstanceOf[js.Any], trace = js.Any.fromFunction1(trace))
       __obj.asInstanceOf[FirebasePerformance]
     }
     
-    @scala.inline
-    implicit class FirebasePerformanceMutableBuilder[Self <: FirebasePerformance] (val x: Self) extends AnyVal {
+    extension [Self <: FirebasePerformance](x: Self) {
       
-      @scala.inline
-      def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
+      inline def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstrumentationEnabled(value: Boolean): Self = StObject.set(x, "instrumentationEnabled", value.asInstanceOf[js.Any])
+      inline def setInstrumentationEnabled(value: Boolean): Self = StObject.set(x, "instrumentationEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: String => PerformanceTrace): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: String => PerformanceTrace): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     }
   }
   
@@ -140,17 +135,14 @@ object mod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(performance: FirebasePerformance): NameServiceMapping = {
+      inline def apply(performance: FirebasePerformance): NameServiceMapping = {
         val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def setPerformance(value: FirebasePerformance): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+        inline def setPerformance(value: FirebasePerformance): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
       }
     }
   }

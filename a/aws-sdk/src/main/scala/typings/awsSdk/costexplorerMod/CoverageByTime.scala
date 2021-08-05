@@ -23,34 +23,25 @@ trait CoverageByTime extends StObject {
 }
 object CoverageByTime {
   
-  @scala.inline
-  def apply(): CoverageByTime = {
+  inline def apply(): CoverageByTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoverageByTime]
   }
   
-  @scala.inline
-  implicit class CoverageByTimeMutableBuilder[Self <: CoverageByTime] (val x: Self) extends AnyVal {
+  extension [Self <: CoverageByTime](x: Self) {
     
-    @scala.inline
-    def setGroups(value: ReservationCoverageGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: ReservationCoverageGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: ReservationCoverageGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: ReservationCoverageGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Coverage): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Coverage): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

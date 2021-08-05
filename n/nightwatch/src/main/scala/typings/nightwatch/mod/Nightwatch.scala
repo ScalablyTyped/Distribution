@@ -18,8 +18,7 @@ trait Nightwatch extends StObject {
 }
 object Nightwatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: NightwatchAPI,
     assert: NightwatchAssertions,
     client: NightwatchClient,
@@ -30,22 +29,16 @@ object Nightwatch {
     __obj.asInstanceOf[Nightwatch]
   }
   
-  @scala.inline
-  implicit class NightwatchMutableBuilder[Self <: Nightwatch] (val x: Self) extends AnyVal {
+  extension [Self <: Nightwatch](x: Self) {
     
-    @scala.inline
-    def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssert(value: NightwatchAssertions): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: NightwatchAssertions): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient(value: NightwatchClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: NightwatchClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpect(value: Expect): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
+    inline def setExpect(value: Expect): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerify(value: NightwatchAssertions): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
+    inline def setVerify(value: NightwatchAssertions): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
   }
 }

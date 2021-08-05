@@ -28,34 +28,25 @@ trait ListRegionalBucketsRequest extends StObject {
 }
 object ListRegionalBucketsRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId): ListRegionalBucketsRequest = {
+  inline def apply(AccountId: AccountId): ListRegionalBucketsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRegionalBucketsRequest]
   }
   
-  @scala.inline
-  implicit class ListRegionalBucketsRequestMutableBuilder[Self <: ListRegionalBucketsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRegionalBucketsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOutpostId(value: NonEmptyMaxLength64String): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: NonEmptyMaxLength64String): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
+    inline def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ trait ElevationLayerQueryElevationOptions
 }
 object ElevationLayerQueryElevationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -51,31 +50,22 @@ object ElevationLayerQueryElevationOptions {
     __obj.asInstanceOf[ElevationLayerQueryElevationOptions]
   }
   
-  @scala.inline
-  implicit class ElevationLayerQueryElevationOptionsMutableBuilder[Self <: ElevationLayerQueryElevationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationLayerQueryElevationOptions](x: Self) {
     
-    @scala.inline
-    def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
+    inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
+    inline def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
     
-    @scala.inline
-    def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
+    inline def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
     
-    @scala.inline
-    def setReturnSampleInfo(value: Boolean): Self = StObject.set(x, "returnSampleInfo", value.asInstanceOf[js.Any])
+    inline def setReturnSampleInfo(value: Boolean): Self = StObject.set(x, "returnSampleInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnSampleInfoUndefined: Self = StObject.set(x, "returnSampleInfo", js.undefined)
+    inline def setReturnSampleInfoUndefined: Self = StObject.set(x, "returnSampleInfo", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

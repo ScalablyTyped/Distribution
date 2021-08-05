@@ -32,79 +32,55 @@ trait PartialStyleRulesGridListActionIcon extends StObject {
 }
 object PartialStyleRulesGridListActionIcon {
   
-  @scala.inline
-  def apply(): PartialStyleRulesGridListActionIcon = {
+  inline def apply(): PartialStyleRulesGridListActionIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesGridListActionIcon]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesGridListActionIconMutableBuilder[Self <: PartialStyleRulesGridListActionIcon] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesGridListActionIcon](x: Self) {
     
-    @scala.inline
-    def setActionIcon(value: CSSProperties): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
+    inline def setActionIcon(value: CSSProperties): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIconActionPosLeft(value: CSSProperties): Self = StObject.set(x, "actionIconActionPosLeft", value.asInstanceOf[js.Any])
+    inline def setActionIconActionPosLeft(value: CSSProperties): Self = StObject.set(x, "actionIconActionPosLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIconActionPosLeftUndefined: Self = StObject.set(x, "actionIconActionPosLeft", js.undefined)
+    inline def setActionIconActionPosLeftUndefined: Self = StObject.set(x, "actionIconActionPosLeft", js.undefined)
     
-    @scala.inline
-    def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
+    inline def setActionIconUndefined: Self = StObject.set(x, "actionIcon", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootSubtitle(value: CSSProperties): Self = StObject.set(x, "rootSubtitle", value.asInstanceOf[js.Any])
+    inline def setRootSubtitle(value: CSSProperties): Self = StObject.set(x, "rootSubtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootSubtitleUndefined: Self = StObject.set(x, "rootSubtitle", js.undefined)
+    inline def setRootSubtitleUndefined: Self = StObject.set(x, "rootSubtitle", js.undefined)
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: CSSProperties): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: CSSProperties): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlePositionBottom(value: CSSProperties): Self = StObject.set(x, "titlePositionBottom", value.asInstanceOf[js.Any])
+    inline def setTitlePositionBottom(value: CSSProperties): Self = StObject.set(x, "titlePositionBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlePositionBottomUndefined: Self = StObject.set(x, "titlePositionBottom", js.undefined)
+    inline def setTitlePositionBottomUndefined: Self = StObject.set(x, "titlePositionBottom", js.undefined)
     
-    @scala.inline
-    def setTitlePositionTop(value: CSSProperties): Self = StObject.set(x, "titlePositionTop", value.asInstanceOf[js.Any])
+    inline def setTitlePositionTop(value: CSSProperties): Self = StObject.set(x, "titlePositionTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlePositionTopUndefined: Self = StObject.set(x, "titlePositionTop", js.undefined)
+    inline def setTitlePositionTopUndefined: Self = StObject.set(x, "titlePositionTop", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTitleWrap(value: CSSProperties): Self = StObject.set(x, "titleWrap", value.asInstanceOf[js.Any])
+    inline def setTitleWrap(value: CSSProperties): Self = StObject.set(x, "titleWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleWrapActionPosLeft(value: CSSProperties): Self = StObject.set(x, "titleWrapActionPosLeft", value.asInstanceOf[js.Any])
+    inline def setTitleWrapActionPosLeft(value: CSSProperties): Self = StObject.set(x, "titleWrapActionPosLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleWrapActionPosLeftUndefined: Self = StObject.set(x, "titleWrapActionPosLeft", js.undefined)
+    inline def setTitleWrapActionPosLeftUndefined: Self = StObject.set(x, "titleWrapActionPosLeft", js.undefined)
     
-    @scala.inline
-    def setTitleWrapActionPosRight(value: CSSProperties): Self = StObject.set(x, "titleWrapActionPosRight", value.asInstanceOf[js.Any])
+    inline def setTitleWrapActionPosRight(value: CSSProperties): Self = StObject.set(x, "titleWrapActionPosRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleWrapActionPosRightUndefined: Self = StObject.set(x, "titleWrapActionPosRight", js.undefined)
+    inline def setTitleWrapActionPosRightUndefined: Self = StObject.set(x, "titleWrapActionPosRight", js.undefined)
     
-    @scala.inline
-    def setTitleWrapUndefined: Self = StObject.set(x, "titleWrap", js.undefined)
+    inline def setTitleWrapUndefined: Self = StObject.set(x, "titleWrap", js.undefined)
   }
 }

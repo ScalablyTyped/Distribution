@@ -21,8 +21,7 @@ object CommitEnum {
   @JSImport("mendixmodelsdk", "microflows.CommitEnum.No")
   @js.native
   def No: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum = js.native
-  @scala.inline
-  def No_=(x: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
+  inline def No_=(x: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.CommitEnum.Yes")
@@ -33,9 +32,7 @@ object CommitEnum {
   @JSImport("mendixmodelsdk", "microflows.CommitEnum.YesWithoutEvents")
   @js.native
   def YesWithoutEvents: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum = js.native
-  @scala.inline
-  def YesWithoutEvents_=(x: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithoutEvents")(x.asInstanceOf[js.Any])
+  inline def YesWithoutEvents_=(x: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesWithoutEvents")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Yes_=(x: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Yes")(x.asInstanceOf[js.Any])
+  inline def Yes_=(x: typings.mendixmodelsdk.microflowsMod.microflows.CommitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Yes")(x.asInstanceOf[js.Any])
 }

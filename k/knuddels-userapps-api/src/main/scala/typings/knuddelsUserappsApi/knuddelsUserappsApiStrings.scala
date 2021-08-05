@@ -8,11 +8,9 @@ object knuddelsUserappsApiStrings {
   
   @js.native
   sealed trait GET extends StObject
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait POST extends StObject
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
+  inline def POST: POST = "POST".asInstanceOf[POST]
 }

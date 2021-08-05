@@ -23,28 +23,25 @@ object xmlDtdElementMod {
   }
   object IXmlDtdElementOptions {
     
-    @scala.inline
-    def apply(charData: String): IXmlDtdElementOptions = {
+    inline def apply(charData: String): IXmlDtdElementOptions = {
       val __obj = js.Dynamic.literal(charData = charData.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlDtdElementOptions]
     }
     
-    @scala.inline
-    implicit class IXmlDtdElementOptionsMutableBuilder[Self <: IXmlDtdElementOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlDtdElementOptions](x: Self) {
       
-      @scala.inline
-      def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
+      inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait XmlDtdElement[Parent] extends StObject {
     
-    var _charData: js.Any = js.native
+    /* private */ var _charData: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the text of this element declaration.

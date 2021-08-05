@@ -16,7 +16,7 @@ class PullContextualTypeContext protected ()
     typeArgumentInferenceContext: typings.typescriptServices.TypeScript.TypeArgumentInferenceContext
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var astSymbolMap: js.Any = js.native
   
   /* CompleteClass */

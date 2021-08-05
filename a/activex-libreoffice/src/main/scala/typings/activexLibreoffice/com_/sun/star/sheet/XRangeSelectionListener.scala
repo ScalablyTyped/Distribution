@@ -23,8 +23,7 @@ trait XRangeSelectionListener
 }
 object XRangeSelectionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aborted: RangeSelectionEvent => Unit,
     acquire: () => Unit,
     disposing: EventObject => Unit,
@@ -36,13 +35,10 @@ object XRangeSelectionListener {
     __obj.asInstanceOf[XRangeSelectionListener]
   }
   
-  @scala.inline
-  implicit class XRangeSelectionListenerMutableBuilder[Self <: XRangeSelectionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRangeSelectionListener](x: Self) {
     
-    @scala.inline
-    def setAborted(value: RangeSelectionEvent => Unit): Self = StObject.set(x, "aborted", js.Any.fromFunction1(value))
+    inline def setAborted(value: RangeSelectionEvent => Unit): Self = StObject.set(x, "aborted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDone(value: RangeSelectionEvent => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+    inline def setDone(value: RangeSelectionEvent => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
   }
 }

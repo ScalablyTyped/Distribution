@@ -29,8 +29,7 @@ trait TransitionPreset extends StObject {
 }
 object TransitionPreset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cardStyleInterpolator: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle,
     gestureDirection: GestureDirection,
     headerStyleInterpolator: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle,
@@ -40,19 +39,14 @@ object TransitionPreset {
     __obj.asInstanceOf[TransitionPreset]
   }
   
-  @scala.inline
-  implicit class TransitionPresetMutableBuilder[Self <: TransitionPreset] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionPreset](x: Self) {
     
-    @scala.inline
-    def setCardStyleInterpolator(value: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle): Self = StObject.set(x, "cardStyleInterpolator", js.Any.fromFunction1(value))
+    inline def setCardStyleInterpolator(value: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle): Self = StObject.set(x, "cardStyleInterpolator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGestureDirection(value: GestureDirection): Self = StObject.set(x, "gestureDirection", value.asInstanceOf[js.Any])
+    inline def setGestureDirection(value: GestureDirection): Self = StObject.set(x, "gestureDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "headerStyleInterpolator", js.Any.fromFunction1(value))
+    inline def setHeaderStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "headerStyleInterpolator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransitionSpec(value: Close): Self = StObject.set(x, "transitionSpec", value.asInstanceOf[js.Any])
+    inline def setTransitionSpec(value: Close): Self = StObject.set(x, "transitionSpec", value.asInstanceOf[js.Any])
   }
 }

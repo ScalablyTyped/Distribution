@@ -28,26 +28,20 @@ trait Gradient extends StObject {
 }
 object Gradient {
   
-  @scala.inline
-  def apply(equals_ : Gradient => Boolean, radial: Boolean, stops: js.Array[GradientStop]): Gradient = {
+  inline def apply(equals_ : Gradient => Boolean, radial: Boolean, stops: js.Array[GradientStop]): Gradient = {
     val __obj = js.Dynamic.literal(radial = radial.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Gradient]
   }
   
-  @scala.inline
-  implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
+  extension [Self <: Gradient](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: Gradient => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Gradient => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRadial(value: Boolean): Self = StObject.set(x, "radial", value.asInstanceOf[js.Any])
+    inline def setRadial(value: Boolean): Self = StObject.set(x, "radial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

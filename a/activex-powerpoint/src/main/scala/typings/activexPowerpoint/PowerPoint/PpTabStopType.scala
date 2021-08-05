@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpTabStopType extends StObject
 object PpTabStopType {
   
-  @scala.inline
-  def ppTabStopCenter: `2` = 2.asInstanceOf[`2`]
+  inline def ppTabStopCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppTabStopDecimal: `4` = 4.asInstanceOf[`4`]
+  inline def ppTabStopDecimal: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppTabStopLeft: `1` = 1.asInstanceOf[`1`]
+  inline def ppTabStopLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppTabStopMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppTabStopMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppTabStopRight: `3` = 3.asInstanceOf[`3`]
+  inline def ppTabStopRight: `3` = 3.asInstanceOf[`3`]
 }

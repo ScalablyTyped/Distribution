@@ -38,49 +38,35 @@ trait ApplicationInfo extends StObject {
 }
 object ApplicationInfo {
   
-  @scala.inline
-  def apply(): ApplicationInfo = {
+  inline def apply(): ApplicationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationInfo]
   }
   
-  @scala.inline
-  implicit class ApplicationInfoMutableBuilder[Self <: ApplicationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationInfo](x: Self) {
     
-    @scala.inline
-    def setCWEMonitorEnabled(value: CWEMonitorEnabled): Self = StObject.set(x, "CWEMonitorEnabled", value.asInstanceOf[js.Any])
+    inline def setCWEMonitorEnabled(value: CWEMonitorEnabled): Self = StObject.set(x, "CWEMonitorEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCWEMonitorEnabledUndefined: Self = StObject.set(x, "CWEMonitorEnabled", js.undefined)
+    inline def setCWEMonitorEnabledUndefined: Self = StObject.set(x, "CWEMonitorEnabled", js.undefined)
     
-    @scala.inline
-    def setLifeCycle(value: LifeCycle): Self = StObject.set(x, "LifeCycle", value.asInstanceOf[js.Any])
+    inline def setLifeCycle(value: LifeCycle): Self = StObject.set(x, "LifeCycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifeCycleUndefined: Self = StObject.set(x, "LifeCycle", js.undefined)
+    inline def setLifeCycleUndefined: Self = StObject.set(x, "LifeCycle", js.undefined)
     
-    @scala.inline
-    def setOpsCenterEnabled(value: OpsCenterEnabled): Self = StObject.set(x, "OpsCenterEnabled", value.asInstanceOf[js.Any])
+    inline def setOpsCenterEnabled(value: OpsCenterEnabled): Self = StObject.set(x, "OpsCenterEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsCenterEnabledUndefined: Self = StObject.set(x, "OpsCenterEnabled", js.undefined)
+    inline def setOpsCenterEnabledUndefined: Self = StObject.set(x, "OpsCenterEnabled", js.undefined)
     
-    @scala.inline
-    def setOpsItemSNSTopicArn(value: OpsItemSNSTopicArn): Self = StObject.set(x, "OpsItemSNSTopicArn", value.asInstanceOf[js.Any])
+    inline def setOpsItemSNSTopicArn(value: OpsItemSNSTopicArn): Self = StObject.set(x, "OpsItemSNSTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsItemSNSTopicArnUndefined: Self = StObject.set(x, "OpsItemSNSTopicArn", js.undefined)
+    inline def setOpsItemSNSTopicArnUndefined: Self = StObject.set(x, "OpsItemSNSTopicArn", js.undefined)
     
-    @scala.inline
-    def setRemarks(value: Remarks): Self = StObject.set(x, "Remarks", value.asInstanceOf[js.Any])
+    inline def setRemarks(value: Remarks): Self = StObject.set(x, "Remarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarksUndefined: Self = StObject.set(x, "Remarks", js.undefined)
+    inline def setRemarksUndefined: Self = StObject.set(x, "Remarks", js.undefined)
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupNameUndefined: Self = StObject.set(x, "ResourceGroupName", js.undefined)
+    inline def setResourceGroupNameUndefined: Self = StObject.set(x, "ResourceGroupName", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait MaxPool3DInputs extends StObject {
 }
 object MaxPool3DInputs {
   
-  @scala.inline
-  def apply(): MaxPool3DInputs = {
+  inline def apply(): MaxPool3DInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxPool3DInputs]
   }
   
-  @scala.inline
-  implicit class MaxPool3DInputsMutableBuilder[Self <: MaxPool3DInputs] (val x: Self) extends AnyVal {
+  extension [Self <: MaxPool3DInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait XDriverAccess
 }
 object XDriverAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDriverByURL: String => XDriver,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XDriverAccess {
     __obj.asInstanceOf[XDriverAccess]
   }
   
-  @scala.inline
-  implicit class XDriverAccessMutableBuilder[Self <: XDriverAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XDriverAccess](x: Self) {
     
-    @scala.inline
-    def setGetDriverByURL(value: String => XDriver): Self = StObject.set(x, "getDriverByURL", js.Any.fromFunction1(value))
+    inline def setGetDriverByURL(value: String => XDriver): Self = StObject.set(x, "getDriverByURL", js.Any.fromFunction1(value))
   }
 }

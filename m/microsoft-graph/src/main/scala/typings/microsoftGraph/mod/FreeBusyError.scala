@@ -14,31 +14,23 @@ trait FreeBusyError extends StObject {
 }
 object FreeBusyError {
   
-  @scala.inline
-  def apply(): FreeBusyError = {
+  inline def apply(): FreeBusyError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FreeBusyError]
   }
   
-  @scala.inline
-  implicit class FreeBusyErrorMutableBuilder[Self <: FreeBusyError] (val x: Self) extends AnyVal {
+  extension [Self <: FreeBusyError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResponseCode(value: NullableOption[String]): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: NullableOption[String]): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCodeNull: Self = StObject.set(x, "responseCode", null)
+    inline def setResponseCodeNull: Self = StObject.set(x, "responseCode", null)
     
-    @scala.inline
-    def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
+    inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
   }
 }

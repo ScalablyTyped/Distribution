@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HangulAndAlphabetExceptions")
 @js.native
-class HangulAndAlphabetExceptions protected ()
+/* private */ class HangulAndAlphabetExceptions ()
   extends StObject
      with typings.activexWord.Word.HangulAndAlphabetExceptions {
   
@@ -28,7 +28,7 @@ class HangulAndAlphabetExceptions protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.HangulAndAlphabetExceptions_typekey")
   var WordDotHangulAndAlphabetExceptions_typekey: typings.activexWord.Word.HangulAndAlphabetExceptions = js.native
 }

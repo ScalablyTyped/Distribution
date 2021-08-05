@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlThemeFont extends StObject
 object XlThemeFont {
   
-  @scala.inline
-  def xlThemeFontMajor: `1` = 1.asInstanceOf[`1`]
+  inline def xlThemeFontMajor: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlThemeFontMinor: `2` = 2.asInstanceOf[`2`]
+  inline def xlThemeFontMinor: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlThemeFontNone: `0` = 0.asInstanceOf[`0`]
+  inline def xlThemeFontNone: `0` = 0.asInstanceOf[`0`]
 }

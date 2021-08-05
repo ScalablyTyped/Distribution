@@ -11,13 +11,11 @@ object canvasConfettiStrings {
   sealed trait circle
     extends StObject
        with shape
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait square
     extends StObject
        with shape
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  inline def square: square = "square".asInstanceOf[square]
 }

@@ -16,26 +16,20 @@ object anon {
   }
   object PartialDefaults {
     
-    @scala.inline
-    def apply(): PartialDefaults = {
+    inline def apply(): PartialDefaults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialDefaults]
     }
     
-    @scala.inline
-    implicit class PartialDefaultsMutableBuilder[Self <: PartialDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: PartialDefaults](x: Self) {
       
-      @scala.inline
-      def setFont(value: Fonts_): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: Fonts_): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontPath(value: String): Self = StObject.set(x, "fontPath", value.asInstanceOf[js.Any])
+      inline def setFontPath(value: String): Self = StObject.set(x, "fontPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontPathUndefined: Self = StObject.set(x, "fontPath", js.undefined)
+      inline def setFontPathUndefined: Self = StObject.set(x, "fontPath", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     }
   }
 }

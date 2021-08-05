@@ -14,19 +14,15 @@ trait MlDeleteCalendarJob
 }
 object MlDeleteCalendarJob {
   
-  @scala.inline
-  def apply(calendar_id: String, job_id: String): MlDeleteCalendarJob = {
+  inline def apply(calendar_id: String, job_id: String): MlDeleteCalendarJob = {
     val __obj = js.Dynamic.literal(calendar_id = calendar_id.asInstanceOf[js.Any], job_id = job_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlDeleteCalendarJob]
   }
   
-  @scala.inline
-  implicit class MlDeleteCalendarJobMutableBuilder[Self <: MlDeleteCalendarJob] (val x: Self) extends AnyVal {
+  extension [Self <: MlDeleteCalendarJob](x: Self) {
     
-    @scala.inline
-    def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
+    inline def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
   }
 }

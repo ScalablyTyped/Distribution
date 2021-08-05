@@ -28,28 +28,21 @@ trait DeleteNetworkAclEntryRequest extends StObject {
 }
 object DeleteNetworkAclEntryRequest {
   
-  @scala.inline
-  def apply(Egress: Boolean, NetworkAclId: NetworkAclId, RuleNumber: Integer): DeleteNetworkAclEntryRequest = {
+  inline def apply(Egress: Boolean, NetworkAclId: NetworkAclId, RuleNumber: Integer): DeleteNetworkAclEntryRequest = {
     val __obj = js.Dynamic.literal(Egress = Egress.asInstanceOf[js.Any], NetworkAclId = NetworkAclId.asInstanceOf[js.Any], RuleNumber = RuleNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNetworkAclEntryRequest]
   }
   
-  @scala.inline
-  implicit class DeleteNetworkAclEntryRequestMutableBuilder[Self <: DeleteNetworkAclEntryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNetworkAclEntryRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setEgress(value: Boolean): Self = StObject.set(x, "Egress", value.asInstanceOf[js.Any])
+    inline def setEgress(value: Boolean): Self = StObject.set(x, "Egress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAclId(value: NetworkAclId): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
+    inline def setNetworkAclId(value: NetworkAclId): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNumber(value: Integer): Self = StObject.set(x, "RuleNumber", value.asInstanceOf[js.Any])
+    inline def setRuleNumber(value: Integer): Self = StObject.set(x, "RuleNumber", value.asInstanceOf[js.Any])
   }
 }

@@ -28,34 +28,25 @@ trait UpdateWebACLRequest extends StObject {
 }
 object UpdateWebACLRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, WebACLId: ResourceId): UpdateWebACLRequest = {
+  inline def apply(ChangeToken: ChangeToken, WebACLId: ResourceId): UpdateWebACLRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWebACLRequest]
   }
   
-  @scala.inline
-  implicit class UpdateWebACLRequestMutableBuilder[Self <: UpdateWebACLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWebACLRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAction(value: WafAction): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
+    inline def setDefaultAction(value: WafAction): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultActionUndefined: Self = StObject.set(x, "DefaultAction", js.undefined)
+    inline def setDefaultActionUndefined: Self = StObject.set(x, "DefaultAction", js.undefined)
     
-    @scala.inline
-    def setUpdates(value: WebACLUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: WebACLUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
     
-    @scala.inline
-    def setUpdatesVarargs(value: WebACLUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: WebACLUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
     
-    @scala.inline
-    def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
+    inline def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

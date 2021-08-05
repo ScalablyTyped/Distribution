@@ -36,8 +36,7 @@ trait TextArea extends StObject {
 }
 object TextArea {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setAllowOverride: Boolean => TextArea,
     setHelpText: String => TextArea,
     setId: String => TextArea,
@@ -49,25 +48,18 @@ object TextArea {
     __obj.asInstanceOf[TextArea]
   }
   
-  @scala.inline
-  implicit class TextAreaMutableBuilder[Self <: TextArea] (val x: Self) extends AnyVal {
+  extension [Self <: TextArea](x: Self) {
     
-    @scala.inline
-    def setSetAllowOverride(value: Boolean => TextArea): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
+    inline def setSetAllowOverride(value: Boolean => TextArea): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHelpText(value: String => TextArea): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    inline def setSetHelpText(value: String => TextArea): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetId(value: String => TextArea): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: String => TextArea): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIsDynamic(value: Boolean => TextArea): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
+    inline def setSetIsDynamic(value: Boolean => TextArea): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetName(value: String => TextArea): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => TextArea): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPlaceholder(value: String => TextArea): Self = StObject.set(x, "setPlaceholder", js.Any.fromFunction1(value))
+    inline def setSetPlaceholder(value: String => TextArea): Self = StObject.set(x, "setPlaceholder", js.Any.fromFunction1(value))
   }
 }

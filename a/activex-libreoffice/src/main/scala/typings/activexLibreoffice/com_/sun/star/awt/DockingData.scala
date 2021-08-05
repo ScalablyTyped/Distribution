@@ -15,19 +15,15 @@ trait DockingData extends StObject {
 }
 object DockingData {
   
-  @scala.inline
-  def apply(TrackingRectangle: Rectangle, bFloating: Boolean): DockingData = {
+  inline def apply(TrackingRectangle: Rectangle, bFloating: Boolean): DockingData = {
     val __obj = js.Dynamic.literal(TrackingRectangle = TrackingRectangle.asInstanceOf[js.Any], bFloating = bFloating.asInstanceOf[js.Any])
     __obj.asInstanceOf[DockingData]
   }
   
-  @scala.inline
-  implicit class DockingDataMutableBuilder[Self <: DockingData] (val x: Self) extends AnyVal {
+  extension [Self <: DockingData](x: Self) {
     
-    @scala.inline
-    def setBFloating(value: Boolean): Self = StObject.set(x, "bFloating", value.asInstanceOf[js.Any])
+    inline def setBFloating(value: Boolean): Self = StObject.set(x, "bFloating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingRectangle(value: Rectangle): Self = StObject.set(x, "TrackingRectangle", value.asInstanceOf[js.Any])
+    inline def setTrackingRectangle(value: Rectangle): Self = StObject.set(x, "TrackingRectangle", value.asInstanceOf[js.Any])
   }
 }

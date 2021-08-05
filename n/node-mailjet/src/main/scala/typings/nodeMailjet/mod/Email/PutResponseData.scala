@@ -14,25 +14,19 @@ trait PutResponseData extends StObject {
 }
 object PutResponseData {
   
-  @scala.inline
-  def apply(Count: Double, Data: js.Array[js.Object], Total: Double): PutResponseData = {
+  inline def apply(Count: Double, Data: js.Array[js.Object], Total: Double): PutResponseData = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], Total = Total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResponseData]
   }
   
-  @scala.inline
-  implicit class PutResponseDataMutableBuilder[Self <: PutResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: PutResponseData](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[js.Object]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: js.Object*): Self = StObject.set(x, "Data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "Data", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
   }
 }

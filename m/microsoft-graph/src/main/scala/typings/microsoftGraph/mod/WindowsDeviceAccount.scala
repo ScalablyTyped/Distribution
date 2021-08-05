@@ -11,22 +11,17 @@ trait WindowsDeviceAccount extends StObject {
 }
 object WindowsDeviceAccount {
   
-  @scala.inline
-  def apply(): WindowsDeviceAccount = {
+  inline def apply(): WindowsDeviceAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsDeviceAccount]
   }
   
-  @scala.inline
-  implicit class WindowsDeviceAccountMutableBuilder[Self <: WindowsDeviceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsDeviceAccount](x: Self) {
     
-    @scala.inline
-    def setPassword(value: NullableOption[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: NullableOption[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordNull: Self = StObject.set(x, "password", null)
+    inline def setPasswordNull: Self = StObject.set(x, "password", null)
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
   }
 }

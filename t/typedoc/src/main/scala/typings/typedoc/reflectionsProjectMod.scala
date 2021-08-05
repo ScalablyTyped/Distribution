@@ -27,7 +27,6 @@ object reflectionsProjectMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/reflections/project", "ProjectReflectionSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
 }

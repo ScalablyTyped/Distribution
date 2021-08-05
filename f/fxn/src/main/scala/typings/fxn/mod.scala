@@ -21,19 +21,19 @@ object mod {
   abstract class Controller protected () extends StObject {
     def this(path: String, method: String, requestHeaders: js.Object, params: js.Object, responder: js.Function) = this()
     
-    var _headers: js.Object = js.native
+    /* protected */ var _headers: js.Object = js.native
     
-    var _method: HttpMethod = js.native
+    /* protected */ var _method: HttpMethod = js.native
     
-    var _path: String = js.native
+    /* protected */ var _path: String = js.native
     
-    var _requestHeaders: js.Object = js.native
+    /* protected */ var _requestHeaders: js.Object = js.native
     
-    var _responder: js.Function = js.native
+    /* protected */ var _responder: js.Function = js.native
     
-    var _securityPolicies: js.Object = js.native
+    /* protected */ var _securityPolicies: js.Object = js.native
     
-    var _status: Double = js.native
+    /* protected */ var _status: Double = js.native
     
     def after(): Unit = js.native
     
@@ -65,7 +65,7 @@ object mod {
     
     def options(): Unit = js.native
     
-    var params: js.Any = js.native
+    /* protected */ var params: js.Any = js.native
     
     def post(): Unit = js.native
     
@@ -118,19 +118,14 @@ object mod {
   trait HttpMethod extends StObject
   object HttpMethod {
     
-    @scala.inline
-    def DELETE: typings.fxn.fxnStrings.DELETE = "DELETE".asInstanceOf[typings.fxn.fxnStrings.DELETE]
+    inline def DELETE: typings.fxn.fxnStrings.DELETE = "DELETE".asInstanceOf[typings.fxn.fxnStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.fxn.fxnStrings.GET = "GET".asInstanceOf[typings.fxn.fxnStrings.GET]
+    inline def GET: typings.fxn.fxnStrings.GET = "GET".asInstanceOf[typings.fxn.fxnStrings.GET]
     
-    @scala.inline
-    def OPTIONS: typings.fxn.fxnStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.fxn.fxnStrings.OPTIONS]
+    inline def OPTIONS: typings.fxn.fxnStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.fxn.fxnStrings.OPTIONS]
     
-    @scala.inline
-    def POST: typings.fxn.fxnStrings.POST = "POST".asInstanceOf[typings.fxn.fxnStrings.POST]
+    inline def POST: typings.fxn.fxnStrings.POST = "POST".asInstanceOf[typings.fxn.fxnStrings.POST]
     
-    @scala.inline
-    def PUT: typings.fxn.fxnStrings.PUT = "PUT".asInstanceOf[typings.fxn.fxnStrings.PUT]
+    inline def PUT: typings.fxn.fxnStrings.PUT = "PUT".asInstanceOf[typings.fxn.fxnStrings.PUT]
   }
 }

@@ -18,22 +18,17 @@ trait EnableRuleRequest extends StObject {
 }
 object EnableRuleRequest {
   
-  @scala.inline
-  def apply(Name: RuleName): EnableRuleRequest = {
+  inline def apply(Name: RuleName): EnableRuleRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableRuleRequest]
   }
   
-  @scala.inline
-  implicit class EnableRuleRequestMutableBuilder[Self <: EnableRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableRuleRequest](x: Self) {
     
-    @scala.inline
-    def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
+    inline def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
+    inline def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
-    @scala.inline
-    def setName(value: RuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,6 @@ object generatedFileMod {
     var stmts: js.Array[Statement] | Null = js.native
   }
   
-  @scala.inline
-  def toTypeScript(file: GeneratedFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTypeScript")(file.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toTypeScript(file: GeneratedFile, preamble: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTypeScript")(file.asInstanceOf[js.Any], preamble.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toTypeScript(file: GeneratedFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTypeScript")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTypeScript(file: GeneratedFile, preamble: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toTypeScript")(file.asInstanceOf[js.Any], preamble.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -21,6 +21,5 @@ class RangeError ()
 }
 object RangeError {
   
-  @scala.inline
-  def apply: RangeErrorConstructor = js.Dynamic.global.selectDynamic("RangeError").asInstanceOf[RangeErrorConstructor]
+  inline def apply: RangeErrorConstructor = js.Dynamic.global.selectDynamic("RangeError").asInstanceOf[RangeErrorConstructor]
 }

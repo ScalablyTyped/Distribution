@@ -17,8 +17,7 @@ trait BillingAccount extends StObject {
 }
 object BillingAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getId: () => Double,
     getName: () => String,
     getPrimaryBillingId: () => String,
@@ -28,19 +27,14 @@ object BillingAccount {
     __obj.asInstanceOf[BillingAccount]
   }
   
-  @scala.inline
-  implicit class BillingAccountMutableBuilder[Self <: BillingAccount] (val x: Self) extends AnyVal {
+  extension [Self <: BillingAccount](x: Self) {
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrimaryBillingId(value: () => String): Self = StObject.set(x, "getPrimaryBillingId", js.Any.fromFunction0(value))
+    inline def setGetPrimaryBillingId(value: () => String): Self = StObject.set(x, "getPrimaryBillingId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSecondaryBillingId(value: () => String): Self = StObject.set(x, "getSecondaryBillingId", js.Any.fromFunction0(value))
+    inline def setGetSecondaryBillingId(value: () => String): Self = StObject.set(x, "getSecondaryBillingId", js.Any.fromFunction0(value))
   }
 }

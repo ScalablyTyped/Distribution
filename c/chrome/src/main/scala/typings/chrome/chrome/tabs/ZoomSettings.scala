@@ -32,31 +32,23 @@ trait ZoomSettings extends StObject {
 }
 object ZoomSettings {
   
-  @scala.inline
-  def apply(): ZoomSettings = {
+  inline def apply(): ZoomSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoomSettings]
   }
   
-  @scala.inline
-  implicit class ZoomSettingsMutableBuilder[Self <: ZoomSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomSettings](x: Self) {
     
-    @scala.inline
-    def setDefaultZoomFactor(value: Double): Self = StObject.set(x, "defaultZoomFactor", value.asInstanceOf[js.Any])
+    inline def setDefaultZoomFactor(value: Double): Self = StObject.set(x, "defaultZoomFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultZoomFactorUndefined: Self = StObject.set(x, "defaultZoomFactor", js.undefined)
+    inline def setDefaultZoomFactorUndefined: Self = StObject.set(x, "defaultZoomFactor", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

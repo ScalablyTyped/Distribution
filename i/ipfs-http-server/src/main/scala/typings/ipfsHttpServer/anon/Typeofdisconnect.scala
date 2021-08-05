@@ -12,19 +12,15 @@ trait Typeofdisconnect extends StObject {
 }
 object Typeofdisconnect {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_8: Typeofoptions8): Typeofdisconnect = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_8: Typeofoptions8): Typeofdisconnect = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options_8 = options_8.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofdisconnect]
   }
   
-  @scala.inline
-  implicit class TypeofdisconnectMutableBuilder[Self <: Typeofdisconnect] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofdisconnect](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_8(value: Typeofoptions8): Self = StObject.set(x, "options_8", value.asInstanceOf[js.Any])
+    inline def setOptions_8(value: Typeofoptions8): Self = StObject.set(x, "options_8", value.asInstanceOf[js.Any])
   }
 }

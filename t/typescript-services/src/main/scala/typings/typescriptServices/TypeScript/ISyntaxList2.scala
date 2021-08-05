@@ -8,7 +8,7 @@ trait ISyntaxList2
   extends StObject
      with AST {
   
-  var _fileName: js.Any
+  /* private */ var _fileName: js.Any
   
   def any(func: js.Function1[/* v */ AST, Boolean]): Boolean
   
@@ -20,14 +20,13 @@ trait ISyntaxList2
   
   def lastOrDefault(func: js.Function2[/* v */ AST, /* index */ Double, Boolean]): AST
   
-  var members: js.Any
+  /* private */ var members: js.Any
   
   def structuralEquals(ast: ISyntaxList2, includingPosition: Boolean): Boolean
 }
 object ISyntaxList2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _fileName: js.Any,
@@ -60,31 +59,22 @@ object ISyntaxList2 {
     __obj.asInstanceOf[ISyntaxList2]
   }
   
-  @scala.inline
-  implicit class ISyntaxList2MutableBuilder[Self <: ISyntaxList2] (val x: Self) extends AnyVal {
+  extension [Self <: ISyntaxList2](x: Self) {
     
-    @scala.inline
-    def setAny(value: js.Function1[/* v */ AST, Boolean] => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
+    inline def setAny(value: js.Function1[/* v */ AST, Boolean] => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildAt(value: Double => AST): Self = StObject.set(x, "childAt", js.Any.fromFunction1(value))
+    inline def setChildAt(value: Double => AST): Self = StObject.set(x, "childAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildCount(value: () => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction0(value))
+    inline def setChildCount(value: () => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFirstOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = StObject.set(x, "firstOrDefault", js.Any.fromFunction1(value))
+    inline def setFirstOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = StObject.set(x, "firstOrDefault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLastOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = StObject.set(x, "lastOrDefault", js.Any.fromFunction1(value))
+    inline def setLastOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = StObject.set(x, "lastOrDefault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (ISyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ISyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
   }
 }

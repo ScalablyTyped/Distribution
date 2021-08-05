@@ -23,25 +23,19 @@ trait SetVaultNotificationsInput extends StObject {
 }
 object SetVaultNotificationsInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): SetVaultNotificationsInput = {
+  inline def apply(accountId: String, vaultName: String): SetVaultNotificationsInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetVaultNotificationsInput]
   }
   
-  @scala.inline
-  implicit class SetVaultNotificationsInputMutableBuilder[Self <: SetVaultNotificationsInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetVaultNotificationsInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultNotificationConfig(value: VaultNotificationConfig): Self = StObject.set(x, "vaultNotificationConfig", value.asInstanceOf[js.Any])
+    inline def setVaultNotificationConfig(value: VaultNotificationConfig): Self = StObject.set(x, "vaultNotificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultNotificationConfigUndefined: Self = StObject.set(x, "vaultNotificationConfig", js.undefined)
+    inline def setVaultNotificationConfigUndefined: Self = StObject.set(x, "vaultNotificationConfig", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait XAccessibleExtendedAttributes
 }
 object XAccessibleExtendedAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExtendedAttributes: js.Any,
     acquire: () => Unit,
     getExtendedAttributes: () => js.Any,
@@ -28,13 +27,10 @@ object XAccessibleExtendedAttributes {
     __obj.asInstanceOf[XAccessibleExtendedAttributes]
   }
   
-  @scala.inline
-  implicit class XAccessibleExtendedAttributesMutableBuilder[Self <: XAccessibleExtendedAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleExtendedAttributes](x: Self) {
     
-    @scala.inline
-    def setExtendedAttributes(value: js.Any): Self = StObject.set(x, "ExtendedAttributes", value.asInstanceOf[js.Any])
+    inline def setExtendedAttributes(value: js.Any): Self = StObject.set(x, "ExtendedAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExtendedAttributes(value: () => js.Any): Self = StObject.set(x, "getExtendedAttributes", js.Any.fromFunction0(value))
+    inline def setGetExtendedAttributes(value: () => js.Any): Self = StObject.set(x, "getExtendedAttributes", js.Any.fromFunction0(value))
   }
 }

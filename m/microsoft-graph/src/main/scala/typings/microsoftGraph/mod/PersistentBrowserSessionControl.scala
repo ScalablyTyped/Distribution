@@ -13,22 +13,17 @@ trait PersistentBrowserSessionControl
 }
 object PersistentBrowserSessionControl {
   
-  @scala.inline
-  def apply(): PersistentBrowserSessionControl = {
+  inline def apply(): PersistentBrowserSessionControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistentBrowserSessionControl]
   }
   
-  @scala.inline
-  implicit class PersistentBrowserSessionControlMutableBuilder[Self <: PersistentBrowserSessionControl] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentBrowserSessionControl](x: Self) {
     
-    @scala.inline
-    def setMode(value: NullableOption[PersistentBrowserSessionMode]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: NullableOption[PersistentBrowserSessionMode]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeNull: Self = StObject.set(x, "mode", null)
+    inline def setModeNull: Self = StObject.set(x, "mode", null)
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

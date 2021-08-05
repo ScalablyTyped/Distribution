@@ -11,17 +11,14 @@ trait BillingGetGithubPackagesBillingOrgEndpoint extends StObject {
 }
 object BillingGetGithubPackagesBillingOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): BillingGetGithubPackagesBillingOrgEndpoint = {
+  inline def apply(org_ : String): BillingGetGithubPackagesBillingOrgEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingGetGithubPackagesBillingOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class BillingGetGithubPackagesBillingOrgEndpointMutableBuilder[Self <: BillingGetGithubPackagesBillingOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGetGithubPackagesBillingOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

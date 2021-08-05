@@ -18,25 +18,19 @@ trait SortCriterion extends StObject {
 }
 object SortCriterion {
   
-  @scala.inline
-  def apply(): SortCriterion = {
+  inline def apply(): SortCriterion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SortCriterion]
   }
   
-  @scala.inline
-  implicit class SortCriterionMutableBuilder[Self <: SortCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: SortCriterion](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: ValueString): Self = StObject.set(x, "FieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: ValueString): Self = StObject.set(x, "FieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "FieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "FieldName", js.undefined)
     
-    @scala.inline
-    def setSort(value: Sort): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Sort): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientCardViewColumnCancelEventArgs
 }
 object ASPxClientCardViewColumnCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, column: ASPxClientCardViewColumn): ASPxClientCardViewColumnCancelEventArgs = {
+  inline def apply(cancel: Boolean, column: ASPxClientCardViewColumn): ASPxClientCardViewColumnCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewColumnCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewColumnCancelEventArgsMutableBuilder[Self <: ASPxClientCardViewColumnCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewColumnCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

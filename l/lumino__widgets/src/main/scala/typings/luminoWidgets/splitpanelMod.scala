@@ -28,29 +28,29 @@ object splitpanelMod {
     /**
       * Handle the `'keydown'` event for the split panel.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the split panel.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the split panel.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the split panel.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
-    var _pressData: js.Any = js.native
+    /* private */ var _pressData: js.Any = js.native
     
     /**
       * Release the mouse grab for the split panel.
       */
-    var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: js.Any = js.native
     
     /**
       * Get the content alignment for the split panel.
@@ -173,8 +173,7 @@ object splitpanelMod {
       *
       * @returns The split panel stretch factor for the widget.
       */
-    @scala.inline
-    def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Set the split panel stretch factor for the given widget.
@@ -183,8 +182,7 @@ object splitpanelMod {
       *
       * @param value - The value for the stretch factor.
       */
-    @scala.inline
-    def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for a split panel alignment.
@@ -235,44 +233,32 @@ object splitpanelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setLayout(value: SplitLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: SplitLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+        inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
         
-        @scala.inline
-        def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+        inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+        inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+        inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       }
     }
     

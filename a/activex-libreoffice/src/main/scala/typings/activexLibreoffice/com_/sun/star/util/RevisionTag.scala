@@ -26,25 +26,19 @@ trait RevisionTag extends StObject {
 }
 object RevisionTag {
   
-  @scala.inline
-  def apply(Author: String, Comment: String, Identifier: String, TimeStamp: DateTime): RevisionTag = {
+  inline def apply(Author: String, Comment: String, Identifier: String, TimeStamp: DateTime): RevisionTag = {
     val __obj = js.Dynamic.literal(Author = Author.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], Identifier = Identifier.asInstanceOf[js.Any], TimeStamp = TimeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevisionTag]
   }
   
-  @scala.inline
-  implicit class RevisionTagMutableBuilder[Self <: RevisionTag] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionTag](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: DateTime): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: DateTime): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
   }
 }

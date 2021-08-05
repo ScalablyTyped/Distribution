@@ -62,50 +62,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setGranularLoaderData(value: Boolean): Self = StObject.set(x, "granularLoaderData", value.asInstanceOf[js.Any])
+      inline def setGranularLoaderData(value: Boolean): Self = StObject.set(x, "granularLoaderData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranularLoaderDataUndefined: Self = StObject.set(x, "granularLoaderData", js.undefined)
+      inline def setGranularLoaderDataUndefined: Self = StObject.set(x, "granularLoaderData", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormatFunction1(value: /* json */ js.Any => String): Self = StObject.set(x, "outputFormat", js.Any.fromFunction1(value))
+      inline def setOutputFormatFunction1(value: /* json */ js.Any => String): Self = StObject.set(x, "outputFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+      inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
       
-      @scala.inline
-      def setOutputTarget(value: OutputTarget): Self = StObject.set(x, "outputTarget", value.asInstanceOf[js.Any])
+      inline def setOutputTarget(value: OutputTarget): Self = StObject.set(x, "outputTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputTargetFunction2(value: (/* output */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "outputTarget", js.Any.fromFunction2(value))
+      inline def setOutputTargetFunction2(value: (/* output */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "outputTarget", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOutputTargetUndefined: Self = StObject.set(x, "outputTarget", js.undefined)
+      inline def setOutputTargetUndefined: Self = StObject.set(x, "outputTarget", js.undefined)
       
-      @scala.inline
-      def setPluginNames(value: StringDictionary[js.Object]): Self = StObject.set(x, "pluginNames", value.asInstanceOf[js.Any])
+      inline def setPluginNames(value: StringDictionary[js.Object]): Self = StObject.set(x, "pluginNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginNamesUndefined: Self = StObject.set(x, "pluginNames", js.undefined)
+      inline def setPluginNamesUndefined: Self = StObject.set(x, "pluginNames", js.undefined)
     }
   }
   
@@ -130,19 +116,16 @@ object mod {
   }
   object SpeedMeasurePlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       wrap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any => js.Any
     ): SpeedMeasurePlugin = {
       val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction1(wrap))
       __obj.asInstanceOf[SpeedMeasurePlugin]
     }
     
-    @scala.inline
-    implicit class SpeedMeasurePluginMutableBuilder[Self <: SpeedMeasurePlugin] (val x: Self) extends AnyVal {
+    extension [Self <: SpeedMeasurePlugin](x: Self) {
       
-      @scala.inline
-      def setWrap(
+      inline def setWrap(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any => js.Any
       ): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
     }

@@ -30,8 +30,7 @@ object adapterMod extends Shortcut {
   }
   object DetoxJestAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterAll: () => js.Promise[Unit],
       beforeEach: () => js.Promise[Unit],
       detox: Detox,
@@ -43,23 +42,17 @@ object adapterMod extends Shortcut {
       __obj.asInstanceOf[DetoxJestAdapter]
     }
     
-    @scala.inline
-    implicit class DetoxJestAdapterMutableBuilder[Self <: DetoxJestAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: DetoxJestAdapter](x: Self) {
       
-      @scala.inline
-      def setAfterAll(value: () => js.Promise[Unit]): Self = StObject.set(x, "afterAll", js.Any.fromFunction0(value))
+      inline def setAfterAll(value: () => js.Promise[Unit]): Self = StObject.set(x, "afterAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeEach(value: () => js.Promise[Unit]): Self = StObject.set(x, "beforeEach", js.Any.fromFunction0(value))
+      inline def setBeforeEach(value: () => js.Promise[Unit]): Self = StObject.set(x, "beforeEach", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetox(value: Detox): Self = StObject.set(x, "detox", value.asInstanceOf[js.Any])
+      inline def setDetox(value: Detox): Self = StObject.set(x, "detox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecDone(value: () => Unit): Self = StObject.set(x, "specDone", js.Any.fromFunction0(value))
+      inline def setSpecDone(value: () => Unit): Self = StObject.set(x, "specDone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSpecStarted(value: () => Unit): Self = StObject.set(x, "specStarted", js.Any.fromFunction0(value))
+      inline def setSpecStarted(value: () => Unit): Self = StObject.set(x, "specStarted", js.Any.fromFunction0(value))
     }
   }
   

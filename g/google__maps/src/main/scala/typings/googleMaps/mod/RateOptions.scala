@@ -14,25 +14,19 @@ trait RateOptions extends StObject {
 }
 object RateOptions {
   
-  @scala.inline
-  def apply(): RateOptions = {
+  inline def apply(): RateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RateOptions]
   }
   
-  @scala.inline
-  implicit class RateOptionsMutableBuilder[Self <: RateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RateOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

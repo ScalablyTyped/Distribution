@@ -13,22 +13,17 @@ trait SchemaSecurityPolicyRuleMatcherConfig extends StObject {
 }
 object SchemaSecurityPolicyRuleMatcherConfig {
   
-  @scala.inline
-  def apply(): SchemaSecurityPolicyRuleMatcherConfig = {
+  inline def apply(): SchemaSecurityPolicyRuleMatcherConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPolicyRuleMatcherConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPolicyRuleMatcherConfigMutableBuilder[Self <: SchemaSecurityPolicyRuleMatcherConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPolicyRuleMatcherConfig](x: Self) {
     
-    @scala.inline
-    def setSrcIpRanges(value: js.Array[String]): Self = StObject.set(x, "srcIpRanges", value.asInstanceOf[js.Any])
+    inline def setSrcIpRanges(value: js.Array[String]): Self = StObject.set(x, "srcIpRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcIpRangesUndefined: Self = StObject.set(x, "srcIpRanges", js.undefined)
+    inline def setSrcIpRangesUndefined: Self = StObject.set(x, "srcIpRanges", js.undefined)
     
-    @scala.inline
-    def setSrcIpRangesVarargs(value: String*): Self = StObject.set(x, "srcIpRanges", js.Array(value :_*))
+    inline def setSrcIpRangesVarargs(value: String*): Self = StObject.set(x, "srcIpRanges", js.Array(value :_*))
   }
 }

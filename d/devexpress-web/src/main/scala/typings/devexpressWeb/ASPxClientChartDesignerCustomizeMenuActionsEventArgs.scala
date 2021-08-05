@@ -12,19 +12,15 @@ trait ASPxClientChartDesignerCustomizeMenuActionsEventArgs
 }
 object ASPxClientChartDesignerCustomizeMenuActionsEventArgs {
   
-  @scala.inline
-  def apply(actions: js.Array[ASPxClientChartDesignerMenuAction]): ASPxClientChartDesignerCustomizeMenuActionsEventArgs = {
+  inline def apply(actions: js.Array[ASPxClientChartDesignerMenuAction]): ASPxClientChartDesignerCustomizeMenuActionsEventArgs = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientChartDesignerCustomizeMenuActionsEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientChartDesignerCustomizeMenuActionsEventArgsMutableBuilder[Self <: ASPxClientChartDesignerCustomizeMenuActionsEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientChartDesignerCustomizeMenuActionsEventArgs](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[ASPxClientChartDesignerMenuAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ASPxClientChartDesignerMenuAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: ASPxClientChartDesignerMenuAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ASPxClientChartDesignerMenuAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
   }
 }

@@ -30,8 +30,7 @@ trait XRemoteContentProviderActivator
 }
 object XRemoteContentProviderActivator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     activateRemoteContentProviders: () => XContentProviderManager,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XRemoteContentProviderActivator {
     __obj.asInstanceOf[XRemoteContentProviderActivator]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderActivatorMutableBuilder[Self <: XRemoteContentProviderActivator] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderActivator](x: Self) {
     
-    @scala.inline
-    def setActivateRemoteContentProviders(value: () => XContentProviderManager): Self = StObject.set(x, "activateRemoteContentProviders", js.Any.fromFunction0(value))
+    inline def setActivateRemoteContentProviders(value: () => XContentProviderManager): Self = StObject.set(x, "activateRemoteContentProviders", js.Any.fromFunction0(value))
   }
 }

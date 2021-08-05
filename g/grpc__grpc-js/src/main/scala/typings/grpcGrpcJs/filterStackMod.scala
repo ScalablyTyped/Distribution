@@ -20,7 +20,7 @@ object filterStackMod {
        with Filter {
     def this(filters: js.Array[Filter]) = this()
     
-    val filters: js.Any = js.native
+    /* private */ val filters: js.Any = js.native
     
     /* CompleteClass */
     override def receiveMessage(message: js.Promise[Buffer]): js.Promise[Buffer] = js.native
@@ -48,6 +48,6 @@ object filterStackMod {
     /* CompleteClass */
     override def createFilter(callStream: Call): FilterStack = js.native
     
-    val factories: js.Any = js.native
+    /* private */ val factories: js.Any = js.native
   }
 }

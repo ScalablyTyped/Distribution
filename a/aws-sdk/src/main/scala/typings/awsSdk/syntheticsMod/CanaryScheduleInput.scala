@@ -18,22 +18,17 @@ trait CanaryScheduleInput extends StObject {
 }
 object CanaryScheduleInput {
   
-  @scala.inline
-  def apply(Expression: String): CanaryScheduleInput = {
+  inline def apply(Expression: String): CanaryScheduleInput = {
     val __obj = js.Dynamic.literal(Expression = Expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanaryScheduleInput]
   }
   
-  @scala.inline
-  implicit class CanaryScheduleInputMutableBuilder[Self <: CanaryScheduleInput] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryScheduleInput](x: Self) {
     
-    @scala.inline
-    def setDurationInSeconds(value: MaxOneYearInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: MaxOneYearInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
   }
 }

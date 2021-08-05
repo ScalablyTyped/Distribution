@@ -25,20 +25,16 @@ object statefulToolTipMod {
   }
   object StatefulToolTipProps {
     
-    @scala.inline
-    def apply(parent: String | Element | RefObject[js.Any]): StatefulToolTipProps = {
+    inline def apply(parent: String | Element | RefObject[js.Any]): StatefulToolTipProps = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatefulToolTipProps]
     }
     
-    @scala.inline
-    implicit class StatefulToolTipPropsMutableBuilder[Self <: StatefulToolTipProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulToolTipProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
 }

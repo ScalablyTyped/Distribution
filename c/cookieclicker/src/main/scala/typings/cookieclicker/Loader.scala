@@ -84,8 +84,7 @@ trait Loader extends StObject {
 }
 object Loader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Load: js.Array[String] => Unit,
     Replace: (String, String) => Unit,
     assets: js.Array[Unit] & (Record[String, HTMLImageElement]),
@@ -105,58 +104,40 @@ object Loader {
     __obj.asInstanceOf[Loader]
   }
   
-  @scala.inline
-  implicit class LoaderMutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
+  extension [Self <: Loader](x: Self) {
     
-    @scala.inline
-    def setAssets(value: js.Array[Unit] & (Record[String, HTMLImageElement])): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: js.Array[Unit] & (Record[String, HTMLImageElement])): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsLoaded(value: js.Array[String]): Self = StObject.set(x, "assetsLoaded", value.asInstanceOf[js.Any])
+    inline def setAssetsLoaded(value: js.Array[String]): Self = StObject.set(x, "assetsLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsLoadedVarargs(value: String*): Self = StObject.set(x, "assetsLoaded", js.Array(value :_*))
+    inline def setAssetsLoadedVarargs(value: String*): Self = StObject.set(x, "assetsLoaded", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetsLoading(value: js.Array[String]): Self = StObject.set(x, "assetsLoading", value.asInstanceOf[js.Any])
+    inline def setAssetsLoading(value: js.Array[String]): Self = StObject.set(x, "assetsLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsLoadingVarargs(value: String*): Self = StObject.set(x, "assetsLoading", js.Array(value :_*))
+    inline def setAssetsLoadingVarargs(value: String*): Self = StObject.set(x, "assetsLoading", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetsN(value: Double): Self = StObject.set(x, "assetsN", value.asInstanceOf[js.Any])
+    inline def setAssetsN(value: Double): Self = StObject.set(x, "assetsN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlank(value: HTMLCanvasElementwidth8he): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
+    inline def setBlank(value: HTMLCanvasElementwidth8he): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneLoading(value: PseudoBoolean): Self = StObject.set(x, "doneLoading", value.asInstanceOf[js.Any])
+    inline def setDoneLoading(value: PseudoBoolean): Self = StObject.set(x, "doneLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetProgress(value: () => Double): Self = StObject.set(x, "getProgress", js.Any.fromFunction0(value))
+    inline def setGetProgress(value: () => Double): Self = StObject.set(x, "getProgress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoad(value: js.Array[String] => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
+    inline def setLoad(value: js.Array[String] => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoaded(value: PseudoNull | js.Function0[Unit]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: PseudoNull | js.Function0[Unit]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedFunction0(value: () => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction0(value))
+    inline def setLoadedFunction0(value: () => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadingN(value: Double): Self = StObject.set(x, "loadingN", value.asInstanceOf[js.Any])
+    inline def setLoadingN(value: Double): Self = StObject.set(x, "loadingN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLoad(value: Event => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: Event => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadReplace(value: () => Unit): Self = StObject.set(x, "onLoadReplace", js.Any.fromFunction0(value))
+    inline def setOnLoadReplace(value: () => Unit): Self = StObject.set(x, "onLoadReplace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplace(value: (String, String) => Unit): Self = StObject.set(x, "Replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (String, String) => Unit): Self = StObject.set(x, "Replace", js.Any.fromFunction2(value))
   }
 }

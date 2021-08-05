@@ -47,52 +47,37 @@ trait LayoutTreeNode extends StObject {
 }
 object LayoutTreeNode {
   
-  @scala.inline
-  def apply(boundingBox: Rect, domNodeIndex: integer): LayoutTreeNode = {
+  inline def apply(boundingBox: Rect, domNodeIndex: integer): LayoutTreeNode = {
     val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], domNodeIndex = domNodeIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutTreeNode]
   }
   
-  @scala.inline
-  implicit class LayoutTreeNodeMutableBuilder[Self <: LayoutTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutTreeNode](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: Rect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: Rect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomNodeIndex(value: integer): Self = StObject.set(x, "domNodeIndex", value.asInstanceOf[js.Any])
+    inline def setDomNodeIndex(value: integer): Self = StObject.set(x, "domNodeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineTextNodes(value: js.Array[InlineTextBox]): Self = StObject.set(x, "inlineTextNodes", value.asInstanceOf[js.Any])
+    inline def setInlineTextNodes(value: js.Array[InlineTextBox]): Self = StObject.set(x, "inlineTextNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineTextNodesUndefined: Self = StObject.set(x, "inlineTextNodes", js.undefined)
+    inline def setInlineTextNodesUndefined: Self = StObject.set(x, "inlineTextNodes", js.undefined)
     
-    @scala.inline
-    def setInlineTextNodesVarargs(value: InlineTextBox*): Self = StObject.set(x, "inlineTextNodes", js.Array(value :_*))
+    inline def setInlineTextNodesVarargs(value: InlineTextBox*): Self = StObject.set(x, "inlineTextNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setIsStackingContext(value: Boolean): Self = StObject.set(x, "isStackingContext", value.asInstanceOf[js.Any])
+    inline def setIsStackingContext(value: Boolean): Self = StObject.set(x, "isStackingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStackingContextUndefined: Self = StObject.set(x, "isStackingContext", js.undefined)
+    inline def setIsStackingContextUndefined: Self = StObject.set(x, "isStackingContext", js.undefined)
     
-    @scala.inline
-    def setLayoutText(value: String): Self = StObject.set(x, "layoutText", value.asInstanceOf[js.Any])
+    inline def setLayoutText(value: String): Self = StObject.set(x, "layoutText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutTextUndefined: Self = StObject.set(x, "layoutText", js.undefined)
+    inline def setLayoutTextUndefined: Self = StObject.set(x, "layoutText", js.undefined)
     
-    @scala.inline
-    def setPaintOrder(value: integer): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
+    inline def setPaintOrder(value: integer): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
+    inline def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
     
-    @scala.inline
-    def setStyleIndex(value: integer): Self = StObject.set(x, "styleIndex", value.asInstanceOf[js.Any])
+    inline def setStyleIndex(value: integer): Self = StObject.set(x, "styleIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleIndexUndefined: Self = StObject.set(x, "styleIndex", js.undefined)
+    inline def setStyleIndexUndefined: Self = StObject.set(x, "styleIndex", js.undefined)
   }
 }

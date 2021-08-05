@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransactionSource extends StObject
 object TransactionSource {
   
-  @scala.inline
-  def Api: typings.braintree.braintreeStrings.Api = "Api".asInstanceOf[typings.braintree.braintreeStrings.Api]
+  inline def Api: typings.braintree.braintreeStrings.Api = "Api".asInstanceOf[typings.braintree.braintreeStrings.Api]
   
-  @scala.inline
-  def ControlPanel: typings.braintree.braintreeStrings.ControlPanel = "ControlPanel".asInstanceOf[typings.braintree.braintreeStrings.ControlPanel]
+  inline def ControlPanel: typings.braintree.braintreeStrings.ControlPanel = "ControlPanel".asInstanceOf[typings.braintree.braintreeStrings.ControlPanel]
   
-  @scala.inline
-  def Recurring: typings.braintree.braintreeStrings.Recurring = "Recurring".asInstanceOf[typings.braintree.braintreeStrings.Recurring]
+  inline def Recurring: typings.braintree.braintreeStrings.Recurring = "Recurring".asInstanceOf[typings.braintree.braintreeStrings.Recurring]
 }

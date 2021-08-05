@@ -22,67 +22,47 @@ trait MediaKeySystemConfiguration extends StObject {
 }
 object MediaKeySystemConfiguration {
   
-  @scala.inline
-  def apply(): MediaKeySystemConfiguration = {
+  inline def apply(): MediaKeySystemConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaKeySystemConfiguration]
   }
   
-  @scala.inline
-  implicit class MediaKeySystemConfigurationMutableBuilder[Self <: MediaKeySystemConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MediaKeySystemConfiguration](x: Self) {
     
-    @scala.inline
-    def setAudioCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "audioCapabilities", value.asInstanceOf[js.Any])
+    inline def setAudioCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "audioCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioCapabilitiesUndefined: Self = StObject.set(x, "audioCapabilities", js.undefined)
+    inline def setAudioCapabilitiesUndefined: Self = StObject.set(x, "audioCapabilities", js.undefined)
     
-    @scala.inline
-    def setAudioCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "audioCapabilities", js.Array(value :_*))
+    inline def setAudioCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "audioCapabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setDistinctiveIdentifier(value: MediaKeysRequirement): Self = StObject.set(x, "distinctiveIdentifier", value.asInstanceOf[js.Any])
+    inline def setDistinctiveIdentifier(value: MediaKeysRequirement): Self = StObject.set(x, "distinctiveIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistinctiveIdentifierUndefined: Self = StObject.set(x, "distinctiveIdentifier", js.undefined)
+    inline def setDistinctiveIdentifierUndefined: Self = StObject.set(x, "distinctiveIdentifier", js.undefined)
     
-    @scala.inline
-    def setInitDataTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "initDataTypes", value.asInstanceOf[js.Any])
+    inline def setInitDataTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "initDataTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitDataTypesUndefined: Self = StObject.set(x, "initDataTypes", js.undefined)
+    inline def setInitDataTypesUndefined: Self = StObject.set(x, "initDataTypes", js.undefined)
     
-    @scala.inline
-    def setInitDataTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "initDataTypes", js.Array(value :_*))
+    inline def setInitDataTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "initDataTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setPersistentState(value: MediaKeysRequirement): Self = StObject.set(x, "persistentState", value.asInstanceOf[js.Any])
+    inline def setPersistentState(value: MediaKeysRequirement): Self = StObject.set(x, "persistentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentStateUndefined: Self = StObject.set(x, "persistentState", js.undefined)
+    inline def setPersistentStateUndefined: Self = StObject.set(x, "persistentState", js.undefined)
     
-    @scala.inline
-    def setSessionTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "sessionTypes", value.asInstanceOf[js.Any])
+    inline def setSessionTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "sessionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTypesUndefined: Self = StObject.set(x, "sessionTypes", js.undefined)
+    inline def setSessionTypesUndefined: Self = StObject.set(x, "sessionTypes", js.undefined)
     
-    @scala.inline
-    def setSessionTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "sessionTypes", js.Array(value :_*))
+    inline def setSessionTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "sessionTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setVideoCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "videoCapabilities", value.asInstanceOf[js.Any])
+    inline def setVideoCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "videoCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCapabilitiesUndefined: Self = StObject.set(x, "videoCapabilities", js.undefined)
+    inline def setVideoCapabilitiesUndefined: Self = StObject.set(x, "videoCapabilities", js.undefined)
     
-    @scala.inline
-    def setVideoCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "videoCapabilities", js.Array(value :_*))
+    inline def setVideoCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "videoCapabilities", js.Array(value :_*))
   }
 }

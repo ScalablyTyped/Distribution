@@ -17,12 +17,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AudioIO(options: InOptions): Readable & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Readable & AudioStream]
-  @scala.inline
-  def AudioIO(options: InOptionsOutOptions): Duplex & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Duplex & AudioStream]
-  @scala.inline
-  def AudioIO(options: OutOptions): Writable & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Writable & AudioStream]
+  inline def AudioIO(options: InOptions): Readable & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Readable & AudioStream]
+  inline def AudioIO(options: InOptionsOutOptions): Duplex & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Duplex & AudioStream]
+  inline def AudioIO(options: OutOptions): Writable & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Writable & AudioStream]
   
   @JSImport("naudiodon", "SampleFormat16Bit")
   @js.native
@@ -44,11 +41,9 @@ object mod {
   @js.native
   val SampleFormatFloat32: Double = js.native
   
-  @scala.inline
-  def getDevices(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")().asInstanceOf[js.Array[Device]]
+  inline def getDevices(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")().asInstanceOf[js.Array[Device]]
   
-  @scala.inline
-  def getHostAPIs(): DefaultHostAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostAPIs")().asInstanceOf[DefaultHostAPI]
+  inline def getHostAPIs(): DefaultHostAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostAPIs")().asInstanceOf[DefaultHostAPI]
   
   trait AudioOptions extends StObject {
     
@@ -64,44 +59,32 @@ object mod {
   }
   object AudioOptions {
     
-    @scala.inline
-    def apply(): AudioOptions = {
+    inline def apply(): AudioOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AudioOptions]
     }
     
-    @scala.inline
-    implicit class AudioOptionsMutableBuilder[Self <: AudioOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AudioOptions](x: Self) {
       
-      @scala.inline
-      def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+      inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
+      inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
       
-      @scala.inline
-      def setDeviceId(value: Double): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: Double): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+      inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
       
-      @scala.inline
-      def setMaxQueue(value: Double): Self = StObject.set(x, "maxQueue", value.asInstanceOf[js.Any])
+      inline def setMaxQueue(value: Double): Self = StObject.set(x, "maxQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxQueueUndefined: Self = StObject.set(x, "maxQueue", js.undefined)
+      inline def setMaxQueueUndefined: Self = StObject.set(x, "maxQueue", js.undefined)
       
-      @scala.inline
-      def setSampleFormat(value: Double): Self = StObject.set(x, "sampleFormat", value.asInstanceOf[js.Any])
+      inline def setSampleFormat(value: Double): Self = StObject.set(x, "sampleFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleFormatUndefined: Self = StObject.set(x, "sampleFormat", js.undefined)
+      inline def setSampleFormatUndefined: Self = StObject.set(x, "sampleFormat", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
   
@@ -141,8 +124,7 @@ object mod {
   }
   object Device {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultHighInputLatency: Double,
       defaultHighOutputLatency: Double,
       defaultLowInputLatency: Double,
@@ -158,38 +140,27 @@ object mod {
       __obj.asInstanceOf[Device]
     }
     
-    @scala.inline
-    implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+    extension [Self <: Device](x: Self) {
       
-      @scala.inline
-      def setDefaultHighInputLatency(value: Double): Self = StObject.set(x, "defaultHighInputLatency", value.asInstanceOf[js.Any])
+      inline def setDefaultHighInputLatency(value: Double): Self = StObject.set(x, "defaultHighInputLatency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHighOutputLatency(value: Double): Self = StObject.set(x, "defaultHighOutputLatency", value.asInstanceOf[js.Any])
+      inline def setDefaultHighOutputLatency(value: Double): Self = StObject.set(x, "defaultHighOutputLatency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLowInputLatency(value: Double): Self = StObject.set(x, "defaultLowInputLatency", value.asInstanceOf[js.Any])
+      inline def setDefaultLowInputLatency(value: Double): Self = StObject.set(x, "defaultLowInputLatency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLowOutputLatency(value: Double): Self = StObject.set(x, "defaultLowOutputLatency", value.asInstanceOf[js.Any])
+      inline def setDefaultLowOutputLatency(value: Double): Self = StObject.set(x, "defaultLowOutputLatency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSampleRate(value: Double): Self = StObject.set(x, "defaultSampleRate", value.asInstanceOf[js.Any])
+      inline def setDefaultSampleRate(value: Double): Self = StObject.set(x, "defaultSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostAPIName(value: Double): Self = StObject.set(x, "hostAPIName", value.asInstanceOf[js.Any])
+      inline def setHostAPIName(value: Double): Self = StObject.set(x, "hostAPIName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInputChannels(value: Double): Self = StObject.set(x, "maxInputChannels", value.asInstanceOf[js.Any])
+      inline def setMaxInputChannels(value: Double): Self = StObject.set(x, "maxInputChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOutputChannels(value: Double): Self = StObject.set(x, "maxOutputChannels", value.asInstanceOf[js.Any])
+      inline def setMaxOutputChannels(value: Double): Self = StObject.set(x, "maxOutputChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,8 +180,7 @@ object mod {
   }
   object HostAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultInput: Double,
       defaultOutput: Double,
       deviceCount: Double,
@@ -223,26 +193,19 @@ object mod {
       __obj.asInstanceOf[HostAPI]
     }
     
-    @scala.inline
-    implicit class HostAPIMutableBuilder[Self <: HostAPI] (val x: Self) extends AnyVal {
+    extension [Self <: HostAPI](x: Self) {
       
-      @scala.inline
-      def setDefaultInput(value: Double): Self = StObject.set(x, "defaultInput", value.asInstanceOf[js.Any])
+      inline def setDefaultInput(value: Double): Self = StObject.set(x, "defaultInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOutput(value: Double): Self = StObject.set(x, "defaultOutput", value.asInstanceOf[js.Any])
+      inline def setDefaultOutput(value: Double): Self = StObject.set(x, "defaultOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
+      inline def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

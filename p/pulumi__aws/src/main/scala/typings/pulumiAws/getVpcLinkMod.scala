@@ -12,10 +12,8 @@ object getVpcLinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVpcLink(args: GetVpcLinkArgs): js.Promise[GetVpcLinkResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcLink")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcLinkResult]]
-  @scala.inline
-  def getVpcLink(args: GetVpcLinkArgs, opts: InvokeOptions): js.Promise[GetVpcLinkResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcLink")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcLinkResult]]
+  inline def getVpcLink(args: GetVpcLinkArgs): js.Promise[GetVpcLinkResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcLink")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcLinkResult]]
+  inline def getVpcLink(args: GetVpcLinkArgs, opts: InvokeOptions): js.Promise[GetVpcLinkResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcLink")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcLinkResult]]
   
   trait GetVpcLinkArgs extends StObject {
     
@@ -32,23 +30,18 @@ object getVpcLinkMod {
   }
   object GetVpcLinkArgs {
     
-    @scala.inline
-    def apply(name: String): GetVpcLinkArgs = {
+    inline def apply(name: String): GetVpcLinkArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVpcLinkArgs]
     }
     
-    @scala.inline
-    implicit class GetVpcLinkArgsMutableBuilder[Self <: GetVpcLinkArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpcLinkArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -88,8 +81,7 @@ object getVpcLinkMod {
   }
   object GetVpcLinkResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       id: String,
       name: String,
@@ -102,32 +94,23 @@ object getVpcLinkMod {
       __obj.asInstanceOf[GetVpcLinkResult]
     }
     
-    @scala.inline
-    implicit class GetVpcLinkResultMutableBuilder[Self <: GetVpcLinkResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpcLinkResult](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+      inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetArns(value: js.Array[String]): Self = StObject.set(x, "targetArns", value.asInstanceOf[js.Any])
+      inline def setTargetArns(value: js.Array[String]): Self = StObject.set(x, "targetArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetArnsVarargs(value: String*): Self = StObject.set(x, "targetArns", js.Array(value :_*))
+      inline def setTargetArnsVarargs(value: String*): Self = StObject.set(x, "targetArns", js.Array(value :_*))
     }
   }
 }

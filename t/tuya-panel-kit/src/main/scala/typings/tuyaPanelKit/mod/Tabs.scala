@@ -28,18 +28,15 @@ object Tabs {
   @JSImport("tuya-panel-kit", "Tabs.TabContent")
   @js.native
   def TabContent: ElementType[TabContentProps] = js.native
-  @scala.inline
-  def TabContent_=(x: ElementType[TabContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabContent")(x.asInstanceOf[js.Any])
+  inline def TabContent_=(x: ElementType[TabContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabContent")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "Tabs.TabPanel")
   @js.native
   def TabPanel: ElementType[TabPanelProps] = js.native
-  @scala.inline
-  def TabPanel_=(x: ElementType[TabPanelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabPanel")(x.asInstanceOf[js.Any])
+  inline def TabPanel_=(x: ElementType[TabPanelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabPanel")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "Tabs.TabScrollView")
   @js.native
   def TabScrollView: ElementType[ScrollViewProps] = js.native
-  @scala.inline
-  def TabScrollView_=(x: ElementType[ScrollViewProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabScrollView")(x.asInstanceOf[js.Any])
+  inline def TabScrollView_=(x: ElementType[ScrollViewProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabScrollView")(x.asInstanceOf[js.Any])
 }

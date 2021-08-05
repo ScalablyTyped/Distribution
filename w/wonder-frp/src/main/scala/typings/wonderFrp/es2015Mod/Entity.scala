@@ -20,6 +20,5 @@ object Entity {
   @JSImport("wonder-frp/dist/es2015", "Entity.UID")
   @js.native
   def UID: Double = js.native
-  @scala.inline
-  def UID_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UID")(x.asInstanceOf[js.Any])
+  inline def UID_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UID")(x.asInstanceOf[js.Any])
 }

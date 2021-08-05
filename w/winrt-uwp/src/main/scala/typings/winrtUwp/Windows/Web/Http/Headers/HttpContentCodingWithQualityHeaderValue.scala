@@ -15,19 +15,15 @@ trait HttpContentCodingWithQualityHeaderValue extends StObject {
 }
 object HttpContentCodingWithQualityHeaderValue {
   
-  @scala.inline
-  def apply(contentCoding: String, quality: Double): HttpContentCodingWithQualityHeaderValue = {
+  inline def apply(contentCoding: String, quality: Double): HttpContentCodingWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(contentCoding = contentCoding.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpContentCodingWithQualityHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpContentCodingWithQualityHeaderValueMutableBuilder[Self <: HttpContentCodingWithQualityHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpContentCodingWithQualityHeaderValue](x: Self) {
     
-    @scala.inline
-    def setContentCoding(value: String): Self = StObject.set(x, "contentCoding", value.asInstanceOf[js.Any])
+    inline def setContentCoding(value: String): Self = StObject.set(x, "contentCoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
   }
 }

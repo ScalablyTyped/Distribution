@@ -14,8 +14,7 @@ trait HasuraMultipleQueriesResponse[T /* <: Record[String, js.Any] */] extends S
 }
 object HasuraMultipleQueriesResponse {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](
+  inline def apply[T /* <: Record[String, js.Any] */](
     data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]: hasura.hasura.Equals<T[key], hasura.hasura.Aggregate<T[key]>> extends true? hasura.hasura.HasuraAggregateResult<T[key]> : std.Array<T[key]>}
     */ typings.hasura.hasuraStrings.HasuraMultipleQueriesResponse & TopLevel[js.Any]
@@ -24,11 +23,9 @@ object HasuraMultipleQueriesResponse {
     __obj.asInstanceOf[HasuraMultipleQueriesResponse[T]]
   }
   
-  @scala.inline
-  implicit class HasuraMultipleQueriesResponseMutableBuilder[Self <: HasuraMultipleQueriesResponse[?], T /* <: Record[String, js.Any] */] (val x: Self & HasuraMultipleQueriesResponse[T]) extends AnyVal {
+  extension [Self <: HasuraMultipleQueriesResponse[?], T /* <: Record[String, js.Any] */](x: Self & HasuraMultipleQueriesResponse[T]) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in keyof T ]: hasura.hasura.Equals<T[key], hasura.hasura.Aggregate<T[key]>> extends true? hasura.hasura.HasuraAggregateResult<T[key]> : std.Array<T[key]>}
       */ typings.hasura.hasuraStrings.HasuraMultipleQueriesResponse & TopLevel[js.Any]

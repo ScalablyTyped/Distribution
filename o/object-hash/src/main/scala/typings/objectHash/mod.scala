@@ -28,35 +28,25 @@ object mod extends Shortcut {
   trait BufferEncoding extends StObject
   object BufferEncoding {
     
-    @scala.inline
-    def ascii: typings.objectHash.objectHashStrings.ascii = "ascii".asInstanceOf[typings.objectHash.objectHashStrings.ascii]
+    inline def ascii: typings.objectHash.objectHashStrings.ascii = "ascii".asInstanceOf[typings.objectHash.objectHashStrings.ascii]
     
-    @scala.inline
-    def base64: typings.objectHash.objectHashStrings.base64 = "base64".asInstanceOf[typings.objectHash.objectHashStrings.base64]
+    inline def base64: typings.objectHash.objectHashStrings.base64 = "base64".asInstanceOf[typings.objectHash.objectHashStrings.base64]
     
-    @scala.inline
-    def binary: typings.objectHash.objectHashStrings.binary = "binary".asInstanceOf[typings.objectHash.objectHashStrings.binary]
+    inline def binary: typings.objectHash.objectHashStrings.binary = "binary".asInstanceOf[typings.objectHash.objectHashStrings.binary]
     
-    @scala.inline
-    def hex: typings.objectHash.objectHashStrings.hex = "hex".asInstanceOf[typings.objectHash.objectHashStrings.hex]
+    inline def hex: typings.objectHash.objectHashStrings.hex = "hex".asInstanceOf[typings.objectHash.objectHashStrings.hex]
     
-    @scala.inline
-    def latin1: typings.objectHash.objectHashStrings.latin1 = "latin1".asInstanceOf[typings.objectHash.objectHashStrings.latin1]
+    inline def latin1: typings.objectHash.objectHashStrings.latin1 = "latin1".asInstanceOf[typings.objectHash.objectHashStrings.latin1]
     
-    @scala.inline
-    def `ucs-2`: typings.objectHash.objectHashStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.objectHash.objectHashStrings.`ucs-2`]
+    inline def `ucs-2`: typings.objectHash.objectHashStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.objectHash.objectHashStrings.`ucs-2`]
     
-    @scala.inline
-    def ucs2: typings.objectHash.objectHashStrings.ucs2 = "ucs2".asInstanceOf[typings.objectHash.objectHashStrings.ucs2]
+    inline def ucs2: typings.objectHash.objectHashStrings.ucs2 = "ucs2".asInstanceOf[typings.objectHash.objectHashStrings.ucs2]
     
-    @scala.inline
-    def `utf-8`: typings.objectHash.objectHashStrings.`utf-8` = "utf-8".asInstanceOf[typings.objectHash.objectHashStrings.`utf-8`]
+    inline def `utf-8`: typings.objectHash.objectHashStrings.`utf-8` = "utf-8".asInstanceOf[typings.objectHash.objectHashStrings.`utf-8`]
     
-    @scala.inline
-    def utf16le: typings.objectHash.objectHashStrings.utf16le = "utf16le".asInstanceOf[typings.objectHash.objectHashStrings.utf16le]
+    inline def utf16le: typings.objectHash.objectHashStrings.utf16le = "utf16le".asInstanceOf[typings.objectHash.objectHashStrings.utf16le]
     
-    @scala.inline
-    def utf8: typings.objectHash.objectHashStrings.utf8 = "utf8".asInstanceOf[typings.objectHash.objectHashStrings.utf8]
+    inline def utf8: typings.objectHash.objectHashStrings.utf8 = "utf8".asInstanceOf[typings.objectHash.objectHashStrings.utf8]
   }
   
   trait IStream extends StObject {
@@ -81,30 +71,24 @@ object mod extends Shortcut {
   }
   object IStream {
     
-    @scala.inline
-    def apply(): IStream = {
+    inline def apply(): IStream = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStream]
     }
     
-    @scala.inline
-    implicit class IStreamMutableBuilder[Self <: IStream] (val x: Self) extends AnyVal {
+    extension [Self <: IStream](x: Self) {
       
-      @scala.inline
-      def setUpdate(
+      inline def setUpdate(
         value: (/* chunk */ js.Any, /* encoding */ BufferEncoding, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
-      @scala.inline
-      def setWrite(
+      inline def setWrite(
         value: (/* chunk */ js.Any, /* encoding */ BufferEncoding, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
   }
   
@@ -156,86 +140,60 @@ object mod extends Shortcut {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+        inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+        inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
         
-        @scala.inline
-        def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+        inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+        inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
         
-        @scala.inline
-        def setExcludeKeys(value: /* key */ String => Boolean): Self = StObject.set(x, "excludeKeys", js.Any.fromFunction1(value))
+        inline def setExcludeKeys(value: /* key */ String => Boolean): Self = StObject.set(x, "excludeKeys", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setExcludeKeysUndefined: Self = StObject.set(x, "excludeKeys", js.undefined)
+        inline def setExcludeKeysUndefined: Self = StObject.set(x, "excludeKeys", js.undefined)
         
-        @scala.inline
-        def setExcludeValues(value: Boolean): Self = StObject.set(x, "excludeValues", value.asInstanceOf[js.Any])
+        inline def setExcludeValues(value: Boolean): Self = StObject.set(x, "excludeValues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExcludeValuesUndefined: Self = StObject.set(x, "excludeValues", js.undefined)
+        inline def setExcludeValuesUndefined: Self = StObject.set(x, "excludeValues", js.undefined)
         
-        @scala.inline
-        def setIgnoreUnknown(value: Boolean): Self = StObject.set(x, "ignoreUnknown", value.asInstanceOf[js.Any])
+        inline def setIgnoreUnknown(value: Boolean): Self = StObject.set(x, "ignoreUnknown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreUnknownUndefined: Self = StObject.set(x, "ignoreUnknown", js.undefined)
+        inline def setIgnoreUnknownUndefined: Self = StObject.set(x, "ignoreUnknown", js.undefined)
         
-        @scala.inline
-        def setReplacer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction1(value))
+        inline def setReplacer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+        inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
         
-        @scala.inline
-        def setRespectFunctionNames(value: Boolean): Self = StObject.set(x, "respectFunctionNames", value.asInstanceOf[js.Any])
+        inline def setRespectFunctionNames(value: Boolean): Self = StObject.set(x, "respectFunctionNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRespectFunctionNamesUndefined: Self = StObject.set(x, "respectFunctionNames", js.undefined)
+        inline def setRespectFunctionNamesUndefined: Self = StObject.set(x, "respectFunctionNames", js.undefined)
         
-        @scala.inline
-        def setRespectFunctionProperties(value: Boolean): Self = StObject.set(x, "respectFunctionProperties", value.asInstanceOf[js.Any])
+        inline def setRespectFunctionProperties(value: Boolean): Self = StObject.set(x, "respectFunctionProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRespectFunctionPropertiesUndefined: Self = StObject.set(x, "respectFunctionProperties", js.undefined)
+        inline def setRespectFunctionPropertiesUndefined: Self = StObject.set(x, "respectFunctionProperties", js.undefined)
         
-        @scala.inline
-        def setRespectType(value: Boolean): Self = StObject.set(x, "respectType", value.asInstanceOf[js.Any])
+        inline def setRespectType(value: Boolean): Self = StObject.set(x, "respectType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRespectTypeUndefined: Self = StObject.set(x, "respectType", js.undefined)
+        inline def setRespectTypeUndefined: Self = StObject.set(x, "respectType", js.undefined)
         
-        @scala.inline
-        def setUnorderedArrays(value: Boolean): Self = StObject.set(x, "unorderedArrays", value.asInstanceOf[js.Any])
+        inline def setUnorderedArrays(value: Boolean): Self = StObject.set(x, "unorderedArrays", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnorderedArraysUndefined: Self = StObject.set(x, "unorderedArrays", js.undefined)
+        inline def setUnorderedArraysUndefined: Self = StObject.set(x, "unorderedArrays", js.undefined)
         
-        @scala.inline
-        def setUnorderedObjects(value: Boolean): Self = StObject.set(x, "unorderedObjects", value.asInstanceOf[js.Any])
+        inline def setUnorderedObjects(value: Boolean): Self = StObject.set(x, "unorderedObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnorderedObjectsUndefined: Self = StObject.set(x, "unorderedObjects", js.undefined)
+        inline def setUnorderedObjectsUndefined: Self = StObject.set(x, "unorderedObjects", js.undefined)
         
-        @scala.inline
-        def setUnorderedSets(value: Boolean): Self = StObject.set(x, "unorderedSets", value.asInstanceOf[js.Any])
+        inline def setUnorderedSets(value: Boolean): Self = StObject.set(x, "unorderedSets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnorderedSetsUndefined: Self = StObject.set(x, "unorderedSets", js.undefined)
+        inline def setUnorderedSetsUndefined: Self = StObject.set(x, "unorderedSets", js.undefined)
       }
     }
   }

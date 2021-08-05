@@ -13,22 +13,17 @@ trait BatchGetCustomDataIdentifiersRequest extends StObject {
 }
 object BatchGetCustomDataIdentifiersRequest {
   
-  @scala.inline
-  def apply(): BatchGetCustomDataIdentifiersRequest = {
+  inline def apply(): BatchGetCustomDataIdentifiersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetCustomDataIdentifiersRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetCustomDataIdentifiersRequestMutableBuilder[Self <: BatchGetCustomDataIdentifiersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCustomDataIdentifiersRequest](x: Self) {
     
-    @scala.inline
-    def setIds(value: listOfString): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: listOfString): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: string*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: string*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

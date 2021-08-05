@@ -11,19 +11,15 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(): Window = {
+  inline def apply(): Window = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setDropbox(value: Chooser): Self = StObject.set(x, "Dropbox", value.asInstanceOf[js.Any])
+    inline def setDropbox(value: Chooser): Self = StObject.set(x, "Dropbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropboxUndefined: Self = StObject.set(x, "Dropbox", js.undefined)
+    inline def setDropboxUndefined: Self = StObject.set(x, "Dropbox", js.undefined)
   }
 }

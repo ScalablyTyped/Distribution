@@ -14,28 +14,21 @@ trait GoogleCloudVisionV1p1beta1TextAnnotation extends StObject {
 }
 object GoogleCloudVisionV1p1beta1TextAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p1beta1TextAnnotation = {
+  inline def apply(): GoogleCloudVisionV1p1beta1TextAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1TextAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p1beta1TextAnnotationMutableBuilder[Self <: GoogleCloudVisionV1p1beta1TextAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p1beta1TextAnnotation](x: Self) {
     
-    @scala.inline
-    def setPages(value: js.Array[GoogleCloudVisionV1p1beta1Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[GoogleCloudVisionV1p1beta1Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: GoogleCloudVisionV1p1beta1Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: GoogleCloudVisionV1p1beta1Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -104,8 +104,7 @@ trait XMultiLayerStratum
 }
 object XMultiLayerStratum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getLayer: (String, String) => XLayer,
     getLayers: (SeqEquiv[String], String) => SafeArray[XLayer],
@@ -120,25 +119,18 @@ object XMultiLayerStratum {
     __obj.asInstanceOf[XMultiLayerStratum]
   }
   
-  @scala.inline
-  implicit class XMultiLayerStratumMutableBuilder[Self <: XMultiLayerStratum] (val x: Self) extends AnyVal {
+  extension [Self <: XMultiLayerStratum](x: Self) {
     
-    @scala.inline
-    def setGetLayer(value: (String, String) => XLayer): Self = StObject.set(x, "getLayer", js.Any.fromFunction2(value))
+    inline def setGetLayer(value: (String, String) => XLayer): Self = StObject.set(x, "getLayer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLayers(value: (SeqEquiv[String], String) => SafeArray[XLayer]): Self = StObject.set(x, "getLayers", js.Any.fromFunction2(value))
+    inline def setGetLayers(value: (SeqEquiv[String], String) => SafeArray[XLayer]): Self = StObject.set(x, "getLayers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMultipleLayers(value: (SeqEquiv[String], SeqEquiv[String]) => SafeArray[XLayer]): Self = StObject.set(x, "getMultipleLayers", js.Any.fromFunction2(value))
+    inline def setGetMultipleLayers(value: (SeqEquiv[String], SeqEquiv[String]) => SafeArray[XLayer]): Self = StObject.set(x, "getMultipleLayers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUpdatableLayer(value: String => XUpdatableLayer): Self = StObject.set(x, "getUpdatableLayer", js.Any.fromFunction1(value))
+    inline def setGetUpdatableLayer(value: String => XUpdatableLayer): Self = StObject.set(x, "getUpdatableLayer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUpdateLayerId(value: (String, String) => String): Self = StObject.set(x, "getUpdateLayerId", js.Any.fromFunction2(value))
+    inline def setGetUpdateLayerId(value: (String, String) => String): Self = StObject.set(x, "getUpdateLayerId", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setListLayerIds(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "listLayerIds", js.Any.fromFunction2(value))
+    inline def setListLayerIds(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "listLayerIds", js.Any.fromFunction2(value))
   }
 }

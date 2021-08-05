@@ -28,31 +28,23 @@ trait UpdateRoutingProfileNameRequest extends StObject {
 }
 object UpdateRoutingProfileNameRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, RoutingProfileId: RoutingProfileId): UpdateRoutingProfileNameRequest = {
+  inline def apply(InstanceId: InstanceId, RoutingProfileId: RoutingProfileId): UpdateRoutingProfileNameRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], RoutingProfileId = RoutingProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoutingProfileNameRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRoutingProfileNameRequestMutableBuilder[Self <: UpdateRoutingProfileNameRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRoutingProfileNameRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: RoutingProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: RoutingProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: RoutingProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RoutingProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

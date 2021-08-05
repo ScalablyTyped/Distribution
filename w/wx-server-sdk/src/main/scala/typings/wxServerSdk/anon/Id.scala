@@ -12,19 +12,15 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(_id: String | Double, stats: Created): Id = {
+  inline def apply(_id: String | Double, stats: Created): Id = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setStats(value: Created): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Created): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_id(value: String | Double): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String | Double): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

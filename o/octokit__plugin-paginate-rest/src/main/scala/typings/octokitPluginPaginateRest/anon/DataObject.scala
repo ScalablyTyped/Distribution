@@ -10,16 +10,13 @@ trait DataObject extends StObject {
 }
 object DataObject {
   
-  @scala.inline
-  def apply(data: js.Object): DataObject = {
+  inline def apply(data: js.Object): DataObject = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
   
-  @scala.inline
-  implicit class DataObjectMutableBuilder[Self <: DataObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataObject](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

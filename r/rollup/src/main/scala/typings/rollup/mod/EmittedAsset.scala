@@ -20,35 +20,26 @@ trait EmittedAsset
 }
 object EmittedAsset {
   
-  @scala.inline
-  def apply(): EmittedAsset = {
+  inline def apply(): EmittedAsset = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("asset")
     __obj.asInstanceOf[EmittedAsset]
   }
   
-  @scala.inline
-  implicit class EmittedAssetMutableBuilder[Self <: EmittedAsset] (val x: Self) extends AnyVal {
+  extension [Self <: EmittedAsset](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSource(value: String | Uint8Array): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | Uint8Array): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setType(value: asset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: asset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

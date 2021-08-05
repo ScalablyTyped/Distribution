@@ -25,20 +25,16 @@ object anon {
   }
   object Circular {
     
-    @scala.inline
-    def apply(): Circular = {
+    inline def apply(): Circular = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Circular]
     }
     
-    @scala.inline
-    implicit class CircularMutableBuilder[Self <: Circular] (val x: Self) extends AnyVal {
+    extension [Self <: Circular](x: Self) {
       
-      @scala.inline
-      def setCircular(value: Boolean | ignore): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+      inline def setCircular(value: Boolean | ignore): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+      inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
     }
   }
   
@@ -55,32 +51,24 @@ object anon {
   }
   object External {
     
-    @scala.inline
-    def apply(): External = {
+    inline def apply(): External = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[External]
     }
     
-    @scala.inline
-    implicit class ExternalMutableBuilder[Self <: External] (val x: Self) extends AnyVal {
+    extension [Self <: External](x: Self) {
       
-      @scala.inline
-      def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+      inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
       
-      @scala.inline
-      def setFile(value: ResolverOptions | Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: ResolverOptions | Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setHttp(value: HTTPResolverOptions | Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: HTTPResolverOptions | Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     }
   }
   
@@ -94,32 +82,24 @@ object anon {
   }
   object Json {
     
-    @scala.inline
-    def apply(): Json = {
+    inline def apply(): Json = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Json]
     }
     
-    @scala.inline
-    implicit class JsonMutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
+    extension [Self <: Json](x: Self) {
       
-      @scala.inline
-      def setJson(value: ParserOptions | Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: ParserOptions | Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setText(value: ParserOptionsencodingstri | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ParserOptionsencodingstri | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setYaml(value: ParserOptions | Boolean): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
+      inline def setYaml(value: ParserOptions | Boolean): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYamlUndefined: Self = StObject.set(x, "yaml", js.undefined)
+      inline def setYamlUndefined: Self = StObject.set(x, "yaml", js.undefined)
     }
   }
   
@@ -153,44 +133,32 @@ object anon {
   }
   object ParserOptionsencodingstri {
     
-    @scala.inline
-    def apply(): ParserOptionsencodingstri = {
+    inline def apply(): ParserOptionsencodingstri = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptionsencodingstri]
     }
     
-    @scala.inline
-    implicit class ParserOptionsencodingstriMutableBuilder[Self <: ParserOptionsencodingstri] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptionsencodingstri](x: Self) {
       
-      @scala.inline
-      def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+      inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+      inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
       
-      @scala.inline
-      def setCanParse(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = StObject.set(x, "canParse", value.asInstanceOf[js.Any])
+      inline def setCanParse(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = StObject.set(x, "canParse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanParseFunction1(value: /* file */ FileInfo => Boolean): Self = StObject.set(x, "canParse", js.Any.fromFunction1(value))
+      inline def setCanParseFunction1(value: /* file */ FileInfo => Boolean): Self = StObject.set(x, "canParse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanParseUndefined: Self = StObject.set(x, "canParse", js.undefined)
+      inline def setCanParseUndefined: Self = StObject.set(x, "canParse", js.undefined)
       
-      @scala.inline
-      def setCanParseVarargs(value: String*): Self = StObject.set(x, "canParse", js.Array(value :_*))
+      inline def setCanParseVarargs(value: String*): Self = StObject.set(x, "canParse", js.Array(value :_*))
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
 }

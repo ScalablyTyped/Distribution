@@ -8,11 +8,9 @@ object yarStrings {
   
   @js.native
   sealed trait Lax extends StObject
-  @scala.inline
-  def Lax: Lax = "Lax".asInstanceOf[Lax]
+  inline def Lax: Lax = "Lax".asInstanceOf[Lax]
   
   @js.native
   sealed trait Strict extends StObject
-  @scala.inline
-  def Strict: Strict = "Strict".asInstanceOf[Strict]
+  inline def Strict: Strict = "Strict".asInstanceOf[Strict]
 }

@@ -27,34 +27,25 @@ trait SchemaChangeLogsListResponse extends StObject {
 }
 object SchemaChangeLogsListResponse {
   
-  @scala.inline
-  def apply(): SchemaChangeLogsListResponse = {
+  inline def apply(): SchemaChangeLogsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChangeLogsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaChangeLogsListResponseMutableBuilder[Self <: SchemaChangeLogsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChangeLogsListResponse](x: Self) {
     
-    @scala.inline
-    def setChangeLogs(value: js.Array[SchemaChangeLog]): Self = StObject.set(x, "changeLogs", value.asInstanceOf[js.Any])
+    inline def setChangeLogs(value: js.Array[SchemaChangeLog]): Self = StObject.set(x, "changeLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeLogsUndefined: Self = StObject.set(x, "changeLogs", js.undefined)
+    inline def setChangeLogsUndefined: Self = StObject.set(x, "changeLogs", js.undefined)
     
-    @scala.inline
-    def setChangeLogsVarargs(value: SchemaChangeLog*): Self = StObject.set(x, "changeLogs", js.Array(value :_*))
+    inline def setChangeLogsVarargs(value: SchemaChangeLog*): Self = StObject.set(x, "changeLogs", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -23,7 +23,7 @@ object componentMod {
     
     def layout(): Unit = js.native
     
-    var root_ : HTMLElement = js.native
+    /* protected */ var root_ : HTMLElement = js.native
     
     val tabBar: MDCTabBar = js.native
   }
@@ -34,7 +34,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCTabBarScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabBarScroller]
+    inline def attachTo(root: Element): MDCTabBarScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabBarScroller]
   }
 }

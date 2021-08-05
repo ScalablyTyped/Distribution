@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmZOrder extends StObject
 object fmZOrder {
   
-  @scala.inline
-  def fmZOrderBack: `1` = 1.asInstanceOf[`1`]
+  inline def fmZOrderBack: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmZOrderFront: `0` = 0.asInstanceOf[`0`]
+  inline def fmZOrderFront: `0` = 0.asInstanceOf[`0`]
 }

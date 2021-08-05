@@ -24,40 +24,29 @@ trait DesiredDeliveryMediums extends StObject {
 }
 object DesiredDeliveryMediums {
   
-  @scala.inline
-  def apply(desiredDeliveryMediums: js.Array[SMS | EMAIL], userAttributes: StringMap): DesiredDeliveryMediums = {
+  inline def apply(desiredDeliveryMediums: js.Array[SMS | EMAIL], userAttributes: StringMap): DesiredDeliveryMediums = {
     val __obj = js.Dynamic.literal(desiredDeliveryMediums = desiredDeliveryMediums.asInstanceOf[js.Any], userAttributes = userAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesiredDeliveryMediums]
   }
   
-  @scala.inline
-  implicit class DesiredDeliveryMediumsMutableBuilder[Self <: DesiredDeliveryMediums] (val x: Self) extends AnyVal {
+  extension [Self <: DesiredDeliveryMediums](x: Self) {
     
-    @scala.inline
-    def setDesiredDeliveryMediums(value: js.Array[SMS | EMAIL]): Self = StObject.set(x, "desiredDeliveryMediums", value.asInstanceOf[js.Any])
+    inline def setDesiredDeliveryMediums(value: js.Array[SMS | EMAIL]): Self = StObject.set(x, "desiredDeliveryMediums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredDeliveryMediumsVarargs(value: (SMS | EMAIL)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value :_*))
+    inline def setDesiredDeliveryMediumsVarargs(value: (SMS | EMAIL)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value :_*))
     
-    @scala.inline
-    def setFinalUserStatus(value: UserStatus): Self = StObject.set(x, "finalUserStatus", value.asInstanceOf[js.Any])
+    inline def setFinalUserStatus(value: UserStatus): Self = StObject.set(x, "finalUserStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUserStatusUndefined: Self = StObject.set(x, "finalUserStatus", js.undefined)
+    inline def setFinalUserStatusUndefined: Self = StObject.set(x, "finalUserStatus", js.undefined)
     
-    @scala.inline
-    def setForceAliasCreation(value: Boolean): Self = StObject.set(x, "forceAliasCreation", value.asInstanceOf[js.Any])
+    inline def setForceAliasCreation(value: Boolean): Self = StObject.set(x, "forceAliasCreation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceAliasCreationUndefined: Self = StObject.set(x, "forceAliasCreation", js.undefined)
+    inline def setForceAliasCreationUndefined: Self = StObject.set(x, "forceAliasCreation", js.undefined)
     
-    @scala.inline
-    def setMessageAction(value: RESEND | SUPPRESS): Self = StObject.set(x, "messageAction", value.asInstanceOf[js.Any])
+    inline def setMessageAction(value: RESEND | SUPPRESS): Self = StObject.set(x, "messageAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageActionUndefined: Self = StObject.set(x, "messageAction", js.undefined)
+    inline def setMessageActionUndefined: Self = StObject.set(x, "messageAction", js.undefined)
     
-    @scala.inline
-    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
   }
 }

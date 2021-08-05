@@ -24,8 +24,7 @@ trait Poll extends StObject {
 }
 object Poll {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allows_multiple_answers: Boolean,
     id: String,
     is_anonymous: Boolean,
@@ -40,34 +39,24 @@ object Poll {
     __obj.asInstanceOf[Poll]
   }
   
-  @scala.inline
-  implicit class PollMutableBuilder[Self <: Poll] (val x: Self) extends AnyVal {
+  extension [Self <: Poll](x: Self) {
     
-    @scala.inline
-    def setAllows_multiple_answers(value: Boolean): Self = StObject.set(x, "allows_multiple_answers", value.asInstanceOf[js.Any])
+    inline def setAllows_multiple_answers(value: Boolean): Self = StObject.set(x, "allows_multiple_answers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_anonymous(value: Boolean): Self = StObject.set(x, "is_anonymous", value.asInstanceOf[js.Any])
+    inline def setIs_anonymous(value: Boolean): Self = StObject.set(x, "is_anonymous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_closed(value: Boolean): Self = StObject.set(x, "is_closed", value.asInstanceOf[js.Any])
+    inline def setIs_closed(value: Boolean): Self = StObject.set(x, "is_closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: js.Array[PollOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[PollOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: PollOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: PollOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_voter_count(value: Double): Self = StObject.set(x, "total_voter_count", value.asInstanceOf[js.Any])
+    inline def setTotal_voter_count(value: Double): Self = StObject.set(x, "total_voter_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PollType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PollType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

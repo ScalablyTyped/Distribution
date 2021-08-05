@@ -39,8 +39,7 @@ trait Udp extends StObject {
 }
 object Udp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     drops: String,
     inode: String,
     local_address: String,
@@ -62,52 +61,36 @@ object Udp {
     __obj.asInstanceOf[Udp]
   }
   
-  @scala.inline
-  implicit class UdpMutableBuilder[Self <: Udp] (val x: Self) extends AnyVal {
+  extension [Self <: Udp](x: Self) {
     
-    @scala.inline
-    def setDrops(value: String): Self = StObject.set(x, "drops", value.asInstanceOf[js.Any])
+    inline def setDrops(value: String): Self = StObject.set(x, "drops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInode(value: String): Self = StObject.set(x, "inode", value.asInstanceOf[js.Any])
+    inline def setInode(value: String): Self = StObject.set(x, "inode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal_address(value: String): Self = StObject.set(x, "local_address", value.asInstanceOf[js.Any])
+    inline def setLocal_address(value: String): Self = StObject.set(x, "local_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+    inline def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRem_address(value: String): Self = StObject.set(x, "rem_address", value.asInstanceOf[js.Any])
+    inline def setRem_address(value: String): Self = StObject.set(x, "rem_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrnsmt(value: String): Self = StObject.set(x, "retrnsmt", value.asInstanceOf[js.Any])
+    inline def setRetrnsmt(value: String): Self = StObject.set(x, "retrnsmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_queue(value: String): Self = StObject.set(x, "rx_queue", value.asInstanceOf[js.Any])
+    inline def setRx_queue(value: String): Self = StObject.set(x, "rx_queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSl(value: String): Self = StObject.set(x, "sl", value.asInstanceOf[js.Any])
+    inline def setSl(value: String): Self = StObject.set(x, "sl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSt(value: String): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
+    inline def setSt(value: String): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTm-Greaterthansignwhen`(value: String): Self = StObject.set(x, "tm->when", value.asInstanceOf[js.Any])
+    inline def `setTm-Greaterthansignwhen`(value: String): Self = StObject.set(x, "tm->when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTr(value: String): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+    inline def setTr(value: String): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_queue(value: String): Self = StObject.set(x, "tx_queue", value.asInstanceOf[js.Any])
+    inline def setTx_queue(value: String): Self = StObject.set(x, "tx_queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

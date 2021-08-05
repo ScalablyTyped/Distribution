@@ -22,14 +22,10 @@ object mod {
   //=> 'Foo 🐑❤️ Bar'
   ```
   */
-  @scala.inline
-  def apply(input: String, needle: String, replacement: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(input: String, needle: String, replacement: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(input: String, needle: String, replacement: ReplacementFunction): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(input: String, needle: String, replacement: ReplacementFunction, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String, needle: String, replacement: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String, needle: String, replacement: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String, needle: String, replacement: ReplacementFunction): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String, needle: String, replacement: ReplacementFunction, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("replace-string", JSImport.Namespace)
   @js.native
@@ -51,26 +47,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+      inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
+      inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
       
-      @scala.inline
-      def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
+      inline def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
     }
   }
   

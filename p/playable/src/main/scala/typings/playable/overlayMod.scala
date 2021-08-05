@@ -18,46 +18,46 @@ object overlayMod {
        with Overlay {
     def this(hasEventEmitterEngineRootContainerThemeConfigMainUIBlockLoader: Loader) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _hideContent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _loader: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _mainUIBlock: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _playVideo: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _showContent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _theme: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _tryHideContent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _tryShowContent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updatePlayingState: js.Any = js.native
     
     /* CompleteClass */
@@ -121,55 +121,52 @@ object overlayMod {
     @JSImport("playable/dist/src/modules/ui/overlay/overlay", "default.View")
     @js.native
     def View: Instantiable1[/* config */ IOverlayViewConfig, typings.playable.overlayViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ IOverlayViewConfig, typings.playable.overlayViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ IOverlayViewConfig, typings.playable.overlayViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/overlay/overlay", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/overlay/overlay", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait Overlay
     extends StObject
        with IOverlay {
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _hideContent: js.Any
+    /* private */ var _hideContent: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _loader: js.Any
+    /* private */ var _loader: js.Any
     
-    var _mainUIBlock: js.Any
+    /* private */ var _mainUIBlock: js.Any
     
-    var _playVideo: js.Any
+    /* private */ var _playVideo: js.Any
     
-    var _showContent: js.Any
+    /* private */ var _showContent: js.Any
     
-    var _theme: js.Any
+    /* private */ var _theme: js.Any
     
-    var _tryHideContent: js.Any
+    /* private */ var _tryHideContent: js.Any
     
-    var _tryShowContent: js.Any
+    /* private */ var _tryShowContent: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
-    var _updatePlayingState: js.Any
+    /* private */ var _updatePlayingState: js.Any
     
     var isHidden: Boolean
     
@@ -197,8 +194,7 @@ object overlayMod {
   }
   object Overlay {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindEvents: js.Any,
       _engine: js.Any,
       _eventEmitter: js.Any,
@@ -227,62 +223,43 @@ object overlayMod {
       __obj.asInstanceOf[Overlay]
     }
     
-    @scala.inline
-    implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
+    extension [Self <: Overlay](x: Self) {
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTurnOffOverlayTransparency(value: () => Unit): Self = StObject.set(x, "turnOffOverlayTransparency", js.Any.fromFunction0(value))
+      inline def setTurnOffOverlayTransparency(value: () => Unit): Self = StObject.set(x, "turnOffOverlayTransparency", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTurnOnOverlayTransparency(value: () => Unit): Self = StObject.set(x, "turnOnOverlayTransparency", js.Any.fromFunction0(value))
+      inline def setTurnOnOverlayTransparency(value: () => Unit): Self = StObject.set(x, "turnOnOverlayTransparency", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setView(value: typings.playable.overlayViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.overlayViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hideContent(value: js.Any): Self = StObject.set(x, "_hideContent", value.asInstanceOf[js.Any])
+      inline def set_hideContent(value: js.Any): Self = StObject.set(x, "_hideContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_loader(value: js.Any): Self = StObject.set(x, "_loader", value.asInstanceOf[js.Any])
+      inline def set_loader(value: js.Any): Self = StObject.set(x, "_loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_mainUIBlock(value: js.Any): Self = StObject.set(x, "_mainUIBlock", value.asInstanceOf[js.Any])
+      inline def set_mainUIBlock(value: js.Any): Self = StObject.set(x, "_mainUIBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_playVideo(value: js.Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
+      inline def set_playVideo(value: js.Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_showContent(value: js.Any): Self = StObject.set(x, "_showContent", value.asInstanceOf[js.Any])
+      inline def set_showContent(value: js.Any): Self = StObject.set(x, "_showContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_tryHideContent(value: js.Any): Self = StObject.set(x, "_tryHideContent", value.asInstanceOf[js.Any])
+      inline def set_tryHideContent(value: js.Any): Self = StObject.set(x, "_tryHideContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_tryShowContent(value: js.Any): Self = StObject.set(x, "_tryShowContent", value.asInstanceOf[js.Any])
+      inline def set_tryShowContent(value: js.Any): Self = StObject.set(x, "_tryShowContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updatePlayingState(value: js.Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
+      inline def set_updatePlayingState(value: js.Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -24,8 +24,7 @@ trait Dispose[TEntryPointComponent] extends StObject {
 }
 object Dispose {
   
-  @scala.inline
-  def apply[TEntryPointComponent](
+  inline def apply[TEntryPointComponent](
     dispose: () => Unit,
     entryPoints: js.Any,
     extraProps: js.Any,
@@ -38,28 +37,20 @@ object Dispose {
     __obj.asInstanceOf[Dispose[TEntryPointComponent]]
   }
   
-  @scala.inline
-  implicit class DisposeMutableBuilder[Self <: Dispose[?], TEntryPointComponent] (val x: Self & Dispose[TEntryPointComponent]) extends AnyVal {
+  extension [Self <: Dispose[?], TEntryPointComponent](x: Self & Dispose[TEntryPointComponent]) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEntryPoints(value: js.Any): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
+    inline def setEntryPoints(value: js.Any): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraProps(value: js.Any): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
+    inline def setExtraProps(value: js.Any): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetComponent(value: () => TEntryPointComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
+    inline def setGetComponent(value: () => TEntryPointComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+    inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueries(value: PreloadedQueries[js.Any]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: PreloadedQueries[js.Any]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootModuleID(value: String): Self = StObject.set(x, "rootModuleID", value.asInstanceOf[js.Any])
+    inline def setRootModuleID(value: String): Self = StObject.set(x, "rootModuleID", value.asInstanceOf[js.Any])
   }
 }

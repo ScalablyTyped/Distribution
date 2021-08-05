@@ -39,8 +39,7 @@ object EventHelperTypes {
   }
   object ApplicationInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -54,32 +53,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[ApplicationInvokeParameter]
     }
     
-    @scala.inline
-    implicit class ApplicationInvokeParameterMutableBuilder[Self <: ApplicationInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +95,7 @@ object EventHelperTypes {
   }
   object ChartInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -120,32 +109,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[ChartInvokeParameter]
     }
     
-    @scala.inline
-    implicit class ChartInvokeParameterMutableBuilder[Self <: ChartInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ChartInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,8 +151,7 @@ object EventHelperTypes {
   }
   object OLEObjectInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -186,32 +165,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[OLEObjectInvokeParameter]
     }
     
-    @scala.inline
-    implicit class OLEObjectInvokeParameterMutableBuilder[Self <: OLEObjectInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: OLEObjectInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +207,7 @@ object EventHelperTypes {
   }
   object QueryTableInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -252,32 +221,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[QueryTableInvokeParameter]
     }
     
-    @scala.inline
-    implicit class QueryTableInvokeParameterMutableBuilder[Self <: QueryTableInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: QueryTableInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -303,8 +263,7 @@ object EventHelperTypes {
   }
   object WorkbookInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -318,32 +277,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[WorkbookInvokeParameter]
     }
     
-    @scala.inline
-    implicit class WorkbookInvokeParameterMutableBuilder[Self <: WorkbookInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: WorkbookInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -369,8 +319,7 @@ object EventHelperTypes {
   }
   object WorksheetInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -384,32 +333,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[WorksheetInvokeParameter]
     }
     
-    @scala.inline
-    implicit class WorksheetInvokeParameterMutableBuilder[Self <: WorksheetInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: WorksheetInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
 }

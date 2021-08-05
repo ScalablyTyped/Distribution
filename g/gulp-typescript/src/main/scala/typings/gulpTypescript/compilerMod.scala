@@ -17,19 +17,19 @@ object compilerMod {
     extends StObject
        with ICompiler {
     
-    var compilationResult: js.Any = js.native
+    /* private */ var compilationResult: js.Any = js.native
     
     var finalTransformers: FinalTransformers = js.native
     
     var host: Host = js.native
     
-    var output: js.Any = js.native
+    /* private */ var output: js.Any = js.native
     
-    var previousOutput: js.Any = js.native
+    /* private */ var previousOutput: js.Any = js.native
     
     var project: ProjectInfo = js.native
     
-    var write: js.Any = js.native
+    /* private */ var write: js.Any = js.native
   }
   
   @JSImport("gulp-typescript/release/compiler", "ProjectCompiler")
@@ -38,15 +38,15 @@ object compilerMod {
     extends StObject
        with ICompiler {
     
-    var attachContentToFile: js.Any = js.native
+    /* private */ var attachContentToFile: js.Any = js.native
     
-    var emit: js.Any = js.native
+    /* private */ var emit: js.Any = js.native
     
-    var emitFile: js.Any = js.native
+    /* private */ var emitFile: js.Any = js.native
     
     var finalTransformers: FinalTransformers = js.native
     
-    var hasSourceMap: js.Any = js.native
+    /* private */ var hasSourceMap: js.Any = js.native
     
     var host: Host = js.native
     
@@ -54,7 +54,7 @@ object compilerMod {
     
     var project: ProjectInfo = js.native
     
-    var removeSourceMapComment: js.Any = js.native
+    /* private */ var removeSourceMapComment: js.Any = js.native
   }
   
   @js.native

@@ -10,19 +10,15 @@ trait Strict extends StObject {
 }
 object Strict {
   
-  @scala.inline
-  def apply(): Strict = {
+  inline def apply(): Strict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Strict]
   }
   
-  @scala.inline
-  implicit class StrictMutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
+  extension [Self <: Strict](x: Self) {
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

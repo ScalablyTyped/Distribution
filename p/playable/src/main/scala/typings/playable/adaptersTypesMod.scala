@@ -43,8 +43,7 @@ object adaptersTypesMod {
   }
   object IAdapterDebugInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bitrates: js.Array[String],
       bwEstimate: Double,
       currentBitrate: String,
@@ -59,35 +58,25 @@ object adaptersTypesMod {
       __obj.asInstanceOf[IAdapterDebugInfo]
     }
     
-    @scala.inline
-    implicit class IAdapterDebugInfoMutableBuilder[Self <: IAdapterDebugInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IAdapterDebugInfo](x: Self) {
       
-      @scala.inline
-      def setBitrates(value: js.Array[String]): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
+      inline def setBitrates(value: js.Array[String]): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitratesVarargs(value: String*): Self = StObject.set(x, "bitrates", js.Array(value :_*))
+      inline def setBitratesVarargs(value: String*): Self = StObject.set(x, "bitrates", js.Array(value :_*))
       
-      @scala.inline
-      def setBwEstimate(value: Double): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
+      inline def setBwEstimate(value: Double): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentBitrate(value: String): Self = StObject.set(x, "currentBitrate", value.asInstanceOf[js.Any])
+      inline def setCurrentBitrate(value: String): Self = StObject.set(x, "currentBitrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryPriority(value: MediaStreamDeliveryPriority): Self = StObject.set(x, "deliveryPriority", value.asInstanceOf[js.Any])
+      inline def setDeliveryPriority(value: MediaStreamDeliveryPriority): Self = StObject.set(x, "deliveryPriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearestBufferSegInfo(value: js.Object): Self = StObject.set(x, "nearestBufferSegInfo", value.asInstanceOf[js.Any])
+      inline def setNearestBufferSegInfo(value: js.Object): Self = StObject.set(x, "nearestBufferSegInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverallBufferLength(value: Double): Self = StObject.set(x, "overallBufferLength", value.asInstanceOf[js.Any])
+      inline def setOverallBufferLength(value: Double): Self = StObject.set(x, "overallBufferLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: MediaStreamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: MediaStreamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,8 +108,7 @@ object adaptersTypesMod {
   }
   object IPlaybackAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attach: HTMLVideoElement => Unit,
       canPlay: MediaStreamType => Boolean,
       currentUrl: PlayableMediaSource,
@@ -138,47 +126,33 @@ object adaptersTypesMod {
       __obj.asInstanceOf[IPlaybackAdapter]
     }
     
-    @scala.inline
-    implicit class IPlaybackAdapterMutableBuilder[Self <: IPlaybackAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: IPlaybackAdapter](x: Self) {
       
-      @scala.inline
-      def setAttach(value: HTMLVideoElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+      inline def setAttach(value: HTMLVideoElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanPlay(value: MediaStreamType => Boolean): Self = StObject.set(x, "canPlay", js.Any.fromFunction1(value))
+      inline def setCanPlay(value: MediaStreamType => Boolean): Self = StObject.set(x, "canPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrentUrl(value: PlayableMediaSource): Self = StObject.set(x, "currentUrl", value.asInstanceOf[js.Any])
+      inline def setCurrentUrl(value: PlayableMediaSource): Self = StObject.set(x, "currentUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUrlVarargs(value: (String | IPlayableSource)*): Self = StObject.set(x, "currentUrl", js.Array(value :_*))
+      inline def setCurrentUrlVarargs(value: (String | IPlayableSource)*): Self = StObject.set(x, "currentUrl", js.Array(value :_*))
       
-      @scala.inline
-      def setDebugInfo(value: IAdapterDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
+      inline def setDebugInfo(value: IAdapterDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+      inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDynamicContent(value: Boolean): Self = StObject.set(x, "isDynamicContent", value.asInstanceOf[js.Any])
+      inline def setIsDynamicContent(value: Boolean): Self = StObject.set(x, "isDynamicContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDynamicContentEnded(value: Boolean): Self = StObject.set(x, "isDynamicContentEnded", value.asInstanceOf[js.Any])
+      inline def setIsDynamicContentEnded(value: Boolean): Self = StObject.set(x, "isDynamicContentEnded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSeekAvailable(value: Boolean): Self = StObject.set(x, "isSeekAvailable", value.asInstanceOf[js.Any])
+      inline def setIsSeekAvailable(value: Boolean): Self = StObject.set(x, "isSeekAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSyncWithLive(value: Boolean): Self = StObject.set(x, "isSyncWithLive", value.asInstanceOf[js.Any])
+      inline def setIsSyncWithLive(value: Boolean): Self = StObject.set(x, "isSyncWithLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaStreamDeliveryPriority(value: MediaStreamDeliveryPriority): Self = StObject.set(x, "mediaStreamDeliveryPriority", value.asInstanceOf[js.Any])
+      inline def setMediaStreamDeliveryPriority(value: MediaStreamDeliveryPriority): Self = StObject.set(x, "mediaStreamDeliveryPriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetMediaStreams(value: js.Any => Unit): Self = StObject.set(x, "setMediaStreams", js.Any.fromFunction1(value))
+      inline def setSetMediaStreams(value: js.Any => Unit): Self = StObject.set(x, "setMediaStreams", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSyncWithLiveTime(value: Double): Self = StObject.set(x, "syncWithLiveTime", value.asInstanceOf[js.Any])
+      inline def setSyncWithLiveTime(value: Double): Self = StObject.set(x, "syncWithLiveTime", value.asInstanceOf[js.Any])
     }
   }
   

@@ -23,31 +23,23 @@ trait ListConnectorEntitiesRequest extends StObject {
 }
 object ListConnectorEntitiesRequest {
   
-  @scala.inline
-  def apply(): ListConnectorEntitiesRequest = {
+  inline def apply(): ListConnectorEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListConnectorEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class ListConnectorEntitiesRequestMutableBuilder[Self <: ListConnectorEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListConnectorEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
+    inline def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
     
-    @scala.inline
-    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
+    inline def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
-    @scala.inline
-    def setEntitiesPath(value: EntitiesPath): Self = StObject.set(x, "entitiesPath", value.asInstanceOf[js.Any])
+    inline def setEntitiesPath(value: EntitiesPath): Self = StObject.set(x, "entitiesPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesPathUndefined: Self = StObject.set(x, "entitiesPath", js.undefined)
+    inline def setEntitiesPathUndefined: Self = StObject.set(x, "entitiesPath", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class ObjectReferenceCollection ()
   extends typings.xadesjs.xmlMod.ObjectReferenceCollection
 object ObjectReferenceCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.ObjectReferenceCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectReferenceCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ObjectReferenceCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.ObjectReferenceCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectReferenceCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ObjectReferenceCollection]]
 }

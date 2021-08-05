@@ -11,104 +11,89 @@ object asyncValidatorStrings {
   sealed trait any
     extends StObject
        with RuleType
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait array
     extends StObject
        with RuleType
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait boolean
     extends StObject
        with RuleType
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait date
     extends StObject
        with RuleType
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait email
     extends StObject
        with RuleType
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait `enum`
     extends StObject
        with RuleType
-  @scala.inline
-  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
+  inline def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
   sealed trait float
     extends StObject
        with RuleType
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait hex
     extends StObject
        with RuleType
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait integer
     extends StObject
        with RuleType
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait method
     extends StObject
        with RuleType
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
+  inline def method: method = "method".asInstanceOf[method]
   
   @js.native
   sealed trait number
     extends StObject
        with RuleType
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait `object`
     extends StObject
        with RuleType
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait regexp
     extends StObject
        with RuleType
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
+  inline def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
   sealed trait string
     extends StObject
        with RuleType
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait url
     extends StObject
        with RuleType
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
 }

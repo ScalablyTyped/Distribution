@@ -11,11 +11,9 @@ object readPackageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readPackage(packagePath: String, done: js.Function2[/* err */ js.Any, /* pkg */ js.UndefOr[Package], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readPackage")(packagePath.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def readPackage(packagePath: String, done: js.Function2[/* err */ js.Any, /* pkg */ js.UndefOr[Package], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readPackage")(packagePath.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def readPackageSync(packagePath: String): Package = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageSync")(packagePath.asInstanceOf[js.Any]).asInstanceOf[Package]
+  inline def readPackageSync(packagePath: String): Package = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageSync")(packagePath.asInstanceOf[js.Any]).asInstanceOf[Package]
   
   trait Package extends StObject {
     
@@ -44,83 +42,58 @@ object readPackageMod {
   }
   object Package {
     
-    @scala.inline
-    def apply(): Package = {
+    inline def apply(): Package = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Package]
     }
     
-    @scala.inline
-    implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
+    extension [Self <: Package](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String | Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String | Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setDependencies(value: StringDictionary[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDevDependencies(value: StringDictionary[String]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
+      inline def setDevDependencies(value: StringDictionary[String]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
+      inline def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
       
-      @scala.inline
-      def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+      inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+      inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
       
-      @scala.inline
-      def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+      inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      @scala.inline
-      def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
       
-      @scala.inline
-      def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+      inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+      inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
       
-      @scala.inline
-      def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTypings_(value: String): Self = StObject.set(x, "typings", value.asInstanceOf[js.Any])
+      inline def setTypings_(value: String): Self = StObject.set(x, "typings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypings_Undefined: Self = StObject.set(x, "typings", js.undefined)
+      inline def setTypings_Undefined: Self = StObject.set(x, "typings", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -132,26 +105,20 @@ object readPackageMod {
   }
   object Person {
     
-    @scala.inline
-    def apply(): Person = {
+    inline def apply(): Person = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Person]
     }
     
-    @scala.inline
-    implicit class PersonMutableBuilder[Self <: Person] (val x: Self) extends AnyVal {
+    extension [Self <: Person](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

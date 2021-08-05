@@ -16,13 +16,13 @@ class DepthLimitedWalker protected ()
      with typings.typescriptServices.TypeScript.DepthLimitedWalker {
   def this(maximumDepth: Double) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _depth: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _maximumDepth: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _position: js.Any = js.native
   
   /* CompleteClass */
@@ -217,8 +217,8 @@ class DepthLimitedWalker protected ()
   /* CompleteClass */
   override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
   
-  /* CompleteClass */
-  /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def visitOptionalToken(token: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def visitParameter(node: typings.typescriptServices.TypeScript.ParameterSyntax): js.Any = js.native

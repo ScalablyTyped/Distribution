@@ -11,16 +11,13 @@ trait PickImplsuccessSuccess extends StObject {
 }
 object PickImplsuccessSuccess {
   
-  @scala.inline
-  def apply(success: String): PickImplsuccessSuccess = {
+  inline def apply(success: String): PickImplsuccessSuccess = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsuccessSuccess]
   }
   
-  @scala.inline
-  implicit class PickImplsuccessSuccessMutableBuilder[Self <: PickImplsuccessSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsuccessSuccess](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

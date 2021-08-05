@@ -20,23 +20,18 @@ trait ManifestErrorEvent
 }
 object ManifestErrorEvent {
   
-  @scala.inline
-  def apply(event: typings.dashjs.anon.Event): ManifestErrorEvent = {
+  inline def apply(event: typings.dashjs.anon.Event): ManifestErrorEvent = {
     val __obj = js.Dynamic.literal(error = "manifestError", event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[ManifestErrorEvent]
   }
   
-  @scala.inline
-  implicit class ManifestErrorEventMutableBuilder[Self <: ManifestErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: manifestError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: manifestError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: typings.dashjs.anon.Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.dashjs.anon.Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

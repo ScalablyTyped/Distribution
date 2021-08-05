@@ -15,21 +15,17 @@ object statsRepoMod {
   @JSImport("ipfs-cli/dist/src/commands/stats/repo", "builder")
   @js.native
   def builder: SizeOnly = js.native
-  @scala.inline
-  def builder_=(x: SizeOnly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builder")(x.asInstanceOf[js.Any])
+  inline def builder_=(x: SizeOnly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builder")(x.asInstanceOf[js.Any])
   
   @JSImport("ipfs-cli/dist/src/commands/stats/repo", "command")
   @js.native
   def command: String = js.native
-  @scala.inline
-  def command_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("command")(x.asInstanceOf[js.Any])
+  inline def command_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("command")(x.asInstanceOf[js.Any])
   
   @JSImport("ipfs-cli/dist/src/commands/stats/repo", "describe")
   @js.native
   def describe: String = js.native
-  @scala.inline
-  def describe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("describe")(x.asInstanceOf[js.Any])
+  inline def describe_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("describe")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def handler(hasHasIpfsPrintHumanSizeOnlyTimeout: Human): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintHumanSizeOnlyTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintHumanSizeOnlyTimeout: Human): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintHumanSizeOnlyTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

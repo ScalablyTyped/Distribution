@@ -59,8 +59,7 @@ object quickActionMod {
   }
   object QuickActionDescribeInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contextSobjectType: String,
       layout: js.Object,
       targetParentField: String,
@@ -71,23 +70,17 @@ object quickActionMod {
       __obj.asInstanceOf[QuickActionDescribeInfo]
     }
     
-    @scala.inline
-    implicit class QuickActionDescribeInfoMutableBuilder[Self <: QuickActionDescribeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: QuickActionDescribeInfo](x: Self) {
       
-      @scala.inline
-      def setContextSobjectType(value: String): Self = StObject.set(x, "contextSobjectType", value.asInstanceOf[js.Any])
+      inline def setContextSobjectType(value: String): Self = StObject.set(x, "contextSobjectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: js.Object): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: js.Object): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetParentField(value: String): Self = StObject.set(x, "targetParentField", value.asInstanceOf[js.Any])
+      inline def setTargetParentField(value: String): Self = StObject.set(x, "targetParentField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRecordTypeId(value: String): Self = StObject.set(x, "targetRecordTypeId", value.asInstanceOf[js.Any])
+      inline def setTargetRecordTypeId(value: String): Self = StObject.set(x, "targetRecordTypeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetSobjectType(value: String): Self = StObject.set(x, "targetSobjectType", value.asInstanceOf[js.Any])
+      inline def setTargetSobjectType(value: String): Self = StObject.set(x, "targetSobjectType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,27 +100,21 @@ object quickActionMod {
   }
   object QuickActionInfo {
     
-    @scala.inline
-    def apply(label: String, name: String, `type`: String, urls: js.Object): QuickActionInfo = {
+    inline def apply(label: String, name: String, `type`: String, urls: js.Object): QuickActionInfo = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuickActionInfo]
     }
     
-    @scala.inline
-    implicit class QuickActionInfoMutableBuilder[Self <: QuickActionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: QuickActionInfo](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrls(value: js.Object): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: js.Object): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     }
   }
   

@@ -30,8 +30,6 @@ object nodeMod {
     def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
   }
   
-  @scala.inline
-  def stream(): typings.eventIterator.eventIteratorMod.EventIterator[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Buffer]]
-  @scala.inline
-  def stream(evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(evOptions.asInstanceOf[js.Any]).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Buffer]]
+  inline def stream(): typings.eventIterator.eventIteratorMod.EventIterator[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Buffer]]
+  inline def stream(evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(evOptions.asInstanceOf[js.Any]).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Buffer]]
 }

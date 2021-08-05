@@ -15,28 +15,21 @@ trait Expansion extends StObject {
 }
 object Expansion {
   
-  @scala.inline
-  def apply(expanded_terms: js.Array[String]): Expansion = {
+  inline def apply(expanded_terms: js.Array[String]): Expansion = {
     val __obj = js.Dynamic.literal(expanded_terms = expanded_terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expansion]
   }
   
-  @scala.inline
-  implicit class ExpansionMutableBuilder[Self <: Expansion] (val x: Self) extends AnyVal {
+  extension [Self <: Expansion](x: Self) {
     
-    @scala.inline
-    def setExpanded_terms(value: js.Array[String]): Self = StObject.set(x, "expanded_terms", value.asInstanceOf[js.Any])
+    inline def setExpanded_terms(value: js.Array[String]): Self = StObject.set(x, "expanded_terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpanded_termsVarargs(value: String*): Self = StObject.set(x, "expanded_terms", js.Array(value :_*))
+    inline def setExpanded_termsVarargs(value: String*): Self = StObject.set(x, "expanded_terms", js.Array(value :_*))
     
-    @scala.inline
-    def setInput_terms(value: js.Array[String]): Self = StObject.set(x, "input_terms", value.asInstanceOf[js.Any])
+    inline def setInput_terms(value: js.Array[String]): Self = StObject.set(x, "input_terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_termsUndefined: Self = StObject.set(x, "input_terms", js.undefined)
+    inline def setInput_termsUndefined: Self = StObject.set(x, "input_terms", js.undefined)
     
-    @scala.inline
-    def setInput_termsVarargs(value: String*): Self = StObject.set(x, "input_terms", js.Array(value :_*))
+    inline def setInput_termsVarargs(value: String*): Self = StObject.set(x, "input_terms", js.Array(value :_*))
   }
 }

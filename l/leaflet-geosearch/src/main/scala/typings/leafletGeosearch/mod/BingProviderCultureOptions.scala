@@ -15,25 +15,19 @@ trait BingProviderCultureOptions extends StObject {
 }
 object BingProviderCultureOptions {
   
-  @scala.inline
-  def apply(): BingProviderCultureOptions = {
+  inline def apply(): BingProviderCultureOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BingProviderCultureOptions]
   }
   
-  @scala.inline
-  implicit class BingProviderCultureOptionsMutableBuilder[Self <: BingProviderCultureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BingProviderCultureOptions](x: Self) {
     
-    @scala.inline
-    def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+    inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
-    @scala.inline
-    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
   }
 }

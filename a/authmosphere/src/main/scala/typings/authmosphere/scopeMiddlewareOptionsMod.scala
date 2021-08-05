@@ -23,34 +23,26 @@ object scopeMiddlewareOptionsMod {
   }
   object ScopeMiddlewareOptions {
     
-    @scala.inline
-    def apply(): ScopeMiddlewareOptions = {
+    inline def apply(): ScopeMiddlewareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScopeMiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class ScopeMiddlewareOptionsMutableBuilder[Self <: ScopeMiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScopeMiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setOnAuthorizationFailedHandler(
+      inline def setOnAuthorizationFailedHandler(
         value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit
       ): Self = StObject.set(x, "onAuthorizationFailedHandler", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setOnAuthorizationFailedHandlerUndefined: Self = StObject.set(x, "onAuthorizationFailedHandler", js.undefined)
+      inline def setOnAuthorizationFailedHandlerUndefined: Self = StObject.set(x, "onAuthorizationFailedHandler", js.undefined)
       
-      @scala.inline
-      def setPrecedenceOptions(value: PrecedenceOptions): Self = StObject.set(x, "precedenceOptions", value.asInstanceOf[js.Any])
+      inline def setPrecedenceOptions(value: PrecedenceOptions): Self = StObject.set(x, "precedenceOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecedenceOptionsUndefined: Self = StObject.set(x, "precedenceOptions", js.undefined)
+      inline def setPrecedenceOptionsUndefined: Self = StObject.set(x, "precedenceOptions", js.undefined)
     }
   }
   

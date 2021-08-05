@@ -21,19 +21,15 @@ trait NetworkPolicyPort extends StObject {
 }
 object NetworkPolicyPort {
   
-  @scala.inline
-  def apply(port: Double | String, protocol: String): NetworkPolicyPort = {
+  inline def apply(port: Double | String, protocol: String): NetworkPolicyPort = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkPolicyPort]
   }
   
-  @scala.inline
-  implicit class NetworkPolicyPortMutableBuilder[Self <: NetworkPolicyPort] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicyPort](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

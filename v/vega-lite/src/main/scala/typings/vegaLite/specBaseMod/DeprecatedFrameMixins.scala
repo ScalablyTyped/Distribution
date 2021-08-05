@@ -26,31 +26,23 @@ trait DeprecatedFrameMixins extends StObject {
 }
 object DeprecatedFrameMixins {
   
-  @scala.inline
-  def apply(): DeprecatedFrameMixins = {
+  inline def apply(): DeprecatedFrameMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeprecatedFrameMixins]
   }
   
-  @scala.inline
-  implicit class DeprecatedFrameMixinsMutableBuilder[Self <: DeprecatedFrameMixins] (val x: Self) extends AnyVal {
+  extension [Self <: DeprecatedFrameMixins](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | container | Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | container | Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setView(value: ViewBackground[ExprRef | SignalRef]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: ViewBackground[ExprRef | SignalRef]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | container | Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | container | Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

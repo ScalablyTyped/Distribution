@@ -31,7 +31,7 @@ trait PivotItem extends StObject {
   
   var DrilledDown: Boolean
   
-  @JSName("Excel.PivotItem_typekey")
+  /* private */ @JSName("Excel.PivotItem_typekey")
   var ExcelDotPivotItem_typekey: PivotItem
   
   var Formula: String
@@ -72,8 +72,7 @@ trait PivotItem extends StObject {
 }
 object PivotItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Caption: String,
     ChildItems: PivotItemsResult,
@@ -105,82 +104,56 @@ object PivotItem {
     __obj.asInstanceOf[PivotItem]
   }
   
-  @scala.inline
-  implicit class PivotItemMutableBuilder[Self <: PivotItem] (val x: Self) extends AnyVal {
+  extension [Self <: PivotItem](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildItems(value: PivotItemsResult): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
+    inline def setChildItems(value: PivotItemsResult): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRange(value: Range): Self = StObject.set(x, "DataRange", value.asInstanceOf[js.Any])
+    inline def setDataRange(value: Range): Self = StObject.set(x, "DataRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDrillTo(value: String => Unit): Self = StObject.set(x, "DrillTo", js.Any.fromFunction1(value))
+    inline def setDrillTo(value: String => Unit): Self = StObject.set(x, "DrillTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrilledDown(value: Boolean): Self = StObject.set(x, "DrilledDown", value.asInstanceOf[js.Any])
+    inline def setDrilledDown(value: Boolean): Self = StObject.set(x, "DrilledDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotPivotItem_typekey(value: PivotItem): Self = StObject.set(x, "Excel.PivotItem_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotPivotItem_typekey(value: PivotItem): Self = StObject.set(x, "Excel.PivotItem_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCalculated(value: Boolean): Self = StObject.set(x, "IsCalculated", value.asInstanceOf[js.Any])
+    inline def setIsCalculated(value: Boolean): Self = StObject.set(x, "IsCalculated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelRange(value: Range): Self = StObject.set(x, "LabelRange", value.asInstanceOf[js.Any])
+    inline def setLabelRange(value: Range): Self = StObject.set(x, "LabelRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: PivotField): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: PivotField): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentItem(value: PivotItem): Self = StObject.set(x, "ParentItem", value.asInstanceOf[js.Any])
+    inline def setParentItem(value: PivotItem): Self = StObject.set(x, "ParentItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentShowDetail(value: Boolean): Self = StObject.set(x, "ParentShowDetail", value.asInstanceOf[js.Any])
+    inline def setParentShowDetail(value: Boolean): Self = StObject.set(x, "ParentShowDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordCount(value: Double): Self = StObject.set(x, "RecordCount", value.asInstanceOf[js.Any])
+    inline def setRecordCount(value: Double): Self = StObject.set(x, "RecordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDetail(value: Boolean): Self = StObject.set(x, "ShowDetail", value.asInstanceOf[js.Any])
+    inline def setShowDetail(value: Boolean): Self = StObject.set(x, "ShowDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: js.Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: js.Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNameStandard(value: String): Self = StObject.set(x, "SourceNameStandard", value.asInstanceOf[js.Any])
+    inline def setSourceNameStandard(value: String): Self = StObject.set(x, "SourceNameStandard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardFormula(value: String): Self = StObject.set(x, "StandardFormula", value.asInstanceOf[js.Any])
+    inline def setStandardFormula(value: String): Self = StObject.set(x, "StandardFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

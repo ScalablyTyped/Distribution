@@ -43,8 +43,7 @@ trait AppointmentRecurrence extends StObject {
 }
 object AppointmentRecurrence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     calendarIdentifier: js.Any,
     day: Double,
     daysOfWeek: AppointmentDaysOfWeek,
@@ -61,40 +60,28 @@ object AppointmentRecurrence {
     __obj.asInstanceOf[AppointmentRecurrence]
   }
   
-  @scala.inline
-  implicit class AppointmentRecurrenceMutableBuilder[Self <: AppointmentRecurrence] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentRecurrence](x: Self) {
     
-    @scala.inline
-    def setCalendarIdentifier(value: js.Any): Self = StObject.set(x, "calendarIdentifier", value.asInstanceOf[js.Any])
+    inline def setCalendarIdentifier(value: js.Any): Self = StObject.set(x, "calendarIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOfWeek(value: AppointmentDaysOfWeek): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
+    inline def setDaysOfWeek(value: AppointmentDaysOfWeek): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrences(value: Double): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
+    inline def setOccurrences(value: Double): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceType(value: RecurrenceType): Self = StObject.set(x, "recurrenceType", value.asInstanceOf[js.Any])
+    inline def setRecurrenceType(value: RecurrenceType): Self = StObject.set(x, "recurrenceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: AppointmentRecurrenceUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: AppointmentRecurrenceUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUntil(value: Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+    inline def setUntil(value: Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekOfMonth(value: AppointmentWeekOfMonth): Self = StObject.set(x, "weekOfMonth", value.asInstanceOf[js.Any])
+    inline def setWeekOfMonth(value: AppointmentWeekOfMonth): Self = StObject.set(x, "weekOfMonth", value.asInstanceOf[js.Any])
   }
 }

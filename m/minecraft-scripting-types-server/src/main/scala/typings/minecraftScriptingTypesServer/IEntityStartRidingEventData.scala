@@ -22,19 +22,15 @@ trait IEntityStartRidingEventData extends StObject {
 }
 object IEntityStartRidingEventData {
   
-  @scala.inline
-  def apply(entity: IEntity, ride: IEntity): IEntityStartRidingEventData = {
+  inline def apply(entity: IEntity, ride: IEntity): IEntityStartRidingEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], ride = ride.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityStartRidingEventData]
   }
   
-  @scala.inline
-  implicit class IEntityStartRidingEventDataMutableBuilder[Self <: IEntityStartRidingEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityStartRidingEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRide(value: IEntity): Self = StObject.set(x, "ride", value.asInstanceOf[js.Any])
+    inline def setRide(value: IEntity): Self = StObject.set(x, "ride", value.asInstanceOf[js.Any])
   }
 }

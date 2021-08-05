@@ -10,27 +10,23 @@ object operatorRaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def race[T](
+  inline def race[T](
     observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any) | (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
     ]))*
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def race[T](
+  inline def race[T](
     observables: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def race_TR[T, R](
+  inline def race_TR[T, R](
     observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any) | (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
     ]))*
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def race_TR[T, R](
+  inline def race_TR[T, R](
     observables: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
     ]

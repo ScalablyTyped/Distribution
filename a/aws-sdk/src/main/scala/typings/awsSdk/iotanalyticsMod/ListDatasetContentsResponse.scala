@@ -18,28 +18,21 @@ trait ListDatasetContentsResponse extends StObject {
 }
 object ListDatasetContentsResponse {
   
-  @scala.inline
-  def apply(): ListDatasetContentsResponse = {
+  inline def apply(): ListDatasetContentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDatasetContentsResponse]
   }
   
-  @scala.inline
-  implicit class ListDatasetContentsResponseMutableBuilder[Self <: ListDatasetContentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDatasetContentsResponse](x: Self) {
     
-    @scala.inline
-    def setDatasetContentSummaries(value: DatasetContentSummaries): Self = StObject.set(x, "datasetContentSummaries", value.asInstanceOf[js.Any])
+    inline def setDatasetContentSummaries(value: DatasetContentSummaries): Self = StObject.set(x, "datasetContentSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetContentSummariesUndefined: Self = StObject.set(x, "datasetContentSummaries", js.undefined)
+    inline def setDatasetContentSummariesUndefined: Self = StObject.set(x, "datasetContentSummaries", js.undefined)
     
-    @scala.inline
-    def setDatasetContentSummariesVarargs(value: DatasetContentSummary*): Self = StObject.set(x, "datasetContentSummaries", js.Array(value :_*))
+    inline def setDatasetContentSummariesVarargs(value: DatasetContentSummary*): Self = StObject.set(x, "datasetContentSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -64,8 +64,7 @@ object diagramWidgetMod {
     @JSImport("storm-react-diagrams/dist/src/widgets/DiagramWidget", "DiagramWidget.defaultProps")
     @js.native
     def defaultProps: DiagramProps = js.native
-    @scala.inline
-    def defaultProps_=(x: DiagramProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DiagramProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait DiagramProps
@@ -96,80 +95,56 @@ object diagramWidgetMod {
   }
   object DiagramProps {
     
-    @scala.inline
-    def apply(diagramEngine: DiagramEngine): DiagramProps = {
+    inline def apply(diagramEngine: DiagramEngine): DiagramProps = {
       val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiagramProps]
     }
     
-    @scala.inline
-    implicit class DiagramPropsMutableBuilder[Self <: DiagramProps] (val x: Self) extends AnyVal {
+    extension [Self <: DiagramProps](x: Self) {
       
-      @scala.inline
-      def setActionStartedFiring(value: /* action */ BaseAction => Boolean): Self = StObject.set(x, "actionStartedFiring", js.Any.fromFunction1(value))
+      inline def setActionStartedFiring(value: /* action */ BaseAction => Boolean): Self = StObject.set(x, "actionStartedFiring", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionStartedFiringUndefined: Self = StObject.set(x, "actionStartedFiring", js.undefined)
+      inline def setActionStartedFiringUndefined: Self = StObject.set(x, "actionStartedFiring", js.undefined)
       
-      @scala.inline
-      def setActionStillFiring(value: /* action */ BaseAction => Unit): Self = StObject.set(x, "actionStillFiring", js.Any.fromFunction1(value))
+      inline def setActionStillFiring(value: /* action */ BaseAction => Unit): Self = StObject.set(x, "actionStillFiring", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionStillFiringUndefined: Self = StObject.set(x, "actionStillFiring", js.undefined)
+      inline def setActionStillFiringUndefined: Self = StObject.set(x, "actionStillFiring", js.undefined)
       
-      @scala.inline
-      def setActionStoppedFiring(value: /* action */ BaseAction => Unit): Self = StObject.set(x, "actionStoppedFiring", js.Any.fromFunction1(value))
+      inline def setActionStoppedFiring(value: /* action */ BaseAction => Unit): Self = StObject.set(x, "actionStoppedFiring", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionStoppedFiringUndefined: Self = StObject.set(x, "actionStoppedFiring", js.undefined)
+      inline def setActionStoppedFiringUndefined: Self = StObject.set(x, "actionStoppedFiring", js.undefined)
       
-      @scala.inline
-      def setAllowCanvasTranslation(value: Boolean): Self = StObject.set(x, "allowCanvasTranslation", value.asInstanceOf[js.Any])
+      inline def setAllowCanvasTranslation(value: Boolean): Self = StObject.set(x, "allowCanvasTranslation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCanvasTranslationUndefined: Self = StObject.set(x, "allowCanvasTranslation", js.undefined)
+      inline def setAllowCanvasTranslationUndefined: Self = StObject.set(x, "allowCanvasTranslation", js.undefined)
       
-      @scala.inline
-      def setAllowCanvasZoom(value: Boolean): Self = StObject.set(x, "allowCanvasZoom", value.asInstanceOf[js.Any])
+      inline def setAllowCanvasZoom(value: Boolean): Self = StObject.set(x, "allowCanvasZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCanvasZoomUndefined: Self = StObject.set(x, "allowCanvasZoom", js.undefined)
+      inline def setAllowCanvasZoomUndefined: Self = StObject.set(x, "allowCanvasZoom", js.undefined)
       
-      @scala.inline
-      def setAllowLooseLinks(value: Boolean): Self = StObject.set(x, "allowLooseLinks", value.asInstanceOf[js.Any])
+      inline def setAllowLooseLinks(value: Boolean): Self = StObject.set(x, "allowLooseLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowLooseLinksUndefined: Self = StObject.set(x, "allowLooseLinks", js.undefined)
+      inline def setAllowLooseLinksUndefined: Self = StObject.set(x, "allowLooseLinks", js.undefined)
       
-      @scala.inline
-      def setDeleteKeys(value: js.Array[Double]): Self = StObject.set(x, "deleteKeys", value.asInstanceOf[js.Any])
+      inline def setDeleteKeys(value: js.Array[Double]): Self = StObject.set(x, "deleteKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteKeysUndefined: Self = StObject.set(x, "deleteKeys", js.undefined)
+      inline def setDeleteKeysUndefined: Self = StObject.set(x, "deleteKeys", js.undefined)
       
-      @scala.inline
-      def setDeleteKeysVarargs(value: Double*): Self = StObject.set(x, "deleteKeys", js.Array(value :_*))
+      inline def setDeleteKeysVarargs(value: Double*): Self = StObject.set(x, "deleteKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
+      inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseZoom(value: Boolean): Self = StObject.set(x, "inverseZoom", value.asInstanceOf[js.Any])
+      inline def setInverseZoom(value: Boolean): Self = StObject.set(x, "inverseZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseZoomUndefined: Self = StObject.set(x, "inverseZoom", js.undefined)
+      inline def setInverseZoomUndefined: Self = StObject.set(x, "inverseZoom", js.undefined)
       
-      @scala.inline
-      def setMaxNumberPointsPerLink(value: Double): Self = StObject.set(x, "maxNumberPointsPerLink", value.asInstanceOf[js.Any])
+      inline def setMaxNumberPointsPerLink(value: Double): Self = StObject.set(x, "maxNumberPointsPerLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxNumberPointsPerLinkUndefined: Self = StObject.set(x, "maxNumberPointsPerLink", js.undefined)
+      inline def setMaxNumberPointsPerLinkUndefined: Self = StObject.set(x, "maxNumberPointsPerLink", js.undefined)
       
-      @scala.inline
-      def setSmartRouting(value: Boolean): Self = StObject.set(x, "smartRouting", value.asInstanceOf[js.Any])
+      inline def setSmartRouting(value: Boolean): Self = StObject.set(x, "smartRouting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartRoutingUndefined: Self = StObject.set(x, "smartRouting", js.undefined)
+      inline def setSmartRoutingUndefined: Self = StObject.set(x, "smartRouting", js.undefined)
     }
   }
   
@@ -189,8 +164,7 @@ object diagramWidgetMod {
   }
   object DiagramState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       diagramEngineListener: js.Any,
       document: js.Any,
       renderedNodes: Boolean,
@@ -201,29 +175,21 @@ object diagramWidgetMod {
       __obj.asInstanceOf[DiagramState]
     }
     
-    @scala.inline
-    implicit class DiagramStateMutableBuilder[Self <: DiagramState] (val x: Self) extends AnyVal {
+    extension [Self <: DiagramState](x: Self) {
       
-      @scala.inline
-      def setAction(value: BaseAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: BaseAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionNull: Self = StObject.set(x, "action", null)
+      inline def setActionNull: Self = StObject.set(x, "action", null)
       
-      @scala.inline
-      def setDiagramEngineListener(value: js.Any): Self = StObject.set(x, "diagramEngineListener", value.asInstanceOf[js.Any])
+      inline def setDiagramEngineListener(value: js.Any): Self = StObject.set(x, "diagramEngineListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedNodes(value: Boolean): Self = StObject.set(x, "renderedNodes", value.asInstanceOf[js.Any])
+      inline def setRenderedNodes(value: Boolean): Self = StObject.set(x, "renderedNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWasMoved(value: Boolean): Self = StObject.set(x, "wasMoved", value.asInstanceOf[js.Any])
+      inline def setWasMoved(value: Boolean): Self = StObject.set(x, "wasMoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowListener(value: js.Any): Self = StObject.set(x, "windowListener", value.asInstanceOf[js.Any])
+      inline def setWindowListener(value: js.Any): Self = StObject.set(x, "windowListener", value.asInstanceOf[js.Any])
     }
   }
 }

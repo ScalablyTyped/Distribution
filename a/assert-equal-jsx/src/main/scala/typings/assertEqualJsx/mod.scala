@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(actual: Element, expected: Element): Unit = (^.asInstanceOf[js.Dynamic].apply(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(actual: Element, expected: Element, opts: AsssertOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(actual: Element, expected: Element): Unit = (^.asInstanceOf[js.Dynamic].apply(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(actual: Element, expected: Element, opts: AsssertOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("assert-equal-jsx", JSImport.Namespace)
   @js.native
@@ -22,20 +20,16 @@ object mod {
   }
   object AsssertOptions {
     
-    @scala.inline
-    def apply(): AsssertOptions = {
+    inline def apply(): AsssertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsssertOptions]
     }
     
-    @scala.inline
-    implicit class AsssertOptionsMutableBuilder[Self <: AsssertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsssertOptions](x: Self) {
       
-      @scala.inline
-      def setSanitize(value: /* str */ String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
+      inline def setSanitize(value: /* str */ String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
     }
   }
 }

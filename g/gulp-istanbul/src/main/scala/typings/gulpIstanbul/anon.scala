@@ -13,20 +13,16 @@ object anon {
   }
   object CoverageVariable {
     
-    @scala.inline
-    def apply(): CoverageVariable = {
+    inline def apply(): CoverageVariable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoverageVariable]
     }
     
-    @scala.inline
-    implicit class CoverageVariableMutableBuilder[Self <: CoverageVariable] (val x: Self) extends AnyVal {
+    extension [Self <: CoverageVariable](x: Self) {
       
-      @scala.inline
-      def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
+      inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
+      inline def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
     }
   }
   
@@ -36,20 +32,16 @@ object anon {
   }
   object Dir {
     
-    @scala.inline
-    def apply(): Dir = {
+    inline def apply(): Dir = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dir]
     }
     
-    @scala.inline
-    implicit class DirMutableBuilder[Self <: Dir] (val x: Self) extends AnyVal {
+    extension [Self <: Dir](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     }
   }
   
@@ -61,26 +53,20 @@ object anon {
   }
   object Each {
     
-    @scala.inline
-    def apply(): Each = {
+    inline def apply(): Each = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Each]
     }
     
-    @scala.inline
-    implicit class EachMutableBuilder[Self <: Each] (val x: Self) extends AnyVal {
+    extension [Self <: Each](x: Self) {
       
-      @scala.inline
-      def setEach(value: CoverageOptions | Double): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+      inline def setEach(value: CoverageOptions | Double): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+      inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: CoverageOptions | Double): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: CoverageOptions | Double): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     }
   }
 }

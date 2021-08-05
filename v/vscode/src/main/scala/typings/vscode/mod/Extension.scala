@@ -57,8 +57,7 @@ trait Extension[T] extends StObject {
 }
 object Extension {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     activate: () => Thenable[T],
     exports: T,
     extensionKind: ExtensionKind,
@@ -72,31 +71,22 @@ object Extension {
     __obj.asInstanceOf[Extension[T]]
   }
   
-  @scala.inline
-  implicit class ExtensionMutableBuilder[Self <: Extension[?], T] (val x: Self & Extension[T]) extends AnyVal {
+  extension [Self <: Extension[?], T](x: Self & Extension[T]) {
     
-    @scala.inline
-    def setActivate(value: () => Thenable[T]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Thenable[T]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExports(value: T): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: T): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionKind(value: ExtensionKind): Self = StObject.set(x, "extensionKind", value.asInstanceOf[js.Any])
+    inline def setExtensionKind(value: ExtensionKind): Self = StObject.set(x, "extensionKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionPath(value: String): Self = StObject.set(x, "extensionPath", value.asInstanceOf[js.Any])
+    inline def setExtensionPath(value: String): Self = StObject.set(x, "extensionPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUri(value: Uri): Self = StObject.set(x, "extensionUri", value.asInstanceOf[js.Any])
+    inline def setExtensionUri(value: Uri): Self = StObject.set(x, "extensionUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageJSON(value: js.Any): Self = StObject.set(x, "packageJSON", value.asInstanceOf[js.Any])
+    inline def setPackageJSON(value: js.Any): Self = StObject.set(x, "packageJSON", value.asInstanceOf[js.Any])
   }
 }

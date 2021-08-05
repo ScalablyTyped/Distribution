@@ -43,55 +43,39 @@ trait MatterRunnerConfig extends StObject {
 }
 object MatterRunnerConfig {
   
-  @scala.inline
-  def apply(): MatterRunnerConfig = {
+  inline def apply(): MatterRunnerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatterRunnerConfig]
   }
   
-  @scala.inline
-  implicit class MatterRunnerConfigMutableBuilder[Self <: MatterRunnerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MatterRunnerConfig](x: Self) {
     
-    @scala.inline
-    def setCorrection(value: Double): Self = StObject.set(x, "correction", value.asInstanceOf[js.Any])
+    inline def setCorrection(value: Double): Self = StObject.set(x, "correction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectionUndefined: Self = StObject.set(x, "correction", js.undefined)
+    inline def setCorrectionUndefined: Self = StObject.set(x, "correction", js.undefined)
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaMax(value: Double): Self = StObject.set(x, "deltaMax", value.asInstanceOf[js.Any])
+    inline def setDeltaMax(value: Double): Self = StObject.set(x, "deltaMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaMaxUndefined: Self = StObject.set(x, "deltaMax", js.undefined)
+    inline def setDeltaMaxUndefined: Self = StObject.set(x, "deltaMax", js.undefined)
     
-    @scala.inline
-    def setDeltaMin(value: Double): Self = StObject.set(x, "deltaMin", value.asInstanceOf[js.Any])
+    inline def setDeltaMin(value: Double): Self = StObject.set(x, "deltaMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaMinUndefined: Self = StObject.set(x, "deltaMin", js.undefined)
+    inline def setDeltaMinUndefined: Self = StObject.set(x, "deltaMin", js.undefined)
     
-    @scala.inline
-    def setDeltaSampleSize(value: Double): Self = StObject.set(x, "deltaSampleSize", value.asInstanceOf[js.Any])
+    inline def setDeltaSampleSize(value: Double): Self = StObject.set(x, "deltaSampleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaSampleSizeUndefined: Self = StObject.set(x, "deltaSampleSize", js.undefined)
+    inline def setDeltaSampleSizeUndefined: Self = StObject.set(x, "deltaSampleSize", js.undefined)
     
-    @scala.inline
-    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
-    @scala.inline
-    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+    inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
+    inline def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
   }
 }

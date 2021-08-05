@@ -13,19 +13,15 @@ trait GetGroupQueryOutput extends StObject {
 }
 object GetGroupQueryOutput {
   
-  @scala.inline
-  def apply(): GetGroupQueryOutput = {
+  inline def apply(): GetGroupQueryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGroupQueryOutput]
   }
   
-  @scala.inline
-  implicit class GetGroupQueryOutputMutableBuilder[Self <: GetGroupQueryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupQueryOutput](x: Self) {
     
-    @scala.inline
-    def setGroupQuery(value: GroupQuery): Self = StObject.set(x, "GroupQuery", value.asInstanceOf[js.Any])
+    inline def setGroupQuery(value: GroupQuery): Self = StObject.set(x, "GroupQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupQueryUndefined: Self = StObject.set(x, "GroupQuery", js.undefined)
+    inline def setGroupQueryUndefined: Self = StObject.set(x, "GroupQuery", js.undefined)
   }
 }

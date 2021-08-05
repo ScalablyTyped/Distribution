@@ -21,8 +21,7 @@ trait PDFTreeNode extends StObject {
 }
 object PDFTreeNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bold: Boolean,
     color: js.Array[Double],
     dest: js.Any,
@@ -34,31 +33,22 @@ object PDFTreeNode {
     __obj.asInstanceOf[PDFTreeNode]
   }
   
-  @scala.inline
-  implicit class PDFTreeNodeMutableBuilder[Self <: PDFTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: PDFTreeNode](x: Self) {
     
-    @scala.inline
-    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setDest(value: js.Any): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+    inline def setDest(value: js.Any): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[PDFTreeNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PDFTreeNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: PDFTreeNode*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PDFTreeNode*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

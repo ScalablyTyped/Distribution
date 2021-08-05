@@ -28,37 +28,27 @@ trait TemplateVersionsResponse extends StObject {
 }
 object TemplateVersionsResponse {
   
-  @scala.inline
-  def apply(Item: ListOfTemplateVersionResponse): TemplateVersionsResponse = {
+  inline def apply(Item: ListOfTemplateVersionResponse): TemplateVersionsResponse = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateVersionsResponse]
   }
   
-  @scala.inline
-  implicit class TemplateVersionsResponseMutableBuilder[Self <: TemplateVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setItem(value: ListOfTemplateVersionResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ListOfTemplateVersionResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemVarargs(value: TemplateVersionResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+    inline def setItemVarargs(value: TemplateVersionResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRequestID(value: string): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
+    inline def setRequestID(value: string): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
+    inline def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
   }
 }

@@ -38,17 +38,14 @@ object adsenseMod {
     @js.native
     def v14: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Adsense] = js.native
     
-    @scala.inline
-    def v14_=(
+    inline def v14_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Adsense]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1.4")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def adsense(options: Options): Adsense = ^.asInstanceOf[js.Dynamic].applyDynamic("adsense")(options.asInstanceOf[js.Any]).asInstanceOf[Adsense]
+  inline def adsense(options: Options): Adsense = ^.asInstanceOf[js.Dynamic].applyDynamic("adsense")(options.asInstanceOf[js.Any]).asInstanceOf[Adsense]
   
-  @scala.inline
-  def adsense_v14(version: v1Dot4): Adsense = ^.asInstanceOf[js.Dynamic].applyDynamic("adsense")(version.asInstanceOf[js.Any]).asInstanceOf[Adsense]
+  inline def adsense_v14(version: v1Dot4): Adsense = ^.asInstanceOf[js.Dynamic].applyDynamic("adsense")(version.asInstanceOf[js.Any]).asInstanceOf[Adsense]
   
   object auth extends Shortcut {
     
@@ -83,8 +80,7 @@ object adsenseMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

@@ -14,6 +14,6 @@ object personaPresenceBaseMod {
     extends Component[IPersonaPresenceProps, js.Object, js.Any] {
     def this(props: IPersonaPresenceProps) = this()
     
-    var _onRenderIcon: js.Any = js.native
+    /* private */ var _onRenderIcon: js.Any = js.native
   }
 }

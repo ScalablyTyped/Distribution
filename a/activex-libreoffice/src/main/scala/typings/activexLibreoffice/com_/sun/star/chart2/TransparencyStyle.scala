@@ -16,12 +16,10 @@ trait TransparencyStyle extends StObject
 object TransparencyStyle {
   
   /** The property TransparencyGradient is evaluated, Transparency is ignored */
-  @scala.inline
-  def GRADIENT: `2` = 2.asInstanceOf[`2`]
+  inline def GRADIENT: `2` = 2.asInstanceOf[`2`]
   
   /** The property Transparency is evaluated, TransparencyGradient is ignored */
-  @scala.inline
-  def LINEAR: `1` = 1.asInstanceOf[`1`]
+  inline def LINEAR: `1` = 1.asInstanceOf[`1`]
   
   /**
     * Default, no pies are exploded.
@@ -30,6 +28,5 @@ object TransparencyStyle {
     *
     * no transparency attribute is evaluated
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
 }

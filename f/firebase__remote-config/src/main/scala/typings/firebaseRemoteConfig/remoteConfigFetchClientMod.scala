@@ -56,26 +56,20 @@ object remoteConfigFetchClientMod {
   }
   object FetchRequest {
     
-    @scala.inline
-    def apply(cacheMaxAgeMillis: Double, signal: RemoteConfigAbortSignal): FetchRequest = {
+    inline def apply(cacheMaxAgeMillis: Double, signal: RemoteConfigAbortSignal): FetchRequest = {
       val __obj = js.Dynamic.literal(cacheMaxAgeMillis = cacheMaxAgeMillis.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchRequest]
     }
     
-    @scala.inline
-    implicit class FetchRequestMutableBuilder[Self <: FetchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: FetchRequest](x: Self) {
       
-      @scala.inline
-      def setCacheMaxAgeMillis(value: Double): Self = StObject.set(x, "cacheMaxAgeMillis", value.asInstanceOf[js.Any])
+      inline def setCacheMaxAgeMillis(value: Double): Self = StObject.set(x, "cacheMaxAgeMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
+      inline def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETagUndefined: Self = StObject.set(x, "eTag", js.undefined)
+      inline def setETagUndefined: Self = StObject.set(x, "eTag", js.undefined)
       
-      @scala.inline
-      def setSignal(value: RemoteConfigAbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: RemoteConfigAbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,29 +103,22 @@ object remoteConfigFetchClientMod {
   }
   object FetchResponse {
     
-    @scala.inline
-    def apply(status: Double): FetchResponse = {
+    inline def apply(status: Double): FetchResponse = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchResponse]
     }
     
-    @scala.inline
-    implicit class FetchResponseMutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
+    extension [Self <: FetchResponse](x: Self) {
       
-      @scala.inline
-      def setConfig(value: FirebaseRemoteConfigObject): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: FirebaseRemoteConfigObject): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
+      inline def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETagUndefined: Self = StObject.set(x, "eTag", js.undefined)
+      inline def setETagUndefined: Self = StObject.set(x, "eTag", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,17 +133,14 @@ object remoteConfigFetchClientMod {
   }
   object RemoteConfigFetchClient {
     
-    @scala.inline
-    def apply(fetch: FetchRequest => js.Promise[FetchResponse]): RemoteConfigFetchClient = {
+    inline def apply(fetch: FetchRequest => js.Promise[FetchResponse]): RemoteConfigFetchClient = {
       val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
       __obj.asInstanceOf[RemoteConfigFetchClient]
     }
     
-    @scala.inline
-    implicit class RemoteConfigFetchClientMutableBuilder[Self <: RemoteConfigFetchClient] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteConfigFetchClient](x: Self) {
       
-      @scala.inline
-      def setFetch(value: FetchRequest => js.Promise[FetchResponse]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+      inline def setFetch(value: FetchRequest => js.Promise[FetchResponse]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     }
   }
 }

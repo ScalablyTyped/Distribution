@@ -36,8 +36,7 @@ object singleSelectorMod extends Shortcut {
   }
   object SelectorProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessibilityIndex: Double,
       activeValue: String,
       id: String,
@@ -58,20 +57,15 @@ object singleSelectorMod extends Shortcut {
       __obj.asInstanceOf[SelectorProps]
     }
     
-    @scala.inline
-    implicit class SelectorPropsMutableBuilder[Self <: SelectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorProps](x: Self) {
       
-      @scala.inline
-      def setActiveValue(value: String): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
+      inline def setActiveValue(value: String): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackfill(value: Boolean): Self = StObject.set(x, "backfill", value.asInstanceOf[js.Any])
+      inline def setBackfill(value: Boolean): Self = StObject.set(x, "backfill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackfillUndefined: Self = StObject.set(x, "backfill", js.undefined)
+      inline def setBackfillUndefined: Self = StObject.set(x, "backfill", js.undefined)
       
-      @scala.inline
-      def setInputElement(value: ReactElement): Self = StObject.set(x, "inputElement", value.asInstanceOf[js.Any])
+      inline def setInputElement(value: ReactElement): Self = StObject.set(x, "inputElement", value.asInstanceOf[js.Any])
     }
   }
   

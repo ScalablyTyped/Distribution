@@ -23,22 +23,17 @@ trait WorkItemLink extends StObject {
 }
 object WorkItemLink {
   
-  @scala.inline
-  def apply(rel: String, source: WorkItemReference, target: WorkItemReference): WorkItemLink = {
+  inline def apply(rel: String, source: WorkItemReference, target: WorkItemReference): WorkItemLink = {
     val __obj = js.Dynamic.literal(rel = rel.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemLink]
   }
   
-  @scala.inline
-  implicit class WorkItemLinkMutableBuilder[Self <: WorkItemLink] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemLink](x: Self) {
     
-    @scala.inline
-    def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: WorkItemReference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: WorkItemReference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: WorkItemReference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: WorkItemReference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

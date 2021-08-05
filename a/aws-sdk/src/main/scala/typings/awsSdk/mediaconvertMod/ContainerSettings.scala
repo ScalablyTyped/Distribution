@@ -53,67 +53,47 @@ trait ContainerSettings extends StObject {
 }
 object ContainerSettings {
   
-  @scala.inline
-  def apply(): ContainerSettings = {
+  inline def apply(): ContainerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerSettings]
   }
   
-  @scala.inline
-  implicit class ContainerSettingsMutableBuilder[Self <: ContainerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerSettings](x: Self) {
     
-    @scala.inline
-    def setCmfcSettings(value: CmfcSettings): Self = StObject.set(x, "CmfcSettings", value.asInstanceOf[js.Any])
+    inline def setCmfcSettings(value: CmfcSettings): Self = StObject.set(x, "CmfcSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmfcSettingsUndefined: Self = StObject.set(x, "CmfcSettings", js.undefined)
+    inline def setCmfcSettingsUndefined: Self = StObject.set(x, "CmfcSettings", js.undefined)
     
-    @scala.inline
-    def setContainer(value: ContainerType): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ContainerType): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
     
-    @scala.inline
-    def setF4vSettings(value: F4vSettings): Self = StObject.set(x, "F4vSettings", value.asInstanceOf[js.Any])
+    inline def setF4vSettings(value: F4vSettings): Self = StObject.set(x, "F4vSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF4vSettingsUndefined: Self = StObject.set(x, "F4vSettings", js.undefined)
+    inline def setF4vSettingsUndefined: Self = StObject.set(x, "F4vSettings", js.undefined)
     
-    @scala.inline
-    def setM2tsSettings(value: M2tsSettings): Self = StObject.set(x, "M2tsSettings", value.asInstanceOf[js.Any])
+    inline def setM2tsSettings(value: M2tsSettings): Self = StObject.set(x, "M2tsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM2tsSettingsUndefined: Self = StObject.set(x, "M2tsSettings", js.undefined)
+    inline def setM2tsSettingsUndefined: Self = StObject.set(x, "M2tsSettings", js.undefined)
     
-    @scala.inline
-    def setM3u8Settings(value: M3u8Settings): Self = StObject.set(x, "M3u8Settings", value.asInstanceOf[js.Any])
+    inline def setM3u8Settings(value: M3u8Settings): Self = StObject.set(x, "M3u8Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM3u8SettingsUndefined: Self = StObject.set(x, "M3u8Settings", js.undefined)
+    inline def setM3u8SettingsUndefined: Self = StObject.set(x, "M3u8Settings", js.undefined)
     
-    @scala.inline
-    def setMovSettings(value: MovSettings): Self = StObject.set(x, "MovSettings", value.asInstanceOf[js.Any])
+    inline def setMovSettings(value: MovSettings): Self = StObject.set(x, "MovSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovSettingsUndefined: Self = StObject.set(x, "MovSettings", js.undefined)
+    inline def setMovSettingsUndefined: Self = StObject.set(x, "MovSettings", js.undefined)
     
-    @scala.inline
-    def setMp4Settings(value: Mp4Settings): Self = StObject.set(x, "Mp4Settings", value.asInstanceOf[js.Any])
+    inline def setMp4Settings(value: Mp4Settings): Self = StObject.set(x, "Mp4Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMp4SettingsUndefined: Self = StObject.set(x, "Mp4Settings", js.undefined)
+    inline def setMp4SettingsUndefined: Self = StObject.set(x, "Mp4Settings", js.undefined)
     
-    @scala.inline
-    def setMpdSettings(value: MpdSettings): Self = StObject.set(x, "MpdSettings", value.asInstanceOf[js.Any])
+    inline def setMpdSettings(value: MpdSettings): Self = StObject.set(x, "MpdSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpdSettingsUndefined: Self = StObject.set(x, "MpdSettings", js.undefined)
+    inline def setMpdSettingsUndefined: Self = StObject.set(x, "MpdSettings", js.undefined)
     
-    @scala.inline
-    def setMxfSettings(value: MxfSettings): Self = StObject.set(x, "MxfSettings", value.asInstanceOf[js.Any])
+    inline def setMxfSettings(value: MxfSettings): Self = StObject.set(x, "MxfSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMxfSettingsUndefined: Self = StObject.set(x, "MxfSettings", js.undefined)
+    inline def setMxfSettingsUndefined: Self = StObject.set(x, "MxfSettings", js.undefined)
   }
 }

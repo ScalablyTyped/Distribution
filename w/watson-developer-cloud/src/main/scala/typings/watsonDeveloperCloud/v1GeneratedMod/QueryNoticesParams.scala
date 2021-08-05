@@ -70,148 +70,101 @@ trait QueryNoticesParams extends StObject {
 }
 object QueryNoticesParams {
   
-  @scala.inline
-  def apply(collection_id: String, environment_id: String): QueryNoticesParams = {
+  inline def apply(collection_id: String, environment_id: String): QueryNoticesParams = {
     val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryNoticesParams]
   }
   
-  @scala.inline
-  implicit class QueryNoticesParamsMutableBuilder[Self <: QueryNoticesParams] (val x: Self) extends AnyVal {
+  extension [Self <: QueryNoticesParams](x: Self) {
     
-    @scala.inline
-    def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
+    inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
+    inline def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setDeduplicate_field(value: String): Self = StObject.set(x, "deduplicate_field", value.asInstanceOf[js.Any])
+    inline def setDeduplicate_field(value: String): Self = StObject.set(x, "deduplicate_field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeduplicate_fieldUndefined: Self = StObject.set(x, "deduplicate_field", js.undefined)
+    inline def setDeduplicate_fieldUndefined: Self = StObject.set(x, "deduplicate_field", js.undefined)
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setNatural_language_query(value: String): Self = StObject.set(x, "natural_language_query", value.asInstanceOf[js.Any])
+    inline def setNatural_language_query(value: String): Self = StObject.set(x, "natural_language_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatural_language_queryUndefined: Self = StObject.set(x, "natural_language_query", js.undefined)
+    inline def setNatural_language_queryUndefined: Self = StObject.set(x, "natural_language_query", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPassages(value: Boolean): Self = StObject.set(x, "passages", value.asInstanceOf[js.Any])
+    inline def setPassages(value: Boolean): Self = StObject.set(x, "passages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassagesUndefined: Self = StObject.set(x, "passages", js.undefined)
+    inline def setPassagesUndefined: Self = StObject.set(x, "passages", js.undefined)
     
-    @scala.inline
-    def setPassages_characters(value: Double): Self = StObject.set(x, "passages_characters", value.asInstanceOf[js.Any])
+    inline def setPassages_characters(value: Double): Self = StObject.set(x, "passages_characters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassages_charactersUndefined: Self = StObject.set(x, "passages_characters", js.undefined)
+    inline def setPassages_charactersUndefined: Self = StObject.set(x, "passages_characters", js.undefined)
     
-    @scala.inline
-    def setPassages_count(value: Double): Self = StObject.set(x, "passages_count", value.asInstanceOf[js.Any])
+    inline def setPassages_count(value: Double): Self = StObject.set(x, "passages_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassages_countUndefined: Self = StObject.set(x, "passages_count", js.undefined)
+    inline def setPassages_countUndefined: Self = StObject.set(x, "passages_count", js.undefined)
     
-    @scala.inline
-    def setPassages_fields(value: js.Array[String]): Self = StObject.set(x, "passages_fields", value.asInstanceOf[js.Any])
+    inline def setPassages_fields(value: js.Array[String]): Self = StObject.set(x, "passages_fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassages_fieldsUndefined: Self = StObject.set(x, "passages_fields", js.undefined)
+    inline def setPassages_fieldsUndefined: Self = StObject.set(x, "passages_fields", js.undefined)
     
-    @scala.inline
-    def setPassages_fieldsVarargs(value: String*): Self = StObject.set(x, "passages_fields", js.Array(value :_*))
+    inline def setPassages_fieldsVarargs(value: String*): Self = StObject.set(x, "passages_fields", js.Array(value :_*))
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReturn_fields(value: js.Array[String]): Self = StObject.set(x, "return_fields", value.asInstanceOf[js.Any])
+    inline def setReturn_fields(value: js.Array[String]): Self = StObject.set(x, "return_fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_fieldsUndefined: Self = StObject.set(x, "return_fields", js.undefined)
+    inline def setReturn_fieldsUndefined: Self = StObject.set(x, "return_fields", js.undefined)
     
-    @scala.inline
-    def setReturn_fieldsVarargs(value: String*): Self = StObject.set(x, "return_fields", js.Array(value :_*))
+    inline def setReturn_fieldsVarargs(value: String*): Self = StObject.set(x, "return_fields", js.Array(value :_*))
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setSimilar(value: Boolean): Self = StObject.set(x, "similar", value.asInstanceOf[js.Any])
+    inline def setSimilar(value: Boolean): Self = StObject.set(x, "similar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimilarUndefined: Self = StObject.set(x, "similar", js.undefined)
+    inline def setSimilarUndefined: Self = StObject.set(x, "similar", js.undefined)
     
-    @scala.inline
-    def setSimilar_document_ids(value: js.Array[String]): Self = StObject.set(x, "similar_document_ids", value.asInstanceOf[js.Any])
+    inline def setSimilar_document_ids(value: js.Array[String]): Self = StObject.set(x, "similar_document_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimilar_document_idsUndefined: Self = StObject.set(x, "similar_document_ids", js.undefined)
+    inline def setSimilar_document_idsUndefined: Self = StObject.set(x, "similar_document_ids", js.undefined)
     
-    @scala.inline
-    def setSimilar_document_idsVarargs(value: String*): Self = StObject.set(x, "similar_document_ids", js.Array(value :_*))
+    inline def setSimilar_document_idsVarargs(value: String*): Self = StObject.set(x, "similar_document_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setSimilar_fields(value: js.Array[String]): Self = StObject.set(x, "similar_fields", value.asInstanceOf[js.Any])
+    inline def setSimilar_fields(value: js.Array[String]): Self = StObject.set(x, "similar_fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimilar_fieldsUndefined: Self = StObject.set(x, "similar_fields", js.undefined)
+    inline def setSimilar_fieldsUndefined: Self = StObject.set(x, "similar_fields", js.undefined)
     
-    @scala.inline
-    def setSimilar_fieldsVarargs(value: String*): Self = StObject.set(x, "similar_fields", js.Array(value :_*))
+    inline def setSimilar_fieldsVarargs(value: String*): Self = StObject.set(x, "similar_fields", js.Array(value :_*))
     
-    @scala.inline
-    def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
   }
 }

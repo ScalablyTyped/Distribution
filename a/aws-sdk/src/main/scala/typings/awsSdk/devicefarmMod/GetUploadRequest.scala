@@ -13,16 +13,13 @@ trait GetUploadRequest extends StObject {
 }
 object GetUploadRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): GetUploadRequest = {
+  inline def apply(arn: AmazonResourceName): GetUploadRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUploadRequest]
   }
   
-  @scala.inline
-  implicit class GetUploadRequestMutableBuilder[Self <: GetUploadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUploadRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

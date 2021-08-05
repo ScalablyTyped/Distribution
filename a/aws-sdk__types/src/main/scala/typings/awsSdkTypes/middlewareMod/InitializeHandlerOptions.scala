@@ -14,19 +14,15 @@ trait InitializeHandlerOptions
 }
 object InitializeHandlerOptions {
   
-  @scala.inline
-  def apply(): InitializeHandlerOptions = {
+  inline def apply(): InitializeHandlerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitializeHandlerOptions]
   }
   
-  @scala.inline
-  implicit class InitializeHandlerOptionsMutableBuilder[Self <: InitializeHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitializeHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setStep(value: initialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: initialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

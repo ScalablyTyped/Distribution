@@ -18,8 +18,7 @@ trait Tuning extends StObject {
 }
 object Tuning {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNoteForFret: (String, String) => String,
     getValueForFret: (String, String) => Double,
     getValueForString: String => Double,
@@ -30,22 +29,16 @@ object Tuning {
     __obj.asInstanceOf[Tuning]
   }
   
-  @scala.inline
-  implicit class TuningMutableBuilder[Self <: Tuning] (val x: Self) extends AnyVal {
+  extension [Self <: Tuning](x: Self) {
     
-    @scala.inline
-    def setGetNoteForFret(value: (String, String) => String): Self = StObject.set(x, "getNoteForFret", js.Any.fromFunction2(value))
+    inline def setGetNoteForFret(value: (String, String) => String): Self = StObject.set(x, "getNoteForFret", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetValueForFret(value: (String, String) => Double): Self = StObject.set(x, "getValueForFret", js.Any.fromFunction2(value))
+    inline def setGetValueForFret(value: (String, String) => Double): Self = StObject.set(x, "getValueForFret", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetValueForString(value: String => Double): Self = StObject.set(x, "getValueForString", js.Any.fromFunction1(value))
+    inline def setGetValueForString(value: String => Double): Self = StObject.set(x, "getValueForString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNoteToInteger(value: String => Double): Self = StObject.set(x, "noteToInteger", js.Any.fromFunction1(value))
+    inline def setNoteToInteger(value: String => Double): Self = StObject.set(x, "noteToInteger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTuning(value: String => Unit): Self = StObject.set(x, "setTuning", js.Any.fromFunction1(value))
+    inline def setSetTuning(value: String => Unit): Self = StObject.set(x, "setTuning", js.Any.fromFunction1(value))
   }
 }

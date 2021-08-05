@@ -14,25 +14,19 @@ trait ImageOptions extends StObject {
 }
 object ImageOptions {
   
-  @scala.inline
-  def apply(): ImageOptions = {
+  inline def apply(): ImageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageOptions]
   }
   
-  @scala.inline
-  implicit class ImageOptionsMutableBuilder[Self <: ImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageOptions](x: Self) {
     
-    @scala.inline
-    def setDataURI(value: Boolean): Self = StObject.set(x, "dataURI", value.asInstanceOf[js.Any])
+    inline def setDataURI(value: Boolean): Self = StObject.set(x, "dataURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataURIUndefined: Self = StObject.set(x, "dataURI", js.undefined)
+    inline def setDataURIUndefined: Self = StObject.set(x, "dataURI", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

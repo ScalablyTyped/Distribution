@@ -10,16 +10,13 @@ trait IHostNameStatics extends StObject {
 }
 object IHostNameStatics {
   
-  @scala.inline
-  def apply(compare: (String, String) => Double): IHostNameStatics = {
+  inline def apply(compare: (String, String) => Double): IHostNameStatics = {
     val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare))
     __obj.asInstanceOf[IHostNameStatics]
   }
   
-  @scala.inline
-  implicit class IHostNameStaticsMutableBuilder[Self <: IHostNameStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IHostNameStatics](x: Self) {
     
-    @scala.inline
-    def setCompare(value: (String, String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (String, String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
   }
 }

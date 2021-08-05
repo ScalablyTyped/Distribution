@@ -15,13 +15,13 @@ object mockTracerMockTracerMod {
   @js.native
   class MockTracer () extends Tracer {
     
-    var _allocSpan: js.Any = js.native
+    /* private */ var _allocSpan: js.Any = js.native
     
     /* protected */ def _extract(format: js.Any, carrier: js.Any): scala.Nothing = js.native
     
     /* protected */ def _inject(span: typings.opentracing.mockContextMod.default, format: js.Any, carrier: js.Any): scala.Nothing = js.native
     
-    var _spans: js.Any = js.native
+    /* private */ var _spans: js.Any = js.native
     
     /**
       * Discard any buffered data.

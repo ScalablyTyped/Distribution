@@ -15,26 +15,21 @@ trait Callback extends StObject {
 }
 object Callback {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callback: (/* currentStep */ typings.ionicCore.ionicCoreNumbers.`0` | typings.ionicCore.ionicCoreNumbers.`1`, /* animation */ Animation) => Unit
   ): Callback = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback))
     __obj.asInstanceOf[Callback]
   }
   
-  @scala.inline
-  implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+  extension [Self <: Callback](x: Self) {
     
-    @scala.inline
-    def setCallback(
+    inline def setCallback(
       value: (/* currentStep */ typings.ionicCore.ionicCoreNumbers.`0` | typings.ionicCore.ionicCoreNumbers.`1`, /* animation */ Animation) => Unit
     ): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOpts(value: AnimationCallbackOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: AnimationCallbackOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+    inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
   }
 }

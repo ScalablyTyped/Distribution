@@ -20,17 +20,14 @@ object typesBatchEntryIdsNotDistinctMod {
   }
   object BatchEntryIdsNotDistinct {
     
-    @scala.inline
-    def apply(): BatchEntryIdsNotDistinct = {
+    inline def apply(): BatchEntryIdsNotDistinct = {
       val __obj = js.Dynamic.literal(name = "BatchEntryIdsNotDistinct")
       __obj.asInstanceOf[BatchEntryIdsNotDistinct]
     }
     
-    @scala.inline
-    implicit class BatchEntryIdsNotDistinctMutableBuilder[Self <: BatchEntryIdsNotDistinct] (val x: Self) extends AnyVal {
+    extension [Self <: BatchEntryIdsNotDistinct](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchEntryIdsNotDistinct): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchEntryIdsNotDistinct): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

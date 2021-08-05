@@ -43,58 +43,41 @@ trait DescribeAuditMitigationActionsTaskResponse extends StObject {
 }
 object DescribeAuditMitigationActionsTaskResponse {
   
-  @scala.inline
-  def apply(): DescribeAuditMitigationActionsTaskResponse = {
+  inline def apply(): DescribeAuditMitigationActionsTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAuditMitigationActionsTaskResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAuditMitigationActionsTaskResponseMutableBuilder[Self <: DescribeAuditMitigationActionsTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditMitigationActionsTaskResponse](x: Self) {
     
-    @scala.inline
-    def setActionsDefinition(value: MitigationActionList): Self = StObject.set(x, "actionsDefinition", value.asInstanceOf[js.Any])
+    inline def setActionsDefinition(value: MitigationActionList): Self = StObject.set(x, "actionsDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsDefinitionUndefined: Self = StObject.set(x, "actionsDefinition", js.undefined)
+    inline def setActionsDefinitionUndefined: Self = StObject.set(x, "actionsDefinition", js.undefined)
     
-    @scala.inline
-    def setActionsDefinitionVarargs(value: MitigationAction*): Self = StObject.set(x, "actionsDefinition", js.Array(value :_*))
+    inline def setActionsDefinitionVarargs(value: MitigationAction*): Self = StObject.set(x, "actionsDefinition", js.Array(value :_*))
     
-    @scala.inline
-    def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = StObject.set(x, "auditCheckToActionsMapping", value.asInstanceOf[js.Any])
+    inline def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = StObject.set(x, "auditCheckToActionsMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditCheckToActionsMappingUndefined: Self = StObject.set(x, "auditCheckToActionsMapping", js.undefined)
+    inline def setAuditCheckToActionsMappingUndefined: Self = StObject.set(x, "auditCheckToActionsMapping", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTarget(value: AuditMitigationActionsTaskTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: AuditMitigationActionsTaskTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTaskStatistics(value: AuditMitigationActionsTaskStatistics): Self = StObject.set(x, "taskStatistics", value.asInstanceOf[js.Any])
+    inline def setTaskStatistics(value: AuditMitigationActionsTaskStatistics): Self = StObject.set(x, "taskStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatisticsUndefined: Self = StObject.set(x, "taskStatistics", js.undefined)
+    inline def setTaskStatisticsUndefined: Self = StObject.set(x, "taskStatistics", js.undefined)
     
-    @scala.inline
-    def setTaskStatus(value: AuditMitigationActionsTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
+    inline def setTaskStatus(value: AuditMitigationActionsTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
+    inline def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
   }
 }

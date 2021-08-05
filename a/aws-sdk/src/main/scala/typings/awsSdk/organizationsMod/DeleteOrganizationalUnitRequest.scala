@@ -13,16 +13,13 @@ trait DeleteOrganizationalUnitRequest extends StObject {
 }
 object DeleteOrganizationalUnitRequest {
   
-  @scala.inline
-  def apply(OrganizationalUnitId: OrganizationalUnitId): DeleteOrganizationalUnitRequest = {
+  inline def apply(OrganizationalUnitId: OrganizationalUnitId): DeleteOrganizationalUnitRequest = {
     val __obj = js.Dynamic.literal(OrganizationalUnitId = OrganizationalUnitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOrganizationalUnitRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOrganizationalUnitRequestMutableBuilder[Self <: DeleteOrganizationalUnitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOrganizationalUnitRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationalUnitId(value: OrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitId(value: OrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
   }
 }

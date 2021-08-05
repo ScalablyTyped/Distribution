@@ -35,55 +35,39 @@ trait AuthorizationResponseDetails extends StObject {
 }
 object AuthorizationResponseDetails {
   
-  @scala.inline
-  def apply(email: String, firstName: String, lastName: String, payerId: String): AuthorizationResponseDetails = {
+  inline def apply(email: String, firstName: String, lastName: String, payerId: String): AuthorizationResponseDetails = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], payerId = payerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationResponseDetails]
   }
   
-  @scala.inline
-  implicit class AuthorizationResponseDetailsMutableBuilder[Self <: AuthorizationResponseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationResponseDetails](x: Self) {
     
-    @scala.inline
-    def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setCreditFinancingOffered(value: CreditFinancingOptions): Self = StObject.set(x, "creditFinancingOffered", value.asInstanceOf[js.Any])
+    inline def setCreditFinancingOffered(value: CreditFinancingOptions): Self = StObject.set(x, "creditFinancingOffered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditFinancingOfferedUndefined: Self = StObject.set(x, "creditFinancingOffered", js.undefined)
+    inline def setCreditFinancingOfferedUndefined: Self = StObject.set(x, "creditFinancingOffered", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
+    inline def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+    inline def setShippingAddress(value: Address): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
+    inline def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
   }
 }

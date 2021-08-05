@@ -21,14 +21,11 @@ trait VerificationMode extends StObject
 object VerificationMode {
   
   /** Always. */
-  @scala.inline
-  def ALWAYS: `0` = 0.asInstanceOf[`0`]
+  inline def ALWAYS: `0` = 0.asInstanceOf[`0`]
   
   /** Never. */
-  @scala.inline
-  def NEVER: `2` = 2.asInstanceOf[`2`]
+  inline def NEVER: `2` = 2.asInstanceOf[`2`]
   
   /** Once. */
-  @scala.inline
-  def ONCE: `1` = 1.asInstanceOf[`1`]
+  inline def ONCE: `1` = 1.asInstanceOf[`1`]
 }

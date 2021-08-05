@@ -125,182 +125,124 @@ object pageContainerMod extends Shortcut {
   }
   object PageContainerProps {
     
-    @scala.inline
-    def apply(): PageContainerProps = {
+    inline def apply(): PageContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageContainerProps]
     }
     
-    @scala.inline
-    implicit class PageContainerPropsMutableBuilder[Self <: PageContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PageContainerProps](x: Self) {
       
-      @scala.inline
-      def setAffixProps(value: AffixProps): Self = StObject.set(x, "affixProps", value.asInstanceOf[js.Any])
+      inline def setAffixProps(value: AffixProps): Self = StObject.set(x, "affixProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAffixPropsUndefined: Self = StObject.set(x, "affixProps", js.undefined)
+      inline def setAffixPropsUndefined: Self = StObject.set(x, "affixProps", js.undefined)
       
-      @scala.inline
-      def setAvatar(value: AvatarProps): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: AvatarProps): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setBackIcon(value: ReactNode): Self = StObject.set(x, "backIcon", value.asInstanceOf[js.Any])
+      inline def setBackIcon(value: ReactNode): Self = StObject.set(x, "backIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackIconUndefined: Self = StObject.set(x, "backIcon", js.undefined)
+      inline def setBackIconUndefined: Self = StObject.set(x, "backIcon", js.undefined)
       
-      @scala.inline
-      def setBreadcrumb(value: BreadcrumbProps): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
+      inline def setBreadcrumb(value: BreadcrumbProps): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreadcrumbUndefined: Self = StObject.set(x, "breadcrumb", js.undefined)
+      inline def setBreadcrumbUndefined: Self = StObject.set(x, "breadcrumb", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraContent(value: ReactNode): Self = StObject.set(x, "extraContent", value.asInstanceOf[js.Any])
+      inline def setExtraContent(value: ReactNode): Self = StObject.set(x, "extraContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraContentUndefined: Self = StObject.set(x, "extraContent", js.undefined)
+      inline def setExtraContentUndefined: Self = StObject.set(x, "extraContent", js.undefined)
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
+      inline def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixHeaderUndefined: Self = StObject.set(x, "fixHeader", js.undefined)
+      inline def setFixHeaderUndefined: Self = StObject.set(x, "fixHeader", js.undefined)
       
-      @scala.inline
-      def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+      inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      @scala.inline
-      def setFooter(value: js.Array[ReactNode]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: js.Array[ReactNode]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setFooterVarargs(value: ReactNode*): Self = StObject.set(x, "footer", js.Array(value :_*))
+      inline def setFooterVarargs(value: ReactNode*): Self = StObject.set(x, "footer", js.Array(value :_*))
       
-      @scala.inline
-      def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+      inline def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
+      inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
       
-      @scala.inline
-      def setHeader(value: PageHeaderPropschildrenRe): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: PageHeaderPropschildrenRe): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setOnBack(value: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
+      inline def setOnBack(value: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
+      inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
       
-      @scala.inline
-      def setOnTabChange(value: /* activeKey */ String => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
+      inline def setOnTabChange(value: /* activeKey */ String => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
+      inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      @scala.inline
-      def setPageHeaderRender(value: WithFalse[js.Function1[PageContainerProps, ReactNode]]): Self = StObject.set(x, "pageHeaderRender", value.asInstanceOf[js.Any])
+      inline def setPageHeaderRender(value: WithFalse[js.Function1[PageContainerProps, ReactNode]]): Self = StObject.set(x, "pageHeaderRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageHeaderRenderFunction1(value: PageContainerProps => ReactNode): Self = StObject.set(x, "pageHeaderRender", js.Any.fromFunction1(value))
+      inline def setPageHeaderRenderFunction1(value: PageContainerProps => ReactNode): Self = StObject.set(x, "pageHeaderRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageHeaderRenderUndefined: Self = StObject.set(x, "pageHeaderRender", js.undefined)
+      inline def setPageHeaderRenderUndefined: Self = StObject.set(x, "pageHeaderRender", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSubTitle(value: ReactNode): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+      inline def setSubTitle(value: ReactNode): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
+      inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
       
-      @scala.inline
-      def setTabActiveKey(value: String): Self = StObject.set(x, "tabActiveKey", value.asInstanceOf[js.Any])
+      inline def setTabActiveKey(value: String): Self = StObject.set(x, "tabActiveKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabActiveKeyUndefined: Self = StObject.set(x, "tabActiveKey", js.undefined)
+      inline def setTabActiveKeyUndefined: Self = StObject.set(x, "tabActiveKey", js.undefined)
       
-      @scala.inline
-      def setTabBarExtraContent(value: TabBarExtraContent): Self = StObject.set(x, "tabBarExtraContent", value.asInstanceOf[js.Any])
+      inline def setTabBarExtraContent(value: TabBarExtraContent): Self = StObject.set(x, "tabBarExtraContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarExtraContentUndefined: Self = StObject.set(x, "tabBarExtraContent", js.undefined)
+      inline def setTabBarExtraContentUndefined: Self = StObject.set(x, "tabBarExtraContent", js.undefined)
       
-      @scala.inline
-      def setTabList(value: js.Array[TabPanePropskeyReactTextu]): Self = StObject.set(x, "tabList", value.asInstanceOf[js.Any])
+      inline def setTabList(value: js.Array[TabPanePropskeyReactTextu]): Self = StObject.set(x, "tabList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
+      inline def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
       
-      @scala.inline
-      def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value :_*))
+      inline def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value :_*))
       
-      @scala.inline
-      def setTabProps(value: TabsProps): Self = StObject.set(x, "tabProps", value.asInstanceOf[js.Any])
+      inline def setTabProps(value: TabsProps): Self = StObject.set(x, "tabProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabPropsUndefined: Self = StObject.set(x, "tabProps", js.undefined)
+      inline def setTabPropsUndefined: Self = StObject.set(x, "tabProps", js.undefined)
       
-      @scala.inline
-      def setTags(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: ReactElement*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: ReactElement*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: ReactNode | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -344,59 +286,42 @@ object pageContainerMod extends Shortcut {
   }
   object PageHeaderTabConfig {
     
-    @scala.inline
-    def apply(): PageHeaderTabConfig = {
+    inline def apply(): PageHeaderTabConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageHeaderTabConfig]
     }
     
-    @scala.inline
-    implicit class PageHeaderTabConfigMutableBuilder[Self <: PageHeaderTabConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PageHeaderTabConfig](x: Self) {
       
-      @scala.inline
-      def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
+      inline def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixHeaderUndefined: Self = StObject.set(x, "fixHeader", js.undefined)
+      inline def setFixHeaderUndefined: Self = StObject.set(x, "fixHeader", js.undefined)
       
-      @scala.inline
-      def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+      inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      @scala.inline
-      def setOnTabChange(value: /* activeKey */ String => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
+      inline def setOnTabChange(value: /* activeKey */ String => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
+      inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      @scala.inline
-      def setTabActiveKey(value: String): Self = StObject.set(x, "tabActiveKey", value.asInstanceOf[js.Any])
+      inline def setTabActiveKey(value: String): Self = StObject.set(x, "tabActiveKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabActiveKeyUndefined: Self = StObject.set(x, "tabActiveKey", js.undefined)
+      inline def setTabActiveKeyUndefined: Self = StObject.set(x, "tabActiveKey", js.undefined)
       
-      @scala.inline
-      def setTabBarExtraContent(value: TabBarExtraContent): Self = StObject.set(x, "tabBarExtraContent", value.asInstanceOf[js.Any])
+      inline def setTabBarExtraContent(value: TabBarExtraContent): Self = StObject.set(x, "tabBarExtraContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarExtraContentUndefined: Self = StObject.set(x, "tabBarExtraContent", js.undefined)
+      inline def setTabBarExtraContentUndefined: Self = StObject.set(x, "tabBarExtraContent", js.undefined)
       
-      @scala.inline
-      def setTabList(value: js.Array[TabPanePropskeyReactTextu]): Self = StObject.set(x, "tabList", value.asInstanceOf[js.Any])
+      inline def setTabList(value: js.Array[TabPanePropskeyReactTextu]): Self = StObject.set(x, "tabList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
+      inline def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
       
-      @scala.inline
-      def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value :_*))
+      inline def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value :_*))
       
-      @scala.inline
-      def setTabProps(value: TabsProps): Self = StObject.set(x, "tabProps", value.asInstanceOf[js.Any])
+      inline def setTabProps(value: TabsProps): Self = StObject.set(x, "tabProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabPropsUndefined: Self = StObject.set(x, "tabProps", js.undefined)
+      inline def setTabPropsUndefined: Self = StObject.set(x, "tabProps", js.undefined)
     }
   }
   

@@ -13,19 +13,15 @@ trait PurchaseOfferingResult extends StObject {
 }
 object PurchaseOfferingResult {
   
-  @scala.inline
-  def apply(): PurchaseOfferingResult = {
+  inline def apply(): PurchaseOfferingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurchaseOfferingResult]
   }
   
-  @scala.inline
-  implicit class PurchaseOfferingResultMutableBuilder[Self <: PurchaseOfferingResult] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseOfferingResult](x: Self) {
     
-    @scala.inline
-    def setOfferingTransaction(value: OfferingTransaction): Self = StObject.set(x, "offeringTransaction", value.asInstanceOf[js.Any])
+    inline def setOfferingTransaction(value: OfferingTransaction): Self = StObject.set(x, "offeringTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTransactionUndefined: Self = StObject.set(x, "offeringTransaction", js.undefined)
+    inline def setOfferingTransactionUndefined: Self = StObject.set(x, "offeringTransaction", js.undefined)
   }
 }

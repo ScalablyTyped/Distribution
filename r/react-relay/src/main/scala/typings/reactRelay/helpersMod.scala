@@ -32,24 +32,19 @@ object helpersMod {
   }
   object KeyType {
     
-    @scala.inline
-    def apply[TData](Space$fragmentRefs: FragmentReference): KeyType[TData] = {
+    inline def apply[TData](Space$fragmentRefs: FragmentReference): KeyType[TData] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic(" $fragmentRefs")(Space$fragmentRefs.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyType[TData]]
     }
     
-    @scala.inline
-    implicit class KeyTypeMutableBuilder[Self <: KeyType[?], TData] (val x: Self & KeyType[TData]) extends AnyVal {
+    extension [Self <: KeyType[?], TData](x: Self & KeyType[TData]) {
       
-      @scala.inline
-      def setSpace$data(value: TData): Self = StObject.set(x, " $data", value.asInstanceOf[js.Any])
+      inline def setSpace$data(value: TData): Self = StObject.set(x, " $data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace$dataUndefined: Self = StObject.set(x, " $data", js.undefined)
+      inline def setSpace$dataUndefined: Self = StObject.set(x, " $data", js.undefined)
       
-      @scala.inline
-      def setSpace$fragmentRefs(value: FragmentReference): Self = StObject.set(x, " $fragmentRefs", value.asInstanceOf[js.Any])
+      inline def setSpace$fragmentRefs(value: FragmentReference): Self = StObject.set(x, " $fragmentRefs", value.asInstanceOf[js.Any])
     }
   }
   

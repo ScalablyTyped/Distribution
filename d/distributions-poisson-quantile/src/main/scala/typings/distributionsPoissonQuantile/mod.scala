@@ -25,46 +25,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(p: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def apply(p: js.Array[Double], options: Optionsdtypeundefined): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def apply(p: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def apply(p: js.Array[Double], options: Optionsdtypeundefined): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   /**
     * Evaluates the quantile function for a Poisson distribution.
     * @param p input value
     * @param options function options
     * @returns quantile function value(s)
     */
-  @scala.inline
-  def apply(p: Double): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
-  @scala.inline
-  def apply(p: Double, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
-  @scala.inline
-  def apply(p: Data): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypefloat32): Float32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypefloat64undefi): Float64Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypeint16): Int16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypeint32): Int32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypeint8): Int8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypeuint16): Uint16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypeuint32): Uint32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypeuint8): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  @scala.inline
-  def apply(p: Data, options: Optionsdtypeuint8clamped): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
-  @scala.inline
-  def apply(p: Data, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
-  @scala.inline
-  def apply(p: MatrixLike): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
-  @scala.inline
-  def apply(p: MatrixLike, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
+  inline def apply(p: Double): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
+  inline def apply(p: Double, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
+  inline def apply(p: Data): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
+  inline def apply(p: Data, options: Optionsdtypefloat32): Float32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def apply(p: Data, options: Optionsdtypefloat64undefi): Float64Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  inline def apply(p: Data, options: Optionsdtypeint16): Int16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  inline def apply(p: Data, options: Optionsdtypeint32): Int32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  inline def apply(p: Data, options: Optionsdtypeint8): Int8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  inline def apply(p: Data, options: Optionsdtypeuint16): Uint16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  inline def apply(p: Data, options: Optionsdtypeuint32): Uint32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  inline def apply(p: Data, options: Optionsdtypeuint8): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def apply(p: Data, options: Optionsdtypeuint8clamped): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  inline def apply(p: Data, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
+  inline def apply(p: MatrixLike): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
+  inline def apply(p: MatrixLike, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
   
   @JSImport("distributions-poisson-quantile", JSImport.Namespace)
   @js.native
@@ -86,32 +69,23 @@ object mod {
   trait DataType extends StObject
   object DataType {
     
-    @scala.inline
-    def float32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32 = "float32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32]
+    inline def float32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32 = "float32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float32]
     
-    @scala.inline
-    def float64: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64 = "float64".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64]
+    inline def float64: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64 = "float64".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.float64]
     
-    @scala.inline
-    def int16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16 = "int16".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16]
+    inline def int16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16 = "int16".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int16]
     
-    @scala.inline
-    def int32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32 = "int32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32]
+    inline def int32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32 = "int32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int32]
     
-    @scala.inline
-    def int8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8 = "int8".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8]
+    inline def int8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8 = "int8".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8]
     
-    @scala.inline
-    def uint16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16 = "uint16".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16]
+    inline def uint16: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16 = "uint16".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint16]
     
-    @scala.inline
-    def uint32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32 = "uint32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32]
+    inline def uint32: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32 = "uint32".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint32]
     
-    @scala.inline
-    def uint8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8 = "uint8".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8]
+    inline def uint8: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8 = "uint8".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8]
     
-    @scala.inline
-    def uint8_clamped: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped = "uint8_clamped".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped]
+    inline def uint8_clamped: typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped = "uint8_clamped".asInstanceOf[typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.uint8_clamped]
   }
   
   // derived from https://github.com/dstructs/matrix
@@ -182,8 +156,7 @@ object mod {
   }
   object MatrixLike {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Object,
       dtype: String,
       length: Double,
@@ -195,26 +168,19 @@ object mod {
       __obj.asInstanceOf[MatrixLike]
     }
     
-    @scala.inline
-    implicit class MatrixLikeMutableBuilder[Self <: MatrixLike] (val x: Self) extends AnyVal {
+    extension [Self <: MatrixLike](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtype(value: String): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: String): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: js.Object): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Object): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrides(value: js.Object): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+      inline def setStrides(value: js.Object): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     }
   }
   
@@ -240,50 +206,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
+      inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       
-      @scala.inline
-      def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+      inline def setLambda(value: Double): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+      inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+      inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
     }
   }
 }

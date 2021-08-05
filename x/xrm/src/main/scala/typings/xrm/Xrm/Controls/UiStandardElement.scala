@@ -20,8 +20,7 @@ trait UiStandardElement
 }
 object UiStandardElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getLabel: () => String,
     getVisible: () => Boolean,
     setLabel: String => Unit,
@@ -31,10 +30,8 @@ object UiStandardElement {
     __obj.asInstanceOf[UiStandardElement]
   }
   
-  @scala.inline
-  implicit class UiStandardElementMutableBuilder[Self <: UiStandardElement] (val x: Self) extends AnyVal {
+  extension [Self <: UiStandardElement](x: Self) {
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

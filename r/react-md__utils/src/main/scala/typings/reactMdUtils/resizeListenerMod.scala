@@ -11,8 +11,7 @@ object resizeListenerMod {
   
   object ResizeListener {
     
-    @scala.inline
-    def apply(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].apply(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
+    inline def apply(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].apply(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
     
     @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener")
     @js.native
@@ -27,20 +26,17 @@ object resizeListenerMod {
       @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener.propTypes.immediate")
       @js.native
       def immediate: js.Any = js.native
-      @scala.inline
-      def immediate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("immediate")(x.asInstanceOf[js.Any])
+      inline def immediate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("immediate")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener.propTypes.onResize")
       @js.native
       def onResize: js.Any = js.native
-      @scala.inline
-      def onResize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResize")(x.asInstanceOf[js.Any])
+      inline def onResize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResize")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener.propTypes.options")
       @js.native
       def options: js.Any = js.native
-      @scala.inline
-      def options_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+      inline def options_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -55,29 +51,22 @@ object resizeListenerMod {
   }
   object ResizeListenerProps {
     
-    @scala.inline
-    def apply(onResize: /* evt */ Event => Unit): ResizeListenerProps = {
+    inline def apply(onResize: /* evt */ Event => Unit): ResizeListenerProps = {
       val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
       __obj.asInstanceOf[ResizeListenerProps]
     }
     
-    @scala.inline
-    implicit class ResizeListenerPropsMutableBuilder[Self <: ResizeListenerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeListenerProps](x: Self) {
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+      inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* evt */ Event => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* evt */ Event => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: Boolean | AddEventListenerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Boolean | AddEventListenerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

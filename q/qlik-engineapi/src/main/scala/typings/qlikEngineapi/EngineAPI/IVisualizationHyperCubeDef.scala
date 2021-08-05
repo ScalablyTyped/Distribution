@@ -23,8 +23,7 @@ trait IVisualizationHyperCubeDef
 }
 object IVisualizationHyperCubeDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customErrorMessage: ICustomErrorMessage,
     qAlwaysFullyExpanded: Boolean,
     qDimensions: js.Array[IHyperCubeDimensionDef],
@@ -49,25 +48,18 @@ object IVisualizationHyperCubeDef {
     __obj.asInstanceOf[IVisualizationHyperCubeDef]
   }
   
-  @scala.inline
-  implicit class IVisualizationHyperCubeDefMutableBuilder[Self <: IVisualizationHyperCubeDef] (val x: Self) extends AnyVal {
+  extension [Self <: IVisualizationHyperCubeDef](x: Self) {
     
-    @scala.inline
-    def setCustomErrorMessage(value: ICustomErrorMessage): Self = StObject.set(x, "customErrorMessage", value.asInstanceOf[js.Any])
+    inline def setCustomErrorMessage(value: ICustomErrorMessage): Self = StObject.set(x, "customErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDimensions(value: js.Array[IHyperCubeDimensionDef]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
+    inline def setQDimensions(value: js.Array[IHyperCubeDimensionDef]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDimensionsVarargs(value: IHyperCubeDimensionDef*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
+    inline def setQDimensionsVarargs(value: IHyperCubeDimensionDef*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setQLayoutExclude(value: js.Any): Self = StObject.set(x, "qLayoutExclude", value.asInstanceOf[js.Any])
+    inline def setQLayoutExclude(value: js.Any): Self = StObject.set(x, "qLayoutExclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeasures(value: js.Array[IHyperCubeMeasureDef]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
+    inline def setQMeasures(value: js.Array[IHyperCubeMeasureDef]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeasuresVarargs(value: IHyperCubeMeasureDef*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
+    inline def setQMeasuresVarargs(value: IHyperCubeMeasureDef*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
   }
 }

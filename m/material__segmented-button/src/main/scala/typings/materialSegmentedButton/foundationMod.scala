@@ -61,7 +61,7 @@ object foundationMod {
       *
       * @param index Index of child segment to not unselect
       */
-    var unselectPrevSelected: js.Any = js.native
+    /* private */ var unselectPrevSelected: js.Any = js.native
     
     def unselectSegment(indexOrSegmentId: String): Unit = js.native
     /**

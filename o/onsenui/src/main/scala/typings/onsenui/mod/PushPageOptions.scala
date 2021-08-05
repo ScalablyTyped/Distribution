@@ -20,49 +20,35 @@ trait PushPageOptions extends StObject {
 }
 object PushPageOptions {
   
-  @scala.inline
-  def apply(): PushPageOptions = {
+  inline def apply(): PushPageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushPageOptions]
   }
   
-  @scala.inline
-  implicit class PushPageOptionsMutableBuilder[Self <: PushPageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PushPageOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOptions(value: js.Object): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
+    inline def setAnimationOptions(value: js.Object): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
+    inline def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHTML(value: String): Self = StObject.set(x, "pageHTML", value.asInstanceOf[js.Any])
+    inline def setPageHTML(value: String): Self = StObject.set(x, "pageHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHTMLUndefined: Self = StObject.set(x, "pageHTML", js.undefined)
+    inline def setPageHTMLUndefined: Self = StObject.set(x, "pageHTML", js.undefined)
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

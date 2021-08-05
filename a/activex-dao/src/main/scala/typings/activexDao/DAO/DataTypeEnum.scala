@@ -69,93 +69,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataTypeEnum extends StObject
 object DataTypeEnum {
   
-  @scala.inline
-  def dbAttachment: `101` = 101.asInstanceOf[`101`]
+  inline def dbAttachment: `101` = 101.asInstanceOf[`101`]
   
-  @scala.inline
-  def dbBigInt: `16` = 16.asInstanceOf[`16`]
+  inline def dbBigInt: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def dbBinary: `9` = 9.asInstanceOf[`9`]
+  inline def dbBinary: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def dbBoolean: `1` = 1.asInstanceOf[`1`]
+  inline def dbBoolean: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbByte: `2` = 2.asInstanceOf[`2`]
+  inline def dbByte: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def dbChar: `18` = 18.asInstanceOf[`18`]
+  inline def dbChar: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def dbComplexByte: `102` = 102.asInstanceOf[`102`]
+  inline def dbComplexByte: `102` = 102.asInstanceOf[`102`]
   
-  @scala.inline
-  def dbComplexDecimal: `108` = 108.asInstanceOf[`108`]
+  inline def dbComplexDecimal: `108` = 108.asInstanceOf[`108`]
   
-  @scala.inline
-  def dbComplexDouble: `106` = 106.asInstanceOf[`106`]
+  inline def dbComplexDouble: `106` = 106.asInstanceOf[`106`]
   
-  @scala.inline
-  def dbComplexGUID: `107` = 107.asInstanceOf[`107`]
+  inline def dbComplexGUID: `107` = 107.asInstanceOf[`107`]
   
-  @scala.inline
-  def dbComplexInteger: `103` = 103.asInstanceOf[`103`]
+  inline def dbComplexInteger: `103` = 103.asInstanceOf[`103`]
   
-  @scala.inline
-  def dbComplexLong: `104` = 104.asInstanceOf[`104`]
+  inline def dbComplexLong: `104` = 104.asInstanceOf[`104`]
   
-  @scala.inline
-  def dbComplexSingle: `105` = 105.asInstanceOf[`105`]
+  inline def dbComplexSingle: `105` = 105.asInstanceOf[`105`]
   
-  @scala.inline
-  def dbComplexText: `109` = 109.asInstanceOf[`109`]
+  inline def dbComplexText: `109` = 109.asInstanceOf[`109`]
   
-  @scala.inline
-  def dbCurrency: `5` = 5.asInstanceOf[`5`]
+  inline def dbCurrency: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def dbDate: `8` = 8.asInstanceOf[`8`]
+  inline def dbDate: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def dbDecimal: `20` = 20.asInstanceOf[`20`]
+  inline def dbDecimal: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def dbDouble: `7` = 7.asInstanceOf[`7`]
+  inline def dbDouble: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def dbFloat: `21` = 21.asInstanceOf[`21`]
+  inline def dbFloat: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def dbGUID: `15` = 15.asInstanceOf[`15`]
+  inline def dbGUID: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def dbInteger: `3` = 3.asInstanceOf[`3`]
+  inline def dbInteger: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def dbLong: `4` = 4.asInstanceOf[`4`]
+  inline def dbLong: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def dbLongBinary: `11` = 11.asInstanceOf[`11`]
+  inline def dbLongBinary: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def dbMemo: `12` = 12.asInstanceOf[`12`]
+  inline def dbMemo: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def dbNumeric: `19` = 19.asInstanceOf[`19`]
+  inline def dbNumeric: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def dbSingle: `6` = 6.asInstanceOf[`6`]
+  inline def dbSingle: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def dbText: `10` = 10.asInstanceOf[`10`]
+  inline def dbText: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def dbTime: `22` = 22.asInstanceOf[`22`]
+  inline def dbTime: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def dbTimeStamp: `23` = 23.asInstanceOf[`23`]
+  inline def dbTimeStamp: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def dbVarBinary: `17` = 17.asInstanceOf[`17`]
+  inline def dbVarBinary: `17` = 17.asInstanceOf[`17`]
 }

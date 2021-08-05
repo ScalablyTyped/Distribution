@@ -21,20 +21,16 @@ object anon {
   }
   object DestPos {
     
-    @scala.inline
-    def apply(destPos: Axis, duration: Double): DestPos = {
+    inline def apply(destPos: Axis, duration: Double): DestPos = {
       val __obj = js.Dynamic.literal(destPos = destPos.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[DestPos]
     }
     
-    @scala.inline
-    implicit class DestPosMutableBuilder[Self <: DestPos] (val x: Self) extends AnyVal {
+    extension [Self <: DestPos](x: Self) {
       
-      @scala.inline
-      def setDestPos(value: Axis): Self = StObject.set(x, "destPos", value.asInstanceOf[js.Any])
+      inline def setDestPos(value: Axis): Self = StObject.set(x, "destPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     }
   }
   

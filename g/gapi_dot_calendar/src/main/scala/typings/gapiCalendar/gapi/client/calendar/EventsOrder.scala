@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventsOrder extends StObject
 object EventsOrder {
   
-  @scala.inline
-  def startTime: typings.gapiCalendar.gapiCalendarStrings.startTime = "startTime".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.startTime]
+  inline def startTime: typings.gapiCalendar.gapiCalendarStrings.startTime = "startTime".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.startTime]
   
-  @scala.inline
-  def updated: typings.gapiCalendar.gapiCalendarStrings.updated = "updated".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.updated]
+  inline def updated: typings.gapiCalendar.gapiCalendarStrings.updated = "updated".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.updated]
 }

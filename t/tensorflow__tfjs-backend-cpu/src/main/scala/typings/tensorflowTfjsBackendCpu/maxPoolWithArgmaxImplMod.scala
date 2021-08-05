@@ -16,8 +16,7 @@ object maxPoolWithArgmaxImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def maxPoolWithArgmaxImpl(
+  inline def maxPoolWithArgmaxImpl(
     xValues: TypedArray,
     xShape: js.Array[Double],
     dtype: DataType,

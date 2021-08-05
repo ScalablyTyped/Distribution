@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlDropEffect extends StObject
 object htmlDropEffect {
   
-  @scala.inline
-  def htmlDropEffectCopy: `0` = 0.asInstanceOf[`0`]
+  inline def htmlDropEffectCopy: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlDropEffectLink: `1` = 1.asInstanceOf[`1`]
+  inline def htmlDropEffectLink: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlDropEffectMove: `2` = 2.asInstanceOf[`2`]
+  inline def htmlDropEffectMove: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlDropEffectNone: `3` = 3.asInstanceOf[`3`]
+  inline def htmlDropEffectNone: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlDropEffect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlDropEffect_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

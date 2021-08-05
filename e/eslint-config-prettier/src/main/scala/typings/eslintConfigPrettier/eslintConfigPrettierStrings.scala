@@ -8,6 +8,5 @@ object eslintConfigPrettierStrings {
   
   @js.native
   sealed trait off extends StObject
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
+  inline def off: off = "off".asInstanceOf[off]
 }

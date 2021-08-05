@@ -17,10 +17,8 @@ object pairsObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](
       obj: js.Object,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(obj.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]

@@ -12,25 +12,19 @@ trait TotalCount extends StObject {
 }
 object TotalCount {
   
-  @scala.inline
-  def apply(): TotalCount = {
+  inline def apply(): TotalCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TotalCount]
   }
   
-  @scala.inline
-  implicit class TotalCountMutableBuilder[Self <: TotalCount] (val x: Self) extends AnyVal {
+  extension [Self <: TotalCount](x: Self) {
     
-    @scala.inline
-    def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: Boolean): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Boolean): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

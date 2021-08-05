@@ -83,106 +83,73 @@ trait ClaimItemDetail
 }
 object ClaimItemDetail {
   
-  @scala.inline
-  def apply(sequence: positiveInt): ClaimItemDetail = {
+  inline def apply(sequence: positiveInt): ClaimItemDetail = {
     val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimItemDetail]
   }
   
-  @scala.inline
-  implicit class ClaimItemDetailMutableBuilder[Self <: ClaimItemDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimItemDetail](x: Self) {
     
-    @scala.inline
-    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setFactor(value: decimal): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    inline def setFactor(value: decimal): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
-    @scala.inline
-    def setModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "modifier", js.Array(value :_*))
+    inline def setModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "modifier", js.Array(value :_*))
     
-    @scala.inline
-    def setNet(value: Money): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
+    inline def setNet(value: Money): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetUndefined: Self = StObject.set(x, "net", js.undefined)
+    inline def setNetUndefined: Self = StObject.set(x, "net", js.undefined)
     
-    @scala.inline
-    def setProgramCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "programCode", value.asInstanceOf[js.Any])
+    inline def setProgramCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "programCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramCodeUndefined: Self = StObject.set(x, "programCode", js.undefined)
+    inline def setProgramCodeUndefined: Self = StObject.set(x, "programCode", js.undefined)
     
-    @scala.inline
-    def setProgramCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "programCode", js.Array(value :_*))
+    inline def setProgramCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "programCode", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setRevenue(value: CodeableConcept): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
+    inline def setRevenue(value: CodeableConcept): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
+    inline def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
     
-    @scala.inline
-    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: CodeableConcept): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: CodeableConcept): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setSubDetail(value: js.Array[ClaimItemDetailSubDetail]): Self = StObject.set(x, "subDetail", value.asInstanceOf[js.Any])
+    inline def setSubDetail(value: js.Array[ClaimItemDetailSubDetail]): Self = StObject.set(x, "subDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDetailUndefined: Self = StObject.set(x, "subDetail", js.undefined)
+    inline def setSubDetailUndefined: Self = StObject.set(x, "subDetail", js.undefined)
     
-    @scala.inline
-    def setSubDetailVarargs(value: ClaimItemDetailSubDetail*): Self = StObject.set(x, "subDetail", js.Array(value :_*))
+    inline def setSubDetailVarargs(value: ClaimItemDetailSubDetail*): Self = StObject.set(x, "subDetail", js.Array(value :_*))
     
-    @scala.inline
-    def setUdi(value: js.Array[Reference]): Self = StObject.set(x, "udi", value.asInstanceOf[js.Any])
+    inline def setUdi(value: js.Array[Reference]): Self = StObject.set(x, "udi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUdiUndefined: Self = StObject.set(x, "udi", js.undefined)
+    inline def setUdiUndefined: Self = StObject.set(x, "udi", js.undefined)
     
-    @scala.inline
-    def setUdiVarargs(value: Reference*): Self = StObject.set(x, "udi", js.Array(value :_*))
+    inline def setUdiVarargs(value: Reference*): Self = StObject.set(x, "udi", js.Array(value :_*))
     
-    @scala.inline
-    def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
+    inline def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
+    inline def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
     
-    @scala.inline
-    def set_factor(value: Element): Self = StObject.set(x, "_factor", value.asInstanceOf[js.Any])
+    inline def set_factor(value: Element): Self = StObject.set(x, "_factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_factorUndefined: Self = StObject.set(x, "_factor", js.undefined)
+    inline def set_factorUndefined: Self = StObject.set(x, "_factor", js.undefined)
     
-    @scala.inline
-    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
+    inline def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
+    inline def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
   }
 }

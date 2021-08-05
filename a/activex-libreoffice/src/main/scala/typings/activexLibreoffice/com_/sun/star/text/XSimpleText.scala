@@ -46,8 +46,7 @@ trait XSimpleText
 }
 object XSimpleText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Start: XTextRange,
     String: String,
@@ -68,19 +67,14 @@ object XSimpleText {
     __obj.asInstanceOf[XSimpleText]
   }
   
-  @scala.inline
-  implicit class XSimpleTextMutableBuilder[Self <: XSimpleText] (val x: Self) extends AnyVal {
+  extension [Self <: XSimpleText](x: Self) {
     
-    @scala.inline
-    def setCreateTextCursor(value: () => XTextCursor): Self = StObject.set(x, "createTextCursor", js.Any.fromFunction0(value))
+    inline def setCreateTextCursor(value: () => XTextCursor): Self = StObject.set(x, "createTextCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateTextCursorByRange(value: XTextRange => XTextCursor): Self = StObject.set(x, "createTextCursorByRange", js.Any.fromFunction1(value))
+    inline def setCreateTextCursorByRange(value: XTextRange => XTextCursor): Self = StObject.set(x, "createTextCursorByRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertControlCharacter(value: (XTextRange, Double, Boolean) => Unit): Self = StObject.set(x, "insertControlCharacter", js.Any.fromFunction3(value))
+    inline def setInsertControlCharacter(value: (XTextRange, Double, Boolean) => Unit): Self = StObject.set(x, "insertControlCharacter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInsertString(value: (XTextRange, String, Boolean) => Unit): Self = StObject.set(x, "insertString", js.Any.fromFunction3(value))
+    inline def setInsertString(value: (XTextRange, String, Boolean) => Unit): Self = StObject.set(x, "insertString", js.Any.fromFunction3(value))
   }
 }

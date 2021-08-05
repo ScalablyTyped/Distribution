@@ -13,19 +13,15 @@ trait GoogleActionsV2DateTimeValueSpec extends StObject {
 }
 object GoogleActionsV2DateTimeValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2DateTimeValueSpec = {
+  inline def apply(): GoogleActionsV2DateTimeValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2DateTimeValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DateTimeValueSpecMutableBuilder[Self <: GoogleActionsV2DateTimeValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2DateTimeValueSpec](x: Self) {
     
-    @scala.inline
-    def setDialogSpec(value: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
+    inline def setDialogSpec(value: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogSpecUndefined: Self = StObject.set(x, "dialogSpec", js.undefined)
+    inline def setDialogSpecUndefined: Self = StObject.set(x, "dialogSpec", js.undefined)
   }
 }

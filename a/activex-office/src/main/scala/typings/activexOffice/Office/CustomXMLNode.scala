@@ -154,7 +154,7 @@ trait CustomXMLNode extends StObject {
   
   var NodeValue: String = js.native
   
-  @JSName("Office.CustomXMLNode_typekey")
+  /* private */ @JSName("Office.CustomXMLNode_typekey")
   var OfficeDotCustomXMLNode_typekey: CustomXMLNode = js.native
   
   val OwnerDocument: js.Any = js.native

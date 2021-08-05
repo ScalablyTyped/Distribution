@@ -16,23 +16,18 @@ object anon {
   }
   object ClientCount {
     
-    @scala.inline
-    def apply(clientCount: js.Any, httpRPM: Double, wsRPM: Double): ClientCount = {
+    inline def apply(clientCount: js.Any, httpRPM: Double, wsRPM: Double): ClientCount = {
       val __obj = js.Dynamic.literal(clientCount = clientCount.asInstanceOf[js.Any], httpRPM = httpRPM.asInstanceOf[js.Any], wsRPM = wsRPM.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientCount]
     }
     
-    @scala.inline
-    implicit class ClientCountMutableBuilder[Self <: ClientCount] (val x: Self) extends AnyVal {
+    extension [Self <: ClientCount](x: Self) {
       
-      @scala.inline
-      def setClientCount(value: js.Any): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
+      inline def setClientCount(value: js.Any): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpRPM(value: Double): Self = StObject.set(x, "httpRPM", value.asInstanceOf[js.Any])
+      inline def setHttpRPM(value: Double): Self = StObject.set(x, "httpRPM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsRPM(value: Double): Self = StObject.set(x, "wsRPM", value.asInstanceOf[js.Any])
+      inline def setWsRPM(value: Double): Self = StObject.set(x, "wsRPM", value.asInstanceOf[js.Any])
     }
   }
 }

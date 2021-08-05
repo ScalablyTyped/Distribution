@@ -16,17 +16,14 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(`type`: DeclarativeWebRequestConditionsList): Dictkey = {
+  inline def apply(`type`: DeclarativeWebRequestConditionsList): Dictkey = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setType(value: DeclarativeWebRequestConditionsList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclarativeWebRequestConditionsList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

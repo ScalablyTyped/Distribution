@@ -283,20 +283,16 @@ object imodelserverclientMod {
   }
   object ISendDeltasResult {
     
-    @scala.inline
-    def apply(eventId: Double, firstError: js.Any): ISendDeltasResult = {
+    inline def apply(eventId: Double, firstError: js.Any): ISendDeltasResult = {
       val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], firstError = firstError.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISendDeltasResult]
     }
     
-    @scala.inline
-    implicit class ISendDeltasResultMutableBuilder[Self <: ISendDeltasResult] (val x: Self) extends AnyVal {
+    extension [Self <: ISendDeltasResult](x: Self) {
       
-      @scala.inline
-      def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+      inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstError(value: js.Any): Self = StObject.set(x, "firstError", value.asInstanceOf[js.Any])
+      inline def setFirstError(value: js.Any): Self = StObject.set(x, "firstError", value.asInstanceOf[js.Any])
     }
   }
 }

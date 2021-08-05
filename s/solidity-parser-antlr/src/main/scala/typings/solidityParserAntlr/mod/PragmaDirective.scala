@@ -18,23 +18,18 @@ trait PragmaDirective
 }
 object PragmaDirective {
   
-  @scala.inline
-  def apply(name: String, value: String): PragmaDirective = {
+  inline def apply(name: String, value: String): PragmaDirective = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PragmaDirective")
     __obj.asInstanceOf[PragmaDirective]
   }
   
-  @scala.inline
-  implicit class PragmaDirectiveMutableBuilder[Self <: PragmaDirective] (val x: Self) extends AnyVal {
+  extension [Self <: PragmaDirective](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaDirective): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.PragmaDirective): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

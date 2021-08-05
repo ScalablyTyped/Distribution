@@ -17,22 +17,17 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest extends St
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequestMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest](x: Self) {
     
-    @scala.inline
-    def setEntityTypeNames(value: js.Array[String]): Self = StObject.set(x, "entityTypeNames", value.asInstanceOf[js.Any])
+    inline def setEntityTypeNames(value: js.Array[String]): Self = StObject.set(x, "entityTypeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeNamesUndefined: Self = StObject.set(x, "entityTypeNames", js.undefined)
+    inline def setEntityTypeNamesUndefined: Self = StObject.set(x, "entityTypeNames", js.undefined)
     
-    @scala.inline
-    def setEntityTypeNamesVarargs(value: String*): Self = StObject.set(x, "entityTypeNames", js.Array(value :_*))
+    inline def setEntityTypeNamesVarargs(value: String*): Self = StObject.set(x, "entityTypeNames", js.Array(value :_*))
   }
 }

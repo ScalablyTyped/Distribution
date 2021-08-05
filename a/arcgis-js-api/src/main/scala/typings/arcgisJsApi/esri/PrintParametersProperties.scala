@@ -36,37 +36,27 @@ trait PrintParametersProperties extends StObject {
 }
 object PrintParametersProperties {
   
-  @scala.inline
-  def apply(): PrintParametersProperties = {
+  inline def apply(): PrintParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintParametersProperties]
   }
   
-  @scala.inline
-  implicit class PrintParametersPropertiesMutableBuilder[Self <: PrintParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PrintParametersProperties](x: Self) {
     
-    @scala.inline
-    def setExtraParameters(value: js.Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
+    inline def setExtraParameters(value: js.Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraParametersUndefined: Self = StObject.set(x, "extraParameters", js.undefined)
+    inline def setExtraParametersUndefined: Self = StObject.set(x, "extraParameters", js.undefined)
     
-    @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: PrintTemplateProperties): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: PrintTemplateProperties): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

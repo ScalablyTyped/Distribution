@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedAppDataStorageLocation extends StObject
 object ManagedAppDataStorageLocation {
   
-  @scala.inline
-  def localStorage: typings.microsoftGraph.microsoftGraphStrings.localStorage = "localStorage".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localStorage]
+  inline def localStorage: typings.microsoftGraph.microsoftGraphStrings.localStorage = "localStorage".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localStorage]
   
-  @scala.inline
-  def oneDriveForBusiness: oneDriveForBusiness_ = "oneDriveForBusiness".asInstanceOf[oneDriveForBusiness_]
+  inline def oneDriveForBusiness: oneDriveForBusiness_ = "oneDriveForBusiness".asInstanceOf[oneDriveForBusiness_]
   
-  @scala.inline
-  def sharePoint: typings.microsoftGraph.microsoftGraphStrings.sharePoint = "sharePoint".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharePoint]
+  inline def sharePoint: typings.microsoftGraph.microsoftGraphStrings.sharePoint = "sharePoint".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharePoint]
 }

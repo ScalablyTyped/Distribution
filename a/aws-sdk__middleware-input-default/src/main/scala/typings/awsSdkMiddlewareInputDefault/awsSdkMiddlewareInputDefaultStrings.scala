@@ -8,6 +8,5 @@ object awsSdkMiddlewareInputDefaultStrings {
   
   @js.native
   sealed trait InputDefaultArgs extends StObject
-  @scala.inline
-  def InputDefaultArgs: InputDefaultArgs = "InputDefaultArgs".asInstanceOf[InputDefaultArgs]
+  inline def InputDefaultArgs: InputDefaultArgs = "InputDefaultArgs".asInstanceOf[InputDefaultArgs]
 }

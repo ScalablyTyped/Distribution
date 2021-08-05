@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(sinon: SinonStatic): Unit = ^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(sinon: SinonStatic): Unit = ^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sinon-stub-promise", JSImport.Namespace)
   @js.native

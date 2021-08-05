@@ -73,85 +73,59 @@ trait EligibilityResponseInsuranceBenefitBalance
 }
 object EligibilityResponseInsuranceBenefitBalance {
   
-  @scala.inline
-  def apply(category: CodeableConcept): EligibilityResponseInsuranceBenefitBalance = {
+  inline def apply(category: CodeableConcept): EligibilityResponseInsuranceBenefitBalance = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
     __obj.asInstanceOf[EligibilityResponseInsuranceBenefitBalance]
   }
   
-  @scala.inline
-  implicit class EligibilityResponseInsuranceBenefitBalanceMutableBuilder[Self <: EligibilityResponseInsuranceBenefitBalance] (val x: Self) extends AnyVal {
+  extension [Self <: EligibilityResponseInsuranceBenefitBalance](x: Self) {
     
-    @scala.inline
-    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExcluded(value: Boolean): Self = StObject.set(x, "excluded", value.asInstanceOf[js.Any])
+    inline def setExcluded(value: Boolean): Self = StObject.set(x, "excluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedUndefined: Self = StObject.set(x, "excluded", js.undefined)
+    inline def setExcludedUndefined: Self = StObject.set(x, "excluded", js.undefined)
     
-    @scala.inline
-    def setFinancial(value: js.Array[EligibilityResponseInsuranceBenefitBalanceFinancial]): Self = StObject.set(x, "financial", value.asInstanceOf[js.Any])
+    inline def setFinancial(value: js.Array[EligibilityResponseInsuranceBenefitBalanceFinancial]): Self = StObject.set(x, "financial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinancialUndefined: Self = StObject.set(x, "financial", js.undefined)
+    inline def setFinancialUndefined: Self = StObject.set(x, "financial", js.undefined)
     
-    @scala.inline
-    def setFinancialVarargs(value: EligibilityResponseInsuranceBenefitBalanceFinancial*): Self = StObject.set(x, "financial", js.Array(value :_*))
+    inline def setFinancialVarargs(value: EligibilityResponseInsuranceBenefitBalanceFinancial*): Self = StObject.set(x, "financial", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: CodeableConcept): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: CodeableConcept): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setSubCategory(value: CodeableConcept): Self = StObject.set(x, "subCategory", value.asInstanceOf[js.Any])
+    inline def setSubCategory(value: CodeableConcept): Self = StObject.set(x, "subCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubCategoryUndefined: Self = StObject.set(x, "subCategory", js.undefined)
+    inline def setSubCategoryUndefined: Self = StObject.set(x, "subCategory", js.undefined)
     
-    @scala.inline
-    def setTerm(value: CodeableConcept): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: CodeableConcept): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+    inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     
-    @scala.inline
-    def setUnit(value: CodeableConcept): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: CodeableConcept): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_excluded(value: Element): Self = StObject.set(x, "_excluded", value.asInstanceOf[js.Any])
+    inline def set_excluded(value: Element): Self = StObject.set(x, "_excluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_excludedUndefined: Self = StObject.set(x, "_excluded", js.undefined)
+    inline def set_excludedUndefined: Self = StObject.set(x, "_excluded", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

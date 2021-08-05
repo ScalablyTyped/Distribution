@@ -29,49 +29,35 @@ trait SignInLocation extends StObject {
 }
 object SignInLocation {
   
-  @scala.inline
-  def apply(): SignInLocation = {
+  inline def apply(): SignInLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignInLocation]
   }
   
-  @scala.inline
-  implicit class SignInLocationMutableBuilder[Self <: SignInLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SignInLocation](x: Self) {
     
-    @scala.inline
-    def setCity(value: NullableOption[String]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: NullableOption[String]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityNull: Self = StObject.set(x, "city", null)
+    inline def setCityNull: Self = StObject.set(x, "city", null)
     
-    @scala.inline
-    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
-    @scala.inline
-    def setCountryOrRegion(value: NullableOption[String]): Self = StObject.set(x, "countryOrRegion", value.asInstanceOf[js.Any])
+    inline def setCountryOrRegion(value: NullableOption[String]): Self = StObject.set(x, "countryOrRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryOrRegionNull: Self = StObject.set(x, "countryOrRegion", null)
+    inline def setCountryOrRegionNull: Self = StObject.set(x, "countryOrRegion", null)
     
-    @scala.inline
-    def setCountryOrRegionUndefined: Self = StObject.set(x, "countryOrRegion", js.undefined)
+    inline def setCountryOrRegionUndefined: Self = StObject.set(x, "countryOrRegion", js.undefined)
     
-    @scala.inline
-    def setGeoCoordinates(value: NullableOption[GeoCoordinates]): Self = StObject.set(x, "geoCoordinates", value.asInstanceOf[js.Any])
+    inline def setGeoCoordinates(value: NullableOption[GeoCoordinates]): Self = StObject.set(x, "geoCoordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoCoordinatesNull: Self = StObject.set(x, "geoCoordinates", null)
+    inline def setGeoCoordinatesNull: Self = StObject.set(x, "geoCoordinates", null)
     
-    @scala.inline
-    def setGeoCoordinatesUndefined: Self = StObject.set(x, "geoCoordinates", js.undefined)
+    inline def setGeoCoordinatesUndefined: Self = StObject.set(x, "geoCoordinates", js.undefined)
     
-    @scala.inline
-    def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteCoreDefinitionRequest extends StObject {
 }
 object DeleteCoreDefinitionRequest {
   
-  @scala.inline
-  def apply(CoreDefinitionId: string): DeleteCoreDefinitionRequest = {
+  inline def apply(CoreDefinitionId: string): DeleteCoreDefinitionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCoreDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCoreDefinitionRequestMutableBuilder[Self <: DeleteCoreDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCoreDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
+    inline def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
   }
 }

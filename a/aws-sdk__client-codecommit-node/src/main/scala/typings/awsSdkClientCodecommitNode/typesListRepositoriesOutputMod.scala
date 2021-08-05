@@ -31,32 +31,24 @@ object typesListRepositoriesOutputMod {
   }
   object ListRepositoriesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListRepositoriesOutput = {
+    inline def apply($metadata: ResponseMetadata): ListRepositoriesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListRepositoriesOutput]
     }
     
-    @scala.inline
-    implicit class ListRepositoriesOutputMutableBuilder[Self <: ListRepositoriesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListRepositoriesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setRepositories(value: js.Array[UnmarshalledRepositoryNameIdPair]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+      inline def setRepositories(value: js.Array[UnmarshalledRepositoryNameIdPair]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
+      inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
       
-      @scala.inline
-      def setRepositoriesVarargs(value: UnmarshalledRepositoryNameIdPair*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+      inline def setRepositoriesVarargs(value: UnmarshalledRepositoryNameIdPair*): Self = StObject.set(x, "repositories", js.Array(value :_*))
     }
   }
 }

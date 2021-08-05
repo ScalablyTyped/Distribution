@@ -18,17 +18,14 @@ trait NullLiteral_
 }
 object NullLiteral_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): NullLiteral_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): NullLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[NullLiteral_]
   }
   
-  @scala.inline
-  implicit class NullLiteral_MutableBuilder[Self <: NullLiteral_] (val x: Self) extends AnyVal {
+  extension [Self <: NullLiteral_](x: Self) {
     
-    @scala.inline
-    def setType(value: NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

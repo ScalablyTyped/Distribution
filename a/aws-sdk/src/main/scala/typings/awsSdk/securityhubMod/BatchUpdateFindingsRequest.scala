@@ -55,79 +55,55 @@ trait BatchUpdateFindingsRequest extends StObject {
 }
 object BatchUpdateFindingsRequest {
   
-  @scala.inline
-  def apply(FindingIdentifiers: AwsSecurityFindingIdentifierList): BatchUpdateFindingsRequest = {
+  inline def apply(FindingIdentifiers: AwsSecurityFindingIdentifierList): BatchUpdateFindingsRequest = {
     val __obj = js.Dynamic.literal(FindingIdentifiers = FindingIdentifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateFindingsRequest]
   }
   
-  @scala.inline
-  implicit class BatchUpdateFindingsRequestMutableBuilder[Self <: BatchUpdateFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: RatioScale): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: RatioScale): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setCriticality(value: RatioScale): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
+    inline def setCriticality(value: RatioScale): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
+    inline def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
     
-    @scala.inline
-    def setFindingIdentifiers(value: AwsSecurityFindingIdentifierList): Self = StObject.set(x, "FindingIdentifiers", value.asInstanceOf[js.Any])
+    inline def setFindingIdentifiers(value: AwsSecurityFindingIdentifierList): Self = StObject.set(x, "FindingIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdentifiersVarargs(value: AwsSecurityFindingIdentifier*): Self = StObject.set(x, "FindingIdentifiers", js.Array(value :_*))
+    inline def setFindingIdentifiersVarargs(value: AwsSecurityFindingIdentifier*): Self = StObject.set(x, "FindingIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setNote(value: NoteUpdate): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
+    inline def setNote(value: NoteUpdate): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
     
-    @scala.inline
-    def setRelatedFindings(value: RelatedFindingList): Self = StObject.set(x, "RelatedFindings", value.asInstanceOf[js.Any])
+    inline def setRelatedFindings(value: RelatedFindingList): Self = StObject.set(x, "RelatedFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
+    inline def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
     
-    @scala.inline
-    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
+    inline def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverity(value: SeverityUpdate): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: SeverityUpdate): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
-    @scala.inline
-    def setTypes(value: TypeList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: TypeList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "Types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "Types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
+    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
     
-    @scala.inline
-    def setUserDefinedFields(value: FieldMap): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
+    inline def setUserDefinedFields(value: FieldMap): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
+    inline def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
     
-    @scala.inline
-    def setVerificationState(value: VerificationState): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
+    inline def setVerificationState(value: VerificationState): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
+    inline def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
     
-    @scala.inline
-    def setWorkflow(value: WorkflowUpdate): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
+    inline def setWorkflow(value: WorkflowUpdate): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowUndefined: Self = StObject.set(x, "Workflow", js.undefined)
+    inline def setWorkflowUndefined: Self = StObject.set(x, "Workflow", js.undefined)
   }
 }

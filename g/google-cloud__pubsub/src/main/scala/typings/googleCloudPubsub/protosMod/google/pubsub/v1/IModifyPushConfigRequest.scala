@@ -15,31 +15,23 @@ trait IModifyPushConfigRequest extends StObject {
 }
 object IModifyPushConfigRequest {
   
-  @scala.inline
-  def apply(): IModifyPushConfigRequest = {
+  inline def apply(): IModifyPushConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IModifyPushConfigRequest]
   }
   
-  @scala.inline
-  implicit class IModifyPushConfigRequestMutableBuilder[Self <: IModifyPushConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IModifyPushConfigRequest](x: Self) {
     
-    @scala.inline
-    def setPushConfig(value: IPushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
+    inline def setPushConfig(value: IPushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushConfigNull: Self = StObject.set(x, "pushConfig", null)
+    inline def setPushConfigNull: Self = StObject.set(x, "pushConfig", null)
     
-    @scala.inline
-    def setPushConfigUndefined: Self = StObject.set(x, "pushConfig", js.undefined)
+    inline def setPushConfigUndefined: Self = StObject.set(x, "pushConfig", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    inline def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

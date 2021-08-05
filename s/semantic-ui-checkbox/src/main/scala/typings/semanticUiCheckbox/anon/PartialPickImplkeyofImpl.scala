@@ -63,157 +63,107 @@ trait PartialPickImplkeyofImpl extends StObject {
 }
 object PartialPickImplkeyofImpl {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImpl = {
+  inline def apply(): PartialPickImplkeyofImpl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImpl]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplMutableBuilder[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImpl](x: Self) {
     
-    @scala.inline
-    def setBeforeChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeChecked", value.asInstanceOf[js.Any])
+    inline def setBeforeChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeCheckedUndefined: Self = StObject.set(x, "beforeChecked", js.undefined)
+    inline def setBeforeCheckedUndefined: Self = StObject.set(x, "beforeChecked", js.undefined)
     
-    @scala.inline
-    def setBeforeDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeDeterminate", value.asInstanceOf[js.Any])
+    inline def setBeforeDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeDeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeDeterminateUndefined: Self = StObject.set(x, "beforeDeterminate", js.undefined)
+    inline def setBeforeDeterminateUndefined: Self = StObject.set(x, "beforeDeterminate", js.undefined)
     
-    @scala.inline
-    def setBeforeIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeIndeterminate", value.asInstanceOf[js.Any])
+    inline def setBeforeIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeIndeterminateUndefined: Self = StObject.set(x, "beforeIndeterminate", js.undefined)
+    inline def setBeforeIndeterminateUndefined: Self = StObject.set(x, "beforeIndeterminate", js.undefined)
     
-    @scala.inline
-    def setBeforeUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeUnchecked", value.asInstanceOf[js.Any])
+    inline def setBeforeUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]): Self = StObject.set(x, "beforeUnchecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUncheckedUndefined: Self = StObject.set(x, "beforeUnchecked", js.undefined)
+    inline def setBeforeUncheckedUndefined: Self = StObject.set(x, "beforeUnchecked", js.undefined)
     
-    @scala.inline
-    def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
+    inline def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFireOnInitUndefined: Self = StObject.set(x, "fireOnInit", js.undefined)
+    inline def setFireOnInitUndefined: Self = StObject.set(x, "fireOnInit", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onChecked", value.asInstanceOf[js.Any])
+    inline def setOnChecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCheckedUndefined: Self = StObject.set(x, "onChecked", js.undefined)
+    inline def setOnCheckedUndefined: Self = StObject.set(x, "onChecked", js.undefined)
     
-    @scala.inline
-    def setOnDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDeterminate", value.asInstanceOf[js.Any])
+    inline def setOnDeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDeterminateUndefined: Self = StObject.set(x, "onDeterminate", js.undefined)
+    inline def setOnDeterminateUndefined: Self = StObject.set(x, "onDeterminate", js.undefined)
     
-    @scala.inline
-    def setOnDisable(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDisable", value.asInstanceOf[js.Any])
+    inline def setOnDisable(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDisable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDisableUndefined: Self = StObject.set(x, "onDisable", js.undefined)
+    inline def setOnDisableUndefined: Self = StObject.set(x, "onDisable", js.undefined)
     
-    @scala.inline
-    def setOnDisabled(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDisabled", value.asInstanceOf[js.Any])
+    inline def setOnDisabled(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDisabledUndefined: Self = StObject.set(x, "onDisabled", js.undefined)
+    inline def setOnDisabledUndefined: Self = StObject.set(x, "onDisabled", js.undefined)
     
-    @scala.inline
-    def setOnEnable(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnable", value.asInstanceOf[js.Any])
+    inline def setOnEnable(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEnableUndefined: Self = StObject.set(x, "onEnable", js.undefined)
+    inline def setOnEnableUndefined: Self = StObject.set(x, "onEnable", js.undefined)
     
-    @scala.inline
-    def setOnEnabled(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnabled", value.asInstanceOf[js.Any])
+    inline def setOnEnabled(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEnabledUndefined: Self = StObject.set(x, "onEnabled", js.undefined)
+    inline def setOnEnabledUndefined: Self = StObject.set(x, "onEnabled", js.undefined)
     
-    @scala.inline
-    def setOnIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onIndeterminate", value.asInstanceOf[js.Any])
+    inline def setOnIndeterminate(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnIndeterminateUndefined: Self = StObject.set(x, "onIndeterminate", js.undefined)
+    inline def setOnIndeterminateUndefined: Self = StObject.set(x, "onIndeterminate", js.undefined)
     
-    @scala.inline
-    def setOnUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onUnchecked", value.asInstanceOf[js.Any])
+    inline def setOnUnchecked(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onUnchecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUncheckedUndefined: Self = StObject.set(x, "onUnchecked", js.undefined)
+    inline def setOnUncheckedUndefined: Self = StObject.set(x, "onUnchecked", js.undefined)
     
-    @scala.inline
-    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
+    inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    @scala.inline
-    def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setUncheckable(value: auto | Boolean): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
+    inline def setUncheckable(value: auto | Boolean): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUncheckableUndefined: Self = StObject.set(x, "uncheckable", js.undefined)
+    inline def setUncheckableUndefined: Self = StObject.set(x, "uncheckable", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAutoPreview extends StObject
 object OlAutoPreview {
   
-  @scala.inline
-  def olAutoPreviewAll: `0` = 0.asInstanceOf[`0`]
+  inline def olAutoPreviewAll: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olAutoPreviewNone: `2` = 2.asInstanceOf[`2`]
+  inline def olAutoPreviewNone: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olAutoPreviewUnread: `1` = 1.asInstanceOf[`1`]
+  inline def olAutoPreviewUnread: `1` = 1.asInstanceOf[`1`]
 }

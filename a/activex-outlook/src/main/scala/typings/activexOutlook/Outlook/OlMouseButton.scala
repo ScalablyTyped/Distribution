@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMouseButton extends StObject
 object OlMouseButton {
   
-  @scala.inline
-  def olMouseButtonLeft: `1` = 1.asInstanceOf[`1`]
+  inline def olMouseButtonLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olMouseButtonMiddle: `4` = 4.asInstanceOf[`4`]
+  inline def olMouseButtonMiddle: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olMouseButtonRight: `2` = 2.asInstanceOf[`2`]
+  inline def olMouseButtonRight: `2` = 2.asInstanceOf[`2`]
 }

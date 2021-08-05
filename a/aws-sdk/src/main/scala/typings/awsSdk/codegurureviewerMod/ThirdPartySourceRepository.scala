@@ -23,22 +23,17 @@ trait ThirdPartySourceRepository extends StObject {
 }
 object ThirdPartySourceRepository {
   
-  @scala.inline
-  def apply(ConnectionArn: ConnectionArn, Name: Name, Owner: Owner): ThirdPartySourceRepository = {
+  inline def apply(ConnectionArn: ConnectionArn, Name: Name, Owner: Owner): ThirdPartySourceRepository = {
     val __obj = js.Dynamic.literal(ConnectionArn = ConnectionArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Owner = Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThirdPartySourceRepository]
   }
   
-  @scala.inline
-  implicit class ThirdPartySourceRepositoryMutableBuilder[Self <: ThirdPartySourceRepository] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartySourceRepository](x: Self) {
     
-    @scala.inline
-    def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
+    inline def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
   }
 }

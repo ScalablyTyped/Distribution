@@ -33,37 +33,27 @@ trait CreateLocationNfsRequest extends StObject {
 }
 object CreateLocationNfsRequest {
   
-  @scala.inline
-  def apply(OnPremConfig: OnPremConfig, ServerHostname: ServerHostname, Subdirectory: NfsSubdirectory): CreateLocationNfsRequest = {
+  inline def apply(OnPremConfig: OnPremConfig, ServerHostname: ServerHostname, Subdirectory: NfsSubdirectory): CreateLocationNfsRequest = {
     val __obj = js.Dynamic.literal(OnPremConfig = OnPremConfig.asInstanceOf[js.Any], ServerHostname = ServerHostname.asInstanceOf[js.Any], Subdirectory = Subdirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLocationNfsRequest]
   }
   
-  @scala.inline
-  implicit class CreateLocationNfsRequestMutableBuilder[Self <: CreateLocationNfsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationNfsRequest](x: Self) {
     
-    @scala.inline
-    def setMountOptions(value: NfsMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
+    inline def setMountOptions(value: NfsMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
+    inline def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
     
-    @scala.inline
-    def setOnPremConfig(value: OnPremConfig): Self = StObject.set(x, "OnPremConfig", value.asInstanceOf[js.Any])
+    inline def setOnPremConfig(value: OnPremConfig): Self = StObject.set(x, "OnPremConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerHostname(value: ServerHostname): Self = StObject.set(x, "ServerHostname", value.asInstanceOf[js.Any])
+    inline def setServerHostname(value: ServerHostname): Self = StObject.set(x, "ServerHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdirectory(value: NfsSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
+    inline def setSubdirectory(value: NfsSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

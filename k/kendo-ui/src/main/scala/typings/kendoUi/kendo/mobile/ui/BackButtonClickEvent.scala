@@ -15,25 +15,19 @@ trait BackButtonClickEvent
 }
 object BackButtonClickEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: BackButton): BackButtonClickEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: BackButton): BackButtonClickEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackButtonClickEvent]
   }
   
-  @scala.inline
-  implicit class BackButtonClickEventMutableBuilder[Self <: BackButtonClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BackButtonClickEvent](x: Self) {
     
-    @scala.inline
-    def setButton(value: JQuery): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: JQuery): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

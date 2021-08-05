@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Rating extends StObject
 object Rating {
   
-  @scala.inline
-  def g: typings.giphyApi.giphyApiStrings.g = "g".asInstanceOf[typings.giphyApi.giphyApiStrings.g]
+  inline def g: typings.giphyApi.giphyApiStrings.g = "g".asInstanceOf[typings.giphyApi.giphyApiStrings.g]
   
-  @scala.inline
-  def pg: typings.giphyApi.giphyApiStrings.pg = "pg".asInstanceOf[typings.giphyApi.giphyApiStrings.pg]
+  inline def pg: typings.giphyApi.giphyApiStrings.pg = "pg".asInstanceOf[typings.giphyApi.giphyApiStrings.pg]
   
-  @scala.inline
-  def `pg-13`: typings.giphyApi.giphyApiStrings.`pg-13` = "pg-13".asInstanceOf[typings.giphyApi.giphyApiStrings.`pg-13`]
+  inline def `pg-13`: typings.giphyApi.giphyApiStrings.`pg-13` = "pg-13".asInstanceOf[typings.giphyApi.giphyApiStrings.`pg-13`]
   
-  @scala.inline
-  def r: typings.giphyApi.giphyApiStrings.r = "r".asInstanceOf[typings.giphyApi.giphyApiStrings.r]
+  inline def r: typings.giphyApi.giphyApiStrings.r = "r".asInstanceOf[typings.giphyApi.giphyApiStrings.r]
   
-  @scala.inline
-  def y: typings.giphyApi.giphyApiStrings.y = "y".asInstanceOf[typings.giphyApi.giphyApiStrings.y]
+  inline def y: typings.giphyApi.giphyApiStrings.y = "y".asInstanceOf[typings.giphyApi.giphyApiStrings.y]
 }

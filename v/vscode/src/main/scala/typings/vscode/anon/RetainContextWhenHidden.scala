@@ -26,19 +26,15 @@ trait RetainContextWhenHidden extends StObject {
 }
 object RetainContextWhenHidden {
   
-  @scala.inline
-  def apply(): RetainContextWhenHidden = {
+  inline def apply(): RetainContextWhenHidden = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetainContextWhenHidden]
   }
   
-  @scala.inline
-  implicit class RetainContextWhenHiddenMutableBuilder[Self <: RetainContextWhenHidden] (val x: Self) extends AnyVal {
+  extension [Self <: RetainContextWhenHidden](x: Self) {
     
-    @scala.inline
-    def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
+    inline def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
+    inline def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
   }
 }

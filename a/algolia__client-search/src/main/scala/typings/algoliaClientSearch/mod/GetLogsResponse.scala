@@ -13,19 +13,15 @@ trait GetLogsResponse extends StObject {
 }
 object GetLogsResponse {
   
-  @scala.inline
-  def apply(logs: js.Array[Log]): GetLogsResponse = {
+  inline def apply(logs: js.Array[Log]): GetLogsResponse = {
     val __obj = js.Dynamic.literal(logs = logs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogsResponse]
   }
   
-  @scala.inline
-  implicit class GetLogsResponseMutableBuilder[Self <: GetLogsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogsResponse](x: Self) {
     
-    @scala.inline
-    def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    inline def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
   }
 }

@@ -55,21 +55,16 @@ object mailFromMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MailFromState): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MailFromState, opts: CustomResourceOptions): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
+    inline def get(name: String, id: Input[ID]): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
+    inline def get(name: String, id: Input[ID], state: MailFromState): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
+    inline def get(name: String, id: Input[ID], state: MailFromState, opts: CustomResourceOptions): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
     
     /**
       * Returns true if the given object is an instance of MailFrom.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ Boolean]
   }
   
   trait MailFromArgs extends StObject {
@@ -91,26 +86,20 @@ object mailFromMod {
   }
   object MailFromArgs {
     
-    @scala.inline
-    def apply(domain: Input[String], mailFromDomain: Input[String]): MailFromArgs = {
+    inline def apply(domain: Input[String], mailFromDomain: Input[String]): MailFromArgs = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], mailFromDomain = mailFromDomain.asInstanceOf[js.Any])
       __obj.asInstanceOf[MailFromArgs]
     }
     
-    @scala.inline
-    implicit class MailFromArgsMutableBuilder[Self <: MailFromArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MailFromArgs](x: Self) {
       
-      @scala.inline
-      def setBehaviorOnMxFailure(value: Input[String]): Self = StObject.set(x, "behaviorOnMxFailure", value.asInstanceOf[js.Any])
+      inline def setBehaviorOnMxFailure(value: Input[String]): Self = StObject.set(x, "behaviorOnMxFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorOnMxFailureUndefined: Self = StObject.set(x, "behaviorOnMxFailure", js.undefined)
+      inline def setBehaviorOnMxFailureUndefined: Self = StObject.set(x, "behaviorOnMxFailure", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailFromDomain(value: Input[String]): Self = StObject.set(x, "mailFromDomain", value.asInstanceOf[js.Any])
+      inline def setMailFromDomain(value: Input[String]): Self = StObject.set(x, "mailFromDomain", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,32 +122,24 @@ object mailFromMod {
   }
   object MailFromState {
     
-    @scala.inline
-    def apply(): MailFromState = {
+    inline def apply(): MailFromState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MailFromState]
     }
     
-    @scala.inline
-    implicit class MailFromStateMutableBuilder[Self <: MailFromState] (val x: Self) extends AnyVal {
+    extension [Self <: MailFromState](x: Self) {
       
-      @scala.inline
-      def setBehaviorOnMxFailure(value: Input[String]): Self = StObject.set(x, "behaviorOnMxFailure", value.asInstanceOf[js.Any])
+      inline def setBehaviorOnMxFailure(value: Input[String]): Self = StObject.set(x, "behaviorOnMxFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorOnMxFailureUndefined: Self = StObject.set(x, "behaviorOnMxFailure", js.undefined)
+      inline def setBehaviorOnMxFailureUndefined: Self = StObject.set(x, "behaviorOnMxFailure", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setMailFromDomain(value: Input[String]): Self = StObject.set(x, "mailFromDomain", value.asInstanceOf[js.Any])
+      inline def setMailFromDomain(value: Input[String]): Self = StObject.set(x, "mailFromDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailFromDomainUndefined: Self = StObject.set(x, "mailFromDomain", js.undefined)
+      inline def setMailFromDomainUndefined: Self = StObject.set(x, "mailFromDomain", js.undefined)
     }
   }
 }

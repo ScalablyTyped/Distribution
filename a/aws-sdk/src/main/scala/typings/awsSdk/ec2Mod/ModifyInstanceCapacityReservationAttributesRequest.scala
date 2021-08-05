@@ -23,25 +23,19 @@ trait ModifyInstanceCapacityReservationAttributesRequest extends StObject {
 }
 object ModifyInstanceCapacityReservationAttributesRequest {
   
-  @scala.inline
-  def apply(CapacityReservationSpecification: CapacityReservationSpecification, InstanceId: InstanceId): ModifyInstanceCapacityReservationAttributesRequest = {
+  inline def apply(CapacityReservationSpecification: CapacityReservationSpecification, InstanceId: InstanceId): ModifyInstanceCapacityReservationAttributesRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationSpecification = CapacityReservationSpecification.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceCapacityReservationAttributesRequest]
   }
   
-  @scala.inline
-  implicit class ModifyInstanceCapacityReservationAttributesRequestMutableBuilder[Self <: ModifyInstanceCapacityReservationAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstanceCapacityReservationAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityReservationSpecification(value: CapacityReservationSpecification): Self = StObject.set(x, "CapacityReservationSpecification", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationSpecification(value: CapacityReservationSpecification): Self = StObject.set(x, "CapacityReservationSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait CustomListDescriptor extends StObject {
 }
 object CustomListDescriptor {
   
-  @scala.inline
-  def apply(threads: js.Array[ThreadDescriptor | String]): CustomListDescriptor = {
+  inline def apply(threads: js.Array[ThreadDescriptor | String]): CustomListDescriptor = {
     val __obj = js.Dynamic.literal(threads = threads.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomListDescriptor]
   }
   
-  @scala.inline
-  implicit class CustomListDescriptorMutableBuilder[Self <: CustomListDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: CustomListDescriptor](x: Self) {
     
-    @scala.inline
-    def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+    inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
+    inline def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
     
-    @scala.inline
-    def setThreads(value: js.Array[ThreadDescriptor | String]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+    inline def setThreads(value: js.Array[ThreadDescriptor | String]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsVarargs(value: (ThreadDescriptor | String)*): Self = StObject.set(x, "threads", js.Array(value :_*))
+    inline def setThreadsVarargs(value: (ThreadDescriptor | String)*): Self = StObject.set(x, "threads", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

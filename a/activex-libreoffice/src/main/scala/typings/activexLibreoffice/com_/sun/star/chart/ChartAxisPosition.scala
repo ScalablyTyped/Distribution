@@ -22,18 +22,14 @@ trait ChartAxisPosition extends StObject
 object ChartAxisPosition {
   
   /** Cross the other axes at their maximum scale value. */
-  @scala.inline
-  def END: `2` = 2.asInstanceOf[`2`]
+  inline def END: `2` = 2.asInstanceOf[`2`]
   
   /** Cross the other axes at their minimum scale value. */
-  @scala.inline
-  def START: `1` = 1.asInstanceOf[`1`]
+  inline def START: `1` = 1.asInstanceOf[`1`]
   
   /** Cross the other axes at the value specified in the property CrossoverValue. */
-  @scala.inline
-  def VALUE: `3` = 3.asInstanceOf[`3`]
+  inline def VALUE: `3` = 3.asInstanceOf[`3`]
   
   /** Cross the other axes at zero. If zero is not contained in the current scale the value is used which is nearest to zero. */
-  @scala.inline
-  def ZERO: `0` = 0.asInstanceOf[`0`]
+  inline def ZERO: `0` = 0.asInstanceOf[`0`]
 }

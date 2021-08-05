@@ -61,6 +61,5 @@ object Repository {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(dir: js.Any, bare: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dir.asInstanceOf[js.Any], bare.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(dir: js.Any, bare: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dir.asInstanceOf[js.Any], bare.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

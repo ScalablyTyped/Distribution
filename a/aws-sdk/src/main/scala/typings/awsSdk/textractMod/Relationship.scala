@@ -18,28 +18,21 @@ trait Relationship extends StObject {
 }
 object Relationship {
   
-  @scala.inline
-  def apply(): Relationship = {
+  inline def apply(): Relationship = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Relationship]
   }
   
-  @scala.inline
-  implicit class RelationshipMutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
+  extension [Self <: Relationship](x: Self) {
     
-    @scala.inline
-    def setIds(value: IdList): Self = StObject.set(x, "Ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: IdList): Self = StObject.set(x, "Ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "Ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "Ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "Ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "Ids", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: RelationshipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RelationshipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

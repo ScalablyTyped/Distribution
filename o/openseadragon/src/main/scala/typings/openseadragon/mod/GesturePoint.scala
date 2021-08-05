@@ -36,8 +36,7 @@ trait GesturePoint extends StObject {
 }
 object GesturePoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     captured: Boolean,
     contactPos: Point,
     contactTime: Double,
@@ -58,49 +57,34 @@ object GesturePoint {
     __obj.asInstanceOf[GesturePoint]
   }
   
-  @scala.inline
-  implicit class GesturePointMutableBuilder[Self <: GesturePoint] (val x: Self) extends AnyVal {
+  extension [Self <: GesturePoint](x: Self) {
     
-    @scala.inline
-    def setCaptured(value: Boolean): Self = StObject.set(x, "captured", value.asInstanceOf[js.Any])
+    inline def setCaptured(value: Boolean): Self = StObject.set(x, "captured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactPos(value: Point): Self = StObject.set(x, "contactPos", value.asInstanceOf[js.Any])
+    inline def setContactPos(value: Point): Self = StObject.set(x, "contactPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactTime(value: Double): Self = StObject.set(x, "contactTime", value.asInstanceOf[js.Any])
+    inline def setContactTime(value: Double): Self = StObject.set(x, "contactTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPos(value: Point): Self = StObject.set(x, "currentPos", value.asInstanceOf[js.Any])
+    inline def setCurrentPos(value: Point): Self = StObject.set(x, "currentPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideElement(value: Boolean): Self = StObject.set(x, "insideElement", value.asInstanceOf[js.Any])
+    inline def setInsideElement(value: Boolean): Self = StObject.set(x, "insideElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideElementPressed(value: Boolean): Self = StObject.set(x, "insideElementPressed", value.asInstanceOf[js.Any])
+    inline def setInsideElementPressed(value: Boolean): Self = StObject.set(x, "insideElementPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPos(value: Point): Self = StObject.set(x, "lastPos", value.asInstanceOf[js.Any])
+    inline def setLastPos(value: Point): Self = StObject.set(x, "lastPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
+    inline def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

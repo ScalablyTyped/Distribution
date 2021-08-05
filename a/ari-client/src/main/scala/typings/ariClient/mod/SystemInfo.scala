@@ -18,19 +18,15 @@ trait SystemInfo extends StObject {
 }
 object SystemInfo {
   
-  @scala.inline
-  def apply(entity_id: String, version: String): SystemInfo = {
+  inline def apply(entity_id: String, version: String): SystemInfo = {
     val __obj = js.Dynamic.literal(entity_id = entity_id.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfo]
   }
   
-  @scala.inline
-  implicit class SystemInfoMutableBuilder[Self <: SystemInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfo](x: Self) {
     
-    @scala.inline
-    def setEntity_id(value: String): Self = StObject.set(x, "entity_id", value.asInstanceOf[js.Any])
+    inline def setEntity_id(value: String): Self = StObject.set(x, "entity_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

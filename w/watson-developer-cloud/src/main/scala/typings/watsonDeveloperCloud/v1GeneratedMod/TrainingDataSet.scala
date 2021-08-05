@@ -18,34 +18,25 @@ trait TrainingDataSet extends StObject {
 }
 object TrainingDataSet {
   
-  @scala.inline
-  def apply(): TrainingDataSet = {
+  inline def apply(): TrainingDataSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingDataSet]
   }
   
-  @scala.inline
-  implicit class TrainingDataSetMutableBuilder[Self <: TrainingDataSet] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingDataSet](x: Self) {
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
+    inline def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment_idUndefined: Self = StObject.set(x, "environment_id", js.undefined)
+    inline def setEnvironment_idUndefined: Self = StObject.set(x, "environment_id", js.undefined)
     
-    @scala.inline
-    def setQueries(value: js.Array[TrainingQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[TrainingQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    @scala.inline
-    def setQueriesVarargs(value: TrainingQuery*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: TrainingQuery*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

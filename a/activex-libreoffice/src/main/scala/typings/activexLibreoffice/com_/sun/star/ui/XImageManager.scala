@@ -79,8 +79,7 @@ trait XImageManager
 }
 object XImageManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addConfigurationListener: XUIConfigurationListener => Unit,
     addEventListener: XEventListener => Unit,
@@ -107,28 +106,20 @@ object XImageManager {
     __obj.asInstanceOf[XImageManager]
   }
   
-  @scala.inline
-  implicit class XImageManagerMutableBuilder[Self <: XImageManager] (val x: Self) extends AnyVal {
+  extension [Self <: XImageManager](x: Self) {
     
-    @scala.inline
-    def setGetAllImageNames(value: Double => SafeArray[String]): Self = StObject.set(x, "getAllImageNames", js.Any.fromFunction1(value))
+    inline def setGetAllImageNames(value: Double => SafeArray[String]): Self = StObject.set(x, "getAllImageNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetImages(value: (Double, SeqEquiv[String]) => SafeArray[XGraphic]): Self = StObject.set(x, "getImages", js.Any.fromFunction2(value))
+    inline def setGetImages(value: (Double, SeqEquiv[String]) => SafeArray[XGraphic]): Self = StObject.set(x, "getImages", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasImage(value: (Double, String) => Boolean): Self = StObject.set(x, "hasImage", js.Any.fromFunction2(value))
+    inline def setHasImage(value: (Double, String) => Boolean): Self = StObject.set(x, "hasImage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = StObject.set(x, "insertImages", js.Any.fromFunction3(value))
+    inline def setInsertImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = StObject.set(x, "insertImages", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveImages(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "removeImages", js.Any.fromFunction2(value))
+    inline def setRemoveImages(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "removeImages", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReplaceImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = StObject.set(x, "replaceImages", js.Any.fromFunction3(value))
+    inline def setReplaceImages(value: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit): Self = StObject.set(x, "replaceImages", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

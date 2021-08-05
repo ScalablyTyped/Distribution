@@ -25,19 +25,15 @@ trait IngressRule extends StObject {
 }
 object IngressRule {
   
-  @scala.inline
-  def apply(host: String, http: HTTPIngressRuleValue): IngressRule = {
+  inline def apply(host: String, http: HTTPIngressRuleValue): IngressRule = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngressRule]
   }
   
-  @scala.inline
-  implicit class IngressRuleMutableBuilder[Self <: IngressRule] (val x: Self) extends AnyVal {
+  extension [Self <: IngressRule](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp(value: HTTPIngressRuleValue): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: HTTPIngressRuleValue): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

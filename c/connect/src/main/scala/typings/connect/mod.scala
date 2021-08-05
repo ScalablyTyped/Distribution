@@ -13,8 +13,7 @@ object mod {
     * Create a new connect server.
     * @public
     */
-  @scala.inline
-  def apply(): Server = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Server]
+  inline def apply(): Server = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Server]
   
   @JSImport("connect", JSImport.Namespace)
   @js.native
@@ -129,31 +128,24 @@ object mod {
   }
   object ServerStackItem {
     
-    @scala.inline
-    def apply(handle: ServerHandle, route: String): ServerStackItem = {
+    inline def apply(handle: ServerHandle, route: String): ServerStackItem = {
       val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerStackItem]
     }
     
-    @scala.inline
-    implicit class ServerStackItemMutableBuilder[Self <: ServerStackItem] (val x: Self) extends AnyVal {
+    extension [Self <: ServerStackItem](x: Self) {
       
-      @scala.inline
-      def setHandle(value: ServerHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: ServerHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleFunction2(value: (/* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction2(value))
+      inline def setHandleFunction2(value: (/* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleFunction3(value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction) => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
+      inline def setHandleFunction3(value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction) => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandleFunction4(
+      inline def setHandleFunction4(
         value: (/* err */ js.Any, /* req */ IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction) => Unit
       ): Self = StObject.set(x, "handle", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   

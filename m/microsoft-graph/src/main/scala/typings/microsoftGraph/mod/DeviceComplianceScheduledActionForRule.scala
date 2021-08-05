@@ -16,34 +16,25 @@ trait DeviceComplianceScheduledActionForRule
 }
 object DeviceComplianceScheduledActionForRule {
   
-  @scala.inline
-  def apply(): DeviceComplianceScheduledActionForRule = {
+  inline def apply(): DeviceComplianceScheduledActionForRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceComplianceScheduledActionForRule]
   }
   
-  @scala.inline
-  implicit class DeviceComplianceScheduledActionForRuleMutableBuilder[Self <: DeviceComplianceScheduledActionForRule] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceComplianceScheduledActionForRule](x: Self) {
     
-    @scala.inline
-    def setRuleName(value: NullableOption[String]): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: NullableOption[String]): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameNull: Self = StObject.set(x, "ruleName", null)
+    inline def setRuleNameNull: Self = StObject.set(x, "ruleName", null)
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
     
-    @scala.inline
-    def setScheduledActionConfigurations(value: NullableOption[js.Array[DeviceComplianceActionItem]]): Self = StObject.set(x, "scheduledActionConfigurations", value.asInstanceOf[js.Any])
+    inline def setScheduledActionConfigurations(value: NullableOption[js.Array[DeviceComplianceActionItem]]): Self = StObject.set(x, "scheduledActionConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionConfigurationsNull: Self = StObject.set(x, "scheduledActionConfigurations", null)
+    inline def setScheduledActionConfigurationsNull: Self = StObject.set(x, "scheduledActionConfigurations", null)
     
-    @scala.inline
-    def setScheduledActionConfigurationsUndefined: Self = StObject.set(x, "scheduledActionConfigurations", js.undefined)
+    inline def setScheduledActionConfigurationsUndefined: Self = StObject.set(x, "scheduledActionConfigurations", js.undefined)
     
-    @scala.inline
-    def setScheduledActionConfigurationsVarargs(value: DeviceComplianceActionItem*): Self = StObject.set(x, "scheduledActionConfigurations", js.Array(value :_*))
+    inline def setScheduledActionConfigurationsVarargs(value: DeviceComplianceActionItem*): Self = StObject.set(x, "scheduledActionConfigurations", js.Array(value :_*))
   }
 }

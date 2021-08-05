@@ -12,17 +12,14 @@ object anon {
   }
   object Cancel {
     
-    @scala.inline
-    def apply(cancel: () => Unit): Cancel = {
+    inline def apply(cancel: () => Unit): Cancel = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
       __obj.asInstanceOf[Cancel]
     }
     
-    @scala.inline
-    implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+    extension [Self <: Cancel](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
   }
   
@@ -34,26 +31,20 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(): Delay = {
+    inline def apply(): Delay = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -63,8 +54,7 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `type`: /* import warning: importer.ImportType#apply Failed type conversion: infer BuildType */ js.Any
     ): Type = {
       val __obj = js.Dynamic.literal()
@@ -72,11 +62,9 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: /* import warning: importer.ImportType#apply Failed type conversion: infer BuildType */ js.Any
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

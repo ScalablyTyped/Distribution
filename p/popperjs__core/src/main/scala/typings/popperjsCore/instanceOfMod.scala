@@ -10,12 +10,9 @@ object instanceOfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isElement(node: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isElement(node: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isHTMLElement(node: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHTMLElement(node: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLElement")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isShadowRoot(node: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShadowRoot")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isShadowRoot(node: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShadowRoot")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

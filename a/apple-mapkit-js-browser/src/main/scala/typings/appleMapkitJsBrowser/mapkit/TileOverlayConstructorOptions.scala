@@ -32,37 +32,27 @@ trait TileOverlayConstructorOptions extends StObject {
 }
 object TileOverlayConstructorOptions {
   
-  @scala.inline
-  def apply(): TileOverlayConstructorOptions = {
+  inline def apply(): TileOverlayConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileOverlayConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TileOverlayConstructorOptionsMutableBuilder[Self <: TileOverlayConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileOverlayConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
+    inline def setMaximumZ(value: Double): Self = StObject.set(x, "maximumZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumZUndefined: Self = StObject.set(x, "maximumZ", js.undefined)
+    inline def setMaximumZUndefined: Self = StObject.set(x, "maximumZ", js.undefined)
     
-    @scala.inline
-    def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
+    inline def setMinimumZ(value: Double): Self = StObject.set(x, "minimumZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumZUndefined: Self = StObject.set(x, "minimumZ", js.undefined)
+    inline def setMinimumZUndefined: Self = StObject.set(x, "minimumZ", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

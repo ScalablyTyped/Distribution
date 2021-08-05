@@ -18,25 +18,19 @@ trait EnabledServicePrincipal extends StObject {
 }
 object EnabledServicePrincipal {
   
-  @scala.inline
-  def apply(): EnabledServicePrincipal = {
+  inline def apply(): EnabledServicePrincipal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnabledServicePrincipal]
   }
   
-  @scala.inline
-  implicit class EnabledServicePrincipalMutableBuilder[Self <: EnabledServicePrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: EnabledServicePrincipal](x: Self) {
     
-    @scala.inline
-    def setDateEnabled(value: Timestamp): Self = StObject.set(x, "DateEnabled", value.asInstanceOf[js.Any])
+    inline def setDateEnabled(value: Timestamp): Self = StObject.set(x, "DateEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateEnabledUndefined: Self = StObject.set(x, "DateEnabled", js.undefined)
+    inline def setDateEnabledUndefined: Self = StObject.set(x, "DateEnabled", js.undefined)
     
-    @scala.inline
-    def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
+    inline def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePrincipalUndefined: Self = StObject.set(x, "ServicePrincipal", js.undefined)
+    inline def setServicePrincipalUndefined: Self = StObject.set(x, "ServicePrincipal", js.undefined)
   }
 }

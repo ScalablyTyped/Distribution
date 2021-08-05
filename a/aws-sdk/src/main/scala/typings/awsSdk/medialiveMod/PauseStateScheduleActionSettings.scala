@@ -10,22 +10,17 @@ trait PauseStateScheduleActionSettings extends StObject {
 }
 object PauseStateScheduleActionSettings {
   
-  @scala.inline
-  def apply(): PauseStateScheduleActionSettings = {
+  inline def apply(): PauseStateScheduleActionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PauseStateScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class PauseStateScheduleActionSettingsMutableBuilder[Self <: PauseStateScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PauseStateScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setPipelines(value: listOfPipelinePauseStateSettings): Self = StObject.set(x, "Pipelines", value.asInstanceOf[js.Any])
+    inline def setPipelines(value: listOfPipelinePauseStateSettings): Self = StObject.set(x, "Pipelines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelinesUndefined: Self = StObject.set(x, "Pipelines", js.undefined)
+    inline def setPipelinesUndefined: Self = StObject.set(x, "Pipelines", js.undefined)
     
-    @scala.inline
-    def setPipelinesVarargs(value: PipelinePauseStateSettings*): Self = StObject.set(x, "Pipelines", js.Array(value :_*))
+    inline def setPipelinesVarargs(value: PipelinePauseStateSettings*): Self = StObject.set(x, "Pipelines", js.Array(value :_*))
   }
 }

@@ -11,13 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSeed(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("createSeed")().asInstanceOf[Double]
+  inline def createSeed(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("createSeed")().asInstanceOf[Double]
   
   @JSImport("@esfx/internal-murmur3", "defaultSeed")
   @js.native
   val defaultSeed: Double = js.native
   
-  @scala.inline
-  def hash(buffer: ArrayBuffer, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(buffer.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def hash(buffer: ArrayBuffer, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(buffer.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

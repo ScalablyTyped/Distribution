@@ -12,6 +12,5 @@ object datePickerStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def styles(props: IDatePickerStyleProps): IDatePickerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("styles")(props.asInstanceOf[js.Any]).asInstanceOf[IDatePickerStyles]
+  inline def styles(props: IDatePickerStyleProps): IDatePickerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("styles")(props.asInstanceOf[js.Any]).asInstanceOf[IDatePickerStyles]
 }

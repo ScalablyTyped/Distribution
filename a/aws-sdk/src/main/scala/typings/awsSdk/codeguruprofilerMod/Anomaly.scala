@@ -23,25 +23,19 @@ trait Anomaly extends StObject {
 }
 object Anomaly {
   
-  @scala.inline
-  def apply(instances: AnomalyInstances, metric: Metric, reason: String): Anomaly = {
+  inline def apply(instances: AnomalyInstances, metric: Metric, reason: String): Anomaly = {
     val __obj = js.Dynamic.literal(instances = instances.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anomaly]
   }
   
-  @scala.inline
-  implicit class AnomalyMutableBuilder[Self <: Anomaly] (val x: Self) extends AnyVal {
+  extension [Self <: Anomaly](x: Self) {
     
-    @scala.inline
-    def setInstances(value: AnomalyInstances): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: AnomalyInstances): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesVarargs(value: AnomalyInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: AnomalyInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setMetric(value: Metric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Metric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

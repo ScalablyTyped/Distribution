@@ -11,16 +11,13 @@ trait PickImplcontinuous extends StObject {
 }
 object PickImplcontinuous {
   
-  @scala.inline
-  def apply(continuous: Boolean): PickImplcontinuous = {
+  inline def apply(continuous: Boolean): PickImplcontinuous = {
     val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontinuous]
   }
   
-  @scala.inline
-  implicit class PickImplcontinuousMutableBuilder[Self <: PickImplcontinuous] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcontinuous](x: Self) {
     
-    @scala.inline
-    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
   }
 }

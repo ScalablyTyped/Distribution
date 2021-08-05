@@ -21,43 +21,31 @@ trait QueryRelationsRelationship extends StObject {
 }
 object QueryRelationsRelationship {
   
-  @scala.inline
-  def apply(): QueryRelationsRelationship = {
+  inline def apply(): QueryRelationsRelationship = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRelationsRelationship]
   }
   
-  @scala.inline
-  implicit class QueryRelationsRelationshipMutableBuilder[Self <: QueryRelationsRelationship] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRelationsRelationship](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[QueryRelationsArgument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[QueryRelationsArgument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: QueryRelationsArgument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: QueryRelationsArgument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setEvidence(value: js.Array[QueryEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
+    inline def setEvidence(value: js.Array[QueryEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
+    inline def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
     
-    @scala.inline
-    def setEvidenceVarargs(value: QueryEvidence*): Self = StObject.set(x, "evidence", js.Array(value :_*))
+    inline def setEvidenceVarargs(value: QueryEvidence*): Self = StObject.set(x, "evidence", js.Array(value :_*))
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

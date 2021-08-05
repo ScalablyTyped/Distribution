@@ -27,8 +27,7 @@ object dlm {
   }
   object LifecyclePolicyPolicyDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       resourceTypes: Input[js.Array[Input[String]]],
       schedules: Input[js.Array[Input[LifecyclePolicyPolicyDetailsSchedule]]],
       targetTags: Input[StringDictionary[Input[String]]]
@@ -37,23 +36,17 @@ object dlm {
       __obj.asInstanceOf[LifecyclePolicyPolicyDetails]
     }
     
-    @scala.inline
-    implicit class LifecyclePolicyPolicyDetailsMutableBuilder[Self <: LifecyclePolicyPolicyDetails] (val x: Self) extends AnyVal {
+    extension [Self <: LifecyclePolicyPolicyDetails](x: Self) {
       
-      @scala.inline
-      def setResourceTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
+      inline def setResourceTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTypesVarargs(value: Input[String]*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+      inline def setResourceTypesVarargs(value: Input[String]*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedules(value: Input[js.Array[Input[LifecyclePolicyPolicyDetailsSchedule]]]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
+      inline def setSchedules(value: Input[js.Array[Input[LifecyclePolicyPolicyDetailsSchedule]]]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedulesVarargs(value: Input[LifecyclePolicyPolicyDetailsSchedule]*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+      inline def setSchedulesVarargs(value: Input[LifecyclePolicyPolicyDetailsSchedule]*): Self = StObject.set(x, "schedules", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "targetTags", value.asInstanceOf[js.Any])
+      inline def setTargetTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "targetTags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,8 +79,7 @@ object dlm {
   }
   object LifecyclePolicyPolicyDetailsSchedule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createRule: Input[LifecyclePolicyPolicyDetailsScheduleCreateRule],
       name: Input[String],
       retainRule: Input[LifecyclePolicyPolicyDetailsScheduleRetainRule]
@@ -96,29 +88,21 @@ object dlm {
       __obj.asInstanceOf[LifecyclePolicyPolicyDetailsSchedule]
     }
     
-    @scala.inline
-    implicit class LifecyclePolicyPolicyDetailsScheduleMutableBuilder[Self <: LifecyclePolicyPolicyDetailsSchedule] (val x: Self) extends AnyVal {
+    extension [Self <: LifecyclePolicyPolicyDetailsSchedule](x: Self) {
       
-      @scala.inline
-      def setCopyTags(value: Input[Boolean]): Self = StObject.set(x, "copyTags", value.asInstanceOf[js.Any])
+      inline def setCopyTags(value: Input[Boolean]): Self = StObject.set(x, "copyTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyTagsUndefined: Self = StObject.set(x, "copyTags", js.undefined)
+      inline def setCopyTagsUndefined: Self = StObject.set(x, "copyTags", js.undefined)
       
-      @scala.inline
-      def setCreateRule(value: Input[LifecyclePolicyPolicyDetailsScheduleCreateRule]): Self = StObject.set(x, "createRule", value.asInstanceOf[js.Any])
+      inline def setCreateRule(value: Input[LifecyclePolicyPolicyDetailsScheduleCreateRule]): Self = StObject.set(x, "createRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainRule(value: Input[LifecyclePolicyPolicyDetailsScheduleRetainRule]): Self = StObject.set(x, "retainRule", value.asInstanceOf[js.Any])
+      inline def setRetainRule(value: Input[LifecyclePolicyPolicyDetailsScheduleRetainRule]): Self = StObject.set(x, "retainRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsToAdd(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tagsToAdd", value.asInstanceOf[js.Any])
+      inline def setTagsToAdd(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tagsToAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsToAddUndefined: Self = StObject.set(x, "tagsToAdd", js.undefined)
+      inline def setTagsToAddUndefined: Self = StObject.set(x, "tagsToAdd", js.undefined)
     }
   }
   
@@ -141,29 +125,22 @@ object dlm {
   }
   object LifecyclePolicyPolicyDetailsScheduleCreateRule {
     
-    @scala.inline
-    def apply(interval: Input[Double]): LifecyclePolicyPolicyDetailsScheduleCreateRule = {
+    inline def apply(interval: Input[Double]): LifecyclePolicyPolicyDetailsScheduleCreateRule = {
       val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
       __obj.asInstanceOf[LifecyclePolicyPolicyDetailsScheduleCreateRule]
     }
     
-    @scala.inline
-    implicit class LifecyclePolicyPolicyDetailsScheduleCreateRuleMutableBuilder[Self <: LifecyclePolicyPolicyDetailsScheduleCreateRule] (val x: Self) extends AnyVal {
+    extension [Self <: LifecyclePolicyPolicyDetailsScheduleCreateRule](x: Self) {
       
-      @scala.inline
-      def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUnit(value: Input[String]): Self = StObject.set(x, "intervalUnit", value.asInstanceOf[js.Any])
+      inline def setIntervalUnit(value: Input[String]): Self = StObject.set(x, "intervalUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUnitUndefined: Self = StObject.set(x, "intervalUnit", js.undefined)
+      inline def setIntervalUnitUndefined: Self = StObject.set(x, "intervalUnit", js.undefined)
       
-      @scala.inline
-      def setTimes(value: Input[String]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+      inline def setTimes(value: Input[String]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
+      inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
     }
   }
   
@@ -176,17 +153,14 @@ object dlm {
   }
   object LifecyclePolicyPolicyDetailsScheduleRetainRule {
     
-    @scala.inline
-    def apply(count: Input[Double]): LifecyclePolicyPolicyDetailsScheduleRetainRule = {
+    inline def apply(count: Input[Double]): LifecyclePolicyPolicyDetailsScheduleRetainRule = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
       __obj.asInstanceOf[LifecyclePolicyPolicyDetailsScheduleRetainRule]
     }
     
-    @scala.inline
-    implicit class LifecyclePolicyPolicyDetailsScheduleRetainRuleMutableBuilder[Self <: LifecyclePolicyPolicyDetailsScheduleRetainRule] (val x: Self) extends AnyVal {
+    extension [Self <: LifecyclePolicyPolicyDetailsScheduleRetainRule](x: Self) {
       
-      @scala.inline
-      def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
   }
 }

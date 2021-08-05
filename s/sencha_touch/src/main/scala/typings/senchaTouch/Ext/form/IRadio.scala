@@ -28,31 +28,23 @@ trait IRadio
 }
 object IRadio {
   
-  @scala.inline
-  def apply(): IRadio = {
+  inline def apply(): IRadio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRadio]
   }
   
-  @scala.inline
-  implicit class IRadioMutableBuilder[Self <: IRadio] (val x: Self) extends AnyVal {
+  extension [Self <: IRadio](x: Self) {
     
-    @scala.inline
-    def setGetGroupValue(value: () => String): Self = StObject.set(x, "getGroupValue", js.Any.fromFunction0(value))
+    inline def setGetGroupValue(value: () => String): Self = StObject.set(x, "getGroupValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupValueUndefined: Self = StObject.set(x, "getGroupValue", js.undefined)
+    inline def setGetGroupValueUndefined: Self = StObject.set(x, "getGroupValue", js.undefined)
     
-    @scala.inline
-    def setSetGroupValue(value: /* value */ js.UndefOr[String] => IRadio): Self = StObject.set(x, "setGroupValue", js.Any.fromFunction1(value))
+    inline def setSetGroupValue(value: /* value */ js.UndefOr[String] => IRadio): Self = StObject.set(x, "setGroupValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroupValueUndefined: Self = StObject.set(x, "setGroupValue", js.undefined)
+    inline def setSetGroupValueUndefined: Self = StObject.set(x, "setGroupValue", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => IRadio): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => IRadio): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
   }
 }

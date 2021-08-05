@@ -28,20 +28,16 @@ object sliderMod {
   }
   object SliderPickerProps {
     
-    @scala.inline
-    def apply(): SliderPickerProps = {
+    inline def apply(): SliderPickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderPickerProps]
     }
     
-    @scala.inline
-    implicit class SliderPickerPropsMutableBuilder[Self <: SliderPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderPickerProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: PartialClassesSliderPicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialClassesSliderPicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -53,17 +49,14 @@ object sliderMod {
   }
   object SliderPickerStylesProps {
     
-    @scala.inline
-    def apply(Hue: CSSProperties, hue: CSSProperties): SliderPickerStylesProps = {
+    inline def apply(Hue: CSSProperties, hue: CSSProperties): SliderPickerStylesProps = {
       val __obj = js.Dynamic.literal(Hue = Hue.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliderPickerStylesProps]
     }
     
-    @scala.inline
-    implicit class SliderPickerStylesPropsMutableBuilder[Self <: SliderPickerStylesProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderPickerStylesProps](x: Self) {
       
-      @scala.inline
-      def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     }
   }
 }

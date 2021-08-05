@@ -65,98 +65,98 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 abstract class BaseLanguageClient protected () extends StObject {
   def this(id: String, name: String, clientOptions: LanguageClientOptions) = this()
   
-  var _c2p: js.Any = js.native
+  /* private */ var _c2p: js.Any = js.native
   
-  var _capabilities: js.Any = js.native
+  /* private */ var _capabilities: js.Any = js.native
   
-  var _clientGetRootPath: js.Any = js.native
+  /* private */ var _clientGetRootPath: js.Any = js.native
   
-  var _clientOptions: js.Any = js.native
+  /* private */ var _clientOptions: js.Any = js.native
   
-  var _connectionPromise: js.Any = js.native
+  /* private */ var _connectionPromise: js.Any = js.native
   
-  var _diagnostics: js.Any = js.native
+  /* private */ var _diagnostics: js.Any = js.native
   
-  var _disposeOutputChannel: js.Any = js.native
+  /* private */ var _disposeOutputChannel: js.Any = js.native
   
-  val _dynamicFeatures: js.Any = js.native
+  /* private */ val _dynamicFeatures: js.Any = js.native
   
-  val _features: js.Any = js.native
+  /* private */ val _features: js.Any = js.native
   
-  var _fileEventDelayer: js.Any = js.native
+  /* private */ var _fileEventDelayer: js.Any = js.native
   
-  var _fileEvents: js.Any = js.native
+  /* private */ var _fileEvents: js.Any = js.native
   
-  var _id: js.Any = js.native
+  /* private */ var _id: js.Any = js.native
   
-  var _initializeResult: js.Any = js.native
+  /* private */ var _initializeResult: js.Any = js.native
   
-  var _listeners: js.Any = js.native
+  /* private */ var _listeners: js.Any = js.native
   
-  val _method2Message: js.Any = js.native
+  /* private */ val _method2Message: js.Any = js.native
   
-  var _name: js.Any = js.native
+  /* private */ var _name: js.Any = js.native
   
-  var _onReady: js.Any = js.native
+  /* private */ var _onReady: js.Any = js.native
   
-  var _onReadyCallbacks: js.Any = js.native
+  /* private */ var _onReadyCallbacks: js.Any = js.native
   
-  var _onStop: js.Any = js.native
+  /* private */ var _onStop: js.Any = js.native
   
-  var _outputChannel: js.Any = js.native
+  /* private */ var _outputChannel: js.Any = js.native
   
-  var _p2c: js.Any = js.native
+  /* private */ var _p2c: js.Any = js.native
   
-  var _providers: js.Any = js.native
+  /* private */ var _providers: js.Any = js.native
   
-  var _resolvedConnection: js.Any = js.native
+  /* private */ var _resolvedConnection: js.Any = js.native
   
-  var _state: js.Any = js.native
+  /* private */ var _state: js.Any = js.native
   
-  var _stateChangeEmitter: js.Any = js.native
+  /* private */ var _stateChangeEmitter: js.Any = js.native
   
-  var _syncedDocuments: js.Any = js.native
+  /* private */ var _syncedDocuments: js.Any = js.native
   
-  var _telemetryEmitter: js.Any = js.native
+  /* private */ var _telemetryEmitter: js.Any = js.native
   
-  var _trace: js.Any = js.native
+  /* private */ var _trace: js.Any = js.native
   
-  var _traceFormat: js.Any = js.native
+  /* private */ var _traceFormat: js.Any = js.native
   
-  var _traceOutputChannel: js.Any = js.native
+  /* private */ var _traceOutputChannel: js.Any = js.native
   
-  var _tracer: js.Any = js.native
+  /* private */ var _tracer: js.Any = js.native
   
-  var cleanUp: js.Any = js.native
+  /* private */ var cleanUp: js.Any = js.native
   
-  var cleanUpChannel: js.Any = js.native
+  /* private */ var cleanUpChannel: js.Any = js.native
   
   def clientOptions: LanguageClientOptions = js.native
   
   def code2ProtocolConverter: Converter = js.native
   
-  var computeClientCapabilities: js.Any = js.native
+  /* private */ var computeClientCapabilities: js.Any = js.native
   
-  var createConnection: js.Any = js.native
+  /* private */ var createConnection: js.Any = js.native
   
   def createDefaultErrorHandler(): ErrorHandler = js.native
   
   /* protected */ def createMessageTransports(encoding: String): js.Promise[MessageTransports] = js.native
   
-  var data2String: js.Any = js.native
+  /* private */ var data2String: js.Any = js.native
   
   def diagnostics: js.UndefOr[DiagnosticCollection] = js.native
   
-  var doInitialize: js.Any = js.native
+  /* private */ var doInitialize: js.Any = js.native
   
   def error(message: String): Unit = js.native
   def error(message: String, data: js.Any): Unit = js.native
   def error(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
   def error(message: String, data: Unit, showNotification: Boolean): Unit = js.native
   
-  var fillInitializeParams: js.Any = js.native
+  /* private */ var fillInitializeParams: js.Any = js.native
   
-  var forceDocumentSync: js.Any = js.native
+  /* private */ var forceDocumentSync: js.Any = js.native
   
   @JSName("getFeature")
   def getFeature_textDocumentcodeAction(request: textDocumentSlashcodeAction): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & TextDocumentProviderFeature[CodeActionProvider[typings.vscode.mod.CodeAction]] = js.native
@@ -216,48 +216,48 @@ abstract class BaseLanguageClient protected () extends StObject {
   @JSName("getFeature")
   def getFeature_workspacesymbol(request: workspaceSlashsymbol): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] & WorkspaceProviderFeature[WorkspaceSymbolProvider[typings.vscode.mod.SymbolInformation]] = js.native
   
-  var getPublicState: js.Any = js.native
+  /* private */ var getPublicState: js.Any = js.native
   
-  var handleApplyWorkspaceEdit: js.Any = js.native
+  /* private */ var handleApplyWorkspaceEdit: js.Any = js.native
   
   /* protected */ def handleConnectionClosed(): Unit = js.native
   
-  var handleConnectionError: js.Any = js.native
+  /* private */ var handleConnectionError: js.Any = js.native
   
-  var handleDiagnostics: js.Any = js.native
+  /* private */ var handleDiagnostics: js.Any = js.native
   
-  var handleRegistrationRequest: js.Any = js.native
+  /* private */ var handleRegistrationRequest: js.Any = js.native
   
-  var handleUnregistrationRequest: js.Any = js.native
+  /* private */ var handleUnregistrationRequest: js.Any = js.native
   
-  var hookConfigurationChanged: js.Any = js.native
+  /* private */ var hookConfigurationChanged: js.Any = js.native
   
-  var hookFileEvents: js.Any = js.native
+  /* private */ var hookFileEvents: js.Any = js.native
   
   def info(message: String): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native
   def info(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
   def info(message: String, data: Unit, showNotification: Boolean): Unit = js.native
   
-  var initialize: js.Any = js.native
+  /* private */ var initialize: js.Any = js.native
   
-  var initializeFeatures: js.Any = js.native
+  /* private */ var initializeFeatures: js.Any = js.native
   
   def initializeResult: js.UndefOr[InitializeResult[js.Any]] = js.native
   
-  var isConnectionActive: js.Any = js.native
+  /* private */ var isConnectionActive: js.Any = js.native
   
   def logFailedRequest(`type`: typings.vscodeJsonrpc.messagesMod.MessageType, error: js.Any): Unit = js.native
   
-  var logObjectTrace: js.Any = js.native
+  /* private */ var logObjectTrace: js.Any = js.native
   
-  var logTrace: js.Any = js.native
+  /* private */ var logTrace: js.Any = js.native
   
   def needsStart(): Boolean = js.native
   
   def needsStop(): Boolean = js.native
   
-  var notifyFileEvent: js.Any = js.native
+  /* private */ var notifyFileEvent: js.Any = js.native
   
   def onDidChangeState: typings.vscodeJsonrpc.eventsMod.Event[StateChangeEvent] = js.native
   
@@ -300,7 +300,7 @@ abstract class BaseLanguageClient protected () extends StObject {
   
   def protocol2CodeConverter: typings.vscodeLanguageclient.protocolConverterMod.Converter = js.native
   
-  var refreshTrace: js.Any = js.native
+  /* private */ var refreshTrace: js.Any = js.native
   
   /* protected */ def registerBuiltinFeatures(): Unit = js.native
   
@@ -309,7 +309,7 @@ abstract class BaseLanguageClient protected () extends StObject {
   
   def registerFeatures(features: js.Array[StaticFeature | DynamicFeature[js.Any]]): Unit = js.native
   
-  var resolveConnection: js.Any = js.native
+  /* private */ var resolveConnection: js.Any = js.native
   
   def sendNotification(method: String): Unit = js.native
   def sendNotification(method: String, params: js.Any): Unit = js.native
@@ -336,9 +336,9 @@ abstract class BaseLanguageClient protected () extends StObject {
     token: typings.vscode.mod.CancellationToken
   ): js.Promise[R] = js.native
   
-  var setDiagnostics: js.Any = js.native
+  /* private */ var setDiagnostics: js.Any = js.native
   
-  var showNotificationMessage: js.Any = js.native
+  /* private */ var showNotificationMessage: js.Any = js.native
   
   def start(): typings.vscode.mod.Disposable = js.native
   

@@ -23,8 +23,7 @@ trait XDeleteRows
 }
 object XDeleteRows {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     deleteRows: SeqEquiv[js.Any] => SafeArray[Double],
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XDeleteRows {
     __obj.asInstanceOf[XDeleteRows]
   }
   
-  @scala.inline
-  implicit class XDeleteRowsMutableBuilder[Self <: XDeleteRows] (val x: Self) extends AnyVal {
+  extension [Self <: XDeleteRows](x: Self) {
     
-    @scala.inline
-    def setDeleteRows(value: SeqEquiv[js.Any] => SafeArray[Double]): Self = StObject.set(x, "deleteRows", js.Any.fromFunction1(value))
+    inline def setDeleteRows(value: SeqEquiv[js.Any] => SafeArray[Double]): Self = StObject.set(x, "deleteRows", js.Any.fromFunction1(value))
   }
 }

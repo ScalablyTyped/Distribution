@@ -29,34 +29,25 @@ trait IgUploadFileExtensionIcons
 }
 object IgUploadFileExtensionIcons {
   
-  @scala.inline
-  def apply(): IgUploadFileExtensionIcons = {
+  inline def apply(): IgUploadFileExtensionIcons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgUploadFileExtensionIcons]
   }
   
-  @scala.inline
-  implicit class IgUploadFileExtensionIconsMutableBuilder[Self <: IgUploadFileExtensionIcons] (val x: Self) extends AnyVal {
+  extension [Self <: IgUploadFileExtensionIcons](x: Self) {
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setDef(value: Boolean): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    inline def setDef(value: Boolean): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
+    inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
     
-    @scala.inline
-    def setExt(value: js.Array[js.Any]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: js.Array[js.Any]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+    inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
-    @scala.inline
-    def setExtVarargs(value: js.Any*): Self = StObject.set(x, "ext", js.Array(value :_*))
+    inline def setExtVarargs(value: js.Any*): Self = StObject.set(x, "ext", js.Array(value :_*))
   }
 }

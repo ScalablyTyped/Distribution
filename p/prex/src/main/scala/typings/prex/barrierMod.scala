@@ -23,25 +23,25 @@ object barrierMod {
       postPhaseAction: js.Function1[/* barrier */ Barrier, Unit | js.Thenable[Unit]]
     ) = this()
     
-    var _finishPhase: js.Any = js.native
+    /* private */ var _finishPhase: js.Any = js.native
     
-    var _isExecutingPostPhaseAction: js.Any = js.native
+    /* private */ var _isExecutingPostPhaseAction: js.Any = js.native
     
-    var _nextPhase: js.Any = js.native
+    /* private */ var _nextPhase: js.Any = js.native
     
-    var _participantCount: js.Any = js.native
+    /* private */ var _participantCount: js.Any = js.native
     
-    var _phaseNumber: js.Any = js.native
+    /* private */ var _phaseNumber: js.Any = js.native
     
-    var _postPhaseAction: js.Any = js.native
+    /* private */ var _postPhaseAction: js.Any = js.native
     
-    var _rejectNextPhase: js.Any = js.native
+    /* private */ var _rejectNextPhase: js.Any = js.native
     
-    var _remainingParticipants: js.Any = js.native
+    /* private */ var _remainingParticipants: js.Any = js.native
     
-    var _resolveNextPhase: js.Any = js.native
+    /* private */ var _resolveNextPhase: js.Any = js.native
     
-    var _waiters: js.Any = js.native
+    /* private */ var _waiters: js.Any = js.native
     
     /**
       * Notifies the Barrier there will be additional participants.

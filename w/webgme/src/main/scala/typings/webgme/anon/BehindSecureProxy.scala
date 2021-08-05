@@ -54,8 +54,7 @@ trait BehindSecureProxy extends StObject {
 }
 object BehindSecureProxy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     behindSecureProxy: Boolean,
     extlibExcludes: js.Array[String],
     log: js.Any,
@@ -67,34 +66,24 @@ object BehindSecureProxy {
     __obj.asInstanceOf[BehindSecureProxy]
   }
   
-  @scala.inline
-  implicit class BehindSecureProxyMutableBuilder[Self <: BehindSecureProxy] (val x: Self) extends AnyVal {
+  extension [Self <: BehindSecureProxy](x: Self) {
     
-    @scala.inline
-    def setBehindSecureProxy(value: Boolean): Self = StObject.set(x, "behindSecureProxy", value.asInstanceOf[js.Any])
+    inline def setBehindSecureProxy(value: Boolean): Self = StObject.set(x, "behindSecureProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtlibExcludes(value: js.Array[String]): Self = StObject.set(x, "extlibExcludes", value.asInstanceOf[js.Any])
+    inline def setExtlibExcludes(value: js.Array[String]): Self = StObject.set(x, "extlibExcludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtlibExcludesVarargs(value: String*): Self = StObject.set(x, "extlibExcludes", js.Array(value :_*))
+    inline def setExtlibExcludesVarargs(value: String*): Self = StObject.set(x, "extlibExcludes", js.Array(value :_*))
     
-    @scala.inline
-    def setHandle(value: Fd): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Fd): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleNull: Self = StObject.set(x, "handle", null)
+    inline def setHandleNull: Self = StObject.set(x, "handle", null)
     
-    @scala.inline
-    def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
+    inline def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -38,37 +38,27 @@ trait AccessPolicySummary extends StObject {
 }
 object AccessPolicySummary {
   
-  @scala.inline
-  def apply(id: ID, identity: Identity, permission: Permission, resource: Resource): AccessPolicySummary = {
+  inline def apply(id: ID, identity: Identity, permission: Permission, resource: Resource): AccessPolicySummary = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], permission = permission.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPolicySummary]
   }
   
-  @scala.inline
-  implicit class AccessPolicySummaryMutableBuilder[Self <: AccessPolicySummary] (val x: Self) extends AnyVal {
+  extension [Self <: AccessPolicySummary](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
+    inline def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
     
-    @scala.inline
-    def setPermission(value: Permission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: Permission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait carClassifyResponse extends StObject {
 }
 object carClassifyResponse {
   
-  @scala.inline
-  def apply(location_result: Height, log_id: Double, result: js.Array[Name]): carClassifyResponse = {
+  inline def apply(location_result: Height, log_id: Double, result: js.Array[Name]): carClassifyResponse = {
     val __obj = js.Dynamic.literal(location_result = location_result.asInstanceOf[js.Any], log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[carClassifyResponse]
   }
   
-  @scala.inline
-  implicit class carClassifyResponseMutableBuilder[Self <: carClassifyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: carClassifyResponse](x: Self) {
     
-    @scala.inline
-    def setLocation_result(value: Height): Self = StObject.set(x, "location_result", value.asInstanceOf[js.Any])
+    inline def setLocation_result(value: Height): Self = StObject.set(x, "location_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Array[Name]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[Name]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: Name*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Name*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

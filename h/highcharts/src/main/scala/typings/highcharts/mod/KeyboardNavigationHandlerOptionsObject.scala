@@ -35,34 +35,25 @@ trait KeyboardNavigationHandlerOptionsObject extends StObject {
 }
 object KeyboardNavigationHandlerOptionsObject {
   
-  @scala.inline
-  def apply(init: js.Function, keyCodeMap: js.Array[js.Tuple2[js.Array[Double], js.Function]]): KeyboardNavigationHandlerOptionsObject = {
+  inline def apply(init: js.Function, keyCodeMap: js.Array[js.Tuple2[js.Array[Double], js.Function]]): KeyboardNavigationHandlerOptionsObject = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], keyCodeMap = keyCodeMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardNavigationHandlerOptionsObject]
   }
   
-  @scala.inline
-  implicit class KeyboardNavigationHandlerOptionsObjectMutableBuilder[Self <: KeyboardNavigationHandlerOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardNavigationHandlerOptionsObject](x: Self) {
     
-    @scala.inline
-    def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCodeMap(value: js.Array[js.Tuple2[js.Array[Double], js.Function]]): Self = StObject.set(x, "keyCodeMap", value.asInstanceOf[js.Any])
+    inline def setKeyCodeMap(value: js.Array[js.Tuple2[js.Array[Double], js.Function]]): Self = StObject.set(x, "keyCodeMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCodeMapVarargs(value: (js.Tuple2[js.Array[Double], js.Function])*): Self = StObject.set(x, "keyCodeMap", js.Array(value :_*))
+    inline def setKeyCodeMapVarargs(value: (js.Tuple2[js.Array[Double], js.Function])*): Self = StObject.set(x, "keyCodeMap", js.Array(value :_*))
     
-    @scala.inline
-    def setTerminate(value: js.Function): Self = StObject.set(x, "terminate", value.asInstanceOf[js.Any])
+    inline def setTerminate(value: js.Function): Self = StObject.set(x, "terminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateUndefined: Self = StObject.set(x, "terminate", js.undefined)
+    inline def setTerminateUndefined: Self = StObject.set(x, "terminate", js.undefined)
     
-    @scala.inline
-    def setValidate(value: js.Function): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: js.Function): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

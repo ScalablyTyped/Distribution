@@ -41,8 +41,7 @@ object servicenetworkingMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Servicenetworking
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -65,8 +64,7 @@ object servicenetworkingMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking
       ] = js.native
-    @scala.inline
-    def v1beta_=(
+    inline def v1beta_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -108,8 +106,7 @@ object servicenetworkingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -153,14 +150,10 @@ object servicenetworkingMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def servicenetworking(options: Options): Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(options.asInstanceOf[js.Any]).asInstanceOf[Servicenetworking]
-  @scala.inline
-  def servicenetworking(options: typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Options): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking]
+  inline def servicenetworking(options: Options): Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(options.asInstanceOf[js.Any]).asInstanceOf[Servicenetworking]
+  inline def servicenetworking(options: typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Options): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking]
   
-  @scala.inline
-  def servicenetworking_v1(version: v1): Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(version.asInstanceOf[js.Any]).asInstanceOf[Servicenetworking]
+  inline def servicenetworking_v1(version: v1): Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(version.asInstanceOf[js.Any]).asInstanceOf[Servicenetworking]
   
-  @scala.inline
-  def servicenetworking_v1beta(version: v1beta): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking]
+  inline def servicenetworking_v1beta(version: v1beta): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking]
 }

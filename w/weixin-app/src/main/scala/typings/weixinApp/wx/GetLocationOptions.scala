@@ -28,40 +28,29 @@ trait GetLocationOptions
 }
 object GetLocationOptions {
   
-  @scala.inline
-  def apply(success: LocationData => Unit): GetLocationOptions = {
+  inline def apply(success: LocationData => Unit): GetLocationOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetLocationOptions]
   }
   
-  @scala.inline
-  implicit class GetLocationOptionsMutableBuilder[Self <: GetLocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetLocationOptions](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: Boolean): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Boolean): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setHighAccuracyExpireTime(value: Double): Self = StObject.set(x, "highAccuracyExpireTime", value.asInstanceOf[js.Any])
+    inline def setHighAccuracyExpireTime(value: Double): Self = StObject.set(x, "highAccuracyExpireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighAccuracyExpireTimeUndefined: Self = StObject.set(x, "highAccuracyExpireTime", js.undefined)
+    inline def setHighAccuracyExpireTimeUndefined: Self = StObject.set(x, "highAccuracyExpireTime", js.undefined)
     
-    @scala.inline
-    def setIsHighAccuracy(value: Boolean): Self = StObject.set(x, "isHighAccuracy", value.asInstanceOf[js.Any])
+    inline def setIsHighAccuracy(value: Boolean): Self = StObject.set(x, "isHighAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHighAccuracyUndefined: Self = StObject.set(x, "isHighAccuracy", js.undefined)
+    inline def setIsHighAccuracyUndefined: Self = StObject.set(x, "isHighAccuracy", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: LocationData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: LocationData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: wgs84 | gcj02): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: wgs84 | gcj02): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait CreateRevisionRequest extends StObject {
 }
 object CreateRevisionRequest {
   
-  @scala.inline
-  def apply(DataSetId: string): CreateRevisionRequest = {
+  inline def apply(DataSetId: string): CreateRevisionRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRevisionRequest]
   }
   
-  @scala.inline
-  implicit class CreateRevisionRequestMutableBuilder[Self <: CreateRevisionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRevisionRequest](x: Self) {
     
-    @scala.inline
-    def setComment(value: stringMin0Max16384): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: stringMin0Max16384): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: MapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

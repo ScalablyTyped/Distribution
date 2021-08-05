@@ -15,23 +15,18 @@ trait OpacitySliderMaxChangeEvent extends StObject {
 }
 object OpacitySliderMaxChangeEvent {
   
-  @scala.inline
-  def apply(oldValue: Double, value: Double): OpacitySliderMaxChangeEvent = {
+  inline def apply(oldValue: Double, value: Double): OpacitySliderMaxChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("max-change")
     __obj.asInstanceOf[OpacitySliderMaxChangeEvent]
   }
   
-  @scala.inline
-  implicit class OpacitySliderMaxChangeEventMutableBuilder[Self <: OpacitySliderMaxChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: OpacitySliderMaxChangeEvent](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `max-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `max-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

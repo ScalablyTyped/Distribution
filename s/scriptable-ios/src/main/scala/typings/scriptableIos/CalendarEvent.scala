@@ -147,8 +147,7 @@ trait CalendarEvent extends StObject {
 }
 object CalendarEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRecurrenceRule: RecurrenceRule => Unit,
     attendees: js.Array[Attendees],
     availability: busy | free | tentative | unavailable,
@@ -184,85 +183,60 @@ object CalendarEvent {
   }
   object Attendees {
     
-    @scala.inline
-    def apply(isCurrentUser: Boolean, name: String, role: String, status: String, `type`: String): Attendees = {
+    inline def apply(isCurrentUser: Boolean, name: String, role: String, status: String, `type`: String): Attendees = {
       val __obj = js.Dynamic.literal(isCurrentUser = isCurrentUser.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attendees]
     }
     
-    @scala.inline
-    implicit class AttendeesMutableBuilder[Self <: Attendees] (val x: Self) extends AnyVal {
+    extension [Self <: Attendees](x: Self) {
       
-      @scala.inline
-      def setIsCurrentUser(value: Boolean): Self = StObject.set(x, "isCurrentUser", value.asInstanceOf[js.Any])
+      inline def setIsCurrentUser(value: Boolean): Self = StObject.set(x, "isCurrentUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  implicit class CalendarEventMutableBuilder[Self <: CalendarEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarEvent](x: Self) {
     
-    @scala.inline
-    def setAddRecurrenceRule(value: RecurrenceRule => Unit): Self = StObject.set(x, "addRecurrenceRule", js.Any.fromFunction1(value))
+    inline def setAddRecurrenceRule(value: RecurrenceRule => Unit): Self = StObject.set(x, "addRecurrenceRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttendees(value: js.Array[Attendees]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
+    inline def setAttendees(value: js.Array[Attendees]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttendeesVarargs(value: Attendees*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Attendees*): Self = StObject.set(x, "attendees", js.Array(value :_*))
     
-    @scala.inline
-    def setAvailability(value: busy | free | tentative | unavailable): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: busy | free | tentative | unavailable): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
+    inline def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentEdit(value: () => js.Promise[CalendarEvent]): Self = StObject.set(x, "presentEdit", js.Any.fromFunction0(value))
+    inline def setPresentEdit(value: () => js.Promise[CalendarEvent]): Self = StObject.set(x, "presentEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAllRecurrenceRules(value: () => Unit): Self = StObject.set(x, "removeAllRecurrenceRules", js.Any.fromFunction0(value))
+    inline def setRemoveAllRecurrenceRules(value: () => Unit): Self = StObject.set(x, "removeAllRecurrenceRules", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -35,52 +35,38 @@ object animateMod {
   }
   object IAnimateProps {
     
-    @scala.inline
-    def apply(children: HashMap => ReactElement, start: js.Any): IAnimateProps = {
+    inline def apply(children: HashMap => ReactElement, start: js.Any): IAnimateProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAnimateProps]
     }
     
-    @scala.inline
-    implicit class IAnimatePropsMutableBuilder[Self <: IAnimateProps] (val x: Self) extends AnyVal {
+    extension [Self <: IAnimateProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: HashMap => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: HashMap => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnter(value: js.Any): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: js.Any): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setInterpolation(
+      inline def setInterpolation(
         value: (/* begValue */ js.UndefOr[js.Any], /* endValue */ js.UndefOr[js.Any], /* attr */ js.UndefOr[String], /* namespace */ js.UndefOr[String]) => js.Function1[/* t */ Double, js.Any]
       ): Self = StObject.set(x, "interpolation", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+      inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
       
-      @scala.inline
-      def setLeave(value: js.Any): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+      inline def setLeave(value: js.Any): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+      inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: js.Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: js.Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
 }

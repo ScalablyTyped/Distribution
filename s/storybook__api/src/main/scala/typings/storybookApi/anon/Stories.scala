@@ -13,22 +13,17 @@ trait Stories extends StObject {
 }
 object Stories {
   
-  @scala.inline
-  def apply(stories: StoriesRaw): Stories = {
+  inline def apply(stories: StoriesRaw): Stories = {
     val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stories]
   }
   
-  @scala.inline
-  implicit class StoriesMutableBuilder[Self <: Stories] (val x: Self) extends AnyVal {
+  extension [Self <: Stories](x: Self) {
     
-    @scala.inline
-    def setStories(value: StoriesRaw): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+    inline def setStories(value: StoriesRaw): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait SetIamPolicyRequest extends StObject {
 }
 object SetIamPolicyRequest {
   
-  @scala.inline
-  def apply(): SetIamPolicyRequest = {
+  inline def apply(): SetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetIamPolicyRequest]
   }
   
-  @scala.inline
-  implicit class SetIamPolicyRequestMutableBuilder[Self <: SetIamPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIamPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: IamPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: IamPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

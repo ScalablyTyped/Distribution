@@ -35,32 +35,24 @@ object carouselControlMod {
   }
   object CarouselControlProps {
     
-    @scala.inline
-    def apply(direction: prev | next, onClickHandler: () => Unit): CarouselControlProps = {
+    inline def apply(direction: prev | next, onClickHandler: () => Unit): CarouselControlProps = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], onClickHandler = js.Any.fromFunction0(onClickHandler))
       __obj.asInstanceOf[CarouselControlProps]
     }
     
-    @scala.inline
-    implicit class CarouselControlPropsMutableBuilder[Self <: CarouselControlProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselControlProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setDirection(value: prev | next): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: prev | next): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionText(value: String): Self = StObject.set(x, "directionText", value.asInstanceOf[js.Any])
+      inline def setDirectionText(value: String): Self = StObject.set(x, "directionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionTextUndefined: Self = StObject.set(x, "directionText", js.undefined)
+      inline def setDirectionTextUndefined: Self = StObject.set(x, "directionText", js.undefined)
       
-      @scala.inline
-      def setOnClickHandler(value: () => Unit): Self = StObject.set(x, "onClickHandler", js.Any.fromFunction0(value))
+      inline def setOnClickHandler(value: () => Unit): Self = StObject.set(x, "onClickHandler", js.Any.fromFunction0(value))
     }
   }
 }

@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PredefinedAcl extends StObject
 object PredefinedAcl {
   
-  @scala.inline
-  def authenticatedRead: typings.googleCloudStorage.googleCloudStorageStrings.authenticatedRead = "authenticatedRead".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.authenticatedRead]
+  inline def authenticatedRead: typings.googleCloudStorage.googleCloudStorageStrings.authenticatedRead = "authenticatedRead".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.authenticatedRead]
   
-  @scala.inline
-  def bucketOwnerFullControl: typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerFullControl]
+  inline def bucketOwnerFullControl: typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerFullControl]
   
-  @scala.inline
-  def bucketOwnerRead: typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerRead = "bucketOwnerRead".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerRead]
+  inline def bucketOwnerRead: typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerRead = "bucketOwnerRead".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.bucketOwnerRead]
   
-  @scala.inline
-  def `private`: typings.googleCloudStorage.googleCloudStorageStrings.`private` = "private".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.`private`]
+  inline def `private`: typings.googleCloudStorage.googleCloudStorageStrings.`private` = "private".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.`private`]
   
-  @scala.inline
-  def projectPrivate: typings.googleCloudStorage.googleCloudStorageStrings.projectPrivate = "projectPrivate".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.projectPrivate]
+  inline def projectPrivate: typings.googleCloudStorage.googleCloudStorageStrings.projectPrivate = "projectPrivate".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.projectPrivate]
   
-  @scala.inline
-  def publicRead: typings.googleCloudStorage.googleCloudStorageStrings.publicRead = "publicRead".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.publicRead]
+  inline def publicRead: typings.googleCloudStorage.googleCloudStorageStrings.publicRead = "publicRead".asInstanceOf[typings.googleCloudStorage.googleCloudStorageStrings.publicRead]
 }

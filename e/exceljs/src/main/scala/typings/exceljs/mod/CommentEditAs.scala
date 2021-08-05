@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentEditAs extends StObject
 object CommentEditAs {
   
-  @scala.inline
-  def absolute: typings.exceljs.exceljsStrings.absolute = "absolute".asInstanceOf[typings.exceljs.exceljsStrings.absolute]
+  inline def absolute: typings.exceljs.exceljsStrings.absolute = "absolute".asInstanceOf[typings.exceljs.exceljsStrings.absolute]
   
-  @scala.inline
-  def oneCells: typings.exceljs.exceljsStrings.oneCells = "oneCells".asInstanceOf[typings.exceljs.exceljsStrings.oneCells]
+  inline def oneCells: typings.exceljs.exceljsStrings.oneCells = "oneCells".asInstanceOf[typings.exceljs.exceljsStrings.oneCells]
   
-  @scala.inline
-  def twoCells: typings.exceljs.exceljsStrings.twoCells = "twoCells".asInstanceOf[typings.exceljs.exceljsStrings.twoCells]
+  inline def twoCells: typings.exceljs.exceljsStrings.twoCells = "twoCells".asInstanceOf[typings.exceljs.exceljsStrings.twoCells]
 }

@@ -16,25 +16,19 @@ trait XMax_ extends StObject {
 }
 object XMax_ {
   
-  @scala.inline
-  def apply(xMax: Double, xMin: Double, yMax: Double, yMin: Double): XMax_ = {
+  inline def apply(xMax: Double, xMin: Double, yMax: Double, yMin: Double): XMax_ = {
     val __obj = js.Dynamic.literal(xMax = xMax.asInstanceOf[js.Any], xMin = xMin.asInstanceOf[js.Any], yMax = yMax.asInstanceOf[js.Any], yMin = yMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMax_]
   }
   
-  @scala.inline
-  implicit class XMax_MutableBuilder[Self <: XMax_] (val x: Self) extends AnyVal {
+  extension [Self <: XMax_](x: Self) {
     
-    @scala.inline
-    def setXMax(value: Double): Self = StObject.set(x, "xMax", value.asInstanceOf[js.Any])
+    inline def setXMax(value: Double): Self = StObject.set(x, "xMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXMin(value: Double): Self = StObject.set(x, "xMin", value.asInstanceOf[js.Any])
+    inline def setXMin(value: Double): Self = StObject.set(x, "xMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYMax(value: Double): Self = StObject.set(x, "yMax", value.asInstanceOf[js.Any])
+    inline def setYMax(value: Double): Self = StObject.set(x, "yMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYMin(value: Double): Self = StObject.set(x, "yMin", value.asInstanceOf[js.Any])
+    inline def setYMin(value: Double): Self = StObject.set(x, "yMin", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait AudienceBuilder[Audience]
 }
 object AudienceBuilder {
   
-  @scala.inline
-  def apply[Audience](
+  inline def apply[Audience](
     build: () => AdWordsOperation[AudienceBuilder[Audience]],
     exclude: () => AdWordsOperation[AudienceBuilder[Audience]],
     withAudience: UserList => AudienceBuilder[Audience],
@@ -30,16 +29,12 @@ object AudienceBuilder {
     __obj.asInstanceOf[AudienceBuilder[Audience]]
   }
   
-  @scala.inline
-  implicit class AudienceBuilderMutableBuilder[Self <: AudienceBuilder[?], Audience] (val x: Self & AudienceBuilder[Audience]) extends AnyVal {
+  extension [Self <: AudienceBuilder[?], Audience](x: Self & AudienceBuilder[Audience]) {
     
-    @scala.inline
-    def setWithAudience(value: UserList => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
+    inline def setWithAudience(value: UserList => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithAudienceId(value: Double => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
+    inline def setWithAudienceId(value: Double => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithAudienceType(value: AudienceType => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudienceType", js.Any.fromFunction1(value))
+    inline def setWithAudienceType(value: AudienceType => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudienceType", js.Any.fromFunction1(value))
   }
 }

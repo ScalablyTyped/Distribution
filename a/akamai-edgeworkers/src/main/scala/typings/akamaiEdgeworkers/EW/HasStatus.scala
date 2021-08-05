@@ -13,16 +13,13 @@ trait HasStatus extends StObject {
 }
 object HasStatus {
   
-  @scala.inline
-  def apply(status: Double): HasStatus = {
+  inline def apply(status: Double): HasStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasStatus]
   }
   
-  @scala.inline
-  implicit class HasStatusMutableBuilder[Self <: HasStatus] (val x: Self) extends AnyVal {
+  extension [Self <: HasStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

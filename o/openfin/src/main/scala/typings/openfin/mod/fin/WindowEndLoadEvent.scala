@@ -14,8 +14,7 @@ trait WindowEndLoadEvent
 }
 object WindowEndLoadEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     documentName: String,
     isMain: Boolean,
     name: String,
@@ -28,13 +27,10 @@ object WindowEndLoadEvent {
     __obj.asInstanceOf[WindowEndLoadEvent]
   }
   
-  @scala.inline
-  implicit class WindowEndLoadEventMutableBuilder[Self <: WindowEndLoadEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowEndLoadEvent](x: Self) {
     
-    @scala.inline
-    def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
+    inline def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
+    inline def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
   }
 }

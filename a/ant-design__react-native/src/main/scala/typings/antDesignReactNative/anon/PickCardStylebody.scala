@@ -12,16 +12,13 @@ trait PickCardStylebody extends StObject {
 }
 object PickCardStylebody {
   
-  @scala.inline
-  def apply(body: ViewStyle): PickCardStylebody = {
+  inline def apply(body: ViewStyle): PickCardStylebody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickCardStylebody]
   }
   
-  @scala.inline
-  implicit class PickCardStylebodyMutableBuilder[Self <: PickCardStylebody] (val x: Self) extends AnyVal {
+  extension [Self <: PickCardStylebody](x: Self) {
     
-    @scala.inline
-    def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait StopAction extends StObject {
 }
 object StopAction {
   
-  @scala.inline
-  def apply(Scope: StopScope): StopAction = {
+  inline def apply(Scope: StopScope): StopAction = {
     val __obj = js.Dynamic.literal(Scope = Scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopAction]
   }
   
-  @scala.inline
-  implicit class StopActionMutableBuilder[Self <: StopAction] (val x: Self) extends AnyVal {
+  extension [Self <: StopAction](x: Self) {
     
-    @scala.inline
-    def setScope(value: StopScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: StopScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

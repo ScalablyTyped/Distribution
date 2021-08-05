@@ -40,8 +40,7 @@ object cloudsearchMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Cloudsearch
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object cloudsearchMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object cloudsearchMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudsearch(options: Options): Cloudsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudsearch")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudsearch]
+  inline def cloudsearch(options: Options): Cloudsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudsearch")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudsearch]
   
-  @scala.inline
-  def cloudsearch_v1(version: v1): Cloudsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudsearch")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudsearch]
+  inline def cloudsearch_v1(version: v1): Cloudsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudsearch")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudsearch]
 }

@@ -15,31 +15,23 @@ trait SlotAttributes extends StObject {
 }
 object SlotAttributes {
   
-  @scala.inline
-  def apply(): SlotAttributes = {
+  inline def apply(): SlotAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlotAttributes]
   }
   
-  @scala.inline
-  implicit class SlotAttributesMutableBuilder[Self <: SlotAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SlotAttributes](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnSlotchange(value: /* event */ Event => Unit): Self = StObject.set(x, "onSlotchange", js.Any.fromFunction1(value))
+    inline def setOnSlotchange(value: /* event */ Event => Unit): Self = StObject.set(x, "onSlotchange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSlotchangeUndefined: Self = StObject.set(x, "onSlotchange", js.undefined)
+    inline def setOnSlotchangeUndefined: Self = StObject.set(x, "onSlotchange", js.undefined)
     
-    @scala.inline
-    def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+    inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
   }
 }

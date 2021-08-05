@@ -27,8 +27,7 @@ object fileMatcherMod {
   }
   object GetFileMatchersOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customBuildOptions: PlatformSpecificBuildOptions,
       defaultSrc: String,
       globalOutDir: String,
@@ -38,20 +37,15 @@ object fileMatcherMod {
       __obj.asInstanceOf[GetFileMatchersOptions]
     }
     
-    @scala.inline
-    implicit class GetFileMatchersOptionsMutableBuilder[Self <: GetFileMatchersOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetFileMatchersOptions](x: Self) {
       
-      @scala.inline
-      def setCustomBuildOptions(value: PlatformSpecificBuildOptions): Self = StObject.set(x, "customBuildOptions", value.asInstanceOf[js.Any])
+      inline def setCustomBuildOptions(value: PlatformSpecificBuildOptions): Self = StObject.set(x, "customBuildOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSrc(value: String): Self = StObject.set(x, "defaultSrc", value.asInstanceOf[js.Any])
+      inline def setDefaultSrc(value: String): Self = StObject.set(x, "defaultSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalOutDir(value: String): Self = StObject.set(x, "globalOutDir", value.asInstanceOf[js.Any])
+      inline def setGlobalOutDir(value: String): Self = StObject.set(x, "globalOutDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacroExpander(value: String => String): Self = StObject.set(x, "macroExpander", js.Any.fromFunction1(value))
+      inline def setMacroExpander(value: String => String): Self = StObject.set(x, "macroExpander", js.Any.fromFunction1(value))
     }
   }
 }

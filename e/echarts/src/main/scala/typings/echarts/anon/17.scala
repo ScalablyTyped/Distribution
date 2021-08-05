@@ -44,25 +44,19 @@ trait `17` extends StObject {
 }
 object `17` {
   
-  @scala.inline
-  def apply(): `17` = {
+  inline def apply(): `17` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`17`]
   }
   
-  @scala.inline
-  implicit class `17MutableBuilder`[Self <: `17`] (val x: Self) extends AnyVal {
+  extension [Self <: `17`](x: Self) {
     
-    @scala.inline
-    def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+    inline def setAnimationDelay(value: js.Function | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+    inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
     
-    @scala.inline
-    def setAnimationDelayUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
+    inline def setAnimationDelayUpdate(value: js.Function | Double): Self = StObject.set(x, "animationDelayUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
+    inline def setAnimationDelayUpdateUndefined: Self = StObject.set(x, "animationDelayUpdate", js.undefined)
   }
 }

@@ -283,230 +283,157 @@ trait ClosestFacilityParametersProperties extends StObject {
 }
 object ClosestFacilityParametersProperties {
   
-  @scala.inline
-  def apply(): ClosestFacilityParametersProperties = {
+  inline def apply(): ClosestFacilityParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClosestFacilityParametersProperties]
   }
   
-  @scala.inline
-  implicit class ClosestFacilityParametersPropertiesMutableBuilder[Self <: ClosestFacilityParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClosestFacilityParametersProperties](x: Self) {
     
-    @scala.inline
-    def setAccumulateAttributes(value: js.Array[String]): Self = StObject.set(x, "accumulateAttributes", value.asInstanceOf[js.Any])
+    inline def setAccumulateAttributes(value: js.Array[String]): Self = StObject.set(x, "accumulateAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccumulateAttributesUndefined: Self = StObject.set(x, "accumulateAttributes", js.undefined)
+    inline def setAccumulateAttributesUndefined: Self = StObject.set(x, "accumulateAttributes", js.undefined)
     
-    @scala.inline
-    def setAccumulateAttributesVarargs(value: String*): Self = StObject.set(x, "accumulateAttributes", js.Array(value :_*))
+    inline def setAccumulateAttributesVarargs(value: String*): Self = StObject.set(x, "accumulateAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setAttributeParameterValues(value: js.Array[ClosestFacilityParametersAttributeParameterValues]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
+    inline def setAttributeParameterValues(value: js.Array[ClosestFacilityParametersAttributeParameterValues]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeParameterValuesUndefined: Self = StObject.set(x, "attributeParameterValues", js.undefined)
+    inline def setAttributeParameterValuesUndefined: Self = StObject.set(x, "attributeParameterValues", js.undefined)
     
-    @scala.inline
-    def setAttributeParameterValuesVarargs(value: ClosestFacilityParametersAttributeParameterValues*): Self = StObject.set(x, "attributeParameterValues", js.Array(value :_*))
+    inline def setAttributeParameterValuesVarargs(value: ClosestFacilityParametersAttributeParameterValues*): Self = StObject.set(x, "attributeParameterValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultCutoff(value: Double): Self = StObject.set(x, "defaultCutoff", value.asInstanceOf[js.Any])
+    inline def setDefaultCutoff(value: Double): Self = StObject.set(x, "defaultCutoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCutoffUndefined: Self = StObject.set(x, "defaultCutoff", js.undefined)
+    inline def setDefaultCutoffUndefined: Self = StObject.set(x, "defaultCutoff", js.undefined)
     
-    @scala.inline
-    def setDefaultTargetFacilityCount(value: Double): Self = StObject.set(x, "defaultTargetFacilityCount", value.asInstanceOf[js.Any])
+    inline def setDefaultTargetFacilityCount(value: Double): Self = StObject.set(x, "defaultTargetFacilityCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTargetFacilityCountUndefined: Self = StObject.set(x, "defaultTargetFacilityCount", js.undefined)
+    inline def setDefaultTargetFacilityCountUndefined: Self = StObject.set(x, "defaultTargetFacilityCount", js.undefined)
     
-    @scala.inline
-    def setDirectionsLanguage(value: String): Self = StObject.set(x, "directionsLanguage", value.asInstanceOf[js.Any])
+    inline def setDirectionsLanguage(value: String): Self = StObject.set(x, "directionsLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsLanguageUndefined: Self = StObject.set(x, "directionsLanguage", js.undefined)
+    inline def setDirectionsLanguageUndefined: Self = StObject.set(x, "directionsLanguage", js.undefined)
     
-    @scala.inline
-    def setDirectionsLengthUnits(
+    inline def setDirectionsLengthUnits(
       value: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
     ): Self = StObject.set(x, "directionsLengthUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsLengthUnitsUndefined: Self = StObject.set(x, "directionsLengthUnits", js.undefined)
+    inline def setDirectionsLengthUnitsUndefined: Self = StObject.set(x, "directionsLengthUnits", js.undefined)
     
-    @scala.inline
-    def setDirectionsOutputType(value: complete | `complete-no-events` | `instructions-only` | standard | `summary-only`): Self = StObject.set(x, "directionsOutputType", value.asInstanceOf[js.Any])
+    inline def setDirectionsOutputType(value: complete | `complete-no-events` | `instructions-only` | standard | `summary-only`): Self = StObject.set(x, "directionsOutputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsOutputTypeUndefined: Self = StObject.set(x, "directionsOutputType", js.undefined)
+    inline def setDirectionsOutputTypeUndefined: Self = StObject.set(x, "directionsOutputType", js.undefined)
     
-    @scala.inline
-    def setDirectionsStyleName(value: String): Self = StObject.set(x, "directionsStyleName", value.asInstanceOf[js.Any])
+    inline def setDirectionsStyleName(value: String): Self = StObject.set(x, "directionsStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsStyleNameUndefined: Self = StObject.set(x, "directionsStyleName", js.undefined)
+    inline def setDirectionsStyleNameUndefined: Self = StObject.set(x, "directionsStyleName", js.undefined)
     
-    @scala.inline
-    def setDirectionsTimeAttribute(value: String): Self = StObject.set(x, "directionsTimeAttribute", value.asInstanceOf[js.Any])
+    inline def setDirectionsTimeAttribute(value: String): Self = StObject.set(x, "directionsTimeAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsTimeAttributeUndefined: Self = StObject.set(x, "directionsTimeAttribute", js.undefined)
+    inline def setDirectionsTimeAttributeUndefined: Self = StObject.set(x, "directionsTimeAttribute", js.undefined)
     
-    @scala.inline
-    def setDoNotLocateOnRestrictedElements(value: Boolean): Self = StObject.set(x, "doNotLocateOnRestrictedElements", value.asInstanceOf[js.Any])
+    inline def setDoNotLocateOnRestrictedElements(value: Boolean): Self = StObject.set(x, "doNotLocateOnRestrictedElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoNotLocateOnRestrictedElementsUndefined: Self = StObject.set(x, "doNotLocateOnRestrictedElements", js.undefined)
+    inline def setDoNotLocateOnRestrictedElementsUndefined: Self = StObject.set(x, "doNotLocateOnRestrictedElements", js.undefined)
     
-    @scala.inline
-    def setFacilities(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
+    inline def setFacilities(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
+    inline def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
     
-    @scala.inline
-    def setImpedanceAttribute(value: String): Self = StObject.set(x, "impedanceAttribute", value.asInstanceOf[js.Any])
+    inline def setImpedanceAttribute(value: String): Self = StObject.set(x, "impedanceAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpedanceAttributeUndefined: Self = StObject.set(x, "impedanceAttribute", js.undefined)
+    inline def setImpedanceAttributeUndefined: Self = StObject.set(x, "impedanceAttribute", js.undefined)
     
-    @scala.inline
-    def setIncidents(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
+    inline def setIncidents(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncidentsUndefined: Self = StObject.set(x, "incidents", js.undefined)
+    inline def setIncidentsUndefined: Self = StObject.set(x, "incidents", js.undefined)
     
-    @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties | String): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    inline def setOutSpatialReference(value: SpatialReferenceProperties | String): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
-    @scala.inline
-    def setOutputGeometryPrecision(value: Double): Self = StObject.set(x, "outputGeometryPrecision", value.asInstanceOf[js.Any])
+    inline def setOutputGeometryPrecision(value: Double): Self = StObject.set(x, "outputGeometryPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputGeometryPrecisionUndefined: Self = StObject.set(x, "outputGeometryPrecision", js.undefined)
+    inline def setOutputGeometryPrecisionUndefined: Self = StObject.set(x, "outputGeometryPrecision", js.undefined)
     
-    @scala.inline
-    def setOutputGeometryPrecisionUnits(
+    inline def setOutputGeometryPrecisionUnits(
       value: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
     ): Self = StObject.set(x, "outputGeometryPrecisionUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputGeometryPrecisionUnitsUndefined: Self = StObject.set(x, "outputGeometryPrecisionUnits", js.undefined)
+    inline def setOutputGeometryPrecisionUnitsUndefined: Self = StObject.set(x, "outputGeometryPrecisionUnits", js.undefined)
     
-    @scala.inline
-    def setOutputLines(value: none | straight | `true-shape` | `true-shape-with-measure`): Self = StObject.set(x, "outputLines", value.asInstanceOf[js.Any])
+    inline def setOutputLines(value: none | straight | `true-shape` | `true-shape-with-measure`): Self = StObject.set(x, "outputLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLinesUndefined: Self = StObject.set(x, "outputLines", js.undefined)
+    inline def setOutputLinesUndefined: Self = StObject.set(x, "outputLines", js.undefined)
     
-    @scala.inline
-    def setPointBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
+    inline def setPointBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
+    inline def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
     
-    @scala.inline
-    def setPolygonBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
+    inline def setPolygonBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
+    inline def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
     
-    @scala.inline
-    def setPolylineBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
+    inline def setPolylineBarriers(value: DataLayerProperties | FeatureSetProperties): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
+    inline def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
     
-    @scala.inline
-    def setRestrictUTurns(value: `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`): Self = StObject.set(x, "restrictUTurns", value.asInstanceOf[js.Any])
+    inline def setRestrictUTurns(value: `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`): Self = StObject.set(x, "restrictUTurns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictUTurnsUndefined: Self = StObject.set(x, "restrictUTurns", js.undefined)
+    inline def setRestrictUTurnsUndefined: Self = StObject.set(x, "restrictUTurns", js.undefined)
     
-    @scala.inline
-    def setRestrictionAttributes(value: js.Array[String]): Self = StObject.set(x, "restrictionAttributes", value.asInstanceOf[js.Any])
+    inline def setRestrictionAttributes(value: js.Array[String]): Self = StObject.set(x, "restrictionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionAttributesUndefined: Self = StObject.set(x, "restrictionAttributes", js.undefined)
+    inline def setRestrictionAttributesUndefined: Self = StObject.set(x, "restrictionAttributes", js.undefined)
     
-    @scala.inline
-    def setRestrictionAttributesVarargs(value: String*): Self = StObject.set(x, "restrictionAttributes", js.Array(value :_*))
+    inline def setRestrictionAttributesVarargs(value: String*): Self = StObject.set(x, "restrictionAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnDirections(value: Boolean): Self = StObject.set(x, "returnDirections", value.asInstanceOf[js.Any])
+    inline def setReturnDirections(value: Boolean): Self = StObject.set(x, "returnDirections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnDirectionsUndefined: Self = StObject.set(x, "returnDirections", js.undefined)
+    inline def setReturnDirectionsUndefined: Self = StObject.set(x, "returnDirections", js.undefined)
     
-    @scala.inline
-    def setReturnFacilities(value: Boolean): Self = StObject.set(x, "returnFacilities", value.asInstanceOf[js.Any])
+    inline def setReturnFacilities(value: Boolean): Self = StObject.set(x, "returnFacilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnFacilitiesUndefined: Self = StObject.set(x, "returnFacilities", js.undefined)
+    inline def setReturnFacilitiesUndefined: Self = StObject.set(x, "returnFacilities", js.undefined)
     
-    @scala.inline
-    def setReturnIncidents(value: Boolean): Self = StObject.set(x, "returnIncidents", value.asInstanceOf[js.Any])
+    inline def setReturnIncidents(value: Boolean): Self = StObject.set(x, "returnIncidents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnIncidentsUndefined: Self = StObject.set(x, "returnIncidents", js.undefined)
+    inline def setReturnIncidentsUndefined: Self = StObject.set(x, "returnIncidents", js.undefined)
     
-    @scala.inline
-    def setReturnPointBarriers(value: Boolean): Self = StObject.set(x, "returnPointBarriers", value.asInstanceOf[js.Any])
+    inline def setReturnPointBarriers(value: Boolean): Self = StObject.set(x, "returnPointBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPointBarriersUndefined: Self = StObject.set(x, "returnPointBarriers", js.undefined)
+    inline def setReturnPointBarriersUndefined: Self = StObject.set(x, "returnPointBarriers", js.undefined)
     
-    @scala.inline
-    def setReturnPolygonBarriers(value: Boolean): Self = StObject.set(x, "returnPolygonBarriers", value.asInstanceOf[js.Any])
+    inline def setReturnPolygonBarriers(value: Boolean): Self = StObject.set(x, "returnPolygonBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPolygonBarriersUndefined: Self = StObject.set(x, "returnPolygonBarriers", js.undefined)
+    inline def setReturnPolygonBarriersUndefined: Self = StObject.set(x, "returnPolygonBarriers", js.undefined)
     
-    @scala.inline
-    def setReturnPolylineBarriers(value: Boolean): Self = StObject.set(x, "returnPolylineBarriers", value.asInstanceOf[js.Any])
+    inline def setReturnPolylineBarriers(value: Boolean): Self = StObject.set(x, "returnPolylineBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPolylineBarriersUndefined: Self = StObject.set(x, "returnPolylineBarriers", js.undefined)
+    inline def setReturnPolylineBarriersUndefined: Self = StObject.set(x, "returnPolylineBarriers", js.undefined)
     
-    @scala.inline
-    def setReturnRoutes(value: Boolean): Self = StObject.set(x, "returnRoutes", value.asInstanceOf[js.Any])
+    inline def setReturnRoutes(value: Boolean): Self = StObject.set(x, "returnRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnRoutesUndefined: Self = StObject.set(x, "returnRoutes", js.undefined)
+    inline def setReturnRoutesUndefined: Self = StObject.set(x, "returnRoutes", js.undefined)
     
-    @scala.inline
-    def setTimeOfDay(value: DateProperties): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
+    inline def setTimeOfDay(value: DateProperties): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOfDayUndefined: Self = StObject.set(x, "timeOfDay", js.undefined)
+    inline def setTimeOfDayUndefined: Self = StObject.set(x, "timeOfDay", js.undefined)
     
-    @scala.inline
-    def setTimeOfDayUsage(value: start | end): Self = StObject.set(x, "timeOfDayUsage", value.asInstanceOf[js.Any])
+    inline def setTimeOfDayUsage(value: start | end): Self = StObject.set(x, "timeOfDayUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOfDayUsageUndefined: Self = StObject.set(x, "timeOfDayUsage", js.undefined)
+    inline def setTimeOfDayUsageUndefined: Self = StObject.set(x, "timeOfDayUsage", js.undefined)
     
-    @scala.inline
-    def setTravelDirection(value: `from-facility` | `to-facility`): Self = StObject.set(x, "travelDirection", value.asInstanceOf[js.Any])
+    inline def setTravelDirection(value: `from-facility` | `to-facility`): Self = StObject.set(x, "travelDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelDirectionUndefined: Self = StObject.set(x, "travelDirection", js.undefined)
+    inline def setTravelDirectionUndefined: Self = StObject.set(x, "travelDirection", js.undefined)
     
-    @scala.inline
-    def setTravelMode(value: String): Self = StObject.set(x, "travelMode", value.asInstanceOf[js.Any])
+    inline def setTravelMode(value: String): Self = StObject.set(x, "travelMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelModeUndefined: Self = StObject.set(x, "travelMode", js.undefined)
+    inline def setTravelModeUndefined: Self = StObject.set(x, "travelMode", js.undefined)
     
-    @scala.inline
-    def setUseHierarchy(value: Boolean): Self = StObject.set(x, "useHierarchy", value.asInstanceOf[js.Any])
+    inline def setUseHierarchy(value: Boolean): Self = StObject.set(x, "useHierarchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHierarchyUndefined: Self = StObject.set(x, "useHierarchy", js.undefined)
+    inline def setUseHierarchyUndefined: Self = StObject.set(x, "useHierarchy", js.undefined)
   }
 }

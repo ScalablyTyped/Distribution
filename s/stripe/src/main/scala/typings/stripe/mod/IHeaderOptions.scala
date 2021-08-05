@@ -35,40 +35,29 @@ trait IHeaderOptions extends StObject {
 }
 object IHeaderOptions {
   
-  @scala.inline
-  def apply(): IHeaderOptions = {
+  inline def apply(): IHeaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHeaderOptions]
   }
   
-  @scala.inline
-  implicit class IHeaderOptionsMutableBuilder[Self <: IHeaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IHeaderOptions](x: Self) {
     
-    @scala.inline
-    def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+    inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
+    inline def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
     
-    @scala.inline
-    def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
+    inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
-    @scala.inline
-    def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
+    inline def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
+    inline def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
     
-    @scala.inline
-    def setStripe_account(value: String): Self = StObject.set(x, "stripe_account", value.asInstanceOf[js.Any])
+    inline def setStripe_account(value: String): Self = StObject.set(x, "stripe_account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripe_accountUndefined: Self = StObject.set(x, "stripe_account", js.undefined)
+    inline def setStripe_accountUndefined: Self = StObject.set(x, "stripe_account", js.undefined)
   }
 }

@@ -22,35 +22,27 @@ trait DynamicRouteConfig extends StObject {
 }
 object DynamicRouteConfig {
   
-  @scala.inline
-  def apply(): DynamicRouteConfig = {
+  inline def apply(): DynamicRouteConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicRouteConfig]
   }
   
-  @scala.inline
-  implicit class DynamicRouteConfigMutableBuilder[Self <: DynamicRouteConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicRouteConfig](x: Self) {
     
-    @scala.inline
-    def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
-    @scala.inline
-    def setRouteConfig(
+    inline def setRouteConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicRouteConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "routeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteConfigUndefined: Self = StObject.set(x, "routeConfig", js.undefined)
+    inline def setRouteConfigUndefined: Self = StObject.set(x, "routeConfig", js.undefined)
     
-    @scala.inline
-    def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+    inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
+    inline def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

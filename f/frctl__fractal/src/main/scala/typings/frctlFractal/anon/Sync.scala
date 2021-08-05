@@ -12,25 +12,19 @@ trait Sync extends StObject {
 }
 object Sync {
   
-  @scala.inline
-  def apply(): Sync = {
+  inline def apply(): Sync = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sync]
   }
   
-  @scala.inline
-  implicit class SyncMutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
+  extension [Self <: Sync](x: Self) {
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    @scala.inline
-    def setSync(value: External): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: External): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

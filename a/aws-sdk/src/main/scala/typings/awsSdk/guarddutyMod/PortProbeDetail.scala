@@ -23,31 +23,23 @@ trait PortProbeDetail extends StObject {
 }
 object PortProbeDetail {
   
-  @scala.inline
-  def apply(): PortProbeDetail = {
+  inline def apply(): PortProbeDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortProbeDetail]
   }
   
-  @scala.inline
-  implicit class PortProbeDetailMutableBuilder[Self <: PortProbeDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PortProbeDetail](x: Self) {
     
-    @scala.inline
-    def setLocalIpDetails(value: LocalIpDetails): Self = StObject.set(x, "LocalIpDetails", value.asInstanceOf[js.Any])
+    inline def setLocalIpDetails(value: LocalIpDetails): Self = StObject.set(x, "LocalIpDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIpDetailsUndefined: Self = StObject.set(x, "LocalIpDetails", js.undefined)
+    inline def setLocalIpDetailsUndefined: Self = StObject.set(x, "LocalIpDetails", js.undefined)
     
-    @scala.inline
-    def setLocalPortDetails(value: LocalPortDetails): Self = StObject.set(x, "LocalPortDetails", value.asInstanceOf[js.Any])
+    inline def setLocalPortDetails(value: LocalPortDetails): Self = StObject.set(x, "LocalPortDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPortDetailsUndefined: Self = StObject.set(x, "LocalPortDetails", js.undefined)
+    inline def setLocalPortDetailsUndefined: Self = StObject.set(x, "LocalPortDetails", js.undefined)
     
-    @scala.inline
-    def setRemoteIpDetails(value: RemoteIpDetails): Self = StObject.set(x, "RemoteIpDetails", value.asInstanceOf[js.Any])
+    inline def setRemoteIpDetails(value: RemoteIpDetails): Self = StObject.set(x, "RemoteIpDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteIpDetailsUndefined: Self = StObject.set(x, "RemoteIpDetails", js.undefined)
+    inline def setRemoteIpDetailsUndefined: Self = StObject.set(x, "RemoteIpDetails", js.undefined)
   }
 }

@@ -21,19 +21,15 @@ trait TagtagEnableboolean extends StObject {
 }
 object TagtagEnableboolean {
   
-  @scala.inline
-  def apply(tag: String, tagEnable: Boolean): TagtagEnableboolean = {
+  inline def apply(tag: String, tagEnable: Boolean): TagtagEnableboolean = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any], tagEnable = tagEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagtagEnableboolean]
   }
   
-  @scala.inline
-  implicit class TagtagEnablebooleanMutableBuilder[Self <: TagtagEnableboolean] (val x: Self) extends AnyVal {
+  extension [Self <: TagtagEnableboolean](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagEnable(value: Boolean): Self = StObject.set(x, "tagEnable", value.asInstanceOf[js.Any])
+    inline def setTagEnable(value: Boolean): Self = StObject.set(x, "tagEnable", value.asInstanceOf[js.Any])
   }
 }

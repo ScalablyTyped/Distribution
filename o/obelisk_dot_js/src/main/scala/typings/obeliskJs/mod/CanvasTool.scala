@@ -15,6 +15,5 @@ object CanvasTool {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPixel(imageData: ImageData, x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPixel")(imageData.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPixel(imageData: ImageData, x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPixel")(imageData.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

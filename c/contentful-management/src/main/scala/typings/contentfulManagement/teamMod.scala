@@ -15,11 +15,9 @@ object teamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapTeam(http: AxiosInstance, data: TeamProps): Team = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeam")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Team]
+  inline def wrapTeam(http: AxiosInstance, data: TeamProps): Team = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeam")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Team]
   
-  @scala.inline
-  def wrapTeamCollection(http: AxiosInstance, data: CollectionProp[TeamProps]): Collection[Team, TeamProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Team, TeamProps]]
+  inline def wrapTeamCollection(http: AxiosInstance, data: CollectionProp[TeamProps]): Collection[Team, TeamProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Team, TeamProps]]
   
   trait Team
     extends StObject
@@ -69,8 +67,7 @@ object teamMod {
   }
   object Team {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       description: String,
       name: String,
@@ -82,14 +79,11 @@ object teamMod {
       __obj.asInstanceOf[Team]
     }
     
-    @scala.inline
-    implicit class TeamMutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
+    extension [Self <: Team](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[Team]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[Team]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -112,23 +106,18 @@ object teamMod {
   }
   object TeamProps {
     
-    @scala.inline
-    def apply(description: String, name: String, sys: MetaSysProps): TeamProps = {
+    inline def apply(description: String, name: String, sys: MetaSysProps): TeamProps = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[TeamProps]
     }
     
-    @scala.inline
-    implicit class TeamPropsMutableBuilder[Self <: TeamProps] (val x: Self) extends AnyVal {
+    extension [Self <: TeamProps](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

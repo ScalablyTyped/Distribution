@@ -29,37 +29,27 @@ trait SchemaShippingSettings extends StObject {
 }
 object SchemaShippingSettings {
   
-  @scala.inline
-  def apply(): SchemaShippingSettings = {
+  inline def apply(): SchemaShippingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShippingSettings]
   }
   
-  @scala.inline
-  implicit class SchemaShippingSettingsMutableBuilder[Self <: SchemaShippingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShippingSettings](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setPostalCodeGroups(value: js.Array[SchemaPostalCodeGroup]): Self = StObject.set(x, "postalCodeGroups", value.asInstanceOf[js.Any])
+    inline def setPostalCodeGroups(value: js.Array[SchemaPostalCodeGroup]): Self = StObject.set(x, "postalCodeGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeGroupsUndefined: Self = StObject.set(x, "postalCodeGroups", js.undefined)
+    inline def setPostalCodeGroupsUndefined: Self = StObject.set(x, "postalCodeGroups", js.undefined)
     
-    @scala.inline
-    def setPostalCodeGroupsVarargs(value: SchemaPostalCodeGroup*): Self = StObject.set(x, "postalCodeGroups", js.Array(value :_*))
+    inline def setPostalCodeGroupsVarargs(value: SchemaPostalCodeGroup*): Self = StObject.set(x, "postalCodeGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setServices(value: js.Array[SchemaService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[SchemaService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: SchemaService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: SchemaService*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

@@ -40,40 +40,29 @@ trait SchemaStyleFunction extends StObject {
 }
 object SchemaStyleFunction {
   
-  @scala.inline
-  def apply(): SchemaStyleFunction = {
+  inline def apply(): SchemaStyleFunction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStyleFunction]
   }
   
-  @scala.inline
-  implicit class SchemaStyleFunctionMutableBuilder[Self <: SchemaStyleFunction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStyleFunction](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: js.Array[SchemaBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: js.Array[SchemaBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: SchemaBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: SchemaBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
+    inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
-    @scala.inline
-    def setGradient(value: Colors): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: Colors): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

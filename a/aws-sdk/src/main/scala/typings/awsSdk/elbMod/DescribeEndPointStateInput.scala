@@ -18,25 +18,19 @@ trait DescribeEndPointStateInput extends StObject {
 }
 object DescribeEndPointStateInput {
   
-  @scala.inline
-  def apply(LoadBalancerName: AccessPointName): DescribeEndPointStateInput = {
+  inline def apply(LoadBalancerName: AccessPointName): DescribeEndPointStateInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndPointStateInput]
   }
   
-  @scala.inline
-  implicit class DescribeEndPointStateInputMutableBuilder[Self <: DescribeEndPointStateInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEndPointStateInput](x: Self) {
     
-    @scala.inline
-    def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
   }
 }

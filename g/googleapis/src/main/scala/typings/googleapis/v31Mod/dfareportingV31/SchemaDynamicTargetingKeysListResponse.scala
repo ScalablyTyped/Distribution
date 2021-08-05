@@ -22,28 +22,21 @@ trait SchemaDynamicTargetingKeysListResponse extends StObject {
 }
 object SchemaDynamicTargetingKeysListResponse {
   
-  @scala.inline
-  def apply(): SchemaDynamicTargetingKeysListResponse = {
+  inline def apply(): SchemaDynamicTargetingKeysListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDynamicTargetingKeysListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDynamicTargetingKeysListResponseMutableBuilder[Self <: SchemaDynamicTargetingKeysListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDynamicTargetingKeysListResponse](x: Self) {
     
-    @scala.inline
-    def setDynamicTargetingKeys(value: js.Array[SchemaDynamicTargetingKey]): Self = StObject.set(x, "dynamicTargetingKeys", value.asInstanceOf[js.Any])
+    inline def setDynamicTargetingKeys(value: js.Array[SchemaDynamicTargetingKey]): Self = StObject.set(x, "dynamicTargetingKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicTargetingKeysUndefined: Self = StObject.set(x, "dynamicTargetingKeys", js.undefined)
+    inline def setDynamicTargetingKeysUndefined: Self = StObject.set(x, "dynamicTargetingKeys", js.undefined)
     
-    @scala.inline
-    def setDynamicTargetingKeysVarargs(value: SchemaDynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value :_*))
+    inline def setDynamicTargetingKeysVarargs(value: SchemaDynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

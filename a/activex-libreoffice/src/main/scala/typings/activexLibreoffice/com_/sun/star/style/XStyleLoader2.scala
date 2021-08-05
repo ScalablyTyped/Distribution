@@ -27,8 +27,7 @@ trait XStyleLoader2
 }
 object XStyleLoader2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     StyleLoaderOptions: SafeArray[PropertyValue],
     acquire: () => Unit,
     getStyleLoaderOptions: () => SafeArray[PropertyValue],
@@ -41,10 +40,8 @@ object XStyleLoader2 {
     __obj.asInstanceOf[XStyleLoader2]
   }
   
-  @scala.inline
-  implicit class XStyleLoader2MutableBuilder[Self <: XStyleLoader2] (val x: Self) extends AnyVal {
+  extension [Self <: XStyleLoader2](x: Self) {
     
-    @scala.inline
-    def setLoadStylesFromDocument(value: (XComponent, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadStylesFromDocument", js.Any.fromFunction2(value))
+    inline def setLoadStylesFromDocument(value: (XComponent, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadStylesFromDocument", js.Any.fromFunction2(value))
   }
 }

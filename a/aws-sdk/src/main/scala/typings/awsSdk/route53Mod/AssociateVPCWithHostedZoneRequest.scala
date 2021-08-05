@@ -23,25 +23,19 @@ trait AssociateVPCWithHostedZoneRequest extends StObject {
 }
 object AssociateVPCWithHostedZoneRequest {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId, VPC: VPC): AssociateVPCWithHostedZoneRequest = {
+  inline def apply(HostedZoneId: ResourceId, VPC: VPC): AssociateVPCWithHostedZoneRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], VPC = VPC.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateVPCWithHostedZoneRequest]
   }
   
-  @scala.inline
-  implicit class AssociateVPCWithHostedZoneRequestMutableBuilder[Self <: AssociateVPCWithHostedZoneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateVPCWithHostedZoneRequest](x: Self) {
     
-    @scala.inline
-    def setComment(value: AssociateVPCComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: AssociateVPCComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
+    inline def setVPC(value: VPC): Self = StObject.set(x, "VPC", value.asInstanceOf[js.Any])
   }
 }

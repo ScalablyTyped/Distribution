@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecordCreateOptionsEnum extends StObject
 object RecordCreateOptionsEnum {
   
-  @scala.inline
-  def adCreateCollection: `8192` = 8192.asInstanceOf[`8192`]
+  inline def adCreateCollection: `8192` = 8192.asInstanceOf[`8192`]
   
-  @scala.inline
-  def adCreateNonCollection: `0` = 0.asInstanceOf[`0`]
+  inline def adCreateNonCollection: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adCreateOverwrite: `67108864` = 67108864.asInstanceOf[`67108864`]
+  inline def adCreateOverwrite: `67108864` = 67108864.asInstanceOf[`67108864`]
   
-  @scala.inline
-  def adCreateStructDoc: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+  inline def adCreateStructDoc: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
   
-  @scala.inline
-  def adFailIfNotExists: `-1` = -1.asInstanceOf[`-1`]
+  inline def adFailIfNotExists: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def adOpenIfExists: `33554432` = 33554432.asInstanceOf[`33554432`]
+  inline def adOpenIfExists: `33554432` = 33554432.asInstanceOf[`33554432`]
 }

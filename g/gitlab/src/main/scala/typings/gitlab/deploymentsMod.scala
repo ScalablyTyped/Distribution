@@ -69,86 +69,60 @@ object deploymentsMod {
   }
   object Deployable {
     
-    @scala.inline
-    def apply(id: Double, name: String, ref: String, tag: Boolean): Deployable = {
+    inline def apply(id: Double, name: String, ref: String, tag: Boolean): Deployable = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Deployable]
     }
     
-    @scala.inline
-    implicit class DeployableMutableBuilder[Self <: Deployable] (val x: Self) extends AnyVal {
+    extension [Self <: Deployable](x: Self) {
       
-      @scala.inline
-      def setCommit(value: CommitSchema): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: CommitSchema): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+      inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
       
-      @scala.inline
-      def setCoverage(value: String): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+      inline def setCoverage(value: String): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
+      inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+      inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
       
-      @scala.inline
-      def setFinished_at(value: Date): Self = StObject.set(x, "finished_at", value.asInstanceOf[js.Any])
+      inline def setFinished_at(value: Date): Self = StObject.set(x, "finished_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinished_atUndefined: Self = StObject.set(x, "finished_at", js.undefined)
+      inline def setFinished_atUndefined: Self = StObject.set(x, "finished_at", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipeline(value: PipelineSchema): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+      inline def setPipeline(value: PipelineSchema): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+      inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunner(value: RunnerSchema): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
+      inline def setRunner(value: RunnerSchema): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunnerUndefined: Self = StObject.set(x, "runner", js.undefined)
+      inline def setRunnerUndefined: Self = StObject.set(x, "runner", js.undefined)
       
-      @scala.inline
-      def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
       
-      @scala.inline
-      def setStarted_at(value: Date): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
+      inline def setStarted_at(value: Date): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
+      inline def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
       
-      @scala.inline
-      def setStatus(value: DeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: DeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: UserSchema): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: UserSchema): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -166,29 +140,22 @@ object deploymentsMod {
   }
   object DeploymentSchema {
     
-    @scala.inline
-    def apply(id: Double, iid: Double, ref: String, sha: String, user: UserSchema): DeploymentSchema = {
+    inline def apply(id: Double, iid: Double, ref: String, sha: String, user: UserSchema): DeploymentSchema = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], iid = iid.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeploymentSchema]
     }
     
-    @scala.inline
-    implicit class DeploymentSchemaMutableBuilder[Self <: DeploymentSchema] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentSchema](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIid(value: Double): Self = StObject.set(x, "iid", value.asInstanceOf[js.Any])
+      inline def setIid(value: Double): Self = StObject.set(x, "iid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+      inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: UserSchema): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: UserSchema): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,19 +169,14 @@ object deploymentsMod {
   trait DeploymentStatus extends StObject
   object DeploymentStatus {
     
-    @scala.inline
-    def canceled: typings.gitlab.gitlabStrings.canceled = "canceled".asInstanceOf[typings.gitlab.gitlabStrings.canceled]
+    inline def canceled: typings.gitlab.gitlabStrings.canceled = "canceled".asInstanceOf[typings.gitlab.gitlabStrings.canceled]
     
-    @scala.inline
-    def created: typings.gitlab.gitlabStrings.created = "created".asInstanceOf[typings.gitlab.gitlabStrings.created]
+    inline def created: typings.gitlab.gitlabStrings.created = "created".asInstanceOf[typings.gitlab.gitlabStrings.created]
     
-    @scala.inline
-    def failed: typings.gitlab.gitlabStrings.failed = "failed".asInstanceOf[typings.gitlab.gitlabStrings.failed]
+    inline def failed: typings.gitlab.gitlabStrings.failed = "failed".asInstanceOf[typings.gitlab.gitlabStrings.failed]
     
-    @scala.inline
-    def running: typings.gitlab.gitlabStrings.running = "running".asInstanceOf[typings.gitlab.gitlabStrings.running]
+    inline def running: typings.gitlab.gitlabStrings.running = "running".asInstanceOf[typings.gitlab.gitlabStrings.running]
     
-    @scala.inline
-    def success: typings.gitlab.gitlabStrings.success = "success".asInstanceOf[typings.gitlab.gitlabStrings.success]
+    inline def success: typings.gitlab.gitlabStrings.success = "success".asInstanceOf[typings.gitlab.gitlabStrings.success]
   }
 }

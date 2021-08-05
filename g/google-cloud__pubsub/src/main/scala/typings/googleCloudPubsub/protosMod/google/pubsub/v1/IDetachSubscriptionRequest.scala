@@ -12,22 +12,17 @@ trait IDetachSubscriptionRequest extends StObject {
 }
 object IDetachSubscriptionRequest {
   
-  @scala.inline
-  def apply(): IDetachSubscriptionRequest = {
+  inline def apply(): IDetachSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDetachSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class IDetachSubscriptionRequestMutableBuilder[Self <: IDetachSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IDetachSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    inline def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

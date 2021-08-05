@@ -9,8 +9,7 @@ trait ICalendar
      with typings.officeUiFabricReact.calendarTypesMod.ICalendar
 object ICalendar {
   
-  @scala.inline
-  def apply(focus: () => Unit): ICalendar = {
+  inline def apply(focus: () => Unit): ICalendar = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
     __obj.asInstanceOf[ICalendar]
   }

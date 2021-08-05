@@ -18,25 +18,19 @@ trait DmsTransferSettings extends StObject {
 }
 object DmsTransferSettings {
   
-  @scala.inline
-  def apply(): DmsTransferSettings = {
+  inline def apply(): DmsTransferSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DmsTransferSettings]
   }
   
-  @scala.inline
-  implicit class DmsTransferSettingsMutableBuilder[Self <: DmsTransferSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DmsTransferSettings](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "BucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "BucketName", js.undefined)
     
-    @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
+    inline def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "ServiceAccessRoleArn", js.undefined)
   }
 }

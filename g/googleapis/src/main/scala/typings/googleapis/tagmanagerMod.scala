@@ -37,8 +37,7 @@ object tagmanagerMod {
     @JSImport("googleapis/build/src/apis/tagmanager", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tagmanager] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tagmanager]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object tagmanagerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object tagmanagerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object tagmanagerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def tagmanager(options: Options): Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(options.asInstanceOf[js.Any]).asInstanceOf[Tagmanager]
-  @scala.inline
-  def tagmanager(options: typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Options): typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager]
+  inline def tagmanager(options: Options): Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(options.asInstanceOf[js.Any]).asInstanceOf[Tagmanager]
+  inline def tagmanager(options: typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Options): typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager]
   
-  @scala.inline
-  def tagmanager_v1(version: v1): Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(version.asInstanceOf[js.Any]).asInstanceOf[Tagmanager]
+  inline def tagmanager_v1(version: v1): Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(version.asInstanceOf[js.Any]).asInstanceOf[Tagmanager]
   
-  @scala.inline
-  def tagmanager_v2(version: v2): typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager]
+  inline def tagmanager_v2(version: v2): typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager = ^.asInstanceOf[js.Dynamic].applyDynamic("tagmanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager]
 }

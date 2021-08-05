@@ -18,19 +18,15 @@ trait DeleteDomainAssociationRequest extends StObject {
 }
 object DeleteDomainAssociationRequest {
   
-  @scala.inline
-  def apply(appId: AppId, domainName: DomainName): DeleteDomainAssociationRequest = {
+  inline def apply(appId: AppId, domainName: DomainName): DeleteDomainAssociationRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDomainAssociationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDomainAssociationRequestMutableBuilder[Self <: DeleteDomainAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDomainAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
   }
 }

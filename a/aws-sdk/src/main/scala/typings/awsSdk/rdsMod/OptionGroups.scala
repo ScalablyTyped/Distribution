@@ -18,28 +18,21 @@ trait OptionGroups extends StObject {
 }
 object OptionGroups {
   
-  @scala.inline
-  def apply(): OptionGroups = {
+  inline def apply(): OptionGroups = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionGroups]
   }
   
-  @scala.inline
-  implicit class OptionGroupsMutableBuilder[Self <: OptionGroups] (val x: Self) extends AnyVal {
+  extension [Self <: OptionGroups](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOptionGroupsList(value: OptionGroupsList): Self = StObject.set(x, "OptionGroupsList", value.asInstanceOf[js.Any])
+    inline def setOptionGroupsList(value: OptionGroupsList): Self = StObject.set(x, "OptionGroupsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionGroupsListUndefined: Self = StObject.set(x, "OptionGroupsList", js.undefined)
+    inline def setOptionGroupsListUndefined: Self = StObject.set(x, "OptionGroupsList", js.undefined)
     
-    @scala.inline
-    def setOptionGroupsListVarargs(value: OptionGroup*): Self = StObject.set(x, "OptionGroupsList", js.Array(value :_*))
+    inline def setOptionGroupsListVarargs(value: OptionGroup*): Self = StObject.set(x, "OptionGroupsList", js.Array(value :_*))
   }
 }

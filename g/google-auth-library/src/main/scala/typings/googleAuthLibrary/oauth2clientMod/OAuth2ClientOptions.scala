@@ -16,31 +16,23 @@ trait OAuth2ClientOptions
 }
 object OAuth2ClientOptions {
   
-  @scala.inline
-  def apply(): OAuth2ClientOptions = {
+  inline def apply(): OAuth2ClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuth2ClientOptions]
   }
   
-  @scala.inline
-  implicit class OAuth2ClientOptionsMutableBuilder[Self <: OAuth2ClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2ClientOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+    inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
   }
 }

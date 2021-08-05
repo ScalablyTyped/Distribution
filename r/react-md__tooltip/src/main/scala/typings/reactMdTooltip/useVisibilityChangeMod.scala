@@ -12,8 +12,7 @@ object useVisibilityChangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useVisiblityChange(hasOnShowOnHideVisibleMode: VisibilityChangeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisiblityChange")(hasOnShowOnHideVisibleMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useVisiblityChange(hasOnShowOnHideVisibleMode: VisibilityChangeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisiblityChange")(hasOnShowOnHideVisibleMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait VisibilityChangeOptions extends StObject {
     
@@ -35,35 +34,26 @@ object useVisibilityChangeMod {
   }
   object VisibilityChangeOptions {
     
-    @scala.inline
-    def apply(visible: Boolean): VisibilityChangeOptions = {
+    inline def apply(visible: Boolean): VisibilityChangeOptions = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any], mode = null)
       __obj.asInstanceOf[VisibilityChangeOptions]
     }
     
-    @scala.inline
-    implicit class VisibilityChangeOptionsMutableBuilder[Self <: VisibilityChangeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VisibilityChangeOptions](x: Self) {
       
-      @scala.inline
-      def setMode(value: TooltipInitiated): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: TooltipInitiated): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeNull: Self = StObject.set(x, "mode", null)
+      inline def setModeNull: Self = StObject.set(x, "mode", null)
       
-      @scala.inline
-      def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: /* mode */ UserInteractionMode => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* mode */ UserInteractionMode => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

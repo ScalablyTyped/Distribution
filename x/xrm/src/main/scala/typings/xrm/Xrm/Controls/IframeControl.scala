@@ -24,8 +24,7 @@ trait IframeControl
 }
 object IframeControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContentWindow: () => js.Promise[Window],
     getControlType: () => ControlType | String,
     getInitialUrl: () => String,
@@ -43,10 +42,8 @@ object IframeControl {
     __obj.asInstanceOf[IframeControl]
   }
   
-  @scala.inline
-  implicit class IframeControlMutableBuilder[Self <: IframeControl] (val x: Self) extends AnyVal {
+  extension [Self <: IframeControl](x: Self) {
     
-    @scala.inline
-    def setGetInitialUrl(value: () => String): Self = StObject.set(x, "getInitialUrl", js.Any.fromFunction0(value))
+    inline def setGetInitialUrl(value: () => String): Self = StObject.set(x, "getInitialUrl", js.Any.fromFunction0(value))
   }
 }

@@ -10,16 +10,13 @@ trait OnGyroscopeChangeCallbackResult extends StObject {
 }
 object OnGyroscopeChangeCallbackResult {
   
-  @scala.inline
-  def apply(res: Result): OnGyroscopeChangeCallbackResult = {
+  inline def apply(res: Result): OnGyroscopeChangeCallbackResult = {
     val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnGyroscopeChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnGyroscopeChangeCallbackResultMutableBuilder[Self <: OnGyroscopeChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnGyroscopeChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setRes(value: Result): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: Result): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

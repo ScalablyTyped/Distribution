@@ -17,22 +17,17 @@ trait CompositionParameterSegment extends StObject {
 }
 object CompositionParameterSegment {
   
-  @scala.inline
-  def apply(end: Double, start: Double, style: String): CompositionParameterSegment = {
+  inline def apply(end: Double, start: Double, style: String): CompositionParameterSegment = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionParameterSegment]
   }
   
-  @scala.inline
-  implicit class CompositionParameterSegmentMutableBuilder[Self <: CompositionParameterSegment] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionParameterSegment](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

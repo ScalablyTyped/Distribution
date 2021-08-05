@@ -14,19 +14,15 @@ trait SuiteData extends StObject {
 }
 object SuiteData {
   
-  @scala.inline
-  def apply(global: Dynamic, testStage: Latency): SuiteData = {
+  inline def apply(global: Dynamic, testStage: Latency): SuiteData = {
     val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any], testStage = testStage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuiteData]
   }
   
-  @scala.inline
-  implicit class SuiteDataMutableBuilder[Self <: SuiteData] (val x: Self) extends AnyVal {
+  extension [Self <: SuiteData](x: Self) {
     
-    @scala.inline
-    def setGlobal(value: Dynamic): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Dynamic): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestStage(value: Latency): Self = StObject.set(x, "testStage", value.asInstanceOf[js.Any])
+    inline def setTestStage(value: Latency): Self = StObject.set(x, "testStage", value.asInstanceOf[js.Any])
   }
 }

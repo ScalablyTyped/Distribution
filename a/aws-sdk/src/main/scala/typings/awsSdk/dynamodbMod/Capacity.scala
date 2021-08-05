@@ -23,31 +23,23 @@ trait Capacity extends StObject {
 }
 object Capacity {
   
-  @scala.inline
-  def apply(): Capacity = {
+  inline def apply(): Capacity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Capacity]
   }
   
-  @scala.inline
-  implicit class CapacityMutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
+  extension [Self <: Capacity](x: Self) {
     
-    @scala.inline
-    def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+    inline def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
+    inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
     
-    @scala.inline
-    def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+    inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
     
-    @scala.inline
-    def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
+    inline def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
   }
 }

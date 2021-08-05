@@ -13,19 +13,15 @@ trait ElasticsearchRetryOptions extends StObject {
 }
 object ElasticsearchRetryOptions {
   
-  @scala.inline
-  def apply(): ElasticsearchRetryOptions = {
+  inline def apply(): ElasticsearchRetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticsearchRetryOptions]
   }
   
-  @scala.inline
-  implicit class ElasticsearchRetryOptionsMutableBuilder[Self <: ElasticsearchRetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchRetryOptions](x: Self) {
     
-    @scala.inline
-    def setDurationInSeconds(value: ElasticsearchRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: ElasticsearchRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
   }
 }

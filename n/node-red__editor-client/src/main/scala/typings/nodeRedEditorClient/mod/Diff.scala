@@ -20,8 +20,7 @@ trait Diff extends StObject {
 }
 object Diff {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRemoteDiff: js.Function1[/* diff */ js.Object, Unit] => Unit,
     init: () => Unit,
     mergeDiff: js.Object => Unit,
@@ -33,25 +32,18 @@ object Diff {
     __obj.asInstanceOf[Diff]
   }
   
-  @scala.inline
-  implicit class DiffMutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
+  extension [Self <: Diff](x: Self) {
     
-    @scala.inline
-    def setGetRemoteDiff(value: js.Function1[/* diff */ js.Object, Unit] => Unit): Self = StObject.set(x, "getRemoteDiff", js.Any.fromFunction1(value))
+    inline def setGetRemoteDiff(value: js.Function1[/* diff */ js.Object, Unit] => Unit): Self = StObject.set(x, "getRemoteDiff", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMergeDiff(value: js.Object => Unit): Self = StObject.set(x, "mergeDiff", js.Any.fromFunction1(value))
+    inline def setMergeDiff(value: js.Object => Unit): Self = StObject.set(x, "mergeDiff", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowCommitDiff(value: js.Object => Unit): Self = StObject.set(x, "showCommitDiff", js.Any.fromFunction1(value))
+    inline def setShowCommitDiff(value: js.Object => Unit): Self = StObject.set(x, "showCommitDiff", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowRemoteDiff(value: js.Object => Unit): Self = StObject.set(x, "showRemoteDiff", js.Any.fromFunction1(value))
+    inline def setShowRemoteDiff(value: js.Object => Unit): Self = StObject.set(x, "showRemoteDiff", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowUnifiedDiff(value: js.Object => Unit): Self = StObject.set(x, "showUnifiedDiff", js.Any.fromFunction1(value))
+    inline def setShowUnifiedDiff(value: js.Object => Unit): Self = StObject.set(x, "showUnifiedDiff", js.Any.fromFunction1(value))
   }
 }

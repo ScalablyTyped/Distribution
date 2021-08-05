@@ -39,7 +39,7 @@ object global {
     
     @JSGlobal("IWshRuntimeLibrary.TextStreamReader")
     @js.native
-    class TextStreamReader protected ()
+    /* private */ class TextStreamReader ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamReader {
       
@@ -69,7 +69,7 @@ object global {
       /* CompleteClass */
       var Column: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("IWshRuntimeLibrary.TextStreamReader_typekey")
       var IWshRuntimeLibraryDotTextStreamReader_typekey: typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamReader = js.native
       
@@ -120,7 +120,7 @@ object global {
     
     @JSGlobal("IWshRuntimeLibrary.TextStreamWriter")
     @js.native
-    class TextStreamWriter protected ()
+    /* private */ class TextStreamWriter ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamWriter {
       
@@ -138,7 +138,7 @@ object global {
       /* CompleteClass */
       var Column: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("IWshRuntimeLibrary.TextStreamWriter_typekey")
       var IWshRuntimeLibraryDotTextStreamWriter_typekey: typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamWriter = js.native
       
@@ -170,14 +170,14 @@ object global {
     /** WSHExec object */
     @JSGlobal("IWshRuntimeLibrary.WshExec")
     @js.native
-    class WshExec protected ()
+    /* private */ class WshExec ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshExec {
       
       /* CompleteClass */
       override val ExitCode: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("IWshRuntimeLibrary.WshExec_typekey")
       var IWshRuntimeLibraryDotWshExec_typekey: typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshExec = js.native
       
@@ -203,21 +203,21 @@ object global {
     /** Network Object */
     @JSGlobal("IWshRuntimeLibrary.WshNetwork")
     @js.native
-    class WshNetwork protected ()
+    /* private */ class WshNetwork ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshNetwork
     
     /** Shell Object */
     @JSGlobal("IWshRuntimeLibrary.WshShell")
     @js.native
-    class WshShell protected ()
+    /* private */ class WshShell ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshShell
     
     /** Shortcut Object */
     @JSGlobal("IWshRuntimeLibrary.WshShortcut")
     @js.native
-    class WshShortcut protected ()
+    /* private */ class WshShortcut ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshShortcut {
       
@@ -233,7 +233,7 @@ object global {
       /* CompleteClass */
       var Hotkey: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("IWshRuntimeLibrary.WshShortcut_typekey")
       var IWshRuntimeLibraryDotWshShortcut_typekey: typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshShortcut = js.native
       
@@ -270,14 +270,14 @@ object global {
     /** URLShortcut Object */
     @JSGlobal("IWshRuntimeLibrary.WshURLShortcut")
     @js.native
-    class WshURLShortcut protected ()
+    /* private */ class WshURLShortcut ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshURLShortcut {
       
       /* CompleteClass */
       override val FullName: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("IWshRuntimeLibrary.WshURLShortcut_typekey")
       var IWshRuntimeLibraryDotWshURLShortcut_typekey: typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshURLShortcut = js.native
       
@@ -296,7 +296,7 @@ object global {
     
     @JSGlobal("ScriptSigner.Signer")
     @js.native
-    class Signer protected ()
+    /* private */ class Signer ()
       extends StObject
          with typings.activexIwshruntimelibrary.ScriptSigner.Signer
   }
@@ -305,7 +305,7 @@ object global {
     
     @JSGlobal("WSHControllerLibrary.WSHController")
     @js.native
-    class WSHController protected ()
+    /* private */ class WSHController ()
       extends StObject
          with typings.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
   }

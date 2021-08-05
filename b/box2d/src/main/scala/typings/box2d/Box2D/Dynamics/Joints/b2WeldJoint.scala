@@ -11,8 +11,7 @@ trait b2WeldJoint
      with b2Joint
 object b2WeldJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAnchorA: () => b2Vec2,
     GetAnchorB: () => b2Vec2,
     GetBodyA: () => b2Body,

@@ -11,19 +11,15 @@ trait RemovePublicKeyRequest extends StObject {
 }
 object RemovePublicKeyRequest {
   
-  @scala.inline
-  def apply(): RemovePublicKeyRequest = {
+  inline def apply(): RemovePublicKeyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemovePublicKeyRequest]
   }
   
-  @scala.inline
-  implicit class RemovePublicKeyRequestMutableBuilder[Self <: RemovePublicKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePublicKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

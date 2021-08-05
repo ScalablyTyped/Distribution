@@ -16,20 +16,17 @@ object mod {
     @JSImport("@apidevtools/openapi-schemas", "default.v1")
     @js.native
     def v1: JsonSchema = js.native
-    @scala.inline
-    def v1_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     @JSImport("@apidevtools/openapi-schemas", "default.v2")
     @js.native
     def v2: JsonSchema = js.native
-    @scala.inline
-    def v2_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
+    inline def v2_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
     
     @JSImport("@apidevtools/openapi-schemas", "default.v3")
     @js.native
     def v3: JsonSchema = js.native
-    @scala.inline
-    def v3_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
+    inline def v3_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
   
   object openapi {
@@ -41,20 +38,17 @@ object mod {
     @JSImport("@apidevtools/openapi-schemas", "openapi.v1")
     @js.native
     def v1: JsonSchema = js.native
-    @scala.inline
-    def v1_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     @JSImport("@apidevtools/openapi-schemas", "openapi.v2")
     @js.native
     def v2: JsonSchema = js.native
-    @scala.inline
-    def v2_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
+    inline def v2_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
     
     @JSImport("@apidevtools/openapi-schemas", "openapi.v3")
     @js.native
     def v3: JsonSchema = js.native
-    @scala.inline
-    def v3_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
+    inline def v3_=(x: JsonSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@apidevtools/openapi-schemas", "openapiV1")

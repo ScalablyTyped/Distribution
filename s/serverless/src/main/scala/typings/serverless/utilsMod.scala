@@ -88,8 +88,7 @@ object utilsMod {
   }
   object Utils {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appendFileSync: (String, String) => js.Thenable[js.Object],
       copyDirContentsSync: (String, String) => Unit,
       dirExistsSync: String => Boolean,
@@ -109,50 +108,35 @@ object utilsMod {
       __obj.asInstanceOf[Utils]
     }
     
-    @scala.inline
-    implicit class UtilsMutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
+    extension [Self <: Utils](x: Self) {
       
-      @scala.inline
-      def setAppendFileSync(value: (String, String) => js.Thenable[js.Object]): Self = StObject.set(x, "appendFileSync", js.Any.fromFunction2(value))
+      inline def setAppendFileSync(value: (String, String) => js.Thenable[js.Object]): Self = StObject.set(x, "appendFileSync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCopyDirContentsSync(value: (String, String) => Unit): Self = StObject.set(x, "copyDirContentsSync", js.Any.fromFunction2(value))
+      inline def setCopyDirContentsSync(value: (String, String) => Unit): Self = StObject.set(x, "copyDirContentsSync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDirExistsSync(value: String => Boolean): Self = StObject.set(x, "dirExistsSync", js.Any.fromFunction1(value))
+      inline def setDirExistsSync(value: String => Boolean): Self = StObject.set(x, "dirExistsSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFileExistsSync(value: String => Boolean): Self = StObject.set(x, "fileExistsSync", js.Any.fromFunction1(value))
+      inline def setFileExistsSync(value: String => Boolean): Self = StObject.set(x, "fileExistsSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindServicePath(value: () => String): Self = StObject.set(x, "findServicePath", js.Any.fromFunction0(value))
+      inline def setFindServicePath(value: () => String): Self = StObject.set(x, "findServicePath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenerateShortId(value: Double => String): Self = StObject.set(x, "generateShortId", js.Any.fromFunction1(value))
+      inline def setGenerateShortId(value: Double => String): Self = StObject.set(x, "generateShortId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+      inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLogStat(value: (typings.serverless.mod.^, String) => js.Thenable[js.Object]): Self = StObject.set(x, "logStat", js.Any.fromFunction2(value))
+      inline def setLogStat(value: (typings.serverless.mod.^, String) => js.Thenable[js.Object]): Self = StObject.set(x, "logStat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadFile(value: String => js.Thenable[js.Object]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
+      inline def setReadFile(value: String => js.Thenable[js.Object]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadFileSync(value: String => js.Object): Self = StObject.set(x, "readFileSync", js.Any.fromFunction1(value))
+      inline def setReadFileSync(value: String => js.Object): Self = StObject.set(x, "readFileSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWalkDirSync(value: String => js.Array[String]): Self = StObject.set(x, "walkDirSync", js.Any.fromFunction1(value))
+      inline def setWalkDirSync(value: String => js.Array[String]): Self = StObject.set(x, "walkDirSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteFile(value: (String, String) => js.Thenable[js.Object]): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
+      inline def setWriteFile(value: (String, String) => js.Thenable[js.Object]): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWriteFileDir(value: String => Unit): Self = StObject.set(x, "writeFileDir", js.Any.fromFunction1(value))
+      inline def setWriteFileDir(value: String => Unit): Self = StObject.set(x, "writeFileDir", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteFileSync(value: (String, String) => Unit): Self = StObject.set(x, "writeFileSync", js.Any.fromFunction2(value))
+      inline def setWriteFileSync(value: (String, String) => Unit): Self = StObject.set(x, "writeFileSync", js.Any.fromFunction2(value))
     }
   }
 }

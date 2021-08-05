@@ -12,19 +12,15 @@ trait SignedIdentifier extends StObject {
 }
 object SignedIdentifier {
   
-  @scala.inline
-  def apply(AccessPolicy: SharedAccessPolicy, Id: String): SignedIdentifier = {
+  inline def apply(AccessPolicy: SharedAccessPolicy, Id: String): SignedIdentifier = {
     val __obj = js.Dynamic.literal(AccessPolicy = AccessPolicy.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedIdentifier]
   }
   
-  @scala.inline
-  implicit class SignedIdentifierMutableBuilder[Self <: SignedIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: SignedIdentifier](x: Self) {
     
-    @scala.inline
-    def setAccessPolicy(value: SharedAccessPolicy): Self = StObject.set(x, "AccessPolicy", value.asInstanceOf[js.Any])
+    inline def setAccessPolicy(value: SharedAccessPolicy): Self = StObject.set(x, "AccessPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

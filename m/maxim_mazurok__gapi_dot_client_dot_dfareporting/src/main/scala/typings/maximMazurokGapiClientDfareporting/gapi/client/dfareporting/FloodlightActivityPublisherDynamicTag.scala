@@ -29,49 +29,35 @@ trait FloodlightActivityPublisherDynamicTag extends StObject {
 }
 object FloodlightActivityPublisherDynamicTag {
   
-  @scala.inline
-  def apply(): FloodlightActivityPublisherDynamicTag = {
+  inline def apply(): FloodlightActivityPublisherDynamicTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloodlightActivityPublisherDynamicTag]
   }
   
-  @scala.inline
-  implicit class FloodlightActivityPublisherDynamicTagMutableBuilder[Self <: FloodlightActivityPublisherDynamicTag] (val x: Self) extends AnyVal {
+  extension [Self <: FloodlightActivityPublisherDynamicTag](x: Self) {
     
-    @scala.inline
-    def setClickThrough(value: Boolean): Self = StObject.set(x, "clickThrough", value.asInstanceOf[js.Any])
+    inline def setClickThrough(value: Boolean): Self = StObject.set(x, "clickThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickThroughUndefined: Self = StObject.set(x, "clickThrough", js.undefined)
+    inline def setClickThroughUndefined: Self = StObject.set(x, "clickThrough", js.undefined)
     
-    @scala.inline
-    def setDirectorySiteId(value: String): Self = StObject.set(x, "directorySiteId", value.asInstanceOf[js.Any])
+    inline def setDirectorySiteId(value: String): Self = StObject.set(x, "directorySiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectorySiteIdUndefined: Self = StObject.set(x, "directorySiteId", js.undefined)
+    inline def setDirectorySiteIdUndefined: Self = StObject.set(x, "directorySiteId", js.undefined)
     
-    @scala.inline
-    def setDynamicTag(value: FloodlightActivityDynamicTag): Self = StObject.set(x, "dynamicTag", value.asInstanceOf[js.Any])
+    inline def setDynamicTag(value: FloodlightActivityDynamicTag): Self = StObject.set(x, "dynamicTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicTagUndefined: Self = StObject.set(x, "dynamicTag", js.undefined)
+    inline def setDynamicTagUndefined: Self = StObject.set(x, "dynamicTag", js.undefined)
     
-    @scala.inline
-    def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "siteIdDimensionValue", value.asInstanceOf[js.Any])
+    inline def setSiteIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "siteIdDimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteIdDimensionValueUndefined: Self = StObject.set(x, "siteIdDimensionValue", js.undefined)
+    inline def setSiteIdDimensionValueUndefined: Self = StObject.set(x, "siteIdDimensionValue", js.undefined)
     
-    @scala.inline
-    def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
+    inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
-    @scala.inline
-    def setViewThrough(value: Boolean): Self = StObject.set(x, "viewThrough", value.asInstanceOf[js.Any])
+    inline def setViewThrough(value: Boolean): Self = StObject.set(x, "viewThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewThroughUndefined: Self = StObject.set(x, "viewThrough", js.undefined)
+    inline def setViewThroughUndefined: Self = StObject.set(x, "viewThrough", js.undefined)
   }
 }

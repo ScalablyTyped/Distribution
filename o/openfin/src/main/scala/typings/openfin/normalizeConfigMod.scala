@@ -13,9 +13,7 @@ object normalizeConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalizeConfig(config: ConnectConfig): js.Promise[InternalConnectConfig | ExternalConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InternalConnectConfig | ExternalConfig]]
+  inline def normalizeConfig(config: ConnectConfig): js.Promise[InternalConnectConfig | ExternalConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InternalConnectConfig | ExternalConfig]]
   
-  @scala.inline
-  def validateConfig(config: ConnectConfig): js.Promise[InternalConnectConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InternalConnectConfig]]
+  inline def validateConfig(config: ConnectConfig): js.Promise[InternalConnectConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InternalConnectConfig]]
 }

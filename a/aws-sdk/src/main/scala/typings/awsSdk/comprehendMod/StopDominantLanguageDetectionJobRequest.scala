@@ -13,16 +13,13 @@ trait StopDominantLanguageDetectionJobRequest extends StObject {
 }
 object StopDominantLanguageDetectionJobRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): StopDominantLanguageDetectionJobRequest = {
+  inline def apply(JobId: JobId): StopDominantLanguageDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopDominantLanguageDetectionJobRequest]
   }
   
-  @scala.inline
-  implicit class StopDominantLanguageDetectionJobRequestMutableBuilder[Self <: StopDominantLanguageDetectionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopDominantLanguageDetectionJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

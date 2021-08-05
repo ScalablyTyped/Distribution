@@ -23,28 +23,21 @@ trait SchemaListHl7V2StoresResponse extends StObject {
 }
 object SchemaListHl7V2StoresResponse {
   
-  @scala.inline
-  def apply(): SchemaListHl7V2StoresResponse = {
+  inline def apply(): SchemaListHl7V2StoresResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListHl7V2StoresResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListHl7V2StoresResponseMutableBuilder[Self <: SchemaListHl7V2StoresResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListHl7V2StoresResponse](x: Self) {
     
-    @scala.inline
-    def setHl7V2Stores(value: js.Array[SchemaHl7V2Store]): Self = StObject.set(x, "hl7V2Stores", value.asInstanceOf[js.Any])
+    inline def setHl7V2Stores(value: js.Array[SchemaHl7V2Store]): Self = StObject.set(x, "hl7V2Stores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHl7V2StoresUndefined: Self = StObject.set(x, "hl7V2Stores", js.undefined)
+    inline def setHl7V2StoresUndefined: Self = StObject.set(x, "hl7V2Stores", js.undefined)
     
-    @scala.inline
-    def setHl7V2StoresVarargs(value: SchemaHl7V2Store*): Self = StObject.set(x, "hl7V2Stores", js.Array(value :_*))
+    inline def setHl7V2StoresVarargs(value: SchemaHl7V2Store*): Self = StObject.set(x, "hl7V2Stores", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

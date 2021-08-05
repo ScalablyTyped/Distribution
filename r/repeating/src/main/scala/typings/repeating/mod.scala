@@ -12,10 +12,8 @@ object mod {
     * @param count Times the 'string' should be repeated.
     * @param str String to repeat. Default: ' '
     */
-  @scala.inline
-  def apply(count: Double): String = ^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(count: Double, str: String): String = (^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(count: Double): String = ^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(count: Double, str: String): String = (^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("repeating", JSImport.Namespace)
   @js.native

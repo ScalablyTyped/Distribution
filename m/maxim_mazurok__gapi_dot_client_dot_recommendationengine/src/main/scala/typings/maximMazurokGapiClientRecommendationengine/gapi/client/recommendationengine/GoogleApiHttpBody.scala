@@ -24,29 +24,22 @@ trait GoogleApiHttpBody extends StObject {
 }
 object GoogleApiHttpBody {
   
-  @scala.inline
-  def apply(): GoogleApiHttpBody = {
+  inline def apply(): GoogleApiHttpBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleApiHttpBody]
   }
   
-  @scala.inline
-  implicit class GoogleApiHttpBodyMutableBuilder[Self <: GoogleApiHttpBody] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiHttpBody](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setExtensions(
+    inline def setExtensions(
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
@@ -54,11 +47,9 @@ object GoogleApiHttpBody {
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(
+    inline def setExtensionsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleApiHttpBody & TopLevel[js.Any])*

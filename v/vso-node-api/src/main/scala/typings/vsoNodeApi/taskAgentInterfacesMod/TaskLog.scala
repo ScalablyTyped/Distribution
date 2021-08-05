@@ -21,8 +21,7 @@ trait TaskLog
 }
 object TaskLog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdOn: Date,
     id: Double,
     indexLocation: String,
@@ -35,22 +34,16 @@ object TaskLog {
     __obj.asInstanceOf[TaskLog]
   }
   
-  @scala.inline
-  implicit class TaskLogMutableBuilder[Self <: TaskLog] (val x: Self) extends AnyVal {
+  extension [Self <: TaskLog](x: Self) {
     
-    @scala.inline
-    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexLocation(value: String): Self = StObject.set(x, "indexLocation", value.asInstanceOf[js.Any])
+    inline def setIndexLocation(value: String): Self = StObject.set(x, "indexLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
+    inline def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
+    inline def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

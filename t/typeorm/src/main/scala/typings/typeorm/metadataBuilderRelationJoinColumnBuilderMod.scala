@@ -24,13 +24,13 @@ object metadataBuilderRelationJoinColumnBuilderMod {
     /**
       * Collects columns from the given join column args.
       */
-    var collectColumns: js.Any = js.native
+    /* private */ var collectColumns: js.Any = js.native
     
     /**
       * Collects referenced columns from the given join column args.
       */
     /* protected */ def collectReferencedColumns(joinColumns: js.Array[JoinColumnMetadataArgs], relation: RelationMetadata): js.Array[ColumnMetadata] = js.native
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLInputButtonElement extends StObject {
   
-  @JSName("MSHTML.HTMLInputButtonElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLInputButtonElement_typekey")
   var MSHTMLDotHTMLInputButtonElement_typekey: HTMLInputButtonElement = js.native
   
   var accessKey: String = js.native

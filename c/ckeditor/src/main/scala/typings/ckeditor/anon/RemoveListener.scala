@@ -10,16 +10,13 @@ trait RemoveListener extends StObject {
 }
 object RemoveListener {
   
-  @scala.inline
-  def apply(removeListener: () => Unit): RemoveListener = {
+  inline def apply(removeListener: () => Unit): RemoveListener = {
     val __obj = js.Dynamic.literal(removeListener = js.Any.fromFunction0(removeListener))
     __obj.asInstanceOf[RemoveListener]
   }
   
-  @scala.inline
-  implicit class RemoveListenerMutableBuilder[Self <: RemoveListener] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveListener](x: Self) {
     
-    @scala.inline
-    def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
+    inline def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
   }
 }

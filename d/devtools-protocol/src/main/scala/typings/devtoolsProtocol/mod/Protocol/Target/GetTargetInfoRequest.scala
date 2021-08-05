@@ -10,19 +10,15 @@ trait GetTargetInfoRequest extends StObject {
 }
 object GetTargetInfoRequest {
   
-  @scala.inline
-  def apply(): GetTargetInfoRequest = {
+  inline def apply(): GetTargetInfoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTargetInfoRequest]
   }
   
-  @scala.inline
-  implicit class GetTargetInfoRequestMutableBuilder[Self <: GetTargetInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTargetInfoRequest](x: Self) {
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

@@ -11,20 +11,16 @@ trait FilterOptions[T /* <: FindConstant */] extends StObject {
 }
 object FilterOptions {
   
-  @scala.inline
-  def apply[T /* <: FindConstant */](filter: FilterFunction[T] | FilterObject | String): FilterOptions[T] = {
+  inline def apply[T /* <: FindConstant */](filter: FilterFunction[T] | FilterObject | String): FilterOptions[T] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions[T]]
   }
   
-  @scala.inline
-  implicit class FilterOptionsMutableBuilder[Self <: FilterOptions[?], T /* <: FindConstant */] (val x: Self & FilterOptions[T]) extends AnyVal {
+  extension [Self <: FilterOptions[?], T /* <: FindConstant */](x: Self & FilterOptions[T]) {
     
-    @scala.inline
-    def setFilter(value: FilterFunction[T] | FilterObject | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterFunction[T] | FilterObject | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterFunction1(
+    inline def setFilterFunction1(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any => Boolean
     ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
   }

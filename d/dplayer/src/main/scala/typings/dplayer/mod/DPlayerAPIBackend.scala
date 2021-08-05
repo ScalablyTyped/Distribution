@@ -12,8 +12,7 @@ trait DPlayerAPIBackend extends StObject {
 }
 object DPlayerAPIBackend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     read: (js.Any, js.Function0[Unit]) => Unit,
     send: (js.Any, DPlayerDanmakuItem, js.Function0[Unit]) => Unit
   ): DPlayerAPIBackend = {
@@ -21,13 +20,10 @@ object DPlayerAPIBackend {
     __obj.asInstanceOf[DPlayerAPIBackend]
   }
   
-  @scala.inline
-  implicit class DPlayerAPIBackendMutableBuilder[Self <: DPlayerAPIBackend] (val x: Self) extends AnyVal {
+  extension [Self <: DPlayerAPIBackend](x: Self) {
     
-    @scala.inline
-    def setRead(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+    inline def setRead(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSend(value: (js.Any, DPlayerDanmakuItem, js.Function0[Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
+    inline def setSend(value: (js.Any, DPlayerDanmakuItem, js.Function0[Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
   }
 }

@@ -50,55 +50,39 @@ trait IHidden
 }
 object IHidden {
   
-  @scala.inline
-  def apply(): IHidden = {
+  inline def apply(): IHidden = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHidden]
   }
   
-  @scala.inline
-  implicit class IHiddenMutableBuilder[Self <: IHidden] (val x: Self) extends AnyVal {
+  extension [Self <: IHidden](x: Self) {
     
-    @scala.inline
-    def setClearInvalid(value: () => Unit): Self = StObject.set(x, "clearInvalid", js.Any.fromFunction0(value))
+    inline def setClearInvalid(value: () => Unit): Self = StObject.set(x, "clearInvalid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
+    inline def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
     
-    @scala.inline
-    def setMarkInvalid(value: () => Unit): Self = StObject.set(x, "markInvalid", js.Any.fromFunction0(value))
+    inline def setMarkInvalid(value: () => Unit): Self = StObject.set(x, "markInvalid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
+    inline def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
     
-    @scala.inline
-    def setSetHeight(value: () => IComponent): Self = StObject.set(x, "setHeight", js.Any.fromFunction0(value))
+    inline def setSetHeight(value: () => IComponent): Self = StObject.set(x, "setHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
+    inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
-    @scala.inline
-    def setSetPagePosition(value: () => IComponent): Self = StObject.set(x, "setPagePosition", js.Any.fromFunction0(value))
+    inline def setSetPagePosition(value: () => IComponent): Self = StObject.set(x, "setPagePosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPagePositionUndefined: Self = StObject.set(x, "setPagePosition", js.undefined)
+    inline def setSetPagePositionUndefined: Self = StObject.set(x, "setPagePosition", js.undefined)
     
-    @scala.inline
-    def setSetPosition(value: () => IComponent): Self = StObject.set(x, "setPosition", js.Any.fromFunction0(value))
+    inline def setSetPosition(value: () => IComponent): Self = StObject.set(x, "setPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
+    inline def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
     
-    @scala.inline
-    def setSetSize(value: () => IComponent): Self = StObject.set(x, "setSize", js.Any.fromFunction0(value))
+    inline def setSetSize(value: () => IComponent): Self = StObject.set(x, "setSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
+    inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
     
-    @scala.inline
-    def setSetWidth(value: () => IComponent): Self = StObject.set(x, "setWidth", js.Any.fromFunction0(value))
+    inline def setSetWidth(value: () => IComponent): Self = StObject.set(x, "setWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
+    inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait ParametersRequest extends StObject {
 }
 object ParametersRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsRevokeGrantForApplicationEndpoint,
     request: AppsRevokeGrantForApplicationRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersRequest {
     __obj.asInstanceOf[ParametersRequest]
   }
   
-  @scala.inline
-  implicit class ParametersRequestMutableBuilder[Self <: ParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersRequest](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsRevokeGrantForApplicationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsRevokeGrantForApplicationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsRevokeGrantForApplicationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsRevokeGrantForApplicationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

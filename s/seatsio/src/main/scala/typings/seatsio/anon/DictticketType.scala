@@ -13,16 +13,13 @@ trait DictticketType
 }
 object DictticketType {
   
-  @scala.inline
-  def apply(NO_TICKET_TYPE: Double): DictticketType = {
+  inline def apply(NO_TICKET_TYPE: Double): DictticketType = {
     val __obj = js.Dynamic.literal(NO_TICKET_TYPE = NO_TICKET_TYPE.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictticketType]
   }
   
-  @scala.inline
-  implicit class DictticketTypeMutableBuilder[Self <: DictticketType] (val x: Self) extends AnyVal {
+  extension [Self <: DictticketType](x: Self) {
     
-    @scala.inline
-    def setNO_TICKET_TYPE(value: Double): Self = StObject.set(x, "NO_TICKET_TYPE", value.asInstanceOf[js.Any])
+    inline def setNO_TICKET_TYPE(value: Double): Self = StObject.set(x, "NO_TICKET_TYPE", value.asInstanceOf[js.Any])
   }
 }

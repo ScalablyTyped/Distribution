@@ -12,16 +12,13 @@ trait ConditionalEventDefinition
 }
 object ConditionalEventDefinition {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, condition: Expression, id: String): ConditionalEventDefinition = {
+  inline def apply($parent: TypeDerived, $type: ElementType, condition: Expression, id: String): ConditionalEventDefinition = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalEventDefinition]
   }
   
-  @scala.inline
-  implicit class ConditionalEventDefinitionMutableBuilder[Self <: ConditionalEventDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalEventDefinition](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }
 }

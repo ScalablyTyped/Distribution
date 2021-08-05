@@ -31,8 +31,7 @@ trait XSAXDocumentBuilder
 }
 object XSAXDocumentBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Document: XDocument,
     DocumentFragment: XDocumentFragment,
     State: SAXDocumentBuilderState,
@@ -50,34 +49,24 @@ object XSAXDocumentBuilder {
     __obj.asInstanceOf[XSAXDocumentBuilder]
   }
   
-  @scala.inline
-  implicit class XSAXDocumentBuilderMutableBuilder[Self <: XSAXDocumentBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: XSAXDocumentBuilder](x: Self) {
     
-    @scala.inline
-    def setDocument(value: XDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: XDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentFragment(value: XDocumentFragment): Self = StObject.set(x, "DocumentFragment", value.asInstanceOf[js.Any])
+    inline def setDocumentFragment(value: XDocumentFragment): Self = StObject.set(x, "DocumentFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDocumentFragment(value: () => Unit): Self = StObject.set(x, "endDocumentFragment", js.Any.fromFunction0(value))
+    inline def setEndDocumentFragment(value: () => Unit): Self = StObject.set(x, "endDocumentFragment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDocument(value: () => XDocument): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
+    inline def setGetDocument(value: () => XDocument): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDocumentFragment(value: () => XDocumentFragment): Self = StObject.set(x, "getDocumentFragment", js.Any.fromFunction0(value))
+    inline def setGetDocumentFragment(value: () => XDocumentFragment): Self = StObject.set(x, "getDocumentFragment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetState(value: () => SAXDocumentBuilderState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SAXDocumentBuilderState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartDocumentFragment(value: XDocument => Unit): Self = StObject.set(x, "startDocumentFragment", js.Any.fromFunction1(value))
+    inline def setStartDocumentFragment(value: XDocument => Unit): Self = StObject.set(x, "startDocumentFragment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: SAXDocumentBuilderState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: SAXDocumentBuilderState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

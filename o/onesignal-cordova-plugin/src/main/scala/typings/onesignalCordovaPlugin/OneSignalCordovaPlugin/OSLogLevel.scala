@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OSLogLevel extends StObject
 object OSLogLevel {
   
-  @scala.inline
-  def Debug: `5` = 5.asInstanceOf[`5`]
+  inline def Debug: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def Errors: `2` = 2.asInstanceOf[`2`]
+  inline def Errors: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Fatal: `1` = 1.asInstanceOf[`1`]
+  inline def Fatal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Info: `4` = 4.asInstanceOf[`4`]
+  inline def Info: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Verbose: `6` = 6.asInstanceOf[`6`]
+  inline def Verbose: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def Warnings: `3` = 3.asInstanceOf[`3`]
+  inline def Warnings: `3` = 3.asInstanceOf[`3`]
 }

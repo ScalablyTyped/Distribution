@@ -14,13 +14,11 @@ object list {
     * Safely splits comma-separated values (such as those for transition-* and
     * background  properties).
     */
-  @scala.inline
-  def comma(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("comma")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def comma(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("comma")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * Safely splits space-separated values (such as those for background,
     * border-radius and other shorthand properties).
     */
-  @scala.inline
-  def space(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("space")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def space(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("space")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

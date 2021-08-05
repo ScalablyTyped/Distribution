@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(xml: String): Document = ^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any]).asInstanceOf[Document]
+  inline def apply(xml: String): Document = ^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any]).asInstanceOf[Document]
   
   @JSImport("xml-parser", JSImport.Namespace)
   @js.native
@@ -22,17 +21,14 @@ object mod {
   }
   object Declaration {
     
-    @scala.inline
-    def apply(attributes: Attributes): Declaration = {
+    inline def apply(attributes: Attributes): Declaration = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Declaration]
     }
     
-    @scala.inline
-    implicit class DeclarationMutableBuilder[Self <: Declaration] (val x: Self) extends AnyVal {
+    extension [Self <: Declaration](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,20 +40,16 @@ object mod {
   }
   object Document {
     
-    @scala.inline
-    def apply(declaration: Declaration, root: Node): Document = {
+    inline def apply(declaration: Declaration, root: Node): Document = {
       val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Document]
     }
     
-    @scala.inline
-    implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+    extension [Self <: Document](x: Self) {
       
-      @scala.inline
-      def setDeclaration(value: Declaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+      inline def setDeclaration(value: Declaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: Node): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Node): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,32 +65,24 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(attributes: Attributes, children: js.Array[Node], name: String): Node = {
+    inline def apply(attributes: Attributes, children: js.Array[Node], name: String): Node = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

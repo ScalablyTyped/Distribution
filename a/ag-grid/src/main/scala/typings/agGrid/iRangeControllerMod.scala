@@ -26,8 +26,7 @@ object iRangeControllerMod {
   }
   object AddRangeSelectionParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnEnd: String | Column,
       columnStart: String | Column,
       floatingEnd: String,
@@ -39,26 +38,19 @@ object iRangeControllerMod {
       __obj.asInstanceOf[AddRangeSelectionParams]
     }
     
-    @scala.inline
-    implicit class AddRangeSelectionParamsMutableBuilder[Self <: AddRangeSelectionParams] (val x: Self) extends AnyVal {
+    extension [Self <: AddRangeSelectionParams](x: Self) {
       
-      @scala.inline
-      def setColumnEnd(value: String | Column): Self = StObject.set(x, "columnEnd", value.asInstanceOf[js.Any])
+      inline def setColumnEnd(value: String | Column): Self = StObject.set(x, "columnEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnStart(value: String | Column): Self = StObject.set(x, "columnStart", value.asInstanceOf[js.Any])
+      inline def setColumnStart(value: String | Column): Self = StObject.set(x, "columnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatingEnd(value: String): Self = StObject.set(x, "floatingEnd", value.asInstanceOf[js.Any])
+      inline def setFloatingEnd(value: String): Self = StObject.set(x, "floatingEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatingStart(value: String): Self = StObject.set(x, "floatingStart", value.asInstanceOf[js.Any])
+      inline def setFloatingStart(value: String): Self = StObject.set(x, "floatingStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowEnd(value: Double): Self = StObject.set(x, "rowEnd", value.asInstanceOf[js.Any])
+      inline def setRowEnd(value: Double): Self = StObject.set(x, "rowEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowStart(value: Double): Self = StObject.set(x, "rowStart", value.asInstanceOf[js.Any])
+      inline def setRowStart(value: Double): Self = StObject.set(x, "rowStart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,26 +95,20 @@ object iRangeControllerMod {
   }
   object RangeSelection {
     
-    @scala.inline
-    def apply(columns: js.Array[Column], end: GridCell, start: GridCell): RangeSelection = {
+    inline def apply(columns: js.Array[Column], end: GridCell, start: GridCell): RangeSelection = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[RangeSelection]
     }
     
-    @scala.inline
-    implicit class RangeSelectionMutableBuilder[Self <: RangeSelection] (val x: Self) extends AnyVal {
+    extension [Self <: RangeSelection](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setEnd(value: GridCell): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: GridCell): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: GridCell): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: GridCell): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

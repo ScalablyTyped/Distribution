@@ -13,22 +13,17 @@ trait ReturnTypeStopRuleUsageTrackingResponse extends StObject {
 }
 object ReturnTypeStopRuleUsageTrackingResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[js.Any], returnType: StopRuleUsageTrackingResponse): ReturnTypeStopRuleUsageTrackingResponse = {
+  inline def apply(paramsType: js.Array[js.Any], returnType: StopRuleUsageTrackingResponse): ReturnTypeStopRuleUsageTrackingResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeStopRuleUsageTrackingResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeStopRuleUsageTrackingResponseMutableBuilder[Self <: ReturnTypeStopRuleUsageTrackingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeStopRuleUsageTrackingResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[js.Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[js.Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: js.Any*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.Any*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: StopRuleUsageTrackingResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: StopRuleUsageTrackingResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

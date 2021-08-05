@@ -10,8 +10,7 @@ trait GetBucketEncryptionOutput
      with typings.awsSdkClientS3Browser.typesGetBucketEncryptionOutputMod.GetBucketEncryptionOutput
 object GetBucketEncryptionOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketEncryptionOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketEncryptionOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketEncryptionOutput]
   }

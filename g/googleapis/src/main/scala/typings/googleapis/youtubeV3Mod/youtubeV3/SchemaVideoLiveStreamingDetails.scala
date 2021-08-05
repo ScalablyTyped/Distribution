@@ -60,49 +60,35 @@ trait SchemaVideoLiveStreamingDetails extends StObject {
 }
 object SchemaVideoLiveStreamingDetails {
   
-  @scala.inline
-  def apply(): SchemaVideoLiveStreamingDetails = {
+  inline def apply(): SchemaVideoLiveStreamingDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoLiveStreamingDetails]
   }
   
-  @scala.inline
-  implicit class SchemaVideoLiveStreamingDetailsMutableBuilder[Self <: SchemaVideoLiveStreamingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoLiveStreamingDetails](x: Self) {
     
-    @scala.inline
-    def setActiveLiveChatId(value: String): Self = StObject.set(x, "activeLiveChatId", value.asInstanceOf[js.Any])
+    inline def setActiveLiveChatId(value: String): Self = StObject.set(x, "activeLiveChatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveLiveChatIdUndefined: Self = StObject.set(x, "activeLiveChatId", js.undefined)
+    inline def setActiveLiveChatIdUndefined: Self = StObject.set(x, "activeLiveChatId", js.undefined)
     
-    @scala.inline
-    def setActualEndTime(value: String): Self = StObject.set(x, "actualEndTime", value.asInstanceOf[js.Any])
+    inline def setActualEndTime(value: String): Self = StObject.set(x, "actualEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualEndTimeUndefined: Self = StObject.set(x, "actualEndTime", js.undefined)
+    inline def setActualEndTimeUndefined: Self = StObject.set(x, "actualEndTime", js.undefined)
     
-    @scala.inline
-    def setActualStartTime(value: String): Self = StObject.set(x, "actualStartTime", value.asInstanceOf[js.Any])
+    inline def setActualStartTime(value: String): Self = StObject.set(x, "actualStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualStartTimeUndefined: Self = StObject.set(x, "actualStartTime", js.undefined)
+    inline def setActualStartTimeUndefined: Self = StObject.set(x, "actualStartTime", js.undefined)
     
-    @scala.inline
-    def setConcurrentViewers(value: String): Self = StObject.set(x, "concurrentViewers", value.asInstanceOf[js.Any])
+    inline def setConcurrentViewers(value: String): Self = StObject.set(x, "concurrentViewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentViewersUndefined: Self = StObject.set(x, "concurrentViewers", js.undefined)
+    inline def setConcurrentViewersUndefined: Self = StObject.set(x, "concurrentViewers", js.undefined)
     
-    @scala.inline
-    def setScheduledEndTime(value: String): Self = StObject.set(x, "scheduledEndTime", value.asInstanceOf[js.Any])
+    inline def setScheduledEndTime(value: String): Self = StObject.set(x, "scheduledEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledEndTimeUndefined: Self = StObject.set(x, "scheduledEndTime", js.undefined)
+    inline def setScheduledEndTimeUndefined: Self = StObject.set(x, "scheduledEndTime", js.undefined)
     
-    @scala.inline
-    def setScheduledStartTime(value: String): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
+    inline def setScheduledStartTime(value: String): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
+    inline def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
   }
 }

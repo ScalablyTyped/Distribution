@@ -22,8 +22,7 @@ trait SjclPointJacobian extends StObject {
 }
 object SjclPointJacobian {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: SjclEllipticalPoint => SjclPointJacobian,
     doubl: () => SjclPointJacobian,
     isValid: () => Boolean,
@@ -36,28 +35,20 @@ object SjclPointJacobian {
     __obj.asInstanceOf[SjclPointJacobian]
   }
   
-  @scala.inline
-  implicit class SjclPointJacobianMutableBuilder[Self <: SjclPointJacobian] (val x: Self) extends AnyVal {
+  extension [Self <: SjclPointJacobian](x: Self) {
     
-    @scala.inline
-    def setAdd(value: SjclEllipticalPoint => SjclPointJacobian): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: SjclEllipticalPoint => SjclPointJacobian): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoubl(value: () => SjclPointJacobian): Self = StObject.set(x, "doubl", js.Any.fromFunction0(value))
+    inline def setDoubl(value: () => SjclPointJacobian): Self = StObject.set(x, "doubl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMult(value: (BigNumber, SjclEllipticalPoint) => SjclPointJacobian): Self = StObject.set(x, "mult", js.Any.fromFunction2(value))
+    inline def setMult(value: (BigNumber, SjclEllipticalPoint) => SjclPointJacobian): Self = StObject.set(x, "mult", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMult2(value: (BigNumber, SjclEllipticalPoint, BigNumber, SjclEllipticalPoint) => SjclPointJacobian): Self = StObject.set(x, "mult2", js.Any.fromFunction4(value))
+    inline def setMult2(value: (BigNumber, SjclEllipticalPoint, BigNumber, SjclEllipticalPoint) => SjclPointJacobian): Self = StObject.set(x, "mult2", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setNegate(value: () => SjclPointJacobian): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
+    inline def setNegate(value: () => SjclPointJacobian): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToAffine(value: () => SjclEllipticalPoint): Self = StObject.set(x, "toAffine", js.Any.fromFunction0(value))
+    inline def setToAffine(value: () => SjclEllipticalPoint): Self = StObject.set(x, "toAffine", js.Any.fromFunction0(value))
   }
 }

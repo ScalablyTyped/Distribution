@@ -18,31 +18,23 @@ trait BatchGetImageResponse extends StObject {
 }
 object BatchGetImageResponse {
   
-  @scala.inline
-  def apply(): BatchGetImageResponse = {
+  inline def apply(): BatchGetImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetImageResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetImageResponseMutableBuilder[Self <: BatchGetImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetImageResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: ImageFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: ImageFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setImages(value: ImageList): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: ImageList): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
   }
 }

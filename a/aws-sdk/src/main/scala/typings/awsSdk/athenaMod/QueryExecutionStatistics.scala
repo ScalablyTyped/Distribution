@@ -43,55 +43,39 @@ trait QueryExecutionStatistics extends StObject {
 }
 object QueryExecutionStatistics {
   
-  @scala.inline
-  def apply(): QueryExecutionStatistics = {
+  inline def apply(): QueryExecutionStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryExecutionStatistics]
   }
   
-  @scala.inline
-  implicit class QueryExecutionStatisticsMutableBuilder[Self <: QueryExecutionStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecutionStatistics](x: Self) {
     
-    @scala.inline
-    def setDataManifestLocation(value: String): Self = StObject.set(x, "DataManifestLocation", value.asInstanceOf[js.Any])
+    inline def setDataManifestLocation(value: String): Self = StObject.set(x, "DataManifestLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataManifestLocationUndefined: Self = StObject.set(x, "DataManifestLocation", js.undefined)
+    inline def setDataManifestLocationUndefined: Self = StObject.set(x, "DataManifestLocation", js.undefined)
     
-    @scala.inline
-    def setDataScannedInBytes(value: Long): Self = StObject.set(x, "DataScannedInBytes", value.asInstanceOf[js.Any])
+    inline def setDataScannedInBytes(value: Long): Self = StObject.set(x, "DataScannedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataScannedInBytesUndefined: Self = StObject.set(x, "DataScannedInBytes", js.undefined)
+    inline def setDataScannedInBytesUndefined: Self = StObject.set(x, "DataScannedInBytes", js.undefined)
     
-    @scala.inline
-    def setEngineExecutionTimeInMillis(value: Long): Self = StObject.set(x, "EngineExecutionTimeInMillis", value.asInstanceOf[js.Any])
+    inline def setEngineExecutionTimeInMillis(value: Long): Self = StObject.set(x, "EngineExecutionTimeInMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineExecutionTimeInMillisUndefined: Self = StObject.set(x, "EngineExecutionTimeInMillis", js.undefined)
+    inline def setEngineExecutionTimeInMillisUndefined: Self = StObject.set(x, "EngineExecutionTimeInMillis", js.undefined)
     
-    @scala.inline
-    def setQueryPlanningTimeInMillis(value: Long): Self = StObject.set(x, "QueryPlanningTimeInMillis", value.asInstanceOf[js.Any])
+    inline def setQueryPlanningTimeInMillis(value: Long): Self = StObject.set(x, "QueryPlanningTimeInMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryPlanningTimeInMillisUndefined: Self = StObject.set(x, "QueryPlanningTimeInMillis", js.undefined)
+    inline def setQueryPlanningTimeInMillisUndefined: Self = StObject.set(x, "QueryPlanningTimeInMillis", js.undefined)
     
-    @scala.inline
-    def setQueryQueueTimeInMillis(value: Long): Self = StObject.set(x, "QueryQueueTimeInMillis", value.asInstanceOf[js.Any])
+    inline def setQueryQueueTimeInMillis(value: Long): Self = StObject.set(x, "QueryQueueTimeInMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryQueueTimeInMillisUndefined: Self = StObject.set(x, "QueryQueueTimeInMillis", js.undefined)
+    inline def setQueryQueueTimeInMillisUndefined: Self = StObject.set(x, "QueryQueueTimeInMillis", js.undefined)
     
-    @scala.inline
-    def setServiceProcessingTimeInMillis(value: Long): Self = StObject.set(x, "ServiceProcessingTimeInMillis", value.asInstanceOf[js.Any])
+    inline def setServiceProcessingTimeInMillis(value: Long): Self = StObject.set(x, "ServiceProcessingTimeInMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProcessingTimeInMillisUndefined: Self = StObject.set(x, "ServiceProcessingTimeInMillis", js.undefined)
+    inline def setServiceProcessingTimeInMillisUndefined: Self = StObject.set(x, "ServiceProcessingTimeInMillis", js.undefined)
     
-    @scala.inline
-    def setTotalExecutionTimeInMillis(value: Long): Self = StObject.set(x, "TotalExecutionTimeInMillis", value.asInstanceOf[js.Any])
+    inline def setTotalExecutionTimeInMillis(value: Long): Self = StObject.set(x, "TotalExecutionTimeInMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalExecutionTimeInMillisUndefined: Self = StObject.set(x, "TotalExecutionTimeInMillis", js.undefined)
+    inline def setTotalExecutionTimeInMillisUndefined: Self = StObject.set(x, "TotalExecutionTimeInMillis", js.undefined)
   }
 }

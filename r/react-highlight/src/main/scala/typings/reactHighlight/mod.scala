@@ -39,26 +39,20 @@ object mod extends Shortcut {
   }
   object HighlightProps {
     
-    @scala.inline
-    def apply(): HighlightProps = {
+    inline def apply(): HighlightProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HighlightProps]
     }
     
-    @scala.inline
-    implicit class HighlightPropsMutableBuilder[Self <: HighlightProps] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setInnerHTML(value: Boolean): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
+      inline def setInnerHTML(value: Boolean): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
+      inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
     }
   }
   

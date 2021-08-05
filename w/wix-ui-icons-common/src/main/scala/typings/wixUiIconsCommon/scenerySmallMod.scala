@@ -22,20 +22,16 @@ object scenerySmallMod extends Shortcut {
   }
   object ScenerySmallProps {
     
-    @scala.inline
-    def apply(): ScenerySmallProps = {
+    inline def apply(): ScenerySmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScenerySmallProps]
     }
     
-    @scala.inline
-    implicit class ScenerySmallPropsMutableBuilder[Self <: ScenerySmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScenerySmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

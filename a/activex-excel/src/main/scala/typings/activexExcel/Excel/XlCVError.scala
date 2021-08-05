@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCVError extends StObject
 object XlCVError {
   
-  @scala.inline
-  def xlErrDiv0: `2007` = 2007.asInstanceOf[`2007`]
+  inline def xlErrDiv0: `2007` = 2007.asInstanceOf[`2007`]
   
-  @scala.inline
-  def xlErrNA: `2042` = 2042.asInstanceOf[`2042`]
+  inline def xlErrNA: `2042` = 2042.asInstanceOf[`2042`]
   
-  @scala.inline
-  def xlErrName: `2029` = 2029.asInstanceOf[`2029`]
+  inline def xlErrName: `2029` = 2029.asInstanceOf[`2029`]
   
-  @scala.inline
-  def xlErrNull: `2000` = 2000.asInstanceOf[`2000`]
+  inline def xlErrNull: `2000` = 2000.asInstanceOf[`2000`]
   
-  @scala.inline
-  def xlErrNum: `2036` = 2036.asInstanceOf[`2036`]
+  inline def xlErrNum: `2036` = 2036.asInstanceOf[`2036`]
   
-  @scala.inline
-  def xlErrRef: `2023` = 2023.asInstanceOf[`2023`]
+  inline def xlErrRef: `2023` = 2023.asInstanceOf[`2023`]
   
-  @scala.inline
-  def xlErrValue: `2015` = 2015.asInstanceOf[`2015`]
+  inline def xlErrValue: `2015` = 2015.asInstanceOf[`2015`]
 }

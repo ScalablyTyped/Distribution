@@ -16,8 +16,7 @@ trait DescribeMetadataResult extends StObject {
 }
 object DescribeMetadataResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     metadataObjects: js.Array[MetadataObject],
     organizationNamespace: String,
     partialSaveAllowed: Boolean,
@@ -27,22 +26,16 @@ object DescribeMetadataResult {
     __obj.asInstanceOf[DescribeMetadataResult]
   }
   
-  @scala.inline
-  implicit class DescribeMetadataResultMutableBuilder[Self <: DescribeMetadataResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMetadataResult](x: Self) {
     
-    @scala.inline
-    def setMetadataObjects(value: js.Array[MetadataObject]): Self = StObject.set(x, "metadataObjects", value.asInstanceOf[js.Any])
+    inline def setMetadataObjects(value: js.Array[MetadataObject]): Self = StObject.set(x, "metadataObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataObjectsVarargs(value: MetadataObject*): Self = StObject.set(x, "metadataObjects", js.Array(value :_*))
+    inline def setMetadataObjectsVarargs(value: MetadataObject*): Self = StObject.set(x, "metadataObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setOrganizationNamespace(value: String): Self = StObject.set(x, "organizationNamespace", value.asInstanceOf[js.Any])
+    inline def setOrganizationNamespace(value: String): Self = StObject.set(x, "organizationNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialSaveAllowed(value: Boolean): Self = StObject.set(x, "partialSaveAllowed", value.asInstanceOf[js.Any])
+    inline def setPartialSaveAllowed(value: Boolean): Self = StObject.set(x, "partialSaveAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRequired(value: Boolean): Self = StObject.set(x, "testRequired", value.asInstanceOf[js.Any])
+    inline def setTestRequired(value: Boolean): Self = StObject.set(x, "testRequired", value.asInstanceOf[js.Any])
   }
 }

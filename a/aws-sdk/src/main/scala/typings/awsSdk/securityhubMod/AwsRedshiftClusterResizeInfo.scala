@@ -18,25 +18,19 @@ trait AwsRedshiftClusterResizeInfo extends StObject {
 }
 object AwsRedshiftClusterResizeInfo {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterResizeInfo = {
+  inline def apply(): AwsRedshiftClusterResizeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterResizeInfo]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterResizeInfoMutableBuilder[Self <: AwsRedshiftClusterResizeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterResizeInfo](x: Self) {
     
-    @scala.inline
-    def setAllowCancelResize(value: Boolean): Self = StObject.set(x, "AllowCancelResize", value.asInstanceOf[js.Any])
+    inline def setAllowCancelResize(value: Boolean): Self = StObject.set(x, "AllowCancelResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCancelResizeUndefined: Self = StObject.set(x, "AllowCancelResize", js.undefined)
+    inline def setAllowCancelResizeUndefined: Self = StObject.set(x, "AllowCancelResize", js.undefined)
     
-    @scala.inline
-    def setResizeType(value: NonEmptyString): Self = StObject.set(x, "ResizeType", value.asInstanceOf[js.Any])
+    inline def setResizeType(value: NonEmptyString): Self = StObject.set(x, "ResizeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeTypeUndefined: Self = StObject.set(x, "ResizeType", js.undefined)
+    inline def setResizeTypeUndefined: Self = StObject.set(x, "ResizeType", js.undefined)
   }
 }

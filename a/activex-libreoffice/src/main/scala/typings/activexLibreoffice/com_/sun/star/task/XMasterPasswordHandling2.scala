@@ -23,8 +23,7 @@ trait XMasterPasswordHandling2
 }
 object XMasterPasswordHandling2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     allowPersistentStoring: Boolean => Boolean,
     authorizateWithMasterPassword: XInteractionHandler => Boolean,
@@ -41,13 +40,10 @@ object XMasterPasswordHandling2 {
     __obj.asInstanceOf[XMasterPasswordHandling2]
   }
   
-  @scala.inline
-  implicit class XMasterPasswordHandling2MutableBuilder[Self <: XMasterPasswordHandling2] (val x: Self) extends AnyVal {
+  extension [Self <: XMasterPasswordHandling2](x: Self) {
     
-    @scala.inline
-    def setIsDefaultMasterPasswordUsed(value: () => Boolean): Self = StObject.set(x, "isDefaultMasterPasswordUsed", js.Any.fromFunction0(value))
+    inline def setIsDefaultMasterPasswordUsed(value: () => Boolean): Self = StObject.set(x, "isDefaultMasterPasswordUsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseDefaultMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "useDefaultMasterPassword", js.Any.fromFunction1(value))
+    inline def setUseDefaultMasterPassword(value: XInteractionHandler => Boolean): Self = StObject.set(x, "useDefaultMasterPassword", js.Any.fromFunction1(value))
   }
 }

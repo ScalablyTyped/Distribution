@@ -13,16 +13,13 @@ trait CancelWorldGenerationJobRequest extends StObject {
 }
 object CancelWorldGenerationJobRequest {
   
-  @scala.inline
-  def apply(job: Arn): CancelWorldGenerationJobRequest = {
+  inline def apply(job: Arn): CancelWorldGenerationJobRequest = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelWorldGenerationJobRequest]
   }
   
-  @scala.inline
-  implicit class CancelWorldGenerationJobRequestMutableBuilder[Self <: CancelWorldGenerationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelWorldGenerationJobRequest](x: Self) {
     
-    @scala.inline
-    def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }
 }

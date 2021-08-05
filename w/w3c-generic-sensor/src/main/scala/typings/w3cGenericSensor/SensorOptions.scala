@@ -10,19 +10,15 @@ trait SensorOptions extends StObject {
 }
 object SensorOptions {
   
-  @scala.inline
-  def apply(): SensorOptions = {
+  inline def apply(): SensorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SensorOptions]
   }
   
-  @scala.inline
-  implicit class SensorOptionsMutableBuilder[Self <: SensorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SensorOptions](x: Self) {
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait CreateScheduleResponse extends StObject {
 }
 object CreateScheduleResponse {
   
-  @scala.inline
-  def apply(Name: ScheduleName): CreateScheduleResponse = {
+  inline def apply(Name: ScheduleName): CreateScheduleResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateScheduleResponse]
   }
   
-  @scala.inline
-  implicit class CreateScheduleResponseMutableBuilder[Self <: CreateScheduleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScheduleResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait SchemaDeleteConditionalFormatRuleResponse extends StObject {
 }
 object SchemaDeleteConditionalFormatRuleResponse {
   
-  @scala.inline
-  def apply(): SchemaDeleteConditionalFormatRuleResponse = {
+  inline def apply(): SchemaDeleteConditionalFormatRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteConditionalFormatRuleResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteConditionalFormatRuleResponseMutableBuilder[Self <: SchemaDeleteConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteConditionalFormatRuleResponse](x: Self) {
     
-    @scala.inline
-    def setRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

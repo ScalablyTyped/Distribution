@@ -14,25 +14,19 @@ trait BaseHTMLAttributes[T]
 }
 object BaseHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): BaseHTMLAttributes[T] = {
+  inline def apply[T](): BaseHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class BaseHTMLAttributesMutableBuilder[Self <: BaseHTMLAttributes[?], T] (val x: Self & BaseHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: BaseHTMLAttributes[?], T](x: Self & BaseHTMLAttributes[T]) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

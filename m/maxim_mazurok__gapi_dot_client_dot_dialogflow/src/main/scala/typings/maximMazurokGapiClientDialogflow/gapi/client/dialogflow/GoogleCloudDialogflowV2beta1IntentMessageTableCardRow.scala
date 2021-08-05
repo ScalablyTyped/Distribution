@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2beta1IntentMessageTableCardRow extends StObject {
 }
 object GoogleCloudDialogflowV2beta1IntentMessageTableCardRow {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageTableCardRow = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageTableCardRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageTableCardRow]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageTableCardRowMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTableCardRow] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageTableCardRow](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageTableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageTableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    @scala.inline
-    def setCellsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageTableCardCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
+    inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
+    inline def setDividerAfterUndefined: Self = StObject.set(x, "dividerAfter", js.undefined)
   }
 }

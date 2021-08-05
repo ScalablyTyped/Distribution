@@ -64,20 +64,20 @@ object gridApiMod {
     
     def addVirtualRowListener(eventName: String, rowIndex: Double, callback: js.Function): Unit = js.native
     
-    var aggFuncService: js.Any = js.native
+    /* private */ var aggFuncService: js.Any = js.native
     
-    var alignedGridsService: js.Any = js.native
+    /* private */ var alignedGridsService: js.Any = js.native
     
-    var animationFrameService: js.Any = js.native
+    /* private */ var animationFrameService: js.Any = js.native
     
     def batchUpdateRowData(rowDataTransaction: RowDataTransaction): Unit = js.native
     def batchUpdateRowData(rowDataTransaction: RowDataTransaction, callback: js.Function1[/* res */ RowNodeTransaction, Unit]): Unit = js.native
     
     def camelCaseToHumanReadable(camelCase: String): String = js.native
     
-    var cellEditorFactory: js.Any = js.native
+    /* private */ var cellEditorFactory: js.Any = js.native
     
-    var cellRendererFactory: js.Any = js.native
+    /* private */ var cellRendererFactory: js.Any = js.native
     
     def checkGridSize(): Unit = js.native
     
@@ -87,17 +87,17 @@ object gridApiMod {
     
     def clearRangeSelection(): Unit = js.native
     
-    var clientSideRowModel: js.Any = js.native
+    /* private */ var clientSideRowModel: js.Any = js.native
     
-    var clipboardService: js.Any = js.native
+    /* private */ var clipboardService: js.Any = js.native
     
     def collapseAll(): Unit = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
-    var contextMenuFactory: js.Any = js.native
+    /* private */ var contextMenuFactory: js.Any = js.native
     
     def copySelectedRangeDown(): Unit = js.native
     
@@ -106,7 +106,7 @@ object gridApiMod {
     def copySelectedRowsToClipboard(includeHeader: Boolean): Unit = js.native
     def copySelectedRowsToClipboard(includeHeader: Boolean, columnKeys: js.Array[String | Column]): Unit = js.native
     
-    var csvCreator: js.Any = js.native
+    /* private */ var csvCreator: js.Any = js.native
     
     def deselectAll(): Unit = js.native
     
@@ -123,7 +123,7 @@ object gridApiMod {
     def destroyFilter(key: String): Unit = js.native
     def destroyFilter(key: Column): Unit = js.native
     
-    var detailGridInfoMap: js.Any = js.native
+    /* private */ var detailGridInfoMap: js.Any = js.native
     
     def dispatchEvent(event: AgEvent): Unit = js.native
     
@@ -140,9 +140,9 @@ object gridApiMod {
     def ensureNodeVisible(comparator: js.Any): Unit = js.native
     def ensureNodeVisible(comparator: js.Any, position: String): Unit = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var excelCreator: js.Any = js.native
+    /* private */ var excelCreator: js.Any = js.native
     
     def expandAll(): Unit = js.native
     
@@ -154,12 +154,12 @@ object gridApiMod {
     def exportDataAsExcel(): Unit = js.native
     def exportDataAsExcel(params: ExcelExportParams): Unit = js.native
     
-    var filterManager: js.Any = js.native
+    /* private */ var filterManager: js.Any = js.native
     
     def flashCells(): Unit = js.native
     def flashCells(params: FlashCellsParams): Unit = js.native
     
-    var focusedCellController: js.Any = js.native
+    /* private */ var focusedCellController: js.Any = js.native
     
     def forEachDetailGridInfo(callback: js.Function2[/* gridInfo */ DetailGridInfo, /* index */ Double, Unit]): Unit = js.native
     
@@ -265,21 +265,21 @@ object gridApiMod {
     
     def getVirtualRowCount(): Double = js.native
     
-    var gridCore: js.Any = js.native
+    /* private */ var gridCore: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
-    var headerRootComp: js.Any = js.native
+    /* private */ var headerRootComp: js.Any = js.native
     
     def hideOverlay(): Unit = js.native
     
     def hidePopupMenu(): Unit = js.native
     
-    var immutableService: js.Any = js.native
+    /* private */ var immutableService: js.Any = js.native
     
-    var infinitePageRowModel: js.Any = js.native
+    /* private */ var infinitePageRowModel: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
     
@@ -300,7 +300,7 @@ object gridApiMod {
     
     def isToolPanelShowing(): Boolean = js.native
     
-    var menuFactory: js.Any = js.native
+    /* private */ var menuFactory: js.Any = js.native
     
     def onFilterChanged(): Unit = js.native
     
@@ -331,11 +331,11 @@ object gridApiMod {
     
     def paginationIsLastPageFound(): Boolean = js.native
     
-    var paginationProxy: js.Any = js.native
+    /* private */ var paginationProxy: js.Any = js.native
     
     def paginationSetPageSize(size: Double): Unit = js.native
     
-    var pinnedRowModel: js.Any = js.native
+    /* private */ var pinnedRowModel: js.Any = js.native
     
     def purgeEnterpriseCache(): Unit = js.native
     def purgeEnterpriseCache(route: js.Array[String]): Unit = js.native
@@ -349,7 +349,7 @@ object gridApiMod {
     
     def purgeVirtualPageCache(): Unit = js.native
     
-    var rangeController: js.Any = js.native
+    /* private */ var rangeController: js.Any = js.native
     
     def recomputeAggregates(): Unit = js.native
     
@@ -400,9 +400,9 @@ object gridApiMod {
     
     def rowDataChanged(rows: js.Any): Unit = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
-    var rowRenderer: js.Any = js.native
+    /* private */ var rowRenderer: js.Any = js.native
     
     def selectAll(): Unit = js.native
     
@@ -415,9 +415,9 @@ object gridApiMod {
     def selectNode(node: RowNode, tryMulti: Boolean, suppressEvents: Boolean): Unit = js.native
     def selectNode(node: RowNode, tryMulti: Unit, suppressEvents: Boolean): Unit = js.native
     
-    var selectionController: js.Any = js.native
+    /* private */ var selectionController: js.Any = js.native
     
-    var serverSideRowModel: js.Any = js.native
+    /* private */ var serverSideRowModel: js.Any = js.native
     
     def setColumnDefs(colDefs: js.Array[ColDef | ColGroupDef]): Unit = js.native
     def setColumnDefs(colDefs: js.Array[ColDef | ColGroupDef], source: ColumnEventType): Unit = js.native
@@ -500,7 +500,7 @@ object gridApiMod {
     
     def softRefreshView(): Unit = js.native
     
-    var sortController: js.Any = js.native
+    /* private */ var sortController: js.Any = js.native
     
     def startEditingCell(params: StartEditingCellParams): Unit = js.native
     
@@ -514,13 +514,13 @@ object gridApiMod {
     def timeFullRedraw(): Unit = js.native
     def timeFullRedraw(count: Double): Unit = js.native
     
-    var toolPanelComp: js.Any = js.native
+    /* private */ var toolPanelComp: js.Any = js.native
     
     def updateRowData(rowDataTransaction: RowDataTransaction): RowNodeTransaction = js.native
     
-    var valueCache: js.Any = js.native
+    /* private */ var valueCache: js.Any = js.native
     
-    var valueService: js.Any = js.native
+    /* private */ var valueService: js.Any = js.native
   }
   
   trait DetailGridInfo extends StObject {
@@ -533,23 +533,18 @@ object gridApiMod {
   }
   object DetailGridInfo {
     
-    @scala.inline
-    def apply(api: GridApi, columnApi: ColumnApi, id: String): DetailGridInfo = {
+    inline def apply(api: GridApi, columnApi: ColumnApi, id: String): DetailGridInfo = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetailGridInfo]
     }
     
-    @scala.inline
-    implicit class DetailGridInfoMutableBuilder[Self <: DetailGridInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DetailGridInfo](x: Self) {
       
-      @scala.inline
-      def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
+      inline def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -567,32 +562,24 @@ object gridApiMod {
   }
   object GetCellsParams {
     
-    @scala.inline
-    def apply(): GetCellsParams = {
+    inline def apply(): GetCellsParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCellsParams]
     }
     
-    @scala.inline
-    implicit class GetCellsParamsMutableBuilder[Self <: GetCellsParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetCellsParams](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[String | Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[String | Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: (String | Column)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (String | Column)*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setRowNodes(value: js.Array[RowNode]): Self = StObject.set(x, "rowNodes", value.asInstanceOf[js.Any])
+      inline def setRowNodes(value: js.Array[RowNode]): Self = StObject.set(x, "rowNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNodesUndefined: Self = StObject.set(x, "rowNodes", js.undefined)
+      inline def setRowNodesUndefined: Self = StObject.set(x, "rowNodes", js.undefined)
       
-      @scala.inline
-      def setRowNodesVarargs(value: RowNode*): Self = StObject.set(x, "rowNodes", js.Array(value :_*))
+      inline def setRowNodesVarargs(value: RowNode*): Self = StObject.set(x, "rowNodes", js.Array(value :_*))
     }
   }
   
@@ -602,23 +589,18 @@ object gridApiMod {
   }
   object RedrawRowsParams {
     
-    @scala.inline
-    def apply(): RedrawRowsParams = {
+    inline def apply(): RedrawRowsParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RedrawRowsParams]
     }
     
-    @scala.inline
-    implicit class RedrawRowsParamsMutableBuilder[Self <: RedrawRowsParams] (val x: Self) extends AnyVal {
+    extension [Self <: RedrawRowsParams](x: Self) {
       
-      @scala.inline
-      def setRowNodes(value: js.Array[RowNode]): Self = StObject.set(x, "rowNodes", value.asInstanceOf[js.Any])
+      inline def setRowNodes(value: js.Array[RowNode]): Self = StObject.set(x, "rowNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNodesUndefined: Self = StObject.set(x, "rowNodes", js.undefined)
+      inline def setRowNodesUndefined: Self = StObject.set(x, "rowNodes", js.undefined)
       
-      @scala.inline
-      def setRowNodesVarargs(value: RowNode*): Self = StObject.set(x, "rowNodes", js.Array(value :_*))
+      inline def setRowNodesVarargs(value: RowNode*): Self = StObject.set(x, "rowNodes", js.Array(value :_*))
     }
   }
   
@@ -630,20 +612,16 @@ object gridApiMod {
   }
   object RefreshCellsParams {
     
-    @scala.inline
-    def apply(): RefreshCellsParams = {
+    inline def apply(): RefreshCellsParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshCellsParams]
     }
     
-    @scala.inline
-    implicit class RefreshCellsParamsMutableBuilder[Self <: RefreshCellsParams] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshCellsParams](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     }
   }
   
@@ -661,38 +639,28 @@ object gridApiMod {
   }
   object StartEditingCellParams {
     
-    @scala.inline
-    def apply(colKey: String | Column, rowIndex: Double): StartEditingCellParams = {
+    inline def apply(colKey: String | Column, rowIndex: Double): StartEditingCellParams = {
       val __obj = js.Dynamic.literal(colKey = colKey.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartEditingCellParams]
     }
     
-    @scala.inline
-    implicit class StartEditingCellParamsMutableBuilder[Self <: StartEditingCellParams] (val x: Self) extends AnyVal {
+    extension [Self <: StartEditingCellParams](x: Self) {
       
-      @scala.inline
-      def setCharPress(value: String): Self = StObject.set(x, "charPress", value.asInstanceOf[js.Any])
+      inline def setCharPress(value: String): Self = StObject.set(x, "charPress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharPressUndefined: Self = StObject.set(x, "charPress", js.undefined)
+      inline def setCharPressUndefined: Self = StObject.set(x, "charPress", js.undefined)
       
-      @scala.inline
-      def setColKey(value: String | Column): Self = StObject.set(x, "colKey", value.asInstanceOf[js.Any])
+      inline def setColKey(value: String | Column): Self = StObject.set(x, "colKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPress(value: Double): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
+      inline def setKeyPress(value: Double): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPressUndefined: Self = StObject.set(x, "keyPress", js.undefined)
+      inline def setKeyPressUndefined: Self = StObject.set(x, "keyPress", js.undefined)
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowPinned(value: String): Self = StObject.set(x, "rowPinned", value.asInstanceOf[js.Any])
+      inline def setRowPinned(value: String): Self = StObject.set(x, "rowPinned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowPinnedUndefined: Self = StObject.set(x, "rowPinned", js.undefined)
+      inline def setRowPinnedUndefined: Self = StObject.set(x, "rowPinned", js.undefined)
     }
   }
 }

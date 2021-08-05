@@ -24,28 +24,23 @@ object importBlacklistRuleMod {
     @JSImport("tslint/lib/rules/importBlacklistRule", "Rule.FAILURE_STRING_REGEX")
     @js.native
     def FAILURE_STRING_REGEX: String = js.native
-    @scala.inline
-    def FAILURE_STRING_REGEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_REGEX")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_REGEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_REGEX")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/importBlacklistRule", "Rule.IMPLICIT_NAMED_IMPORT_FAILURE_STRING")
     @js.native
     def IMPLICIT_NAMED_IMPORT_FAILURE_STRING: String = js.native
-    @scala.inline
-    def IMPLICIT_NAMED_IMPORT_FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPLICIT_NAMED_IMPORT_FAILURE_STRING")(x.asInstanceOf[js.Any])
+    inline def IMPLICIT_NAMED_IMPORT_FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPLICIT_NAMED_IMPORT_FAILURE_STRING")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def MAKE_NAMED_IMPORT_FAILURE_STRING(importName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MAKE_NAMED_IMPORT_FAILURE_STRING")(importName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def MAKE_NAMED_IMPORT_FAILURE_STRING(importName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MAKE_NAMED_IMPORT_FAILURE_STRING")(importName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/importBlacklistRule", "Rule.WHOLE_MODULE_FAILURE_STRING")
     @js.native
     def WHOLE_MODULE_FAILURE_STRING: String = js.native
-    @scala.inline
-    def WHOLE_MODULE_FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHOLE_MODULE_FAILURE_STRING")(x.asInstanceOf[js.Any])
+    inline def WHOLE_MODULE_FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHOLE_MODULE_FAILURE_STRING")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/importBlacklistRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

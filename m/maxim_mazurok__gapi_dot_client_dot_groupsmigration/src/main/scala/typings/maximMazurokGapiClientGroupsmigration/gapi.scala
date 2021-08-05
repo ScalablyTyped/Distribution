@@ -30,26 +30,20 @@ object gapi {
       }
       object Groups {
         
-        @scala.inline
-        def apply(): Groups = {
+        inline def apply(): Groups = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Groups]
         }
         
-        @scala.inline
-        implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
+        extension [Self <: Groups](x: Self) {
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setResponseCode(value: String): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+          inline def setResponseCode(value: String): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
+          inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
         }
       }
     }

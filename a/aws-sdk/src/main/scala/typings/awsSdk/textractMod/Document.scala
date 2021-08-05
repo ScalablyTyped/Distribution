@@ -18,25 +18,19 @@ trait Document extends StObject {
 }
 object Document {
   
-  @scala.inline
-  def apply(): Document = {
+  inline def apply(): Document = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setBytes(value: ImageBlob): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: ImageBlob): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "Bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "Bytes", js.undefined)
     
-    @scala.inline
-    def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
+    inline def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
+    inline def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
   }
 }

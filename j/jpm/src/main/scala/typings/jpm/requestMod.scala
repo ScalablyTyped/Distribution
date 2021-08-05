@@ -27,11 +27,9 @@ object requestMod {
     @js.native
     def apply[ResponseType](options: Content[ResponseType]): STRequest[ResponseType] = js.native
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,8 +55,7 @@ object requestMod {
   }
   object BaseRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content: String,
       contentType: String,
       delete: () => Unit,
@@ -73,35 +70,25 @@ object requestMod {
       __obj.asInstanceOf[BaseRequest]
     }
     
-    @scala.inline
-    implicit class BaseRequestMutableBuilder[Self <: BaseRequest] (val x: Self) extends AnyVal {
+    extension [Self <: BaseRequest](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHead(value: () => Unit): Self = StObject.set(x, "head", js.Any.fromFunction0(value))
+      inline def setHead(value: () => Unit): Self = StObject.set(x, "head", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPost(value: () => Unit): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
+      inline def setPost(value: () => Unit): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPut(value: () => Unit): Self = StObject.set(x, "put", js.Any.fromFunction0(value))
+      inline def setPut(value: () => Unit): Self = StObject.set(x, "put", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrl(value: String | SDKURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | SDKURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,8 +108,7 @@ object requestMod {
   }
   object BaseResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anonymous: Boolean,
       headers: js.Object,
       status: Double,
@@ -134,26 +120,19 @@ object requestMod {
       __obj.asInstanceOf[BaseResponse]
     }
     
-    @scala.inline
-    implicit class BaseResponseMutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
+    extension [Self <: BaseResponse](x: Self) {
       
-      @scala.inline
-      def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+      inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,8 +144,7 @@ object requestMod {
   }
   object Response {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anonymous: Boolean,
       headers: js.Object,
       json: js.Object,
@@ -179,11 +157,9 @@ object requestMod {
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setJson(value: js.Object): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Object): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,8 +171,7 @@ object requestMod {
   }
   object STRequest {
     
-    @scala.inline
-    def apply[ResponseType](
+    inline def apply[ResponseType](
       content: String,
       contentType: String,
       delete: () => Unit,
@@ -212,11 +187,9 @@ object requestMod {
       __obj.asInstanceOf[STRequest[ResponseType]]
     }
     
-    @scala.inline
-    implicit class STRequestMutableBuilder[Self <: STRequest[?], ResponseType] (val x: Self & STRequest[ResponseType]) extends AnyVal {
+    extension [Self <: STRequest[?], ResponseType](x: Self & STRequest[ResponseType]) {
       
-      @scala.inline
-      def setResponse(value: STResponse[ResponseType]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: STResponse[ResponseType]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,17 +199,14 @@ object requestMod {
   }
   object STResponse {
     
-    @scala.inline
-    def apply[T](json: T): STResponse[T] = {
+    inline def apply[T](json: T): STResponse[T] = {
       val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
       __obj.asInstanceOf[STResponse[T]]
     }
     
-    @scala.inline
-    implicit class STResponseMutableBuilder[Self <: STResponse[?], T] (val x: Self & STResponse[T]) extends AnyVal {
+    extension [Self <: STResponse[?], T](x: Self & STResponse[T]) {
       
-      @scala.inline
-      def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: T): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
 }

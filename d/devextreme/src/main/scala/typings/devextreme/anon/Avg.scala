@@ -26,67 +26,47 @@ trait Avg extends StObject {
 }
 object Avg {
   
-  @scala.inline
-  def apply(): Avg = {
+  inline def apply(): Avg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Avg]
   }
   
-  @scala.inline
-  implicit class AvgMutableBuilder[Self <: Avg] (val x: Self) extends AnyVal {
+  extension [Self <: Avg](x: Self) {
     
-    @scala.inline
-    def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+    inline def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvgOtherColumn(value: String): Self = StObject.set(x, "avgOtherColumn", value.asInstanceOf[js.Any])
+    inline def setAvgOtherColumn(value: String): Self = StObject.set(x, "avgOtherColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvgOtherColumnUndefined: Self = StObject.set(x, "avgOtherColumn", js.undefined)
+    inline def setAvgOtherColumnUndefined: Self = StObject.set(x, "avgOtherColumn", js.undefined)
     
-    @scala.inline
-    def setAvgUndefined: Self = StObject.set(x, "avg", js.undefined)
+    inline def setAvgUndefined: Self = StObject.set(x, "avg", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOtherColumn(value: String): Self = StObject.set(x, "maxOtherColumn", value.asInstanceOf[js.Any])
+    inline def setMaxOtherColumn(value: String): Self = StObject.set(x, "maxOtherColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOtherColumnUndefined: Self = StObject.set(x, "maxOtherColumn", js.undefined)
+    inline def setMaxOtherColumnUndefined: Self = StObject.set(x, "maxOtherColumn", js.undefined)
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinOtherColumn(value: String): Self = StObject.set(x, "minOtherColumn", value.asInstanceOf[js.Any])
+    inline def setMinOtherColumn(value: String): Self = StObject.set(x, "minOtherColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinOtherColumnUndefined: Self = StObject.set(x, "minOtherColumn", js.undefined)
+    inline def setMinOtherColumnUndefined: Self = StObject.set(x, "minOtherColumn", js.undefined)
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setSum(value: String): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: String): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOtherColumn(value: String): Self = StObject.set(x, "sumOtherColumn", value.asInstanceOf[js.Any])
+    inline def setSumOtherColumn(value: String): Self = StObject.set(x, "sumOtherColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOtherColumnUndefined: Self = StObject.set(x, "sumOtherColumn", js.undefined)
+    inline def setSumOtherColumnUndefined: Self = StObject.set(x, "sumOtherColumn", js.undefined)
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

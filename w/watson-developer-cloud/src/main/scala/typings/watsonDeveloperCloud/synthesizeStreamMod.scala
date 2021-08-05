@@ -54,8 +54,7 @@ object synthesizeStreamMod {
   @JSImport("watson-developer-cloud/lib/synthesize-stream", "WEBSOCKET_CONNECTION_ERROR")
   @js.native
   def WEBSOCKET_CONNECTION_ERROR: String = js.native
-  @scala.inline
-  def WEBSOCKET_CONNECTION_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBSOCKET_CONNECTION_ERROR")(x.asInstanceOf[js.Any])
+  inline def WEBSOCKET_CONNECTION_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBSOCKET_CONNECTION_ERROR")(x.asInstanceOf[js.Any])
   
   /**
     * pipe()-able Node.js Readable stream - accepts text in the constructor and emits binary audio data in its 'message' events
@@ -73,13 +72,13 @@ object synthesizeStreamMod {
     
     var _readableState: js.Any = js.native
     
-    var authenticated: js.Any = js.native
+    /* private */ var authenticated: js.Any = js.native
     
     def initialize(): Unit = js.native
     
-    var initialized: js.Any = js.native
+    /* private */ var initialized: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * This function retrieves an IAM access token and stores it in the
@@ -92,6 +91,6 @@ object synthesizeStreamMod {
       */
     def setAuthorizationHeaderToken(callback: js.Any): Unit = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
   }
 }

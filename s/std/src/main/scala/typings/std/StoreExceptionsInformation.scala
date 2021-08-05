@@ -16,40 +16,29 @@ trait StoreExceptionsInformation
 }
 object StoreExceptionsInformation {
   
-  @scala.inline
-  def apply(): StoreExceptionsInformation = {
+  inline def apply(): StoreExceptionsInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StoreExceptionsInformation]
   }
   
-  @scala.inline
-  implicit class StoreExceptionsInformationMutableBuilder[Self <: StoreExceptionsInformation] (val x: Self) extends AnyVal {
+  extension [Self <: StoreExceptionsInformation](x: Self) {
     
-    @scala.inline
-    def setDetailURI(value: java.lang.String): Self = StObject.set(x, "detailURI", value.asInstanceOf[js.Any])
+    inline def setDetailURI(value: java.lang.String): Self = StObject.set(x, "detailURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailURINull: Self = StObject.set(x, "detailURI", null)
+    inline def setDetailURINull: Self = StObject.set(x, "detailURI", null)
     
-    @scala.inline
-    def setDetailURIUndefined: Self = StObject.set(x, "detailURI", js.undefined)
+    inline def setDetailURIUndefined: Self = StObject.set(x, "detailURI", js.undefined)
     
-    @scala.inline
-    def setExplanationString(value: java.lang.String): Self = StObject.set(x, "explanationString", value.asInstanceOf[js.Any])
+    inline def setExplanationString(value: java.lang.String): Self = StObject.set(x, "explanationString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplanationStringNull: Self = StObject.set(x, "explanationString", null)
+    inline def setExplanationStringNull: Self = StObject.set(x, "explanationString", null)
     
-    @scala.inline
-    def setExplanationStringUndefined: Self = StObject.set(x, "explanationString", js.undefined)
+    inline def setExplanationStringUndefined: Self = StObject.set(x, "explanationString", js.undefined)
     
-    @scala.inline
-    def setSiteName(value: java.lang.String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
+    inline def setSiteName(value: java.lang.String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteNameNull: Self = StObject.set(x, "siteName", null)
+    inline def setSiteNameNull: Self = StObject.set(x, "siteName", null)
     
-    @scala.inline
-    def setSiteNameUndefined: Self = StObject.set(x, "siteName", js.undefined)
+    inline def setSiteNameUndefined: Self = StObject.set(x, "siteName", js.undefined)
   }
 }

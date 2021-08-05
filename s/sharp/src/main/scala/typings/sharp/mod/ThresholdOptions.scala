@@ -14,25 +14,19 @@ trait ThresholdOptions extends StObject {
 }
 object ThresholdOptions {
   
-  @scala.inline
-  def apply(): ThresholdOptions = {
+  inline def apply(): ThresholdOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThresholdOptions]
   }
   
-  @scala.inline
-  implicit class ThresholdOptionsMutableBuilder[Self <: ThresholdOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThresholdOptions](x: Self) {
     
-    @scala.inline
-    def setGrayscale(value: Boolean): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
+    inline def setGrayscale(value: Boolean): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
+    inline def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
     
-    @scala.inline
-    def setGreyscale(value: Boolean): Self = StObject.set(x, "greyscale", value.asInstanceOf[js.Any])
+    inline def setGreyscale(value: Boolean): Self = StObject.set(x, "greyscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreyscaleUndefined: Self = StObject.set(x, "greyscale", js.undefined)
+    inline def setGreyscaleUndefined: Self = StObject.set(x, "greyscale", js.undefined)
   }
 }

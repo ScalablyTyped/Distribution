@@ -38,23 +38,18 @@ object simpleMod {
   }
   object SimpleResponseOptions {
     
-    @scala.inline
-    def apply(speech: String): SimpleResponseOptions = {
+    inline def apply(speech: String): SimpleResponseOptions = {
       val __obj = js.Dynamic.literal(speech = speech.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleResponseOptions]
     }
     
-    @scala.inline
-    implicit class SimpleResponseOptionsMutableBuilder[Self <: SimpleResponseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleResponseOptions](x: Self) {
       
-      @scala.inline
-      def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
+      inline def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

@@ -21,13 +21,11 @@ object Scroller {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Scroller = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Scroller]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Scroller = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Scroller]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.Scroller.fn")
   @js.native
   def fn: typings.kendoUi.kendo.mobile.ui.Scroller = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.mobile.ui.Scroller): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.mobile.ui.Scroller): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

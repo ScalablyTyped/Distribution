@@ -68,67 +68,47 @@ trait IDragDropElement extends StObject {
 }
 object IDragDropElement {
   
-  @scala.inline
-  def apply(): IDragDropElement = {
+  inline def apply(): IDragDropElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDragDropElement]
   }
   
-  @scala.inline
-  implicit class IDragDropElementMutableBuilder[Self <: IDragDropElement] (val x: Self) extends AnyVal {
+  extension [Self <: IDragDropElement](x: Self) {
     
-    @scala.inline
-    def setGetPosX(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = StObject.set(x, "getPosX", js.Any.fromFunction1(value))
+    inline def setGetPosX(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = StObject.set(x, "getPosX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPosXUndefined: Self = StObject.set(x, "getPosX", js.undefined)
+    inline def setGetPosXUndefined: Self = StObject.set(x, "getPosX", js.undefined)
     
-    @scala.inline
-    def setGetPosY(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = StObject.set(x, "getPosY", js.Any.fromFunction1(value))
+    inline def setGetPosY(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = StObject.set(x, "getPosY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPosYUndefined: Self = StObject.set(x, "getPosY", js.undefined)
+    inline def setGetPosYUndefined: Self = StObject.set(x, "getPosY", js.undefined)
     
-    @scala.inline
-    def setGetScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollLeft", js.Any.fromFunction0(value))
+    inline def setGetScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollLeft", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollLeftUndefined: Self = StObject.set(x, "getScrollLeft", js.undefined)
+    inline def setGetScrollLeftUndefined: Self = StObject.set(x, "getScrollLeft", js.undefined)
     
-    @scala.inline
-    def setGetScrollTop(value: () => Double): Self = StObject.set(x, "getScrollTop", js.Any.fromFunction0(value))
+    inline def setGetScrollTop(value: () => Double): Self = StObject.set(x, "getScrollTop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollTopUndefined: Self = StObject.set(x, "getScrollTop", js.undefined)
+    inline def setGetScrollTopUndefined: Self = StObject.set(x, "getScrollTop", js.undefined)
     
-    @scala.inline
-    def setGetStyle(value: (/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[String]) => String): Self = StObject.set(x, "getStyle", js.Any.fromFunction2(value))
+    inline def setGetStyle(value: (/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[String]) => String): Self = StObject.set(x, "getStyle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
+    inline def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
     
-    @scala.inline
-    def setHandleWasClicked(value: /* node */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "handleWasClicked", js.Any.fromFunction1(value))
+    inline def setHandleWasClicked(value: /* node */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "handleWasClicked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleWasClickedUndefined: Self = StObject.set(x, "handleWasClicked", js.undefined)
+    inline def setHandleWasClickedUndefined: Self = StObject.set(x, "handleWasClicked", js.undefined)
     
-    @scala.inline
-    def setMoveToEl(value: (/* moveEl */ js.UndefOr[HTMLElement], /* targetEl */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "moveToEl", js.Any.fromFunction2(value))
+    inline def setMoveToEl(value: (/* moveEl */ js.UndefOr[HTMLElement], /* targetEl */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "moveToEl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveToElUndefined: Self = StObject.set(x, "moveToEl", js.undefined)
+    inline def setMoveToElUndefined: Self = StObject.set(x, "moveToEl", js.undefined)
     
-    @scala.inline
-    def setNumericSort(value: (/* a */ js.UndefOr[Double], /* b */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "numericSort", js.Any.fromFunction2(value))
+    inline def setNumericSort(value: (/* a */ js.UndefOr[Double], /* b */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "numericSort", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNumericSortUndefined: Self = StObject.set(x, "numericSort", js.undefined)
+    inline def setNumericSortUndefined: Self = StObject.set(x, "numericSort", js.undefined)
     
-    @scala.inline
-    def setSwapNode(value: (/* n1 */ js.UndefOr[HTMLElement], /* n2 */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "swapNode", js.Any.fromFunction2(value))
+    inline def setSwapNode(value: (/* n1 */ js.UndefOr[HTMLElement], /* n2 */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "swapNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSwapNodeUndefined: Self = StObject.set(x, "swapNode", js.undefined)
+    inline def setSwapNodeUndefined: Self = StObject.set(x, "swapNode", js.undefined)
   }
 }

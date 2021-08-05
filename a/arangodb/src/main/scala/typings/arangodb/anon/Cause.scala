@@ -13,25 +13,19 @@ trait Cause extends StObject {
 }
 object Cause {
   
-  @scala.inline
-  def apply(): Cause = {
+  inline def apply(): Cause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cause]
   }
   
-  @scala.inline
-  implicit class CauseMutableBuilder[Self <: Cause] (val x: Self) extends AnyVal {
+  extension [Self <: Cause](x: Self) {
     
-    @scala.inline
-    def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
   }
 }

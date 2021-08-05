@@ -10,16 +10,13 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(xr: XRSystem): Navigator = {
+  inline def apply(xr: XRSystem): Navigator = {
     val __obj = js.Dynamic.literal(xr = xr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setXr(value: XRSystem): Self = StObject.set(x, "xr", value.asInstanceOf[js.Any])
+    inline def setXr(value: XRSystem): Self = StObject.set(x, "xr", value.asInstanceOf[js.Any])
   }
 }

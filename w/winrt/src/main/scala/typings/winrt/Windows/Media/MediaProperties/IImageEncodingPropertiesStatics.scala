@@ -14,8 +14,7 @@ trait IImageEncodingPropertiesStatics extends StObject {
 }
 object IImageEncodingPropertiesStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createJpeg: () => ImageEncodingProperties,
     createJpegXR: () => ImageEncodingProperties,
     createPng: () => ImageEncodingProperties
@@ -24,16 +23,12 @@ object IImageEncodingPropertiesStatics {
     __obj.asInstanceOf[IImageEncodingPropertiesStatics]
   }
   
-  @scala.inline
-  implicit class IImageEncodingPropertiesStaticsMutableBuilder[Self <: IImageEncodingPropertiesStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IImageEncodingPropertiesStatics](x: Self) {
     
-    @scala.inline
-    def setCreateJpeg(value: () => ImageEncodingProperties): Self = StObject.set(x, "createJpeg", js.Any.fromFunction0(value))
+    inline def setCreateJpeg(value: () => ImageEncodingProperties): Self = StObject.set(x, "createJpeg", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateJpegXR(value: () => ImageEncodingProperties): Self = StObject.set(x, "createJpegXR", js.Any.fromFunction0(value))
+    inline def setCreateJpegXR(value: () => ImageEncodingProperties): Self = StObject.set(x, "createJpegXR", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreatePng(value: () => ImageEncodingProperties): Self = StObject.set(x, "createPng", js.Any.fromFunction0(value))
+    inline def setCreatePng(value: () => ImageEncodingProperties): Self = StObject.set(x, "createPng", js.Any.fromFunction0(value))
   }
 }

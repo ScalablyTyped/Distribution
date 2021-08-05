@@ -12,19 +12,15 @@ trait WithoutCredentialsSearchC extends StObject {
 }
 object WithoutCredentialsSearchC {
   
-  @scala.inline
-  def apply(): WithoutCredentialsSearchC = {
+  inline def apply(): WithoutCredentialsSearchC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WithoutCredentialsSearchC]
   }
   
-  @scala.inline
-  implicit class WithoutCredentialsSearchCMutableBuilder[Self <: WithoutCredentialsSearchC] (val x: Self) extends AnyVal {
+  extension [Self <: WithoutCredentialsSearchC](x: Self) {
     
-    @scala.inline
-    def setAuthMode(value: AuthModeType): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+    inline def setAuthMode(value: AuthModeType): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthModeUndefined: Self = StObject.set(x, "authMode", js.undefined)
+    inline def setAuthModeUndefined: Self = StObject.set(x, "authMode", js.undefined)
   }
 }

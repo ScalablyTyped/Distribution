@@ -25,31 +25,23 @@ trait RefreshExtras extends StObject {
 }
 object RefreshExtras {
   
-  @scala.inline
-  def apply(): RefreshExtras = {
+  inline def apply(): RefreshExtras = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshExtras]
   }
   
-  @scala.inline
-  implicit class RefreshExtrasMutableBuilder[Self <: RefreshExtras] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshExtras](x: Self) {
     
-    @scala.inline
-    def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
+    inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
+    inline def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
     
-    @scala.inline
-    def setDPoP(value: DPoPInput): Self = StObject.set(x, "DPoP", value.asInstanceOf[js.Any])
+    inline def setDPoP(value: DPoPInput): Self = StObject.set(x, "DPoP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDPoPUndefined: Self = StObject.set(x, "DPoP", js.undefined)
+    inline def setDPoPUndefined: Self = StObject.set(x, "DPoP", js.undefined)
     
-    @scala.inline
-    def setExchangeBody(value: js.Object): Self = StObject.set(x, "exchangeBody", value.asInstanceOf[js.Any])
+    inline def setExchangeBody(value: js.Object): Self = StObject.set(x, "exchangeBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeBodyUndefined: Self = StObject.set(x, "exchangeBody", js.undefined)
+    inline def setExchangeBodyUndefined: Self = StObject.set(x, "exchangeBody", js.undefined)
   }
 }

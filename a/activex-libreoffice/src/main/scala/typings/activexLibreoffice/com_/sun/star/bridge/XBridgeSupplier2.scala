@@ -55,8 +55,7 @@ trait XBridgeSupplier2
 }
 object XBridgeSupplier2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createBridge: (js.Any, SeqEquiv[Double], Double, Double) => js.Any,
     queryInterface: `type` => js.Any,
@@ -66,10 +65,8 @@ object XBridgeSupplier2 {
     __obj.asInstanceOf[XBridgeSupplier2]
   }
   
-  @scala.inline
-  implicit class XBridgeSupplier2MutableBuilder[Self <: XBridgeSupplier2] (val x: Self) extends AnyVal {
+  extension [Self <: XBridgeSupplier2](x: Self) {
     
-    @scala.inline
-    def setCreateBridge(value: (js.Any, SeqEquiv[Double], Double, Double) => js.Any): Self = StObject.set(x, "createBridge", js.Any.fromFunction4(value))
+    inline def setCreateBridge(value: (js.Any, SeqEquiv[Double], Double, Double) => js.Any): Self = StObject.set(x, "createBridge", js.Any.fromFunction4(value))
   }
 }

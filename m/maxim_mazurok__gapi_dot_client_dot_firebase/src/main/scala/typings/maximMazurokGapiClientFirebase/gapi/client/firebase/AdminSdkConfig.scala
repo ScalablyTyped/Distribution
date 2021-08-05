@@ -27,37 +27,27 @@ trait AdminSdkConfig extends StObject {
 }
 object AdminSdkConfig {
   
-  @scala.inline
-  def apply(): AdminSdkConfig = {
+  inline def apply(): AdminSdkConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminSdkConfig]
   }
   
-  @scala.inline
-  implicit class AdminSdkConfigMutableBuilder[Self <: AdminSdkConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AdminSdkConfig](x: Self) {
     
-    @scala.inline
-    def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
+    inline def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
+    inline def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
+    inline def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
+    inline def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
   }
 }

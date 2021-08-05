@@ -23,31 +23,23 @@ trait AwsCertificateManagerCertificateResourceRecord extends StObject {
 }
 object AwsCertificateManagerCertificateResourceRecord {
   
-  @scala.inline
-  def apply(): AwsCertificateManagerCertificateResourceRecord = {
+  inline def apply(): AwsCertificateManagerCertificateResourceRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCertificateManagerCertificateResourceRecord]
   }
   
-  @scala.inline
-  implicit class AwsCertificateManagerCertificateResourceRecordMutableBuilder[Self <: AwsCertificateManagerCertificateResourceRecord] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCertificateManagerCertificateResourceRecord](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

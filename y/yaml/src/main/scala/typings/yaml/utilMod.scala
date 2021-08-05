@@ -204,46 +204,31 @@ object utilMod {
     var name_YAMLWarning: typings.yaml.yamlStrings.YAMLWarning = js.native
   }
   
-  @scala.inline
-  def findPair(items: js.Array[js.Any], key: js.Any): js.UndefOr[Pair] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPair")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Pair]]
-  @scala.inline
-  def findPair(items: js.Array[js.Any], key: Scalar): js.UndefOr[Pair] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPair")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Pair]]
+  inline def findPair(items: js.Array[js.Any], key: js.Any): js.UndefOr[Pair] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPair")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Pair]]
+  inline def findPair(items: js.Array[js.Any], key: Scalar): js.UndefOr[Pair] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPair")(items.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Pair]]
   
-  @scala.inline
-  def parseMap(doc: Document, cst: FlowMap): typings.yaml.typesMod.AST.FlowMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMap")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.typesMod.AST.FlowMap]
-  @scala.inline
-  def parseMap(doc: Document, cst: Map): BlockMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMap")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[BlockMap]
+  inline def parseMap(doc: Document, cst: FlowMap): typings.yaml.typesMod.AST.FlowMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMap")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.typesMod.AST.FlowMap]
+  inline def parseMap(doc: Document, cst: Map): BlockMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMap")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[BlockMap]
   
-  @scala.inline
-  def parseSeq(doc: Document, cst: FlowSeq): typings.yaml.typesMod.AST.FlowSeq = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSeq")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.typesMod.AST.FlowSeq]
-  @scala.inline
-  def parseSeq(doc: Document, cst: Seq): BlockSeq = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSeq")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[BlockSeq]
+  inline def parseSeq(doc: Document, cst: FlowSeq): typings.yaml.typesMod.AST.FlowSeq = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSeq")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.typesMod.AST.FlowSeq]
+  inline def parseSeq(doc: Document, cst: Seq): BlockSeq = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSeq")(doc.asInstanceOf[js.Any], cst.asInstanceOf[js.Any])).asInstanceOf[BlockSeq]
   
-  @scala.inline
-  def stringifyNumber(item: Scalar): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyNumber")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyNumber(item: Scalar): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyNumber")(item.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stringifyString(item: Scalar, ctx: StringifyContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringifyString(item: Scalar, ctx: StringifyContext, onComment: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringifyString(
+  inline def stringifyString(item: Scalar, ctx: StringifyContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyString(item: Scalar, ctx: StringifyContext, onComment: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyString(
     item: Scalar,
     ctx: StringifyContext,
     onComment: js.Function0[Unit],
     onChompKeep: js.Function0[Unit]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringifyString(item: Scalar, ctx: StringifyContext, onComment: Unit, onChompKeep: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyString(item: Scalar, ctx: StringifyContext, onComment: Unit, onChompKeep: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toJSON(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def toJSON(value: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def toJSON(value: js.Any, arg: js.Any, ctx: CreateNodeContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def toJSON(value: js.Any, arg: Unit, ctx: CreateNodeContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def toJSON(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toJSON(value: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def toJSON(value: js.Any, arg: js.Any, ctx: CreateNodeContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def toJSON(value: js.Any, arg: Unit, ctx: CreateNodeContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(value.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait LinePos extends StObject {
     
@@ -253,20 +238,16 @@ object utilMod {
   }
   object LinePos {
     
-    @scala.inline
-    def apply(col: Double, line: Double): LinePos = {
+    inline def apply(col: Double, line: Double): LinePos = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinePos]
     }
     
-    @scala.inline
-    implicit class LinePosMutableBuilder[Self <: LinePos] (val x: Self) extends AnyVal {
+    extension [Self <: LinePos](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
 }

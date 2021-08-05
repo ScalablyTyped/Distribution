@@ -11,6 +11,5 @@ object puppeteerInitializeNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializePuppeteerNode(packageName: String): PuppeteerNode = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePuppeteerNode")(packageName.asInstanceOf[js.Any]).asInstanceOf[PuppeteerNode]
+  inline def initializePuppeteerNode(packageName: String): PuppeteerNode = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePuppeteerNode")(packageName.asInstanceOf[js.Any]).asInstanceOf[PuppeteerNode]
 }

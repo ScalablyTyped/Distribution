@@ -6,38 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): FuzzySet = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String]): FuzzySet = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String], useLevenshtein: Boolean): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String], useLevenshtein: Unit, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String], useLevenshtein: Unit, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: js.Array[String], useLevenshtein: Unit, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: Unit, useLevenshtein: Boolean): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: Unit, useLevenshtein: Boolean, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: Unit, useLevenshtein: Boolean, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: Unit, useLevenshtein: Boolean, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: Unit, useLevenshtein: Unit, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: Unit, useLevenshtein: Unit, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
-  @scala.inline
-  def apply(source: Unit, useLevenshtein: Unit, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(): FuzzySet = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String]): FuzzySet = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String], useLevenshtein: Boolean): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String], useLevenshtein: Boolean, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String], useLevenshtein: Unit, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String], useLevenshtein: Unit, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: js.Array[String], useLevenshtein: Unit, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: Unit, useLevenshtein: Boolean): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: Unit, useLevenshtein: Boolean, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: Unit, useLevenshtein: Boolean, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: Unit, useLevenshtein: Boolean, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: Unit, useLevenshtein: Unit, gramSizeLower: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: Unit, useLevenshtein: Unit, gramSizeLower: Double, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
+  inline def apply(source: Unit, useLevenshtein: Unit, gramSizeLower: Unit, gramSizeUpper: Double): FuzzySet = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], useLevenshtein.asInstanceOf[js.Any], gramSizeLower.asInstanceOf[js.Any], gramSizeUpper.asInstanceOf[js.Any])).asInstanceOf[FuzzySet]
   
   @JSImport("fuzzyset", JSImport.Namespace)
   @js.native
@@ -57,8 +41,7 @@ object mod {
   }
   object FuzzySet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: String => Boolean,
       get: String => js.Array[js.Tuple2[Double, String]],
       isEmpty: () => Boolean,
@@ -69,23 +52,17 @@ object mod {
       __obj.asInstanceOf[FuzzySet]
     }
     
-    @scala.inline
-    implicit class FuzzySetMutableBuilder[Self <: FuzzySet] (val x: Self) extends AnyVal {
+    extension [Self <: FuzzySet](x: Self) {
       
-      @scala.inline
-      def setAdd(value: String => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: String => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => js.Array[js.Tuple2[Double, String]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Array[js.Tuple2[Double, String]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValues(value: () => js.Array[String]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValues(value: () => js.Array[String]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
     }
   }
 }

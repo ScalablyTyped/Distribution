@@ -20,37 +20,27 @@ trait AttachOpts extends StObject {
 }
 object AttachOpts {
   
-  @scala.inline
-  def apply(): AttachOpts = {
+  inline def apply(): AttachOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachOpts]
   }
   
-  @scala.inline
-  implicit class AttachOptsMutableBuilder[Self <: AttachOpts] (val x: Self) extends AnyVal {
+  extension [Self <: AttachOpts](x: Self) {
     
-    @scala.inline
-    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
-    @scala.inline
-    def setInsertAt(value: Double): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
+    inline def setInsertAt(value: Double): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
+    inline def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
     
-    @scala.inline
-    def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+    inline def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+    inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

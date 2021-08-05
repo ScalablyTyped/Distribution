@@ -28,31 +28,23 @@ trait CurrentRevision extends StObject {
 }
 object CurrentRevision {
   
-  @scala.inline
-  def apply(changeIdentifier: RevisionChangeIdentifier, revision: Revision): CurrentRevision = {
+  inline def apply(changeIdentifier: RevisionChangeIdentifier, revision: Revision): CurrentRevision = {
     val __obj = js.Dynamic.literal(changeIdentifier = changeIdentifier.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentRevision]
   }
   
-  @scala.inline
-  implicit class CurrentRevisionMutableBuilder[Self <: CurrentRevision] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentRevision](x: Self) {
     
-    @scala.inline
-    def setChangeIdentifier(value: RevisionChangeIdentifier): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
+    inline def setChangeIdentifier(value: RevisionChangeIdentifier): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Time): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Time): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setRevision(value: Revision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Revision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
+    inline def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
+    inline def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
   }
 }

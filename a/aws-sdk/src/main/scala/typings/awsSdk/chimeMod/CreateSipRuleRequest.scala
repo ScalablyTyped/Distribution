@@ -33,8 +33,7 @@ trait CreateSipRuleRequest extends StObject {
 }
 object CreateSipRuleRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: SipRuleName,
     TargetApplications: SipRuleTargetApplicationList,
     TriggerType: SipRuleTriggerType,
@@ -44,28 +43,20 @@ object CreateSipRuleRequest {
     __obj.asInstanceOf[CreateSipRuleRequest]
   }
   
-  @scala.inline
-  implicit class CreateSipRuleRequestMutableBuilder[Self <: CreateSipRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSipRuleRequest](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setName(value: SipRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SipRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetApplications(value: SipRuleTargetApplicationList): Self = StObject.set(x, "TargetApplications", value.asInstanceOf[js.Any])
+    inline def setTargetApplications(value: SipRuleTargetApplicationList): Self = StObject.set(x, "TargetApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
+    inline def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggerType(value: SipRuleTriggerType): Self = StObject.set(x, "TriggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: SipRuleTriggerType): Self = StObject.set(x, "TriggerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerValue(value: NonEmptyString): Self = StObject.set(x, "TriggerValue", value.asInstanceOf[js.Any])
+    inline def setTriggerValue(value: NonEmptyString): Self = StObject.set(x, "TriggerValue", value.asInstanceOf[js.Any])
   }
 }

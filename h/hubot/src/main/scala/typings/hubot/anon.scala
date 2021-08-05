@@ -18,23 +18,18 @@ object anon {
   }
   object Listener {
     
-    @scala.inline
-    def apply[A /* <: Adapter */](listener: Middleware[A], receive: Middleware[A], response: Middleware[A]): Listener[A] = {
+    inline def apply[A /* <: Adapter */](listener: Middleware[A], receive: Middleware[A], response: Middleware[A]): Listener[A] = {
       val __obj = js.Dynamic.literal(listener = listener.asInstanceOf[js.Any], receive = receive.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Listener[A]]
     }
     
-    @scala.inline
-    implicit class ListenerMutableBuilder[Self <: Listener[?], A /* <: Adapter */] (val x: Self & Listener[A]) extends AnyVal {
+    extension [Self <: Listener[?], A /* <: Adapter */](x: Self & Listener[A]) {
       
-      @scala.inline
-      def setListener(value: Middleware[A]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+      inline def setListener(value: Middleware[A]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceive(value: Middleware[A]): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
+      inline def setReceive(value: Middleware[A]): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Middleware[A]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Middleware[A]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

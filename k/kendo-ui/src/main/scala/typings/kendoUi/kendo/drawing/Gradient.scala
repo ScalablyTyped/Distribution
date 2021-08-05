@@ -19,8 +19,7 @@ trait Gradient
 }
 object Gradient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addStop: (Double, String, Double) => GradientStop,
     options: GradientOptions,
     removeStop: GradientStop => Unit,
@@ -30,19 +29,14 @@ object Gradient {
     __obj.asInstanceOf[Gradient]
   }
   
-  @scala.inline
-  implicit class GradientMutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
+  extension [Self <: Gradient](x: Self) {
     
-    @scala.inline
-    def setAddStop(value: (Double, String, Double) => GradientStop): Self = StObject.set(x, "addStop", js.Any.fromFunction3(value))
+    inline def setAddStop(value: (Double, String, Double) => GradientStop): Self = StObject.set(x, "addStop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOptions(value: GradientOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: GradientOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStop(value: GradientStop => Unit): Self = StObject.set(x, "removeStop", js.Any.fromFunction1(value))
+    inline def setRemoveStop(value: GradientStop => Unit): Self = StObject.set(x, "removeStop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
   }
 }

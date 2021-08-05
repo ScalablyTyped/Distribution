@@ -44,19 +44,15 @@ trait SchemaHttpData extends StObject {
 }
 object SchemaHttpData {
   
-  @scala.inline
-  def apply(): SchemaHttpData = {
+  inline def apply(): SchemaHttpData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpData]
   }
   
-  @scala.inline
-  implicit class SchemaHttpDataMutableBuilder[Self <: SchemaHttpData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpData](x: Self) {
     
-    @scala.inline
-    def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
+    inline def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUrlUndefined: Self = StObject.set(x, "listUrl", js.undefined)
+    inline def setListUrlUndefined: Self = StObject.set(x, "listUrl", js.undefined)
   }
 }

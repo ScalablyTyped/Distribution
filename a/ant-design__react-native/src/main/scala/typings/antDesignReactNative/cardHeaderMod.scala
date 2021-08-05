@@ -27,8 +27,7 @@ object cardHeaderMod {
     @JSImport("@ant-design/react-native/lib/card/CardHeader", "default.defaultProps")
     @js.native
     def defaultProps: ThumbStyle = js.native
-    @scala.inline
-    def defaultProps_=(x: ThumbStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ThumbStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -45,32 +44,24 @@ object cardHeaderMod {
   }
   object CardHeaderProps {
     
-    @scala.inline
-    def apply(): CardHeaderProps = {
+    inline def apply(): CardHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardHeaderProps]
     }
     
-    @scala.inline
-    implicit class CardHeaderPropsMutableBuilder[Self <: CardHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardHeaderProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setThumbStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "thumbStyle", value.asInstanceOf[js.Any])
+      inline def setThumbStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "thumbStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbStyleNull: Self = StObject.set(x, "thumbStyle", null)
+      inline def setThumbStyleNull: Self = StObject.set(x, "thumbStyle", null)
       
-      @scala.inline
-      def setThumbStyleUndefined: Self = StObject.set(x, "thumbStyle", js.undefined)
+      inline def setThumbStyleUndefined: Self = StObject.set(x, "thumbStyle", js.undefined)
     }
   }
   
@@ -87,32 +78,24 @@ object cardHeaderMod {
   }
   object CardHeaderPropsType {
     
-    @scala.inline
-    def apply(): CardHeaderPropsType = {
+    inline def apply(): CardHeaderPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardHeaderPropsType]
     }
     
-    @scala.inline
-    implicit class CardHeaderPropsTypeMutableBuilder[Self <: CardHeaderPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CardHeaderPropsType](x: Self) {
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setThumb(value: ReactNode): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+      inline def setThumb(value: ReactNode): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+      inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

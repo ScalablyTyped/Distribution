@@ -11,19 +11,15 @@ trait FhirFilter extends StObject {
 }
 object FhirFilter {
   
-  @scala.inline
-  def apply(): FhirFilter = {
+  inline def apply(): FhirFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FhirFilter]
   }
   
-  @scala.inline
-  implicit class FhirFilterMutableBuilder[Self <: FhirFilter] (val x: Self) extends AnyVal {
+  extension [Self <: FhirFilter](x: Self) {
     
-    @scala.inline
-    def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
   }
 }

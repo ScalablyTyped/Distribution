@@ -25,25 +25,19 @@ trait SchemaExtendedCompensationInfoDecimal extends StObject {
 }
 object SchemaExtendedCompensationInfoDecimal {
   
-  @scala.inline
-  def apply(): SchemaExtendedCompensationInfoDecimal = {
+  inline def apply(): SchemaExtendedCompensationInfoDecimal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExtendedCompensationInfoDecimal]
   }
   
-  @scala.inline
-  implicit class SchemaExtendedCompensationInfoDecimalMutableBuilder[Self <: SchemaExtendedCompensationInfoDecimal] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExtendedCompensationInfoDecimal](x: Self) {
     
-    @scala.inline
-    def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
+    inline def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrosUndefined: Self = StObject.set(x, "micros", js.undefined)
+    inline def setMicrosUndefined: Self = StObject.set(x, "micros", js.undefined)
     
-    @scala.inline
-    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

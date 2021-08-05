@@ -72,82 +72,57 @@ trait ComponentProps
 }
 object ComponentProps {
   
-  @scala.inline
-  def apply(gaeaName: String, gaeaUniqueKey: String): ComponentProps = {
+  inline def apply(gaeaName: String, gaeaUniqueKey: String): ComponentProps = {
     val __obj = js.Dynamic.literal(gaeaName = gaeaName.asInstanceOf[js.Any], gaeaUniqueKey = gaeaUniqueKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentProps]
   }
   
-  @scala.inline
-  implicit class ComponentPropsMutableBuilder[Self <: ComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentProps](x: Self) {
     
-    @scala.inline
-    def setCanDragIn(value: Boolean): Self = StObject.set(x, "canDragIn", value.asInstanceOf[js.Any])
+    inline def setCanDragIn(value: Boolean): Self = StObject.set(x, "canDragIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDragInUndefined: Self = StObject.set(x, "canDragIn", js.undefined)
+    inline def setCanDragInUndefined: Self = StObject.set(x, "canDragIn", js.undefined)
     
-    @scala.inline
-    def setGaeaData(value: js.Any): Self = StObject.set(x, "gaeaData", value.asInstanceOf[js.Any])
+    inline def setGaeaData(value: js.Any): Self = StObject.set(x, "gaeaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaDataUndefined: Self = StObject.set(x, "gaeaData", js.undefined)
+    inline def setGaeaDataUndefined: Self = StObject.set(x, "gaeaData", js.undefined)
     
-    @scala.inline
-    def setGaeaEdit(value: js.Array[ComponentPropsGaeaEdit]): Self = StObject.set(x, "gaeaEdit", value.asInstanceOf[js.Any])
+    inline def setGaeaEdit(value: js.Array[ComponentPropsGaeaEdit]): Self = StObject.set(x, "gaeaEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaEditUndefined: Self = StObject.set(x, "gaeaEdit", js.undefined)
+    inline def setGaeaEditUndefined: Self = StObject.set(x, "gaeaEdit", js.undefined)
     
-    @scala.inline
-    def setGaeaEditVarargs(value: ComponentPropsGaeaEdit*): Self = StObject.set(x, "gaeaEdit", js.Array(value :_*))
+    inline def setGaeaEditVarargs(value: ComponentPropsGaeaEdit*): Self = StObject.set(x, "gaeaEdit", js.Array(value :_*))
     
-    @scala.inline
-    def setGaeaEvent(value: GaeaEvent): Self = StObject.set(x, "gaeaEvent", value.asInstanceOf[js.Any])
+    inline def setGaeaEvent(value: GaeaEvent): Self = StObject.set(x, "gaeaEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaEventData(value: js.Array[EventData]): Self = StObject.set(x, "gaeaEventData", value.asInstanceOf[js.Any])
+    inline def setGaeaEventData(value: js.Array[EventData]): Self = StObject.set(x, "gaeaEventData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaEventDataUndefined: Self = StObject.set(x, "gaeaEventData", js.undefined)
+    inline def setGaeaEventDataUndefined: Self = StObject.set(x, "gaeaEventData", js.undefined)
     
-    @scala.inline
-    def setGaeaEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaEventData", js.Array(value :_*))
+    inline def setGaeaEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaEventData", js.Array(value :_*))
     
-    @scala.inline
-    def setGaeaEventUndefined: Self = StObject.set(x, "gaeaEvent", js.undefined)
+    inline def setGaeaEventUndefined: Self = StObject.set(x, "gaeaEvent", js.undefined)
     
-    @scala.inline
-    def setGaeaIcon(value: String): Self = StObject.set(x, "gaeaIcon", value.asInstanceOf[js.Any])
+    inline def setGaeaIcon(value: String): Self = StObject.set(x, "gaeaIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaIconUndefined: Self = StObject.set(x, "gaeaIcon", js.undefined)
+    inline def setGaeaIconUndefined: Self = StObject.set(x, "gaeaIcon", js.undefined)
     
-    @scala.inline
-    def setGaeaName(value: String): Self = StObject.set(x, "gaeaName", value.asInstanceOf[js.Any])
+    inline def setGaeaName(value: String): Self = StObject.set(x, "gaeaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaNativeEventData(value: js.Array[EventData]): Self = StObject.set(x, "gaeaNativeEventData", value.asInstanceOf[js.Any])
+    inline def setGaeaNativeEventData(value: js.Array[EventData]): Self = StObject.set(x, "gaeaNativeEventData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaNativeEventDataUndefined: Self = StObject.set(x, "gaeaNativeEventData", js.undefined)
+    inline def setGaeaNativeEventDataUndefined: Self = StObject.set(x, "gaeaNativeEventData", js.undefined)
     
-    @scala.inline
-    def setGaeaNativeEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaNativeEventData", js.Array(value :_*))
+    inline def setGaeaNativeEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaNativeEventData", js.Array(value :_*))
     
-    @scala.inline
-    def setGaeaPreview(value: Boolean): Self = StObject.set(x, "gaeaPreview", value.asInstanceOf[js.Any])
+    inline def setGaeaPreview(value: Boolean): Self = StObject.set(x, "gaeaPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaPreviewUndefined: Self = StObject.set(x, "gaeaPreview", js.undefined)
+    inline def setGaeaPreviewUndefined: Self = StObject.set(x, "gaeaPreview", js.undefined)
     
-    @scala.inline
-    def setGaeaUniqueKey(value: String): Self = StObject.set(x, "gaeaUniqueKey", value.asInstanceOf[js.Any])
+    inline def setGaeaUniqueKey(value: String): Self = StObject.set(x, "gaeaUniqueKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaVariables(value: StringDictionary[VariableData]): Self = StObject.set(x, "gaeaVariables", value.asInstanceOf[js.Any])
+    inline def setGaeaVariables(value: StringDictionary[VariableData]): Self = StObject.set(x, "gaeaVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaeaVariablesUndefined: Self = StObject.set(x, "gaeaVariables", js.undefined)
+    inline def setGaeaVariablesUndefined: Self = StObject.set(x, "gaeaVariables", js.undefined)
   }
 }

@@ -22,13 +22,12 @@ trait MappedDataField extends StObject {
   
   val Value: String
   
-  @JSName("Word.MappedDataField_typekey")
+  /* private */ @JSName("Word.MappedDataField_typekey")
   var WordDotMappedDataField_typekey: MappedDataField
 }
 object MappedDataField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     DataFieldIndex: Double,
@@ -44,34 +43,24 @@ object MappedDataField {
     __obj.asInstanceOf[MappedDataField]
   }
   
-  @scala.inline
-  implicit class MappedDataFieldMutableBuilder[Self <: MappedDataField] (val x: Self) extends AnyVal {
+  extension [Self <: MappedDataField](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFieldIndex(value: Double): Self = StObject.set(x, "DataFieldIndex", value.asInstanceOf[js.Any])
+    inline def setDataFieldIndex(value: Double): Self = StObject.set(x, "DataFieldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFieldName(value: String): Self = StObject.set(x, "DataFieldName", value.asInstanceOf[js.Any])
+    inline def setDataFieldName(value: String): Self = StObject.set(x, "DataFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotMappedDataField_typekey(value: MappedDataField): Self = StObject.set(x, "Word.MappedDataField_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotMappedDataField_typekey(value: MappedDataField): Self = StObject.set(x, "Word.MappedDataField_typekey", value.asInstanceOf[js.Any])
   }
 }

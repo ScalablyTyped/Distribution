@@ -92,100 +92,69 @@ trait SchemaModel extends StObject {
 }
 object SchemaModel {
   
-  @scala.inline
-  def apply(): SchemaModel = {
+  inline def apply(): SchemaModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModel]
   }
   
-  @scala.inline
-  implicit class SchemaModelMutableBuilder[Self <: SchemaModel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModel](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
-    @scala.inline
-    def setFeatureColumns(value: js.Array[SchemaStandardSqlField]): Self = StObject.set(x, "featureColumns", value.asInstanceOf[js.Any])
+    inline def setFeatureColumns(value: js.Array[SchemaStandardSqlField]): Self = StObject.set(x, "featureColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureColumnsUndefined: Self = StObject.set(x, "featureColumns", js.undefined)
+    inline def setFeatureColumnsUndefined: Self = StObject.set(x, "featureColumns", js.undefined)
     
-    @scala.inline
-    def setFeatureColumnsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "featureColumns", js.Array(value :_*))
+    inline def setFeatureColumnsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "featureColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+    inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
-    @scala.inline
-    def setLabelColumns(value: js.Array[SchemaStandardSqlField]): Self = StObject.set(x, "labelColumns", value.asInstanceOf[js.Any])
+    inline def setLabelColumns(value: js.Array[SchemaStandardSqlField]): Self = StObject.set(x, "labelColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelColumnsUndefined: Self = StObject.set(x, "labelColumns", js.undefined)
+    inline def setLabelColumnsUndefined: Self = StObject.set(x, "labelColumns", js.undefined)
     
-    @scala.inline
-    def setLabelColumnsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "labelColumns", js.Array(value :_*))
+    inline def setLabelColumnsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "labelColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setModelReference(value: SchemaModelReference): Self = StObject.set(x, "modelReference", value.asInstanceOf[js.Any])
+    inline def setModelReference(value: SchemaModelReference): Self = StObject.set(x, "modelReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelReferenceUndefined: Self = StObject.set(x, "modelReference", js.undefined)
+    inline def setModelReferenceUndefined: Self = StObject.set(x, "modelReference", js.undefined)
     
-    @scala.inline
-    def setModelType(value: String): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
+    inline def setModelType(value: String): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
+    inline def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
     
-    @scala.inline
-    def setTrainingRuns(value: js.Array[SchemaTrainingRun]): Self = StObject.set(x, "trainingRuns", value.asInstanceOf[js.Any])
+    inline def setTrainingRuns(value: js.Array[SchemaTrainingRun]): Self = StObject.set(x, "trainingRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingRunsUndefined: Self = StObject.set(x, "trainingRuns", js.undefined)
+    inline def setTrainingRunsUndefined: Self = StObject.set(x, "trainingRuns", js.undefined)
     
-    @scala.inline
-    def setTrainingRunsVarargs(value: SchemaTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value :_*))
+    inline def setTrainingRunsVarargs(value: SchemaTrainingRun*): Self = StObject.set(x, "trainingRuns", js.Array(value :_*))
   }
 }

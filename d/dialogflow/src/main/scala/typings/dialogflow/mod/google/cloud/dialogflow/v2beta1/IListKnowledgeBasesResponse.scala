@@ -15,34 +15,25 @@ trait IListKnowledgeBasesResponse extends StObject {
 }
 object IListKnowledgeBasesResponse {
   
-  @scala.inline
-  def apply(): IListKnowledgeBasesResponse = {
+  inline def apply(): IListKnowledgeBasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListKnowledgeBasesResponse]
   }
   
-  @scala.inline
-  implicit class IListKnowledgeBasesResponseMutableBuilder[Self <: IListKnowledgeBasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IListKnowledgeBasesResponse](x: Self) {
     
-    @scala.inline
-    def setKnowledgeBases(value: js.Array[IKnowledgeBase]): Self = StObject.set(x, "knowledgeBases", value.asInstanceOf[js.Any])
+    inline def setKnowledgeBases(value: js.Array[IKnowledgeBase]): Self = StObject.set(x, "knowledgeBases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeBasesNull: Self = StObject.set(x, "knowledgeBases", null)
+    inline def setKnowledgeBasesNull: Self = StObject.set(x, "knowledgeBases", null)
     
-    @scala.inline
-    def setKnowledgeBasesUndefined: Self = StObject.set(x, "knowledgeBases", js.undefined)
+    inline def setKnowledgeBasesUndefined: Self = StObject.set(x, "knowledgeBases", js.undefined)
     
-    @scala.inline
-    def setKnowledgeBasesVarargs(value: IKnowledgeBase*): Self = StObject.set(x, "knowledgeBases", js.Array(value :_*))
+    inline def setKnowledgeBasesVarargs(value: IKnowledgeBase*): Self = StObject.set(x, "knowledgeBases", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

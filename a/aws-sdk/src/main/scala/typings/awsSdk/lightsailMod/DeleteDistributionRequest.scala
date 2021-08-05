@@ -13,19 +13,15 @@ trait DeleteDistributionRequest extends StObject {
 }
 object DeleteDistributionRequest {
   
-  @scala.inline
-  def apply(): DeleteDistributionRequest = {
+  inline def apply(): DeleteDistributionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDistributionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDistributionRequestMutableBuilder[Self <: DeleteDistributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDistributionRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
+    inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
+    inline def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
   }
 }

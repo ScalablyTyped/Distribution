@@ -45,57 +45,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecordStatusEnum extends StObject
 object RecordStatusEnum {
   
-  @scala.inline
-  def adRecCanceled: `256` = 256.asInstanceOf[`256`]
+  inline def adRecCanceled: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def adRecCantRelease: `1024` = 1024.asInstanceOf[`1024`]
+  inline def adRecCantRelease: `1024` = 1024.asInstanceOf[`1024`]
   
-  @scala.inline
-  def adRecConcurrencyViolation: `2048` = 2048.asInstanceOf[`2048`]
+  inline def adRecConcurrencyViolation: `2048` = 2048.asInstanceOf[`2048`]
   
-  @scala.inline
-  def adRecDBDeleted: `262144` = 262144.asInstanceOf[`262144`]
+  inline def adRecDBDeleted: `262144` = 262144.asInstanceOf[`262144`]
   
-  @scala.inline
-  def adRecDeleted: `4` = 4.asInstanceOf[`4`]
+  inline def adRecDeleted: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adRecIntegrityViolation: `4096` = 4096.asInstanceOf[`4096`]
+  inline def adRecIntegrityViolation: `4096` = 4096.asInstanceOf[`4096`]
   
-  @scala.inline
-  def adRecInvalid: `16` = 16.asInstanceOf[`16`]
+  inline def adRecInvalid: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def adRecMaxChangesExceeded: `8192` = 8192.asInstanceOf[`8192`]
+  inline def adRecMaxChangesExceeded: `8192` = 8192.asInstanceOf[`8192`]
   
-  @scala.inline
-  def adRecModified: `2` = 2.asInstanceOf[`2`]
+  inline def adRecModified: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adRecMultipleChanges: `64` = 64.asInstanceOf[`64`]
+  inline def adRecMultipleChanges: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def adRecNew: `1` = 1.asInstanceOf[`1`]
+  inline def adRecNew: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adRecOK: `0` = 0.asInstanceOf[`0`]
+  inline def adRecOK: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adRecObjectOpen: `16384` = 16384.asInstanceOf[`16384`]
+  inline def adRecObjectOpen: `16384` = 16384.asInstanceOf[`16384`]
   
-  @scala.inline
-  def adRecOutOfMemory: `32768` = 32768.asInstanceOf[`32768`]
+  inline def adRecOutOfMemory: `32768` = 32768.asInstanceOf[`32768`]
   
-  @scala.inline
-  def adRecPendingChanges: `128` = 128.asInstanceOf[`128`]
+  inline def adRecPendingChanges: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def adRecPermissionDenied: `65536` = 65536.asInstanceOf[`65536`]
+  inline def adRecPermissionDenied: `65536` = 65536.asInstanceOf[`65536`]
   
-  @scala.inline
-  def adRecSchemaViolation: `131072` = 131072.asInstanceOf[`131072`]
+  inline def adRecSchemaViolation: `131072` = 131072.asInstanceOf[`131072`]
   
-  @scala.inline
-  def adRecUnmodified: `8` = 8.asInstanceOf[`8`]
+  inline def adRecUnmodified: `8` = 8.asInstanceOf[`8`]
 }

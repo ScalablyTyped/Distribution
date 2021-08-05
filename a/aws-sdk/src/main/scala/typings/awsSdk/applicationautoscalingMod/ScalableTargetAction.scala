@@ -18,25 +18,19 @@ trait ScalableTargetAction extends StObject {
 }
 object ScalableTargetAction {
   
-  @scala.inline
-  def apply(): ScalableTargetAction = {
+  inline def apply(): ScalableTargetAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScalableTargetAction]
   }
   
-  @scala.inline
-  implicit class ScalableTargetActionMutableBuilder[Self <: ScalableTargetAction] (val x: Self) extends AnyVal {
+  extension [Self <: ScalableTargetAction](x: Self) {
     
-    @scala.inline
-    def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
+    inline def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
+    inline def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
-    @scala.inline
-    def setMinCapacity(value: ResourceCapacity): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
+    inline def setMinCapacity(value: ResourceCapacity): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCapacityUndefined: Self = StObject.set(x, "MinCapacity", js.undefined)
+    inline def setMinCapacityUndefined: Self = StObject.set(x, "MinCapacity", js.undefined)
   }
 }

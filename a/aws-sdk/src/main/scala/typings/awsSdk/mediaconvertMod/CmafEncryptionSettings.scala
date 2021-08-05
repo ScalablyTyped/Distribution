@@ -38,49 +38,35 @@ trait CmafEncryptionSettings extends StObject {
 }
 object CmafEncryptionSettings {
   
-  @scala.inline
-  def apply(): CmafEncryptionSettings = {
+  inline def apply(): CmafEncryptionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CmafEncryptionSettings]
   }
   
-  @scala.inline
-  implicit class CmafEncryptionSettingsMutableBuilder[Self <: CmafEncryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CmafEncryptionSettings](x: Self) {
     
-    @scala.inline
-    def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
+    inline def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantInitializationVectorUndefined: Self = StObject.set(x, "ConstantInitializationVector", js.undefined)
+    inline def setConstantInitializationVectorUndefined: Self = StObject.set(x, "ConstantInitializationVector", js.undefined)
     
-    @scala.inline
-    def setEncryptionMethod(value: CmafEncryptionType): Self = StObject.set(x, "EncryptionMethod", value.asInstanceOf[js.Any])
+    inline def setEncryptionMethod(value: CmafEncryptionType): Self = StObject.set(x, "EncryptionMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionMethodUndefined: Self = StObject.set(x, "EncryptionMethod", js.undefined)
+    inline def setEncryptionMethodUndefined: Self = StObject.set(x, "EncryptionMethod", js.undefined)
     
-    @scala.inline
-    def setInitializationVectorInManifest(value: CmafInitializationVectorInManifest): Self = StObject.set(x, "InitializationVectorInManifest", value.asInstanceOf[js.Any])
+    inline def setInitializationVectorInManifest(value: CmafInitializationVectorInManifest): Self = StObject.set(x, "InitializationVectorInManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationVectorInManifestUndefined: Self = StObject.set(x, "InitializationVectorInManifest", js.undefined)
+    inline def setInitializationVectorInManifestUndefined: Self = StObject.set(x, "InitializationVectorInManifest", js.undefined)
     
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProviderCmaf): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
+    inline def setSpekeKeyProvider(value: SpekeKeyProviderCmaf): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
+    inline def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
     
-    @scala.inline
-    def setStaticKeyProvider(value: StaticKeyProvider): Self = StObject.set(x, "StaticKeyProvider", value.asInstanceOf[js.Any])
+    inline def setStaticKeyProvider(value: StaticKeyProvider): Self = StObject.set(x, "StaticKeyProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticKeyProviderUndefined: Self = StObject.set(x, "StaticKeyProvider", js.undefined)
+    inline def setStaticKeyProviderUndefined: Self = StObject.set(x, "StaticKeyProvider", js.undefined)
     
-    @scala.inline
-    def setType(value: CmafKeyProviderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: CmafKeyProviderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

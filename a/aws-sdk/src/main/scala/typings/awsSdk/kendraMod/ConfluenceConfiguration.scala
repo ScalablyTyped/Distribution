@@ -58,70 +58,49 @@ trait ConfluenceConfiguration extends StObject {
 }
 object ConfluenceConfiguration {
   
-  @scala.inline
-  def apply(SecretArn: SecretArn, ServerUrl: Url, Version: ConfluenceVersion): ConfluenceConfiguration = {
+  inline def apply(SecretArn: SecretArn, ServerUrl: Url, Version: ConfluenceVersion): ConfluenceConfiguration = {
     val __obj = js.Dynamic.literal(SecretArn = SecretArn.asInstanceOf[js.Any], ServerUrl = ServerUrl.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfluenceConfiguration]
   }
   
-  @scala.inline
-  implicit class ConfluenceConfigurationMutableBuilder[Self <: ConfluenceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConfluenceConfiguration](x: Self) {
     
-    @scala.inline
-    def setAttachmentConfiguration(value: ConfluenceAttachmentConfiguration): Self = StObject.set(x, "AttachmentConfiguration", value.asInstanceOf[js.Any])
+    inline def setAttachmentConfiguration(value: ConfluenceAttachmentConfiguration): Self = StObject.set(x, "AttachmentConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentConfigurationUndefined: Self = StObject.set(x, "AttachmentConfiguration", js.undefined)
+    inline def setAttachmentConfigurationUndefined: Self = StObject.set(x, "AttachmentConfiguration", js.undefined)
     
-    @scala.inline
-    def setBlogConfiguration(value: ConfluenceBlogConfiguration): Self = StObject.set(x, "BlogConfiguration", value.asInstanceOf[js.Any])
+    inline def setBlogConfiguration(value: ConfluenceBlogConfiguration): Self = StObject.set(x, "BlogConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogConfigurationUndefined: Self = StObject.set(x, "BlogConfiguration", js.undefined)
+    inline def setBlogConfigurationUndefined: Self = StObject.set(x, "BlogConfiguration", js.undefined)
     
-    @scala.inline
-    def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "ExclusionPatterns", value.asInstanceOf[js.Any])
+    inline def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "ExclusionPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionPatternsUndefined: Self = StObject.set(x, "ExclusionPatterns", js.undefined)
+    inline def setExclusionPatternsUndefined: Self = StObject.set(x, "ExclusionPatterns", js.undefined)
     
-    @scala.inline
-    def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "ExclusionPatterns", js.Array(value :_*))
+    inline def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "ExclusionPatterns", js.Array(value :_*))
     
-    @scala.inline
-    def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "InclusionPatterns", value.asInstanceOf[js.Any])
+    inline def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "InclusionPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusionPatternsUndefined: Self = StObject.set(x, "InclusionPatterns", js.undefined)
+    inline def setInclusionPatternsUndefined: Self = StObject.set(x, "InclusionPatterns", js.undefined)
     
-    @scala.inline
-    def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "InclusionPatterns", js.Array(value :_*))
+    inline def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = StObject.set(x, "InclusionPatterns", js.Array(value :_*))
     
-    @scala.inline
-    def setPageConfiguration(value: ConfluencePageConfiguration): Self = StObject.set(x, "PageConfiguration", value.asInstanceOf[js.Any])
+    inline def setPageConfiguration(value: ConfluencePageConfiguration): Self = StObject.set(x, "PageConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageConfigurationUndefined: Self = StObject.set(x, "PageConfiguration", js.undefined)
+    inline def setPageConfigurationUndefined: Self = StObject.set(x, "PageConfiguration", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUrl(value: Url): Self = StObject.set(x, "ServerUrl", value.asInstanceOf[js.Any])
+    inline def setServerUrl(value: Url): Self = StObject.set(x, "ServerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceConfiguration(value: ConfluenceSpaceConfiguration): Self = StObject.set(x, "SpaceConfiguration", value.asInstanceOf[js.Any])
+    inline def setSpaceConfiguration(value: ConfluenceSpaceConfiguration): Self = StObject.set(x, "SpaceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceConfigurationUndefined: Self = StObject.set(x, "SpaceConfiguration", js.undefined)
+    inline def setSpaceConfigurationUndefined: Self = StObject.set(x, "SpaceConfiguration", js.undefined)
     
-    @scala.inline
-    def setVersion(value: ConfluenceVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: ConfluenceVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfiguration(value: DataSourceVpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
+    inline def setVpcConfiguration(value: DataSourceVpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
+    inline def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

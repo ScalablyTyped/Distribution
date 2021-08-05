@@ -11,20 +11,17 @@ object gazeStrings {
   sealed trait auto
     extends StObject
        with Mode
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait poll
     extends StObject
        with Mode
-  @scala.inline
-  def poll: poll = "poll".asInstanceOf[poll]
+  inline def poll: poll = "poll".asInstanceOf[poll]
   
   @js.native
   sealed trait watch
     extends StObject
        with Mode
-  @scala.inline
-  def watch: watch = "watch".asInstanceOf[watch]
+  inline def watch: watch = "watch".asInstanceOf[watch]
 }

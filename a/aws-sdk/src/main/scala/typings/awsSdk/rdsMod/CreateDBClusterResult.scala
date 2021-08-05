@@ -10,19 +10,15 @@ trait CreateDBClusterResult extends StObject {
 }
 object CreateDBClusterResult {
   
-  @scala.inline
-  def apply(): CreateDBClusterResult = {
+  inline def apply(): CreateDBClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDBClusterResult]
   }
   
-  @scala.inline
-  implicit class CreateDBClusterResultMutableBuilder[Self <: CreateDBClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDBClusterResult](x: Self) {
     
-    @scala.inline
-    def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
+    inline def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
+    inline def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
   }
 }

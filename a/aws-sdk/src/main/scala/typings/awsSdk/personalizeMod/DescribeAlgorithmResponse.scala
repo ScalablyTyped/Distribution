@@ -13,19 +13,15 @@ trait DescribeAlgorithmResponse extends StObject {
 }
 object DescribeAlgorithmResponse {
   
-  @scala.inline
-  def apply(): DescribeAlgorithmResponse = {
+  inline def apply(): DescribeAlgorithmResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAlgorithmResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAlgorithmResponseMutableBuilder[Self <: DescribeAlgorithmResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlgorithmResponse](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
   }
 }

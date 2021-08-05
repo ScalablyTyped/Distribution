@@ -22,17 +22,14 @@ object typesKmsthrottlingexceptionMod {
   }
   object KMSThrottlingException {
     
-    @scala.inline
-    def apply(): KMSThrottlingException = {
+    inline def apply(): KMSThrottlingException = {
       val __obj = js.Dynamic.literal(name = "KMSThrottlingException")
       __obj.asInstanceOf[KMSThrottlingException]
     }
     
-    @scala.inline
-    implicit class KMSThrottlingExceptionMutableBuilder[Self <: KMSThrottlingException] (val x: Self) extends AnyVal {
+    extension [Self <: KMSThrottlingException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +42,16 @@ object typesKmsthrottlingexceptionMod {
   }
   object KMSThrottlingExceptionDetails {
     
-    @scala.inline
-    def apply(): KMSThrottlingExceptionDetails = {
+    inline def apply(): KMSThrottlingExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KMSThrottlingExceptionDetails]
     }
     
-    @scala.inline
-    implicit class KMSThrottlingExceptionDetailsMutableBuilder[Self <: KMSThrottlingExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: KMSThrottlingExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

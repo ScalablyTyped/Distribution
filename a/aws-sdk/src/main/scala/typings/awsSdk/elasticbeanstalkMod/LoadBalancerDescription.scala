@@ -23,34 +23,25 @@ trait LoadBalancerDescription extends StObject {
 }
 object LoadBalancerDescription {
   
-  @scala.inline
-  def apply(): LoadBalancerDescription = {
+  inline def apply(): LoadBalancerDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerDescription]
   }
   
-  @scala.inline
-  implicit class LoadBalancerDescriptionMutableBuilder[Self <: LoadBalancerDescription] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerDescription](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setListeners(value: LoadBalancerListenersDescription): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: LoadBalancerListenersDescription): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
+    inline def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
-    @scala.inline
-    def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadBalancerName(value: String): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: String): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
+    inline def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
   }
 }

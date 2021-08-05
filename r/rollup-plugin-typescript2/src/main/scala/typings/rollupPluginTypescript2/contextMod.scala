@@ -14,9 +14,9 @@ object contextMod {
     def this(verbosity: VerbosityLevel) = this()
     def this(verbosity: VerbosityLevel, prefix: String) = this()
     
-    var prefix: js.Any = js.native
+    /* private */ var prefix: js.Any = js.native
     
-    var verbosity: js.Any = js.native
+    /* private */ var verbosity: js.Any = js.native
   }
   
   @js.native

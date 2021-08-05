@@ -23,8 +23,7 @@ object labelProtractorDotDriverMod {
   }
   object LabelDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => ElementFinder,
       getLabelText: () => js.Promise[String]
@@ -33,14 +32,11 @@ object labelProtractorDotDriverMod {
       __obj.asInstanceOf[LabelDriver]
     }
     
-    @scala.inline
-    implicit class LabelDriverMutableBuilder[Self <: LabelDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LabelDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+      inline def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     }
   }
 }

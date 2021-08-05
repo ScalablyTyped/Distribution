@@ -18,11 +18,11 @@ object csvFormatterStreamMod {
     
     def _transform(row: I, encoding: String, cb: TransformCallback): Unit = js.native
     
-    var formatterOptions: js.Any = js.native
+    /* private */ var formatterOptions: js.Any = js.native
     
-    var hasWrittenBOM: js.Any = js.native
+    /* private */ var hasWrittenBOM: js.Any = js.native
     
-    var rowFormatter: js.Any = js.native
+    /* private */ var rowFormatter: js.Any = js.native
     
     def transform(transformFunction: RowTransformFunction[I, O]): CsvFormatterStream[I, O] = js.native
   }

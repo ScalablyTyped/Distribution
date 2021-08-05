@@ -29,9 +29,9 @@ class ɵRender3ComponentRef[T] protected () extends ComponentRef[T] {
     _tNode: ɵangularPackagesCoreCoreBh
   ) = this()
   
-  var _rootLView: js.Any = js.native
+  /* private */ var _rootLView: js.Any = js.native
   
-  var _tNode: js.Any = js.native
+  /* private */ var _tNode: js.Any = js.native
   
   @JSName("changeDetectorRef")
   var changeDetectorRef_FɵRender3ComponentRef: ChangeDetectorRef = js.native

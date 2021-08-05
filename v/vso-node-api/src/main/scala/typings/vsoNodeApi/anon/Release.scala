@@ -12,19 +12,15 @@ trait Release extends StObject {
 }
 object Release {
   
-  @scala.inline
-  def apply(build: scala.Double, release: scala.Double): Release = {
+  inline def apply(build: scala.Double, release: scala.Double): Release = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[Release]
   }
   
-  @scala.inline
-  implicit class ReleaseMutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
+  extension [Self <: Release](x: Self) {
     
-    @scala.inline
-    def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: scala.Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: scala.Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

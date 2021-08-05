@@ -10,6 +10,5 @@ object skipLastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def skipLast[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("skipLast")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def skipLast[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("skipLast")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

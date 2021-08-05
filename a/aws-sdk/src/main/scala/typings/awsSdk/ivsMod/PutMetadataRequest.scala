@@ -18,19 +18,15 @@ trait PutMetadataRequest extends StObject {
 }
 object PutMetadataRequest {
   
-  @scala.inline
-  def apply(channelArn: ChannelArn, metadata: StreamMetadata): PutMetadataRequest = {
+  inline def apply(channelArn: ChannelArn, metadata: StreamMetadata): PutMetadataRequest = {
     val __obj = js.Dynamic.literal(channelArn = channelArn.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutMetadataRequest]
   }
   
-  @scala.inline
-  implicit class PutMetadataRequestMutableBuilder[Self <: PutMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: StreamMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StreamMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

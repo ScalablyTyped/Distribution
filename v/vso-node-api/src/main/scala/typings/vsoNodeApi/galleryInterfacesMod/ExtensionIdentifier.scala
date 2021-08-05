@@ -18,19 +18,15 @@ trait ExtensionIdentifier extends StObject {
 }
 object ExtensionIdentifier {
   
-  @scala.inline
-  def apply(extensionName: String, publisherName: String): ExtensionIdentifier = {
+  inline def apply(extensionName: String, publisherName: String): ExtensionIdentifier = {
     val __obj = js.Dynamic.literal(extensionName = extensionName.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionIdentifier]
   }
   
-  @scala.inline
-  implicit class ExtensionIdentifierMutableBuilder[Self <: ExtensionIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionIdentifier](x: Self) {
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
   }
 }

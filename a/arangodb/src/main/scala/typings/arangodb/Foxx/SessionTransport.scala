@@ -14,31 +14,23 @@ trait SessionTransport extends StObject {
 }
 object SessionTransport {
   
-  @scala.inline
-  def apply(): SessionTransport = {
+  inline def apply(): SessionTransport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionTransport]
   }
   
-  @scala.inline
-  implicit class SessionTransportMutableBuilder[Self <: SessionTransport] (val x: Self) extends AnyVal {
+  extension [Self <: SessionTransport](x: Self) {
     
-    @scala.inline
-    def setClear(value: /* res */ Response => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* res */ Response => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setGet(value: /* req */ Request => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* req */ Request => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setSet(value: (/* res */ Response, /* sid */ String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (/* res */ Response, /* sid */ String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait CollectionLoadOptions extends StObject {
 }
 object CollectionLoadOptions {
   
-  @scala.inline
-  def apply(): CollectionLoadOptions = {
+  inline def apply(): CollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class CollectionLoadOptionsMutableBuilder[Self <: CollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
+    inline def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$skipUndefined: Self = StObject.set(x, "$skip", js.undefined)
+    inline def set$skipUndefined: Self = StObject.set(x, "$skip", js.undefined)
     
-    @scala.inline
-    def set$top(value: Double): Self = StObject.set(x, "$top", value.asInstanceOf[js.Any])
+    inline def set$top(value: Double): Self = StObject.set(x, "$top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$topUndefined: Self = StObject.set(x, "$top", js.undefined)
+    inline def set$topUndefined: Self = StObject.set(x, "$top", js.undefined)
   }
 }

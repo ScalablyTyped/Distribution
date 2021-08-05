@@ -15,19 +15,15 @@ trait JsonDeclaration
 }
 object JsonDeclaration {
   
-  @scala.inline
-  def apply(): JsonDeclaration = {
+  inline def apply(): JsonDeclaration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonDeclaration]
   }
   
-  @scala.inline
-  implicit class JsonDeclarationMutableBuilder[Self <: JsonDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: JsonDeclaration](x: Self) {
     
-    @scala.inline
-    def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
+    inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
+    inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
   }
 }

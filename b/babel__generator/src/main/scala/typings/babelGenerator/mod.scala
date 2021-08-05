@@ -15,18 +15,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ast: Node): GeneratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[GeneratorResult]
-  @scala.inline
-  def default(ast: Node, opts: Unit, code: String): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
-  @scala.inline
-  def default(ast: Node, opts: Unit, code: StringDictionary[String]): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
-  @scala.inline
-  def default(ast: Node, opts: GeneratorOptions): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
-  @scala.inline
-  def default(ast: Node, opts: GeneratorOptions, code: String): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
-  @scala.inline
-  def default(ast: Node, opts: GeneratorOptions, code: StringDictionary[String]): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
+  inline def default(ast: Node): GeneratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[GeneratorResult]
+  inline def default(ast: Node, opts: Unit, code: String): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
+  inline def default(ast: Node, opts: Unit, code: StringDictionary[String]): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
+  inline def default(ast: Node, opts: GeneratorOptions): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
+  inline def default(ast: Node, opts: GeneratorOptions, code: String): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
+  inline def default(ast: Node, opts: GeneratorOptions, code: StringDictionary[String]): GeneratorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[GeneratorResult]
   
   @JSImport("@babel/generator", "CodeGenerator")
   @js.native
@@ -129,110 +123,76 @@ object mod {
   }
   object GeneratorOptions {
     
-    @scala.inline
-    def apply(): GeneratorOptions = {
+    inline def apply(): GeneratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeneratorOptions]
     }
     
-    @scala.inline
-    implicit class GeneratorOptionsMutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorOptions](x: Self) {
       
-      @scala.inline
-      def setAuxiliaryCommentAfter(value: String): Self = StObject.set(x, "auxiliaryCommentAfter", value.asInstanceOf[js.Any])
+      inline def setAuxiliaryCommentAfter(value: String): Self = StObject.set(x, "auxiliaryCommentAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuxiliaryCommentAfterUndefined: Self = StObject.set(x, "auxiliaryCommentAfter", js.undefined)
+      inline def setAuxiliaryCommentAfterUndefined: Self = StObject.set(x, "auxiliaryCommentAfter", js.undefined)
       
-      @scala.inline
-      def setAuxiliaryCommentBefore(value: String): Self = StObject.set(x, "auxiliaryCommentBefore", value.asInstanceOf[js.Any])
+      inline def setAuxiliaryCommentBefore(value: String): Self = StObject.set(x, "auxiliaryCommentBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuxiliaryCommentBeforeUndefined: Self = StObject.set(x, "auxiliaryCommentBefore", js.undefined)
+      inline def setAuxiliaryCommentBeforeUndefined: Self = StObject.set(x, "auxiliaryCommentBefore", js.undefined)
       
-      @scala.inline
-      def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean | auto): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean | auto): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setConcise(value: Boolean): Self = StObject.set(x, "concise", value.asInstanceOf[js.Any])
+      inline def setConcise(value: Boolean): Self = StObject.set(x, "concise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConciseUndefined: Self = StObject.set(x, "concise", js.undefined)
+      inline def setConciseUndefined: Self = StObject.set(x, "concise", js.undefined)
       
-      @scala.inline
-      def setDecoratorsBeforeExport(value: Boolean): Self = StObject.set(x, "decoratorsBeforeExport", value.asInstanceOf[js.Any])
+      inline def setDecoratorsBeforeExport(value: Boolean): Self = StObject.set(x, "decoratorsBeforeExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoratorsBeforeExportUndefined: Self = StObject.set(x, "decoratorsBeforeExport", js.undefined)
+      inline def setDecoratorsBeforeExportUndefined: Self = StObject.set(x, "decoratorsBeforeExport", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setJsescOption(value: Compact): Self = StObject.set(x, "jsescOption", value.asInstanceOf[js.Any])
+      inline def setJsescOption(value: Compact): Self = StObject.set(x, "jsescOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsescOptionUndefined: Self = StObject.set(x, "jsescOption", js.undefined)
+      inline def setJsescOptionUndefined: Self = StObject.set(x, "jsescOption", js.undefined)
       
-      @scala.inline
-      def setJsonCompatibleStrings(value: Boolean): Self = StObject.set(x, "jsonCompatibleStrings", value.asInstanceOf[js.Any])
+      inline def setJsonCompatibleStrings(value: Boolean): Self = StObject.set(x, "jsonCompatibleStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonCompatibleStringsUndefined: Self = StObject.set(x, "jsonCompatibleStrings", js.undefined)
+      inline def setJsonCompatibleStringsUndefined: Self = StObject.set(x, "jsonCompatibleStrings", js.undefined)
       
-      @scala.inline
-      def setMinified(value: Boolean): Self = StObject.set(x, "minified", value.asInstanceOf[js.Any])
+      inline def setMinified(value: Boolean): Self = StObject.set(x, "minified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifiedUndefined: Self = StObject.set(x, "minified", js.undefined)
+      inline def setMinifiedUndefined: Self = StObject.set(x, "minified", js.undefined)
       
-      @scala.inline
-      def setRetainFunctionParens(value: Boolean): Self = StObject.set(x, "retainFunctionParens", value.asInstanceOf[js.Any])
+      inline def setRetainFunctionParens(value: Boolean): Self = StObject.set(x, "retainFunctionParens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainFunctionParensUndefined: Self = StObject.set(x, "retainFunctionParens", js.undefined)
+      inline def setRetainFunctionParensUndefined: Self = StObject.set(x, "retainFunctionParens", js.undefined)
       
-      @scala.inline
-      def setRetainLines(value: Boolean): Self = StObject.set(x, "retainLines", value.asInstanceOf[js.Any])
+      inline def setRetainLines(value: Boolean): Self = StObject.set(x, "retainLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainLinesUndefined: Self = StObject.set(x, "retainLines", js.undefined)
+      inline def setRetainLinesUndefined: Self = StObject.set(x, "retainLines", js.undefined)
       
-      @scala.inline
-      def setShouldPrintComment(value: /* comment */ String => Boolean): Self = StObject.set(x, "shouldPrintComment", js.Any.fromFunction1(value))
+      inline def setShouldPrintComment(value: /* comment */ String => Boolean): Self = StObject.set(x, "shouldPrintComment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldPrintCommentUndefined: Self = StObject.set(x, "shouldPrintComment", js.undefined)
+      inline def setShouldPrintCommentUndefined: Self = StObject.set(x, "shouldPrintComment", js.undefined)
       
-      @scala.inline
-      def setSourceFileName(value: String): Self = StObject.set(x, "sourceFileName", value.asInstanceOf[js.Any])
+      inline def setSourceFileName(value: String): Self = StObject.set(x, "sourceFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFileNameUndefined: Self = StObject.set(x, "sourceFileName", js.undefined)
+      inline def setSourceFileNameUndefined: Self = StObject.set(x, "sourceFileName", js.undefined)
       
-      @scala.inline
-      def setSourceMaps(value: Boolean): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
+      inline def setSourceMaps(value: Boolean): Self = StObject.set(x, "sourceMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapsUndefined: Self = StObject.set(x, "sourceMaps", js.undefined)
+      inline def setSourceMapsUndefined: Self = StObject.set(x, "sourceMaps", js.undefined)
       
-      @scala.inline
-      def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
+      inline def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
+      inline def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
     }
   }
   
@@ -244,23 +204,18 @@ object mod {
   }
   object GeneratorResult {
     
-    @scala.inline
-    def apply(code: String): GeneratorResult = {
+    inline def apply(code: String): GeneratorResult = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = null)
       __obj.asInstanceOf[GeneratorResult]
     }
     
-    @scala.inline
-    implicit class GeneratorResultMutableBuilder[Self <: GeneratorResult] (val x: Self) extends AnyVal {
+    extension [Self <: GeneratorResult](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: File): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: File): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNull: Self = StObject.set(x, "map", null)
+      inline def setMapNull: Self = StObject.set(x, "map", null)
     }
   }
 }

@@ -14,19 +14,15 @@ trait RevertTagResponse extends StObject {
 }
 object RevertTagResponse {
   
-  @scala.inline
-  def apply(): RevertTagResponse = {
+  inline def apply(): RevertTagResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevertTagResponse]
   }
   
-  @scala.inline
-  implicit class RevertTagResponseMutableBuilder[Self <: RevertTagResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RevertTagResponse](x: Self) {
     
-    @scala.inline
-    def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

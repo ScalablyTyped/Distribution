@@ -14,22 +14,17 @@ trait CellStats extends StObject {
 }
 object CellStats {
   
-  @scala.inline
-  def apply(loaded: Double, nonEmpty: Double, total: Double): CellStats = {
+  inline def apply(loaded: Double, nonEmpty: Double, total: Double): CellStats = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellStats]
   }
   
-  @scala.inline
-  implicit class CellStatsMutableBuilder[Self <: CellStats] (val x: Self) extends AnyVal {
+  extension [Self <: CellStats](x: Self) {
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmpty(value: Double): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
+    inline def setNonEmpty(value: Double): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

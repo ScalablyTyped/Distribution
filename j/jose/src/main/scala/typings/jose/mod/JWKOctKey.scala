@@ -18,22 +18,17 @@ trait JWKOctKey
 }
 object JWKOctKey {
   
-  @scala.inline
-  def apply(): JWKOctKey = {
+  inline def apply(): JWKOctKey = {
     val __obj = js.Dynamic.literal(kty = "oct")
     __obj.asInstanceOf[JWKOctKey]
   }
   
-  @scala.inline
-  implicit class JWKOctKeyMutableBuilder[Self <: JWKOctKey] (val x: Self) extends AnyVal {
+  extension [Self <: JWKOctKey](x: Self) {
     
-    @scala.inline
-    def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+    inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKUndefined: Self = StObject.set(x, "k", js.undefined)
+    inline def setKUndefined: Self = StObject.set(x, "k", js.undefined)
     
-    @scala.inline
-    def setKty(value: oct): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+    inline def setKty(value: oct): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
   }
 }

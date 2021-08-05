@@ -32,52 +32,37 @@ trait FilterCriteria extends StObject {
 }
 object FilterCriteria {
   
-  @scala.inline
-  def apply(): FilterCriteria = {
+  inline def apply(): FilterCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterCriteria]
   }
   
-  @scala.inline
-  implicit class FilterCriteriaMutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: FilterCriteria](x: Self) {
     
-    @scala.inline
-    def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setHiddenValues(value: js.Array[String]): Self = StObject.set(x, "hiddenValues", value.asInstanceOf[js.Any])
+    inline def setHiddenValues(value: js.Array[String]): Self = StObject.set(x, "hiddenValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenValuesUndefined: Self = StObject.set(x, "hiddenValues", js.undefined)
+    inline def setHiddenValuesUndefined: Self = StObject.set(x, "hiddenValues", js.undefined)
     
-    @scala.inline
-    def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value :_*))
+    inline def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibleBackgroundColor(value: Color): Self = StObject.set(x, "visibleBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setVisibleBackgroundColor(value: Color): Self = StObject.set(x, "visibleBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleBackgroundColorStyle(value: ColorStyle): Self = StObject.set(x, "visibleBackgroundColorStyle", value.asInstanceOf[js.Any])
+    inline def setVisibleBackgroundColorStyle(value: ColorStyle): Self = StObject.set(x, "visibleBackgroundColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleBackgroundColorStyleUndefined: Self = StObject.set(x, "visibleBackgroundColorStyle", js.undefined)
+    inline def setVisibleBackgroundColorStyleUndefined: Self = StObject.set(x, "visibleBackgroundColorStyle", js.undefined)
     
-    @scala.inline
-    def setVisibleBackgroundColorUndefined: Self = StObject.set(x, "visibleBackgroundColor", js.undefined)
+    inline def setVisibleBackgroundColorUndefined: Self = StObject.set(x, "visibleBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setVisibleForegroundColor(value: Color): Self = StObject.set(x, "visibleForegroundColor", value.asInstanceOf[js.Any])
+    inline def setVisibleForegroundColor(value: Color): Self = StObject.set(x, "visibleForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleForegroundColorStyle(value: ColorStyle): Self = StObject.set(x, "visibleForegroundColorStyle", value.asInstanceOf[js.Any])
+    inline def setVisibleForegroundColorStyle(value: ColorStyle): Self = StObject.set(x, "visibleForegroundColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleForegroundColorStyleUndefined: Self = StObject.set(x, "visibleForegroundColorStyle", js.undefined)
+    inline def setVisibleForegroundColorStyleUndefined: Self = StObject.set(x, "visibleForegroundColorStyle", js.undefined)
     
-    @scala.inline
-    def setVisibleForegroundColorUndefined: Self = StObject.set(x, "visibleForegroundColor", js.undefined)
+    inline def setVisibleForegroundColorUndefined: Self = StObject.set(x, "visibleForegroundColor", js.undefined)
   }
 }

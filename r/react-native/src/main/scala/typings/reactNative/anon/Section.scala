@@ -11,16 +11,13 @@ trait Section[ItemT, SectionT] extends StObject {
 }
 object Section {
   
-  @scala.inline
-  def apply[ItemT, SectionT](section: SectionListData[ItemT, SectionT]): Section[ItemT, SectionT] = {
+  inline def apply[ItemT, SectionT](section: SectionListData[ItemT, SectionT]): Section[ItemT, SectionT] = {
     val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
     __obj.asInstanceOf[Section[ItemT, SectionT]]
   }
   
-  @scala.inline
-  implicit class SectionMutableBuilder[Self <: Section[?, ?], ItemT, SectionT] (val x: Self & (Section[ItemT, SectionT])) extends AnyVal {
+  extension [Self <: Section[?, ?], ItemT, SectionT](x: Self & (Section[ItemT, SectionT])) {
     
-    @scala.inline
-    def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait StopImageBuilderRequest extends StObject {
 }
 object StopImageBuilderRequest {
   
-  @scala.inline
-  def apply(Name: String): StopImageBuilderRequest = {
+  inline def apply(Name: String): StopImageBuilderRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopImageBuilderRequest]
   }
   
-  @scala.inline
-  implicit class StopImageBuilderRequestMutableBuilder[Self <: StopImageBuilderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopImageBuilderRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait WebApiProject
 }
 object WebApiProject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abbreviation: String,
     capabilities: StringDictionary[StringDictionary[String]],
     collection: WebApiProjectCollectionRef,
@@ -44,16 +43,12 @@ object WebApiProject {
     __obj.asInstanceOf[WebApiProject]
   }
   
-  @scala.inline
-  implicit class WebApiProjectMutableBuilder[Self <: WebApiProject] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiProject](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: WebApiProjectCollectionRef): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: WebApiProjectCollectionRef): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTeam(value: WebApiTeamRef): Self = StObject.set(x, "defaultTeam", value.asInstanceOf[js.Any])
+    inline def setDefaultTeam(value: WebApiTeamRef): Self = StObject.set(x, "defaultTeam", value.asInstanceOf[js.Any])
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LobbyBypassScope extends StObject
 object LobbyBypassScope {
   
-  @scala.inline
-  def everyone: typings.microsoftGraph.microsoftGraphStrings.everyone = "everyone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.everyone]
+  inline def everyone: typings.microsoftGraph.microsoftGraphStrings.everyone = "everyone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.everyone]
   
-  @scala.inline
-  def organization: typings.microsoftGraph.microsoftGraphStrings.organization = "organization".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organization]
+  inline def organization: typings.microsoftGraph.microsoftGraphStrings.organization = "organization".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organization]
   
-  @scala.inline
-  def organizationAndFederated: typings.microsoftGraph.microsoftGraphStrings.organizationAndFederated = "organizationAndFederated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organizationAndFederated]
+  inline def organizationAndFederated: typings.microsoftGraph.microsoftGraphStrings.organizationAndFederated = "organizationAndFederated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organizationAndFederated]
   
-  @scala.inline
-  def organizer: typings.microsoftGraph.microsoftGraphStrings.organizer = "organizer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organizer]
+  inline def organizer: typings.microsoftGraph.microsoftGraphStrings.organizer = "organizer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organizer]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

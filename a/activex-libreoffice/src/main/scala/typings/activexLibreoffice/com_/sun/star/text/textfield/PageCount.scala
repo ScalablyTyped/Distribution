@@ -27,8 +27,7 @@ trait PageCount
 }
 object PageCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object PageCount {
     __obj.asInstanceOf[PageCount]
   }
   
-  @scala.inline
-  implicit class PageCountMutableBuilder[Self <: PageCount] (val x: Self) extends AnyVal {
+  extension [Self <: PageCount](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

@@ -20,14 +20,11 @@ trait TableSortFieldType extends StObject
 object TableSortFieldType {
   
   /** sort field contains text data. */
-  @scala.inline
-  def ALPHANUMERIC: `2` = 2.asInstanceOf[`2`]
+  inline def ALPHANUMERIC: `2` = 2.asInstanceOf[`2`]
   
   /** type is determined automatically. */
-  @scala.inline
-  def AUTOMATIC: `0` = 0.asInstanceOf[`0`]
+  inline def AUTOMATIC: `0` = 0.asInstanceOf[`0`]
   
   /** sort field contains numerical data. */
-  @scala.inline
-  def NUMERIC: `1` = 1.asInstanceOf[`1`]
+  inline def NUMERIC: `1` = 1.asInstanceOf[`1`]
 }

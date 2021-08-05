@@ -43,58 +43,41 @@ trait DescribeLocationObjectStorageResponse extends StObject {
 }
 object DescribeLocationObjectStorageResponse {
   
-  @scala.inline
-  def apply(): DescribeLocationObjectStorageResponse = {
+  inline def apply(): DescribeLocationObjectStorageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocationObjectStorageResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLocationObjectStorageResponseMutableBuilder[Self <: DescribeLocationObjectStorageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocationObjectStorageResponse](x: Self) {
     
-    @scala.inline
-    def setAccessKey(value: ObjectStorageAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
+    inline def setAccessKey(value: ObjectStorageAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyUndefined: Self = StObject.set(x, "AccessKey", js.undefined)
+    inline def setAccessKeyUndefined: Self = StObject.set(x, "AccessKey", js.undefined)
     
-    @scala.inline
-    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
+    inline def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
+    inline def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
-    @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
+    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    @scala.inline
-    def setServerPort(value: ObjectStorageServerPort): Self = StObject.set(x, "ServerPort", value.asInstanceOf[js.Any])
+    inline def setServerPort(value: ObjectStorageServerPort): Self = StObject.set(x, "ServerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerPortUndefined: Self = StObject.set(x, "ServerPort", js.undefined)
+    inline def setServerPortUndefined: Self = StObject.set(x, "ServerPort", js.undefined)
     
-    @scala.inline
-    def setServerProtocol(value: ObjectStorageServerProtocol): Self = StObject.set(x, "ServerProtocol", value.asInstanceOf[js.Any])
+    inline def setServerProtocol(value: ObjectStorageServerProtocol): Self = StObject.set(x, "ServerProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerProtocolUndefined: Self = StObject.set(x, "ServerProtocol", js.undefined)
+    inline def setServerProtocolUndefined: Self = StObject.set(x, "ServerProtocol", js.undefined)
   }
 }

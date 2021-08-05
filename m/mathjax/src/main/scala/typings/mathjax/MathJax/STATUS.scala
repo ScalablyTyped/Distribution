@@ -14,19 +14,15 @@ trait STATUS extends StObject {
 }
 object STATUS {
   
-  @scala.inline
-  def apply(ERROR: String, OK: String): STATUS = {
+  inline def apply(ERROR: String, OK: String): STATUS = {
     val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], OK = OK.asInstanceOf[js.Any])
     __obj.asInstanceOf[STATUS]
   }
   
-  @scala.inline
-  implicit class STATUSMutableBuilder[Self <: STATUS] (val x: Self) extends AnyVal {
+  extension [Self <: STATUS](x: Self) {
     
-    @scala.inline
-    def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOK(value: String): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
+    inline def setOK(value: String): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
   }
 }

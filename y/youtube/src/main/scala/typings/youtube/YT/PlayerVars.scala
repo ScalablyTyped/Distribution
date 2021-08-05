@@ -116,139 +116,95 @@ trait PlayerVars extends StObject {
 }
 object PlayerVars {
   
-  @scala.inline
-  def apply(): PlayerVars = {
+  inline def apply(): PlayerVars = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayerVars]
   }
   
-  @scala.inline
-  implicit class PlayerVarsMutableBuilder[Self <: PlayerVars] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerVars](x: Self) {
     
-    @scala.inline
-    def setAutohide(value: AutoHide): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
+    inline def setAutohide(value: AutoHide): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
+    inline def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
-    @scala.inline
-    def setAutoplay(value: AutoPlay): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: AutoPlay): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
-    @scala.inline
-    def setCc_load_policy(value: ClosedCaptionsLoadPolicy): Self = StObject.set(x, "cc_load_policy", value.asInstanceOf[js.Any])
+    inline def setCc_load_policy(value: ClosedCaptionsLoadPolicy): Self = StObject.set(x, "cc_load_policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCc_load_policyUndefined: Self = StObject.set(x, "cc_load_policy", js.undefined)
+    inline def setCc_load_policyUndefined: Self = StObject.set(x, "cc_load_policy", js.undefined)
     
-    @scala.inline
-    def setColor(value: ProgressBarColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ProgressBarColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setControls(value: Controls): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Controls): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+    inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
-    @scala.inline
-    def setDisablekb(value: KeyboardControls): Self = StObject.set(x, "disablekb", value.asInstanceOf[js.Any])
+    inline def setDisablekb(value: KeyboardControls): Self = StObject.set(x, "disablekb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablekbUndefined: Self = StObject.set(x, "disablekb", js.undefined)
+    inline def setDisablekbUndefined: Self = StObject.set(x, "disablekb", js.undefined)
     
-    @scala.inline
-    def setEnablejsapi(value: JsApi): Self = StObject.set(x, "enablejsapi", value.asInstanceOf[js.Any])
+    inline def setEnablejsapi(value: JsApi): Self = StObject.set(x, "enablejsapi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablejsapiUndefined: Self = StObject.set(x, "enablejsapi", js.undefined)
+    inline def setEnablejsapiUndefined: Self = StObject.set(x, "enablejsapi", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setFs(value: FullscreenButton): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    inline def setFs(value: FullscreenButton): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+    inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
-    @scala.inline
-    def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+    inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+    inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
-    @scala.inline
-    def setIv_load_policy(value: IvLoadPolicy): Self = StObject.set(x, "iv_load_policy", value.asInstanceOf[js.Any])
+    inline def setIv_load_policy(value: IvLoadPolicy): Self = StObject.set(x, "iv_load_policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv_load_policyUndefined: Self = StObject.set(x, "iv_load_policy", js.undefined)
+    inline def setIv_load_policyUndefined: Self = StObject.set(x, "iv_load_policy", js.undefined)
     
-    @scala.inline
-    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListType(value: ListType): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
+    inline def setListType(value: ListType): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTypeUndefined: Self = StObject.set(x, "listType", js.undefined)
+    inline def setListTypeUndefined: Self = StObject.set(x, "listType", js.undefined)
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Loop): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Loop): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setModestbranding(value: ModestBranding): Self = StObject.set(x, "modestbranding", value.asInstanceOf[js.Any])
+    inline def setModestbranding(value: ModestBranding): Self = StObject.set(x, "modestbranding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModestbrandingUndefined: Self = StObject.set(x, "modestbranding", js.undefined)
+    inline def setModestbrandingUndefined: Self = StObject.set(x, "modestbranding", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPlaylist(value: String): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
+    inline def setPlaylist(value: String): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistUndefined: Self = StObject.set(x, "playlist", js.undefined)
+    inline def setPlaylistUndefined: Self = StObject.set(x, "playlist", js.undefined)
     
-    @scala.inline
-    def setPlaysinline(value: PlaysInline): Self = StObject.set(x, "playsinline", value.asInstanceOf[js.Any])
+    inline def setPlaysinline(value: PlaysInline): Self = StObject.set(x, "playsinline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaysinlineUndefined: Self = StObject.set(x, "playsinline", js.undefined)
+    inline def setPlaysinlineUndefined: Self = StObject.set(x, "playsinline", js.undefined)
     
-    @scala.inline
-    def setRel(value: RelatedVideos): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: RelatedVideos): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
-    @scala.inline
-    def setShowinfo(value: ShowInfo): Self = StObject.set(x, "showinfo", value.asInstanceOf[js.Any])
+    inline def setShowinfo(value: ShowInfo): Self = StObject.set(x, "showinfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowinfoUndefined: Self = StObject.set(x, "showinfo", js.undefined)
+    inline def setShowinfoUndefined: Self = StObject.set(x, "showinfo", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

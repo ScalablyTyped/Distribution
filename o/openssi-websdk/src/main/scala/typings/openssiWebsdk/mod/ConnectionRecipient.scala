@@ -12,25 +12,19 @@ trait ConnectionRecipient extends StObject {
 }
 object ConnectionRecipient {
   
-  @scala.inline
-  def apply(): ConnectionRecipient = {
+  inline def apply(): ConnectionRecipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionRecipient]
   }
   
-  @scala.inline
-  implicit class ConnectionRecipientMutableBuilder[Self <: ConnectionRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionRecipient](x: Self) {
     
-    @scala.inline
-    def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUrl(value: AgentURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: AgentURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

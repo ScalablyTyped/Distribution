@@ -20,14 +20,12 @@ object typesMod {
   trait ElectronArtifactDetails extends StObject
   object ElectronArtifactDetails {
     
-    @scala.inline
-    def ElectronGenericArtifactDetails(artifactName: String, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
+    inline def ElectronGenericArtifactDetails(artifactName: String, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
       val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = true, version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.electronGet.typesMod.ElectronGenericArtifactDetails]
     }
     
-    @scala.inline
-    def ElectronPlatformArtifactDetails(arch: String, artifactName: String, platform: String, version: String): typings.electronGet.typesMod.ElectronPlatformArtifactDetails = {
+    inline def ElectronPlatformArtifactDetails(arch: String, artifactName: String, platform: String, version: String): typings.electronGet.typesMod.ElectronPlatformArtifactDetails = {
       val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], artifactName = artifactName.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.electronGet.typesMod.ElectronPlatformArtifactDetails]
     }
@@ -49,20 +47,16 @@ object typesMod {
   }
   object ElectronDownloadRequest {
     
-    @scala.inline
-    def apply(artifactName: String, version: String): ElectronDownloadRequest = {
+    inline def apply(artifactName: String, version: String): ElectronDownloadRequest = {
       val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElectronDownloadRequest]
     }
     
-    @scala.inline
-    implicit class ElectronDownloadRequestMutableBuilder[Self <: ElectronDownloadRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ElectronDownloadRequest](x: Self) {
       
-      @scala.inline
-      def setArtifactName(value: String): Self = StObject.set(x, "artifactName", value.asInstanceOf[js.Any])
+      inline def setArtifactName(value: String): Self = StObject.set(x, "artifactName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,56 +112,40 @@ object typesMod {
   }
   object ElectronDownloadRequestOptions {
     
-    @scala.inline
-    def apply(): ElectronDownloadRequestOptions = {
+    inline def apply(): ElectronDownloadRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ElectronDownloadRequestOptions]
     }
     
-    @scala.inline
-    implicit class ElectronDownloadRequestOptionsMutableBuilder[Self <: ElectronDownloadRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ElectronDownloadRequestOptions](x: Self) {
       
-      @scala.inline
-      def setCacheRoot(value: String): Self = StObject.set(x, "cacheRoot", value.asInstanceOf[js.Any])
+      inline def setCacheRoot(value: String): Self = StObject.set(x, "cacheRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheRootUndefined: Self = StObject.set(x, "cacheRoot", js.undefined)
+      inline def setCacheRootUndefined: Self = StObject.set(x, "cacheRoot", js.undefined)
       
-      @scala.inline
-      def setDownloadOptions(value: DownloadOptions): Self = StObject.set(x, "downloadOptions", value.asInstanceOf[js.Any])
+      inline def setDownloadOptions(value: DownloadOptions): Self = StObject.set(x, "downloadOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
+      inline def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
       
-      @scala.inline
-      def setDownloader(value: Downloader[js.Any]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
+      inline def setDownloader(value: Downloader[js.Any]): Self = StObject.set(x, "downloader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloaderUndefined: Self = StObject.set(x, "downloader", js.undefined)
+      inline def setDownloaderUndefined: Self = StObject.set(x, "downloader", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setMirrorOptions(value: MirrorOptions): Self = StObject.set(x, "mirrorOptions", value.asInstanceOf[js.Any])
+      inline def setMirrorOptions(value: MirrorOptions): Self = StObject.set(x, "mirrorOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirrorOptionsUndefined: Self = StObject.set(x, "mirrorOptions", js.undefined)
+      inline def setMirrorOptionsUndefined: Self = StObject.set(x, "mirrorOptions", js.undefined)
       
-      @scala.inline
-      def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
+      inline def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempDirectoryUndefined: Self = StObject.set(x, "tempDirectory", js.undefined)
+      inline def setTempDirectoryUndefined: Self = StObject.set(x, "tempDirectory", js.undefined)
       
-      @scala.inline
-      def setUnsafelyDisableChecksums(value: Boolean): Self = StObject.set(x, "unsafelyDisableChecksums", value.asInstanceOf[js.Any])
+      inline def setUnsafelyDisableChecksums(value: Boolean): Self = StObject.set(x, "unsafelyDisableChecksums", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsafelyDisableChecksumsUndefined: Self = StObject.set(x, "unsafelyDisableChecksums", js.undefined)
+      inline def setUnsafelyDisableChecksumsUndefined: Self = StObject.set(x, "unsafelyDisableChecksums", js.undefined)
     }
   }
   
@@ -182,17 +160,14 @@ object typesMod {
   }
   object ElectronGenericArtifactDetails {
     
-    @scala.inline
-    def apply(artifactName: String, version: String): ElectronGenericArtifactDetails = {
+    inline def apply(artifactName: String, version: String): ElectronGenericArtifactDetails = {
       val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = true, version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElectronGenericArtifactDetails]
     }
     
-    @scala.inline
-    implicit class ElectronGenericArtifactDetailsMutableBuilder[Self <: ElectronGenericArtifactDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ElectronGenericArtifactDetails](x: Self) {
       
-      @scala.inline
-      def setIsGeneric(value: `true`): Self = StObject.set(x, "isGeneric", value.asInstanceOf[js.Any])
+      inline def setIsGeneric(value: `true`): Self = StObject.set(x, "isGeneric", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,32 +199,24 @@ object typesMod {
   }
   object ElectronPlatformArtifactDetails {
     
-    @scala.inline
-    def apply(arch: String, artifactName: String, platform: String, version: String): ElectronPlatformArtifactDetails = {
+    inline def apply(arch: String, artifactName: String, platform: String, version: String): ElectronPlatformArtifactDetails = {
       val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], artifactName = artifactName.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElectronPlatformArtifactDetails]
     }
     
-    @scala.inline
-    implicit class ElectronPlatformArtifactDetailsMutableBuilder[Self <: ElectronPlatformArtifactDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ElectronPlatformArtifactDetails](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtifactSuffix(value: String): Self = StObject.set(x, "artifactSuffix", value.asInstanceOf[js.Any])
+      inline def setArtifactSuffix(value: String): Self = StObject.set(x, "artifactSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtifactSuffixUndefined: Self = StObject.set(x, "artifactSuffix", js.undefined)
+      inline def setArtifactSuffixUndefined: Self = StObject.set(x, "artifactSuffix", js.undefined)
       
-      @scala.inline
-      def setIsGeneric(value: `false`): Self = StObject.set(x, "isGeneric", value.asInstanceOf[js.Any])
+      inline def setIsGeneric(value: `false`): Self = StObject.set(x, "isGeneric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGenericUndefined: Self = StObject.set(x, "isGeneric", js.undefined)
+      inline def setIsGenericUndefined: Self = StObject.set(x, "isGeneric", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,14 +227,12 @@ object typesMod {
   trait ElectronPlatformArtifactDetailsWithDefaults extends StObject
   object ElectronPlatformArtifactDetailsWithDefaults {
     
-    @scala.inline
-    def ElectronGenericArtifactDetails(artifactName: String, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
+    inline def ElectronGenericArtifactDetails(artifactName: String, version: String): typings.electronGet.typesMod.ElectronGenericArtifactDetails = {
       val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], isGeneric = true, version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.electronGet.typesMod.ElectronGenericArtifactDetails]
     }
     
-    @scala.inline
-    def OmitElectronPlatformArtif(artifactName: String, version: String): typings.electronGet.anon.OmitElectronPlatformArtif = {
+    inline def OmitElectronPlatformArtif(artifactName: String, version: String): typings.electronGet.anon.OmitElectronPlatformArtif = {
       val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.electronGet.anon.OmitElectronPlatformArtif]
     }
@@ -311,50 +276,36 @@ object typesMod {
   }
   object MirrorOptions {
     
-    @scala.inline
-    def apply(): MirrorOptions = {
+    inline def apply(): MirrorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MirrorOptions]
     }
     
-    @scala.inline
-    implicit class MirrorOptionsMutableBuilder[Self <: MirrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MirrorOptions](x: Self) {
       
-      @scala.inline
-      def setCustomDir(value: String): Self = StObject.set(x, "customDir", value.asInstanceOf[js.Any])
+      inline def setCustomDir(value: String): Self = StObject.set(x, "customDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDirUndefined: Self = StObject.set(x, "customDir", js.undefined)
+      inline def setCustomDirUndefined: Self = StObject.set(x, "customDir", js.undefined)
       
-      @scala.inline
-      def setCustomFilename(value: String): Self = StObject.set(x, "customFilename", value.asInstanceOf[js.Any])
+      inline def setCustomFilename(value: String): Self = StObject.set(x, "customFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFilenameUndefined: Self = StObject.set(x, "customFilename", js.undefined)
+      inline def setCustomFilenameUndefined: Self = StObject.set(x, "customFilename", js.undefined)
       
-      @scala.inline
-      def setMirror(value: String): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+      inline def setMirror(value: String): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+      inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
       
-      @scala.inline
-      def setNightlyMirror(value: String): Self = StObject.set(x, "nightlyMirror", value.asInstanceOf[js.Any])
+      inline def setNightlyMirror(value: String): Self = StObject.set(x, "nightlyMirror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNightlyMirrorUndefined: Self = StObject.set(x, "nightlyMirror", js.undefined)
+      inline def setNightlyMirrorUndefined: Self = StObject.set(x, "nightlyMirror", js.undefined)
       
-      @scala.inline
-      def setNightly_mirror(value: String): Self = StObject.set(x, "nightly_mirror", value.asInstanceOf[js.Any])
+      inline def setNightly_mirror(value: String): Self = StObject.set(x, "nightly_mirror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNightly_mirrorUndefined: Self = StObject.set(x, "nightly_mirror", js.undefined)
+      inline def setNightly_mirrorUndefined: Self = StObject.set(x, "nightly_mirror", js.undefined)
       
-      @scala.inline
-      def setResolveAssetURL(value: /* opts */ DownloadOptions => js.Promise[String]): Self = StObject.set(x, "resolveAssetURL", js.Any.fromFunction1(value))
+      inline def setResolveAssetURL(value: /* opts */ DownloadOptions => js.Promise[String]): Self = StObject.set(x, "resolveAssetURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveAssetURLUndefined: Self = StObject.set(x, "resolveAssetURL", js.undefined)
+      inline def setResolveAssetURLUndefined: Self = StObject.set(x, "resolveAssetURL", js.undefined)
     }
   }
   

@@ -20,28 +20,21 @@ trait PowerFormFormDataEnvelope extends StObject {
 }
 object PowerFormFormDataEnvelope {
   
-  @scala.inline
-  def apply(): PowerFormFormDataEnvelope = {
+  inline def apply(): PowerFormFormDataEnvelope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PowerFormFormDataEnvelope]
   }
   
-  @scala.inline
-  implicit class PowerFormFormDataEnvelopeMutableBuilder[Self <: PowerFormFormDataEnvelope] (val x: Self) extends AnyVal {
+  extension [Self <: PowerFormFormDataEnvelope](x: Self) {
     
-    @scala.inline
-    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
+    inline def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
-    @scala.inline
-    def setRecipients(value: js.Array[PowerFormFormDataRecipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: js.Array[PowerFormFormDataRecipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+    inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    @scala.inline
-    def setRecipientsVarargs(value: PowerFormFormDataRecipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: PowerFormFormDataRecipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
   }
 }

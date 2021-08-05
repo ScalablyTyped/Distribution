@@ -29,64 +29,45 @@ trait ConditionalAccessConditionSet extends StObject {
 }
 object ConditionalAccessConditionSet {
   
-  @scala.inline
-  def apply(): ConditionalAccessConditionSet = {
+  inline def apply(): ConditionalAccessConditionSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalAccessConditionSet]
   }
   
-  @scala.inline
-  implicit class ConditionalAccessConditionSetMutableBuilder[Self <: ConditionalAccessConditionSet] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalAccessConditionSet](x: Self) {
     
-    @scala.inline
-    def setApplications(value: NullableOption[ConditionalAccessApplications]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: NullableOption[ConditionalAccessApplications]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationsNull: Self = StObject.set(x, "applications", null)
+    inline def setApplicationsNull: Self = StObject.set(x, "applications", null)
     
-    @scala.inline
-    def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
+    inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
-    @scala.inline
-    def setClientAppTypes(value: js.Array[ConditionalAccessClientApp]): Self = StObject.set(x, "clientAppTypes", value.asInstanceOf[js.Any])
+    inline def setClientAppTypes(value: js.Array[ConditionalAccessClientApp]): Self = StObject.set(x, "clientAppTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAppTypesUndefined: Self = StObject.set(x, "clientAppTypes", js.undefined)
+    inline def setClientAppTypesUndefined: Self = StObject.set(x, "clientAppTypes", js.undefined)
     
-    @scala.inline
-    def setClientAppTypesVarargs(value: ConditionalAccessClientApp*): Self = StObject.set(x, "clientAppTypes", js.Array(value :_*))
+    inline def setClientAppTypesVarargs(value: ConditionalAccessClientApp*): Self = StObject.set(x, "clientAppTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setLocations(value: NullableOption[ConditionalAccessLocations]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: NullableOption[ConditionalAccessLocations]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsNull: Self = StObject.set(x, "locations", null)
+    inline def setLocationsNull: Self = StObject.set(x, "locations", null)
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setPlatforms(value: NullableOption[ConditionalAccessPlatforms]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+    inline def setPlatforms(value: NullableOption[ConditionalAccessPlatforms]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformsNull: Self = StObject.set(x, "platforms", null)
+    inline def setPlatformsNull: Self = StObject.set(x, "platforms", null)
     
-    @scala.inline
-    def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
+    inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    @scala.inline
-    def setSignInRiskLevels(value: js.Array[RiskLevel]): Self = StObject.set(x, "signInRiskLevels", value.asInstanceOf[js.Any])
+    inline def setSignInRiskLevels(value: js.Array[RiskLevel]): Self = StObject.set(x, "signInRiskLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignInRiskLevelsUndefined: Self = StObject.set(x, "signInRiskLevels", js.undefined)
+    inline def setSignInRiskLevelsUndefined: Self = StObject.set(x, "signInRiskLevels", js.undefined)
     
-    @scala.inline
-    def setSignInRiskLevelsVarargs(value: RiskLevel*): Self = StObject.set(x, "signInRiskLevels", js.Array(value :_*))
+    inline def setSignInRiskLevelsVarargs(value: RiskLevel*): Self = StObject.set(x, "signInRiskLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setUsers(value: ConditionalAccessUsers): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: ConditionalAccessUsers): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
   }
 }

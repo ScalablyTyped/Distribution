@@ -13,19 +13,15 @@ trait UpdateLinkResponse extends StObject {
 }
 object UpdateLinkResponse {
   
-  @scala.inline
-  def apply(): UpdateLinkResponse = {
+  inline def apply(): UpdateLinkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateLinkResponse]
   }
   
-  @scala.inline
-  implicit class UpdateLinkResponseMutableBuilder[Self <: UpdateLinkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLinkResponse](x: Self) {
     
-    @scala.inline
-    def setLink(value: Link): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Link): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "Link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "Link", js.undefined)
   }
 }

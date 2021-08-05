@@ -14,25 +14,19 @@ trait PacketMirroringNetworkInfo extends StObject {
 }
 object PacketMirroringNetworkInfo {
   
-  @scala.inline
-  def apply(): PacketMirroringNetworkInfo = {
+  inline def apply(): PacketMirroringNetworkInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PacketMirroringNetworkInfo]
   }
   
-  @scala.inline
-  implicit class PacketMirroringNetworkInfoMutableBuilder[Self <: PacketMirroringNetworkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PacketMirroringNetworkInfo](x: Self) {
     
-    @scala.inline
-    def setCanonicalUrl(value: String): Self = StObject.set(x, "canonicalUrl", value.asInstanceOf[js.Any])
+    inline def setCanonicalUrl(value: String): Self = StObject.set(x, "canonicalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalUrlUndefined: Self = StObject.set(x, "canonicalUrl", js.undefined)
+    inline def setCanonicalUrlUndefined: Self = StObject.set(x, "canonicalUrl", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

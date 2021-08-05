@@ -27,19 +27,15 @@ trait scheduling extends StObject {
 }
 object scheduling {
   
-  @scala.inline
-  def apply(addFrameTask: PhaseCallbacks => FrameTaskHandle, schedule: js.Function => js.Any): scheduling = {
+  inline def apply(addFrameTask: PhaseCallbacks => FrameTaskHandle, schedule: js.Function => js.Any): scheduling = {
     val __obj = js.Dynamic.literal(addFrameTask = js.Any.fromFunction1(addFrameTask), schedule = js.Any.fromFunction1(schedule))
     __obj.asInstanceOf[scheduling]
   }
   
-  @scala.inline
-  implicit class schedulingMutableBuilder[Self <: scheduling] (val x: Self) extends AnyVal {
+  extension [Self <: scheduling](x: Self) {
     
-    @scala.inline
-    def setAddFrameTask(value: PhaseCallbacks => FrameTaskHandle): Self = StObject.set(x, "addFrameTask", js.Any.fromFunction1(value))
+    inline def setAddFrameTask(value: PhaseCallbacks => FrameTaskHandle): Self = StObject.set(x, "addFrameTask", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSchedule(value: js.Function => js.Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+    inline def setSchedule(value: js.Function => js.Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
   }
 }

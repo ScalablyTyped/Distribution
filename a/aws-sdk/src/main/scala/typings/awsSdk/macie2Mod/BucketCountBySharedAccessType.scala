@@ -28,37 +28,27 @@ trait BucketCountBySharedAccessType extends StObject {
 }
 object BucketCountBySharedAccessType {
   
-  @scala.inline
-  def apply(): BucketCountBySharedAccessType = {
+  inline def apply(): BucketCountBySharedAccessType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketCountBySharedAccessType]
   }
   
-  @scala.inline
-  implicit class BucketCountBySharedAccessTypeMutableBuilder[Self <: BucketCountBySharedAccessType] (val x: Self) extends AnyVal {
+  extension [Self <: BucketCountBySharedAccessType](x: Self) {
     
-    @scala.inline
-    def setExternal(value: long): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+    inline def setExternal(value: long): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+    inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
-    @scala.inline
-    def setInternal(value: long): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: long): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+    inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
-    @scala.inline
-    def setNotShared(value: long): Self = StObject.set(x, "notShared", value.asInstanceOf[js.Any])
+    inline def setNotShared(value: long): Self = StObject.set(x, "notShared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSharedUndefined: Self = StObject.set(x, "notShared", js.undefined)
+    inline def setNotSharedUndefined: Self = StObject.set(x, "notShared", js.undefined)
     
-    @scala.inline
-    def setUnknown(value: long): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: long): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
+    inline def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
   }
 }

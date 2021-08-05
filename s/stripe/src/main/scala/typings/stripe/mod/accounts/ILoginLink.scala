@@ -18,23 +18,18 @@ trait ILoginLink extends StObject {
 }
 object ILoginLink {
   
-  @scala.inline
-  def apply(created: Double, url: String): ILoginLink = {
+  inline def apply(created: Double, url: String): ILoginLink = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("object")("login_link")
     __obj.asInstanceOf[ILoginLink]
   }
   
-  @scala.inline
-  implicit class ILoginLinkMutableBuilder[Self <: ILoginLink] (val x: Self) extends AnyVal {
+  extension [Self <: ILoginLink](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: login_link): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: login_link): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait SchemaCompanyDerivedInfo extends StObject {
 }
 object SchemaCompanyDerivedInfo {
   
-  @scala.inline
-  def apply(): SchemaCompanyDerivedInfo = {
+  inline def apply(): SchemaCompanyDerivedInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompanyDerivedInfo]
   }
   
-  @scala.inline
-  implicit class SchemaCompanyDerivedInfoMutableBuilder[Self <: SchemaCompanyDerivedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompanyDerivedInfo](x: Self) {
     
-    @scala.inline
-    def setHeadquartersLocation(value: SchemaLocation): Self = StObject.set(x, "headquartersLocation", value.asInstanceOf[js.Any])
+    inline def setHeadquartersLocation(value: SchemaLocation): Self = StObject.set(x, "headquartersLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadquartersLocationUndefined: Self = StObject.set(x, "headquartersLocation", js.undefined)
+    inline def setHeadquartersLocationUndefined: Self = StObject.set(x, "headquartersLocation", js.undefined)
   }
 }

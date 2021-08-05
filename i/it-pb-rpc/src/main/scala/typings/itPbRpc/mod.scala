@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(duplex: js.Any): WrappedDuplex = ^.asInstanceOf[js.Dynamic].apply(duplex.asInstanceOf[js.Any]).asInstanceOf[WrappedDuplex]
-  @scala.inline
-  def apply(duplex: js.Any, opts: PartialOpts): WrappedDuplex = (^.asInstanceOf[js.Dynamic].apply(duplex.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WrappedDuplex]
+  inline def apply(duplex: js.Any): WrappedDuplex = ^.asInstanceOf[js.Dynamic].apply(duplex.asInstanceOf[js.Any]).asInstanceOf[WrappedDuplex]
+  inline def apply(duplex: js.Any, opts: PartialOpts): WrappedDuplex = (^.asInstanceOf[js.Dynamic].apply(duplex.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WrappedDuplex]
   
   @JSImport("it-pb-rpc", JSImport.Namespace)
   @js.native
@@ -62,8 +60,7 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lengthDecoder: LengthDecoderFunction,
       lengthEncoder: LengthEncoderFunction,
       maxDataLength: Double,
@@ -75,26 +72,19 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def setLengthDecoder(value: LengthDecoderFunction): Self = StObject.set(x, "lengthDecoder", value.asInstanceOf[js.Any])
+      inline def setLengthDecoder(value: LengthDecoderFunction): Self = StObject.set(x, "lengthDecoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthEncoder(value: LengthEncoderFunction): Self = StObject.set(x, "lengthEncoder", value.asInstanceOf[js.Any])
+      inline def setLengthEncoder(value: LengthEncoderFunction): Self = StObject.set(x, "lengthEncoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDataLength(value: Double): Self = StObject.set(x, "maxDataLength", value.asInstanceOf[js.Any])
+      inline def setMaxDataLength(value: Double): Self = StObject.set(x, "maxDataLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthLength(value: Double): Self = StObject.set(x, "maxLengthLength", value.asInstanceOf[js.Any])
+      inline def setMaxLengthLength(value: Double): Self = StObject.set(x, "maxLengthLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPoolSize(value: Double): Self = StObject.set(x, "minPoolSize", value.asInstanceOf[js.Any])
+      inline def setMinPoolSize(value: Double): Self = StObject.set(x, "minPoolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
+      inline def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
     }
   }
   

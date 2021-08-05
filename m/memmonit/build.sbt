@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "memmonit"
-version := "1.1-dt-20200529Z-415f5f"
+version := "1.1-dt-20200529Z-9c08a5"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

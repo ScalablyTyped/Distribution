@@ -66,61 +66,43 @@ trait ExtentProperties
 }
 object ExtentProperties {
   
-  @scala.inline
-  def apply(): ExtentProperties = {
+  inline def apply(): ExtentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtentProperties]
   }
   
-  @scala.inline
-  implicit class ExtentPropertiesMutableBuilder[Self <: ExtentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ExtentProperties](x: Self) {
     
-    @scala.inline
-    def setMmax(value: Double): Self = StObject.set(x, "mmax", value.asInstanceOf[js.Any])
+    inline def setMmax(value: Double): Self = StObject.set(x, "mmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMmaxUndefined: Self = StObject.set(x, "mmax", js.undefined)
+    inline def setMmaxUndefined: Self = StObject.set(x, "mmax", js.undefined)
     
-    @scala.inline
-    def setMmin(value: Double): Self = StObject.set(x, "mmin", value.asInstanceOf[js.Any])
+    inline def setMmin(value: Double): Self = StObject.set(x, "mmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMminUndefined: Self = StObject.set(x, "mmin", js.undefined)
+    inline def setMminUndefined: Self = StObject.set(x, "mmin", js.undefined)
     
-    @scala.inline
-    def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
+    inline def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmaxUndefined: Self = StObject.set(x, "xmax", js.undefined)
+    inline def setXmaxUndefined: Self = StObject.set(x, "xmax", js.undefined)
     
-    @scala.inline
-    def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
+    inline def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXminUndefined: Self = StObject.set(x, "xmin", js.undefined)
+    inline def setXminUndefined: Self = StObject.set(x, "xmin", js.undefined)
     
-    @scala.inline
-    def setYmax(value: Double): Self = StObject.set(x, "ymax", value.asInstanceOf[js.Any])
+    inline def setYmax(value: Double): Self = StObject.set(x, "ymax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYmaxUndefined: Self = StObject.set(x, "ymax", js.undefined)
+    inline def setYmaxUndefined: Self = StObject.set(x, "ymax", js.undefined)
     
-    @scala.inline
-    def setYmin(value: Double): Self = StObject.set(x, "ymin", value.asInstanceOf[js.Any])
+    inline def setYmin(value: Double): Self = StObject.set(x, "ymin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYminUndefined: Self = StObject.set(x, "ymin", js.undefined)
+    inline def setYminUndefined: Self = StObject.set(x, "ymin", js.undefined)
     
-    @scala.inline
-    def setZmax(value: Double): Self = StObject.set(x, "zmax", value.asInstanceOf[js.Any])
+    inline def setZmax(value: Double): Self = StObject.set(x, "zmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZmaxUndefined: Self = StObject.set(x, "zmax", js.undefined)
+    inline def setZmaxUndefined: Self = StObject.set(x, "zmax", js.undefined)
     
-    @scala.inline
-    def setZmin(value: Double): Self = StObject.set(x, "zmin", value.asInstanceOf[js.Any])
+    inline def setZmin(value: Double): Self = StObject.set(x, "zmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZminUndefined: Self = StObject.set(x, "zmin", js.undefined)
+    inline def setZminUndefined: Self = StObject.set(x, "zmin", js.undefined)
   }
 }

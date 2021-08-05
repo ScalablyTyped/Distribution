@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with ISpineDisplayObject
 object SpineSprite {
   
-  @scala.inline
-  def apply(): SpineSprite = {
+  inline def apply(): SpineSprite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpineSprite]
   }

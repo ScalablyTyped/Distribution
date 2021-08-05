@@ -13,22 +13,17 @@ trait ConnectionsList extends StObject {
 }
 object ConnectionsList {
   
-  @scala.inline
-  def apply(): ConnectionsList = {
+  inline def apply(): ConnectionsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionsList]
   }
   
-  @scala.inline
-  implicit class ConnectionsListMutableBuilder[Self <: ConnectionsList] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionsList](x: Self) {
     
-    @scala.inline
-    def setConnections(value: OrchestrationStringList): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: OrchestrationStringList): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: GenericString*): Self = StObject.set(x, "Connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: GenericString*): Self = StObject.set(x, "Connections", js.Array(value :_*))
   }
 }

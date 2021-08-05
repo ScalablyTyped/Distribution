@@ -14,17 +14,14 @@ trait Easing extends StObject {
 }
 object Easing {
   
-  @scala.inline
-  def apply(`type`: EASE_IN | EASE_OUT | EASE_IN_AND_OUT | LINEAR): Easing = {
+  inline def apply(`type`: EASE_IN | EASE_OUT | EASE_IN_AND_OUT | LINEAR): Easing = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Easing]
   }
   
-  @scala.inline
-  implicit class EasingMutableBuilder[Self <: Easing] (val x: Self) extends AnyVal {
+  extension [Self <: Easing](x: Self) {
     
-    @scala.inline
-    def setType(value: EASE_IN | EASE_OUT | EASE_IN_AND_OUT | LINEAR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EASE_IN | EASE_OUT | EASE_IN_AND_OUT | LINEAR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

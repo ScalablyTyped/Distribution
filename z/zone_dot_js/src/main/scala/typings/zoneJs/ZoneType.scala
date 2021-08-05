@@ -41,8 +41,7 @@ trait ZoneType extends StObject {
 }
 object ZoneType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     __load_patch: (String, PatchFn) => Unit,
     __symbol__ : String => String,
     assertZonePatched: () => Unit,
@@ -53,28 +52,20 @@ object ZoneType {
     __obj.asInstanceOf[ZoneType]
   }
   
-  @scala.inline
-  implicit class ZoneTypeMutableBuilder[Self <: ZoneType] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneType](x: Self) {
     
-    @scala.inline
-    def setAssertZonePatched(value: () => Unit): Self = StObject.set(x, "assertZonePatched", js.Any.fromFunction0(value))
+    inline def setAssertZonePatched(value: () => Unit): Self = StObject.set(x, "assertZonePatched", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCurrent(value: Zone): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Zone): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTask(value: Task): Self = StObject.set(x, "currentTask", value.asInstanceOf[js.Any])
+    inline def setCurrentTask(value: Task): Self = StObject.set(x, "currentTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTaskNull: Self = StObject.set(x, "currentTask", null)
+    inline def setCurrentTaskNull: Self = StObject.set(x, "currentTask", null)
     
-    @scala.inline
-    def setRoot(value: Zone): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Zone): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__load_patch(value: (String, PatchFn) => Unit): Self = StObject.set(x, "__load_patch", js.Any.fromFunction2(value))
+    inline def set__load_patch(value: (String, PatchFn) => Unit): Self = StObject.set(x, "__load_patch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set__symbol__(value: String => String): Self = StObject.set(x, "__symbol__", js.Any.fromFunction1(value))
+    inline def set__symbol__(value: String => String): Self = StObject.set(x, "__symbol__", js.Any.fromFunction1(value))
   }
 }

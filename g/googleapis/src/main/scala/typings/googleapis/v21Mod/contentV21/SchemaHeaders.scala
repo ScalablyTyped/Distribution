@@ -61,58 +61,41 @@ trait SchemaHeaders extends StObject {
 }
 object SchemaHeaders {
   
-  @scala.inline
-  def apply(): SchemaHeaders = {
+  inline def apply(): SchemaHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeaders]
   }
   
-  @scala.inline
-  implicit class SchemaHeadersMutableBuilder[Self <: SchemaHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeaders](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[SchemaLocationIdSet]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[SchemaLocationIdSet]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: SchemaLocationIdSet*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: SchemaLocationIdSet*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setNumberOfItems(value: js.Array[String]): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
+    inline def setNumberOfItems(value: js.Array[String]): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfItemsUndefined: Self = StObject.set(x, "numberOfItems", js.undefined)
+    inline def setNumberOfItemsUndefined: Self = StObject.set(x, "numberOfItems", js.undefined)
     
-    @scala.inline
-    def setNumberOfItemsVarargs(value: String*): Self = StObject.set(x, "numberOfItems", js.Array(value :_*))
+    inline def setNumberOfItemsVarargs(value: String*): Self = StObject.set(x, "numberOfItems", js.Array(value :_*))
     
-    @scala.inline
-    def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
+    inline def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
+    inline def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
     
-    @scala.inline
-    def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
+    inline def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setPrices(value: js.Array[SchemaPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    inline def setPrices(value: js.Array[SchemaPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
+    inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
     
-    @scala.inline
-    def setPricesVarargs(value: SchemaPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: SchemaPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
     
-    @scala.inline
-    def setWeights(value: js.Array[SchemaWeight]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+    inline def setWeights(value: js.Array[SchemaWeight]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
+    inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
     
-    @scala.inline
-    def setWeightsVarargs(value: SchemaWeight*): Self = StObject.set(x, "weights", js.Array(value :_*))
+    inline def setWeightsVarargs(value: SchemaWeight*): Self = StObject.set(x, "weights", js.Array(value :_*))
   }
 }

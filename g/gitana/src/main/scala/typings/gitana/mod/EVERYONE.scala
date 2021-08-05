@@ -14,8 +14,7 @@ object EVERYONE {
   @JSImport("gitana", "EVERYONE.name")
   @js.native
   def name: String = js.native
-  @scala.inline
-  def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+  inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   
   @JSImport("gitana", "EVERYONE.type")
   @js.native

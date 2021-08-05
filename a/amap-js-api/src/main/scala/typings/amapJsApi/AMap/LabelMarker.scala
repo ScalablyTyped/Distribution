@@ -62,32 +62,23 @@ object LabelMarker {
   trait Anchor extends StObject
   object Anchor {
     
-    @scala.inline
-    def `bottom-center`: typings.amapJsApi.amapJsApiStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-center`]
+    inline def `bottom-center`: typings.amapJsApi.amapJsApiStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-center`]
     
-    @scala.inline
-    def `bottom-left`: typings.amapJsApi.amapJsApiStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-left`]
+    inline def `bottom-left`: typings.amapJsApi.amapJsApiStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-left`]
     
-    @scala.inline
-    def `bottom-right`: typings.amapJsApi.amapJsApiStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-right`]
+    inline def `bottom-right`: typings.amapJsApi.amapJsApiStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`bottom-right`]
     
-    @scala.inline
-    def center: typings.amapJsApi.amapJsApiStrings.center = "center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.center]
+    inline def center: typings.amapJsApi.amapJsApiStrings.center = "center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.center]
     
-    @scala.inline
-    def `middle-left`: typings.amapJsApi.amapJsApiStrings.`middle-left` = "middle-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`middle-left`]
+    inline def `middle-left`: typings.amapJsApi.amapJsApiStrings.`middle-left` = "middle-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`middle-left`]
     
-    @scala.inline
-    def `middle-right`: typings.amapJsApi.amapJsApiStrings.`middle-right` = "middle-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`middle-right`]
+    inline def `middle-right`: typings.amapJsApi.amapJsApiStrings.`middle-right` = "middle-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`middle-right`]
     
-    @scala.inline
-    def `top-center`: typings.amapJsApi.amapJsApiStrings.`top-center` = "top-center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-center`]
+    inline def `top-center`: typings.amapJsApi.amapJsApiStrings.`top-center` = "top-center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-center`]
     
-    @scala.inline
-    def `top-left`: typings.amapJsApi.amapJsApiStrings.`top-left` = "top-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-left`]
+    inline def `top-left`: typings.amapJsApi.amapJsApiStrings.`top-left` = "top-left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-left`]
     
-    @scala.inline
-    def `top-right`: typings.amapJsApi.amapJsApiStrings.`top-right` = "top-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-right`]
+    inline def `top-right`: typings.amapJsApi.amapJsApiStrings.`top-right` = "top-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-right`]
   }
   
   type EventMap[I] = typings.amapJsApi.AMap.LabelsLayer.EventMap[I]
@@ -100,14 +91,11 @@ object LabelMarker {
   trait FontWeight extends StObject
   object FontWeight {
     
-    @scala.inline
-    def bold: typings.amapJsApi.amapJsApiStrings.bold = "bold".asInstanceOf[typings.amapJsApi.amapJsApiStrings.bold]
+    inline def bold: typings.amapJsApi.amapJsApiStrings.bold = "bold".asInstanceOf[typings.amapJsApi.amapJsApiStrings.bold]
     
-    @scala.inline
-    def normal: typings.amapJsApi.amapJsApiStrings.normal = "normal".asInstanceOf[typings.amapJsApi.amapJsApiStrings.normal]
+    inline def normal: typings.amapJsApi.amapJsApiStrings.normal = "normal".asInstanceOf[typings.amapJsApi.amapJsApiStrings.normal]
     
-    @scala.inline
-    def thin: typings.amapJsApi.amapJsApiStrings.thin = "thin".asInstanceOf[typings.amapJsApi.amapJsApiStrings.thin]
+    inline def thin: typings.amapJsApi.amapJsApiStrings.thin = "thin".asInstanceOf[typings.amapJsApi.amapJsApiStrings.thin]
   }
   
   trait IconOptions extends StObject {
@@ -134,74 +122,52 @@ object LabelMarker {
   }
   object IconOptions {
     
-    @scala.inline
-    def apply(): IconOptions = {
+    inline def apply(): IconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconOptions]
     }
     
-    @scala.inline
-    implicit class IconOptionsMutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IconOptions](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setAngel(value: Double): Self = StObject.set(x, "angel", value.asInstanceOf[js.Any])
+      inline def setAngel(value: Double): Self = StObject.set(x, "angel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngelUndefined: Self = StObject.set(x, "angel", js.undefined)
+      inline def setAngelUndefined: Self = StObject.set(x, "angel", js.undefined)
       
-      @scala.inline
-      def setClipOrigin(value: js.Array[Double] | Pixel): Self = StObject.set(x, "clipOrigin", value.asInstanceOf[js.Any])
+      inline def setClipOrigin(value: js.Array[Double] | Pixel): Self = StObject.set(x, "clipOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipOriginUndefined: Self = StObject.set(x, "clipOrigin", js.undefined)
+      inline def setClipOriginUndefined: Self = StObject.set(x, "clipOrigin", js.undefined)
       
-      @scala.inline
-      def setClipOriginVarargs(value: Double*): Self = StObject.set(x, "clipOrigin", js.Array(value :_*))
+      inline def setClipOriginVarargs(value: Double*): Self = StObject.set(x, "clipOrigin", js.Array(value :_*))
       
-      @scala.inline
-      def setClipSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "clipSize", value.asInstanceOf[js.Any])
+      inline def setClipSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "clipSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipSizeUndefined: Self = StObject.set(x, "clipSize", js.undefined)
+      inline def setClipSizeUndefined: Self = StObject.set(x, "clipSize", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
+      inline def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
+      inline def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
       
-      @scala.inline
-      def setSize(value: js.Array[Double] | Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Array[Double] | Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+      inline def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
+      inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
     }
   }
   
@@ -228,62 +194,44 @@ object LabelMarker {
   }
   object Options {
     
-    @scala.inline
-    def apply[ExtraData](): Options[ExtraData] = {
+    inline def apply[ExtraData](): Options[ExtraData] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
+    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
       
-      @scala.inline
-      def setIcon(value: IconOptions): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconOptions): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String | LocationValue): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String | LocationValue): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+      inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       
-      @scala.inline
-      def setText(value: TextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextOptions): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
       
-      @scala.inline
-      def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+      inline def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
+      inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
     }
   }
   
@@ -297,20 +245,15 @@ object LabelMarker {
   trait TextDirection extends StObject
   object TextDirection {
     
-    @scala.inline
-    def bottom: typings.amapJsApi.amapJsApiStrings.bottom = "bottom".asInstanceOf[typings.amapJsApi.amapJsApiStrings.bottom]
+    inline def bottom: typings.amapJsApi.amapJsApiStrings.bottom = "bottom".asInstanceOf[typings.amapJsApi.amapJsApiStrings.bottom]
     
-    @scala.inline
-    def center: typings.amapJsApi.amapJsApiStrings.center = "center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.center]
+    inline def center: typings.amapJsApi.amapJsApiStrings.center = "center".asInstanceOf[typings.amapJsApi.amapJsApiStrings.center]
     
-    @scala.inline
-    def left: typings.amapJsApi.amapJsApiStrings.left = "left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.left]
+    inline def left: typings.amapJsApi.amapJsApiStrings.left = "left".asInstanceOf[typings.amapJsApi.amapJsApiStrings.left]
     
-    @scala.inline
-    def right: typings.amapJsApi.amapJsApiStrings.right = "right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.right]
+    inline def right: typings.amapJsApi.amapJsApiStrings.right = "right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.right]
     
-    @scala.inline
-    def top: typings.amapJsApi.amapJsApiStrings.top = "top".asInstanceOf[typings.amapJsApi.amapJsApiStrings.top]
+    inline def top: typings.amapJsApi.amapJsApiStrings.top = "top".asInstanceOf[typings.amapJsApi.amapJsApiStrings.top]
   }
   
   trait TextOptions extends StObject {
@@ -327,44 +270,32 @@ object LabelMarker {
   }
   object TextOptions {
     
-    @scala.inline
-    def apply(): TextOptions = {
+    inline def apply(): TextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextOptions]
     }
     
-    @scala.inline
-    implicit class TextOptionsMutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextOptions](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDirection(value: TextDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: TextDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Pixel | (js.Tuple2[Double, Double])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Pixel | (js.Tuple2[Double, Double])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setStyle(value: TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+      inline def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
+      inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
     }
   }
   
@@ -384,50 +315,36 @@ object LabelMarker {
   }
   object TextStyle {
     
-    @scala.inline
-    def apply(): TextStyle = {
+    inline def apply(): TextStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextStyle]
     }
     
-    @scala.inline
-    implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TextStyle](x: Self) {
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+      inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     }
   }
 }

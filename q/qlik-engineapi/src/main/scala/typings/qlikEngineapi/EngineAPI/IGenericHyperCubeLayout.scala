@@ -15,8 +15,7 @@ trait IGenericHyperCubeLayout
 }
 object IGenericHyperCubeLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qExtendsId: String,
     qHasSoftPatches: Boolean,
     qHyperCube: IHyperCube,
@@ -29,10 +28,8 @@ object IGenericHyperCubeLayout {
     __obj.asInstanceOf[IGenericHyperCubeLayout]
   }
   
-  @scala.inline
-  implicit class IGenericHyperCubeLayoutMutableBuilder[Self <: IGenericHyperCubeLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericHyperCubeLayout](x: Self) {
     
-    @scala.inline
-    def setQHyperCube(value: IHyperCube): Self = StObject.set(x, "qHyperCube", value.asInstanceOf[js.Any])
+    inline def setQHyperCube(value: IHyperCube): Self = StObject.set(x, "qHyperCube", value.asInstanceOf[js.Any])
   }
 }

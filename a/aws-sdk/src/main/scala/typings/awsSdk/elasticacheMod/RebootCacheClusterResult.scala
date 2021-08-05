@@ -10,19 +10,15 @@ trait RebootCacheClusterResult extends StObject {
 }
 object RebootCacheClusterResult {
   
-  @scala.inline
-  def apply(): RebootCacheClusterResult = {
+  inline def apply(): RebootCacheClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RebootCacheClusterResult]
   }
   
-  @scala.inline
-  implicit class RebootCacheClusterResultMutableBuilder[Self <: RebootCacheClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: RebootCacheClusterResult](x: Self) {
     
-    @scala.inline
-    def setCacheCluster(value: CacheCluster): Self = StObject.set(x, "CacheCluster", value.asInstanceOf[js.Any])
+    inline def setCacheCluster(value: CacheCluster): Self = StObject.set(x, "CacheCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterUndefined: Self = StObject.set(x, "CacheCluster", js.undefined)
+    inline def setCacheClusterUndefined: Self = StObject.set(x, "CacheCluster", js.undefined)
   }
 }

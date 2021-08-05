@@ -34,37 +34,27 @@ trait ParamsResourceCompositetypesPatch
 }
 object ParamsResourceCompositetypesPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceCompositetypesPatch = {
+  inline def apply(): ParamsResourceCompositetypesPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCompositetypesPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCompositetypesPatchMutableBuilder[Self <: ParamsResourceCompositetypesPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCompositetypesPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCompositeType(value: String): Self = StObject.set(x, "compositeType", value.asInstanceOf[js.Any])
+    inline def setCompositeType(value: String): Self = StObject.set(x, "compositeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeTypeUndefined: Self = StObject.set(x, "compositeType", js.undefined)
+    inline def setCompositeTypeUndefined: Self = StObject.set(x, "compositeType", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCompositeType): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCompositeType): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -66,8 +66,7 @@ trait b2AABB extends StObject {
 }
 object b2AABB {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Combine: (b2AABB, b2AABB) => Unit,
     Contains: b2AABB => Boolean,
     GetCenter: () => b2Vec2,
@@ -82,34 +81,24 @@ object b2AABB {
     __obj.asInstanceOf[b2AABB]
   }
   
-  @scala.inline
-  implicit class b2AABBMutableBuilder[Self <: b2AABB] (val x: Self) extends AnyVal {
+  extension [Self <: b2AABB](x: Self) {
     
-    @scala.inline
-    def setCombine(value: (b2AABB, b2AABB) => Unit): Self = StObject.set(x, "Combine", js.Any.fromFunction2(value))
+    inline def setCombine(value: (b2AABB, b2AABB) => Unit): Self = StObject.set(x, "Combine", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContains(value: b2AABB => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
+    inline def setContains(value: b2AABB => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCenter(value: () => b2Vec2): Self = StObject.set(x, "GetCenter", js.Any.fromFunction0(value))
+    inline def setGetCenter(value: () => b2Vec2): Self = StObject.set(x, "GetCenter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtents(value: () => b2Vec2): Self = StObject.set(x, "GetExtents", js.Any.fromFunction0(value))
+    inline def setGetExtents(value: () => b2Vec2): Self = StObject.set(x, "GetExtents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLowerBound(value: b2Vec2): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
+    inline def setLowerBound(value: b2Vec2): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRayCast(value: (b2RayCastOutput, b2RayCastInput) => Boolean): Self = StObject.set(x, "RayCast", js.Any.fromFunction2(value))
+    inline def setRayCast(value: (b2RayCastOutput, b2RayCastInput) => Boolean): Self = StObject.set(x, "RayCast", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTestOverlap(value: b2AABB => Boolean): Self = StObject.set(x, "TestOverlap", js.Any.fromFunction1(value))
+    inline def setTestOverlap(value: b2AABB => Boolean): Self = StObject.set(x, "TestOverlap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpperBound(value: b2Vec2): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
+    inline def setUpperBound(value: b2Vec2): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
   }
 }

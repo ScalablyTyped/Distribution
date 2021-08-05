@@ -28,8 +28,7 @@ trait LocationState[TKeys, TState] extends StObject {
 }
 object LocationState {
   
-  @scala.inline
-  def apply[TKeys, TState](
+  inline def apply[TKeys, TState](
     pathname: String,
     payload: Payload,
     prev: Location,
@@ -41,58 +40,40 @@ object LocationState {
     __obj.asInstanceOf[LocationState[TKeys, TState]]
   }
   
-  @scala.inline
-  implicit class LocationStateMutableBuilder[Self <: LocationState[?, ?], TKeys, TState] (val x: Self & (LocationState[TKeys, TState])) extends AnyVal {
+  extension [Self <: LocationState[?, ?], TKeys, TState](x: Self & (LocationState[TKeys, TState])) {
     
-    @scala.inline
-    def setHasSSR(value: Boolean): Self = StObject.set(x, "hasSSR", value.asInstanceOf[js.Any])
+    inline def setHasSSR(value: Boolean): Self = StObject.set(x, "hasSSR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSSRUndefined: Self = StObject.set(x, "hasSSR", js.undefined)
+    inline def setHasSSRUndefined: Self = StObject.set(x, "hasSSR", js.undefined)
     
-    @scala.inline
-    def setHistory(value: Nullable[HistoryData]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Nullable[HistoryData]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryNull: Self = StObject.set(x, "history", null)
+    inline def setHistoryNull: Self = StObject.set(x, "history", null)
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setKind(value: Nullable[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Nullable[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindNull: Self = StObject.set(x, "kind", null)
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+    inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev(value: Location): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: Location): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRoutesMap(value: RoutesMap[TKeys, TState]): Self = StObject.set(x, "routesMap", value.asInstanceOf[js.Any])
+    inline def setRoutesMap(value: RoutesMap[TKeys, TState]): Self = StObject.set(x, "routesMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

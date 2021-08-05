@@ -22,6 +22,5 @@ object TableUnique {
   /**
     * Creates unique from the unique metadata object.
     */
-  @scala.inline
-  def create(uniqueMetadata: UniqueMetadata): typings.typeorm.tableUniqueMod.TableUnique = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uniqueMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableUniqueMod.TableUnique]
+  inline def create(uniqueMetadata: UniqueMetadata): typings.typeorm.tableUniqueMod.TableUnique = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uniqueMetadata.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.tableUniqueMod.TableUnique]
 }

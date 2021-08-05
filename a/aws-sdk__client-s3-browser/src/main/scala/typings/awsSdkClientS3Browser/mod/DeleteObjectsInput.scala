@@ -10,8 +10,7 @@ trait DeleteObjectsInput
      with typings.awsSdkClientS3Browser.typesDeleteObjectsInputMod.DeleteObjectsInput
 object DeleteObjectsInput {
   
-  @scala.inline
-  def apply(Bucket: String, Delete: Delete): DeleteObjectsInput = {
+  inline def apply(Bucket: String, Delete: Delete): DeleteObjectsInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Delete = Delete.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectsInput]
   }

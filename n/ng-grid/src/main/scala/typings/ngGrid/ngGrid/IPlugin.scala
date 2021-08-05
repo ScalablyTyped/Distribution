@@ -10,16 +10,13 @@ trait IPlugin extends StObject {
 }
 object IPlugin {
   
-  @scala.inline
-  def apply(init: (IGridScope, IGridInstance, js.Any) => Unit): IPlugin = {
+  inline def apply(init: (IGridScope, IGridInstance, js.Any) => Unit): IPlugin = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction3(init))
     __obj.asInstanceOf[IPlugin]
   }
   
-  @scala.inline
-  implicit class IPluginMutableBuilder[Self <: IPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: IPlugin](x: Self) {
     
-    @scala.inline
-    def setInit(value: (IGridScope, IGridInstance, js.Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (IGridScope, IGridInstance, js.Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
   }
 }

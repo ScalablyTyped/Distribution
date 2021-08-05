@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object chrMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(codePt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(codePt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(codePt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(codePt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/strings/chr", JSImport.Namespace)
   @js.native

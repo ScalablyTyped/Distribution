@@ -18,28 +18,21 @@ trait ListWebhooksOutput extends StObject {
 }
 object ListWebhooksOutput {
   
-  @scala.inline
-  def apply(): ListWebhooksOutput = {
+  inline def apply(): ListWebhooksOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWebhooksOutput]
   }
   
-  @scala.inline
-  implicit class ListWebhooksOutputMutableBuilder[Self <: ListWebhooksOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListWebhooksOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWebhooks(value: WebhookList): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+    inline def setWebhooks(value: WebhookList): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
+    inline def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
     
-    @scala.inline
-    def setWebhooksVarargs(value: ListWebhookItem*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+    inline def setWebhooksVarargs(value: ListWebhookItem*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
   }
 }

@@ -18,8 +18,7 @@ trait ReedSolomonDecoder extends StObject {
 }
 object ReedSolomonDecoder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decode: (GF256, js.Array[Double]) => Unit,
     field: GF256,
     findErrorLocations: GF256Poly => js.Array[Double],
@@ -30,22 +29,16 @@ object ReedSolomonDecoder {
     __obj.asInstanceOf[ReedSolomonDecoder]
   }
   
-  @scala.inline
-  implicit class ReedSolomonDecoderMutableBuilder[Self <: ReedSolomonDecoder] (val x: Self) extends AnyVal {
+  extension [Self <: ReedSolomonDecoder](x: Self) {
     
-    @scala.inline
-    def setDecode(value: (GF256, js.Array[Double]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+    inline def setDecode(value: (GF256, js.Array[Double]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setField(value: GF256): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: GF256): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindErrorLocations(value: GF256Poly => js.Array[Double]): Self = StObject.set(x, "findErrorLocations", js.Any.fromFunction1(value))
+    inline def setFindErrorLocations(value: GF256Poly => js.Array[Double]): Self = StObject.set(x, "findErrorLocations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindErrorMagnitudes(value: (GF256Poly, js.Array[Double], Boolean) => js.Array[Double]): Self = StObject.set(x, "findErrorMagnitudes", js.Any.fromFunction3(value))
+    inline def setFindErrorMagnitudes(value: (GF256Poly, js.Array[Double], Boolean) => js.Array[Double]): Self = StObject.set(x, "findErrorMagnitudes", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRunEuclideanAlgorithm(value: (GF256Poly, GF256Poly, Double) => js.Tuple2[GF256Poly, GF256Poly]): Self = StObject.set(x, "runEuclideanAlgorithm", js.Any.fromFunction3(value))
+    inline def setRunEuclideanAlgorithm(value: (GF256Poly, GF256Poly, Double) => js.Tuple2[GF256Poly, GF256Poly]): Self = StObject.set(x, "runEuclideanAlgorithm", js.Any.fromFunction3(value))
   }
 }

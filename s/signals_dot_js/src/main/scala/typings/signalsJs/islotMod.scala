@@ -73,38 +73,27 @@ object islotMod {
     @js.native
     val ^ : js.Symbol = js.native
     
-    @scala.inline
-    implicit class ISlotMutableBuilder[Self <: ISlot] (val x: Self) extends AnyVal {
+    extension [Self <: ISlot](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecute(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecute0(value: () => Unit): Self = StObject.set(x, "execute0", js.Any.fromFunction0(value))
+      inline def setExecute0(value: () => Unit): Self = StObject.set(x, "execute0", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecute1(value: js.Object => Unit): Self = StObject.set(x, "execute1", js.Any.fromFunction1(value))
+      inline def setExecute1(value: js.Object => Unit): Self = StObject.set(x, "execute1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListener(value: js.Function): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+      inline def setListener(value: js.Function): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
 }

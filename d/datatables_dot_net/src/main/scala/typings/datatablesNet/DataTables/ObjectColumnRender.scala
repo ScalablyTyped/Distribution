@@ -19,68 +19,51 @@ trait ObjectColumnRender extends StObject {
 }
 object ObjectColumnRender {
   
-  @scala.inline
-  def apply(): ObjectColumnRender = {
+  inline def apply(): ObjectColumnRender = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectColumnRender]
   }
   
-  @scala.inline
-  implicit class ObjectColumnRenderMutableBuilder[Self <: ObjectColumnRender] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectColumnRender](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFunction4(
+    inline def setDisplayFunction4(
       value: (/* data */ js.Any, /* type */ js.Any, /* row */ js.Any, /* meta */ CellMetaSettings) => js.Any
     ): Self = StObject.set(x, "display", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterFunction4(
+    inline def setFilterFunction4(
       value: (/* data */ js.Any, /* type */ js.Any, /* row */ js.Any, /* meta */ CellMetaSettings) => js.Any
     ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setSort(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortFunction4(
+    inline def setSortFunction4(
       value: (/* data */ js.Any, /* type */ js.Any, /* row */ js.Any, /* meta */ CellMetaSettings) => js.Any
     ): Self = StObject.set(x, "sort", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setType(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFunction4(
+    inline def setTypeFunction4(
       value: (/* data */ js.Any, /* type */ js.Any, /* row */ js.Any, /* meta */ CellMetaSettings) => js.Any
     ): Self = StObject.set(x, "type", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_underscore(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+    inline def set_underscore(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_underscoreFunction4(
+    inline def set_underscoreFunction4(
       value: (/* data */ js.Any, /* type */ js.Any, /* row */ js.Any, /* meta */ CellMetaSettings) => js.Any
     ): Self = StObject.set(x, "_", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def set_underscoreUndefined: Self = StObject.set(x, "_", js.undefined)
+    inline def set_underscoreUndefined: Self = StObject.set(x, "_", js.undefined)
   }
 }

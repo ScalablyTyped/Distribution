@@ -21,19 +21,15 @@ trait Clipboard extends StObject {
 }
 object Clipboard {
   
-  @scala.inline
-  def apply(readText: () => Thenable[String], writeText: String => Thenable[Unit]): Clipboard = {
+  inline def apply(readText: () => Thenable[String], writeText: String => Thenable[Unit]): Clipboard = {
     val __obj = js.Dynamic.literal(readText = js.Any.fromFunction0(readText), writeText = js.Any.fromFunction1(writeText))
     __obj.asInstanceOf[Clipboard]
   }
   
-  @scala.inline
-  implicit class ClipboardMutableBuilder[Self <: Clipboard] (val x: Self) extends AnyVal {
+  extension [Self <: Clipboard](x: Self) {
     
-    @scala.inline
-    def setReadText(value: () => Thenable[String]): Self = StObject.set(x, "readText", js.Any.fromFunction0(value))
+    inline def setReadText(value: () => Thenable[String]): Self = StObject.set(x, "readText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteText(value: String => Thenable[Unit]): Self = StObject.set(x, "writeText", js.Any.fromFunction1(value))
+    inline def setWriteText(value: String => Thenable[Unit]): Self = StObject.set(x, "writeText", js.Any.fromFunction1(value))
   }
 }

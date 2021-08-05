@@ -28,21 +28,21 @@ object providerAnalyzerMod {
       sourceSpan: ParseSourceSpan
     ) = this()
     
-    var _allProviders: js.Any = js.native
+    /* private */ var _allProviders: js.Any = js.native
     
-    var _errors: js.Any = js.native
+    /* private */ var _errors: js.Any = js.native
     
-    var _getDependency: js.Any = js.native
+    /* private */ var _getDependency: js.Any = js.native
     
-    var _getOrCreateLocalProvider: js.Any = js.native
+    /* private */ var _getOrCreateLocalProvider: js.Any = js.native
     
-    var _seenProviders: js.Any = js.native
+    /* private */ var _seenProviders: js.Any = js.native
     
-    var _transformedProviders: js.Any = js.native
+    /* private */ var _transformedProviders: js.Any = js.native
     
     def parse(): js.Array[ProviderAst] = js.native
     
-    var reflector: js.Any = js.native
+    /* private */ var reflector: js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/provider_analyzer", "ProviderElementContext")
@@ -60,35 +60,35 @@ object providerAnalyzerMod {
       _sourceSpan: ParseSourceSpan
     ) = this()
     
-    var _addQueryReadsTo: js.Any = js.native
+    /* private */ var _addQueryReadsTo: js.Any = js.native
     
-    var _allProviders: js.Any = js.native
+    /* private */ var _allProviders: js.Any = js.native
     
-    var _attrs: js.Any = js.native
+    /* private */ var _attrs: js.Any = js.native
     
-    var _contentQueries: js.Any = js.native
+    /* private */ var _contentQueries: js.Any = js.native
     
-    var _directiveAsts: js.Any = js.native
+    /* private */ var _directiveAsts: js.Any = js.native
     
-    var _getDependency: js.Any = js.native
+    /* private */ var _getDependency: js.Any = js.native
     
-    var _getLocalDependency: js.Any = js.native
+    /* private */ var _getLocalDependency: js.Any = js.native
     
-    var _getOrCreateLocalProvider: js.Any = js.native
+    /* private */ var _getOrCreateLocalProvider: js.Any = js.native
     
-    var _getQueriesFor: js.Any = js.native
+    /* private */ var _getQueriesFor: js.Any = js.native
     
-    var _isViewRoot: js.Any = js.native
+    /* private */ var _isViewRoot: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _queriedTokens: js.Any = js.native
+    /* private */ var _queriedTokens: js.Any = js.native
     
-    var _seenProviders: js.Any = js.native
+    /* private */ var _seenProviders: js.Any = js.native
     
-    var _sourceSpan: js.Any = js.native
+    /* private */ var _sourceSpan: js.Any = js.native
     
-    var _transformedProviders: js.Any = js.native
+    /* private */ var _transformedProviders: js.Any = js.native
     
     def afterElement(): Unit = js.native
     
@@ -129,20 +129,16 @@ object providerAnalyzerMod {
   }
   object QueryWithId {
     
-    @scala.inline
-    def apply(meta: CompileQueryMetadata, queryId: Double): QueryWithId = {
+    inline def apply(meta: CompileQueryMetadata, queryId: Double): QueryWithId = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], queryId = queryId.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryWithId]
     }
     
-    @scala.inline
-    implicit class QueryWithIdMutableBuilder[Self <: QueryWithId] (val x: Self) extends AnyVal {
+    extension [Self <: QueryWithId](x: Self) {
       
-      @scala.inline
-      def setMeta(value: CompileQueryMetadata): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: CompileQueryMetadata): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryId(value: Double): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
+      inline def setQueryId(value: Double): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
     }
   }
 }

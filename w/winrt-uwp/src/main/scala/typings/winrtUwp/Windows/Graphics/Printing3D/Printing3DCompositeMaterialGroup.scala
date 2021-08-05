@@ -19,8 +19,7 @@ trait Printing3DCompositeMaterialGroup extends StObject {
 }
 object Printing3DCompositeMaterialGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     composites: IVector[Printing3DCompositeMaterial],
     materialGroupId: Double,
     materialIndices: IVector[Double]
@@ -29,16 +28,12 @@ object Printing3DCompositeMaterialGroup {
     __obj.asInstanceOf[Printing3DCompositeMaterialGroup]
   }
   
-  @scala.inline
-  implicit class Printing3DCompositeMaterialGroupMutableBuilder[Self <: Printing3DCompositeMaterialGroup] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DCompositeMaterialGroup](x: Self) {
     
-    @scala.inline
-    def setComposites(value: IVector[Printing3DCompositeMaterial]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
+    inline def setComposites(value: IVector[Printing3DCompositeMaterial]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
+    inline def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialIndices(value: IVector[Double]): Self = StObject.set(x, "materialIndices", value.asInstanceOf[js.Any])
+    inline def setMaterialIndices(value: IVector[Double]): Self = StObject.set(x, "materialIndices", value.asInstanceOf[js.Any])
   }
 }

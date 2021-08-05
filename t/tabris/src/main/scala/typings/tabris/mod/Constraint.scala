@@ -54,8 +54,7 @@ object Constraint {
     * method throws.
     * @param constraintValue The value to create an Constraint instance from.
     */
-  @scala.inline
-  def from(constraintValue: ConstraintValue): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(constraintValue.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  inline def from(constraintValue: ConstraintValue): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(constraintValue.asInstanceOf[js.Any]).asInstanceOf[Constraint]
   
   /**
     * A [SiblingReference](../types.md#siblingreference) indicating the next widget in the list of children

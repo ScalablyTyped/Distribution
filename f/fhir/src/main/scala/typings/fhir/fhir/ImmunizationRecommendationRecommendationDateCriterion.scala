@@ -28,25 +28,19 @@ trait ImmunizationRecommendationRecommendationDateCriterion
 }
 object ImmunizationRecommendationRecommendationDateCriterion {
   
-  @scala.inline
-  def apply(code: CodeableConcept, value: dateTime): ImmunizationRecommendationRecommendationDateCriterion = {
+  inline def apply(code: CodeableConcept, value: dateTime): ImmunizationRecommendationRecommendationDateCriterion = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmunizationRecommendationRecommendationDateCriterion]
   }
   
-  @scala.inline
-  implicit class ImmunizationRecommendationRecommendationDateCriterionMutableBuilder[Self <: ImmunizationRecommendationRecommendationDateCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: ImmunizationRecommendationRecommendationDateCriterion](x: Self) {
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: dateTime): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: dateTime): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

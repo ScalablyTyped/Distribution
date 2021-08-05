@@ -14,19 +14,15 @@ trait Url extends StObject {
 }
 object Url {
   
-  @scala.inline
-  def apply(label: String, url: String): Url = {
+  inline def apply(label: String, url: String): Url = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Url]
   }
   
-  @scala.inline
-  implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+  extension [Self <: Url](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

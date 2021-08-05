@@ -25,26 +25,20 @@ object alarms {
   }
   object Alarm {
     
-    @scala.inline
-    def apply(name: String, scheduledTime: Double): Alarm = {
+    inline def apply(name: String, scheduledTime: Double): Alarm = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scheduledTime = scheduledTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alarm]
     }
     
-    @scala.inline
-    implicit class AlarmMutableBuilder[Self <: Alarm] (val x: Self) extends AnyVal {
+    extension [Self <: Alarm](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodInMinutes(value: Double): Self = StObject.set(x, "periodInMinutes", value.asInstanceOf[js.Any])
+      inline def setPeriodInMinutes(value: Double): Self = StObject.set(x, "periodInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodInMinutesUndefined: Self = StObject.set(x, "periodInMinutes", js.undefined)
+      inline def setPeriodInMinutesUndefined: Self = StObject.set(x, "periodInMinutes", js.undefined)
       
-      @scala.inline
-      def setScheduledTime(value: Double): Self = StObject.set(x, "scheduledTime", value.asInstanceOf[js.Any])
+      inline def setScheduledTime(value: Double): Self = StObject.set(x, "scheduledTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,32 +58,24 @@ object alarms {
   }
   object CreateAlarmInfo {
     
-    @scala.inline
-    def apply(): CreateAlarmInfo = {
+    inline def apply(): CreateAlarmInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateAlarmInfo]
     }
     
-    @scala.inline
-    implicit class CreateAlarmInfoMutableBuilder[Self <: CreateAlarmInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CreateAlarmInfo](x: Self) {
       
-      @scala.inline
-      def setDelayInMinutes(value: Double): Self = StObject.set(x, "delayInMinutes", value.asInstanceOf[js.Any])
+      inline def setDelayInMinutes(value: Double): Self = StObject.set(x, "delayInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayInMinutesUndefined: Self = StObject.set(x, "delayInMinutes", js.undefined)
+      inline def setDelayInMinutesUndefined: Self = StObject.set(x, "delayInMinutes", js.undefined)
       
-      @scala.inline
-      def setPeriodInMinutes(value: Double): Self = StObject.set(x, "periodInMinutes", value.asInstanceOf[js.Any])
+      inline def setPeriodInMinutes(value: Double): Self = StObject.set(x, "periodInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodInMinutesUndefined: Self = StObject.set(x, "periodInMinutes", js.undefined)
+      inline def setPeriodInMinutesUndefined: Self = StObject.set(x, "periodInMinutes", js.undefined)
       
-      @scala.inline
-      def setWhen(value: Double): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      inline def setWhen(value: Double): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+      inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
     }
   }
 }

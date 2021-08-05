@@ -38,49 +38,35 @@ trait OutputGroupSettings extends StObject {
 }
 object OutputGroupSettings {
   
-  @scala.inline
-  def apply(): OutputGroupSettings = {
+  inline def apply(): OutputGroupSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputGroupSettings]
   }
   
-  @scala.inline
-  implicit class OutputGroupSettingsMutableBuilder[Self <: OutputGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OutputGroupSettings](x: Self) {
     
-    @scala.inline
-    def setCmafGroupSettings(value: CmafGroupSettings): Self = StObject.set(x, "CmafGroupSettings", value.asInstanceOf[js.Any])
+    inline def setCmafGroupSettings(value: CmafGroupSettings): Self = StObject.set(x, "CmafGroupSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmafGroupSettingsUndefined: Self = StObject.set(x, "CmafGroupSettings", js.undefined)
+    inline def setCmafGroupSettingsUndefined: Self = StObject.set(x, "CmafGroupSettings", js.undefined)
     
-    @scala.inline
-    def setDashIsoGroupSettings(value: DashIsoGroupSettings): Self = StObject.set(x, "DashIsoGroupSettings", value.asInstanceOf[js.Any])
+    inline def setDashIsoGroupSettings(value: DashIsoGroupSettings): Self = StObject.set(x, "DashIsoGroupSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashIsoGroupSettingsUndefined: Self = StObject.set(x, "DashIsoGroupSettings", js.undefined)
+    inline def setDashIsoGroupSettingsUndefined: Self = StObject.set(x, "DashIsoGroupSettings", js.undefined)
     
-    @scala.inline
-    def setFileGroupSettings(value: FileGroupSettings): Self = StObject.set(x, "FileGroupSettings", value.asInstanceOf[js.Any])
+    inline def setFileGroupSettings(value: FileGroupSettings): Self = StObject.set(x, "FileGroupSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileGroupSettingsUndefined: Self = StObject.set(x, "FileGroupSettings", js.undefined)
+    inline def setFileGroupSettingsUndefined: Self = StObject.set(x, "FileGroupSettings", js.undefined)
     
-    @scala.inline
-    def setHlsGroupSettings(value: HlsGroupSettings): Self = StObject.set(x, "HlsGroupSettings", value.asInstanceOf[js.Any])
+    inline def setHlsGroupSettings(value: HlsGroupSettings): Self = StObject.set(x, "HlsGroupSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsGroupSettingsUndefined: Self = StObject.set(x, "HlsGroupSettings", js.undefined)
+    inline def setHlsGroupSettingsUndefined: Self = StObject.set(x, "HlsGroupSettings", js.undefined)
     
-    @scala.inline
-    def setMsSmoothGroupSettings(value: MsSmoothGroupSettings): Self = StObject.set(x, "MsSmoothGroupSettings", value.asInstanceOf[js.Any])
+    inline def setMsSmoothGroupSettings(value: MsSmoothGroupSettings): Self = StObject.set(x, "MsSmoothGroupSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsSmoothGroupSettingsUndefined: Self = StObject.set(x, "MsSmoothGroupSettings", js.undefined)
+    inline def setMsSmoothGroupSettingsUndefined: Self = StObject.set(x, "MsSmoothGroupSettings", js.undefined)
     
-    @scala.inline
-    def setType(value: OutputGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: OutputGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -57,7 +57,7 @@ object serviceMod {
     /* CompleteClass */
     var app: typings.firebaseAppTypes.mod.FirebaseApp = js.native
     
-    var app_ : js.Any = js.native
+    /* private */ var app_ : js.Any = js.native
     
     @JSName("app")
     def app_MService: FirebaseApp = js.native
@@ -67,17 +67,17 @@ object serviceMod {
       * @param name The name of the callable trigger.
       * @param data The data to pass as params to the function.s
       */
-    var call: js.Any = js.native
+    /* private */ var call: js.Any = js.native
     
-    var cancelAllRequests: js.Any = js.native
+    /* private */ var cancelAllRequests: js.Any = js.native
     
-    val contextProvider: js.Any = js.native
+    /* private */ val contextProvider: js.Any = js.native
     
-    var customDomain: js.Any = js.native
+    /* private */ var customDomain: js.Any = js.native
     
-    var deleteService: js.Any = js.native
+    /* private */ var deleteService: js.Any = js.native
     
-    var emulatorOrigin: js.Any = js.native
+    /* private */ var emulatorOrigin: js.Any = js.native
     
     def fetchImpl(input: RequestInfo): js.Promise[Response] = js.native
     def fetchImpl(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
@@ -89,11 +89,11 @@ object serviceMod {
       * @param headers The HTTP headers to include in the request.
       * @return A Promise that will succeed when the request finishes.
       */
-    var postJSON: js.Any = js.native
+    /* private */ var postJSON: js.Any = js.native
     
-    var region: js.Any = js.native
+    /* private */ var region: js.Any = js.native
     
-    val serializer: js.Any = js.native
+    /* private */ val serializer: js.Any = js.native
   }
   
   trait HttpResponseBody extends StObject {
@@ -106,32 +106,24 @@ object serviceMod {
   }
   object HttpResponseBody {
     
-    @scala.inline
-    def apply(): HttpResponseBody = {
+    inline def apply(): HttpResponseBody = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpResponseBody]
     }
     
-    @scala.inline
-    implicit class HttpResponseBodyMutableBuilder[Self <: HttpResponseBody] (val x: Self) extends AnyVal {
+    extension [Self <: HttpResponseBody](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setError(value: Details): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Details): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
 }

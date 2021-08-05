@@ -10,18 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def activateKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activateKeepAwake")().asInstanceOf[Unit]
-  @scala.inline
-  def activateKeepAwake(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activateKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def activateKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activateKeepAwake")().asInstanceOf[Unit]
+  inline def activateKeepAwake(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activateKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def deactivateKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateKeepAwake")().asInstanceOf[Unit]
-  @scala.inline
-  def deactivateKeepAwake(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deactivateKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateKeepAwake")().asInstanceOf[Unit]
+  inline def deactivateKeepAwake(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def useKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")().asInstanceOf[Unit]
-  @scala.inline
-  def useKeepAwake(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")().asInstanceOf[Unit]
+  inline def useKeepAwake(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

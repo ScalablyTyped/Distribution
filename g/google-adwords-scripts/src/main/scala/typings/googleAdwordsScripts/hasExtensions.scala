@@ -36,8 +36,7 @@ trait hasExtensions extends StObject {
 }
 object hasExtensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCallout: Callout => AdWordsOperation[Callout],
     addMessage: Message => AdWordsOperation[Message],
     addMobileApp: MobileApp => AdWordsOperation[MobileApp],
@@ -57,49 +56,34 @@ object hasExtensions {
     __obj.asInstanceOf[hasExtensions]
   }
   
-  @scala.inline
-  implicit class hasExtensionsMutableBuilder[Self <: hasExtensions] (val x: Self) extends AnyVal {
+  extension [Self <: hasExtensions](x: Self) {
     
-    @scala.inline
-    def setAddCallout(value: Callout => AdWordsOperation[Callout]): Self = StObject.set(x, "addCallout", js.Any.fromFunction1(value))
+    inline def setAddCallout(value: Callout => AdWordsOperation[Callout]): Self = StObject.set(x, "addCallout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMessage(value: Message => AdWordsOperation[Message]): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
+    inline def setAddMessage(value: Message => AdWordsOperation[Message]): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMobileApp(value: MobileApp => AdWordsOperation[MobileApp]): Self = StObject.set(x, "addMobileApp", js.Any.fromFunction1(value))
+    inline def setAddMobileApp(value: MobileApp => AdWordsOperation[MobileApp]): Self = StObject.set(x, "addMobileApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddPhoneNumber(value: PhoneNumber => AdWordsOperation[PhoneNumber]): Self = StObject.set(x, "addPhoneNumber", js.Any.fromFunction1(value))
+    inline def setAddPhoneNumber(value: PhoneNumber => AdWordsOperation[PhoneNumber]): Self = StObject.set(x, "addPhoneNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddReview(value: Review => AdWordsOperation[Review]): Self = StObject.set(x, "addReview", js.Any.fromFunction1(value))
+    inline def setAddReview(value: Review => AdWordsOperation[Review]): Self = StObject.set(x, "addReview", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddSitelink(value: Sitelink => AdWordsOperation[Sitelink]): Self = StObject.set(x, "addSitelink", js.Any.fromFunction1(value))
+    inline def setAddSitelink(value: Sitelink => AdWordsOperation[Sitelink]): Self = StObject.set(x, "addSitelink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddSnippet(value: Snippet => AdWordsOperation[Snippet]): Self = StObject.set(x, "addSnippet", js.Any.fromFunction1(value))
+    inline def setAddSnippet(value: Snippet => AdWordsOperation[Snippet]): Self = StObject.set(x, "addSnippet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveCallout(value: Callout => Unit): Self = StObject.set(x, "removeCallout", js.Any.fromFunction1(value))
+    inline def setRemoveCallout(value: Callout => Unit): Self = StObject.set(x, "removeCallout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMessage(value: Message => Unit): Self = StObject.set(x, "removeMessage", js.Any.fromFunction1(value))
+    inline def setRemoveMessage(value: Message => Unit): Self = StObject.set(x, "removeMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMobileApp(value: MobileApp => Unit): Self = StObject.set(x, "removeMobileApp", js.Any.fromFunction1(value))
+    inline def setRemoveMobileApp(value: MobileApp => Unit): Self = StObject.set(x, "removeMobileApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovePhoneNumber(value: PhoneNumber => Unit): Self = StObject.set(x, "removePhoneNumber", js.Any.fromFunction1(value))
+    inline def setRemovePhoneNumber(value: PhoneNumber => Unit): Self = StObject.set(x, "removePhoneNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveReview(value: Review => Unit): Self = StObject.set(x, "removeReview", js.Any.fromFunction1(value))
+    inline def setRemoveReview(value: Review => Unit): Self = StObject.set(x, "removeReview", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSitelink(value: Sitelink => Unit): Self = StObject.set(x, "removeSitelink", js.Any.fromFunction1(value))
+    inline def setRemoveSitelink(value: Sitelink => Unit): Self = StObject.set(x, "removeSitelink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSnippet(value: Snippet => Unit): Self = StObject.set(x, "removeSnippet", js.Any.fromFunction1(value))
+    inline def setRemoveSnippet(value: Snippet => Unit): Self = StObject.set(x, "removeSnippet", js.Any.fromFunction1(value))
   }
 }

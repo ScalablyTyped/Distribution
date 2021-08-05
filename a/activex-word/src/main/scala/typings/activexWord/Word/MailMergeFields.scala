@@ -335,6 +335,6 @@ trait MailMergeFields extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.MailMergeFields_typekey")
+  /* private */ @JSName("Word.MailMergeFields_typekey")
   var WordDotMailMergeFields_typekey: MailMergeFields = js.native
 }

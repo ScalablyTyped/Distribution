@@ -8,11 +8,9 @@ object maximMazurokGapiClientBooksStrings {
   
   @js.native
   sealed trait books extends StObject
-  @scala.inline
-  def books: books = "books".asInstanceOf[books]
+  inline def books: books = "books".asInstanceOf[books]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

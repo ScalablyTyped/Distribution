@@ -11,8 +11,7 @@ trait MediaDeviceControl
      with IMediaDeviceControl
 object MediaDeviceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capabilities: MediaDeviceControlCapabilities,
     tryGetAuto: () => SucceededBoolean,
     tryGetValue: () => SucceededValue,

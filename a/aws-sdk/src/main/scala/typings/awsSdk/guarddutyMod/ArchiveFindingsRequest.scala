@@ -18,22 +18,17 @@ trait ArchiveFindingsRequest extends StObject {
 }
 object ArchiveFindingsRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, FindingIds: FindingIds): ArchiveFindingsRequest = {
+  inline def apply(DetectorId: DetectorId, FindingIds: FindingIds): ArchiveFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], FindingIds = FindingIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveFindingsRequest]
   }
   
-  @scala.inline
-  implicit class ArchiveFindingsRequestMutableBuilder[Self <: ArchiveFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ArchiveFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIds(value: FindingIds): Self = StObject.set(x, "FindingIds", value.asInstanceOf[js.Any])
+    inline def setFindingIds(value: FindingIds): Self = StObject.set(x, "FindingIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "FindingIds", js.Array(value :_*))
+    inline def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "FindingIds", js.Array(value :_*))
   }
 }

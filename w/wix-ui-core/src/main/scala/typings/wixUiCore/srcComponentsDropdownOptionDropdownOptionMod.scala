@@ -36,50 +36,36 @@ object srcComponentsDropdownOptionDropdownOptionMod {
   }
   object DropdownOptionProps {
     
-    @scala.inline
-    def apply(className: String, isHovered: Boolean, isSelected: Boolean, option: Option): DropdownOptionProps = {
+    inline def apply(className: String, isHovered: Boolean, isSelected: Boolean, option: Option): DropdownOptionProps = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropdownOptionProps]
     }
     
-    @scala.inline
-    implicit class DropdownOptionPropsMutableBuilder[Self <: DropdownOptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownOptionProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
+      inline def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickHandler(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickHandler", js.Any.fromFunction1(value))
+      inline def setOnClickHandler(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickHandlerUndefined: Self = StObject.set(x, "onClickHandler", js.undefined)
+      inline def setOnClickHandlerUndefined: Self = StObject.set(x, "onClickHandler", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnterHandler(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnterHandler", js.Any.fromFunction1(value))
+      inline def setOnMouseEnterHandler(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnterHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterHandlerUndefined: Self = StObject.set(x, "onMouseEnterHandler", js.undefined)
+      inline def setOnMouseEnterHandlerUndefined: Self = StObject.set(x, "onMouseEnterHandler", js.undefined)
       
-      @scala.inline
-      def setOption(value: Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      inline def setOption(value: Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     }
   }
   

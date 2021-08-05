@@ -44,49 +44,35 @@ trait IPatternOptions extends StObject {
 }
 object IPatternOptions {
   
-  @scala.inline
-  def apply(source: String | HTMLImageElement): IPatternOptions = {
+  inline def apply(source: String | HTMLImageElement): IPatternOptions = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPatternOptions]
   }
   
-  @scala.inline
-  implicit class IPatternOptionsMutableBuilder[Self <: IPatternOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPatternOptions](x: Self) {
     
-    @scala.inline
-    def setCrossOrigin(value: _empty | anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: _empty | anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setPatternTransform(value: js.Array[Double]): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
+    inline def setPatternTransform(value: js.Array[Double]): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
+    inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
     
-    @scala.inline
-    def setPatternTransformVarargs(value: Double*): Self = StObject.set(x, "patternTransform", js.Array(value :_*))
+    inline def setPatternTransformVarargs(value: Double*): Self = StObject.set(x, "patternTransform", js.Array(value :_*))
     
-    @scala.inline
-    def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
-    @scala.inline
-    def setSource(value: String | HTMLImageElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | HTMLImageElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

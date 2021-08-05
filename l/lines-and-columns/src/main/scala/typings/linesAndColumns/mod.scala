@@ -16,16 +16,16 @@ object mod {
     /* CompleteClass */
     override def indexForLocation(location: SourceLocation): Double | Null = js.native
     
-    /* CompleteClass */
-    /* private */ override def lengthOfLine(line: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def lengthOfLine(line: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def locationForIndex(index: Double): SourceLocation | Null = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var offsets: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var string: js.Any = js.native
   }
   
@@ -37,14 +37,13 @@ object mod {
     
     def locationForIndex(index: Double): SourceLocation | Null
     
-    var offsets: js.Any
+    /* private */ var offsets: js.Any
     
-    var string: js.Any
+    /* private */ var string: js.Any
   }
   object LinesAndColumns {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       indexForLocation: SourceLocation => Double | Null,
       lengthOfLine: js.Any => js.Any,
       locationForIndex: Double => SourceLocation | Null,
@@ -55,23 +54,17 @@ object mod {
       __obj.asInstanceOf[LinesAndColumns]
     }
     
-    @scala.inline
-    implicit class LinesAndColumnsMutableBuilder[Self <: LinesAndColumns] (val x: Self) extends AnyVal {
+    extension [Self <: LinesAndColumns](x: Self) {
       
-      @scala.inline
-      def setIndexForLocation(value: SourceLocation => Double | Null): Self = StObject.set(x, "indexForLocation", js.Any.fromFunction1(value))
+      inline def setIndexForLocation(value: SourceLocation => Double | Null): Self = StObject.set(x, "indexForLocation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLengthOfLine(value: js.Any => js.Any): Self = StObject.set(x, "lengthOfLine", js.Any.fromFunction1(value))
+      inline def setLengthOfLine(value: js.Any => js.Any): Self = StObject.set(x, "lengthOfLine", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocationForIndex(value: Double => SourceLocation | Null): Self = StObject.set(x, "locationForIndex", js.Any.fromFunction1(value))
+      inline def setLocationForIndex(value: Double => SourceLocation | Null): Self = StObject.set(x, "locationForIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOffsets(value: js.Any): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+      inline def setOffsets(value: js.Any): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: js.Any): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: js.Any): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,20 +76,16 @@ object mod {
   }
   object SourceLocation {
     
-    @scala.inline
-    def apply(column: Double, line: Double): SourceLocation = {
+    inline def apply(column: Double, line: Double): SourceLocation = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceLocation]
     }
     
-    @scala.inline
-    implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+    extension [Self <: SourceLocation](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
 }

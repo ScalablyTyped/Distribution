@@ -29,8 +29,7 @@ trait XImageProducerSupplier
 }
 object XImageProducerSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ImageProducer: XImageProducer,
     acquire: () => Unit,
     getImageProducer: () => XImageProducer,
@@ -41,13 +40,10 @@ object XImageProducerSupplier {
     __obj.asInstanceOf[XImageProducerSupplier]
   }
   
-  @scala.inline
-  implicit class XImageProducerSupplierMutableBuilder[Self <: XImageProducerSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XImageProducerSupplier](x: Self) {
     
-    @scala.inline
-    def setGetImageProducer(value: () => XImageProducer): Self = StObject.set(x, "getImageProducer", js.Any.fromFunction0(value))
+    inline def setGetImageProducer(value: () => XImageProducer): Self = StObject.set(x, "getImageProducer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImageProducer(value: XImageProducer): Self = StObject.set(x, "ImageProducer", value.asInstanceOf[js.Any])
+    inline def setImageProducer(value: XImageProducer): Self = StObject.set(x, "ImageProducer", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait KeypadPressedEventArgs extends StObject {
 }
 object KeypadPressedEventArgs {
   
-  @scala.inline
-  def apply(telephonyKey: TelephonyKey): KeypadPressedEventArgs = {
+  inline def apply(telephonyKey: TelephonyKey): KeypadPressedEventArgs = {
     val __obj = js.Dynamic.literal(telephonyKey = telephonyKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeypadPressedEventArgs]
   }
   
-  @scala.inline
-  implicit class KeypadPressedEventArgsMutableBuilder[Self <: KeypadPressedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: KeypadPressedEventArgs](x: Self) {
     
-    @scala.inline
-    def setTelephonyKey(value: TelephonyKey): Self = StObject.set(x, "telephonyKey", value.asInstanceOf[js.Any])
+    inline def setTelephonyKey(value: TelephonyKey): Self = StObject.set(x, "telephonyKey", value.asInstanceOf[js.Any])
   }
 }

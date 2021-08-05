@@ -14,127 +14,82 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autoLink(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLink")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def autoLink(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLink")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLink(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLink")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def autoLink(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLink")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def autoLinkCashtags(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkCashtags")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def autoLinkCashtags(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkCashtags")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLinkCashtags(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkCashtags")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def autoLinkCashtags(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkCashtags")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkEntities")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices], options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkEntities")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkEntities")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLinkEntities(text: String, entities: js.Array[EntityWithIndices], options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkEntities")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def autoLinkHashtags(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkHashtags")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def autoLinkHashtags(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkHashtags")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLinkHashtags(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkHashtags")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def autoLinkHashtags(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkHashtags")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def autoLinkUrlsCustom(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUrlsCustom")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def autoLinkUrlsCustom(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUrlsCustom")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLinkUrlsCustom(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUrlsCustom")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def autoLinkUrlsCustom(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUrlsCustom")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def autoLinkUsernamesOrLists(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def autoLinkUsernamesOrLists(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autoLinkUsernamesOrLists(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def autoLinkUsernamesOrLists(text: String, options: AutoLinkOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autoLinkUsernamesOrLists")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices], indicesInUTF16: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any], indicesInUTF16.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def convertUnicodeIndices(text: String, entities: js.Array[EntityWithIndices], indicesInUTF16: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnicodeIndices")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any], indicesInUTF16.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def extractCashtags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractCashtags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractCashtags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractCashtags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def extractCashtagsWithIndices(text: String): js.Array[CashtagWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractCashtagsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[CashtagWithIndices]]
+  inline def extractCashtagsWithIndices(text: String): js.Array[CashtagWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractCashtagsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[CashtagWithIndices]]
   
-  @scala.inline
-  def extractEntitiesWithIndices(text: String): js.Array[EntityWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractEntitiesWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[EntityWithIndices]]
+  inline def extractEntitiesWithIndices(text: String): js.Array[EntityWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractEntitiesWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[EntityWithIndices]]
   
-  @scala.inline
-  def extractHashtags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractHashtags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def extractHashtagsWithIndices(text: String): js.Array[HashtagWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtagsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[HashtagWithIndices]]
+  inline def extractHashtagsWithIndices(text: String): js.Array[HashtagWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHashtagsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[HashtagWithIndices]]
   
-  @scala.inline
-  def extractMentions(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentions")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractMentions(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentions")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def extractMentionsOrListsWithIndices(text: String): js.Array[MentionOrListWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentionsOrListsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MentionOrListWithIndices]]
+  inline def extractMentionsOrListsWithIndices(text: String): js.Array[MentionOrListWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentionsOrListsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MentionOrListWithIndices]]
   
-  @scala.inline
-  def extractMentionsWithIndices(text: String): js.Array[MentionWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentionsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MentionWithIndices]]
+  inline def extractMentionsWithIndices(text: String): js.Array[MentionWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMentionsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MentionWithIndices]]
   
-  @scala.inline
-  def extractReplies(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractReplies")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractReplies(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractReplies")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def extractUrls(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrls")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractUrls(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrls")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def extractUrlsWithIndices(text: String): js.Array[UrlWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[UrlWithIndices]]
-  @scala.inline
-  def extractUrlsWithIndices(text: String, options: ExtractUrlsWithoutProtocol): js.Array[UrlWithIndices] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[UrlWithIndices]]
+  inline def extractUrlsWithIndices(text: String): js.Array[UrlWithIndices] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[UrlWithIndices]]
+  inline def extractUrlsWithIndices(text: String, options: ExtractUrlsWithoutProtocol): js.Array[UrlWithIndices] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlsWithIndices")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[UrlWithIndices]]
   
-  @scala.inline
-  def getTweetLength(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTweetLength")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getTweetLength(text: String, options: TweetLengthOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTweetLength")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getTweetLength(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTweetLength")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getTweetLength(text: String, options: TweetLengthOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTweetLength")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getUnicodeTextLength(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnicodeTextLength")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getUnicodeTextLength(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnicodeTextLength")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def hasInvalidCharacters(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInvalidCharacters")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasInvalidCharacters(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInvalidCharacters")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def hitHighlight(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def hitHighlight(text: String, hits: js.Array[js.Array[Double]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def hitHighlight(text: String, hits: js.Array[js.Array[Double]], options: Tag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def hitHighlight(text: String, hits: Unit, options: Tag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hitHighlight(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hitHighlight(text: String, hits: js.Array[js.Array[Double]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hitHighlight(text: String, hits: js.Array[js.Array[Double]], options: Tag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hitHighlight(text: String, hits: Unit, options: Tag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hitHighlight")(text.asInstanceOf[js.Any], hits.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def htmlEscape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEscape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def htmlEscape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEscape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isInvalidTweet(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isInvalidTweet")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def isInvalidTweet(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isInvalidTweet")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isValidHashtag(hashtag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHashtag")(hashtag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidHashtag(hashtag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHashtag")(hashtag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidList(usernameList: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidList")(usernameList.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidList(usernameList: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidList")(usernameList.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidUrl(url: String, unicodeDomains: Boolean, requireProtocol: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidUrl")(url.asInstanceOf[js.Any], unicodeDomains.asInstanceOf[js.Any], requireProtocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidUrl(url: String, unicodeDomains: Boolean, requireProtocol: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidUrl")(url.asInstanceOf[js.Any], unicodeDomains.asInstanceOf[js.Any], requireProtocol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidUsername(username: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUsername")(username.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidUsername(username: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUsername")(username.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def modifyIndicesFromUTF16ToUnicode[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUTF16ToUnicode")(i.asInstanceOf[js.Any]).asInstanceOf[I]
+  inline def modifyIndicesFromUTF16ToUnicode[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUTF16ToUnicode")(i.asInstanceOf[js.Any]).asInstanceOf[I]
   
-  @scala.inline
-  def modifyIndicesFromUnicodeToUTF16[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUnicodeToUTF16")(i.asInstanceOf[js.Any]).asInstanceOf[I]
+  inline def modifyIndicesFromUnicodeToUTF16[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUnicodeToUTF16")(i.asInstanceOf[js.Any]).asInstanceOf[I]
   
-  @scala.inline
-  def parseTweet(text: String): ParsedTweet = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any]).asInstanceOf[ParsedTweet]
-  @scala.inline
-  def parseTweet(text: String, options: ParseTweetOptions): ParsedTweet = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTweet]
+  inline def parseTweet(text: String): ParsedTweet = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any]).asInstanceOf[ParsedTweet]
+  inline def parseTweet(text: String, options: ParseTweetOptions): ParsedTweet = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTweet]
   
-  @scala.inline
-  def splitTags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitTags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def splitTags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitTags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   type Attributes = StringDictionary[String | Null]
   
@@ -180,131 +135,90 @@ object mod {
   }
   object AutoLinkOptions {
     
-    @scala.inline
-    def apply(): AutoLinkOptions = {
+    inline def apply(): AutoLinkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoLinkOptions]
     }
     
-    @scala.inline
-    implicit class AutoLinkOptionsMutableBuilder[Self <: AutoLinkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AutoLinkOptions](x: Self) {
       
-      @scala.inline
-      def setCashtagClass(value: String): Self = StObject.set(x, "cashtagClass", value.asInstanceOf[js.Any])
+      inline def setCashtagClass(value: String): Self = StObject.set(x, "cashtagClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCashtagClassUndefined: Self = StObject.set(x, "cashtagClass", js.undefined)
+      inline def setCashtagClassUndefined: Self = StObject.set(x, "cashtagClass", js.undefined)
       
-      @scala.inline
-      def setCashtagUrlBase(value: String): Self = StObject.set(x, "cashtagUrlBase", value.asInstanceOf[js.Any])
+      inline def setCashtagUrlBase(value: String): Self = StObject.set(x, "cashtagUrlBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCashtagUrlBaseUndefined: Self = StObject.set(x, "cashtagUrlBase", js.undefined)
+      inline def setCashtagUrlBaseUndefined: Self = StObject.set(x, "cashtagUrlBase", js.undefined)
       
-      @scala.inline
-      def setHashtagClass(value: String): Self = StObject.set(x, "hashtagClass", value.asInstanceOf[js.Any])
+      inline def setHashtagClass(value: String): Self = StObject.set(x, "hashtagClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtagClassUndefined: Self = StObject.set(x, "hashtagClass", js.undefined)
+      inline def setHashtagClassUndefined: Self = StObject.set(x, "hashtagClass", js.undefined)
       
-      @scala.inline
-      def setHashtagUrlBase(value: String): Self = StObject.set(x, "hashtagUrlBase", value.asInstanceOf[js.Any])
+      inline def setHashtagUrlBase(value: String): Self = StObject.set(x, "hashtagUrlBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtagUrlBaseUndefined: Self = StObject.set(x, "hashtagUrlBase", js.undefined)
+      inline def setHashtagUrlBaseUndefined: Self = StObject.set(x, "hashtagUrlBase", js.undefined)
       
-      @scala.inline
-      def setHtmlAttrs(value: Attributes): Self = StObject.set(x, "htmlAttrs", value.asInstanceOf[js.Any])
+      inline def setHtmlAttrs(value: Attributes): Self = StObject.set(x, "htmlAttrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlAttrsUndefined: Self = StObject.set(x, "htmlAttrs", js.undefined)
+      inline def setHtmlAttrsUndefined: Self = StObject.set(x, "htmlAttrs", js.undefined)
       
-      @scala.inline
-      def setHtmlEscapeNonEntities(value: Boolean): Self = StObject.set(x, "htmlEscapeNonEntities", value.asInstanceOf[js.Any])
+      inline def setHtmlEscapeNonEntities(value: Boolean): Self = StObject.set(x, "htmlEscapeNonEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlEscapeNonEntitiesUndefined: Self = StObject.set(x, "htmlEscapeNonEntities", js.undefined)
+      inline def setHtmlEscapeNonEntitiesUndefined: Self = StObject.set(x, "htmlEscapeNonEntities", js.undefined)
       
-      @scala.inline
-      def setInvisibleTagAttrs(value: String): Self = StObject.set(x, "invisibleTagAttrs", value.asInstanceOf[js.Any])
+      inline def setInvisibleTagAttrs(value: String): Self = StObject.set(x, "invisibleTagAttrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvisibleTagAttrsUndefined: Self = StObject.set(x, "invisibleTagAttrs", js.undefined)
+      inline def setInvisibleTagAttrsUndefined: Self = StObject.set(x, "invisibleTagAttrs", js.undefined)
       
-      @scala.inline
-      def setLinkAttributeBlock(value: (/* entity */ EntityWithIndices, /* attributes */ Attributes) => Unit): Self = StObject.set(x, "linkAttributeBlock", js.Any.fromFunction2(value))
+      inline def setLinkAttributeBlock(value: (/* entity */ EntityWithIndices, /* attributes */ Attributes) => Unit): Self = StObject.set(x, "linkAttributeBlock", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLinkAttributeBlockUndefined: Self = StObject.set(x, "linkAttributeBlock", js.undefined)
+      inline def setLinkAttributeBlockUndefined: Self = StObject.set(x, "linkAttributeBlock", js.undefined)
       
-      @scala.inline
-      def setLinkTextBlock(value: (/* entity */ EntityWithIndices, /* text */ String) => Unit): Self = StObject.set(x, "linkTextBlock", js.Any.fromFunction2(value))
+      inline def setLinkTextBlock(value: (/* entity */ EntityWithIndices, /* text */ String) => Unit): Self = StObject.set(x, "linkTextBlock", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLinkTextBlockUndefined: Self = StObject.set(x, "linkTextBlock", js.undefined)
+      inline def setLinkTextBlockUndefined: Self = StObject.set(x, "linkTextBlock", js.undefined)
       
-      @scala.inline
-      def setListClass(value: String): Self = StObject.set(x, "listClass", value.asInstanceOf[js.Any])
+      inline def setListClass(value: String): Self = StObject.set(x, "listClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListClassUndefined: Self = StObject.set(x, "listClass", js.undefined)
+      inline def setListClassUndefined: Self = StObject.set(x, "listClass", js.undefined)
       
-      @scala.inline
-      def setListUrlBase(value: String): Self = StObject.set(x, "listUrlBase", value.asInstanceOf[js.Any])
+      inline def setListUrlBase(value: String): Self = StObject.set(x, "listUrlBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUrlBaseUndefined: Self = StObject.set(x, "listUrlBase", js.undefined)
+      inline def setListUrlBaseUndefined: Self = StObject.set(x, "listUrlBase", js.undefined)
       
-      @scala.inline
-      def setSuppressNoFollow(value: Boolean): Self = StObject.set(x, "suppressNoFollow", value.asInstanceOf[js.Any])
+      inline def setSuppressNoFollow(value: Boolean): Self = StObject.set(x, "suppressNoFollow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressNoFollowUndefined: Self = StObject.set(x, "suppressNoFollow", js.undefined)
+      inline def setSuppressNoFollowUndefined: Self = StObject.set(x, "suppressNoFollow", js.undefined)
       
-      @scala.inline
-      def setSymbolTag(value: String): Self = StObject.set(x, "symbolTag", value.asInstanceOf[js.Any])
+      inline def setSymbolTag(value: String): Self = StObject.set(x, "symbolTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolTagUndefined: Self = StObject.set(x, "symbolTag", js.undefined)
+      inline def setSymbolTagUndefined: Self = StObject.set(x, "symbolTag", js.undefined)
       
-      @scala.inline
-      def setTargetBlank(value: Boolean): Self = StObject.set(x, "targetBlank", value.asInstanceOf[js.Any])
+      inline def setTargetBlank(value: Boolean): Self = StObject.set(x, "targetBlank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetBlankUndefined: Self = StObject.set(x, "targetBlank", js.undefined)
+      inline def setTargetBlankUndefined: Self = StObject.set(x, "targetBlank", js.undefined)
       
-      @scala.inline
-      def setTextWithSymbolTag(value: String): Self = StObject.set(x, "textWithSymbolTag", value.asInstanceOf[js.Any])
+      inline def setTextWithSymbolTag(value: String): Self = StObject.set(x, "textWithSymbolTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextWithSymbolTagUndefined: Self = StObject.set(x, "textWithSymbolTag", js.undefined)
+      inline def setTextWithSymbolTagUndefined: Self = StObject.set(x, "textWithSymbolTag", js.undefined)
       
-      @scala.inline
-      def setUrlEntities(value: js.Array[UrlEntity]): Self = StObject.set(x, "urlEntities", value.asInstanceOf[js.Any])
+      inline def setUrlEntities(value: js.Array[UrlEntity]): Self = StObject.set(x, "urlEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlEntitiesUndefined: Self = StObject.set(x, "urlEntities", js.undefined)
+      inline def setUrlEntitiesUndefined: Self = StObject.set(x, "urlEntities", js.undefined)
       
-      @scala.inline
-      def setUrlEntitiesVarargs(value: UrlEntity*): Self = StObject.set(x, "urlEntities", js.Array(value :_*))
+      inline def setUrlEntitiesVarargs(value: UrlEntity*): Self = StObject.set(x, "urlEntities", js.Array(value :_*))
       
-      @scala.inline
-      def setUsernameClass(value: String): Self = StObject.set(x, "usernameClass", value.asInstanceOf[js.Any])
+      inline def setUsernameClass(value: String): Self = StObject.set(x, "usernameClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameClassUndefined: Self = StObject.set(x, "usernameClass", js.undefined)
+      inline def setUsernameClassUndefined: Self = StObject.set(x, "usernameClass", js.undefined)
       
-      @scala.inline
-      def setUsernameIncludeSymbol(value: Boolean): Self = StObject.set(x, "usernameIncludeSymbol", value.asInstanceOf[js.Any])
+      inline def setUsernameIncludeSymbol(value: Boolean): Self = StObject.set(x, "usernameIncludeSymbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameIncludeSymbolUndefined: Self = StObject.set(x, "usernameIncludeSymbol", js.undefined)
+      inline def setUsernameIncludeSymbolUndefined: Self = StObject.set(x, "usernameIncludeSymbol", js.undefined)
       
-      @scala.inline
-      def setUsernameUrlBase(value: String): Self = StObject.set(x, "usernameUrlBase", value.asInstanceOf[js.Any])
+      inline def setUsernameUrlBase(value: String): Self = StObject.set(x, "usernameUrlBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUrlBaseUndefined: Self = StObject.set(x, "usernameUrlBase", js.undefined)
+      inline def setUsernameUrlBaseUndefined: Self = StObject.set(x, "usernameUrlBase", js.undefined)
     }
   }
   
@@ -318,20 +232,16 @@ object mod {
   }
   object CashtagWithIndices {
     
-    @scala.inline
-    def apply(cashtag: String, indices: js.Tuple2[Double, Double]): CashtagWithIndices = {
+    inline def apply(cashtag: String, indices: js.Tuple2[Double, Double]): CashtagWithIndices = {
       val __obj = js.Dynamic.literal(cashtag = cashtag.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
       __obj.asInstanceOf[CashtagWithIndices]
     }
     
-    @scala.inline
-    implicit class CashtagWithIndicesMutableBuilder[Self <: CashtagWithIndices] (val x: Self) extends AnyVal {
+    extension [Self <: CashtagWithIndices](x: Self) {
       
-      @scala.inline
-      def setCashtag(value: String): Self = StObject.set(x, "cashtag", value.asInstanceOf[js.Any])
+      inline def setCashtag(value: String): Self = StObject.set(x, "cashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,32 +255,27 @@ object mod {
   trait EntityWithIndices extends StObject
   object EntityWithIndices {
     
-    @scala.inline
-    def CashtagWithIndices(cashtag: String, indices: js.Tuple2[Double, Double]): typings.twitterText.mod.CashtagWithIndices = {
+    inline def CashtagWithIndices(cashtag: String, indices: js.Tuple2[Double, Double]): typings.twitterText.mod.CashtagWithIndices = {
       val __obj = js.Dynamic.literal(cashtag = cashtag.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.twitterText.mod.CashtagWithIndices]
     }
     
-    @scala.inline
-    def HashtagWithIndices(hashtag: String, indices: js.Tuple2[Double, Double]): typings.twitterText.mod.HashtagWithIndices = {
+    inline def HashtagWithIndices(hashtag: String, indices: js.Tuple2[Double, Double]): typings.twitterText.mod.HashtagWithIndices = {
       val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.twitterText.mod.HashtagWithIndices]
     }
     
-    @scala.inline
-    def MentionOrListWithIndices(indices: js.Tuple2[Double, Double], listSlug: String, screenName: String): typings.twitterText.mod.MentionOrListWithIndices = {
+    inline def MentionOrListWithIndices(indices: js.Tuple2[Double, Double], listSlug: String, screenName: String): typings.twitterText.mod.MentionOrListWithIndices = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], listSlug = listSlug.asInstanceOf[js.Any], screenName = screenName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.twitterText.mod.MentionOrListWithIndices]
     }
     
-    @scala.inline
-    def MentionWithIndices(indices: js.Tuple2[Double, Double], screenName: String): typings.twitterText.mod.MentionWithIndices = {
+    inline def MentionWithIndices(indices: js.Tuple2[Double, Double], screenName: String): typings.twitterText.mod.MentionWithIndices = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], screenName = screenName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.twitterText.mod.MentionWithIndices]
     }
     
-    @scala.inline
-    def UrlWithIndices(indices: js.Tuple2[Double, Double], url: String): typings.twitterText.mod.UrlWithIndices = {
+    inline def UrlWithIndices(indices: js.Tuple2[Double, Double], url: String): typings.twitterText.mod.UrlWithIndices = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.twitterText.mod.UrlWithIndices]
     }
@@ -386,20 +291,16 @@ object mod {
   }
   object HashtagWithIndices {
     
-    @scala.inline
-    def apply(hashtag: String, indices: js.Tuple2[Double, Double]): HashtagWithIndices = {
+    inline def apply(hashtag: String, indices: js.Tuple2[Double, Double]): HashtagWithIndices = {
       val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
       __obj.asInstanceOf[HashtagWithIndices]
     }
     
-    @scala.inline
-    implicit class HashtagWithIndicesMutableBuilder[Self <: HashtagWithIndices] (val x: Self) extends AnyVal {
+    extension [Self <: HashtagWithIndices](x: Self) {
       
-      @scala.inline
-      def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -409,17 +310,14 @@ object mod {
   }
   object Indices {
     
-    @scala.inline
-    def apply(indices: js.Tuple2[Double, Double]): Indices = {
+    inline def apply(indices: js.Tuple2[Double, Double]): Indices = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any])
       __obj.asInstanceOf[Indices]
     }
     
-    @scala.inline
-    implicit class IndicesMutableBuilder[Self <: Indices] (val x: Self) extends AnyVal {
+    extension [Self <: Indices](x: Self) {
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -435,23 +333,18 @@ object mod {
   }
   object MentionOrListWithIndices {
     
-    @scala.inline
-    def apply(indices: js.Tuple2[Double, Double], listSlug: String, screenName: String): MentionOrListWithIndices = {
+    inline def apply(indices: js.Tuple2[Double, Double], listSlug: String, screenName: String): MentionOrListWithIndices = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], listSlug = listSlug.asInstanceOf[js.Any], screenName = screenName.asInstanceOf[js.Any])
       __obj.asInstanceOf[MentionOrListWithIndices]
     }
     
-    @scala.inline
-    implicit class MentionOrListWithIndicesMutableBuilder[Self <: MentionOrListWithIndices] (val x: Self) extends AnyVal {
+    extension [Self <: MentionOrListWithIndices](x: Self) {
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListSlug(value: String): Self = StObject.set(x, "listSlug", value.asInstanceOf[js.Any])
+      inline def setListSlug(value: String): Self = StObject.set(x, "listSlug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+      inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -465,20 +358,16 @@ object mod {
   }
   object MentionWithIndices {
     
-    @scala.inline
-    def apply(indices: js.Tuple2[Double, Double], screenName: String): MentionWithIndices = {
+    inline def apply(indices: js.Tuple2[Double, Double], screenName: String): MentionWithIndices = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], screenName = screenName.asInstanceOf[js.Any])
       __obj.asInstanceOf[MentionWithIndices]
     }
     
-    @scala.inline
-    implicit class MentionWithIndicesMutableBuilder[Self <: MentionWithIndices] (val x: Self) extends AnyVal {
+    extension [Self <: MentionWithIndices](x: Self) {
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+      inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -498,53 +387,38 @@ object mod {
   }
   object ParseTweetOptions {
     
-    @scala.inline
-    def apply(): ParseTweetOptions = {
+    inline def apply(): ParseTweetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseTweetOptions]
     }
     
-    @scala.inline
-    implicit class ParseTweetOptionsMutableBuilder[Self <: ParseTweetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseTweetOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
+      inline def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultWeightUndefined: Self = StObject.set(x, "defaultWeight", js.undefined)
+      inline def setDefaultWeightUndefined: Self = StObject.set(x, "defaultWeight", js.undefined)
       
-      @scala.inline
-      def setMaxWeightedTweetLength(value: Double): Self = StObject.set(x, "maxWeightedTweetLength", value.asInstanceOf[js.Any])
+      inline def setMaxWeightedTweetLength(value: Double): Self = StObject.set(x, "maxWeightedTweetLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWeightedTweetLengthUndefined: Self = StObject.set(x, "maxWeightedTweetLength", js.undefined)
+      inline def setMaxWeightedTweetLengthUndefined: Self = StObject.set(x, "maxWeightedTweetLength", js.undefined)
       
-      @scala.inline
-      def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+      inline def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+      inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
       
-      @scala.inline
-      def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value :_*))
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setTransformedURLLength(value: Double): Self = StObject.set(x, "transformedURLLength", value.asInstanceOf[js.Any])
+      inline def setTransformedURLLength(value: Double): Self = StObject.set(x, "transformedURLLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformedURLLengthUndefined: Self = StObject.set(x, "transformedURLLength", js.undefined)
+      inline def setTransformedURLLengthUndefined: Self = StObject.set(x, "transformedURLLength", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -566,8 +440,7 @@ object mod {
   }
   object ParsedTweet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayRangeEnd: Double,
       displayRangeStart: Double,
       permillage: Double,
@@ -580,29 +453,21 @@ object mod {
       __obj.asInstanceOf[ParsedTweet]
     }
     
-    @scala.inline
-    implicit class ParsedTweetMutableBuilder[Self <: ParsedTweet] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedTweet](x: Self) {
       
-      @scala.inline
-      def setDisplayRangeEnd(value: Double): Self = StObject.set(x, "displayRangeEnd", value.asInstanceOf[js.Any])
+      inline def setDisplayRangeEnd(value: Double): Self = StObject.set(x, "displayRangeEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayRangeStart(value: Double): Self = StObject.set(x, "displayRangeStart", value.asInstanceOf[js.Any])
+      inline def setDisplayRangeStart(value: Double): Self = StObject.set(x, "displayRangeStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermillage(value: Double): Self = StObject.set(x, "permillage", value.asInstanceOf[js.Any])
+      inline def setPermillage(value: Double): Self = StObject.set(x, "permillage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidRangeEnd(value: Double): Self = StObject.set(x, "validRangeEnd", value.asInstanceOf[js.Any])
+      inline def setValidRangeEnd(value: Double): Self = StObject.set(x, "validRangeEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidRangeStart(value: Double): Self = StObject.set(x, "validRangeStart", value.asInstanceOf[js.Any])
+      inline def setValidRangeStart(value: Double): Self = StObject.set(x, "validRangeStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightedLength(value: Double): Self = StObject.set(x, "weightedLength", value.asInstanceOf[js.Any])
+      inline def setWeightedLength(value: Double): Self = StObject.set(x, "weightedLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -614,20 +479,16 @@ object mod {
   }
   object TweetLengthOptions {
     
-    @scala.inline
-    def apply(short_url_length: Double, short_url_length_https: Double): TweetLengthOptions = {
+    inline def apply(short_url_length: Double, short_url_length_https: Double): TweetLengthOptions = {
       val __obj = js.Dynamic.literal(short_url_length = short_url_length.asInstanceOf[js.Any], short_url_length_https = short_url_length_https.asInstanceOf[js.Any])
       __obj.asInstanceOf[TweetLengthOptions]
     }
     
-    @scala.inline
-    implicit class TweetLengthOptionsMutableBuilder[Self <: TweetLengthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TweetLengthOptions](x: Self) {
       
-      @scala.inline
-      def setShort_url_length(value: Double): Self = StObject.set(x, "short_url_length", value.asInstanceOf[js.Any])
+      inline def setShort_url_length(value: Double): Self = StObject.set(x, "short_url_length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort_url_length_https(value: Double): Self = StObject.set(x, "short_url_length_https", value.asInstanceOf[js.Any])
+      inline def setShort_url_length_https(value: Double): Self = StObject.set(x, "short_url_length_https", value.asInstanceOf[js.Any])
     }
   }
   
@@ -643,26 +504,20 @@ object mod {
   }
   object UrlEntity {
     
-    @scala.inline
-    def apply(display_url: String, expanded_url: String, indices: js.Tuple2[Double, Double], url: String): UrlEntity = {
+    inline def apply(display_url: String, expanded_url: String, indices: js.Tuple2[Double, Double], url: String): UrlEntity = {
       val __obj = js.Dynamic.literal(display_url = display_url.asInstanceOf[js.Any], expanded_url = expanded_url.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlEntity]
     }
     
-    @scala.inline
-    implicit class UrlEntityMutableBuilder[Self <: UrlEntity] (val x: Self) extends AnyVal {
+    extension [Self <: UrlEntity](x: Self) {
       
-      @scala.inline
-      def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
+      inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanded_url(value: String): Self = StObject.set(x, "expanded_url", value.asInstanceOf[js.Any])
+      inline def setExpanded_url(value: String): Self = StObject.set(x, "expanded_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -676,20 +531,16 @@ object mod {
   }
   object UrlWithIndices {
     
-    @scala.inline
-    def apply(indices: js.Tuple2[Double, Double], url: String): UrlWithIndices = {
+    inline def apply(indices: js.Tuple2[Double, Double], url: String): UrlWithIndices = {
       val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlWithIndices]
     }
     
-    @scala.inline
-    implicit class UrlWithIndicesMutableBuilder[Self <: UrlWithIndices] (val x: Self) extends AnyVal {
+    extension [Self <: UrlWithIndices](x: Self) {
       
-      @scala.inline
-      def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

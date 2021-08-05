@@ -29,8 +29,7 @@ trait OlapResult extends StObject {
 }
 object OlapResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axes: js.Object => js.Array[js.Any],
     cells: js.Object => js.Array[js.Any],
     isEmpty: js.Object => Boolean
@@ -39,16 +38,12 @@ object OlapResult {
     __obj.asInstanceOf[OlapResult]
   }
   
-  @scala.inline
-  implicit class OlapResultMutableBuilder[Self <: OlapResult] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResult](x: Self) {
     
-    @scala.inline
-    def setAxes(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "axes", js.Any.fromFunction1(value))
+    inline def setAxes(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "axes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCells(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "cells", js.Any.fromFunction1(value))
+    inline def setCells(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "cells", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: js.Object => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+    inline def setIsEmpty(value: js.Object => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
   }
 }

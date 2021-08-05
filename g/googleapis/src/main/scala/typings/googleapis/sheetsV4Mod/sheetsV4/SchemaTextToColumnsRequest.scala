@@ -27,31 +27,23 @@ trait SchemaTextToColumnsRequest extends StObject {
 }
 object SchemaTextToColumnsRequest {
   
-  @scala.inline
-  def apply(): SchemaTextToColumnsRequest = {
+  inline def apply(): SchemaTextToColumnsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextToColumnsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTextToColumnsRequestMutableBuilder[Self <: SchemaTextToColumnsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextToColumnsRequest](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterType(value: String): Self = StObject.set(x, "delimiterType", value.asInstanceOf[js.Any])
+    inline def setDelimiterType(value: String): Self = StObject.set(x, "delimiterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterTypeUndefined: Self = StObject.set(x, "delimiterType", js.undefined)
+    inline def setDelimiterTypeUndefined: Self = StObject.set(x, "delimiterType", js.undefined)
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaGridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaGridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

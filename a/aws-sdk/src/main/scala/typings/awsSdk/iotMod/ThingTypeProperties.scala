@@ -18,28 +18,21 @@ trait ThingTypeProperties extends StObject {
 }
 object ThingTypeProperties {
   
-  @scala.inline
-  def apply(): ThingTypeProperties = {
+  inline def apply(): ThingTypeProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThingTypeProperties]
   }
   
-  @scala.inline
-  implicit class ThingTypePropertiesMutableBuilder[Self <: ThingTypeProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ThingTypeProperties](x: Self) {
     
-    @scala.inline
-    def setSearchableAttributes(value: SearchableAttributes): Self = StObject.set(x, "searchableAttributes", value.asInstanceOf[js.Any])
+    inline def setSearchableAttributes(value: SearchableAttributes): Self = StObject.set(x, "searchableAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchableAttributesUndefined: Self = StObject.set(x, "searchableAttributes", js.undefined)
+    inline def setSearchableAttributesUndefined: Self = StObject.set(x, "searchableAttributes", js.undefined)
     
-    @scala.inline
-    def setSearchableAttributesVarargs(value: AttributeName*): Self = StObject.set(x, "searchableAttributes", js.Array(value :_*))
+    inline def setSearchableAttributesVarargs(value: AttributeName*): Self = StObject.set(x, "searchableAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setThingTypeDescription(value: ThingTypeDescription): Self = StObject.set(x, "thingTypeDescription", value.asInstanceOf[js.Any])
+    inline def setThingTypeDescription(value: ThingTypeDescription): Self = StObject.set(x, "thingTypeDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeDescriptionUndefined: Self = StObject.set(x, "thingTypeDescription", js.undefined)
+    inline def setThingTypeDescriptionUndefined: Self = StObject.set(x, "thingTypeDescription", js.undefined)
   }
 }

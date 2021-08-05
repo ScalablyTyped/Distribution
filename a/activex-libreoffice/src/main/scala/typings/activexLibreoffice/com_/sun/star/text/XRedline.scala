@@ -16,16 +16,13 @@ trait XRedline extends StObject {
 }
 object XRedline {
   
-  @scala.inline
-  def apply(makeRedline: (String, PropertyValues) => Unit): XRedline = {
+  inline def apply(makeRedline: (String, PropertyValues) => Unit): XRedline = {
     val __obj = js.Dynamic.literal(makeRedline = js.Any.fromFunction2(makeRedline))
     __obj.asInstanceOf[XRedline]
   }
   
-  @scala.inline
-  implicit class XRedlineMutableBuilder[Self <: XRedline] (val x: Self) extends AnyVal {
+  extension [Self <: XRedline](x: Self) {
     
-    @scala.inline
-    def setMakeRedline(value: (String, PropertyValues) => Unit): Self = StObject.set(x, "makeRedline", js.Any.fromFunction2(value))
+    inline def setMakeRedline(value: (String, PropertyValues) => Unit): Self = StObject.set(x, "makeRedline", js.Any.fromFunction2(value))
   }
 }

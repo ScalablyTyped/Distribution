@@ -16,8 +16,7 @@ trait HkdfParams
 }
 object HkdfParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hash: HashAlgorithmIdentifier,
     info: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
     name: java.lang.String,
@@ -27,19 +26,15 @@ object HkdfParams {
     __obj.asInstanceOf[HkdfParams]
   }
   
-  @scala.inline
-  implicit class HkdfParamsMutableBuilder[Self <: HkdfParams] (val x: Self) extends AnyVal {
+  extension [Self <: HkdfParams](x: Self) {
     
-    @scala.inline
-    def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(
+    inline def setInfo(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalt(
+    inline def setSalt(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,6 @@ object dateMod {
     @JSImport("lodash-es/date", "default.now")
     @js.native
     def now: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof now */ js.Any = js.native
-    @scala.inline
-    def now_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof now */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("now")(x.asInstanceOf[js.Any])
+    inline def now_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof now */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("now")(x.asInstanceOf[js.Any])
   }
 }

@@ -31,8 +31,7 @@ trait XMergeableCellRange
 }
 object XMergeableCellRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     isMergeable: () => Boolean,
     merge: () => Unit,
@@ -44,16 +43,12 @@ object XMergeableCellRange {
     __obj.asInstanceOf[XMergeableCellRange]
   }
   
-  @scala.inline
-  implicit class XMergeableCellRangeMutableBuilder[Self <: XMergeableCellRange] (val x: Self) extends AnyVal {
+  extension [Self <: XMergeableCellRange](x: Self) {
     
-    @scala.inline
-    def setIsMergeable(value: () => Boolean): Self = StObject.set(x, "isMergeable", js.Any.fromFunction0(value))
+    inline def setIsMergeable(value: () => Boolean): Self = StObject.set(x, "isMergeable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMerge(value: () => Unit): Self = StObject.set(x, "merge", js.Any.fromFunction0(value))
+    inline def setMerge(value: () => Unit): Self = StObject.set(x, "merge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSplit(value: (Double, Double) => Unit): Self = StObject.set(x, "split", js.Any.fromFunction2(value))
+    inline def setSplit(value: (Double, Double) => Unit): Self = StObject.set(x, "split", js.Any.fromFunction2(value))
   }
 }

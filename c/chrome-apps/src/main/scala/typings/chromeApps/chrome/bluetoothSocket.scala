@@ -28,17 +28,14 @@ object bluetoothSocket {
   }
   object CreateInfo {
     
-    @scala.inline
-    def apply(socketId: integer): CreateInfo = {
+    inline def apply(socketId: integer): CreateInfo = {
       val __obj = js.Dynamic.literal(socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateInfo]
     }
     
-    @scala.inline
-    implicit class CreateInfoMutableBuilder[Self <: CreateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CreateInfo](x: Self) {
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,32 +65,24 @@ object bluetoothSocket {
   }
   object ListenOptions {
     
-    @scala.inline
-    def apply(): ListenOptions = {
+    inline def apply(): ListenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListenOptions]
     }
     
-    @scala.inline
-    implicit class ListenOptionsMutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListenOptions](x: Self) {
       
-      @scala.inline
-      def setBacklog(value: integer): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
+      inline def setBacklog(value: integer): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBacklogUndefined: Self = StObject.set(x, "backlog", js.undefined)
+      inline def setBacklogUndefined: Self = StObject.set(x, "backlog", js.undefined)
       
-      @scala.inline
-      def setChannel(value: integer): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: integer): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setPsm(value: integer): Self = StObject.set(x, "psm", value.asInstanceOf[js.Any])
+      inline def setPsm(value: integer): Self = StObject.set(x, "psm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPsmUndefined: Self = StObject.set(x, "psm", js.undefined)
+      inline def setPsmUndefined: Self = StObject.set(x, "psm", js.undefined)
     }
   }
   
@@ -104,11 +93,9 @@ object bluetoothSocket {
   trait OnAcceptErrorCode extends StObject
   object OnAcceptErrorCode {
     
-    @scala.inline
-    def not_listening: typings.chromeApps.chromeAppsStrings.not_listening = "not_listening".asInstanceOf[typings.chromeApps.chromeAppsStrings.not_listening]
+    inline def not_listening: typings.chromeApps.chromeAppsStrings.not_listening = "not_listening".asInstanceOf[typings.chromeApps.chromeAppsStrings.not_listening]
     
-    @scala.inline
-    def system_error: typings.chromeApps.chromeAppsStrings.system_error = "system_error".asInstanceOf[typings.chromeApps.chromeAppsStrings.system_error]
+    inline def system_error: typings.chromeApps.chromeAppsStrings.system_error = "system_error".asInstanceOf[typings.chromeApps.chromeAppsStrings.system_error]
   }
   
   type OnAcceptErrorEvent = Event[js.Function1[/* info */ OnAcceptErrorEventData, Unit]]
@@ -133,23 +120,18 @@ object bluetoothSocket {
   }
   object OnAcceptErrorEventData {
     
-    @scala.inline
-    def apply(error: OnAcceptErrorCode, errorMessage: String, socketId: integer): OnAcceptErrorEventData = {
+    inline def apply(error: OnAcceptErrorCode, errorMessage: String, socketId: integer): OnAcceptErrorEventData = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnAcceptErrorEventData]
     }
     
-    @scala.inline
-    implicit class OnAcceptErrorEventDataMutableBuilder[Self <: OnAcceptErrorEventData] (val x: Self) extends AnyVal {
+    extension [Self <: OnAcceptErrorEventData](x: Self) {
       
-      @scala.inline
-      def setError(value: OnAcceptErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: OnAcceptErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,20 +155,16 @@ object bluetoothSocket {
   }
   object OnAcceptInfoData {
     
-    @scala.inline
-    def apply(clientSocketId: integer, socketId: integer): OnAcceptInfoData = {
+    inline def apply(clientSocketId: integer, socketId: integer): OnAcceptInfoData = {
       val __obj = js.Dynamic.literal(clientSocketId = clientSocketId.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnAcceptInfoData]
     }
     
-    @scala.inline
-    implicit class OnAcceptInfoDataMutableBuilder[Self <: OnAcceptInfoData] (val x: Self) extends AnyVal {
+    extension [Self <: OnAcceptInfoData](x: Self) {
       
-      @scala.inline
-      def setClientSocketId(value: integer): Self = StObject.set(x, "clientSocketId", value.asInstanceOf[js.Any])
+      inline def setClientSocketId(value: integer): Self = StObject.set(x, "clientSocketId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,14 +176,11 @@ object bluetoothSocket {
   trait OnReceiveErrorCode extends StObject
   object OnReceiveErrorCode {
     
-    @scala.inline
-    def disconnected: disconnected__ = "disconnected".asInstanceOf[disconnected__]
+    inline def disconnected: disconnected__ = "disconnected".asInstanceOf[disconnected__]
     
-    @scala.inline
-    def not_connected: typings.chromeApps.chromeAppsStrings.not_connected = "not_connected".asInstanceOf[typings.chromeApps.chromeAppsStrings.not_connected]
+    inline def not_connected: typings.chromeApps.chromeAppsStrings.not_connected = "not_connected".asInstanceOf[typings.chromeApps.chromeAppsStrings.not_connected]
     
-    @scala.inline
-    def system_error: typings.chromeApps.chromeAppsStrings.system_error = "system_error".asInstanceOf[typings.chromeApps.chromeAppsStrings.system_error]
+    inline def system_error: typings.chromeApps.chromeAppsStrings.system_error = "system_error".asInstanceOf[typings.chromeApps.chromeAppsStrings.system_error]
   }
   
   type OnReceiveErrorEvent = Event[js.Function1[/* info */ OnReceiveErrorEventData, Unit]]
@@ -232,23 +207,18 @@ object bluetoothSocket {
   }
   object OnReceiveErrorEventData {
     
-    @scala.inline
-    def apply(error: OnAcceptErrorCode, errorMessage: String, socketId: integer): OnReceiveErrorEventData = {
+    inline def apply(error: OnAcceptErrorCode, errorMessage: String, socketId: integer): OnReceiveErrorEventData = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnReceiveErrorEventData]
     }
     
-    @scala.inline
-    implicit class OnReceiveErrorEventDataMutableBuilder[Self <: OnReceiveErrorEventData] (val x: Self) extends AnyVal {
+    extension [Self <: OnReceiveErrorEventData](x: Self) {
       
-      @scala.inline
-      def setError(value: OnAcceptErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: OnAcceptErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,20 +234,16 @@ object bluetoothSocket {
   }
   object OnReceiveEventData {
     
-    @scala.inline
-    def apply(data: ArrayBuffer, socketId: integer): OnReceiveEventData = {
+    inline def apply(data: ArrayBuffer, socketId: integer): OnReceiveEventData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnReceiveEventData]
     }
     
-    @scala.inline
-    implicit class OnReceiveEventDataMutableBuilder[Self <: OnReceiveEventData] (val x: Self) extends AnyVal {
+    extension [Self <: OnReceiveEventData](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,50 +307,36 @@ object bluetoothSocket {
   }
   object SocketInfo {
     
-    @scala.inline
-    def apply(connected: Boolean, paused: Boolean, persistent: Boolean, socketId: integer): SocketInfo = {
+    inline def apply(connected: Boolean, paused: Boolean, persistent: Boolean, socketId: integer): SocketInfo = {
       val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketInfo]
     }
     
-    @scala.inline
-    implicit class SocketInfoMutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SocketInfo](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
   
@@ -411,32 +363,24 @@ object bluetoothSocket {
   }
   object SocketProperties {
     
-    @scala.inline
-    def apply(): SocketProperties = {
+    inline def apply(): SocketProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketProperties]
     }
     
-    @scala.inline
-    implicit class SocketPropertiesMutableBuilder[Self <: SocketProperties] (val x: Self) extends AnyVal {
+    extension [Self <: SocketProperties](x: Self) {
       
-      @scala.inline
-      def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     }
   }
 }

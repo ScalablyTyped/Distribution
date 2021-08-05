@@ -112,21 +112,16 @@ object certificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /**
       * Returns true if the given object is an instance of Certificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acm/certificate.Certificate */ Boolean]
   }
   
   trait CertificateArgs extends StObject {
@@ -180,71 +175,50 @@ object certificateMod {
   }
   object CertificateArgs {
     
-    @scala.inline
-    def apply(): CertificateArgs = {
+    inline def apply(): CertificateArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateArgs]
     }
     
-    @scala.inline
-    implicit class CertificateArgsMutableBuilder[Self <: CertificateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateArgs](x: Self) {
       
-      @scala.inline
-      def setCertificateAuthorityArn(value: Input[String]): Self = StObject.set(x, "certificateAuthorityArn", value.asInstanceOf[js.Any])
+      inline def setCertificateAuthorityArn(value: Input[String]): Self = StObject.set(x, "certificateAuthorityArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "certificateAuthorityArn", js.undefined)
+      inline def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "certificateAuthorityArn", js.undefined)
       
-      @scala.inline
-      def setCertificateBody(value: Input[String]): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
+      inline def setCertificateBody(value: Input[String]): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateBodyUndefined: Self = StObject.set(x, "certificateBody", js.undefined)
+      inline def setCertificateBodyUndefined: Self = StObject.set(x, "certificateBody", js.undefined)
       
-      @scala.inline
-      def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+      inline def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
+      inline def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Input[typings.pulumiAws.inputMod.acm.CertificateOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Input[typings.pulumiAws.inputMod.acm.CertificateOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setSubjectAlternativeNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
+      inline def setSubjectAlternativeNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
+      inline def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
       
-      @scala.inline
-      def setSubjectAlternativeNamesVarargs(value: Input[String]*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value :_*))
+      inline def setSubjectAlternativeNamesVarargs(value: Input[String]*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setValidationMethod(value: Input[String]): Self = StObject.set(x, "validationMethod", value.asInstanceOf[js.Any])
+      inline def setValidationMethod(value: Input[String]): Self = StObject.set(x, "validationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationMethodUndefined: Self = StObject.set(x, "validationMethod", js.undefined)
+      inline def setValidationMethodUndefined: Self = StObject.set(x, "validationMethod", js.undefined)
     }
   }
   
@@ -323,105 +297,74 @@ object certificateMod {
   }
   object CertificateState {
     
-    @scala.inline
-    def apply(): CertificateState = {
+    inline def apply(): CertificateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateState]
     }
     
-    @scala.inline
-    implicit class CertificateStateMutableBuilder[Self <: CertificateState] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCertificateAuthorityArn(value: Input[String]): Self = StObject.set(x, "certificateAuthorityArn", value.asInstanceOf[js.Any])
+      inline def setCertificateAuthorityArn(value: Input[String]): Self = StObject.set(x, "certificateAuthorityArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "certificateAuthorityArn", js.undefined)
+      inline def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "certificateAuthorityArn", js.undefined)
       
-      @scala.inline
-      def setCertificateBody(value: Input[String]): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
+      inline def setCertificateBody(value: Input[String]): Self = StObject.set(x, "certificateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateBodyUndefined: Self = StObject.set(x, "certificateBody", js.undefined)
+      inline def setCertificateBodyUndefined: Self = StObject.set(x, "certificateBody", js.undefined)
       
-      @scala.inline
-      def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+      inline def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
+      inline def setCertificateChainUndefined: Self = StObject.set(x, "certificateChain", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setDomainValidationOptions(
+      inline def setDomainValidationOptions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.acm.CertificateDomainValidationOption]]
             ]
       ): Self = StObject.set(x, "domainValidationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainValidationOptionsUndefined: Self = StObject.set(x, "domainValidationOptions", js.undefined)
+      inline def setDomainValidationOptionsUndefined: Self = StObject.set(x, "domainValidationOptions", js.undefined)
       
-      @scala.inline
-      def setDomainValidationOptionsVarargs(value: Input[typings.pulumiAws.inputMod.acm.CertificateDomainValidationOption]*): Self = StObject.set(x, "domainValidationOptions", js.Array(value :_*))
+      inline def setDomainValidationOptionsVarargs(value: Input[typings.pulumiAws.inputMod.acm.CertificateDomainValidationOption]*): Self = StObject.set(x, "domainValidationOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: Input[typings.pulumiAws.inputMod.acm.CertificateOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Input[typings.pulumiAws.inputMod.acm.CertificateOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setSubjectAlternativeNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
+      inline def setSubjectAlternativeNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
+      inline def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
       
-      @scala.inline
-      def setSubjectAlternativeNamesVarargs(value: Input[String]*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value :_*))
+      inline def setSubjectAlternativeNamesVarargs(value: Input[String]*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setValidationEmails(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "validationEmails", value.asInstanceOf[js.Any])
+      inline def setValidationEmails(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "validationEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationEmailsUndefined: Self = StObject.set(x, "validationEmails", js.undefined)
+      inline def setValidationEmailsUndefined: Self = StObject.set(x, "validationEmails", js.undefined)
       
-      @scala.inline
-      def setValidationEmailsVarargs(value: Input[String]*): Self = StObject.set(x, "validationEmails", js.Array(value :_*))
+      inline def setValidationEmailsVarargs(value: Input[String]*): Self = StObject.set(x, "validationEmails", js.Array(value :_*))
       
-      @scala.inline
-      def setValidationMethod(value: Input[String]): Self = StObject.set(x, "validationMethod", value.asInstanceOf[js.Any])
+      inline def setValidationMethod(value: Input[String]): Self = StObject.set(x, "validationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationMethodUndefined: Self = StObject.set(x, "validationMethod", js.undefined)
+      inline def setValidationMethodUndefined: Self = StObject.set(x, "validationMethod", js.undefined)
     }
   }
 }

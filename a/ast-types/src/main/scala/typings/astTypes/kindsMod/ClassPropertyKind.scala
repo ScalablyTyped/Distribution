@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassPropertyKind extends StObject
 object ClassPropertyKind {
   
-  @scala.inline
-  def ClassPrivateProperty(key: PrivateNameKind): typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty = {
+  inline def ClassPrivateProperty(key: PrivateNameKind): typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ClassPrivateProperty]
   }
   
-  @scala.inline
-  def ClassProperty(key: LiteralKind | IdentifierKind | ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ClassProperty = {
+  inline def ClassProperty(key: LiteralKind | IdentifierKind | ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ClassProperty = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = null)
     __obj.updateDynamic("type")("ClassProperty")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ClassProperty]

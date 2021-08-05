@@ -28,37 +28,27 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(): Source = {
+  inline def apply(): Source = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setConfigDetails(value: ConfigDetails): Self = StObject.set(x, "configDetails", value.asInstanceOf[js.Any])
+    inline def setConfigDetails(value: ConfigDetails): Self = StObject.set(x, "configDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigDetailsUndefined: Self = StObject.set(x, "configDetails", js.undefined)
+    inline def setConfigDetailsUndefined: Self = StObject.set(x, "configDetails", js.undefined)
     
-    @scala.inline
-    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
+    inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
-    @scala.inline
-    def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
+    inline def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigTypeUndefined: Self = StObject.set(x, "configType", js.undefined)
+    inline def setConfigTypeUndefined: Self = StObject.set(x, "configType", js.undefined)
     
-    @scala.inline
-    def setDataflowSourceRegion(value: String): Self = StObject.set(x, "dataflowSourceRegion", value.asInstanceOf[js.Any])
+    inline def setDataflowSourceRegion(value: String): Self = StObject.set(x, "dataflowSourceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataflowSourceRegionUndefined: Self = StObject.set(x, "dataflowSourceRegion", js.undefined)
+    inline def setDataflowSourceRegionUndefined: Self = StObject.set(x, "dataflowSourceRegion", js.undefined)
   }
 }

@@ -12,14 +12,10 @@ object assetUrlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PostTransformNode]
-  @scala.inline
-  def default(userOptions: Unit, transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[PostTransformNode]
-  @scala.inline
-  def default(userOptions: AssetURLOptions): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any]).asInstanceOf[PostTransformNode]
-  @scala.inline
-  def default(userOptions: AssetURLOptions, transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[PostTransformNode]
+  inline def default(): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PostTransformNode]
+  inline def default(userOptions: Unit, transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[PostTransformNode]
+  inline def default(userOptions: AssetURLOptions): PostTransformNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any]).asInstanceOf[PostTransformNode]
+  inline def default(userOptions: AssetURLOptions, transformAssetUrlsOption: TransformAssetUrlsOptions): PostTransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(userOptions.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[PostTransformNode]
   
   type AssetURLOptions = StringDictionary[String | js.Array[String]]
   
@@ -33,20 +29,16 @@ object assetUrlMod {
   }
   object TransformAssetUrlsOptions {
     
-    @scala.inline
-    def apply(): TransformAssetUrlsOptions = {
+    inline def apply(): TransformAssetUrlsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformAssetUrlsOptions]
     }
     
-    @scala.inline
-    implicit class TransformAssetUrlsOptionsMutableBuilder[Self <: TransformAssetUrlsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransformAssetUrlsOptions](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     }
   }
 }

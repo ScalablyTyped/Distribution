@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DownloadProgressEventState extends StObject
 object DownloadProgressEventState {
   
-  @scala.inline
-  def Canceled: canceled = "canceled".asInstanceOf[canceled]
+  inline def Canceled: canceled = "canceled".asInstanceOf[canceled]
   
-  @scala.inline
-  def Completed: completed = "completed".asInstanceOf[completed]
+  inline def Completed: completed = "completed".asInstanceOf[completed]
   
-  @scala.inline
-  def InProgress: inProgress = "inProgress".asInstanceOf[inProgress]
+  inline def InProgress: inProgress = "inProgress".asInstanceOf[inProgress]
 }

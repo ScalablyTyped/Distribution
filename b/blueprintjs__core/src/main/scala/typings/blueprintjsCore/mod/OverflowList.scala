@@ -28,17 +28,14 @@ object OverflowList {
   @JSImport("@blueprintjs/core", "OverflowList.defaultProps")
   @js.native
   def defaultProps: PartialIOverflowListPropsClassName = js.native
-  @scala.inline
-  def defaultProps_=(x: PartialIOverflowListPropsClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PartialIOverflowListPropsClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "OverflowList.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def ofType[U](): Instantiable1[
+  inline def ofType[U](): Instantiable1[
     /* props */ IOverflowListProps[U], 
     typings.blueprintjsCore.overflowListMod.OverflowList[U]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[

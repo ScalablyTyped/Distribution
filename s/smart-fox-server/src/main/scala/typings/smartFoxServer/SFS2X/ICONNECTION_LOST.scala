@@ -10,16 +10,13 @@ trait ICONNECTION_LOST extends StObject {
 }
 object ICONNECTION_LOST {
   
-  @scala.inline
-  def apply(reason: String): ICONNECTION_LOST = {
+  inline def apply(reason: String): ICONNECTION_LOST = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICONNECTION_LOST]
   }
   
-  @scala.inline
-  implicit class ICONNECTION_LOSTMutableBuilder[Self <: ICONNECTION_LOST] (val x: Self) extends AnyVal {
+  extension [Self <: ICONNECTION_LOST](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

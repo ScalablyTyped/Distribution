@@ -15,26 +15,20 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply(default: js.Array[IriTerm], named: js.Array[IriTerm]): Default = {
+    inline def apply(default: js.Array[IriTerm], named: js.Array[IriTerm]): Default = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], named = named.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setDefault(value: js.Array[IriTerm]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Array[IriTerm]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVarargs(value: IriTerm*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: IriTerm*): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setNamed(value: js.Array[IriTerm]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: js.Array[IriTerm]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedVarargs(value: IriTerm*): Self = StObject.set(x, "named", js.Array(value :_*))
+      inline def setNamedVarargs(value: IriTerm*): Self = StObject.set(x, "named", js.Array(value :_*))
     }
   }
 }

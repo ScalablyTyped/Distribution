@@ -23,31 +23,23 @@ trait ListOriginEndpointsRequest extends StObject {
 }
 object ListOriginEndpointsRequest {
   
-  @scala.inline
-  def apply(): ListOriginEndpointsRequest = {
+  inline def apply(): ListOriginEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOriginEndpointsRequest]
   }
   
-  @scala.inline
-  implicit class ListOriginEndpointsRequestMutableBuilder[Self <: ListOriginEndpointsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListOriginEndpointsRequest](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

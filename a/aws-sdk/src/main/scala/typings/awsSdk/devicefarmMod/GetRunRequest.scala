@@ -13,16 +13,13 @@ trait GetRunRequest extends StObject {
 }
 object GetRunRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): GetRunRequest = {
+  inline def apply(arn: AmazonResourceName): GetRunRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRunRequest]
   }
   
-  @scala.inline
-  implicit class GetRunRequestMutableBuilder[Self <: GetRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRunRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

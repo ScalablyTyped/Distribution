@@ -27,31 +27,23 @@ trait OptionsSideMenu extends StObject {
 }
 object OptionsSideMenu {
   
-  @scala.inline
-  def apply(): OptionsSideMenu = {
+  inline def apply(): OptionsSideMenu = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsSideMenu]
   }
   
-  @scala.inline
-  implicit class OptionsSideMenuMutableBuilder[Self <: OptionsSideMenu] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsSideMenu](x: Self) {
     
-    @scala.inline
-    def setLeft(value: SideMenuSide): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: SideMenuSide): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setOpenGestureMode(value: entireScreen | bezel): Self = StObject.set(x, "openGestureMode", value.asInstanceOf[js.Any])
+    inline def setOpenGestureMode(value: entireScreen | bezel): Self = StObject.set(x, "openGestureMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenGestureModeUndefined: Self = StObject.set(x, "openGestureMode", js.undefined)
+    inline def setOpenGestureModeUndefined: Self = StObject.set(x, "openGestureMode", js.undefined)
     
-    @scala.inline
-    def setRight(value: SideMenuSide): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: SideMenuSide): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
   }
 }

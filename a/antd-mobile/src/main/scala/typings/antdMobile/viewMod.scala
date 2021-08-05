@@ -22,8 +22,7 @@ object viewMod {
     @JSImport("antd-mobile/lib/view", "default.defaultProps")
     @js.native
     def defaultProps: Component = js.native
-    @scala.inline
-    def defaultProps_=(x: Component): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Component): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -38,20 +37,16 @@ object viewMod {
   }
   object ViewProps {
     
-    @scala.inline
-    def apply[T](): ViewProps[T] = {
+    inline def apply[T](): ViewProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewProps[T]]
     }
     
-    @scala.inline
-    implicit class ViewPropsMutableBuilder[Self <: ViewProps[?], T] (val x: Self & ViewProps[T]) extends AnyVal {
+    extension [Self <: ViewProps[?], T](x: Self & ViewProps[T]) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     }
   }
 }

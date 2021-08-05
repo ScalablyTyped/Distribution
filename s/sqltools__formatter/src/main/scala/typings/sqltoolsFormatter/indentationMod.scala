@@ -55,8 +55,7 @@ object indentationMod {
   }
   object Indentation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decreaseBlockLevel: () => Unit,
       decreaseTopLevel: () => Unit,
       getIndent: () => String,
@@ -69,38 +68,27 @@ object indentationMod {
       __obj.asInstanceOf[Indentation]
     }
     
-    @scala.inline
-    implicit class IndentationMutableBuilder[Self <: Indentation] (val x: Self) extends AnyVal {
+    extension [Self <: Indentation](x: Self) {
       
-      @scala.inline
-      def setDecreaseBlockLevel(value: () => Unit): Self = StObject.set(x, "decreaseBlockLevel", js.Any.fromFunction0(value))
+      inline def setDecreaseBlockLevel(value: () => Unit): Self = StObject.set(x, "decreaseBlockLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDecreaseTopLevel(value: () => Unit): Self = StObject.set(x, "decreaseTopLevel", js.Any.fromFunction0(value))
+      inline def setDecreaseTopLevel(value: () => Unit): Self = StObject.set(x, "decreaseTopLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndent(value: () => String): Self = StObject.set(x, "getIndent", js.Any.fromFunction0(value))
+      inline def setGetIndent(value: () => String): Self = StObject.set(x, "getIndent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncreaseBlockLevel(value: () => Unit): Self = StObject.set(x, "increaseBlockLevel", js.Any.fromFunction0(value))
+      inline def setIncreaseBlockLevel(value: () => Unit): Self = StObject.set(x, "increaseBlockLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncreaseTopLevel(value: () => Unit): Self = StObject.set(x, "increaseTopLevel", js.Any.fromFunction0(value))
+      inline def setIncreaseTopLevel(value: () => Unit): Self = StObject.set(x, "increaseTopLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "indentTypes", value.asInstanceOf[js.Any])
+      inline def setIndentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "indentTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentTypesVarargs(value: js.Any*): Self = StObject.set(x, "indentTypes", js.Array(value :_*))
+      inline def setIndentTypesVarargs(value: js.Any*): Self = StObject.set(x, "indentTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setResetIndentation(value: () => Unit): Self = StObject.set(x, "resetIndentation", js.Any.fromFunction0(value))
+      inline def setResetIndentation(value: () => Unit): Self = StObject.set(x, "resetIndentation", js.Any.fromFunction0(value))
     }
   }
 }

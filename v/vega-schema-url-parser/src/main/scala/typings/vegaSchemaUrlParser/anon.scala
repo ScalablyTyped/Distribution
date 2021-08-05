@@ -16,20 +16,16 @@ object anon {
   }
   object Library {
     
-    @scala.inline
-    def apply(library: vega | `vega-lite`, version: String): Library = {
+    inline def apply(library: vega | `vega-lite`, version: String): Library = {
       val __obj = js.Dynamic.literal(library = library.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Library]
     }
     
-    @scala.inline
-    implicit class LibraryMutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
+    extension [Self <: Library](x: Self) {
       
-      @scala.inline
-      def setLibrary(value: vega | `vega-lite`): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+      inline def setLibrary(value: vega | `vega-lite`): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

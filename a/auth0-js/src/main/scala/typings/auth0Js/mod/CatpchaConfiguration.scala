@@ -19,25 +19,19 @@ trait CatpchaConfiguration extends StObject {
 }
 object CatpchaConfiguration {
   
-  @scala.inline
-  def apply(): CatpchaConfiguration = {
+  inline def apply(): CatpchaConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatpchaConfiguration]
   }
   
-  @scala.inline
-  implicit class CatpchaConfigurationMutableBuilder[Self <: CatpchaConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CatpchaConfiguration](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setTemplates(value: CaptchaTemplates): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: CaptchaTemplates): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
   }
 }

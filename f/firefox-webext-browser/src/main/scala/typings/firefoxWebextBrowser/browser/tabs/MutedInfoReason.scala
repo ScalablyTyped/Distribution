@@ -14,12 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MutedInfoReason extends StObject
 object MutedInfoReason {
   
-  @scala.inline
-  def capture: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture = "capture".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture]
+  inline def capture: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture = "capture".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture]
   
-  @scala.inline
-  def `extension`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension` = "extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`]
+  inline def `extension`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension` = "extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`]
   
-  @scala.inline
-  def user: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
+  inline def user: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
 }

@@ -19,8 +19,7 @@ trait ItemDefinition
 }
 object ItemDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -34,19 +33,14 @@ object ItemDefinition {
     __obj.asInstanceOf[ItemDefinition]
   }
   
-  @scala.inline
-  implicit class ItemDefinitionMutableBuilder[Self <: ItemDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ItemDefinition](x: Self) {
     
-    @scala.inline
-    def setImport(value: Import): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+    inline def setImport(value: Import): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
+    inline def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemKind(value: ItemKind): Self = StObject.set(x, "itemKind", value.asInstanceOf[js.Any])
+    inline def setItemKind(value: ItemKind): Self = StObject.set(x, "itemKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureRef(value: String): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
+    inline def setStructureRef(value: String): Self = StObject.set(x, "structureRef", value.asInstanceOf[js.Any])
   }
 }

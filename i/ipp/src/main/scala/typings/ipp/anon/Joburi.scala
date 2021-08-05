@@ -23,53 +23,38 @@ trait Joburi extends StObject {
 }
 object Joburi {
   
-  @scala.inline
-  def apply(`requesting-user-name`: String): Joburi = {
+  inline def apply(`requesting-user-name`: String): Joburi = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("requesting-user-name")(`requesting-user-name`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Joburi]
   }
   
-  @scala.inline
-  implicit class JoburiMutableBuilder[Self <: Joburi] (val x: Self) extends AnyVal {
+  extension [Self <: Joburi](x: Self) {
     
-    @scala.inline
-    def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
+    inline def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAttributes-charsetUndefined`: Self = StObject.set(x, "attributes-charset", js.undefined)
+    inline def `setAttributes-charsetUndefined`: Self = StObject.set(x, "attributes-charset", js.undefined)
     
-    @scala.inline
-    def `setAttributes-natural-language`(value: String): Self = StObject.set(x, "attributes-natural-language", value.asInstanceOf[js.Any])
+    inline def `setAttributes-natural-language`(value: String): Self = StObject.set(x, "attributes-natural-language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAttributes-natural-languageUndefined`: Self = StObject.set(x, "attributes-natural-language", js.undefined)
+    inline def `setAttributes-natural-languageUndefined`: Self = StObject.set(x, "attributes-natural-language", js.undefined)
     
-    @scala.inline
-    def `setJob-id`(value: Double): Self = StObject.set(x, "job-id", value.asInstanceOf[js.Any])
+    inline def `setJob-id`(value: Double): Self = StObject.set(x, "job-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-idUndefined`: Self = StObject.set(x, "job-id", js.undefined)
+    inline def `setJob-idUndefined`: Self = StObject.set(x, "job-id", js.undefined)
     
-    @scala.inline
-    def `setJob-uri`(value: String): Self = StObject.set(x, "job-uri", value.asInstanceOf[js.Any])
+    inline def `setJob-uri`(value: String): Self = StObject.set(x, "job-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-uriUndefined`: Self = StObject.set(x, "job-uri", js.undefined)
+    inline def `setJob-uriUndefined`: Self = StObject.set(x, "job-uri", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def `setPrinter-uri`(value: String): Self = StObject.set(x, "printer-uri", value.asInstanceOf[js.Any])
+    inline def `setPrinter-uri`(value: String): Self = StObject.set(x, "printer-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPrinter-uriUndefined`: Self = StObject.set(x, "printer-uri", js.undefined)
+    inline def `setPrinter-uriUndefined`: Self = StObject.set(x, "printer-uri", js.undefined)
     
-    @scala.inline
-    def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
+    inline def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
   }
 }

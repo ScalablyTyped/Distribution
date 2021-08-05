@@ -15,25 +15,19 @@ trait OrgTeamConcurrencyValues
 }
 object OrgTeamConcurrencyValues {
   
-  @scala.inline
-  def apply(): OrgTeamConcurrencyValues = {
+  inline def apply(): OrgTeamConcurrencyValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrgTeamConcurrencyValues]
   }
   
-  @scala.inline
-  implicit class OrgTeamConcurrencyValuesMutableBuilder[Self <: OrgTeamConcurrencyValues] (val x: Self) extends AnyVal {
+  extension [Self <: OrgTeamConcurrencyValues](x: Self) {
     
-    @scala.inline
-    def setAllowed(value: ConcurrencyValues): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+    inline def setAllowed(value: ConcurrencyValues): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+    inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
-    @scala.inline
-    def setCurrent(value: ConcurrencyValues): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: ConcurrencyValues): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
   }
 }

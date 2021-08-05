@@ -16,17 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object PhysicsDefinition {
   
-  @scala.inline
-  def apply(ease: Unit): PhysicsDefinition = {
+  inline def apply(ease: Unit): PhysicsDefinition = {
     val __obj = js.Dynamic.literal(ease = ease.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("physics")
     __obj.asInstanceOf[PhysicsDefinition]
   }
   
-  @scala.inline
-  implicit class PhysicsDefinitionMutableBuilder[Self <: PhysicsDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: PhysicsDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: physics): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: physics): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

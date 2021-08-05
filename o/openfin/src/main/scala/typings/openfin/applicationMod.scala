@@ -30,11 +30,11 @@ object applicationMod {
   class Application protected () extends EmitterBase[ApplicationEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
     
-    var _close: js.Any = js.native
+    /* private */ var _close: js.Any = js.native
     
     var _manifestUrl: js.UndefOr[String] = js.native
     
-    var _run: js.Any = js.native
+    /* private */ var _run: js.Any = js.native
     
     def close(): js.Promise[Unit] = js.native
     def close(force: Boolean): js.Promise[Unit] = js.native
@@ -307,9 +307,9 @@ object applicationMod {
       */
     def terminate(): js.Promise[Unit] = js.native
     
-    var window: js.Any = js.native
+    /* private */ var window: js.Any = js.native
     
-    var windowListFromIdentityList: js.Any = js.native
+    /* private */ var windowListFromIdentityList: js.Any = js.native
   }
   
   @JSImport("openfin/_v2/api/application/application", "NavigationRejectedReply")
@@ -337,8 +337,7 @@ object applicationMod {
   }
   object ApplicationInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initialOptions: ApplicationOption,
       launchMode: String,
       manifest: js.Object,
@@ -349,38 +348,30 @@ object applicationMod {
       __obj.asInstanceOf[ApplicationInfo]
     }
     
-    @scala.inline
-    implicit class ApplicationInfoMutableBuilder[Self <: ApplicationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationInfo](x: Self) {
       
-      @scala.inline
-      def setInitialOptions(value: ApplicationOption): Self = StObject.set(x, "initialOptions", value.asInstanceOf[js.Any])
+      inline def setInitialOptions(value: ApplicationOption): Self = StObject.set(x, "initialOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchMode(value: String): Self = StObject.set(x, "launchMode", value.asInstanceOf[js.Any])
+      inline def setLaunchMode(value: String): Self = StObject.set(x, "launchMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifest(value: js.Object): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+      inline def setManifest(value: js.Object): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
+      inline def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUuid(value: String): Self = StObject.set(x, "parentUuid", value.asInstanceOf[js.Any])
+      inline def setParentUuid(value: String): Self = StObject.set(x, "parentUuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUuidUndefined: Self = StObject.set(x, "parentUuid", js.undefined)
+      inline def setParentUuidUndefined: Self = StObject.set(x, "parentUuid", js.undefined)
       
-      @scala.inline
-      def setRuntime(value: Version): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: Version): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait ApplicationModule extends Base {
     
-    var _create: js.Any = js.native
+    /* private */ var _create: js.Any = js.native
     
-    var _createFromManifest: js.Any = js.native
+    /* private */ var _createFromManifest: js.Any = js.native
     
     /**
       * DEPRECATED method to create a new Application. Use {@link Application.start} instead.
@@ -465,17 +456,14 @@ object applicationMod {
   }
   object LogInfo {
     
-    @scala.inline
-    def apply(logId: String): LogInfo = {
+    inline def apply(logId: String): LogInfo = {
       val __obj = js.Dynamic.literal(logId = logId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogInfo]
     }
     
-    @scala.inline
-    implicit class LogInfoMutableBuilder[Self <: LogInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LogInfo](x: Self) {
       
-      @scala.inline
-      def setLogId(value: String): Self = StObject.set(x, "logId", value.asInstanceOf[js.Any])
+      inline def setLogId(value: String): Self = StObject.set(x, "logId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -487,20 +475,16 @@ object applicationMod {
   }
   object ManifestInfo {
     
-    @scala.inline
-    def apply(manifestUrl: String, uuid: String): ManifestInfo = {
+    inline def apply(manifestUrl: String, uuid: String): ManifestInfo = {
       val __obj = js.Dynamic.literal(manifestUrl = manifestUrl.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManifestInfo]
     }
     
-    @scala.inline
-    implicit class ManifestInfoMutableBuilder[Self <: ManifestInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ManifestInfo](x: Self) {
       
-      @scala.inline
-      def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
+      inline def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -512,26 +496,20 @@ object applicationMod {
   }
   object RvmLaunchOptions {
     
-    @scala.inline
-    def apply(): RvmLaunchOptions = {
+    inline def apply(): RvmLaunchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RvmLaunchOptions]
     }
     
-    @scala.inline
-    implicit class RvmLaunchOptionsMutableBuilder[Self <: RvmLaunchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RvmLaunchOptions](x: Self) {
       
-      @scala.inline
-      def setNoUi(value: Boolean): Self = StObject.set(x, "noUi", value.asInstanceOf[js.Any])
+      inline def setNoUi(value: Boolean): Self = StObject.set(x, "noUi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoUiUndefined: Self = StObject.set(x, "noUi", js.undefined)
+      inline def setNoUiUndefined: Self = StObject.set(x, "noUi", js.undefined)
       
-      @scala.inline
-      def setUserAppConfigArgs(value: js.Object): Self = StObject.set(x, "userAppConfigArgs", value.asInstanceOf[js.Any])
+      inline def setUserAppConfigArgs(value: js.Object): Self = StObject.set(x, "userAppConfigArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAppConfigArgsUndefined: Self = StObject.set(x, "userAppConfigArgs", js.undefined)
+      inline def setUserAppConfigArgsUndefined: Self = StObject.set(x, "userAppConfigArgs", js.undefined)
     }
   }
   
@@ -545,32 +523,24 @@ object applicationMod {
   }
   object ShortCutConfig {
     
-    @scala.inline
-    def apply(): ShortCutConfig = {
+    inline def apply(): ShortCutConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShortCutConfig]
     }
     
-    @scala.inline
-    implicit class ShortCutConfigMutableBuilder[Self <: ShortCutConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ShortCutConfig](x: Self) {
       
-      @scala.inline
-      def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+      inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
       
-      @scala.inline
-      def setStartMenu(value: Boolean): Self = StObject.set(x, "startMenu", value.asInstanceOf[js.Any])
+      inline def setStartMenu(value: Boolean): Self = StObject.set(x, "startMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartMenuUndefined: Self = StObject.set(x, "startMenu", js.undefined)
+      inline def setStartMenuUndefined: Self = StObject.set(x, "startMenu", js.undefined)
       
-      @scala.inline
-      def setSystemStartup(value: Boolean): Self = StObject.set(x, "systemStartup", value.asInstanceOf[js.Any])
+      inline def setSystemStartup(value: Boolean): Self = StObject.set(x, "systemStartup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemStartupUndefined: Self = StObject.set(x, "systemStartup", js.undefined)
+      inline def setSystemStartupUndefined: Self = StObject.set(x, "systemStartup", js.undefined)
     }
   }
   
@@ -596,26 +566,20 @@ object applicationMod {
   }
   object TrayInfo {
     
-    @scala.inline
-    def apply(bounds: Bounds, monitorInfo: MonitorInfo, x: Double, y: Double): TrayInfo = {
+    inline def apply(bounds: Bounds, monitorInfo: MonitorInfo, x: Double, y: Double): TrayInfo = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], monitorInfo = monitorInfo.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrayInfo]
     }
     
-    @scala.inline
-    implicit class TrayInfoMutableBuilder[Self <: TrayInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TrayInfo](x: Self) {
       
-      @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitorInfo(value: MonitorInfo): Self = StObject.set(x, "monitorInfo", value.asInstanceOf[js.Any])
+      inline def setMonitorInfo(value: MonitorInfo): Self = StObject.set(x, "monitorInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

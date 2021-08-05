@@ -10,16 +10,13 @@ trait DefineAnalysisSchemeResponse extends StObject {
 }
 object DefineAnalysisSchemeResponse {
   
-  @scala.inline
-  def apply(AnalysisScheme: AnalysisSchemeStatus): DefineAnalysisSchemeResponse = {
+  inline def apply(AnalysisScheme: AnalysisSchemeStatus): DefineAnalysisSchemeResponse = {
     val __obj = js.Dynamic.literal(AnalysisScheme = AnalysisScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineAnalysisSchemeResponse]
   }
   
-  @scala.inline
-  implicit class DefineAnalysisSchemeResponseMutableBuilder[Self <: DefineAnalysisSchemeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DefineAnalysisSchemeResponse](x: Self) {
     
-    @scala.inline
-    def setAnalysisScheme(value: AnalysisSchemeStatus): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
+    inline def setAnalysisScheme(value: AnalysisSchemeStatus): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
   }
 }

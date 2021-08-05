@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpExportMode extends StObject
 object PpExportMode {
   
-  @scala.inline
-  def ppClipRelativeToSlide: `2` = 2.asInstanceOf[`2`]
+  inline def ppClipRelativeToSlide: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppRelativeToSlide: `1` = 1.asInstanceOf[`1`]
+  inline def ppRelativeToSlide: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppScaleToFit: `3` = 3.asInstanceOf[`3`]
+  inline def ppScaleToFit: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppScaleXY: `4` = 4.asInstanceOf[`4`]
+  inline def ppScaleXY: `4` = 4.asInstanceOf[`4`]
 }

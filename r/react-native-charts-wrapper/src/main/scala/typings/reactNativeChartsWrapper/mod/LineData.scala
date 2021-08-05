@@ -10,22 +10,17 @@ trait LineData extends StObject {
 }
 object LineData {
   
-  @scala.inline
-  def apply(): LineData = {
+  inline def apply(): LineData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineData]
   }
   
-  @scala.inline
-  implicit class LineDataMutableBuilder[Self <: LineData] (val x: Self) extends AnyVal {
+  extension [Self <: LineData](x: Self) {
     
-    @scala.inline
-    def setDataSets(value: js.Array[LineDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+    inline def setDataSets(value: js.Array[LineDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
+    inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    @scala.inline
-    def setDataSetsVarargs(value: LineDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: LineDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

@@ -48,61 +48,43 @@ trait AssumeRoleWithSAMLResponse extends StObject {
 }
 object AssumeRoleWithSAMLResponse {
   
-  @scala.inline
-  def apply(): AssumeRoleWithSAMLResponse = {
+  inline def apply(): AssumeRoleWithSAMLResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssumeRoleWithSAMLResponse]
   }
   
-  @scala.inline
-  implicit class AssumeRoleWithSAMLResponseMutableBuilder[Self <: AssumeRoleWithSAMLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssumeRoleWithSAMLResponse](x: Self) {
     
-    @scala.inline
-    def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
+    inline def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
+    inline def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
     
-    @scala.inline
-    def setAudience(value: Audience): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: Audience): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: Issuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: Issuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
     
-    @scala.inline
-    def setNameQualifier(value: NameQualifier): Self = StObject.set(x, "NameQualifier", value.asInstanceOf[js.Any])
+    inline def setNameQualifier(value: NameQualifier): Self = StObject.set(x, "NameQualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameQualifierUndefined: Self = StObject.set(x, "NameQualifier", js.undefined)
+    inline def setNameQualifierUndefined: Self = StObject.set(x, "NameQualifier", js.undefined)
     
-    @scala.inline
-    def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
+    inline def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
+    inline def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
     
-    @scala.inline
-    def setSubject(value: Subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectType(value: SubjectType): Self = StObject.set(x, "SubjectType", value.asInstanceOf[js.Any])
+    inline def setSubjectType(value: SubjectType): Self = StObject.set(x, "SubjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectTypeUndefined: Self = StObject.set(x, "SubjectType", js.undefined)
+    inline def setSubjectTypeUndefined: Self = StObject.set(x, "SubjectType", js.undefined)
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
   }
 }

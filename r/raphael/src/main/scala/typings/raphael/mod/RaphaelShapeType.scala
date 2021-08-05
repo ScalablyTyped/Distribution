@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RaphaelShapeType extends StObject
 object RaphaelShapeType {
   
-  @scala.inline
-  def circle: typings.raphael.raphaelStrings.circle = "circle".asInstanceOf[typings.raphael.raphaelStrings.circle]
+  inline def circle: typings.raphael.raphaelStrings.circle = "circle".asInstanceOf[typings.raphael.raphaelStrings.circle]
   
-  @scala.inline
-  def ellipse: typings.raphael.raphaelStrings.ellipse = "ellipse".asInstanceOf[typings.raphael.raphaelStrings.ellipse]
+  inline def ellipse: typings.raphael.raphaelStrings.ellipse = "ellipse".asInstanceOf[typings.raphael.raphaelStrings.ellipse]
   
-  @scala.inline
-  def image: typings.raphael.raphaelStrings.image = "image".asInstanceOf[typings.raphael.raphaelStrings.image]
+  inline def image: typings.raphael.raphaelStrings.image = "image".asInstanceOf[typings.raphael.raphaelStrings.image]
   
-  @scala.inline
-  def path: typings.raphael.raphaelStrings.path = "path".asInstanceOf[typings.raphael.raphaelStrings.path]
+  inline def path: typings.raphael.raphaelStrings.path = "path".asInstanceOf[typings.raphael.raphaelStrings.path]
   
-  @scala.inline
-  def rect: typings.raphael.raphaelStrings.rect = "rect".asInstanceOf[typings.raphael.raphaelStrings.rect]
+  inline def rect: typings.raphael.raphaelStrings.rect = "rect".asInstanceOf[typings.raphael.raphaelStrings.rect]
   
-  @scala.inline
-  def set: typings.raphael.raphaelStrings.set = "set".asInstanceOf[typings.raphael.raphaelStrings.set]
+  inline def set: typings.raphael.raphaelStrings.set = "set".asInstanceOf[typings.raphael.raphaelStrings.set]
   
-  @scala.inline
-  def text: typings.raphael.raphaelStrings.text = "text".asInstanceOf[typings.raphael.raphaelStrings.text]
+  inline def text: typings.raphael.raphaelStrings.text = "text".asInstanceOf[typings.raphael.raphaelStrings.text]
 }

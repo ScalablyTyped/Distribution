@@ -18,28 +18,21 @@ trait GetBLEDeviceCharacteristicsSuccess extends StObject {
 }
 object GetBLEDeviceCharacteristicsSuccess {
   
-  @scala.inline
-  def apply(): GetBLEDeviceCharacteristicsSuccess = {
+  inline def apply(): GetBLEDeviceCharacteristicsSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccess]
   }
   
-  @scala.inline
-  implicit class GetBLEDeviceCharacteristicsSuccessMutableBuilder[Self <: GetBLEDeviceCharacteristicsSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetBLEDeviceCharacteristicsSuccess](x: Self) {
     
-    @scala.inline
-    def setCharacteristics(value: js.Array[GetBLEDeviceCharacteristicsSuccessData]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
+    inline def setCharacteristics(value: js.Array[GetBLEDeviceCharacteristicsSuccessData]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacteristicsUndefined: Self = StObject.set(x, "characteristics", js.undefined)
+    inline def setCharacteristicsUndefined: Self = StObject.set(x, "characteristics", js.undefined)
     
-    @scala.inline
-    def setCharacteristicsVarargs(value: GetBLEDeviceCharacteristicsSuccessData*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+    inline def setCharacteristicsVarargs(value: GetBLEDeviceCharacteristicsSuccessData*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

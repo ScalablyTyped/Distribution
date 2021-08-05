@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPictureColorType extends StObject
 object MsoPictureColorType {
   
-  @scala.inline
-  def msoPictureAutomatic: `1` = 1.asInstanceOf[`1`]
+  inline def msoPictureAutomatic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoPictureBlackAndWhite: `3` = 3.asInstanceOf[`3`]
+  inline def msoPictureBlackAndWhite: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoPictureGrayscale: `2` = 2.asInstanceOf[`2`]
+  inline def msoPictureGrayscale: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoPictureMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoPictureMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoPictureWatermark: `4` = 4.asInstanceOf[`4`]
+  inline def msoPictureWatermark: `4` = 4.asInstanceOf[`4`]
 }

@@ -18,12 +18,10 @@ object CalloutSizes {
   @JSImport("react-foundation/enums", "CalloutSizes.LARGE")
   @js.native
   def LARGE: CalloutSizes = js.native
-  @scala.inline
-  def LARGE_=(x: CalloutSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
+  inline def LARGE_=(x: CalloutSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "CalloutSizes.SMALL")
   @js.native
   def SMALL: CalloutSizes = js.native
-  @scala.inline
-  def SMALL_=(x: CalloutSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
+  inline def SMALL_=(x: CalloutSizes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
 }

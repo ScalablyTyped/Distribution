@@ -62,73 +62,51 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(): Dictkey = {
+  inline def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
+    inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
+    inline def setBrowserNameUndefined: Self = StObject.set(x, "browserName", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
+    inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
+    inline def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
     
-    @scala.inline
-    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
+    inline def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
+    inline def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSeleniumAddress(value: String): Self = StObject.set(x, "seleniumAddress", value.asInstanceOf[js.Any])
+    inline def setSeleniumAddress(value: String): Self = StObject.set(x, "seleniumAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeleniumAddressUndefined: Self = StObject.set(x, "seleniumAddress", js.undefined)
+    inline def setSeleniumAddressUndefined: Self = StObject.set(x, "seleniumAddress", js.undefined)
     
-    @scala.inline
-    def setShardTestFiles(value: Boolean): Self = StObject.set(x, "shardTestFiles", value.asInstanceOf[js.Any])
+    inline def setShardTestFiles(value: Boolean): Self = StObject.set(x, "shardTestFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardTestFilesUndefined: Self = StObject.set(x, "shardTestFiles", js.undefined)
+    inline def setShardTestFilesUndefined: Self = StObject.set(x, "shardTestFiles", js.undefined)
     
-    @scala.inline
-    def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+    inline def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
+    inline def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
     
-    @scala.inline
-    def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
+    inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
   }
 }

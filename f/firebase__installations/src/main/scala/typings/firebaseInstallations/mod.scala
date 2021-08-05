@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerInstallations(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInstallations")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerInstallations(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInstallations")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Define extension behavior of `registerInstallations`
@@ -26,17 +25,14 @@ object mod {
     }
     object FirebaseApp {
       
-      @scala.inline
-      def apply(installations: () => FirebaseInstallations): FirebaseApp = {
+      inline def apply(installations: () => FirebaseInstallations): FirebaseApp = {
         val __obj = js.Dynamic.literal(installations = js.Any.fromFunction0(installations))
         __obj.asInstanceOf[FirebaseApp]
       }
       
-      @scala.inline
-      implicit class FirebaseAppMutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
+      extension [Self <: FirebaseApp](x: Self) {
         
-        @scala.inline
-        def setInstallations(value: () => FirebaseInstallations): Self = StObject.set(x, "installations", js.Any.fromFunction0(value))
+        inline def setInstallations(value: () => FirebaseInstallations): Self = StObject.set(x, "installations", js.Any.fromFunction0(value))
       }
     }
     

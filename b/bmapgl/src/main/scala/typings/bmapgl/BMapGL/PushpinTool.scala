@@ -22,8 +22,7 @@ trait PushpinTool extends StObject {
 }
 object PushpinTool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Boolean,
     getCursor: () => String,
     getIcon: () => Icon,
@@ -36,28 +35,20 @@ object PushpinTool {
     __obj.asInstanceOf[PushpinTool]
   }
   
-  @scala.inline
-  implicit class PushpinToolMutableBuilder[Self <: PushpinTool] (val x: Self) extends AnyVal {
+  extension [Self <: PushpinTool](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCursor(value: () => String): Self = StObject.set(x, "getCursor", js.Any.fromFunction0(value))
+    inline def setGetCursor(value: () => String): Self = StObject.set(x, "getCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIcon(value: () => Icon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
+    inline def setGetIcon(value: () => Icon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnmarkend(value: typings.bmapgl.anon.Marker => Unit): Self = StObject.set(x, "onmarkend", js.Any.fromFunction1(value))
+    inline def setOnmarkend(value: typings.bmapgl.anon.Marker => Unit): Self = StObject.set(x, "onmarkend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpen(value: () => Boolean): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Boolean): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCursor(value: String => String): Self = StObject.set(x, "setCursor", js.Any.fromFunction1(value))
+    inline def setSetCursor(value: String => String): Self = StObject.set(x, "setCursor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIcon(value: Icon => Icon): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: Icon => Icon): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
   }
 }

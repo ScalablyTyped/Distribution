@@ -26,20 +26,16 @@ object typesUpdateEndpointOutputMod {
   }
   object UpdateEndpointOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, MessageBody: UnmarshalledMessageBody): UpdateEndpointOutput = {
+    inline def apply($metadata: ResponseMetadata, MessageBody: UnmarshalledMessageBody): UpdateEndpointOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], MessageBody = MessageBody.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateEndpointOutput]
     }
     
-    @scala.inline
-    implicit class UpdateEndpointOutputMutableBuilder[Self <: UpdateEndpointOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateEndpointOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageBody(value: UnmarshalledMessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
+      inline def setMessageBody(value: UnmarshalledMessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
     }
   }
 }

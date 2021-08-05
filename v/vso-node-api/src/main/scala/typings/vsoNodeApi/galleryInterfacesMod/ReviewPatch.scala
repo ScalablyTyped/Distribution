@@ -23,22 +23,17 @@ trait ReviewPatch extends StObject {
 }
 object ReviewPatch {
   
-  @scala.inline
-  def apply(operation: ReviewPatchOperation, reportedConcern: UserReportedConcern, reviewItem: Review): ReviewPatch = {
+  inline def apply(operation: ReviewPatchOperation, reportedConcern: UserReportedConcern, reviewItem: Review): ReviewPatch = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], reportedConcern = reportedConcern.asInstanceOf[js.Any], reviewItem = reviewItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewPatch]
   }
   
-  @scala.inline
-  implicit class ReviewPatchMutableBuilder[Self <: ReviewPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewPatch](x: Self) {
     
-    @scala.inline
-    def setOperation(value: ReviewPatchOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: ReviewPatchOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportedConcern(value: UserReportedConcern): Self = StObject.set(x, "reportedConcern", value.asInstanceOf[js.Any])
+    inline def setReportedConcern(value: UserReportedConcern): Self = StObject.set(x, "reportedConcern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewItem(value: Review): Self = StObject.set(x, "reviewItem", value.asInstanceOf[js.Any])
+    inline def setReviewItem(value: Review): Self = StObject.set(x, "reviewItem", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait AutoMLDataSource extends StObject {
 }
 object AutoMLDataSource {
   
-  @scala.inline
-  def apply(S3DataSource: AutoMLS3DataSource): AutoMLDataSource = {
+  inline def apply(S3DataSource: AutoMLS3DataSource): AutoMLDataSource = {
     val __obj = js.Dynamic.literal(S3DataSource = S3DataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLDataSource]
   }
   
-  @scala.inline
-  implicit class AutoMLDataSourceMutableBuilder[Self <: AutoMLDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLDataSource](x: Self) {
     
-    @scala.inline
-    def setS3DataSource(value: AutoMLS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
+    inline def setS3DataSource(value: AutoMLS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
   }
 }

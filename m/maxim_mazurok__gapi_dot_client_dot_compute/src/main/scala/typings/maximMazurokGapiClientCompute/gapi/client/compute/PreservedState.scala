@@ -23,33 +23,27 @@ trait PreservedState extends StObject {
 }
 object PreservedState {
   
-  @scala.inline
-  def apply(): PreservedState = {
+  inline def apply(): PreservedState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreservedState]
   }
   
-  @scala.inline
-  implicit class PreservedStateMutableBuilder[Self <: PreservedState] (val x: Self) extends AnyVal {
+  extension [Self <: PreservedState](x: Self) {
     
-    @scala.inline
-    def setDisks(
+    inline def setDisks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.PreservedStatePreservedDisk}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[js.Any]
     ): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

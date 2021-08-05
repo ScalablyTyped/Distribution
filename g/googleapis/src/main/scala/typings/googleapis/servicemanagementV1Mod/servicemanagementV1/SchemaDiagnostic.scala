@@ -26,31 +26,23 @@ trait SchemaDiagnostic extends StObject {
 }
 object SchemaDiagnostic {
   
-  @scala.inline
-  def apply(): SchemaDiagnostic = {
+  inline def apply(): SchemaDiagnostic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiagnostic]
   }
   
-  @scala.inline
-  implicit class SchemaDiagnosticMutableBuilder[Self <: SchemaDiagnostic] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiagnostic](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

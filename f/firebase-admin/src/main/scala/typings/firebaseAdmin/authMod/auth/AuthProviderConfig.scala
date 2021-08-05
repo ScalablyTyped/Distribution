@@ -30,25 +30,19 @@ trait AuthProviderConfig extends StObject {
 }
 object AuthProviderConfig {
   
-  @scala.inline
-  def apply(enabled: Boolean, providerId: String): AuthProviderConfig = {
+  inline def apply(enabled: Boolean, providerId: String): AuthProviderConfig = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthProviderConfig]
   }
   
-  @scala.inline
-  implicit class AuthProviderConfigMutableBuilder[Self <: AuthProviderConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AuthProviderConfig](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
   }
 }

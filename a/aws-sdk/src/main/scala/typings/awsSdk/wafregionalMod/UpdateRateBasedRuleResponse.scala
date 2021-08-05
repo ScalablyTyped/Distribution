@@ -13,19 +13,15 @@ trait UpdateRateBasedRuleResponse extends StObject {
 }
 object UpdateRateBasedRuleResponse {
   
-  @scala.inline
-  def apply(): UpdateRateBasedRuleResponse = {
+  inline def apply(): UpdateRateBasedRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRateBasedRuleResponse]
   }
   
-  @scala.inline
-  implicit class UpdateRateBasedRuleResponseMutableBuilder[Self <: UpdateRateBasedRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRateBasedRuleResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

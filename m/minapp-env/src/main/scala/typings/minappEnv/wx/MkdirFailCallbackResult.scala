@@ -16,16 +16,13 @@ trait MkdirFailCallbackResult extends StObject {
 }
 object MkdirFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): MkdirFailCallbackResult = {
+  inline def apply(errMsg: String): MkdirFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[MkdirFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class MkdirFailCallbackResultMutableBuilder[Self <: MkdirFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: MkdirFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

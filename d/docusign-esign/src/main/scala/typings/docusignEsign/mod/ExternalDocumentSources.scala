@@ -68,83 +68,61 @@ trait ExternalDocumentSources extends StObject {
 }
 object ExternalDocumentSources {
   
-  @scala.inline
-  def apply(): ExternalDocumentSources = {
+  inline def apply(): ExternalDocumentSources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalDocumentSources]
   }
   
-  @scala.inline
-  implicit class ExternalDocumentSourcesMutableBuilder[Self <: ExternalDocumentSources] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalDocumentSources](x: Self) {
     
-    @scala.inline
-    def setBoxnetEnabled(value: String): Self = StObject.set(x, "boxnetEnabled", value.asInstanceOf[js.Any])
+    inline def setBoxnetEnabled(value: String): Self = StObject.set(x, "boxnetEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxnetEnabledUndefined: Self = StObject.set(x, "boxnetEnabled", js.undefined)
+    inline def setBoxnetEnabledUndefined: Self = StObject.set(x, "boxnetEnabled", js.undefined)
     
-    @scala.inline
-    def setBoxnetMetadata(
+    inline def setBoxnetMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "boxnetMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxnetMetadataUndefined: Self = StObject.set(x, "boxnetMetadata", js.undefined)
+    inline def setBoxnetMetadataUndefined: Self = StObject.set(x, "boxnetMetadata", js.undefined)
     
-    @scala.inline
-    def setDropboxEnabled(value: String): Self = StObject.set(x, "dropboxEnabled", value.asInstanceOf[js.Any])
+    inline def setDropboxEnabled(value: String): Self = StObject.set(x, "dropboxEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropboxEnabledUndefined: Self = StObject.set(x, "dropboxEnabled", js.undefined)
+    inline def setDropboxEnabledUndefined: Self = StObject.set(x, "dropboxEnabled", js.undefined)
     
-    @scala.inline
-    def setDropboxMetadata(
+    inline def setDropboxMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "dropboxMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropboxMetadataUndefined: Self = StObject.set(x, "dropboxMetadata", js.undefined)
+    inline def setDropboxMetadataUndefined: Self = StObject.set(x, "dropboxMetadata", js.undefined)
     
-    @scala.inline
-    def setGoogleDriveEnabled(value: String): Self = StObject.set(x, "googleDriveEnabled", value.asInstanceOf[js.Any])
+    inline def setGoogleDriveEnabled(value: String): Self = StObject.set(x, "googleDriveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleDriveEnabledUndefined: Self = StObject.set(x, "googleDriveEnabled", js.undefined)
+    inline def setGoogleDriveEnabledUndefined: Self = StObject.set(x, "googleDriveEnabled", js.undefined)
     
-    @scala.inline
-    def setGoogleDriveMetadata(
+    inline def setGoogleDriveMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "googleDriveMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleDriveMetadataUndefined: Self = StObject.set(x, "googleDriveMetadata", js.undefined)
+    inline def setGoogleDriveMetadataUndefined: Self = StObject.set(x, "googleDriveMetadata", js.undefined)
     
-    @scala.inline
-    def setOneDriveEnabled(value: String): Self = StObject.set(x, "oneDriveEnabled", value.asInstanceOf[js.Any])
+    inline def setOneDriveEnabled(value: String): Self = StObject.set(x, "oneDriveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneDriveEnabledUndefined: Self = StObject.set(x, "oneDriveEnabled", js.undefined)
+    inline def setOneDriveEnabledUndefined: Self = StObject.set(x, "oneDriveEnabled", js.undefined)
     
-    @scala.inline
-    def setOneDriveMetadata(
+    inline def setOneDriveMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "oneDriveMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneDriveMetadataUndefined: Self = StObject.set(x, "oneDriveMetadata", js.undefined)
+    inline def setOneDriveMetadataUndefined: Self = StObject.set(x, "oneDriveMetadata", js.undefined)
     
-    @scala.inline
-    def setSalesforceEnabled(value: String): Self = StObject.set(x, "salesforceEnabled", value.asInstanceOf[js.Any])
+    inline def setSalesforceEnabled(value: String): Self = StObject.set(x, "salesforceEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalesforceEnabledUndefined: Self = StObject.set(x, "salesforceEnabled", js.undefined)
+    inline def setSalesforceEnabledUndefined: Self = StObject.set(x, "salesforceEnabled", js.undefined)
     
-    @scala.inline
-    def setSalesforceMetadata(
+    inline def setSalesforceMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "salesforceMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalesforceMetadataUndefined: Self = StObject.set(x, "salesforceMetadata", js.undefined)
+    inline def setSalesforceMetadataUndefined: Self = StObject.set(x, "salesforceMetadata", js.undefined)
   }
 }

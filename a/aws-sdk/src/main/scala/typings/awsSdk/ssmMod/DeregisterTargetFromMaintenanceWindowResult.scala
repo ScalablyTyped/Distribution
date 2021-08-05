@@ -18,25 +18,19 @@ trait DeregisterTargetFromMaintenanceWindowResult extends StObject {
 }
 object DeregisterTargetFromMaintenanceWindowResult {
   
-  @scala.inline
-  def apply(): DeregisterTargetFromMaintenanceWindowResult = {
+  inline def apply(): DeregisterTargetFromMaintenanceWindowResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterTargetFromMaintenanceWindowResult]
   }
   
-  @scala.inline
-  implicit class DeregisterTargetFromMaintenanceWindowResultMutableBuilder[Self <: DeregisterTargetFromMaintenanceWindowResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterTargetFromMaintenanceWindowResult](x: Self) {
     
-    @scala.inline
-    def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
+    inline def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
     
-    @scala.inline
-    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
+    inline def setWindowTargetId(value: MaintenanceWindowTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTargetIdUndefined: Self = StObject.set(x, "WindowTargetId", js.undefined)
+    inline def setWindowTargetIdUndefined: Self = StObject.set(x, "WindowTargetId", js.undefined)
   }
 }

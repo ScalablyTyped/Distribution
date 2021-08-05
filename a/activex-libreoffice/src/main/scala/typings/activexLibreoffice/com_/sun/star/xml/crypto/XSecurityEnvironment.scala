@@ -60,8 +60,7 @@ trait XSecurityEnvironment
 }
 object XSecurityEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PersonalCertificates: SafeArray[XCertificate],
     SecurityEnvironmentInformation: String,
     acquire: () => Unit,
@@ -80,37 +79,26 @@ object XSecurityEnvironment {
     __obj.asInstanceOf[XSecurityEnvironment]
   }
   
-  @scala.inline
-  implicit class XSecurityEnvironmentMutableBuilder[Self <: XSecurityEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: XSecurityEnvironment](x: Self) {
     
-    @scala.inline
-    def setBuildCertificatePath(value: XCertificate => SafeArray[XCertificate]): Self = StObject.set(x, "buildCertificatePath", js.Any.fromFunction1(value))
+    inline def setBuildCertificatePath(value: XCertificate => SafeArray[XCertificate]): Self = StObject.set(x, "buildCertificatePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCertificateFromAscii(value: String => XCertificate): Self = StObject.set(x, "createCertificateFromAscii", js.Any.fromFunction1(value))
+    inline def setCreateCertificateFromAscii(value: String => XCertificate): Self = StObject.set(x, "createCertificateFromAscii", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCertificateFromRaw(value: SeqEquiv[Double] => XCertificate): Self = StObject.set(x, "createCertificateFromRaw", js.Any.fromFunction1(value))
+    inline def setCreateCertificateFromRaw(value: SeqEquiv[Double] => XCertificate): Self = StObject.set(x, "createCertificateFromRaw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCertificate(value: (String, SeqEquiv[Double]) => XCertificate): Self = StObject.set(x, "getCertificate", js.Any.fromFunction2(value))
+    inline def setGetCertificate(value: (String, SeqEquiv[Double]) => XCertificate): Self = StObject.set(x, "getCertificate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCertificateCharacters(value: XCertificate => Double): Self = StObject.set(x, "getCertificateCharacters", js.Any.fromFunction1(value))
+    inline def setGetCertificateCharacters(value: XCertificate => Double): Self = StObject.set(x, "getCertificateCharacters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPersonalCertificates(value: () => SafeArray[XCertificate]): Self = StObject.set(x, "getPersonalCertificates", js.Any.fromFunction0(value))
+    inline def setGetPersonalCertificates(value: () => SafeArray[XCertificate]): Self = StObject.set(x, "getPersonalCertificates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSecurityEnvironmentInformation(value: () => String): Self = StObject.set(x, "getSecurityEnvironmentInformation", js.Any.fromFunction0(value))
+    inline def setGetSecurityEnvironmentInformation(value: () => String): Self = StObject.set(x, "getSecurityEnvironmentInformation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPersonalCertificates(value: SafeArray[XCertificate]): Self = StObject.set(x, "PersonalCertificates", value.asInstanceOf[js.Any])
+    inline def setPersonalCertificates(value: SafeArray[XCertificate]): Self = StObject.set(x, "PersonalCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityEnvironmentInformation(value: String): Self = StObject.set(x, "SecurityEnvironmentInformation", value.asInstanceOf[js.Any])
+    inline def setSecurityEnvironmentInformation(value: String): Self = StObject.set(x, "SecurityEnvironmentInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyCertificate(value: (XCertificate, SeqEquiv[XCertificate]) => Double): Self = StObject.set(x, "verifyCertificate", js.Any.fromFunction2(value))
+    inline def setVerifyCertificate(value: (XCertificate, SeqEquiv[XCertificate]) => Double): Self = StObject.set(x, "verifyCertificate", js.Any.fromFunction2(value))
   }
 }

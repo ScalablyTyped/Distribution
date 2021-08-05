@@ -18,28 +18,21 @@ trait Shiftdown extends StObject {
 }
 object Shiftdown {
   
-  @scala.inline
-  def apply(code: String, shift_down: Double, shift_right: Double, shift_up: Double, width: Double): Shiftdown = {
+  inline def apply(code: String, shift_down: Double, shift_right: Double, shift_up: Double, width: Double): Shiftdown = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], shift_down = shift_down.asInstanceOf[js.Any], shift_right = shift_right.asInstanceOf[js.Any], shift_up = shift_up.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shiftdown]
   }
   
-  @scala.inline
-  implicit class ShiftdownMutableBuilder[Self <: Shiftdown] (val x: Self) extends AnyVal {
+  extension [Self <: Shiftdown](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_down(value: Double): Self = StObject.set(x, "shift_down", value.asInstanceOf[js.Any])
+    inline def setShift_down(value: Double): Self = StObject.set(x, "shift_down", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
+    inline def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_up(value: Double): Self = StObject.set(x, "shift_up", value.asInstanceOf[js.Any])
+    inline def setShift_up(value: Double): Self = StObject.set(x, "shift_up", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

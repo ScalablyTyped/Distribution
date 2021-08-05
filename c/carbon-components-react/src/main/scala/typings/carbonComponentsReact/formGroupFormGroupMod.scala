@@ -30,38 +30,28 @@ object formGroupFormGroupMod extends Shortcut {
   }
   object FormGroupProps {
     
-    @scala.inline
-    def apply(): FormGroupProps = {
+    inline def apply(): FormGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormGroupProps]
     }
     
-    @scala.inline
-    implicit class FormGroupPropsMutableBuilder[Self <: FormGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormGroupProps](x: Self) {
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setLegendText(value: NonNullable[ReactNode]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
+      inline def setLegendText(value: NonNullable[ReactNode]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendTextUndefined: Self = StObject.set(x, "legendText", js.undefined)
+      inline def setLegendTextUndefined: Self = StObject.set(x, "legendText", js.undefined)
       
-      @scala.inline
-      def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageText(value: ReactNode): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+      inline def setMessageText(value: ReactNode): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
+      inline def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   

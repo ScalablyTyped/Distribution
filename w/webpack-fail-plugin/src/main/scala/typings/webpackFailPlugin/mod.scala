@@ -10,8 +10,7 @@ object mod {
   /**
     * Webpack plugin that will make the process return status code 1 when it finishes with errors in single-run mode.
     */
-  @scala.inline
-  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
   
   @JSImport("webpack-fail-plugin", JSImport.Namespace)
   @js.native

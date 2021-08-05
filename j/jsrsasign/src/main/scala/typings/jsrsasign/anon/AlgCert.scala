@@ -12,19 +12,15 @@ trait AlgCert extends StObject {
 }
 object AlgCert {
   
-  @scala.inline
-  def apply(alg: String, cert: String): AlgCert = {
+  inline def apply(alg: String, cert: String): AlgCert = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgCert]
   }
   
-  @scala.inline
-  implicit class AlgCertMutableBuilder[Self <: AlgCert] (val x: Self) extends AnyVal {
+  extension [Self <: AlgCert](x: Self) {
     
-    @scala.inline
-    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
   }
 }

@@ -8,16 +8,13 @@ object seenStrings {
   
   @js.native
   sealed trait ambient extends StObject
-  @scala.inline
-  def ambient: ambient = "ambient".asInstanceOf[ambient]
+  inline def ambient: ambient = "ambient".asInstanceOf[ambient]
   
   @js.native
   sealed trait directional extends StObject
-  @scala.inline
-  def directional: directional = "directional".asInstanceOf[directional]
+  inline def directional: directional = "directional".asInstanceOf[directional]
   
   @js.native
   sealed trait point extends StObject
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
+  inline def point: point = "point".asInstanceOf[point]
 }

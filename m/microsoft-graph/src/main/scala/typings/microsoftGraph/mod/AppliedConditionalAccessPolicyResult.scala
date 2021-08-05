@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppliedConditionalAccessPolicyResult extends StObject
 object AppliedConditionalAccessPolicyResult {
   
-  @scala.inline
-  def failure: typings.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.failure]
+  inline def failure: typings.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.failure]
   
-  @scala.inline
-  def notApplied: typings.microsoftGraph.microsoftGraphStrings.notApplied = "notApplied".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notApplied]
+  inline def notApplied: typings.microsoftGraph.microsoftGraphStrings.notApplied = "notApplied".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notApplied]
   
-  @scala.inline
-  def notEnabled: typings.microsoftGraph.microsoftGraphStrings.notEnabled = "notEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notEnabled]
+  inline def notEnabled: typings.microsoftGraph.microsoftGraphStrings.notEnabled = "notEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notEnabled]
   
-  @scala.inline
-  def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
+  inline def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

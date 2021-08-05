@@ -20,8 +20,7 @@ trait AppointmentResizingEventArgs
 }
 object AppointmentResizingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allow: Boolean,
     appointmentId: String,
     mouseEvent: js.Any,
@@ -33,22 +32,16 @@ object AppointmentResizingEventArgs {
     __obj.asInstanceOf[AppointmentResizingEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentResizingEventArgsMutableBuilder[Self <: AppointmentResizingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentResizingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+    inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
+    inline def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
+    inline def setOldInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ object Rfcomm {
       * @return The RfcommDeviceService object that represents the RFCOMM service instance.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService]]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string for identifying instances of an RFCOMM service. This string is passed to the CreateWatcher method.
@@ -35,8 +34,7 @@ object Rfcomm {
       * @return An AQS string for identifying RFCOMM service instances.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(serviceId.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(serviceId.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Represents an RFCOMM service ID. */
@@ -76,8 +74,7 @@ object Rfcomm {
       * @return The RfcommServiceId object.
       */
     /* static member */
-    @scala.inline
-    def fromShortId(shortId: Double): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromShortId")(shortId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId]
+    inline def fromShortId(shortId: Double): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromShortId")(shortId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId]
     
     /**
       * Creates a RfcommServiceId object from a 128-bit service id.
@@ -85,56 +82,49 @@ object Rfcomm {
       * @return The RfcommServiceId object.
       */
     /* static member */
-    @scala.inline
-    def fromUuid(uuid: String): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUuid")(uuid.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId]
+    inline def fromUuid(uuid: String): typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUuid")(uuid.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId]
     
     /** Creates a RfcommServiceId object corresponding to the service id for the standardized Generic File Transfer service (with short id 0x1202). */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.genericFileTransfer")
     @js.native
     def genericFileTransfer: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
-    @scala.inline
-    def genericFileTransfer_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("genericFileTransfer")(x.asInstanceOf[js.Any])
+    inline def genericFileTransfer_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("genericFileTransfer")(x.asInstanceOf[js.Any])
     
     /** Creates a RfcommServiceId object corresponding to the service id for the standardized OBEX File Transfer service (with short id 0x1106). */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.obexFileTransfer")
     @js.native
     def obexFileTransfer: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
-    @scala.inline
-    def obexFileTransfer_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("obexFileTransfer")(x.asInstanceOf[js.Any])
+    inline def obexFileTransfer_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("obexFileTransfer")(x.asInstanceOf[js.Any])
     
     /** Creates a RfcommServiceId object corresponding to the service id for the standardized OBEX Object Push service (with short id 0x1105). */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.obexObjectPush")
     @js.native
     def obexObjectPush: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
-    @scala.inline
-    def obexObjectPush_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("obexObjectPush")(x.asInstanceOf[js.Any])
+    inline def obexObjectPush_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("obexObjectPush")(x.asInstanceOf[js.Any])
     
     /** Creates a RfcommServiceId object corresponding to the service id for the standardized Phone Book Access (PCE) service (with short id 0x112E). */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.phoneBookAccessPce")
     @js.native
     def phoneBookAccessPce: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
-    @scala.inline
-    def phoneBookAccessPce_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneBookAccessPce")(x.asInstanceOf[js.Any])
+    inline def phoneBookAccessPce_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneBookAccessPce")(x.asInstanceOf[js.Any])
     
     /** Creates a RfcommServiceId object corresponding to the service id for the standardized Phone Book Access (PSE) service (with short id 0x112F). */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.phoneBookAccessPse")
     @js.native
     def phoneBookAccessPse: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
-    @scala.inline
-    def phoneBookAccessPse_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneBookAccessPse")(x.asInstanceOf[js.Any])
+    inline def phoneBookAccessPse_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneBookAccessPse")(x.asInstanceOf[js.Any])
     
     /** Creates a RfcommServiceId object corresponding to the service id for the standardized Serial Port service (with short id 0x1101). */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId.serialPort")
     @js.native
     def serialPort: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId = js.native
-    @scala.inline
-    def serialPort_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialPort")(x.asInstanceOf[js.Any])
+    inline def serialPort_=(x: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialPort")(x.asInstanceOf[js.Any])
   }
   
   /** Represents an instance of a local RFCOMM service. */
@@ -155,7 +145,6 @@ object Rfcomm {
       * @return The RfcommServiceProvider object that represents the local RFCOMM service instance.
       */
     /* static member */
-    @scala.inline
-    def createAsync(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(serviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider]]
+    inline def createAsync(serviceId: typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(serviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider]]
   }
 }

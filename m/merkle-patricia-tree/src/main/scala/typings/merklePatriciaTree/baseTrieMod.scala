@@ -72,7 +72,7 @@ object baseTrieMod {
       */
     def _putNode(node: TrieNode): js.Promise[Unit] = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
     /**
       * Saves a stack.
@@ -155,7 +155,7 @@ object baseTrieMod {
       */
     def get(key: Buffer): js.Promise[Buffer | Null] = js.native
     
-    var lock: default = js.native
+    /* protected */ var lock: default = js.native
     
     /**
       * Stores a given `value` at the given `key`.
@@ -182,18 +182,15 @@ object baseTrieMod {
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @scala.inline
-    def createProof(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
+    inline def createProof(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Saves the nodes from a proof into the trie. If no trie is provided a new one wil be instantiated.
       * @param {Proof} proof
       * @param {Trie} trie
       */
-    @scala.inline
-    def fromProof(proof: Proof): js.Promise[Trie] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Trie]]
-    @scala.inline
-    def fromProof(proof: Proof, trie: Trie): js.Promise[Trie] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any], trie.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Trie]]
+    inline def fromProof(proof: Proof): js.Promise[Trie] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Trie]]
+    inline def fromProof(proof: Proof, trie: Trie): js.Promise[Trie] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any], trie.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Trie]]
     
     /**
       * prove has been renamed to [[Trie.createProof]].
@@ -201,8 +198,7 @@ object baseTrieMod {
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @scala.inline
-    def prove(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
+    inline def prove(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Verifies a proof.
@@ -212,8 +208,7 @@ object baseTrieMod {
       * @throws If proof is found to be invalid.
       * @returns The value from the key.
       */
-    @scala.inline
-    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyProof")(rootHash.asInstanceOf[js.Any], key.asInstanceOf[js.Any], proof.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | Null]]
+    inline def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyProof")(rootHash.asInstanceOf[js.Any], key.asInstanceOf[js.Any], proof.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | Null]]
   }
   
   type FoundNode = js.Function4[
@@ -234,32 +229,24 @@ object baseTrieMod {
   }
   object Path {
     
-    @scala.inline
-    def apply(remaining: Nibbles, stack: js.Array[TrieNode]): Path = {
+    inline def apply(remaining: Nibbles, stack: js.Array[TrieNode]): Path = {
       val __obj = js.Dynamic.literal(remaining = remaining.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], node = null)
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setNode(value: TrieNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: TrieNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNull: Self = StObject.set(x, "node", null)
+      inline def setNodeNull: Self = StObject.set(x, "node", null)
       
-      @scala.inline
-      def setRemaining(value: Nibbles): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+      inline def setRemaining(value: Nibbles): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemainingVarargs(value: Double*): Self = StObject.set(x, "remaining", js.Array(value :_*))
+      inline def setRemainingVarargs(value: Double*): Self = StObject.set(x, "remaining", js.Array(value :_*))
       
-      @scala.inline
-      def setStack(value: js.Array[TrieNode]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[TrieNode]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: TrieNode*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: TrieNode*): Self = StObject.set(x, "stack", js.Array(value :_*))
     }
   }
   

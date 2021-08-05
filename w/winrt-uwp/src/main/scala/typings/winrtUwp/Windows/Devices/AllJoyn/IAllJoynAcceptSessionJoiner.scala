@@ -12,16 +12,13 @@ trait IAllJoynAcceptSessionJoiner extends StObject {
 }
 object IAllJoynAcceptSessionJoiner {
   
-  @scala.inline
-  def apply(accept: () => Unit): IAllJoynAcceptSessionJoiner = {
+  inline def apply(accept: () => Unit): IAllJoynAcceptSessionJoiner = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept))
     __obj.asInstanceOf[IAllJoynAcceptSessionJoiner]
   }
   
-  @scala.inline
-  implicit class IAllJoynAcceptSessionJoinerMutableBuilder[Self <: IAllJoynAcceptSessionJoiner] (val x: Self) extends AnyVal {
+  extension [Self <: IAllJoynAcceptSessionJoiner](x: Self) {
     
-    @scala.inline
-    def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
+    inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
   }
 }

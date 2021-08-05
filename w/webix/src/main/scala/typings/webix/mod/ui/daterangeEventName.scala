@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait daterangeEventName extends StObject
 object daterangeEventName {
   
-  @scala.inline
-  def onAfterDateSelect: typings.webix.webixStrings.onAfterDateSelect = "onAfterDateSelect".asInstanceOf[typings.webix.webixStrings.onAfterDateSelect]
+  inline def onAfterDateSelect: typings.webix.webixStrings.onAfterDateSelect = "onAfterDateSelect".asInstanceOf[typings.webix.webixStrings.onAfterDateSelect]
   
-  @scala.inline
-  def onBeforeDateSelect: typings.webix.webixStrings.onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[typings.webix.webixStrings.onBeforeDateSelect]
+  inline def onBeforeDateSelect: typings.webix.webixStrings.onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[typings.webix.webixStrings.onBeforeDateSelect]
   
-  @scala.inline
-  def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
+  inline def onBindRequest: typings.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typings.webix.webixStrings.onBindRequest]
   
-  @scala.inline
-  def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
+  inline def onChange: typings.webix.webixStrings.onChange = "onChange".asInstanceOf[typings.webix.webixStrings.onChange]
   
-  @scala.inline
-  def onDateClear: typings.webix.webixStrings.onDateClear = "onDateClear".asInstanceOf[typings.webix.webixStrings.onDateClear]
+  inline def onDateClear: typings.webix.webixStrings.onDateClear = "onDateClear".asInstanceOf[typings.webix.webixStrings.onDateClear]
   
-  @scala.inline
-  def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
+  inline def onDestruct: typings.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typings.webix.webixStrings.onDestruct]
   
-  @scala.inline
-  def onTodaySet: typings.webix.webixStrings.onTodaySet = "onTodaySet".asInstanceOf[typings.webix.webixStrings.onTodaySet]
+  inline def onTodaySet: typings.webix.webixStrings.onTodaySet = "onTodaySet".asInstanceOf[typings.webix.webixStrings.onTodaySet]
   
-  @scala.inline
-  def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
+  inline def onViewShow: typings.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typings.webix.webixStrings.onViewShow]
 }

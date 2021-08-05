@@ -37,37 +37,27 @@ trait SchemaCompanyInfoSource extends StObject {
 }
 object SchemaCompanyInfoSource {
   
-  @scala.inline
-  def apply(): SchemaCompanyInfoSource = {
+  inline def apply(): SchemaCompanyInfoSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompanyInfoSource]
   }
   
-  @scala.inline
-  implicit class SchemaCompanyInfoSourceMutableBuilder[Self <: SchemaCompanyInfoSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompanyInfoSource](x: Self) {
     
-    @scala.inline
-    def setFreebaseMid(value: String): Self = StObject.set(x, "freebaseMid", value.asInstanceOf[js.Any])
+    inline def setFreebaseMid(value: String): Self = StObject.set(x, "freebaseMid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreebaseMidUndefined: Self = StObject.set(x, "freebaseMid", js.undefined)
+    inline def setFreebaseMidUndefined: Self = StObject.set(x, "freebaseMid", js.undefined)
     
-    @scala.inline
-    def setGplusId(value: String): Self = StObject.set(x, "gplusId", value.asInstanceOf[js.Any])
+    inline def setGplusId(value: String): Self = StObject.set(x, "gplusId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGplusIdUndefined: Self = StObject.set(x, "gplusId", js.undefined)
+    inline def setGplusIdUndefined: Self = StObject.set(x, "gplusId", js.undefined)
     
-    @scala.inline
-    def setMapsCid(value: String): Self = StObject.set(x, "mapsCid", value.asInstanceOf[js.Any])
+    inline def setMapsCid(value: String): Self = StObject.set(x, "mapsCid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapsCidUndefined: Self = StObject.set(x, "mapsCid", js.undefined)
+    inline def setMapsCidUndefined: Self = StObject.set(x, "mapsCid", js.undefined)
     
-    @scala.inline
-    def setUnknownTypeId(value: String): Self = StObject.set(x, "unknownTypeId", value.asInstanceOf[js.Any])
+    inline def setUnknownTypeId(value: String): Self = StObject.set(x, "unknownTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownTypeIdUndefined: Self = StObject.set(x, "unknownTypeId", js.undefined)
+    inline def setUnknownTypeIdUndefined: Self = StObject.set(x, "unknownTypeId", js.undefined)
   }
 }

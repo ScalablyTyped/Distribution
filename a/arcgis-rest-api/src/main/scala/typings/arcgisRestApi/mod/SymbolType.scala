@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SymbolType extends StObject
 object SymbolType {
   
-  @scala.inline
-  def esriPFS: typings.arcgisRestApi.arcgisRestApiStrings.esriPFS = "esriPFS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriPFS]
+  inline def esriPFS: typings.arcgisRestApi.arcgisRestApiStrings.esriPFS = "esriPFS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriPFS]
   
-  @scala.inline
-  def esriPMS: typings.arcgisRestApi.arcgisRestApiStrings.esriPMS = "esriPMS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriPMS]
+  inline def esriPMS: typings.arcgisRestApi.arcgisRestApiStrings.esriPMS = "esriPMS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriPMS]
   
-  @scala.inline
-  def esriSFS: typings.arcgisRestApi.arcgisRestApiStrings.esriSFS = "esriSFS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFS]
+  inline def esriSFS: typings.arcgisRestApi.arcgisRestApiStrings.esriSFS = "esriSFS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSFS]
   
-  @scala.inline
-  def esriSLS: typings.arcgisRestApi.arcgisRestApiStrings.esriSLS = "esriSLS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLS]
+  inline def esriSLS: typings.arcgisRestApi.arcgisRestApiStrings.esriSLS = "esriSLS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSLS]
   
-  @scala.inline
-  def esriSMS: typings.arcgisRestApi.arcgisRestApiStrings.esriSMS = "esriSMS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMS]
+  inline def esriSMS: typings.arcgisRestApi.arcgisRestApiStrings.esriSMS = "esriSMS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMS]
   
-  @scala.inline
-  def esriTS: typings.arcgisRestApi.arcgisRestApiStrings.esriTS = "esriTS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriTS]
+  inline def esriTS: typings.arcgisRestApi.arcgisRestApiStrings.esriTS = "esriTS".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriTS]
 }

@@ -13,19 +13,15 @@ trait SchemaDriveMimeTypeRestrict extends StObject {
 }
 object SchemaDriveMimeTypeRestrict {
   
-  @scala.inline
-  def apply(): SchemaDriveMimeTypeRestrict = {
+  inline def apply(): SchemaDriveMimeTypeRestrict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDriveMimeTypeRestrict]
   }
   
-  @scala.inline
-  implicit class SchemaDriveMimeTypeRestrictMutableBuilder[Self <: SchemaDriveMimeTypeRestrict] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDriveMimeTypeRestrict](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -30,46 +30,33 @@ trait OptionalClaim extends StObject {
 }
 object OptionalClaim {
   
-  @scala.inline
-  def apply(): OptionalClaim = {
+  inline def apply(): OptionalClaim = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionalClaim]
   }
   
-  @scala.inline
-  implicit class OptionalClaimMutableBuilder[Self <: OptionalClaim] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalClaim](x: Self) {
     
-    @scala.inline
-    def setAdditionalProperties(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperties(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalPropertiesNull: Self = StObject.set(x, "additionalProperties", null)
+    inline def setAdditionalPropertiesNull: Self = StObject.set(x, "additionalProperties", null)
     
-    @scala.inline
-    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+    inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
-    @scala.inline
-    def setAdditionalPropertiesVarargs(value: String*): Self = StObject.set(x, "additionalProperties", js.Array(value :_*))
+    inline def setAdditionalPropertiesVarargs(value: String*): Self = StObject.set(x, "additionalProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
+    inline def setEssential(value: Boolean): Self = StObject.set(x, "essential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEssentialUndefined: Self = StObject.set(x, "essential", js.undefined)
+    inline def setEssentialUndefined: Self = StObject.set(x, "essential", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSource(value: NullableOption[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NullableOption[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

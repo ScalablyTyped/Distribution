@@ -14,20 +14,16 @@ object anon {
   }
   object Align {
     
-    @scala.inline
-    def apply(align: String, frozen: Boolean): Align = {
+    inline def apply(align: String, frozen: Boolean): Align = {
       val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], frozen = frozen.asInstanceOf[js.Any])
       __obj.asInstanceOf[Align]
     }
     
-    @scala.inline
-    implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+    extension [Self <: Align](x: Self) {
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
+      inline def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object AlignString {
     
-    @scala.inline
-    def apply(align: String): AlignString = {
+    inline def apply(align: String): AlignString = {
       val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlignString]
     }
     
-    @scala.inline
-    implicit class AlignStringMutableBuilder[Self <: AlignString] (val x: Self) extends AnyVal {
+    extension [Self <: AlignString](x: Self) {
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,26 +54,20 @@ object anon {
   }
   object Buttons {
     
-    @scala.inline
-    def apply(buttons: js.Array[js.Any], defaultCancel: String, defaultOk: String): Buttons = {
+    inline def apply(buttons: js.Array[js.Any], defaultCancel: String, defaultOk: String): Buttons = {
       val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], defaultCancel = defaultCancel.asInstanceOf[js.Any], defaultOk = defaultOk.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buttons]
     }
     
-    @scala.inline
-    implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
+    extension [Self <: Buttons](x: Self) {
       
-      @scala.inline
-      def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultCancel(value: String): Self = StObject.set(x, "defaultCancel", value.asInstanceOf[js.Any])
+      inline def setDefaultCancel(value: String): Self = StObject.set(x, "defaultCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOk(value: String): Self = StObject.set(x, "defaultOk", value.asInstanceOf[js.Any])
+      inline def setDefaultOk(value: String): Self = StObject.set(x, "defaultOk", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,8 +95,7 @@ object anon {
   }
   object Colspan {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       colspan: Double,
       defaultFilterOperator: String,
       editable: Boolean,
@@ -125,41 +111,29 @@ object anon {
       __obj.asInstanceOf[Colspan]
     }
     
-    @scala.inline
-    implicit class ColspanMutableBuilder[Self <: Colspan] (val x: Self) extends AnyVal {
+    extension [Self <: Colspan](x: Self) {
       
-      @scala.inline
-      def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
+      inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFilterOperator(value: String): Self = StObject.set(x, "defaultFilterOperator", value.asInstanceOf[js.Any])
+      inline def setDefaultFilterOperator(value: String): Self = StObject.set(x, "defaultFilterOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpander(value: Boolean): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
+      inline def setExpander(value: Boolean): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterOperators(value: js.Array[js.Any]): Self = StObject.set(x, "filterOperators", value.asInstanceOf[js.Any])
+      inline def setFilterOperators(value: js.Array[js.Any]): Self = StObject.set(x, "filterOperators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterOperatorsVarargs(value: js.Any*): Self = StObject.set(x, "filterOperators", js.Array(value :_*))
+      inline def setFilterOperatorsVarargs(value: js.Any*): Self = StObject.set(x, "filterOperators", js.Array(value :_*))
       
-      @scala.inline
-      def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+      inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
+      inline def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowspan(value: Double): Self = StObject.set(x, "rowspan", value.asInstanceOf[js.Any])
+      inline def setRowspan(value: Double): Self = StObject.set(x, "rowspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,17 +143,14 @@ object anon {
   }
   object Disabled {
     
-    @scala.inline
-    def apply(disabled: Boolean): Disabled = {
+    inline def apply(disabled: Boolean): Disabled = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disabled]
     }
     
-    @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+    extension [Self <: Disabled](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,26 +166,20 @@ object anon {
   }
   object Invalid {
     
-    @scala.inline
-    def apply(invalid: Boolean, validateOnBlur: Boolean, validateOnChange: Boolean, validateOnCreate: Boolean): Invalid = {
+    inline def apply(invalid: Boolean, validateOnBlur: Boolean, validateOnChange: Boolean, validateOnCreate: Boolean): Invalid = {
       val __obj = js.Dynamic.literal(invalid = invalid.asInstanceOf[js.Any], validateOnBlur = validateOnBlur.asInstanceOf[js.Any], validateOnChange = validateOnChange.asInstanceOf[js.Any], validateOnCreate = validateOnCreate.asInstanceOf[js.Any])
       __obj.asInstanceOf[Invalid]
     }
     
-    @scala.inline
-    implicit class InvalidMutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
+    extension [Self <: Invalid](x: Self) {
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
+      inline def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
+      inline def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnCreate(value: Boolean): Self = StObject.set(x, "validateOnCreate", value.asInstanceOf[js.Any])
+      inline def setValidateOnCreate(value: Boolean): Self = StObject.set(x, "validateOnCreate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,20 +191,16 @@ object anon {
   }
   object IsMatch {
     
-    @scala.inline
-    def apply(isMatch: js.Any, text: String): IsMatch = {
+    inline def apply(isMatch: js.Any, text: String): IsMatch = {
       val __obj = js.Dynamic.literal(isMatch = isMatch.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsMatch]
     }
     
-    @scala.inline
-    implicit class IsMatchMutableBuilder[Self <: IsMatch] (val x: Self) extends AnyVal {
+    extension [Self <: IsMatch](x: Self) {
       
-      @scala.inline
-      def setIsMatch(value: js.Any): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+      inline def setIsMatch(value: js.Any): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,17 +210,14 @@ object anon {
   }
   object SelectionMode {
     
-    @scala.inline
-    def apply(selectionMode: String): SelectionMode = {
+    inline def apply(selectionMode: String): SelectionMode = {
       val __obj = js.Dynamic.literal(selectionMode = selectionMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionMode]
     }
     
-    @scala.inline
-    implicit class SelectionModeMutableBuilder[Self <: SelectionMode] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionMode](x: Self) {
       
-      @scala.inline
-      def setSelectionMode(value: String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,20 +229,16 @@ object anon {
   }
   object ShowValue {
     
-    @scala.inline
-    def apply(showValue: Boolean, value: Double): ShowValue = {
+    inline def apply(showValue: Boolean, value: Double): ShowValue = {
       val __obj = js.Dynamic.literal(showValue = showValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShowValue]
     }
     
-    @scala.inline
-    implicit class ShowValueMutableBuilder[Self <: ShowValue] (val x: Self) extends AnyVal {
+    extension [Self <: ShowValue](x: Self) {
       
-      @scala.inline
-      def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
+      inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

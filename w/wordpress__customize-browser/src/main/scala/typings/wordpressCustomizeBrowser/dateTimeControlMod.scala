@@ -53,32 +53,24 @@ object dateTimeControlMod {
   }
   object DateTime {
     
-    @scala.inline
-    def apply(day: String, hour: String, minute: String, month: String, second: String, year: String): DateTime = {
+    inline def apply(day: String, hour: String, minute: String, month: String, second: String, year: String): DateTime = {
       val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateTime]
     }
     
-    @scala.inline
-    implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
+    extension [Self <: DateTime](x: Self) {
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
 }

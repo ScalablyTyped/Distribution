@@ -14,22 +14,17 @@ trait TransitAgency extends StObject {
 }
 object TransitAgency {
   
-  @scala.inline
-  def apply(name: String, phone: String, url: String): TransitAgency = {
+  inline def apply(name: String, phone: String, url: String): TransitAgency = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitAgency]
   }
   
-  @scala.inline
-  implicit class TransitAgencyMutableBuilder[Self <: TransitAgency] (val x: Self) extends AnyVal {
+  extension [Self <: TransitAgency](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

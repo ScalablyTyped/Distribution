@@ -12,25 +12,19 @@ trait SemanticTokensEdits extends StObject {
 }
 object SemanticTokensEdits {
   
-  @scala.inline
-  def apply(edits: js.Array[SemanticTokensEdit]): SemanticTokensEdits = {
+  inline def apply(edits: js.Array[SemanticTokensEdit]): SemanticTokensEdits = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensEdits]
   }
   
-  @scala.inline
-  implicit class SemanticTokensEditsMutableBuilder[Self <: SemanticTokensEdits] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensEdits](x: Self) {
     
-    @scala.inline
-    def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
+    inline def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditsVarargs(value: SemanticTokensEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: SemanticTokensEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
     
-    @scala.inline
-    def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
+    inline def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultIdUndefined: Self = StObject.set(x, "resultId", js.undefined)
+    inline def setResultIdUndefined: Self = StObject.set(x, "resultId", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait DrivingResult extends StObject {
 }
 object DrivingResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destination: LngLat | Poi,
     info: String,
     origin: LngLat,
@@ -36,31 +35,22 @@ object DrivingResult {
     __obj.asInstanceOf[DrivingResult]
   }
   
-  @scala.inline
-  implicit class DrivingResultMutableBuilder[Self <: DrivingResult] (val x: Self) extends AnyVal {
+  extension [Self <: DrivingResult](x: Self) {
     
-    @scala.inline
-    def setDestination(value: LngLat | Poi): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: LngLat | Poi): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutes(value: js.Array[DriveRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[DriveRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: DriveRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: DriveRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: Poi): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Poi): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxi_cost(value: Double): Self = StObject.set(x, "taxi_cost", value.asInstanceOf[js.Any])
+    inline def setTaxi_cost(value: Double): Self = StObject.set(x, "taxi_cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypoints(value: Poi): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: Poi): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait GenerateIdsParameters extends StObject {
 }
 object GenerateIdsParameters {
   
-  @scala.inline
-  def apply(): GenerateIdsParameters = {
+  inline def apply(): GenerateIdsParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateIdsParameters]
   }
   
-  @scala.inline
-  implicit class GenerateIdsParametersMutableBuilder[Self <: GenerateIdsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateIdsParameters](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
   }
 }

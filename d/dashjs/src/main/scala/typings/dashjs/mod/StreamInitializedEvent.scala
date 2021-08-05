@@ -19,26 +19,20 @@ trait StreamInitializedEvent
 }
 object StreamInitializedEvent {
   
-  @scala.inline
-  def apply(streamInfo: StreamInfo): StreamInitializedEvent = {
+  inline def apply(streamInfo: StreamInfo): StreamInitializedEvent = {
     val __obj = js.Dynamic.literal(streamInfo = streamInfo.asInstanceOf[js.Any], error = null)
     __obj.updateDynamic("type")("streamInitialized")
     __obj.asInstanceOf[StreamInitializedEvent]
   }
   
-  @scala.inline
-  implicit class StreamInitializedEventMutableBuilder[Self <: StreamInitializedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StreamInitializedEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setStreamInfo(value: StreamInfo): Self = StObject.set(x, "streamInfo", value.asInstanceOf[js.Any])
+    inline def setStreamInfo(value: StreamInfo): Self = StObject.set(x, "streamInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: streamInitialized): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: streamInitialized): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

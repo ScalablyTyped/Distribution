@@ -16,11 +16,11 @@ object managerMod {
     
     /* protected */ def getSizeClassName(size: String): String = js.native
     
-    var m_class: js.Any = js.native
+    /* private */ var m_class: js.Any = js.native
     
-    var m_component: js.Any = js.native
+    /* private */ var m_component: js.Any = js.native
     
-    var renderer: Renderer2 = js.native
+    /* protected */ var renderer: Renderer2 = js.native
     
     /* protected */ def setColor(el: Element, color: String): Unit = js.native
     

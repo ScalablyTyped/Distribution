@@ -35,8 +35,7 @@ trait Particle extends StObject {
 }
 object Particle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dur: Double,
     life: Double,
     pic: String,
@@ -54,49 +53,34 @@ object Particle {
     __obj.asInstanceOf[Particle]
   }
   
-  @scala.inline
-  implicit class ParticleMutableBuilder[Self <: Particle] (val x: Self) extends AnyVal {
+  extension [Self <: Particle](x: Self) {
     
-    @scala.inline
-    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
+    inline def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: HTMLElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: HTMLElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+    inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
-    @scala.inline
-    def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
+    inline def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+    inline def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicId(value: Double): Self = StObject.set(x, "picId", value.asInstanceOf[js.Any])
+    inline def setPicId(value: Double): Self = StObject.set(x, "picId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "picPos", value.asInstanceOf[js.Any])
+    inline def setPicPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "picPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String | Double): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | Double): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXd(value: Double): Self = StObject.set(x, "xd", value.asInstanceOf[js.Any])
+    inline def setXd(value: Double): Self = StObject.set(x, "xd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYd(value: Double): Self = StObject.set(x, "yd", value.asInstanceOf[js.Any])
+    inline def setYd(value: Double): Self = StObject.set(x, "yd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

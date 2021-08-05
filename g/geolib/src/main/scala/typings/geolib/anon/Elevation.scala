@@ -14,19 +14,15 @@ trait Elevation
 }
 object Elevation {
   
-  @scala.inline
-  def apply(): Elevation = {
+  inline def apply(): Elevation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Elevation]
   }
   
-  @scala.inline
-  implicit class ElevationMutableBuilder[Self <: Elevation] (val x: Self) extends AnyVal {
+  extension [Self <: Elevation](x: Self) {
     
-    @scala.inline
-    def setElevation(value: GeolibAltitudeInputValue): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setElevation(value: GeolibAltitudeInputValue): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
   }
 }

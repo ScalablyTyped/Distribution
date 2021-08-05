@@ -17,22 +17,17 @@ trait LocationConstraintItem
 }
 object LocationConstraintItem {
   
-  @scala.inline
-  def apply(): LocationConstraintItem = {
+  inline def apply(): LocationConstraintItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationConstraintItem]
   }
   
-  @scala.inline
-  implicit class LocationConstraintItemMutableBuilder[Self <: LocationConstraintItem] (val x: Self) extends AnyVal {
+  extension [Self <: LocationConstraintItem](x: Self) {
     
-    @scala.inline
-    def setResolveAvailability(value: NullableOption[Boolean]): Self = StObject.set(x, "resolveAvailability", value.asInstanceOf[js.Any])
+    inline def setResolveAvailability(value: NullableOption[Boolean]): Self = StObject.set(x, "resolveAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveAvailabilityNull: Self = StObject.set(x, "resolveAvailability", null)
+    inline def setResolveAvailabilityNull: Self = StObject.set(x, "resolveAvailability", null)
     
-    @scala.inline
-    def setResolveAvailabilityUndefined: Self = StObject.set(x, "resolveAvailability", js.undefined)
+    inline def setResolveAvailabilityUndefined: Self = StObject.set(x, "resolveAvailability", js.undefined)
   }
 }

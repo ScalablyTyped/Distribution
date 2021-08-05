@@ -21,17 +21,14 @@ object iconGalleryMod {
   }
   object IconItemProps {
     
-    @scala.inline
-    def apply(name: String): IconItemProps = {
+    inline def apply(name: String): IconItemProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconItemProps]
     }
     
-    @scala.inline
-    implicit class IconItemPropsMutableBuilder[Self <: IconItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconItemProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

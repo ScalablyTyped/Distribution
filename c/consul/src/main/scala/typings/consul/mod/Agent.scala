@@ -244,17 +244,14 @@ object Agent {
     }
     object DeregisterOptions {
       
-      @scala.inline
-      def apply(id: String): DeregisterOptions = {
+      inline def apply(id: String): DeregisterOptions = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[DeregisterOptions]
       }
       
-      @scala.inline
-      implicit class DeregisterOptionsMutableBuilder[Self <: DeregisterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: DeregisterOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
     
@@ -268,23 +265,18 @@ object Agent {
     }
     object FailOptions {
       
-      @scala.inline
-      def apply(id: String): FailOptions = {
+      inline def apply(id: String): FailOptions = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[FailOptions]
       }
       
-      @scala.inline
-      implicit class FailOptionsMutableBuilder[Self <: FailOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FailOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+        inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+        inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
       }
     }
     
@@ -300,23 +292,18 @@ object Agent {
     }
     object PassOptions {
       
-      @scala.inline
-      def apply(id: String): PassOptions = {
+      inline def apply(id: String): PassOptions = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[PassOptions]
       }
       
-      @scala.inline
-      implicit class PassOptionsMutableBuilder[Self <: PassOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PassOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+        inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+        inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
       }
     }
     
@@ -344,65 +331,46 @@ object Agent {
     }
     object RegisterOptions {
       
-      @scala.inline
-      def apply(name: String): RegisterOptions = {
+      inline def apply(name: String): RegisterOptions = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[RegisterOptions]
       }
       
-      @scala.inline
-      implicit class RegisterOptionsMutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RegisterOptions](x: Self) {
         
-        @scala.inline
-        def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+        inline def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+        inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+        inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+        inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+        inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
         
-        @scala.inline
-        def setServiceid(value: String): Self = StObject.set(x, "serviceid", value.asInstanceOf[js.Any])
+        inline def setServiceid(value: String): Self = StObject.set(x, "serviceid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceidUndefined: Self = StObject.set(x, "serviceid", js.undefined)
+        inline def setServiceidUndefined: Self = StObject.set(x, "serviceid", js.undefined)
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
-        @scala.inline
-        def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+        inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+        inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       }
     }
     
@@ -416,23 +384,18 @@ object Agent {
     }
     object WarnOptions {
       
-      @scala.inline
-      def apply(id: String): WarnOptions = {
+      inline def apply(id: String): WarnOptions = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[WarnOptions]
       }
       
-      @scala.inline
-      implicit class WarnOptionsMutableBuilder[Self <: WarnOptions] (val x: Self) extends AnyVal {
+      extension [Self <: WarnOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+        inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+        inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
       }
     }
   }
@@ -452,17 +415,14 @@ object Agent {
   }
   object ForceLeaveOptions {
     
-    @scala.inline
-    def apply(node: String): ForceLeaveOptions = {
+    inline def apply(node: String): ForceLeaveOptions = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForceLeaveOptions]
     }
     
-    @scala.inline
-    implicit class ForceLeaveOptionsMutableBuilder[Self <: ForceLeaveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ForceLeaveOptions](x: Self) {
       
-      @scala.inline
-      def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -474,17 +434,14 @@ object Agent {
   }
   object JoinOptions {
     
-    @scala.inline
-    def apply(address: String): JoinOptions = {
+    inline def apply(address: String): JoinOptions = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
       __obj.asInstanceOf[JoinOptions]
     }
     
-    @scala.inline
-    implicit class JoinOptionsMutableBuilder[Self <: JoinOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JoinOptions](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
   }
   
@@ -498,23 +455,18 @@ object Agent {
   }
   object MaintenanceOptions {
     
-    @scala.inline
-    def apply(enable: Boolean): MaintenanceOptions = {
+    inline def apply(enable: Boolean): MaintenanceOptions = {
       val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaintenanceOptions]
     }
     
-    @scala.inline
-    implicit class MaintenanceOptionsMutableBuilder[Self <: MaintenanceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MaintenanceOptions](x: Self) {
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     }
   }
   
@@ -523,8 +475,7 @@ object Agent {
        with CommonOptions
   object MembersOptions {
     
-    @scala.inline
-    def apply(): MembersOptions = {
+    inline def apply(): MembersOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MembersOptions]
     }
@@ -604,17 +555,14 @@ object Agent {
     }
     object DeregisterOptions {
       
-      @scala.inline
-      def apply(id: String): typings.consul.mod.Agent.Service.DeregisterOptions = {
+      inline def apply(id: String): typings.consul.mod.Agent.Service.DeregisterOptions = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.consul.mod.Agent.Service.DeregisterOptions]
       }
       
-      @scala.inline
-      implicit class DeregisterOptionsMutableBuilder[Self <: typings.consul.mod.Agent.Service.DeregisterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.consul.mod.Agent.Service.DeregisterOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
     
@@ -632,26 +580,20 @@ object Agent {
     }
     object MaintenanceOptions {
       
-      @scala.inline
-      def apply(enable: Boolean, id: String): typings.consul.mod.Agent.Service.MaintenanceOptions = {
+      inline def apply(enable: Boolean, id: String): typings.consul.mod.Agent.Service.MaintenanceOptions = {
         val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.consul.mod.Agent.Service.MaintenanceOptions]
       }
       
-      @scala.inline
-      implicit class MaintenanceOptionsMutableBuilder[Self <: typings.consul.mod.Agent.Service.MaintenanceOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.consul.mod.Agent.Service.MaintenanceOptions](x: Self) {
         
-        @scala.inline
-        def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+        inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       }
     }
     
@@ -671,50 +613,36 @@ object Agent {
     }
     object RegisterCheck {
       
-      @scala.inline
-      def apply(): RegisterCheck = {
+      inline def apply(): RegisterCheck = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RegisterCheck]
       }
       
-      @scala.inline
-      implicit class RegisterCheckMutableBuilder[Self <: RegisterCheck] (val x: Self) extends AnyVal {
+      extension [Self <: RegisterCheck](x: Self) {
         
-        @scala.inline
-        def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+        inline def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+        inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
         
-        @scala.inline
-        def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+        inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+        inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+        inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
-        @scala.inline
-        def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+        inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+        inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       }
     }
     
@@ -738,59 +666,42 @@ object Agent {
     }
     object RegisterOptions {
       
-      @scala.inline
-      def apply(name: String): typings.consul.mod.Agent.Service.RegisterOptions = {
+      inline def apply(name: String): typings.consul.mod.Agent.Service.RegisterOptions = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.consul.mod.Agent.Service.RegisterOptions]
       }
       
-      @scala.inline
-      implicit class RegisterOptionsMutableBuilder[Self <: typings.consul.mod.Agent.Service.RegisterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.consul.mod.Agent.Service.RegisterOptions](x: Self) {
         
-        @scala.inline
-        def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+        inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+        inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
         
-        @scala.inline
-        def setCheck(value: RegisterCheck): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+        inline def setCheck(value: RegisterCheck): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+        inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
         
-        @scala.inline
-        def setChecks(value: js.Array[RegisterCheck]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+        inline def setChecks(value: js.Array[RegisterCheck]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+        inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
         
-        @scala.inline
-        def setChecksVarargs(value: RegisterCheck*): Self = StObject.set(x, "checks", js.Array(value :_*))
+        inline def setChecksVarargs(value: RegisterCheck*): Self = StObject.set(x, "checks", js.Array(value :_*))
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
         
-        @scala.inline
-        def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+        inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+        inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        @scala.inline
-        def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       }
     }
   }

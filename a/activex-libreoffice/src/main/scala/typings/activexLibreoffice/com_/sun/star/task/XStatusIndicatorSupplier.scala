@@ -28,8 +28,7 @@ trait XStatusIndicatorSupplier
 }
 object XStatusIndicatorSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     StatusIndicator: XStatusIndicator,
     acquire: () => Unit,
     getStatusIndicator: () => XStatusIndicator,
@@ -40,13 +39,10 @@ object XStatusIndicatorSupplier {
     __obj.asInstanceOf[XStatusIndicatorSupplier]
   }
   
-  @scala.inline
-  implicit class XStatusIndicatorSupplierMutableBuilder[Self <: XStatusIndicatorSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XStatusIndicatorSupplier](x: Self) {
     
-    @scala.inline
-    def setGetStatusIndicator(value: () => XStatusIndicator): Self = StObject.set(x, "getStatusIndicator", js.Any.fromFunction0(value))
+    inline def setGetStatusIndicator(value: () => XStatusIndicator): Self = StObject.set(x, "getStatusIndicator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatusIndicator(value: XStatusIndicator): Self = StObject.set(x, "StatusIndicator", value.asInstanceOf[js.Any])
+    inline def setStatusIndicator(value: XStatusIndicator): Self = StObject.set(x, "StatusIndicator", value.asInstanceOf[js.Any])
   }
 }

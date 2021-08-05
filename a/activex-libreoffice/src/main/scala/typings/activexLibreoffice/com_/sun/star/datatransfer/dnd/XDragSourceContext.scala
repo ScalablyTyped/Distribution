@@ -57,8 +57,7 @@ trait XDragSourceContext
 }
 object XDragSourceContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentCursor: Double,
     acquire: () => Unit,
     getCurrentCursor: () => Double,
@@ -72,22 +71,16 @@ object XDragSourceContext {
     __obj.asInstanceOf[XDragSourceContext]
   }
   
-  @scala.inline
-  implicit class XDragSourceContextMutableBuilder[Self <: XDragSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: XDragSourceContext](x: Self) {
     
-    @scala.inline
-    def setCurrentCursor(value: Double): Self = StObject.set(x, "CurrentCursor", value.asInstanceOf[js.Any])
+    inline def setCurrentCursor(value: Double): Self = StObject.set(x, "CurrentCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentCursor(value: () => Double): Self = StObject.set(x, "getCurrentCursor", js.Any.fromFunction0(value))
+    inline def setGetCurrentCursor(value: () => Double): Self = StObject.set(x, "getCurrentCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCursor(value: Double => Unit): Self = StObject.set(x, "setCursor", js.Any.fromFunction1(value))
+    inline def setSetCursor(value: Double => Unit): Self = StObject.set(x, "setCursor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImage(value: Double => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction1(value))
+    inline def setSetImage(value: Double => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransferablesFlavorsChanged(value: () => Unit): Self = StObject.set(x, "transferablesFlavorsChanged", js.Any.fromFunction0(value))
+    inline def setTransferablesFlavorsChanged(value: () => Unit): Self = StObject.set(x, "transferablesFlavorsChanged", js.Any.fromFunction0(value))
   }
 }

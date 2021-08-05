@@ -29,55 +29,39 @@ trait LiaCountrySettings extends StObject {
 }
 object LiaCountrySettings {
   
-  @scala.inline
-  def apply(): LiaCountrySettings = {
+  inline def apply(): LiaCountrySettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiaCountrySettings]
   }
   
-  @scala.inline
-  implicit class LiaCountrySettingsMutableBuilder[Self <: LiaCountrySettings] (val x: Self) extends AnyVal {
+  extension [Self <: LiaCountrySettings](x: Self) {
     
-    @scala.inline
-    def setAbout(value: LiaAboutPageSettings): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+    inline def setAbout(value: LiaAboutPageSettings): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
+    inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setHostedLocalStorefrontActive(value: Boolean): Self = StObject.set(x, "hostedLocalStorefrontActive", value.asInstanceOf[js.Any])
+    inline def setHostedLocalStorefrontActive(value: Boolean): Self = StObject.set(x, "hostedLocalStorefrontActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedLocalStorefrontActiveUndefined: Self = StObject.set(x, "hostedLocalStorefrontActive", js.undefined)
+    inline def setHostedLocalStorefrontActiveUndefined: Self = StObject.set(x, "hostedLocalStorefrontActive", js.undefined)
     
-    @scala.inline
-    def setInventory(value: LiaInventorySettings): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+    inline def setInventory(value: LiaInventorySettings): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
+    inline def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
     
-    @scala.inline
-    def setOnDisplayToOrder(value: LiaOnDisplayToOrderSettings): Self = StObject.set(x, "onDisplayToOrder", value.asInstanceOf[js.Any])
+    inline def setOnDisplayToOrder(value: LiaOnDisplayToOrderSettings): Self = StObject.set(x, "onDisplayToOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDisplayToOrderUndefined: Self = StObject.set(x, "onDisplayToOrder", js.undefined)
+    inline def setOnDisplayToOrderUndefined: Self = StObject.set(x, "onDisplayToOrder", js.undefined)
     
-    @scala.inline
-    def setPosDataProvider(value: LiaPosDataProvider): Self = StObject.set(x, "posDataProvider", value.asInstanceOf[js.Any])
+    inline def setPosDataProvider(value: LiaPosDataProvider): Self = StObject.set(x, "posDataProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosDataProviderUndefined: Self = StObject.set(x, "posDataProvider", js.undefined)
+    inline def setPosDataProviderUndefined: Self = StObject.set(x, "posDataProvider", js.undefined)
     
-    @scala.inline
-    def setStorePickupActive(value: Boolean): Self = StObject.set(x, "storePickupActive", value.asInstanceOf[js.Any])
+    inline def setStorePickupActive(value: Boolean): Self = StObject.set(x, "storePickupActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorePickupActiveUndefined: Self = StObject.set(x, "storePickupActive", js.undefined)
+    inline def setStorePickupActiveUndefined: Self = StObject.set(x, "storePickupActive", js.undefined)
   }
 }

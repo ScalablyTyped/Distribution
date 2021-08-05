@@ -14,22 +14,17 @@ trait JustifyContentPadding extends StObject {
 }
 object JustifyContentPadding {
   
-  @scala.inline
-  def apply(alignItems: String, justifyContent: String, padding: Double): JustifyContentPadding = {
+  inline def apply(alignItems: String, justifyContent: String, padding: Double): JustifyContentPadding = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[JustifyContentPadding]
   }
   
-  @scala.inline
-  implicit class JustifyContentPaddingMutableBuilder[Self <: JustifyContentPadding] (val x: Self) extends AnyVal {
+  extension [Self <: JustifyContentPadding](x: Self) {
     
-    @scala.inline
-    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
   }
 }

@@ -33,43 +33,31 @@ trait HostProperties extends StObject {
 }
 object HostProperties {
   
-  @scala.inline
-  def apply(): HostProperties = {
+  inline def apply(): HostProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostProperties]
   }
   
-  @scala.inline
-  implicit class HostPropertiesMutableBuilder[Self <: HostProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HostProperties](x: Self) {
     
-    @scala.inline
-    def setCores(value: Integer): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
+    inline def setCores(value: Integer): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
+    inline def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
     
-    @scala.inline
-    def setInstanceFamily(value: String): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
+    inline def setInstanceFamily(value: String): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
+    inline def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setSockets(value: Integer): Self = StObject.set(x, "Sockets", value.asInstanceOf[js.Any])
+    inline def setSockets(value: Integer): Self = StObject.set(x, "Sockets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketsUndefined: Self = StObject.set(x, "Sockets", js.undefined)
+    inline def setSocketsUndefined: Self = StObject.set(x, "Sockets", js.undefined)
     
-    @scala.inline
-    def setTotalVCpus(value: Integer): Self = StObject.set(x, "TotalVCpus", value.asInstanceOf[js.Any])
+    inline def setTotalVCpus(value: Integer): Self = StObject.set(x, "TotalVCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalVCpusUndefined: Self = StObject.set(x, "TotalVCpus", js.undefined)
+    inline def setTotalVCpusUndefined: Self = StObject.set(x, "TotalVCpus", js.undefined)
   }
 }

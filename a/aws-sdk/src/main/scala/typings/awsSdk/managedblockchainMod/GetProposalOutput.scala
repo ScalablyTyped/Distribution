@@ -13,19 +13,15 @@ trait GetProposalOutput extends StObject {
 }
 object GetProposalOutput {
   
-  @scala.inline
-  def apply(): GetProposalOutput = {
+  inline def apply(): GetProposalOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProposalOutput]
   }
   
-  @scala.inline
-  implicit class GetProposalOutputMutableBuilder[Self <: GetProposalOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetProposalOutput](x: Self) {
     
-    @scala.inline
-    def setProposal(value: Proposal): Self = StObject.set(x, "Proposal", value.asInstanceOf[js.Any])
+    inline def setProposal(value: Proposal): Self = StObject.set(x, "Proposal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalUndefined: Self = StObject.set(x, "Proposal", js.undefined)
+    inline def setProposalUndefined: Self = StObject.set(x, "Proposal", js.undefined)
   }
 }

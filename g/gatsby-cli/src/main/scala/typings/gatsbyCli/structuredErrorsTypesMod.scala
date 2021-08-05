@@ -83,17 +83,14 @@ object structuredErrorsTypesMod {
   }
   object IConstructError {
     
-    @scala.inline
-    def apply(details: Dictkey): IConstructError = {
+    inline def apply(details: Dictkey): IConstructError = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConstructError]
     }
     
-    @scala.inline
-    implicit class IConstructErrorMutableBuilder[Self <: IConstructError] (val x: Self) extends AnyVal {
+    extension [Self <: IConstructError](x: Self) {
       
-      @scala.inline
-      def setDetails(value: Dictkey): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Dictkey): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,20 +102,16 @@ object structuredErrorsTypesMod {
   }
   object ILocationPosition {
     
-    @scala.inline
-    def apply(column: Double, line: Double): ILocationPosition = {
+    inline def apply(column: Double, line: Double): ILocationPosition = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILocationPosition]
     }
     
-    @scala.inline
-    implicit class ILocationPositionMutableBuilder[Self <: ILocationPosition] (val x: Self) extends AnyVal {
+    extension [Self <: ILocationPosition](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,38 +127,28 @@ object structuredErrorsTypesMod {
   }
   object IOptionalGraphQLInfoContext {
     
-    @scala.inline
-    def apply(): IOptionalGraphQLInfoContext = {
+    inline def apply(): IOptionalGraphQLInfoContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptionalGraphQLInfoContext]
     }
     
-    @scala.inline
-    implicit class IOptionalGraphQLInfoContextMutableBuilder[Self <: IOptionalGraphQLInfoContext] (val x: Self) extends AnyVal {
+    extension [Self <: IOptionalGraphQLInfoContext](x: Self) {
       
-      @scala.inline
-      def setCodeFrame(value: String): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
+      inline def setCodeFrame(value: String): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeFrameUndefined: Self = StObject.set(x, "codeFrame", js.undefined)
+      inline def setCodeFrameUndefined: Self = StObject.set(x, "codeFrame", js.undefined)
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+      inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      @scala.inline
-      def setUrlPath(value: String): Self = StObject.set(x, "urlPath", value.asInstanceOf[js.Any])
+      inline def setUrlPath(value: String): Self = StObject.set(x, "urlPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlPathUndefined: Self = StObject.set(x, "urlPath", js.undefined)
+      inline def setUrlPathUndefined: Self = StObject.set(x, "urlPath", js.undefined)
     }
   }
   
@@ -199,8 +182,7 @@ object structuredErrorsTypesMod {
   }
   object IStructuredError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String,
       stack: js.Array[IStructuredStackFrame],
       text: String
@@ -209,74 +191,53 @@ object structuredErrorsTypesMod {
       __obj.asInstanceOf[IStructuredError]
     }
     
-    @scala.inline
-    implicit class IStructuredErrorMutableBuilder[Self <: IStructuredError] (val x: Self) extends AnyVal {
+    extension [Self <: IStructuredError](x: Self) {
       
-      @scala.inline
-      def setCategory(
+      inline def setCategory(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCategory * / any */ String
       ): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDocsUrl(value: String): Self = StObject.set(x, "docsUrl", value.asInstanceOf[js.Any])
+      inline def setDocsUrl(value: String): Self = StObject.set(x, "docsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsUrlUndefined: Self = StObject.set(x, "docsUrl", js.undefined)
+      inline def setDocsUrlUndefined: Self = StObject.set(x, "docsUrl", js.undefined)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+      inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setLevel(
+      inline def setLevel(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String
       ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: End): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: End): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setStack(value: js.Array[IStructuredStackFrame]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[IStructuredStackFrame]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: IStructuredStackFrame*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: IStructuredStackFrame*): Self = StObject.set(x, "stack", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -292,35 +253,26 @@ object structuredErrorsTypesMod {
   }
   object IStructuredStackFrame {
     
-    @scala.inline
-    def apply(fileName: String): IStructuredStackFrame = {
+    inline def apply(fileName: String): IStructuredStackFrame = {
       val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStructuredStackFrame]
     }
     
-    @scala.inline
-    implicit class IStructuredStackFrameMutableBuilder[Self <: IStructuredStackFrame] (val x: Self) extends AnyVal {
+    extension [Self <: IStructuredStackFrame](x: Self) {
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+      inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     }
   }
 }

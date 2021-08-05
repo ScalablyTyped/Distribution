@@ -26,41 +26,29 @@ object mod {
   @js.native
   val easeBackOut: BackEasingFactory = js.native
   
-  @scala.inline
-  def easeBounce(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounce")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeBounce(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounce")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeBounceIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeBounceIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeBounceInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeBounceInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeBounceOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeBounceOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCircle(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircle")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCircle(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircle")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCircleIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCircleIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCircleInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCircleInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCircleOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCircleOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCubic(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubic")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCubic(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubic")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCubicIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCubicIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCubicInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCubicInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeCubicOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeCubicOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("d3-ease", "easeElastic")
   @js.native
@@ -78,20 +66,15 @@ object mod {
   @js.native
   val easeElasticOut: ElasticEasingFactory = js.native
   
-  @scala.inline
-  def easeExp(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExp")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeExp(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExp")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeExpIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeExpIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeExpInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeExpInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeExpOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeExpOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeLinear(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeLinear")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeLinear(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeLinear")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("d3-ease", "easePoly")
   @js.native
@@ -109,29 +92,21 @@ object mod {
   @js.native
   val easePolyOut: PolynomialEasingFactory = js.native
   
-  @scala.inline
-  def easeQuad(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuad")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeQuad(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuad")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeQuadIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeQuadIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeQuadInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeQuadInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeQuadOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeQuadOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeSin(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSin")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeSin(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSin")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeSinIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeSinIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeSinInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeSinInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def easeSinOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeSinOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @js.native
   trait BackEasingFactory extends StObject {

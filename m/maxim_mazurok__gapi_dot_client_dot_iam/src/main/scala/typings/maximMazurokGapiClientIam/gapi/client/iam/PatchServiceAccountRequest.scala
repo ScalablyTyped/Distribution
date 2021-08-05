@@ -12,25 +12,19 @@ trait PatchServiceAccountRequest extends StObject {
 }
 object PatchServiceAccountRequest {
   
-  @scala.inline
-  def apply(): PatchServiceAccountRequest = {
+  inline def apply(): PatchServiceAccountRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchServiceAccountRequest]
   }
   
-  @scala.inline
-  implicit class PatchServiceAccountRequestMutableBuilder[Self <: PatchServiceAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PatchServiceAccountRequest](x: Self) {
     
-    @scala.inline
-    def setServiceAccount(value: ServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: ServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

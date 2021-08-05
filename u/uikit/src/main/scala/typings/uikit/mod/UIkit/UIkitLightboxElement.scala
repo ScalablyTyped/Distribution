@@ -12,19 +12,15 @@ trait UIkitLightboxElement extends StObject {
 }
 object UIkitLightboxElement {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: Double => Unit): UIkitLightboxElement = {
+  inline def apply(hide: () => Unit, show: Double => Unit): UIkitLightboxElement = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction1(show))
     __obj.asInstanceOf[UIkitLightboxElement]
   }
   
-  @scala.inline
-  implicit class UIkitLightboxElementMutableBuilder[Self <: UIkitLightboxElement] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitLightboxElement](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: Double => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: Double => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

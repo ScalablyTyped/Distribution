@@ -18,8 +18,7 @@ trait IAudioEncodingProperties
 }
 object IAudioEncodingProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitrate: Double,
     bitsPerSample: Double,
     channelCount: Double,
@@ -33,19 +32,14 @@ object IAudioEncodingProperties {
     __obj.asInstanceOf[IAudioEncodingProperties]
   }
   
-  @scala.inline
-  implicit class IAudioEncodingPropertiesMutableBuilder[Self <: IAudioEncodingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IAudioEncodingProperties](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitsPerSample(value: Double): Self = StObject.set(x, "bitsPerSample", value.asInstanceOf[js.Any])
+    inline def setBitsPerSample(value: Double): Self = StObject.set(x, "bitsPerSample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
   }
 }

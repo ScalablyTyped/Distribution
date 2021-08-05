@@ -24,25 +24,19 @@ trait TreeHierarchicalDataSourceSettingsTreeDSSorting
 }
 object TreeHierarchicalDataSourceSettingsTreeDSSorting {
   
-  @scala.inline
-  def apply(): TreeHierarchicalDataSourceSettingsTreeDSSorting = {
+  inline def apply(): TreeHierarchicalDataSourceSettingsTreeDSSorting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSSorting]
   }
   
-  @scala.inline
-  implicit class TreeHierarchicalDataSourceSettingsTreeDSSortingMutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDSSorting] (val x: Self) extends AnyVal {
+  extension [Self <: TreeHierarchicalDataSourceSettingsTreeDSSorting](x: Self) {
     
-    @scala.inline
-    def setFromLevel(value: Double): Self = StObject.set(x, "fromLevel", value.asInstanceOf[js.Any])
+    inline def setFromLevel(value: Double): Self = StObject.set(x, "fromLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromLevelUndefined: Self = StObject.set(x, "fromLevel", js.undefined)
+    inline def setFromLevelUndefined: Self = StObject.set(x, "fromLevel", js.undefined)
     
-    @scala.inline
-    def setToLevel(value: Double): Self = StObject.set(x, "toLevel", value.asInstanceOf[js.Any])
+    inline def setToLevel(value: Double): Self = StObject.set(x, "toLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToLevelUndefined: Self = StObject.set(x, "toLevel", js.undefined)
+    inline def setToLevelUndefined: Self = StObject.set(x, "toLevel", js.undefined)
   }
 }

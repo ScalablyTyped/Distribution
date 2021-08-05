@@ -14,22 +14,17 @@ trait GeoMultiPoint
 }
 object GeoMultiPoint {
   
-  @scala.inline
-  def apply(points: js.Array[GeoPoint], toJSON: () => IGeoJSONMultiPoint): GeoMultiPoint = {
+  inline def apply(points: js.Array[GeoPoint], toJSON: () => IGeoJSONMultiPoint): GeoMultiPoint = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[GeoMultiPoint]
   }
   
-  @scala.inline
-  implicit class GeoMultiPointMutableBuilder[Self <: GeoMultiPoint] (val x: Self) extends AnyVal {
+  extension [Self <: GeoMultiPoint](x: Self) {
     
-    @scala.inline
-    def setPoints(value: js.Array[GeoPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[GeoPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: GeoPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: GeoPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setToJSON(value: () => IGeoJSONMultiPoint): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => IGeoJSONMultiPoint): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

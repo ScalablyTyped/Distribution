@@ -23,31 +23,23 @@ trait CatalogImportStatus extends StObject {
 }
 object CatalogImportStatus {
   
-  @scala.inline
-  def apply(): CatalogImportStatus = {
+  inline def apply(): CatalogImportStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatalogImportStatus]
   }
   
-  @scala.inline
-  implicit class CatalogImportStatusMutableBuilder[Self <: CatalogImportStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CatalogImportStatus](x: Self) {
     
-    @scala.inline
-    def setImportCompleted(value: Boolean): Self = StObject.set(x, "ImportCompleted", value.asInstanceOf[js.Any])
+    inline def setImportCompleted(value: Boolean): Self = StObject.set(x, "ImportCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportCompletedUndefined: Self = StObject.set(x, "ImportCompleted", js.undefined)
+    inline def setImportCompletedUndefined: Self = StObject.set(x, "ImportCompleted", js.undefined)
     
-    @scala.inline
-    def setImportTime(value: Timestamp): Self = StObject.set(x, "ImportTime", value.asInstanceOf[js.Any])
+    inline def setImportTime(value: Timestamp): Self = StObject.set(x, "ImportTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTimeUndefined: Self = StObject.set(x, "ImportTime", js.undefined)
+    inline def setImportTimeUndefined: Self = StObject.set(x, "ImportTime", js.undefined)
     
-    @scala.inline
-    def setImportedBy(value: NameString): Self = StObject.set(x, "ImportedBy", value.asInstanceOf[js.Any])
+    inline def setImportedBy(value: NameString): Self = StObject.set(x, "ImportedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedByUndefined: Self = StObject.set(x, "ImportedBy", js.undefined)
+    inline def setImportedByUndefined: Self = StObject.set(x, "ImportedBy", js.undefined)
   }
 }

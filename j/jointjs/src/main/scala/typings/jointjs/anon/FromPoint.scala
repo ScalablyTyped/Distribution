@@ -10,19 +10,15 @@ trait FromPoint extends StObject {
 }
 object FromPoint {
   
-  @scala.inline
-  def apply(): FromPoint = {
+  inline def apply(): FromPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FromPoint]
   }
   
-  @scala.inline
-  implicit class FromPointMutableBuilder[Self <: FromPoint] (val x: Self) extends AnyVal {
+  extension [Self <: FromPoint](x: Self) {
     
-    @scala.inline
-    def setFromPoint(value: Boolean): Self = StObject.set(x, "fromPoint", value.asInstanceOf[js.Any])
+    inline def setFromPoint(value: Boolean): Self = StObject.set(x, "fromPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPointUndefined: Self = StObject.set(x, "fromPoint", js.undefined)
+    inline def setFromPointUndefined: Self = StObject.set(x, "fromPoint", js.undefined)
   }
 }

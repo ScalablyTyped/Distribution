@@ -12,16 +12,13 @@ trait PluginRemoveViewBox
 }
 object PluginRemoveViewBox {
   
-  @scala.inline
-  def apply(removeViewBox: Boolean | js.Object): PluginRemoveViewBox = {
+  inline def apply(removeViewBox: Boolean | js.Object): PluginRemoveViewBox = {
     val __obj = js.Dynamic.literal(removeViewBox = removeViewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveViewBox]
   }
   
-  @scala.inline
-  implicit class PluginRemoveViewBoxMutableBuilder[Self <: PluginRemoveViewBox] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveViewBox](x: Self) {
     
-    @scala.inline
-    def setRemoveViewBox(value: Boolean | js.Object): Self = StObject.set(x, "removeViewBox", value.asInstanceOf[js.Any])
+    inline def setRemoveViewBox(value: Boolean | js.Object): Self = StObject.set(x, "removeViewBox", value.asInstanceOf[js.Any])
   }
 }

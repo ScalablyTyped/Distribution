@@ -129,175 +129,119 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Consent {
   
-  @scala.inline
-  def apply(patient: Reference, status: code): Consent = {
+  inline def apply(patient: Reference, status: code): Consent = {
     val __obj = js.Dynamic.literal(patient = patient.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Consent]
   }
   
-  @scala.inline
-  implicit class ConsentMutableBuilder[Self <: Consent] (val x: Self) extends AnyVal {
+  extension [Self <: Consent](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setActionVarargs(value: CodeableConcept*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: CodeableConcept*): Self = StObject.set(x, "action", js.Array(value :_*))
     
-    @scala.inline
-    def setActor(value: js.Array[ConsentActor]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: js.Array[ConsentActor]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+    inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
-    @scala.inline
-    def setActorVarargs(value: ConsentActor*): Self = StObject.set(x, "actor", js.Array(value :_*))
+    inline def setActorVarargs(value: ConsentActor*): Self = StObject.set(x, "actor", js.Array(value :_*))
     
-    @scala.inline
-    def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value :_*))
+    inline def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value :_*))
     
-    @scala.inline
-    def setConsentingParty(value: js.Array[Reference]): Self = StObject.set(x, "consentingParty", value.asInstanceOf[js.Any])
+    inline def setConsentingParty(value: js.Array[Reference]): Self = StObject.set(x, "consentingParty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsentingPartyUndefined: Self = StObject.set(x, "consentingParty", js.undefined)
+    inline def setConsentingPartyUndefined: Self = StObject.set(x, "consentingParty", js.undefined)
     
-    @scala.inline
-    def setConsentingPartyVarargs(value: Reference*): Self = StObject.set(x, "consentingParty", js.Array(value :_*))
+    inline def setConsentingPartyVarargs(value: Reference*): Self = StObject.set(x, "consentingParty", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Array[ConsentData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[ConsentData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPeriod(value: Period): Self = StObject.set(x, "dataPeriod", value.asInstanceOf[js.Any])
+    inline def setDataPeriod(value: Period): Self = StObject.set(x, "dataPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPeriodUndefined: Self = StObject.set(x, "dataPeriod", js.undefined)
+    inline def setDataPeriodUndefined: Self = StObject.set(x, "dataPeriod", js.undefined)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: ConsentData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ConsentData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDateTime(value: dateTime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: dateTime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+    inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
     
-    @scala.inline
-    def setExcept(value: js.Array[ConsentExcept]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+    inline def setExcept(value: js.Array[ConsentExcept]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
+    inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
     
-    @scala.inline
-    def setExceptVarargs(value: ConsentExcept*): Self = StObject.set(x, "except", js.Array(value :_*))
+    inline def setExceptVarargs(value: ConsentExcept*): Self = StObject.set(x, "except", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setOrganization(value: js.Array[Reference]): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: js.Array[Reference]): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
-    @scala.inline
-    def setOrganizationVarargs(value: Reference*): Self = StObject.set(x, "organization", js.Array(value :_*))
+    inline def setOrganizationVarargs(value: Reference*): Self = StObject.set(x, "organization", js.Array(value :_*))
     
-    @scala.inline
-    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: js.Array[ConsentPolicy]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: js.Array[ConsentPolicy]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyRule(value: uri): Self = StObject.set(x, "policyRule", value.asInstanceOf[js.Any])
+    inline def setPolicyRule(value: uri): Self = StObject.set(x, "policyRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyRuleUndefined: Self = StObject.set(x, "policyRule", js.undefined)
+    inline def setPolicyRuleUndefined: Self = StObject.set(x, "policyRule", js.undefined)
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setPolicyVarargs(value: ConsentPolicy*): Self = StObject.set(x, "policy", js.Array(value :_*))
+    inline def setPolicyVarargs(value: ConsentPolicy*): Self = StObject.set(x, "policy", js.Array(value :_*))
     
-    @scala.inline
-    def setPurpose(value: js.Array[Coding]): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
+    inline def setPurpose(value: js.Array[Coding]): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
+    inline def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
-    @scala.inline
-    def setPurposeVarargs(value: Coding*): Self = StObject.set(x, "purpose", js.Array(value :_*))
+    inline def setPurposeVarargs(value: Coding*): Self = StObject.set(x, "purpose", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
+    inline def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
+    inline def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
     
-    @scala.inline
-    def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
+    inline def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceAttachment(value: Attachment): Self = StObject.set(x, "sourceAttachment", value.asInstanceOf[js.Any])
+    inline def setSourceAttachment(value: Attachment): Self = StObject.set(x, "sourceAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAttachmentUndefined: Self = StObject.set(x, "sourceAttachment", js.undefined)
+    inline def setSourceAttachmentUndefined: Self = StObject.set(x, "sourceAttachment", js.undefined)
     
-    @scala.inline
-    def setSourceIdentifier(value: Identifier): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceIdentifier(value: Identifier): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdentifierUndefined: Self = StObject.set(x, "sourceIdentifier", js.undefined)
+    inline def setSourceIdentifierUndefined: Self = StObject.set(x, "sourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setSourceReference(value: Reference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
+    inline def setSourceReference(value: Reference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
+    inline def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateTime(value: Element): Self = StObject.set(x, "_dateTime", value.asInstanceOf[js.Any])
+    inline def set_dateTime(value: Element): Self = StObject.set(x, "_dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateTimeUndefined: Self = StObject.set(x, "_dateTime", js.undefined)
+    inline def set_dateTimeUndefined: Self = StObject.set(x, "_dateTime", js.undefined)
     
-    @scala.inline
-    def set_policyRule(value: Element): Self = StObject.set(x, "_policyRule", value.asInstanceOf[js.Any])
+    inline def set_policyRule(value: Element): Self = StObject.set(x, "_policyRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_policyRuleUndefined: Self = StObject.set(x, "_policyRule", js.undefined)
+    inline def set_policyRuleUndefined: Self = StObject.set(x, "_policyRule", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait ResourceAssignmentExpression
 }
 object ResourceAssignmentExpression {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, expression: Expression, id: String): ResourceAssignmentExpression = {
+  inline def apply($parent: TypeDerived, $type: ElementType, expression: Expression, id: String): ResourceAssignmentExpression = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceAssignmentExpression]
   }
   
-  @scala.inline
-  implicit class ResourceAssignmentExpressionMutableBuilder[Self <: ResourceAssignmentExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceAssignmentExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

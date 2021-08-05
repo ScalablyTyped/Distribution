@@ -18,34 +18,25 @@ trait Attrs1 extends StObject {
 }
 object Attrs1 {
   
-  @scala.inline
-  def apply(attrs1: String, dir1: String, pt: Double | String): Attrs1 = {
+  inline def apply(attrs1: String, dir1: String, pt: Double | String): Attrs1 = {
     val __obj = js.Dynamic.literal(attrs1 = attrs1.asInstanceOf[js.Any], dir1 = dir1.asInstanceOf[js.Any], pt = pt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attrs1]
   }
   
-  @scala.inline
-  implicit class Attrs1MutableBuilder[Self <: Attrs1] (val x: Self) extends AnyVal {
+  extension [Self <: Attrs1](x: Self) {
     
-    @scala.inline
-    def setAttrs1(value: String): Self = StObject.set(x, "attrs1", value.asInstanceOf[js.Any])
+    inline def setAttrs1(value: String): Self = StObject.set(x, "attrs1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrs2(value: String): Self = StObject.set(x, "attrs2", value.asInstanceOf[js.Any])
+    inline def setAttrs2(value: String): Self = StObject.set(x, "attrs2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrs2Undefined: Self = StObject.set(x, "attrs2", js.undefined)
+    inline def setAttrs2Undefined: Self = StObject.set(x, "attrs2", js.undefined)
     
-    @scala.inline
-    def setDir1(value: String): Self = StObject.set(x, "dir1", value.asInstanceOf[js.Any])
+    inline def setDir1(value: String): Self = StObject.set(x, "dir1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDir2(value: String): Self = StObject.set(x, "dir2", value.asInstanceOf[js.Any])
+    inline def setDir2(value: String): Self = StObject.set(x, "dir2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDir2Undefined: Self = StObject.set(x, "dir2", js.undefined)
+    inline def setDir2Undefined: Self = StObject.set(x, "dir2", js.undefined)
     
-    @scala.inline
-    def setPt(value: Double | String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    inline def setPt(value: Double | String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
   }
 }

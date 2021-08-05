@@ -15,6 +15,6 @@ object quantileMod {
     
     def assemble(): typings.vegaTypings.transformMod.QuantileTransform = js.native
     
-    var transform: js.Any = js.native
+    /* private */ var transform: js.Any = js.native
   }
 }

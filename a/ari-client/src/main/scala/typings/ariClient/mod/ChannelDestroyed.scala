@@ -26,8 +26,7 @@ trait ChannelDestroyed
 }
 object ChannelDestroyed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     cause: Double,
     cause_txt: String,
@@ -40,16 +39,12 @@ object ChannelDestroyed {
     __obj.asInstanceOf[ChannelDestroyed]
   }
   
-  @scala.inline
-  implicit class ChannelDestroyedMutableBuilder[Self <: ChannelDestroyed] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelDestroyed](x: Self) {
     
-    @scala.inline
-    def setCause(value: Double): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: Double): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCause_txt(value: String): Self = StObject.set(x, "cause_txt", value.asInstanceOf[js.Any])
+    inline def setCause_txt(value: String): Self = StObject.set(x, "cause_txt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

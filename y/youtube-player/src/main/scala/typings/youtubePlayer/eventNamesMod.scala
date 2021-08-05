@@ -38,26 +38,19 @@ object eventNamesMod extends Shortcut {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def apiChange: typings.youtubePlayer.youtubePlayerStrings.apiChange = "apiChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.apiChange]
+    inline def apiChange: typings.youtubePlayer.youtubePlayerStrings.apiChange = "apiChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.apiChange]
     
-    @scala.inline
-    def error: typings.youtubePlayer.youtubePlayerStrings.error = "error".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.error]
+    inline def error: typings.youtubePlayer.youtubePlayerStrings.error = "error".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.error]
     
-    @scala.inline
-    def playbackQualityChange: typings.youtubePlayer.youtubePlayerStrings.playbackQualityChange = "playbackQualityChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.playbackQualityChange]
+    inline def playbackQualityChange: typings.youtubePlayer.youtubePlayerStrings.playbackQualityChange = "playbackQualityChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.playbackQualityChange]
     
-    @scala.inline
-    def playbackRateChange: typings.youtubePlayer.youtubePlayerStrings.playbackRateChange = "playbackRateChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.playbackRateChange]
+    inline def playbackRateChange: typings.youtubePlayer.youtubePlayerStrings.playbackRateChange = "playbackRateChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.playbackRateChange]
     
-    @scala.inline
-    def ready: typings.youtubePlayer.youtubePlayerStrings.ready = "ready".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.ready]
+    inline def ready: typings.youtubePlayer.youtubePlayerStrings.ready = "ready".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.ready]
     
-    @scala.inline
-    def stateChange: typings.youtubePlayer.youtubePlayerStrings.stateChange = "stateChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.stateChange]
+    inline def stateChange: typings.youtubePlayer.youtubePlayerStrings.stateChange = "stateChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.stateChange]
     
-    @scala.inline
-    def volumeChange: typings.youtubePlayer.youtubePlayerStrings.volumeChange = "volumeChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.volumeChange]
+    inline def volumeChange: typings.youtubePlayer.youtubePlayerStrings.volumeChange = "volumeChange".asInstanceOf[typings.youtubePlayer.youtubePlayerStrings.volumeChange]
   }
   
   type _To = js.Tuple7[

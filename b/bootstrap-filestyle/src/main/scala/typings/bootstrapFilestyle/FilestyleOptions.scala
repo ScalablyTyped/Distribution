@@ -28,73 +28,51 @@ trait FilestyleOptions extends StObject {
 }
 object FilestyleOptions {
   
-  @scala.inline
-  def apply(): FilestyleOptions = {
+  inline def apply(): FilestyleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilestyleOptions]
   }
   
-  @scala.inline
-  implicit class FilestyleOptionsMutableBuilder[Self <: FilestyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilestyleOptions](x: Self) {
     
-    @scala.inline
-    def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setButtonBefore(value: Boolean): Self = StObject.set(x, "buttonBefore", value.asInstanceOf[js.Any])
+    inline def setButtonBefore(value: Boolean): Self = StObject.set(x, "buttonBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonBeforeUndefined: Self = StObject.set(x, "buttonBefore", js.undefined)
+    inline def setButtonBeforeUndefined: Self = StObject.set(x, "buttonBefore", js.undefined)
     
-    @scala.inline
-    def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
+    inline def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonNameUndefined: Self = StObject.set(x, "buttonName", js.undefined)
+    inline def setButtonNameUndefined: Self = StObject.set(x, "buttonName", js.undefined)
     
-    @scala.inline
-    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+    inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+    inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setIcon(value: Boolean): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Boolean): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+    inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
+    inline def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

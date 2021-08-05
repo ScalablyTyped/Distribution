@@ -57,38 +57,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object UnifiedConfigurationPropertyDefinition {
   
-  @scala.inline
-  def apply(documentation: String, inputType: String, required: Boolean): UnifiedConfigurationPropertyDefinition = {
+  inline def apply(documentation: String, inputType: String, required: Boolean): UnifiedConfigurationPropertyDefinition = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("unified")
     __obj.asInstanceOf[UnifiedConfigurationPropertyDefinition]
   }
   
-  @scala.inline
-  implicit class UnifiedConfigurationPropertyDefinitionMutableBuilder[Self <: UnifiedConfigurationPropertyDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: UnifiedConfigurationPropertyDefinition](x: Self) {
     
-    @scala.inline
-    def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
-    @scala.inline
-    def setDefault(value: DefaultValue | DefaultProvider): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: DefaultValue | DefaultProvider): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setNormalize(value: String): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    inline def setNormalize(value: String): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: unified): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: unified): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

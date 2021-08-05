@@ -20,55 +20,39 @@ trait IClientBlockListRequest extends StObject {
 }
 object IClientBlockListRequest {
   
-  @scala.inline
-  def apply(): IClientBlockListRequest = {
+  inline def apply(): IClientBlockListRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBlockListRequest]
   }
   
-  @scala.inline
-  implicit class IClientBlockListRequestMutableBuilder[Self <: IClientBlockListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBlockListRequest](x: Self) {
     
-    @scala.inline
-    def setBlockIds(value: js.Array[String]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
+    inline def setBlockIds(value: js.Array[String]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdsNull: Self = StObject.set(x, "blockIds", null)
+    inline def setBlockIdsNull: Self = StObject.set(x, "blockIds", null)
     
-    @scala.inline
-    def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
+    inline def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
     
-    @scala.inline
-    def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
+    inline def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
     
-    @scala.inline
-    def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
+    inline def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadIdNull: Self = StObject.set(x, "headId", null)
+    inline def setHeadIdNull: Self = StObject.set(x, "headId", null)
     
-    @scala.inline
-    def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
+    inline def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
     
-    @scala.inline
-    def setPaging(value: IClientPagingControls): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+    inline def setPaging(value: IClientPagingControls): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagingNull: Self = StObject.set(x, "paging", null)
+    inline def setPagingNull: Self = StObject.set(x, "paging", null)
     
-    @scala.inline
-    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
+    inline def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
-    @scala.inline
-    def setSorting(value: js.Array[IClientSortControls]): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
+    inline def setSorting(value: js.Array[IClientSortControls]): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortingNull: Self = StObject.set(x, "sorting", null)
+    inline def setSortingNull: Self = StObject.set(x, "sorting", null)
     
-    @scala.inline
-    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
+    inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
-    @scala.inline
-    def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value :_*))
+    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value :_*))
   }
 }

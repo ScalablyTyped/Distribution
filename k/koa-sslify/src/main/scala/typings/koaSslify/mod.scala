@@ -14,25 +14,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def default(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def default(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def default(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
-  @scala.inline
-  def azureResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("azureResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def azureResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("azureResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def customProtoHeaderResolver(header: String): js.Function1[/* ctx */ Context, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("customProtoHeaderResolver")(header.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ctx */ Context, Boolean]]
+  inline def customProtoHeaderResolver(header: String): js.Function1[/* ctx */ Context, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("customProtoHeaderResolver")(header.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ctx */ Context, Boolean]]
   
-  @scala.inline
-  def forwardedResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardedResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def forwardedResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardedResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def httpsResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def httpsResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def xForwardedProtoResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("xForwardedProtoResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def xForwardedProtoResolver(ctx: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("xForwardedProtoResolver")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Options extends StObject {
     
@@ -78,65 +71,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDisallowStatus(value: Double): Self = StObject.set(x, "disallowStatus", value.asInstanceOf[js.Any])
+      inline def setDisallowStatus(value: Double): Self = StObject.set(x, "disallowStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallowStatusUndefined: Self = StObject.set(x, "disallowStatus", js.undefined)
+      inline def setDisallowStatusUndefined: Self = StObject.set(x, "disallowStatus", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setIgnoreUrl(value: Boolean): Self = StObject.set(x, "ignoreUrl", value.asInstanceOf[js.Any])
+      inline def setIgnoreUrl(value: Boolean): Self = StObject.set(x, "ignoreUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUrlUndefined: Self = StObject.set(x, "ignoreUrl", js.undefined)
+      inline def setIgnoreUrlUndefined: Self = StObject.set(x, "ignoreUrl", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRedirectMethods(value: js.Array[String]): Self = StObject.set(x, "redirectMethods", value.asInstanceOf[js.Any])
+      inline def setRedirectMethods(value: js.Array[String]): Self = StObject.set(x, "redirectMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectMethodsUndefined: Self = StObject.set(x, "redirectMethods", js.undefined)
+      inline def setRedirectMethodsUndefined: Self = StObject.set(x, "redirectMethods", js.undefined)
       
-      @scala.inline
-      def setRedirectMethodsVarargs(value: String*): Self = StObject.set(x, "redirectMethods", js.Array(value :_*))
+      inline def setRedirectMethodsVarargs(value: String*): Self = StObject.set(x, "redirectMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setResolver(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "resolver", js.Any.fromFunction1(value))
+      inline def setResolver(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "resolver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+      inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
       
-      @scala.inline
-      def setSkipDefaultPort(value: Boolean): Self = StObject.set(x, "skipDefaultPort", value.asInstanceOf[js.Any])
+      inline def setSkipDefaultPort(value: Boolean): Self = StObject.set(x, "skipDefaultPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipDefaultPortUndefined: Self = StObject.set(x, "skipDefaultPort", js.undefined)
+      inline def setSkipDefaultPortUndefined: Self = StObject.set(x, "skipDefaultPort", js.undefined)
       
-      @scala.inline
-      def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+      inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+      inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
     }
   }
 }

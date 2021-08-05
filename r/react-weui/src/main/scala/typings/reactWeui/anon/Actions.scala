@@ -18,8 +18,7 @@ trait Actions extends StObject {
 }
 object Actions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: js.Array[js.Any],
     autoDectect: Boolean,
     menus: js.Array[js.Any],
@@ -31,28 +30,20 @@ object Actions {
     __obj.asInstanceOf[Actions]
   }
   
-  @scala.inline
-  implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+  extension [Self <: Actions](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setAutoDectect(value: Boolean): Self = StObject.set(x, "autoDectect", value.asInstanceOf[js.Any])
+    inline def setAutoDectect(value: Boolean): Self = StObject.set(x, "autoDectect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenus(value: js.Array[js.Any]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
+    inline def setMenus(value: js.Array[js.Any]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenusVarargs(value: js.Any*): Self = StObject.set(x, "menus", js.Array(value :_*))
+    inline def setMenusVarargs(value: js.Any*): Self = StObject.set(x, "menus", js.Array(value :_*))
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

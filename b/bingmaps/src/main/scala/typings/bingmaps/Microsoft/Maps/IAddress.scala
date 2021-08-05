@@ -38,8 +38,7 @@ trait IAddress extends StObject {
 }
 object IAddress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addressLine: String,
     adminDistrict: String,
     countryRegion: String,
@@ -53,31 +52,22 @@ object IAddress {
     __obj.asInstanceOf[IAddress]
   }
   
-  @scala.inline
-  implicit class IAddressMutableBuilder[Self <: IAddress] (val x: Self) extends AnyVal {
+  extension [Self <: IAddress](x: Self) {
     
-    @scala.inline
-    def setAddressLine(value: String): Self = StObject.set(x, "addressLine", value.asInstanceOf[js.Any])
+    inline def setAddressLine(value: String): Self = StObject.set(x, "addressLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminDistrict(value: String): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
+    inline def setAdminDistrict(value: String): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryRegion(value: String): Self = StObject.set(x, "countryRegion", value.asInstanceOf[js.Any])
+    inline def setCountryRegion(value: String): Self = StObject.set(x, "countryRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryRegionISO2(value: String): Self = StObject.set(x, "countryRegionISO2", value.asInstanceOf[js.Any])
+    inline def setCountryRegionISO2(value: String): Self = StObject.set(x, "countryRegionISO2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
+    inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
+    inline def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
   }
 }

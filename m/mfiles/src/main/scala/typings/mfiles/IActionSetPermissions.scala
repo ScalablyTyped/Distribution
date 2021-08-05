@@ -14,8 +14,7 @@ trait IActionSetPermissions extends StObject {
 }
 object IActionSetPermissions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IActionSetPermissions,
     DiscardsAutomaticPermissions: Boolean,
     Permissions: IAccessControlList
@@ -24,16 +23,12 @@ object IActionSetPermissions {
     __obj.asInstanceOf[IActionSetPermissions]
   }
   
-  @scala.inline
-  implicit class IActionSetPermissionsMutableBuilder[Self <: IActionSetPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: IActionSetPermissions](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IActionSetPermissions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IActionSetPermissions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDiscardsAutomaticPermissions(value: Boolean): Self = StObject.set(x, "DiscardsAutomaticPermissions", value.asInstanceOf[js.Any])
+    inline def setDiscardsAutomaticPermissions(value: Boolean): Self = StObject.set(x, "DiscardsAutomaticPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: IAccessControlList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: IAccessControlList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait ReposRequestPagesBuildResponseData extends StObject {
 }
 object ReposRequestPagesBuildResponseData {
   
-  @scala.inline
-  def apply(status: String, url: String): ReposRequestPagesBuildResponseData = {
+  inline def apply(status: String, url: String): ReposRequestPagesBuildResponseData = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposRequestPagesBuildResponseData]
   }
   
-  @scala.inline
-  implicit class ReposRequestPagesBuildResponseDataMutableBuilder[Self <: ReposRequestPagesBuildResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposRequestPagesBuildResponseData](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

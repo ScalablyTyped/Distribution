@@ -14,19 +14,15 @@ trait BloomrunConfig extends StObject {
 }
 object BloomrunConfig {
   
-  @scala.inline
-  def apply(indexing: insertion | depth, lookupBeforeAdd: Boolean): BloomrunConfig = {
+  inline def apply(indexing: insertion | depth, lookupBeforeAdd: Boolean): BloomrunConfig = {
     val __obj = js.Dynamic.literal(indexing = indexing.asInstanceOf[js.Any], lookupBeforeAdd = lookupBeforeAdd.asInstanceOf[js.Any])
     __obj.asInstanceOf[BloomrunConfig]
   }
   
-  @scala.inline
-  implicit class BloomrunConfigMutableBuilder[Self <: BloomrunConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BloomrunConfig](x: Self) {
     
-    @scala.inline
-    def setIndexing(value: insertion | depth): Self = StObject.set(x, "indexing", value.asInstanceOf[js.Any])
+    inline def setIndexing(value: insertion | depth): Self = StObject.set(x, "indexing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupBeforeAdd(value: Boolean): Self = StObject.set(x, "lookupBeforeAdd", value.asInstanceOf[js.Any])
+    inline def setLookupBeforeAdd(value: Boolean): Self = StObject.set(x, "lookupBeforeAdd", value.asInstanceOf[js.Any])
   }
 }

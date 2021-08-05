@@ -8,8 +8,7 @@ object esmIntervalToDurationMod {
   
   object default {
     
-    @scala.inline
-    def apply(interval: Interval): Duration = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def apply(interval: Interval): Duration = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     @JSImport("date-fns/esm/intervalToDuration", JSImport.Default)
     @js.native

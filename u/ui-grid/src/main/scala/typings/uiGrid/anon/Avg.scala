@@ -18,28 +18,21 @@ trait Avg extends StObject {
 }
 object Avg {
   
-  @scala.inline
-  def apply(avg: Double, count: Double, max: Double, min: Double, sum: Double): Avg = {
+  inline def apply(avg: Double, count: Double, max: Double, min: Double, sum: Double): Avg = {
     val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[Avg]
   }
   
-  @scala.inline
-  implicit class AvgMutableBuilder[Self <: Avg] (val x: Self) extends AnyVal {
+  extension [Self <: Avg](x: Self) {
     
-    @scala.inline
-    def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+    inline def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
   }
 }

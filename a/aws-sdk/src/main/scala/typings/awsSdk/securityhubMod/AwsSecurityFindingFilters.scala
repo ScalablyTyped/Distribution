@@ -428,769 +428,515 @@ trait AwsSecurityFindingFilters extends StObject {
 }
 object AwsSecurityFindingFilters {
   
-  @scala.inline
-  def apply(): AwsSecurityFindingFilters = {
+  inline def apply(): AwsSecurityFindingFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsSecurityFindingFilters]
   }
   
-  @scala.inline
-  implicit class AwsSecurityFindingFiltersMutableBuilder[Self <: AwsSecurityFindingFilters] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSecurityFindingFilters](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: StringFilterList): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: StringFilterList): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountIdUndefined: Self = StObject.set(x, "AwsAccountId", js.undefined)
+    inline def setAwsAccountIdUndefined: Self = StObject.set(x, "AwsAccountId", js.undefined)
     
-    @scala.inline
-    def setAwsAccountIdVarargs(value: StringFilter*): Self = StObject.set(x, "AwsAccountId", js.Array(value :_*))
+    inline def setAwsAccountIdVarargs(value: StringFilter*): Self = StObject.set(x, "AwsAccountId", js.Array(value :_*))
     
-    @scala.inline
-    def setCompanyName(value: StringFilterList): Self = StObject.set(x, "CompanyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: StringFilterList): Self = StObject.set(x, "CompanyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyNameUndefined: Self = StObject.set(x, "CompanyName", js.undefined)
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "CompanyName", js.undefined)
     
-    @scala.inline
-    def setCompanyNameVarargs(value: StringFilter*): Self = StObject.set(x, "CompanyName", js.Array(value :_*))
+    inline def setCompanyNameVarargs(value: StringFilter*): Self = StObject.set(x, "CompanyName", js.Array(value :_*))
     
-    @scala.inline
-    def setComplianceStatus(value: StringFilterList): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
+    inline def setComplianceStatus(value: StringFilterList): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
+    inline def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
     
-    @scala.inline
-    def setComplianceStatusVarargs(value: StringFilter*): Self = StObject.set(x, "ComplianceStatus", js.Array(value :_*))
+    inline def setComplianceStatusVarargs(value: StringFilter*): Self = StObject.set(x, "ComplianceStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setConfidence(value: NumberFilterList): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: NumberFilterList): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setConfidenceVarargs(value: NumberFilter*): Self = StObject.set(x, "Confidence", js.Array(value :_*))
+    inline def setConfidenceVarargs(value: NumberFilter*): Self = StObject.set(x, "Confidence", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedAt(value: DateFilterList): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: DateFilterList): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setCreatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "CreatedAt", js.Array(value :_*))
+    inline def setCreatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "CreatedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setCriticality(value: NumberFilterList): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
+    inline def setCriticality(value: NumberFilterList): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
+    inline def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
     
-    @scala.inline
-    def setCriticalityVarargs(value: NumberFilter*): Self = StObject.set(x, "Criticality", js.Array(value :_*))
+    inline def setCriticalityVarargs(value: NumberFilter*): Self = StObject.set(x, "Criticality", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: StringFilterList): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: StringFilterList): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDescriptionVarargs(value: StringFilter*): Self = StObject.set(x, "Description", js.Array(value :_*))
+    inline def setDescriptionVarargs(value: StringFilter*): Self = StObject.set(x, "Description", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstObservedAt(value: DateFilterList): Self = StObject.set(x, "FirstObservedAt", value.asInstanceOf[js.Any])
+    inline def setFirstObservedAt(value: DateFilterList): Self = StObject.set(x, "FirstObservedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstObservedAtUndefined: Self = StObject.set(x, "FirstObservedAt", js.undefined)
+    inline def setFirstObservedAtUndefined: Self = StObject.set(x, "FirstObservedAt", js.undefined)
     
-    @scala.inline
-    def setFirstObservedAtVarargs(value: DateFilter*): Self = StObject.set(x, "FirstObservedAt", js.Array(value :_*))
+    inline def setFirstObservedAtVarargs(value: DateFilter*): Self = StObject.set(x, "FirstObservedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setGeneratorId(value: StringFilterList): Self = StObject.set(x, "GeneratorId", value.asInstanceOf[js.Any])
+    inline def setGeneratorId(value: StringFilterList): Self = StObject.set(x, "GeneratorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratorIdUndefined: Self = StObject.set(x, "GeneratorId", js.undefined)
+    inline def setGeneratorIdUndefined: Self = StObject.set(x, "GeneratorId", js.undefined)
     
-    @scala.inline
-    def setGeneratorIdVarargs(value: StringFilter*): Self = StObject.set(x, "GeneratorId", js.Array(value :_*))
+    inline def setGeneratorIdVarargs(value: StringFilter*): Self = StObject.set(x, "GeneratorId", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: StringFilterList): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: StringFilterList): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setIdVarargs(value: StringFilter*): Self = StObject.set(x, "Id", js.Array(value :_*))
+    inline def setIdVarargs(value: StringFilter*): Self = StObject.set(x, "Id", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyword(value: KeywordFilterList): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: KeywordFilterList): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordUndefined: Self = StObject.set(x, "Keyword", js.undefined)
+    inline def setKeywordUndefined: Self = StObject.set(x, "Keyword", js.undefined)
     
-    @scala.inline
-    def setKeywordVarargs(value: KeywordFilter*): Self = StObject.set(x, "Keyword", js.Array(value :_*))
+    inline def setKeywordVarargs(value: KeywordFilter*): Self = StObject.set(x, "Keyword", js.Array(value :_*))
     
-    @scala.inline
-    def setLastObservedAt(value: DateFilterList): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
+    inline def setLastObservedAt(value: DateFilterList): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
+    inline def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
     
-    @scala.inline
-    def setLastObservedAtVarargs(value: DateFilter*): Self = StObject.set(x, "LastObservedAt", js.Array(value :_*))
+    inline def setLastObservedAtVarargs(value: DateFilter*): Self = StObject.set(x, "LastObservedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setMalwareName(value: StringFilterList): Self = StObject.set(x, "MalwareName", value.asInstanceOf[js.Any])
+    inline def setMalwareName(value: StringFilterList): Self = StObject.set(x, "MalwareName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMalwareNameUndefined: Self = StObject.set(x, "MalwareName", js.undefined)
+    inline def setMalwareNameUndefined: Self = StObject.set(x, "MalwareName", js.undefined)
     
-    @scala.inline
-    def setMalwareNameVarargs(value: StringFilter*): Self = StObject.set(x, "MalwareName", js.Array(value :_*))
+    inline def setMalwareNameVarargs(value: StringFilter*): Self = StObject.set(x, "MalwareName", js.Array(value :_*))
     
-    @scala.inline
-    def setMalwarePath(value: StringFilterList): Self = StObject.set(x, "MalwarePath", value.asInstanceOf[js.Any])
+    inline def setMalwarePath(value: StringFilterList): Self = StObject.set(x, "MalwarePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMalwarePathUndefined: Self = StObject.set(x, "MalwarePath", js.undefined)
+    inline def setMalwarePathUndefined: Self = StObject.set(x, "MalwarePath", js.undefined)
     
-    @scala.inline
-    def setMalwarePathVarargs(value: StringFilter*): Self = StObject.set(x, "MalwarePath", js.Array(value :_*))
+    inline def setMalwarePathVarargs(value: StringFilter*): Self = StObject.set(x, "MalwarePath", js.Array(value :_*))
     
-    @scala.inline
-    def setMalwareState(value: StringFilterList): Self = StObject.set(x, "MalwareState", value.asInstanceOf[js.Any])
+    inline def setMalwareState(value: StringFilterList): Self = StObject.set(x, "MalwareState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMalwareStateUndefined: Self = StObject.set(x, "MalwareState", js.undefined)
+    inline def setMalwareStateUndefined: Self = StObject.set(x, "MalwareState", js.undefined)
     
-    @scala.inline
-    def setMalwareStateVarargs(value: StringFilter*): Self = StObject.set(x, "MalwareState", js.Array(value :_*))
+    inline def setMalwareStateVarargs(value: StringFilter*): Self = StObject.set(x, "MalwareState", js.Array(value :_*))
     
-    @scala.inline
-    def setMalwareType(value: StringFilterList): Self = StObject.set(x, "MalwareType", value.asInstanceOf[js.Any])
+    inline def setMalwareType(value: StringFilterList): Self = StObject.set(x, "MalwareType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMalwareTypeUndefined: Self = StObject.set(x, "MalwareType", js.undefined)
+    inline def setMalwareTypeUndefined: Self = StObject.set(x, "MalwareType", js.undefined)
     
-    @scala.inline
-    def setMalwareTypeVarargs(value: StringFilter*): Self = StObject.set(x, "MalwareType", js.Array(value :_*))
+    inline def setMalwareTypeVarargs(value: StringFilter*): Self = StObject.set(x, "MalwareType", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkDestinationDomain(value: StringFilterList): Self = StObject.set(x, "NetworkDestinationDomain", value.asInstanceOf[js.Any])
+    inline def setNetworkDestinationDomain(value: StringFilterList): Self = StObject.set(x, "NetworkDestinationDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkDestinationDomainUndefined: Self = StObject.set(x, "NetworkDestinationDomain", js.undefined)
+    inline def setNetworkDestinationDomainUndefined: Self = StObject.set(x, "NetworkDestinationDomain", js.undefined)
     
-    @scala.inline
-    def setNetworkDestinationDomainVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkDestinationDomain", js.Array(value :_*))
+    inline def setNetworkDestinationDomainVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkDestinationDomain", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkDestinationIpV4(value: IpFilterList): Self = StObject.set(x, "NetworkDestinationIpV4", value.asInstanceOf[js.Any])
+    inline def setNetworkDestinationIpV4(value: IpFilterList): Self = StObject.set(x, "NetworkDestinationIpV4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkDestinationIpV4Undefined: Self = StObject.set(x, "NetworkDestinationIpV4", js.undefined)
+    inline def setNetworkDestinationIpV4Undefined: Self = StObject.set(x, "NetworkDestinationIpV4", js.undefined)
     
-    @scala.inline
-    def setNetworkDestinationIpV4Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkDestinationIpV4", js.Array(value :_*))
+    inline def setNetworkDestinationIpV4Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkDestinationIpV4", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkDestinationIpV6(value: IpFilterList): Self = StObject.set(x, "NetworkDestinationIpV6", value.asInstanceOf[js.Any])
+    inline def setNetworkDestinationIpV6(value: IpFilterList): Self = StObject.set(x, "NetworkDestinationIpV6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkDestinationIpV6Undefined: Self = StObject.set(x, "NetworkDestinationIpV6", js.undefined)
+    inline def setNetworkDestinationIpV6Undefined: Self = StObject.set(x, "NetworkDestinationIpV6", js.undefined)
     
-    @scala.inline
-    def setNetworkDestinationIpV6Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkDestinationIpV6", js.Array(value :_*))
+    inline def setNetworkDestinationIpV6Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkDestinationIpV6", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkDestinationPort(value: NumberFilterList): Self = StObject.set(x, "NetworkDestinationPort", value.asInstanceOf[js.Any])
+    inline def setNetworkDestinationPort(value: NumberFilterList): Self = StObject.set(x, "NetworkDestinationPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkDestinationPortUndefined: Self = StObject.set(x, "NetworkDestinationPort", js.undefined)
+    inline def setNetworkDestinationPortUndefined: Self = StObject.set(x, "NetworkDestinationPort", js.undefined)
     
-    @scala.inline
-    def setNetworkDestinationPortVarargs(value: NumberFilter*): Self = StObject.set(x, "NetworkDestinationPort", js.Array(value :_*))
+    inline def setNetworkDestinationPortVarargs(value: NumberFilter*): Self = StObject.set(x, "NetworkDestinationPort", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkDirection(value: StringFilterList): Self = StObject.set(x, "NetworkDirection", value.asInstanceOf[js.Any])
+    inline def setNetworkDirection(value: StringFilterList): Self = StObject.set(x, "NetworkDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkDirectionUndefined: Self = StObject.set(x, "NetworkDirection", js.undefined)
+    inline def setNetworkDirectionUndefined: Self = StObject.set(x, "NetworkDirection", js.undefined)
     
-    @scala.inline
-    def setNetworkDirectionVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkDirection", js.Array(value :_*))
+    inline def setNetworkDirectionVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkDirection", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkProtocol(value: StringFilterList): Self = StObject.set(x, "NetworkProtocol", value.asInstanceOf[js.Any])
+    inline def setNetworkProtocol(value: StringFilterList): Self = StObject.set(x, "NetworkProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProtocolUndefined: Self = StObject.set(x, "NetworkProtocol", js.undefined)
+    inline def setNetworkProtocolUndefined: Self = StObject.set(x, "NetworkProtocol", js.undefined)
     
-    @scala.inline
-    def setNetworkProtocolVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkProtocol", js.Array(value :_*))
+    inline def setNetworkProtocolVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkProtocol", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkSourceDomain(value: StringFilterList): Self = StObject.set(x, "NetworkSourceDomain", value.asInstanceOf[js.Any])
+    inline def setNetworkSourceDomain(value: StringFilterList): Self = StObject.set(x, "NetworkSourceDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkSourceDomainUndefined: Self = StObject.set(x, "NetworkSourceDomain", js.undefined)
+    inline def setNetworkSourceDomainUndefined: Self = StObject.set(x, "NetworkSourceDomain", js.undefined)
     
-    @scala.inline
-    def setNetworkSourceDomainVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkSourceDomain", js.Array(value :_*))
+    inline def setNetworkSourceDomainVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkSourceDomain", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkSourceIpV4(value: IpFilterList): Self = StObject.set(x, "NetworkSourceIpV4", value.asInstanceOf[js.Any])
+    inline def setNetworkSourceIpV4(value: IpFilterList): Self = StObject.set(x, "NetworkSourceIpV4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkSourceIpV4Undefined: Self = StObject.set(x, "NetworkSourceIpV4", js.undefined)
+    inline def setNetworkSourceIpV4Undefined: Self = StObject.set(x, "NetworkSourceIpV4", js.undefined)
     
-    @scala.inline
-    def setNetworkSourceIpV4Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkSourceIpV4", js.Array(value :_*))
+    inline def setNetworkSourceIpV4Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkSourceIpV4", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkSourceIpV6(value: IpFilterList): Self = StObject.set(x, "NetworkSourceIpV6", value.asInstanceOf[js.Any])
+    inline def setNetworkSourceIpV6(value: IpFilterList): Self = StObject.set(x, "NetworkSourceIpV6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkSourceIpV6Undefined: Self = StObject.set(x, "NetworkSourceIpV6", js.undefined)
+    inline def setNetworkSourceIpV6Undefined: Self = StObject.set(x, "NetworkSourceIpV6", js.undefined)
     
-    @scala.inline
-    def setNetworkSourceIpV6Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkSourceIpV6", js.Array(value :_*))
+    inline def setNetworkSourceIpV6Varargs(value: IpFilter*): Self = StObject.set(x, "NetworkSourceIpV6", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkSourceMac(value: StringFilterList): Self = StObject.set(x, "NetworkSourceMac", value.asInstanceOf[js.Any])
+    inline def setNetworkSourceMac(value: StringFilterList): Self = StObject.set(x, "NetworkSourceMac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkSourceMacUndefined: Self = StObject.set(x, "NetworkSourceMac", js.undefined)
+    inline def setNetworkSourceMacUndefined: Self = StObject.set(x, "NetworkSourceMac", js.undefined)
     
-    @scala.inline
-    def setNetworkSourceMacVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkSourceMac", js.Array(value :_*))
+    inline def setNetworkSourceMacVarargs(value: StringFilter*): Self = StObject.set(x, "NetworkSourceMac", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkSourcePort(value: NumberFilterList): Self = StObject.set(x, "NetworkSourcePort", value.asInstanceOf[js.Any])
+    inline def setNetworkSourcePort(value: NumberFilterList): Self = StObject.set(x, "NetworkSourcePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkSourcePortUndefined: Self = StObject.set(x, "NetworkSourcePort", js.undefined)
+    inline def setNetworkSourcePortUndefined: Self = StObject.set(x, "NetworkSourcePort", js.undefined)
     
-    @scala.inline
-    def setNetworkSourcePortVarargs(value: NumberFilter*): Self = StObject.set(x, "NetworkSourcePort", js.Array(value :_*))
+    inline def setNetworkSourcePortVarargs(value: NumberFilter*): Self = StObject.set(x, "NetworkSourcePort", js.Array(value :_*))
     
-    @scala.inline
-    def setNoteText(value: StringFilterList): Self = StObject.set(x, "NoteText", value.asInstanceOf[js.Any])
+    inline def setNoteText(value: StringFilterList): Self = StObject.set(x, "NoteText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteTextUndefined: Self = StObject.set(x, "NoteText", js.undefined)
+    inline def setNoteTextUndefined: Self = StObject.set(x, "NoteText", js.undefined)
     
-    @scala.inline
-    def setNoteTextVarargs(value: StringFilter*): Self = StObject.set(x, "NoteText", js.Array(value :_*))
+    inline def setNoteTextVarargs(value: StringFilter*): Self = StObject.set(x, "NoteText", js.Array(value :_*))
     
-    @scala.inline
-    def setNoteUpdatedAt(value: DateFilterList): Self = StObject.set(x, "NoteUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setNoteUpdatedAt(value: DateFilterList): Self = StObject.set(x, "NoteUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUpdatedAtUndefined: Self = StObject.set(x, "NoteUpdatedAt", js.undefined)
+    inline def setNoteUpdatedAtUndefined: Self = StObject.set(x, "NoteUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setNoteUpdatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "NoteUpdatedAt", js.Array(value :_*))
+    inline def setNoteUpdatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "NoteUpdatedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setNoteUpdatedBy(value: StringFilterList): Self = StObject.set(x, "NoteUpdatedBy", value.asInstanceOf[js.Any])
+    inline def setNoteUpdatedBy(value: StringFilterList): Self = StObject.set(x, "NoteUpdatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUpdatedByUndefined: Self = StObject.set(x, "NoteUpdatedBy", js.undefined)
+    inline def setNoteUpdatedByUndefined: Self = StObject.set(x, "NoteUpdatedBy", js.undefined)
     
-    @scala.inline
-    def setNoteUpdatedByVarargs(value: StringFilter*): Self = StObject.set(x, "NoteUpdatedBy", js.Array(value :_*))
+    inline def setNoteUpdatedByVarargs(value: StringFilter*): Self = StObject.set(x, "NoteUpdatedBy", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessLaunchedAt(value: DateFilterList): Self = StObject.set(x, "ProcessLaunchedAt", value.asInstanceOf[js.Any])
+    inline def setProcessLaunchedAt(value: DateFilterList): Self = StObject.set(x, "ProcessLaunchedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessLaunchedAtUndefined: Self = StObject.set(x, "ProcessLaunchedAt", js.undefined)
+    inline def setProcessLaunchedAtUndefined: Self = StObject.set(x, "ProcessLaunchedAt", js.undefined)
     
-    @scala.inline
-    def setProcessLaunchedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ProcessLaunchedAt", js.Array(value :_*))
+    inline def setProcessLaunchedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ProcessLaunchedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessName(value: StringFilterList): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
+    inline def setProcessName(value: StringFilterList): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessNameUndefined: Self = StObject.set(x, "ProcessName", js.undefined)
+    inline def setProcessNameUndefined: Self = StObject.set(x, "ProcessName", js.undefined)
     
-    @scala.inline
-    def setProcessNameVarargs(value: StringFilter*): Self = StObject.set(x, "ProcessName", js.Array(value :_*))
+    inline def setProcessNameVarargs(value: StringFilter*): Self = StObject.set(x, "ProcessName", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessParentPid(value: NumberFilterList): Self = StObject.set(x, "ProcessParentPid", value.asInstanceOf[js.Any])
+    inline def setProcessParentPid(value: NumberFilterList): Self = StObject.set(x, "ProcessParentPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessParentPidUndefined: Self = StObject.set(x, "ProcessParentPid", js.undefined)
+    inline def setProcessParentPidUndefined: Self = StObject.set(x, "ProcessParentPid", js.undefined)
     
-    @scala.inline
-    def setProcessParentPidVarargs(value: NumberFilter*): Self = StObject.set(x, "ProcessParentPid", js.Array(value :_*))
+    inline def setProcessParentPidVarargs(value: NumberFilter*): Self = StObject.set(x, "ProcessParentPid", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessPath(value: StringFilterList): Self = StObject.set(x, "ProcessPath", value.asInstanceOf[js.Any])
+    inline def setProcessPath(value: StringFilterList): Self = StObject.set(x, "ProcessPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessPathUndefined: Self = StObject.set(x, "ProcessPath", js.undefined)
+    inline def setProcessPathUndefined: Self = StObject.set(x, "ProcessPath", js.undefined)
     
-    @scala.inline
-    def setProcessPathVarargs(value: StringFilter*): Self = StObject.set(x, "ProcessPath", js.Array(value :_*))
+    inline def setProcessPathVarargs(value: StringFilter*): Self = StObject.set(x, "ProcessPath", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessPid(value: NumberFilterList): Self = StObject.set(x, "ProcessPid", value.asInstanceOf[js.Any])
+    inline def setProcessPid(value: NumberFilterList): Self = StObject.set(x, "ProcessPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessPidUndefined: Self = StObject.set(x, "ProcessPid", js.undefined)
+    inline def setProcessPidUndefined: Self = StObject.set(x, "ProcessPid", js.undefined)
     
-    @scala.inline
-    def setProcessPidVarargs(value: NumberFilter*): Self = StObject.set(x, "ProcessPid", js.Array(value :_*))
+    inline def setProcessPidVarargs(value: NumberFilter*): Self = StObject.set(x, "ProcessPid", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessTerminatedAt(value: DateFilterList): Self = StObject.set(x, "ProcessTerminatedAt", value.asInstanceOf[js.Any])
+    inline def setProcessTerminatedAt(value: DateFilterList): Self = StObject.set(x, "ProcessTerminatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessTerminatedAtUndefined: Self = StObject.set(x, "ProcessTerminatedAt", js.undefined)
+    inline def setProcessTerminatedAtUndefined: Self = StObject.set(x, "ProcessTerminatedAt", js.undefined)
     
-    @scala.inline
-    def setProcessTerminatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ProcessTerminatedAt", js.Array(value :_*))
+    inline def setProcessTerminatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ProcessTerminatedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setProductArn(value: StringFilterList): Self = StObject.set(x, "ProductArn", value.asInstanceOf[js.Any])
+    inline def setProductArn(value: StringFilterList): Self = StObject.set(x, "ProductArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductArnUndefined: Self = StObject.set(x, "ProductArn", js.undefined)
+    inline def setProductArnUndefined: Self = StObject.set(x, "ProductArn", js.undefined)
     
-    @scala.inline
-    def setProductArnVarargs(value: StringFilter*): Self = StObject.set(x, "ProductArn", js.Array(value :_*))
+    inline def setProductArnVarargs(value: StringFilter*): Self = StObject.set(x, "ProductArn", js.Array(value :_*))
     
-    @scala.inline
-    def setProductFields(value: MapFilterList): Self = StObject.set(x, "ProductFields", value.asInstanceOf[js.Any])
+    inline def setProductFields(value: MapFilterList): Self = StObject.set(x, "ProductFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductFieldsUndefined: Self = StObject.set(x, "ProductFields", js.undefined)
+    inline def setProductFieldsUndefined: Self = StObject.set(x, "ProductFields", js.undefined)
     
-    @scala.inline
-    def setProductFieldsVarargs(value: MapFilter*): Self = StObject.set(x, "ProductFields", js.Array(value :_*))
+    inline def setProductFieldsVarargs(value: MapFilter*): Self = StObject.set(x, "ProductFields", js.Array(value :_*))
     
-    @scala.inline
-    def setProductName(value: StringFilterList): Self = StObject.set(x, "ProductName", value.asInstanceOf[js.Any])
+    inline def setProductName(value: StringFilterList): Self = StObject.set(x, "ProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNameUndefined: Self = StObject.set(x, "ProductName", js.undefined)
+    inline def setProductNameUndefined: Self = StObject.set(x, "ProductName", js.undefined)
     
-    @scala.inline
-    def setProductNameVarargs(value: StringFilter*): Self = StObject.set(x, "ProductName", js.Array(value :_*))
+    inline def setProductNameVarargs(value: StringFilter*): Self = StObject.set(x, "ProductName", js.Array(value :_*))
     
-    @scala.inline
-    def setRecommendationText(value: StringFilterList): Self = StObject.set(x, "RecommendationText", value.asInstanceOf[js.Any])
+    inline def setRecommendationText(value: StringFilterList): Self = StObject.set(x, "RecommendationText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationTextUndefined: Self = StObject.set(x, "RecommendationText", js.undefined)
+    inline def setRecommendationTextUndefined: Self = StObject.set(x, "RecommendationText", js.undefined)
     
-    @scala.inline
-    def setRecommendationTextVarargs(value: StringFilter*): Self = StObject.set(x, "RecommendationText", js.Array(value :_*))
+    inline def setRecommendationTextVarargs(value: StringFilter*): Self = StObject.set(x, "RecommendationText", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordState(value: StringFilterList): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
+    inline def setRecordState(value: StringFilterList): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
+    inline def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
     
-    @scala.inline
-    def setRecordStateVarargs(value: StringFilter*): Self = StObject.set(x, "RecordState", js.Array(value :_*))
+    inline def setRecordStateVarargs(value: StringFilter*): Self = StObject.set(x, "RecordState", js.Array(value :_*))
     
-    @scala.inline
-    def setRelatedFindingsId(value: StringFilterList): Self = StObject.set(x, "RelatedFindingsId", value.asInstanceOf[js.Any])
+    inline def setRelatedFindingsId(value: StringFilterList): Self = StObject.set(x, "RelatedFindingsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedFindingsIdUndefined: Self = StObject.set(x, "RelatedFindingsId", js.undefined)
+    inline def setRelatedFindingsIdUndefined: Self = StObject.set(x, "RelatedFindingsId", js.undefined)
     
-    @scala.inline
-    def setRelatedFindingsIdVarargs(value: StringFilter*): Self = StObject.set(x, "RelatedFindingsId", js.Array(value :_*))
+    inline def setRelatedFindingsIdVarargs(value: StringFilter*): Self = StObject.set(x, "RelatedFindingsId", js.Array(value :_*))
     
-    @scala.inline
-    def setRelatedFindingsProductArn(value: StringFilterList): Self = StObject.set(x, "RelatedFindingsProductArn", value.asInstanceOf[js.Any])
+    inline def setRelatedFindingsProductArn(value: StringFilterList): Self = StObject.set(x, "RelatedFindingsProductArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedFindingsProductArnUndefined: Self = StObject.set(x, "RelatedFindingsProductArn", js.undefined)
+    inline def setRelatedFindingsProductArnUndefined: Self = StObject.set(x, "RelatedFindingsProductArn", js.undefined)
     
-    @scala.inline
-    def setRelatedFindingsProductArnVarargs(value: StringFilter*): Self = StObject.set(x, "RelatedFindingsProductArn", js.Array(value :_*))
+    inline def setRelatedFindingsProductArnVarargs(value: StringFilter*): Self = StObject.set(x, "RelatedFindingsProductArn", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIamInstanceProfileArn(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceIamInstanceProfileArn", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceIamInstanceProfileArn(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceIamInstanceProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIamInstanceProfileArnUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceIamInstanceProfileArn", js.undefined)
+    inline def setResourceAwsEc2InstanceIamInstanceProfileArnUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceIamInstanceProfileArn", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIamInstanceProfileArnVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceIamInstanceProfileArn", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceIamInstanceProfileArnVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceIamInstanceProfileArn", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceImageId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceImageId", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceImageId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceImageIdUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceImageId", js.undefined)
+    inline def setResourceAwsEc2InstanceImageIdUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceImageId", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceImageIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceImageId", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceImageIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceImageId", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIpV4Addresses(value: IpFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV4Addresses", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceIpV4Addresses(value: IpFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV4Addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIpV4AddressesUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceIpV4Addresses", js.undefined)
+    inline def setResourceAwsEc2InstanceIpV4AddressesUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceIpV4Addresses", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIpV4AddressesVarargs(value: IpFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV4Addresses", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceIpV4AddressesVarargs(value: IpFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV4Addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIpV6Addresses(value: IpFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV6Addresses", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceIpV6Addresses(value: IpFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV6Addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIpV6AddressesUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceIpV6Addresses", js.undefined)
+    inline def setResourceAwsEc2InstanceIpV6AddressesUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceIpV6Addresses", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceIpV6AddressesVarargs(value: IpFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV6Addresses", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceIpV6AddressesVarargs(value: IpFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceIpV6Addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceKeyName(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceKeyName", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceKeyName(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceKeyNameUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceKeyName", js.undefined)
+    inline def setResourceAwsEc2InstanceKeyNameUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceKeyName", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceKeyNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceKeyName", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceKeyNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceKeyName", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceLaunchedAt(value: DateFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceLaunchedAt", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceLaunchedAt(value: DateFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceLaunchedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceLaunchedAtUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceLaunchedAt", js.undefined)
+    inline def setResourceAwsEc2InstanceLaunchedAtUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceLaunchedAt", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceLaunchedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceLaunchedAt", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceLaunchedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceLaunchedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceSubnetId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceSubnetId", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceSubnetId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceSubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceSubnetIdUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceSubnetId", js.undefined)
+    inline def setResourceAwsEc2InstanceSubnetIdUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceSubnetId", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceSubnetIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceSubnetId", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceSubnetIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceSubnetId", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceType(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceType", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceType(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceTypeUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceType", js.undefined)
+    inline def setResourceAwsEc2InstanceTypeUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceType", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceTypeVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceType", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceTypeVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceType", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsEc2InstanceVpcId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceVpcId", value.asInstanceOf[js.Any])
+    inline def setResourceAwsEc2InstanceVpcId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsEc2InstanceVpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsEc2InstanceVpcIdUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceVpcId", js.undefined)
+    inline def setResourceAwsEc2InstanceVpcIdUndefined: Self = StObject.set(x, "ResourceAwsEc2InstanceVpcId", js.undefined)
     
-    @scala.inline
-    def setResourceAwsEc2InstanceVpcIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceVpcId", js.Array(value :_*))
+    inline def setResourceAwsEc2InstanceVpcIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsEc2InstanceVpcId", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyCreatedAt(value: DateFilterList): Self = StObject.set(x, "ResourceAwsIamAccessKeyCreatedAt", value.asInstanceOf[js.Any])
+    inline def setResourceAwsIamAccessKeyCreatedAt(value: DateFilterList): Self = StObject.set(x, "ResourceAwsIamAccessKeyCreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyCreatedAtUndefined: Self = StObject.set(x, "ResourceAwsIamAccessKeyCreatedAt", js.undefined)
+    inline def setResourceAwsIamAccessKeyCreatedAtUndefined: Self = StObject.set(x, "ResourceAwsIamAccessKeyCreatedAt", js.undefined)
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyCreatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ResourceAwsIamAccessKeyCreatedAt", js.Array(value :_*))
+    inline def setResourceAwsIamAccessKeyCreatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ResourceAwsIamAccessKeyCreatedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyStatus(value: StringFilterList): Self = StObject.set(x, "ResourceAwsIamAccessKeyStatus", value.asInstanceOf[js.Any])
+    inline def setResourceAwsIamAccessKeyStatus(value: StringFilterList): Self = StObject.set(x, "ResourceAwsIamAccessKeyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyStatusUndefined: Self = StObject.set(x, "ResourceAwsIamAccessKeyStatus", js.undefined)
+    inline def setResourceAwsIamAccessKeyStatusUndefined: Self = StObject.set(x, "ResourceAwsIamAccessKeyStatus", js.undefined)
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyStatusVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsIamAccessKeyStatus", js.Array(value :_*))
+    inline def setResourceAwsIamAccessKeyStatusVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsIamAccessKeyStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyUserName(value: StringFilterList): Self = StObject.set(x, "ResourceAwsIamAccessKeyUserName", value.asInstanceOf[js.Any])
+    inline def setResourceAwsIamAccessKeyUserName(value: StringFilterList): Self = StObject.set(x, "ResourceAwsIamAccessKeyUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyUserNameUndefined: Self = StObject.set(x, "ResourceAwsIamAccessKeyUserName", js.undefined)
+    inline def setResourceAwsIamAccessKeyUserNameUndefined: Self = StObject.set(x, "ResourceAwsIamAccessKeyUserName", js.undefined)
     
-    @scala.inline
-    def setResourceAwsIamAccessKeyUserNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsIamAccessKeyUserName", js.Array(value :_*))
+    inline def setResourceAwsIamAccessKeyUserNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsIamAccessKeyUserName", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsS3BucketOwnerId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsS3BucketOwnerId", value.asInstanceOf[js.Any])
+    inline def setResourceAwsS3BucketOwnerId(value: StringFilterList): Self = StObject.set(x, "ResourceAwsS3BucketOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsS3BucketOwnerIdUndefined: Self = StObject.set(x, "ResourceAwsS3BucketOwnerId", js.undefined)
+    inline def setResourceAwsS3BucketOwnerIdUndefined: Self = StObject.set(x, "ResourceAwsS3BucketOwnerId", js.undefined)
     
-    @scala.inline
-    def setResourceAwsS3BucketOwnerIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsS3BucketOwnerId", js.Array(value :_*))
+    inline def setResourceAwsS3BucketOwnerIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsS3BucketOwnerId", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceAwsS3BucketOwnerName(value: StringFilterList): Self = StObject.set(x, "ResourceAwsS3BucketOwnerName", value.asInstanceOf[js.Any])
+    inline def setResourceAwsS3BucketOwnerName(value: StringFilterList): Self = StObject.set(x, "ResourceAwsS3BucketOwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAwsS3BucketOwnerNameUndefined: Self = StObject.set(x, "ResourceAwsS3BucketOwnerName", js.undefined)
+    inline def setResourceAwsS3BucketOwnerNameUndefined: Self = StObject.set(x, "ResourceAwsS3BucketOwnerName", js.undefined)
     
-    @scala.inline
-    def setResourceAwsS3BucketOwnerNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsS3BucketOwnerName", js.Array(value :_*))
+    inline def setResourceAwsS3BucketOwnerNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceAwsS3BucketOwnerName", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceContainerImageId(value: StringFilterList): Self = StObject.set(x, "ResourceContainerImageId", value.asInstanceOf[js.Any])
+    inline def setResourceContainerImageId(value: StringFilterList): Self = StObject.set(x, "ResourceContainerImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceContainerImageIdUndefined: Self = StObject.set(x, "ResourceContainerImageId", js.undefined)
+    inline def setResourceContainerImageIdUndefined: Self = StObject.set(x, "ResourceContainerImageId", js.undefined)
     
-    @scala.inline
-    def setResourceContainerImageIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceContainerImageId", js.Array(value :_*))
+    inline def setResourceContainerImageIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceContainerImageId", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceContainerImageName(value: StringFilterList): Self = StObject.set(x, "ResourceContainerImageName", value.asInstanceOf[js.Any])
+    inline def setResourceContainerImageName(value: StringFilterList): Self = StObject.set(x, "ResourceContainerImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceContainerImageNameUndefined: Self = StObject.set(x, "ResourceContainerImageName", js.undefined)
+    inline def setResourceContainerImageNameUndefined: Self = StObject.set(x, "ResourceContainerImageName", js.undefined)
     
-    @scala.inline
-    def setResourceContainerImageNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceContainerImageName", js.Array(value :_*))
+    inline def setResourceContainerImageNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceContainerImageName", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceContainerLaunchedAt(value: DateFilterList): Self = StObject.set(x, "ResourceContainerLaunchedAt", value.asInstanceOf[js.Any])
+    inline def setResourceContainerLaunchedAt(value: DateFilterList): Self = StObject.set(x, "ResourceContainerLaunchedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceContainerLaunchedAtUndefined: Self = StObject.set(x, "ResourceContainerLaunchedAt", js.undefined)
+    inline def setResourceContainerLaunchedAtUndefined: Self = StObject.set(x, "ResourceContainerLaunchedAt", js.undefined)
     
-    @scala.inline
-    def setResourceContainerLaunchedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ResourceContainerLaunchedAt", js.Array(value :_*))
+    inline def setResourceContainerLaunchedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ResourceContainerLaunchedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceContainerName(value: StringFilterList): Self = StObject.set(x, "ResourceContainerName", value.asInstanceOf[js.Any])
+    inline def setResourceContainerName(value: StringFilterList): Self = StObject.set(x, "ResourceContainerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceContainerNameUndefined: Self = StObject.set(x, "ResourceContainerName", js.undefined)
+    inline def setResourceContainerNameUndefined: Self = StObject.set(x, "ResourceContainerName", js.undefined)
     
-    @scala.inline
-    def setResourceContainerNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceContainerName", js.Array(value :_*))
+    inline def setResourceContainerNameVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceContainerName", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceDetailsOther(value: MapFilterList): Self = StObject.set(x, "ResourceDetailsOther", value.asInstanceOf[js.Any])
+    inline def setResourceDetailsOther(value: MapFilterList): Self = StObject.set(x, "ResourceDetailsOther", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDetailsOtherUndefined: Self = StObject.set(x, "ResourceDetailsOther", js.undefined)
+    inline def setResourceDetailsOtherUndefined: Self = StObject.set(x, "ResourceDetailsOther", js.undefined)
     
-    @scala.inline
-    def setResourceDetailsOtherVarargs(value: MapFilter*): Self = StObject.set(x, "ResourceDetailsOther", js.Array(value :_*))
+    inline def setResourceDetailsOtherVarargs(value: MapFilter*): Self = StObject.set(x, "ResourceDetailsOther", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: StringFilterList): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: StringFilterList): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceId", js.Array(value :_*))
+    inline def setResourceIdVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceId", js.Array(value :_*))
     
-    @scala.inline
-    def setResourcePartition(value: StringFilterList): Self = StObject.set(x, "ResourcePartition", value.asInstanceOf[js.Any])
+    inline def setResourcePartition(value: StringFilterList): Self = StObject.set(x, "ResourcePartition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePartitionUndefined: Self = StObject.set(x, "ResourcePartition", js.undefined)
+    inline def setResourcePartitionUndefined: Self = StObject.set(x, "ResourcePartition", js.undefined)
     
-    @scala.inline
-    def setResourcePartitionVarargs(value: StringFilter*): Self = StObject.set(x, "ResourcePartition", js.Array(value :_*))
+    inline def setResourcePartitionVarargs(value: StringFilter*): Self = StObject.set(x, "ResourcePartition", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceRegion(value: StringFilterList): Self = StObject.set(x, "ResourceRegion", value.asInstanceOf[js.Any])
+    inline def setResourceRegion(value: StringFilterList): Self = StObject.set(x, "ResourceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRegionUndefined: Self = StObject.set(x, "ResourceRegion", js.undefined)
+    inline def setResourceRegionUndefined: Self = StObject.set(x, "ResourceRegion", js.undefined)
     
-    @scala.inline
-    def setResourceRegionVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceRegion", js.Array(value :_*))
+    inline def setResourceRegionVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceRegion", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceTags(value: MapFilterList): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
+    inline def setResourceTags(value: MapFilterList): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
+    inline def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
     
-    @scala.inline
-    def setResourceTagsVarargs(value: MapFilter*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
+    inline def setResourceTagsVarargs(value: MapFilter*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceType(value: StringFilterList): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: StringFilterList): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setResourceTypeVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceType", js.Array(value :_*))
+    inline def setResourceTypeVarargs(value: StringFilter*): Self = StObject.set(x, "ResourceType", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverityLabel(value: StringFilterList): Self = StObject.set(x, "SeverityLabel", value.asInstanceOf[js.Any])
+    inline def setSeverityLabel(value: StringFilterList): Self = StObject.set(x, "SeverityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityLabelUndefined: Self = StObject.set(x, "SeverityLabel", js.undefined)
+    inline def setSeverityLabelUndefined: Self = StObject.set(x, "SeverityLabel", js.undefined)
     
-    @scala.inline
-    def setSeverityLabelVarargs(value: StringFilter*): Self = StObject.set(x, "SeverityLabel", js.Array(value :_*))
+    inline def setSeverityLabelVarargs(value: StringFilter*): Self = StObject.set(x, "SeverityLabel", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverityNormalized(value: NumberFilterList): Self = StObject.set(x, "SeverityNormalized", value.asInstanceOf[js.Any])
+    inline def setSeverityNormalized(value: NumberFilterList): Self = StObject.set(x, "SeverityNormalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityNormalizedUndefined: Self = StObject.set(x, "SeverityNormalized", js.undefined)
+    inline def setSeverityNormalizedUndefined: Self = StObject.set(x, "SeverityNormalized", js.undefined)
     
-    @scala.inline
-    def setSeverityNormalizedVarargs(value: NumberFilter*): Self = StObject.set(x, "SeverityNormalized", js.Array(value :_*))
+    inline def setSeverityNormalizedVarargs(value: NumberFilter*): Self = StObject.set(x, "SeverityNormalized", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverityProduct(value: NumberFilterList): Self = StObject.set(x, "SeverityProduct", value.asInstanceOf[js.Any])
+    inline def setSeverityProduct(value: NumberFilterList): Self = StObject.set(x, "SeverityProduct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityProductUndefined: Self = StObject.set(x, "SeverityProduct", js.undefined)
+    inline def setSeverityProductUndefined: Self = StObject.set(x, "SeverityProduct", js.undefined)
     
-    @scala.inline
-    def setSeverityProductVarargs(value: NumberFilter*): Self = StObject.set(x, "SeverityProduct", js.Array(value :_*))
+    inline def setSeverityProductVarargs(value: NumberFilter*): Self = StObject.set(x, "SeverityProduct", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceUrl(value: StringFilterList): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: StringFilterList): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
     
-    @scala.inline
-    def setSourceUrlVarargs(value: StringFilter*): Self = StObject.set(x, "SourceUrl", js.Array(value :_*))
+    inline def setSourceUrlVarargs(value: StringFilter*): Self = StObject.set(x, "SourceUrl", js.Array(value :_*))
     
-    @scala.inline
-    def setThreatIntelIndicatorCategory(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorCategory", value.asInstanceOf[js.Any])
+    inline def setThreatIntelIndicatorCategory(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelIndicatorCategoryUndefined: Self = StObject.set(x, "ThreatIntelIndicatorCategory", js.undefined)
+    inline def setThreatIntelIndicatorCategoryUndefined: Self = StObject.set(x, "ThreatIntelIndicatorCategory", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicatorCategoryVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorCategory", js.Array(value :_*))
+    inline def setThreatIntelIndicatorCategoryVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorCategory", js.Array(value :_*))
     
-    @scala.inline
-    def setThreatIntelIndicatorLastObservedAt(value: DateFilterList): Self = StObject.set(x, "ThreatIntelIndicatorLastObservedAt", value.asInstanceOf[js.Any])
+    inline def setThreatIntelIndicatorLastObservedAt(value: DateFilterList): Self = StObject.set(x, "ThreatIntelIndicatorLastObservedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelIndicatorLastObservedAtUndefined: Self = StObject.set(x, "ThreatIntelIndicatorLastObservedAt", js.undefined)
+    inline def setThreatIntelIndicatorLastObservedAtUndefined: Self = StObject.set(x, "ThreatIntelIndicatorLastObservedAt", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicatorLastObservedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ThreatIntelIndicatorLastObservedAt", js.Array(value :_*))
+    inline def setThreatIntelIndicatorLastObservedAtVarargs(value: DateFilter*): Self = StObject.set(x, "ThreatIntelIndicatorLastObservedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setThreatIntelIndicatorSource(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorSource", value.asInstanceOf[js.Any])
+    inline def setThreatIntelIndicatorSource(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelIndicatorSourceUndefined: Self = StObject.set(x, "ThreatIntelIndicatorSource", js.undefined)
+    inline def setThreatIntelIndicatorSourceUndefined: Self = StObject.set(x, "ThreatIntelIndicatorSource", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicatorSourceUrl(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorSourceUrl", value.asInstanceOf[js.Any])
+    inline def setThreatIntelIndicatorSourceUrl(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorSourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelIndicatorSourceUrlUndefined: Self = StObject.set(x, "ThreatIntelIndicatorSourceUrl", js.undefined)
+    inline def setThreatIntelIndicatorSourceUrlUndefined: Self = StObject.set(x, "ThreatIntelIndicatorSourceUrl", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicatorSourceUrlVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorSourceUrl", js.Array(value :_*))
+    inline def setThreatIntelIndicatorSourceUrlVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorSourceUrl", js.Array(value :_*))
     
-    @scala.inline
-    def setThreatIntelIndicatorSourceVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorSource", js.Array(value :_*))
+    inline def setThreatIntelIndicatorSourceVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorSource", js.Array(value :_*))
     
-    @scala.inline
-    def setThreatIntelIndicatorType(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorType", value.asInstanceOf[js.Any])
+    inline def setThreatIntelIndicatorType(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelIndicatorTypeUndefined: Self = StObject.set(x, "ThreatIntelIndicatorType", js.undefined)
+    inline def setThreatIntelIndicatorTypeUndefined: Self = StObject.set(x, "ThreatIntelIndicatorType", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicatorTypeVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorType", js.Array(value :_*))
+    inline def setThreatIntelIndicatorTypeVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorType", js.Array(value :_*))
     
-    @scala.inline
-    def setThreatIntelIndicatorValue(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorValue", value.asInstanceOf[js.Any])
+    inline def setThreatIntelIndicatorValue(value: StringFilterList): Self = StObject.set(x, "ThreatIntelIndicatorValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelIndicatorValueUndefined: Self = StObject.set(x, "ThreatIntelIndicatorValue", js.undefined)
+    inline def setThreatIntelIndicatorValueUndefined: Self = StObject.set(x, "ThreatIntelIndicatorValue", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicatorValueVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorValue", js.Array(value :_*))
+    inline def setThreatIntelIndicatorValueVarargs(value: StringFilter*): Self = StObject.set(x, "ThreatIntelIndicatorValue", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: StringFilterList): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: StringFilterList): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     
-    @scala.inline
-    def setTitleVarargs(value: StringFilter*): Self = StObject.set(x, "Title", js.Array(value :_*))
+    inline def setTitleVarargs(value: StringFilter*): Self = StObject.set(x, "Title", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: StringFilterList): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: StringFilterList): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setTypeVarargs(value: StringFilter*): Self = StObject.set(x, "Type", js.Array(value :_*))
+    inline def setTypeVarargs(value: StringFilter*): Self = StObject.set(x, "Type", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdatedAt(value: DateFilterList): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: DateFilterList): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
     
-    @scala.inline
-    def setUpdatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "UpdatedAt", js.Array(value :_*))
+    inline def setUpdatedAtVarargs(value: DateFilter*): Self = StObject.set(x, "UpdatedAt", js.Array(value :_*))
     
-    @scala.inline
-    def setUserDefinedFields(value: MapFilterList): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
+    inline def setUserDefinedFields(value: MapFilterList): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
+    inline def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
     
-    @scala.inline
-    def setUserDefinedFieldsVarargs(value: MapFilter*): Self = StObject.set(x, "UserDefinedFields", js.Array(value :_*))
+    inline def setUserDefinedFieldsVarargs(value: MapFilter*): Self = StObject.set(x, "UserDefinedFields", js.Array(value :_*))
     
-    @scala.inline
-    def setVerificationState(value: StringFilterList): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
+    inline def setVerificationState(value: StringFilterList): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
+    inline def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
     
-    @scala.inline
-    def setVerificationStateVarargs(value: StringFilter*): Self = StObject.set(x, "VerificationState", js.Array(value :_*))
+    inline def setVerificationStateVarargs(value: StringFilter*): Self = StObject.set(x, "VerificationState", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkflowState(value: StringFilterList): Self = StObject.set(x, "WorkflowState", value.asInstanceOf[js.Any])
+    inline def setWorkflowState(value: StringFilterList): Self = StObject.set(x, "WorkflowState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowStateUndefined: Self = StObject.set(x, "WorkflowState", js.undefined)
+    inline def setWorkflowStateUndefined: Self = StObject.set(x, "WorkflowState", js.undefined)
     
-    @scala.inline
-    def setWorkflowStateVarargs(value: StringFilter*): Self = StObject.set(x, "WorkflowState", js.Array(value :_*))
+    inline def setWorkflowStateVarargs(value: StringFilter*): Self = StObject.set(x, "WorkflowState", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkflowStatus(value: StringFilterList): Self = StObject.set(x, "WorkflowStatus", value.asInstanceOf[js.Any])
+    inline def setWorkflowStatus(value: StringFilterList): Self = StObject.set(x, "WorkflowStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowStatusUndefined: Self = StObject.set(x, "WorkflowStatus", js.undefined)
+    inline def setWorkflowStatusUndefined: Self = StObject.set(x, "WorkflowStatus", js.undefined)
     
-    @scala.inline
-    def setWorkflowStatusVarargs(value: StringFilter*): Self = StObject.set(x, "WorkflowStatus", js.Array(value :_*))
+    inline def setWorkflowStatusVarargs(value: StringFilter*): Self = StObject.set(x, "WorkflowStatus", js.Array(value :_*))
   }
 }

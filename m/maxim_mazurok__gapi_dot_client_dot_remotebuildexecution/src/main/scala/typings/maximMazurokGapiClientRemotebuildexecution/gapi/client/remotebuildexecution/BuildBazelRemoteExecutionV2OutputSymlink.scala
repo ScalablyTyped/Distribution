@@ -24,34 +24,25 @@ trait BuildBazelRemoteExecutionV2OutputSymlink extends StObject {
 }
 object BuildBazelRemoteExecutionV2OutputSymlink {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2OutputSymlink = {
+  inline def apply(): BuildBazelRemoteExecutionV2OutputSymlink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2OutputSymlink]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2OutputSymlinkMutableBuilder[Self <: BuildBazelRemoteExecutionV2OutputSymlink] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2OutputSymlink](x: Self) {
     
-    @scala.inline
-    def setNodeProperties(value: js.Array[BuildBazelRemoteExecutionV2NodeProperty]): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
+    inline def setNodeProperties(value: js.Array[BuildBazelRemoteExecutionV2NodeProperty]): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
+    inline def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
     
-    @scala.inline
-    def setNodePropertiesVarargs(value: BuildBazelRemoteExecutionV2NodeProperty*): Self = StObject.set(x, "nodeProperties", js.Array(value :_*))
+    inline def setNodePropertiesVarargs(value: BuildBazelRemoteExecutionV2NodeProperty*): Self = StObject.set(x, "nodeProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

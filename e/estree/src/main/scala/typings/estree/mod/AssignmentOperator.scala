@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssignmentOperator extends StObject
 object AssignmentOperator {
   
-  @scala.inline
-  def `-Equalssign`: typings.estree.estreeStrings.`-Equalssign` = "-=".asInstanceOf[typings.estree.estreeStrings.`-Equalssign`]
+  inline def `-Equalssign`: typings.estree.estreeStrings.`-Equalssign` = "-=".asInstanceOf[typings.estree.estreeStrings.`-Equalssign`]
   
-  @scala.inline
-  def AmpersandEqualssign: typings.estree.estreeStrings.AmpersandEqualssign = "&=".asInstanceOf[typings.estree.estreeStrings.AmpersandEqualssign]
+  inline def AmpersandEqualssign: typings.estree.estreeStrings.AmpersandEqualssign = "&=".asInstanceOf[typings.estree.estreeStrings.AmpersandEqualssign]
   
-  @scala.inline
-  def AsteriskAsteriskEqualssign: typings.estree.estreeStrings.AsteriskAsteriskEqualssign = "**=".asInstanceOf[typings.estree.estreeStrings.AsteriskAsteriskEqualssign]
+  inline def AsteriskAsteriskEqualssign: typings.estree.estreeStrings.AsteriskAsteriskEqualssign = "**=".asInstanceOf[typings.estree.estreeStrings.AsteriskAsteriskEqualssign]
   
-  @scala.inline
-  def AsteriskEqualssign: typings.estree.estreeStrings.AsteriskEqualssign = "*=".asInstanceOf[typings.estree.estreeStrings.AsteriskEqualssign]
+  inline def AsteriskEqualssign: typings.estree.estreeStrings.AsteriskEqualssign = "*=".asInstanceOf[typings.estree.estreeStrings.AsteriskEqualssign]
   
-  @scala.inline
-  def Equalssign: typings.estree.estreeStrings.Equalssign = "=".asInstanceOf[typings.estree.estreeStrings.Equalssign]
+  inline def Equalssign: typings.estree.estreeStrings.Equalssign = "=".asInstanceOf[typings.estree.estreeStrings.Equalssign]
   
-  @scala.inline
-  def GreaterthansignGreaterthansignEqualssign: typings.estree.estreeStrings.GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[typings.estree.estreeStrings.GreaterthansignGreaterthansignEqualssign]
+  inline def GreaterthansignGreaterthansignEqualssign: typings.estree.estreeStrings.GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[typings.estree.estreeStrings.GreaterthansignGreaterthansignEqualssign]
   
-  @scala.inline
-  def GreaterthansignGreaterthansignGreaterthansignEqualssign: typings.estree.estreeStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign = ">>>=".asInstanceOf[typings.estree.estreeStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign]
+  inline def GreaterthansignGreaterthansignGreaterthansignEqualssign: typings.estree.estreeStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign = ">>>=".asInstanceOf[typings.estree.estreeStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign]
   
-  @scala.inline
-  def LessthansignLessthansignEqualssign: typings.estree.estreeStrings.LessthansignLessthansignEqualssign = "<<=".asInstanceOf[typings.estree.estreeStrings.LessthansignLessthansignEqualssign]
+  inline def LessthansignLessthansignEqualssign: typings.estree.estreeStrings.LessthansignLessthansignEqualssign = "<<=".asInstanceOf[typings.estree.estreeStrings.LessthansignLessthansignEqualssign]
   
-  @scala.inline
-  def PercentsignEqualssign: typings.estree.estreeStrings.PercentsignEqualssign = "%=".asInstanceOf[typings.estree.estreeStrings.PercentsignEqualssign]
+  inline def PercentsignEqualssign: typings.estree.estreeStrings.PercentsignEqualssign = "%=".asInstanceOf[typings.estree.estreeStrings.PercentsignEqualssign]
   
-  @scala.inline
-  def PlussignEqualssign: typings.estree.estreeStrings.PlussignEqualssign = "+=".asInstanceOf[typings.estree.estreeStrings.PlussignEqualssign]
+  inline def PlussignEqualssign: typings.estree.estreeStrings.PlussignEqualssign = "+=".asInstanceOf[typings.estree.estreeStrings.PlussignEqualssign]
   
-  @scala.inline
-  def SlashEqualssign: typings.estree.estreeStrings.SlashEqualssign = "/=".asInstanceOf[typings.estree.estreeStrings.SlashEqualssign]
+  inline def SlashEqualssign: typings.estree.estreeStrings.SlashEqualssign = "/=".asInstanceOf[typings.estree.estreeStrings.SlashEqualssign]
   
-  @scala.inline
-  def VerticallineEqualssign: typings.estree.estreeStrings.VerticallineEqualssign = "|=".asInstanceOf[typings.estree.estreeStrings.VerticallineEqualssign]
+  inline def VerticallineEqualssign: typings.estree.estreeStrings.VerticallineEqualssign = "|=".asInstanceOf[typings.estree.estreeStrings.VerticallineEqualssign]
   
-  @scala.inline
-  def `^Equalssign`: typings.estree.estreeStrings.`^Equalssign` = "^=".asInstanceOf[typings.estree.estreeStrings.`^Equalssign`]
+  inline def `^Equalssign`: typings.estree.estreeStrings.`^Equalssign` = "^=".asInstanceOf[typings.estree.estreeStrings.`^Equalssign`]
 }

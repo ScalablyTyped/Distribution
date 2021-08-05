@@ -23,19 +23,15 @@ trait ASPxClientCallbackErrorEventArgs
 }
 object ASPxClientCallbackErrorEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, message: String): ASPxClientCallbackErrorEventArgs = {
+  inline def apply(handled: Boolean, message: String): ASPxClientCallbackErrorEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCallbackErrorEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCallbackErrorEventArgsMutableBuilder[Self <: ASPxClientCallbackErrorEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCallbackErrorEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait PointsLocationCfg
 }
 object PointsLocationCfg {
   
-  @scala.inline
-  def apply(): PointsLocationCfg = {
+  inline def apply(): PointsLocationCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointsLocationCfg]
   }
   
-  @scala.inline
-  implicit class PointsLocationCfgMutableBuilder[Self <: PointsLocationCfg] (val x: Self) extends AnyVal {
+  extension [Self <: PointsLocationCfg](x: Self) {
     
-    @scala.inline
-    def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

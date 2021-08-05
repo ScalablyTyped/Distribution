@@ -16,34 +16,25 @@ trait ArtyomCommand extends StObject {
 }
 object ArtyomCommand {
   
-  @scala.inline
-  def apply(action: js.Function, indexes: js.Array[js.Any]): ArtyomCommand = {
+  inline def apply(action: js.Function, indexes: js.Array[js.Any]): ArtyomCommand = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtyomCommand]
   }
   
-  @scala.inline
-  implicit class ArtyomCommandMutableBuilder[Self <: ArtyomCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ArtyomCommand](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
-    @scala.inline
-    def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
+    inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
+    inline def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
   }
 }

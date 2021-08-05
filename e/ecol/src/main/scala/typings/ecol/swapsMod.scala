@@ -10,6 +10,5 @@ object swapsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def testSwaps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test_swaps")().asInstanceOf[Unit]
+  inline def testSwaps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test_swaps")().asInstanceOf[Unit]
 }

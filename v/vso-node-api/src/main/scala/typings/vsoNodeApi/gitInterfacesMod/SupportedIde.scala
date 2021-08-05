@@ -33,8 +33,7 @@ trait SupportedIde extends StObject {
 }
 object SupportedIde {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     downloadUrl: String,
     ideType: SupportedIdeType,
     name: String,
@@ -45,25 +44,18 @@ object SupportedIde {
     __obj.asInstanceOf[SupportedIde]
   }
   
-  @scala.inline
-  implicit class SupportedIdeMutableBuilder[Self <: SupportedIde] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedIde](x: Self) {
     
-    @scala.inline
-    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdeType(value: SupportedIdeType): Self = StObject.set(x, "ideType", value.asInstanceOf[js.Any])
+    inline def setIdeType(value: SupportedIdeType): Self = StObject.set(x, "ideType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolHandlerUrl(value: String): Self = StObject.set(x, "protocolHandlerUrl", value.asInstanceOf[js.Any])
+    inline def setProtocolHandlerUrl(value: String): Self = StObject.set(x, "protocolHandlerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPlatforms(value: js.Array[String]): Self = StObject.set(x, "supportedPlatforms", value.asInstanceOf[js.Any])
+    inline def setSupportedPlatforms(value: js.Array[String]): Self = StObject.set(x, "supportedPlatforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPlatformsVarargs(value: String*): Self = StObject.set(x, "supportedPlatforms", js.Array(value :_*))
+    inline def setSupportedPlatformsVarargs(value: String*): Self = StObject.set(x, "supportedPlatforms", js.Array(value :_*))
   }
 }

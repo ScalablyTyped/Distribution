@@ -78,89 +78,62 @@ trait Signature
 }
 object Signature {
   
-  @scala.inline
-  def apply(`type`: js.Array[Coding], when: instant): Signature = {
+  inline def apply(`type`: js.Array[Coding], when: instant): Signature = {
     val __obj = js.Dynamic.literal(when = when.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Signature]
   }
   
-  @scala.inline
-  implicit class SignatureMutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
+  extension [Self <: Signature](x: Self) {
     
-    @scala.inline
-    def setBlob(value: base64Binary): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: base64Binary): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
-    @scala.inline
-    def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfReference(value: Reference): Self = StObject.set(x, "onBehalfOfReference", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfReference(value: Reference): Self = StObject.set(x, "onBehalfOfReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfReferenceUndefined: Self = StObject.set(x, "onBehalfOfReference", js.undefined)
+    inline def setOnBehalfOfReferenceUndefined: Self = StObject.set(x, "onBehalfOfReference", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfUri(value: uri): Self = StObject.set(x, "onBehalfOfUri", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfUri(value: uri): Self = StObject.set(x, "onBehalfOfUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfUriUndefined: Self = StObject.set(x, "onBehalfOfUri", js.undefined)
+    inline def setOnBehalfOfUriUndefined: Self = StObject.set(x, "onBehalfOfUri", js.undefined)
     
-    @scala.inline
-    def setType(value: js.Array[Coding]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[Coding]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: Coding*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: Coding*): Self = StObject.set(x, "type", js.Array(value :_*))
     
-    @scala.inline
-    def setWhen(value: instant): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: instant): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhoReference(value: Reference): Self = StObject.set(x, "whoReference", value.asInstanceOf[js.Any])
+    inline def setWhoReference(value: Reference): Self = StObject.set(x, "whoReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhoReferenceUndefined: Self = StObject.set(x, "whoReference", js.undefined)
+    inline def setWhoReferenceUndefined: Self = StObject.set(x, "whoReference", js.undefined)
     
-    @scala.inline
-    def setWhoUri(value: uri): Self = StObject.set(x, "whoUri", value.asInstanceOf[js.Any])
+    inline def setWhoUri(value: uri): Self = StObject.set(x, "whoUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhoUriUndefined: Self = StObject.set(x, "whoUri", js.undefined)
+    inline def setWhoUriUndefined: Self = StObject.set(x, "whoUri", js.undefined)
     
-    @scala.inline
-    def set_blob(value: Element): Self = StObject.set(x, "_blob", value.asInstanceOf[js.Any])
+    inline def set_blob(value: Element): Self = StObject.set(x, "_blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_blobUndefined: Self = StObject.set(x, "_blob", js.undefined)
+    inline def set_blobUndefined: Self = StObject.set(x, "_blob", js.undefined)
     
-    @scala.inline
-    def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
+    inline def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
+    inline def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
     
-    @scala.inline
-    def set_onBehalfOfUri(value: Element): Self = StObject.set(x, "_onBehalfOfUri", value.asInstanceOf[js.Any])
+    inline def set_onBehalfOfUri(value: Element): Self = StObject.set(x, "_onBehalfOfUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_onBehalfOfUriUndefined: Self = StObject.set(x, "_onBehalfOfUri", js.undefined)
+    inline def set_onBehalfOfUriUndefined: Self = StObject.set(x, "_onBehalfOfUri", js.undefined)
     
-    @scala.inline
-    def set_when(value: Element): Self = StObject.set(x, "_when", value.asInstanceOf[js.Any])
+    inline def set_when(value: Element): Self = StObject.set(x, "_when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_whenUndefined: Self = StObject.set(x, "_when", js.undefined)
+    inline def set_whenUndefined: Self = StObject.set(x, "_when", js.undefined)
     
-    @scala.inline
-    def set_whoUri(value: Element): Self = StObject.set(x, "_whoUri", value.asInstanceOf[js.Any])
+    inline def set_whoUri(value: Element): Self = StObject.set(x, "_whoUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_whoUriUndefined: Self = StObject.set(x, "_whoUri", js.undefined)
+    inline def set_whoUriUndefined: Self = StObject.set(x, "_whoUri", js.undefined)
   }
 }

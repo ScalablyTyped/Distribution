@@ -27,34 +27,25 @@ trait carClassifyOptions
 }
 object carClassifyOptions {
   
-  @scala.inline
-  def apply(image: String): carClassifyOptions = {
+  inline def apply(image: String): carClassifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[carClassifyOptions]
   }
   
-  @scala.inline
-  implicit class carClassifyOptionsMutableBuilder[Self <: carClassifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: carClassifyOptions](x: Self) {
     
-    @scala.inline
-    def setColor_result(value: String): Self = StObject.set(x, "color_result", value.asInstanceOf[js.Any])
+    inline def setColor_result(value: String): Self = StObject.set(x, "color_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor_resultUndefined: Self = StObject.set(x, "color_result", js.undefined)
+    inline def setColor_resultUndefined: Self = StObject.set(x, "color_result", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ carClassifyResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ carClassifyResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTop_num(value: Double): Self = StObject.set(x, "top_num", value.asInstanceOf[js.Any])
+    inline def setTop_num(value: Double): Self = StObject.set(x, "top_num", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop_numUndefined: Self = StObject.set(x, "top_num", js.undefined)
+    inline def setTop_numUndefined: Self = StObject.set(x, "top_num", js.undefined)
   }
 }

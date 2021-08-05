@@ -20,10 +20,8 @@ trait RemoteContentProviderChangeAction extends StObject
 object RemoteContentProviderChangeAction {
   
   /** The indicator that a remote content provider has been added. */
-  @scala.inline
-  def ADDED: `0` = 0.asInstanceOf[`0`]
+  inline def ADDED: `0` = 0.asInstanceOf[`0`]
   
   /** The indicator that a remote content provider has been removed. */
-  @scala.inline
-  def REMOVED: `1` = 1.asInstanceOf[`1`]
+  inline def REMOVED: `1` = 1.asInstanceOf[`1`]
 }

@@ -17,25 +17,19 @@ trait As extends StObject {
 }
 object As {
   
-  @scala.inline
-  def apply(): As = {
+  inline def apply(): As = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[As]
   }
   
-  @scala.inline
-  implicit class AsMutableBuilder[Self <: As] (val x: Self) extends AnyVal {
+  extension [Self <: As](x: Self) {
     
-    @scala.inline
-    def setAs(value: button): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: button): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

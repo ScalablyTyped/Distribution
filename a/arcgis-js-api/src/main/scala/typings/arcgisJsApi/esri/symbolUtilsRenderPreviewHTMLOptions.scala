@@ -69,8 +69,7 @@ trait symbolUtilsRenderPreviewHTMLOptions
 }
 object symbolUtilsRenderPreviewHTMLOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -79,55 +78,38 @@ object symbolUtilsRenderPreviewHTMLOptions {
     __obj.asInstanceOf[symbolUtilsRenderPreviewHTMLOptions]
   }
   
-  @scala.inline
-  implicit class symbolUtilsRenderPreviewHTMLOptionsMutableBuilder[Self <: symbolUtilsRenderPreviewHTMLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: symbolUtilsRenderPreviewHTMLOptions](x: Self) {
     
-    @scala.inline
-    def setDisableUpsampling(value: Boolean): Self = StObject.set(x, "disableUpsampling", value.asInstanceOf[js.Any])
+    inline def setDisableUpsampling(value: Boolean): Self = StObject.set(x, "disableUpsampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUpsamplingUndefined: Self = StObject.set(x, "disableUpsampling", js.undefined)
+    inline def setDisableUpsamplingUndefined: Self = StObject.set(x, "disableUpsampling", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setRotation(value: String): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: String): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSymbolConfig(value: String): Self = StObject.set(x, "symbolConfig", value.asInstanceOf[js.Any])
+    inline def setSymbolConfig(value: String): Self = StObject.set(x, "symbolConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolConfigUndefined: Self = StObject.set(x, "symbolConfig", js.undefined)
+    inline def setSymbolConfigUndefined: Self = StObject.set(x, "symbolConfig", js.undefined)
   }
 }

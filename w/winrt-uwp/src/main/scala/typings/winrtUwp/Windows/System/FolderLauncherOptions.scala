@@ -18,19 +18,15 @@ trait FolderLauncherOptions extends StObject {
 }
 object FolderLauncherOptions {
   
-  @scala.inline
-  def apply(desiredRemainingView: ViewSizePreference, itemsToSelect: IVector[IStorageItem]): FolderLauncherOptions = {
+  inline def apply(desiredRemainingView: ViewSizePreference, itemsToSelect: IVector[IStorageItem]): FolderLauncherOptions = {
     val __obj = js.Dynamic.literal(desiredRemainingView = desiredRemainingView.asInstanceOf[js.Any], itemsToSelect = itemsToSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderLauncherOptions]
   }
   
-  @scala.inline
-  implicit class FolderLauncherOptionsMutableBuilder[Self <: FolderLauncherOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FolderLauncherOptions](x: Self) {
     
-    @scala.inline
-    def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
+    inline def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsToSelect(value: IVector[IStorageItem]): Self = StObject.set(x, "itemsToSelect", value.asInstanceOf[js.Any])
+    inline def setItemsToSelect(value: IVector[IStorageItem]): Self = StObject.set(x, "itemsToSelect", value.asInstanceOf[js.Any])
   }
 }

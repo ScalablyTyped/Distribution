@@ -17,19 +17,15 @@ trait EnableCertificateAuthorityRequest extends StObject {
 }
 object EnableCertificateAuthorityRequest {
   
-  @scala.inline
-  def apply(): EnableCertificateAuthorityRequest = {
+  inline def apply(): EnableCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableCertificateAuthorityRequest]
   }
   
-  @scala.inline
-  implicit class EnableCertificateAuthorityRequestMutableBuilder[Self <: EnableCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableCertificateAuthorityRequest](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

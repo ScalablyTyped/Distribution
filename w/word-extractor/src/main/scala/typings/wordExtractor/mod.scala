@@ -37,17 +37,14 @@ object mod {
   }
   object WordExtractor {
     
-    @scala.inline
-    def apply(extract: String => js.Promise[Document]): WordExtractor = {
+    inline def apply(extract: String => js.Promise[Document]): WordExtractor = {
       val __obj = js.Dynamic.literal(extract = js.Any.fromFunction1(extract))
       __obj.asInstanceOf[WordExtractor]
     }
     
-    @scala.inline
-    implicit class WordExtractorMutableBuilder[Self <: WordExtractor] (val x: Self) extends AnyVal {
+    extension [Self <: WordExtractor](x: Self) {
       
-      @scala.inline
-      def setExtract(value: String => js.Promise[Document]): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
+      inline def setExtract(value: String => js.Promise[Document]): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
     }
   }
 }

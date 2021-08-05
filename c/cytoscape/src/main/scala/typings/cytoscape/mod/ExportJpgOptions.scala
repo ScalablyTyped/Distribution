@@ -17,19 +17,15 @@ trait ExportJpgOptions
 }
 object ExportJpgOptions {
   
-  @scala.inline
-  def apply(): ExportJpgOptions = {
+  inline def apply(): ExportJpgOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportJpgOptions]
   }
   
-  @scala.inline
-  implicit class ExportJpgOptionsMutableBuilder[Self <: ExportJpgOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportJpgOptions](x: Self) {
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

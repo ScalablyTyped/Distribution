@@ -13,16 +13,13 @@ trait AudioTrack extends StObject {
 }
 object AudioTrack {
   
-  @scala.inline
-  def apply(Track: integerMin1): AudioTrack = {
+  inline def apply(Track: integerMin1): AudioTrack = {
     val __obj = js.Dynamic.literal(Track = Track.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTrack]
   }
   
-  @scala.inline
-  implicit class AudioTrackMutableBuilder[Self <: AudioTrack] (val x: Self) extends AnyVal {
+  extension [Self <: AudioTrack](x: Self) {
     
-    @scala.inline
-    def setTrack(value: integerMin1): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: integerMin1): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
   }
 }

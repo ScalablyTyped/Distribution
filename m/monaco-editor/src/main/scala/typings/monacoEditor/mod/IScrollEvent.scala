@@ -24,8 +24,7 @@ trait IScrollEvent extends StObject {
 }
 object IScrollEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     scrollHeight: Double,
     scrollHeightChanged: Boolean,
     scrollLeft: Double,
@@ -39,31 +38,22 @@ object IScrollEvent {
     __obj.asInstanceOf[IScrollEvent]
   }
   
-  @scala.inline
-  implicit class IScrollEventMutableBuilder[Self <: IScrollEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IScrollEvent](x: Self) {
     
-    @scala.inline
-    def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+    inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollHeightChanged(value: Boolean): Self = StObject.set(x, "scrollHeightChanged", value.asInstanceOf[js.Any])
+    inline def setScrollHeightChanged(value: Boolean): Self = StObject.set(x, "scrollHeightChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeftChanged(value: Boolean): Self = StObject.set(x, "scrollLeftChanged", value.asInstanceOf[js.Any])
+    inline def setScrollLeftChanged(value: Boolean): Self = StObject.set(x, "scrollLeftChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTopChanged(value: Boolean): Self = StObject.set(x, "scrollTopChanged", value.asInstanceOf[js.Any])
+    inline def setScrollTopChanged(value: Boolean): Self = StObject.set(x, "scrollTopChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
+    inline def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollWidthChanged(value: Boolean): Self = StObject.set(x, "scrollWidthChanged", value.asInstanceOf[js.Any])
+    inline def setScrollWidthChanged(value: Boolean): Self = StObject.set(x, "scrollWidthChanged", value.asInstanceOf[js.Any])
   }
 }

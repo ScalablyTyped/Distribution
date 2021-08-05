@@ -5,16 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def forEachChild[T](
+inline def forEachChild[T](
   node: scala.Unit,
   cbNode: js.Function1[
   /* node */ typings.grammarkdown.nodesMod.Node[typings.grammarkdown.tokensMod.SyntaxKind], 
   js.UndefOr[T]
 ]
 ): js.UndefOr[T] = (typings.grammarkdown.nodesMod.^.asInstanceOf[js.Dynamic].applyDynamic("forEachChild")(node.asInstanceOf[js.Any], cbNode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-@scala.inline
-def forEachChild[T](
+inline def forEachChild[T](
   node: typings.grammarkdown.nodesMod.Node[typings.grammarkdown.tokensMod.SyntaxKind],
   cbNode: js.Function1[
   /* node */ typings.grammarkdown.nodesMod.Node[typings.grammarkdown.tokensMod.SyntaxKind], 

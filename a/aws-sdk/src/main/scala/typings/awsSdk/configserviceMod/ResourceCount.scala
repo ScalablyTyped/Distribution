@@ -18,25 +18,19 @@ trait ResourceCount extends StObject {
 }
 object ResourceCount {
   
-  @scala.inline
-  def apply(): ResourceCount = {
+  inline def apply(): ResourceCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceCount]
   }
   
-  @scala.inline
-  implicit class ResourceCountMutableBuilder[Self <: ResourceCount] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

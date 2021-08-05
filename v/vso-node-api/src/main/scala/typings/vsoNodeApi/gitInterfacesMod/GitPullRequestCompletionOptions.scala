@@ -43,8 +43,7 @@ trait GitPullRequestCompletionOptions extends StObject {
 }
 object GitPullRequestCompletionOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bypassPolicy: Boolean,
     bypassReason: String,
     deleteSourceBranch: Boolean,
@@ -57,28 +56,20 @@ object GitPullRequestCompletionOptions {
     __obj.asInstanceOf[GitPullRequestCompletionOptions]
   }
   
-  @scala.inline
-  implicit class GitPullRequestCompletionOptionsMutableBuilder[Self <: GitPullRequestCompletionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestCompletionOptions](x: Self) {
     
-    @scala.inline
-    def setBypassPolicy(value: Boolean): Self = StObject.set(x, "bypassPolicy", value.asInstanceOf[js.Any])
+    inline def setBypassPolicy(value: Boolean): Self = StObject.set(x, "bypassPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassReason(value: String): Self = StObject.set(x, "bypassReason", value.asInstanceOf[js.Any])
+    inline def setBypassReason(value: String): Self = StObject.set(x, "bypassReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteSourceBranch(value: Boolean): Self = StObject.set(x, "deleteSourceBranch", value.asInstanceOf[js.Any])
+    inline def setDeleteSourceBranch(value: Boolean): Self = StObject.set(x, "deleteSourceBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeCommitMessage(value: String): Self = StObject.set(x, "mergeCommitMessage", value.asInstanceOf[js.Any])
+    inline def setMergeCommitMessage(value: String): Self = StObject.set(x, "mergeCommitMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquashMerge(value: Boolean): Self = StObject.set(x, "squashMerge", value.asInstanceOf[js.Any])
+    inline def setSquashMerge(value: Boolean): Self = StObject.set(x, "squashMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionWorkItems(value: Boolean): Self = StObject.set(x, "transitionWorkItems", value.asInstanceOf[js.Any])
+    inline def setTransitionWorkItems(value: Boolean): Self = StObject.set(x, "transitionWorkItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggeredByAutoComplete(value: Boolean): Self = StObject.set(x, "triggeredByAutoComplete", value.asInstanceOf[js.Any])
+    inline def setTriggeredByAutoComplete(value: Boolean): Self = StObject.set(x, "triggeredByAutoComplete", value.asInstanceOf[js.Any])
   }
 }

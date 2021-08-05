@@ -24,25 +24,19 @@ trait ParamsResourceSurveysDelete
 }
 object ParamsResourceSurveysDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceSurveysDelete = {
+  inline def apply(): ParamsResourceSurveysDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSurveysDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSurveysDeleteMutableBuilder[Self <: ParamsResourceSurveysDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSurveysDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setSurveyUrlId(value: String): Self = StObject.set(x, "surveyUrlId", value.asInstanceOf[js.Any])
+    inline def setSurveyUrlId(value: String): Self = StObject.set(x, "surveyUrlId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurveyUrlIdUndefined: Self = StObject.set(x, "surveyUrlId", js.undefined)
+    inline def setSurveyUrlIdUndefined: Self = StObject.set(x, "surveyUrlId", js.undefined)
   }
 }

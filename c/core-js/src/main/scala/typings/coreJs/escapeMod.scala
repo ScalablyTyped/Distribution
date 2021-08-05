@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object escapeMod {
   
   /* was `typeof core.RegExp.escape` */
-  @scala.inline
-  def apply(str: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def apply(str: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   @JSImport("core-js/fn/regexp/escape", JSImport.Namespace)
   @js.native

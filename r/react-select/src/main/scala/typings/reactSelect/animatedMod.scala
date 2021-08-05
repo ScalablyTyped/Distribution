@@ -19,10 +19,8 @@ object animatedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SelectComponents[OptionType]]
-  @scala.inline
-  def default[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[SelectComponents[OptionType]]
+  inline def default[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SelectComponents[OptionType]]
+  inline def default[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[SelectComponents[OptionType]]
   
   @JSImport("react-select/animated", "Input")
   @js.native
@@ -44,8 +42,6 @@ object animatedMod {
   @js.native
   val ValueContainer: ComponentType[AnimatedValueContainerProps[js.Any]] = js.native
   
-  @scala.inline
-  def makeAnimated[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAnimated")().asInstanceOf[SelectComponents[OptionType]]
-  @scala.inline
-  def makeAnimated[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAnimated")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[SelectComponents[OptionType]]
+  inline def makeAnimated[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAnimated")().asInstanceOf[SelectComponents[OptionType]]
+  inline def makeAnimated[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAnimated")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[SelectComponents[OptionType]]
 }

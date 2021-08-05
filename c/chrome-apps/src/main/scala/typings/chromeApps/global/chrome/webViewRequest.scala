@@ -45,7 +45,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.AddRequestCookie = js.native
   }
   
@@ -63,7 +63,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseCookie = js.native
   }
   
@@ -83,7 +83,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader = js.native
   }
   
@@ -97,7 +97,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest = js.native
   }
   
@@ -120,7 +120,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.EditRequestCookie = js.native
   }
   
@@ -142,7 +142,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.EditResponseCookie = js.native
   }
   
@@ -159,7 +159,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules = js.native
   }
   
@@ -178,7 +178,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectByRegEx = js.native
   }
   
@@ -193,7 +193,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectRequest = js.native
   }
   
@@ -207,7 +207,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument = js.native
   }
   
@@ -221,7 +221,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage = js.native
   }
   
@@ -239,7 +239,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveRequestCookie = js.native
   }
   
@@ -259,7 +259,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveRequestHeader = js.native
   }
   
@@ -277,7 +277,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseCookie = js.native
   }
   
@@ -294,7 +294,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader = js.native
   }
   
@@ -311,7 +311,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.RequestMatcher = js.native
   }
   
@@ -328,7 +328,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.SendMessageToExtension = js.native
   }
   
@@ -348,7 +348,7 @@ object webViewRequest {
     /* CompleteClass */
     override val instanceType: String = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     override val typeGuard: typings.chromeApps.chromeAppsStrings.SetRequestHeader = js.native
   }
 }

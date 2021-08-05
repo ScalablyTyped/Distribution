@@ -11,19 +11,15 @@ trait IPanoramaInfo extends StObject {
 }
 object IPanoramaInfo {
   
-  @scala.inline
-  def apply(): IPanoramaInfo = {
+  inline def apply(): IPanoramaInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPanoramaInfo]
   }
   
-  @scala.inline
-  implicit class IPanoramaInfoMutableBuilder[Self <: IPanoramaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IPanoramaInfo](x: Self) {
     
-    @scala.inline
-    def setCd(value: String): Self = StObject.set(x, "cd", value.asInstanceOf[js.Any])
+    inline def setCd(value: String): Self = StObject.set(x, "cd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdUndefined: Self = StObject.set(x, "cd", js.undefined)
+    inline def setCdUndefined: Self = StObject.set(x, "cd", js.undefined)
   }
 }

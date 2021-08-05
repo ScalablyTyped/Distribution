@@ -21,49 +21,35 @@ trait UtilBarOption extends StObject {
 }
 object UtilBarOption {
   
-  @scala.inline
-  def apply(): UtilBarOption = {
+  inline def apply(): UtilBarOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UtilBarOption]
   }
   
-  @scala.inline
-  implicit class UtilBarOptionMutableBuilder[Self <: UtilBarOption] (val x: Self) extends AnyVal {
+  extension [Self <: UtilBarOption](x: Self) {
     
-    @scala.inline
-    def setBar1(value: Boolean | String): Self = StObject.set(x, "bar1", value.asInstanceOf[js.Any])
+    inline def setBar1(value: Boolean | String): Self = StObject.set(x, "bar1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBar1Undefined: Self = StObject.set(x, "bar1", js.undefined)
+    inline def setBar1Undefined: Self = StObject.set(x, "bar1", js.undefined)
     
-    @scala.inline
-    def setBar2(value: Boolean | String): Self = StObject.set(x, "bar2", value.asInstanceOf[js.Any])
+    inline def setBar2(value: Boolean | String): Self = StObject.set(x, "bar2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBar2Undefined: Self = StObject.set(x, "bar2", js.undefined)
+    inline def setBar2Undefined: Self = StObject.set(x, "bar2", js.undefined)
     
-    @scala.inline
-    def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+    inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+    inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    @scala.inline
-    def setClick(value: /* type */ String => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: /* type */ String => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setCss(value: StringDictionary[String | Double]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: StringDictionary[String | Double]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setShowHeight(value: Double): Self = StObject.set(x, "showHeight", value.asInstanceOf[js.Any])
+    inline def setShowHeight(value: Double): Self = StObject.set(x, "showHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHeightUndefined: Self = StObject.set(x, "showHeight", js.undefined)
+    inline def setShowHeightUndefined: Self = StObject.set(x, "showHeight", js.undefined)
   }
 }

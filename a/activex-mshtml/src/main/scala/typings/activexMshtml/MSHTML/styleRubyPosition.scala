@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleRubyPosition extends StObject
 object styleRubyPosition {
   
-  @scala.inline
-  def styleRubyPositionAbove: `1` = 1.asInstanceOf[`1`]
+  inline def styleRubyPositionAbove: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleRubyPositionInline: `2` = 2.asInstanceOf[`2`]
+  inline def styleRubyPositionInline: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleRubyPositionNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleRubyPositionNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleRubyPosition_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleRubyPosition_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

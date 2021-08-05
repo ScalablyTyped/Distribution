@@ -19,22 +19,17 @@ trait MigrationsSetLfsPreferenceEndpoint extends StObject {
 }
 object MigrationsSetLfsPreferenceEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, use_lfs: opt_in | opt_out): MigrationsSetLfsPreferenceEndpoint = {
+  inline def apply(owner: String, repo: String, use_lfs: opt_in | opt_out): MigrationsSetLfsPreferenceEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], use_lfs = use_lfs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsSetLfsPreferenceEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsSetLfsPreferenceEndpointMutableBuilder[Self <: MigrationsSetLfsPreferenceEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsSetLfsPreferenceEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_lfs(value: opt_in | opt_out): Self = StObject.set(x, "use_lfs", value.asInstanceOf[js.Any])
+    inline def setUse_lfs(value: opt_in | opt_out): Self = StObject.set(x, "use_lfs", value.asInstanceOf[js.Any])
   }
 }

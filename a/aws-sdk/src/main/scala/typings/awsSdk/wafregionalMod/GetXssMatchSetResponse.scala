@@ -13,19 +13,15 @@ trait GetXssMatchSetResponse extends StObject {
 }
 object GetXssMatchSetResponse {
   
-  @scala.inline
-  def apply(): GetXssMatchSetResponse = {
+  inline def apply(): GetXssMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetXssMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class GetXssMatchSetResponseMutableBuilder[Self <: GetXssMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetXssMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setXssMatchSet(value: XssMatchSet): Self = StObject.set(x, "XssMatchSet", value.asInstanceOf[js.Any])
+    inline def setXssMatchSet(value: XssMatchSet): Self = StObject.set(x, "XssMatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchSetUndefined: Self = StObject.set(x, "XssMatchSet", js.undefined)
+    inline def setXssMatchSetUndefined: Self = StObject.set(x, "XssMatchSet", js.undefined)
   }
 }

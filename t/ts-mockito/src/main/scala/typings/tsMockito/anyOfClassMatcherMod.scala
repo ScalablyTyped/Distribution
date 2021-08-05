@@ -13,6 +13,6 @@ object anyOfClassMatcherMod {
   class AnyOfClassMatcher[T] protected () extends Matcher {
     def this(expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]) = this()
     
-    var expectedClass: js.Any = js.native
+    /* private */ var expectedClass: js.Any = js.native
   }
 }

@@ -12,25 +12,19 @@ trait DatePickerAnimation extends StObject {
 }
 object DatePickerAnimation {
   
-  @scala.inline
-  def apply(): DatePickerAnimation = {
+  inline def apply(): DatePickerAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatePickerAnimation]
   }
   
-  @scala.inline
-  implicit class DatePickerAnimationMutableBuilder[Self <: DatePickerAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: DatePickerAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: DatePickerAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: DatePickerAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: DatePickerAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: DatePickerAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

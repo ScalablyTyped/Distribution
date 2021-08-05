@@ -17,31 +17,23 @@ trait IsInstanceUpgradeableResponse extends StObject {
 }
 object IsInstanceUpgradeableResponse {
   
-  @scala.inline
-  def apply(): IsInstanceUpgradeableResponse = {
+  inline def apply(): IsInstanceUpgradeableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsInstanceUpgradeableResponse]
   }
   
-  @scala.inline
-  implicit class IsInstanceUpgradeableResponseMutableBuilder[Self <: IsInstanceUpgradeableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IsInstanceUpgradeableResponse](x: Self) {
     
-    @scala.inline
-    def setUpgradeInfo(value: String): Self = StObject.set(x, "upgradeInfo", value.asInstanceOf[js.Any])
+    inline def setUpgradeInfo(value: String): Self = StObject.set(x, "upgradeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeInfoUndefined: Self = StObject.set(x, "upgradeInfo", js.undefined)
+    inline def setUpgradeInfoUndefined: Self = StObject.set(x, "upgradeInfo", js.undefined)
     
-    @scala.inline
-    def setUpgradeVersion(value: String): Self = StObject.set(x, "upgradeVersion", value.asInstanceOf[js.Any])
+    inline def setUpgradeVersion(value: String): Self = StObject.set(x, "upgradeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeVersionUndefined: Self = StObject.set(x, "upgradeVersion", js.undefined)
+    inline def setUpgradeVersionUndefined: Self = StObject.set(x, "upgradeVersion", js.undefined)
     
-    @scala.inline
-    def setUpgradeable(value: Boolean): Self = StObject.set(x, "upgradeable", value.asInstanceOf[js.Any])
+    inline def setUpgradeable(value: Boolean): Self = StObject.set(x, "upgradeable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeableUndefined: Self = StObject.set(x, "upgradeable", js.undefined)
+    inline def setUpgradeableUndefined: Self = StObject.set(x, "upgradeable", js.undefined)
   }
 }

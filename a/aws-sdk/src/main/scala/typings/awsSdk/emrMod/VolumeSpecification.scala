@@ -23,25 +23,19 @@ trait VolumeSpecification extends StObject {
 }
 object VolumeSpecification {
   
-  @scala.inline
-  def apply(SizeInGB: Integer, VolumeType: String): VolumeSpecification = {
+  inline def apply(SizeInGB: Integer, VolumeType: String): VolumeSpecification = {
     val __obj = js.Dynamic.literal(SizeInGB = SizeInGB.asInstanceOf[js.Any], VolumeType = VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeSpecification]
   }
   
-  @scala.inline
-  implicit class VolumeSpecificationMutableBuilder[Self <: VolumeSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeSpecification](x: Self) {
     
-    @scala.inline
-    def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
-    @scala.inline
-    def setSizeInGB(value: Integer): Self = StObject.set(x, "SizeInGB", value.asInstanceOf[js.Any])
+    inline def setSizeInGB(value: Integer): Self = StObject.set(x, "SizeInGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
   }
 }

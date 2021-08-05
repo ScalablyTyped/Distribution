@@ -36,8 +36,7 @@ trait UpdateRootElement
      with XChangesBatch
 object UpdateRootElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsProperty: Property,
     DefaultAsProperty: XInterface,
     HierarchicalName: String,

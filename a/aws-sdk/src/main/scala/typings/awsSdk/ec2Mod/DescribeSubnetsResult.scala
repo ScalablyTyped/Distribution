@@ -18,28 +18,21 @@ trait DescribeSubnetsResult extends StObject {
 }
 object DescribeSubnetsResult {
   
-  @scala.inline
-  def apply(): DescribeSubnetsResult = {
+  inline def apply(): DescribeSubnetsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSubnetsResult]
   }
   
-  @scala.inline
-  implicit class DescribeSubnetsResultMutableBuilder[Self <: DescribeSubnetsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSubnetsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSubnets(value: SubnetList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: SubnetList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
   }
 }

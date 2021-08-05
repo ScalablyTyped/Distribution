@@ -23,37 +23,27 @@ trait FilterMembersLoadedEventUIParam extends StObject {
 }
 object FilterMembersLoadedEventUIParam {
   
-  @scala.inline
-  def apply(): FilterMembersLoadedEventUIParam = {
+  inline def apply(): FilterMembersLoadedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterMembersLoadedEventUIParam]
   }
   
-  @scala.inline
-  implicit class FilterMembersLoadedEventUIParamMutableBuilder[Self <: FilterMembersLoadedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FilterMembersLoadedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setFilterMembers(value: js.Array[js.Any]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
+    inline def setFilterMembers(value: js.Array[js.Any]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterMembersUndefined: Self = StObject.set(x, "filterMembers", js.undefined)
+    inline def setFilterMembersUndefined: Self = StObject.set(x, "filterMembers", js.undefined)
     
-    @scala.inline
-    def setFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "filterMembers", js.Array(value :_*))
+    inline def setFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "filterMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRootFilterMembers(value: js.Array[js.Any]): Self = StObject.set(x, "rootFilterMembers", value.asInstanceOf[js.Any])
+    inline def setRootFilterMembers(value: js.Array[js.Any]): Self = StObject.set(x, "rootFilterMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootFilterMembersUndefined: Self = StObject.set(x, "rootFilterMembers", js.undefined)
+    inline def setRootFilterMembersUndefined: Self = StObject.set(x, "rootFilterMembers", js.undefined)
     
-    @scala.inline
-    def setRootFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "rootFilterMembers", js.Array(value :_*))
+    inline def setRootFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "rootFilterMembers", js.Array(value :_*))
   }
 }

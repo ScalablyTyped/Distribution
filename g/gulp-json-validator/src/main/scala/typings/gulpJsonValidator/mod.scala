@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(option: GulpJsonValidatorOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(option: GulpJsonValidatorOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-json-validator", JSImport.Namespace)
   @js.native
@@ -22,20 +20,16 @@ object mod {
   }
   object GulpJsonValidatorOptions {
     
-    @scala.inline
-    def apply(): GulpJsonValidatorOptions = {
+    inline def apply(): GulpJsonValidatorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GulpJsonValidatorOptions]
     }
     
-    @scala.inline
-    implicit class GulpJsonValidatorOptionsMutableBuilder[Self <: GulpJsonValidatorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GulpJsonValidatorOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDuplicatedKeys(value: Boolean): Self = StObject.set(x, "allowDuplicatedKeys", value.asInstanceOf[js.Any])
+      inline def setAllowDuplicatedKeys(value: Boolean): Self = StObject.set(x, "allowDuplicatedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDuplicatedKeysUndefined: Self = StObject.set(x, "allowDuplicatedKeys", js.undefined)
+      inline def setAllowDuplicatedKeysUndefined: Self = StObject.set(x, "allowDuplicatedKeys", js.undefined)
     }
   }
 }

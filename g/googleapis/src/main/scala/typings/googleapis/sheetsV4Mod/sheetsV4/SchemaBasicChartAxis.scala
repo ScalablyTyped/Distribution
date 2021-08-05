@@ -34,37 +34,27 @@ trait SchemaBasicChartAxis extends StObject {
 }
 object SchemaBasicChartAxis {
   
-  @scala.inline
-  def apply(): SchemaBasicChartAxis = {
+  inline def apply(): SchemaBasicChartAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasicChartAxis]
   }
   
-  @scala.inline
-  implicit class SchemaBasicChartAxisMutableBuilder[Self <: SchemaBasicChartAxis] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasicChartAxis](x: Self) {
     
-    @scala.inline
-    def setFormat(value: SchemaTextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: SchemaTextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleTextPosition(value: SchemaTextPosition): Self = StObject.set(x, "titleTextPosition", value.asInstanceOf[js.Any])
+    inline def setTitleTextPosition(value: SchemaTextPosition): Self = StObject.set(x, "titleTextPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleTextPositionUndefined: Self = StObject.set(x, "titleTextPosition", js.undefined)
+    inline def setTitleTextPositionUndefined: Self = StObject.set(x, "titleTextPosition", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

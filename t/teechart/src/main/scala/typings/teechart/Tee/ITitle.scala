@@ -14,8 +14,7 @@ trait ITitle
 }
 object ITitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     add: String => IAnnotation,
     bounds: IRectangle,
@@ -39,13 +38,10 @@ object ITitle {
     __obj.asInstanceOf[ITitle]
   }
   
-  @scala.inline
-  implicit class ITitleMutableBuilder[Self <: ITitle] (val x: Self) extends AnyVal {
+  extension [Self <: ITitle](x: Self) {
     
-    @scala.inline
-    def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
   }
 }

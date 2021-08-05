@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object localAddrsMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[js.Any]]]
+  inline def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[js.Any]]]
   
   @JSImport("ipfs-http-client/dist/src/swarm/localAddrs", JSImport.Namespace)
   @js.native

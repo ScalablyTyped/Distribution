@@ -23,6 +23,5 @@ object PlayReadyLicenseManagement {
     * @return The asynchronous operation performing the deletion.
     */
   /* static member */
-  @scala.inline
-  def deleteLicenses(contentHeader: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLicenses")(contentHeader.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
+  inline def deleteLicenses(contentHeader: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLicenses")(contentHeader.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
 }

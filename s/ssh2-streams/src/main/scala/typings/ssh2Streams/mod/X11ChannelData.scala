@@ -12,19 +12,15 @@ trait X11ChannelData extends StObject {
 }
 object X11ChannelData {
   
-  @scala.inline
-  def apply(srcIP: String, srcPort: Double): X11ChannelData = {
+  inline def apply(srcIP: String, srcPort: Double): X11ChannelData = {
     val __obj = js.Dynamic.literal(srcIP = srcIP.asInstanceOf[js.Any], srcPort = srcPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[X11ChannelData]
   }
   
-  @scala.inline
-  implicit class X11ChannelDataMutableBuilder[Self <: X11ChannelData] (val x: Self) extends AnyVal {
+  extension [Self <: X11ChannelData](x: Self) {
     
-    @scala.inline
-    def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
+    inline def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcPort(value: Double): Self = StObject.set(x, "srcPort", value.asInstanceOf[js.Any])
+    inline def setSrcPort(value: Double): Self = StObject.set(x, "srcPort", value.asInstanceOf[js.Any])
   }
 }

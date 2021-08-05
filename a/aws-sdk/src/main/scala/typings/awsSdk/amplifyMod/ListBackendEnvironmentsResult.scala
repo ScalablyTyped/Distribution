@@ -18,25 +18,19 @@ trait ListBackendEnvironmentsResult extends StObject {
 }
 object ListBackendEnvironmentsResult {
   
-  @scala.inline
-  def apply(backendEnvironments: BackendEnvironments): ListBackendEnvironmentsResult = {
+  inline def apply(backendEnvironments: BackendEnvironments): ListBackendEnvironmentsResult = {
     val __obj = js.Dynamic.literal(backendEnvironments = backendEnvironments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackendEnvironmentsResult]
   }
   
-  @scala.inline
-  implicit class ListBackendEnvironmentsResultMutableBuilder[Self <: ListBackendEnvironmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListBackendEnvironmentsResult](x: Self) {
     
-    @scala.inline
-    def setBackendEnvironments(value: BackendEnvironments): Self = StObject.set(x, "backendEnvironments", value.asInstanceOf[js.Any])
+    inline def setBackendEnvironments(value: BackendEnvironments): Self = StObject.set(x, "backendEnvironments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendEnvironmentsVarargs(value: BackendEnvironment*): Self = StObject.set(x, "backendEnvironments", js.Array(value :_*))
+    inline def setBackendEnvironmentsVarargs(value: BackendEnvironment*): Self = StObject.set(x, "backendEnvironments", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

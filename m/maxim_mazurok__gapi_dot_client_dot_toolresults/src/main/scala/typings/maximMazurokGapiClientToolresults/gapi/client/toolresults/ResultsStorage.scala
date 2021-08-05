@@ -14,25 +14,19 @@ trait ResultsStorage extends StObject {
 }
 object ResultsStorage {
   
-  @scala.inline
-  def apply(): ResultsStorage = {
+  inline def apply(): ResultsStorage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultsStorage]
   }
   
-  @scala.inline
-  implicit class ResultsStorageMutableBuilder[Self <: ResultsStorage] (val x: Self) extends AnyVal {
+  extension [Self <: ResultsStorage](x: Self) {
     
-    @scala.inline
-    def setResultsStoragePath(value: FileReference): Self = StObject.set(x, "resultsStoragePath", value.asInstanceOf[js.Any])
+    inline def setResultsStoragePath(value: FileReference): Self = StObject.set(x, "resultsStoragePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsStoragePathUndefined: Self = StObject.set(x, "resultsStoragePath", js.undefined)
+    inline def setResultsStoragePathUndefined: Self = StObject.set(x, "resultsStoragePath", js.undefined)
     
-    @scala.inline
-    def setXunitXmlFile(value: FileReference): Self = StObject.set(x, "xunitXmlFile", value.asInstanceOf[js.Any])
+    inline def setXunitXmlFile(value: FileReference): Self = StObject.set(x, "xunitXmlFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXunitXmlFileUndefined: Self = StObject.set(x, "xunitXmlFile", js.undefined)
+    inline def setXunitXmlFileUndefined: Self = StObject.set(x, "xunitXmlFile", js.undefined)
   }
 }

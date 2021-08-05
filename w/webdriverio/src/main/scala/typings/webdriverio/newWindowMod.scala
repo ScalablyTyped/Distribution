@@ -10,10 +10,8 @@ object newWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(
+  inline def default(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(
     url: String,
     hasWindowNameWindowFeatures: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.NewWindowOptions */ js.Any
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], hasWindowNameWindowFeatures.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]

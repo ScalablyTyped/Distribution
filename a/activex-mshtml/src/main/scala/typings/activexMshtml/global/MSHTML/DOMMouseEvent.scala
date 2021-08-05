@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMMouseEvent")
 @js.native
-class DOMMouseEvent protected ()
+/* private */ class DOMMouseEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMMouseEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMMouseEvent_typekey")
   var MSHTMLDotDOMMouseEvent_typekey: typings.activexMshtml.MSHTML.DOMMouseEvent = js.native
   

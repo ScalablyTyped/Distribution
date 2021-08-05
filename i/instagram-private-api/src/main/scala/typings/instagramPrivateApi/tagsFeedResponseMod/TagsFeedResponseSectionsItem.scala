@@ -16,8 +16,7 @@ trait TagsFeedResponseSectionsItem extends StObject {
 }
 object TagsFeedResponseSectionsItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     explore_item_info: TagsFeedResponseExploreItemInfo,
     feed_type: String,
     layout_content: TagsFeedResponseLayoutContent,
@@ -27,19 +26,14 @@ object TagsFeedResponseSectionsItem {
     __obj.asInstanceOf[TagsFeedResponseSectionsItem]
   }
   
-  @scala.inline
-  implicit class TagsFeedResponseSectionsItemMutableBuilder[Self <: TagsFeedResponseSectionsItem] (val x: Self) extends AnyVal {
+  extension [Self <: TagsFeedResponseSectionsItem](x: Self) {
     
-    @scala.inline
-    def setExplore_item_info(value: TagsFeedResponseExploreItemInfo): Self = StObject.set(x, "explore_item_info", value.asInstanceOf[js.Any])
+    inline def setExplore_item_info(value: TagsFeedResponseExploreItemInfo): Self = StObject.set(x, "explore_item_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeed_type(value: String): Self = StObject.set(x, "feed_type", value.asInstanceOf[js.Any])
+    inline def setFeed_type(value: String): Self = StObject.set(x, "feed_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout_content(value: TagsFeedResponseLayoutContent): Self = StObject.set(x, "layout_content", value.asInstanceOf[js.Any])
+    inline def setLayout_content(value: TagsFeedResponseLayoutContent): Self = StObject.set(x, "layout_content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout_type(value: String): Self = StObject.set(x, "layout_type", value.asInstanceOf[js.Any])
+    inline def setLayout_type(value: String): Self = StObject.set(x, "layout_type", value.asInstanceOf[js.Any])
   }
 }

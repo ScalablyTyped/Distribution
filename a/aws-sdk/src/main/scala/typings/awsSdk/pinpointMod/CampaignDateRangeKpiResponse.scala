@@ -43,8 +43,7 @@ trait CampaignDateRangeKpiResponse extends StObject {
 }
 object CampaignDateRangeKpiResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationId: string,
     CampaignId: string,
     EndTime: timestampIso8601,
@@ -56,31 +55,22 @@ object CampaignDateRangeKpiResponse {
     __obj.asInstanceOf[CampaignDateRangeKpiResponse]
   }
   
-  @scala.inline
-  implicit class CampaignDateRangeKpiResponseMutableBuilder[Self <: CampaignDateRangeKpiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignDateRangeKpiResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKpiName(value: string): Self = StObject.set(x, "KpiName", value.asInstanceOf[js.Any])
+    inline def setKpiName(value: string): Self = StObject.set(x, "KpiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKpiResult(value: BaseKpiResult): Self = StObject.set(x, "KpiResult", value.asInstanceOf[js.Any])
+    inline def setKpiResult(value: BaseKpiResult): Self = StObject.set(x, "KpiResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

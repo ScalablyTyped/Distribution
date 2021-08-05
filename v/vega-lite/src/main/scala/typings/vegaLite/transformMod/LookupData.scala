@@ -17,16 +17,13 @@ trait LookupData
 }
 object LookupData {
   
-  @scala.inline
-  def apply(data: Data, key: FieldName): LookupData = {
+  inline def apply(data: Data, key: FieldName): LookupData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupData]
   }
   
-  @scala.inline
-  implicit class LookupDataMutableBuilder[Self <: LookupData] (val x: Self) extends AnyVal {
+  extension [Self <: LookupData](x: Self) {
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

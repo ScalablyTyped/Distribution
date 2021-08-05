@@ -10,6 +10,5 @@ object formatTestNameByPatternMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(testName: String, pattern: String, width: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(testName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(testName: String, pattern: String, width: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(testName.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[String]
 }

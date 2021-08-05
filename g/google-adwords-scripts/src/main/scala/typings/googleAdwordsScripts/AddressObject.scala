@@ -22,8 +22,7 @@ trait AddressObject extends StObject {
 }
 object AddressObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cityName: String,
     countryCode: String,
     postalCode: String,
@@ -36,28 +35,20 @@ object AddressObject {
     __obj.asInstanceOf[AddressObject]
   }
   
-  @scala.inline
-  implicit class AddressObjectMutableBuilder[Self <: AddressObject] (val x: Self) extends AnyVal {
+  extension [Self <: AddressObject](x: Self) {
     
-    @scala.inline
-    def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
+    inline def setCityName(value: String): Self = StObject.set(x, "cityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvinceCode(value: String): Self = StObject.set(x, "provinceCode", value.asInstanceOf[js.Any])
+    inline def setProvinceCode(value: String): Self = StObject.set(x, "provinceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvinceName(value: String): Self = StObject.set(x, "provinceName", value.asInstanceOf[js.Any])
+    inline def setProvinceName(value: String): Self = StObject.set(x, "provinceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
+    inline def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetAddress2(value: String): Self = StObject.set(x, "streetAddress2", value.asInstanceOf[js.Any])
+    inline def setStreetAddress2(value: String): Self = StObject.set(x, "streetAddress2", value.asInstanceOf[js.Any])
   }
 }

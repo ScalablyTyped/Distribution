@@ -13,16 +13,13 @@ trait StopHyperParameterTuningJobRequest extends StObject {
 }
 object StopHyperParameterTuningJobRequest {
   
-  @scala.inline
-  def apply(HyperParameterTuningJobName: HyperParameterTuningJobName): StopHyperParameterTuningJobRequest = {
+  inline def apply(HyperParameterTuningJobName: HyperParameterTuningJobName): StopHyperParameterTuningJobRequest = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobName = HyperParameterTuningJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopHyperParameterTuningJobRequest]
   }
   
-  @scala.inline
-  implicit class StopHyperParameterTuningJobRequestMutableBuilder[Self <: StopHyperParameterTuningJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopHyperParameterTuningJobRequest](x: Self) {
     
-    @scala.inline
-    def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "HyperParameterTuningJobName", value.asInstanceOf[js.Any])
+    inline def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "HyperParameterTuningJobName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait DisassociateTeamMemberRequest extends StObject {
 }
 object DisassociateTeamMemberRequest {
   
-  @scala.inline
-  def apply(projectId: ProjectId, userArn: UserArn): DisassociateTeamMemberRequest = {
+  inline def apply(projectId: ProjectId, userArn: UserArn): DisassociateTeamMemberRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateTeamMemberRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateTeamMemberRequestMutableBuilder[Self <: DisassociateTeamMemberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateTeamMemberRequest](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
   }
 }

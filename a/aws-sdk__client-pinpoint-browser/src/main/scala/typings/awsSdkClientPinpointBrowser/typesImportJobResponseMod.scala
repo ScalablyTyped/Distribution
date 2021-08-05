@@ -90,95 +90,66 @@ object typesImportJobResponseMod {
   }
   object ImportJobResponse {
     
-    @scala.inline
-    def apply(): ImportJobResponse = {
+    inline def apply(): ImportJobResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImportJobResponse]
     }
     
-    @scala.inline
-    implicit class ImportJobResponseMutableBuilder[Self <: ImportJobResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ImportJobResponse](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
       
-      @scala.inline
-      def setCompletedPieces(value: Double): Self = StObject.set(x, "CompletedPieces", value.asInstanceOf[js.Any])
+      inline def setCompletedPieces(value: Double): Self = StObject.set(x, "CompletedPieces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletedPiecesUndefined: Self = StObject.set(x, "CompletedPieces", js.undefined)
+      inline def setCompletedPiecesUndefined: Self = StObject.set(x, "CompletedPieces", js.undefined)
       
-      @scala.inline
-      def setCompletionDate(value: String): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+      inline def setCompletionDate(value: String): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
+      inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setDefinition(value: ImportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+      inline def setDefinition(value: ImportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
+      inline def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
       
-      @scala.inline
-      def setFailedPieces(value: Double): Self = StObject.set(x, "FailedPieces", value.asInstanceOf[js.Any])
+      inline def setFailedPieces(value: Double): Self = StObject.set(x, "FailedPieces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedPiecesUndefined: Self = StObject.set(x, "FailedPieces", js.undefined)
+      inline def setFailedPiecesUndefined: Self = StObject.set(x, "FailedPieces", js.undefined)
       
-      @scala.inline
-      def setFailures(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
+      inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
       
-      @scala.inline
-      def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setJobStatus(value: CREATED | INITIALIZING | PROCESSING | COMPLETING | COMPLETED | FAILING | FAILED | String): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+      inline def setJobStatus(value: CREATED | INITIALIZING | PROCESSING | COMPLETING | COMPLETED | FAILING | FAILED | String): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+      inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
       
-      @scala.inline
-      def setTotalFailures(value: Double): Self = StObject.set(x, "TotalFailures", value.asInstanceOf[js.Any])
+      inline def setTotalFailures(value: Double): Self = StObject.set(x, "TotalFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalFailuresUndefined: Self = StObject.set(x, "TotalFailures", js.undefined)
+      inline def setTotalFailuresUndefined: Self = StObject.set(x, "TotalFailures", js.undefined)
       
-      @scala.inline
-      def setTotalPieces(value: Double): Self = StObject.set(x, "TotalPieces", value.asInstanceOf[js.Any])
+      inline def setTotalPieces(value: Double): Self = StObject.set(x, "TotalPieces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPiecesUndefined: Self = StObject.set(x, "TotalPieces", js.undefined)
+      inline def setTotalPiecesUndefined: Self = StObject.set(x, "TotalPieces", js.undefined)
       
-      @scala.inline
-      def setTotalProcessed(value: Double): Self = StObject.set(x, "TotalProcessed", value.asInstanceOf[js.Any])
+      inline def setTotalProcessed(value: Double): Self = StObject.set(x, "TotalProcessed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalProcessedUndefined: Self = StObject.set(x, "TotalProcessed", js.undefined)
+      inline def setTotalProcessedUndefined: Self = StObject.set(x, "TotalProcessed", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   
@@ -200,29 +171,22 @@ object typesImportJobResponseMod {
   }
   object UnmarshalledImportJobResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledImportJobResponse = {
+    inline def apply(): UnmarshalledImportJobResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledImportJobResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledImportJobResponseMutableBuilder[Self <: UnmarshalledImportJobResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledImportJobResponse](x: Self) {
       
-      @scala.inline
-      def setDefinition(value: UnmarshalledImportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+      inline def setDefinition(value: UnmarshalledImportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
+      inline def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
       
-      @scala.inline
-      def setFailures(value: js.Array[String]): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: js.Array[String]): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
+      inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
       
-      @scala.inline
-      def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value :_*))
     }
   }
 }

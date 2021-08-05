@@ -18,25 +18,19 @@ trait ListLunaClientsResponse extends StObject {
 }
 object ListLunaClientsResponse {
   
-  @scala.inline
-  def apply(ClientList: ClientList): ListLunaClientsResponse = {
+  inline def apply(ClientList: ClientList): ListLunaClientsResponse = {
     val __obj = js.Dynamic.literal(ClientList = ClientList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLunaClientsResponse]
   }
   
-  @scala.inline
-  implicit class ListLunaClientsResponseMutableBuilder[Self <: ListLunaClientsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLunaClientsResponse](x: Self) {
     
-    @scala.inline
-    def setClientList(value: ClientList): Self = StObject.set(x, "ClientList", value.asInstanceOf[js.Any])
+    inline def setClientList(value: ClientList): Self = StObject.set(x, "ClientList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientListVarargs(value: ClientArn*): Self = StObject.set(x, "ClientList", js.Array(value :_*))
+    inline def setClientListVarargs(value: ClientArn*): Self = StObject.set(x, "ClientList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

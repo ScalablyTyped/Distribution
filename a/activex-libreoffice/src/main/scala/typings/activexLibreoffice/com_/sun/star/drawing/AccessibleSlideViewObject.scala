@@ -31,8 +31,7 @@ trait AccessibleSlideViewObject
      with XAccessibleComponent
 object AccessibleSlideViewObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleContext: XAccessibleContext,
     AccessibleDescription: String,

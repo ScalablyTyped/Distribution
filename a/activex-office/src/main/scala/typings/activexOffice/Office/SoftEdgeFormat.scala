@@ -10,7 +10,7 @@ trait SoftEdgeFormat extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.SoftEdgeFormat_typekey")
+  /* private */ @JSName("Office.SoftEdgeFormat_typekey")
   var OfficeDotSoftEdgeFormat_typekey: SoftEdgeFormat
   
   var Radius: Double
@@ -19,8 +19,7 @@ trait SoftEdgeFormat extends StObject {
 }
 object SoftEdgeFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     OfficeDotSoftEdgeFormat_typekey: SoftEdgeFormat,
@@ -32,22 +31,16 @@ object SoftEdgeFormat {
     __obj.asInstanceOf[SoftEdgeFormat]
   }
   
-  @scala.inline
-  implicit class SoftEdgeFormatMutableBuilder[Self <: SoftEdgeFormat] (val x: Self) extends AnyVal {
+  extension [Self <: SoftEdgeFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotSoftEdgeFormat_typekey(value: SoftEdgeFormat): Self = StObject.set(x, "Office.SoftEdgeFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotSoftEdgeFormat_typekey(value: SoftEdgeFormat): Self = StObject.set(x, "Office.SoftEdgeFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "Radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "Radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoSoftEdgeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoSoftEdgeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

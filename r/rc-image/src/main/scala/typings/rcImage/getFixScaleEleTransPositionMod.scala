@@ -11,6 +11,5 @@ object getFixScaleEleTransPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(width: Double, height: Double, left: Double, top: Double): Null | X = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], left.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Null | X]
+  inline def default(width: Double, height: Double, left: Double, top: Double): Null | X = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], left.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Null | X]
 }

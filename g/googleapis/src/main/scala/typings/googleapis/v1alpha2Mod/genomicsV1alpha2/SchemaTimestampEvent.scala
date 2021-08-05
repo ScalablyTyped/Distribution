@@ -22,25 +22,19 @@ trait SchemaTimestampEvent extends StObject {
 }
 object SchemaTimestampEvent {
   
-  @scala.inline
-  def apply(): SchemaTimestampEvent = {
+  inline def apply(): SchemaTimestampEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTimestampEvent]
   }
   
-  @scala.inline
-  implicit class SchemaTimestampEventMutableBuilder[Self <: SchemaTimestampEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTimestampEvent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

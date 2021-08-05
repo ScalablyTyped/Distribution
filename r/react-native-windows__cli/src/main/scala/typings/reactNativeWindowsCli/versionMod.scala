@@ -20,7 +20,7 @@ object versionMod {
     def this(major: Double, minor: Unit, build: Double, qfe: Double) = this()
     def this(major: Double, minor: Unit, build: Unit, qfe: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var build: js.Any = js.native
     
     /* CompleteClass */
@@ -32,13 +32,13 @@ object versionMod {
     /* CompleteClass */
     override def gte(other: Version): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var major: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var minor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var qfe: js.Any = js.native
   }
   /* static members */
@@ -48,19 +48,16 @@ object versionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def compare(x: Version, y: Version): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def compare(x: Version, y: Version): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def fromString(str: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Version]
+    inline def fromString(str: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Version]
     
-    @scala.inline
-    def tryParse(str: String): Version | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(str.asInstanceOf[js.Any]).asInstanceOf[Version | Null]
+    inline def tryParse(str: String): Version | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(str.asInstanceOf[js.Any]).asInstanceOf[Version | Null]
   }
   
   trait Version extends StObject {
     
-    var build: js.Any
+    /* private */ var build: js.Any
     
     def eq(other: Version): Boolean
     
@@ -68,16 +65,15 @@ object versionMod {
     
     def gte(other: Version): Boolean
     
-    var major: js.Any
+    /* private */ var major: js.Any
     
-    var minor: js.Any
+    /* private */ var minor: js.Any
     
-    var qfe: js.Any
+    /* private */ var qfe: js.Any
   }
   object Version {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       build: js.Any,
       eq_ : Version => Boolean,
       gt: Version => Boolean,
@@ -91,29 +87,21 @@ object versionMod {
       __obj.asInstanceOf[Version]
     }
     
-    @scala.inline
-    implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+    extension [Self <: Version](x: Self) {
       
-      @scala.inline
-      def setBuild(value: js.Any): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+      inline def setBuild(value: js.Any): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEq_(value: Version => Boolean): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
+      inline def setEq_(value: Version => Boolean): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGt(value: Version => Boolean): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
+      inline def setGt(value: Version => Boolean): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGte(value: Version => Boolean): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
+      inline def setGte(value: Version => Boolean): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMajor(value: js.Any): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: js.Any): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: js.Any): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: js.Any): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQfe(value: js.Any): Self = StObject.set(x, "qfe", value.asInstanceOf[js.Any])
+      inline def setQfe(value: js.Any): Self = StObject.set(x, "qfe", value.asInstanceOf[js.Any])
     }
   }
 }

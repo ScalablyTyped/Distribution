@@ -12,19 +12,15 @@ trait ChannelHistoryResult extends StObject {
 }
 object ChannelHistoryResult {
   
-  @scala.inline
-  def apply(records: ChannelHistory, res: NormalSuccessResponse): ChannelHistoryResult = {
+  inline def apply(records: ChannelHistory, res: NormalSuccessResponse): ChannelHistoryResult = {
     val __obj = js.Dynamic.literal(records = records.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelHistoryResult]
   }
   
-  @scala.inline
-  implicit class ChannelHistoryResultMutableBuilder[Self <: ChannelHistoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelHistoryResult](x: Self) {
     
-    @scala.inline
-    def setRecords(value: ChannelHistory): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: ChannelHistory): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

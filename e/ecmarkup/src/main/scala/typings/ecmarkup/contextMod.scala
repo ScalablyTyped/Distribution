@@ -39,8 +39,7 @@ object contextMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clauseNumberer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClauseNumberIterator */ js.Any,
       clauseStack: js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any
@@ -59,70 +58,53 @@ object contextMod {
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setClauseNumberer(
+      inline def setClauseNumberer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClauseNumberIterator */ js.Any
       ): Self = StObject.set(x, "clauseNumberer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClauseStack(
+      inline def setClauseStack(
         value: js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any
             ]
       ): Self = StObject.set(x, "clauseStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClauseStackVarargs(
+      inline def setClauseStackVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any)*
       ): Self = StObject.set(x, "clauseStack", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentId(value: String): Self = StObject.set(x, "currentId", value.asInstanceOf[js.Any])
+      inline def setCurrentId(value: String): Self = StObject.set(x, "currentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIdNull: Self = StObject.set(x, "currentId", null)
+      inline def setCurrentIdNull: Self = StObject.set(x, "currentId", null)
       
-      @scala.inline
-      def setImportStack(
+      inline def setImportStack(
         value: js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ js.Any
             ]
       ): Self = StObject.set(x, "importStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportStackVarargs(
+      inline def setImportStackVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ js.Any)*
       ): Self = StObject.set(x, "importStack", js.Array(value :_*))
       
-      @scala.inline
-      def setInAlg(value: Boolean): Self = StObject.set(x, "inAlg", value.asInstanceOf[js.Any])
+      inline def setInAlg(value: Boolean): Self = StObject.set(x, "inAlg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInNoAutolink(value: Boolean): Self = StObject.set(x, "inNoAutolink", value.asInstanceOf[js.Any])
+      inline def setInNoAutolink(value: Boolean): Self = StObject.set(x, "inNoAutolink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInNoEmd(value: Boolean): Self = StObject.set(x, "inNoEmd", value.asInstanceOf[js.Any])
+      inline def setInNoEmd(value: Boolean): Self = StObject.set(x, "inNoEmd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Spec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartEmd(value: Node): Self = StObject.set(x, "startEmd", value.asInstanceOf[js.Any])
+      inline def setStartEmd(value: Node): Self = StObject.set(x, "startEmd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartEmdNull: Self = StObject.set(x, "startEmd", null)
+      inline def setStartEmdNull: Self = StObject.set(x, "startEmd", null)
       
-      @scala.inline
-      def setTagStack(value: js.Array[HTMLElement]): Self = StObject.set(x, "tagStack", value.asInstanceOf[js.Any])
+      inline def setTagStack(value: js.Array[HTMLElement]): Self = StObject.set(x, "tagStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagStackVarargs(value: HTMLElement*): Self = StObject.set(x, "tagStack", js.Array(value :_*))
+      inline def setTagStackVarargs(value: HTMLElement*): Self = StObject.set(x, "tagStack", js.Array(value :_*))
     }
   }
 }

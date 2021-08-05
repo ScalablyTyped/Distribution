@@ -15,25 +15,19 @@ trait PartialruntimeStylesheetI extends StObject {
 }
 object PartialruntimeStylesheetI {
   
-  @scala.inline
-  def apply(): PartialruntimeStylesheetI = {
+  inline def apply(): PartialruntimeStylesheetI = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialruntimeStylesheetI]
   }
   
-  @scala.inline
-  implicit class PartialruntimeStylesheetIMutableBuilder[Self <: PartialruntimeStylesheetI] (val x: Self) extends AnyVal {
+  extension [Self <: PartialruntimeStylesheetI](x: Self) {
     
-    @scala.inline
-    def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
+    inline def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterTransformUndefined: Self = StObject.set(x, "afterTransform", js.undefined)
+    inline def setAfterTransformUndefined: Self = StObject.set(x, "afterTransform", js.undefined)
     
-    @scala.inline
-    def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
+    inline def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeStylesheetIdUndefined: Self = StObject.set(x, "runtimeStylesheetId", js.undefined)
+    inline def setRuntimeStylesheetIdUndefined: Self = StObject.set(x, "runtimeStylesheetId", js.undefined)
   }
 }

@@ -13,18 +13,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(): Type = {
+    inline def apply(): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("_flexibleDescendant")
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: _flexibleDescendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: _flexibleDescendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

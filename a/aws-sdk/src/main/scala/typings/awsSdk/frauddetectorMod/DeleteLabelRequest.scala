@@ -13,16 +13,13 @@ trait DeleteLabelRequest extends StObject {
 }
 object DeleteLabelRequest {
   
-  @scala.inline
-  def apply(name: identifier): DeleteLabelRequest = {
+  inline def apply(name: identifier): DeleteLabelRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLabelRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLabelRequestMutableBuilder[Self <: DeleteLabelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLabelRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

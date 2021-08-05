@@ -27,10 +27,8 @@ object mod {
     	})();
     	```
     	*/
-    @scala.inline
-    def apply(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
-    @scala.inline
-    def apply(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    inline def apply(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    inline def apply(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     @JSImport("ky-universal", JSImport.Default)
     @js.native
@@ -40,76 +38,62 @@ object mod {
     	Create a new Ky instance with complete new defaults.
     	@returns A new Ky instance.
     	*/
-    @scala.inline
-    def create(defaultOptions: Options): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
+    inline def create(defaultOptions: Options): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
     
     /**
     	Fetch the given `url` using the option `{method: 'delete'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @scala.inline
-    def delete(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
-    @scala.inline
-    def delete(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    inline def delete(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    inline def delete(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Create a new Ky instance with some defaults overridden with your own.
     	In contrast to `ky.create()`, `ky.extend()` inherits defaults from its parent.
     	@returns A new Ky instance.
     	*/
-    @scala.inline
-    def extend(defaultOptions: Options): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
+    inline def extend(defaultOptions: Options): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Call]
     
     /**
     	Fetch the given `url` using the option `{method: 'get'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @scala.inline
-    def get(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
-    @scala.inline
-    def get(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    inline def get(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    inline def get(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'head'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @scala.inline
-    def head(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
-    @scala.inline
-    def head(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    inline def head(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    inline def head(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'patch'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @scala.inline
-    def patch(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
-    @scala.inline
-    def patch(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    inline def patch(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    inline def patch(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'post'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @scala.inline
-    def post(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
-    @scala.inline
-    def post(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    inline def post(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    inline def post(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	Fetch the given `url` using the option `{method: 'put'}`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` methods added.
     	*/
-    @scala.inline
-    def put(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
-    @scala.inline
-    def put(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
+    inline def put(url: Input): ResponsePromise = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+    inline def put(url: Input, options: Options): ResponsePromise = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResponsePromise]
     
     /**
     	A `Symbol` that can be returned by a `beforeRetry` hook to stop the retry.

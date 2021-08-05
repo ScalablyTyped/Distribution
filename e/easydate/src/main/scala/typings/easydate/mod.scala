@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pattern: String): String = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(pattern: String, config: String): String = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(pattern: String, config: DateConfig): String = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(pattern: String): String = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(pattern: String, config: String): String = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(pattern: String, config: DateConfig): String = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("easydate", JSImport.Namespace)
   @js.native
@@ -29,32 +26,24 @@ object mod {
   }
   object DateConfig {
     
-    @scala.inline
-    def apply(): DateConfig = {
+    inline def apply(): DateConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateConfig]
     }
     
-    @scala.inline
-    implicit class DateConfigMutableBuilder[Self <: DateConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DateConfig](x: Self) {
       
-      @scala.inline
-      def setAdjust(value: Boolean): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
+      inline def setAdjust(value: Boolean): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
+      inline def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
       
-      @scala.inline
-      def setSetDate(value: String): Self = StObject.set(x, "setDate", value.asInstanceOf[js.Any])
+      inline def setSetDate(value: String): Self = StObject.set(x, "setDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDateUndefined: Self = StObject.set(x, "setDate", js.undefined)
+      inline def setSetDateUndefined: Self = StObject.set(x, "setDate", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: utc | local): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: utc | local): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+      inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     }
   }
 }

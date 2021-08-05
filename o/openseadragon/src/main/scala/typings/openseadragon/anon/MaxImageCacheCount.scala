@@ -10,19 +10,15 @@ trait MaxImageCacheCount extends StObject {
 }
 object MaxImageCacheCount {
   
-  @scala.inline
-  def apply(): MaxImageCacheCount = {
+  inline def apply(): MaxImageCacheCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxImageCacheCount]
   }
   
-  @scala.inline
-  implicit class MaxImageCacheCountMutableBuilder[Self <: MaxImageCacheCount] (val x: Self) extends AnyVal {
+  extension [Self <: MaxImageCacheCount](x: Self) {
     
-    @scala.inline
-    def setMaxImageCacheCount(value: Double): Self = StObject.set(x, "maxImageCacheCount", value.asInstanceOf[js.Any])
+    inline def setMaxImageCacheCount(value: Double): Self = StObject.set(x, "maxImageCacheCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxImageCacheCountUndefined: Self = StObject.set(x, "maxImageCacheCount", js.undefined)
+    inline def setMaxImageCacheCountUndefined: Self = StObject.set(x, "maxImageCacheCount", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AssociateTransitGatewayRouteTableResult extends StObject {
 }
 object AssociateTransitGatewayRouteTableResult {
   
-  @scala.inline
-  def apply(): AssociateTransitGatewayRouteTableResult = {
+  inline def apply(): AssociateTransitGatewayRouteTableResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateTransitGatewayRouteTableResult]
   }
   
-  @scala.inline
-  implicit class AssociateTransitGatewayRouteTableResultMutableBuilder[Self <: AssociateTransitGatewayRouteTableResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateTransitGatewayRouteTableResult](x: Self) {
     
-    @scala.inline
-    def setAssociation(value: TransitGatewayAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
+    inline def setAssociation(value: TransitGatewayAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationUndefined: Self = StObject.set(x, "Association", js.undefined)
+    inline def setAssociationUndefined: Self = StObject.set(x, "Association", js.undefined)
   }
 }

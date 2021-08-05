@@ -26,20 +26,16 @@ object jumbotronMod {
   }
   object JumbotronProps {
     
-    @scala.inline
-    def apply(): JumbotronProps = {
+    inline def apply(): JumbotronProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JumbotronProps]
     }
     
-    @scala.inline
-    implicit class JumbotronPropsMutableBuilder[Self <: JumbotronProps] (val x: Self) extends AnyVal {
+    extension [Self <: JumbotronProps](x: Self) {
       
-      @scala.inline
-      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
+      inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
     }
   }
 }

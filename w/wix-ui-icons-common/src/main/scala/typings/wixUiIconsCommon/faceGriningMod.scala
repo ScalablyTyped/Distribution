@@ -22,20 +22,16 @@ object faceGriningMod extends Shortcut {
   }
   object FaceGriningProps {
     
-    @scala.inline
-    def apply(): FaceGriningProps = {
+    inline def apply(): FaceGriningProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FaceGriningProps]
     }
     
-    @scala.inline
-    implicit class FaceGriningPropsMutableBuilder[Self <: FaceGriningProps] (val x: Self) extends AnyVal {
+    extension [Self <: FaceGriningProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

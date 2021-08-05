@@ -13,19 +13,15 @@ trait Visible extends StObject {
 }
 object Visible {
   
-  @scala.inline
-  def apply(): Visible = {
+  inline def apply(): Visible = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Visible]
   }
   
-  @scala.inline
-  implicit class VisibleMutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
+  extension [Self <: Visible](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

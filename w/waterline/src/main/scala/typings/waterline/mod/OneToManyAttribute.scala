@@ -15,19 +15,15 @@ trait OneToManyAttribute
 }
 object OneToManyAttribute {
   
-  @scala.inline
-  def apply(collection: String, via: String): OneToManyAttribute = {
+  inline def apply(collection: String, via: String): OneToManyAttribute = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
     __obj.asInstanceOf[OneToManyAttribute]
   }
   
-  @scala.inline
-  implicit class OneToManyAttributeMutableBuilder[Self <: OneToManyAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: OneToManyAttribute](x: Self) {
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
+    inline def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ trait CreateSuite extends StObject {
 }
 object CreateSuite {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: `657`,
     createSuite: `658`,
     get: `659`,
@@ -48,40 +47,28 @@ object CreateSuite {
     __obj.asInstanceOf[CreateSuite]
   }
   
-  @scala.inline
-  implicit class CreateSuiteMutableBuilder[Self <: CreateSuite] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSuite](x: Self) {
     
-    @scala.inline
-    def setCreate(value: `657`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `657`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateSuite(value: `658`): Self = StObject.set(x, "createSuite", value.asInstanceOf[js.Any])
+    inline def setCreateSuite(value: `658`): Self = StObject.set(x, "createSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: `659`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `659`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSuite(value: `660`): Self = StObject.set(x, "getSuite", value.asInstanceOf[js.Any])
+    inline def setGetSuite(value: `660`): Self = StObject.set(x, "getSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListAnnotations(value: `661`): Self = StObject.set(x, "listAnnotations", value.asInstanceOf[js.Any])
+    inline def setListAnnotations(value: `661`): Self = StObject.set(x, "listAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForRef(value: `662`): Self = StObject.set(x, "listForRef", value.asInstanceOf[js.Any])
+    inline def setListForRef(value: `662`): Self = StObject.set(x, "listForRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForSuite(value: `663`): Self = StObject.set(x, "listForSuite", value.asInstanceOf[js.Any])
+    inline def setListForSuite(value: `663`): Self = StObject.set(x, "listForSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSuitesForRef(value: `664`): Self = StObject.set(x, "listSuitesForRef", value.asInstanceOf[js.Any])
+    inline def setListSuitesForRef(value: `664`): Self = StObject.set(x, "listSuitesForRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRerequestSuite(value: `665`): Self = StObject.set(x, "rerequestSuite", value.asInstanceOf[js.Any])
+    inline def setRerequestSuite(value: `665`): Self = StObject.set(x, "rerequestSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSuitesPreferences(value: `666`): Self = StObject.set(x, "setSuitesPreferences", value.asInstanceOf[js.Any])
+    inline def setSetSuitesPreferences(value: `666`): Self = StObject.set(x, "setSuitesPreferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: `667`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `667`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

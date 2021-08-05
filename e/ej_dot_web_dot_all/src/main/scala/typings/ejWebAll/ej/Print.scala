@@ -41,38 +41,28 @@ object Print {
   }
   object BeforeStartEventArgs {
     
-    @scala.inline
-    def apply(): BeforeStartEventArgs = {
+    inline def apply(): BeforeStartEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeforeStartEventArgs]
     }
     
-    @scala.inline
-    implicit class BeforeStartEventArgsMutableBuilder[Self <: BeforeStartEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeStartEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -139,86 +129,60 @@ object Print {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.Print.Model = {
+    inline def apply(): typings.ejWebAll.ej.Print.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.Print.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.Print.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.Print.Model](x: Self) {
       
-      @scala.inline
-      def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setBeforeStart(value: /* e */ BeforeStartEventArgs => Unit): Self = StObject.set(x, "beforeStart", js.Any.fromFunction1(value))
+      inline def setBeforeStart(value: /* e */ BeforeStartEventArgs => Unit): Self = StObject.set(x, "beforeStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeStartUndefined: Self = StObject.set(x, "beforeStart", js.undefined)
+      inline def setBeforeStartUndefined: Self = StObject.set(x, "beforeStart", js.undefined)
       
-      @scala.inline
-      def setDocType(value: String): Self = StObject.set(x, "docType", value.asInstanceOf[js.Any])
+      inline def setDocType(value: String): Self = StObject.set(x, "docType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocTypeUndefined: Self = StObject.set(x, "docType", js.undefined)
+      inline def setDocTypeUndefined: Self = StObject.set(x, "docType", js.undefined)
       
-      @scala.inline
-      def setExcludeSelector(value: String): Self = StObject.set(x, "excludeSelector", value.asInstanceOf[js.Any])
+      inline def setExcludeSelector(value: String): Self = StObject.set(x, "excludeSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeSelectorUndefined: Self = StObject.set(x, "excludeSelector", js.undefined)
+      inline def setExcludeSelectorUndefined: Self = StObject.set(x, "excludeSelector", js.undefined)
       
-      @scala.inline
-      def setExternalStyles(value: String): Self = StObject.set(x, "externalStyles", value.asInstanceOf[js.Any])
+      inline def setExternalStyles(value: String): Self = StObject.set(x, "externalStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalStylesUndefined: Self = StObject.set(x, "externalStyles", js.undefined)
+      inline def setExternalStylesUndefined: Self = StObject.set(x, "externalStyles", js.undefined)
       
-      @scala.inline
-      def setGlobalStyles(value: Boolean): Self = StObject.set(x, "globalStyles", value.asInstanceOf[js.Any])
+      inline def setGlobalStyles(value: Boolean): Self = StObject.set(x, "globalStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalStylesUndefined: Self = StObject.set(x, "globalStyles", js.undefined)
+      inline def setGlobalStylesUndefined: Self = StObject.set(x, "globalStyles", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPrepend(value: String): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+      inline def setPrepend(value: String): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+      inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
       
-      @scala.inline
-      def setPrintInNewWindow(value: Boolean): Self = StObject.set(x, "printInNewWindow", value.asInstanceOf[js.Any])
+      inline def setPrintInNewWindow(value: Boolean): Self = StObject.set(x, "printInNewWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintInNewWindowUndefined: Self = StObject.set(x, "printInNewWindow", js.undefined)
+      inline def setPrintInNewWindowUndefined: Self = StObject.set(x, "printInNewWindow", js.undefined)
       
-      @scala.inline
-      def setTimeOutPeriod(value: Double): Self = StObject.set(x, "timeOutPeriod", value.asInstanceOf[js.Any])
+      inline def setTimeOutPeriod(value: Double): Self = StObject.set(x, "timeOutPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeOutPeriodUndefined: Self = StObject.set(x, "timeOutPeriod", js.undefined)
+      inline def setTimeOutPeriodUndefined: Self = StObject.set(x, "timeOutPeriod", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

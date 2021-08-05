@@ -23,6 +23,5 @@ object VariableAst {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromParsedVariable(v: typings.angularCompiler.astMod.ParsedVariable): typings.angularCompiler.templateAstMod.VariableAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedVariable")(v.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.VariableAst]
+  inline def fromParsedVariable(v: typings.angularCompiler.astMod.ParsedVariable): typings.angularCompiler.templateAstMod.VariableAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedVariable")(v.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.VariableAst]
 }

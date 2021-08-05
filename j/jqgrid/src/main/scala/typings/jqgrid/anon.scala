@@ -14,20 +14,16 @@ object anon {
   }
   object ColModel {
     
-    @scala.inline
-    def apply(colModel: js.Any, rowId: js.Any): ColModel = {
+    inline def apply(colModel: js.Any, rowId: js.Any): ColModel = {
       val __obj = js.Dynamic.literal(colModel = colModel.asInstanceOf[js.Any], rowId = rowId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColModel]
     }
     
-    @scala.inline
-    implicit class ColModelMutableBuilder[Self <: ColModel] (val x: Self) extends AnyVal {
+    extension [Self <: ColModel](x: Self) {
       
-      @scala.inline
-      def setColModel(value: js.Any): Self = StObject.set(x, "colModel", value.asInstanceOf[js.Any])
+      inline def setColModel(value: js.Any): Self = StObject.set(x, "colModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowId(value: js.Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+      inline def setRowId(value: js.Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,20 +33,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: js.Array[js.Any]): Data = {
+    inline def apply(data: js.Array[js.Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     }
   }
 }

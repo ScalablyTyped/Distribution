@@ -13,16 +13,13 @@ trait DeleteCapacityProviderRequest extends StObject {
 }
 object DeleteCapacityProviderRequest {
   
-  @scala.inline
-  def apply(capacityProvider: String): DeleteCapacityProviderRequest = {
+  inline def apply(capacityProvider: String): DeleteCapacityProviderRequest = {
     val __obj = js.Dynamic.literal(capacityProvider = capacityProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCapacityProviderRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCapacityProviderRequestMutableBuilder[Self <: DeleteCapacityProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCapacityProviderRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityProvider(value: String): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
+    inline def setCapacityProvider(value: String): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
   }
 }

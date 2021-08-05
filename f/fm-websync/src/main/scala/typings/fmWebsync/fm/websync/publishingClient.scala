@@ -18,19 +18,15 @@ trait publishingClient extends StObject {
 }
 object publishingClient {
   
-  @scala.inline
-  def apply(boundRecords: js.Any, id: String): publishingClient = {
+  inline def apply(boundRecords: js.Any, id: String): publishingClient = {
     val __obj = js.Dynamic.literal(boundRecords = boundRecords.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[publishingClient]
   }
   
-  @scala.inline
-  implicit class publishingClientMutableBuilder[Self <: publishingClient] (val x: Self) extends AnyVal {
+  extension [Self <: publishingClient](x: Self) {
     
-    @scala.inline
-    def setBoundRecords(value: js.Any): Self = StObject.set(x, "boundRecords", value.asInstanceOf[js.Any])
+    inline def setBoundRecords(value: js.Any): Self = StObject.set(x, "boundRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

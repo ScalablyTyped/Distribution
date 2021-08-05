@@ -27,55 +27,55 @@ object scrollbarMod {
     /**
       * Handle the `'keydown'` event for the scroll bar.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the scroll bar.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the scroll bar.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the scroll bar.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
-    var _maximum: js.Any = js.native
+    /* private */ var _maximum: js.Any = js.native
     
     /**
       * Move the thumb to the specified position.
       */
-    var _moveThumb: js.Any = js.native
+    /* private */ var _moveThumb: js.Any = js.native
     
     /**
       * A timeout callback for repeating the mouse press.
       */
-    var _onRepeat: js.Any = js.native
+    /* private */ var _onRepeat: js.Any = js.native
     
-    var _orientation: js.Any = js.native
+    /* private */ var _orientation: js.Any = js.native
     
-    var _page: js.Any = js.native
+    /* private */ var _page: js.Any = js.native
     
-    var _pageRequested: js.Any = js.native
+    /* private */ var _pageRequested: js.Any = js.native
     
-    var _pressData: js.Any = js.native
+    /* private */ var _pressData: js.Any = js.native
     
     /**
       * Release the mouse and restore the node states.
       */
-    var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: js.Any = js.native
     
-    var _repeatTimer: js.Any = js.native
+    /* private */ var _repeatTimer: js.Any = js.native
     
-    var _stepRequested: js.Any = js.native
+    /* private */ var _stepRequested: js.Any = js.native
     
-    var _thumbMoved: js.Any = js.native
+    /* private */ var _thumbMoved: js.Any = js.native
     
-    var _value: js.Any = js.native
+    /* private */ var _value: js.Any = js.native
     
     /**
       * The scroll bar decrement button node.
@@ -229,38 +229,28 @@ object scrollbarMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+        inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+        inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
         
-        @scala.inline
-        def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+        inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+        inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
         
-        @scala.inline
-        def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+        inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+        inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -274,11 +264,9 @@ object scrollbarMod {
     trait Orientation extends StObject
     object Orientation {
       
-      @scala.inline
-      def horizontal: typings.luminoWidgets.luminoWidgetsStrings.horizontal = "horizontal".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.horizontal]
+      inline def horizontal: typings.luminoWidgets.luminoWidgetsStrings.horizontal = "horizontal".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.horizontal]
       
-      @scala.inline
-      def vertical: typings.luminoWidgets.luminoWidgetsStrings.vertical = "vertical".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.vertical]
+      inline def vertical: typings.luminoWidgets.luminoWidgetsStrings.vertical = "vertical".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.vertical]
     }
   }
 }

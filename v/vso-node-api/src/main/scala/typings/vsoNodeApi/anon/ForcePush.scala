@@ -18,8 +18,7 @@ trait ForcePush extends StObject {
 }
 object ForcePush {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: scala.Double,
     forcePush: scala.Double,
     push: scala.Double,
@@ -30,22 +29,16 @@ object ForcePush {
     __obj.asInstanceOf[ForcePush]
   }
   
-  @scala.inline
-  implicit class ForcePushMutableBuilder[Self <: ForcePush] (val x: Self) extends AnyVal {
+  extension [Self <: ForcePush](x: Self) {
     
-    @scala.inline
-    def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForcePush(value: scala.Double): Self = StObject.set(x, "forcePush", value.asInstanceOf[js.Any])
+    inline def setForcePush(value: scala.Double): Self = StObject.set(x, "forcePush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: scala.Double): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: scala.Double): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebase(value: scala.Double): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
+    inline def setRebase(value: scala.Double): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

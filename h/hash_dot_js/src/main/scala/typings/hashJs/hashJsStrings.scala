@@ -8,16 +8,13 @@ object hashJsStrings {
   
   @js.native
   sealed trait big extends StObject
-  @scala.inline
-  def big: big = "big".asInstanceOf[big]
+  inline def big: big = "big".asInstanceOf[big]
   
   @js.native
   sealed trait hex extends StObject
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait little extends StObject
-  @scala.inline
-  def little: little = "little".asInstanceOf[little]
+  inline def little: little = "little".asInstanceOf[little]
 }

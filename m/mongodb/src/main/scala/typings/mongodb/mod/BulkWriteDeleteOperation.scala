@@ -12,22 +12,17 @@ trait BulkWriteDeleteOperation[TSchema] extends StObject {
 }
 object BulkWriteDeleteOperation {
   
-  @scala.inline
-  def apply[TSchema](filter: FilterQuery[TSchema]): BulkWriteDeleteOperation[TSchema] = {
+  inline def apply[TSchema](filter: FilterQuery[TSchema]): BulkWriteDeleteOperation[TSchema] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkWriteDeleteOperation[TSchema]]
   }
   
-  @scala.inline
-  implicit class BulkWriteDeleteOperationMutableBuilder[Self <: BulkWriteDeleteOperation[?], TSchema] (val x: Self & BulkWriteDeleteOperation[TSchema]) extends AnyVal {
+  extension [Self <: BulkWriteDeleteOperation[?], TSchema](x: Self & BulkWriteDeleteOperation[TSchema]) {
     
-    @scala.inline
-    def setCollation(value: js.Object): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+    inline def setCollation(value: js.Object): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+    inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
-    @scala.inline
-    def setFilter(value: FilterQuery[TSchema]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterQuery[TSchema]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }
 }

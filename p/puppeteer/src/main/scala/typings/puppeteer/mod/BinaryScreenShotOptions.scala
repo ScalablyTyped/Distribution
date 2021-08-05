@@ -14,19 +14,15 @@ trait BinaryScreenShotOptions
 }
 object BinaryScreenShotOptions {
   
-  @scala.inline
-  def apply(): BinaryScreenShotOptions = {
+  inline def apply(): BinaryScreenShotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BinaryScreenShotOptions]
   }
   
-  @scala.inline
-  implicit class BinaryScreenShotOptionsMutableBuilder[Self <: BinaryScreenShotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryScreenShotOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

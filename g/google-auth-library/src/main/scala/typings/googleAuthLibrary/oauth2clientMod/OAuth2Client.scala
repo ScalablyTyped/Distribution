@@ -40,11 +40,11 @@ class OAuth2Client () extends AuthClient {
   
   var apiKey: js.UndefOr[String] = js.native
   
-  var certificateCache: js.Any = js.native
+  /* private */ var certificateCache: js.Any = js.native
   
-  var certificateCacheFormat: js.Any = js.native
+  /* private */ var certificateCacheFormat: js.Any = js.native
   
-  var certificateExpiry: js.Any = js.native
+  /* private */ var certificateExpiry: js.Any = js.native
   
   var eagerRefreshThresholdMillis: Double = js.native
   
@@ -78,7 +78,7 @@ class OAuth2Client () extends AuthClient {
   def getAccessToken(): js.Promise[GetAccessTokenResponse] = js.native
   def getAccessToken(callback: GetAccessTokenCallback): Unit = js.native
   
-  var getAccessTokenAsync: js.Any = js.native
+  /* private */ var getAccessTokenAsync: js.Any = js.native
   
   /**
     * Gets federated sign-on certificates to use for verifying identity tokens.
@@ -127,7 +127,7 @@ class OAuth2Client () extends AuthClient {
   def getToken(options: GetTokenOptions): js.Promise[GetTokenResponse] = js.native
   def getToken(options: GetTokenOptions, callback: GetTokenCallback): Unit = js.native
   
-  var getTokenAsync: js.Any = js.native
+  /* private */ var getTokenAsync: js.Any = js.native
   
   /**
     * Obtains information about the provisioned access token.  Especially useful
@@ -147,7 +147,7 @@ class OAuth2Client () extends AuthClient {
   
   var projectId: js.UndefOr[String] = js.native
   
-  var redirectUri: js.Any = js.native
+  /* private */ var redirectUri: js.Any = js.native
   
   /**
     * Retrieves the access token using refresh token
@@ -158,7 +158,7 @@ class OAuth2Client () extends AuthClient {
   def refreshAccessToken(): js.Promise[RefreshAccessTokenResponse] = js.native
   def refreshAccessToken(callback: RefreshAccessTokenCallback): Unit = js.native
   
-  var refreshAccessTokenAsync: js.Any = js.native
+  /* private */ var refreshAccessTokenAsync: js.Any = js.native
   
   /**
     * Refreshes the access token.
@@ -171,7 +171,7 @@ class OAuth2Client () extends AuthClient {
   /* protected */ def refreshTokenNoCache(): js.Promise[GetTokenResponse] = js.native
   /* protected */ def refreshTokenNoCache(refreshToken: String): js.Promise[GetTokenResponse] = js.native
   
-  var refreshTokenPromises: Map[String, js.Promise[GetTokenResponse]] = js.native
+  /* protected */ var refreshTokenPromises: Map[String, js.Promise[GetTokenResponse]] = js.native
   
   def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native
   
@@ -185,7 +185,7 @@ class OAuth2Client () extends AuthClient {
   def revokeCredentials(): GaxiosPromise[RevokeCredentialsResult] = js.native
   def revokeCredentials(callback: BodyResponseCallback[RevokeCredentialsResult]): Unit = js.native
   
-  var revokeCredentialsAsync: js.Any = js.native
+  /* private */ var revokeCredentialsAsync: js.Any = js.native
   
   /**
     * Revokes the access given to token.
@@ -206,7 +206,7 @@ class OAuth2Client () extends AuthClient {
     callback: js.Function2[/* err */ Error | Null, /* login */ js.UndefOr[LoginTicket], Unit]
   ): Unit = js.native
   
-  var verifyIdTokenAsync: js.Any = js.native
+  /* private */ var verifyIdTokenAsync: js.Any = js.native
   
   def verifySignedJwtWithCerts(): Unit = js.native
   
@@ -352,6 +352,5 @@ object OAuth2Client {
     * Generates an URL to revoke the given token.
     * @param token The existing token to be revoked.
     */
-  @scala.inline
-  def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
 }

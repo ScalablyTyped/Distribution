@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ClientTransaction protected ()
   extends typings.sipJs.coreMod.ClientTransaction {
-  protected def this(
+  /* protected */ def this(
     _request: typings.sipJs.messagesMod.OutgoingRequestMessage,
     transport: Transport,
     user: ClientTransactionUser,
@@ -28,6 +28,5 @@ object ClientTransaction {
   @JSImport("sip.js", "Core.ClientTransaction.makeId")
   @js.native
   def makeId: js.Any = js.native
-  @scala.inline
-  def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
+  inline def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
 }

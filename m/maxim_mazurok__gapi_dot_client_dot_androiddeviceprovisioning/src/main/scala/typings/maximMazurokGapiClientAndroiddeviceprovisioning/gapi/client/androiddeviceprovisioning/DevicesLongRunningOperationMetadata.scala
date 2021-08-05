@@ -17,31 +17,23 @@ trait DevicesLongRunningOperationMetadata extends StObject {
 }
 object DevicesLongRunningOperationMetadata {
   
-  @scala.inline
-  def apply(): DevicesLongRunningOperationMetadata = {
+  inline def apply(): DevicesLongRunningOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DevicesLongRunningOperationMetadata]
   }
   
-  @scala.inline
-  implicit class DevicesLongRunningOperationMetadataMutableBuilder[Self <: DevicesLongRunningOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DevicesLongRunningOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setDevicesCount(value: Double): Self = StObject.set(x, "devicesCount", value.asInstanceOf[js.Any])
+    inline def setDevicesCount(value: Double): Self = StObject.set(x, "devicesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesCountUndefined: Self = StObject.set(x, "devicesCount", js.undefined)
+    inline def setDevicesCountUndefined: Self = StObject.set(x, "devicesCount", js.undefined)
     
-    @scala.inline
-    def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
+    inline def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
+    inline def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait DeleteFileShareOutput extends StObject {
 }
 object DeleteFileShareOutput {
   
-  @scala.inline
-  def apply(): DeleteFileShareOutput = {
+  inline def apply(): DeleteFileShareOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFileShareOutput]
   }
   
-  @scala.inline
-  implicit class DeleteFileShareOutputMutableBuilder[Self <: DeleteFileShareOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileShareOutput](x: Self) {
     
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
+    inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
+    inline def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
   }
 }

@@ -15,23 +15,18 @@ trait PoundElement
 }
 object PoundElement {
   
-  @scala.inline
-  def apply(`type`: pound): PoundElement = {
+  inline def apply(`type`: pound): PoundElement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoundElement]
   }
   
-  @scala.inline
-  implicit class PoundElementMutableBuilder[Self <: PoundElement] (val x: Self) extends AnyVal {
+  extension [Self <: PoundElement](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setType(value: pound): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pound): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

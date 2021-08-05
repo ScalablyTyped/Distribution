@@ -11,19 +11,15 @@ trait TrimWhitespaceResponse extends StObject {
 }
 object TrimWhitespaceResponse {
   
-  @scala.inline
-  def apply(): TrimWhitespaceResponse = {
+  inline def apply(): TrimWhitespaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrimWhitespaceResponse]
   }
   
-  @scala.inline
-  implicit class TrimWhitespaceResponseMutableBuilder[Self <: TrimWhitespaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TrimWhitespaceResponse](x: Self) {
     
-    @scala.inline
-    def setCellsChangedCount(value: Double): Self = StObject.set(x, "cellsChangedCount", value.asInstanceOf[js.Any])
+    inline def setCellsChangedCount(value: Double): Self = StObject.set(x, "cellsChangedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsChangedCountUndefined: Self = StObject.set(x, "cellsChangedCount", js.undefined)
+    inline def setCellsChangedCountUndefined: Self = StObject.set(x, "cellsChangedCount", js.undefined)
   }
 }

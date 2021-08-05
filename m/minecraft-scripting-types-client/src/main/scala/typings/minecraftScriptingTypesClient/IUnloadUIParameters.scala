@@ -16,16 +16,13 @@ trait IUnloadUIParameters extends StObject {
 }
 object IUnloadUIParameters {
   
-  @scala.inline
-  def apply(path: String): IUnloadUIParameters = {
+  inline def apply(path: String): IUnloadUIParameters = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUnloadUIParameters]
   }
   
-  @scala.inline
-  implicit class IUnloadUIParametersMutableBuilder[Self <: IUnloadUIParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IUnloadUIParameters](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

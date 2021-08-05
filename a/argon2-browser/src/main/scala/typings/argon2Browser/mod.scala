@@ -39,14 +39,11 @@ object mod {
     /* 2 */ val Argon2id: typings.argon2Browser.mod.ArgonType.Argon2id & Double = js.native
   }
   
-  @scala.inline
-  def hash(options: Argon2BrowserHashOptions): js.Promise[Argon2BrowserHashResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Argon2BrowserHashResult]]
+  inline def hash(options: Argon2BrowserHashOptions): js.Promise[Argon2BrowserHashResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Argon2BrowserHashResult]]
   
-  @scala.inline
-  def unloadRuntime(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadRuntime")().asInstanceOf[Unit]
+  inline def unloadRuntime(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadRuntime")().asInstanceOf[Unit]
   
-  @scala.inline
-  def verify(options: Argon2VerifyOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def verify(options: Argon2VerifyOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait Argon2BrowserHashOptions extends StObject {
     
@@ -68,56 +65,40 @@ object mod {
   }
   object Argon2BrowserHashOptions {
     
-    @scala.inline
-    def apply(pass: String | Uint8Array, salt: String | Uint8Array): Argon2BrowserHashOptions = {
+    inline def apply(pass: String | Uint8Array, salt: String | Uint8Array): Argon2BrowserHashOptions = {
       val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2BrowserHashOptions]
     }
     
-    @scala.inline
-    implicit class Argon2BrowserHashOptionsMutableBuilder[Self <: Argon2BrowserHashOptions] (val x: Self) extends AnyVal {
+    extension [Self <: Argon2BrowserHashOptions](x: Self) {
       
-      @scala.inline
-      def setDistPath(value: String): Self = StObject.set(x, "distPath", value.asInstanceOf[js.Any])
+      inline def setDistPath(value: String): Self = StObject.set(x, "distPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistPathUndefined: Self = StObject.set(x, "distPath", js.undefined)
+      inline def setDistPathUndefined: Self = StObject.set(x, "distPath", js.undefined)
       
-      @scala.inline
-      def setHashLen(value: Double): Self = StObject.set(x, "hashLen", value.asInstanceOf[js.Any])
+      inline def setHashLen(value: Double): Self = StObject.set(x, "hashLen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashLenUndefined: Self = StObject.set(x, "hashLen", js.undefined)
+      inline def setHashLenUndefined: Self = StObject.set(x, "hashLen", js.undefined)
       
-      @scala.inline
-      def setMem(value: Double): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
+      inline def setMem(value: Double): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
+      inline def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
       
-      @scala.inline
-      def setParallelism(value: Double): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
+      inline def setParallelism(value: Double): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
+      inline def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
       
-      @scala.inline
-      def setPass(value: String | Uint8Array): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String | Uint8Array): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalt(value: String | Uint8Array): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String | Uint8Array): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setType(value: ArgonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ArgonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -131,23 +112,18 @@ object mod {
   }
   object Argon2BrowserHashResult {
     
-    @scala.inline
-    def apply(encoded: String, hash: Uint8Array, hashHex: String): Argon2BrowserHashResult = {
+    inline def apply(encoded: String, hash: Uint8Array, hashHex: String): Argon2BrowserHashResult = {
       val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], hashHex = hashHex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2BrowserHashResult]
     }
     
-    @scala.inline
-    implicit class Argon2BrowserHashResultMutableBuilder[Self <: Argon2BrowserHashResult] (val x: Self) extends AnyVal {
+    extension [Self <: Argon2BrowserHashResult](x: Self) {
       
-      @scala.inline
-      def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
+      inline def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: Uint8Array): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Uint8Array): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashHex(value: String): Self = StObject.set(x, "hashHex", value.asInstanceOf[js.Any])
+      inline def setHashHex(value: String): Self = StObject.set(x, "hashHex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,20 +135,16 @@ object mod {
   }
   object Argon2Error {
     
-    @scala.inline
-    def apply(code: Double, message: String): Argon2Error = {
+    inline def apply(code: Double, message: String): Argon2Error = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2Error]
     }
     
-    @scala.inline
-    implicit class Argon2ErrorMutableBuilder[Self <: Argon2Error] (val x: Self) extends AnyVal {
+    extension [Self <: Argon2Error](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,26 +158,20 @@ object mod {
   }
   object Argon2VerifyOptions {
     
-    @scala.inline
-    def apply(encoded: String | Uint8Array, pass: String): Argon2VerifyOptions = {
+    inline def apply(encoded: String | Uint8Array, pass: String): Argon2VerifyOptions = {
       val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2VerifyOptions]
     }
     
-    @scala.inline
-    implicit class Argon2VerifyOptionsMutableBuilder[Self <: Argon2VerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: Argon2VerifyOptions](x: Self) {
       
-      @scala.inline
-      def setEncoded(value: String | Uint8Array): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
+      inline def setEncoded(value: String | Uint8Array): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ArgonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ArgonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

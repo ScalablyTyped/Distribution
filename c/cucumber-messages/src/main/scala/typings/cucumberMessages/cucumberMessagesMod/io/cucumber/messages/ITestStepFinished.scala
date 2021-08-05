@@ -21,49 +21,35 @@ trait ITestStepFinished extends StObject {
 }
 object ITestStepFinished {
   
-  @scala.inline
-  def apply(): ITestStepFinished = {
+  inline def apply(): ITestStepFinished = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestStepFinished]
   }
   
-  @scala.inline
-  implicit class ITestStepFinishedMutableBuilder[Self <: ITestStepFinished] (val x: Self) extends AnyVal {
+  extension [Self <: ITestStepFinished](x: Self) {
     
-    @scala.inline
-    def setTestCaseStartedId(value: String): Self = StObject.set(x, "testCaseStartedId", value.asInstanceOf[js.Any])
+    inline def setTestCaseStartedId(value: String): Self = StObject.set(x, "testCaseStartedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseStartedIdNull: Self = StObject.set(x, "testCaseStartedId", null)
+    inline def setTestCaseStartedIdNull: Self = StObject.set(x, "testCaseStartedId", null)
     
-    @scala.inline
-    def setTestCaseStartedIdUndefined: Self = StObject.set(x, "testCaseStartedId", js.undefined)
+    inline def setTestCaseStartedIdUndefined: Self = StObject.set(x, "testCaseStartedId", js.undefined)
     
-    @scala.inline
-    def setTestResult(value: ITestResult): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
+    inline def setTestResult(value: ITestResult): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResultNull: Self = StObject.set(x, "testResult", null)
+    inline def setTestResultNull: Self = StObject.set(x, "testResult", null)
     
-    @scala.inline
-    def setTestResultUndefined: Self = StObject.set(x, "testResult", js.undefined)
+    inline def setTestResultUndefined: Self = StObject.set(x, "testResult", js.undefined)
     
-    @scala.inline
-    def setTestStepId(value: String): Self = StObject.set(x, "testStepId", value.asInstanceOf[js.Any])
+    inline def setTestStepId(value: String): Self = StObject.set(x, "testStepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestStepIdNull: Self = StObject.set(x, "testStepId", null)
+    inline def setTestStepIdNull: Self = StObject.set(x, "testStepId", null)
     
-    @scala.inline
-    def setTestStepIdUndefined: Self = StObject.set(x, "testStepId", js.undefined)
+    inline def setTestStepIdUndefined: Self = StObject.set(x, "testStepId", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: ITimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampNull: Self = StObject.set(x, "timestamp", null)
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

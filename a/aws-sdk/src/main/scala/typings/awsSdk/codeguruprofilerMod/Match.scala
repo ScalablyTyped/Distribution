@@ -23,31 +23,23 @@ trait Match extends StObject {
 }
 object Match {
   
-  @scala.inline
-  def apply(): Match = {
+  inline def apply(): Match = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Match]
   }
   
-  @scala.inline
-  implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+  extension [Self <: Match](x: Self) {
     
-    @scala.inline
-    def setFrameAddress(value: String): Self = StObject.set(x, "frameAddress", value.asInstanceOf[js.Any])
+    inline def setFrameAddress(value: String): Self = StObject.set(x, "frameAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameAddressUndefined: Self = StObject.set(x, "frameAddress", js.undefined)
+    inline def setFrameAddressUndefined: Self = StObject.set(x, "frameAddress", js.undefined)
     
-    @scala.inline
-    def setTargetFramesIndex(value: Integer): Self = StObject.set(x, "targetFramesIndex", value.asInstanceOf[js.Any])
+    inline def setTargetFramesIndex(value: Integer): Self = StObject.set(x, "targetFramesIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFramesIndexUndefined: Self = StObject.set(x, "targetFramesIndex", js.undefined)
+    inline def setTargetFramesIndexUndefined: Self = StObject.set(x, "targetFramesIndex", js.undefined)
     
-    @scala.inline
-    def setThresholdBreachValue(value: Double): Self = StObject.set(x, "thresholdBreachValue", value.asInstanceOf[js.Any])
+    inline def setThresholdBreachValue(value: Double): Self = StObject.set(x, "thresholdBreachValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdBreachValueUndefined: Self = StObject.set(x, "thresholdBreachValue", js.undefined)
+    inline def setThresholdBreachValueUndefined: Self = StObject.set(x, "thresholdBreachValue", js.undefined)
   }
 }

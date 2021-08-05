@@ -12,6 +12,5 @@ object buttonActiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createButtonActiveGesture(el: HTMLElement, isButton: js.Function1[/* refEl */ HTMLElement, Boolean]): Gesture = (^.asInstanceOf[js.Dynamic].applyDynamic("createButtonActiveGesture")(el.asInstanceOf[js.Any], isButton.asInstanceOf[js.Any])).asInstanceOf[Gesture]
+  inline def createButtonActiveGesture(el: HTMLElement, isButton: js.Function1[/* refEl */ HTMLElement, Boolean]): Gesture = (^.asInstanceOf[js.Dynamic].applyDynamic("createButtonActiveGesture")(el.asInstanceOf[js.Any], isButton.asInstanceOf[js.Any])).asInstanceOf[Gesture]
 }

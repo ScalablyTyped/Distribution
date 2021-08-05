@@ -13,16 +13,13 @@ trait StartCrawlerScheduleRequest extends StObject {
 }
 object StartCrawlerScheduleRequest {
   
-  @scala.inline
-  def apply(CrawlerName: NameString): StartCrawlerScheduleRequest = {
+  inline def apply(CrawlerName: NameString): StartCrawlerScheduleRequest = {
     val __obj = js.Dynamic.literal(CrawlerName = CrawlerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartCrawlerScheduleRequest]
   }
   
-  @scala.inline
-  implicit class StartCrawlerScheduleRequestMutableBuilder[Self <: StartCrawlerScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartCrawlerScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
+    inline def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
   }
 }

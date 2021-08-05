@@ -17,25 +17,19 @@ trait OnVoIPChatSpeakersChangedCallbackResult extends StObject {
 }
 object OnVoIPChatSpeakersChangedCallbackResult {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String, openIdList: js.Array[String]): OnVoIPChatSpeakersChangedCallbackResult = {
+  inline def apply(errCode: Double, errMsg: String, openIdList: js.Array[String]): OnVoIPChatSpeakersChangedCallbackResult = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], openIdList = openIdList.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnVoIPChatSpeakersChangedCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnVoIPChatSpeakersChangedCallbackResultMutableBuilder[Self <: OnVoIPChatSpeakersChangedCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnVoIPChatSpeakersChangedCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenIdList(value: js.Array[String]): Self = StObject.set(x, "openIdList", value.asInstanceOf[js.Any])
+    inline def setOpenIdList(value: js.Array[String]): Self = StObject.set(x, "openIdList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenIdListVarargs(value: String*): Self = StObject.set(x, "openIdList", js.Array(value :_*))
+    inline def setOpenIdListVarargs(value: String*): Self = StObject.set(x, "openIdList", js.Array(value :_*))
   }
 }

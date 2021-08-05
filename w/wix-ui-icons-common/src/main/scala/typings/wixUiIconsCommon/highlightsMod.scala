@@ -22,20 +22,16 @@ object highlightsMod extends Shortcut {
   }
   object HighlightsProps {
     
-    @scala.inline
-    def apply(): HighlightsProps = {
+    inline def apply(): HighlightsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HighlightsProps]
     }
     
-    @scala.inline
-    implicit class HighlightsPropsMutableBuilder[Self <: HighlightsProps] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightsProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

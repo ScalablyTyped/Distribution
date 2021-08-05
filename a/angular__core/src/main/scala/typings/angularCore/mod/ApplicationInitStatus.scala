@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ApplicationInitStatus protected () extends StObject {
   def this(appInits: js.Array[js.Function0[js.Any]]) = this()
   
-  var appInits: js.Any = js.native
+  /* private */ var appInits: js.Any = js.native
   
   val done: /* false */ Boolean = js.native
   
   val donePromise: js.Promise[js.Any] = js.native
   
-  var initialized: js.Any = js.native
+  /* private */ var initialized: js.Any = js.native
   
-  var reject: js.Any = js.native
+  /* private */ var reject: js.Any = js.native
   
-  var resolve: js.Any = js.native
+  /* private */ var resolve: js.Any = js.native
 }

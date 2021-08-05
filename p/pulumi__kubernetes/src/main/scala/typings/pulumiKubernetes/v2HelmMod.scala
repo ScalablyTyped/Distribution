@@ -77,10 +77,8 @@ object v2HelmMod {
     ): Output_[StringDictionary[CustomResource]] = js.native
   }
   
-  @scala.inline
-  def fetch(chart: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def fetch(chart: String, opts: ResolvedFetchOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fetch(chart: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fetch(chart: String, opts: ResolvedFetchOpts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(chart.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait BaseChartOpts extends StObject {
     
@@ -113,50 +111,36 @@ object v2HelmMod {
   }
   object BaseChartOpts {
     
-    @scala.inline
-    def apply(): BaseChartOpts = {
+    inline def apply(): BaseChartOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseChartOpts]
     }
     
-    @scala.inline
-    implicit class BaseChartOptsMutableBuilder[Self <: BaseChartOpts] (val x: Self) extends AnyVal {
+    extension [Self <: BaseChartOpts](x: Self) {
       
-      @scala.inline
-      def setApiVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
+      inline def setApiVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
+      inline def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
       
-      @scala.inline
-      def setApiVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
+      inline def setApiVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
+      inline def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
+      inline def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
-      @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      inline def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+      inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
-      @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
       
-      @scala.inline
-      def setValues(value: Inputs): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Inputs): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   
@@ -189,35 +173,26 @@ object v2HelmMod {
   }
   object ChartOpts {
     
-    @scala.inline
-    def apply(chart: Input[String]): ChartOpts = {
+    inline def apply(chart: Input[String]): ChartOpts = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChartOpts]
     }
     
-    @scala.inline
-    implicit class ChartOptsMutableBuilder[Self <: ChartOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ChartOpts](x: Self) {
       
-      @scala.inline
-      def setChart(value: Input[String]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: Input[String]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchOpts(value: Input[FetchOpts]): Self = StObject.set(x, "fetchOpts", value.asInstanceOf[js.Any])
+      inline def setFetchOpts(value: Input[FetchOpts]): Self = StObject.set(x, "fetchOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchOptsUndefined: Self = StObject.set(x, "fetchOpts", js.undefined)
+      inline def setFetchOptsUndefined: Self = StObject.set(x, "fetchOpts", js.undefined)
       
-      @scala.inline
-      def setRepo(value: Input[String]): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: Input[String]): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+      inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -279,104 +254,72 @@ object v2HelmMod {
   }
   object FetchOpts {
     
-    @scala.inline
-    def apply(): FetchOpts = {
+    inline def apply(): FetchOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchOpts]
     }
     
-    @scala.inline
-    implicit class FetchOptsMutableBuilder[Self <: FetchOpts] (val x: Self) extends AnyVal {
+    extension [Self <: FetchOpts](x: Self) {
       
-      @scala.inline
-      def setCaFile(value: Input[String]): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
+      inline def setCaFile(value: Input[String]): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
+      inline def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
       
-      @scala.inline
-      def setCertFile(value: Input[String]): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
+      inline def setCertFile(value: Input[String]): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
+      inline def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
       
-      @scala.inline
-      def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setDevel(value: Input[Boolean]): Self = StObject.set(x, "devel", value.asInstanceOf[js.Any])
+      inline def setDevel(value: Input[Boolean]): Self = StObject.set(x, "devel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevelUndefined: Self = StObject.set(x, "devel", js.undefined)
+      inline def setDevelUndefined: Self = StObject.set(x, "devel", js.undefined)
       
-      @scala.inline
-      def setHome(value: Input[String]): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+      inline def setHome(value: Input[String]): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
+      inline def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
       
-      @scala.inline
-      def setKeyFile(value: Input[String]): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
+      inline def setKeyFile(value: Input[String]): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
+      inline def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
       
-      @scala.inline
-      def setKeyring(value: Input[String]): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
+      inline def setKeyring(value: Input[String]): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyringUndefined: Self = StObject.set(x, "keyring", js.undefined)
+      inline def setKeyringUndefined: Self = StObject.set(x, "keyring", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setProv(value: Input[Boolean]): Self = StObject.set(x, "prov", value.asInstanceOf[js.Any])
+      inline def setProv(value: Input[Boolean]): Self = StObject.set(x, "prov", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvUndefined: Self = StObject.set(x, "prov", js.undefined)
+      inline def setProvUndefined: Self = StObject.set(x, "prov", js.undefined)
       
-      @scala.inline
-      def setRepo(value: Input[String]): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: Input[String]): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+      inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
       
-      @scala.inline
-      def setUntar(value: Input[Boolean]): Self = StObject.set(x, "untar", value.asInstanceOf[js.Any])
+      inline def setUntar(value: Input[Boolean]): Self = StObject.set(x, "untar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntarUndefined: Self = StObject.set(x, "untar", js.undefined)
+      inline def setUntarUndefined: Self = StObject.set(x, "untar", js.undefined)
       
-      @scala.inline
-      def setUntardir(value: Input[String]): Self = StObject.set(x, "untardir", value.asInstanceOf[js.Any])
+      inline def setUntardir(value: Input[String]): Self = StObject.set(x, "untardir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntardirUndefined: Self = StObject.set(x, "untardir", js.undefined)
+      inline def setUntardirUndefined: Self = StObject.set(x, "untardir", js.undefined)
       
-      @scala.inline
-      def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      @scala.inline
-      def setVerify(value: Input[Boolean]): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
+      inline def setVerify(value: Input[Boolean]): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+      inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -391,17 +334,14 @@ object v2HelmMod {
   }
   object LocalChartOpts {
     
-    @scala.inline
-    def apply(path: String): LocalChartOpts = {
+    inline def apply(path: String): LocalChartOpts = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalChartOpts]
     }
     
-    @scala.inline
-    implicit class LocalChartOptsMutableBuilder[Self <: LocalChartOpts] (val x: Self) extends AnyVal {
+    extension [Self <: LocalChartOpts](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -439,104 +379,72 @@ object v2HelmMod {
   }
   object ResolvedFetchOpts {
     
-    @scala.inline
-    def apply(): ResolvedFetchOpts = {
+    inline def apply(): ResolvedFetchOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolvedFetchOpts]
     }
     
-    @scala.inline
-    implicit class ResolvedFetchOptsMutableBuilder[Self <: ResolvedFetchOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedFetchOpts](x: Self) {
       
-      @scala.inline
-      def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
+      inline def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
+      inline def setCaFileUndefined: Self = StObject.set(x, "caFile", js.undefined)
       
-      @scala.inline
-      def setCertFile(value: String): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
+      inline def setCertFile(value: String): Self = StObject.set(x, "certFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
+      inline def setCertFileUndefined: Self = StObject.set(x, "certFile", js.undefined)
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setDevel(value: Boolean): Self = StObject.set(x, "devel", value.asInstanceOf[js.Any])
+      inline def setDevel(value: Boolean): Self = StObject.set(x, "devel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevelUndefined: Self = StObject.set(x, "devel", js.undefined)
+      inline def setDevelUndefined: Self = StObject.set(x, "devel", js.undefined)
       
-      @scala.inline
-      def setHome(value: String): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+      inline def setHome(value: String): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
+      inline def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
       
-      @scala.inline
-      def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
+      inline def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
+      inline def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
       
-      @scala.inline
-      def setKeyring(value: String): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
+      inline def setKeyring(value: String): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyringUndefined: Self = StObject.set(x, "keyring", js.undefined)
+      inline def setKeyringUndefined: Self = StObject.set(x, "keyring", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setProv(value: Boolean): Self = StObject.set(x, "prov", value.asInstanceOf[js.Any])
+      inline def setProv(value: Boolean): Self = StObject.set(x, "prov", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvUndefined: Self = StObject.set(x, "prov", js.undefined)
+      inline def setProvUndefined: Self = StObject.set(x, "prov", js.undefined)
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
+      inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
       
-      @scala.inline
-      def setUntar(value: Boolean): Self = StObject.set(x, "untar", value.asInstanceOf[js.Any])
+      inline def setUntar(value: Boolean): Self = StObject.set(x, "untar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntarUndefined: Self = StObject.set(x, "untar", js.undefined)
+      inline def setUntarUndefined: Self = StObject.set(x, "untar", js.undefined)
       
-      @scala.inline
-      def setUntardir(value: String): Self = StObject.set(x, "untardir", value.asInstanceOf[js.Any])
+      inline def setUntardir(value: String): Self = StObject.set(x, "untardir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntardirUndefined: Self = StObject.set(x, "untardir", js.undefined)
+      inline def setUntardirUndefined: Self = StObject.set(x, "untardir", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      @scala.inline
-      def setVerify(value: Boolean): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
+      inline def setVerify(value: Boolean): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+      inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

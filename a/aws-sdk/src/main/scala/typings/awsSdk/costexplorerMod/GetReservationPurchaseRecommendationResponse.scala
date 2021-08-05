@@ -23,34 +23,25 @@ trait GetReservationPurchaseRecommendationResponse extends StObject {
 }
 object GetReservationPurchaseRecommendationResponse {
   
-  @scala.inline
-  def apply(): GetReservationPurchaseRecommendationResponse = {
+  inline def apply(): GetReservationPurchaseRecommendationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReservationPurchaseRecommendationResponse]
   }
   
-  @scala.inline
-  implicit class GetReservationPurchaseRecommendationResponseMutableBuilder[Self <: GetReservationPurchaseRecommendationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetReservationPurchaseRecommendationResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: ReservationPurchaseRecommendationMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ReservationPurchaseRecommendationMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setRecommendations(value: ReservationPurchaseRecommendations): Self = StObject.set(x, "Recommendations", value.asInstanceOf[js.Any])
+    inline def setRecommendations(value: ReservationPurchaseRecommendations): Self = StObject.set(x, "Recommendations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationsUndefined: Self = StObject.set(x, "Recommendations", js.undefined)
+    inline def setRecommendationsUndefined: Self = StObject.set(x, "Recommendations", js.undefined)
     
-    @scala.inline
-    def setRecommendationsVarargs(value: ReservationPurchaseRecommendation*): Self = StObject.set(x, "Recommendations", js.Array(value :_*))
+    inline def setRecommendationsVarargs(value: ReservationPurchaseRecommendation*): Self = StObject.set(x, "Recommendations", js.Array(value :_*))
   }
 }

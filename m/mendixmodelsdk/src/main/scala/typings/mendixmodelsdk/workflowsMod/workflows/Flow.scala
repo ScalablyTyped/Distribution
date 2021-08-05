@@ -71,8 +71,7 @@ object Flow {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Flow]
+  inline def create(model: IModel): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Flow]
   
   /**
     * Creates and returns a new Flow instance in the SDK and on the server.
@@ -83,8 +82,7 @@ object Flow {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInOutcomeUnderFlow(container: Outcome): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOutcomeUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
+  inline def createInOutcomeUnderFlow(container: Outcome): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOutcomeUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
   
   /**
     * Creates and returns a new Flow instance in the SDK and on the server.
@@ -95,20 +93,17 @@ object Flow {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWorkflowUnderFlow(container: Workflow): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
+  inline def createInWorkflowUnderFlow(container: Workflow): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

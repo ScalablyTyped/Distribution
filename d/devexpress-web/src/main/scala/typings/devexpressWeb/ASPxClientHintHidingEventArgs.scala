@@ -38,8 +38,7 @@ trait ASPxClientHintHidingEventArgs
 }
 object ASPxClientHintHidingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     contentElement: js.Any,
     hintElement: js.Any,
@@ -50,22 +49,16 @@ object ASPxClientHintHidingEventArgs {
     __obj.asInstanceOf[ASPxClientHintHidingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHintHidingEventArgsMutableBuilder[Self <: ASPxClientHintHidingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHintHidingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentElement(value: js.Any): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    inline def setContentElement(value: js.Any): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintElement(value: js.Any): Self = StObject.set(x, "hintElement", value.asInstanceOf[js.Any])
+    inline def setHintElement(value: js.Any): Self = StObject.set(x, "hintElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleElement(value: js.Any): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
+    inline def setTitleElement(value: js.Any): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
   }
 }

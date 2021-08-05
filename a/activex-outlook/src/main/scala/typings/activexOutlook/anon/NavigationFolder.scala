@@ -10,16 +10,13 @@ trait NavigationFolder extends StObject {
 }
 object NavigationFolder {
   
-  @scala.inline
-  def apply(NavigationFolder: typings.activexOutlook.Outlook.NavigationFolder): NavigationFolder = {
+  inline def apply(NavigationFolder: typings.activexOutlook.Outlook.NavigationFolder): NavigationFolder = {
     val __obj = js.Dynamic.literal(NavigationFolder = NavigationFolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationFolder]
   }
   
-  @scala.inline
-  implicit class NavigationFolderMutableBuilder[Self <: NavigationFolder] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationFolder](x: Self) {
     
-    @scala.inline
-    def setNavigationFolder(value: typings.activexOutlook.Outlook.NavigationFolder): Self = StObject.set(x, "NavigationFolder", value.asInstanceOf[js.Any])
+    inline def setNavigationFolder(value: typings.activexOutlook.Outlook.NavigationFolder): Self = StObject.set(x, "NavigationFolder", value.asInstanceOf[js.Any])
   }
 }

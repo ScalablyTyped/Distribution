@@ -26,22 +26,17 @@ trait ASPxClientGridViewCellInfo extends StObject {
 }
 object ASPxClientGridViewCellInfo {
   
-  @scala.inline
-  def apply(column: ASPxClientGridViewColumn, key: js.Any, rowVisibleIndex: Double): ASPxClientGridViewCellInfo = {
+  inline def apply(column: ASPxClientGridViewColumn, key: js.Any, rowVisibleIndex: Double): ASPxClientGridViewCellInfo = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowVisibleIndex = rowVisibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewCellInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewCellInfoMutableBuilder[Self <: ASPxClientGridViewCellInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewCellInfo](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowVisibleIndex(value: Double): Self = StObject.set(x, "rowVisibleIndex", value.asInstanceOf[js.Any])
+    inline def setRowVisibleIndex(value: Double): Self = StObject.set(x, "rowVisibleIndex", value.asInstanceOf[js.Any])
   }
 }

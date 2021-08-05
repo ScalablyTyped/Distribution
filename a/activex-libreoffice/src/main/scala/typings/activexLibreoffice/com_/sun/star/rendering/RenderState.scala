@@ -54,8 +54,7 @@ trait RenderState extends StObject {
 }
 object RenderState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AffineTransform: AffineMatrix2D,
     Clip: XPolyPolygon2D,
     CompositeOperation: Double,
@@ -65,19 +64,14 @@ object RenderState {
     __obj.asInstanceOf[RenderState]
   }
   
-  @scala.inline
-  implicit class RenderStateMutableBuilder[Self <: RenderState] (val x: Self) extends AnyVal {
+  extension [Self <: RenderState](x: Self) {
     
-    @scala.inline
-    def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
+    inline def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClip(value: XPolyPolygon2D): Self = StObject.set(x, "Clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: XPolyPolygon2D): Self = StObject.set(x, "Clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeOperation(value: Double): Self = StObject.set(x, "CompositeOperation", value.asInstanceOf[js.Any])
+    inline def setCompositeOperation(value: Double): Self = StObject.set(x, "CompositeOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceColor(value: SafeArray[ColorComponent]): Self = StObject.set(x, "DeviceColor", value.asInstanceOf[js.Any])
+    inline def setDeviceColor(value: SafeArray[ColorComponent]): Self = StObject.set(x, "DeviceColor", value.asInstanceOf[js.Any])
   }
 }

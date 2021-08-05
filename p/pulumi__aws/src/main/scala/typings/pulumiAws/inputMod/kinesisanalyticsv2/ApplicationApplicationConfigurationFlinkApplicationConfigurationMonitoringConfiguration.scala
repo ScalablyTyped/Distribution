@@ -24,28 +24,21 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoring
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration {
   
-  @scala.inline
-  def apply(configurationType: Input[String]): ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration = {
+  inline def apply(configurationType: Input[String]): ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration = {
     val __obj = js.Dynamic.literal(configurationType = configurationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfigurationType(value: Input[String]): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: Input[String]): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevel(value: Input[String]): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: Input[String]): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setMetricsLevel(value: Input[String]): Self = StObject.set(x, "metricsLevel", value.asInstanceOf[js.Any])
+    inline def setMetricsLevel(value: Input[String]): Self = StObject.set(x, "metricsLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsLevelUndefined: Self = StObject.set(x, "metricsLevel", js.undefined)
+    inline def setMetricsLevelUndefined: Self = StObject.set(x, "metricsLevel", js.undefined)
   }
 }

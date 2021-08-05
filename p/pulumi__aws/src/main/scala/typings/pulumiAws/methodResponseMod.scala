@@ -74,21 +74,16 @@ object methodResponseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MethodResponseState): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MethodResponseState, opts: CustomResourceOptions): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
+    inline def get(name: String, id: Input[ID]): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
+    inline def get(name: String, id: Input[ID], state: MethodResponseState): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
+    inline def get(name: String, id: Input[ID], state: MethodResponseState, opts: CustomResourceOptions): MethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodResponse]
     
     /**
       * Returns true if the given object is an instance of MethodResponse.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ Boolean]
   }
   
   trait MethodResponseArgs extends StObject {
@@ -127,8 +122,7 @@ object methodResponseMod {
   }
   object MethodResponseArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       httpMethod: Input[String],
       resourceId: Input[String],
       restApi: Input[String | RestApi],
@@ -138,32 +132,23 @@ object methodResponseMod {
       __obj.asInstanceOf[MethodResponseArgs]
     }
     
-    @scala.inline
-    implicit class MethodResponseArgsMutableBuilder[Self <: MethodResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MethodResponseArgs](x: Self) {
       
-      @scala.inline
-      def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
+      inline def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
+      inline def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
       
-      @scala.inline
-      def setResponseParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+      inline def setResponseParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+      inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,50 +188,36 @@ object methodResponseMod {
   }
   object MethodResponseState {
     
-    @scala.inline
-    def apply(): MethodResponseState = {
+    inline def apply(): MethodResponseState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MethodResponseState]
     }
     
-    @scala.inline
-    implicit class MethodResponseStateMutableBuilder[Self <: MethodResponseState] (val x: Self) extends AnyVal {
+    extension [Self <: MethodResponseState](x: Self) {
       
-      @scala.inline
-      def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: Input[String]): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+      inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+      inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
       
-      @scala.inline
-      def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
+      inline def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
+      inline def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
       
-      @scala.inline
-      def setResponseParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+      inline def setResponseParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+      inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
+      inline def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
 }

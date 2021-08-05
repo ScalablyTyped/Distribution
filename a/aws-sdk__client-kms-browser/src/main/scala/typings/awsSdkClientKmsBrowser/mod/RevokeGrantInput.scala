@@ -9,8 +9,7 @@ trait RevokeGrantInput
      with typings.awsSdkClientKmsBrowser.typesRevokeGrantInputMod.RevokeGrantInput
 object RevokeGrantInput {
   
-  @scala.inline
-  def apply(GrantId: String, KeyId: String): RevokeGrantInput = {
+  inline def apply(GrantId: String, KeyId: String): RevokeGrantInput = {
     val __obj = js.Dynamic.literal(GrantId = GrantId.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeGrantInput]
   }

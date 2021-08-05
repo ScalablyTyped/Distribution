@@ -36,35 +36,26 @@ object mod {
   }
   object NavigationBarButton {
     
-    @scala.inline
-    def apply(title: String): NavigationBarButton = {
+    inline def apply(title: String): NavigationBarButton = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationBarButton]
     }
     
-    @scala.inline
-    implicit class NavigationBarButtonMutableBuilder[Self <: NavigationBarButton] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationBarButton](x: Self) {
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
+      inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,59 +75,42 @@ object mod {
   }
   object NavigationBarProps {
     
-    @scala.inline
-    def apply(): NavigationBarProps = {
+    inline def apply(): NavigationBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationBarProps]
     }
     
-    @scala.inline
-    implicit class NavigationBarPropsMutableBuilder[Self <: NavigationBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationBarProps](x: Self) {
       
-      @scala.inline
-      def setLeftButton(value: NavigationBarButton | ReactElement): Self = StObject.set(x, "leftButton", value.asInstanceOf[js.Any])
+      inline def setLeftButton(value: NavigationBarButton | ReactElement): Self = StObject.set(x, "leftButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftButtonNull: Self = StObject.set(x, "leftButton", null)
+      inline def setLeftButtonNull: Self = StObject.set(x, "leftButton", null)
       
-      @scala.inline
-      def setLeftButtonUndefined: Self = StObject.set(x, "leftButton", js.undefined)
+      inline def setLeftButtonUndefined: Self = StObject.set(x, "leftButton", js.undefined)
       
-      @scala.inline
-      def setRightButton(value: NavigationBarButton | ReactElement): Self = StObject.set(x, "rightButton", value.asInstanceOf[js.Any])
+      inline def setRightButton(value: NavigationBarButton | ReactElement): Self = StObject.set(x, "rightButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightButtonNull: Self = StObject.set(x, "rightButton", null)
+      inline def setRightButtonNull: Self = StObject.set(x, "rightButton", null)
       
-      @scala.inline
-      def setRightButtonUndefined: Self = StObject.set(x, "rightButton", js.undefined)
+      inline def setRightButtonUndefined: Self = StObject.set(x, "rightButton", js.undefined)
       
-      @scala.inline
-      def setStatusBar(value: StatusBar): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+      inline def setStatusBar(value: StatusBar): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+      inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
       
-      @scala.inline
-      def setTitle(value: NavigationBarTitle | ReactElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: NavigationBarTitle | ReactElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleNull: Self = StObject.set(x, "title", null)
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -152,35 +126,26 @@ object mod {
   }
   object NavigationBarTitle {
     
-    @scala.inline
-    def apply(title: String): NavigationBarTitle = {
+    inline def apply(title: String): NavigationBarTitle = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationBarTitle]
     }
     
-    @scala.inline
-    implicit class NavigationBarTitleMutableBuilder[Self <: NavigationBarTitle] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationBarTitle](x: Self) {
       
-      @scala.inline
-      def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+      inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
+      inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
       
-      @scala.inline
-      def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+      inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
+      inline def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,44 +163,32 @@ object mod {
   }
   object StatusBar {
     
-    @scala.inline
-    def apply(): StatusBar = {
+    inline def apply(): StatusBar = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatusBar]
     }
     
-    @scala.inline
-    implicit class StatusBarMutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
+    extension [Self <: StatusBar](x: Self) {
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setHideAnimation(value: fade | slide | none): Self = StObject.set(x, "hideAnimation", value.asInstanceOf[js.Any])
+      inline def setHideAnimation(value: fade | slide | none): Self = StObject.set(x, "hideAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideAnimationUndefined: Self = StObject.set(x, "hideAnimation", js.undefined)
+      inline def setHideAnimationUndefined: Self = StObject.set(x, "hideAnimation", js.undefined)
       
-      @scala.inline
-      def setShowAnimation(value: fade | slide | none): Self = StObject.set(x, "showAnimation", value.asInstanceOf[js.Any])
+      inline def setShowAnimation(value: fade | slide | none): Self = StObject.set(x, "showAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAnimationUndefined: Self = StObject.set(x, "showAnimation", js.undefined)
+      inline def setShowAnimationUndefined: Self = StObject.set(x, "showAnimation", js.undefined)
       
-      @scala.inline
-      def setStyle(value: `light-content` | typings.reactNativeNavbar.reactNativeNavbarStrings.default): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: `light-content` | typings.reactNativeNavbar.reactNativeNavbarStrings.default): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     }
   }
 }

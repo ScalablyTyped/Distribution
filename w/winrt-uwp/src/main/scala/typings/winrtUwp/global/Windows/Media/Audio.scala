@@ -305,8 +305,7 @@ object Audio {
       * @return When this operation completes, a CreateAudioGraphResult object is returned.
       */
     /* static member */
-    @scala.inline
-    def createAsync(settings: typings.winrtUwp.Windows.Media.Audio.AudioGraphSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Audio.CreateAudioGraphResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(settings.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Audio.CreateAudioGraphResult]]
+    inline def createAsync(settings: typings.winrtUwp.Windows.Media.Audio.AudioGraphSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Audio.CreateAudioGraphResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(settings.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Audio.CreateAudioGraphResult]]
   }
   
   /** Represents a connection within an audio graph. */
@@ -745,15 +744,13 @@ object Audio {
   @JSGlobal("Windows.Media.Audio.rame")
   @js.native
   def rame: js.Any = js.native
-  @scala.inline
-  def rame_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rame")(x.asInstanceOf[js.Any])
+  inline def rame_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rame")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Audio.rocessing")
   @js.native
   def rocessing: js.Any = js.native
-  @scala.inline
-  def rocessing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rocessing")(x.asInstanceOf[js.Any])
+  inline def rocessing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rocessing")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Audio.uffer")
@@ -764,9 +761,7 @@ object Audio {
   @JSGlobal("Windows.Media.Audio.ufferAccessMode")
   @js.native
   def ufferAccessMode: js.Any = js.native
-  @scala.inline
-  def ufferAccessMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ufferAccessMode")(x.asInstanceOf[js.Any])
+  inline def ufferAccessMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ufferAccessMode")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def uffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uffer")(x.asInstanceOf[js.Any])
+  inline def uffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uffer")(x.asInstanceOf[js.Any])
 }

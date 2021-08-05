@@ -12,16 +12,13 @@ trait UserChangedEventArgs extends StObject {
 }
 object UserChangedEventArgs {
   
-  @scala.inline
-  def apply(user: User): UserChangedEventArgs = {
+  inline def apply(user: User): UserChangedEventArgs = {
     val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class UserChangedEventArgsMutableBuilder[Self <: UserChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UserChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

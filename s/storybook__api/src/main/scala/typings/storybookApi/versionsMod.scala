@@ -23,8 +23,7 @@ object versionsMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCurrentVersion: () => Version,
       getLatestVersion: () => Version,
       versionUpdateAvailable: () => Boolean
@@ -33,17 +32,13 @@ object versionsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setGetCurrentVersion(value: () => Version): Self = StObject.set(x, "getCurrentVersion", js.Any.fromFunction0(value))
+      inline def setGetCurrentVersion(value: () => Version): Self = StObject.set(x, "getCurrentVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLatestVersion(value: () => Version): Self = StObject.set(x, "getLatestVersion", js.Any.fromFunction0(value))
+      inline def setGetLatestVersion(value: () => Version): Self = StObject.set(x, "getLatestVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVersionUpdateAvailable(value: () => Boolean): Self = StObject.set(x, "versionUpdateAvailable", js.Any.fromFunction0(value))
+      inline def setVersionUpdateAvailable(value: () => Boolean): Self = StObject.set(x, "versionUpdateAvailable", js.Any.fromFunction0(value))
     }
   }
   
@@ -57,26 +52,20 @@ object versionsMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(lastVersionCheck: Double, versions: Versions & UnknownEntries): SubState = {
+    inline def apply(lastVersionCheck: Double, versions: Versions & UnknownEntries): SubState = {
       val __obj = js.Dynamic.literal(lastVersionCheck = lastVersionCheck.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setDismissedVersionNotification(value: String): Self = StObject.set(x, "dismissedVersionNotification", value.asInstanceOf[js.Any])
+      inline def setDismissedVersionNotification(value: String): Self = StObject.set(x, "dismissedVersionNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissedVersionNotificationUndefined: Self = StObject.set(x, "dismissedVersionNotification", js.undefined)
+      inline def setDismissedVersionNotificationUndefined: Self = StObject.set(x, "dismissedVersionNotification", js.undefined)
       
-      @scala.inline
-      def setLastVersionCheck(value: Double): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
+      inline def setLastVersionCheck(value: Double): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersions(value: Versions & UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      inline def setVersions(value: Versions & UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,23 +81,18 @@ object versionsMod {
   }
   object Version {
     
-    @scala.inline
-    def apply(version: String): Version = {
+    inline def apply(version: String): Version = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Version]
     }
     
-    @scala.inline
-    implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+    extension [Self <: Version](x: Self) {
       
-      @scala.inline
-      def setInfo(value: Plain): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Plain): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,32 +106,24 @@ object versionsMod {
   }
   object Versions {
     
-    @scala.inline
-    def apply(): Versions = {
+    inline def apply(): Versions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Versions]
     }
     
-    @scala.inline
-    implicit class VersionsMutableBuilder[Self <: Versions] (val x: Self) extends AnyVal {
+    extension [Self <: Versions](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Version): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Version): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setLatest(value: Version): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+      inline def setLatest(value: Version): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
+      inline def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
       
-      @scala.inline
-      def setNext(value: Version): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Version): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     }
   }
 }

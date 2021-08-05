@@ -22,20 +22,16 @@ object globeMod extends Shortcut {
   }
   object GlobeProps {
     
-    @scala.inline
-    def apply(): GlobeProps = {
+    inline def apply(): GlobeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobeProps]
     }
     
-    @scala.inline
-    implicit class GlobePropsMutableBuilder[Self <: GlobeProps] (val x: Self) extends AnyVal {
+    extension [Self <: GlobeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

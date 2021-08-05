@@ -29,40 +29,38 @@ object compileFacetMod {
   class FacetModel protected () extends ModelWithField {
     def this(spec: NormalizedFacetSpec, parent: Model, parentGivenName: String, config: Config[SignalRef]) = this()
     
-    var assembleFacet: js.Any = js.native
+    /* private */ var assembleFacet: js.Any = js.native
     
-    var assembleLabelTitle: js.Any = js.native
+    /* private */ var assembleLabelTitle: js.Any = js.native
     
     def channelHasField(channel: ExtendedChannel): Boolean = js.native
     
     val child: Model = js.native
     
-    var columnDistinctSignal: js.Any = js.native
+    /* private */ var columnDistinctSignal: js.Any = js.native
     
     val facet: EncodingFacetMapping[String, SignalRef] = js.native
     
-    var facetSortFields: js.Any = js.native
+    /* private */ var facetSortFields: js.Any = js.native
     
-    var facetSortOrder: js.Any = js.native
+    /* private */ var facetSortOrder: js.Any = js.native
     
     def fieldDef(channel: ExtendedChannel): TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null] = js.native
     
     /**
       * Aggregate cardinality for calculating size
       */
-    var getCardinalityAggregateForChild: js.Any = js.native
+    /* private */ var getCardinalityAggregateForChild: js.Any = js.native
     
-    var getHeaderLayoutMixins: js.Any = js.native
+    /* private */ var getHeaderLayoutMixins: js.Any = js.native
     
-    var initFacet: js.Any = js.native
+    /* private */ var initFacet: js.Any = js.native
     
-    var initFacetFieldDef: js.Any = js.native
+    /* private */ var initFacetFieldDef: js.Any = js.native
   }
   
-  @scala.inline
-  def facetSortFieldName(fieldDef: FacetFieldDef[String, ExprRef | SignalRef], sort: EncodingSortField[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("facetSortFieldName")(fieldDef.asInstanceOf[js.Any], sort.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def facetSortFieldName(
+  inline def facetSortFieldName(fieldDef: FacetFieldDef[String, ExprRef | SignalRef], sort: EncodingSortField[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("facetSortFieldName")(fieldDef.asInstanceOf[js.Any], sort.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def facetSortFieldName(
     fieldDef: FacetFieldDef[String, ExprRef | SignalRef],
     sort: EncodingSortField[String],
     opt: FieldRefOption

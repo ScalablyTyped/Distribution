@@ -16,8 +16,7 @@ trait XCloneable
 }
 object XCloneable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createClone: () => XCloneable,
     queryInterface: `type` => js.Any,
@@ -27,10 +26,8 @@ object XCloneable {
     __obj.asInstanceOf[XCloneable]
   }
   
-  @scala.inline
-  implicit class XCloneableMutableBuilder[Self <: XCloneable] (val x: Self) extends AnyVal {
+  extension [Self <: XCloneable](x: Self) {
     
-    @scala.inline
-    def setCreateClone(value: () => XCloneable): Self = StObject.set(x, "createClone", js.Any.fromFunction0(value))
+    inline def setCreateClone(value: () => XCloneable): Self = StObject.set(x, "createClone", js.Any.fromFunction0(value))
   }
 }

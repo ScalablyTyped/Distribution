@@ -74,74 +74,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBeforeClose(value: js.ThisFunction0[/* this */ modal, js.UndefOr[Boolean]]): Self = StObject.set(x, "beforeClose", value.asInstanceOf[js.Any])
+      inline def setBeforeClose(value: js.ThisFunction0[/* this */ modal, js.UndefOr[Boolean]]): Self = StObject.set(x, "beforeClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+      inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      @scala.inline
-      def setBeforeOpen(value: () => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction0(value))
+      inline def setBeforeOpen(value: () => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
+      inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      @scala.inline
-      def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
+      inline def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseLabelUndefined: Self = StObject.set(x, "closeLabel", js.undefined)
+      inline def setCloseLabelUndefined: Self = StObject.set(x, "closeLabel", js.undefined)
       
-      @scala.inline
-      def setCloseMethods(value: js.Array[String]): Self = StObject.set(x, "closeMethods", value.asInstanceOf[js.Any])
+      inline def setCloseMethods(value: js.Array[String]): Self = StObject.set(x, "closeMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseMethodsUndefined: Self = StObject.set(x, "closeMethods", js.undefined)
+      inline def setCloseMethodsUndefined: Self = StObject.set(x, "closeMethods", js.undefined)
       
-      @scala.inline
-      def setCloseMethodsVarargs(value: String*): Self = StObject.set(x, "closeMethods", js.Array(value :_*))
+      inline def setCloseMethodsVarargs(value: String*): Self = StObject.set(x, "closeMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setCssClass(value: js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      @scala.inline
-      def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
+      inline def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
       
-      @scala.inline
-      def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: js.ThisFunction0[/* this */ modal, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+      inline def setOnClose(value: js.ThisFunction0[/* this */ modal, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: js.ThisFunction0[/* this */ modal, Unit]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
+      inline def setOnOpen(value: js.ThisFunction0[/* this */ modal, Unit]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setStickyFooter(value: Boolean): Self = StObject.set(x, "stickyFooter", value.asInstanceOf[js.Any])
+      inline def setStickyFooter(value: Boolean): Self = StObject.set(x, "stickyFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyFooterUndefined: Self = StObject.set(x, "stickyFooter", js.undefined)
+      inline def setStickyFooterUndefined: Self = StObject.set(x, "stickyFooter", js.undefined)
     }
   }
 }

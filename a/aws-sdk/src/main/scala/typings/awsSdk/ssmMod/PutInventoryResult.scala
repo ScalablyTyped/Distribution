@@ -13,19 +13,15 @@ trait PutInventoryResult extends StObject {
 }
 object PutInventoryResult {
   
-  @scala.inline
-  def apply(): PutInventoryResult = {
+  inline def apply(): PutInventoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutInventoryResult]
   }
   
-  @scala.inline
-  implicit class PutInventoryResultMutableBuilder[Self <: PutInventoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: PutInventoryResult](x: Self) {
     
-    @scala.inline
-    def setMessage(value: PutInventoryMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: PutInventoryMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

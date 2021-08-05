@@ -26,8 +26,7 @@ trait CustomPropertyExpression
 }
 object CustomPropertyExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expressionType: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression,
     `type`: Unit
   ): CustomPropertyExpression = {
@@ -36,24 +35,18 @@ object CustomPropertyExpression {
     __obj.asInstanceOf[CustomPropertyExpression]
   }
   
-  @scala.inline
-  implicit class CustomPropertyExpressionMutableBuilder[Self <: CustomPropertyExpression] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyExpression](x: Self) {
     
-    @scala.inline
-    def setComponent(value: expression): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: expression): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setExpressionType(
+    inline def setExpressionType(
       value: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression
     ): Self = StObject.set(x, "expressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

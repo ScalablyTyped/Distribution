@@ -16,13 +16,12 @@ trait MailMergeFieldName extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.MailMergeFieldName_typekey")
+  /* private */ @JSName("Word.MailMergeFieldName_typekey")
   var WordDotMailMergeFieldName_typekey: MailMergeFieldName
 }
 object MailMergeFieldName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Index: Double,
@@ -35,25 +34,18 @@ object MailMergeFieldName {
     __obj.asInstanceOf[MailMergeFieldName]
   }
   
-  @scala.inline
-  implicit class MailMergeFieldNameMutableBuilder[Self <: MailMergeFieldName] (val x: Self) extends AnyVal {
+  extension [Self <: MailMergeFieldName](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotMailMergeFieldName_typekey(value: MailMergeFieldName): Self = StObject.set(x, "Word.MailMergeFieldName_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotMailMergeFieldName_typekey(value: MailMergeFieldName): Self = StObject.set(x, "Word.MailMergeFieldName_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,19 @@ trait subscribersChangeArgs
 }
 object subscribersChangeArgs {
   
-  @scala.inline
-  def apply(client: client, clientId: String, meta: js.Any, timestamp: Date): subscribersChangeArgs = {
+  inline def apply(client: client, clientId: String, meta: js.Any, timestamp: Date): subscribersChangeArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[subscribersChangeArgs]
   }
   
-  @scala.inline
-  implicit class subscribersChangeArgsMutableBuilder[Self <: subscribersChangeArgs] (val x: Self) extends AnyVal {
+  extension [Self <: subscribersChangeArgs](x: Self) {
     
-    @scala.inline
-    def setChange(value: subscribersChange): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: subscribersChange): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait CreateSecurityConfigurationRequest extends StObject {
 }
 object CreateSecurityConfigurationRequest {
   
-  @scala.inline
-  def apply(EncryptionConfiguration: EncryptionConfiguration, Name: NameString): CreateSecurityConfigurationRequest = {
+  inline def apply(EncryptionConfiguration: EncryptionConfiguration, Name: NameString): CreateSecurityConfigurationRequest = {
     val __obj = js.Dynamic.literal(EncryptionConfiguration = EncryptionConfiguration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSecurityConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class CreateSecurityConfigurationRequestMutableBuilder[Self <: CreateSecurityConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSecurityConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

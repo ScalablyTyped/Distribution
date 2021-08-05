@@ -42,43 +42,31 @@ trait PaginationRequest extends StObject {
 }
 object PaginationRequest {
   
-  @scala.inline
-  def apply(): PaginationRequest = {
+  inline def apply(): PaginationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationRequest]
   }
   
-  @scala.inline
-  implicit class PaginationRequestMutableBuilder[Self <: PaginationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationRequest](x: Self) {
     
-    @scala.inline
-    def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
+    inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnding_beforeNull: Self = StObject.set(x, "ending_before", null)
+    inline def setEnding_beforeNull: Self = StObject.set(x, "ending_before", null)
     
-    @scala.inline
-    def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
+    inline def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOrder(value: asc | desc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: asc | desc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
+    inline def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarting_afterNull: Self = StObject.set(x, "starting_after", null)
+    inline def setStarting_afterNull: Self = StObject.set(x, "starting_after", null)
     
-    @scala.inline
-    def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
+    inline def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
   }
 }

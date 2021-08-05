@@ -27,8 +27,7 @@ trait WidgetCommonProperties extends StObject {
 }
 object WidgetCommonProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultElement: String,
     document: Document,
     element: JQuery,
@@ -42,31 +41,22 @@ object WidgetCommonProperties {
     __obj.asInstanceOf[WidgetCommonProperties]
   }
   
-  @scala.inline
-  implicit class WidgetCommonPropertiesMutableBuilder[Self <: WidgetCommonProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetCommonProperties](x: Self) {
     
-    @scala.inline
-    def setDefaultElement(value: String): Self = StObject.set(x, "defaultElement", value.asInstanceOf[js.Any])
+    inline def setDefaultElement(value: String): Self = StObject.set(x, "defaultElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetEventPrefix(value: String): Self = StObject.set(x, "widgetEventPrefix", value.asInstanceOf[js.Any])
+    inline def setWidgetEventPrefix(value: String): Self = StObject.set(x, "widgetEventPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetFullName(value: String): Self = StObject.set(x, "widgetFullName", value.asInstanceOf[js.Any])
+    inline def setWidgetFullName(value: String): Self = StObject.set(x, "widgetFullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

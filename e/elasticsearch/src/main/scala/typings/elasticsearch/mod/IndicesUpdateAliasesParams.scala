@@ -18,28 +18,21 @@ trait IndicesUpdateAliasesParams
 }
 object IndicesUpdateAliasesParams {
   
-  @scala.inline
-  def apply(body: Actions): IndicesUpdateAliasesParams = {
+  inline def apply(body: Actions): IndicesUpdateAliasesParams = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesUpdateAliasesParams]
   }
   
-  @scala.inline
-  implicit class IndicesUpdateAliasesParamsMutableBuilder[Self <: IndicesUpdateAliasesParams] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesUpdateAliasesParams](x: Self) {
     
-    @scala.inline
-    def setBody(value: Actions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Actions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

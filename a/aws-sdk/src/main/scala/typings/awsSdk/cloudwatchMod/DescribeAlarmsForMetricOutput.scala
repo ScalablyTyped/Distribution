@@ -13,22 +13,17 @@ trait DescribeAlarmsForMetricOutput extends StObject {
 }
 object DescribeAlarmsForMetricOutput {
   
-  @scala.inline
-  def apply(): DescribeAlarmsForMetricOutput = {
+  inline def apply(): DescribeAlarmsForMetricOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAlarmsForMetricOutput]
   }
   
-  @scala.inline
-  implicit class DescribeAlarmsForMetricOutputMutableBuilder[Self <: DescribeAlarmsForMetricOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlarmsForMetricOutput](x: Self) {
     
-    @scala.inline
-    def setMetricAlarms(value: MetricAlarms): Self = StObject.set(x, "MetricAlarms", value.asInstanceOf[js.Any])
+    inline def setMetricAlarms(value: MetricAlarms): Self = StObject.set(x, "MetricAlarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricAlarmsUndefined: Self = StObject.set(x, "MetricAlarms", js.undefined)
+    inline def setMetricAlarmsUndefined: Self = StObject.set(x, "MetricAlarms", js.undefined)
     
-    @scala.inline
-    def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value :_*))
+    inline def setMetricAlarmsVarargs(value: MetricAlarm*): Self = StObject.set(x, "MetricAlarms", js.Array(value :_*))
   }
 }

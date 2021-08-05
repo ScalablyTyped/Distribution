@@ -42,8 +42,7 @@ object tabViewMod {
     @JSImport("react-native-tab-view/lib/typescript/src/TabView", "default.defaultProps")
     @js.native
     def defaultProps: GestureHandlerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: GestureHandlerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: GestureHandlerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait Props[T /* <: Route */]
@@ -82,8 +81,7 @@ object tabViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply[T /* <: Route */](
+    inline def apply[T /* <: Route */](
       gestureHandlerProps: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]],
       keyboardDismissMode: none | `on-drag` | auto,
       `lazy`: Boolean,
@@ -104,74 +102,51 @@ object tabViewMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], T /* <: Route */] (val x: Self & Props[T]) extends AnyVal {
+    extension [Self <: Props[?], T /* <: Route */](x: Self & Props[T]) {
       
-      @scala.inline
-      def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
+      inline def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialLayout(value: Height): Self = StObject.set(x, "initialLayout", value.asInstanceOf[js.Any])
+      inline def setInitialLayout(value: Height): Self = StObject.set(x, "initialLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialLayoutUndefined: Self = StObject.set(x, "initialLayout", js.undefined)
+      inline def setInitialLayoutUndefined: Self = StObject.set(x, "initialLayout", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyPreloadDistance(value: Double): Self = StObject.set(x, "lazyPreloadDistance", value.asInstanceOf[js.Any])
+      inline def setLazyPreloadDistance(value: Double): Self = StObject.set(x, "lazyPreloadDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+      inline def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnIndexChange(value: Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
+      inline def setOnIndexChange(value: Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPosition(value: Value): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Value): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
+      inline def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
+      inline def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
       
-      @scala.inline
-      def setRenderLazyPlaceholder(value: typings.reactNativeTabView.anon.Route[T] => ReactNode): Self = StObject.set(x, "renderLazyPlaceholder", js.Any.fromFunction1(value))
+      inline def setRenderLazyPlaceholder(value: typings.reactNativeTabView.anon.Route[T] => ReactNode): Self = StObject.set(x, "renderLazyPlaceholder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderPager(value: typings.reactNativeTabView.pagerMod.Props[T] => ReactNode): Self = StObject.set(x, "renderPager", js.Any.fromFunction1(value))
+      inline def setRenderPager(value: typings.reactNativeTabView.pagerMod.Props[T] => ReactNode): Self = StObject.set(x, "renderPager", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderScene(value: SceneRendererProps & typings.reactNativeTabView.anon.Route[T] => ReactNode): Self = StObject.set(x, "renderScene", js.Any.fromFunction1(value))
+      inline def setRenderScene(value: SceneRendererProps & typings.reactNativeTabView.anon.Route[T] => ReactNode): Self = StObject.set(x, "renderScene", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTabBar(value: SceneRendererProps & typings.reactNativeTabView.anon.NavigationState[T] => ReactNode): Self = StObject.set(x, "renderTabBar", js.Any.fromFunction1(value))
+      inline def setRenderTabBar(value: SceneRendererProps & typings.reactNativeTabView.anon.NavigationState[T] => ReactNode): Self = StObject.set(x, "renderTabBar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSceneContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "sceneContainerStyle", value.asInstanceOf[js.Any])
+      inline def setSceneContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "sceneContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSceneContainerStyleNull: Self = StObject.set(x, "sceneContainerStyle", null)
+      inline def setSceneContainerStyleNull: Self = StObject.set(x, "sceneContainerStyle", null)
       
-      @scala.inline
-      def setSceneContainerStyleUndefined: Self = StObject.set(x, "sceneContainerStyle", js.undefined)
+      inline def setSceneContainerStyleUndefined: Self = StObject.set(x, "sceneContainerStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTabBarPosition(value: top | bottom): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
+      inline def setTabBarPosition(value: top | bottom): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,17 +156,14 @@ object tabViewMod {
   }
   object State {
     
-    @scala.inline
-    def apply(layout: Layout): State = {
+    inline def apply(layout: Layout): State = {
       val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,9 +171,9 @@ object tabViewMod {
   trait TabView[T /* <: Route */]
     extends Component[Props[T], State, js.Any] {
     
-    var handleLayout: js.Any = js.native
+    /* private */ var handleLayout: js.Any = js.native
     
-    var jumpToIndex: js.Any = js.native
+    /* private */ var jumpToIndex: js.Any = js.native
     
     @JSName("state")
     var state_TabView: typings.reactNativeTabView.anon.Layout = js.native

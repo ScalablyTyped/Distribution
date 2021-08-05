@@ -89,8 +89,7 @@ trait SpreadsheetViewSettings
 }
 object SpreadsheetViewSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GridColor: Color,
     HasColumnRowHeaders: Boolean,
     HasHorizontalScrollBar: Boolean,
@@ -127,67 +126,46 @@ object SpreadsheetViewSettings {
     __obj.asInstanceOf[SpreadsheetViewSettings]
   }
   
-  @scala.inline
-  implicit class SpreadsheetViewSettingsMutableBuilder[Self <: SpreadsheetViewSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetViewSettings](x: Self) {
     
-    @scala.inline
-    def setGridColor(value: Color): Self = StObject.set(x, "GridColor", value.asInstanceOf[js.Any])
+    inline def setGridColor(value: Color): Self = StObject.set(x, "GridColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasColumnRowHeaders(value: Boolean): Self = StObject.set(x, "HasColumnRowHeaders", value.asInstanceOf[js.Any])
+    inline def setHasColumnRowHeaders(value: Boolean): Self = StObject.set(x, "HasColumnRowHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasHorizontalScrollBar(value: Boolean): Self = StObject.set(x, "HasHorizontalScrollBar", value.asInstanceOf[js.Any])
+    inline def setHasHorizontalScrollBar(value: Boolean): Self = StObject.set(x, "HasHorizontalScrollBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSheetTabs(value: Boolean): Self = StObject.set(x, "HasSheetTabs", value.asInstanceOf[js.Any])
+    inline def setHasSheetTabs(value: Boolean): Self = StObject.set(x, "HasSheetTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasVerticalScrollBar(value: Boolean): Self = StObject.set(x, "HasVerticalScrollBar", value.asInstanceOf[js.Any])
+    inline def setHasVerticalScrollBar(value: Boolean): Self = StObject.set(x, "HasVerticalScrollBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSpellMarks(value: Boolean): Self = StObject.set(x, "HideSpellMarks", value.asInstanceOf[js.Any])
+    inline def setHideSpellMarks(value: Boolean): Self = StObject.set(x, "HideSpellMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOutlineSymbolsSet(value: Boolean): Self = StObject.set(x, "IsOutlineSymbolsSet", value.asInstanceOf[js.Any])
+    inline def setIsOutlineSymbolsSet(value: Boolean): Self = StObject.set(x, "IsOutlineSymbolsSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValueHighlightingEnabled(value: Boolean): Self = StObject.set(x, "IsValueHighlightingEnabled", value.asInstanceOf[js.Any])
+    inline def setIsValueHighlightingEnabled(value: Boolean): Self = StObject.set(x, "IsValueHighlightingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAnchor(value: Boolean): Self = StObject.set(x, "ShowAnchor", value.asInstanceOf[js.Any])
+    inline def setShowAnchor(value: Boolean): Self = StObject.set(x, "ShowAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCharts(value: Double): Self = StObject.set(x, "ShowCharts", value.asInstanceOf[js.Any])
+    inline def setShowCharts(value: Double): Self = StObject.set(x, "ShowCharts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDrawing(value: Double): Self = StObject.set(x, "ShowDrawing", value.asInstanceOf[js.Any])
+    inline def setShowDrawing(value: Double): Self = StObject.set(x, "ShowDrawing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFormulas(value: Boolean): Self = StObject.set(x, "ShowFormulas", value.asInstanceOf[js.Any])
+    inline def setShowFormulas(value: Boolean): Self = StObject.set(x, "ShowFormulas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowGrid(value: Boolean): Self = StObject.set(x, "ShowGrid", value.asInstanceOf[js.Any])
+    inline def setShowGrid(value: Boolean): Self = StObject.set(x, "ShowGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHelpLines(value: Boolean): Self = StObject.set(x, "ShowHelpLines", value.asInstanceOf[js.Any])
+    inline def setShowHelpLines(value: Boolean): Self = StObject.set(x, "ShowHelpLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNotes(value: Boolean): Self = StObject.set(x, "ShowNotes", value.asInstanceOf[js.Any])
+    inline def setShowNotes(value: Boolean): Self = StObject.set(x, "ShowNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowObjects(value: Double): Self = StObject.set(x, "ShowObjects", value.asInstanceOf[js.Any])
+    inline def setShowObjects(value: Double): Self = StObject.set(x, "ShowObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPageBreaks(value: Boolean): Self = StObject.set(x, "ShowPageBreaks", value.asInstanceOf[js.Any])
+    inline def setShowPageBreaks(value: Boolean): Self = StObject.set(x, "ShowPageBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowZeroValues(value: Boolean): Self = StObject.set(x, "ShowZeroValues", value.asInstanceOf[js.Any])
+    inline def setShowZeroValues(value: Boolean): Self = StObject.set(x, "ShowZeroValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomType(value: Double): Self = StObject.set(x, "ZoomType", value.asInstanceOf[js.Any])
+    inline def setZoomType(value: Double): Self = StObject.set(x, "ZoomType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
+    inline def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
   }
 }

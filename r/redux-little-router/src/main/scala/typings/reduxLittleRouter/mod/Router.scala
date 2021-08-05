@@ -21,8 +21,7 @@ trait Router extends StObject {
 }
 object Router {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enhancer: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[Location, js.Object],
     middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], js.Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]],
     reducer: (/* state */ js.UndefOr[Location], AnyAction) => Location
@@ -31,20 +30,16 @@ object Router {
     __obj.asInstanceOf[Router]
   }
   
-  @scala.inline
-  implicit class RouterMutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
+  extension [Self <: Router](x: Self) {
     
-    @scala.inline
-    def setEnhancer(
+    inline def setEnhancer(
       value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[Location, js.Object]
     ): Self = StObject.set(x, "enhancer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMiddleware(
+    inline def setMiddleware(
       value: /* api */ MiddlewareAPI[Dispatch[AnyAction], js.Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
     ): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReducer(value: (/* state */ js.UndefOr[Location], AnyAction) => Location): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
+    inline def setReducer(value: (/* state */ js.UndefOr[Location], AnyAction) => Location): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
   }
 }

@@ -10,16 +10,13 @@ trait GetUpgradeStatusRequest extends StObject {
 }
 object GetUpgradeStatusRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): GetUpgradeStatusRequest = {
+  inline def apply(DomainName: DomainName): GetUpgradeStatusRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUpgradeStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetUpgradeStatusRequestMutableBuilder[Self <: GetUpgradeStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUpgradeStatusRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

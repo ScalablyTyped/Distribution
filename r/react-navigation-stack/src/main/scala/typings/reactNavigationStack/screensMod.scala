@@ -13,11 +13,9 @@ object screensMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def MaybeScreen(hasEnabledActiveRest: ViewPropsenabledbooleanac): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MaybeScreen")(hasEnabledActiveRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MaybeScreen(hasEnabledActiveRest: ViewPropsenabledbooleanac): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MaybeScreen")(hasEnabledActiveRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def MaybeScreenContainer(hasEnabledRest: ViewPropsenabledbooleanch): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MaybeScreenContainer")(hasEnabledRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MaybeScreenContainer(hasEnabledRest: ViewPropsenabledbooleanch): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MaybeScreenContainer")(hasEnabledRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Screens", "shouldUseActivityState")
   @js.native

@@ -16,22 +16,17 @@ trait SchemaCloudStorageSink extends StObject {
 }
 object SchemaCloudStorageSink {
   
-  @scala.inline
-  def apply(): SchemaCloudStorageSink = {
+  inline def apply(): SchemaCloudStorageSink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCloudStorageSink]
   }
   
-  @scala.inline
-  implicit class SchemaCloudStorageSinkMutableBuilder[Self <: SchemaCloudStorageSink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCloudStorageSink](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[SchemaCloudStorageFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[SchemaCloudStorageFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: SchemaCloudStorageFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: SchemaCloudStorageFile*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

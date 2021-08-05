@@ -18,22 +18,17 @@ trait CreateDatabaseRequest extends StObject {
 }
 object CreateDatabaseRequest {
   
-  @scala.inline
-  def apply(DatabaseInput: DatabaseInput): CreateDatabaseRequest = {
+  inline def apply(DatabaseInput: DatabaseInput): CreateDatabaseRequest = {
     val __obj = js.Dynamic.literal(DatabaseInput = DatabaseInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class CreateDatabaseRequestMutableBuilder[Self <: CreateDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseInput(value: DatabaseInput): Self = StObject.set(x, "DatabaseInput", value.asInstanceOf[js.Any])
+    inline def setDatabaseInput(value: DatabaseInput): Self = StObject.set(x, "DatabaseInput", value.asInstanceOf[js.Any])
   }
 }

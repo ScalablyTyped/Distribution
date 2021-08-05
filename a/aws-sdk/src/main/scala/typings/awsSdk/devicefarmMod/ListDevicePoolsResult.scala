@@ -18,28 +18,21 @@ trait ListDevicePoolsResult extends StObject {
 }
 object ListDevicePoolsResult {
   
-  @scala.inline
-  def apply(): ListDevicePoolsResult = {
+  inline def apply(): ListDevicePoolsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDevicePoolsResult]
   }
   
-  @scala.inline
-  implicit class ListDevicePoolsResultMutableBuilder[Self <: ListDevicePoolsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDevicePoolsResult](x: Self) {
     
-    @scala.inline
-    def setDevicePools(value: DevicePools): Self = StObject.set(x, "devicePools", value.asInstanceOf[js.Any])
+    inline def setDevicePools(value: DevicePools): Self = StObject.set(x, "devicePools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePoolsUndefined: Self = StObject.set(x, "devicePools", js.undefined)
+    inline def setDevicePoolsUndefined: Self = StObject.set(x, "devicePools", js.undefined)
     
-    @scala.inline
-    def setDevicePoolsVarargs(value: DevicePool*): Self = StObject.set(x, "devicePools", js.Array(value :_*))
+    inline def setDevicePoolsVarargs(value: DevicePool*): Self = StObject.set(x, "devicePools", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

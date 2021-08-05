@@ -35,8 +35,7 @@ trait XDOMImplementation
 }
 object XDOMImplementation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDocument: (String, String, XDocumentType) => XDocument,
     createDocumentType: (String, String, String) => XDocumentType,
@@ -48,16 +47,12 @@ object XDOMImplementation {
     __obj.asInstanceOf[XDOMImplementation]
   }
   
-  @scala.inline
-  implicit class XDOMImplementationMutableBuilder[Self <: XDOMImplementation] (val x: Self) extends AnyVal {
+  extension [Self <: XDOMImplementation](x: Self) {
     
-    @scala.inline
-    def setCreateDocument(value: (String, String, XDocumentType) => XDocument): Self = StObject.set(x, "createDocument", js.Any.fromFunction3(value))
+    inline def setCreateDocument(value: (String, String, XDocumentType) => XDocument): Self = StObject.set(x, "createDocument", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateDocumentType(value: (String, String, String) => XDocumentType): Self = StObject.set(x, "createDocumentType", js.Any.fromFunction3(value))
+    inline def setCreateDocumentType(value: (String, String, String) => XDocumentType): Self = StObject.set(x, "createDocumentType", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHasFeature(value: (String, String) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
+    inline def setHasFeature(value: (String, String) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
   }
 }

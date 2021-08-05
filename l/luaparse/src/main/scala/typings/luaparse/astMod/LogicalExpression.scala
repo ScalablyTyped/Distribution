@@ -19,23 +19,18 @@ trait LogicalExpression
 }
 object LogicalExpression {
   
-  @scala.inline
-  def apply(left: Expression, operator: or | and, right: Expression): LogicalExpression = {
+  inline def apply(left: Expression, operator: or | and, right: Expression): LogicalExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LogicalExpression")
     __obj.asInstanceOf[LogicalExpression]
   }
   
-  @scala.inline
-  implicit class LogicalExpressionMutableBuilder[Self <: LogicalExpression] (val x: Self) extends AnyVal {
+  extension [Self <: LogicalExpression](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: or | and): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: or | and): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

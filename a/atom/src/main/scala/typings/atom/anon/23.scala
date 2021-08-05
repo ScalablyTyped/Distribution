@@ -14,19 +14,15 @@ trait `23` extends StObject {
 }
 object `23` {
   
-  @scala.inline
-  def apply(scopeDescriptor: typings.atom.mod.ScopeDescriptor, value: none | textOrSnippet): `23` = {
+  inline def apply(scopeDescriptor: typings.atom.mod.ScopeDescriptor, value: none | textOrSnippet): `23` = {
     val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`23`]
   }
   
-  @scala.inline
-  implicit class `23MutableBuilder`[Self <: `23`] (val x: Self) extends AnyVal {
+  extension [Self <: `23`](x: Self) {
     
-    @scala.inline
-    def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
+    inline def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: none | textOrSnippet): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: none | textOrSnippet): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

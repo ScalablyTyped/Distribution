@@ -20,19 +20,14 @@ object Sparklines {
   @js.native
   val ^ : Sparklines = js.native
   
-  @scala.inline
-  implicit class SparklinesMutableBuilder[Self <: Sparklines] (val x: Self) extends AnyVal {
+  extension [Self <: Sparklines](x: Self) {
     
-    @scala.inline
-    def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: (js.Any, String, js.Array[js.Any], js.Any, Double) => String): Self = StObject.set(x, "template", js.Any.fromFunction5(value))
+    inline def setTemplate(value: (js.Any, String, js.Array[js.Any], js.Any, Double) => String): Self = StObject.set(x, "template", js.Any.fromFunction5(value))
   }
 }

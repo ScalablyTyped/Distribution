@@ -13,16 +13,13 @@ trait SettingsPaneCommandsRequest extends StObject {
 }
 object SettingsPaneCommandsRequest {
   
-  @scala.inline
-  def apply(applicationCommands: IVector[SettingsCommand]): SettingsPaneCommandsRequest = {
+  inline def apply(applicationCommands: IVector[SettingsCommand]): SettingsPaneCommandsRequest = {
     val __obj = js.Dynamic.literal(applicationCommands = applicationCommands.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsPaneCommandsRequest]
   }
   
-  @scala.inline
-  implicit class SettingsPaneCommandsRequestMutableBuilder[Self <: SettingsPaneCommandsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsPaneCommandsRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "applicationCommands", value.asInstanceOf[js.Any])
+    inline def setApplicationCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "applicationCommands", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait RemotePlayerController extends StObject {
 }
 object RemotePlayerController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit,
     getFormattedTime: Double => String,
     getSeekPosition: (Double, Double) => Double,
@@ -51,41 +50,30 @@ object RemotePlayerController {
     __obj.asInstanceOf[RemotePlayerController]
   }
   
-  @scala.inline
-  implicit class RemotePlayerControllerMutableBuilder[Self <: RemotePlayerController] (val x: Self) extends AnyVal {
+  extension [Self <: RemotePlayerController](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(
+    inline def setAddEventListener(
       value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetFormattedTime(value: Double => String): Self = StObject.set(x, "getFormattedTime", js.Any.fromFunction1(value))
+    inline def setGetFormattedTime(value: Double => String): Self = StObject.set(x, "getFormattedTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSeekPosition(value: (Double, Double) => Double): Self = StObject.set(x, "getSeekPosition", js.Any.fromFunction2(value))
+    inline def setGetSeekPosition(value: (Double, Double) => Double): Self = StObject.set(x, "getSeekPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSeekTime(value: (Double, Double) => Double): Self = StObject.set(x, "getSeekTime", js.Any.fromFunction2(value))
+    inline def setGetSeekTime(value: (Double, Double) => Double): Self = StObject.set(x, "getSeekTime", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMuteOrUnmute(value: () => Unit): Self = StObject.set(x, "muteOrUnmute", js.Any.fromFunction0(value))
+    inline def setMuteOrUnmute(value: () => Unit): Self = StObject.set(x, "muteOrUnmute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlayOrPause(value: () => Unit): Self = StObject.set(x, "playOrPause", js.Any.fromFunction0(value))
+    inline def setPlayOrPause(value: () => Unit): Self = StObject.set(x, "playOrPause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveEventListener(
+    inline def setRemoveEventListener(
       value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
+    inline def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetVolumeLevel(value: () => Unit): Self = StObject.set(x, "setVolumeLevel", js.Any.fromFunction0(value))
+    inline def setSetVolumeLevel(value: () => Unit): Self = StObject.set(x, "setVolumeLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

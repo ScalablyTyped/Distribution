@@ -36,8 +36,7 @@ trait Section extends StObject {
 }
 object Section {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     footers: js.Array[HeaderFooter],
     headers: js.Array[HeaderFooter],
     interval: Interval,
@@ -48,28 +47,20 @@ object Section {
     __obj.asInstanceOf[Section]
   }
   
-  @scala.inline
-  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
+  extension [Self <: Section](x: Self) {
     
-    @scala.inline
-    def setFooters(value: js.Array[HeaderFooter]): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
+    inline def setFooters(value: js.Array[HeaderFooter]): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootersVarargs(value: HeaderFooter*): Self = StObject.set(x, "footers", js.Array(value :_*))
+    inline def setFootersVarargs(value: HeaderFooter*): Self = StObject.set(x, "footers", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: js.Array[HeaderFooter]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[HeaderFooter]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: HeaderFooter*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HeaderFooter*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -195,20 +195,16 @@ object mod extends Shortcut {
   }
   object CustomOptions {
     
-    @scala.inline
-    def apply(): CustomOptions = {
+    inline def apply(): CustomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomOptions]
     }
     
-    @scala.inline
-    implicit class CustomOptionsMutableBuilder[Self <: CustomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomOptions](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
     }
   }
   
@@ -241,56 +237,40 @@ object mod extends Shortcut {
   }
   object FileOptions {
     
-    @scala.inline
-    def apply(): FileOptions = {
+    inline def apply(): FileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileOptions]
     }
     
-    @scala.inline
-    implicit class FileOptionsMutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileOptions](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      @scala.inline
-      def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+      inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
-      @scala.inline
-      def setExpose(value: String): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
+      inline def setExpose(value: String): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
+      inline def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
       
-      @scala.inline
-      def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+      inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTransform(value: Boolean): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Boolean): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -355,113 +335,78 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBuiltins(value: js.Array[String] | StringDictionary[String] | Boolean): Self = StObject.set(x, "builtins", value.asInstanceOf[js.Any])
+      inline def setBuiltins(value: js.Array[String] | StringDictionary[String] | Boolean): Self = StObject.set(x, "builtins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuiltinsUndefined: Self = StObject.set(x, "builtins", js.undefined)
+      inline def setBuiltinsUndefined: Self = StObject.set(x, "builtins", js.undefined)
       
-      @scala.inline
-      def setBuiltinsVarargs(value: String*): Self = StObject.set(x, "builtins", js.Array(value :_*))
+      inline def setBuiltinsVarargs(value: String*): Self = StObject.set(x, "builtins", js.Array(value :_*))
       
-      @scala.inline
-      def setBundleExternal(value: Boolean): Self = StObject.set(x, "bundleExternal", value.asInstanceOf[js.Any])
+      inline def setBundleExternal(value: Boolean): Self = StObject.set(x, "bundleExternal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleExternalUndefined: Self = StObject.set(x, "bundleExternal", js.undefined)
+      inline def setBundleExternalUndefined: Self = StObject.set(x, "bundleExternal", js.undefined)
       
-      @scala.inline
-      def setCommondir(value: Boolean): Self = StObject.set(x, "commondir", value.asInstanceOf[js.Any])
+      inline def setCommondir(value: Boolean): Self = StObject.set(x, "commondir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommondirUndefined: Self = StObject.set(x, "commondir", js.undefined)
+      inline def setCommondirUndefined: Self = StObject.set(x, "commondir", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDetectGlobals(value: Boolean): Self = StObject.set(x, "detectGlobals", value.asInstanceOf[js.Any])
+      inline def setDetectGlobals(value: Boolean): Self = StObject.set(x, "detectGlobals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectGlobalsUndefined: Self = StObject.set(x, "detectGlobals", js.undefined)
+      inline def setDetectGlobalsUndefined: Self = StObject.set(x, "detectGlobals", js.undefined)
       
-      @scala.inline
-      def setEntries(value: InputFile | js.Array[InputFile]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: InputFile | js.Array[InputFile]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+      inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      @scala.inline
-      def setEntriesVarargs(value: InputFile*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: InputFile*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setExternalRequireName(value: String): Self = StObject.set(x, "externalRequireName", value.asInstanceOf[js.Any])
+      inline def setExternalRequireName(value: String): Self = StObject.set(x, "externalRequireName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalRequireNameUndefined: Self = StObject.set(x, "externalRequireName", js.undefined)
+      inline def setExternalRequireNameUndefined: Self = StObject.set(x, "externalRequireName", js.undefined)
       
-      @scala.inline
-      def setFullPaths(value: Boolean): Self = StObject.set(x, "fullPaths", value.asInstanceOf[js.Any])
+      inline def setFullPaths(value: Boolean): Self = StObject.set(x, "fullPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullPathsUndefined: Self = StObject.set(x, "fullPaths", js.undefined)
+      inline def setFullPathsUndefined: Self = StObject.set(x, "fullPaths", js.undefined)
       
-      @scala.inline
-      def setInsertGlobalVars(value: VarsOption): Self = StObject.set(x, "insertGlobalVars", value.asInstanceOf[js.Any])
+      inline def setInsertGlobalVars(value: VarsOption): Self = StObject.set(x, "insertGlobalVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertGlobalVarsUndefined: Self = StObject.set(x, "insertGlobalVars", js.undefined)
+      inline def setInsertGlobalVarsUndefined: Self = StObject.set(x, "insertGlobalVars", js.undefined)
       
-      @scala.inline
-      def setInsertGlobals(value: Boolean): Self = StObject.set(x, "insertGlobals", value.asInstanceOf[js.Any])
+      inline def setInsertGlobals(value: Boolean): Self = StObject.set(x, "insertGlobals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertGlobalsUndefined: Self = StObject.set(x, "insertGlobals", js.undefined)
+      inline def setInsertGlobalsUndefined: Self = StObject.set(x, "insertGlobals", js.undefined)
       
-      @scala.inline
-      def setNoParse(value: js.Array[String]): Self = StObject.set(x, "noParse", value.asInstanceOf[js.Any])
+      inline def setNoParse(value: js.Array[String]): Self = StObject.set(x, "noParse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoParseUndefined: Self = StObject.set(x, "noParse", js.undefined)
+      inline def setNoParseUndefined: Self = StObject.set(x, "noParse", js.undefined)
       
-      @scala.inline
-      def setNoParseVarargs(value: String*): Self = StObject.set(x, "noParse", js.Array(value :_*))
+      inline def setNoParseVarargs(value: String*): Self = StObject.set(x, "noParse", js.Array(value :_*))
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      inline def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     }
   }
   

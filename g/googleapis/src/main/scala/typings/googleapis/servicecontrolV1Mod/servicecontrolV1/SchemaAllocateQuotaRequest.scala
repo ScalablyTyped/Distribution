@@ -23,25 +23,19 @@ trait SchemaAllocateQuotaRequest extends StObject {
 }
 object SchemaAllocateQuotaRequest {
   
-  @scala.inline
-  def apply(): SchemaAllocateQuotaRequest = {
+  inline def apply(): SchemaAllocateQuotaRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAllocateQuotaRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAllocateQuotaRequestMutableBuilder[Self <: SchemaAllocateQuotaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAllocateQuotaRequest](x: Self) {
     
-    @scala.inline
-    def setAllocateOperation(value: SchemaQuotaOperation): Self = StObject.set(x, "allocateOperation", value.asInstanceOf[js.Any])
+    inline def setAllocateOperation(value: SchemaQuotaOperation): Self = StObject.set(x, "allocateOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocateOperationUndefined: Self = StObject.set(x, "allocateOperation", js.undefined)
+    inline def setAllocateOperationUndefined: Self = StObject.set(x, "allocateOperation", js.undefined)
     
-    @scala.inline
-    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
+    inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
+    inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait CitySearchResult extends StObject {
 }
 object CitySearchResult {
   
-  @scala.inline
-  def apply(bounds: Bounds, city: String): CitySearchResult = {
+  inline def apply(bounds: Bounds, city: String): CitySearchResult = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any])
     __obj.asInstanceOf[CitySearchResult]
   }
   
-  @scala.inline
-  implicit class CitySearchResultMutableBuilder[Self <: CitySearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: CitySearchResult](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
   }
 }

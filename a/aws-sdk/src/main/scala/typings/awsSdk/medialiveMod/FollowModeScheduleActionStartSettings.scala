@@ -18,19 +18,15 @@ trait FollowModeScheduleActionStartSettings extends StObject {
 }
 object FollowModeScheduleActionStartSettings {
   
-  @scala.inline
-  def apply(FollowPoint: FollowPoint, ReferenceActionName: string): FollowModeScheduleActionStartSettings = {
+  inline def apply(FollowPoint: FollowPoint, ReferenceActionName: string): FollowModeScheduleActionStartSettings = {
     val __obj = js.Dynamic.literal(FollowPoint = FollowPoint.asInstanceOf[js.Any], ReferenceActionName = ReferenceActionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FollowModeScheduleActionStartSettings]
   }
   
-  @scala.inline
-  implicit class FollowModeScheduleActionStartSettingsMutableBuilder[Self <: FollowModeScheduleActionStartSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FollowModeScheduleActionStartSettings](x: Self) {
     
-    @scala.inline
-    def setFollowPoint(value: FollowPoint): Self = StObject.set(x, "FollowPoint", value.asInstanceOf[js.Any])
+    inline def setFollowPoint(value: FollowPoint): Self = StObject.set(x, "FollowPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceActionName(value: string): Self = StObject.set(x, "ReferenceActionName", value.asInstanceOf[js.Any])
+    inline def setReferenceActionName(value: string): Self = StObject.set(x, "ReferenceActionName", value.asInstanceOf[js.Any])
   }
 }

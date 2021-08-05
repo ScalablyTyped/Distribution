@@ -18,25 +18,19 @@ trait DescribeBudgetsResponse extends StObject {
 }
 object DescribeBudgetsResponse {
   
-  @scala.inline
-  def apply(): DescribeBudgetsResponse = {
+  inline def apply(): DescribeBudgetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBudgetsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBudgetsResponseMutableBuilder[Self <: DescribeBudgetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBudgetsResponse](x: Self) {
     
-    @scala.inline
-    def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
+    inline def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
+    inline def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

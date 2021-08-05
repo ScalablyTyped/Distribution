@@ -43,55 +43,39 @@ trait DashboardSummary extends StObject {
 }
 object DashboardSummary {
   
-  @scala.inline
-  def apply(): DashboardSummary = {
+  inline def apply(): DashboardSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashboardSummary]
   }
   
-  @scala.inline
-  implicit class DashboardSummaryMutableBuilder[Self <: DashboardSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
+    inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     
-    @scala.inline
-    def setLastPublishedTime(value: Timestamp_): Self = StObject.set(x, "LastPublishedTime", value.asInstanceOf[js.Any])
+    inline def setLastPublishedTime(value: Timestamp_): Self = StObject.set(x, "LastPublishedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPublishedTimeUndefined: Self = StObject.set(x, "LastPublishedTime", js.undefined)
+    inline def setLastPublishedTimeUndefined: Self = StObject.set(x, "LastPublishedTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setName(value: DashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPublishedVersionNumber(value: VersionNumber): Self = StObject.set(x, "PublishedVersionNumber", value.asInstanceOf[js.Any])
+    inline def setPublishedVersionNumber(value: VersionNumber): Self = StObject.set(x, "PublishedVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedVersionNumberUndefined: Self = StObject.set(x, "PublishedVersionNumber", js.undefined)
+    inline def setPublishedVersionNumberUndefined: Self = StObject.set(x, "PublishedVersionNumber", js.undefined)
   }
 }

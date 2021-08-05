@@ -13,16 +13,13 @@ trait OpenFinExternalApplicationStatic extends StObject {
 }
 object OpenFinExternalApplicationStatic {
   
-  @scala.inline
-  def apply(wrap: String => OpenFinExternalApplication): OpenFinExternalApplicationStatic = {
+  inline def apply(wrap: String => OpenFinExternalApplication): OpenFinExternalApplicationStatic = {
     val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction1(wrap))
     __obj.asInstanceOf[OpenFinExternalApplicationStatic]
   }
   
-  @scala.inline
-  implicit class OpenFinExternalApplicationStaticMutableBuilder[Self <: OpenFinExternalApplicationStatic] (val x: Self) extends AnyVal {
+  extension [Self <: OpenFinExternalApplicationStatic](x: Self) {
     
-    @scala.inline
-    def setWrap(value: String => OpenFinExternalApplication): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
+    inline def setWrap(value: String => OpenFinExternalApplication): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
   }
 }

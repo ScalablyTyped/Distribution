@@ -14,22 +14,17 @@ trait FontSize extends StObject {
 }
 object FontSize {
   
-  @scala.inline
-  def apply(color: String, fontSize: Double, marginTop: Double): FontSize = {
+  inline def apply(color: String, fontSize: Double, marginTop: Double): FontSize = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSize]
   }
   
-  @scala.inline
-  implicit class FontSizeMutableBuilder[Self <: FontSize] (val x: Self) extends AnyVal {
+  extension [Self <: FontSize](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
   }
 }

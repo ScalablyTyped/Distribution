@@ -15,23 +15,18 @@ trait SizeSliderMinChangeEvent extends StObject {
 }
 object SizeSliderMinChangeEvent {
   
-  @scala.inline
-  def apply(oldValue: Double, value: Double): SizeSliderMinChangeEvent = {
+  inline def apply(oldValue: Double, value: Double): SizeSliderMinChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("min-change")
     __obj.asInstanceOf[SizeSliderMinChangeEvent]
   }
   
-  @scala.inline
-  implicit class SizeSliderMinChangeEventMutableBuilder[Self <: SizeSliderMinChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SizeSliderMinChangeEvent](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -24,7 +24,7 @@ trait TextEffectFormat extends StObject {
   
   var NormalizedHeight: MsoTriState
   
-  @JSName("Office.TextEffectFormat_typekey")
+  /* private */ @JSName("Office.TextEffectFormat_typekey")
   var OfficeDotTextEffectFormat_typekey: TextEffectFormat
   
   val Parent: js.Any
@@ -43,8 +43,7 @@ trait TextEffectFormat extends StObject {
 }
 object TextEffectFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: MsoTextEffectAlignment,
     Application: js.Any,
     Creator: Double,
@@ -68,58 +67,40 @@ object TextEffectFormat {
     __obj.asInstanceOf[TextEffectFormat]
   }
   
-  @scala.inline
-  implicit class TextEffectFormatMutableBuilder[Self <: TextEffectFormat] (val x: Self) extends AnyVal {
+  extension [Self <: TextEffectFormat](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: MsoTextEffectAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: MsoTextEffectAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontBold(value: MsoTriState): Self = StObject.set(x, "FontBold", value.asInstanceOf[js.Any])
+    inline def setFontBold(value: MsoTriState): Self = StObject.set(x, "FontBold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontItalic(value: MsoTriState): Self = StObject.set(x, "FontItalic", value.asInstanceOf[js.Any])
+    inline def setFontItalic(value: MsoTriState): Self = StObject.set(x, "FontItalic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernedPairs(value: MsoTriState): Self = StObject.set(x, "KernedPairs", value.asInstanceOf[js.Any])
+    inline def setKernedPairs(value: MsoTriState): Self = StObject.set(x, "KernedPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedHeight(value: MsoTriState): Self = StObject.set(x, "NormalizedHeight", value.asInstanceOf[js.Any])
+    inline def setNormalizedHeight(value: MsoTriState): Self = StObject.set(x, "NormalizedHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotTextEffectFormat_typekey(value: TextEffectFormat): Self = StObject.set(x, "Office.TextEffectFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotTextEffectFormat_typekey(value: TextEffectFormat): Self = StObject.set(x, "Office.TextEffectFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetShape(value: MsoPresetTextEffectShape): Self = StObject.set(x, "PresetShape", value.asInstanceOf[js.Any])
+    inline def setPresetShape(value: MsoPresetTextEffectShape): Self = StObject.set(x, "PresetShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetTextEffect(value: MsoPresetTextEffect): Self = StObject.set(x, "PresetTextEffect", value.asInstanceOf[js.Any])
+    inline def setPresetTextEffect(value: MsoPresetTextEffect): Self = StObject.set(x, "PresetTextEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotatedChars(value: MsoTriState): Self = StObject.set(x, "RotatedChars", value.asInstanceOf[js.Any])
+    inline def setRotatedChars(value: MsoTriState): Self = StObject.set(x, "RotatedChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleVerticalText(value: () => Unit): Self = StObject.set(x, "ToggleVerticalText", js.Any.fromFunction0(value))
+    inline def setToggleVerticalText(value: () => Unit): Self = StObject.set(x, "ToggleVerticalText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTracking(value: Double): Self = StObject.set(x, "Tracking", value.asInstanceOf[js.Any])
+    inline def setTracking(value: Double): Self = StObject.set(x, "Tracking", value.asInstanceOf[js.Any])
   }
 }

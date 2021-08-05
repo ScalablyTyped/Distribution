@@ -12,19 +12,15 @@ trait HashMsgHex extends StObject {
 }
 object HashMsgHex {
   
-  @scala.inline
-  def apply(hashAlg: String, hashMsgHex: String): HashMsgHex = {
+  inline def apply(hashAlg: String, hashMsgHex: String): HashMsgHex = {
     val __obj = js.Dynamic.literal(hashAlg = hashAlg.asInstanceOf[js.Any], hashMsgHex = hashMsgHex.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashMsgHex]
   }
   
-  @scala.inline
-  implicit class HashMsgHexMutableBuilder[Self <: HashMsgHex] (val x: Self) extends AnyVal {
+  extension [Self <: HashMsgHex](x: Self) {
     
-    @scala.inline
-    def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashMsgHex(value: String): Self = StObject.set(x, "hashMsgHex", value.asInstanceOf[js.Any])
+    inline def setHashMsgHex(value: String): Self = StObject.set(x, "hashMsgHex", value.asInstanceOf[js.Any])
   }
 }

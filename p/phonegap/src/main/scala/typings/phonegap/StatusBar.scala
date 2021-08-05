@@ -37,8 +37,7 @@ trait StatusBar extends StObject {
 }
 object StatusBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColorByHexString: String => Unit,
     backgroundColorByName: String => Unit,
     hide: () => Unit,
@@ -54,37 +53,26 @@ object StatusBar {
     __obj.asInstanceOf[StatusBar]
   }
   
-  @scala.inline
-  implicit class StatusBarMutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
+  extension [Self <: StatusBar](x: Self) {
     
-    @scala.inline
-    def setBackgroundColorByHexString(value: String => Unit): Self = StObject.set(x, "backgroundColorByHexString", js.Any.fromFunction1(value))
+    inline def setBackgroundColorByHexString(value: String => Unit): Self = StObject.set(x, "backgroundColorByHexString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBackgroundColorByName(value: String => Unit): Self = StObject.set(x, "backgroundColorByName", js.Any.fromFunction1(value))
+    inline def setBackgroundColorByName(value: String => Unit): Self = StObject.set(x, "backgroundColorByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlaysWebView(value: Boolean => Unit): Self = StObject.set(x, "overlaysWebView", js.Any.fromFunction1(value))
+    inline def setOverlaysWebView(value: Boolean => Unit): Self = StObject.set(x, "overlaysWebView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyleBlackOpaque(value: () => Unit): Self = StObject.set(x, "styleBlackOpaque", js.Any.fromFunction0(value))
+    inline def setStyleBlackOpaque(value: () => Unit): Self = StObject.set(x, "styleBlackOpaque", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyleBlackTranslucent(value: () => Unit): Self = StObject.set(x, "styleBlackTranslucent", js.Any.fromFunction0(value))
+    inline def setStyleBlackTranslucent(value: () => Unit): Self = StObject.set(x, "styleBlackTranslucent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyleDefault(value: () => Unit): Self = StObject.set(x, "styleDefault", js.Any.fromFunction0(value))
+    inline def setStyleDefault(value: () => Unit): Self = StObject.set(x, "styleDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyleLightContent(value: () => Unit): Self = StObject.set(x, "styleLightContent", js.Any.fromFunction0(value))
+    inline def setStyleLightContent(value: () => Unit): Self = StObject.set(x, "styleLightContent", js.Any.fromFunction0(value))
   }
 }

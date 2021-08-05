@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "contained-periodic-values"
-version := "1.0-dt-20201013Z-23ac8e"
+version := "1.0-dt-20201013Z-33492f"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

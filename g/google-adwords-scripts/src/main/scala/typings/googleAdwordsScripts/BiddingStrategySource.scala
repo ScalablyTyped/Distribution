@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BiddingStrategySource extends StObject
 object BiddingStrategySource {
   
-  @scala.inline
-  def ADGROUP: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ADGROUP = "ADGROUP".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ADGROUP]
+  inline def ADGROUP: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ADGROUP = "ADGROUP".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ADGROUP]
   
-  @scala.inline
-  def CAMPAIGN: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CAMPAIGN = "CAMPAIGN".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CAMPAIGN]
+  inline def CAMPAIGN: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CAMPAIGN = "CAMPAIGN".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CAMPAIGN]
   
-  @scala.inline
-  def CRITERION: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CRITERION = "CRITERION".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CRITERION]
+  inline def CRITERION: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CRITERION = "CRITERION".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CRITERION]
 }

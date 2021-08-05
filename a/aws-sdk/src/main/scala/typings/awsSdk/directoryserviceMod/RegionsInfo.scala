@@ -18,28 +18,21 @@ trait RegionsInfo extends StObject {
 }
 object RegionsInfo {
   
-  @scala.inline
-  def apply(): RegionsInfo = {
+  inline def apply(): RegionsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionsInfo]
   }
   
-  @scala.inline
-  implicit class RegionsInfoMutableBuilder[Self <: RegionsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RegionsInfo](x: Self) {
     
-    @scala.inline
-    def setAdditionalRegions(value: AdditionalRegions): Self = StObject.set(x, "AdditionalRegions", value.asInstanceOf[js.Any])
+    inline def setAdditionalRegions(value: AdditionalRegions): Self = StObject.set(x, "AdditionalRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalRegionsUndefined: Self = StObject.set(x, "AdditionalRegions", js.undefined)
+    inline def setAdditionalRegionsUndefined: Self = StObject.set(x, "AdditionalRegions", js.undefined)
     
-    @scala.inline
-    def setAdditionalRegionsVarargs(value: RegionName*): Self = StObject.set(x, "AdditionalRegions", js.Array(value :_*))
+    inline def setAdditionalRegionsVarargs(value: RegionName*): Self = StObject.set(x, "AdditionalRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimaryRegion(value: RegionName): Self = StObject.set(x, "PrimaryRegion", value.asInstanceOf[js.Any])
+    inline def setPrimaryRegion(value: RegionName): Self = StObject.set(x, "PrimaryRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryRegionUndefined: Self = StObject.set(x, "PrimaryRegion", js.undefined)
+    inline def setPrimaryRegionUndefined: Self = StObject.set(x, "PrimaryRegion", js.undefined)
   }
 }

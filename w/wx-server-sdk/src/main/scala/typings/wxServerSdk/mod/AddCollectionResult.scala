@@ -10,16 +10,13 @@ trait AddCollectionResult extends StObject {
 }
 object AddCollectionResult {
   
-  @scala.inline
-  def apply(_id: String | Double): AddCollectionResult = {
+  inline def apply(_id: String | Double): AddCollectionResult = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCollectionResult]
   }
   
-  @scala.inline
-  implicit class AddCollectionResultMutableBuilder[Self <: AddCollectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: AddCollectionResult](x: Self) {
     
-    @scala.inline
-    def set_id(value: String | Double): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String | Double): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

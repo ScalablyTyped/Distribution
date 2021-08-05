@@ -10,16 +10,13 @@ trait UseGlobalFiltersState[D /* <: js.Object */] extends StObject {
 }
 object UseGlobalFiltersState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](globalFilter: js.Any): UseGlobalFiltersState[D] = {
+  inline def apply[D /* <: js.Object */](globalFilter: js.Any): UseGlobalFiltersState[D] = {
     val __obj = js.Dynamic.literal(globalFilter = globalFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGlobalFiltersState[D]]
   }
   
-  @scala.inline
-  implicit class UseGlobalFiltersStateMutableBuilder[Self <: UseGlobalFiltersState[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersState[D]) extends AnyVal {
+  extension [Self <: UseGlobalFiltersState[?], D /* <: js.Object */](x: Self & UseGlobalFiltersState[D]) {
     
-    @scala.inline
-    def setGlobalFilter(value: js.Any): Self = StObject.set(x, "globalFilter", value.asInstanceOf[js.Any])
+    inline def setGlobalFilter(value: js.Any): Self = StObject.set(x, "globalFilter", value.asInstanceOf[js.Any])
   }
 }

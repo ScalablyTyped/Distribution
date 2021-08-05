@@ -11,19 +11,15 @@ trait OnGetWifiListCallbackResult extends StObject {
 }
 object OnGetWifiListCallbackResult {
   
-  @scala.inline
-  def apply(wifiList: js.Array[WifiInfo]): OnGetWifiListCallbackResult = {
+  inline def apply(wifiList: js.Array[WifiInfo]): OnGetWifiListCallbackResult = {
     val __obj = js.Dynamic.literal(wifiList = wifiList.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnGetWifiListCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnGetWifiListCallbackResultMutableBuilder[Self <: OnGetWifiListCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnGetWifiListCallbackResult](x: Self) {
     
-    @scala.inline
-    def setWifiList(value: js.Array[WifiInfo]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
+    inline def setWifiList(value: js.Array[WifiInfo]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiListVarargs(value: WifiInfo*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
+    inline def setWifiListVarargs(value: WifiInfo*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
   }
 }

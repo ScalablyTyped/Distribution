@@ -64,8 +64,7 @@ trait RequestWillBeSentEvent extends StObject {
 }
 object RequestWillBeSentEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     documentURL: String,
     initiator: Initiator,
     loaderId: LoaderId,
@@ -78,52 +77,36 @@ object RequestWillBeSentEvent {
     __obj.asInstanceOf[RequestWillBeSentEvent]
   }
   
-  @scala.inline
-  implicit class RequestWillBeSentEventMutableBuilder[Self <: RequestWillBeSentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RequestWillBeSentEvent](x: Self) {
     
-    @scala.inline
-    def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
-    @scala.inline
-    def setHasUserGesture(value: Boolean): Self = StObject.set(x, "hasUserGesture", value.asInstanceOf[js.Any])
+    inline def setHasUserGesture(value: Boolean): Self = StObject.set(x, "hasUserGesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasUserGestureUndefined: Self = StObject.set(x, "hasUserGesture", js.undefined)
+    inline def setHasUserGestureUndefined: Self = StObject.set(x, "hasUserGesture", js.undefined)
     
-    @scala.inline
-    def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+    inline def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
+    inline def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectResponse(value: Response): Self = StObject.set(x, "redirectResponse", value.asInstanceOf[js.Any])
+    inline def setRedirectResponse(value: Response): Self = StObject.set(x, "redirectResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectResponseUndefined: Self = StObject.set(x, "redirectResponse", js.undefined)
+    inline def setRedirectResponseUndefined: Self = StObject.set(x, "redirectResponse", js.undefined)
     
-    @scala.inline
-    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWallTime(value: TimeSinceEpoch): Self = StObject.set(x, "wallTime", value.asInstanceOf[js.Any])
+    inline def setWallTime(value: TimeSinceEpoch): Self = StObject.set(x, "wallTime", value.asInstanceOf[js.Any])
   }
 }

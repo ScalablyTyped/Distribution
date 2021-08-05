@@ -13,19 +13,15 @@ trait GetAccountSummaryResponse extends StObject {
 }
 object GetAccountSummaryResponse {
   
-  @scala.inline
-  def apply(): GetAccountSummaryResponse = {
+  inline def apply(): GetAccountSummaryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountSummaryResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountSummaryResponseMutableBuilder[Self <: GetAccountSummaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountSummaryResponse](x: Self) {
     
-    @scala.inline
-    def setSummaryMap(value: summaryMapType): Self = StObject.set(x, "SummaryMap", value.asInstanceOf[js.Any])
+    inline def setSummaryMap(value: summaryMapType): Self = StObject.set(x, "SummaryMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryMapUndefined: Self = StObject.set(x, "SummaryMap", js.undefined)
+    inline def setSummaryMapUndefined: Self = StObject.set(x, "SummaryMap", js.undefined)
   }
 }

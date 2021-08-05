@@ -16,34 +16,25 @@ trait ClusterStats
 }
 object ClusterStats {
   
-  @scala.inline
-  def apply(): ClusterStats = {
+  inline def apply(): ClusterStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterStats]
   }
   
-  @scala.inline
-  implicit class ClusterStatsMutableBuilder[Self <: ClusterStats] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterStats](x: Self) {
     
-    @scala.inline
-    def setFlat_settings(value: Boolean): Self = StObject.set(x, "flat_settings", value.asInstanceOf[js.Any])
+    inline def setFlat_settings(value: Boolean): Self = StObject.set(x, "flat_settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlat_settingsUndefined: Self = StObject.set(x, "flat_settings", js.undefined)
+    inline def setFlat_settingsUndefined: Self = StObject.set(x, "flat_settings", js.undefined)
     
-    @scala.inline
-    def setNode_id(value: String | js.Array[String]): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String | js.Array[String]): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
+    inline def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
     
-    @scala.inline
-    def setNode_idVarargs(value: String*): Self = StObject.set(x, "node_id", js.Array(value :_*))
+    inline def setNode_idVarargs(value: String*): Self = StObject.set(x, "node_id", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

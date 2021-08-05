@@ -10,6 +10,5 @@ object shExpMatchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: String, shexp: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], shexp.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(str: String, shexp: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], shexp.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

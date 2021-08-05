@@ -12,8 +12,7 @@ trait IndexMemberDeclaration
 }
 object IndexMemberDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -40,10 +39,8 @@ object IndexMemberDeclaration {
     __obj.asInstanceOf[IndexMemberDeclaration]
   }
   
-  @scala.inline
-  implicit class IndexMemberDeclarationMutableBuilder[Self <: IndexMemberDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: IndexMemberDeclaration](x: Self) {
     
-    @scala.inline
-    def setIndexSignature(value: IndexSignature): Self = StObject.set(x, "indexSignature", value.asInstanceOf[js.Any])
+    inline def setIndexSignature(value: IndexSignature): Self = StObject.set(x, "indexSignature", value.asInstanceOf[js.Any])
   }
 }

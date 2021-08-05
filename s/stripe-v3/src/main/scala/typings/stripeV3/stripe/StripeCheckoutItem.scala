@@ -14,28 +14,21 @@ trait StripeCheckoutItem extends StObject {
 }
 object StripeCheckoutItem {
   
-  @scala.inline
-  def apply(quantity: Double): StripeCheckoutItem = {
+  inline def apply(quantity: Double): StripeCheckoutItem = {
     val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCheckoutItem]
   }
   
-  @scala.inline
-  implicit class StripeCheckoutItemMutableBuilder[Self <: StripeCheckoutItem] (val x: Self) extends AnyVal {
+  extension [Self <: StripeCheckoutItem](x: Self) {
     
-    @scala.inline
-    def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+    inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+    inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
   }
 }

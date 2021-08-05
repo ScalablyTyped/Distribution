@@ -12,27 +12,23 @@ object bagpipesStrings {
   sealed trait hoist
     extends StObject
        with Affinity
-  @scala.inline
-  def hoist: hoist = "hoist".asInstanceOf[hoist]
+  inline def hoist: hoist = "hoist".asInstanceOf[hoist]
   
   @js.native
   sealed trait sink
     extends StObject
        with Affinity
-  @scala.inline
-  def sink: sink = "sink".asInstanceOf[sink]
+  inline def sink: sink = "sink".asInstanceOf[sink]
   
   @js.native
   sealed trait system
     extends StObject
        with _FittingType
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
+  inline def system: system = "system".asInstanceOf[system]
   
   @js.native
   sealed trait user
     extends StObject
        with _FittingType
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
 }

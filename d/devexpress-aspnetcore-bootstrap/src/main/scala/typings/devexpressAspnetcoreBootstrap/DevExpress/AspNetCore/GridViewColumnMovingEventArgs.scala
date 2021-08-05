@@ -20,8 +20,7 @@ trait GridViewColumnMovingEventArgs
 }
 object GridViewColumnMovingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allow: Boolean,
     destinationColumn: BootstrapGridViewColumn,
     isDropBefore: Boolean,
@@ -33,22 +32,16 @@ object GridViewColumnMovingEventArgs {
     __obj.asInstanceOf[GridViewColumnMovingEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewColumnMovingEventArgsMutableBuilder[Self <: GridViewColumnMovingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewColumnMovingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "destinationColumn", value.asInstanceOf[js.Any])
+    inline def setDestinationColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "destinationColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDropBefore(value: Boolean): Self = StObject.set(x, "isDropBefore", value.asInstanceOf[js.Any])
+    inline def setIsDropBefore(value: Boolean): Self = StObject.set(x, "isDropBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupPanel(value: Boolean): Self = StObject.set(x, "isGroupPanel", value.asInstanceOf[js.Any])
+    inline def setIsGroupPanel(value: Boolean): Self = StObject.set(x, "isGroupPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    inline def setSourceColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait PrinterIccProfiles extends StObject {
 }
 object PrinterIccProfiles {
   
-  @scala.inline
-  def apply(): PrinterIccProfiles = {
+  inline def apply(): PrinterIccProfiles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrinterIccProfiles]
   }
   
-  @scala.inline
-  implicit class PrinterIccProfilesMutableBuilder[Self <: PrinterIccProfiles] (val x: Self) extends AnyVal {
+  extension [Self <: PrinterIccProfiles](x: Self) {
     
-    @scala.inline
-    def `setProfile-name`(value: String): Self = StObject.set(x, "profile-name", value.asInstanceOf[js.Any])
+    inline def `setProfile-name`(value: String): Self = StObject.set(x, "profile-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProfile-nameUndefined`: Self = StObject.set(x, "profile-name", js.undefined)
+    inline def `setProfile-nameUndefined`: Self = StObject.set(x, "profile-name", js.undefined)
     
-    @scala.inline
-    def `setProfile-url`(value: String): Self = StObject.set(x, "profile-url", value.asInstanceOf[js.Any])
+    inline def `setProfile-url`(value: String): Self = StObject.set(x, "profile-url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProfile-urlUndefined`: Self = StObject.set(x, "profile-url", js.undefined)
+    inline def `setProfile-urlUndefined`: Self = StObject.set(x, "profile-url", js.undefined)
   }
 }

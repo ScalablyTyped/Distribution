@@ -24,8 +24,7 @@ trait EventHandlers[T] extends StObject {
 }
 object EventHandlers {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     add: js.Function1[/* args */ T, js.Promise[js.Any]] => EventHandlerResult[T],
     remove: js.Function1[/* args */ T, js.Promise[js.Any]] => Unit
   ): EventHandlers[T] = {
@@ -33,13 +32,10 @@ object EventHandlers {
     __obj.asInstanceOf[EventHandlers[T]]
   }
   
-  @scala.inline
-  implicit class EventHandlersMutableBuilder[Self <: EventHandlers[?], T] (val x: Self & EventHandlers[T]) extends AnyVal {
+  extension [Self <: EventHandlers[?], T](x: Self & EventHandlers[T]) {
     
-    @scala.inline
-    def setAdd(value: js.Function1[/* args */ T, js.Promise[js.Any]] => EventHandlerResult[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Function1[/* args */ T, js.Promise[js.Any]] => EventHandlerResult[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: js.Function1[/* args */ T, js.Promise[js.Any]] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Function1[/* args */ T, js.Promise[js.Any]] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

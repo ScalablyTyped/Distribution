@@ -88,8 +88,7 @@ object dispatcherMod {
   }
   object Dispatcher {
     
-    @scala.inline
-    def apply[TPayload](
+    inline def apply[TPayload](
       dispatch: TPayload => Unit,
       isDispatching: () => Boolean,
       register: js.Function1[/* payload */ TPayload, Unit] => String,
@@ -100,23 +99,17 @@ object dispatcherMod {
       __obj.asInstanceOf[Dispatcher[TPayload]]
     }
     
-    @scala.inline
-    implicit class DispatcherMutableBuilder[Self <: Dispatcher[?], TPayload] (val x: Self & Dispatcher[TPayload]) extends AnyVal {
+    extension [Self <: Dispatcher[?], TPayload](x: Self & Dispatcher[TPayload]) {
       
-      @scala.inline
-      def setDispatch(value: TPayload => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: TPayload => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDispatching(value: () => Boolean): Self = StObject.set(x, "isDispatching", js.Any.fromFunction0(value))
+      inline def setIsDispatching(value: () => Boolean): Self = StObject.set(x, "isDispatching", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegister(value: js.Function1[/* payload */ TPayload, Unit] => String): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+      inline def setRegister(value: js.Function1[/* payload */ TPayload, Unit] => String): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnregister(value: String => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+      inline def setUnregister(value: String => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWaitFor(value: js.Array[String] => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
+      inline def setWaitFor(value: js.Array[String] => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
     }
   }
 }

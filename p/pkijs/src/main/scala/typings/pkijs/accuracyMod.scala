@@ -33,8 +33,7 @@ object accuracyMod {
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @scala.inline
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   trait Accuracy extends StObject {
@@ -47,23 +46,18 @@ object accuracyMod {
   }
   object Accuracy {
     
-    @scala.inline
-    def apply(micros: Double, millis: Double, seconds: Double): Accuracy = {
+    inline def apply(micros: Double, millis: Double, seconds: Double): Accuracy = {
       val __obj = js.Dynamic.literal(micros = micros.asInstanceOf[js.Any], millis = millis.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[Accuracy]
     }
     
-    @scala.inline
-    implicit class AccuracyMutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
+    extension [Self <: Accuracy](x: Self) {
       
-      @scala.inline
-      def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
+      inline def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillis(value: Double): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
+      inline def setMillis(value: Double): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }
   }
 }

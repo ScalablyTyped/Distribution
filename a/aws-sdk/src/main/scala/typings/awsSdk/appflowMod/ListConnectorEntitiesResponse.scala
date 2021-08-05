@@ -13,16 +13,13 @@ trait ListConnectorEntitiesResponse extends StObject {
 }
 object ListConnectorEntitiesResponse {
   
-  @scala.inline
-  def apply(connectorEntityMap: ConnectorEntityMap): ListConnectorEntitiesResponse = {
+  inline def apply(connectorEntityMap: ConnectorEntityMap): ListConnectorEntitiesResponse = {
     val __obj = js.Dynamic.literal(connectorEntityMap = connectorEntityMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConnectorEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class ListConnectorEntitiesResponseMutableBuilder[Self <: ListConnectorEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListConnectorEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setConnectorEntityMap(value: ConnectorEntityMap): Self = StObject.set(x, "connectorEntityMap", value.asInstanceOf[js.Any])
+    inline def setConnectorEntityMap(value: ConnectorEntityMap): Self = StObject.set(x, "connectorEntityMap", value.asInstanceOf[js.Any])
   }
 }

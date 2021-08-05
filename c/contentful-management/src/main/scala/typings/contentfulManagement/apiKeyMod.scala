@@ -17,11 +17,9 @@ object apiKeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapApiKey(http: AxiosInstance, data: ApiKeyProps): ApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapApiKey")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ApiKey]
+  inline def wrapApiKey(http: AxiosInstance, data: ApiKeyProps): ApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapApiKey")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ApiKey]
   
-  @scala.inline
-  def wrapApiKeyCollection(http: AxiosInstance, data: CollectionProp[ApiKeyProps]): Collection[ApiKey, ApiKeyProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapApiKeyCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[ApiKey, ApiKeyProps]]
+  inline def wrapApiKeyCollection(http: AxiosInstance, data: CollectionProp[ApiKeyProps]): Collection[ApiKey, ApiKeyProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapApiKeyCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[ApiKey, ApiKeyProps]]
   
   trait ApiKey
     extends StObject
@@ -69,8 +67,7 @@ object apiKeyMod {
   }
   object ApiKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessToken: String,
       delete: () => js.Promise[Unit],
       environments: js.Array[Sys],
@@ -84,14 +81,11 @@ object apiKeyMod {
       __obj.asInstanceOf[ApiKey]
     }
     
-    @scala.inline
-    implicit class ApiKeyMutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
+    extension [Self <: ApiKey](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[ApiKey]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[ApiKey]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -113,8 +107,7 @@ object apiKeyMod {
   }
   object ApiKeyProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessToken: String,
       environments: js.Array[Sys],
       name: String,
@@ -125,41 +118,29 @@ object apiKeyMod {
       __obj.asInstanceOf[ApiKeyProps]
     }
     
-    @scala.inline
-    implicit class ApiKeyPropsMutableBuilder[Self <: ApiKeyProps] (val x: Self) extends AnyVal {
+    extension [Self <: ApiKeyProps](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnvironments(value: js.Array[Sys]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+      inline def setEnvironments(value: js.Array[Sys]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentsVarargs(value: Sys*): Self = StObject.set(x, "environments", js.Array(value :_*))
+      inline def setEnvironmentsVarargs(value: Sys*): Self = StObject.set(x, "environments", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicies(value: js.Array[Action]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+      inline def setPolicies(value: js.Array[Action]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
+      inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
       
-      @scala.inline
-      def setPoliciesVarargs(value: Action*): Self = StObject.set(x, "policies", js.Array(value :_*))
+      inline def setPoliciesVarargs(value: Action*): Self = StObject.set(x, "policies", js.Array(value :_*))
       
-      @scala.inline
-      def setPreview_api_key(value: Sys): Self = StObject.set(x, "preview_api_key", value.asInstanceOf[js.Any])
+      inline def setPreview_api_key(value: Sys): Self = StObject.set(x, "preview_api_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,29 +155,22 @@ object apiKeyMod {
   }
   object CreateApiKeyProps {
     
-    @scala.inline
-    def apply(environments: js.Array[Sys], name: String): CreateApiKeyProps = {
+    inline def apply(environments: js.Array[Sys], name: String): CreateApiKeyProps = {
       val __obj = js.Dynamic.literal(environments = environments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateApiKeyProps]
     }
     
-    @scala.inline
-    implicit class CreateApiKeyPropsMutableBuilder[Self <: CreateApiKeyProps] (val x: Self) extends AnyVal {
+    extension [Self <: CreateApiKeyProps](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnvironments(value: js.Array[Sys]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+      inline def setEnvironments(value: js.Array[Sys]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentsVarargs(value: Sys*): Self = StObject.set(x, "environments", js.Array(value :_*))
+      inline def setEnvironmentsVarargs(value: Sys*): Self = StObject.set(x, "environments", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

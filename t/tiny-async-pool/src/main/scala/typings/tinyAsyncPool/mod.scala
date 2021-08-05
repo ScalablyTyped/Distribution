@@ -20,8 +20,7 @@ object mod {
     * @template IN Type of the input array
     * @template OUT Type of the resolves of the promises
     */
-  @scala.inline
-  def apply[IN, OUT](
+  inline def apply[IN, OUT](
     poolLimit: Double,
     array: js.Array[IN],
     iteratorFn: js.Function1[/* generator */ IN, js.Promise[OUT]]

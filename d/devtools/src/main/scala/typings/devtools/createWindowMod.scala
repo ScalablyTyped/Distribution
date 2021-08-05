@@ -12,6 +12,5 @@ object createWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasType: Type): js.Promise[Handle] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Handle]]
+  inline def default(hasType: Type): js.Promise[Handle] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Handle]]
 }

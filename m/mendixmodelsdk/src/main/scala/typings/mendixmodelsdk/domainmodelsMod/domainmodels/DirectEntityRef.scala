@@ -51,8 +51,7 @@ object DirectEntityRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def create(model: IModel): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -63,8 +62,7 @@ object DirectEntityRef {
     *  7.17.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateObjectClientActionUnderEntityRef(container: CreateObjectClientAction): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateObjectClientActionUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def createInCreateObjectClientActionUnderEntityRef(container: CreateObjectClientAction): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateObjectClientActionUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -75,8 +73,7 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEntityPathSourceUnderEntityRef(container: EntityPathSource): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityPathSourceUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def createInEntityPathSourceUnderEntityRef(container: EntityPathSource): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityPathSourceUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -87,8 +84,7 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEntityWidgetUnderEntityRef(container: EntityWidget): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def createInEntityWidgetUnderEntityRef(container: EntityWidget): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -99,8 +95,7 @@ object DirectEntityRef {
     *  7.11.0 to 7.16.0
     */
   /* static member */
-  @scala.inline
-  def createInNewButtonUnderEntityRef(container: NewButton): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNewButtonUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def createInNewButtonUnderEntityRef(container: NewButton): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNewButtonUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -111,8 +106,7 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSetSelectorUnderConstrainedByRefs(container: ReferenceSetSelector): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderConstrainedByRefs")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def createInReferenceSetSelectorUnderConstrainedByRefs(container: ReferenceSetSelector): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderConstrainedByRefs")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -123,8 +117,7 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInSelectorXPathSourceUnderConstrainedByRefs(container: SelectorXPathSource): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorXPathSourceUnderConstrainedByRefs")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def createInSelectorXPathSourceUnderConstrainedByRefs(container: SelectorXPathSource): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorXPathSourceUnderConstrainedByRefs")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /**
     * Creates and returns a new DirectEntityRef instance in the SDK and on the server.
@@ -135,20 +128,17 @@ object DirectEntityRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderEntityRef(container: WidgetValue): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
+  inline def createInWidgetValueUnderEntityRef(container: WidgetValue): DirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[DirectEntityRef]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DirectEntityRef.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DirectEntityRef.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

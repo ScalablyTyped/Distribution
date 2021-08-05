@@ -16,25 +16,19 @@ trait Enabled extends StObject {
 }
 object Enabled {
   
-  @scala.inline
-  def apply(Enabled: Boolean, IncludeAPIs: Boolean, RetentionPolicy: Days, Version: Double): Enabled = {
+  inline def apply(Enabled: Boolean, IncludeAPIs: Boolean, RetentionPolicy: Days, Version: Double): Enabled = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], IncludeAPIs = IncludeAPIs.asInstanceOf[js.Any], RetentionPolicy = RetentionPolicy.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enabled]
   }
   
-  @scala.inline
-  implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+  extension [Self <: Enabled](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAPIs(value: Boolean): Self = StObject.set(x, "IncludeAPIs", value.asInstanceOf[js.Any])
+    inline def setIncludeAPIs(value: Boolean): Self = StObject.set(x, "IncludeAPIs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPolicy(value: Days): Self = StObject.set(x, "RetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setRetentionPolicy(value: Days): Self = StObject.set(x, "RetentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ object JapanesePhoneticAnalyzer {
     * @return A collection of JapanesePhoneme objects that represent proper readings from the string with word breaks.
     */
   /* static member */
-  @scala.inline
-  def getWords(input: String): IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWords")(input.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme]]
+  inline def getWords(input: String): IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWords")(input.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme]]
   /**
     * Reads a Japanese string that is a combination of Kanji characters and Hiragana characters, and returns a collection of proper readings from the string with word breaks. Optionally uses the "Mono Ruby" strategy in breaking multi-Kanji words into multiple Kanji words.
     * @param input A Japanese string that is a combination of Kanji characters and Hiragana characters.
@@ -32,6 +31,5 @@ object JapanesePhoneticAnalyzer {
     * @return A collection of JapanesePhoneme objects that represent proper readings from the string with word breaks.
     */
   /* static member */
-  @scala.inline
-  def getWords(input: String, monoRuby: Boolean): IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWords")(input.asInstanceOf[js.Any], monoRuby.asInstanceOf[js.Any])).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme]]
+  inline def getWords(input: String, monoRuby: Boolean): IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWords")(input.asInstanceOf[js.Any], monoRuby.asInstanceOf[js.Any])).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme]]
 }

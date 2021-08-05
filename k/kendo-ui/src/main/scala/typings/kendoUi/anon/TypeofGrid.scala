@@ -15,19 +15,15 @@ trait TypeofGrid extends StObject {
 }
 object TypeofGrid {
   
-  @scala.inline
-  def apply(extend: js.Object => Grid, fn: Grid): TypeofGrid = {
+  inline def apply(extend: js.Object => Grid, fn: Grid): TypeofGrid = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofGrid]
   }
   
-  @scala.inline
-  implicit class TypeofGridMutableBuilder[Self <: TypeofGrid] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofGrid](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Grid): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Grid): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Grid): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Grid): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

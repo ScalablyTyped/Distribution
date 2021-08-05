@@ -13,16 +13,13 @@ trait GetEventSelectorsRequest extends StObject {
 }
 object GetEventSelectorsRequest {
   
-  @scala.inline
-  def apply(TrailName: String): GetEventSelectorsRequest = {
+  inline def apply(TrailName: String): GetEventSelectorsRequest = {
     val __obj = js.Dynamic.literal(TrailName = TrailName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEventSelectorsRequest]
   }
   
-  @scala.inline
-  implicit class GetEventSelectorsRequestMutableBuilder[Self <: GetEventSelectorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEventSelectorsRequest](x: Self) {
     
-    @scala.inline
-    def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
+    inline def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait CanvasToTempFilePathOptions
 }
 object CanvasToTempFilePathOptions {
   
-  @scala.inline
-  def apply(canvasId: String): CanvasToTempFilePathOptions = {
+  inline def apply(canvasId: String): CanvasToTempFilePathOptions = {
     val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasToTempFilePathOptions]
   }
   
-  @scala.inline
-  implicit class CanvasToTempFilePathOptionsMutableBuilder[Self <: CanvasToTempFilePathOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasToTempFilePathOptions](x: Self) {
     
-    @scala.inline
-    def setCanvasId(value: String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
+    inline def setCanvasId(value: String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
   }
 }

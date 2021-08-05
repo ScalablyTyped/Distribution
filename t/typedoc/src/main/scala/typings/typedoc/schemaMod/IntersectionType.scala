@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IntersectionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `type`: ModelToObject[String] | String,
     types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
   ): IntersectionType = {
@@ -27,21 +26,16 @@ object IntersectionType {
     __obj.asInstanceOf[IntersectionType]
   }
   
-  @scala.inline
-  implicit class IntersectionTypeMutableBuilder[Self <: IntersectionType] (val x: Self) extends AnyVal {
+  extension [Self <: IntersectionType](x: Self) {
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(
+    inline def setTypes(
       value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
     ): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

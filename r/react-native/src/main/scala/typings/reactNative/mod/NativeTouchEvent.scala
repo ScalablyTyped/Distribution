@@ -53,8 +53,7 @@ trait NativeTouchEvent extends StObject {
 }
 object NativeTouchEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changedTouches: js.Array[NativeTouchEvent],
     identifier: String,
     locationX: Double,
@@ -69,40 +68,28 @@ object NativeTouchEvent {
     __obj.asInstanceOf[NativeTouchEvent]
   }
   
-  @scala.inline
-  implicit class NativeTouchEventMutableBuilder[Self <: NativeTouchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NativeTouchEvent](x: Self) {
     
-    @scala.inline
-    def setChangedTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    inline def setChangedTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+    inline def setChangedTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationX(value: Double): Self = StObject.set(x, "locationX", value.asInstanceOf[js.Any])
+    inline def setLocationX(value: Double): Self = StObject.set(x, "locationX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationY(value: Double): Self = StObject.set(x, "locationY", value.asInstanceOf[js.Any])
+    inline def setLocationY(value: Double): Self = StObject.set(x, "locationY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    inline def setTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "touches", js.Array(value :_*))
+    inline def setTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "touches", js.Array(value :_*))
   }
 }

@@ -15,7 +15,7 @@ object domstoragewrapperMod {
       */
     def this(domStorage_ : Storage) = this()
     
-    var domStorage_ : js.Any = js.native
+    /* private */ var domStorage_ : js.Any = js.native
     
     /**
       * @param {string} key
@@ -25,7 +25,7 @@ object domstoragewrapperMod {
     
     var isInMemoryStorage: Boolean = js.native
     
-    var prefix_ : js.Any = js.native
+    /* private */ var prefix_ : js.Any = js.native
     
     /**
       * @param {string} name

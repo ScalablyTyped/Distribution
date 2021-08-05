@@ -24,23 +24,18 @@ object anon {
   }
   object NumberOfAttributesPerSpan {
     
-    @scala.inline
-    def apply(numberOfAttributesPerSpan: Double, numberOfEventsPerSpan: Double, numberOfLinksPerSpan: Double): NumberOfAttributesPerSpan = {
+    inline def apply(numberOfAttributesPerSpan: Double, numberOfEventsPerSpan: Double, numberOfLinksPerSpan: Double): NumberOfAttributesPerSpan = {
       val __obj = js.Dynamic.literal(numberOfAttributesPerSpan = numberOfAttributesPerSpan.asInstanceOf[js.Any], numberOfEventsPerSpan = numberOfEventsPerSpan.asInstanceOf[js.Any], numberOfLinksPerSpan = numberOfLinksPerSpan.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberOfAttributesPerSpan]
     }
     
-    @scala.inline
-    implicit class NumberOfAttributesPerSpanMutableBuilder[Self <: NumberOfAttributesPerSpan] (val x: Self) extends AnyVal {
+    extension [Self <: NumberOfAttributesPerSpan](x: Self) {
       
-      @scala.inline
-      def setNumberOfAttributesPerSpan(value: Double): Self = StObject.set(x, "numberOfAttributesPerSpan", value.asInstanceOf[js.Any])
+      inline def setNumberOfAttributesPerSpan(value: Double): Self = StObject.set(x, "numberOfAttributesPerSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfEventsPerSpan(value: Double): Self = StObject.set(x, "numberOfEventsPerSpan", value.asInstanceOf[js.Any])
+      inline def setNumberOfEventsPerSpan(value: Double): Self = StObject.set(x, "numberOfEventsPerSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfLinksPerSpan(value: Double): Self = StObject.set(x, "numberOfLinksPerSpan", value.asInstanceOf[js.Any])
+      inline def setNumberOfLinksPerSpan(value: Double): Self = StObject.set(x, "numberOfLinksPerSpan", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,8 +72,7 @@ object anon {
   }
   object logLevelLogLevelsamplerAl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gracefulShutdown: Boolean & js.UndefOr[Boolean],
       logLevel: LogLevel & js.UndefOr[LogLevel],
       sampler: AlwaysOnSampler & ParentOrElseSampler & js.UndefOr[Sampler],
@@ -88,38 +82,27 @@ object anon {
       __obj.asInstanceOf[logLevelLogLevelsamplerAl]
     }
     
-    @scala.inline
-    implicit class logLevelLogLevelsamplerAlMutableBuilder[Self <: logLevelLogLevelsamplerAl] (val x: Self) extends AnyVal {
+    extension [Self <: logLevelLogLevelsamplerAl](x: Self) {
       
-      @scala.inline
-      def setGracefulShutdown(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
+      inline def setGracefulShutdown(value: Boolean & js.UndefOr[Boolean]): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdGenerator(value: IdGenerator): Self = StObject.set(x, "idGenerator", value.asInstanceOf[js.Any])
+      inline def setIdGenerator(value: IdGenerator): Self = StObject.set(x, "idGenerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdGeneratorUndefined: Self = StObject.set(x, "idGenerator", js.undefined)
+      inline def setIdGeneratorUndefined: Self = StObject.set(x, "idGenerator", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: LogLevel & js.UndefOr[LogLevel]): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel & js.UndefOr[LogLevel]): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setSampler(value: AlwaysOnSampler & ParentOrElseSampler & js.UndefOr[Sampler]): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+      inline def setSampler(value: AlwaysOnSampler & ParentOrElseSampler & js.UndefOr[Sampler]): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceParams(value: NumberOfAttributesPerSpan & js.UndefOr[TraceParams]): Self = StObject.set(x, "traceParams", value.asInstanceOf[js.Any])
+      inline def setTraceParams(value: NumberOfAttributesPerSpan & js.UndefOr[TraceParams]): Self = StObject.set(x, "traceParams", value.asInstanceOf[js.Any])
     }
   }
 }

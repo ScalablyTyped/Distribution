@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatMemberStatus extends StObject
 object ChatMemberStatus {
   
-  @scala.inline
-  def administrator: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.administrator = "administrator".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.administrator]
+  inline def administrator: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.administrator = "administrator".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.administrator]
   
-  @scala.inline
-  def creator: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator = "creator".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator]
+  inline def creator: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator = "creator".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator]
   
-  @scala.inline
-  def kicked: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked = "kicked".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked]
+  inline def kicked: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked = "kicked".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked]
   
-  @scala.inline
-  def left: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.left = "left".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.left]
+  inline def left: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.left = "left".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.left]
   
-  @scala.inline
-  def member: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.member = "member".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.member]
+  inline def member: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.member = "member".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.member]
   
-  @scala.inline
-  def restricted: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.restricted = "restricted".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.restricted]
+  inline def restricted: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.restricted = "restricted".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.restricted]
 }

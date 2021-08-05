@@ -13,12 +13,12 @@ object loadableContentMod {
     extends PureComponent[ILoadableContentProps, js.Object, js.Any] {
     def this(props: ILoadableContentProps) = this()
     
-    var calculateStyle: js.Any = js.native
+    /* private */ var calculateStyle: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MLoadableContent(prevProps: ILoadableContentProps): Unit = js.native
     
-    var style: js.Any = js.native
+    /* private */ var style: js.Any = js.native
   }
   
   trait ILoadableContentProps extends StObject {
@@ -37,23 +37,18 @@ object loadableContentMod {
   }
   object ILoadableContentProps {
     
-    @scala.inline
-    def apply(loading: Boolean): ILoadableContentProps = {
+    inline def apply(loading: Boolean): ILoadableContentProps = {
       val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILoadableContentProps]
     }
     
-    @scala.inline
-    implicit class ILoadableContentPropsMutableBuilder[Self <: ILoadableContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ILoadableContentProps](x: Self) {
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableLength(value: Boolean): Self = StObject.set(x, "variableLength", value.asInstanceOf[js.Any])
+      inline def setVariableLength(value: Boolean): Self = StObject.set(x, "variableLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableLengthUndefined: Self = StObject.set(x, "variableLength", js.undefined)
+      inline def setVariableLengthUndefined: Self = StObject.set(x, "variableLength", js.undefined)
     }
   }
 }

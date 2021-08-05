@@ -15,19 +15,15 @@ trait UpdateTaskExecutionRequest extends StObject {
 }
 object UpdateTaskExecutionRequest {
   
-  @scala.inline
-  def apply(Options: Options, TaskExecutionArn: TaskExecutionArn): UpdateTaskExecutionRequest = {
+  inline def apply(Options: Options, TaskExecutionArn: TaskExecutionArn): UpdateTaskExecutionRequest = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], TaskExecutionArn = TaskExecutionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTaskExecutionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTaskExecutionRequestMutableBuilder[Self <: UpdateTaskExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTaskExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
+    inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
   }
 }

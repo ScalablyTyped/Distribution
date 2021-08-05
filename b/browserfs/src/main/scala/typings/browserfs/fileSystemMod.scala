@@ -497,8 +497,7 @@ object fileSystemMod {
   }
   object FileSystemConstructor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Create: (js.Object, BFSCallback[FileSystem]) => Unit,
       Name: String,
       Options: FileSystemOptions,
@@ -508,20 +507,15 @@ object fileSystemMod {
       __obj.asInstanceOf[FileSystemConstructor]
     }
     
-    @scala.inline
-    implicit class FileSystemConstructorMutableBuilder[Self <: FileSystemConstructor] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystemConstructor](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (js.Object, BFSCallback[FileSystem]) => Unit): Self = StObject.set(x, "Create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (js.Object, BFSCallback[FileSystem]) => Unit): Self = StObject.set(x, "Create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsAvailable(value: () => Boolean): Self = StObject.set(x, "isAvailable", js.Any.fromFunction0(value))
+      inline def setIsAvailable(value: () => Boolean): Self = StObject.set(x, "isAvailable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: FileSystemOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: FileSystemOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -537,36 +531,27 @@ object fileSystemMod {
   }
   object FileSystemOption {
     
-    @scala.inline
-    def apply[T](description: String, `type`: String | js.Array[String]): FileSystemOption[T] = {
+    inline def apply[T](description: String, `type`: String | js.Array[String]): FileSystemOption[T] = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileSystemOption[T]]
     }
     
-    @scala.inline
-    implicit class FileSystemOptionMutableBuilder[Self <: FileSystemOption[?], T] (val x: Self & FileSystemOption[T]) extends AnyVal {
+    extension [Self <: FileSystemOption[?], T](x: Self & FileSystemOption[T]) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
       
-      @scala.inline
-      def setValidator(value: (/* opt */ T, /* cb */ BFSOneArgCallback) => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
+      inline def setValidator(value: (/* opt */ T, /* cb */ BFSOneArgCallback) => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+      inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     }
   }
   

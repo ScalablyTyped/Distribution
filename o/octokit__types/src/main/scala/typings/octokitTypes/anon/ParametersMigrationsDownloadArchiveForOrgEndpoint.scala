@@ -17,8 +17,7 @@ trait ParametersMigrationsDownloadArchiveForOrgEndpoint extends StObject {
 }
 object ParametersMigrationsDownloadArchiveForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsDownloadArchiveForOrgEndpoint,
     request: MigrationsDownloadArchiveForOrgRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersMigrationsDownloadArchiveForOrgEndpoint {
     __obj.asInstanceOf[ParametersMigrationsDownloadArchiveForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsDownloadArchiveForOrgEndpointMutableBuilder[Self <: ParametersMigrationsDownloadArchiveForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsDownloadArchiveForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsDownloadArchiveForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsDownloadArchiveForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsDownloadArchiveForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsDownloadArchiveForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

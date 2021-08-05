@@ -23,34 +23,25 @@ trait ServiceNetworkConfiguration extends StObject {
 }
 object ServiceNetworkConfiguration {
   
-  @scala.inline
-  def apply(subnets: js.Array[String]): ServiceNetworkConfiguration = {
+  inline def apply(subnets: js.Array[String]): ServiceNetworkConfiguration = {
     val __obj = js.Dynamic.literal(subnets = subnets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceNetworkConfiguration]
   }
   
-  @scala.inline
-  implicit class ServiceNetworkConfigurationMutableBuilder[Self <: ServiceNetworkConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceNetworkConfiguration](x: Self) {
     
-    @scala.inline
-    def setAssignPublicIp(value: Boolean): Self = StObject.set(x, "assignPublicIp", value.asInstanceOf[js.Any])
+    inline def setAssignPublicIp(value: Boolean): Self = StObject.set(x, "assignPublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignPublicIpUndefined: Self = StObject.set(x, "assignPublicIp", js.undefined)
+    inline def setAssignPublicIpUndefined: Self = StObject.set(x, "assignPublicIp", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
   }
 }

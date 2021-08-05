@@ -23,28 +23,21 @@ trait GetFindingsStatisticsRequest extends StObject {
 }
 object GetFindingsStatisticsRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, FindingStatisticTypes: FindingStatisticTypes): GetFindingsStatisticsRequest = {
+  inline def apply(DetectorId: DetectorId, FindingStatisticTypes: FindingStatisticTypes): GetFindingsStatisticsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], FindingStatisticTypes = FindingStatisticTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsStatisticsRequest]
   }
   
-  @scala.inline
-  implicit class GetFindingsStatisticsRequestMutableBuilder[Self <: GetFindingsStatisticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingsStatisticsRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "FindingCriteria", value.asInstanceOf[js.Any])
+    inline def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "FindingCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteriaUndefined: Self = StObject.set(x, "FindingCriteria", js.undefined)
+    inline def setFindingCriteriaUndefined: Self = StObject.set(x, "FindingCriteria", js.undefined)
     
-    @scala.inline
-    def setFindingStatisticTypes(value: FindingStatisticTypes): Self = StObject.set(x, "FindingStatisticTypes", value.asInstanceOf[js.Any])
+    inline def setFindingStatisticTypes(value: FindingStatisticTypes): Self = StObject.set(x, "FindingStatisticTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingStatisticTypesVarargs(value: FindingStatisticType*): Self = StObject.set(x, "FindingStatisticTypes", js.Array(value :_*))
+    inline def setFindingStatisticTypesVarargs(value: FindingStatisticType*): Self = StObject.set(x, "FindingStatisticTypes", js.Array(value :_*))
   }
 }

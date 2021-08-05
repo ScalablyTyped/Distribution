@@ -12,19 +12,15 @@ trait SqlError extends StObject {
 }
 object SqlError {
   
-  @scala.inline
-  def apply(code: Double, message: String): SqlError = {
+  inline def apply(code: Double, message: String): SqlError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlError]
   }
   
-  @scala.inline
-  implicit class SqlErrorMutableBuilder[Self <: SqlError] (val x: Self) extends AnyVal {
+  extension [Self <: SqlError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

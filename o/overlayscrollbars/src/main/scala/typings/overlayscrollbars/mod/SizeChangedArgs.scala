@@ -12,19 +12,15 @@ trait SizeChangedArgs extends StObject {
 }
 object SizeChangedArgs {
   
-  @scala.inline
-  def apply(height: Double, width: Double): SizeChangedArgs = {
+  inline def apply(height: Double, width: Double): SizeChangedArgs = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeChangedArgs]
   }
   
-  @scala.inline
-  implicit class SizeChangedArgsMutableBuilder[Self <: SizeChangedArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SizeChangedArgs](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

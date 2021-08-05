@@ -13,25 +13,19 @@ trait ExcludeConditions extends StObject {
 }
 object ExcludeConditions {
   
-  @scala.inline
-  def apply(): ExcludeConditions = {
+  inline def apply(): ExcludeConditions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExcludeConditions]
   }
   
-  @scala.inline
-  implicit class ExcludeConditionsMutableBuilder[Self <: ExcludeConditions] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludeConditions](x: Self) {
     
-    @scala.inline
-    def setExcludeConditions(value: ExclusionDuration): Self = StObject.set(x, "excludeConditions", value.asInstanceOf[js.Any])
+    inline def setExcludeConditions(value: ExclusionDuration): Self = StObject.set(x, "excludeConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeConditionsUndefined: Self = StObject.set(x, "excludeConditions", js.undefined)
+    inline def setExcludeConditionsUndefined: Self = StObject.set(x, "excludeConditions", js.undefined)
     
-    @scala.inline
-    def setIncludeConditions(value: SchemaIncludeConditions): Self = StObject.set(x, "includeConditions", value.asInstanceOf[js.Any])
+    inline def setIncludeConditions(value: SchemaIncludeConditions): Self = StObject.set(x, "includeConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeConditionsUndefined: Self = StObject.set(x, "includeConditions", js.undefined)
+    inline def setIncludeConditionsUndefined: Self = StObject.set(x, "includeConditions", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait PDFWorker extends StObject {
 }
 object PDFWorker {
   
-  @scala.inline
-  def apply(destroy: () => Unit, promise: js.Promise[js.Any]): PDFWorker = {
+  inline def apply(destroy: () => Unit, promise: js.Promise[js.Any]): PDFWorker = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), promise = promise.asInstanceOf[js.Any], messageHandler = null, port = null)
     __obj.asInstanceOf[PDFWorker]
   }
   
-  @scala.inline
-  implicit class PDFWorkerMutableBuilder[Self <: PDFWorker] (val x: Self) extends AnyVal {
+  extension [Self <: PDFWorker](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessageHandler(value: js.Any): Self = StObject.set(x, "messageHandler", value.asInstanceOf[js.Any])
+    inline def setMessageHandler(value: js.Any): Self = StObject.set(x, "messageHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageHandlerNull: Self = StObject.set(x, "messageHandler", null)
+    inline def setMessageHandlerNull: Self = StObject.set(x, "messageHandler", null)
     
-    @scala.inline
-    def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNull: Self = StObject.set(x, "port", null)
+    inline def setPortNull: Self = StObject.set(x, "port", null)
     
-    @scala.inline
-    def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

@@ -39,37 +39,27 @@ trait AddBindingFromPromptOptions extends StObject {
 }
 object AddBindingFromPromptOptions {
   
-  @scala.inline
-  def apply(): AddBindingFromPromptOptions = {
+  inline def apply(): AddBindingFromPromptOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddBindingFromPromptOptions]
   }
   
-  @scala.inline
-  implicit class AddBindingFromPromptOptionsMutableBuilder[Self <: AddBindingFromPromptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddBindingFromPromptOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPromptText(value: String): Self = StObject.set(x, "promptText", value.asInstanceOf[js.Any])
+    inline def setPromptText(value: String): Self = StObject.set(x, "promptText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptTextUndefined: Self = StObject.set(x, "promptText", js.undefined)
+    inline def setPromptTextUndefined: Self = StObject.set(x, "promptText", js.undefined)
     
-    @scala.inline
-    def setSampleData(value: TableData): Self = StObject.set(x, "sampleData", value.asInstanceOf[js.Any])
+    inline def setSampleData(value: TableData): Self = StObject.set(x, "sampleData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleDataUndefined: Self = StObject.set(x, "sampleData", js.undefined)
+    inline def setSampleDataUndefined: Self = StObject.set(x, "sampleData", js.undefined)
   }
 }

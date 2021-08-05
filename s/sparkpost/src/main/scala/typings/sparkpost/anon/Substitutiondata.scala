@@ -12,25 +12,19 @@ trait Substitutiondata extends StObject {
 }
 object Substitutiondata {
   
-  @scala.inline
-  def apply(): Substitutiondata = {
+  inline def apply(): Substitutiondata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Substitutiondata]
   }
   
-  @scala.inline
-  implicit class SubstitutiondataMutableBuilder[Self <: Substitutiondata] (val x: Self) extends AnyVal {
+  extension [Self <: Substitutiondata](x: Self) {
     
-    @scala.inline
-    def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
-    @scala.inline
-    def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    inline def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
+    inline def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
   }
 }

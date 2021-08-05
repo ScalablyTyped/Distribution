@@ -36,8 +36,7 @@ object youtubeMod {
     @JSImport("googleapis/build/src/apis/youtube", "VERSIONS.v3")
     @js.native
     def v3: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Youtube] = js.native
-    @scala.inline
-    def v3_=(
+    inline def v3_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Youtube]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object youtubeMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object youtubeMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def youtube(options: Options): Youtube = ^.asInstanceOf[js.Dynamic].applyDynamic("youtube")(options.asInstanceOf[js.Any]).asInstanceOf[Youtube]
+  inline def youtube(options: Options): Youtube = ^.asInstanceOf[js.Dynamic].applyDynamic("youtube")(options.asInstanceOf[js.Any]).asInstanceOf[Youtube]
   
-  @scala.inline
-  def youtube_v3(version: v3): Youtube = ^.asInstanceOf[js.Dynamic].applyDynamic("youtube")(version.asInstanceOf[js.Any]).asInstanceOf[Youtube]
+  inline def youtube_v3(version: v3): Youtube = ^.asInstanceOf[js.Dynamic].applyDynamic("youtube")(version.asInstanceOf[js.Any]).asInstanceOf[Youtube]
 }

@@ -60,110 +60,76 @@ object Table {
   }
   object TableBodyProps {
     
-    @scala.inline
-    def apply(): TableBodyProps = {
+    inline def apply(): TableBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableBodyProps]
     }
     
-    @scala.inline
-    implicit class TableBodyPropsMutableBuilder[Self <: TableBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableBodyProps](x: Self) {
       
-      @scala.inline
-      def setAllRowsSelected(value: Boolean): Self = StObject.set(x, "allRowsSelected", value.asInstanceOf[js.Any])
+      inline def setAllRowsSelected(value: Boolean): Self = StObject.set(x, "allRowsSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllRowsSelectedUndefined: Self = StObject.set(x, "allRowsSelected", js.undefined)
+      inline def setAllRowsSelectedUndefined: Self = StObject.set(x, "allRowsSelected", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDeselectOnClickaway(value: Boolean): Self = StObject.set(x, "deselectOnClickaway", value.asInstanceOf[js.Any])
+      inline def setDeselectOnClickaway(value: Boolean): Self = StObject.set(x, "deselectOnClickaway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeselectOnClickawayUndefined: Self = StObject.set(x, "deselectOnClickaway", js.undefined)
+      inline def setDeselectOnClickawayUndefined: Self = StObject.set(x, "deselectOnClickaway", js.undefined)
       
-      @scala.inline
-      def setDisplayRowCheckbox(value: Boolean): Self = StObject.set(x, "displayRowCheckbox", value.asInstanceOf[js.Any])
+      inline def setDisplayRowCheckbox(value: Boolean): Self = StObject.set(x, "displayRowCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayRowCheckboxUndefined: Self = StObject.set(x, "displayRowCheckbox", js.undefined)
+      inline def setDisplayRowCheckboxUndefined: Self = StObject.set(x, "displayRowCheckbox", js.undefined)
       
-      @scala.inline
-      def setMultiSelectable(value: Boolean): Self = StObject.set(x, "multiSelectable", value.asInstanceOf[js.Any])
+      inline def setMultiSelectable(value: Boolean): Self = StObject.set(x, "multiSelectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectableUndefined: Self = StObject.set(x, "multiSelectable", js.undefined)
+      inline def setMultiSelectableUndefined: Self = StObject.set(x, "multiSelectable", js.undefined)
       
-      @scala.inline
-      def setOnCellClick(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
+      inline def setOnCellClick(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+      inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
-      @scala.inline
-      def setOnCellHover(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHover", js.Any.fromFunction2(value))
+      inline def setOnCellHover(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellHoverExit(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHoverExit", js.Any.fromFunction2(value))
+      inline def setOnCellHoverExit(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHoverExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellHoverExitUndefined: Self = StObject.set(x, "onCellHoverExit", js.undefined)
+      inline def setOnCellHoverExitUndefined: Self = StObject.set(x, "onCellHoverExit", js.undefined)
       
-      @scala.inline
-      def setOnCellHoverUndefined: Self = StObject.set(x, "onCellHover", js.undefined)
+      inline def setOnCellHoverUndefined: Self = StObject.set(x, "onCellHover", js.undefined)
       
-      @scala.inline
-      def setOnRowHover(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHover", js.Any.fromFunction1(value))
+      inline def setOnRowHover(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHover", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRowHoverExit(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHoverExit", js.Any.fromFunction1(value))
+      inline def setOnRowHoverExit(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHoverExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRowHoverExitUndefined: Self = StObject.set(x, "onRowHoverExit", js.undefined)
+      inline def setOnRowHoverExitUndefined: Self = StObject.set(x, "onRowHoverExit", js.undefined)
       
-      @scala.inline
-      def setOnRowHoverUndefined: Self = StObject.set(x, "onRowHover", js.undefined)
+      inline def setOnRowHoverUndefined: Self = StObject.set(x, "onRowHover", js.undefined)
       
-      @scala.inline
-      def setOnRowSelection(value: /* selectedRows */ js.Array[Double] | String => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
+      inline def setOnRowSelection(value: /* selectedRows */ js.Array[Double] | String => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRowSelectionUndefined: Self = StObject.set(x, "onRowSelection", js.undefined)
+      inline def setOnRowSelectionUndefined: Self = StObject.set(x, "onRowSelection", js.undefined)
       
-      @scala.inline
-      def setPreScanRows(value: Boolean): Self = StObject.set(x, "preScanRows", value.asInstanceOf[js.Any])
+      inline def setPreScanRows(value: Boolean): Self = StObject.set(x, "preScanRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreScanRowsUndefined: Self = StObject.set(x, "preScanRows", js.undefined)
+      inline def setPreScanRowsUndefined: Self = StObject.set(x, "preScanRows", js.undefined)
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setShowRowHover(value: Boolean): Self = StObject.set(x, "showRowHover", value.asInstanceOf[js.Any])
+      inline def setShowRowHover(value: Boolean): Self = StObject.set(x, "showRowHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRowHoverUndefined: Self = StObject.set(x, "showRowHover", js.undefined)
+      inline def setShowRowHoverUndefined: Self = StObject.set(x, "showRowHover", js.undefined)
       
-      @scala.inline
-      def setStripedRows(value: Boolean): Self = StObject.set(x, "stripedRows", value.asInstanceOf[js.Any])
+      inline def setStripedRows(value: Boolean): Self = StObject.set(x, "stripedRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripedRowsUndefined: Self = StObject.set(x, "stripedRows", js.undefined)
+      inline def setStripedRowsUndefined: Self = StObject.set(x, "stripedRows", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -180,32 +146,24 @@ object Table {
   }
   object TableFooterProps {
     
-    @scala.inline
-    def apply(): TableFooterProps = {
+    inline def apply(): TableFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableFooterProps]
     }
     
-    @scala.inline
-    implicit class TableFooterPropsMutableBuilder[Self <: TableFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableFooterProps](x: Self) {
       
-      @scala.inline
-      def setAdjustForCheckbox(value: Boolean): Self = StObject.set(x, "adjustForCheckbox", value.asInstanceOf[js.Any])
+      inline def setAdjustForCheckbox(value: Boolean): Self = StObject.set(x, "adjustForCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustForCheckboxUndefined: Self = StObject.set(x, "adjustForCheckbox", js.undefined)
+      inline def setAdjustForCheckboxUndefined: Self = StObject.set(x, "adjustForCheckbox", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -239,68 +197,48 @@ object Table {
   }
   object TableHeaderColumnProps {
     
-    @scala.inline
-    def apply(): TableHeaderColumnProps = {
+    inline def apply(): TableHeaderColumnProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableHeaderColumnProps]
     }
     
-    @scala.inline
-    implicit class TableHeaderColumnPropsMutableBuilder[Self <: TableHeaderColumnProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableHeaderColumnProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+      inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipStyle(value: CSSProperties): Self = StObject.set(x, "tooltipStyle", value.asInstanceOf[js.Any])
+      inline def setTooltipStyle(value: CSSProperties): Self = StObject.set(x, "tooltipStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipStyleUndefined: Self = StObject.set(x, "tooltipStyle", js.undefined)
+      inline def setTooltipStyleUndefined: Self = StObject.set(x, "tooltipStyle", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   
@@ -324,56 +262,40 @@ object Table {
   }
   object TableHeaderProps {
     
-    @scala.inline
-    def apply(): TableHeaderProps = {
+    inline def apply(): TableHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableHeaderProps]
     }
     
-    @scala.inline
-    implicit class TableHeaderPropsMutableBuilder[Self <: TableHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableHeaderProps](x: Self) {
       
-      @scala.inline
-      def setAdjustForCheckbox(value: Boolean): Self = StObject.set(x, "adjustForCheckbox", value.asInstanceOf[js.Any])
+      inline def setAdjustForCheckbox(value: Boolean): Self = StObject.set(x, "adjustForCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustForCheckboxUndefined: Self = StObject.set(x, "adjustForCheckbox", js.undefined)
+      inline def setAdjustForCheckboxUndefined: Self = StObject.set(x, "adjustForCheckbox", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisplaySelectAll(value: Boolean): Self = StObject.set(x, "displaySelectAll", value.asInstanceOf[js.Any])
+      inline def setDisplaySelectAll(value: Boolean): Self = StObject.set(x, "displaySelectAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplaySelectAllUndefined: Self = StObject.set(x, "displaySelectAll", js.undefined)
+      inline def setDisplaySelectAllUndefined: Self = StObject.set(x, "displaySelectAll", js.undefined)
       
-      @scala.inline
-      def setEnableSelectAll(value: Boolean): Self = StObject.set(x, "enableSelectAll", value.asInstanceOf[js.Any])
+      inline def setEnableSelectAll(value: Boolean): Self = StObject.set(x, "enableSelectAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSelectAllUndefined: Self = StObject.set(x, "enableSelectAll", js.undefined)
+      inline def setEnableSelectAllUndefined: Self = StObject.set(x, "enableSelectAll", js.undefined)
       
-      @scala.inline
-      def setOnSelectAll(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction1(value))
+      inline def setOnSelectAll(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
+      inline def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
       
-      @scala.inline
-      def setSelectAllSelected(value: Boolean): Self = StObject.set(x, "selectAllSelected", value.asInstanceOf[js.Any])
+      inline def setSelectAllSelected(value: Boolean): Self = StObject.set(x, "selectAllSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllSelectedUndefined: Self = StObject.set(x, "selectAllSelected", js.undefined)
+      inline def setSelectAllSelectedUndefined: Self = StObject.set(x, "selectAllSelected", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -417,122 +339,84 @@ object Table {
   }
   object TableProps {
     
-    @scala.inline
-    def apply(): TableProps = {
+    inline def apply(): TableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableProps]
     }
     
-    @scala.inline
-    implicit class TablePropsMutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableProps](x: Self) {
       
-      @scala.inline
-      def setAllRowsSelected(value: Boolean): Self = StObject.set(x, "allRowsSelected", value.asInstanceOf[js.Any])
+      inline def setAllRowsSelected(value: Boolean): Self = StObject.set(x, "allRowsSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllRowsSelectedUndefined: Self = StObject.set(x, "allRowsSelected", js.undefined)
+      inline def setAllRowsSelectedUndefined: Self = StObject.set(x, "allRowsSelected", js.undefined)
       
-      @scala.inline
-      def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
+      inline def setBodyStyle(value: CSSProperties): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
+      inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFixedFooter(value: Boolean): Self = StObject.set(x, "fixedFooter", value.asInstanceOf[js.Any])
+      inline def setFixedFooter(value: Boolean): Self = StObject.set(x, "fixedFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedFooterUndefined: Self = StObject.set(x, "fixedFooter", js.undefined)
+      inline def setFixedFooterUndefined: Self = StObject.set(x, "fixedFooter", js.undefined)
       
-      @scala.inline
-      def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+      inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      @scala.inline
-      def setFooterStyle(value: CSSProperties): Self = StObject.set(x, "footerStyle", value.asInstanceOf[js.Any])
+      inline def setFooterStyle(value: CSSProperties): Self = StObject.set(x, "footerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterStyleUndefined: Self = StObject.set(x, "footerStyle", js.undefined)
+      inline def setFooterStyleUndefined: Self = StObject.set(x, "footerStyle", js.undefined)
       
-      @scala.inline
-      def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+      inline def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
+      inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMultiSelectable(value: Boolean): Self = StObject.set(x, "multiSelectable", value.asInstanceOf[js.Any])
+      inline def setMultiSelectable(value: Boolean): Self = StObject.set(x, "multiSelectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectableUndefined: Self = StObject.set(x, "multiSelectable", js.undefined)
+      inline def setMultiSelectableUndefined: Self = StObject.set(x, "multiSelectable", js.undefined)
       
-      @scala.inline
-      def setOnCellClick(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
+      inline def setOnCellClick(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+      inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
-      @scala.inline
-      def setOnCellHover(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHover", js.Any.fromFunction2(value))
+      inline def setOnCellHover(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellHoverExit(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHoverExit", js.Any.fromFunction2(value))
+      inline def setOnCellHoverExit(value: (/* row */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "onCellHoverExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCellHoverExitUndefined: Self = StObject.set(x, "onCellHoverExit", js.undefined)
+      inline def setOnCellHoverExitUndefined: Self = StObject.set(x, "onCellHoverExit", js.undefined)
       
-      @scala.inline
-      def setOnCellHoverUndefined: Self = StObject.set(x, "onCellHover", js.undefined)
+      inline def setOnCellHoverUndefined: Self = StObject.set(x, "onCellHover", js.undefined)
       
-      @scala.inline
-      def setOnRowHover(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHover", js.Any.fromFunction1(value))
+      inline def setOnRowHover(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHover", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRowHoverExit(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHoverExit", js.Any.fromFunction1(value))
+      inline def setOnRowHoverExit(value: /* row */ Double => Unit): Self = StObject.set(x, "onRowHoverExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRowHoverExitUndefined: Self = StObject.set(x, "onRowHoverExit", js.undefined)
+      inline def setOnRowHoverExitUndefined: Self = StObject.set(x, "onRowHoverExit", js.undefined)
       
-      @scala.inline
-      def setOnRowHoverUndefined: Self = StObject.set(x, "onRowHover", js.undefined)
+      inline def setOnRowHoverUndefined: Self = StObject.set(x, "onRowHover", js.undefined)
       
-      @scala.inline
-      def setOnRowSelection(value: /* selectedRows */ js.Array[Double] | all => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
+      inline def setOnRowSelection(value: /* selectedRows */ js.Array[Double] | all => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRowSelectionUndefined: Self = StObject.set(x, "onRowSelection", js.undefined)
+      inline def setOnRowSelectionUndefined: Self = StObject.set(x, "onRowSelection", js.undefined)
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWrapperStyle(value: CSSProperties): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+      inline def setWrapperStyle(value: CSSProperties): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
+      inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
     }
   }
   
@@ -575,74 +459,52 @@ object Table {
   }
   object TableRowColumnProps {
     
-    @scala.inline
-    def apply(): TableRowColumnProps = {
+    inline def apply(): TableRowColumnProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableRowColumnProps]
     }
     
-    @scala.inline
-    implicit class TableRowColumnPropsMutableBuilder[Self <: TableRowColumnProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableRowColumnProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+      inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
       
-      @scala.inline
-      def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
+      inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
+      inline def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnHover(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction2(value))
+      inline def setOnHover(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHoverExit(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onHoverExit", js.Any.fromFunction2(value))
+      inline def setOnHoverExit(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* column */ Double) => Unit): Self = StObject.set(x, "onHoverExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHoverExitUndefined: Self = StObject.set(x, "onHoverExit", js.undefined)
+      inline def setOnHoverExitUndefined: Self = StObject.set(x, "onHoverExit", js.undefined)
       
-      @scala.inline
-      def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
+      inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -714,110 +576,78 @@ object Table {
   }
   object TableRowProps {
     
-    @scala.inline
-    def apply(): TableRowProps = {
+    inline def apply(): TableRowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableRowProps]
     }
     
-    @scala.inline
-    implicit class TableRowPropsMutableBuilder[Self <: TableRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableRowProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisplayBorder(value: Boolean): Self = StObject.set(x, "displayBorder", value.asInstanceOf[js.Any])
+      inline def setDisplayBorder(value: Boolean): Self = StObject.set(x, "displayBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayBorderUndefined: Self = StObject.set(x, "displayBorder", js.undefined)
+      inline def setDisplayBorderUndefined: Self = StObject.set(x, "displayBorder", js.undefined)
       
-      @scala.inline
-      def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
+      inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
+      inline def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
       
-      @scala.inline
-      def setHovered(value: Boolean): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
+      inline def setHovered(value: Boolean): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoveredUndefined: Self = StObject.set(x, "hovered", js.undefined)
+      inline def setHoveredUndefined: Self = StObject.set(x, "hovered", js.undefined)
       
-      @scala.inline
-      def setOnCellClick(
+      inline def setOnCellClick(
         value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double, /* column */ Double) => Unit
       ): Self = StObject.set(x, "onCellClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+      inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
-      @scala.inline
-      def setOnCellHover(
+      inline def setOnCellHover(
         value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double, /* column */ Double) => Unit
       ): Self = StObject.set(x, "onCellHover", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnCellHoverExit(
+      inline def setOnCellHoverExit(
         value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double, /* column */ Double) => Unit
       ): Self = StObject.set(x, "onCellHoverExit", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnCellHoverExitUndefined: Self = StObject.set(x, "onCellHoverExit", js.undefined)
+      inline def setOnCellHoverExitUndefined: Self = StObject.set(x, "onCellHoverExit", js.undefined)
       
-      @scala.inline
-      def setOnCellHoverUndefined: Self = StObject.set(x, "onCellHover", js.undefined)
+      inline def setOnCellHoverUndefined: Self = StObject.set(x, "onCellHover", js.undefined)
       
-      @scala.inline
-      def setOnRowClick(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
+      inline def setOnRowClick(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+      inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
       
-      @scala.inline
-      def setOnRowHover(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double) => Unit): Self = StObject.set(x, "onRowHover", js.Any.fromFunction2(value))
+      inline def setOnRowHover(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double) => Unit): Self = StObject.set(x, "onRowHover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRowHoverExit(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double) => Unit): Self = StObject.set(x, "onRowHoverExit", js.Any.fromFunction2(value))
+      inline def setOnRowHoverExit(value: (/* e */ MouseEvent[js.Object, NativeMouseEvent], /* row */ Double) => Unit): Self = StObject.set(x, "onRowHoverExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRowHoverExitUndefined: Self = StObject.set(x, "onRowHoverExit", js.undefined)
+      inline def setOnRowHoverExitUndefined: Self = StObject.set(x, "onRowHoverExit", js.undefined)
       
-      @scala.inline
-      def setOnRowHoverUndefined: Self = StObject.set(x, "onRowHover", js.undefined)
+      inline def setOnRowHoverUndefined: Self = StObject.set(x, "onRowHover", js.undefined)
       
-      @scala.inline
-      def setRowNumber(value: Double): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
+      inline def setRowNumber(value: Double): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNumberUndefined: Self = StObject.set(x, "rowNumber", js.undefined)
+      inline def setRowNumberUndefined: Self = StObject.set(x, "rowNumber", js.undefined)
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
+      inline def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
+      inline def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

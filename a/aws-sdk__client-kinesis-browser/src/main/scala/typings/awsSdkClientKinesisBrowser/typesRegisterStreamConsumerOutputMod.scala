@@ -26,20 +26,16 @@ object typesRegisterStreamConsumerOutputMod {
   }
   object RegisterStreamConsumerOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, Consumer: UnmarshalledConsumer): RegisterStreamConsumerOutput = {
+    inline def apply($metadata: ResponseMetadata, Consumer: UnmarshalledConsumer): RegisterStreamConsumerOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Consumer = Consumer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegisterStreamConsumerOutput]
     }
     
-    @scala.inline
-    implicit class RegisterStreamConsumerOutputMutableBuilder[Self <: RegisterStreamConsumerOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterStreamConsumerOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumer(value: UnmarshalledConsumer): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
+      inline def setConsumer(value: UnmarshalledConsumer): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait EnableVpcClassicLinkDnsSupportRequest extends StObject {
 }
 object EnableVpcClassicLinkDnsSupportRequest {
   
-  @scala.inline
-  def apply(): EnableVpcClassicLinkDnsSupportRequest = {
+  inline def apply(): EnableVpcClassicLinkDnsSupportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableVpcClassicLinkDnsSupportRequest]
   }
   
-  @scala.inline
-  implicit class EnableVpcClassicLinkDnsSupportRequestMutableBuilder[Self <: EnableVpcClassicLinkDnsSupportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableVpcClassicLinkDnsSupportRequest](x: Self) {
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

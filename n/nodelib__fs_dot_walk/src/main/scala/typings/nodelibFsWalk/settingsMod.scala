@@ -16,10 +16,10 @@ object settingsMod {
        with Settings {
     def this(_options: Options) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getValue: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _options: js.Any = js.native
     
     /* CompleteClass */
@@ -73,82 +73,60 @@ object settingsMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setDeepFilter(value: Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
+      inline def setDeepFilter(value: Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeepFilterUndefined: Self = StObject.set(x, "deepFilter", js.undefined)
+      inline def setDeepFilterUndefined: Self = StObject.set(x, "deepFilter", js.undefined)
       
-      @scala.inline
-      def setEntryFilter(value: Entry => Boolean): Self = StObject.set(x, "entryFilter", js.Any.fromFunction1(value))
+      inline def setEntryFilter(value: Entry => Boolean): Self = StObject.set(x, "entryFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntryFilterUndefined: Self = StObject.set(x, "entryFilter", js.undefined)
+      inline def setEntryFilterUndefined: Self = StObject.set(x, "entryFilter", js.undefined)
       
-      @scala.inline
-      def setErrorFilter(value: Errno => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
+      inline def setErrorFilter(value: Errno => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
+      inline def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
       
-      @scala.inline
-      def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
+      inline def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowSymbolicLinksUndefined: Self = StObject.set(x, "followSymbolicLinks", js.undefined)
+      inline def setFollowSymbolicLinksUndefined: Self = StObject.set(x, "followSymbolicLinks", js.undefined)
       
-      @scala.inline
-      def setFs(value: PartialFileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: PartialFileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setPathSegmentSeparator(value: String): Self = StObject.set(x, "pathSegmentSeparator", value.asInstanceOf[js.Any])
+      inline def setPathSegmentSeparator(value: String): Self = StObject.set(x, "pathSegmentSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathSegmentSeparatorUndefined: Self = StObject.set(x, "pathSegmentSeparator", js.undefined)
+      inline def setPathSegmentSeparatorUndefined: Self = StObject.set(x, "pathSegmentSeparator", js.undefined)
       
-      @scala.inline
-      def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
-      @scala.inline
-      def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
+      inline def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowErrorOnBrokenSymbolicLinkUndefined: Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", js.undefined)
+      inline def setThrowErrorOnBrokenSymbolicLinkUndefined: Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", js.undefined)
     }
   }
   
   trait Settings extends StObject {
     
-    var _getValue: js.Any
+    /* private */ var _getValue: js.Any
     
-    val _options: js.Any
+    /* private */ val _options: js.Any
     
     val basePath: js.UndefOr[String] = js.undefined
     
@@ -166,8 +144,7 @@ object settingsMod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _getValue: js.Any,
       _options: js.Any,
       concurrency: Double,
@@ -178,47 +155,33 @@ object settingsMod {
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepFilter(value: Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
+      inline def setDeepFilter(value: Entry => Boolean): Self = StObject.set(x, "deepFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeepFilterNull: Self = StObject.set(x, "deepFilter", null)
+      inline def setDeepFilterNull: Self = StObject.set(x, "deepFilter", null)
       
-      @scala.inline
-      def setEntryFilter(value: Entry => Boolean): Self = StObject.set(x, "entryFilter", js.Any.fromFunction1(value))
+      inline def setEntryFilter(value: Entry => Boolean): Self = StObject.set(x, "entryFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntryFilterNull: Self = StObject.set(x, "entryFilter", null)
+      inline def setEntryFilterNull: Self = StObject.set(x, "entryFilter", null)
       
-      @scala.inline
-      def setErrorFilter(value: Errno => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
+      inline def setErrorFilter(value: Errno => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorFilterNull: Self = StObject.set(x, "errorFilter", null)
+      inline def setErrorFilterNull: Self = StObject.set(x, "errorFilter", null)
       
-      @scala.inline
-      def setFsScandirSettings(value: typings.nodelibFsScandir.mod.Settings): Self = StObject.set(x, "fsScandirSettings", value.asInstanceOf[js.Any])
+      inline def setFsScandirSettings(value: typings.nodelibFsScandir.mod.Settings): Self = StObject.set(x, "fsScandirSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathSegmentSeparator(value: String): Self = StObject.set(x, "pathSegmentSeparator", value.asInstanceOf[js.Any])
+      inline def setPathSegmentSeparator(value: String): Self = StObject.set(x, "pathSegmentSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getValue(value: js.Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
+      inline def set_getValue(value: js.Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
 }

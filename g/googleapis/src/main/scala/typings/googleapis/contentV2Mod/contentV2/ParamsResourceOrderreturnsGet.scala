@@ -30,31 +30,23 @@ trait ParamsResourceOrderreturnsGet
 }
 object ParamsResourceOrderreturnsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceOrderreturnsGet = {
+  inline def apply(): ParamsResourceOrderreturnsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrderreturnsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrderreturnsGetMutableBuilder[Self <: ParamsResourceOrderreturnsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrderreturnsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setReturnId(value: String): Self = StObject.set(x, "returnId", value.asInstanceOf[js.Any])
+    inline def setReturnId(value: String): Self = StObject.set(x, "returnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnIdUndefined: Self = StObject.set(x, "returnId", js.undefined)
+    inline def setReturnIdUndefined: Self = StObject.set(x, "returnId", js.undefined)
   }
 }

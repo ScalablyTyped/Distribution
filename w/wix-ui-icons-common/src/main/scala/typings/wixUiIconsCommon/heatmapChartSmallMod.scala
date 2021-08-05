@@ -22,20 +22,16 @@ object heatmapChartSmallMod extends Shortcut {
   }
   object HeatmapChartSmallProps {
     
-    @scala.inline
-    def apply(): HeatmapChartSmallProps = {
+    inline def apply(): HeatmapChartSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeatmapChartSmallProps]
     }
     
-    @scala.inline
-    implicit class HeatmapChartSmallPropsMutableBuilder[Self <: HeatmapChartSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeatmapChartSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentLike extends StObject
 object DocumentLike {
   
-  @scala.inline
-  def ObjectWithId(_id: String): typings.arangodb.ArangoDB.ObjectWithId = {
+  inline def ObjectWithId(_id: String): typings.arangodb.ArangoDB.ObjectWithId = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.arangodb.ArangoDB.ObjectWithId]
   }
   
-  @scala.inline
-  def ObjectWithKey(_key: String): typings.arangodb.ArangoDB.ObjectWithKey = {
+  inline def ObjectWithKey(_key: String): typings.arangodb.ArangoDB.ObjectWithKey = {
     val __obj = js.Dynamic.literal(_key = _key.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.arangodb.ArangoDB.ObjectWithKey]
   }

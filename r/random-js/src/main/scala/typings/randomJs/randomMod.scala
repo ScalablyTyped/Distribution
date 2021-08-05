@@ -54,7 +54,7 @@ object randomMod {
       */
     def die(sideCount: Double): Double = js.native
     
-    val engine: js.Any = js.native
+    /* private */ val engine: js.Any = js.native
     
     /**
       * Returns a random string comprised of numbers or the characters `abcdef`

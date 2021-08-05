@@ -54,11 +54,11 @@ object symbolsMod {
   @js.native
   class SymbolTable () extends StObject {
     
-    var getSymbols: js.Any = js.native
+    /* private */ var getSymbols: js.Any = js.native
     
     def isEmpty: Boolean = js.native
     
-    var nameMap: js.Any = js.native
+    /* private */ var nameMap: js.Any = js.native
     
     def resolveSymbol(name: String, kind: SymbolKind): js.UndefOr[Symbol] = js.native
   }

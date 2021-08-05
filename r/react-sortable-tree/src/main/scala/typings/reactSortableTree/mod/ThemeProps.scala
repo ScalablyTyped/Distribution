@@ -12,19 +12,15 @@ trait ThemeProps
 }
 object ThemeProps {
   
-  @scala.inline
-  def apply(): ThemeProps = {
+  inline def apply(): ThemeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeProps]
   }
   
-  @scala.inline
-  implicit class ThemePropsMutableBuilder[Self <: ThemeProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeProps](x: Self) {
     
-    @scala.inline
-    def setTreeNodeRenderer(value: TreeRenderer): Self = StObject.set(x, "treeNodeRenderer", value.asInstanceOf[js.Any])
+    inline def setTreeNodeRenderer(value: TreeRenderer): Self = StObject.set(x, "treeNodeRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeNodeRendererUndefined: Self = StObject.set(x, "treeNodeRenderer", js.undefined)
+    inline def setTreeNodeRendererUndefined: Self = StObject.set(x, "treeNodeRenderer", js.undefined)
   }
 }

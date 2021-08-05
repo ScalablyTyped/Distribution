@@ -13,19 +13,15 @@ trait DeleteHsmResponse extends StObject {
 }
 object DeleteHsmResponse {
   
-  @scala.inline
-  def apply(): DeleteHsmResponse = {
+  inline def apply(): DeleteHsmResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteHsmResponse]
   }
   
-  @scala.inline
-  implicit class DeleteHsmResponseMutableBuilder[Self <: DeleteHsmResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHsmResponse](x: Self) {
     
-    @scala.inline
-    def setHsmId(value: HsmId): Self = StObject.set(x, "HsmId", value.asInstanceOf[js.Any])
+    inline def setHsmId(value: HsmId): Self = StObject.set(x, "HsmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmIdUndefined: Self = StObject.set(x, "HsmId", js.undefined)
+    inline def setHsmIdUndefined: Self = StObject.set(x, "HsmId", js.undefined)
   }
 }

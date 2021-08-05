@@ -20,37 +20,27 @@ trait BooksAnnotationsRange extends StObject {
 }
 object BooksAnnotationsRange {
   
-  @scala.inline
-  def apply(): BooksAnnotationsRange = {
+  inline def apply(): BooksAnnotationsRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BooksAnnotationsRange]
   }
   
-  @scala.inline
-  implicit class BooksAnnotationsRangeMutableBuilder[Self <: BooksAnnotationsRange] (val x: Self) extends AnyVal {
+  extension [Self <: BooksAnnotationsRange](x: Self) {
     
-    @scala.inline
-    def setEndOffset(value: String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
     
-    @scala.inline
-    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setStartOffset(value: String): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: String): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
+    inline def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Diagram")
 @js.native
-class Diagram protected ()
+/* private */ class Diagram ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Diagram {
   
@@ -36,7 +36,7 @@ class Diagram protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Diagram_typekey")
   var PowerPointDotDiagram_typekey: typings.activexPowerpoint.PowerPoint.Diagram = js.native
   

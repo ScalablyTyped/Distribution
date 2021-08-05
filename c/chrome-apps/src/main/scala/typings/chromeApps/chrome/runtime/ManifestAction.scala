@@ -14,31 +14,23 @@ trait ManifestAction extends StObject {
 }
 object ManifestAction {
   
-  @scala.inline
-  def apply(): ManifestAction = {
+  inline def apply(): ManifestAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManifestAction]
   }
   
-  @scala.inline
-  implicit class ManifestActionMutableBuilder[Self <: ManifestAction] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestAction](x: Self) {
     
-    @scala.inline
-    def setDefault_icon(value: ManifestIcons): Self = StObject.set(x, "default_icon", value.asInstanceOf[js.Any])
+    inline def setDefault_icon(value: ManifestIcons): Self = StObject.set(x, "default_icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_iconUndefined: Self = StObject.set(x, "default_icon", js.undefined)
+    inline def setDefault_iconUndefined: Self = StObject.set(x, "default_icon", js.undefined)
     
-    @scala.inline
-    def setDefault_popup(value: String): Self = StObject.set(x, "default_popup", value.asInstanceOf[js.Any])
+    inline def setDefault_popup(value: String): Self = StObject.set(x, "default_popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_popupUndefined: Self = StObject.set(x, "default_popup", js.undefined)
+    inline def setDefault_popupUndefined: Self = StObject.set(x, "default_popup", js.undefined)
     
-    @scala.inline
-    def setDefault_title(value: String): Self = StObject.set(x, "default_title", value.asInstanceOf[js.Any])
+    inline def setDefault_title(value: String): Self = StObject.set(x, "default_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_titleUndefined: Self = StObject.set(x, "default_title", js.undefined)
+    inline def setDefault_titleUndefined: Self = StObject.set(x, "default_title", js.undefined)
   }
 }

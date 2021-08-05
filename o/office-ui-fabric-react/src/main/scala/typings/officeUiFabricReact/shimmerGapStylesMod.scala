@@ -12,6 +12,5 @@ object shimmerGapStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IShimmerGapStyleProps): IShimmerGapStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerGapStyles]
+  inline def getStyles(props: IShimmerGapStyleProps): IShimmerGapStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerGapStyles]
 }

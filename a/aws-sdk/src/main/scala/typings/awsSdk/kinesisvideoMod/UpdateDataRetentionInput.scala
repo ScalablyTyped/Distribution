@@ -33,8 +33,7 @@ trait UpdateDataRetentionInput extends StObject {
 }
 object UpdateDataRetentionInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentVersion: Version,
     DataRetentionChangeInHours: DataRetentionChangeInHours,
     Operation: UpdateDataRetentionOperation
@@ -43,28 +42,20 @@ object UpdateDataRetentionInput {
     __obj.asInstanceOf[UpdateDataRetentionInput]
   }
   
-  @scala.inline
-  implicit class UpdateDataRetentionInputMutableBuilder[Self <: UpdateDataRetentionInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDataRetentionInput](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRetentionChangeInHours(value: DataRetentionChangeInHours): Self = StObject.set(x, "DataRetentionChangeInHours", value.asInstanceOf[js.Any])
+    inline def setDataRetentionChangeInHours(value: DataRetentionChangeInHours): Self = StObject.set(x, "DataRetentionChangeInHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: UpdateDataRetentionOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: UpdateDataRetentionOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

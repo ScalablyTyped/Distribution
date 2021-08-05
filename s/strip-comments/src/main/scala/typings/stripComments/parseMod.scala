@@ -20,10 +20,8 @@ object parseMod {
     * @param  `input` string from which to strip comments
     * @param  `options` pass `opts.keepProtected: true` to keep ignored comments (e.g. `/ *!`)
     */
-  @scala.inline
-  def apply(input: String): Block = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Block]
-  @scala.inline
-  def apply(input: String, options: Options): Block = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Block]
+  inline def apply(input: String): Block = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Block]
+  inline def apply(input: String, options: Options): Block = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Block]
   
   @JSImport("strip-comments/lib/parse", JSImport.Namespace)
   @js.native

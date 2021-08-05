@@ -28,37 +28,27 @@ trait RightsizingRecommendationSummary extends StObject {
 }
 object RightsizingRecommendationSummary {
   
-  @scala.inline
-  def apply(): RightsizingRecommendationSummary = {
+  inline def apply(): RightsizingRecommendationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RightsizingRecommendationSummary]
   }
   
-  @scala.inline
-  implicit class RightsizingRecommendationSummaryMutableBuilder[Self <: RightsizingRecommendationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RightsizingRecommendationSummary](x: Self) {
     
-    @scala.inline
-    def setEstimatedTotalMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedTotalMonthlySavingsAmount", value.asInstanceOf[js.Any])
+    inline def setEstimatedTotalMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedTotalMonthlySavingsAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedTotalMonthlySavingsAmountUndefined: Self = StObject.set(x, "EstimatedTotalMonthlySavingsAmount", js.undefined)
+    inline def setEstimatedTotalMonthlySavingsAmountUndefined: Self = StObject.set(x, "EstimatedTotalMonthlySavingsAmount", js.undefined)
     
-    @scala.inline
-    def setSavingsCurrencyCode(value: GenericString): Self = StObject.set(x, "SavingsCurrencyCode", value.asInstanceOf[js.Any])
+    inline def setSavingsCurrencyCode(value: GenericString): Self = StObject.set(x, "SavingsCurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsCurrencyCodeUndefined: Self = StObject.set(x, "SavingsCurrencyCode", js.undefined)
+    inline def setSavingsCurrencyCodeUndefined: Self = StObject.set(x, "SavingsCurrencyCode", js.undefined)
     
-    @scala.inline
-    def setSavingsPercentage(value: GenericString): Self = StObject.set(x, "SavingsPercentage", value.asInstanceOf[js.Any])
+    inline def setSavingsPercentage(value: GenericString): Self = StObject.set(x, "SavingsPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPercentageUndefined: Self = StObject.set(x, "SavingsPercentage", js.undefined)
+    inline def setSavingsPercentageUndefined: Self = StObject.set(x, "SavingsPercentage", js.undefined)
     
-    @scala.inline
-    def setTotalRecommendationCount(value: GenericString): Self = StObject.set(x, "TotalRecommendationCount", value.asInstanceOf[js.Any])
+    inline def setTotalRecommendationCount(value: GenericString): Self = StObject.set(x, "TotalRecommendationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRecommendationCountUndefined: Self = StObject.set(x, "TotalRecommendationCount", js.undefined)
+    inline def setTotalRecommendationCountUndefined: Self = StObject.set(x, "TotalRecommendationCount", js.undefined)
   }
 }

@@ -12,8 +12,6 @@ object formatErrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatError(msg: String, req: default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatError(msg: String, req: default, err: Error): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatError(msg: String, req: default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatError(msg: String, req: default, err: Error): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(msg.asInstanceOf[js.Any], req.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[String]
 }

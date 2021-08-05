@@ -22,19 +22,15 @@ trait BasicErrorException
 }
 object BasicErrorException {
   
-  @scala.inline
-  def apply(Context: XInterface, ErrorCode: Double, ErrorMessageArgument: String, Message: String): BasicErrorException = {
+  inline def apply(Context: XInterface, ErrorCode: Double, ErrorMessageArgument: String, Message: String): BasicErrorException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorCode = ErrorCode.asInstanceOf[js.Any], ErrorMessageArgument = ErrorMessageArgument.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicErrorException]
   }
   
-  @scala.inline
-  implicit class BasicErrorExceptionMutableBuilder[Self <: BasicErrorException] (val x: Self) extends AnyVal {
+  extension [Self <: BasicErrorException](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageArgument(value: String): Self = StObject.set(x, "ErrorMessageArgument", value.asInstanceOf[js.Any])
+    inline def setErrorMessageArgument(value: String): Self = StObject.set(x, "ErrorMessageArgument", value.asInstanceOf[js.Any])
   }
 }

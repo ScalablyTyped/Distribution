@@ -19,8 +19,7 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     image: FC[js.Object],
     large: FC[js.Object],
     medium: FC[js.Object],
@@ -31,22 +30,16 @@ object Image {
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setImage(value: FC[js.Object]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: FC[js.Object]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLarge(value: FC[js.Object]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: FC[js.Object]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedium(value: FC[js.Object]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: FC[js.Object]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmall(value: FC[js.Object]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: FC[js.Object]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiny(value: FC[js.Object]): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
+    inline def setTiny(value: FC[js.Object]): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
   }
 }

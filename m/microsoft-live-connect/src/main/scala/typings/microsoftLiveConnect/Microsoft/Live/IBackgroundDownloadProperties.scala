@@ -24,22 +24,17 @@ trait IBackgroundDownloadProperties extends StObject {
 }
 object IBackgroundDownloadProperties {
   
-  @scala.inline
-  def apply(path: String): IBackgroundDownloadProperties = {
+  inline def apply(path: String): IBackgroundDownloadProperties = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundDownloadProperties]
   }
   
-  @scala.inline
-  implicit class IBackgroundDownloadPropertiesMutableBuilder[Self <: IBackgroundDownloadProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundDownloadProperties](x: Self) {
     
-    @scala.inline
-    def setFile_output(value: StorageFile): Self = StObject.set(x, "file_output", value.asInstanceOf[js.Any])
+    inline def setFile_output(value: StorageFile): Self = StObject.set(x, "file_output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_outputUndefined: Self = StObject.set(x, "file_output", js.undefined)
+    inline def setFile_outputUndefined: Self = StObject.set(x, "file_output", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

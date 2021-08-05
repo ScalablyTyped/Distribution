@@ -11,19 +11,15 @@ trait ExchangeAssignedTargetingOptionDetails extends StObject {
 }
 object ExchangeAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ExchangeAssignedTargetingOptionDetails = {
+  inline def apply(): ExchangeAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExchangeAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ExchangeAssignedTargetingOptionDetailsMutableBuilder[Self <: ExchangeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

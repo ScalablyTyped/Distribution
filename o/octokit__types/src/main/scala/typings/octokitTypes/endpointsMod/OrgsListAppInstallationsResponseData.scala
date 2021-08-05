@@ -13,22 +13,17 @@ trait OrgsListAppInstallationsResponseData extends StObject {
 }
 object OrgsListAppInstallationsResponseData {
   
-  @scala.inline
-  def apply(installations: js.Array[Permissions], total_count: Double): OrgsListAppInstallationsResponseData = {
+  inline def apply(installations: js.Array[Permissions], total_count: Double): OrgsListAppInstallationsResponseData = {
     val __obj = js.Dynamic.literal(installations = installations.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsListAppInstallationsResponseData]
   }
   
-  @scala.inline
-  implicit class OrgsListAppInstallationsResponseDataMutableBuilder[Self <: OrgsListAppInstallationsResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsListAppInstallationsResponseData](x: Self) {
     
-    @scala.inline
-    def setInstallations(value: js.Array[Permissions]): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
+    inline def setInstallations(value: js.Array[Permissions]): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationsVarargs(value: Permissions*): Self = StObject.set(x, "installations", js.Array(value :_*))
+    inline def setInstallationsVarargs(value: Permissions*): Self = StObject.set(x, "installations", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

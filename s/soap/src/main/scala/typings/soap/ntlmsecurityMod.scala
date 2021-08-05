@@ -21,7 +21,7 @@ object ntlmsecurityMod {
     @JSName("addOptions")
     def addOptions_MNTLMSecurity(options: js.Any): Unit = js.native
     
-    var defaults: js.Any = js.native
+    /* private */ var defaults: js.Any = js.native
     
     @JSName("toXML")
     def toXML_MNTLMSecurity(): String = js.native

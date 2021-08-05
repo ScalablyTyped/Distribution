@@ -37,8 +37,7 @@ object AppointmentsProvider {
   }
   object AddAppointmentOperation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appointmentInformation: Appointment,
       dismissUI: () => Unit,
       reportCanceled: () => Unit,
@@ -50,26 +49,19 @@ object AppointmentsProvider {
       __obj.asInstanceOf[AddAppointmentOperation]
     }
     
-    @scala.inline
-    implicit class AddAppointmentOperationMutableBuilder[Self <: AddAppointmentOperation] (val x: Self) extends AnyVal {
+    extension [Self <: AddAppointmentOperation](x: Self) {
       
-      @scala.inline
-      def setAppointmentInformation(value: Appointment): Self = StObject.set(x, "appointmentInformation", value.asInstanceOf[js.Any])
+      inline def setAppointmentInformation(value: Appointment): Self = StObject.set(x, "appointmentInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
+      inline def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
+      inline def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReportCompleted(value: String => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction1(value))
+      inline def setReportCompleted(value: String => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+      inline def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourcePackageFamilyName(value: String): Self = StObject.set(x, "sourcePackageFamilyName", value.asInstanceOf[js.Any])
+      inline def setSourcePackageFamilyName(value: String): Self = StObject.set(x, "sourcePackageFamilyName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +97,7 @@ object AppointmentsProvider {
   }
   object RemoveAppointmentOperation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appointmentId: String,
       dismissUI: () => Unit,
       instanceStartDate: Date,
@@ -119,29 +110,21 @@ object AppointmentsProvider {
       __obj.asInstanceOf[RemoveAppointmentOperation]
     }
     
-    @scala.inline
-    implicit class RemoveAppointmentOperationMutableBuilder[Self <: RemoveAppointmentOperation] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveAppointmentOperation](x: Self) {
       
-      @scala.inline
-      def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+      inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
+      inline def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
+      inline def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
+      inline def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
+      inline def setReportCompleted(value: () => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+      inline def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourcePackageFamilyName(value: String): Self = StObject.set(x, "sourcePackageFamilyName", value.asInstanceOf[js.Any])
+      inline def setSourcePackageFamilyName(value: String): Self = StObject.set(x, "sourcePackageFamilyName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,8 +163,7 @@ object AppointmentsProvider {
   }
   object ReplaceAppointmentOperation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appointmentId: String,
       appointmentInformation: Appointment,
       dismissUI: () => Unit,
@@ -195,32 +177,23 @@ object AppointmentsProvider {
       __obj.asInstanceOf[ReplaceAppointmentOperation]
     }
     
-    @scala.inline
-    implicit class ReplaceAppointmentOperationMutableBuilder[Self <: ReplaceAppointmentOperation] (val x: Self) extends AnyVal {
+    extension [Self <: ReplaceAppointmentOperation](x: Self) {
       
-      @scala.inline
-      def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+      inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppointmentInformation(value: Appointment): Self = StObject.set(x, "appointmentInformation", value.asInstanceOf[js.Any])
+      inline def setAppointmentInformation(value: Appointment): Self = StObject.set(x, "appointmentInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
+      inline def setDismissUI(value: () => Unit): Self = StObject.set(x, "dismissUI", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
+      inline def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
+      inline def setReportCanceled(value: () => Unit): Self = StObject.set(x, "reportCanceled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReportCompleted(value: String => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction1(value))
+      inline def setReportCompleted(value: String => Unit): Self = StObject.set(x, "reportCompleted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+      inline def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourcePackageFamilyName(value: String): Self = StObject.set(x, "sourcePackageFamilyName", value.asInstanceOf[js.Any])
+      inline def setSourcePackageFamilyName(value: String): Self = StObject.set(x, "sourcePackageFamilyName", value.asInstanceOf[js.Any])
     }
   }
 }

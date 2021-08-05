@@ -58,55 +58,39 @@ trait ParamsResourceCompaniesJobsList
 }
 object ParamsResourceCompaniesJobsList {
   
-  @scala.inline
-  def apply(): ParamsResourceCompaniesJobsList = {
+  inline def apply(): ParamsResourceCompaniesJobsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCompaniesJobsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCompaniesJobsListMutableBuilder[Self <: ParamsResourceCompaniesJobsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCompaniesJobsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
-    @scala.inline
-    def setIdsOnly(value: Boolean): Self = StObject.set(x, "idsOnly", value.asInstanceOf[js.Any])
+    inline def setIdsOnly(value: Boolean): Self = StObject.set(x, "idsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsOnlyUndefined: Self = StObject.set(x, "idsOnly", js.undefined)
+    inline def setIdsOnlyUndefined: Self = StObject.set(x, "idsOnly", js.undefined)
     
-    @scala.inline
-    def setIncludeJobsCount(value: Boolean): Self = StObject.set(x, "includeJobsCount", value.asInstanceOf[js.Any])
+    inline def setIncludeJobsCount(value: Boolean): Self = StObject.set(x, "includeJobsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeJobsCountUndefined: Self = StObject.set(x, "includeJobsCount", js.undefined)
+    inline def setIncludeJobsCountUndefined: Self = StObject.set(x, "includeJobsCount", js.undefined)
     
-    @scala.inline
-    def setJobRequisitionId(value: String): Self = StObject.set(x, "jobRequisitionId", value.asInstanceOf[js.Any])
+    inline def setJobRequisitionId(value: String): Self = StObject.set(x, "jobRequisitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobRequisitionIdUndefined: Self = StObject.set(x, "jobRequisitionId", js.undefined)
+    inline def setJobRequisitionIdUndefined: Self = StObject.set(x, "jobRequisitionId", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

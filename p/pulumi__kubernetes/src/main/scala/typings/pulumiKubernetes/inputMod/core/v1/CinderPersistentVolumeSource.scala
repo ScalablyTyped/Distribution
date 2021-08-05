@@ -32,34 +32,25 @@ trait CinderPersistentVolumeSource extends StObject {
 }
 object CinderPersistentVolumeSource {
   
-  @scala.inline
-  def apply(volumeID: Input[String]): CinderPersistentVolumeSource = {
+  inline def apply(volumeID: Input[String]): CinderPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(volumeID = volumeID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CinderPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class CinderPersistentVolumeSourceMutableBuilder[Self <: CinderPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: CinderPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
+    inline def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
     
-    @scala.inline
-    def setVolumeID(value: Input[String]): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
+    inline def setVolumeID(value: Input[String]): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
   }
 }

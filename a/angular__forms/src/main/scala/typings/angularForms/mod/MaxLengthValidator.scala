@@ -13,11 +13,11 @@ class MaxLengthValidator ()
      with Validator
      with OnChanges {
   
-  var _createValidator: js.Any = js.native
+  /* private */ var _createValidator: js.Any = js.native
   
-  var _onChange: js.Any = js.native
+  /* private */ var _onChange: js.Any = js.native
   
-  var _validator: js.Any = js.native
+  /* private */ var _validator: js.Any = js.native
   
   /**
     * @description

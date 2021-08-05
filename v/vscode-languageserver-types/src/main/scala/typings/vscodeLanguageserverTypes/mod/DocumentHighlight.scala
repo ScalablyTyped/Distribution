@@ -18,8 +18,7 @@ trait DocumentHighlight extends StObject {
 }
 object DocumentHighlight {
   
-  @scala.inline
-  def apply(range: Range): DocumentHighlight = {
+  inline def apply(range: Range): DocumentHighlight = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentHighlight]
   }
@@ -32,21 +31,15 @@ object DocumentHighlight {
     * Create a DocumentHighlight object.
     * @param range The range the highlight applies to.
     */
-  @scala.inline
-  def create(range: Range): DocumentHighlight = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[DocumentHighlight]
-  @scala.inline
-  def create(range: Range, kind: DocumentHighlightKind): DocumentHighlight = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DocumentHighlight]
+  inline def create(range: Range): DocumentHighlight = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[DocumentHighlight]
+  inline def create(range: Range, kind: DocumentHighlightKind): DocumentHighlight = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DocumentHighlight]
   
-  @scala.inline
-  implicit class DocumentHighlightMutableBuilder[Self <: DocumentHighlight] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHighlight](x: Self) {
     
-    @scala.inline
-    def setKind(value: DocumentHighlightKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: DocumentHighlightKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

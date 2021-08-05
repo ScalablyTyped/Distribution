@@ -47,8 +47,7 @@ trait CoordinateRegion extends StObject {
 }
 object CoordinateRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     center: Coordinate,
     copy: () => CoordinateRegion,
     equals_ : CoordinateRegion => Boolean,
@@ -62,28 +61,20 @@ object CoordinateRegion {
     __obj.asInstanceOf[CoordinateRegion]
   }
   
-  @scala.inline
-  implicit class CoordinateRegionMutableBuilder[Self <: CoordinateRegion] (val x: Self) extends AnyVal {
+  extension [Self <: CoordinateRegion](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => CoordinateRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => CoordinateRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEquals_(value: CoordinateRegion => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: CoordinateRegion => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpan(value: CoordinateSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: CoordinateSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToBoundingRegion(value: () => BoundingRegion): Self = StObject.set(x, "toBoundingRegion", js.Any.fromFunction0(value))
+    inline def setToBoundingRegion(value: () => BoundingRegion): Self = StObject.set(x, "toBoundingRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToMapRect(value: () => MapRect): Self = StObject.set(x, "toMapRect", js.Any.fromFunction0(value))
+    inline def setToMapRect(value: () => MapRect): Self = StObject.set(x, "toMapRect", js.Any.fromFunction0(value))
   }
 }

@@ -18,28 +18,21 @@ trait SearchLocalGatewayRoutesResult extends StObject {
 }
 object SearchLocalGatewayRoutesResult {
   
-  @scala.inline
-  def apply(): SearchLocalGatewayRoutesResult = {
+  inline def apply(): SearchLocalGatewayRoutesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchLocalGatewayRoutesResult]
   }
   
-  @scala.inline
-  implicit class SearchLocalGatewayRoutesResultMutableBuilder[Self <: SearchLocalGatewayRoutesResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchLocalGatewayRoutesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: LocalGatewayRouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: LocalGatewayRouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
-    @scala.inline
-    def setRoutesVarargs(value: LocalGatewayRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: LocalGatewayRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
   }
 }

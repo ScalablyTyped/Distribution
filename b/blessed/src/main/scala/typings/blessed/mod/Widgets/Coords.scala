@@ -31,8 +31,7 @@ trait Coords extends StObject {
 }
 object Coords {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _contentEnd: X,
     base: Double,
     nobot: TPosition,
@@ -48,37 +47,26 @@ object Coords {
     __obj.asInstanceOf[Coords]
   }
   
-  @scala.inline
-  implicit class CoordsMutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
+  extension [Self <: Coords](x: Self) {
     
-    @scala.inline
-    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNobot(value: TPosition): Self = StObject.set(x, "nobot", value.asInstanceOf[js.Any])
+    inline def setNobot(value: TPosition): Self = StObject.set(x, "nobot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoleft(value: TTopLeft): Self = StObject.set(x, "noleft", value.asInstanceOf[js.Any])
+    inline def setNoleft(value: TTopLeft): Self = StObject.set(x, "noleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoright(value: TPosition): Self = StObject.set(x, "noright", value.asInstanceOf[js.Any])
+    inline def setNoright(value: TPosition): Self = StObject.set(x, "noright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotop(value: TTopLeft): Self = StObject.set(x, "notop", value.asInstanceOf[js.Any])
+    inline def setNotop(value: TTopLeft): Self = StObject.set(x, "notop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXi(value: Double): Self = StObject.set(x, "xi", value.asInstanceOf[js.Any])
+    inline def setXi(value: Double): Self = StObject.set(x, "xi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+    inline def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYi(value: Double): Self = StObject.set(x, "yi", value.asInstanceOf[js.Any])
+    inline def setYi(value: Double): Self = StObject.set(x, "yi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYl(value: Double): Self = StObject.set(x, "yl", value.asInstanceOf[js.Any])
+    inline def setYl(value: Double): Self = StObject.set(x, "yl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_contentEnd(value: X): Self = StObject.set(x, "_contentEnd", value.asInstanceOf[js.Any])
+    inline def set_contentEnd(value: X): Self = StObject.set(x, "_contentEnd", value.asInstanceOf[js.Any])
   }
 }

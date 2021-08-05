@@ -19,8 +19,7 @@ trait XWindowListener2
 }
 object XWindowListener2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -36,13 +35,10 @@ object XWindowListener2 {
     __obj.asInstanceOf[XWindowListener2]
   }
   
-  @scala.inline
-  implicit class XWindowListener2MutableBuilder[Self <: XWindowListener2] (val x: Self) extends AnyVal {
+  extension [Self <: XWindowListener2](x: Self) {
     
-    @scala.inline
-    def setWindowDisabled(value: EventObject => Unit): Self = StObject.set(x, "windowDisabled", js.Any.fromFunction1(value))
+    inline def setWindowDisabled(value: EventObject => Unit): Self = StObject.set(x, "windowDisabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindowEnabled(value: EventObject => Unit): Self = StObject.set(x, "windowEnabled", js.Any.fromFunction1(value))
+    inline def setWindowEnabled(value: EventObject => Unit): Self = StObject.set(x, "windowEnabled", js.Any.fromFunction1(value))
   }
 }

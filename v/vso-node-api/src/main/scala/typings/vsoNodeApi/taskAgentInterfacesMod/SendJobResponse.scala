@@ -13,19 +13,15 @@ trait SendJobResponse extends StObject {
 }
 object SendJobResponse {
   
-  @scala.inline
-  def apply(events: JobEventsConfig, variables: StringDictionary[String]): SendJobResponse = {
+  inline def apply(events: JobEventsConfig, variables: StringDictionary[String]): SendJobResponse = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendJobResponse]
   }
   
-  @scala.inline
-  implicit class SendJobResponseMutableBuilder[Self <: SendJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendJobResponse](x: Self) {
     
-    @scala.inline
-    def setEvents(value: JobEventsConfig): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: JobEventsConfig): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

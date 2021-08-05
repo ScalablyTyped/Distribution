@@ -183,7 +183,7 @@ trait ShapeNodes extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.ShapeNodes_typekey")
+  /* private */ @JSName("PowerPoint.ShapeNodes_typekey")
   var PowerPointDotShapeNodes_typekey: ShapeNodes = js.native
   
   def SetEditingType(Index: Double, EditingType: MsoEditingType): Unit = js.native

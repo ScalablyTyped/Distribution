@@ -13,16 +13,13 @@ trait UserPoolAddOnsType extends StObject {
 }
 object UserPoolAddOnsType {
   
-  @scala.inline
-  def apply(AdvancedSecurityMode: AdvancedSecurityModeType): UserPoolAddOnsType = {
+  inline def apply(AdvancedSecurityMode: AdvancedSecurityModeType): UserPoolAddOnsType = {
     val __obj = js.Dynamic.literal(AdvancedSecurityMode = AdvancedSecurityMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolAddOnsType]
   }
   
-  @scala.inline
-  implicit class UserPoolAddOnsTypeMutableBuilder[Self <: UserPoolAddOnsType] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolAddOnsType](x: Self) {
     
-    @scala.inline
-    def setAdvancedSecurityMode(value: AdvancedSecurityModeType): Self = StObject.set(x, "AdvancedSecurityMode", value.asInstanceOf[js.Any])
+    inline def setAdvancedSecurityMode(value: AdvancedSecurityModeType): Self = StObject.set(x, "AdvancedSecurityMode", value.asInstanceOf[js.Any])
   }
 }

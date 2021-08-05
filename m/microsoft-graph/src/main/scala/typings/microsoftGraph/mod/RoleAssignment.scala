@@ -22,52 +22,37 @@ trait RoleAssignment
 }
 object RoleAssignment {
   
-  @scala.inline
-  def apply(): RoleAssignment = {
+  inline def apply(): RoleAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoleAssignment]
   }
   
-  @scala.inline
-  implicit class RoleAssignmentMutableBuilder[Self <: RoleAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: RoleAssignment](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setResourceScopes(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "resourceScopes", value.asInstanceOf[js.Any])
+    inline def setResourceScopes(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "resourceScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceScopesNull: Self = StObject.set(x, "resourceScopes", null)
+    inline def setResourceScopesNull: Self = StObject.set(x, "resourceScopes", null)
     
-    @scala.inline
-    def setResourceScopesUndefined: Self = StObject.set(x, "resourceScopes", js.undefined)
+    inline def setResourceScopesUndefined: Self = StObject.set(x, "resourceScopes", js.undefined)
     
-    @scala.inline
-    def setResourceScopesVarargs(value: String*): Self = StObject.set(x, "resourceScopes", js.Array(value :_*))
+    inline def setResourceScopesVarargs(value: String*): Self = StObject.set(x, "resourceScopes", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleDefinition(value: NullableOption[RoleDefinition]): Self = StObject.set(x, "roleDefinition", value.asInstanceOf[js.Any])
+    inline def setRoleDefinition(value: NullableOption[RoleDefinition]): Self = StObject.set(x, "roleDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleDefinitionNull: Self = StObject.set(x, "roleDefinition", null)
+    inline def setRoleDefinitionNull: Self = StObject.set(x, "roleDefinition", null)
     
-    @scala.inline
-    def setRoleDefinitionUndefined: Self = StObject.set(x, "roleDefinition", js.undefined)
+    inline def setRoleDefinitionUndefined: Self = StObject.set(x, "roleDefinition", js.undefined)
   }
 }

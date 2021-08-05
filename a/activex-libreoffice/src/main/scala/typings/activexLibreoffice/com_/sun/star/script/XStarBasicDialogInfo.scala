@@ -29,8 +29,7 @@ trait XStarBasicDialogInfo
 }
 object XStarBasicDialogInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Data: SafeArray[Double],
     Name: String,
     acquire: () => Unit,
@@ -43,19 +42,14 @@ object XStarBasicDialogInfo {
     __obj.asInstanceOf[XStarBasicDialogInfo]
   }
   
-  @scala.inline
-  implicit class XStarBasicDialogInfoMutableBuilder[Self <: XStarBasicDialogInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XStarBasicDialogInfo](x: Self) {
     
-    @scala.inline
-    def setData(value: SafeArray[Double]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: SafeArray[Double]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetData(value: () => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -17,34 +17,25 @@ trait GoogleCloudDatalabelingV1beta1EventConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1EventConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1EventConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1EventConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EventConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1EventConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EventConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1EventConfig](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSets(value: js.Array[String]): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSets(value: js.Array[String]): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetsUndefined: Self = StObject.set(x, "annotationSpecSets", js.undefined)
+    inline def setAnnotationSpecSetsUndefined: Self = StObject.set(x, "annotationSpecSets", js.undefined)
     
-    @scala.inline
-    def setAnnotationSpecSetsVarargs(value: String*): Self = StObject.set(x, "annotationSpecSets", js.Array(value :_*))
+    inline def setAnnotationSpecSetsVarargs(value: String*): Self = StObject.set(x, "annotationSpecSets", js.Array(value :_*))
     
-    @scala.inline
-    def setClipLength(value: Double): Self = StObject.set(x, "clipLength", value.asInstanceOf[js.Any])
+    inline def setClipLength(value: Double): Self = StObject.set(x, "clipLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipLengthUndefined: Self = StObject.set(x, "clipLength", js.undefined)
+    inline def setClipLengthUndefined: Self = StObject.set(x, "clipLength", js.undefined)
     
-    @scala.inline
-    def setOverlapLength(value: Double): Self = StObject.set(x, "overlapLength", value.asInstanceOf[js.Any])
+    inline def setOverlapLength(value: Double): Self = StObject.set(x, "overlapLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlapLengthUndefined: Self = StObject.set(x, "overlapLength", js.undefined)
+    inline def setOverlapLengthUndefined: Self = StObject.set(x, "overlapLength", js.undefined)
   }
 }

@@ -19,22 +19,17 @@ object SkeletonJson {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def blendModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.BlendMode = ^.asInstanceOf[js.Dynamic].applyDynamic("blendModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.BlendMode]
+  inline def blendModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.BlendMode = ^.asInstanceOf[js.Dynamic].applyDynamic("blendModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.BlendMode]
   
   /* static member */
-  @scala.inline
-  def positionModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.PositionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("positionModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.PositionMode]
+  inline def positionModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.PositionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("positionModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.PositionMode]
   
   /* static member */
-  @scala.inline
-  def rotateModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.RotateMode = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.RotateMode]
+  inline def rotateModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.RotateMode = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.RotateMode]
   
   /* static member */
-  @scala.inline
-  def spacingModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.SpacingMode = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.SpacingMode]
+  inline def spacingModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.SpacingMode = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.SpacingMode]
   
   /* static member */
-  @scala.inline
-  def transformModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.TransformMode = ^.asInstanceOf[js.Dynamic].applyDynamic("transformModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.TransformMode]
+  inline def transformModeFromString(str: String): typings.pixiSpine.PIXI.spine.core.TransformMode = ^.asInstanceOf[js.Dynamic].applyDynamic("transformModeFromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.TransformMode]
 }

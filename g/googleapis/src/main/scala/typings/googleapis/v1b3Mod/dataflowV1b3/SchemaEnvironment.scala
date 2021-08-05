@@ -91,91 +91,63 @@ trait SchemaEnvironment extends StObject {
 }
 object SchemaEnvironment {
   
-  @scala.inline
-  def apply(): SchemaEnvironment = {
+  inline def apply(): SchemaEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnvironment]
   }
   
-  @scala.inline
-  implicit class SchemaEnvironmentMutableBuilder[Self <: SchemaEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnvironment](x: Self) {
     
-    @scala.inline
-    def setClusterManagerApiService(value: String): Self = StObject.set(x, "clusterManagerApiService", value.asInstanceOf[js.Any])
+    inline def setClusterManagerApiService(value: String): Self = StObject.set(x, "clusterManagerApiService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterManagerApiServiceUndefined: Self = StObject.set(x, "clusterManagerApiService", js.undefined)
+    inline def setClusterManagerApiServiceUndefined: Self = StObject.set(x, "clusterManagerApiService", js.undefined)
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setExperiments(value: js.Array[String]): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
+    inline def setExperiments(value: js.Array[String]): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentsUndefined: Self = StObject.set(x, "experiments", js.undefined)
+    inline def setExperimentsUndefined: Self = StObject.set(x, "experiments", js.undefined)
     
-    @scala.inline
-    def setExperimentsVarargs(value: String*): Self = StObject.set(x, "experiments", js.Array(value :_*))
+    inline def setExperimentsVarargs(value: String*): Self = StObject.set(x, "experiments", js.Array(value :_*))
     
-    @scala.inline
-    def setFlexResourceSchedulingGoal(value: String): Self = StObject.set(x, "flexResourceSchedulingGoal", value.asInstanceOf[js.Any])
+    inline def setFlexResourceSchedulingGoal(value: String): Self = StObject.set(x, "flexResourceSchedulingGoal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexResourceSchedulingGoalUndefined: Self = StObject.set(x, "flexResourceSchedulingGoal", js.undefined)
+    inline def setFlexResourceSchedulingGoalUndefined: Self = StObject.set(x, "flexResourceSchedulingGoal", js.undefined)
     
-    @scala.inline
-    def setInternalExperiments(value: StringDictionary[js.Any]): Self = StObject.set(x, "internalExperiments", value.asInstanceOf[js.Any])
+    inline def setInternalExperiments(value: StringDictionary[js.Any]): Self = StObject.set(x, "internalExperiments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalExperimentsUndefined: Self = StObject.set(x, "internalExperiments", js.undefined)
+    inline def setInternalExperimentsUndefined: Self = StObject.set(x, "internalExperiments", js.undefined)
     
-    @scala.inline
-    def setSdkPipelineOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "sdkPipelineOptions", value.asInstanceOf[js.Any])
+    inline def setSdkPipelineOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "sdkPipelineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkPipelineOptionsUndefined: Self = StObject.set(x, "sdkPipelineOptions", js.undefined)
+    inline def setSdkPipelineOptionsUndefined: Self = StObject.set(x, "sdkPipelineOptions", js.undefined)
     
-    @scala.inline
-    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+    inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+    inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     
-    @scala.inline
-    def setServiceKmsKeyName(value: String): Self = StObject.set(x, "serviceKmsKeyName", value.asInstanceOf[js.Any])
+    inline def setServiceKmsKeyName(value: String): Self = StObject.set(x, "serviceKmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceKmsKeyNameUndefined: Self = StObject.set(x, "serviceKmsKeyName", js.undefined)
+    inline def setServiceKmsKeyNameUndefined: Self = StObject.set(x, "serviceKmsKeyName", js.undefined)
     
-    @scala.inline
-    def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
+    inline def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
+    inline def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
     
-    @scala.inline
-    def setUserAgent(value: StringDictionary[js.Any]): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: StringDictionary[js.Any]): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+    inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     
-    @scala.inline
-    def setVersion(value: StringDictionary[js.Any]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: StringDictionary[js.Any]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setWorkerPools(value: js.Array[SchemaWorkerPool]): Self = StObject.set(x, "workerPools", value.asInstanceOf[js.Any])
+    inline def setWorkerPools(value: js.Array[SchemaWorkerPool]): Self = StObject.set(x, "workerPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
+    inline def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
     
-    @scala.inline
-    def setWorkerPoolsVarargs(value: SchemaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
+    inline def setWorkerPoolsVarargs(value: SchemaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
   }
 }

@@ -12,6 +12,5 @@ object shimmerElementsGroupStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IShimmerElementsGroupStyleProps): IShimmerElementsGroupStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerElementsGroupStyles]
+  inline def getStyles(props: IShimmerElementsGroupStyleProps): IShimmerElementsGroupStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerElementsGroupStyles]
 }

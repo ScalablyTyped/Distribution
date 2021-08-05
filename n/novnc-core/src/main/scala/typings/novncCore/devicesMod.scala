@@ -71,32 +71,24 @@ object devicesMod {
   }
   object NvKeyboardDefaults {
     
-    @scala.inline
-    def apply(): NvKeyboardDefaults = {
+    inline def apply(): NvKeyboardDefaults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NvKeyboardDefaults]
     }
     
-    @scala.inline
-    implicit class NvKeyboardDefaultsMutableBuilder[Self <: NvKeyboardDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: NvKeyboardDefaults](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+      inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
       
-      @scala.inline
-      def setOnKeyPress(value: (/* keysym */ String, /* code */ Double, /* down */ Boolean) => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction3(value))
+      inline def setOnKeyPress(value: (/* keysym */ String, /* code */ Double, /* down */ Boolean) => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -116,44 +108,32 @@ object devicesMod {
   }
   object NvMouseDefaults {
     
-    @scala.inline
-    def apply(): NvMouseDefaults = {
+    inline def apply(): NvMouseDefaults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NvMouseDefaults]
     }
     
-    @scala.inline
-    implicit class NvMouseDefaultsMutableBuilder[Self <: NvMouseDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: NvMouseDefaults](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+      inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
       
-      @scala.inline
-      def setOnMouseButton(value: (/* x */ Double, /* y */ Double, /* down */ Boolean, /* bmask */ Double) => Unit): Self = StObject.set(x, "onMouseButton", js.Any.fromFunction4(value))
+      inline def setOnMouseButton(value: (/* x */ Double, /* y */ Double, /* down */ Boolean, /* bmask */ Double) => Unit): Self = StObject.set(x, "onMouseButton", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnMouseButtonUndefined: Self = StObject.set(x, "onMouseButton", js.undefined)
+      inline def setOnMouseButtonUndefined: Self = StObject.set(x, "onMouseButton", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: (/* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction2(value))
+      inline def setOnMouseMove(value: (/* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTouchButton(value: Double): Self = StObject.set(x, "touchButton", value.asInstanceOf[js.Any])
+      inline def setTouchButton(value: Double): Self = StObject.set(x, "touchButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchButtonUndefined: Self = StObject.set(x, "touchButton", js.undefined)
+      inline def setTouchButtonUndefined: Self = StObject.set(x, "touchButton", js.undefined)
     }
   }
 }

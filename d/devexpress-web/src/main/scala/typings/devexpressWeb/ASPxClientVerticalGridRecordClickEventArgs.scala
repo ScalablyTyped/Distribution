@@ -23,19 +23,15 @@ trait ASPxClientVerticalGridRecordClickEventArgs
 }
 object ASPxClientVerticalGridRecordClickEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Any, visibleIndex: Double): ASPxClientVerticalGridRecordClickEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: js.Any, visibleIndex: Double): ASPxClientVerticalGridRecordClickEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridRecordClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridRecordClickEventArgsMutableBuilder[Self <: ASPxClientVerticalGridRecordClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridRecordClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

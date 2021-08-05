@@ -17,8 +17,7 @@ trait TypeofappDefinition extends StObject {
 }
 object TypeofappDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapAppDefinition: (AxiosInstance, AppDefinitionProps) => AppDefinition,
     wrapAppDefinitionCollection: (AxiosInstance, CollectionProp[AppDefinitionProps]) => Collection[AppDefinition, AppDefinitionProps]
   ): TypeofappDefinition = {
@@ -26,14 +25,11 @@ object TypeofappDefinition {
     __obj.asInstanceOf[TypeofappDefinition]
   }
   
-  @scala.inline
-  implicit class TypeofappDefinitionMutableBuilder[Self <: TypeofappDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofappDefinition](x: Self) {
     
-    @scala.inline
-    def setWrapAppDefinition(value: (AxiosInstance, AppDefinitionProps) => AppDefinition): Self = StObject.set(x, "wrapAppDefinition", js.Any.fromFunction2(value))
+    inline def setWrapAppDefinition(value: (AxiosInstance, AppDefinitionProps) => AppDefinition): Self = StObject.set(x, "wrapAppDefinition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapAppDefinitionCollection(
+    inline def setWrapAppDefinitionCollection(
       value: (AxiosInstance, CollectionProp[AppDefinitionProps]) => Collection[AppDefinition, AppDefinitionProps]
     ): Self = StObject.set(x, "wrapAppDefinitionCollection", js.Any.fromFunction2(value))
   }

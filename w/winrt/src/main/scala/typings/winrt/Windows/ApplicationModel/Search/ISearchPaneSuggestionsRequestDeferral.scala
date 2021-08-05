@@ -10,16 +10,13 @@ trait ISearchPaneSuggestionsRequestDeferral extends StObject {
 }
 object ISearchPaneSuggestionsRequestDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): ISearchPaneSuggestionsRequestDeferral = {
+  inline def apply(complete: () => Unit): ISearchPaneSuggestionsRequestDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[ISearchPaneSuggestionsRequestDeferral]
   }
   
-  @scala.inline
-  implicit class ISearchPaneSuggestionsRequestDeferralMutableBuilder[Self <: ISearchPaneSuggestionsRequestDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchPaneSuggestionsRequestDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

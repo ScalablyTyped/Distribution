@@ -15,28 +15,21 @@ trait ReservationsScopedList extends StObject {
 }
 object ReservationsScopedList {
   
-  @scala.inline
-  def apply(): ReservationsScopedList = {
+  inline def apply(): ReservationsScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservationsScopedList]
   }
   
-  @scala.inline
-  implicit class ReservationsScopedListMutableBuilder[Self <: ReservationsScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationsScopedList](x: Self) {
     
-    @scala.inline
-    def setReservations(value: js.Array[Reservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
+    inline def setReservations(value: js.Array[Reservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
+    inline def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
-    @scala.inline
-    def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: Reservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

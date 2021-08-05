@@ -18,28 +18,21 @@ trait GetAuthCodeOptions
 }
 object GetAuthCodeOptions {
   
-  @scala.inline
-  def apply(): GetAuthCodeOptions = {
+  inline def apply(): GetAuthCodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAuthCodeOptions]
   }
   
-  @scala.inline
-  implicit class GetAuthCodeOptionsMutableBuilder[Self <: GetAuthCodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthCodeOptions](x: Self) {
     
-    @scala.inline
-    def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ AuthCode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ AuthCode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

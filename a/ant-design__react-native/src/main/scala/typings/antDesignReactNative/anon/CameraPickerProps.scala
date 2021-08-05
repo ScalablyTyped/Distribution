@@ -12,19 +12,15 @@ trait CameraPickerProps extends StObject {
 }
 object CameraPickerProps {
   
-  @scala.inline
-  def apply(cancelText: String, title: String): CameraPickerProps = {
+  inline def apply(cancelText: String, title: String): CameraPickerProps = {
     val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraPickerProps]
   }
   
-  @scala.inline
-  implicit class CameraPickerPropsMutableBuilder[Self <: CameraPickerProps] (val x: Self) extends AnyVal {
+  extension [Self <: CameraPickerProps](x: Self) {
     
-    @scala.inline
-    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

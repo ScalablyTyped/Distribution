@@ -17,19 +17,15 @@ trait ChartLegendEntryUpdateData extends StObject {
 }
 object ChartLegendEntryUpdateData {
   
-  @scala.inline
-  def apply(): ChartLegendEntryUpdateData = {
+  inline def apply(): ChartLegendEntryUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartLegendEntryUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartLegendEntryUpdateDataMutableBuilder[Self <: ChartLegendEntryUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartLegendEntryUpdateData](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

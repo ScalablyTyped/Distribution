@@ -33,28 +33,21 @@ trait SvnMappingDetails extends StObject {
 }
 object SvnMappingDetails {
   
-  @scala.inline
-  def apply(depth: Double, ignoreExternals: Boolean, localPath: String, revision: String, serverPath: String): SvnMappingDetails = {
+  inline def apply(depth: Double, ignoreExternals: Boolean, localPath: String, revision: String, serverPath: String): SvnMappingDetails = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], ignoreExternals = ignoreExternals.asInstanceOf[js.Any], localPath = localPath.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], serverPath = serverPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvnMappingDetails]
   }
   
-  @scala.inline
-  implicit class SvnMappingDetailsMutableBuilder[Self <: SvnMappingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SvnMappingDetails](x: Self) {
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreExternals(value: Boolean): Self = StObject.set(x, "ignoreExternals", value.asInstanceOf[js.Any])
+    inline def setIgnoreExternals(value: Boolean): Self = StObject.set(x, "ignoreExternals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPath(value: String): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
+    inline def setLocalPath(value: String): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
+    inline def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
   }
 }

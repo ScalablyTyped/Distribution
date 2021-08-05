@@ -41,8 +41,7 @@ trait TableSortDescriptor
 }
 object TableSortDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CollatorAlgorithm: String,
     CollatorLocale: Locale,
     ContainsHeader: Boolean,
@@ -68,19 +67,14 @@ object TableSortDescriptor {
     __obj.asInstanceOf[TableSortDescriptor]
   }
   
-  @scala.inline
-  implicit class TableSortDescriptorMutableBuilder[Self <: TableSortDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: TableSortDescriptor](x: Self) {
     
-    @scala.inline
-    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
+    inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFieldCount(value: Double): Self = StObject.set(x, "MaxFieldCount", value.asInstanceOf[js.Any])
+    inline def setMaxFieldCount(value: Double): Self = StObject.set(x, "MaxFieldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: TableOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: TableOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortFields(value: SafeArray[SortField]): Self = StObject.set(x, "SortFields", value.asInstanceOf[js.Any])
+    inline def setSortFields(value: SafeArray[SortField]): Self = StObject.set(x, "SortFields", value.asInstanceOf[js.Any])
   }
 }

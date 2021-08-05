@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "NativeObject")
 @js.native
-class NativeObject protected () extends StObject {
-  protected def this(properties: StringDictionary[js.Any]) = this()
+/* protected */ class NativeObject () extends StObject {
+  /* protected */ def this(properties: StringDictionary[js.Any]) = this()
   
-  @JSName("$getProperty")
-  /* private */ def $getProperty(name: String): js.Any = js.native
+  /* private */ @JSName("$getProperty")
+  def $getProperty(name: String): js.Any = js.native
   
-  @JSName("$getPropertyGetter")
-  /* private */ def $getPropertyGetter(propertyName: String): js.Any = js.native
+  /* private */ @JSName("$getPropertyGetter")
+  def $getPropertyGetter(propertyName: String): js.Any = js.native
   
-  @JSName("$getPropertySetter")
-  /* private */ def $getPropertySetter(propertyName: String): js.Any = js.native
+  /* private */ @JSName("$getPropertySetter")
+  def $getPropertySetter(propertyName: String): js.Any = js.native
   
-  @JSName("$props")
+  /* private */ @JSName("$props")
   var $props: js.Any = js.native
   
-  @JSName("$setProperty")
-  /* private */ def $setProperty(name: String, value: js.Any): Unit = js.native
+  /* private */ @JSName("$setProperty")
+  def $setProperty(name: String, value: js.Any): Unit = js.native
   
-  @JSName("$trigger")
-  /* private */ def $trigger(eventType: String): Unit = js.native
-  @JSName("$trigger")
-  /* private */ def $trigger(eventType: String, eventData: js.Object): Unit = js.native
+  /* private */ @JSName("$trigger")
+  def $trigger(eventType: String): Unit = js.native
+  /* private */ @JSName("$trigger")
+  def $trigger(eventType: String, eventData: js.Object): Unit = js.native
   
   /**
     * A helper function that throws if the instance has already been marked as disposed.
@@ -101,7 +101,7 @@ class NativeObject protected () extends StObject {
     */
   /* protected */ def _getXMLHeader(hasChild: Boolean): String = js.native
   
-  var _isDisposed: js.UndefOr[`true`] = js.native
+  /* protected */ var _isDisposed: js.UndefOr[`true`] = js.native
   
   /**
     * Returns `true` if there is currently one or more listeners registers for the given event type.
@@ -367,23 +367,16 @@ object NativeObject {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defineChangeEvent(target: js.Object, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineChangeEvent")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineChangeEvent(target: js.Object, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineChangeEvent")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def defineEvent(target: js.Object, eventType: String, definition: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEvent")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineEvent(target: js.Object, eventType: String, definition: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEvent")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def defineEvents(target: js.Object, definitions: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEvents")(target.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineEvents(target: js.Object, definitions: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEvents")(target.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def defineProperties(target: js.Object, definitions: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperties")(target.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperties(target: js.Object, definitions: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperties")(target.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def defineProperty(target: js.Object, propertyName: String, definition: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineProperty(target: js.Object, propertyName: String, definition: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def extend(nativeType: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(nativeType.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  @scala.inline
-  def extend(nativeType: String, superType: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(nativeType.asInstanceOf[js.Any], superType.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def extend(nativeType: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(nativeType.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def extend(nativeType: String, superType: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(nativeType.asInstanceOf[js.Any], superType.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 }

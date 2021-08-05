@@ -16,8 +16,7 @@ trait TableConditionalEntry
      with XSheetConditionalEntry
 object TableConditionalEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Formula1: String,
     Formula2: String,
     Operator: ConditionOperator,

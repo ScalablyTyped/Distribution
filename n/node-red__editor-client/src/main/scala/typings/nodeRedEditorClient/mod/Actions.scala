@@ -19,8 +19,7 @@ trait Actions extends StObject {
 }
 object Actions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, js.Function0[Unit]) => Unit,
     get: String => js.Function0[Unit],
     invoke: (String, js.Any) => Unit,
@@ -31,22 +30,16 @@ object Actions {
     __obj.asInstanceOf[Actions]
   }
   
-  @scala.inline
-  implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+  extension [Self <: Actions](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGet(value: String => js.Function0[Unit]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Function0[Unit]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInvoke(value: (String, js.Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+    inline def setInvoke(value: (String, js.Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setList(value: () => js.Array[Id]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => js.Array[Id]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

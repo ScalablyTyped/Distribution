@@ -12,19 +12,15 @@ trait InsightsServicePostResponseImpressions extends StObject {
 }
 object InsightsServicePostResponseImpressions {
   
-  @scala.inline
-  def apply(surfaces: InsightsServicePostResponseSurfaces, value: Double): InsightsServicePostResponseImpressions = {
+  inline def apply(surfaces: InsightsServicePostResponseSurfaces, value: Double): InsightsServicePostResponseImpressions = {
     val __obj = js.Dynamic.literal(surfaces = surfaces.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseImpressions]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseImpressionsMutableBuilder[Self <: InsightsServicePostResponseImpressions] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseImpressions](x: Self) {
     
-    @scala.inline
-    def setSurfaces(value: InsightsServicePostResponseSurfaces): Self = StObject.set(x, "surfaces", value.asInstanceOf[js.Any])
+    inline def setSurfaces(value: InsightsServicePostResponseSurfaces): Self = StObject.set(x, "surfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

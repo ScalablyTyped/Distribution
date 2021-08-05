@@ -33,25 +33,19 @@ trait SchemaUpdatePhotoRequest extends StObject {
 }
 object SchemaUpdatePhotoRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdatePhotoRequest = {
+  inline def apply(): SchemaUpdatePhotoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdatePhotoRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdatePhotoRequestMutableBuilder[Self <: SchemaUpdatePhotoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdatePhotoRequest](x: Self) {
     
-    @scala.inline
-    def setPhoto(value: SchemaPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    inline def setPhoto(value: SchemaPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

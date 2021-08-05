@@ -15,20 +15,16 @@ trait Format[PubF /* <: KeyFormat */] extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply[PubF /* <: KeyFormat */](format: PubF, `type`: pkcs1 | spki): Format[PubF] = {
+  inline def apply[PubF /* <: KeyFormat */](format: PubF, `type`: pkcs1 | spki): Format[PubF] = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format[PubF]]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format[?], PubF /* <: KeyFormat */] (val x: Self & Format[PubF]) extends AnyVal {
+  extension [Self <: Format[?], PubF /* <: KeyFormat */](x: Self & Format[PubF]) {
     
-    @scala.inline
-    def setFormat(value: PubF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PubF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: pkcs1 | spki): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pkcs1 | spki): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

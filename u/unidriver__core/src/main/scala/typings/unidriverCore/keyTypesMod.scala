@@ -11,15 +11,13 @@ object keyTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAllNonTextKeyTypes(): js.Array[
+  inline def getAllNonTextKeyTypes(): js.Array[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllNonTextKeyTypes")().asInstanceOf[js.Array[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ js.Any
   ]]
   
-  @scala.inline
-  def getDefinitionForKeyType(keyType: KeyDefinitionType): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefinitionForKeyType")(keyType.asInstanceOf[js.Any]).asInstanceOf[Key]
+  inline def getDefinitionForKeyType(keyType: KeyDefinitionType): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefinitionForKeyType")(keyType.asInstanceOf[js.Any]).asInstanceOf[Key]
   
   /* keyof @unidriver/core.anon. */ /* Rewritten from type alias, can be one of: 
     - typings.unidriverCore.unidriverCoreStrings.`0`

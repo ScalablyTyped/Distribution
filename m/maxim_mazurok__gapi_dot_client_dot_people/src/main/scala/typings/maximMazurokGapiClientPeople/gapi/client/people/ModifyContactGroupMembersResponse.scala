@@ -14,31 +14,23 @@ trait ModifyContactGroupMembersResponse extends StObject {
 }
 object ModifyContactGroupMembersResponse {
   
-  @scala.inline
-  def apply(): ModifyContactGroupMembersResponse = {
+  inline def apply(): ModifyContactGroupMembersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyContactGroupMembersResponse]
   }
   
-  @scala.inline
-  implicit class ModifyContactGroupMembersResponseMutableBuilder[Self <: ModifyContactGroupMembersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyContactGroupMembersResponse](x: Self) {
     
-    @scala.inline
-    def setCanNotRemoveLastContactGroupResourceNames(value: js.Array[String]): Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", value.asInstanceOf[js.Any])
+    inline def setCanNotRemoveLastContactGroupResourceNames(value: js.Array[String]): Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanNotRemoveLastContactGroupResourceNamesUndefined: Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", js.undefined)
+    inline def setCanNotRemoveLastContactGroupResourceNamesUndefined: Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", js.undefined)
     
-    @scala.inline
-    def setCanNotRemoveLastContactGroupResourceNamesVarargs(value: String*): Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", js.Array(value :_*))
+    inline def setCanNotRemoveLastContactGroupResourceNamesVarargs(value: String*): Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNotFoundResourceNames(value: js.Array[String]): Self = StObject.set(x, "notFoundResourceNames", value.asInstanceOf[js.Any])
+    inline def setNotFoundResourceNames(value: js.Array[String]): Self = StObject.set(x, "notFoundResourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundResourceNamesUndefined: Self = StObject.set(x, "notFoundResourceNames", js.undefined)
+    inline def setNotFoundResourceNamesUndefined: Self = StObject.set(x, "notFoundResourceNames", js.undefined)
     
-    @scala.inline
-    def setNotFoundResourceNamesVarargs(value: String*): Self = StObject.set(x, "notFoundResourceNames", js.Array(value :_*))
+    inline def setNotFoundResourceNamesVarargs(value: String*): Self = StObject.set(x, "notFoundResourceNames", js.Array(value :_*))
   }
 }

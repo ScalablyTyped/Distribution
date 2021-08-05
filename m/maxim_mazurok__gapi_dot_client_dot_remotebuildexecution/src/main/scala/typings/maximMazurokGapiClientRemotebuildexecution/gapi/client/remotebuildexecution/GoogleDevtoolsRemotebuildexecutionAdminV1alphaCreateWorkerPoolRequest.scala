@@ -20,31 +20,23 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest exte
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequestMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest](x: Self) {
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIdUndefined: Self = StObject.set(x, "poolId", js.undefined)
+    inline def setPoolIdUndefined: Self = StObject.set(x, "poolId", js.undefined)
     
-    @scala.inline
-    def setWorkerPool(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
+    inline def setWorkerPool(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerPoolUndefined: Self = StObject.set(x, "workerPool", js.undefined)
+    inline def setWorkerPoolUndefined: Self = StObject.set(x, "workerPool", js.undefined)
   }
 }

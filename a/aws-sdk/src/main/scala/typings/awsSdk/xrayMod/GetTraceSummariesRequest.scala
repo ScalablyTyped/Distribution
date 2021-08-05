@@ -43,49 +43,35 @@ trait GetTraceSummariesRequest extends StObject {
 }
 object GetTraceSummariesRequest {
   
-  @scala.inline
-  def apply(EndTime: Timestamp, StartTime: Timestamp): GetTraceSummariesRequest = {
+  inline def apply(EndTime: Timestamp, StartTime: Timestamp): GetTraceSummariesRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesRequest]
   }
   
-  @scala.inline
-  implicit class GetTraceSummariesRequestMutableBuilder[Self <: GetTraceSummariesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTraceSummariesRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterExpression(value: FilterExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
+    inline def setFilterExpression(value: FilterExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
+    inline def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSampling(value: NullableBoolean): Self = StObject.set(x, "Sampling", value.asInstanceOf[js.Any])
+    inline def setSampling(value: NullableBoolean): Self = StObject.set(x, "Sampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingStrategy(value: SamplingStrategy): Self = StObject.set(x, "SamplingStrategy", value.asInstanceOf[js.Any])
+    inline def setSamplingStrategy(value: SamplingStrategy): Self = StObject.set(x, "SamplingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingStrategyUndefined: Self = StObject.set(x, "SamplingStrategy", js.undefined)
+    inline def setSamplingStrategyUndefined: Self = StObject.set(x, "SamplingStrategy", js.undefined)
     
-    @scala.inline
-    def setSamplingUndefined: Self = StObject.set(x, "Sampling", js.undefined)
+    inline def setSamplingUndefined: Self = StObject.set(x, "Sampling", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeType(value: TimeRangeType): Self = StObject.set(x, "TimeRangeType", value.asInstanceOf[js.Any])
+    inline def setTimeRangeType(value: TimeRangeType): Self = StObject.set(x, "TimeRangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeTypeUndefined: Self = StObject.set(x, "TimeRangeType", js.undefined)
+    inline def setTimeRangeTypeUndefined: Self = StObject.set(x, "TimeRangeType", js.undefined)
   }
 }

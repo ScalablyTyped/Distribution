@@ -19,23 +19,18 @@ object anon {
   }
   object Get {
     
-    @scala.inline
-    def apply[K, V](get: K => V, has: K => Boolean, set: (K, V) => Unit): Get[K, V] = {
+    inline def apply[K, V](get: K => V, has: K => Boolean, set: (K, V) => Unit): Get[K, V] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Get[K, V]]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get[?, ?], K, V] (val x: Self & (Get[K, V])) extends AnyVal {
+    extension [Self <: Get[?, ?], K, V](x: Self & (Get[K, V])) {
       
-      @scala.inline
-      def setGet(value: K => V): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: K => V): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: K => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: K => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (K, V) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (K, V) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -53,8 +48,7 @@ object anon {
   }
   object Monadic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       monadic: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func,
       variadic: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func
     ): Monadic = {
@@ -62,14 +56,11 @@ object anon {
       __obj.asInstanceOf[Monadic]
     }
     
-    @scala.inline
-    implicit class MonadicMutableBuilder[Self <: Monadic] (val x: Self) extends AnyVal {
+    extension [Self <: Monadic](x: Self) {
       
-      @scala.inline
-      def setMonadic(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "monadic", js.Any.fromFunction2(value))
+      inline def setMonadic(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "monadic", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVariadic(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "variadic", js.Any.fromFunction2(value))
+      inline def setVariadic(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "variadic", js.Any.fromFunction2(value))
     }
   }
 }

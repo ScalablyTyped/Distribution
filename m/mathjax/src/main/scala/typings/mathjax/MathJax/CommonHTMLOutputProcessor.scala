@@ -32,37 +32,27 @@ trait CommonHTMLOutputProcessor extends StObject {
 }
 object CommonHTMLOutputProcessor {
   
-  @scala.inline
-  def apply(): CommonHTMLOutputProcessor = {
+  inline def apply(): CommonHTMLOutputProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonHTMLOutputProcessor]
   }
   
-  @scala.inline
-  implicit class CommonHTMLOutputProcessorMutableBuilder[Self <: CommonHTMLOutputProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: CommonHTMLOutputProcessor](x: Self) {
     
-    @scala.inline
-    def setLinebreaks(value: LineBreaks): Self = StObject.set(x, "linebreaks", value.asInstanceOf[js.Any])
+    inline def setLinebreaks(value: LineBreaks): Self = StObject.set(x, "linebreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinebreaksUndefined: Self = StObject.set(x, "linebreaks", js.undefined)
+    inline def setLinebreaksUndefined: Self = StObject.set(x, "linebreaks", js.undefined)
     
-    @scala.inline
-    def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
+    inline def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
+    inline def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
     
-    @scala.inline
-    def setMtextFontInherit(value: Boolean): Self = StObject.set(x, "mtextFontInherit", value.asInstanceOf[js.Any])
+    inline def setMtextFontInherit(value: Boolean): Self = StObject.set(x, "mtextFontInherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtextFontInheritUndefined: Self = StObject.set(x, "mtextFontInherit", js.undefined)
+    inline def setMtextFontInheritUndefined: Self = StObject.set(x, "mtextFontInherit", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

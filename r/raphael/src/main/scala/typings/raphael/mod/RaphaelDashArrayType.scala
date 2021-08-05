@@ -21,36 +21,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RaphaelDashArrayType extends StObject
 object RaphaelDashArrayType {
   
-  @scala.inline
-  def `- `: typings.raphael.raphaelStrings.`- ` = ("- ").asInstanceOf[typings.raphael.raphaelStrings.`- `]
+  inline def `- `: typings.raphael.raphaelStrings.`- ` = ("- ").asInstanceOf[typings.raphael.raphaelStrings.`- `]
   
-  @scala.inline
-  def `- Dot`: typings.raphael.raphaelStrings.`- Dot` = ("- .").asInstanceOf[typings.raphael.raphaelStrings.`- Dot`]
+  inline def `- Dot`: typings.raphael.raphaelStrings.`- Dot` = ("- .").asInstanceOf[typings.raphael.raphaelStrings.`- Dot`]
   
-  @scala.inline
-  def `--`: typings.raphael.raphaelStrings.`--` = "--".asInstanceOf[typings.raphael.raphaelStrings.`--`]
+  inline def `--`: typings.raphael.raphaelStrings.`--` = "--".asInstanceOf[typings.raphael.raphaelStrings.`--`]
   
-  @scala.inline
-  def `--Dot`: typings.raphael.raphaelStrings.`--Dot` = "--.".asInstanceOf[typings.raphael.raphaelStrings.`--Dot`]
+  inline def `--Dot`: typings.raphael.raphaelStrings.`--Dot` = "--.".asInstanceOf[typings.raphael.raphaelStrings.`--Dot`]
   
-  @scala.inline
-  def `--DotDot`: typings.raphael.raphaelStrings.`--DotDot` = "--..".asInstanceOf[typings.raphael.raphaelStrings.`--DotDot`]
+  inline def `--DotDot`: typings.raphael.raphaelStrings.`--DotDot` = "--..".asInstanceOf[typings.raphael.raphaelStrings.`--DotDot`]
   
-  @scala.inline
-  def `-Dot`: typings.raphael.raphaelStrings.`-Dot` = "-.".asInstanceOf[typings.raphael.raphaelStrings.`-Dot`]
+  inline def `-Dot`: typings.raphael.raphaelStrings.`-Dot` = "-.".asInstanceOf[typings.raphael.raphaelStrings.`-Dot`]
   
-  @scala.inline
-  def `-DotDot`: typings.raphael.raphaelStrings.`-DotDot` = "-..".asInstanceOf[typings.raphael.raphaelStrings.`-DotDot`]
+  inline def `-DotDot`: typings.raphael.raphaelStrings.`-DotDot` = "-..".asInstanceOf[typings.raphael.raphaelStrings.`-DotDot`]
   
-  @scala.inline
-  def Dot: typings.raphael.raphaelStrings.Dot = ".".asInstanceOf[typings.raphael.raphaelStrings.Dot]
+  inline def Dot: typings.raphael.raphaelStrings.Dot = ".".asInstanceOf[typings.raphael.raphaelStrings.Dot]
   
-  @scala.inline
-  def `Dot `: typings.raphael.raphaelStrings.`Dot ` = (". ").asInstanceOf[typings.raphael.raphaelStrings.`Dot `]
+  inline def `Dot `: typings.raphael.raphaelStrings.`Dot ` = (". ").asInstanceOf[typings.raphael.raphaelStrings.`Dot `]
   
-  @scala.inline
-  def _dash: `-_` = "-".asInstanceOf[`-_`]
+  inline def _dash: `-_` = "-".asInstanceOf[`-_`]
   
-  @scala.inline
-  def _empty: typings.raphael.raphaelStrings._empty = "".asInstanceOf[typings.raphael.raphaelStrings._empty]
+  inline def _empty: typings.raphael.raphaelStrings._empty = "".asInstanceOf[typings.raphael.raphaelStrings._empty]
 }

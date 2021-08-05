@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def servers: js.Array[typings.steamClient.mod.Server] = typings.steamClient.mod.^.asInstanceOf[js.Dynamic].selectDynamic("servers").asInstanceOf[js.Array[typings.steamClient.mod.Server]]
+inline def servers: js.Array[typings.steamClient.mod.Server] = typings.steamClient.mod.^.asInstanceOf[js.Dynamic].selectDynamic("servers").asInstanceOf[js.Array[typings.steamClient.mod.Server]]
 
 type SendMessage = js.Function3[
 /* header */ typings.steamClient.anon.Msg, 

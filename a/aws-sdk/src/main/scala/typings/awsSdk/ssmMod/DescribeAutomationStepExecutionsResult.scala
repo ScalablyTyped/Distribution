@@ -18,28 +18,21 @@ trait DescribeAutomationStepExecutionsResult extends StObject {
 }
 object DescribeAutomationStepExecutionsResult {
   
-  @scala.inline
-  def apply(): DescribeAutomationStepExecutionsResult = {
+  inline def apply(): DescribeAutomationStepExecutionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAutomationStepExecutionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeAutomationStepExecutionsResultMutableBuilder[Self <: DescribeAutomationStepExecutionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAutomationStepExecutionsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStepExecutions(value: StepExecutionList): Self = StObject.set(x, "StepExecutions", value.asInstanceOf[js.Any])
+    inline def setStepExecutions(value: StepExecutionList): Self = StObject.set(x, "StepExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepExecutionsUndefined: Self = StObject.set(x, "StepExecutions", js.undefined)
+    inline def setStepExecutionsUndefined: Self = StObject.set(x, "StepExecutions", js.undefined)
     
-    @scala.inline
-    def setStepExecutionsVarargs(value: StepExecution*): Self = StObject.set(x, "StepExecutions", js.Array(value :_*))
+    inline def setStepExecutionsVarargs(value: StepExecution*): Self = StObject.set(x, "StepExecutions", js.Array(value :_*))
   }
 }

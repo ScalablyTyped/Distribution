@@ -10,16 +10,13 @@ trait Lineshift extends StObject {
 }
 object Lineshift {
   
-  @scala.inline
-  def apply(line_shift: Double): Lineshift = {
+  inline def apply(line_shift: Double): Lineshift = {
     val __obj = js.Dynamic.literal(line_shift = line_shift.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lineshift]
   }
   
-  @scala.inline
-  implicit class LineshiftMutableBuilder[Self <: Lineshift] (val x: Self) extends AnyVal {
+  extension [Self <: Lineshift](x: Self) {
     
-    @scala.inline
-    def setLine_shift(value: Double): Self = StObject.set(x, "line_shift", value.asInstanceOf[js.Any])
+    inline def setLine_shift(value: Double): Self = StObject.set(x, "line_shift", value.asInstanceOf[js.Any])
   }
 }

@@ -25,39 +25,29 @@ trait ServerStreamFileResponseOptions extends StObject {
 }
 object ServerStreamFileResponseOptions {
   
-  @scala.inline
-  def apply(): ServerStreamFileResponseOptions = {
+  inline def apply(): ServerStreamFileResponseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerStreamFileResponseOptions]
   }
   
-  @scala.inline
-  implicit class ServerStreamFileResponseOptionsMutableBuilder[Self <: ServerStreamFileResponseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerStreamFileResponseOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setStatCheck(
+    inline def setStatCheck(
       value: (/* stats */ Stats, /* headers */ OutgoingHttpHeaders, /* statOptions */ StatOptions) => Unit | Boolean
     ): Self = StObject.set(x, "statCheck", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStatCheckUndefined: Self = StObject.set(x, "statCheck", js.undefined)
+    inline def setStatCheckUndefined: Self = StObject.set(x, "statCheck", js.undefined)
     
-    @scala.inline
-    def setWaitForTrailers(value: Boolean): Self = StObject.set(x, "waitForTrailers", value.asInstanceOf[js.Any])
+    inline def setWaitForTrailers(value: Boolean): Self = StObject.set(x, "waitForTrailers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForTrailersUndefined: Self = StObject.set(x, "waitForTrailers", js.undefined)
+    inline def setWaitForTrailersUndefined: Self = StObject.set(x, "waitForTrailers", js.undefined)
   }
 }

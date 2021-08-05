@@ -17,13 +17,9 @@ object DownloadsFolder {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFileAsync(desiredName: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(desiredName.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
-  @scala.inline
-  def createFileAsync(desiredName: String, option: typings.winrt.Windows.Storage.CreationCollisionOption): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(desiredName.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
+  inline def createFileAsync(desiredName: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(desiredName.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
+  inline def createFileAsync(desiredName: String, option: typings.winrt.Windows.Storage.CreationCollisionOption): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(desiredName.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
   
-  @scala.inline
-  def createFolderAsync(desiredName: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFolderAsync")(desiredName.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder]]
-  @scala.inline
-  def createFolderAsync(desiredName: String, option: typings.winrt.Windows.Storage.CreationCollisionOption): IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFolderAsync")(desiredName.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder]]
+  inline def createFolderAsync(desiredName: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFolderAsync")(desiredName.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder]]
+  inline def createFolderAsync(desiredName: String, option: typings.winrt.Windows.Storage.CreationCollisionOption): IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFolderAsync")(desiredName.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder]]
 }

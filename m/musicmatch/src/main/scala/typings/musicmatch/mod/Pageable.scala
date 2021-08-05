@@ -12,25 +12,19 @@ trait Pageable extends StObject {
 }
 object Pageable {
   
-  @scala.inline
-  def apply(): Pageable = {
+  inline def apply(): Pageable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pageable]
   }
   
-  @scala.inline
-  implicit class PageableMutableBuilder[Self <: Pageable] (val x: Self) extends AnyVal {
+  extension [Self <: Pageable](x: Self) {
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+    inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+    inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
   }
 }

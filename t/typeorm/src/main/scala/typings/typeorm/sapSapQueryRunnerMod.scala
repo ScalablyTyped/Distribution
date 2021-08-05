@@ -259,7 +259,7 @@ object sapSapQueryRunnerMod {
     /**
       * Promise used to obtain a database connection from a pool for a first time.
       */
-    var databaseConnectionPromise: js.Promise[js.Any] = js.native
+    /* protected */ var databaseConnectionPromise: js.Promise[js.Any] = js.native
     
     /* protected */ def deleteViewDefinitionSql(viewOrPath: String): js.Promise[Query] = js.native
     /**
@@ -565,7 +565,7 @@ object sapSapQueryRunnerMod {
       * This is needed because we cannot rely on parallel queries because we use second query
       * to select CURRENT_IDENTITY_VALUE()
       */
-    var queryResponsibilityChain: js.Array[js.Promise[js.Any]] = js.native
+    /* protected */ var queryResponsibilityChain: js.Array[js.Promise[js.Any]] = js.native
     
     /**
       * Releases used database connection.

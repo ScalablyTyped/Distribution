@@ -15,17 +15,14 @@ trait AssemblyIf
 }
 object AssemblyIf {
   
-  @scala.inline
-  def apply(): AssemblyIf = {
+  inline def apply(): AssemblyIf = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyIf")
     __obj.asInstanceOf[AssemblyIf]
   }
   
-  @scala.inline
-  implicit class AssemblyIfMutableBuilder[Self <: AssemblyIf] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyIf](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

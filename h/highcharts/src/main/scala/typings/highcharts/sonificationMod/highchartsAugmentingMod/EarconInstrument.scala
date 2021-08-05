@@ -22,19 +22,15 @@ trait EarconInstrument extends StObject {
 }
 object EarconInstrument {
   
-  @scala.inline
-  def apply(instrument: String | Instrument, playOptions: InstrumentPlayOptionsObject): EarconInstrument = {
+  inline def apply(instrument: String | Instrument, playOptions: InstrumentPlayOptionsObject): EarconInstrument = {
     val __obj = js.Dynamic.literal(instrument = instrument.asInstanceOf[js.Any], playOptions = playOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconInstrument]
   }
   
-  @scala.inline
-  implicit class EarconInstrumentMutableBuilder[Self <: EarconInstrument] (val x: Self) extends AnyVal {
+  extension [Self <: EarconInstrument](x: Self) {
     
-    @scala.inline
-    def setInstrument(value: String | Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
+    inline def setInstrument(value: String | Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayOptions(value: InstrumentPlayOptionsObject): Self = StObject.set(x, "playOptions", value.asInstanceOf[js.Any])
+    inline def setPlayOptions(value: InstrumentPlayOptionsObject): Self = StObject.set(x, "playOptions", value.asInstanceOf[js.Any])
   }
 }

@@ -24,17 +24,14 @@ object listBoxMenuIconMod extends Shortcut {
   }
   object ListBoxMenuIconProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean): ListBoxMenuIconProps = {
+    inline def apply(isOpen: Boolean): ListBoxMenuIconProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListBoxMenuIconProps]
     }
     
-    @scala.inline
-    implicit class ListBoxMenuIconPropsMutableBuilder[Self <: ListBoxMenuIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListBoxMenuIconProps](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,11 +44,9 @@ object listBoxMenuIconMod extends Shortcut {
        with _CarbonTranslationKey
   object ListBoxMenuIconTranslationKey {
     
-    @scala.inline
-    def closeDotmenu: typings.carbonComponentsReact.carbonComponentsReactStrings.closeDotmenu = "close.menu".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.closeDotmenu]
+    inline def closeDotmenu: typings.carbonComponentsReact.carbonComponentsReactStrings.closeDotmenu = "close.menu".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.closeDotmenu]
     
-    @scala.inline
-    def openDotmenu: typings.carbonComponentsReact.carbonComponentsReactStrings.openDotmenu = "open.menu".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.openDotmenu]
+    inline def openDotmenu: typings.carbonComponentsReact.carbonComponentsReactStrings.openDotmenu = "open.menu".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.openDotmenu]
   }
   
   type _To = ListBoxMenuIconComponent

@@ -22,35 +22,27 @@ trait ListenRequest extends StObject {
 }
 object ListenRequest {
   
-  @scala.inline
-  def apply(): ListenRequest = {
+  inline def apply(): ListenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListenRequest]
   }
   
-  @scala.inline
-  implicit class ListenRequestMutableBuilder[Self <: ListenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListenRequest](x: Self) {
     
-    @scala.inline
-    def setAddTarget(value: Target): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
+    inline def setAddTarget(value: Target): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddTargetUndefined: Self = StObject.set(x, "addTarget", js.undefined)
+    inline def setAddTargetUndefined: Self = StObject.set(x, "addTarget", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.ListenRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setRemoveTarget(value: Double): Self = StObject.set(x, "removeTarget", value.asInstanceOf[js.Any])
+    inline def setRemoveTarget(value: Double): Self = StObject.set(x, "removeTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveTargetUndefined: Self = StObject.set(x, "removeTarget", js.undefined)
+    inline def setRemoveTargetUndefined: Self = StObject.set(x, "removeTarget", js.undefined)
   }
 }

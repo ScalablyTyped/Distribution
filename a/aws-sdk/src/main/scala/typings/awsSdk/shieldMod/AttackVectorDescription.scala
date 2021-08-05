@@ -13,16 +13,13 @@ trait AttackVectorDescription extends StObject {
 }
 object AttackVectorDescription {
   
-  @scala.inline
-  def apply(VectorType: String): AttackVectorDescription = {
+  inline def apply(VectorType: String): AttackVectorDescription = {
     val __obj = js.Dynamic.literal(VectorType = VectorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttackVectorDescription]
   }
   
-  @scala.inline
-  implicit class AttackVectorDescriptionMutableBuilder[Self <: AttackVectorDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AttackVectorDescription](x: Self) {
     
-    @scala.inline
-    def setVectorType(value: String): Self = StObject.set(x, "VectorType", value.asInstanceOf[js.Any])
+    inline def setVectorType(value: String): Self = StObject.set(x, "VectorType", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait IJsonObject
 }
 object IJsonObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getArray: () => JsonArray,
     getBoolean: () => Boolean,
     getNamedArray: String => JsonArray,
@@ -45,28 +44,20 @@ object IJsonObject {
     __obj.asInstanceOf[IJsonObject]
   }
   
-  @scala.inline
-  implicit class IJsonObjectMutableBuilder[Self <: IJsonObject] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonObject](x: Self) {
     
-    @scala.inline
-    def setGetNamedArray(value: String => JsonArray): Self = StObject.set(x, "getNamedArray", js.Any.fromFunction1(value))
+    inline def setGetNamedArray(value: String => JsonArray): Self = StObject.set(x, "getNamedArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedBoolean(value: String => Boolean): Self = StObject.set(x, "getNamedBoolean", js.Any.fromFunction1(value))
+    inline def setGetNamedBoolean(value: String => Boolean): Self = StObject.set(x, "getNamedBoolean", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedNumber(value: String => Double): Self = StObject.set(x, "getNamedNumber", js.Any.fromFunction1(value))
+    inline def setGetNamedNumber(value: String => Double): Self = StObject.set(x, "getNamedNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedObject(value: String => JsonObject): Self = StObject.set(x, "getNamedObject", js.Any.fromFunction1(value))
+    inline def setGetNamedObject(value: String => JsonObject): Self = StObject.set(x, "getNamedObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedString(value: String => String): Self = StObject.set(x, "getNamedString", js.Any.fromFunction1(value))
+    inline def setGetNamedString(value: String => String): Self = StObject.set(x, "getNamedString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedValue(value: String => JsonValue): Self = StObject.set(x, "getNamedValue", js.Any.fromFunction1(value))
+    inline def setGetNamedValue(value: String => JsonValue): Self = StObject.set(x, "getNamedValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNamedValue(value: (String, IJsonValue) => Unit): Self = StObject.set(x, "setNamedValue", js.Any.fromFunction2(value))
+    inline def setSetNamedValue(value: (String, IJsonValue) => Unit): Self = StObject.set(x, "setNamedValue", js.Any.fromFunction2(value))
   }
 }

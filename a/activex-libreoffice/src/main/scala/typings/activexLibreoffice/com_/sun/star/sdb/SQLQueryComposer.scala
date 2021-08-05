@@ -24,8 +24,7 @@ trait SQLQueryComposer
      with XColumnsSupplier
 object SQLQueryComposer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XNameAccess,
     ComposedQuery: String,
     Filter: String,

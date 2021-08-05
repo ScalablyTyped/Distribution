@@ -50,21 +50,16 @@ object cacheMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cache]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cache]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CacheState): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cache]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CacheState, opts: CustomResourceOptions): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cache]
+    inline def get(name: String, id: Input[ID]): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cache]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cache]
+    inline def get(name: String, id: Input[ID], state: CacheState): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cache]
+    inline def get(name: String, id: Input[ID], state: CacheState, opts: CustomResourceOptions): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cache]
     
     /**
       * Returns true if the given object is an instance of Cache.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ Boolean]
   }
   
   trait CacheArgs extends StObject {
@@ -81,20 +76,16 @@ object cacheMod {
   }
   object CacheArgs {
     
-    @scala.inline
-    def apply(diskId: Input[String], gatewayArn: Input[String]): CacheArgs = {
+    inline def apply(diskId: Input[String], gatewayArn: Input[String]): CacheArgs = {
       val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheArgs]
     }
     
-    @scala.inline
-    implicit class CacheArgsMutableBuilder[Self <: CacheArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CacheArgs](x: Self) {
       
-      @scala.inline
-      def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
+      inline def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object cacheMod {
   }
   object CacheState {
     
-    @scala.inline
-    def apply(): CacheState = {
+    inline def apply(): CacheState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheState]
     }
     
-    @scala.inline
-    implicit class CacheStateMutableBuilder[Self <: CacheState] (val x: Self) extends AnyVal {
+    extension [Self <: CacheState](x: Self) {
       
-      @scala.inline
-      def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
+      inline def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskIdUndefined: Self = StObject.set(x, "diskId", js.undefined)
+      inline def setDiskIdUndefined: Self = StObject.set(x, "diskId", js.undefined)
       
-      @scala.inline
-      def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayArnUndefined: Self = StObject.set(x, "gatewayArn", js.undefined)
+      inline def setGatewayArnUndefined: Self = StObject.set(x, "gatewayArn", js.undefined)
     }
   }
 }

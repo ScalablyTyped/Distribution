@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssistiveWindowButton extends StObject
 object AssistiveWindowButton {
   
-  @scala.inline
-  def addToDictionary: typings.chrome.chromeStrings.addToDictionary = "addToDictionary".asInstanceOf[typings.chrome.chromeStrings.addToDictionary]
+  inline def addToDictionary: typings.chrome.chromeStrings.addToDictionary = "addToDictionary".asInstanceOf[typings.chrome.chromeStrings.addToDictionary]
   
-  @scala.inline
-  def undo: typings.chrome.chromeStrings.undo = "undo".asInstanceOf[typings.chrome.chromeStrings.undo]
+  inline def undo: typings.chrome.chromeStrings.undo = "undo".asInstanceOf[typings.chrome.chromeStrings.undo]
 }

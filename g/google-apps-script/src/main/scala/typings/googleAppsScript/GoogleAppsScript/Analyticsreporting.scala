@@ -120,8 +120,7 @@ trait Analyticsreporting extends StObject {
 }
 object Analyticsreporting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newCohort: () => Cohort,
     newCohortGroup: () => CohortGroup,
     newDateRange: () => DateRange,
@@ -153,98 +152,67 @@ object Analyticsreporting {
     __obj.asInstanceOf[Analyticsreporting]
   }
   
-  @scala.inline
-  implicit class AnalyticsreportingMutableBuilder[Self <: Analyticsreporting] (val x: Self) extends AnyVal {
+  extension [Self <: Analyticsreporting](x: Self) {
     
-    @scala.inline
-    def setNewCohort(value: () => Cohort): Self = StObject.set(x, "newCohort", js.Any.fromFunction0(value))
+    inline def setNewCohort(value: () => Cohort): Self = StObject.set(x, "newCohort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCohortGroup(value: () => CohortGroup): Self = StObject.set(x, "newCohortGroup", js.Any.fromFunction0(value))
+    inline def setNewCohortGroup(value: () => CohortGroup): Self = StObject.set(x, "newCohortGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDateRange(value: () => DateRange): Self = StObject.set(x, "newDateRange", js.Any.fromFunction0(value))
+    inline def setNewDateRange(value: () => DateRange): Self = StObject.set(x, "newDateRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
+    inline def setNewDimension(value: () => Dimension): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDimensionFilter(value: () => DimensionFilter): Self = StObject.set(x, "newDimensionFilter", js.Any.fromFunction0(value))
+    inline def setNewDimensionFilter(value: () => DimensionFilter): Self = StObject.set(x, "newDimensionFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDimensionFilterClause(value: () => DimensionFilterClause): Self = StObject.set(x, "newDimensionFilterClause", js.Any.fromFunction0(value))
+    inline def setNewDimensionFilterClause(value: () => DimensionFilterClause): Self = StObject.set(x, "newDimensionFilterClause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDynamicSegment(value: () => DynamicSegment): Self = StObject.set(x, "newDynamicSegment", js.Any.fromFunction0(value))
+    inline def setNewDynamicSegment(value: () => DynamicSegment): Self = StObject.set(x, "newDynamicSegment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewGetReportsRequest(value: () => GetReportsRequest): Self = StObject.set(x, "newGetReportsRequest", js.Any.fromFunction0(value))
+    inline def setNewGetReportsRequest(value: () => GetReportsRequest): Self = StObject.set(x, "newGetReportsRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMetric(value: () => Metric): Self = StObject.set(x, "newMetric", js.Any.fromFunction0(value))
+    inline def setNewMetric(value: () => Metric): Self = StObject.set(x, "newMetric", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMetricFilter(value: () => MetricFilter): Self = StObject.set(x, "newMetricFilter", js.Any.fromFunction0(value))
+    inline def setNewMetricFilter(value: () => MetricFilter): Self = StObject.set(x, "newMetricFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMetricFilterClause(value: () => MetricFilterClause): Self = StObject.set(x, "newMetricFilterClause", js.Any.fromFunction0(value))
+    inline def setNewMetricFilterClause(value: () => MetricFilterClause): Self = StObject.set(x, "newMetricFilterClause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOrFiltersForSegment(value: () => OrFiltersForSegment): Self = StObject.set(x, "newOrFiltersForSegment", js.Any.fromFunction0(value))
+    inline def setNewOrFiltersForSegment(value: () => OrFiltersForSegment): Self = StObject.set(x, "newOrFiltersForSegment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewOrderBy(value: () => OrderBy): Self = StObject.set(x, "newOrderBy", js.Any.fromFunction0(value))
+    inline def setNewOrderBy(value: () => OrderBy): Self = StObject.set(x, "newOrderBy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPivot(value: () => Pivot): Self = StObject.set(x, "newPivot", js.Any.fromFunction0(value))
+    inline def setNewPivot(value: () => Pivot): Self = StObject.set(x, "newPivot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewReportRequest(value: () => ReportRequest): Self = StObject.set(x, "newReportRequest", js.Any.fromFunction0(value))
+    inline def setNewReportRequest(value: () => ReportRequest): Self = StObject.set(x, "newReportRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSearchUserActivityRequest(value: () => SearchUserActivityRequest): Self = StObject.set(x, "newSearchUserActivityRequest", js.Any.fromFunction0(value))
+    inline def setNewSearchUserActivityRequest(value: () => SearchUserActivityRequest): Self = StObject.set(x, "newSearchUserActivityRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSegment(value: () => Segment): Self = StObject.set(x, "newSegment", js.Any.fromFunction0(value))
+    inline def setNewSegment(value: () => Segment): Self = StObject.set(x, "newSegment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSegmentDefinition(value: () => SegmentDefinition): Self = StObject.set(x, "newSegmentDefinition", js.Any.fromFunction0(value))
+    inline def setNewSegmentDefinition(value: () => SegmentDefinition): Self = StObject.set(x, "newSegmentDefinition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSegmentDimensionFilter(value: () => SegmentDimensionFilter): Self = StObject.set(x, "newSegmentDimensionFilter", js.Any.fromFunction0(value))
+    inline def setNewSegmentDimensionFilter(value: () => SegmentDimensionFilter): Self = StObject.set(x, "newSegmentDimensionFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSegmentFilter(value: () => SegmentFilter): Self = StObject.set(x, "newSegmentFilter", js.Any.fromFunction0(value))
+    inline def setNewSegmentFilter(value: () => SegmentFilter): Self = StObject.set(x, "newSegmentFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSegmentFilterClause(value: () => SegmentFilterClause): Self = StObject.set(x, "newSegmentFilterClause", js.Any.fromFunction0(value))
+    inline def setNewSegmentFilterClause(value: () => SegmentFilterClause): Self = StObject.set(x, "newSegmentFilterClause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSegmentMetricFilter(value: () => SegmentMetricFilter): Self = StObject.set(x, "newSegmentMetricFilter", js.Any.fromFunction0(value))
+    inline def setNewSegmentMetricFilter(value: () => SegmentMetricFilter): Self = StObject.set(x, "newSegmentMetricFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSegmentSequenceStep(value: () => SegmentSequenceStep): Self = StObject.set(x, "newSegmentSequenceStep", js.Any.fromFunction0(value))
+    inline def setNewSegmentSequenceStep(value: () => SegmentSequenceStep): Self = StObject.set(x, "newSegmentSequenceStep", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSequenceSegment(value: () => SequenceSegment): Self = StObject.set(x, "newSequenceSegment", js.Any.fromFunction0(value))
+    inline def setNewSequenceSegment(value: () => SequenceSegment): Self = StObject.set(x, "newSequenceSegment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSimpleSegment(value: () => SimpleSegment): Self = StObject.set(x, "newSimpleSegment", js.Any.fromFunction0(value))
+    inline def setNewSimpleSegment(value: () => SimpleSegment): Self = StObject.set(x, "newSimpleSegment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUser(value: () => User): Self = StObject.set(x, "newUser", js.Any.fromFunction0(value))
+    inline def setNewUser(value: () => User): Self = StObject.set(x, "newUser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
+    inline def setReports(value: ReportsCollection): Self = StObject.set(x, "Reports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
+    inline def setReportsUndefined: Self = StObject.set(x, "Reports", js.undefined)
     
-    @scala.inline
-    def setUserActivity(value: UserActivityCollection): Self = StObject.set(x, "UserActivity", value.asInstanceOf[js.Any])
+    inline def setUserActivity(value: UserActivityCollection): Self = StObject.set(x, "UserActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserActivityUndefined: Self = StObject.set(x, "UserActivity", js.undefined)
+    inline def setUserActivityUndefined: Self = StObject.set(x, "UserActivity", js.undefined)
   }
   
   object Collection {
@@ -256,17 +224,14 @@ object Analyticsreporting {
     }
     object ReportsCollection {
       
-      @scala.inline
-      def apply(batchGet: GetReportsRequest => GetReportsResponse): ReportsCollection = {
+      inline def apply(batchGet: GetReportsRequest => GetReportsResponse): ReportsCollection = {
         val __obj = js.Dynamic.literal(batchGet = js.Any.fromFunction1(batchGet))
         __obj.asInstanceOf[ReportsCollection]
       }
       
-      @scala.inline
-      implicit class ReportsCollectionMutableBuilder[Self <: ReportsCollection] (val x: Self) extends AnyVal {
+      extension [Self <: ReportsCollection](x: Self) {
         
-        @scala.inline
-        def setBatchGet(value: GetReportsRequest => GetReportsResponse): Self = StObject.set(x, "batchGet", js.Any.fromFunction1(value))
+        inline def setBatchGet(value: GetReportsRequest => GetReportsResponse): Self = StObject.set(x, "batchGet", js.Any.fromFunction1(value))
       }
     }
     
@@ -277,17 +242,14 @@ object Analyticsreporting {
     }
     object UserActivityCollection {
       
-      @scala.inline
-      def apply(search: SearchUserActivityRequest => SearchUserActivityResponse): UserActivityCollection = {
+      inline def apply(search: SearchUserActivityRequest => SearchUserActivityResponse): UserActivityCollection = {
         val __obj = js.Dynamic.literal(search = js.Any.fromFunction1(search))
         __obj.asInstanceOf[UserActivityCollection]
       }
       
-      @scala.inline
-      implicit class UserActivityCollectionMutableBuilder[Self <: UserActivityCollection] (val x: Self) extends AnyVal {
+      extension [Self <: UserActivityCollection](x: Self) {
         
-        @scala.inline
-        def setSearch(value: SearchUserActivityRequest => SearchUserActivityResponse): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+        inline def setSearch(value: SearchUserActivityRequest => SearchUserActivityResponse): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       }
     }
   }
@@ -328,107 +290,74 @@ object Analyticsreporting {
     }
     object Activity {
       
-      @scala.inline
-      def apply(): Activity = {
+      inline def apply(): Activity = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Activity]
       }
       
-      @scala.inline
-      implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+      extension [Self <: Activity](x: Self) {
         
-        @scala.inline
-        def setActivityTime(value: String): Self = StObject.set(x, "activityTime", value.asInstanceOf[js.Any])
+        inline def setActivityTime(value: String): Self = StObject.set(x, "activityTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivityTimeUndefined: Self = StObject.set(x, "activityTime", js.undefined)
+        inline def setActivityTimeUndefined: Self = StObject.set(x, "activityTime", js.undefined)
         
-        @scala.inline
-        def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+        inline def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
+        inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
         
-        @scala.inline
-        def setAppview(value: ScreenviewData): Self = StObject.set(x, "appview", value.asInstanceOf[js.Any])
+        inline def setAppview(value: ScreenviewData): Self = StObject.set(x, "appview", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppviewUndefined: Self = StObject.set(x, "appview", js.undefined)
+        inline def setAppviewUndefined: Self = StObject.set(x, "appview", js.undefined)
         
-        @scala.inline
-        def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
+        inline def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
+        inline def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
         
-        @scala.inline
-        def setChannelGrouping(value: String): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
+        inline def setChannelGrouping(value: String): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChannelGroupingUndefined: Self = StObject.set(x, "channelGrouping", js.undefined)
+        inline def setChannelGroupingUndefined: Self = StObject.set(x, "channelGrouping", js.undefined)
         
-        @scala.inline
-        def setCustomDimension(value: js.Array[CustomDimension]): Self = StObject.set(x, "customDimension", value.asInstanceOf[js.Any])
+        inline def setCustomDimension(value: js.Array[CustomDimension]): Self = StObject.set(x, "customDimension", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
+        inline def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
         
-        @scala.inline
-        def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
+        inline def setCustomDimensionVarargs(value: CustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
         
-        @scala.inline
-        def setEcommerce(value: EcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
+        inline def setEcommerce(value: EcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEcommerceUndefined: Self = StObject.set(x, "ecommerce", js.undefined)
+        inline def setEcommerceUndefined: Self = StObject.set(x, "ecommerce", js.undefined)
         
-        @scala.inline
-        def setEvent(value: EventData): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+        inline def setEvent(value: EventData): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+        inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
         
-        @scala.inline
-        def setGoals(value: GoalSetData): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
+        inline def setGoals(value: GoalSetData): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
+        inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
         
-        @scala.inline
-        def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+        inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+        inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
         
-        @scala.inline
-        def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+        inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
+        inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
         
-        @scala.inline
-        def setLandingPagePath(value: String): Self = StObject.set(x, "landingPagePath", value.asInstanceOf[js.Any])
+        inline def setLandingPagePath(value: String): Self = StObject.set(x, "landingPagePath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLandingPagePathUndefined: Self = StObject.set(x, "landingPagePath", js.undefined)
+        inline def setLandingPagePathUndefined: Self = StObject.set(x, "landingPagePath", js.undefined)
         
-        @scala.inline
-        def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+        inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+        inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
         
-        @scala.inline
-        def setPageview(value: PageviewData): Self = StObject.set(x, "pageview", value.asInstanceOf[js.Any])
+        inline def setPageview(value: PageviewData): Self = StObject.set(x, "pageview", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageviewUndefined: Self = StObject.set(x, "pageview", js.undefined)
+        inline def setPageviewUndefined: Self = StObject.set(x, "pageview", js.undefined)
         
-        @scala.inline
-        def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+        inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       }
     }
     
@@ -442,32 +371,24 @@ object Analyticsreporting {
     }
     object Cohort {
       
-      @scala.inline
-      def apply(): Cohort = {
+      inline def apply(): Cohort = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Cohort]
       }
       
-      @scala.inline
-      implicit class CohortMutableBuilder[Self <: Cohort] (val x: Self) extends AnyVal {
+      extension [Self <: Cohort](x: Self) {
         
-        @scala.inline
-        def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+        inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+        inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -479,29 +400,22 @@ object Analyticsreporting {
     }
     object CohortGroup {
       
-      @scala.inline
-      def apply(): CohortGroup = {
+      inline def apply(): CohortGroup = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CohortGroup]
       }
       
-      @scala.inline
-      implicit class CohortGroupMutableBuilder[Self <: CohortGroup] (val x: Self) extends AnyVal {
+      extension [Self <: CohortGroup](x: Self) {
         
-        @scala.inline
-        def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
+        inline def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
+        inline def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
         
-        @scala.inline
-        def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
+        inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
         
-        @scala.inline
-        def setLifetimeValue(value: Boolean): Self = StObject.set(x, "lifetimeValue", value.asInstanceOf[js.Any])
+        inline def setLifetimeValue(value: Boolean): Self = StObject.set(x, "lifetimeValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLifetimeValueUndefined: Self = StObject.set(x, "lifetimeValue", js.undefined)
+        inline def setLifetimeValueUndefined: Self = StObject.set(x, "lifetimeValue", js.undefined)
       }
     }
     
@@ -513,29 +427,22 @@ object Analyticsreporting {
     }
     object ColumnHeader {
       
-      @scala.inline
-      def apply(): ColumnHeader = {
+      inline def apply(): ColumnHeader = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ColumnHeader]
       }
       
-      @scala.inline
-      implicit class ColumnHeaderMutableBuilder[Self <: ColumnHeader] (val x: Self) extends AnyVal {
+      extension [Self <: ColumnHeader](x: Self) {
         
-        @scala.inline
-        def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+        inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+        inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        @scala.inline
-        def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
         
-        @scala.inline
-        def setMetricHeader(value: MetricHeader): Self = StObject.set(x, "metricHeader", value.asInstanceOf[js.Any])
+        inline def setMetricHeader(value: MetricHeader): Self = StObject.set(x, "metricHeader", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricHeaderUndefined: Self = StObject.set(x, "metricHeader", js.undefined)
+        inline def setMetricHeaderUndefined: Self = StObject.set(x, "metricHeader", js.undefined)
       }
     }
     
@@ -547,26 +454,20 @@ object Analyticsreporting {
     }
     object CustomDimension {
       
-      @scala.inline
-      def apply(): CustomDimension = {
+      inline def apply(): CustomDimension = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CustomDimension]
       }
       
-      @scala.inline
-      implicit class CustomDimensionMutableBuilder[Self <: CustomDimension] (val x: Self) extends AnyVal {
+      extension [Self <: CustomDimension](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+        inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -578,26 +479,20 @@ object Analyticsreporting {
     }
     object DateRange {
       
-      @scala.inline
-      def apply(): DateRange = {
+      inline def apply(): DateRange = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DateRange]
       }
       
-      @scala.inline
-      implicit class DateRangeMutableBuilder[Self <: DateRange] (val x: Self) extends AnyVal {
+      extension [Self <: DateRange](x: Self) {
         
-        @scala.inline
-        def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+        inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+        inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
         
-        @scala.inline
-        def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+        inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+        inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       }
     }
     
@@ -609,32 +504,24 @@ object Analyticsreporting {
     }
     object DateRangeValues {
       
-      @scala.inline
-      def apply(): DateRangeValues = {
+      inline def apply(): DateRangeValues = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DateRangeValues]
       }
       
-      @scala.inline
-      implicit class DateRangeValuesMutableBuilder[Self <: DateRangeValues] (val x: Self) extends AnyVal {
+      extension [Self <: DateRangeValues](x: Self) {
         
-        @scala.inline
-        def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
+        inline def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
+        inline def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
         
-        @scala.inline
-        def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
+        inline def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
         
-        @scala.inline
-        def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+        inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        @scala.inline
-        def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
       }
     }
     
@@ -646,29 +533,22 @@ object Analyticsreporting {
     }
     object Dimension {
       
-      @scala.inline
-      def apply(): Dimension = {
+      inline def apply(): Dimension = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Dimension]
       }
       
-      @scala.inline
-      implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+      extension [Self <: Dimension](x: Self) {
         
-        @scala.inline
-        def setHistogramBuckets(value: js.Array[String]): Self = StObject.set(x, "histogramBuckets", value.asInstanceOf[js.Any])
+        inline def setHistogramBuckets(value: js.Array[String]): Self = StObject.set(x, "histogramBuckets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistogramBucketsUndefined: Self = StObject.set(x, "histogramBuckets", js.undefined)
+        inline def setHistogramBucketsUndefined: Self = StObject.set(x, "histogramBuckets", js.undefined)
         
-        @scala.inline
-        def setHistogramBucketsVarargs(value: String*): Self = StObject.set(x, "histogramBuckets", js.Array(value :_*))
+        inline def setHistogramBucketsVarargs(value: String*): Self = StObject.set(x, "histogramBuckets", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       }
     }
     
@@ -686,47 +566,34 @@ object Analyticsreporting {
     }
     object DimensionFilter {
       
-      @scala.inline
-      def apply(): DimensionFilter = {
+      inline def apply(): DimensionFilter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DimensionFilter]
       }
       
-      @scala.inline
-      implicit class DimensionFilterMutableBuilder[Self <: DimensionFilter] (val x: Self) extends AnyVal {
+      extension [Self <: DimensionFilter](x: Self) {
         
-        @scala.inline
-        def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+        inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+        inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
         
-        @scala.inline
-        def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+        inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+        inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
         
-        @scala.inline
-        def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+        inline def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+        inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
         
-        @scala.inline
-        def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+        inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
         
-        @scala.inline
-        def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+        inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+        inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
         
-        @scala.inline
-        def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+        inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       }
     }
     
@@ -738,29 +605,22 @@ object Analyticsreporting {
     }
     object DimensionFilterClause {
       
-      @scala.inline
-      def apply(): DimensionFilterClause = {
+      inline def apply(): DimensionFilterClause = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DimensionFilterClause]
       }
       
-      @scala.inline
-      implicit class DimensionFilterClauseMutableBuilder[Self <: DimensionFilterClause] (val x: Self) extends AnyVal {
+      extension [Self <: DimensionFilterClause](x: Self) {
         
-        @scala.inline
-        def setFilters(value: js.Array[DimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+        inline def setFilters(value: js.Array[DimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+        inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
         
-        @scala.inline
-        def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+        inline def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
         
-        @scala.inline
-        def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+        inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       }
     }
     
@@ -774,32 +634,24 @@ object Analyticsreporting {
     }
     object DynamicSegment {
       
-      @scala.inline
-      def apply(): DynamicSegment = {
+      inline def apply(): DynamicSegment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DynamicSegment]
       }
       
-      @scala.inline
-      implicit class DynamicSegmentMutableBuilder[Self <: DynamicSegment] (val x: Self) extends AnyVal {
+      extension [Self <: DynamicSegment](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setSessionSegment(value: SegmentDefinition): Self = StObject.set(x, "sessionSegment", value.asInstanceOf[js.Any])
+        inline def setSessionSegment(value: SegmentDefinition): Self = StObject.set(x, "sessionSegment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionSegmentUndefined: Self = StObject.set(x, "sessionSegment", js.undefined)
+        inline def setSessionSegmentUndefined: Self = StObject.set(x, "sessionSegment", js.undefined)
         
-        @scala.inline
-        def setUserSegment(value: SegmentDefinition): Self = StObject.set(x, "userSegment", value.asInstanceOf[js.Any])
+        inline def setUserSegment(value: SegmentDefinition): Self = StObject.set(x, "userSegment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserSegmentUndefined: Self = StObject.set(x, "userSegment", js.undefined)
+        inline def setUserSegmentUndefined: Self = StObject.set(x, "userSegment", js.undefined)
       }
     }
     
@@ -815,41 +667,30 @@ object Analyticsreporting {
     }
     object EcommerceData {
       
-      @scala.inline
-      def apply(): EcommerceData = {
+      inline def apply(): EcommerceData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EcommerceData]
       }
       
-      @scala.inline
-      implicit class EcommerceDataMutableBuilder[Self <: EcommerceData] (val x: Self) extends AnyVal {
+      extension [Self <: EcommerceData](x: Self) {
         
-        @scala.inline
-        def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+        inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+        inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
         
-        @scala.inline
-        def setEcommerceType(value: String): Self = StObject.set(x, "ecommerceType", value.asInstanceOf[js.Any])
+        inline def setEcommerceType(value: String): Self = StObject.set(x, "ecommerceType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEcommerceTypeUndefined: Self = StObject.set(x, "ecommerceType", js.undefined)
+        inline def setEcommerceTypeUndefined: Self = StObject.set(x, "ecommerceType", js.undefined)
         
-        @scala.inline
-        def setProducts(value: js.Array[ProductData]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+        inline def setProducts(value: js.Array[ProductData]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+        inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
         
-        @scala.inline
-        def setProductsVarargs(value: ProductData*): Self = StObject.set(x, "products", js.Array(value :_*))
+        inline def setProductsVarargs(value: ProductData*): Self = StObject.set(x, "products", js.Array(value :_*))
         
-        @scala.inline
-        def setTransaction(value: TransactionData): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+        inline def setTransaction(value: TransactionData): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+        inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
       }
     }
     
@@ -867,44 +708,32 @@ object Analyticsreporting {
     }
     object EventData {
       
-      @scala.inline
-      def apply(): EventData = {
+      inline def apply(): EventData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EventData]
       }
       
-      @scala.inline
-      implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+      extension [Self <: EventData](x: Self) {
         
-        @scala.inline
-        def setEventAction(value: String): Self = StObject.set(x, "eventAction", value.asInstanceOf[js.Any])
+        inline def setEventAction(value: String): Self = StObject.set(x, "eventAction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventActionUndefined: Self = StObject.set(x, "eventAction", js.undefined)
+        inline def setEventActionUndefined: Self = StObject.set(x, "eventAction", js.undefined)
         
-        @scala.inline
-        def setEventCategory(value: String): Self = StObject.set(x, "eventCategory", value.asInstanceOf[js.Any])
+        inline def setEventCategory(value: String): Self = StObject.set(x, "eventCategory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventCategoryUndefined: Self = StObject.set(x, "eventCategory", js.undefined)
+        inline def setEventCategoryUndefined: Self = StObject.set(x, "eventCategory", js.undefined)
         
-        @scala.inline
-        def setEventCount(value: String): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
+        inline def setEventCount(value: String): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventCountUndefined: Self = StObject.set(x, "eventCount", js.undefined)
+        inline def setEventCountUndefined: Self = StObject.set(x, "eventCount", js.undefined)
         
-        @scala.inline
-        def setEventLabel(value: String): Self = StObject.set(x, "eventLabel", value.asInstanceOf[js.Any])
+        inline def setEventLabel(value: String): Self = StObject.set(x, "eventLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventLabelUndefined: Self = StObject.set(x, "eventLabel", js.undefined)
+        inline def setEventLabelUndefined: Self = StObject.set(x, "eventLabel", js.undefined)
         
-        @scala.inline
-        def setEventValue(value: String): Self = StObject.set(x, "eventValue", value.asInstanceOf[js.Any])
+        inline def setEventValue(value: String): Self = StObject.set(x, "eventValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventValueUndefined: Self = StObject.set(x, "eventValue", js.undefined)
+        inline def setEventValueUndefined: Self = StObject.set(x, "eventValue", js.undefined)
       }
     }
     
@@ -916,29 +745,22 @@ object Analyticsreporting {
     }
     object GetReportsRequest {
       
-      @scala.inline
-      def apply(): GetReportsRequest = {
+      inline def apply(): GetReportsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GetReportsRequest]
       }
       
-      @scala.inline
-      implicit class GetReportsRequestMutableBuilder[Self <: GetReportsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: GetReportsRequest](x: Self) {
         
-        @scala.inline
-        def setReportRequests(value: js.Array[ReportRequest]): Self = StObject.set(x, "reportRequests", value.asInstanceOf[js.Any])
+        inline def setReportRequests(value: js.Array[ReportRequest]): Self = StObject.set(x, "reportRequests", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReportRequestsUndefined: Self = StObject.set(x, "reportRequests", js.undefined)
+        inline def setReportRequestsUndefined: Self = StObject.set(x, "reportRequests", js.undefined)
         
-        @scala.inline
-        def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value :_*))
+        inline def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value :_*))
         
-        @scala.inline
-        def setUseResourceQuotas(value: Boolean): Self = StObject.set(x, "useResourceQuotas", value.asInstanceOf[js.Any])
+        inline def setUseResourceQuotas(value: Boolean): Self = StObject.set(x, "useResourceQuotas", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseResourceQuotasUndefined: Self = StObject.set(x, "useResourceQuotas", js.undefined)
+        inline def setUseResourceQuotasUndefined: Self = StObject.set(x, "useResourceQuotas", js.undefined)
       }
     }
     
@@ -952,35 +774,26 @@ object Analyticsreporting {
     }
     object GetReportsResponse {
       
-      @scala.inline
-      def apply(): GetReportsResponse = {
+      inline def apply(): GetReportsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GetReportsResponse]
       }
       
-      @scala.inline
-      implicit class GetReportsResponseMutableBuilder[Self <: GetReportsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: GetReportsResponse](x: Self) {
         
-        @scala.inline
-        def setQueryCost(value: Double): Self = StObject.set(x, "queryCost", value.asInstanceOf[js.Any])
+        inline def setQueryCost(value: Double): Self = StObject.set(x, "queryCost", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQueryCostUndefined: Self = StObject.set(x, "queryCost", js.undefined)
+        inline def setQueryCostUndefined: Self = StObject.set(x, "queryCost", js.undefined)
         
-        @scala.inline
-        def setReports(value: js.Array[Report]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+        inline def setReports(value: js.Array[Report]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
+        inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
         
-        @scala.inline
-        def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
+        inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
         
-        @scala.inline
-        def setResourceQuotasRemaining(value: ResourceQuotasRemaining): Self = StObject.set(x, "resourceQuotasRemaining", value.asInstanceOf[js.Any])
+        inline def setResourceQuotasRemaining(value: ResourceQuotasRemaining): Self = StObject.set(x, "resourceQuotasRemaining", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceQuotasRemainingUndefined: Self = StObject.set(x, "resourceQuotasRemaining", js.undefined)
+        inline def setResourceQuotasRemainingUndefined: Self = StObject.set(x, "resourceQuotasRemaining", js.undefined)
       }
     }
     
@@ -1004,62 +817,44 @@ object Analyticsreporting {
     }
     object GoalData {
       
-      @scala.inline
-      def apply(): GoalData = {
+      inline def apply(): GoalData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GoalData]
       }
       
-      @scala.inline
-      implicit class GoalDataMutableBuilder[Self <: GoalData] (val x: Self) extends AnyVal {
+      extension [Self <: GoalData](x: Self) {
         
-        @scala.inline
-        def setGoalCompletionLocation(value: String): Self = StObject.set(x, "goalCompletionLocation", value.asInstanceOf[js.Any])
+        inline def setGoalCompletionLocation(value: String): Self = StObject.set(x, "goalCompletionLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalCompletionLocationUndefined: Self = StObject.set(x, "goalCompletionLocation", js.undefined)
+        inline def setGoalCompletionLocationUndefined: Self = StObject.set(x, "goalCompletionLocation", js.undefined)
         
-        @scala.inline
-        def setGoalCompletions(value: String): Self = StObject.set(x, "goalCompletions", value.asInstanceOf[js.Any])
+        inline def setGoalCompletions(value: String): Self = StObject.set(x, "goalCompletions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalCompletionsUndefined: Self = StObject.set(x, "goalCompletions", js.undefined)
+        inline def setGoalCompletionsUndefined: Self = StObject.set(x, "goalCompletions", js.undefined)
         
-        @scala.inline
-        def setGoalIndex(value: Double): Self = StObject.set(x, "goalIndex", value.asInstanceOf[js.Any])
+        inline def setGoalIndex(value: Double): Self = StObject.set(x, "goalIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalIndexUndefined: Self = StObject.set(x, "goalIndex", js.undefined)
+        inline def setGoalIndexUndefined: Self = StObject.set(x, "goalIndex", js.undefined)
         
-        @scala.inline
-        def setGoalName(value: String): Self = StObject.set(x, "goalName", value.asInstanceOf[js.Any])
+        inline def setGoalName(value: String): Self = StObject.set(x, "goalName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalNameUndefined: Self = StObject.set(x, "goalName", js.undefined)
+        inline def setGoalNameUndefined: Self = StObject.set(x, "goalName", js.undefined)
         
-        @scala.inline
-        def setGoalPreviousStep1(value: String): Self = StObject.set(x, "goalPreviousStep1", value.asInstanceOf[js.Any])
+        inline def setGoalPreviousStep1(value: String): Self = StObject.set(x, "goalPreviousStep1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalPreviousStep1Undefined: Self = StObject.set(x, "goalPreviousStep1", js.undefined)
+        inline def setGoalPreviousStep1Undefined: Self = StObject.set(x, "goalPreviousStep1", js.undefined)
         
-        @scala.inline
-        def setGoalPreviousStep2(value: String): Self = StObject.set(x, "goalPreviousStep2", value.asInstanceOf[js.Any])
+        inline def setGoalPreviousStep2(value: String): Self = StObject.set(x, "goalPreviousStep2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalPreviousStep2Undefined: Self = StObject.set(x, "goalPreviousStep2", js.undefined)
+        inline def setGoalPreviousStep2Undefined: Self = StObject.set(x, "goalPreviousStep2", js.undefined)
         
-        @scala.inline
-        def setGoalPreviousStep3(value: String): Self = StObject.set(x, "goalPreviousStep3", value.asInstanceOf[js.Any])
+        inline def setGoalPreviousStep3(value: String): Self = StObject.set(x, "goalPreviousStep3", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalPreviousStep3Undefined: Self = StObject.set(x, "goalPreviousStep3", js.undefined)
+        inline def setGoalPreviousStep3Undefined: Self = StObject.set(x, "goalPreviousStep3", js.undefined)
         
-        @scala.inline
-        def setGoalValue(value: Double): Self = StObject.set(x, "goalValue", value.asInstanceOf[js.Any])
+        inline def setGoalValue(value: Double): Self = StObject.set(x, "goalValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalValueUndefined: Self = StObject.set(x, "goalValue", js.undefined)
+        inline def setGoalValueUndefined: Self = StObject.set(x, "goalValue", js.undefined)
       }
     }
     
@@ -1069,23 +864,18 @@ object Analyticsreporting {
     }
     object GoalSetData {
       
-      @scala.inline
-      def apply(): GoalSetData = {
+      inline def apply(): GoalSetData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GoalSetData]
       }
       
-      @scala.inline
-      implicit class GoalSetDataMutableBuilder[Self <: GoalSetData] (val x: Self) extends AnyVal {
+      extension [Self <: GoalSetData](x: Self) {
         
-        @scala.inline
-        def setGoals(value: js.Array[GoalData]): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
+        inline def setGoals(value: js.Array[GoalData]): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
+        inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
         
-        @scala.inline
-        def setGoalsVarargs(value: GoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
+        inline def setGoalsVarargs(value: GoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
       }
     }
     
@@ -1099,32 +889,24 @@ object Analyticsreporting {
     }
     object Metric {
       
-      @scala.inline
-      def apply(): Metric = {
+      inline def apply(): Metric = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Metric]
       }
       
-      @scala.inline
-      implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+      extension [Self <: Metric](x: Self) {
         
-        @scala.inline
-        def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+        inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+        inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
         
-        @scala.inline
-        def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+        inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+        inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
         
-        @scala.inline
-        def setFormattingType(value: String): Self = StObject.set(x, "formattingType", value.asInstanceOf[js.Any])
+        inline def setFormattingType(value: String): Self = StObject.set(x, "formattingType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormattingTypeUndefined: Self = StObject.set(x, "formattingType", js.undefined)
+        inline def setFormattingTypeUndefined: Self = StObject.set(x, "formattingType", js.undefined)
       }
     }
     
@@ -1140,38 +922,28 @@ object Analyticsreporting {
     }
     object MetricFilter {
       
-      @scala.inline
-      def apply(): MetricFilter = {
+      inline def apply(): MetricFilter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MetricFilter]
       }
       
-      @scala.inline
-      implicit class MetricFilterMutableBuilder[Self <: MetricFilter] (val x: Self) extends AnyVal {
+      extension [Self <: MetricFilter](x: Self) {
         
-        @scala.inline
-        def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
+        inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
+        inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
         
-        @scala.inline
-        def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+        inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+        inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
         
-        @scala.inline
-        def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+        inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+        inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
         
-        @scala.inline
-        def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+        inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       }
     }
     
@@ -1183,29 +955,22 @@ object Analyticsreporting {
     }
     object MetricFilterClause {
       
-      @scala.inline
-      def apply(): MetricFilterClause = {
+      inline def apply(): MetricFilterClause = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MetricFilterClause]
       }
       
-      @scala.inline
-      implicit class MetricFilterClauseMutableBuilder[Self <: MetricFilterClause] (val x: Self) extends AnyVal {
+      extension [Self <: MetricFilterClause](x: Self) {
         
-        @scala.inline
-        def setFilters(value: js.Array[MetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+        inline def setFilters(value: js.Array[MetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+        inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
         
-        @scala.inline
-        def setFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+        inline def setFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
         
-        @scala.inline
-        def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+        inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       }
     }
     
@@ -1217,32 +982,24 @@ object Analyticsreporting {
     }
     object MetricHeader {
       
-      @scala.inline
-      def apply(): MetricHeader = {
+      inline def apply(): MetricHeader = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MetricHeader]
       }
       
-      @scala.inline
-      implicit class MetricHeaderMutableBuilder[Self <: MetricHeader] (val x: Self) extends AnyVal {
+      extension [Self <: MetricHeader](x: Self) {
         
-        @scala.inline
-        def setMetricHeaderEntries(value: js.Array[MetricHeaderEntry]): Self = StObject.set(x, "metricHeaderEntries", value.asInstanceOf[js.Any])
+        inline def setMetricHeaderEntries(value: js.Array[MetricHeaderEntry]): Self = StObject.set(x, "metricHeaderEntries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricHeaderEntriesUndefined: Self = StObject.set(x, "metricHeaderEntries", js.undefined)
+        inline def setMetricHeaderEntriesUndefined: Self = StObject.set(x, "metricHeaderEntries", js.undefined)
         
-        @scala.inline
-        def setMetricHeaderEntriesVarargs(value: MetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value :_*))
+        inline def setMetricHeaderEntriesVarargs(value: MetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value :_*))
         
-        @scala.inline
-        def setPivotHeaders(value: js.Array[PivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
+        inline def setPivotHeaders(value: js.Array[PivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
+        inline def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
         
-        @scala.inline
-        def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
+        inline def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
       }
     }
     
@@ -1254,26 +1011,20 @@ object Analyticsreporting {
     }
     object MetricHeaderEntry {
       
-      @scala.inline
-      def apply(): MetricHeaderEntry = {
+      inline def apply(): MetricHeaderEntry = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MetricHeaderEntry]
       }
       
-      @scala.inline
-      implicit class MetricHeaderEntryMutableBuilder[Self <: MetricHeaderEntry] (val x: Self) extends AnyVal {
+      extension [Self <: MetricHeaderEntry](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -1283,23 +1034,18 @@ object Analyticsreporting {
     }
     object OrFiltersForSegment {
       
-      @scala.inline
-      def apply(): OrFiltersForSegment = {
+      inline def apply(): OrFiltersForSegment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OrFiltersForSegment]
       }
       
-      @scala.inline
-      implicit class OrFiltersForSegmentMutableBuilder[Self <: OrFiltersForSegment] (val x: Self) extends AnyVal {
+      extension [Self <: OrFiltersForSegment](x: Self) {
         
-        @scala.inline
-        def setSegmentFilterClauses(value: js.Array[SegmentFilterClause]): Self = StObject.set(x, "segmentFilterClauses", value.asInstanceOf[js.Any])
+        inline def setSegmentFilterClauses(value: js.Array[SegmentFilterClause]): Self = StObject.set(x, "segmentFilterClauses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentFilterClausesUndefined: Self = StObject.set(x, "segmentFilterClauses", js.undefined)
+        inline def setSegmentFilterClausesUndefined: Self = StObject.set(x, "segmentFilterClauses", js.undefined)
         
-        @scala.inline
-        def setSegmentFilterClausesVarargs(value: SegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value :_*))
+        inline def setSegmentFilterClausesVarargs(value: SegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value :_*))
       }
     }
     
@@ -1313,32 +1059,24 @@ object Analyticsreporting {
     }
     object OrderBy {
       
-      @scala.inline
-      def apply(): OrderBy = {
+      inline def apply(): OrderBy = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OrderBy]
       }
       
-      @scala.inline
-      implicit class OrderByMutableBuilder[Self <: OrderBy] (val x: Self) extends AnyVal {
+      extension [Self <: OrderBy](x: Self) {
         
-        @scala.inline
-        def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+        inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+        inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
         
-        @scala.inline
-        def setOrderType(value: String): Self = StObject.set(x, "orderType", value.asInstanceOf[js.Any])
+        inline def setOrderType(value: String): Self = StObject.set(x, "orderType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrderTypeUndefined: Self = StObject.set(x, "orderType", js.undefined)
+        inline def setOrderTypeUndefined: Self = StObject.set(x, "orderType", js.undefined)
         
-        @scala.inline
-        def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+        inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+        inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
       }
     }
     
@@ -1350,26 +1088,20 @@ object Analyticsreporting {
     }
     object PageviewData {
       
-      @scala.inline
-      def apply(): PageviewData = {
+      inline def apply(): PageviewData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PageviewData]
       }
       
-      @scala.inline
-      implicit class PageviewDataMutableBuilder[Self <: PageviewData] (val x: Self) extends AnyVal {
+      extension [Self <: PageviewData](x: Self) {
         
-        @scala.inline
-        def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
+        inline def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPagePathUndefined: Self = StObject.set(x, "pagePath", js.undefined)
+        inline def setPagePathUndefined: Self = StObject.set(x, "pagePath", js.undefined)
         
-        @scala.inline
-        def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
+        inline def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
+        inline def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
       }
     }
     
@@ -1387,53 +1119,38 @@ object Analyticsreporting {
     }
     object Pivot {
       
-      @scala.inline
-      def apply(): Pivot = {
+      inline def apply(): Pivot = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Pivot]
       }
       
-      @scala.inline
-      implicit class PivotMutableBuilder[Self <: Pivot] (val x: Self) extends AnyVal {
+      extension [Self <: Pivot](x: Self) {
         
-        @scala.inline
-        def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
+        inline def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
+        inline def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
         
-        @scala.inline
-        def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
+        inline def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
         
-        @scala.inline
-        def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+        inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+        inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        @scala.inline
-        def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
         
-        @scala.inline
-        def setMaxGroupCount(value: Double): Self = StObject.set(x, "maxGroupCount", value.asInstanceOf[js.Any])
+        inline def setMaxGroupCount(value: Double): Self = StObject.set(x, "maxGroupCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxGroupCountUndefined: Self = StObject.set(x, "maxGroupCount", js.undefined)
+        inline def setMaxGroupCountUndefined: Self = StObject.set(x, "maxGroupCount", js.undefined)
         
-        @scala.inline
-        def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+        inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+        inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        @scala.inline
-        def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
         
-        @scala.inline
-        def setStartGroup(value: Double): Self = StObject.set(x, "startGroup", value.asInstanceOf[js.Any])
+        inline def setStartGroup(value: Double): Self = StObject.set(x, "startGroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartGroupUndefined: Self = StObject.set(x, "startGroup", js.undefined)
+        inline def setStartGroupUndefined: Self = StObject.set(x, "startGroup", js.undefined)
       }
     }
     
@@ -1445,29 +1162,22 @@ object Analyticsreporting {
     }
     object PivotHeader {
       
-      @scala.inline
-      def apply(): PivotHeader = {
+      inline def apply(): PivotHeader = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PivotHeader]
       }
       
-      @scala.inline
-      implicit class PivotHeaderMutableBuilder[Self <: PivotHeader] (val x: Self) extends AnyVal {
+      extension [Self <: PivotHeader](x: Self) {
         
-        @scala.inline
-        def setPivotHeaderEntries(value: js.Array[PivotHeaderEntry]): Self = StObject.set(x, "pivotHeaderEntries", value.asInstanceOf[js.Any])
+        inline def setPivotHeaderEntries(value: js.Array[PivotHeaderEntry]): Self = StObject.set(x, "pivotHeaderEntries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPivotHeaderEntriesUndefined: Self = StObject.set(x, "pivotHeaderEntries", js.undefined)
+        inline def setPivotHeaderEntriesUndefined: Self = StObject.set(x, "pivotHeaderEntries", js.undefined)
         
-        @scala.inline
-        def setPivotHeaderEntriesVarargs(value: PivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value :_*))
+        inline def setPivotHeaderEntriesVarargs(value: PivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value :_*))
         
-        @scala.inline
-        def setTotalPivotGroupsCount(value: Double): Self = StObject.set(x, "totalPivotGroupsCount", value.asInstanceOf[js.Any])
+        inline def setTotalPivotGroupsCount(value: Double): Self = StObject.set(x, "totalPivotGroupsCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotalPivotGroupsCountUndefined: Self = StObject.set(x, "totalPivotGroupsCount", js.undefined)
+        inline def setTotalPivotGroupsCountUndefined: Self = StObject.set(x, "totalPivotGroupsCount", js.undefined)
       }
     }
     
@@ -1481,38 +1191,28 @@ object Analyticsreporting {
     }
     object PivotHeaderEntry {
       
-      @scala.inline
-      def apply(): PivotHeaderEntry = {
+      inline def apply(): PivotHeaderEntry = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PivotHeaderEntry]
       }
       
-      @scala.inline
-      implicit class PivotHeaderEntryMutableBuilder[Self <: PivotHeaderEntry] (val x: Self) extends AnyVal {
+      extension [Self <: PivotHeaderEntry](x: Self) {
         
-        @scala.inline
-        def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
+        inline def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
+        inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
         
-        @scala.inline
-        def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+        inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
         
-        @scala.inline
-        def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
+        inline def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
+        inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
         
-        @scala.inline
-        def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+        inline def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
         
-        @scala.inline
-        def setMetric(value: MetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+        inline def setMetric(value: MetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+        inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
       }
     }
     
@@ -1522,23 +1222,18 @@ object Analyticsreporting {
     }
     object PivotValueRegion {
       
-      @scala.inline
-      def apply(): PivotValueRegion = {
+      inline def apply(): PivotValueRegion = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PivotValueRegion]
       }
       
-      @scala.inline
-      implicit class PivotValueRegionMutableBuilder[Self <: PivotValueRegion] (val x: Self) extends AnyVal {
+      extension [Self <: PivotValueRegion](x: Self) {
         
-        @scala.inline
-        def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+        inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        @scala.inline
-        def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
       }
     }
     
@@ -1554,38 +1249,28 @@ object Analyticsreporting {
     }
     object ProductData {
       
-      @scala.inline
-      def apply(): ProductData = {
+      inline def apply(): ProductData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ProductData]
       }
       
-      @scala.inline
-      implicit class ProductDataMutableBuilder[Self <: ProductData] (val x: Self) extends AnyVal {
+      extension [Self <: ProductData](x: Self) {
         
-        @scala.inline
-        def setItemRevenue(value: Double): Self = StObject.set(x, "itemRevenue", value.asInstanceOf[js.Any])
+        inline def setItemRevenue(value: Double): Self = StObject.set(x, "itemRevenue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemRevenueUndefined: Self = StObject.set(x, "itemRevenue", js.undefined)
+        inline def setItemRevenueUndefined: Self = StObject.set(x, "itemRevenue", js.undefined)
         
-        @scala.inline
-        def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+        inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+        inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
         
-        @scala.inline
-        def setProductQuantity(value: String): Self = StObject.set(x, "productQuantity", value.asInstanceOf[js.Any])
+        inline def setProductQuantity(value: String): Self = StObject.set(x, "productQuantity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductQuantityUndefined: Self = StObject.set(x, "productQuantity", js.undefined)
+        inline def setProductQuantityUndefined: Self = StObject.set(x, "productQuantity", js.undefined)
         
-        @scala.inline
-        def setProductSku(value: String): Self = StObject.set(x, "productSku", value.asInstanceOf[js.Any])
+        inline def setProductSku(value: String): Self = StObject.set(x, "productSku", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductSkuUndefined: Self = StObject.set(x, "productSku", js.undefined)
+        inline def setProductSkuUndefined: Self = StObject.set(x, "productSku", js.undefined)
       }
     }
     
@@ -1599,32 +1284,24 @@ object Analyticsreporting {
     }
     object Report {
       
-      @scala.inline
-      def apply(): Report = {
+      inline def apply(): Report = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Report]
       }
       
-      @scala.inline
-      implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+      extension [Self <: Report](x: Self) {
         
-        @scala.inline
-        def setColumnHeader(value: ColumnHeader): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
+        inline def setColumnHeader(value: ColumnHeader): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnHeaderUndefined: Self = StObject.set(x, "columnHeader", js.undefined)
+        inline def setColumnHeaderUndefined: Self = StObject.set(x, "columnHeader", js.undefined)
         
-        @scala.inline
-        def setData(value: ReportData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: ReportData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1650,86 +1327,60 @@ object Analyticsreporting {
     }
     object ReportData {
       
-      @scala.inline
-      def apply(): ReportData = {
+      inline def apply(): ReportData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReportData]
       }
       
-      @scala.inline
-      implicit class ReportDataMutableBuilder[Self <: ReportData] (val x: Self) extends AnyVal {
+      extension [Self <: ReportData](x: Self) {
         
-        @scala.inline
-        def setDataLastRefreshed(value: String): Self = StObject.set(x, "dataLastRefreshed", value.asInstanceOf[js.Any])
+        inline def setDataLastRefreshed(value: String): Self = StObject.set(x, "dataLastRefreshed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataLastRefreshedUndefined: Self = StObject.set(x, "dataLastRefreshed", js.undefined)
+        inline def setDataLastRefreshedUndefined: Self = StObject.set(x, "dataLastRefreshed", js.undefined)
         
-        @scala.inline
-        def setIsDataGolden(value: Boolean): Self = StObject.set(x, "isDataGolden", value.asInstanceOf[js.Any])
+        inline def setIsDataGolden(value: Boolean): Self = StObject.set(x, "isDataGolden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDataGoldenUndefined: Self = StObject.set(x, "isDataGolden", js.undefined)
+        inline def setIsDataGoldenUndefined: Self = StObject.set(x, "isDataGolden", js.undefined)
         
-        @scala.inline
-        def setMaximums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
+        inline def setMaximums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
+        inline def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
         
-        @scala.inline
-        def setMaximumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value :_*))
+        inline def setMaximumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value :_*))
         
-        @scala.inline
-        def setMinimums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
+        inline def setMinimums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
+        inline def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
         
-        @scala.inline
-        def setMinimumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value :_*))
+        inline def setMinimumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value :_*))
         
-        @scala.inline
-        def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+        inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+        inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
         
-        @scala.inline
-        def setRows(value: js.Array[ReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: js.Array[ReportRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+        inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        @scala.inline
-        def setRowsVarargs(value: ReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: ReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
         
-        @scala.inline
-        def setSamplesReadCounts(value: js.Array[String]): Self = StObject.set(x, "samplesReadCounts", value.asInstanceOf[js.Any])
+        inline def setSamplesReadCounts(value: js.Array[String]): Self = StObject.set(x, "samplesReadCounts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSamplesReadCountsUndefined: Self = StObject.set(x, "samplesReadCounts", js.undefined)
+        inline def setSamplesReadCountsUndefined: Self = StObject.set(x, "samplesReadCounts", js.undefined)
         
-        @scala.inline
-        def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value :_*))
+        inline def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value :_*))
         
-        @scala.inline
-        def setSamplingSpaceSizes(value: js.Array[String]): Self = StObject.set(x, "samplingSpaceSizes", value.asInstanceOf[js.Any])
+        inline def setSamplingSpaceSizes(value: js.Array[String]): Self = StObject.set(x, "samplingSpaceSizes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSamplingSpaceSizesUndefined: Self = StObject.set(x, "samplingSpaceSizes", js.undefined)
+        inline def setSamplingSpaceSizesUndefined: Self = StObject.set(x, "samplingSpaceSizes", js.undefined)
         
-        @scala.inline
-        def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value :_*))
+        inline def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value :_*))
         
-        @scala.inline
-        def setTotals(value: js.Array[DateRangeValues]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
+        inline def setTotals(value: js.Array[DateRangeValues]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
+        inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
         
-        @scala.inline
-        def setTotalsVarargs(value: DateRangeValues*): Self = StObject.set(x, "totals", js.Array(value :_*))
+        inline def setTotalsVarargs(value: DateRangeValues*): Self = StObject.set(x, "totals", js.Array(value :_*))
       }
     }
     
@@ -1771,140 +1422,96 @@ object Analyticsreporting {
     }
     object ReportRequest {
       
-      @scala.inline
-      def apply(): ReportRequest = {
+      inline def apply(): ReportRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReportRequest]
       }
       
-      @scala.inline
-      implicit class ReportRequestMutableBuilder[Self <: ReportRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ReportRequest](x: Self) {
         
-        @scala.inline
-        def setCohortGroup(value: CohortGroup): Self = StObject.set(x, "cohortGroup", value.asInstanceOf[js.Any])
+        inline def setCohortGroup(value: CohortGroup): Self = StObject.set(x, "cohortGroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCohortGroupUndefined: Self = StObject.set(x, "cohortGroup", js.undefined)
+        inline def setCohortGroupUndefined: Self = StObject.set(x, "cohortGroup", js.undefined)
         
-        @scala.inline
-        def setDateRanges(value: js.Array[DateRange]): Self = StObject.set(x, "dateRanges", value.asInstanceOf[js.Any])
+        inline def setDateRanges(value: js.Array[DateRange]): Self = StObject.set(x, "dateRanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDateRangesUndefined: Self = StObject.set(x, "dateRanges", js.undefined)
+        inline def setDateRangesUndefined: Self = StObject.set(x, "dateRanges", js.undefined)
         
-        @scala.inline
-        def setDateRangesVarargs(value: DateRange*): Self = StObject.set(x, "dateRanges", js.Array(value :_*))
+        inline def setDateRangesVarargs(value: DateRange*): Self = StObject.set(x, "dateRanges", js.Array(value :_*))
         
-        @scala.inline
-        def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
+        inline def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
+        inline def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
         
-        @scala.inline
-        def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
+        inline def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
         
-        @scala.inline
-        def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+        inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+        inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        @scala.inline
-        def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
         
-        @scala.inline
-        def setFiltersExpression(value: String): Self = StObject.set(x, "filtersExpression", value.asInstanceOf[js.Any])
+        inline def setFiltersExpression(value: String): Self = StObject.set(x, "filtersExpression", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiltersExpressionUndefined: Self = StObject.set(x, "filtersExpression", js.undefined)
+        inline def setFiltersExpressionUndefined: Self = StObject.set(x, "filtersExpression", js.undefined)
         
-        @scala.inline
-        def setHideTotals(value: Boolean): Self = StObject.set(x, "hideTotals", value.asInstanceOf[js.Any])
+        inline def setHideTotals(value: Boolean): Self = StObject.set(x, "hideTotals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideTotalsUndefined: Self = StObject.set(x, "hideTotals", js.undefined)
+        inline def setHideTotalsUndefined: Self = StObject.set(x, "hideTotals", js.undefined)
         
-        @scala.inline
-        def setHideValueRanges(value: Boolean): Self = StObject.set(x, "hideValueRanges", value.asInstanceOf[js.Any])
+        inline def setHideValueRanges(value: Boolean): Self = StObject.set(x, "hideValueRanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideValueRangesUndefined: Self = StObject.set(x, "hideValueRanges", js.undefined)
+        inline def setHideValueRangesUndefined: Self = StObject.set(x, "hideValueRanges", js.undefined)
         
-        @scala.inline
-        def setIncludeEmptyRows(value: Boolean): Self = StObject.set(x, "includeEmptyRows", value.asInstanceOf[js.Any])
+        inline def setIncludeEmptyRows(value: Boolean): Self = StObject.set(x, "includeEmptyRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncludeEmptyRowsUndefined: Self = StObject.set(x, "includeEmptyRows", js.undefined)
+        inline def setIncludeEmptyRowsUndefined: Self = StObject.set(x, "includeEmptyRows", js.undefined)
         
-        @scala.inline
-        def setMetricFilterClauses(value: js.Array[MetricFilterClause]): Self = StObject.set(x, "metricFilterClauses", value.asInstanceOf[js.Any])
+        inline def setMetricFilterClauses(value: js.Array[MetricFilterClause]): Self = StObject.set(x, "metricFilterClauses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricFilterClausesUndefined: Self = StObject.set(x, "metricFilterClauses", js.undefined)
+        inline def setMetricFilterClausesUndefined: Self = StObject.set(x, "metricFilterClauses", js.undefined)
         
-        @scala.inline
-        def setMetricFilterClausesVarargs(value: MetricFilterClause*): Self = StObject.set(x, "metricFilterClauses", js.Array(value :_*))
+        inline def setMetricFilterClausesVarargs(value: MetricFilterClause*): Self = StObject.set(x, "metricFilterClauses", js.Array(value :_*))
         
-        @scala.inline
-        def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+        inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+        inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        @scala.inline
-        def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
         
-        @scala.inline
-        def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
+        inline def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
+        inline def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
         
-        @scala.inline
-        def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
+        inline def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
         
-        @scala.inline
-        def setPivots(value: js.Array[Pivot]): Self = StObject.set(x, "pivots", value.asInstanceOf[js.Any])
+        inline def setPivots(value: js.Array[Pivot]): Self = StObject.set(x, "pivots", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPivotsUndefined: Self = StObject.set(x, "pivots", js.undefined)
+        inline def setPivotsUndefined: Self = StObject.set(x, "pivots", js.undefined)
         
-        @scala.inline
-        def setPivotsVarargs(value: Pivot*): Self = StObject.set(x, "pivots", js.Array(value :_*))
+        inline def setPivotsVarargs(value: Pivot*): Self = StObject.set(x, "pivots", js.Array(value :_*))
         
-        @scala.inline
-        def setSamplingLevel(value: String): Self = StObject.set(x, "samplingLevel", value.asInstanceOf[js.Any])
+        inline def setSamplingLevel(value: String): Self = StObject.set(x, "samplingLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSamplingLevelUndefined: Self = StObject.set(x, "samplingLevel", js.undefined)
+        inline def setSamplingLevelUndefined: Self = StObject.set(x, "samplingLevel", js.undefined)
         
-        @scala.inline
-        def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+        inline def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+        inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
         
-        @scala.inline
-        def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+        inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
         
-        @scala.inline
-        def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+        inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
+        inline def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
       }
     }
     
@@ -1916,32 +1523,24 @@ object Analyticsreporting {
     }
     object ReportRow {
       
-      @scala.inline
-      def apply(): ReportRow = {
+      inline def apply(): ReportRow = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReportRow]
       }
       
-      @scala.inline
-      implicit class ReportRowMutableBuilder[Self <: ReportRow] (val x: Self) extends AnyVal {
+      extension [Self <: ReportRow](x: Self) {
         
-        @scala.inline
-        def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+        inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+        inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
         
-        @scala.inline
-        def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+        inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
         
-        @scala.inline
-        def setMetrics(value: js.Array[DateRangeValues]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+        inline def setMetrics(value: js.Array[DateRangeValues]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+        inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
         
-        @scala.inline
-        def setMetricsVarargs(value: DateRangeValues*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+        inline def setMetricsVarargs(value: DateRangeValues*): Self = StObject.set(x, "metrics", js.Array(value :_*))
       }
     }
     
@@ -1953,26 +1552,20 @@ object Analyticsreporting {
     }
     object ResourceQuotasRemaining {
       
-      @scala.inline
-      def apply(): ResourceQuotasRemaining = {
+      inline def apply(): ResourceQuotasRemaining = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResourceQuotasRemaining]
       }
       
-      @scala.inline
-      implicit class ResourceQuotasRemainingMutableBuilder[Self <: ResourceQuotasRemaining] (val x: Self) extends AnyVal {
+      extension [Self <: ResourceQuotasRemaining](x: Self) {
         
-        @scala.inline
-        def setDailyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
+        inline def setDailyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDailyQuotaTokensRemainingUndefined: Self = StObject.set(x, "dailyQuotaTokensRemaining", js.undefined)
+        inline def setDailyQuotaTokensRemainingUndefined: Self = StObject.set(x, "dailyQuotaTokensRemaining", js.undefined)
         
-        @scala.inline
-        def setHourlyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "hourlyQuotaTokensRemaining", value.asInstanceOf[js.Any])
+        inline def setHourlyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "hourlyQuotaTokensRemaining", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHourlyQuotaTokensRemainingUndefined: Self = StObject.set(x, "hourlyQuotaTokensRemaining", js.undefined)
+        inline def setHourlyQuotaTokensRemainingUndefined: Self = StObject.set(x, "hourlyQuotaTokensRemaining", js.undefined)
       }
     }
     
@@ -1988,38 +1581,28 @@ object Analyticsreporting {
     }
     object ScreenviewData {
       
-      @scala.inline
-      def apply(): ScreenviewData = {
+      inline def apply(): ScreenviewData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ScreenviewData]
       }
       
-      @scala.inline
-      implicit class ScreenviewDataMutableBuilder[Self <: ScreenviewData] (val x: Self) extends AnyVal {
+      extension [Self <: ScreenviewData](x: Self) {
         
-        @scala.inline
-        def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+        inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+        inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
         
-        @scala.inline
-        def setMobileDeviceBranding(value: String): Self = StObject.set(x, "mobileDeviceBranding", value.asInstanceOf[js.Any])
+        inline def setMobileDeviceBranding(value: String): Self = StObject.set(x, "mobileDeviceBranding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMobileDeviceBrandingUndefined: Self = StObject.set(x, "mobileDeviceBranding", js.undefined)
+        inline def setMobileDeviceBrandingUndefined: Self = StObject.set(x, "mobileDeviceBranding", js.undefined)
         
-        @scala.inline
-        def setMobileDeviceModel(value: String): Self = StObject.set(x, "mobileDeviceModel", value.asInstanceOf[js.Any])
+        inline def setMobileDeviceModel(value: String): Self = StObject.set(x, "mobileDeviceModel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMobileDeviceModelUndefined: Self = StObject.set(x, "mobileDeviceModel", js.undefined)
+        inline def setMobileDeviceModelUndefined: Self = StObject.set(x, "mobileDeviceModel", js.undefined)
         
-        @scala.inline
-        def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+        inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
+        inline def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
       }
     }
     
@@ -2039,53 +1622,38 @@ object Analyticsreporting {
     }
     object SearchUserActivityRequest {
       
-      @scala.inline
-      def apply(): SearchUserActivityRequest = {
+      inline def apply(): SearchUserActivityRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SearchUserActivityRequest]
       }
       
-      @scala.inline
-      implicit class SearchUserActivityRequestMutableBuilder[Self <: SearchUserActivityRequest] (val x: Self) extends AnyVal {
+      extension [Self <: SearchUserActivityRequest](x: Self) {
         
-        @scala.inline
-        def setActivityTypes(value: js.Array[String]): Self = StObject.set(x, "activityTypes", value.asInstanceOf[js.Any])
+        inline def setActivityTypes(value: js.Array[String]): Self = StObject.set(x, "activityTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivityTypesUndefined: Self = StObject.set(x, "activityTypes", js.undefined)
+        inline def setActivityTypesUndefined: Self = StObject.set(x, "activityTypes", js.undefined)
         
-        @scala.inline
-        def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value :_*))
+        inline def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+        inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+        inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
         
-        @scala.inline
-        def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
         
-        @scala.inline
-        def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+        inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
+        inline def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
       }
     }
     
@@ -2101,41 +1669,30 @@ object Analyticsreporting {
     }
     object SearchUserActivityResponse {
       
-      @scala.inline
-      def apply(): SearchUserActivityResponse = {
+      inline def apply(): SearchUserActivityResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SearchUserActivityResponse]
       }
       
-      @scala.inline
-      implicit class SearchUserActivityResponseMutableBuilder[Self <: SearchUserActivityResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SearchUserActivityResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+        inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+        inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
         
-        @scala.inline
-        def setSessions(value: js.Array[UserActivitySession]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+        inline def setSessions(value: js.Array[UserActivitySession]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
+        inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
         
-        @scala.inline
-        def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+        inline def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
         
-        @scala.inline
-        def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
+        inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotalRowsUndefined: Self = StObject.set(x, "totalRows", js.undefined)
+        inline def setTotalRowsUndefined: Self = StObject.set(x, "totalRows", js.undefined)
       }
     }
     
@@ -2147,26 +1704,20 @@ object Analyticsreporting {
     }
     object Segment {
       
-      @scala.inline
-      def apply(): Segment = {
+      inline def apply(): Segment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Segment]
       }
       
-      @scala.inline
-      implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
+      extension [Self <: Segment](x: Self) {
         
-        @scala.inline
-        def setDynamicSegment(value: DynamicSegment): Self = StObject.set(x, "dynamicSegment", value.asInstanceOf[js.Any])
+        inline def setDynamicSegment(value: DynamicSegment): Self = StObject.set(x, "dynamicSegment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDynamicSegmentUndefined: Self = StObject.set(x, "dynamicSegment", js.undefined)
+        inline def setDynamicSegmentUndefined: Self = StObject.set(x, "dynamicSegment", js.undefined)
         
-        @scala.inline
-        def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+        inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+        inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
       }
     }
     
@@ -2176,23 +1727,18 @@ object Analyticsreporting {
     }
     object SegmentDefinition {
       
-      @scala.inline
-      def apply(): SegmentDefinition = {
+      inline def apply(): SegmentDefinition = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SegmentDefinition]
       }
       
-      @scala.inline
-      implicit class SegmentDefinitionMutableBuilder[Self <: SegmentDefinition] (val x: Self) extends AnyVal {
+      extension [Self <: SegmentDefinition](x: Self) {
         
-        @scala.inline
-        def setSegmentFilters(value: js.Array[SegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
+        inline def setSegmentFilters(value: js.Array[SegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
+        inline def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
         
-        @scala.inline
-        def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
+        inline def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
       }
     }
     
@@ -2212,53 +1758,38 @@ object Analyticsreporting {
     }
     object SegmentDimensionFilter {
       
-      @scala.inline
-      def apply(): SegmentDimensionFilter = {
+      inline def apply(): SegmentDimensionFilter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SegmentDimensionFilter]
       }
       
-      @scala.inline
-      implicit class SegmentDimensionFilterMutableBuilder[Self <: SegmentDimensionFilter] (val x: Self) extends AnyVal {
+      extension [Self <: SegmentDimensionFilter](x: Self) {
         
-        @scala.inline
-        def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+        inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+        inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
         
-        @scala.inline
-        def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+        inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+        inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
         
-        @scala.inline
-        def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+        inline def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+        inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
         
-        @scala.inline
-        def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+        inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
         
-        @scala.inline
-        def setMaxComparisonValue(value: String): Self = StObject.set(x, "maxComparisonValue", value.asInstanceOf[js.Any])
+        inline def setMaxComparisonValue(value: String): Self = StObject.set(x, "maxComparisonValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxComparisonValueUndefined: Self = StObject.set(x, "maxComparisonValue", js.undefined)
+        inline def setMaxComparisonValueUndefined: Self = StObject.set(x, "maxComparisonValue", js.undefined)
         
-        @scala.inline
-        def setMinComparisonValue(value: String): Self = StObject.set(x, "minComparisonValue", value.asInstanceOf[js.Any])
+        inline def setMinComparisonValue(value: String): Self = StObject.set(x, "minComparisonValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinComparisonValueUndefined: Self = StObject.set(x, "minComparisonValue", js.undefined)
+        inline def setMinComparisonValueUndefined: Self = StObject.set(x, "minComparisonValue", js.undefined)
         
-        @scala.inline
-        def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+        inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       }
     }
     
@@ -2272,32 +1803,24 @@ object Analyticsreporting {
     }
     object SegmentFilter {
       
-      @scala.inline
-      def apply(): SegmentFilter = {
+      inline def apply(): SegmentFilter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SegmentFilter]
       }
       
-      @scala.inline
-      implicit class SegmentFilterMutableBuilder[Self <: SegmentFilter] (val x: Self) extends AnyVal {
+      extension [Self <: SegmentFilter](x: Self) {
         
-        @scala.inline
-        def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+        inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+        inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
         
-        @scala.inline
-        def setSequenceSegment(value: SequenceSegment): Self = StObject.set(x, "sequenceSegment", value.asInstanceOf[js.Any])
+        inline def setSequenceSegment(value: SequenceSegment): Self = StObject.set(x, "sequenceSegment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSequenceSegmentUndefined: Self = StObject.set(x, "sequenceSegment", js.undefined)
+        inline def setSequenceSegmentUndefined: Self = StObject.set(x, "sequenceSegment", js.undefined)
         
-        @scala.inline
-        def setSimpleSegment(value: SimpleSegment): Self = StObject.set(x, "simpleSegment", value.asInstanceOf[js.Any])
+        inline def setSimpleSegment(value: SimpleSegment): Self = StObject.set(x, "simpleSegment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSimpleSegmentUndefined: Self = StObject.set(x, "simpleSegment", js.undefined)
+        inline def setSimpleSegmentUndefined: Self = StObject.set(x, "simpleSegment", js.undefined)
       }
     }
     
@@ -2311,32 +1834,24 @@ object Analyticsreporting {
     }
     object SegmentFilterClause {
       
-      @scala.inline
-      def apply(): SegmentFilterClause = {
+      inline def apply(): SegmentFilterClause = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SegmentFilterClause]
       }
       
-      @scala.inline
-      implicit class SegmentFilterClauseMutableBuilder[Self <: SegmentFilterClause] (val x: Self) extends AnyVal {
+      extension [Self <: SegmentFilterClause](x: Self) {
         
-        @scala.inline
-        def setDimensionFilter(value: SegmentDimensionFilter): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
+        inline def setDimensionFilter(value: SegmentDimensionFilter): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
+        inline def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
         
-        @scala.inline
-        def setMetricFilter(value: SegmentMetricFilter): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
+        inline def setMetricFilter(value: SegmentMetricFilter): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
+        inline def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
         
-        @scala.inline
-        def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+        inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+        inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       }
     }
     
@@ -2354,44 +1869,32 @@ object Analyticsreporting {
     }
     object SegmentMetricFilter {
       
-      @scala.inline
-      def apply(): SegmentMetricFilter = {
+      inline def apply(): SegmentMetricFilter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SegmentMetricFilter]
       }
       
-      @scala.inline
-      implicit class SegmentMetricFilterMutableBuilder[Self <: SegmentMetricFilter] (val x: Self) extends AnyVal {
+      extension [Self <: SegmentMetricFilter](x: Self) {
         
-        @scala.inline
-        def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
+        inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
+        inline def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
         
-        @scala.inline
-        def setMaxComparisonValue(value: String): Self = StObject.set(x, "maxComparisonValue", value.asInstanceOf[js.Any])
+        inline def setMaxComparisonValue(value: String): Self = StObject.set(x, "maxComparisonValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxComparisonValueUndefined: Self = StObject.set(x, "maxComparisonValue", js.undefined)
+        inline def setMaxComparisonValueUndefined: Self = StObject.set(x, "maxComparisonValue", js.undefined)
         
-        @scala.inline
-        def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+        inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+        inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
         
-        @scala.inline
-        def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+        inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
         
-        @scala.inline
-        def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+        inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       }
     }
     
@@ -2403,29 +1906,22 @@ object Analyticsreporting {
     }
     object SegmentSequenceStep {
       
-      @scala.inline
-      def apply(): SegmentSequenceStep = {
+      inline def apply(): SegmentSequenceStep = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SegmentSequenceStep]
       }
       
-      @scala.inline
-      implicit class SegmentSequenceStepMutableBuilder[Self <: SegmentSequenceStep] (val x: Self) extends AnyVal {
+      extension [Self <: SegmentSequenceStep](x: Self) {
         
-        @scala.inline
-        def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
+        inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
+        inline def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
         
-        @scala.inline
-        def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
+        inline def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
+        inline def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
         
-        @scala.inline
-        def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
+        inline def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
       }
     }
     
@@ -2437,29 +1933,22 @@ object Analyticsreporting {
     }
     object SequenceSegment {
       
-      @scala.inline
-      def apply(): SequenceSegment = {
+      inline def apply(): SequenceSegment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SequenceSegment]
       }
       
-      @scala.inline
-      implicit class SequenceSegmentMutableBuilder[Self <: SequenceSegment] (val x: Self) extends AnyVal {
+      extension [Self <: SequenceSegment](x: Self) {
         
-        @scala.inline
-        def setFirstStepShouldMatchFirstHit(value: Boolean): Self = StObject.set(x, "firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
+        inline def setFirstStepShouldMatchFirstHit(value: Boolean): Self = StObject.set(x, "firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstStepShouldMatchFirstHitUndefined: Self = StObject.set(x, "firstStepShouldMatchFirstHit", js.undefined)
+        inline def setFirstStepShouldMatchFirstHitUndefined: Self = StObject.set(x, "firstStepShouldMatchFirstHit", js.undefined)
         
-        @scala.inline
-        def setSegmentSequenceSteps(value: js.Array[SegmentSequenceStep]): Self = StObject.set(x, "segmentSequenceSteps", value.asInstanceOf[js.Any])
+        inline def setSegmentSequenceSteps(value: js.Array[SegmentSequenceStep]): Self = StObject.set(x, "segmentSequenceSteps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentSequenceStepsUndefined: Self = StObject.set(x, "segmentSequenceSteps", js.undefined)
+        inline def setSegmentSequenceStepsUndefined: Self = StObject.set(x, "segmentSequenceSteps", js.undefined)
         
-        @scala.inline
-        def setSegmentSequenceStepsVarargs(value: SegmentSequenceStep*): Self = StObject.set(x, "segmentSequenceSteps", js.Array(value :_*))
+        inline def setSegmentSequenceStepsVarargs(value: SegmentSequenceStep*): Self = StObject.set(x, "segmentSequenceSteps", js.Array(value :_*))
       }
     }
     
@@ -2469,23 +1958,18 @@ object Analyticsreporting {
     }
     object SimpleSegment {
       
-      @scala.inline
-      def apply(): SimpleSegment = {
+      inline def apply(): SimpleSegment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SimpleSegment]
       }
       
-      @scala.inline
-      implicit class SimpleSegmentMutableBuilder[Self <: SimpleSegment] (val x: Self) extends AnyVal {
+      extension [Self <: SimpleSegment](x: Self) {
         
-        @scala.inline
-        def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
+        inline def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
+        inline def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
         
-        @scala.inline
-        def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
+        inline def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
       }
     }
     
@@ -2501,38 +1985,28 @@ object Analyticsreporting {
     }
     object TransactionData {
       
-      @scala.inline
-      def apply(): TransactionData = {
+      inline def apply(): TransactionData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TransactionData]
       }
       
-      @scala.inline
-      implicit class TransactionDataMutableBuilder[Self <: TransactionData] (val x: Self) extends AnyVal {
+      extension [Self <: TransactionData](x: Self) {
         
-        @scala.inline
-        def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+        inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+        inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
         
-        @scala.inline
-        def setTransactionRevenue(value: Double): Self = StObject.set(x, "transactionRevenue", value.asInstanceOf[js.Any])
+        inline def setTransactionRevenue(value: Double): Self = StObject.set(x, "transactionRevenue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionRevenueUndefined: Self = StObject.set(x, "transactionRevenue", js.undefined)
+        inline def setTransactionRevenueUndefined: Self = StObject.set(x, "transactionRevenue", js.undefined)
         
-        @scala.inline
-        def setTransactionShipping(value: Double): Self = StObject.set(x, "transactionShipping", value.asInstanceOf[js.Any])
+        inline def setTransactionShipping(value: Double): Self = StObject.set(x, "transactionShipping", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionShippingUndefined: Self = StObject.set(x, "transactionShipping", js.undefined)
+        inline def setTransactionShippingUndefined: Self = StObject.set(x, "transactionShipping", js.undefined)
         
-        @scala.inline
-        def setTransactionTax(value: Double): Self = StObject.set(x, "transactionTax", value.asInstanceOf[js.Any])
+        inline def setTransactionTax(value: Double): Self = StObject.set(x, "transactionTax", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionTaxUndefined: Self = StObject.set(x, "transactionTax", js.undefined)
+        inline def setTransactionTaxUndefined: Self = StObject.set(x, "transactionTax", js.undefined)
       }
     }
     
@@ -2544,26 +2018,20 @@ object Analyticsreporting {
     }
     object User {
       
-      @scala.inline
-      def apply(): User = {
+      inline def apply(): User = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[User]
       }
       
-      @scala.inline
-      implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+      extension [Self <: User](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -2583,53 +2051,38 @@ object Analyticsreporting {
     }
     object UserActivitySession {
       
-      @scala.inline
-      def apply(): UserActivitySession = {
+      inline def apply(): UserActivitySession = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UserActivitySession]
       }
       
-      @scala.inline
-      implicit class UserActivitySessionMutableBuilder[Self <: UserActivitySession] (val x: Self) extends AnyVal {
+      extension [Self <: UserActivitySession](x: Self) {
         
-        @scala.inline
-        def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+        inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+        inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
         
-        @scala.inline
-        def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+        inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
         
-        @scala.inline
-        def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+        inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+        inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
         
-        @scala.inline
-        def setDeviceCategory(value: String): Self = StObject.set(x, "deviceCategory", value.asInstanceOf[js.Any])
+        inline def setDeviceCategory(value: String): Self = StObject.set(x, "deviceCategory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeviceCategoryUndefined: Self = StObject.set(x, "deviceCategory", js.undefined)
+        inline def setDeviceCategoryUndefined: Self = StObject.set(x, "deviceCategory", js.undefined)
         
-        @scala.inline
-        def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+        inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+        inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
         
-        @scala.inline
-        def setSessionDate(value: String): Self = StObject.set(x, "sessionDate", value.asInstanceOf[js.Any])
+        inline def setSessionDate(value: String): Self = StObject.set(x, "sessionDate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionDateUndefined: Self = StObject.set(x, "sessionDate", js.undefined)
+        inline def setSessionDateUndefined: Self = StObject.set(x, "sessionDate", js.undefined)
         
-        @scala.inline
-        def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+        inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+        inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
       }
     }
   }

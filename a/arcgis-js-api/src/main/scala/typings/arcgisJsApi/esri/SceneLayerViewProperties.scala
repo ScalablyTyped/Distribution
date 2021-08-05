@@ -31,31 +31,23 @@ trait SceneLayerViewProperties
 }
 object SceneLayerViewProperties {
   
-  @scala.inline
-  def apply(): SceneLayerViewProperties = {
+  inline def apply(): SceneLayerViewProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneLayerViewProperties]
   }
   
-  @scala.inline
-  implicit class SceneLayerViewPropertiesMutableBuilder[Self <: SceneLayerViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SceneLayerViewProperties](x: Self) {
     
-    @scala.inline
-    def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMaximumNumberOfFeatures(value: Double): Self = StObject.set(x, "maximumNumberOfFeatures", value.asInstanceOf[js.Any])
+    inline def setMaximumNumberOfFeatures(value: Double): Self = StObject.set(x, "maximumNumberOfFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumNumberOfFeaturesExceeded(value: Boolean): Self = StObject.set(x, "maximumNumberOfFeaturesExceeded", value.asInstanceOf[js.Any])
+    inline def setMaximumNumberOfFeaturesExceeded(value: Boolean): Self = StObject.set(x, "maximumNumberOfFeaturesExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumNumberOfFeaturesExceededUndefined: Self = StObject.set(x, "maximumNumberOfFeaturesExceeded", js.undefined)
+    inline def setMaximumNumberOfFeaturesExceededUndefined: Self = StObject.set(x, "maximumNumberOfFeaturesExceeded", js.undefined)
     
-    @scala.inline
-    def setMaximumNumberOfFeaturesUndefined: Self = StObject.set(x, "maximumNumberOfFeatures", js.undefined)
+    inline def setMaximumNumberOfFeaturesUndefined: Self = StObject.set(x, "maximumNumberOfFeatures", js.undefined)
   }
 }

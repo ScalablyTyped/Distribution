@@ -11,22 +11,17 @@ trait BulkEditAssignedLocationsResponse extends StObject {
 }
 object BulkEditAssignedLocationsResponse {
   
-  @scala.inline
-  def apply(): BulkEditAssignedLocationsResponse = {
+  inline def apply(): BulkEditAssignedLocationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditAssignedLocationsResponse]
   }
   
-  @scala.inline
-  implicit class BulkEditAssignedLocationsResponseMutableBuilder[Self <: BulkEditAssignedLocationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditAssignedLocationsResponse](x: Self) {
     
-    @scala.inline
-    def setAssignedLocations(value: js.Array[AssignedLocation]): Self = StObject.set(x, "assignedLocations", value.asInstanceOf[js.Any])
+    inline def setAssignedLocations(value: js.Array[AssignedLocation]): Self = StObject.set(x, "assignedLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedLocationsUndefined: Self = StObject.set(x, "assignedLocations", js.undefined)
+    inline def setAssignedLocationsUndefined: Self = StObject.set(x, "assignedLocations", js.undefined)
     
-    @scala.inline
-    def setAssignedLocationsVarargs(value: AssignedLocation*): Self = StObject.set(x, "assignedLocations", js.Array(value :_*))
+    inline def setAssignedLocationsVarargs(value: AssignedLocation*): Self = StObject.set(x, "assignedLocations", js.Array(value :_*))
   }
 }

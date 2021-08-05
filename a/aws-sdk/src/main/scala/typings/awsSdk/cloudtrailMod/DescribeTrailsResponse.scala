@@ -13,22 +13,17 @@ trait DescribeTrailsResponse extends StObject {
 }
 object DescribeTrailsResponse {
   
-  @scala.inline
-  def apply(): DescribeTrailsResponse = {
+  inline def apply(): DescribeTrailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTrailsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTrailsResponseMutableBuilder[Self <: DescribeTrailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrailsResponse](x: Self) {
     
-    @scala.inline
-    def setTrailList(value: TrailList): Self = StObject.set(x, "trailList", value.asInstanceOf[js.Any])
+    inline def setTrailList(value: TrailList): Self = StObject.set(x, "trailList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailListUndefined: Self = StObject.set(x, "trailList", js.undefined)
+    inline def setTrailListUndefined: Self = StObject.set(x, "trailList", js.undefined)
     
-    @scala.inline
-    def setTrailListVarargs(value: Trail*): Self = StObject.set(x, "trailList", js.Array(value :_*))
+    inline def setTrailListVarargs(value: Trail*): Self = StObject.set(x, "trailList", js.Array(value :_*))
   }
 }

@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ZoomSettingsScope extends StObject
 object ZoomSettingsScope {
   
-  @scala.inline
-  def `per-origin`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-origin` = "per-origin".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-origin`]
+  inline def `per-origin`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-origin` = "per-origin".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-origin`]
   
-  @scala.inline
-  def `per-tab`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-tab` = "per-tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-tab`]
+  inline def `per-tab`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-tab` = "per-tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`per-tab`]
 }

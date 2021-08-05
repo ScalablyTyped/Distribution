@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(content: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(content: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("beautify", JSImport.Namespace)
   @js.native
@@ -24,17 +23,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(format: css | json | js_ | html | xml): Options = {
+    inline def apply(format: css | json | js_ | html | xml): Options = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFormat(value: css | json | js_ | html | xml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: css | json | js_ | html | xml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
 }

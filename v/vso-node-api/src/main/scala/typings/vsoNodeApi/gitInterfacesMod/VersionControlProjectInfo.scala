@@ -18,8 +18,7 @@ trait VersionControlProjectInfo extends StObject {
 }
 object VersionControlProjectInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultSourceControlType: SourceControlTypes,
     project: TeamProjectReference,
     supportsGit: Boolean,
@@ -29,19 +28,14 @@ object VersionControlProjectInfo {
     __obj.asInstanceOf[VersionControlProjectInfo]
   }
   
-  @scala.inline
-  implicit class VersionControlProjectInfoMutableBuilder[Self <: VersionControlProjectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VersionControlProjectInfo](x: Self) {
     
-    @scala.inline
-    def setDefaultSourceControlType(value: SourceControlTypes): Self = StObject.set(x, "defaultSourceControlType", value.asInstanceOf[js.Any])
+    inline def setDefaultSourceControlType(value: SourceControlTypes): Self = StObject.set(x, "defaultSourceControlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsGit(value: Boolean): Self = StObject.set(x, "supportsGit", value.asInstanceOf[js.Any])
+    inline def setSupportsGit(value: Boolean): Self = StObject.set(x, "supportsGit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTFVC(value: Boolean): Self = StObject.set(x, "supportsTFVC", value.asInstanceOf[js.Any])
+    inline def setSupportsTFVC(value: Boolean): Self = StObject.set(x, "supportsTFVC", value.asInstanceOf[js.Any])
   }
 }

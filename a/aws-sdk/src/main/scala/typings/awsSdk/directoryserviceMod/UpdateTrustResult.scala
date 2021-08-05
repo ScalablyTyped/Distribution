@@ -15,25 +15,19 @@ trait UpdateTrustResult extends StObject {
 }
 object UpdateTrustResult {
   
-  @scala.inline
-  def apply(): UpdateTrustResult = {
+  inline def apply(): UpdateTrustResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTrustResult]
   }
   
-  @scala.inline
-  implicit class UpdateTrustResultMutableBuilder[Self <: UpdateTrustResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTrustResult](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
+    inline def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustIdUndefined: Self = StObject.set(x, "TrustId", js.undefined)
+    inline def setTrustIdUndefined: Self = StObject.set(x, "TrustId", js.undefined)
   }
 }

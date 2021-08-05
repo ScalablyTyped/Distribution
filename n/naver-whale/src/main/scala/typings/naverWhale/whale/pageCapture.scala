@@ -21,17 +21,14 @@ object pageCapture {
   }
   object SaveDetails {
     
-    @scala.inline
-    def apply(tabId: Double): SaveDetails = {
+    inline def apply(tabId: Double): SaveDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SaveDetails]
     }
     
-    @scala.inline
-    implicit class SaveDetailsMutableBuilder[Self <: SaveDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SaveDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
 }

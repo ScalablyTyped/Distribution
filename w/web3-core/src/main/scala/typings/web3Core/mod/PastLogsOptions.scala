@@ -12,19 +12,15 @@ trait PastLogsOptions
 }
 object PastLogsOptions {
   
-  @scala.inline
-  def apply(): PastLogsOptions = {
+  inline def apply(): PastLogsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PastLogsOptions]
   }
   
-  @scala.inline
-  implicit class PastLogsOptionsMutableBuilder[Self <: PastLogsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PastLogsOptions](x: Self) {
     
-    @scala.inline
-    def setToBlock(value: BlockNumber): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
+    inline def setToBlock(value: BlockNumber): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
+    inline def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
   }
 }

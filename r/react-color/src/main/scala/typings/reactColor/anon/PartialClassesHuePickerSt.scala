@@ -11,19 +11,15 @@ trait PartialClassesHuePickerSt extends StObject {
 }
 object PartialClassesHuePickerSt {
   
-  @scala.inline
-  def apply(): PartialClassesHuePickerSt = {
+  inline def apply(): PartialClassesHuePickerSt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesHuePickerSt]
   }
   
-  @scala.inline
-  implicit class PartialClassesHuePickerStMutableBuilder[Self <: PartialClassesHuePickerSt] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesHuePickerSt](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialHuePickerStylesPro): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialHuePickerStylesPro): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

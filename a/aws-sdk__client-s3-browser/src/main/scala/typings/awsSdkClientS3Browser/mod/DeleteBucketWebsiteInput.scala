@@ -9,8 +9,7 @@ trait DeleteBucketWebsiteInput
      with typings.awsSdkClientS3Browser.typesDeleteBucketWebsiteInputMod.DeleteBucketWebsiteInput
 object DeleteBucketWebsiteInput {
   
-  @scala.inline
-  def apply(Bucket: String): DeleteBucketWebsiteInput = {
+  inline def apply(Bucket: String): DeleteBucketWebsiteInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketWebsiteInput]
   }

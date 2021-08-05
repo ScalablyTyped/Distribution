@@ -16,8 +16,7 @@ trait IChartistEasingDefinition extends StObject {
 }
 object IChartistEasingDefinition {
   
-  @scala.inline
-  def apply(`0`: Double, `1`: Double, `2`: Double, `3`: Double): IChartistEasingDefinition = {
+  inline def apply(`0`: Double, `1`: Double, `2`: Double, `3`: Double): IChartistEasingDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
@@ -26,19 +25,14 @@ object IChartistEasingDefinition {
     __obj.asInstanceOf[IChartistEasingDefinition]
   }
   
-  @scala.inline
-  implicit class IChartistEasingDefinitionMutableBuilder[Self <: IChartistEasingDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistEasingDefinition](x: Self) {
     
-    @scala.inline
-    def set0(value: Double): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: Double): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1(value: Double): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: Double): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2(value: Double): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: Double): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3(value: Double): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: Double): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
   }
 }

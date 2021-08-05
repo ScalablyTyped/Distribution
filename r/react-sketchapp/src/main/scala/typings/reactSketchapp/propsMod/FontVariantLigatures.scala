@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontVariantLigatures extends StObject
 object FontVariantLigatures {
   
-  @scala.inline
-  def none: typings.reactSketchapp.reactSketchappStrings.none = "none".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.none]
+  inline def none: typings.reactSketchapp.reactSketchappStrings.none = "none".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.none]
   
-  @scala.inline
-  def normal: typings.reactSketchapp.reactSketchappStrings.normal = "normal".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.normal]
+  inline def normal: typings.reactSketchapp.reactSketchappStrings.normal = "normal".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.normal]
 }

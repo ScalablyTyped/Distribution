@@ -67,8 +67,7 @@ trait XSQLData
 }
 object XSQLData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SQLTypeName: String,
     acquire: () => Unit,
     getSQLTypeName: () => String,
@@ -81,19 +80,14 @@ object XSQLData {
     __obj.asInstanceOf[XSQLData]
   }
   
-  @scala.inline
-  implicit class XSQLDataMutableBuilder[Self <: XSQLData] (val x: Self) extends AnyVal {
+  extension [Self <: XSQLData](x: Self) {
     
-    @scala.inline
-    def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
+    inline def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadSQL(value: (XSQLInput, String) => Unit): Self = StObject.set(x, "readSQL", js.Any.fromFunction2(value))
+    inline def setReadSQL(value: (XSQLInput, String) => Unit): Self = StObject.set(x, "readSQL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSQLTypeName(value: String): Self = StObject.set(x, "SQLTypeName", value.asInstanceOf[js.Any])
+    inline def setSQLTypeName(value: String): Self = StObject.set(x, "SQLTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteSQL(value: XSQLOutput => Unit): Self = StObject.set(x, "writeSQL", js.Any.fromFunction1(value))
+    inline def setWriteSQL(value: XSQLOutput => Unit): Self = StObject.set(x, "writeSQL", js.Any.fromFunction1(value))
   }
 }

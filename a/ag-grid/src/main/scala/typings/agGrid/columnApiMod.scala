@@ -45,7 +45,7 @@ object columnApiMod {
     
     def autoSizeColumns(keys: js.Array[String | Column]): Unit = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
     def columnGroupOpened(group: String, newValue: Boolean): Unit = js.native
     def columnGroupOpened(group: OriginalColumnGroup, newValue: Boolean): Unit = js.native

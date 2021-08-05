@@ -40,7 +40,7 @@ trait Table extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.Table_typekey")
+  /* private */ @JSName("PowerPoint.Table_typekey")
   var PowerPointDotTable_typekey: Table = js.native
   
   val Rows: typings.activexPowerpoint.PowerPoint.Rows = js.native

@@ -33,8 +33,7 @@ trait BaseElevationLayerQueryElevationOptions
 }
 object BaseElevationLayerQueryElevationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object BaseElevationLayerQueryElevationOptions {
     __obj.asInstanceOf[BaseElevationLayerQueryElevationOptions]
   }
   
-  @scala.inline
-  implicit class BaseElevationLayerQueryElevationOptionsMutableBuilder[Self <: BaseElevationLayerQueryElevationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseElevationLayerQueryElevationOptions](x: Self) {
     
-    @scala.inline
-    def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
+    inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
+    inline def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
     
-    @scala.inline
-    def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
+    inline def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
     
-    @scala.inline
-    def setReturnSampleInfo(value: Boolean): Self = StObject.set(x, "returnSampleInfo", value.asInstanceOf[js.Any])
+    inline def setReturnSampleInfo(value: Boolean): Self = StObject.set(x, "returnSampleInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnSampleInfoUndefined: Self = StObject.set(x, "returnSampleInfo", js.undefined)
+    inline def setReturnSampleInfoUndefined: Self = StObject.set(x, "returnSampleInfo", js.undefined)
   }
 }

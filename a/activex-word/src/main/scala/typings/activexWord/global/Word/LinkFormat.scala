@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LinkFormat")
 @js.native
-class LinkFormat protected ()
+/* private */ class LinkFormat ()
   extends StObject
      with typings.activexWord.Word.LinkFormat {
   
@@ -47,7 +47,7 @@ class LinkFormat protected ()
   /* CompleteClass */
   override def Update(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.LinkFormat_typekey")
   var WordDotLinkFormat_typekey: typings.activexWord.Word.LinkFormat = js.native
 }

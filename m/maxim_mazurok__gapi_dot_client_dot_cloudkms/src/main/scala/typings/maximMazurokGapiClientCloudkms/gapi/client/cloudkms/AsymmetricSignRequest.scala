@@ -20,25 +20,19 @@ trait AsymmetricSignRequest extends StObject {
 }
 object AsymmetricSignRequest {
   
-  @scala.inline
-  def apply(): AsymmetricSignRequest = {
+  inline def apply(): AsymmetricSignRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsymmetricSignRequest]
   }
   
-  @scala.inline
-  implicit class AsymmetricSignRequestMutableBuilder[Self <: AsymmetricSignRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AsymmetricSignRequest](x: Self) {
     
-    @scala.inline
-    def setDigest(value: Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestCrc32c(value: String): Self = StObject.set(x, "digestCrc32c", value.asInstanceOf[js.Any])
+    inline def setDigestCrc32c(value: String): Self = StObject.set(x, "digestCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestCrc32cUndefined: Self = StObject.set(x, "digestCrc32c", js.undefined)
+    inline def setDigestCrc32cUndefined: Self = StObject.set(x, "digestCrc32c", js.undefined)
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
   }
 }

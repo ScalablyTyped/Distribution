@@ -20,8 +20,7 @@ trait ConditionalType
 }
 object ConditionalType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkType: Type,
     extendsType: Type,
     flags: TypeFlags,
@@ -56,22 +55,16 @@ object ConditionalType {
     __obj.asInstanceOf[ConditionalType]
   }
   
-  @scala.inline
-  implicit class ConditionalTypeMutableBuilder[Self <: ConditionalType] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalType](x: Self) {
     
-    @scala.inline
-    def setCheckType(value: Type): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
+    inline def setCheckType(value: Type): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendsType(value: Type): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
+    inline def setExtendsType(value: Type): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedFalseType(value: Type): Self = StObject.set(x, "resolvedFalseType", value.asInstanceOf[js.Any])
+    inline def setResolvedFalseType(value: Type): Self = StObject.set(x, "resolvedFalseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedTrueType(value: Type): Self = StObject.set(x, "resolvedTrueType", value.asInstanceOf[js.Any])
+    inline def setResolvedTrueType(value: Type): Self = StObject.set(x, "resolvedTrueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: ConditionalRoot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: ConditionalRoot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

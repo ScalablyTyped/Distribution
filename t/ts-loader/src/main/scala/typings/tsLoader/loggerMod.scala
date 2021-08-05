@@ -40,8 +40,7 @@ object loggerMod {
     /* 2 */ val WARN: typings.tsLoader.loggerMod.LogLevel.WARN & Double = js.native
   }
   
-  @scala.inline
-  def makeLogger(loaderOptions: LoaderOptions, colors: Chalk): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLogger")(loaderOptions.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[Logger]
+  inline def makeLogger(loaderOptions: LoaderOptions, colors: Chalk): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLogger")(loaderOptions.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[Logger]
   
   trait Logger extends StObject {
     
@@ -64,8 +63,7 @@ object loggerMod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       log: /* message */ String => Unit,
       logError: /* message */ String => Unit,
       logInfo: /* message */ String => Unit,
@@ -75,20 +73,15 @@ object loggerMod {
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setLog(value: /* message */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* message */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogError(value: /* message */ String => Unit): Self = StObject.set(x, "logError", js.Any.fromFunction1(value))
+      inline def setLogError(value: /* message */ String => Unit): Self = StObject.set(x, "logError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogInfo(value: /* message */ String => Unit): Self = StObject.set(x, "logInfo", js.Any.fromFunction1(value))
+      inline def setLogInfo(value: /* message */ String => Unit): Self = StObject.set(x, "logInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogWarning(value: /* message */ String => Unit): Self = StObject.set(x, "logWarning", js.Any.fromFunction1(value))
+      inline def setLogWarning(value: /* message */ String => Unit): Self = StObject.set(x, "logWarning", js.Any.fromFunction1(value))
     }
   }
   

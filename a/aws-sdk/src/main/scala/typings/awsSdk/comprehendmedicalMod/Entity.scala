@@ -53,73 +53,51 @@ trait Entity extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply(): Entity = {
+  inline def apply(): Entity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Entity]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+  extension [Self <: Entity](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
+    inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
+    inline def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
     
-    @scala.inline
-    def setCategory(value: EntityType): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: EntityType): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
-    @scala.inline
-    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
     
-    @scala.inline
-    def setId(value: Integer): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Integer): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
-    @scala.inline
-    def setTraits(value: TraitList): Self = StObject.set(x, "Traits", value.asInstanceOf[js.Any])
+    inline def setTraits(value: TraitList): Self = StObject.set(x, "Traits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
+    inline def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
-    @scala.inline
-    def setTraitsVarargs(value: Trait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: Trait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: EntitySubType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: EntitySubType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

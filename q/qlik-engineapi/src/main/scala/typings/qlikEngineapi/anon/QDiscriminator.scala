@@ -10,16 +10,13 @@ trait QDiscriminator extends StObject {
 }
 object QDiscriminator {
   
-  @scala.inline
-  def apply(qDiscriminator: String): QDiscriminator = {
+  inline def apply(qDiscriminator: String): QDiscriminator = {
     val __obj = js.Dynamic.literal(qDiscriminator = qDiscriminator.asInstanceOf[js.Any])
     __obj.asInstanceOf[QDiscriminator]
   }
   
-  @scala.inline
-  implicit class QDiscriminatorMutableBuilder[Self <: QDiscriminator] (val x: Self) extends AnyVal {
+  extension [Self <: QDiscriminator](x: Self) {
     
-    @scala.inline
-    def setQDiscriminator(value: String): Self = StObject.set(x, "qDiscriminator", value.asInstanceOf[js.Any])
+    inline def setQDiscriminator(value: String): Self = StObject.set(x, "qDiscriminator", value.asInstanceOf[js.Any])
   }
 }

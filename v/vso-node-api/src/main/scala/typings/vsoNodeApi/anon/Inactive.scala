@@ -12,19 +12,15 @@ trait Inactive extends StObject {
 }
 object Inactive {
   
-  @scala.inline
-  def apply(active: scala.Double, inactive: scala.Double): Inactive = {
+  inline def apply(active: scala.Double, inactive: scala.Double): Inactive = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], inactive = inactive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inactive]
   }
   
-  @scala.inline
-  implicit class InactiveMutableBuilder[Self <: Inactive] (val x: Self) extends AnyVal {
+  extension [Self <: Inactive](x: Self) {
     
-    @scala.inline
-    def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactive(value: scala.Double): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+    inline def setInactive(value: scala.Double): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
   }
 }

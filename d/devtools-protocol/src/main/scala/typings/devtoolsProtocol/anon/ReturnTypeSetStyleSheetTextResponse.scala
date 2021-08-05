@@ -14,22 +14,17 @@ trait ReturnTypeSetStyleSheetTextResponse extends StObject {
 }
 object ReturnTypeSetStyleSheetTextResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetStyleSheetTextRequest], returnType: SetStyleSheetTextResponse): ReturnTypeSetStyleSheetTextResponse = {
+  inline def apply(paramsType: js.Array[SetStyleSheetTextRequest], returnType: SetStyleSheetTextResponse): ReturnTypeSetStyleSheetTextResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeSetStyleSheetTextResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeSetStyleSheetTextResponseMutableBuilder[Self <: ReturnTypeSetStyleSheetTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeSetStyleSheetTextResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetStyleSheetTextRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetStyleSheetTextRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetStyleSheetTextRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetStyleSheetTextRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: SetStyleSheetTextResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: SetStyleSheetTextResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

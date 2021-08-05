@@ -21,8 +21,7 @@ trait Amount extends StObject {
 }
 object Amount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: String,
     createdAt: Date,
     id: String,
@@ -34,25 +33,18 @@ object Amount {
     __obj.asInstanceOf[Amount]
   }
   
-  @scala.inline
-  implicit class AmountMutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
+  extension [Self <: Amount](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentInstrumentSubtype(value: String): Self = StObject.set(x, "paymentInstrumentSubtype", value.asInstanceOf[js.Any])
+    inline def setPaymentInstrumentSubtype(value: String): Self = StObject.set(x, "paymentInstrumentSubtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseOrderNumber(value: String): Self = StObject.set(x, "purchaseOrderNumber", value.asInstanceOf[js.Any])
+    inline def setPurchaseOrderNumber(value: String): Self = StObject.set(x, "purchaseOrderNumber", value.asInstanceOf[js.Any])
   }
 }

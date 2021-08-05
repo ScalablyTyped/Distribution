@@ -74,8 +74,7 @@ object dispute {
   }
   object DisputeData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ContestDeadlineDate: Timestamp,
       ContestedFunds: MoneyData,
       CreationDate: Double,
@@ -96,44 +95,31 @@ object dispute {
       __obj.asInstanceOf[DisputeData]
     }
     
-    @scala.inline
-    implicit class DisputeDataMutableBuilder[Self <: DisputeData] (val x: Self) extends AnyVal {
+    extension [Self <: DisputeData](x: Self) {
       
-      @scala.inline
-      def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
+      inline def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
+      inline def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisputeReason(value: typings.mangopay2NodejsSdk.mod.dispute.DisputeReason): Self = StObject.set(x, "DisputeReason", value.asInstanceOf[js.Any])
+      inline def setDisputeReason(value: typings.mangopay2NodejsSdk.mod.dispute.DisputeReason): Self = StObject.set(x, "DisputeReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisputeType(value: DisputeType): Self = StObject.set(x, "DisputeType", value.asInstanceOf[js.Any])
+      inline def setDisputeType(value: DisputeType): Self = StObject.set(x, "DisputeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisputedFunds(value: MoneyData): Self = StObject.set(x, "DisputedFunds", value.asInstanceOf[js.Any])
+      inline def setDisputedFunds(value: MoneyData): Self = StObject.set(x, "DisputedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepudiationId(value: String): Self = StObject.set(x, "RepudiationId", value.asInstanceOf[js.Any])
+      inline def setRepudiationId(value: String): Self = StObject.set(x, "RepudiationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
+      inline def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: DisputeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: DisputeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+      inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,20 +131,16 @@ object dispute {
   }
   object DisputeReason {
     
-    @scala.inline
-    def apply(DisputeReasonMessage: String, DisputeReasonType: DisputeReasonType): typings.mangopay2NodejsSdk.mod.dispute.DisputeReason = {
+    inline def apply(DisputeReasonMessage: String, DisputeReasonType: DisputeReasonType): typings.mangopay2NodejsSdk.mod.dispute.DisputeReason = {
       val __obj = js.Dynamic.literal(DisputeReasonMessage = DisputeReasonMessage.asInstanceOf[js.Any], DisputeReasonType = DisputeReasonType.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.dispute.DisputeReason]
     }
     
-    @scala.inline
-    implicit class DisputeReasonMutableBuilder[Self <: typings.mangopay2NodejsSdk.mod.dispute.DisputeReason] (val x: Self) extends AnyVal {
+    extension [Self <: typings.mangopay2NodejsSdk.mod.dispute.DisputeReason](x: Self) {
       
-      @scala.inline
-      def setDisputeReasonMessage(value: String): Self = StObject.set(x, "DisputeReasonMessage", value.asInstanceOf[js.Any])
+      inline def setDisputeReasonMessage(value: String): Self = StObject.set(x, "DisputeReasonMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisputeReasonType(value: DisputeReasonType): Self = StObject.set(x, "DisputeReasonType", value.asInstanceOf[js.Any])
+      inline def setDisputeReasonType(value: DisputeReasonType): Self = StObject.set(x, "DisputeReasonType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,53 +165,37 @@ object dispute {
   trait DisputeReasonType extends StObject
   object DisputeReasonType {
     
-    @scala.inline
-    def AUTHORISATION_DISPUTED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AUTHORISATION_DISPUTED = "AUTHORISATION_DISPUTED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AUTHORISATION_DISPUTED]
+    inline def AUTHORISATION_DISPUTED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AUTHORISATION_DISPUTED = "AUTHORISATION_DISPUTED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.AUTHORISATION_DISPUTED]
     
-    @scala.inline
-    def CANCELED_REOCCURING_TRANSACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED_REOCCURING_TRANSACTION = "CANCELED_REOCCURING_TRANSACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED_REOCCURING_TRANSACTION]
+    inline def CANCELED_REOCCURING_TRANSACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED_REOCCURING_TRANSACTION = "CANCELED_REOCCURING_TRANSACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CANCELED_REOCCURING_TRANSACTION]
     
-    @scala.inline
-    def DUPLICATE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DUPLICATE = "DUPLICATE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DUPLICATE]
+    inline def DUPLICATE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DUPLICATE = "DUPLICATE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DUPLICATE]
     
-    @scala.inline
-    def FRAUD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRAUD = "FRAUD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRAUD]
+    inline def FRAUD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRAUD = "FRAUD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRAUD]
     
-    @scala.inline
-    def LATE_FAILURE_BANKACCOUNT_CLOSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_CLOSED = "LATE_FAILURE_BANKACCOUNT_CLOSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_CLOSED]
+    inline def LATE_FAILURE_BANKACCOUNT_CLOSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_CLOSED = "LATE_FAILURE_BANKACCOUNT_CLOSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_CLOSED]
     
-    @scala.inline
-    def LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE = "LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE]
+    inline def LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE = "LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCOMPATIBLE]
     
-    @scala.inline
-    def LATE_FAILURE_BANKACCOUNT_INCORRECT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCORRECT = "LATE_FAILURE_BANKACCOUNT_INCORRECT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCORRECT]
+    inline def LATE_FAILURE_BANKACCOUNT_INCORRECT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCORRECT = "LATE_FAILURE_BANKACCOUNT_INCORRECT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_BANKACCOUNT_INCORRECT]
     
-    @scala.inline
-    def LATE_FAILURE_CONTACT_USER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_CONTACT_USER = "LATE_FAILURE_CONTACT_USER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_CONTACT_USER]
+    inline def LATE_FAILURE_CONTACT_USER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_CONTACT_USER = "LATE_FAILURE_CONTACT_USER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_CONTACT_USER]
     
-    @scala.inline
-    def LATE_FAILURE_INSUFFICIENT_FUNDS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_INSUFFICIENT_FUNDS = "LATE_FAILURE_INSUFFICIENT_FUNDS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_INSUFFICIENT_FUNDS]
+    inline def LATE_FAILURE_INSUFFICIENT_FUNDS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_INSUFFICIENT_FUNDS = "LATE_FAILURE_INSUFFICIENT_FUNDS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LATE_FAILURE_INSUFFICIENT_FUNDS]
     
-    @scala.inline
-    def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
+    inline def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
     
-    @scala.inline
-    def PRODUCT_NOT_PROVIDED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_NOT_PROVIDED = "PRODUCT_NOT_PROVIDED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_NOT_PROVIDED]
+    inline def PRODUCT_NOT_PROVIDED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_NOT_PROVIDED = "PRODUCT_NOT_PROVIDED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_NOT_PROVIDED]
     
-    @scala.inline
-    def PRODUCT_UNACCEPTABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_UNACCEPTABLE = "PRODUCT_UNACCEPTABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_UNACCEPTABLE]
+    inline def PRODUCT_UNACCEPTABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_UNACCEPTABLE = "PRODUCT_UNACCEPTABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PRODUCT_UNACCEPTABLE]
     
-    @scala.inline
-    def REFUND_CONVERSION_RATE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_CONVERSION_RATE = "REFUND_CONVERSION_RATE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_CONVERSION_RATE]
+    inline def REFUND_CONVERSION_RATE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_CONVERSION_RATE = "REFUND_CONVERSION_RATE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_CONVERSION_RATE]
     
-    @scala.inline
-    def REFUND_NOT_PROCESSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_NOT_PROCESSED = "REFUND_NOT_PROCESSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_NOT_PROCESSED]
+    inline def REFUND_NOT_PROCESSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_NOT_PROCESSED = "REFUND_NOT_PROCESSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUND_NOT_PROCESSED]
     
-    @scala.inline
-    def TRANSACTION_NOT_RECOGNIZED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION_NOT_RECOGNIZED = "TRANSACTION_NOT_RECOGNIZED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION_NOT_RECOGNIZED]
+    inline def TRANSACTION_NOT_RECOGNIZED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION_NOT_RECOGNIZED = "TRANSACTION_NOT_RECOGNIZED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION_NOT_RECOGNIZED]
     
-    @scala.inline
-    def UNKNOWN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN]
+    inline def UNKNOWN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -243,23 +209,17 @@ object dispute {
   trait DisputeStatus extends StObject
   object DisputeStatus {
     
-    @scala.inline
-    def CLOSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CLOSED = "CLOSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CLOSED]
+    inline def CLOSED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CLOSED = "CLOSED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CLOSED]
     
-    @scala.inline
-    def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
+    inline def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
     
-    @scala.inline
-    def PENDING_BANK_ACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_BANK_ACTION = "PENDING_BANK_ACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_BANK_ACTION]
+    inline def PENDING_BANK_ACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_BANK_ACTION = "PENDING_BANK_ACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_BANK_ACTION]
     
-    @scala.inline
-    def PENDING_CLIENT_ACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_CLIENT_ACTION = "PENDING_CLIENT_ACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_CLIENT_ACTION]
+    inline def PENDING_CLIENT_ACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_CLIENT_ACTION = "PENDING_CLIENT_ACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PENDING_CLIENT_ACTION]
     
-    @scala.inline
-    def REOPENED_PENDING_CLIENT_ACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REOPENED_PENDING_CLIENT_ACTION = "REOPENED_PENDING_CLIENT_ACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REOPENED_PENDING_CLIENT_ACTION]
+    inline def REOPENED_PENDING_CLIENT_ACTION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REOPENED_PENDING_CLIENT_ACTION = "REOPENED_PENDING_CLIENT_ACTION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REOPENED_PENDING_CLIENT_ACTION]
     
-    @scala.inline
-    def SUBMITTED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUBMITTED = "SUBMITTED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUBMITTED]
+    inline def SUBMITTED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUBMITTED = "SUBMITTED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SUBMITTED]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -270,14 +230,11 @@ object dispute {
   trait DisputeType extends StObject
   object DisputeType {
     
-    @scala.inline
-    def CONTESTABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CONTESTABLE = "CONTESTABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CONTESTABLE]
+    inline def CONTESTABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CONTESTABLE = "CONTESTABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CONTESTABLE]
     
-    @scala.inline
-    def NOT_CONTESTABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NOT_CONTESTABLE = "NOT_CONTESTABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NOT_CONTESTABLE]
+    inline def NOT_CONTESTABLE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NOT_CONTESTABLE = "NOT_CONTESTABLE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NOT_CONTESTABLE]
     
-    @scala.inline
-    def RETRIEVAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RETRIEVAL = "RETRIEVAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RETRIEVAL]
+    inline def RETRIEVAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RETRIEVAL = "RETRIEVAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RETRIEVAL]
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.dispute.DisputeData, 'ContestedFunds'> */
@@ -287,20 +244,16 @@ object dispute {
   }
   object SubmitDispute {
     
-    @scala.inline
-    def apply(): SubmitDispute = {
+    inline def apply(): SubmitDispute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubmitDispute]
     }
     
-    @scala.inline
-    implicit class SubmitDisputeMutableBuilder[Self <: SubmitDispute] (val x: Self) extends AnyVal {
+    extension [Self <: SubmitDispute](x: Self) {
       
-      @scala.inline
-      def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
+      inline def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContestedFundsUndefined: Self = StObject.set(x, "ContestedFunds", js.undefined)
+      inline def setContestedFundsUndefined: Self = StObject.set(x, "ContestedFunds", js.undefined)
     }
   }
   
@@ -311,20 +264,16 @@ object dispute {
   }
   object UpdateDispute {
     
-    @scala.inline
-    def apply(): UpdateDispute = {
+    inline def apply(): UpdateDispute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateDispute]
     }
     
-    @scala.inline
-    implicit class UpdateDisputeMutableBuilder[Self <: UpdateDispute] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateDispute](x: Self) {
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
 }

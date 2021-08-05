@@ -23,22 +23,17 @@ trait HistoryEntry[T] extends StObject {
 }
 object HistoryEntry {
   
-  @scala.inline
-  def apply[T](changeList: ChangeList[T], itemChangeType: VersionControlChangeType, serverItem: String): HistoryEntry[T] = {
+  inline def apply[T](changeList: ChangeList[T], itemChangeType: VersionControlChangeType, serverItem: String): HistoryEntry[T] = {
     val __obj = js.Dynamic.literal(changeList = changeList.asInstanceOf[js.Any], itemChangeType = itemChangeType.asInstanceOf[js.Any], serverItem = serverItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryEntry[T]]
   }
   
-  @scala.inline
-  implicit class HistoryEntryMutableBuilder[Self <: HistoryEntry[?], T] (val x: Self & HistoryEntry[T]) extends AnyVal {
+  extension [Self <: HistoryEntry[?], T](x: Self & HistoryEntry[T]) {
     
-    @scala.inline
-    def setChangeList(value: ChangeList[T]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])
+    inline def setChangeList(value: ChangeList[T]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemChangeType(value: VersionControlChangeType): Self = StObject.set(x, "itemChangeType", value.asInstanceOf[js.Any])
+    inline def setItemChangeType(value: VersionControlChangeType): Self = StObject.set(x, "itemChangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
+    inline def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
   }
 }

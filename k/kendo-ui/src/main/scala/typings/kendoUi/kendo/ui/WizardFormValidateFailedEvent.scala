@@ -15,25 +15,19 @@ trait WizardFormValidateFailedEvent
 }
 object WizardFormValidateFailedEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Wizard): WizardFormValidateFailedEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Wizard): WizardFormValidateFailedEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[WizardFormValidateFailedEvent]
   }
   
-  @scala.inline
-  implicit class WizardFormValidateFailedEventMutableBuilder[Self <: WizardFormValidateFailedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WizardFormValidateFailedEvent](x: Self) {
     
-    @scala.inline
-    def setForm(value: Form): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Form): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

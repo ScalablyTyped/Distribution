@@ -16,43 +16,31 @@ trait AbuseReport extends StObject {
 }
 object AbuseReport {
   
-  @scala.inline
-  def apply(): AbuseReport = {
+  inline def apply(): AbuseReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AbuseReport]
   }
   
-  @scala.inline
-  implicit class AbuseReportMutableBuilder[Self <: AbuseReport] (val x: Self) extends AnyVal {
+  extension [Self <: AbuseReport](x: Self) {
     
-    @scala.inline
-    def setAbuseTypes(value: js.Array[AbuseType]): Self = StObject.set(x, "abuseTypes", value.asInstanceOf[js.Any])
+    inline def setAbuseTypes(value: js.Array[AbuseType]): Self = StObject.set(x, "abuseTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbuseTypesUndefined: Self = StObject.set(x, "abuseTypes", js.undefined)
+    inline def setAbuseTypesUndefined: Self = StObject.set(x, "abuseTypes", js.undefined)
     
-    @scala.inline
-    def setAbuseTypesVarargs(value: AbuseType*): Self = StObject.set(x, "abuseTypes", js.Array(value :_*))
+    inline def setAbuseTypesVarargs(value: AbuseType*): Self = StObject.set(x, "abuseTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setRelatedEntities(value: js.Array[RelatedEntity]): Self = StObject.set(x, "relatedEntities", value.asInstanceOf[js.Any])
+    inline def setRelatedEntities(value: js.Array[RelatedEntity]): Self = StObject.set(x, "relatedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedEntitiesUndefined: Self = StObject.set(x, "relatedEntities", js.undefined)
+    inline def setRelatedEntitiesUndefined: Self = StObject.set(x, "relatedEntities", js.undefined)
     
-    @scala.inline
-    def setRelatedEntitiesVarargs(value: RelatedEntity*): Self = StObject.set(x, "relatedEntities", js.Array(value :_*))
+    inline def setRelatedEntitiesVarargs(value: RelatedEntity*): Self = StObject.set(x, "relatedEntities", js.Array(value :_*))
     
-    @scala.inline
-    def setSubject(value: Entity): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Entity): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

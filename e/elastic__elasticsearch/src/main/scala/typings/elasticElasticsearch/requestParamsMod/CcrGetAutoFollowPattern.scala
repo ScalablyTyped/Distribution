@@ -12,19 +12,15 @@ trait CcrGetAutoFollowPattern
 }
 object CcrGetAutoFollowPattern {
   
-  @scala.inline
-  def apply(): CcrGetAutoFollowPattern = {
+  inline def apply(): CcrGetAutoFollowPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CcrGetAutoFollowPattern]
   }
   
-  @scala.inline
-  implicit class CcrGetAutoFollowPatternMutableBuilder[Self <: CcrGetAutoFollowPattern] (val x: Self) extends AnyVal {
+  extension [Self <: CcrGetAutoFollowPattern](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

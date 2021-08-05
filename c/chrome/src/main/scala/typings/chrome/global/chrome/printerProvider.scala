@@ -25,24 +25,20 @@ object printerProvider {
   @JSGlobal("chrome.printerProvider.onGetCapabilityRequested")
   @js.native
   def onGetCapabilityRequested: CapabilityRequestedEvent = js.native
-  @scala.inline
-  def onGetCapabilityRequested_=(x: CapabilityRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onGetCapabilityRequested")(x.asInstanceOf[js.Any])
+  inline def onGetCapabilityRequested_=(x: CapabilityRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onGetCapabilityRequested")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.printerProvider.onGetPrintersRequested")
   @js.native
   def onGetPrintersRequested: PrinterRequestedEvent = js.native
-  @scala.inline
-  def onGetPrintersRequested_=(x: PrinterRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onGetPrintersRequested")(x.asInstanceOf[js.Any])
+  inline def onGetPrintersRequested_=(x: PrinterRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onGetPrintersRequested")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.printerProvider.onGetUsbPrinterInfoRequested")
   @js.native
   def onGetUsbPrinterInfoRequested: PrinterInfoRequestedEvent = js.native
-  @scala.inline
-  def onGetUsbPrinterInfoRequested_=(x: PrinterInfoRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onGetUsbPrinterInfoRequested")(x.asInstanceOf[js.Any])
+  inline def onGetUsbPrinterInfoRequested_=(x: PrinterInfoRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onGetUsbPrinterInfoRequested")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.printerProvider.onPrintRequested")
   @js.native
   def onPrintRequested: PrintRequestedEvent = js.native
-  @scala.inline
-  def onPrintRequested_=(x: PrintRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPrintRequested")(x.asInstanceOf[js.Any])
+  inline def onPrintRequested_=(x: PrintRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPrintRequested")(x.asInstanceOf[js.Any])
 }

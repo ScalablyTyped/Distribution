@@ -14,16 +14,13 @@ trait VacateChange
 }
 object VacateChange {
   
-  @scala.inline
-  def apply(changeKey: IChangeKey): VacateChange = {
+  inline def apply(changeKey: IChangeKey): VacateChange = {
     val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[VacateChange]
   }
   
-  @scala.inline
-  implicit class VacateChangeMutableBuilder[Self <: VacateChange] (val x: Self) extends AnyVal {
+  extension [Self <: VacateChange](x: Self) {
     
-    @scala.inline
-    def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
   }
 }

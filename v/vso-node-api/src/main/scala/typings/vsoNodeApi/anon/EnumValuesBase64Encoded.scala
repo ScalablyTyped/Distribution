@@ -10,16 +10,13 @@ trait EnumValuesBase64Encoded extends StObject {
 }
 object EnumValuesBase64Encoded {
   
-  @scala.inline
-  def apply(enumValues: Base64Encoded): EnumValuesBase64Encoded = {
+  inline def apply(enumValues: Base64Encoded): EnumValuesBase64Encoded = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesBase64Encoded]
   }
   
-  @scala.inline
-  implicit class EnumValuesBase64EncodedMutableBuilder[Self <: EnumValuesBase64Encoded] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesBase64Encoded](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Base64Encoded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Base64Encoded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

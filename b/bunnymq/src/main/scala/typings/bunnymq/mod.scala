@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
-  @scala.inline
-  def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  inline def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  inline def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
   @JSImport("bunnymq", JSImport.Namespace)
   @js.native
@@ -24,17 +22,14 @@ object mod {
   }
   object Connection {
     
-    @scala.inline
-    def apply(startedAt: String): Connection = {
+    inline def apply(startedAt: String): Connection = {
       val __obj = js.Dynamic.literal(startedAt = startedAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connection]
     }
     
-    @scala.inline
-    implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+    extension [Self <: Connection](x: Self) {
       
-      @scala.inline
-      def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+      inline def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,17 +45,14 @@ object mod {
   }
   object Consumer {
     
-    @scala.inline
-    def apply(consume: (String, ConsumerCallback[js.Any]) => Unit): Consumer = {
+    inline def apply(consume: (String, ConsumerCallback[js.Any]) => Unit): Consumer = {
       val __obj = js.Dynamic.literal(consume = js.Any.fromFunction2(consume))
       __obj.asInstanceOf[Consumer]
     }
     
-    @scala.inline
-    implicit class ConsumerMutableBuilder[Self <: Consumer] (val x: Self) extends AnyVal {
+    extension [Self <: Consumer](x: Self) {
       
-      @scala.inline
-      def setConsume(value: (String, ConsumerCallback[js.Any]) => Unit): Self = StObject.set(x, "consume", js.Any.fromFunction2(value))
+      inline def setConsume(value: (String, ConsumerCallback[js.Any]) => Unit): Self = StObject.set(x, "consume", js.Any.fromFunction2(value))
     }
   }
   
@@ -120,8 +112,7 @@ object mod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: LoggerOutput,
       error: LoggerOutput,
       info: LoggerOutput,
@@ -132,23 +123,17 @@ object mod {
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: LoggerOutput): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: LoggerOutput): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: LoggerOutput): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: LoggerOutput): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: LoggerOutput): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: LoggerOutput): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: LoggerOutput): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: LoggerOutput): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: LoggerOutput): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: LoggerOutput): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,62 +171,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConsumerSuffix(value: String): Self = StObject.set(x, "consumerSuffix", value.asInstanceOf[js.Any])
+      inline def setConsumerSuffix(value: String): Self = StObject.set(x, "consumerSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerSuffixUndefined: Self = StObject.set(x, "consumerSuffix", js.undefined)
+      inline def setConsumerSuffixUndefined: Self = StObject.set(x, "consumerSuffix", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+      inline def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
+      inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
       
-      @scala.inline
-      def setRequeue(value: Boolean): Self = StObject.set(x, "requeue", value.asInstanceOf[js.Any])
+      inline def setRequeue(value: Boolean): Self = StObject.set(x, "requeue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequeueUndefined: Self = StObject.set(x, "requeue", js.undefined)
+      inline def setRequeueUndefined: Self = StObject.set(x, "requeue", js.undefined)
       
-      @scala.inline
-      def setRpcTimeout(value: Double): Self = StObject.set(x, "rpcTimeout", value.asInstanceOf[js.Any])
+      inline def setRpcTimeout(value: Double): Self = StObject.set(x, "rpcTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRpcTimeoutUndefined: Self = StObject.set(x, "rpcTimeout", js.undefined)
+      inline def setRpcTimeoutUndefined: Self = StObject.set(x, "rpcTimeout", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   
@@ -269,32 +236,24 @@ object mod {
   }
   object ProducerOptions {
     
-    @scala.inline
-    def apply(): ProducerOptions = {
+    inline def apply(): ProducerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProducerOptions]
     }
     
-    @scala.inline
-    implicit class ProducerOptionsMutableBuilder[Self <: ProducerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProducerOptions](x: Self) {
       
-      @scala.inline
-      def setRoutingKey(value: String): Self = StObject.set(x, "routingKey", value.asInstanceOf[js.Any])
+      inline def setRoutingKey(value: String): Self = StObject.set(x, "routingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingKeyUndefined: Self = StObject.set(x, "routingKey", js.undefined)
+      inline def setRoutingKeyUndefined: Self = StObject.set(x, "routingKey", js.undefined)
       
-      @scala.inline
-      def setRpc(value: Boolean): Self = StObject.set(x, "rpc", value.asInstanceOf[js.Any])
+      inline def setRpc(value: Boolean): Self = StObject.set(x, "rpc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRpcUndefined: Self = StObject.set(x, "rpc", js.undefined)
+      inline def setRpcUndefined: Self = StObject.set(x, "rpc", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

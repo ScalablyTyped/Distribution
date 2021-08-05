@@ -18,25 +18,19 @@ trait ListLabelingJobsForWorkteamResponse extends StObject {
 }
 object ListLabelingJobsForWorkteamResponse {
   
-  @scala.inline
-  def apply(LabelingJobSummaryList: LabelingJobForWorkteamSummaryList): ListLabelingJobsForWorkteamResponse = {
+  inline def apply(LabelingJobSummaryList: LabelingJobForWorkteamSummaryList): ListLabelingJobsForWorkteamResponse = {
     val __obj = js.Dynamic.literal(LabelingJobSummaryList = LabelingJobSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLabelingJobsForWorkteamResponse]
   }
   
-  @scala.inline
-  implicit class ListLabelingJobsForWorkteamResponseMutableBuilder[Self <: ListLabelingJobsForWorkteamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLabelingJobsForWorkteamResponse](x: Self) {
     
-    @scala.inline
-    def setLabelingJobSummaryList(value: LabelingJobForWorkteamSummaryList): Self = StObject.set(x, "LabelingJobSummaryList", value.asInstanceOf[js.Any])
+    inline def setLabelingJobSummaryList(value: LabelingJobForWorkteamSummaryList): Self = StObject.set(x, "LabelingJobSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingJobSummaryListVarargs(value: LabelingJobForWorkteamSummary*): Self = StObject.set(x, "LabelingJobSummaryList", js.Array(value :_*))
+    inline def setLabelingJobSummaryListVarargs(value: LabelingJobForWorkteamSummary*): Self = StObject.set(x, "LabelingJobSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait ClockRateMediaType extends StObject {
 }
 object ClockRateMediaType {
   
-  @scala.inline
-  def apply(): ClockRateMediaType = {
+  inline def apply(): ClockRateMediaType = {
     val __obj = js.Dynamic.literal(clockRate = 90000, mediaType = "V", name = "MPV")
     __obj.asInstanceOf[ClockRateMediaType]
   }
   
-  @scala.inline
-  implicit class ClockRateMediaTypeMutableBuilder[Self <: ClockRateMediaType] (val x: Self) extends AnyVal {
+  extension [Self <: ClockRateMediaType](x: Self) {
     
-    @scala.inline
-    def setClockRate(value: `90000`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
+    inline def setClockRate(value: `90000`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: V): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: V): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: MPV): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: MPV): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

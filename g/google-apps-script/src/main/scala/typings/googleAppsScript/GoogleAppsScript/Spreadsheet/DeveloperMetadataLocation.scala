@@ -21,8 +21,7 @@ trait DeveloperMetadataLocation extends StObject {
 }
 object DeveloperMetadataLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getColumn: () => Range | Null,
     getLocationType: () => DeveloperMetadataLocationType,
     getRow: () => Range | Null,
@@ -33,22 +32,16 @@ object DeveloperMetadataLocation {
     __obj.asInstanceOf[DeveloperMetadataLocation]
   }
   
-  @scala.inline
-  implicit class DeveloperMetadataLocationMutableBuilder[Self <: DeveloperMetadataLocation] (val x: Self) extends AnyVal {
+  extension [Self <: DeveloperMetadataLocation](x: Self) {
     
-    @scala.inline
-    def setGetColumn(value: () => Range | Null): Self = StObject.set(x, "getColumn", js.Any.fromFunction0(value))
+    inline def setGetColumn(value: () => Range | Null): Self = StObject.set(x, "getColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocationType(value: () => DeveloperMetadataLocationType): Self = StObject.set(x, "getLocationType", js.Any.fromFunction0(value))
+    inline def setGetLocationType(value: () => DeveloperMetadataLocationType): Self = StObject.set(x, "getLocationType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRow(value: () => Range | Null): Self = StObject.set(x, "getRow", js.Any.fromFunction0(value))
+    inline def setGetRow(value: () => Range | Null): Self = StObject.set(x, "getRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSheet(value: () => Sheet | Null): Self = StObject.set(x, "getSheet", js.Any.fromFunction0(value))
+    inline def setGetSheet(value: () => Sheet | Null): Self = StObject.set(x, "getSheet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSpreadsheet(value: () => typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet | Null): Self = StObject.set(x, "getSpreadsheet", js.Any.fromFunction0(value))
+    inline def setGetSpreadsheet(value: () => typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet | Null): Self = StObject.set(x, "getSpreadsheet", js.Any.fromFunction0(value))
   }
 }

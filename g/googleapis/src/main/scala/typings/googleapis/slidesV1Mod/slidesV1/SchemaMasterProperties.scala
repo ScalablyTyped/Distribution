@@ -17,19 +17,15 @@ trait SchemaMasterProperties extends StObject {
 }
 object SchemaMasterProperties {
   
-  @scala.inline
-  def apply(): SchemaMasterProperties = {
+  inline def apply(): SchemaMasterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMasterProperties]
   }
   
-  @scala.inline
-  implicit class SchemaMasterPropertiesMutableBuilder[Self <: SchemaMasterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMasterProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

@@ -248,6 +248,6 @@ trait Indexes extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.Indexes_typekey")
+  /* private */ @JSName("Word.Indexes_typekey")
   var WordDotIndexes_typekey: Indexes = js.native
 }

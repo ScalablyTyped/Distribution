@@ -10,16 +10,13 @@ trait EnumValuesSuspendUnprocessed extends StObject {
 }
 object EnumValuesSuspendUnprocessed {
   
-  @scala.inline
-  def apply(enumValues: SuspendUnprocessed): EnumValuesSuspendUnprocessed = {
+  inline def apply(enumValues: SuspendUnprocessed): EnumValuesSuspendUnprocessed = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesSuspendUnprocessed]
   }
   
-  @scala.inline
-  implicit class EnumValuesSuspendUnprocessedMutableBuilder[Self <: EnumValuesSuspendUnprocessed] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesSuspendUnprocessed](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: SuspendUnprocessed): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: SuspendUnprocessed): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ListOperationsResponse extends StObject {
 }
 object ListOperationsResponse {
   
-  @scala.inline
-  def apply(Operations: OperationSummaryList): ListOperationsResponse = {
+  inline def apply(Operations: OperationSummaryList): ListOperationsResponse = {
     val __obj = js.Dynamic.literal(Operations = Operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOperationsResponse]
   }
   
-  @scala.inline
-  implicit class ListOperationsResponseMutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOperationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageMarker(value: PageMarker): Self = StObject.set(x, "NextPageMarker", value.asInstanceOf[js.Any])
+    inline def setNextPageMarker(value: PageMarker): Self = StObject.set(x, "NextPageMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageMarkerUndefined: Self = StObject.set(x, "NextPageMarker", js.undefined)
+    inline def setNextPageMarkerUndefined: Self = StObject.set(x, "NextPageMarker", js.undefined)
     
-    @scala.inline
-    def setOperations(value: OperationSummaryList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationSummaryList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value :_*))
   }
 }

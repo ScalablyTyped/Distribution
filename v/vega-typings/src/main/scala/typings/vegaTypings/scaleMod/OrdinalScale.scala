@@ -22,38 +22,28 @@ trait OrdinalScale
 }
 object OrdinalScale {
   
-  @scala.inline
-  def apply(name: String): OrdinalScale = {
+  inline def apply(name: String): OrdinalScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ordinal")
     __obj.asInstanceOf[OrdinalScale]
   }
   
-  @scala.inline
-  implicit class OrdinalScaleMutableBuilder[Self <: OrdinalScale] (val x: Self) extends AnyVal {
+  extension [Self <: OrdinalScale](x: Self) {
     
-    @scala.inline
-    def setDomainImplicit(value: Boolean | SignalRef): Self = StObject.set(x, "domainImplicit", value.asInstanceOf[js.Any])
+    inline def setDomainImplicit(value: Boolean | SignalRef): Self = StObject.set(x, "domainImplicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainImplicitUndefined: Self = StObject.set(x, "domainImplicit", js.undefined)
+    inline def setDomainImplicitUndefined: Self = StObject.set(x, "domainImplicit", js.undefined)
     
-    @scala.inline
-    def setInterpolate(value: ScaleInterpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+    inline def setInterpolate(value: ScaleInterpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+    inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
-    @scala.inline
-    def setRange(value: RangeScheme | ScaleData): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: RangeScheme | ScaleData): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

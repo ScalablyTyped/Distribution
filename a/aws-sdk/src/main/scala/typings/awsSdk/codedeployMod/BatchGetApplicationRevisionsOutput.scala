@@ -23,34 +23,25 @@ trait BatchGetApplicationRevisionsOutput extends StObject {
 }
 object BatchGetApplicationRevisionsOutput {
   
-  @scala.inline
-  def apply(): BatchGetApplicationRevisionsOutput = {
+  inline def apply(): BatchGetApplicationRevisionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetApplicationRevisionsOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetApplicationRevisionsOutputMutableBuilder[Self <: BatchGetApplicationRevisionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetApplicationRevisionsOutput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setRevisions(value: RevisionInfoList): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
+    inline def setRevisions(value: RevisionInfoList): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
+    inline def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
-    @scala.inline
-    def setRevisionsVarargs(value: RevisionInfo*): Self = StObject.set(x, "revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: RevisionInfo*): Self = StObject.set(x, "revisions", js.Array(value :_*))
   }
 }

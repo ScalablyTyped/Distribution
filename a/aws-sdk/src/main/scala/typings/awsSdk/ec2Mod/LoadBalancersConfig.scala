@@ -18,25 +18,19 @@ trait LoadBalancersConfig extends StObject {
 }
 object LoadBalancersConfig {
   
-  @scala.inline
-  def apply(): LoadBalancersConfig = {
+  inline def apply(): LoadBalancersConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancersConfig]
   }
   
-  @scala.inline
-  implicit class LoadBalancersConfigMutableBuilder[Self <: LoadBalancersConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancersConfig](x: Self) {
     
-    @scala.inline
-    def setClassicLoadBalancersConfig(value: ClassicLoadBalancersConfig): Self = StObject.set(x, "ClassicLoadBalancersConfig", value.asInstanceOf[js.Any])
+    inline def setClassicLoadBalancersConfig(value: ClassicLoadBalancersConfig): Self = StObject.set(x, "ClassicLoadBalancersConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassicLoadBalancersConfigUndefined: Self = StObject.set(x, "ClassicLoadBalancersConfig", js.undefined)
+    inline def setClassicLoadBalancersConfigUndefined: Self = StObject.set(x, "ClassicLoadBalancersConfig", js.undefined)
     
-    @scala.inline
-    def setTargetGroupsConfig(value: TargetGroupsConfig): Self = StObject.set(x, "TargetGroupsConfig", value.asInstanceOf[js.Any])
+    inline def setTargetGroupsConfig(value: TargetGroupsConfig): Self = StObject.set(x, "TargetGroupsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupsConfigUndefined: Self = StObject.set(x, "TargetGroupsConfig", js.undefined)
+    inline def setTargetGroupsConfigUndefined: Self = StObject.set(x, "TargetGroupsConfig", js.undefined)
   }
 }

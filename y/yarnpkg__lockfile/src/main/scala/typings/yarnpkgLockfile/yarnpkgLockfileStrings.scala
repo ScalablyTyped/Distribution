@@ -8,16 +8,13 @@ object yarnpkgLockfileStrings {
   
   @js.native
   sealed trait conflict extends StObject
-  @scala.inline
-  def conflict: conflict = "conflict".asInstanceOf[conflict]
+  inline def conflict: conflict = "conflict".asInstanceOf[conflict]
   
   @js.native
   sealed trait merge extends StObject
-  @scala.inline
-  def merge: merge = "merge".asInstanceOf[merge]
+  inline def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
 }

@@ -9,8 +9,7 @@ trait RetireGrantInput
      with typings.awsSdkClientKmsNode.typesRetireGrantInputMod.RetireGrantInput
 object RetireGrantInput {
   
-  @scala.inline
-  def apply(): RetireGrantInput = {
+  inline def apply(): RetireGrantInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetireGrantInput]
   }

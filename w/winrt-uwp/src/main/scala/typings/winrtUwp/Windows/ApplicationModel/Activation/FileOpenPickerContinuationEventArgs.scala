@@ -27,8 +27,7 @@ trait FileOpenPickerContinuationEventArgs extends StObject {
 }
 object FileOpenPickerContinuationEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     continuationData: ValueSet,
     files: IVectorView[StorageFile],
     kind: ActivationKind,
@@ -39,22 +38,16 @@ object FileOpenPickerContinuationEventArgs {
     __obj.asInstanceOf[FileOpenPickerContinuationEventArgs]
   }
   
-  @scala.inline
-  implicit class FileOpenPickerContinuationEventArgsMutableBuilder[Self <: FileOpenPickerContinuationEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: FileOpenPickerContinuationEventArgs](x: Self) {
     
-    @scala.inline
-    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
+    inline def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: IVectorView[StorageFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: IVectorView[StorageFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

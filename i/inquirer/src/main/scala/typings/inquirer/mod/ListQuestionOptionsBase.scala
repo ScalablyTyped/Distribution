@@ -29,33 +29,25 @@ trait ListQuestionOptionsBase[T, TChoiceMap]
 }
 object ListQuestionOptionsBase {
   
-  @scala.inline
-  def apply[T, TChoiceMap](): ListQuestionOptionsBase[T, TChoiceMap] = {
+  inline def apply[T, TChoiceMap](): ListQuestionOptionsBase[T, TChoiceMap] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListQuestionOptionsBase[T, TChoiceMap]]
   }
   
-  @scala.inline
-  implicit class ListQuestionOptionsBaseMutableBuilder[Self <: ListQuestionOptionsBase[?, ?], T, TChoiceMap] (val x: Self & (ListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
+  extension [Self <: ListQuestionOptionsBase[?, ?], T, TChoiceMap](x: Self & (ListQuestionOptionsBase[T, TChoiceMap])) {
     
-    @scala.inline
-    def setChoices(value: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoicesFunction1(
+    inline def setChoicesFunction1(
       value: T => js.Array[DistinctChoice[TChoiceMap]] | js.Promise[js.Array[DistinctChoice[TChoiceMap]]]
     ): Self = StObject.set(x, "choices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
+    inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
     
-    @scala.inline
-    def setChoicesVarargs(value: DistinctChoice[TChoiceMap]*): Self = StObject.set(x, "choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: DistinctChoice[TChoiceMap]*): Self = StObject.set(x, "choices", js.Array(value :_*))
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

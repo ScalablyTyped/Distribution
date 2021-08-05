@@ -12,19 +12,15 @@ trait BorderRightWidth extends StObject {
 }
 object BorderRightWidth {
   
-  @scala.inline
-  def apply(borderRightWidth: Double, height: Double): BorderRightWidth = {
+  inline def apply(borderRightWidth: Double, height: Double): BorderRightWidth = {
     val __obj = js.Dynamic.literal(borderRightWidth = borderRightWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderRightWidth]
   }
   
-  @scala.inline
-  implicit class BorderRightWidthMutableBuilder[Self <: BorderRightWidth] (val x: Self) extends AnyVal {
+  extension [Self <: BorderRightWidth](x: Self) {
     
-    @scala.inline
-    def setBorderRightWidth(value: Double): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
+    inline def setBorderRightWidth(value: Double): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

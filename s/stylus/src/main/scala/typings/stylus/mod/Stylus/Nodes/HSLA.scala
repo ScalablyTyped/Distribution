@@ -43,8 +43,7 @@ trait HSLA
 }
 object HSLA {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: Double,
     add: (Double, Double, Double) => HSLA,
     adjustHue: Double => HSLA,
@@ -73,37 +72,26 @@ object HSLA {
     __obj.asInstanceOf[HSLA]
   }
   
-  @scala.inline
-  implicit class HSLAMutableBuilder[Self <: HSLA] (val x: Self) extends AnyVal {
+  extension [Self <: HSLA](x: Self) {
     
-    @scala.inline
-    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdd(value: (Double, Double, Double) => HSLA): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
+    inline def setAdd(value: (Double, Double, Double) => HSLA): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAdjustHue(value: Double => HSLA): Self = StObject.set(x, "adjustHue", js.Any.fromFunction1(value))
+    inline def setAdjustHue(value: Double => HSLA): Self = StObject.set(x, "adjustHue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdjustLightness(value: Double => HSLA): Self = StObject.set(x, "adjustLightness", js.Any.fromFunction1(value))
+    inline def setAdjustLightness(value: Double => HSLA): Self = StObject.set(x, "adjustLightness", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsla(value: HSLA): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
+    inline def setHsla(value: HSLA): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgba(value: RGBA): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
+    inline def setRgba(value: RGBA): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstract(value: (Double, Double, Double) => HSLA): Self = StObject.set(x, "substract", js.Any.fromFunction3(value))
+    inline def setSubstract(value: (Double, Double, Double) => HSLA): Self = StObject.set(x, "substract", js.Any.fromFunction3(value))
   }
 }

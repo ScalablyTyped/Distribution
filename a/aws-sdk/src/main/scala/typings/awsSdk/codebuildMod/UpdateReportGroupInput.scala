@@ -23,31 +23,23 @@ trait UpdateReportGroupInput extends StObject {
 }
 object UpdateReportGroupInput {
   
-  @scala.inline
-  def apply(arn: NonEmptyString): UpdateReportGroupInput = {
+  inline def apply(arn: NonEmptyString): UpdateReportGroupInput = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateReportGroupInput]
   }
   
-  @scala.inline
-  implicit class UpdateReportGroupInputMutableBuilder[Self <: UpdateReportGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateReportGroupInput](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
+    inline def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
+    inline def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

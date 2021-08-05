@@ -12,10 +12,8 @@ object getQueueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getQueue(args: GetQueueArgs): js.Promise[GetQueueResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetQueueResult]]
-  @scala.inline
-  def getQueue(args: GetQueueArgs, opts: InvokeOptions): js.Promise[GetQueueResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetQueueResult]]
+  inline def getQueue(args: GetQueueArgs): js.Promise[GetQueueResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetQueueResult]]
+  inline def getQueue(args: GetQueueArgs, opts: InvokeOptions): js.Promise[GetQueueResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetQueueResult]]
   
   trait GetQueueArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getQueueMod {
   }
   object GetQueueArgs {
     
-    @scala.inline
-    def apply(name: String): GetQueueArgs = {
+    inline def apply(name: String): GetQueueArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetQueueArgs]
     }
     
-    @scala.inline
-    implicit class GetQueueArgsMutableBuilder[Self <: GetQueueArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetQueueArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -77,29 +70,22 @@ object getQueueMod {
   }
   object GetQueueResult {
     
-    @scala.inline
-    def apply(arn: String, id: String, name: String, tags: StringDictionary[String], url: String): GetQueueResult = {
+    inline def apply(arn: String, id: String, name: String, tags: StringDictionary[String], url: String): GetQueueResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetQueueResult]
     }
     
-    @scala.inline
-    implicit class GetQueueResultMutableBuilder[Self <: GetQueueResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetQueueResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

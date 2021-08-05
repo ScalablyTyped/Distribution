@@ -29,28 +29,21 @@ trait DBError extends StObject {
 }
 object DBError {
   
-  @scala.inline
-  def apply(message: String): DBError = {
+  inline def apply(message: String): DBError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBError]
   }
   
-  @scala.inline
-  implicit class DBErrorMutableBuilder[Self <: DBError] (val x: Self) extends AnyVal {
+  extension [Self <: DBError](x: Self) {
     
-    @scala.inline
-    def setErrorNum(value: Double): Self = StObject.set(x, "errorNum", value.asInstanceOf[js.Any])
+    inline def setErrorNum(value: Double): Self = StObject.set(x, "errorNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNumUndefined: Self = StObject.set(x, "errorNum", js.undefined)
+    inline def setErrorNumUndefined: Self = StObject.set(x, "errorNum", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

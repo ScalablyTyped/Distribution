@@ -14,22 +14,17 @@ trait DataValue extends StObject {
 }
 object DataValue {
   
-  @scala.inline
-  def apply(dataValue: js.Any, isValid: Boolean, normalizedLocValue: String): DataValue = {
+  inline def apply(dataValue: js.Any, isValid: Boolean, normalizedLocValue: String): DataValue = {
     val __obj = js.Dynamic.literal(dataValue = dataValue.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], normalizedLocValue = normalizedLocValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValue]
   }
   
-  @scala.inline
-  implicit class DataValueMutableBuilder[Self <: DataValue] (val x: Self) extends AnyVal {
+  extension [Self <: DataValue](x: Self) {
     
-    @scala.inline
-    def setDataValue(value: js.Any): Self = StObject.set(x, "dataValue", value.asInstanceOf[js.Any])
+    inline def setDataValue(value: js.Any): Self = StObject.set(x, "dataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedLocValue(value: String): Self = StObject.set(x, "normalizedLocValue", value.asInstanceOf[js.Any])
+    inline def setNormalizedLocValue(value: String): Self = StObject.set(x, "normalizedLocValue", value.asInstanceOf[js.Any])
   }
 }

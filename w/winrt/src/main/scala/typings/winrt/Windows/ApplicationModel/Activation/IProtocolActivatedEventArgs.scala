@@ -13,8 +13,7 @@ trait IProtocolActivatedEventArgs
 }
 object IProtocolActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,
@@ -24,10 +23,8 @@ object IProtocolActivatedEventArgs {
     __obj.asInstanceOf[IProtocolActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IProtocolActivatedEventArgsMutableBuilder[Self <: IProtocolActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IProtocolActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

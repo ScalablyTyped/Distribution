@@ -10,16 +10,13 @@ trait FirewallResource extends StObject {
 }
 object FirewallResource {
   
-  @scala.inline
-  def apply(ingressRules: IngressRulesResource): FirewallResource = {
+  inline def apply(ingressRules: IngressRulesResource): FirewallResource = {
     val __obj = js.Dynamic.literal(ingressRules = ingressRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallResource]
   }
   
-  @scala.inline
-  implicit class FirewallResourceMutableBuilder[Self <: FirewallResource] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallResource](x: Self) {
     
-    @scala.inline
-    def setIngressRules(value: IngressRulesResource): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
+    inline def setIngressRules(value: IngressRulesResource): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
   }
 }

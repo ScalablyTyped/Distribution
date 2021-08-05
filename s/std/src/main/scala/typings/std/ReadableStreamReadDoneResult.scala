@@ -15,22 +15,17 @@ trait ReadableStreamReadDoneResult[T]
 }
 object ReadableStreamReadDoneResult {
   
-  @scala.inline
-  def apply[T](): ReadableStreamReadDoneResult[T] = {
+  inline def apply[T](): ReadableStreamReadDoneResult[T] = {
     val __obj = js.Dynamic.literal(done = true)
     __obj.asInstanceOf[ReadableStreamReadDoneResult[T]]
   }
   
-  @scala.inline
-  implicit class ReadableStreamReadDoneResultMutableBuilder[Self <: ReadableStreamReadDoneResult[?], T] (val x: Self & ReadableStreamReadDoneResult[T]) extends AnyVal {
+  extension [Self <: ReadableStreamReadDoneResult[?], T](x: Self & ReadableStreamReadDoneResult[T]) {
     
-    @scala.inline
-    def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

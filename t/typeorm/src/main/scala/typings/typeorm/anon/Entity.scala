@@ -12,25 +12,19 @@ trait Entity[E1, E2] extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply[E1, E2](entity: E1): Entity[E1, E2] = {
+  inline def apply[E1, E2](entity: E1): Entity[E1, E2] = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity[E1, E2]]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity[?, ?], E1, E2] (val x: Self & (Entity[E1, E2])) extends AnyVal {
+  extension [Self <: Entity[?, ?], E1, E2](x: Self & (Entity[E1, E2])) {
     
-    @scala.inline
-    def setEntity(value: E1): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: E1): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelated(value: E2 | js.Array[E2]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+    inline def setRelated(value: E2 | js.Array[E2]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+    inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
-    @scala.inline
-    def setRelatedVarargs(value: E2*): Self = StObject.set(x, "related", js.Array(value :_*))
+    inline def setRelatedVarargs(value: E2*): Self = StObject.set(x, "related", js.Array(value :_*))
   }
 }

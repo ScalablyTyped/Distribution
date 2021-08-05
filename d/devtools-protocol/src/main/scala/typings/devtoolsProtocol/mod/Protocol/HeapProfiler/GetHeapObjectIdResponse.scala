@@ -13,16 +13,13 @@ trait GetHeapObjectIdResponse extends StObject {
 }
 object GetHeapObjectIdResponse {
   
-  @scala.inline
-  def apply(heapSnapshotObjectId: HeapSnapshotObjectId): GetHeapObjectIdResponse = {
+  inline def apply(heapSnapshotObjectId: HeapSnapshotObjectId): GetHeapObjectIdResponse = {
     val __obj = js.Dynamic.literal(heapSnapshotObjectId = heapSnapshotObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHeapObjectIdResponse]
   }
   
-  @scala.inline
-  implicit class GetHeapObjectIdResponseMutableBuilder[Self <: GetHeapObjectIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetHeapObjectIdResponse](x: Self) {
     
-    @scala.inline
-    def setHeapSnapshotObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapSnapshotObjectId", value.asInstanceOf[js.Any])
+    inline def setHeapSnapshotObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapSnapshotObjectId", value.asInstanceOf[js.Any])
   }
 }

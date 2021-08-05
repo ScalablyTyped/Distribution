@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ListTemplate")
 @js.native
-class ListTemplate protected ()
+/* private */ class ListTemplate ()
   extends StObject
      with typings.activexWord.Word.ListTemplate

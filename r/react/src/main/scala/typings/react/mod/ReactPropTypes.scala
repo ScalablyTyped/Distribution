@@ -49,8 +49,7 @@ trait ReactPropTypes extends StObject {
 }
 object ReactPropTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     any: typings.propTypes.mod.Requireable[js.Any],
     array: typings.propTypes.mod.Requireable[js.Array[js.Any]],
     arrayOf: FnCallType,
@@ -73,55 +72,38 @@ object ReactPropTypes {
     __obj.asInstanceOf[ReactPropTypes]
   }
   
-  @scala.inline
-  implicit class ReactPropTypesMutableBuilder[Self <: ReactPropTypes] (val x: Self) extends AnyVal {
+  extension [Self <: ReactPropTypes](x: Self) {
     
-    @scala.inline
-    def setAny(value: typings.propTypes.mod.Requireable[js.Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    inline def setAny(value: typings.propTypes.mod.Requireable[js.Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArray(value: typings.propTypes.mod.Requireable[js.Array[js.Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: typings.propTypes.mod.Requireable[js.Array[js.Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayOf(value: FnCallType): Self = StObject.set(x, "arrayOf", value.asInstanceOf[js.Any])
+    inline def setArrayOf(value: FnCallType): Self = StObject.set(x, "arrayOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBool(value: typings.propTypes.mod.Requireable[Boolean]): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+    inline def setBool(value: typings.propTypes.mod.Requireable[Boolean]): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: typings.propTypes.mod.Requireable[ReactElementLike]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: typings.propTypes.mod.Requireable[ReactElementLike]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExact(value: Fn3): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: Fn3): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunc(value: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceOf(value: FnCall): Self = StObject.set(x, "instanceOf", value.asInstanceOf[js.Any])
+    inline def setInstanceOf(value: FnCall): Self = StObject.set(x, "instanceOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: typings.propTypes.mod.Requireable[ReactNodeLike]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: typings.propTypes.mod.Requireable[ReactNodeLike]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: typings.propTypes.mod.Requireable[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: typings.propTypes.mod.Requireable[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: typings.propTypes.mod.Requireable[js.Object]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: typings.propTypes.mod.Requireable[js.Object]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectOf(value: Fn1): Self = StObject.set(x, "objectOf", value.asInstanceOf[js.Any])
+    inline def setObjectOf(value: Fn1): Self = StObject.set(x, "objectOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneOf(value: FnCallTypes): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
+    inline def setOneOf(value: FnCallTypes): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneOfType(value: Fn0): Self = StObject.set(x, "oneOfType", value.asInstanceOf[js.Any])
+    inline def setOneOfType(value: Fn0): Self = StObject.set(x, "oneOfType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: Fn2): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Fn2): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: typings.propTypes.mod.Requireable[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: typings.propTypes.mod.Requireable[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

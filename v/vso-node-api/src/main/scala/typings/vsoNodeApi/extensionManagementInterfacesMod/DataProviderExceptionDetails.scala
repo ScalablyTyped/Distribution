@@ -23,22 +23,17 @@ trait DataProviderExceptionDetails extends StObject {
 }
 object DataProviderExceptionDetails {
   
-  @scala.inline
-  def apply(exceptionType: String, message: String, stackTrace: String): DataProviderExceptionDetails = {
+  inline def apply(exceptionType: String, message: String, stackTrace: String): DataProviderExceptionDetails = {
     val __obj = js.Dynamic.literal(exceptionType = exceptionType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], stackTrace = stackTrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProviderExceptionDetails]
   }
   
-  @scala.inline
-  implicit class DataProviderExceptionDetailsMutableBuilder[Self <: DataProviderExceptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DataProviderExceptionDetails](x: Self) {
     
-    @scala.inline
-    def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
+    inline def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
   }
 }

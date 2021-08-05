@@ -27,8 +27,7 @@ trait univariateColorSize extends StObject {
 }
 object univariateColorSize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createContinuousRenderer: univariateColorSizeCreateContinuousRendererParams => js.Promise[univariateColorSizeContinuousRendererResult],
     createVisualVariables: univariateColorSizeCreateVisualVariablesParams => js.Promise[VisualVariablesResult]
   ): univariateColorSize = {
@@ -36,15 +35,12 @@ object univariateColorSize {
     __obj.asInstanceOf[univariateColorSize]
   }
   
-  @scala.inline
-  implicit class univariateColorSizeMutableBuilder[Self <: univariateColorSize] (val x: Self) extends AnyVal {
+  extension [Self <: univariateColorSize](x: Self) {
     
-    @scala.inline
-    def setCreateContinuousRenderer(
+    inline def setCreateContinuousRenderer(
       value: univariateColorSizeCreateContinuousRendererParams => js.Promise[univariateColorSizeContinuousRendererResult]
     ): Self = StObject.set(x, "createContinuousRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateVisualVariables(value: univariateColorSizeCreateVisualVariablesParams => js.Promise[VisualVariablesResult]): Self = StObject.set(x, "createVisualVariables", js.Any.fromFunction1(value))
+    inline def setCreateVisualVariables(value: univariateColorSizeCreateVisualVariablesParams => js.Promise[VisualVariablesResult]): Self = StObject.set(x, "createVisualVariables", js.Any.fromFunction1(value))
   }
 }

@@ -24,16 +24,13 @@ trait XNode extends StObject {
 }
 object XNode {
   
-  @scala.inline
-  def apply(StringValue: String): XNode = {
+  inline def apply(StringValue: String): XNode = {
     val __obj = js.Dynamic.literal(StringValue = StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[XNode]
   }
   
-  @scala.inline
-  implicit class XNodeMutableBuilder[Self <: XNode] (val x: Self) extends AnyVal {
+  extension [Self <: XNode](x: Self) {
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
   }
 }

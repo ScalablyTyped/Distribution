@@ -37,7 +37,7 @@ object blockingproxyMod {
     
     var logger: WebDriverLogger = js.native
     
-    var proxy: js.Any = js.native
+    /* private */ var proxy: js.Any = js.native
     
     def quit(): js.Promise[js.Object] = js.native
     
@@ -67,7 +67,6 @@ object blockingproxyMod {
     /**
       * This command is for the proxy server, not to be forwarded to Selenium.
       */
-    @scala.inline
-    def isProxyCommand(commandPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyCommand")(commandPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isProxyCommand(commandPath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyCommand")(commandPath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

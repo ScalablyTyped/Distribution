@@ -48,61 +48,43 @@ trait ApprovalRuleTemplate extends StObject {
 }
 object ApprovalRuleTemplate {
   
-  @scala.inline
-  def apply(): ApprovalRuleTemplate = {
+  inline def apply(): ApprovalRuleTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApprovalRuleTemplate]
   }
   
-  @scala.inline
-  implicit class ApprovalRuleTemplateMutableBuilder[Self <: ApprovalRuleTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ApprovalRuleTemplate](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleTemplateContent(value: ApprovalRuleTemplateContent): Self = StObject.set(x, "approvalRuleTemplateContent", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateContent(value: ApprovalRuleTemplateContent): Self = StObject.set(x, "approvalRuleTemplateContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleTemplateContentUndefined: Self = StObject.set(x, "approvalRuleTemplateContent", js.undefined)
+    inline def setApprovalRuleTemplateContentUndefined: Self = StObject.set(x, "approvalRuleTemplateContent", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleTemplateDescription(value: ApprovalRuleTemplateDescription): Self = StObject.set(x, "approvalRuleTemplateDescription", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateDescription(value: ApprovalRuleTemplateDescription): Self = StObject.set(x, "approvalRuleTemplateDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleTemplateDescriptionUndefined: Self = StObject.set(x, "approvalRuleTemplateDescription", js.undefined)
+    inline def setApprovalRuleTemplateDescriptionUndefined: Self = StObject.set(x, "approvalRuleTemplateDescription", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleTemplateId(value: ApprovalRuleTemplateId): Self = StObject.set(x, "approvalRuleTemplateId", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateId(value: ApprovalRuleTemplateId): Self = StObject.set(x, "approvalRuleTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleTemplateIdUndefined: Self = StObject.set(x, "approvalRuleTemplateId", js.undefined)
+    inline def setApprovalRuleTemplateIdUndefined: Self = StObject.set(x, "approvalRuleTemplateId", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleTemplateNameUndefined: Self = StObject.set(x, "approvalRuleTemplateName", js.undefined)
+    inline def setApprovalRuleTemplateNameUndefined: Self = StObject.set(x, "approvalRuleTemplateName", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setLastModifiedUser(value: Arn): Self = StObject.set(x, "lastModifiedUser", value.asInstanceOf[js.Any])
+    inline def setLastModifiedUser(value: Arn): Self = StObject.set(x, "lastModifiedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUserUndefined: Self = StObject.set(x, "lastModifiedUser", js.undefined)
+    inline def setLastModifiedUserUndefined: Self = StObject.set(x, "lastModifiedUser", js.undefined)
     
-    @scala.inline
-    def setRuleContentSha256(value: RuleContentSha256): Self = StObject.set(x, "ruleContentSha256", value.asInstanceOf[js.Any])
+    inline def setRuleContentSha256(value: RuleContentSha256): Self = StObject.set(x, "ruleContentSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleContentSha256Undefined: Self = StObject.set(x, "ruleContentSha256", js.undefined)
+    inline def setRuleContentSha256Undefined: Self = StObject.set(x, "ruleContentSha256", js.undefined)
   }
 }

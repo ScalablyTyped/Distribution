@@ -390,631 +390,486 @@ object configMod {
   }
   object AxisConfig {
     
-    @scala.inline
-    def apply(): AxisConfig = {
+    inline def apply(): AxisConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AxisConfig]
     }
     
-    @scala.inline
-    implicit class AxisConfigMutableBuilder[Self <: AxisConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AxisConfig](x: Self) {
       
-      @scala.inline
-      def setAria(
+      inline def setAria(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+      inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
-      @scala.inline
-      def setBandPosition(
+      inline def setBandPosition(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
+      inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
       
-      @scala.inline
-      def setDescription(
+      inline def setDescription(
         value: (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
       ): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDomain(
+      inline def setDomain(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainCap(
+      inline def setDomainCap(
         value: (Exclude[
               js.UndefOr[StrokeCapValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ): Self = StObject.set(x, "domainCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainCapUndefined: Self = StObject.set(x, "domainCap", js.undefined)
+      inline def setDomainCapUndefined: Self = StObject.set(x, "domainCap", js.undefined)
       
-      @scala.inline
-      def setDomainColor(
+      inline def setDomainColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "domainColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainColorNull: Self = StObject.set(x, "domainColor", null)
+      inline def setDomainColorNull: Self = StObject.set(x, "domainColor", null)
       
-      @scala.inline
-      def setDomainColorUndefined: Self = StObject.set(x, "domainColor", js.undefined)
+      inline def setDomainColorUndefined: Self = StObject.set(x, "domainColor", js.undefined)
       
-      @scala.inline
-      def setDomainDash(
+      inline def setDomainDash(
         value: (Exclude[
               js.UndefOr[DashArrayValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "domainDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainDashOffset(
+      inline def setDomainDashOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "domainDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainDashOffsetUndefined: Self = StObject.set(x, "domainDashOffset", js.undefined)
+      inline def setDomainDashOffsetUndefined: Self = StObject.set(x, "domainDashOffset", js.undefined)
       
-      @scala.inline
-      def setDomainDashUndefined: Self = StObject.set(x, "domainDash", js.undefined)
+      inline def setDomainDashUndefined: Self = StObject.set(x, "domainDash", js.undefined)
       
-      @scala.inline
-      def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value :_*))
+      inline def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value :_*))
       
-      @scala.inline
-      def setDomainOpacity(
+      inline def setDomainOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "domainOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOpacityUndefined: Self = StObject.set(x, "domainOpacity", js.undefined)
+      inline def setDomainOpacityUndefined: Self = StObject.set(x, "domainOpacity", js.undefined)
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setDomainWidth(
+      inline def setDomainWidth(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "domainWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainWidthUndefined: Self = StObject.set(x, "domainWidth", js.undefined)
+      inline def setDomainWidthUndefined: Self = StObject.set(x, "domainWidth", js.undefined)
       
-      @scala.inline
-      def setGrid(
+      inline def setGrid(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridCap(
+      inline def setGridCap(
         value: (Exclude[
               js.UndefOr[StrokeCapValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ): Self = StObject.set(x, "gridCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridCapUndefined: Self = StObject.set(x, "gridCap", js.undefined)
+      inline def setGridCapUndefined: Self = StObject.set(x, "gridCap", js.undefined)
       
-      @scala.inline
-      def setGridColor(
+      inline def setGridColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColorNull: Self = StObject.set(x, "gridColor", null)
+      inline def setGridColorNull: Self = StObject.set(x, "gridColor", null)
       
-      @scala.inline
-      def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
+      inline def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
       
-      @scala.inline
-      def setGridDash(
+      inline def setGridDash(
         value: (Exclude[
               js.UndefOr[DashArrayValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "gridDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridDashOffset(
+      inline def setGridDashOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gridDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridDashOffsetUndefined: Self = StObject.set(x, "gridDashOffset", js.undefined)
+      inline def setGridDashOffsetUndefined: Self = StObject.set(x, "gridDashOffset", js.undefined)
       
-      @scala.inline
-      def setGridDashUndefined: Self = StObject.set(x, "gridDash", js.undefined)
+      inline def setGridDashUndefined: Self = StObject.set(x, "gridDash", js.undefined)
       
-      @scala.inline
-      def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value :_*))
+      inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value :_*))
       
-      @scala.inline
-      def setGridOpacity(
+      inline def setGridOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gridOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridOpacityUndefined: Self = StObject.set(x, "gridOpacity", js.undefined)
+      inline def setGridOpacityUndefined: Self = StObject.set(x, "gridOpacity", js.undefined)
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setGridWidth(
+      inline def setGridWidth(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gridWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridWidthUndefined: Self = StObject.set(x, "gridWidth", js.undefined)
+      inline def setGridWidthUndefined: Self = StObject.set(x, "gridWidth", js.undefined)
       
-      @scala.inline
-      def setLabelAlign(
+      inline def setLabelAlign(
         value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
+      inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
       
-      @scala.inline
-      def setLabelAngle(
+      inline def setLabelAngle(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
+      inline def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
       
-      @scala.inline
-      def setLabelBaseline(
+      inline def setLabelBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
+      inline def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
       
-      @scala.inline
-      def setLabelBound(
+      inline def setLabelBound(
         value: (Exclude[
               js.UndefOr[Double | Boolean | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
       ): Self = StObject.set(x, "labelBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelBoundUndefined: Self = StObject.set(x, "labelBound", js.undefined)
+      inline def setLabelBoundUndefined: Self = StObject.set(x, "labelBound", js.undefined)
       
-      @scala.inline
-      def setLabelColor(
+      inline def setLabelColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
+      inline def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
       
-      @scala.inline
-      def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
+      inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
       
-      @scala.inline
-      def setLabelFlush(
+      inline def setLabelFlush(
         value: (Exclude[
               js.UndefOr[Double | Boolean | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
       ): Self = StObject.set(x, "labelFlush", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFlushOffset(
+      inline def setLabelFlushOffset(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "labelFlushOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFlushOffsetUndefined: Self = StObject.set(x, "labelFlushOffset", js.undefined)
+      inline def setLabelFlushOffsetUndefined: Self = StObject.set(x, "labelFlushOffset", js.undefined)
       
-      @scala.inline
-      def setLabelFlushUndefined: Self = StObject.set(x, "labelFlush", js.undefined)
+      inline def setLabelFlushUndefined: Self = StObject.set(x, "labelFlush", js.undefined)
       
-      @scala.inline
-      def setLabelFont(
+      inline def setLabelFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontSize(
+      inline def setLabelFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
+      inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
       
-      @scala.inline
-      def setLabelFontStyle(
+      inline def setLabelFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
+      inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
       
-      @scala.inline
-      def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
+      inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
       
-      @scala.inline
-      def setLabelFontWeight(
+      inline def setLabelFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
+      inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
       
-      @scala.inline
-      def setLabelLimit(
+      inline def setLabelLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
+      inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
       
-      @scala.inline
-      def setLabelLineHeight(
+      inline def setLabelLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
+      inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
       
-      @scala.inline
-      def setLabelOffset(
+      inline def setLabelOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
+      inline def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
       
-      @scala.inline
-      def setLabelOpacity(
+      inline def setLabelOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
+      inline def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
       
-      @scala.inline
-      def setLabelOverlap(
+      inline def setLabelOverlap(
         value: (Exclude[
               js.UndefOr[LabelOverlap | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
       ): Self = StObject.set(x, "labelOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
+      inline def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
       
-      @scala.inline
-      def setLabelPadding(
+      inline def setLabelPadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
+      inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
       
-      @scala.inline
-      def setLabelSeparation(
+      inline def setLabelSeparation(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "labelSeparation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelSeparationUndefined: Self = StObject.set(x, "labelSeparation", js.undefined)
+      inline def setLabelSeparationUndefined: Self = StObject.set(x, "labelSeparation", js.undefined)
       
-      @scala.inline
-      def setLabels(
+      inline def setLabels(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setMaxExtent(
+      inline def setMaxExtent(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "maxExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxExtentUndefined: Self = StObject.set(x, "maxExtent", js.undefined)
+      inline def setMaxExtentUndefined: Self = StObject.set(x, "maxExtent", js.undefined)
       
-      @scala.inline
-      def setMinExtent(
+      inline def setMinExtent(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "minExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExtentUndefined: Self = StObject.set(x, "minExtent", js.undefined)
+      inline def setMinExtentUndefined: Self = StObject.set(x, "minExtent", js.undefined)
       
-      @scala.inline
-      def setTickBand(
+      inline def setTickBand(
         value: (Exclude[
               js.UndefOr[center | extent | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[center | extent | SignalRef]])
       ): Self = StObject.set(x, "tickBand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickBandUndefined: Self = StObject.set(x, "tickBand", js.undefined)
+      inline def setTickBandUndefined: Self = StObject.set(x, "tickBand", js.undefined)
       
-      @scala.inline
-      def setTickCap(
+      inline def setTickCap(
         value: (Exclude[
               js.UndefOr[StrokeCapValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ): Self = StObject.set(x, "tickCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickCapUndefined: Self = StObject.set(x, "tickCap", js.undefined)
+      inline def setTickCapUndefined: Self = StObject.set(x, "tickCap", js.undefined)
       
-      @scala.inline
-      def setTickColor(
+      inline def setTickColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickColorNull: Self = StObject.set(x, "tickColor", null)
+      inline def setTickColorNull: Self = StObject.set(x, "tickColor", null)
       
-      @scala.inline
-      def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
+      inline def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
       
-      @scala.inline
-      def setTickDash(
+      inline def setTickDash(
         value: (Exclude[
               js.UndefOr[DashArrayValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "tickDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickDashOffset(
+      inline def setTickDashOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickDashOffsetUndefined: Self = StObject.set(x, "tickDashOffset", js.undefined)
+      inline def setTickDashOffsetUndefined: Self = StObject.set(x, "tickDashOffset", js.undefined)
       
-      @scala.inline
-      def setTickDashUndefined: Self = StObject.set(x, "tickDash", js.undefined)
+      inline def setTickDashUndefined: Self = StObject.set(x, "tickDash", js.undefined)
       
-      @scala.inline
-      def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value :_*))
+      inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value :_*))
       
-      @scala.inline
-      def setTickExtra(
+      inline def setTickExtra(
         value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ): Self = StObject.set(x, "tickExtra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickExtraUndefined: Self = StObject.set(x, "tickExtra", js.undefined)
+      inline def setTickExtraUndefined: Self = StObject.set(x, "tickExtra", js.undefined)
       
-      @scala.inline
-      def setTickOffset(
+      inline def setTickOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickOffsetUndefined: Self = StObject.set(x, "tickOffset", js.undefined)
+      inline def setTickOffsetUndefined: Self = StObject.set(x, "tickOffset", js.undefined)
       
-      @scala.inline
-      def setTickOpacity(
+      inline def setTickOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickOpacityUndefined: Self = StObject.set(x, "tickOpacity", js.undefined)
+      inline def setTickOpacityUndefined: Self = StObject.set(x, "tickOpacity", js.undefined)
       
-      @scala.inline
-      def setTickRound(
+      inline def setTickRound(
         value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ): Self = StObject.set(x, "tickRound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickRoundUndefined: Self = StObject.set(x, "tickRound", js.undefined)
+      inline def setTickRoundUndefined: Self = StObject.set(x, "tickRound", js.undefined)
       
-      @scala.inline
-      def setTickSize(
+      inline def setTickSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
+      inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
       
-      @scala.inline
-      def setTickWidth(
+      inline def setTickWidth(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
+      inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
       
-      @scala.inline
-      def setTicks(
+      inline def setTicks(
         value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+      inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
       
-      @scala.inline
-      def setTitleAlign(
+      inline def setTitleAlign(
         value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
+      inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
       
-      @scala.inline
-      def setTitleAnchor(
+      inline def setTitleAnchor(
         value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ): Self = StObject.set(x, "titleAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
+      inline def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
       
-      @scala.inline
-      def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
+      inline def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
       
-      @scala.inline
-      def setTitleAngle(
+      inline def setTitleAngle(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
+      inline def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
       
-      @scala.inline
-      def setTitleBaseline(
+      inline def setTitleBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
+      inline def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
       
-      @scala.inline
-      def setTitleColor(
+      inline def setTitleColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorNull: Self = StObject.set(x, "titleColor", null)
+      inline def setTitleColorNull: Self = StObject.set(x, "titleColor", null)
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTitleFont(
+      inline def setTitleFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontSize(
+      inline def setTitleFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
+      inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
       
-      @scala.inline
-      def setTitleFontStyle(
+      inline def setTitleFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
+      inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
       
-      @scala.inline
-      def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
+      inline def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
       
-      @scala.inline
-      def setTitleFontWeight(
+      inline def setTitleFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
+      inline def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
       
-      @scala.inline
-      def setTitleLimit(
+      inline def setTitleLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
+      inline def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
       
-      @scala.inline
-      def setTitleLineHeight(
+      inline def setTitleLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
+      inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
       
-      @scala.inline
-      def setTitleOpacity(
+      inline def setTitleOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleOpacityUndefined: Self = StObject.set(x, "titleOpacity", js.undefined)
+      inline def setTitleOpacityUndefined: Self = StObject.set(x, "titleOpacity", js.undefined)
       
-      @scala.inline
-      def setTitlePadding(
+      inline def setTitlePadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
+      inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
       
-      @scala.inline
-      def setTitleX(
+      inline def setTitleX(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleXUndefined: Self = StObject.set(x, "titleX", js.undefined)
+      inline def setTitleXUndefined: Self = StObject.set(x, "titleX", js.undefined)
       
-      @scala.inline
-      def setTitleY(
+      inline def setTitleY(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleYUndefined: Self = StObject.set(x, "titleY", js.undefined)
+      inline def setTitleYUndefined: Self = StObject.set(x, "titleY", js.undefined)
       
-      @scala.inline
-      def setTranslate(
+      inline def setTranslate(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setZindex(
+      inline def setZindex(
         value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
+      inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
   
@@ -1031,29 +886,21 @@ object configMod {
   trait AxisConfigKeys extends StObject
   object AxisConfigKeys {
     
-    @scala.inline
-    def axis: typings.vegaTypings.vegaTypingsStrings.axis = "axis".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axis]
+    inline def axis: typings.vegaTypings.vegaTypingsStrings.axis = "axis".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axis]
     
-    @scala.inline
-    def axisBand: typings.vegaTypings.vegaTypingsStrings.axisBand = "axisBand".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisBand]
+    inline def axisBand: typings.vegaTypings.vegaTypingsStrings.axisBand = "axisBand".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisBand]
     
-    @scala.inline
-    def axisBottom: typings.vegaTypings.vegaTypingsStrings.axisBottom = "axisBottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisBottom]
+    inline def axisBottom: typings.vegaTypings.vegaTypingsStrings.axisBottom = "axisBottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisBottom]
     
-    @scala.inline
-    def axisLeft: typings.vegaTypings.vegaTypingsStrings.axisLeft = "axisLeft".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisLeft]
+    inline def axisLeft: typings.vegaTypings.vegaTypingsStrings.axisLeft = "axisLeft".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisLeft]
     
-    @scala.inline
-    def axisRight: typings.vegaTypings.vegaTypingsStrings.axisRight = "axisRight".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisRight]
+    inline def axisRight: typings.vegaTypings.vegaTypingsStrings.axisRight = "axisRight".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisRight]
     
-    @scala.inline
-    def axisTop: typings.vegaTypings.vegaTypingsStrings.axisTop = "axisTop".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisTop]
+    inline def axisTop: typings.vegaTypings.vegaTypingsStrings.axisTop = "axisTop".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisTop]
     
-    @scala.inline
-    def axisX: typings.vegaTypings.vegaTypingsStrings.axisX = "axisX".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisX]
+    inline def axisX: typings.vegaTypings.vegaTypingsStrings.axisX = "axisX".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisX]
     
-    @scala.inline
-    def axisY: typings.vegaTypings.vegaTypingsStrings.axisY = "axisY".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisY]
+    inline def axisY: typings.vegaTypings.vegaTypingsStrings.axisY = "axisY".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.axisY]
   }
   
   trait BaseLegendLayout extends StObject {
@@ -1090,53 +937,38 @@ object configMod {
   }
   object BaseLegendLayout {
     
-    @scala.inline
-    def apply(): BaseLegendLayout = {
+    inline def apply(): BaseLegendLayout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseLegendLayout]
     }
     
-    @scala.inline
-    implicit class BaseLegendLayoutMutableBuilder[Self <: BaseLegendLayout] (val x: Self) extends AnyVal {
+    extension [Self <: BaseLegendLayout](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: TitleAnchor | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: TitleAnchor | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorNull: Self = StObject.set(x, "anchor", null)
+      inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setBounds(value: LayoutBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: LayoutBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setCenter(value: Boolean | SignalRef): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean | SignalRef): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setDirection(value: Orientation | SignalRef): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Orientation | SignalRef): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double | SignalRef): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double | SignalRef): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -1216,218 +1048,148 @@ object configMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setArc(value: MarkConfig): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+      inline def setArc(value: MarkConfig): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
+      inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
       
-      @scala.inline
-      def setArea(value: MarkConfig): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: MarkConfig): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+      inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
       
-      @scala.inline
-      def setAutosize(value: AutoSize | SignalRef): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
+      inline def setAutosize(value: AutoSize | SignalRef): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
+      inline def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
       
-      @scala.inline
-      def setAxis(value: AxisConfig): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: AxisConfig): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisBand(value: AxisConfig): Self = StObject.set(x, "axisBand", value.asInstanceOf[js.Any])
+      inline def setAxisBand(value: AxisConfig): Self = StObject.set(x, "axisBand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisBandUndefined: Self = StObject.set(x, "axisBand", js.undefined)
+      inline def setAxisBandUndefined: Self = StObject.set(x, "axisBand", js.undefined)
       
-      @scala.inline
-      def setAxisBottom(value: AxisConfig): Self = StObject.set(x, "axisBottom", value.asInstanceOf[js.Any])
+      inline def setAxisBottom(value: AxisConfig): Self = StObject.set(x, "axisBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisBottomUndefined: Self = StObject.set(x, "axisBottom", js.undefined)
+      inline def setAxisBottomUndefined: Self = StObject.set(x, "axisBottom", js.undefined)
       
-      @scala.inline
-      def setAxisLeft(value: AxisConfig): Self = StObject.set(x, "axisLeft", value.asInstanceOf[js.Any])
+      inline def setAxisLeft(value: AxisConfig): Self = StObject.set(x, "axisLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisLeftUndefined: Self = StObject.set(x, "axisLeft", js.undefined)
+      inline def setAxisLeftUndefined: Self = StObject.set(x, "axisLeft", js.undefined)
       
-      @scala.inline
-      def setAxisRight(value: AxisConfig): Self = StObject.set(x, "axisRight", value.asInstanceOf[js.Any])
+      inline def setAxisRight(value: AxisConfig): Self = StObject.set(x, "axisRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisRightUndefined: Self = StObject.set(x, "axisRight", js.undefined)
+      inline def setAxisRightUndefined: Self = StObject.set(x, "axisRight", js.undefined)
       
-      @scala.inline
-      def setAxisTop(value: AxisConfig): Self = StObject.set(x, "axisTop", value.asInstanceOf[js.Any])
+      inline def setAxisTop(value: AxisConfig): Self = StObject.set(x, "axisTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisTopUndefined: Self = StObject.set(x, "axisTop", js.undefined)
+      inline def setAxisTopUndefined: Self = StObject.set(x, "axisTop", js.undefined)
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setAxisX(value: AxisConfig): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
+      inline def setAxisX(value: AxisConfig): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
+      inline def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
       
-      @scala.inline
-      def setAxisY(value: AxisConfig): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
+      inline def setAxisY(value: AxisConfig): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
+      inline def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
       
-      @scala.inline
-      def setBackground(value: Color | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Color | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundNull: Self = StObject.set(x, "background", null)
+      inline def setBackgroundNull: Self = StObject.set(x, "background", null)
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setEvents(value: Bind): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Bind): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setImage(value: MarkConfig): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: MarkConfig): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setLegend(value: LegendConfig): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: LegendConfig): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
-      @scala.inline
-      def setLine(value: MarkConfig): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: MarkConfig): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreak(value: String | SignalRef): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
+      inline def setLineBreak(value: String | SignalRef): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
+      inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMark(value: MarkConfig): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: MarkConfig): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Padding | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPath(value: MarkConfig): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: MarkConfig): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setProjection(value: ProjectionConfig): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: ProjectionConfig): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setRange(value: RangeConfig): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: RangeConfig): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setRect(value: MarkConfig): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: MarkConfig): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+      inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
       
-      @scala.inline
-      def setRule(value: MarkConfig): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: MarkConfig): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+      inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
       
-      @scala.inline
-      def setShape(value: MarkConfig): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: MarkConfig): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setSignals(value: js.Array[InitSignal | NewSignal]): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
+      inline def setSignals(value: js.Array[InitSignal | NewSignal]): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+      inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      @scala.inline
-      def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value :_*))
+      inline def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: StringDictionary[MarkConfig]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StringDictionary[MarkConfig]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: MarkConfig): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: MarkConfig): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setText(value: MarkConfig): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: MarkConfig): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTitle(value: TitleConfig): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: TitleConfig): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTrail(value: MarkConfig): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
+      inline def setTrail(value: MarkConfig): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailUndefined: Self = StObject.set(x, "trail", js.undefined)
+      inline def setTrailUndefined: Self = StObject.set(x, "trail", js.undefined)
     }
   }
   
@@ -1472,110 +1234,75 @@ object configMod {
   trait Cursor extends StObject
   object Cursor {
     
-    @scala.inline
-    def default: typings.vegaTypings.vegaTypingsStrings.default = "default".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.default]
+    inline def default: typings.vegaTypings.vegaTypingsStrings.default = "default".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.default]
     
-    @scala.inline
-    def alias: typings.vegaTypings.vegaTypingsStrings.alias = "alias".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.alias]
+    inline def alias: typings.vegaTypings.vegaTypingsStrings.alias = "alias".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.alias]
     
-    @scala.inline
-    def `all-scroll`: typings.vegaTypings.vegaTypingsStrings.`all-scroll` = "all-scroll".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`all-scroll`]
+    inline def `all-scroll`: typings.vegaTypings.vegaTypingsStrings.`all-scroll` = "all-scroll".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`all-scroll`]
     
-    @scala.inline
-    def auto: typings.vegaTypings.vegaTypingsStrings.auto = "auto".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.auto]
+    inline def auto: typings.vegaTypings.vegaTypingsStrings.auto = "auto".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.auto]
     
-    @scala.inline
-    def cell: typings.vegaTypings.vegaTypingsStrings.cell = "cell".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cell]
+    inline def cell: typings.vegaTypings.vegaTypingsStrings.cell = "cell".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cell]
     
-    @scala.inline
-    def `col-resize`: typings.vegaTypings.vegaTypingsStrings.`col-resize` = "col-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`col-resize`]
+    inline def `col-resize`: typings.vegaTypings.vegaTypingsStrings.`col-resize` = "col-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`col-resize`]
     
-    @scala.inline
-    def `context-menu`: typings.vegaTypings.vegaTypingsStrings.`context-menu` = "context-menu".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`context-menu`]
+    inline def `context-menu`: typings.vegaTypings.vegaTypingsStrings.`context-menu` = "context-menu".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`context-menu`]
     
-    @scala.inline
-    def copy: typings.vegaTypings.vegaTypingsStrings.copy = "copy".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.copy]
+    inline def copy: typings.vegaTypings.vegaTypingsStrings.copy = "copy".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.copy]
     
-    @scala.inline
-    def crosshair: typings.vegaTypings.vegaTypingsStrings.crosshair = "crosshair".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.crosshair]
+    inline def crosshair: typings.vegaTypings.vegaTypingsStrings.crosshair = "crosshair".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.crosshair]
     
-    @scala.inline
-    def `e-resize`: typings.vegaTypings.vegaTypingsStrings.`e-resize` = "e-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`e-resize`]
+    inline def `e-resize`: typings.vegaTypings.vegaTypingsStrings.`e-resize` = "e-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`e-resize`]
     
-    @scala.inline
-    def `ew-resize`: typings.vegaTypings.vegaTypingsStrings.`ew-resize` = "ew-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`ew-resize`]
+    inline def `ew-resize`: typings.vegaTypings.vegaTypingsStrings.`ew-resize` = "ew-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`ew-resize`]
     
-    @scala.inline
-    def grab: typings.vegaTypings.vegaTypingsStrings.grab = "grab".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.grab]
+    inline def grab: typings.vegaTypings.vegaTypingsStrings.grab = "grab".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.grab]
     
-    @scala.inline
-    def grabbing: typings.vegaTypings.vegaTypingsStrings.grabbing = "grabbing".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.grabbing]
+    inline def grabbing: typings.vegaTypings.vegaTypingsStrings.grabbing = "grabbing".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.grabbing]
     
-    @scala.inline
-    def help: typings.vegaTypings.vegaTypingsStrings.help = "help".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.help]
+    inline def help: typings.vegaTypings.vegaTypingsStrings.help = "help".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.help]
     
-    @scala.inline
-    def move: typings.vegaTypings.vegaTypingsStrings.move = "move".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.move]
+    inline def move: typings.vegaTypings.vegaTypingsStrings.move = "move".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.move]
     
-    @scala.inline
-    def `n-resize`: typings.vegaTypings.vegaTypingsStrings.`n-resize` = "n-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`n-resize`]
+    inline def `n-resize`: typings.vegaTypings.vegaTypingsStrings.`n-resize` = "n-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`n-resize`]
     
-    @scala.inline
-    def `ne-resize`: typings.vegaTypings.vegaTypingsStrings.`ne-resize` = "ne-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`ne-resize`]
+    inline def `ne-resize`: typings.vegaTypings.vegaTypingsStrings.`ne-resize` = "ne-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`ne-resize`]
     
-    @scala.inline
-    def `nesw-resize`: typings.vegaTypings.vegaTypingsStrings.`nesw-resize` = "nesw-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`nesw-resize`]
+    inline def `nesw-resize`: typings.vegaTypings.vegaTypingsStrings.`nesw-resize` = "nesw-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`nesw-resize`]
     
-    @scala.inline
-    def `no-drop`: typings.vegaTypings.vegaTypingsStrings.`no-drop` = "no-drop".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`no-drop`]
+    inline def `no-drop`: typings.vegaTypings.vegaTypingsStrings.`no-drop` = "no-drop".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`no-drop`]
     
-    @scala.inline
-    def none: typings.vegaTypings.vegaTypingsStrings.none = "none".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.none]
+    inline def none: typings.vegaTypings.vegaTypingsStrings.none = "none".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.none]
     
-    @scala.inline
-    def `not-allowed`: typings.vegaTypings.vegaTypingsStrings.`not-allowed` = "not-allowed".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`not-allowed`]
+    inline def `not-allowed`: typings.vegaTypings.vegaTypingsStrings.`not-allowed` = "not-allowed".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`not-allowed`]
     
-    @scala.inline
-    def `ns-resize`: typings.vegaTypings.vegaTypingsStrings.`ns-resize` = "ns-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`ns-resize`]
+    inline def `ns-resize`: typings.vegaTypings.vegaTypingsStrings.`ns-resize` = "ns-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`ns-resize`]
     
-    @scala.inline
-    def `nw-resize`: typings.vegaTypings.vegaTypingsStrings.`nw-resize` = "nw-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`nw-resize`]
+    inline def `nw-resize`: typings.vegaTypings.vegaTypingsStrings.`nw-resize` = "nw-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`nw-resize`]
     
-    @scala.inline
-    def `nwse-resize`: typings.vegaTypings.vegaTypingsStrings.`nwse-resize` = "nwse-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`nwse-resize`]
+    inline def `nwse-resize`: typings.vegaTypings.vegaTypingsStrings.`nwse-resize` = "nwse-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`nwse-resize`]
     
-    @scala.inline
-    def pointer: typings.vegaTypings.vegaTypingsStrings.pointer = "pointer".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pointer]
+    inline def pointer: typings.vegaTypings.vegaTypingsStrings.pointer = "pointer".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pointer]
     
-    @scala.inline
-    def progress: typings.vegaTypings.vegaTypingsStrings.progress = "progress".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.progress]
+    inline def progress: typings.vegaTypings.vegaTypingsStrings.progress = "progress".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.progress]
     
-    @scala.inline
-    def `row-resize`: typings.vegaTypings.vegaTypingsStrings.`row-resize` = "row-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`row-resize`]
+    inline def `row-resize`: typings.vegaTypings.vegaTypingsStrings.`row-resize` = "row-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`row-resize`]
     
-    @scala.inline
-    def `s-resize`: typings.vegaTypings.vegaTypingsStrings.`s-resize` = "s-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`s-resize`]
+    inline def `s-resize`: typings.vegaTypings.vegaTypingsStrings.`s-resize` = "s-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`s-resize`]
     
-    @scala.inline
-    def `se-resize`: typings.vegaTypings.vegaTypingsStrings.`se-resize` = "se-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`se-resize`]
+    inline def `se-resize`: typings.vegaTypings.vegaTypingsStrings.`se-resize` = "se-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`se-resize`]
     
-    @scala.inline
-    def `sw-resize`: typings.vegaTypings.vegaTypingsStrings.`sw-resize` = "sw-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`sw-resize`]
+    inline def `sw-resize`: typings.vegaTypings.vegaTypingsStrings.`sw-resize` = "sw-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`sw-resize`]
     
-    @scala.inline
-    def text: typings.vegaTypings.vegaTypingsStrings.text = "text".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.text]
+    inline def text: typings.vegaTypings.vegaTypingsStrings.text = "text".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.text]
     
-    @scala.inline
-    def `vertical-text`: typings.vegaTypings.vegaTypingsStrings.`vertical-text` = "vertical-text".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`vertical-text`]
+    inline def `vertical-text`: typings.vegaTypings.vegaTypingsStrings.`vertical-text` = "vertical-text".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`vertical-text`]
     
-    @scala.inline
-    def `w-resize`: typings.vegaTypings.vegaTypingsStrings.`w-resize` = "w-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`w-resize`]
+    inline def `w-resize`: typings.vegaTypings.vegaTypingsStrings.`w-resize` = "w-resize".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`w-resize`]
     
-    @scala.inline
-    def `zoom-in`: typings.vegaTypings.vegaTypingsStrings.`zoom-in` = "zoom-in".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`zoom-in`]
+    inline def `zoom-in`: typings.vegaTypings.vegaTypingsStrings.`zoom-in` = "zoom-in".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`zoom-in`]
     
-    @scala.inline
-    def `zoom-out`: typings.vegaTypings.vegaTypingsStrings.`zoom-out` = "zoom-out".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`zoom-out`]
+    inline def `zoom-out`: typings.vegaTypings.vegaTypingsStrings.`zoom-out` = "zoom-out".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`zoom-out`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -1585,14 +1312,12 @@ object configMod {
   trait DefaultsConfig extends StObject
   object DefaultsConfig {
     
-    @scala.inline
-    def RecordallowbooleanArrayEv(allow: Boolean | js.Array[EventType]): typings.vegaTypings.anon.RecordallowbooleanArrayEv = {
+    inline def RecordallowbooleanArrayEv(allow: Boolean | js.Array[EventType]): typings.vegaTypings.anon.RecordallowbooleanArrayEv = {
       val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.anon.RecordallowbooleanArrayEv]
     }
     
-    @scala.inline
-    def RecordpreventbooleanArray(prevent: Boolean | js.Array[EventType]): typings.vegaTypings.anon.RecordpreventbooleanArray = {
+    inline def RecordpreventbooleanArray(prevent: Boolean | js.Array[EventType]): typings.vegaTypings.anon.RecordpreventbooleanArray = {
       val __obj = js.Dynamic.literal(prevent = prevent.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.anon.RecordpreventbooleanArray]
     }
@@ -1950,622 +1675,474 @@ object configMod {
   }
   object LegendConfig {
     
-    @scala.inline
-    def apply(): LegendConfig = {
+    inline def apply(): LegendConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LegendConfig]
     }
     
-    @scala.inline
-    implicit class LegendConfigMutableBuilder[Self <: LegendConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LegendConfig](x: Self) {
       
-      @scala.inline
-      def setAria(
+      inline def setAria(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+      inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
-      @scala.inline
-      def setClipHeight(
+      inline def setClipHeight(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "clipHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipHeightUndefined: Self = StObject.set(x, "clipHeight", js.undefined)
+      inline def setClipHeightUndefined: Self = StObject.set(x, "clipHeight", js.undefined)
       
-      @scala.inline
-      def setColumnPadding(
+      inline def setColumnPadding(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "columnPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnPaddingUndefined: Self = StObject.set(x, "columnPadding", js.undefined)
+      inline def setColumnPaddingUndefined: Self = StObject.set(x, "columnPadding", js.undefined)
       
-      @scala.inline
-      def setColumns(
+      inline def setColumns(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setCornerRadius(
+      inline def setCornerRadius(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+      inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
       
-      @scala.inline
-      def setDescription(
+      inline def setDescription(
         value: (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
       ): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFillColor(
+      inline def setFillColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorNull: Self = StObject.set(x, "fillColor", null)
+      inline def setFillColorNull: Self = StObject.set(x, "fillColor", null)
       
-      @scala.inline
-      def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+      inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      @scala.inline
-      def setGradientDirection(value: Orientation): Self = StObject.set(x, "gradientDirection", value.asInstanceOf[js.Any])
+      inline def setGradientDirection(value: Orientation): Self = StObject.set(x, "gradientDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientDirectionUndefined: Self = StObject.set(x, "gradientDirection", js.undefined)
+      inline def setGradientDirectionUndefined: Self = StObject.set(x, "gradientDirection", js.undefined)
       
-      @scala.inline
-      def setGradientLabelLimit(value: Double | SignalRef): Self = StObject.set(x, "gradientLabelLimit", value.asInstanceOf[js.Any])
+      inline def setGradientLabelLimit(value: Double | SignalRef): Self = StObject.set(x, "gradientLabelLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientLabelLimitUndefined: Self = StObject.set(x, "gradientLabelLimit", js.undefined)
+      inline def setGradientLabelLimitUndefined: Self = StObject.set(x, "gradientLabelLimit", js.undefined)
       
-      @scala.inline
-      def setGradientLabelOffset(value: Double | SignalRef): Self = StObject.set(x, "gradientLabelOffset", value.asInstanceOf[js.Any])
+      inline def setGradientLabelOffset(value: Double | SignalRef): Self = StObject.set(x, "gradientLabelOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientLabelOffsetUndefined: Self = StObject.set(x, "gradientLabelOffset", js.undefined)
+      inline def setGradientLabelOffsetUndefined: Self = StObject.set(x, "gradientLabelOffset", js.undefined)
       
-      @scala.inline
-      def setGradientLength(
+      inline def setGradientLength(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "gradientLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientLengthUndefined: Self = StObject.set(x, "gradientLength", js.undefined)
+      inline def setGradientLengthUndefined: Self = StObject.set(x, "gradientLength", js.undefined)
       
-      @scala.inline
-      def setGradientOpacity(
+      inline def setGradientOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gradientOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientOpacityUndefined: Self = StObject.set(x, "gradientOpacity", js.undefined)
+      inline def setGradientOpacityUndefined: Self = StObject.set(x, "gradientOpacity", js.undefined)
       
-      @scala.inline
-      def setGradientStrokeColor(
+      inline def setGradientStrokeColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "gradientStrokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientStrokeColorNull: Self = StObject.set(x, "gradientStrokeColor", null)
+      inline def setGradientStrokeColorNull: Self = StObject.set(x, "gradientStrokeColor", null)
       
-      @scala.inline
-      def setGradientStrokeColorUndefined: Self = StObject.set(x, "gradientStrokeColor", js.undefined)
+      inline def setGradientStrokeColorUndefined: Self = StObject.set(x, "gradientStrokeColor", js.undefined)
       
-      @scala.inline
-      def setGradientStrokeWidth(
+      inline def setGradientStrokeWidth(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gradientStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientStrokeWidthUndefined: Self = StObject.set(x, "gradientStrokeWidth", js.undefined)
+      inline def setGradientStrokeWidthUndefined: Self = StObject.set(x, "gradientStrokeWidth", js.undefined)
       
-      @scala.inline
-      def setGradientThickness(
+      inline def setGradientThickness(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "gradientThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientThicknessUndefined: Self = StObject.set(x, "gradientThickness", js.undefined)
+      inline def setGradientThicknessUndefined: Self = StObject.set(x, "gradientThickness", js.undefined)
       
-      @scala.inline
-      def setGridAlign(
+      inline def setGridAlign(
         value: (Exclude[
               js.UndefOr[LayoutAlign | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LayoutAlign | SignalRef]])
       ): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAlignUndefined: Self = StObject.set(x, "gridAlign", js.undefined)
+      inline def setGridAlignUndefined: Self = StObject.set(x, "gridAlign", js.undefined)
       
-      @scala.inline
-      def setLabelAlign(
+      inline def setLabelAlign(
         value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
+      inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
       
-      @scala.inline
-      def setLabelBaseline(
+      inline def setLabelBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
+      inline def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
       
-      @scala.inline
-      def setLabelColor(
+      inline def setLabelColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
+      inline def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
       
-      @scala.inline
-      def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
+      inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
       
-      @scala.inline
-      def setLabelFont(
+      inline def setLabelFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontSize(
+      inline def setLabelFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
+      inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
       
-      @scala.inline
-      def setLabelFontStyle(
+      inline def setLabelFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
+      inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
       
-      @scala.inline
-      def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
+      inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
       
-      @scala.inline
-      def setLabelFontWeight(
+      inline def setLabelFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
+      inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
       
-      @scala.inline
-      def setLabelLimit(
+      inline def setLabelLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
+      inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
       
-      @scala.inline
-      def setLabelOffset(
+      inline def setLabelOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
+      inline def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
       
-      @scala.inline
-      def setLabelOpacity(
+      inline def setLabelOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
+      inline def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
       
-      @scala.inline
-      def setLabelOverlap(
+      inline def setLabelOverlap(
         value: (Exclude[
               js.UndefOr[LabelOverlap | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
       ): Self = StObject.set(x, "labelOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
+      inline def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
       
-      @scala.inline
-      def setLabelPadding(
+      inline def setLabelPadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
+      inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
       
-      @scala.inline
-      def setLabelSeparation(
+      inline def setLabelSeparation(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "labelSeparation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelSeparationUndefined: Self = StObject.set(x, "labelSeparation", js.undefined)
+      inline def setLabelSeparationUndefined: Self = StObject.set(x, "labelSeparation", js.undefined)
       
-      @scala.inline
-      def setLayout(value: LegendLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: LegendLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setLegendX(
+      inline def setLegendX(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "legendX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendXUndefined: Self = StObject.set(x, "legendX", js.undefined)
+      inline def setLegendXUndefined: Self = StObject.set(x, "legendX", js.undefined)
       
-      @scala.inline
-      def setLegendY(
+      inline def setLegendY(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "legendY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendYUndefined: Self = StObject.set(x, "legendY", js.undefined)
+      inline def setLegendYUndefined: Self = StObject.set(x, "legendY", js.undefined)
       
-      @scala.inline
-      def setOffset(
+      inline def setOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrient(
+      inline def setOrient(
         value: (Exclude[
               js.UndefOr[LegendOrient | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LegendOrient | SignalRef]])
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
-      @scala.inline
-      def setPadding(
+      inline def setPadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRowPadding(
+      inline def setRowPadding(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "rowPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowPaddingUndefined: Self = StObject.set(x, "rowPadding", js.undefined)
+      inline def setRowPaddingUndefined: Self = StObject.set(x, "rowPadding", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(
+      inline def setStrokeColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorNull: Self = StObject.set(x, "strokeColor", null)
+      inline def setStrokeColorNull: Self = StObject.set(x, "strokeColor", null)
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setStrokeDash(value: js.Array[Double] | SignalRef): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
+      inline def setStrokeDash(value: js.Array[Double] | SignalRef): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
+      inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
       
-      @scala.inline
-      def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+      inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
       
-      @scala.inline
-      def setStrokeWidth(value: Double | SignalRef): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double | SignalRef): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setSymbolBaseFillColor(value: Color | SignalRef): Self = StObject.set(x, "symbolBaseFillColor", value.asInstanceOf[js.Any])
+      inline def setSymbolBaseFillColor(value: Color | SignalRef): Self = StObject.set(x, "symbolBaseFillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolBaseFillColorNull: Self = StObject.set(x, "symbolBaseFillColor", null)
+      inline def setSymbolBaseFillColorNull: Self = StObject.set(x, "symbolBaseFillColor", null)
       
-      @scala.inline
-      def setSymbolBaseFillColorUndefined: Self = StObject.set(x, "symbolBaseFillColor", js.undefined)
+      inline def setSymbolBaseFillColorUndefined: Self = StObject.set(x, "symbolBaseFillColor", js.undefined)
       
-      @scala.inline
-      def setSymbolBaseStrokeColor(value: Color | SignalRef): Self = StObject.set(x, "symbolBaseStrokeColor", value.asInstanceOf[js.Any])
+      inline def setSymbolBaseStrokeColor(value: Color | SignalRef): Self = StObject.set(x, "symbolBaseStrokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolBaseStrokeColorNull: Self = StObject.set(x, "symbolBaseStrokeColor", null)
+      inline def setSymbolBaseStrokeColorNull: Self = StObject.set(x, "symbolBaseStrokeColor", null)
       
-      @scala.inline
-      def setSymbolBaseStrokeColorUndefined: Self = StObject.set(x, "symbolBaseStrokeColor", js.undefined)
+      inline def setSymbolBaseStrokeColorUndefined: Self = StObject.set(x, "symbolBaseStrokeColor", js.undefined)
       
-      @scala.inline
-      def setSymbolDash(
+      inline def setSymbolDash(
         value: (Exclude[
               js.UndefOr[DashArrayValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "symbolDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolDashOffset(
+      inline def setSymbolDashOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolDashOffsetUndefined: Self = StObject.set(x, "symbolDashOffset", js.undefined)
+      inline def setSymbolDashOffsetUndefined: Self = StObject.set(x, "symbolDashOffset", js.undefined)
       
-      @scala.inline
-      def setSymbolDashUndefined: Self = StObject.set(x, "symbolDash", js.undefined)
+      inline def setSymbolDashUndefined: Self = StObject.set(x, "symbolDash", js.undefined)
       
-      @scala.inline
-      def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value :_*))
+      inline def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value :_*))
       
-      @scala.inline
-      def setSymbolDirection(value: Orientation): Self = StObject.set(x, "symbolDirection", value.asInstanceOf[js.Any])
+      inline def setSymbolDirection(value: Orientation): Self = StObject.set(x, "symbolDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolDirectionUndefined: Self = StObject.set(x, "symbolDirection", js.undefined)
+      inline def setSymbolDirectionUndefined: Self = StObject.set(x, "symbolDirection", js.undefined)
       
-      @scala.inline
-      def setSymbolFillColor(
+      inline def setSymbolFillColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "symbolFillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolFillColorNull: Self = StObject.set(x, "symbolFillColor", null)
+      inline def setSymbolFillColorNull: Self = StObject.set(x, "symbolFillColor", null)
       
-      @scala.inline
-      def setSymbolFillColorUndefined: Self = StObject.set(x, "symbolFillColor", js.undefined)
+      inline def setSymbolFillColorUndefined: Self = StObject.set(x, "symbolFillColor", js.undefined)
       
-      @scala.inline
-      def setSymbolLimit(
+      inline def setSymbolLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolLimitUndefined: Self = StObject.set(x, "symbolLimit", js.undefined)
+      inline def setSymbolLimitUndefined: Self = StObject.set(x, "symbolLimit", js.undefined)
       
-      @scala.inline
-      def setSymbolOffset(
+      inline def setSymbolOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
+      inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      @scala.inline
-      def setSymbolOpacity(
+      inline def setSymbolOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolOpacityUndefined: Self = StObject.set(x, "symbolOpacity", js.undefined)
+      inline def setSymbolOpacityUndefined: Self = StObject.set(x, "symbolOpacity", js.undefined)
       
-      @scala.inline
-      def setSymbolSize(
+      inline def setSymbolSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
+      inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      @scala.inline
-      def setSymbolStrokeColor(
+      inline def setSymbolStrokeColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "symbolStrokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolStrokeColorNull: Self = StObject.set(x, "symbolStrokeColor", null)
+      inline def setSymbolStrokeColorNull: Self = StObject.set(x, "symbolStrokeColor", null)
       
-      @scala.inline
-      def setSymbolStrokeColorUndefined: Self = StObject.set(x, "symbolStrokeColor", js.undefined)
+      inline def setSymbolStrokeColorUndefined: Self = StObject.set(x, "symbolStrokeColor", js.undefined)
       
-      @scala.inline
-      def setSymbolStrokeWidth(
+      inline def setSymbolStrokeWidth(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolStrokeWidthUndefined: Self = StObject.set(x, "symbolStrokeWidth", js.undefined)
+      inline def setSymbolStrokeWidthUndefined: Self = StObject.set(x, "symbolStrokeWidth", js.undefined)
       
-      @scala.inline
-      def setSymbolType(
+      inline def setSymbolType(
         value: (Exclude[
               js.UndefOr[SymbolShapeValue | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[SymbolShapeValue | SignalRef]])
       ): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+      inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
       
-      @scala.inline
-      def setTickCount(
+      inline def setTickCount(
         value: (Exclude[js.UndefOr[TickCount], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TickCount]]
       ): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
+      inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
       
-      @scala.inline
-      def setTitleAlign(
+      inline def setTitleAlign(
         value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
+      inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
       
-      @scala.inline
-      def setTitleAnchor(
+      inline def setTitleAnchor(
         value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ): Self = StObject.set(x, "titleAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
+      inline def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
       
-      @scala.inline
-      def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
+      inline def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
       
-      @scala.inline
-      def setTitleBaseline(
+      inline def setTitleBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
+      inline def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
       
-      @scala.inline
-      def setTitleColor(
+      inline def setTitleColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorNull: Self = StObject.set(x, "titleColor", null)
+      inline def setTitleColorNull: Self = StObject.set(x, "titleColor", null)
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTitleFont(
+      inline def setTitleFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontSize(
+      inline def setTitleFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
+      inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
       
-      @scala.inline
-      def setTitleFontStyle(
+      inline def setTitleFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
+      inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
       
-      @scala.inline
-      def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
+      inline def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
       
-      @scala.inline
-      def setTitleFontWeight(
+      inline def setTitleFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
+      inline def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
       
-      @scala.inline
-      def setTitleLimit(
+      inline def setTitleLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
+      inline def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
       
-      @scala.inline
-      def setTitleLineHeight(
+      inline def setTitleLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
+      inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
       
-      @scala.inline
-      def setTitleOpacity(
+      inline def setTitleOpacity(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleOpacityUndefined: Self = StObject.set(x, "titleOpacity", js.undefined)
+      inline def setTitleOpacityUndefined: Self = StObject.set(x, "titleOpacity", js.undefined)
       
-      @scala.inline
-      def setTitleOrient(
+      inline def setTitleOrient(
         value: (Exclude[js.UndefOr[OrientValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[OrientValue]]
       ): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleOrientUndefined: Self = StObject.set(x, "titleOrient", js.undefined)
+      inline def setTitleOrientUndefined: Self = StObject.set(x, "titleOrient", js.undefined)
       
-      @scala.inline
-      def setTitlePadding(
+      inline def setTitlePadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
+      inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
       
-      @scala.inline
-      def setZindex(
+      inline def setZindex(
         value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
+      inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
   
@@ -2591,62 +2168,44 @@ object configMod {
   }
   object LegendLayout {
     
-    @scala.inline
-    def apply(): LegendLayout = {
+    inline def apply(): LegendLayout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LegendLayout]
     }
     
-    @scala.inline
-    implicit class LegendLayoutMutableBuilder[Self <: LegendLayout] (val x: Self) extends AnyVal {
+    extension [Self <: LegendLayout](x: Self) {
       
-      @scala.inline
-      def setBottom(value: BaseLegendLayout): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: BaseLegendLayout): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-left`(value: BaseLegendLayout): Self = StObject.set(x, "bottom-left", value.asInstanceOf[js.Any])
+      inline def `setBottom-left`(value: BaseLegendLayout): Self = StObject.set(x, "bottom-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-leftUndefined`: Self = StObject.set(x, "bottom-left", js.undefined)
+      inline def `setBottom-leftUndefined`: Self = StObject.set(x, "bottom-left", js.undefined)
       
-      @scala.inline
-      def `setBottom-right`(value: BaseLegendLayout): Self = StObject.set(x, "bottom-right", value.asInstanceOf[js.Any])
+      inline def `setBottom-right`(value: BaseLegendLayout): Self = StObject.set(x, "bottom-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-rightUndefined`: Self = StObject.set(x, "bottom-right", js.undefined)
+      inline def `setBottom-rightUndefined`: Self = StObject.set(x, "bottom-right", js.undefined)
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: BaseLegendLayout): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: BaseLegendLayout): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: BaseLegendLayout): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: BaseLegendLayout): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: BaseLegendLayout): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: BaseLegendLayout): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-left`(value: BaseLegendLayout): Self = StObject.set(x, "top-left", value.asInstanceOf[js.Any])
+      inline def `setTop-left`(value: BaseLegendLayout): Self = StObject.set(x, "top-left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-leftUndefined`: Self = StObject.set(x, "top-left", js.undefined)
+      inline def `setTop-leftUndefined`: Self = StObject.set(x, "top-left", js.undefined)
       
-      @scala.inline
-      def `setTop-right`(value: BaseLegendLayout): Self = StObject.set(x, "top-right", value.asInstanceOf[js.Any])
+      inline def `setTop-right`(value: BaseLegendLayout): Self = StObject.set(x, "top-right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-rightUndefined`: Self = StObject.set(x, "top-right", js.undefined)
+      inline def `setTop-rightUndefined`: Self = StObject.set(x, "top-right", js.undefined)
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -3039,371 +2598,250 @@ object configMod {
   }
   object MarkConfig {
     
-    @scala.inline
-    def apply(): MarkConfig = {
+    inline def apply(): MarkConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarkConfig]
     }
     
-    @scala.inline
-    implicit class MarkConfigMutableBuilder[Self <: MarkConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MarkConfig](x: Self) {
       
-      @scala.inline
-      def setAlign(value: Align | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Align | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAngle(value: Double | SignalRef): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double | SignalRef): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setAria(value: Boolean | SignalRef): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+      inline def setAria(value: Boolean | SignalRef): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaRole(value: String | SignalRef): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
+      inline def setAriaRole(value: String | SignalRef): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaRoleDescription(value: String | SignalRef): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
+      inline def setAriaRoleDescription(value: String | SignalRef): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaRoleDescriptionUndefined: Self = StObject.set(x, "ariaRoleDescription", js.undefined)
+      inline def setAriaRoleDescriptionUndefined: Self = StObject.set(x, "ariaRoleDescription", js.undefined)
       
-      @scala.inline
-      def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
+      inline def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
       
-      @scala.inline
-      def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+      inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
-      @scala.inline
-      def setAspect(value: Boolean | SignalRef): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
+      inline def setAspect(value: Boolean | SignalRef): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
+      inline def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
       
-      @scala.inline
-      def setBaseline(value: TextBaseline | SignalRef): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: TextBaseline | SignalRef): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+      inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
-      @scala.inline
-      def setBlend(value: Blend): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
+      inline def setBlend(value: Blend): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendNull: Self = StObject.set(x, "blend", null)
+      inline def setBlendNull: Self = StObject.set(x, "blend", null)
       
-      @scala.inline
-      def setBlendUndefined: Self = StObject.set(x, "blend", js.undefined)
+      inline def setBlendUndefined: Self = StObject.set(x, "blend", js.undefined)
       
-      @scala.inline
-      def setCornerRadius(value: Double | SignalRef): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+      inline def setCornerRadius(value: Double | SignalRef): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusBottomLeft(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusBottomLeft", value.asInstanceOf[js.Any])
+      inline def setCornerRadiusBottomLeft(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusBottomLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusBottomLeftUndefined: Self = StObject.set(x, "cornerRadiusBottomLeft", js.undefined)
+      inline def setCornerRadiusBottomLeftUndefined: Self = StObject.set(x, "cornerRadiusBottomLeft", js.undefined)
       
-      @scala.inline
-      def setCornerRadiusBottomRight(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusBottomRight", value.asInstanceOf[js.Any])
+      inline def setCornerRadiusBottomRight(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusBottomRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusBottomRightUndefined: Self = StObject.set(x, "cornerRadiusBottomRight", js.undefined)
+      inline def setCornerRadiusBottomRightUndefined: Self = StObject.set(x, "cornerRadiusBottomRight", js.undefined)
       
-      @scala.inline
-      def setCornerRadiusTopLeft(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusTopLeft", value.asInstanceOf[js.Any])
+      inline def setCornerRadiusTopLeft(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusTopLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusTopLeftUndefined: Self = StObject.set(x, "cornerRadiusTopLeft", js.undefined)
+      inline def setCornerRadiusTopLeftUndefined: Self = StObject.set(x, "cornerRadiusTopLeft", js.undefined)
       
-      @scala.inline
-      def setCornerRadiusTopRight(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusTopRight", value.asInstanceOf[js.Any])
+      inline def setCornerRadiusTopRight(value: Double | SignalRef): Self = StObject.set(x, "cornerRadiusTopRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusTopRightUndefined: Self = StObject.set(x, "cornerRadiusTopRight", js.undefined)
+      inline def setCornerRadiusTopRightUndefined: Self = StObject.set(x, "cornerRadiusTopRight", js.undefined)
       
-      @scala.inline
-      def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+      inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
       
-      @scala.inline
-      def setCursor(value: Cursor | SignalRef): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: Cursor | SignalRef): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String | SignalRef): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String | SignalRef): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDir(value: TextDirection | SignalRef): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: TextDirection | SignalRef): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDx(value: Double | SignalRef): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+      inline def setDx(value: Double | SignalRef): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+      inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      @scala.inline
-      def setDy(value: Double | SignalRef): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+      inline def setDy(value: Double | SignalRef): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+      inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      @scala.inline
-      def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      @scala.inline
-      def setEndAngle(value: Double | SignalRef): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double | SignalRef): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+      inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
       
-      @scala.inline
-      def setFill(value: Color | Gradient | SignalRef): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Color | Gradient | SignalRef): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillNull: Self = StObject.set(x, "fill", null)
+      inline def setFillNull: Self = StObject.set(x, "fill", null)
       
-      @scala.inline
-      def setFillOpacity(value: Double | SignalRef): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      inline def setFillOpacity(value: Double | SignalRef): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFont(value: String | SignalRef): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String | SignalRef): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double | SignalRef): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double | SignalRef): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontStyle(value: FontStyle | SignalRef): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: FontStyle | SignalRef): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFontWeight(value: FontWeight | SignalRef): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: FontWeight | SignalRef): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double | SignalRef): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | SignalRef): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHref(value: URI | SignalRef): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: URI | SignalRef): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setInnerRadius(value: Double | SignalRef): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: Double | SignalRef): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+      inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
       
-      @scala.inline
-      def setInterpolate(value: Interpolate | SignalRef): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+      inline def setInterpolate(value: Interpolate | SignalRef): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+      inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double | SignalRef): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double | SignalRef): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLineBreak(value: String | SignalRef): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
+      inline def setLineBreak(value: String | SignalRef): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
+      inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
-      @scala.inline
-      def setLineHeight(value: Double | SignalRef): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double | SignalRef): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double | SignalRef): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double | SignalRef): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setOrient(value: Orientation | SignalRef): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+      inline def setOrient(value: Orientation | SignalRef): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
-      @scala.inline
-      def setOuterRadius(value: Double | SignalRef): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
+      inline def setOuterRadius(value: Double | SignalRef): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
+      inline def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
       
-      @scala.inline
-      def setPadAngle(value: Double | SignalRef): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
+      inline def setPadAngle(value: Double | SignalRef): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
+      inline def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double | SignalRef): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double | SignalRef): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setShape(value: SymbolShape | String | SignalRef): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: SymbolShape | String | SignalRef): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSmooth(value: Boolean | SignalRef): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Boolean | SignalRef): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+      inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
       
-      @scala.inline
-      def setStartAngle(value: Double | SignalRef): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double | SignalRef): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+      inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
       
-      @scala.inline
-      def setStroke(value: Color | Gradient | SignalRef): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: Color | Gradient | SignalRef): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeCap(value: StrokeCap | SignalRef): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
+      inline def setStrokeCap(value: StrokeCap | SignalRef): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
+      inline def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
       
-      @scala.inline
-      def setStrokeDash(value: js.Array[Double] | SignalRef): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
+      inline def setStrokeDash(value: js.Array[Double] | SignalRef): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDashOffset(value: Double | SignalRef): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
+      inline def setStrokeDashOffset(value: Double | SignalRef): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
+      inline def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
       
-      @scala.inline
-      def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
+      inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
       
-      @scala.inline
-      def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+      inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
       
-      @scala.inline
-      def setStrokeJoin(value: StrokeJoin | SignalRef): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
+      inline def setStrokeJoin(value: StrokeJoin | SignalRef): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
+      inline def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
       
-      @scala.inline
-      def setStrokeMiterLimit(value: Double | SignalRef): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
+      inline def setStrokeMiterLimit(value: Double | SignalRef): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeMiterLimitUndefined: Self = StObject.set(x, "strokeMiterLimit", js.undefined)
+      inline def setStrokeMiterLimitUndefined: Self = StObject.set(x, "strokeMiterLimit", js.undefined)
       
-      @scala.inline
-      def setStrokeNull: Self = StObject.set(x, "stroke", null)
+      inline def setStrokeNull: Self = StObject.set(x, "stroke", null)
       
-      @scala.inline
-      def setStrokeOffset(value: Double | SignalRef): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
+      inline def setStrokeOffset(value: Double | SignalRef): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeOffsetUndefined: Self = StObject.set(x, "strokeOffset", js.undefined)
+      inline def setStrokeOffsetUndefined: Self = StObject.set(x, "strokeOffset", js.undefined)
       
-      @scala.inline
-      def setStrokeOpacity(value: Double | SignalRef): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      inline def setStrokeOpacity(value: Double | SignalRef): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double | SignalRef): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double | SignalRef): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setTension(value: Double | SignalRef): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
+      inline def setTension(value: Double | SignalRef): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
+      inline def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
       
-      @scala.inline
-      def setText(value: Text | SignalRef): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Text | SignalRef): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
       
-      @scala.inline
-      def setTheta(value: Double | SignalRef): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+      inline def setTheta(value: Double | SignalRef): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
+      inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: String | SignalRef): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String | SignalRef): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setUrl(value: URI | SignalRef): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: URI | SignalRef): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | SignalRef): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | SignalRef): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -3426,44 +2864,31 @@ object configMod {
   trait MarkConfigKeys extends StObject
   object MarkConfigKeys {
     
-    @scala.inline
-    def arc: typings.vegaTypings.vegaTypingsStrings.arc = "arc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.arc]
+    inline def arc: typings.vegaTypings.vegaTypingsStrings.arc = "arc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.arc]
     
-    @scala.inline
-    def area: typings.vegaTypings.vegaTypingsStrings.area = "area".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.area]
+    inline def area: typings.vegaTypings.vegaTypingsStrings.area = "area".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.area]
     
-    @scala.inline
-    def group: typings.vegaTypings.vegaTypingsStrings.group = "group".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.group]
+    inline def group: typings.vegaTypings.vegaTypingsStrings.group = "group".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.group]
     
-    @scala.inline
-    def image: typings.vegaTypings.vegaTypingsStrings.image = "image".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.image]
+    inline def image: typings.vegaTypings.vegaTypingsStrings.image = "image".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.image]
     
-    @scala.inline
-    def line: typings.vegaTypings.vegaTypingsStrings.line = "line".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.line]
+    inline def line: typings.vegaTypings.vegaTypingsStrings.line = "line".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.line]
     
-    @scala.inline
-    def mark: typings.vegaTypings.vegaTypingsStrings.mark = "mark".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mark]
+    inline def mark: typings.vegaTypings.vegaTypingsStrings.mark = "mark".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mark]
     
-    @scala.inline
-    def path: typings.vegaTypings.vegaTypingsStrings.path = "path".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.path]
+    inline def path: typings.vegaTypings.vegaTypingsStrings.path = "path".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.path]
     
-    @scala.inline
-    def rect: typings.vegaTypings.vegaTypingsStrings.rect = "rect".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rect]
+    inline def rect: typings.vegaTypings.vegaTypingsStrings.rect = "rect".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rect]
     
-    @scala.inline
-    def rule: typings.vegaTypings.vegaTypingsStrings.rule = "rule".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rule]
+    inline def rule: typings.vegaTypings.vegaTypingsStrings.rule = "rule".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rule]
     
-    @scala.inline
-    def shape: typings.vegaTypings.vegaTypingsStrings.shape = "shape".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.shape]
+    inline def shape: typings.vegaTypings.vegaTypingsStrings.shape = "shape".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.shape]
     
-    @scala.inline
-    def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = "symbol".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.symbol]
+    inline def symbol: typings.vegaTypings.vegaTypingsStrings.symbol = "symbol".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.symbol]
     
-    @scala.inline
-    def text: typings.vegaTypings.vegaTypingsStrings.text = "text".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.text]
+    inline def text: typings.vegaTypings.vegaTypingsStrings.text = "text".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.text]
     
-    @scala.inline
-    def trail: typings.vegaTypings.vegaTypingsStrings.trail = "trail".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.trail]
+    inline def trail: typings.vegaTypings.vegaTypingsStrings.trail = "trail".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.trail]
   }
   
   /* Inlined vega-typings.vega-typings/types/spec/config.ExcludeMappedValueRef<vega-typings.vega-typings/types/spec/projection.BaseProjection> */
@@ -3641,210 +3066,171 @@ object configMod {
   }
   object ProjectionConfig {
     
-    @scala.inline
-    def apply(): ProjectionConfig = {
+    inline def apply(): ProjectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProjectionConfig]
     }
     
-    @scala.inline
-    implicit class ProjectionConfigMutableBuilder[Self <: ProjectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectionConfig](x: Self) {
       
-      @scala.inline
-      def setCenter(
+      inline def setCenter(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setClipAngle(
+      inline def setClipAngle(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "clipAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipAngleUndefined: Self = StObject.set(x, "clipAngle", js.undefined)
+      inline def setClipAngleUndefined: Self = StObject.set(x, "clipAngle", js.undefined)
       
-      @scala.inline
-      def setClipExtent(
+      inline def setClipExtent(
         value: (Exclude[
               js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
       ): Self = StObject.set(x, "clipExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipExtentUndefined: Self = StObject.set(x, "clipExtent", js.undefined)
+      inline def setClipExtentUndefined: Self = StObject.set(x, "clipExtent", js.undefined)
       
-      @scala.inline
-      def setCoefficient(
+      inline def setCoefficient(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoefficientUndefined: Self = StObject.set(x, "coefficient", js.undefined)
+      inline def setCoefficientUndefined: Self = StObject.set(x, "coefficient", js.undefined)
       
-      @scala.inline
-      def setDistance(
+      inline def setDistance(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setExtent(
+      inline def setExtent(
         value: (Exclude[
               js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
       ): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setFit(
+      inline def setFit(
         value: (Exclude[
               js.UndefOr[Fit | js.Array[Fit] | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Fit | js.Array[Fit] | SignalRef]])
       ): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+      inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
       
-      @scala.inline
-      def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value :_*))
+      inline def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value :_*))
       
-      @scala.inline
-      def setFraction(
+      inline def setFraction(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
+      inline def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
       
-      @scala.inline
-      def setLobes(
+      inline def setLobes(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "lobes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLobesUndefined: Self = StObject.set(x, "lobes", js.undefined)
+      inline def setLobesUndefined: Self = StObject.set(x, "lobes", js.undefined)
       
-      @scala.inline
-      def setParallel(
+      inline def setParallel(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setParallels(
+      inline def setParallels(
         value: (Exclude[
               js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "parallels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelsUndefined: Self = StObject.set(x, "parallels", js.undefined)
+      inline def setParallelsUndefined: Self = StObject.set(x, "parallels", js.undefined)
       
-      @scala.inline
-      def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value :_*))
+      inline def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value :_*))
       
-      @scala.inline
-      def setPointRadius(
+      inline def setPointRadius(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "pointRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointRadiusUndefined: Self = StObject.set(x, "pointRadius", js.undefined)
+      inline def setPointRadiusUndefined: Self = StObject.set(x, "pointRadius", js.undefined)
       
-      @scala.inline
-      def setPrecision(
+      inline def setPrecision(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setRadius(
+      inline def setRadius(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setRatio(
+      inline def setRatio(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+      inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
       
-      @scala.inline
-      def setReflectX(
+      inline def setReflectX(
         value: (Exclude[
               js.UndefOr[Boolean | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
       ): Self = StObject.set(x, "reflectX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflectXUndefined: Self = StObject.set(x, "reflectX", js.undefined)
+      inline def setReflectXUndefined: Self = StObject.set(x, "reflectX", js.undefined)
       
-      @scala.inline
-      def setReflectY(
+      inline def setReflectY(
         value: (Exclude[
               js.UndefOr[Boolean | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
       ): Self = StObject.set(x, "reflectY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflectYUndefined: Self = StObject.set(x, "reflectY", js.undefined)
+      inline def setReflectYUndefined: Self = StObject.set(x, "reflectY", js.undefined)
       
-      @scala.inline
-      def setRotate(
+      inline def setRotate(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
@@ -3853,74 +3239,61 @@ object configMod {
             ])
       ): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setScale(
+      inline def setScale(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setSize(
+      inline def setSize(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpacing(
+      inline def setSpacing(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       
-      @scala.inline
-      def setTilt(
+      inline def setTilt(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
+      inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
       
-      @scala.inline
-      def setTranslate(
+      inline def setTranslate(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: (Exclude[
               js.UndefOr[ProjectionType | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[ProjectionType | SignalRef]])
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -3960,68 +3333,48 @@ object configMod {
   }
   object RangeConfig {
     
-    @scala.inline
-    def apply(): RangeConfig = {
+    inline def apply(): RangeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeConfig]
     }
     
-    @scala.inline
-    implicit class RangeConfigMutableBuilder[Self <: RangeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RangeConfig](x: Self) {
       
-      @scala.inline
-      def setCategory(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setCategoryVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "category", js.Array(value :_*))
+      inline def setCategoryVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "category", js.Array(value :_*))
       
-      @scala.inline
-      def setDiverging(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "diverging", value.asInstanceOf[js.Any])
+      inline def setDiverging(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "diverging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivergingUndefined: Self = StObject.set(x, "diverging", js.undefined)
+      inline def setDivergingUndefined: Self = StObject.set(x, "diverging", js.undefined)
       
-      @scala.inline
-      def setDivergingVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "diverging", js.Array(value :_*))
+      inline def setDivergingVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "diverging", js.Array(value :_*))
       
-      @scala.inline
-      def setHeatmap(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
+      inline def setHeatmap(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
+      inline def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
       
-      @scala.inline
-      def setHeatmapVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "heatmap", js.Array(value :_*))
+      inline def setHeatmapVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "heatmap", js.Array(value :_*))
       
-      @scala.inline
-      def setOrdinal(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+      inline def setOrdinal(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+      inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
       
-      @scala.inline
-      def setOrdinalVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ordinal", js.Array(value :_*))
+      inline def setOrdinalVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ordinal", js.Array(value :_*))
       
-      @scala.inline
-      def setRamp(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "ramp", value.asInstanceOf[js.Any])
+      inline def setRamp(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "ramp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRampUndefined: Self = StObject.set(x, "ramp", js.undefined)
+      inline def setRampUndefined: Self = StObject.set(x, "ramp", js.undefined)
       
-      @scala.inline
-      def setRampVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ramp", js.Array(value :_*))
+      inline def setRampVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ramp", js.Array(value :_*))
       
-      @scala.inline
-      def setSymbol(value: js.Array[SymbolShape]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: js.Array[SymbolShape]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setSymbolVarargs(value: SymbolShape*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+      inline def setSymbolVarargs(value: SymbolShape*): Self = StObject.set(x, "symbol", js.Array(value :_*))
     }
   }
   
@@ -4033,14 +3386,11 @@ object configMod {
   trait StrokeCap extends StObject
   object StrokeCap {
     
-    @scala.inline
-    def butt: typings.vegaTypings.vegaTypingsStrings.butt = "butt".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.butt]
+    inline def butt: typings.vegaTypings.vegaTypingsStrings.butt = "butt".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.butt]
     
-    @scala.inline
-    def round: typings.vegaTypings.vegaTypingsStrings.round = "round".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.round]
+    inline def round: typings.vegaTypings.vegaTypingsStrings.round = "round".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.round]
     
-    @scala.inline
-    def square: typings.vegaTypings.vegaTypingsStrings.square = "square".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.square]
+    inline def square: typings.vegaTypings.vegaTypingsStrings.square = "square".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.square]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -4051,14 +3401,11 @@ object configMod {
   trait StrokeJoin extends StObject
   object StrokeJoin {
     
-    @scala.inline
-    def bevel: typings.vegaTypings.vegaTypingsStrings.bevel = "bevel".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bevel]
+    inline def bevel: typings.vegaTypings.vegaTypingsStrings.bevel = "bevel".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bevel]
     
-    @scala.inline
-    def miter: typings.vegaTypings.vegaTypingsStrings.miter = "miter".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.miter]
+    inline def miter: typings.vegaTypings.vegaTypingsStrings.miter = "miter".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.miter]
     
-    @scala.inline
-    def round: typings.vegaTypings.vegaTypingsStrings.round = "round".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.round]
+    inline def round: typings.vegaTypings.vegaTypingsStrings.round = "round".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.round]
   }
   
   /* Inlined vega-typings.vega-typings/types/spec/config.ExcludeMappedValueRef<vega-typings.vega-typings/types/spec/title.BaseTitle> */
@@ -4187,244 +3534,189 @@ object configMod {
   }
   object TitleConfig {
     
-    @scala.inline
-    def apply(): TitleConfig = {
+    inline def apply(): TitleConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TitleConfig]
     }
     
-    @scala.inline
-    implicit class TitleConfigMutableBuilder[Self <: TitleConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TitleConfig](x: Self) {
       
-      @scala.inline
-      def setAlign(
+      inline def setAlign(
         value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAnchor(
+      inline def setAnchor(
         value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorNull: Self = StObject.set(x, "anchor", null)
+      inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setAngle(
+      inline def setAngle(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setAria(
+      inline def setAria(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+      inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
-      @scala.inline
-      def setBaseline(
+      inline def setBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+      inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
-      @scala.inline
-      def setColor(
+      inline def setColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorNull: Self = StObject.set(x, "color", null)
+      inline def setColorNull: Self = StObject.set(x, "color", null)
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDx(
+      inline def setDx(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+      inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
-      @scala.inline
-      def setDy(
+      inline def setDy(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+      inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      @scala.inline
-      def setFont(
+      inline def setFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(
+      inline def setFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontStyle(
+      inline def setFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFontWeight(
+      inline def setFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setFrame(
+      inline def setFrame(
         value: (Exclude[
               js.UndefOr[TitleFrame | StringValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[TitleFrame | StringValue]])
       ): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setLimit(
+      inline def setLimit(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLineHeight(
+      inline def setLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setOffset(
+      inline def setOffset(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrient(
+      inline def setOrient(
         value: (Exclude[
               js.UndefOr[TitleOrient | SignalRef], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[TitleOrient | SignalRef]])
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
-      @scala.inline
-      def setSubtitleColor(
+      inline def setSubtitleColor(
         value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
+      inline def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
       
-      @scala.inline
-      def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
+      inline def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
       
-      @scala.inline
-      def setSubtitleFont(
+      inline def setSubtitleFont(
         value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontSize(
+      inline def setSubtitleFontSize(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "subtitleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
+      inline def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontStyle(
+      inline def setSubtitleFontStyle(
         value: (Exclude[
               js.UndefOr[FontStyleValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
+      inline def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontUndefined: Self = StObject.set(x, "subtitleFont", js.undefined)
+      inline def setSubtitleFontUndefined: Self = StObject.set(x, "subtitleFont", js.undefined)
       
-      @scala.inline
-      def setSubtitleFontWeight(
+      inline def setSubtitleFontWeight(
         value: (Exclude[
               js.UndefOr[FontWeightValue], 
               ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "subtitleFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleFontWeightUndefined: Self = StObject.set(x, "subtitleFontWeight", js.undefined)
+      inline def setSubtitleFontWeightUndefined: Self = StObject.set(x, "subtitleFontWeight", js.undefined)
       
-      @scala.inline
-      def setSubtitleLineHeight(
+      inline def setSubtitleLineHeight(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "subtitleLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleLineHeightUndefined: Self = StObject.set(x, "subtitleLineHeight", js.undefined)
+      inline def setSubtitleLineHeightUndefined: Self = StObject.set(x, "subtitleLineHeight", js.undefined)
       
-      @scala.inline
-      def setSubtitlePadding(
+      inline def setSubtitlePadding(
         value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "subtitlePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
+      inline def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
       
-      @scala.inline
-      def setZindex(
+      inline def setZindex(
         value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
+      inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
 }

@@ -18,25 +18,19 @@ trait DisassociateTrialComponentResponse extends StObject {
 }
 object DisassociateTrialComponentResponse {
   
-  @scala.inline
-  def apply(): DisassociateTrialComponentResponse = {
+  inline def apply(): DisassociateTrialComponentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateTrialComponentResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateTrialComponentResponseMutableBuilder[Self <: DisassociateTrialComponentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateTrialComponentResponse](x: Self) {
     
-    @scala.inline
-    def setTrialArn(value: TrialArn): Self = StObject.set(x, "TrialArn", value.asInstanceOf[js.Any])
+    inline def setTrialArn(value: TrialArn): Self = StObject.set(x, "TrialArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialArnUndefined: Self = StObject.set(x, "TrialArn", js.undefined)
+    inline def setTrialArnUndefined: Self = StObject.set(x, "TrialArn", js.undefined)
     
-    @scala.inline
-    def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
+    inline def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialComponentArnUndefined: Self = StObject.set(x, "TrialComponentArn", js.undefined)
+    inline def setTrialComponentArnUndefined: Self = StObject.set(x, "TrialComponentArn", js.undefined)
   }
 }

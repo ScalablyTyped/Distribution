@@ -13,16 +13,13 @@ trait CanvasPutImageDataOptions
 }
 object CanvasPutImageDataOptions {
   
-  @scala.inline
-  def apply(canvasId: String, data: Uint8ClampedArray, height: Double, width: Double, x: Double, y: Double): CanvasPutImageDataOptions = {
+  inline def apply(canvasId: String, data: Uint8ClampedArray, height: Double, width: Double, x: Double, y: Double): CanvasPutImageDataOptions = {
     val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasPutImageDataOptions]
   }
   
-  @scala.inline
-  implicit class CanvasPutImageDataOptionsMutableBuilder[Self <: CanvasPutImageDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasPutImageDataOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait PortRange extends StObject {
 }
 object PortRange {
   
-  @scala.inline
-  def apply(): PortRange = {
+  inline def apply(): PortRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortRange]
   }
   
-  @scala.inline
-  implicit class PortRangeMutableBuilder[Self <: PortRange] (val x: Self) extends AnyVal {
+  extension [Self <: PortRange](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Integer): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Integer): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
-    @scala.inline
-    def setTo(value: Integer): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: Integer): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

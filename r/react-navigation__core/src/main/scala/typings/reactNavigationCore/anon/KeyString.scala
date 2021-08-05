@@ -15,24 +15,19 @@ trait KeyString[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof Param
 }
 object KeyString {
   
-  @scala.inline
-  def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](key: String): KeyString[ParamList, RouteName] = {
+  inline def apply[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](key: String): KeyString[ParamList, RouteName] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyString[ParamList, RouteName]]
   }
   
-  @scala.inline
-  implicit class KeyStringMutableBuilder[Self <: KeyString[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (KeyString[ParamList, RouteName])) extends AnyVal {
+  extension [Self <: KeyString[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (KeyString[ParamList, RouteName])) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

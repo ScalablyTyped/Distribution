@@ -14,28 +14,21 @@ trait WorkerDetails extends StObject {
 }
 object WorkerDetails {
   
-  @scala.inline
-  def apply(): WorkerDetails = {
+  inline def apply(): WorkerDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerDetails]
   }
   
-  @scala.inline
-  implicit class WorkerDetailsMutableBuilder[Self <: WorkerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerDetails](x: Self) {
     
-    @scala.inline
-    def setWorkItems(value: js.Array[WorkItemDetails]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: js.Array[WorkItemDetails]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
+    inline def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
     
-    @scala.inline
-    def setWorkItemsVarargs(value: WorkItemDetails*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: WorkItemDetails*): Self = StObject.set(x, "workItems", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkerName(value: String): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
+    inline def setWorkerName(value: String): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
+    inline def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
   }
 }

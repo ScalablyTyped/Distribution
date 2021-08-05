@@ -13,22 +13,17 @@ trait Locale[P /* <: ParsedUrlQuery */] extends StObject {
 }
 object Locale {
   
-  @scala.inline
-  def apply[P /* <: ParsedUrlQuery */](params: P): Locale[P] = {
+  inline def apply[P /* <: ParsedUrlQuery */](params: P): Locale[P] = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale[P]]
   }
   
-  @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale[?], P /* <: ParsedUrlQuery */] (val x: Self & Locale[P]) extends AnyVal {
+  extension [Self <: Locale[?], P /* <: ParsedUrlQuery */](x: Self & Locale[P]) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait IObjectCollection[T] extends StObject {
 }
 object IObjectCollection {
   
-  @scala.inline
-  def apply[T](data: js.Array[T]): IObjectCollection[T] = {
+  inline def apply[T](data: js.Array[T]): IObjectCollection[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjectCollection[T]]
   }
   
-  @scala.inline
-  implicit class IObjectCollectionMutableBuilder[Self <: IObjectCollection[?], T] (val x: Self & IObjectCollection[T]) extends AnyVal {
+  extension [Self <: IObjectCollection[?], T](x: Self & IObjectCollection[T]) {
     
-    @scala.inline
-    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

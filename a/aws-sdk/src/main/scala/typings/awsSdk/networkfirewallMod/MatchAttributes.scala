@@ -38,67 +38,47 @@ trait MatchAttributes extends StObject {
 }
 object MatchAttributes {
   
-  @scala.inline
-  def apply(): MatchAttributes = {
+  inline def apply(): MatchAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchAttributes]
   }
   
-  @scala.inline
-  implicit class MatchAttributesMutableBuilder[Self <: MatchAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: MatchAttributes](x: Self) {
     
-    @scala.inline
-    def setDestinationPorts(value: PortRanges): Self = StObject.set(x, "DestinationPorts", value.asInstanceOf[js.Any])
+    inline def setDestinationPorts(value: PortRanges): Self = StObject.set(x, "DestinationPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPortsUndefined: Self = StObject.set(x, "DestinationPorts", js.undefined)
+    inline def setDestinationPortsUndefined: Self = StObject.set(x, "DestinationPorts", js.undefined)
     
-    @scala.inline
-    def setDestinationPortsVarargs(value: PortRange*): Self = StObject.set(x, "DestinationPorts", js.Array(value :_*))
+    inline def setDestinationPortsVarargs(value: PortRange*): Self = StObject.set(x, "DestinationPorts", js.Array(value :_*))
     
-    @scala.inline
-    def setDestinations(value: Addresses): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: Addresses): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    @scala.inline
-    def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setProtocols(value: ProtocolNumbers): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: ProtocolNumbers): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
+    inline def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
     
-    @scala.inline
-    def setProtocolsVarargs(value: ProtocolNumber*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: ProtocolNumber*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
     
-    @scala.inline
-    def setSourcePorts(value: PortRanges): Self = StObject.set(x, "SourcePorts", value.asInstanceOf[js.Any])
+    inline def setSourcePorts(value: PortRanges): Self = StObject.set(x, "SourcePorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePortsUndefined: Self = StObject.set(x, "SourcePorts", js.undefined)
+    inline def setSourcePortsUndefined: Self = StObject.set(x, "SourcePorts", js.undefined)
     
-    @scala.inline
-    def setSourcePortsVarargs(value: PortRange*): Self = StObject.set(x, "SourcePorts", js.Array(value :_*))
+    inline def setSourcePortsVarargs(value: PortRange*): Self = StObject.set(x, "SourcePorts", js.Array(value :_*))
     
-    @scala.inline
-    def setSources(value: Addresses): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: Addresses): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: Address*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Address*): Self = StObject.set(x, "Sources", js.Array(value :_*))
     
-    @scala.inline
-    def setTCPFlags(value: TCPFlags): Self = StObject.set(x, "TCPFlags", value.asInstanceOf[js.Any])
+    inline def setTCPFlags(value: TCPFlags): Self = StObject.set(x, "TCPFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTCPFlagsUndefined: Self = StObject.set(x, "TCPFlags", js.undefined)
+    inline def setTCPFlagsUndefined: Self = StObject.set(x, "TCPFlags", js.undefined)
     
-    @scala.inline
-    def setTCPFlagsVarargs(value: TCPFlagField*): Self = StObject.set(x, "TCPFlags", js.Array(value :_*))
+    inline def setTCPFlagsVarargs(value: TCPFlagField*): Self = StObject.set(x, "TCPFlags", js.Array(value :_*))
   }
 }

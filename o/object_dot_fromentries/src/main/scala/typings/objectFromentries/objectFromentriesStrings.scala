@@ -8,6 +8,5 @@ object objectFromentriesStrings {
   
   @js.native
   sealed trait ^ extends StObject
-  @scala.inline
-  def ^ : ^ = "^".asInstanceOf[^]
+  inline def ^ : ^ = "^".asInstanceOf[^]
 }

@@ -18,19 +18,15 @@ trait FollowUpPrompt extends StObject {
 }
 object FollowUpPrompt {
   
-  @scala.inline
-  def apply(prompt: Prompt, rejectionStatement: Statement): FollowUpPrompt = {
+  inline def apply(prompt: Prompt, rejectionStatement: Statement): FollowUpPrompt = {
     val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any], rejectionStatement = rejectionStatement.asInstanceOf[js.Any])
     __obj.asInstanceOf[FollowUpPrompt]
   }
   
-  @scala.inline
-  implicit class FollowUpPromptMutableBuilder[Self <: FollowUpPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: FollowUpPrompt](x: Self) {
     
-    @scala.inline
-    def setPrompt(value: Prompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: Prompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectionStatement(value: Statement): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
+    inline def setRejectionStatement(value: Statement): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
   }
 }

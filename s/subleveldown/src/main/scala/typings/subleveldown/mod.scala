@@ -21,30 +21,24 @@ object mod {
     * @param opts
     * @see {@link https://github.com/Level/subleveldown#api subleveldown API}
     */
-  @scala.inline
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = ^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any]).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  @scala.inline
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]], prefix: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  @scala.inline
-  def apply[K, V](
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = ^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any]).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]], prefix: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  inline def apply[K, V](
     db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
     prefix: String,
     opts: String
   ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  @scala.inline
-  def apply[K, V](
+  inline def apply[K, V](
     db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
     prefix: String,
     opts: SubDownOptions
   ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  @scala.inline
-  def apply[K, V](
+  inline def apply[K, V](
     db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
     prefix: Unit,
     opts: String
   ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  @scala.inline
-  def apply[K, V](
+  inline def apply[K, V](
     db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
     prefix: Unit,
     opts: SubDownOptions
@@ -81,26 +75,20 @@ object mod {
   }
   object SubDownOptions {
     
-    @scala.inline
-    def apply(): SubDownOptions = {
+    inline def apply(): SubDownOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubDownOptions]
     }
     
-    @scala.inline
-    implicit class SubDownOptionsMutableBuilder[Self <: SubDownOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubDownOptions](x: Self) {
       
-      @scala.inline
-      def setOpen(value: /* callback */ ErrorCallback => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: /* callback */ ErrorCallback => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
 }

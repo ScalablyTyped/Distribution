@@ -25,8 +25,7 @@ trait XContentProviderFactory
 }
 object XContentProviderFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createContentProvider: String => XContentProvider,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XContentProviderFactory {
     __obj.asInstanceOf[XContentProviderFactory]
   }
   
-  @scala.inline
-  implicit class XContentProviderFactoryMutableBuilder[Self <: XContentProviderFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XContentProviderFactory](x: Self) {
     
-    @scala.inline
-    def setCreateContentProvider(value: String => XContentProvider): Self = StObject.set(x, "createContentProvider", js.Any.fromFunction1(value))
+    inline def setCreateContentProvider(value: String => XContentProvider): Self = StObject.set(x, "createContentProvider", js.Any.fromFunction1(value))
   }
 }

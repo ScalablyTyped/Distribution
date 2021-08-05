@@ -30,8 +30,7 @@ object mod {
     @JSImport("react-outside-click-handler", "default.defaultProps")
     @js.native
     def defaultProps: DefaultProps = js.native
-    @scala.inline
-    def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait DefaultProps extends StObject {
@@ -44,8 +43,7 @@ object mod {
   }
   object DefaultProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       display: block | flex | `inline` | `inline-block` | contents,
       useCapture: Boolean
@@ -54,17 +52,13 @@ object mod {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    @scala.inline
-    implicit class DefaultPropsMutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay(value: block | flex | `inline` | `inline-block` | contents): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: block | flex | `inline` | `inline-block` | contents): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
+      inline def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,41 +79,30 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(onOutsideClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Props = {
+    inline def apply(onOutsideClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Props = {
       val __obj = js.Dynamic.literal(onOutsideClick = js.Any.fromFunction1(onOutsideClick))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: block | flex | `inline` | `inline-block` | contents): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: block | flex | `inline` | `inline-block` | contents): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setOnOutsideClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction1(value))
+      inline def setOnOutsideClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
+      inline def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCaptureUndefined: Self = StObject.set(x, "useCapture", js.undefined)
+      inline def setUseCaptureUndefined: Self = StObject.set(x, "useCapture", js.undefined)
     }
   }
 }

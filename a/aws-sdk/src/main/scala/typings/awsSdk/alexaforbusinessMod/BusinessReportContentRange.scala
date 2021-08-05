@@ -13,16 +13,13 @@ trait BusinessReportContentRange extends StObject {
 }
 object BusinessReportContentRange {
   
-  @scala.inline
-  def apply(Interval: BusinessReportInterval): BusinessReportContentRange = {
+  inline def apply(Interval: BusinessReportInterval): BusinessReportContentRange = {
     val __obj = js.Dynamic.literal(Interval = Interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusinessReportContentRange]
   }
   
-  @scala.inline
-  implicit class BusinessReportContentRangeMutableBuilder[Self <: BusinessReportContentRange] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessReportContentRange](x: Self) {
     
-    @scala.inline
-    def setInterval(value: BusinessReportInterval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: BusinessReportInterval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
   }
 }

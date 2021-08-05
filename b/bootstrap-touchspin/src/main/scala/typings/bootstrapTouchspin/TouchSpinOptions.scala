@@ -117,139 +117,95 @@ trait TouchSpinOptions extends StObject {
 }
 object TouchSpinOptions {
   
-  @scala.inline
-  def apply(): TouchSpinOptions = {
+  inline def apply(): TouchSpinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchSpinOptions]
   }
   
-  @scala.inline
-  implicit class TouchSpinOptionsMutableBuilder[Self <: TouchSpinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchSpinOptions](x: Self) {
     
-    @scala.inline
-    def setBoostat(value: Double): Self = StObject.set(x, "boostat", value.asInstanceOf[js.Any])
+    inline def setBoostat(value: Double): Self = StObject.set(x, "boostat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoostatUndefined: Self = StObject.set(x, "boostat", js.undefined)
+    inline def setBoostatUndefined: Self = StObject.set(x, "boostat", js.undefined)
     
-    @scala.inline
-    def setBooster(value: Boolean): Self = StObject.set(x, "booster", value.asInstanceOf[js.Any])
+    inline def setBooster(value: Boolean): Self = StObject.set(x, "booster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoosterUndefined: Self = StObject.set(x, "booster", js.undefined)
+    inline def setBoosterUndefined: Self = StObject.set(x, "booster", js.undefined)
     
-    @scala.inline
-    def setButtondown_class(value: String): Self = StObject.set(x, "buttondown_class", value.asInstanceOf[js.Any])
+    inline def setButtondown_class(value: String): Self = StObject.set(x, "buttondown_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtondown_classUndefined: Self = StObject.set(x, "buttondown_class", js.undefined)
+    inline def setButtondown_classUndefined: Self = StObject.set(x, "buttondown_class", js.undefined)
     
-    @scala.inline
-    def setButtonup_class(value: String): Self = StObject.set(x, "buttonup_class", value.asInstanceOf[js.Any])
+    inline def setButtonup_class(value: String): Self = StObject.set(x, "buttonup_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonup_classUndefined: Self = StObject.set(x, "buttonup_class", js.undefined)
+    inline def setButtonup_classUndefined: Self = StObject.set(x, "buttonup_class", js.undefined)
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    @scala.inline
-    def setForcestepdivisibility(value: String): Self = StObject.set(x, "forcestepdivisibility", value.asInstanceOf[js.Any])
+    inline def setForcestepdivisibility(value: String): Self = StObject.set(x, "forcestepdivisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForcestepdivisibilityUndefined: Self = StObject.set(x, "forcestepdivisibility", js.undefined)
+    inline def setForcestepdivisibilityUndefined: Self = StObject.set(x, "forcestepdivisibility", js.undefined)
     
-    @scala.inline
-    def setInitval(value: Double | String): Self = StObject.set(x, "initval", value.asInstanceOf[js.Any])
+    inline def setInitval(value: Double | String): Self = StObject.set(x, "initval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitvalUndefined: Self = StObject.set(x, "initval", js.undefined)
+    inline def setInitvalUndefined: Self = StObject.set(x, "initval", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMaxboostedstep(value: Double | Boolean): Self = StObject.set(x, "maxboostedstep", value.asInstanceOf[js.Any])
+    inline def setMaxboostedstep(value: Double | Boolean): Self = StObject.set(x, "maxboostedstep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxboostedstepUndefined: Self = StObject.set(x, "maxboostedstep", js.undefined)
+    inline def setMaxboostedstepUndefined: Self = StObject.set(x, "maxboostedstep", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMousewheel(value: Boolean): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    inline def setMousewheel(value: Boolean): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
+    inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
-    @scala.inline
-    def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
+    inline def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
+    inline def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
     
-    @scala.inline
-    def setPostfix_extraclass(value: String): Self = StObject.set(x, "postfix_extraclass", value.asInstanceOf[js.Any])
+    inline def setPostfix_extraclass(value: String): Self = StObject.set(x, "postfix_extraclass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostfix_extraclassUndefined: Self = StObject.set(x, "postfix_extraclass", js.undefined)
+    inline def setPostfix_extraclassUndefined: Self = StObject.set(x, "postfix_extraclass", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setPrefix_extraclass(value: String): Self = StObject.set(x, "prefix_extraclass", value.asInstanceOf[js.Any])
+    inline def setPrefix_extraclass(value: String): Self = StObject.set(x, "prefix_extraclass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix_extraclassUndefined: Self = StObject.set(x, "prefix_extraclass", js.undefined)
+    inline def setPrefix_extraclassUndefined: Self = StObject.set(x, "prefix_extraclass", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setStepinterval(value: Double): Self = StObject.set(x, "stepinterval", value.asInstanceOf[js.Any])
+    inline def setStepinterval(value: Double): Self = StObject.set(x, "stepinterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepintervalUndefined: Self = StObject.set(x, "stepinterval", js.undefined)
+    inline def setStepintervalUndefined: Self = StObject.set(x, "stepinterval", js.undefined)
     
-    @scala.inline
-    def setStepintervaldelay(value: Double): Self = StObject.set(x, "stepintervaldelay", value.asInstanceOf[js.Any])
+    inline def setStepintervaldelay(value: Double): Self = StObject.set(x, "stepintervaldelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepintervaldelayUndefined: Self = StObject.set(x, "stepintervaldelay", js.undefined)
+    inline def setStepintervaldelayUndefined: Self = StObject.set(x, "stepintervaldelay", js.undefined)
     
-    @scala.inline
-    def setVerticalbuttons(value: Boolean): Self = StObject.set(x, "verticalbuttons", value.asInstanceOf[js.Any])
+    inline def setVerticalbuttons(value: Boolean): Self = StObject.set(x, "verticalbuttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalbuttonsUndefined: Self = StObject.set(x, "verticalbuttons", js.undefined)
+    inline def setVerticalbuttonsUndefined: Self = StObject.set(x, "verticalbuttons", js.undefined)
     
-    @scala.inline
-    def setVerticaldownclass(value: String): Self = StObject.set(x, "verticaldownclass", value.asInstanceOf[js.Any])
+    inline def setVerticaldownclass(value: String): Self = StObject.set(x, "verticaldownclass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticaldownclassUndefined: Self = StObject.set(x, "verticaldownclass", js.undefined)
+    inline def setVerticaldownclassUndefined: Self = StObject.set(x, "verticaldownclass", js.undefined)
     
-    @scala.inline
-    def setVerticalupclass(value: String): Self = StObject.set(x, "verticalupclass", value.asInstanceOf[js.Any])
+    inline def setVerticalupclass(value: String): Self = StObject.set(x, "verticalupclass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalupclassUndefined: Self = StObject.set(x, "verticalupclass", js.undefined)
+    inline def setVerticalupclassUndefined: Self = StObject.set(x, "verticalupclass", js.undefined)
   }
 }

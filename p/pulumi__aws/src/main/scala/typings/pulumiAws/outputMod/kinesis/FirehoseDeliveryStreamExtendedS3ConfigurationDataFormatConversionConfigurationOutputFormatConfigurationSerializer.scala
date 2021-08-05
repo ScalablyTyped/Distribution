@@ -22,29 +22,23 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer = {
+  inline def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer](x: Self) {
     
-    @scala.inline
-    def setOrcSerDe(
+    inline def setOrcSerDe(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
     ): Self = StObject.set(x, "orcSerDe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrcSerDeUndefined: Self = StObject.set(x, "orcSerDe", js.undefined)
+    inline def setOrcSerDeUndefined: Self = StObject.set(x, "orcSerDe", js.undefined)
     
-    @scala.inline
-    def setParquetSerDe(
+    inline def setParquetSerDe(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
     ): Self = StObject.set(x, "parquetSerDe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParquetSerDeUndefined: Self = StObject.set(x, "parquetSerDe", js.undefined)
+    inline def setParquetSerDeUndefined: Self = StObject.set(x, "parquetSerDe", js.undefined)
   }
 }

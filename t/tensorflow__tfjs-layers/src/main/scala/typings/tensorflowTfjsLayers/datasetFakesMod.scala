@@ -74,8 +74,7 @@ object datasetFakesMod {
   }
   object FakeDatasetArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       batchSize: Double,
       numBatches: Double,
       xShape: Shape | StringDictionary[Shape],
@@ -85,38 +84,27 @@ object datasetFakesMod {
       __obj.asInstanceOf[FakeDatasetArgs]
     }
     
-    @scala.inline
-    implicit class FakeDatasetArgsMutableBuilder[Self <: FakeDatasetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FakeDatasetArgs](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumBatches(value: Double): Self = StObject.set(x, "numBatches", value.asInstanceOf[js.Any])
+      inline def setNumBatches(value: Double): Self = StObject.set(x, "numBatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXShape(value: Shape | StringDictionary[Shape]): Self = StObject.set(x, "xShape", value.asInstanceOf[js.Any])
+      inline def setXShape(value: Shape | StringDictionary[Shape]): Self = StObject.set(x, "xShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "xShape", js.Array(value :_*))
+      inline def setXShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "xShape", js.Array(value :_*))
       
-      @scala.inline
-      def setXTensorsFunc(value: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]): Self = StObject.set(x, "xTensorsFunc", js.Any.fromFunction0(value))
+      inline def setXTensorsFunc(value: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]): Self = StObject.set(x, "xTensorsFunc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setXTensorsFuncUndefined: Self = StObject.set(x, "xTensorsFunc", js.undefined)
+      inline def setXTensorsFuncUndefined: Self = StObject.set(x, "xTensorsFunc", js.undefined)
       
-      @scala.inline
-      def setYShape(value: Shape | StringDictionary[Shape]): Self = StObject.set(x, "yShape", value.asInstanceOf[js.Any])
+      inline def setYShape(value: Shape | StringDictionary[Shape]): Self = StObject.set(x, "yShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "yShape", js.Array(value :_*))
+      inline def setYShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "yShape", js.Array(value :_*))
       
-      @scala.inline
-      def setYTensorsFunc(value: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]): Self = StObject.set(x, "yTensorsFunc", js.Any.fromFunction0(value))
+      inline def setYTensorsFunc(value: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]): Self = StObject.set(x, "yTensorsFunc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setYTensorsFuncUndefined: Self = StObject.set(x, "yTensorsFunc", js.undefined)
+      inline def setYTensorsFuncUndefined: Self = StObject.set(x, "yTensorsFunc", js.undefined)
     }
   }
 }

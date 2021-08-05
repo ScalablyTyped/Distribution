@@ -132,8 +132,7 @@ object mod {
   }
   object Chunk {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chunk: String,
       filename: String,
       linkType: String,
@@ -147,29 +146,21 @@ object mod {
       __obj.asInstanceOf[Chunk]
     }
     
-    @scala.inline
-    implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+    extension [Self <: Chunk](x: Self) {
       
-      @scala.inline
-      def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptType(value: String): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
+      inline def setScriptType(value: String): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,17 +170,14 @@ object mod {
   }
   object ChunkExtractorManagerProps {
     
-    @scala.inline
-    def apply(extractor: ChunkExtractor): ChunkExtractorManagerProps = {
+    inline def apply(extractor: ChunkExtractor): ChunkExtractorManagerProps = {
       val __obj = js.Dynamic.literal(extractor = extractor.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChunkExtractorManagerProps]
     }
     
-    @scala.inline
-    implicit class ChunkExtractorManagerPropsMutableBuilder[Self <: ChunkExtractorManagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChunkExtractorManagerProps](x: Self) {
       
-      @scala.inline
-      def setExtractor(value: ChunkExtractor): Self = StObject.set(x, "extractor", value.asInstanceOf[js.Any])
+      inline def setExtractor(value: ChunkExtractor): Self = StObject.set(x, "extractor", value.asInstanceOf[js.Any])
     }
   }
   

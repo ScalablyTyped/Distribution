@@ -12,9 +12,7 @@ object tooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Tooltip(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")().asInstanceOf[Element | Null]
+  inline def Tooltip(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltip")().asInstanceOf[Element | Null]
   
-  @scala.inline
-  def isVisibleTooltipState(state: TooltipStateContextData): /* is @nivo/tooltip.@nivo/tooltip/dist/types/context.TooltipStateContextDataVisible */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisibleTooltipState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is @nivo/tooltip.@nivo/tooltip/dist/types/context.TooltipStateContextDataVisible */ Boolean]
+  inline def isVisibleTooltipState(state: TooltipStateContextData): /* is @nivo/tooltip.@nivo/tooltip/dist/types/context.TooltipStateContextDataVisible */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisibleTooltipState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is @nivo/tooltip.@nivo/tooltip/dist/types/context.TooltipStateContextDataVisible */ Boolean]
 }

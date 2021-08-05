@@ -10,16 +10,13 @@ trait Ghost extends StObject {
 }
 object Ghost {
   
-  @scala.inline
-  def apply(ghost: Boolean): Ghost = {
+  inline def apply(ghost: Boolean): Ghost = {
     val __obj = js.Dynamic.literal(ghost = ghost.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ghost]
   }
   
-  @scala.inline
-  implicit class GhostMutableBuilder[Self <: Ghost] (val x: Self) extends AnyVal {
+  extension [Self <: Ghost](x: Self) {
     
-    @scala.inline
-    def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+    inline def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
   }
 }

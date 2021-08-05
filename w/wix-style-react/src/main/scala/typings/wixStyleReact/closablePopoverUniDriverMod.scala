@@ -13,17 +13,14 @@ object closablePopoverUniDriverMod {
   }
   object ClosablePopoverUniDriver {
     
-    @scala.inline
-    def apply(isOpened: () => js.Promise[Boolean]): ClosablePopoverUniDriver = {
+    inline def apply(isOpened: () => js.Promise[Boolean]): ClosablePopoverUniDriver = {
       val __obj = js.Dynamic.literal(isOpened = js.Any.fromFunction0(isOpened))
       __obj.asInstanceOf[ClosablePopoverUniDriver]
     }
     
-    @scala.inline
-    implicit class ClosablePopoverUniDriverMutableBuilder[Self <: ClosablePopoverUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ClosablePopoverUniDriver](x: Self) {
       
-      @scala.inline
-      def setIsOpened(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOpened", js.Any.fromFunction0(value))
+      inline def setIsOpened(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isOpened", js.Any.fromFunction0(value))
     }
   }
 }

@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResizeArea extends StObject
 object ResizeArea {
   
-  @scala.inline
-  def apply: ResizeArea = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeArea").asInstanceOf[ResizeArea]
+  inline def apply: ResizeArea = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeArea").asInstanceOf[ResizeArea]
 }

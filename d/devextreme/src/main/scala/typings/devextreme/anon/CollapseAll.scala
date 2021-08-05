@@ -30,79 +30,55 @@ trait CollapseAll extends StObject {
 }
 object CollapseAll {
   
-  @scala.inline
-  def apply(): CollapseAll = {
+  inline def apply(): CollapseAll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapseAll]
   }
   
-  @scala.inline
-  implicit class CollapseAllMutableBuilder[Self <: CollapseAll] (val x: Self) extends AnyVal {
+  extension [Self <: CollapseAll](x: Self) {
     
-    @scala.inline
-    def setCollapseAll(value: String): Self = StObject.set(x, "collapseAll", value.asInstanceOf[js.Any])
+    inline def setCollapseAll(value: String): Self = StObject.set(x, "collapseAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseAllUndefined: Self = StObject.set(x, "collapseAll", js.undefined)
+    inline def setCollapseAllUndefined: Self = StObject.set(x, "collapseAll", js.undefined)
     
-    @scala.inline
-    def setDataNotAvailable(value: String): Self = StObject.set(x, "dataNotAvailable", value.asInstanceOf[js.Any])
+    inline def setDataNotAvailable(value: String): Self = StObject.set(x, "dataNotAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNotAvailableUndefined: Self = StObject.set(x, "dataNotAvailable", js.undefined)
+    inline def setDataNotAvailableUndefined: Self = StObject.set(x, "dataNotAvailable", js.undefined)
     
-    @scala.inline
-    def setExpandAll(value: String): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
+    inline def setExpandAll(value: String): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
+    inline def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
     
-    @scala.inline
-    def setExportToExcel(value: String): Self = StObject.set(x, "exportToExcel", value.asInstanceOf[js.Any])
+    inline def setExportToExcel(value: String): Self = StObject.set(x, "exportToExcel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportToExcelUndefined: Self = StObject.set(x, "exportToExcel", js.undefined)
+    inline def setExportToExcelUndefined: Self = StObject.set(x, "exportToExcel", js.undefined)
     
-    @scala.inline
-    def setGrandTotal(value: String): Self = StObject.set(x, "grandTotal", value.asInstanceOf[js.Any])
+    inline def setGrandTotal(value: String): Self = StObject.set(x, "grandTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrandTotalUndefined: Self = StObject.set(x, "grandTotal", js.undefined)
+    inline def setGrandTotalUndefined: Self = StObject.set(x, "grandTotal", js.undefined)
     
-    @scala.inline
-    def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+    inline def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
+    inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
     
-    @scala.inline
-    def setRemoveAllSorting(value: String): Self = StObject.set(x, "removeAllSorting", value.asInstanceOf[js.Any])
+    inline def setRemoveAllSorting(value: String): Self = StObject.set(x, "removeAllSorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAllSortingUndefined: Self = StObject.set(x, "removeAllSorting", js.undefined)
+    inline def setRemoveAllSortingUndefined: Self = StObject.set(x, "removeAllSorting", js.undefined)
     
-    @scala.inline
-    def setShowFieldChooser(value: String): Self = StObject.set(x, "showFieldChooser", value.asInstanceOf[js.Any])
+    inline def setShowFieldChooser(value: String): Self = StObject.set(x, "showFieldChooser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFieldChooserUndefined: Self = StObject.set(x, "showFieldChooser", js.undefined)
+    inline def setShowFieldChooserUndefined: Self = StObject.set(x, "showFieldChooser", js.undefined)
     
-    @scala.inline
-    def setSortColumnBySummary(value: String): Self = StObject.set(x, "sortColumnBySummary", value.asInstanceOf[js.Any])
+    inline def setSortColumnBySummary(value: String): Self = StObject.set(x, "sortColumnBySummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortColumnBySummaryUndefined: Self = StObject.set(x, "sortColumnBySummary", js.undefined)
+    inline def setSortColumnBySummaryUndefined: Self = StObject.set(x, "sortColumnBySummary", js.undefined)
     
-    @scala.inline
-    def setSortRowBySummary(value: String): Self = StObject.set(x, "sortRowBySummary", value.asInstanceOf[js.Any])
+    inline def setSortRowBySummary(value: String): Self = StObject.set(x, "sortRowBySummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortRowBySummaryUndefined: Self = StObject.set(x, "sortRowBySummary", js.undefined)
+    inline def setSortRowBySummaryUndefined: Self = StObject.set(x, "sortRowBySummary", js.undefined)
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait SmartHomeV1QueryRequestDevices extends StObject {
 }
 object SmartHomeV1QueryRequestDevices {
   
-  @scala.inline
-  def apply(id: String): SmartHomeV1QueryRequestDevices = {
+  inline def apply(id: String): SmartHomeV1QueryRequestDevices = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1QueryRequestDevices]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1QueryRequestDevicesMutableBuilder[Self <: SmartHomeV1QueryRequestDevices] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1QueryRequestDevices](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+    inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

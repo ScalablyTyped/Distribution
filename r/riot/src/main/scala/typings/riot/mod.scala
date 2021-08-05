@@ -21,8 +21,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def component[Props, State](shell: RiotComponentShell[Props, State]): js.Function3[
+  inline def component[Props, State](shell: RiotComponentShell[Props, State]): js.Function3[
     /* el */ HTMLElement, 
     /* initialProps */ js.UndefOr[Props], 
     /* meta */ js.UndefOr[ParentScope], 
@@ -34,32 +33,22 @@ object mod {
     RiotComponent[Props, State]
   ]]
   
-  @scala.inline
-  def install(plugin: ComponentEnhancer): InstalledPluginsSet = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(plugin.asInstanceOf[js.Any]).asInstanceOf[InstalledPluginsSet]
+  inline def install(plugin: ComponentEnhancer): InstalledPluginsSet = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(plugin.asInstanceOf[js.Any]).asInstanceOf[InstalledPluginsSet]
   
-  @scala.inline
-  def mount[Props, State](selector: String): js.Array[RiotComponent[Props, State]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[RiotComponent[Props, State]]]
-  @scala.inline
-  def mount[Props, State](selector: String, initialProps: Props): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
-  @scala.inline
-  def mount[Props, State](selector: String, initialProps: Props, componentName: String): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
-  @scala.inline
-  def mount[Props, State](selector: String, initialProps: Unit, componentName: String): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
+  inline def mount[Props, State](selector: String): js.Array[RiotComponent[Props, State]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[RiotComponent[Props, State]]]
+  inline def mount[Props, State](selector: String, initialProps: Props): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
+  inline def mount[Props, State](selector: String, initialProps: Props, componentName: String): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
+  inline def mount[Props, State](selector: String, initialProps: Unit, componentName: String): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
   
-  @scala.inline
-  def pure[InitialProps, Context, FactoryFunction](func: FactoryFunction): FactoryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(func.asInstanceOf[js.Any]).asInstanceOf[FactoryFunction]
+  inline def pure[InitialProps, Context, FactoryFunction](func: FactoryFunction): FactoryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(func.asInstanceOf[js.Any]).asInstanceOf[FactoryFunction]
   
-  @scala.inline
-  def register[Props, State](componentName: String, shell: RiotComponentShell[Props, State]): RegisteredComponentsMap = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(componentName.asInstanceOf[js.Any], shell.asInstanceOf[js.Any])).asInstanceOf[RegisteredComponentsMap]
+  inline def register[Props, State](componentName: String, shell: RiotComponentShell[Props, State]): RegisteredComponentsMap = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(componentName.asInstanceOf[js.Any], shell.asInstanceOf[js.Any])).asInstanceOf[RegisteredComponentsMap]
   
-  @scala.inline
-  def uninstall(plugin: ComponentEnhancer): InstalledPluginsSet = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(plugin.asInstanceOf[js.Any]).asInstanceOf[InstalledPluginsSet]
+  inline def uninstall(plugin: ComponentEnhancer): InstalledPluginsSet = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(plugin.asInstanceOf[js.Any]).asInstanceOf[InstalledPluginsSet]
   
-  @scala.inline
-  def unmount(selector: String, keepRootElement: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(selector.asInstanceOf[js.Any], keepRootElement.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
+  inline def unmount(selector: String, keepRootElement: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(selector.asInstanceOf[js.Any], keepRootElement.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
-  @scala.inline
-  def unregister(componentName: String): RegisteredComponentsMap = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(componentName.asInstanceOf[js.Any]).asInstanceOf[RegisteredComponentsMap]
+  inline def unregister(componentName: String): RegisteredComponentsMap = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(componentName.asInstanceOf[js.Any]).asInstanceOf[RegisteredComponentsMap]
   
   @JSImport("riot", "version")
   @js.native
@@ -140,68 +129,48 @@ object mod {
   }
   object RiotComponentExport {
     
-    @scala.inline
-    def apply[Props, State](): RiotComponentExport[Props, State] = {
+    inline def apply[Props, State](): RiotComponentExport[Props, State] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RiotComponentExport[Props, State]]
     }
     
-    @scala.inline
-    implicit class RiotComponentExportMutableBuilder[Self <: RiotComponentExport[?, ?], Props, State] (val x: Self & (RiotComponentExport[Props, State])) extends AnyVal {
+    extension [Self <: RiotComponentExport[?, ?], Props, State](x: Self & (RiotComponentExport[Props, State])) {
       
-      @scala.inline
-      def setComponents(value: StringDictionary[RiotComponentShell[Props, State]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: StringDictionary[RiotComponentShell[Props, State]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setOnBeforeMount(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onBeforeMount", js.Any.fromFunction2(value))
+      inline def setOnBeforeMount(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onBeforeMount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBeforeMountUndefined: Self = StObject.set(x, "onBeforeMount", js.undefined)
+      inline def setOnBeforeMountUndefined: Self = StObject.set(x, "onBeforeMount", js.undefined)
       
-      @scala.inline
-      def setOnBeforeUnmount(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onBeforeUnmount", js.Any.fromFunction2(value))
+      inline def setOnBeforeUnmount(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onBeforeUnmount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBeforeUnmountUndefined: Self = StObject.set(x, "onBeforeUnmount", js.undefined)
+      inline def setOnBeforeUnmountUndefined: Self = StObject.set(x, "onBeforeUnmount", js.undefined)
       
-      @scala.inline
-      def setOnBeforeUpdate(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onBeforeUpdate", js.Any.fromFunction2(value))
+      inline def setOnBeforeUpdate(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onBeforeUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBeforeUpdateUndefined: Self = StObject.set(x, "onBeforeUpdate", js.undefined)
+      inline def setOnBeforeUpdateUndefined: Self = StObject.set(x, "onBeforeUpdate", js.undefined)
       
-      @scala.inline
-      def setOnMounted(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onMounted", js.Any.fromFunction2(value))
+      inline def setOnMounted(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onMounted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMountedUndefined: Self = StObject.set(x, "onMounted", js.undefined)
+      inline def setOnMountedUndefined: Self = StObject.set(x, "onMounted", js.undefined)
       
-      @scala.inline
-      def setOnUnmounted(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onUnmounted", js.Any.fromFunction2(value))
+      inline def setOnUnmounted(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onUnmounted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUnmountedUndefined: Self = StObject.set(x, "onUnmounted", js.undefined)
+      inline def setOnUnmountedUndefined: Self = StObject.set(x, "onUnmounted", js.undefined)
       
-      @scala.inline
-      def setOnUpdated(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onUpdated", js.Any.fromFunction2(value))
+      inline def setOnUpdated(value: (/* currentProps */ Props, /* currentState */ State) => Unit): Self = StObject.set(x, "onUpdated", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUpdatedUndefined: Self = StObject.set(x, "onUpdated", js.undefined)
+      inline def setOnUpdatedUndefined: Self = StObject.set(x, "onUpdated", js.undefined)
       
-      @scala.inline
-      def setShouldUpdate(value: (/* newProps */ Props, /* currentProps */ Props) => Boolean): Self = StObject.set(x, "shouldUpdate", js.Any.fromFunction2(value))
+      inline def setShouldUpdate(value: (/* newProps */ Props, /* currentProps */ Props) => Boolean): Self = StObject.set(x, "shouldUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldUpdateUndefined: Self = StObject.set(x, "shouldUpdate", js.undefined)
+      inline def setShouldUpdateUndefined: Self = StObject.set(x, "shouldUpdate", js.undefined)
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -222,37 +191,28 @@ object mod {
   }
   object RiotComponentShell {
     
-    @scala.inline
-    def apply[Props, State](
+    inline def apply[Props, State](
       template: (js.Function, ExpressionType, BindingType, js.Function1[/* componentName */ String, js.Any]) => TemplateChunk[js.Any, js.Any]
     ): RiotComponentShell[Props, State] = {
       val __obj = js.Dynamic.literal(template = js.Any.fromFunction4(template))
       __obj.asInstanceOf[RiotComponentShell[Props, State]]
     }
     
-    @scala.inline
-    implicit class RiotComponentShellMutableBuilder[Self <: RiotComponentShell[?, ?], Props, State] (val x: Self & (RiotComponentShell[Props, State])) extends AnyVal {
+    extension [Self <: RiotComponentShell[?, ?], Props, State](x: Self & (RiotComponentShell[Props, State])) {
       
-      @scala.inline
-      def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setExports(value: () => (RiotComponentExport[Props, State]) | js.Object): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
+      inline def setExports(value: () => (RiotComponentExport[Props, State]) | js.Object): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
+      inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTemplate(
+      inline def setTemplate(
         value: (js.Function, ExpressionType, BindingType, js.Function1[/* componentName */ String, js.Any]) => TemplateChunk[js.Any, js.Any]
       ): Self = StObject.set(x, "template", js.Any.fromFunction4(value))
     }

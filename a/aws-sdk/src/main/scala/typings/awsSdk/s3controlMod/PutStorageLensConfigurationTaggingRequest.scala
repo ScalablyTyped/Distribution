@@ -23,25 +23,19 @@ trait PutStorageLensConfigurationTaggingRequest extends StObject {
 }
 object PutStorageLensConfigurationTaggingRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, ConfigId: ConfigId, Tags: StorageLensTags): PutStorageLensConfigurationTaggingRequest = {
+  inline def apply(AccountId: AccountId, ConfigId: ConfigId, Tags: StorageLensTags): PutStorageLensConfigurationTaggingRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ConfigId = ConfigId.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutStorageLensConfigurationTaggingRequest]
   }
   
-  @scala.inline
-  implicit class PutStorageLensConfigurationTaggingRequestMutableBuilder[Self <: PutStorageLensConfigurationTaggingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutStorageLensConfigurationTaggingRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigId(value: ConfigId): Self = StObject.set(x, "ConfigId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: ConfigId): Self = StObject.set(x, "ConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: StorageLensTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: StorageLensTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: StorageLensTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: StorageLensTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

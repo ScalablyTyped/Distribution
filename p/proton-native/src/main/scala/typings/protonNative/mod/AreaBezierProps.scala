@@ -50,8 +50,7 @@ trait AreaBezierProps
 }
 object AreaBezierProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cx1: Double | String,
     cx2: Double | String,
     cy1: Double | String,
@@ -65,31 +64,22 @@ object AreaBezierProps {
     __obj.asInstanceOf[AreaBezierProps]
   }
   
-  @scala.inline
-  implicit class AreaBezierPropsMutableBuilder[Self <: AreaBezierProps] (val x: Self) extends AnyVal {
+  extension [Self <: AreaBezierProps](x: Self) {
     
-    @scala.inline
-    def setCx1(value: Double | String): Self = StObject.set(x, "cx1", value.asInstanceOf[js.Any])
+    inline def setCx1(value: Double | String): Self = StObject.set(x, "cx1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCx2(value: Double | String): Self = StObject.set(x, "cx2", value.asInstanceOf[js.Any])
+    inline def setCx2(value: Double | String): Self = StObject.set(x, "cx2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCy1(value: Double | String): Self = StObject.set(x, "cy1", value.asInstanceOf[js.Any])
+    inline def setCy1(value: Double | String): Self = StObject.set(x, "cy1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCy2(value: Double | String): Self = StObject.set(x, "cy2", value.asInstanceOf[js.Any])
+    inline def setCy2(value: Double | String): Self = StObject.set(x, "cy2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1(value: Double | String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double | String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2(value: Double | String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double | String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double | String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double | String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double | String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double | String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

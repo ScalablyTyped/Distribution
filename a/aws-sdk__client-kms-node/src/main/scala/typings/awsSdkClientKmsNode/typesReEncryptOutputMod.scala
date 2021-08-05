@@ -36,35 +36,26 @@ object typesReEncryptOutputMod {
   }
   object ReEncryptOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ReEncryptOutput = {
+    inline def apply($metadata: ResponseMetadata): ReEncryptOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReEncryptOutput]
     }
     
-    @scala.inline
-    implicit class ReEncryptOutputMutableBuilder[Self <: ReEncryptOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ReEncryptOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertextBlob(value: Uint8Array): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
+      inline def setCiphertextBlob(value: Uint8Array): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
+      inline def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
       
-      @scala.inline
-      def setSourceKeyId(value: String): Self = StObject.set(x, "SourceKeyId", value.asInstanceOf[js.Any])
+      inline def setSourceKeyId(value: String): Self = StObject.set(x, "SourceKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceKeyIdUndefined: Self = StObject.set(x, "SourceKeyId", js.undefined)
+      inline def setSourceKeyIdUndefined: Self = StObject.set(x, "SourceKeyId", js.undefined)
     }
   }
 }

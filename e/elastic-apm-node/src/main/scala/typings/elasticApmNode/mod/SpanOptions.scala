@@ -10,19 +10,15 @@ trait SpanOptions extends StObject {
 }
 object SpanOptions {
   
-  @scala.inline
-  def apply(): SpanOptions = {
+  inline def apply(): SpanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpanOptions]
   }
   
-  @scala.inline
-  implicit class SpanOptionsMutableBuilder[Self <: SpanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SpanOptions](x: Self) {
     
-    @scala.inline
-    def setChildOf(value: Transaction | Span | String): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
+    inline def setChildOf(value: Transaction | Span | String): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildOfUndefined: Self = StObject.set(x, "childOf", js.undefined)
+    inline def setChildOfUndefined: Self = StObject.set(x, "childOf", js.undefined)
   }
 }

@@ -22,26 +22,20 @@ object fullScreenTypesMod {
   }
   object IFullScreenControl {
     
-    @scala.inline
-    def apply(destroy: () => Unit, getElement: () => HTMLElement, hide: () => Unit, show: () => Unit): IFullScreenControl = {
+    inline def apply(destroy: () => Unit, getElement: () => HTMLElement, hide: () => Unit, show: () => Unit): IFullScreenControl = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getElement = js.Any.fromFunction0(getElement), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[IFullScreenControl]
     }
     
-    @scala.inline
-    implicit class IFullScreenControlMutableBuilder[Self <: IFullScreenControl] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenControl](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -51,17 +45,14 @@ object fullScreenTypesMod {
   }
   object IFullScreenViewCallbacks {
     
-    @scala.inline
-    def apply(onButtonClick: () => Unit): IFullScreenViewCallbacks = {
+    inline def apply(onButtonClick: () => Unit): IFullScreenViewCallbacks = {
       val __obj = js.Dynamic.literal(onButtonClick = js.Any.fromFunction0(onButtonClick))
       __obj.asInstanceOf[IFullScreenViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IFullScreenViewCallbacksMutableBuilder[Self <: IFullScreenViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
+      inline def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
     }
   }
   
@@ -77,8 +68,7 @@ object fullScreenTypesMod {
   }
   object IFullScreenViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: IFullScreenViewCallbacks,
       textMap: ITextMap,
       theme: IThemeService,
@@ -88,20 +78,15 @@ object fullScreenTypesMod {
       __obj.asInstanceOf[IFullScreenViewConfig]
     }
     
-    @scala.inline
-    implicit class IFullScreenViewConfigMutableBuilder[Self <: IFullScreenViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IFullScreenViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IFullScreenViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+      inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+      inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,8 +108,7 @@ object fullScreenTypesMod {
   }
   object IFullScreenViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       enterIcon: String,
       exitIcon: String,
       fullScreenControl: String,
@@ -137,29 +121,21 @@ object fullScreenTypesMod {
       __obj.asInstanceOf[IFullScreenViewStyles]
     }
     
-    @scala.inline
-    implicit class IFullScreenViewStylesMutableBuilder[Self <: IFullScreenViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenViewStyles](x: Self) {
       
-      @scala.inline
-      def setEnterIcon(value: String): Self = StObject.set(x, "enterIcon", value.asInstanceOf[js.Any])
+      inline def setEnterIcon(value: String): Self = StObject.set(x, "enterIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitIcon(value: String): Self = StObject.set(x, "exitIcon", value.asInstanceOf[js.Any])
+      inline def setExitIcon(value: String): Self = StObject.set(x, "exitIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreenControl(value: String): Self = StObject.set(x, "fullScreenControl", value.asInstanceOf[js.Any])
+      inline def setFullScreenControl(value: String): Self = StObject.set(x, "fullScreenControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreenToggle(value: String): Self = StObject.set(x, "fullScreenToggle", value.asInstanceOf[js.Any])
+      inline def setFullScreenToggle(value: String): Self = StObject.set(x, "fullScreenToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInFullScreen(value: String): Self = StObject.set(x, "inFullScreen", value.asInstanceOf[js.Any])
+      inline def setInFullScreen(value: String): Self = StObject.set(x, "inFullScreen", value.asInstanceOf[js.Any])
     }
   }
 }

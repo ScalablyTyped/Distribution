@@ -58,56 +58,40 @@ object sandboxMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+        inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+        inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
         
-        @scala.inline
-        def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+        inline def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+        inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
         
-        @scala.inline
-        def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+        inline def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+        inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
         
-        @scala.inline
-        def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+        inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
         
-        @scala.inline
-        def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+        inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+        inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
         
-        @scala.inline
-        def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+        inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
   }

@@ -28,40 +28,29 @@ trait RegisterDBProxyTargetsRequest extends StObject {
 }
 object RegisterDBProxyTargetsRequest {
   
-  @scala.inline
-  def apply(DBProxyName: String): RegisterDBProxyTargetsRequest = {
+  inline def apply(DBProxyName: String): RegisterDBProxyTargetsRequest = {
     val __obj = js.Dynamic.literal(DBProxyName = DBProxyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDBProxyTargetsRequest]
   }
   
-  @scala.inline
-  implicit class RegisterDBProxyTargetsRequestMutableBuilder[Self <: RegisterDBProxyTargetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDBProxyTargetsRequest](x: Self) {
     
-    @scala.inline
-    def setDBClusterIdentifiers(value: StringList): Self = StObject.set(x, "DBClusterIdentifiers", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifiers(value: StringList): Self = StObject.set(x, "DBClusterIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterIdentifiersUndefined: Self = StObject.set(x, "DBClusterIdentifiers", js.undefined)
+    inline def setDBClusterIdentifiersUndefined: Self = StObject.set(x, "DBClusterIdentifiers", js.undefined)
     
-    @scala.inline
-    def setDBClusterIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBClusterIdentifiers", js.Array(value :_*))
+    inline def setDBClusterIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBClusterIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setDBInstanceIdentifiers(value: StringList): Self = StObject.set(x, "DBInstanceIdentifiers", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifiers(value: StringList): Self = StObject.set(x, "DBInstanceIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceIdentifiersUndefined: Self = StObject.set(x, "DBInstanceIdentifiers", js.undefined)
+    inline def setDBInstanceIdentifiersUndefined: Self = StObject.set(x, "DBInstanceIdentifiers", js.undefined)
     
-    @scala.inline
-    def setDBInstanceIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBInstanceIdentifiers", js.Array(value :_*))
+    inline def setDBInstanceIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBInstanceIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
+    inline def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
+    inline def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
+    inline def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
   }
 }

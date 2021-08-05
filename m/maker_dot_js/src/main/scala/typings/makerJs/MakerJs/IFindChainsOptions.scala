@@ -23,25 +23,19 @@ trait IFindChainsOptions
 }
 object IFindChainsOptions {
   
-  @scala.inline
-  def apply(): IFindChainsOptions = {
+  inline def apply(): IFindChainsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFindChainsOptions]
   }
   
-  @scala.inline
-  implicit class IFindChainsOptionsMutableBuilder[Self <: IFindChainsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFindChainsOptions](x: Self) {
     
-    @scala.inline
-    def setByLayers(value: Boolean): Self = StObject.set(x, "byLayers", value.asInstanceOf[js.Any])
+    inline def setByLayers(value: Boolean): Self = StObject.set(x, "byLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByLayersUndefined: Self = StObject.set(x, "byLayers", js.undefined)
+    inline def setByLayersUndefined: Self = StObject.set(x, "byLayers", js.undefined)
     
-    @scala.inline
-    def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+    inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
+    inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
   }
 }

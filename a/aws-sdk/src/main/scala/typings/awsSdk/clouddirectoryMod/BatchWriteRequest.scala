@@ -18,22 +18,17 @@ trait BatchWriteRequest extends StObject {
 }
 object BatchWriteRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn, Operations: BatchWriteOperationList): BatchWriteRequest = {
+  inline def apply(DirectoryArn: Arn, Operations: BatchWriteOperationList): BatchWriteRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], Operations = Operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchWriteRequest]
   }
   
-  @scala.inline
-  implicit class BatchWriteRequestMutableBuilder[Self <: BatchWriteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchWriteRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: BatchWriteOperationList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: BatchWriteOperationList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsVarargs(value: BatchWriteOperation*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: BatchWriteOperation*): Self = StObject.set(x, "Operations", js.Array(value :_*))
   }
 }

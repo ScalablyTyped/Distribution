@@ -14,22 +14,17 @@ trait EncodingFlag extends StObject {
 }
 object EncodingFlag {
   
-  @scala.inline
-  def apply(encoding: BufferEncoding): EncodingFlag = {
+  inline def apply(encoding: BufferEncoding): EncodingFlag = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodingFlag]
   }
   
-  @scala.inline
-  implicit class EncodingFlagMutableBuilder[Self <: EncodingFlag] (val x: Self) extends AnyVal {
+  extension [Self <: EncodingFlag](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlag(value: OpenMode): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: OpenMode): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
   }
 }

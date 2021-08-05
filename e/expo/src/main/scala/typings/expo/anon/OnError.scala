@@ -17,22 +17,17 @@ trait OnError
 }
 object OnError {
   
-  @scala.inline
-  def apply(onError: Null, onFinish: Null, startAsync: Null): OnError = {
+  inline def apply(onError: Null, onFinish: Null, startAsync: Null): OnError = {
     val __obj = js.Dynamic.literal(onError = onError.asInstanceOf[js.Any], onFinish = onFinish.asInstanceOf[js.Any], startAsync = startAsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnError]
   }
   
-  @scala.inline
-  implicit class OnErrorMutableBuilder[Self <: OnError] (val x: Self) extends AnyVal {
+  extension [Self <: OnError](x: Self) {
     
-    @scala.inline
-    def setOnError(value: Null): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: Null): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFinish(value: Null): Self = StObject.set(x, "onFinish", value.asInstanceOf[js.Any])
+    inline def setOnFinish(value: Null): Self = StObject.set(x, "onFinish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAsync(value: Null): Self = StObject.set(x, "startAsync", value.asInstanceOf[js.Any])
+    inline def setStartAsync(value: Null): Self = StObject.set(x, "startAsync", value.asInstanceOf[js.Any])
   }
 }

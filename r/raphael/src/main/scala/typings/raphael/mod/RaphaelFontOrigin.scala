@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RaphaelFontOrigin extends StObject
 object RaphaelFontOrigin {
   
-  @scala.inline
-  def baseline: typings.raphael.raphaelStrings.baseline = "baseline".asInstanceOf[typings.raphael.raphaelStrings.baseline]
+  inline def baseline: typings.raphael.raphaelStrings.baseline = "baseline".asInstanceOf[typings.raphael.raphaelStrings.baseline]
   
-  @scala.inline
-  def middle: typings.raphael.raphaelStrings.middle = "middle".asInstanceOf[typings.raphael.raphaelStrings.middle]
+  inline def middle: typings.raphael.raphaelStrings.middle = "middle".asInstanceOf[typings.raphael.raphaelStrings.middle]
 }

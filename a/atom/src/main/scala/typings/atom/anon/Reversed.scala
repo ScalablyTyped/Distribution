@@ -10,16 +10,13 @@ trait Reversed extends StObject {
 }
 object Reversed {
   
-  @scala.inline
-  def apply(reversed: Boolean): Reversed = {
+  inline def apply(reversed: Boolean): Reversed = {
     val __obj = js.Dynamic.literal(reversed = reversed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reversed]
   }
   
-  @scala.inline
-  implicit class ReversedMutableBuilder[Self <: Reversed] (val x: Self) extends AnyVal {
+  extension [Self <: Reversed](x: Self) {
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
   }
 }

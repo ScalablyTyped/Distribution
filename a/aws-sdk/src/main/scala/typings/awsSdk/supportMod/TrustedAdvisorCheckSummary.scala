@@ -35,8 +35,7 @@ trait TrustedAdvisorCheckSummary extends StObject {
 }
 object TrustedAdvisorCheckSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categorySpecificSummary: TrustedAdvisorCategorySpecificSummary,
     checkId: String,
     resourcesSummary: TrustedAdvisorResourcesSummary,
@@ -47,28 +46,20 @@ object TrustedAdvisorCheckSummary {
     __obj.asInstanceOf[TrustedAdvisorCheckSummary]
   }
   
-  @scala.inline
-  implicit class TrustedAdvisorCheckSummaryMutableBuilder[Self <: TrustedAdvisorCheckSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedAdvisorCheckSummary](x: Self) {
     
-    @scala.inline
-    def setCategorySpecificSummary(value: TrustedAdvisorCategorySpecificSummary): Self = StObject.set(x, "categorySpecificSummary", value.asInstanceOf[js.Any])
+    inline def setCategorySpecificSummary(value: TrustedAdvisorCategorySpecificSummary): Self = StObject.set(x, "categorySpecificSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
+    inline def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasFlaggedResources(value: Boolean): Self = StObject.set(x, "hasFlaggedResources", value.asInstanceOf[js.Any])
+    inline def setHasFlaggedResources(value: Boolean): Self = StObject.set(x, "hasFlaggedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasFlaggedResourcesUndefined: Self = StObject.set(x, "hasFlaggedResources", js.undefined)
+    inline def setHasFlaggedResourcesUndefined: Self = StObject.set(x, "hasFlaggedResources", js.undefined)
     
-    @scala.inline
-    def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = StObject.set(x, "resourcesSummary", value.asInstanceOf[js.Any])
+    inline def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = StObject.set(x, "resourcesSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

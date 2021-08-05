@@ -88,21 +88,16 @@ object repositoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Repository]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RepositoryState): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Repository]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID]): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID], state: RepositoryState): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codeartifact/repository.Repository */ Boolean]
   }
   
   trait RepositoryArgs extends StObject {
@@ -146,53 +141,38 @@ object repositoryMod {
   }
   object RepositoryArgs {
     
-    @scala.inline
-    def apply(domain: Input[String], repository: Input[String]): RepositoryArgs = {
+    inline def apply(domain: Input[String], repository: Input[String]): RepositoryArgs = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepositoryArgs]
     }
     
-    @scala.inline
-    implicit class RepositoryArgsMutableBuilder[Self <: RepositoryArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+      inline def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+      inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
       
-      @scala.inline
-      def setExternalConnections(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]): Self = StObject.set(x, "externalConnections", value.asInstanceOf[js.Any])
+      inline def setExternalConnections(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]): Self = StObject.set(x, "externalConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalConnectionsUndefined: Self = StObject.set(x, "externalConnections", js.undefined)
+      inline def setExternalConnectionsUndefined: Self = StObject.set(x, "externalConnections", js.undefined)
       
-      @scala.inline
-      def setRepository(value: Input[String]): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: Input[String]): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUpstreams(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]]]): Self = StObject.set(x, "upstreams", value.asInstanceOf[js.Any])
+      inline def setUpstreams(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]]]): Self = StObject.set(x, "upstreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
+      inline def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
       
-      @scala.inline
-      def setUpstreamsVarargs(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
+      inline def setUpstreamsVarargs(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
     }
   }
   
@@ -247,71 +227,50 @@ object repositoryMod {
   }
   object RepositoryState {
     
-    @scala.inline
-    def apply(): RepositoryState = {
+    inline def apply(): RepositoryState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepositoryState]
     }
     
-    @scala.inline
-    implicit class RepositoryStateMutableBuilder[Self <: RepositoryState] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryState](x: Self) {
       
-      @scala.inline
-      def setAdministratorAccount(value: Input[String]): Self = StObject.set(x, "administratorAccount", value.asInstanceOf[js.Any])
+      inline def setAdministratorAccount(value: Input[String]): Self = StObject.set(x, "administratorAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdministratorAccountUndefined: Self = StObject.set(x, "administratorAccount", js.undefined)
+      inline def setAdministratorAccountUndefined: Self = StObject.set(x, "administratorAccount", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+      inline def setDomainOwner(value: Input[String]): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+      inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setExternalConnections(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]): Self = StObject.set(x, "externalConnections", value.asInstanceOf[js.Any])
+      inline def setExternalConnections(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryExternalConnections]): Self = StObject.set(x, "externalConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalConnectionsUndefined: Self = StObject.set(x, "externalConnections", js.undefined)
+      inline def setExternalConnectionsUndefined: Self = StObject.set(x, "externalConnections", js.undefined)
       
-      @scala.inline
-      def setRepository(value: Input[String]): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: Input[String]): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUpstreams(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]]]): Self = StObject.set(x, "upstreams", value.asInstanceOf[js.Any])
+      inline def setUpstreams(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]]]): Self = StObject.set(x, "upstreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
+      inline def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
       
-      @scala.inline
-      def setUpstreamsVarargs(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
+      inline def setUpstreamsVarargs(value: Input[typings.pulumiAws.inputMod.codeartifact.RepositoryUpstream]*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
     }
   }
 }

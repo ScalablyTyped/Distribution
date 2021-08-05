@@ -21,37 +21,27 @@ trait WorkspaceSystemSettingsDisambiguation extends StObject {
 }
 object WorkspaceSystemSettingsDisambiguation {
   
-  @scala.inline
-  def apply(): WorkspaceSystemSettingsDisambiguation = {
+  inline def apply(): WorkspaceSystemSettingsDisambiguation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceSystemSettingsDisambiguation]
   }
   
-  @scala.inline
-  implicit class WorkspaceSystemSettingsDisambiguationMutableBuilder[Self <: WorkspaceSystemSettingsDisambiguation] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceSystemSettingsDisambiguation](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setNone_of_the_above_prompt(value: String): Self = StObject.set(x, "none_of_the_above_prompt", value.asInstanceOf[js.Any])
+    inline def setNone_of_the_above_prompt(value: String): Self = StObject.set(x, "none_of_the_above_prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone_of_the_above_promptUndefined: Self = StObject.set(x, "none_of_the_above_prompt", js.undefined)
+    inline def setNone_of_the_above_promptUndefined: Self = StObject.set(x, "none_of_the_above_prompt", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    @scala.inline
-    def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+    inline def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
+    inline def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
   }
 }

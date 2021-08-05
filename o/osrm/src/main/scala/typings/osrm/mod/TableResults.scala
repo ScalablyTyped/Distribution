@@ -16,8 +16,7 @@ trait TableResults extends StObject {
 }
 object TableResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destinations: js.Array[Waypoint],
     durations: js.Array[js.Array[Duration]],
     sources: js.Array[Waypoint]
@@ -26,34 +25,24 @@ object TableResults {
     __obj.asInstanceOf[TableResults]
   }
   
-  @scala.inline
-  implicit class TableResultsMutableBuilder[Self <: TableResults] (val x: Self) extends AnyVal {
+  extension [Self <: TableResults](x: Self) {
     
-    @scala.inline
-    def setDestinations(value: js.Array[Waypoint]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: js.Array[Waypoint]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsVarargs(value: Waypoint*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Waypoint*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setDistances(value: js.Array[js.Array[Distance]]): Self = StObject.set(x, "distances", value.asInstanceOf[js.Any])
+    inline def setDistances(value: js.Array[js.Array[Distance]]): Self = StObject.set(x, "distances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
+    inline def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
     
-    @scala.inline
-    def setDistancesVarargs(value: js.Array[Distance]*): Self = StObject.set(x, "distances", js.Array(value :_*))
+    inline def setDistancesVarargs(value: js.Array[Distance]*): Self = StObject.set(x, "distances", js.Array(value :_*))
     
-    @scala.inline
-    def setDurations(value: js.Array[js.Array[Duration]]): Self = StObject.set(x, "durations", value.asInstanceOf[js.Any])
+    inline def setDurations(value: js.Array[js.Array[Duration]]): Self = StObject.set(x, "durations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationsVarargs(value: js.Array[Duration]*): Self = StObject.set(x, "durations", js.Array(value :_*))
+    inline def setDurationsVarargs(value: js.Array[Duration]*): Self = StObject.set(x, "durations", js.Array(value :_*))
     
-    @scala.inline
-    def setSources(value: js.Array[Waypoint]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[Waypoint]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesVarargs(value: Waypoint*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Waypoint*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

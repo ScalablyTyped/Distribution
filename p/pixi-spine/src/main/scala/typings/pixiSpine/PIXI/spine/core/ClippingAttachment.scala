@@ -14,8 +14,7 @@ trait ClippingAttachment
 }
 object ClippingAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bones: js.Array[Double],
     color: Color,
     computeWorldVertices: (Slot, Double, Double, ArrayLike[Double], Double, Double) => Unit,
@@ -33,13 +32,10 @@ object ClippingAttachment {
     __obj.asInstanceOf[ClippingAttachment]
   }
   
-  @scala.inline
-  implicit class ClippingAttachmentMutableBuilder[Self <: ClippingAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: ClippingAttachment](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSlot(value: SlotData): Self = StObject.set(x, "endSlot", value.asInstanceOf[js.Any])
+    inline def setEndSlot(value: SlotData): Self = StObject.set(x, "endSlot", value.asInstanceOf[js.Any])
   }
 }

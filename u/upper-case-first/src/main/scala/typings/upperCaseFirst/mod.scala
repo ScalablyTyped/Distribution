@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def upperCaseFirst(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("upperCaseFirst")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def upperCaseFirst(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("upperCaseFirst")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

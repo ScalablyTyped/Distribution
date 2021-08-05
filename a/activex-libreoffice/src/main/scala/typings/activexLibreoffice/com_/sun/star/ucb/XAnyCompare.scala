@@ -21,8 +21,7 @@ trait XAnyCompare
 }
 object XAnyCompare {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     compare: (js.Any, js.Any) => Double,
     queryInterface: `type` => js.Any,
@@ -32,10 +31,8 @@ object XAnyCompare {
     __obj.asInstanceOf[XAnyCompare]
   }
   
-  @scala.inline
-  implicit class XAnyCompareMutableBuilder[Self <: XAnyCompare] (val x: Self) extends AnyVal {
+  extension [Self <: XAnyCompare](x: Self) {
     
-    @scala.inline
-    def setCompare(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
   }
 }

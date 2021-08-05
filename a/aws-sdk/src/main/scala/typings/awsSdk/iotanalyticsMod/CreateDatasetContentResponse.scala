@@ -13,19 +13,15 @@ trait CreateDatasetContentResponse extends StObject {
 }
 object CreateDatasetContentResponse {
   
-  @scala.inline
-  def apply(): CreateDatasetContentResponse = {
+  inline def apply(): CreateDatasetContentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDatasetContentResponse]
   }
   
-  @scala.inline
-  implicit class CreateDatasetContentResponseMutableBuilder[Self <: CreateDatasetContentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatasetContentResponse](x: Self) {
     
-    @scala.inline
-    def setVersionId(value: DatasetContentVersion): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DatasetContentVersion): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

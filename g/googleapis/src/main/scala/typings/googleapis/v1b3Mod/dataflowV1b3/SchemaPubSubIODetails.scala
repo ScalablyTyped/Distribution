@@ -21,25 +21,19 @@ trait SchemaPubSubIODetails extends StObject {
 }
 object SchemaPubSubIODetails {
   
-  @scala.inline
-  def apply(): SchemaPubSubIODetails = {
+  inline def apply(): SchemaPubSubIODetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPubSubIODetails]
   }
   
-  @scala.inline
-  implicit class SchemaPubSubIODetailsMutableBuilder[Self <: SchemaPubSubIODetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPubSubIODetails](x: Self) {
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait ListMFADevicesResponse extends StObject {
 }
 object ListMFADevicesResponse {
   
-  @scala.inline
-  def apply(MFADevices: mfaDeviceListType): ListMFADevicesResponse = {
+  inline def apply(MFADevices: mfaDeviceListType): ListMFADevicesResponse = {
     val __obj = js.Dynamic.literal(MFADevices = MFADevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMFADevicesResponse]
   }
   
-  @scala.inline
-  implicit class ListMFADevicesResponseMutableBuilder[Self <: ListMFADevicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMFADevicesResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMFADevices(value: mfaDeviceListType): Self = StObject.set(x, "MFADevices", value.asInstanceOf[js.Any])
+    inline def setMFADevices(value: mfaDeviceListType): Self = StObject.set(x, "MFADevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFADevicesVarargs(value: MFADevice*): Self = StObject.set(x, "MFADevices", js.Array(value :_*))
+    inline def setMFADevicesVarargs(value: MFADevice*): Self = StObject.set(x, "MFADevices", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

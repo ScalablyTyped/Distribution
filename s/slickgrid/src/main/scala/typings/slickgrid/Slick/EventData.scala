@@ -34,8 +34,7 @@ trait EventData extends StObject {
 }
 object EventData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isImmediatePropagationStopped: () => Boolean,
     isPropagationStopped: () => Boolean,
     stopImmediatePropagation: () => Unit,
@@ -45,19 +44,14 @@ object EventData {
     __obj.asInstanceOf[EventData]
   }
   
-  @scala.inline
-  implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+  extension [Self <: EventData](x: Self) {
     
-    @scala.inline
-    def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
+    inline def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+    inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+    inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

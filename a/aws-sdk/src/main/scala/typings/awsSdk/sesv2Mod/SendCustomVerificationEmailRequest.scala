@@ -23,25 +23,19 @@ trait SendCustomVerificationEmailRequest extends StObject {
 }
 object SendCustomVerificationEmailRequest {
   
-  @scala.inline
-  def apply(EmailAddress: EmailAddress, TemplateName: EmailTemplateName): SendCustomVerificationEmailRequest = {
+  inline def apply(EmailAddress: EmailAddress, TemplateName: EmailTemplateName): SendCustomVerificationEmailRequest = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendCustomVerificationEmailRequest]
   }
   
-  @scala.inline
-  implicit class SendCustomVerificationEmailRequestMutableBuilder[Self <: SendCustomVerificationEmailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendCustomVerificationEmailRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
+    inline def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

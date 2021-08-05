@@ -26,7 +26,7 @@ object dnodeMod {
     
     var id: Double = js.native
     
-    var isDisposed: Boolean = js.native
+    /* protected */ var isDisposed: Boolean = js.native
     
     def markReady(stateDidActuallyChange: Boolean): Unit = js.native
     
@@ -85,9 +85,9 @@ object dnodeMod {
     
     def computeNextState(): Unit = js.native
     
-    var dependencyChangeCount: js.Any = js.native
+    /* private */ var dependencyChangeCount: js.Any = js.native
     
-    var dependencyStaleCount: js.Any = js.native
+    /* private */ var dependencyStaleCount: js.Any = js.native
     
     /* private */ def findCycle(node: js.Any): js.Any = js.native
     
@@ -99,11 +99,11 @@ object dnodeMod {
     
     var observing: js.Array[DataNode] = js.native
     
-    var onSleepEmitter: js.Any = js.native
+    /* private */ var onSleepEmitter: js.Any = js.native
     
     def onceSleep(onSleep: js.Function1[/* lastValue */ js.Any, Unit]): Unit = js.native
     
-    var prevObserving: js.Any = js.native
+    /* private */ var prevObserving: js.Any = js.native
     
     /* private */ def trackDependencies(): js.Any = js.native
     
@@ -112,26 +112,18 @@ object dnodeMod {
     def wakeUp(): Unit = js.native
   }
   
-  @scala.inline
-  def checkIfStateIsBeingModifiedDuringView(context: IContextInfoStruct): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateIsBeingModifiedDuringView")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkIfStateIsBeingModifiedDuringView(context: IContextInfoStruct): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateIsBeingModifiedDuringView")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def isComputingView(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputingView")().asInstanceOf[Boolean]
+  inline def isComputingView(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputingView")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isInTransaction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTransaction")().asInstanceOf[Boolean]
+  inline def isInTransaction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTransaction")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def runAfterTransaction(action: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAfterTransaction")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def runAfterTransaction(action: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAfterTransaction")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def stackDepth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stackDepth")().asInstanceOf[js.Any]
+  inline def stackDepth(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stackDepth")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def transaction[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def transaction[T](action: js.Function0[T], thisArg: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transaction[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def transaction[T](action: js.Function0[T], thisArg: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transaction")(action.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def untracked[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(action.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def untracked[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(action.asInstanceOf[js.Any]).asInstanceOf[T]
 }

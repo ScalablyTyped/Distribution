@@ -18,28 +18,21 @@ trait DescribeTransitGatewayAttachmentsResult extends StObject {
 }
 object DescribeTransitGatewayAttachmentsResult {
   
-  @scala.inline
-  def apply(): DescribeTransitGatewayAttachmentsResult = {
+  inline def apply(): DescribeTransitGatewayAttachmentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTransitGatewayAttachmentsResult]
   }
   
-  @scala.inline
-  implicit class DescribeTransitGatewayAttachmentsResultMutableBuilder[Self <: DescribeTransitGatewayAttachmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTransitGatewayAttachmentsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachments(value: TransitGatewayAttachmentList): Self = StObject.set(x, "TransitGatewayAttachments", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachments(value: TransitGatewayAttachmentList): Self = StObject.set(x, "TransitGatewayAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayAttachments", js.undefined)
+    inline def setTransitGatewayAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayAttachments", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentsVarargs(value: TransitGatewayAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value :_*))
+    inline def setTransitGatewayAttachmentsVarargs(value: TransitGatewayAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value :_*))
   }
 }

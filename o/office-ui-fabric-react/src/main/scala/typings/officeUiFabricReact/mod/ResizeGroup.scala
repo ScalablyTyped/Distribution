@@ -16,8 +16,7 @@ class ResizeGroup protected ()
 }
 object ResizeGroup {
   
-  @scala.inline
-  def apply: Instantiable1[
+  inline def apply: Instantiable1[
     /* props */ IResizeGroupProps, 
     typings.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase
   ] = ^.asInstanceOf[js.Dynamic].selectDynamic("ResizeGroup").asInstanceOf[Instantiable1[

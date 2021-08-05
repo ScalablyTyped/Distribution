@@ -16,19 +16,15 @@ trait SchemaBeginTransactionRequest extends StObject {
 }
 object SchemaBeginTransactionRequest {
   
-  @scala.inline
-  def apply(): SchemaBeginTransactionRequest = {
+  inline def apply(): SchemaBeginTransactionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBeginTransactionRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBeginTransactionRequestMutableBuilder[Self <: SchemaBeginTransactionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBeginTransactionRequest](x: Self) {
     
-    @scala.inline
-    def setOptions(value: SchemaTransactionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SchemaTransactionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

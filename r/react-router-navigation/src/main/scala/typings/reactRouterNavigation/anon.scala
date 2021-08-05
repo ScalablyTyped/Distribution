@@ -15,26 +15,20 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(): Height = {
+    inline def apply(): Height = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -44,17 +38,14 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String): Key = {
+    inline def apply(key: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,18 +55,15 @@ object anon {
   }
   object Lazy {
     
-    @scala.inline
-    def apply(): Lazy = {
+    inline def apply(): Lazy = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("lazy")(true)
       __obj.asInstanceOf[Lazy]
     }
     
-    @scala.inline
-    implicit class LazyMutableBuilder[Self <: Lazy] (val x: Self) extends AnyVal {
+    extension [Self <: Lazy](x: Self) {
       
-      @scala.inline
-      def setLazy(value: `true`): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: `true`): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     }
   }
 }

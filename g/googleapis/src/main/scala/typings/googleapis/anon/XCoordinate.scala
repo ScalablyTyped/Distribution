@@ -16,37 +16,27 @@ trait XCoordinate extends StObject {
 }
 object XCoordinate {
   
-  @scala.inline
-  def apply(): XCoordinate = {
+  inline def apply(): XCoordinate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XCoordinate]
   }
   
-  @scala.inline
-  implicit class XCoordinateMutableBuilder[Self <: XCoordinate] (val x: Self) extends AnyVal {
+  extension [Self <: XCoordinate](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setXCoordinate(value: Double): Self = StObject.set(x, "xCoordinate", value.asInstanceOf[js.Any])
+    inline def setXCoordinate(value: Double): Self = StObject.set(x, "xCoordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXCoordinateUndefined: Self = StObject.set(x, "xCoordinate", js.undefined)
+    inline def setXCoordinateUndefined: Self = StObject.set(x, "xCoordinate", js.undefined)
     
-    @scala.inline
-    def setYCoordinate(value: Double): Self = StObject.set(x, "yCoordinate", value.asInstanceOf[js.Any])
+    inline def setYCoordinate(value: Double): Self = StObject.set(x, "yCoordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYCoordinateUndefined: Self = StObject.set(x, "yCoordinate", js.undefined)
+    inline def setYCoordinateUndefined: Self = StObject.set(x, "yCoordinate", js.undefined)
   }
 }

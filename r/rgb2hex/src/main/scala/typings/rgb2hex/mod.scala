@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(rgb: String): Alpha = ^.asInstanceOf[js.Dynamic].apply(rgb.asInstanceOf[js.Any]).asInstanceOf[Alpha]
+  inline def apply(rgb: String): Alpha = ^.asInstanceOf[js.Dynamic].apply(rgb.asInstanceOf[js.Any]).asInstanceOf[Alpha]
   
   @JSImport("rgb2hex", JSImport.Namespace)
   @js.native

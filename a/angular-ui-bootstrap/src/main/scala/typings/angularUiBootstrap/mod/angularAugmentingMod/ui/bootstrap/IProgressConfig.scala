@@ -22,25 +22,19 @@ trait IProgressConfig extends StObject {
 }
 object IProgressConfig {
   
-  @scala.inline
-  def apply(): IProgressConfig = {
+  inline def apply(): IProgressConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IProgressConfig]
   }
   
-  @scala.inline
-  implicit class IProgressConfigMutableBuilder[Self <: IProgressConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IProgressConfig](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
   }
 }

@@ -17,7 +17,7 @@ object radioMod {
     extends StObject
        with ComponentInterface {
     
-    var buttonEl: js.Any = js.native
+    /* private */ var buttonEl: js.Any = js.native
     
     /**
       * The tabindex of the radio button.
@@ -55,7 +55,7 @@ object radioMod {
     
     def emitStyle(): Unit = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * Emitted when the radio button loses focus.
@@ -78,11 +78,11 @@ object radioMod {
       */
     var name: String = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
-    var radioGroup: js.Any = js.native
+    /* private */ var radioGroup: js.Any = js.native
     
     @JSName("render")
     def render_MRadio(): js.Any = js.native
@@ -93,7 +93,7 @@ object radioMod {
     /** @internal */
     def setFocus(): js.Promise[Unit] = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
     
     /**
       * the value of the radio.

@@ -19,22 +19,17 @@ trait ListenerRuleActionForwardStickiness extends StObject {
 }
 object ListenerRuleActionForwardStickiness {
   
-  @scala.inline
-  def apply(duration: Input[Double]): ListenerRuleActionForwardStickiness = {
+  inline def apply(duration: Input[Double]): ListenerRuleActionForwardStickiness = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleActionForwardStickiness]
   }
   
-  @scala.inline
-  implicit class ListenerRuleActionForwardStickinessMutableBuilder[Self <: ListenerRuleActionForwardStickiness] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleActionForwardStickiness](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: (String, js.Any) => js.Any,
     init: (ApiRootUrl, js.Function0[Unit]) => Unit,
     load: js.Function0[Unit] => Unit,
@@ -37,28 +36,20 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setGet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInit(value: (ApiRootUrl, js.Function0[Unit]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+    inline def setInit(value: (ApiRootUrl, js.Function0[Unit]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadUserSettings(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "loadUserSettings", js.Any.fromFunction1(value))
+    inline def setLoadUserSettings(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "loadUserSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTheme(value: (String, js.Any) => js.Any): Self = StObject.set(x, "theme", js.Any.fromFunction2(value))
+    inline def setTheme(value: (String, js.Any) => js.Any): Self = StObject.set(x, "theme", js.Any.fromFunction2(value))
   }
 }

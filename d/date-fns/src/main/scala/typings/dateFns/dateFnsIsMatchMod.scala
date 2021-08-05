@@ -9,10 +9,8 @@ object dateFnsIsMatchMod {
   
   object default {
     
-    @scala.inline
-    def apply(dateString: String, formatString: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def apply(
+    inline def apply(dateString: String, formatString: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(
       dateString: String,
       formatString: String,
       options: UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens

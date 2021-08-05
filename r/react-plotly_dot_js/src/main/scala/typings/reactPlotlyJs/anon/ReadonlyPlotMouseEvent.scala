@@ -15,22 +15,17 @@ trait ReadonlyPlotMouseEvent extends StObject {
 }
 object ReadonlyPlotMouseEvent {
   
-  @scala.inline
-  def apply(event: MouseEvent, points: js.Array[PlotDatum]): ReadonlyPlotMouseEvent = {
+  inline def apply(event: MouseEvent, points: js.Array[PlotDatum]): ReadonlyPlotMouseEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyPlotMouseEvent]
   }
   
-  @scala.inline
-  implicit class ReadonlyPlotMouseEventMutableBuilder[Self <: ReadonlyPlotMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPlotMouseEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[PlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[PlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: PlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: PlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

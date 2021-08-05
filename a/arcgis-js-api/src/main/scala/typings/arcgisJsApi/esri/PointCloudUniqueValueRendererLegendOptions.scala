@@ -19,8 +19,7 @@ trait PointCloudUniqueValueRendererLegendOptions
 }
 object PointCloudUniqueValueRendererLegendOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object PointCloudUniqueValueRendererLegendOptions {
     __obj.asInstanceOf[PointCloudUniqueValueRendererLegendOptions]
   }
   
-  @scala.inline
-  implicit class PointCloudUniqueValueRendererLegendOptionsMutableBuilder[Self <: PointCloudUniqueValueRendererLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudUniqueValueRendererLegendOptions](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

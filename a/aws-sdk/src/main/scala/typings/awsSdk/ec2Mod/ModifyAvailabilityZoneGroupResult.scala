@@ -13,19 +13,15 @@ trait ModifyAvailabilityZoneGroupResult extends StObject {
 }
 object ModifyAvailabilityZoneGroupResult {
   
-  @scala.inline
-  def apply(): ModifyAvailabilityZoneGroupResult = {
+  inline def apply(): ModifyAvailabilityZoneGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyAvailabilityZoneGroupResult]
   }
   
-  @scala.inline
-  implicit class ModifyAvailabilityZoneGroupResultMutableBuilder[Self <: ModifyAvailabilityZoneGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyAvailabilityZoneGroupResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

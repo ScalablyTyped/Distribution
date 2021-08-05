@@ -19,19 +19,15 @@ trait FailRequestRequest extends StObject {
 }
 object FailRequestRequest {
   
-  @scala.inline
-  def apply(errorReason: ErrorReason, requestId: RequestId): FailRequestRequest = {
+  inline def apply(errorReason: ErrorReason, requestId: RequestId): FailRequestRequest = {
     val __obj = js.Dynamic.literal(errorReason = errorReason.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailRequestRequest]
   }
   
-  @scala.inline
-  implicit class FailRequestRequestMutableBuilder[Self <: FailRequestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FailRequestRequest](x: Self) {
     
-    @scala.inline
-    def setErrorReason(value: ErrorReason): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
+    inline def setErrorReason(value: ErrorReason): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

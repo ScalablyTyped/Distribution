@@ -19,10 +19,8 @@ object mod {
       * @param addr Hostname or IP address
       * @param config Optional configuration
       */
-    @scala.inline
-    def probe(addr: String): js.Promise[PingResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PingResponse]]
-    @scala.inline
-    def probe(addr: String, config: PingConfig): js.Promise[PingResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PingResponse]]
+    inline def probe(addr: String): js.Promise[PingResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PingResponse]]
+    inline def probe(addr: String, config: PingConfig): js.Promise[PingResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PingResponse]]
   }
   
   object sys {
@@ -40,10 +38,8 @@ object mod {
       *   Second argument is any error, `null` if no error.
       * @param config Optional configuration
       */
-    @scala.inline
-    def probe(addr: String, cb: js.Function2[/* isAlive */ Boolean, /* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def probe(
+    inline def probe(addr: String, cb: js.Function2[/* isAlive */ Boolean, /* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def probe(
       addr: String,
       cb: js.Function2[/* isAlive */ Boolean, /* error */ js.Any, Unit],
       config: PingConfig
@@ -84,53 +80,38 @@ object mod {
   }
   object PingConfig {
     
-    @scala.inline
-    def apply(): PingConfig = {
+    inline def apply(): PingConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PingConfig]
     }
     
-    @scala.inline
-    implicit class PingConfigMutableBuilder[Self <: PingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PingConfig](x: Self) {
       
-      @scala.inline
-      def setExtra(value: js.Array[String]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: js.Array[String]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setExtraVarargs(value: String*): Self = StObject.set(x, "extra", js.Array(value :_*))
+      inline def setExtraVarargs(value: String*): Self = StObject.set(x, "extra", js.Array(value :_*))
       
-      @scala.inline
-      def setMin_reply(value: Double): Self = StObject.set(x, "min_reply", value.asInstanceOf[js.Any])
+      inline def setMin_reply(value: Double): Self = StObject.set(x, "min_reply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin_replyUndefined: Self = StObject.set(x, "min_reply", js.undefined)
+      inline def setMin_replyUndefined: Self = StObject.set(x, "min_reply", js.undefined)
       
-      @scala.inline
-      def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+      inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
       
-      @scala.inline
-      def setSourceAddr(value: String): Self = StObject.set(x, "sourceAddr", value.asInstanceOf[js.Any])
+      inline def setSourceAddr(value: String): Self = StObject.set(x, "sourceAddr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceAddrUndefined: Self = StObject.set(x, "sourceAddr", js.undefined)
+      inline def setSourceAddrUndefined: Self = StObject.set(x, "sourceAddr", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setV6(value: Boolean): Self = StObject.set(x, "v6", value.asInstanceOf[js.Any])
+      inline def setV6(value: Boolean): Self = StObject.set(x, "v6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV6Undefined: Self = StObject.set(x, "v6", js.undefined)
+      inline def setV6Undefined: Self = StObject.set(x, "v6", js.undefined)
     }
   }
   
@@ -183,8 +164,7 @@ object mod {
   }
   object PingResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alive: Boolean,
       avg: String,
       host: String,
@@ -198,38 +178,27 @@ object mod {
       __obj.asInstanceOf[PingResponse]
     }
     
-    @scala.inline
-    implicit class PingResponseMutableBuilder[Self <: PingResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PingResponse](x: Self) {
       
-      @scala.inline
-      def setAlive(value: Boolean): Self = StObject.set(x, "alive", value.asInstanceOf[js.Any])
+      inline def setAlive(value: Boolean): Self = StObject.set(x, "alive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+      inline def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeric_host(value: String): Self = StObject.set(x, "numeric_host", value.asInstanceOf[js.Any])
+      inline def setNumeric_host(value: String): Self = StObject.set(x, "numeric_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeric_hostUndefined: Self = StObject.set(x, "numeric_host", js.undefined)
+      inline def setNumeric_hostUndefined: Self = StObject.set(x, "numeric_host", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStddev(value: String): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+      inline def setStddev(value: String): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double | unknown): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double | unknown): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -37,43 +37,31 @@ trait SchemaOptions extends StObject {
 }
 object SchemaOptions {
   
-  @scala.inline
-  def apply(): SchemaOptions = {
+  inline def apply(): SchemaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOptions]
   }
   
-  @scala.inline
-  implicit class SchemaOptionsMutableBuilder[Self <: SchemaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncOptions(value: js.Array[SchemaAsyncOptions]): Self = StObject.set(x, "asyncOptions", value.asInstanceOf[js.Any])
+    inline def setAsyncOptions(value: js.Array[SchemaAsyncOptions]): Self = StObject.set(x, "asyncOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncOptionsUndefined: Self = StObject.set(x, "asyncOptions", js.undefined)
+    inline def setAsyncOptionsUndefined: Self = StObject.set(x, "asyncOptions", js.undefined)
     
-    @scala.inline
-    def setAsyncOptionsVarargs(value: SchemaAsyncOptions*): Self = StObject.set(x, "asyncOptions", js.Array(value :_*))
+    inline def setAsyncOptionsVarargs(value: SchemaAsyncOptions*): Self = StObject.set(x, "asyncOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setInputMappings(value: js.Array[SchemaInputMapping]): Self = StObject.set(x, "inputMappings", value.asInstanceOf[js.Any])
+    inline def setInputMappings(value: js.Array[SchemaInputMapping]): Self = StObject.set(x, "inputMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMappingsUndefined: Self = StObject.set(x, "inputMappings", js.undefined)
+    inline def setInputMappingsUndefined: Self = StObject.set(x, "inputMappings", js.undefined)
     
-    @scala.inline
-    def setInputMappingsVarargs(value: SchemaInputMapping*): Self = StObject.set(x, "inputMappings", js.Array(value :_*))
+    inline def setInputMappingsVarargs(value: SchemaInputMapping*): Self = StObject.set(x, "inputMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationOptions(value: SchemaValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
+    inline def setValidationOptions(value: SchemaValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
+    inline def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
     
-    @scala.inline
-    def setVirtualProperties(value: String): Self = StObject.set(x, "virtualProperties", value.asInstanceOf[js.Any])
+    inline def setVirtualProperties(value: String): Self = StObject.set(x, "virtualProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualPropertiesUndefined: Self = StObject.set(x, "virtualProperties", js.undefined)
+    inline def setVirtualPropertiesUndefined: Self = StObject.set(x, "virtualProperties", js.undefined)
   }
 }

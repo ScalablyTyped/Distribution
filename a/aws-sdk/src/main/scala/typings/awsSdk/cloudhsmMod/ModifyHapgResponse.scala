@@ -13,19 +13,15 @@ trait ModifyHapgResponse extends StObject {
 }
 object ModifyHapgResponse {
   
-  @scala.inline
-  def apply(): ModifyHapgResponse = {
+  inline def apply(): ModifyHapgResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyHapgResponse]
   }
   
-  @scala.inline
-  implicit class ModifyHapgResponseMutableBuilder[Self <: ModifyHapgResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyHapgResponse](x: Self) {
     
-    @scala.inline
-    def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
+    inline def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHapgArnUndefined: Self = StObject.set(x, "HapgArn", js.undefined)
+    inline def setHapgArnUndefined: Self = StObject.set(x, "HapgArn", js.undefined)
   }
 }

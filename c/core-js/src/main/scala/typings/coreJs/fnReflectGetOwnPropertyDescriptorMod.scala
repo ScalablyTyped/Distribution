@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fnReflectGetOwnPropertyDescriptorMod {
   
   /* was `typeof core.Reflect.getOwnPropertyDescriptor` */
-  @scala.inline
-  def apply(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  inline def apply(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
   
   @JSImport("core-js/library/fn/reflect/get-own-property-descriptor", JSImport.Namespace)
   @js.native

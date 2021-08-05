@@ -23,28 +23,21 @@ trait UpdatePhoneNumberRequestItem extends StObject {
 }
 object UpdatePhoneNumberRequestItem {
   
-  @scala.inline
-  def apply(PhoneNumberId: NonEmptyString): UpdatePhoneNumberRequestItem = {
+  inline def apply(PhoneNumberId: NonEmptyString): UpdatePhoneNumberRequestItem = {
     val __obj = js.Dynamic.literal(PhoneNumberId = PhoneNumberId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePhoneNumberRequestItem]
   }
   
-  @scala.inline
-  implicit class UpdatePhoneNumberRequestItemMutableBuilder[Self <: UpdatePhoneNumberRequestItem] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePhoneNumberRequestItem](x: Self) {
     
-    @scala.inline
-    def setCallingName(value: CallingName): Self = StObject.set(x, "CallingName", value.asInstanceOf[js.Any])
+    inline def setCallingName(value: CallingName): Self = StObject.set(x, "CallingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallingNameUndefined: Self = StObject.set(x, "CallingName", js.undefined)
+    inline def setCallingNameUndefined: Self = StObject.set(x, "CallingName", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberId(value: NonEmptyString): Self = StObject.set(x, "PhoneNumberId", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberId(value: NonEmptyString): Self = StObject.set(x, "PhoneNumberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductType(value: PhoneNumberProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
+    inline def setProductType(value: PhoneNumberProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
+    inline def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
   }
 }

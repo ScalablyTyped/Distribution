@@ -22,8 +22,7 @@ trait SpaceProps
      with PaddingYProps[StyledSystemLength]
 object SpaceProps {
   
-  @scala.inline
-  def apply(): SpaceProps = {
+  inline def apply(): SpaceProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpaceProps]
   }

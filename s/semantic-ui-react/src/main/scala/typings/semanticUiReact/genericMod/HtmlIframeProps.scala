@@ -11,8 +11,7 @@ trait HtmlIframeProps
      with /* key */ StringDictionary[js.Any]
 object HtmlIframeProps {
   
-  @scala.inline
-  def apply(): HtmlIframeProps = {
+  inline def apply(): HtmlIframeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlIframeProps]
   }

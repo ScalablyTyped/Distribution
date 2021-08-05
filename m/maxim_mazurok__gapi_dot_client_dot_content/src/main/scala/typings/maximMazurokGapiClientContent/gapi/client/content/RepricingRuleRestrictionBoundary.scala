@@ -20,25 +20,19 @@ trait RepricingRuleRestrictionBoundary extends StObject {
 }
 object RepricingRuleRestrictionBoundary {
   
-  @scala.inline
-  def apply(): RepricingRuleRestrictionBoundary = {
+  inline def apply(): RepricingRuleRestrictionBoundary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepricingRuleRestrictionBoundary]
   }
   
-  @scala.inline
-  implicit class RepricingRuleRestrictionBoundaryMutableBuilder[Self <: RepricingRuleRestrictionBoundary] (val x: Self) extends AnyVal {
+  extension [Self <: RepricingRuleRestrictionBoundary](x: Self) {
     
-    @scala.inline
-    def setPercentageDelta(value: Double): Self = StObject.set(x, "percentageDelta", value.asInstanceOf[js.Any])
+    inline def setPercentageDelta(value: Double): Self = StObject.set(x, "percentageDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageDeltaUndefined: Self = StObject.set(x, "percentageDelta", js.undefined)
+    inline def setPercentageDeltaUndefined: Self = StObject.set(x, "percentageDelta", js.undefined)
     
-    @scala.inline
-    def setPriceDelta(value: String): Self = StObject.set(x, "priceDelta", value.asInstanceOf[js.Any])
+    inline def setPriceDelta(value: String): Self = StObject.set(x, "priceDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceDeltaUndefined: Self = StObject.set(x, "priceDelta", js.undefined)
+    inline def setPriceDeltaUndefined: Self = StObject.set(x, "priceDelta", js.undefined)
   }
 }

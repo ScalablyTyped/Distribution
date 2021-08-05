@@ -18,25 +18,19 @@ trait QueryOptions extends StObject {
 }
 object QueryOptions {
   
-  @scala.inline
-  def apply(): QueryOptions = {
+  inline def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryOptions]
   }
   
-  @scala.inline
-  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOptions](x: Self) {
     
-    @scala.inline
-    def setNumberOfTries(value: Double): Self = StObject.set(x, "numberOfTries", value.asInstanceOf[js.Any])
+    inline def setNumberOfTries(value: Double): Self = StObject.set(x, "numberOfTries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTriesUndefined: Self = StObject.set(x, "numberOfTries", js.undefined)
+    inline def setNumberOfTriesUndefined: Self = StObject.set(x, "numberOfTries", js.undefined)
     
-    @scala.inline
-    def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
+    inline def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
+    inline def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
   }
 }

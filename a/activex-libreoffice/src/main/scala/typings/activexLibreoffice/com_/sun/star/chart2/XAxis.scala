@@ -46,8 +46,7 @@ trait XAxis
 }
 object XAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GridProperties: XPropertySet,
     ScaleData: ScaleData,
     SubGridProperties: SafeArray[XPropertySet],
@@ -65,34 +64,24 @@ object XAxis {
     __obj.asInstanceOf[XAxis]
   }
   
-  @scala.inline
-  implicit class XAxisMutableBuilder[Self <: XAxis] (val x: Self) extends AnyVal {
+  extension [Self <: XAxis](x: Self) {
     
-    @scala.inline
-    def setGetGridProperties(value: () => XPropertySet): Self = StObject.set(x, "getGridProperties", js.Any.fromFunction0(value))
+    inline def setGetGridProperties(value: () => XPropertySet): Self = StObject.set(x, "getGridProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScaleData(value: () => ScaleData): Self = StObject.set(x, "getScaleData", js.Any.fromFunction0(value))
+    inline def setGetScaleData(value: () => ScaleData): Self = StObject.set(x, "getScaleData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubGridProperties(value: () => SafeArray[XPropertySet]): Self = StObject.set(x, "getSubGridProperties", js.Any.fromFunction0(value))
+    inline def setGetSubGridProperties(value: () => SafeArray[XPropertySet]): Self = StObject.set(x, "getSubGridProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubTickProperties(value: () => SafeArray[XPropertySet]): Self = StObject.set(x, "getSubTickProperties", js.Any.fromFunction0(value))
+    inline def setGetSubTickProperties(value: () => SafeArray[XPropertySet]): Self = StObject.set(x, "getSubTickProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGridProperties(value: XPropertySet): Self = StObject.set(x, "GridProperties", value.asInstanceOf[js.Any])
+    inline def setGridProperties(value: XPropertySet): Self = StObject.set(x, "GridProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleData(value: ScaleData): Self = StObject.set(x, "ScaleData", value.asInstanceOf[js.Any])
+    inline def setScaleData(value: ScaleData): Self = StObject.set(x, "ScaleData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetScaleData(value: ScaleData => Unit): Self = StObject.set(x, "setScaleData", js.Any.fromFunction1(value))
+    inline def setSetScaleData(value: ScaleData => Unit): Self = StObject.set(x, "setScaleData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubGridProperties(value: SafeArray[XPropertySet]): Self = StObject.set(x, "SubGridProperties", value.asInstanceOf[js.Any])
+    inline def setSubGridProperties(value: SafeArray[XPropertySet]): Self = StObject.set(x, "SubGridProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTickProperties(value: SafeArray[XPropertySet]): Self = StObject.set(x, "SubTickProperties", value.asInstanceOf[js.Any])
+    inline def setSubTickProperties(value: SafeArray[XPropertySet]): Self = StObject.set(x, "SubTickProperties", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait AcceptInvitationRequest extends StObject {
 }
 object AcceptInvitationRequest {
   
-  @scala.inline
-  def apply(GraphArn: GraphArn): AcceptInvitationRequest = {
+  inline def apply(GraphArn: GraphArn): AcceptInvitationRequest = {
     val __obj = js.Dynamic.literal(GraphArn = GraphArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptInvitationRequest]
   }
   
-  @scala.inline
-  implicit class AcceptInvitationRequestMutableBuilder[Self <: AcceptInvitationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptInvitationRequest](x: Self) {
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }
 }

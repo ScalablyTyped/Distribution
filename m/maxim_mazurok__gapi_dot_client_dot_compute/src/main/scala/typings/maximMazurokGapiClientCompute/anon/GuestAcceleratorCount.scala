@@ -14,25 +14,19 @@ trait GuestAcceleratorCount extends StObject {
 }
 object GuestAcceleratorCount {
   
-  @scala.inline
-  def apply(): GuestAcceleratorCount = {
+  inline def apply(): GuestAcceleratorCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GuestAcceleratorCount]
   }
   
-  @scala.inline
-  implicit class GuestAcceleratorCountMutableBuilder[Self <: GuestAcceleratorCount] (val x: Self) extends AnyVal {
+  extension [Self <: GuestAcceleratorCount](x: Self) {
     
-    @scala.inline
-    def setGuestAcceleratorCount(value: Double): Self = StObject.set(x, "guestAcceleratorCount", value.asInstanceOf[js.Any])
+    inline def setGuestAcceleratorCount(value: Double): Self = StObject.set(x, "guestAcceleratorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestAcceleratorCountUndefined: Self = StObject.set(x, "guestAcceleratorCount", js.undefined)
+    inline def setGuestAcceleratorCountUndefined: Self = StObject.set(x, "guestAcceleratorCount", js.undefined)
     
-    @scala.inline
-    def setGuestAcceleratorType(value: String): Self = StObject.set(x, "guestAcceleratorType", value.asInstanceOf[js.Any])
+    inline def setGuestAcceleratorType(value: String): Self = StObject.set(x, "guestAcceleratorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestAcceleratorTypeUndefined: Self = StObject.set(x, "guestAcceleratorType", js.undefined)
+    inline def setGuestAcceleratorTypeUndefined: Self = StObject.set(x, "guestAcceleratorType", js.undefined)
   }
 }

@@ -6,15 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(newtitle: String): Unit = ^.asInstanceOf[js.Dynamic].apply(newtitle.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pattern: String, newtitle: String): Unit = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], newtitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(newtitle: String): Unit = ^.asInstanceOf[js.Dynamic].apply(newtitle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(pattern: String, newtitle: String): Unit = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], newtitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("title", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
 }

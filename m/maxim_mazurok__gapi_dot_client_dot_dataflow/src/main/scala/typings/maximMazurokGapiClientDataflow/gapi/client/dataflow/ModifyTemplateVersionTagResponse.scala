@@ -11,22 +11,17 @@ trait ModifyTemplateVersionTagResponse extends StObject {
 }
 object ModifyTemplateVersionTagResponse {
   
-  @scala.inline
-  def apply(): ModifyTemplateVersionTagResponse = {
+  inline def apply(): ModifyTemplateVersionTagResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyTemplateVersionTagResponse]
   }
   
-  @scala.inline
-  implicit class ModifyTemplateVersionTagResponseMutableBuilder[Self <: ModifyTemplateVersionTagResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTemplateVersionTagResponse](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

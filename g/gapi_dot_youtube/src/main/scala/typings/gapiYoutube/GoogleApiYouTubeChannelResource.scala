@@ -65,8 +65,7 @@ trait GoogleApiYouTubeChannelResource extends StObject {
 }
 object GoogleApiYouTubeChannelResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brandingSettings: Channel,
     contentDetails: GooglePlusUserId,
     etag: String,
@@ -82,37 +81,26 @@ object GoogleApiYouTubeChannelResource {
     __obj.asInstanceOf[GoogleApiYouTubeChannelResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubeChannelResourceMutableBuilder[Self <: GoogleApiYouTubeChannelResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubeChannelResource](x: Self) {
     
-    @scala.inline
-    def setBrandingSettings(value: Channel): Self = StObject.set(x, "brandingSettings", value.asInstanceOf[js.Any])
+    inline def setBrandingSettings(value: Channel): Self = StObject.set(x, "brandingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDetails(value: GooglePlusUserId): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: GooglePlusUserId): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvideoPromotion(value: Items): Self = StObject.set(x, "invideoPromotion", value.asInstanceOf[js.Any])
+    inline def setInvideoPromotion(value: Items): Self = StObject.set(x, "invideoPromotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippet(value: Description): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: Description): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: CommentCount): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: CommentCount): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: IsLinked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: IsLinked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicDetails(value: TopicIds): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
+    inline def setTopicDetails(value: TopicIds): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
   }
 }

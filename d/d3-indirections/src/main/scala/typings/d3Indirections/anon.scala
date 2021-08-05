@@ -12,17 +12,14 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: String): Error = {
+    inline def apply(error: String): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,23 +33,18 @@ object anon {
   }
   object ResourceIndex {
     
-    @scala.inline
-    def apply(resourceIndex: Double, resourceUids: js.Array[String]): ResourceIndex = {
+    inline def apply(resourceIndex: Double, resourceUids: js.Array[String]): ResourceIndex = {
       val __obj = js.Dynamic.literal(resourceIndex = resourceIndex.asInstanceOf[js.Any], resourceUids = resourceUids.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceIndex]
     }
     
-    @scala.inline
-    implicit class ResourceIndexMutableBuilder[Self <: ResourceIndex] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceIndex](x: Self) {
       
-      @scala.inline
-      def setResourceIndex(value: Double): Self = StObject.set(x, "resourceIndex", value.asInstanceOf[js.Any])
+      inline def setResourceIndex(value: Double): Self = StObject.set(x, "resourceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUids(value: js.Array[String]): Self = StObject.set(x, "resourceUids", value.asInstanceOf[js.Any])
+      inline def setResourceUids(value: js.Array[String]): Self = StObject.set(x, "resourceUids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUidsVarargs(value: String*): Self = StObject.set(x, "resourceUids", js.Array(value :_*))
+      inline def setResourceUidsVarargs(value: String*): Self = StObject.set(x, "resourceUids", js.Array(value :_*))
     }
   }
   
@@ -63,17 +55,14 @@ object anon {
   }
   object ResourceUid {
     
-    @scala.inline
-    def apply(resourceUid: String): ResourceUid = {
+    inline def apply(resourceUid: String): ResourceUid = {
       val __obj = js.Dynamic.literal(resourceUid = resourceUid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceUid]
     }
     
-    @scala.inline
-    implicit class ResourceUidMutableBuilder[Self <: ResourceUid] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceUid](x: Self) {
       
-      @scala.inline
-      def setResourceUid(value: String): Self = StObject.set(x, "resourceUid", value.asInstanceOf[js.Any])
+      inline def setResourceUid(value: String): Self = StObject.set(x, "resourceUid", value.asInstanceOf[js.Any])
     }
   }
 }

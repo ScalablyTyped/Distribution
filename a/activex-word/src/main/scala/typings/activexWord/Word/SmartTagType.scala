@@ -20,13 +20,12 @@ trait SmartTagType extends StObject {
   
   val SmartTagRecognizers: typings.activexWord.Word.SmartTagRecognizers
   
-  @JSName("Word.SmartTagType_typekey")
+  /* private */ @JSName("Word.SmartTagType_typekey")
   var WordDotSmartTagType_typekey: SmartTagType
 }
 object SmartTagType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     FriendlyName: String,
@@ -41,31 +40,22 @@ object SmartTagType {
     __obj.asInstanceOf[SmartTagType]
   }
   
-  @scala.inline
-  implicit class SmartTagTypeMutableBuilder[Self <: SmartTagType] (val x: Self) extends AnyVal {
+  extension [Self <: SmartTagType](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
+    inline def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartTagRecognizers(value: SmartTagRecognizers): Self = StObject.set(x, "SmartTagRecognizers", value.asInstanceOf[js.Any])
+    inline def setSmartTagRecognizers(value: SmartTagRecognizers): Self = StObject.set(x, "SmartTagRecognizers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSmartTagType_typekey(value: SmartTagType): Self = StObject.set(x, "Word.SmartTagType_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSmartTagType_typekey(value: SmartTagType): Self = StObject.set(x, "Word.SmartTagType_typekey", value.asInstanceOf[js.Any])
   }
 }

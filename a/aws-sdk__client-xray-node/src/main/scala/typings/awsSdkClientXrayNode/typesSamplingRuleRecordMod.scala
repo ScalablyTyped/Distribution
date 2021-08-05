@@ -28,32 +28,24 @@ object typesSamplingRuleRecordMod {
   }
   object SamplingRuleRecord {
     
-    @scala.inline
-    def apply(): SamplingRuleRecord = {
+    inline def apply(): SamplingRuleRecord = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SamplingRuleRecord]
     }
     
-    @scala.inline
-    implicit class SamplingRuleRecordMutableBuilder[Self <: SamplingRuleRecord] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingRuleRecord](x: Self) {
       
-      @scala.inline
-      def setCreatedAt(value: Date | String | Double): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Date | String | Double): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+      inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
       
-      @scala.inline
-      def setModifiedAt(value: Date | String | Double): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
+      inline def setModifiedAt(value: Date | String | Double): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedAtUndefined: Self = StObject.set(x, "ModifiedAt", js.undefined)
+      inline def setModifiedAtUndefined: Self = StObject.set(x, "ModifiedAt", js.undefined)
       
-      @scala.inline
-      def setSamplingRule(value: SamplingRule): Self = StObject.set(x, "SamplingRule", value.asInstanceOf[js.Any])
+      inline def setSamplingRule(value: SamplingRule): Self = StObject.set(x, "SamplingRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingRuleUndefined: Self = StObject.set(x, "SamplingRule", js.undefined)
+      inline def setSamplingRuleUndefined: Self = StObject.set(x, "SamplingRule", js.undefined)
     }
   }
   
@@ -81,32 +73,24 @@ object typesSamplingRuleRecordMod {
   }
   object UnmarshalledSamplingRuleRecord {
     
-    @scala.inline
-    def apply(): UnmarshalledSamplingRuleRecord = {
+    inline def apply(): UnmarshalledSamplingRuleRecord = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSamplingRuleRecord]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSamplingRuleRecordMutableBuilder[Self <: UnmarshalledSamplingRuleRecord] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSamplingRuleRecord](x: Self) {
       
-      @scala.inline
-      def setCreatedAt(value: Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+      inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
       
-      @scala.inline
-      def setModifiedAt(value: Date): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
+      inline def setModifiedAt(value: Date): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedAtUndefined: Self = StObject.set(x, "ModifiedAt", js.undefined)
+      inline def setModifiedAtUndefined: Self = StObject.set(x, "ModifiedAt", js.undefined)
       
-      @scala.inline
-      def setSamplingRule(value: UnmarshalledSamplingRule): Self = StObject.set(x, "SamplingRule", value.asInstanceOf[js.Any])
+      inline def setSamplingRule(value: UnmarshalledSamplingRule): Self = StObject.set(x, "SamplingRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingRuleUndefined: Self = StObject.set(x, "SamplingRule", js.undefined)
+      inline def setSamplingRuleUndefined: Self = StObject.set(x, "SamplingRule", js.undefined)
     }
   }
 }

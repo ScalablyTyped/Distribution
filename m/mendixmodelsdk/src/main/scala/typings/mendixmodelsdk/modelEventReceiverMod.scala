@@ -16,15 +16,15 @@ object modelEventReceiverMod {
   class ModelEventReceiver protected () extends StObject {
     def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
-    var deltaEventEmitter: js.Any = js.native
+    /* private */ var deltaEventEmitter: js.Any = js.native
     
-    var errorHandler: js.Any = js.native
+    /* private */ var errorHandler: js.Any = js.native
     
     var eventSource: ^ | Null = js.native
     
-    var fileEventEmitter: js.Any = js.native
+    /* private */ var fileEventEmitter: js.Any = js.native
     
     def isRunning: Boolean = js.native
     
@@ -36,6 +36,6 @@ object modelEventReceiverMod {
     
     def stop(): Unit = js.native
     
-    var workingCopyId: js.Any = js.native
+    /* private */ var workingCopyId: js.Any = js.native
   }
 }

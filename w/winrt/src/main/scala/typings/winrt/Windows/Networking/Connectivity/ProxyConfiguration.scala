@@ -11,8 +11,7 @@ trait ProxyConfiguration
      with IProxyConfiguration
 object ProxyConfiguration {
   
-  @scala.inline
-  def apply(canConnectDirectly: Boolean, proxyUris: IVectorView[Uri]): ProxyConfiguration = {
+  inline def apply(canConnectDirectly: Boolean, proxyUris: IVectorView[Uri]): ProxyConfiguration = {
     val __obj = js.Dynamic.literal(canConnectDirectly = canConnectDirectly.asInstanceOf[js.Any], proxyUris = proxyUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfiguration]
   }

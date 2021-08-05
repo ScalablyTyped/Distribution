@@ -34,8 +34,7 @@ trait XStreamListener
 }
 object XStreamListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     closed: () => Unit,
     disposing: EventObject => Unit,
@@ -49,19 +48,14 @@ object XStreamListener {
     __obj.asInstanceOf[XStreamListener]
   }
   
-  @scala.inline
-  implicit class XStreamListenerMutableBuilder[Self <: XStreamListener] (val x: Self) extends AnyVal {
+  extension [Self <: XStreamListener](x: Self) {
     
-    @scala.inline
-    def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+    inline def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStarted(value: () => Unit): Self = StObject.set(x, "started", js.Any.fromFunction0(value))
+    inline def setStarted(value: () => Unit): Self = StObject.set(x, "started", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTerminated(value: () => Unit): Self = StObject.set(x, "terminated", js.Any.fromFunction0(value))
+    inline def setTerminated(value: () => Unit): Self = StObject.set(x, "terminated", js.Any.fromFunction0(value))
   }
 }

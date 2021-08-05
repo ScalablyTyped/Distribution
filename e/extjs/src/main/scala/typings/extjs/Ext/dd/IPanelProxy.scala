@@ -52,67 +52,47 @@ trait IPanelProxy
 }
 object IPanelProxy {
   
-  @scala.inline
-  def apply(): IPanelProxy = {
+  inline def apply(): IPanelProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPanelProxy]
   }
   
-  @scala.inline
-  implicit class IPanelProxyMutableBuilder[Self <: IPanelProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IPanelProxy](x: Self) {
     
-    @scala.inline
-    def setGetEl(value: () => IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
+    inline def setGetEl(value: () => IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
+    inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
-    @scala.inline
-    def setGetGhost(value: () => IPanel): Self = StObject.set(x, "getGhost", js.Any.fromFunction0(value))
+    inline def setGetGhost(value: () => IPanel): Self = StObject.set(x, "getGhost", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGhostUndefined: Self = StObject.set(x, "getGhost", js.undefined)
+    inline def setGetGhostUndefined: Self = StObject.set(x, "getGhost", js.undefined)
     
-    @scala.inline
-    def setGetProxy(value: () => IElement): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    inline def setGetProxy(value: () => IElement): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+    inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setInsertProxy(value: Boolean): Self = StObject.set(x, "insertProxy", value.asInstanceOf[js.Any])
+    inline def setInsertProxy(value: Boolean): Self = StObject.set(x, "insertProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertProxyUndefined: Self = StObject.set(x, "insertProxy", js.undefined)
+    inline def setInsertProxyUndefined: Self = StObject.set(x, "insertProxy", js.undefined)
     
-    @scala.inline
-    def setMoveOnDrag(value: Boolean): Self = StObject.set(x, "moveOnDrag", value.asInstanceOf[js.Any])
+    inline def setMoveOnDrag(value: Boolean): Self = StObject.set(x, "moveOnDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveOnDragUndefined: Self = StObject.set(x, "moveOnDrag", js.undefined)
+    inline def setMoveOnDragUndefined: Self = StObject.set(x, "moveOnDrag", js.undefined)
     
-    @scala.inline
-    def setMoveProxy(value: (/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "moveProxy", js.Any.fromFunction2(value))
+    inline def setMoveProxy(value: (/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "moveProxy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveProxyUndefined: Self = StObject.set(x, "moveProxy", js.undefined)
+    inline def setMoveProxyUndefined: Self = StObject.set(x, "moveProxy", js.undefined)
     
-    @scala.inline
-    def setPanel(value: IPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: IPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+    inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

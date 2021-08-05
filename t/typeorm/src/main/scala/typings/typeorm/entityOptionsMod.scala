@@ -56,59 +56,42 @@ object entityOptionsMod {
   }
   object EntityOptions {
     
-    @scala.inline
-    def apply(): EntityOptions = {
+    inline def apply(): EntityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EntityOptions]
     }
     
-    @scala.inline
-    implicit class EntityOptionsMutableBuilder[Self <: EntityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntityOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOrderBy(value: OrderByCondition | (js.Function1[/* object */ js.Any, OrderByCondition | js.Any])): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+      inline def setOrderBy(value: OrderByCondition | (js.Function1[/* object */ js.Any, OrderByCondition | js.Any])): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderByFunction1(value: /* object */ js.Any => OrderByCondition | js.Any): Self = StObject.set(x, "orderBy", js.Any.fromFunction1(value))
+      inline def setOrderByFunction1(value: /* object */ js.Any => OrderByCondition | js.Any): Self = StObject.set(x, "orderBy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+      inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSynchronize(value: Boolean): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
+      inline def setSynchronize(value: Boolean): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSynchronizeUndefined: Self = StObject.set(x, "synchronize", js.undefined)
+      inline def setSynchronizeUndefined: Self = StObject.set(x, "synchronize", js.undefined)
       
-      @scala.inline
-      def setWithoutRowid(value: Boolean): Self = StObject.set(x, "withoutRowid", value.asInstanceOf[js.Any])
+      inline def setWithoutRowid(value: Boolean): Self = StObject.set(x, "withoutRowid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutRowidUndefined: Self = StObject.set(x, "withoutRowid", js.undefined)
+      inline def setWithoutRowidUndefined: Self = StObject.set(x, "withoutRowid", js.undefined)
     }
   }
 }

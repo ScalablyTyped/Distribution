@@ -48,67 +48,47 @@ trait UpdateDevEndpointRequest extends StObject {
 }
 object UpdateDevEndpointRequest {
   
-  @scala.inline
-  def apply(EndpointName: GenericString): UpdateDevEndpointRequest = {
+  inline def apply(EndpointName: GenericString): UpdateDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDevEndpointRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDevEndpointRequestMutableBuilder[Self <: UpdateDevEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDevEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setAddArguments(value: MapValue): Self = StObject.set(x, "AddArguments", value.asInstanceOf[js.Any])
+    inline def setAddArguments(value: MapValue): Self = StObject.set(x, "AddArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddArgumentsUndefined: Self = StObject.set(x, "AddArguments", js.undefined)
+    inline def setAddArgumentsUndefined: Self = StObject.set(x, "AddArguments", js.undefined)
     
-    @scala.inline
-    def setAddPublicKeys(value: PublicKeysList): Self = StObject.set(x, "AddPublicKeys", value.asInstanceOf[js.Any])
+    inline def setAddPublicKeys(value: PublicKeysList): Self = StObject.set(x, "AddPublicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddPublicKeysUndefined: Self = StObject.set(x, "AddPublicKeys", js.undefined)
+    inline def setAddPublicKeysUndefined: Self = StObject.set(x, "AddPublicKeys", js.undefined)
     
-    @scala.inline
-    def setAddPublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "AddPublicKeys", js.Array(value :_*))
+    inline def setAddPublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "AddPublicKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomLibraries(value: DevEndpointCustomLibraries): Self = StObject.set(x, "CustomLibraries", value.asInstanceOf[js.Any])
+    inline def setCustomLibraries(value: DevEndpointCustomLibraries): Self = StObject.set(x, "CustomLibraries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLibrariesUndefined: Self = StObject.set(x, "CustomLibraries", js.undefined)
+    inline def setCustomLibrariesUndefined: Self = StObject.set(x, "CustomLibraries", js.undefined)
     
-    @scala.inline
-    def setDeleteArguments(value: StringList): Self = StObject.set(x, "DeleteArguments", value.asInstanceOf[js.Any])
+    inline def setDeleteArguments(value: StringList): Self = StObject.set(x, "DeleteArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteArgumentsUndefined: Self = StObject.set(x, "DeleteArguments", js.undefined)
+    inline def setDeleteArgumentsUndefined: Self = StObject.set(x, "DeleteArguments", js.undefined)
     
-    @scala.inline
-    def setDeleteArgumentsVarargs(value: GenericString*): Self = StObject.set(x, "DeleteArguments", js.Array(value :_*))
+    inline def setDeleteArgumentsVarargs(value: GenericString*): Self = StObject.set(x, "DeleteArguments", js.Array(value :_*))
     
-    @scala.inline
-    def setDeletePublicKeys(value: PublicKeysList): Self = StObject.set(x, "DeletePublicKeys", value.asInstanceOf[js.Any])
+    inline def setDeletePublicKeys(value: PublicKeysList): Self = StObject.set(x, "DeletePublicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePublicKeysUndefined: Self = StObject.set(x, "DeletePublicKeys", js.undefined)
+    inline def setDeletePublicKeysUndefined: Self = StObject.set(x, "DeletePublicKeys", js.undefined)
     
-    @scala.inline
-    def setDeletePublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "DeletePublicKeys", js.Array(value :_*))
+    inline def setDeletePublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "DeletePublicKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setEndpointName(value: GenericString): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: GenericString): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: GenericString): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: GenericString): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
     
-    @scala.inline
-    def setUpdateEtlLibraries(value: BooleanValue): Self = StObject.set(x, "UpdateEtlLibraries", value.asInstanceOf[js.Any])
+    inline def setUpdateEtlLibraries(value: BooleanValue): Self = StObject.set(x, "UpdateEtlLibraries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEtlLibrariesUndefined: Self = StObject.set(x, "UpdateEtlLibraries", js.undefined)
+    inline def setUpdateEtlLibrariesUndefined: Self = StObject.set(x, "UpdateEtlLibraries", js.undefined)
   }
 }

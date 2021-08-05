@@ -21,23 +21,18 @@ object mod extends Shortcut {
   }
   object AdvancedTask {
     
-    @scala.inline
-    def apply(src: String | js.Array[String], tpl: String): AdvancedTask = {
+    inline def apply(src: String | js.Array[String], tpl: String): AdvancedTask = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], tpl = tpl.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdvancedTask]
     }
     
-    @scala.inline
-    implicit class AdvancedTaskMutableBuilder[Self <: AdvancedTask] (val x: Self) extends AnyVal {
+    extension [Self <: AdvancedTask](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
       
-      @scala.inline
-      def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+      inline def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,32 +48,24 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setKeepBlockTags(value: Boolean): Self = StObject.set(x, "keepBlockTags", value.asInstanceOf[js.Any])
+      inline def setKeepBlockTags(value: Boolean): Self = StObject.set(x, "keepBlockTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepBlockTagsUndefined: Self = StObject.set(x, "keepBlockTags", js.undefined)
+      inline def setKeepBlockTagsUndefined: Self = StObject.set(x, "keepBlockTags", js.undefined)
       
-      @scala.inline
-      def setKeepUnassigned(value: Boolean): Self = StObject.set(x, "keepUnassigned", value.asInstanceOf[js.Any])
+      inline def setKeepUnassigned(value: Boolean): Self = StObject.set(x, "keepUnassigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepUnassignedUndefined: Self = StObject.set(x, "keepUnassigned", js.undefined)
+      inline def setKeepUnassignedUndefined: Self = StObject.set(x, "keepUnassigned", js.undefined)
       
-      @scala.inline
-      def setResolvePaths(value: Boolean): Self = StObject.set(x, "resolvePaths", value.asInstanceOf[js.Any])
+      inline def setResolvePaths(value: Boolean): Self = StObject.set(x, "resolvePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvePathsUndefined: Self = StObject.set(x, "resolvePaths", js.undefined)
+      inline def setResolvePathsUndefined: Self = StObject.set(x, "resolvePaths", js.undefined)
     }
   }
   

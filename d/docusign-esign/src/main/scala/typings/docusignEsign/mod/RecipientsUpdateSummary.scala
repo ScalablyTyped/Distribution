@@ -17,27 +17,22 @@ trait RecipientsUpdateSummary extends StObject {
 }
 object RecipientsUpdateSummary {
   
-  @scala.inline
-  def apply(): RecipientsUpdateSummary = {
+  inline def apply(): RecipientsUpdateSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientsUpdateSummary]
   }
   
-  @scala.inline
-  implicit class RecipientsUpdateSummaryMutableBuilder[Self <: RecipientsUpdateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientsUpdateSummary](x: Self) {
     
-    @scala.inline
-    def setRecipientUpdateResults(
+    inline def setRecipientUpdateResults(
       value: js.Array[
           /* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse
         ]
     ): Self = StObject.set(x, "recipientUpdateResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientUpdateResultsUndefined: Self = StObject.set(x, "recipientUpdateResults", js.undefined)
+    inline def setRecipientUpdateResultsUndefined: Self = StObject.set(x, "recipientUpdateResults", js.undefined)
     
-    @scala.inline
-    def setRecipientUpdateResultsVarargs(
+    inline def setRecipientUpdateResultsVarargs(
       value: (/* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse)*
     ): Self = StObject.set(x, "recipientUpdateResults", js.Array(value :_*))
   }

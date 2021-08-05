@@ -27,12 +27,10 @@ object geometryMod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromBuffer(buffer: Buffer): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[LineString]
+      inline def fromBuffer(buffer: Buffer): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[LineString]
       
       /* static member */
-      @scala.inline
-      def fromString(textValue: String): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[LineString]
+      inline def fromString(textValue: String): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[LineString]
     }
     
     @JSImport("cassandra-driver/lib/geometry", "geometry.Point")
@@ -53,12 +51,10 @@ object geometryMod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromBuffer(buffer: Buffer): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Point]
+      inline def fromBuffer(buffer: Buffer): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Point]
       
       /* static member */
-      @scala.inline
-      def fromString(textValue: String): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[Point]
+      inline def fromString(textValue: String): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[Point]
     }
     
     @JSImport("cassandra-driver/lib/geometry", "geometry.Polygon")
@@ -79,12 +75,10 @@ object geometryMod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromBuffer(buffer: Buffer): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+      inline def fromBuffer(buffer: Buffer): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Polygon]
       
       /* static member */
-      @scala.inline
-      def fromString(textValue: String): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+      inline def fromString(textValue: String): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[Polygon]
     }
   }
 }

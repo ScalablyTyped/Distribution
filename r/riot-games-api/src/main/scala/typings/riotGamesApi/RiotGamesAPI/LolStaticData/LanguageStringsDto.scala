@@ -15,26 +15,20 @@ trait LanguageStringsDto extends StObject {
 }
 object LanguageStringsDto {
   
-  @scala.inline
-  def apply(data: js.Array[StringDictionary[String]], `type`: String, version: String): LanguageStringsDto = {
+  inline def apply(data: js.Array[StringDictionary[String]], `type`: String, version: String): LanguageStringsDto = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageStringsDto]
   }
   
-  @scala.inline
-  implicit class LanguageStringsDtoMutableBuilder[Self <: LanguageStringsDto] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageStringsDto](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

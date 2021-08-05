@@ -14,8 +14,7 @@ trait StorageStreamTransaction
 }
 object StorageStreamTransaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     commitAsync: () => IAsyncAction,
     dispose: () => Unit,
@@ -25,10 +24,8 @@ object StorageStreamTransaction {
     __obj.asInstanceOf[StorageStreamTransaction]
   }
   
-  @scala.inline
-  implicit class StorageStreamTransactionMutableBuilder[Self <: StorageStreamTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: StorageStreamTransaction](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

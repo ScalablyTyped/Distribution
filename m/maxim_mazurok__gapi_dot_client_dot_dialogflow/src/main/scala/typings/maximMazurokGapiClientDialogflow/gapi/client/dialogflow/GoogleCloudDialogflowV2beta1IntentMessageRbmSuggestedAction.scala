@@ -30,43 +30,31 @@ trait GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends StObje
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction](x: Self) {
     
-    @scala.inline
-    def setDial(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial): Self = StObject.set(x, "dial", value.asInstanceOf[js.Any])
+    inline def setDial(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial): Self = StObject.set(x, "dial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialUndefined: Self = StObject.set(x, "dial", js.undefined)
+    inline def setDialUndefined: Self = StObject.set(x, "dial", js.undefined)
     
-    @scala.inline
-    def setOpenUrl(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri): Self = StObject.set(x, "openUrl", value.asInstanceOf[js.Any])
+    inline def setOpenUrl(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri): Self = StObject.set(x, "openUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUrlUndefined: Self = StObject.set(x, "openUrl", js.undefined)
+    inline def setOpenUrlUndefined: Self = StObject.set(x, "openUrl", js.undefined)
     
-    @scala.inline
-    def setPostbackData(value: String): Self = StObject.set(x, "postbackData", value.asInstanceOf[js.Any])
+    inline def setPostbackData(value: String): Self = StObject.set(x, "postbackData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostbackDataUndefined: Self = StObject.set(x, "postbackData", js.undefined)
+    inline def setPostbackDataUndefined: Self = StObject.set(x, "postbackData", js.undefined)
     
-    @scala.inline
-    def setShareLocation(value: js.Any): Self = StObject.set(x, "shareLocation", value.asInstanceOf[js.Any])
+    inline def setShareLocation(value: js.Any): Self = StObject.set(x, "shareLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareLocationUndefined: Self = StObject.set(x, "shareLocation", js.undefined)
+    inline def setShareLocationUndefined: Self = StObject.set(x, "shareLocation", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

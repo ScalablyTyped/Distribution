@@ -29,25 +29,19 @@ trait RangeSelectionArguments extends StObject {
 }
 object RangeSelectionArguments {
   
-  @scala.inline
-  def apply(CloseOnMouseRelease: Boolean, InitialValue: String, SingleCellMode: Boolean, Title: String): RangeSelectionArguments = {
+  inline def apply(CloseOnMouseRelease: Boolean, InitialValue: String, SingleCellMode: Boolean, Title: String): RangeSelectionArguments = {
     val __obj = js.Dynamic.literal(CloseOnMouseRelease = CloseOnMouseRelease.asInstanceOf[js.Any], InitialValue = InitialValue.asInstanceOf[js.Any], SingleCellMode = SingleCellMode.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectionArguments]
   }
   
-  @scala.inline
-  implicit class RangeSelectionArgumentsMutableBuilder[Self <: RangeSelectionArguments] (val x: Self) extends AnyVal {
+  extension [Self <: RangeSelectionArguments](x: Self) {
     
-    @scala.inline
-    def setCloseOnMouseRelease(value: Boolean): Self = StObject.set(x, "CloseOnMouseRelease", value.asInstanceOf[js.Any])
+    inline def setCloseOnMouseRelease(value: Boolean): Self = StObject.set(x, "CloseOnMouseRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValue(value: String): Self = StObject.set(x, "InitialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: String): Self = StObject.set(x, "InitialValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleCellMode(value: Boolean): Self = StObject.set(x, "SingleCellMode", value.asInstanceOf[js.Any])
+    inline def setSingleCellMode(value: Boolean): Self = StObject.set(x, "SingleCellMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

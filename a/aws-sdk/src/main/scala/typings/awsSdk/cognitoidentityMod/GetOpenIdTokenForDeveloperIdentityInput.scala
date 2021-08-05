@@ -28,31 +28,23 @@ trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
 }
 object GetOpenIdTokenForDeveloperIdentityInput {
   
-  @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId, Logins: LoginsMap): GetOpenIdTokenForDeveloperIdentityInput = {
+  inline def apply(IdentityPoolId: IdentityPoolId, Logins: LoginsMap): GetOpenIdTokenForDeveloperIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Logins = Logins.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityInput]
   }
   
-  @scala.inline
-  implicit class GetOpenIdTokenForDeveloperIdentityInputMutableBuilder[Self <: GetOpenIdTokenForDeveloperIdentityInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOpenIdTokenForDeveloperIdentityInput](x: Self) {
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenDuration(value: TokenDuration): Self = StObject.set(x, "TokenDuration", value.asInstanceOf[js.Any])
+    inline def setTokenDuration(value: TokenDuration): Self = StObject.set(x, "TokenDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenDurationUndefined: Self = StObject.set(x, "TokenDuration", js.undefined)
+    inline def setTokenDurationUndefined: Self = StObject.set(x, "TokenDuration", js.undefined)
   }
 }

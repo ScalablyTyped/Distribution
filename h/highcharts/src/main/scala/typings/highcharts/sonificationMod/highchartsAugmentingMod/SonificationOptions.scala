@@ -97,8 +97,7 @@ trait SonificationOptions extends StObject {
 }
 object SonificationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double,
     order: String | (js.Array[String | Earcon | (js.Array[String | Earcon])]),
     pointPlayTime: String | js.Function
@@ -107,76 +106,52 @@ object SonificationOptions {
     __obj.asInstanceOf[SonificationOptions]
   }
   
-  @scala.inline
-  implicit class SonificationOptionsMutableBuilder[Self <: SonificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SonificationOptions](x: Self) {
     
-    @scala.inline
-    def setAfterSeriesWait(value: Double): Self = StObject.set(x, "afterSeriesWait", value.asInstanceOf[js.Any])
+    inline def setAfterSeriesWait(value: Double): Self = StObject.set(x, "afterSeriesWait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterSeriesWaitUndefined: Self = StObject.set(x, "afterSeriesWait", js.undefined)
+    inline def setAfterSeriesWaitUndefined: Self = StObject.set(x, "afterSeriesWait", js.undefined)
     
-    @scala.inline
-    def setDataExtremes(value: Dictionary[RangeObject]): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
+    inline def setDataExtremes(value: Dictionary[RangeObject]): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
+    inline def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarcons(value: js.Array[EarconConfiguration]): Self = StObject.set(x, "earcons", value.asInstanceOf[js.Any])
+    inline def setEarcons(value: js.Array[EarconConfiguration]): Self = StObject.set(x, "earcons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarconsUndefined: Self = StObject.set(x, "earcons", js.undefined)
+    inline def setEarconsUndefined: Self = StObject.set(x, "earcons", js.undefined)
     
-    @scala.inline
-    def setEarconsVarargs(value: EarconConfiguration*): Self = StObject.set(x, "earcons", js.Array(value :_*))
+    inline def setEarconsVarargs(value: EarconConfiguration*): Self = StObject.set(x, "earcons", js.Array(value :_*))
     
-    @scala.inline
-    def setInstruments(value: js.Array[PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setInstruments(value: js.Array[PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstrumentsUndefined: Self = StObject.set(x, "instruments", js.undefined)
+    inline def setInstrumentsUndefined: Self = StObject.set(x, "instruments", js.undefined)
     
-    @scala.inline
-    def setInstrumentsVarargs(value: PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value :_*))
+    inline def setInstrumentsVarargs(value: PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value :_*))
     
-    @scala.inline
-    def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
-    @scala.inline
-    def setOnSeriesEnd(value: js.Function): Self = StObject.set(x, "onSeriesEnd", value.asInstanceOf[js.Any])
+    inline def setOnSeriesEnd(value: js.Function): Self = StObject.set(x, "onSeriesEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSeriesEndUndefined: Self = StObject.set(x, "onSeriesEnd", js.undefined)
+    inline def setOnSeriesEndUndefined: Self = StObject.set(x, "onSeriesEnd", js.undefined)
     
-    @scala.inline
-    def setOnSeriesStart(value: js.Function): Self = StObject.set(x, "onSeriesStart", value.asInstanceOf[js.Any])
+    inline def setOnSeriesStart(value: js.Function): Self = StObject.set(x, "onSeriesStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSeriesStartUndefined: Self = StObject.set(x, "onSeriesStart", js.undefined)
+    inline def setOnSeriesStartUndefined: Self = StObject.set(x, "onSeriesStart", js.undefined)
     
-    @scala.inline
-    def setOrder(value: String | (js.Array[String | Earcon | (js.Array[String | Earcon])])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String | (js.Array[String | Earcon | (js.Array[String | Earcon])])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderVarargs(value: (String | Earcon | (js.Array[String | Earcon]))*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: (String | Earcon | (js.Array[String | Earcon]))*): Self = StObject.set(x, "order", js.Array(value :_*))
     
-    @scala.inline
-    def setPointPlayTime(value: String | js.Function): Self = StObject.set(x, "pointPlayTime", value.asInstanceOf[js.Any])
+    inline def setPointPlayTime(value: String | js.Function): Self = StObject.set(x, "pointPlayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOptions(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesOptions(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
+    inline def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
     
-    @scala.inline
-    def setSeriesOptionsVarargs(value: js.Object*): Self = StObject.set(x, "seriesOptions", js.Array(value :_*))
+    inline def setSeriesOptionsVarargs(value: js.Object*): Self = StObject.set(x, "seriesOptions", js.Array(value :_*))
   }
 }

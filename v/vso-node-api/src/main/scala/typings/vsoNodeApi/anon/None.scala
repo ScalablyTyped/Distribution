@@ -10,16 +10,13 @@ trait None extends StObject {
 }
 object None {
   
-  @scala.inline
-  def apply(none: scala.Double): None = {
+  inline def apply(none: scala.Double): None = {
     val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[None]
   }
   
-  @scala.inline
-  implicit class NoneMutableBuilder[Self <: None] (val x: Self) extends AnyVal {
+  extension [Self <: None](x: Self) {
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

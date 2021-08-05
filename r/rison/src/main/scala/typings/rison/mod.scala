@@ -64,8 +64,7 @@ object mod extends Shortcut {
   }
   object IRison {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decode: String => js.Any,
       decode_array: String => js.Array[js.Any],
       decode_object: String => js.Any,
@@ -78,29 +77,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IRison]
     }
     
-    @scala.inline
-    implicit class IRisonMutableBuilder[Self <: IRison] (val x: Self) extends AnyVal {
+    extension [Self <: IRison](x: Self) {
       
-      @scala.inline
-      def setDecode(value: String => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: String => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecode_array(value: String => js.Array[js.Any]): Self = StObject.set(x, "decode_array", js.Any.fromFunction1(value))
+      inline def setDecode_array(value: String => js.Array[js.Any]): Self = StObject.set(x, "decode_array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecode_object(value: String => js.Any): Self = StObject.set(x, "decode_object", js.Any.fromFunction1(value))
+      inline def setDecode_object(value: String => js.Any): Self = StObject.set(x, "decode_object", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode(value: js.Any => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Any => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode_array(value: js.Array[js.Any] => String): Self = StObject.set(x, "encode_array", js.Any.fromFunction1(value))
+      inline def setEncode_array(value: js.Array[js.Any] => String): Self = StObject.set(x, "encode_array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode_object(value: js.Any => String): Self = StObject.set(x, "encode_object", js.Any.fromFunction1(value))
+      inline def setEncode_object(value: js.Any => String): Self = StObject.set(x, "encode_object", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode_uri(value: js.Any => String): Self = StObject.set(x, "encode_uri", js.Any.fromFunction1(value))
+      inline def setEncode_uri(value: js.Any => String): Self = StObject.set(x, "encode_uri", js.Any.fromFunction1(value))
     }
   }
   

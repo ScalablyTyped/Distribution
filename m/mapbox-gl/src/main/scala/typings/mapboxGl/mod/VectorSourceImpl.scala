@@ -27,20 +27,16 @@ trait VectorSourceImpl
 }
 object VectorSourceImpl {
   
-  @scala.inline
-  def apply(setTiles: js.Array[String] => VectorSourceImpl, setUrl: String => VectorSourceImpl): VectorSourceImpl = {
+  inline def apply(setTiles: js.Array[String] => VectorSourceImpl, setUrl: String => VectorSourceImpl): VectorSourceImpl = {
     val __obj = js.Dynamic.literal(setTiles = js.Any.fromFunction1(setTiles), setUrl = js.Any.fromFunction1(setUrl))
     __obj.updateDynamic("type")("vector")
     __obj.asInstanceOf[VectorSourceImpl]
   }
   
-  @scala.inline
-  implicit class VectorSourceImplMutableBuilder[Self <: VectorSourceImpl] (val x: Self) extends AnyVal {
+  extension [Self <: VectorSourceImpl](x: Self) {
     
-    @scala.inline
-    def setSetTiles(value: js.Array[String] => VectorSourceImpl): Self = StObject.set(x, "setTiles", js.Any.fromFunction1(value))
+    inline def setSetTiles(value: js.Array[String] => VectorSourceImpl): Self = StObject.set(x, "setTiles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrl(value: String => VectorSourceImpl): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: String => VectorSourceImpl): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
   }
 }

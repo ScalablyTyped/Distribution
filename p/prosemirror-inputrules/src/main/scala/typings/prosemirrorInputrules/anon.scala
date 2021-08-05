@@ -14,20 +14,16 @@ object anon {
   }
   object Rules {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](rules: js.Array[InputRule[S]]): Rules[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](rules: js.Array[InputRule[S]]): Rules[S] = {
       val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rules[S]]
     }
     
-    @scala.inline
-    implicit class RulesMutableBuilder[Self <: Rules[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & Rules[S]) extends AnyVal {
+    extension [Self <: Rules[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Rules[S]) {
       
-      @scala.inline
-      def setRules(value: js.Array[InputRule[S]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[InputRule[S]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: InputRule[S]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: InputRule[S]*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
 }

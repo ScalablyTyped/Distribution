@@ -19,16 +19,12 @@ object ModelDependent {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CORBA: `4` = 4.asInstanceOf[`4`]
+    inline def CORBA: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def JAVA: `3` = 3.asInstanceOf[`3`]
+    inline def JAVA: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def OLE: `2` = 2.asInstanceOf[`2`]
+    inline def OLE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def UNO: `1` = 1.asInstanceOf[`1`]
+    inline def UNO: `1` = 1.asInstanceOf[`1`]
   }
 }

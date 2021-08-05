@@ -27,8 +27,7 @@ object progressIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/progress/index.native", "default.defaultProps")
     @js.native
     def defaultProps: AppearTransition = js.native
-    @scala.inline
-    def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -64,44 +63,32 @@ object progressIndexNativeMod {
   }
   object ProgressProps {
     
-    @scala.inline
-    def apply(): ProgressProps = {
+    inline def apply(): ProgressProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressProps]
     }
     
-    @scala.inline
-    implicit class ProgressPropsMutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressProps](x: Self) {
       
-      @scala.inline
-      def setBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+      inline def setBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarStyleNull: Self = StObject.set(x, "barStyle", null)
+      inline def setBarStyleNull: Self = StObject.set(x, "barStyle", null)
       
-      @scala.inline
-      def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+      inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setWrapWidth(value: Double): Self = StObject.set(x, "wrapWidth", value.asInstanceOf[js.Any])
+      inline def setWrapWidth(value: Double): Self = StObject.set(x, "wrapWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapWidthUndefined: Self = StObject.set(x, "wrapWidth", js.undefined)
+      inline def setWrapWidthUndefined: Self = StObject.set(x, "wrapWidth", js.undefined)
     }
   }
 }

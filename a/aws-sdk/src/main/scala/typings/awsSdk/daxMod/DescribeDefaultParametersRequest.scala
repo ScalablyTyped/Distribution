@@ -18,25 +18,19 @@ trait DescribeDefaultParametersRequest extends StObject {
 }
 object DescribeDefaultParametersRequest {
   
-  @scala.inline
-  def apply(): DescribeDefaultParametersRequest = {
+  inline def apply(): DescribeDefaultParametersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDefaultParametersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDefaultParametersRequestMutableBuilder[Self <: DescribeDefaultParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDefaultParametersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

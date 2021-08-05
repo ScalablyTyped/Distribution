@@ -18,12 +18,12 @@ object logMod {
   class Logger protected () extends StObject {
     def this(stream: WritableStream) = this()
     
-    var _doLog: js.Any = js.native
+    /* private */ var _doLog: js.Any = js.native
     
     def debug(fields: Null, message: String): Unit = js.native
     def debug(fields: Fields, message: String): Unit = js.native
     
-    var doLog: js.Any = js.native
+    /* private */ var doLog: js.Any = js.native
     
     def error(): Unit = js.native
     def error(messageOrFields: String): Unit = js.native
@@ -47,7 +47,7 @@ object logMod {
     
     def messageTransformer(message: String, level: LogLevel): String = js.native
     
-    val stream: WritableStream = js.native
+    /* protected */ val stream: WritableStream = js.native
     
     def warn(): Unit = js.native
     def warn(messageOrFields: String): Unit = js.native
@@ -63,20 +63,16 @@ object logMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createMessage(message: String, fields: Null, level: LogLevel, color: js.Function1[/* it */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def createMessage(
+    inline def createMessage(message: String, fields: Null, level: LogLevel, color: js.Function1[/* it */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def createMessage(
       message: String,
       fields: Null,
       level: LogLevel,
       color: js.Function1[/* it */ String, String],
       messagePadding: Double
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any], messagePadding.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def createMessage(message: String, fields: Fields, level: LogLevel, color: js.Function1[/* it */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def createMessage(
+    inline def createMessage(message: String, fields: Fields, level: LogLevel, color: js.Function1[/* it */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def createMessage(
       message: String,
       fields: Fields,
       level: LogLevel,
@@ -97,10 +93,8 @@ object logMod {
   @js.native
   val log: Logger = js.native
   
-  @scala.inline
-  def setPrinter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")().asInstanceOf[Unit]
-  @scala.inline
-  def setPrinter(value: js.Function1[/* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPrinter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")().asInstanceOf[Unit]
+  inline def setPrinter(value: js.Function1[/* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Fields = StringDictionary[js.Any]
   
@@ -114,19 +108,14 @@ object logMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def debug: typings.builderUtil.builderUtilStrings.debug = "debug".asInstanceOf[typings.builderUtil.builderUtilStrings.debug]
+    inline def debug: typings.builderUtil.builderUtilStrings.debug = "debug".asInstanceOf[typings.builderUtil.builderUtilStrings.debug]
     
-    @scala.inline
-    def error: typings.builderUtil.builderUtilStrings.error = "error".asInstanceOf[typings.builderUtil.builderUtilStrings.error]
+    inline def error: typings.builderUtil.builderUtilStrings.error = "error".asInstanceOf[typings.builderUtil.builderUtilStrings.error]
     
-    @scala.inline
-    def info: typings.builderUtil.builderUtilStrings.info = "info".asInstanceOf[typings.builderUtil.builderUtilStrings.info]
+    inline def info: typings.builderUtil.builderUtilStrings.info = "info".asInstanceOf[typings.builderUtil.builderUtilStrings.info]
     
-    @scala.inline
-    def notice: typings.builderUtil.builderUtilStrings.notice = "notice".asInstanceOf[typings.builderUtil.builderUtilStrings.notice]
+    inline def notice: typings.builderUtil.builderUtilStrings.notice = "notice".asInstanceOf[typings.builderUtil.builderUtilStrings.notice]
     
-    @scala.inline
-    def warn: typings.builderUtil.builderUtilStrings.warn = "warn".asInstanceOf[typings.builderUtil.builderUtilStrings.warn]
+    inline def warn: typings.builderUtil.builderUtilStrings.warn = "warn".asInstanceOf[typings.builderUtil.builderUtilStrings.warn]
   }
 }

@@ -18,26 +18,20 @@ trait Update
 }
 object Update {
   
-  @scala.inline
-  def apply(prefixes: StringDictionary[String], updates: js.Array[UpdateOperation]): Update = {
+  inline def apply(prefixes: StringDictionary[String], updates: js.Array[UpdateOperation]): Update = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], updates = updates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[Update]
   }
   
-  @scala.inline
-  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+  extension [Self <: Update](x: Self) {
     
-    @scala.inline
-    def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    inline def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdates(value: js.Array[UpdateOperation]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: js.Array[UpdateOperation]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesVarargs(value: UpdateOperation*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: UpdateOperation*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

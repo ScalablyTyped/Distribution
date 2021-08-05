@@ -34,31 +34,23 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testCommand extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testCommand {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testCommand = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testCommand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testCommand]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testCommandMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testCommand](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentVariables(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVariablesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
+    inline def setEnvironmentVariablesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testCommandEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
   }
 }

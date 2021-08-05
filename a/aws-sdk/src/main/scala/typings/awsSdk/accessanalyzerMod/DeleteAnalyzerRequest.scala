@@ -18,22 +18,17 @@ trait DeleteAnalyzerRequest extends StObject {
 }
 object DeleteAnalyzerRequest {
   
-  @scala.inline
-  def apply(analyzerName: Name): DeleteAnalyzerRequest = {
+  inline def apply(analyzerName: Name): DeleteAnalyzerRequest = {
     val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAnalyzerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAnalyzerRequestMutableBuilder[Self <: DeleteAnalyzerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAnalyzerRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
+    inline def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

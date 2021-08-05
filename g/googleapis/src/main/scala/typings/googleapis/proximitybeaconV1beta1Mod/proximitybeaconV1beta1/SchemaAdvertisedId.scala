@@ -25,25 +25,19 @@ trait SchemaAdvertisedId extends StObject {
 }
 object SchemaAdvertisedId {
   
-  @scala.inline
-  def apply(): SchemaAdvertisedId = {
+  inline def apply(): SchemaAdvertisedId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAdvertisedId]
   }
   
-  @scala.inline
-  implicit class SchemaAdvertisedIdMutableBuilder[Self <: SchemaAdvertisedId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAdvertisedId](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

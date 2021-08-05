@@ -11,22 +11,17 @@ trait VideoProjectDetails extends StObject {
 }
 object VideoProjectDetails {
   
-  @scala.inline
-  def apply(): VideoProjectDetails = {
+  inline def apply(): VideoProjectDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoProjectDetails]
   }
   
-  @scala.inline
-  implicit class VideoProjectDetailsMutableBuilder[Self <: VideoProjectDetails] (val x: Self) extends AnyVal {
+  extension [Self <: VideoProjectDetails](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

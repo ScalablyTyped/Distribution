@@ -56,21 +56,16 @@ object documentationPartMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DocumentationPartState): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DocumentationPartState, opts: CustomResourceOptions): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
+    inline def get(name: String, id: Input[ID]): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
+    inline def get(name: String, id: Input[ID], state: DocumentationPartState): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
+    inline def get(name: String, id: Input[ID], state: DocumentationPartState, opts: CustomResourceOptions): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
     
     /**
       * Returns true if the given object is an instance of DocumentationPart.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ Boolean]
   }
   
   trait DocumentationPartArgs extends StObject {
@@ -92,8 +87,7 @@ object documentationPartMod {
   }
   object DocumentationPartArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       location: Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation],
       properties: Input[String],
       restApiId: Input[String]
@@ -102,17 +96,13 @@ object documentationPartMod {
       __obj.asInstanceOf[DocumentationPartArgs]
     }
     
-    @scala.inline
-    implicit class DocumentationPartArgsMutableBuilder[Self <: DocumentationPartArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentationPartArgs](x: Self) {
       
-      @scala.inline
-      def setLocation(value: Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: Input[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Input[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+      inline def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,32 +125,24 @@ object documentationPartMod {
   }
   object DocumentationPartState {
     
-    @scala.inline
-    def apply(): DocumentationPartState = {
+    inline def apply(): DocumentationPartState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentationPartState]
     }
     
-    @scala.inline
-    implicit class DocumentationPartStateMutableBuilder[Self <: DocumentationPartState] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentationPartState](x: Self) {
       
-      @scala.inline
-      def setLocation(value: Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setProperties(value: Input[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Input[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+      inline def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
+      inline def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
     }
   }
 }

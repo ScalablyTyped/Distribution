@@ -58,82 +58,57 @@ trait InstanceRecommendation extends StObject {
 }
 object InstanceRecommendation {
   
-  @scala.inline
-  def apply(): InstanceRecommendation = {
+  inline def apply(): InstanceRecommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceRecommendation]
   }
   
-  @scala.inline
-  implicit class InstanceRecommendationMutableBuilder[Self <: InstanceRecommendation] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceRecommendation](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setCurrentInstanceType(value: CurrentInstanceType): Self = StObject.set(x, "currentInstanceType", value.asInstanceOf[js.Any])
+    inline def setCurrentInstanceType(value: CurrentInstanceType): Self = StObject.set(x, "currentInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentInstanceTypeUndefined: Self = StObject.set(x, "currentInstanceType", js.undefined)
+    inline def setCurrentInstanceTypeUndefined: Self = StObject.set(x, "currentInstanceType", js.undefined)
     
-    @scala.inline
-    def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
+    inline def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    @scala.inline
-    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = StObject.set(x, "lastRefreshTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = StObject.set(x, "lastRefreshTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshTimestampUndefined: Self = StObject.set(x, "lastRefreshTimestamp", js.undefined)
+    inline def setLastRefreshTimestampUndefined: Self = StObject.set(x, "lastRefreshTimestamp", js.undefined)
     
-    @scala.inline
-    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = StObject.set(x, "lookBackPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = StObject.set(x, "lookBackPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookBackPeriodInDaysUndefined: Self = StObject.set(x, "lookBackPeriodInDays", js.undefined)
+    inline def setLookBackPeriodInDaysUndefined: Self = StObject.set(x, "lookBackPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setRecommendationOptions(value: RecommendationOptions): Self = StObject.set(x, "recommendationOptions", value.asInstanceOf[js.Any])
+    inline def setRecommendationOptions(value: RecommendationOptions): Self = StObject.set(x, "recommendationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationOptionsUndefined: Self = StObject.set(x, "recommendationOptions", js.undefined)
+    inline def setRecommendationOptionsUndefined: Self = StObject.set(x, "recommendationOptions", js.undefined)
     
-    @scala.inline
-    def setRecommendationOptionsVarargs(value: InstanceRecommendationOption*): Self = StObject.set(x, "recommendationOptions", js.Array(value :_*))
+    inline def setRecommendationOptionsVarargs(value: InstanceRecommendationOption*): Self = StObject.set(x, "recommendationOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setRecommendationSources(value: RecommendationSources): Self = StObject.set(x, "recommendationSources", value.asInstanceOf[js.Any])
+    inline def setRecommendationSources(value: RecommendationSources): Self = StObject.set(x, "recommendationSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationSourcesUndefined: Self = StObject.set(x, "recommendationSources", js.undefined)
+    inline def setRecommendationSourcesUndefined: Self = StObject.set(x, "recommendationSources", js.undefined)
     
-    @scala.inline
-    def setRecommendationSourcesVarargs(value: RecommendationSource*): Self = StObject.set(x, "recommendationSources", js.Array(value :_*))
+    inline def setRecommendationSourcesVarargs(value: RecommendationSource*): Self = StObject.set(x, "recommendationSources", js.Array(value :_*))
     
-    @scala.inline
-    def setUtilizationMetrics(value: UtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
+    inline def setUtilizationMetrics(value: UtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationMetricsUndefined: Self = StObject.set(x, "utilizationMetrics", js.undefined)
+    inline def setUtilizationMetricsUndefined: Self = StObject.set(x, "utilizationMetrics", js.undefined)
     
-    @scala.inline
-    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "utilizationMetrics", js.Array(value :_*))
+    inline def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "utilizationMetrics", js.Array(value :_*))
   }
 }

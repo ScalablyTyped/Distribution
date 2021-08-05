@@ -13,16 +13,13 @@ trait DescribePipelineRequest extends StObject {
 }
 object DescribePipelineRequest {
   
-  @scala.inline
-  def apply(pipelineName: PipelineName): DescribePipelineRequest = {
+  inline def apply(pipelineName: PipelineName): DescribePipelineRequest = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePipelineRequest]
   }
   
-  @scala.inline
-  implicit class DescribePipelineRequestMutableBuilder[Self <: DescribePipelineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePipelineRequest](x: Self) {
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
   }
 }

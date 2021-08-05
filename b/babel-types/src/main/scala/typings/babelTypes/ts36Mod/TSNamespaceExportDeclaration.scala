@@ -20,13 +20,10 @@ object TSNamespaceExportDeclaration {
   @js.native
   def apply(id: Identifier_): TSNamespaceExportDeclaration = js.native
   
-  @scala.inline
-  implicit class TSNamespaceExportDeclarationMutableBuilder[Self <: TSNamespaceExportDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: TSNamespaceExportDeclaration](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSNamespaceExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSNamespaceExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

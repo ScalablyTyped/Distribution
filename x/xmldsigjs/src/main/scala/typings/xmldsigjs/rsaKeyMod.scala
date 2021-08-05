@@ -45,8 +45,7 @@ object rsaKeyMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FromAlgorithm(algorithm: RsaPSSSignParams): PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[PssAlgorithmParams]
+    inline def FromAlgorithm(algorithm: RsaPSSSignParams): PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[PssAlgorithmParams]
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/rsa_key", "RsaKeyValue")
@@ -64,11 +63,11 @@ object rsaKeyMod {
       */
     var Modulus: Uint8Array | Null = js.native
     
-    var jwk: JsonWebKey | Null = js.native
+    /* protected */ var jwk: JsonWebKey | Null = js.native
     
-    var key: CryptoKey | Null = js.native
+    /* protected */ var key: CryptoKey | Null = js.native
     
-    var keyUsage: js.Array[String] = js.native
+    /* protected */ var keyUsage: js.Array[String] = js.native
   }
   
   trait IJwkRsa extends StObject {
@@ -85,29 +84,22 @@ object rsaKeyMod {
   }
   object IJwkRsa {
     
-    @scala.inline
-    def apply(alg: String, e: String, ext: Boolean, kty: String, n: String): IJwkRsa = {
+    inline def apply(alg: String, e: String, ext: Boolean, kty: String, n: String): IJwkRsa = {
       val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
       __obj.asInstanceOf[IJwkRsa]
     }
     
-    @scala.inline
-    implicit class IJwkRsaMutableBuilder[Self <: IJwkRsa] (val x: Self) extends AnyVal {
+    extension [Self <: IJwkRsa](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: Boolean): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: Boolean): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+      inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,17 +111,14 @@ object rsaKeyMod {
   }
   object RsaPSSSignParams {
     
-    @scala.inline
-    def apply(hash: AlgorithmIdentifier, name: String, saltLength: Double): RsaPSSSignParams = {
+    inline def apply(hash: AlgorithmIdentifier, name: String, saltLength: Double): RsaPSSSignParams = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], saltLength = saltLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[RsaPSSSignParams]
     }
     
-    @scala.inline
-    implicit class RsaPSSSignParamsMutableBuilder[Self <: RsaPSSSignParams] (val x: Self) extends AnyVal {
+    extension [Self <: RsaPSSSignParams](x: Self) {
       
-      @scala.inline
-      def setHash(value: AlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: AlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
   }
 }

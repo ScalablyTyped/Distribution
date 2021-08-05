@@ -23,31 +23,23 @@ trait DescribeStackResourcesInput extends StObject {
 }
 object DescribeStackResourcesInput {
   
-  @scala.inline
-  def apply(): DescribeStackResourcesInput = {
+  inline def apply(): DescribeStackResourcesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStackResourcesInput]
   }
   
-  @scala.inline
-  implicit class DescribeStackResourcesInputMutableBuilder[Self <: DescribeStackResourcesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackResourcesInput](x: Self) {
     
-    @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
+    inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalResourceIdUndefined: Self = StObject.set(x, "LogicalResourceId", js.undefined)
+    inline def setLogicalResourceIdUndefined: Self = StObject.set(x, "LogicalResourceId", js.undefined)
     
-    @scala.inline
-    def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
+    inline def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalResourceIdUndefined: Self = StObject.set(x, "PhysicalResourceId", js.undefined)
+    inline def setPhysicalResourceIdUndefined: Self = StObject.set(x, "PhysicalResourceId", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
   }
 }

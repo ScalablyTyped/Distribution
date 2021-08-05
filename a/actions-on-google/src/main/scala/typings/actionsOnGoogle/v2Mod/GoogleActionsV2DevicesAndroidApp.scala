@@ -19,28 +19,21 @@ trait GoogleActionsV2DevicesAndroidApp extends StObject {
 }
 object GoogleActionsV2DevicesAndroidApp {
   
-  @scala.inline
-  def apply(): GoogleActionsV2DevicesAndroidApp = {
+  inline def apply(): GoogleActionsV2DevicesAndroidApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2DevicesAndroidApp]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DevicesAndroidAppMutableBuilder[Self <: GoogleActionsV2DevicesAndroidApp] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2DevicesAndroidApp](x: Self) {
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setVersions(value: js.Array[GoogleActionsV2DevicesAndroidAppVersionFilter]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[GoogleActionsV2DevicesAndroidAppVersionFilter]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: GoogleActionsV2DevicesAndroidAppVersionFilter*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: GoogleActionsV2DevicesAndroidAppVersionFilter*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

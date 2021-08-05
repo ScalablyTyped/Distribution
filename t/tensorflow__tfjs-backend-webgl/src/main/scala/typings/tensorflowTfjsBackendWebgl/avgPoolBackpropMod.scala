@@ -13,8 +13,7 @@ object avgPoolBackpropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avgPoolBackprop(args: Backend): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def avgPoolBackprop(args: Backend): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/AvgPoolBackprop", "avgPoolBackpropConfig")
   @js.native

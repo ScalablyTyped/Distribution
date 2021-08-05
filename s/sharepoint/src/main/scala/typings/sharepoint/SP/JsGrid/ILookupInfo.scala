@@ -12,19 +12,15 @@ trait ILookupInfo extends StObject {
 }
 object ILookupInfo {
   
-  @scala.inline
-  def apply(localString: String, value: Double): ILookupInfo = {
+  inline def apply(localString: String, value: Double): ILookupInfo = {
     val __obj = js.Dynamic.literal(localString = localString.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILookupInfo]
   }
   
-  @scala.inline
-  implicit class ILookupInfoMutableBuilder[Self <: ILookupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ILookupInfo](x: Self) {
     
-    @scala.inline
-    def setLocalString(value: String): Self = StObject.set(x, "localString", value.asInstanceOf[js.Any])
+    inline def setLocalString(value: String): Self = StObject.set(x, "localString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

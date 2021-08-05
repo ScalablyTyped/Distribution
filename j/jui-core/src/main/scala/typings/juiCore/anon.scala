@@ -19,23 +19,18 @@ object anon {
   }
   object Mozilla {
     
-    @scala.inline
-    def apply(mozilla: Boolean, msie: Boolean, webkit: Boolean): Mozilla = {
+    inline def apply(mozilla: Boolean, msie: Boolean, webkit: Boolean): Mozilla = {
       val __obj = js.Dynamic.literal(mozilla = mozilla.asInstanceOf[js.Any], msie = msie.asInstanceOf[js.Any], webkit = webkit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mozilla]
     }
     
-    @scala.inline
-    implicit class MozillaMutableBuilder[Self <: Mozilla] (val x: Self) extends AnyVal {
+    extension [Self <: Mozilla](x: Self) {
       
-      @scala.inline
-      def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
+      inline def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
+      inline def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
+      inline def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
     }
   }
 }

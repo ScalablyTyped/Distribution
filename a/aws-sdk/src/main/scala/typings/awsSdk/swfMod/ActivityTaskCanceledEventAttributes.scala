@@ -28,31 +28,23 @@ trait ActivityTaskCanceledEventAttributes extends StObject {
 }
 object ActivityTaskCanceledEventAttributes {
   
-  @scala.inline
-  def apply(scheduledEventId: EventId, startedEventId: EventId): ActivityTaskCanceledEventAttributes = {
+  inline def apply(scheduledEventId: EventId, startedEventId: EventId): ActivityTaskCanceledEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskCanceledEventAttributes]
   }
   
-  @scala.inline
-  implicit class ActivityTaskCanceledEventAttributesMutableBuilder[Self <: ActivityTaskCanceledEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTaskCanceledEventAttributes](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setLatestCancelRequestedEventId(value: EventId): Self = StObject.set(x, "latestCancelRequestedEventId", value.asInstanceOf[js.Any])
+    inline def setLatestCancelRequestedEventId(value: EventId): Self = StObject.set(x, "latestCancelRequestedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestCancelRequestedEventIdUndefined: Self = StObject.set(x, "latestCancelRequestedEventId", js.undefined)
+    inline def setLatestCancelRequestedEventIdUndefined: Self = StObject.set(x, "latestCancelRequestedEventId", js.undefined)
     
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
+    inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
+    inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
   }
 }

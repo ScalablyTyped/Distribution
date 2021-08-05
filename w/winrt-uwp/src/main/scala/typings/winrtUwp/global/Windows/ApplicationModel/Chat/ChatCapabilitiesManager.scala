@@ -23,8 +23,7 @@ object ChatCapabilitiesManager {
     * @return The locally cached RCS chat capabilities.
     */
   /* static member */
-  @scala.inline
-  def getCachedCapabilitiesAsync(address: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCachedCapabilitiesAsync")(address.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities]]
+  inline def getCachedCapabilitiesAsync(address: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCachedCapabilitiesAsync")(address.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities]]
   
   /**
     * Asynchronously gets the Rich Communication Services (RCS) chat capabilities for the specified phone number from the service provider.
@@ -32,6 +31,5 @@ object ChatCapabilitiesManager {
     * @return The RCS chat capabilities from the service provider.
     */
   /* static member */
-  @scala.inline
-  def getCapabilitiesFromNetworkAsync(address: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapabilitiesFromNetworkAsync")(address.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities]]
+  inline def getCapabilitiesFromNetworkAsync(address: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapabilitiesFromNetworkAsync")(address.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatCapabilities]]
 }

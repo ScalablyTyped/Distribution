@@ -26,23 +26,18 @@ object typesDescribeEndpointsOutputMod {
   }
   object DescribeEndpointsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, Endpoints: js.Array[UnmarshalledEndpoint]): DescribeEndpointsOutput = {
+    inline def apply($metadata: ResponseMetadata, Endpoints: js.Array[UnmarshalledEndpoint]): DescribeEndpointsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Endpoints = Endpoints.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeEndpointsOutput]
     }
     
-    @scala.inline
-    implicit class DescribeEndpointsOutputMutableBuilder[Self <: DescribeEndpointsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeEndpointsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoints(value: js.Array[UnmarshalledEndpoint]): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: js.Array[UnmarshalledEndpoint]): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: UnmarshalledEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: UnmarshalledEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     }
   }
 }

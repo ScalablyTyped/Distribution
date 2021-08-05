@@ -44,37 +44,27 @@ trait IMouseConstraintDefinition extends StObject {
 }
 object IMouseConstraintDefinition {
   
-  @scala.inline
-  def apply(): IMouseConstraintDefinition = {
+  inline def apply(): IMouseConstraintDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMouseConstraintDefinition]
   }
   
-  @scala.inline
-  implicit class IMouseConstraintDefinitionMutableBuilder[Self <: IMouseConstraintDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IMouseConstraintDefinition](x: Self) {
     
-    @scala.inline
-    def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCollisionFilter(value: ICollisionFilter): Self = StObject.set(x, "collisionFilter", value.asInstanceOf[js.Any])
+    inline def setCollisionFilter(value: ICollisionFilter): Self = StObject.set(x, "collisionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollisionFilterUndefined: Self = StObject.set(x, "collisionFilter", js.undefined)
+    inline def setCollisionFilterUndefined: Self = StObject.set(x, "collisionFilter", js.undefined)
     
-    @scala.inline
-    def setConstraint(value: ConstraintType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: ConstraintType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

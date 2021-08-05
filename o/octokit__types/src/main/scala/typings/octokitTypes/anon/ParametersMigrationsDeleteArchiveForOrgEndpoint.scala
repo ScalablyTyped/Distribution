@@ -17,8 +17,7 @@ trait ParametersMigrationsDeleteArchiveForOrgEndpoint extends StObject {
 }
 object ParametersMigrationsDeleteArchiveForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsDeleteArchiveForOrgEndpoint,
     request: MigrationsDeleteArchiveForOrgRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersMigrationsDeleteArchiveForOrgEndpoint {
     __obj.asInstanceOf[ParametersMigrationsDeleteArchiveForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsDeleteArchiveForOrgEndpointMutableBuilder[Self <: ParametersMigrationsDeleteArchiveForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsDeleteArchiveForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsDeleteArchiveForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsDeleteArchiveForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsDeleteArchiveForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsDeleteArchiveForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

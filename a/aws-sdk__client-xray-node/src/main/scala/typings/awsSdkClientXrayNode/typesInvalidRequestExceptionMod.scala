@@ -42,17 +42,14 @@ object typesInvalidRequestExceptionMod {
   }
   object InvalidRequestException {
     
-    @scala.inline
-    def apply(): InvalidRequestException = {
+    inline def apply(): InvalidRequestException = {
       val __obj = js.Dynamic.literal(name = "InvalidRequestException")
       __obj.asInstanceOf[InvalidRequestException]
     }
     
-    @scala.inline
-    implicit class InvalidRequestExceptionMutableBuilder[Self <: InvalidRequestException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRequestException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.InvalidRequestException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.InvalidRequestException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,20 +62,16 @@ object typesInvalidRequestExceptionMod {
   }
   object InvalidRequestExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidRequestExceptionDetails = {
+    inline def apply(): InvalidRequestExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidRequestExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidRequestExceptionDetailsMutableBuilder[Self <: InvalidRequestExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRequestExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     }
   }
 }

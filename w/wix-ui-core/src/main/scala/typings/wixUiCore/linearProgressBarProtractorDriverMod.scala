@@ -34,8 +34,7 @@ object linearProgressBarProtractorDriverMod {
   }
   object LinearProgressBarDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: () => ElementFinder,
       exists: () => js.Promise[Boolean],
       getBackgroundBarWidth: () => js.Promise[Double],
@@ -47,23 +46,17 @@ object linearProgressBarProtractorDriverMod {
       __obj.asInstanceOf[LinearProgressBarDriver]
     }
     
-    @scala.inline
-    implicit class LinearProgressBarDriverMutableBuilder[Self <: LinearProgressBarDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LinearProgressBarDriver](x: Self) {
       
-      @scala.inline
-      def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBackgroundBarWidth(value: () => js.Promise[Double]): Self = StObject.set(x, "getBackgroundBarWidth", js.Any.fromFunction0(value))
+      inline def setGetBackgroundBarWidth(value: () => js.Promise[Double]): Self = StObject.set(x, "getBackgroundBarWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetForegroundBarWidth(value: () => js.Promise[Double]): Self = StObject.set(x, "getForegroundBarWidth", js.Any.fromFunction0(value))
+      inline def setGetForegroundBarWidth(value: () => js.Promise[Double]): Self = StObject.set(x, "getForegroundBarWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsProgressIndicationDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isProgressIndicationDisplayed", js.Any.fromFunction0(value))
+      inline def setIsProgressIndicationDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isProgressIndicationDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProgressIndicationValue(value: () => js.Promise[String]): Self = StObject.set(x, "progressIndicationValue", js.Any.fromFunction0(value))
+      inline def setProgressIndicationValue(value: () => js.Promise[String]): Self = StObject.set(x, "progressIndicationValue", js.Any.fromFunction0(value))
     }
   }
 }

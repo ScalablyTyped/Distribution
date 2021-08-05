@@ -19,25 +19,19 @@ trait ClaimDevicesByClaimCodeResponse extends StObject {
 }
 object ClaimDevicesByClaimCodeResponse {
   
-  @scala.inline
-  def apply(): ClaimDevicesByClaimCodeResponse = {
+  inline def apply(): ClaimDevicesByClaimCodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClaimDevicesByClaimCodeResponse]
   }
   
-  @scala.inline
-  implicit class ClaimDevicesByClaimCodeResponseMutableBuilder[Self <: ClaimDevicesByClaimCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimDevicesByClaimCodeResponse](x: Self) {
     
-    @scala.inline
-    def setClaimCode(value: stringMin12Max40): Self = StObject.set(x, "ClaimCode", value.asInstanceOf[js.Any])
+    inline def setClaimCode(value: stringMin12Max40): Self = StObject.set(x, "ClaimCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimCodeUndefined: Self = StObject.set(x, "ClaimCode", js.undefined)
+    inline def setClaimCodeUndefined: Self = StObject.set(x, "ClaimCode", js.undefined)
     
-    @scala.inline
-    def setTotal(value: integer): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: integer): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait SchemaTableColumnProperties extends StObject {
 }
 object SchemaTableColumnProperties {
   
-  @scala.inline
-  def apply(): SchemaTableColumnProperties = {
+  inline def apply(): SchemaTableColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableColumnProperties]
   }
   
-  @scala.inline
-  implicit class SchemaTableColumnPropertiesMutableBuilder[Self <: SchemaTableColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableColumnProperties](x: Self) {
     
-    @scala.inline
-    def setColumnWidth(value: SchemaDimension): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: SchemaDimension): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
   }
 }

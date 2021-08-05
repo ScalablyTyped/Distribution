@@ -18,22 +18,17 @@ trait CreateDirectConnectGatewayRequest extends StObject {
 }
 object CreateDirectConnectGatewayRequest {
   
-  @scala.inline
-  def apply(directConnectGatewayName: DirectConnectGatewayName): CreateDirectConnectGatewayRequest = {
+  inline def apply(directConnectGatewayName: DirectConnectGatewayName): CreateDirectConnectGatewayRequest = {
     val __obj = js.Dynamic.literal(directConnectGatewayName = directConnectGatewayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDirectConnectGatewayRequest]
   }
   
-  @scala.inline
-  implicit class CreateDirectConnectGatewayRequestMutableBuilder[Self <: CreateDirectConnectGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDirectConnectGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setAmazonSideAsn(value: LongAsn): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
+    inline def setAmazonSideAsn(value: LongAsn): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmazonSideAsnUndefined: Self = StObject.set(x, "amazonSideAsn", js.undefined)
+    inline def setAmazonSideAsnUndefined: Self = StObject.set(x, "amazonSideAsn", js.undefined)
     
-    @scala.inline
-    def setDirectConnectGatewayName(value: DirectConnectGatewayName): Self = StObject.set(x, "directConnectGatewayName", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayName(value: DirectConnectGatewayName): Self = StObject.set(x, "directConnectGatewayName", value.asInstanceOf[js.Any])
   }
 }

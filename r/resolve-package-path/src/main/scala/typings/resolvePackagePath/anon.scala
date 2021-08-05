@@ -24,8 +24,7 @@ object anon {
   }
   object Delete {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _store: StringDictionary[String],
       delete: String => Unit,
       get: String => String,
@@ -37,26 +36,19 @@ object anon {
       __obj.asInstanceOf[Delete]
     }
     
-    @scala.inline
-    implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+    extension [Self <: Delete](x: Self) {
       
-      @scala.inline
-      def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_store(value: StringDictionary[String]): Self = StObject.set(x, "_store", value.asInstanceOf[js.Any])
+      inline def set_store(value: StringDictionary[String]): Self = StObject.set(x, "_store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,26 +64,20 @@ object anon {
   }
   object MODULEENTRY {
     
-    @scala.inline
-    def apply(MODULE_ENTRY: Cache, PATH: Cache, REAL_DIRECTORY_PATH: Cache, REAL_FILE_PATH: Cache): MODULEENTRY = {
+    inline def apply(MODULE_ENTRY: Cache, PATH: Cache, REAL_DIRECTORY_PATH: Cache, REAL_FILE_PATH: Cache): MODULEENTRY = {
       val __obj = js.Dynamic.literal(MODULE_ENTRY = MODULE_ENTRY.asInstanceOf[js.Any], PATH = PATH.asInstanceOf[js.Any], REAL_DIRECTORY_PATH = REAL_DIRECTORY_PATH.asInstanceOf[js.Any], REAL_FILE_PATH = REAL_FILE_PATH.asInstanceOf[js.Any])
       __obj.asInstanceOf[MODULEENTRY]
     }
     
-    @scala.inline
-    implicit class MODULEENTRYMutableBuilder[Self <: MODULEENTRY] (val x: Self) extends AnyVal {
+    extension [Self <: MODULEENTRY](x: Self) {
       
-      @scala.inline
-      def setMODULE_ENTRY(value: Cache): Self = StObject.set(x, "MODULE_ENTRY", value.asInstanceOf[js.Any])
+      inline def setMODULE_ENTRY(value: Cache): Self = StObject.set(x, "MODULE_ENTRY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPATH(value: Cache): Self = StObject.set(x, "PATH", value.asInstanceOf[js.Any])
+      inline def setPATH(value: Cache): Self = StObject.set(x, "PATH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAL_DIRECTORY_PATH(value: Cache): Self = StObject.set(x, "REAL_DIRECTORY_PATH", value.asInstanceOf[js.Any])
+      inline def setREAL_DIRECTORY_PATH(value: Cache): Self = StObject.set(x, "REAL_DIRECTORY_PATH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAL_FILE_PATH(value: Cache): Self = StObject.set(x, "REAL_FILE_PATH", value.asInstanceOf[js.Any])
+      inline def setREAL_FILE_PATH(value: Cache): Self = StObject.set(x, "REAL_FILE_PATH", value.asInstanceOf[js.Any])
     }
   }
 }

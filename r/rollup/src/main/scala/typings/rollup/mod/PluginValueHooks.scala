@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PluginValueHooks extends StObject
 object PluginValueHooks {
   
-  @scala.inline
-  def banner: typings.rollup.rollupStrings.banner = "banner".asInstanceOf[typings.rollup.rollupStrings.banner]
+  inline def banner: typings.rollup.rollupStrings.banner = "banner".asInstanceOf[typings.rollup.rollupStrings.banner]
   
-  @scala.inline
-  def footer: typings.rollup.rollupStrings.footer = "footer".asInstanceOf[typings.rollup.rollupStrings.footer]
+  inline def footer: typings.rollup.rollupStrings.footer = "footer".asInstanceOf[typings.rollup.rollupStrings.footer]
   
-  @scala.inline
-  def intro: typings.rollup.rollupStrings.intro = "intro".asInstanceOf[typings.rollup.rollupStrings.intro]
+  inline def intro: typings.rollup.rollupStrings.intro = "intro".asInstanceOf[typings.rollup.rollupStrings.intro]
   
-  @scala.inline
-  def outro: typings.rollup.rollupStrings.outro = "outro".asInstanceOf[typings.rollup.rollupStrings.outro]
+  inline def outro: typings.rollup.rollupStrings.outro = "outro".asInstanceOf[typings.rollup.rollupStrings.outro]
 }

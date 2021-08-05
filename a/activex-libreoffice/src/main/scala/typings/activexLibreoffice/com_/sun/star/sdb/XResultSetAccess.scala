@@ -20,8 +20,7 @@ trait XResultSetAccess
 }
 object XResultSetAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createResultSet: () => XResultSet,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XResultSetAccess {
     __obj.asInstanceOf[XResultSetAccess]
   }
   
-  @scala.inline
-  implicit class XResultSetAccessMutableBuilder[Self <: XResultSetAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XResultSetAccess](x: Self) {
     
-    @scala.inline
-    def setCreateResultSet(value: () => XResultSet): Self = StObject.set(x, "createResultSet", js.Any.fromFunction0(value))
+    inline def setCreateResultSet(value: () => XResultSet): Self = StObject.set(x, "createResultSet", js.Any.fromFunction0(value))
   }
 }

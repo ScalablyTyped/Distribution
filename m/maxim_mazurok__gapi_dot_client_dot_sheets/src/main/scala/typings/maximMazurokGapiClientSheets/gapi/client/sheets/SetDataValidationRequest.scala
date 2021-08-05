@@ -14,25 +14,19 @@ trait SetDataValidationRequest extends StObject {
 }
 object SetDataValidationRequest {
   
-  @scala.inline
-  def apply(): SetDataValidationRequest = {
+  inline def apply(): SetDataValidationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetDataValidationRequest]
   }
   
-  @scala.inline
-  implicit class SetDataValidationRequestMutableBuilder[Self <: SetDataValidationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDataValidationRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRule(value: DataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: DataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

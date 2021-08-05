@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String): Sade = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Sade]
-  @scala.inline
-  def apply(str: String, isOne: Boolean): Sade = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], isOne.asInstanceOf[js.Any])).asInstanceOf[Sade]
+  inline def apply(str: String): Sade = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Sade]
+  inline def apply(str: String, isOne: Boolean): Sade = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], isOne.asInstanceOf[js.Any])).asInstanceOf[Sade]
   
   @JSImport("sade", JSImport.Namespace)
   @js.native
@@ -30,29 +28,22 @@ object mod {
   }
   object CommandOptions {
     
-    @scala.inline
-    def apply(): CommandOptions = {
+    inline def apply(): CommandOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandOptions]
     }
     
-    @scala.inline
-    implicit class CommandOptionsMutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommandOptions](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
   
@@ -74,26 +65,20 @@ object mod {
   }
   object LazyOutput {
     
-    @scala.inline
-    def apply(args: js.Array[String], handler: Handler, name: String): LazyOutput = {
+    inline def apply(args: js.Array[String], handler: Handler, name: String): LazyOutput = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LazyOutput]
     }
     
-    @scala.inline
-    implicit class LazyOutputMutableBuilder[Self <: LazyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: LazyOutput](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,20 +90,16 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     }
   }
   

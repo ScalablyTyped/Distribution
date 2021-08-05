@@ -12,16 +12,13 @@ trait StreamSocketListenerInformation extends StObject {
 }
 object StreamSocketListenerInformation {
   
-  @scala.inline
-  def apply(localPort: String): StreamSocketListenerInformation = {
+  inline def apply(localPort: String): StreamSocketListenerInformation = {
     val __obj = js.Dynamic.literal(localPort = localPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSocketListenerInformation]
   }
   
-  @scala.inline
-  implicit class StreamSocketListenerInformationMutableBuilder[Self <: StreamSocketListenerInformation] (val x: Self) extends AnyVal {
+  extension [Self <: StreamSocketListenerInformation](x: Self) {
     
-    @scala.inline
-    def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+    inline def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
   }
 }

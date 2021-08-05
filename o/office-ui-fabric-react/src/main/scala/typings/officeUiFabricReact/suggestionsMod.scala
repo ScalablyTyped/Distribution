@@ -18,31 +18,31 @@ object suggestionsMod {
     extends Component[ISuggestionsProps[T], ISuggestionsState, js.Any] {
     def this(suggestionsProps: ISuggestionsProps[T]) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _forceResolve: js.Any = js.native
+    /* private */ var _forceResolve: js.Any = js.native
     
-    var _forceResolveButton: RefObject[IButton] = js.native
+    /* protected */ var _forceResolveButton: RefObject[IButton] = js.native
     
-    var _getAlertText: js.Any = js.native
+    /* private */ var _getAlertText: js.Any = js.native
     
-    var _getMoreResults: js.Any = js.native
+    /* private */ var _getMoreResults: js.Any = js.native
     
-    var _onClickTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onClickTypedSuggestionsItem: js.Any = js.native
     
-    var _onRemoveTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onRemoveTypedSuggestionsItem: js.Any = js.native
     
-    var _refocusOnSuggestions: js.Any = js.native
+    /* private */ var _refocusOnSuggestions: js.Any = js.native
     
-    var _renderSuggestions: js.Any = js.native
+    /* private */ var _renderSuggestions: js.Any = js.native
     
-    var _searchForMoreButton: RefObject[IButton] = js.native
+    /* protected */ var _searchForMoreButton: RefObject[IButton] = js.native
     
-    var _selectedElement: RefObject[HTMLDivElement] = js.native
+    /* protected */ var _selectedElement: RefObject[HTMLDivElement] = js.native
     
-    var _shouldShowForceResolve: js.Any = js.native
+    /* private */ var _shouldShowForceResolve: js.Any = js.native
     
-    var activeSelectedElement: js.Any = js.native
+    /* private */ var activeSelectedElement: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MSuggestions(): Unit = js.native
@@ -76,17 +76,14 @@ object suggestionsMod {
   }
   object ISuggestionsState {
     
-    @scala.inline
-    def apply(selectedActionType: SuggestionActionType): ISuggestionsState = {
+    inline def apply(selectedActionType: SuggestionActionType): ISuggestionsState = {
       val __obj = js.Dynamic.literal(selectedActionType = selectedActionType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsState]
     }
     
-    @scala.inline
-    implicit class ISuggestionsStateMutableBuilder[Self <: ISuggestionsState] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsState](x: Self) {
       
-      @scala.inline
-      def setSelectedActionType(value: SuggestionActionType): Self = StObject.set(x, "selectedActionType", value.asInstanceOf[js.Any])
+      inline def setSelectedActionType(value: SuggestionActionType): Self = StObject.set(x, "selectedActionType", value.asInstanceOf[js.Any])
     }
   }
 }

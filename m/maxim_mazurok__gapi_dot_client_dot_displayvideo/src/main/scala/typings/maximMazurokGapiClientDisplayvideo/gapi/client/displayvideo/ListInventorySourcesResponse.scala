@@ -14,28 +14,21 @@ trait ListInventorySourcesResponse extends StObject {
 }
 object ListInventorySourcesResponse {
   
-  @scala.inline
-  def apply(): ListInventorySourcesResponse = {
+  inline def apply(): ListInventorySourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListInventorySourcesResponse]
   }
   
-  @scala.inline
-  implicit class ListInventorySourcesResponseMutableBuilder[Self <: ListInventorySourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListInventorySourcesResponse](x: Self) {
     
-    @scala.inline
-    def setInventorySources(value: js.Array[InventorySource]): Self = StObject.set(x, "inventorySources", value.asInstanceOf[js.Any])
+    inline def setInventorySources(value: js.Array[InventorySource]): Self = StObject.set(x, "inventorySources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourcesUndefined: Self = StObject.set(x, "inventorySources", js.undefined)
+    inline def setInventorySourcesUndefined: Self = StObject.set(x, "inventorySources", js.undefined)
     
-    @scala.inline
-    def setInventorySourcesVarargs(value: InventorySource*): Self = StObject.set(x, "inventorySources", js.Array(value :_*))
+    inline def setInventorySourcesVarargs(value: InventorySource*): Self = StObject.set(x, "inventorySources", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

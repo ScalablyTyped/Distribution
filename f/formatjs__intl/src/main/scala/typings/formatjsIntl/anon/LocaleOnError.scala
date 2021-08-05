@@ -26,8 +26,7 @@ trait LocaleOnError extends StObject {
 }
 object LocaleOnError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     locale: String,
     onError: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
   ): LocaleOnError = {
@@ -35,14 +34,11 @@ object LocaleOnError {
     __obj.asInstanceOf[LocaleOnError]
   }
   
-  @scala.inline
-  implicit class LocaleOnErrorMutableBuilder[Self <: LocaleOnError] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleOnError](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(
+    inline def setOnError(
       value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
     ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
   }

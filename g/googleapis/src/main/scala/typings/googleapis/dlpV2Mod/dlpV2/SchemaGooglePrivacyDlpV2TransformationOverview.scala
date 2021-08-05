@@ -21,28 +21,21 @@ trait SchemaGooglePrivacyDlpV2TransformationOverview extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TransformationOverview {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TransformationOverview = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TransformationOverview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TransformationOverview]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TransformationOverviewMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TransformationOverview] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TransformationOverview](x: Self) {
     
-    @scala.inline
-    def setTransformationSummaries(value: js.Array[SchemaGooglePrivacyDlpV2TransformationSummary]): Self = StObject.set(x, "transformationSummaries", value.asInstanceOf[js.Any])
+    inline def setTransformationSummaries(value: js.Array[SchemaGooglePrivacyDlpV2TransformationSummary]): Self = StObject.set(x, "transformationSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformationSummariesUndefined: Self = StObject.set(x, "transformationSummaries", js.undefined)
+    inline def setTransformationSummariesUndefined: Self = StObject.set(x, "transformationSummaries", js.undefined)
     
-    @scala.inline
-    def setTransformationSummariesVarargs(value: SchemaGooglePrivacyDlpV2TransformationSummary*): Self = StObject.set(x, "transformationSummaries", js.Array(value :_*))
+    inline def setTransformationSummariesVarargs(value: SchemaGooglePrivacyDlpV2TransformationSummary*): Self = StObject.set(x, "transformationSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
+    inline def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformedBytesUndefined: Self = StObject.set(x, "transformedBytes", js.undefined)
+    inline def setTransformedBytesUndefined: Self = StObject.set(x, "transformedBytes", js.undefined)
   }
 }

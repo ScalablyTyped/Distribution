@@ -13,22 +13,17 @@ trait ListSourceCredentialsOutput extends StObject {
 }
 object ListSourceCredentialsOutput {
   
-  @scala.inline
-  def apply(): ListSourceCredentialsOutput = {
+  inline def apply(): ListSourceCredentialsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSourceCredentialsOutput]
   }
   
-  @scala.inline
-  implicit class ListSourceCredentialsOutputMutableBuilder[Self <: ListSourceCredentialsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSourceCredentialsOutput](x: Self) {
     
-    @scala.inline
-    def setSourceCredentialsInfos(value: SourceCredentialsInfos): Self = StObject.set(x, "sourceCredentialsInfos", value.asInstanceOf[js.Any])
+    inline def setSourceCredentialsInfos(value: SourceCredentialsInfos): Self = StObject.set(x, "sourceCredentialsInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCredentialsInfosUndefined: Self = StObject.set(x, "sourceCredentialsInfos", js.undefined)
+    inline def setSourceCredentialsInfosUndefined: Self = StObject.set(x, "sourceCredentialsInfos", js.undefined)
     
-    @scala.inline
-    def setSourceCredentialsInfosVarargs(value: SourceCredentialsInfo*): Self = StObject.set(x, "sourceCredentialsInfos", js.Array(value :_*))
+    inline def setSourceCredentialsInfosVarargs(value: SourceCredentialsInfo*): Self = StObject.set(x, "sourceCredentialsInfos", js.Array(value :_*))
   }
 }

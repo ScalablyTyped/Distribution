@@ -28,31 +28,23 @@ trait SchemaUploadLineItemsRequest extends StObject {
 }
 object SchemaUploadLineItemsRequest {
   
-  @scala.inline
-  def apply(): SchemaUploadLineItemsRequest = {
+  inline def apply(): SchemaUploadLineItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUploadLineItemsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUploadLineItemsRequestMutableBuilder[Self <: SchemaUploadLineItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUploadLineItemsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLineItems(value: String): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: String): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
   }
 }

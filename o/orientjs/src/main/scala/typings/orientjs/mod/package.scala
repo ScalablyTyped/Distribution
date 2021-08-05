@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {orientjs.ServerConfig} config
   * @returns {orientjs.OServer}
   */
-@scala.inline
-def apply(config: typings.orientjs.mod.ServerConfig): typings.orientjs.mod.OServer = typings.orientjs.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.orientjs.mod.OServer]
+inline def apply(config: typings.orientjs.mod.ServerConfig): typings.orientjs.mod.OServer = typings.orientjs.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.orientjs.mod.OServer]
 
 type ODocument = typings.orientjs.mod.ORecord
 

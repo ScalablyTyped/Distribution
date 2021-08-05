@@ -12,19 +12,15 @@ trait AccelerometerMMA7361Option
 }
 object AccelerometerMMA7361Option {
   
-  @scala.inline
-  def apply(): AccelerometerMMA7361Option = {
+  inline def apply(): AccelerometerMMA7361Option = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccelerometerMMA7361Option]
   }
   
-  @scala.inline
-  implicit class AccelerometerMMA7361OptionMutableBuilder[Self <: AccelerometerMMA7361Option] (val x: Self) extends AnyVal {
+  extension [Self <: AccelerometerMMA7361Option](x: Self) {
     
-    @scala.inline
-    def setSleepPin(value: Double | String): Self = StObject.set(x, "sleepPin", value.asInstanceOf[js.Any])
+    inline def setSleepPin(value: Double | String): Self = StObject.set(x, "sleepPin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSleepPinUndefined: Self = StObject.set(x, "sleepPin", js.undefined)
+    inline def setSleepPinUndefined: Self = StObject.set(x, "sleepPin", js.undefined)
   }
 }

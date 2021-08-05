@@ -43,8 +43,7 @@ trait ILoginAccount extends StObject {
 }
 object ILoginAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountName: String,
     AccountType: MFLoginAccountType,
     Clone: () => ILoginAccount,
@@ -62,45 +61,32 @@ object ILoginAccount {
     __obj.asInstanceOf[ILoginAccount]
   }
   
-  @scala.inline
-  implicit class ILoginAccountMutableBuilder[Self <: ILoginAccount] (val x: Self) extends AnyVal {
+  extension [Self <: ILoginAccount](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountType(value: MFLoginAccountType): Self = StObject.set(x, "AccountType", value.asInstanceOf[js.Any])
+    inline def setAccountType(value: MFLoginAccountType): Self = StObject.set(x, "AccountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => ILoginAccount): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ILoginAccount): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: ILoginAccount => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: ILoginAccount => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseType(value: MFLicenseType): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
+    inline def setLicenseType(value: MFLicenseType): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerRoles(value: MFLoginServerRole): Self = StObject.set(x, "ServerRoles", value.asInstanceOf[js.Any])
+    inline def setServerRoles(value: MFLoginServerRole): Self = StObject.set(x, "ServerRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(
+    inline def setSet(
       value: (MFLoginAccountType, String, String, MFLoginServerRole, String, String, MFLicenseType) => Unit
     ): Self = StObject.set(x, "Set", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

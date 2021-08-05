@@ -14,28 +14,21 @@ trait LinkedAccount extends StObject {
 }
 object LinkedAccount {
   
-  @scala.inline
-  def apply(): LinkedAccount = {
+  inline def apply(): LinkedAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkedAccount]
   }
   
-  @scala.inline
-  implicit class LinkedAccountMutableBuilder[Self <: LinkedAccount] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedAccount](x: Self) {
     
-    @scala.inline
-    def setLinkedAccountId(value: String): Self = StObject.set(x, "linkedAccountId", value.asInstanceOf[js.Any])
+    inline def setLinkedAccountId(value: String): Self = StObject.set(x, "linkedAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedAccountIdUndefined: Self = StObject.set(x, "linkedAccountId", js.undefined)
+    inline def setLinkedAccountIdUndefined: Self = StObject.set(x, "linkedAccountId", js.undefined)
     
-    @scala.inline
-    def setServices(value: js.Array[LinkService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[LinkService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: LinkService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: LinkService*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

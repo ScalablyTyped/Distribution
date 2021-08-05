@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RoutesVersioningMiddleware = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RoutesVersioningMiddleware]
+  inline def apply(): RoutesVersioningMiddleware = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RoutesVersioningMiddleware]
   
   @JSImport("express-routes-versioning", JSImport.Namespace)
   @js.native

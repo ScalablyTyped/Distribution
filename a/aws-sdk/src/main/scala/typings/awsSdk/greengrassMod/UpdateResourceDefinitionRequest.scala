@@ -18,22 +18,17 @@ trait UpdateResourceDefinitionRequest extends StObject {
 }
 object UpdateResourceDefinitionRequest {
   
-  @scala.inline
-  def apply(ResourceDefinitionId: string): UpdateResourceDefinitionRequest = {
+  inline def apply(ResourceDefinitionId: string): UpdateResourceDefinitionRequest = {
     val __obj = js.Dynamic.literal(ResourceDefinitionId = ResourceDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResourceDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateResourceDefinitionRequestMutableBuilder[Self <: UpdateResourceDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateResourceDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
   }
 }

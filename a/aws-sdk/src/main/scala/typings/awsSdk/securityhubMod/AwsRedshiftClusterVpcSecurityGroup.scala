@@ -18,25 +18,19 @@ trait AwsRedshiftClusterVpcSecurityGroup extends StObject {
 }
 object AwsRedshiftClusterVpcSecurityGroup {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterVpcSecurityGroup = {
+  inline def apply(): AwsRedshiftClusterVpcSecurityGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterVpcSecurityGroup]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterVpcSecurityGroupMutableBuilder[Self <: AwsRedshiftClusterVpcSecurityGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterVpcSecurityGroup](x: Self) {
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVpcSecurityGroupId(value: NonEmptyString): Self = StObject.set(x, "VpcSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setVpcSecurityGroupId(value: NonEmptyString): Self = StObject.set(x, "VpcSecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSecurityGroupIdUndefined: Self = StObject.set(x, "VpcSecurityGroupId", js.undefined)
+    inline def setVpcSecurityGroupIdUndefined: Self = StObject.set(x, "VpcSecurityGroupId", js.undefined)
   }
 }

@@ -14,16 +14,13 @@ trait PickImplonDisable extends StObject {
 }
 object PickImplonDisable {
   
-  @scala.inline
-  def apply(onDisable: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonDisable = {
+  inline def apply(onDisable: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonDisable = {
     val __obj = js.Dynamic.literal(onDisable = onDisable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonDisable]
   }
   
-  @scala.inline
-  implicit class PickImplonDisableMutableBuilder[Self <: PickImplonDisable] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonDisable](x: Self) {
     
-    @scala.inline
-    def setOnDisable(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDisable", value.asInstanceOf[js.Any])
+    inline def setOnDisable(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onDisable", value.asInstanceOf[js.Any])
   }
 }

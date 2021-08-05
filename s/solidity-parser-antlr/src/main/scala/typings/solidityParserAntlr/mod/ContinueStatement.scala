@@ -15,17 +15,14 @@ trait ContinueStatement
 }
 object ContinueStatement {
   
-  @scala.inline
-  def apply(): ContinueStatement = {
+  inline def apply(): ContinueStatement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ContinueStatement")
     __obj.asInstanceOf[ContinueStatement]
   }
   
-  @scala.inline
-  implicit class ContinueStatementMutableBuilder[Self <: ContinueStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueStatement](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

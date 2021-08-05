@@ -16,29 +16,29 @@ object rawMod {
     /**
       * called when the connection with the Socket gets closed
       */
-    var handleClose: js.Any = js.native
+    /* private */ var handleClose: js.Any = js.native
     
     /**
       * Called after the Socket has been established
       */
-    var handleConnect: js.Any = js.native
+    /* private */ var handleConnect: js.Any = js.native
     
     /**
       * called when the Socket receives data
       * Splits the data with every newline
       */
-    var handleData: js.Any = js.native
+    /* private */ var handleData: js.Any = js.native
     
     /**
       * called when the Socket emits an error
       */
-    var handleError: js.Any = js.native
+    /* private */ var handleError: js.Any = js.native
     
     /**
       * Called after the socket was not able to connect within the given timeframe
       */
-    var handleTimeout: js.Any = js.native
+    /* private */ var handleTimeout: js.Any = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
   }
 }

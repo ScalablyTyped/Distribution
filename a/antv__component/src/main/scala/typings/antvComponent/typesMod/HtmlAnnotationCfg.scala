@@ -28,41 +28,31 @@ trait HtmlAnnotationCfg
 }
 object HtmlAnnotationCfg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     html: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement])
   ): HtmlAnnotationCfg = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlAnnotationCfg]
   }
   
-  @scala.inline
-  implicit class HtmlAnnotationCfgMutableBuilder[Self <: HtmlAnnotationCfg] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlAnnotationCfg](x: Self) {
     
-    @scala.inline
-    def setAlignX(value: left | middle | right): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
+    inline def setAlignX(value: left | middle | right): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignXUndefined: Self = StObject.set(x, "alignX", js.undefined)
+    inline def setAlignXUndefined: Self = StObject.set(x, "alignX", js.undefined)
     
-    @scala.inline
-    def setAlignY(value: top | middle | bottom): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
+    inline def setAlignY(value: top | middle | bottom): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
+    inline def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
     
-    @scala.inline
-    def setHtml(
+    inline def setHtml(
       value: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement])
     ): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlFunction1(value: /* container */ HTMLElement => Unit | String | HTMLElement): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
+    inline def setHtmlFunction1(value: /* container */ HTMLElement => Unit | String | HTMLElement): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

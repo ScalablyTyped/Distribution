@@ -37,17 +37,14 @@ object declarationMod {
   }
   object DeclarationMiddleware {
     
-    @scala.inline
-    def apply(): DeclarationMiddleware = {
+    inline def apply(): DeclarationMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeclarationMiddleware]
     }
     
-    @scala.inline
-    implicit class DeclarationMiddlewareMutableBuilder[Self <: DeclarationMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: DeclarationMiddleware](x: Self) {
       
-      @scala.inline
-      def setProvideDeclaration(
+      inline def setProvideDeclaration(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -58,8 +55,7 @@ object declarationMod {
             ]
       ): Self = StObject.set(x, "provideDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideDeclarationUndefined: Self = StObject.set(x, "provideDeclaration", js.undefined)
+      inline def setProvideDeclarationUndefined: Self = StObject.set(x, "provideDeclaration", js.undefined)
     }
   }
   

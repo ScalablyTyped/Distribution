@@ -23,31 +23,23 @@ trait UserStackAssociationError extends StObject {
 }
 object UserStackAssociationError {
   
-  @scala.inline
-  def apply(): UserStackAssociationError = {
+  inline def apply(): UserStackAssociationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserStackAssociationError]
   }
   
-  @scala.inline
-  implicit class UserStackAssociationErrorMutableBuilder[Self <: UserStackAssociationError] (val x: Self) extends AnyVal {
+  extension [Self <: UserStackAssociationError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: UserStackAssociationErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: UserStackAssociationErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setUserStackAssociation(value: UserStackAssociation): Self = StObject.set(x, "UserStackAssociation", value.asInstanceOf[js.Any])
+    inline def setUserStackAssociation(value: UserStackAssociation): Self = StObject.set(x, "UserStackAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStackAssociationUndefined: Self = StObject.set(x, "UserStackAssociation", js.undefined)
+    inline def setUserStackAssociationUndefined: Self = StObject.set(x, "UserStackAssociation", js.undefined)
   }
 }

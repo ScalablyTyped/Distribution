@@ -226,41 +226,30 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(isOpen: Boolean): State = {
+    inline def apply(isOpen: Boolean): State = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], highlightedIndex = null)
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
+      inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedIndexNull: Self = StObject.set(x, "highlightedIndex", null)
+      inline def setHighlightedIndexNull: Self = StObject.set(x, "highlightedIndex", null)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuLeft(value: Double): Self = StObject.set(x, "menuLeft", value.asInstanceOf[js.Any])
+      inline def setMenuLeft(value: Double): Self = StObject.set(x, "menuLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuLeftUndefined: Self = StObject.set(x, "menuLeft", js.undefined)
+      inline def setMenuLeftUndefined: Self = StObject.set(x, "menuLeft", js.undefined)
       
-      @scala.inline
-      def setMenuTop(value: Double): Self = StObject.set(x, "menuTop", value.asInstanceOf[js.Any])
+      inline def setMenuTop(value: Double): Self = StObject.set(x, "menuTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuTopUndefined: Self = StObject.set(x, "menuTop", js.undefined)
+      inline def setMenuTopUndefined: Self = StObject.set(x, "menuTop", js.undefined)
       
-      @scala.inline
-      def setMenuWidth(value: Double): Self = StObject.set(x, "menuWidth", value.asInstanceOf[js.Any])
+      inline def setMenuWidth(value: Double): Self = StObject.set(x, "menuWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuWidthUndefined: Self = StObject.set(x, "menuWidth", js.undefined)
+      inline def setMenuWidthUndefined: Self = StObject.set(x, "menuWidth", js.undefined)
     }
   }
 }

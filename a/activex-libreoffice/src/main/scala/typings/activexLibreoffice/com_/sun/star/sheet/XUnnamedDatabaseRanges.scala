@@ -23,8 +23,7 @@ trait XUnnamedDatabaseRanges
 }
 object XUnnamedDatabaseRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getByTable: Double => js.Any,
     hasByTable: Double => Boolean,
@@ -36,16 +35,12 @@ object XUnnamedDatabaseRanges {
     __obj.asInstanceOf[XUnnamedDatabaseRanges]
   }
   
-  @scala.inline
-  implicit class XUnnamedDatabaseRangesMutableBuilder[Self <: XUnnamedDatabaseRanges] (val x: Self) extends AnyVal {
+  extension [Self <: XUnnamedDatabaseRanges](x: Self) {
     
-    @scala.inline
-    def setGetByTable(value: Double => js.Any): Self = StObject.set(x, "getByTable", js.Any.fromFunction1(value))
+    inline def setGetByTable(value: Double => js.Any): Self = StObject.set(x, "getByTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasByTable(value: Double => Boolean): Self = StObject.set(x, "hasByTable", js.Any.fromFunction1(value))
+    inline def setHasByTable(value: Double => Boolean): Self = StObject.set(x, "hasByTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetByTable(value: CellRangeAddress => Unit): Self = StObject.set(x, "setByTable", js.Any.fromFunction1(value))
+    inline def setSetByTable(value: CellRangeAddress => Unit): Self = StObject.set(x, "setByTable", js.Any.fromFunction1(value))
   }
 }

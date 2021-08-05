@@ -13,22 +13,17 @@ trait ConditionalFormattingBaseRule extends StObject {
 }
 object ConditionalFormattingBaseRule {
   
-  @scala.inline
-  def apply(priority: Double): ConditionalFormattingBaseRule = {
+  inline def apply(priority: Double): ConditionalFormattingBaseRule = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormattingBaseRule]
   }
   
-  @scala.inline
-  implicit class ConditionalFormattingBaseRuleMutableBuilder[Self <: ConditionalFormattingBaseRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormattingBaseRule](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: PartialStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: PartialStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

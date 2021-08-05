@@ -15,20 +15,16 @@ trait DSNodeToken
 }
 object DSNodeToken {
   
-  @scala.inline
-  def apply(value: String): DSNodeToken = {
+  inline def apply(value: String): DSNodeToken = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Token")
     __obj.asInstanceOf[DSNodeToken]
   }
   
-  @scala.inline
-  implicit class DSNodeTokenMutableBuilder[Self <: DSNodeToken] (val x: Self) extends AnyVal {
+  extension [Self <: DSNodeToken](x: Self) {
     
-    @scala.inline
-    def setType(value: Token): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Token): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

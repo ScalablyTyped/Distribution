@@ -18,19 +18,15 @@ trait DetachThingPrincipalRequest extends StObject {
 }
 object DetachThingPrincipalRequest {
   
-  @scala.inline
-  def apply(principal: Principal, thingName: ThingName): DetachThingPrincipalRequest = {
+  inline def apply(principal: Principal, thingName: ThingName): DetachThingPrincipalRequest = {
     val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachThingPrincipalRequest]
   }
   
-  @scala.inline
-  implicit class DetachThingPrincipalRequestMutableBuilder[Self <: DetachThingPrincipalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachThingPrincipalRequest](x: Self) {
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

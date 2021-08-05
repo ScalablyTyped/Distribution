@@ -13,41 +13,41 @@ object dragEventsMod {
   @js.native
   class DragEvents () extends StObject {
     
-    var activationCoordinates: js.Any = js.native
+    /* private */ var activationCoordinates: js.Any = js.native
     
     def attach(element: HTMLElement, handler: IDragHandler): this.type = js.native
     
-    var attachDocumentEventListeners: js.Any = js.native
+    /* private */ var attachDocumentEventListeners: js.Any = js.native
     
     def detach(): Unit = js.native
     
-    var detachDocumentEventListeners: js.Any = js.native
+    /* private */ var detachDocumentEventListeners: js.Any = js.native
     
-    var doubleClickTimeoutToken: js.Any = js.native
+    /* private */ var doubleClickTimeoutToken: js.Any = js.native
     
-    var element: js.Any = js.native
+    /* private */ var element: js.Any = js.native
     
-    var handleMouseDown: js.Any = js.native
+    /* private */ var handleMouseDown: js.Any = js.native
     
-    var handleMouseMove: js.Any = js.native
+    /* private */ var handleMouseMove: js.Any = js.native
     
-    var handleMouseUp: js.Any = js.native
+    /* private */ var handleMouseUp: js.Any = js.native
     
-    var handler: js.Any = js.native
+    /* private */ var handler: js.Any = js.native
     
-    var initCoordinateData: js.Any = js.native
+    /* private */ var initCoordinateData: js.Any = js.native
     
-    var isActivated: js.Any = js.native
+    /* private */ var isActivated: js.Any = js.native
     
-    var isDragging: js.Any = js.native
+    /* private */ var isDragging: js.Any = js.native
     
-    var isValidDragHandler: js.Any = js.native
+    /* private */ var isValidDragHandler: js.Any = js.native
     
-    var lastCoordinates: js.Any = js.native
+    /* private */ var lastCoordinates: js.Any = js.native
     
-    var maybeAlterEventChain: js.Any = js.native
+    /* private */ var maybeAlterEventChain: js.Any = js.native
     
-    var updateCoordinateData: js.Any = js.native
+    /* private */ var updateCoordinateData: js.Any = js.native
   }
   /* static members */
   object DragEvents {
@@ -59,8 +59,7 @@ object dragEventsMod {
     @JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", "DragEvents.DOUBLE_CLICK_TIMEOUT_MSEC")
     @js.native
     def DOUBLE_CLICK_TIMEOUT_MSEC: Double = js.native
-    @scala.inline
-    def DOUBLE_CLICK_TIMEOUT_MSEC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_CLICK_TIMEOUT_MSEC")(x.asInstanceOf[js.Any])
+    inline def DOUBLE_CLICK_TIMEOUT_MSEC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_CLICK_TIMEOUT_MSEC")(x.asInstanceOf[js.Any])
     
     /**
       * Returns true if the event includes a modifier key that often adds the result of the drag
@@ -69,7 +68,6 @@ object dragEventsMod {
       * existing selection first.
       * @param event the mouse event for the drag interaction
       */
-    @scala.inline
-    def isAdditive(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdditive")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isAdditive(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdditive")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

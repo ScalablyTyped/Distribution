@@ -30,34 +30,25 @@ trait SchemaResponseMetadata extends StObject {
 }
 object SchemaResponseMetadata {
   
-  @scala.inline
-  def apply(): SchemaResponseMetadata = {
+  inline def apply(): SchemaResponseMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResponseMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaResponseMetadataMutableBuilder[Self <: SchemaResponseMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResponseMetadata](x: Self) {
     
-    @scala.inline
-    def setExperimentIdList(value: js.Array[Double]): Self = StObject.set(x, "experimentIdList", value.asInstanceOf[js.Any])
+    inline def setExperimentIdList(value: js.Array[Double]): Self = StObject.set(x, "experimentIdList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentIdListUndefined: Self = StObject.set(x, "experimentIdList", js.undefined)
+    inline def setExperimentIdListUndefined: Self = StObject.set(x, "experimentIdList", js.undefined)
     
-    @scala.inline
-    def setExperimentIdListVarargs(value: Double*): Self = StObject.set(x, "experimentIdList", js.Array(value :_*))
+    inline def setExperimentIdListVarargs(value: Double*): Self = StObject.set(x, "experimentIdList", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

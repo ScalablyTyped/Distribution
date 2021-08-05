@@ -46,6 +46,5 @@ object Geometry {
     * @returns {PIXI.Geometry} shiny new geometry!
     */
   /* static member */
-  @scala.inline
-  def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Geometry]
+  inline def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Geometry]
 }

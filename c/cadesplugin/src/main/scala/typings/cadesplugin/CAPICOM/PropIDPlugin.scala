@@ -11,16 +11,13 @@ trait PropIDPlugin extends StObject {
 }
 object PropIDPlugin {
   
-  @scala.inline
-  def apply(): PropIDPlugin = {
+  inline def apply(): PropIDPlugin = {
     val __obj = js.Dynamic.literal(CAPICOM_PROPID_ENHKEY_USAGE = 9)
     __obj.asInstanceOf[PropIDPlugin]
   }
   
-  @scala.inline
-  implicit class PropIDPluginMutableBuilder[Self <: PropIDPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: PropIDPlugin](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_PROPID_ENHKEY_USAGE(value: `9`): Self = StObject.set(x, "CAPICOM_PROPID_ENHKEY_USAGE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_PROPID_ENHKEY_USAGE(value: `9`): Self = StObject.set(x, "CAPICOM_PROPID_ENHKEY_USAGE", value.asInstanceOf[js.Any])
   }
 }

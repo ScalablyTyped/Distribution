@@ -11,6 +11,5 @@ object TextFactory {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createText(value: String): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("createText")(value.asInstanceOf[js.Any]).asInstanceOf[IText]
+  inline def createText(value: String): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("createText")(value.asInstanceOf[js.Any]).asInstanceOf[IText]
 }

@@ -18,25 +18,19 @@ trait DescribeProtectionRequest extends StObject {
 }
 object DescribeProtectionRequest {
   
-  @scala.inline
-  def apply(): DescribeProtectionRequest = {
+  inline def apply(): DescribeProtectionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProtectionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeProtectionRequestMutableBuilder[Self <: DescribeProtectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProtectionRequest](x: Self) {
     
-    @scala.inline
-    def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
+    inline def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionIdUndefined: Self = StObject.set(x, "ProtectionId", js.undefined)
+    inline def setProtectionIdUndefined: Self = StObject.set(x, "ProtectionId", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
   }
 }

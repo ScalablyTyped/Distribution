@@ -22,8 +22,7 @@ trait XTextFrame
 }
 object XTextFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     Text: XText,
     acquire: () => Unit,
@@ -40,13 +39,10 @@ object XTextFrame {
     __obj.asInstanceOf[XTextFrame]
   }
   
-  @scala.inline
-  implicit class XTextFrameMutableBuilder[Self <: XTextFrame] (val x: Self) extends AnyVal {
+  extension [Self <: XTextFrame](x: Self) {
     
-    @scala.inline
-    def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: XText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: XText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

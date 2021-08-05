@@ -14,31 +14,23 @@ trait ITypeaheadOverrides extends StObject {
 }
 object ITypeaheadOverrides {
   
-  @scala.inline
-  def apply(): ITypeaheadOverrides = {
+  inline def apply(): ITypeaheadOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITypeaheadOverrides]
   }
   
-  @scala.inline
-  implicit class ITypeaheadOverridesMutableBuilder[Self <: ITypeaheadOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: ITypeaheadOverrides](x: Self) {
     
-    @scala.inline
-    def setInstanceSelectHandler(value: js.Function): Self = StObject.set(x, "instanceSelectHandler", value.asInstanceOf[js.Any])
+    inline def setInstanceSelectHandler(value: js.Function): Self = StObject.set(x, "instanceSelectHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceSelectHandlerUndefined: Self = StObject.set(x, "instanceSelectHandler", js.undefined)
+    inline def setInstanceSelectHandlerUndefined: Self = StObject.set(x, "instanceSelectHandler", js.undefined)
     
-    @scala.inline
-    def setSelect(value: js.Function): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: js.Function): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
+    inline def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
+    inline def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
   }
 }

@@ -22,17 +22,14 @@ object typesInvalidCommentIdExceptionMod {
   }
   object InvalidCommentIdException {
     
-    @scala.inline
-    def apply(): InvalidCommentIdException = {
+    inline def apply(): InvalidCommentIdException = {
       val __obj = js.Dynamic.literal(name = "InvalidCommentIdException")
       __obj.asInstanceOf[InvalidCommentIdException]
     }
     
-    @scala.inline
-    implicit class InvalidCommentIdExceptionMutableBuilder[Self <: InvalidCommentIdException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidCommentIdException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommentIdException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

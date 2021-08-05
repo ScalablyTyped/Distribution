@@ -23,22 +23,17 @@ trait PlatformFontUsage extends StObject {
 }
 object PlatformFontUsage {
   
-  @scala.inline
-  def apply(familyName: String, glyphCount: Double, isCustomFont: Boolean): PlatformFontUsage = {
+  inline def apply(familyName: String, glyphCount: Double, isCustomFont: Boolean): PlatformFontUsage = {
     val __obj = js.Dynamic.literal(familyName = familyName.asInstanceOf[js.Any], glyphCount = glyphCount.asInstanceOf[js.Any], isCustomFont = isCustomFont.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformFontUsage]
   }
   
-  @scala.inline
-  implicit class PlatformFontUsageMutableBuilder[Self <: PlatformFontUsage] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformFontUsage](x: Self) {
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphCount(value: Double): Self = StObject.set(x, "glyphCount", value.asInstanceOf[js.Any])
+    inline def setGlyphCount(value: Double): Self = StObject.set(x, "glyphCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCustomFont(value: Boolean): Self = StObject.set(x, "isCustomFont", value.asInstanceOf[js.Any])
+    inline def setIsCustomFont(value: Boolean): Self = StObject.set(x, "isCustomFont", value.asInstanceOf[js.Any])
   }
 }

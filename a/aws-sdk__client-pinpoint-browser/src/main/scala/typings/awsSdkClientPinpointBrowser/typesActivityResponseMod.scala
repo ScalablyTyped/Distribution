@@ -79,92 +79,64 @@ object typesActivityResponseMod {
   }
   object ActivityResponse {
     
-    @scala.inline
-    def apply(): ActivityResponse = {
+    inline def apply(): ActivityResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActivityResponse]
     }
     
-    @scala.inline
-    implicit class ActivityResponseMutableBuilder[Self <: ActivityResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ActivityResponse](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
       
-      @scala.inline
-      def setCampaignId(value: String): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
+      inline def setCampaignId(value: String): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignIdUndefined: Self = StObject.set(x, "CampaignId", js.undefined)
+      inline def setCampaignIdUndefined: Self = StObject.set(x, "CampaignId", js.undefined)
       
-      @scala.inline
-      def setEnd(value: String): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+      inline def setEnd(value: String): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+      inline def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
       
-      @scala.inline
-      def setScheduledStart(value: String): Self = StObject.set(x, "ScheduledStart", value.asInstanceOf[js.Any])
+      inline def setScheduledStart(value: String): Self = StObject.set(x, "ScheduledStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduledStartUndefined: Self = StObject.set(x, "ScheduledStart", js.undefined)
+      inline def setScheduledStartUndefined: Self = StObject.set(x, "ScheduledStart", js.undefined)
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
       
-      @scala.inline
-      def setSuccessfulEndpointCount(value: Double): Self = StObject.set(x, "SuccessfulEndpointCount", value.asInstanceOf[js.Any])
+      inline def setSuccessfulEndpointCount(value: Double): Self = StObject.set(x, "SuccessfulEndpointCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessfulEndpointCountUndefined: Self = StObject.set(x, "SuccessfulEndpointCount", js.undefined)
+      inline def setSuccessfulEndpointCountUndefined: Self = StObject.set(x, "SuccessfulEndpointCount", js.undefined)
       
-      @scala.inline
-      def setTimezonesCompletedCount(value: Double): Self = StObject.set(x, "TimezonesCompletedCount", value.asInstanceOf[js.Any])
+      inline def setTimezonesCompletedCount(value: Double): Self = StObject.set(x, "TimezonesCompletedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezonesCompletedCountUndefined: Self = StObject.set(x, "TimezonesCompletedCount", js.undefined)
+      inline def setTimezonesCompletedCountUndefined: Self = StObject.set(x, "TimezonesCompletedCount", js.undefined)
       
-      @scala.inline
-      def setTimezonesTotalCount(value: Double): Self = StObject.set(x, "TimezonesTotalCount", value.asInstanceOf[js.Any])
+      inline def setTimezonesTotalCount(value: Double): Self = StObject.set(x, "TimezonesTotalCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezonesTotalCountUndefined: Self = StObject.set(x, "TimezonesTotalCount", js.undefined)
+      inline def setTimezonesTotalCountUndefined: Self = StObject.set(x, "TimezonesTotalCount", js.undefined)
       
-      @scala.inline
-      def setTotalEndpointCount(value: Double): Self = StObject.set(x, "TotalEndpointCount", value.asInstanceOf[js.Any])
+      inline def setTotalEndpointCount(value: Double): Self = StObject.set(x, "TotalEndpointCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalEndpointCountUndefined: Self = StObject.set(x, "TotalEndpointCount", js.undefined)
+      inline def setTotalEndpointCountUndefined: Self = StObject.set(x, "TotalEndpointCount", js.undefined)
       
-      @scala.inline
-      def setTreatmentId(value: String): Self = StObject.set(x, "TreatmentId", value.asInstanceOf[js.Any])
+      inline def setTreatmentId(value: String): Self = StObject.set(x, "TreatmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreatmentIdUndefined: Self = StObject.set(x, "TreatmentId", js.undefined)
+      inline def setTreatmentIdUndefined: Self = StObject.set(x, "TreatmentId", js.undefined)
     }
   }
   

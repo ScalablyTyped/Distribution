@@ -18,28 +18,21 @@ trait ListStorageLensConfigurationsResult extends StObject {
 }
 object ListStorageLensConfigurationsResult {
   
-  @scala.inline
-  def apply(): ListStorageLensConfigurationsResult = {
+  inline def apply(): ListStorageLensConfigurationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStorageLensConfigurationsResult]
   }
   
-  @scala.inline
-  implicit class ListStorageLensConfigurationsResultMutableBuilder[Self <: ListStorageLensConfigurationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListStorageLensConfigurationsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: ContinuationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: ContinuationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStorageLensConfigurationList(value: StorageLensConfigurationList): Self = StObject.set(x, "StorageLensConfigurationList", value.asInstanceOf[js.Any])
+    inline def setStorageLensConfigurationList(value: StorageLensConfigurationList): Self = StObject.set(x, "StorageLensConfigurationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageLensConfigurationListUndefined: Self = StObject.set(x, "StorageLensConfigurationList", js.undefined)
+    inline def setStorageLensConfigurationListUndefined: Self = StObject.set(x, "StorageLensConfigurationList", js.undefined)
     
-    @scala.inline
-    def setStorageLensConfigurationListVarargs(value: ListStorageLensConfigurationEntry*): Self = StObject.set(x, "StorageLensConfigurationList", js.Array(value :_*))
+    inline def setStorageLensConfigurationListVarargs(value: ListStorageLensConfigurationEntry*): Self = StObject.set(x, "StorageLensConfigurationList", js.Array(value :_*))
   }
 }

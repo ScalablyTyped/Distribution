@@ -23,23 +23,18 @@ object groupHeaderTypesMod {
   }
   object IGroupHeaderCheckboxProps {
     
-    @scala.inline
-    def apply(checked: Boolean): IGroupHeaderCheckboxProps = {
+    inline def apply(checked: Boolean): IGroupHeaderCheckboxProps = {
       val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupHeaderCheckboxProps]
     }
     
-    @scala.inline
-    implicit class IGroupHeaderCheckboxPropsMutableBuilder[Self <: IGroupHeaderCheckboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupHeaderCheckboxProps](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -79,67 +74,48 @@ object groupHeaderTypesMod {
   }
   object IGroupHeaderProps {
     
-    @scala.inline
-    def apply(): IGroupHeaderProps = {
+    inline def apply(): IGroupHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupHeaderProps]
     }
     
-    @scala.inline
-    implicit class IGroupHeaderPropsMutableBuilder[Self <: IGroupHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupHeaderProps](x: Self) {
       
-      @scala.inline
-      def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
+      inline def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
+      inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
       
-      @scala.inline
-      def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
+      inline def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
+      inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
       
-      @scala.inline
-      def setExpandButtonIcon(value: String): Self = StObject.set(x, "expandButtonIcon", value.asInstanceOf[js.Any])
+      inline def setExpandButtonIcon(value: String): Self = StObject.set(x, "expandButtonIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandButtonIconUndefined: Self = StObject.set(x, "expandButtonIcon", js.undefined)
+      inline def setExpandButtonIconUndefined: Self = StObject.set(x, "expandButtonIcon", js.undefined)
       
-      @scala.inline
-      def setGroupedListId(value: String): Self = StObject.set(x, "groupedListId", value.asInstanceOf[js.Any])
+      inline def setGroupedListId(value: String): Self = StObject.set(x, "groupedListId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupedListIdUndefined: Self = StObject.set(x, "groupedListId", js.undefined)
+      inline def setGroupedListIdUndefined: Self = StObject.set(x, "groupedListId", js.undefined)
       
-      @scala.inline
-      def setOnRenderGroupHeaderCheckbox(
+      inline def setOnRenderGroupHeaderCheckbox(
         value: (/* props */ js.UndefOr[IGroupHeaderCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderCheckboxProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderGroupHeaderCheckbox", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderGroupHeaderCheckboxUndefined: Self = StObject.set(x, "onRenderGroupHeaderCheckbox", js.undefined)
+      inline def setOnRenderGroupHeaderCheckboxUndefined: Self = StObject.set(x, "onRenderGroupHeaderCheckbox", js.undefined)
       
-      @scala.inline
-      def setSelectAllButtonProps(value: HTMLAttributes[HTMLButtonElement]): Self = StObject.set(x, "selectAllButtonProps", value.asInstanceOf[js.Any])
+      inline def setSelectAllButtonProps(value: HTMLAttributes[HTMLButtonElement]): Self = StObject.set(x, "selectAllButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllButtonPropsUndefined: Self = StObject.set(x, "selectAllButtonProps", js.undefined)
+      inline def setSelectAllButtonPropsUndefined: Self = StObject.set(x, "selectAllButtonProps", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IGroupHeaderStyleProps, IGroupHeaderStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IGroupHeaderStyleProps, IGroupHeaderStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IGroupHeaderStyleProps => DeepPartial[IGroupHeaderStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IGroupHeaderStyleProps => DeepPartial[IGroupHeaderStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
+      inline def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFastIconsUndefined: Self = StObject.set(x, "useFastIcons", js.undefined)
+      inline def setUseFastIconsUndefined: Self = StObject.set(x, "useFastIcons", js.undefined)
     }
   }
   
@@ -160,41 +136,30 @@ object groupHeaderTypesMod {
   }
   object IGroupHeaderStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IGroupHeaderStyleProps = {
+    inline def apply(theme: ITheme): IGroupHeaderStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupHeaderStyleProps]
     }
     
-    @scala.inline
-    implicit class IGroupHeaderStylePropsMutableBuilder[Self <: IGroupHeaderStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupHeaderStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
+      inline def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,86 +183,60 @@ object groupHeaderTypesMod {
   }
   object IGroupHeaderStyles {
     
-    @scala.inline
-    def apply(): IGroupHeaderStyles = {
+    inline def apply(): IGroupHeaderStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupHeaderStyles]
     }
     
-    @scala.inline
-    implicit class IGroupHeaderStylesMutableBuilder[Self <: IGroupHeaderStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupHeaderStyles](x: Self) {
       
-      @scala.inline
-      def setCheck(value: IStyle): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: IStyle): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckNull: Self = StObject.set(x, "check", null)
+      inline def setCheckNull: Self = StObject.set(x, "check", null)
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setDropIcon(value: IStyle): Self = StObject.set(x, "dropIcon", value.asInstanceOf[js.Any])
+      inline def setDropIcon(value: IStyle): Self = StObject.set(x, "dropIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropIconNull: Self = StObject.set(x, "dropIcon", null)
+      inline def setDropIconNull: Self = StObject.set(x, "dropIcon", null)
       
-      @scala.inline
-      def setDropIconUndefined: Self = StObject.set(x, "dropIcon", js.undefined)
+      inline def setDropIconUndefined: Self = StObject.set(x, "dropIcon", js.undefined)
       
-      @scala.inline
-      def setExpand(value: IStyle): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: IStyle): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIsCollapsed(value: IStyle): Self = StObject.set(x, "expandIsCollapsed", value.asInstanceOf[js.Any])
+      inline def setExpandIsCollapsed(value: IStyle): Self = StObject.set(x, "expandIsCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIsCollapsedNull: Self = StObject.set(x, "expandIsCollapsed", null)
+      inline def setExpandIsCollapsedNull: Self = StObject.set(x, "expandIsCollapsed", null)
       
-      @scala.inline
-      def setExpandIsCollapsedUndefined: Self = StObject.set(x, "expandIsCollapsed", js.undefined)
+      inline def setExpandIsCollapsedUndefined: Self = StObject.set(x, "expandIsCollapsed", js.undefined)
       
-      @scala.inline
-      def setExpandNull: Self = StObject.set(x, "expand", null)
+      inline def setExpandNull: Self = StObject.set(x, "expand", null)
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setGroupHeaderContainer(value: IStyle): Self = StObject.set(x, "groupHeaderContainer", value.asInstanceOf[js.Any])
+      inline def setGroupHeaderContainer(value: IStyle): Self = StObject.set(x, "groupHeaderContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupHeaderContainerNull: Self = StObject.set(x, "groupHeaderContainer", null)
+      inline def setGroupHeaderContainerNull: Self = StObject.set(x, "groupHeaderContainer", null)
       
-      @scala.inline
-      def setGroupHeaderContainerUndefined: Self = StObject.set(x, "groupHeaderContainer", js.undefined)
+      inline def setGroupHeaderContainerUndefined: Self = StObject.set(x, "groupHeaderContainer", js.undefined)
       
-      @scala.inline
-      def setHeaderCount(value: IStyle): Self = StObject.set(x, "headerCount", value.asInstanceOf[js.Any])
+      inline def setHeaderCount(value: IStyle): Self = StObject.set(x, "headerCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderCountNull: Self = StObject.set(x, "headerCount", null)
+      inline def setHeaderCountNull: Self = StObject.set(x, "headerCount", null)
       
-      @scala.inline
-      def setHeaderCountUndefined: Self = StObject.set(x, "headerCount", js.undefined)
+      inline def setHeaderCountUndefined: Self = StObject.set(x, "headerCount", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTitle(value: IStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: IStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleNull: Self = StObject.set(x, "title", null)
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

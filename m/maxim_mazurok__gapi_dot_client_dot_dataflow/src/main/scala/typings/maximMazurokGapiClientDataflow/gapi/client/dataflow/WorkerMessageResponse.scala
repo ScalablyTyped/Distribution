@@ -17,31 +17,23 @@ trait WorkerMessageResponse extends StObject {
 }
 object WorkerMessageResponse {
   
-  @scala.inline
-  def apply(): WorkerMessageResponse = {
+  inline def apply(): WorkerMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerMessageResponse]
   }
   
-  @scala.inline
-  implicit class WorkerMessageResponseMutableBuilder[Self <: WorkerMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerMessageResponse](x: Self) {
     
-    @scala.inline
-    def setWorkerHealthReportResponse(value: WorkerHealthReportResponse): Self = StObject.set(x, "workerHealthReportResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerHealthReportResponse(value: WorkerHealthReportResponse): Self = StObject.set(x, "workerHealthReportResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerHealthReportResponseUndefined: Self = StObject.set(x, "workerHealthReportResponse", js.undefined)
+    inline def setWorkerHealthReportResponseUndefined: Self = StObject.set(x, "workerHealthReportResponse", js.undefined)
     
-    @scala.inline
-    def setWorkerMetricsResponse(value: js.Any): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerMetricsResponse(value: js.Any): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMetricsResponseUndefined: Self = StObject.set(x, "workerMetricsResponse", js.undefined)
+    inline def setWorkerMetricsResponseUndefined: Self = StObject.set(x, "workerMetricsResponse", js.undefined)
     
-    @scala.inline
-    def setWorkerShutdownNoticeResponse(value: js.Any): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerShutdownNoticeResponse(value: js.Any): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerShutdownNoticeResponseUndefined: Self = StObject.set(x, "workerShutdownNoticeResponse", js.undefined)
+    inline def setWorkerShutdownNoticeResponseUndefined: Self = StObject.set(x, "workerShutdownNoticeResponse", js.undefined)
   }
 }

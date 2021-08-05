@@ -16,26 +16,20 @@ object anon {
   }
   object Force {
     
-    @scala.inline
-    def apply(id: Double, selector: js.Any => js.Object): Force = {
+    inline def apply(id: Double, selector: js.Any => js.Object): Force = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], selector = js.Any.fromFunction1(selector))
       __obj.asInstanceOf[Force]
     }
     
-    @scala.inline
-    implicit class ForceMutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
+    extension [Self <: Force](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: js.Any => js.Object): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+      inline def setSelector(value: js.Any => js.Object): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
     }
   }
   
@@ -45,17 +39,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: Double): Id = {
+    inline def apply(id: Double): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

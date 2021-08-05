@@ -18,28 +18,21 @@ trait GetBeaconsRes extends StObject {
 }
 object GetBeaconsRes {
   
-  @scala.inline
-  def apply(): GetBeaconsRes = {
+  inline def apply(): GetBeaconsRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBeaconsRes]
   }
   
-  @scala.inline
-  implicit class GetBeaconsResMutableBuilder[Self <: GetBeaconsRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetBeaconsRes](x: Self) {
     
-    @scala.inline
-    def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    inline def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
+    inline def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
     
-    @scala.inline
-    def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

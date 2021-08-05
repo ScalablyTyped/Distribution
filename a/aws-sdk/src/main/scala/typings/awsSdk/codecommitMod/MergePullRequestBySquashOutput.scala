@@ -10,19 +10,15 @@ trait MergePullRequestBySquashOutput extends StObject {
 }
 object MergePullRequestBySquashOutput {
   
-  @scala.inline
-  def apply(): MergePullRequestBySquashOutput = {
+  inline def apply(): MergePullRequestBySquashOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergePullRequestBySquashOutput]
   }
   
-  @scala.inline
-  implicit class MergePullRequestBySquashOutputMutableBuilder[Self <: MergePullRequestBySquashOutput] (val x: Self) extends AnyVal {
+  extension [Self <: MergePullRequestBySquashOutput](x: Self) {
     
-    @scala.inline
-    def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
+    inline def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
   }
 }

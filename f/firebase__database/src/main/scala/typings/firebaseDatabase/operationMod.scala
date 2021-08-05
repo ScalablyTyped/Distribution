@@ -35,8 +35,7 @@ object operationMod {
     @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationSource.Server")
     @js.native
     def Server: OperationSource = js.native
-    @scala.inline
-    def Server_=(x: OperationSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
+    inline def Server_=(x: OperationSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
     
     /**
       * @const
@@ -45,15 +44,13 @@ object operationMod {
     @JSImport("@firebase/database/dist/src/core/operation/Operation", "OperationSource.User")
     @js.native
     def User: OperationSource = js.native
-    @scala.inline
-    def User_=(x: OperationSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("User")(x.asInstanceOf[js.Any])
+    inline def User_=(x: OperationSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("User")(x.asInstanceOf[js.Any])
     
     /**
       * @param {string} queryId
       * @return {!OperationSource}
       */
-    @scala.inline
-    def forServerTaggedQuery(queryId: String): OperationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("forServerTaggedQuery")(queryId.asInstanceOf[js.Any]).asInstanceOf[OperationSource]
+    inline def forServerTaggedQuery(queryId: String): OperationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("forServerTaggedQuery")(queryId.asInstanceOf[js.Any]).asInstanceOf[OperationSource]
   }
   
   @js.native
@@ -115,8 +112,7 @@ object operationMod {
   }
   object Operation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       operationForChild: String => Operation | Null,
       path: Path,
       source: OperationSource,
@@ -127,20 +123,15 @@ object operationMod {
       __obj.asInstanceOf[Operation]
     }
     
-    @scala.inline
-    implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+    extension [Self <: Operation](x: Self) {
       
-      @scala.inline
-      def setOperationForChild(value: String => Operation | Null): Self = StObject.set(x, "operationForChild", js.Any.fromFunction1(value))
+      inline def setOperationForChild(value: String => Operation | Null): Self = StObject.set(x, "operationForChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: OperationSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: OperationSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: OperationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: OperationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

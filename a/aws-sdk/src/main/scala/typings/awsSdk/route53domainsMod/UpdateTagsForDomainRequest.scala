@@ -18,25 +18,19 @@ trait UpdateTagsForDomainRequest extends StObject {
 }
 object UpdateTagsForDomainRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): UpdateTagsForDomainRequest = {
+  inline def apply(DomainName: DomainName): UpdateTagsForDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTagsForDomainRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTagsForDomainRequestMutableBuilder[Self <: UpdateTagsForDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTagsForDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToUpdate(value: TagList): Self = StObject.set(x, "TagsToUpdate", value.asInstanceOf[js.Any])
+    inline def setTagsToUpdate(value: TagList): Self = StObject.set(x, "TagsToUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToUpdateUndefined: Self = StObject.set(x, "TagsToUpdate", js.undefined)
+    inline def setTagsToUpdateUndefined: Self = StObject.set(x, "TagsToUpdate", js.undefined)
     
-    @scala.inline
-    def setTagsToUpdateVarargs(value: Tag*): Self = StObject.set(x, "TagsToUpdate", js.Array(value :_*))
+    inline def setTagsToUpdateVarargs(value: Tag*): Self = StObject.set(x, "TagsToUpdate", js.Array(value :_*))
   }
 }

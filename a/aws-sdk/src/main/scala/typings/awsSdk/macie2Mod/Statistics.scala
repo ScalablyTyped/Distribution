@@ -18,25 +18,19 @@ trait Statistics extends StObject {
 }
 object Statistics {
   
-  @scala.inline
-  def apply(): Statistics = {
+  inline def apply(): Statistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Statistics]
   }
   
-  @scala.inline
-  implicit class StatisticsMutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
+  extension [Self <: Statistics](x: Self) {
     
-    @scala.inline
-    def setApproximateNumberOfObjectsToProcess(value: double): Self = StObject.set(x, "approximateNumberOfObjectsToProcess", value.asInstanceOf[js.Any])
+    inline def setApproximateNumberOfObjectsToProcess(value: double): Self = StObject.set(x, "approximateNumberOfObjectsToProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproximateNumberOfObjectsToProcessUndefined: Self = StObject.set(x, "approximateNumberOfObjectsToProcess", js.undefined)
+    inline def setApproximateNumberOfObjectsToProcessUndefined: Self = StObject.set(x, "approximateNumberOfObjectsToProcess", js.undefined)
     
-    @scala.inline
-    def setNumberOfRuns(value: double): Self = StObject.set(x, "numberOfRuns", value.asInstanceOf[js.Any])
+    inline def setNumberOfRuns(value: double): Self = StObject.set(x, "numberOfRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRunsUndefined: Self = StObject.set(x, "numberOfRuns", js.undefined)
+    inline def setNumberOfRunsUndefined: Self = StObject.set(x, "numberOfRuns", js.undefined)
   }
 }

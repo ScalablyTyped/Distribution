@@ -120,20 +120,16 @@ object drawing {
   }
   object ControlPointOptions_ {
     
-    @scala.inline
-    def apply(anchorPointOptions: CircleOptions, midPointOptions: CircleOptions): ControlPointOptions_ = {
+    inline def apply(anchorPointOptions: CircleOptions, midPointOptions: CircleOptions): ControlPointOptions_ = {
       val __obj = js.Dynamic.literal(anchorPointOptions = anchorPointOptions.asInstanceOf[js.Any], midPointOptions = midPointOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlPointOptions_]
     }
     
-    @scala.inline
-    implicit class ControlPointOptions_MutableBuilder[Self <: ControlPointOptions_] (val x: Self) extends AnyVal {
+    extension [Self <: ControlPointOptions_](x: Self) {
       
-      @scala.inline
-      def setAnchorPointOptions(value: CircleOptions): Self = StObject.set(x, "anchorPointOptions", value.asInstanceOf[js.Any])
+      inline def setAnchorPointOptions(value: CircleOptions): Self = StObject.set(x, "anchorPointOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMidPointOptions(value: CircleOptions): Self = StObject.set(x, "midPointOptions", value.asInstanceOf[js.Any])
+      inline def setMidPointOptions(value: CircleOptions): Self = StObject.set(x, "midPointOptions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,26 +141,20 @@ object drawing {
   }
   object DrawingControlOptions_ {
     
-    @scala.inline
-    def apply(): DrawingControlOptions_ = {
+    inline def apply(): DrawingControlOptions_ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawingControlOptions_]
     }
     
-    @scala.inline
-    implicit class DrawingControlOptions_MutableBuilder[Self <: DrawingControlOptions_] (val x: Self) extends AnyVal {
+    extension [Self <: DrawingControlOptions_](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStyle(value: DrawingStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: DrawingStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -218,83 +208,58 @@ object drawing {
   }
   object DrawingOptions {
     
-    @scala.inline
-    def apply(): DrawingOptions = {
+    inline def apply(): DrawingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawingOptions]
     }
     
-    @scala.inline
-    implicit class DrawingOptionsMutableBuilder[Self <: DrawingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DrawingOptions](x: Self) {
       
-      @scala.inline
-      def setArrowlineOptions(value: PolylineOptions): Self = StObject.set(x, "arrowlineOptions", value.asInstanceOf[js.Any])
+      inline def setArrowlineOptions(value: PolylineOptions): Self = StObject.set(x, "arrowlineOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowlineOptionsUndefined: Self = StObject.set(x, "arrowlineOptions", js.undefined)
+      inline def setArrowlineOptionsUndefined: Self = StObject.set(x, "arrowlineOptions", js.undefined)
       
-      @scala.inline
-      def setControlPointOptions(value: controlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
+      inline def setControlPointOptions(value: controlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
+      inline def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
       
-      @scala.inline
-      def setDrawingControl(value: js.Array[DrawingMode]): Self = StObject.set(x, "drawingControl", value.asInstanceOf[js.Any])
+      inline def setDrawingControl(value: js.Array[DrawingMode]): Self = StObject.set(x, "drawingControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingControlOptions(value: drawingControlOptions): Self = StObject.set(x, "drawingControlOptions", value.asInstanceOf[js.Any])
+      inline def setDrawingControlOptions(value: drawingControlOptions): Self = StObject.set(x, "drawingControlOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingControlOptionsUndefined: Self = StObject.set(x, "drawingControlOptions", js.undefined)
+      inline def setDrawingControlOptionsUndefined: Self = StObject.set(x, "drawingControlOptions", js.undefined)
       
-      @scala.inline
-      def setDrawingControlUndefined: Self = StObject.set(x, "drawingControl", js.undefined)
+      inline def setDrawingControlUndefined: Self = StObject.set(x, "drawingControl", js.undefined)
       
-      @scala.inline
-      def setDrawingControlVarargs(value: DrawingMode*): Self = StObject.set(x, "drawingControl", js.Array(value :_*))
+      inline def setDrawingControlVarargs(value: DrawingMode*): Self = StObject.set(x, "drawingControl", js.Array(value :_*))
       
-      @scala.inline
-      def setDrawingMode(value: DrawingMode): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
+      inline def setDrawingMode(value: DrawingMode): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingModeUndefined: Self = StObject.set(x, "drawingMode", js.undefined)
+      inline def setDrawingModeUndefined: Self = StObject.set(x, "drawingMode", js.undefined)
       
-      @scala.inline
-      def setEllipseOptions(value: EllipseOptions): Self = StObject.set(x, "ellipseOptions", value.asInstanceOf[js.Any])
+      inline def setEllipseOptions(value: EllipseOptions): Self = StObject.set(x, "ellipseOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipseOptionsUndefined: Self = StObject.set(x, "ellipseOptions", js.undefined)
+      inline def setEllipseOptionsUndefined: Self = StObject.set(x, "ellipseOptions", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+      inline def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
+      inline def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
       
-      @scala.inline
-      def setPolygonOptions(value: PolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+      inline def setPolygonOptions(value: PolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+      inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
       
-      @scala.inline
-      def setPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
+      inline def setPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
+      inline def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
       
-      @scala.inline
-      def setRectangleOptions(value: RectangleOptions): Self = StObject.set(x, "rectangleOptions", value.asInstanceOf[js.Any])
+      inline def setRectangleOptions(value: RectangleOptions): Self = StObject.set(x, "rectangleOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectangleOptionsUndefined: Self = StObject.set(x, "rectangleOptions", js.undefined)
+      inline def setRectangleOptionsUndefined: Self = StObject.set(x, "rectangleOptions", js.undefined)
     }
   }
   

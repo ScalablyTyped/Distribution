@@ -9,8 +9,7 @@ trait PathConstraintSpacingTimeline
      with PathConstraintPositionTimeline
 object PathConstraintSpacingTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     curves: js.Any,
     frames: ArrayLike[Double],

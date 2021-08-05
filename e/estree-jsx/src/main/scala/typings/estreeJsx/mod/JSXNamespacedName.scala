@@ -15,17 +15,14 @@ trait JSXNamespacedName
 }
 object JSXNamespacedName {
   
-  @scala.inline
-  def apply(): JSXNamespacedName = {
+  inline def apply(): JSXNamespacedName = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXNamespacedName")
     __obj.asInstanceOf[JSXNamespacedName]
   }
   
-  @scala.inline
-  implicit class JSXNamespacedNameMutableBuilder[Self <: JSXNamespacedName] (val x: Self) extends AnyVal {
+  extension [Self <: JSXNamespacedName](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXNamespacedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXNamespacedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

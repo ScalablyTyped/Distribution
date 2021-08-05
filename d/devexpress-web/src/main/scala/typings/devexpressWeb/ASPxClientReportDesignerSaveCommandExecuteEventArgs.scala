@@ -18,16 +18,13 @@ trait ASPxClientReportDesignerSaveCommandExecuteEventArgs
 }
 object ASPxClientReportDesignerSaveCommandExecuteEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean): ASPxClientReportDesignerSaveCommandExecuteEventArgs = {
+  inline def apply(handled: Boolean): ASPxClientReportDesignerSaveCommandExecuteEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerSaveCommandExecuteEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerSaveCommandExecuteEventArgsMutableBuilder[Self <: ASPxClientReportDesignerSaveCommandExecuteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerSaveCommandExecuteEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

@@ -29,34 +29,25 @@ trait SchemaAudienceSegmentGroup extends StObject {
 }
 object SchemaAudienceSegmentGroup {
   
-  @scala.inline
-  def apply(): SchemaAudienceSegmentGroup = {
+  inline def apply(): SchemaAudienceSegmentGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAudienceSegmentGroup]
   }
   
-  @scala.inline
-  implicit class SchemaAudienceSegmentGroupMutableBuilder[Self <: SchemaAudienceSegmentGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAudienceSegmentGroup](x: Self) {
     
-    @scala.inline
-    def setAudienceSegments(value: js.Array[SchemaAudienceSegment]): Self = StObject.set(x, "audienceSegments", value.asInstanceOf[js.Any])
+    inline def setAudienceSegments(value: js.Array[SchemaAudienceSegment]): Self = StObject.set(x, "audienceSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceSegmentsUndefined: Self = StObject.set(x, "audienceSegments", js.undefined)
+    inline def setAudienceSegmentsUndefined: Self = StObject.set(x, "audienceSegments", js.undefined)
     
-    @scala.inline
-    def setAudienceSegmentsVarargs(value: SchemaAudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value :_*))
+    inline def setAudienceSegmentsVarargs(value: SchemaAudienceSegment*): Self = StObject.set(x, "audienceSegments", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

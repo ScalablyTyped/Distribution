@@ -11,22 +11,17 @@ trait GoogleCloudDialogflowV2ValidationResult extends StObject {
 }
 object GoogleCloudDialogflowV2ValidationResult {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2ValidationResult = {
+  inline def apply(): GoogleCloudDialogflowV2ValidationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2ValidationResult]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2ValidationResultMutableBuilder[Self <: GoogleCloudDialogflowV2ValidationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2ValidationResult](x: Self) {
     
-    @scala.inline
-    def setValidationErrors(value: js.Array[GoogleCloudDialogflowV2ValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+    inline def setValidationErrors(value: js.Array[GoogleCloudDialogflowV2ValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+    inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
-    @scala.inline
-    def setValidationErrorsVarargs(value: GoogleCloudDialogflowV2ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: GoogleCloudDialogflowV2ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
   }
 }

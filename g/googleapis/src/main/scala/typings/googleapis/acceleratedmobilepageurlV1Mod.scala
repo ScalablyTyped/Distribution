@@ -95,17 +95,14 @@ object acceleratedmobilepageurlV1Mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -125,26 +122,20 @@ object acceleratedmobilepageurlV1Mod {
     }
     object ParamsResourceAmpurlsBatchget {
       
-      @scala.inline
-      def apply(): ParamsResourceAmpurlsBatchget = {
+      inline def apply(): ParamsResourceAmpurlsBatchget = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceAmpurlsBatchget]
       }
       
-      @scala.inline
-      implicit class ParamsResourceAmpurlsBatchgetMutableBuilder[Self <: ParamsResourceAmpurlsBatchget] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceAmpurlsBatchget](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setRequestBody(value: SchemaBatchGetAmpUrlsRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+        inline def setRequestBody(value: SchemaBatchGetAmpUrlsRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+        inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
       }
     }
     
@@ -171,32 +162,24 @@ object acceleratedmobilepageurlV1Mod {
     }
     object SchemaAmpUrl {
       
-      @scala.inline
-      def apply(): SchemaAmpUrl = {
+      inline def apply(): SchemaAmpUrl = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaAmpUrl]
       }
       
-      @scala.inline
-      implicit class SchemaAmpUrlMutableBuilder[Self <: SchemaAmpUrl] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaAmpUrl](x: Self) {
         
-        @scala.inline
-        def setAmpUrl(value: String): Self = StObject.set(x, "ampUrl", value.asInstanceOf[js.Any])
+        inline def setAmpUrl(value: String): Self = StObject.set(x, "ampUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAmpUrlUndefined: Self = StObject.set(x, "ampUrl", js.undefined)
+        inline def setAmpUrlUndefined: Self = StObject.set(x, "ampUrl", js.undefined)
         
-        @scala.inline
-        def setCdnAmpUrl(value: String): Self = StObject.set(x, "cdnAmpUrl", value.asInstanceOf[js.Any])
+        inline def setCdnAmpUrl(value: String): Self = StObject.set(x, "cdnAmpUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCdnAmpUrlUndefined: Self = StObject.set(x, "cdnAmpUrl", js.undefined)
+        inline def setCdnAmpUrlUndefined: Self = StObject.set(x, "cdnAmpUrl", js.undefined)
         
-        @scala.inline
-        def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
+        inline def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOriginalUrlUndefined: Self = StObject.set(x, "originalUrl", js.undefined)
+        inline def setOriginalUrlUndefined: Self = StObject.set(x, "originalUrl", js.undefined)
       }
     }
     
@@ -222,32 +205,24 @@ object acceleratedmobilepageurlV1Mod {
     }
     object SchemaAmpUrlError {
       
-      @scala.inline
-      def apply(): SchemaAmpUrlError = {
+      inline def apply(): SchemaAmpUrlError = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaAmpUrlError]
       }
       
-      @scala.inline
-      implicit class SchemaAmpUrlErrorMutableBuilder[Self <: SchemaAmpUrlError] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaAmpUrlError](x: Self) {
         
-        @scala.inline
-        def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+        inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+        inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
         
-        @scala.inline
-        def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+        inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+        inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
         
-        @scala.inline
-        def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
+        inline def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOriginalUrlUndefined: Self = StObject.set(x, "originalUrl", js.undefined)
+        inline def setOriginalUrlUndefined: Self = StObject.set(x, "originalUrl", js.undefined)
       }
     }
     
@@ -270,29 +245,22 @@ object acceleratedmobilepageurlV1Mod {
     }
     object SchemaBatchGetAmpUrlsRequest {
       
-      @scala.inline
-      def apply(): SchemaBatchGetAmpUrlsRequest = {
+      inline def apply(): SchemaBatchGetAmpUrlsRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaBatchGetAmpUrlsRequest]
       }
       
-      @scala.inline
-      implicit class SchemaBatchGetAmpUrlsRequestMutableBuilder[Self <: SchemaBatchGetAmpUrlsRequest] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaBatchGetAmpUrlsRequest](x: Self) {
         
-        @scala.inline
-        def setLookupStrategy(value: String): Self = StObject.set(x, "lookupStrategy", value.asInstanceOf[js.Any])
+        inline def setLookupStrategy(value: String): Self = StObject.set(x, "lookupStrategy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLookupStrategyUndefined: Self = StObject.set(x, "lookupStrategy", js.undefined)
+        inline def setLookupStrategyUndefined: Self = StObject.set(x, "lookupStrategy", js.undefined)
         
-        @scala.inline
-        def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+        inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+        inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
         
-        @scala.inline
-        def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+        inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
       }
     }
     
@@ -316,32 +284,24 @@ object acceleratedmobilepageurlV1Mod {
     }
     object SchemaBatchGetAmpUrlsResponse {
       
-      @scala.inline
-      def apply(): SchemaBatchGetAmpUrlsResponse = {
+      inline def apply(): SchemaBatchGetAmpUrlsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaBatchGetAmpUrlsResponse]
       }
       
-      @scala.inline
-      implicit class SchemaBatchGetAmpUrlsResponseMutableBuilder[Self <: SchemaBatchGetAmpUrlsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaBatchGetAmpUrlsResponse](x: Self) {
         
-        @scala.inline
-        def setAmpUrls(value: js.Array[SchemaAmpUrl]): Self = StObject.set(x, "ampUrls", value.asInstanceOf[js.Any])
+        inline def setAmpUrls(value: js.Array[SchemaAmpUrl]): Self = StObject.set(x, "ampUrls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAmpUrlsUndefined: Self = StObject.set(x, "ampUrls", js.undefined)
+        inline def setAmpUrlsUndefined: Self = StObject.set(x, "ampUrls", js.undefined)
         
-        @scala.inline
-        def setAmpUrlsVarargs(value: SchemaAmpUrl*): Self = StObject.set(x, "ampUrls", js.Array(value :_*))
+        inline def setAmpUrlsVarargs(value: SchemaAmpUrl*): Self = StObject.set(x, "ampUrls", js.Array(value :_*))
         
-        @scala.inline
-        def setUrlErrors(value: js.Array[SchemaAmpUrlError]): Self = StObject.set(x, "urlErrors", value.asInstanceOf[js.Any])
+        inline def setUrlErrors(value: js.Array[SchemaAmpUrlError]): Self = StObject.set(x, "urlErrors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlErrorsUndefined: Self = StObject.set(x, "urlErrors", js.undefined)
+        inline def setUrlErrorsUndefined: Self = StObject.set(x, "urlErrors", js.undefined)
         
-        @scala.inline
-        def setUrlErrorsVarargs(value: SchemaAmpUrlError*): Self = StObject.set(x, "urlErrors", js.Array(value :_*))
+        inline def setUrlErrorsVarargs(value: SchemaAmpUrlError*): Self = StObject.set(x, "urlErrors", js.Array(value :_*))
       }
     }
     
@@ -409,80 +369,56 @@ object acceleratedmobilepageurlV1Mod {
     }
     object StandardParameters {
       
-      @scala.inline
-      def apply(): StandardParameters = {
+      inline def apply(): StandardParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StandardParameters]
       }
       
-      @scala.inline
-      implicit class StandardParametersMutableBuilder[Self <: StandardParameters] (val x: Self) extends AnyVal {
+      extension [Self <: StandardParameters](x: Self) {
         
-        @scala.inline
-        def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+        inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+        inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+        inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
         
-        @scala.inline
-        def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+        inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+        inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+        inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
         
-        @scala.inline
-        def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+        inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+        inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
         
-        @scala.inline
-        def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+        inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+        inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        @scala.inline
-        def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+        inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+        inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
         
-        @scala.inline
-        def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+        inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+        inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
       }
     }
   }

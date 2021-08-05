@@ -16,20 +16,16 @@ trait SliderDecrementAction
 }
 object SliderDecrementAction {
   
-  @scala.inline
-  def apply(dragging: Boolean, max: Double, min: Double, step: Double): SliderDecrementAction = {
+  inline def apply(dragging: Boolean, max: Double, min: Double, step: Double): SliderDecrementAction = {
     val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("decrement")
     __obj.asInstanceOf[SliderDecrementAction]
   }
   
-  @scala.inline
-  implicit class SliderDecrementActionMutableBuilder[Self <: SliderDecrementAction] (val x: Self) extends AnyVal {
+  extension [Self <: SliderDecrementAction](x: Self) {
     
-    @scala.inline
-    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+    inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: decrement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: decrement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

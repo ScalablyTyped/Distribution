@@ -19,31 +19,23 @@ trait IHyperCubeDimensionqDef
 }
 object IHyperCubeDimensionqDef {
   
-  @scala.inline
-  def apply(): IHyperCubeDimensionqDef = {
+  inline def apply(): IHyperCubeDimensionqDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHyperCubeDimensionqDef]
   }
   
-  @scala.inline
-  implicit class IHyperCubeDimensionqDefMutableBuilder[Self <: IHyperCubeDimensionqDef] (val x: Self) extends AnyVal {
+  extension [Self <: IHyperCubeDimensionqDef](x: Self) {
     
-    @scala.inline
-    def setAutoSort(value: Boolean): Self = StObject.set(x, "autoSort", value.asInstanceOf[js.Any])
+    inline def setAutoSort(value: Boolean): Self = StObject.set(x, "autoSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSortUndefined: Self = StObject.set(x, "autoSort", js.undefined)
+    inline def setAutoSortUndefined: Self = StObject.set(x, "autoSort", js.undefined)
     
-    @scala.inline
-    def setCId(value: String): Self = StObject.set(x, "cId", value.asInstanceOf[js.Any])
+    inline def setCId(value: String): Self = StObject.set(x, "cId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCIdUndefined: Self = StObject.set(x, "cId", js.undefined)
+    inline def setCIdUndefined: Self = StObject.set(x, "cId", js.undefined)
     
-    @scala.inline
-    def setOthersLabel(value: IStringExpressionContainer): Self = StObject.set(x, "othersLabel", value.asInstanceOf[js.Any])
+    inline def setOthersLabel(value: IStringExpressionContainer): Self = StObject.set(x, "othersLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOthersLabelUndefined: Self = StObject.set(x, "othersLabel", js.undefined)
+    inline def setOthersLabelUndefined: Self = StObject.set(x, "othersLabel", js.undefined)
   }
 }

@@ -33,37 +33,27 @@ trait GoogleActionsV2UiElementsCarouselSelectCarouselItem extends StObject {
 }
 object GoogleActionsV2UiElementsCarouselSelectCarouselItem {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UiElementsCarouselSelectCarouselItem = {
+  inline def apply(): GoogleActionsV2UiElementsCarouselSelectCarouselItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UiElementsCarouselSelectCarouselItem]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UiElementsCarouselSelectCarouselItemMutableBuilder[Self <: GoogleActionsV2UiElementsCarouselSelectCarouselItem] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UiElementsCarouselSelectCarouselItem](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setOptionInfo(value: GoogleActionsV2OptionInfo): Self = StObject.set(x, "optionInfo", value.asInstanceOf[js.Any])
+    inline def setOptionInfo(value: GoogleActionsV2OptionInfo): Self = StObject.set(x, "optionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionInfoUndefined: Self = StObject.set(x, "optionInfo", js.undefined)
+    inline def setOptionInfoUndefined: Self = StObject.set(x, "optionInfo", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

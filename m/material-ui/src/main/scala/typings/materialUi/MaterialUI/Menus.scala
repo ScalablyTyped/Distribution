@@ -81,148 +81,102 @@ object Menus {
   }
   object DropDownMenuProps {
     
-    @scala.inline
-    def apply(): DropDownMenuProps = {
+    inline def apply(): DropDownMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropDownMenuProps]
     }
     
-    @scala.inline
-    implicit class DropDownMenuPropsMutableBuilder[Self <: DropDownMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropDownMenuProps](x: Self) {
       
-      @scala.inline
-      def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
+      inline def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
+      inline def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIconButton(value: ReactNode): Self = StObject.set(x, "iconButton", value.asInstanceOf[js.Any])
+      inline def setIconButton(value: ReactNode): Self = StObject.set(x, "iconButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconButtonUndefined: Self = StObject.set(x, "iconButton", js.undefined)
+      inline def setIconButtonUndefined: Self = StObject.set(x, "iconButton", js.undefined)
       
-      @scala.inline
-      def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+      inline def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+      inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
       
-      @scala.inline
-      def setLabelStyle(value: CSSProperties): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+      inline def setLabelStyle(value: CSSProperties): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+      inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
       
-      @scala.inline
-      def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+      inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "menuItemStyle", value.asInstanceOf[js.Any])
+      inline def setMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "menuItemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
+      inline def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
       
-      @scala.inline
-      def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
+      inline def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
+      inline def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* e */ SyntheticEvent[js.Object, Event], /* index */ Double, /* menuItemValue */ js.Any) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* e */ SyntheticEvent[js.Object, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* e */ SyntheticEvent[js.Object, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOpenImmediately(value: Boolean): Self = StObject.set(x, "openImmediately", value.asInstanceOf[js.Any])
+      inline def setOpenImmediately(value: Boolean): Self = StObject.set(x, "openImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenImmediatelyUndefined: Self = StObject.set(x, "openImmediately", js.undefined)
+      inline def setOpenImmediatelyUndefined: Self = StObject.set(x, "openImmediately", js.undefined)
       
-      @scala.inline
-      def setSelectedMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "selectedMenuItemStyle", value.asInstanceOf[js.Any])
+      inline def setSelectedMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "selectedMenuItemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedMenuItemStyleUndefined: Self = StObject.set(x, "selectedMenuItemStyle", js.undefined)
+      inline def setSelectedMenuItemStyleUndefined: Self = StObject.set(x, "selectedMenuItemStyle", js.undefined)
       
-      @scala.inline
-      def setSelectionRenderer(value: (/* value */ js.Any, /* menuItem */ js.Any) => Unit): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction2(value))
+      inline def setSelectionRenderer(value: (/* value */ js.Any, /* menuItem */ js.Any) => Unit): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelectionRendererUndefined: Self = StObject.set(x, "selectionRenderer", js.undefined)
+      inline def setSelectionRendererUndefined: Self = StObject.set(x, "selectionRenderer", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
+      inline def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
+      inline def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
       
-      @scala.inline
-      def setUnderlineStyle(value: CSSProperties): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
+      inline def setUnderlineStyle(value: CSSProperties): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
+      inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -302,190 +256,130 @@ object Menus {
   }
   object IconMenuProps {
     
-    @scala.inline
-    def apply(iconButtonElement: ReactElement): IconMenuProps = {
+    inline def apply(iconButtonElement: ReactElement): IconMenuProps = {
       val __obj = js.Dynamic.literal(iconButtonElement = iconButtonElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconMenuProps]
     }
     
-    @scala.inline
-    implicit class IconMenuPropsMutableBuilder[Self <: IconMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconMenuProps](x: Self) {
       
-      @scala.inline
-      def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
+      inline def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
+      inline def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
+      inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+      inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClickCloseDelay(value: Double): Self = StObject.set(x, "clickCloseDelay", value.asInstanceOf[js.Any])
+      inline def setClickCloseDelay(value: Double): Self = StObject.set(x, "clickCloseDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickCloseDelayUndefined: Self = StObject.set(x, "clickCloseDelay", js.undefined)
+      inline def setClickCloseDelayUndefined: Self = StObject.set(x, "clickCloseDelay", js.undefined)
       
-      @scala.inline
-      def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+      inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
       
-      @scala.inline
-      def setDisableAutoFocus(value: Boolean): Self = StObject.set(x, "disableAutoFocus", value.asInstanceOf[js.Any])
+      inline def setDisableAutoFocus(value: Boolean): Self = StObject.set(x, "disableAutoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAutoFocusUndefined: Self = StObject.set(x, "disableAutoFocus", js.undefined)
+      inline def setDisableAutoFocusUndefined: Self = StObject.set(x, "disableAutoFocus", js.undefined)
       
-      @scala.inline
-      def setIconButtonElement(value: ReactElement): Self = StObject.set(x, "iconButtonElement", value.asInstanceOf[js.Any])
+      inline def setIconButtonElement(value: ReactElement): Self = StObject.set(x, "iconButtonElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+      inline def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+      inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
       
-      @scala.inline
-      def setInitiallyKeyboardFocused(value: Boolean): Self = StObject.set(x, "initiallyKeyboardFocused", value.asInstanceOf[js.Any])
+      inline def setInitiallyKeyboardFocused(value: Boolean): Self = StObject.set(x, "initiallyKeyboardFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiallyKeyboardFocusedUndefined: Self = StObject.set(x, "initiallyKeyboardFocused", js.undefined)
+      inline def setInitiallyKeyboardFocusedUndefined: Self = StObject.set(x, "initiallyKeyboardFocused", js.undefined)
       
-      @scala.inline
-      def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+      inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
+      inline def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
+      inline def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[js.Any]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* e */ SyntheticEvent[js.Object, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ SyntheticEvent[js.Object, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnItemClick(value: (/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem) => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction2(value))
+      inline def setOnItemClick(value: (/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem) => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+      inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
+      inline def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnKeyboardFocusUndefined: Self = StObject.set(x, "onKeyboardFocus", js.undefined)
+      inline def setOnKeyboardFocusUndefined: Self = StObject.set(x, "onKeyboardFocus", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnMouseUp(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      @scala.inline
-      def setOnRequestChange(value: (/* opening */ Boolean, /* reason */ String) => Unit): Self = StObject.set(x, "onRequestChange", js.Any.fromFunction2(value))
+      inline def setOnRequestChange(value: (/* opening */ Boolean, /* reason */ String) => Unit): Self = StObject.set(x, "onRequestChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRequestChangeUndefined: Self = StObject.set(x, "onRequestChange", js.undefined)
+      inline def setOnRequestChangeUndefined: Self = StObject.set(x, "onRequestChange", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
+      inline def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
+      inline def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
       
-      @scala.inline
-      def setUseLayerForClickAway(value: Boolean): Self = StObject.set(x, "useLayerForClickAway", value.asInstanceOf[js.Any])
+      inline def setUseLayerForClickAway(value: Boolean): Self = StObject.set(x, "useLayerForClickAway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
+      inline def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -515,56 +409,40 @@ object Menus {
   }
   object MenuItemProps {
     
-    @scala.inline
-    def apply(): MenuItemProps = {
+    inline def apply(): MenuItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuItemProps]
     }
     
-    @scala.inline
-    implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuItemProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setContainerElement(value: ReactNode | String): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
+      inline def setContainerElement(value: ReactNode | String): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
+      inline def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
       
-      @scala.inline
-      def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+      inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
       
-      @scala.inline
-      def setFocusState(value: String): Self = StObject.set(x, "focusState", value.asInstanceOf[js.Any])
+      inline def setFocusState(value: String): Self = StObject.set(x, "focusState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusStateUndefined: Self = StObject.set(x, "focusState", js.undefined)
+      inline def setFocusStateUndefined: Self = StObject.set(x, "focusState", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMenuItems(value: ReactNode): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: ReactNode): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
+      inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     }
   }
   
@@ -613,115 +491,80 @@ object Menus {
   }
   object MenuProps {
     
-    @scala.inline
-    def apply(): MenuProps = {
+    inline def apply(): MenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuProps]
     }
     
-    @scala.inline
-    implicit class MenuPropsMutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuProps](x: Self) {
       
-      @scala.inline
-      def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
+      inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+      inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
       
-      @scala.inline
-      def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+      inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
       
-      @scala.inline
-      def setDisableAutoFocus(value: Boolean): Self = StObject.set(x, "disableAutoFocus", value.asInstanceOf[js.Any])
+      inline def setDisableAutoFocus(value: Boolean): Self = StObject.set(x, "disableAutoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAutoFocusUndefined: Self = StObject.set(x, "disableAutoFocus", js.undefined)
+      inline def setDisableAutoFocusUndefined: Self = StObject.set(x, "disableAutoFocus", js.undefined)
       
-      @scala.inline
-      def setInitiallyKeyboardFocused(value: Boolean): Self = StObject.set(x, "initiallyKeyboardFocused", value.asInstanceOf[js.Any])
+      inline def setInitiallyKeyboardFocused(value: Boolean): Self = StObject.set(x, "initiallyKeyboardFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiallyKeyboardFocusedUndefined: Self = StObject.set(x, "initiallyKeyboardFocused", js.undefined)
+      inline def setInitiallyKeyboardFocusedUndefined: Self = StObject.set(x, "initiallyKeyboardFocused", js.undefined)
       
-      @scala.inline
-      def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+      inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[js.Any]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnEscKeyDown(value: KeyboardEvent[js.Object] => Unit): Self = StObject.set(x, "onEscKeyDown", js.Any.fromFunction1(value))
+      inline def setOnEscKeyDown(value: KeyboardEvent[js.Object] => Unit): Self = StObject.set(x, "onEscKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscKeyDownUndefined: Self = StObject.set(x, "onEscKeyDown", js.undefined)
+      inline def setOnEscKeyDownUndefined: Self = StObject.set(x, "onEscKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnItemClick(value: (/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem) => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction2(value))
+      inline def setOnItemClick(value: (/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem) => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+      inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[js.Object] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[js.Object] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setSelectedMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "selectedMenuItemStyle", value.asInstanceOf[js.Any])
+      inline def setSelectedMenuItemStyle(value: CSSProperties): Self = StObject.set(x, "selectedMenuItemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedMenuItemStyleUndefined: Self = StObject.set(x, "selectedMenuItemStyle", js.undefined)
+      inline def setSelectedMenuItemStyleUndefined: Self = StObject.set(x, "selectedMenuItemStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueLink(value: ReactLink[js.Any | js.Array[js.Any]]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
+      inline def setValueLink(value: ReactLink[js.Any | js.Array[js.Any]]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueLinkUndefined: Self = StObject.set(x, "valueLink", js.undefined)
+      inline def setValueLinkUndefined: Self = StObject.set(x, "valueLink", js.undefined)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

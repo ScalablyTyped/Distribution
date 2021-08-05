@@ -10,8 +10,7 @@ object loaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(source: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def default(source: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   trait TSFile extends StObject {
     
@@ -21,23 +20,18 @@ object loaderMod {
   }
   object TSFile {
     
-    @scala.inline
-    def apply(version: Double): TSFile = {
+    inline def apply(version: Double): TSFile = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[TSFile]
     }
     
-    @scala.inline
-    implicit class TSFileMutableBuilder[Self <: TSFile] (val x: Self) extends AnyVal {
+    extension [Self <: TSFile](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

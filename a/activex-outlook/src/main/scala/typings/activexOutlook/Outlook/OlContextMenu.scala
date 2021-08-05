@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlContextMenu extends StObject
 object OlContextMenu {
   
-  @scala.inline
-  def olAttachmentContextMenu: `3` = 3.asInstanceOf[`3`]
+  inline def olAttachmentContextMenu: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olFolderContextMenu: `2` = 2.asInstanceOf[`2`]
+  inline def olFolderContextMenu: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olItemContextMenu: `0` = 0.asInstanceOf[`0`]
+  inline def olItemContextMenu: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olShortcutContextMenu: `5` = 5.asInstanceOf[`5`]
+  inline def olShortcutContextMenu: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olStoreContextMenu: `4` = 4.asInstanceOf[`4`]
+  inline def olStoreContextMenu: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olViewContextMenu: `1` = 1.asInstanceOf[`1`]
+  inline def olViewContextMenu: `1` = 1.asInstanceOf[`1`]
 }

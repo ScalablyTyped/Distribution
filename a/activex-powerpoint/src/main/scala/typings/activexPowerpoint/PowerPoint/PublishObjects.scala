@@ -14,13 +14,12 @@ trait PublishObjects extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.PublishObjects_typekey")
+  /* private */ @JSName("PowerPoint.PublishObjects_typekey")
   var PowerPointDotPublishObjects_typekey: PublishObjects
 }
 object PublishObjects {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Item: Double => PublishObject,
@@ -32,22 +31,16 @@ object PublishObjects {
     __obj.asInstanceOf[PublishObjects]
   }
   
-  @scala.inline
-  implicit class PublishObjectsMutableBuilder[Self <: PublishObjects] (val x: Self) extends AnyVal {
+  extension [Self <: PublishObjects](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => PublishObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => PublishObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPublishObjects_typekey(value: PublishObjects): Self = StObject.set(x, "PowerPoint.PublishObjects_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPublishObjects_typekey(value: PublishObjects): Self = StObject.set(x, "PowerPoint.PublishObjects_typekey", value.asInstanceOf[js.Any])
   }
 }

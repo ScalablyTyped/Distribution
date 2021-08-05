@@ -113,6 +113,5 @@ object Color {
     * @return the newly created color object
     */
   /* static member */
-  @scala.inline
-  def random(): typings.paper.paper.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Color]
+  inline def random(): typings.paper.paper.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Color]
 }

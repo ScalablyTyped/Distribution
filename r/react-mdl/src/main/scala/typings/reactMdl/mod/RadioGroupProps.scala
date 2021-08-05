@@ -22,37 +22,27 @@ trait RadioGroupProps
 }
 object RadioGroupProps {
   
-  @scala.inline
-  def apply(name: String, value: String | Double): RadioGroupProps = {
+  inline def apply(name: String, value: String | Double): RadioGroupProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioGroupProps]
   }
   
-  @scala.inline
-  implicit class RadioGroupPropsMutableBuilder[Self <: RadioGroupProps] (val x: Self) extends AnyVal {
+  extension [Self <: RadioGroupProps](x: Self) {
     
-    @scala.inline
-    def setChildContainer(value: String): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
+    inline def setChildContainer(value: String): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
+    inline def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

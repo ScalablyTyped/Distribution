@@ -11,19 +11,15 @@ trait CsmSettings extends StObject {
 }
 object CsmSettings {
   
-  @scala.inline
-  def apply(): CsmSettings = {
+  inline def apply(): CsmSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CsmSettings]
   }
   
-  @scala.inline
-  implicit class CsmSettingsMutableBuilder[Self <: CsmSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CsmSettings](x: Self) {
     
-    @scala.inline
-    def setRctokenAud(value: String): Self = StObject.set(x, "rctokenAud", value.asInstanceOf[js.Any])
+    inline def setRctokenAud(value: String): Self = StObject.set(x, "rctokenAud", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRctokenAudUndefined: Self = StObject.set(x, "rctokenAud", js.undefined)
+    inline def setRctokenAudUndefined: Self = StObject.set(x, "rctokenAud", js.undefined)
   }
 }

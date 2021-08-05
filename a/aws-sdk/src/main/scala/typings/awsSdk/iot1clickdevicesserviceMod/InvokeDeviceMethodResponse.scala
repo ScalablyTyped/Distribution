@@ -13,19 +13,15 @@ trait InvokeDeviceMethodResponse extends StObject {
 }
 object InvokeDeviceMethodResponse {
   
-  @scala.inline
-  def apply(): InvokeDeviceMethodResponse = {
+  inline def apply(): InvokeDeviceMethodResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvokeDeviceMethodResponse]
   }
   
-  @scala.inline
-  implicit class InvokeDeviceMethodResponseMutableBuilder[Self <: InvokeDeviceMethodResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InvokeDeviceMethodResponse](x: Self) {
     
-    @scala.inline
-    def setDeviceMethodResponse(value: string): Self = StObject.set(x, "DeviceMethodResponse", value.asInstanceOf[js.Any])
+    inline def setDeviceMethodResponse(value: string): Self = StObject.set(x, "DeviceMethodResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMethodResponseUndefined: Self = StObject.set(x, "DeviceMethodResponse", js.undefined)
+    inline def setDeviceMethodResponseUndefined: Self = StObject.set(x, "DeviceMethodResponse", js.undefined)
   }
 }

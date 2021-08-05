@@ -28,40 +28,29 @@ trait Hits extends StObject {
 }
 object Hits {
   
-  @scala.inline
-  def apply(): Hits = {
+  inline def apply(): Hits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hits]
   }
   
-  @scala.inline
-  implicit class HitsMutableBuilder[Self <: Hits] (val x: Self) extends AnyVal {
+  extension [Self <: Hits](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setFound(value: Long): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: Long): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
+    inline def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
     
-    @scala.inline
-    def setHit(value: HitList): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
+    inline def setHit(value: HitList): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitUndefined: Self = StObject.set(x, "hit", js.undefined)
+    inline def setHitUndefined: Self = StObject.set(x, "hit", js.undefined)
     
-    @scala.inline
-    def setHitVarargs(value: Hit*): Self = StObject.set(x, "hit", js.Array(value :_*))
+    inline def setHitVarargs(value: Hit*): Self = StObject.set(x, "hit", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: Long): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Long): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait IELangDBOptions extends StObject {
 }
 object IELangDBOptions {
   
-  @scala.inline
-  def apply(autocompleteRows: Double): IELangDBOptions = {
+  inline def apply(autocompleteRows: Double): IELangDBOptions = {
     val __obj = js.Dynamic.literal(autocompleteRows = autocompleteRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[IELangDBOptions]
   }
   
-  @scala.inline
-  implicit class IELangDBOptionsMutableBuilder[Self <: IELangDBOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IELangDBOptions](x: Self) {
     
-    @scala.inline
-    def setAutocompleteRows(value: Double): Self = StObject.set(x, "autocompleteRows", value.asInstanceOf[js.Any])
+    inline def setAutocompleteRows(value: Double): Self = StObject.set(x, "autocompleteRows", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait DefaultString extends StObject {
 }
 object DefaultString {
   
-  @scala.inline
-  def apply(default: String, describe: String): DefaultString = {
+  inline def apply(default: String, describe: String): DefaultString = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultString]
   }
   
-  @scala.inline
-  implicit class DefaultStringMutableBuilder[Self <: DefaultString] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultString](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
   }
 }

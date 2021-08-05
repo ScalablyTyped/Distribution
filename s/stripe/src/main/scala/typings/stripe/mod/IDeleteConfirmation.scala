@@ -14,23 +14,18 @@ trait IDeleteConfirmation extends StObject {
 }
 object IDeleteConfirmation {
   
-  @scala.inline
-  def apply(deleted: Boolean, id: String, `object`: String): IDeleteConfirmation = {
+  inline def apply(deleted: Boolean, id: String, `object`: String): IDeleteConfirmation = {
     val __obj = js.Dynamic.literal(deleted = deleted.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteConfirmation]
   }
   
-  @scala.inline
-  implicit class IDeleteConfirmationMutableBuilder[Self <: IDeleteConfirmation] (val x: Self) extends AnyVal {
+  extension [Self <: IDeleteConfirmation](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

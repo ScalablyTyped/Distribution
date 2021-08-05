@@ -13,19 +13,15 @@ trait StartVpcEndpointServicePrivateDnsVerificationResult extends StObject {
 }
 object StartVpcEndpointServicePrivateDnsVerificationResult {
   
-  @scala.inline
-  def apply(): StartVpcEndpointServicePrivateDnsVerificationResult = {
+  inline def apply(): StartVpcEndpointServicePrivateDnsVerificationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartVpcEndpointServicePrivateDnsVerificationResult]
   }
   
-  @scala.inline
-  implicit class StartVpcEndpointServicePrivateDnsVerificationResultMutableBuilder[Self <: StartVpcEndpointServicePrivateDnsVerificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartVpcEndpointServicePrivateDnsVerificationResult](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
   }
 }

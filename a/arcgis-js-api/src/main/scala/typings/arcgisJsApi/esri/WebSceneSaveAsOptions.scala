@@ -26,8 +26,7 @@ trait WebSceneSaveAsOptions
 }
 object WebSceneSaveAsOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object WebSceneSaveAsOptions {
     __obj.asInstanceOf[WebSceneSaveAsOptions]
   }
   
-  @scala.inline
-  implicit class WebSceneSaveAsOptionsMutableBuilder[Self <: WebSceneSaveAsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebSceneSaveAsOptions](x: Self) {
     
-    @scala.inline
-    def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
+    inline def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
   }
 }

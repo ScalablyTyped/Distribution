@@ -43,17 +43,14 @@ object userMod {
   }
   object UserClientDeps {
     
-    @scala.inline
-    def apply(client: IClient): UserClientDeps = {
+    inline def apply(client: IClient): UserClientDeps = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserClientDeps]
     }
     
-    @scala.inline
-    implicit class UserClientDepsMutableBuilder[Self <: UserClientDeps] (val x: Self) extends AnyVal {
+    extension [Self <: UserClientDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
 }

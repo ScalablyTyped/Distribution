@@ -29,8 +29,7 @@ object libTeachingBubbleMod {
     @JSImport("office-ui-fabric-react/lib/TeachingBubble", "TeachingBubbleBase.defaultProps")
     @js.native
     def defaultProps: CalloutProps = js.native
-    @scala.inline
-    def defaultProps_=(x: CalloutProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CalloutProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/TeachingBubble", "TeachingBubbleContent")

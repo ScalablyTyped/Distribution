@@ -13,16 +13,13 @@ trait UpdateDomainNameserversResponse extends StObject {
 }
 object UpdateDomainNameserversResponse {
   
-  @scala.inline
-  def apply(OperationId: OperationId): UpdateDomainNameserversResponse = {
+  inline def apply(OperationId: OperationId): UpdateDomainNameserversResponse = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainNameserversResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDomainNameserversResponseMutableBuilder[Self <: UpdateDomainNameserversResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDomainNameserversResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }
 }

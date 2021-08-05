@@ -15,20 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(instance: ElementHandle[Element]): ExpectPuppeteer = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[ExpectPuppeteer]
-  @scala.inline
-  def apply(instance: Page): ExpectPuppeteer = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[ExpectPuppeteer]
+  inline def apply(instance: ElementHandle[Element]): ExpectPuppeteer = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[ExpectPuppeteer]
+  inline def apply(instance: Page): ExpectPuppeteer = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[ExpectPuppeteer]
   
   @JSImport("expect-puppeteer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDefaultOptions(): ExpectDefaultOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ExpectDefaultOptions]
+  inline def getDefaultOptions(): ExpectDefaultOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ExpectDefaultOptions]
   
-  @scala.inline
-  def setDefaultOptions(options: ExpectDefaultOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultOptions(options: ExpectDefaultOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Default options that apply to all expectations and can be set globally
@@ -47,26 +43,20 @@ object mod {
   }
   object ExpectDefaultOptions {
     
-    @scala.inline
-    def apply(): ExpectDefaultOptions = {
+    inline def apply(): ExpectDefaultOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpectDefaultOptions]
     }
     
-    @scala.inline
-    implicit class ExpectDefaultOptionsMutableBuilder[Self <: ExpectDefaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectDefaultOptions](x: Self) {
       
-      @scala.inline
-      def setPolling(value: ExpectPolling): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+      inline def setPolling(value: ExpectPolling): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
+      inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -120,20 +110,16 @@ object mod {
   }
   object ExpectTimingActions {
     
-    @scala.inline
-    def apply(): ExpectTimingActions = {
+    inline def apply(): ExpectTimingActions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpectTimingActions]
     }
     
-    @scala.inline
-    implicit class ExpectTimingActionsMutableBuilder[Self <: ExpectTimingActions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectTimingActions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     }
   }
   
@@ -163,38 +149,28 @@ object mod {
   }
   object ExpectToClickOptions {
     
-    @scala.inline
-    def apply(): ExpectToClickOptions = {
+    inline def apply(): ExpectToClickOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpectToClickOptions]
     }
     
-    @scala.inline
-    implicit class ExpectToClickOptionsMutableBuilder[Self <: ExpectToClickOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectToClickOptions](x: Self) {
       
-      @scala.inline
-      def setButton(value: left | right | middle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: left | right | middle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+      inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+      inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
       
-      @scala.inline
-      def setText(value: String | RegExp): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String | RegExp): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   

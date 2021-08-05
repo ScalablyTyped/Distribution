@@ -12,16 +12,13 @@ trait HttpContentCodingHeaderValue extends StObject {
 }
 object HttpContentCodingHeaderValue {
   
-  @scala.inline
-  def apply(contentCoding: String): HttpContentCodingHeaderValue = {
+  inline def apply(contentCoding: String): HttpContentCodingHeaderValue = {
     val __obj = js.Dynamic.literal(contentCoding = contentCoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpContentCodingHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpContentCodingHeaderValueMutableBuilder[Self <: HttpContentCodingHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpContentCodingHeaderValue](x: Self) {
     
-    @scala.inline
-    def setContentCoding(value: String): Self = StObject.set(x, "contentCoding", value.asInstanceOf[js.Any])
+    inline def setContentCoding(value: String): Self = StObject.set(x, "contentCoding", value.asInstanceOf[js.Any])
   }
 }

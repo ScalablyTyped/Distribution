@@ -14,16 +14,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(ResizeObserver: Instantiable1[/* callback */ ResizeObserverCallback, ResizeObserver]): Window = {
+  inline def apply(ResizeObserver: Instantiable1[/* callback */ ResizeObserverCallback, ResizeObserver]): Window = {
     val __obj = js.Dynamic.literal(ResizeObserver = ResizeObserver.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setResizeObserver(value: Instantiable1[/* callback */ ResizeObserverCallback, ResizeObserver]): Self = StObject.set(x, "ResizeObserver", value.asInstanceOf[js.Any])
+    inline def setResizeObserver(value: Instantiable1[/* callback */ ResizeObserverCallback, ResizeObserver]): Self = StObject.set(x, "ResizeObserver", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait ScrollBarOption extends StObject {
 }
 object ScrollBarOption {
   
-  @scala.inline
-  def apply(fade: Boolean): ScrollBarOption = {
+  inline def apply(fade: Boolean): ScrollBarOption = {
     val __obj = js.Dynamic.literal(fade = fade.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollBarOption]
   }
   
-  @scala.inline
-  implicit class ScrollBarOptionMutableBuilder[Self <: ScrollBarOption] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollBarOption](x: Self) {
     
-    @scala.inline
-    def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+    inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
   }
 }

@@ -18,6 +18,5 @@ object hardwareBackButtonMod {
   @js.native
   val OVERLAY_BACK_BUTTON_PRIORITY: /* 100 */ Double = js.native
   
-  @scala.inline
-  def startHardwareBackButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startHardwareBackButton")().asInstanceOf[Unit]
+  inline def startHardwareBackButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startHardwareBackButton")().asInstanceOf[Unit]
 }

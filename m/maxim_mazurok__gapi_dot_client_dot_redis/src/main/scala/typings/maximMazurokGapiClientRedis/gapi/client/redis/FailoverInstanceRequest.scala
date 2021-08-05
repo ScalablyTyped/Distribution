@@ -11,19 +11,15 @@ trait FailoverInstanceRequest extends StObject {
 }
 object FailoverInstanceRequest {
   
-  @scala.inline
-  def apply(): FailoverInstanceRequest = {
+  inline def apply(): FailoverInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailoverInstanceRequest]
   }
   
-  @scala.inline
-  implicit class FailoverInstanceRequestMutableBuilder[Self <: FailoverInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FailoverInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setDataProtectionMode(value: String): Self = StObject.set(x, "dataProtectionMode", value.asInstanceOf[js.Any])
+    inline def setDataProtectionMode(value: String): Self = StObject.set(x, "dataProtectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataProtectionModeUndefined: Self = StObject.set(x, "dataProtectionMode", js.undefined)
+    inline def setDataProtectionModeUndefined: Self = StObject.set(x, "dataProtectionMode", js.undefined)
   }
 }

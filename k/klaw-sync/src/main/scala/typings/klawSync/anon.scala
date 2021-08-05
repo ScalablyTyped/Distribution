@@ -15,20 +15,16 @@ object anon {
   }
   object ReaddirSync {
     
-    @scala.inline
-    def apply(readdirSync: String => js.Array[String], statSync: String => Stats): ReaddirSync = {
+    inline def apply(readdirSync: String => js.Array[String], statSync: String => Stats): ReaddirSync = {
       val __obj = js.Dynamic.literal(readdirSync = js.Any.fromFunction1(readdirSync), statSync = js.Any.fromFunction1(statSync))
       __obj.asInstanceOf[ReaddirSync]
     }
     
-    @scala.inline
-    implicit class ReaddirSyncMutableBuilder[Self <: ReaddirSync] (val x: Self) extends AnyVal {
+    extension [Self <: ReaddirSync](x: Self) {
       
-      @scala.inline
-      def setReaddirSync(value: String => js.Array[String]): Self = StObject.set(x, "readdirSync", js.Any.fromFunction1(value))
+      inline def setReaddirSync(value: String => js.Array[String]): Self = StObject.set(x, "readdirSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatSync(value: String => Stats): Self = StObject.set(x, "statSync", js.Any.fromFunction1(value))
+      inline def setStatSync(value: String => Stats): Self = StObject.set(x, "statSync", js.Any.fromFunction1(value))
     }
   }
 }

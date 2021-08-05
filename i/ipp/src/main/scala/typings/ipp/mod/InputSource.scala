@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputSource extends StObject
 object InputSource {
   
-  @scala.inline
-  def adf: typings.ipp.ippStrings.adf = "adf".asInstanceOf[typings.ipp.ippStrings.adf]
+  inline def adf: typings.ipp.ippStrings.adf = "adf".asInstanceOf[typings.ipp.ippStrings.adf]
   
-  @scala.inline
-  def `film-reader`: typings.ipp.ippStrings.`film-reader` = "film-reader".asInstanceOf[typings.ipp.ippStrings.`film-reader`]
+  inline def `film-reader`: typings.ipp.ippStrings.`film-reader` = "film-reader".asInstanceOf[typings.ipp.ippStrings.`film-reader`]
   
-  @scala.inline
-  def platen: typings.ipp.ippStrings.platen = "platen".asInstanceOf[typings.ipp.ippStrings.platen]
+  inline def platen: typings.ipp.ippStrings.platen = "platen".asInstanceOf[typings.ipp.ippStrings.platen]
 }

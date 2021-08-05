@@ -17,8 +17,7 @@ trait StringRepresentation
 }
 object StringRepresentation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     convertToControlValue: js.Any => String,
     convertToPropertyValue: (String, `type`) => js.Any,
     create: XTypeConverter => Unit,
@@ -28,13 +27,10 @@ object StringRepresentation {
     __obj.asInstanceOf[StringRepresentation]
   }
   
-  @scala.inline
-  implicit class StringRepresentationMutableBuilder[Self <: StringRepresentation] (val x: Self) extends AnyVal {
+  extension [Self <: StringRepresentation](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XTypeConverter => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XTypeConverter => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateConstant(value: (XTypeConverter, String, SeqEquiv[String]) => Unit): Self = StObject.set(x, "createConstant", js.Any.fromFunction3(value))
+    inline def setCreateConstant(value: (XTypeConverter, String, SeqEquiv[String]) => Unit): Self = StObject.set(x, "createConstant", js.Any.fromFunction3(value))
   }
 }

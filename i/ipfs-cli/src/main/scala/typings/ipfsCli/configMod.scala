@@ -11,8 +11,7 @@ object configMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("ipfs-cli/dist/src/commands/config", "command")
   @js.native
@@ -22,6 +21,5 @@ object configMod {
   @js.native
   val description: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintValueBoolJsonKeyTimeout: Bool): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintValueBoolJsonKeyTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintValueBoolJsonKeyTimeout: Bool): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintValueBoolJsonKeyTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

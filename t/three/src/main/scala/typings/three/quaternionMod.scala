@@ -181,8 +181,7 @@ object quaternionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def multiplyQuaternionsFlat(
+    inline def multiplyQuaternionsFlat(
       dst: js.Array[Double],
       dstOffset: Double,
       src0: js.Array[Double],
@@ -194,11 +193,9 @@ object quaternionMod {
     /**
     	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
     	 */
-    @scala.inline
-    def slerp(qa: Quaternion, qb: Quaternion, qm: Quaternion, t: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    inline def slerp(qa: Quaternion, qb: Quaternion, qm: Quaternion, t: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
     
-    @scala.inline
-    def slerpFlat(
+    inline def slerpFlat(
       dst: js.Array[Double],
       dstOffset: Double,
       src0: js.Array[Double],

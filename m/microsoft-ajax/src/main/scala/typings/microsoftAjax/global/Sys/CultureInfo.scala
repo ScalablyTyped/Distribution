@@ -67,8 +67,7 @@ object CultureInfo {
   @JSGlobal("Sys.CultureInfo.CurrentCulture")
   @js.native
   def CurrentCulture: typings.microsoftAjax.Sys.CultureInfo = js.native
-  @scala.inline
-  def CurrentCulture_=(x: typings.microsoftAjax.Sys.CultureInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurrentCulture")(x.asInstanceOf[js.Any])
+  inline def CurrentCulture_=(x: typings.microsoftAjax.Sys.CultureInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurrentCulture")(x.asInstanceOf[js.Any])
   
   /**
     * Gets the globalization values of the invariant culture as sent by the server. This member is static and can be invoked without creating an instance of the class.
@@ -79,6 +78,5 @@ object CultureInfo {
   @JSGlobal("Sys.CultureInfo.InvariantCulture")
   @js.native
   def InvariantCulture: typings.microsoftAjax.Sys.CultureInfo = js.native
-  @scala.inline
-  def InvariantCulture_=(x: typings.microsoftAjax.Sys.CultureInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvariantCulture")(x.asInstanceOf[js.Any])
+  inline def InvariantCulture_=(x: typings.microsoftAjax.Sys.CultureInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvariantCulture")(x.asInstanceOf[js.Any])
 }

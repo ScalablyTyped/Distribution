@@ -15,11 +15,9 @@ object mod {
   @js.native
   val KEYS: VisitorKeys = js.native
   
-  @scala.inline
-  def getKeys(node: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeys")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getKeys(node: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeys")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def unionWith(keys: VisitorKeys): VisitorKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("unionWith")(keys.asInstanceOf[js.Any]).asInstanceOf[VisitorKeys]
+  inline def unionWith(keys: VisitorKeys): VisitorKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("unionWith")(keys.asInstanceOf[js.Any]).asInstanceOf[VisitorKeys]
   
   type VisitorKeys = StringDictionary[js.UndefOr[js.Array[String]]]
 }

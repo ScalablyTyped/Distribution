@@ -18,25 +18,19 @@ trait JobFailure extends StObject {
 }
 object JobFailure {
   
-  @scala.inline
-  def apply(): JobFailure = {
+  inline def apply(): JobFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobFailure]
   }
   
-  @scala.inline
-  implicit class JobFailureMutableBuilder[Self <: JobFailure] (val x: Self) extends AnyVal {
+  extension [Self <: JobFailure](x: Self) {
     
-    @scala.inline
-    def setFailureCode(value: JobFailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: JobFailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: JobFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: JobFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
   }
 }

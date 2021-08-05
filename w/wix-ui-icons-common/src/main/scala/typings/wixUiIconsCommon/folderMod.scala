@@ -22,20 +22,16 @@ object folderMod extends Shortcut {
   }
   object FolderProps {
     
-    @scala.inline
-    def apply(): FolderProps = {
+    inline def apply(): FolderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FolderProps]
     }
     
-    @scala.inline
-    implicit class FolderPropsMutableBuilder[Self <: FolderProps] (val x: Self) extends AnyVal {
+    extension [Self <: FolderProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

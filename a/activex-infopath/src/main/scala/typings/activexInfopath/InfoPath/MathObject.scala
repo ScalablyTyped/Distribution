@@ -11,7 +11,7 @@ trait MathObject extends StObject {
   
   def Eval(pxmllistContext: IXMLDOMNodeList, bstrExpression: String): js.Any
   
-  @JSName("InfoPath.MathObject_typekey")
+  /* private */ @JSName("InfoPath.MathObject_typekey")
   var InfoPathDotMathObject_typekey: MathObject
   
   def Max(pxmllistInput: IXMLDOMNodeList): js.Any
@@ -22,8 +22,7 @@ trait MathObject extends StObject {
 }
 object MathObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Avg: IXMLDOMNodeList => js.Any,
     Eval: (IXMLDOMNodeList, String) => js.Any,
     InfoPathDotMathObject_typekey: MathObject,
@@ -36,25 +35,18 @@ object MathObject {
     __obj.asInstanceOf[MathObject]
   }
   
-  @scala.inline
-  implicit class MathObjectMutableBuilder[Self <: MathObject] (val x: Self) extends AnyVal {
+  extension [Self <: MathObject](x: Self) {
     
-    @scala.inline
-    def setAvg(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Avg", js.Any.fromFunction1(value))
+    inline def setAvg(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Avg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEval(value: (IXMLDOMNodeList, String) => js.Any): Self = StObject.set(x, "Eval", js.Any.fromFunction2(value))
+    inline def setEval(value: (IXMLDOMNodeList, String) => js.Any): Self = StObject.set(x, "Eval", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInfoPathDotMathObject_typekey(value: MathObject): Self = StObject.set(x, "InfoPath.MathObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotMathObject_typekey(value: MathObject): Self = StObject.set(x, "InfoPath.MathObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Max", js.Any.fromFunction1(value))
+    inline def setMax(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Max", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMin(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Min", js.Any.fromFunction1(value))
+    inline def setMin(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Min", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNz(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Nz", js.Any.fromFunction1(value))
+    inline def setNz(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Nz", js.Any.fromFunction1(value))
   }
 }

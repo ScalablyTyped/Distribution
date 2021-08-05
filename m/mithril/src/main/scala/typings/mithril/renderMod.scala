@@ -17,17 +17,14 @@ object renderMod extends Shortcut {
   }
   object Static {
     
-    @scala.inline
-    def apply(render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Static = {
+    inline def apply(render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Static = {
       val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setRender(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
   

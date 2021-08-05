@@ -21,25 +21,19 @@ trait ControlNotificationAction extends StObject {
 }
 object ControlNotificationAction {
   
-  @scala.inline
-  def apply(actions: js.Array[js.Function0[Unit]]): ControlNotificationAction = {
+  inline def apply(actions: js.Array[js.Function0[Unit]]): ControlNotificationAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlNotificationAction]
   }
   
-  @scala.inline
-  implicit class ControlNotificationActionMutableBuilder[Self <: ControlNotificationAction] (val x: Self) extends AnyVal {
+  extension [Self <: ControlNotificationAction](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

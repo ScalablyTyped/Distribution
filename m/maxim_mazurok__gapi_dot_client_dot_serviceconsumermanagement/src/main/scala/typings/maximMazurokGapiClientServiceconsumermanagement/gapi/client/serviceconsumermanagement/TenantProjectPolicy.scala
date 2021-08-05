@@ -14,22 +14,17 @@ trait TenantProjectPolicy extends StObject {
 }
 object TenantProjectPolicy {
   
-  @scala.inline
-  def apply(): TenantProjectPolicy = {
+  inline def apply(): TenantProjectPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TenantProjectPolicy]
   }
   
-  @scala.inline
-  implicit class TenantProjectPolicyMutableBuilder[Self <: TenantProjectPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: TenantProjectPolicy](x: Self) {
     
-    @scala.inline
-    def setPolicyBindings(value: js.Array[PolicyBinding]): Self = StObject.set(x, "policyBindings", value.asInstanceOf[js.Any])
+    inline def setPolicyBindings(value: js.Array[PolicyBinding]): Self = StObject.set(x, "policyBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyBindingsUndefined: Self = StObject.set(x, "policyBindings", js.undefined)
+    inline def setPolicyBindingsUndefined: Self = StObject.set(x, "policyBindings", js.undefined)
     
-    @scala.inline
-    def setPolicyBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBindings", js.Array(value :_*))
+    inline def setPolicyBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBindings", js.Array(value :_*))
   }
 }

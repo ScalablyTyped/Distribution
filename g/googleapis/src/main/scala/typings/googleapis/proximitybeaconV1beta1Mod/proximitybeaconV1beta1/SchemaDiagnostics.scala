@@ -30,34 +30,25 @@ trait SchemaDiagnostics extends StObject {
 }
 object SchemaDiagnostics {
   
-  @scala.inline
-  def apply(): SchemaDiagnostics = {
+  inline def apply(): SchemaDiagnostics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiagnostics]
   }
   
-  @scala.inline
-  implicit class SchemaDiagnosticsMutableBuilder[Self <: SchemaDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiagnostics](x: Self) {
     
-    @scala.inline
-    def setAlerts(value: js.Array[String]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
+    inline def setAlerts(value: js.Array[String]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
+    inline def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
     
-    @scala.inline
-    def setAlertsVarargs(value: String*): Self = StObject.set(x, "alerts", js.Array(value :_*))
+    inline def setAlertsVarargs(value: String*): Self = StObject.set(x, "alerts", js.Array(value :_*))
     
-    @scala.inline
-    def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
+    inline def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
+    inline def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
     
-    @scala.inline
-    def setEstimatedLowBatteryDate(value: SchemaDate): Self = StObject.set(x, "estimatedLowBatteryDate", value.asInstanceOf[js.Any])
+    inline def setEstimatedLowBatteryDate(value: SchemaDate): Self = StObject.set(x, "estimatedLowBatteryDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedLowBatteryDateUndefined: Self = StObject.set(x, "estimatedLowBatteryDate", js.undefined)
+    inline def setEstimatedLowBatteryDateUndefined: Self = StObject.set(x, "estimatedLowBatteryDate", js.undefined)
   }
 }

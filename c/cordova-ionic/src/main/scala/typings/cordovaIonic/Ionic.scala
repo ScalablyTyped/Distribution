@@ -42,8 +42,7 @@ object Ionic {
   }
   object Keyboard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       disableScroll: Boolean => Unit,
       hideKeyboardAccessoryBar: Boolean => Unit,
@@ -54,23 +53,17 @@ object Ionic {
       __obj.asInstanceOf[Keyboard]
     }
     
-    @scala.inline
-    implicit class KeyboardMutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
+    extension [Self <: Keyboard](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableScroll(value: Boolean => Unit): Self = StObject.set(x, "disableScroll", js.Any.fromFunction1(value))
+      inline def setDisableScroll(value: Boolean => Unit): Self = StObject.set(x, "disableScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHideKeyboardAccessoryBar(value: Boolean => Unit): Self = StObject.set(x, "hideKeyboardAccessoryBar", js.Any.fromFunction1(value))
+      inline def setHideKeyboardAccessoryBar(value: Boolean => Unit): Self = StObject.set(x, "hideKeyboardAccessoryBar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
 }

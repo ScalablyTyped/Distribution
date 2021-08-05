@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VideoCodec extends StObject
 object VideoCodec {
   
-  @scala.inline
-  def H264: typings.twilioVideo.twilioVideoStrings.H264 = "H264".asInstanceOf[typings.twilioVideo.twilioVideoStrings.H264]
+  inline def H264: typings.twilioVideo.twilioVideoStrings.H264 = "H264".asInstanceOf[typings.twilioVideo.twilioVideoStrings.H264]
   
-  @scala.inline
-  def VP8: typings.twilioVideo.twilioVideoStrings.VP8 = "VP8".asInstanceOf[typings.twilioVideo.twilioVideoStrings.VP8]
+  inline def VP8: typings.twilioVideo.twilioVideoStrings.VP8 = "VP8".asInstanceOf[typings.twilioVideo.twilioVideoStrings.VP8]
   
-  @scala.inline
-  def VP9: typings.twilioVideo.twilioVideoStrings.VP9 = "VP9".asInstanceOf[typings.twilioVideo.twilioVideoStrings.VP9]
+  inline def VP9: typings.twilioVideo.twilioVideoStrings.VP9 = "VP9".asInstanceOf[typings.twilioVideo.twilioVideoStrings.VP9]
 }

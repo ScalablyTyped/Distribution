@@ -18,28 +18,21 @@ trait TrackListMessage extends StObject {
 }
 object TrackListMessage {
   
-  @scala.inline
-  def apply(): TrackListMessage = {
+  inline def apply(): TrackListMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackListMessage]
   }
   
-  @scala.inline
-  implicit class TrackListMessageMutableBuilder[Self <: TrackListMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TrackListMessage](x: Self) {
     
-    @scala.inline
-    def setMaintenanceTracks(value: TrackList): Self = StObject.set(x, "MaintenanceTracks", value.asInstanceOf[js.Any])
+    inline def setMaintenanceTracks(value: TrackList): Self = StObject.set(x, "MaintenanceTracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceTracksUndefined: Self = StObject.set(x, "MaintenanceTracks", js.undefined)
+    inline def setMaintenanceTracksUndefined: Self = StObject.set(x, "MaintenanceTracks", js.undefined)
     
-    @scala.inline
-    def setMaintenanceTracksVarargs(value: MaintenanceTrack*): Self = StObject.set(x, "MaintenanceTracks", js.Array(value :_*))
+    inline def setMaintenanceTracksVarargs(value: MaintenanceTrack*): Self = StObject.set(x, "MaintenanceTracks", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ object progressBarMod {
   
   object ProgressBar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn: ProgressBarProps
     ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -31,8 +30,7 @@ object progressBarMod {
       @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar.defaultProps.hide")
       @js.native
       def hide: Boolean = js.native
-      @scala.inline
-      def hide_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hide")(x.asInstanceOf[js.Any])
+      inline def hide_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hide")(x.asInstanceOf[js.Any])
       
       @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar.defaultProps.type")
       @js.native
@@ -99,72 +97,51 @@ object progressBarMod {
   }
   object ProgressBarProps {
     
-    @scala.inline
-    def apply(closeToast: () => Unit, delay: Double, isRunning: Boolean, `type`: TypeOptions): ProgressBarProps = {
+    inline def apply(closeToast: () => Unit, delay: Double, isRunning: Boolean, `type`: TypeOptions): ProgressBarProps = {
       val __obj = js.Dynamic.literal(closeToast = js.Any.fromFunction0(closeToast), delay = delay.asInstanceOf[js.Any], isRunning = isRunning.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressBarProps]
     }
     
-    @scala.inline
-    implicit class ProgressBarPropsMutableBuilder[Self <: ProgressBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressBarProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: ToastClassName): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: ToastClassName): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameFunction1(value: /* context */ js.UndefOr[Position] => String): Self = StObject.set(x, "className", js.Any.fromFunction1(value))
+      inline def setClassNameFunction1(value: /* context */ js.UndefOr[Position] => String): Self = StObject.set(x, "className", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseToast(value: () => Unit): Self = StObject.set(x, "closeToast", js.Any.fromFunction0(value))
+      inline def setCloseToast(value: () => Unit): Self = StObject.set(x, "closeToast", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setControlledProgress(value: Boolean): Self = StObject.set(x, "controlledProgress", value.asInstanceOf[js.Any])
+      inline def setControlledProgress(value: Boolean): Self = StObject.set(x, "controlledProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlledProgressUndefined: Self = StObject.set(x, "controlledProgress", js.undefined)
+      inline def setControlledProgressUndefined: Self = StObject.set(x, "controlledProgress", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setIsIn(value: Boolean): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
+      inline def setIsIn(value: Boolean): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
+      inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
       
-      @scala.inline
-      def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+      inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double | String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double | String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

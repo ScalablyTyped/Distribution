@@ -32,8 +32,7 @@ trait CalloutAction extends StObject {
 }
 object CalloutAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDisabledToolTip: () => String,
     getIsDisabledCallback: CalloutAction => Boolean,
     getIsMenu: () => Boolean,
@@ -51,43 +50,30 @@ object CalloutAction {
     __obj.asInstanceOf[CalloutAction]
   }
   
-  @scala.inline
-  implicit class CalloutActionMutableBuilder[Self <: CalloutAction] (val x: Self) extends AnyVal {
+  extension [Self <: CalloutAction](x: Self) {
     
-    @scala.inline
-    def setGetDisabledToolTip(value: () => String): Self = StObject.set(x, "getDisabledToolTip", js.Any.fromFunction0(value))
+    inline def setGetDisabledToolTip(value: () => String): Self = StObject.set(x, "getDisabledToolTip", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsDisabledCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "getIsDisabledCallback", js.Any.fromFunction1(value))
+    inline def setGetIsDisabledCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "getIsDisabledCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIsMenu(value: () => Boolean): Self = StObject.set(x, "getIsMenu", js.Any.fromFunction0(value))
+    inline def setGetIsMenu(value: () => Boolean): Self = StObject.set(x, "getIsMenu", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsVisibleCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "getIsVisibleCallback", js.Any.fromFunction1(value))
+    inline def setGetIsVisibleCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "getIsVisibleCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMenuEntries(value: () => js.Array[CalloutActionMenuEntry]): Self = StObject.set(x, "getMenuEntries", js.Any.fromFunction0(value))
+    inline def setGetMenuEntries(value: () => js.Array[CalloutActionMenuEntry]): Self = StObject.set(x, "getMenuEntries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOnClickCallback(value: (js.Any, CalloutAction) => js.Any): Self = StObject.set(x, "getOnClickCallback", js.Any.fromFunction2(value))
+    inline def setGetOnClickCallback(value: (js.Any, CalloutAction) => js.Any): Self = StObject.set(x, "getOnClickCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetToolTop(value: () => String): Self = StObject.set(x, "getToolTop", js.Any.fromFunction0(value))
+    inline def setGetToolTop(value: () => String): Self = StObject.set(x, "getToolTop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+    inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: CalloutActionOptions => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: CalloutActionOptions => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

@@ -18,19 +18,16 @@ object servicesHostMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSolutionErrors(instance: TSInstance, context: String): js.Array[WebpackError] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionErrors")(instance.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[WebpackError]]
+  inline def getSolutionErrors(instance: TSInstance, context: String): js.Array[WebpackError] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionErrors")(instance.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[WebpackError]]
   
-  @scala.inline
-  def makeServicesHost(
+  inline def makeServicesHost(
     scriptRegex: RegExp,
     log: Logger,
     loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.LoaderContext */ js.Any,
     instance: TSInstance,
     enableFileCaching: Boolean
   ): ServiceHostWhichMayBeCacheable = (^.asInstanceOf[js.Dynamic].applyDynamic("makeServicesHost")(scriptRegex.asInstanceOf[js.Any], log.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], enableFileCaching.asInstanceOf[js.Any])).asInstanceOf[ServiceHostWhichMayBeCacheable]
-  @scala.inline
-  def makeServicesHost(
+  inline def makeServicesHost(
     scriptRegex: RegExp,
     log: Logger,
     loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.LoaderContext */ js.Any,
@@ -39,23 +36,20 @@ object servicesHostMod {
     projectReferences: js.Array[ProjectReference]
   ): ServiceHostWhichMayBeCacheable = (^.asInstanceOf[js.Dynamic].applyDynamic("makeServicesHost")(scriptRegex.asInstanceOf[js.Any], log.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], enableFileCaching.asInstanceOf[js.Any], projectReferences.asInstanceOf[js.Any])).asInstanceOf[ServiceHostWhichMayBeCacheable]
   
-  @scala.inline
-  def makeSolutionBuilderHost(
+  inline def makeSolutionBuilderHost(
     scriptRegex: RegExp,
     log: Logger,
     loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.LoaderContext */ js.Any,
     instance: TSInstance
   ): SolutionBuilderWithWatchHost = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSolutionBuilderHost")(scriptRegex.asInstanceOf[js.Any], log.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[SolutionBuilderWithWatchHost]
   
-  @scala.inline
-  def makeWatchHost(
+  inline def makeWatchHost(
     scriptRegex: RegExp,
     log: Logger,
     loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.LoaderContext */ js.Any,
     instance: TSInstance
   ): WatchHost = (^.asInstanceOf[js.Dynamic].applyDynamic("makeWatchHost")(scriptRegex.asInstanceOf[js.Any], log.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[WatchHost]
-  @scala.inline
-  def makeWatchHost(
+  inline def makeWatchHost(
     scriptRegex: RegExp,
     log: Logger,
     loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.LoaderContext */ js.Any,
@@ -63,8 +57,7 @@ object servicesHostMod {
     projectReferences: js.Array[ProjectReference]
   ): WatchHost = (^.asInstanceOf[js.Dynamic].applyDynamic("makeWatchHost")(scriptRegex.asInstanceOf[js.Any], log.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], projectReferences.asInstanceOf[js.Any])).asInstanceOf[WatchHost]
   
-  @scala.inline
-  def updateFileWithText(instance: TSInstance, filePath: String, text: js.Function1[/* nFilePath */ String, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFileWithText")(instance.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateFileWithText(instance: TSInstance, filePath: String, text: js.Function1[/* nFilePath */ String, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFileWithText")(instance.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Action = js.Function0[Unit]
   
@@ -76,23 +69,18 @@ object servicesHostMod {
   }
   object ServiceHostWhichMayBeCacheable {
     
-    @scala.inline
-    def apply(servicesHost: LanguageServiceHost): ServiceHostWhichMayBeCacheable = {
+    inline def apply(servicesHost: LanguageServiceHost): ServiceHostWhichMayBeCacheable = {
       val __obj = js.Dynamic.literal(servicesHost = servicesHost.asInstanceOf[js.Any], clearCache = null)
       __obj.asInstanceOf[ServiceHostWhichMayBeCacheable]
     }
     
-    @scala.inline
-    implicit class ServiceHostWhichMayBeCacheableMutableBuilder[Self <: ServiceHostWhichMayBeCacheable] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceHostWhichMayBeCacheable](x: Self) {
       
-      @scala.inline
-      def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+      inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearCacheNull: Self = StObject.set(x, "clearCache", null)
+      inline def setClearCacheNull: Self = StObject.set(x, "clearCache", null)
       
-      @scala.inline
-      def setServicesHost(value: LanguageServiceHost): Self = StObject.set(x, "servicesHost", value.asInstanceOf[js.Any])
+      inline def setServicesHost(value: LanguageServiceHost): Self = StObject.set(x, "servicesHost", value.asInstanceOf[js.Any])
     }
   }
 }

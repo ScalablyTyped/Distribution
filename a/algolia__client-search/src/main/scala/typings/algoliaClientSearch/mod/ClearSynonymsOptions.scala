@@ -13,19 +13,15 @@ trait ClearSynonymsOptions extends StObject {
 }
 object ClearSynonymsOptions {
   
-  @scala.inline
-  def apply(): ClearSynonymsOptions = {
+  inline def apply(): ClearSynonymsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearSynonymsOptions]
   }
   
-  @scala.inline
-  implicit class ClearSynonymsOptionsMutableBuilder[Self <: ClearSynonymsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClearSynonymsOptions](x: Self) {
     
-    @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
+    inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
+    inline def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait StaticKeyProvider extends StObject {
 }
 object StaticKeyProvider {
   
-  @scala.inline
-  def apply(): StaticKeyProvider = {
+  inline def apply(): StaticKeyProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StaticKeyProvider]
   }
   
-  @scala.inline
-  implicit class StaticKeyProviderMutableBuilder[Self <: StaticKeyProvider] (val x: Self) extends AnyVal {
+  extension [Self <: StaticKeyProvider](x: Self) {
     
-    @scala.inline
-    def setKeyFormat(value: stringPatternIdentityAZaZ26AZaZ09163): Self = StObject.set(x, "KeyFormat", value.asInstanceOf[js.Any])
+    inline def setKeyFormat(value: stringPatternIdentityAZaZ26AZaZ09163): Self = StObject.set(x, "KeyFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFormatUndefined: Self = StObject.set(x, "KeyFormat", js.undefined)
+    inline def setKeyFormatUndefined: Self = StObject.set(x, "KeyFormat", js.undefined)
     
-    @scala.inline
-    def setKeyFormatVersions(value: stringPatternDD): Self = StObject.set(x, "KeyFormatVersions", value.asInstanceOf[js.Any])
+    inline def setKeyFormatVersions(value: stringPatternDD): Self = StObject.set(x, "KeyFormatVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFormatVersionsUndefined: Self = StObject.set(x, "KeyFormatVersions", js.undefined)
+    inline def setKeyFormatVersionsUndefined: Self = StObject.set(x, "KeyFormatVersions", js.undefined)
     
-    @scala.inline
-    def setStaticKeyValue(value: stringPatternAZaZ0932): Self = StObject.set(x, "StaticKeyValue", value.asInstanceOf[js.Any])
+    inline def setStaticKeyValue(value: stringPatternAZaZ0932): Self = StObject.set(x, "StaticKeyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticKeyValueUndefined: Self = StObject.set(x, "StaticKeyValue", js.undefined)
+    inline def setStaticKeyValueUndefined: Self = StObject.set(x, "StaticKeyValue", js.undefined)
     
-    @scala.inline
-    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

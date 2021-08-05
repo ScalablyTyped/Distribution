@@ -17,7 +17,7 @@ object nearestColorMod {
        with IImageDitherer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     
-    var _distance: js.Any = js.native
+    /* private */ var _distance: js.Any = js.native
     
     /* CompleteClass */
     override def quantize(pointBuffer: PointContainer, palette: Palette): PointContainer = js.native

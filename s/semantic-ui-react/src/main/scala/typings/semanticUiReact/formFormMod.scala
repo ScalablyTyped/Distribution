@@ -92,80 +92,56 @@ object formFormMod extends Shortcut {
   }
   object StrictFormProps {
     
-    @scala.inline
-    def apply(): StrictFormProps = {
+    inline def apply(): StrictFormProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictFormProps]
     }
     
-    @scala.inline
-    implicit class StrictFormPropsMutableBuilder[Self <: StrictFormProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictFormProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: (/* event */ FormEvent[HTMLFormElement], /* data */ FormProps) => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
+      inline def setOnSubmit(value: (/* event */ FormEvent[HTMLFormElement], /* data */ FormProps) => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setReply(value: Boolean): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+      inline def setReply(value: Boolean): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
+      inline def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
+      inline def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
+      inline def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
       
-      @scala.inline
-      def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
       
-      @scala.inline
-      def setWidths(value: equal): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+      inline def setWidths(value: equal): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+      inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
     }
   }
   

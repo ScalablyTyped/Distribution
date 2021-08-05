@@ -16,16 +16,13 @@ trait Convertor extends StObject {
 }
 object Convertor {
   
-  @scala.inline
-  def apply(translate: (js.Array[Point], Double, Double, js.Function1[/* result */ Points, Unit]) => Unit): Convertor = {
+  inline def apply(translate: (js.Array[Point], Double, Double, js.Function1[/* result */ Points, Unit]) => Unit): Convertor = {
     val __obj = js.Dynamic.literal(translate = js.Any.fromFunction4(translate))
     __obj.asInstanceOf[Convertor]
   }
   
-  @scala.inline
-  implicit class ConvertorMutableBuilder[Self <: Convertor] (val x: Self) extends AnyVal {
+  extension [Self <: Convertor](x: Self) {
     
-    @scala.inline
-    def setTranslate(value: (js.Array[Point], Double, Double, js.Function1[/* result */ Points, Unit]) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction4(value))
+    inline def setTranslate(value: (js.Array[Point], Double, Double, js.Function1[/* result */ Points, Unit]) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction4(value))
   }
 }

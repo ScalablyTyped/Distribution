@@ -19,25 +19,19 @@ trait SchemaSeller extends StObject {
 }
 object SchemaSeller {
   
-  @scala.inline
-  def apply(): SchemaSeller = {
+  inline def apply(): SchemaSeller = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSeller]
   }
   
-  @scala.inline
-  implicit class SchemaSellerMutableBuilder[Self <: SchemaSeller] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSeller](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
+    inline def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
+    inline def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
   }
 }

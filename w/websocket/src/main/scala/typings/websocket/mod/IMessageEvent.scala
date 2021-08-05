@@ -12,16 +12,13 @@ trait IMessageEvent extends StObject {
 }
 object IMessageEvent {
   
-  @scala.inline
-  def apply(data: String | Buffer | ArrayBuffer): IMessageEvent = {
+  inline def apply(data: String | Buffer | ArrayBuffer): IMessageEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageEvent]
   }
   
-  @scala.inline
-  implicit class IMessageEventMutableBuilder[Self <: IMessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IMessageEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: String | Buffer | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Buffer | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

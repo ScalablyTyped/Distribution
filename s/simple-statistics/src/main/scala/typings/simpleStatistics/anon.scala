@@ -14,20 +14,16 @@ object anon {
   }
   object B {
     
-    @scala.inline
-    def apply(b: Double, m: Double): B = {
+    inline def apply(b: Double, m: Double): B = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any])
       __obj.asInstanceOf[B]
     }
     
-    @scala.inline
-    implicit class BMutableBuilder[Self <: B] (val x: Self) extends AnyVal {
+    extension [Self <: B](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object M {
     
-    @scala.inline
-    def apply(b: Double, m: Double): M = {
+    inline def apply(b: Double, m: Double): M = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any])
       __obj.asInstanceOf[M]
     }
     
-    @scala.inline
-    implicit class MMutableBuilder[Self <: M] (val x: Self) extends AnyVal {
+    extension [Self <: M](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     }
   }
 }

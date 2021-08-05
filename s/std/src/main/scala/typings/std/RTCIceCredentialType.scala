@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceCredentialType extends StObject
 object RTCIceCredentialType {
   
-  @scala.inline
-  def oauth: typings.std.stdStrings.oauth = "oauth".asInstanceOf[typings.std.stdStrings.oauth]
+  inline def oauth: typings.std.stdStrings.oauth = "oauth".asInstanceOf[typings.std.stdStrings.oauth]
   
-  @scala.inline
-  def password: typings.std.stdStrings.password = "password".asInstanceOf[typings.std.stdStrings.password]
+  inline def password: typings.std.stdStrings.password = "password".asInstanceOf[typings.std.stdStrings.password]
 }

@@ -14,22 +14,17 @@ trait PaymentMethodLimit extends StObject {
 }
 object PaymentMethodLimit {
   
-  @scala.inline
-  def apply(period_in_days: Double, remaining: MoneyHash, total: MoneyHash): PaymentMethodLimit = {
+  inline def apply(period_in_days: Double, remaining: MoneyHash, total: MoneyHash): PaymentMethodLimit = {
     val __obj = js.Dynamic.literal(period_in_days = period_in_days.asInstanceOf[js.Any], remaining = remaining.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodLimit]
   }
   
-  @scala.inline
-  implicit class PaymentMethodLimitMutableBuilder[Self <: PaymentMethodLimit] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodLimit](x: Self) {
     
-    @scala.inline
-    def setPeriod_in_days(value: Double): Self = StObject.set(x, "period_in_days", value.asInstanceOf[js.Any])
+    inline def setPeriod_in_days(value: Double): Self = StObject.set(x, "period_in_days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemaining(value: MoneyHash): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+    inline def setRemaining(value: MoneyHash): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: MoneyHash): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: MoneyHash): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

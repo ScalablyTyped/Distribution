@@ -36,25 +36,19 @@ trait PerRequest extends StObject {
 }
 object PerRequest {
   
-  @scala.inline
-  def apply(): PerRequest = {
+  inline def apply(): PerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerRequest]
   }
   
-  @scala.inline
-  implicit class PerRequestMutableBuilder[Self <: PerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PerRequest](x: Self) {
     
-    @scala.inline
-    def setPerRequest(value: Boolean): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
+    inline def setPerRequest(value: Boolean): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
+    inline def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
     
-    @scala.inline
-    def setType(value: none | single | per_room): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: none | single | per_room): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

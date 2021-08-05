@@ -32,61 +32,43 @@ trait CommentOptions extends StObject {
 }
 object CommentOptions {
   
-  @scala.inline
-  def apply(): CommentOptions = {
+  inline def apply(): CommentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentOptions]
   }
   
-  @scala.inline
-  implicit class CommentOptionsMutableBuilder[Self <: CommentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommentOptions](x: Self) {
     
-    @scala.inline
-    def setBlockCommentEnd(value: String): Self = StObject.set(x, "blockCommentEnd", value.asInstanceOf[js.Any])
+    inline def setBlockCommentEnd(value: String): Self = StObject.set(x, "blockCommentEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockCommentEndUndefined: Self = StObject.set(x, "blockCommentEnd", js.undefined)
+    inline def setBlockCommentEndUndefined: Self = StObject.set(x, "blockCommentEnd", js.undefined)
     
-    @scala.inline
-    def setBlockCommentLead(value: String): Self = StObject.set(x, "blockCommentLead", value.asInstanceOf[js.Any])
+    inline def setBlockCommentLead(value: String): Self = StObject.set(x, "blockCommentLead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockCommentLeadUndefined: Self = StObject.set(x, "blockCommentLead", js.undefined)
+    inline def setBlockCommentLeadUndefined: Self = StObject.set(x, "blockCommentLead", js.undefined)
     
-    @scala.inline
-    def setBlockCommentStart(value: String): Self = StObject.set(x, "blockCommentStart", value.asInstanceOf[js.Any])
+    inline def setBlockCommentStart(value: String): Self = StObject.set(x, "blockCommentStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockCommentStartUndefined: Self = StObject.set(x, "blockCommentStart", js.undefined)
+    inline def setBlockCommentStartUndefined: Self = StObject.set(x, "blockCommentStart", js.undefined)
     
-    @scala.inline
-    def setCommentBlankLines(value: Boolean): Self = StObject.set(x, "commentBlankLines", value.asInstanceOf[js.Any])
+    inline def setCommentBlankLines(value: Boolean): Self = StObject.set(x, "commentBlankLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentBlankLinesUndefined: Self = StObject.set(x, "commentBlankLines", js.undefined)
+    inline def setCommentBlankLinesUndefined: Self = StObject.set(x, "commentBlankLines", js.undefined)
     
-    @scala.inline
-    def setFullLines(value: Boolean): Self = StObject.set(x, "fullLines", value.asInstanceOf[js.Any])
+    inline def setFullLines(value: Boolean): Self = StObject.set(x, "fullLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullLinesUndefined: Self = StObject.set(x, "fullLines", js.undefined)
+    inline def setFullLinesUndefined: Self = StObject.set(x, "fullLines", js.undefined)
     
-    @scala.inline
-    def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
-    @scala.inline
-    def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
+    inline def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
+    inline def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
     
-    @scala.inline
-    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

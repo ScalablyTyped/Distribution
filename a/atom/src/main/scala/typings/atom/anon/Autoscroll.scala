@@ -10,19 +10,15 @@ trait Autoscroll extends StObject {
 }
 object Autoscroll {
   
-  @scala.inline
-  def apply(): Autoscroll = {
+  inline def apply(): Autoscroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Autoscroll]
   }
   
-  @scala.inline
-  implicit class AutoscrollMutableBuilder[Self <: Autoscroll] (val x: Self) extends AnyVal {
+  extension [Self <: Autoscroll](x: Self) {
     
-    @scala.inline
-    def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
+    inline def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscrollUndefined: Self = StObject.set(x, "autoscroll", js.undefined)
+    inline def setAutoscrollUndefined: Self = StObject.set(x, "autoscroll", js.undefined)
   }
 }

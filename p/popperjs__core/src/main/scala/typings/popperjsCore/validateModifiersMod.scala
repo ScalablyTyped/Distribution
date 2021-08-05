@@ -10,6 +10,5 @@ object validateModifiersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(modifiers: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(modifiers: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

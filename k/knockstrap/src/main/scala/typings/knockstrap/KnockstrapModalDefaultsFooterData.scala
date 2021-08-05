@@ -12,19 +12,15 @@ trait KnockstrapModalDefaultsFooterData extends StObject {
 }
 object KnockstrapModalDefaultsFooterData {
   
-  @scala.inline
-  def apply(closeLabel: String, primaryLabel: String): KnockstrapModalDefaultsFooterData = {
+  inline def apply(closeLabel: String, primaryLabel: String): KnockstrapModalDefaultsFooterData = {
     val __obj = js.Dynamic.literal(closeLabel = closeLabel.asInstanceOf[js.Any], primaryLabel = primaryLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockstrapModalDefaultsFooterData]
   }
   
-  @scala.inline
-  implicit class KnockstrapModalDefaultsFooterDataMutableBuilder[Self <: KnockstrapModalDefaultsFooterData] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapModalDefaultsFooterData](x: Self) {
     
-    @scala.inline
-    def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
+    inline def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryLabel(value: String): Self = StObject.set(x, "primaryLabel", value.asInstanceOf[js.Any])
+    inline def setPrimaryLabel(value: String): Self = StObject.set(x, "primaryLabel", value.asInstanceOf[js.Any])
   }
 }

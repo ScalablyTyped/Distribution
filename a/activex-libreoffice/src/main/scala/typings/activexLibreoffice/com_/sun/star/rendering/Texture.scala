@@ -89,8 +89,7 @@ trait Texture extends StObject {
 }
 object Texture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AffineTransform: AffineMatrix2D,
     Alpha: Double,
     Bitmap: XBitmap,
@@ -105,34 +104,24 @@ object Texture {
     __obj.asInstanceOf[Texture]
   }
   
-  @scala.inline
-  implicit class TextureMutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
+  extension [Self <: Texture](x: Self) {
     
-    @scala.inline
-    def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
+    inline def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmap(value: XBitmap): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
+    inline def setBitmap(value: XBitmap): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradient(value: XParametricPolyPolygon2D): Self = StObject.set(x, "Gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: XParametricPolyPolygon2D): Self = StObject.set(x, "Gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHatchAttributes(value: StrokeAttributes): Self = StObject.set(x, "HatchAttributes", value.asInstanceOf[js.Any])
+    inline def setHatchAttributes(value: StrokeAttributes): Self = StObject.set(x, "HatchAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHatching(value: XParametricPolyPolygon2D): Self = StObject.set(x, "Hatching", value.asInstanceOf[js.Any])
+    inline def setHatching(value: XParametricPolyPolygon2D): Self = StObject.set(x, "Hatching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfHatchPolygons(value: Double): Self = StObject.set(x, "NumberOfHatchPolygons", value.asInstanceOf[js.Any])
+    inline def setNumberOfHatchPolygons(value: Double): Self = StObject.set(x, "NumberOfHatchPolygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatModeX(value: Double): Self = StObject.set(x, "RepeatModeX", value.asInstanceOf[js.Any])
+    inline def setRepeatModeX(value: Double): Self = StObject.set(x, "RepeatModeX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatModeY(value: Double): Self = StObject.set(x, "RepeatModeY", value.asInstanceOf[js.Any])
+    inline def setRepeatModeY(value: Double): Self = StObject.set(x, "RepeatModeY", value.asInstanceOf[js.Any])
   }
 }

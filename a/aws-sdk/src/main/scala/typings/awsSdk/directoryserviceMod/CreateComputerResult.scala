@@ -13,19 +13,15 @@ trait CreateComputerResult extends StObject {
 }
 object CreateComputerResult {
   
-  @scala.inline
-  def apply(): CreateComputerResult = {
+  inline def apply(): CreateComputerResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateComputerResult]
   }
   
-  @scala.inline
-  implicit class CreateComputerResultMutableBuilder[Self <: CreateComputerResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateComputerResult](x: Self) {
     
-    @scala.inline
-    def setComputer(value: Computer): Self = StObject.set(x, "Computer", value.asInstanceOf[js.Any])
+    inline def setComputer(value: Computer): Self = StObject.set(x, "Computer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputerUndefined: Self = StObject.set(x, "Computer", js.undefined)
+    inline def setComputerUndefined: Self = StObject.set(x, "Computer", js.undefined)
   }
 }

@@ -22,20 +22,16 @@ object deleteMod extends Shortcut {
   }
   object DeleteProps {
     
-    @scala.inline
-    def apply(): DeleteProps = {
+    inline def apply(): DeleteProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteProps]
     }
     
-    @scala.inline
-    implicit class DeletePropsMutableBuilder[Self <: DeleteProps] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

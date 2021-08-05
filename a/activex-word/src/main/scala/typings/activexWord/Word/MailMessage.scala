@@ -34,13 +34,12 @@ trait MailMessage extends StObject {
   
   def ToggleHeader(): Unit
   
-  @JSName("Word.MailMessage_typekey")
+  /* private */ @JSName("Word.MailMessage_typekey")
   var WordDotMailMessage_typekey: MailMessage
 }
 object MailMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     CheckName: () => Unit,
     Creator: Double,
@@ -62,52 +61,36 @@ object MailMessage {
     __obj.asInstanceOf[MailMessage]
   }
   
-  @scala.inline
-  implicit class MailMessageMutableBuilder[Self <: MailMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MailMessage](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckName(value: () => Unit): Self = StObject.set(x, "CheckName", js.Any.fromFunction0(value))
+    inline def setCheckName(value: () => Unit): Self = StObject.set(x, "CheckName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayMoveDialog(value: () => Unit): Self = StObject.set(x, "DisplayMoveDialog", js.Any.fromFunction0(value))
+    inline def setDisplayMoveDialog(value: () => Unit): Self = StObject.set(x, "DisplayMoveDialog", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayProperties(value: () => Unit): Self = StObject.set(x, "DisplayProperties", js.Any.fromFunction0(value))
+    inline def setDisplayProperties(value: () => Unit): Self = StObject.set(x, "DisplayProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplaySelectNamesDialog(value: () => Unit): Self = StObject.set(x, "DisplaySelectNamesDialog", js.Any.fromFunction0(value))
+    inline def setDisplaySelectNamesDialog(value: () => Unit): Self = StObject.set(x, "DisplaySelectNamesDialog", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForward(value: () => Unit): Self = StObject.set(x, "Forward", js.Any.fromFunction0(value))
+    inline def setForward(value: () => Unit): Self = StObject.set(x, "Forward", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGoToNext(value: () => Unit): Self = StObject.set(x, "GoToNext", js.Any.fromFunction0(value))
+    inline def setGoToNext(value: () => Unit): Self = StObject.set(x, "GoToNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGoToPrevious(value: () => Unit): Self = StObject.set(x, "GoToPrevious", js.Any.fromFunction0(value))
+    inline def setGoToPrevious(value: () => Unit): Self = StObject.set(x, "GoToPrevious", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply(value: () => Unit): Self = StObject.set(x, "Reply", js.Any.fromFunction0(value))
+    inline def setReply(value: () => Unit): Self = StObject.set(x, "Reply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplyAll(value: () => Unit): Self = StObject.set(x, "ReplyAll", js.Any.fromFunction0(value))
+    inline def setReplyAll(value: () => Unit): Self = StObject.set(x, "ReplyAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleHeader(value: () => Unit): Self = StObject.set(x, "ToggleHeader", js.Any.fromFunction0(value))
+    inline def setToggleHeader(value: () => Unit): Self = StObject.set(x, "ToggleHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotMailMessage_typekey(value: MailMessage): Self = StObject.set(x, "Word.MailMessage_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotMailMessage_typekey(value: MailMessage): Self = StObject.set(x, "Word.MailMessage_typekey", value.asInstanceOf[js.Any])
   }
 }

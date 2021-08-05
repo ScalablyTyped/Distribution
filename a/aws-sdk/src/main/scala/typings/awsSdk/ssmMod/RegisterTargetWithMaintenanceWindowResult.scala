@@ -13,19 +13,15 @@ trait RegisterTargetWithMaintenanceWindowResult extends StObject {
 }
 object RegisterTargetWithMaintenanceWindowResult {
   
-  @scala.inline
-  def apply(): RegisterTargetWithMaintenanceWindowResult = {
+  inline def apply(): RegisterTargetWithMaintenanceWindowResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterTargetWithMaintenanceWindowResult]
   }
   
-  @scala.inline
-  implicit class RegisterTargetWithMaintenanceWindowResultMutableBuilder[Self <: RegisterTargetWithMaintenanceWindowResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterTargetWithMaintenanceWindowResult](x: Self) {
     
-    @scala.inline
-    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
+    inline def setWindowTargetId(value: MaintenanceWindowTargetId): Self = StObject.set(x, "WindowTargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTargetIdUndefined: Self = StObject.set(x, "WindowTargetId", js.undefined)
+    inline def setWindowTargetIdUndefined: Self = StObject.set(x, "WindowTargetId", js.undefined)
   }
 }

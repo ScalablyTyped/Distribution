@@ -26,8 +26,7 @@ object swipeActionMod {
     @JSImport("@ant-design/react-native/lib/swipe-action", "default.defaultProps")
     @js.native
     def defaultProps: SwipeActionProps = js.native
-    @scala.inline
-    def defaultProps_=(x: SwipeActionProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: SwipeActionProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -49,32 +48,24 @@ object swipeActionMod {
   }
   object SwipeActionProps {
     
-    @scala.inline
-    def apply(): SwipeActionProps = {
+    inline def apply(): SwipeActionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwipeActionProps]
     }
     
-    @scala.inline
-    implicit class SwipeActionPropsMutableBuilder[Self <: SwipeActionProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeActionProps](x: Self) {
       
-      @scala.inline
-      def setLeft(value: js.Array[SwipeoutButtonProps]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: js.Array[SwipeoutButtonProps]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setLeftVarargs(value: SwipeoutButtonProps*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: SwipeoutButtonProps*): Self = StObject.set(x, "left", js.Array(value :_*))
       
-      @scala.inline
-      def setRight(value: js.Array[SwipeoutButtonProps]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: js.Array[SwipeoutButtonProps]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setRightVarargs(value: SwipeoutButtonProps*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: SwipeoutButtonProps*): Self = StObject.set(x, "right", js.Array(value :_*))
     }
   }
   
@@ -86,20 +77,16 @@ object swipeActionMod {
   }
   object SwipeoutButtonProps {
     
-    @scala.inline
-    def apply(): SwipeoutButtonProps = {
+    inline def apply(): SwipeoutButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwipeoutButtonProps]
     }
     
-    @scala.inline
-    implicit class SwipeoutButtonPropsMutableBuilder[Self <: SwipeoutButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeoutButtonProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[TextStyle] & BackgroundColor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[TextStyle] & BackgroundColor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

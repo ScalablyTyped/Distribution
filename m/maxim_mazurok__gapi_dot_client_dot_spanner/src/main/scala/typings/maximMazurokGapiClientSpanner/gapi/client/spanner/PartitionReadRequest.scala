@@ -32,52 +32,37 @@ trait PartitionReadRequest extends StObject {
 }
 object PartitionReadRequest {
   
-  @scala.inline
-  def apply(): PartitionReadRequest = {
+  inline def apply(): PartitionReadRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionReadRequest]
   }
   
-  @scala.inline
-  implicit class PartitionReadRequestMutableBuilder[Self <: PartitionReadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionReadRequest](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setKeySet(value: KeySet): Self = StObject.set(x, "keySet", value.asInstanceOf[js.Any])
+    inline def setKeySet(value: KeySet): Self = StObject.set(x, "keySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySetUndefined: Self = StObject.set(x, "keySet", js.undefined)
+    inline def setKeySetUndefined: Self = StObject.set(x, "keySet", js.undefined)
     
-    @scala.inline
-    def setPartitionOptions(value: PartitionOptions): Self = StObject.set(x, "partitionOptions", value.asInstanceOf[js.Any])
+    inline def setPartitionOptions(value: PartitionOptions): Self = StObject.set(x, "partitionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionOptionsUndefined: Self = StObject.set(x, "partitionOptions", js.undefined)
+    inline def setPartitionOptionsUndefined: Self = StObject.set(x, "partitionOptions", js.undefined)
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

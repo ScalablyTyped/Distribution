@@ -18,28 +18,21 @@ trait ListAcceleratorsResponse extends StObject {
 }
 object ListAcceleratorsResponse {
   
-  @scala.inline
-  def apply(): ListAcceleratorsResponse = {
+  inline def apply(): ListAcceleratorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAcceleratorsResponse]
   }
   
-  @scala.inline
-  implicit class ListAcceleratorsResponseMutableBuilder[Self <: ListAcceleratorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAcceleratorsResponse](x: Self) {
     
-    @scala.inline
-    def setAccelerators(value: Accelerators): Self = StObject.set(x, "Accelerators", value.asInstanceOf[js.Any])
+    inline def setAccelerators(value: Accelerators): Self = StObject.set(x, "Accelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorsUndefined: Self = StObject.set(x, "Accelerators", js.undefined)
+    inline def setAcceleratorsUndefined: Self = StObject.set(x, "Accelerators", js.undefined)
     
-    @scala.inline
-    def setAcceleratorsVarargs(value: Accelerator*): Self = StObject.set(x, "Accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: Accelerator*): Self = StObject.set(x, "Accelerators", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

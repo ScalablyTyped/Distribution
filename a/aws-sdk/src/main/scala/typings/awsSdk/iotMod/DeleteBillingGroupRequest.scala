@@ -18,22 +18,17 @@ trait DeleteBillingGroupRequest extends StObject {
 }
 object DeleteBillingGroupRequest {
   
-  @scala.inline
-  def apply(billingGroupName: BillingGroupName): DeleteBillingGroupRequest = {
+  inline def apply(billingGroupName: BillingGroupName): DeleteBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBillingGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBillingGroupRequestMutableBuilder[Self <: DeleteBillingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBillingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
+    inline def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
+    inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
+    inline def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
   }
 }

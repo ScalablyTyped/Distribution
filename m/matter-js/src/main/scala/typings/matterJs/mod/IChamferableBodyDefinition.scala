@@ -12,19 +12,15 @@ trait IChamferableBodyDefinition
 }
 object IChamferableBodyDefinition {
   
-  @scala.inline
-  def apply(): IChamferableBodyDefinition = {
+  inline def apply(): IChamferableBodyDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChamferableBodyDefinition]
   }
   
-  @scala.inline
-  implicit class IChamferableBodyDefinitionMutableBuilder[Self <: IChamferableBodyDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IChamferableBodyDefinition](x: Self) {
     
-    @scala.inline
-    def setChamfer(value: IChamfer): Self = StObject.set(x, "chamfer", value.asInstanceOf[js.Any])
+    inline def setChamfer(value: IChamfer): Self = StObject.set(x, "chamfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChamferUndefined: Self = StObject.set(x, "chamfer", js.undefined)
+    inline def setChamferUndefined: Self = StObject.set(x, "chamfer", js.undefined)
   }
 }

@@ -30,14 +30,12 @@ object srcComponentsVideoVideoMod {
     @JSImport("wix-ui-core/src/components/video/Video", "Video.defaultProps")
     @js.native
     def defaultProps: Config = js.native
-    @scala.inline
-    def defaultProps_=(x: Config): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Config): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/video/Video", "Video.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IVideoProps
@@ -56,44 +54,32 @@ object srcComponentsVideoVideoMod {
   }
   object IVideoProps {
     
-    @scala.inline
-    def apply(id: String, src: String | js.Array[String]): IVideoProps = {
+    inline def apply(id: String, src: String | js.Array[String]): IVideoProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[IVideoProps]
     }
     
-    @scala.inline
-    implicit class IVideoPropsMutableBuilder[Self <: IVideoProps] (val x: Self) extends AnyVal {
+    extension [Self <: IVideoProps](x: Self) {
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setFillAllSpace(value: Boolean): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
+      inline def setFillAllSpace(value: Boolean): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAllSpaceUndefined: Self = StObject.set(x, "fillAllSpace", js.undefined)
+      inline def setFillAllSpaceUndefined: Self = StObject.set(x, "fillAllSpace", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPlayerRef(value: js.Function): Self = StObject.set(x, "playerRef", value.asInstanceOf[js.Any])
+      inline def setPlayerRef(value: js.Function): Self = StObject.set(x, "playerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerRefUndefined: Self = StObject.set(x, "playerRef", js.undefined)
+      inline def setPlayerRefUndefined: Self = StObject.set(x, "playerRef", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -103,17 +89,14 @@ object srcComponentsVideoVideoMod {
   }
   object IVideoState {
     
-    @scala.inline
-    def apply(playerName: PlayerNameType): IVideoState = {
+    inline def apply(playerName: PlayerNameType): IVideoState = {
       val __obj = js.Dynamic.literal(playerName = playerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[IVideoState]
     }
     
-    @scala.inline
-    implicit class IVideoStateMutableBuilder[Self <: IVideoState] (val x: Self) extends AnyVal {
+    extension [Self <: IVideoState](x: Self) {
       
-      @scala.inline
-      def setPlayerName(value: PlayerNameType): Self = StObject.set(x, "playerName", value.asInstanceOf[js.Any])
+      inline def setPlayerName(value: PlayerNameType): Self = StObject.set(x, "playerName", value.asInstanceOf[js.Any])
     }
   }
 }

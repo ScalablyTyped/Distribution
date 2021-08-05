@@ -13,19 +13,15 @@ trait VoiceChannelRequest extends StObject {
 }
 object VoiceChannelRequest {
   
-  @scala.inline
-  def apply(): VoiceChannelRequest = {
+  inline def apply(): VoiceChannelRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoiceChannelRequest]
   }
   
-  @scala.inline
-  implicit class VoiceChannelRequestMutableBuilder[Self <: VoiceChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceChannelRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

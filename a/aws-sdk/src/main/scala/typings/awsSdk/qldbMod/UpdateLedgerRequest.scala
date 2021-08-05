@@ -18,22 +18,17 @@ trait UpdateLedgerRequest extends StObject {
 }
 object UpdateLedgerRequest {
   
-  @scala.inline
-  def apply(Name: LedgerName): UpdateLedgerRequest = {
+  inline def apply(Name: LedgerName): UpdateLedgerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLedgerRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLedgerRequestMutableBuilder[Self <: UpdateLedgerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLedgerRequest](x: Self) {
     
-    @scala.inline
-    def setDeletionProtection(value: DeletionProtection): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
+    inline def setDeletionProtection(value: DeletionProtection): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
+    inline def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

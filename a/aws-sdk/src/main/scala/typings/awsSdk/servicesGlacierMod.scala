@@ -35,20 +35,16 @@ object servicesGlacierMod {
   }
   object GlacierComputeChecksumsOutput {
     
-    @scala.inline
-    def apply(linearHash: String, treeHash: String): GlacierComputeChecksumsOutput = {
+    inline def apply(linearHash: String, treeHash: String): GlacierComputeChecksumsOutput = {
       val __obj = js.Dynamic.literal(linearHash = linearHash.asInstanceOf[js.Any], treeHash = treeHash.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlacierComputeChecksumsOutput]
     }
     
-    @scala.inline
-    implicit class GlacierComputeChecksumsOutputMutableBuilder[Self <: GlacierComputeChecksumsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GlacierComputeChecksumsOutput](x: Self) {
       
-      @scala.inline
-      def setLinearHash(value: String): Self = StObject.set(x, "linearHash", value.asInstanceOf[js.Any])
+      inline def setLinearHash(value: String): Self = StObject.set(x, "linearHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeHash(value: String): Self = StObject.set(x, "treeHash", value.asInstanceOf[js.Any])
+      inline def setTreeHash(value: String): Self = StObject.set(x, "treeHash", value.asInstanceOf[js.Any])
     }
   }
 }

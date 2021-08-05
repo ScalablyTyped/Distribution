@@ -11,6 +11,5 @@ object dateUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dateToUtcString(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToUtcString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dateToUtcString(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToUtcString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
 }

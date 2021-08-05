@@ -21,19 +21,14 @@ object EntryInitModes {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DEFAULT_INIT: `0` = 0.asInstanceOf[`0`]
+    inline def DEFAULT_INIT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def MEDIA_DESCRIPTOR_INIT: `3` = 3.asInstanceOf[`3`]
+    inline def MEDIA_DESCRIPTOR_INIT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NO_INIT: `2` = 2.asInstanceOf[`2`]
+    inline def NO_INIT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def TRUNCATE_INIT: `1` = 1.asInstanceOf[`1`]
+    inline def TRUNCATE_INIT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def URL_LINK_INIT: `4` = 4.asInstanceOf[`4`]
+    inline def URL_LINK_INIT: `4` = 4.asInstanceOf[`4`]
   }
 }

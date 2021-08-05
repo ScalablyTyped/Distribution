@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait billingAddressCollectionType extends StObject
 object billingAddressCollectionType {
   
-  @scala.inline
-  def _empty: typings.stripeV3.stripeV3Strings._empty = "".asInstanceOf[typings.stripeV3.stripeV3Strings._empty]
+  inline def _empty: typings.stripeV3.stripeV3Strings._empty = "".asInstanceOf[typings.stripeV3.stripeV3Strings._empty]
   
-  @scala.inline
-  def auto: typings.stripeV3.stripeV3Strings.auto = "auto".asInstanceOf[typings.stripeV3.stripeV3Strings.auto]
+  inline def auto: typings.stripeV3.stripeV3Strings.auto = "auto".asInstanceOf[typings.stripeV3.stripeV3Strings.auto]
   
-  @scala.inline
-  def required: typings.stripeV3.stripeV3Strings.required = "required".asInstanceOf[typings.stripeV3.stripeV3Strings.required]
+  inline def required: typings.stripeV3.stripeV3Strings.required = "required".asInstanceOf[typings.stripeV3.stripeV3Strings.required]
 }

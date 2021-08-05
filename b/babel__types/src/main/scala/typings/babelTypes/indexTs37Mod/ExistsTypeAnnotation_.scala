@@ -17,17 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ExistsTypeAnnotation_ {
   
-  @scala.inline
-  def apply(): ExistsTypeAnnotation_ = {
+  inline def apply(): ExistsTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExistsTypeAnnotation")
     __obj.asInstanceOf[ExistsTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class ExistsTypeAnnotation_MutableBuilder[Self <: ExistsTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: ExistsTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: ExistsTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExistsTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

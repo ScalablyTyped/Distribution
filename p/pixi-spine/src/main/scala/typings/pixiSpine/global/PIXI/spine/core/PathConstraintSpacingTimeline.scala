@@ -24,7 +24,7 @@ class PathConstraintSpacingTimeline protected ()
     direction: typings.pixiSpine.PIXI.spine.core.MixDirection
   ): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var curves: js.Any = js.native
   
   /* CompleteClass */

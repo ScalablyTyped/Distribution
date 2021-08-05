@@ -18,19 +18,15 @@ trait SchemaCreateVersionMetadataV1Alpha extends StObject {
 }
 object SchemaCreateVersionMetadataV1Alpha {
   
-  @scala.inline
-  def apply(): SchemaCreateVersionMetadataV1Alpha = {
+  inline def apply(): SchemaCreateVersionMetadataV1Alpha = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateVersionMetadataV1Alpha]
   }
   
-  @scala.inline
-  implicit class SchemaCreateVersionMetadataV1AlphaMutableBuilder[Self <: SchemaCreateVersionMetadataV1Alpha] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateVersionMetadataV1Alpha](x: Self) {
     
-    @scala.inline
-    def setCloudBuildId(value: String): Self = StObject.set(x, "cloudBuildId", value.asInstanceOf[js.Any])
+    inline def setCloudBuildId(value: String): Self = StObject.set(x, "cloudBuildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudBuildIdUndefined: Self = StObject.set(x, "cloudBuildId", js.undefined)
+    inline def setCloudBuildIdUndefined: Self = StObject.set(x, "cloudBuildId", js.undefined)
   }
 }

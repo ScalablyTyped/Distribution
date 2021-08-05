@@ -21,17 +21,14 @@ object anon {
   }
   object Optionsformatarray {
     
-    @scala.inline
-    def apply(format: (js.UndefOr[`object` | array | css]) & array): Optionsformatarray = {
+    inline def apply(format: (js.UndefOr[`object` | array | css]) & array): Optionsformatarray = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsformatarray]
     }
     
-    @scala.inline
-    implicit class OptionsformatarrayMutableBuilder[Self <: Optionsformatarray] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsformatarray](x: Self) {
       
-      @scala.inline
-      def setFormat(value: (js.UndefOr[`object` | array | css]) & array): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: (js.UndefOr[`object` | array | css]) & array): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,17 +44,14 @@ object anon {
   }
   object Optionsformatcss {
     
-    @scala.inline
-    def apply(format: (js.UndefOr[`object` | array | css]) & css): Optionsformatcss = {
+    inline def apply(format: (js.UndefOr[`object` | array | css]) & css): Optionsformatcss = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsformatcss]
     }
     
-    @scala.inline
-    implicit class OptionsformatcssMutableBuilder[Self <: Optionsformatcss] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsformatcss](x: Self) {
       
-      @scala.inline
-      def setFormat(value: (js.UndefOr[`object` | array | css]) & css): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: (js.UndefOr[`object` | array | css]) & css): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,17 +67,14 @@ object anon {
   }
   object Optionsformatobject {
     
-    @scala.inline
-    def apply(format: (js.UndefOr[`object` | array | css]) & `object`): Optionsformatobject = {
+    inline def apply(format: (js.UndefOr[`object` | array | css]) & `object`): Optionsformatobject = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsformatobject]
     }
     
-    @scala.inline
-    implicit class OptionsformatobjectMutableBuilder[Self <: Optionsformatobject] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsformatobject](x: Self) {
       
-      @scala.inline
-      def setFormat(value: (js.UndefOr[`object` | array | css]) & `object`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: (js.UndefOr[`object` | array | css]) & `object`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
 }

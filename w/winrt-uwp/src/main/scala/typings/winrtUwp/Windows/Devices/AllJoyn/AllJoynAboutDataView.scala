@@ -62,8 +62,7 @@ trait AllJoynAboutDataView extends StObject {
 }
 object AllJoynAboutDataView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ajSoftwareVersion: String,
     appId: String,
     appName: String,
@@ -85,55 +84,38 @@ object AllJoynAboutDataView {
     __obj.asInstanceOf[AllJoynAboutDataView]
   }
   
-  @scala.inline
-  implicit class AllJoynAboutDataViewMutableBuilder[Self <: AllJoynAboutDataView] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynAboutDataView](x: Self) {
     
-    @scala.inline
-    def setAjSoftwareVersion(value: String): Self = StObject.set(x, "ajSoftwareVersion", value.asInstanceOf[js.Any])
+    inline def setAjSoftwareVersion(value: String): Self = StObject.set(x, "ajSoftwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateOfManufacture(value: Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
+    inline def setDateOfManufacture(value: Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLanguage(value: Language): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
+    inline def setDefaultLanguage(value: Language): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareVersion(value: String): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
+    inline def setHardwareVersion(value: String): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
+    inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
+    inline def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUrl(value: Uri): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
+    inline def setSupportUrl(value: Uri): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedLanguages(value: IVectorView[Language]): Self = StObject.set(x, "supportedLanguages", value.asInstanceOf[js.Any])
+    inline def setSupportedLanguages(value: IVectorView[Language]): Self = StObject.set(x, "supportedLanguages", value.asInstanceOf[js.Any])
   }
 }

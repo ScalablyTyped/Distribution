@@ -19,19 +19,15 @@ trait ClearDataOptions extends StObject {
 }
 object ClearDataOptions {
   
-  @scala.inline
-  def apply(): ClearDataOptions = {
+  inline def apply(): ClearDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearDataOptions]
   }
   
-  @scala.inline
-  implicit class ClearDataOptionsMutableBuilder[Self <: ClearDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClearDataOptions](x: Self) {
     
-    @scala.inline
-    def setSince(value: integer): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: integer): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

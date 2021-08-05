@@ -30,8 +30,7 @@ trait ContextRealtimeData extends StObject {
 }
 object ContextRealtimeData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callbackIntervalMean: Double,
     callbackIntervalVariance: Double,
     currentTime: Double,
@@ -41,19 +40,14 @@ object ContextRealtimeData {
     __obj.asInstanceOf[ContextRealtimeData]
   }
   
-  @scala.inline
-  implicit class ContextRealtimeDataMutableBuilder[Self <: ContextRealtimeData] (val x: Self) extends AnyVal {
+  extension [Self <: ContextRealtimeData](x: Self) {
     
-    @scala.inline
-    def setCallbackIntervalMean(value: Double): Self = StObject.set(x, "callbackIntervalMean", value.asInstanceOf[js.Any])
+    inline def setCallbackIntervalMean(value: Double): Self = StObject.set(x, "callbackIntervalMean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackIntervalVariance(value: Double): Self = StObject.set(x, "callbackIntervalVariance", value.asInstanceOf[js.Any])
+    inline def setCallbackIntervalVariance(value: Double): Self = StObject.set(x, "callbackIntervalVariance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderCapacity(value: Double): Self = StObject.set(x, "renderCapacity", value.asInstanceOf[js.Any])
+    inline def setRenderCapacity(value: Double): Self = StObject.set(x, "renderCapacity", value.asInstanceOf[js.Any])
   }
 }

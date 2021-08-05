@@ -29,40 +29,34 @@ object transitionMod {
       @JSImport("react-pose/lib/components/Transition", "default.defaultProps.enterAfterExit")
       @js.native
       def enterAfterExit: Boolean = js.native
-      @scala.inline
-      def enterAfterExit_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterAfterExit")(x.asInstanceOf[js.Any])
+      inline def enterAfterExit_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterAfterExit")(x.asInstanceOf[js.Any])
       
       @JSImport("react-pose/lib/components/Transition", "default.defaultProps.enterPose")
       @js.native
       def enterPose: String = js.native
-      @scala.inline
-      def enterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterPose")(x.asInstanceOf[js.Any])
+      inline def enterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterPose")(x.asInstanceOf[js.Any])
       
       @JSImport("react-pose/lib/components/Transition", "default.defaultProps.exitPose")
       @js.native
       def exitPose: String = js.native
-      @scala.inline
-      def exitPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exitPose")(x.asInstanceOf[js.Any])
+      inline def exitPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exitPose")(x.asInstanceOf[js.Any])
       
       @JSImport("react-pose/lib/components/Transition", "default.defaultProps.flipMove")
       @js.native
       def flipMove: Boolean = js.native
-      @scala.inline
-      def flipMove_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flipMove")(x.asInstanceOf[js.Any])
+      inline def flipMove_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flipMove")(x.asInstanceOf[js.Any])
       
       @JSImport("react-pose/lib/components/Transition", "default.defaultProps.preEnterPose")
       @js.native
       def preEnterPose: String = js.native
-      @scala.inline
-      def preEnterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preEnterPose")(x.asInstanceOf[js.Any])
+      inline def preEnterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preEnterPose")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
     @JSImport("react-pose/lib/components/Transition", "default.getDerivedStateFromProps")
     @js.native
     def getDerivedStateFromProps: js.Function2[/* props */ Props, /* state */ State, PartialState] = js.native
-    @scala.inline
-    def getDerivedStateFromProps_=(x: js.Function2[/* props */ Props, /* state */ State, PartialState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+    inline def getDerivedStateFromProps_=(x: js.Function2[/* props */ Props, /* state */ State, PartialState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

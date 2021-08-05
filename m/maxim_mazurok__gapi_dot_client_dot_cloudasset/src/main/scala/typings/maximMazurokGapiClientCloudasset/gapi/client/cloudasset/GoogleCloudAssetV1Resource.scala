@@ -14,25 +14,19 @@ trait GoogleCloudAssetV1Resource extends StObject {
 }
 object GoogleCloudAssetV1Resource {
   
-  @scala.inline
-  def apply(): GoogleCloudAssetV1Resource = {
+  inline def apply(): GoogleCloudAssetV1Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssetV1Resource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssetV1ResourceMutableBuilder[Self <: GoogleCloudAssetV1Resource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssetV1Resource](x: Self) {
     
-    @scala.inline
-    def setAnalysisState(value: IamPolicyAnalysisState): Self = StObject.set(x, "analysisState", value.asInstanceOf[js.Any])
+    inline def setAnalysisState(value: IamPolicyAnalysisState): Self = StObject.set(x, "analysisState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisStateUndefined: Self = StObject.set(x, "analysisState", js.undefined)
+    inline def setAnalysisStateUndefined: Self = StObject.set(x, "analysisState", js.undefined)
     
-    @scala.inline
-    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+    inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+    inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
   }
 }

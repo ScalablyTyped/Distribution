@@ -75,8 +75,7 @@ object GmeConfig {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appDir: String,
       defaultConnectionRouter: basic | basic2 | basic3,
       errorReporting: DSN,
@@ -86,20 +85,15 @@ object GmeConfig {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
+      inline def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultConnectionRouter(value: basic | basic2 | basic3): Self = StObject.set(x, "defaultConnectionRouter", value.asInstanceOf[js.Any])
+      inline def setDefaultConnectionRouter(value: basic | basic2 | basic3): Self = StObject.set(x, "defaultConnectionRouter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorReporting(value: DSN): Self = StObject.set(x, "errorReporting", value.asInstanceOf[js.Any])
+      inline def setErrorReporting(value: DSN): Self = StObject.set(x, "errorReporting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: LevelString): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: LevelString): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,56 +130,40 @@ object GmeConfig {
   }
   object ConfigItem {
     
-    @scala.inline
-    def apply(description: String, displayName: String, name: Name, value: String, valueType: String): ConfigItem = {
+    inline def apply(description: String, displayName: String, name: Name, value: String, valueType: String): ConfigItem = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigItem]
     }
     
-    @scala.inline
-    implicit class ConfigItemMutableBuilder[Self <: ConfigItem] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigItem](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexMessage(value: String): Self = StObject.set(x, "regexMessage", value.asInstanceOf[js.Any])
+      inline def setRegexMessage(value: String): Self = StObject.set(x, "regexMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexMessageUndefined: Self = StObject.set(x, "regexMessage", js.undefined)
+      inline def setRegexMessageUndefined: Self = StObject.set(x, "regexMessage", js.undefined)
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueItems(value: js.Array[String]): Self = StObject.set(x, "valueItems", value.asInstanceOf[js.Any])
+      inline def setValueItems(value: js.Array[String]): Self = StObject.set(x, "valueItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueItemsUndefined: Self = StObject.set(x, "valueItems", js.undefined)
+      inline def setValueItemsUndefined: Self = StObject.set(x, "valueItems", js.undefined)
       
-      @scala.inline
-      def setValueItemsVarargs(value: String*): Self = StObject.set(x, "valueItems", js.Array(value :_*))
+      inline def setValueItemsVarargs(value: String*): Self = StObject.set(x, "valueItems", js.Array(value :_*))
       
-      @scala.inline
-      def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,8 +240,7 @@ object GmeConfig {
   }
   object GmeConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOns: BasePaths,
       authentication: AllowGuests,
       bin: Log,
@@ -288,65 +265,45 @@ object GmeConfig {
       __obj.asInstanceOf[typings.webgme.GmeConfig.GmeConfig]
     }
     
-    @scala.inline
-    implicit class GmeConfigMutableBuilder[Self <: typings.webgme.GmeConfig.GmeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: typings.webgme.GmeConfig.GmeConfig](x: Self) {
       
-      @scala.inline
-      def setAddOns(value: BasePaths): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
+      inline def setAddOns(value: BasePaths): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthentication(value: AllowGuests): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+      inline def setAuthentication(value: AllowGuests): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBin(value: Log): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+      inline def setBin(value: Log): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlob(value: ObjectBlob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+      inline def setBlob(value: ObjectBlob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient(value: ClientOptions): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: ClientOptions): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCore(value: EnableCustomConstraints): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
+      inline def setCore(value: EnableCustomConstraints): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutor(value: ClearOldDataAtStartUp): Self = StObject.set(x, "executor", value.asInstanceOf[js.Any])
+      inline def setExecutor(value: ClearOldDataAtStartUp): Self = StObject.set(x, "executor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongo(value: Uri): Self = StObject.set(x, "mongo", value.asInstanceOf[js.Any])
+      inline def setMongo(value: Uri): Self = StObject.set(x, "mongo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugin(value: AllowBrowserExecution): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: AllowBrowserExecution): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequirejsPaths(value: Dictionary[String]): Self = StObject.set(x, "requirejsPaths", value.asInstanceOf[js.Any])
+      inline def setRequirejsPaths(value: Dictionary[String]): Self = StObject.set(x, "requirejsPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest(value: Components): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+      inline def setRest(value: Components): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedProjects(value: AllowDuplication): Self = StObject.set(x, "seedProjects", value.asInstanceOf[js.Any])
+      inline def setSeedProjects(value: AllowDuplication): Self = StObject.set(x, "seedProjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+      inline def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setServer(value: BehindSecureProxy): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: BehindSecureProxy): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketIO(value: typings.webgme.anon.ClientOptions): Self = StObject.set(x, "socketIO", value.asInstanceOf[js.Any])
+      inline def setSocketIO(value: typings.webgme.anon.ClientOptions): Self = StObject.set(x, "socketIO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage(value: AutoMerge): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: AutoMerge): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisualization(value: DecoratorPaths): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
+      inline def setVisualization(value: DecoratorPaths): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooks(value: Manager): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: Manager): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
     }
   }
   
@@ -356,17 +313,14 @@ object GmeConfig {
   }
   object LogOptions {
     
-    @scala.inline
-    def apply(log: LevelString): LogOptions = {
+    inline def apply(log: LevelString): LogOptions = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogOptions]
     }
     
-    @scala.inline
-    implicit class LogOptionsMutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LogOptions](x: Self) {
       
-      @scala.inline
-      def setLog(value: LevelString): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: LevelString): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
   }
   
@@ -376,8 +330,7 @@ object GmeConfig {
        with /* propName */ StringDictionary[js.Any]
   object PluginConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOns: BasePaths,
       authentication: AllowGuests,
       bin: Log,

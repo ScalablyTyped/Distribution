@@ -26,7 +26,6 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def initializeGlobally(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeGlobally")().asInstanceOf[Unit]
+    inline def initializeGlobally(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeGlobally")().asInstanceOf[Unit]
   }
 }

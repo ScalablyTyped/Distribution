@@ -13,19 +13,15 @@ trait CreateReturnShippingLabelResult extends StObject {
 }
 object CreateReturnShippingLabelResult {
   
-  @scala.inline
-  def apply(): CreateReturnShippingLabelResult = {
+  inline def apply(): CreateReturnShippingLabelResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateReturnShippingLabelResult]
   }
   
-  @scala.inline
-  implicit class CreateReturnShippingLabelResultMutableBuilder[Self <: CreateReturnShippingLabelResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReturnShippingLabelResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ShippingLabelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ShippingLabelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

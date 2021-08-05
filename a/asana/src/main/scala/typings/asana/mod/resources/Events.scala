@@ -97,8 +97,7 @@ object Events extends Shortcut {
   }
   object EventDataEntity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: String,
       created_at: String,
       resource: EventTask | EventProject | EventSection | EventStory,
@@ -109,32 +108,23 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventDataEntity]
     }
     
-    @scala.inline
-    implicit class EventDataEntityMutableBuilder[Self <: EventDataEntity] (val x: Self) extends AnyVal {
+    extension [Self <: EventDataEntity](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: EventTask | EventProject | EventSection): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: EventTask | EventProject | EventSection): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNull: Self = StObject.set(x, "parent", null)
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
       
-      @scala.inline
-      def setResource(value: EventTask | EventProject | EventSection | EventStory): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: EventTask | EventProject | EventSection | EventStory): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: ShortType): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: ShortType): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNull: Self = StObject.set(x, "user", null)
+      inline def setUserNull: Self = StObject.set(x, "user", null)
     }
   }
   
@@ -144,17 +134,14 @@ object Events extends Shortcut {
   }
   object EventError {
     
-    @scala.inline
-    def apply(message: String): EventError = {
+    inline def apply(message: String): EventError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventError]
     }
     
-    @scala.inline
-    implicit class EventErrorMutableBuilder[Self <: EventError] (val x: Self) extends AnyVal {
+    extension [Self <: EventError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -838,35 +825,26 @@ object Events extends Shortcut {
   }
   object Type {
     
-    @scala.inline
-    def apply(sync: String): Type = {
+    inline def apply(sync: String): Type = {
       val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[EventDataEntity]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[EventDataEntity]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: EventDataEntity*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: EventDataEntity*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setErrors(value: js.Array[EventError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[EventError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: EventError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: EventError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setSync(value: String): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: String): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
   }
   

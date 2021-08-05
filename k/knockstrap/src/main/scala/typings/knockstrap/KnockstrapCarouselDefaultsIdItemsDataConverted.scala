@@ -12,8 +12,7 @@ trait KnockstrapCarouselDefaultsIdItemsDataConverted
 }
 object KnockstrapCarouselDefaultsIdItemsDataConverted {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any,
     items: js.Any
   ): KnockstrapCarouselDefaultsIdItemsDataConverted = {
@@ -21,10 +20,8 @@ object KnockstrapCarouselDefaultsIdItemsDataConverted {
     __obj.asInstanceOf[KnockstrapCarouselDefaultsIdItemsDataConverted]
   }
   
-  @scala.inline
-  implicit class KnockstrapCarouselDefaultsIdItemsDataConvertedMutableBuilder[Self <: KnockstrapCarouselDefaultsIdItemsDataConverted] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapCarouselDefaultsIdItemsDataConverted](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

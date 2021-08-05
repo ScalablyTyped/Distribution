@@ -36,64 +36,45 @@ trait Api extends StObject {
 }
 object Api {
   
-  @scala.inline
-  def apply(): Api = {
+  inline def apply(): Api = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Api]
   }
   
-  @scala.inline
-  implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+  extension [Self <: Api](x: Self) {
     
-    @scala.inline
-    def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    @scala.inline
-    def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
+    inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
     
-    @scala.inline
-    def setMixins(value: js.Array[Mixin]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+    inline def setMixins(value: js.Array[Mixin]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+    inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
     
-    @scala.inline
-    def setMixinsVarargs(value: Mixin*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+    inline def setMixinsVarargs(value: Mixin*): Self = StObject.set(x, "mixins", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceContext(value: SourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
+    inline def setSourceContext(value: SourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
+    inline def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
     
-    @scala.inline
-    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

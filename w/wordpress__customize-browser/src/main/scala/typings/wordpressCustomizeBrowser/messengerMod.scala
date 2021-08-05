@@ -61,23 +61,18 @@ object messengerMod {
   }
   object MessengerParams {
     
-    @scala.inline
-    def apply(channel: String, targetWindow: Window, url: String): MessengerParams = {
+    inline def apply(channel: String, targetWindow: Window, url: String): MessengerParams = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], targetWindow = targetWindow.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessengerParams]
     }
     
-    @scala.inline
-    implicit class MessengerParamsMutableBuilder[Self <: MessengerParams] (val x: Self) extends AnyVal {
+    extension [Self <: MessengerParams](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetWindow(value: Window): Self = StObject.set(x, "targetWindow", value.asInstanceOf[js.Any])
+      inline def setTargetWindow(value: Window): Self = StObject.set(x, "targetWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

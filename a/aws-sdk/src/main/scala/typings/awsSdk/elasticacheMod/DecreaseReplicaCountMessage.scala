@@ -33,43 +33,31 @@ trait DecreaseReplicaCountMessage extends StObject {
 }
 object DecreaseReplicaCountMessage {
   
-  @scala.inline
-  def apply(ApplyImmediately: Boolean, ReplicationGroupId: String): DecreaseReplicaCountMessage = {
+  inline def apply(ApplyImmediately: Boolean, ReplicationGroupId: String): DecreaseReplicaCountMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecreaseReplicaCountMessage]
   }
   
-  @scala.inline
-  implicit class DecreaseReplicaCountMessageMutableBuilder[Self <: DecreaseReplicaCountMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DecreaseReplicaCountMessage](x: Self) {
     
-    @scala.inline
-    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
+    inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewReplicaCount(value: IntegerOptional): Self = StObject.set(x, "NewReplicaCount", value.asInstanceOf[js.Any])
+    inline def setNewReplicaCount(value: IntegerOptional): Self = StObject.set(x, "NewReplicaCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewReplicaCountUndefined: Self = StObject.set(x, "NewReplicaCount", js.undefined)
+    inline def setNewReplicaCountUndefined: Self = StObject.set(x, "NewReplicaCount", js.undefined)
     
-    @scala.inline
-    def setReplicaConfiguration(value: ReplicaConfigurationList): Self = StObject.set(x, "ReplicaConfiguration", value.asInstanceOf[js.Any])
+    inline def setReplicaConfiguration(value: ReplicaConfigurationList): Self = StObject.set(x, "ReplicaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaConfigurationUndefined: Self = StObject.set(x, "ReplicaConfiguration", js.undefined)
+    inline def setReplicaConfigurationUndefined: Self = StObject.set(x, "ReplicaConfiguration", js.undefined)
     
-    @scala.inline
-    def setReplicaConfigurationVarargs(value: ConfigureShard*): Self = StObject.set(x, "ReplicaConfiguration", js.Array(value :_*))
+    inline def setReplicaConfigurationVarargs(value: ConfigureShard*): Self = StObject.set(x, "ReplicaConfiguration", js.Array(value :_*))
     
-    @scala.inline
-    def setReplicasToRemove(value: RemoveReplicasList): Self = StObject.set(x, "ReplicasToRemove", value.asInstanceOf[js.Any])
+    inline def setReplicasToRemove(value: RemoveReplicasList): Self = StObject.set(x, "ReplicasToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasToRemoveUndefined: Self = StObject.set(x, "ReplicasToRemove", js.undefined)
+    inline def setReplicasToRemoveUndefined: Self = StObject.set(x, "ReplicasToRemove", js.undefined)
     
-    @scala.inline
-    def setReplicasToRemoveVarargs(value: String*): Self = StObject.set(x, "ReplicasToRemove", js.Array(value :_*))
+    inline def setReplicasToRemoveVarargs(value: String*): Self = StObject.set(x, "ReplicasToRemove", js.Array(value :_*))
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

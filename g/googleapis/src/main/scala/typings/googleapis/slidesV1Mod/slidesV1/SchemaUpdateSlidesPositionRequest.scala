@@ -25,28 +25,21 @@ trait SchemaUpdateSlidesPositionRequest extends StObject {
 }
 object SchemaUpdateSlidesPositionRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateSlidesPositionRequest = {
+  inline def apply(): SchemaUpdateSlidesPositionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateSlidesPositionRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateSlidesPositionRequestMutableBuilder[Self <: SchemaUpdateSlidesPositionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateSlidesPositionRequest](x: Self) {
     
-    @scala.inline
-    def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
+    inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
+    inline def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
     
-    @scala.inline
-    def setSlideObjectIds(value: js.Array[String]): Self = StObject.set(x, "slideObjectIds", value.asInstanceOf[js.Any])
+    inline def setSlideObjectIds(value: js.Array[String]): Self = StObject.set(x, "slideObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideObjectIdsUndefined: Self = StObject.set(x, "slideObjectIds", js.undefined)
+    inline def setSlideObjectIdsUndefined: Self = StObject.set(x, "slideObjectIds", js.undefined)
     
-    @scala.inline
-    def setSlideObjectIdsVarargs(value: String*): Self = StObject.set(x, "slideObjectIds", js.Array(value :_*))
+    inline def setSlideObjectIdsVarargs(value: String*): Self = StObject.set(x, "slideObjectIds", js.Array(value :_*))
   }
 }

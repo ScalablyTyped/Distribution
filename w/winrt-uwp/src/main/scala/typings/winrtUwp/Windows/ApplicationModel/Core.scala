@@ -21,20 +21,16 @@ object Core {
   }
   object AppListEntry {
     
-    @scala.inline
-    def apply(displayInfo: AppDisplayInfo, launchAsync: () => IPromiseWithIAsyncOperation[Boolean]): AppListEntry = {
+    inline def apply(displayInfo: AppDisplayInfo, launchAsync: () => IPromiseWithIAsyncOperation[Boolean]): AppListEntry = {
       val __obj = js.Dynamic.literal(displayInfo = displayInfo.asInstanceOf[js.Any], launchAsync = js.Any.fromFunction0(launchAsync))
       __obj.asInstanceOf[AppListEntry]
     }
     
-    @scala.inline
-    implicit class AppListEntryMutableBuilder[Self <: AppListEntry] (val x: Self) extends AnyVal {
+    extension [Self <: AppListEntry](x: Self) {
       
-      @scala.inline
-      def setDisplayInfo(value: AppDisplayInfo): Self = StObject.set(x, "displayInfo", value.asInstanceOf[js.Any])
+      inline def setDisplayInfo(value: AppDisplayInfo): Self = StObject.set(x, "displayInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "launchAsync", js.Any.fromFunction0(value))
+      inline def setLaunchAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "launchAsync", js.Any.fromFunction0(value))
     }
   }
 }

@@ -18,19 +18,15 @@ trait ResourceQuery extends StObject {
 }
 object ResourceQuery {
   
-  @scala.inline
-  def apply(Query: Query, Type: QueryType): ResourceQuery = {
+  inline def apply(Query: Query, Type: QueryType): ResourceQuery = {
     val __obj = js.Dynamic.literal(Query = Query.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceQuery]
   }
   
-  @scala.inline
-  implicit class ResourceQueryMutableBuilder[Self <: ResourceQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceQuery](x: Self) {
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: QueryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: QueryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

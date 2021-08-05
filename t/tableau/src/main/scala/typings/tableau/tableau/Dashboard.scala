@@ -27,8 +27,7 @@ trait Dashboard
 }
 object Dashboard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeSizeAsync: SheetSizeOptions => js.Promise[SheetSizeOptions],
     getIndex: () => Double,
     getIsActive: () => Boolean,
@@ -46,16 +45,12 @@ object Dashboard {
     __obj.asInstanceOf[Dashboard]
   }
   
-  @scala.inline
-  implicit class DashboardMutableBuilder[Self <: Dashboard] (val x: Self) extends AnyVal {
+  extension [Self <: Dashboard](x: Self) {
     
-    @scala.inline
-    def setGetObjects(value: () => js.Array[DashboardObject]): Self = StObject.set(x, "getObjects", js.Any.fromFunction0(value))
+    inline def setGetObjects(value: () => js.Array[DashboardObject]): Self = StObject.set(x, "getObjects", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getParentStoryPoint", js.Any.fromFunction0(value))
+    inline def setGetParentStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getParentStoryPoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorksheets(value: () => js.Array[Worksheet]): Self = StObject.set(x, "getWorksheets", js.Any.fromFunction0(value))
+    inline def setGetWorksheets(value: () => js.Array[Worksheet]): Self = StObject.set(x, "getWorksheets", js.Any.fromFunction0(value))
   }
 }

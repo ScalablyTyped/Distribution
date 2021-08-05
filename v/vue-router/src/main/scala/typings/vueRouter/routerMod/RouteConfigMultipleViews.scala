@@ -15,25 +15,19 @@ trait RouteConfigMultipleViews
 }
 object RouteConfigMultipleViews {
   
-  @scala.inline
-  def apply(path: String): RouteConfigMultipleViews = {
+  inline def apply(path: String): RouteConfigMultipleViews = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteConfigMultipleViews]
   }
   
-  @scala.inline
-  implicit class RouteConfigMultipleViewsMutableBuilder[Self <: RouteConfigMultipleViews] (val x: Self) extends AnyVal {
+  extension [Self <: RouteConfigMultipleViews](x: Self) {
     
-    @scala.inline
-    def setComponents(value: Dictionary[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: Dictionary[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    @scala.inline
-    def setProps(value: Dictionary[Boolean | js.Object | RoutePropsFunction]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Dictionary[Boolean | js.Object | RoutePropsFunction]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
   }
 }

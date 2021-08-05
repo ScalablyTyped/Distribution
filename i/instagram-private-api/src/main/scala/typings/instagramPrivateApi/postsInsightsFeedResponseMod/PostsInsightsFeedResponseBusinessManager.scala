@@ -10,16 +10,13 @@ trait PostsInsightsFeedResponseBusinessManager extends StObject {
 }
 object PostsInsightsFeedResponseBusinessManager {
   
-  @scala.inline
-  def apply(top_posts_unit: PostsInsightsFeedResponseTopPostsUnit): PostsInsightsFeedResponseBusinessManager = {
+  inline def apply(top_posts_unit: PostsInsightsFeedResponseTopPostsUnit): PostsInsightsFeedResponseBusinessManager = {
     val __obj = js.Dynamic.literal(top_posts_unit = top_posts_unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseBusinessManager]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseBusinessManagerMutableBuilder[Self <: PostsInsightsFeedResponseBusinessManager] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseBusinessManager](x: Self) {
     
-    @scala.inline
-    def setTop_posts_unit(value: PostsInsightsFeedResponseTopPostsUnit): Self = StObject.set(x, "top_posts_unit", value.asInstanceOf[js.Any])
+    inline def setTop_posts_unit(value: PostsInsightsFeedResponseTopPostsUnit): Self = StObject.set(x, "top_posts_unit", value.asInstanceOf[js.Any])
   }
 }

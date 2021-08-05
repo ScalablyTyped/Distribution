@@ -92,26 +92,20 @@ object storyRendererMod {
   }
   object RenderMetadata {
     
-    @scala.inline
-    def apply(getDecorated: () => StoryFn[js.Any], id: StoryId, kind: StoryKind, viewMode: ViewMode): RenderMetadata = {
+    inline def apply(getDecorated: () => StoryFn[js.Any], id: StoryId, kind: StoryKind, viewMode: ViewMode): RenderMetadata = {
       val __obj = js.Dynamic.literal(getDecorated = js.Any.fromFunction0(getDecorated), id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderMetadata]
     }
     
-    @scala.inline
-    implicit class RenderMetadataMutableBuilder[Self <: RenderMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: RenderMetadata](x: Self) {
       
-      @scala.inline
-      def setGetDecorated(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
+      inline def setGetDecorated(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     }
   }
 }

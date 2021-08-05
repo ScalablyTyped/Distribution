@@ -8,31 +8,25 @@ object reactNativeLoadingSpinnerOverlayStrings {
   
   @js.native
   sealed trait fade extends StObject
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
   sealed trait large extends StObject
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait normal extends StObject
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait slide extends StObject
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
   sealed trait small extends StObject
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  inline def small: small = "small".asInstanceOf[small]
 }

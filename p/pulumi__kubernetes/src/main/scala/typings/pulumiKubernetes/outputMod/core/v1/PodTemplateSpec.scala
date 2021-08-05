@@ -22,19 +22,15 @@ trait PodTemplateSpec extends StObject {
 }
 object PodTemplateSpec {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: PodSpec): PodTemplateSpec = {
+  inline def apply(metadata: ObjectMeta, spec: PodSpec): PodTemplateSpec = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodTemplateSpec]
   }
   
-  @scala.inline
-  implicit class PodTemplateSpecMutableBuilder[Self <: PodTemplateSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PodTemplateSpec](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: PodSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: PodSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
   }
 }

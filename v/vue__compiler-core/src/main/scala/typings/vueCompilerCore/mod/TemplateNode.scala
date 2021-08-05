@@ -17,8 +17,7 @@ trait TemplateNode
 }
 object TemplateNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[TemplateChildNode],
     codegenNode: Unit,
     isSelfClosing: Boolean,
@@ -32,13 +31,10 @@ object TemplateNode {
     __obj.asInstanceOf[TemplateNode]
   }
   
-  @scala.inline
-  implicit class TemplateNodeMutableBuilder[Self <: TemplateNode] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateNode](x: Self) {
     
-    @scala.inline
-    def setCodegenNode(value: Unit): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: Unit): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagType(value: `3`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
+    inline def setTagType(value: `3`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
   }
 }

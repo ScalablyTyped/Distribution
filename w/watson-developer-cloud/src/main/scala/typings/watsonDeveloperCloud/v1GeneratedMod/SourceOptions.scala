@@ -27,64 +27,45 @@ trait SourceOptions extends StObject {
 }
 object SourceOptions {
   
-  @scala.inline
-  def apply(): SourceOptions = {
+  inline def apply(): SourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceOptions]
   }
   
-  @scala.inline
-  implicit class SourceOptionsMutableBuilder[Self <: SourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SourceOptions](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: js.Array[SourceOptionsBuckets]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: js.Array[SourceOptionsBuckets]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: SourceOptionsBuckets*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: SourceOptionsBuckets*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
-    @scala.inline
-    def setCrawl_all_buckets(value: Boolean): Self = StObject.set(x, "crawl_all_buckets", value.asInstanceOf[js.Any])
+    inline def setCrawl_all_buckets(value: Boolean): Self = StObject.set(x, "crawl_all_buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawl_all_bucketsUndefined: Self = StObject.set(x, "crawl_all_buckets", js.undefined)
+    inline def setCrawl_all_bucketsUndefined: Self = StObject.set(x, "crawl_all_buckets", js.undefined)
     
-    @scala.inline
-    def setFolders(value: js.Array[SourceOptionsFolder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+    inline def setFolders(value: js.Array[SourceOptionsFolder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+    inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    @scala.inline
-    def setFoldersVarargs(value: SourceOptionsFolder*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: SourceOptionsFolder*): Self = StObject.set(x, "folders", js.Array(value :_*))
     
-    @scala.inline
-    def setObjects(value: js.Array[SourceOptionsObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[SourceOptionsObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+    inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
-    @scala.inline
-    def setObjectsVarargs(value: SourceOptionsObject*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: SourceOptionsObject*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
-    @scala.inline
-    def setSite_collections(value: js.Array[SourceOptionsSiteColl]): Self = StObject.set(x, "site_collections", value.asInstanceOf[js.Any])
+    inline def setSite_collections(value: js.Array[SourceOptionsSiteColl]): Self = StObject.set(x, "site_collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSite_collectionsUndefined: Self = StObject.set(x, "site_collections", js.undefined)
+    inline def setSite_collectionsUndefined: Self = StObject.set(x, "site_collections", js.undefined)
     
-    @scala.inline
-    def setSite_collectionsVarargs(value: SourceOptionsSiteColl*): Self = StObject.set(x, "site_collections", js.Array(value :_*))
+    inline def setSite_collectionsVarargs(value: SourceOptionsSiteColl*): Self = StObject.set(x, "site_collections", js.Array(value :_*))
     
-    @scala.inline
-    def setUrls(value: js.Array[SourceOptionsWebCrawl]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[SourceOptionsWebCrawl]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: SourceOptionsWebCrawl*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: SourceOptionsWebCrawl*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

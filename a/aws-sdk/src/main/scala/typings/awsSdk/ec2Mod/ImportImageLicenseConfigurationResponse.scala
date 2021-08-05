@@ -13,19 +13,15 @@ trait ImportImageLicenseConfigurationResponse extends StObject {
 }
 object ImportImageLicenseConfigurationResponse {
   
-  @scala.inline
-  def apply(): ImportImageLicenseConfigurationResponse = {
+  inline def apply(): ImportImageLicenseConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportImageLicenseConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class ImportImageLicenseConfigurationResponseMutableBuilder[Self <: ImportImageLicenseConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ImportImageLicenseConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "LicenseConfigurationArn", js.undefined)
+    inline def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "LicenseConfigurationArn", js.undefined)
   }
 }

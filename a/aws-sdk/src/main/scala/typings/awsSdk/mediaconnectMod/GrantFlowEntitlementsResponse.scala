@@ -18,28 +18,21 @@ trait GrantFlowEntitlementsResponse extends StObject {
 }
 object GrantFlowEntitlementsResponse {
   
-  @scala.inline
-  def apply(): GrantFlowEntitlementsResponse = {
+  inline def apply(): GrantFlowEntitlementsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrantFlowEntitlementsResponse]
   }
   
-  @scala.inline
-  implicit class GrantFlowEntitlementsResponseMutableBuilder[Self <: GrantFlowEntitlementsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GrantFlowEntitlementsResponse](x: Self) {
     
-    @scala.inline
-    def setEntitlements(value: listOfEntitlement): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
+    inline def setEntitlements(value: listOfEntitlement): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
+    inline def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
     
-    @scala.inline
-    def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
   }
 }

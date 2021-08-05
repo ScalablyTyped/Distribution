@@ -44,35 +44,23 @@ object mod {
   @js.native
   val SafeAreaView: ComponentClass[SafeAreaViewProps, ComponentState] = js.native
   
-  @scala.inline
-  def getInset_bottom(key: bottom): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getInset_bottom(key: bottom, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getInset_bottom(key: bottom): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getInset_bottom(key: bottom, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getInset_left(key: left): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getInset_left(key: left, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getInset_left(key: left): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getInset_left(key: left, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getInset_right(key: right): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getInset_right(key: right, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getInset_right(key: right): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getInset_right(key: right, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getInset_top(key: top): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getInset_top(key: top, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getInset_top(key: top): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getInset_top(key: top, isLandscape: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInset")(key.asInstanceOf[js.Any], isLandscape.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
-  @scala.inline
-  def getStatusBarHeight(isLandscape: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(isLandscape.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
+  inline def getStatusBarHeight(isLandscape: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(isLandscape.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def withSafeArea[P /* <: js.Object */](): js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")().asInstanceOf[js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]]]
-  @scala.inline
-  def withSafeArea[P /* <: js.Object */](safeAreaViewProps: SafeAreaViewProps): js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(safeAreaViewProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]]]
+  inline def withSafeArea[P /* <: js.Object */](): js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")().asInstanceOf[js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]]]
+  inline def withSafeArea[P /* <: js.Object */](safeAreaViewProps: SafeAreaViewProps): js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(safeAreaViewProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ComponentType[P], ComponentType[P & SafeAreaViewProps]]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always
@@ -81,11 +69,9 @@ object mod {
   trait SafeAreaViewForceInsetValue extends StObject
   object SafeAreaViewForceInsetValue {
     
-    @scala.inline
-    def always: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always = "always".asInstanceOf[typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always]
+    inline def always: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always = "always".asInstanceOf[typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.always]
     
-    @scala.inline
-    def never: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never = "never".asInstanceOf[typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never]
+    inline def never: typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never = "never".asInstanceOf[typings.reactNativeSafeAreaView.reactNativeSafeAreaViewStrings.never]
   }
   
   trait SafeAreaViewProps
@@ -96,20 +82,16 @@ object mod {
   }
   object SafeAreaViewProps {
     
-    @scala.inline
-    def apply(): SafeAreaViewProps = {
+    inline def apply(): SafeAreaViewProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SafeAreaViewProps]
     }
     
-    @scala.inline
-    implicit class SafeAreaViewPropsMutableBuilder[Self <: SafeAreaViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: SafeAreaViewProps](x: Self) {
       
-      @scala.inline
-      def setForceInset(value: Bottom): Self = StObject.set(x, "forceInset", value.asInstanceOf[js.Any])
+      inline def setForceInset(value: Bottom): Self = StObject.set(x, "forceInset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceInsetUndefined: Self = StObject.set(x, "forceInset", js.undefined)
+      inline def setForceInsetUndefined: Self = StObject.set(x, "forceInset", js.undefined)
     }
   }
 }

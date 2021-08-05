@@ -53,6 +53,5 @@ object emptyMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  @scala.inline
-  def empty[T](): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[IIterator[T]]
+  inline def empty[T](): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[IIterator[T]]
 }

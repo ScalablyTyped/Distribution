@@ -13,14 +13,10 @@ object getCoipPoolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCoipPool(): js.Promise[GetCoipPoolResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")().asInstanceOf[js.Promise[GetCoipPoolResult]]
-  @scala.inline
-  def getCoipPool(args: Unit, opts: InvokeOptions): js.Promise[GetCoipPoolResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCoipPoolResult]]
-  @scala.inline
-  def getCoipPool(args: GetCoipPoolArgs): js.Promise[GetCoipPoolResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCoipPoolResult]]
-  @scala.inline
-  def getCoipPool(args: GetCoipPoolArgs, opts: InvokeOptions): js.Promise[GetCoipPoolResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCoipPoolResult]]
+  inline def getCoipPool(): js.Promise[GetCoipPoolResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")().asInstanceOf[js.Promise[GetCoipPoolResult]]
+  inline def getCoipPool(args: Unit, opts: InvokeOptions): js.Promise[GetCoipPoolResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCoipPoolResult]]
+  inline def getCoipPool(args: GetCoipPoolArgs): js.Promise[GetCoipPoolResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCoipPoolResult]]
+  inline def getCoipPool(args: GetCoipPoolArgs, opts: InvokeOptions): js.Promise[GetCoipPoolResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCoipPoolResult]]
   
   trait GetCoipPoolArgs extends StObject {
     
@@ -44,41 +40,30 @@ object getCoipPoolMod {
   }
   object GetCoipPoolArgs {
     
-    @scala.inline
-    def apply(): GetCoipPoolArgs = {
+    inline def apply(): GetCoipPoolArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCoipPoolArgs]
     }
     
-    @scala.inline
-    implicit class GetCoipPoolArgsMutableBuilder[Self <: GetCoipPoolArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetCoipPoolArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetCoipPoolFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetCoipPoolFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetCoipPoolFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetCoipPoolFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
+      inline def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
       
-      @scala.inline
-      def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+      inline def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolIdUndefined: Self = StObject.set(x, "poolId", js.undefined)
+      inline def setPoolIdUndefined: Self = StObject.set(x, "poolId", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -104,8 +89,7 @@ object getCoipPoolMod {
   }
   object GetCoipPoolResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       localGatewayRouteTableId: String,
       poolCidrs: js.Array[String],
@@ -116,35 +100,25 @@ object getCoipPoolMod {
       __obj.asInstanceOf[GetCoipPoolResult]
     }
     
-    @scala.inline
-    implicit class GetCoipPoolResultMutableBuilder[Self <: GetCoipPoolResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCoipPoolResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetCoipPoolFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetCoipPoolFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetCoipPoolFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetCoipPoolFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: String): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolCidrs(value: js.Array[String]): Self = StObject.set(x, "poolCidrs", value.asInstanceOf[js.Any])
+      inline def setPoolCidrs(value: js.Array[String]): Self = StObject.set(x, "poolCidrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolCidrsVarargs(value: String*): Self = StObject.set(x, "poolCidrs", js.Array(value :_*))
+      inline def setPoolCidrsVarargs(value: String*): Self = StObject.set(x, "poolCidrs", js.Array(value :_*))
       
-      @scala.inline
-      def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+      inline def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

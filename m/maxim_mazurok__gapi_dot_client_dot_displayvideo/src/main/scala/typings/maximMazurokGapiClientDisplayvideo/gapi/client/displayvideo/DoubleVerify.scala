@@ -32,58 +32,41 @@ trait DoubleVerify extends StObject {
 }
 object DoubleVerify {
   
-  @scala.inline
-  def apply(): DoubleVerify = {
+  inline def apply(): DoubleVerify = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleVerify]
   }
   
-  @scala.inline
-  implicit class DoubleVerifyMutableBuilder[Self <: DoubleVerify] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleVerify](x: Self) {
     
-    @scala.inline
-    def setAppStarRating(value: DoubleVerifyAppStarRating): Self = StObject.set(x, "appStarRating", value.asInstanceOf[js.Any])
+    inline def setAppStarRating(value: DoubleVerifyAppStarRating): Self = StObject.set(x, "appStarRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStarRatingUndefined: Self = StObject.set(x, "appStarRating", js.undefined)
+    inline def setAppStarRatingUndefined: Self = StObject.set(x, "appStarRating", js.undefined)
     
-    @scala.inline
-    def setAvoidedAgeRatings(value: js.Array[String]): Self = StObject.set(x, "avoidedAgeRatings", value.asInstanceOf[js.Any])
+    inline def setAvoidedAgeRatings(value: js.Array[String]): Self = StObject.set(x, "avoidedAgeRatings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidedAgeRatingsUndefined: Self = StObject.set(x, "avoidedAgeRatings", js.undefined)
+    inline def setAvoidedAgeRatingsUndefined: Self = StObject.set(x, "avoidedAgeRatings", js.undefined)
     
-    @scala.inline
-    def setAvoidedAgeRatingsVarargs(value: String*): Self = StObject.set(x, "avoidedAgeRatings", js.Array(value :_*))
+    inline def setAvoidedAgeRatingsVarargs(value: String*): Self = StObject.set(x, "avoidedAgeRatings", js.Array(value :_*))
     
-    @scala.inline
-    def setBrandSafetyCategories(value: DoubleVerifyBrandSafetyCategories): Self = StObject.set(x, "brandSafetyCategories", value.asInstanceOf[js.Any])
+    inline def setBrandSafetyCategories(value: DoubleVerifyBrandSafetyCategories): Self = StObject.set(x, "brandSafetyCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandSafetyCategoriesUndefined: Self = StObject.set(x, "brandSafetyCategories", js.undefined)
+    inline def setBrandSafetyCategoriesUndefined: Self = StObject.set(x, "brandSafetyCategories", js.undefined)
     
-    @scala.inline
-    def setCustomSegmentId(value: String): Self = StObject.set(x, "customSegmentId", value.asInstanceOf[js.Any])
+    inline def setCustomSegmentId(value: String): Self = StObject.set(x, "customSegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSegmentIdUndefined: Self = StObject.set(x, "customSegmentId", js.undefined)
+    inline def setCustomSegmentIdUndefined: Self = StObject.set(x, "customSegmentId", js.undefined)
     
-    @scala.inline
-    def setDisplayViewability(value: DoubleVerifyDisplayViewability): Self = StObject.set(x, "displayViewability", value.asInstanceOf[js.Any])
+    inline def setDisplayViewability(value: DoubleVerifyDisplayViewability): Self = StObject.set(x, "displayViewability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayViewabilityUndefined: Self = StObject.set(x, "displayViewability", js.undefined)
+    inline def setDisplayViewabilityUndefined: Self = StObject.set(x, "displayViewability", js.undefined)
     
-    @scala.inline
-    def setFraudInvalidTraffic(value: DoubleVerifyFraudInvalidTraffic): Self = StObject.set(x, "fraudInvalidTraffic", value.asInstanceOf[js.Any])
+    inline def setFraudInvalidTraffic(value: DoubleVerifyFraudInvalidTraffic): Self = StObject.set(x, "fraudInvalidTraffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFraudInvalidTrafficUndefined: Self = StObject.set(x, "fraudInvalidTraffic", js.undefined)
+    inline def setFraudInvalidTrafficUndefined: Self = StObject.set(x, "fraudInvalidTraffic", js.undefined)
     
-    @scala.inline
-    def setVideoViewability(value: DoubleVerifyVideoViewability): Self = StObject.set(x, "videoViewability", value.asInstanceOf[js.Any])
+    inline def setVideoViewability(value: DoubleVerifyVideoViewability): Self = StObject.set(x, "videoViewability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoViewabilityUndefined: Self = StObject.set(x, "videoViewability", js.undefined)
+    inline def setVideoViewabilityUndefined: Self = StObject.set(x, "videoViewability", js.undefined)
   }
 }

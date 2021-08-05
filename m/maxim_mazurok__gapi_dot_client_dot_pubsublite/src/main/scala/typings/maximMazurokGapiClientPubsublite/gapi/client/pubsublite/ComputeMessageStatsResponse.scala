@@ -26,37 +26,27 @@ trait ComputeMessageStatsResponse extends StObject {
 }
 object ComputeMessageStatsResponse {
   
-  @scala.inline
-  def apply(): ComputeMessageStatsResponse = {
+  inline def apply(): ComputeMessageStatsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComputeMessageStatsResponse]
   }
   
-  @scala.inline
-  implicit class ComputeMessageStatsResponseMutableBuilder[Self <: ComputeMessageStatsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeMessageStatsResponse](x: Self) {
     
-    @scala.inline
-    def setMessageBytes(value: String): Self = StObject.set(x, "messageBytes", value.asInstanceOf[js.Any])
+    inline def setMessageBytes(value: String): Self = StObject.set(x, "messageBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageBytesUndefined: Self = StObject.set(x, "messageBytes", js.undefined)
+    inline def setMessageBytesUndefined: Self = StObject.set(x, "messageBytes", js.undefined)
     
-    @scala.inline
-    def setMessageCount(value: String): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+    inline def setMessageCount(value: String): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageCountUndefined: Self = StObject.set(x, "messageCount", js.undefined)
+    inline def setMessageCountUndefined: Self = StObject.set(x, "messageCount", js.undefined)
     
-    @scala.inline
-    def setMinimumEventTime(value: String): Self = StObject.set(x, "minimumEventTime", value.asInstanceOf[js.Any])
+    inline def setMinimumEventTime(value: String): Self = StObject.set(x, "minimumEventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumEventTimeUndefined: Self = StObject.set(x, "minimumEventTime", js.undefined)
+    inline def setMinimumEventTimeUndefined: Self = StObject.set(x, "minimumEventTime", js.undefined)
     
-    @scala.inline
-    def setMinimumPublishTime(value: String): Self = StObject.set(x, "minimumPublishTime", value.asInstanceOf[js.Any])
+    inline def setMinimumPublishTime(value: String): Self = StObject.set(x, "minimumPublishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumPublishTimeUndefined: Self = StObject.set(x, "minimumPublishTime", js.undefined)
+    inline def setMinimumPublishTimeUndefined: Self = StObject.set(x, "minimumPublishTime", js.undefined)
   }
 }

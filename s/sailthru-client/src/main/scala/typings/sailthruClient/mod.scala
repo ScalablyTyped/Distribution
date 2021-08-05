@@ -18,15 +18,11 @@ object mod {
   @js.native
   val VERSION: String = js.native
   
-  @scala.inline
-  def createClient(apiKey: String, apiSecret: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
-  @scala.inline
-  def createClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], apiUrl.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
+  inline def createClient(apiKey: String, apiSecret: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
+  inline def createClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], apiUrl.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
   
-  @scala.inline
-  def createSailthruClient(apiKey: String, apiSecret: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createSailthruClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
-  @scala.inline
-  def createSailthruClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createSailthruClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], apiUrl.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
+  inline def createSailthruClient(apiKey: String, apiSecret: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createSailthruClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
+  inline def createSailthruClient(apiKey: String, apiSecret: String, apiUrl: String): SailthruClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createSailthruClient")(apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], apiUrl.asInstanceOf[js.Any])).asInstanceOf[SailthruClient]
   
   trait PurchaseItem extends StObject {
     
@@ -48,50 +44,36 @@ object mod {
   }
   object PurchaseItem {
     
-    @scala.inline
-    def apply(id: String | Double, price: Double, qty: Double, title: String, url: String): PurchaseItem = {
+    inline def apply(id: String | Double, price: Double, qty: Double, title: String, url: String): PurchaseItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], qty = qty.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PurchaseItem]
     }
     
-    @scala.inline
-    implicit class PurchaseItemMutableBuilder[Self <: PurchaseItem] (val x: Self) extends AnyVal {
+    extension [Self <: PurchaseItem](x: Self) {
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImages(value: Full): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: Full): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQty(value: Double): Self = StObject.set(x, "qty", value.asInstanceOf[js.Any])
+      inline def setQty(value: Double): Self = StObject.set(x, "qty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
+      inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
     }
   }
   
@@ -104,19 +86,16 @@ object mod {
   }
   object RestlerResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       on: (String, js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]) => RestlerResult
     ): RestlerResult = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[RestlerResult]
     }
     
-    @scala.inline
-    implicit class RestlerResultMutableBuilder[Self <: RestlerResult] (val x: Self) extends AnyVal {
+    extension [Self <: RestlerResult](x: Self) {
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: (String, js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]) => RestlerResult
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }

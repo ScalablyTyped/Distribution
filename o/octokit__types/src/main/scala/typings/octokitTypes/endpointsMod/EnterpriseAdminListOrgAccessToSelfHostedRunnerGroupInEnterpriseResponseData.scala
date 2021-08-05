@@ -13,22 +13,17 @@ trait EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseDat
 }
 object EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData {
   
-  @scala.inline
-  def apply(organizations: js.Array[Description], total_count: Double): EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData = {
+  inline def apply(organizations: js.Array[Description], total_count: Double): EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData = {
     val __obj = js.Dynamic.literal(organizations = organizations.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseDataMutableBuilder[Self <: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseResponseData](x: Self) {
     
-    @scala.inline
-    def setOrganizations(value: js.Array[Description]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+    inline def setOrganizations(value: js.Array[Description]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsVarargs(value: Description*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+    inline def setOrganizationsVarargs(value: Description*): Self = StObject.set(x, "organizations", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

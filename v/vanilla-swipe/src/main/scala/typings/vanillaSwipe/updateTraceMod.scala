@@ -10,6 +10,5 @@ object updateTraceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def updateTrace(trace: js.Array[Double], value: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTrace")(trace.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def updateTrace(trace: js.Array[Double], value: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTrace")(trace.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

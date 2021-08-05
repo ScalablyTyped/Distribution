@@ -48,61 +48,43 @@ trait StackSetSummary extends StObject {
 }
 object StackSetSummary {
   
-  @scala.inline
-  def apply(): StackSetSummary = {
+  inline def apply(): StackSetSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackSetSummary]
   }
   
-  @scala.inline
-  implicit class StackSetSummaryMutableBuilder[Self <: StackSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: StackSetSummary](x: Self) {
     
-    @scala.inline
-    def setAutoDeployment(value: AutoDeployment): Self = StObject.set(x, "AutoDeployment", value.asInstanceOf[js.Any])
+    inline def setAutoDeployment(value: AutoDeployment): Self = StObject.set(x, "AutoDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeploymentUndefined: Self = StObject.set(x, "AutoDeployment", js.undefined)
+    inline def setAutoDeploymentUndefined: Self = StObject.set(x, "AutoDeployment", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDriftStatus(value: StackDriftStatus): Self = StObject.set(x, "DriftStatus", value.asInstanceOf[js.Any])
+    inline def setDriftStatus(value: StackDriftStatus): Self = StObject.set(x, "DriftStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriftStatusUndefined: Self = StObject.set(x, "DriftStatus", js.undefined)
+    inline def setDriftStatusUndefined: Self = StObject.set(x, "DriftStatus", js.undefined)
     
-    @scala.inline
-    def setLastDriftCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastDriftCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDriftCheckTimestampUndefined: Self = StObject.set(x, "LastDriftCheckTimestamp", js.undefined)
+    inline def setLastDriftCheckTimestampUndefined: Self = StObject.set(x, "LastDriftCheckTimestamp", js.undefined)
     
-    @scala.inline
-    def setPermissionModel(value: PermissionModels): Self = StObject.set(x, "PermissionModel", value.asInstanceOf[js.Any])
+    inline def setPermissionModel(value: PermissionModels): Self = StObject.set(x, "PermissionModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionModelUndefined: Self = StObject.set(x, "PermissionModel", js.undefined)
+    inline def setPermissionModelUndefined: Self = StObject.set(x, "PermissionModel", js.undefined)
     
-    @scala.inline
-    def setStackSetId(value: StackSetId): Self = StObject.set(x, "StackSetId", value.asInstanceOf[js.Any])
+    inline def setStackSetId(value: StackSetId): Self = StObject.set(x, "StackSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetIdUndefined: Self = StObject.set(x, "StackSetId", js.undefined)
+    inline def setStackSetIdUndefined: Self = StObject.set(x, "StackSetId", js.undefined)
     
-    @scala.inline
-    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
+    inline def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetNameUndefined: Self = StObject.set(x, "StackSetName", js.undefined)
+    inline def setStackSetNameUndefined: Self = StObject.set(x, "StackSetName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StackSetStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StackSetStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

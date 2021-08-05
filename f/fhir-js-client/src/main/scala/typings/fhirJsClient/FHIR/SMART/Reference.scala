@@ -13,16 +13,13 @@ trait Reference extends StObject {
 }
 object Reference {
   
-  @scala.inline
-  def apply(reference: String): Reference = {
+  inline def apply(reference: String): Reference = {
     val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
   
-  @scala.inline
-  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+  extension [Self <: Reference](x: Self) {
     
-    @scala.inline
-    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

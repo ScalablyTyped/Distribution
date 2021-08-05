@@ -17,22 +17,17 @@ trait Only extends StObject {
 }
 object Only {
   
-  @scala.inline
-  def apply(value: block | flex | `inline` | `inline-block` | `inline-flex`): Only = {
+  inline def apply(value: block | flex | `inline` | `inline-block` | `inline-flex`): Only = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Only]
   }
   
-  @scala.inline
-  implicit class OnlyMutableBuilder[Self <: Only] (val x: Self) extends AnyVal {
+  extension [Self <: Only](x: Self) {
     
-    @scala.inline
-    def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+    inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    @scala.inline
-    def setValue(value: block | flex | `inline` | `inline-block` | `inline-flex`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: block | flex | `inline` | `inline-block` | `inline-flex`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

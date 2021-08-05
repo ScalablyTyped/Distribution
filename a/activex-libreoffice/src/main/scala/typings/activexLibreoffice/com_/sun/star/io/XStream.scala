@@ -25,8 +25,7 @@ trait XStream
 }
 object XStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     OutputStream: XOutputStream,
     acquire: () => Unit,
@@ -39,19 +38,14 @@ object XStream {
     __obj.asInstanceOf[XStream]
   }
   
-  @scala.inline
-  implicit class XStreamMutableBuilder[Self <: XStream] (val x: Self) extends AnyVal {
+  extension [Self <: XStream](x: Self) {
     
-    @scala.inline
-    def setGetInputStream(value: () => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction0(value))
+    inline def setGetInputStream(value: () => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOutputStream(value: () => XOutputStream): Self = StObject.set(x, "getOutputStream", js.Any.fromFunction0(value))
+    inline def setGetOutputStream(value: () => XOutputStream): Self = StObject.set(x, "getOutputStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
+    inline def setInputStream(value: XInputStream): Self = StObject.set(x, "InputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputStream(value: XOutputStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
+    inline def setOutputStream(value: XOutputStream): Self = StObject.set(x, "OutputStream", value.asInstanceOf[js.Any])
   }
 }

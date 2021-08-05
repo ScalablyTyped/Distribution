@@ -97,100 +97,69 @@ trait RecognitionConfig extends StObject {
 }
 object RecognitionConfig {
   
-  @scala.inline
-  def apply(): RecognitionConfig = {
+  inline def apply(): RecognitionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecognitionConfig]
   }
   
-  @scala.inline
-  implicit class RecognitionConfigMutableBuilder[Self <: RecognitionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RecognitionConfig](x: Self) {
     
-    @scala.inline
-    def setAudioChannelCount(value: Double): Self = StObject.set(x, "audioChannelCount", value.asInstanceOf[js.Any])
+    inline def setAudioChannelCount(value: Double): Self = StObject.set(x, "audioChannelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioChannelCountUndefined: Self = StObject.set(x, "audioChannelCount", js.undefined)
+    inline def setAudioChannelCountUndefined: Self = StObject.set(x, "audioChannelCount", js.undefined)
     
-    @scala.inline
-    def setDiarizationConfig(value: SpeakerDiarizationConfig): Self = StObject.set(x, "diarizationConfig", value.asInstanceOf[js.Any])
+    inline def setDiarizationConfig(value: SpeakerDiarizationConfig): Self = StObject.set(x, "diarizationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiarizationConfigUndefined: Self = StObject.set(x, "diarizationConfig", js.undefined)
+    inline def setDiarizationConfigUndefined: Self = StObject.set(x, "diarizationConfig", js.undefined)
     
-    @scala.inline
-    def setEnableAutomaticPunctuation(value: Boolean): Self = StObject.set(x, "enableAutomaticPunctuation", value.asInstanceOf[js.Any])
+    inline def setEnableAutomaticPunctuation(value: Boolean): Self = StObject.set(x, "enableAutomaticPunctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutomaticPunctuationUndefined: Self = StObject.set(x, "enableAutomaticPunctuation", js.undefined)
+    inline def setEnableAutomaticPunctuationUndefined: Self = StObject.set(x, "enableAutomaticPunctuation", js.undefined)
     
-    @scala.inline
-    def setEnableSeparateRecognitionPerChannel(value: Boolean): Self = StObject.set(x, "enableSeparateRecognitionPerChannel", value.asInstanceOf[js.Any])
+    inline def setEnableSeparateRecognitionPerChannel(value: Boolean): Self = StObject.set(x, "enableSeparateRecognitionPerChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSeparateRecognitionPerChannelUndefined: Self = StObject.set(x, "enableSeparateRecognitionPerChannel", js.undefined)
+    inline def setEnableSeparateRecognitionPerChannelUndefined: Self = StObject.set(x, "enableSeparateRecognitionPerChannel", js.undefined)
     
-    @scala.inline
-    def setEnableWordTimeOffsets(value: Boolean): Self = StObject.set(x, "enableWordTimeOffsets", value.asInstanceOf[js.Any])
+    inline def setEnableWordTimeOffsets(value: Boolean): Self = StObject.set(x, "enableWordTimeOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableWordTimeOffsetsUndefined: Self = StObject.set(x, "enableWordTimeOffsets", js.undefined)
+    inline def setEnableWordTimeOffsetsUndefined: Self = StObject.set(x, "enableWordTimeOffsets", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setMaxAlternatives(value: Double): Self = StObject.set(x, "maxAlternatives", value.asInstanceOf[js.Any])
+    inline def setMaxAlternatives(value: Double): Self = StObject.set(x, "maxAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAlternativesUndefined: Self = StObject.set(x, "maxAlternatives", js.undefined)
+    inline def setMaxAlternativesUndefined: Self = StObject.set(x, "maxAlternatives", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: RecognitionMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: RecognitionMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setProfanityFilter(value: Boolean): Self = StObject.set(x, "profanityFilter", value.asInstanceOf[js.Any])
+    inline def setProfanityFilter(value: Boolean): Self = StObject.set(x, "profanityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfanityFilterUndefined: Self = StObject.set(x, "profanityFilter", js.undefined)
+    inline def setProfanityFilterUndefined: Self = StObject.set(x, "profanityFilter", js.undefined)
     
-    @scala.inline
-    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
+    inline def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
+    inline def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
     
-    @scala.inline
-    def setSpeechContexts(value: js.Array[SpeechContext]): Self = StObject.set(x, "speechContexts", value.asInstanceOf[js.Any])
+    inline def setSpeechContexts(value: js.Array[SpeechContext]): Self = StObject.set(x, "speechContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
+    inline def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
     
-    @scala.inline
-    def setSpeechContextsVarargs(value: SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
+    inline def setSpeechContextsVarargs(value: SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setUseEnhanced(value: Boolean): Self = StObject.set(x, "useEnhanced", value.asInstanceOf[js.Any])
+    inline def setUseEnhanced(value: Boolean): Self = StObject.set(x, "useEnhanced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseEnhancedUndefined: Self = StObject.set(x, "useEnhanced", js.undefined)
+    inline def setUseEnhancedUndefined: Self = StObject.set(x, "useEnhanced", js.undefined)
   }
 }

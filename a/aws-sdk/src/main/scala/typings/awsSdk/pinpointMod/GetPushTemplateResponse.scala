@@ -10,16 +10,13 @@ trait GetPushTemplateResponse extends StObject {
 }
 object GetPushTemplateResponse {
   
-  @scala.inline
-  def apply(PushNotificationTemplateResponse: PushNotificationTemplateResponse): GetPushTemplateResponse = {
+  inline def apply(PushNotificationTemplateResponse: PushNotificationTemplateResponse): GetPushTemplateResponse = {
     val __obj = js.Dynamic.literal(PushNotificationTemplateResponse = PushNotificationTemplateResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPushTemplateResponse]
   }
   
-  @scala.inline
-  implicit class GetPushTemplateResponseMutableBuilder[Self <: GetPushTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPushTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setPushNotificationTemplateResponse(value: PushNotificationTemplateResponse): Self = StObject.set(x, "PushNotificationTemplateResponse", value.asInstanceOf[js.Any])
+    inline def setPushNotificationTemplateResponse(value: PushNotificationTemplateResponse): Self = StObject.set(x, "PushNotificationTemplateResponse", value.asInstanceOf[js.Any])
   }
 }

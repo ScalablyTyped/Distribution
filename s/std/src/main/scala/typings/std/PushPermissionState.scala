@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PushPermissionState extends StObject
 object PushPermissionState {
   
-  @scala.inline
-  def denied: typings.std.stdStrings.denied = "denied".asInstanceOf[typings.std.stdStrings.denied]
+  inline def denied: typings.std.stdStrings.denied = "denied".asInstanceOf[typings.std.stdStrings.denied]
   
-  @scala.inline
-  def granted: typings.std.stdStrings.granted = "granted".asInstanceOf[typings.std.stdStrings.granted]
+  inline def granted: typings.std.stdStrings.granted = "granted".asInstanceOf[typings.std.stdStrings.granted]
   
-  @scala.inline
-  def prompt: typings.std.stdStrings.prompt = "prompt".asInstanceOf[typings.std.stdStrings.prompt]
+  inline def prompt: typings.std.stdStrings.prompt = "prompt".asInstanceOf[typings.std.stdStrings.prompt]
 }

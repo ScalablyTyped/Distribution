@@ -64,52 +64,37 @@ trait StringDatumDef[F /* <: Field */] extends StObject {
 }
 object StringDatumDef {
   
-  @scala.inline
-  def apply[F /* <: Field */](): StringDatumDef[F] = {
+  inline def apply[F /* <: Field */](): StringDatumDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringDatumDef[F]]
   }
   
-  @scala.inline
-  implicit class StringDatumDefMutableBuilder[Self <: StringDatumDef[?], F /* <: Field */] (val x: Self & StringDatumDef[F]) extends AnyVal {
+  extension [Self <: StringDatumDef[?], F /* <: Field */](x: Self & StringDatumDef[F]) {
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     
-    @scala.inline
-    def setDatum(value: PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: PrimitiveValue | DateTime | ExprRef | SignalRef | RepeatRef): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumNull: Self = StObject.set(x, "datum", null)
+    inline def setDatumNull: Self = StObject.set(x, "datum", null)
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatType(value: number | time | String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: number | time | String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
+    inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLabelExpr(value: String): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
+    inline def setLabelExpr(value: String): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
+    inline def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

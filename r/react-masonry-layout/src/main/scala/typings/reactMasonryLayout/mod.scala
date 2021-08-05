@@ -129,98 +129,68 @@ object mod {
     }
     object MasonryLayoutProps {
       
-      @scala.inline
-      def apply(id: String): MasonryLayoutProps = {
+      inline def apply(id: String): MasonryLayoutProps = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[MasonryLayoutProps]
       }
       
-      @scala.inline
-      implicit class MasonryLayoutPropsMutableBuilder[Self <: MasonryLayoutProps] (val x: Self) extends AnyVal {
+      extension [Self <: MasonryLayoutProps](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScroll(value: () => Unit): Self = StObject.set(x, "infiniteScroll", js.Any.fromFunction0(value))
+        inline def setInfiniteScroll(value: () => Unit): Self = StObject.set(x, "infiniteScroll", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInfiniteScrollContainer(value: String): Self = StObject.set(x, "infiniteScrollContainer", value.asInstanceOf[js.Any])
+        inline def setInfiniteScrollContainer(value: String): Self = StObject.set(x, "infiniteScrollContainer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScrollContainerUndefined: Self = StObject.set(x, "infiniteScrollContainer", js.undefined)
+        inline def setInfiniteScrollContainerUndefined: Self = StObject.set(x, "infiniteScrollContainer", js.undefined)
         
-        @scala.inline
-        def setInfiniteScrollDisabled(value: Boolean): Self = StObject.set(x, "infiniteScrollDisabled", value.asInstanceOf[js.Any])
+        inline def setInfiniteScrollDisabled(value: Boolean): Self = StObject.set(x, "infiniteScrollDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScrollDisabledUndefined: Self = StObject.set(x, "infiniteScrollDisabled", js.undefined)
+        inline def setInfiniteScrollDisabledUndefined: Self = StObject.set(x, "infiniteScrollDisabled", js.undefined)
         
-        @scala.inline
-        def setInfiniteScrollDistance(value: Double): Self = StObject.set(x, "infiniteScrollDistance", value.asInstanceOf[js.Any])
+        inline def setInfiniteScrollDistance(value: Double): Self = StObject.set(x, "infiniteScrollDistance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScrollDistanceUndefined: Self = StObject.set(x, "infiniteScrollDistance", js.undefined)
+        inline def setInfiniteScrollDistanceUndefined: Self = StObject.set(x, "infiniteScrollDistance", js.undefined)
         
-        @scala.inline
-        def setInfiniteScrollEnd(value: Boolean): Self = StObject.set(x, "infiniteScrollEnd", value.asInstanceOf[js.Any])
+        inline def setInfiniteScrollEnd(value: Boolean): Self = StObject.set(x, "infiniteScrollEnd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScrollEndIndicator(value: ReactNode): Self = StObject.set(x, "infiniteScrollEndIndicator", value.asInstanceOf[js.Any])
+        inline def setInfiniteScrollEndIndicator(value: ReactNode): Self = StObject.set(x, "infiniteScrollEndIndicator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScrollEndIndicatorUndefined: Self = StObject.set(x, "infiniteScrollEndIndicator", js.undefined)
+        inline def setInfiniteScrollEndIndicatorUndefined: Self = StObject.set(x, "infiniteScrollEndIndicator", js.undefined)
         
-        @scala.inline
-        def setInfiniteScrollEndUndefined: Self = StObject.set(x, "infiniteScrollEnd", js.undefined)
+        inline def setInfiniteScrollEndUndefined: Self = StObject.set(x, "infiniteScrollEnd", js.undefined)
         
-        @scala.inline
-        def setInfiniteScrollLoading(value: Boolean): Self = StObject.set(x, "infiniteScrollLoading", value.asInstanceOf[js.Any])
+        inline def setInfiniteScrollLoading(value: Boolean): Self = StObject.set(x, "infiniteScrollLoading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScrollLoadingUndefined: Self = StObject.set(x, "infiniteScrollLoading", js.undefined)
+        inline def setInfiniteScrollLoadingUndefined: Self = StObject.set(x, "infiniteScrollLoading", js.undefined)
         
-        @scala.inline
-        def setInfiniteScrollSpinner(value: ReactNode): Self = StObject.set(x, "infiniteScrollSpinner", value.asInstanceOf[js.Any])
+        inline def setInfiniteScrollSpinner(value: ReactNode): Self = StObject.set(x, "infiniteScrollSpinner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfiniteScrollSpinnerUndefined: Self = StObject.set(x, "infiniteScrollSpinner", js.undefined)
+        inline def setInfiniteScrollSpinnerUndefined: Self = StObject.set(x, "infiniteScrollSpinner", js.undefined)
         
-        @scala.inline
-        def setInfiniteScrollUndefined: Self = StObject.set(x, "infiniteScroll", js.undefined)
+        inline def setInfiniteScrollUndefined: Self = StObject.set(x, "infiniteScroll", js.undefined)
         
-        @scala.inline
-        def setPacked(value: String): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
+        inline def setPacked(value: String): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
+        inline def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setSizes(value: js.Array[MasonryLayoutSizes]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+        inline def setSizes(value: js.Array[MasonryLayoutSizes]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+        inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
         
-        @scala.inline
-        def setSizesVarargs(value: MasonryLayoutSizes*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+        inline def setSizesVarargs(value: MasonryLayoutSizes*): Self = StObject.set(x, "sizes", js.Array(value :_*))
         
-        @scala.inline
-        def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
     
@@ -243,26 +213,20 @@ object mod {
     }
     object MasonryLayoutSizes {
       
-      @scala.inline
-      def apply(columns: Double, gutter: Double): MasonryLayoutSizes = {
+      inline def apply(columns: Double, gutter: Double): MasonryLayoutSizes = {
         val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], gutter = gutter.asInstanceOf[js.Any])
         __obj.asInstanceOf[MasonryLayoutSizes]
       }
       
-      @scala.inline
-      implicit class MasonryLayoutSizesMutableBuilder[Self <: MasonryLayoutSizes] (val x: Self) extends AnyVal {
+      extension [Self <: MasonryLayoutSizes](x: Self) {
         
-        @scala.inline
-        def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+        inline def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMq(value: String): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
+        inline def setMq(value: String): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
+        inline def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
       }
     }
   }

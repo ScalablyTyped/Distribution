@@ -51,19 +51,19 @@ object sessionDialogMod {
     ) = this()
     
     /** The current answer. Undefined unless signaling state Stable. */
-    var _answer: js.Any = js.native
+    /* private */ var _answer: js.Any = js.native
     
     /** The current offer. Undefined unless signaling state HaveLocalOffer, HaveRemoteOffer, or Stable. */
-    var _offer: js.Any = js.native
+    /* private */ var _offer: js.Any = js.native
     
     /** The rollback answer. Undefined unless signaling state HaveLocalOffer or HaveRemoteOffer. */
-    var _rollbackAnswer: js.Any = js.native
+    /* private */ var _rollbackAnswer: js.Any = js.native
     
     /** The rollback offer. Undefined unless signaling state HaveLocalOffer or HaveRemoteOffer. */
-    var _rollbackOffer: js.Any = js.native
+    /* private */ var _rollbackOffer: js.Any = js.native
     
     /** The state of the offer/answer exchange. */
-    var _signalingState: js.Any = js.native
+    /* private */ var _signalingState: js.Any = js.native
     
     /**
       * The UAC core MUST generate an ACK request for each 2xx received from
@@ -84,10 +84,10 @@ object sessionDialogMod {
     def ack(options: RequestOptions): OutgoingAckRequest = js.native
     
     /** True if processing an ACK to the initial transaction 2xx (UAS only). */
-    var ackProcessing: js.Any = js.native
+    /* private */ var ackProcessing: js.Any = js.native
     
     /** True if waiting for an ACK to the initial transaction 2xx (UAS only). */
-    var ackWait: js.Any = js.native
+    /* private */ var ackWait: js.Any = js.native
     
     /** The current answer. Undefined unless signaling state Stable. */
     def answer: js.UndefOr[Body] = js.native
@@ -168,7 +168,7 @@ object sessionDialogMod {
     def info(delegate: OutgoingRequestDelegate): OutgoingInfoRequest = js.native
     def info(delegate: OutgoingRequestDelegate, options: RequestOptions): OutgoingInfoRequest = js.native
     
-    var initialTransaction: js.Any = js.native
+    /* private */ var initialTransaction: js.Any = js.native
     
     /**
       * Modifying an Existing Session
@@ -204,9 +204,9 @@ object sessionDialogMod {
     def invite(delegate: OutgoingInviteRequestDelegate, options: RequestOptions): OutgoingInviteRequest = js.native
     
     /** Retransmission timer for 2xx response which confirmed the dialog. */
-    var invite2xxTimer: js.Any = js.native
+    /* private */ var invite2xxTimer: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /**
       * Send MESSAGE request.
@@ -292,7 +292,7 @@ object sessionDialogMod {
     def reliableSequenceGuard(message: IncomingResponseMessage): Boolean = js.native
     
     /** The rseq of the last reliable response. */
-    var rseq: js.Any = js.native
+    /* private */ var rseq: js.Any = js.native
     
     def sessionState: SessionState = js.native
     /** Session state. */
@@ -320,8 +320,8 @@ object sessionDialogMod {
     @JSName("signalingState")
     val signalingState_FSessionDialog: SignalingState = js.native
     
-    var start2xxRetransmissionTimer: js.Any = js.native
+    /* private */ var start2xxRetransmissionTimer: js.Any = js.native
     
-    var startReInvite2xxRetransmissionTimer: js.Any = js.native
+    /* private */ var startReInvite2xxRetransmissionTimer: js.Any = js.native
   }
 }

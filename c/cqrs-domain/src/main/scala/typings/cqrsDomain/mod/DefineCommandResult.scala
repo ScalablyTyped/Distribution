@@ -10,16 +10,13 @@ trait DefineCommandResult extends StObject {
 }
 object DefineCommandResult {
   
-  @scala.inline
-  def apply(defineEventStreamsToLoad: defineEventStreamsToLoadHandler => Unit): DefineCommandResult = {
+  inline def apply(defineEventStreamsToLoad: defineEventStreamsToLoadHandler => Unit): DefineCommandResult = {
     val __obj = js.Dynamic.literal(defineEventStreamsToLoad = js.Any.fromFunction1(defineEventStreamsToLoad))
     __obj.asInstanceOf[DefineCommandResult]
   }
   
-  @scala.inline
-  implicit class DefineCommandResultMutableBuilder[Self <: DefineCommandResult] (val x: Self) extends AnyVal {
+  extension [Self <: DefineCommandResult](x: Self) {
     
-    @scala.inline
-    def setDefineEventStreamsToLoad(value: defineEventStreamsToLoadHandler => Unit): Self = StObject.set(x, "defineEventStreamsToLoad", js.Any.fromFunction1(value))
+    inline def setDefineEventStreamsToLoad(value: defineEventStreamsToLoadHandler => Unit): Self = StObject.set(x, "defineEventStreamsToLoad", js.Any.fromFunction1(value))
   }
 }

@@ -53,70 +53,49 @@ trait OrderableReplicationInstance extends StObject {
 }
 object OrderableReplicationInstance {
   
-  @scala.inline
-  def apply(): OrderableReplicationInstance = {
+  inline def apply(): OrderableReplicationInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderableReplicationInstance]
   }
   
-  @scala.inline
-  implicit class OrderableReplicationInstanceMutableBuilder[Self <: OrderableReplicationInstance] (val x: Self) extends AnyVal {
+  extension [Self <: OrderableReplicationInstance](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: AvailabilityZonesList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: AvailabilityZonesList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultAllocatedStorage(value: Integer): Self = StObject.set(x, "DefaultAllocatedStorage", value.asInstanceOf[js.Any])
+    inline def setDefaultAllocatedStorage(value: Integer): Self = StObject.set(x, "DefaultAllocatedStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAllocatedStorageUndefined: Self = StObject.set(x, "DefaultAllocatedStorage", js.undefined)
+    inline def setDefaultAllocatedStorageUndefined: Self = StObject.set(x, "DefaultAllocatedStorage", js.undefined)
     
-    @scala.inline
-    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
-    @scala.inline
-    def setIncludedAllocatedStorage(value: Integer): Self = StObject.set(x, "IncludedAllocatedStorage", value.asInstanceOf[js.Any])
+    inline def setIncludedAllocatedStorage(value: Integer): Self = StObject.set(x, "IncludedAllocatedStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedAllocatedStorageUndefined: Self = StObject.set(x, "IncludedAllocatedStorage", js.undefined)
+    inline def setIncludedAllocatedStorageUndefined: Self = StObject.set(x, "IncludedAllocatedStorage", js.undefined)
     
-    @scala.inline
-    def setMaxAllocatedStorage(value: Integer): Self = StObject.set(x, "MaxAllocatedStorage", value.asInstanceOf[js.Any])
+    inline def setMaxAllocatedStorage(value: Integer): Self = StObject.set(x, "MaxAllocatedStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAllocatedStorageUndefined: Self = StObject.set(x, "MaxAllocatedStorage", js.undefined)
+    inline def setMaxAllocatedStorageUndefined: Self = StObject.set(x, "MaxAllocatedStorage", js.undefined)
     
-    @scala.inline
-    def setMinAllocatedStorage(value: Integer): Self = StObject.set(x, "MinAllocatedStorage", value.asInstanceOf[js.Any])
+    inline def setMinAllocatedStorage(value: Integer): Self = StObject.set(x, "MinAllocatedStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAllocatedStorageUndefined: Self = StObject.set(x, "MinAllocatedStorage", js.undefined)
+    inline def setMinAllocatedStorageUndefined: Self = StObject.set(x, "MinAllocatedStorage", js.undefined)
     
-    @scala.inline
-    def setReleaseStatus(value: ReleaseStatusValues): Self = StObject.set(x, "ReleaseStatus", value.asInstanceOf[js.Any])
+    inline def setReleaseStatus(value: ReleaseStatusValues): Self = StObject.set(x, "ReleaseStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseStatusUndefined: Self = StObject.set(x, "ReleaseStatus", js.undefined)
+    inline def setReleaseStatusUndefined: Self = StObject.set(x, "ReleaseStatus", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceClass(value: String): Self = StObject.set(x, "ReplicationInstanceClass", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceClass(value: String): Self = StObject.set(x, "ReplicationInstanceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceClassUndefined: Self = StObject.set(x, "ReplicationInstanceClass", js.undefined)
+    inline def setReplicationInstanceClassUndefined: Self = StObject.set(x, "ReplicationInstanceClass", js.undefined)
     
-    @scala.inline
-    def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
+    inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
   }
 }

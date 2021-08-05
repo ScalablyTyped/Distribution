@@ -10,19 +10,15 @@ trait AnnotationsInfinityLineControlPointOptions extends StObject {
 }
 object AnnotationsInfinityLineControlPointOptions {
   
-  @scala.inline
-  def apply(): AnnotationsInfinityLineControlPointOptions = {
+  inline def apply(): AnnotationsInfinityLineControlPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsInfinityLineControlPointOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsInfinityLineControlPointOptionsMutableBuilder[Self <: AnnotationsInfinityLineControlPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsInfinityLineControlPointOptions](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ModifyCertificatesMessage extends StObject {
 }
 object ModifyCertificatesMessage {
   
-  @scala.inline
-  def apply(): ModifyCertificatesMessage = {
+  inline def apply(): ModifyCertificatesMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyCertificatesMessage]
   }
   
-  @scala.inline
-  implicit class ModifyCertificatesMessageMutableBuilder[Self <: ModifyCertificatesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyCertificatesMessage](x: Self) {
     
-    @scala.inline
-    def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
+    inline def setCertificateIdentifierUndefined: Self = StObject.set(x, "CertificateIdentifier", js.undefined)
     
-    @scala.inline
-    def setRemoveCustomerOverride(value: BooleanOptional): Self = StObject.set(x, "RemoveCustomerOverride", value.asInstanceOf[js.Any])
+    inline def setRemoveCustomerOverride(value: BooleanOptional): Self = StObject.set(x, "RemoveCustomerOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveCustomerOverrideUndefined: Self = StObject.set(x, "RemoveCustomerOverride", js.undefined)
+    inline def setRemoveCustomerOverrideUndefined: Self = StObject.set(x, "RemoveCustomerOverride", js.undefined)
   }
 }

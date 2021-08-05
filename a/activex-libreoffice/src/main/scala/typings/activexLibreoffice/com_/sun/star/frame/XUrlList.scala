@@ -16,8 +16,7 @@ trait XUrlList
 }
 object XUrlList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     List: SafeArray[String],
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
@@ -27,10 +26,8 @@ object XUrlList {
     __obj.asInstanceOf[XUrlList]
   }
   
-  @scala.inline
-  implicit class XUrlListMutableBuilder[Self <: XUrlList] (val x: Self) extends AnyVal {
+  extension [Self <: XUrlList](x: Self) {
     
-    @scala.inline
-    def setList(value: SafeArray[String]): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
+    inline def setList(value: SafeArray[String]): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
   }
 }

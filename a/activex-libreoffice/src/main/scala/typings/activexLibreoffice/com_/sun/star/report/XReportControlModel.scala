@@ -59,8 +59,7 @@ trait XReportControlModel
 }
 object XReportControlModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharCaseMap: Double,
     CharColor: Color,
@@ -179,19 +178,14 @@ object XReportControlModel {
     __obj.asInstanceOf[XReportControlModel]
   }
   
-  @scala.inline
-  implicit class XReportControlModelMutableBuilder[Self <: XReportControlModel] (val x: Self) extends AnyVal {
+  extension [Self <: XReportControlModel](x: Self) {
     
-    @scala.inline
-    def setConditionalPrintExpression(value: String): Self = StObject.set(x, "ConditionalPrintExpression", value.asInstanceOf[js.Any])
+    inline def setConditionalPrintExpression(value: String): Self = StObject.set(x, "ConditionalPrintExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFormatCondition(value: () => XFormatCondition): Self = StObject.set(x, "createFormatCondition", js.Any.fromFunction0(value))
+    inline def setCreateFormatCondition(value: () => XFormatCondition): Self = StObject.set(x, "createFormatCondition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDataField(value: String): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: String): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintWhenGroupChange(value: Boolean): Self = StObject.set(x, "PrintWhenGroupChange", value.asInstanceOf[js.Any])
+    inline def setPrintWhenGroupChange(value: Boolean): Self = StObject.set(x, "PrintWhenGroupChange", value.asInstanceOf[js.Any])
   }
 }

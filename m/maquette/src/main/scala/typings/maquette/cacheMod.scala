@@ -14,6 +14,5 @@ object cacheMod {
   @JSImport("maquette/dist/cache", "createCache")
   @js.native
   def createCache: js.Function0[CalculationCache[js.Any]] = js.native
-  @scala.inline
-  def createCache_=(x: js.Function0[CalculationCache[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCache")(x.asInstanceOf[js.Any])
+  inline def createCache_=(x: js.Function0[CalculationCache[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCache")(x.asInstanceOf[js.Any])
 }

@@ -33,14 +33,12 @@ object decisionMod {
   trait TransactionDecisionArgument extends StObject
   object TransactionDecisionArgument {
     
-    @scala.inline
-    def GoogleActionsTransactionsV3TransactionDecisionValue(): typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionDecisionValue = {
+    inline def GoogleActionsTransactionsV3TransactionDecisionValue(): typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionDecisionValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionDecisionValue]
     }
     
-    @scala.inline
-    def GoogleActionsV2TransactionDecisionValue(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValue = {
+    inline def GoogleActionsV2TransactionDecisionValue(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValue]
     }

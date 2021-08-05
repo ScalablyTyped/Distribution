@@ -16,8 +16,7 @@ trait IShortcutMappingInfo extends StObject {
 }
 object IShortcutMappingInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ObjectTypeGUID: String,
     ObjectTypeID: Double,
     ObjectTypeName: String,
@@ -27,19 +26,14 @@ object IShortcutMappingInfo {
     __obj.asInstanceOf[IShortcutMappingInfo]
   }
   
-  @scala.inline
-  implicit class IShortcutMappingInfoMutableBuilder[Self <: IShortcutMappingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IShortcutMappingInfo](x: Self) {
     
-    @scala.inline
-    def setObjectTypeGUID(value: String): Self = StObject.set(x, "ObjectTypeGUID", value.asInstanceOf[js.Any])
+    inline def setObjectTypeGUID(value: String): Self = StObject.set(x, "ObjectTypeGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeID(value: Double): Self = StObject.set(x, "ObjectTypeID", value.asInstanceOf[js.Any])
+    inline def setObjectTypeID(value: Double): Self = StObject.set(x, "ObjectTypeID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeName(value: String): Self = StObject.set(x, "ObjectTypeName", value.asInstanceOf[js.Any])
+    inline def setObjectTypeName(value: String): Self = StObject.set(x, "ObjectTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "ObjectTypeSemanticAliases", value.asInstanceOf[js.Any])
+    inline def setObjectTypeSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "ObjectTypeSemanticAliases", value.asInstanceOf[js.Any])
   }
 }

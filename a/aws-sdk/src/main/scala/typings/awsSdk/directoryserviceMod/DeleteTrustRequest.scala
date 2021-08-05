@@ -18,22 +18,17 @@ trait DeleteTrustRequest extends StObject {
 }
 object DeleteTrustRequest {
   
-  @scala.inline
-  def apply(TrustId: TrustId): DeleteTrustRequest = {
+  inline def apply(TrustId: TrustId): DeleteTrustRequest = {
     val __obj = js.Dynamic.literal(TrustId = TrustId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrustRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTrustRequestMutableBuilder[Self <: DeleteTrustRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTrustRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteAssociatedConditionalForwarder(value: DeleteAssociatedConditionalForwarder): Self = StObject.set(x, "DeleteAssociatedConditionalForwarder", value.asInstanceOf[js.Any])
+    inline def setDeleteAssociatedConditionalForwarder(value: DeleteAssociatedConditionalForwarder): Self = StObject.set(x, "DeleteAssociatedConditionalForwarder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAssociatedConditionalForwarderUndefined: Self = StObject.set(x, "DeleteAssociatedConditionalForwarder", js.undefined)
+    inline def setDeleteAssociatedConditionalForwarderUndefined: Self = StObject.set(x, "DeleteAssociatedConditionalForwarder", js.undefined)
     
-    @scala.inline
-    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
+    inline def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
   }
 }

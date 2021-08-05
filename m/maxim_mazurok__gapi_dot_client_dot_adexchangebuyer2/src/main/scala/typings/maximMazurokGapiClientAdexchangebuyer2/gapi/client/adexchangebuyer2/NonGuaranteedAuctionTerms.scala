@@ -14,28 +14,21 @@ trait NonGuaranteedAuctionTerms extends StObject {
 }
 object NonGuaranteedAuctionTerms {
   
-  @scala.inline
-  def apply(): NonGuaranteedAuctionTerms = {
+  inline def apply(): NonGuaranteedAuctionTerms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonGuaranteedAuctionTerms]
   }
   
-  @scala.inline
-  implicit class NonGuaranteedAuctionTermsMutableBuilder[Self <: NonGuaranteedAuctionTerms] (val x: Self) extends AnyVal {
+  extension [Self <: NonGuaranteedAuctionTerms](x: Self) {
     
-    @scala.inline
-    def setAutoOptimizePrivateAuction(value: Boolean): Self = StObject.set(x, "autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
+    inline def setAutoOptimizePrivateAuction(value: Boolean): Self = StObject.set(x, "autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoOptimizePrivateAuctionUndefined: Self = StObject.set(x, "autoOptimizePrivateAuction", js.undefined)
+    inline def setAutoOptimizePrivateAuctionUndefined: Self = StObject.set(x, "autoOptimizePrivateAuction", js.undefined)
     
-    @scala.inline
-    def setReservePricesPerBuyer(value: js.Array[PricePerBuyer]): Self = StObject.set(x, "reservePricesPerBuyer", value.asInstanceOf[js.Any])
+    inline def setReservePricesPerBuyer(value: js.Array[PricePerBuyer]): Self = StObject.set(x, "reservePricesPerBuyer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservePricesPerBuyerUndefined: Self = StObject.set(x, "reservePricesPerBuyer", js.undefined)
+    inline def setReservePricesPerBuyerUndefined: Self = StObject.set(x, "reservePricesPerBuyer", js.undefined)
     
-    @scala.inline
-    def setReservePricesPerBuyerVarargs(value: PricePerBuyer*): Self = StObject.set(x, "reservePricesPerBuyer", js.Array(value :_*))
+    inline def setReservePricesPerBuyerVarargs(value: PricePerBuyer*): Self = StObject.set(x, "reservePricesPerBuyer", js.Array(value :_*))
   }
 }

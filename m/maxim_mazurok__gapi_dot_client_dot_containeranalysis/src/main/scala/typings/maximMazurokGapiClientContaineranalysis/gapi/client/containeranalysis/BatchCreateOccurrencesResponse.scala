@@ -11,22 +11,17 @@ trait BatchCreateOccurrencesResponse extends StObject {
 }
 object BatchCreateOccurrencesResponse {
   
-  @scala.inline
-  def apply(): BatchCreateOccurrencesResponse = {
+  inline def apply(): BatchCreateOccurrencesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreateOccurrencesResponse]
   }
   
-  @scala.inline
-  implicit class BatchCreateOccurrencesResponseMutableBuilder[Self <: BatchCreateOccurrencesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateOccurrencesResponse](x: Self) {
     
-    @scala.inline
-    def setOccurrences(value: js.Array[Occurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
+    inline def setOccurrences(value: js.Array[Occurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
+    inline def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
     
-    @scala.inline
-    def setOccurrencesVarargs(value: Occurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
+    inline def setOccurrencesVarargs(value: Occurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
   }
 }

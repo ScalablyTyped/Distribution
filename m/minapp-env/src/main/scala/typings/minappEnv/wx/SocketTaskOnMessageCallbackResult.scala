@@ -12,16 +12,13 @@ trait SocketTaskOnMessageCallbackResult extends StObject {
 }
 object SocketTaskOnMessageCallbackResult {
   
-  @scala.inline
-  def apply(data: String | ArrayBuffer): SocketTaskOnMessageCallbackResult = {
+  inline def apply(data: String | ArrayBuffer): SocketTaskOnMessageCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketTaskOnMessageCallbackResult]
   }
   
-  @scala.inline
-  implicit class SocketTaskOnMessageCallbackResultMutableBuilder[Self <: SocketTaskOnMessageCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: SocketTaskOnMessageCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

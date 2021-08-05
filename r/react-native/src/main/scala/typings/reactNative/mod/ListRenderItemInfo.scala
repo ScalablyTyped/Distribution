@@ -15,22 +15,17 @@ trait ListRenderItemInfo[ItemT] extends StObject {
 }
 object ListRenderItemInfo {
   
-  @scala.inline
-  def apply[ItemT](index: Double, item: ItemT, separators: Highlight): ListRenderItemInfo[ItemT] = {
+  inline def apply[ItemT](index: Double, item: ItemT, separators: Highlight): ListRenderItemInfo[ItemT] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRenderItemInfo[ItemT]]
   }
   
-  @scala.inline
-  implicit class ListRenderItemInfoMutableBuilder[Self <: ListRenderItemInfo[?], ItemT] (val x: Self & ListRenderItemInfo[ItemT]) extends AnyVal {
+  extension [Self <: ListRenderItemInfo[?], ItemT](x: Self & ListRenderItemInfo[ItemT]) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: ItemT): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ItemT): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparators(value: Highlight): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
+    inline def setSeparators(value: Highlight): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
   }
 }

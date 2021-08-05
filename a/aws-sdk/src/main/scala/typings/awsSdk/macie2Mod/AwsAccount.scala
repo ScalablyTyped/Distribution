@@ -18,25 +18,19 @@ trait AwsAccount extends StObject {
 }
 object AwsAccount {
   
-  @scala.inline
-  def apply(): AwsAccount = {
+  inline def apply(): AwsAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsAccount]
   }
   
-  @scala.inline
-  implicit class AwsAccountMutableBuilder[Self <: AwsAccount] (val x: Self) extends AnyVal {
+  extension [Self <: AwsAccount](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: string): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: string): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
   }
 }

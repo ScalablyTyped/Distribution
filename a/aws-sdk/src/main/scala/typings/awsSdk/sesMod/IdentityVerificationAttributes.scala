@@ -18,22 +18,17 @@ trait IdentityVerificationAttributes extends StObject {
 }
 object IdentityVerificationAttributes {
   
-  @scala.inline
-  def apply(VerificationStatus: VerificationStatus): IdentityVerificationAttributes = {
+  inline def apply(VerificationStatus: VerificationStatus): IdentityVerificationAttributes = {
     val __obj = js.Dynamic.literal(VerificationStatus = VerificationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityVerificationAttributes]
   }
   
-  @scala.inline
-  implicit class IdentityVerificationAttributesMutableBuilder[Self <: IdentityVerificationAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityVerificationAttributes](x: Self) {
     
-    @scala.inline
-    def setVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "VerificationStatus", value.asInstanceOf[js.Any])
+    inline def setVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "VerificationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationToken(value: VerificationToken): Self = StObject.set(x, "VerificationToken", value.asInstanceOf[js.Any])
+    inline def setVerificationToken(value: VerificationToken): Self = StObject.set(x, "VerificationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationTokenUndefined: Self = StObject.set(x, "VerificationToken", js.undefined)
+    inline def setVerificationTokenUndefined: Self = StObject.set(x, "VerificationToken", js.undefined)
   }
 }

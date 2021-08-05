@@ -11,16 +11,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(sqlitePlugin: SQLite): Window = {
+  inline def apply(sqlitePlugin: SQLite): Window = {
     val __obj = js.Dynamic.literal(sqlitePlugin = sqlitePlugin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setSqlitePlugin(value: SQLite): Self = StObject.set(x, "sqlitePlugin", value.asInstanceOf[js.Any])
+    inline def setSqlitePlugin(value: SQLite): Self = StObject.set(x, "sqlitePlugin", value.asInstanceOf[js.Any])
   }
 }

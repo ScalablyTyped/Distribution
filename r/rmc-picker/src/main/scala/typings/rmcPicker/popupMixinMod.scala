@@ -11,6 +11,5 @@ object popupMixinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(getModal: js.Any, platformProps: js.Any): DefaultProps = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getModal.asInstanceOf[js.Any], platformProps.asInstanceOf[js.Any])).asInstanceOf[DefaultProps]
+  inline def default(getModal: js.Any, platformProps: js.Any): DefaultProps = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getModal.asInstanceOf[js.Any], platformProps.asInstanceOf[js.Any])).asInstanceOf[DefaultProps]
 }

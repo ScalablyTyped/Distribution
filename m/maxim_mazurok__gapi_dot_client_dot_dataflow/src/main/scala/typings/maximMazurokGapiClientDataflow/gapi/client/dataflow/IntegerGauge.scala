@@ -14,25 +14,19 @@ trait IntegerGauge extends StObject {
 }
 object IntegerGauge {
   
-  @scala.inline
-  def apply(): IntegerGauge = {
+  inline def apply(): IntegerGauge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegerGauge]
   }
   
-  @scala.inline
-  implicit class IntegerGaugeMutableBuilder[Self <: IntegerGauge] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerGauge](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setValue(value: SplitInt64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SplitInt64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

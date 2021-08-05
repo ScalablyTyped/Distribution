@@ -14,24 +14,19 @@ trait Priority extends StObject {
 }
 object Priority {
   
-  @scala.inline
-  def apply(Dotvalue: js.Any): Priority = {
+  inline def apply(Dotvalue: js.Any): Priority = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic(".value")(Dotvalue.asInstanceOf[js.Any])
     __obj.updateDynamic(".priority")(null)
     __obj.asInstanceOf[Priority]
   }
   
-  @scala.inline
-  implicit class PriorityMutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
+  extension [Self <: Priority](x: Self) {
     
-    @scala.inline
-    def setDotpriority(value: String | Double): Self = StObject.set(x, ".priority", value.asInstanceOf[js.Any])
+    inline def setDotpriority(value: String | Double): Self = StObject.set(x, ".priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotpriorityNull: Self = StObject.set(x, ".priority", null)
+    inline def setDotpriorityNull: Self = StObject.set(x, ".priority", null)
     
-    @scala.inline
-    def setDotvalue(value: js.Any): Self = StObject.set(x, ".value", value.asInstanceOf[js.Any])
+    inline def setDotvalue(value: js.Any): Self = StObject.set(x, ".value", value.asInstanceOf[js.Any])
   }
 }

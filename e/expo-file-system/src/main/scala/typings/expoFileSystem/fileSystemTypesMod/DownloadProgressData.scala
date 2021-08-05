@@ -12,19 +12,15 @@ trait DownloadProgressData extends StObject {
 }
 object DownloadProgressData {
   
-  @scala.inline
-  def apply(totalBytesExpectedToWrite: Double, totalBytesWritten: Double): DownloadProgressData = {
+  inline def apply(totalBytesExpectedToWrite: Double, totalBytesWritten: Double): DownloadProgressData = {
     val __obj = js.Dynamic.literal(totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadProgressData]
   }
   
-  @scala.inline
-  implicit class DownloadProgressDataMutableBuilder[Self <: DownloadProgressData] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadProgressData](x: Self) {
     
-    @scala.inline
-    def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
+    inline def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
+    inline def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
   }
 }

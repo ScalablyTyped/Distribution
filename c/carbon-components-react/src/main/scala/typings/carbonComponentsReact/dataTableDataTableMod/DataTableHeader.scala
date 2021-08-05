@@ -14,22 +14,17 @@ trait DataTableHeader[K /* <: String */] extends StObject {
 }
 object DataTableHeader {
   
-  @scala.inline
-  def apply[K /* <: String */](key: K): DataTableHeader[K] = {
+  inline def apply[K /* <: String */](key: K): DataTableHeader[K] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableHeader[K]]
   }
   
-  @scala.inline
-  implicit class DataTableHeaderMutableBuilder[Self <: DataTableHeader[?], K /* <: String */] (val x: Self & DataTableHeader[K]) extends AnyVal {
+  extension [Self <: DataTableHeader[?], K /* <: String */](x: Self & DataTableHeader[K]) {
     
-    @scala.inline
-    def setHeader(value: NonNullable[ReactNode]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: NonNullable[ReactNode]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

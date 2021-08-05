@@ -109,8 +109,7 @@ object SpeechSynthesis {
   }
   object SpeechSynthesisStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canRead: Boolean,
       canWrite: Boolean,
       cloneStream: () => IRandomAccessStream,
@@ -130,52 +129,37 @@ object SpeechSynthesis {
       __obj.asInstanceOf[SpeechSynthesisStream]
     }
     
-    @scala.inline
-    implicit class SpeechSynthesisStreamMutableBuilder[Self <: SpeechSynthesisStream] (val x: Self) extends AnyVal {
+    extension [Self <: SpeechSynthesisStream](x: Self) {
       
-      @scala.inline
-      def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
+      inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanWrite(value: Boolean): Self = StObject.set(x, "canWrite", value.asInstanceOf[js.Any])
+      inline def setCanWrite(value: Boolean): Self = StObject.set(x, "canWrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneStream(value: () => IRandomAccessStream): Self = StObject.set(x, "cloneStream", js.Any.fromFunction0(value))
+      inline def setCloneStream(value: () => IRandomAccessStream): Self = StObject.set(x, "cloneStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
+      inline def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInputStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getInputStreamAt", js.Any.fromFunction1(value))
+      inline def setGetInputStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getInputStreamAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOutputStreamAt(value: Double => IOutputStream): Self = StObject.set(x, "getOutputStreamAt", js.Any.fromFunction1(value))
+      inline def setGetOutputStreamAt(value: Double => IOutputStream): Self = StObject.set(x, "getOutputStreamAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMarkers(value: IVectorView[IMediaMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      inline def setMarkers(value: IVectorView[IMediaMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadAsync(
+      inline def setReadAsync(
         value: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
       ): Self = StObject.set(x, "readAsync", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+      inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
+      inline def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
     }
   }
   
@@ -204,8 +188,7 @@ object SpeechSynthesis {
   }
   object SpeechSynthesizer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       synthesizeSsmlToStreamAsync: String => IPromiseWithIAsyncOperation[SpeechSynthesisStream],
       synthesizeTextToStreamAsync: String => IPromiseWithIAsyncOperation[SpeechSynthesisStream],
@@ -215,20 +198,15 @@ object SpeechSynthesis {
       __obj.asInstanceOf[SpeechSynthesizer]
     }
     
-    @scala.inline
-    implicit class SpeechSynthesizerMutableBuilder[Self <: SpeechSynthesizer] (val x: Self) extends AnyVal {
+    extension [Self <: SpeechSynthesizer](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSynthesizeSsmlToStreamAsync(value: String => IPromiseWithIAsyncOperation[SpeechSynthesisStream]): Self = StObject.set(x, "synthesizeSsmlToStreamAsync", js.Any.fromFunction1(value))
+      inline def setSynthesizeSsmlToStreamAsync(value: String => IPromiseWithIAsyncOperation[SpeechSynthesisStream]): Self = StObject.set(x, "synthesizeSsmlToStreamAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSynthesizeTextToStreamAsync(value: String => IPromiseWithIAsyncOperation[SpeechSynthesisStream]): Self = StObject.set(x, "synthesizeTextToStreamAsync", js.Any.fromFunction1(value))
+      inline def setSynthesizeTextToStreamAsync(value: String => IPromiseWithIAsyncOperation[SpeechSynthesisStream]): Self = StObject.set(x, "synthesizeTextToStreamAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVoice(value: VoiceInformation): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
+      inline def setVoice(value: VoiceInformation): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,29 +230,22 @@ object SpeechSynthesis {
   }
   object VoiceInformation {
     
-    @scala.inline
-    def apply(description: String, displayName: String, gender: VoiceGender, id: String, language: String): VoiceInformation = {
+    inline def apply(description: String, displayName: String, gender: VoiceGender, id: String, language: String): VoiceInformation = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
       __obj.asInstanceOf[VoiceInformation]
     }
     
-    @scala.inline
-    implicit class VoiceInformationMutableBuilder[Self <: VoiceInformation] (val x: Self) extends AnyVal {
+    extension [Self <: VoiceInformation](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGender(value: VoiceGender): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: VoiceGender): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     }
   }
 }

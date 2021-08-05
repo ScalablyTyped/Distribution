@@ -14,25 +14,19 @@ trait FailingStreak extends StObject {
 }
 object FailingStreak {
   
-  @scala.inline
-  def apply(FailingStreak: Double, Log: js.Array[End], Status: String): FailingStreak = {
+  inline def apply(FailingStreak: Double, Log: js.Array[End], Status: String): FailingStreak = {
     val __obj = js.Dynamic.literal(FailingStreak = FailingStreak.asInstanceOf[js.Any], Log = Log.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailingStreak]
   }
   
-  @scala.inline
-  implicit class FailingStreakMutableBuilder[Self <: FailingStreak] (val x: Self) extends AnyVal {
+  extension [Self <: FailingStreak](x: Self) {
     
-    @scala.inline
-    def setFailingStreak(value: Double): Self = StObject.set(x, "FailingStreak", value.asInstanceOf[js.Any])
+    inline def setFailingStreak(value: Double): Self = StObject.set(x, "FailingStreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: js.Array[End]): Self = StObject.set(x, "Log", value.asInstanceOf[js.Any])
+    inline def setLog(value: js.Array[End]): Self = StObject.set(x, "Log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogVarargs(value: End*): Self = StObject.set(x, "Log", js.Array(value :_*))
+    inline def setLogVarargs(value: End*): Self = StObject.set(x, "Log", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

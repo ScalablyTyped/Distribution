@@ -12,19 +12,15 @@ trait MapControl extends StObject {
 }
 object MapControl {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: () => Unit): MapControl = {
+  inline def apply(hide: () => Unit, show: () => Unit): MapControl = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[MapControl]
   }
   
-  @scala.inline
-  implicit class MapControlMutableBuilder[Self <: MapControl] (val x: Self) extends AnyVal {
+  extension [Self <: MapControl](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

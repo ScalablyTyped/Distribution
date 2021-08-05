@@ -20,29 +20,29 @@ object multiSelectMod {
     def this(props: IMultiSelectProps[T]) = this()
     def this(props: IMultiSelectProps[T], context: js.Any) = this()
     
-    var TypedQueryList: js.Any = js.native
+    /* private */ var TypedQueryList: js.Any = js.native
     
-    var getTagInputKeyDownHandler: js.Any = js.native
+    /* private */ var getTagInputKeyDownHandler: js.Any = js.native
     
-    var getTagInputKeyUpHandler: js.Any = js.native
+    /* private */ var getTagInputKeyUpHandler: js.Any = js.native
     
-    var handleItemSelect: js.Any = js.native
+    /* private */ var handleItemSelect: js.Any = js.native
     
-    var handlePopoverInteraction: js.Any = js.native
+    /* private */ var handlePopoverInteraction: js.Any = js.native
     
-    var handlePopoverOpened: js.Any = js.native
+    /* private */ var handlePopoverOpened: js.Any = js.native
     
-    var handleQueryChange: js.Any = js.native
+    /* private */ var handleQueryChange: js.Any = js.native
     
-    var handleTagRemove: js.Any = js.native
+    /* private */ var handleTagRemove: js.Any = js.native
     
-    var input: js.Any = js.native
+    /* private */ var input: js.Any = js.native
     
-    var queryList: js.Any = js.native
+    /* private */ var queryList: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var renderQueryList: js.Any = js.native
+    /* private */ var renderQueryList: js.Any = js.native
   }
   /* static members */
   object MultiSelect {
@@ -54,17 +54,14 @@ object multiSelectMod {
     @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect.defaultProps")
     @js.native
     def defaultProps: Fill = js.native
-    @scala.inline
-    def defaultProps_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ofType[U](): Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]]]
   }
   
   @js.native
@@ -127,17 +124,14 @@ object multiSelectMod {
   }
   object IMultiSelectState {
     
-    @scala.inline
-    def apply(isOpen: Boolean): IMultiSelectState = {
+    inline def apply(isOpen: Boolean): IMultiSelectState = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMultiSelectState]
     }
     
-    @scala.inline
-    implicit class IMultiSelectStateMutableBuilder[Self <: IMultiSelectState] (val x: Self) extends AnyVal {
+    extension [Self <: IMultiSelectState](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
 }

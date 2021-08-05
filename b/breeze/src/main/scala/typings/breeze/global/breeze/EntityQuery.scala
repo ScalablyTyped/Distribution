@@ -21,17 +21,12 @@ object EntityQuery {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def from(resourceName: String): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(resourceName.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
+  inline def from(resourceName: String): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(resourceName.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
   
-  @scala.inline
-  def fromEntities(entities: js.Array[Entity]): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
-  @scala.inline
-  def fromEntities(entity: Entity): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntities")(entity.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
+  inline def fromEntities(entities: js.Array[Entity]): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
+  inline def fromEntities(entity: Entity): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntities")(entity.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
   
-  @scala.inline
-  def fromEntityKey(entityKey: typings.breeze.breeze.EntityKey): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntityKey")(entityKey.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
+  inline def fromEntityKey(entityKey: typings.breeze.breeze.EntityKey): typings.breeze.breeze.EntityQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEntityKey")(entityKey.asInstanceOf[js.Any]).asInstanceOf[typings.breeze.breeze.EntityQuery]
   
-  @scala.inline
-  def fromEntityNavigation(entity: Entity, navigationProperty: typings.breeze.breeze.NavigationProperty): typings.breeze.breeze.EntityQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEntityNavigation")(entity.asInstanceOf[js.Any], navigationProperty.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.EntityQuery]
+  inline def fromEntityNavigation(entity: Entity, navigationProperty: typings.breeze.breeze.NavigationProperty): typings.breeze.breeze.EntityQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEntityNavigation")(entity.asInstanceOf[js.Any], navigationProperty.asInstanceOf[js.Any])).asInstanceOf[typings.breeze.breeze.EntityQuery]
 }

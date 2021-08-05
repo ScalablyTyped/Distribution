@@ -28,28 +28,21 @@ trait DeleteTaskSetRequest extends StObject {
 }
 object DeleteTaskSetRequest {
   
-  @scala.inline
-  def apply(cluster: String, service: String, taskSet: String): DeleteTaskSetRequest = {
+  inline def apply(cluster: String, service: String, taskSet: String): DeleteTaskSetRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], taskSet = taskSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTaskSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTaskSetRequestMutableBuilder[Self <: DeleteTaskSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTaskSetRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: BoxedBoolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: BoxedBoolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSet(value: String): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
+    inline def setTaskSet(value: String): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
   }
 }

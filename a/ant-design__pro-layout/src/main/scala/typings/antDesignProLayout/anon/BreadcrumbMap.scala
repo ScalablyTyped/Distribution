@@ -16,25 +16,19 @@ trait BreadcrumbMap extends StObject {
 }
 object BreadcrumbMap {
   
-  @scala.inline
-  def apply(): BreadcrumbMap = {
+  inline def apply(): BreadcrumbMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BreadcrumbMap]
   }
   
-  @scala.inline
-  implicit class BreadcrumbMapMutableBuilder[Self <: BreadcrumbMap] (val x: Self) extends AnyVal {
+  extension [Self <: BreadcrumbMap](x: Self) {
     
-    @scala.inline
-    def setBreadcrumbMap(value: Map[String, MenuDataItem]): Self = StObject.set(x, "breadcrumbMap", value.asInstanceOf[js.Any])
+    inline def setBreadcrumbMap(value: Map[String, MenuDataItem]): Self = StObject.set(x, "breadcrumbMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreadcrumbMapUndefined: Self = StObject.set(x, "breadcrumbMap", js.undefined)
+    inline def setBreadcrumbMapUndefined: Self = StObject.set(x, "breadcrumbMap", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

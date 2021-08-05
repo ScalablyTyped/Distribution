@@ -17,23 +17,18 @@ trait BgpPattern
 }
 object BgpPattern {
   
-  @scala.inline
-  def apply(triples: js.Array[Triple]): BgpPattern = {
+  inline def apply(triples: js.Array[Triple]): BgpPattern = {
     val __obj = js.Dynamic.literal(triples = triples.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("bgp")
     __obj.asInstanceOf[BgpPattern]
   }
   
-  @scala.inline
-  implicit class BgpPatternMutableBuilder[Self <: BgpPattern] (val x: Self) extends AnyVal {
+  extension [Self <: BgpPattern](x: Self) {
     
-    @scala.inline
-    def setTriples(value: js.Array[Triple]): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
+    inline def setTriples(value: js.Array[Triple]): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriplesVarargs(value: Triple*): Self = StObject.set(x, "triples", js.Array(value :_*))
+    inline def setTriplesVarargs(value: Triple*): Self = StObject.set(x, "triples", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: bgp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bgp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -19,28 +19,21 @@ trait CNames extends StObject {
 }
 object CNames {
   
-  @scala.inline
-  def apply(cNames: Double, lcid: Double, rgdispid: Double, rgszNames: Double, riid: GUID): CNames = {
+  inline def apply(cNames: Double, lcid: Double, rgdispid: Double, rgszNames: Double, riid: GUID): CNames = {
     val __obj = js.Dynamic.literal(cNames = cNames.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any], rgdispid = rgdispid.asInstanceOf[js.Any], rgszNames = rgszNames.asInstanceOf[js.Any], riid = riid.asInstanceOf[js.Any])
     __obj.asInstanceOf[CNames]
   }
   
-  @scala.inline
-  implicit class CNamesMutableBuilder[Self <: CNames] (val x: Self) extends AnyVal {
+  extension [Self <: CNames](x: Self) {
     
-    @scala.inline
-    def setCNames(value: Double): Self = StObject.set(x, "cNames", value.asInstanceOf[js.Any])
+    inline def setCNames(value: Double): Self = StObject.set(x, "cNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+    inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgdispid(value: Double): Self = StObject.set(x, "rgdispid", value.asInstanceOf[js.Any])
+    inline def setRgdispid(value: Double): Self = StObject.set(x, "rgdispid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgszNames(value: Double): Self = StObject.set(x, "rgszNames", value.asInstanceOf[js.Any])
+    inline def setRgszNames(value: Double): Self = StObject.set(x, "rgszNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+    inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
   }
 }

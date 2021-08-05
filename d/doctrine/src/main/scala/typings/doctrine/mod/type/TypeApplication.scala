@@ -17,26 +17,20 @@ trait TypeApplication
 }
 object TypeApplication {
   
-  @scala.inline
-  def apply(applications: js.Array[Type_], expression: Type_): TypeApplication = {
+  inline def apply(applications: js.Array[Type_], expression: Type_): TypeApplication = {
     val __obj = js.Dynamic.literal(applications = applications.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeApplication")
     __obj.asInstanceOf[TypeApplication]
   }
   
-  @scala.inline
-  implicit class TypeApplicationMutableBuilder[Self <: TypeApplication] (val x: Self) extends AnyVal {
+  extension [Self <: TypeApplication](x: Self) {
     
-    @scala.inline
-    def setApplications(value: js.Array[Type_]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: js.Array[Type_]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationsVarargs(value: Type_ *): Self = StObject.set(x, "applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: Type_ *): Self = StObject.set(x, "applications", js.Array(value :_*))
     
-    @scala.inline
-    def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.TypeApplication): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.TypeApplication): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -20,25 +20,19 @@ trait TabProps
 }
 object TabProps {
   
-  @scala.inline
-  def apply(): TabProps = {
+  inline def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabProps]
   }
   
-  @scala.inline
-  implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabProps](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

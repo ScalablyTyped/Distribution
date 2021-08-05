@@ -24,61 +24,43 @@ trait AutocompleteOptions extends StObject {
 }
 object AutocompleteOptions {
   
-  @scala.inline
-  def apply(): AutocompleteOptions = {
+  inline def apply(): AutocompleteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutocompleteOptions]
   }
   
-  @scala.inline
-  implicit class AutocompleteOptionsMutableBuilder[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteOptions](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setComponentRestrictions(value: ComponentRestrictions): Self = StObject.set(x, "componentRestrictions", value.asInstanceOf[js.Any])
+    inline def setComponentRestrictions(value: ComponentRestrictions): Self = StObject.set(x, "componentRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentRestrictionsUndefined: Self = StObject.set(x, "componentRestrictions", js.undefined)
+    inline def setComponentRestrictionsUndefined: Self = StObject.set(x, "componentRestrictions", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaceIdOnly(value: Boolean): Self = StObject.set(x, "placeIdOnly", value.asInstanceOf[js.Any])
+    inline def setPlaceIdOnly(value: Boolean): Self = StObject.set(x, "placeIdOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceIdOnlyUndefined: Self = StObject.set(x, "placeIdOnly", js.undefined)
+    inline def setPlaceIdOnlyUndefined: Self = StObject.set(x, "placeIdOnly", js.undefined)
     
-    @scala.inline
-    def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
+    inline def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
+    inline def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

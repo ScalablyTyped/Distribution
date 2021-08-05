@@ -13,6 +13,5 @@ object pluralRulesResolvePluralMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ResolvePlural(pl: PluralRules, n: Double, hasGetInternalSlotsPluralRuleSelect: PluralRuleSelect): LDMLPluralRule = (^.asInstanceOf[js.Dynamic].applyDynamic("ResolvePlural")(pl.asInstanceOf[js.Any], n.asInstanceOf[js.Any], hasGetInternalSlotsPluralRuleSelect.asInstanceOf[js.Any])).asInstanceOf[LDMLPluralRule]
+  inline def ResolvePlural(pl: PluralRules, n: Double, hasGetInternalSlotsPluralRuleSelect: PluralRuleSelect): LDMLPluralRule = (^.asInstanceOf[js.Dynamic].applyDynamic("ResolvePlural")(pl.asInstanceOf[js.Any], n.asInstanceOf[js.Any], hasGetInternalSlotsPluralRuleSelect.asInstanceOf[js.Any])).asInstanceOf[LDMLPluralRule]
 }

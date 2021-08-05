@@ -15,17 +15,14 @@ trait JSXClosingFragment
 }
 object JSXClosingFragment {
   
-  @scala.inline
-  def apply(): JSXClosingFragment = {
+  inline def apply(): JSXClosingFragment = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXClosingFragment")
     __obj.asInstanceOf[JSXClosingFragment]
   }
   
-  @scala.inline
-  implicit class JSXClosingFragmentMutableBuilder[Self <: JSXClosingFragment] (val x: Self) extends AnyVal {
+  extension [Self <: JSXClosingFragment](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXClosingFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXClosingFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

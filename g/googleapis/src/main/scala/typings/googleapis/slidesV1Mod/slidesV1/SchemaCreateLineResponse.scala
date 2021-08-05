@@ -16,19 +16,15 @@ trait SchemaCreateLineResponse extends StObject {
 }
 object SchemaCreateLineResponse {
   
-  @scala.inline
-  def apply(): SchemaCreateLineResponse = {
+  inline def apply(): SchemaCreateLineResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateLineResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCreateLineResponseMutableBuilder[Self <: SchemaCreateLineResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateLineResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

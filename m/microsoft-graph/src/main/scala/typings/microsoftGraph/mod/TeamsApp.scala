@@ -22,52 +22,37 @@ trait TeamsApp
 }
 object TeamsApp {
   
-  @scala.inline
-  def apply(): TeamsApp = {
+  inline def apply(): TeamsApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamsApp]
   }
   
-  @scala.inline
-  implicit class TeamsAppMutableBuilder[Self <: TeamsApp] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsApp](x: Self) {
     
-    @scala.inline
-    def setAppDefinitions(value: NullableOption[js.Array[TeamsAppDefinition]]): Self = StObject.set(x, "appDefinitions", value.asInstanceOf[js.Any])
+    inline def setAppDefinitions(value: NullableOption[js.Array[TeamsAppDefinition]]): Self = StObject.set(x, "appDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppDefinitionsNull: Self = StObject.set(x, "appDefinitions", null)
+    inline def setAppDefinitionsNull: Self = StObject.set(x, "appDefinitions", null)
     
-    @scala.inline
-    def setAppDefinitionsUndefined: Self = StObject.set(x, "appDefinitions", js.undefined)
+    inline def setAppDefinitionsUndefined: Self = StObject.set(x, "appDefinitions", js.undefined)
     
-    @scala.inline
-    def setAppDefinitionsVarargs(value: TeamsAppDefinition*): Self = StObject.set(x, "appDefinitions", js.Array(value :_*))
+    inline def setAppDefinitionsVarargs(value: TeamsAppDefinition*): Self = StObject.set(x, "appDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDistributionMethod(value: NullableOption[TeamsAppDistributionMethod]): Self = StObject.set(x, "distributionMethod", value.asInstanceOf[js.Any])
+    inline def setDistributionMethod(value: NullableOption[TeamsAppDistributionMethod]): Self = StObject.set(x, "distributionMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionMethodNull: Self = StObject.set(x, "distributionMethod", null)
+    inline def setDistributionMethodNull: Self = StObject.set(x, "distributionMethod", null)
     
-    @scala.inline
-    def setDistributionMethodUndefined: Self = StObject.set(x, "distributionMethod", js.undefined)
+    inline def setDistributionMethodUndefined: Self = StObject.set(x, "distributionMethod", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
   }
 }

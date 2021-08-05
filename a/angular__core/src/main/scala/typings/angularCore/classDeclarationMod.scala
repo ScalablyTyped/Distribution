@@ -13,12 +13,9 @@ object classDeclarationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findParentClassDeclaration(node: Node): ClassDeclaration | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentClassDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[ClassDeclaration | Null]
+  inline def findParentClassDeclaration(node: Node): ClassDeclaration | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentClassDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[ClassDeclaration | Null]
   
-  @scala.inline
-  def getBaseTypeIdentifiers(node: ClassDeclaration): js.Array[Identifier] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseTypeIdentifiers")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Identifier] | Null]
+  inline def getBaseTypeIdentifiers(node: ClassDeclaration): js.Array[Identifier] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseTypeIdentifiers")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Identifier] | Null]
   
-  @scala.inline
-  def hasExplicitConstructor(node: ClassDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasExplicitConstructor")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasExplicitConstructor(node: ClassDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasExplicitConstructor")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

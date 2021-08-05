@@ -14,19 +14,15 @@ trait GetWindowContextPayload extends StObject {
 }
 object GetWindowContextPayload {
   
-  @scala.inline
-  def apply(entityType: EntityType, target: Identity): GetWindowContextPayload = {
+  inline def apply(entityType: EntityType, target: Identity): GetWindowContextPayload = {
     val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWindowContextPayload]
   }
   
-  @scala.inline
-  implicit class GetWindowContextPayloadMutableBuilder[Self <: GetWindowContextPayload] (val x: Self) extends AnyVal {
+  extension [Self <: GetWindowContextPayload](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

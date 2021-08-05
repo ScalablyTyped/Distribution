@@ -44,8 +44,7 @@ trait InboxSDKInstance extends StObject {
 }
 object InboxSDKInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ButterBar: ButterBarInstance,
     Compose: ComposeInstance,
     Conversations: ConversationsInstance,
@@ -63,43 +62,30 @@ object InboxSDKInstance {
     __obj.asInstanceOf[InboxSDKInstance]
   }
   
-  @scala.inline
-  implicit class InboxSDKInstanceMutableBuilder[Self <: InboxSDKInstance] (val x: Self) extends AnyVal {
+  extension [Self <: InboxSDKInstance](x: Self) {
     
-    @scala.inline
-    def setButterBar(value: ButterBarInstance): Self = StObject.set(x, "ButterBar", value.asInstanceOf[js.Any])
+    inline def setButterBar(value: ButterBarInstance): Self = StObject.set(x, "ButterBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompose(value: ComposeInstance): Self = StObject.set(x, "Compose", value.asInstanceOf[js.Any])
+    inline def setCompose(value: ComposeInstance): Self = StObject.set(x, "Compose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversations(value: ConversationsInstance): Self = StObject.set(x, "Conversations", value.asInstanceOf[js.Any])
+    inline def setConversations(value: ConversationsInstance): Self = StObject.set(x, "Conversations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobal(value: GlobalInstance): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: GlobalInstance): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboard(value: KeyboardInstance): Self = StObject.set(x, "Keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: KeyboardInstance): Self = StObject.set(x, "Keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLists(value: ListsInstance): Self = StObject.set(x, "Lists", value.asInstanceOf[js.Any])
+    inline def setLists(value: ListsInstance): Self = StObject.set(x, "Lists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavMenu(value: NavMenuInstance): Self = StObject.set(x, "NavMenu", value.asInstanceOf[js.Any])
+    inline def setNavMenu(value: NavMenuInstance): Self = StObject.set(x, "NavMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouter(value: RouterInstance): Self = StObject.set(x, "Router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: RouterInstance): Self = StObject.set(x, "Router", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: SearchInstance): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: SearchInstance): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbars(value: ToolbarsInstance): Self = StObject.set(x, "Toolbars", value.asInstanceOf[js.Any])
+    inline def setToolbars(value: ToolbarsInstance): Self = StObject.set(x, "Toolbars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: UserInstance): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserInstance): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgets(value: WidgetsInstance): Self = StObject.set(x, "Widgets", value.asInstanceOf[js.Any])
+    inline def setWidgets(value: WidgetsInstance): Self = StObject.set(x, "Widgets", value.asInstanceOf[js.Any])
   }
 }

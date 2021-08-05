@@ -18,8 +18,7 @@ trait NodeBase extends StObject {
 }
 object NodeBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     raw: String,
     start: Double,
@@ -30,28 +29,21 @@ object NodeBase {
     __obj.asInstanceOf[NodeBase]
   }
   
-  @scala.inline
-  implicit class NodeBaseMutableBuilder[Self <: NodeBase] (val x: Self) extends AnyVal {
+  extension [Self <: NodeBase](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(
+    inline def setParent(
       value: RegExpLiteral | Pattern | Group | CapturingGroup | LookaroundAssertion | Alternative | Quantifier | CharacterClass | CharacterClassRange
     ): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: typings.regexpp.regexppStrings.RegExpLiteral | typings.regexpp.regexppStrings.Pattern | typings.regexpp.regexppStrings.Alternative | typings.regexpp.regexppStrings.Group | typings.regexpp.regexppStrings.CapturingGroup | typings.regexpp.regexppStrings.Quantifier | typings.regexpp.regexppStrings.CharacterClass | typings.regexpp.regexppStrings.Assertion | typings.regexpp.regexppStrings.CharacterClassRange | typings.regexpp.regexppStrings.CharacterSet | typings.regexpp.regexppStrings.Character | typings.regexpp.regexppStrings.Backreference | typings.regexpp.regexppStrings.Flags
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

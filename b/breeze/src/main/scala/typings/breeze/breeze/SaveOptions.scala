@@ -20,8 +20,7 @@ trait SaveOptions extends StObject {
 }
 object SaveOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowConcurrentSaves: Boolean,
     dataService: DataService,
     resourceName: String,
@@ -34,25 +33,18 @@ object SaveOptions {
     __obj.asInstanceOf[SaveOptions]
   }
   
-  @scala.inline
-  implicit class SaveOptionsMutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveOptions](x: Self) {
     
-    @scala.inline
-    def setAllowConcurrentSaves(value: Boolean): Self = StObject.set(x, "allowConcurrentSaves", value.asInstanceOf[js.Any])
+    inline def setAllowConcurrentSaves(value: Boolean): Self = StObject.set(x, "allowConcurrentSaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
+    inline def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsDefault(value: () => SaveOptions): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
+    inline def setSetAsDefault(value: () => SaveOptions): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTag(value: js.Object): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Object): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsing(value: SaveOptionsConfiguration => SaveOptions): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
+    inline def setUsing(value: SaveOptionsConfiguration => SaveOptions): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
   }
 }

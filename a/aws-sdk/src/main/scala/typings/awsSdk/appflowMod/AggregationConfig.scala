@@ -13,19 +13,15 @@ trait AggregationConfig extends StObject {
 }
 object AggregationConfig {
   
-  @scala.inline
-  def apply(): AggregationConfig = {
+  inline def apply(): AggregationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregationConfig]
   }
   
-  @scala.inline
-  implicit class AggregationConfigMutableBuilder[Self <: AggregationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AggregationConfig](x: Self) {
     
-    @scala.inline
-    def setAggregationType(value: AggregationType): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
+    inline def setAggregationType(value: AggregationType): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
+    inline def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
   }
 }

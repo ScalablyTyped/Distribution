@@ -12,16 +12,13 @@ trait HidInputReportReceivedEventArgs extends StObject {
 }
 object HidInputReportReceivedEventArgs {
   
-  @scala.inline
-  def apply(report: HidInputReport): HidInputReportReceivedEventArgs = {
+  inline def apply(report: HidInputReport): HidInputReportReceivedEventArgs = {
     val __obj = js.Dynamic.literal(report = report.asInstanceOf[js.Any])
     __obj.asInstanceOf[HidInputReportReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class HidInputReportReceivedEventArgsMutableBuilder[Self <: HidInputReportReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: HidInputReportReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReport(value: HidInputReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: HidInputReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
   }
 }

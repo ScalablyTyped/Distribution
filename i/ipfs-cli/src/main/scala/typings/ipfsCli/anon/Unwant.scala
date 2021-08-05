@@ -16,8 +16,7 @@ trait Unwant extends StObject {
 }
 object Unwant {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     stat: () => js.Promise[scala.Nothing],
     unwant: () => js.Promise[scala.Nothing],
     wantlist: () => js.Promise[scala.Nothing],
@@ -27,19 +26,14 @@ object Unwant {
     __obj.asInstanceOf[Unwant]
   }
   
-  @scala.inline
-  implicit class UnwantMutableBuilder[Self <: Unwant] (val x: Self) extends AnyVal {
+  extension [Self <: Unwant](x: Self) {
     
-    @scala.inline
-    def setStat(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "stat", js.Any.fromFunction0(value))
+    inline def setStat(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "stat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnwant(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "unwant", js.Any.fromFunction0(value))
+    inline def setUnwant(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "unwant", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWantlist(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "wantlist", js.Any.fromFunction0(value))
+    inline def setWantlist(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "wantlist", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWantlistForPeer(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "wantlistForPeer", js.Any.fromFunction0(value))
+    inline def setWantlistForPeer(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "wantlistForPeer", js.Any.fromFunction0(value))
   }
 }

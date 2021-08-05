@@ -42,8 +42,7 @@ trait XInvocation2
 }
 object XInvocation2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Info: SafeArray[InvocationInfo],
     Introspection: XIntrospectionAccess,
     MemberNames: SafeArray[String],
@@ -64,22 +63,16 @@ object XInvocation2 {
     __obj.asInstanceOf[XInvocation2]
   }
   
-  @scala.inline
-  implicit class XInvocation2MutableBuilder[Self <: XInvocation2] (val x: Self) extends AnyVal {
+  extension [Self <: XInvocation2](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: () => SafeArray[InvocationInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => SafeArray[InvocationInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInfoForName(value: (String, Boolean) => InvocationInfo): Self = StObject.set(x, "getInfoForName", js.Any.fromFunction2(value))
+    inline def setGetInfoForName(value: (String, Boolean) => InvocationInfo): Self = StObject.set(x, "getInfoForName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))
+    inline def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInfo(value: SafeArray[InvocationInfo]): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: SafeArray[InvocationInfo]): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberNames(value: SafeArray[String]): Self = StObject.set(x, "MemberNames", value.asInstanceOf[js.Any])
+    inline def setMemberNames(value: SafeArray[String]): Self = StObject.set(x, "MemberNames", value.asInstanceOf[js.Any])
   }
 }

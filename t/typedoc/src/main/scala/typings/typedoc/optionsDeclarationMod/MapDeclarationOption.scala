@@ -21,8 +21,7 @@ trait MapDeclarationOption[T]
 }
 object MapDeclarationOption {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     defaultValue: T,
     help: String,
     map: (Map[String, T]) | (Record[String | Double, T]),
@@ -34,22 +33,16 @@ object MapDeclarationOption {
     __obj.asInstanceOf[MapDeclarationOption[T]]
   }
   
-  @scala.inline
-  implicit class MapDeclarationOptionMutableBuilder[Self <: MapDeclarationOption[?], T] (val x: Self & MapDeclarationOption[T]) extends AnyVal {
+  extension [Self <: MapDeclarationOption[?], T](x: Self & MapDeclarationOption[T]) {
     
-    @scala.inline
-    def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: (Map[String, T]) | (Record[String | Double, T])): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: (Map[String, T]) | (Record[String | Double, T])): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapError(value: String): Self = StObject.set(x, "mapError", value.asInstanceOf[js.Any])
+    inline def setMapError(value: String): Self = StObject.set(x, "mapError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapErrorUndefined: Self = StObject.set(x, "mapError", js.undefined)
+    inline def setMapErrorUndefined: Self = StObject.set(x, "mapError", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.Map): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.Map): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

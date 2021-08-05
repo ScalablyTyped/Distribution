@@ -11,16 +11,13 @@ trait IBitmapTypedValueFactory extends StObject {
 }
 object IBitmapTypedValueFactory {
   
-  @scala.inline
-  def apply(create: (js.Any, PropertyType) => BitmapTypedValue): IBitmapTypedValueFactory = {
+  inline def apply(create: (js.Any, PropertyType) => BitmapTypedValue): IBitmapTypedValueFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
     __obj.asInstanceOf[IBitmapTypedValueFactory]
   }
   
-  @scala.inline
-  implicit class IBitmapTypedValueFactoryMutableBuilder[Self <: IBitmapTypedValueFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapTypedValueFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (js.Any, PropertyType) => BitmapTypedValue): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (js.Any, PropertyType) => BitmapTypedValue): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }
 }

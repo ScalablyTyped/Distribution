@@ -28,34 +28,25 @@ trait WorkflowExecutionTerminatedEventAttributes extends StObject {
 }
 object WorkflowExecutionTerminatedEventAttributes {
   
-  @scala.inline
-  def apply(childPolicy: ChildPolicy): WorkflowExecutionTerminatedEventAttributes = {
+  inline def apply(childPolicy: ChildPolicy): WorkflowExecutionTerminatedEventAttributes = {
     val __obj = js.Dynamic.literal(childPolicy = childPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionTerminatedEventAttributes]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionTerminatedEventAttributesMutableBuilder[Self <: WorkflowExecutionTerminatedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionTerminatedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setCause(value: WorkflowExecutionTerminatedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: WorkflowExecutionTerminatedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
+    inline def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setReason(value: TerminateReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: TerminateReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

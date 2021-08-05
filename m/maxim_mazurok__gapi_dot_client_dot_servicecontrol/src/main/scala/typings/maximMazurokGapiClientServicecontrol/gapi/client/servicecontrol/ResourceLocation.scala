@@ -20,31 +20,23 @@ trait ResourceLocation extends StObject {
 }
 object ResourceLocation {
   
-  @scala.inline
-  def apply(): ResourceLocation = {
+  inline def apply(): ResourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceLocation]
   }
   
-  @scala.inline
-  implicit class ResourceLocationMutableBuilder[Self <: ResourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceLocation](x: Self) {
     
-    @scala.inline
-    def setCurrentLocations(value: js.Array[String]): Self = StObject.set(x, "currentLocations", value.asInstanceOf[js.Any])
+    inline def setCurrentLocations(value: js.Array[String]): Self = StObject.set(x, "currentLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentLocationsUndefined: Self = StObject.set(x, "currentLocations", js.undefined)
+    inline def setCurrentLocationsUndefined: Self = StObject.set(x, "currentLocations", js.undefined)
     
-    @scala.inline
-    def setCurrentLocationsVarargs(value: String*): Self = StObject.set(x, "currentLocations", js.Array(value :_*))
+    inline def setCurrentLocationsVarargs(value: String*): Self = StObject.set(x, "currentLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setOriginalLocations(value: js.Array[String]): Self = StObject.set(x, "originalLocations", value.asInstanceOf[js.Any])
+    inline def setOriginalLocations(value: js.Array[String]): Self = StObject.set(x, "originalLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalLocationsUndefined: Self = StObject.set(x, "originalLocations", js.undefined)
+    inline def setOriginalLocationsUndefined: Self = StObject.set(x, "originalLocations", js.undefined)
     
-    @scala.inline
-    def setOriginalLocationsVarargs(value: String*): Self = StObject.set(x, "originalLocations", js.Array(value :_*))
+    inline def setOriginalLocationsVarargs(value: String*): Self = StObject.set(x, "originalLocations", js.Array(value :_*))
   }
 }

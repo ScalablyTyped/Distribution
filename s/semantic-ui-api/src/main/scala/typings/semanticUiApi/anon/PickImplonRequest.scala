@@ -15,16 +15,13 @@ trait PickImplonRequest extends StObject {
 }
 object PickImplonRequest {
   
-  @scala.inline
-  def apply(onRequest: (/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any]) => Unit): PickImplonRequest = {
+  inline def apply(onRequest: (/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any]) => Unit): PickImplonRequest = {
     val __obj = js.Dynamic.literal(onRequest = js.Any.fromFunction2(onRequest))
     __obj.asInstanceOf[PickImplonRequest]
   }
   
-  @scala.inline
-  implicit class PickImplonRequestMutableBuilder[Self <: PickImplonRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonRequest](x: Self) {
     
-    @scala.inline
-    def setOnRequest(value: (/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
+    inline def setOnRequest(value: (/* promise */ Deferred[js.Any, js.Any, js.Any], /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
   }
 }

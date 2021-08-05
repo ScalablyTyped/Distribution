@@ -21,8 +21,7 @@ object BgiFrame {
   }
   object IBgiframe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createIframe: () => HTMLElement,
       fire: HTMLElement => Unit,
       getIframe: HTMLElement => HTMLElement,
@@ -33,23 +32,17 @@ object BgiFrame {
       __obj.asInstanceOf[IBgiframe]
     }
     
-    @scala.inline
-    implicit class IBgiframeMutableBuilder[Self <: IBgiframe] (val x: Self) extends AnyVal {
+    extension [Self <: IBgiframe](x: Self) {
       
-      @scala.inline
-      def setCreateIframe(value: () => HTMLElement): Self = StObject.set(x, "createIframe", js.Any.fromFunction0(value))
+      inline def setCreateIframe(value: () => HTMLElement): Self = StObject.set(x, "createIframe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFire(value: HTMLElement => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
+      inline def setFire(value: HTMLElement => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetIframe(value: HTMLElement => HTMLElement): Self = StObject.set(x, "getIframe", js.Any.fromFunction1(value))
+      inline def setGetIframe(value: HTMLElement => HTMLElement): Self = StObject.set(x, "getIframe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProp(value: js.Any => String): Self = StObject.set(x, "prop", js.Any.fromFunction1(value))
+      inline def setProp(value: js.Any => String): Self = StObject.set(x, "prop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setS(value: ISettings): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: ISettings): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,8 +64,7 @@ object BgiFrame {
   }
   object ISettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       conditional: Boolean,
       height: String,
       left: String,
@@ -85,29 +77,21 @@ object BgiFrame {
       __obj.asInstanceOf[ISettings]
     }
     
-    @scala.inline
-    implicit class ISettingsMutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
+    extension [Self <: ISettings](x: Self) {
       
-      @scala.inline
-      def setConditional(value: Boolean): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
+      inline def setConditional(value: Boolean): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,16 +12,13 @@ trait IMUMPU6050Option
 }
 object IMUMPU6050Option {
   
-  @scala.inline
-  def apply(address: Double): IMUMPU6050Option = {
+  inline def apply(address: Double): IMUMPU6050Option = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMUMPU6050Option]
   }
   
-  @scala.inline
-  implicit class IMUMPU6050OptionMutableBuilder[Self <: IMUMPU6050Option] (val x: Self) extends AnyVal {
+  extension [Self <: IMUMPU6050Option](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }
 }

@@ -68,8 +68,6 @@ object mod {
     def write(data: Buffer): Boolean = js.native
   }
   
-  @scala.inline
-  def createParser(): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")().asInstanceOf[Parser]
-  @scala.inline
-  def createParser(cb: js.Function1[/* repeated */ js.Any, Unit]): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(cb.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  inline def createParser(): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")().asInstanceOf[Parser]
+  inline def createParser(cb: js.Function1[/* repeated */ js.Any, Unit]): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(cb.asInstanceOf[js.Any]).asInstanceOf[Parser]
 }

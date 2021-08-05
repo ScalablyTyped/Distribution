@@ -14,25 +14,19 @@ trait IWorldDefinition
 }
 object IWorldDefinition {
   
-  @scala.inline
-  def apply(): IWorldDefinition = {
+  inline def apply(): IWorldDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWorldDefinition]
   }
   
-  @scala.inline
-  implicit class IWorldDefinitionMutableBuilder[Self <: IWorldDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IWorldDefinition](x: Self) {
     
-    @scala.inline
-    def setBounds(value: IBound): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: IBound): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setGravity(value: Gravity): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: Gravity): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
   }
 }

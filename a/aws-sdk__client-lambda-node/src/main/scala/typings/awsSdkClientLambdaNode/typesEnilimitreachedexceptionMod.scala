@@ -16,17 +16,14 @@ object typesEnilimitreachedexceptionMod {
   }
   object ENILimitReachedException {
     
-    @scala.inline
-    def apply(): ENILimitReachedException = {
+    inline def apply(): ENILimitReachedException = {
       val __obj = js.Dynamic.literal(name = "ENILimitReachedException")
       __obj.asInstanceOf[ENILimitReachedException]
     }
     
-    @scala.inline
-    implicit class ENILimitReachedExceptionMutableBuilder[Self <: ENILimitReachedException] (val x: Self) extends AnyVal {
+    extension [Self <: ENILimitReachedException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ENILimitReachedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ENILimitReachedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,26 +41,20 @@ object typesEnilimitreachedexceptionMod {
   }
   object ENILimitReachedExceptionDetails {
     
-    @scala.inline
-    def apply(): ENILimitReachedExceptionDetails = {
+    inline def apply(): ENILimitReachedExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ENILimitReachedExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ENILimitReachedExceptionDetailsMutableBuilder[Self <: ENILimitReachedExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ENILimitReachedExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

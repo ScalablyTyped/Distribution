@@ -37,23 +37,18 @@ object eventMod {
   }
   object event {
     
-    @scala.inline
-    def apply($destroy: () => Unit, $transfor: js.Array[js.Any] => Unit, active: Boolean): event = {
+    inline def apply($destroy: () => Unit, $transfor: js.Array[js.Any] => Unit, active: Boolean): event = {
       val __obj = js.Dynamic.literal($destroy = js.Any.fromFunction0($destroy), $transfor = js.Any.fromFunction1($transfor), active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[event]
     }
     
-    @scala.inline
-    implicit class eventMutableBuilder[Self <: event] (val x: Self) extends AnyVal {
+    extension [Self <: event](x: Self) {
       
-      @scala.inline
-      def set$destroy(value: () => Unit): Self = StObject.set(x, "$destroy", js.Any.fromFunction0(value))
+      inline def set$destroy(value: () => Unit): Self = StObject.set(x, "$destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set$transfor(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "$transfor", js.Any.fromFunction1(value))
+      inline def set$transfor(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "$transfor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,17 +12,14 @@ object discoverRepositoryChainingResponseMod {
   }
   object DiscoverRepositoryChainingResponseChainingInfo {
     
-    @scala.inline
-    def apply(sources: String): DiscoverRepositoryChainingResponseChainingInfo = {
+    inline def apply(sources: String): DiscoverRepositoryChainingResponseChainingInfo = {
       val __obj = js.Dynamic.literal(sources = sources.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiscoverRepositoryChainingResponseChainingInfo]
     }
     
-    @scala.inline
-    implicit class DiscoverRepositoryChainingResponseChainingInfoMutableBuilder[Self <: DiscoverRepositoryChainingResponseChainingInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DiscoverRepositoryChainingResponseChainingInfo](x: Self) {
       
-      @scala.inline
-      def setSources(value: String): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: String): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,8 +37,7 @@ object discoverRepositoryChainingResponseMod {
   }
   object DiscoverRepositoryChainingResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       available_recommend_count: Double,
       is_backup: Boolean,
       is_recommend_account: Boolean,
@@ -52,26 +48,19 @@ object discoverRepositoryChainingResponseMod {
       __obj.asInstanceOf[DiscoverRepositoryChainingResponseRootObject]
     }
     
-    @scala.inline
-    implicit class DiscoverRepositoryChainingResponseRootObjectMutableBuilder[Self <: DiscoverRepositoryChainingResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: DiscoverRepositoryChainingResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setAvailable_recommend_count(value: Double): Self = StObject.set(x, "available_recommend_count", value.asInstanceOf[js.Any])
+      inline def setAvailable_recommend_count(value: Double): Self = StObject.set(x, "available_recommend_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_backup(value: Boolean): Self = StObject.set(x, "is_backup", value.asInstanceOf[js.Any])
+      inline def setIs_backup(value: Boolean): Self = StObject.set(x, "is_backup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_recommend_account(value: Boolean): Self = StObject.set(x, "is_recommend_account", value.asInstanceOf[js.Any])
+      inline def setIs_recommend_account(value: Boolean): Self = StObject.set(x, "is_recommend_account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[DiscoverRepositoryChainingResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[DiscoverRepositoryChainingResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: DiscoverRepositoryChainingResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: DiscoverRepositoryChainingResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -99,8 +88,7 @@ object discoverRepositoryChainingResponseMod {
   }
   object DiscoverRepositoryChainingResponseUsersItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chaining_info: DiscoverRepositoryChainingResponseChainingInfo,
       full_name: String,
       is_private: Boolean,
@@ -115,41 +103,29 @@ object discoverRepositoryChainingResponseMod {
       __obj.asInstanceOf[DiscoverRepositoryChainingResponseUsersItem]
     }
     
-    @scala.inline
-    implicit class DiscoverRepositoryChainingResponseUsersItemMutableBuilder[Self <: DiscoverRepositoryChainingResponseUsersItem] (val x: Self) extends AnyVal {
+    extension [Self <: DiscoverRepositoryChainingResponseUsersItem](x: Self) {
       
-      @scala.inline
-      def setChaining_info(value: DiscoverRepositoryChainingResponseChainingInfo): Self = StObject.set(x, "chaining_info", value.asInstanceOf[js.Any])
+      inline def setChaining_info(value: DiscoverRepositoryChainingResponseChainingInfo): Self = StObject.set(x, "chaining_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_chaining_secondary_label(value: String): Self = StObject.set(x, "profile_chaining_secondary_label", value.asInstanceOf[js.Any])
+      inline def setProfile_chaining_secondary_label(value: String): Self = StObject.set(x, "profile_chaining_secondary_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
+      inline def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
+      inline def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

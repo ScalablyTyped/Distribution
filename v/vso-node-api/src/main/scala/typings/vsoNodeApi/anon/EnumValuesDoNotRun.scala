@@ -10,16 +10,13 @@ trait EnumValuesDoNotRun extends StObject {
 }
 object EnumValuesDoNotRun {
   
-  @scala.inline
-  def apply(enumValues: DoNotRun): EnumValuesDoNotRun = {
+  inline def apply(enumValues: DoNotRun): EnumValuesDoNotRun = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDoNotRun]
   }
   
-  @scala.inline
-  implicit class EnumValuesDoNotRunMutableBuilder[Self <: EnumValuesDoNotRun] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDoNotRun](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: DoNotRun): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: DoNotRun): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

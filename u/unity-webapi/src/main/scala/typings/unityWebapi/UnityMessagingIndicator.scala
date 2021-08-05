@@ -26,8 +26,7 @@ trait UnityMessagingIndicator extends StObject {
 }
 object UnityMessagingIndicator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAction: (String, js.Function) => js.Any,
     clearIndicator: String => js.Any,
     clearIndicators: () => js.Any,
@@ -41,31 +40,22 @@ object UnityMessagingIndicator {
     __obj.asInstanceOf[UnityMessagingIndicator]
   }
   
-  @scala.inline
-  implicit class UnityMessagingIndicatorMutableBuilder[Self <: UnityMessagingIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: UnityMessagingIndicator](x: Self) {
     
-    @scala.inline
-    def setAddAction(value: (String, js.Function) => js.Any): Self = StObject.set(x, "addAction", js.Any.fromFunction2(value))
+    inline def setAddAction(value: (String, js.Function) => js.Any): Self = StObject.set(x, "addAction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClearIndicator(value: String => js.Any): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction1(value))
+    inline def setClearIndicator(value: String => js.Any): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearIndicators(value: () => js.Any): Self = StObject.set(x, "clearIndicators", js.Any.fromFunction0(value))
+    inline def setClearIndicators(value: () => js.Any): Self = StObject.set(x, "clearIndicators", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPresenceChanged(value: js.Function => js.Any): Self = StObject.set(x, "onPresenceChanged", js.Any.fromFunction1(value))
+    inline def setOnPresenceChanged(value: js.Function => js.Any): Self = StObject.set(x, "onPresenceChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPresence(value: String): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+    inline def setPresence(value: String): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAction(value: String => js.Any): Self = StObject.set(x, "removeAction", js.Any.fromFunction1(value))
+    inline def setRemoveAction(value: String => js.Any): Self = StObject.set(x, "removeAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveActions(value: () => js.Any): Self = StObject.set(x, "removeActions", js.Any.fromFunction0(value))
+    inline def setRemoveActions(value: () => js.Any): Self = StObject.set(x, "removeActions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowIndicator(value: (String, UnityIndicatorProperties) => js.Any): Self = StObject.set(x, "showIndicator", js.Any.fromFunction2(value))
+    inline def setShowIndicator(value: (String, UnityIndicatorProperties) => js.Any): Self = StObject.set(x, "showIndicator", js.Any.fromFunction2(value))
   }
 }

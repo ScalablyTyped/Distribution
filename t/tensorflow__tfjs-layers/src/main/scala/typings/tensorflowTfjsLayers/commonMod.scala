@@ -11,12 +11,9 @@ object commonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def epsilon(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("epsilon")().asInstanceOf[Double]
+  inline def epsilon(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("epsilon")().asInstanceOf[Double]
   
-  @scala.inline
-  def imageDataFormat(): DataFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("imageDataFormat")().asInstanceOf[DataFormat]
+  inline def imageDataFormat(): DataFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("imageDataFormat")().asInstanceOf[DataFormat]
   
-  @scala.inline
-  def setEpsilon(e: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEpsilon")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEpsilon(e: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEpsilon")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

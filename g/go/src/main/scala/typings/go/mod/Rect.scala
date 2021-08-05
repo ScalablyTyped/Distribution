@@ -284,14 +284,10 @@ object Rect {
     * false otherwise.
     */
   /* static member */
-  @scala.inline
-  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Unit, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Unit, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * This static function indicates whether a Rect partly or wholly overlaps the given Rect.
@@ -305,22 +301,19 @@ object Rect {
     * @param {number} h
     */
   /* static member */
-  @scala.inline
-  def intersects(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def intersects(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], rw.asInstanceOf[js.Any], rh.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * This static function can be used to read in a Rect from a string that was produced by Rect.stringify.
     * @param {string} str
     */
   /* static member */
-  @scala.inline
-  def parse(str: String): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Rect]
+  inline def parse(str: String): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Rect]
   
   /**
     * This static function can be used to write out a Rect as a string that can be read by Rect.parse.
     * @param {Rect} val
     */
   /* static member */
-  @scala.inline
-  def stringify(`val`: Rect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(`val`: Rect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

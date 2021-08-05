@@ -17,25 +17,19 @@ trait GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setMinAcceptableMeanAveragePrecision(value: Double): Self = StObject.set(x, "minAcceptableMeanAveragePrecision", value.asInstanceOf[js.Any])
+    inline def setMinAcceptableMeanAveragePrecision(value: Double): Self = StObject.set(x, "minAcceptableMeanAveragePrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAcceptableMeanAveragePrecisionUndefined: Self = StObject.set(x, "minAcceptableMeanAveragePrecision", js.undefined)
+    inline def setMinAcceptableMeanAveragePrecisionUndefined: Self = StObject.set(x, "minAcceptableMeanAveragePrecision", js.undefined)
   }
 }

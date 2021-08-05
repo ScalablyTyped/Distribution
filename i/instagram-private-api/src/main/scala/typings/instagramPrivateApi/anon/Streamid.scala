@@ -10,16 +10,13 @@ trait Streamid extends StObject {
 }
 object Streamid {
   
-  @scala.inline
-  def apply(stream_id: String): Streamid = {
+  inline def apply(stream_id: String): Streamid = {
     val __obj = js.Dynamic.literal(stream_id = stream_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Streamid]
   }
   
-  @scala.inline
-  implicit class StreamidMutableBuilder[Self <: Streamid] (val x: Self) extends AnyVal {
+  extension [Self <: Streamid](x: Self) {
     
-    @scala.inline
-    def setStream_id(value: String): Self = StObject.set(x, "stream_id", value.asInstanceOf[js.Any])
+    inline def setStream_id(value: String): Self = StObject.set(x, "stream_id", value.asInstanceOf[js.Any])
   }
 }

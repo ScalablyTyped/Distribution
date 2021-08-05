@@ -12,19 +12,15 @@ trait PickClearButtonPropschild extends StObject {
 }
 object PickClearButtonPropschild {
   
-  @scala.inline
-  def apply(): PickClearButtonPropschild = {
+  inline def apply(): PickClearButtonPropschild = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickClearButtonPropschild]
   }
   
-  @scala.inline
-  implicit class PickClearButtonPropschildMutableBuilder[Self <: PickClearButtonPropschild] (val x: Self) extends AnyVal {
+  extension [Self <: PickClearButtonPropschild](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* childrenFn */ GetClearButtonProps => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* childrenFn */ GetClearButtonProps => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

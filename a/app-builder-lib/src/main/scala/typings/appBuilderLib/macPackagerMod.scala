@@ -22,9 +22,9 @@ object macPackagerMod {
   @js.native
   trait MacPackager extends PlatformPackager[MacConfiguration] {
     
-    var _iconPath: js.Any = js.native
+    /* private */ var _iconPath: js.Any = js.native
     
-    var adjustSignOptions: js.Any = js.native
+    /* private */ var adjustSignOptions: js.Any = js.native
     
     def applyCommonInfo(appPlist: js.Any, contentsPath: String): js.Promise[Unit] = js.native
     
@@ -35,6 +35,6 @@ object macPackagerMod {
     
     /* protected */ def doSign(opts: SignOptions): js.Promise[js.Any] = js.native
     
-    var sign: js.Any = js.native
+    /* private */ var sign: js.Any = js.native
   }
 }

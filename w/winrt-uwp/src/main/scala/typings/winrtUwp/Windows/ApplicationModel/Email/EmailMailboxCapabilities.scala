@@ -51,8 +51,7 @@ trait EmailMailboxCapabilities extends StObject {
 }
 object EmailMailboxCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canCreateFolder: Boolean,
     canDeleteFolder: Boolean,
     canEmptyFolder: Boolean,
@@ -72,49 +71,34 @@ object EmailMailboxCapabilities {
     __obj.asInstanceOf[EmailMailboxCapabilities]
   }
   
-  @scala.inline
-  implicit class EmailMailboxCapabilitiesMutableBuilder[Self <: EmailMailboxCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxCapabilities](x: Self) {
     
-    @scala.inline
-    def setCanCreateFolder(value: Boolean): Self = StObject.set(x, "canCreateFolder", value.asInstanceOf[js.Any])
+    inline def setCanCreateFolder(value: Boolean): Self = StObject.set(x, "canCreateFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDeleteFolder(value: Boolean): Self = StObject.set(x, "canDeleteFolder", value.asInstanceOf[js.Any])
+    inline def setCanDeleteFolder(value: Boolean): Self = StObject.set(x, "canDeleteFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanEmptyFolder(value: Boolean): Self = StObject.set(x, "canEmptyFolder", value.asInstanceOf[js.Any])
+    inline def setCanEmptyFolder(value: Boolean): Self = StObject.set(x, "canEmptyFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanForwardMeetings(value: js.Any): Self = StObject.set(x, "canForwardMeetings", value.asInstanceOf[js.Any])
+    inline def setCanForwardMeetings(value: js.Any): Self = StObject.set(x, "canForwardMeetings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanGetAndSetExternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetExternalAutoReplies", value.asInstanceOf[js.Any])
+    inline def setCanGetAndSetExternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetExternalAutoReplies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanGetAndSetInternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetInternalAutoReplies", value.asInstanceOf[js.Any])
+    inline def setCanGetAndSetInternalAutoReplies(value: js.Any): Self = StObject.set(x, "canGetAndSetInternalAutoReplies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanMoveFolder(value: Boolean): Self = StObject.set(x, "canMoveFolder", value.asInstanceOf[js.Any])
+    inline def setCanMoveFolder(value: Boolean): Self = StObject.set(x, "canMoveFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanProposeNewTimeForMeetings(value: js.Any): Self = StObject.set(x, "canProposeNewTimeForMeetings", value.asInstanceOf[js.Any])
+    inline def setCanProposeNewTimeForMeetings(value: js.Any): Self = StObject.set(x, "canProposeNewTimeForMeetings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanResolveRecipients(value: Boolean): Self = StObject.set(x, "canResolveRecipients", value.asInstanceOf[js.Any])
+    inline def setCanResolveRecipients(value: Boolean): Self = StObject.set(x, "canResolveRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanServerSearchFolders(value: js.Any): Self = StObject.set(x, "canServerSearchFolders", value.asInstanceOf[js.Any])
+    inline def setCanServerSearchFolders(value: js.Any): Self = StObject.set(x, "canServerSearchFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanServerSearchMailbox(value: js.Any): Self = StObject.set(x, "canServerSearchMailbox", value.asInstanceOf[js.Any])
+    inline def setCanServerSearchMailbox(value: js.Any): Self = StObject.set(x, "canServerSearchMailbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSmartSend(value: js.Any): Self = StObject.set(x, "canSmartSend", value.asInstanceOf[js.Any])
+    inline def setCanSmartSend(value: js.Any): Self = StObject.set(x, "canSmartSend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanUpdateMeetingResponses(value: js.Any): Self = StObject.set(x, "canUpdateMeetingResponses", value.asInstanceOf[js.Any])
+    inline def setCanUpdateMeetingResponses(value: js.Any): Self = StObject.set(x, "canUpdateMeetingResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanValidateCertificates(value: Boolean): Self = StObject.set(x, "canValidateCertificates", value.asInstanceOf[js.Any])
+    inline def setCanValidateCertificates(value: Boolean): Self = StObject.set(x, "canValidateCertificates", value.asInstanceOf[js.Any])
   }
 }

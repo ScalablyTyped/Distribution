@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[ResolutionType](options: OperationOptions, retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], retryableFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolutionType]]
+  inline def apply[ResolutionType](options: OperationOptions, retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], retryableFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolutionType]]
   /**
     * Wrap all functions of the object with retry. The params can be entered in either order, just like in the original library.
     *
@@ -16,10 +15,8 @@ object mod {
     * @param options The options for how long/often to retry the function for.
     * @returns The Promise resolved by the input retryableFn, or rejected (if not retried) from its catch block.
     */
-  @scala.inline
-  def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = ^.asInstanceOf[js.Dynamic].apply(retryableFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResolutionType]]
-  @scala.inline
-  def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType], options: OperationOptions): js.Promise[ResolutionType] = (^.asInstanceOf[js.Dynamic].apply(retryableFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolutionType]]
+  inline def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = ^.asInstanceOf[js.Dynamic].apply(retryableFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResolutionType]]
+  inline def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType], options: OperationOptions): js.Promise[ResolutionType] = (^.asInstanceOf[js.Dynamic].apply(retryableFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolutionType]]
   
   @JSImport("promise-retry", JSImport.Namespace)
   @js.native

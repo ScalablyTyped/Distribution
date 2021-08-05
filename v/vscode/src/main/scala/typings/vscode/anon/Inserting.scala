@@ -13,19 +13,15 @@ trait Inserting extends StObject {
 }
 object Inserting {
   
-  @scala.inline
-  def apply(inserting: Range, replacing: Range): Inserting = {
+  inline def apply(inserting: Range, replacing: Range): Inserting = {
     val __obj = js.Dynamic.literal(inserting = inserting.asInstanceOf[js.Any], replacing = replacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inserting]
   }
   
-  @scala.inline
-  implicit class InsertingMutableBuilder[Self <: Inserting] (val x: Self) extends AnyVal {
+  extension [Self <: Inserting](x: Self) {
     
-    @scala.inline
-    def setInserting(value: Range): Self = StObject.set(x, "inserting", value.asInstanceOf[js.Any])
+    inline def setInserting(value: Range): Self = StObject.set(x, "inserting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacing(value: Range): Self = StObject.set(x, "replacing", value.asInstanceOf[js.Any])
+    inline def setReplacing(value: Range): Self = StObject.set(x, "replacing", value.asInstanceOf[js.Any])
   }
 }

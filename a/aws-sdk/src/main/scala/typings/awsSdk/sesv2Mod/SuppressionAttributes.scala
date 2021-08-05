@@ -13,22 +13,17 @@ trait SuppressionAttributes extends StObject {
 }
 object SuppressionAttributes {
   
-  @scala.inline
-  def apply(): SuppressionAttributes = {
+  inline def apply(): SuppressionAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuppressionAttributes]
   }
   
-  @scala.inline
-  implicit class SuppressionAttributesMutableBuilder[Self <: SuppressionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SuppressionAttributes](x: Self) {
     
-    @scala.inline
-    def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
+    inline def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressedReasonsUndefined: Self = StObject.set(x, "SuppressedReasons", js.undefined)
+    inline def setSuppressedReasonsUndefined: Self = StObject.set(x, "SuppressedReasons", js.undefined)
     
-    @scala.inline
-    def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value :_*))
+    inline def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value :_*))
   }
 }

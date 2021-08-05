@@ -12,16 +12,13 @@ trait BuildUpdatedEvent
 }
 object BuildUpdatedEvent {
   
-  @scala.inline
-  def apply(build: Build, buildId: Double): BuildUpdatedEvent = {
+  inline def apply(build: Build, buildId: Double): BuildUpdatedEvent = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class BuildUpdatedEventMutableBuilder[Self <: BuildUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BuildUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
   }
 }

@@ -15,26 +15,20 @@ object mod {
   }
   object CallbackOptions {
     
-    @scala.inline
-    def apply(): CallbackOptions = {
+    inline def apply(): CallbackOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallbackOptions]
     }
     
-    @scala.inline
-    implicit class CallbackOptionsMutableBuilder[Self <: CallbackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackOptions](x: Self) {
       
-      @scala.inline
-      def setAfterZoom(value: (/* start */ Double, /* end */ Double) => Unit): Self = StObject.set(x, "afterZoom", js.Any.fromFunction2(value))
+      inline def setAfterZoom(value: (/* start */ Double, /* end */ Double) => Unit): Self = StObject.set(x, "afterZoom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAfterZoomUndefined: Self = StObject.set(x, "afterZoom", js.undefined)
+      inline def setAfterZoomUndefined: Self = StObject.set(x, "afterZoom", js.undefined)
       
-      @scala.inline
-      def setBeforeZoom(value: (/* start */ Double, /* end */ Double) => Boolean): Self = StObject.set(x, "beforeZoom", js.Any.fromFunction2(value))
+      inline def setBeforeZoom(value: (/* start */ Double, /* end */ Double) => Boolean): Self = StObject.set(x, "beforeZoom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeZoomUndefined: Self = StObject.set(x, "beforeZoom", js.undefined)
+      inline def setBeforeZoomUndefined: Self = StObject.set(x, "beforeZoom", js.undefined)
     }
   }
   
@@ -52,44 +46,32 @@ object mod {
   }
   object CrosshairOptions {
     
-    @scala.inline
-    def apply(): CrosshairOptions = {
+    inline def apply(): CrosshairOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CrosshairOptions]
     }
     
-    @scala.inline
-    implicit class CrosshairOptionsMutableBuilder[Self <: CrosshairOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CrosshairOptions](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: CallbackOptions): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: CallbackOptions): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+      inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      @scala.inline
-      def setLine(value: LineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: LineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setSnap(value: SnapOptions): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+      inline def setSnap(value: SnapOptions): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+      inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
       
-      @scala.inline
-      def setSync(value: SyncOptions): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: SyncOptions): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
-      @scala.inline
-      def setZoom(value: ZoomOptions): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: ZoomOptions): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -103,35 +85,26 @@ object mod {
   }
   object LineOptions {
     
-    @scala.inline
-    def apply(): LineOptions = {
+    inline def apply(): LineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineOptions]
     }
     
-    @scala.inline
-    implicit class LineOptionsMutableBuilder[Self <: LineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LineOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
+      inline def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashPatternUndefined: Self = StObject.set(x, "dashPattern", js.undefined)
+      inline def setDashPatternUndefined: Self = StObject.set(x, "dashPattern", js.undefined)
       
-      @scala.inline
-      def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
+      inline def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -141,20 +114,16 @@ object mod {
   }
   object SnapOptions {
     
-    @scala.inline
-    def apply(): SnapOptions = {
+    inline def apply(): SnapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SnapOptions]
     }
     
-    @scala.inline
-    implicit class SnapOptionsMutableBuilder[Self <: SnapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SnapOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
   
@@ -168,32 +137,24 @@ object mod {
   }
   object SyncOptions {
     
-    @scala.inline
-    def apply(): SyncOptions = {
+    inline def apply(): SyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyncOptions]
     }
     
-    @scala.inline
-    implicit class SyncOptionsMutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SyncOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setSuppressTooltips(value: Boolean): Self = StObject.set(x, "suppressTooltips", value.asInstanceOf[js.Any])
+      inline def setSuppressTooltips(value: Boolean): Self = StObject.set(x, "suppressTooltips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressTooltipsUndefined: Self = StObject.set(x, "suppressTooltips", js.undefined)
+      inline def setSuppressTooltipsUndefined: Self = StObject.set(x, "suppressTooltips", js.undefined)
     }
   }
   
@@ -211,44 +172,32 @@ object mod {
   }
   object ZoomOptions {
     
-    @scala.inline
-    def apply(): ZoomOptions = {
+    inline def apply(): ZoomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZoomOptions]
     }
     
-    @scala.inline
-    implicit class ZoomOptionsMutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ZoomOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setZoomButtonClass(value: String): Self = StObject.set(x, "zoomButtonClass", value.asInstanceOf[js.Any])
+      inline def setZoomButtonClass(value: String): Self = StObject.set(x, "zoomButtonClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomButtonClassUndefined: Self = StObject.set(x, "zoomButtonClass", js.undefined)
+      inline def setZoomButtonClassUndefined: Self = StObject.set(x, "zoomButtonClass", js.undefined)
       
-      @scala.inline
-      def setZoomButtonText(value: String): Self = StObject.set(x, "zoomButtonText", value.asInstanceOf[js.Any])
+      inline def setZoomButtonText(value: String): Self = StObject.set(x, "zoomButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomButtonTextUndefined: Self = StObject.set(x, "zoomButtonText", js.undefined)
+      inline def setZoomButtonTextUndefined: Self = StObject.set(x, "zoomButtonText", js.undefined)
       
-      @scala.inline
-      def setZoomboxBackgroundColor(value: String): Self = StObject.set(x, "zoomboxBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setZoomboxBackgroundColor(value: String): Self = StObject.set(x, "zoomboxBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomboxBackgroundColorUndefined: Self = StObject.set(x, "zoomboxBackgroundColor", js.undefined)
+      inline def setZoomboxBackgroundColorUndefined: Self = StObject.set(x, "zoomboxBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setZoomboxBorderColor(value: String): Self = StObject.set(x, "zoomboxBorderColor", value.asInstanceOf[js.Any])
+      inline def setZoomboxBorderColor(value: String): Self = StObject.set(x, "zoomboxBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomboxBorderColorUndefined: Self = StObject.set(x, "zoomboxBorderColor", js.undefined)
+      inline def setZoomboxBorderColorUndefined: Self = StObject.set(x, "zoomboxBorderColor", js.undefined)
     }
   }
   
@@ -261,20 +210,16 @@ object mod {
     }
     object ChartDataSets {
       
-      @scala.inline
-      def apply(): ChartDataSets = {
+      inline def apply(): ChartDataSets = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ChartDataSets]
       }
       
-      @scala.inline
-      implicit class ChartDataSetsMutableBuilder[Self <: ChartDataSets] (val x: Self) extends AnyVal {
+      extension [Self <: ChartDataSets](x: Self) {
         
-        @scala.inline
-        def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+        inline def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+        inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
       }
     }
     
@@ -284,20 +229,16 @@ object mod {
     }
     object ChartPluginsOptions {
       
-      @scala.inline
-      def apply(): ChartPluginsOptions = {
+      inline def apply(): ChartPluginsOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ChartPluginsOptions]
       }
       
-      @scala.inline
-      implicit class ChartPluginsOptionsMutableBuilder[Self <: ChartPluginsOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ChartPluginsOptions](x: Self) {
         
-        @scala.inline
-        def setCrosshair(value: CrosshairOptions): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+        inline def setCrosshair(value: CrosshairOptions): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
+        inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
       }
     }
     
@@ -307,17 +248,14 @@ object mod {
     }
     object InteractionModeRegistry {
       
-      @scala.inline
-      def apply(): InteractionModeRegistry = {
+      inline def apply(): InteractionModeRegistry = {
         val __obj = js.Dynamic.literal(interpolate = "interpolate")
         __obj.asInstanceOf[InteractionModeRegistry]
       }
       
-      @scala.inline
-      implicit class InteractionModeRegistryMutableBuilder[Self <: InteractionModeRegistry] (val x: Self) extends AnyVal {
+      extension [Self <: InteractionModeRegistry](x: Self) {
         
-        @scala.inline
-        def setInterpolate(value: interpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+        inline def setInterpolate(value: interpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -333,17 +271,14 @@ object mod {
     }
     object Chart {
       
-      @scala.inline
-      def apply(panZoom: Double => Unit): Chart = {
+      inline def apply(panZoom: Double => Unit): Chart = {
         val __obj = js.Dynamic.literal(panZoom = js.Any.fromFunction1(panZoom))
         __obj.asInstanceOf[Chart]
       }
       
-      @scala.inline
-      implicit class ChartMutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
+      extension [Self <: Chart](x: Self) {
         
-        @scala.inline
-        def setPanZoom(value: Double => Unit): Self = StObject.set(x, "panZoom", js.Any.fromFunction1(value))
+        inline def setPanZoom(value: Double => Unit): Self = StObject.set(x, "panZoom", js.Any.fromFunction1(value))
       }
     }
   }

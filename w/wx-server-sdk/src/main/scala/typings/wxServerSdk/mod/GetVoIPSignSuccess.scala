@@ -10,16 +10,13 @@ trait GetVoIPSignSuccess extends StObject {
 }
 object GetVoIPSignSuccess {
   
-  @scala.inline
-  def apply(signature: String): GetVoIPSignSuccess = {
+  inline def apply(signature: String): GetVoIPSignSuccess = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVoIPSignSuccess]
   }
   
-  @scala.inline
-  implicit class GetVoIPSignSuccessMutableBuilder[Self <: GetVoIPSignSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoIPSignSuccess](x: Self) {
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

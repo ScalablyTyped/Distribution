@@ -73,121 +73,83 @@ trait DescribeSavingsPlansOfferingsRequest extends StObject {
 }
 object DescribeSavingsPlansOfferingsRequest {
   
-  @scala.inline
-  def apply(): DescribeSavingsPlansOfferingsRequest = {
+  inline def apply(): DescribeSavingsPlansOfferingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSavingsPlansOfferingsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSavingsPlansOfferingsRequestMutableBuilder[Self <: DescribeSavingsPlansOfferingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSavingsPlansOfferingsRequest](x: Self) {
     
-    @scala.inline
-    def setCurrencies(value: CurrencyList): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
+    inline def setCurrencies(value: CurrencyList): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrenciesUndefined: Self = StObject.set(x, "currencies", js.undefined)
+    inline def setCurrenciesUndefined: Self = StObject.set(x, "currencies", js.undefined)
     
-    @scala.inline
-    def setCurrenciesVarargs(value: CurrencyCode*): Self = StObject.set(x, "currencies", js.Array(value :_*))
+    inline def setCurrenciesVarargs(value: CurrencyCode*): Self = StObject.set(x, "currencies", js.Array(value :_*))
     
-    @scala.inline
-    def setDescriptions(value: SavingsPlanDescriptionsList): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+    inline def setDescriptions(value: SavingsPlanDescriptionsList): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
+    inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
-    @scala.inline
-    def setDescriptionsVarargs(value: SavingsPlanDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: SavingsPlanDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setDurations(value: DurationsList): Self = StObject.set(x, "durations", value.asInstanceOf[js.Any])
+    inline def setDurations(value: DurationsList): Self = StObject.set(x, "durations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationsUndefined: Self = StObject.set(x, "durations", js.undefined)
+    inline def setDurationsUndefined: Self = StObject.set(x, "durations", js.undefined)
     
-    @scala.inline
-    def setDurationsVarargs(value: SavingsPlansDuration*): Self = StObject.set(x, "durations", js.Array(value :_*))
+    inline def setDurationsVarargs(value: SavingsPlansDuration*): Self = StObject.set(x, "durations", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: SavingsPlanOfferingFiltersList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: SavingsPlanOfferingFiltersList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: SavingsPlanOfferingFilterElement*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SavingsPlanOfferingFilterElement*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOfferingIds(value: UUIDs): Self = StObject.set(x, "offeringIds", value.asInstanceOf[js.Any])
+    inline def setOfferingIds(value: UUIDs): Self = StObject.set(x, "offeringIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingIdsUndefined: Self = StObject.set(x, "offeringIds", js.undefined)
+    inline def setOfferingIdsUndefined: Self = StObject.set(x, "offeringIds", js.undefined)
     
-    @scala.inline
-    def setOfferingIdsVarargs(value: UUID*): Self = StObject.set(x, "offeringIds", js.Array(value :_*))
+    inline def setOfferingIdsVarargs(value: UUID*): Self = StObject.set(x, "offeringIds", js.Array(value :_*))
     
-    @scala.inline
-    def setOperations(value: SavingsPlanOperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: SavingsPlanOperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: SavingsPlanOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: SavingsPlanOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
-    @scala.inline
-    def setPaymentOptions(value: SavingsPlanPaymentOptionList): Self = StObject.set(x, "paymentOptions", value.asInstanceOf[js.Any])
+    inline def setPaymentOptions(value: SavingsPlanPaymentOptionList): Self = StObject.set(x, "paymentOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentOptionsUndefined: Self = StObject.set(x, "paymentOptions", js.undefined)
+    inline def setPaymentOptionsUndefined: Self = StObject.set(x, "paymentOptions", js.undefined)
     
-    @scala.inline
-    def setPaymentOptionsVarargs(value: SavingsPlanPaymentOption*): Self = StObject.set(x, "paymentOptions", js.Array(value :_*))
+    inline def setPaymentOptionsVarargs(value: SavingsPlanPaymentOption*): Self = StObject.set(x, "paymentOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setPlanTypes(value: SavingsPlanTypeList): Self = StObject.set(x, "planTypes", value.asInstanceOf[js.Any])
+    inline def setPlanTypes(value: SavingsPlanTypeList): Self = StObject.set(x, "planTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanTypesUndefined: Self = StObject.set(x, "planTypes", js.undefined)
+    inline def setPlanTypesUndefined: Self = StObject.set(x, "planTypes", js.undefined)
     
-    @scala.inline
-    def setPlanTypesVarargs(value: SavingsPlanType*): Self = StObject.set(x, "planTypes", js.Array(value :_*))
+    inline def setPlanTypesVarargs(value: SavingsPlanType*): Self = StObject.set(x, "planTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setProductType(value: SavingsPlanProductType): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
+    inline def setProductType(value: SavingsPlanProductType): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductTypeUndefined: Self = StObject.set(x, "productType", js.undefined)
+    inline def setProductTypeUndefined: Self = StObject.set(x, "productType", js.undefined)
     
-    @scala.inline
-    def setServiceCodes(value: SavingsPlanServiceCodeList): Self = StObject.set(x, "serviceCodes", value.asInstanceOf[js.Any])
+    inline def setServiceCodes(value: SavingsPlanServiceCodeList): Self = StObject.set(x, "serviceCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCodesUndefined: Self = StObject.set(x, "serviceCodes", js.undefined)
+    inline def setServiceCodesUndefined: Self = StObject.set(x, "serviceCodes", js.undefined)
     
-    @scala.inline
-    def setServiceCodesVarargs(value: SavingsPlanServiceCode*): Self = StObject.set(x, "serviceCodes", js.Array(value :_*))
+    inline def setServiceCodesVarargs(value: SavingsPlanServiceCode*): Self = StObject.set(x, "serviceCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setUsageTypes(value: SavingsPlanUsageTypeList): Self = StObject.set(x, "usageTypes", value.asInstanceOf[js.Any])
+    inline def setUsageTypes(value: SavingsPlanUsageTypeList): Self = StObject.set(x, "usageTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageTypesUndefined: Self = StObject.set(x, "usageTypes", js.undefined)
+    inline def setUsageTypesUndefined: Self = StObject.set(x, "usageTypes", js.undefined)
     
-    @scala.inline
-    def setUsageTypesVarargs(value: SavingsPlanUsageType*): Self = StObject.set(x, "usageTypes", js.Array(value :_*))
+    inline def setUsageTypesVarargs(value: SavingsPlanUsageType*): Self = StObject.set(x, "usageTypes", js.Array(value :_*))
   }
 }

@@ -12,13 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def apply(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
-  @scala.inline
-  def apply(logger: Logger, options: LoglevelPluginPrefixOptions): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Logger]
+  inline def apply(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def apply(logger: Logger, options: LoglevelPluginPrefixOptions): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Logger]
   
-  @scala.inline
-  def reg(loglevel: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reg")(loglevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def reg(loglevel: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reg")(loglevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait LoglevelPluginPrefixOptions extends StObject {
     
@@ -41,46 +38,34 @@ object mod {
   }
   object LoglevelPluginPrefixOptions {
     
-    @scala.inline
-    def apply(): LoglevelPluginPrefixOptions = {
+    inline def apply(): LoglevelPluginPrefixOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoglevelPluginPrefixOptions]
     }
     
-    @scala.inline
-    implicit class LoglevelPluginPrefixOptionsMutableBuilder[Self <: LoglevelPluginPrefixOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoglevelPluginPrefixOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(
+      inline def setFormat(
         value: (/* level */ String, /* name */ js.UndefOr[String], /* timestamp */ Date) => js.UndefOr[String]
       ): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setLevelFormatter(value: /* level */ String => String): Self = StObject.set(x, "levelFormatter", js.Any.fromFunction1(value))
+      inline def setLevelFormatter(value: /* level */ String => String): Self = StObject.set(x, "levelFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLevelFormatterUndefined: Self = StObject.set(x, "levelFormatter", js.undefined)
+      inline def setLevelFormatterUndefined: Self = StObject.set(x, "levelFormatter", js.undefined)
       
-      @scala.inline
-      def setNameFormatter(value: /* name */ js.UndefOr[String] => String): Self = StObject.set(x, "nameFormatter", js.Any.fromFunction1(value))
+      inline def setNameFormatter(value: /* name */ js.UndefOr[String] => String): Self = StObject.set(x, "nameFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNameFormatterUndefined: Self = StObject.set(x, "nameFormatter", js.undefined)
+      inline def setNameFormatterUndefined: Self = StObject.set(x, "nameFormatter", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTimestampFormatter(value: /* date */ Date => String): Self = StObject.set(x, "timestampFormatter", js.Any.fromFunction1(value))
+      inline def setTimestampFormatter(value: /* date */ Date => String): Self = StObject.set(x, "timestampFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimestampFormatterUndefined: Self = StObject.set(x, "timestampFormatter", js.undefined)
+      inline def setTimestampFormatterUndefined: Self = StObject.set(x, "timestampFormatter", js.undefined)
     }
   }
 }

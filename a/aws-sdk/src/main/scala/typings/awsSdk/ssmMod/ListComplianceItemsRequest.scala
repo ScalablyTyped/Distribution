@@ -33,52 +33,37 @@ trait ListComplianceItemsRequest extends StObject {
 }
 object ListComplianceItemsRequest {
   
-  @scala.inline
-  def apply(): ListComplianceItemsRequest = {
+  inline def apply(): ListComplianceItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListComplianceItemsRequest]
   }
   
-  @scala.inline
-  implicit class ListComplianceItemsRequestMutableBuilder[Self <: ListComplianceItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListComplianceItemsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: ComplianceStringFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ComplianceStringFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: ComplianceStringFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ComplianceStringFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceIds(value: ComplianceResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: ComplianceResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
+    inline def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
     
-    @scala.inline
-    def setResourceIdsVarargs(value: ComplianceResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: ComplianceResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceTypes(value: ComplianceResourceTypeList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: ComplianceResourceTypeList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: ComplianceResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ComplianceResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
   }
 }

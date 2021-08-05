@@ -29,31 +29,23 @@ trait ParamsResourceQueriesRunquery
 }
 object ParamsResourceQueriesRunquery {
   
-  @scala.inline
-  def apply(): ParamsResourceQueriesRunquery = {
+  inline def apply(): ParamsResourceQueriesRunquery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceQueriesRunquery]
   }
   
-  @scala.inline
-  implicit class ParamsResourceQueriesRunqueryMutableBuilder[Self <: ParamsResourceQueriesRunquery] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceQueriesRunquery](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setQueryId(value: String): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
+    inline def setQueryId(value: String): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryIdUndefined: Self = StObject.set(x, "queryId", js.undefined)
+    inline def setQueryIdUndefined: Self = StObject.set(x, "queryId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaRunQueryRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaRunQueryRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

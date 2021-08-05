@@ -13,16 +13,13 @@ trait TransactGetItem extends StObject {
 }
 object TransactGetItem {
   
-  @scala.inline
-  def apply(Get: Get): TransactGetItem = {
+  inline def apply(Get: Get): TransactGetItem = {
     val __obj = js.Dynamic.literal(Get = Get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactGetItem]
   }
   
-  @scala.inline
-  implicit class TransactGetItemMutableBuilder[Self <: TransactGetItem] (val x: Self) extends AnyVal {
+  extension [Self <: TransactGetItem](x: Self) {
     
-    @scala.inline
-    def setGet(value: Get): Self = StObject.set(x, "Get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Get): Self = StObject.set(x, "Get", value.asInstanceOf[js.Any])
   }
 }

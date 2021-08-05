@@ -23,25 +23,19 @@ trait RecordColumn extends StObject {
 }
 object RecordColumn {
   
-  @scala.inline
-  def apply(Name: RecordColumnName, SqlType: RecordColumnSqlType): RecordColumn = {
+  inline def apply(Name: RecordColumnName, SqlType: RecordColumnSqlType): RecordColumn = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SqlType = SqlType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordColumn]
   }
   
-  @scala.inline
-  implicit class RecordColumnMutableBuilder[Self <: RecordColumn] (val x: Self) extends AnyVal {
+  extension [Self <: RecordColumn](x: Self) {
     
-    @scala.inline
-    def setMapping(value: RecordColumnMapping): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: RecordColumnMapping): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "Mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "Mapping", js.undefined)
     
-    @scala.inline
-    def setName(value: RecordColumnName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecordColumnName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlType(value: RecordColumnSqlType): Self = StObject.set(x, "SqlType", value.asInstanceOf[js.Any])
+    inline def setSqlType(value: RecordColumnSqlType): Self = StObject.set(x, "SqlType", value.asInstanceOf[js.Any])
   }
 }

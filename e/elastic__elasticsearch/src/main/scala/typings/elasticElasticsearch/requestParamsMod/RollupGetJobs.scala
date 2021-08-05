@@ -12,19 +12,15 @@ trait RollupGetJobs
 }
 object RollupGetJobs {
   
-  @scala.inline
-  def apply(): RollupGetJobs = {
+  inline def apply(): RollupGetJobs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RollupGetJobs]
   }
   
-  @scala.inline
-  implicit class RollupGetJobsMutableBuilder[Self <: RollupGetJobs] (val x: Self) extends AnyVal {
+  extension [Self <: RollupGetJobs](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

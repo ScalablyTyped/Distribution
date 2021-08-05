@@ -23,49 +23,35 @@ trait SchemaGooglePrivacyDlpV2PrivacyMetric extends StObject {
 }
 object SchemaGooglePrivacyDlpV2PrivacyMetric {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2PrivacyMetric = {
+  inline def apply(): SchemaGooglePrivacyDlpV2PrivacyMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2PrivacyMetric]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2PrivacyMetricMutableBuilder[Self <: SchemaGooglePrivacyDlpV2PrivacyMetric] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2PrivacyMetric](x: Self) {
     
-    @scala.inline
-    def setCategoricalStatsConfig(value: SchemaGooglePrivacyDlpV2CategoricalStatsConfig): Self = StObject.set(x, "categoricalStatsConfig", value.asInstanceOf[js.Any])
+    inline def setCategoricalStatsConfig(value: SchemaGooglePrivacyDlpV2CategoricalStatsConfig): Self = StObject.set(x, "categoricalStatsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoricalStatsConfigUndefined: Self = StObject.set(x, "categoricalStatsConfig", js.undefined)
+    inline def setCategoricalStatsConfigUndefined: Self = StObject.set(x, "categoricalStatsConfig", js.undefined)
     
-    @scala.inline
-    def setDeltaPresenceEstimationConfig(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig): Self = StObject.set(x, "deltaPresenceEstimationConfig", value.asInstanceOf[js.Any])
+    inline def setDeltaPresenceEstimationConfig(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig): Self = StObject.set(x, "deltaPresenceEstimationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaPresenceEstimationConfigUndefined: Self = StObject.set(x, "deltaPresenceEstimationConfig", js.undefined)
+    inline def setDeltaPresenceEstimationConfigUndefined: Self = StObject.set(x, "deltaPresenceEstimationConfig", js.undefined)
     
-    @scala.inline
-    def setKAnonymityConfig(value: SchemaGooglePrivacyDlpV2KAnonymityConfig): Self = StObject.set(x, "kAnonymityConfig", value.asInstanceOf[js.Any])
+    inline def setKAnonymityConfig(value: SchemaGooglePrivacyDlpV2KAnonymityConfig): Self = StObject.set(x, "kAnonymityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKAnonymityConfigUndefined: Self = StObject.set(x, "kAnonymityConfig", js.undefined)
+    inline def setKAnonymityConfigUndefined: Self = StObject.set(x, "kAnonymityConfig", js.undefined)
     
-    @scala.inline
-    def setKMapEstimationConfig(value: SchemaGooglePrivacyDlpV2KMapEstimationConfig): Self = StObject.set(x, "kMapEstimationConfig", value.asInstanceOf[js.Any])
+    inline def setKMapEstimationConfig(value: SchemaGooglePrivacyDlpV2KMapEstimationConfig): Self = StObject.set(x, "kMapEstimationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMapEstimationConfigUndefined: Self = StObject.set(x, "kMapEstimationConfig", js.undefined)
+    inline def setKMapEstimationConfigUndefined: Self = StObject.set(x, "kMapEstimationConfig", js.undefined)
     
-    @scala.inline
-    def setLDiversityConfig(value: SchemaGooglePrivacyDlpV2LDiversityConfig): Self = StObject.set(x, "lDiversityConfig", value.asInstanceOf[js.Any])
+    inline def setLDiversityConfig(value: SchemaGooglePrivacyDlpV2LDiversityConfig): Self = StObject.set(x, "lDiversityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLDiversityConfigUndefined: Self = StObject.set(x, "lDiversityConfig", js.undefined)
+    inline def setLDiversityConfigUndefined: Self = StObject.set(x, "lDiversityConfig", js.undefined)
     
-    @scala.inline
-    def setNumericalStatsConfig(value: SchemaGooglePrivacyDlpV2NumericalStatsConfig): Self = StObject.set(x, "numericalStatsConfig", value.asInstanceOf[js.Any])
+    inline def setNumericalStatsConfig(value: SchemaGooglePrivacyDlpV2NumericalStatsConfig): Self = StObject.set(x, "numericalStatsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericalStatsConfigUndefined: Self = StObject.set(x, "numericalStatsConfig", js.undefined)
+    inline def setNumericalStatsConfigUndefined: Self = StObject.set(x, "numericalStatsConfig", js.undefined)
   }
 }

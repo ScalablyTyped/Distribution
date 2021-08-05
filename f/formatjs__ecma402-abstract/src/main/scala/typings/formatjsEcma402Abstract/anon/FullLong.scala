@@ -17,25 +17,19 @@ trait FullLong extends StObject {
 }
 object FullLong {
   
-  @scala.inline
-  def apply(full: Formats, long: Formats, medium: Formats, short: Formats): FullLong = {
+  inline def apply(full: Formats, long: Formats, medium: Formats, short: Formats): FullLong = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullLong]
   }
   
-  @scala.inline
-  implicit class FullLongMutableBuilder[Self <: FullLong] (val x: Self) extends AnyVal {
+  extension [Self <: FullLong](x: Self) {
     
-    @scala.inline
-    def setFull(value: Formats): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Formats): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLong(value: Formats): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: Formats): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedium(value: Formats): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: Formats): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: Formats): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: Formats): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

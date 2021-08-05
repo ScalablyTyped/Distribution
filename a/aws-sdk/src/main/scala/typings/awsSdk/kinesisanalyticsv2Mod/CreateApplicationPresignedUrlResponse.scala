@@ -13,19 +13,15 @@ trait CreateApplicationPresignedUrlResponse extends StObject {
 }
 object CreateApplicationPresignedUrlResponse {
   
-  @scala.inline
-  def apply(): CreateApplicationPresignedUrlResponse = {
+  inline def apply(): CreateApplicationPresignedUrlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateApplicationPresignedUrlResponse]
   }
   
-  @scala.inline
-  implicit class CreateApplicationPresignedUrlResponseMutableBuilder[Self <: CreateApplicationPresignedUrlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateApplicationPresignedUrlResponse](x: Self) {
     
-    @scala.inline
-    def setAuthorizedUrl(value: AuthorizedUrl): Self = StObject.set(x, "AuthorizedUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizedUrl(value: AuthorizedUrl): Self = StObject.set(x, "AuthorizedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedUrlUndefined: Self = StObject.set(x, "AuthorizedUrl", js.undefined)
+    inline def setAuthorizedUrlUndefined: Self = StObject.set(x, "AuthorizedUrl", js.undefined)
   }
 }

@@ -36,23 +36,18 @@ trait WorkerHealthReport extends StObject {
 }
 object WorkerHealthReport {
   
-  @scala.inline
-  def apply(): WorkerHealthReport = {
+  inline def apply(): WorkerHealthReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerHealthReport]
   }
   
-  @scala.inline
-  implicit class WorkerHealthReportMutableBuilder[Self <: WorkerHealthReport] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerHealthReport](x: Self) {
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+    inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
-    @scala.inline
-    def setPods(
+    inline def setPods(
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
@@ -60,38 +55,28 @@ object WorkerHealthReport {
         ]
     ): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
+    inline def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)
     
-    @scala.inline
-    def setPodsVarargs(
+    inline def setPodsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerHealthReport & TopLevel[js.Any])*
     ): Self = StObject.set(x, "pods", js.Array(value :_*))
     
-    @scala.inline
-    def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
+    inline def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
+    inline def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
     
-    @scala.inline
-    def setVmIsBroken(value: Boolean): Self = StObject.set(x, "vmIsBroken", value.asInstanceOf[js.Any])
+    inline def setVmIsBroken(value: Boolean): Self = StObject.set(x, "vmIsBroken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIsBrokenUndefined: Self = StObject.set(x, "vmIsBroken", js.undefined)
+    inline def setVmIsBrokenUndefined: Self = StObject.set(x, "vmIsBroken", js.undefined)
     
-    @scala.inline
-    def setVmIsHealthy(value: Boolean): Self = StObject.set(x, "vmIsHealthy", value.asInstanceOf[js.Any])
+    inline def setVmIsHealthy(value: Boolean): Self = StObject.set(x, "vmIsHealthy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIsHealthyUndefined: Self = StObject.set(x, "vmIsHealthy", js.undefined)
+    inline def setVmIsHealthyUndefined: Self = StObject.set(x, "vmIsHealthy", js.undefined)
     
-    @scala.inline
-    def setVmStartupTime(value: String): Self = StObject.set(x, "vmStartupTime", value.asInstanceOf[js.Any])
+    inline def setVmStartupTime(value: String): Self = StObject.set(x, "vmStartupTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmStartupTimeUndefined: Self = StObject.set(x, "vmStartupTime", js.undefined)
+    inline def setVmStartupTimeUndefined: Self = StObject.set(x, "vmStartupTime", js.undefined)
   }
 }

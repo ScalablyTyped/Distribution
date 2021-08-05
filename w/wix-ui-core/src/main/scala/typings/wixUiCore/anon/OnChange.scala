@@ -10,16 +10,13 @@ trait OnChange extends StObject {
 }
 object OnChange {
   
-  @scala.inline
-  def apply(onChange: js.Any => String): OnChange = {
+  inline def apply(onChange: js.Any => String): OnChange = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[OnChange]
   }
   
-  @scala.inline
-  implicit class OnChangeMutableBuilder[Self <: OnChange] (val x: Self) extends AnyVal {
+  extension [Self <: OnChange](x: Self) {
     
-    @scala.inline
-    def setOnChange(value: js.Any => String): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: js.Any => String): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
   }
 }

@@ -14,25 +14,19 @@ trait PageviewData extends StObject {
 }
 object PageviewData {
   
-  @scala.inline
-  def apply(): PageviewData = {
+  inline def apply(): PageviewData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageviewData]
   }
   
-  @scala.inline
-  implicit class PageviewDataMutableBuilder[Self <: PageviewData] (val x: Self) extends AnyVal {
+  extension [Self <: PageviewData](x: Self) {
     
-    @scala.inline
-    def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
+    inline def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagePathUndefined: Self = StObject.set(x, "pagePath", js.undefined)
+    inline def setPagePathUndefined: Self = StObject.set(x, "pagePath", js.undefined)
     
-    @scala.inline
-    def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
+    inline def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
+    inline def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
   }
 }

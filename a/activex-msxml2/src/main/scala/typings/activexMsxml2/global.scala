@@ -20,18 +20,18 @@ object global {
     /** W3C-DOM XML Document 6.0 (Apartment) */
     @JSGlobal("MSXML2.DOMDocument60")
     @js.native
-    class DOMDocument60 protected ()
+    /* private */ class DOMDocument60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.DOMDocument60
     
     /** W3C-DOM XML Document 6.0 (Free threaded) */
     @JSGlobal("MSXML2.FreeThreadedDOMDocument60")
     @js.native
-    class FreeThreadedDOMDocument60 protected ()
+    /* private */ class FreeThreadedDOMDocument60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.FreeThreadedDOMDocument60 {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.FreeThreadedDOMDocument60_typekey")
       var MSXML2DotFreeThreadedDOMDocument60_typekey: typings.activexMsxml2.MSXML2.FreeThreadedDOMDocument60 = js.native
       
@@ -323,14 +323,14 @@ object global {
     /** Free Threaded XML HTTP Request class 6.0 */
     @JSGlobal("MSXML2.FreeThreadedXMLHTTP60")
     @js.native
-    class FreeThreadedXMLHTTP60 protected ()
+    /* private */ class FreeThreadedXMLHTTP60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.FreeThreadedXMLHTTP60 {
       
       /* CompleteClass */
       override def GetCookie(pwszUrl: String, pwszName: String, dwFlags: Double, pcCookies: Double, ppCookies: tagXHRCOOKIE): Unit = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.FreeThreadedXMLHTTP60_typekey")
       var MSXML2DotFreeThreadedXMLHTTP60_typekey: typings.activexMsxml2.MSXML2.FreeThreadedXMLHTTP60 = js.native
       
@@ -373,11 +373,11 @@ object global {
     /** XML Schema */
     @JSGlobal("MSXML2.ISchema")
     @js.native
-    class ISchema protected ()
+    /* private */ class ISchema ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ISchema {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.ISchema_typekey")
       var MSXML2DotISchema_typekey: typings.activexMsxml2.MSXML2.ISchema = js.native
       
@@ -454,11 +454,11 @@ object global {
     /** XML Schema Item */
     @JSGlobal("MSXML2.ISchemaItem")
     @js.native
-    class ISchemaItem protected ()
+    /* private */ class ISchemaItem ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ISchemaItem {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.ISchemaItem_typekey")
       var MSXML2DotISchemaItem_typekey: typings.activexMsxml2.MSXML2.ISchemaItem = js.native
       
@@ -486,11 +486,11 @@ object global {
     
     @JSGlobal("MSXML2.ISequentialStream")
     @js.native
-    class ISequentialStream protected ()
+    /* private */ class ISequentialStream ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ISequentialStream {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.ISequentialStream_typekey")
       var MSXML2DotISequentialStream_typekey: typings.activexMsxml2.MSXML2.ISequentialStream = js.native
       
@@ -504,11 +504,11 @@ object global {
     /** IVBSAXAttributes interface */
     @JSGlobal("MSXML2.IVBSAXAttributes")
     @js.native
-    class IVBSAXAttributes protected ()
+    /* private */ class IVBSAXAttributes ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXAttributes {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IVBSAXAttributes_typekey")
       var MSXML2DotIVBSAXAttributes_typekey: typings.activexMsxml2.MSXML2.IVBSAXAttributes = js.native
       
@@ -564,11 +564,11 @@ object global {
     /** IVBSAXContentHandler interface */
     @JSGlobal("MSXML2.IVBSAXContentHandler")
     @js.native
-    class IVBSAXContentHandler protected ()
+    /* private */ class IVBSAXContentHandler ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXContentHandler {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IVBSAXContentHandler_typekey")
       var MSXML2DotIVBSAXContentHandler_typekey: typings.activexMsxml2.MSXML2.IVBSAXContentHandler = js.native
       
@@ -625,11 +625,11 @@ object global {
     /** IVBSAXDTDHandler interface */
     @JSGlobal("MSXML2.IVBSAXDTDHandler")
     @js.native
-    class IVBSAXDTDHandler protected ()
+    /* private */ class IVBSAXDTDHandler ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXDTDHandler {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IVBSAXDTDHandler_typekey")
       var MSXML2DotIVBSAXDTDHandler_typekey: typings.activexMsxml2.MSXML2.IVBSAXDTDHandler = js.native
       
@@ -645,11 +645,11 @@ object global {
     /** IVBSAXEntityResolver interface */
     @JSGlobal("MSXML2.IVBSAXEntityResolver")
     @js.native
-    class IVBSAXEntityResolver protected ()
+    /* private */ class IVBSAXEntityResolver ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXEntityResolver {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IVBSAXEntityResolver_typekey")
       var MSXML2DotIVBSAXEntityResolver_typekey: typings.activexMsxml2.MSXML2.IVBSAXEntityResolver = js.native
       
@@ -661,11 +661,11 @@ object global {
     /** IVBSAXErrorHandler interface */
     @JSGlobal("MSXML2.IVBSAXErrorHandler")
     @js.native
-    class IVBSAXErrorHandler protected ()
+    /* private */ class IVBSAXErrorHandler ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXErrorHandler {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IVBSAXErrorHandler_typekey")
       var MSXML2DotIVBSAXErrorHandler_typekey: typings.activexMsxml2.MSXML2.IVBSAXErrorHandler = js.native
       
@@ -685,11 +685,11 @@ object global {
     /** IVBSAXLocator interface */
     @JSGlobal("MSXML2.IVBSAXLocator")
     @js.native
-    class IVBSAXLocator protected ()
+    /* private */ class IVBSAXLocator ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXLocator {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IVBSAXLocator_typekey")
       var MSXML2DotIVBSAXLocator_typekey: typings.activexMsxml2.MSXML2.IVBSAXLocator = js.native
       
@@ -712,11 +712,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMAttribute")
     @js.native
-    class IXMLDOMAttribute protected ()
+    /* private */ class IXMLDOMAttribute ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMAttribute {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMAttribute_typekey")
       var MSXML2DotIXMLDOMAttribute_typekey: typings.activexMsxml2.MSXML2.IXMLDOMAttribute = js.native
       
@@ -870,11 +870,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMCDATASection")
     @js.native
-    class IXMLDOMCDATASection protected ()
+    /* private */ class IXMLDOMCDATASection ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMCDATASection {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMCDATASection_typekey")
       var MSXML2DotIXMLDOMCDATASection_typekey: typings.activexMsxml2.MSXML2.IXMLDOMCDATASection = js.native
       
@@ -1052,11 +1052,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMComment")
     @js.native
-    class IXMLDOMComment protected ()
+    /* private */ class IXMLDOMComment ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMComment {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMComment_typekey")
       var MSXML2DotIXMLDOMComment_typekey: typings.activexMsxml2.MSXML2.IXMLDOMComment = js.native
       
@@ -1230,11 +1230,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMDocument")
     @js.native
-    class IXMLDOMDocument protected ()
+    /* private */ class IXMLDOMDocument ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMDocument {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMDocument_typekey")
       var MSXML2DotIXMLDOMDocument_typekey: typings.activexMsxml2.MSXML2.IXMLDOMDocument = js.native
       
@@ -1492,11 +1492,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMDocumentFragment")
     @js.native
-    class IXMLDOMDocumentFragment protected ()
+    /* private */ class IXMLDOMDocumentFragment ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMDocumentFragment {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMDocumentFragment_typekey")
       var MSXML2DotIXMLDOMDocumentFragment_typekey: typings.activexMsxml2.MSXML2.IXMLDOMDocumentFragment = js.native
       
@@ -1642,11 +1642,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMDocumentType")
     @js.native
-    class IXMLDOMDocumentType protected ()
+    /* private */ class IXMLDOMDocumentType ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMDocumentType {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMDocumentType_typekey")
       var MSXML2DotIXMLDOMDocumentType_typekey: typings.activexMsxml2.MSXML2.IXMLDOMDocumentType = js.native
       
@@ -1814,11 +1814,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMElement")
     @js.native
-    class IXMLDOMElement protected ()
+    /* private */ class IXMLDOMElement ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMElement {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMElement_typekey")
       var MSXML2DotIXMLDOMElement_typekey: typings.activexMsxml2.MSXML2.IXMLDOMElement = js.native
       
@@ -2000,11 +2000,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMEntityReference")
     @js.native
-    class IXMLDOMEntityReference protected ()
+    /* private */ class IXMLDOMEntityReference ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMEntityReference {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMEntityReference_typekey")
       var MSXML2DotIXMLDOMEntityReference_typekey: typings.activexMsxml2.MSXML2.IXMLDOMEntityReference = js.native
       
@@ -2150,11 +2150,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMImplementation")
     @js.native
-    class IXMLDOMImplementation protected ()
+    /* private */ class IXMLDOMImplementation ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMImplementation {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMImplementation_typekey")
       var MSXML2DotIXMLDOMImplementation_typekey: typings.activexMsxml2.MSXML2.IXMLDOMImplementation = js.native
       
@@ -2165,11 +2165,11 @@ object global {
     /** Core DOM node interface */
     @JSGlobal("MSXML2.IXMLDOMNode")
     @js.native
-    class IXMLDOMNode protected ()
+    /* private */ class IXMLDOMNode ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMNode {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMNode_typekey")
       var MSXML2DotIXMLDOMNode_typekey: typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
@@ -2316,11 +2316,11 @@ object global {
     /** structure for reporting parser errors */
     @JSGlobal("MSXML2.IXMLDOMParseError")
     @js.native
-    class IXMLDOMParseError protected ()
+    /* private */ class IXMLDOMParseError ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMParseError {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMParseError_typekey")
       var MSXML2DotIXMLDOMParseError_typekey: typings.activexMsxml2.MSXML2.IXMLDOMParseError = js.native
       
@@ -2355,11 +2355,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMProcessingInstruction")
     @js.native
-    class IXMLDOMProcessingInstruction protected ()
+    /* private */ class IXMLDOMProcessingInstruction ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMProcessingInstruction {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMProcessingInstruction_typekey")
       var MSXML2DotIXMLDOMProcessingInstruction_typekey: typings.activexMsxml2.MSXML2.IXMLDOMProcessingInstruction = js.native
       
@@ -2513,11 +2513,11 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMText")
     @js.native
-    class IXMLDOMText protected ()
+    /* private */ class IXMLDOMText ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMText {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLDOMText_typekey")
       var MSXML2DotIXMLDOMText_typekey: typings.activexMsxml2.MSXML2.IXMLDOMText = js.native
       
@@ -2696,11 +2696,11 @@ object global {
     /** IXMLHTTPRequest2Callback Interface */
     @JSGlobal("MSXML2.IXMLHTTPRequest2Callback")
     @js.native
-    class IXMLHTTPRequest2Callback protected ()
+    /* private */ class IXMLHTTPRequest2Callback ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLHTTPRequest2Callback {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.IXMLHTTPRequest2Callback_typekey")
       var MSXML2DotIXMLHTTPRequest2Callback_typekey: typings.activexMsxml2.MSXML2.IXMLHTTPRequest2Callback = js.native
       
@@ -2729,18 +2729,18 @@ object global {
     /** IXSLProcessor Interface */
     @JSGlobal("MSXML2.IXSLProcessor")
     @js.native
-    class IXSLProcessor protected ()
+    /* private */ class IXSLProcessor ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXSLProcessor
     
     /** Microsoft HTML Writer 6.0 */
     @JSGlobal("MSXML2.MXHTMLWriter60")
     @js.native
-    class MXHTMLWriter60 protected ()
+    /* private */ class MXHTMLWriter60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.MXHTMLWriter60 {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.MXHTMLWriter60_typekey")
       var MSXML2DotMXHTMLWriter60_typekey: typings.activexMsxml2.MSXML2.MXHTMLWriter60 = js.native
       
@@ -2784,18 +2784,18 @@ object global {
     /** MX Namespace Manager 6.0 */
     @JSGlobal("MSXML2.MXNamespaceManager60")
     @js.native
-    class MXNamespaceManager60 protected ()
+    /* private */ class MXNamespaceManager60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.MXNamespaceManager60
     
     /** Microsoft XML Writer 6.0 */
     @JSGlobal("MSXML2.MXXMLWriter60")
     @js.native
-    class MXXMLWriter60 protected ()
+    /* private */ class MXXMLWriter60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.MXXMLWriter60 {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.MXXMLWriter60_typekey")
       var MSXML2DotMXXMLWriter60_typekey: typings.activexMsxml2.MSXML2.MXXMLWriter60 = js.native
       
@@ -2839,11 +2839,11 @@ object global {
     /** SAX Attributes 6.0 */
     @JSGlobal("MSXML2.SAXAttributes60")
     @js.native
-    class SAXAttributes60 protected ()
+    /* private */ class SAXAttributes60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.SAXAttributes60 {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.SAXAttributes60_typekey")
       var MSXML2DotSAXAttributes60_typekey: typings.activexMsxml2.MSXML2.SAXAttributes60 = js.native
       
@@ -2902,32 +2902,32 @@ object global {
     /** SAX XML Reader 6.0 */
     @JSGlobal("MSXML2.SAXXMLReader60")
     @js.native
-    class SAXXMLReader60 protected ()
+    /* private */ class SAXXMLReader60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.SAXXMLReader60
     
     /** Server XML HTTP Request 6.0  */
     @JSGlobal("MSXML2.ServerXMLHTTP60")
     @js.native
-    class ServerXMLHTTP60 protected ()
+    /* private */ class ServerXMLHTTP60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ServerXMLHTTP60
     
     /** XML HTTP Request class 6.0 */
     @JSGlobal("MSXML2.XMLHTTP60")
     @js.native
-    class XMLHTTP60 protected ()
+    /* private */ class XMLHTTP60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.XMLHTTP60
     
     /** XSL Stylesheet Cache 6.0 */
     @JSGlobal("MSXML2.XSLTemplate60")
     @js.native
-    class XSLTemplate60 protected ()
+    /* private */ class XSLTemplate60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.XSLTemplate60 {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSXML2.XSLTemplate60_typekey")
       var MSXML2DotXSLTemplate60_typekey: typings.activexMsxml2.MSXML2.XSLTemplate60 = js.native
       

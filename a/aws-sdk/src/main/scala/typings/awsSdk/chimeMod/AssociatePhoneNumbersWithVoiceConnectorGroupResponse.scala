@@ -13,22 +13,17 @@ trait AssociatePhoneNumbersWithVoiceConnectorGroupResponse extends StObject {
 }
 object AssociatePhoneNumbersWithVoiceConnectorGroupResponse {
   
-  @scala.inline
-  def apply(): AssociatePhoneNumbersWithVoiceConnectorGroupResponse = {
+  inline def apply(): AssociatePhoneNumbersWithVoiceConnectorGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociatePhoneNumbersWithVoiceConnectorGroupResponse]
   }
   
-  @scala.inline
-  implicit class AssociatePhoneNumbersWithVoiceConnectorGroupResponseMutableBuilder[Self <: AssociatePhoneNumbersWithVoiceConnectorGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociatePhoneNumbersWithVoiceConnectorGroupResponse](x: Self) {
     
-    @scala.inline
-    def setPhoneNumberErrors(value: PhoneNumberErrorList): Self = StObject.set(x, "PhoneNumberErrors", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberErrors(value: PhoneNumberErrorList): Self = StObject.set(x, "PhoneNumberErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberErrorsUndefined: Self = StObject.set(x, "PhoneNumberErrors", js.undefined)
+    inline def setPhoneNumberErrorsUndefined: Self = StObject.set(x, "PhoneNumberErrors", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberErrorsVarargs(value: PhoneNumberError*): Self = StObject.set(x, "PhoneNumberErrors", js.Array(value :_*))
+    inline def setPhoneNumberErrorsVarargs(value: PhoneNumberError*): Self = StObject.set(x, "PhoneNumberErrors", js.Array(value :_*))
   }
 }

@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Win32LobAppFileSystemOperationType extends StObject
 object Win32LobAppFileSystemOperationType {
   
-  @scala.inline
-  def createdDate: typings.microsoftGraph.microsoftGraphStrings.createdDate = "createdDate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.createdDate]
+  inline def createdDate: typings.microsoftGraph.microsoftGraphStrings.createdDate = "createdDate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.createdDate]
   
-  @scala.inline
-  def exists: typings.microsoftGraph.microsoftGraphStrings.exists = "exists".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exists]
+  inline def exists: typings.microsoftGraph.microsoftGraphStrings.exists = "exists".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exists]
   
-  @scala.inline
-  def modifiedDate: typings.microsoftGraph.microsoftGraphStrings.modifiedDate = "modifiedDate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modifiedDate]
+  inline def modifiedDate: typings.microsoftGraph.microsoftGraphStrings.modifiedDate = "modifiedDate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modifiedDate]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
   
-  @scala.inline
-  def sizeInMB: typings.microsoftGraph.microsoftGraphStrings.sizeInMB = "sizeInMB".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sizeInMB]
+  inline def sizeInMB: typings.microsoftGraph.microsoftGraphStrings.sizeInMB = "sizeInMB".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sizeInMB]
   
-  @scala.inline
-  def version: typings.microsoftGraph.microsoftGraphStrings.version = "version".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.version]
+  inline def version: typings.microsoftGraph.microsoftGraphStrings.version = "version".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.version]
 }

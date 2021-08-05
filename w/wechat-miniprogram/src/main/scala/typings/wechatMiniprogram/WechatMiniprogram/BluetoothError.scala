@@ -46,19 +46,15 @@ trait BluetoothError extends StObject {
 }
 object BluetoothError {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): BluetoothError = {
+  inline def apply(errCode: Double, errMsg: String): BluetoothError = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothError]
   }
   
-  @scala.inline
-  implicit class BluetoothErrorMutableBuilder[Self <: BluetoothError] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothError](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait GetAccountSettingsResponse extends StObject {
 }
 object GetAccountSettingsResponse {
   
-  @scala.inline
-  def apply(): GetAccountSettingsResponse = {
+  inline def apply(): GetAccountSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountSettingsResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountSettingsResponseMutableBuilder[Self <: GetAccountSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setAccountLimit(value: AccountLimit): Self = StObject.set(x, "AccountLimit", value.asInstanceOf[js.Any])
+    inline def setAccountLimit(value: AccountLimit): Self = StObject.set(x, "AccountLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountLimitUndefined: Self = StObject.set(x, "AccountLimit", js.undefined)
+    inline def setAccountLimitUndefined: Self = StObject.set(x, "AccountLimit", js.undefined)
     
-    @scala.inline
-    def setAccountUsage(value: AccountUsage): Self = StObject.set(x, "AccountUsage", value.asInstanceOf[js.Any])
+    inline def setAccountUsage(value: AccountUsage): Self = StObject.set(x, "AccountUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUsageUndefined: Self = StObject.set(x, "AccountUsage", js.undefined)
+    inline def setAccountUsageUndefined: Self = StObject.set(x, "AccountUsage", js.undefined)
   }
 }

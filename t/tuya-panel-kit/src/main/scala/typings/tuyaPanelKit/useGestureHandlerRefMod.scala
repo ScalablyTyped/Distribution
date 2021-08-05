@@ -12,6 +12,5 @@ object useGestureHandlerRefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Ref[PanGestureHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Ref[PanGestureHandler]]
+  inline def default(): Ref[PanGestureHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Ref[PanGestureHandler]]
 }

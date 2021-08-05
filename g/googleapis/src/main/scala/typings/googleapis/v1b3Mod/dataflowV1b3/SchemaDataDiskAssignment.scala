@@ -26,28 +26,21 @@ trait SchemaDataDiskAssignment extends StObject {
 }
 object SchemaDataDiskAssignment {
   
-  @scala.inline
-  def apply(): SchemaDataDiskAssignment = {
+  inline def apply(): SchemaDataDiskAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDataDiskAssignment]
   }
   
-  @scala.inline
-  implicit class SchemaDataDiskAssignmentMutableBuilder[Self <: SchemaDataDiskAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDataDiskAssignment](x: Self) {
     
-    @scala.inline
-    def setDataDisks(value: js.Array[String]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
+    inline def setDataDisks(value: js.Array[String]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
+    inline def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
-    @scala.inline
-    def setDataDisksVarargs(value: String*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
+    inline def setDataDisksVarargs(value: String*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
     
-    @scala.inline
-    def setVmInstance(value: String): Self = StObject.set(x, "vmInstance", value.asInstanceOf[js.Any])
+    inline def setVmInstance(value: String): Self = StObject.set(x, "vmInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmInstanceUndefined: Self = StObject.set(x, "vmInstance", js.undefined)
+    inline def setVmInstanceUndefined: Self = StObject.set(x, "vmInstance", js.undefined)
   }
 }

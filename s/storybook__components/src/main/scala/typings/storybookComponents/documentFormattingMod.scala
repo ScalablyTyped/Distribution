@@ -47,8 +47,7 @@ object documentFormattingMod {
     Theme
   ] = js.native
   
-  @scala.inline
-  def Code(
+  inline def Code(
     hasClassNameProps: ComponentProps[
       StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object, Theme]
     ]
@@ -195,8 +194,7 @@ object documentFormattingMod {
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.a")
     @js.native
     def a: StyledComponent[js.Any, js.Object, Theme] = js.native
-    @scala.inline
-    def a_=(x: StyledComponent[js.Any, js.Object, Theme]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a")(x.asInstanceOf[js.Any])
+    inline def a_=(x: StyledComponent[js.Any, js.Object, Theme]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.blockquote")
     @js.native
@@ -205,8 +203,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def blockquote_=(
+    inline def blockquote_=(
       x: StyledComponent[
           DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
           js.Object, 
@@ -214,8 +211,7 @@ object documentFormattingMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockquote")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def code(
+    inline def code(
       hasClassNameProps: ComponentProps[
           StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object, Theme]
         ]
@@ -224,8 +220,7 @@ object documentFormattingMod {
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.div")
     @js.native
     def div: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], js.Object, Theme] = js.native
-    @scala.inline
-    def div_=(
+    inline def div_=(
       x: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], js.Object, Theme]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("div")(x.asInstanceOf[js.Any])
     
@@ -236,8 +231,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def dl_=(
+    inline def dl_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
           js.Object, 
@@ -252,8 +246,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def h1_=(
+    inline def h1_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
           js.Object, 
@@ -268,8 +261,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def h2_=(
+    inline def h2_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
           js.Object, 
@@ -284,8 +276,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def h3_=(
+    inline def h3_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
           js.Object, 
@@ -300,8 +291,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def h4_=(
+    inline def h4_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
           js.Object, 
@@ -316,8 +306,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def h5_=(
+    inline def h5_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
           js.Object, 
@@ -332,8 +321,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def h6_=(
+    inline def h6_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
           js.Object, 
@@ -344,8 +332,7 @@ object documentFormattingMod {
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.hr")
     @js.native
     def hr: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], js.Object, Theme] = js.native
-    @scala.inline
-    def hr_=(
+    inline def hr_=(
       x: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], js.Object, Theme]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hr")(x.asInstanceOf[js.Any])
     
@@ -356,8 +343,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def img_=(
+    inline def img_=(
       x: StyledComponent[
           DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
           js.Object, 
@@ -368,8 +354,7 @@ object documentFormattingMod {
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.li")
     @js.native
     def li: StyledComponent[DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], js.Object, Theme] = js.native
-    @scala.inline
-    def li_=(
+    inline def li_=(
       x: StyledComponent[DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], js.Object, Theme]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("li")(x.asInstanceOf[js.Any])
     
@@ -380,8 +365,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def ol_=(
+    inline def ol_=(
       x: StyledComponent[
           DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
           js.Object, 
@@ -396,8 +380,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def p_=(
+    inline def p_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
           js.Object, 
@@ -408,16 +391,14 @@ object documentFormattingMod {
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.pre")
     @js.native
     def pre: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], js.Object, Theme] = js.native
-    @scala.inline
-    def pre_=(
+    inline def pre_=(
       x: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], js.Object, Theme]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pre")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/typography/DocumentFormatting", "components.resetwrapper")
     @js.native
     def resetwrapper: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], js.Object, Theme] = js.native
-    @scala.inline
-    def resetwrapper_=(
+    inline def resetwrapper_=(
       x: StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], js.Object, Theme]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resetwrapper")(x.asInstanceOf[js.Any])
     
@@ -428,8 +409,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def span_=(
+    inline def span_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
           js.Object, 
@@ -444,8 +424,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def table_=(
+    inline def table_=(
       x: StyledComponent[
           DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
           js.Object, 
@@ -460,8 +439,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def tt_=(
+    inline def tt_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
           js.Object, 
@@ -476,8 +454,7 @@ object documentFormattingMod {
         js.Object, 
         Theme
       ] = js.native
-    @scala.inline
-    def ul_=(
+    inline def ul_=(
       x: StyledComponent[
           DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
           js.Object, 

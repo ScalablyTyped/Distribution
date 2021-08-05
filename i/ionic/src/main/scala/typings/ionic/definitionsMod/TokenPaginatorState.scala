@@ -12,19 +12,15 @@ trait TokenPaginatorState
 }
 object TokenPaginatorState {
   
-  @scala.inline
-  def apply(done: Boolean, loaded: Double): TokenPaginatorState = {
+  inline def apply(done: Boolean, loaded: Double): TokenPaginatorState = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenPaginatorState]
   }
   
-  @scala.inline
-  implicit class TokenPaginatorStateMutableBuilder[Self <: TokenPaginatorState] (val x: Self) extends AnyVal {
+  extension [Self <: TokenPaginatorState](x: Self) {
     
-    @scala.inline
-    def setPage_token(value: String): Self = StObject.set(x, "page_token", value.asInstanceOf[js.Any])
+    inline def setPage_token(value: String): Self = StObject.set(x, "page_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_tokenUndefined: Self = StObject.set(x, "page_token", js.undefined)
+    inline def setPage_tokenUndefined: Self = StObject.set(x, "page_token", js.undefined)
   }
 }

@@ -57,7 +57,7 @@ trait NoteItem extends StObject {
   
   def Move(DestFldr: Folder): js.Any = js.native
   
-  @JSName("Outlook.NoteItem_typekey")
+  /* private */ @JSName("Outlook.NoteItem_typekey")
   var OutlookDotNoteItem_typekey: NoteItem = js.native
   
   val Parent: js.Any = js.native

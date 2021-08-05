@@ -29,31 +29,23 @@ trait CouchbaseError
 }
 object CouchbaseError {
   
-  @scala.inline
-  def apply(message: String, name: String): CouchbaseError = {
+  inline def apply(message: String, name: String): CouchbaseError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CouchbaseError]
   }
   
-  @scala.inline
-  implicit class CouchbaseErrorMutableBuilder[Self <: CouchbaseError] (val x: Self) extends AnyVal {
+  extension [Self <: CouchbaseError](x: Self) {
     
-    @scala.inline
-    def setCode(value: errors): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: errors): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setInnerError(value: CouchbaseError): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
+    inline def setInnerError(value: CouchbaseError): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
+    inline def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
     
-    @scala.inline
-    def setResponseBody(value: js.Any): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
+    inline def setResponseBody(value: js.Any): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseBodyUndefined: Self = StObject.set(x, "responseBody", js.undefined)
+    inline def setResponseBodyUndefined: Self = StObject.set(x, "responseBody", js.undefined)
   }
 }

@@ -35,64 +35,45 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(integration_name: String): Source = {
+  inline def apply(integration_name: String): Source = {
     val __obj = js.Dynamic.literal(integration_name = integration_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setDynamodb(value: SourceDynamoDb): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+    inline def setDynamodb(value: SourceDynamoDb): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+    inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
-    @scala.inline
-    def setFile_upload(value: SourceFileUpload): Self = StObject.set(x, "file_upload", value.asInstanceOf[js.Any])
+    inline def setFile_upload(value: SourceFileUpload): Self = StObject.set(x, "file_upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_uploadUndefined: Self = StObject.set(x, "file_upload", js.undefined)
+    inline def setFile_uploadUndefined: Self = StObject.set(x, "file_upload", js.undefined)
     
-    @scala.inline
-    def setFormat_params(value: FormatParams): Self = StObject.set(x, "format_params", value.asInstanceOf[js.Any])
+    inline def setFormat_params(value: FormatParams): Self = StObject.set(x, "format_params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat_paramsUndefined: Self = StObject.set(x, "format_params", js.undefined)
+    inline def setFormat_paramsUndefined: Self = StObject.set(x, "format_params", js.undefined)
     
-    @scala.inline
-    def setGcs(value: SourceGcs): Self = StObject.set(x, "gcs", value.asInstanceOf[js.Any])
+    inline def setGcs(value: SourceGcs): Self = StObject.set(x, "gcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsUndefined: Self = StObject.set(x, "gcs", js.undefined)
+    inline def setGcsUndefined: Self = StObject.set(x, "gcs", js.undefined)
     
-    @scala.inline
-    def setIntegration_name(value: String): Self = StObject.set(x, "integration_name", value.asInstanceOf[js.Any])
+    inline def setIntegration_name(value: String): Self = StObject.set(x, "integration_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesis(value: SourceKinesis): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+    inline def setKinesis(value: SourceKinesis): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
+    inline def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
     
-    @scala.inline
-    def setRedshift(value: SourceRedshift): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
+    inline def setRedshift(value: SourceRedshift): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
+    inline def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
     
-    @scala.inline
-    def setS3(value: SourceS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: SourceS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

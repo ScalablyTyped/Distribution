@@ -54,22 +54,19 @@ object dropdownMod {
       @JSImport("carbon-components/components/dropdown/dropdown", "default.NAVIGATE.BACKWARD")
       @js.native
       def BACKWARD: Double = js.native
-      @scala.inline
-      def BACKWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKWARD")(x.asInstanceOf[js.Any])
+      inline def BACKWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKWARD")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/dropdown/dropdown", "default.NAVIGATE.FORWARD")
       @js.native
       def FORWARD: Double = js.native
-      @scala.inline
-      def FORWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD")(x.asInstanceOf[js.Any])
+      inline def FORWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
     @JSImport("carbon-components/components/dropdown/dropdown", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -93,8 +90,7 @@ object dropdownMod {
   }
   object Dropdown {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _focusCleanup: () => Unit,
       _handleKeyDown: js.Any => Unit,
       _toggle: js.Any => Unit,
@@ -108,32 +104,23 @@ object dropdownMod {
       __obj.asInstanceOf[Dropdown]
     }
     
-    @scala.inline
-    implicit class DropdownMutableBuilder[Self <: Dropdown] (val x: Self) extends AnyVal {
+    extension [Self <: Dropdown](x: Self) {
       
-      @scala.inline
-      def setGetCurrentNavigation(value: () => js.Any): Self = StObject.set(x, "getCurrentNavigation", js.Any.fromFunction0(value))
+      inline def setGetCurrentNavigation(value: () => js.Any): Self = StObject.set(x, "getCurrentNavigation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleBlur(value: () => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction0(value))
+      inline def setHandleBlur(value: () => Unit): Self = StObject.set(x, "handleBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNavigate(value: js.Any => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(value: js.Any => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelect(value: js.Any => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: js.Any => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_focusCleanup(value: () => Unit): Self = StObject.set(x, "_focusCleanup", js.Any.fromFunction0(value))
+      inline def set_focusCleanup(value: () => Unit): Self = StObject.set(x, "_focusCleanup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_handleKeyDown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeyDown", js.Any.fromFunction1(value))
+      inline def set_handleKeyDown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_toggle(value: js.Any => Unit): Self = StObject.set(x, "_toggle", js.Any.fromFunction1(value))
+      inline def set_toggle(value: js.Any => Unit): Self = StObject.set(x, "_toggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_updateFocus(value: js.Any => Unit): Self = StObject.set(x, "_updateFocus", js.Any.fromFunction1(value))
+      inline def set_updateFocus(value: js.Any => Unit): Self = StObject.set(x, "_updateFocus", js.Any.fromFunction1(value))
     }
   }
 }

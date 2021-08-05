@@ -26,8 +26,7 @@ object NgProgress {
   }
   object INgProgress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String => Unit,
       complete: () => Unit,
       height: String => Unit,
@@ -41,32 +40,23 @@ object NgProgress {
       __obj.asInstanceOf[INgProgress]
     }
     
-    @scala.inline
-    implicit class INgProgressMutableBuilder[Self <: INgProgress] (val x: Self) extends AnyVal {
+    extension [Self <: INgProgress](x: Self) {
       
-      @scala.inline
-      def setColor(value: String => Unit): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
+      inline def setColor(value: String => Unit): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeight(value: String => Unit): Self = StObject.set(x, "height", js.Any.fromFunction1(value))
+      inline def setHeight(value: String => Unit): Self = StObject.set(x, "height", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
+      inline def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -76,17 +66,14 @@ object NgProgress {
   }
   object INgProgressFactory {
     
-    @scala.inline
-    def apply(createInstance: () => INgProgress): INgProgressFactory = {
+    inline def apply(createInstance: () => INgProgress): INgProgressFactory = {
       val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction0(createInstance))
       __obj.asInstanceOf[INgProgressFactory]
     }
     
-    @scala.inline
-    implicit class INgProgressFactoryMutableBuilder[Self <: INgProgressFactory] (val x: Self) extends AnyVal {
+    extension [Self <: INgProgressFactory](x: Self) {
       
-      @scala.inline
-      def setCreateInstance(value: () => INgProgress): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
+      inline def setCreateInstance(value: () => INgProgress): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
     }
   }
 }

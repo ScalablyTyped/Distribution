@@ -15,34 +15,25 @@ trait CndMode extends StObject {
 }
 object CndMode {
   
-  @scala.inline
-  def apply(): CndMode = {
+  inline def apply(): CndMode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CndMode]
   }
   
-  @scala.inline
-  implicit class CndModeMutableBuilder[Self <: CndMode] (val x: Self) extends AnyVal {
+  extension [Self <: CndMode](x: Self) {
     
-    @scala.inline
-    def setCnd(value: js.Any): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
+    inline def setCnd(value: js.Any): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
+    inline def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
     
-    @scala.inline
-    def setMode(value: TransactionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: TransactionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeNull: Self = StObject.set(x, "mode", null)
+    inline def setModeNull: Self = StObject.set(x, "mode", null)
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

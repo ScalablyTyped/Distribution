@@ -29,25 +29,19 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputsMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs](x: Self) {
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
+    inline def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
   }
 }

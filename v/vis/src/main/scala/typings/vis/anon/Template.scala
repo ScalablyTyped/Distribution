@@ -10,16 +10,13 @@ trait Template extends StObject {
 }
 object Template {
   
-  @scala.inline
-  def apply(template: js.Any => js.Any): Template = {
+  inline def apply(template: js.Any => js.Any): Template = {
     val __obj = js.Dynamic.literal(template = js.Any.fromFunction1(template))
     __obj.asInstanceOf[Template]
   }
   
-  @scala.inline
-  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+  extension [Self <: Template](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: js.Any => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplate(value: js.Any => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
   }
 }

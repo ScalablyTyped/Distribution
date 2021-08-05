@@ -39,61 +39,43 @@ trait ISorter
 }
 object ISorter {
   
-  @scala.inline
-  def apply(): ISorter = {
+  inline def apply(): ISorter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISorter]
   }
   
-  @scala.inline
-  implicit class ISorterMutableBuilder[Self <: ISorter] (val x: Self) extends AnyVal {
+  extension [Self <: ISorter](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
+    inline def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
+    inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
     
-    @scala.inline
-    def setSorterFn(value: js.Any): Self = StObject.set(x, "sorterFn", value.asInstanceOf[js.Any])
+    inline def setSorterFn(value: js.Any): Self = StObject.set(x, "sorterFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSorterFnUndefined: Self = StObject.set(x, "sorterFn", js.undefined)
+    inline def setSorterFnUndefined: Self = StObject.set(x, "sorterFn", js.undefined)
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
-    @scala.inline
-    def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setUpdateSortFunction(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateSortFunction", js.Any.fromFunction1(value))
+    inline def setUpdateSortFunction(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateSortFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateSortFunctionUndefined: Self = StObject.set(x, "updateSortFunction", js.undefined)
+    inline def setUpdateSortFunctionUndefined: Self = StObject.set(x, "updateSortFunction", js.undefined)
   }
 }

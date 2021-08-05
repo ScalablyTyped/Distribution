@@ -38,55 +38,39 @@ trait AwsEc2SecurityGroupDetails extends StObject {
 }
 object AwsEc2SecurityGroupDetails {
   
-  @scala.inline
-  def apply(): AwsEc2SecurityGroupDetails = {
+  inline def apply(): AwsEc2SecurityGroupDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2SecurityGroupDetails]
   }
   
-  @scala.inline
-  implicit class AwsEc2SecurityGroupDetailsMutableBuilder[Self <: AwsEc2SecurityGroupDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2SecurityGroupDetails](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setIpPermissions(value: AwsEc2SecurityGroupIpPermissionList): Self = StObject.set(x, "IpPermissions", value.asInstanceOf[js.Any])
+    inline def setIpPermissions(value: AwsEc2SecurityGroupIpPermissionList): Self = StObject.set(x, "IpPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpPermissionsEgress(value: AwsEc2SecurityGroupIpPermissionList): Self = StObject.set(x, "IpPermissionsEgress", value.asInstanceOf[js.Any])
+    inline def setIpPermissionsEgress(value: AwsEc2SecurityGroupIpPermissionList): Self = StObject.set(x, "IpPermissionsEgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpPermissionsEgressUndefined: Self = StObject.set(x, "IpPermissionsEgress", js.undefined)
+    inline def setIpPermissionsEgressUndefined: Self = StObject.set(x, "IpPermissionsEgress", js.undefined)
     
-    @scala.inline
-    def setIpPermissionsEgressVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissionsEgress", js.Array(value :_*))
+    inline def setIpPermissionsEgressVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissionsEgress", js.Array(value :_*))
     
-    @scala.inline
-    def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
+    inline def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
     
-    @scala.inline
-    def setIpPermissionsVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
+    inline def setIpPermissionsVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerId(value: NonEmptyString): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: NonEmptyString): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

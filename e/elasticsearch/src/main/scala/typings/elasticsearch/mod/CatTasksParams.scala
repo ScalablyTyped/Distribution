@@ -28,73 +28,51 @@ trait CatTasksParams
 }
 object CatTasksParams {
   
-  @scala.inline
-  def apply(format: String): CatTasksParams = {
+  inline def apply(format: String): CatTasksParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatTasksParams]
   }
   
-  @scala.inline
-  implicit class CatTasksParamsMutableBuilder[Self <: CatTasksParams] (val x: Self) extends AnyVal {
+  extension [Self <: CatTasksParams](x: Self) {
     
-    @scala.inline
-    def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+    inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+    inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: NameList): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: NameList): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    @scala.inline
-    def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
     
-    @scala.inline
-    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
     
-    @scala.inline
-    def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+    inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
-    @scala.inline
-    def setParentTask(value: Double): Self = StObject.set(x, "parentTask", value.asInstanceOf[js.Any])
+    inline def setParentTask(value: Double): Self = StObject.set(x, "parentTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTaskUndefined: Self = StObject.set(x, "parentTask", js.undefined)
+    inline def setParentTaskUndefined: Self = StObject.set(x, "parentTask", js.undefined)
     
-    @scala.inline
-    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

@@ -26,62 +26,44 @@ object swipeActionPropsTypeMod {
   }
   object SwipeActionPropsType {
     
-    @scala.inline
-    def apply[T](): SwipeActionPropsType[T] = {
+    inline def apply[T](): SwipeActionPropsType[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwipeActionPropsType[T]]
     }
     
-    @scala.inline
-    implicit class SwipeActionPropsTypeMutableBuilder[Self <: SwipeActionPropsType[?], T] (val x: Self & SwipeActionPropsType[T]) extends AnyVal {
+    extension [Self <: SwipeActionPropsType[?], T](x: Self & SwipeActionPropsType[T]) {
       
-      @scala.inline
-      def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+      inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLeft(value: js.Array[ClassName[T]]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: js.Array[ClassName[T]]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setLeftVarargs(value: ClassName[T]*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: ClassName[T]*): Self = StObject.set(x, "left", js.Array(value :_*))
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setRight(value: js.Array[ClassName[T]]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: js.Array[ClassName[T]]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setRightVarargs(value: ClassName[T]*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: ClassName[T]*): Self = StObject.set(x, "right", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

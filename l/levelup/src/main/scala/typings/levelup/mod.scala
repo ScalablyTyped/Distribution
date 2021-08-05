@@ -67,50 +67,36 @@ object mod extends Shortcut {
   }
   object AbstractClearOptions {
     
-    @scala.inline
-    def apply[K](): AbstractClearOptions[K] = {
+    inline def apply[K](): AbstractClearOptions[K] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AbstractClearOptions[K]]
     }
     
-    @scala.inline
-    implicit class AbstractClearOptionsMutableBuilder[Self <: AbstractClearOptions[?], K] (val x: Self & AbstractClearOptions[K]) extends AnyVal {
+    extension [Self <: AbstractClearOptions[?], K](x: Self & AbstractClearOptions[K]) {
       
-      @scala.inline
-      def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+      inline def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+      inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
       
-      @scala.inline
-      def setGte(value: K): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+      inline def setGte(value: K): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+      inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLt(value: K): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+      inline def setLt(value: K): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+      inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
       
-      @scala.inline
-      def setLte(value: K): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+      inline def setLte(value: K): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+      inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     }
   }
   

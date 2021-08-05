@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("leaflet", "Utm")
   @js.native
-  class Utm_ protected () extends StObject {
+  /* private */ class Utm_ () extends StObject {
     
     var band: String = js.native
     
@@ -42,14 +42,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def setDefaultOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")().asInstanceOf[Unit]
-    @scala.inline
-    def setDefaultOptions(
+    inline def setDefaultOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")().asInstanceOf[Unit]
+    inline def setDefaultOptions(
       params: js.Function2[/* opts */ ToStringOptions, /* defaultOpts */ ToStringOptions, ToStringOptions]
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def setDefaultOptions(params: ToStringOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaultOptions(params: ToStringOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     trait ToStringOptions extends StObject {
       
@@ -80,50 +77,37 @@ object mod {
     }
     object ToStringOptions {
       
-      @scala.inline
-      def apply(): ToStringOptions = {
+      inline def apply(): ToStringOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ToStringOptions]
       }
       
-      @scala.inline
-      implicit class ToStringOptionsMutableBuilder[Self <: ToStringOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ToStringOptions](x: Self) {
         
-        @scala.inline
-        def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+        inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+        inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
         
-        @scala.inline
-        def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+        inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        @scala.inline
-        def setNorth(value: String): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
+        inline def setNorth(value: String): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNorthUndefined: Self = StObject.set(x, "north", js.undefined)
+        inline def setNorthUndefined: Self = StObject.set(x, "north", js.undefined)
         
-        @scala.inline
-        def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+        inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+        inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
         
-        @scala.inline
-        def setSouth(value: String): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
+        inline def setSouth(value: String): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSouthUndefined: Self = StObject.set(x, "south", js.undefined)
+        inline def setSouthUndefined: Self = StObject.set(x, "south", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def utm(params: Band): Utm_ = ^.asInstanceOf[js.Dynamic].applyDynamic("utm")(params.asInstanceOf[js.Any]).asInstanceOf[Utm_]
+  inline def utm(params: Band): Utm_ = ^.asInstanceOf[js.Dynamic].applyDynamic("utm")(params.asInstanceOf[js.Any]).asInstanceOf[Utm_]
   
   @js.native
   trait LatLng extends StObject {

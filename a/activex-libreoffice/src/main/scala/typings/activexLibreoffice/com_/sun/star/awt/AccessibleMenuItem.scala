@@ -36,8 +36,7 @@ trait AccessibleMenuItem
      with XAccessibleValue
 object AccessibleMenuItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     AccessibleChildCount: Double,
     AccessibleDescription: String,

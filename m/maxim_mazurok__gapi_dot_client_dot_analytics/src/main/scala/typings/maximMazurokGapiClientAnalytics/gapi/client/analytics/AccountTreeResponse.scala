@@ -20,37 +20,27 @@ trait AccountTreeResponse extends StObject {
 }
 object AccountTreeResponse {
   
-  @scala.inline
-  def apply(): AccountTreeResponse = {
+  inline def apply(): AccountTreeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountTreeResponse]
   }
   
-  @scala.inline
-  implicit class AccountTreeResponseMutableBuilder[Self <: AccountTreeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AccountTreeResponse](x: Self) {
     
-    @scala.inline
-    def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setWebproperty(value: Webproperty): Self = StObject.set(x, "webproperty", value.asInstanceOf[js.Any])
+    inline def setWebproperty(value: Webproperty): Self = StObject.set(x, "webproperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebpropertyUndefined: Self = StObject.set(x, "webproperty", js.undefined)
+    inline def setWebpropertyUndefined: Self = StObject.set(x, "webproperty", js.undefined)
   }
 }

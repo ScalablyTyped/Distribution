@@ -24,34 +24,25 @@ trait SchemaOrderreportsListTransactionsResponse extends StObject {
 }
 object SchemaOrderreportsListTransactionsResponse {
   
-  @scala.inline
-  def apply(): SchemaOrderreportsListTransactionsResponse = {
+  inline def apply(): SchemaOrderreportsListTransactionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderreportsListTransactionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaOrderreportsListTransactionsResponseMutableBuilder[Self <: SchemaOrderreportsListTransactionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderreportsListTransactionsResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTransactions(value: js.Array[SchemaOrderReportTransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+    inline def setTransactions(value: js.Array[SchemaOrderReportTransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
+    inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
-    @scala.inline
-    def setTransactionsVarargs(value: SchemaOrderReportTransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: SchemaOrderReportTransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
   }
 }

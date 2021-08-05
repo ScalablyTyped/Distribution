@@ -15,11 +15,11 @@ object packetinterfaceMod {
   class PacketInterface protected () extends StObject {
     def this(channel: Channel, config: Configuration) = this()
     
-    val activeRequests: js.Any = js.native
+    /* private */ val activeRequests: js.Any = js.native
     
-    val channel: js.Any = js.native
+    /* private */ val channel: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
     def isConnected: Boolean = js.native
     
@@ -37,7 +37,7 @@ object packetinterfaceMod {
     
     def shutdown(): Unit = js.native
     
-    var storeRequest: js.Any = js.native
+    /* private */ var storeRequest: js.Any = js.native
   }
   
   @JSImport("twilsock/lib/packetinterface", "PacketResponse")

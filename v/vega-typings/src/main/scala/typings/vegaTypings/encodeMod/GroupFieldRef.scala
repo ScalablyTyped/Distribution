@@ -14,22 +14,17 @@ trait GroupFieldRef
 }
 object GroupFieldRef {
   
-  @scala.inline
-  def apply(group: Field): GroupFieldRef = {
+  inline def apply(group: Field): GroupFieldRef = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupFieldRef]
   }
   
-  @scala.inline
-  implicit class GroupFieldRefMutableBuilder[Self <: GroupFieldRef] (val x: Self) extends AnyVal {
+  extension [Self <: GroupFieldRef](x: Self) {
     
-    @scala.inline
-    def setGroup(value: Field): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Field): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

@@ -11,22 +11,17 @@ trait SubordinateConfigChain extends StObject {
 }
 object SubordinateConfigChain {
   
-  @scala.inline
-  def apply(): SubordinateConfigChain = {
+  inline def apply(): SubordinateConfigChain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubordinateConfigChain]
   }
   
-  @scala.inline
-  implicit class SubordinateConfigChainMutableBuilder[Self <: SubordinateConfigChain] (val x: Self) extends AnyVal {
+  extension [Self <: SubordinateConfigChain](x: Self) {
     
-    @scala.inline
-    def setPemCertificates(value: js.Array[String]): Self = StObject.set(x, "pemCertificates", value.asInstanceOf[js.Any])
+    inline def setPemCertificates(value: js.Array[String]): Self = StObject.set(x, "pemCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemCertificatesUndefined: Self = StObject.set(x, "pemCertificates", js.undefined)
+    inline def setPemCertificatesUndefined: Self = StObject.set(x, "pemCertificates", js.undefined)
     
-    @scala.inline
-    def setPemCertificatesVarargs(value: String*): Self = StObject.set(x, "pemCertificates", js.Array(value :_*))
+    inline def setPemCertificatesVarargs(value: String*): Self = StObject.set(x, "pemCertificates", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(serial: Serial): Navigator = {
+  inline def apply(serial: Serial): Navigator = {
     val __obj = js.Dynamic.literal(serial = serial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setSerial(value: Serial): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: Serial): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
   }
 }

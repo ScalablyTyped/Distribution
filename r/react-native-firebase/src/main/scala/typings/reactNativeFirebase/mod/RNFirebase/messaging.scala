@@ -119,17 +119,14 @@ object messaging {
   }
   object MessagingStatics {
     
-    @scala.inline
-    def apply(RemoteMessage: Instantiable0[RemoteMessage]): MessagingStatics = {
+    inline def apply(RemoteMessage: Instantiable0[RemoteMessage]): MessagingStatics = {
       val __obj = js.Dynamic.literal(RemoteMessage = RemoteMessage.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessagingStatics]
     }
     
-    @scala.inline
-    implicit class MessagingStaticsMutableBuilder[Self <: MessagingStatics] (val x: Self) extends AnyVal {
+    extension [Self <: MessagingStatics](x: Self) {
       
-      @scala.inline
-      def setRemoteMessage(value: Instantiable0[RemoteMessage]): Self = StObject.set(x, "RemoteMessage", value.asInstanceOf[js.Any])
+      inline def setRemoteMessage(value: Instantiable0[RemoteMessage]): Self = StObject.set(x, "RemoteMessage", value.asInstanceOf[js.Any])
     }
   }
 }

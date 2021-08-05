@@ -29,31 +29,23 @@ trait ParamsResourceTemplateDelete
 }
 object ParamsResourceTemplateDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceTemplateDelete = {
+  inline def apply(): ParamsResourceTemplateDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTemplateDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTemplateDeleteMutableBuilder[Self <: ParamsResourceTemplateDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTemplateDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

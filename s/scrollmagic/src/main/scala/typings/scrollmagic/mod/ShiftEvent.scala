@@ -14,8 +14,7 @@ trait ShiftEvent
 }
 object ShiftEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTarget: Scene,
     namespace: String,
     reason: String,
@@ -28,10 +27,8 @@ object ShiftEvent {
     __obj.asInstanceOf[ShiftEvent]
   }
   
-  @scala.inline
-  implicit class ShiftEventMutableBuilder[Self <: ShiftEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ShiftEvent](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

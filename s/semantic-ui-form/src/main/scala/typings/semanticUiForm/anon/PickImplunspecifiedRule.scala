@@ -11,16 +11,13 @@ trait PickImplunspecifiedRule extends StObject {
 }
 object PickImplunspecifiedRule {
   
-  @scala.inline
-  def apply(unspecifiedRule: String): PickImplunspecifiedRule = {
+  inline def apply(unspecifiedRule: String): PickImplunspecifiedRule = {
     val __obj = js.Dynamic.literal(unspecifiedRule = unspecifiedRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplunspecifiedRule]
   }
   
-  @scala.inline
-  implicit class PickImplunspecifiedRuleMutableBuilder[Self <: PickImplunspecifiedRule] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplunspecifiedRule](x: Self) {
     
-    @scala.inline
-    def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
+    inline def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
   }
 }

@@ -56,8 +56,7 @@ trait TypeofTwoColorTimeline extends StObject {
 }
 object TypeofTwoColorTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     A: Double,
     B: Double,
     B2: Double,
@@ -79,55 +78,38 @@ object TypeofTwoColorTimeline {
     __obj.asInstanceOf[TypeofTwoColorTimeline]
   }
   
-  @scala.inline
-  implicit class TypeofTwoColorTimelineMutableBuilder[Self <: TypeofTwoColorTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTwoColorTimeline](x: Self) {
     
-    @scala.inline
-    def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+    inline def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB2(value: Double): Self = StObject.set(x, "B2", value.asInstanceOf[js.Any])
+    inline def setB2(value: Double): Self = StObject.set(x, "B2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
+    inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+    inline def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG2(value: Double): Self = StObject.set(x, "G2", value.asInstanceOf[js.Any])
+    inline def setG2(value: Double): Self = StObject.set(x, "G2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_A(value: Double): Self = StObject.set(x, "PREV_A", value.asInstanceOf[js.Any])
+    inline def setPREV_A(value: Double): Self = StObject.set(x, "PREV_A", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_B(value: Double): Self = StObject.set(x, "PREV_B", value.asInstanceOf[js.Any])
+    inline def setPREV_B(value: Double): Self = StObject.set(x, "PREV_B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_B2(value: Double): Self = StObject.set(x, "PREV_B2", value.asInstanceOf[js.Any])
+    inline def setPREV_B2(value: Double): Self = StObject.set(x, "PREV_B2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_G(value: Double): Self = StObject.set(x, "PREV_G", value.asInstanceOf[js.Any])
+    inline def setPREV_G(value: Double): Self = StObject.set(x, "PREV_G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_G2(value: Double): Self = StObject.set(x, "PREV_G2", value.asInstanceOf[js.Any])
+    inline def setPREV_G2(value: Double): Self = StObject.set(x, "PREV_G2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_R(value: Double): Self = StObject.set(x, "PREV_R", value.asInstanceOf[js.Any])
+    inline def setPREV_R(value: Double): Self = StObject.set(x, "PREV_R", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_R2(value: Double): Self = StObject.set(x, "PREV_R2", value.asInstanceOf[js.Any])
+    inline def setPREV_R2(value: Double): Self = StObject.set(x, "PREV_R2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
+    inline def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2(value: Double): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
+    inline def setR2(value: Double): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
   }
 }

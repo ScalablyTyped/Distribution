@@ -33,52 +33,37 @@ trait DescribeAvailabilityZonesRequest extends StObject {
 }
 object DescribeAvailabilityZonesRequest {
   
-  @scala.inline
-  def apply(): DescribeAvailabilityZonesRequest = {
+  inline def apply(): DescribeAvailabilityZonesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAvailabilityZonesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAvailabilityZonesRequestMutableBuilder[Self <: DescribeAvailabilityZonesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAvailabilityZonesRequest](x: Self) {
     
-    @scala.inline
-    def setAllAvailabilityZones(value: Boolean): Self = StObject.set(x, "AllAvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAllAvailabilityZones(value: Boolean): Self = StObject.set(x, "AllAvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllAvailabilityZonesUndefined: Self = StObject.set(x, "AllAvailabilityZones", js.undefined)
+    inline def setAllAvailabilityZonesUndefined: Self = StObject.set(x, "AllAvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setZoneIds(value: ZoneIdStringList): Self = StObject.set(x, "ZoneIds", value.asInstanceOf[js.Any])
+    inline def setZoneIds(value: ZoneIdStringList): Self = StObject.set(x, "ZoneIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneIdsUndefined: Self = StObject.set(x, "ZoneIds", js.undefined)
+    inline def setZoneIdsUndefined: Self = StObject.set(x, "ZoneIds", js.undefined)
     
-    @scala.inline
-    def setZoneIdsVarargs(value: String*): Self = StObject.set(x, "ZoneIds", js.Array(value :_*))
+    inline def setZoneIdsVarargs(value: String*): Self = StObject.set(x, "ZoneIds", js.Array(value :_*))
     
-    @scala.inline
-    def setZoneNames(value: ZoneNameStringList): Self = StObject.set(x, "ZoneNames", value.asInstanceOf[js.Any])
+    inline def setZoneNames(value: ZoneNameStringList): Self = StObject.set(x, "ZoneNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneNamesUndefined: Self = StObject.set(x, "ZoneNames", js.undefined)
+    inline def setZoneNamesUndefined: Self = StObject.set(x, "ZoneNames", js.undefined)
     
-    @scala.inline
-    def setZoneNamesVarargs(value: String*): Self = StObject.set(x, "ZoneNames", js.Array(value :_*))
+    inline def setZoneNamesVarargs(value: String*): Self = StObject.set(x, "ZoneNames", js.Array(value :_*))
   }
 }

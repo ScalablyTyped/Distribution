@@ -11,16 +11,13 @@ trait PickImplcollapsible extends StObject {
 }
 object PickImplcollapsible {
   
-  @scala.inline
-  def apply(collapsible: Boolean): PickImplcollapsible = {
+  inline def apply(collapsible: Boolean): PickImplcollapsible = {
     val __obj = js.Dynamic.literal(collapsible = collapsible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcollapsible]
   }
   
-  @scala.inline
-  implicit class PickImplcollapsibleMutableBuilder[Self <: PickImplcollapsible] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcollapsible](x: Self) {
     
-    @scala.inline
-    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
   }
 }

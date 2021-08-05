@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AxisTitle")
 @js.native
-class AxisTitle protected ()
+/* private */ class AxisTitle ()
   extends StObject
      with typings.activexExcel.Excel.AxisTitle

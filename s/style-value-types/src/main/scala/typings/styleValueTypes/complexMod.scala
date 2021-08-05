@@ -14,16 +14,12 @@ object complexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String]]
+    inline def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String]]
     
-    @scala.inline
-    def getAnimatableNone(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimatableNone")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getAnimatableNone(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimatableNone")(target.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def parse(v: js.Any): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
+    inline def parse(v: js.Any): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
     
-    @scala.inline
-    def test(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

@@ -14,31 +14,23 @@ trait StatusBar extends StObject {
 }
 object StatusBar {
   
-  @scala.inline
-  def apply(): StatusBar = {
+  inline def apply(): StatusBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatusBar]
   }
   
-  @scala.inline
-  implicit class StatusBarMutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
+  extension [Self <: StatusBar](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setStatusBar(value: `0`): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: `0`): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+    inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
   }
 }

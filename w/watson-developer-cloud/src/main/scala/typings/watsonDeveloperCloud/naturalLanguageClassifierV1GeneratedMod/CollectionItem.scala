@@ -18,34 +18,25 @@ trait CollectionItem extends StObject {
 }
 object CollectionItem {
   
-  @scala.inline
-  def apply(): CollectionItem = {
+  inline def apply(): CollectionItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionItem]
   }
   
-  @scala.inline
-  implicit class CollectionItemMutableBuilder[Self <: CollectionItem] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionItem](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Array[ClassifiedClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Array[ClassifiedClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTop_class(value: String): Self = StObject.set(x, "top_class", value.asInstanceOf[js.Any])
+    inline def setTop_class(value: String): Self = StObject.set(x, "top_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop_classUndefined: Self = StObject.set(x, "top_class", js.undefined)
+    inline def setTop_classUndefined: Self = StObject.set(x, "top_class", js.undefined)
   }
 }

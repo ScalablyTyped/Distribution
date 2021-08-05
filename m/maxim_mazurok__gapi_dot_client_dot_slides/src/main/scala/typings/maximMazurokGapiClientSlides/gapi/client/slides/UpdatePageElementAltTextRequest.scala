@@ -23,31 +23,23 @@ trait UpdatePageElementAltTextRequest extends StObject {
 }
 object UpdatePageElementAltTextRequest {
   
-  @scala.inline
-  def apply(): UpdatePageElementAltTextRequest = {
+  inline def apply(): UpdatePageElementAltTextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatePageElementAltTextRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePageElementAltTextRequestMutableBuilder[Self <: UpdatePageElementAltTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePageElementAltTextRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

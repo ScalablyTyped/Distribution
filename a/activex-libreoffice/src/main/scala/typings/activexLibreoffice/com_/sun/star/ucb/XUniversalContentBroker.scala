@@ -18,8 +18,7 @@ trait XUniversalContentBroker
      with XCommandProcessor2
 object XUniversalContentBroker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: Double => Unit,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,

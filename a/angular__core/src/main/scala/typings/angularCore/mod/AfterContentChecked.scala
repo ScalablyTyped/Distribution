@@ -15,16 +15,13 @@ trait AfterContentChecked extends StObject {
 }
 object AfterContentChecked {
   
-  @scala.inline
-  def apply(ngAfterContentChecked: () => Unit): AfterContentChecked = {
+  inline def apply(ngAfterContentChecked: () => Unit): AfterContentChecked = {
     val __obj = js.Dynamic.literal(ngAfterContentChecked = js.Any.fromFunction0(ngAfterContentChecked))
     __obj.asInstanceOf[AfterContentChecked]
   }
   
-  @scala.inline
-  implicit class AfterContentCheckedMutableBuilder[Self <: AfterContentChecked] (val x: Self) extends AnyVal {
+  extension [Self <: AfterContentChecked](x: Self) {
     
-    @scala.inline
-    def setNgAfterContentChecked(value: () => Unit): Self = StObject.set(x, "ngAfterContentChecked", js.Any.fromFunction0(value))
+    inline def setNgAfterContentChecked(value: () => Unit): Self = StObject.set(x, "ngAfterContentChecked", js.Any.fromFunction0(value))
   }
 }

@@ -16,8 +16,7 @@ trait NormalizationField
      with NormalizationSelection
 object NormalizationField {
   
-  @scala.inline
-  def NormalizationLinkedField(
+  inline def NormalizationLinkedField(
     args: js.Array[NormalizationArgument],
     kind: String,
     name: String,
@@ -28,8 +27,7 @@ object NormalizationField {
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField]
   }
   
-  @scala.inline
-  def NormalizationMatchField(
+  inline def NormalizationMatchField(
     args: js.Array[NormalizationArgument],
     kind: String,
     matchesByType: StringDictionary[FragmentName],
@@ -39,8 +37,7 @@ object NormalizationField {
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationMatchField]
   }
   
-  @scala.inline
-  def NormalizationScalarField(kind: String, name: String): typings.relayRuntime.normalizationNodeMod.NormalizationScalarField = {
+  inline def NormalizationScalarField(kind: String, name: String): typings.relayRuntime.normalizationNodeMod.NormalizationScalarField = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationScalarField]
   }

@@ -48,8 +48,7 @@ object traceStateMod {
   }
   object TraceState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get: String => js.UndefOr[String],
       serialize: () => String,
       set: (String, String) => Unit,
@@ -59,20 +58,15 @@ object traceStateMod {
       __obj.asInstanceOf[TraceState]
     }
     
-    @scala.inline
-    implicit class TraceStateMutableBuilder[Self <: TraceState] (val x: Self) extends AnyVal {
+    extension [Self <: TraceState](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerialize(value: () => String): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+      inline def setSerialize(value: () => String): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnset(value: String => Unit): Self = StObject.set(x, "unset", js.Any.fromFunction1(value))
+      inline def setUnset(value: String => Unit): Self = StObject.set(x, "unset", js.Any.fromFunction1(value))
     }
   }
 }

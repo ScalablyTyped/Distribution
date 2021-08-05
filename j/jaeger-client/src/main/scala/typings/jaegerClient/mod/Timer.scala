@@ -11,16 +11,13 @@ trait Timer extends StObject {
 }
 object Timer {
   
-  @scala.inline
-  def apply(record: Double => Unit): Timer = {
+  inline def apply(record: Double => Unit): Timer = {
     val __obj = js.Dynamic.literal(record = js.Any.fromFunction1(record))
     __obj.asInstanceOf[Timer]
   }
   
-  @scala.inline
-  implicit class TimerMutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
+  extension [Self <: Timer](x: Self) {
     
-    @scala.inline
-    def setRecord(value: Double => Unit): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
+    inline def setRecord(value: Double => Unit): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
   }
 }

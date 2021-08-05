@@ -58,73 +58,51 @@ trait MemberDetail extends StObject {
 }
 object MemberDetail {
   
-  @scala.inline
-  def apply(): MemberDetail = {
+  inline def apply(): MemberDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberDetail]
   }
   
-  @scala.inline
-  implicit class MemberDetailMutableBuilder[Self <: MemberDetail] (val x: Self) extends AnyVal {
+  extension [Self <: MemberDetail](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setDisabledReason(value: MemberDisabledReason): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
+    inline def setDisabledReason(value: MemberDisabledReason): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
+    inline def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphArnUndefined: Self = StObject.set(x, "GraphArn", js.undefined)
+    inline def setGraphArnUndefined: Self = StObject.set(x, "GraphArn", js.undefined)
     
-    @scala.inline
-    def setInvitedTime(value: Timestamp): Self = StObject.set(x, "InvitedTime", value.asInstanceOf[js.Any])
+    inline def setInvitedTime(value: Timestamp): Self = StObject.set(x, "InvitedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedTimeUndefined: Self = StObject.set(x, "InvitedTime", js.undefined)
+    inline def setInvitedTimeUndefined: Self = StObject.set(x, "InvitedTime", js.undefined)
     
-    @scala.inline
-    def setMasterId(value: AccountId): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
+    inline def setMasterId(value: AccountId): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterIdUndefined: Self = StObject.set(x, "MasterId", js.undefined)
+    inline def setMasterIdUndefined: Self = StObject.set(x, "MasterId", js.undefined)
     
-    @scala.inline
-    def setPercentOfGraphUtilization(value: Percentage): Self = StObject.set(x, "PercentOfGraphUtilization", value.asInstanceOf[js.Any])
+    inline def setPercentOfGraphUtilization(value: Percentage): Self = StObject.set(x, "PercentOfGraphUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentOfGraphUtilizationUndefined: Self = StObject.set(x, "PercentOfGraphUtilization", js.undefined)
+    inline def setPercentOfGraphUtilizationUndefined: Self = StObject.set(x, "PercentOfGraphUtilization", js.undefined)
     
-    @scala.inline
-    def setPercentOfGraphUtilizationUpdatedTime(value: Timestamp): Self = StObject.set(x, "PercentOfGraphUtilizationUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setPercentOfGraphUtilizationUpdatedTime(value: Timestamp): Self = StObject.set(x, "PercentOfGraphUtilizationUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentOfGraphUtilizationUpdatedTimeUndefined: Self = StObject.set(x, "PercentOfGraphUtilizationUpdatedTime", js.undefined)
+    inline def setPercentOfGraphUtilizationUpdatedTimeUndefined: Self = StObject.set(x, "PercentOfGraphUtilizationUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: MemberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MemberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUpdatedTime(value: Timestamp): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
+    inline def setUpdatedTime(value: Timestamp): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
+    inline def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
   }
 }

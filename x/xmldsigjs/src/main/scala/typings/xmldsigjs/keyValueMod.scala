@@ -15,6 +15,6 @@ object keyValueMod {
     def Value: KeyInfoClause = js.native
     def Value_=(v: KeyInfoClause): Unit = js.native
     
-    var value: KeyInfoClause = js.native
+    /* protected */ var value: KeyInfoClause = js.native
   }
 }

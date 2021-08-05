@@ -44,29 +44,22 @@ object bluetooth {
   }
   object AdapterState {
     
-    @scala.inline
-    def apply(address: String, available: Boolean, discovering: Boolean, name: String, powered: Boolean): AdapterState = {
+    inline def apply(address: String, available: Boolean, discovering: Boolean, name: String, powered: Boolean): AdapterState = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], powered = powered.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdapterState]
     }
     
-    @scala.inline
-    implicit class AdapterStateMutableBuilder[Self <: AdapterState] (val x: Self) extends AnyVal {
+    extension [Self <: AdapterState](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+      inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
+      inline def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowered(value: Boolean): Self = StObject.set(x, "powered", value.asInstanceOf[js.Any])
+      inline def setPowered(value: Boolean): Self = StObject.set(x, "powered", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,17 +69,14 @@ object bluetooth {
   }
   object BluetoothEvent {
     
-    @scala.inline
-    def apply[T](addListener: js.Function1[/* event */ T, Unit] => Unit): BluetoothEvent[T] = {
+    inline def apply[T](addListener: js.Function1[/* event */ T, Unit] => Unit): BluetoothEvent[T] = {
       val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener))
       __obj.asInstanceOf[BluetoothEvent[T]]
     }
     
-    @scala.inline
-    implicit class BluetoothEventMutableBuilder[Self <: BluetoothEvent[?], T] (val x: Self & BluetoothEvent[T]) extends AnyVal {
+    extension [Self <: BluetoothEvent[?], T](x: Self & BluetoothEvent[T]) {
       
-      @scala.inline
-      def setAddListener(value: js.Function1[/* event */ T, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: js.Function1[/* event */ T, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -157,98 +147,68 @@ object bluetooth {
   }
   object Device {
     
-    @scala.inline
-    def apply(address: String, inquiryRssi: integer, inquiryTxPower: integer): Device = {
+    inline def apply(address: String, inquiryRssi: integer, inquiryTxPower: integer): Device = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], inquiryRssi = inquiryRssi.asInstanceOf[js.Any], inquiryTxPower = inquiryTxPower.asInstanceOf[js.Any])
       __obj.asInstanceOf[Device]
     }
     
-    @scala.inline
-    implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+    extension [Self <: Device](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectable(value: Boolean): Self = StObject.set(x, "connectable", value.asInstanceOf[js.Any])
+      inline def setConnectable(value: Boolean): Self = StObject.set(x, "connectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectableUndefined: Self = StObject.set(x, "connectable", js.undefined)
+      inline def setConnectableUndefined: Self = StObject.set(x, "connectable", js.undefined)
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+      inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
       
-      @scala.inline
-      def setConnecting(value: Boolean): Self = StObject.set(x, "connecting", value.asInstanceOf[js.Any])
+      inline def setConnecting(value: Boolean): Self = StObject.set(x, "connecting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectingUndefined: Self = StObject.set(x, "connecting", js.undefined)
+      inline def setConnectingUndefined: Self = StObject.set(x, "connecting", js.undefined)
       
-      @scala.inline
-      def setDeviceClass(value: integer): Self = StObject.set(x, "deviceClass", value.asInstanceOf[js.Any])
+      inline def setDeviceClass(value: integer): Self = StObject.set(x, "deviceClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceClassUndefined: Self = StObject.set(x, "deviceClass", js.undefined)
+      inline def setDeviceClassUndefined: Self = StObject.set(x, "deviceClass", js.undefined)
       
-      @scala.inline
-      def setDeviceId(value: integer): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: integer): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+      inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
       
-      @scala.inline
-      def setInquiryRssi(value: integer): Self = StObject.set(x, "inquiryRssi", value.asInstanceOf[js.Any])
+      inline def setInquiryRssi(value: integer): Self = StObject.set(x, "inquiryRssi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInquiryTxPower(value: integer): Self = StObject.set(x, "inquiryTxPower", value.asInstanceOf[js.Any])
+      inline def setInquiryTxPower(value: integer): Self = StObject.set(x, "inquiryTxPower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPaired(value: Boolean): Self = StObject.set(x, "paired", value.asInstanceOf[js.Any])
+      inline def setPaired(value: Boolean): Self = StObject.set(x, "paired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPairedUndefined: Self = StObject.set(x, "paired", js.undefined)
+      inline def setPairedUndefined: Self = StObject.set(x, "paired", js.undefined)
       
-      @scala.inline
-      def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+      inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       
-      @scala.inline
-      def setType(value: DeviceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DeviceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
+      inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
+      inline def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
       
-      @scala.inline
-      def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+      inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
       
-      @scala.inline
-      def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdSource(value: DeviceVendorIdSource): Self = StObject.set(x, "vendorIdSource", value.asInstanceOf[js.Any])
+      inline def setVendorIdSource(value: DeviceVendorIdSource): Self = StObject.set(x, "vendorIdSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdSourceUndefined: Self = StObject.set(x, "vendorIdSource", js.undefined)
+      inline def setVendorIdSourceUndefined: Self = StObject.set(x, "vendorIdSource", js.undefined)
       
-      @scala.inline
-      def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
+      inline def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
     }
   }
   
@@ -265,26 +225,20 @@ object bluetooth {
   }
   object DeviceFilter {
     
-    @scala.inline
-    def apply(): DeviceFilter = {
+    inline def apply(): DeviceFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeviceFilter]
     }
     
-    @scala.inline
-    implicit class DeviceFilterMutableBuilder[Self <: DeviceFilter] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceFilter](x: Self) {
       
-      @scala.inline
-      def setFilterType(value: DeviceFilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+      inline def setFilterType(value: DeviceFilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+      inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      @scala.inline
-      def setLimit(value: integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
   
@@ -295,11 +249,9 @@ object bluetooth {
   trait DeviceFilterType extends StObject
   object DeviceFilterType {
     
-    @scala.inline
-    def all: all__ = "all".asInstanceOf[all__]
+    inline def all: all__ = "all".asInstanceOf[all__]
     
-    @scala.inline
-    def known: typings.chromeApps.chromeAppsStrings.known = "known".asInstanceOf[typings.chromeApps.chromeAppsStrings.known]
+    inline def known: typings.chromeApps.chromeAppsStrings.known = "known".asInstanceOf[typings.chromeApps.chromeAppsStrings.known]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -320,44 +272,31 @@ object bluetooth {
   trait DeviceType extends StObject
   object DeviceType {
     
-    @scala.inline
-    def audio: audio_ = "audio".asInstanceOf[audio_]
+    inline def audio: audio_ = "audio".asInstanceOf[audio_]
     
-    @scala.inline
-    def carAudio: typings.chromeApps.chromeAppsStrings.carAudio = "carAudio".asInstanceOf[typings.chromeApps.chromeAppsStrings.carAudio]
+    inline def carAudio: typings.chromeApps.chromeAppsStrings.carAudio = "carAudio".asInstanceOf[typings.chromeApps.chromeAppsStrings.carAudio]
     
-    @scala.inline
-    def computer: typings.chromeApps.chromeAppsStrings.computer = "computer".asInstanceOf[typings.chromeApps.chromeAppsStrings.computer]
+    inline def computer: typings.chromeApps.chromeAppsStrings.computer = "computer".asInstanceOf[typings.chromeApps.chromeAppsStrings.computer]
     
-    @scala.inline
-    def gamepad: typings.chromeApps.chromeAppsStrings.gamepad = "gamepad".asInstanceOf[typings.chromeApps.chromeAppsStrings.gamepad]
+    inline def gamepad: typings.chromeApps.chromeAppsStrings.gamepad = "gamepad".asInstanceOf[typings.chromeApps.chromeAppsStrings.gamepad]
     
-    @scala.inline
-    def joystick: typings.chromeApps.chromeAppsStrings.joystick = "joystick".asInstanceOf[typings.chromeApps.chromeAppsStrings.joystick]
+    inline def joystick: typings.chromeApps.chromeAppsStrings.joystick = "joystick".asInstanceOf[typings.chromeApps.chromeAppsStrings.joystick]
     
-    @scala.inline
-    def keyboard: keyboard_ = "keyboard".asInstanceOf[keyboard_]
+    inline def keyboard: keyboard_ = "keyboard".asInstanceOf[keyboard_]
     
-    @scala.inline
-    def keyboardMouseCombo: typings.chromeApps.chromeAppsStrings.keyboardMouseCombo = "keyboardMouseCombo".asInstanceOf[typings.chromeApps.chromeAppsStrings.keyboardMouseCombo]
+    inline def keyboardMouseCombo: typings.chromeApps.chromeAppsStrings.keyboardMouseCombo = "keyboardMouseCombo".asInstanceOf[typings.chromeApps.chromeAppsStrings.keyboardMouseCombo]
     
-    @scala.inline
-    def modem: typings.chromeApps.chromeAppsStrings.modem = "modem".asInstanceOf[typings.chromeApps.chromeAppsStrings.modem]
+    inline def modem: typings.chromeApps.chromeAppsStrings.modem = "modem".asInstanceOf[typings.chromeApps.chromeAppsStrings.modem]
     
-    @scala.inline
-    def mouse: typings.chromeApps.chromeAppsStrings.mouse = "mouse".asInstanceOf[typings.chromeApps.chromeAppsStrings.mouse]
+    inline def mouse: typings.chromeApps.chromeAppsStrings.mouse = "mouse".asInstanceOf[typings.chromeApps.chromeAppsStrings.mouse]
     
-    @scala.inline
-    def peripheral: typings.chromeApps.chromeAppsStrings.peripheral = "peripheral".asInstanceOf[typings.chromeApps.chromeAppsStrings.peripheral]
+    inline def peripheral: typings.chromeApps.chromeAppsStrings.peripheral = "peripheral".asInstanceOf[typings.chromeApps.chromeAppsStrings.peripheral]
     
-    @scala.inline
-    def phone: typings.chromeApps.chromeAppsStrings.phone = "phone".asInstanceOf[typings.chromeApps.chromeAppsStrings.phone]
+    inline def phone: typings.chromeApps.chromeAppsStrings.phone = "phone".asInstanceOf[typings.chromeApps.chromeAppsStrings.phone]
     
-    @scala.inline
-    def tablet: typings.chromeApps.chromeAppsStrings.tablet = "tablet".asInstanceOf[typings.chromeApps.chromeAppsStrings.tablet]
+    inline def tablet: typings.chromeApps.chromeAppsStrings.tablet = "tablet".asInstanceOf[typings.chromeApps.chromeAppsStrings.tablet]
     
-    @scala.inline
-    def video: video_ = "video".asInstanceOf[video_]
+    inline def video: video_ = "video".asInstanceOf[video_]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -367,10 +306,8 @@ object bluetooth {
   trait DeviceVendorIdSource extends StObject
   object DeviceVendorIdSource {
     
-    @scala.inline
-    def bluetooth: bluetooth_ = "bluetooth".asInstanceOf[bluetooth_]
+    inline def bluetooth: bluetooth_ = "bluetooth".asInstanceOf[bluetooth_]
     
-    @scala.inline
-    def usb: usb_ = "usb".asInstanceOf[usb_]
+    inline def usb: usb_ = "usb".asInstanceOf[usb_]
   }
 }

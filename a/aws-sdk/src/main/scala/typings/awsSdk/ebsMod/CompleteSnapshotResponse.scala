@@ -13,19 +13,15 @@ trait CompleteSnapshotResponse extends StObject {
 }
 object CompleteSnapshotResponse {
   
-  @scala.inline
-  def apply(): CompleteSnapshotResponse = {
+  inline def apply(): CompleteSnapshotResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompleteSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class CompleteSnapshotResponseMutableBuilder[Self <: CompleteSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

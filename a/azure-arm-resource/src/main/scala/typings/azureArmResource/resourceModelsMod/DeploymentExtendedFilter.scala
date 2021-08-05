@@ -13,19 +13,15 @@ trait DeploymentExtendedFilter extends StObject {
 }
 object DeploymentExtendedFilter {
   
-  @scala.inline
-  def apply(): DeploymentExtendedFilter = {
+  inline def apply(): DeploymentExtendedFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentExtendedFilter]
   }
   
-  @scala.inline
-  implicit class DeploymentExtendedFilterMutableBuilder[Self <: DeploymentExtendedFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentExtendedFilter](x: Self) {
     
-    @scala.inline
-    def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
+    inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
+    inline def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
   }
 }

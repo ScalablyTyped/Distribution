@@ -11,6 +11,5 @@ object qixianCsPathToRegexpBooleans {
   sealed trait `false`
     extends StObject
        with Match_[js.Any]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

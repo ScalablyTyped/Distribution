@@ -25,8 +25,7 @@ object anon {
   }
   object Added {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       added: Double,
       fileDeleted: Boolean,
       matched: Double,
@@ -39,32 +38,23 @@ object anon {
       __obj.asInstanceOf[Added]
     }
     
-    @scala.inline
-    implicit class AddedMutableBuilder[Self <: Added] (val x: Self) extends AnyVal {
+    extension [Self <: Added](x: Self) {
       
-      @scala.inline
-      def setAdded(value: Double): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+      inline def setAdded(value: Double): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileDeleted(value: Boolean): Self = StObject.set(x, "fileDeleted", value.asInstanceOf[js.Any])
+      inline def setFileDeleted(value: Boolean): Self = StObject.set(x, "fileDeleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatched(value: Double): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
+      inline def setMatched(value: Double): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnchecked(value: Double): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
+      inline def setUnchecked(value: Double): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncheckedKeys(value: js.Array[String]): Self = StObject.set(x, "uncheckedKeys", value.asInstanceOf[js.Any])
+      inline def setUncheckedKeys(value: js.Array[String]): Self = StObject.set(x, "uncheckedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncheckedKeysVarargs(value: String*): Self = StObject.set(x, "uncheckedKeys", js.Array(value :_*))
+      inline def setUncheckedKeysVarargs(value: String*): Self = StObject.set(x, "uncheckedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setUnmatched(value: Double): Self = StObject.set(x, "unmatched", value.asInstanceOf[js.Any])
+      inline def setUnmatched(value: Double): Self = StObject.set(x, "unmatched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,20 +66,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: Milliseconds, start: Milliseconds): End = {
+    inline def apply(end: Milliseconds, start: Milliseconds): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Milliseconds): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Milliseconds): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Milliseconds): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Milliseconds): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

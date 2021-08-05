@@ -21,34 +21,29 @@ object AggregateFunctionEnum {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.AggregateFunctionEnum.Average")
   @js.native
   def Average: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum = js.native
-  @scala.inline
-  def Average_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Average")(x.asInstanceOf[js.Any])
+  inline def Average_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Average")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.AggregateFunctionEnum.Count")
   @js.native
   def Count: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum = js.native
-  @scala.inline
-  def Count_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
+  inline def Count_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.AggregateFunctionEnum.Maximum")
   @js.native
   def Maximum: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum = js.native
-  @scala.inline
-  def Maximum_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Maximum")(x.asInstanceOf[js.Any])
+  inline def Maximum_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Maximum")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.AggregateFunctionEnum.Minimum")
   @js.native
   def Minimum: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum = js.native
-  @scala.inline
-  def Minimum_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimum")(x.asInstanceOf[js.Any])
+  inline def Minimum_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimum")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.AggregateFunctionEnum.Sum")
   @js.native
   def Sum: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum = js.native
-  @scala.inline
-  def Sum_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sum")(x.asInstanceOf[js.Any])
+  inline def Sum_=(x: typings.mendixmodelsdk.microflowsMod.microflows.AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sum")(x.asInstanceOf[js.Any])
 }

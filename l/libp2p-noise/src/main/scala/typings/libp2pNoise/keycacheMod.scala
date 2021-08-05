@@ -23,7 +23,7 @@ object keycacheMod {
     
     def resetStorage(): Unit = js.native
     
-    var storage: js.Any = js.native
+    /* private */ var storage: js.Any = js.native
     
     def store(peerId: ^, key: bytes32): Unit = js.native
   }

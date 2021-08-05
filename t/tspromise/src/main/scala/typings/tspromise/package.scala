@@ -1,10 +1,8 @@
-package typings
+package typings.tspromise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object tspromise {
-  
-  type NodeCallback[T] = js.Function2[/* err */ typings.std.Error, /* value */ T, scala.Unit]
-}
+
+type NodeCallback[T] = js.Function2[/* err */ typings.std.Error, /* value */ T, scala.Unit]

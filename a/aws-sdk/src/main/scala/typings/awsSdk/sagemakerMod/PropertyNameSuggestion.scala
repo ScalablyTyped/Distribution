@@ -13,19 +13,15 @@ trait PropertyNameSuggestion extends StObject {
 }
 object PropertyNameSuggestion {
   
-  @scala.inline
-  def apply(): PropertyNameSuggestion = {
+  inline def apply(): PropertyNameSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyNameSuggestion]
   }
   
-  @scala.inline
-  implicit class PropertyNameSuggestionMutableBuilder[Self <: PropertyNameSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyNameSuggestion](x: Self) {
     
-    @scala.inline
-    def setPropertyName(value: ResourcePropertyName): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: ResourcePropertyName): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNameUndefined: Self = StObject.set(x, "PropertyName", js.undefined)
+    inline def setPropertyNameUndefined: Self = StObject.set(x, "PropertyName", js.undefined)
   }
 }

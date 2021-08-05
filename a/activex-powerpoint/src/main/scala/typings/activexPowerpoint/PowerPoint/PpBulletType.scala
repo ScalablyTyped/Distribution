@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpBulletType extends StObject
 object PpBulletType {
   
-  @scala.inline
-  def ppBulletMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppBulletMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppBulletNone: `0` = 0.asInstanceOf[`0`]
+  inline def ppBulletNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ppBulletNumbered: `2` = 2.asInstanceOf[`2`]
+  inline def ppBulletNumbered: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppBulletPicture: `3` = 3.asInstanceOf[`3`]
+  inline def ppBulletPicture: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppBulletUnnumbered: `1` = 1.asInstanceOf[`1`]
+  inline def ppBulletUnnumbered: `1` = 1.asInstanceOf[`1`]
 }

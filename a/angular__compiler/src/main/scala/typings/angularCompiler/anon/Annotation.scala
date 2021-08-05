@@ -13,19 +13,15 @@ trait Annotation extends StObject {
 }
 object Annotation {
   
-  @scala.inline
-  def apply(annotation: typings.angularCompiler.coreMod.Directive, metadata: CompileDirectiveMetadata): Annotation = {
+  inline def apply(annotation: typings.angularCompiler.coreMod.Directive, metadata: CompileDirectiveMetadata): Annotation = {
     val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: typings.angularCompiler.coreMod.Directive): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: typings.angularCompiler.coreMod.Directive): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: CompileDirectiveMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: CompileDirectiveMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

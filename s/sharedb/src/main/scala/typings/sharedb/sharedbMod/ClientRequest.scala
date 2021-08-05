@@ -15,16 +15,13 @@ trait ClientRequest
 }
 object ClientRequest {
   
-  @scala.inline
-  def apply(a: RequestAction): ClientRequest = {
+  inline def apply(a: RequestAction): ClientRequest = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequest]
   }
   
-  @scala.inline
-  implicit class ClientRequestMutableBuilder[Self <: ClientRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClientRequest](x: Self) {
     
-    @scala.inline
-    def setA(value: RequestAction): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: RequestAction): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
   }
 }

@@ -31,25 +31,19 @@ trait DocumentOnTypeFormattingParams extends StObject {
 }
 object DocumentOnTypeFormattingParams {
   
-  @scala.inline
-  def apply(ch: String, options: FormattingOptions, position: Position, textDocument: TextDocumentIdentifier): DocumentOnTypeFormattingParams = {
+  inline def apply(ch: String, options: FormattingOptions, position: Position, textDocument: TextDocumentIdentifier): DocumentOnTypeFormattingParams = {
     val __obj = js.Dynamic.literal(ch = ch.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentOnTypeFormattingParams]
   }
   
-  @scala.inline
-  implicit class DocumentOnTypeFormattingParamsMutableBuilder[Self <: DocumentOnTypeFormattingParams] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentOnTypeFormattingParams](x: Self) {
     
-    @scala.inline
-    def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
+    inline def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

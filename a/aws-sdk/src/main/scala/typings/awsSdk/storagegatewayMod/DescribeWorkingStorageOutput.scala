@@ -25,40 +25,29 @@ trait DescribeWorkingStorageOutput extends StObject {
 }
 object DescribeWorkingStorageOutput {
   
-  @scala.inline
-  def apply(): DescribeWorkingStorageOutput = {
+  inline def apply(): DescribeWorkingStorageOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkingStorageOutput]
   }
   
-  @scala.inline
-  implicit class DescribeWorkingStorageOutputMutableBuilder[Self <: DescribeWorkingStorageOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkingStorageOutput](x: Self) {
     
-    @scala.inline
-    def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
+    inline def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
+    inline def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
     
-    @scala.inline
-    def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
+    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setWorkingStorageAllocatedInBytes(value: long): Self = StObject.set(x, "WorkingStorageAllocatedInBytes", value.asInstanceOf[js.Any])
+    inline def setWorkingStorageAllocatedInBytes(value: long): Self = StObject.set(x, "WorkingStorageAllocatedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingStorageAllocatedInBytesUndefined: Self = StObject.set(x, "WorkingStorageAllocatedInBytes", js.undefined)
+    inline def setWorkingStorageAllocatedInBytesUndefined: Self = StObject.set(x, "WorkingStorageAllocatedInBytes", js.undefined)
     
-    @scala.inline
-    def setWorkingStorageUsedInBytes(value: long): Self = StObject.set(x, "WorkingStorageUsedInBytes", value.asInstanceOf[js.Any])
+    inline def setWorkingStorageUsedInBytes(value: long): Self = StObject.set(x, "WorkingStorageUsedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingStorageUsedInBytesUndefined: Self = StObject.set(x, "WorkingStorageUsedInBytes", js.undefined)
+    inline def setWorkingStorageUsedInBytesUndefined: Self = StObject.set(x, "WorkingStorageUsedInBytes", js.undefined)
   }
 }

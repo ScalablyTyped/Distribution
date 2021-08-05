@@ -9,8 +9,7 @@ trait IButtonGridStyles
      with typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridStyles
 object IButtonGridStyles {
   
-  @scala.inline
-  def apply(): IButtonGridStyles = {
+  inline def apply(): IButtonGridStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IButtonGridStyles]
   }

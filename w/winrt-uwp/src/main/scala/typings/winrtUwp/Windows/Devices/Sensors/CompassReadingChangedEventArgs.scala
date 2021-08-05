@@ -12,16 +12,13 @@ trait CompassReadingChangedEventArgs extends StObject {
 }
 object CompassReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: CompassReading): CompassReadingChangedEventArgs = {
+  inline def apply(reading: CompassReading): CompassReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class CompassReadingChangedEventArgsMutableBuilder[Self <: CompassReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CompassReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: CompassReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: CompassReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

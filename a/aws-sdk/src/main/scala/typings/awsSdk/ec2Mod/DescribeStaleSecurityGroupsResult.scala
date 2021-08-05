@@ -18,28 +18,21 @@ trait DescribeStaleSecurityGroupsResult extends StObject {
 }
 object DescribeStaleSecurityGroupsResult {
   
-  @scala.inline
-  def apply(): DescribeStaleSecurityGroupsResult = {
+  inline def apply(): DescribeStaleSecurityGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStaleSecurityGroupsResult]
   }
   
-  @scala.inline
-  implicit class DescribeStaleSecurityGroupsResultMutableBuilder[Self <: DescribeStaleSecurityGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStaleSecurityGroupsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStaleSecurityGroupSet(value: StaleSecurityGroupSet): Self = StObject.set(x, "StaleSecurityGroupSet", value.asInstanceOf[js.Any])
+    inline def setStaleSecurityGroupSet(value: StaleSecurityGroupSet): Self = StObject.set(x, "StaleSecurityGroupSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleSecurityGroupSetUndefined: Self = StObject.set(x, "StaleSecurityGroupSet", js.undefined)
+    inline def setStaleSecurityGroupSetUndefined: Self = StObject.set(x, "StaleSecurityGroupSet", js.undefined)
     
-    @scala.inline
-    def setStaleSecurityGroupSetVarargs(value: StaleSecurityGroup*): Self = StObject.set(x, "StaleSecurityGroupSet", js.Array(value :_*))
+    inline def setStaleSecurityGroupSetVarargs(value: StaleSecurityGroup*): Self = StObject.set(x, "StaleSecurityGroupSet", js.Array(value :_*))
   }
 }

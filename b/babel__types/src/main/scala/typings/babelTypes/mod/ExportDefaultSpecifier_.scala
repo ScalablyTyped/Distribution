@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ExportDefaultSpecifier_ {
   
-  @scala.inline
-  def apply(exported: Identifier_): ExportDefaultSpecifier_ = {
+  inline def apply(exported: Identifier_): ExportDefaultSpecifier_ = {
     val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportDefaultSpecifier")
     __obj.asInstanceOf[ExportDefaultSpecifier_]
   }
   
-  @scala.inline
-  implicit class ExportDefaultSpecifier_MutableBuilder[Self <: ExportDefaultSpecifier_] (val x: Self) extends AnyVal {
+  extension [Self <: ExportDefaultSpecifier_](x: Self) {
     
-    @scala.inline
-    def setExported(value: Identifier_): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+    inline def setExported(value: Identifier_): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExportDefaultSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExportDefaultSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

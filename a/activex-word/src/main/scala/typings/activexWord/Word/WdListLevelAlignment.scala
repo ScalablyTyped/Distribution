@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdListLevelAlignment extends StObject
 object WdListLevelAlignment {
   
-  @scala.inline
-  def wdListLevelAlignCenter: `1` = 1.asInstanceOf[`1`]
+  inline def wdListLevelAlignCenter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdListLevelAlignLeft: `0` = 0.asInstanceOf[`0`]
+  inline def wdListLevelAlignLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdListLevelAlignRight: `2` = 2.asInstanceOf[`2`]
+  inline def wdListLevelAlignRight: `2` = 2.asInstanceOf[`2`]
 }

@@ -23,26 +23,20 @@ trait Resource[T /* <: ResourceType */] extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply[T /* <: ResourceType */](name: String, path: String, `type`: T, uid: String): Resource[T] = {
+  inline def apply[T /* <: ResourceType */](name: String, path: String, `type`: T, uid: String): Resource[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource[T]]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource[?], T /* <: ResourceType */] (val x: Self & Resource[T]) extends AnyVal {
+  extension [Self <: Resource[?], T /* <: ResourceType */](x: Self & Resource[T]) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

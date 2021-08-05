@@ -28,28 +28,21 @@ trait ShareDirectoryRequest extends StObject {
 }
 object ShareDirectoryRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, ShareMethod: ShareMethod, ShareTarget: ShareTarget): ShareDirectoryRequest = {
+  inline def apply(DirectoryId: DirectoryId, ShareMethod: ShareMethod, ShareTarget: ShareTarget): ShareDirectoryRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], ShareMethod = ShareMethod.asInstanceOf[js.Any], ShareTarget = ShareTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareDirectoryRequest]
   }
   
-  @scala.inline
-  implicit class ShareDirectoryRequestMutableBuilder[Self <: ShareDirectoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ShareDirectoryRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
+    inline def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
+    inline def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
+    inline def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
     
-    @scala.inline
-    def setShareTarget(value: ShareTarget): Self = StObject.set(x, "ShareTarget", value.asInstanceOf[js.Any])
+    inline def setShareTarget(value: ShareTarget): Self = StObject.set(x, "ShareTarget", value.asInstanceOf[js.Any])
   }
 }

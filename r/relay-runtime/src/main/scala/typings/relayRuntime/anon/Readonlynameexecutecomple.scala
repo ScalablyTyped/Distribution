@@ -17,19 +17,15 @@ trait Readonlynameexecutecomple
 }
 object Readonlynameexecutecomple {
   
-  @scala.inline
-  def apply(transactionID: Double): Readonlynameexecutecomple = {
+  inline def apply(transactionID: Double): Readonlynameexecutecomple = {
     val __obj = js.Dynamic.literal(name = "execute.complete", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecutecomple]
   }
   
-  @scala.inline
-  implicit class ReadonlynameexecutecompleMutableBuilder[Self <: Readonlynameexecutecomple] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynameexecutecomple](x: Self) {
     
-    @scala.inline
-    def setName(value: executeDotcomplete): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: executeDotcomplete): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+    inline def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
   }
 }

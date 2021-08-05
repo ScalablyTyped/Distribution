@@ -61,8 +61,7 @@ object overridesMod {
   }
   object LabComponentNameToClassKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       MuiAlert: AlertClassKey,
       MuiAlertTitle: AlertTitleClassKey,
       MuiAutocomplete: AutocompleteClassKey,
@@ -85,59 +84,41 @@ object overridesMod {
       __obj.asInstanceOf[LabComponentNameToClassKey]
     }
     
-    @scala.inline
-    implicit class LabComponentNameToClassKeyMutableBuilder[Self <: LabComponentNameToClassKey] (val x: Self) extends AnyVal {
+    extension [Self <: LabComponentNameToClassKey](x: Self) {
       
-      @scala.inline
-      def setMuiAlert(value: AlertClassKey): Self = StObject.set(x, "MuiAlert", value.asInstanceOf[js.Any])
+      inline def setMuiAlert(value: AlertClassKey): Self = StObject.set(x, "MuiAlert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiAlertTitle(value: AlertTitleClassKey): Self = StObject.set(x, "MuiAlertTitle", value.asInstanceOf[js.Any])
+      inline def setMuiAlertTitle(value: AlertTitleClassKey): Self = StObject.set(x, "MuiAlertTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiAutocomplete(value: AutocompleteClassKey): Self = StObject.set(x, "MuiAutocomplete", value.asInstanceOf[js.Any])
+      inline def setMuiAutocomplete(value: AutocompleteClassKey): Self = StObject.set(x, "MuiAutocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiAvatarGroup(value: AvatarGroupClassKey): Self = StObject.set(x, "MuiAvatarGroup", value.asInstanceOf[js.Any])
+      inline def setMuiAvatarGroup(value: AvatarGroupClassKey): Self = StObject.set(x, "MuiAvatarGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiPagination(value: PaginationClassKey): Self = StObject.set(x, "MuiPagination", value.asInstanceOf[js.Any])
+      inline def setMuiPagination(value: PaginationClassKey): Self = StObject.set(x, "MuiPagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiPaginationItem(value: PaginationItemClassKey): Self = StObject.set(x, "MuiPaginationItem", value.asInstanceOf[js.Any])
+      inline def setMuiPaginationItem(value: PaginationItemClassKey): Self = StObject.set(x, "MuiPaginationItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiRating(value: RatingClassKey): Self = StObject.set(x, "MuiRating", value.asInstanceOf[js.Any])
+      inline def setMuiRating(value: RatingClassKey): Self = StObject.set(x, "MuiRating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSkeleton(value: SkeletonClassKey): Self = StObject.set(x, "MuiSkeleton", value.asInstanceOf[js.Any])
+      inline def setMuiSkeleton(value: SkeletonClassKey): Self = StObject.set(x, "MuiSkeleton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSpeedDial(value: SpeedDialClassKey): Self = StObject.set(x, "MuiSpeedDial", value.asInstanceOf[js.Any])
+      inline def setMuiSpeedDial(value: SpeedDialClassKey): Self = StObject.set(x, "MuiSpeedDial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSpeedDialAction(value: SpeedDialActionClassKey): Self = StObject.set(x, "MuiSpeedDialAction", value.asInstanceOf[js.Any])
+      inline def setMuiSpeedDialAction(value: SpeedDialActionClassKey): Self = StObject.set(x, "MuiSpeedDialAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSpeedDialIcon(value: SpeedDialIconClassKey): Self = StObject.set(x, "MuiSpeedDialIcon", value.asInstanceOf[js.Any])
+      inline def setMuiSpeedDialIcon(value: SpeedDialIconClassKey): Self = StObject.set(x, "MuiSpeedDialIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTabList(value: TabListClassKey): Self = StObject.set(x, "MuiTabList", value.asInstanceOf[js.Any])
+      inline def setMuiTabList(value: TabListClassKey): Self = StObject.set(x, "MuiTabList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTabPanel(value: TabPanelClassKey): Self = StObject.set(x, "MuiTabPanel", value.asInstanceOf[js.Any])
+      inline def setMuiTabPanel(value: TabPanelClassKey): Self = StObject.set(x, "MuiTabPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiToggleButton(value: ToggleButtonClassKey): Self = StObject.set(x, "MuiToggleButton", value.asInstanceOf[js.Any])
+      inline def setMuiToggleButton(value: ToggleButtonClassKey): Self = StObject.set(x, "MuiToggleButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiToggleButtonGroup(value: ToggleButtonGroupClassKey): Self = StObject.set(x, "MuiToggleButtonGroup", value.asInstanceOf[js.Any])
+      inline def setMuiToggleButtonGroup(value: ToggleButtonGroupClassKey): Self = StObject.set(x, "MuiToggleButtonGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTreeItem(value: TreeItemClassKey): Self = StObject.set(x, "MuiTreeItem", value.asInstanceOf[js.Any])
+      inline def setMuiTreeItem(value: TreeItemClassKey): Self = StObject.set(x, "MuiTreeItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTreeView(value: TreeViewClassKey): Self = StObject.set(x, "MuiTreeView", value.asInstanceOf[js.Any])
+      inline def setMuiTreeView(value: TreeViewClassKey): Self = StObject.set(x, "MuiTreeView", value.asInstanceOf[js.Any])
     }
   }
   

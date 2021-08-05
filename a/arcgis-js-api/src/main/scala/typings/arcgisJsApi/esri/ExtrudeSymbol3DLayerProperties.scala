@@ -38,37 +38,27 @@ trait ExtrudeSymbol3DLayerProperties
 }
 object ExtrudeSymbol3DLayerProperties {
   
-  @scala.inline
-  def apply(): ExtrudeSymbol3DLayerProperties = {
+  inline def apply(): ExtrudeSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtrudeSymbol3DLayerProperties]
   }
   
-  @scala.inline
-  implicit class ExtrudeSymbol3DLayerPropertiesMutableBuilder[Self <: ExtrudeSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ExtrudeSymbol3DLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
+    inline def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
+    inline def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
     
-    @scala.inline
-    def setEdges(value: Edges3DProperties): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: Edges3DProperties): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: ExtrudeSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: ExtrudeSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

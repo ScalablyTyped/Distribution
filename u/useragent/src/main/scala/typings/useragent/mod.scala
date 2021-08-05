@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(refresh: Boolean): Unit = ^.asInstanceOf[js.Dynamic].apply(refresh.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(refresh: Boolean): Unit = ^.asInstanceOf[js.Dynamic].apply(refresh.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("useragent", JSImport.Namespace)
   @js.native
@@ -184,47 +182,35 @@ object mod {
     * Transform a JSON object back to a valid userAgent string
     * @param obj A JSON object or stringified JSON object
     */
-  @scala.inline
-  def fromJSON(obj: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Agent]
-  @scala.inline
-  def fromJSON(obj: Major): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def fromJSON(obj: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def fromJSON(obj: Major): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
   /**
     * Does a more inaccurate but more common check for useragents identification.
     * @param useragent The user agent
     */
-  @scala.inline
-  def is(): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[Details]
-  @scala.inline
-  def is(useragent: String): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(useragent.asInstanceOf[js.Any]).asInstanceOf[Details]
+  inline def is(): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[Details]
+  inline def is(useragent: String): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(useragent.asInstanceOf[js.Any]).asInstanceOf[Details]
   
   /**
     * If you are doing a lot of lookups you might want to cache the results of the parsed user agent string instead, in memory.
     * @param userAgent The user agent string
     * @param jsAgent Optional UA from js to detect chrome frame
     */
-  @scala.inline
-  def lookup(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")().asInstanceOf[Agent]
-  @scala.inline
-  def lookup(userAgent: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Agent]
-  @scala.inline
-  def lookup(userAgent: String, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
-  @scala.inline
-  def lookup(userAgent: Unit, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  inline def lookup(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")().asInstanceOf[Agent]
+  inline def lookup(userAgent: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def lookup(userAgent: String, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  inline def lookup(userAgent: Unit, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
   
   /**
     * Parses the user agent string with the generated parsers from the ua-parser project on google code.
     * @param userAgent The user agent string
     * @param jsAgent Optional UA from js to detect chrome frame
     */
-  @scala.inline
-  def parse(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Agent]
-  @scala.inline
-  def parse(userAgent: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Agent]
-  @scala.inline
-  def parse(userAgent: String, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
-  @scala.inline
-  def parse(userAgent: Unit, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  inline def parse(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Agent]
+  inline def parse(userAgent: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def parse(userAgent: String, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  inline def parse(userAgent: Unit, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
   
   /**
     * Library version
@@ -257,8 +243,7 @@ object mod {
   }
   object Details {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       android: Boolean,
       chrome: Boolean,
       firefox: Boolean,
@@ -274,38 +259,27 @@ object mod {
       __obj.asInstanceOf[Details]
     }
     
-    @scala.inline
-    implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+    extension [Self <: Details](x: Self) {
       
-      @scala.inline
-      def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+      inline def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+      inline def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobile_safari(value: Boolean): Self = StObject.set(x, "mobile_safari", value.asInstanceOf[js.Any])
+      inline def setMobile_safari(value: Boolean): Self = StObject.set(x, "mobile_safari", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
+      inline def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
+      inline def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
+      inline def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
+      inline def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
     }
   }
 }

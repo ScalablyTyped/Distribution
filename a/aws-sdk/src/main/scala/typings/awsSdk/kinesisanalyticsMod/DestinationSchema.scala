@@ -13,16 +13,13 @@ trait DestinationSchema extends StObject {
 }
 object DestinationSchema {
   
-  @scala.inline
-  def apply(RecordFormatType: RecordFormatType): DestinationSchema = {
+  inline def apply(RecordFormatType: RecordFormatType): DestinationSchema = {
     val __obj = js.Dynamic.literal(RecordFormatType = RecordFormatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationSchema]
   }
   
-  @scala.inline
-  implicit class DestinationSchemaMutableBuilder[Self <: DestinationSchema] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationSchema](x: Self) {
     
-    @scala.inline
-    def setRecordFormatType(value: RecordFormatType): Self = StObject.set(x, "RecordFormatType", value.asInstanceOf[js.Any])
+    inline def setRecordFormatType(value: RecordFormatType): Self = StObject.set(x, "RecordFormatType", value.asInstanceOf[js.Any])
   }
 }

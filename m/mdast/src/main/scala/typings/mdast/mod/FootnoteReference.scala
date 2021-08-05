@@ -17,17 +17,14 @@ trait FootnoteReference
 }
 object FootnoteReference {
   
-  @scala.inline
-  def apply(identifier: String): FootnoteReference = {
+  inline def apply(identifier: String): FootnoteReference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("footnoteReference")
     __obj.asInstanceOf[FootnoteReference]
   }
   
-  @scala.inline
-  implicit class FootnoteReferenceMutableBuilder[Self <: FootnoteReference] (val x: Self) extends AnyVal {
+  extension [Self <: FootnoteReference](x: Self) {
     
-    @scala.inline
-    def setType(value: footnoteReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: footnoteReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

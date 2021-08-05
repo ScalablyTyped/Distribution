@@ -27,8 +27,7 @@ trait BufferList[D /* <: Buffer */] extends StObject {
 }
 object BufferList {
   
-  @scala.inline
-  def apply[D /* <: Buffer */](
+  inline def apply[D /* <: Buffer */](
     clear: () => Unit,
     concat: Double => D,
     head: Entry[D],
@@ -43,34 +42,24 @@ object BufferList {
     __obj.asInstanceOf[BufferList[D]]
   }
   
-  @scala.inline
-  implicit class BufferListMutableBuilder[Self <: BufferList[?], D /* <: Buffer */] (val x: Self & BufferList[D]) extends AnyVal {
+  extension [Self <: BufferList[?], D /* <: Buffer */](x: Self & BufferList[D]) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConcat(value: Double => D): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+    inline def setConcat(value: Double => D): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHead(value: Entry[D]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: Entry[D]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoin(value: js.Any => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
+    inline def setJoin(value: js.Any => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: D => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: D => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShift(value: () => D): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+    inline def setShift(value: () => D): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTail(value: Entry[D]): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+    inline def setTail(value: Entry[D]): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnshift(value: D => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+    inline def setUnshift(value: D => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
   }
 }

@@ -14,22 +14,17 @@ trait CompletedInProgress extends StObject {
 }
 object CompletedInProgress {
   
-  @scala.inline
-  def apply(completed: scala.Double, inProgress: scala.Double, queued: scala.Double): CompletedInProgress = {
+  inline def apply(completed: scala.Double, inProgress: scala.Double, queued: scala.Double): CompletedInProgress = {
     val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletedInProgress]
   }
   
-  @scala.inline
-  implicit class CompletedInProgressMutableBuilder[Self <: CompletedInProgress] (val x: Self) extends AnyVal {
+  extension [Self <: CompletedInProgress](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
   }
 }

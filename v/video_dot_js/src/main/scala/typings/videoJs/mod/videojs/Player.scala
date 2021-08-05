@@ -58,65 +58,46 @@ object Player {
   }
   object MediaObject {
     
-    @scala.inline
-    def apply(): MediaObject = {
+    inline def apply(): MediaObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaObject]
     }
     
-    @scala.inline
-    implicit class MediaObjectMutableBuilder[Self <: MediaObject] (val x: Self) extends AnyVal {
+    extension [Self <: MediaObject](x: Self) {
       
-      @scala.inline
-      def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+      inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+      inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
       
-      @scala.inline
-      def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+      inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
+      inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
       
-      @scala.inline
-      def setArtwork(value: js.Array[js.Any]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+      inline def setArtwork(value: js.Array[js.Any]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
+      inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
       
-      @scala.inline
-      def setArtworkVarargs(value: js.Any*): Self = StObject.set(x, "artwork", js.Array(value :_*))
+      inline def setArtworkVarargs(value: js.Any*): Self = StObject.set(x, "artwork", js.Array(value :_*))
       
-      @scala.inline
-      def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
+      inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
+      inline def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String | SourceObject | js.Array[SourceObject]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String | SourceObject | js.Array[SourceObject]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setSrcVarargs(value: SourceObject*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: SourceObject*): Self = StObject.set(x, "src", js.Array(value :_*))
       
-      @scala.inline
-      def setTextTracks(value: js.Array[js.Any]): Self = StObject.set(x, "textTracks", value.asInstanceOf[js.Any])
+      inline def setTextTracks(value: js.Array[js.Any]): Self = StObject.set(x, "textTracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTracksUndefined: Self = StObject.set(x, "textTracks", js.undefined)
+      inline def setTextTracksUndefined: Self = StObject.set(x, "textTracks", js.undefined)
       
-      @scala.inline
-      def setTextTracksVarargs(value: js.Any*): Self = StObject.set(x, "textTracks", js.Array(value :_*))
+      inline def setTextTracksVarargs(value: js.Any*): Self = StObject.set(x, "textTracks", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

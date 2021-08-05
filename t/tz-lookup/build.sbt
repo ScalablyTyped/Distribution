@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tz-lookup"
-version := "6.1-dt-20200108Z-0ae61c"
+version := "6.1-dt-20200108Z-9a9300"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

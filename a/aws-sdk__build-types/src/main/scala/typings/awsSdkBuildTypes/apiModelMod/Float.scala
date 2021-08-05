@@ -19,29 +19,22 @@ trait Float
 }
 object Float {
   
-  @scala.inline
-  def apply(): Float = {
+  inline def apply(): Float = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("float")
     __obj.asInstanceOf[Float]
   }
   
-  @scala.inline
-  implicit class FloatMutableBuilder[Self <: Float] (val x: Self) extends AnyVal {
+  extension [Self <: Float](x: Self) {
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setType(value: float): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: float): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

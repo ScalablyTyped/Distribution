@@ -18,25 +18,19 @@ trait SheetStyle extends StObject {
 }
 object SheetStyle {
   
-  @scala.inline
-  def apply(): SheetStyle = {
+  inline def apply(): SheetStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SheetStyle]
   }
   
-  @scala.inline
-  implicit class SheetStyleMutableBuilder[Self <: SheetStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SheetStyle](x: Self) {
     
-    @scala.inline
-    def setTile(value: TileStyle): Self = StObject.set(x, "Tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: TileStyle): Self = StObject.set(x, "Tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileLayout(value: TileLayoutStyle): Self = StObject.set(x, "TileLayout", value.asInstanceOf[js.Any])
+    inline def setTileLayout(value: TileLayoutStyle): Self = StObject.set(x, "TileLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileLayoutUndefined: Self = StObject.set(x, "TileLayout", js.undefined)
+    inline def setTileLayoutUndefined: Self = StObject.set(x, "TileLayout", js.undefined)
     
-    @scala.inline
-    def setTileUndefined: Self = StObject.set(x, "Tile", js.undefined)
+    inline def setTileUndefined: Self = StObject.set(x, "Tile", js.undefined)
   }
 }

@@ -41,26 +41,20 @@ object mod extends Shortcut {
   }
   object RootPath {
     
-    @scala.inline
-    def apply(path: String, require: String => js.Any, resolve: String => String, setPath: String => Unit): RootPath = {
+    inline def apply(path: String, require: String => js.Any, resolve: String => String, setPath: String => Unit): RootPath = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], require = js.Any.fromFunction1(require), resolve = js.Any.fromFunction1(resolve), setPath = js.Any.fromFunction1(setPath))
       __obj.asInstanceOf[RootPath]
     }
     
-    @scala.inline
-    implicit class RootPathMutableBuilder[Self <: RootPath] (val x: Self) extends AnyVal {
+    extension [Self <: RootPath](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
+      inline def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: String => String): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: String => String): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPath(value: String => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
+      inline def setSetPath(value: String => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
     }
   }
   

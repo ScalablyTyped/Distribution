@@ -12,8 +12,7 @@ object itemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Item(hasChildrenSetRef: ItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(hasChildrenSetRef.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Item(hasChildrenSetRef: ItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(hasChildrenSetRef.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait ItemProps extends StObject {
     
@@ -23,20 +22,16 @@ object itemMod {
   }
   object ItemProps {
     
-    @scala.inline
-    def apply(children: ReactElement, setRef: HTMLElement => Unit): ItemProps = {
+    inline def apply(children: ReactElement, setRef: HTMLElement => Unit): ItemProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], setRef = js.Any.fromFunction1(setRef))
       __obj.asInstanceOf[ItemProps]
     }
     
-    @scala.inline
-    implicit class ItemPropsMutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ItemProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetRef(value: HTMLElement => Unit): Self = StObject.set(x, "setRef", js.Any.fromFunction1(value))
+      inline def setSetRef(value: HTMLElement => Unit): Self = StObject.set(x, "setRef", js.Any.fromFunction1(value))
     }
   }
 }

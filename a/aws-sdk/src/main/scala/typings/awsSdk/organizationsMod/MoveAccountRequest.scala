@@ -23,22 +23,17 @@ trait MoveAccountRequest extends StObject {
 }
 object MoveAccountRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, DestinationParentId: ParentId, SourceParentId: ParentId): MoveAccountRequest = {
+  inline def apply(AccountId: AccountId, DestinationParentId: ParentId, SourceParentId: ParentId): MoveAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], DestinationParentId = DestinationParentId.asInstanceOf[js.Any], SourceParentId = SourceParentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveAccountRequest]
   }
   
-  @scala.inline
-  implicit class MoveAccountRequestMutableBuilder[Self <: MoveAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MoveAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationParentId(value: ParentId): Self = StObject.set(x, "DestinationParentId", value.asInstanceOf[js.Any])
+    inline def setDestinationParentId(value: ParentId): Self = StObject.set(x, "DestinationParentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceParentId(value: ParentId): Self = StObject.set(x, "SourceParentId", value.asInstanceOf[js.Any])
+    inline def setSourceParentId(value: ParentId): Self = StObject.set(x, "SourceParentId", value.asInstanceOf[js.Any])
   }
 }

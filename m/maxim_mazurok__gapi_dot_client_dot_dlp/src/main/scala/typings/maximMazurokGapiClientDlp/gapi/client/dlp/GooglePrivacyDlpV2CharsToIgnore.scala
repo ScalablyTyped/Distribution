@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2CharsToIgnore extends StObject {
 }
 object GooglePrivacyDlpV2CharsToIgnore {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2CharsToIgnore = {
+  inline def apply(): GooglePrivacyDlpV2CharsToIgnore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2CharsToIgnore]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2CharsToIgnoreMutableBuilder[Self <: GooglePrivacyDlpV2CharsToIgnore] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2CharsToIgnore](x: Self) {
     
-    @scala.inline
-    def setCharactersToSkip(value: String): Self = StObject.set(x, "charactersToSkip", value.asInstanceOf[js.Any])
+    inline def setCharactersToSkip(value: String): Self = StObject.set(x, "charactersToSkip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharactersToSkipUndefined: Self = StObject.set(x, "charactersToSkip", js.undefined)
+    inline def setCharactersToSkipUndefined: Self = StObject.set(x, "charactersToSkip", js.undefined)
     
-    @scala.inline
-    def setCommonCharactersToIgnore(value: String): Self = StObject.set(x, "commonCharactersToIgnore", value.asInstanceOf[js.Any])
+    inline def setCommonCharactersToIgnore(value: String): Self = StObject.set(x, "commonCharactersToIgnore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonCharactersToIgnoreUndefined: Self = StObject.set(x, "commonCharactersToIgnore", js.undefined)
+    inline def setCommonCharactersToIgnoreUndefined: Self = StObject.set(x, "commonCharactersToIgnore", js.undefined)
   }
 }

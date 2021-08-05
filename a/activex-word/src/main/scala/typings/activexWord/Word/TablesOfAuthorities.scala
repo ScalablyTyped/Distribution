@@ -77,6 +77,6 @@ trait TablesOfAuthorities extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.TablesOfAuthorities_typekey")
+  /* private */ @JSName("Word.TablesOfAuthorities_typekey")
   var WordDotTablesOfAuthorities_typekey: TablesOfAuthorities = js.native
 }

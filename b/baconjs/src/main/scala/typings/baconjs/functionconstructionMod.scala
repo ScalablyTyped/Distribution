@@ -10,6 +10,5 @@ object functionconstructionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeFunction(f: js.Function, args: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFunction")(f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def makeFunction(f: js.Function, args: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFunction")(f.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

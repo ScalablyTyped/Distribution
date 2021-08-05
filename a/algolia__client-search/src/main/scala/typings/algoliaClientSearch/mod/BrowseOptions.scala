@@ -19,25 +19,19 @@ trait BrowseOptions[TObject] extends StObject {
 }
 object BrowseOptions {
   
-  @scala.inline
-  def apply[TObject](): BrowseOptions[TObject] = {
+  inline def apply[TObject](): BrowseOptions[TObject] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrowseOptions[TObject]]
   }
   
-  @scala.inline
-  implicit class BrowseOptionsMutableBuilder[Self <: BrowseOptions[?], TObject] (val x: Self & BrowseOptions[TObject]) extends AnyVal {
+  extension [Self <: BrowseOptions[?], TObject](x: Self & BrowseOptions[TObject]) {
     
-    @scala.inline
-    def setBatch(value: /* batch */ js.Array[TObject & ObjectWithObjectID] => js.Any): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
+    inline def setBatch(value: /* batch */ js.Array[TObject & ObjectWithObjectID] => js.Any): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    @scala.inline
-    def setShouldStop(value: /* response */ BrowseResponse[TObject] => Boolean): Self = StObject.set(x, "shouldStop", js.Any.fromFunction1(value))
+    inline def setShouldStop(value: /* response */ BrowseResponse[TObject] => Boolean): Self = StObject.set(x, "shouldStop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldStopUndefined: Self = StObject.set(x, "shouldStop", js.undefined)
+    inline def setShouldStopUndefined: Self = StObject.set(x, "shouldStop", js.undefined)
   }
 }

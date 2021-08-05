@@ -22,8 +22,7 @@ trait Scalar
      with ContentNode
 object Scalar {
   
-  @scala.inline
-  def BlockValue(
+  inline def BlockValue(
     chomping: CLIP | KEEP | STRIP,
     hasComment: Boolean,
     hasProps: Boolean,
@@ -38,8 +37,7 @@ object Scalar {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.BlockValue]
   }
   
-  @scala.inline
-  def PlainValue(
+  inline def PlainValue(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -52,8 +50,7 @@ object Scalar {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.PlainValue]
   }
   
-  @scala.inline
-  def QuoteValue(
+  inline def QuoteValue(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,

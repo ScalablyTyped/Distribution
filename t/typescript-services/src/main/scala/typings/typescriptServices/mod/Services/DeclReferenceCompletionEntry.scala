@@ -21,7 +21,7 @@ class DeclReferenceCompletionEntry protected ()
   /* CompleteClass */
   var fullSymbolName: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var hasBeenResolved: js.Any = js.native
   
   /* CompleteClass */

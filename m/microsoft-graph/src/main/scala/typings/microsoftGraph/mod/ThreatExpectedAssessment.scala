@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreatExpectedAssessment extends StObject
 object ThreatExpectedAssessment {
   
-  @scala.inline
-  def block: typings.microsoftGraph.microsoftGraphStrings.block = "block".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.block]
+  inline def block: typings.microsoftGraph.microsoftGraphStrings.block = "block".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.block]
   
-  @scala.inline
-  def unblock: typings.microsoftGraph.microsoftGraphStrings.unblock = "unblock".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unblock]
+  inline def unblock: typings.microsoftGraph.microsoftGraphStrings.unblock = "unblock".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unblock]
 }

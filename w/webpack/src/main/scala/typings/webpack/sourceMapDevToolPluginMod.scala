@@ -92,119 +92,82 @@ object sourceMapDevToolPluginMod {
   }
   object SourceMapDevToolPluginOptions {
     
-    @scala.inline
-    def apply(): SourceMapDevToolPluginOptions = {
+    inline def apply(): SourceMapDevToolPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceMapDevToolPluginOptions]
     }
     
-    @scala.inline
-    implicit class SourceMapDevToolPluginOptionsMutableBuilder[Self <: SourceMapDevToolPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SourceMapDevToolPluginOptions](x: Self) {
       
-      @scala.inline
-      def setAppend(value: `false` | String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: `false` | String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendNull: Self = StObject.set(x, "append", null)
+      inline def setAppendNull: Self = StObject.set(x, "append", null)
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setColumns(value: Boolean): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Boolean): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setExclude(value: Rules): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: Rules): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: Rule*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setFallbackModuleFilenameTemplate(value: js.Function | String): Self = StObject.set(x, "fallbackModuleFilenameTemplate", value.asInstanceOf[js.Any])
+      inline def setFallbackModuleFilenameTemplate(value: js.Function | String): Self = StObject.set(x, "fallbackModuleFilenameTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackModuleFilenameTemplateUndefined: Self = StObject.set(x, "fallbackModuleFilenameTemplate", js.undefined)
+      inline def setFallbackModuleFilenameTemplateUndefined: Self = StObject.set(x, "fallbackModuleFilenameTemplate", js.undefined)
       
-      @scala.inline
-      def setFileContext(value: String): Self = StObject.set(x, "fileContext", value.asInstanceOf[js.Any])
+      inline def setFileContext(value: String): Self = StObject.set(x, "fileContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileContextUndefined: Self = StObject.set(x, "fileContext", js.undefined)
+      inline def setFileContextUndefined: Self = StObject.set(x, "fileContext", js.undefined)
       
-      @scala.inline
-      def setFilename(value: `false` | String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: `false` | String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameNull: Self = StObject.set(x, "filename", null)
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setInclude(value: Rules): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: Rules): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: Rule*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setLineToLine(value: Boolean | Include): Self = StObject.set(x, "lineToLine", value.asInstanceOf[js.Any])
+      inline def setLineToLine(value: Boolean | Include): Self = StObject.set(x, "lineToLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineToLineUndefined: Self = StObject.set(x, "lineToLine", js.undefined)
+      inline def setLineToLineUndefined: Self = StObject.set(x, "lineToLine", js.undefined)
       
-      @scala.inline
-      def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleFilenameTemplate(value: js.Function | String): Self = StObject.set(x, "moduleFilenameTemplate", value.asInstanceOf[js.Any])
+      inline def setModuleFilenameTemplate(value: js.Function | String): Self = StObject.set(x, "moduleFilenameTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleFilenameTemplateUndefined: Self = StObject.set(x, "moduleFilenameTemplate", js.undefined)
+      inline def setModuleFilenameTemplateUndefined: Self = StObject.set(x, "moduleFilenameTemplate", js.undefined)
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setNoSources(value: Boolean): Self = StObject.set(x, "noSources", value.asInstanceOf[js.Any])
+      inline def setNoSources(value: Boolean): Self = StObject.set(x, "noSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSourcesUndefined: Self = StObject.set(x, "noSources", js.undefined)
+      inline def setNoSourcesUndefined: Self = StObject.set(x, "noSources", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
+      inline def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
+      inline def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
       
-      @scala.inline
-      def setTest(value: Rules): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Rules): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: Rule*): Self = StObject.set(x, "test", js.Array(value :_*))
     }
   }
 }

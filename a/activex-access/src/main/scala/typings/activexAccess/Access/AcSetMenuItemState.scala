@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcSetMenuItemState extends StObject
 object AcSetMenuItemState {
   
-  @scala.inline
-  def acMenuCheck: `3` = 3.asInstanceOf[`3`]
+  inline def acMenuCheck: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acMenuGray: `1` = 1.asInstanceOf[`1`]
+  inline def acMenuGray: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acMenuUncheck: `2` = 2.asInstanceOf[`2`]
+  inline def acMenuUncheck: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acMenuUngray: `0` = 0.asInstanceOf[`0`]
+  inline def acMenuUngray: `0` = 0.asInstanceOf[`0`]
 }

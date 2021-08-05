@@ -14,6 +14,5 @@ class bool[T /* <: js.UndefOr[Boolean | Null] */, C] ()
      with BooleanSchema[T, C]
 object bool {
   
-  @scala.inline
-  def apply: BooleanSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("bool").asInstanceOf[BooleanSchemaConstructor]
+  inline def apply: BooleanSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("bool").asInstanceOf[BooleanSchemaConstructor]
 }

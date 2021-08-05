@@ -12,19 +12,15 @@ trait TimelineFeedResponsePaginationInfo extends StObject {
 }
 object TimelineFeedResponsePaginationInfo {
   
-  @scala.inline
-  def apply(group_id: Null, source: Null): TimelineFeedResponsePaginationInfo = {
+  inline def apply(group_id: Null, source: Null): TimelineFeedResponsePaginationInfo = {
     val __obj = js.Dynamic.literal(group_id = group_id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineFeedResponsePaginationInfo]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponsePaginationInfoMutableBuilder[Self <: TimelineFeedResponsePaginationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponsePaginationInfo](x: Self) {
     
-    @scala.inline
-    def setGroup_id(value: Null): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
+    inline def setGroup_id(value: Null): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Null): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Null): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

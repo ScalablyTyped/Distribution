@@ -32,44 +32,32 @@ object pickListControlsMod {
   }
   object PickListControlsProps {
     
-    @scala.inline
-    def apply(): PickListControlsProps = {
+    inline def apply(): PickListControlsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickListControlsProps]
     }
     
-    @scala.inline
-    implicit class PickListControlsPropsMutableBuilder[Self <: PickListControlsProps] (val x: Self) extends AnyVal {
+    extension [Self <: PickListControlsProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setList(value: js.Array[js.Any]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[js.Any]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setListVarargs(value: js.Any*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: js.Any*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setOnReorder(value: /* e */ Direction => Unit): Self = StObject.set(x, "onReorder", js.Any.fromFunction1(value))
+      inline def setOnReorder(value: /* e */ Direction => Unit): Self = StObject.set(x, "onReorder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReorderUndefined: Self = StObject.set(x, "onReorder", js.undefined)
+      inline def setOnReorderUndefined: Self = StObject.set(x, "onReorder", js.undefined)
       
-      @scala.inline
-      def setSelection(value: js.Array[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: js.Array[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setSelectionVarargs(value: js.Any*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: js.Any*): Self = StObject.set(x, "selection", js.Array(value :_*))
     }
   }
 }

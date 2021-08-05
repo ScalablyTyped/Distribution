@@ -28,31 +28,23 @@ trait MarketoConnectorProfileCredentials extends StObject {
 }
 object MarketoConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(clientId: ClientId, clientSecret: ClientSecret): MarketoConnectorProfileCredentials = {
+  inline def apply(clientId: ClientId, clientSecret: ClientSecret): MarketoConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarketoConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class MarketoConnectorProfileCredentialsMutableBuilder[Self <: MarketoConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: MarketoConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: ClientSecret): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOAuthRequest(value: ConnectorOAuthRequest): Self = StObject.set(x, "oAuthRequest", value.asInstanceOf[js.Any])
+    inline def setOAuthRequest(value: ConnectorOAuthRequest): Self = StObject.set(x, "oAuthRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOAuthRequestUndefined: Self = StObject.set(x, "oAuthRequest", js.undefined)
+    inline def setOAuthRequestUndefined: Self = StObject.set(x, "oAuthRequest", js.undefined)
   }
 }

@@ -28,40 +28,29 @@ trait ClusterDbRevision extends StObject {
 }
 object ClusterDbRevision {
   
-  @scala.inline
-  def apply(): ClusterDbRevision = {
+  inline def apply(): ClusterDbRevision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterDbRevision]
   }
   
-  @scala.inline
-  implicit class ClusterDbRevisionMutableBuilder[Self <: ClusterDbRevision] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterDbRevision](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setCurrentDatabaseRevision(value: String): Self = StObject.set(x, "CurrentDatabaseRevision", value.asInstanceOf[js.Any])
+    inline def setCurrentDatabaseRevision(value: String): Self = StObject.set(x, "CurrentDatabaseRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDatabaseRevisionUndefined: Self = StObject.set(x, "CurrentDatabaseRevision", js.undefined)
+    inline def setCurrentDatabaseRevisionUndefined: Self = StObject.set(x, "CurrentDatabaseRevision", js.undefined)
     
-    @scala.inline
-    def setDatabaseRevisionReleaseDate(value: TStamp): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
+    inline def setDatabaseRevisionReleaseDate(value: TStamp): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseRevisionReleaseDateUndefined: Self = StObject.set(x, "DatabaseRevisionReleaseDate", js.undefined)
+    inline def setDatabaseRevisionReleaseDateUndefined: Self = StObject.set(x, "DatabaseRevisionReleaseDate", js.undefined)
     
-    @scala.inline
-    def setRevisionTargets(value: RevisionTargetsList): Self = StObject.set(x, "RevisionTargets", value.asInstanceOf[js.Any])
+    inline def setRevisionTargets(value: RevisionTargetsList): Self = StObject.set(x, "RevisionTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionTargetsUndefined: Self = StObject.set(x, "RevisionTargets", js.undefined)
+    inline def setRevisionTargetsUndefined: Self = StObject.set(x, "RevisionTargets", js.undefined)
     
-    @scala.inline
-    def setRevisionTargetsVarargs(value: RevisionTarget*): Self = StObject.set(x, "RevisionTargets", js.Array(value :_*))
+    inline def setRevisionTargetsVarargs(value: RevisionTarget*): Self = StObject.set(x, "RevisionTargets", js.Array(value :_*))
   }
 }

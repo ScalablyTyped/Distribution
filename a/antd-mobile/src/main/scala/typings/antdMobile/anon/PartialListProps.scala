@@ -23,55 +23,39 @@ trait PartialListProps extends StObject {
 }
 object PartialListProps {
   
-  @scala.inline
-  def apply(): PartialListProps = {
+  inline def apply(): PartialListProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialListProps]
   }
   
-  @scala.inline
-  implicit class PartialListPropsMutableBuilder[Self <: PartialListProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialListProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+    inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
-    @scala.inline
-    def setRenderFooter(value: js.Function0[ReactNode] | ReactNode): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
+    inline def setRenderFooter(value: js.Function0[ReactNode] | ReactNode): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderFooterFunction0(value: () => ReactNode): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
+    inline def setRenderFooterFunction0(value: () => ReactNode): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
+    inline def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
     
-    @scala.inline
-    def setRenderHeader(value: js.Function0[ReactNode] | ReactNode): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
+    inline def setRenderHeader(value: js.Function0[ReactNode] | ReactNode): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderHeaderFunction0(value: () => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
+    inline def setRenderHeaderFunction0(value: () => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
+    inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

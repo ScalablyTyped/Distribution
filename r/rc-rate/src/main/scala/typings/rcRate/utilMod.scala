@@ -11,6 +11,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOffsetLeft(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetLeft")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getOffsetLeft(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetLeft")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

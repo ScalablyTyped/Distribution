@@ -5,5 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def registerGlobals(): scala.Unit = typings.reactNativeWebrtc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobals")().asInstanceOf[scala.Unit]
+inline def registerGlobals(): scala.Unit = typings.reactNativeWebrtc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerGlobals")().asInstanceOf[scala.Unit]

@@ -13,19 +13,15 @@ trait PutTraceSegmentsRequest extends StObject {
 }
 object PutTraceSegmentsRequest {
   
-  @scala.inline
-  def apply(TraceSegmentDocuments: TraceSegmentDocumentList): PutTraceSegmentsRequest = {
+  inline def apply(TraceSegmentDocuments: TraceSegmentDocumentList): PutTraceSegmentsRequest = {
     val __obj = js.Dynamic.literal(TraceSegmentDocuments = TraceSegmentDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutTraceSegmentsRequest]
   }
   
-  @scala.inline
-  implicit class PutTraceSegmentsRequestMutableBuilder[Self <: PutTraceSegmentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutTraceSegmentsRequest](x: Self) {
     
-    @scala.inline
-    def setTraceSegmentDocuments(value: TraceSegmentDocumentList): Self = StObject.set(x, "TraceSegmentDocuments", value.asInstanceOf[js.Any])
+    inline def setTraceSegmentDocuments(value: TraceSegmentDocumentList): Self = StObject.set(x, "TraceSegmentDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceSegmentDocumentsVarargs(value: TraceSegmentDocument*): Self = StObject.set(x, "TraceSegmentDocuments", js.Array(value :_*))
+    inline def setTraceSegmentDocumentsVarargs(value: TraceSegmentDocument*): Self = StObject.set(x, "TraceSegmentDocuments", js.Array(value :_*))
   }
 }

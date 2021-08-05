@@ -23,14 +23,11 @@ object typesMod {
   trait ExtrapolateType extends StObject
   object ExtrapolateType {
     
-    @scala.inline
-    def clamp: typings.reactSpringShared.reactSpringSharedStrings.clamp = "clamp".asInstanceOf[typings.reactSpringShared.reactSpringSharedStrings.clamp]
+    inline def clamp: typings.reactSpringShared.reactSpringSharedStrings.clamp = "clamp".asInstanceOf[typings.reactSpringShared.reactSpringSharedStrings.clamp]
     
-    @scala.inline
-    def extend: typings.reactSpringShared.reactSpringSharedStrings.extend = "extend".asInstanceOf[typings.reactSpringShared.reactSpringSharedStrings.extend]
+    inline def extend: typings.reactSpringShared.reactSpringSharedStrings.extend = "extend".asInstanceOf[typings.reactSpringShared.reactSpringSharedStrings.extend]
     
-    @scala.inline
-    def identity: typings.reactSpringShared.reactSpringSharedStrings.identity = "identity".asInstanceOf[typings.reactSpringShared.reactSpringSharedStrings.identity]
+    inline def identity: typings.reactSpringShared.reactSpringSharedStrings.identity = "identity".asInstanceOf[typings.reactSpringShared.reactSpringSharedStrings.identity]
   }
   
   type FrameRequestCallback = js.Function1[/* time */ js.UndefOr[Double], Unit]
@@ -105,59 +102,42 @@ object typesMod {
   }
   object InterpolatorConfig {
     
-    @scala.inline
-    def apply[Out](output: js.Array[Constrain[Out, Animatable[js.Any]]]): InterpolatorConfig[Out] = {
+    inline def apply[Out](output: js.Array[Constrain[Out, Animatable[js.Any]]]): InterpolatorConfig[Out] = {
       val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterpolatorConfig[Out]]
     }
     
-    @scala.inline
-    implicit class InterpolatorConfigMutableBuilder[Self <: InterpolatorConfig[?], Out] (val x: Self & InterpolatorConfig[Out]) extends AnyVal {
+    extension [Self <: InterpolatorConfig[?], Out](x: Self & InterpolatorConfig[Out]) {
       
-      @scala.inline
-      def setEasing(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasing(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setExtrapolate(value: ExtrapolateType): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
+      inline def setExtrapolate(value: ExtrapolateType): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtrapolateLeft(value: ExtrapolateType): Self = StObject.set(x, "extrapolateLeft", value.asInstanceOf[js.Any])
+      inline def setExtrapolateLeft(value: ExtrapolateType): Self = StObject.set(x, "extrapolateLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtrapolateLeftUndefined: Self = StObject.set(x, "extrapolateLeft", js.undefined)
+      inline def setExtrapolateLeftUndefined: Self = StObject.set(x, "extrapolateLeft", js.undefined)
       
-      @scala.inline
-      def setExtrapolateRight(value: ExtrapolateType): Self = StObject.set(x, "extrapolateRight", value.asInstanceOf[js.Any])
+      inline def setExtrapolateRight(value: ExtrapolateType): Self = StObject.set(x, "extrapolateRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtrapolateRightUndefined: Self = StObject.set(x, "extrapolateRight", js.undefined)
+      inline def setExtrapolateRightUndefined: Self = StObject.set(x, "extrapolateRight", js.undefined)
       
-      @scala.inline
-      def setExtrapolateUndefined: Self = StObject.set(x, "extrapolate", js.undefined)
+      inline def setExtrapolateUndefined: Self = StObject.set(x, "extrapolate", js.undefined)
       
-      @scala.inline
-      def setMap(value: /* value */ Double => Double): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* value */ Double => Double): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setOutput(value: js.Array[Constrain[Out, Animatable[js.Any]]]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Array[Constrain[Out, Animatable[js.Any]]]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputVarargs(value: (Constrain[Out, Animatable[js.Any]])*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: (Constrain[Out, Animatable[js.Any]])*): Self = StObject.set(x, "output", js.Array(value :_*))
       
-      @scala.inline
-      def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     }
   }
   

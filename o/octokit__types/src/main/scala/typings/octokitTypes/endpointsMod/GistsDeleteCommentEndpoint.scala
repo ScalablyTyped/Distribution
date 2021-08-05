@@ -12,19 +12,15 @@ trait GistsDeleteCommentEndpoint extends StObject {
 }
 object GistsDeleteCommentEndpoint {
   
-  @scala.inline
-  def apply(comment_id: Double, gist_id: String): GistsDeleteCommentEndpoint = {
+  inline def apply(comment_id: Double, gist_id: String): GistsDeleteCommentEndpoint = {
     val __obj = js.Dynamic.literal(comment_id = comment_id.asInstanceOf[js.Any], gist_id = gist_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsDeleteCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class GistsDeleteCommentEndpointMutableBuilder[Self <: GistsDeleteCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GistsDeleteCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
+    inline def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
+    inline def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait ListTestGridSessionActionsRequest extends StObject {
 }
 object ListTestGridSessionActionsRequest {
   
-  @scala.inline
-  def apply(sessionArn: DeviceFarmArn): ListTestGridSessionActionsRequest = {
+  inline def apply(sessionArn: DeviceFarmArn): ListTestGridSessionActionsRequest = {
     val __obj = js.Dynamic.literal(sessionArn = sessionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridSessionActionsRequest]
   }
   
-  @scala.inline
-  implicit class ListTestGridSessionActionsRequestMutableBuilder[Self <: ListTestGridSessionActionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestGridSessionActionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
+    inline def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
+    inline def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSessionArn(value: DeviceFarmArn): Self = StObject.set(x, "sessionArn", value.asInstanceOf[js.Any])
+    inline def setSessionArn(value: DeviceFarmArn): Self = StObject.set(x, "sessionArn", value.asInstanceOf[js.Any])
   }
 }

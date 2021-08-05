@@ -93,30 +93,23 @@ object mod {
         @js.native
         val ^ : MessagingEvents = js.native
         
-        @scala.inline
-        implicit class MessagingEventsMutableBuilder[Self <: MessagingEvents] (val x: Self) extends AnyVal {
+        extension [Self <: MessagingEvents](x: Self) {
           
-          @scala.inline
-          def setInstanceIdChanged(
+          inline def setInstanceIdChanged(
             value: /* event */ PropertyChangedEvent[typings.tabrisPluginFirebase.mod.global.firebase.Messaging, String] => Unit
           ): Self = StObject.set(x, "instanceIdChanged", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setInstanceIdChangedUndefined: Self = StObject.set(x, "instanceIdChanged", js.undefined)
+          inline def setInstanceIdChangedUndefined: Self = StObject.set(x, "instanceIdChanged", js.undefined)
           
-          @scala.inline
-          def setMessage(value: /* event */ typings.tabrisPluginFirebase.mod.global.firebase.MessageEvent => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+          inline def setMessage(value: /* event */ typings.tabrisPluginFirebase.mod.global.firebase.MessageEvent => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+          inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
           
-          @scala.inline
-          def setTokenChanged(
+          inline def setTokenChanged(
             value: /* event */ PropertyChangedEvent[typings.tabrisPluginFirebase.mod.global.firebase.Messaging, String] => Unit
           ): Self = StObject.set(x, "tokenChanged", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setTokenChangedUndefined: Self = StObject.set(x, "tokenChanged", js.undefined)
+          inline def setTokenChangedUndefined: Self = StObject.set(x, "tokenChanged", js.undefined)
         }
       }
       
@@ -131,32 +124,24 @@ object mod {
       }
       object AnalyticsProperties {
         
-        @scala.inline
-        def apply(): AnalyticsProperties = {
+        inline def apply(): AnalyticsProperties = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[AnalyticsProperties]
         }
         
-        @scala.inline
-        implicit class AnalyticsPropertiesMutableBuilder[Self <: AnalyticsProperties] (val x: Self) extends AnyVal {
+        extension [Self <: AnalyticsProperties](x: Self) {
           
-          @scala.inline
-          def setAnalyticsCollectionEnabled(value: Boolean): Self = StObject.set(x, "analyticsCollectionEnabled", value.asInstanceOf[js.Any])
+          inline def setAnalyticsCollectionEnabled(value: Boolean): Self = StObject.set(x, "analyticsCollectionEnabled", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAnalyticsCollectionEnabledUndefined: Self = StObject.set(x, "analyticsCollectionEnabled", js.undefined)
+          inline def setAnalyticsCollectionEnabledUndefined: Self = StObject.set(x, "analyticsCollectionEnabled", js.undefined)
           
-          @scala.inline
-          def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+          inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
+          inline def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
           
-          @scala.inline
-          def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+          inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+          inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
         }
       }
       
@@ -172,23 +157,18 @@ object mod {
         }
         object Analytics {
           
-          @scala.inline
-          def apply(analyticsCollectionEnabled: Boolean, screenName: String, userId: String): typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics = {
+          inline def apply(analyticsCollectionEnabled: Boolean, screenName: String, userId: String): typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics = {
             val __obj = js.Dynamic.literal(analyticsCollectionEnabled = analyticsCollectionEnabled.asInstanceOf[js.Any], screenName = screenName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
             __obj.asInstanceOf[typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics]
           }
           
-          @scala.inline
-          implicit class AnalyticsMutableBuilder[Self <: typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics] (val x: Self) extends AnyVal {
+          extension [Self <: typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics](x: Self) {
             
-            @scala.inline
-            def setAnalyticsCollectionEnabled(value: Boolean): Self = StObject.set(x, "analyticsCollectionEnabled", value.asInstanceOf[js.Any])
+            inline def setAnalyticsCollectionEnabled(value: Boolean): Self = StObject.set(x, "analyticsCollectionEnabled", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+            inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+            inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
           }
         }
       }

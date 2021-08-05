@@ -12,19 +12,15 @@ trait PartialCssBaselineProps extends StObject {
 }
 object PartialCssBaselineProps {
   
-  @scala.inline
-  def apply(): PartialCssBaselineProps = {
+  inline def apply(): PartialCssBaselineProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCssBaselineProps]
   }
   
-  @scala.inline
-  implicit class PartialCssBaselinePropsMutableBuilder[Self <: PartialCssBaselineProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCssBaselineProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

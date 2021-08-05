@@ -21,19 +21,15 @@ trait ReadonlyLatLngLiteral extends StObject {
 }
 object ReadonlyLatLngLiteral {
   
-  @scala.inline
-  def apply(lat: Double, lng: Double): ReadonlyLatLngLiteral = {
+  inline def apply(lat: Double, lng: Double): ReadonlyLatLngLiteral = {
     val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyLatLngLiteral]
   }
   
-  @scala.inline
-  implicit class ReadonlyLatLngLiteralMutableBuilder[Self <: ReadonlyLatLngLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyLatLngLiteral](x: Self) {
     
-    @scala.inline
-    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
   }
 }

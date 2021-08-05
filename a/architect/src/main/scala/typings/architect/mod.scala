@@ -16,15 +16,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createApp(config: Config): Architect = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any]).asInstanceOf[Architect]
-  @scala.inline
-  def createApp(config: Config, callback: js.Function2[/* err */ Error, /* app */ Architect, Unit]): Architect = (^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Architect]
+  inline def createApp(config: Config): Architect = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any]).asInstanceOf[Architect]
+  inline def createApp(config: Config, callback: js.Function2[/* err */ Error, /* app */ Architect, Unit]): Architect = (^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Architect]
   
-  @scala.inline
-  def loadConfig(configPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def loadConfig(configPath: String, callback: js.Function2[/* err */ Error, /* config */ Config, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadConfig(configPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadConfig(configPath: String, callback: js.Function2[/* err */ Error, /* config */ Config, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Architect extends EventEmitter {

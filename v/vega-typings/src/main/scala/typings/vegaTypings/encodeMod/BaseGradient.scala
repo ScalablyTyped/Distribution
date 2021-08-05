@@ -15,16 +15,13 @@ trait BaseGradient extends StObject {
 }
 object BaseGradient {
   
-  @scala.inline
-  def apply(gradient: linear | radial): BaseGradient = {
+  inline def apply(gradient: linear | radial): BaseGradient = {
     val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseGradient]
   }
   
-  @scala.inline
-  implicit class BaseGradientMutableBuilder[Self <: BaseGradient] (val x: Self) extends AnyVal {
+  extension [Self <: BaseGradient](x: Self) {
     
-    @scala.inline
-    def setGradient(value: linear | radial): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: linear | radial): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
   }
 }

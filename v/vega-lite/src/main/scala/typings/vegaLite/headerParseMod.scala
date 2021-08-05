@@ -15,11 +15,8 @@ object headerParseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getHeaderType(orient: AxisOrient): footer | header = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderType")(orient.asInstanceOf[js.Any]).asInstanceOf[footer | header]
-  @scala.inline
-  def getHeaderType(orient: SignalRef): footer | header = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderType")(orient.asInstanceOf[js.Any]).asInstanceOf[footer | header]
+  inline def getHeaderType(orient: AxisOrient): footer | header = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderType")(orient.asInstanceOf[js.Any]).asInstanceOf[footer | header]
+  inline def getHeaderType(orient: SignalRef): footer | header = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderType")(orient.asInstanceOf[js.Any]).asInstanceOf[footer | header]
   
-  @scala.inline
-  def parseFacetHeaders(model: FacetModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFacetHeaders")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def parseFacetHeaders(model: FacetModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFacetHeaders")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

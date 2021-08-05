@@ -17,8 +17,7 @@ trait TupleDictionary extends StObject {
 }
 object TupleDictionary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: Keys,
     get: (Double, Double) => Double,
     reset: () => Unit,
@@ -28,19 +27,14 @@ object TupleDictionary {
     __obj.asInstanceOf[TupleDictionary]
   }
   
-  @scala.inline
-  implicit class TupleDictionaryMutableBuilder[Self <: TupleDictionary] (val x: Self) extends AnyVal {
+  extension [Self <: TupleDictionary](x: Self) {
     
-    @scala.inline
-    def setData(value: Keys): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Keys): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
   }
 }

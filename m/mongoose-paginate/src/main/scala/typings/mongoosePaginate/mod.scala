@@ -11,73 +11,57 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def model[T /* <: Document */](name: String): PaginateModel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[PaginateModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](
+  inline def model[T /* <: Document */](name: String): PaginateModel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[PaginateModel[T]]
+  inline def model[T /* <: Document */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](
+  inline def model[T /* <: Document */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
     collection: String
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](
+  inline def model[T /* <: Document */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
     collection: String,
     skipInit: Boolean
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](
+  inline def model[T /* <: Document */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
     collection: Unit,
     skipInit: Boolean
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: Unit, collection: String): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: Unit, collection: String, skipInit: Boolean): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: Unit, collection: String): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: Unit, collection: String, skipInit: Boolean): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
   
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
     collection: String
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
     collection: String,
     skipInit: Boolean
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
     schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
     collection: Unit,
     skipInit: Boolean
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<T> * / any */ @js.native
@@ -129,65 +113,46 @@ object mod {
   }
   object PaginateOptions {
     
-    @scala.inline
-    def apply(): PaginateOptions = {
+    inline def apply(): PaginateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginateOptions]
     }
     
-    @scala.inline
-    implicit class PaginateOptionsMutableBuilder[Self <: PaginateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PaginateOptions](x: Self) {
       
-      @scala.inline
-      def setLean(value: Boolean): Self = StObject.set(x, "lean", value.asInstanceOf[js.Any])
+      inline def setLean(value: Boolean): Self = StObject.set(x, "lean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeanUndefined: Self = StObject.set(x, "lean", js.undefined)
+      inline def setLeanUndefined: Self = StObject.set(x, "lean", js.undefined)
       
-      @scala.inline
-      def setLeanWithId(value: Boolean): Self = StObject.set(x, "leanWithId", value.asInstanceOf[js.Any])
+      inline def setLeanWithId(value: Boolean): Self = StObject.set(x, "leanWithId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeanWithIdUndefined: Self = StObject.set(x, "leanWithId", js.undefined)
+      inline def setLeanWithIdUndefined: Self = StObject.set(x, "leanWithId", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setPopulate(value: (js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
+      inline def setPopulate(value: (js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
+      inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      @scala.inline
-      def setPopulateVarargs(value: (js.Object | String)*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: (js.Object | String)*): Self = StObject.set(x, "populate", js.Array(value :_*))
       
-      @scala.inline
-      def setSelect(value: js.Object | String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: js.Object | String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setSort(value: js.Object | String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: js.Object | String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
@@ -207,44 +172,32 @@ object mod {
   }
   object PaginateResult {
     
-    @scala.inline
-    def apply[T](docs: js.Array[T], limit: Double, total: Double): PaginateResult[T] = {
+    inline def apply[T](docs: js.Array[T], limit: Double, total: Double): PaginateResult[T] = {
       val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginateResult[T]]
     }
     
-    @scala.inline
-    implicit class PaginateResultMutableBuilder[Self <: PaginateResult[?], T] (val x: Self & PaginateResult[T]) extends AnyVal {
+    extension [Self <: PaginateResult[?], T](x: Self & PaginateResult[T]) {
       
-      @scala.inline
-      def setDocs(value: js.Array[T]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+      inline def setDocs(value: js.Array[T]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsVarargs(value: T*): Self = StObject.set(x, "docs", js.Array(value :_*))
+      inline def setDocsVarargs(value: T*): Self = StObject.set(x, "docs", js.Array(value :_*))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+      inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,52 +225,38 @@ object mod {
   }
   object QueryPopulateOptions {
     
-    @scala.inline
-    def apply(path: String): QueryPopulateOptions = {
+    inline def apply(path: String): QueryPopulateOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryPopulateOptions]
     }
     
-    @scala.inline
-    implicit class QueryPopulateOptionsMutableBuilder[Self <: QueryPopulateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryPopulateOptions](x: Self) {
       
-      @scala.inline
-      def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setModel(
+      inline def setModel(
         value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<any> */ js.Any)
       ): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulate(value: QueryPopulateOptions | js.Array[QueryPopulateOptions]): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
+      inline def setPopulate(value: QueryPopulateOptions | js.Array[QueryPopulateOptions]): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
+      inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      @scala.inline
-      def setPopulateVarargs(value: QueryPopulateOptions*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: QueryPopulateOptions*): Self = StObject.set(x, "populate", js.Array(value :_*))
       
-      @scala.inline
-      def setSelect(value: js.Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: js.Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     }
   }
 }

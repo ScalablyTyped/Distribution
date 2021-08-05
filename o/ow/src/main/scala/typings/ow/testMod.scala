@@ -11,8 +11,6 @@ object testMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](value: T, label: String, predicate: BasePredicate[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], label.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default[T](value: T, label: js.Function, predicate: BasePredicate[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], label.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[T](value: T, label: String, predicate: BasePredicate[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], label.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[T](value: T, label: js.Function, predicate: BasePredicate[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], label.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -13,16 +13,13 @@ trait AutoFilterInfo
 }
 object AutoFilterInfo {
   
-  @scala.inline
-  def apply(ref: String): AutoFilterInfo = {
+  inline def apply(ref: String): AutoFilterInfo = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFilterInfo]
   }
   
-  @scala.inline
-  implicit class AutoFilterInfoMutableBuilder[Self <: AutoFilterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AutoFilterInfo](x: Self) {
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }
 }

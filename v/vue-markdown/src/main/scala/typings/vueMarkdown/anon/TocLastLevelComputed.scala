@@ -10,16 +10,13 @@ trait TocLastLevelComputed extends StObject {
 }
 object TocLastLevelComputed {
   
-  @scala.inline
-  def apply(tocLastLevelComputed: js.Any): TocLastLevelComputed = {
+  inline def apply(tocLastLevelComputed: js.Any): TocLastLevelComputed = {
     val __obj = js.Dynamic.literal(tocLastLevelComputed = tocLastLevelComputed.asInstanceOf[js.Any])
     __obj.asInstanceOf[TocLastLevelComputed]
   }
   
-  @scala.inline
-  implicit class TocLastLevelComputedMutableBuilder[Self <: TocLastLevelComputed] (val x: Self) extends AnyVal {
+  extension [Self <: TocLastLevelComputed](x: Self) {
     
-    @scala.inline
-    def setTocLastLevelComputed(value: js.Any): Self = StObject.set(x, "tocLastLevelComputed", value.asInstanceOf[js.Any])
+    inline def setTocLastLevelComputed(value: js.Any): Self = StObject.set(x, "tocLastLevelComputed", value.asInstanceOf[js.Any])
   }
 }

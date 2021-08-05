@@ -10,10 +10,8 @@ object mod {
   /**
     * A replacement for process.exit that ensures stdio are fully drained before exiting.
     */
-  @scala.inline
-  def apply(code: Double): Unit = ^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(code: Double, streams: js.Tuple2[WritableStream, WritableStream]): Unit = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(code: Double): Unit = ^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(code: Double, streams: js.Tuple2[WritableStream, WritableStream]): Unit = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("exit", JSImport.Namespace)
   @js.native

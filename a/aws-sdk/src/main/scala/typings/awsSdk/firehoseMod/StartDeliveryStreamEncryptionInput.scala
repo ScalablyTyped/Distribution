@@ -18,22 +18,17 @@ trait StartDeliveryStreamEncryptionInput extends StObject {
 }
 object StartDeliveryStreamEncryptionInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName): StartDeliveryStreamEncryptionInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName): StartDeliveryStreamEncryptionInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDeliveryStreamEncryptionInput]
   }
   
-  @scala.inline
-  implicit class StartDeliveryStreamEncryptionInputMutableBuilder[Self <: StartDeliveryStreamEncryptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartDeliveryStreamEncryptionInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamEncryptionConfigurationInput(value: DeliveryStreamEncryptionConfigurationInput): Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamEncryptionConfigurationInput(value: DeliveryStreamEncryptionConfigurationInput): Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamEncryptionConfigurationInputUndefined: Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", js.undefined)
+    inline def setDeliveryStreamEncryptionConfigurationInputUndefined: Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", js.undefined)
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait GetJourneyDateRangeKpiResponse extends StObject {
 }
 object GetJourneyDateRangeKpiResponse {
   
-  @scala.inline
-  def apply(JourneyDateRangeKpiResponse: JourneyDateRangeKpiResponse): GetJourneyDateRangeKpiResponse = {
+  inline def apply(JourneyDateRangeKpiResponse: JourneyDateRangeKpiResponse): GetJourneyDateRangeKpiResponse = {
     val __obj = js.Dynamic.literal(JourneyDateRangeKpiResponse = JourneyDateRangeKpiResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJourneyDateRangeKpiResponse]
   }
   
-  @scala.inline
-  implicit class GetJourneyDateRangeKpiResponseMutableBuilder[Self <: GetJourneyDateRangeKpiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetJourneyDateRangeKpiResponse](x: Self) {
     
-    @scala.inline
-    def setJourneyDateRangeKpiResponse(value: JourneyDateRangeKpiResponse): Self = StObject.set(x, "JourneyDateRangeKpiResponse", value.asInstanceOf[js.Any])
+    inline def setJourneyDateRangeKpiResponse(value: JourneyDateRangeKpiResponse): Self = StObject.set(x, "JourneyDateRangeKpiResponse", value.asInstanceOf[js.Any])
   }
 }

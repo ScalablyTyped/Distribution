@@ -12,22 +12,17 @@ trait KoLiteCommandOptions extends StObject {
 }
 object KoLiteCommandOptions {
   
-  @scala.inline
-  def apply(execute: /* repeated */ js.Any => js.Any): KoLiteCommandOptions = {
+  inline def apply(execute: /* repeated */ js.Any => js.Any): KoLiteCommandOptions = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[KoLiteCommandOptions]
   }
   
-  @scala.inline
-  implicit class KoLiteCommandOptionsMutableBuilder[Self <: KoLiteCommandOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KoLiteCommandOptions](x: Self) {
     
-    @scala.inline
-    def setCanExecute(value: /* isExecuting */ Boolean => js.Any): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
+    inline def setCanExecute(value: /* isExecuting */ Boolean => js.Any): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
+    inline def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
     
-    @scala.inline
-    def setExecute(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

@@ -17,6 +17,6 @@ object projectInfoManagerMod {
     
     val packager: Packager = js.native
     
-    var saveConfigurationAndMetadata: js.Any = js.native
+    /* private */ var saveConfigurationAndMetadata: js.Any = js.native
   }
 }

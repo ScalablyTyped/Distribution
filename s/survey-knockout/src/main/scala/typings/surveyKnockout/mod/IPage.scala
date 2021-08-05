@@ -13,8 +13,7 @@ trait IPage
 }
 object IPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addElement: (IElement, Double) => js.Any,
     containsErrors: Boolean,
     delete: () => js.Any,
@@ -44,10 +43,8 @@ object IPage {
     __obj.asInstanceOf[IPage]
   }
   
-  @scala.inline
-  implicit class IPageMutableBuilder[Self <: IPage] (val x: Self) extends AnyVal {
+  extension [Self <: IPage](x: Self) {
     
-    @scala.inline
-    def setIsStarted(value: Boolean): Self = StObject.set(x, "isStarted", value.asInstanceOf[js.Any])
+    inline def setIsStarted(value: Boolean): Self = StObject.set(x, "isStarted", value.asInstanceOf[js.Any])
   }
 }

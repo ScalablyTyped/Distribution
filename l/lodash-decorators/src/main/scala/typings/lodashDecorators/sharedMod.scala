@@ -23,35 +23,26 @@ object sharedMod {
   }
   object ApplicateOptions {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any], config: DecoratorConfig, target: js.Any, value: js.Any): ApplicateOptions = {
+    inline def apply(args: js.Array[js.Any], config: DecoratorConfig, target: js.Any, value: js.Any): ApplicateOptions = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicateOptions]
     }
     
-    @scala.inline
-    implicit class ApplicateOptionsMutableBuilder[Self <: ApplicateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicateOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setConfig(value: DecoratorConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: DecoratorConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstance(value: js.Object): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: js.Object): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,38 +59,28 @@ object sharedMod {
   }
   object DebounceOptions {
     
-    @scala.inline
-    def apply(): DebounceOptions = {
+    inline def apply(): DebounceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DebounceOptions]
     }
     
-    @scala.inline
-    implicit class DebounceOptionsMutableBuilder[Self <: DebounceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DebounceOptions](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
+      inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
+      inline def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
       
-      @scala.inline
-      def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
   
@@ -113,32 +94,24 @@ object sharedMod {
   }
   object MemoizeConfig {
     
-    @scala.inline
-    def apply[T, U](): MemoizeConfig[T, U] = {
+    inline def apply[T, U](): MemoizeConfig[T, U] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MemoizeConfig[T, U]]
     }
     
-    @scala.inline
-    implicit class MemoizeConfigMutableBuilder[Self <: MemoizeConfig[?, ?], T, U] (val x: Self & (MemoizeConfig[T, U])) extends AnyVal {
+    extension [Self <: MemoizeConfig[?, ?], T, U](x: Self & (MemoizeConfig[T, U])) {
       
-      @scala.inline
-      def setCache(value: MemoizeMap[T, U]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: MemoizeMap[T, U]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setResolver(value: ResolvableFunction): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+      inline def setResolver(value: ResolvableFunction): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+      inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
       
-      @scala.inline
-      def setType(value: Instantiable[T, U]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Instantiable[T, U]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -156,32 +129,24 @@ object sharedMod {
   }
   object MemoizeMap {
     
-    @scala.inline
-    def apply[T, U](delete: T => Unit, get: T => U, has: T => Boolean, set: (T, U) => Unit): MemoizeMap[T, U] = {
+    inline def apply[T, U](delete: T => Unit, get: T => U, has: T => Boolean, set: (T, U) => Unit): MemoizeMap[T, U] = {
       val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[MemoizeMap[T, U]]
     }
     
-    @scala.inline
-    implicit class MemoizeMapMutableBuilder[Self <: MemoizeMap[?, ?], T, U] (val x: Self & (MemoizeMap[T, U])) extends AnyVal {
+    extension [Self <: MemoizeMap[?, ?], T, U](x: Self & (MemoizeMap[T, U])) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setDelete(value: T => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: T => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: T => U): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: T => U): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (T, U) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (T, U) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -193,26 +158,20 @@ object sharedMod {
   }
   object ThrottleOptions {
     
-    @scala.inline
-    def apply(): ThrottleOptions = {
+    inline def apply(): ThrottleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThrottleOptions]
     }
     
-    @scala.inline
-    implicit class ThrottleOptionsMutableBuilder[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ThrottleOptions](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
 }

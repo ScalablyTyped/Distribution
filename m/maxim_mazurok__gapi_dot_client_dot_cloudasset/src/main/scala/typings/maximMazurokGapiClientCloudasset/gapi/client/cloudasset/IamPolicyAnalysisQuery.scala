@@ -28,43 +28,31 @@ trait IamPolicyAnalysisQuery extends StObject {
 }
 object IamPolicyAnalysisQuery {
   
-  @scala.inline
-  def apply(): IamPolicyAnalysisQuery = {
+  inline def apply(): IamPolicyAnalysisQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IamPolicyAnalysisQuery]
   }
   
-  @scala.inline
-  implicit class IamPolicyAnalysisQueryMutableBuilder[Self <: IamPolicyAnalysisQuery] (val x: Self) extends AnyVal {
+  extension [Self <: IamPolicyAnalysisQuery](x: Self) {
     
-    @scala.inline
-    def setAccessSelector(value: AccessSelector): Self = StObject.set(x, "accessSelector", value.asInstanceOf[js.Any])
+    inline def setAccessSelector(value: AccessSelector): Self = StObject.set(x, "accessSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessSelectorUndefined: Self = StObject.set(x, "accessSelector", js.undefined)
+    inline def setAccessSelectorUndefined: Self = StObject.set(x, "accessSelector", js.undefined)
     
-    @scala.inline
-    def setIdentitySelector(value: IdentitySelector): Self = StObject.set(x, "identitySelector", value.asInstanceOf[js.Any])
+    inline def setIdentitySelector(value: IdentitySelector): Self = StObject.set(x, "identitySelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitySelectorUndefined: Self = StObject.set(x, "identitySelector", js.undefined)
+    inline def setIdentitySelectorUndefined: Self = StObject.set(x, "identitySelector", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceSelector(value: ResourceSelector): Self = StObject.set(x, "resourceSelector", value.asInstanceOf[js.Any])
+    inline def setResourceSelector(value: ResourceSelector): Self = StObject.set(x, "resourceSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceSelectorUndefined: Self = StObject.set(x, "resourceSelector", js.undefined)
+    inline def setResourceSelectorUndefined: Self = StObject.set(x, "resourceSelector", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

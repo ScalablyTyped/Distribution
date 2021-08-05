@@ -18,19 +18,15 @@ trait TimestampRange extends StObject {
 }
 object TimestampRange {
   
-  @scala.inline
-  def apply(EndTimestamp: Timestamp, StartTimestamp: Timestamp): TimestampRange = {
+  inline def apply(EndTimestamp: Timestamp, StartTimestamp: Timestamp): TimestampRange = {
     val __obj = js.Dynamic.literal(EndTimestamp = EndTimestamp.asInstanceOf[js.Any], StartTimestamp = StartTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimestampRange]
   }
   
-  @scala.inline
-  implicit class TimestampRangeMutableBuilder[Self <: TimestampRange] (val x: Self) extends AnyVal {
+  extension [Self <: TimestampRange](x: Self) {
     
-    @scala.inline
-    def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
+    inline def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
   }
 }

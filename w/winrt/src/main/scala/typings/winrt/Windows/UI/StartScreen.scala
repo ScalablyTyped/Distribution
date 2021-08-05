@@ -123,8 +123,7 @@ object StartScreen {
   }
   object ISecondaryTileFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createTile: (String, String, String, String, TileOptions, Uri) => SecondaryTile,
       createWideTile: (String, String, String, String, TileOptions, Uri, Uri) => SecondaryTile,
       createWithId: String => SecondaryTile
@@ -133,17 +132,13 @@ object StartScreen {
       __obj.asInstanceOf[ISecondaryTileFactory]
     }
     
-    @scala.inline
-    implicit class ISecondaryTileFactoryMutableBuilder[Self <: ISecondaryTileFactory] (val x: Self) extends AnyVal {
+    extension [Self <: ISecondaryTileFactory](x: Self) {
       
-      @scala.inline
-      def setCreateTile(value: (String, String, String, String, TileOptions, Uri) => SecondaryTile): Self = StObject.set(x, "createTile", js.Any.fromFunction6(value))
+      inline def setCreateTile(value: (String, String, String, String, TileOptions, Uri) => SecondaryTile): Self = StObject.set(x, "createTile", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setCreateWideTile(value: (String, String, String, String, TileOptions, Uri, Uri) => SecondaryTile): Self = StObject.set(x, "createWideTile", js.Any.fromFunction7(value))
+      inline def setCreateWideTile(value: (String, String, String, String, TileOptions, Uri, Uri) => SecondaryTile): Self = StObject.set(x, "createWideTile", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setCreateWithId(value: String => SecondaryTile): Self = StObject.set(x, "createWithId", js.Any.fromFunction1(value))
+      inline def setCreateWithId(value: String => SecondaryTile): Self = StObject.set(x, "createWithId", js.Any.fromFunction1(value))
     }
   }
   

@@ -16,25 +16,19 @@ trait EventCall[T] extends StObject {
 }
 object EventCall {
   
-  @scala.inline
-  def apply[T](headers: EventHttpHeaders, params: T, statusCode: Double, url: EventUrl): EventCall[T] = {
+  inline def apply[T](headers: EventHttpHeaders, params: T, statusCode: Double, url: EventUrl): EventCall[T] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventCall[T]]
   }
   
-  @scala.inline
-  implicit class EventCallMutableBuilder[Self <: EventCall[?], T] (val x: Self & EventCall[T]) extends AnyVal {
+  extension [Self <: EventCall[?], T](x: Self & EventCall[T]) {
     
-    @scala.inline
-    def setHeaders(value: EventHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: EventHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: EventUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: EventUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

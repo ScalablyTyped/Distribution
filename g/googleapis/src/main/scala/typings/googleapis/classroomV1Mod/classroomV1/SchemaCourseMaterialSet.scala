@@ -23,28 +23,21 @@ trait SchemaCourseMaterialSet extends StObject {
 }
 object SchemaCourseMaterialSet {
   
-  @scala.inline
-  def apply(): SchemaCourseMaterialSet = {
+  inline def apply(): SchemaCourseMaterialSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCourseMaterialSet]
   }
   
-  @scala.inline
-  implicit class SchemaCourseMaterialSetMutableBuilder[Self <: SchemaCourseMaterialSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCourseMaterialSet](x: Self) {
     
-    @scala.inline
-    def setMaterials(value: js.Array[SchemaCourseMaterial]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
+    inline def setMaterials(value: js.Array[SchemaCourseMaterial]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
+    inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
-    @scala.inline
-    def setMaterialsVarargs(value: SchemaCourseMaterial*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: SchemaCourseMaterial*): Self = StObject.set(x, "materials", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

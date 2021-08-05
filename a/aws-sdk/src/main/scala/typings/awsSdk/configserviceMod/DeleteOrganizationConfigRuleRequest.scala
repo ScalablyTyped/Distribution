@@ -13,16 +13,13 @@ trait DeleteOrganizationConfigRuleRequest extends StObject {
 }
 object DeleteOrganizationConfigRuleRequest {
   
-  @scala.inline
-  def apply(OrganizationConfigRuleName: OrganizationConfigRuleName): DeleteOrganizationConfigRuleRequest = {
+  inline def apply(OrganizationConfigRuleName: OrganizationConfigRuleName): DeleteOrganizationConfigRuleRequest = {
     val __obj = js.Dynamic.literal(OrganizationConfigRuleName = OrganizationConfigRuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOrganizationConfigRuleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOrganizationConfigRuleRequestMutableBuilder[Self <: DeleteOrganizationConfigRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOrganizationConfigRuleRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = StObject.set(x, "OrganizationConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = StObject.set(x, "OrganizationConfigRuleName", value.asInstanceOf[js.Any])
   }
 }

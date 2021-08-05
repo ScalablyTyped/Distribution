@@ -20,8 +20,7 @@ trait ClientData extends StObject {
 }
 object ClientData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     challenge: java.lang.String,
     hashAlg: java.lang.String | Algorithm,
     origin: java.lang.String,
@@ -31,31 +30,22 @@ object ClientData {
     __obj.asInstanceOf[ClientData]
   }
   
-  @scala.inline
-  implicit class ClientDataMutableBuilder[Self <: ClientData] (val x: Self) extends AnyVal {
+  extension [Self <: ClientData](x: Self) {
     
-    @scala.inline
-    def setChallenge(value: java.lang.String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+    inline def setChallenge(value: java.lang.String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensions(value: WebAuthnExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: WebAuthnExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setHashAlg(value: java.lang.String | Algorithm): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: java.lang.String | Algorithm): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: java.lang.String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: java.lang.String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRpId(value: java.lang.String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
+    inline def setRpId(value: java.lang.String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenBinding(value: java.lang.String): Self = StObject.set(x, "tokenBinding", value.asInstanceOf[js.Any])
+    inline def setTokenBinding(value: java.lang.String): Self = StObject.set(x, "tokenBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenBindingUndefined: Self = StObject.set(x, "tokenBinding", js.undefined)
+    inline def setTokenBindingUndefined: Self = StObject.set(x, "tokenBinding", js.undefined)
   }
 }

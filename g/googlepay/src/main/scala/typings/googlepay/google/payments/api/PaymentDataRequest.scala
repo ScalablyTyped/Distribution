@@ -121,8 +121,7 @@ trait PaymentDataRequest extends StObject {
 }
 object PaymentDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedPaymentMethods: js.Array[PaymentMethodSpecification],
     apiVersion: Double,
     apiVersionMinor: Double,
@@ -133,64 +132,44 @@ object PaymentDataRequest {
     __obj.asInstanceOf[PaymentDataRequest]
   }
   
-  @scala.inline
-  implicit class PaymentDataRequestMutableBuilder[Self <: PaymentDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentDataRequest](x: Self) {
     
-    @scala.inline
-    def setAllowedPaymentMethods(value: js.Array[PaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
+    inline def setAllowedPaymentMethods(value: js.Array[PaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedPaymentMethodsVarargs(value: PaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
+    inline def setAllowedPaymentMethodsVarargs(value: PaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
     
-    @scala.inline
-    def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
+    inline def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackIntents(value: js.Array[CallbackIntent]): Self = StObject.set(x, "callbackIntents", value.asInstanceOf[js.Any])
+    inline def setCallbackIntents(value: js.Array[CallbackIntent]): Self = StObject.set(x, "callbackIntents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackIntentsUndefined: Self = StObject.set(x, "callbackIntents", js.undefined)
+    inline def setCallbackIntentsUndefined: Self = StObject.set(x, "callbackIntents", js.undefined)
     
-    @scala.inline
-    def setCallbackIntentsVarargs(value: CallbackIntent*): Self = StObject.set(x, "callbackIntents", js.Array(value :_*))
+    inline def setCallbackIntentsVarargs(value: CallbackIntent*): Self = StObject.set(x, "callbackIntents", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailRequired(value: `false` | `true`): Self = StObject.set(x, "emailRequired", value.asInstanceOf[js.Any])
+    inline def setEmailRequired(value: `false` | `true`): Self = StObject.set(x, "emailRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailRequiredUndefined: Self = StObject.set(x, "emailRequired", js.undefined)
+    inline def setEmailRequiredUndefined: Self = StObject.set(x, "emailRequired", js.undefined)
     
-    @scala.inline
-    def setMerchantInfo(value: MerchantInfo): Self = StObject.set(x, "merchantInfo", value.asInstanceOf[js.Any])
+    inline def setMerchantInfo(value: MerchantInfo): Self = StObject.set(x, "merchantInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressParameters(value: ShippingAddressParameters): Self = StObject.set(x, "shippingAddressParameters", value.asInstanceOf[js.Any])
+    inline def setShippingAddressParameters(value: ShippingAddressParameters): Self = StObject.set(x, "shippingAddressParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressParametersUndefined: Self = StObject.set(x, "shippingAddressParameters", js.undefined)
+    inline def setShippingAddressParametersUndefined: Self = StObject.set(x, "shippingAddressParameters", js.undefined)
     
-    @scala.inline
-    def setShippingAddressRequired(value: `false` | `true`): Self = StObject.set(x, "shippingAddressRequired", value.asInstanceOf[js.Any])
+    inline def setShippingAddressRequired(value: `false` | `true`): Self = StObject.set(x, "shippingAddressRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressRequiredUndefined: Self = StObject.set(x, "shippingAddressRequired", js.undefined)
+    inline def setShippingAddressRequiredUndefined: Self = StObject.set(x, "shippingAddressRequired", js.undefined)
     
-    @scala.inline
-    def setShippingOptionParameters(value: ShippingOptionParameters): Self = StObject.set(x, "shippingOptionParameters", value.asInstanceOf[js.Any])
+    inline def setShippingOptionParameters(value: ShippingOptionParameters): Self = StObject.set(x, "shippingOptionParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionParametersUndefined: Self = StObject.set(x, "shippingOptionParameters", js.undefined)
+    inline def setShippingOptionParametersUndefined: Self = StObject.set(x, "shippingOptionParameters", js.undefined)
     
-    @scala.inline
-    def setShippingOptionRequired(value: `false` | `true`): Self = StObject.set(x, "shippingOptionRequired", value.asInstanceOf[js.Any])
+    inline def setShippingOptionRequired(value: `false` | `true`): Self = StObject.set(x, "shippingOptionRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionRequiredUndefined: Self = StObject.set(x, "shippingOptionRequired", js.undefined)
+    inline def setShippingOptionRequiredUndefined: Self = StObject.set(x, "shippingOptionRequired", js.undefined)
     
-    @scala.inline
-    def setTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
+    inline def setTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
   }
 }

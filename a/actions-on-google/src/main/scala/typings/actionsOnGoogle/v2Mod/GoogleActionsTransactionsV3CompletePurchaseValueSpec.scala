@@ -19,25 +19,19 @@ trait GoogleActionsTransactionsV3CompletePurchaseValueSpec extends StObject {
 }
 object GoogleActionsTransactionsV3CompletePurchaseValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3CompletePurchaseValueSpec = {
+  inline def apply(): GoogleActionsTransactionsV3CompletePurchaseValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3CompletePurchaseValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3CompletePurchaseValueSpecMutableBuilder[Self <: GoogleActionsTransactionsV3CompletePurchaseValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3CompletePurchaseValueSpec](x: Self) {
     
-    @scala.inline
-    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
+    inline def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
+    inline def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
-    @scala.inline
-    def setSkuId(value: GoogleActionsTransactionsV3SkuId): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+    inline def setSkuId(value: GoogleActionsTransactionsV3SkuId): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+    inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
   }
 }

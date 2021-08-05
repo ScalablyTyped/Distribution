@@ -17,8 +17,7 @@ trait IAssignmentClassInfo extends StObject {
 }
 object IAssignmentClassInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApprovalAssignmentClassInfo: IApprovalAssignmentClassInfo,
     AssignmentType: MFAssignmentType,
     Clone: () => IAssignmentClassInfo,
@@ -28,19 +27,14 @@ object IAssignmentClassInfo {
     __obj.asInstanceOf[IAssignmentClassInfo]
   }
   
-  @scala.inline
-  implicit class IAssignmentClassInfoMutableBuilder[Self <: IAssignmentClassInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IAssignmentClassInfo](x: Self) {
     
-    @scala.inline
-    def setApprovalAssignmentClassInfo(value: IApprovalAssignmentClassInfo): Self = StObject.set(x, "ApprovalAssignmentClassInfo", value.asInstanceOf[js.Any])
+    inline def setApprovalAssignmentClassInfo(value: IApprovalAssignmentClassInfo): Self = StObject.set(x, "ApprovalAssignmentClassInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentType(value: MFAssignmentType): Self = StObject.set(x, "AssignmentType", value.asInstanceOf[js.Any])
+    inline def setAssignmentType(value: MFAssignmentType): Self = StObject.set(x, "AssignmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IAssignmentClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAssignmentClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTaskAssignmentClassInfo(value: ITaskAssignmentClassInfo): Self = StObject.set(x, "TaskAssignmentClassInfo", value.asInstanceOf[js.Any])
+    inline def setTaskAssignmentClassInfo(value: ITaskAssignmentClassInfo): Self = StObject.set(x, "TaskAssignmentClassInfo", value.asInstanceOf[js.Any])
   }
 }

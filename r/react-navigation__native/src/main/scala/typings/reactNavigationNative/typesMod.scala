@@ -26,28 +26,22 @@ object typesMod {
   }
   object DocumentTitleOptions {
     
-    @scala.inline
-    def apply(): DocumentTitleOptions = {
+    inline def apply(): DocumentTitleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentTitleOptions]
     }
     
-    @scala.inline
-    implicit class DocumentTitleOptionsMutableBuilder[Self <: DocumentTitleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentTitleOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFormatter(
+      inline def setFormatter(
         value: (/* options */ js.UndefOr[Record[String, js.Any]], /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]]) => String
       ): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     }
   }
   
@@ -144,58 +138,42 @@ object typesMod {
   }
   object LinkingOptions {
     
-    @scala.inline
-    def apply(prefixes: js.Array[String]): LinkingOptions = {
+    inline def apply(prefixes: js.Array[String]): LinkingOptions = {
       val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkingOptions]
     }
     
-    @scala.inline
-    implicit class LinkingOptionsMutableBuilder[Self <: LinkingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LinkingOptions](x: Self) {
       
-      @scala.inline
-      def setConfig(value: InitialRouteName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: InitialRouteName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setGetInitialURL(value: () => js.Promise[js.UndefOr[String | Null]]): Self = StObject.set(x, "getInitialURL", js.Any.fromFunction0(value))
+      inline def setGetInitialURL(value: () => js.Promise[js.UndefOr[String | Null]]): Self = StObject.set(x, "getInitialURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInitialURLUndefined: Self = StObject.set(x, "getInitialURL", js.undefined)
+      inline def setGetInitialURLUndefined: Self = StObject.set(x, "getInitialURL", js.undefined)
       
-      @scala.inline
-      def setGetPathFromState(value: FnCallStateOptions): Self = StObject.set(x, "getPathFromState", value.asInstanceOf[js.Any])
+      inline def setGetPathFromState(value: FnCallStateOptions): Self = StObject.set(x, "getPathFromState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPathFromStateUndefined: Self = StObject.set(x, "getPathFromState", js.undefined)
+      inline def setGetPathFromStateUndefined: Self = StObject.set(x, "getPathFromState", js.undefined)
       
-      @scala.inline
-      def setGetStateFromPath(value: FnCall): Self = StObject.set(x, "getStateFromPath", value.asInstanceOf[js.Any])
+      inline def setGetStateFromPath(value: FnCall): Self = StObject.set(x, "getStateFromPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetStateFromPathUndefined: Self = StObject.set(x, "getStateFromPath", js.undefined)
+      inline def setGetStateFromPathUndefined: Self = StObject.set(x, "getStateFromPath", js.undefined)
       
-      @scala.inline
-      def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+      inline def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
+      inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
       
-      @scala.inline
-      def setSubscribe(
+      inline def setSubscribe(
         value: /* listener */ js.Function1[/* url */ String, Unit] => js.UndefOr[Unit | js.Function0[Unit]]
       ): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscribeUndefined: Self = StObject.set(x, "subscribe", js.undefined)
+      inline def setSubscribeUndefined: Self = StObject.set(x, "subscribe", js.undefined)
     }
   }
   
@@ -205,17 +183,14 @@ object typesMod {
   }
   object ServerContainerRef {
     
-    @scala.inline
-    def apply(getCurrentOptions: () => js.UndefOr[Record[String, js.Any]]): ServerContainerRef = {
+    inline def apply(getCurrentOptions: () => js.UndefOr[Record[String, js.Any]]): ServerContainerRef = {
       val __obj = js.Dynamic.literal(getCurrentOptions = js.Any.fromFunction0(getCurrentOptions))
       __obj.asInstanceOf[ServerContainerRef]
     }
     
-    @scala.inline
-    implicit class ServerContainerRefMutableBuilder[Self <: ServerContainerRef] (val x: Self) extends AnyVal {
+    extension [Self <: ServerContainerRef](x: Self) {
       
-      @scala.inline
-      def setGetCurrentOptions(value: () => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
+      inline def setGetCurrentOptions(value: () => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
     }
   }
   
@@ -227,20 +202,16 @@ object typesMod {
   }
   object Theme {
     
-    @scala.inline
-    def apply(colors: Background, dark: Boolean): Theme = {
+    inline def apply(colors: Background, dark: Boolean): Theme = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], dark = dark.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme]
     }
     
-    @scala.inline
-    implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+    extension [Self <: Theme](x: Self) {
       
-      @scala.inline
-      def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+      inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     }
   }
 }

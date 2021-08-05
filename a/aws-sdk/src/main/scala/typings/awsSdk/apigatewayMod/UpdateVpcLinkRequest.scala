@@ -18,25 +18,19 @@ trait UpdateVpcLinkRequest extends StObject {
 }
 object UpdateVpcLinkRequest {
   
-  @scala.inline
-  def apply(vpcLinkId: String): UpdateVpcLinkRequest = {
+  inline def apply(vpcLinkId: String): UpdateVpcLinkRequest = {
     val __obj = js.Dynamic.literal(vpcLinkId = vpcLinkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVpcLinkRequest]
   }
   
-  @scala.inline
-  implicit class UpdateVpcLinkRequestMutableBuilder[Self <: UpdateVpcLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVpcLinkRequest](x: Self) {
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcLinkId(value: String): Self = StObject.set(x, "vpcLinkId", value.asInstanceOf[js.Any])
+    inline def setVpcLinkId(value: String): Self = StObject.set(x, "vpcLinkId", value.asInstanceOf[js.Any])
   }
 }

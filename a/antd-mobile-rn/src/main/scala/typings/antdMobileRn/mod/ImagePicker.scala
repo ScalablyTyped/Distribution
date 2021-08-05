@@ -22,6 +22,5 @@ object ImagePicker {
   @JSImport("antd-mobile-rn", "ImagePicker.defaultProps")
   @js.native
   def defaultProps: Files = js.native
-  @scala.inline
-  def defaultProps_=(x: Files): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Files): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

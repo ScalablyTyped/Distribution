@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsAdvancedPitchforkOptions extends StObject {
 }
 object StockToolsGuiDefinitionsAdvancedPitchforkOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsAdvancedPitchforkOptions = {
+  inline def apply(): StockToolsGuiDefinitionsAdvancedPitchforkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsAdvancedPitchforkOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsAdvancedPitchforkOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsAdvancedPitchforkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsAdvancedPitchforkOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait Errors extends StObject {
 }
 object Errors {
   
-  @scala.inline
-  def apply(BadArgumentException: () => Unit, Exception: String => Unit, InvalidStateException: () => Unit): Errors = {
+  inline def apply(BadArgumentException: () => Unit, Exception: String => Unit, InvalidStateException: () => Unit): Errors = {
     val __obj = js.Dynamic.literal(BadArgumentException = js.Any.fromFunction0(BadArgumentException), Exception = js.Any.fromFunction1(Exception), InvalidStateException = js.Any.fromFunction0(InvalidStateException))
     __obj.asInstanceOf[Errors]
   }
   
-  @scala.inline
-  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+  extension [Self <: Errors](x: Self) {
     
-    @scala.inline
-    def setBadArgumentException(value: () => Unit): Self = StObject.set(x, "BadArgumentException", js.Any.fromFunction0(value))
+    inline def setBadArgumentException(value: () => Unit): Self = StObject.set(x, "BadArgumentException", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setException(value: String => Unit): Self = StObject.set(x, "Exception", js.Any.fromFunction1(value))
+    inline def setException(value: String => Unit): Self = StObject.set(x, "Exception", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInvalidStateException(value: () => Unit): Self = StObject.set(x, "InvalidStateException", js.Any.fromFunction0(value))
+    inline def setInvalidStateException(value: () => Unit): Self = StObject.set(x, "InvalidStateException", js.Any.fromFunction0(value))
   }
 }

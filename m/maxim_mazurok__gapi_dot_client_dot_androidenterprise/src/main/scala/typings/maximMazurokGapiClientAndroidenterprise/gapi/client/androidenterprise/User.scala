@@ -38,49 +38,35 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(): User = {
+  inline def apply(): User = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
+    inline def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
+    inline def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
     
-    @scala.inline
-    def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
+    inline def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
+    inline def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
+    inline def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
+    inline def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
     
-    @scala.inline
-    def setPrimaryEmail(value: String): Self = StObject.set(x, "primaryEmail", value.asInstanceOf[js.Any])
+    inline def setPrimaryEmail(value: String): Self = StObject.set(x, "primaryEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryEmailUndefined: Self = StObject.set(x, "primaryEmail", js.undefined)
+    inline def setPrimaryEmailUndefined: Self = StObject.set(x, "primaryEmail", js.undefined)
   }
 }

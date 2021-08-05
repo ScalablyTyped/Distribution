@@ -17,22 +17,17 @@ trait Shrink extends StObject {
 }
 object Shrink {
   
-  @scala.inline
-  def apply(terminal: Terminal): Shrink = {
+  inline def apply(terminal: Terminal): Shrink = {
     val __obj = js.Dynamic.literal(terminal = terminal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shrink]
   }
   
-  @scala.inline
-  implicit class ShrinkMutableBuilder[Self <: Shrink] (val x: Self) extends AnyVal {
+  extension [Self <: Shrink](x: Self) {
     
-    @scala.inline
-    def setShrink(value: Height): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
+    inline def setShrink(value: Height): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
+    inline def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
     
-    @scala.inline
-    def setTerminal(value: Terminal): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
+    inline def setTerminal(value: Terminal): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
   }
 }

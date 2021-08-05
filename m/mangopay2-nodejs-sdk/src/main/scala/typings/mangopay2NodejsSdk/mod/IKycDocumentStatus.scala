@@ -20,25 +20,19 @@ trait IKycDocumentStatus extends StObject {
 }
 object IKycDocumentStatus {
   
-  @scala.inline
-  def apply(): IKycDocumentStatus = {
+  inline def apply(): IKycDocumentStatus = {
     val __obj = js.Dynamic.literal(Created = "CREATED", Refused = "REFUSED", Validated = "VALIDATED", ValidationAsked = "VALIDATION_ASKED")
     __obj.asInstanceOf[IKycDocumentStatus]
   }
   
-  @scala.inline
-  implicit class IKycDocumentStatusMutableBuilder[Self <: IKycDocumentStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IKycDocumentStatus](x: Self) {
     
-    @scala.inline
-    def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefused(value: REFUSED): Self = StObject.set(x, "Refused", value.asInstanceOf[js.Any])
+    inline def setRefused(value: REFUSED): Self = StObject.set(x, "Refused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidated(value: VALIDATED): Self = StObject.set(x, "Validated", value.asInstanceOf[js.Any])
+    inline def setValidated(value: VALIDATED): Self = StObject.set(x, "Validated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationAsked(value: VALIDATION_ASKED): Self = StObject.set(x, "ValidationAsked", value.asInstanceOf[js.Any])
+    inline def setValidationAsked(value: VALIDATION_ASKED): Self = StObject.set(x, "ValidationAsked", value.asInstanceOf[js.Any])
   }
 }

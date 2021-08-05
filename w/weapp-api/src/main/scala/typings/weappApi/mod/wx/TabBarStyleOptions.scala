@@ -22,25 +22,19 @@ trait TabBarStyleOptions
 }
 object TabBarStyleOptions {
   
-  @scala.inline
-  def apply(backgroundColor: String, borderStyle: String, color: String, selectedColor: String): TabBarStyleOptions = {
+  inline def apply(backgroundColor: String, borderStyle: String, color: String, selectedColor: String): TabBarStyleOptions = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderStyle = borderStyle.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], selectedColor = selectedColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarStyleOptions]
   }
   
-  @scala.inline
-  implicit class TabBarStyleOptionsMutableBuilder[Self <: TabBarStyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TabBarStyleOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStyle(value: String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait PostsInsightsFeedResponseMetrics extends StObject {
 }
 object PostsInsightsFeedResponseMetrics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     impression_count: Double,
     owner_account_follows_count: Double,
     owner_profile_views_count: Double,
@@ -33,25 +32,18 @@ object PostsInsightsFeedResponseMetrics {
     __obj.asInstanceOf[PostsInsightsFeedResponseMetrics]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseMetricsMutableBuilder[Self <: PostsInsightsFeedResponseMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseMetrics](x: Self) {
     
-    @scala.inline
-    def setImpression_count(value: Double): Self = StObject.set(x, "impression_count", value.asInstanceOf[js.Any])
+    inline def setImpression_count(value: Double): Self = StObject.set(x, "impression_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner_account_follows_count(value: Double): Self = StObject.set(x, "owner_account_follows_count", value.asInstanceOf[js.Any])
+    inline def setOwner_account_follows_count(value: Double): Self = StObject.set(x, "owner_account_follows_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner_profile_views_count(value: Double): Self = StObject.set(x, "owner_profile_views_count", value.asInstanceOf[js.Any])
+    inline def setOwner_profile_views_count(value: Double): Self = StObject.set(x, "owner_profile_views_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_actions(value: PostsInsightsFeedResponseProfileActions): Self = StObject.set(x, "profile_actions", value.asInstanceOf[js.Any])
+    inline def setProfile_actions(value: PostsInsightsFeedResponseProfileActions): Self = StObject.set(x, "profile_actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReach_count(value: Double): Self = StObject.set(x, "reach_count", value.asInstanceOf[js.Any])
+    inline def setReach_count(value: Double): Self = StObject.set(x, "reach_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShare_count(value: PostsInsightsFeedResponseShareCount): Self = StObject.set(x, "share_count", value.asInstanceOf[js.Any])
+    inline def setShare_count(value: PostsInsightsFeedResponseShareCount): Self = StObject.set(x, "share_count", value.asInstanceOf[js.Any])
   }
 }

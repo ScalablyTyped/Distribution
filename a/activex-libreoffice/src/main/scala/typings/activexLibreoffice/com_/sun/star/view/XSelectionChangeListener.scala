@@ -24,8 +24,7 @@ trait XSelectionChangeListener
 }
 object XSelectionChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XSelectionChangeListener {
     __obj.asInstanceOf[XSelectionChangeListener]
   }
   
-  @scala.inline
-  implicit class XSelectionChangeListenerMutableBuilder[Self <: XSelectionChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSelectionChangeListener](x: Self) {
     
-    @scala.inline
-    def setSelectionChanged(value: EventObject => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
+    inline def setSelectionChanged(value: EventObject => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
   }
 }

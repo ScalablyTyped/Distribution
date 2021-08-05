@@ -30,43 +30,31 @@ trait DescribeLocationNfsResponse extends StObject {
 }
 object DescribeLocationNfsResponse {
   
-  @scala.inline
-  def apply(): DescribeLocationNfsResponse = {
+  inline def apply(): DescribeLocationNfsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocationNfsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLocationNfsResponseMutableBuilder[Self <: DescribeLocationNfsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocationNfsResponse](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    @scala.inline
-    def setMountOptions(value: NfsMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
+    inline def setMountOptions(value: NfsMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
+    inline def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
     
-    @scala.inline
-    def setOnPremConfig(value: OnPremConfig): Self = StObject.set(x, "OnPremConfig", value.asInstanceOf[js.Any])
+    inline def setOnPremConfig(value: OnPremConfig): Self = StObject.set(x, "OnPremConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPremConfigUndefined: Self = StObject.set(x, "OnPremConfig", js.undefined)
+    inline def setOnPremConfigUndefined: Self = StObject.set(x, "OnPremConfig", js.undefined)
   }
 }

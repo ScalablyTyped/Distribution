@@ -5,16 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(): typings.loopback.mod.LoopBackApplication = typings.loopback.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.loopback.mod.LoopBackApplication]
+inline def apply(): typings.loopback.mod.LoopBackApplication = typings.loopback.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.loopback.mod.LoopBackApplication]
 
 // END OF PERSISTED MODEL
 /**
   * Serve the LoopBack favicon.
   * @header loopback.favicon(
   */
-@scala.inline
-def favicon(): typings.express.mod.RequestHandler[
+inline def favicon(): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -33,8 +31,7 @@ typings.expressServeStaticCore.mod.Query]]
   * For more information, see [Exposing models over a REST API](docs.strongloop.com/display/DOC/Exposing+models+over+a+REST+API).
   * @header loopback.rest(
   */
-@scala.inline
-def rest(): typings.express.mod.RequestHandler[
+inline def rest(): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -47,8 +44,7 @@ typings.expressServeStaticCore.mod.Query]]
 /**
   * Rewrite the url to replace current user literal with the logged in user id
   */
-@scala.inline
-def rewriteUserLiteral(): typings.express.mod.RequestHandler[
+inline def rewriteUserLiteral(): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -67,8 +63,7 @@ typings.expressServeStaticCore.mod.Query]]
   *   for the full list of available options.
   * @header loopback.static(root, [options])
   */
-@scala.inline
-def static(root: java.lang.String): typings.express.mod.RequestHandler[
+inline def static(root: java.lang.String): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -77,8 +72,7 @@ typings.expressServeStaticCore.mod.ParamsDictionary,
 js.Any, 
 js.Any, 
 typings.expressServeStaticCore.mod.Query]]
-@scala.inline
-def static(root: java.lang.String, options: js.Any): typings.express.mod.RequestHandler[
+inline def static(root: java.lang.String, options: js.Any): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -98,8 +92,7 @@ typings.expressServeStaticCore.mod.Query]]
   * }
   * ```
   */
-@scala.inline
-def status(): typings.express.mod.RequestHandler[
+inline def status(): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -140,8 +133,7 @@ typings.expressServeStaticCore.mod.Query]]
   * @property {string} [currentUserLiteral] string literal for the current user.
   * @header loopback.token([options])
   */
-@scala.inline
-def token(): typings.express.mod.RequestHandler[
+inline def token(): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -150,8 +142,7 @@ typings.expressServeStaticCore.mod.ParamsDictionary,
 js.Any, 
 js.Any, 
 typings.expressServeStaticCore.mod.Query]]
-@scala.inline
-def token(options: typings.loopback.anon.Cookies): typings.express.mod.RequestHandler[
+inline def token(options: typings.loopback.anon.Cookies): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 
@@ -166,8 +157,7 @@ typings.expressServeStaticCore.mod.Query]]
   * to be handled by error-handling middleware.
   * @header loopback.urlNotFound(
   */
-@scala.inline
-def urlNotFound(): typings.express.mod.RequestHandler[
+inline def urlNotFound(): typings.express.mod.RequestHandler[
 typings.expressServeStaticCore.mod.ParamsDictionary, 
 js.Any, 
 js.Any, 

@@ -13,19 +13,15 @@ trait Phase2DHGroupNumbersListValue extends StObject {
 }
 object Phase2DHGroupNumbersListValue {
   
-  @scala.inline
-  def apply(): Phase2DHGroupNumbersListValue = {
+  inline def apply(): Phase2DHGroupNumbersListValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Phase2DHGroupNumbersListValue]
   }
   
-  @scala.inline
-  implicit class Phase2DHGroupNumbersListValueMutableBuilder[Self <: Phase2DHGroupNumbersListValue] (val x: Self) extends AnyVal {
+  extension [Self <: Phase2DHGroupNumbersListValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: Integer): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Integer): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

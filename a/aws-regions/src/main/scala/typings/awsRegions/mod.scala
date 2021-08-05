@@ -25,32 +25,24 @@ object mod extends Shortcut {
   }
   object AwsRegionInfo {
     
-    @scala.inline
-    def apply(code: String, full_name: String, name: String, public: Boolean, zones: js.Array[String]): AwsRegionInfo = {
+    inline def apply(code: String, full_name: String, name: String, public: Boolean, zones: js.Array[String]): AwsRegionInfo = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
       __obj.asInstanceOf[AwsRegionInfo]
     }
     
-    @scala.inline
-    implicit class AwsRegionInfoMutableBuilder[Self <: AwsRegionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AwsRegionInfo](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+      inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+      inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
     }
   }
   
@@ -69,20 +61,16 @@ object mod extends Shortcut {
   }
   object ListOptions {
     
-    @scala.inline
-    def apply(): ListOptions = {
+    inline def apply(): ListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListOptions]
     }
     
-    @scala.inline
-    implicit class ListOptionsMutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListOptions](x: Self) {
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     }
   }
   
@@ -93,14 +81,12 @@ object mod extends Shortcut {
   trait LookupOptions extends StObject
   object LookupOptions {
     
-    @scala.inline
-    def LookupOptionsCode(code: String): typings.awsRegions.mod.LookupOptionsCode = {
+    inline def LookupOptionsCode(code: String): typings.awsRegions.mod.LookupOptionsCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsRegions.mod.LookupOptionsCode]
     }
     
-    @scala.inline
-    def LookupOptionsName(name: String): typings.awsRegions.mod.LookupOptionsName = {
+    inline def LookupOptionsName(name: String): typings.awsRegions.mod.LookupOptionsName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsRegions.mod.LookupOptionsName]
     }
@@ -114,17 +100,14 @@ object mod extends Shortcut {
   }
   object LookupOptionsCode {
     
-    @scala.inline
-    def apply(code: String): LookupOptionsCode = {
+    inline def apply(code: String): LookupOptionsCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[LookupOptionsCode]
     }
     
-    @scala.inline
-    implicit class LookupOptionsCodeMutableBuilder[Self <: LookupOptionsCode] (val x: Self) extends AnyVal {
+    extension [Self <: LookupOptionsCode](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,17 +119,14 @@ object mod extends Shortcut {
   }
   object LookupOptionsName {
     
-    @scala.inline
-    def apply(name: String): LookupOptionsName = {
+    inline def apply(name: String): LookupOptionsName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LookupOptionsName]
     }
     
-    @scala.inline
-    implicit class LookupOptionsNameMutableBuilder[Self <: LookupOptionsName] (val x: Self) extends AnyVal {
+    extension [Self <: LookupOptionsName](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

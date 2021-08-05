@@ -28,31 +28,23 @@ trait FirehoseAction extends StObject {
 }
 object FirehoseAction {
   
-  @scala.inline
-  def apply(deliveryStreamName: DeliveryStreamName, roleArn: AwsArn): FirehoseAction = {
+  inline def apply(deliveryStreamName: DeliveryStreamName, roleArn: AwsArn): FirehoseAction = {
     val __obj = js.Dynamic.literal(deliveryStreamName = deliveryStreamName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseAction]
   }
   
-  @scala.inline
-  implicit class FirehoseActionMutableBuilder[Self <: FirehoseAction] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseAction](x: Self) {
     
-    @scala.inline
-    def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
+    inline def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchModeUndefined: Self = StObject.set(x, "batchMode", js.undefined)
+    inline def setBatchModeUndefined: Self = StObject.set(x, "batchMode", js.undefined)
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "deliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "deliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparator(value: FirehoseSeparator): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: FirehoseSeparator): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

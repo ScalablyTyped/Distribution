@@ -62,17 +62,14 @@ object typesInvalidArnExceptionMod {
   }
   object InvalidArnException {
     
-    @scala.inline
-    def apply(): InvalidArnException = {
+    inline def apply(): InvalidArnException = {
       val __obj = js.Dynamic.literal(name = "InvalidArnException")
       __obj.asInstanceOf[InvalidArnException]
     }
     
-    @scala.inline
-    implicit class InvalidArnExceptionMutableBuilder[Self <: InvalidArnException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidArnException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidArnException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidArnException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,20 +82,16 @@ object typesInvalidArnExceptionMod {
   }
   object InvalidArnExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidArnExceptionDetails = {
+    inline def apply(): InvalidArnExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidArnExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidArnExceptionDetailsMutableBuilder[Self <: InvalidArnExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidArnExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

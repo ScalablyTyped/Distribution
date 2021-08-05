@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Image extends StObject {
   
-  @JSName("Access.Image_typekey")
+  /* private */ @JSName("Access.Image_typekey")
   var AccessDotImage_typekey: Image = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

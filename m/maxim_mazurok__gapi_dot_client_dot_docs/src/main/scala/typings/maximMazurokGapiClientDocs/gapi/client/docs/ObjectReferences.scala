@@ -11,22 +11,17 @@ trait ObjectReferences extends StObject {
 }
 object ObjectReferences {
   
-  @scala.inline
-  def apply(): ObjectReferences = {
+  inline def apply(): ObjectReferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectReferences]
   }
   
-  @scala.inline
-  implicit class ObjectReferencesMutableBuilder[Self <: ObjectReferences] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectReferences](x: Self) {
     
-    @scala.inline
-    def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    @scala.inline
-    def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
   }
 }

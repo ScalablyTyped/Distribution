@@ -18,8 +18,7 @@ object global {
   @JSGlobal("AjaxFile")
   @js.native
   def AjaxFile: IAjaxFileStatic = js.native
-  @scala.inline
-  def AjaxFile_=(x: IAjaxFileStatic): Unit = js.Dynamic.global.updateDynamic("AjaxFile")(x.asInstanceOf[js.Any])
+  inline def AjaxFile_=(x: IAjaxFileStatic): Unit = js.Dynamic.global.updateDynamic("AjaxFile")(x.asInstanceOf[js.Any])
   
   object Chai_ {
     
@@ -278,50 +277,38 @@ object global {
     override def _to: JQueryStatic = ^
   }
   
-  @scala.inline
-  def after(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("after")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def after(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("after")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def after(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("after")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def after(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("after")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def afterEach(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def afterEach(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterEach(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterEach(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def before(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("before")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def before(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("before")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def before(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("before")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def before(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("before")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def beforeEach(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def beforeEach(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeEach(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeEach(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chai")
   @js.native
   def chai: ChaiStatic = js.native
-  @scala.inline
-  def chai_=(x: ChaiStatic): Unit = js.Dynamic.global.updateDynamic("chai")(x.asInstanceOf[js.Any])
+  inline def chai_=(x: ChaiStatic): Unit = js.Dynamic.global.updateDynamic("chai")(x.asInstanceOf[js.Any])
   
   // alias for `describe`
   @JSGlobal("context")
   @js.native
   def context: IContextDefinition = js.native
-  @scala.inline
-  def context_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("context")(x.asInstanceOf[js.Any])
+  inline def context_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("context")(x.asInstanceOf[js.Any])
   
   @JSGlobal("describe")
   @js.native
   def describe: IContextDefinition = js.native
-  @scala.inline
-  def describe_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("describe")(x.asInstanceOf[js.Any])
+  inline def describe_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("describe")(x.asInstanceOf[js.Any])
   
   @JSGlobal("it")
   @js.native
   def it: ITestDefinition = js.native
-  @scala.inline
-  def it_=(x: ITestDefinition): Unit = js.Dynamic.global.updateDynamic("it")(x.asInstanceOf[js.Any])
+  inline def it_=(x: ITestDefinition): Unit = js.Dynamic.global.updateDynamic("it")(x.asInstanceOf[js.Any])
   
   object jQuery extends Shortcut {
     
@@ -402,55 +389,42 @@ object global {
   @JSGlobal("mocha")
   @js.native
   def mocha: Mocha = js.native
-  @scala.inline
-  def mocha_=(x: Mocha): Unit = js.Dynamic.global.updateDynamic("mocha")(x.asInstanceOf[js.Any])
+  inline def mocha_=(x: Mocha): Unit = js.Dynamic.global.updateDynamic("mocha")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def setup(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("setup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setup(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("setup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("setup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("setup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // alias for `describe`
   @JSGlobal("suite")
   @js.native
   def suite: IContextDefinition = js.native
   
-  @scala.inline
-  def suiteSetup(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("suiteSetup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def suiteSetup(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("suiteSetup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def suiteSetup(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("suiteSetup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def suiteSetup(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("suiteSetup")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def suiteTeardown(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("suiteTeardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def suiteTeardown(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("suiteTeardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def suiteTeardown(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("suiteTeardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def suiteTeardown(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("suiteTeardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def suite_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("suite")(x.asInstanceOf[js.Any])
+  inline def suite_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("suite")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def teardown(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("teardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def teardown(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("teardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def teardown(action: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("teardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def teardown(action: js.Function1[/* done */ MochaDone, Unit]): Unit = js.Dynamic.global.applyDynamic("teardown")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // alias for `it`
   @JSGlobal("test")
   @js.native
   def test: ITestDefinition = js.native
-  @scala.inline
-  def test_=(x: ITestDefinition): Unit = js.Dynamic.global.updateDynamic("test")(x.asInstanceOf[js.Any])
+  inline def test_=(x: ITestDefinition): Unit = js.Dynamic.global.updateDynamic("test")(x.asInstanceOf[js.Any])
   
   @JSGlobal("xdescribe")
   @js.native
   def xdescribe: IContextDefinition = js.native
-  @scala.inline
-  def xdescribe_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("xdescribe")(x.asInstanceOf[js.Any])
+  inline def xdescribe_=(x: IContextDefinition): Unit = js.Dynamic.global.updateDynamic("xdescribe")(x.asInstanceOf[js.Any])
   
   @JSGlobal("xit")
   @js.native
   def xit: ITestDefinition = js.native
-  @scala.inline
-  def xit_=(x: ITestDefinition): Unit = js.Dynamic.global.updateDynamic("xit")(x.asInstanceOf[js.Any])
+  inline def xit_=(x: ITestDefinition): Unit = js.Dynamic.global.updateDynamic("xit")(x.asInstanceOf[js.Any])
   
   //
   // refactored types into a namespace to reduce global pollution 

@@ -10,16 +10,13 @@ trait QueryResultContinuation extends StObject {
 }
 object QueryResultContinuation {
   
-  @scala.inline
-  def apply(tableService: TableService): QueryResultContinuation = {
+  inline def apply(tableService: TableService): QueryResultContinuation = {
     val __obj = js.Dynamic.literal(tableService = tableService.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultContinuation]
   }
   
-  @scala.inline
-  implicit class QueryResultContinuationMutableBuilder[Self <: QueryResultContinuation] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResultContinuation](x: Self) {
     
-    @scala.inline
-    def setTableService(value: TableService): Self = StObject.set(x, "tableService", value.asInstanceOf[js.Any])
+    inline def setTableService(value: TableService): Self = StObject.set(x, "tableService", value.asInstanceOf[js.Any])
   }
 }

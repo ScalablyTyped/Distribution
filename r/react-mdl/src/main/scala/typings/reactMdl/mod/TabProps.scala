@@ -20,37 +20,27 @@ trait TabProps
 }
 object TabProps {
   
-  @scala.inline
-  def apply(): TabProps = {
+  inline def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabProps]
   }
   
-  @scala.inline
-  implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabProps](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
+    inline def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
+    inline def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
     
-    @scala.inline
-    def setOnTabClick(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
+    inline def setOnTabClick(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
+    inline def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+    inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
   }
 }

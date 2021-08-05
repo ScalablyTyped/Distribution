@@ -10,16 +10,13 @@ trait UnregisterRequest extends StObject {
 }
 object UnregisterRequest {
   
-  @scala.inline
-  def apply(scopeURL: String): UnregisterRequest = {
+  inline def apply(scopeURL: String): UnregisterRequest = {
     val __obj = js.Dynamic.literal(scopeURL = scopeURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnregisterRequest]
   }
   
-  @scala.inline
-  implicit class UnregisterRequestMutableBuilder[Self <: UnregisterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnregisterRequest](x: Self) {
     
-    @scala.inline
-    def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
+    inline def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }
 }

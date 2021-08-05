@@ -10,8 +10,7 @@ object operatorSampleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sample[T](
+  inline def sample[T](
     notifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(notifier.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

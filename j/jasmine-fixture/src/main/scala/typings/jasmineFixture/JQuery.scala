@@ -14,16 +14,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(affix: String => JQuery): JQuery = {
+  inline def apply(affix: String => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(affix = js.Any.fromFunction1(affix))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setAffix(value: String => JQuery): Self = StObject.set(x, "affix", js.Any.fromFunction1(value))
+    inline def setAffix(value: String => JQuery): Self = StObject.set(x, "affix", js.Any.fromFunction1(value))
   }
 }

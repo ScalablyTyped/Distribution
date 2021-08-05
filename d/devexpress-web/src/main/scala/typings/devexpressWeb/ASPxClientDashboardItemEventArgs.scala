@@ -30,22 +30,17 @@ trait ASPxClientDashboardItemEventArgs
 }
 object ASPxClientDashboardItemEventArgs {
   
-  @scala.inline
-  def apply(IsNullValue: js.Any => Boolean, IsOthersValue: js.Any => Boolean, ItemName: String): ASPxClientDashboardItemEventArgs = {
+  inline def apply(IsNullValue: js.Any => Boolean, IsOthersValue: js.Any => Boolean, ItemName: String): ASPxClientDashboardItemEventArgs = {
     val __obj = js.Dynamic.literal(IsNullValue = js.Any.fromFunction1(IsNullValue), IsOthersValue = js.Any.fromFunction1(IsOthersValue), ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemEventArgsMutableBuilder[Self <: ASPxClientDashboardItemEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsNullValue(value: js.Any => Boolean): Self = StObject.set(x, "IsNullValue", js.Any.fromFunction1(value))
+    inline def setIsNullValue(value: js.Any => Boolean): Self = StObject.set(x, "IsNullValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsOthersValue(value: js.Any => Boolean): Self = StObject.set(x, "IsOthersValue", js.Any.fromFunction1(value))
+    inline def setIsOthersValue(value: js.Any => Boolean): Self = StObject.set(x, "IsOthersValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

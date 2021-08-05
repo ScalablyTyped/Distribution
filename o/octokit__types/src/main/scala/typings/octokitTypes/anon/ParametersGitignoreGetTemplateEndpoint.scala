@@ -18,8 +18,7 @@ trait ParametersGitignoreGetTemplateEndpoint extends StObject {
 }
 object ParametersGitignoreGetTemplateEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GitignoreGetTemplateEndpoint,
     request: GitignoreGetTemplateRequestOptions,
     response: OctokitResponse[GitignoreGetTemplateResponseData]
@@ -28,16 +27,12 @@ object ParametersGitignoreGetTemplateEndpoint {
     __obj.asInstanceOf[ParametersGitignoreGetTemplateEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGitignoreGetTemplateEndpointMutableBuilder[Self <: ParametersGitignoreGetTemplateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGitignoreGetTemplateEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GitignoreGetTemplateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitignoreGetTemplateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GitignoreGetTemplateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GitignoreGetTemplateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitignoreGetTemplateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitignoreGetTemplateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait ParametersUsersGetContextForUserEndpoint extends StObject {
 }
 object ParametersUsersGetContextForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersGetContextForUserEndpoint,
     request: UsersGetContextForUserRequestOptions,
     response: OctokitResponse[UsersGetContextForUserResponseData]
@@ -28,16 +27,12 @@ object ParametersUsersGetContextForUserEndpoint {
     __obj.asInstanceOf[ParametersUsersGetContextForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersGetContextForUserEndpointMutableBuilder[Self <: ParametersUsersGetContextForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersGetContextForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersGetContextForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersGetContextForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: UsersGetContextForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: UsersGetContextForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersGetContextForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersGetContextForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

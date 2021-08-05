@@ -30,8 +30,7 @@ trait GEWindow
 }
 object GEWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blur: () => Unit,
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
@@ -48,19 +47,14 @@ object GEWindow {
     __obj.asInstanceOf[GEWindow]
   }
   
-  @scala.inline
-  implicit class GEWindowMutableBuilder[Self <: GEWindow] (val x: Self) extends AnyVal {
+  extension [Self <: GEWindow](x: Self) {
     
-    @scala.inline
-    def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisibility(value: () => Boolean): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
+    inline def setGetVisibility(value: () => Boolean): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetVisibility(value: Boolean => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
+    inline def setSetVisibility(value: Boolean => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
   }
 }

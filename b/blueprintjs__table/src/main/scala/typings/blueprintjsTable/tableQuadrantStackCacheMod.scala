@@ -10,17 +10,17 @@ object tableQuadrantStackCacheMod {
   @js.native
   class TableQuadrantStackCache () extends StObject {
     
-    var cachedColumnHeaderHeight: js.Any = js.native
+    /* private */ var cachedColumnHeaderHeight: js.Any = js.native
     
-    var cachedRowHeaderWidth: js.Any = js.native
+    /* private */ var cachedRowHeaderWidth: js.Any = js.native
     
-    var cachedScrollContainerClientHeight: js.Any = js.native
+    /* private */ var cachedScrollContainerClientHeight: js.Any = js.native
     
-    var cachedScrollContainerClientWidth: js.Any = js.native
+    /* private */ var cachedScrollContainerClientWidth: js.Any = js.native
     
-    var cachedScrollLeft: js.Any = js.native
+    /* private */ var cachedScrollLeft: js.Any = js.native
     
-    var cachedScrollTop: js.Any = js.native
+    /* private */ var cachedScrollTop: js.Any = js.native
     
     def getColumnHeaderHeight(): Double = js.native
     
@@ -54,10 +54,8 @@ object tableQuadrantStackCacheMod {
   trait ScrollKey extends StObject
   object ScrollKey {
     
-    @scala.inline
-    def scrollLeft: typings.blueprintjsTable.blueprintjsTableStrings.scrollLeft = "scrollLeft".asInstanceOf[typings.blueprintjsTable.blueprintjsTableStrings.scrollLeft]
+    inline def scrollLeft: typings.blueprintjsTable.blueprintjsTableStrings.scrollLeft = "scrollLeft".asInstanceOf[typings.blueprintjsTable.blueprintjsTableStrings.scrollLeft]
     
-    @scala.inline
-    def scrollTop: typings.blueprintjsTable.blueprintjsTableStrings.scrollTop = "scrollTop".asInstanceOf[typings.blueprintjsTable.blueprintjsTableStrings.scrollTop]
+    inline def scrollTop: typings.blueprintjsTable.blueprintjsTableStrings.scrollTop = "scrollTop".asInstanceOf[typings.blueprintjsTable.blueprintjsTableStrings.scrollTop]
   }
 }

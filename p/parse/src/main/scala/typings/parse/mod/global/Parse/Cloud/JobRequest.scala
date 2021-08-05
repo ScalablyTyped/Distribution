@@ -12,19 +12,15 @@ trait JobRequest extends StObject {
 }
 object JobRequest {
   
-  @scala.inline
-  def apply(message: js.Any => Unit, params: js.Any): JobRequest = {
+  inline def apply(message: js.Any => Unit, params: js.Any): JobRequest = {
     val __obj = js.Dynamic.literal(message = js.Any.fromFunction1(message), params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobRequest]
   }
   
-  @scala.inline
-  implicit class JobRequestMutableBuilder[Self <: JobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: JobRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: js.Any => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+    inline def setMessage(value: js.Any => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

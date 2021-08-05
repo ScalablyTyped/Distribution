@@ -23,28 +23,21 @@ trait CAPICOM_STORE_LOCATION extends StObject {
 }
 object CAPICOM_STORE_LOCATION {
   
-  @scala.inline
-  def apply(): CAPICOM_STORE_LOCATION = {
+  inline def apply(): CAPICOM_STORE_LOCATION = {
     val __obj = js.Dynamic.literal(CAPICOM_ACTIVE_DIRECTORY_USER_STORE = 3, CAPICOM_CURRENT_USER_STORE = 2, CAPICOM_LOCAL_MACHINE_STORE = 1, CAPICOM_MEMORY_STORE = 0, CAPICOM_SMART_CARD_USER_STORE = 4)
     __obj.asInstanceOf[CAPICOM_STORE_LOCATION]
   }
   
-  @scala.inline
-  implicit class CAPICOM_STORE_LOCATIONMutableBuilder[Self <: CAPICOM_STORE_LOCATION] (val x: Self) extends AnyVal {
+  extension [Self <: CAPICOM_STORE_LOCATION](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_ACTIVE_DIRECTORY_USER_STORE(value: `3`): Self = StObject.set(x, "CAPICOM_ACTIVE_DIRECTORY_USER_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_ACTIVE_DIRECTORY_USER_STORE(value: `3`): Self = StObject.set(x, "CAPICOM_ACTIVE_DIRECTORY_USER_STORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CAPICOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CAPICOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_LOCAL_MACHINE_STORE(value: `1`): Self = StObject.set(x, "CAPICOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_LOCAL_MACHINE_STORE(value: `1`): Self = StObject.set(x, "CAPICOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_MEMORY_STORE(value: `0`): Self = StObject.set(x, "CAPICOM_MEMORY_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_MEMORY_STORE(value: `0`): Self = StObject.set(x, "CAPICOM_MEMORY_STORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_SMART_CARD_USER_STORE(value: `4`): Self = StObject.set(x, "CAPICOM_SMART_CARD_USER_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_SMART_CARD_USER_STORE(value: `4`): Self = StObject.set(x, "CAPICOM_SMART_CARD_USER_STORE", value.asInstanceOf[js.Any])
   }
 }

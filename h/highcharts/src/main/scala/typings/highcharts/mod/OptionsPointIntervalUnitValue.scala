@@ -14,12 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsPointIntervalUnitValue extends StObject
 object OptionsPointIntervalUnitValue {
   
-  @scala.inline
-  def day: day_ = "day".asInstanceOf[day_]
+  inline def day: day_ = "day".asInstanceOf[day_]
   
-  @scala.inline
-  def month: month_ = "month".asInstanceOf[month_]
+  inline def month: month_ = "month".asInstanceOf[month_]
   
-  @scala.inline
-  def year: typings.highcharts.highchartsStrings.year = "year".asInstanceOf[typings.highcharts.highchartsStrings.year]
+  inline def year: typings.highcharts.highchartsStrings.year = "year".asInstanceOf[typings.highcharts.highchartsStrings.year]
 }

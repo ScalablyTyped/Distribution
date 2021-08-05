@@ -29,8 +29,7 @@ trait PopularQuery
 }
 object PopularQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -49,31 +48,22 @@ object PopularQuery {
     __obj.asInstanceOf[PopularQuery]
   }
   
-  @scala.inline
-  implicit class PopularQueryMutableBuilder[Self <: PopularQuery] (val x: Self) extends AnyVal {
+  extension [Self <: PopularQuery](x: Self) {
     
-    @scala.inline
-    def setGet_LCID(value: () => Double): Self = StObject.set(x, "get_LCID", js.Any.fromFunction0(value))
+    inline def setGet_LCID(value: () => Double): Self = StObject.set(x, "get_LCID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_clickCount(value: () => Double): Self = StObject.set(x, "get_clickCount", js.Any.fromFunction0(value))
+    inline def setGet_clickCount(value: () => Double): Self = StObject.set(x, "get_clickCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryCount(value: () => Double): Self = StObject.set(x, "get_queryCount", js.Any.fromFunction0(value))
+    inline def setGet_queryCount(value: () => Double): Self = StObject.set(x, "get_queryCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryText(value: () => String): Self = StObject.set(x, "get_queryText", js.Any.fromFunction0(value))
+    inline def setGet_queryText(value: () => String): Self = StObject.set(x, "get_queryText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_LCID(value: Double => Unit): Self = StObject.set(x, "set_LCID", js.Any.fromFunction1(value))
+    inline def setSet_LCID(value: Double => Unit): Self = StObject.set(x, "set_LCID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_clickCount(value: Double => Unit): Self = StObject.set(x, "set_clickCount", js.Any.fromFunction1(value))
+    inline def setSet_clickCount(value: Double => Unit): Self = StObject.set(x, "set_clickCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryCount(value: Double => Unit): Self = StObject.set(x, "set_queryCount", js.Any.fromFunction1(value))
+    inline def setSet_queryCount(value: Double => Unit): Self = StObject.set(x, "set_queryCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryText(value: String => Unit): Self = StObject.set(x, "set_queryText", js.Any.fromFunction1(value))
+    inline def setSet_queryText(value: String => Unit): Self = StObject.set(x, "set_queryText", js.Any.fromFunction1(value))
   }
 }

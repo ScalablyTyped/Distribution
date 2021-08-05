@@ -79,8 +79,7 @@ trait ImageInfo extends StObject {
 }
 object ImageInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `Background Color`: String,
     `Border Color`: String,
     `Channel Depths`: ChannelInfo[String],
@@ -118,133 +117,90 @@ object ImageInfo {
     __obj.asInstanceOf[ImageInfo]
   }
   
-  @scala.inline
-  implicit class ImageInfoMutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ImageInfo](x: Self) {
     
-    @scala.inline
-    def `setBackground Color`(value: String): Self = StObject.set(x, "Background Color", value.asInstanceOf[js.Any])
+    inline def `setBackground Color`(value: String): Self = StObject.set(x, "Background Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder Color`(value: String): Self = StObject.set(x, "Border Color", value.asInstanceOf[js.Any])
+    inline def `setBorder Color`(value: String): Self = StObject.set(x, "Border Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setChannel Depths`(value: ChannelInfo[String]): Self = StObject.set(x, "Channel Depths", value.asInstanceOf[js.Any])
+    inline def `setChannel Depths`(value: ChannelInfo[String]): Self = StObject.set(x, "Channel Depths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setChannel Statistics`(value: ChannelInfo[ColorStatistics]): Self = StObject.set(x, "Channel Statistics", value.asInstanceOf[js.Any])
+    inline def `setChannel Statistics`(value: ChannelInfo[ColorStatistics]): Self = StObject.set(x, "Channel Statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompose(value: String): Self = StObject.set(x, "Compose", value.asInstanceOf[js.Any])
+    inline def setCompose(value: String): Self = StObject.set(x, "Compose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompression(value: String): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: String): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: String): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: String): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispose(value: String): Self = StObject.set(x, "Dispose", value.asInstanceOf[js.Any])
+    inline def setDispose(value: String): Self = StObject.set(x, "Dispose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesize(value: String): Self = StObject.set(x, "Filesize", value.asInstanceOf[js.Any])
+    inline def setFilesize(value: String): Self = StObject.set(x, "Filesize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: String): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: String): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterlace(value: String): Self = StObject.set(x, "Interlace", value.asInstanceOf[js.Any])
+    inline def setInterlace(value: String): Self = StObject.set(x, "Interlace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterations(value: String): Self = StObject.set(x, "Iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: String): Self = StObject.set(x, "Iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJPEG-Colorspace`(value: String): Self = StObject.set(x, "JPEG-Colorspace", value.asInstanceOf[js.Any])
+    inline def `setJPEG-Colorspace`(value: String): Self = StObject.set(x, "JPEG-Colorspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJPEG-Colorspace-Name`(value: String): Self = StObject.set(x, "JPEG-Colorspace-Name", value.asInstanceOf[js.Any])
+    inline def `setJPEG-Colorspace-Name`(value: String): Self = StObject.set(x, "JPEG-Colorspace-Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJPEG-Colorspace-NameUndefined`: Self = StObject.set(x, "JPEG-Colorspace-Name", js.undefined)
+    inline def `setJPEG-Colorspace-NameUndefined`: Self = StObject.set(x, "JPEG-Colorspace-Name", js.undefined)
     
-    @scala.inline
-    def `setJPEG-ColorspaceUndefined`: Self = StObject.set(x, "JPEG-Colorspace", js.undefined)
+    inline def `setJPEG-ColorspaceUndefined`: Self = StObject.set(x, "JPEG-Colorspace", js.undefined)
     
-    @scala.inline
-    def `setJPEG-Quality`(value: String): Self = StObject.set(x, "JPEG-Quality", value.asInstanceOf[js.Any])
+    inline def `setJPEG-Quality`(value: String): Self = StObject.set(x, "JPEG-Quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJPEG-QualityUndefined`: Self = StObject.set(x, "JPEG-Quality", js.undefined)
+    inline def `setJPEG-QualityUndefined`: Self = StObject.set(x, "JPEG-Quality", js.undefined)
     
-    @scala.inline
-    def `setJPEG-Sampling-factors`(value: String): Self = StObject.set(x, "JPEG-Sampling-factors", value.asInstanceOf[js.Any])
+    inline def `setJPEG-Sampling-factors`(value: String): Self = StObject.set(x, "JPEG-Sampling-factors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJPEG-Sampling-factorsUndefined`: Self = StObject.set(x, "JPEG-Sampling-factors", js.undefined)
+    inline def `setJPEG-Sampling-factorsUndefined`: Self = StObject.set(x, "JPEG-Sampling-factors", js.undefined)
     
-    @scala.inline
-    def `setMatte Color`(value: String): Self = StObject.set(x, "Matte Color", value.asInstanceOf[js.Any])
+    inline def `setMatte Color`(value: String): Self = StObject.set(x, "Matte Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPage geometry`(value: String): Self = StObject.set(x, "Page geometry", value.asInstanceOf[js.Any])
+    inline def `setPage geometry`(value: String): Self = StObject.set(x, "Page geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProfile-EXIF`(value: StringDictionary[String]): Self = StObject.set(x, "Profile-EXIF", value.asInstanceOf[js.Any])
+    inline def `setProfile-EXIF`(value: StringDictionary[String]): Self = StObject.set(x, "Profile-EXIF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProfile-EXIFUndefined`: Self = StObject.set(x, "Profile-EXIF", js.undefined)
+    inline def `setProfile-EXIFUndefined`: Self = StObject.set(x, "Profile-EXIF", js.undefined)
     
-    @scala.inline
-    def `setProfile-XMP`(value: String): Self = StObject.set(x, "Profile-XMP", value.asInstanceOf[js.Any])
+    inline def `setProfile-XMP`(value: String): Self = StObject.set(x, "Profile-XMP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProfile-XMPUndefined`: Self = StObject.set(x, "Profile-XMP", js.undefined)
+    inline def `setProfile-XMPUndefined`: Self = StObject.set(x, "Profile-XMP", js.undefined)
     
-    @scala.inline
-    def `setProfile-color`(value: String): Self = StObject.set(x, "Profile-color", value.asInstanceOf[js.Any])
+    inline def `setProfile-color`(value: String): Self = StObject.set(x, "Profile-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProfile-colorUndefined`: Self = StObject.set(x, "Profile-color", js.undefined)
+    inline def `setProfile-colorUndefined`: Self = StObject.set(x, "Profile-color", js.undefined)
     
-    @scala.inline
-    def `setProfile-iptc`(value: StringDictionary[String]): Self = StObject.set(x, "Profile-iptc", value.asInstanceOf[js.Any])
+    inline def `setProfile-iptc`(value: StringDictionary[String]): Self = StObject.set(x, "Profile-iptc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProfile-iptcUndefined`: Self = StObject.set(x, "Profile-iptc", js.undefined)
+    inline def `setProfile-iptcUndefined`: Self = StObject.set(x, "Profile-iptc", js.undefined)
     
-    @scala.inline
-    def setResolution(value: String): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: String): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Dimensions): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Dimensions): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftware(value: String): Self = StObject.set(x, "Software", value.asInstanceOf[js.Any])
+    inline def setSoftware(value: String): Self = StObject.set(x, "Software", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTainted(value: String): Self = StObject.set(x, "Tainted", value.asInstanceOf[js.Any])
+    inline def setTainted(value: String): Self = StObject.set(x, "Tainted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

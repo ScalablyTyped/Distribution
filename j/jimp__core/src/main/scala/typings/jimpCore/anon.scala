@@ -27,8 +27,7 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `class`: /* import warning: importer.ImportType#apply Failed type conversion: infer Class */ js.Any
     ): `0` = {
       val __obj = js.Dynamic.literal()
@@ -36,11 +35,9 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setClass(value: /* import warning: importer.ImportType#apply Failed type conversion: infer Class */ js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: /* import warning: importer.ImportType#apply Failed type conversion: infer Class */ js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,19 +54,16 @@ object anon {
   }
   object Constants {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constants: /* import warning: importer.ImportType#apply Failed type conversion: infer Constants */ js.Any
     ): Constants = {
       val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constants]
     }
     
-    @scala.inline
-    implicit class ConstantsMutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
+    extension [Self <: Constants](x: Self) {
       
-      @scala.inline
-      def setConstants(
+      inline def setConstants(
         value: /* import warning: importer.ImportType#apply Failed type conversion: infer Constants */ js.Any
       ): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
     }
@@ -81,19 +75,16 @@ object anon {
   }
   object Decoders {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decoders: /* import warning: importer.ImportType#apply Failed type conversion: infer Decoders */ js.Any
     ): Decoders = {
       val __obj = js.Dynamic.literal(decoders = decoders.asInstanceOf[js.Any])
       __obj.asInstanceOf[Decoders]
     }
     
-    @scala.inline
-    implicit class DecodersMutableBuilder[Self <: Decoders] (val x: Self) extends AnyVal {
+    extension [Self <: Decoders](x: Self) {
       
-      @scala.inline
-      def setDecoders(
+      inline def setDecoders(
         value: /* import warning: importer.ImportType#apply Failed type conversion: infer Decoders */ js.Any
       ): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
     }
@@ -107,8 +98,7 @@ object anon {
   }
   object DecodersEncoders {
     
-    @scala.inline
-    def apply[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */](
+    inline def apply[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */](
       decoders: UnionToIntersection[GetPluginFuncArrDecoders[PluginFuncArr]],
       encoders: UnionToIntersection[GetPluginFuncArrEncoders[PluginFuncArr]]
     ): DecodersEncoders[PluginFuncArr] = {
@@ -116,14 +106,11 @@ object anon {
       __obj.asInstanceOf[DecodersEncoders[PluginFuncArr]]
     }
     
-    @scala.inline
-    implicit class DecodersEncodersMutableBuilder[Self <: DecodersEncoders[?], PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] (val x: Self & DecodersEncoders[PluginFuncArr]) extends AnyVal {
+    extension [Self <: DecodersEncoders[?], PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */](x: Self & DecodersEncoders[PluginFuncArr]) {
       
-      @scala.inline
-      def setDecoders(value: UnionToIntersection[GetPluginFuncArrDecoders[PluginFuncArr]]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      inline def setDecoders(value: UnionToIntersection[GetPluginFuncArrDecoders[PluginFuncArr]]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoders(value: UnionToIntersection[GetPluginFuncArrEncoders[PluginFuncArr]]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
+      inline def setEncoders(value: UnionToIntersection[GetPluginFuncArrEncoders[PluginFuncArr]]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,20 +125,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): Dictkey[T] = {
+    inline def apply[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): Dictkey[T] = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey[T]]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey[?], T /* <: ListenableName */] (val x: Self & Dictkey[T]) extends AnyVal {
+    extension [Self <: Dictkey[?], T /* <: ListenableName */](x: Self & Dictkey[T]) {
       
-      @scala.inline
-      def setEventName(value: `before-change` | changed): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: `before-change` | changed): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: T): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: T): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,19 +144,16 @@ object anon {
   }
   object Encoders {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       encoders: /* import warning: importer.ImportType#apply Failed type conversion: infer Encoders */ js.Any
     ): Encoders = {
       val __obj = js.Dynamic.literal(encoders = encoders.asInstanceOf[js.Any])
       __obj.asInstanceOf[Encoders]
     }
     
-    @scala.inline
-    implicit class EncodersMutableBuilder[Self <: Encoders] (val x: Self) extends AnyVal {
+    extension [Self <: Encoders](x: Self) {
       
-      @scala.inline
-      def setEncoders(
+      inline def setEncoders(
         value: /* import warning: importer.ImportType#apply Failed type conversion: infer Encoders */ js.Any
       ): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
     }
@@ -189,20 +169,16 @@ object anon {
   }
   object EventName {
     
-    @scala.inline
-    def apply[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): EventName[T] = {
+    inline def apply[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): EventName[T] = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventName[T]]
     }
     
-    @scala.inline
-    implicit class EventNameMutableBuilder[Self <: EventName[?], T /* <: ListenableName */] (val x: Self & EventName[T]) extends AnyVal {
+    extension [Self <: EventName[?], T /* <: ListenableName */](x: Self & EventName[T]) {
       
-      @scala.inline
-      def setEventName(value: T): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: T): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: clone | ChangeName | constructor): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: clone | ChangeName | constructor): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,18 +189,15 @@ object anon {
   }
   object Requiredclassany {
     
-    @scala.inline
-    def apply(`class`: js.Any): Requiredclassany = {
+    inline def apply(`class`: js.Any): Requiredclassany = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Requiredclassany]
     }
     
-    @scala.inline
-    implicit class RequiredclassanyMutableBuilder[Self <: Requiredclassany] (val x: Self) extends AnyVal {
+    extension [Self <: Requiredclassany](x: Self) {
       
-      @scala.inline
-      def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,17 +208,14 @@ object anon {
   }
   object Requiredconstantsany {
     
-    @scala.inline
-    def apply(constants: js.Any): Requiredconstantsany = {
+    inline def apply(constants: js.Any): Requiredconstantsany = {
       val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any])
       __obj.asInstanceOf[Requiredconstantsany]
     }
     
-    @scala.inline
-    implicit class RequiredconstantsanyMutableBuilder[Self <: Requiredconstantsany] (val x: Self) extends AnyVal {
+    extension [Self <: Requiredconstantsany](x: Self) {
       
-      @scala.inline
-      def setConstants(value: js.Any): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: js.Any): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,20 +227,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -319,23 +319,18 @@ object BLECentralPlugin {
   }
   object BLEError {
     
-    @scala.inline
-    def apply(errorMessage: String, id: String, name: String): BLEError = {
+    inline def apply(errorMessage: String, id: String, name: String): BLEError = {
       val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BLEError]
     }
     
-    @scala.inline
-    implicit class BLEErrorMutableBuilder[Self <: BLEError] (val x: Self) extends AnyVal {
+    extension [Self <: BLEError](x: Self) {
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -351,35 +346,26 @@ object BLECentralPlugin {
   }
   object PeripheralCharacteristic {
     
-    @scala.inline
-    def apply(characteristic: String, properties: js.Array[String], service: String): PeripheralCharacteristic = {
+    inline def apply(characteristic: String, properties: js.Array[String], service: String): PeripheralCharacteristic = {
       val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[PeripheralCharacteristic]
     }
     
-    @scala.inline
-    implicit class PeripheralCharacteristicMutableBuilder[Self <: PeripheralCharacteristic] (val x: Self) extends AnyVal {
+    extension [Self <: PeripheralCharacteristic](x: Self) {
       
-      @scala.inline
-      def setCharacteristic(value: String): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+      inline def setCharacteristic(value: String): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptors(value: js.Array[js.Any]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: js.Array[js.Any]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
+      inline def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
       
-      @scala.inline
-      def setDescriptorsVarargs(value: js.Any*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+      inline def setDescriptorsVarargs(value: js.Any*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
       
-      @scala.inline
-      def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
   
@@ -395,26 +381,20 @@ object BLECentralPlugin {
   }
   object PeripheralData {
     
-    @scala.inline
-    def apply(advertising: ArrayBuffer | js.Any, id: String, name: String, rssi: Double): PeripheralData = {
+    inline def apply(advertising: ArrayBuffer | js.Any, id: String, name: String, rssi: Double): PeripheralData = {
       val __obj = js.Dynamic.literal(advertising = advertising.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rssi = rssi.asInstanceOf[js.Any])
       __obj.asInstanceOf[PeripheralData]
     }
     
-    @scala.inline
-    implicit class PeripheralDataMutableBuilder[Self <: PeripheralData] (val x: Self) extends AnyVal {
+    extension [Self <: PeripheralData](x: Self) {
       
-      @scala.inline
-      def setAdvertising(value: ArrayBuffer | js.Any): Self = StObject.set(x, "advertising", value.asInstanceOf[js.Any])
+      inline def setAdvertising(value: ArrayBuffer | js.Any): Self = StObject.set(x, "advertising", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
+      inline def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
     }
   }
   
@@ -428,8 +408,7 @@ object BLECentralPlugin {
   }
   object PeripheralDataExtended {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       advertising: ArrayBuffer | js.Any,
       characteristics: js.Array[PeripheralCharacteristic],
       id: String,
@@ -441,20 +420,15 @@ object BLECentralPlugin {
       __obj.asInstanceOf[PeripheralDataExtended]
     }
     
-    @scala.inline
-    implicit class PeripheralDataExtendedMutableBuilder[Self <: PeripheralDataExtended] (val x: Self) extends AnyVal {
+    extension [Self <: PeripheralDataExtended](x: Self) {
       
-      @scala.inline
-      def setCharacteristics(value: js.Array[PeripheralCharacteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
+      inline def setCharacteristics(value: js.Array[PeripheralCharacteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacteristicsVarargs(value: PeripheralCharacteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+      inline def setCharacteristicsVarargs(value: PeripheralCharacteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
       
-      @scala.inline
-      def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+      inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
     }
   }
   
@@ -464,20 +438,16 @@ object BLECentralPlugin {
   }
   object StartScanOptions {
     
-    @scala.inline
-    def apply(): StartScanOptions = {
+    inline def apply(): StartScanOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartScanOptions]
     }
     
-    @scala.inline
-    implicit class StartScanOptionsMutableBuilder[Self <: StartScanOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StartScanOptions](x: Self) {
       
-      @scala.inline
-      def setReportDuplicates(value: Boolean): Self = StObject.set(x, "reportDuplicates", value.asInstanceOf[js.Any])
+      inline def setReportDuplicates(value: Boolean): Self = StObject.set(x, "reportDuplicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportDuplicatesUndefined: Self = StObject.set(x, "reportDuplicates", js.undefined)
+      inline def setReportDuplicatesUndefined: Self = StObject.set(x, "reportDuplicates", js.undefined)
     }
   }
 }

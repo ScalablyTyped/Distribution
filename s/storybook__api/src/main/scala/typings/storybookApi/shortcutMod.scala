@@ -19,33 +19,23 @@ object shortcutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def controlOrMetaKey(): meta | control = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaKey")().asInstanceOf[meta | control]
+  inline def controlOrMetaKey(): meta | control = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaKey")().asInstanceOf[meta | control]
   
-  @scala.inline
-  def controlOrMetaSymbol(): Placeofinterestsign | ctrl = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaSymbol")().asInstanceOf[Placeofinterestsign | ctrl]
+  inline def controlOrMetaSymbol(): Placeofinterestsign | ctrl = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaSymbol")().asInstanceOf[Placeofinterestsign | ctrl]
   
-  @scala.inline
-  def eventMatchesShortcut(e: Event, shortcut: KeyCollection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eventMatchesShortcut")(e.asInstanceOf[js.Any], shortcut.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eventMatchesShortcut(e: Event, shortcut: KeyCollection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eventMatchesShortcut")(e.asInstanceOf[js.Any], shortcut.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def eventToShortcut(e: KeyboardEvent): KeyCollection | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("eventToShortcut")(e.asInstanceOf[js.Any]).asInstanceOf[KeyCollection | Null]
+  inline def eventToShortcut(e: KeyboardEvent): KeyCollection | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("eventToShortcut")(e.asInstanceOf[js.Any]).asInstanceOf[KeyCollection | Null]
   
-  @scala.inline
-  def isMacLike(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacLike")().asInstanceOf[Boolean]
+  inline def isMacLike(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacLike")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isShortcutTaken(arr1: js.Array[String], arr2: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShortcutTaken")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isShortcutTaken(arr1: js.Array[String], arr2: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShortcutTaken")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def keyToSymbol(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyToSymbol")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keyToSymbol(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyToSymbol")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def optionOrAltSymbol(): Optionkey | alt = ^.asInstanceOf[js.Dynamic].applyDynamic("optionOrAltSymbol")().asInstanceOf[Optionkey | alt]
+  inline def optionOrAltSymbol(): Optionkey | alt = ^.asInstanceOf[js.Dynamic].applyDynamic("optionOrAltSymbol")().asInstanceOf[Optionkey | alt]
   
-  @scala.inline
-  def shortcutMatchesShortcut(inputShortcut: KeyCollection, shortcut: KeyCollection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shortcutMatchesShortcut")(inputShortcut.asInstanceOf[js.Any], shortcut.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shortcutMatchesShortcut(inputShortcut: KeyCollection, shortcut: KeyCollection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shortcutMatchesShortcut")(inputShortcut.asInstanceOf[js.Any], shortcut.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def shortcutToHumanString(shortcut: KeyCollection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shortcutToHumanString")(shortcut.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def shortcutToHumanString(shortcut: KeyCollection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shortcutToHumanString")(shortcut.asInstanceOf[js.Any]).asInstanceOf[String]
 }

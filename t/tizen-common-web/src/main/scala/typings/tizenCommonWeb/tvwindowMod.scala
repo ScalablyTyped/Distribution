@@ -786,8 +786,7 @@ object tvwindowMod {
   }
   object VideoResolution {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aspectRatio: AspectRatio | ASPECT_RATIO_1x1 | ASPECT_RATIO_4x3 | ASPECT_RATIO_16x9 | ASPECT_RATIO_221x100 | ASPECT_RATIO_UNKNOWN,
       frequency: Double,
       height: Double,
@@ -797,22 +796,17 @@ object tvwindowMod {
       __obj.asInstanceOf[VideoResolution]
     }
     
-    @scala.inline
-    implicit class VideoResolutionMutableBuilder[Self <: VideoResolution] (val x: Self) extends AnyVal {
+    extension [Self <: VideoResolution](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(
+      inline def setAspectRatio(
         value: AspectRatio | ASPECT_RATIO_1x1 | ASPECT_RATIO_4x3 | ASPECT_RATIO_16x9 | ASPECT_RATIO_221x100 | ASPECT_RATIO_UNKNOWN
       ): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   

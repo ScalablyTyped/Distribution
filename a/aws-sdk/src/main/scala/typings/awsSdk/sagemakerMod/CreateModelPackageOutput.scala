@@ -13,16 +13,13 @@ trait CreateModelPackageOutput extends StObject {
 }
 object CreateModelPackageOutput {
   
-  @scala.inline
-  def apply(ModelPackageArn: ModelPackageArn): CreateModelPackageOutput = {
+  inline def apply(ModelPackageArn: ModelPackageArn): CreateModelPackageOutput = {
     val __obj = js.Dynamic.literal(ModelPackageArn = ModelPackageArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModelPackageOutput]
   }
   
-  @scala.inline
-  implicit class CreateModelPackageOutputMutableBuilder[Self <: CreateModelPackageOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateModelPackageOutput](x: Self) {
     
-    @scala.inline
-    def setModelPackageArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageArn", value.asInstanceOf[js.Any])
+    inline def setModelPackageArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageArn", value.asInstanceOf[js.Any])
   }
 }

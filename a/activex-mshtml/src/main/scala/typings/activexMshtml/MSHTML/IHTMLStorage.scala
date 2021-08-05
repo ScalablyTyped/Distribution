@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLStorage extends StObject {
   
-  @JSName("MSHTML.IHTMLStorage_typekey")
+  /* private */ @JSName("MSHTML.IHTMLStorage_typekey")
   var MSHTMLDotIHTMLStorage_typekey: IHTMLStorage
   
   def clear(): Unit
@@ -25,8 +25,7 @@ trait IHTMLStorage extends StObject {
 }
 object IHTMLStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLStorage_typekey: IHTMLStorage,
     clear: () => Unit,
     getItem: String => js.Any,
@@ -41,31 +40,22 @@ object IHTMLStorage {
     __obj.asInstanceOf[IHTMLStorage]
   }
   
-  @scala.inline
-  implicit class IHTMLStorageMutableBuilder[Self <: IHTMLStorage] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLStorage](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKey(value: Double => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+    inline def setKey(value: Double => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLStorage_typekey(value: IHTMLStorage): Self = StObject.set(x, "MSHTML.IHTMLStorage_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLStorage_typekey(value: IHTMLStorage): Self = StObject.set(x, "MSHTML.IHTMLStorage_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingSpace(value: Double): Self = StObject.set(x, "remainingSpace", value.asInstanceOf[js.Any])
+    inline def setRemainingSpace(value: Double): Self = StObject.set(x, "remainingSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+    inline def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+    inline def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
   }
 }

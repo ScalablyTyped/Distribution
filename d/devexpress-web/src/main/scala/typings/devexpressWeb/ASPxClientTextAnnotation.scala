@@ -18,19 +18,15 @@ trait ASPxClientTextAnnotation
 }
 object ASPxClientTextAnnotation {
   
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, lines: js.Array[String], name: String): ASPxClientTextAnnotation = {
+  inline def apply(chart: ASPxClientWebChart, lines: js.Array[String], name: String): ASPxClientTextAnnotation = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTextAnnotation]
   }
   
-  @scala.inline
-  implicit class ASPxClientTextAnnotationMutableBuilder[Self <: ASPxClientTextAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTextAnnotation](x: Self) {
     
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

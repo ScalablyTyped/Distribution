@@ -23,22 +23,17 @@ trait TestReportSummary extends StObject {
 }
 object TestReportSummary {
   
-  @scala.inline
-  def apply(durationInNanoSeconds: WrapperLong, statusCounts: ReportStatusCounts, total: WrapperInt): TestReportSummary = {
+  inline def apply(durationInNanoSeconds: WrapperLong, statusCounts: ReportStatusCounts, total: WrapperInt): TestReportSummary = {
     val __obj = js.Dynamic.literal(durationInNanoSeconds = durationInNanoSeconds.asInstanceOf[js.Any], statusCounts = statusCounts.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReportSummary]
   }
   
-  @scala.inline
-  implicit class TestReportSummaryMutableBuilder[Self <: TestReportSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TestReportSummary](x: Self) {
     
-    @scala.inline
-    def setDurationInNanoSeconds(value: WrapperLong): Self = StObject.set(x, "durationInNanoSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInNanoSeconds(value: WrapperLong): Self = StObject.set(x, "durationInNanoSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCounts(value: ReportStatusCounts): Self = StObject.set(x, "statusCounts", value.asInstanceOf[js.Any])
+    inline def setStatusCounts(value: ReportStatusCounts): Self = StObject.set(x, "statusCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: WrapperInt): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: WrapperInt): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

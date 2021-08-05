@@ -11,10 +11,8 @@ object getStateMachineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStateMachine(args: GetStateMachineArgs): js.Promise[GetStateMachineResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateMachine")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStateMachineResult]]
-  @scala.inline
-  def getStateMachine(args: GetStateMachineArgs, opts: InvokeOptions): js.Promise[GetStateMachineResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateMachine")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStateMachineResult]]
+  inline def getStateMachine(args: GetStateMachineArgs): js.Promise[GetStateMachineResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateMachine")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStateMachineResult]]
+  inline def getStateMachine(args: GetStateMachineArgs, opts: InvokeOptions): js.Promise[GetStateMachineResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateMachine")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStateMachineResult]]
   
   trait GetStateMachineArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getStateMachineMod {
   }
   object GetStateMachineArgs {
     
-    @scala.inline
-    def apply(name: String): GetStateMachineArgs = {
+    inline def apply(name: String): GetStateMachineArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetStateMachineArgs]
     }
     
-    @scala.inline
-    implicit class GetStateMachineArgsMutableBuilder[Self <: GetStateMachineArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetStateMachineArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,8 +70,7 @@ object getStateMachineMod {
   }
   object GetStateMachineResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       creationDate: String,
       definition: String,
@@ -89,29 +83,21 @@ object getStateMachineMod {
       __obj.asInstanceOf[GetStateMachineResult]
     }
     
-    @scala.inline
-    implicit class GetStateMachineResultMutableBuilder[Self <: GetStateMachineResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetStateMachineResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+      inline def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

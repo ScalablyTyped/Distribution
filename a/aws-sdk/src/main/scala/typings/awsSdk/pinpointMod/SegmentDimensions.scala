@@ -38,49 +38,35 @@ trait SegmentDimensions extends StObject {
 }
 object SegmentDimensions {
   
-  @scala.inline
-  def apply(): SegmentDimensions = {
+  inline def apply(): SegmentDimensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentDimensions]
   }
   
-  @scala.inline
-  implicit class SegmentDimensionsMutableBuilder[Self <: SegmentDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentDimensions](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setBehavior(value: SegmentBehaviors): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: SegmentBehaviors): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "Behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "Behavior", js.undefined)
     
-    @scala.inline
-    def setDemographic(value: SegmentDemographics): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
+    inline def setDemographic(value: SegmentDemographics): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
+    inline def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
     
-    @scala.inline
-    def setLocation(value: SegmentLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SegmentLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: MapOfMetricDimension): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: MapOfMetricDimension): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setUserAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
+    inline def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
   }
 }

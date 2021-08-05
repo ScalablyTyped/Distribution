@@ -18,22 +18,17 @@ trait MobileBroadbandModemConfiguration extends StObject {
 }
 object MobileBroadbandModemConfiguration {
   
-  @scala.inline
-  def apply(homeProviderId: String, homeProviderName: String, uicc: MobileBroadbandUicc): MobileBroadbandModemConfiguration = {
+  inline def apply(homeProviderId: String, homeProviderName: String, uicc: MobileBroadbandUicc): MobileBroadbandModemConfiguration = {
     val __obj = js.Dynamic.literal(homeProviderId = homeProviderId.asInstanceOf[js.Any], homeProviderName = homeProviderName.asInstanceOf[js.Any], uicc = uicc.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandModemConfiguration]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandModemConfigurationMutableBuilder[Self <: MobileBroadbandModemConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandModemConfiguration](x: Self) {
     
-    @scala.inline
-    def setHomeProviderId(value: String): Self = StObject.set(x, "homeProviderId", value.asInstanceOf[js.Any])
+    inline def setHomeProviderId(value: String): Self = StObject.set(x, "homeProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeProviderName(value: String): Self = StObject.set(x, "homeProviderName", value.asInstanceOf[js.Any])
+    inline def setHomeProviderName(value: String): Self = StObject.set(x, "homeProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUicc(value: MobileBroadbandUicc): Self = StObject.set(x, "uicc", value.asInstanceOf[js.Any])
+    inline def setUicc(value: MobileBroadbandUicc): Self = StObject.set(x, "uicc", value.asInstanceOf[js.Any])
   }
 }

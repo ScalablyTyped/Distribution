@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TeamVisibilityType extends StObject
 object TeamVisibilityType {
   
-  @scala.inline
-  def hiddenMembership: typings.microsoftGraph.microsoftGraphStrings.hiddenMembership = "hiddenMembership".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hiddenMembership]
+  inline def hiddenMembership: typings.microsoftGraph.microsoftGraphStrings.hiddenMembership = "hiddenMembership".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hiddenMembership]
   
-  @scala.inline
-  def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`private`]
+  inline def `private`: typings.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.`private`]
   
-  @scala.inline
-  def public: typings.microsoftGraph.microsoftGraphStrings.public = "public".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.public]
+  inline def public: typings.microsoftGraph.microsoftGraphStrings.public = "public".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.public]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

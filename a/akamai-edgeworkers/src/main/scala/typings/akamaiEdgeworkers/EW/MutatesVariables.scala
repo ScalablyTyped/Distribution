@@ -14,16 +14,13 @@ trait MutatesVariables extends StObject {
 }
 object MutatesVariables {
   
-  @scala.inline
-  def apply(setVariable: (String, String) => Unit): MutatesVariables = {
+  inline def apply(setVariable: (String, String) => Unit): MutatesVariables = {
     val __obj = js.Dynamic.literal(setVariable = js.Any.fromFunction2(setVariable))
     __obj.asInstanceOf[MutatesVariables]
   }
   
-  @scala.inline
-  implicit class MutatesVariablesMutableBuilder[Self <: MutatesVariables] (val x: Self) extends AnyVal {
+  extension [Self <: MutatesVariables](x: Self) {
     
-    @scala.inline
-    def setSetVariable(value: (String, String) => Unit): Self = StObject.set(x, "setVariable", js.Any.fromFunction2(value))
+    inline def setSetVariable(value: (String, String) => Unit): Self = StObject.set(x, "setVariable", js.Any.fromFunction2(value))
   }
 }

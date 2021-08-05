@@ -31,14 +31,12 @@ object iosParserMod {
     @JSImport("logkitty/build/ios/IosParser", "default.headerRegex")
     @js.native
     def headerRegex: RegExp = js.native
-    @scala.inline
-    def headerRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerRegex")(x.asInstanceOf[js.Any])
+    inline def headerRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerRegex")(x.asInstanceOf[js.Any])
     
     @JSImport("logkitty/build/ios/IosParser", "default.timeRegex")
     @js.native
     def timeRegex: RegExp = js.native
-    @scala.inline
-    def timeRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeRegex")(x.asInstanceOf[js.Any])
+    inline def timeRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeRegex")(x.asInstanceOf[js.Any])
   }
   
   trait IosParser
@@ -46,8 +44,7 @@ object iosParserMod {
        with IParser
   object IosParser {
     
-    @scala.inline
-    def apply(parseMessages: js.Array[String] => js.Array[Entry], splitMessages: String => js.Array[String]): IosParser = {
+    inline def apply(parseMessages: js.Array[String] => js.Array[Entry], splitMessages: String => js.Array[String]): IosParser = {
       val __obj = js.Dynamic.literal(parseMessages = js.Any.fromFunction1(parseMessages), splitMessages = js.Any.fromFunction1(splitMessages))
       __obj.asInstanceOf[IosParser]
     }

@@ -137,22 +137,18 @@ object iconMod {
   }
   object IconOverrides {
     
-    @scala.inline
-    def apply(): IconOverrides = {
+    inline def apply(): IconOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconOverrides]
     }
     
-    @scala.inline
-    implicit class IconOverridesMutableBuilder[Self <: IconOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: IconOverrides](x: Self) {
       
-      @scala.inline
-      def setSvg(
+      inline def setSvg(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<StyledComponentArgsT> */ js.Any
       ): Self = StObject.set(x, "Svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "Svg", js.undefined)
+      inline def setSvgUndefined: Self = StObject.set(x, "Svg", js.undefined)
     }
   }
   
@@ -170,44 +166,32 @@ object iconMod {
   }
   object IconProps {
     
-    @scala.inline
-    def apply(): IconProps = {
+    inline def apply(): IconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconProps]
     }
     
-    @scala.inline
-    implicit class IconPropsMutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: IconOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: IconOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -221,26 +205,20 @@ object iconMod {
   }
   object StyledComponentArgsT {
     
-    @scala.inline
-    def apply(): StyledComponentArgsT = {
+    inline def apply(): StyledComponentArgsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyledComponentArgsT]
     }
     
-    @scala.inline
-    implicit class StyledComponentArgsTMutableBuilder[Self <: StyledComponentArgsT] (val x: Self) extends AnyVal {
+    extension [Self <: StyledComponentArgsT](x: Self) {
       
-      @scala.inline
-      def set$color(value: String): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
+      inline def set$color(value: String): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$colorUndefined: Self = StObject.set(x, "$color", js.undefined)
+      inline def set$colorUndefined: Self = StObject.set(x, "$color", js.undefined)
       
-      @scala.inline
-      def set$size(value: Double | String): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+      inline def set$size(value: Double | String): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
+      inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     }
   }
 }

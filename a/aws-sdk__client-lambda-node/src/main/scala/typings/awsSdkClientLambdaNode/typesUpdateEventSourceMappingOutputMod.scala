@@ -61,65 +61,46 @@ object typesUpdateEventSourceMappingOutputMod {
   }
   object UpdateEventSourceMappingOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateEventSourceMappingOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateEventSourceMappingOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateEventSourceMappingOutput]
     }
     
-    @scala.inline
-    implicit class UpdateEventSourceMappingOutputMutableBuilder[Self <: UpdateEventSourceMappingOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateEventSourceMappingOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "BatchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "BatchSize", js.undefined)
       
-      @scala.inline
-      def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+      inline def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
+      inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
       
-      @scala.inline
-      def setFunctionArn(value: String): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
+      inline def setFunctionArn(value: String): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
+      inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
       
-      @scala.inline
-      def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       
-      @scala.inline
-      def setLastProcessingResult(value: String): Self = StObject.set(x, "LastProcessingResult", value.asInstanceOf[js.Any])
+      inline def setLastProcessingResult(value: String): Self = StObject.set(x, "LastProcessingResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastProcessingResultUndefined: Self = StObject.set(x, "LastProcessingResult", js.undefined)
+      inline def setLastProcessingResultUndefined: Self = StObject.set(x, "LastProcessingResult", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateTransitionReason(value: String): Self = StObject.set(x, "StateTransitionReason", value.asInstanceOf[js.Any])
+      inline def setStateTransitionReason(value: String): Self = StObject.set(x, "StateTransitionReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateTransitionReasonUndefined: Self = StObject.set(x, "StateTransitionReason", js.undefined)
+      inline def setStateTransitionReasonUndefined: Self = StObject.set(x, "StateTransitionReason", js.undefined)
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
       
-      @scala.inline
-      def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
+      inline def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUUIDUndefined: Self = StObject.set(x, "UUID", js.undefined)
+      inline def setUUIDUndefined: Self = StObject.set(x, "UUID", js.undefined)
     }
   }
 }

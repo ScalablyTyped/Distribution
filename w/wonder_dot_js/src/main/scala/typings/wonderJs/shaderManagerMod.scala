@@ -31,7 +31,6 @@ object shaderManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(material: Material): ShaderManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(material.asInstanceOf[js.Any]).asInstanceOf[ShaderManager]
+    inline def create(material: Material): ShaderManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(material.asInstanceOf[js.Any]).asInstanceOf[ShaderManager]
   }
 }

@@ -44,49 +44,35 @@ trait DisplayBalloonOptions extends StObject {
 }
 object DisplayBalloonOptions {
   
-  @scala.inline
-  def apply(content: String, title: String): DisplayBalloonOptions = {
+  inline def apply(content: String, title: String): DisplayBalloonOptions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayBalloonOptions]
   }
   
-  @scala.inline
-  implicit class DisplayBalloonOptionsMutableBuilder[Self <: DisplayBalloonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayBalloonOptions](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconType(value: none | info | warning | error | custom): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
+    inline def setIconType(value: none | info | warning | error | custom): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
+    inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLargeIcon(value: Boolean): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
+    inline def setLargeIcon(value: Boolean): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
+    inline def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
     
-    @scala.inline
-    def setNoSound(value: Boolean): Self = StObject.set(x, "noSound", value.asInstanceOf[js.Any])
+    inline def setNoSound(value: Boolean): Self = StObject.set(x, "noSound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSoundUndefined: Self = StObject.set(x, "noSound", js.undefined)
+    inline def setNoSoundUndefined: Self = StObject.set(x, "noSound", js.undefined)
     
-    @scala.inline
-    def setRespectQuietTime(value: Boolean): Self = StObject.set(x, "respectQuietTime", value.asInstanceOf[js.Any])
+    inline def setRespectQuietTime(value: Boolean): Self = StObject.set(x, "respectQuietTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespectQuietTimeUndefined: Self = StObject.set(x, "respectQuietTime", js.undefined)
+    inline def setRespectQuietTimeUndefined: Self = StObject.set(x, "respectQuietTime", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

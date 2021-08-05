@@ -23,28 +23,21 @@ trait IncreaseReplicationFactorRequest extends StObject {
 }
 object IncreaseReplicationFactorRequest {
   
-  @scala.inline
-  def apply(ClusterName: String, NewReplicationFactor: Integer): IncreaseReplicationFactorRequest = {
+  inline def apply(ClusterName: String, NewReplicationFactor: Integer): IncreaseReplicationFactorRequest = {
     val __obj = js.Dynamic.literal(ClusterName = ClusterName.asInstanceOf[js.Any], NewReplicationFactor = NewReplicationFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncreaseReplicationFactorRequest]
   }
   
-  @scala.inline
-  implicit class IncreaseReplicationFactorRequestMutableBuilder[Self <: IncreaseReplicationFactorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IncreaseReplicationFactorRequest](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewReplicationFactor(value: Integer): Self = StObject.set(x, "NewReplicationFactor", value.asInstanceOf[js.Any])
+    inline def setNewReplicationFactor(value: Integer): Self = StObject.set(x, "NewReplicationFactor", value.asInstanceOf[js.Any])
   }
 }

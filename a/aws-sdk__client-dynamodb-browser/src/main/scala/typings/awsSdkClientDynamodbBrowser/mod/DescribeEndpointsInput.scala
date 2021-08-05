@@ -9,8 +9,7 @@ trait DescribeEndpointsInput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeEndpointsInputMod.DescribeEndpointsInput
 object DescribeEndpointsInput {
   
-  @scala.inline
-  def apply(): DescribeEndpointsInput = {
+  inline def apply(): DescribeEndpointsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEndpointsInput]
   }

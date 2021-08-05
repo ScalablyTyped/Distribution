@@ -33,43 +33,31 @@ trait IntegrationResponse extends StObject {
 }
 object IntegrationResponse {
   
-  @scala.inline
-  def apply(): IntegrationResponse = {
+  inline def apply(): IntegrationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegrationResponse]
   }
   
-  @scala.inline
-  implicit class IntegrationResponseMutableBuilder[Self <: IntegrationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IntegrationResponse](x: Self) {
     
-    @scala.inline
-    def setContentHandling(value: ContentHandlingStrategy): Self = StObject.set(x, "contentHandling", value.asInstanceOf[js.Any])
+    inline def setContentHandling(value: ContentHandlingStrategy): Self = StObject.set(x, "contentHandling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHandlingUndefined: Self = StObject.set(x, "contentHandling", js.undefined)
+    inline def setContentHandlingUndefined: Self = StObject.set(x, "contentHandling", js.undefined)
     
-    @scala.inline
-    def setResponseParameters(value: MapOfStringToString): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+    inline def setResponseParameters(value: MapOfStringToString): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+    inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
     
-    @scala.inline
-    def setResponseTemplates(value: MapOfStringToString): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
+    inline def setResponseTemplates(value: MapOfStringToString): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
+    inline def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
     
-    @scala.inline
-    def setSelectionPattern(value: String): Self = StObject.set(x, "selectionPattern", value.asInstanceOf[js.Any])
+    inline def setSelectionPattern(value: String): Self = StObject.set(x, "selectionPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionPatternUndefined: Self = StObject.set(x, "selectionPattern", js.undefined)
+    inline def setSelectionPatternUndefined: Self = StObject.set(x, "selectionPattern", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

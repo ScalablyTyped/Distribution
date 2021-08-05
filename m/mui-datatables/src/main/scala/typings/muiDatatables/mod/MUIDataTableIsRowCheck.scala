@@ -14,22 +14,17 @@ trait MUIDataTableIsRowCheck extends StObject {
 }
 object MUIDataTableIsRowCheck {
   
-  @scala.inline
-  def apply(data: js.Array[DataIndex], lookup: DataIndexNumber): MUIDataTableIsRowCheck = {
+  inline def apply(data: js.Array[DataIndex], lookup: DataIndexNumber): MUIDataTableIsRowCheck = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableIsRowCheck]
   }
   
-  @scala.inline
-  implicit class MUIDataTableIsRowCheckMutableBuilder[Self <: MUIDataTableIsRowCheck] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableIsRowCheck](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[DataIndex]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[DataIndex]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: DataIndex*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: DataIndex*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setLookup(value: DataIndexNumber): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+    inline def setLookup(value: DataIndexNumber): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
   }
 }

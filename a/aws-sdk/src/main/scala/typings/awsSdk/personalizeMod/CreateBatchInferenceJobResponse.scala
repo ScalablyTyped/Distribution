@@ -13,19 +13,15 @@ trait CreateBatchInferenceJobResponse extends StObject {
 }
 object CreateBatchInferenceJobResponse {
   
-  @scala.inline
-  def apply(): CreateBatchInferenceJobResponse = {
+  inline def apply(): CreateBatchInferenceJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBatchInferenceJobResponse]
   }
   
-  @scala.inline
-  implicit class CreateBatchInferenceJobResponseMutableBuilder[Self <: CreateBatchInferenceJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBatchInferenceJobResponse](x: Self) {
     
-    @scala.inline
-    def setBatchInferenceJobArn(value: Arn): Self = StObject.set(x, "batchInferenceJobArn", value.asInstanceOf[js.Any])
+    inline def setBatchInferenceJobArn(value: Arn): Self = StObject.set(x, "batchInferenceJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchInferenceJobArnUndefined: Self = StObject.set(x, "batchInferenceJobArn", js.undefined)
+    inline def setBatchInferenceJobArnUndefined: Self = StObject.set(x, "batchInferenceJobArn", js.undefined)
   }
 }

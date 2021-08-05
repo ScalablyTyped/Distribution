@@ -8,11 +8,9 @@ object electronPromptStrings {
   
   @js.native
   sealed trait input extends StObject
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
   sealed trait select extends StObject
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
+  inline def select: select = "select".asInstanceOf[select]
 }

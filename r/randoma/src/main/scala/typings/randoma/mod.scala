@@ -40,8 +40,7 @@ object mod {
   	@returns A random seed you could use in the `seed` option if you for some reason don't want deterministic randomness.
   	*/
   /* static member */
-  @scala.inline
-  def seed(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")().asInstanceOf[Double]
+  inline def seed(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")().asInstanceOf[Double]
   
   type Color = typings.color.mod.Color[ColorParam]
   
@@ -54,17 +53,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(seed: String | Double): Options = {
+    inline def apply(seed: String | Double): Options = {
       val __obj = js.Dynamic.literal(seed = seed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSeed(value: String | Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: String | Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     }
   }
   

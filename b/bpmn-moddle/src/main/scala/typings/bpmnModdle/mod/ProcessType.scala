@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcessType extends StObject
 object ProcessType {
   
-  @scala.inline
-  def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
+  inline def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
   
-  @scala.inline
-  def Private: typings.bpmnModdle.bpmnModdleStrings.Private = "Private".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Private]
+  inline def Private: typings.bpmnModdle.bpmnModdleStrings.Private = "Private".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Private]
   
-  @scala.inline
-  def Public: typings.bpmnModdle.bpmnModdleStrings.Public = "Public".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Public]
+  inline def Public: typings.bpmnModdle.bpmnModdleStrings.Public = "Public".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Public]
 }

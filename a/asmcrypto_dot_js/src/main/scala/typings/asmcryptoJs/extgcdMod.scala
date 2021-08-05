@@ -13,9 +13,7 @@ object extgcdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BigNumberExtGCD(a: BigNumber, b: BigNumber): Y = (^.asInstanceOf[js.Dynamic].applyDynamic("BigNumber_extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Y]
+  inline def BigNumberExtGCD(a: BigNumber, b: BigNumber): Y = (^.asInstanceOf[js.Dynamic].applyDynamic("BigNumber_extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Y]
   
-  @scala.inline
-  def NumberExtGCD(a: Double, b: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("Number_extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[X]
+  inline def NumberExtGCD(a: Double, b: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("Number_extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[X]
 }

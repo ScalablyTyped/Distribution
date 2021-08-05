@@ -69,8 +69,7 @@ object metadataArgsRelationMetadataArgsMod {
   }
   object RelationMetadataArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isLazy: Boolean,
       options: RelationOptions,
       propertyName: String,
@@ -83,50 +82,35 @@ object metadataArgsRelationMetadataArgsMod {
       __obj.asInstanceOf[RelationMetadataArgs]
     }
     
-    @scala.inline
-    implicit class RelationMetadataArgsMutableBuilder[Self <: RelationMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RelationMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setInverseSideProperty(value: PropertyTypeFactory[js.Any]): Self = StObject.set(x, "inverseSideProperty", value.asInstanceOf[js.Any])
+      inline def setInverseSideProperty(value: PropertyTypeFactory[js.Any]): Self = StObject.set(x, "inverseSideProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseSidePropertyFunction1(value: js.Any => String | js.Any): Self = StObject.set(x, "inverseSideProperty", js.Any.fromFunction1(value))
+      inline def setInverseSidePropertyFunction1(value: js.Any => String | js.Any): Self = StObject.set(x, "inverseSideProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInverseSidePropertyUndefined: Self = StObject.set(x, "inverseSideProperty", js.undefined)
+      inline def setInverseSidePropertyUndefined: Self = StObject.set(x, "inverseSideProperty", js.undefined)
       
-      @scala.inline
-      def setIsLazy(value: Boolean): Self = StObject.set(x, "isLazy", value.asInstanceOf[js.Any])
+      inline def setIsLazy(value: Boolean): Self = StObject.set(x, "isLazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTreeChildren(value: Boolean): Self = StObject.set(x, "isTreeChildren", value.asInstanceOf[js.Any])
+      inline def setIsTreeChildren(value: Boolean): Self = StObject.set(x, "isTreeChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTreeChildrenUndefined: Self = StObject.set(x, "isTreeChildren", js.undefined)
+      inline def setIsTreeChildrenUndefined: Self = StObject.set(x, "isTreeChildren", js.undefined)
       
-      @scala.inline
-      def setIsTreeParent(value: Boolean): Self = StObject.set(x, "isTreeParent", value.asInstanceOf[js.Any])
+      inline def setIsTreeParent(value: Boolean): Self = StObject.set(x, "isTreeParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTreeParentUndefined: Self = StObject.set(x, "isTreeParent", js.undefined)
+      inline def setIsTreeParentUndefined: Self = StObject.set(x, "isTreeParent", js.undefined)
       
-      @scala.inline
-      def setOptions(value: RelationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RelationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+      inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationType(value: RelationType): Self = StObject.set(x, "relationType", value.asInstanceOf[js.Any])
+      inline def setRelationType(value: RelationType): Self = StObject.set(x, "relationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: RelationTypeInFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RelationTypeInFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction1(value: /* type */ js.UndefOr[js.Any] => js.Function): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setTypeFunction1(value: /* type */ js.UndefOr[js.Any] => js.Function): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     }
   }
 }

@@ -10,6 +10,5 @@ object useAuthUserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function0[js.Object | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function0[js.Object | Null]]
+  inline def default(): js.Function0[js.Object | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function0[js.Object | Null]]
 }

@@ -10,19 +10,15 @@ trait GuidOptions extends StObject {
 }
 object GuidOptions {
   
-  @scala.inline
-  def apply(version: js.Array[GuidVersions] | GuidVersions): GuidOptions = {
+  inline def apply(version: js.Array[GuidVersions] | GuidVersions): GuidOptions = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GuidOptions]
   }
   
-  @scala.inline
-  implicit class GuidOptionsMutableBuilder[Self <: GuidOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GuidOptions](x: Self) {
     
-    @scala.inline
-    def setVersion(value: js.Array[GuidVersions] | GuidVersions): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: js.Array[GuidVersions] | GuidVersions): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionVarargs(value: GuidVersions*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: GuidVersions*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

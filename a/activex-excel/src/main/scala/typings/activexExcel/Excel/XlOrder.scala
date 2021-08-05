@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlOrder extends StObject
 object XlOrder {
   
-  @scala.inline
-  def xlDownThenOver: `1` = 1.asInstanceOf[`1`]
+  inline def xlDownThenOver: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlOverThenDown: `2` = 2.asInstanceOf[`2`]
+  inline def xlOverThenDown: `2` = 2.asInstanceOf[`2`]
 }

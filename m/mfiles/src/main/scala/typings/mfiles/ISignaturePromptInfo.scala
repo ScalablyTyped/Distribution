@@ -14,22 +14,17 @@ trait ISignaturePromptInfo extends StObject {
 }
 object ISignaturePromptInfo {
   
-  @scala.inline
-  def apply(Clone: () => ISignaturePromptInfo, Meaning: String, Reason: String): ISignaturePromptInfo = {
+  inline def apply(Clone: () => ISignaturePromptInfo, Meaning: String, Reason: String): ISignaturePromptInfo = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Meaning = Meaning.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISignaturePromptInfo]
   }
   
-  @scala.inline
-  implicit class ISignaturePromptInfoMutableBuilder[Self <: ISignaturePromptInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ISignaturePromptInfo](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ISignaturePromptInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISignaturePromptInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMeaning(value: String): Self = StObject.set(x, "Meaning", value.asInstanceOf[js.Any])
+    inline def setMeaning(value: String): Self = StObject.set(x, "Meaning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

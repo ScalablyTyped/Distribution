@@ -20,8 +20,7 @@ trait ITool extends StObject {
 }
 object ITool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     chart: IChart,
     clicked: IPoint => Boolean,
@@ -33,25 +32,18 @@ object ITool {
     __obj.asInstanceOf[ITool]
   }
   
-  @scala.inline
-  implicit class IToolMutableBuilder[Self <: ITool] (val x: Self) extends AnyVal {
+  extension [Self <: ITool](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClicked(value: IPoint => Boolean): Self = StObject.set(x, "clicked", js.Any.fromFunction1(value))
+    inline def setClicked(value: IPoint => Boolean): Self = StObject.set(x, "clicked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMousedown(value: js.Any => Boolean): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
+    inline def setMousedown(value: js.Any => Boolean): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMousemove(value: js.Any => Boolean): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
+    inline def setMousemove(value: js.Any => Boolean): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
   }
 }

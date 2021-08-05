@@ -37,20 +37,16 @@ object typesMod {
   }
   object DefaultRouterOptions {
     
-    @scala.inline
-    def apply[RouteName /* <: String */](): DefaultRouterOptions[RouteName] = {
+    inline def apply[RouteName /* <: String */](): DefaultRouterOptions[RouteName] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultRouterOptions[RouteName]]
     }
     
-    @scala.inline
-    implicit class DefaultRouterOptionsMutableBuilder[Self <: DefaultRouterOptions[?], RouteName /* <: String */] (val x: Self & DefaultRouterOptions[RouteName]) extends AnyVal {
+    extension [Self <: DefaultRouterOptions[?], RouteName /* <: String */](x: Self & DefaultRouterOptions[RouteName]) {
       
-      @scala.inline
-      def setInitialRouteName(value: RouteName): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+      inline def setInitialRouteName(value: RouteName): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+      inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
     }
   }
   
@@ -83,38 +79,28 @@ object typesMod {
   }
   object InitialState {
     
-    @scala.inline
-    def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`]): InitialState = {
+    inline def apply(routes: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`]): InitialState = {
       val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialState]
     }
     
-    @scala.inline
-    implicit class InitialStateMutableBuilder[Self <: InitialState] (val x: Self) extends AnyVal {
+    extension [Self <: InitialState](x: Self) {
       
-      @scala.inline
-      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setRouteNames(
+      inline def setRouteNames(
         value: js.Array[
               Extract[
                 /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String, 
@@ -123,28 +109,22 @@ object typesMod {
             ]
       ): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNamesUndefined: Self = StObject.set(x, "routeNames", js.undefined)
+      inline def setRouteNamesUndefined: Self = StObject.set(x, "routeNames", js.undefined)
       
-      @scala.inline
-      def setRouteNamesVarargs(
+      inline def setRouteNamesVarargs(
         value: (Extract[
               /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String, 
               String
             ])*
       ): Self = StObject.set(x, "routeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[(Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: ((Omit[Route[String, js.UndefOr[js.Object]], key]) & `1`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -161,36 +141,27 @@ object typesMod {
   }
   object NavigationAction {
     
-    @scala.inline
-    def apply(`type`: String): NavigationAction = {
+    inline def apply(`type`: String): NavigationAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationAction]
     }
     
-    @scala.inline
-    implicit class NavigationActionMutableBuilder[Self <: NavigationAction] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationAction](x: Self) {
       
-      @scala.inline
-      def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,8 +189,7 @@ object typesMod {
   }
   object NavigationState {
     
-    @scala.inline
-    def apply[ParamList /* <: ParamListBase */](
+    inline def apply[ParamList /* <: ParamListBase */](
       index: Double,
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
@@ -231,41 +201,29 @@ object typesMod {
       __obj.asInstanceOf[NavigationState[ParamList]]
     }
     
-    @scala.inline
-    implicit class NavigationStateMutableBuilder[Self <: NavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & NavigationState[ParamList]) extends AnyVal {
+    extension [Self <: NavigationState[?], ParamList /* <: ParamListBase */](x: Self & NavigationState[ParamList]) {
       
-      @scala.inline
-      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
+      inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -353,23 +311,18 @@ object typesMod {
   }
   object RouterConfigOptions {
     
-    @scala.inline
-    def apply(routeNames: js.Array[String], routeParamList: ParamListBase): RouterConfigOptions = {
+    inline def apply(routeNames: js.Array[String], routeParamList: ParamListBase): RouterConfigOptions = {
       val __obj = js.Dynamic.literal(routeNames = routeNames.asInstanceOf[js.Any], routeParamList = routeParamList.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterConfigOptions]
     }
     
-    @scala.inline
-    implicit class RouterConfigOptionsMutableBuilder[Self <: RouterConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouterConfigOptions](x: Self) {
       
-      @scala.inline
-      def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
+      inline def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setRouteParamList(value: ParamListBase): Self = StObject.set(x, "routeParamList", value.asInstanceOf[js.Any])
+      inline def setRouteParamList(value: ParamListBase): Self = StObject.set(x, "routeParamList", value.asInstanceOf[js.Any])
     }
   }
   

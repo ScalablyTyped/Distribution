@@ -29,38 +29,28 @@ object anon {
   }
   object DateTimeFormats {
     
-    @scala.inline
-    def apply(): DateTimeFormats = {
+    inline def apply(): DateTimeFormats = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateTimeFormats]
     }
     
-    @scala.inline
-    implicit class DateTimeFormatsMutableBuilder[Self <: DateTimeFormats] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeFormats](x: Self) {
       
-      @scala.inline
-      def setDateTimeFormats(value: typings.vueI18n.mod.VueI18n.DateTimeFormats): Self = StObject.set(x, "dateTimeFormats", value.asInstanceOf[js.Any])
+      inline def setDateTimeFormats(value: typings.vueI18n.mod.VueI18n.DateTimeFormats): Self = StObject.set(x, "dateTimeFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeFormatsUndefined: Self = StObject.set(x, "dateTimeFormats", js.undefined)
+      inline def setDateTimeFormatsUndefined: Self = StObject.set(x, "dateTimeFormats", js.undefined)
       
-      @scala.inline
-      def setMessages(value: LocaleMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: LocaleMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setNumberFormats(value: NumberFormats): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
+      inline def setNumberFormats(value: NumberFormats): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormatsUndefined: Self = StObject.set(x, "numberFormats", js.undefined)
+      inline def setNumberFormatsUndefined: Self = StObject.set(x, "numberFormats", js.undefined)
       
-      @scala.inline
-      def setSharedMessages(value: LocaleMessages): Self = StObject.set(x, "sharedMessages", value.asInstanceOf[js.Any])
+      inline def setSharedMessages(value: LocaleMessages): Self = StObject.set(x, "sharedMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedMessagesUndefined: Self = StObject.set(x, "sharedMessages", js.undefined)
+      inline def setSharedMessagesUndefined: Self = StObject.set(x, "sharedMessages", js.undefined)
     }
   }
   

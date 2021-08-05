@@ -8,6 +8,5 @@ object indefiniteStrings {
   
   @js.native
   sealed trait colloquial extends StObject
-  @scala.inline
-  def colloquial: colloquial = "colloquial".asInstanceOf[colloquial]
+  inline def colloquial: colloquial = "colloquial".asInstanceOf[colloquial]
 }

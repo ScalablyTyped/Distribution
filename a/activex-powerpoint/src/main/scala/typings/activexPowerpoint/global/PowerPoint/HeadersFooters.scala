@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.HeadersFooters")
 @js.native
-class HeadersFooters protected ()
+/* private */ class HeadersFooters ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.HeadersFooters {
   
@@ -32,7 +32,7 @@ class HeadersFooters protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.HeadersFooters_typekey")
   var PowerPointDotHeadersFooters_typekey: typings.activexPowerpoint.PowerPoint.HeadersFooters = js.native
   

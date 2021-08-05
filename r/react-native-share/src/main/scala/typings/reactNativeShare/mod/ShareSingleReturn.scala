@@ -10,16 +10,13 @@ trait ShareSingleReturn extends StObject {
 }
 object ShareSingleReturn {
   
-  @scala.inline
-  def apply(message: String): ShareSingleReturn = {
+  inline def apply(message: String): ShareSingleReturn = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareSingleReturn]
   }
   
-  @scala.inline
-  implicit class ShareSingleReturnMutableBuilder[Self <: ShareSingleReturn] (val x: Self) extends AnyVal {
+  extension [Self <: ShareSingleReturn](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

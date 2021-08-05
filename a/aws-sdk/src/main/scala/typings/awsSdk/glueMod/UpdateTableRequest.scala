@@ -28,31 +28,23 @@ trait UpdateTableRequest extends StObject {
 }
 object UpdateTableRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, TableInput: TableInput): UpdateTableRequest = {
+  inline def apply(DatabaseName: NameString, TableInput: TableInput): UpdateTableRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableInput = TableInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTableRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTableRequestMutableBuilder[Self <: UpdateTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTableRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipArchive(value: BooleanNullable): Self = StObject.set(x, "SkipArchive", value.asInstanceOf[js.Any])
+    inline def setSkipArchive(value: BooleanNullable): Self = StObject.set(x, "SkipArchive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipArchiveUndefined: Self = StObject.set(x, "SkipArchive", js.undefined)
+    inline def setSkipArchiveUndefined: Self = StObject.set(x, "SkipArchive", js.undefined)
     
-    @scala.inline
-    def setTableInput(value: TableInput): Self = StObject.set(x, "TableInput", value.asInstanceOf[js.Any])
+    inline def setTableInput(value: TableInput): Self = StObject.set(x, "TableInput", value.asInstanceOf[js.Any])
   }
 }

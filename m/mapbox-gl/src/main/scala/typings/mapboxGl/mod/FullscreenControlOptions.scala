@@ -15,22 +15,17 @@ trait FullscreenControlOptions extends StObject {
 }
 object FullscreenControlOptions {
   
-  @scala.inline
-  def apply(): FullscreenControlOptions = {
+  inline def apply(): FullscreenControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FullscreenControlOptions]
   }
   
-  @scala.inline
-  implicit class FullscreenControlOptionsMutableBuilder[Self <: FullscreenControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FullscreenControlOptions](x: Self) {
     
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNull: Self = StObject.set(x, "container", null)
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
   }
 }

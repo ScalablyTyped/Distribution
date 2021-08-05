@@ -19,16 +19,12 @@ object PropertyLineElement {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def All: `255` = 255.asInstanceOf[`255`]
+    inline def All: `255` = 255.asInstanceOf[`255`]
     
-    @scala.inline
-    def InputControl: `1` = 1.asInstanceOf[`1`]
+    inline def InputControl: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PrimaryButton: `2` = 2.asInstanceOf[`2`]
+    inline def PrimaryButton: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SecondaryButton: `4` = 4.asInstanceOf[`4`]
+    inline def SecondaryButton: `4` = 4.asInstanceOf[`4`]
   }
 }

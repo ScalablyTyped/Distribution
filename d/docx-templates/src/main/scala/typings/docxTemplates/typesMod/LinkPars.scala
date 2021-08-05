@@ -12,22 +12,17 @@ trait LinkPars extends StObject {
 }
 object LinkPars {
   
-  @scala.inline
-  def apply(url: String): LinkPars = {
+  inline def apply(url: String): LinkPars = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkPars]
   }
   
-  @scala.inline
-  implicit class LinkParsMutableBuilder[Self <: LinkPars] (val x: Self) extends AnyVal {
+  extension [Self <: LinkPars](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

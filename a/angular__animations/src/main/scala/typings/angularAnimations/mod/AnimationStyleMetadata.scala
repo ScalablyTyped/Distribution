@@ -22,8 +22,7 @@ trait AnimationStyleMetadata
 }
 object AnimationStyleMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     styles: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk]),
     `type`: AnimationMetadataType
   ): AnimationStyleMetadata = {
@@ -32,21 +31,16 @@ object AnimationStyleMetadata {
     __obj.asInstanceOf[AnimationStyleMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationStyleMetadataMutableBuilder[Self <: AnimationStyleMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStyleMetadata](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetNull: Self = StObject.set(x, "offset", null)
+    inline def setOffsetNull: Self = StObject.set(x, "offset", null)
     
-    @scala.inline
-    def setStyles(
+    inline def setStyles(
       value: Asterisk | (StringDictionary[String | Double]) | (js.Array[(StringDictionary[String | Double]) | Asterisk])
     ): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: ((StringDictionary[String | Double]) | Asterisk)*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: ((StringDictionary[String | Double]) | Asterisk)*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

@@ -21,8 +21,7 @@ trait PlaceDetailsResponse extends StObject {
 }
 object PlaceDetailsResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     html_attributions: js.Array[String],
     result: PlaceDetailsResult,
     status: PlaceDetailsResponseStatus
@@ -31,19 +30,14 @@ object PlaceDetailsResponse {
     __obj.asInstanceOf[PlaceDetailsResponse]
   }
   
-  @scala.inline
-  implicit class PlaceDetailsResponseMutableBuilder[Self <: PlaceDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
+    inline def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value :_*))
+    inline def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: PlaceDetailsResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: PlaceDetailsResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PlaceDetailsResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PlaceDetailsResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

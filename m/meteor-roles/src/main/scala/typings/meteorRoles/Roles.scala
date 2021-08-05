@@ -17,17 +17,14 @@ object Roles {
   }
   object Role {
     
-    @scala.inline
-    def apply(name: String): Role = {
+    inline def apply(name: String): Role = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Role]
     }
     
-    @scala.inline
-    implicit class RoleMutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
+    extension [Self <: Role](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

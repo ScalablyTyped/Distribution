@@ -20,40 +20,29 @@ trait IPagingOptions extends StObject {
 }
 object IPagingOptions {
   
-  @scala.inline
-  def apply(): IPagingOptions = {
+  inline def apply(): IPagingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPagingOptions]
   }
   
-  @scala.inline
-  implicit class IPagingOptionsMutableBuilder[Self <: IPagingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPagingOptions](x: Self) {
     
-    @scala.inline
-    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+    inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageSizes(value: js.Array[Double]): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
+    inline def setPageSizes(value: js.Array[Double]): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
+    inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     
-    @scala.inline
-    def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
+    inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalServerItems(value: Double): Self = StObject.set(x, "totalServerItems", value.asInstanceOf[js.Any])
+    inline def setTotalServerItems(value: Double): Self = StObject.set(x, "totalServerItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalServerItemsUndefined: Self = StObject.set(x, "totalServerItems", js.undefined)
+    inline def setTotalServerItemsUndefined: Self = StObject.set(x, "totalServerItems", js.undefined)
   }
 }

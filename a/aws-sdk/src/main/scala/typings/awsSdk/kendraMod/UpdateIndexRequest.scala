@@ -48,64 +48,45 @@ trait UpdateIndexRequest extends StObject {
 }
 object UpdateIndexRequest {
   
-  @scala.inline
-  def apply(Id: IndexId): UpdateIndexRequest = {
+  inline def apply(Id: IndexId): UpdateIndexRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIndexRequest]
   }
   
-  @scala.inline
-  implicit class UpdateIndexRequestMutableBuilder[Self <: UpdateIndexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateIndexRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityUnits(value: CapacityUnitsConfiguration): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+    inline def setCapacityUnits(value: CapacityUnitsConfiguration): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
+    inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDocumentMetadataConfigurationUpdates(value: DocumentMetadataConfigurationList): Self = StObject.set(x, "DocumentMetadataConfigurationUpdates", value.asInstanceOf[js.Any])
+    inline def setDocumentMetadataConfigurationUpdates(value: DocumentMetadataConfigurationList): Self = StObject.set(x, "DocumentMetadataConfigurationUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentMetadataConfigurationUpdatesUndefined: Self = StObject.set(x, "DocumentMetadataConfigurationUpdates", js.undefined)
+    inline def setDocumentMetadataConfigurationUpdatesUndefined: Self = StObject.set(x, "DocumentMetadataConfigurationUpdates", js.undefined)
     
-    @scala.inline
-    def setDocumentMetadataConfigurationUpdatesVarargs(value: DocumentMetadataConfiguration*): Self = StObject.set(x, "DocumentMetadataConfigurationUpdates", js.Array(value :_*))
+    inline def setDocumentMetadataConfigurationUpdatesVarargs(value: DocumentMetadataConfiguration*): Self = StObject.set(x, "DocumentMetadataConfigurationUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: IndexName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: IndexName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setUserContextPolicy(value: UserContextPolicy): Self = StObject.set(x, "UserContextPolicy", value.asInstanceOf[js.Any])
+    inline def setUserContextPolicy(value: UserContextPolicy): Self = StObject.set(x, "UserContextPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserContextPolicyUndefined: Self = StObject.set(x, "UserContextPolicy", js.undefined)
+    inline def setUserContextPolicyUndefined: Self = StObject.set(x, "UserContextPolicy", js.undefined)
     
-    @scala.inline
-    def setUserTokenConfigurations(value: UserTokenConfigurationList): Self = StObject.set(x, "UserTokenConfigurations", value.asInstanceOf[js.Any])
+    inline def setUserTokenConfigurations(value: UserTokenConfigurationList): Self = StObject.set(x, "UserTokenConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTokenConfigurationsUndefined: Self = StObject.set(x, "UserTokenConfigurations", js.undefined)
+    inline def setUserTokenConfigurationsUndefined: Self = StObject.set(x, "UserTokenConfigurations", js.undefined)
     
-    @scala.inline
-    def setUserTokenConfigurationsVarargs(value: UserTokenConfiguration*): Self = StObject.set(x, "UserTokenConfigurations", js.Array(value :_*))
+    inline def setUserTokenConfigurationsVarargs(value: UserTokenConfiguration*): Self = StObject.set(x, "UserTokenConfigurations", js.Array(value :_*))
   }
 }

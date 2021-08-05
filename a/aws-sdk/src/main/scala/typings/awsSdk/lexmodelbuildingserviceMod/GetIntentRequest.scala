@@ -18,19 +18,15 @@ trait GetIntentRequest extends StObject {
 }
 object GetIntentRequest {
   
-  @scala.inline
-  def apply(name: IntentName, version: Version): GetIntentRequest = {
+  inline def apply(name: IntentName, version: Version): GetIntentRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntentRequest]
   }
   
-  @scala.inline
-  implicit class GetIntentRequestMutableBuilder[Self <: GetIntentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIntentRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

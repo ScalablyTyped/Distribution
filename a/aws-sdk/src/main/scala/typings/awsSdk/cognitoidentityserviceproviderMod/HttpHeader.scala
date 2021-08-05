@@ -18,25 +18,19 @@ trait HttpHeader extends StObject {
 }
 object HttpHeader {
   
-  @scala.inline
-  def apply(): HttpHeader = {
+  inline def apply(): HttpHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpHeader]
   }
   
-  @scala.inline
-  implicit class HttpHeaderMutableBuilder[Self <: HttpHeader] (val x: Self) extends AnyVal {
+  extension [Self <: HttpHeader](x: Self) {
     
-    @scala.inline
-    def setHeaderName(value: StringType): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: StringType): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
+    inline def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
     
-    @scala.inline
-    def setHeaderValue(value: StringType): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
+    inline def setHeaderValue(value: StringType): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
+    inline def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
   }
 }

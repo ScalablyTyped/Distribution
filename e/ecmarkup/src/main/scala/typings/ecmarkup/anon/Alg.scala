@@ -12,19 +12,15 @@ trait Alg extends StObject {
 }
 object Alg {
   
-  @scala.inline
-  def apply(alg: typings.std.Element, grammar: typings.std.Element): Alg = {
+  inline def apply(alg: typings.std.Element, grammar: typings.std.Element): Alg = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], grammar = grammar.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alg]
   }
   
-  @scala.inline
-  implicit class AlgMutableBuilder[Self <: Alg] (val x: Self) extends AnyVal {
+  extension [Self <: Alg](x: Self) {
     
-    @scala.inline
-    def setAlg(value: typings.std.Element): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: typings.std.Element): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrammar(value: typings.std.Element): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
+    inline def setGrammar(value: typings.std.Element): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
   }
 }

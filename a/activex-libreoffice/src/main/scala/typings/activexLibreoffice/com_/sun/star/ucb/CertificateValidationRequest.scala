@@ -24,8 +24,7 @@ trait CertificateValidationRequest
 }
 object CertificateValidationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Certificate: XCertificate,
     CertificateValidity: Double,
     Classification: InteractionClassification,
@@ -37,16 +36,12 @@ object CertificateValidationRequest {
     __obj.asInstanceOf[CertificateValidationRequest]
   }
   
-  @scala.inline
-  implicit class CertificateValidationRequestMutableBuilder[Self <: CertificateValidationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateValidationRequest](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: XCertificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: XCertificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateValidity(value: Double): Self = StObject.set(x, "CertificateValidity", value.asInstanceOf[js.Any])
+    inline def setCertificateValidity(value: Double): Self = StObject.set(x, "CertificateValidity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
+    inline def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
   }
 }

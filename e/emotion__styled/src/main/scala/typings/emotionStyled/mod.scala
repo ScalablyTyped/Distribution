@@ -434,8 +434,7 @@ object mod extends Shortcut {
   }
   object StyledTags {
     
-    @scala.inline
-    def apply[Theme /* <: js.Object */](
+    inline def apply[Theme /* <: js.Object */](
       a: CreateStyledComponentIntrinsic[a, js.Object, Theme],
       abbr: CreateStyledComponentIntrinsic[abbr, js.Object, Theme],
       address: CreateStyledComponentIntrinsic[address, js.Object, Theme],
@@ -576,407 +575,273 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StyledTags[Theme]]
     }
     
-    @scala.inline
-    implicit class StyledTagsMutableBuilder[Self <: StyledTags[?], Theme /* <: js.Object */] (val x: Self & StyledTags[Theme]) extends AnyVal {
+    extension [Self <: StyledTags[?], Theme /* <: js.Object */](x: Self & StyledTags[Theme]) {
       
-      @scala.inline
-      def setA(value: CreateStyledComponentIntrinsic[a, js.Object, Theme]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: CreateStyledComponentIntrinsic[a, js.Object, Theme]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbbr(value: CreateStyledComponentIntrinsic[abbr, js.Object, Theme]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+      inline def setAbbr(value: CreateStyledComponentIntrinsic[abbr, js.Object, Theme]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress(value: CreateStyledComponentIntrinsic[address, js.Object, Theme]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: CreateStyledComponentIntrinsic[address, js.Object, Theme]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArea(value: CreateStyledComponentIntrinsic[area, js.Object, Theme]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: CreateStyledComponentIntrinsic[area, js.Object, Theme]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArticle(value: CreateStyledComponentIntrinsic[article, js.Object, Theme]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
+      inline def setArticle(value: CreateStyledComponentIntrinsic[article, js.Object, Theme]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAside(value: CreateStyledComponentIntrinsic[aside, js.Object, Theme]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
+      inline def setAside(value: CreateStyledComponentIntrinsic[aside, js.Object, Theme]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudio(value: CreateStyledComponentIntrinsic[audio, js.Object, Theme]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: CreateStyledComponentIntrinsic[audio, js.Object, Theme]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: CreateStyledComponentIntrinsic[b, js.Object, Theme]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: CreateStyledComponentIntrinsic[b, js.Object, Theme]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase(value: CreateStyledComponentIntrinsic[base, js.Object, Theme]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: CreateStyledComponentIntrinsic[base, js.Object, Theme]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBdi(value: CreateStyledComponentIntrinsic[bdi, js.Object, Theme]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
+      inline def setBdi(value: CreateStyledComponentIntrinsic[bdi, js.Object, Theme]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBdo(value: CreateStyledComponentIntrinsic[bdo, js.Object, Theme]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
+      inline def setBdo(value: CreateStyledComponentIntrinsic[bdo, js.Object, Theme]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBig(value: CreateStyledComponentIntrinsic[big, js.Object, Theme]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
+      inline def setBig(value: CreateStyledComponentIntrinsic[big, js.Object, Theme]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockquote(value: CreateStyledComponentIntrinsic[blockquote, js.Object, Theme]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+      inline def setBlockquote(value: CreateStyledComponentIntrinsic[blockquote, js.Object, Theme]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: CreateStyledComponentIntrinsic[body, js.Object, Theme]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: CreateStyledComponentIntrinsic[body, js.Object, Theme]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBr(value: CreateStyledComponentIntrinsic[br, js.Object, Theme]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: CreateStyledComponentIntrinsic[br, js.Object, Theme]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: CreateStyledComponentIntrinsic[button, js.Object, Theme]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: CreateStyledComponentIntrinsic[button, js.Object, Theme]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvas(value: CreateStyledComponentIntrinsic[canvas, js.Object, Theme]): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: CreateStyledComponentIntrinsic[canvas, js.Object, Theme]): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: CreateStyledComponentIntrinsic[caption, js.Object, Theme]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: CreateStyledComponentIntrinsic[caption, js.Object, Theme]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircle(value: CreateStyledComponentIntrinsic[circle, js.Object, Theme]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: CreateStyledComponentIntrinsic[circle, js.Object, Theme]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCite(value: CreateStyledComponentIntrinsic[cite, js.Object, Theme]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+      inline def setCite(value: CreateStyledComponentIntrinsic[cite, js.Object, Theme]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipPath(value: CreateStyledComponentIntrinsic[clipPath, js.Object, Theme]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+      inline def setClipPath(value: CreateStyledComponentIntrinsic[clipPath, js.Object, Theme]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: CreateStyledComponentIntrinsic[code, js.Object, Theme]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: CreateStyledComponentIntrinsic[code, js.Object, Theme]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCol(value: CreateStyledComponentIntrinsic[col, js.Object, Theme]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: CreateStyledComponentIntrinsic[col, js.Object, Theme]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColgroup(value: CreateStyledComponentIntrinsic[colgroup, js.Object, Theme]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
+      inline def setColgroup(value: CreateStyledComponentIntrinsic[colgroup, js.Object, Theme]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: CreateStyledComponentIntrinsic[data, js.Object, Theme]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: CreateStyledComponentIntrinsic[data, js.Object, Theme]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatalist(value: CreateStyledComponentIntrinsic[datalist, js.Object, Theme]): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
+      inline def setDatalist(value: CreateStyledComponentIntrinsic[datalist, js.Object, Theme]): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDd(value: CreateStyledComponentIntrinsic[dd, js.Object, Theme]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+      inline def setDd(value: CreateStyledComponentIntrinsic[dd, js.Object, Theme]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefs(value: CreateStyledComponentIntrinsic[defs, js.Object, Theme]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+      inline def setDefs(value: CreateStyledComponentIntrinsic[defs, js.Object, Theme]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDel(value: CreateStyledComponentIntrinsic[del, js.Object, Theme]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+      inline def setDel(value: CreateStyledComponentIntrinsic[del, js.Object, Theme]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: CreateStyledComponentIntrinsic[details, js.Object, Theme]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: CreateStyledComponentIntrinsic[details, js.Object, Theme]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDfn(value: CreateStyledComponentIntrinsic[dfn, js.Object, Theme]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
+      inline def setDfn(value: CreateStyledComponentIntrinsic[dfn, js.Object, Theme]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialog(value: CreateStyledComponentIntrinsic[dialog, js.Object, Theme]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      inline def setDialog(value: CreateStyledComponentIntrinsic[dialog, js.Object, Theme]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiv(value: CreateStyledComponentIntrinsic[div, js.Object, Theme]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+      inline def setDiv(value: CreateStyledComponentIntrinsic[div, js.Object, Theme]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDl(value: CreateStyledComponentIntrinsic[dl, js.Object, Theme]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
+      inline def setDl(value: CreateStyledComponentIntrinsic[dl, js.Object, Theme]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDt(value: CreateStyledComponentIntrinsic[dt, js.Object, Theme]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
+      inline def setDt(value: CreateStyledComponentIntrinsic[dt, js.Object, Theme]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipse(value: CreateStyledComponentIntrinsic[ellipse, js.Object, Theme]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+      inline def setEllipse(value: CreateStyledComponentIntrinsic[ellipse, js.Object, Theme]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEm(value: CreateStyledComponentIntrinsic[em, js.Object, Theme]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
+      inline def setEm(value: CreateStyledComponentIntrinsic[em, js.Object, Theme]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbed(value: CreateStyledComponentIntrinsic[embed, js.Object, Theme]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+      inline def setEmbed(value: CreateStyledComponentIntrinsic[embed, js.Object, Theme]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldset(value: CreateStyledComponentIntrinsic[fieldset, js.Object, Theme]): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
+      inline def setFieldset(value: CreateStyledComponentIntrinsic[fieldset, js.Object, Theme]): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFigcaption(value: CreateStyledComponentIntrinsic[figcaption, js.Object, Theme]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
+      inline def setFigcaption(value: CreateStyledComponentIntrinsic[figcaption, js.Object, Theme]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFigure(value: CreateStyledComponentIntrinsic[figure, js.Object, Theme]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
+      inline def setFigure(value: CreateStyledComponentIntrinsic[figure, js.Object, Theme]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooter(value: CreateStyledComponentIntrinsic[footer, js.Object, Theme]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: CreateStyledComponentIntrinsic[footer, js.Object, Theme]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeignObject(value: CreateStyledComponentIntrinsic[foreignObject, js.Object, Theme]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
+      inline def setForeignObject(value: CreateStyledComponentIntrinsic[foreignObject, js.Object, Theme]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForm(value: CreateStyledComponentIntrinsic[form, js.Object, Theme]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: CreateStyledComponentIntrinsic[form, js.Object, Theme]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: CreateStyledComponentIntrinsic[g, js.Object, Theme]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: CreateStyledComponentIntrinsic[g, js.Object, Theme]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH1(value: CreateStyledComponentIntrinsic[h1, js.Object, Theme]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+      inline def setH1(value: CreateStyledComponentIntrinsic[h1, js.Object, Theme]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH2(value: CreateStyledComponentIntrinsic[h2, js.Object, Theme]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+      inline def setH2(value: CreateStyledComponentIntrinsic[h2, js.Object, Theme]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH3(value: CreateStyledComponentIntrinsic[h3, js.Object, Theme]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+      inline def setH3(value: CreateStyledComponentIntrinsic[h3, js.Object, Theme]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH4(value: CreateStyledComponentIntrinsic[h4, js.Object, Theme]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+      inline def setH4(value: CreateStyledComponentIntrinsic[h4, js.Object, Theme]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH5(value: CreateStyledComponentIntrinsic[h5, js.Object, Theme]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+      inline def setH5(value: CreateStyledComponentIntrinsic[h5, js.Object, Theme]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH6(value: CreateStyledComponentIntrinsic[h6, js.Object, Theme]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+      inline def setH6(value: CreateStyledComponentIntrinsic[h6, js.Object, Theme]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: CreateStyledComponentIntrinsic[head, js.Object, Theme]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: CreateStyledComponentIntrinsic[head, js.Object, Theme]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: CreateStyledComponentIntrinsic[header, js.Object, Theme]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: CreateStyledComponentIntrinsic[header, js.Object, Theme]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHgroup(value: CreateStyledComponentIntrinsic[hgroup, js.Object, Theme]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
+      inline def setHgroup(value: CreateStyledComponentIntrinsic[hgroup, js.Object, Theme]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHr(value: CreateStyledComponentIntrinsic[hr, js.Object, Theme]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+      inline def setHr(value: CreateStyledComponentIntrinsic[hr, js.Object, Theme]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: CreateStyledComponentIntrinsic[html, js.Object, Theme]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: CreateStyledComponentIntrinsic[html, js.Object, Theme]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI(value: CreateStyledComponentIntrinsic[i, js.Object, Theme]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      inline def setI(value: CreateStyledComponentIntrinsic[i, js.Object, Theme]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIframe(value: CreateStyledComponentIntrinsic[iframe, js.Object, Theme]): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
+      inline def setIframe(value: CreateStyledComponentIntrinsic[iframe, js.Object, Theme]): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: CreateStyledComponentIntrinsic[image, js.Object, Theme]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: CreateStyledComponentIntrinsic[image, js.Object, Theme]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImg(value: CreateStyledComponentIntrinsic[img, js.Object, Theme]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: CreateStyledComponentIntrinsic[img, js.Object, Theme]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: CreateStyledComponentIntrinsic[input, js.Object, Theme]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: CreateStyledComponentIntrinsic[input, js.Object, Theme]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIns(value: CreateStyledComponentIntrinsic[ins, js.Object, Theme]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
+      inline def setIns(value: CreateStyledComponentIntrinsic[ins, js.Object, Theme]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKbd(value: CreateStyledComponentIntrinsic[kbd, js.Object, Theme]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
+      inline def setKbd(value: CreateStyledComponentIntrinsic[kbd, js.Object, Theme]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeygen(value: CreateStyledComponentIntrinsic[keygen, js.Object, Theme]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
+      inline def setKeygen(value: CreateStyledComponentIntrinsic[keygen, js.Object, Theme]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: CreateStyledComponentIntrinsic[label, js.Object, Theme]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: CreateStyledComponentIntrinsic[label, js.Object, Theme]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegend(value: CreateStyledComponentIntrinsic[legend, js.Object, Theme]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: CreateStyledComponentIntrinsic[legend, js.Object, Theme]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLi(value: CreateStyledComponentIntrinsic[li, js.Object, Theme]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+      inline def setLi(value: CreateStyledComponentIntrinsic[li, js.Object, Theme]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: CreateStyledComponentIntrinsic[line, js.Object, Theme]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: CreateStyledComponentIntrinsic[line, js.Object, Theme]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinearGradient(value: CreateStyledComponentIntrinsic[linearGradient, js.Object, Theme]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+      inline def setLinearGradient(value: CreateStyledComponentIntrinsic[linearGradient, js.Object, Theme]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: CreateStyledComponentIntrinsic[link, js.Object, Theme]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: CreateStyledComponentIntrinsic[link, js.Object, Theme]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain(value: CreateStyledComponentIntrinsic[main, js.Object, Theme]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: CreateStyledComponentIntrinsic[main, js.Object, Theme]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: CreateStyledComponentIntrinsic[map, js.Object, Theme]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: CreateStyledComponentIntrinsic[map, js.Object, Theme]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMark(value: CreateStyledComponentIntrinsic[mark, js.Object, Theme]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: CreateStyledComponentIntrinsic[mark, js.Object, Theme]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMask(value: CreateStyledComponentIntrinsic[mask, js.Object, Theme]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: CreateStyledComponentIntrinsic[mask, js.Object, Theme]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenu(value: CreateStyledComponentIntrinsic[menu, js.Object, Theme]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: CreateStyledComponentIntrinsic[menu, js.Object, Theme]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuitem(value: CreateStyledComponentIntrinsic[menuitem, js.Object, Theme]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
+      inline def setMenuitem(value: CreateStyledComponentIntrinsic[menuitem, js.Object, Theme]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: CreateStyledComponentIntrinsic[meta, js.Object, Theme]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: CreateStyledComponentIntrinsic[meta, js.Object, Theme]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeter(value: CreateStyledComponentIntrinsic[meter, js.Object, Theme]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+      inline def setMeter(value: CreateStyledComponentIntrinsic[meter, js.Object, Theme]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNav(value: CreateStyledComponentIntrinsic[nav, js.Object, Theme]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
+      inline def setNav(value: CreateStyledComponentIntrinsic[nav, js.Object, Theme]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoscript(value: CreateStyledComponentIntrinsic[noscript, js.Object, Theme]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      inline def setNoscript(value: CreateStyledComponentIntrinsic[noscript, js.Object, Theme]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: CreateStyledComponentIntrinsic[`object`, js.Object, Theme]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: CreateStyledComponentIntrinsic[`object`, js.Object, Theme]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOl(value: CreateStyledComponentIntrinsic[ol, js.Object, Theme]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+      inline def setOl(value: CreateStyledComponentIntrinsic[ol, js.Object, Theme]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptgroup(value: CreateStyledComponentIntrinsic[optgroup, js.Object, Theme]): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
+      inline def setOptgroup(value: CreateStyledComponentIntrinsic[optgroup, js.Object, Theme]): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOption(value: CreateStyledComponentIntrinsic[option, js.Object, Theme]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      inline def setOption(value: CreateStyledComponentIntrinsic[option, js.Object, Theme]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: CreateStyledComponentIntrinsic[output, js.Object, Theme]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: CreateStyledComponentIntrinsic[output, js.Object, Theme]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP(value: CreateStyledComponentIntrinsic[p, js.Object, Theme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: CreateStyledComponentIntrinsic[p, js.Object, Theme]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParam(value: CreateStyledComponentIntrinsic[param, js.Object, Theme]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: CreateStyledComponentIntrinsic[param, js.Object, Theme]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: CreateStyledComponentIntrinsic[path, js.Object, Theme]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: CreateStyledComponentIntrinsic[path, js.Object, Theme]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: CreateStyledComponentIntrinsic[pattern, js.Object, Theme]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: CreateStyledComponentIntrinsic[pattern, js.Object, Theme]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicture(value: CreateStyledComponentIntrinsic[picture, js.Object, Theme]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: CreateStyledComponentIntrinsic[picture, js.Object, Theme]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygon(value: CreateStyledComponentIntrinsic[polygon, js.Object, Theme]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+      inline def setPolygon(value: CreateStyledComponentIntrinsic[polygon, js.Object, Theme]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolyline(value: CreateStyledComponentIntrinsic[polyline, js.Object, Theme]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+      inline def setPolyline(value: CreateStyledComponentIntrinsic[polyline, js.Object, Theme]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPre(value: CreateStyledComponentIntrinsic[pre, js.Object, Theme]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: CreateStyledComponentIntrinsic[pre, js.Object, Theme]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: CreateStyledComponentIntrinsic[progress, js.Object, Theme]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: CreateStyledComponentIntrinsic[progress, js.Object, Theme]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQ(value: CreateStyledComponentIntrinsic[q, js.Object, Theme]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+      inline def setQ(value: CreateStyledComponentIntrinsic[q, js.Object, Theme]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadialGradient(value: CreateStyledComponentIntrinsic[radialGradient, js.Object, Theme]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+      inline def setRadialGradient(value: CreateStyledComponentIntrinsic[radialGradient, js.Object, Theme]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRect(value: CreateStyledComponentIntrinsic[rect, js.Object, Theme]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: CreateStyledComponentIntrinsic[rect, js.Object, Theme]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRp(value: CreateStyledComponentIntrinsic[rp, js.Object, Theme]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
+      inline def setRp(value: CreateStyledComponentIntrinsic[rp, js.Object, Theme]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRt(value: CreateStyledComponentIntrinsic[rt, js.Object, Theme]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
+      inline def setRt(value: CreateStyledComponentIntrinsic[rt, js.Object, Theme]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuby(value: CreateStyledComponentIntrinsic[ruby, js.Object, Theme]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
+      inline def setRuby(value: CreateStyledComponentIntrinsic[ruby, js.Object, Theme]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: CreateStyledComponentIntrinsic[s, js.Object, Theme]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: CreateStyledComponentIntrinsic[s, js.Object, Theme]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamp(value: CreateStyledComponentIntrinsic[samp, js.Object, Theme]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
+      inline def setSamp(value: CreateStyledComponentIntrinsic[samp, js.Object, Theme]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: CreateStyledComponentIntrinsic[script, js.Object, Theme]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: CreateStyledComponentIntrinsic[script, js.Object, Theme]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSection(value: CreateStyledComponentIntrinsic[section, js.Object, Theme]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: CreateStyledComponentIntrinsic[section, js.Object, Theme]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelect(value: CreateStyledComponentIntrinsic[select, js.Object, Theme]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: CreateStyledComponentIntrinsic[select, js.Object, Theme]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmall(value: CreateStyledComponentIntrinsic[small, js.Object, Theme]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: CreateStyledComponentIntrinsic[small, js.Object, Theme]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: CreateStyledComponentIntrinsic[source, js.Object, Theme]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: CreateStyledComponentIntrinsic[source, js.Object, Theme]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpan(value: CreateStyledComponentIntrinsic[span, js.Object, Theme]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: CreateStyledComponentIntrinsic[span, js.Object, Theme]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: CreateStyledComponentIntrinsic[stop, js.Object, Theme]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: CreateStyledComponentIntrinsic[stop, js.Object, Theme]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrong(value: CreateStyledComponentIntrinsic[strong, js.Object, Theme]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: CreateStyledComponentIntrinsic[strong, js.Object, Theme]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CreateStyledComponentIntrinsic[style, js.Object, Theme]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CreateStyledComponentIntrinsic[style, js.Object, Theme]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSub(value: CreateStyledComponentIntrinsic[sub, js.Object, Theme]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: CreateStyledComponentIntrinsic[sub, js.Object, Theme]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: CreateStyledComponentIntrinsic[summary, js.Object, Theme]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: CreateStyledComponentIntrinsic[summary, js.Object, Theme]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSup(value: CreateStyledComponentIntrinsic[sup, js.Object, Theme]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      inline def setSup(value: CreateStyledComponentIntrinsic[sup, js.Object, Theme]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvg(value: CreateStyledComponentIntrinsic[svg, js.Object, Theme]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: CreateStyledComponentIntrinsic[svg, js.Object, Theme]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTable(value: CreateStyledComponentIntrinsic[table, js.Object, Theme]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: CreateStyledComponentIntrinsic[table, js.Object, Theme]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTbody(value: CreateStyledComponentIntrinsic[tbody, js.Object, Theme]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+      inline def setTbody(value: CreateStyledComponentIntrinsic[tbody, js.Object, Theme]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTd(value: CreateStyledComponentIntrinsic[td, js.Object, Theme]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+      inline def setTd(value: CreateStyledComponentIntrinsic[td, js.Object, Theme]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: CreateStyledComponentIntrinsic[text, js.Object, Theme]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: CreateStyledComponentIntrinsic[text, js.Object, Theme]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextarea(value: CreateStyledComponentIntrinsic[textarea, js.Object, Theme]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+      inline def setTextarea(value: CreateStyledComponentIntrinsic[textarea, js.Object, Theme]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTfoot(value: CreateStyledComponentIntrinsic[tfoot, js.Object, Theme]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
+      inline def setTfoot(value: CreateStyledComponentIntrinsic[tfoot, js.Object, Theme]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTh(value: CreateStyledComponentIntrinsic[th, js.Object, Theme]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+      inline def setTh(value: CreateStyledComponentIntrinsic[th, js.Object, Theme]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThead(value: CreateStyledComponentIntrinsic[thead, js.Object, Theme]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
+      inline def setThead(value: CreateStyledComponentIntrinsic[thead, js.Object, Theme]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: CreateStyledComponentIntrinsic[time, js.Object, Theme]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: CreateStyledComponentIntrinsic[time, js.Object, Theme]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: CreateStyledComponentIntrinsic[title, js.Object, Theme]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: CreateStyledComponentIntrinsic[title, js.Object, Theme]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTr(value: CreateStyledComponentIntrinsic[tr, js.Object, Theme]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      inline def setTr(value: CreateStyledComponentIntrinsic[tr, js.Object, Theme]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack(value: CreateStyledComponentIntrinsic[track, js.Object, Theme]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: CreateStyledComponentIntrinsic[track, js.Object, Theme]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTspan(value: CreateStyledComponentIntrinsic[tspan, js.Object, Theme]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
+      inline def setTspan(value: CreateStyledComponentIntrinsic[tspan, js.Object, Theme]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setU(value: CreateStyledComponentIntrinsic[u, js.Object, Theme]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: CreateStyledComponentIntrinsic[u, js.Object, Theme]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUl(value: CreateStyledComponentIntrinsic[ul, js.Object, Theme]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+      inline def setUl(value: CreateStyledComponentIntrinsic[ul, js.Object, Theme]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVar(value: CreateStyledComponentIntrinsic[`var`, js.Object, Theme]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
+      inline def setVar(value: CreateStyledComponentIntrinsic[`var`, js.Object, Theme]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideo(value: CreateStyledComponentIntrinsic[video, js.Object, Theme]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: CreateStyledComponentIntrinsic[video, js.Object, Theme]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWbr(value: CreateStyledComponentIntrinsic[wbr, js.Object, Theme]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
+      inline def setWbr(value: CreateStyledComponentIntrinsic[wbr, js.Object, Theme]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
     }
   }
   

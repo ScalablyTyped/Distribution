@@ -34,8 +34,7 @@ trait ServiceEvent extends StObject {
 }
 object ServiceEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventType: String,
     publisher: Publisher,
     resource: js.Any,
@@ -46,22 +45,16 @@ object ServiceEvent {
     __obj.asInstanceOf[ServiceEvent]
   }
   
-  @scala.inline
-  implicit class ServiceEventMutableBuilder[Self <: ServiceEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceEvent](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: Publisher): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: Publisher): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceContainers(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceContainers", value.asInstanceOf[js.Any])
+    inline def setResourceContainers(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceContainers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
   }
 }

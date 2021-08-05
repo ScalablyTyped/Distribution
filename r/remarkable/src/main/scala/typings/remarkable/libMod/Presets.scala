@@ -13,19 +13,15 @@ trait Presets extends StObject {
 }
 object Presets {
   
-  @scala.inline
-  def apply(components: StringDictionary[typings.remarkable.anon.Rules], options: Options): Presets = {
+  inline def apply(components: StringDictionary[typings.remarkable.anon.Rules], options: Options): Presets = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Presets]
   }
   
-  @scala.inline
-  implicit class PresetsMutableBuilder[Self <: Presets] (val x: Self) extends AnyVal {
+  extension [Self <: Presets](x: Self) {
     
-    @scala.inline
-    def setComponents(value: StringDictionary[typings.remarkable.anon.Rules]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: StringDictionary[typings.remarkable.anon.Rules]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

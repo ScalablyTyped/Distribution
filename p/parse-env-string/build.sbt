@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-env-string"
-version := "1.0-dt-20200624Z-74e835"
+version := "1.0-dt-20200624Z-9b6e67"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -20,52 +20,37 @@ trait Member extends StObject {
 }
 object Member {
   
-  @scala.inline
-  def apply(): Member = {
+  inline def apply(): Member = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Member]
   }
   
-  @scala.inline
-  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
+  extension [Self <: Member](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setChildren(value: js.Array[Member]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Member]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: Member*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Member*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setHierarchyName(value: String): Self = StObject.set(x, "hierarchyName", value.asInstanceOf[js.Any])
+    inline def setHierarchyName(value: String): Self = StObject.set(x, "hierarchyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyNameUndefined: Self = StObject.set(x, "hierarchyName", js.undefined)
+    inline def setHierarchyNameUndefined: Self = StObject.set(x, "hierarchyName", js.undefined)
     
-    @scala.inline
-    def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+    inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
+    inline def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
     
-    @scala.inline
-    def setParentMember(value: String): Self = StObject.set(x, "parentMember", value.asInstanceOf[js.Any])
+    inline def setParentMember(value: String): Self = StObject.set(x, "parentMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentMemberUndefined: Self = StObject.set(x, "parentMember", js.undefined)
+    inline def setParentMemberUndefined: Self = StObject.set(x, "parentMember", js.undefined)
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
   }
 }

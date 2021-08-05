@@ -34,8 +34,7 @@ trait TopicRuleElasticsearch extends StObject {
 }
 object TopicRuleElasticsearch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endpoint: Input[String],
     id: Input[String],
     index: Input[String],
@@ -47,22 +46,16 @@ object TopicRuleElasticsearch {
     __obj.asInstanceOf[TopicRuleElasticsearch]
   }
   
-  @scala.inline
-  implicit class TopicRuleElasticsearchMutableBuilder[Self <: TopicRuleElasticsearch] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleElasticsearch](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Input[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Input[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

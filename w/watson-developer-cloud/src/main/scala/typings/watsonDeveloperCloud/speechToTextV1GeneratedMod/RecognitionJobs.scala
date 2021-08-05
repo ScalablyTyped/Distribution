@@ -12,19 +12,15 @@ trait RecognitionJobs extends StObject {
 }
 object RecognitionJobs {
   
-  @scala.inline
-  def apply(recognitions: js.Array[RecognitionJob]): RecognitionJobs = {
+  inline def apply(recognitions: js.Array[RecognitionJob]): RecognitionJobs = {
     val __obj = js.Dynamic.literal(recognitions = recognitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognitionJobs]
   }
   
-  @scala.inline
-  implicit class RecognitionJobsMutableBuilder[Self <: RecognitionJobs] (val x: Self) extends AnyVal {
+  extension [Self <: RecognitionJobs](x: Self) {
     
-    @scala.inline
-    def setRecognitions(value: js.Array[RecognitionJob]): Self = StObject.set(x, "recognitions", value.asInstanceOf[js.Any])
+    inline def setRecognitions(value: js.Array[RecognitionJob]): Self = StObject.set(x, "recognitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecognitionsVarargs(value: RecognitionJob*): Self = StObject.set(x, "recognitions", js.Array(value :_*))
+    inline def setRecognitionsVarargs(value: RecognitionJob*): Self = StObject.set(x, "recognitions", js.Array(value :_*))
   }
 }

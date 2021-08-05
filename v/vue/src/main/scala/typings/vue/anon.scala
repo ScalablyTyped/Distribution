@@ -60,8 +60,7 @@ object anon {
   }
   object Component {
     
-    @scala.inline
-    def apply[Data, Methods, Computed, Props](
+    inline def apply[Data, Methods, Computed, Props](
       component: (/* resolve */ js.Function1[
           /* component */ typings.vue.optionsMod.Component[Data, Methods, Computed, Props], 
           Unit
@@ -78,11 +77,9 @@ object anon {
       __obj.asInstanceOf[Component[Data, Methods, Computed, Props]]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component[?, ?, ?, ?], Data, Methods, Computed, Props] (val x: Self & (Component[Data, Methods, Computed, Props])) extends AnyVal {
+    extension [Self <: Component[?, ?, ?, ?], Data, Methods, Computed, Props](x: Self & (Component[Data, Methods, Computed, Props])) {
       
-      @scala.inline
-      def setComponent(
+      inline def setComponent(
         value: (/* resolve */ js.Function1[
               /* component */ typings.vue.optionsMod.Component[Data, Methods, Computed, Props], 
               Unit
@@ -96,14 +93,11 @@ object anon {
             ]) | Unit
       ): Self = StObject.set(x, "component", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (typings.vue.optionsMod.Component[
               DefaultData[scala.Nothing], 
               DefaultMethods[scala.Nothing], 
@@ -112,11 +106,9 @@ object anon {
             ]) | EsModuleComponent
       ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setLoading(
+      inline def setLoading(
         value: (typings.vue.optionsMod.Component[
               DefaultData[scala.Nothing], 
               DefaultMethods[scala.Nothing], 
@@ -125,14 +117,11 @@ object anon {
             ]) | EsModuleComponent
       ): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -144,26 +133,20 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply(): Default = {
+    inline def apply(): Default = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setFrom(value: InjectKey): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: InjectKey): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     }
   }
   
@@ -175,26 +158,20 @@ object anon {
   }
   object Event {
     
-    @scala.inline
-    def apply(): Event = {
+    inline def apply(): Event = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+      inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     }
   }
   
@@ -234,23 +211,18 @@ object anon {
   }
   object Render {
     
-    @scala.inline
-    def apply(render: js.Function, staticRenderFns: js.Array[js.Function]): Render = {
+    inline def apply(render: js.Function, staticRenderFns: js.Array[js.Function]): Render = {
       val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], staticRenderFns = staticRenderFns.asInstanceOf[js.Any])
       __obj.asInstanceOf[Render]
     }
     
-    @scala.inline
-    implicit class RenderMutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
+    extension [Self <: Render](x: Self) {
       
-      @scala.inline
-      def setRender(value: js.Function): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: js.Function): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticRenderFns(value: js.Array[js.Function]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
+      inline def setStaticRenderFns(value: js.Array[js.Function]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticRenderFnsVarargs(value: js.Function*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
+      inline def setStaticRenderFnsVarargs(value: js.Function*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
     }
   }
   
@@ -262,23 +234,18 @@ object anon {
   }
   object StaticRenderFns {
     
-    @scala.inline
-    def apply(render: CreateElement => VNode, staticRenderFns: js.Array[js.Function0[VNode]]): StaticRenderFns = {
+    inline def apply(render: CreateElement => VNode, staticRenderFns: js.Array[js.Function0[VNode]]): StaticRenderFns = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render), staticRenderFns = staticRenderFns.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticRenderFns]
     }
     
-    @scala.inline
-    implicit class StaticRenderFnsMutableBuilder[Self <: StaticRenderFns] (val x: Self) extends AnyVal {
+    extension [Self <: StaticRenderFns](x: Self) {
       
-      @scala.inline
-      def setRender(value: CreateElement => VNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: CreateElement => VNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStaticRenderFns(value: js.Array[js.Function0[VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
+      inline def setStaticRenderFns(value: js.Array[js.Function0[VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticRenderFnsVarargs(value: js.Function0[VNode]*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
+      inline def setStaticRenderFnsVarargs(value: js.Function0[VNode]*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
     }
   }
 }

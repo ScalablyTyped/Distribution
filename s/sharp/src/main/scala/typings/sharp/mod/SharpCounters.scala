@@ -14,19 +14,15 @@ trait SharpCounters extends StObject {
 }
 object SharpCounters {
   
-  @scala.inline
-  def apply(process: Double, queue: Double): SharpCounters = {
+  inline def apply(process: Double, queue: Double): SharpCounters = {
     val __obj = js.Dynamic.literal(process = process.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharpCounters]
   }
   
-  @scala.inline
-  implicit class SharpCountersMutableBuilder[Self <: SharpCounters] (val x: Self) extends AnyVal {
+  extension [Self <: SharpCounters](x: Self) {
     
-    @scala.inline
-    def setProcess(value: Double): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: Double): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
   }
 }

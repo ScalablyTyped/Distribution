@@ -18,19 +18,15 @@ trait SchemaContainerKilledEvent extends StObject {
 }
 object SchemaContainerKilledEvent {
   
-  @scala.inline
-  def apply(): SchemaContainerKilledEvent = {
+  inline def apply(): SchemaContainerKilledEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContainerKilledEvent]
   }
   
-  @scala.inline
-  implicit class SchemaContainerKilledEventMutableBuilder[Self <: SchemaContainerKilledEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContainerKilledEvent](x: Self) {
     
-    @scala.inline
-    def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
   }
 }

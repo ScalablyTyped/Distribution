@@ -48,8 +48,7 @@ trait ClientEventMap extends StObject {
 }
 object ClientEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `client-banned`: RtcError,
     `connection-state-changed`: CurState,
     error: RtcError,
@@ -80,46 +79,32 @@ object ClientEventMap {
     __obj.asInstanceOf[ClientEventMap]
   }
   
-  @scala.inline
-  implicit class ClientEventMapMutableBuilder[Self <: ClientEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ClientEventMap](x: Self) {
     
-    @scala.inline
-    def `setClient-banned`(value: RtcError): Self = StObject.set(x, "client-banned", value.asInstanceOf[js.Any])
+    inline def `setClient-banned`(value: RtcError): Self = StObject.set(x, "client-banned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setConnection-state-changed`(value: CurState): Self = StObject.set(x, "connection-state-changed", value.asInstanceOf[js.Any])
+    inline def `setConnection-state-changed`(value: CurState): Self = StObject.set(x, "connection-state-changed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: RtcError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: RtcError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMute-audio`(value: RemoteUserInfo): Self = StObject.set(x, "mute-audio", value.asInstanceOf[js.Any])
+    inline def `setMute-audio`(value: RemoteUserInfo): Self = StObject.set(x, "mute-audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMute-video`(value: RemoteUserInfo): Self = StObject.set(x, "mute-video", value.asInstanceOf[js.Any])
+    inline def `setMute-video`(value: RemoteUserInfo): Self = StObject.set(x, "mute-video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPeer-join`(value: RemoteUserInfo): Self = StObject.set(x, "peer-join", value.asInstanceOf[js.Any])
+    inline def `setPeer-join`(value: RemoteUserInfo): Self = StObject.set(x, "peer-join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPeer-leave`(value: RemoteUserInfo): Self = StObject.set(x, "peer-leave", value.asInstanceOf[js.Any])
+    inline def `setPeer-leave`(value: RemoteUserInfo): Self = StObject.set(x, "peer-leave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStream-added`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-added", value.asInstanceOf[js.Any])
+    inline def `setStream-added`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStream-removed`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-removed", value.asInstanceOf[js.Any])
+    inline def `setStream-removed`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStream-subscribed`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-subscribed", value.asInstanceOf[js.Any])
+    inline def `setStream-subscribed`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-subscribed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStream-updated`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-updated", value.asInstanceOf[js.Any])
+    inline def `setStream-updated`(value: RemoteStreamInfo): Self = StObject.set(x, "stream-updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUnmute-audio`(value: RemoteUserInfo): Self = StObject.set(x, "unmute-audio", value.asInstanceOf[js.Any])
+    inline def `setUnmute-audio`(value: RemoteUserInfo): Self = StObject.set(x, "unmute-audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUnmute-video`(value: RemoteUserInfo): Self = StObject.set(x, "unmute-video", value.asInstanceOf[js.Any])
+    inline def `setUnmute-video`(value: RemoteUserInfo): Self = StObject.set(x, "unmute-video", value.asInstanceOf[js.Any])
   }
 }

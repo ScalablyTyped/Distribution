@@ -18,25 +18,19 @@ trait SharedOptions extends StObject {
 }
 object SharedOptions {
   
-  @scala.inline
-  def apply(): SharedOptions = {
+  inline def apply(): SharedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedOptions]
   }
   
-  @scala.inline
-  implicit class SharedOptionsMutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SharedOptions](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

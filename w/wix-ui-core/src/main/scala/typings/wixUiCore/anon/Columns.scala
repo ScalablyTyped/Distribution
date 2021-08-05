@@ -13,19 +13,15 @@ trait Columns extends StObject {
 }
 object Columns {
   
-  @scala.inline
-  def apply(Columns: FC[PickPickHorizontalMenuCol], Grid: FC[PickPickHorizontalMenuGri]): Columns = {
+  inline def apply(Columns: FC[PickPickHorizontalMenuCol], Grid: FC[PickPickHorizontalMenuGri]): Columns = {
     val __obj = js.Dynamic.literal(Columns = Columns.asInstanceOf[js.Any], Grid = Grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Columns]
   }
   
-  @scala.inline
-  implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+  extension [Self <: Columns](x: Self) {
     
-    @scala.inline
-    def setColumns(value: FC[PickPickHorizontalMenuCol]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: FC[PickPickHorizontalMenuCol]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrid(value: FC[PickPickHorizontalMenuGri]): Self = StObject.set(x, "Grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: FC[PickPickHorizontalMenuGri]): Self = StObject.set(x, "Grid", value.asInstanceOf[js.Any])
   }
 }

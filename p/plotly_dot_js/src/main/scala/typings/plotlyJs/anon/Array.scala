@@ -16,32 +16,24 @@ trait Array extends StObject {
 }
 object Array {
   
-  @scala.inline
-  def apply(array: js.Array[Datum]): Array = {
+  inline def apply(array: js.Array[Datum]): Array = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("data")
     __obj.asInstanceOf[Array]
   }
   
-  @scala.inline
-  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+  extension [Self <: Array](x: Self) {
     
-    @scala.inline
-    def setArray(value: js.Array[Datum]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Array[Datum]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayVarargs(value: Datum*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: Datum*): Self = StObject.set(x, "array", js.Array(value :_*))
     
-    @scala.inline
-    def setArrayminus(value: js.Array[Datum]): Self = StObject.set(x, "arrayminus", value.asInstanceOf[js.Any])
+    inline def setArrayminus(value: js.Array[Datum]): Self = StObject.set(x, "arrayminus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayminusUndefined: Self = StObject.set(x, "arrayminus", js.undefined)
+    inline def setArrayminusUndefined: Self = StObject.set(x, "arrayminus", js.undefined)
     
-    @scala.inline
-    def setArrayminusVarargs(value: Datum*): Self = StObject.set(x, "arrayminus", js.Array(value :_*))
+    inline def setArrayminusVarargs(value: Datum*): Self = StObject.set(x, "arrayminus", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: data): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: data): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

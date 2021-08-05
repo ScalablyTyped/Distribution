@@ -34,6 +34,5 @@ trait TreeDataMove extends StObject {
 }
 object TreeDataMove {
   
-  @scala.inline
-  def apply: TreeDataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataMove").asInstanceOf[TreeDataMove]
+  inline def apply: TreeDataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataMove").asInstanceOf[TreeDataMove]
 }

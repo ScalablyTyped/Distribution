@@ -40,8 +40,7 @@ object identitytoolkitMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Identitytoolkit
       ] = js.native
-    @scala.inline
-    def v3_=(
+    inline def v3_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object identitytoolkitMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object identitytoolkitMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def identitytoolkit(options: Options): Identitytoolkit = ^.asInstanceOf[js.Dynamic].applyDynamic("identitytoolkit")(options.asInstanceOf[js.Any]).asInstanceOf[Identitytoolkit]
+  inline def identitytoolkit(options: Options): Identitytoolkit = ^.asInstanceOf[js.Dynamic].applyDynamic("identitytoolkit")(options.asInstanceOf[js.Any]).asInstanceOf[Identitytoolkit]
   
-  @scala.inline
-  def identitytoolkit_v3(version: v3): Identitytoolkit = ^.asInstanceOf[js.Dynamic].applyDynamic("identitytoolkit")(version.asInstanceOf[js.Any]).asInstanceOf[Identitytoolkit]
+  inline def identitytoolkit_v3(version: v3): Identitytoolkit = ^.asInstanceOf[js.Dynamic].applyDynamic("identitytoolkit")(version.asInstanceOf[js.Any]).asInstanceOf[Identitytoolkit]
 }

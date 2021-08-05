@@ -14,31 +14,23 @@ trait StickyOffsets extends StObject {
 }
 object StickyOffsets {
   
-  @scala.inline
-  def apply(left: js.Array[Double], right: js.Array[Double]): StickyOffsets = {
+  inline def apply(left: js.Array[Double], right: js.Array[Double]): StickyOffsets = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyOffsets]
   }
   
-  @scala.inline
-  implicit class StickyOffsetsMutableBuilder[Self <: StickyOffsets] (val x: Self) extends AnyVal {
+  extension [Self <: StickyOffsets](x: Self) {
     
-    @scala.inline
-    def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
+    inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStickyUndefined: Self = StObject.set(x, "isSticky", js.undefined)
+    inline def setIsStickyUndefined: Self = StObject.set(x, "isSticky", js.undefined)
     
-    @scala.inline
-    def setLeft(value: js.Array[Double]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: js.Array[Double]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftVarargs(value: Double*): Self = StObject.set(x, "left", js.Array(value :_*))
+    inline def setLeftVarargs(value: Double*): Self = StObject.set(x, "left", js.Array(value :_*))
     
-    @scala.inline
-    def setRight(value: js.Array[Double]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: js.Array[Double]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightVarargs(value: Double*): Self = StObject.set(x, "right", js.Array(value :_*))
+    inline def setRightVarargs(value: Double*): Self = StObject.set(x, "right", js.Array(value :_*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Popup")
 @js.native
-class Popup protected () extends NativeObject {
+/* protected */ class Popup () extends NativeObject {
   
   /**
     * Hides the popup.

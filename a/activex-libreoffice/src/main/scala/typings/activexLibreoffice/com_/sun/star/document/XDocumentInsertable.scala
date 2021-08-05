@@ -18,8 +18,7 @@ trait XDocumentInsertable
 }
 object XDocumentInsertable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     insertDocumentFromURL: (String, SeqEquiv[PropertyValue]) => Unit,
     queryInterface: `type` => js.Any,
@@ -29,10 +28,8 @@ object XDocumentInsertable {
     __obj.asInstanceOf[XDocumentInsertable]
   }
   
-  @scala.inline
-  implicit class XDocumentInsertableMutableBuilder[Self <: XDocumentInsertable] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentInsertable](x: Self) {
     
-    @scala.inline
-    def setInsertDocumentFromURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "insertDocumentFromURL", js.Any.fromFunction2(value))
+    inline def setInsertDocumentFromURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "insertDocumentFromURL", js.Any.fromFunction2(value))
   }
 }

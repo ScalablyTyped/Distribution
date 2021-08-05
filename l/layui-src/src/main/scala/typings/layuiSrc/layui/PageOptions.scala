@@ -44,103 +44,71 @@ trait PageOptions extends StObject {
 }
 object PageOptions {
   
-  @scala.inline
-  def apply(): PageOptions = {
+  inline def apply(): PageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageOptions]
   }
   
-  @scala.inline
-  implicit class PageOptionsMutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageOptions](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setCurr(value: Double): Self = StObject.set(x, "curr", value.asInstanceOf[js.Any])
+    inline def setCurr(value: Double): Self = StObject.set(x, "curr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrUndefined: Self = StObject.set(x, "curr", js.undefined)
+    inline def setCurrUndefined: Self = StObject.set(x, "curr", js.undefined)
     
-    @scala.inline
-    def setElem(value: String | HTMLElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
+    inline def setElem(value: String | HTMLElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
+    inline def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
     
-    @scala.inline
-    def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setGroups(value: Double): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Double): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setHash(value: String | Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String | Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setJump(value: (PageOptions, /* first */ Boolean) => Unit): Self = StObject.set(x, "jump", js.Any.fromFunction2(value))
+    inline def setJump(value: (PageOptions, /* first */ Boolean) => Unit): Self = StObject.set(x, "jump", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
+    inline def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
     
-    @scala.inline
-    def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setLayout(value: js.Array[count | prev | page | next | limit | skip]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: js.Array[count | prev | page | next | limit | skip]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setLayoutVarargs(value: (count | prev | page | next | limit | skip)*): Self = StObject.set(x, "layout", js.Array(value :_*))
+    inline def setLayoutVarargs(value: (count | prev | page | next | limit | skip)*): Self = StObject.set(x, "layout", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setLimits(value: js.Array[Double]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: js.Array[Double]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setLimitsVarargs(value: Double*): Self = StObject.set(x, "limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: Double*): Self = StObject.set(x, "limits", js.Array(value :_*))
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

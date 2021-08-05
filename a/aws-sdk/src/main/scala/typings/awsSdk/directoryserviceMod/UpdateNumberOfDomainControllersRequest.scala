@@ -18,19 +18,15 @@ trait UpdateNumberOfDomainControllersRequest extends StObject {
 }
 object UpdateNumberOfDomainControllersRequest {
   
-  @scala.inline
-  def apply(DesiredNumber: DesiredNumberOfDomainControllers, DirectoryId: DirectoryId): UpdateNumberOfDomainControllersRequest = {
+  inline def apply(DesiredNumber: DesiredNumberOfDomainControllers, DirectoryId: DirectoryId): UpdateNumberOfDomainControllersRequest = {
     val __obj = js.Dynamic.literal(DesiredNumber = DesiredNumber.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNumberOfDomainControllersRequest]
   }
   
-  @scala.inline
-  implicit class UpdateNumberOfDomainControllersRequestMutableBuilder[Self <: UpdateNumberOfDomainControllersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNumberOfDomainControllersRequest](x: Self) {
     
-    @scala.inline
-    def setDesiredNumber(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumber", value.asInstanceOf[js.Any])
+    inline def setDesiredNumber(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

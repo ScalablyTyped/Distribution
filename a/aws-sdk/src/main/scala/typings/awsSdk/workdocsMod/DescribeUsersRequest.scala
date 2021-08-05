@@ -58,73 +58,51 @@ trait DescribeUsersRequest extends StObject {
 }
 object DescribeUsersRequest {
   
-  @scala.inline
-  def apply(): DescribeUsersRequest = {
+  inline def apply(): DescribeUsersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUsersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeUsersRequestMutableBuilder[Self <: DescribeUsersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUsersRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setFields(value: FieldNamesType): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: FieldNamesType): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
-    @scala.inline
-    def setInclude(value: UserFilterType): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: UserFilterType): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "Include", js.undefined)
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOrder(value: OrderType): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: OrderType): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "Order", js.undefined)
     
-    @scala.inline
-    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
+    inline def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SearchQueryType): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SearchQueryType): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "Query", js.undefined)
     
-    @scala.inline
-    def setSort(value: UserSortType): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: UserSortType): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
     
-    @scala.inline
-    def setUserIds(value: UserIdsType): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
+    inline def setUserIds(value: UserIdsType): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
+    inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
   }
 }

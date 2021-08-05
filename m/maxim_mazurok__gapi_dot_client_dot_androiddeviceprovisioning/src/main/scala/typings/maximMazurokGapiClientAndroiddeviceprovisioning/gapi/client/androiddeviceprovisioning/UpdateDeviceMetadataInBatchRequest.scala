@@ -11,22 +11,17 @@ trait UpdateDeviceMetadataInBatchRequest extends StObject {
 }
 object UpdateDeviceMetadataInBatchRequest {
   
-  @scala.inline
-  def apply(): UpdateDeviceMetadataInBatchRequest = {
+  inline def apply(): UpdateDeviceMetadataInBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDeviceMetadataInBatchRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceMetadataInBatchRequestMutableBuilder[Self <: UpdateDeviceMetadataInBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceMetadataInBatchRequest](x: Self) {
     
-    @scala.inline
-    def setUpdates(value: js.Array[UpdateMetadataArguments]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: js.Array[UpdateMetadataArguments]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    @scala.inline
-    def setUpdatesVarargs(value: UpdateMetadataArguments*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: UpdateMetadataArguments*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

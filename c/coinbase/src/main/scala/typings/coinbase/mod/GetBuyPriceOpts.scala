@@ -13,16 +13,13 @@ trait GetBuyPriceOpts extends StObject {
 }
 object GetBuyPriceOpts {
   
-  @scala.inline
-  def apply(currencyPair: String): GetBuyPriceOpts = {
+  inline def apply(currencyPair: String): GetBuyPriceOpts = {
     val __obj = js.Dynamic.literal(currencyPair = currencyPair.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBuyPriceOpts]
   }
   
-  @scala.inline
-  implicit class GetBuyPriceOptsMutableBuilder[Self <: GetBuyPriceOpts] (val x: Self) extends AnyVal {
+  extension [Self <: GetBuyPriceOpts](x: Self) {
     
-    @scala.inline
-    def setCurrencyPair(value: String): Self = StObject.set(x, "currencyPair", value.asInstanceOf[js.Any])
+    inline def setCurrencyPair(value: String): Self = StObject.set(x, "currencyPair", value.asInstanceOf[js.Any])
   }
 }

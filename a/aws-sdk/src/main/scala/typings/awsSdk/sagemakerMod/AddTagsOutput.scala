@@ -13,22 +13,17 @@ trait AddTagsOutput extends StObject {
 }
 object AddTagsOutput {
   
-  @scala.inline
-  def apply(): AddTagsOutput = {
+  inline def apply(): AddTagsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddTagsOutput]
   }
   
-  @scala.inline
-  implicit class AddTagsOutputMutableBuilder[Self <: AddTagsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AddTagsOutput](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

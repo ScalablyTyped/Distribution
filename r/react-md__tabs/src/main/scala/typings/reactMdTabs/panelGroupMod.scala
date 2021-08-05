@@ -12,8 +12,7 @@ object panelGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def PanelGroup(hasPersistentDisableTransitionChildren: PanelGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("PanelGroup")(hasPersistentDisableTransitionChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def PanelGroup(hasPersistentDisableTransitionChildren: PanelGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("PanelGroup")(hasPersistentDisableTransitionChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait PanelGroupProps extends StObject {
     
@@ -25,26 +24,20 @@ object panelGroupMod {
   }
   object PanelGroupProps {
     
-    @scala.inline
-    def apply(disableTransition: Boolean, persistent: Boolean): PanelGroupProps = {
+    inline def apply(disableTransition: Boolean, persistent: Boolean): PanelGroupProps = {
       val __obj = js.Dynamic.literal(disableTransition = disableTransition.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any])
       __obj.asInstanceOf[PanelGroupProps]
     }
     
-    @scala.inline
-    implicit class PanelGroupPropsMutableBuilder[Self <: PanelGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: PanelGroupProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
+      inline def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     }
   }
 }

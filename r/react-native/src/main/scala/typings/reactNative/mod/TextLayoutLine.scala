@@ -26,8 +26,7 @@ trait TextLayoutLine extends StObject {
 }
 object TextLayoutLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ascender: Double,
     capHeight: Double,
     descender: Double,
@@ -42,34 +41,24 @@ object TextLayoutLine {
     __obj.asInstanceOf[TextLayoutLine]
   }
   
-  @scala.inline
-  implicit class TextLayoutLineMutableBuilder[Self <: TextLayoutLine] (val x: Self) extends AnyVal {
+  extension [Self <: TextLayoutLine](x: Self) {
     
-    @scala.inline
-    def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
+    inline def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapHeight(value: Double): Self = StObject.set(x, "capHeight", value.asInstanceOf[js.Any])
+    inline def setCapHeight(value: Double): Self = StObject.set(x, "capHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
+    inline def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXHeight(value: Double): Self = StObject.set(x, "xHeight", value.asInstanceOf[js.Any])
+    inline def setXHeight(value: Double): Self = StObject.set(x, "xHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

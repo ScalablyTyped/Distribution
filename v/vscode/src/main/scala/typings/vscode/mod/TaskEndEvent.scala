@@ -18,16 +18,13 @@ trait TaskEndEvent extends StObject {
 }
 object TaskEndEvent {
   
-  @scala.inline
-  def apply(execution: TaskExecution): TaskEndEvent = {
+  inline def apply(execution: TaskExecution): TaskEndEvent = {
     val __obj = js.Dynamic.literal(execution = execution.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskEndEvent]
   }
   
-  @scala.inline
-  implicit class TaskEndEventMutableBuilder[Self <: TaskEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TaskEndEvent](x: Self) {
     
-    @scala.inline
-    def setExecution(value: TaskExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: TaskExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
   }
 }

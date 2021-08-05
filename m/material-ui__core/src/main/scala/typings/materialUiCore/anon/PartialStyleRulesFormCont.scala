@@ -18,37 +18,27 @@ trait PartialStyleRulesFormCont extends StObject {
 }
 object PartialStyleRulesFormCont {
   
-  @scala.inline
-  def apply(): PartialStyleRulesFormCont = {
+  inline def apply(): PartialStyleRulesFormCont = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesFormCont]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesFormContMutableBuilder[Self <: PartialStyleRulesFormCont] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesFormCont](x: Self) {
     
-    @scala.inline
-    def setFullWidth(value: CSSProperties): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: CSSProperties): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    @scala.inline
-    def setMarginDense(value: CSSProperties): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
+    inline def setMarginDense(value: CSSProperties): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
+    inline def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
     
-    @scala.inline
-    def setMarginNormal(value: CSSProperties): Self = StObject.set(x, "marginNormal", value.asInstanceOf[js.Any])
+    inline def setMarginNormal(value: CSSProperties): Self = StObject.set(x, "marginNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginNormalUndefined: Self = StObject.set(x, "marginNormal", js.undefined)
+    inline def setMarginNormalUndefined: Self = StObject.set(x, "marginNormal", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait SchemaEmailAddress extends StObject {
 }
 object SchemaEmailAddress {
   
-  @scala.inline
-  def apply(): SchemaEmailAddress = {
+  inline def apply(): SchemaEmailAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEmailAddress]
   }
   
-  @scala.inline
-  implicit class SchemaEmailAddressMutableBuilder[Self <: SchemaEmailAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEmailAddress](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
   }
 }

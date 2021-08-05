@@ -13,6 +13,5 @@ object findBaseClassesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findBaseClassDeclarations(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[Identifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("findBaseClassDeclarations")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[Identifier]]
+  inline def findBaseClassDeclarations(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[Identifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("findBaseClassDeclarations")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[Identifier]]
 }

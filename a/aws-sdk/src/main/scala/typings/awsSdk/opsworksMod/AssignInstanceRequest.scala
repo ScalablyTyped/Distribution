@@ -18,22 +18,17 @@ trait AssignInstanceRequest extends StObject {
 }
 object AssignInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: String, LayerIds: Strings): AssignInstanceRequest = {
+  inline def apply(InstanceId: String, LayerIds: Strings): AssignInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], LayerIds = LayerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignInstanceRequest]
   }
   
-  @scala.inline
-  implicit class AssignInstanceRequestMutableBuilder[Self <: AssignInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssignInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
+    inline def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
   }
 }

@@ -18,11 +18,11 @@ object countdownMod {
       */
     def this(initialCount: Double) = this()
     
-    var _event: js.Any = js.native
+    /* private */ var _event: js.Any = js.native
     
-    var _initialCount: js.Any = js.native
+    /* private */ var _initialCount: js.Any = js.native
     
-    var _remainingCount: js.Any = js.native
+    /* private */ var _remainingCount: js.Any = js.native
     
     /**
       * Increments the event's current count by one or more.

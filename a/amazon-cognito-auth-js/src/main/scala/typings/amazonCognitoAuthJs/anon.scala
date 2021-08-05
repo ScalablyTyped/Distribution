@@ -12,18 +12,15 @@ object anon {
   }
   object ContentType {
     
-    @scala.inline
-    def apply(`Content-Type`: String): ContentType = {
+    inline def apply(`Content-Type`: String): ContentType = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("Content-Type")(`Content-Type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentType]
     }
     
-    @scala.inline
-    implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+    extension [Self <: ContentType](x: Self) {
       
-      @scala.inline
-      def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
+      inline def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
     }
   }
 }

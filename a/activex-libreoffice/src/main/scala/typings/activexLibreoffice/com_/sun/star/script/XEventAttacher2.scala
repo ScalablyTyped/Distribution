@@ -22,8 +22,7 @@ trait XEventAttacher2
 }
 object XEventAttacher2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     attachListener: (XInterface, XAllListener, js.Any, String, String) => XEventListener,
     attachMultipleEventListeners: (XInterface, SeqEquiv[EventListener]) => SafeArray[XEventListener],
@@ -36,10 +35,8 @@ object XEventAttacher2 {
     __obj.asInstanceOf[XEventAttacher2]
   }
   
-  @scala.inline
-  implicit class XEventAttacher2MutableBuilder[Self <: XEventAttacher2] (val x: Self) extends AnyVal {
+  extension [Self <: XEventAttacher2](x: Self) {
     
-    @scala.inline
-    def setAttachMultipleEventListeners(value: (XInterface, SeqEquiv[EventListener]) => SafeArray[XEventListener]): Self = StObject.set(x, "attachMultipleEventListeners", js.Any.fromFunction2(value))
+    inline def setAttachMultipleEventListeners(value: (XInterface, SeqEquiv[EventListener]) => SafeArray[XEventListener]): Self = StObject.set(x, "attachMultipleEventListeners", js.Any.fromFunction2(value))
   }
 }

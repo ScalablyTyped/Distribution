@@ -50,26 +50,20 @@ object display {
   }
   object Bounds {
     
-    @scala.inline
-    def apply(height: integer, left: integer, top: integer, width: integer): Bounds = {
+    inline def apply(height: integer, left: integer, top: integer, width: integer): Bounds = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bounds]
     }
     
-    @scala.inline
-    implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+    extension [Self <: Bounds](x: Self) {
       
-      @scala.inline
-      def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +149,7 @@ object display {
   }
   object DisplayInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       availableDisplayZoomFactors: js.Array[double],
       bounds: Bounds,
       displayZoomFactor: double,
@@ -179,74 +172,51 @@ object display {
       __obj.asInstanceOf[DisplayInfo]
     }
     
-    @scala.inline
-    implicit class DisplayInfoMutableBuilder[Self <: DisplayInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayInfo](x: Self) {
       
-      @scala.inline
-      def setAvailableDisplayZoomFactors(value: js.Array[double]): Self = StObject.set(x, "availableDisplayZoomFactors", value.asInstanceOf[js.Any])
+      inline def setAvailableDisplayZoomFactors(value: js.Array[double]): Self = StObject.set(x, "availableDisplayZoomFactors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailableDisplayZoomFactorsVarargs(value: double*): Self = StObject.set(x, "availableDisplayZoomFactors", js.Array(value :_*))
+      inline def setAvailableDisplayZoomFactorsVarargs(value: double*): Self = StObject.set(x, "availableDisplayZoomFactors", js.Array(value :_*))
       
-      @scala.inline
-      def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayZoomFactor(value: double): Self = StObject.set(x, "displayZoomFactor", value.asInstanceOf[js.Any])
+      inline def setDisplayZoomFactor(value: double): Self = StObject.set(x, "displayZoomFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpiX(value: integer): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
+      inline def setDpiX(value: integer): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpiY(value: integer): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
+      inline def setDpiY(value: integer): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdid(value: ManufacturerId): Self = StObject.set(x, "edid", value.asInstanceOf[js.Any])
+      inline def setEdid(value: ManufacturerId): Self = StObject.set(x, "edid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdidUndefined: Self = StObject.set(x, "edid", js.undefined)
+      inline def setEdidUndefined: Self = StObject.set(x, "edid", js.undefined)
       
-      @scala.inline
-      def setHasTouchSupport(value: Boolean): Self = StObject.set(x, "hasTouchSupport", value.asInstanceOf[js.Any])
+      inline def setHasTouchSupport(value: Boolean): Self = StObject.set(x, "hasTouchSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
+      inline def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+      inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirroringDestinationIds(value: js.Array[String]): Self = StObject.set(x, "mirroringDestinationIds", value.asInstanceOf[js.Any])
+      inline def setMirroringDestinationIds(value: js.Array[String]): Self = StObject.set(x, "mirroringDestinationIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value :_*))
+      inline def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value :_*))
       
-      @scala.inline
-      def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
+      inline def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModes(value: js.Array[DisplayMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+      inline def setModes(value: js.Array[DisplayMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModesVarargs(value: DisplayMode*): Self = StObject.set(x, "modes", js.Array(value :_*))
+      inline def setModesVarargs(value: DisplayMode*): Self = StObject.set(x, "modes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverscan(value: Insets): Self = StObject.set(x, "overscan", value.asInstanceOf[js.Any])
+      inline def setOverscan(value: Insets): Self = StObject.set(x, "overscan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkArea(value: Bounds): Self = StObject.set(x, "workArea", value.asInstanceOf[js.Any])
+      inline def setWorkArea(value: Bounds): Self = StObject.set(x, "workArea", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,20 +235,16 @@ object display {
   }
   object DisplayInfoFlags {
     
-    @scala.inline
-    def apply(): DisplayInfoFlags = {
+    inline def apply(): DisplayInfoFlags = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisplayInfoFlags]
     }
     
-    @scala.inline
-    implicit class DisplayInfoFlagsMutableBuilder[Self <: DisplayInfoFlags] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayInfoFlags](x: Self) {
       
-      @scala.inline
-      def setSingleUnified(value: Boolean): Self = StObject.set(x, "singleUnified", value.asInstanceOf[js.Any])
+      inline def setSingleUnified(value: Boolean): Self = StObject.set(x, "singleUnified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleUnifiedUndefined: Self = StObject.set(x, "singleUnified", js.undefined)
+      inline def setSingleUnifiedUndefined: Self = StObject.set(x, "singleUnified", js.undefined)
     }
   }
   
@@ -312,8 +278,7 @@ object display {
   }
   object DisplayLayout {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       offset: integer,
       parentId: String,
@@ -330,20 +295,15 @@ object display {
       __obj.asInstanceOf[DisplayLayout]
     }
     
-    @scala.inline
-    implicit class DisplayLayoutMutableBuilder[Self <: DisplayLayout] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayLayout](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(
+      inline def setPosition(
         value: ToStringLiteral[
               BOTTOM, 
               /* keyof chrome-apps.anon.BOTTOM */ TOP | RIGHT | typings.chromeApps.chromeAppsStrings.BOTTOM | LEFT, 
@@ -396,8 +356,7 @@ object display {
   }
   object DisplayMode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deviceScaleFactor: integer,
       height: integer,
       heightInNativePixels: integer,
@@ -412,35 +371,25 @@ object display {
       __obj.asInstanceOf[DisplayMode]
     }
     
-    @scala.inline
-    implicit class DisplayModeMutableBuilder[Self <: DisplayMode] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayMode](x: Self) {
       
-      @scala.inline
-      def setDeviceScaleFactor(value: integer): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+      inline def setDeviceScaleFactor(value: integer): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightInNativePixels(value: integer): Self = StObject.set(x, "heightInNativePixels", value.asInstanceOf[js.Any])
+      inline def setHeightInNativePixels(value: integer): Self = StObject.set(x, "heightInNativePixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNative(value: Boolean): Self = StObject.set(x, "isNative", value.asInstanceOf[js.Any])
+      inline def setIsNative(value: Boolean): Self = StObject.set(x, "isNative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshRate(value: double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
+      inline def setRefreshRate(value: double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiScale(value: integer): Self = StObject.set(x, "uiScale", value.asInstanceOf[js.Any])
+      inline def setUiScale(value: integer): Self = StObject.set(x, "uiScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthInNativePixels(value: integer): Self = StObject.set(x, "widthInNativePixels", value.asInstanceOf[js.Any])
+      inline def setWidthInNativePixels(value: integer): Self = StObject.set(x, "widthInNativePixels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -532,68 +481,48 @@ object display {
   }
   object DisplayPropertiesInfo {
     
-    @scala.inline
-    def apply(): DisplayPropertiesInfo = {
+    inline def apply(): DisplayPropertiesInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisplayPropertiesInfo]
     }
     
-    @scala.inline
-    implicit class DisplayPropertiesInfoMutableBuilder[Self <: DisplayPropertiesInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayPropertiesInfo](x: Self) {
       
-      @scala.inline
-      def setBoundsOriginX(value: integer): Self = StObject.set(x, "boundsOriginX", value.asInstanceOf[js.Any])
+      inline def setBoundsOriginX(value: integer): Self = StObject.set(x, "boundsOriginX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsOriginXUndefined: Self = StObject.set(x, "boundsOriginX", js.undefined)
+      inline def setBoundsOriginXUndefined: Self = StObject.set(x, "boundsOriginX", js.undefined)
       
-      @scala.inline
-      def setBoundsOriginY(value: integer): Self = StObject.set(x, "boundsOriginY", value.asInstanceOf[js.Any])
+      inline def setBoundsOriginY(value: integer): Self = StObject.set(x, "boundsOriginY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsOriginYUndefined: Self = StObject.set(x, "boundsOriginY", js.undefined)
+      inline def setBoundsOriginYUndefined: Self = StObject.set(x, "boundsOriginY", js.undefined)
       
-      @scala.inline
-      def setDisplayMode(value: DisplayMode): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+      inline def setDisplayMode(value: DisplayMode): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
+      inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
       
-      @scala.inline
-      def setDisplayZoomFactor(value: double): Self = StObject.set(x, "displayZoomFactor", value.asInstanceOf[js.Any])
+      inline def setDisplayZoomFactor(value: double): Self = StObject.set(x, "displayZoomFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayZoomFactorUndefined: Self = StObject.set(x, "displayZoomFactor", js.undefined)
+      inline def setDisplayZoomFactorUndefined: Self = StObject.set(x, "displayZoomFactor", js.undefined)
       
-      @scala.inline
-      def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+      inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+      inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
       
-      @scala.inline
-      def setIsUnified(value: Boolean): Self = StObject.set(x, "isUnified", value.asInstanceOf[js.Any])
+      inline def setIsUnified(value: Boolean): Self = StObject.set(x, "isUnified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUnifiedUndefined: Self = StObject.set(x, "isUnified", js.undefined)
+      inline def setIsUnifiedUndefined: Self = StObject.set(x, "isUnified", js.undefined)
       
-      @scala.inline
-      def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
+      inline def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirroringSourceIdUndefined: Self = StObject.set(x, "mirroringSourceId", js.undefined)
+      inline def setMirroringSourceIdUndefined: Self = StObject.set(x, "mirroringSourceId", js.undefined)
       
-      @scala.inline
-      def setOverscan(value: Insets): Self = StObject.set(x, "overscan", value.asInstanceOf[js.Any])
+      inline def setOverscan(value: Insets): Self = StObject.set(x, "overscan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverscanUndefined: Self = StObject.set(x, "overscan", js.undefined)
+      inline def setOverscanUndefined: Self = StObject.set(x, "overscan", js.undefined)
       
-      @scala.inline
-      def setRotation(value: `0` | `90` | `180` | `270`): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: `0` | `90` | `180` | `270`): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     }
   }
   
@@ -613,26 +542,20 @@ object display {
   }
   object Insets {
     
-    @scala.inline
-    def apply(bottom: integer, left: integer, right: integer, top: integer): Insets = {
+    inline def apply(bottom: integer, left: integer, right: integer, top: integer): Insets = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Insets]
     }
     
-    @scala.inline
-    implicit class InsetsMutableBuilder[Self <: Insets] (val x: Self) extends AnyVal {
+    extension [Self <: Insets](x: Self) {
       
-      @scala.inline
-      def setBottom(value: integer): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: integer): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: integer): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: integer): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: integer): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: integer): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -651,20 +574,16 @@ object display {
   }
   object MirrorModeInfo {
     
-    @scala.inline
-    def apply(): MirrorModeInfo = {
+    inline def apply(): MirrorModeInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MirrorModeInfo]
     }
     
-    @scala.inline
-    implicit class MirrorModeInfoMutableBuilder[Self <: MirrorModeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MirrorModeInfo](x: Self) {
       
-      @scala.inline
-      def setMode(value: off | normal_ | mixed): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: off | normal_ | mixed): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
@@ -682,32 +601,24 @@ object display {
   }
   object MirrorModeInfoMixed {
     
-    @scala.inline
-    def apply(): MirrorModeInfoMixed = {
+    inline def apply(): MirrorModeInfoMixed = {
       val __obj = js.Dynamic.literal(mode = "mixed")
       __obj.asInstanceOf[MirrorModeInfoMixed]
     }
     
-    @scala.inline
-    implicit class MirrorModeInfoMixedMutableBuilder[Self <: MirrorModeInfoMixed] (val x: Self) extends AnyVal {
+    extension [Self <: MirrorModeInfoMixed](x: Self) {
       
-      @scala.inline
-      def setMirroringDestinationIds(value: js.Array[String]): Self = StObject.set(x, "mirroringDestinationIds", value.asInstanceOf[js.Any])
+      inline def setMirroringDestinationIds(value: js.Array[String]): Self = StObject.set(x, "mirroringDestinationIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirroringDestinationIdsUndefined: Self = StObject.set(x, "mirroringDestinationIds", js.undefined)
+      inline def setMirroringDestinationIdsUndefined: Self = StObject.set(x, "mirroringDestinationIds", js.undefined)
       
-      @scala.inline
-      def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value :_*))
+      inline def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value :_*))
       
-      @scala.inline
-      def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
+      inline def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirroringSourceIdUndefined: Self = StObject.set(x, "mirroringSourceId", js.undefined)
+      inline def setMirroringSourceIdUndefined: Self = StObject.set(x, "mirroringSourceId", js.undefined)
       
-      @scala.inline
-      def setMode(value: mixed): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: mixed): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -724,20 +635,16 @@ object display {
   }
   object Point {
     
-    @scala.inline
-    def apply(x: integer, y: integer): Point = {
+    inline def apply(x: integer, y: integer): Point = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setX(value: integer): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: integer): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: integer): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: integer): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -754,20 +661,16 @@ object display {
   }
   object TouchCalibrationPair {
     
-    @scala.inline
-    def apply(displayPoint: Point, touchPoint: Point): TouchCalibrationPair = {
+    inline def apply(displayPoint: Point, touchPoint: Point): TouchCalibrationPair = {
       val __obj = js.Dynamic.literal(displayPoint = displayPoint.asInstanceOf[js.Any], touchPoint = touchPoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[TouchCalibrationPair]
     }
     
-    @scala.inline
-    implicit class TouchCalibrationPairMutableBuilder[Self <: TouchCalibrationPair] (val x: Self) extends AnyVal {
+    extension [Self <: TouchCalibrationPair](x: Self) {
       
-      @scala.inline
-      def setDisplayPoint(value: Point): Self = StObject.set(x, "displayPoint", value.asInstanceOf[js.Any])
+      inline def setDisplayPoint(value: Point): Self = StObject.set(x, "displayPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchPoint(value: Point): Self = StObject.set(x, "touchPoint", value.asInstanceOf[js.Any])
+      inline def setTouchPoint(value: Point): Self = StObject.set(x, "touchPoint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -790,8 +693,7 @@ object display {
   }
   object TouchCalibrationPairs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       pair1: TouchCalibrationPair,
       pair2: TouchCalibrationPair,
       pair3: TouchCalibrationPair,
@@ -801,20 +703,15 @@ object display {
       __obj.asInstanceOf[TouchCalibrationPairs]
     }
     
-    @scala.inline
-    implicit class TouchCalibrationPairsMutableBuilder[Self <: TouchCalibrationPairs] (val x: Self) extends AnyVal {
+    extension [Self <: TouchCalibrationPairs](x: Self) {
       
-      @scala.inline
-      def setPair1(value: TouchCalibrationPair): Self = StObject.set(x, "pair1", value.asInstanceOf[js.Any])
+      inline def setPair1(value: TouchCalibrationPair): Self = StObject.set(x, "pair1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPair2(value: TouchCalibrationPair): Self = StObject.set(x, "pair2", value.asInstanceOf[js.Any])
+      inline def setPair2(value: TouchCalibrationPair): Self = StObject.set(x, "pair2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPair3(value: TouchCalibrationPair): Self = StObject.set(x, "pair3", value.asInstanceOf[js.Any])
+      inline def setPair3(value: TouchCalibrationPair): Self = StObject.set(x, "pair3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPair4(value: TouchCalibrationPair): Self = StObject.set(x, "pair4", value.asInstanceOf[js.Any])
+      inline def setPair4(value: TouchCalibrationPair): Self = StObject.set(x, "pair4", value.asInstanceOf[js.Any])
     }
   }
 }

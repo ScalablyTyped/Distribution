@@ -23,8 +23,7 @@ trait SetInstanceProtectionQuery extends StObject {
 }
 object SetInstanceProtectionQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoScalingGroupName: ResourceName,
     InstanceIds: InstanceIds,
     ProtectedFromScaleIn: ProtectedFromScaleIn
@@ -33,19 +32,14 @@ object SetInstanceProtectionQuery {
     __obj.asInstanceOf[SetInstanceProtectionQuery]
   }
   
-  @scala.inline
-  implicit class SetInstanceProtectionQueryMutableBuilder[Self <: SetInstanceProtectionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SetInstanceProtectionQuery](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
+    inline def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setProtectedFromScaleIn(value: ProtectedFromScaleIn): Self = StObject.set(x, "ProtectedFromScaleIn", value.asInstanceOf[js.Any])
+    inline def setProtectedFromScaleIn(value: ProtectedFromScaleIn): Self = StObject.set(x, "ProtectedFromScaleIn", value.asInstanceOf[js.Any])
   }
 }

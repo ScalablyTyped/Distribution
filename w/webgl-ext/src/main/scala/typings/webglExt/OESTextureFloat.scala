@@ -10,16 +10,13 @@ trait OESTextureFloat extends StObject {
 }
 object OESTextureFloat {
   
-  @scala.inline
-  def apply(__OES_texture_float: Unit): OESTextureFloat = {
+  inline def apply(__OES_texture_float: Unit): OESTextureFloat = {
     val __obj = js.Dynamic.literal(__OES_texture_float = __OES_texture_float.asInstanceOf[js.Any])
     __obj.asInstanceOf[OESTextureFloat]
   }
   
-  @scala.inline
-  implicit class OESTextureFloatMutableBuilder[Self <: OESTextureFloat] (val x: Self) extends AnyVal {
+  extension [Self <: OESTextureFloat](x: Self) {
     
-    @scala.inline
-    def set__OES_texture_float(value: Unit): Self = StObject.set(x, "__OES_texture_float", value.asInstanceOf[js.Any])
+    inline def set__OES_texture_float(value: Unit): Self = StObject.set(x, "__OES_texture_float", value.asInstanceOf[js.Any])
   }
 }

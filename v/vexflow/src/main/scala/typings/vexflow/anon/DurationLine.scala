@@ -12,22 +12,17 @@ trait DurationLine extends StObject {
 }
 object DurationLine {
   
-  @scala.inline
-  def apply(duration: Double): DurationLine = {
+  inline def apply(duration: Double): DurationLine = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationLine]
   }
   
-  @scala.inline
-  implicit class DurationLineMutableBuilder[Self <: DurationLine] (val x: Self) extends AnyVal {
+  extension [Self <: DurationLine](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

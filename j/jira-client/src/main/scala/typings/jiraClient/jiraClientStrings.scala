@@ -8,26 +8,21 @@ object jiraClientStrings {
   
   @js.native
   sealed trait active extends StObject
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait closed extends StObject
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
   sealed trait `false` extends StObject
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait future extends StObject
-  @scala.inline
-  def future: future = "future".asInstanceOf[future]
+  inline def future: future = "future".asInstanceOf[future]
   
   @js.native
   sealed trait `true` extends StObject
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
 }

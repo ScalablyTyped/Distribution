@@ -10,16 +10,13 @@ trait KnockstrapModalDefaultsAttributes extends StObject {
 }
 object KnockstrapModalDefaultsAttributes {
   
-  @scala.inline
-  def apply(role: String): KnockstrapModalDefaultsAttributes = {
+  inline def apply(role: String): KnockstrapModalDefaultsAttributes = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockstrapModalDefaultsAttributes]
   }
   
-  @scala.inline
-  implicit class KnockstrapModalDefaultsAttributesMutableBuilder[Self <: KnockstrapModalDefaultsAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapModalDefaultsAttributes](x: Self) {
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

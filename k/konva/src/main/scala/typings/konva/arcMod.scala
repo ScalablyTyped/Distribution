@@ -59,29 +59,22 @@ object arcMod {
   }
   object ArcConfig {
     
-    @scala.inline
-    def apply(angle: Double, innerRadius: Double, outerRadius: Double): ArcConfig = {
+    inline def apply(angle: Double, innerRadius: Double, outerRadius: Double): ArcConfig = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], outerRadius = outerRadius.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArcConfig]
     }
     
-    @scala.inline
-    implicit class ArcConfigMutableBuilder[Self <: ArcConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ArcConfig](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+      inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
+      inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
       
-      @scala.inline
-      def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
+      inline def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     }
   }
 }

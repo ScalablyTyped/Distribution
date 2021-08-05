@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSubscription[S, T](config: SubscriptionConfig[S, T]): Subscription[S, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSubscription")(config.asInstanceOf[js.Any]).asInstanceOf[Subscription[S, T]]
+  inline def createSubscription[S, T](config: SubscriptionConfig[S, T]): Subscription[S, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSubscription")(config.asInstanceOf[js.Any]).asInstanceOf[Subscription[S, T]]
   
   type Subscription[S, T] = ComponentClass[SubscriptionProps[S, T], ComponentState]
   
@@ -38,20 +37,16 @@ object mod {
   }
   object SubscriptionConfig {
     
-    @scala.inline
-    def apply[S, T](getCurrentValue: S => T, subscribe: (S, js.Function1[/* newValue */ T, Unit]) => Unsubscribe): SubscriptionConfig[S, T] = {
+    inline def apply[S, T](getCurrentValue: S => T, subscribe: (S, js.Function1[/* newValue */ T, Unit]) => Unsubscribe): SubscriptionConfig[S, T] = {
       val __obj = js.Dynamic.literal(getCurrentValue = js.Any.fromFunction1(getCurrentValue), subscribe = js.Any.fromFunction2(subscribe))
       __obj.asInstanceOf[SubscriptionConfig[S, T]]
     }
     
-    @scala.inline
-    implicit class SubscriptionConfigMutableBuilder[Self <: SubscriptionConfig[?, ?], S, T] (val x: Self & (SubscriptionConfig[S, T])) extends AnyVal {
+    extension [Self <: SubscriptionConfig[?, ?], S, T](x: Self & (SubscriptionConfig[S, T])) {
       
-      @scala.inline
-      def setGetCurrentValue(value: S => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction1(value))
+      inline def setGetCurrentValue(value: S => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscribe(value: (S, js.Function1[/* newValue */ T, Unit]) => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+      inline def setSubscribe(value: (S, js.Function1[/* newValue */ T, Unit]) => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     }
   }
   
@@ -63,20 +58,16 @@ object mod {
   }
   object SubscriptionProps {
     
-    @scala.inline
-    def apply[S, T](children: T => ReactNode, source: S): SubscriptionProps[S, T] = {
+    inline def apply[S, T](children: T => ReactNode, source: S): SubscriptionProps[S, T] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionProps[S, T]]
     }
     
-    @scala.inline
-    implicit class SubscriptionPropsMutableBuilder[Self <: SubscriptionProps[?, ?], S, T] (val x: Self & (SubscriptionProps[S, T])) extends AnyVal {
+    extension [Self <: SubscriptionProps[?, ?], S, T](x: Self & (SubscriptionProps[S, T])) {
       
-      @scala.inline
-      def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: S): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: S): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   

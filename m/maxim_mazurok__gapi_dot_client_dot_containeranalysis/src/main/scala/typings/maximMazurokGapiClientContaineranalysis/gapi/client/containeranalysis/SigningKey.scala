@@ -20,37 +20,27 @@ trait SigningKey extends StObject {
 }
 object SigningKey {
   
-  @scala.inline
-  def apply(): SigningKey = {
+  inline def apply(): SigningKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigningKey]
   }
   
-  @scala.inline
-  implicit class SigningKeyMutableBuilder[Self <: SigningKey] (val x: Self) extends AnyVal {
+  extension [Self <: SigningKey](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setKeyScheme(value: String): Self = StObject.set(x, "keyScheme", value.asInstanceOf[js.Any])
+    inline def setKeyScheme(value: String): Self = StObject.set(x, "keyScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySchemeUndefined: Self = StObject.set(x, "keyScheme", js.undefined)
+    inline def setKeySchemeUndefined: Self = StObject.set(x, "keyScheme", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     
-    @scala.inline
-    def setPublicKeyValue(value: String): Self = StObject.set(x, "publicKeyValue", value.asInstanceOf[js.Any])
+    inline def setPublicKeyValue(value: String): Self = StObject.set(x, "publicKeyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyValueUndefined: Self = StObject.set(x, "publicKeyValue", js.undefined)
+    inline def setPublicKeyValueUndefined: Self = StObject.set(x, "publicKeyValue", js.undefined)
   }
 }

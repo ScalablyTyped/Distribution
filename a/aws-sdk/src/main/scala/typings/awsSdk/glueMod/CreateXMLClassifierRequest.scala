@@ -23,25 +23,19 @@ trait CreateXMLClassifierRequest extends StObject {
 }
 object CreateXMLClassifierRequest {
   
-  @scala.inline
-  def apply(Classification: Classification, Name: NameString): CreateXMLClassifierRequest = {
+  inline def apply(Classification: Classification, Name: NameString): CreateXMLClassifierRequest = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateXMLClassifierRequest]
   }
   
-  @scala.inline
-  implicit class CreateXMLClassifierRequestMutableBuilder[Self <: CreateXMLClassifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateXMLClassifierRequest](x: Self) {
     
-    @scala.inline
-    def setClassification(value: Classification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: Classification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowTag(value: RowTag): Self = StObject.set(x, "RowTag", value.asInstanceOf[js.Any])
+    inline def setRowTag(value: RowTag): Self = StObject.set(x, "RowTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowTagUndefined: Self = StObject.set(x, "RowTag", js.undefined)
+    inline def setRowTagUndefined: Self = StObject.set(x, "RowTag", js.undefined)
   }
 }

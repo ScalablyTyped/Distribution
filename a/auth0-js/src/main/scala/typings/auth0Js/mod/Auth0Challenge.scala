@@ -22,26 +22,20 @@ trait Auth0Challenge
 }
 object Auth0Challenge {
   
-  @scala.inline
-  def apply(image: String, provider: auth0 | recaptcha_v2, required: Boolean): Auth0Challenge = {
+  inline def apply(image: String, provider: auth0 | recaptcha_v2, required: Boolean): Auth0Challenge = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("code")
     __obj.asInstanceOf[Auth0Challenge]
   }
   
-  @scala.inline
-  implicit class Auth0ChallengeMutableBuilder[Self <: Auth0Challenge] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0Challenge](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: auth0 | recaptcha_v2): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: auth0 | recaptcha_v2): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

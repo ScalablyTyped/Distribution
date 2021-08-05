@@ -13,22 +13,17 @@ trait ListVolumeInitiatorsOutput extends StObject {
 }
 object ListVolumeInitiatorsOutput {
   
-  @scala.inline
-  def apply(): ListVolumeInitiatorsOutput = {
+  inline def apply(): ListVolumeInitiatorsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVolumeInitiatorsOutput]
   }
   
-  @scala.inline
-  implicit class ListVolumeInitiatorsOutputMutableBuilder[Self <: ListVolumeInitiatorsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVolumeInitiatorsOutput](x: Self) {
     
-    @scala.inline
-    def setInitiators(value: Initiators): Self = StObject.set(x, "Initiators", value.asInstanceOf[js.Any])
+    inline def setInitiators(value: Initiators): Self = StObject.set(x, "Initiators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorsUndefined: Self = StObject.set(x, "Initiators", js.undefined)
+    inline def setInitiatorsUndefined: Self = StObject.set(x, "Initiators", js.undefined)
     
-    @scala.inline
-    def setInitiatorsVarargs(value: Initiator*): Self = StObject.set(x, "Initiators", js.Array(value :_*))
+    inline def setInitiatorsVarargs(value: Initiator*): Self = StObject.set(x, "Initiators", js.Array(value :_*))
   }
 }

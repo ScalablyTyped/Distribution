@@ -18,22 +18,17 @@ trait DisassociateConfigurationItemsFromApplicationRequest extends StObject {
 }
 object DisassociateConfigurationItemsFromApplicationRequest {
   
-  @scala.inline
-  def apply(applicationConfigurationId: ApplicationId, configurationIds: ConfigurationIdList): DisassociateConfigurationItemsFromApplicationRequest = {
+  inline def apply(applicationConfigurationId: ApplicationId, configurationIds: ConfigurationIdList): DisassociateConfigurationItemsFromApplicationRequest = {
     val __obj = js.Dynamic.literal(applicationConfigurationId = applicationConfigurationId.asInstanceOf[js.Any], configurationIds = configurationIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateConfigurationItemsFromApplicationRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateConfigurationItemsFromApplicationRequestMutableBuilder[Self <: DisassociateConfigurationItemsFromApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateConfigurationItemsFromApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationConfigurationId(value: ApplicationId): Self = StObject.set(x, "applicationConfigurationId", value.asInstanceOf[js.Any])
+    inline def setApplicationConfigurationId(value: ApplicationId): Self = StObject.set(x, "applicationConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIds(value: ConfigurationIdList): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
+    inline def setConfigurationIds(value: ConfigurationIdList): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "configurationIds", js.Array(value :_*))
+    inline def setConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "configurationIds", js.Array(value :_*))
   }
 }

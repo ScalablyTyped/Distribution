@@ -18,8 +18,7 @@ trait ParametersProjectsCreateForRepoEndpoint extends StObject {
 }
 object ParametersProjectsCreateForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ProjectsCreateForRepoEndpoint,
     request: ProjectsCreateForRepoRequestOptions,
     response: OctokitResponse[ProjectsCreateForRepoResponseData]
@@ -28,16 +27,12 @@ object ParametersProjectsCreateForRepoEndpoint {
     __obj.asInstanceOf[ParametersProjectsCreateForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersProjectsCreateForRepoEndpointMutableBuilder[Self <: ParametersProjectsCreateForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersProjectsCreateForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ProjectsCreateForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ProjectsCreateForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ProjectsCreateForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ProjectsCreateForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ProjectsCreateForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ProjectsCreateForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

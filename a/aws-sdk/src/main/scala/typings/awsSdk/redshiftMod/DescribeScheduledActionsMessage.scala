@@ -48,64 +48,45 @@ trait DescribeScheduledActionsMessage extends StObject {
 }
 object DescribeScheduledActionsMessage {
   
-  @scala.inline
-  def apply(): DescribeScheduledActionsMessage = {
+  inline def apply(): DescribeScheduledActionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeScheduledActionsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeScheduledActionsMessageMutableBuilder[Self <: DescribeScheduledActionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScheduledActionsMessage](x: Self) {
     
-    @scala.inline
-    def setActive(value: BooleanOptional): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: BooleanOptional): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setFilters(value: ScheduledActionFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ScheduledActionFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: ScheduledActionFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ScheduledActionFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setScheduledActionName(value: String): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
+    inline def setScheduledActionName(value: String): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionNameUndefined: Self = StObject.set(x, "ScheduledActionName", js.undefined)
+    inline def setScheduledActionNameUndefined: Self = StObject.set(x, "ScheduledActionName", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setTargetActionType(value: ScheduledActionTypeValues): Self = StObject.set(x, "TargetActionType", value.asInstanceOf[js.Any])
+    inline def setTargetActionType(value: ScheduledActionTypeValues): Self = StObject.set(x, "TargetActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetActionTypeUndefined: Self = StObject.set(x, "TargetActionType", js.undefined)
+    inline def setTargetActionTypeUndefined: Self = StObject.set(x, "TargetActionType", js.undefined)
   }
 }

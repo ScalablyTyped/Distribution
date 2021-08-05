@@ -14,22 +14,17 @@ trait HierarchicalDataSource extends StObject {
 }
 object HierarchicalDataSource {
   
-  @scala.inline
-  def apply(dataAt: (js.Object, js.Object) => Unit, dataBind: (js.Object, js.Object) => Unit, root: () => Unit): HierarchicalDataSource = {
+  inline def apply(dataAt: (js.Object, js.Object) => Unit, dataBind: (js.Object, js.Object) => Unit, root: () => Unit): HierarchicalDataSource = {
     val __obj = js.Dynamic.literal(dataAt = js.Any.fromFunction2(dataAt), dataBind = js.Any.fromFunction2(dataBind), root = js.Any.fromFunction0(root))
     __obj.asInstanceOf[HierarchicalDataSource]
   }
   
-  @scala.inline
-  implicit class HierarchicalDataSourceMutableBuilder[Self <: HierarchicalDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: HierarchicalDataSource](x: Self) {
     
-    @scala.inline
-    def setDataAt(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "dataAt", js.Any.fromFunction2(value))
+    inline def setDataAt(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "dataAt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataBind(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "dataBind", js.Any.fromFunction2(value))
+    inline def setDataBind(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "dataBind", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRoot(value: () => Unit): Self = StObject.set(x, "root", js.Any.fromFunction0(value))
+    inline def setRoot(value: () => Unit): Self = StObject.set(x, "root", js.Any.fromFunction0(value))
   }
 }

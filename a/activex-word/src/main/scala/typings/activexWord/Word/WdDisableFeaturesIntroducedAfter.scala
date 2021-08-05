@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdDisableFeaturesIntroducedAfter extends StObject
 object WdDisableFeaturesIntroducedAfter {
   
-  @scala.inline
-  def wd70: `0` = 0.asInstanceOf[`0`]
+  inline def wd70: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wd70FE: `1` = 1.asInstanceOf[`1`]
+  inline def wd70FE: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wd80: `2` = 2.asInstanceOf[`2`]
+  inline def wd80: `2` = 2.asInstanceOf[`2`]
 }

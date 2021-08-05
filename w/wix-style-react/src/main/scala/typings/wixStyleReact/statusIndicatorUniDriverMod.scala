@@ -20,8 +20,7 @@ object statusIndicatorUniDriverMod {
   }
   object StatusIndicatorUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -33,17 +32,13 @@ object statusIndicatorUniDriverMod {
       __obj.asInstanceOf[StatusIndicatorUniDriver]
     }
     
-    @scala.inline
-    implicit class StatusIndicatorUniDriverMutableBuilder[Self <: StatusIndicatorUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: StatusIndicatorUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
+      inline def setGetMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatus(value: () => js.Promise[StatusIndicatorState]): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
+      inline def setGetStatus(value: () => js.Promise[StatusIndicatorState]): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasMessage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasMessage", js.Any.fromFunction0(value))
+      inline def setHasMessage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasMessage", js.Any.fromFunction0(value))
     }
   }
 }

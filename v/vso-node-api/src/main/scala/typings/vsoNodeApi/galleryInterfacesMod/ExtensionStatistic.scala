@@ -12,19 +12,15 @@ trait ExtensionStatistic extends StObject {
 }
 object ExtensionStatistic {
   
-  @scala.inline
-  def apply(statisticName: String, value: Double): ExtensionStatistic = {
+  inline def apply(statisticName: String, value: Double): ExtensionStatistic = {
     val __obj = js.Dynamic.literal(statisticName = statisticName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionStatistic]
   }
   
-  @scala.inline
-  implicit class ExtensionStatisticMutableBuilder[Self <: ExtensionStatistic] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionStatistic](x: Self) {
     
-    @scala.inline
-    def setStatisticName(value: String): Self = StObject.set(x, "statisticName", value.asInstanceOf[js.Any])
+    inline def setStatisticName(value: String): Self = StObject.set(x, "statisticName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

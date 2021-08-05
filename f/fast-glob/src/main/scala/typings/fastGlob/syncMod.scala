@@ -18,7 +18,7 @@ object syncMod {
   trait ProviderSync
     extends typings.fastGlob.providerMod.default[js.Array[EntryItem]] {
     
-    var _reader: typings.fastGlob.readersSyncMod.default = js.native
+    /* protected */ var _reader: typings.fastGlob.readersSyncMod.default = js.native
     
     def api(root: String, task: Task, options: ReaderOptions): js.Array[Entry] = js.native
   }

@@ -14,40 +14,32 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cancel(absintheSocket: AbsintheSocket[js.Object], notifier: Notifier[js.Object, js.Object]): AbsintheSocket[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(absintheSocket.asInstanceOf[js.Any], notifier.asInstanceOf[js.Any])).asInstanceOf[AbsintheSocket[js.Object]]
+  inline def cancel(absintheSocket: AbsintheSocket[js.Object], notifier: Notifier[js.Object, js.Object]): AbsintheSocket[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(absintheSocket.asInstanceOf[js.Any], notifier.asInstanceOf[js.Any])).asInstanceOf[AbsintheSocket[js.Object]]
   
-  @scala.inline
-  def create(socket: Socket): AbsintheSocket[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(socket.asInstanceOf[js.Any]).asInstanceOf[AbsintheSocket[js.Object]]
+  inline def create(socket: Socket): AbsintheSocket[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(socket.asInstanceOf[js.Any]).asInstanceOf[AbsintheSocket[js.Object]]
   
-  @scala.inline
-  def observe[Variables](
+  inline def observe[Variables](
     absintheSocket: AbsintheSocket[js.Object],
     notifier: Notifier[Variables, js.Object],
     observer: Observer[Variables, js.Object]
   ): AbsintheSocket[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("observe")(absintheSocket.asInstanceOf[js.Any], notifier.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[AbsintheSocket[js.Object]]
   
-  @scala.inline
-  def send[Variables](absintheSocket: AbsintheSocket[js.Object], gqlRequest: GqlRequest[Variables]): Notifier[Variables, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(absintheSocket.asInstanceOf[js.Any], gqlRequest.asInstanceOf[js.Any])).asInstanceOf[Notifier[Variables, js.Object]]
+  inline def send[Variables](absintheSocket: AbsintheSocket[js.Object], gqlRequest: GqlRequest[Variables]): Notifier[Variables, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(absintheSocket.asInstanceOf[js.Any], gqlRequest.asInstanceOf[js.Any])).asInstanceOf[Notifier[Variables, js.Object]]
   
-  @scala.inline
-  def toObservable[Variables](absintheSocket: AbsintheSocket[js.Object], notifier: Notifier[Variables, js.Object]): Observer[Variables, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObservable")(absintheSocket.asInstanceOf[js.Any], notifier.asInstanceOf[js.Any])).asInstanceOf[Observer[Variables, js.Object]]
-  @scala.inline
-  def toObservable[Variables](
+  inline def toObservable[Variables](absintheSocket: AbsintheSocket[js.Object], notifier: Notifier[Variables, js.Object]): Observer[Variables, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObservable")(absintheSocket.asInstanceOf[js.Any], notifier.asInstanceOf[js.Any])).asInstanceOf[Observer[Variables, js.Object]]
+  inline def toObservable[Variables](
     absintheSocket: AbsintheSocket[js.Object],
     notifier: Notifier[Variables, js.Object],
     observer: OnError[Variables]
   ): Observer[Variables, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObservable")(absintheSocket.asInstanceOf[js.Any], notifier.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Observer[Variables, js.Object]]
   
-  @scala.inline
-  def unobserve[Variables](
+  inline def unobserve[Variables](
     absintheSocket: AbsintheSocket[js.Object],
     notifier: Notifier[Variables, js.Object],
     observer: Observer[Variables, js.Object]
   ): AbsintheSocket[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("unobserve")(absintheSocket.asInstanceOf[js.Any], notifier.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[AbsintheSocket[js.Object]]
   
-  @scala.inline
-  def unobserveOrCancel[Variables](
+  inline def unobserveOrCancel[Variables](
     absintheSocket: AbsintheSocket[js.Object],
     notifier: Notifier[Variables, js.Object],
     observer: Observer[Variables, js.Object]
@@ -65,8 +57,7 @@ object mod {
   }
   object AbsintheSocket {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       channel: Channel,
       channelJoinCreated: Boolean,
       notifiers: js.Array[Notifier[T, js.Object]],
@@ -76,23 +67,17 @@ object mod {
       __obj.asInstanceOf[AbsintheSocket[T]]
     }
     
-    @scala.inline
-    implicit class AbsintheSocketMutableBuilder[Self <: AbsintheSocket[?], T] (val x: Self & AbsintheSocket[T]) extends AnyVal {
+    extension [Self <: AbsintheSocket[?], T](x: Self & AbsintheSocket[T]) {
       
-      @scala.inline
-      def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelJoinCreated(value: Boolean): Self = StObject.set(x, "channelJoinCreated", value.asInstanceOf[js.Any])
+      inline def setChannelJoinCreated(value: Boolean): Self = StObject.set(x, "channelJoinCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifiers(value: js.Array[Notifier[T, js.Object]]): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
+      inline def setNotifiers(value: js.Array[Notifier[T, js.Object]]): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifiersVarargs(value: (Notifier[T, js.Object])*): Self = StObject.set(x, "notifiers", js.Array(value :_*))
+      inline def setNotifiersVarargs(value: (Notifier[T, js.Object])*): Self = StObject.set(x, "notifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setPhoenixSocket(value: Socket): Self = StObject.set(x, "phoenixSocket", value.asInstanceOf[js.Any])
+      inline def setPhoenixSocket(value: Socket): Self = StObject.set(x, "phoenixSocket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,14 +89,11 @@ object mod {
   trait GqlOperationType extends StObject
   object GqlOperationType {
     
-    @scala.inline
-    def mutation: typings.absintheSocket.absintheSocketStrings.mutation = "mutation".asInstanceOf[typings.absintheSocket.absintheSocketStrings.mutation]
+    inline def mutation: typings.absintheSocket.absintheSocketStrings.mutation = "mutation".asInstanceOf[typings.absintheSocket.absintheSocketStrings.mutation]
     
-    @scala.inline
-    def query: typings.absintheSocket.absintheSocketStrings.query = "query".asInstanceOf[typings.absintheSocket.absintheSocketStrings.query]
+    inline def query: typings.absintheSocket.absintheSocketStrings.query = "query".asInstanceOf[typings.absintheSocket.absintheSocketStrings.query]
     
-    @scala.inline
-    def subscription: typings.absintheSocket.absintheSocketStrings.subscription = "subscription".asInstanceOf[typings.absintheSocket.absintheSocketStrings.subscription]
+    inline def subscription: typings.absintheSocket.absintheSocketStrings.subscription = "subscription".asInstanceOf[typings.absintheSocket.absintheSocketStrings.subscription]
   }
   
   trait GqlRequest[Variables] extends StObject {
@@ -122,23 +104,18 @@ object mod {
   }
   object GqlRequest {
     
-    @scala.inline
-    def apply[Variables](operation: String): GqlRequest[Variables] = {
+    inline def apply[Variables](operation: String): GqlRequest[Variables] = {
       val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
       __obj.asInstanceOf[GqlRequest[Variables]]
     }
     
-    @scala.inline
-    implicit class GqlRequestMutableBuilder[Self <: GqlRequest[?], Variables] (val x: Self & GqlRequest[Variables]) extends AnyVal {
+    extension [Self <: GqlRequest[?], Variables](x: Self & GqlRequest[Variables]) {
       
-      @scala.inline
-      def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -160,8 +137,7 @@ object mod {
   }
   object Notifier {
     
-    @scala.inline
-    def apply[Variables, Result](
+    inline def apply[Variables, Result](
       activeObservers: js.Array[Observer[Variables, Result]],
       canceledObservers: js.Array[Observer[Variables, Result]],
       isActive: Boolean,
@@ -173,38 +149,27 @@ object mod {
       __obj.asInstanceOf[Notifier[Variables, Result]]
     }
     
-    @scala.inline
-    implicit class NotifierMutableBuilder[Self <: Notifier[?, ?], Variables, Result] (val x: Self & (Notifier[Variables, Result])) extends AnyVal {
+    extension [Self <: Notifier[?, ?], Variables, Result](x: Self & (Notifier[Variables, Result])) {
       
-      @scala.inline
-      def setActiveObservers(value: js.Array[Observer[Variables, Result]]): Self = StObject.set(x, "activeObservers", value.asInstanceOf[js.Any])
+      inline def setActiveObservers(value: js.Array[Observer[Variables, Result]]): Self = StObject.set(x, "activeObservers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "activeObservers", js.Array(value :_*))
+      inline def setActiveObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "activeObservers", js.Array(value :_*))
       
-      @scala.inline
-      def setCanceledObservers(value: js.Array[Observer[Variables, Result]]): Self = StObject.set(x, "canceledObservers", value.asInstanceOf[js.Any])
+      inline def setCanceledObservers(value: js.Array[Observer[Variables, Result]]): Self = StObject.set(x, "canceledObservers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanceledObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "canceledObservers", js.Array(value :_*))
+      inline def setCanceledObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "canceledObservers", js.Array(value :_*))
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationType(value: GqlOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+      inline def setOperationType(value: GqlOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: GqlRequest[Variables]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: GqlRequest[Variables]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestStatus(value: RequestStatus): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
+      inline def setRequestStatus(value: RequestStatus): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+      inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionIdUndefined: Self = StObject.set(x, "subscriptionId", js.undefined)
+      inline def setSubscriptionIdUndefined: Self = StObject.set(x, "subscriptionId", js.undefined)
     }
   }
   
@@ -222,44 +187,32 @@ object mod {
   }
   object Observer {
     
-    @scala.inline
-    def apply[Variables, Result](): Observer[Variables, Result] = {
+    inline def apply[Variables, Result](): Observer[Variables, Result] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Observer[Variables, Result]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?, ?], Variables, Result] (val x: Self & (Observer[Variables, Result])) extends AnyVal {
+    extension [Self <: Observer[?, ?], Variables, Result](x: Self & (Observer[Variables, Result])) {
       
-      @scala.inline
-      def setOnAbort(value: /* error */ Error => js.Any): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: /* error */ Error => js.Any): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+      inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: () => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      inline def setOnCancel(value: () => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnResult(value: /* result */ Result => js.Any): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
+      inline def setOnResult(value: /* result */ Result => js.Any): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResultUndefined: Self = StObject.set(x, "onResult", js.undefined)
+      inline def setOnResultUndefined: Self = StObject.set(x, "onResult", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* notifier */ Notifier[Variables, js.Object] => js.Any): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* notifier */ Notifier[Variables, js.Object] => js.Any): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }
   }
   
@@ -273,19 +226,14 @@ object mod {
   trait RequestStatus extends StObject
   object RequestStatus {
     
-    @scala.inline
-    def canceled: typings.absintheSocket.absintheSocketStrings.canceled = "canceled".asInstanceOf[typings.absintheSocket.absintheSocketStrings.canceled]
+    inline def canceled: typings.absintheSocket.absintheSocketStrings.canceled = "canceled".asInstanceOf[typings.absintheSocket.absintheSocketStrings.canceled]
     
-    @scala.inline
-    def canceling: typings.absintheSocket.absintheSocketStrings.canceling = "canceling".asInstanceOf[typings.absintheSocket.absintheSocketStrings.canceling]
+    inline def canceling: typings.absintheSocket.absintheSocketStrings.canceling = "canceling".asInstanceOf[typings.absintheSocket.absintheSocketStrings.canceling]
     
-    @scala.inline
-    def pending: typings.absintheSocket.absintheSocketStrings.pending = "pending".asInstanceOf[typings.absintheSocket.absintheSocketStrings.pending]
+    inline def pending: typings.absintheSocket.absintheSocketStrings.pending = "pending".asInstanceOf[typings.absintheSocket.absintheSocketStrings.pending]
     
-    @scala.inline
-    def sending: typings.absintheSocket.absintheSocketStrings.sending = "sending".asInstanceOf[typings.absintheSocket.absintheSocketStrings.sending]
+    inline def sending: typings.absintheSocket.absintheSocketStrings.sending = "sending".asInstanceOf[typings.absintheSocket.absintheSocketStrings.sending]
     
-    @scala.inline
-    def sent: typings.absintheSocket.absintheSocketStrings.sent = "sent".asInstanceOf[typings.absintheSocket.absintheSocketStrings.sent]
+    inline def sent: typings.absintheSocket.absintheSocketStrings.sent = "sent".asInstanceOf[typings.absintheSocket.absintheSocketStrings.sent]
   }
 }

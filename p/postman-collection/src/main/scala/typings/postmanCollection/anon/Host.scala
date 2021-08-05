@@ -15,25 +15,19 @@ trait Host extends StObject {
 }
 object Host {
   
-  @scala.inline
-  def apply(host: String, path: RegExp, protocols: js.Array[String]): Host = {
+  inline def apply(host: String, path: RegExp, protocols: js.Array[String]): Host = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[Host]
   }
   
-  @scala.inline
-  implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+  extension [Self <: Host](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
   }
 }

@@ -15,10 +15,8 @@ object shredMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def materializeRecords(schema: ParquetSchema, buffer: RowBufferInterface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("materializeRecords")(schema.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def materializeRecords(schema: ParquetSchema, buffer: RowBufferInterface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("materializeRecords")(schema.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def shredRecord(schema: ParquetSchema, record: RowInterface, buffer: RowBufferInterface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shredRecord")(schema.asInstanceOf[js.Any], record.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def shredRecord(schema: ParquetSchema, record: RowInterface, buffer: RowBufferInterface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shredRecord")(schema.asInstanceOf[js.Any], record.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

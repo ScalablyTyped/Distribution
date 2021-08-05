@@ -16,31 +16,23 @@ trait GoogleCloudMlV1GetConfigResponse extends StObject {
 }
 object GoogleCloudMlV1GetConfigResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1GetConfigResponse = {
+  inline def apply(): GoogleCloudMlV1GetConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1GetConfigResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1GetConfigResponseMutableBuilder[Self <: GoogleCloudMlV1GetConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1GetConfigResponse](x: Self) {
     
-    @scala.inline
-    def setConfig(value: GoogleCloudMlV1Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: GoogleCloudMlV1Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountProject(value: String): Self = StObject.set(x, "serviceAccountProject", value.asInstanceOf[js.Any])
+    inline def setServiceAccountProject(value: String): Self = StObject.set(x, "serviceAccountProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountProjectUndefined: Self = StObject.set(x, "serviceAccountProject", js.undefined)
+    inline def setServiceAccountProjectUndefined: Self = StObject.set(x, "serviceAccountProject", js.undefined)
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
   }
 }

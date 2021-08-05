@@ -12,16 +12,13 @@ trait MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs extends StObje
 }
 object MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs {
   
-  @scala.inline
-  def apply(report: MagneticStripeReaderReport): MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs = {
+  inline def apply(report: MagneticStripeReaderReport): MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs = {
     val __obj = js.Dynamic.literal(report = report.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class MagneticStripeReaderVendorSpecificCardDataReceivedEventArgsMutableBuilder[Self <: MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MagneticStripeReaderVendorSpecificCardDataReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReport(value: MagneticStripeReaderReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: MagneticStripeReaderReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
   }
 }

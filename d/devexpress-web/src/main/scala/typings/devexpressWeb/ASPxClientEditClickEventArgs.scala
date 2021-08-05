@@ -23,19 +23,15 @@ trait ASPxClientEditClickEventArgs
 }
 object ASPxClientEditClickEventArgs {
   
-  @scala.inline
-  def apply(htmlElement: js.Any, htmlEvent: js.Any): ASPxClientEditClickEventArgs = {
+  inline def apply(htmlElement: js.Any, htmlEvent: js.Any): ASPxClientEditClickEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientEditClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientEditClickEventArgsMutableBuilder[Self <: ASPxClientEditClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientEditClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait GetResourceDefinitionVersionRequest extends StObject {
 }
 object GetResourceDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(ResourceDefinitionId: string, ResourceDefinitionVersionId: string): GetResourceDefinitionVersionRequest = {
+  inline def apply(ResourceDefinitionId: string, ResourceDefinitionVersionId: string): GetResourceDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(ResourceDefinitionId = ResourceDefinitionId.asInstanceOf[js.Any], ResourceDefinitionVersionId = ResourceDefinitionVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceDefinitionVersionRequestMutableBuilder[Self <: GetResourceDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDefinitionVersionId(value: string): Self = StObject.set(x, "ResourceDefinitionVersionId", value.asInstanceOf[js.Any])
+    inline def setResourceDefinitionVersionId(value: string): Self = StObject.set(x, "ResourceDefinitionVersionId", value.asInstanceOf[js.Any])
   }
 }

@@ -29,31 +29,22 @@ object Privilege {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALTER: `64` = 64.asInstanceOf[`64`]
+    inline def ALTER: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def CREATE: `32` = 32.asInstanceOf[`32`]
+    inline def CREATE: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def DELETE: `8` = 8.asInstanceOf[`8`]
+    inline def DELETE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def DROP: `256` = 256.asInstanceOf[`256`]
+    inline def DROP: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def INSERT: `2` = 2.asInstanceOf[`2`]
+    inline def INSERT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def READ: `16` = 16.asInstanceOf[`16`]
+    inline def READ: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def REFERENCE: `128` = 128.asInstanceOf[`128`]
+    inline def REFERENCE: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def SELECT: `1` = 1.asInstanceOf[`1`]
+    inline def SELECT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UPDATE: `4` = 4.asInstanceOf[`4`]
+    inline def UPDATE: `4` = 4.asInstanceOf[`4`]
   }
 }

@@ -18,25 +18,19 @@ trait RemotePortDetails extends StObject {
 }
 object RemotePortDetails {
   
-  @scala.inline
-  def apply(): RemotePortDetails = {
+  inline def apply(): RemotePortDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemotePortDetails]
   }
   
-  @scala.inline
-  implicit class RemotePortDetailsMutableBuilder[Self <: RemotePortDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RemotePortDetails](x: Self) {
     
-    @scala.inline
-    def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortName(value: String): Self = StObject.set(x, "PortName", value.asInstanceOf[js.Any])
+    inline def setPortName(value: String): Self = StObject.set(x, "PortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNameUndefined: Self = StObject.set(x, "PortName", js.undefined)
+    inline def setPortNameUndefined: Self = StObject.set(x, "PortName", js.undefined)
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

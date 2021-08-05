@@ -18,25 +18,19 @@ trait PlatformProgrammingLanguage extends StObject {
 }
 object PlatformProgrammingLanguage {
   
-  @scala.inline
-  def apply(): PlatformProgrammingLanguage = {
+  inline def apply(): PlatformProgrammingLanguage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlatformProgrammingLanguage]
   }
   
-  @scala.inline
-  implicit class PlatformProgrammingLanguageMutableBuilder[Self <: PlatformProgrammingLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformProgrammingLanguage](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

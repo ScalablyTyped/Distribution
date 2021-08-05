@@ -39,8 +39,7 @@ object World {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(world: typings.phaser.MatterJS.World, body: js.Array[BodyType | CompositeType | ConstraintType]): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def add(world: typings.phaser.MatterJS.World, body: js.Array[BodyType | CompositeType | ConstraintType]): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   /**
     * Add objects or arrays of objects of types: Body, Constraint, Composite
     * @param world
@@ -48,14 +47,10 @@ object World {
     * @returns world
     */
   /* static member */
-  @scala.inline
-  def add(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
-  @scala.inline
-  def add(world: typings.phaser.MatterJS.World, body: CompositeType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
-  @scala.inline
-  def add(world: typings.phaser.MatterJS.World, body: ConstraintType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
-  @scala.inline
-  def add(world: typings.phaser.MatterJS.World, body: typings.phaser.MatterJS.MouseConstraint): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def add(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def add(world: typings.phaser.MatterJS.World, body: CompositeType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def add(world: typings.phaser.MatterJS.World, body: ConstraintType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def add(world: typings.phaser.MatterJS.World, body: typings.phaser.MatterJS.MouseConstraint): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.addBody since World is also a Composite
@@ -65,8 +60,7 @@ object World {
     * @return {world} The original world with the body added
     */
   /* static member */
-  @scala.inline
-  def addBody(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addBody")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def addBody(world: typings.phaser.MatterJS.World, body: BodyType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addBody")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.add since World is also a Composite
@@ -76,8 +70,7 @@ object World {
     * @return {world} The original world with the objects from composite added
     */
   /* static member */
-  @scala.inline
-  def addComposite(world: typings.phaser.MatterJS.World, composite: CompositeType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addComposite")(world.asInstanceOf[js.Any], composite.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def addComposite(world: typings.phaser.MatterJS.World, composite: CompositeType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addComposite")(world.asInstanceOf[js.Any], composite.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.addConstraint since World is also a Composite
@@ -87,8 +80,7 @@ object World {
     * @return {world} The original world with the constraint added
     */
   /* static member */
-  @scala.inline
-  def addConstraint(world: typings.phaser.MatterJS.World, constraint: ConstraintType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addConstraint")(world.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def addConstraint(world: typings.phaser.MatterJS.World, constraint: ConstraintType): typings.phaser.MatterJS.World = (^.asInstanceOf[js.Dynamic].applyDynamic("addConstraint")(world.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.World]
   
   /**
     * An alias for Composite.clear since World is also a Composite
@@ -97,8 +89,7 @@ object World {
     * @param {boolean} keepStatic
     */
   /* static member */
-  @scala.inline
-  def clear(world: typings.phaser.MatterJS.World, keepStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(world.asInstanceOf[js.Any], keepStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def clear(world: typings.phaser.MatterJS.World, keepStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(world.asInstanceOf[js.Any], keepStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new world composite. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -109,6 +100,5 @@ object World {
     * @return {world} A new world
     */
   /* static member */
-  @scala.inline
-  def create(options: IWorldDefinition): typings.phaser.MatterJS.World = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.World]
+  inline def create(options: IWorldDefinition): typings.phaser.MatterJS.World = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.World]
 }

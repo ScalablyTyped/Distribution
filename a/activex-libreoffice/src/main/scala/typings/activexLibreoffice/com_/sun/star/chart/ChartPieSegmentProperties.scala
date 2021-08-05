@@ -37,8 +37,7 @@ trait ChartPieSegmentProperties
      with ChartDataPointProperties
 object ChartPieSegmentProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharBackColor: Color,
     CharBackTransparent: Boolean,

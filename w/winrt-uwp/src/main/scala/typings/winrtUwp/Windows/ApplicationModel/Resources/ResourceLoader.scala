@@ -24,19 +24,15 @@ trait ResourceLoader extends StObject {
 }
 object ResourceLoader {
   
-  @scala.inline
-  def apply(getString: String => String, getStringForUri: Uri => String): ResourceLoader = {
+  inline def apply(getString: String => String, getStringForUri: Uri => String): ResourceLoader = {
     val __obj = js.Dynamic.literal(getString = js.Any.fromFunction1(getString), getStringForUri = js.Any.fromFunction1(getStringForUri))
     __obj.asInstanceOf[ResourceLoader]
   }
   
-  @scala.inline
-  implicit class ResourceLoaderMutableBuilder[Self <: ResourceLoader] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceLoader](x: Self) {
     
-    @scala.inline
-    def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+    inline def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStringForUri(value: Uri => String): Self = StObject.set(x, "getStringForUri", js.Any.fromFunction1(value))
+    inline def setGetStringForUri(value: Uri => String): Self = StObject.set(x, "getStringForUri", js.Any.fromFunction1(value))
   }
 }

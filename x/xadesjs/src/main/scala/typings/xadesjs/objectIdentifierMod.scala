@@ -51,10 +51,8 @@ object objectIdentifierMod {
   trait IdentifierQualifier extends StObject
   object IdentifierQualifier {
     
-    @scala.inline
-    def OIDAsURI: typings.xadesjs.xadesjsStrings.OIDAsURI = "OIDAsURI".asInstanceOf[typings.xadesjs.xadesjsStrings.OIDAsURI]
+    inline def OIDAsURI: typings.xadesjs.xadesjsStrings.OIDAsURI = "OIDAsURI".asInstanceOf[typings.xadesjs.xadesjsStrings.OIDAsURI]
     
-    @scala.inline
-    def OIDAsURN: typings.xadesjs.xadesjsStrings.OIDAsURN = "OIDAsURN".asInstanceOf[typings.xadesjs.xadesjsStrings.OIDAsURN]
+    inline def OIDAsURN: typings.xadesjs.xadesjsStrings.OIDAsURN = "OIDAsURN".asInstanceOf[typings.xadesjs.xadesjsStrings.OIDAsURN]
   }
 }

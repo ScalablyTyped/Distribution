@@ -47,49 +47,35 @@ trait SchemaStoreCluster extends StObject {
 }
 object SchemaStoreCluster {
   
-  @scala.inline
-  def apply(): SchemaStoreCluster = {
+  inline def apply(): SchemaStoreCluster = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStoreCluster]
   }
   
-  @scala.inline
-  implicit class SchemaStoreClusterMutableBuilder[Self <: SchemaStoreCluster] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStoreCluster](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderInPage(value: String): Self = StObject.set(x, "orderInPage", value.asInstanceOf[js.Any])
+    inline def setOrderInPage(value: String): Self = StObject.set(x, "orderInPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderInPageUndefined: Self = StObject.set(x, "orderInPage", js.undefined)
+    inline def setOrderInPageUndefined: Self = StObject.set(x, "orderInPage", js.undefined)
     
-    @scala.inline
-    def setProductId(value: js.Array[String]): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: js.Array[String]): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value :_*))
+    inline def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value :_*))
   }
 }

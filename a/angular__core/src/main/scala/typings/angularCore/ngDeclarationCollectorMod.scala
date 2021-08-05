@@ -23,9 +23,9 @@ object ngDeclarationCollectorMod {
       evaluator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialEvaluator */ js.Any
     ) = this()
     
-    var _visitClassDeclaration: js.Any = js.native
+    /* private */ var _visitClassDeclaration: js.Any = js.native
     
-    var _visitNgModuleDecorator: js.Any = js.native
+    /* private */ var _visitNgModuleDecorator: js.Any = js.native
     
     /** List of resolved directives which are decorated. */
     var decoratedDirectives: js.Array[ClassDeclaration] = js.native
@@ -33,7 +33,7 @@ object ngDeclarationCollectorMod {
     /** List of resolved providers which are decorated. */
     var decoratedProviders: js.Array[ClassDeclaration] = js.native
     
-    var evaluator: js.Any = js.native
+    /* private */ var evaluator: js.Any = js.native
     
     var typeChecker: TypeChecker = js.native
     
@@ -43,19 +43,13 @@ object ngDeclarationCollectorMod {
     def visitNode(node: Node): Unit = js.native
   }
   
-  @scala.inline
-  def getNgClassDecorators(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[NgDecorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNgClassDecorators")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[NgDecorator]]
+  inline def getNgClassDecorators(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[NgDecorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNgClassDecorators")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[NgDecorator]]
   
-  @scala.inline
-  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDirectiveDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDirectiveDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], ngDecorators.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDirectiveDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDirectiveDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], ngDecorators.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasInjectableDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasInjectableDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], ngDecorators.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasInjectableDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasInjectableDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], ngDecorators.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def hasNgDeclarationDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasNgDeclarationDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasNgDeclarationDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasNgDeclarationDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

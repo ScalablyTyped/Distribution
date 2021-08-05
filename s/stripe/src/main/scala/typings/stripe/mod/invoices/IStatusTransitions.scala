@@ -28,37 +28,27 @@ trait IStatusTransitions extends StObject {
 }
 object IStatusTransitions {
   
-  @scala.inline
-  def apply(): IStatusTransitions = {
+  inline def apply(): IStatusTransitions = {
     val __obj = js.Dynamic.literal(finalized_at = null, marked_uncollectible_at = null, paid_at = null, voided_at = null)
     __obj.asInstanceOf[IStatusTransitions]
   }
   
-  @scala.inline
-  implicit class IStatusTransitionsMutableBuilder[Self <: IStatusTransitions] (val x: Self) extends AnyVal {
+  extension [Self <: IStatusTransitions](x: Self) {
     
-    @scala.inline
-    def setFinalized_at(value: Double): Self = StObject.set(x, "finalized_at", value.asInstanceOf[js.Any])
+    inline def setFinalized_at(value: Double): Self = StObject.set(x, "finalized_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalized_atNull: Self = StObject.set(x, "finalized_at", null)
+    inline def setFinalized_atNull: Self = StObject.set(x, "finalized_at", null)
     
-    @scala.inline
-    def setMarked_uncollectible_at(value: Double): Self = StObject.set(x, "marked_uncollectible_at", value.asInstanceOf[js.Any])
+    inline def setMarked_uncollectible_at(value: Double): Self = StObject.set(x, "marked_uncollectible_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarked_uncollectible_atNull: Self = StObject.set(x, "marked_uncollectible_at", null)
+    inline def setMarked_uncollectible_atNull: Self = StObject.set(x, "marked_uncollectible_at", null)
     
-    @scala.inline
-    def setPaid_at(value: Double): Self = StObject.set(x, "paid_at", value.asInstanceOf[js.Any])
+    inline def setPaid_at(value: Double): Self = StObject.set(x, "paid_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaid_atNull: Self = StObject.set(x, "paid_at", null)
+    inline def setPaid_atNull: Self = StObject.set(x, "paid_at", null)
     
-    @scala.inline
-    def setVoided_at(value: Double): Self = StObject.set(x, "voided_at", value.asInstanceOf[js.Any])
+    inline def setVoided_at(value: Double): Self = StObject.set(x, "voided_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoided_atNull: Self = StObject.set(x, "voided_at", null)
+    inline def setVoided_atNull: Self = StObject.set(x, "voided_at", null)
   }
 }

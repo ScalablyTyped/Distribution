@@ -13,19 +13,15 @@ trait BatchDeleteClusterSnapshotsRequest extends StObject {
 }
 object BatchDeleteClusterSnapshotsRequest {
   
-  @scala.inline
-  def apply(Identifiers: DeleteClusterSnapshotMessageList): BatchDeleteClusterSnapshotsRequest = {
+  inline def apply(Identifiers: DeleteClusterSnapshotMessageList): BatchDeleteClusterSnapshotsRequest = {
     val __obj = js.Dynamic.literal(Identifiers = Identifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteClusterSnapshotsRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteClusterSnapshotsRequestMutableBuilder[Self <: BatchDeleteClusterSnapshotsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteClusterSnapshotsRequest](x: Self) {
     
-    @scala.inline
-    def setIdentifiers(value: DeleteClusterSnapshotMessageList): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
+    inline def setIdentifiers(value: DeleteClusterSnapshotMessageList): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifiersVarargs(value: DeleteClusterSnapshotMessage*): Self = StObject.set(x, "Identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: DeleteClusterSnapshotMessage*): Self = StObject.set(x, "Identifiers", js.Array(value :_*))
   }
 }

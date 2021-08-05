@@ -12,17 +12,14 @@ object anon {
   }
   object MatchBare {
     
-    @scala.inline
-    def apply(matchBare: Boolean): MatchBare = {
+    inline def apply(matchBare: Boolean): MatchBare = {
       val __obj = js.Dynamic.literal(matchBare = matchBare.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchBare]
     }
     
-    @scala.inline
-    implicit class MatchBareMutableBuilder[Self <: MatchBare] (val x: Self) extends AnyVal {
+    extension [Self <: MatchBare](x: Self) {
       
-      @scala.inline
-      def setMatchBare(value: Boolean): Self = StObject.set(x, "matchBare", value.asInstanceOf[js.Any])
+      inline def setMatchBare(value: Boolean): Self = StObject.set(x, "matchBare", value.asInstanceOf[js.Any])
     }
   }
 }

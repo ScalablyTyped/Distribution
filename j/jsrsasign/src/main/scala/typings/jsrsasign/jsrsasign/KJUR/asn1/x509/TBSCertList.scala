@@ -86,8 +86,7 @@ trait TBSCertList
 }
 object TBSCertList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRevokedCert: (IntegerParam, StringParam) => Unit,
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
@@ -107,22 +106,16 @@ object TBSCertList {
     __obj.asInstanceOf[TBSCertList]
   }
   
-  @scala.inline
-  implicit class TBSCertListMutableBuilder[Self <: TBSCertList] (val x: Self) extends AnyVal {
+  extension [Self <: TBSCertList](x: Self) {
     
-    @scala.inline
-    def setAddRevokedCert(value: (IntegerParam, StringParam) => Unit): Self = StObject.set(x, "addRevokedCert", js.Any.fromFunction2(value))
+    inline def setAddRevokedCert(value: (IntegerParam, StringParam) => Unit): Self = StObject.set(x, "addRevokedCert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetIssuerByParam(value: StringParam => Unit): Self = StObject.set(x, "setIssuerByParam", js.Any.fromFunction1(value))
+    inline def setSetIssuerByParam(value: StringParam => Unit): Self = StObject.set(x, "setIssuerByParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNextUpdateByParam(value: StringParam => Unit): Self = StObject.set(x, "setNextUpdateByParam", js.Any.fromFunction1(value))
+    inline def setSetNextUpdateByParam(value: StringParam => Unit): Self = StObject.set(x, "setNextUpdateByParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSignatureAlgByParam(value: NameParam => Unit): Self = StObject.set(x, "setSignatureAlgByParam", js.Any.fromFunction1(value))
+    inline def setSetSignatureAlgByParam(value: NameParam => Unit): Self = StObject.set(x, "setSignatureAlgByParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetThisUpdateByParam(value: StringParam => Unit): Self = StObject.set(x, "setThisUpdateByParam", js.Any.fromFunction1(value))
+    inline def setSetThisUpdateByParam(value: StringParam => Unit): Self = StObject.set(x, "setThisUpdateByParam", js.Any.fromFunction1(value))
   }
 }

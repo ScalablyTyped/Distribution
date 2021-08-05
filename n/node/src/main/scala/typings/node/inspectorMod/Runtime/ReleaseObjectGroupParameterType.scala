@@ -13,16 +13,13 @@ trait ReleaseObjectGroupParameterType extends StObject {
 }
 object ReleaseObjectGroupParameterType {
   
-  @scala.inline
-  def apply(objectGroup: String): ReleaseObjectGroupParameterType = {
+  inline def apply(objectGroup: String): ReleaseObjectGroupParameterType = {
     val __obj = js.Dynamic.literal(objectGroup = objectGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseObjectGroupParameterType]
   }
   
-  @scala.inline
-  implicit class ReleaseObjectGroupParameterTypeMutableBuilder[Self <: ReleaseObjectGroupParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseObjectGroupParameterType](x: Self) {
     
-    @scala.inline
-    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
+    inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
   }
 }

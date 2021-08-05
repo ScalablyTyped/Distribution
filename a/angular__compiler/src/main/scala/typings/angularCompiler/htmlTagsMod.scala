@@ -23,7 +23,7 @@ object htmlTagsMod {
     /* CompleteClass */
     var canSelfClose: Boolean = js.native
     
-    var closedByChildren: js.Any = js.native
+    /* private */ var closedByChildren: js.Any = js.native
     
     /* CompleteClass */
     var closedByParent: Boolean = js.native
@@ -47,6 +47,5 @@ object htmlTagsMod {
     var preventNamespaceInheritance: Boolean = js.native
   }
   
-  @scala.inline
-  def getHtmlTagDefinition(tagName: String): HtmlTagDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("getHtmlTagDefinition")(tagName.asInstanceOf[js.Any]).asInstanceOf[HtmlTagDefinition]
+  inline def getHtmlTagDefinition(tagName: String): HtmlTagDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("getHtmlTagDefinition")(tagName.asInstanceOf[js.Any]).asInstanceOf[HtmlTagDefinition]
 }

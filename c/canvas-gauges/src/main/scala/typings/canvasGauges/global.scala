@@ -56,8 +56,7 @@ object global {
       @JSGlobal("CanvasGauges.Animation.rules")
       @js.native
       def rules: typings.canvasGauges.CanvasGauges.rules = js.native
-      @scala.inline
-      def rules_=(x: rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
+      inline def rules_=(x: rules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rules")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("CanvasGauges.BaseGauge")
@@ -74,14 +73,11 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def ensureValue(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureValue")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+      inline def ensureValue(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureValue")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
       
-      @scala.inline
-      def fromElement(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def fromElement(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def initialize(`type`: String, options: typings.canvasGauges.CanvasGauges.GenericOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def initialize(`type`: String, options: typings.canvasGauges.CanvasGauges.GenericOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @JSGlobal("CanvasGauges.BaseGauge.version")
       @js.native
@@ -102,17 +98,13 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def domReady(handler: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("domReady")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def domReady(handler: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("domReady")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def parse(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def parse(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def toAttributeName(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAttributeName")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def toAttributeName(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAttributeName")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @scala.inline
-      def toDashed(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDashed")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def toDashed(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDashed")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     @JSGlobal("CanvasGauges.GenericOptions")
@@ -206,11 +198,9 @@ object global {
       @JSGlobal("CanvasGauges.SmartCanvas.collection")
       @js.native
       def collection: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas] = js.native
-      @scala.inline
-      def collection_=(x: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collection")(x.asInstanceOf[js.Any])
+      inline def collection_=(x: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collection")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def redraw(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("redraw")().asInstanceOf[js.Any]
+      inline def redraw(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("redraw")().asInstanceOf[js.Any]
     }
   }
 }

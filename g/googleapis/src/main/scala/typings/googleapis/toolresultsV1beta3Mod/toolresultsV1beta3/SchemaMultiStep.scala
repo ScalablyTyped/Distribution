@@ -27,31 +27,23 @@ trait SchemaMultiStep extends StObject {
 }
 object SchemaMultiStep {
   
-  @scala.inline
-  def apply(): SchemaMultiStep = {
+  inline def apply(): SchemaMultiStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMultiStep]
   }
   
-  @scala.inline
-  implicit class SchemaMultiStepMutableBuilder[Self <: SchemaMultiStep] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMultiStep](x: Self) {
     
-    @scala.inline
-    def setMultistepNumber(value: Double): Self = StObject.set(x, "multistepNumber", value.asInstanceOf[js.Any])
+    inline def setMultistepNumber(value: Double): Self = StObject.set(x, "multistepNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultistepNumberUndefined: Self = StObject.set(x, "multistepNumber", js.undefined)
+    inline def setMultistepNumberUndefined: Self = StObject.set(x, "multistepNumber", js.undefined)
     
-    @scala.inline
-    def setPrimaryStep(value: SchemaPrimaryStep): Self = StObject.set(x, "primaryStep", value.asInstanceOf[js.Any])
+    inline def setPrimaryStep(value: SchemaPrimaryStep): Self = StObject.set(x, "primaryStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryStepId(value: String): Self = StObject.set(x, "primaryStepId", value.asInstanceOf[js.Any])
+    inline def setPrimaryStepId(value: String): Self = StObject.set(x, "primaryStepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryStepIdUndefined: Self = StObject.set(x, "primaryStepId", js.undefined)
+    inline def setPrimaryStepIdUndefined: Self = StObject.set(x, "primaryStepId", js.undefined)
     
-    @scala.inline
-    def setPrimaryStepUndefined: Self = StObject.set(x, "primaryStep", js.undefined)
+    inline def setPrimaryStepUndefined: Self = StObject.set(x, "primaryStep", js.undefined)
   }
 }

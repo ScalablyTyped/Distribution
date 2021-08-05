@@ -8,11 +8,9 @@ object passportHttpBearerStrings {
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait `set-cookie` extends StObject
-  @scala.inline
-  def `set-cookie`: `set-cookie` = "set-cookie".asInstanceOf[`set-cookie`]
+  inline def `set-cookie`: `set-cookie` = "set-cookie".asInstanceOf[`set-cookie`]
 }

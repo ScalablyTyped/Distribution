@@ -13,16 +13,13 @@ trait DeleteTrafficPolicyInstanceRequest extends StObject {
 }
 object DeleteTrafficPolicyInstanceRequest {
   
-  @scala.inline
-  def apply(Id: TrafficPolicyInstanceId): DeleteTrafficPolicyInstanceRequest = {
+  inline def apply(Id: TrafficPolicyInstanceId): DeleteTrafficPolicyInstanceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrafficPolicyInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTrafficPolicyInstanceRequestMutableBuilder[Self <: DeleteTrafficPolicyInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTrafficPolicyInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

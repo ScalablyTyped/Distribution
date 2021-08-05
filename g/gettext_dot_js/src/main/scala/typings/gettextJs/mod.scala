@@ -54,38 +54,28 @@ object mod {
   }
   object GettextOptions {
     
-    @scala.inline
-    def apply(): GettextOptions = {
+    inline def apply(): GettextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GettextOptions]
     }
     
-    @scala.inline
-    implicit class GettextOptionsMutableBuilder[Self <: GettextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GettextOptions](x: Self) {
       
-      @scala.inline
-      def setCtxt_delimiter(value: String): Self = StObject.set(x, "ctxt_delimiter", value.asInstanceOf[js.Any])
+      inline def setCtxt_delimiter(value: String): Self = StObject.set(x, "ctxt_delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtxt_delimiterUndefined: Self = StObject.set(x, "ctxt_delimiter", js.undefined)
+      inline def setCtxt_delimiterUndefined: Self = StObject.set(x, "ctxt_delimiter", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setPlural_func(value: /* n */ Double => Double): Self = StObject.set(x, "plural_func", js.Any.fromFunction1(value))
+      inline def setPlural_func(value: /* n */ Double => Double): Self = StObject.set(x, "plural_func", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlural_funcUndefined: Self = StObject.set(x, "plural_func", js.undefined)
+      inline def setPlural_funcUndefined: Self = StObject.set(x, "plural_func", js.undefined)
     }
   }
   
@@ -100,18 +90,15 @@ object mod {
   }
   object JsonData {
     
-    @scala.inline
-    def apply(_empty: JsonDataHeader): JsonData = {
+    inline def apply(_empty: JsonDataHeader): JsonData = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("")(_empty.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonData]
     }
     
-    @scala.inline
-    implicit class JsonDataMutableBuilder[Self <: JsonData] (val x: Self) extends AnyVal {
+    extension [Self <: JsonData](x: Self) {
       
-      @scala.inline
-      def set_empty(value: JsonDataHeader): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
+      inline def set_empty(value: JsonDataHeader): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,21 +110,17 @@ object mod {
   }
   object JsonDataHeader {
     
-    @scala.inline
-    def apply(language: String, `plural-forms`: String): JsonDataHeader = {
+    inline def apply(language: String, `plural-forms`: String): JsonDataHeader = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
       __obj.updateDynamic("plural-forms")(`plural-forms`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonDataHeader]
     }
     
-    @scala.inline
-    implicit class JsonDataHeaderMutableBuilder[Self <: JsonDataHeader] (val x: Self) extends AnyVal {
+    extension [Self <: JsonDataHeader](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPlural-forms`(value: String): Self = StObject.set(x, "plural-forms", value.asInstanceOf[js.Any])
+      inline def `setPlural-forms`(value: String): Self = StObject.set(x, "plural-forms", value.asInstanceOf[js.Any])
     }
   }
   

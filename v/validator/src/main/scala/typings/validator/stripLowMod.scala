@@ -16,8 +16,6 @@ object stripLowMod {
     *
     * @param [keep_new_lines=false] - if `true`, newline characters are preserved (`\n` and `\r`, hex `0xA` and `0xD`).
     */
-  @scala.inline
-  def default(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(input: String, keep_new_lines: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], keep_new_lines.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(input: String, keep_new_lines: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], keep_new_lines.asInstanceOf[js.Any])).asInstanceOf[String]
 }

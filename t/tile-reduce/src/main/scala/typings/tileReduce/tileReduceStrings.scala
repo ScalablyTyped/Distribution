@@ -11,27 +11,23 @@ object tileReduceStrings {
   sealed trait end
     extends StObject
        with Types
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait map
     extends StObject
        with Types
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
+  inline def map: map = "map".asInstanceOf[map]
   
   @js.native
   sealed trait reduce
     extends StObject
        with Types
-  @scala.inline
-  def reduce: reduce = "reduce".asInstanceOf[reduce]
+  inline def reduce: reduce = "reduce".asInstanceOf[reduce]
   
   @js.native
   sealed trait start
     extends StObject
        with Types
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
 }

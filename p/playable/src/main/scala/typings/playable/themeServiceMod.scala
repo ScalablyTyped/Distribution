@@ -18,7 +18,7 @@ object themeServiceMod {
        with ThemeService {
     def this(hasThemeConfig: ThemeConfig) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _styleSheet: js.Any = js.native
     
     /* CompleteClass */
@@ -45,15 +45,13 @@ object themeServiceMod {
     @JSImport("playable/dist/src/modules/ui/core/theme/theme-service", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/core/theme/theme-service", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   object DEFAULT_THEME_CONFIG {
@@ -65,34 +63,30 @@ object themeServiceMod {
     @JSImport("playable/dist/src/modules/ui/core/theme/theme-service", "DEFAULT_THEME_CONFIG.color")
     @js.native
     def color: String = js.native
-    @scala.inline
-    def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+    inline def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/core/theme/theme-service", "DEFAULT_THEME_CONFIG.liveColor")
     @js.native
     def liveColor: String = js.native
-    @scala.inline
-    def liveColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liveColor")(x.asInstanceOf[js.Any])
+    inline def liveColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liveColor")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/core/theme/theme-service", "DEFAULT_THEME_CONFIG.progressColor")
     @js.native
     def progressColor: String = js.native
-    @scala.inline
-    def progressColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressColor")(x.asInstanceOf[js.Any])
+    inline def progressColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("progressColor")(x.asInstanceOf[js.Any])
   }
   
   trait ThemeService
     extends StObject
        with IThemeService {
     
-    var _styleSheet: js.Any
+    /* private */ var _styleSheet: js.Any
     
     def get(module: js.Any): IStyles
   }
   object ThemeService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _styleSheet: js.Any,
       destroy: () => Unit,
       get: js.Any => IStyles,
@@ -103,14 +97,11 @@ object themeServiceMod {
       __obj.asInstanceOf[ThemeService]
     }
     
-    @scala.inline
-    implicit class ThemeServiceMutableBuilder[Self <: ThemeService] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeService](x: Self) {
       
-      @scala.inline
-      def setGet(value: js.Any => IStyles): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Any => IStyles): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_styleSheet(value: js.Any): Self = StObject.set(x, "_styleSheet", value.asInstanceOf[js.Any])
+      inline def set_styleSheet(value: js.Any): Self = StObject.set(x, "_styleSheet", value.asInstanceOf[js.Any])
     }
   }
 }

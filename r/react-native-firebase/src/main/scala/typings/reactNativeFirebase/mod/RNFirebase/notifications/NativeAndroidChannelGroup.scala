@@ -18,8 +18,7 @@ trait NativeAndroidChannelGroup extends StObject {
 }
 object NativeAndroidChannelGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channels: Unit | js.Array[NativeAndroidChannel],
     description: String | Unit,
     groupId: String,
@@ -29,22 +28,16 @@ object NativeAndroidChannelGroup {
     __obj.asInstanceOf[NativeAndroidChannelGroup]
   }
   
-  @scala.inline
-  implicit class NativeAndroidChannelGroupMutableBuilder[Self <: NativeAndroidChannelGroup] (val x: Self) extends AnyVal {
+  extension [Self <: NativeAndroidChannelGroup](x: Self) {
     
-    @scala.inline
-    def setChannels(value: Unit | js.Array[NativeAndroidChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: Unit | js.Array[NativeAndroidChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsVarargs(value: NativeAndroidChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: NativeAndroidChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String | Unit): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String | Unit): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

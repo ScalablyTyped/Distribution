@@ -48,55 +48,39 @@ trait ElementDefinitionSlicing
 }
 object ElementDefinitionSlicing {
   
-  @scala.inline
-  def apply(rules: code): ElementDefinitionSlicing = {
+  inline def apply(rules: code): ElementDefinitionSlicing = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionSlicing]
   }
   
-  @scala.inline
-  implicit class ElementDefinitionSlicingMutableBuilder[Self <: ElementDefinitionSlicing] (val x: Self) extends AnyVal {
+  extension [Self <: ElementDefinitionSlicing](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDiscriminator(value: js.Array[ElementDefinitionSlicingDiscriminator]): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
+    inline def setDiscriminator(value: js.Array[ElementDefinitionSlicingDiscriminator]): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
+    inline def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
     
-    @scala.inline
-    def setDiscriminatorVarargs(value: ElementDefinitionSlicingDiscriminator*): Self = StObject.set(x, "discriminator", js.Array(value :_*))
+    inline def setDiscriminatorVarargs(value: ElementDefinitionSlicingDiscriminator*): Self = StObject.set(x, "discriminator", js.Array(value :_*))
     
-    @scala.inline
-    def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+    inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
+    inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
     
-    @scala.inline
-    def setRules(value: code): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: code): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_ordered(value: Element): Self = StObject.set(x, "_ordered", value.asInstanceOf[js.Any])
+    inline def set_ordered(value: Element): Self = StObject.set(x, "_ordered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_orderedUndefined: Self = StObject.set(x, "_ordered", js.undefined)
+    inline def set_orderedUndefined: Self = StObject.set(x, "_ordered", js.undefined)
     
-    @scala.inline
-    def set_rules(value: Element): Self = StObject.set(x, "_rules", value.asInstanceOf[js.Any])
+    inline def set_rules(value: Element): Self = StObject.set(x, "_rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rulesUndefined: Self = StObject.set(x, "_rules", js.undefined)
+    inline def set_rulesUndefined: Self = StObject.set(x, "_rules", js.undefined)
   }
 }

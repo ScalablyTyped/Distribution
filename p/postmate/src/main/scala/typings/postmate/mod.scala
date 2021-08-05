@@ -51,8 +51,7 @@ object mod {
   @JSImport("postmate", "Promise")
   @js.native
   def Promise: js.Promise[js.Any] = js.native
-  @scala.inline
-  def Promise_=(x: js.Promise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+  inline def Promise_=(x: js.Promise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
   
   /**
     * Set to true to enable logging of additional information. Default: false
@@ -61,8 +60,7 @@ object mod {
   @JSImport("postmate", "debug")
   @js.native
   def debug: Boolean = js.native
-  @scala.inline
-  def debug_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+  inline def debug_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
   
   /**
     * Composes an API to be used by the child
@@ -156,47 +154,34 @@ object mod {
   }
   object PostmateOptions {
     
-    @scala.inline
-    def apply(url: String): PostmateOptions = {
+    inline def apply(url: String): PostmateOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostmateOptions]
     }
     
-    @scala.inline
-    implicit class PostmateOptionsMutableBuilder[Self <: PostmateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostmateOptions](x: Self) {
       
-      @scala.inline
-      def setClassListArray(value: js.Array[String]): Self = StObject.set(x, "classListArray", value.asInstanceOf[js.Any])
+      inline def setClassListArray(value: js.Array[String]): Self = StObject.set(x, "classListArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassListArrayUndefined: Self = StObject.set(x, "classListArray", js.undefined)
+      inline def setClassListArrayUndefined: Self = StObject.set(x, "classListArray", js.undefined)
       
-      @scala.inline
-      def setClassListArrayVarargs(value: String*): Self = StObject.set(x, "classListArray", js.Array(value :_*))
+      inline def setClassListArrayVarargs(value: String*): Self = StObject.set(x, "classListArray", js.Array(value :_*))
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

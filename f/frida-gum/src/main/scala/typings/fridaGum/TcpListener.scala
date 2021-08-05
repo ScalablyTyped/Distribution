@@ -16,16 +16,13 @@ trait TcpListener
 }
 object TcpListener {
   
-  @scala.inline
-  def apply(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], port: Double): TcpListener = {
+  inline def apply(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit], port: Double): TcpListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close), port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpListener]
   }
   
-  @scala.inline
-  implicit class TcpListenerMutableBuilder[Self <: TcpListener] (val x: Self) extends AnyVal {
+  extension [Self <: TcpListener](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

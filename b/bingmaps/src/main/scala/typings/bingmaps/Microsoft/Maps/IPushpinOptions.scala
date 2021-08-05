@@ -52,79 +52,55 @@ trait IPushpinOptions
 }
 object IPushpinOptions {
   
-  @scala.inline
-  def apply(): IPushpinOptions = {
+  inline def apply(): IPushpinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPushpinOptions]
   }
   
-  @scala.inline
-  implicit class IPushpinOptionsMutableBuilder[Self <: IPushpinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPushpinOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setColor(value: String | Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String | Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    @scala.inline
-    def setEnableClickedStyle(value: Boolean): Self = StObject.set(x, "enableClickedStyle", value.asInstanceOf[js.Any])
+    inline def setEnableClickedStyle(value: Boolean): Self = StObject.set(x, "enableClickedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableClickedStyleUndefined: Self = StObject.set(x, "enableClickedStyle", js.undefined)
+    inline def setEnableClickedStyleUndefined: Self = StObject.set(x, "enableClickedStyle", js.undefined)
     
-    @scala.inline
-    def setEnableHoverStyle(value: Boolean): Self = StObject.set(x, "enableHoverStyle", value.asInstanceOf[js.Any])
+    inline def setEnableHoverStyle(value: Boolean): Self = StObject.set(x, "enableHoverStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHoverStyleUndefined: Self = StObject.set(x, "enableHoverStyle", js.undefined)
+    inline def setEnableHoverStyleUndefined: Self = StObject.set(x, "enableHoverStyle", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setRoundClickableArea(value: Boolean): Self = StObject.set(x, "roundClickableArea", value.asInstanceOf[js.Any])
+    inline def setRoundClickableArea(value: Boolean): Self = StObject.set(x, "roundClickableArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundClickableAreaUndefined: Self = StObject.set(x, "roundClickableArea", js.undefined)
+    inline def setRoundClickableAreaUndefined: Self = StObject.set(x, "roundClickableArea", js.undefined)
     
-    @scala.inline
-    def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+    inline def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
+    inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOffset(value: Point): Self = StObject.set(x, "textOffset", value.asInstanceOf[js.Any])
+    inline def setTextOffset(value: Point): Self = StObject.set(x, "textOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOffsetUndefined: Self = StObject.set(x, "textOffset", js.undefined)
+    inline def setTextOffsetUndefined: Self = StObject.set(x, "textOffset", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -24,25 +24,19 @@ trait SearchBarDefault
 }
 object SearchBarDefault {
   
-  @scala.inline
-  def apply(): SearchBarDefault = {
+  inline def apply(): SearchBarDefault = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBarDefault]
   }
   
-  @scala.inline
-  implicit class SearchBarDefaultMutableBuilder[Self <: SearchBarDefault] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBarDefault](x: Self) {
     
-    @scala.inline
-    def setLightTheme(value: Boolean): Self = StObject.set(x, "lightTheme", value.asInstanceOf[js.Any])
+    inline def setLightTheme(value: Boolean): Self = StObject.set(x, "lightTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightThemeUndefined: Self = StObject.set(x, "lightTheme", js.undefined)
+    inline def setLightThemeUndefined: Self = StObject.set(x, "lightTheme", js.undefined)
     
-    @scala.inline
-    def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
   }
 }

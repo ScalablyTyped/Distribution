@@ -10,16 +10,13 @@ trait Confirm extends StObject {
 }
 object Confirm {
   
-  @scala.inline
-  def apply(confirm: Boolean): Confirm = {
+  inline def apply(confirm: Boolean): Confirm = {
     val __obj = js.Dynamic.literal(confirm = confirm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Confirm]
   }
   
-  @scala.inline
-  implicit class ConfirmMutableBuilder[Self <: Confirm] (val x: Self) extends AnyVal {
+  extension [Self <: Confirm](x: Self) {
     
-    @scala.inline
-    def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+    inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
   }
 }

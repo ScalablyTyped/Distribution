@@ -14,28 +14,21 @@ trait DocumentTransform extends StObject {
 }
 object DocumentTransform {
   
-  @scala.inline
-  def apply(): DocumentTransform = {
+  inline def apply(): DocumentTransform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentTransform]
   }
   
-  @scala.inline
-  implicit class DocumentTransformMutableBuilder[Self <: DocumentTransform] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentTransform](x: Self) {
     
-    @scala.inline
-    def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setFieldTransforms(value: js.Array[FieldTransform]): Self = StObject.set(x, "fieldTransforms", value.asInstanceOf[js.Any])
+    inline def setFieldTransforms(value: js.Array[FieldTransform]): Self = StObject.set(x, "fieldTransforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransformsUndefined: Self = StObject.set(x, "fieldTransforms", js.undefined)
+    inline def setFieldTransformsUndefined: Self = StObject.set(x, "fieldTransforms", js.undefined)
     
-    @scala.inline
-    def setFieldTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "fieldTransforms", js.Array(value :_*))
+    inline def setFieldTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "fieldTransforms", js.Array(value :_*))
   }
 }

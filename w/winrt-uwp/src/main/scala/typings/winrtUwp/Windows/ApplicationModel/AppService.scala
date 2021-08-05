@@ -127,17 +127,14 @@ object AppService {
   }
   object AppServiceClosedEventArgs {
     
-    @scala.inline
-    def apply(status: AppServiceClosedStatus): AppServiceClosedEventArgs = {
+    inline def apply(status: AppServiceClosedStatus): AppServiceClosedEventArgs = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppServiceClosedEventArgs]
     }
     
-    @scala.inline
-    implicit class AppServiceClosedEventArgsMutableBuilder[Self <: AppServiceClosedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AppServiceClosedEventArgs](x: Self) {
       
-      @scala.inline
-      def setStatus(value: AppServiceClosedStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: AppServiceClosedStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,17 +209,14 @@ object AppService {
   }
   object AppServiceDeferral {
     
-    @scala.inline
-    def apply(complete: () => Unit): AppServiceDeferral = {
+    inline def apply(complete: () => Unit): AppServiceDeferral = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
       __obj.asInstanceOf[AppServiceDeferral]
     }
     
-    @scala.inline
-    implicit class AppServiceDeferralMutableBuilder[Self <: AppServiceDeferral] (val x: Self) extends AnyVal {
+    extension [Self <: AppServiceDeferral](x: Self) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
   }
   
@@ -241,8 +235,7 @@ object AppService {
   }
   object AppServiceRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       message: ValueSet,
       sendResponseAsync: ValueSet => IPromiseWithIAsyncOperation[AppServiceResponseStatus]
     ): AppServiceRequest = {
@@ -250,14 +243,11 @@ object AppService {
       __obj.asInstanceOf[AppServiceRequest]
     }
     
-    @scala.inline
-    implicit class AppServiceRequestMutableBuilder[Self <: AppServiceRequest] (val x: Self) extends AnyVal {
+    extension [Self <: AppServiceRequest](x: Self) {
       
-      @scala.inline
-      def setMessage(value: ValueSet): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ValueSet): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendResponseAsync(value: ValueSet => IPromiseWithIAsyncOperation[AppServiceResponseStatus]): Self = StObject.set(x, "sendResponseAsync", js.Any.fromFunction1(value))
+      inline def setSendResponseAsync(value: ValueSet => IPromiseWithIAsyncOperation[AppServiceResponseStatus]): Self = StObject.set(x, "sendResponseAsync", js.Any.fromFunction1(value))
     }
   }
   
@@ -275,20 +265,16 @@ object AppService {
   }
   object AppServiceRequestReceivedEventArgs {
     
-    @scala.inline
-    def apply(getDeferral: () => AppServiceDeferral, request: AppServiceRequest): AppServiceRequestReceivedEventArgs = {
+    inline def apply(getDeferral: () => AppServiceDeferral, request: AppServiceRequest): AppServiceRequestReceivedEventArgs = {
       val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppServiceRequestReceivedEventArgs]
     }
     
-    @scala.inline
-    implicit class AppServiceRequestReceivedEventArgsMutableBuilder[Self <: AppServiceRequestReceivedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AppServiceRequestReceivedEventArgs](x: Self) {
       
-      @scala.inline
-      def setGetDeferral(value: () => AppServiceDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+      inline def setGetDeferral(value: () => AppServiceDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequest(value: AppServiceRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: AppServiceRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -303,20 +289,16 @@ object AppService {
   }
   object AppServiceResponse {
     
-    @scala.inline
-    def apply(message: ValueSet, status: AppServiceResponseStatus): AppServiceResponse = {
+    inline def apply(message: ValueSet, status: AppServiceResponseStatus): AppServiceResponse = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppServiceResponse]
     }
     
-    @scala.inline
-    implicit class AppServiceResponseMutableBuilder[Self <: AppServiceResponse] (val x: Self) extends AnyVal {
+    extension [Self <: AppServiceResponse](x: Self) {
       
-      @scala.inline
-      def setMessage(value: ValueSet): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ValueSet): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: AppServiceResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: AppServiceResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,23 +316,18 @@ object AppService {
   }
   object AppServiceTriggerDetails {
     
-    @scala.inline
-    def apply(appServiceConnection: AppServiceConnection, callerPackageFamilyName: String, name: String): AppServiceTriggerDetails = {
+    inline def apply(appServiceConnection: AppServiceConnection, callerPackageFamilyName: String, name: String): AppServiceTriggerDetails = {
       val __obj = js.Dynamic.literal(appServiceConnection = appServiceConnection.asInstanceOf[js.Any], callerPackageFamilyName = callerPackageFamilyName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppServiceTriggerDetails]
     }
     
-    @scala.inline
-    implicit class AppServiceTriggerDetailsMutableBuilder[Self <: AppServiceTriggerDetails] (val x: Self) extends AnyVal {
+    extension [Self <: AppServiceTriggerDetails](x: Self) {
       
-      @scala.inline
-      def setAppServiceConnection(value: AppServiceConnection): Self = StObject.set(x, "appServiceConnection", value.asInstanceOf[js.Any])
+      inline def setAppServiceConnection(value: AppServiceConnection): Self = StObject.set(x, "appServiceConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
+      inline def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

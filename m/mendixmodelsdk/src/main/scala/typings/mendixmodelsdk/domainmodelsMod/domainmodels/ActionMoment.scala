@@ -21,13 +21,11 @@ object ActionMoment {
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ActionMoment.After")
   @js.native
   def After: ActionMoment = js.native
-  @scala.inline
-  def After_=(x: ActionMoment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("After")(x.asInstanceOf[js.Any])
+  inline def After_=(x: ActionMoment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("After")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ActionMoment.Before")
   @js.native
   def Before: ActionMoment = js.native
-  @scala.inline
-  def Before_=(x: ActionMoment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Before")(x.asInstanceOf[js.Any])
+  inline def Before_=(x: ActionMoment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Before")(x.asInstanceOf[js.Any])
 }

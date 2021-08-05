@@ -16,22 +16,17 @@ trait CloudFrontEventreadonlyre extends StObject {
 }
 object CloudFrontEventreadonlyre {
   
-  @scala.inline
-  def apply(config: DistributionDomainName, request: PickCloudFrontRequestExcl, response: CloudFrontResponse): CloudFrontEventreadonlyre = {
+  inline def apply(config: DistributionDomainName, request: PickCloudFrontRequestExcl, response: CloudFrontResponse): CloudFrontEventreadonlyre = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFrontEventreadonlyre]
   }
   
-  @scala.inline
-  implicit class CloudFrontEventreadonlyreMutableBuilder[Self <: CloudFrontEventreadonlyre] (val x: Self) extends AnyVal {
+  extension [Self <: CloudFrontEventreadonlyre](x: Self) {
     
-    @scala.inline
-    def setConfig(value: DistributionDomainName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: DistributionDomainName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: PickCloudFrontRequestExcl): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: PickCloudFrontRequestExcl): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: CloudFrontResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: CloudFrontResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

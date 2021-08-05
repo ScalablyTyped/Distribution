@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Parameter")
 @js.native
-class Parameter protected ()
+/* private */ class Parameter ()
   extends StObject
      with typings.activexExcel.Excel.Parameter {
   
@@ -23,7 +23,7 @@ class Parameter protected ()
   /* CompleteClass */
   var DataType: XlParameterDataType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Parameter_typekey")
   var ExcelDotParameter_typekey: typings.activexExcel.Excel.Parameter = js.native
   

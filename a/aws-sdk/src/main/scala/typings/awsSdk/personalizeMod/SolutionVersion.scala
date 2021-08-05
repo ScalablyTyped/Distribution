@@ -83,103 +83,71 @@ trait SolutionVersion extends StObject {
 }
 object SolutionVersion {
   
-  @scala.inline
-  def apply(): SolutionVersion = {
+  inline def apply(): SolutionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SolutionVersion]
   }
   
-  @scala.inline
-  implicit class SolutionVersionMutableBuilder[Self <: SolutionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SolutionVersion](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetGroupArnUndefined: Self = StObject.set(x, "datasetGroupArn", js.undefined)
+    inline def setDatasetGroupArnUndefined: Self = StObject.set(x, "datasetGroupArn", js.undefined)
     
-    @scala.inline
-    def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: FailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
+    inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     
-    @scala.inline
-    def setPerformAutoML(value: PerformAutoML): Self = StObject.set(x, "performAutoML", value.asInstanceOf[js.Any])
+    inline def setPerformAutoML(value: PerformAutoML): Self = StObject.set(x, "performAutoML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformAutoMLUndefined: Self = StObject.set(x, "performAutoML", js.undefined)
+    inline def setPerformAutoMLUndefined: Self = StObject.set(x, "performAutoML", js.undefined)
     
-    @scala.inline
-    def setPerformHPO(value: PerformHPO): Self = StObject.set(x, "performHPO", value.asInstanceOf[js.Any])
+    inline def setPerformHPO(value: PerformHPO): Self = StObject.set(x, "performHPO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformHPOUndefined: Self = StObject.set(x, "performHPO", js.undefined)
+    inline def setPerformHPOUndefined: Self = StObject.set(x, "performHPO", js.undefined)
     
-    @scala.inline
-    def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
+    inline def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeArnUndefined: Self = StObject.set(x, "recipeArn", js.undefined)
+    inline def setRecipeArnUndefined: Self = StObject.set(x, "recipeArn", js.undefined)
     
-    @scala.inline
-    def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionArnUndefined: Self = StObject.set(x, "solutionArn", js.undefined)
+    inline def setSolutionArnUndefined: Self = StObject.set(x, "solutionArn", js.undefined)
     
-    @scala.inline
-    def setSolutionConfig(value: SolutionConfig): Self = StObject.set(x, "solutionConfig", value.asInstanceOf[js.Any])
+    inline def setSolutionConfig(value: SolutionConfig): Self = StObject.set(x, "solutionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionConfigUndefined: Self = StObject.set(x, "solutionConfig", js.undefined)
+    inline def setSolutionConfigUndefined: Self = StObject.set(x, "solutionConfig", js.undefined)
     
-    @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
+    inline def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTrainingHours(value: TrainingHours): Self = StObject.set(x, "trainingHours", value.asInstanceOf[js.Any])
+    inline def setTrainingHours(value: TrainingHours): Self = StObject.set(x, "trainingHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingHoursUndefined: Self = StObject.set(x, "trainingHours", js.undefined)
+    inline def setTrainingHoursUndefined: Self = StObject.set(x, "trainingHours", js.undefined)
     
-    @scala.inline
-    def setTrainingMode(value: TrainingMode): Self = StObject.set(x, "trainingMode", value.asInstanceOf[js.Any])
+    inline def setTrainingMode(value: TrainingMode): Self = StObject.set(x, "trainingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingModeUndefined: Self = StObject.set(x, "trainingMode", js.undefined)
+    inline def setTrainingModeUndefined: Self = StObject.set(x, "trainingMode", js.undefined)
     
-    @scala.inline
-    def setTunedHPOParams(value: TunedHPOParams): Self = StObject.set(x, "tunedHPOParams", value.asInstanceOf[js.Any])
+    inline def setTunedHPOParams(value: TunedHPOParams): Self = StObject.set(x, "tunedHPOParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunedHPOParamsUndefined: Self = StObject.set(x, "tunedHPOParams", js.undefined)
+    inline def setTunedHPOParamsUndefined: Self = StObject.set(x, "tunedHPOParams", js.undefined)
   }
 }

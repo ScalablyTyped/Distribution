@@ -14,8 +14,7 @@ trait UpsertRetInsertRet extends StObject {
 }
 object UpsertRetInsertRet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     replace: /* updateOrReplaceExpr */ js.Any => UpsertRetInsertRetUpdateRet,
     update: js.Any => UpsertRetInsertRetUpdateRet
   ): UpsertRetInsertRet = {
@@ -23,13 +22,10 @@ object UpsertRetInsertRet {
     __obj.asInstanceOf[UpsertRetInsertRet]
   }
   
-  @scala.inline
-  implicit class UpsertRetInsertRetMutableBuilder[Self <: UpsertRetInsertRet] (val x: Self) extends AnyVal {
+  extension [Self <: UpsertRetInsertRet](x: Self) {
     
-    @scala.inline
-    def setReplace(value: /* updateOrReplaceExpr */ js.Any => UpsertRetInsertRetUpdateRet): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+    inline def setReplace(value: /* updateOrReplaceExpr */ js.Any => UpsertRetInsertRetUpdateRet): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: js.Any => UpsertRetInsertRetUpdateRet): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: js.Any => UpsertRetInsertRetUpdateRet): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

@@ -16,8 +16,7 @@ trait IBitmapProperties
 }
 object IBitmapProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPropertiesAsync: IIterable[String] => IAsyncOperation[BitmapPropertySet],
     setPropertiesAsync: IIterable[IKeyValuePair[String, BitmapTypedValue]] => IAsyncAction
   ): IBitmapProperties = {
@@ -25,10 +24,8 @@ object IBitmapProperties {
     __obj.asInstanceOf[IBitmapProperties]
   }
   
-  @scala.inline
-  implicit class IBitmapPropertiesMutableBuilder[Self <: IBitmapProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapProperties](x: Self) {
     
-    @scala.inline
-    def setSetPropertiesAsync(value: IIterable[IKeyValuePair[String, BitmapTypedValue]] => IAsyncAction): Self = StObject.set(x, "setPropertiesAsync", js.Any.fromFunction1(value))
+    inline def setSetPropertiesAsync(value: IIterable[IKeyValuePair[String, BitmapTypedValue]] => IAsyncAction): Self = StObject.set(x, "setPropertiesAsync", js.Any.fromFunction1(value))
   }
 }

@@ -16,8 +16,7 @@ trait DatabaseLogicCommand extends StObject {
 }
 object DatabaseLogicCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     and: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand,
     nor: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand,
     not: DatabaseLogicCommand => DatabaseLogicCommand,
@@ -27,19 +26,14 @@ object DatabaseLogicCommand {
     __obj.asInstanceOf[DatabaseLogicCommand]
   }
   
-  @scala.inline
-  implicit class DatabaseLogicCommandMutableBuilder[Self <: DatabaseLogicCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseLogicCommand](x: Self) {
     
-    @scala.inline
-    def setAnd(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    inline def setAnd(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNor(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "nor", js.Any.fromFunction1(value))
+    inline def setNor(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "nor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNot(value: DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
+    inline def setNot(value: DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "not", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOr(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+    inline def setOr(value: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
   }
 }

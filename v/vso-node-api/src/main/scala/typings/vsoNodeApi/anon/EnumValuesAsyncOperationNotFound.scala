@@ -10,16 +10,13 @@ trait EnumValuesAsyncOperationNotFound extends StObject {
 }
 object EnumValuesAsyncOperationNotFound {
   
-  @scala.inline
-  def apply(enumValues: AsyncOperationNotFound): EnumValuesAsyncOperationNotFound = {
+  inline def apply(enumValues: AsyncOperationNotFound): EnumValuesAsyncOperationNotFound = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAsyncOperationNotFound]
   }
   
-  @scala.inline
-  implicit class EnumValuesAsyncOperationNotFoundMutableBuilder[Self <: EnumValuesAsyncOperationNotFound] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAsyncOperationNotFound](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AsyncOperationNotFound): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AsyncOperationNotFound): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

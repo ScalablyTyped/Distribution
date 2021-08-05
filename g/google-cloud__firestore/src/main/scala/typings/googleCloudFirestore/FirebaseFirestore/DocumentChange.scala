@@ -38,8 +38,7 @@ trait DocumentChange[T] extends StObject {
 }
 object DocumentChange {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     doc: QueryDocumentSnapshot[T],
     isEqual: DocumentChange[T] => Boolean,
     newIndex: Double,
@@ -51,22 +50,16 @@ object DocumentChange {
     __obj.asInstanceOf[DocumentChange[T]]
   }
   
-  @scala.inline
-  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange[?], T] (val x: Self & DocumentChange[T]) extends AnyVal {
+  extension [Self <: DocumentChange[?], T](x: Self & DocumentChange[T]) {
     
-    @scala.inline
-    def setDoc(value: QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEqual(value: DocumentChange[T] => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: DocumentChange[T] => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DocumentChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DocumentChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

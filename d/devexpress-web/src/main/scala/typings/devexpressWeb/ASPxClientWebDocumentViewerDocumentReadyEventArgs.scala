@@ -28,22 +28,17 @@ trait ASPxClientWebDocumentViewerDocumentReadyEventArgs
 }
 object ASPxClientWebDocumentViewerDocumentReadyEventArgs {
   
-  @scala.inline
-  def apply(DocumentId: String, PageCount: Double, ReportId: String): ASPxClientWebDocumentViewerDocumentReadyEventArgs = {
+  inline def apply(DocumentId: String, PageCount: Double, ReportId: String): ASPxClientWebDocumentViewerDocumentReadyEventArgs = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any], PageCount = PageCount.asInstanceOf[js.Any], ReportId = ReportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientWebDocumentViewerDocumentReadyEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientWebDocumentViewerDocumentReadyEventArgsMutableBuilder[Self <: ASPxClientWebDocumentViewerDocumentReadyEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWebDocumentViewerDocumentReadyEventArgs](x: Self) {
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
+    inline def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportId(value: String): Self = StObject.set(x, "ReportId", value.asInstanceOf[js.Any])
+    inline def setReportId(value: String): Self = StObject.set(x, "ReportId", value.asInstanceOf[js.Any])
   }
 }

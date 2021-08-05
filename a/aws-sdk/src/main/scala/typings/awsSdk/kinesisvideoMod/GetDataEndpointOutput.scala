@@ -13,19 +13,15 @@ trait GetDataEndpointOutput extends StObject {
 }
 object GetDataEndpointOutput {
   
-  @scala.inline
-  def apply(): GetDataEndpointOutput = {
+  inline def apply(): GetDataEndpointOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataEndpointOutput]
   }
   
-  @scala.inline
-  implicit class GetDataEndpointOutputMutableBuilder[Self <: GetDataEndpointOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataEndpointOutput](x: Self) {
     
-    @scala.inline
-    def setDataEndpoint(value: DataEndpoint): Self = StObject.set(x, "DataEndpoint", value.asInstanceOf[js.Any])
+    inline def setDataEndpoint(value: DataEndpoint): Self = StObject.set(x, "DataEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataEndpointUndefined: Self = StObject.set(x, "DataEndpoint", js.undefined)
+    inline def setDataEndpointUndefined: Self = StObject.set(x, "DataEndpoint", js.undefined)
   }
 }

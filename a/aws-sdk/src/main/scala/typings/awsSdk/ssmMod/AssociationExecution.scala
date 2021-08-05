@@ -48,61 +48,43 @@ trait AssociationExecution extends StObject {
 }
 object AssociationExecution {
   
-  @scala.inline
-  def apply(): AssociationExecution = {
+  inline def apply(): AssociationExecution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationExecution]
   }
   
-  @scala.inline
-  implicit class AssociationExecutionMutableBuilder[Self <: AssociationExecution] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationExecution](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
+    inline def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
+    inline def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
+    inline def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
+    inline def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
     
-    @scala.inline
-    def setExecutionId(value: AssociationExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: AssociationExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
-    @scala.inline
-    def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
+    inline def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
+    inline def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
     
-    @scala.inline
-    def setResourceCountByStatus(value: ResourceCountByStatus): Self = StObject.set(x, "ResourceCountByStatus", value.asInstanceOf[js.Any])
+    inline def setResourceCountByStatus(value: ResourceCountByStatus): Self = StObject.set(x, "ResourceCountByStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceCountByStatusUndefined: Self = StObject.set(x, "ResourceCountByStatus", js.undefined)
+    inline def setResourceCountByStatusUndefined: Self = StObject.set(x, "ResourceCountByStatus", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

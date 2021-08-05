@@ -23,33 +23,27 @@ trait ClusterMetrics extends StObject {
 }
 object ClusterMetrics {
   
-  @scala.inline
-  def apply(): ClusterMetrics = {
+  inline def apply(): ClusterMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterMetrics]
   }
   
-  @scala.inline
-  implicit class ClusterMetricsMutableBuilder[Self <: ClusterMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterMetrics](x: Self) {
     
-    @scala.inline
-    def setHdfsMetrics(
+    inline def setHdfsMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
     ): Self = StObject.set(x, "hdfsMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHdfsMetricsUndefined: Self = StObject.set(x, "hdfsMetrics", js.undefined)
+    inline def setHdfsMetricsUndefined: Self = StObject.set(x, "hdfsMetrics", js.undefined)
     
-    @scala.inline
-    def setYarnMetrics(
+    inline def setYarnMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterMetrics & TopLevel[js.Any]
     ): Self = StObject.set(x, "yarnMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYarnMetricsUndefined: Self = StObject.set(x, "yarnMetrics", js.undefined)
+    inline def setYarnMetricsUndefined: Self = StObject.set(x, "yarnMetrics", js.undefined)
   }
 }

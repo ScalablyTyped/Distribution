@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Operation")
 @js.native
-class Operation protected ()
+/* private */ class Operation ()
   extends StObject
      with typings.activexAccess.Access.Operation

@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): HexoLogger = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HexoLogger]
-  @scala.inline
-  def apply(options: Debug): HexoLogger = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[HexoLogger]
+  inline def apply(): HexoLogger = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HexoLogger]
+  inline def apply(options: Debug): HexoLogger = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[HexoLogger]
   
   @JSImport("hexo-log", JSImport.Namespace)
   @js.native

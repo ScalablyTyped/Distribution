@@ -16,7 +16,6 @@ object jsonMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isValid(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

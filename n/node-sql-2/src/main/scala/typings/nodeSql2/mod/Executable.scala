@@ -10,16 +10,13 @@ trait Executable extends StObject {
 }
 object Executable {
   
-  @scala.inline
-  def apply(toQuery: () => QueryLike): Executable = {
+  inline def apply(toQuery: () => QueryLike): Executable = {
     val __obj = js.Dynamic.literal(toQuery = js.Any.fromFunction0(toQuery))
     __obj.asInstanceOf[Executable]
   }
   
-  @scala.inline
-  implicit class ExecutableMutableBuilder[Self <: Executable] (val x: Self) extends AnyVal {
+  extension [Self <: Executable](x: Self) {
     
-    @scala.inline
-    def setToQuery(value: () => QueryLike): Self = StObject.set(x, "toQuery", js.Any.fromFunction0(value))
+    inline def setToQuery(value: () => QueryLike): Self = StObject.set(x, "toQuery", js.Any.fromFunction0(value))
   }
 }

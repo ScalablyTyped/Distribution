@@ -33,43 +33,31 @@ trait EditModeExitingEventUIParam extends StObject {
 }
 object EditModeExitingEventUIParam {
   
-  @scala.inline
-  def apply(): EditModeExitingEventUIParam = {
+  inline def apply(): EditModeExitingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditModeExitingEventUIParam]
   }
   
-  @scala.inline
-  implicit class EditModeExitingEventUIParamMutableBuilder[Self <: EditModeExitingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: EditModeExitingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setAcceptChanges(value: Boolean): Self = StObject.set(x, "acceptChanges", value.asInstanceOf[js.Any])
+    inline def setAcceptChanges(value: Boolean): Self = StObject.set(x, "acceptChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptChangesUndefined: Self = StObject.set(x, "acceptChanges", js.undefined)
+    inline def setAcceptChangesUndefined: Self = StObject.set(x, "acceptChanges", js.undefined)
     
-    @scala.inline
-    def setCanCancel(value: Boolean): Self = StObject.set(x, "canCancel", value.asInstanceOf[js.Any])
+    inline def setCanCancel(value: Boolean): Self = StObject.set(x, "canCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCancelUndefined: Self = StObject.set(x, "canCancel", js.undefined)
+    inline def setCanCancelUndefined: Self = StObject.set(x, "canCancel", js.undefined)
     
-    @scala.inline
-    def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setEditText(value: String): Self = StObject.set(x, "editText", value.asInstanceOf[js.Any])
+    inline def setEditText(value: String): Self = StObject.set(x, "editText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditTextUndefined: Self = StObject.set(x, "editText", js.undefined)
+    inline def setEditTextUndefined: Self = StObject.set(x, "editText", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

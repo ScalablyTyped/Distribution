@@ -14,7 +14,7 @@ trait NewItemAlertRuleAction extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Outlook.NewItemAlertRuleAction_typekey")
+  /* private */ @JSName("Outlook.NewItemAlertRuleAction_typekey")
   var OutlookDotNewItemAlertRuleAction_typekey: NewItemAlertRuleAction
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait NewItemAlertRuleAction extends StObject {
 }
 object NewItemAlertRuleAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionType: OlRuleActionType,
     Application: Application,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object NewItemAlertRuleAction {
     __obj.asInstanceOf[NewItemAlertRuleAction]
   }
   
-  @scala.inline
-  implicit class NewItemAlertRuleActionMutableBuilder[Self <: NewItemAlertRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: NewItemAlertRuleAction](x: Self) {
     
-    @scala.inline
-    def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotNewItemAlertRuleAction_typekey(value: NewItemAlertRuleAction): Self = StObject.set(x, "Outlook.NewItemAlertRuleAction_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotNewItemAlertRuleAction_typekey(value: NewItemAlertRuleAction): Self = StObject.set(x, "Outlook.NewItemAlertRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

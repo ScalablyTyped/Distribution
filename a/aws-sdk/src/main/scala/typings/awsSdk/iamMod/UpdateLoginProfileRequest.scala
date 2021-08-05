@@ -23,28 +23,21 @@ trait UpdateLoginProfileRequest extends StObject {
 }
 object UpdateLoginProfileRequest {
   
-  @scala.inline
-  def apply(UserName: userNameType): UpdateLoginProfileRequest = {
+  inline def apply(UserName: userNameType): UpdateLoginProfileRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLoginProfileRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLoginProfileRequestMutableBuilder[Self <: UpdateLoginProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLoginProfileRequest](x: Self) {
     
-    @scala.inline
-    def setPassword(value: passwordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: passwordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordResetRequired(value: booleanObjectType): Self = StObject.set(x, "PasswordResetRequired", value.asInstanceOf[js.Any])
+    inline def setPasswordResetRequired(value: booleanObjectType): Self = StObject.set(x, "PasswordResetRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordResetRequiredUndefined: Self = StObject.set(x, "PasswordResetRequired", js.undefined)
+    inline def setPasswordResetRequiredUndefined: Self = StObject.set(x, "PasswordResetRequired", js.undefined)
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

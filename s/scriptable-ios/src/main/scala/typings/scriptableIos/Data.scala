@@ -34,22 +34,17 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(getBytes: () => js.Array[Double], toBase64String: () => String, toRawString: () => String): Data = {
+  inline def apply(getBytes: () => js.Array[Double], toBase64String: () => String, toRawString: () => String): Data = {
     val __obj = js.Dynamic.literal(getBytes = js.Any.fromFunction0(getBytes), toBase64String = js.Any.fromFunction0(toBase64String), toRawString = js.Any.fromFunction0(toRawString))
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setGetBytes(value: () => js.Array[Double]): Self = StObject.set(x, "getBytes", js.Any.fromFunction0(value))
+    inline def setGetBytes(value: () => js.Array[Double]): Self = StObject.set(x, "getBytes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToBase64String(value: () => String): Self = StObject.set(x, "toBase64String", js.Any.fromFunction0(value))
+    inline def setToBase64String(value: () => String): Self = StObject.set(x, "toBase64String", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToRawString(value: () => String): Self = StObject.set(x, "toRawString", js.Any.fromFunction0(value))
+    inline def setToRawString(value: () => String): Self = StObject.set(x, "toRawString", js.Any.fromFunction0(value))
   }
 }

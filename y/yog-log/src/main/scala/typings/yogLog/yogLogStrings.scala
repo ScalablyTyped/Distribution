@@ -12,97 +12,83 @@ object yogLogStrings {
   sealed trait `0`
     extends StObject
        with LevelInt
-  @scala.inline
-  def `0`: `0` = "0".asInstanceOf[`0`]
+  inline def `0`: `0` = "0".asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
     extends StObject
        with LevelInt
-  @scala.inline
-  def `1`: `1` = "1".asInstanceOf[`1`]
+  inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
   sealed trait `16`
     extends StObject
        with LevelInt
-  @scala.inline
-  def `16`: `16` = "16".asInstanceOf[`16`]
+  inline def `16`: `16` = "16".asInstanceOf[`16`]
   
   @js.native
   sealed trait `2`
     extends StObject
        with LevelInt
-  @scala.inline
-  def `2`: `2` = "2".asInstanceOf[`2`]
+  inline def `2`: `2` = "2".asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
     extends StObject
        with LevelInt
-  @scala.inline
-  def `3`: `3` = "3".asInstanceOf[`3`]
+  inline def `3`: `3` = "3".asInstanceOf[`3`]
   
   @js.native
   sealed trait `4`
     extends StObject
        with LevelInt
-  @scala.inline
-  def `4`: `4` = "4".asInstanceOf[`4`]
+  inline def `4`: `4` = "4".asInstanceOf[`4`]
   
   @js.native
   sealed trait `8`
     extends StObject
        with LevelInt
-  @scala.inline
-  def `8`: `8` = "8".asInstanceOf[`8`]
+  inline def `8`: `8` = "8".asInstanceOf[`8`]
   
   @js.native
   sealed trait ACCESS
     extends StObject
        with LevelName
-  @scala.inline
-  def ACCESS: ACCESS = "ACCESS".asInstanceOf[ACCESS]
+  inline def ACCESS: ACCESS = "ACCESS".asInstanceOf[ACCESS]
   
   @js.native
   sealed trait ACCESS_ERROR
     extends StObject
        with LevelName
-  @scala.inline
-  def ACCESS_ERROR: ACCESS_ERROR = "ACCESS_ERROR".asInstanceOf[ACCESS_ERROR]
+  inline def ACCESS_ERROR: ACCESS_ERROR = "ACCESS_ERROR".asInstanceOf[ACCESS_ERROR]
   
   @js.native
   sealed trait DEBUG
     extends StObject
        with LevelName
-  @scala.inline
-  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
   sealed trait FATAL
     extends StObject
        with LevelName
-  @scala.inline
-  def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
+  inline def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
   
   @js.native
   sealed trait NOTICE
     extends StObject
        with LevelName
-  @scala.inline
-  def NOTICE: NOTICE = "NOTICE".asInstanceOf[NOTICE]
+  inline def NOTICE: NOTICE = "NOTICE".asInstanceOf[NOTICE]
   
   @js.native
   sealed trait TRACE
     extends StObject
        with LevelName
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
   sealed trait WARNING
     extends StObject
        with LevelName
-  @scala.inline
-  def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
+  inline def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
 }

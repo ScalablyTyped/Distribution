@@ -10,16 +10,13 @@ trait BindingHandlerControlsDescendant extends StObject {
 }
 object BindingHandlerControlsDescendant {
   
-  @scala.inline
-  def apply(controlsDescendantBindings: Boolean): BindingHandlerControlsDescendant = {
+  inline def apply(controlsDescendantBindings: Boolean): BindingHandlerControlsDescendant = {
     val __obj = js.Dynamic.literal(controlsDescendantBindings = controlsDescendantBindings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingHandlerControlsDescendant]
   }
   
-  @scala.inline
-  implicit class BindingHandlerControlsDescendantMutableBuilder[Self <: BindingHandlerControlsDescendant] (val x: Self) extends AnyVal {
+  extension [Self <: BindingHandlerControlsDescendant](x: Self) {
     
-    @scala.inline
-    def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
+    inline def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
   }
 }

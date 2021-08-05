@@ -29,8 +29,7 @@ trait BluetoothLEAdvertisementWatcherTrigger extends StObject {
 }
 object BluetoothLEAdvertisementWatcherTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     advertisementFilter: BluetoothLEAdvertisementFilter,
     maxOutOfRangeTimeout: Double,
     maxSamplingInterval: Double,
@@ -42,25 +41,18 @@ object BluetoothLEAdvertisementWatcherTrigger {
     __obj.asInstanceOf[BluetoothLEAdvertisementWatcherTrigger]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementWatcherTriggerMutableBuilder[Self <: BluetoothLEAdvertisementWatcherTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementWatcherTrigger](x: Self) {
     
-    @scala.inline
-    def setAdvertisementFilter(value: BluetoothLEAdvertisementFilter): Self = StObject.set(x, "advertisementFilter", value.asInstanceOf[js.Any])
+    inline def setAdvertisementFilter(value: BluetoothLEAdvertisementFilter): Self = StObject.set(x, "advertisementFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOutOfRangeTimeout(value: Double): Self = StObject.set(x, "maxOutOfRangeTimeout", value.asInstanceOf[js.Any])
+    inline def setMaxOutOfRangeTimeout(value: Double): Self = StObject.set(x, "maxOutOfRangeTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSamplingInterval(value: Double): Self = StObject.set(x, "maxSamplingInterval", value.asInstanceOf[js.Any])
+    inline def setMaxSamplingInterval(value: Double): Self = StObject.set(x, "maxSamplingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinOutOfRangeTimeout(value: Double): Self = StObject.set(x, "minOutOfRangeTimeout", value.asInstanceOf[js.Any])
+    inline def setMinOutOfRangeTimeout(value: Double): Self = StObject.set(x, "minOutOfRangeTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSamplingInterval(value: Double): Self = StObject.set(x, "minSamplingInterval", value.asInstanceOf[js.Any])
+    inline def setMinSamplingInterval(value: Double): Self = StObject.set(x, "minSamplingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalStrengthFilter(value: BluetoothSignalStrengthFilter): Self = StObject.set(x, "signalStrengthFilter", value.asInstanceOf[js.Any])
+    inline def setSignalStrengthFilter(value: BluetoothSignalStrengthFilter): Self = StObject.set(x, "signalStrengthFilter", value.asInstanceOf[js.Any])
   }
 }

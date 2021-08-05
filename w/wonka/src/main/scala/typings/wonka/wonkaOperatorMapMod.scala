@@ -11,6 +11,5 @@ object wonkaOperatorMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def map[A, B](f: js.Function1[/* value */ A, B]): Operator[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, B]]
+  inline def map[A, B](f: js.Function1[/* value */ A, B]): Operator[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, B]]
 }

@@ -25,8 +25,7 @@ object inMemoryMod {
     /**
       * Creates an InMemoryFileSystem instance.
       */
-    @scala.inline
-    def Create(options: js.Any, cb: BFSCallback[InMemoryFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(options: js.Any, cb: BFSCallback[InMemoryFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/InMemory", "default.Name")
     @js.native
@@ -53,7 +52,7 @@ object inMemoryMod {
     /* CompleteClass */
     override def put(key: String, data: Buffer, overwrite: Boolean): Boolean = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
   }
   
   type InMemoryFileSystem = SyncKeyValueFileSystem

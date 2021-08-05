@@ -89,63 +89,45 @@ trait ChartPointData extends StObject {
 }
 object ChartPointData {
   
-  @scala.inline
-  def apply(): ChartPointData = {
+  inline def apply(): ChartPointData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartPointData]
   }
   
-  @scala.inline
-  implicit class ChartPointDataMutableBuilder[Self <: ChartPointData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartPointData](x: Self) {
     
-    @scala.inline
-    def setDataLabel(value: ChartDataLabelData): Self = StObject.set(x, "dataLabel", value.asInstanceOf[js.Any])
+    inline def setDataLabel(value: ChartDataLabelData): Self = StObject.set(x, "dataLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
+    inline def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartPointFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartPointFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHasDataLabel(value: Boolean): Self = StObject.set(x, "hasDataLabel", value.asInstanceOf[js.Any])
+    inline def setHasDataLabel(value: Boolean): Self = StObject.set(x, "hasDataLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDataLabelUndefined: Self = StObject.set(x, "hasDataLabel", js.undefined)
+    inline def setHasDataLabelUndefined: Self = StObject.set(x, "hasDataLabel", js.undefined)
     
-    @scala.inline
-    def setMarkerBackgroundColor(value: String): Self = StObject.set(x, "markerBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setMarkerBackgroundColor(value: String): Self = StObject.set(x, "markerBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerBackgroundColorUndefined: Self = StObject.set(x, "markerBackgroundColor", js.undefined)
+    inline def setMarkerBackgroundColorUndefined: Self = StObject.set(x, "markerBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setMarkerForegroundColor(value: String): Self = StObject.set(x, "markerForegroundColor", value.asInstanceOf[js.Any])
+    inline def setMarkerForegroundColor(value: String): Self = StObject.set(x, "markerForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerForegroundColorUndefined: Self = StObject.set(x, "markerForegroundColor", js.undefined)
+    inline def setMarkerForegroundColorUndefined: Self = StObject.set(x, "markerForegroundColor", js.undefined)
     
-    @scala.inline
-    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
+    inline def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
+    inline def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
     
-    @scala.inline
-    def setMarkerStyle(
+    inline def setMarkerStyle(
       value: ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture
     ): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerStyleUndefined: Self = StObject.set(x, "markerStyle", js.undefined)
+    inline def setMarkerStyleUndefined: Self = StObject.set(x, "markerStyle", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

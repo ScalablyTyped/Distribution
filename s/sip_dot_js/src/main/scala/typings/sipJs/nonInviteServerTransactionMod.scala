@@ -25,9 +25,9 @@ object nonInviteServerTransactionMod {
       */
     def this(request: IncomingRequestMessage, transport: Transport, user: ServerTransactionUser) = this()
     
-    var J: js.Any = js.native
+    /* private */ var J: js.Any = js.native
     
-    var lastResponse: js.Any = js.native
+    /* private */ var lastResponse: js.Any = js.native
     
     /**
       * First, the procedures in [4] are followed, which attempt to deliver the response to a backup.
@@ -37,13 +37,13 @@ object nonInviteServerTransactionMod {
       */
     /* protected */ def onTransportError(error: Error): Unit = js.native
     
-    var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: js.Any = js.native
     
     /**
       * The server transaction remains in this state until Timer J fires,
       * at which point it MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.2.2
       */
-    var timerJ: js.Any = js.native
+    /* private */ var timerJ: js.Any = js.native
   }
 }

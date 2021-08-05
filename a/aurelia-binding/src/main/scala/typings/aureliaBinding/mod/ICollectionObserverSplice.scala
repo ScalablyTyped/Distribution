@@ -60,8 +60,7 @@ trait ICollectionObserverSplice[T, K] extends StObject {
 }
 object ICollectionObserverSplice {
   
-  @scala.inline
-  def apply[T, K](
+  inline def apply[T, K](
     addedCount: Double,
     index: Double,
     key: K,
@@ -77,34 +76,24 @@ object ICollectionObserverSplice {
     __obj.asInstanceOf[ICollectionObserverSplice[T, K]]
   }
   
-  @scala.inline
-  implicit class ICollectionObserverSpliceMutableBuilder[Self <: ICollectionObserverSplice[?, ?], T, K] (val x: Self & (ICollectionObserverSplice[T, K])) extends AnyVal {
+  extension [Self <: ICollectionObserverSplice[?, ?], T, K](x: Self & (ICollectionObserverSplice[T, K])) {
     
-    @scala.inline
-    def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
+    inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: Set[T] | (Map[K, T])): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Set[T] | (Map[K, T])): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: add | delete | update | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: add | delete | update | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

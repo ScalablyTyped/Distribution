@@ -10,19 +10,15 @@ trait GetGatewayGroupResponse extends StObject {
 }
 object GetGatewayGroupResponse {
   
-  @scala.inline
-  def apply(): GetGatewayGroupResponse = {
+  inline def apply(): GetGatewayGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGatewayGroupResponse]
   }
   
-  @scala.inline
-  implicit class GetGatewayGroupResponseMutableBuilder[Self <: GetGatewayGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGatewayGroupResponse](x: Self) {
     
-    @scala.inline
-    def setGatewayGroup(value: GatewayGroup): Self = StObject.set(x, "GatewayGroup", value.asInstanceOf[js.Any])
+    inline def setGatewayGroup(value: GatewayGroup): Self = StObject.set(x, "GatewayGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayGroupUndefined: Self = StObject.set(x, "GatewayGroup", js.undefined)
+    inline def setGatewayGroupUndefined: Self = StObject.set(x, "GatewayGroup", js.undefined)
   }
 }

@@ -34,7 +34,7 @@ trait XDocument extends StObject {
   
   def ImportFile(bstrFileURI: String): Unit
   
-  @JSName("InfoPath.XDocument_typekey")
+  /* private */ @JSName("InfoPath.XDocument_typekey")
   var InfoPathDotXDocument_typekey: XDocument
   
   val IsDOMReadOnly: Boolean
@@ -87,8 +87,7 @@ trait XDocument extends StObject {
 }
 object XDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreateDOM: () => IXMLDOMDocument,
     DOM: IXMLDOMDocument,
     DataAdapters: DataAdaptersCollection,
@@ -131,115 +130,78 @@ object XDocument {
     __obj.asInstanceOf[XDocument]
   }
   
-  @scala.inline
-  implicit class XDocumentMutableBuilder[Self <: XDocument] (val x: Self) extends AnyVal {
+  extension [Self <: XDocument](x: Self) {
     
-    @scala.inline
-    def setCreateDOM(value: () => IXMLDOMDocument): Self = StObject.set(x, "CreateDOM", js.Any.fromFunction0(value))
+    inline def setCreateDOM(value: () => IXMLDOMDocument): Self = StObject.set(x, "CreateDOM", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
+    inline def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAdapters(value: DataAdaptersCollection): Self = StObject.set(x, "DataAdapters", value.asInstanceOf[js.Any])
+    inline def setDataAdapters(value: DataAdaptersCollection): Self = StObject.set(x, "DataAdapters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataObjects(value: DataObjectsCollection): Self = StObject.set(x, "DataObjects", value.asInstanceOf[js.Any])
+    inline def setDataObjects(value: DataObjectsCollection): Self = StObject.set(x, "DataObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: js.Any): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: js.Any): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDOM(value: String => IXMLDOMDocument): Self = StObject.set(x, "GetDOM", js.Any.fromFunction1(value))
+    inline def setGetDOM(value: String => IXMLDOMDocument): Self = StObject.set(x, "GetDOM", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDataVariable(value: Double => String): Self = StObject.set(x, "GetDataVariable", js.Any.fromFunction1(value))
+    inline def setGetDataVariable(value: Double => String): Self = StObject.set(x, "GetDataVariable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedNodeProperty(value: (js.Any, String, String) => String): Self = StObject.set(x, "GetNamedNodeProperty", js.Any.fromFunction3(value))
+    inline def setGetNamedNodeProperty(value: (js.Any, String, String) => String): Self = StObject.set(x, "GetNamedNodeProperty", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setImportDOM(value: IXMLDOMDocument => Unit): Self = StObject.set(x, "ImportDOM", js.Any.fromFunction1(value))
+    inline def setImportDOM(value: IXMLDOMDocument => Unit): Self = StObject.set(x, "ImportDOM", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImportFile(value: String => Unit): Self = StObject.set(x, "ImportFile", js.Any.fromFunction1(value))
+    inline def setImportFile(value: String => Unit): Self = StObject.set(x, "ImportFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfoPathDotXDocument_typekey(value: XDocument): Self = StObject.set(x, "InfoPath.XDocument_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotXDocument_typekey(value: XDocument): Self = StObject.set(x, "InfoPath.XDocument_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDOMReadOnly(value: Boolean): Self = StObject.set(x, "IsDOMReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsDOMReadOnly(value: Boolean): Self = StObject.set(x, "IsDOMReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirty(value: Boolean): Self = StObject.set(x, "IsDirty", value.asInstanceOf[js.Any])
+    inline def setIsDirty(value: Boolean): Self = StObject.set(x, "IsDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNew(value: Boolean): Self = StObject.set(x, "IsNew", value.asInstanceOf[js.Any])
+    inline def setIsNew(value: Boolean): Self = StObject.set(x, "IsNew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRecovered(value: Boolean): Self = StObject.set(x, "IsRecovered", value.asInstanceOf[js.Any])
+    inline def setIsRecovered(value: Boolean): Self = StObject.set(x, "IsRecovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSigned(value: Boolean): Self = StObject.set(x, "IsSigned", value.asInstanceOf[js.Any])
+    inline def setIsSigned(value: Boolean): Self = StObject.set(x, "IsSigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintOut(value: () => Unit): Self = StObject.set(x, "PrintOut", js.Any.fromFunction0(value))
+    inline def setPrintOut(value: () => Unit): Self = StObject.set(x, "PrintOut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
+    inline def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveAs(value: String => Unit): Self = StObject.set(x, "SaveAs", js.Any.fromFunction1(value))
+    inline def setSaveAs(value: String => Unit): Self = StObject.set(x, "SaveAs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataVariable(value: (Double, String) => Unit): Self = StObject.set(x, "SetDataVariable", js.Any.fromFunction2(value))
+    inline def setSetDataVariable(value: (Double, String) => Unit): Self = StObject.set(x, "SetDataVariable", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDirty(value: Boolean => Unit): Self = StObject.set(x, "SetDirty", js.Any.fromFunction1(value))
+    inline def setSetDirty(value: Boolean => Unit): Self = StObject.set(x, "SetDirty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNamedNodeProperty(value: (IXMLDOMNode, String, String) => Unit): Self = StObject.set(x, "SetNamedNodeProperty", js.Any.fromFunction3(value))
+    inline def setSetNamedNodeProperty(value: (IXMLDOMNode, String, String) => Unit): Self = StObject.set(x, "SetNamedNodeProperty", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSignedDataBlocks(value: SignedDataBlocksCollection): Self = StObject.set(x, "SignedDataBlocks", value.asInstanceOf[js.Any])
+    inline def setSignedDataBlocks(value: SignedDataBlocksCollection): Self = StObject.set(x, "SignedDataBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolution(value: SolutionObject): Self = StObject.set(x, "Solution", value.asInstanceOf[js.Any])
+    inline def setSolution(value: SolutionObject): Self = StObject.set(x, "Solution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUI(value: UI): Self = StObject.set(x, "UI", value.asInstanceOf[js.Any])
+    inline def setUI(value: UI): Self = StObject.set(x, "UI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtil(value: UtilObject): Self = StObject.set(x, "Util", value.asInstanceOf[js.Any])
+    inline def setUtil(value: UtilObject): Self = StObject.set(x, "Util", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: ViewObject): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: ViewObject): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewInfos(value: ViewInfosCollection): Self = StObject.set(x, "ViewInfos", value.asInstanceOf[js.Any])
+    inline def setViewInfos(value: ViewInfosCollection): Self = StObject.set(x, "ViewInfos", value.asInstanceOf[js.Any])
   }
 }

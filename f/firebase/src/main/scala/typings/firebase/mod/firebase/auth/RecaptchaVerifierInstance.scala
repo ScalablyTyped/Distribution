@@ -26,8 +26,7 @@ trait RecaptchaVerifierInstance
 }
 object RecaptchaVerifierInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     render: () => js.Promise[Double],
     `type`: String,
@@ -38,13 +37,10 @@ object RecaptchaVerifierInstance {
     __obj.asInstanceOf[RecaptchaVerifierInstance]
   }
   
-  @scala.inline
-  implicit class RecaptchaVerifierInstanceMutableBuilder[Self <: RecaptchaVerifierInstance] (val x: Self) extends AnyVal {
+  extension [Self <: RecaptchaVerifierInstance](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: () => js.Promise[Double]): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => js.Promise[Double]): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }
 }

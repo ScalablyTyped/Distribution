@@ -38,26 +38,20 @@ object coordination {
     }
     object Lease {
       
-      @scala.inline
-      def apply(metadata: ObjectMeta, spec: LeaseSpec): Lease = {
+      inline def apply(metadata: ObjectMeta, spec: LeaseSpec): Lease = {
         val __obj = js.Dynamic.literal(apiVersion = "coordination.k8s.io/v1", kind = "Lease", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[Lease]
       }
       
-      @scala.inline
-      implicit class LeaseMutableBuilder[Self <: Lease] (val x: Self) extends AnyVal {
+      extension [Self <: Lease](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: coordinationDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: coordinationDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpec(value: LeaseSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: LeaseSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       }
     }
     
@@ -93,8 +87,7 @@ object coordination {
     }
     object LeaseSpec {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         acquireTime: String,
         holderIdentity: String,
         leaseDurationSeconds: Double,
@@ -105,23 +98,17 @@ object coordination {
         __obj.asInstanceOf[LeaseSpec]
       }
       
-      @scala.inline
-      implicit class LeaseSpecMutableBuilder[Self <: LeaseSpec] (val x: Self) extends AnyVal {
+      extension [Self <: LeaseSpec](x: Self) {
         
-        @scala.inline
-        def setAcquireTime(value: String): Self = StObject.set(x, "acquireTime", value.asInstanceOf[js.Any])
+        inline def setAcquireTime(value: String): Self = StObject.set(x, "acquireTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHolderIdentity(value: String): Self = StObject.set(x, "holderIdentity", value.asInstanceOf[js.Any])
+        inline def setHolderIdentity(value: String): Self = StObject.set(x, "holderIdentity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaseDurationSeconds(value: Double): Self = StObject.set(x, "leaseDurationSeconds", value.asInstanceOf[js.Any])
+        inline def setLeaseDurationSeconds(value: Double): Self = StObject.set(x, "leaseDurationSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaseTransitions(value: Double): Self = StObject.set(x, "leaseTransitions", value.asInstanceOf[js.Any])
+        inline def setLeaseTransitions(value: Double): Self = StObject.set(x, "leaseTransitions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenewTime(value: String): Self = StObject.set(x, "renewTime", value.asInstanceOf[js.Any])
+        inline def setRenewTime(value: String): Self = StObject.set(x, "renewTime", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -155,26 +142,20 @@ object coordination {
     }
     object Lease {
       
-      @scala.inline
-      def apply(metadata: ObjectMeta, spec: LeaseSpec): Lease = {
+      inline def apply(metadata: ObjectMeta, spec: LeaseSpec): Lease = {
         val __obj = js.Dynamic.literal(apiVersion = "coordination.k8s.io/v1beta1", kind = "Lease", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[Lease]
       }
       
-      @scala.inline
-      implicit class LeaseMutableBuilder[Self <: Lease] (val x: Self) extends AnyVal {
+      extension [Self <: Lease](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: coordinationDotk8sDotioSlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: coordinationDotk8sDotioSlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Lease): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpec(value: LeaseSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: LeaseSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       }
     }
     
@@ -210,8 +191,7 @@ object coordination {
     }
     object LeaseSpec {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         acquireTime: String,
         holderIdentity: String,
         leaseDurationSeconds: Double,
@@ -222,23 +202,17 @@ object coordination {
         __obj.asInstanceOf[LeaseSpec]
       }
       
-      @scala.inline
-      implicit class LeaseSpecMutableBuilder[Self <: LeaseSpec] (val x: Self) extends AnyVal {
+      extension [Self <: LeaseSpec](x: Self) {
         
-        @scala.inline
-        def setAcquireTime(value: String): Self = StObject.set(x, "acquireTime", value.asInstanceOf[js.Any])
+        inline def setAcquireTime(value: String): Self = StObject.set(x, "acquireTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHolderIdentity(value: String): Self = StObject.set(x, "holderIdentity", value.asInstanceOf[js.Any])
+        inline def setHolderIdentity(value: String): Self = StObject.set(x, "holderIdentity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaseDurationSeconds(value: Double): Self = StObject.set(x, "leaseDurationSeconds", value.asInstanceOf[js.Any])
+        inline def setLeaseDurationSeconds(value: Double): Self = StObject.set(x, "leaseDurationSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaseTransitions(value: Double): Self = StObject.set(x, "leaseTransitions", value.asInstanceOf[js.Any])
+        inline def setLeaseTransitions(value: Double): Self = StObject.set(x, "leaseTransitions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenewTime(value: String): Self = StObject.set(x, "renewTime", value.asInstanceOf[js.Any])
+        inline def setRenewTime(value: String): Self = StObject.set(x, "renewTime", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -21,23 +21,18 @@ trait ApiKeySecurity
 }
 object ApiKeySecurity {
   
-  @scala.inline
-  def apply(in: query | header, name: String): ApiKeySecurity = {
+  inline def apply(in: query | header, name: String): ApiKeySecurity = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("apiKey")
     __obj.asInstanceOf[ApiKeySecurity]
   }
   
-  @scala.inline
-  implicit class ApiKeySecurityMutableBuilder[Self <: ApiKeySecurity] (val x: Self) extends AnyVal {
+  extension [Self <: ApiKeySecurity](x: Self) {
     
-    @scala.inline
-    def setIn(value: query | header): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: query | header): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: apiKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: apiKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

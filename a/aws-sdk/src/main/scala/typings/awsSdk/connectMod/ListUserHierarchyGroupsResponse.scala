@@ -18,28 +18,21 @@ trait ListUserHierarchyGroupsResponse extends StObject {
 }
 object ListUserHierarchyGroupsResponse {
   
-  @scala.inline
-  def apply(): ListUserHierarchyGroupsResponse = {
+  inline def apply(): ListUserHierarchyGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUserHierarchyGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListUserHierarchyGroupsResponseMutableBuilder[Self <: ListUserHierarchyGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserHierarchyGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUserHierarchyGroupSummaryList(value: HierarchyGroupSummaryList): Self = StObject.set(x, "UserHierarchyGroupSummaryList", value.asInstanceOf[js.Any])
+    inline def setUserHierarchyGroupSummaryList(value: HierarchyGroupSummaryList): Self = StObject.set(x, "UserHierarchyGroupSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserHierarchyGroupSummaryListUndefined: Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.undefined)
+    inline def setUserHierarchyGroupSummaryListUndefined: Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.undefined)
     
-    @scala.inline
-    def setUserHierarchyGroupSummaryListVarargs(value: HierarchyGroupSummary*): Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.Array(value :_*))
+    inline def setUserHierarchyGroupSummaryListVarargs(value: HierarchyGroupSummary*): Self = StObject.set(x, "UserHierarchyGroupSummaryList", js.Array(value :_*))
   }
 }

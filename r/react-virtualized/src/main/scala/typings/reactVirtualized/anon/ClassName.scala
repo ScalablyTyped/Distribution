@@ -100,8 +100,7 @@ trait ClassName extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `aria-label`: Requireable[String],
     autoHeight: Requireable[Boolean],
     children: Validator[Column],
@@ -148,127 +147,88 @@ object ClassName {
     __obj.asInstanceOf[ClassName]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName](x: Self) {
     
-    @scala.inline
-    def `setAria-label`(value: Requireable[String]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+    inline def `setAria-label`(value: Requireable[String]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHeight(value: Requireable[Boolean]): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+    inline def setAutoHeight(value: Requireable[Boolean]): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: Validator[Column]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Validator[Column]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableHeader(value: Requireable[Boolean]): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
+    inline def setDisableHeader(value: Requireable[Boolean]): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedRowSize(value: Validator[Double]): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
+    inline def setEstimatedRowSize(value: Validator[Double]): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridClassName(value: Requireable[String]): Self = StObject.set(x, "gridClassName", value.asInstanceOf[js.Any])
+    inline def setGridClassName(value: Requireable[String]): Self = StObject.set(x, "gridClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "gridStyle", value.asInstanceOf[js.Any])
+    inline def setGridStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "gridStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderClassName(value: Requireable[String]): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
+    inline def setHeaderClassName(value: Requireable[String]): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderHeight(value: Validator[Double]): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+    inline def setHeaderHeight(value: Validator[Double]): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRowRenderer(value: Requireable[TableHeaderRowRenderer]): Self = StObject.set(x, "headerRowRenderer", value.asInstanceOf[js.Any])
+    inline def setHeaderRowRenderer(value: Requireable[TableHeaderRowRenderer]): Self = StObject.set(x, "headerRowRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+    inline def setHeaderStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Validator[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Validator[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Requireable[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Requireable[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoRowsRenderer(value: Requireable[js.Function0[Element]]): Self = StObject.set(x, "noRowsRenderer", value.asInstanceOf[js.Any])
+    inline def setNoRowsRenderer(value: Requireable[js.Function0[Element]]): Self = StObject.set(x, "noRowsRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHeaderClick(value: Requireable[js.Function1[/* params */ HeaderMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onHeaderClick", value.asInstanceOf[js.Any])
+    inline def setOnHeaderClick(value: Requireable[js.Function1[/* params */ HeaderMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onHeaderClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRowClick(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowClick", value.asInstanceOf[js.Any])
+    inline def setOnRowClick(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRowDoubleClick(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowDoubleClick", value.asInstanceOf[js.Any])
+    inline def setOnRowDoubleClick(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowDoubleClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRowMouseOut(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowMouseOut", value.asInstanceOf[js.Any])
+    inline def setOnRowMouseOut(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowMouseOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRowMouseOver(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowMouseOver", value.asInstanceOf[js.Any])
+    inline def setOnRowMouseOver(value: Requireable[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]]): Self = StObject.set(x, "onRowMouseOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRowsRendered(value: Requireable[js.Function1[/* params */ IndexRange & OverscanIndexRange, Unit]]): Self = StObject.set(x, "onRowsRendered", value.asInstanceOf[js.Any])
+    inline def setOnRowsRendered(value: Requireable[js.Function1[/* params */ IndexRange & OverscanIndexRange, Unit]]): Self = StObject.set(x, "onRowsRendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnScroll(value: Requireable[js.Function1[/* params */ ScrollEventData, Unit]]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
+    inline def setOnScroll(value: Requireable[js.Function1[/* params */ ScrollEventData, Unit]]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscanRowCount(value: Validator[Double]): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
+    inline def setOverscanRowCount(value: Validator[Double]): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowClassName(
+    inline def setRowClassName(
       value: Requireable[String | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, String])]
     ): Self = StObject.set(x, "rowClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Validator[Double]): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Validator[Double]): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowGetter(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]]): Self = StObject.set(x, "rowGetter", value.asInstanceOf[js.Any])
+    inline def setRowGetter(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]]): Self = StObject.set(x, "rowGetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeight(value: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])]): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])]): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowRenderer(value: Requireable[js.Function1[/* props */ TableRowProps, ReactNode]]): Self = StObject.set(x, "rowRenderer", value.asInstanceOf[js.Any])
+    inline def setRowRenderer(value: Requireable[js.Function1[/* props */ TableRowProps, ReactNode]]): Self = StObject.set(x, "rowRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowStyle(
+    inline def setRowStyle(
       value: Validator[
           CSSProperties | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, CSSProperties])
         ]
     ): Self = StObject.set(x, "rowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToAlignment(value: Validator[typings.reactVirtualized.mod.Alignment]): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+    inline def setScrollToAlignment(value: Validator[typings.reactVirtualized.mod.Alignment]): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToIndex(value: Validator[Double]): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
+    inline def setScrollToIndex(value: Validator[Double]): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Requireable[Double]): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Requireable[Double]): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: Requireable[js.Function1[/* params */ SortBy, Unit]]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Requireable[js.Function1[/* params */ SortBy, Unit]]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortBy(value: Requireable[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: Requireable[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirection(value: Validator[SortDirectionType]): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: Validator[SortDirectionType]): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndex(value: Requireable[Double]): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Requireable[Double]): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -29,17 +29,14 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(index: String): Index = {
+    inline def apply(index: String): Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,17 +46,14 @@ object anon {
   }
   object Timeout {
     
-    @scala.inline
-    def apply(timeout: Double): Timeout = {
+    inline def apply(timeout: Double): Timeout = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Timeout]
     }
     
-    @scala.inline
-    implicit class TimeoutMutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
+    extension [Self <: Timeout](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,17 +63,14 @@ object anon {
   }
   object UseOutdated {
     
-    @scala.inline
-    def apply(useOutdated: Boolean): UseOutdated = {
+    inline def apply(useOutdated: Boolean): UseOutdated = {
       val __obj = js.Dynamic.literal(useOutdated = useOutdated.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseOutdated]
     }
     
-    @scala.inline
-    implicit class UseOutdatedMutableBuilder[Self <: UseOutdated] (val x: Self) extends AnyVal {
+    extension [Self <: UseOutdated](x: Self) {
       
-      @scala.inline
-      def setUseOutdated(value: Boolean): Self = StObject.set(x, "useOutdated", value.asInstanceOf[js.Any])
+      inline def setUseOutdated(value: Boolean): Self = StObject.set(x, "useOutdated", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,8 +22,7 @@ object dropdownDotProtractorDriverMod {
   }
   object DropdownDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       dropdownContent: () => DropdownContentDriver,
       element: () => ElementFinder,
@@ -38,11 +37,9 @@ object dropdownDotProtractorDriverMod {
       __obj.asInstanceOf[DropdownDriver]
     }
     
-    @scala.inline
-    implicit class DropdownDriverMutableBuilder[Self <: DropdownDriver] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownDriver](x: Self) {
       
-      @scala.inline
-      def setDropdownContent(value: () => DropdownContentDriver): Self = StObject.set(x, "dropdownContent", js.Any.fromFunction0(value))
+      inline def setDropdownContent(value: () => DropdownContentDriver): Self = StObject.set(x, "dropdownContent", js.Any.fromFunction0(value))
     }
   }
 }

@@ -11,16 +11,13 @@ trait CreateInterstitialAdOption extends StObject {
 }
 object CreateInterstitialAdOption {
   
-  @scala.inline
-  def apply(adUnitId: String): CreateInterstitialAdOption = {
+  inline def apply(adUnitId: String): CreateInterstitialAdOption = {
     val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInterstitialAdOption]
   }
   
-  @scala.inline
-  implicit class CreateInterstitialAdOptionMutableBuilder[Self <: CreateInterstitialAdOption] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInterstitialAdOption](x: Self) {
     
-    @scala.inline
-    def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
+    inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
   }
 }

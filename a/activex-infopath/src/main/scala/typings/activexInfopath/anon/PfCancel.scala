@@ -13,19 +13,15 @@ trait PfCancel extends StObject {
 }
 object PfCancel {
   
-  @scala.inline
-  def apply(pDocument: _XDocument, pfCancel: Boolean): PfCancel = {
+  inline def apply(pDocument: _XDocument, pfCancel: Boolean): PfCancel = {
     val __obj = js.Dynamic.literal(pDocument = pDocument.asInstanceOf[js.Any], pfCancel = pfCancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PfCancel]
   }
   
-  @scala.inline
-  implicit class PfCancelMutableBuilder[Self <: PfCancel] (val x: Self) extends AnyVal {
+  extension [Self <: PfCancel](x: Self) {
     
-    @scala.inline
-    def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
+    inline def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPfCancel(value: Boolean): Self = StObject.set(x, "pfCancel", value.asInstanceOf[js.Any])
+    inline def setPfCancel(value: Boolean): Self = StObject.set(x, "pfCancel", value.asInstanceOf[js.Any])
   }
 }

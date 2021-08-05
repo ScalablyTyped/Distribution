@@ -11,16 +11,13 @@ trait Scale extends StObject {
 }
 object Scale {
   
-  @scala.inline
-  def apply(scale: AnimatedInterpolation): Scale = {
+  inline def apply(scale: AnimatedInterpolation): Scale = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scale]
   }
   
-  @scala.inline
-  implicit class ScaleMutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
+  extension [Self <: Scale](x: Self) {
     
-    @scala.inline
-    def setScale(value: AnimatedInterpolation): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: AnimatedInterpolation): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

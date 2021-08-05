@@ -36,17 +36,14 @@ object prompts {
   }
   object FailedPromptStateData {
     
-    @scala.inline
-    def apply(isValid: `false` | String): FailedPromptStateData = {
+    inline def apply(isValid: `false` | String): FailedPromptStateData = {
       val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[FailedPromptStateData]
     }
     
-    @scala.inline
-    implicit class FailedPromptStateDataMutableBuilder[Self <: FailedPromptStateData] (val x: Self) extends AnyVal {
+    extension [Self <: FailedPromptStateData](x: Self) {
       
-      @scala.inline
-      def setIsValid(value: `false` | String): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: `false` | String): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,20 +67,16 @@ object prompts {
   }
   object PromptBase {
     
-    @scala.inline
-    def apply(run: () => js.Promise[js.Any], status: PromptState): PromptBase = {
+    inline def apply(run: () => js.Promise[js.Any], status: PromptState): PromptBase = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction0(run), status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptBase]
     }
     
-    @scala.inline
-    implicit class PromptBaseMutableBuilder[Self <: PromptBase] (val x: Self) extends AnyVal {
+    extension [Self <: PromptBase](x: Self) {
       
-      @scala.inline
-      def setRun(value: () => js.Promise[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => js.Promise[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatus(value: PromptState): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PromptState): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,20 +125,16 @@ object prompts {
   }
   object PromptEventPipes {
     
-    @scala.inline
-    def apply[T](error: Observable_[FailedPromptStateData], success: Observable_[SuccessfulPromptStateData[T]]): PromptEventPipes[T] = {
+    inline def apply[T](error: Observable_[FailedPromptStateData], success: Observable_[SuccessfulPromptStateData[T]]): PromptEventPipes[T] = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptEventPipes[T]]
     }
     
-    @scala.inline
-    implicit class PromptEventPipesMutableBuilder[Self <: PromptEventPipes[?], T] (val x: Self & PromptEventPipes[T]) extends AnyVal {
+    extension [Self <: PromptEventPipes[?], T](x: Self & PromptEventPipes[T]) {
       
-      @scala.inline
-      def setError(value: Observable_[FailedPromptStateData]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Observable_[FailedPromptStateData]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Observable_[SuccessfulPromptStateData[T]]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Observable_[SuccessfulPromptStateData[T]]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,17 +163,14 @@ object prompts {
   }
   object PromptStateData {
     
-    @scala.inline
-    def apply(isValid: String | Boolean): PromptStateData = {
+    inline def apply(isValid: String | Boolean): PromptStateData = {
       val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptStateData]
     }
     
-    @scala.inline
-    implicit class PromptStateDataMutableBuilder[Self <: PromptStateData] (val x: Self) extends AnyVal {
+    extension [Self <: PromptStateData](x: Self) {
       
-      @scala.inline
-      def setIsValid(value: String | Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: String | Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,20 +197,16 @@ object prompts {
   }
   object SuccessfulPromptStateData {
     
-    @scala.inline
-    def apply[T](value: T): SuccessfulPromptStateData[T] = {
+    inline def apply[T](value: T): SuccessfulPromptStateData[T] = {
       val __obj = js.Dynamic.literal(isValid = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuccessfulPromptStateData[T]]
     }
     
-    @scala.inline
-    implicit class SuccessfulPromptStateDataMutableBuilder[Self <: SuccessfulPromptStateData[?], T] (val x: Self & SuccessfulPromptStateData[T]) extends AnyVal {
+    extension [Self <: SuccessfulPromptStateData[?], T](x: Self & SuccessfulPromptStateData[T]) {
       
-      @scala.inline
-      def setIsValid(value: `true`): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: `true`): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -34,40 +34,29 @@ trait AddRepresentationOptions extends StObject {
 }
 object AddRepresentationOptions {
   
-  @scala.inline
-  def apply(scaleFactor: Double): AddRepresentationOptions = {
+  inline def apply(scaleFactor: Double): AddRepresentationOptions = {
     val __obj = js.Dynamic.literal(scaleFactor = scaleFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRepresentationOptions]
   }
   
-  @scala.inline
-  implicit class AddRepresentationOptionsMutableBuilder[Self <: AddRepresentationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddRepresentationOptions](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
-    @scala.inline
-    def setDataURL(value: String): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
+    inline def setDataURL(value: String): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataURLUndefined: Self = StObject.set(x, "dataURL", js.undefined)
+    inline def setDataURLUndefined: Self = StObject.set(x, "dataURL", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

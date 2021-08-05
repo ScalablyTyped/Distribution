@@ -18,19 +18,15 @@ trait CreateProjectResponse extends StObject {
 }
 object CreateProjectResponse {
   
-  @scala.inline
-  def apply(projectArn: ARN, projectId: ID): CreateProjectResponse = {
+  inline def apply(projectArn: ARN, projectId: ID): CreateProjectResponse = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProjectResponse]
   }
   
-  @scala.inline
-  implicit class CreateProjectResponseMutableBuilder[Self <: CreateProjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProjectResponse](x: Self) {
     
-    @scala.inline
-    def setProjectArn(value: ARN): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: ARN): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
   }
 }

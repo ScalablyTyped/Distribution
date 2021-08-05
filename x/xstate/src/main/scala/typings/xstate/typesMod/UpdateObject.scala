@@ -16,20 +16,16 @@ trait UpdateObject
 }
 object UpdateObject {
   
-  @scala.inline
-  def apply(id: String | Double, state: State[js.Any, js.Any, js.Any, ContextAny], `type`: String): UpdateObject = {
+  inline def apply(id: String | Double, state: State[js.Any, js.Any, js.Any, ContextAny], `type`: String): UpdateObject = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateObject]
   }
   
-  @scala.inline
-  implicit class UpdateObjectMutableBuilder[Self <: UpdateObject] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateObject](x: Self) {
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State[js.Any, js.Any, js.Any, ContextAny]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State[js.Any, js.Any, js.Any, ContextAny]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

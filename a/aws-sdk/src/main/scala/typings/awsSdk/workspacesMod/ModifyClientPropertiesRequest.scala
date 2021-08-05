@@ -18,19 +18,15 @@ trait ModifyClientPropertiesRequest extends StObject {
 }
 object ModifyClientPropertiesRequest {
   
-  @scala.inline
-  def apply(ClientProperties: ClientProperties, ResourceId: NonEmptyString): ModifyClientPropertiesRequest = {
+  inline def apply(ClientProperties: ClientProperties, ResourceId: NonEmptyString): ModifyClientPropertiesRequest = {
     val __obj = js.Dynamic.literal(ClientProperties = ClientProperties.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClientPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class ModifyClientPropertiesRequestMutableBuilder[Self <: ModifyClientPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClientPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setClientProperties(value: ClientProperties): Self = StObject.set(x, "ClientProperties", value.asInstanceOf[js.Any])
+    inline def setClientProperties(value: ClientProperties): Self = StObject.set(x, "ClientProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

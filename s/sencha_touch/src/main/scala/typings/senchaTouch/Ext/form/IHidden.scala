@@ -9,8 +9,7 @@ trait IHidden
      with typings.senchaTouch.Ext.field.IText
 object IHidden {
   
-  @scala.inline
-  def apply(): IHidden = {
+  inline def apply(): IHidden = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHidden]
   }

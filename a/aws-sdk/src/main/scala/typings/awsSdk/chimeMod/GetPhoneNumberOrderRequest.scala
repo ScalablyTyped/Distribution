@@ -13,16 +13,13 @@ trait GetPhoneNumberOrderRequest extends StObject {
 }
 object GetPhoneNumberOrderRequest {
   
-  @scala.inline
-  def apply(PhoneNumberOrderId: GuidString): GetPhoneNumberOrderRequest = {
+  inline def apply(PhoneNumberOrderId: GuidString): GetPhoneNumberOrderRequest = {
     val __obj = js.Dynamic.literal(PhoneNumberOrderId = PhoneNumberOrderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPhoneNumberOrderRequest]
   }
   
-  @scala.inline
-  implicit class GetPhoneNumberOrderRequestMutableBuilder[Self <: GetPhoneNumberOrderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPhoneNumberOrderRequest](x: Self) {
     
-    @scala.inline
-    def setPhoneNumberOrderId(value: GuidString): Self = StObject.set(x, "PhoneNumberOrderId", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberOrderId(value: GuidString): Self = StObject.set(x, "PhoneNumberOrderId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait CardViewBatchEditCardInsertingEventArgs
 }
 object CardViewBatchEditCardInsertingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, sender: Control, visibleIndex: Double): CardViewBatchEditCardInsertingEventArgs = {
+  inline def apply(cancel: Boolean, sender: Control, visibleIndex: Double): CardViewBatchEditCardInsertingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardViewBatchEditCardInsertingEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewBatchEditCardInsertingEventArgsMutableBuilder[Self <: CardViewBatchEditCardInsertingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewBatchEditCardInsertingEventArgs](x: Self) {
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

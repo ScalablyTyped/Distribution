@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.Window")
 @js.native
-class Window protected ()
+/* private */ class Window ()
   extends StObject
      with typings.activexInfopath.InfoPath.Window

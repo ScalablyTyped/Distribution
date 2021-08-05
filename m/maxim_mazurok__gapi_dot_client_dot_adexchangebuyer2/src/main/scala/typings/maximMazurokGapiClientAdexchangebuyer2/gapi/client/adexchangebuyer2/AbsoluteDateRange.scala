@@ -14,25 +14,19 @@ trait AbsoluteDateRange extends StObject {
 }
 object AbsoluteDateRange {
   
-  @scala.inline
-  def apply(): AbsoluteDateRange = {
+  inline def apply(): AbsoluteDateRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AbsoluteDateRange]
   }
   
-  @scala.inline
-  implicit class AbsoluteDateRangeMutableBuilder[Self <: AbsoluteDateRange] (val x: Self) extends AnyVal {
+  extension [Self <: AbsoluteDateRange](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

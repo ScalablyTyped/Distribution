@@ -12,19 +12,15 @@ trait CurrentRefinement extends StObject {
 }
 object CurrentRefinement {
   
-  @scala.inline
-  def apply(currentRefinement: String, items: Unit): CurrentRefinement = {
+  inline def apply(currentRefinement: String, items: Unit): CurrentRefinement = {
     val __obj = js.Dynamic.literal(currentRefinement = currentRefinement.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentRefinement]
   }
   
-  @scala.inline
-  implicit class CurrentRefinementMutableBuilder[Self <: CurrentRefinement] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentRefinement](x: Self) {
     
-    @scala.inline
-    def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
+    inline def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: Unit): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Unit): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

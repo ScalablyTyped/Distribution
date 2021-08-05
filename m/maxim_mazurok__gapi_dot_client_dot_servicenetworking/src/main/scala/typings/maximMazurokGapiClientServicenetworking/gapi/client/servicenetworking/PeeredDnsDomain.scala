@@ -17,25 +17,19 @@ trait PeeredDnsDomain extends StObject {
 }
 object PeeredDnsDomain {
   
-  @scala.inline
-  def apply(): PeeredDnsDomain = {
+  inline def apply(): PeeredDnsDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PeeredDnsDomain]
   }
   
-  @scala.inline
-  implicit class PeeredDnsDomainMutableBuilder[Self <: PeeredDnsDomain] (val x: Self) extends AnyVal {
+  extension [Self <: PeeredDnsDomain](x: Self) {
     
-    @scala.inline
-    def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
+    inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
+    inline def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

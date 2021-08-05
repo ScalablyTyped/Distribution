@@ -10,19 +10,15 @@ trait AttachmentsToolbarButtonEvent extends StObject {
 }
 object AttachmentsToolbarButtonEvent {
   
-  @scala.inline
-  def apply(attachmentCardViews: js.Array[AttachmentCardView]): AttachmentsToolbarButtonEvent = {
+  inline def apply(attachmentCardViews: js.Array[AttachmentCardView]): AttachmentsToolbarButtonEvent = {
     val __obj = js.Dynamic.literal(attachmentCardViews = attachmentCardViews.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentsToolbarButtonEvent]
   }
   
-  @scala.inline
-  implicit class AttachmentsToolbarButtonEventMutableBuilder[Self <: AttachmentsToolbarButtonEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentsToolbarButtonEvent](x: Self) {
     
-    @scala.inline
-    def setAttachmentCardViews(value: js.Array[AttachmentCardView]): Self = StObject.set(x, "attachmentCardViews", value.asInstanceOf[js.Any])
+    inline def setAttachmentCardViews(value: js.Array[AttachmentCardView]): Self = StObject.set(x, "attachmentCardViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentCardViewsVarargs(value: AttachmentCardView*): Self = StObject.set(x, "attachmentCardViews", js.Array(value :_*))
+    inline def setAttachmentCardViewsVarargs(value: AttachmentCardView*): Self = StObject.set(x, "attachmentCardViews", js.Array(value :_*))
   }
 }

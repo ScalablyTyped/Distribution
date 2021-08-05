@@ -26,25 +26,19 @@ trait StackHeaderInterpolationProps extends StObject {
 }
 object StackHeaderInterpolationProps {
   
-  @scala.inline
-  def apply(current: Progress, layouts: Header): StackHeaderInterpolationProps = {
+  inline def apply(current: Progress, layouts: Header): StackHeaderInterpolationProps = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], layouts = layouts.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackHeaderInterpolationProps]
   }
   
-  @scala.inline
-  implicit class StackHeaderInterpolationPropsMutableBuilder[Self <: StackHeaderInterpolationProps] (val x: Self) extends AnyVal {
+  extension [Self <: StackHeaderInterpolationProps](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayouts(value: Header): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
+    inline def setLayouts(value: Header): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: Progress): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Progress): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

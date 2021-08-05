@@ -16,22 +16,17 @@ trait SearchEntryRaw
 }
 object SearchEntryRaw {
   
-  @scala.inline
-  def apply(controls: js.Array[Control], dn: String): SearchEntryRaw = {
+  inline def apply(controls: js.Array[Control], dn: String): SearchEntryRaw = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], dn = dn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchEntryRaw]
   }
   
-  @scala.inline
-  implicit class SearchEntryRawMutableBuilder[Self <: SearchEntryRaw] (val x: Self) extends AnyVal {
+  extension [Self <: SearchEntryRaw](x: Self) {
     
-    @scala.inline
-    def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
     
-    @scala.inline
-    def setDn(value: String): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
+    inline def setDn(value: String): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
   }
 }

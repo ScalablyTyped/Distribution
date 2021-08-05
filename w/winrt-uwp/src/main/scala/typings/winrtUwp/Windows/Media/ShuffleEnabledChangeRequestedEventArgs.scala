@@ -12,16 +12,13 @@ trait ShuffleEnabledChangeRequestedEventArgs extends StObject {
 }
 object ShuffleEnabledChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(requestedShuffleEnabled: Boolean): ShuffleEnabledChangeRequestedEventArgs = {
+  inline def apply(requestedShuffleEnabled: Boolean): ShuffleEnabledChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(requestedShuffleEnabled = requestedShuffleEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShuffleEnabledChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class ShuffleEnabledChangeRequestedEventArgsMutableBuilder[Self <: ShuffleEnabledChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ShuffleEnabledChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequestedShuffleEnabled(value: Boolean): Self = StObject.set(x, "requestedShuffleEnabled", value.asInstanceOf[js.Any])
+    inline def setRequestedShuffleEnabled(value: Boolean): Self = StObject.set(x, "requestedShuffleEnabled", value.asInstanceOf[js.Any])
   }
 }

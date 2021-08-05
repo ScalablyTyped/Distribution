@@ -60,21 +60,16 @@ object zoneAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ZoneAssociationState): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
+    inline def get(name: String, id: Input[ID]): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
+    inline def get(name: String, id: Input[ID], state: ZoneAssociationState): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
+    inline def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
     
     /**
       * Returns true if the given object is an instance of ZoneAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean]
   }
   
   trait ZoneAssociationArgs extends StObject {
@@ -96,26 +91,20 @@ object zoneAssociationMod {
   }
   object ZoneAssociationArgs {
     
-    @scala.inline
-    def apply(vpcId: Input[String], zoneId: Input[String]): ZoneAssociationArgs = {
+    inline def apply(vpcId: Input[String], zoneId: Input[String]): ZoneAssociationArgs = {
       val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZoneAssociationArgs]
     }
     
-    @scala.inline
-    implicit class ZoneAssociationArgsMutableBuilder[Self <: ZoneAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ZoneAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
+      inline def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
+      inline def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,38 +132,28 @@ object zoneAssociationMod {
   }
   object ZoneAssociationState {
     
-    @scala.inline
-    def apply(): ZoneAssociationState = {
+    inline def apply(): ZoneAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZoneAssociationState]
     }
     
-    @scala.inline
-    implicit class ZoneAssociationStateMutableBuilder[Self <: ZoneAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: ZoneAssociationState](x: Self) {
       
-      @scala.inline
-      def setOwningAccount(value: Input[String]): Self = StObject.set(x, "owningAccount", value.asInstanceOf[js.Any])
+      inline def setOwningAccount(value: Input[String]): Self = StObject.set(x, "owningAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwningAccountUndefined: Self = StObject.set(x, "owningAccount", js.undefined)
+      inline def setOwningAccountUndefined: Self = StObject.set(x, "owningAccount", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
       
-      @scala.inline
-      def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
+      inline def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
+      inline def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+      inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
     }
   }
 }

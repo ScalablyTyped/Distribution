@@ -18,16 +18,13 @@ trait CreateTimeFieldCommand
 }
 object CreateTimeFieldCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): CreateTimeFieldCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): CreateTimeFieldCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[CreateTimeFieldCommand]
   }
   
-  @scala.inline
-  implicit class CreateTimeFieldCommandMutableBuilder[Self <: CreateTimeFieldCommand] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTimeFieldCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

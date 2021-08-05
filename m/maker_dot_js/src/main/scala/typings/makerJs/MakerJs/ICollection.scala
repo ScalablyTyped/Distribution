@@ -15,22 +15,17 @@ trait ICollection[K, T] extends StObject {
 }
 object ICollection {
   
-  @scala.inline
-  def apply[K, T](items: js.Array[T], key: K): ICollection[K, T] = {
+  inline def apply[K, T](items: js.Array[T], key: K): ICollection[K, T] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollection[K, T]]
   }
   
-  @scala.inline
-  implicit class ICollectionMutableBuilder[Self <: ICollection[?, ?], K, T] (val x: Self & (ICollection[K, T])) extends AnyVal {
+  extension [Self <: ICollection[?, ?], K, T](x: Self & (ICollection[K, T])) {
     
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

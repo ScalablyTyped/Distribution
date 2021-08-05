@@ -14,27 +14,22 @@ trait GridTemplateRowsProps[TLength] extends StObject {
 }
 object GridTemplateRowsProps {
   
-  @scala.inline
-  def apply[TLength](): GridTemplateRowsProps[TLength] = {
+  inline def apply[TLength](): GridTemplateRowsProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridTemplateRowsProps[TLength]]
   }
   
-  @scala.inline
-  implicit class GridTemplateRowsPropsMutableBuilder[Self <: GridTemplateRowsProps[?], TLength] (val x: Self & GridTemplateRowsProps[TLength]) extends AnyVal {
+  extension [Self <: GridTemplateRowsProps[?], TLength](x: Self & GridTemplateRowsProps[TLength]) {
     
-    @scala.inline
-    def setGridTemplateRows(
+    inline def setGridTemplateRows(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
+    inline def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
     
-    @scala.inline
-    def setGridTemplateRowsVarargs(
+    inline def setGridTemplateRowsVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ js.Any)*
     ): Self = StObject.set(x, "gridTemplateRows", js.Array(value :_*))
   }

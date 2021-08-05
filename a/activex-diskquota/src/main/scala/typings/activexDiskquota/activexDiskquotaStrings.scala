@@ -8,11 +8,9 @@ object activexDiskquotaStrings {
   
   @js.native
   sealed trait OnUserNameChanged extends StObject
-  @scala.inline
-  def OnUserNameChanged: OnUserNameChanged = "OnUserNameChanged".asInstanceOf[OnUserNameChanged]
+  inline def OnUserNameChanged: OnUserNameChanged = "OnUserNameChanged".asInstanceOf[OnUserNameChanged]
   
   @js.native
   sealed trait pUser extends StObject
-  @scala.inline
-  def pUser: pUser = "pUser".asInstanceOf[pUser]
+  inline def pUser: pUser = "pUser".asInstanceOf[pUser]
 }

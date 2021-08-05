@@ -30,19 +30,13 @@ object NavigationActions {
   @js.native
   val SET_PARAMS: NavigationSlashSET_PARAMS = js.native
   
-  @scala.inline
-  def back(): NavigationBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[NavigationBackAction]
-  @scala.inline
-  def back(options: NavigationBackActionPayload): NavigationBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("back")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationBackAction]
+  inline def back(): NavigationBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[NavigationBackAction]
+  inline def back(options: NavigationBackActionPayload): NavigationBackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("back")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationBackAction]
   
-  @scala.inline
-  def init(): NavigationInitAction = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[NavigationInitAction]
-  @scala.inline
-  def init(options: NavigationInitActionPayload): NavigationInitAction = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationInitAction]
+  inline def init(): NavigationInitAction = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[NavigationInitAction]
+  inline def init(options: NavigationInitActionPayload): NavigationInitAction = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationInitAction]
   
-  @scala.inline
-  def navigate(options: NavigationNavigateActionPayload): NavigationNavigateAction = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigateAction]
+  inline def navigate(options: NavigationNavigateActionPayload): NavigationNavigateAction = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigateAction]
   
-  @scala.inline
-  def setParams(options: NavigationSetParamsActionPayload): NavigationSetParamsAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationSetParamsAction]
+  inline def setParams(options: NavigationSetParamsActionPayload): NavigationSetParamsAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationSetParamsAction]
 }

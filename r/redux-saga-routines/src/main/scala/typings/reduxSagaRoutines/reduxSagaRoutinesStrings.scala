@@ -11,34 +11,29 @@ object reduxSagaRoutinesStrings {
   sealed trait FAILURE
     extends StObject
        with RoutineStages
-  @scala.inline
-  def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
+  inline def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
   
   @js.native
   sealed trait FULFILL
     extends StObject
        with RoutineStages
-  @scala.inline
-  def FULFILL: FULFILL = "FULFILL".asInstanceOf[FULFILL]
+  inline def FULFILL: FULFILL = "FULFILL".asInstanceOf[FULFILL]
   
   @js.native
   sealed trait REQUEST
     extends StObject
        with RoutineStages
-  @scala.inline
-  def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
+  inline def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
   
   @js.native
   sealed trait SUCCESS
     extends StObject
        with RoutineStages
-  @scala.inline
-  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   
   @js.native
   sealed trait TRIGGER
     extends StObject
        with RoutineStages
-  @scala.inline
-  def TRIGGER: TRIGGER = "TRIGGER".asInstanceOf[TRIGGER]
+  inline def TRIGGER: TRIGGER = "TRIGGER".asInstanceOf[TRIGGER]
 }

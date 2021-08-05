@@ -13,19 +13,15 @@ trait PermissionsBoundaryDecisionDetail extends StObject {
 }
 object PermissionsBoundaryDecisionDetail {
   
-  @scala.inline
-  def apply(): PermissionsBoundaryDecisionDetail = {
+  inline def apply(): PermissionsBoundaryDecisionDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionsBoundaryDecisionDetail]
   }
   
-  @scala.inline
-  implicit class PermissionsBoundaryDecisionDetailMutableBuilder[Self <: PermissionsBoundaryDecisionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionsBoundaryDecisionDetail](x: Self) {
     
-    @scala.inline
-    def setAllowedByPermissionsBoundary(value: booleanType): Self = StObject.set(x, "AllowedByPermissionsBoundary", value.asInstanceOf[js.Any])
+    inline def setAllowedByPermissionsBoundary(value: booleanType): Self = StObject.set(x, "AllowedByPermissionsBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedByPermissionsBoundaryUndefined: Self = StObject.set(x, "AllowedByPermissionsBoundary", js.undefined)
+    inline def setAllowedByPermissionsBoundaryUndefined: Self = StObject.set(x, "AllowedByPermissionsBoundary", js.undefined)
   }
 }

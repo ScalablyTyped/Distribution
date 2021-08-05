@@ -18,25 +18,19 @@ trait LoadBalancerState extends StObject {
 }
 object LoadBalancerState {
   
-  @scala.inline
-  def apply(): LoadBalancerState = {
+  inline def apply(): LoadBalancerState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerState]
   }
   
-  @scala.inline
-  implicit class LoadBalancerStateMutableBuilder[Self <: LoadBalancerState] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerState](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerName(value: XmlStringMaxLen255): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: XmlStringMaxLen255): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
+    inline def setLoadBalancerNameUndefined: Self = StObject.set(x, "LoadBalancerName", js.undefined)
     
-    @scala.inline
-    def setState(value: XmlStringMaxLen255): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: XmlStringMaxLen255): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

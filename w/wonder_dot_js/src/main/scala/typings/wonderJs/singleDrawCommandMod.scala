@@ -21,7 +21,6 @@ object singleDrawCommandMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): SingleDrawCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SingleDrawCommand]
+    inline def create(): SingleDrawCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SingleDrawCommand]
   }
 }

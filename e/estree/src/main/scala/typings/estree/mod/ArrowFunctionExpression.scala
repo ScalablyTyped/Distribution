@@ -17,20 +17,16 @@ trait ArrowFunctionExpression
 }
 object ArrowFunctionExpression {
   
-  @scala.inline
-  def apply(body: BlockStatement | Expression, expression: Boolean, params: js.Array[Pattern]): ArrowFunctionExpression = {
+  inline def apply(body: BlockStatement | Expression, expression: Boolean, params: js.Array[Pattern]): ArrowFunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[ArrowFunctionExpression]
   }
   
-  @scala.inline
-  implicit class ArrowFunctionExpressionMutableBuilder[Self <: ArrowFunctionExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ArrowFunctionExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Boolean): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Boolean): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ArrowFunctionExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ArrowFunctionExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

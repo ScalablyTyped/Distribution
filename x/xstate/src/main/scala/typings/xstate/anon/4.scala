@@ -13,19 +13,16 @@ trait `4`[TEvent /* <: EventObject */] extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply[TEvent /* <: EventObject */](
+  inline def apply[TEvent /* <: EventObject */](
     event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
   ): `4`[TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[`4`[TEvent]]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`[?], TEvent /* <: EventObject */] (val x: Self & `4`[TEvent]) extends AnyVal {
+  extension [Self <: `4`[?], TEvent /* <: EventObject */](x: Self & `4`[TEvent]) {
     
-    @scala.inline
-    def setEvent(
+    inline def setEvent(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
     ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }

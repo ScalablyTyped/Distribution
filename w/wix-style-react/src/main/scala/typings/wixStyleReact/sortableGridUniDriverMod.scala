@@ -17,8 +17,7 @@ object sortableGridUniDriverMod {
   }
   object SortableGridUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       endFixedElementExists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object sortableGridUniDriverMod {
       __obj.asInstanceOf[SortableGridUniDriver]
     }
     
-    @scala.inline
-    implicit class SortableGridUniDriverMutableBuilder[Self <: SortableGridUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SortableGridUniDriver](x: Self) {
       
-      @scala.inline
-      def setEndFixedElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "endFixedElementExists", js.Any.fromFunction0(value))
+      inline def setEndFixedElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "endFixedElementExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartFixedElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "startFixedElementExists", js.Any.fromFunction0(value))
+      inline def setStartFixedElementExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "startFixedElementExists", js.Any.fromFunction0(value))
     }
   }
 }

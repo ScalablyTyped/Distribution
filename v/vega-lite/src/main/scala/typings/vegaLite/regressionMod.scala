@@ -15,6 +15,6 @@ object regressionMod {
     
     def assemble(): typings.vegaTypings.transformMod.RegressionTransform = js.native
     
-    var transform: js.Any = js.native
+    /* private */ var transform: js.Any = js.native
   }
 }

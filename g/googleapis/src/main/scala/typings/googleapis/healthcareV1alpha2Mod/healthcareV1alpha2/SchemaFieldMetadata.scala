@@ -29,28 +29,21 @@ trait SchemaFieldMetadata extends StObject {
 }
 object SchemaFieldMetadata {
   
-  @scala.inline
-  def apply(): SchemaFieldMetadata = {
+  inline def apply(): SchemaFieldMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFieldMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaFieldMetadataMutableBuilder[Self <: SchemaFieldMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldMetadata](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

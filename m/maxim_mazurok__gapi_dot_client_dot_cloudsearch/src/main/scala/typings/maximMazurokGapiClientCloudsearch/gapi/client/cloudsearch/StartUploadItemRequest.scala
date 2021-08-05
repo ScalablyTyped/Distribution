@@ -14,25 +14,19 @@ trait StartUploadItemRequest extends StObject {
 }
 object StartUploadItemRequest {
   
-  @scala.inline
-  def apply(): StartUploadItemRequest = {
+  inline def apply(): StartUploadItemRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartUploadItemRequest]
   }
   
-  @scala.inline
-  implicit class StartUploadItemRequestMutableBuilder[Self <: StartUploadItemRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartUploadItemRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
+    inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
-    @scala.inline
-    def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
   }
 }

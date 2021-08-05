@@ -10,6 +10,5 @@ object ipcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeIPCLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeIPCLogger")().asInstanceOf[Unit]
+  inline def initializeIPCLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeIPCLogger")().asInstanceOf[Unit]
 }

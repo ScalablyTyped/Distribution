@@ -10,16 +10,13 @@ trait UsersBlockEndpoint extends StObject {
 }
 object UsersBlockEndpoint {
   
-  @scala.inline
-  def apply(username: String): UsersBlockEndpoint = {
+  inline def apply(username: String): UsersBlockEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersBlockEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersBlockEndpointMutableBuilder[Self <: UsersBlockEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersBlockEndpoint](x: Self) {
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,8 @@ object betweenMatcherMod {
   class BetweenMatcher protected () extends Matcher {
     def this(min: Double, max: Double) = this()
     
-    var max: js.Any = js.native
+    /* private */ var max: js.Any = js.native
     
-    var min: js.Any = js.native
+    /* private */ var min: js.Any = js.native
   }
 }

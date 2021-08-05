@@ -20,25 +20,19 @@ trait OrgsBlockUserRequestOptions extends StObject {
 }
 object OrgsBlockUserRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsBlockUserRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): OrgsBlockUserRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/orgs/:org/blocks/:username")
     __obj.asInstanceOf[OrgsBlockUserRequestOptions]
   }
   
-  @scala.inline
-  implicit class OrgsBlockUserRequestOptionsMutableBuilder[Self <: OrgsBlockUserRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsBlockUserRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashorgsSlashColonorgSlashblocksSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashorgsSlashColonorgSlashblocksSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

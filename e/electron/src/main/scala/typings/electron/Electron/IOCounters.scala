@@ -39,8 +39,7 @@ trait IOCounters extends StObject {
 }
 object IOCounters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     otherOperationCount: Double,
     otherTransferCount: Double,
     readOperationCount: Double,
@@ -52,25 +51,18 @@ object IOCounters {
     __obj.asInstanceOf[IOCounters]
   }
   
-  @scala.inline
-  implicit class IOCountersMutableBuilder[Self <: IOCounters] (val x: Self) extends AnyVal {
+  extension [Self <: IOCounters](x: Self) {
     
-    @scala.inline
-    def setOtherOperationCount(value: Double): Self = StObject.set(x, "otherOperationCount", value.asInstanceOf[js.Any])
+    inline def setOtherOperationCount(value: Double): Self = StObject.set(x, "otherOperationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherTransferCount(value: Double): Self = StObject.set(x, "otherTransferCount", value.asInstanceOf[js.Any])
+    inline def setOtherTransferCount(value: Double): Self = StObject.set(x, "otherTransferCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOperationCount(value: Double): Self = StObject.set(x, "readOperationCount", value.asInstanceOf[js.Any])
+    inline def setReadOperationCount(value: Double): Self = StObject.set(x, "readOperationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTransferCount(value: Double): Self = StObject.set(x, "readTransferCount", value.asInstanceOf[js.Any])
+    inline def setReadTransferCount(value: Double): Self = StObject.set(x, "readTransferCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteOperationCount(value: Double): Self = StObject.set(x, "writeOperationCount", value.asInstanceOf[js.Any])
+    inline def setWriteOperationCount(value: Double): Self = StObject.set(x, "writeOperationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteTransferCount(value: Double): Self = StObject.set(x, "writeTransferCount", value.asInstanceOf[js.Any])
+    inline def setWriteTransferCount(value: Double): Self = StObject.set(x, "writeTransferCount", value.asInstanceOf[js.Any])
   }
 }

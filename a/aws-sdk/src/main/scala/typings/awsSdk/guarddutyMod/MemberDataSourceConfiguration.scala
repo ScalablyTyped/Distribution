@@ -18,19 +18,15 @@ trait MemberDataSourceConfiguration extends StObject {
 }
 object MemberDataSourceConfiguration {
   
-  @scala.inline
-  def apply(AccountId: AccountId, DataSources: DataSourceConfigurationsResult): MemberDataSourceConfiguration = {
+  inline def apply(AccountId: AccountId, DataSources: DataSourceConfigurationsResult): MemberDataSourceConfiguration = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], DataSources = DataSources.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberDataSourceConfiguration]
   }
   
-  @scala.inline
-  implicit class MemberDataSourceConfigurationMutableBuilder[Self <: MemberDataSourceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MemberDataSourceConfiguration](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSources(value: DataSourceConfigurationsResult): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: DataSourceConfigurationsResult): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
   }
 }

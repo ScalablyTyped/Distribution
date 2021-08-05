@@ -19,6 +19,5 @@ object View {
   @JSImport("antd-mobile", "View.defaultProps")
   @js.native
   def defaultProps: Component = js.native
-  @scala.inline
-  def defaultProps_=(x: Component): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Component): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

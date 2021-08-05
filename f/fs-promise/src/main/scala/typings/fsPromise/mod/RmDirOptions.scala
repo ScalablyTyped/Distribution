@@ -9,8 +9,7 @@ trait RmDirOptions
      with typings.node.fsMod.RmDirOptions
 object RmDirOptions {
   
-  @scala.inline
-  def apply(): RmDirOptions = {
+  inline def apply(): RmDirOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RmDirOptions]
   }

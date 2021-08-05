@@ -32,44 +32,32 @@ object passwordInputMod extends Shortcut {
   }
   object PasswordInputProps {
     
-    @scala.inline
-    def apply(id: String): PasswordInputProps = {
+    inline def apply(id: String): PasswordInputProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[PasswordInputProps]
     }
     
-    @scala.inline
-    implicit class PasswordInputPropsMutableBuilder[Self <: PasswordInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: PasswordInputProps](x: Self) {
       
-      @scala.inline
-      def setHidePasswordLabel(value: String): Self = StObject.set(x, "hidePasswordLabel", value.asInstanceOf[js.Any])
+      inline def setHidePasswordLabel(value: String): Self = StObject.set(x, "hidePasswordLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePasswordLabelUndefined: Self = StObject.set(x, "hidePasswordLabel", js.undefined)
+      inline def setHidePasswordLabelUndefined: Self = StObject.set(x, "hidePasswordLabel", js.undefined)
       
-      @scala.inline
-      def setShowPasswordLabel(value: String): Self = StObject.set(x, "showPasswordLabel", value.asInstanceOf[js.Any])
+      inline def setShowPasswordLabel(value: String): Self = StObject.set(x, "showPasswordLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPasswordLabelUndefined: Self = StObject.set(x, "showPasswordLabel", js.undefined)
+      inline def setShowPasswordLabelUndefined: Self = StObject.set(x, "showPasswordLabel", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTooltipAlignment(value: TooltipAlignment): Self = StObject.set(x, "tooltipAlignment", value.asInstanceOf[js.Any])
+      inline def setTooltipAlignment(value: TooltipAlignment): Self = StObject.set(x, "tooltipAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipAlignmentUndefined: Self = StObject.set(x, "tooltipAlignment", js.undefined)
+      inline def setTooltipAlignmentUndefined: Self = StObject.set(x, "tooltipAlignment", js.undefined)
       
-      @scala.inline
-      def setTooltipPosition(value: TooltipPosition): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+      inline def setTooltipPosition(value: TooltipPosition): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+      inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
     }
   }
   

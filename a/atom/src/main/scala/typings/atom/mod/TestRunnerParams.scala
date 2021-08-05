@@ -33,8 +33,7 @@ trait TestRunnerParams extends StObject {
 }
 object TestRunnerParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buildAtomEnvironment: BuildEnvironmentOptions => AtomEnvironment,
     buildDefaultApplicationDelegate: () => js.Object,
     headless: Boolean,
@@ -45,25 +44,18 @@ object TestRunnerParams {
     __obj.asInstanceOf[TestRunnerParams]
   }
   
-  @scala.inline
-  implicit class TestRunnerParamsMutableBuilder[Self <: TestRunnerParams] (val x: Self) extends AnyVal {
+  extension [Self <: TestRunnerParams](x: Self) {
     
-    @scala.inline
-    def setBuildAtomEnvironment(value: BuildEnvironmentOptions => AtomEnvironment): Self = StObject.set(x, "buildAtomEnvironment", js.Any.fromFunction1(value))
+    inline def setBuildAtomEnvironment(value: BuildEnvironmentOptions => AtomEnvironment): Self = StObject.set(x, "buildAtomEnvironment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuildDefaultApplicationDelegate(value: () => js.Object): Self = StObject.set(x, "buildDefaultApplicationDelegate", js.Any.fromFunction0(value))
+    inline def setBuildDefaultApplicationDelegate(value: () => js.Object): Self = StObject.set(x, "buildDefaultApplicationDelegate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+    inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
+    inline def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPaths(value: js.Array[String]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
+    inline def setTestPaths(value: js.Array[String]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPathsVarargs(value: String*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
+    inline def setTestPathsVarargs(value: String*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
   }
 }

@@ -25,20 +25,16 @@ object mod extends Shortcut {
   }
   object Component {
     
-    @scala.inline
-    def apply(key: String, value: js.Any): Component = {
+    inline def apply(key: String, value: js.Any): Component = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Component]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+    extension [Self <: Component](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,77 +82,54 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAudio(value: ExcludeIOS11): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: ExcludeIOS11): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERRORUndefined: Self = StObject.set(x, "ERROR", js.undefined)
+      inline def setERRORUndefined: Self = StObject.set(x, "ERROR", js.undefined)
       
-      @scala.inline
-      def setEXCLUDED(value: String): Self = StObject.set(x, "EXCLUDED", value.asInstanceOf[js.Any])
+      inline def setEXCLUDED(value: String): Self = StObject.set(x, "EXCLUDED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEXCLUDEDUndefined: Self = StObject.set(x, "EXCLUDED", js.undefined)
+      inline def setEXCLUDEDUndefined: Self = StObject.set(x, "EXCLUDED", js.undefined)
       
-      @scala.inline
-      def setExcludes(value: AdBlock): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+      inline def setExcludes(value: AdBlock): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+      inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
       
-      @scala.inline
-      def setExtraComponents(value: js.Array[GetData]): Self = StObject.set(x, "extraComponents", value.asInstanceOf[js.Any])
+      inline def setExtraComponents(value: js.Array[GetData]): Self = StObject.set(x, "extraComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraComponentsUndefined: Self = StObject.set(x, "extraComponents", js.undefined)
+      inline def setExtraComponentsUndefined: Self = StObject.set(x, "extraComponents", js.undefined)
       
-      @scala.inline
-      def setExtraComponentsVarargs(value: GetData*): Self = StObject.set(x, "extraComponents", js.Array(value :_*))
+      inline def setExtraComponentsVarargs(value: GetData*): Self = StObject.set(x, "extraComponents", js.Array(value :_*))
       
-      @scala.inline
-      def setFonts(value: ExtendedJsFonts): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+      inline def setFonts(value: ExtendedJsFonts): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+      inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      @scala.inline
-      def setNOT_AVAILABLE(value: String): Self = StObject.set(x, "NOT_AVAILABLE", value.asInstanceOf[js.Any])
+      inline def setNOT_AVAILABLE(value: String): Self = StObject.set(x, "NOT_AVAILABLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_AVAILABLEUndefined: Self = StObject.set(x, "NOT_AVAILABLE", js.undefined)
+      inline def setNOT_AVAILABLEUndefined: Self = StObject.set(x, "NOT_AVAILABLE", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: ExcludeIE): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: ExcludeIE): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPreprocessor(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "preprocessor", js.Any.fromFunction2(value))
+      inline def setPreprocessor(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "preprocessor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreprocessorUndefined: Self = StObject.set(x, "preprocessor", js.undefined)
+      inline def setPreprocessorUndefined: Self = StObject.set(x, "preprocessor", js.undefined)
       
-      @scala.inline
-      def setScreen(value: DetectScreenOrientation): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: DetectScreenOrientation): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+      inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     }
   }
   
@@ -168,20 +141,16 @@ object mod extends Shortcut {
   }
   object V18Component {
     
-    @scala.inline
-    def apply(key: String, value: String): V18Component = {
+    inline def apply(key: String, value: String): V18Component = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[V18Component]
     }
     
-    @scala.inline
-    implicit class V18ComponentMutableBuilder[Self <: V18Component] (val x: Self) extends AnyVal {
+    extension [Self <: V18Component](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

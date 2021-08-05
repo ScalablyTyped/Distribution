@@ -27,8 +27,7 @@ object editableRowUniDriverMod {
   }
   object EditableRowUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickApprove: () => js.Promise[Unit],
       clickCancel: () => js.Promise[Unit],
@@ -44,29 +43,21 @@ object editableRowUniDriverMod {
       __obj.asInstanceOf[EditableRowUniDriver]
     }
     
-    @scala.inline
-    implicit class EditableRowUniDriverMutableBuilder[Self <: EditableRowUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: EditableRowUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickApprove(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
+      inline def setClickApprove(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
+      inline def setClickCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsApproveDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isApproveDisabled", js.Any.fromFunction0(value))
+      inline def setIsApproveDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isApproveDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsInputFocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isInputFocused", js.Any.fromFunction0(value))
+      inline def setIsInputFocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isInputFocused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeyDown(value: Double => js.Promise[Unit]): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+      inline def setKeyDown(value: Double => js.Promise[Unit]): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetText(value: String => js.Promise[Unit]): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => js.Promise[Unit]): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     }
   }
 }

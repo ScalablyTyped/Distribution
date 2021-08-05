@@ -24,8 +24,7 @@ trait Swipe extends StObject {
 }
 object Swipe {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachEvents: () => Unit,
     getNumSlides: () => Double,
     getPos: () => Double,
@@ -39,31 +38,22 @@ object Swipe {
     __obj.asInstanceOf[Swipe]
   }
   
-  @scala.inline
-  implicit class SwipeMutableBuilder[Self <: Swipe] (val x: Self) extends AnyVal {
+  extension [Self <: Swipe](x: Self) {
     
-    @scala.inline
-    def setAttachEvents(value: () => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction0(value))
+    inline def setAttachEvents(value: () => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumSlides(value: () => Double): Self = StObject.set(x, "getNumSlides", js.Any.fromFunction0(value))
+    inline def setGetNumSlides(value: () => Double): Self = StObject.set(x, "getNumSlides", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPos(value: () => Double): Self = StObject.set(x, "getPos", js.Any.fromFunction0(value))
+    inline def setGetPos(value: () => Double): Self = StObject.set(x, "getPos", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKill(value: () => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
+    inline def setKill(value: () => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+    inline def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
+    inline def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlide(value: (Double, Double) => Unit): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
+    inline def setSlide(value: (Double, Double) => Unit): Self = StObject.set(x, "slide", js.Any.fromFunction2(value))
   }
 }

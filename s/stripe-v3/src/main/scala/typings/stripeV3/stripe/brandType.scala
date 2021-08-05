@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait brandType extends StObject
 object brandType {
   
-  @scala.inline
-  def `American Express`: typings.stripeV3.stripeV3Strings.`American Express` = ("American Express").asInstanceOf[typings.stripeV3.stripeV3Strings.`American Express`]
+  inline def `American Express`: typings.stripeV3.stripeV3Strings.`American Express` = ("American Express").asInstanceOf[typings.stripeV3.stripeV3Strings.`American Express`]
   
-  @scala.inline
-  def `Diners Club`: typings.stripeV3.stripeV3Strings.`Diners Club` = ("Diners Club").asInstanceOf[typings.stripeV3.stripeV3Strings.`Diners Club`]
+  inline def `Diners Club`: typings.stripeV3.stripeV3Strings.`Diners Club` = ("Diners Club").asInstanceOf[typings.stripeV3.stripeV3Strings.`Diners Club`]
   
-  @scala.inline
-  def Discover: typings.stripeV3.stripeV3Strings.Discover = "Discover".asInstanceOf[typings.stripeV3.stripeV3Strings.Discover]
+  inline def Discover: typings.stripeV3.stripeV3Strings.Discover = "Discover".asInstanceOf[typings.stripeV3.stripeV3Strings.Discover]
   
-  @scala.inline
-  def JCB: typings.stripeV3.stripeV3Strings.JCB = "JCB".asInstanceOf[typings.stripeV3.stripeV3Strings.JCB]
+  inline def JCB: typings.stripeV3.stripeV3Strings.JCB = "JCB".asInstanceOf[typings.stripeV3.stripeV3Strings.JCB]
   
-  @scala.inline
-  def MasterCard: typings.stripeV3.stripeV3Strings.MasterCard = "MasterCard".asInstanceOf[typings.stripeV3.stripeV3Strings.MasterCard]
+  inline def MasterCard: typings.stripeV3.stripeV3Strings.MasterCard = "MasterCard".asInstanceOf[typings.stripeV3.stripeV3Strings.MasterCard]
   
-  @scala.inline
-  def Unknown: typings.stripeV3.stripeV3Strings.Unknown = "Unknown".asInstanceOf[typings.stripeV3.stripeV3Strings.Unknown]
+  inline def Unknown: typings.stripeV3.stripeV3Strings.Unknown = "Unknown".asInstanceOf[typings.stripeV3.stripeV3Strings.Unknown]
   
-  @scala.inline
-  def Visa: typings.stripeV3.stripeV3Strings.Visa = "Visa".asInstanceOf[typings.stripeV3.stripeV3Strings.Visa]
+  inline def Visa: typings.stripeV3.stripeV3Strings.Visa = "Visa".asInstanceOf[typings.stripeV3.stripeV3Strings.Visa]
 }

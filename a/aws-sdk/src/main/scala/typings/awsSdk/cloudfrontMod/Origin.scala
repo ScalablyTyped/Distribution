@@ -53,61 +53,43 @@ trait Origin extends StObject {
 }
 object Origin {
   
-  @scala.inline
-  def apply(DomainName: String, Id: String): Origin = {
+  inline def apply(DomainName: String, Id: String): Origin = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Origin]
   }
   
-  @scala.inline
-  implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+  extension [Self <: Origin](x: Self) {
     
-    @scala.inline
-    def setConnectionAttempts(value: integer): Self = StObject.set(x, "ConnectionAttempts", value.asInstanceOf[js.Any])
+    inline def setConnectionAttempts(value: integer): Self = StObject.set(x, "ConnectionAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionAttemptsUndefined: Self = StObject.set(x, "ConnectionAttempts", js.undefined)
+    inline def setConnectionAttemptsUndefined: Self = StObject.set(x, "ConnectionAttempts", js.undefined)
     
-    @scala.inline
-    def setConnectionTimeout(value: integer): Self = StObject.set(x, "ConnectionTimeout", value.asInstanceOf[js.Any])
+    inline def setConnectionTimeout(value: integer): Self = StObject.set(x, "ConnectionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTimeoutUndefined: Self = StObject.set(x, "ConnectionTimeout", js.undefined)
+    inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "ConnectionTimeout", js.undefined)
     
-    @scala.inline
-    def setCustomHeaders(value: CustomHeaders): Self = StObject.set(x, "CustomHeaders", value.asInstanceOf[js.Any])
+    inline def setCustomHeaders(value: CustomHeaders): Self = StObject.set(x, "CustomHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomHeadersUndefined: Self = StObject.set(x, "CustomHeaders", js.undefined)
+    inline def setCustomHeadersUndefined: Self = StObject.set(x, "CustomHeaders", js.undefined)
     
-    @scala.inline
-    def setCustomOriginConfig(value: CustomOriginConfig): Self = StObject.set(x, "CustomOriginConfig", value.asInstanceOf[js.Any])
+    inline def setCustomOriginConfig(value: CustomOriginConfig): Self = StObject.set(x, "CustomOriginConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomOriginConfigUndefined: Self = StObject.set(x, "CustomOriginConfig", js.undefined)
+    inline def setCustomOriginConfigUndefined: Self = StObject.set(x, "CustomOriginConfig", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginPath(value: String): Self = StObject.set(x, "OriginPath", value.asInstanceOf[js.Any])
+    inline def setOriginPath(value: String): Self = StObject.set(x, "OriginPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginPathUndefined: Self = StObject.set(x, "OriginPath", js.undefined)
+    inline def setOriginPathUndefined: Self = StObject.set(x, "OriginPath", js.undefined)
     
-    @scala.inline
-    def setOriginShield(value: OriginShield): Self = StObject.set(x, "OriginShield", value.asInstanceOf[js.Any])
+    inline def setOriginShield(value: OriginShield): Self = StObject.set(x, "OriginShield", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginShieldUndefined: Self = StObject.set(x, "OriginShield", js.undefined)
+    inline def setOriginShieldUndefined: Self = StObject.set(x, "OriginShield", js.undefined)
     
-    @scala.inline
-    def setS3OriginConfig(value: S3OriginConfig): Self = StObject.set(x, "S3OriginConfig", value.asInstanceOf[js.Any])
+    inline def setS3OriginConfig(value: S3OriginConfig): Self = StObject.set(x, "S3OriginConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3OriginConfigUndefined: Self = StObject.set(x, "S3OriginConfig", js.undefined)
+    inline def setS3OriginConfigUndefined: Self = StObject.set(x, "S3OriginConfig", js.undefined)
   }
 }

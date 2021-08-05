@@ -19,19 +19,15 @@ trait JSONDataSourceSettings
 }
 object JSONDataSourceSettings {
   
-  @scala.inline
-  def apply(): JSONDataSourceSettings = {
+  inline def apply(): JSONDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONDataSourceSettings]
   }
   
-  @scala.inline
-  implicit class JSONDataSourceSettingsMutableBuilder[Self <: JSONDataSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: JSONDataSourceSettings](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

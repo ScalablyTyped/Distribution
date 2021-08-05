@@ -30,19 +30,16 @@ trait XFastSAXSerializable extends StObject {
 }
 object XFastSAXSerializable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fastSerialize: (XFastDocumentHandler, XFastTokenHandler, SeqEquiv[StringPair], SeqEquiv[Pair[String, Double]]) => Unit
   ): XFastSAXSerializable = {
     val __obj = js.Dynamic.literal(fastSerialize = js.Any.fromFunction4(fastSerialize))
     __obj.asInstanceOf[XFastSAXSerializable]
   }
   
-  @scala.inline
-  implicit class XFastSAXSerializableMutableBuilder[Self <: XFastSAXSerializable] (val x: Self) extends AnyVal {
+  extension [Self <: XFastSAXSerializable](x: Self) {
     
-    @scala.inline
-    def setFastSerialize(
+    inline def setFastSerialize(
       value: (XFastDocumentHandler, XFastTokenHandler, SeqEquiv[StringPair], SeqEquiv[Pair[String, Double]]) => Unit
     ): Self = StObject.set(x, "fastSerialize", js.Any.fromFunction4(value))
   }

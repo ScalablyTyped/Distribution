@@ -10,19 +10,15 @@ trait Score extends StObject {
 }
 object Score {
   
-  @scala.inline
-  def apply(): Score = {
+  inline def apply(): Score = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Score]
   }
   
-  @scala.inline
-  implicit class ScoreMutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
+  extension [Self <: Score](x: Self) {
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

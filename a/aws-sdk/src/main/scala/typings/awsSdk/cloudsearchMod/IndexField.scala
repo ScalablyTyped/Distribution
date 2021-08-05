@@ -37,85 +37,59 @@ trait IndexField extends StObject {
 }
 object IndexField {
   
-  @scala.inline
-  def apply(IndexFieldName: DynamicFieldName, IndexFieldType: IndexFieldType): IndexField = {
+  inline def apply(IndexFieldName: DynamicFieldName, IndexFieldType: IndexFieldType): IndexField = {
     val __obj = js.Dynamic.literal(IndexFieldName = IndexFieldName.asInstanceOf[js.Any], IndexFieldType = IndexFieldType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexField]
   }
   
-  @scala.inline
-  implicit class IndexFieldMutableBuilder[Self <: IndexField] (val x: Self) extends AnyVal {
+  extension [Self <: IndexField](x: Self) {
     
-    @scala.inline
-    def setDateArrayOptions(value: DateArrayOptions): Self = StObject.set(x, "DateArrayOptions", value.asInstanceOf[js.Any])
+    inline def setDateArrayOptions(value: DateArrayOptions): Self = StObject.set(x, "DateArrayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateArrayOptionsUndefined: Self = StObject.set(x, "DateArrayOptions", js.undefined)
+    inline def setDateArrayOptionsUndefined: Self = StObject.set(x, "DateArrayOptions", js.undefined)
     
-    @scala.inline
-    def setDateOptions(value: DateOptions): Self = StObject.set(x, "DateOptions", value.asInstanceOf[js.Any])
+    inline def setDateOptions(value: DateOptions): Self = StObject.set(x, "DateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateOptionsUndefined: Self = StObject.set(x, "DateOptions", js.undefined)
+    inline def setDateOptionsUndefined: Self = StObject.set(x, "DateOptions", js.undefined)
     
-    @scala.inline
-    def setDoubleArrayOptions(value: DoubleArrayOptions): Self = StObject.set(x, "DoubleArrayOptions", value.asInstanceOf[js.Any])
+    inline def setDoubleArrayOptions(value: DoubleArrayOptions): Self = StObject.set(x, "DoubleArrayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleArrayOptionsUndefined: Self = StObject.set(x, "DoubleArrayOptions", js.undefined)
+    inline def setDoubleArrayOptionsUndefined: Self = StObject.set(x, "DoubleArrayOptions", js.undefined)
     
-    @scala.inline
-    def setDoubleOptions(value: DoubleOptions): Self = StObject.set(x, "DoubleOptions", value.asInstanceOf[js.Any])
+    inline def setDoubleOptions(value: DoubleOptions): Self = StObject.set(x, "DoubleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleOptionsUndefined: Self = StObject.set(x, "DoubleOptions", js.undefined)
+    inline def setDoubleOptionsUndefined: Self = StObject.set(x, "DoubleOptions", js.undefined)
     
-    @scala.inline
-    def setIndexFieldName(value: DynamicFieldName): Self = StObject.set(x, "IndexFieldName", value.asInstanceOf[js.Any])
+    inline def setIndexFieldName(value: DynamicFieldName): Self = StObject.set(x, "IndexFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexFieldType(value: IndexFieldType): Self = StObject.set(x, "IndexFieldType", value.asInstanceOf[js.Any])
+    inline def setIndexFieldType(value: IndexFieldType): Self = StObject.set(x, "IndexFieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntArrayOptions(value: IntArrayOptions): Self = StObject.set(x, "IntArrayOptions", value.asInstanceOf[js.Any])
+    inline def setIntArrayOptions(value: IntArrayOptions): Self = StObject.set(x, "IntArrayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntArrayOptionsUndefined: Self = StObject.set(x, "IntArrayOptions", js.undefined)
+    inline def setIntArrayOptionsUndefined: Self = StObject.set(x, "IntArrayOptions", js.undefined)
     
-    @scala.inline
-    def setIntOptions(value: IntOptions): Self = StObject.set(x, "IntOptions", value.asInstanceOf[js.Any])
+    inline def setIntOptions(value: IntOptions): Self = StObject.set(x, "IntOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntOptionsUndefined: Self = StObject.set(x, "IntOptions", js.undefined)
+    inline def setIntOptionsUndefined: Self = StObject.set(x, "IntOptions", js.undefined)
     
-    @scala.inline
-    def setLatLonOptions(value: LatLonOptions): Self = StObject.set(x, "LatLonOptions", value.asInstanceOf[js.Any])
+    inline def setLatLonOptions(value: LatLonOptions): Self = StObject.set(x, "LatLonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLonOptionsUndefined: Self = StObject.set(x, "LatLonOptions", js.undefined)
+    inline def setLatLonOptionsUndefined: Self = StObject.set(x, "LatLonOptions", js.undefined)
     
-    @scala.inline
-    def setLiteralArrayOptions(value: LiteralArrayOptions): Self = StObject.set(x, "LiteralArrayOptions", value.asInstanceOf[js.Any])
+    inline def setLiteralArrayOptions(value: LiteralArrayOptions): Self = StObject.set(x, "LiteralArrayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiteralArrayOptionsUndefined: Self = StObject.set(x, "LiteralArrayOptions", js.undefined)
+    inline def setLiteralArrayOptionsUndefined: Self = StObject.set(x, "LiteralArrayOptions", js.undefined)
     
-    @scala.inline
-    def setLiteralOptions(value: LiteralOptions): Self = StObject.set(x, "LiteralOptions", value.asInstanceOf[js.Any])
+    inline def setLiteralOptions(value: LiteralOptions): Self = StObject.set(x, "LiteralOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiteralOptionsUndefined: Self = StObject.set(x, "LiteralOptions", js.undefined)
+    inline def setLiteralOptionsUndefined: Self = StObject.set(x, "LiteralOptions", js.undefined)
     
-    @scala.inline
-    def setTextArrayOptions(value: TextArrayOptions): Self = StObject.set(x, "TextArrayOptions", value.asInstanceOf[js.Any])
+    inline def setTextArrayOptions(value: TextArrayOptions): Self = StObject.set(x, "TextArrayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextArrayOptionsUndefined: Self = StObject.set(x, "TextArrayOptions", js.undefined)
+    inline def setTextArrayOptionsUndefined: Self = StObject.set(x, "TextArrayOptions", js.undefined)
     
-    @scala.inline
-    def setTextOptions(value: TextOptions): Self = StObject.set(x, "TextOptions", value.asInstanceOf[js.Any])
+    inline def setTextOptions(value: TextOptions): Self = StObject.set(x, "TextOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOptionsUndefined: Self = StObject.set(x, "TextOptions", js.undefined)
+    inline def setTextOptionsUndefined: Self = StObject.set(x, "TextOptions", js.undefined)
   }
 }

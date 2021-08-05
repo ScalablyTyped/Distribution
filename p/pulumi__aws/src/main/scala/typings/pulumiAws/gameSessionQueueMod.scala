@@ -74,21 +74,16 @@ object gameSessionQueueMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GameSessionQueueState): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GameSessionQueueState, opts: CustomResourceOptions): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
+    inline def get(name: String, id: Input[ID]): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
+    inline def get(name: String, id: Input[ID], state: GameSessionQueueState): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
+    inline def get(name: String, id: Input[ID], state: GameSessionQueueState, opts: CustomResourceOptions): GameSessionQueue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GameSessionQueue]
     
     /**
       * Returns true if the given object is an instance of GameSessionQueue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/gameSessionQueue.GameSessionQueue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/gamelift/gameSessionQueue.GameSessionQueue */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/gameSessionQueue.GameSessionQueue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/gamelift/gameSessionQueue.GameSessionQueue */ Boolean]
   }
   
   trait GameSessionQueueArgs extends StObject {
@@ -124,54 +119,40 @@ object gameSessionQueueMod {
   }
   object GameSessionQueueArgs {
     
-    @scala.inline
-    def apply(): GameSessionQueueArgs = {
+    inline def apply(): GameSessionQueueArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GameSessionQueueArgs]
     }
     
-    @scala.inline
-    implicit class GameSessionQueueArgsMutableBuilder[Self <: GameSessionQueueArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GameSessionQueueArgs](x: Self) {
       
-      @scala.inline
-      def setDestinations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+      inline def setDestinations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
+      inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
       
-      @scala.inline
-      def setDestinationsVarargs(value: Input[String]*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+      inline def setDestinationsVarargs(value: Input[String]*): Self = StObject.set(x, "destinations", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlayerLatencyPolicies(
+      inline def setPlayerLatencyPolicies(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.gamelift.GameSessionQueuePlayerLatencyPolicy]]
             ]
       ): Self = StObject.set(x, "playerLatencyPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerLatencyPoliciesUndefined: Self = StObject.set(x, "playerLatencyPolicies", js.undefined)
+      inline def setPlayerLatencyPoliciesUndefined: Self = StObject.set(x, "playerLatencyPolicies", js.undefined)
       
-      @scala.inline
-      def setPlayerLatencyPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.GameSessionQueuePlayerLatencyPolicy]*): Self = StObject.set(x, "playerLatencyPolicies", js.Array(value :_*))
+      inline def setPlayerLatencyPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.GameSessionQueuePlayerLatencyPolicy]*): Self = StObject.set(x, "playerLatencyPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
+      inline def setTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
+      inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
     }
   }
   
@@ -213,60 +194,44 @@ object gameSessionQueueMod {
   }
   object GameSessionQueueState {
     
-    @scala.inline
-    def apply(): GameSessionQueueState = {
+    inline def apply(): GameSessionQueueState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GameSessionQueueState]
     }
     
-    @scala.inline
-    implicit class GameSessionQueueStateMutableBuilder[Self <: GameSessionQueueState] (val x: Self) extends AnyVal {
+    extension [Self <: GameSessionQueueState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDestinations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+      inline def setDestinations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
+      inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
       
-      @scala.inline
-      def setDestinationsVarargs(value: Input[String]*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+      inline def setDestinationsVarargs(value: Input[String]*): Self = StObject.set(x, "destinations", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlayerLatencyPolicies(
+      inline def setPlayerLatencyPolicies(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.gamelift.GameSessionQueuePlayerLatencyPolicy]]
             ]
       ): Self = StObject.set(x, "playerLatencyPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerLatencyPoliciesUndefined: Self = StObject.set(x, "playerLatencyPolicies", js.undefined)
+      inline def setPlayerLatencyPoliciesUndefined: Self = StObject.set(x, "playerLatencyPolicies", js.undefined)
       
-      @scala.inline
-      def setPlayerLatencyPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.GameSessionQueuePlayerLatencyPolicy]*): Self = StObject.set(x, "playerLatencyPolicies", js.Array(value :_*))
+      inline def setPlayerLatencyPoliciesVarargs(value: Input[typings.pulumiAws.inputMod.gamelift.GameSessionQueuePlayerLatencyPolicy]*): Self = StObject.set(x, "playerLatencyPolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
+      inline def setTimeoutInSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
+      inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
     }
   }
 }

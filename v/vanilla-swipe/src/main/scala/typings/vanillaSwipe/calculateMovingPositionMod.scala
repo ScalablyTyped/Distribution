@@ -14,12 +14,9 @@ object calculateMovingPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculateMovingPosition[T /* <: E */](e: T): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
-  @scala.inline
-  def calculateMovingPosition[T /* <: E */](e: MouseEvent): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
-  @scala.inline
-  def calculateMovingPosition[T /* <: E */](e: TouchEvent): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def calculateMovingPosition[T /* <: E */](e: T): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def calculateMovingPosition[T /* <: E */](e: MouseEvent): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def calculateMovingPosition[T /* <: E */](e: TouchEvent): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
   
   trait E extends StObject {
     
@@ -33,35 +30,26 @@ object calculateMovingPositionMod {
   }
   object E {
     
-    @scala.inline
-    def apply(clientX: Double, clientY: Double): E = {
+    inline def apply(clientX: Double, clientY: Double): E = {
       val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any])
       __obj.asInstanceOf[E]
     }
     
-    @scala.inline
-    implicit class EMutableBuilder[Self <: E] (val x: Self) extends AnyVal {
+    extension [Self <: E](x: Self) {
       
-      @scala.inline
-      def setChangedTouches(value: js.Array[ClientX]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: js.Array[ClientX]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
+      inline def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
       
-      @scala.inline
-      def setChangedTouchesVarargs(value: ClientX*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+      inline def setChangedTouchesVarargs(value: ClientX*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     }
   }
 }

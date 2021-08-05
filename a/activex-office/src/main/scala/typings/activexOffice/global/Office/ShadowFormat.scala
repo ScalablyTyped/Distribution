@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ShadowFormat")
 @js.native
-class ShadowFormat protected ()
+/* private */ class ShadowFormat ()
   extends StObject
      with typings.activexOffice.Office.ShadowFormat {
   
@@ -34,7 +34,7 @@ class ShadowFormat protected ()
   /* CompleteClass */
   var Obscured: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ShadowFormat_typekey")
   var OfficeDotShadowFormat_typekey: typings.activexOffice.Office.ShadowFormat = js.native
   

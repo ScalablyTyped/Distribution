@@ -89,7 +89,6 @@ object systemMod {
     @JSImport("vso-node-api/interfaces/common/System", "TypeInfo.DayOfWeek")
     @js.native
     def DayOfWeek: EnumValuesMonday = js.native
-    @scala.inline
-    def DayOfWeek_=(x: EnumValuesMonday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DayOfWeek")(x.asInstanceOf[js.Any])
+    inline def DayOfWeek_=(x: EnumValuesMonday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DayOfWeek")(x.asInstanceOf[js.Any])
   }
 }

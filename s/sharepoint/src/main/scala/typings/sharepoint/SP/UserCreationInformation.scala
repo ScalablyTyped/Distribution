@@ -22,8 +22,7 @@ trait UserCreationInformation
 }
 object UserCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -40,25 +39,18 @@ object UserCreationInformation {
     __obj.asInstanceOf[UserCreationInformation]
   }
   
-  @scala.inline
-  implicit class UserCreationInformationMutableBuilder[Self <: UserCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: UserCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_email(value: () => String): Self = StObject.set(x, "get_email", js.Any.fromFunction0(value))
+    inline def setGet_email(value: () => String): Self = StObject.set(x, "get_email", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_loginName(value: () => String): Self = StObject.set(x, "get_loginName", js.Any.fromFunction0(value))
+    inline def setGet_loginName(value: () => String): Self = StObject.set(x, "get_loginName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_email(value: String => Unit): Self = StObject.set(x, "set_email", js.Any.fromFunction1(value))
+    inline def setSet_email(value: String => Unit): Self = StObject.set(x, "set_email", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_loginName(value: String => Unit): Self = StObject.set(x, "set_loginName", js.Any.fromFunction1(value))
+    inline def setSet_loginName(value: String => Unit): Self = StObject.set(x, "set_loginName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
   }
 }

@@ -24,19 +24,16 @@ object linebreakStyleRuleMod {
     @JSImport("tslint/lib/rules/linebreakStyleRule", "Rule.FAILURE_CRLF")
     @js.native
     def FAILURE_CRLF: String = js.native
-    @scala.inline
-    def FAILURE_CRLF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_CRLF")(x.asInstanceOf[js.Any])
+    inline def FAILURE_CRLF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_CRLF")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/linebreakStyleRule", "Rule.FAILURE_LF")
     @js.native
     def FAILURE_LF: String = js.native
-    @scala.inline
-    def FAILURE_LF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_LF")(x.asInstanceOf[js.Any])
+    inline def FAILURE_LF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_LF")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/linebreakStyleRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

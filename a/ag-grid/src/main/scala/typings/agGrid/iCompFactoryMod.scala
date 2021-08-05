@@ -13,17 +13,14 @@ object iCompFactoryMod {
   }
   object ICompFactory {
     
-    @scala.inline
-    def apply(create: () => Component): ICompFactory = {
+    inline def apply(create: () => Component): ICompFactory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
       __obj.asInstanceOf[ICompFactory]
     }
     
-    @scala.inline
-    implicit class ICompFactoryMutableBuilder[Self <: ICompFactory] (val x: Self) extends AnyVal {
+    extension [Self <: ICompFactory](x: Self) {
       
-      @scala.inline
-      def setCreate(value: () => Component): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+      inline def setCreate(value: () => Component): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     }
   }
 }

@@ -38,49 +38,35 @@ trait Certificate extends StObject {
 }
 object Certificate {
   
-  @scala.inline
-  def apply(): Certificate = {
+  inline def apply(): Certificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Certificate]
   }
   
-  @scala.inline
-  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+  extension [Self <: Certificate](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
     
-    @scala.inline
-    def setCommonName(value: CertificateCN): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
+    inline def setCommonName(value: CertificateCN): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
+    inline def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
     
-    @scala.inline
-    def setExpiryDateTime(value: CertificateExpiryDateTime): Self = StObject.set(x, "ExpiryDateTime", value.asInstanceOf[js.Any])
+    inline def setExpiryDateTime(value: CertificateExpiryDateTime): Self = StObject.set(x, "ExpiryDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryDateTimeUndefined: Self = StObject.set(x, "ExpiryDateTime", js.undefined)
+    inline def setExpiryDateTimeUndefined: Self = StObject.set(x, "ExpiryDateTime", js.undefined)
     
-    @scala.inline
-    def setRegisteredDateTime(value: CertificateRegisteredDateTime): Self = StObject.set(x, "RegisteredDateTime", value.asInstanceOf[js.Any])
+    inline def setRegisteredDateTime(value: CertificateRegisteredDateTime): Self = StObject.set(x, "RegisteredDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredDateTimeUndefined: Self = StObject.set(x, "RegisteredDateTime", js.undefined)
+    inline def setRegisteredDateTimeUndefined: Self = StObject.set(x, "RegisteredDateTime", js.undefined)
     
-    @scala.inline
-    def setState(value: CertificateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CertificateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: CertificateStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: CertificateStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

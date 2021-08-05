@@ -22,8 +22,7 @@ object timelineDotTimelineDotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: TimelineDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: TimelineDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.root
@@ -37,26 +36,19 @@ object timelineDotTimelineDotMod {
   trait TimelineDotClassKey extends StObject
   object TimelineDotClassKey {
     
-    @scala.inline
-    def defaultDefault: typings.materialUiLab.materialUiLabStrings.defaultDefault = "defaultDefault".asInstanceOf[typings.materialUiLab.materialUiLabStrings.defaultDefault]
+    inline def defaultDefault: typings.materialUiLab.materialUiLabStrings.defaultDefault = "defaultDefault".asInstanceOf[typings.materialUiLab.materialUiLabStrings.defaultDefault]
     
-    @scala.inline
-    def defaultPrimary: typings.materialUiLab.materialUiLabStrings.defaultPrimary = "defaultPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.defaultPrimary]
+    inline def defaultPrimary: typings.materialUiLab.materialUiLabStrings.defaultPrimary = "defaultPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.defaultPrimary]
     
-    @scala.inline
-    def defaultSecondary: typings.materialUiLab.materialUiLabStrings.defaultSecondary = "defaultSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.defaultSecondary]
+    inline def defaultSecondary: typings.materialUiLab.materialUiLabStrings.defaultSecondary = "defaultSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.defaultSecondary]
     
-    @scala.inline
-    def outlinedDefault: typings.materialUiLab.materialUiLabStrings.outlinedDefault = "outlinedDefault".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedDefault]
+    inline def outlinedDefault: typings.materialUiLab.materialUiLabStrings.outlinedDefault = "outlinedDefault".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedDefault]
     
-    @scala.inline
-    def outlinedPrimary: typings.materialUiLab.materialUiLabStrings.outlinedPrimary = "outlinedPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedPrimary]
+    inline def outlinedPrimary: typings.materialUiLab.materialUiLabStrings.outlinedPrimary = "outlinedPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedPrimary]
     
-    @scala.inline
-    def outlinedSecondary: typings.materialUiLab.materialUiLabStrings.outlinedSecondary = "outlinedSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedSecondary]
+    inline def outlinedSecondary: typings.materialUiLab.materialUiLabStrings.outlinedSecondary = "outlinedSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedSecondary]
     
-    @scala.inline
-    def root: typings.materialUiLab.materialUiLabStrings.root = "root".asInstanceOf[typings.materialUiLab.materialUiLabStrings.root]
+    inline def root: typings.materialUiLab.materialUiLabStrings.root = "root".asInstanceOf[typings.materialUiLab.materialUiLabStrings.root]
   }
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/lab.@material-ui/lab/TimelineDot/TimelineDot.TimelineDotClassKey, never> */
@@ -87,62 +79,44 @@ object timelineDotTimelineDotMod {
   }
   object TimelineDotProps {
     
-    @scala.inline
-    def apply(): TimelineDotProps = {
+    inline def apply(): TimelineDotProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimelineDotProps]
     }
     
-    @scala.inline
-    implicit class TimelineDotPropsMutableBuilder[Self <: TimelineDotProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineDotProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClasses(value: PartialClassNameMapTimeliDefaultDefault): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: PartialClassNameMapTimeliDefaultDefault): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setColor(value: inherit | primary | secondary | grey): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: inherit | primary | secondary | grey): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setVariant(value: default | outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: default | outlined): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }
   }
 }

@@ -24,8 +24,7 @@ trait DeploymentGroupTriggerConfiguration extends StObject {
 }
 object DeploymentGroupTriggerConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     triggerEvents: Input[js.Array[Input[String]]],
     triggerName: Input[String],
     triggerTargetArn: Input[String]
@@ -34,19 +33,14 @@ object DeploymentGroupTriggerConfiguration {
     __obj.asInstanceOf[DeploymentGroupTriggerConfiguration]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupTriggerConfigurationMutableBuilder[Self <: DeploymentGroupTriggerConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupTriggerConfiguration](x: Self) {
     
-    @scala.inline
-    def setTriggerEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "triggerEvents", value.asInstanceOf[js.Any])
+    inline def setTriggerEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "triggerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerEventsVarargs(value: Input[String]*): Self = StObject.set(x, "triggerEvents", js.Array(value :_*))
+    inline def setTriggerEventsVarargs(value: Input[String]*): Self = StObject.set(x, "triggerEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggerName(value: Input[String]): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: Input[String]): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerTargetArn(value: Input[String]): Self = StObject.set(x, "triggerTargetArn", value.asInstanceOf[js.Any])
+    inline def setTriggerTargetArn(value: Input[String]): Self = StObject.set(x, "triggerTargetArn", value.asInstanceOf[js.Any])
   }
 }

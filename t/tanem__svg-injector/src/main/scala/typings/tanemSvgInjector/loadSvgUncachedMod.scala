@@ -11,6 +11,5 @@ object loadSvgUncachedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(url: String, callback: Errback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(url: String, callback: Errback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

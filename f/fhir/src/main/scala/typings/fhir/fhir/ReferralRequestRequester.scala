@@ -23,22 +23,17 @@ trait ReferralRequestRequester
 }
 object ReferralRequestRequester {
   
-  @scala.inline
-  def apply(agent: Reference): ReferralRequestRequester = {
+  inline def apply(agent: Reference): ReferralRequestRequester = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferralRequestRequester]
   }
   
-  @scala.inline
-  implicit class ReferralRequestRequesterMutableBuilder[Self <: ReferralRequestRequester] (val x: Self) extends AnyVal {
+  extension [Self <: ReferralRequestRequester](x: Self) {
     
-    @scala.inline
-    def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
+    inline def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
   }
 }

@@ -23,46 +23,33 @@ trait LinkProps[TState]
 }
 object LinkProps {
   
-  @scala.inline
-  def apply[TState](to: String): LinkProps[TState] = {
+  inline def apply[TState](to: String): LinkProps[TState] = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps[TState]]
   }
   
-  @scala.inline
-  implicit class LinkPropsMutableBuilder[Self <: LinkProps[?], TState] (val x: Self & LinkProps[TState]) extends AnyVal {
+  extension [Self <: LinkProps[?], TState](x: Self & LinkProps[TState]) {
     
-    @scala.inline
-    def setGetProps(value: /* props */ LinkGetProps => js.Object): Self = StObject.set(x, "getProps", js.Any.fromFunction1(value))
+    inline def setGetProps(value: /* props */ LinkGetProps => js.Object): Self = StObject.set(x, "getProps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropsUndefined: Self = StObject.set(x, "getProps", js.undefined)
+    inline def setGetPropsUndefined: Self = StObject.set(x, "getProps", js.undefined)
     
-    @scala.inline
-    def setInnerRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    inline def setInnerRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRefFunction1(value: /* instance */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+    inline def setInnerRefFunction1(value: /* instance */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+    inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     
-    @scala.inline
-    def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+    inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setState(value: TState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: TState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

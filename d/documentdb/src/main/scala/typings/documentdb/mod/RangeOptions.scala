@@ -14,19 +14,15 @@ trait RangeOptions extends StObject {
 }
 object RangeOptions {
   
-  @scala.inline
-  def apply(high: js.Any, low: js.Any): RangeOptions = {
+  inline def apply(high: js.Any, low: js.Any): RangeOptions = {
     val __obj = js.Dynamic.literal(high = high.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeOptions]
   }
   
-  @scala.inline
-  implicit class RangeOptionsMutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeOptions](x: Self) {
     
-    @scala.inline
-    def setHigh(value: js.Any): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: js.Any): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLow(value: js.Any): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: js.Any): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
   }
 }

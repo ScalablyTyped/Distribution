@@ -13,25 +13,19 @@ trait PartialIToastConfig extends StObject {
 }
 object PartialIToastConfig {
   
-  @scala.inline
-  def apply(): PartialIToastConfig = {
+  inline def apply(): PartialIToastConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIToastConfig]
   }
   
-  @scala.inline
-  implicit class PartialIToastConfigMutableBuilder[Self <: PartialIToastConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIToastConfig](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

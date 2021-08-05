@@ -13,19 +13,15 @@ trait Remediation extends StObject {
 }
 object Remediation {
   
-  @scala.inline
-  def apply(): Remediation = {
+  inline def apply(): Remediation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Remediation]
   }
   
-  @scala.inline
-  implicit class RemediationMutableBuilder[Self <: Remediation] (val x: Self) extends AnyVal {
+  extension [Self <: Remediation](x: Self) {
     
-    @scala.inline
-    def setRecommendation(value: Recommendation): Self = StObject.set(x, "Recommendation", value.asInstanceOf[js.Any])
+    inline def setRecommendation(value: Recommendation): Self = StObject.set(x, "Recommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationUndefined: Self = StObject.set(x, "Recommendation", js.undefined)
+    inline def setRecommendationUndefined: Self = StObject.set(x, "Recommendation", js.undefined)
   }
 }

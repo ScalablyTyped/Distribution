@@ -24,20 +24,17 @@ object statMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/bitswap/stat", "builder.human")
     @js.native
     def human: Type = js.native
-    @scala.inline
-    def human_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("human")(x.asInstanceOf[js.Any])
+    inline def human_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("human")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/bitswap/stat", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/bitswap/stat", "command")
@@ -48,6 +45,5 @@ object statMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxCidBaseHumanTimeout: CidBase_): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxCidBaseHumanTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxCidBaseHumanTimeout: CidBase_): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxCidBaseHumanTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

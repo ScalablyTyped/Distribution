@@ -12,19 +12,15 @@ trait LeaseAccessConditionsOptions
 }
 object LeaseAccessConditionsOptions {
   
-  @scala.inline
-  def apply(): LeaseAccessConditionsOptions = {
+  inline def apply(): LeaseAccessConditionsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeaseAccessConditionsOptions]
   }
   
-  @scala.inline
-  implicit class LeaseAccessConditionsOptionsMutableBuilder[Self <: LeaseAccessConditionsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LeaseAccessConditionsOptions](x: Self) {
     
-    @scala.inline
-    def setAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "accessConditions", value.asInstanceOf[js.Any])
+    inline def setAccessConditions(value: StorageAccessCondition): Self = StObject.set(x, "accessConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessConditionsUndefined: Self = StObject.set(x, "accessConditions", js.undefined)
+    inline def setAccessConditionsUndefined: Self = StObject.set(x, "accessConditions", js.undefined)
   }
 }

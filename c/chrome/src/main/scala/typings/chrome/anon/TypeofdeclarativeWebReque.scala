@@ -11,16 +11,13 @@ trait TypeofdeclarativeWebReque extends StObject {
 }
 object TypeofdeclarativeWebReque {
   
-  @scala.inline
-  def apply(onRequest: RequestedEvent): TypeofdeclarativeWebReque = {
+  inline def apply(onRequest: RequestedEvent): TypeofdeclarativeWebReque = {
     val __obj = js.Dynamic.literal(onRequest = onRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofdeclarativeWebReque]
   }
   
-  @scala.inline
-  implicit class TypeofdeclarativeWebRequeMutableBuilder[Self <: TypeofdeclarativeWebReque] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofdeclarativeWebReque](x: Self) {
     
-    @scala.inline
-    def setOnRequest(value: RequestedEvent): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
+    inline def setOnRequest(value: RequestedEvent): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
   }
 }

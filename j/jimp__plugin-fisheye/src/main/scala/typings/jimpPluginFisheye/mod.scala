@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Fisheye = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fisheye]
+  inline def default(): Fisheye = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fisheye]
   
   @js.native
   trait Fisheye extends StObject {

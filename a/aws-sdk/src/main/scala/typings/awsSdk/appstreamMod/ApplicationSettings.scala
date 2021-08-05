@@ -18,22 +18,17 @@ trait ApplicationSettings extends StObject {
 }
 object ApplicationSettings {
   
-  @scala.inline
-  def apply(Enabled: Boolean): ApplicationSettings = {
+  inline def apply(Enabled: Boolean): ApplicationSettings = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationSettings]
   }
   
-  @scala.inline
-  implicit class ApplicationSettingsMutableBuilder[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationSettings](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsGroup(value: SettingsGroup): Self = StObject.set(x, "SettingsGroup", value.asInstanceOf[js.Any])
+    inline def setSettingsGroup(value: SettingsGroup): Self = StObject.set(x, "SettingsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsGroupUndefined: Self = StObject.set(x, "SettingsGroup", js.undefined)
+    inline def setSettingsGroupUndefined: Self = StObject.set(x, "SettingsGroup", js.undefined)
   }
 }

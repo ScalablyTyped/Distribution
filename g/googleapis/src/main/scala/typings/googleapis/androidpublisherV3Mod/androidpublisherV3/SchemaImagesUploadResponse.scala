@@ -10,19 +10,15 @@ trait SchemaImagesUploadResponse extends StObject {
 }
 object SchemaImagesUploadResponse {
   
-  @scala.inline
-  def apply(): SchemaImagesUploadResponse = {
+  inline def apply(): SchemaImagesUploadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImagesUploadResponse]
   }
   
-  @scala.inline
-  implicit class SchemaImagesUploadResponseMutableBuilder[Self <: SchemaImagesUploadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImagesUploadResponse](x: Self) {
     
-    @scala.inline
-    def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

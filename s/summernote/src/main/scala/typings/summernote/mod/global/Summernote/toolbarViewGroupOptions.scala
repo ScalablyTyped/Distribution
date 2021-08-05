@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait toolbarViewGroupOptions extends StObject
 object toolbarViewGroupOptions {
   
-  @scala.inline
-  def codeview: typings.summernote.summernoteStrings.codeview = "codeview".asInstanceOf[typings.summernote.summernoteStrings.codeview]
+  inline def codeview: typings.summernote.summernoteStrings.codeview = "codeview".asInstanceOf[typings.summernote.summernoteStrings.codeview]
   
-  @scala.inline
-  def fullscreen: typings.summernote.summernoteStrings.fullscreen = "fullscreen".asInstanceOf[typings.summernote.summernoteStrings.fullscreen]
+  inline def fullscreen: typings.summernote.summernoteStrings.fullscreen = "fullscreen".asInstanceOf[typings.summernote.summernoteStrings.fullscreen]
   
-  @scala.inline
-  def help: typings.summernote.summernoteStrings.help = "help".asInstanceOf[typings.summernote.summernoteStrings.help]
+  inline def help: typings.summernote.summernoteStrings.help = "help".asInstanceOf[typings.summernote.summernoteStrings.help]
 }

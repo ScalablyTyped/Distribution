@@ -42,8 +42,7 @@ trait XFrames
 }
 object XFrames {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -61,16 +60,12 @@ object XFrames {
     __obj.asInstanceOf[XFrames]
   }
   
-  @scala.inline
-  implicit class XFramesMutableBuilder[Self <: XFrames] (val x: Self) extends AnyVal {
+  extension [Self <: XFrames](x: Self) {
     
-    @scala.inline
-    def setAppend(value: XFrame => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: XFrame => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryFrames(value: Double => SafeArray[XFrame]): Self = StObject.set(x, "queryFrames", js.Any.fromFunction1(value))
+    inline def setQueryFrames(value: Double => SafeArray[XFrame]): Self = StObject.set(x, "queryFrames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: XFrame => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: XFrame => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

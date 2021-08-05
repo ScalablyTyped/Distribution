@@ -23,8 +23,7 @@ trait BaseDeploymentInput extends StObject {
 }
 object BaseDeploymentInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     condition: String,
     jobCancelTimeoutInMinutes: Double,
     overrideInputs: StringDictionary[String],
@@ -34,19 +33,14 @@ object BaseDeploymentInput {
     __obj.asInstanceOf[BaseDeploymentInput]
   }
   
-  @scala.inline
-  implicit class BaseDeploymentInputMutableBuilder[Self <: BaseDeploymentInput] (val x: Self) extends AnyVal {
+  extension [Self <: BaseDeploymentInput](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCancelTimeoutInMinutes(value: Double): Self = StObject.set(x, "jobCancelTimeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setJobCancelTimeoutInMinutes(value: Double): Self = StObject.set(x, "jobCancelTimeoutInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideInputs(value: StringDictionary[String]): Self = StObject.set(x, "overrideInputs", value.asInstanceOf[js.Any])
+    inline def setOverrideInputs(value: StringDictionary[String]): Self = StObject.set(x, "overrideInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

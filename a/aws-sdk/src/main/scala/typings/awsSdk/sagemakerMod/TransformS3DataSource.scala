@@ -18,19 +18,15 @@ trait TransformS3DataSource extends StObject {
 }
 object TransformS3DataSource {
   
-  @scala.inline
-  def apply(S3DataType: S3DataType, S3Uri: S3Uri): TransformS3DataSource = {
+  inline def apply(S3DataType: S3DataType, S3Uri: S3Uri): TransformS3DataSource = {
     val __obj = js.Dynamic.literal(S3DataType = S3DataType.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformS3DataSource]
   }
   
-  @scala.inline
-  implicit class TransformS3DataSourceMutableBuilder[Self <: TransformS3DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: TransformS3DataSource](x: Self) {
     
-    @scala.inline
-    def setS3DataType(value: S3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
+    inline def setS3DataType(value: S3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

@@ -28,32 +28,24 @@ object anon {
   }
   object PartialColumnNames {
     
-    @scala.inline
-    def apply(): PartialColumnNames = {
+    inline def apply(): PartialColumnNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialColumnNames]
     }
     
-    @scala.inline
-    implicit class PartialColumnNamesMutableBuilder[Self <: PartialColumnNames] (val x: Self) extends AnyVal {
+    extension [Self <: PartialColumnNames](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
+      inline def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession_idUndefined: Self = StObject.set(x, "session_id", js.undefined)
+      inline def setSession_idUndefined: Self = StObject.set(x, "session_id", js.undefined)
     }
   }
   
@@ -66,26 +58,20 @@ object anon {
   }
   object PartialSchema {
     
-    @scala.inline
-    def apply(): PartialSchema = {
+    inline def apply(): PartialSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSchema]
     }
     
-    @scala.inline
-    implicit class PartialSchemaMutableBuilder[Self <: PartialSchema] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSchema](x: Self) {
       
-      @scala.inline
-      def setColumnNames(value: PartialColumnNames): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
+      inline def setColumnNames(value: PartialColumnNames): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
+      inline def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     }
   }
 }

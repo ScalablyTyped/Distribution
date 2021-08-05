@@ -18,25 +18,19 @@ trait QueueReference extends StObject {
 }
 object QueueReference {
   
-  @scala.inline
-  def apply(): QueueReference = {
+  inline def apply(): QueueReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueueReference]
   }
   
-  @scala.inline
-  implicit class QueueReferenceMutableBuilder[Self <: QueueReference] (val x: Self) extends AnyVal {
+  extension [Self <: QueueReference](x: Self) {
     
-    @scala.inline
-    def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setId(value: QueueId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: QueueId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

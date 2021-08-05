@@ -12,25 +12,19 @@ trait IGeoObjectFeature extends StObject {
 }
 object IGeoObjectFeature {
   
-  @scala.inline
-  def apply(): IGeoObjectFeature = {
+  inline def apply(): IGeoObjectFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeoObjectFeature]
   }
   
-  @scala.inline
-  implicit class IGeoObjectFeatureMutableBuilder[Self <: IGeoObjectFeature] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoObjectFeature](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: IGeometry | IGeometryJson): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: IGeometry | IGeometryJson): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setProperties(value: IDataManager | js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IDataManager | js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

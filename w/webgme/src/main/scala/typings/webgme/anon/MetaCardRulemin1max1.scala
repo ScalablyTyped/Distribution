@@ -21,37 +21,27 @@ trait MetaCardRulemin1max1 extends StObject {
 }
 object MetaCardRulemin1max1 {
   
-  @scala.inline
-  def apply(items: js.Array[Path], maxItems: js.Array[Double], minItems: js.Array[Double]): MetaCardRulemin1max1 = {
+  inline def apply(items: js.Array[Path], maxItems: js.Array[Double], minItems: js.Array[Double]): MetaCardRulemin1max1 = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], max = 1, maxItems = maxItems.asInstanceOf[js.Any], min = 1, minItems = minItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaCardRulemin1max1]
   }
   
-  @scala.inline
-  implicit class MetaCardRulemin1max1MutableBuilder[Self <: MetaCardRulemin1max1] (val x: Self) extends AnyVal {
+  extension [Self <: MetaCardRulemin1max1](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[Path]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Path]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Path*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Path*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMax(value: `1`): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: `1`): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: js.Array[Double]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: js.Array[Double]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsVarargs(value: Double*): Self = StObject.set(x, "maxItems", js.Array(value :_*))
+    inline def setMaxItemsVarargs(value: Double*): Self = StObject.set(x, "maxItems", js.Array(value :_*))
     
-    @scala.inline
-    def setMin(value: `1`): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: `1`): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinItems(value: js.Array[Double]): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
+    inline def setMinItems(value: js.Array[Double]): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinItemsVarargs(value: Double*): Self = StObject.set(x, "minItems", js.Array(value :_*))
+    inline def setMinItemsVarargs(value: Double*): Self = StObject.set(x, "minItems", js.Array(value :_*))
   }
 }

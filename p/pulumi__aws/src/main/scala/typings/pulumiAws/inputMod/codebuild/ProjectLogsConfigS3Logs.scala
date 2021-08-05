@@ -24,31 +24,23 @@ trait ProjectLogsConfigS3Logs extends StObject {
 }
 object ProjectLogsConfigS3Logs {
   
-  @scala.inline
-  def apply(): ProjectLogsConfigS3Logs = {
+  inline def apply(): ProjectLogsConfigS3Logs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectLogsConfigS3Logs]
   }
   
-  @scala.inline
-  implicit class ProjectLogsConfigS3LogsMutableBuilder[Self <: ProjectLogsConfigS3Logs] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectLogsConfigS3Logs](x: Self) {
     
-    @scala.inline
-    def setEncryptionDisabled(value: Input[Boolean]): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
+    inline def setEncryptionDisabled(value: Input[Boolean]): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
+    inline def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

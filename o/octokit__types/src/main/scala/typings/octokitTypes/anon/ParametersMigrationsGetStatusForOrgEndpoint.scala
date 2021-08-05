@@ -18,8 +18,7 @@ trait ParametersMigrationsGetStatusForOrgEndpoint extends StObject {
 }
 object ParametersMigrationsGetStatusForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsGetStatusForOrgEndpoint,
     request: MigrationsGetStatusForOrgRequestOptions,
     response: OctokitResponse[MigrationsGetStatusForOrgResponseData]
@@ -28,16 +27,12 @@ object ParametersMigrationsGetStatusForOrgEndpoint {
     __obj.asInstanceOf[ParametersMigrationsGetStatusForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsGetStatusForOrgEndpointMutableBuilder[Self <: ParametersMigrationsGetStatusForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsGetStatusForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsGetStatusForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsGetStatusForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsGetStatusForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsGetStatusForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsGetStatusForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsGetStatusForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

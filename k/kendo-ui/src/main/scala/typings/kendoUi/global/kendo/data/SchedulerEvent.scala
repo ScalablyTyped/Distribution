@@ -24,8 +24,7 @@ object SchedulerEvent {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofSchedulerEvent & (Instantiable1[
+  inline def define(options: DataSourceSchemaModelWithFieldsArray): TypeofSchedulerEvent & (Instantiable1[
     /* data */ js.UndefOr[SchedulerEventData], 
     typings.kendoUi.kendo.data.SchedulerEvent
   ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofSchedulerEvent & (Instantiable1[
@@ -33,8 +32,7 @@ object SchedulerEvent {
     typings.kendoUi.kendo.data.SchedulerEvent
   ])]
   /* static member */
-  @scala.inline
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofSchedulerEvent & (Instantiable1[
+  inline def define(options: DataSourceSchemaModelWithFieldsObject): TypeofSchedulerEvent & (Instantiable1[
     /* data */ js.UndefOr[SchedulerEventData], 
     typings.kendoUi.kendo.data.SchedulerEvent
   ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofSchedulerEvent & (Instantiable1[
@@ -46,13 +44,11 @@ object SchedulerEvent {
   @JSGlobal("kendo.data.SchedulerEvent.fields")
   @js.native
   def fields: DataSourceSchemaModelFields = js.native
-  @scala.inline
-  def fields_=(x: DataSourceSchemaModelFields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
+  inline def fields_=(x: DataSourceSchemaModelFields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("kendo.data.SchedulerEvent.idField")
   @js.native
   def idField: String = js.native
-  @scala.inline
-  def idField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idField")(x.asInstanceOf[js.Any])
+  inline def idField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idField")(x.asInstanceOf[js.Any])
 }

@@ -136,8 +136,7 @@ trait Gmail extends StObject {
 }
 object Gmail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newAutoForwarding: () => AutoForwarding,
     newBatchDeleteMessagesRequest: () => BatchDeleteMessagesRequest,
     newBatchModifyMessagesRequest: () => BatchModifyMessagesRequest,
@@ -234,8 +233,7 @@ object Gmail {
       }
       object LabelsCollection {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           create: (Label, String) => Label,
           get: (String, String) => Label,
           list: String => ListLabelsResponse,
@@ -247,26 +245,19 @@ object Gmail {
           __obj.asInstanceOf[LabelsCollection]
         }
         
-        @scala.inline
-        implicit class LabelsCollectionMutableBuilder[Self <: LabelsCollection] (val x: Self) extends AnyVal {
+        extension [Self <: LabelsCollection](x: Self) {
           
-          @scala.inline
-          def setCreate(value: (Label, String) => Label): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+          inline def setCreate(value: (Label, String) => Label): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setGet(value: (String, String) => Label): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+          inline def setGet(value: (String, String) => Label): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setList(value: String => ListLabelsResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: String => ListLabelsResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPatch(value: (Label, String, String) => Label): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
+          inline def setPatch(value: (Label, String, String) => Label): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+          inline def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setUpdate(value: (Label, String, String) => Label): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+          inline def setUpdate(value: (Label, String, String) => Label): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
         }
       }
       
@@ -279,17 +270,14 @@ object Gmail {
         }
         object AttachmentsCollection {
           
-          @scala.inline
-          def apply(get: (String, String, String) => MessagePartBody): AttachmentsCollection = {
+          inline def apply(get: (String, String, String) => MessagePartBody): AttachmentsCollection = {
             val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
             __obj.asInstanceOf[AttachmentsCollection]
           }
           
-          @scala.inline
-          implicit class AttachmentsCollectionMutableBuilder[Self <: AttachmentsCollection] (val x: Self) extends AnyVal {
+          extension [Self <: AttachmentsCollection](x: Self) {
             
-            @scala.inline
-            def setGet(value: (String, String, String) => MessagePartBody): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+            inline def setGet(value: (String, String, String) => MessagePartBody): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
           }
         }
       }
@@ -374,8 +362,7 @@ object Gmail {
         }
         object DelegatesCollection {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             create: (Delegate, String) => Delegate,
             get: (String, String) => Delegate,
             list: String => ListDelegatesResponse,
@@ -385,20 +372,15 @@ object Gmail {
             __obj.asInstanceOf[DelegatesCollection]
           }
           
-          @scala.inline
-          implicit class DelegatesCollectionMutableBuilder[Self <: DelegatesCollection] (val x: Self) extends AnyVal {
+          extension [Self <: DelegatesCollection](x: Self) {
             
-            @scala.inline
-            def setCreate(value: (Delegate, String) => Delegate): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+            inline def setCreate(value: (Delegate, String) => Delegate): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setGet(value: (String, String) => Delegate): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+            inline def setGet(value: (String, String) => Delegate): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setList(value: String => ListDelegatesResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+            inline def setList(value: String => ListDelegatesResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+            inline def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
           }
         }
         
@@ -418,8 +400,7 @@ object Gmail {
         }
         object FiltersCollection {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             create: (Filter, String) => Filter,
             get: (String, String) => Filter,
             list: String => ListFiltersResponse,
@@ -429,20 +410,15 @@ object Gmail {
             __obj.asInstanceOf[FiltersCollection]
           }
           
-          @scala.inline
-          implicit class FiltersCollectionMutableBuilder[Self <: FiltersCollection] (val x: Self) extends AnyVal {
+          extension [Self <: FiltersCollection](x: Self) {
             
-            @scala.inline
-            def setCreate(value: (Filter, String) => Filter): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+            inline def setCreate(value: (Filter, String) => Filter): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setGet(value: (String, String) => Filter): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+            inline def setGet(value: (String, String) => Filter): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setList(value: String => ListFiltersResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+            inline def setList(value: String => ListFiltersResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+            inline def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
           }
         }
         
@@ -464,8 +440,7 @@ object Gmail {
         }
         object ForwardingAddressesCollection {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             create: (ForwardingAddress, String) => ForwardingAddress,
             get: (String, String) => ForwardingAddress,
             list: String => ListForwardingAddressesResponse,
@@ -475,20 +450,15 @@ object Gmail {
             __obj.asInstanceOf[ForwardingAddressesCollection]
           }
           
-          @scala.inline
-          implicit class ForwardingAddressesCollectionMutableBuilder[Self <: ForwardingAddressesCollection] (val x: Self) extends AnyVal {
+          extension [Self <: ForwardingAddressesCollection](x: Self) {
             
-            @scala.inline
-            def setCreate(value: (ForwardingAddress, String) => ForwardingAddress): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+            inline def setCreate(value: (ForwardingAddress, String) => ForwardingAddress): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setGet(value: (String, String) => ForwardingAddress): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+            inline def setGet(value: (String, String) => ForwardingAddress): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setList(value: String => ListForwardingAddressesResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+            inline def setList(value: String => ListForwardingAddressesResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+            inline def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
           }
         }
         
@@ -513,8 +483,7 @@ object Gmail {
           }
           object SmimeInfoCollection {
             
-            @scala.inline
-            def apply(
+            inline def apply(
               get: (String, String, String) => SmimeInfo,
               insert: (SmimeInfo, String, String) => SmimeInfo,
               list: (String, String) => ListSmimeInfoResponse,
@@ -525,23 +494,17 @@ object Gmail {
               __obj.asInstanceOf[SmimeInfoCollection]
             }
             
-            @scala.inline
-            implicit class SmimeInfoCollectionMutableBuilder[Self <: SmimeInfoCollection] (val x: Self) extends AnyVal {
+            extension [Self <: SmimeInfoCollection](x: Self) {
               
-              @scala.inline
-              def setGet(value: (String, String, String) => SmimeInfo): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+              inline def setGet(value: (String, String, String) => SmimeInfo): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
               
-              @scala.inline
-              def setInsert(value: (SmimeInfo, String, String) => SmimeInfo): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
+              inline def setInsert(value: (SmimeInfo, String, String) => SmimeInfo): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
               
-              @scala.inline
-              def setList(value: (String, String) => ListSmimeInfoResponse): Self = StObject.set(x, "list", js.Any.fromFunction2(value))
+              inline def setList(value: (String, String) => ListSmimeInfoResponse): Self = StObject.set(x, "list", js.Any.fromFunction2(value))
               
-              @scala.inline
-              def setRemove(value: (String, String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction3(value))
+              inline def setRemove(value: (String, String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction3(value))
               
-              @scala.inline
-              def setSetDefault(value: (String, String, String) => Unit): Self = StObject.set(x, "setDefault", js.Any.fromFunction3(value))
+              inline def setSetDefault(value: (String, String, String) => Unit): Self = StObject.set(x, "setDefault", js.Any.fromFunction3(value))
             }
           }
         }
@@ -578,8 +541,7 @@ object Gmail {
         }
         object SendAsCollection {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             create: (SendAs, String) => SendAs,
             get: (String, String) => SendAs,
             list: String => ListSendAsResponse,
@@ -592,35 +554,25 @@ object Gmail {
             __obj.asInstanceOf[SendAsCollection]
           }
           
-          @scala.inline
-          implicit class SendAsCollectionMutableBuilder[Self <: SendAsCollection] (val x: Self) extends AnyVal {
+          extension [Self <: SendAsCollection](x: Self) {
             
-            @scala.inline
-            def setCreate(value: (SendAs, String) => SendAs): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+            inline def setCreate(value: (SendAs, String) => SendAs): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setGet(value: (String, String) => SendAs): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+            inline def setGet(value: (String, String) => SendAs): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setList(value: String => ListSendAsResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+            inline def setList(value: String => ListSendAsResponse): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setPatch(value: (SendAs, String, String) => SendAs): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
+            inline def setPatch(value: (SendAs, String, String) => SendAs): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
             
-            @scala.inline
-            def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+            inline def setRemove(value: (String, String) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
             
-            @scala.inline
-            def setSmimeInfo(value: SmimeInfoCollection): Self = StObject.set(x, "SmimeInfo", value.asInstanceOf[js.Any])
+            inline def setSmimeInfo(value: SmimeInfoCollection): Self = StObject.set(x, "SmimeInfo", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setSmimeInfoUndefined: Self = StObject.set(x, "SmimeInfo", js.undefined)
+            inline def setSmimeInfoUndefined: Self = StObject.set(x, "SmimeInfo", js.undefined)
             
-            @scala.inline
-            def setUpdate(value: (SendAs, String, String) => SendAs): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+            inline def setUpdate(value: (SendAs, String, String) => SendAs): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
             
-            @scala.inline
-            def setVerify(value: (String, String) => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+            inline def setVerify(value: (String, String) => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
           }
         }
       }
@@ -662,8 +614,7 @@ object Gmail {
       }
       object SettingsCollection {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           getAutoForwarding: String => AutoForwarding,
           getImap: String => ImapSettings,
           getPop: String => PopSettings,
@@ -677,56 +628,39 @@ object Gmail {
           __obj.asInstanceOf[SettingsCollection]
         }
         
-        @scala.inline
-        implicit class SettingsCollectionMutableBuilder[Self <: SettingsCollection] (val x: Self) extends AnyVal {
+        extension [Self <: SettingsCollection](x: Self) {
           
-          @scala.inline
-          def setDelegates(value: DelegatesCollection): Self = StObject.set(x, "Delegates", value.asInstanceOf[js.Any])
+          inline def setDelegates(value: DelegatesCollection): Self = StObject.set(x, "Delegates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDelegatesUndefined: Self = StObject.set(x, "Delegates", js.undefined)
+          inline def setDelegatesUndefined: Self = StObject.set(x, "Delegates", js.undefined)
           
-          @scala.inline
-          def setFilters(value: FiltersCollection): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+          inline def setFilters(value: FiltersCollection): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+          inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
           
-          @scala.inline
-          def setForwardingAddresses(value: ForwardingAddressesCollection): Self = StObject.set(x, "ForwardingAddresses", value.asInstanceOf[js.Any])
+          inline def setForwardingAddresses(value: ForwardingAddressesCollection): Self = StObject.set(x, "ForwardingAddresses", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setForwardingAddressesUndefined: Self = StObject.set(x, "ForwardingAddresses", js.undefined)
+          inline def setForwardingAddressesUndefined: Self = StObject.set(x, "ForwardingAddresses", js.undefined)
           
-          @scala.inline
-          def setGetAutoForwarding(value: String => AutoForwarding): Self = StObject.set(x, "getAutoForwarding", js.Any.fromFunction1(value))
+          inline def setGetAutoForwarding(value: String => AutoForwarding): Self = StObject.set(x, "getAutoForwarding", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setGetImap(value: String => ImapSettings): Self = StObject.set(x, "getImap", js.Any.fromFunction1(value))
+          inline def setGetImap(value: String => ImapSettings): Self = StObject.set(x, "getImap", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setGetPop(value: String => PopSettings): Self = StObject.set(x, "getPop", js.Any.fromFunction1(value))
+          inline def setGetPop(value: String => PopSettings): Self = StObject.set(x, "getPop", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setGetVacation(value: String => VacationSettings): Self = StObject.set(x, "getVacation", js.Any.fromFunction1(value))
+          inline def setGetVacation(value: String => VacationSettings): Self = StObject.set(x, "getVacation", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setSendAs(value: SendAsCollection): Self = StObject.set(x, "SendAs", value.asInstanceOf[js.Any])
+          inline def setSendAs(value: SendAsCollection): Self = StObject.set(x, "SendAs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSendAsUndefined: Self = StObject.set(x, "SendAs", js.undefined)
+          inline def setSendAsUndefined: Self = StObject.set(x, "SendAs", js.undefined)
           
-          @scala.inline
-          def setUpdateAutoForwarding(value: (AutoForwarding, String) => AutoForwarding): Self = StObject.set(x, "updateAutoForwarding", js.Any.fromFunction2(value))
+          inline def setUpdateAutoForwarding(value: (AutoForwarding, String) => AutoForwarding): Self = StObject.set(x, "updateAutoForwarding", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setUpdateImap(value: (ImapSettings, String) => ImapSettings): Self = StObject.set(x, "updateImap", js.Any.fromFunction2(value))
+          inline def setUpdateImap(value: (ImapSettings, String) => ImapSettings): Self = StObject.set(x, "updateImap", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setUpdatePop(value: (PopSettings, String) => PopSettings): Self = StObject.set(x, "updatePop", js.Any.fromFunction2(value))
+          inline def setUpdatePop(value: (PopSettings, String) => PopSettings): Self = StObject.set(x, "updatePop", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setUpdateVacation(value: (VacationSettings, String) => VacationSettings): Self = StObject.set(x, "updateVacation", js.Any.fromFunction2(value))
+          inline def setUpdateVacation(value: (VacationSettings, String) => VacationSettings): Self = StObject.set(x, "updateVacation", js.Any.fromFunction2(value))
         }
       }
       
@@ -782,8 +716,7 @@ object Gmail {
     }
     object UsersCollection {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getProfile: String => Profile,
         stop: String => Unit,
         watch: (WatchRequest, String) => WatchResponse
@@ -792,53 +725,37 @@ object Gmail {
         __obj.asInstanceOf[UsersCollection]
       }
       
-      @scala.inline
-      implicit class UsersCollectionMutableBuilder[Self <: UsersCollection] (val x: Self) extends AnyVal {
+      extension [Self <: UsersCollection](x: Self) {
         
-        @scala.inline
-        def setDrafts(value: DraftsCollection): Self = StObject.set(x, "Drafts", value.asInstanceOf[js.Any])
+        inline def setDrafts(value: DraftsCollection): Self = StObject.set(x, "Drafts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDraftsUndefined: Self = StObject.set(x, "Drafts", js.undefined)
+        inline def setDraftsUndefined: Self = StObject.set(x, "Drafts", js.undefined)
         
-        @scala.inline
-        def setGetProfile(value: String => Profile): Self = StObject.set(x, "getProfile", js.Any.fromFunction1(value))
+        inline def setGetProfile(value: String => Profile): Self = StObject.set(x, "getProfile", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setHistory(value: HistoryCollection): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
+        inline def setHistory(value: HistoryCollection): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
+        inline def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
         
-        @scala.inline
-        def setLabels(value: LabelsCollection): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+        inline def setLabels(value: LabelsCollection): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+        inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
         
-        @scala.inline
-        def setMessages(value: MessagesCollection): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
+        inline def setMessages(value: MessagesCollection): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
+        inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
         
-        @scala.inline
-        def setSettings(value: SettingsCollection): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+        inline def setSettings(value: SettingsCollection): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+        inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
         
-        @scala.inline
-        def setStop(value: String => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+        inline def setStop(value: String => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setThreads(value: ThreadsCollection): Self = StObject.set(x, "Threads", value.asInstanceOf[js.Any])
+        inline def setThreads(value: ThreadsCollection): Self = StObject.set(x, "Threads", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreadsUndefined: Self = StObject.set(x, "Threads", js.undefined)
+        inline def setThreadsUndefined: Self = StObject.set(x, "Threads", js.undefined)
         
-        @scala.inline
-        def setWatch(value: (WatchRequest, String) => WatchResponse): Self = StObject.set(x, "watch", js.Any.fromFunction2(value))
+        inline def setWatch(value: (WatchRequest, String) => WatchResponse): Self = StObject.set(x, "watch", js.Any.fromFunction2(value))
       }
     }
   }
@@ -890,65 +807,46 @@ object Gmail {
   }
   object GmailAdvancedOptions {
     
-    @scala.inline
-    def apply(): GmailAdvancedOptions = {
+    inline def apply(): GmailAdvancedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GmailAdvancedOptions]
     }
     
-    @scala.inline
-    implicit class GmailAdvancedOptionsMutableBuilder[Self <: GmailAdvancedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GmailAdvancedOptions](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: js.Array[BlobSource]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[BlobSource]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+      inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      @scala.inline
-      def setAttachmentsVarargs(value: BlobSource*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: BlobSource*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setBcc(value: String): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: String): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
+      inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      @scala.inline
-      def setCc(value: String): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+      inline def setCc(value: String): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
+      inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setHtmlBody(value: String): Self = StObject.set(x, "htmlBody", value.asInstanceOf[js.Any])
+      inline def setHtmlBody(value: String): Self = StObject.set(x, "htmlBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlBodyUndefined: Self = StObject.set(x, "htmlBody", js.undefined)
+      inline def setHtmlBodyUndefined: Self = StObject.set(x, "htmlBody", js.undefined)
       
-      @scala.inline
-      def setInlineImages(value: StringDictionary[BlobSource]): Self = StObject.set(x, "inlineImages", value.asInstanceOf[js.Any])
+      inline def setInlineImages(value: StringDictionary[BlobSource]): Self = StObject.set(x, "inlineImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineImagesUndefined: Self = StObject.set(x, "inlineImages", js.undefined)
+      inline def setInlineImagesUndefined: Self = StObject.set(x, "inlineImages", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setReplyTo(value: String): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
+      inline def setReplyTo(value: String): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
+      inline def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
     }
   }
   
@@ -1150,26 +1048,20 @@ object Gmail {
   }
   object GmailAttachmentOptions {
     
-    @scala.inline
-    def apply(): GmailAttachmentOptions = {
+    inline def apply(): GmailAttachmentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GmailAttachmentOptions]
     }
     
-    @scala.inline
-    implicit class GmailAttachmentOptionsMutableBuilder[Self <: GmailAttachmentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GmailAttachmentOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeAttachments(value: Boolean): Self = StObject.set(x, "includeAttachments", value.asInstanceOf[js.Any])
+      inline def setIncludeAttachments(value: Boolean): Self = StObject.set(x, "includeAttachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAttachmentsUndefined: Self = StObject.set(x, "includeAttachments", js.undefined)
+      inline def setIncludeAttachmentsUndefined: Self = StObject.set(x, "includeAttachments", js.undefined)
       
-      @scala.inline
-      def setIncludeInlineImages(value: Boolean): Self = StObject.set(x, "includeInlineImages", value.asInstanceOf[js.Any])
+      inline def setIncludeInlineImages(value: Boolean): Self = StObject.set(x, "includeInlineImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeInlineImagesUndefined: Self = StObject.set(x, "includeInlineImages", js.undefined)
+      inline def setIncludeInlineImagesUndefined: Self = StObject.set(x, "includeInlineImages", js.undefined)
     }
   }
   
@@ -1318,86 +1210,59 @@ object Gmail {
     def unstar(): GmailMessage = js.native
   }
   
-  @scala.inline
-  implicit class GmailMutableBuilder[Self <: Gmail] (val x: Self) extends AnyVal {
+  extension [Self <: Gmail](x: Self) {
     
-    @scala.inline
-    def setNewAutoForwarding(value: () => AutoForwarding): Self = StObject.set(x, "newAutoForwarding", js.Any.fromFunction0(value))
+    inline def setNewAutoForwarding(value: () => AutoForwarding): Self = StObject.set(x, "newAutoForwarding", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBatchDeleteMessagesRequest(value: () => BatchDeleteMessagesRequest): Self = StObject.set(x, "newBatchDeleteMessagesRequest", js.Any.fromFunction0(value))
+    inline def setNewBatchDeleteMessagesRequest(value: () => BatchDeleteMessagesRequest): Self = StObject.set(x, "newBatchDeleteMessagesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBatchModifyMessagesRequest(value: () => BatchModifyMessagesRequest): Self = StObject.set(x, "newBatchModifyMessagesRequest", js.Any.fromFunction0(value))
+    inline def setNewBatchModifyMessagesRequest(value: () => BatchModifyMessagesRequest): Self = StObject.set(x, "newBatchModifyMessagesRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDelegate(value: () => Delegate): Self = StObject.set(x, "newDelegate", js.Any.fromFunction0(value))
+    inline def setNewDelegate(value: () => Delegate): Self = StObject.set(x, "newDelegate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDraft(value: () => Draft): Self = StObject.set(x, "newDraft", js.Any.fromFunction0(value))
+    inline def setNewDraft(value: () => Draft): Self = StObject.set(x, "newDraft", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewFilter(value: () => Filter): Self = StObject.set(x, "newFilter", js.Any.fromFunction0(value))
+    inline def setNewFilter(value: () => Filter): Self = StObject.set(x, "newFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewFilterAction(value: () => FilterAction): Self = StObject.set(x, "newFilterAction", js.Any.fromFunction0(value))
+    inline def setNewFilterAction(value: () => FilterAction): Self = StObject.set(x, "newFilterAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "newFilterCriteria", js.Any.fromFunction0(value))
+    inline def setNewFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "newFilterCriteria", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewForwardingAddress(value: () => ForwardingAddress): Self = StObject.set(x, "newForwardingAddress", js.Any.fromFunction0(value))
+    inline def setNewForwardingAddress(value: () => ForwardingAddress): Self = StObject.set(x, "newForwardingAddress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewImapSettings(value: () => ImapSettings): Self = StObject.set(x, "newImapSettings", js.Any.fromFunction0(value))
+    inline def setNewImapSettings(value: () => ImapSettings): Self = StObject.set(x, "newImapSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLabel(value: () => Label): Self = StObject.set(x, "newLabel", js.Any.fromFunction0(value))
+    inline def setNewLabel(value: () => Label): Self = StObject.set(x, "newLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLabelColor(value: () => LabelColor): Self = StObject.set(x, "newLabelColor", js.Any.fromFunction0(value))
+    inline def setNewLabelColor(value: () => LabelColor): Self = StObject.set(x, "newLabelColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMessage(value: () => Message): Self = StObject.set(x, "newMessage", js.Any.fromFunction0(value))
+    inline def setNewMessage(value: () => Message): Self = StObject.set(x, "newMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMessagePart(value: () => MessagePart): Self = StObject.set(x, "newMessagePart", js.Any.fromFunction0(value))
+    inline def setNewMessagePart(value: () => MessagePart): Self = StObject.set(x, "newMessagePart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMessagePartBody(value: () => MessagePartBody): Self = StObject.set(x, "newMessagePartBody", js.Any.fromFunction0(value))
+    inline def setNewMessagePartBody(value: () => MessagePartBody): Self = StObject.set(x, "newMessagePartBody", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMessagePartHeader(value: () => MessagePartHeader): Self = StObject.set(x, "newMessagePartHeader", js.Any.fromFunction0(value))
+    inline def setNewMessagePartHeader(value: () => MessagePartHeader): Self = StObject.set(x, "newMessagePartHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewModifyMessageRequest(value: () => ModifyMessageRequest): Self = StObject.set(x, "newModifyMessageRequest", js.Any.fromFunction0(value))
+    inline def setNewModifyMessageRequest(value: () => ModifyMessageRequest): Self = StObject.set(x, "newModifyMessageRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewModifyThreadRequest(value: () => ModifyThreadRequest): Self = StObject.set(x, "newModifyThreadRequest", js.Any.fromFunction0(value))
+    inline def setNewModifyThreadRequest(value: () => ModifyThreadRequest): Self = StObject.set(x, "newModifyThreadRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPopSettings(value: () => PopSettings): Self = StObject.set(x, "newPopSettings", js.Any.fromFunction0(value))
+    inline def setNewPopSettings(value: () => PopSettings): Self = StObject.set(x, "newPopSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSendAs(value: () => SendAs): Self = StObject.set(x, "newSendAs", js.Any.fromFunction0(value))
+    inline def setNewSendAs(value: () => SendAs): Self = StObject.set(x, "newSendAs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSmimeInfo(value: () => SmimeInfo): Self = StObject.set(x, "newSmimeInfo", js.Any.fromFunction0(value))
+    inline def setNewSmimeInfo(value: () => SmimeInfo): Self = StObject.set(x, "newSmimeInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSmtpMsa(value: () => SmtpMsa): Self = StObject.set(x, "newSmtpMsa", js.Any.fromFunction0(value))
+    inline def setNewSmtpMsa(value: () => SmtpMsa): Self = StObject.set(x, "newSmtpMsa", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewVacationSettings(value: () => VacationSettings): Self = StObject.set(x, "newVacationSettings", js.Any.fromFunction0(value))
+    inline def setNewVacationSettings(value: () => VacationSettings): Self = StObject.set(x, "newVacationSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewWatchRequest(value: () => WatchRequest): Self = StObject.set(x, "newWatchRequest", js.Any.fromFunction0(value))
+    inline def setNewWatchRequest(value: () => WatchRequest): Self = StObject.set(x, "newWatchRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUsers(value: UsersCollection): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: UsersCollection): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
   }
   
   /**
@@ -1483,32 +1348,24 @@ object Gmail {
     }
     object AutoForwarding {
       
-      @scala.inline
-      def apply(): AutoForwarding = {
+      inline def apply(): AutoForwarding = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AutoForwarding]
       }
       
-      @scala.inline
-      implicit class AutoForwardingMutableBuilder[Self <: AutoForwarding] (val x: Self) extends AnyVal {
+      extension [Self <: AutoForwarding](x: Self) {
         
-        @scala.inline
-        def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+        inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+        inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
         
-        @scala.inline
-        def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+        inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+        inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+        inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       }
     }
     
@@ -1518,23 +1375,18 @@ object Gmail {
     }
     object BatchDeleteMessagesRequest {
       
-      @scala.inline
-      def apply(): BatchDeleteMessagesRequest = {
+      inline def apply(): BatchDeleteMessagesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchDeleteMessagesRequest]
       }
       
-      @scala.inline
-      implicit class BatchDeleteMessagesRequestMutableBuilder[Self <: BatchDeleteMessagesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: BatchDeleteMessagesRequest](x: Self) {
         
-        @scala.inline
-        def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+        inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+        inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        @scala.inline
-        def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       }
     }
     
@@ -1548,41 +1400,30 @@ object Gmail {
     }
     object BatchModifyMessagesRequest {
       
-      @scala.inline
-      def apply(): BatchModifyMessagesRequest = {
+      inline def apply(): BatchModifyMessagesRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchModifyMessagesRequest]
       }
       
-      @scala.inline
-      implicit class BatchModifyMessagesRequestMutableBuilder[Self <: BatchModifyMessagesRequest] (val x: Self) extends AnyVal {
+      extension [Self <: BatchModifyMessagesRequest](x: Self) {
         
-        @scala.inline
-        def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
+        inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
+        inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        @scala.inline
-        def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+        inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+        inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        @scala.inline
-        def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
         
-        @scala.inline
-        def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
+        inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
+        inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        @scala.inline
-        def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
       }
     }
     
@@ -1594,26 +1435,20 @@ object Gmail {
     }
     object Delegate {
       
-      @scala.inline
-      def apply(): Delegate = {
+      inline def apply(): Delegate = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Delegate]
       }
       
-      @scala.inline
-      implicit class DelegateMutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
+      extension [Self <: Delegate](x: Self) {
         
-        @scala.inline
-        def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
+        inline def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelegateEmailUndefined: Self = StObject.set(x, "delegateEmail", js.undefined)
+        inline def setDelegateEmailUndefined: Self = StObject.set(x, "delegateEmail", js.undefined)
         
-        @scala.inline
-        def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
+        inline def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
+        inline def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
       }
     }
     
@@ -1625,26 +1460,20 @@ object Gmail {
     }
     object Draft {
       
-      @scala.inline
-      def apply(): Draft = {
+      inline def apply(): Draft = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Draft]
       }
       
-      @scala.inline
-      implicit class DraftMutableBuilder[Self <: Draft] (val x: Self) extends AnyVal {
+      extension [Self <: Draft](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       }
     }
     
@@ -1658,32 +1487,24 @@ object Gmail {
     }
     object Filter {
       
-      @scala.inline
-      def apply(): Filter = {
+      inline def apply(): Filter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Filter]
       }
       
-      @scala.inline
-      implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+      extension [Self <: Filter](x: Self) {
         
-        @scala.inline
-        def setAction(value: FilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: FilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+        inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
-        @scala.inline
-        def setCriteria(value: FilterCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+        inline def setCriteria(value: FilterCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+        inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       }
     }
     
@@ -1697,38 +1518,28 @@ object Gmail {
     }
     object FilterAction {
       
-      @scala.inline
-      def apply(): FilterAction = {
+      inline def apply(): FilterAction = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FilterAction]
       }
       
-      @scala.inline
-      implicit class FilterActionMutableBuilder[Self <: FilterAction] (val x: Self) extends AnyVal {
+      extension [Self <: FilterAction](x: Self) {
         
-        @scala.inline
-        def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
+        inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
+        inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        @scala.inline
-        def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setForward(value: String): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+        inline def setForward(value: String): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+        inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
         
-        @scala.inline
-        def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
+        inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
+        inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        @scala.inline
-        def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
       }
     }
     
@@ -1754,68 +1565,48 @@ object Gmail {
     }
     object FilterCriteria {
       
-      @scala.inline
-      def apply(): FilterCriteria = {
+      inline def apply(): FilterCriteria = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FilterCriteria]
       }
       
-      @scala.inline
-      implicit class FilterCriteriaMutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
+      extension [Self <: FilterCriteria](x: Self) {
         
-        @scala.inline
-        def setExcludeChats(value: Boolean): Self = StObject.set(x, "excludeChats", value.asInstanceOf[js.Any])
+        inline def setExcludeChats(value: Boolean): Self = StObject.set(x, "excludeChats", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExcludeChatsUndefined: Self = StObject.set(x, "excludeChats", js.undefined)
+        inline def setExcludeChatsUndefined: Self = StObject.set(x, "excludeChats", js.undefined)
         
-        @scala.inline
-        def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+        inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+        inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
         
-        @scala.inline
-        def setHasAttachment(value: Boolean): Self = StObject.set(x, "hasAttachment", value.asInstanceOf[js.Any])
+        inline def setHasAttachment(value: Boolean): Self = StObject.set(x, "hasAttachment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHasAttachmentUndefined: Self = StObject.set(x, "hasAttachment", js.undefined)
+        inline def setHasAttachmentUndefined: Self = StObject.set(x, "hasAttachment", js.undefined)
         
-        @scala.inline
-        def setNegatedQuery(value: String): Self = StObject.set(x, "negatedQuery", value.asInstanceOf[js.Any])
+        inline def setNegatedQuery(value: String): Self = StObject.set(x, "negatedQuery", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNegatedQueryUndefined: Self = StObject.set(x, "negatedQuery", js.undefined)
+        inline def setNegatedQueryUndefined: Self = StObject.set(x, "negatedQuery", js.undefined)
         
-        @scala.inline
-        def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+        inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
         
-        @scala.inline
-        def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeComparison(value: String): Self = StObject.set(x, "sizeComparison", value.asInstanceOf[js.Any])
+        inline def setSizeComparison(value: String): Self = StObject.set(x, "sizeComparison", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeComparisonUndefined: Self = StObject.set(x, "sizeComparison", js.undefined)
+        inline def setSizeComparisonUndefined: Self = StObject.set(x, "sizeComparison", js.undefined)
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+        inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+        inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
         
-        @scala.inline
-        def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+        inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+        inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       }
     }
     
@@ -1827,26 +1618,20 @@ object Gmail {
     }
     object ForwardingAddress {
       
-      @scala.inline
-      def apply(): ForwardingAddress = {
+      inline def apply(): ForwardingAddress = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ForwardingAddress]
       }
       
-      @scala.inline
-      implicit class ForwardingAddressMutableBuilder[Self <: ForwardingAddress] (val x: Self) extends AnyVal {
+      extension [Self <: ForwardingAddress](x: Self) {
         
-        @scala.inline
-        def setForwardingEmail(value: String): Self = StObject.set(x, "forwardingEmail", value.asInstanceOf[js.Any])
+        inline def setForwardingEmail(value: String): Self = StObject.set(x, "forwardingEmail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForwardingEmailUndefined: Self = StObject.set(x, "forwardingEmail", js.undefined)
+        inline def setForwardingEmailUndefined: Self = StObject.set(x, "forwardingEmail", js.undefined)
         
-        @scala.inline
-        def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
+        inline def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
+        inline def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
       }
     }
     
@@ -1866,65 +1651,46 @@ object Gmail {
     }
     object History {
       
-      @scala.inline
-      def apply(): History = {
+      inline def apply(): History = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[History]
       }
       
-      @scala.inline
-      implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+      extension [Self <: History](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setLabelsAdded(value: js.Array[HistoryLabelAdded]): Self = StObject.set(x, "labelsAdded", value.asInstanceOf[js.Any])
+        inline def setLabelsAdded(value: js.Array[HistoryLabelAdded]): Self = StObject.set(x, "labelsAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelsAddedUndefined: Self = StObject.set(x, "labelsAdded", js.undefined)
+        inline def setLabelsAddedUndefined: Self = StObject.set(x, "labelsAdded", js.undefined)
         
-        @scala.inline
-        def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value :_*))
+        inline def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setLabelsRemoved(value: js.Array[HistoryLabelRemoved]): Self = StObject.set(x, "labelsRemoved", value.asInstanceOf[js.Any])
+        inline def setLabelsRemoved(value: js.Array[HistoryLabelRemoved]): Self = StObject.set(x, "labelsRemoved", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelsRemovedUndefined: Self = StObject.set(x, "labelsRemoved", js.undefined)
+        inline def setLabelsRemovedUndefined: Self = StObject.set(x, "labelsRemoved", js.undefined)
         
-        @scala.inline
-        def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value :_*))
+        inline def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value :_*))
         
-        @scala.inline
-        def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+        inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesAdded(value: js.Array[HistoryMessageAdded]): Self = StObject.set(x, "messagesAdded", value.asInstanceOf[js.Any])
+        inline def setMessagesAdded(value: js.Array[HistoryMessageAdded]): Self = StObject.set(x, "messagesAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesAddedUndefined: Self = StObject.set(x, "messagesAdded", js.undefined)
+        inline def setMessagesAddedUndefined: Self = StObject.set(x, "messagesAdded", js.undefined)
         
-        @scala.inline
-        def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value :_*))
+        inline def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setMessagesDeleted(value: js.Array[HistoryMessageDeleted]): Self = StObject.set(x, "messagesDeleted", value.asInstanceOf[js.Any])
+        inline def setMessagesDeleted(value: js.Array[HistoryMessageDeleted]): Self = StObject.set(x, "messagesDeleted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesDeletedUndefined: Self = StObject.set(x, "messagesDeleted", js.undefined)
+        inline def setMessagesDeletedUndefined: Self = StObject.set(x, "messagesDeleted", js.undefined)
         
-        @scala.inline
-        def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value :_*))
+        inline def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value :_*))
         
-        @scala.inline
-        def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+        inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
         
-        @scala.inline
-        def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
       }
     }
     
@@ -1936,29 +1702,22 @@ object Gmail {
     }
     object HistoryLabelAdded {
       
-      @scala.inline
-      def apply(): HistoryLabelAdded = {
+      inline def apply(): HistoryLabelAdded = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HistoryLabelAdded]
       }
       
-      @scala.inline
-      implicit class HistoryLabelAddedMutableBuilder[Self <: HistoryLabelAdded] (val x: Self) extends AnyVal {
+      extension [Self <: HistoryLabelAdded](x: Self) {
         
-        @scala.inline
-        def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+        inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+        inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        @scala.inline
-        def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       }
     }
     
@@ -1970,29 +1729,22 @@ object Gmail {
     }
     object HistoryLabelRemoved {
       
-      @scala.inline
-      def apply(): HistoryLabelRemoved = {
+      inline def apply(): HistoryLabelRemoved = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HistoryLabelRemoved]
       }
       
-      @scala.inline
-      implicit class HistoryLabelRemovedMutableBuilder[Self <: HistoryLabelRemoved] (val x: Self) extends AnyVal {
+      extension [Self <: HistoryLabelRemoved](x: Self) {
         
-        @scala.inline
-        def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+        inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+        inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        @scala.inline
-        def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       }
     }
     
@@ -2002,20 +1754,16 @@ object Gmail {
     }
     object HistoryMessageAdded {
       
-      @scala.inline
-      def apply(): HistoryMessageAdded = {
+      inline def apply(): HistoryMessageAdded = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HistoryMessageAdded]
       }
       
-      @scala.inline
-      implicit class HistoryMessageAddedMutableBuilder[Self <: HistoryMessageAdded] (val x: Self) extends AnyVal {
+      extension [Self <: HistoryMessageAdded](x: Self) {
         
-        @scala.inline
-        def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       }
     }
     
@@ -2025,20 +1773,16 @@ object Gmail {
     }
     object HistoryMessageDeleted {
       
-      @scala.inline
-      def apply(): HistoryMessageDeleted = {
+      inline def apply(): HistoryMessageDeleted = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HistoryMessageDeleted]
       }
       
-      @scala.inline
-      implicit class HistoryMessageDeletedMutableBuilder[Self <: HistoryMessageDeleted] (val x: Self) extends AnyVal {
+      extension [Self <: HistoryMessageDeleted](x: Self) {
         
-        @scala.inline
-        def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       }
     }
     
@@ -2054,38 +1798,28 @@ object Gmail {
     }
     object ImapSettings {
       
-      @scala.inline
-      def apply(): ImapSettings = {
+      inline def apply(): ImapSettings = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ImapSettings]
       }
       
-      @scala.inline
-      implicit class ImapSettingsMutableBuilder[Self <: ImapSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ImapSettings](x: Self) {
         
-        @scala.inline
-        def setAutoExpunge(value: Boolean): Self = StObject.set(x, "autoExpunge", value.asInstanceOf[js.Any])
+        inline def setAutoExpunge(value: Boolean): Self = StObject.set(x, "autoExpunge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoExpungeUndefined: Self = StObject.set(x, "autoExpunge", js.undefined)
+        inline def setAutoExpungeUndefined: Self = StObject.set(x, "autoExpunge", js.undefined)
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+        inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
         
-        @scala.inline
-        def setExpungeBehavior(value: String): Self = StObject.set(x, "expungeBehavior", value.asInstanceOf[js.Any])
+        inline def setExpungeBehavior(value: String): Self = StObject.set(x, "expungeBehavior", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpungeBehaviorUndefined: Self = StObject.set(x, "expungeBehavior", js.undefined)
+        inline def setExpungeBehaviorUndefined: Self = StObject.set(x, "expungeBehavior", js.undefined)
         
-        @scala.inline
-        def setMaxFolderSize(value: Double): Self = StObject.set(x, "maxFolderSize", value.asInstanceOf[js.Any])
+        inline def setMaxFolderSize(value: Double): Self = StObject.set(x, "maxFolderSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxFolderSizeUndefined: Self = StObject.set(x, "maxFolderSize", js.undefined)
+        inline def setMaxFolderSizeUndefined: Self = StObject.set(x, "maxFolderSize", js.undefined)
       }
     }
     
@@ -2113,74 +1847,52 @@ object Gmail {
     }
     object Label {
       
-      @scala.inline
-      def apply(): Label = {
+      inline def apply(): Label = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Label]
       }
       
-      @scala.inline
-      implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+      extension [Self <: Label](x: Self) {
         
-        @scala.inline
-        def setColor(value: LabelColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: LabelColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setLabelListVisibility(value: String): Self = StObject.set(x, "labelListVisibility", value.asInstanceOf[js.Any])
+        inline def setLabelListVisibility(value: String): Self = StObject.set(x, "labelListVisibility", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelListVisibilityUndefined: Self = StObject.set(x, "labelListVisibility", js.undefined)
+        inline def setLabelListVisibilityUndefined: Self = StObject.set(x, "labelListVisibility", js.undefined)
         
-        @scala.inline
-        def setMessageListVisibility(value: String): Self = StObject.set(x, "messageListVisibility", value.asInstanceOf[js.Any])
+        inline def setMessageListVisibility(value: String): Self = StObject.set(x, "messageListVisibility", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageListVisibilityUndefined: Self = StObject.set(x, "messageListVisibility", js.undefined)
+        inline def setMessageListVisibilityUndefined: Self = StObject.set(x, "messageListVisibility", js.undefined)
         
-        @scala.inline
-        def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
+        inline def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
+        inline def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
         
-        @scala.inline
-        def setMessagesUnread(value: Double): Self = StObject.set(x, "messagesUnread", value.asInstanceOf[js.Any])
+        inline def setMessagesUnread(value: Double): Self = StObject.set(x, "messagesUnread", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesUnreadUndefined: Self = StObject.set(x, "messagesUnread", js.undefined)
+        inline def setMessagesUnreadUndefined: Self = StObject.set(x, "messagesUnread", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
+        inline def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
+        inline def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
         
-        @scala.inline
-        def setThreadsUnread(value: Double): Self = StObject.set(x, "threadsUnread", value.asInstanceOf[js.Any])
+        inline def setThreadsUnread(value: Double): Self = StObject.set(x, "threadsUnread", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreadsUnreadUndefined: Self = StObject.set(x, "threadsUnread", js.undefined)
+        inline def setThreadsUnreadUndefined: Self = StObject.set(x, "threadsUnread", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -2192,26 +1904,20 @@ object Gmail {
     }
     object LabelColor {
       
-      @scala.inline
-      def apply(): LabelColor = {
+      inline def apply(): LabelColor = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LabelColor]
       }
       
-      @scala.inline
-      implicit class LabelColorMutableBuilder[Self <: LabelColor] (val x: Self) extends AnyVal {
+      extension [Self <: LabelColor](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+        inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+        inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       }
     }
     
@@ -2221,23 +1927,18 @@ object Gmail {
     }
     object ListDelegatesResponse {
       
-      @scala.inline
-      def apply(): ListDelegatesResponse = {
+      inline def apply(): ListDelegatesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListDelegatesResponse]
       }
       
-      @scala.inline
-      implicit class ListDelegatesResponseMutableBuilder[Self <: ListDelegatesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListDelegatesResponse](x: Self) {
         
-        @scala.inline
-        def setDelegates(value: js.Array[Delegate]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+        inline def setDelegates(value: js.Array[Delegate]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+        inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
         
-        @scala.inline
-        def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+        inline def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "delegates", js.Array(value :_*))
       }
     }
     
@@ -2251,35 +1952,26 @@ object Gmail {
     }
     object ListDraftsResponse {
       
-      @scala.inline
-      def apply(): ListDraftsResponse = {
+      inline def apply(): ListDraftsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListDraftsResponse]
       }
       
-      @scala.inline
-      implicit class ListDraftsResponseMutableBuilder[Self <: ListDraftsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListDraftsResponse](x: Self) {
         
-        @scala.inline
-        def setDrafts(value: js.Array[Draft]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
+        inline def setDrafts(value: js.Array[Draft]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
+        inline def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
         
-        @scala.inline
-        def setDraftsVarargs(value: Draft*): Self = StObject.set(x, "drafts", js.Array(value :_*))
+        inline def setDraftsVarargs(value: Draft*): Self = StObject.set(x, "drafts", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
+        inline def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
+        inline def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
       }
     }
     
@@ -2289,23 +1981,18 @@ object Gmail {
     }
     object ListFiltersResponse {
       
-      @scala.inline
-      def apply(): ListFiltersResponse = {
+      inline def apply(): ListFiltersResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListFiltersResponse]
       }
       
-      @scala.inline
-      implicit class ListFiltersResponseMutableBuilder[Self <: ListFiltersResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListFiltersResponse](x: Self) {
         
-        @scala.inline
-        def setFilter(value: js.Array[Filter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: js.Array[Filter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+        inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        @scala.inline
-        def setFilterVarargs(value: Filter*): Self = StObject.set(x, "filter", js.Array(value :_*))
+        inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "filter", js.Array(value :_*))
       }
     }
     
@@ -2315,23 +2002,18 @@ object Gmail {
     }
     object ListForwardingAddressesResponse {
       
-      @scala.inline
-      def apply(): ListForwardingAddressesResponse = {
+      inline def apply(): ListForwardingAddressesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListForwardingAddressesResponse]
       }
       
-      @scala.inline
-      implicit class ListForwardingAddressesResponseMutableBuilder[Self <: ListForwardingAddressesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListForwardingAddressesResponse](x: Self) {
         
-        @scala.inline
-        def setForwardingAddresses(value: js.Array[ForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
+        inline def setForwardingAddresses(value: js.Array[ForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
+        inline def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
         
-        @scala.inline
-        def setForwardingAddressesVarargs(value: ForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
+        inline def setForwardingAddressesVarargs(value: ForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
       }
     }
     
@@ -2345,35 +2027,26 @@ object Gmail {
     }
     object ListHistoryResponse {
       
-      @scala.inline
-      def apply(): ListHistoryResponse = {
+      inline def apply(): ListHistoryResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListHistoryResponse]
       }
       
-      @scala.inline
-      implicit class ListHistoryResponseMutableBuilder[Self <: ListHistoryResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListHistoryResponse](x: Self) {
         
-        @scala.inline
-        def setHistory(value: js.Array[History]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+        inline def setHistory(value: js.Array[History]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+        inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+        inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
         
-        @scala.inline
-        def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+        inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
         
-        @scala.inline
-        def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value :_*))
+        inline def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -2383,23 +2056,18 @@ object Gmail {
     }
     object ListLabelsResponse {
       
-      @scala.inline
-      def apply(): ListLabelsResponse = {
+      inline def apply(): ListLabelsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListLabelsResponse]
       }
       
-      @scala.inline
-      implicit class ListLabelsResponseMutableBuilder[Self <: ListLabelsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListLabelsResponse](x: Self) {
         
-        @scala.inline
-        def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+        inline def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+        inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
         
-        @scala.inline
-        def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
+        inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
       }
     }
     
@@ -2413,35 +2081,26 @@ object Gmail {
     }
     object ListMessagesResponse {
       
-      @scala.inline
-      def apply(): ListMessagesResponse = {
+      inline def apply(): ListMessagesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListMessagesResponse]
       }
       
-      @scala.inline
-      implicit class ListMessagesResponseMutableBuilder[Self <: ListMessagesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListMessagesResponse](x: Self) {
         
-        @scala.inline
-        def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+        inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+        inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
         
-        @scala.inline
-        def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
+        inline def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
+        inline def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
       }
     }
     
@@ -2451,23 +2110,18 @@ object Gmail {
     }
     object ListSendAsResponse {
       
-      @scala.inline
-      def apply(): ListSendAsResponse = {
+      inline def apply(): ListSendAsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListSendAsResponse]
       }
       
-      @scala.inline
-      implicit class ListSendAsResponseMutableBuilder[Self <: ListSendAsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListSendAsResponse](x: Self) {
         
-        @scala.inline
-        def setSendAs(value: js.Array[SendAs]): Self = StObject.set(x, "sendAs", value.asInstanceOf[js.Any])
+        inline def setSendAs(value: js.Array[SendAs]): Self = StObject.set(x, "sendAs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSendAsUndefined: Self = StObject.set(x, "sendAs", js.undefined)
+        inline def setSendAsUndefined: Self = StObject.set(x, "sendAs", js.undefined)
         
-        @scala.inline
-        def setSendAsVarargs(value: SendAs*): Self = StObject.set(x, "sendAs", js.Array(value :_*))
+        inline def setSendAsVarargs(value: SendAs*): Self = StObject.set(x, "sendAs", js.Array(value :_*))
       }
     }
     
@@ -2477,23 +2131,18 @@ object Gmail {
     }
     object ListSmimeInfoResponse {
       
-      @scala.inline
-      def apply(): ListSmimeInfoResponse = {
+      inline def apply(): ListSmimeInfoResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListSmimeInfoResponse]
       }
       
-      @scala.inline
-      implicit class ListSmimeInfoResponseMutableBuilder[Self <: ListSmimeInfoResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListSmimeInfoResponse](x: Self) {
         
-        @scala.inline
-        def setSmimeInfo(value: js.Array[SmimeInfo]): Self = StObject.set(x, "smimeInfo", value.asInstanceOf[js.Any])
+        inline def setSmimeInfo(value: js.Array[SmimeInfo]): Self = StObject.set(x, "smimeInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmimeInfoUndefined: Self = StObject.set(x, "smimeInfo", js.undefined)
+        inline def setSmimeInfoUndefined: Self = StObject.set(x, "smimeInfo", js.undefined)
         
-        @scala.inline
-        def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value :_*))
+        inline def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value :_*))
       }
     }
     
@@ -2507,35 +2156,26 @@ object Gmail {
     }
     object ListThreadsResponse {
       
-      @scala.inline
-      def apply(): ListThreadsResponse = {
+      inline def apply(): ListThreadsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListThreadsResponse]
       }
       
-      @scala.inline
-      implicit class ListThreadsResponseMutableBuilder[Self <: ListThreadsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListThreadsResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
+        inline def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
+        inline def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
         
-        @scala.inline
-        def setThreads(value: js.Array[Thread]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+        inline def setThreads(value: js.Array[Thread]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+        inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
         
-        @scala.inline
-        def setThreadsVarargs(value: Thread*): Self = StObject.set(x, "threads", js.Array(value :_*))
+        inline def setThreadsVarargs(value: Thread*): Self = StObject.set(x, "threads", js.Array(value :_*))
       }
     }
     
@@ -2561,71 +2201,50 @@ object Gmail {
     }
     object Message {
       
-      @scala.inline
-      def apply(): Message = {
+      inline def apply(): Message = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Message]
       }
       
-      @scala.inline
-      implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+      extension [Self <: Message](x: Self) {
         
-        @scala.inline
-        def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+        inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+        inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setInternalDate(value: String): Self = StObject.set(x, "internalDate", value.asInstanceOf[js.Any])
+        inline def setInternalDate(value: String): Self = StObject.set(x, "internalDate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInternalDateUndefined: Self = StObject.set(x, "internalDate", js.undefined)
+        inline def setInternalDateUndefined: Self = StObject.set(x, "internalDate", js.undefined)
         
-        @scala.inline
-        def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+        inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+        inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        @scala.inline
-        def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setPayload(value: MessagePart): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+        inline def setPayload(value: MessagePart): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+        inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
         
-        @scala.inline
-        def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+        inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
         
-        @scala.inline
-        def setSizeEstimate(value: Double): Self = StObject.set(x, "sizeEstimate", value.asInstanceOf[js.Any])
+        inline def setSizeEstimate(value: Double): Self = StObject.set(x, "sizeEstimate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeEstimateUndefined: Self = StObject.set(x, "sizeEstimate", js.undefined)
+        inline def setSizeEstimateUndefined: Self = StObject.set(x, "sizeEstimate", js.undefined)
         
-        @scala.inline
-        def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+        inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+        inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
         
-        @scala.inline
-        def setThreadId(value: String): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+        inline def setThreadId(value: String): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
+        inline def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
       }
     }
     
@@ -2645,56 +2264,40 @@ object Gmail {
     }
     object MessagePart {
       
-      @scala.inline
-      def apply(): MessagePart = {
+      inline def apply(): MessagePart = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MessagePart]
       }
       
-      @scala.inline
-      implicit class MessagePartMutableBuilder[Self <: MessagePart] (val x: Self) extends AnyVal {
+      extension [Self <: MessagePart](x: Self) {
         
-        @scala.inline
-        def setBody(value: MessagePartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: MessagePartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+        inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         
-        @scala.inline
-        def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+        inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
         
-        @scala.inline
-        def setHeaders(value: js.Array[MessagePartHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: js.Array[MessagePartHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+        inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        @scala.inline
-        def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
         
-        @scala.inline
-        def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+        inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+        inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
         
-        @scala.inline
-        def setPartId(value: String): Self = StObject.set(x, "partId", value.asInstanceOf[js.Any])
+        inline def setPartId(value: String): Self = StObject.set(x, "partId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartIdUndefined: Self = StObject.set(x, "partId", js.undefined)
+        inline def setPartIdUndefined: Self = StObject.set(x, "partId", js.undefined)
         
-        @scala.inline
-        def setParts(value: js.Array[MessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+        inline def setParts(value: js.Array[MessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+        inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
         
-        @scala.inline
-        def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+        inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
       }
     }
     
@@ -2708,32 +2311,24 @@ object Gmail {
     }
     object MessagePartBody {
       
-      @scala.inline
-      def apply(): MessagePartBody = {
+      inline def apply(): MessagePartBody = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MessagePartBody]
       }
       
-      @scala.inline
-      implicit class MessagePartBodyMutableBuilder[Self <: MessagePartBody] (val x: Self) extends AnyVal {
+      extension [Self <: MessagePartBody](x: Self) {
         
-        @scala.inline
-        def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+        inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
+        inline def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
         
-        @scala.inline
-        def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        @scala.inline
-        def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       }
     }
     
@@ -2745,26 +2340,20 @@ object Gmail {
     }
     object MessagePartHeader {
       
-      @scala.inline
-      def apply(): MessagePartHeader = {
+      inline def apply(): MessagePartHeader = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MessagePartHeader]
       }
       
-      @scala.inline
-      implicit class MessagePartHeaderMutableBuilder[Self <: MessagePartHeader] (val x: Self) extends AnyVal {
+      extension [Self <: MessagePartHeader](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -2776,32 +2365,24 @@ object Gmail {
     }
     object ModifyMessageRequest {
       
-      @scala.inline
-      def apply(): ModifyMessageRequest = {
+      inline def apply(): ModifyMessageRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ModifyMessageRequest]
       }
       
-      @scala.inline
-      implicit class ModifyMessageRequestMutableBuilder[Self <: ModifyMessageRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ModifyMessageRequest](x: Self) {
         
-        @scala.inline
-        def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
+        inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
+        inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        @scala.inline
-        def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
+        inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
+        inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        @scala.inline
-        def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
       }
     }
     
@@ -2813,32 +2394,24 @@ object Gmail {
     }
     object ModifyThreadRequest {
       
-      @scala.inline
-      def apply(): ModifyThreadRequest = {
+      inline def apply(): ModifyThreadRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ModifyThreadRequest]
       }
       
-      @scala.inline
-      implicit class ModifyThreadRequestMutableBuilder[Self <: ModifyThreadRequest] (val x: Self) extends AnyVal {
+      extension [Self <: ModifyThreadRequest](x: Self) {
         
-        @scala.inline
-        def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
+        inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
+        inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        @scala.inline
-        def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
+        inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
+        inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        @scala.inline
-        def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
       }
     }
     
@@ -2850,26 +2423,20 @@ object Gmail {
     }
     object PopSettings {
       
-      @scala.inline
-      def apply(): PopSettings = {
+      inline def apply(): PopSettings = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PopSettings]
       }
       
-      @scala.inline
-      implicit class PopSettingsMutableBuilder[Self <: PopSettings] (val x: Self) extends AnyVal {
+      extension [Self <: PopSettings](x: Self) {
         
-        @scala.inline
-        def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
+        inline def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccessWindowUndefined: Self = StObject.set(x, "accessWindow", js.undefined)
+        inline def setAccessWindowUndefined: Self = StObject.set(x, "accessWindow", js.undefined)
         
-        @scala.inline
-        def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+        inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+        inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
       }
     }
     
@@ -2885,38 +2452,28 @@ object Gmail {
     }
     object Profile {
       
-      @scala.inline
-      def apply(): Profile = {
+      inline def apply(): Profile = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Profile]
       }
       
-      @scala.inline
-      implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+      extension [Self <: Profile](x: Self) {
         
-        @scala.inline
-        def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+        inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+        inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
         
-        @scala.inline
-        def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+        inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+        inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
         
-        @scala.inline
-        def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
+        inline def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
+        inline def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
         
-        @scala.inline
-        def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
+        inline def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
+        inline def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
       }
     }
     
@@ -2942,68 +2499,48 @@ object Gmail {
     }
     object SendAs {
       
-      @scala.inline
-      def apply(): SendAs = {
+      inline def apply(): SendAs = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SendAs]
       }
       
-      @scala.inline
-      implicit class SendAsMutableBuilder[Self <: SendAs] (val x: Self) extends AnyVal {
+      extension [Self <: SendAs](x: Self) {
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+        inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
         
-        @scala.inline
-        def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+        inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+        inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
         
-        @scala.inline
-        def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+        inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+        inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
         
-        @scala.inline
-        def setReplyToAddress(value: String): Self = StObject.set(x, "replyToAddress", value.asInstanceOf[js.Any])
+        inline def setReplyToAddress(value: String): Self = StObject.set(x, "replyToAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplyToAddressUndefined: Self = StObject.set(x, "replyToAddress", js.undefined)
+        inline def setReplyToAddressUndefined: Self = StObject.set(x, "replyToAddress", js.undefined)
         
-        @scala.inline
-        def setSendAsEmail(value: String): Self = StObject.set(x, "sendAsEmail", value.asInstanceOf[js.Any])
+        inline def setSendAsEmail(value: String): Self = StObject.set(x, "sendAsEmail", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSendAsEmailUndefined: Self = StObject.set(x, "sendAsEmail", js.undefined)
+        inline def setSendAsEmailUndefined: Self = StObject.set(x, "sendAsEmail", js.undefined)
         
-        @scala.inline
-        def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+        inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+        inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
         
-        @scala.inline
-        def setSmtpMsa(value: SmtpMsa): Self = StObject.set(x, "smtpMsa", value.asInstanceOf[js.Any])
+        inline def setSmtpMsa(value: SmtpMsa): Self = StObject.set(x, "smtpMsa", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmtpMsaUndefined: Self = StObject.set(x, "smtpMsa", js.undefined)
+        inline def setSmtpMsaUndefined: Self = StObject.set(x, "smtpMsa", js.undefined)
         
-        @scala.inline
-        def setTreatAsAlias(value: Boolean): Self = StObject.set(x, "treatAsAlias", value.asInstanceOf[js.Any])
+        inline def setTreatAsAlias(value: Boolean): Self = StObject.set(x, "treatAsAlias", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTreatAsAliasUndefined: Self = StObject.set(x, "treatAsAlias", js.undefined)
+        inline def setTreatAsAliasUndefined: Self = StObject.set(x, "treatAsAlias", js.undefined)
         
-        @scala.inline
-        def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
+        inline def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
+        inline def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
       }
     }
     
@@ -3025,56 +2562,40 @@ object Gmail {
     }
     object SmimeInfo {
       
-      @scala.inline
-      def apply(): SmimeInfo = {
+      inline def apply(): SmimeInfo = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SmimeInfo]
       }
       
-      @scala.inline
-      implicit class SmimeInfoMutableBuilder[Self <: SmimeInfo] (val x: Self) extends AnyVal {
+      extension [Self <: SmimeInfo](x: Self) {
         
-        @scala.inline
-        def setEncryptedKeyPassword(value: String): Self = StObject.set(x, "encryptedKeyPassword", value.asInstanceOf[js.Any])
+        inline def setEncryptedKeyPassword(value: String): Self = StObject.set(x, "encryptedKeyPassword", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEncryptedKeyPasswordUndefined: Self = StObject.set(x, "encryptedKeyPassword", js.undefined)
+        inline def setEncryptedKeyPasswordUndefined: Self = StObject.set(x, "encryptedKeyPassword", js.undefined)
         
-        @scala.inline
-        def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+        inline def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+        inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+        inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+        inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
         
-        @scala.inline
-        def setIssuerCn(value: String): Self = StObject.set(x, "issuerCn", value.asInstanceOf[js.Any])
+        inline def setIssuerCn(value: String): Self = StObject.set(x, "issuerCn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIssuerCnUndefined: Self = StObject.set(x, "issuerCn", js.undefined)
+        inline def setIssuerCnUndefined: Self = StObject.set(x, "issuerCn", js.undefined)
         
-        @scala.inline
-        def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
+        inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
+        inline def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
         
-        @scala.inline
-        def setPkcs12(value: String): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
+        inline def setPkcs12(value: String): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPkcs12Undefined: Self = StObject.set(x, "pkcs12", js.undefined)
+        inline def setPkcs12Undefined: Self = StObject.set(x, "pkcs12", js.undefined)
       }
     }
     
@@ -3092,44 +2613,32 @@ object Gmail {
     }
     object SmtpMsa {
       
-      @scala.inline
-      def apply(): SmtpMsa = {
+      inline def apply(): SmtpMsa = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SmtpMsa]
       }
       
-      @scala.inline
-      implicit class SmtpMsaMutableBuilder[Self <: SmtpMsa] (val x: Self) extends AnyVal {
+      extension [Self <: SmtpMsa](x: Self) {
         
-        @scala.inline
-        def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+        inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+        inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+        inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
         
-        @scala.inline
-        def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
         
-        @scala.inline
-        def setSecurityMode(value: String): Self = StObject.set(x, "securityMode", value.asInstanceOf[js.Any])
+        inline def setSecurityMode(value: String): Self = StObject.set(x, "securityMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityModeUndefined: Self = StObject.set(x, "securityMode", js.undefined)
+        inline def setSecurityModeUndefined: Self = StObject.set(x, "securityMode", js.undefined)
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+        inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       }
     }
     
@@ -3145,41 +2654,30 @@ object Gmail {
     }
     object Thread {
       
-      @scala.inline
-      def apply(): Thread = {
+      inline def apply(): Thread = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Thread]
       }
       
-      @scala.inline
-      implicit class ThreadMutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
+      extension [Self <: Thread](x: Self) {
         
-        @scala.inline
-        def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+        inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+        inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+        inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+        inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
         
-        @scala.inline
-        def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
         
-        @scala.inline
-        def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+        inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+        inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
       }
     }
     
@@ -3203,62 +2701,44 @@ object Gmail {
     }
     object VacationSettings {
       
-      @scala.inline
-      def apply(): VacationSettings = {
+      inline def apply(): VacationSettings = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[VacationSettings]
       }
       
-      @scala.inline
-      implicit class VacationSettingsMutableBuilder[Self <: VacationSettings] (val x: Self) extends AnyVal {
+      extension [Self <: VacationSettings](x: Self) {
         
-        @scala.inline
-        def setEnableAutoReply(value: Boolean): Self = StObject.set(x, "enableAutoReply", value.asInstanceOf[js.Any])
+        inline def setEnableAutoReply(value: Boolean): Self = StObject.set(x, "enableAutoReply", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableAutoReplyUndefined: Self = StObject.set(x, "enableAutoReply", js.undefined)
+        inline def setEnableAutoReplyUndefined: Self = StObject.set(x, "enableAutoReply", js.undefined)
         
-        @scala.inline
-        def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+        inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+        inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
         
-        @scala.inline
-        def setResponseBodyHtml(value: String): Self = StObject.set(x, "responseBodyHtml", value.asInstanceOf[js.Any])
+        inline def setResponseBodyHtml(value: String): Self = StObject.set(x, "responseBodyHtml", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseBodyHtmlUndefined: Self = StObject.set(x, "responseBodyHtml", js.undefined)
+        inline def setResponseBodyHtmlUndefined: Self = StObject.set(x, "responseBodyHtml", js.undefined)
         
-        @scala.inline
-        def setResponseBodyPlainText(value: String): Self = StObject.set(x, "responseBodyPlainText", value.asInstanceOf[js.Any])
+        inline def setResponseBodyPlainText(value: String): Self = StObject.set(x, "responseBodyPlainText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseBodyPlainTextUndefined: Self = StObject.set(x, "responseBodyPlainText", js.undefined)
+        inline def setResponseBodyPlainTextUndefined: Self = StObject.set(x, "responseBodyPlainText", js.undefined)
         
-        @scala.inline
-        def setResponseSubject(value: String): Self = StObject.set(x, "responseSubject", value.asInstanceOf[js.Any])
+        inline def setResponseSubject(value: String): Self = StObject.set(x, "responseSubject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseSubjectUndefined: Self = StObject.set(x, "responseSubject", js.undefined)
+        inline def setResponseSubjectUndefined: Self = StObject.set(x, "responseSubject", js.undefined)
         
-        @scala.inline
-        def setRestrictToContacts(value: Boolean): Self = StObject.set(x, "restrictToContacts", value.asInstanceOf[js.Any])
+        inline def setRestrictToContacts(value: Boolean): Self = StObject.set(x, "restrictToContacts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestrictToContactsUndefined: Self = StObject.set(x, "restrictToContacts", js.undefined)
+        inline def setRestrictToContactsUndefined: Self = StObject.set(x, "restrictToContacts", js.undefined)
         
-        @scala.inline
-        def setRestrictToDomain(value: Boolean): Self = StObject.set(x, "restrictToDomain", value.asInstanceOf[js.Any])
+        inline def setRestrictToDomain(value: Boolean): Self = StObject.set(x, "restrictToDomain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestrictToDomainUndefined: Self = StObject.set(x, "restrictToDomain", js.undefined)
+        inline def setRestrictToDomainUndefined: Self = StObject.set(x, "restrictToDomain", js.undefined)
         
-        @scala.inline
-        def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+        inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+        inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       }
     }
     
@@ -3272,35 +2752,26 @@ object Gmail {
     }
     object WatchRequest {
       
-      @scala.inline
-      def apply(): WatchRequest = {
+      inline def apply(): WatchRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WatchRequest]
       }
       
-      @scala.inline
-      implicit class WatchRequestMutableBuilder[Self <: WatchRequest] (val x: Self) extends AnyVal {
+      extension [Self <: WatchRequest](x: Self) {
         
-        @scala.inline
-        def setLabelFilterAction(value: String): Self = StObject.set(x, "labelFilterAction", value.asInstanceOf[js.Any])
+        inline def setLabelFilterAction(value: String): Self = StObject.set(x, "labelFilterAction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelFilterActionUndefined: Self = StObject.set(x, "labelFilterAction", js.undefined)
+        inline def setLabelFilterActionUndefined: Self = StObject.set(x, "labelFilterAction", js.undefined)
         
-        @scala.inline
-        def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+        inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+        inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        @scala.inline
-        def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
         
-        @scala.inline
-        def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+        inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+        inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
       }
     }
     
@@ -3312,26 +2783,20 @@ object Gmail {
     }
     object WatchResponse {
       
-      @scala.inline
-      def apply(): WatchResponse = {
+      inline def apply(): WatchResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WatchResponse]
       }
       
-      @scala.inline
-      implicit class WatchResponseMutableBuilder[Self <: WatchResponse] (val x: Self) extends AnyVal {
+      extension [Self <: WatchResponse](x: Self) {
         
-        @scala.inline
-        def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+        inline def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+        inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
         
-        @scala.inline
-        def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+        inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+        inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
       }
     }
   }

@@ -14,16 +14,13 @@ trait ClassifierJsonClassifier extends StObject {
 }
 object ClassifierJsonClassifier {
   
-  @scala.inline
-  def apply(jsonPath: Input[String]): ClassifierJsonClassifier = {
+  inline def apply(jsonPath: Input[String]): ClassifierJsonClassifier = {
     val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierJsonClassifier]
   }
   
-  @scala.inline
-  implicit class ClassifierJsonClassifierMutableBuilder[Self <: ClassifierJsonClassifier] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifierJsonClassifier](x: Self) {
     
-    @scala.inline
-    def setJsonPath(value: Input[String]): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: Input[String]): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
   }
 }

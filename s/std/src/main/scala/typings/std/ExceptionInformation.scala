@@ -10,22 +10,17 @@ trait ExceptionInformation extends StObject {
 }
 object ExceptionInformation {
   
-  @scala.inline
-  def apply(): ExceptionInformation = {
+  inline def apply(): ExceptionInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExceptionInformation]
   }
   
-  @scala.inline
-  implicit class ExceptionInformationMutableBuilder[Self <: ExceptionInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptionInformation](x: Self) {
     
-    @scala.inline
-    def setDomain(value: java.lang.String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: java.lang.String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNull: Self = StObject.set(x, "domain", null)
+    inline def setDomainNull: Self = StObject.set(x, "domain", null)
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
   }
 }

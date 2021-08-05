@@ -33,7 +33,7 @@ object firebaseAppLiteMod {
     def _getService(name: String): FirebaseService = js.native
     def _getService(name: String, instanceIdentifier: String): FirebaseService = js.native
     
-    var automaticDataCollectionEnabled_ : js.Any = js.native
+    /* private */ var automaticDataCollectionEnabled_ : js.Any = js.native
     
     @JSName("automaticDataCollectionEnabled")
     def automaticDataCollectionEnabled_MFirebaseAppLiteImpl: Boolean = js.native
@@ -42,20 +42,20 @@ object firebaseAppLiteMod {
       * This function will throw an Error if the App has already been deleted -
       * use before performing API actions on the App.
       */
-    var checkDestroyed_ : js.Any = js.native
+    /* private */ var checkDestroyed_ : js.Any = js.native
     
-    var container: js.Any = js.native
+    /* private */ var container: js.Any = js.native
     
-    val firebase_ : js.Any = js.native
+    /* private */ val firebase_ : js.Any = js.native
     
-    var isDeleted_ : js.Any = js.native
+    /* private */ var isDeleted_ : js.Any = js.native
     
-    val name_ : js.Any = js.native
+    /* private */ val name_ : js.Any = js.native
     
     @JSName("name")
     def name_MFirebaseAppLiteImpl: String = js.native
     
-    val options_ : js.Any = js.native
+    /* private */ val options_ : js.Any = js.native
     
     @JSName("options")
     def options_MFirebaseAppLiteImpl: FirebaseOptions = js.native

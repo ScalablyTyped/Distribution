@@ -21,20 +21,16 @@ object anon {
   }
   object DictregistryUrls {
     
-    @scala.inline
-    def apply(): DictregistryUrls = {
+    inline def apply(): DictregistryUrls = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DictregistryUrls]
     }
     
-    @scala.inline
-    implicit class DictregistryUrlsMutableBuilder[Self <: DictregistryUrls] (val x: Self) extends AnyVal {
+    extension [Self <: DictregistryUrls](x: Self) {
       
-      @scala.inline
-      def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+      inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     }
   }
 }

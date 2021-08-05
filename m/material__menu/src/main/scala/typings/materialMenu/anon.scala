@@ -22,8 +22,7 @@ object anon {
   }
   object ARIACHECKEDATTR {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ARIA_CHECKED_ATTR: String,
       ARIA_DISABLED_ATTR: String,
       CHECKBOX_SELECTOR: String,
@@ -34,23 +33,17 @@ object anon {
       __obj.asInstanceOf[ARIACHECKEDATTR]
     }
     
-    @scala.inline
-    implicit class ARIACHECKEDATTRMutableBuilder[Self <: ARIACHECKEDATTR] (val x: Self) extends AnyVal {
+    extension [Self <: ARIACHECKEDATTR](x: Self) {
       
-      @scala.inline
-      def setARIA_CHECKED_ATTR(value: String): Self = StObject.set(x, "ARIA_CHECKED_ATTR", value.asInstanceOf[js.Any])
+      inline def setARIA_CHECKED_ATTR(value: String): Self = StObject.set(x, "ARIA_CHECKED_ATTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_DISABLED_ATTR(value: String): Self = StObject.set(x, "ARIA_DISABLED_ATTR", value.asInstanceOf[js.Any])
+      inline def setARIA_DISABLED_ATTR(value: String): Self = StObject.set(x, "ARIA_DISABLED_ATTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setCHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIST_SELECTOR(value: String): Self = StObject.set(x, "LIST_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setLIST_SELECTOR(value: String): Self = StObject.set(x, "LIST_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSELECTED_EVENT(value: String): Self = StObject.set(x, "SELECTED_EVENT", value.asInstanceOf[js.Any])
+      inline def setSELECTED_EVENT(value: String): Self = StObject.set(x, "SELECTED_EVENT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,17 +53,14 @@ object anon {
   }
   object FOCUSROOTINDEX {
     
-    @scala.inline
-    def apply(FOCUS_ROOT_INDEX: Double): FOCUSROOTINDEX = {
+    inline def apply(FOCUS_ROOT_INDEX: Double): FOCUSROOTINDEX = {
       val __obj = js.Dynamic.literal(FOCUS_ROOT_INDEX = FOCUS_ROOT_INDEX.asInstanceOf[js.Any])
       __obj.asInstanceOf[FOCUSROOTINDEX]
     }
     
-    @scala.inline
-    implicit class FOCUSROOTINDEXMutableBuilder[Self <: FOCUSROOTINDEX] (val x: Self) extends AnyVal {
+    extension [Self <: FOCUSROOTINDEX](x: Self) {
       
-      @scala.inline
-      def setFOCUS_ROOT_INDEX(value: Double): Self = StObject.set(x, "FOCUS_ROOT_INDEX", value.asInstanceOf[js.Any])
+      inline def setFOCUS_ROOT_INDEX(value: Double): Self = StObject.set(x, "FOCUS_ROOT_INDEX", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,23 +74,18 @@ object anon {
   }
   object MENUSELECTEDLISTITEM {
     
-    @scala.inline
-    def apply(MENU_SELECTED_LIST_ITEM: String, MENU_SELECTION_GROUP: String, ROOT: String): MENUSELECTEDLISTITEM = {
+    inline def apply(MENU_SELECTED_LIST_ITEM: String, MENU_SELECTION_GROUP: String, ROOT: String): MENUSELECTEDLISTITEM = {
       val __obj = js.Dynamic.literal(MENU_SELECTED_LIST_ITEM = MENU_SELECTED_LIST_ITEM.asInstanceOf[js.Any], MENU_SELECTION_GROUP = MENU_SELECTION_GROUP.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any])
       __obj.asInstanceOf[MENUSELECTEDLISTITEM]
     }
     
-    @scala.inline
-    implicit class MENUSELECTEDLISTITEMMutableBuilder[Self <: MENUSELECTEDLISTITEM] (val x: Self) extends AnyVal {
+    extension [Self <: MENUSELECTEDLISTITEM](x: Self) {
       
-      @scala.inline
-      def setMENU_SELECTED_LIST_ITEM(value: String): Self = StObject.set(x, "MENU_SELECTED_LIST_ITEM", value.asInstanceOf[js.Any])
+      inline def setMENU_SELECTED_LIST_ITEM(value: String): Self = StObject.set(x, "MENU_SELECTED_LIST_ITEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMENU_SELECTION_GROUP(value: String): Self = StObject.set(x, "MENU_SELECTION_GROUP", value.asInstanceOf[js.Any])
+      inline def setMENU_SELECTION_GROUP(value: String): Self = StObject.set(x, "MENU_SELECTION_GROUP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
+      inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,92 +120,64 @@ object anon {
   }
   object PartialMDCMenuAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCMenuAdapter = {
+    inline def apply(): PartialMDCMenuAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCMenuAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCMenuAdapterMutableBuilder[Self <: PartialMDCMenuAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCMenuAdapter](x: Self) {
       
-      @scala.inline
-      def setAddAttributeToElementAtIndex(value: (/* index */ Double, /* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "addAttributeToElementAtIndex", js.Any.fromFunction3(value))
+      inline def setAddAttributeToElementAtIndex(value: (/* index */ Double, /* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "addAttributeToElementAtIndex", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddAttributeToElementAtIndexUndefined: Self = StObject.set(x, "addAttributeToElementAtIndex", js.undefined)
+      inline def setAddAttributeToElementAtIndexUndefined: Self = StObject.set(x, "addAttributeToElementAtIndex", js.undefined)
       
-      @scala.inline
-      def setAddClassToElementAtIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "addClassToElementAtIndex", js.Any.fromFunction2(value))
+      inline def setAddClassToElementAtIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "addClassToElementAtIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddClassToElementAtIndexUndefined: Self = StObject.set(x, "addClassToElementAtIndex", js.undefined)
+      inline def setAddClassToElementAtIndexUndefined: Self = StObject.set(x, "addClassToElementAtIndex", js.undefined)
       
-      @scala.inline
-      def setCloseSurface(value: /* skipRestoreFocus */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "closeSurface", js.Any.fromFunction1(value))
+      inline def setCloseSurface(value: /* skipRestoreFocus */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "closeSurface", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseSurfaceUndefined: Self = StObject.set(x, "closeSurface", js.undefined)
+      inline def setCloseSurfaceUndefined: Self = StObject.set(x, "closeSurface", js.undefined)
       
-      @scala.inline
-      def setElementContainsClass(value: (/* element */ Element, /* className */ String) => Boolean): Self = StObject.set(x, "elementContainsClass", js.Any.fromFunction2(value))
+      inline def setElementContainsClass(value: (/* element */ Element, /* className */ String) => Boolean): Self = StObject.set(x, "elementContainsClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setElementContainsClassUndefined: Self = StObject.set(x, "elementContainsClass", js.undefined)
+      inline def setElementContainsClassUndefined: Self = StObject.set(x, "elementContainsClass", js.undefined)
       
-      @scala.inline
-      def setFocusItemAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "focusItemAtIndex", js.Any.fromFunction1(value))
+      inline def setFocusItemAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "focusItemAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusItemAtIndexUndefined: Self = StObject.set(x, "focusItemAtIndex", js.undefined)
+      inline def setFocusItemAtIndexUndefined: Self = StObject.set(x, "focusItemAtIndex", js.undefined)
       
-      @scala.inline
-      def setFocusListRoot(value: () => Unit): Self = StObject.set(x, "focusListRoot", js.Any.fromFunction0(value))
+      inline def setFocusListRoot(value: () => Unit): Self = StObject.set(x, "focusListRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusListRootUndefined: Self = StObject.set(x, "focusListRoot", js.undefined)
+      inline def setFocusListRootUndefined: Self = StObject.set(x, "focusListRoot", js.undefined)
       
-      @scala.inline
-      def setGetElementIndex(value: /* element */ Element => Double): Self = StObject.set(x, "getElementIndex", js.Any.fromFunction1(value))
+      inline def setGetElementIndex(value: /* element */ Element => Double): Self = StObject.set(x, "getElementIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementIndexUndefined: Self = StObject.set(x, "getElementIndex", js.undefined)
+      inline def setGetElementIndexUndefined: Self = StObject.set(x, "getElementIndex", js.undefined)
       
-      @scala.inline
-      def setGetMenuItemCount(value: () => Double): Self = StObject.set(x, "getMenuItemCount", js.Any.fromFunction0(value))
+      inline def setGetMenuItemCount(value: () => Double): Self = StObject.set(x, "getMenuItemCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMenuItemCountUndefined: Self = StObject.set(x, "getMenuItemCount", js.undefined)
+      inline def setGetMenuItemCountUndefined: Self = StObject.set(x, "getMenuItemCount", js.undefined)
       
-      @scala.inline
-      def setGetSelectedSiblingOfItemAtIndex(value: /* index */ Double => Double): Self = StObject.set(x, "getSelectedSiblingOfItemAtIndex", js.Any.fromFunction1(value))
+      inline def setGetSelectedSiblingOfItemAtIndex(value: /* index */ Double => Double): Self = StObject.set(x, "getSelectedSiblingOfItemAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSelectedSiblingOfItemAtIndexUndefined: Self = StObject.set(x, "getSelectedSiblingOfItemAtIndex", js.undefined)
+      inline def setGetSelectedSiblingOfItemAtIndexUndefined: Self = StObject.set(x, "getSelectedSiblingOfItemAtIndex", js.undefined)
       
-      @scala.inline
-      def setIsSelectableItemAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "isSelectableItemAtIndex", js.Any.fromFunction1(value))
+      inline def setIsSelectableItemAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "isSelectableItemAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSelectableItemAtIndexUndefined: Self = StObject.set(x, "isSelectableItemAtIndex", js.undefined)
+      inline def setIsSelectableItemAtIndexUndefined: Self = StObject.set(x, "isSelectableItemAtIndex", js.undefined)
       
-      @scala.inline
-      def setNotifySelected(value: /* evtData */ MDCMenuItemEventDetail => Unit): Self = StObject.set(x, "notifySelected", js.Any.fromFunction1(value))
+      inline def setNotifySelected(value: /* evtData */ MDCMenuItemEventDetail => Unit): Self = StObject.set(x, "notifySelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifySelectedUndefined: Self = StObject.set(x, "notifySelected", js.undefined)
+      inline def setNotifySelectedUndefined: Self = StObject.set(x, "notifySelected", js.undefined)
       
-      @scala.inline
-      def setRemoveAttributeFromElementAtIndex(value: (/* index */ Double, /* attr */ String) => Unit): Self = StObject.set(x, "removeAttributeFromElementAtIndex", js.Any.fromFunction2(value))
+      inline def setRemoveAttributeFromElementAtIndex(value: (/* index */ Double, /* attr */ String) => Unit): Self = StObject.set(x, "removeAttributeFromElementAtIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAttributeFromElementAtIndexUndefined: Self = StObject.set(x, "removeAttributeFromElementAtIndex", js.undefined)
+      inline def setRemoveAttributeFromElementAtIndexUndefined: Self = StObject.set(x, "removeAttributeFromElementAtIndex", js.undefined)
       
-      @scala.inline
-      def setRemoveClassFromElementAtIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "removeClassFromElementAtIndex", js.Any.fromFunction2(value))
+      inline def setRemoveClassFromElementAtIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "removeClassFromElementAtIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveClassFromElementAtIndexUndefined: Self = StObject.set(x, "removeClassFromElementAtIndex", js.undefined)
+      inline def setRemoveClassFromElementAtIndexUndefined: Self = StObject.set(x, "removeClassFromElementAtIndex", js.undefined)
     }
   }
   
@@ -237,38 +194,28 @@ object anon {
   }
   object PartialMDCMenuDistance {
     
-    @scala.inline
-    def apply(): PartialMDCMenuDistance = {
+    inline def apply(): PartialMDCMenuDistance = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCMenuDistance]
     }
     
-    @scala.inline
-    implicit class PartialMDCMenuDistanceMutableBuilder[Self <: PartialMDCMenuDistance] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCMenuDistance](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
 }

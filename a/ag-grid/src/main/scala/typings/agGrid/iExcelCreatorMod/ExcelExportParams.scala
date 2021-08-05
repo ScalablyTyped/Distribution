@@ -15,25 +15,19 @@ trait ExcelExportParams
 }
 object ExcelExportParams {
   
-  @scala.inline
-  def apply(): ExcelExportParams = {
+  inline def apply(): ExcelExportParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExcelExportParams]
   }
   
-  @scala.inline
-  implicit class ExcelExportParamsMutableBuilder[Self <: ExcelExportParams] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelExportParams](x: Self) {
     
-    @scala.inline
-    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
+    inline def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
     
-    @scala.inline
-    def setSuppressTextAsCDATA(value: Boolean): Self = StObject.set(x, "suppressTextAsCDATA", value.asInstanceOf[js.Any])
+    inline def setSuppressTextAsCDATA(value: Boolean): Self = StObject.set(x, "suppressTextAsCDATA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressTextAsCDATAUndefined: Self = StObject.set(x, "suppressTextAsCDATA", js.undefined)
+    inline def setSuppressTextAsCDATAUndefined: Self = StObject.set(x, "suppressTextAsCDATA", js.undefined)
   }
 }

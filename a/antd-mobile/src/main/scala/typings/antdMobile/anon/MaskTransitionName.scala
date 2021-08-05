@@ -14,22 +14,17 @@ trait MaskTransitionName extends StObject {
 }
 object MaskTransitionName {
   
-  @scala.inline
-  def apply(WrapComponent: String, maskTransitionName: String, transitionName: String): MaskTransitionName = {
+  inline def apply(WrapComponent: String, maskTransitionName: String, transitionName: String): MaskTransitionName = {
     val __obj = js.Dynamic.literal(WrapComponent = WrapComponent.asInstanceOf[js.Any], maskTransitionName = maskTransitionName.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskTransitionName]
   }
   
-  @scala.inline
-  implicit class MaskTransitionNameMutableBuilder[Self <: MaskTransitionName] (val x: Self) extends AnyVal {
+  extension [Self <: MaskTransitionName](x: Self) {
     
-    @scala.inline
-    def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
+    inline def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+    inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapComponent(value: String): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
+    inline def setWrapComponent(value: String): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
   }
 }

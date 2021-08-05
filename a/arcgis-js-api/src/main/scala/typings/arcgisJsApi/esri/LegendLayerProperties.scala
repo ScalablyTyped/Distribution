@@ -29,34 +29,25 @@ trait LegendLayerProperties extends StObject {
 }
 object LegendLayerProperties {
   
-  @scala.inline
-  def apply(): LegendLayerProperties = {
+  inline def apply(): LegendLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendLayerProperties]
   }
   
-  @scala.inline
-  implicit class LegendLayerPropertiesMutableBuilder[Self <: LegendLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LegendLayerProperties](x: Self) {
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setSubLayerIds(value: js.Array[String]): Self = StObject.set(x, "subLayerIds", value.asInstanceOf[js.Any])
+    inline def setSubLayerIds(value: js.Array[String]): Self = StObject.set(x, "subLayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubLayerIdsUndefined: Self = StObject.set(x, "subLayerIds", js.undefined)
+    inline def setSubLayerIdsUndefined: Self = StObject.set(x, "subLayerIds", js.undefined)
     
-    @scala.inline
-    def setSubLayerIdsVarargs(value: String*): Self = StObject.set(x, "subLayerIds", js.Array(value :_*))
+    inline def setSubLayerIdsVarargs(value: String*): Self = StObject.set(x, "subLayerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

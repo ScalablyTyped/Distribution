@@ -33,8 +33,7 @@ trait ChildWorkflowExecutionCompletedEventAttributes extends StObject {
 }
 object ChildWorkflowExecutionCompletedEventAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     initiatedEventId: EventId,
     startedEventId: EventId,
     workflowExecution: WorkflowExecution,
@@ -44,25 +43,18 @@ object ChildWorkflowExecutionCompletedEventAttributes {
     __obj.asInstanceOf[ChildWorkflowExecutionCompletedEventAttributes]
   }
   
-  @scala.inline
-  implicit class ChildWorkflowExecutionCompletedEventAttributesMutableBuilder[Self <: ChildWorkflowExecutionCompletedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ChildWorkflowExecutionCompletedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
+    inline def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
+    inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
+    inline def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait StreamedFileDataRequest extends StObject {
 }
 object StreamedFileDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     failAndClose: StreamedFileFailureMode => Unit,
     flushAsync: () => IPromiseWithIAsyncOperation[Boolean],
@@ -45,19 +44,14 @@ object StreamedFileDataRequest {
     __obj.asInstanceOf[StreamedFileDataRequest]
   }
   
-  @scala.inline
-  implicit class StreamedFileDataRequestMutableBuilder[Self <: StreamedFileDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StreamedFileDataRequest](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailAndClose(value: StreamedFileFailureMode => Unit): Self = StObject.set(x, "failAndClose", js.Any.fromFunction1(value))
+    inline def setFailAndClose(value: StreamedFileFailureMode => Unit): Self = StObject.set(x, "failAndClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
+    inline def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
+    inline def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
   }
 }

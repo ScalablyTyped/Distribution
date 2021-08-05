@@ -14,16 +14,13 @@ trait ScreenshotRequestedEvent extends StObject {
 }
 object ScreenshotRequestedEvent {
   
-  @scala.inline
-  def apply(viewport: Viewport): ScreenshotRequestedEvent = {
+  inline def apply(viewport: Viewport): ScreenshotRequestedEvent = {
     val __obj = js.Dynamic.literal(viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenshotRequestedEvent]
   }
   
-  @scala.inline
-  implicit class ScreenshotRequestedEventMutableBuilder[Self <: ScreenshotRequestedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenshotRequestedEvent](x: Self) {
     
-    @scala.inline
-    def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

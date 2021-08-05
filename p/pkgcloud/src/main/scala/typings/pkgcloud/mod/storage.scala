@@ -12,8 +12,7 @@ object storage {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClient(options: ProviderOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def createClient(options: ProviderOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
   
   trait Client extends StObject {
     
@@ -59,8 +58,7 @@ object storage {
   }
   object Client {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: ProviderOptions,
       createContainer: (js.Any, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit,
       destroyContainer: (String, js.Function1[/* err */ ClientError, js.Any]) => Unit,
@@ -79,49 +77,35 @@ object storage {
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setConfig(value: ProviderOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ProviderOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateContainer(value: (js.Any, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
+      inline def setCreateContainer(value: (js.Any, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroyContainer(value: (String, js.Function1[/* err */ ClientError, js.Any]) => Unit): Self = StObject.set(x, "destroyContainer", js.Any.fromFunction2(value))
+      inline def setDestroyContainer(value: (String, js.Function1[/* err */ ClientError, js.Any]) => Unit): Self = StObject.set(x, "destroyContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDownload(value: StorageDownloadOptions => ReadStream): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      inline def setDownload(value: StorageDownloadOptions => ReadStream): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContainer(value: (String, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit): Self = StObject.set(x, "getContainer", js.Any.fromFunction2(value))
+      inline def setGetContainer(value: (String, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit): Self = StObject.set(x, "getContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetContainers(value: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], js.Any] => Unit): Self = StObject.set(x, "getContainers", js.Any.fromFunction1(value))
+      inline def setGetContainers(value: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], js.Any] => Unit): Self = StObject.set(x, "getContainers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFile(value: (String, String, js.Function2[/* err */ ClientError, /* file */ File, js.Any]) => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction3(value))
+      inline def setGetFile(value: (String, String, js.Function2[/* err */ ClientError, /* file */ File, js.Any]) => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetFiles(value: (String, js.Function2[/* err */ ClientError, /* files */ js.Array[File], js.Any]) => Unit): Self = StObject.set(x, "getFiles", js.Any.fromFunction2(value))
+      inline def setGetFiles(value: (String, js.Function2[/* err */ ClientError, /* files */ js.Array[File], js.Any]) => Unit): Self = StObject.set(x, "getFiles", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: (String, js.Function2[/* message */ String, /* object */ js.UndefOr[js.Any], js.Any]) => Unit
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveFile(value: (String, String, js.Function1[/* err */ ClientError, js.Any]) => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction3(value))
+      inline def setRemoveFile(value: (String, String, js.Function1[/* err */ ClientError, js.Any]) => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpload(value: StorageUploadOptions => WriteStream): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
+      inline def setUpload(value: StorageUploadOptions => WriteStream): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
     }
   }
   
@@ -132,17 +116,14 @@ object storage {
   }
   object Container {
     
-    @scala.inline
-    def apply(client: Client): Container = {
+    inline def apply(client: Client): Container = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Container]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+    extension [Self <: Container](x: Self) {
       
-      @scala.inline
-      def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,26 +139,20 @@ object storage {
   }
   object File {
     
-    @scala.inline
-    def apply(client: Client, container: String, name: String, size: Double): File = {
+    inline def apply(client: Client, container: String, name: String, size: Double): File = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,20 +164,16 @@ object storage {
   }
   object StorageDownloadOptions {
     
-    @scala.inline
-    def apply(container: String, remote: String): StorageDownloadOptions = {
+    inline def apply(container: String, remote: String): StorageDownloadOptions = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageDownloadOptions]
     }
     
-    @scala.inline
-    implicit class StorageDownloadOptionsMutableBuilder[Self <: StorageDownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StorageDownloadOptions](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,20 +185,16 @@ object storage {
   }
   object StorageUploadOptions {
     
-    @scala.inline
-    def apply(container: String, remote: String): StorageUploadOptions = {
+    inline def apply(container: String, remote: String): StorageUploadOptions = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageUploadOptions]
     }
     
-    @scala.inline
-    implicit class StorageUploadOptionsMutableBuilder[Self <: StorageUploadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StorageUploadOptions](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     }
   }
 }

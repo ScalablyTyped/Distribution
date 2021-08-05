@@ -38,29 +38,22 @@ object mediaOnlyMod {
   }
   object MediaOnlyProps {
     
-    @scala.inline
-    def apply(): MediaOnlyProps = {
+    inline def apply(): MediaOnlyProps = {
       val __obj = js.Dynamic.literal(children = null)
       __obj.asInstanceOf[MediaOnlyProps]
     }
     
-    @scala.inline
-    implicit class MediaOnlyPropsMutableBuilder[Self <: MediaOnlyProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaOnlyProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setFallback(value: ReactElement): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: ReactElement): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackNull: Self = StObject.set(x, "fallback", null)
+      inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     }
   }
 }

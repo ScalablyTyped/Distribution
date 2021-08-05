@@ -14,16 +14,13 @@ trait MathZoom extends StObject {
 }
 object MathZoom {
   
-  @scala.inline
-  def apply(styles: js.Any): MathZoom = {
+  inline def apply(styles: js.Any): MathZoom = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathZoom]
   }
   
-  @scala.inline
-  implicit class MathZoomMutableBuilder[Self <: MathZoom] (val x: Self) extends AnyVal {
+  extension [Self <: MathZoom](x: Self) {
     
-    @scala.inline
-    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait ListVersionsByFunctionRequest extends StObject {
 }
 object ListVersionsByFunctionRequest {
   
-  @scala.inline
-  def apply(FunctionName: NamespacedFunctionName): ListVersionsByFunctionRequest = {
+  inline def apply(FunctionName: NamespacedFunctionName): ListVersionsByFunctionRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVersionsByFunctionRequest]
   }
   
-  @scala.inline
-  implicit class ListVersionsByFunctionRequestMutableBuilder[Self <: ListVersionsByFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListVersionsByFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

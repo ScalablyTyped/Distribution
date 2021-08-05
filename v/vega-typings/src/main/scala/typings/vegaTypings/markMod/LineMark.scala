@@ -17,17 +17,14 @@ trait LineMark
 }
 object LineMark {
   
-  @scala.inline
-  def apply(): LineMark = {
+  inline def apply(): LineMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("line")
     __obj.asInstanceOf[LineMark]
   }
   
-  @scala.inline
-  implicit class LineMarkMutableBuilder[Self <: LineMark] (val x: Self) extends AnyVal {
+  extension [Self <: LineMark](x: Self) {
     
-    @scala.inline
-    def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

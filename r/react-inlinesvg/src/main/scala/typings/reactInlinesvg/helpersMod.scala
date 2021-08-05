@@ -19,49 +19,39 @@ object helpersMod {
     @JSImport("react-inlinesvg/lib/helpers", "STATUS.FAILED")
     @js.native
     def FAILED: String = js.native
-    @scala.inline
-    def FAILED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILED")(x.asInstanceOf[js.Any])
+    inline def FAILED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILED")(x.asInstanceOf[js.Any])
     
     @JSImport("react-inlinesvg/lib/helpers", "STATUS.LOADED")
     @js.native
     def LOADED: String = js.native
-    @scala.inline
-    def LOADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADED")(x.asInstanceOf[js.Any])
+    inline def LOADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADED")(x.asInstanceOf[js.Any])
     
     @JSImport("react-inlinesvg/lib/helpers", "STATUS.LOADING")
     @js.native
     def LOADING: String = js.native
-    @scala.inline
-    def LOADING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING")(x.asInstanceOf[js.Any])
+    inline def LOADING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING")(x.asInstanceOf[js.Any])
     
     @JSImport("react-inlinesvg/lib/helpers", "STATUS.PENDING")
     @js.native
     def PENDING: String = js.native
-    @scala.inline
-    def PENDING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
+    inline def PENDING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
     
     @JSImport("react-inlinesvg/lib/helpers", "STATUS.READY")
     @js.native
     def READY: String = js.native
-    @scala.inline
-    def READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY")(x.asInstanceOf[js.Any])
+    inline def READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY")(x.asInstanceOf[js.Any])
     
     @JSImport("react-inlinesvg/lib/helpers", "STATUS.UNSUPPORTED")
     @js.native
     def UNSUPPORTED: String = js.native
-    @scala.inline
-    def UNSUPPORTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSUPPORTED")(x.asInstanceOf[js.Any])
+    inline def UNSUPPORTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSUPPORTED")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def canUseDOM(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseDOM")().asInstanceOf[Boolean]
+  inline def canUseDOM(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseDOM")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSupportedEnvironment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedEnvironment")().asInstanceOf[Boolean]
+  inline def isSupportedEnvironment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedEnvironment")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def randomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def randomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def supportsInlineSVG(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsInlineSVG")().asInstanceOf[Boolean]
+  inline def supportsInlineSVG(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsInlineSVG")().asInstanceOf[Boolean]
 }

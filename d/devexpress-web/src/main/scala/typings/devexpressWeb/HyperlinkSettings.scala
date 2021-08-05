@@ -31,25 +31,19 @@ trait HyperlinkSettings extends StObject {
 }
 object HyperlinkSettings {
   
-  @scala.inline
-  def apply(bookmark: String, text: String, tooltip: String, url: String): HyperlinkSettings = {
+  inline def apply(bookmark: String, text: String, tooltip: String, url: String): HyperlinkSettings = {
     val __obj = js.Dynamic.literal(bookmark = bookmark.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkSettings]
   }
   
-  @scala.inline
-  implicit class HyperlinkSettingsMutableBuilder[Self <: HyperlinkSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HyperlinkSettings](x: Self) {
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

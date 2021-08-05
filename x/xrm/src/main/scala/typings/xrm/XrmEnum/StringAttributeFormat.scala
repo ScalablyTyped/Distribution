@@ -25,21 +25,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringAttributeFormat extends StObject
 object StringAttributeFormat {
   
-  @scala.inline
-  def Email: email = "email".asInstanceOf[email]
+  inline def Email: email = "email".asInstanceOf[email]
   
-  @scala.inline
-  def Phone: phone = "phone".asInstanceOf[phone]
+  inline def Phone: phone = "phone".asInstanceOf[phone]
   
-  @scala.inline
-  def Text: text = "text".asInstanceOf[text]
+  inline def Text: text = "text".asInstanceOf[text]
   
-  @scala.inline
-  def TextArea: textarea = "textarea".asInstanceOf[textarea]
+  inline def TextArea: textarea = "textarea".asInstanceOf[textarea]
   
-  @scala.inline
-  def TickerSymbol: tickersymbol = "tickersymbol".asInstanceOf[tickersymbol]
+  inline def TickerSymbol: tickersymbol = "tickersymbol".asInstanceOf[tickersymbol]
   
-  @scala.inline
-  def URL: url = "url".asInstanceOf[url]
+  inline def URL: url = "url".asInstanceOf[url]
 }

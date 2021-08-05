@@ -16,37 +16,27 @@ trait UpdateByExampleOptions extends StObject {
 }
 object UpdateByExampleOptions {
   
-  @scala.inline
-  def apply(): UpdateByExampleOptions = {
+  inline def apply(): UpdateByExampleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateByExampleOptions]
   }
   
-  @scala.inline
-  implicit class UpdateByExampleOptionsMutableBuilder[Self <: UpdateByExampleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateByExampleOptions](x: Self) {
     
-    @scala.inline
-    def setKeepNull(value: Boolean): Self = StObject.set(x, "keepNull", value.asInstanceOf[js.Any])
+    inline def setKeepNull(value: Boolean): Self = StObject.set(x, "keepNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepNullUndefined: Self = StObject.set(x, "keepNull", js.undefined)
+    inline def setKeepNullUndefined: Self = StObject.set(x, "keepNull", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMergeObjects(value: Boolean): Self = StObject.set(x, "mergeObjects", value.asInstanceOf[js.Any])
+    inline def setMergeObjects(value: Boolean): Self = StObject.set(x, "mergeObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeObjectsUndefined: Self = StObject.set(x, "mergeObjects", js.undefined)
+    inline def setMergeObjectsUndefined: Self = StObject.set(x, "mergeObjects", js.undefined)
     
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

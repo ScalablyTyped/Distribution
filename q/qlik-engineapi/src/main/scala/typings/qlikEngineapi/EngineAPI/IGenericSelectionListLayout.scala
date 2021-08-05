@@ -15,8 +15,7 @@ trait IGenericSelectionListLayout
 }
 object IGenericSelectionListLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qExtendsId: String,
     qHasSoftPatches: Boolean,
     qInfo: INxInfo,
@@ -29,10 +28,8 @@ object IGenericSelectionListLayout {
     __obj.asInstanceOf[IGenericSelectionListLayout]
   }
   
-  @scala.inline
-  implicit class IGenericSelectionListLayoutMutableBuilder[Self <: IGenericSelectionListLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericSelectionListLayout](x: Self) {
     
-    @scala.inline
-    def setQSelectionObject(value: ISelectionListObject): Self = StObject.set(x, "qSelectionObject", value.asInstanceOf[js.Any])
+    inline def setQSelectionObject(value: ISelectionListObject): Self = StObject.set(x, "qSelectionObject", value.asInstanceOf[js.Any])
   }
 }

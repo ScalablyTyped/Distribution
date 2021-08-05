@@ -12,22 +12,17 @@ trait AggregatedFilters extends StObject {
 }
 object AggregatedFilters {
   
-  @scala.inline
-  def apply(aggregator: Aggregator, conditions: js.Array[Filter]): AggregatedFilters = {
+  inline def apply(aggregator: Aggregator, conditions: js.Array[Filter]): AggregatedFilters = {
     val __obj = js.Dynamic.literal(aggregator = aggregator.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregatedFilters]
   }
   
-  @scala.inline
-  implicit class AggregatedFiltersMutableBuilder[Self <: AggregatedFilters] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedFilters](x: Self) {
     
-    @scala.inline
-    def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
+    inline def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditions(value: js.Array[Filter]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[Filter]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: Filter*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Filter*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

@@ -17,31 +17,23 @@ trait SuperStickerMetadata extends StObject {
 }
 object SuperStickerMetadata {
   
-  @scala.inline
-  def apply(): SuperStickerMetadata = {
+  inline def apply(): SuperStickerMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuperStickerMetadata]
   }
   
-  @scala.inline
-  implicit class SuperStickerMetadataMutableBuilder[Self <: SuperStickerMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SuperStickerMetadata](x: Self) {
     
-    @scala.inline
-    def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
+    inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextLanguage(value: String): Self = StObject.set(x, "altTextLanguage", value.asInstanceOf[js.Any])
+    inline def setAltTextLanguage(value: String): Self = StObject.set(x, "altTextLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextLanguageUndefined: Self = StObject.set(x, "altTextLanguage", js.undefined)
+    inline def setAltTextLanguageUndefined: Self = StObject.set(x, "altTextLanguage", js.undefined)
     
-    @scala.inline
-    def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
+    inline def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
     
-    @scala.inline
-    def setStickerId(value: String): Self = StObject.set(x, "stickerId", value.asInstanceOf[js.Any])
+    inline def setStickerId(value: String): Self = StObject.set(x, "stickerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickerIdUndefined: Self = StObject.set(x, "stickerId", js.undefined)
+    inline def setStickerIdUndefined: Self = StObject.set(x, "stickerId", js.undefined)
   }
 }

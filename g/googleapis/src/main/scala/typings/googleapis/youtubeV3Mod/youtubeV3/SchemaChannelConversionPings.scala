@@ -19,22 +19,17 @@ trait SchemaChannelConversionPings extends StObject {
 }
 object SchemaChannelConversionPings {
   
-  @scala.inline
-  def apply(): SchemaChannelConversionPings = {
+  inline def apply(): SchemaChannelConversionPings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelConversionPings]
   }
   
-  @scala.inline
-  implicit class SchemaChannelConversionPingsMutableBuilder[Self <: SchemaChannelConversionPings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelConversionPings](x: Self) {
     
-    @scala.inline
-    def setPings(value: js.Array[SchemaChannelConversionPing]): Self = StObject.set(x, "pings", value.asInstanceOf[js.Any])
+    inline def setPings(value: js.Array[SchemaChannelConversionPing]): Self = StObject.set(x, "pings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPingsUndefined: Self = StObject.set(x, "pings", js.undefined)
+    inline def setPingsUndefined: Self = StObject.set(x, "pings", js.undefined)
     
-    @scala.inline
-    def setPingsVarargs(value: SchemaChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value :_*))
+    inline def setPingsVarargs(value: SchemaChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value :_*))
   }
 }

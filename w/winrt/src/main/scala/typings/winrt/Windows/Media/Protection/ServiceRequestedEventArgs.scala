@@ -9,8 +9,7 @@ trait ServiceRequestedEventArgs
      with IServiceRequestedEventArgs
 object ServiceRequestedEventArgs {
   
-  @scala.inline
-  def apply(completion: MediaProtectionServiceCompletion, request: IMediaProtectionServiceRequest): ServiceRequestedEventArgs = {
+  inline def apply(completion: MediaProtectionServiceCompletion, request: IMediaProtectionServiceRequest): ServiceRequestedEventArgs = {
     val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceRequestedEventArgs]
   }

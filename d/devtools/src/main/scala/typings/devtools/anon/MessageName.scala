@@ -12,19 +12,15 @@ trait MessageName extends StObject {
 }
 object MessageName {
   
-  @scala.inline
-  def apply(message: String, name: String): MessageName = {
+  inline def apply(message: String, name: String): MessageName = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageName]
   }
   
-  @scala.inline
-  implicit class MessageNameMutableBuilder[Self <: MessageName] (val x: Self) extends AnyVal {
+  extension [Self <: MessageName](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

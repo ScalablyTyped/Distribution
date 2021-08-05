@@ -21,26 +21,20 @@ object tablesorterConfigBaseMod {
   }
   object TablesorterConfigBase {
     
-    @scala.inline
-    def apply(): TablesorterConfigBase = {
+    inline def apply(): TablesorterConfigBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TablesorterConfigBase]
     }
     
-    @scala.inline
-    implicit class TablesorterConfigBaseMutableBuilder[Self <: TablesorterConfigBase] (val x: Self) extends AnyVal {
+    extension [Self <: TablesorterConfigBase](x: Self) {
       
-      @scala.inline
-      def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      @scala.inline
-      def setSortInitialOrder(value: SortOrder): Self = StObject.set(x, "sortInitialOrder", value.asInstanceOf[js.Any])
+      inline def setSortInitialOrder(value: SortOrder): Self = StObject.set(x, "sortInitialOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortInitialOrderUndefined: Self = StObject.set(x, "sortInitialOrder", js.undefined)
+      inline def setSortInitialOrderUndefined: Self = StObject.set(x, "sortInitialOrder", js.undefined)
     }
   }
 }

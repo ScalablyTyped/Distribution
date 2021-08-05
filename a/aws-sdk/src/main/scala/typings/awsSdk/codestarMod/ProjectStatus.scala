@@ -18,22 +18,17 @@ trait ProjectStatus extends StObject {
 }
 object ProjectStatus {
   
-  @scala.inline
-  def apply(state: State): ProjectStatus = {
+  inline def apply(state: State): ProjectStatus = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectStatus]
   }
   
-  @scala.inline
-  implicit class ProjectStatusMutableBuilder[Self <: ProjectStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectStatus](x: Self) {
     
-    @scala.inline
-    def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

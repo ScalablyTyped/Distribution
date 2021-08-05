@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("crypto", "Hash")
 @js.native
-class Hash protected () extends Transform {
+/* private */ class Hash () extends Transform {
   
   def copy(): Hash = js.native
   

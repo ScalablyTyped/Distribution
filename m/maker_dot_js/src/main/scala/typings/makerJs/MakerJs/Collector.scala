@@ -14,7 +14,7 @@ trait Collector[K, T] extends StObject {
   
   var collections: js.Array[ICollection[K, T]] = js.native
   
-  var comparer: js.Any = js.native
+  /* private */ var comparer: js.Any = js.native
   
   def findCollection(key: K): js.Array[T] = js.native
   def findCollection(key: K, action: js.Function1[/* index */ Double, Unit]): js.Array[T] = js.native

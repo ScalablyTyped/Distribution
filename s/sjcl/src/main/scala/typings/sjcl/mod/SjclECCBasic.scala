@@ -14,8 +14,7 @@ trait SjclECCBasic extends StObject {
 }
 object SjclECCBasic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     generateKeys: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey],
     publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey],
     secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey]
@@ -24,16 +23,12 @@ object SjclECCBasic {
     __obj.asInstanceOf[SjclECCBasic]
   }
   
-  @scala.inline
-  implicit class SjclECCBasicMutableBuilder[Self <: SjclECCBasic] (val x: Self) extends AnyVal {
+  extension [Self <: SjclECCBasic](x: Self) {
     
-    @scala.inline
-    def setGenerateKeys(value: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]): Self = StObject.set(x, "generateKeys", js.Any.fromFunction1(value))
+    inline def setGenerateKeys(value: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]): Self = StObject.set(x, "generateKeys", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPublicKey(value: SjclECCPublicKeyFactory[SjclECCPublicKey]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: SjclECCPublicKeyFactory[SjclECCPublicKey]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretKey(value: SjclECCSecretKeyFactory[SjclECCSecretKey]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+    inline def setSecretKey(value: SjclECCSecretKeyFactory[SjclECCSecretKey]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
   }
 }

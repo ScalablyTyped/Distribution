@@ -18,19 +18,15 @@ trait WxBaseMenuRequestConfig
 }
 object WxBaseMenuRequestConfig {
   
-  @scala.inline
-  def apply(): WxBaseMenuRequestConfig = {
+  inline def apply(): WxBaseMenuRequestConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WxBaseMenuRequestConfig]
   }
   
-  @scala.inline
-  implicit class WxBaseMenuRequestConfigMutableBuilder[Self <: WxBaseMenuRequestConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WxBaseMenuRequestConfig](x: Self) {
     
-    @scala.inline
-    def setTrigger(value: () => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction0(value))
+    inline def setTrigger(value: () => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

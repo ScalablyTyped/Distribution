@@ -16,28 +16,21 @@ trait FCMNotificationPayload
 }
 object FCMNotificationPayload {
   
-  @scala.inline
-  def apply(isSilent: Boolean, payload: js.Object): FCMNotificationPayload = {
+  inline def apply(isSilent: Boolean, payload: js.Object): FCMNotificationPayload = {
     val __obj = js.Dynamic.literal(isSilent = isSilent.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[FCMNotificationPayload]
   }
   
-  @scala.inline
-  implicit class FCMNotificationPayloadMutableBuilder[Self <: FCMNotificationPayload] (val x: Self) extends AnyVal {
+  extension [Self <: FCMNotificationPayload](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
+    inline def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

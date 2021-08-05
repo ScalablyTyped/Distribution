@@ -15,18 +15,15 @@ trait ICardPresentPaymentMethod
 }
 object ICardPresentPaymentMethod {
   
-  @scala.inline
-  def apply(created: Double, id: String, livemode: Boolean, metadata: IMetadata): ICardPresentPaymentMethod = {
+  inline def apply(created: Double, id: String, livemode: Boolean, metadata: IMetadata): ICardPresentPaymentMethod = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], billing_details = null, customer = null)
     __obj.updateDynamic("object")("payment_method")
     __obj.updateDynamic("type")("card_present")
     __obj.asInstanceOf[ICardPresentPaymentMethod]
   }
   
-  @scala.inline
-  implicit class ICardPresentPaymentMethodMutableBuilder[Self <: ICardPresentPaymentMethod] (val x: Self) extends AnyVal {
+  extension [Self <: ICardPresentPaymentMethod](x: Self) {
     
-    @scala.inline
-    def setType(value: card_present): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: card_present): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

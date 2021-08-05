@@ -10,19 +10,15 @@ trait IconsOptions extends StObject {
 }
 object IconsOptions {
   
-  @scala.inline
-  def apply(): IconsOptions = {
+  inline def apply(): IconsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconsOptions]
   }
   
-  @scala.inline
-  implicit class IconsOptionsMutableBuilder[Self <: IconsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IconsOptions](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

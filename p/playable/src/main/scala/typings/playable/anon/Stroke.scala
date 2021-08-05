@@ -11,16 +11,13 @@ trait Stroke extends StObject {
 }
 object Stroke {
   
-  @scala.inline
-  def apply(stroke: IThemeConfig => String): Stroke = {
+  inline def apply(stroke: IThemeConfig => String): Stroke = {
     val __obj = js.Dynamic.literal(stroke = js.Any.fromFunction1(stroke))
     __obj.asInstanceOf[Stroke]
   }
   
-  @scala.inline
-  implicit class StrokeMutableBuilder[Self <: Stroke] (val x: Self) extends AnyVal {
+  extension [Self <: Stroke](x: Self) {
     
-    @scala.inline
-    def setStroke(value: IThemeConfig => String): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
+    inline def setStroke(value: IThemeConfig => String): Self = StObject.set(x, "stroke", js.Any.fromFunction1(value))
   }
 }

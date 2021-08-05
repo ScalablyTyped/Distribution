@@ -15,26 +15,20 @@ object anon {
   }
   object Application {
     
-    @scala.inline
-    def apply(): Application = {
+    inline def apply(): Application = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Application]
     }
     
-    @scala.inline
-    implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+    extension [Self <: Application](x: Self) {
       
-      @scala.inline
-      def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      @scala.inline
-      def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
+      inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     }
   }
   
@@ -46,20 +40,16 @@ object anon {
   }
   object Callback {
     
-    @scala.inline
-    def apply(callback: /* repeated */ js.Any => Unit, id: String): Callback = {
+    inline def apply(callback: /* repeated */ js.Any => Unit, id: String): Callback = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
-    @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+    extension [Self <: Callback](x: Self) {
       
-      @scala.inline
-      def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,20 +61,16 @@ object anon {
   }
   object Description {
     
-    @scala.inline
-    def apply(description: String, help: String): Description = {
+    inline def apply(description: String, help: String): Description = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any])
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,17 +80,14 @@ object anon {
   }
   object Enabled {
     
-    @scala.inline
-    def apply(enabled: Boolean): Enabled = {
+    inline def apply(enabled: Boolean): Enabled = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Enabled]
     }
     
-    @scala.inline
-    implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+    extension [Self <: Enabled](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,8 +101,7 @@ object anon {
   }
   object Fail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fail: String | StringDictionary[String],
       incomplete: String | StringDictionary[String],
       pass: String | StringDictionary[String]
@@ -128,17 +110,13 @@ object anon {
       __obj.asInstanceOf[Fail]
     }
     
-    @scala.inline
-    implicit class FailMutableBuilder[Self <: Fail] (val x: Self) extends AnyVal {
+    extension [Self <: Fail](x: Self) {
       
-      @scala.inline
-      def setFail(value: String | StringDictionary[String]): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+      inline def setFail(value: String | StringDictionary[String]): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncomplete(value: String | StringDictionary[String]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
+      inline def setIncomplete(value: String | StringDictionary[String]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPass(value: String | StringDictionary[String]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String | StringDictionary[String]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
   }
 }

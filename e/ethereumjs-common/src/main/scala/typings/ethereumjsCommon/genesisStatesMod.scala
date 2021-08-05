@@ -10,9 +10,7 @@ object genesisStatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def genesisStateById(id: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("genesisStateById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def genesisStateById(id: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("genesisStateById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def genesisStateByName(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("genesisStateByName")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def genesisStateByName(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("genesisStateByName")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

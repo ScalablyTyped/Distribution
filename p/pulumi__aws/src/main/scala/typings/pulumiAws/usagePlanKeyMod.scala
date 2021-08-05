@@ -65,21 +65,16 @@ object usagePlanKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UsagePlanKeyState): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UsagePlanKeyState, opts: CustomResourceOptions): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
+    inline def get(name: String, id: Input[ID]): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
+    inline def get(name: String, id: Input[ID], state: UsagePlanKeyState): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
+    inline def get(name: String, id: Input[ID], state: UsagePlanKeyState, opts: CustomResourceOptions): UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlanKey]
     
     /**
       * Returns true if the given object is an instance of UsagePlanKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean]
   }
   
   trait UsagePlanKeyArgs extends StObject {
@@ -101,23 +96,18 @@ object usagePlanKeyMod {
   }
   object UsagePlanKeyArgs {
     
-    @scala.inline
-    def apply(keyId: Input[String], keyType: Input[String], usagePlanId: Input[String]): UsagePlanKeyArgs = {
+    inline def apply(keyId: Input[String], keyType: Input[String], usagePlanId: Input[String]): UsagePlanKeyArgs = {
       val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any], usagePlanId = usagePlanId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UsagePlanKeyArgs]
     }
     
-    @scala.inline
-    implicit class UsagePlanKeyArgsMutableBuilder[Self <: UsagePlanKeyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UsagePlanKeyArgs](x: Self) {
       
-      @scala.inline
-      def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyType(value: Input[String]): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+      inline def setKeyType(value: Input[String]): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePlanId(value: Input[String]): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+      inline def setUsagePlanId(value: Input[String]): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,44 +140,32 @@ object usagePlanKeyMod {
   }
   object UsagePlanKeyState {
     
-    @scala.inline
-    def apply(): UsagePlanKeyState = {
+    inline def apply(): UsagePlanKeyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsagePlanKeyState]
     }
     
-    @scala.inline
-    implicit class UsagePlanKeyStateMutableBuilder[Self <: UsagePlanKeyState] (val x: Self) extends AnyVal {
+    extension [Self <: UsagePlanKeyState](x: Self) {
       
-      @scala.inline
-      def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
       
-      @scala.inline
-      def setKeyType(value: Input[String]): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+      inline def setKeyType(value: Input[String]): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+      inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUsagePlanId(value: Input[String]): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+      inline def setUsagePlanId(value: Input[String]): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePlanIdUndefined: Self = StObject.set(x, "usagePlanId", js.undefined)
+      inline def setUsagePlanIdUndefined: Self = StObject.set(x, "usagePlanId", js.undefined)
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

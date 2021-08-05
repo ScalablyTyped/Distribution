@@ -23,23 +23,18 @@ trait TfvcBranchMapping extends StObject {
 }
 object TfvcBranchMapping {
   
-  @scala.inline
-  def apply(depth: String, serverItem: String, `type`: String): TfvcBranchMapping = {
+  inline def apply(depth: String, serverItem: String, `type`: String): TfvcBranchMapping = {
     val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], serverItem = serverItem.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TfvcBranchMapping]
   }
   
-  @scala.inline
-  implicit class TfvcBranchMappingMutableBuilder[Self <: TfvcBranchMapping] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcBranchMapping](x: Self) {
     
-    @scala.inline
-    def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
+    inline def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

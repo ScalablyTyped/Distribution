@@ -21,49 +21,35 @@ trait All extends StObject {
 }
 object All {
   
-  @scala.inline
-  def apply(): All = {
+  inline def apply(): All = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[All]
   }
   
-  @scala.inline
-  implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+  extension [Self <: All](x: Self) {
     
-    @scala.inline
-    def setAll(value: IndividualElementOptions): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: IndividualElementOptions): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setCard(value: CardElementOptionsselecto): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: CardElementOptionsselecto): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
-    @scala.inline
-    def setCvv(value: IndividualElementOptionss): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+    inline def setCvv(value: IndividualElementOptionss): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
+    inline def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
     
-    @scala.inline
-    def setMonth(value: IndividualElementOptionss): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: IndividualElementOptionss): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setNumber(value: IndividualElementOptionss): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: IndividualElementOptionss): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setYear(value: IndividualElementOptionss): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: IndividualElementOptionss): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

@@ -31,25 +31,19 @@ trait IContinuousDataOptions extends StObject {
 }
 object IContinuousDataOptions {
   
-  @scala.inline
-  def apply(qEnd: Double, qMaxNbrTicks: Double, qNbrPoints: Double, qStart: Double): IContinuousDataOptions = {
+  inline def apply(qEnd: Double, qMaxNbrTicks: Double, qNbrPoints: Double, qStart: Double): IContinuousDataOptions = {
     val __obj = js.Dynamic.literal(qEnd = qEnd.asInstanceOf[js.Any], qMaxNbrTicks = qMaxNbrTicks.asInstanceOf[js.Any], qNbrPoints = qNbrPoints.asInstanceOf[js.Any], qStart = qStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContinuousDataOptions]
   }
   
-  @scala.inline
-  implicit class IContinuousDataOptionsMutableBuilder[Self <: IContinuousDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IContinuousDataOptions](x: Self) {
     
-    @scala.inline
-    def setQEnd(value: Double): Self = StObject.set(x, "qEnd", value.asInstanceOf[js.Any])
+    inline def setQEnd(value: Double): Self = StObject.set(x, "qEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMaxNbrTicks(value: Double): Self = StObject.set(x, "qMaxNbrTicks", value.asInstanceOf[js.Any])
+    inline def setQMaxNbrTicks(value: Double): Self = StObject.set(x, "qMaxNbrTicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNbrPoints(value: Double): Self = StObject.set(x, "qNbrPoints", value.asInstanceOf[js.Any])
+    inline def setQNbrPoints(value: Double): Self = StObject.set(x, "qNbrPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStart(value: Double): Self = StObject.set(x, "qStart", value.asInstanceOf[js.Any])
+    inline def setQStart(value: Double): Self = StObject.set(x, "qStart", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait WaterfallChartColumnStyle extends StObject {
 }
 object WaterfallChartColumnStyle {
   
-  @scala.inline
-  def apply(): WaterfallChartColumnStyle = {
+  inline def apply(): WaterfallChartColumnStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaterfallChartColumnStyle]
   }
   
-  @scala.inline
-  implicit class WaterfallChartColumnStyleMutableBuilder[Self <: WaterfallChartColumnStyle] (val x: Self) extends AnyVal {
+  extension [Self <: WaterfallChartColumnStyle](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStyle(value: ColorStyle): Self = StObject.set(x, "colorStyle", value.asInstanceOf[js.Any])
+    inline def setColorStyle(value: ColorStyle): Self = StObject.set(x, "colorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStyleUndefined: Self = StObject.set(x, "colorStyle", js.undefined)
+    inline def setColorStyleUndefined: Self = StObject.set(x, "colorStyle", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

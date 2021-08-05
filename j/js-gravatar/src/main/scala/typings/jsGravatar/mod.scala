@@ -14,22 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("js-gravatar", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildQueryStringFromOptions(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryStringFromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buildQueryStringFromOptions(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryStringFromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def validateOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")().asInstanceOf[Unit]
-  @scala.inline
-  def validateOptions(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")().asInstanceOf[Unit]
+  inline def validateOptions(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -56,35 +51,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(email: String): Options = {
+    inline def apply(email: String): Options = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultImage(value: `404` | mp | identicon | monsterid | wavatar | retro | robohash | blank): Self = StObject.set(x, "defaultImage", value.asInstanceOf[js.Any])
+      inline def setDefaultImage(value: `404` | mp | identicon | monsterid | wavatar | retro | robohash | blank): Self = StObject.set(x, "defaultImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultImageUndefined: Self = StObject.set(x, "defaultImage", js.undefined)
+      inline def setDefaultImageUndefined: Self = StObject.set(x, "defaultImage", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+      inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+      inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

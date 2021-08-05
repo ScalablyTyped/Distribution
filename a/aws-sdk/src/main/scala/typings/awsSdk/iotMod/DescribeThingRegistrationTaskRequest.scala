@@ -13,16 +13,13 @@ trait DescribeThingRegistrationTaskRequest extends StObject {
 }
 object DescribeThingRegistrationTaskRequest {
   
-  @scala.inline
-  def apply(taskId: TaskId): DescribeThingRegistrationTaskRequest = {
+  inline def apply(taskId: TaskId): DescribeThingRegistrationTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingRegistrationTaskRequest]
   }
   
-  @scala.inline
-  implicit class DescribeThingRegistrationTaskRequestMutableBuilder[Self <: DescribeThingRegistrationTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeThingRegistrationTaskRequest](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait FirstNameOptions extends StObject {
 }
 object FirstNameOptions {
   
-  @scala.inline
-  def apply(gender: male | female, nationality: FirstNameNationalities): FirstNameOptions = {
+  inline def apply(gender: male | female, nationality: FirstNameNationalities): FirstNameOptions = {
     val __obj = js.Dynamic.literal(gender = gender.asInstanceOf[js.Any], nationality = nationality.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirstNameOptions]
   }
   
-  @scala.inline
-  implicit class FirstNameOptionsMutableBuilder[Self <: FirstNameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FirstNameOptions](x: Self) {
     
-    @scala.inline
-    def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNationality(value: FirstNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
+    inline def setNationality(value: FirstNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
   }
 }

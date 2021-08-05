@@ -14,28 +14,21 @@ trait SelectOption extends StObject {
 }
 object SelectOption {
   
-  @scala.inline
-  def apply(id: String, value: js.Array[MessageFormatElement]): SelectOption = {
+  inline def apply(id: String, value: js.Array[MessageFormatElement]): SelectOption = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOption]
   }
   
-  @scala.inline
-  implicit class SelectOptionMutableBuilder[Self <: SelectOption] (val x: Self) extends AnyVal {
+  extension [Self <: SelectOption](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Array[MessageFormatElement]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[MessageFormatElement]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: MessageFormatElement*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: MessageFormatElement*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

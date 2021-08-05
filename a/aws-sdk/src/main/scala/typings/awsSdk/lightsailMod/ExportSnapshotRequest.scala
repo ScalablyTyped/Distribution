@@ -13,16 +13,13 @@ trait ExportSnapshotRequest extends StObject {
 }
 object ExportSnapshotRequest {
   
-  @scala.inline
-  def apply(sourceSnapshotName: ResourceName): ExportSnapshotRequest = {
+  inline def apply(sourceSnapshotName: ResourceName): ExportSnapshotRequest = {
     val __obj = js.Dynamic.literal(sourceSnapshotName = sourceSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class ExportSnapshotRequestMutableBuilder[Self <: ExportSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setSourceSnapshotName(value: ResourceName): Self = StObject.set(x, "sourceSnapshotName", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotName(value: ResourceName): Self = StObject.set(x, "sourceSnapshotName", value.asInstanceOf[js.Any])
   }
 }

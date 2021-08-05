@@ -16,23 +16,19 @@ trait PatchInstanceFilterGroupLabel extends StObject {
 }
 object PatchInstanceFilterGroupLabel {
   
-  @scala.inline
-  def apply(): PatchInstanceFilterGroupLabel = {
+  inline def apply(): PatchInstanceFilterGroupLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchInstanceFilterGroupLabel]
   }
   
-  @scala.inline
-  implicit class PatchInstanceFilterGroupLabelMutableBuilder[Self <: PatchInstanceFilterGroupLabel] (val x: Self) extends AnyVal {
+  extension [Self <: PatchInstanceFilterGroupLabel](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientOsconfig.maximMazurokGapiClientOsconfigStrings.PatchInstanceFilterGroupLabel & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

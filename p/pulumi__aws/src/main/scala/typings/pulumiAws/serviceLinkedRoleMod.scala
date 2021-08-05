@@ -80,21 +80,16 @@ object serviceLinkedRoleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServiceLinkedRoleState): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServiceLinkedRoleState, opts: CustomResourceOptions): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
+    inline def get(name: String, id: Input[ID]): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
+    inline def get(name: String, id: Input[ID], state: ServiceLinkedRoleState): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
+    inline def get(name: String, id: Input[ID], state: ServiceLinkedRoleState, opts: CustomResourceOptions): ServiceLinkedRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceLinkedRole]
     
     /**
       * Returns true if the given object is an instance of ServiceLinkedRole.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ Boolean]
   }
   
   trait ServiceLinkedRoleArgs extends StObject {
@@ -116,29 +111,22 @@ object serviceLinkedRoleMod {
   }
   object ServiceLinkedRoleArgs {
     
-    @scala.inline
-    def apply(awsServiceName: Input[String]): ServiceLinkedRoleArgs = {
+    inline def apply(awsServiceName: Input[String]): ServiceLinkedRoleArgs = {
       val __obj = js.Dynamic.literal(awsServiceName = awsServiceName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceLinkedRoleArgs]
     }
     
-    @scala.inline
-    implicit class ServiceLinkedRoleArgsMutableBuilder[Self <: ServiceLinkedRoleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceLinkedRoleArgs](x: Self) {
       
-      @scala.inline
-      def setAwsServiceName(value: Input[String]): Self = StObject.set(x, "awsServiceName", value.asInstanceOf[js.Any])
+      inline def setAwsServiceName(value: Input[String]): Self = StObject.set(x, "awsServiceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSuffix(value: Input[String]): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
+      inline def setCustomSuffix(value: Input[String]): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
+      inline def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     }
   }
   
@@ -186,62 +174,44 @@ object serviceLinkedRoleMod {
   }
   object ServiceLinkedRoleState {
     
-    @scala.inline
-    def apply(): ServiceLinkedRoleState = {
+    inline def apply(): ServiceLinkedRoleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceLinkedRoleState]
     }
     
-    @scala.inline
-    implicit class ServiceLinkedRoleStateMutableBuilder[Self <: ServiceLinkedRoleState] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceLinkedRoleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAwsServiceName(value: Input[String]): Self = StObject.set(x, "awsServiceName", value.asInstanceOf[js.Any])
+      inline def setAwsServiceName(value: Input[String]): Self = StObject.set(x, "awsServiceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsServiceNameUndefined: Self = StObject.set(x, "awsServiceName", js.undefined)
+      inline def setAwsServiceNameUndefined: Self = StObject.set(x, "awsServiceName", js.undefined)
       
-      @scala.inline
-      def setCreateDate(value: Input[String]): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: Input[String]): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDateUndefined: Self = StObject.set(x, "createDate", js.undefined)
+      inline def setCreateDateUndefined: Self = StObject.set(x, "createDate", js.undefined)
       
-      @scala.inline
-      def setCustomSuffix(value: Input[String]): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
+      inline def setCustomSuffix(value: Input[String]): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
+      inline def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+      inline def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+      inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
     }
   }
 }

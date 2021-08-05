@@ -28,11 +28,9 @@ object fileBrowserHandler {
   trait FileBrowserHandleExecuteId extends StObject
   object FileBrowserHandleExecuteId {
     
-    @scala.inline
-    def ReadOnly: typings.chromeApps.chromeAppsStrings.ReadOnly = "ReadOnly".asInstanceOf[typings.chromeApps.chromeAppsStrings.ReadOnly]
+    inline def ReadOnly: typings.chromeApps.chromeAppsStrings.ReadOnly = "ReadOnly".asInstanceOf[typings.chromeApps.chromeAppsStrings.ReadOnly]
     
-    @scala.inline
-    def ReadWrite: typings.chromeApps.chromeAppsStrings.ReadWrite = "ReadWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.ReadWrite]
+    inline def ReadWrite: typings.chromeApps.chromeAppsStrings.ReadWrite = "ReadWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.ReadWrite]
   }
   
   trait SelectFileParameters extends StObject {
@@ -51,26 +49,20 @@ object fileBrowserHandler {
   }
   object SelectFileParameters {
     
-    @scala.inline
-    def apply(suggestedName: String): SelectFileParameters = {
+    inline def apply(suggestedName: String): SelectFileParameters = {
       val __obj = js.Dynamic.literal(suggestedName = suggestedName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectFileParameters]
     }
     
-    @scala.inline
-    implicit class SelectFileParametersMutableBuilder[Self <: SelectFileParameters] (val x: Self) extends AnyVal {
+    extension [Self <: SelectFileParameters](x: Self) {
       
-      @scala.inline
-      def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
+      inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
+      inline def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
       
-      @scala.inline
-      def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
+      inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
+      inline def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,23 +76,18 @@ object fileBrowserHandler {
   }
   object SelectionResult {
     
-    @scala.inline
-    def apply(success: Boolean): SelectionResult = {
+    inline def apply(success: Boolean): SelectionResult = {
       val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any], entry = null)
       __obj.asInstanceOf[SelectionResult]
     }
     
-    @scala.inline
-    implicit class SelectionResultMutableBuilder[Self <: SelectionResult] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionResult](x: Self) {
       
-      @scala.inline
-      def setEntry(value: FileEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: FileEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryNull: Self = StObject.set(x, "entry", null)
+      inline def setEntryNull: Self = StObject.set(x, "entry", null)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
 }

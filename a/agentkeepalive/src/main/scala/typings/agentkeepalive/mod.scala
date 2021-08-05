@@ -56,8 +56,7 @@ object mod {
   }
   object AgentStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closeSocketCount: Double,
       createSocketCount: Double,
       createSocketErrorCount: Double,
@@ -72,35 +71,25 @@ object mod {
       __obj.asInstanceOf[AgentStatus]
     }
     
-    @scala.inline
-    implicit class AgentStatusMutableBuilder[Self <: AgentStatus] (val x: Self) extends AnyVal {
+    extension [Self <: AgentStatus](x: Self) {
       
-      @scala.inline
-      def setCloseSocketCount(value: Double): Self = StObject.set(x, "closeSocketCount", value.asInstanceOf[js.Any])
+      inline def setCloseSocketCount(value: Double): Self = StObject.set(x, "closeSocketCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateSocketCount(value: Double): Self = StObject.set(x, "createSocketCount", value.asInstanceOf[js.Any])
+      inline def setCreateSocketCount(value: Double): Self = StObject.set(x, "createSocketCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateSocketErrorCount(value: Double): Self = StObject.set(x, "createSocketErrorCount", value.asInstanceOf[js.Any])
+      inline def setCreateSocketErrorCount(value: Double): Self = StObject.set(x, "createSocketErrorCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorSocketCount(value: Double): Self = StObject.set(x, "errorSocketCount", value.asInstanceOf[js.Any])
+      inline def setErrorSocketCount(value: Double): Self = StObject.set(x, "errorSocketCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSockets(value: PlainObject): Self = StObject.set(x, "freeSockets", value.asInstanceOf[js.Any])
+      inline def setFreeSockets(value: PlainObject): Self = StObject.set(x, "freeSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestCount(value: Double): Self = StObject.set(x, "requestCount", value.asInstanceOf[js.Any])
+      inline def setRequestCount(value: Double): Self = StObject.set(x, "requestCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequests(value: PlainObject): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+      inline def setRequests(value: PlainObject): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockets(value: PlainObject): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
+      inline def setSockets(value: PlainObject): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutSocketCount(value: Double): Self = StObject.set(x, "timeoutSocketCount", value.asInstanceOf[js.Any])
+      inline def setTimeoutSocketCount(value: Double): Self = StObject.set(x, "timeoutSocketCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,44 +107,32 @@ object mod {
   }
   object CommonHttpOption {
     
-    @scala.inline
-    def apply(): CommonHttpOption = {
+    inline def apply(): CommonHttpOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonHttpOption]
     }
     
-    @scala.inline
-    implicit class CommonHttpOptionMutableBuilder[Self <: CommonHttpOption] (val x: Self) extends AnyVal {
+    extension [Self <: CommonHttpOption](x: Self) {
       
-      @scala.inline
-      def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
+      inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
+      inline def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
       
-      @scala.inline
-      def setFreeSocketTimeout(value: Double): Self = StObject.set(x, "freeSocketTimeout", value.asInstanceOf[js.Any])
+      inline def setFreeSocketTimeout(value: Double): Self = StObject.set(x, "freeSocketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSocketTimeoutUndefined: Self = StObject.set(x, "freeSocketTimeout", js.undefined)
+      inline def setFreeSocketTimeoutUndefined: Self = StObject.set(x, "freeSocketTimeout", js.undefined)
       
-      @scala.inline
-      def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+      inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+      inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
-      @scala.inline
-      def setSocketActiveTTL(value: Double): Self = StObject.set(x, "socketActiveTTL", value.asInstanceOf[js.Any])
+      inline def setSocketActiveTTL(value: Double): Self = StObject.set(x, "socketActiveTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketActiveTTLUndefined: Self = StObject.set(x, "socketActiveTTL", js.undefined)
+      inline def setSocketActiveTTLUndefined: Self = StObject.set(x, "socketActiveTTL", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -179,8 +156,7 @@ object mod {
   }
   object Constants_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CREATE_HTTPS_CONNECTION: Symbol,
       CREATE_ID: Symbol,
       CURRENT_ID: Symbol,
@@ -194,32 +170,23 @@ object mod {
       __obj.asInstanceOf[Constants_]
     }
     
-    @scala.inline
-    implicit class Constants_MutableBuilder[Self <: Constants_] (val x: Self) extends AnyVal {
+    extension [Self <: Constants_](x: Self) {
       
-      @scala.inline
-      def setCREATE_HTTPS_CONNECTION(value: Symbol): Self = StObject.set(x, "CREATE_HTTPS_CONNECTION", value.asInstanceOf[js.Any])
+      inline def setCREATE_HTTPS_CONNECTION(value: Symbol): Self = StObject.set(x, "CREATE_HTTPS_CONNECTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCREATE_ID(value: Symbol): Self = StObject.set(x, "CREATE_ID", value.asInstanceOf[js.Any])
+      inline def setCREATE_ID(value: Symbol): Self = StObject.set(x, "CREATE_ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCURRENT_ID(value: Symbol): Self = StObject.set(x, "CURRENT_ID", value.asInstanceOf[js.Any])
+      inline def setCURRENT_ID(value: Symbol): Self = StObject.set(x, "CURRENT_ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINIT_SOCKET(value: Symbol): Self = StObject.set(x, "INIT_SOCKET", value.asInstanceOf[js.Any])
+      inline def setINIT_SOCKET(value: Symbol): Self = StObject.set(x, "INIT_SOCKET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOCKET_CREATED_TIME(value: Symbol): Self = StObject.set(x, "SOCKET_CREATED_TIME", value.asInstanceOf[js.Any])
+      inline def setSOCKET_CREATED_TIME(value: Symbol): Self = StObject.set(x, "SOCKET_CREATED_TIME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOCKET_NAME(value: Symbol): Self = StObject.set(x, "SOCKET_NAME", value.asInstanceOf[js.Any])
+      inline def setSOCKET_NAME(value: Symbol): Self = StObject.set(x, "SOCKET_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOCKET_REQUEST_COUNT(value: Symbol): Self = StObject.set(x, "SOCKET_REQUEST_COUNT", value.asInstanceOf[js.Any])
+      inline def setSOCKET_REQUEST_COUNT(value: Symbol): Self = StObject.set(x, "SOCKET_REQUEST_COUNT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOCKET_REQUEST_FINISHED_COUNT(value: Symbol): Self = StObject.set(x, "SOCKET_REQUEST_FINISHED_COUNT", value.asInstanceOf[js.Any])
+      inline def setSOCKET_REQUEST_FINISHED_COUNT(value: Symbol): Self = StObject.set(x, "SOCKET_REQUEST_FINISHED_COUNT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,32 +214,24 @@ object mod {
   }
   object HttpOptions {
     
-    @scala.inline
-    def apply(): HttpOptions = {
+    inline def apply(): HttpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpOptions]
     }
     
-    @scala.inline
-    implicit class HttpOptionsMutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpOptions](x: Self) {
       
-      @scala.inline
-      def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
+      inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
+      inline def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
       
-      @scala.inline
-      def setFreeSocketTimeout(value: Double): Self = StObject.set(x, "freeSocketTimeout", value.asInstanceOf[js.Any])
+      inline def setFreeSocketTimeout(value: Double): Self = StObject.set(x, "freeSocketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSocketTimeoutUndefined: Self = StObject.set(x, "freeSocketTimeout", js.undefined)
+      inline def setFreeSocketTimeoutUndefined: Self = StObject.set(x, "freeSocketTimeout", js.undefined)
       
-      @scala.inline
-      def setSocketActiveTTL(value: Double): Self = StObject.set(x, "socketActiveTTL", value.asInstanceOf[js.Any])
+      inline def setSocketActiveTTL(value: Double): Self = StObject.set(x, "socketActiveTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketActiveTTLUndefined: Self = StObject.set(x, "socketActiveTTL", js.undefined)
+      inline def setSocketActiveTTLUndefined: Self = StObject.set(x, "socketActiveTTL", js.undefined)
     }
   }
   
@@ -289,32 +248,24 @@ object mod {
   }
   object HttpsOptions {
     
-    @scala.inline
-    def apply(): HttpsOptions = {
+    inline def apply(): HttpsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpsOptions]
     }
     
-    @scala.inline
-    implicit class HttpsOptionsMutableBuilder[Self <: HttpsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpsOptions](x: Self) {
       
-      @scala.inline
-      def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
+      inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
+      inline def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
       
-      @scala.inline
-      def setFreeSocketTimeout(value: Double): Self = StObject.set(x, "freeSocketTimeout", value.asInstanceOf[js.Any])
+      inline def setFreeSocketTimeout(value: Double): Self = StObject.set(x, "freeSocketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeSocketTimeoutUndefined: Self = StObject.set(x, "freeSocketTimeout", js.undefined)
+      inline def setFreeSocketTimeoutUndefined: Self = StObject.set(x, "freeSocketTimeout", js.undefined)
       
-      @scala.inline
-      def setSocketActiveTTL(value: Double): Self = StObject.set(x, "socketActiveTTL", value.asInstanceOf[js.Any])
+      inline def setSocketActiveTTL(value: Double): Self = StObject.set(x, "socketActiveTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketActiveTTLUndefined: Self = StObject.set(x, "socketActiveTTL", js.undefined)
+      inline def setSocketActiveTTLUndefined: Self = StObject.set(x, "socketActiveTTL", js.undefined)
     }
   }
   

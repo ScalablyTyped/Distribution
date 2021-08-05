@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bool extends StObject
 object Bool {
   
-  @scala.inline
-  def AND: typings.elasticlunr.elasticlunrStrings.AND = "AND".asInstanceOf[typings.elasticlunr.elasticlunrStrings.AND]
+  inline def AND: typings.elasticlunr.elasticlunrStrings.AND = "AND".asInstanceOf[typings.elasticlunr.elasticlunrStrings.AND]
   
-  @scala.inline
-  def OR: typings.elasticlunr.elasticlunrStrings.OR = "OR".asInstanceOf[typings.elasticlunr.elasticlunrStrings.OR]
+  inline def OR: typings.elasticlunr.elasticlunrStrings.OR = "OR".asInstanceOf[typings.elasticlunr.elasticlunrStrings.OR]
 }

@@ -13,15 +13,11 @@ object socketSupportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClientSocketTransport(port: Double): js.Promise[SocketTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocketTransport]]
-  @scala.inline
-  def createClientSocketTransport(port: Double, encoding: BufferEncoding): js.Promise[SocketTransport] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocketTransport]]
+  inline def createClientSocketTransport(port: Double): js.Promise[SocketTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SocketTransport]]
+  inline def createClientSocketTransport(port: Double, encoding: BufferEncoding): js.Promise[SocketTransport] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SocketTransport]]
   
-  @scala.inline
-  def createServerSocketTransport(port: Double): js.Tuple2[MessageReader, MessageWriter] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
-  @scala.inline
-  def createServerSocketTransport(port: Double, encoding: BufferEncoding): js.Tuple2[MessageReader, MessageWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
+  inline def createServerSocketTransport(port: Double): js.Tuple2[MessageReader, MessageWriter] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
+  inline def createServerSocketTransport(port: Double, encoding: BufferEncoding): js.Tuple2[MessageReader, MessageWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
   
   trait SocketTransport extends StObject {
     
@@ -29,17 +25,14 @@ object socketSupportMod {
   }
   object SocketTransport {
     
-    @scala.inline
-    def apply(onConnected: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): SocketTransport = {
+    inline def apply(onConnected: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): SocketTransport = {
       val __obj = js.Dynamic.literal(onConnected = js.Any.fromFunction0(onConnected))
       __obj.asInstanceOf[SocketTransport]
     }
     
-    @scala.inline
-    implicit class SocketTransportMutableBuilder[Self <: SocketTransport] (val x: Self) extends AnyVal {
+    extension [Self <: SocketTransport](x: Self) {
       
-      @scala.inline
-      def setOnConnected(value: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): Self = StObject.set(x, "onConnected", js.Any.fromFunction0(value))
+      inline def setOnConnected(value: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): Self = StObject.set(x, "onConnected", js.Any.fromFunction0(value))
     }
   }
 }

@@ -14,6 +14,5 @@ class array[C] ()
      with NotRequiredArraySchema[js.Object, C]
 object array {
   
-  @scala.inline
-  def apply: ArraySchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("array").asInstanceOf[ArraySchemaConstructor]
+  inline def apply: ArraySchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("array").asInstanceOf[ArraySchemaConstructor]
 }

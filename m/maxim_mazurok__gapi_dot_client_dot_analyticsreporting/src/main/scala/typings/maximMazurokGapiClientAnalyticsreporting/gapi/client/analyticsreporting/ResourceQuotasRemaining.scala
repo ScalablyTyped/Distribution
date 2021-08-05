@@ -14,25 +14,19 @@ trait ResourceQuotasRemaining extends StObject {
 }
 object ResourceQuotasRemaining {
   
-  @scala.inline
-  def apply(): ResourceQuotasRemaining = {
+  inline def apply(): ResourceQuotasRemaining = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceQuotasRemaining]
   }
   
-  @scala.inline
-  implicit class ResourceQuotasRemainingMutableBuilder[Self <: ResourceQuotasRemaining] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceQuotasRemaining](x: Self) {
     
-    @scala.inline
-    def setDailyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
+    inline def setDailyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyQuotaTokensRemainingUndefined: Self = StObject.set(x, "dailyQuotaTokensRemaining", js.undefined)
+    inline def setDailyQuotaTokensRemainingUndefined: Self = StObject.set(x, "dailyQuotaTokensRemaining", js.undefined)
     
-    @scala.inline
-    def setHourlyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "hourlyQuotaTokensRemaining", value.asInstanceOf[js.Any])
+    inline def setHourlyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "hourlyQuotaTokensRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourlyQuotaTokensRemainingUndefined: Self = StObject.set(x, "hourlyQuotaTokensRemaining", js.undefined)
+    inline def setHourlyQuotaTokensRemainingUndefined: Self = StObject.set(x, "hourlyQuotaTokensRemaining", js.undefined)
   }
 }

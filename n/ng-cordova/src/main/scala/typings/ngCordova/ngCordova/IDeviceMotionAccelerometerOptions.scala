@@ -10,16 +10,13 @@ trait IDeviceMotionAccelerometerOptions extends StObject {
 }
 object IDeviceMotionAccelerometerOptions {
   
-  @scala.inline
-  def apply(frequency: Double): IDeviceMotionAccelerometerOptions = {
+  inline def apply(frequency: Double): IDeviceMotionAccelerometerOptions = {
     val __obj = js.Dynamic.literal(frequency = frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeviceMotionAccelerometerOptions]
   }
   
-  @scala.inline
-  implicit class IDeviceMotionAccelerometerOptionsMutableBuilder[Self <: IDeviceMotionAccelerometerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceMotionAccelerometerOptions](x: Self) {
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
   }
 }

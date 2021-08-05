@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait resizeareaEventName extends StObject
 object resizeareaEventName {
   
-  @scala.inline
-  def onResize: typings.webix.webixStrings.onResize = "onResize".asInstanceOf[typings.webix.webixStrings.onResize]
+  inline def onResize: typings.webix.webixStrings.onResize = "onResize".asInstanceOf[typings.webix.webixStrings.onResize]
   
-  @scala.inline
-  def onResizeEnd: typings.webix.webixStrings.onResizeEnd = "onResizeEnd".asInstanceOf[typings.webix.webixStrings.onResizeEnd]
+  inline def onResizeEnd: typings.webix.webixStrings.onResizeEnd = "onResizeEnd".asInstanceOf[typings.webix.webixStrings.onResizeEnd]
 }

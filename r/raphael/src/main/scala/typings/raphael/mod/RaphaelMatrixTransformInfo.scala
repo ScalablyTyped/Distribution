@@ -32,8 +32,7 @@ trait RaphaelMatrixTransformInfo extends StObject {
 }
 object RaphaelMatrixTransformInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dx: Double,
     dy: Double,
     isSimple: Boolean,
@@ -46,28 +45,20 @@ object RaphaelMatrixTransformInfo {
     __obj.asInstanceOf[RaphaelMatrixTransformInfo]
   }
   
-  @scala.inline
-  implicit class RaphaelMatrixTransformInfoMutableBuilder[Self <: RaphaelMatrixTransformInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelMatrixTransformInfo](x: Self) {
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSimple(value: Boolean): Self = StObject.set(x, "isSimple", value.asInstanceOf[js.Any])
+    inline def setIsSimple(value: Boolean): Self = StObject.set(x, "isSimple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalex(value: Double): Self = StObject.set(x, "scalex", value.asInstanceOf[js.Any])
+    inline def setScalex(value: Double): Self = StObject.set(x, "scalex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaley(value: Double): Self = StObject.set(x, "scaley", value.asInstanceOf[js.Any])
+    inline def setScaley(value: Double): Self = StObject.set(x, "scaley", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShear(value: Double): Self = StObject.set(x, "shear", value.asInstanceOf[js.Any])
+    inline def setShear(value: Double): Self = StObject.set(x, "shear", value.asInstanceOf[js.Any])
   }
 }

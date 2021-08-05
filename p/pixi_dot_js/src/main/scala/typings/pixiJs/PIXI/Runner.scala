@@ -138,8 +138,7 @@ trait Runner extends StObject {
 }
 object Runner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: js.Any => Runner,
     contains: js.Any => Unit,
     destroy: () => Unit,
@@ -155,37 +154,26 @@ object Runner {
     __obj.asInstanceOf[Runner]
   }
   
-  @scala.inline
-  implicit class RunnerMutableBuilder[Self <: Runner] (val x: Self) extends AnyVal {
+  extension [Self <: Runner](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Any => Runner): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Any => Runner): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContains(value: js.Any => Unit): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: js.Any => Unit): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDispatch(value: () => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction0(value))
+    inline def setDispatch(value: () => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmit(value: /* repeated */ js.Any => Runner): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+    inline def setEmit(value: /* repeated */ js.Any => Runner): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: js.Any => Runner): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Runner): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAll(value: () => Runner): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
+    inline def setRemoveAll(value: () => Runner): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }
 }

@@ -10,16 +10,13 @@ trait LocationSubscription extends StObject {
 }
 object LocationSubscription {
   
-  @scala.inline
-  def apply(remove: () => Unit): LocationSubscription = {
+  inline def apply(remove: () => Unit): LocationSubscription = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[LocationSubscription]
   }
   
-  @scala.inline
-  implicit class LocationSubscriptionMutableBuilder[Self <: LocationSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: LocationSubscription](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

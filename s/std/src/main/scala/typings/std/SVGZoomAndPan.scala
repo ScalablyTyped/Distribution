@@ -11,16 +11,13 @@ trait SVGZoomAndPan extends StObject {
 }
 object SVGZoomAndPan {
   
-  @scala.inline
-  def apply(zoomAndPan: Double): SVGZoomAndPan = {
+  inline def apply(zoomAndPan: Double): SVGZoomAndPan = {
     val __obj = js.Dynamic.literal(zoomAndPan = zoomAndPan.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGZoomAndPan]
   }
   
-  @scala.inline
-  implicit class SVGZoomAndPanMutableBuilder[Self <: SVGZoomAndPan] (val x: Self) extends AnyVal {
+  extension [Self <: SVGZoomAndPan](x: Self) {
     
-    @scala.inline
-    def setZoomAndPan(value: Double): Self = StObject.set(x, "zoomAndPan", value.asInstanceOf[js.Any])
+    inline def setZoomAndPan(value: Double): Self = StObject.set(x, "zoomAndPan", value.asInstanceOf[js.Any])
   }
 }

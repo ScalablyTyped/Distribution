@@ -18,8 +18,7 @@ trait Errorcountoutdated extends StObject {
 }
 object Errorcountoutdated {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Double,
     error_count_outdated: Double,
     error_count_total: Double,
@@ -30,25 +29,18 @@ object Errorcountoutdated {
     __obj.asInstanceOf[Errorcountoutdated]
   }
   
-  @scala.inline
-  implicit class ErrorcountoutdatedMutableBuilder[Self <: Errorcountoutdated] (val x: Self) extends AnyVal {
+  extension [Self <: Errorcountoutdated](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_count_outdated(value: Double): Self = StObject.set(x, "error_count_outdated", value.asInstanceOf[js.Any])
+    inline def setError_count_outdated(value: Double): Self = StObject.set(x, "error_count_outdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_count_total(value: Double): Self = StObject.set(x, "error_count_total", value.asInstanceOf[js.Any])
+    inline def setError_count_total(value: Double): Self = StObject.set(x, "error_count_total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable(value: js.Array[Lifetimehours]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: js.Array[Lifetimehours]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableVarargs(value: Lifetimehours*): Self = StObject.set(x, "table", js.Array(value :_*))
+    inline def setTableVarargs(value: Lifetimehours*): Self = StObject.set(x, "table", js.Array(value :_*))
   }
 }

@@ -22,25 +22,19 @@ trait SchemaFailoverContext extends StObject {
 }
 object SchemaFailoverContext {
   
-  @scala.inline
-  def apply(): SchemaFailoverContext = {
+  inline def apply(): SchemaFailoverContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFailoverContext]
   }
   
-  @scala.inline
-  implicit class SchemaFailoverContextMutableBuilder[Self <: SchemaFailoverContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFailoverContext](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSettingsVersion(value: String): Self = StObject.set(x, "settingsVersion", value.asInstanceOf[js.Any])
+    inline def setSettingsVersion(value: String): Self = StObject.set(x, "settingsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsVersionUndefined: Self = StObject.set(x, "settingsVersion", js.undefined)
+    inline def setSettingsVersionUndefined: Self = StObject.set(x, "settingsVersion", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait XObjectOutputStream
 }
 object XObjectOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
@@ -48,10 +47,8 @@ object XObjectOutputStream {
     __obj.asInstanceOf[XObjectOutputStream]
   }
   
-  @scala.inline
-  implicit class XObjectOutputStreamMutableBuilder[Self <: XObjectOutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XObjectOutputStream](x: Self) {
     
-    @scala.inline
-    def setWriteObject(value: XPersistObject => Unit): Self = StObject.set(x, "writeObject", js.Any.fromFunction1(value))
+    inline def setWriteObject(value: XPersistObject => Unit): Self = StObject.set(x, "writeObject", js.Any.fromFunction1(value))
   }
 }

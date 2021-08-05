@@ -18,19 +18,15 @@ trait InputLogEvent extends StObject {
 }
 object InputLogEvent {
   
-  @scala.inline
-  def apply(message: EventMessage, timestamp: Timestamp): InputLogEvent = {
+  inline def apply(message: EventMessage, timestamp: Timestamp): InputLogEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLogEvent]
   }
   
-  @scala.inline
-  implicit class InputLogEventMutableBuilder[Self <: InputLogEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InputLogEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: EventMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: EventMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ object html5NumberOptionsMod {
        with TestableOptions
   object Html5NumberOptions {
     
-    @scala.inline
-    def apply(): Html5NumberOptions = {
+    inline def apply(): Html5NumberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Html5NumberOptions]
     }

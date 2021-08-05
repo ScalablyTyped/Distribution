@@ -11,16 +11,13 @@ trait PickImpldoesntContain extends StObject {
 }
 object PickImpldoesntContain {
   
-  @scala.inline
-  def apply(doesntContain: String): PickImpldoesntContain = {
+  inline def apply(doesntContain: String): PickImpldoesntContain = {
     val __obj = js.Dynamic.literal(doesntContain = doesntContain.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldoesntContain]
   }
   
-  @scala.inline
-  implicit class PickImpldoesntContainMutableBuilder[Self <: PickImpldoesntContain] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldoesntContain](x: Self) {
     
-    @scala.inline
-    def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
+    inline def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
   }
 }

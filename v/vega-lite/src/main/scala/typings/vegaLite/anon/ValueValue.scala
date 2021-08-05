@@ -10,22 +10,17 @@ trait ValueValue extends StObject {
 }
 object ValueValue {
   
-  @scala.inline
-  def apply(): ValueValue = {
+  inline def apply(): ValueValue = {
     val __obj = js.Dynamic.literal(value = null)
     __obj.asInstanceOf[ValueValue]
   }
   
-  @scala.inline
-  implicit class ValueValueMutableBuilder[Self <: ValueValue] (val x: Self) extends AnyVal {
+  extension [Self <: ValueValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: typings.vegaLite.channeldefMod.Value[Null]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.vegaLite.channeldefMod.Value[Null]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

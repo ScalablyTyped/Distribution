@@ -58,8 +58,7 @@ trait Bulletin extends StObject {
 }
 object Bulletin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bulletin: ResourceIdKindPlaylistId,
     channelItem: `0`,
     comment: ResourceIdChannelIdKind,
@@ -75,37 +74,26 @@ object Bulletin {
     __obj.asInstanceOf[Bulletin]
   }
   
-  @scala.inline
-  implicit class BulletinMutableBuilder[Self <: Bulletin] (val x: Self) extends AnyVal {
+  extension [Self <: Bulletin](x: Self) {
     
-    @scala.inline
-    def setBulletin(value: ResourceIdKindPlaylistId): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
+    inline def setBulletin(value: ResourceIdKindPlaylistId): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelItem(value: `0`): Self = StObject.set(x, "channelItem", value.asInstanceOf[js.Any])
+    inline def setChannelItem(value: `0`): Self = StObject.set(x, "channelItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: ResourceIdChannelIdKind): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: ResourceIdChannelIdKind): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavorite(value: ResourceId): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
+    inline def setFavorite(value: ResourceId): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLike(value: ResourceId): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
+    inline def setLike(value: ResourceId): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistItem(value: PlaylistId): Self = StObject.set(x, "playlistItem", value.asInstanceOf[js.Any])
+    inline def setPlaylistItem(value: PlaylistId): Self = StObject.set(x, "playlistItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendation(value: Reason): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
+    inline def setRecommendation(value: Reason): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocial(value: Author): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
+    inline def setSocial(value: Author): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription(value: ResourceIdChannelIdString): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: ResourceIdChannelIdString): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload(value: VideoId): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: VideoId): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
   }
 }

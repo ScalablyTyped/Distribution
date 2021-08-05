@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CalendarSharingActionImportance extends StObject
 object CalendarSharingActionImportance {
   
-  @scala.inline
-  def primary: typings.microsoftGraph.microsoftGraphStrings.primary = "primary".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.primary]
+  inline def primary: typings.microsoftGraph.microsoftGraphStrings.primary = "primary".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.primary]
   
-  @scala.inline
-  def secondary: typings.microsoftGraph.microsoftGraphStrings.secondary = "secondary".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.secondary]
+  inline def secondary: typings.microsoftGraph.microsoftGraphStrings.secondary = "secondary".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.secondary]
 }

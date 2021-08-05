@@ -10,16 +10,13 @@ trait CloseTargetRequest extends StObject {
 }
 object CloseTargetRequest {
   
-  @scala.inline
-  def apply(targetId: TargetID): CloseTargetRequest = {
+  inline def apply(targetId: TargetID): CloseTargetRequest = {
     val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseTargetRequest]
   }
   
-  @scala.inline
-  implicit class CloseTargetRequestMutableBuilder[Self <: CloseTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CloseTargetRequest](x: Self) {
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

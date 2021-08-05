@@ -19,8 +19,7 @@ trait TabTie
 }
 object TabTie {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createHammeron: Firstindices => TabTie,
     createPulloff: Firstindices => TabTie,
     draw: () => Boolean,
@@ -35,13 +34,10 @@ object TabTie {
     __obj.asInstanceOf[TabTie]
   }
   
-  @scala.inline
-  implicit class TabTieMutableBuilder[Self <: TabTie] (val x: Self) extends AnyVal {
+  extension [Self <: TabTie](x: Self) {
     
-    @scala.inline
-    def setCreateHammeron(value: Firstindices => TabTie): Self = StObject.set(x, "createHammeron", js.Any.fromFunction1(value))
+    inline def setCreateHammeron(value: Firstindices => TabTie): Self = StObject.set(x, "createHammeron", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePulloff(value: Firstindices => TabTie): Self = StObject.set(x, "createPulloff", js.Any.fromFunction1(value))
+    inline def setCreatePulloff(value: Firstindices => TabTie): Self = StObject.set(x, "createPulloff", js.Any.fromFunction1(value))
   }
 }

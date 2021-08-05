@@ -42,8 +42,7 @@ trait LauncherOptions extends StObject {
 }
 object LauncherOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentType: String,
     desiredRemainingView: ViewSizePreference,
     displayApplicationPicker: Boolean,
@@ -59,37 +58,26 @@ object LauncherOptions {
     __obj.asInstanceOf[LauncherOptions]
   }
   
-  @scala.inline
-  implicit class LauncherOptionsMutableBuilder[Self <: LauncherOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LauncherOptions](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
+    inline def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayApplicationPicker(value: Boolean): Self = StObject.set(x, "displayApplicationPicker", value.asInstanceOf[js.Any])
+    inline def setDisplayApplicationPicker(value: Boolean): Self = StObject.set(x, "displayApplicationPicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackUri(value: Uri): Self = StObject.set(x, "fallbackUri", value.asInstanceOf[js.Any])
+    inline def setFallbackUri(value: Uri): Self = StObject.set(x, "fallbackUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeighboringFilesQuery(value: StorageFileQueryResult): Self = StObject.set(x, "neighboringFilesQuery", value.asInstanceOf[js.Any])
+    inline def setNeighboringFilesQuery(value: StorageFileQueryResult): Self = StObject.set(x, "neighboringFilesQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredApplicationDisplayName(value: String): Self = StObject.set(x, "preferredApplicationDisplayName", value.asInstanceOf[js.Any])
+    inline def setPreferredApplicationDisplayName(value: String): Self = StObject.set(x, "preferredApplicationDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredApplicationPackageFamilyName(value: String): Self = StObject.set(x, "preferredApplicationPackageFamilyName", value.asInstanceOf[js.Any])
+    inline def setPreferredApplicationPackageFamilyName(value: String): Self = StObject.set(x, "preferredApplicationPackageFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetApplicationPackageFamilyName(value: String): Self = StObject.set(x, "targetApplicationPackageFamilyName", value.asInstanceOf[js.Any])
+    inline def setTargetApplicationPackageFamilyName(value: String): Self = StObject.set(x, "targetApplicationPackageFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatAsUntrusted(value: Boolean): Self = StObject.set(x, "treatAsUntrusted", value.asInstanceOf[js.Any])
+    inline def setTreatAsUntrusted(value: Boolean): Self = StObject.set(x, "treatAsUntrusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUi(value: LauncherUIOptions): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: LauncherUIOptions): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
   }
 }

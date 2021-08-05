@@ -20,14 +20,10 @@ object Namespace {
     * @param members The members of the new namespace.
     * @returns The newly-defined namespace.
     **/
-  @scala.inline
-  def define(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[js.Any]
-  @scala.inline
-  def define(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def define(name: String, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def define(name: Unit, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def define(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[js.Any]
+  inline def define(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def define(name: String, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def define(name: Unit, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Defines a new namespace with the specified name under the specified parent namespace. For more information, see Organizing your code with WinJS.Namespace.
@@ -36,20 +32,12 @@ object Namespace {
     * @param members The members of the new namespace.
     * @returns The newly-defined namespace.
     **/
-  @scala.inline
-  def defineWithParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")().asInstanceOf[js.Any]
-  @scala.inline
-  def defineWithParent(parentNamespace: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def defineWithParent(parentNamespace: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def defineWithParent(parentNamespace: js.Any, name: String, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def defineWithParent(parentNamespace: js.Any, name: Unit, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def defineWithParent(parentNamespace: Unit, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def defineWithParent(parentNamespace: Unit, name: String, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def defineWithParent(parentNamespace: Unit, name: Unit, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defineWithParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")().asInstanceOf[js.Any]
+  inline def defineWithParent(parentNamespace: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def defineWithParent(parentNamespace: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defineWithParent(parentNamespace: js.Any, name: String, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defineWithParent(parentNamespace: js.Any, name: Unit, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defineWithParent(parentNamespace: Unit, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defineWithParent(parentNamespace: Unit, name: String, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def defineWithParent(parentNamespace: Unit, name: Unit, members: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -64,81 +64,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TokenFlagLOWER extends StObject
 object TokenFlagLOWER {
   
-  @scala.inline
-  def a: a_ = "a".asInstanceOf[a_]
+  inline def a: a_ = "a".asInstanceOf[a_]
   
-  @scala.inline
-  def b: b_ = "b".asInstanceOf[b_]
+  inline def b: b_ = "b".asInstanceOf[b_]
   
-  @scala.inline
-  def c: c_ = "c".asInstanceOf[c_]
+  inline def c: c_ = "c".asInstanceOf[c_]
   
-  @scala.inline
-  def d: d_ = "d".asInstanceOf[d_]
+  inline def d: d_ = "d".asInstanceOf[d_]
   
-  @scala.inline
-  def e: e_ = "e".asInstanceOf[e_]
+  inline def e: e_ = "e".asInstanceOf[e_]
   
-  @scala.inline
-  def f: f_ = "f".asInstanceOf[f_]
+  inline def f: f_ = "f".asInstanceOf[f_]
   
-  @scala.inline
-  def g: g_ = "g".asInstanceOf[g_]
+  inline def g: g_ = "g".asInstanceOf[g_]
   
-  @scala.inline
-  def h: h_ = "h".asInstanceOf[h_]
+  inline def h: h_ = "h".asInstanceOf[h_]
   
-  @scala.inline
-  def i: i_ = "i".asInstanceOf[i_]
+  inline def i: i_ = "i".asInstanceOf[i_]
   
-  @scala.inline
-  def j: j_ = "j".asInstanceOf[j_]
+  inline def j: j_ = "j".asInstanceOf[j_]
   
-  @scala.inline
-  def k: k_ = "k".asInstanceOf[k_]
+  inline def k: k_ = "k".asInstanceOf[k_]
   
-  @scala.inline
-  def l: l_ = "l".asInstanceOf[l_]
+  inline def l: l_ = "l".asInstanceOf[l_]
   
-  @scala.inline
-  def m: m_ = "m".asInstanceOf[m_]
+  inline def m: m_ = "m".asInstanceOf[m_]
   
-  @scala.inline
-  def n: n_ = "n".asInstanceOf[n_]
+  inline def n: n_ = "n".asInstanceOf[n_]
   
-  @scala.inline
-  def o: o_ = "o".asInstanceOf[o_]
+  inline def o: o_ = "o".asInstanceOf[o_]
   
-  @scala.inline
-  def p: p_ = "p".asInstanceOf[p_]
+  inline def p: p_ = "p".asInstanceOf[p_]
   
-  @scala.inline
-  def q: q_ = "q".asInstanceOf[q_]
+  inline def q: q_ = "q".asInstanceOf[q_]
   
-  @scala.inline
-  def r: r_ = "r".asInstanceOf[r_]
+  inline def r: r_ = "r".asInstanceOf[r_]
   
-  @scala.inline
-  def s: s_ = "s".asInstanceOf[s_]
+  inline def s: s_ = "s".asInstanceOf[s_]
   
-  @scala.inline
-  def t: t_ = "t".asInstanceOf[t_]
+  inline def t: t_ = "t".asInstanceOf[t_]
   
-  @scala.inline
-  def u: u_ = "u".asInstanceOf[u_]
+  inline def u: u_ = "u".asInstanceOf[u_]
   
-  @scala.inline
-  def v: v_ = "v".asInstanceOf[v_]
+  inline def v: v_ = "v".asInstanceOf[v_]
   
-  @scala.inline
-  def w: w_ = "w".asInstanceOf[w_]
+  inline def w: w_ = "w".asInstanceOf[w_]
   
-  @scala.inline
-  def x: x_ = "x".asInstanceOf[x_]
+  inline def x: x_ = "x".asInstanceOf[x_]
   
-  @scala.inline
-  def y: y_ = "y".asInstanceOf[y_]
+  inline def y: y_ = "y".asInstanceOf[y_]
   
-  @scala.inline
-  def z: z_ = "z".asInstanceOf[z_]
+  inline def z: z_ = "z".asInstanceOf[z_]
 }

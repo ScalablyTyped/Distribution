@@ -18,25 +18,19 @@ trait S3Retention extends StObject {
 }
 object S3Retention {
   
-  @scala.inline
-  def apply(): S3Retention = {
+  inline def apply(): S3Retention = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Retention]
   }
   
-  @scala.inline
-  implicit class S3RetentionMutableBuilder[Self <: S3Retention] (val x: Self) extends AnyVal {
+  extension [Self <: S3Retention](x: Self) {
     
-    @scala.inline
-    def setMode(value: S3ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: S3ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setRetainUntilDate(value: TimeStamp): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
+    inline def setRetainUntilDate(value: TimeStamp): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
+    inline def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
   }
 }

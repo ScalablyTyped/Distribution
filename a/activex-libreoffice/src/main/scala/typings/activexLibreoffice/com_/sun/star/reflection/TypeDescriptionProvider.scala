@@ -25,8 +25,7 @@ trait TypeDescriptionProvider
      with XTypeDescriptionEnumerationAccess
 object TypeDescriptionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     createTypeDescriptionEnumeration: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration,

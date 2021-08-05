@@ -17,20 +17,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setMaterialReporter(value: MaterialReporterOptions): Self = StObject.set(x, "materialReporter", value.asInstanceOf[js.Any])
+      inline def setMaterialReporter(value: MaterialReporterOptions): Self = StObject.set(x, "materialReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaterialReporterUndefined: Self = StObject.set(x, "materialReporter", js.undefined)
+      inline def setMaterialReporterUndefined: Self = StObject.set(x, "materialReporter", js.undefined)
     }
   }
   
@@ -56,32 +52,24 @@ object mod {
   }
   object MaterialReporterOptions {
     
-    @scala.inline
-    def apply(): MaterialReporterOptions = {
+    inline def apply(): MaterialReporterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaterialReporterOptions]
     }
     
-    @scala.inline
-    implicit class MaterialReporterOptionsMutableBuilder[Self <: MaterialReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MaterialReporterOptions](x: Self) {
       
-      @scala.inline
-      def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
+      inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
+      inline def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
       
-      @scala.inline
-      def setExpandSuites(value: Boolean): Self = StObject.set(x, "expandSuites", value.asInstanceOf[js.Any])
+      inline def setExpandSuites(value: Boolean): Self = StObject.set(x, "expandSuites", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandSuitesUndefined: Self = StObject.set(x, "expandSuites", js.undefined)
+      inline def setExpandSuitesUndefined: Self = StObject.set(x, "expandSuites", js.undefined)
       
-      @scala.inline
-      def setServerPort(value: Double): Self = StObject.set(x, "serverPort", value.asInstanceOf[js.Any])
+      inline def setServerPort(value: Double): Self = StObject.set(x, "serverPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerPortUndefined: Self = StObject.set(x, "serverPort", js.undefined)
+      inline def setServerPortUndefined: Self = StObject.set(x, "serverPort", js.undefined)
     }
   }
 }

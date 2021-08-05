@@ -12,20 +12,16 @@ trait MSAssertion extends StObject {
 }
 object MSAssertion {
   
-  @scala.inline
-  def apply(id: java.lang.String, `type`: MSCredentialType): MSAssertion = {
+  inline def apply(id: java.lang.String, `type`: MSCredentialType): MSAssertion = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSAssertion]
   }
   
-  @scala.inline
-  implicit class MSAssertionMutableBuilder[Self <: MSAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: MSAssertion](x: Self) {
     
-    @scala.inline
-    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MSCredentialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MSCredentialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

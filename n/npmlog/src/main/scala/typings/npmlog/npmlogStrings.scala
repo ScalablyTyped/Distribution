@@ -11,62 +11,53 @@ object npmlogStrings {
   sealed trait error
     extends StObject
        with LogLevels
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait http
     extends StObject
        with LogLevels
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
   sealed trait info
     extends StObject
        with LogLevels
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait notice
     extends StObject
        with LogLevels
-  @scala.inline
-  def notice: notice = "notice".asInstanceOf[notice]
+  inline def notice: notice = "notice".asInstanceOf[notice]
   
   @js.native
   sealed trait silent
     extends StObject
        with LogLevels
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait silly
     extends StObject
        with LogLevels
-  @scala.inline
-  def silly: silly = "silly".asInstanceOf[silly]
+  inline def silly: silly = "silly".asInstanceOf[silly]
   
   @js.native
   sealed trait timing
     extends StObject
        with LogLevels
-  @scala.inline
-  def timing: timing = "timing".asInstanceOf[timing]
+  inline def timing: timing = "timing".asInstanceOf[timing]
   
   @js.native
   sealed trait verbose
     extends StObject
        with LogLevels
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
   sealed trait warn
     extends StObject
        with LogLevels
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }

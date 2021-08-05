@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPieSliceLocation extends StObject
 object XlPieSliceLocation {
   
-  @scala.inline
-  def xlHorizontalCoordinate: `1` = 1.asInstanceOf[`1`]
+  inline def xlHorizontalCoordinate: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlVerticalCoordinate: `2` = 2.asInstanceOf[`2`]
+  inline def xlVerticalCoordinate: `2` = 2.asInstanceOf[`2`]
 }

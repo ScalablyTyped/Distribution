@@ -17,37 +17,27 @@ trait Delay extends StObject {
 }
 object Delay {
   
-  @scala.inline
-  def apply(): Delay = {
+  inline def apply(): Delay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Delay]
   }
   
-  @scala.inline
-  implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+  extension [Self <: Delay](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setFlashDelay(value: Double): Self = StObject.set(x, "flashDelay", value.asInstanceOf[js.Any])
+    inline def setFlashDelay(value: Double): Self = StObject.set(x, "flashDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlashDelayUndefined: Self = StObject.set(x, "flashDelay", js.undefined)
+    inline def setFlashDelayUndefined: Self = StObject.set(x, "flashDelay", js.undefined)
     
-    @scala.inline
-    def setFlashStyle(value: CTerminal): Self = StObject.set(x, "flashStyle", value.asInstanceOf[js.Any])
+    inline def setFlashStyle(value: CTerminal): Self = StObject.set(x, "flashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlashStyleUndefined: Self = StObject.set(x, "flashStyle", js.undefined)
+    inline def setFlashStyleUndefined: Self = StObject.set(x, "flashStyle", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

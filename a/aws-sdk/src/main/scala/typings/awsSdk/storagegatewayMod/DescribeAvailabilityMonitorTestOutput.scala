@@ -20,31 +20,23 @@ trait DescribeAvailabilityMonitorTestOutput extends StObject {
 }
 object DescribeAvailabilityMonitorTestOutput {
   
-  @scala.inline
-  def apply(): DescribeAvailabilityMonitorTestOutput = {
+  inline def apply(): DescribeAvailabilityMonitorTestOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAvailabilityMonitorTestOutput]
   }
   
-  @scala.inline
-  implicit class DescribeAvailabilityMonitorTestOutputMutableBuilder[Self <: DescribeAvailabilityMonitorTestOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAvailabilityMonitorTestOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AvailabilityMonitorTestStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AvailabilityMonitorTestStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

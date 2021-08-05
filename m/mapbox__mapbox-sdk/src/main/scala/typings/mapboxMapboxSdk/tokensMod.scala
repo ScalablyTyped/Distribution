@@ -12,10 +12,8 @@ object tokensMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): TokensService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TokensService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): TokensService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TokensService]
+  inline def default(config: SdkConfig): TokensService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TokensService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): TokensService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TokensService]
   
   trait CreateTokenRequest extends StObject {
     
@@ -27,38 +25,28 @@ object tokensMod {
   }
   object CreateTokenRequest {
     
-    @scala.inline
-    def apply(): CreateTokenRequest = {
+    inline def apply(): CreateTokenRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateTokenRequest]
     }
     
-    @scala.inline
-    implicit class CreateTokenRequestMutableBuilder[Self <: CreateTokenRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTokenRequest](x: Self) {
       
-      @scala.inline
-      def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+      inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
       
-      @scala.inline
-      def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   
@@ -72,23 +60,18 @@ object tokensMod {
   }
   object Scope {
     
-    @scala.inline
-    def apply(description: String, id: String, public: Boolean): Scope = {
+    inline def apply(description: String, id: String, public: Boolean): Scope = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scope]
     }
     
-    @scala.inline
-    implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+    extension [Self <: Scope](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,23 +83,18 @@ object tokensMod {
   }
   object TemporaryTokenRequest {
     
-    @scala.inline
-    def apply(expires: String, scopes: js.Array[String]): TemporaryTokenRequest = {
+    inline def apply(expires: String, scopes: js.Array[String]): TemporaryTokenRequest = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemporaryTokenRequest]
     }
     
-    @scala.inline
-    implicit class TemporaryTokenRequestMutableBuilder[Self <: TemporaryTokenRequest] (val x: Self) extends AnyVal {
+    extension [Self <: TemporaryTokenRequest](x: Self) {
       
-      @scala.inline
-      def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   
@@ -169,8 +147,7 @@ object tokensMod {
   }
   object Token {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client: String,
       created: String,
       default: Boolean,
@@ -185,38 +162,27 @@ object tokensMod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,20 +194,16 @@ object tokensMod {
   }
   object TokenDetail {
     
-    @scala.inline
-    def apply(code: String, token: Token): TokenDetail = {
+    inline def apply(code: String, token: Token): TokenDetail = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenDetail]
     }
     
-    @scala.inline
-    implicit class TokenDetailMutableBuilder[Self <: TokenDetail] (val x: Self) extends AnyVal {
+    extension [Self <: TokenDetail](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,8 +250,7 @@ object tokensMod {
   }
   object TokensService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createTemporaryToken: TemporaryTokenRequest => MapiRequest,
       createToken: CreateTokenRequest => MapiRequest,
       deleteToken: UpdateDeleteTokenRequest => MapiRequest,
@@ -302,29 +263,21 @@ object tokensMod {
       __obj.asInstanceOf[TokensService]
     }
     
-    @scala.inline
-    implicit class TokensServiceMutableBuilder[Self <: TokensService] (val x: Self) extends AnyVal {
+    extension [Self <: TokensService](x: Self) {
       
-      @scala.inline
-      def setCreateTemporaryToken(value: TemporaryTokenRequest => MapiRequest): Self = StObject.set(x, "createTemporaryToken", js.Any.fromFunction1(value))
+      inline def setCreateTemporaryToken(value: TemporaryTokenRequest => MapiRequest): Self = StObject.set(x, "createTemporaryToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateToken(value: CreateTokenRequest => MapiRequest): Self = StObject.set(x, "createToken", js.Any.fromFunction1(value))
+      inline def setCreateToken(value: CreateTokenRequest => MapiRequest): Self = StObject.set(x, "createToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteToken(value: UpdateDeleteTokenRequest => MapiRequest): Self = StObject.set(x, "deleteToken", js.Any.fromFunction1(value))
+      inline def setDeleteToken(value: UpdateDeleteTokenRequest => MapiRequest): Self = StObject.set(x, "deleteToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetToken(value: () => MapiRequest): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
+      inline def setGetToken(value: () => MapiRequest): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListScopes(value: () => MapiRequest): Self = StObject.set(x, "listScopes", js.Any.fromFunction0(value))
+      inline def setListScopes(value: () => MapiRequest): Self = StObject.set(x, "listScopes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListTokens(value: () => MapiRequest): Self = StObject.set(x, "listTokens", js.Any.fromFunction0(value))
+      inline def setListTokens(value: () => MapiRequest): Self = StObject.set(x, "listTokens", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateToken(value: UpdateDeleteTokenRequest => MapiRequest): Self = StObject.set(x, "updateToken", js.Any.fromFunction1(value))
+      inline def setUpdateToken(value: UpdateDeleteTokenRequest => MapiRequest): Self = StObject.set(x, "updateToken", js.Any.fromFunction1(value))
     }
   }
   
@@ -336,17 +289,14 @@ object tokensMod {
   }
   object UpdateDeleteTokenRequest {
     
-    @scala.inline
-    def apply(tokenId: String): UpdateDeleteTokenRequest = {
+    inline def apply(tokenId: String): UpdateDeleteTokenRequest = {
       val __obj = js.Dynamic.literal(tokenId = tokenId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateDeleteTokenRequest]
     }
     
-    @scala.inline
-    implicit class UpdateDeleteTokenRequestMutableBuilder[Self <: UpdateDeleteTokenRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateDeleteTokenRequest](x: Self) {
       
-      @scala.inline
-      def setTokenId(value: String): Self = StObject.set(x, "tokenId", value.asInstanceOf[js.Any])
+      inline def setTokenId(value: String): Self = StObject.set(x, "tokenId", value.asInstanceOf[js.Any])
     }
   }
 }

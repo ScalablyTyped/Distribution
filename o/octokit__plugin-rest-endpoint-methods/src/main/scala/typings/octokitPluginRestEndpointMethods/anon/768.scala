@@ -20,8 +20,7 @@ trait `768` extends StObject {
 }
 object `768` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[MigrationsGetCommitAuthorsEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[MigrationsGetCommitAuthorsResponseData]
   ): `768` = {
@@ -29,15 +28,12 @@ object `768` {
     __obj.asInstanceOf[`768`]
   }
   
-  @scala.inline
-  implicit class `768MutableBuilder`[Self <: `768`] (val x: Self) extends AnyVal {
+  extension [Self <: `768`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[MigrationsGetCommitAuthorsEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsGetCommitAuthorsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsGetCommitAuthorsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

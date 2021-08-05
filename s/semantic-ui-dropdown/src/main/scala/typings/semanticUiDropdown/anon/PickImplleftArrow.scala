@@ -11,16 +11,13 @@ trait PickImplleftArrow extends StObject {
 }
 object PickImplleftArrow {
   
-  @scala.inline
-  def apply(leftArrow: Double): PickImplleftArrow = {
+  inline def apply(leftArrow: Double): PickImplleftArrow = {
     val __obj = js.Dynamic.literal(leftArrow = leftArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplleftArrow]
   }
   
-  @scala.inline
-  implicit class PickImplleftArrowMutableBuilder[Self <: PickImplleftArrow] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplleftArrow](x: Self) {
     
-    @scala.inline
-    def setLeftArrow(value: Double): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
+    inline def setLeftArrow(value: Double): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
   }
 }

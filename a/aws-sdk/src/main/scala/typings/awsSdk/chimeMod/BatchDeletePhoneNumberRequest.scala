@@ -13,19 +13,15 @@ trait BatchDeletePhoneNumberRequest extends StObject {
 }
 object BatchDeletePhoneNumberRequest {
   
-  @scala.inline
-  def apply(PhoneNumberIds: NonEmptyStringList): BatchDeletePhoneNumberRequest = {
+  inline def apply(PhoneNumberIds: NonEmptyStringList): BatchDeletePhoneNumberRequest = {
     val __obj = js.Dynamic.literal(PhoneNumberIds = PhoneNumberIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeletePhoneNumberRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeletePhoneNumberRequestMutableBuilder[Self <: BatchDeletePhoneNumberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeletePhoneNumberRequest](x: Self) {
     
-    @scala.inline
-    def setPhoneNumberIds(value: NonEmptyStringList): Self = StObject.set(x, "PhoneNumberIds", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberIds(value: NonEmptyStringList): Self = StObject.set(x, "PhoneNumberIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberIdsVarargs(value: String*): Self = StObject.set(x, "PhoneNumberIds", js.Array(value :_*))
+    inline def setPhoneNumberIdsVarargs(value: String*): Self = StObject.set(x, "PhoneNumberIds", js.Array(value :_*))
   }
 }

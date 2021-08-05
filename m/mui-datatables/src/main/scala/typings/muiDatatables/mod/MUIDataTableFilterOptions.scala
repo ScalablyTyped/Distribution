@@ -55,17 +55,14 @@ trait MUIDataTableFilterOptions extends StObject {
 }
 object MUIDataTableFilterOptions {
   
-  @scala.inline
-  def apply(): MUIDataTableFilterOptions = {
+  inline def apply(): MUIDataTableFilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableFilterOptions]
   }
   
-  @scala.inline
-  implicit class MUIDataTableFilterOptionsMutableBuilder[Self <: MUIDataTableFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableFilterOptions](x: Self) {
     
-    @scala.inline
-    def setDisplay(
+    inline def setDisplay(
       value: (/* filterList */ js.Array[js.Array[String]], /* onChange */ js.Function3[
           /* val */ String | js.Array[String], 
           /* index */ Double, 
@@ -74,34 +71,24 @@ object MUIDataTableFilterOptions {
         ], /* index */ Double, /* column */ MUIDataTableColumn, /* filterData */ js.Array[js.Array[String]]) => Unit
     ): Self = StObject.set(x, "display", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    @scala.inline
-    def setLogic(value: (/* prop */ String, /* filterValue */ js.Array[js.Any]) => Boolean): Self = StObject.set(x, "logic", js.Any.fromFunction2(value))
+    inline def setLogic(value: (/* prop */ String, /* filterValue */ js.Array[js.Any]) => Boolean): Self = StObject.set(x, "logic", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
+    inline def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderValue(value: /* value */ String => String): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
+    inline def setRenderValue(value: /* value */ String => String): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderValueUndefined: Self = StObject.set(x, "renderValue", js.undefined)
+    inline def setRenderValueUndefined: Self = StObject.set(x, "renderValue", js.undefined)
   }
 }

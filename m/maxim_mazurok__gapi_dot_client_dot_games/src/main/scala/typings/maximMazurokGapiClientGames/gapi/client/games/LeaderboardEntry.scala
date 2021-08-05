@@ -35,67 +35,47 @@ trait LeaderboardEntry extends StObject {
 }
 object LeaderboardEntry {
   
-  @scala.inline
-  def apply(): LeaderboardEntry = {
+  inline def apply(): LeaderboardEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeaderboardEntry]
   }
   
-  @scala.inline
-  implicit class LeaderboardEntryMutableBuilder[Self <: LeaderboardEntry] (val x: Self) extends AnyVal {
+  extension [Self <: LeaderboardEntry](x: Self) {
     
-    @scala.inline
-    def setFormattedScore(value: String): Self = StObject.set(x, "formattedScore", value.asInstanceOf[js.Any])
+    inline def setFormattedScore(value: String): Self = StObject.set(x, "formattedScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedScoreRank(value: String): Self = StObject.set(x, "formattedScoreRank", value.asInstanceOf[js.Any])
+    inline def setFormattedScoreRank(value: String): Self = StObject.set(x, "formattedScoreRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedScoreRankUndefined: Self = StObject.set(x, "formattedScoreRank", js.undefined)
+    inline def setFormattedScoreRankUndefined: Self = StObject.set(x, "formattedScoreRank", js.undefined)
     
-    @scala.inline
-    def setFormattedScoreUndefined: Self = StObject.set(x, "formattedScore", js.undefined)
+    inline def setFormattedScoreUndefined: Self = StObject.set(x, "formattedScore", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlayer(value: Player): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: Player): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
+    inline def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
     
-    @scala.inline
-    def setScoreRank(value: String): Self = StObject.set(x, "scoreRank", value.asInstanceOf[js.Any])
+    inline def setScoreRank(value: String): Self = StObject.set(x, "scoreRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreRankUndefined: Self = StObject.set(x, "scoreRank", js.undefined)
+    inline def setScoreRankUndefined: Self = StObject.set(x, "scoreRank", js.undefined)
     
-    @scala.inline
-    def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
+    inline def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
+    inline def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
     
-    @scala.inline
-    def setScoreValue(value: String): Self = StObject.set(x, "scoreValue", value.asInstanceOf[js.Any])
+    inline def setScoreValue(value: String): Self = StObject.set(x, "scoreValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreValueUndefined: Self = StObject.set(x, "scoreValue", js.undefined)
+    inline def setScoreValueUndefined: Self = StObject.set(x, "scoreValue", js.undefined)
     
-    @scala.inline
-    def setTimeSpan(value: String): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
+    inline def setTimeSpan(value: String): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
+    inline def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
     
-    @scala.inline
-    def setWriteTimestampMillis(value: String): Self = StObject.set(x, "writeTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setWriteTimestampMillis(value: String): Self = StObject.set(x, "writeTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteTimestampMillisUndefined: Self = StObject.set(x, "writeTimestampMillis", js.undefined)
+    inline def setWriteTimestampMillisUndefined: Self = StObject.set(x, "writeTimestampMillis", js.undefined)
   }
 }

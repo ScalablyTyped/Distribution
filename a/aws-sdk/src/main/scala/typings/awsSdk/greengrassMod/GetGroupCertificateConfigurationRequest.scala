@@ -13,16 +13,13 @@ trait GetGroupCertificateConfigurationRequest extends StObject {
 }
 object GetGroupCertificateConfigurationRequest {
   
-  @scala.inline
-  def apply(GroupId: string): GetGroupCertificateConfigurationRequest = {
+  inline def apply(GroupId: string): GetGroupCertificateConfigurationRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGroupCertificateConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetGroupCertificateConfigurationRequestMutableBuilder[Self <: GetGroupCertificateConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupCertificateConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

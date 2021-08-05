@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterComparator extends StObject
 object FilterComparator {
   
-  @scala.inline
-  def Equalssign: typings.reactBootstrapTable.reactBootstrapTableStrings.Equalssign = "=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Equalssign]
+  inline def Equalssign: typings.reactBootstrapTable.reactBootstrapTableStrings.Equalssign = "=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Equalssign]
   
-  @scala.inline
-  def ExclamationmarkEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign]
+  inline def ExclamationmarkEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign]
   
-  @scala.inline
-  def Greaterthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Greaterthansign = ">".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Greaterthansign]
+  inline def Greaterthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Greaterthansign = ">".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Greaterthansign]
   
-  @scala.inline
-  def GreaterthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign]
+  inline def GreaterthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign]
   
-  @scala.inline
-  def Lessthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Lessthansign = "<".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Lessthansign]
+  inline def Lessthansign: typings.reactBootstrapTable.reactBootstrapTableStrings.Lessthansign = "<".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.Lessthansign]
   
-  @scala.inline
-  def LessthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.LessthansignEqualssign]
+  inline def LessthansignEqualssign: typings.reactBootstrapTable.reactBootstrapTableStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.LessthansignEqualssign]
 }

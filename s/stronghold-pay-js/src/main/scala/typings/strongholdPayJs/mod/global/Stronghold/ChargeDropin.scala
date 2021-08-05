@@ -17,25 +17,19 @@ trait ChargeDropin extends StObject {
 }
 object ChargeDropin {
   
-  @scala.inline
-  def apply(amount: Double, paymentSourceId: String): ChargeDropin = {
+  inline def apply(amount: Double, paymentSourceId: String): ChargeDropin = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], paymentSourceId = paymentSourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChargeDropin]
   }
   
-  @scala.inline
-  implicit class ChargeDropinMutableBuilder[Self <: ChargeDropin] (val x: Self) extends AnyVal {
+  extension [Self <: ChargeDropin](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
-    @scala.inline
-    def setPaymentSourceId(value: String): Self = StObject.set(x, "paymentSourceId", value.asInstanceOf[js.Any])
+    inline def setPaymentSourceId(value: String): Self = StObject.set(x, "paymentSourceId", value.asInstanceOf[js.Any])
   }
 }

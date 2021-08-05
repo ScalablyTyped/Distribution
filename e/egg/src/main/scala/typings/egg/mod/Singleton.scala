@@ -10,16 +10,13 @@ trait Singleton[T] extends StObject {
 }
 object Singleton {
   
-  @scala.inline
-  def apply[T](get: String => T): Singleton[T] = {
+  inline def apply[T](get: String => T): Singleton[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[Singleton[T]]
   }
   
-  @scala.inline
-  implicit class SingletonMutableBuilder[Self <: Singleton[?], T] (val x: Self & Singleton[T]) extends AnyVal {
+  extension [Self <: Singleton[?], T](x: Self & Singleton[T]) {
     
-    @scala.inline
-    def setGet(value: String => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

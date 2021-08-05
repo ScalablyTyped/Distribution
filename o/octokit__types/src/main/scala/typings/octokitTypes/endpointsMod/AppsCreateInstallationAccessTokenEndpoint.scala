@@ -20,31 +20,23 @@ trait AppsCreateInstallationAccessTokenEndpoint extends StObject {
 }
 object AppsCreateInstallationAccessTokenEndpoint {
   
-  @scala.inline
-  def apply(installation_id: Double): AppsCreateInstallationAccessTokenEndpoint = {
+  inline def apply(installation_id: Double): AppsCreateInstallationAccessTokenEndpoint = {
     val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsCreateInstallationAccessTokenEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsCreateInstallationAccessTokenEndpointMutableBuilder[Self <: AppsCreateInstallationAccessTokenEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsCreateInstallationAccessTokenEndpoint](x: Self) {
     
-    @scala.inline
-    def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
+    inline def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: AppsCreateInstallationAccessTokenParamsPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: AppsCreateInstallationAccessTokenParamsPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setRepository_ids(value: js.Array[Double]): Self = StObject.set(x, "repository_ids", value.asInstanceOf[js.Any])
+    inline def setRepository_ids(value: js.Array[Double]): Self = StObject.set(x, "repository_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository_idsUndefined: Self = StObject.set(x, "repository_ids", js.undefined)
+    inline def setRepository_idsUndefined: Self = StObject.set(x, "repository_ids", js.undefined)
     
-    @scala.inline
-    def setRepository_idsVarargs(value: Double*): Self = StObject.set(x, "repository_ids", js.Array(value :_*))
+    inline def setRepository_idsVarargs(value: Double*): Self = StObject.set(x, "repository_ids", js.Array(value :_*))
   }
 }

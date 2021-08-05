@@ -6,7 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* static member */
-@scala.inline
-def Config(): typings.svgo.mod.Options = typings.svgo.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Config")().asInstanceOf[typings.svgo.mod.Options]
-@scala.inline
-def Config(config: typings.svgo.mod.Options): typings.svgo.mod.Options = typings.svgo.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Config")(config.asInstanceOf[js.Any]).asInstanceOf[typings.svgo.mod.Options]
+inline def Config(): typings.svgo.mod.Options = typings.svgo.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Config")().asInstanceOf[typings.svgo.mod.Options]
+inline def Config(config: typings.svgo.mod.Options): typings.svgo.mod.Options = typings.svgo.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Config")(config.asInstanceOf[js.Any]).asInstanceOf[typings.svgo.mod.Options]

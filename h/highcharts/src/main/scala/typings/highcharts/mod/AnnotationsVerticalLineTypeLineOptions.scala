@@ -10,19 +10,15 @@ trait AnnotationsVerticalLineTypeLineOptions extends StObject {
 }
 object AnnotationsVerticalLineTypeLineOptions {
   
-  @scala.inline
-  def apply(): AnnotationsVerticalLineTypeLineOptions = {
+  inline def apply(): AnnotationsVerticalLineTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsVerticalLineTypeLineOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsVerticalLineTypeLineOptionsMutableBuilder[Self <: AnnotationsVerticalLineTypeLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsVerticalLineTypeLineOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

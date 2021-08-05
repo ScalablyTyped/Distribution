@@ -11,19 +11,15 @@ trait CheckboxRadioEvents extends StObject {
 }
 object CheckboxRadioEvents {
   
-  @scala.inline
-  def apply(): CheckboxRadioEvents = {
+  inline def apply(): CheckboxRadioEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckboxRadioEvents]
   }
   
-  @scala.inline
-  implicit class CheckboxRadioEventsMutableBuilder[Self <: CheckboxRadioEvents] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxRadioEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

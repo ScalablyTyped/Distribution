@@ -10,16 +10,13 @@ trait Find extends StObject {
 }
 object Find {
   
-  @scala.inline
-  def apply(find: Boolean): Find = {
+  inline def apply(find: Boolean): Find = {
     val __obj = js.Dynamic.literal(find = find.asInstanceOf[js.Any])
     __obj.asInstanceOf[Find]
   }
   
-  @scala.inline
-  implicit class FindMutableBuilder[Self <: Find] (val x: Self) extends AnyVal {
+  extension [Self <: Find](x: Self) {
     
-    @scala.inline
-    def setFind(value: Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+    inline def setFind(value: Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
   }
 }

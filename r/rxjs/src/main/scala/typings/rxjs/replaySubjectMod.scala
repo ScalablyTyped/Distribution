@@ -19,22 +19,22 @@ object replaySubjectMod {
     def this(bufferSize: Unit, windowTime: Double, scheduler: SchedulerLike) = this()
     def this(bufferSize: Unit, windowTime: Unit, scheduler: SchedulerLike) = this()
     
-    var _bufferSize: js.Any = js.native
+    /* private */ var _bufferSize: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     def _getNow(): Double = js.native
     
-    var _infiniteTimeWindow: js.Any = js.native
+    /* private */ var _infiniteTimeWindow: js.Any = js.native
     
-    var _trimBufferThenGetEvents: js.Any = js.native
+    /* private */ var _trimBufferThenGetEvents: js.Any = js.native
     
-    var _windowTime: js.Any = js.native
+    /* private */ var _windowTime: js.Any = js.native
     
-    var nextInfiniteTimeWindow: js.Any = js.native
+    /* private */ var nextInfiniteTimeWindow: js.Any = js.native
     
-    var nextTimeWindow: js.Any = js.native
+    /* private */ var nextTimeWindow: js.Any = js.native
     
-    var scheduler: js.Any = js.native
+    /* private */ var scheduler: js.Any = js.native
   }
 }

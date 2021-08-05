@@ -22,25 +22,19 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageImage extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageImage {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageImage = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2IntentMessageImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageImage]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentMessageImageMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentMessageImage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2IntentMessageImage](x: Self) {
     
-    @scala.inline
-    def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
+    inline def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityTextUndefined: Self = StObject.set(x, "accessibilityText", js.undefined)
+    inline def setAccessibilityTextUndefined: Self = StObject.set(x, "accessibilityText", js.undefined)
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

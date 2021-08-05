@@ -11,19 +11,15 @@ trait Telemetry extends StObject {
 }
 object Telemetry {
   
-  @scala.inline
-  def apply(): Telemetry = {
+  inline def apply(): Telemetry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Telemetry]
   }
   
-  @scala.inline
-  implicit class TelemetryMutableBuilder[Self <: Telemetry] (val x: Self) extends AnyVal {
+  extension [Self <: Telemetry](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

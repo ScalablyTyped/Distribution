@@ -18,19 +18,15 @@ trait HostEntry extends StObject {
 }
 object HostEntry {
   
-  @scala.inline
-  def apply(hostname: String, ipAddress: String): HostEntry = {
+  inline def apply(hostname: String, ipAddress: String): HostEntry = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostEntry]
   }
   
-  @scala.inline
-  implicit class HostEntryMutableBuilder[Self <: HostEntry] (val x: Self) extends AnyVal {
+  extension [Self <: HostEntry](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait ScriptingParamDetails extends StObject {
 }
 object ScriptingParamDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filePath: String,
     scriptCompatibilityOption: String,
     targetDatabaseEngineEdition: String,
@@ -27,19 +26,14 @@ object ScriptingParamDetails {
     __obj.asInstanceOf[ScriptingParamDetails]
   }
   
-  @scala.inline
-  implicit class ScriptingParamDetailsMutableBuilder[Self <: ScriptingParamDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptingParamDetails](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptCompatibilityOption(value: String): Self = StObject.set(x, "scriptCompatibilityOption", value.asInstanceOf[js.Any])
+    inline def setScriptCompatibilityOption(value: String): Self = StObject.set(x, "scriptCompatibilityOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDatabaseEngineEdition(value: String): Self = StObject.set(x, "targetDatabaseEngineEdition", value.asInstanceOf[js.Any])
+    inline def setTargetDatabaseEngineEdition(value: String): Self = StObject.set(x, "targetDatabaseEngineEdition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDatabaseEngineType(value: String): Self = StObject.set(x, "targetDatabaseEngineType", value.asInstanceOf[js.Any])
+    inline def setTargetDatabaseEngineType(value: String): Self = StObject.set(x, "targetDatabaseEngineType", value.asInstanceOf[js.Any])
   }
 }

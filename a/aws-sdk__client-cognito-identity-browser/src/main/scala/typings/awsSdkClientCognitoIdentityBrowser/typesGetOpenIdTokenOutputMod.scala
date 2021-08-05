@@ -30,29 +30,22 @@ object typesGetOpenIdTokenOutputMod {
   }
   object GetOpenIdTokenOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetOpenIdTokenOutput = {
+    inline def apply($metadata: ResponseMetadata): GetOpenIdTokenOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOpenIdTokenOutput]
     }
     
-    @scala.inline
-    implicit class GetOpenIdTokenOutputMutableBuilder[Self <: GetOpenIdTokenOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetOpenIdTokenOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+      inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+      inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
     }
   }
 }

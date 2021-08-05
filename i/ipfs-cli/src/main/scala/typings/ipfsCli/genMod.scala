@@ -69,6 +69,5 @@ object genMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintNameTypeSizeTimeout: Size): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNameTypeSizeTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintNameTypeSizeTimeout: Size): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNameTypeSizeTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

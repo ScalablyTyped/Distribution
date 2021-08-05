@@ -21,37 +21,27 @@ trait MessageInputOptions extends StObject {
 }
 object MessageInputOptions {
   
-  @scala.inline
-  def apply(): MessageInputOptions = {
+  inline def apply(): MessageInputOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageInputOptions]
   }
   
-  @scala.inline
-  implicit class MessageInputOptionsMutableBuilder[Self <: MessageInputOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageInputOptions](x: Self) {
     
-    @scala.inline
-    def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
+    inline def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternate_intentsUndefined: Self = StObject.set(x, "alternate_intents", js.undefined)
+    inline def setAlternate_intentsUndefined: Self = StObject.set(x, "alternate_intents", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setRestart(value: Boolean): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
+    inline def setRestart(value: Boolean): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartUndefined: Self = StObject.set(x, "restart", js.undefined)
+    inline def setRestartUndefined: Self = StObject.set(x, "restart", js.undefined)
     
-    @scala.inline
-    def setReturn_context(value: Boolean): Self = StObject.set(x, "return_context", value.asInstanceOf[js.Any])
+    inline def setReturn_context(value: Boolean): Self = StObject.set(x, "return_context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_contextUndefined: Self = StObject.set(x, "return_context", js.undefined)
+    inline def setReturn_contextUndefined: Self = StObject.set(x, "return_context", js.undefined)
   }
 }

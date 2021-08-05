@@ -22,25 +22,19 @@ trait SchemaInvideoPosition extends StObject {
 }
 object SchemaInvideoPosition {
   
-  @scala.inline
-  def apply(): SchemaInvideoPosition = {
+  inline def apply(): SchemaInvideoPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInvideoPosition]
   }
   
-  @scala.inline
-  implicit class SchemaInvideoPositionMutableBuilder[Self <: SchemaInvideoPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInvideoPosition](x: Self) {
     
-    @scala.inline
-    def setCornerPosition(value: String): Self = StObject.set(x, "cornerPosition", value.asInstanceOf[js.Any])
+    inline def setCornerPosition(value: String): Self = StObject.set(x, "cornerPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerPositionUndefined: Self = StObject.set(x, "cornerPosition", js.undefined)
+    inline def setCornerPositionUndefined: Self = StObject.set(x, "cornerPosition", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

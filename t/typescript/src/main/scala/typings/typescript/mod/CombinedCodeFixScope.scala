@@ -13,20 +13,16 @@ trait CombinedCodeFixScope extends StObject {
 }
 object CombinedCodeFixScope {
   
-  @scala.inline
-  def apply(fileName: java.lang.String): CombinedCodeFixScope = {
+  inline def apply(fileName: java.lang.String): CombinedCodeFixScope = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("file")
     __obj.asInstanceOf[CombinedCodeFixScope]
   }
   
-  @scala.inline
-  implicit class CombinedCodeFixScopeMutableBuilder[Self <: CombinedCodeFixScope] (val x: Self) extends AnyVal {
+  extension [Self <: CombinedCodeFixScope](x: Self) {
     
-    @scala.inline
-    def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

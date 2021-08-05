@@ -33,43 +33,31 @@ trait ListSigningPlatformsRequest extends StObject {
 }
 object ListSigningPlatformsRequest {
   
-  @scala.inline
-  def apply(): ListSigningPlatformsRequest = {
+  inline def apply(): ListSigningPlatformsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSigningPlatformsRequest]
   }
   
-  @scala.inline
-  implicit class ListSigningPlatformsRequestMutableBuilder[Self <: ListSigningPlatformsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSigningPlatformsRequest](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
+    inline def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
+    inline def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

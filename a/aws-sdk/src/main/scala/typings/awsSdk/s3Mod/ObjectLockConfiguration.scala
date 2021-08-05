@@ -18,25 +18,19 @@ trait ObjectLockConfiguration extends StObject {
 }
 object ObjectLockConfiguration {
   
-  @scala.inline
-  def apply(): ObjectLockConfiguration = {
+  inline def apply(): ObjectLockConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectLockConfiguration]
   }
   
-  @scala.inline
-  implicit class ObjectLockConfigurationMutableBuilder[Self <: ObjectLockConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectLockConfiguration](x: Self) {
     
-    @scala.inline
-    def setObjectLockEnabled(value: ObjectLockEnabled): Self = StObject.set(x, "ObjectLockEnabled", value.asInstanceOf[js.Any])
+    inline def setObjectLockEnabled(value: ObjectLockEnabled): Self = StObject.set(x, "ObjectLockEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectLockEnabledUndefined: Self = StObject.set(x, "ObjectLockEnabled", js.undefined)
+    inline def setObjectLockEnabledUndefined: Self = StObject.set(x, "ObjectLockEnabled", js.undefined)
     
-    @scala.inline
-    def setRule(value: ObjectLockRule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ObjectLockRule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "Rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "Rule", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ trait Set[T]
 }
 object Set {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     add: T => Set[T],
     clear: () => Unit,
     delete: T => Boolean,
@@ -30,10 +29,8 @@ object Set {
     __obj.asInstanceOf[Set[T]]
   }
   
-  @scala.inline
-  implicit class SetMutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
+  extension [Self <: Set[?], T](x: Self & Set[T]) {
     
-    @scala.inline
-    def setAdd(value: T => Set[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: T => Set[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
   }
 }

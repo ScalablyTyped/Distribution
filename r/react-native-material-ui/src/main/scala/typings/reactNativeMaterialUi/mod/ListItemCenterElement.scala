@@ -15,28 +15,21 @@ trait ListItemCenterElement extends StObject {
 }
 object ListItemCenterElement {
   
-  @scala.inline
-  def apply(primaryText: String | Element): ListItemCenterElement = {
+  inline def apply(primaryText: String | Element): ListItemCenterElement = {
     val __obj = js.Dynamic.literal(primaryText = primaryText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemCenterElement]
   }
   
-  @scala.inline
-  implicit class ListItemCenterElementMutableBuilder[Self <: ListItemCenterElement] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemCenterElement](x: Self) {
     
-    @scala.inline
-    def setPrimaryText(value: String | Element): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
+    inline def setPrimaryText(value: String | Element): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryText(value: String): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
+    inline def setSecondaryText(value: String): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
+    inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
     
-    @scala.inline
-    def setTertiaryText(value: String): Self = StObject.set(x, "tertiaryText", value.asInstanceOf[js.Any])
+    inline def setTertiaryText(value: String): Self = StObject.set(x, "tertiaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTertiaryTextUndefined: Self = StObject.set(x, "tertiaryText", js.undefined)
+    inline def setTertiaryTextUndefined: Self = StObject.set(x, "tertiaryText", js.undefined)
   }
 }

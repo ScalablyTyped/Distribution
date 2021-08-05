@@ -40,8 +40,7 @@ trait MusicTrackMediaMetadata extends StObject {
 }
 object MusicTrackMediaMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     albumArtist: String,
     albumName: String,
     artist: String,
@@ -62,52 +61,36 @@ object MusicTrackMediaMetadata {
     __obj.asInstanceOf[MusicTrackMediaMetadata]
   }
   
-  @scala.inline
-  implicit class MusicTrackMediaMetadataMutableBuilder[Self <: MusicTrackMediaMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MusicTrackMediaMetadata](x: Self) {
     
-    @scala.inline
-    def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
+    inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumName(value: String): Self = StObject.set(x, "albumName", value.asInstanceOf[js.Any])
+    inline def setAlbumName(value: String): Self = StObject.set(x, "albumName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtistName(value: String): Self = StObject.set(x, "artistName", value.asInstanceOf[js.Any])
+    inline def setArtistName(value: String): Self = StObject.set(x, "artistName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComposer(value: String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
+    inline def setComposer(value: String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscNumber(value: Double): Self = StObject.set(x, "discNumber", value.asInstanceOf[js.Any])
+    inline def setDiscNumber(value: Double): Self = StObject.set(x, "discNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
+    inline def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
+    inline def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSongName(value: String): Self = StObject.set(x, "songName", value.asInstanceOf[js.Any])
+    inline def setSongName(value: String): Self = StObject.set(x, "songName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
+    inline def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

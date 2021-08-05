@@ -14,16 +14,13 @@ trait GetExtConfigOptions
 }
 object GetExtConfigOptions {
   
-  @scala.inline
-  def apply(success: errMsgstringExtConfig => Unit): GetExtConfigOptions = {
+  inline def apply(success: errMsgstringExtConfig => Unit): GetExtConfigOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetExtConfigOptions]
   }
   
-  @scala.inline
-  implicit class GetExtConfigOptionsMutableBuilder[Self <: GetExtConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetExtConfigOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: errMsgstringExtConfig => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: errMsgstringExtConfig => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

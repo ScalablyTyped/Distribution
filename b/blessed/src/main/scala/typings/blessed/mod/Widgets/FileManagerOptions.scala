@@ -15,19 +15,15 @@ trait FileManagerOptions
 }
 object FileManagerOptions {
   
-  @scala.inline
-  def apply(): FileManagerOptions = {
+  inline def apply(): FileManagerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerOptions]
   }
   
-  @scala.inline
-  implicit class FileManagerOptionsMutableBuilder[Self <: FileManagerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerOptions](x: Self) {
     
-    @scala.inline
-    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
   }
 }

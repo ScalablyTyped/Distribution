@@ -13,16 +13,13 @@ trait DeleteServiceLinkedRoleResponse extends StObject {
 }
 object DeleteServiceLinkedRoleResponse {
   
-  @scala.inline
-  def apply(DeletionTaskId: DeletionTaskIdType): DeleteServiceLinkedRoleResponse = {
+  inline def apply(DeletionTaskId: DeletionTaskIdType): DeleteServiceLinkedRoleResponse = {
     val __obj = js.Dynamic.literal(DeletionTaskId = DeletionTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteServiceLinkedRoleResponse]
   }
   
-  @scala.inline
-  implicit class DeleteServiceLinkedRoleResponseMutableBuilder[Self <: DeleteServiceLinkedRoleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteServiceLinkedRoleResponse](x: Self) {
     
-    @scala.inline
-    def setDeletionTaskId(value: DeletionTaskIdType): Self = StObject.set(x, "DeletionTaskId", value.asInstanceOf[js.Any])
+    inline def setDeletionTaskId(value: DeletionTaskIdType): Self = StObject.set(x, "DeletionTaskId", value.asInstanceOf[js.Any])
   }
 }

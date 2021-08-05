@@ -23,6 +23,5 @@ object WorkflowConfiguration {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromJSON(json: String): WorkflowConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WorkflowConfiguration]
+  inline def fromJSON(json: String): WorkflowConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[WorkflowConfiguration]
 }

@@ -17,28 +17,21 @@ trait JobEvent extends StObject {
 }
 object JobEvent {
   
-  @scala.inline
-  def apply(): JobEvent = {
+  inline def apply(): JobEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobEvent]
   }
   
-  @scala.inline
-  implicit class JobEventMutableBuilder[Self <: JobEvent] (val x: Self) extends AnyVal {
+  extension [Self <: JobEvent](x: Self) {
     
-    @scala.inline
-    def setJobs(value: js.Array[String]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: js.Array[String]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
+    inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    @scala.inline
-    def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

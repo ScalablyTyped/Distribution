@@ -14,25 +14,19 @@ trait CloudAuditOptions extends StObject {
 }
 object CloudAuditOptions {
   
-  @scala.inline
-  def apply(): CloudAuditOptions = {
+  inline def apply(): CloudAuditOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudAuditOptions]
   }
   
-  @scala.inline
-  implicit class CloudAuditOptionsMutableBuilder[Self <: CloudAuditOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CloudAuditOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorizationLoggingOptions(value: AuthorizationLoggingOptions): Self = StObject.set(x, "authorizationLoggingOptions", value.asInstanceOf[js.Any])
+    inline def setAuthorizationLoggingOptions(value: AuthorizationLoggingOptions): Self = StObject.set(x, "authorizationLoggingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationLoggingOptionsUndefined: Self = StObject.set(x, "authorizationLoggingOptions", js.undefined)
+    inline def setAuthorizationLoggingOptionsUndefined: Self = StObject.set(x, "authorizationLoggingOptions", js.undefined)
     
-    @scala.inline
-    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
+    inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
+    inline def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
   }
 }

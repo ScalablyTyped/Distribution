@@ -18,22 +18,17 @@ trait CreateParameterGroupRequest extends StObject {
 }
 object CreateParameterGroupRequest {
   
-  @scala.inline
-  def apply(ParameterGroupName: String): CreateParameterGroupRequest = {
+  inline def apply(ParameterGroupName: String): CreateParameterGroupRequest = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateParameterGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateParameterGroupRequestMutableBuilder[Self <: CreateParameterGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateParameterGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
   }
 }

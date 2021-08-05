@@ -207,14 +207,12 @@ object mod {
   @JSImport("prosemirror-markdown", "defaultMarkdownParser")
   @js.native
   def defaultMarkdownParser: MarkdownParser[js.Any] = js.native
-  @scala.inline
-  def defaultMarkdownParser_=(x: MarkdownParser[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownParser")(x.asInstanceOf[js.Any])
+  inline def defaultMarkdownParser_=(x: MarkdownParser[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownParser")(x.asInstanceOf[js.Any])
   
   @JSImport("prosemirror-markdown", "defaultMarkdownSerializer")
   @js.native
   def defaultMarkdownSerializer: MarkdownSerializer[js.Any] = js.native
-  @scala.inline
-  def defaultMarkdownSerializer_=(x: MarkdownSerializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownSerializer")(x.asInstanceOf[js.Any])
+  inline def defaultMarkdownSerializer_=(x: MarkdownSerializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownSerializer")(x.asInstanceOf[js.Any])
   
   trait MarkSerializerConfig[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
@@ -230,46 +228,34 @@ object mod {
   }
   object MarkSerializerConfig {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](close: String | MarkSerializerMethod[S], open: String | MarkSerializerMethod[S]): MarkSerializerConfig[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](close: String | MarkSerializerMethod[S], open: String | MarkSerializerMethod[S]): MarkSerializerConfig[S] = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[MarkSerializerConfig[S]]
     }
     
-    @scala.inline
-    implicit class MarkSerializerConfigMutableBuilder[Self <: MarkSerializerConfig[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & MarkSerializerConfig[S]) extends AnyVal {
+    extension [Self <: MarkSerializerConfig[?], S /* <: Schema[js.Any, js.Any] */](x: Self & MarkSerializerConfig[S]) {
       
-      @scala.inline
-      def setClose(value: String | MarkSerializerMethod[S]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String | MarkSerializerMethod[S]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseFunction4(
+      inline def setCloseFunction4(
         value: (/* state */ MarkdownSerializerState[S], /* mark */ Mark[S], /* parent */ Fragment[S], /* index */ Double) => Unit
       ): Self = StObject.set(x, "close", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setExpelEnclosingWhitespace(value: Boolean): Self = StObject.set(x, "expelEnclosingWhitespace", value.asInstanceOf[js.Any])
+      inline def setExpelEnclosingWhitespace(value: Boolean): Self = StObject.set(x, "expelEnclosingWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpelEnclosingWhitespaceUndefined: Self = StObject.set(x, "expelEnclosingWhitespace", js.undefined)
+      inline def setExpelEnclosingWhitespaceUndefined: Self = StObject.set(x, "expelEnclosingWhitespace", js.undefined)
       
-      @scala.inline
-      def setMixable(value: Boolean): Self = StObject.set(x, "mixable", value.asInstanceOf[js.Any])
+      inline def setMixable(value: Boolean): Self = StObject.set(x, "mixable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixableUndefined: Self = StObject.set(x, "mixable", js.undefined)
+      inline def setMixableUndefined: Self = StObject.set(x, "mixable", js.undefined)
       
-      @scala.inline
-      def setOpen(value: String | MarkSerializerMethod[S]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: String | MarkSerializerMethod[S]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenFunction4(
+      inline def setOpenFunction4(
         value: (/* state */ MarkdownSerializerState[S], /* mark */ Mark[S], /* parent */ Fragment[S], /* index */ Double) => Unit
       ): Self = StObject.set(x, "open", js.Any.fromFunction4(value))
     }
@@ -329,50 +315,36 @@ object mod {
   }
   object TokenConfig {
     
-    @scala.inline
-    def apply(): TokenConfig = {
+    inline def apply(): TokenConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenConfig]
     }
     
-    @scala.inline
-    implicit class TokenConfigMutableBuilder[Self <: TokenConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TokenConfig](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setGetAttrs(value: /* token */ typings.markdownIt.tokenMod.^ => Record[String, js.Any]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
+      inline def setGetAttrs(value: /* token */ typings.markdownIt.tokenMod.^ => Record[String, js.Any]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
+      inline def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     }
   }
 }

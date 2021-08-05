@@ -16,17 +16,14 @@ object typesEc2unexpectedexceptionMod {
   }
   object EC2UnexpectedException {
     
-    @scala.inline
-    def apply(): EC2UnexpectedException = {
+    inline def apply(): EC2UnexpectedException = {
       val __obj = js.Dynamic.literal(name = "EC2UnexpectedException")
       __obj.asInstanceOf[EC2UnexpectedException]
     }
     
-    @scala.inline
-    implicit class EC2UnexpectedExceptionMutableBuilder[Self <: EC2UnexpectedException] (val x: Self) extends AnyVal {
+    extension [Self <: EC2UnexpectedException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2UnexpectedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2UnexpectedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,32 +46,24 @@ object typesEc2unexpectedexceptionMod {
   }
   object EC2UnexpectedExceptionDetails {
     
-    @scala.inline
-    def apply(): EC2UnexpectedExceptionDetails = {
+    inline def apply(): EC2UnexpectedExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EC2UnexpectedExceptionDetails]
     }
     
-    @scala.inline
-    implicit class EC2UnexpectedExceptionDetailsMutableBuilder[Self <: EC2UnexpectedExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: EC2UnexpectedExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setEC2ErrorCode(value: String): Self = StObject.set(x, "EC2ErrorCode", value.asInstanceOf[js.Any])
+      inline def setEC2ErrorCode(value: String): Self = StObject.set(x, "EC2ErrorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEC2ErrorCodeUndefined: Self = StObject.set(x, "EC2ErrorCode", js.undefined)
+      inline def setEC2ErrorCodeUndefined: Self = StObject.set(x, "EC2ErrorCode", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

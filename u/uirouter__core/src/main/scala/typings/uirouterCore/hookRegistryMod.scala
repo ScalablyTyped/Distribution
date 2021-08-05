@@ -56,7 +56,7 @@ object hookRegistryMod {
       *   retained: true,
       * }
       */
-    var _getDefaultMatchCriteria: js.Any = js.native
+    /* private */ var _getDefaultMatchCriteria: js.Any = js.native
     
     /**
       * Gets matching nodes as [[IMatchingNodes]]
@@ -73,7 +73,7 @@ object hookRegistryMod {
       * };
       * ```
       */
-    var _getMatchingNodes: js.Any = js.native
+    /* private */ var _getMatchingNodes: js.Any = js.native
     
     /**
       * Gets the matching [[PathNode]]s
@@ -90,7 +90,7 @@ object hookRegistryMod {
       * with `entering: (state) => true` which only matches when a state is actually
       * being entered.
       */
-    var _matchingNodes: js.Any = js.native
+    /* private */ var _matchingNodes: js.Any = js.native
     
     var bind: js.Any = js.native
     
@@ -121,8 +121,7 @@ object hookRegistryMod {
     var tranSvc: TransitionService = js.native
   }
   
-  @scala.inline
-  def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
+  inline def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
     /* matchObject */ js.Any, 
     /* callback */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
@@ -134,6 +133,5 @@ object hookRegistryMod {
     js.Any
   ]]
   
-  @scala.inline
-  def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchState")(state.asInstanceOf[js.Any], criterion.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchState")(state.asInstanceOf[js.Any], criterion.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

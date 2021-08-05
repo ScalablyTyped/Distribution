@@ -33,8 +33,7 @@ object mod {
       * @param dialogTitle The title of the permissions dialog
       * @param dialogBody The body text of the permissions dialog
       */
-    @scala.inline
-    def requestCameraPermission(dialogTitle: String, dialogBody: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestCameraPermission")(dialogTitle.asInstanceOf[js.Any], dialogBody.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def requestCameraPermission(dialogTitle: String, dialogBody: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestCameraPermission")(dialogTitle.asInstanceOf[js.Any], dialogBody.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Used to turn on or off the torch. Pass `true` to turn on and `false` to
@@ -46,7 +45,6 @@ object mod {
       *
       * @param newState `true` for on or `false` for off
       */
-    @scala.inline
-    def switchState(newState: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchState")(newState.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def switchState(newState: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchState")(newState.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

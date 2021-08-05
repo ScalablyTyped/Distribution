@@ -11,8 +11,6 @@ object borderRadiusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(side: String, radius: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  @scala.inline
-  def default(side: String, radius: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(side: String, radius: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(side: String, radius: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
 }

@@ -11,19 +11,15 @@ trait PartialClassesMaterialPic extends StObject {
 }
 object PartialClassesMaterialPic {
   
-  @scala.inline
-  def apply(): PartialClassesMaterialPic = {
+  inline def apply(): PartialClassesMaterialPic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesMaterialPic]
   }
   
-  @scala.inline
-  implicit class PartialClassesMaterialPicMutableBuilder[Self <: PartialClassesMaterialPic] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesMaterialPic](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialMaterialPickerStyl): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialMaterialPickerStyl): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

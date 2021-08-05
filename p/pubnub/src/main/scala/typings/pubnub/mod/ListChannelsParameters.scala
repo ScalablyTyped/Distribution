@@ -10,16 +10,13 @@ trait ListChannelsParameters extends StObject {
 }
 object ListChannelsParameters {
   
-  @scala.inline
-  def apply(channelGroup: String): ListChannelsParameters = {
+  inline def apply(channelGroup: String): ListChannelsParameters = {
     val __obj = js.Dynamic.literal(channelGroup = channelGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListChannelsParameters]
   }
   
-  @scala.inline
-  implicit class ListChannelsParametersMutableBuilder[Self <: ListChannelsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ListChannelsParameters](x: Self) {
     
-    @scala.inline
-    def setChannelGroup(value: String): Self = StObject.set(x, "channelGroup", value.asInstanceOf[js.Any])
+    inline def setChannelGroup(value: String): Self = StObject.set(x, "channelGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -24,26 +24,20 @@ object elasticache {
   }
   object ClusterCacheNode {
     
-    @scala.inline
-    def apply(address: String, availabilityZone: String, id: String, port: Double): ClusterCacheNode = {
+    inline def apply(address: String, availabilityZone: String, id: String, port: Double): ClusterCacheNode = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterCacheNode]
     }
     
-    @scala.inline
-    implicit class ClusterCacheNodeMutableBuilder[Self <: ClusterCacheNode] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterCacheNode](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,26 +60,20 @@ object elasticache {
   }
   object GetClusterCacheNode {
     
-    @scala.inline
-    def apply(address: String, availabilityZone: String, id: String, port: Double): GetClusterCacheNode = {
+    inline def apply(address: String, availabilityZone: String, id: String, port: Double): GetClusterCacheNode = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClusterCacheNode]
     }
     
-    @scala.inline
-    implicit class GetClusterCacheNodeMutableBuilder[Self <: GetClusterCacheNode] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterCacheNode](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,20 +91,16 @@ object elasticache {
   }
   object ParameterGroupParameter {
     
-    @scala.inline
-    def apply(name: String, value: String): ParameterGroupParameter = {
+    inline def apply(name: String, value: String): ParameterGroupParameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParameterGroupParameter]
     }
     
-    @scala.inline
-    implicit class ParameterGroupParameterMutableBuilder[Self <: ParameterGroupParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ParameterGroupParameter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,20 +118,16 @@ object elasticache {
   }
   object ReplicationGroupClusterMode {
     
-    @scala.inline
-    def apply(numNodeGroups: Double, replicasPerNodeGroup: Double): ReplicationGroupClusterMode = {
+    inline def apply(numNodeGroups: Double, replicasPerNodeGroup: Double): ReplicationGroupClusterMode = {
       val __obj = js.Dynamic.literal(numNodeGroups = numNodeGroups.asInstanceOf[js.Any], replicasPerNodeGroup = replicasPerNodeGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicationGroupClusterMode]
     }
     
-    @scala.inline
-    implicit class ReplicationGroupClusterModeMutableBuilder[Self <: ReplicationGroupClusterMode] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationGroupClusterMode](x: Self) {
       
-      @scala.inline
-      def setNumNodeGroups(value: Double): Self = StObject.set(x, "numNodeGroups", value.asInstanceOf[js.Any])
+      inline def setNumNodeGroups(value: Double): Self = StObject.set(x, "numNodeGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasPerNodeGroup(value: Double): Self = StObject.set(x, "replicasPerNodeGroup", value.asInstanceOf[js.Any])
+      inline def setReplicasPerNodeGroup(value: Double): Self = StObject.set(x, "replicasPerNodeGroup", value.asInstanceOf[js.Any])
     }
   }
 }

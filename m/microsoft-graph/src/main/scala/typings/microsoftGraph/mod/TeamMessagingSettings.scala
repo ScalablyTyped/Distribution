@@ -23,58 +23,41 @@ trait TeamMessagingSettings extends StObject {
 }
 object TeamMessagingSettings {
   
-  @scala.inline
-  def apply(): TeamMessagingSettings = {
+  inline def apply(): TeamMessagingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamMessagingSettings]
   }
   
-  @scala.inline
-  implicit class TeamMessagingSettingsMutableBuilder[Self <: TeamMessagingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TeamMessagingSettings](x: Self) {
     
-    @scala.inline
-    def setAllowChannelMentions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowChannelMentions", value.asInstanceOf[js.Any])
+    inline def setAllowChannelMentions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowChannelMentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowChannelMentionsNull: Self = StObject.set(x, "allowChannelMentions", null)
+    inline def setAllowChannelMentionsNull: Self = StObject.set(x, "allowChannelMentions", null)
     
-    @scala.inline
-    def setAllowChannelMentionsUndefined: Self = StObject.set(x, "allowChannelMentions", js.undefined)
+    inline def setAllowChannelMentionsUndefined: Self = StObject.set(x, "allowChannelMentions", js.undefined)
     
-    @scala.inline
-    def setAllowOwnerDeleteMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowOwnerDeleteMessages", value.asInstanceOf[js.Any])
+    inline def setAllowOwnerDeleteMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowOwnerDeleteMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowOwnerDeleteMessagesNull: Self = StObject.set(x, "allowOwnerDeleteMessages", null)
+    inline def setAllowOwnerDeleteMessagesNull: Self = StObject.set(x, "allowOwnerDeleteMessages", null)
     
-    @scala.inline
-    def setAllowOwnerDeleteMessagesUndefined: Self = StObject.set(x, "allowOwnerDeleteMessages", js.undefined)
+    inline def setAllowOwnerDeleteMessagesUndefined: Self = StObject.set(x, "allowOwnerDeleteMessages", js.undefined)
     
-    @scala.inline
-    def setAllowTeamMentions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTeamMentions", value.asInstanceOf[js.Any])
+    inline def setAllowTeamMentions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTeamMentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTeamMentionsNull: Self = StObject.set(x, "allowTeamMentions", null)
+    inline def setAllowTeamMentionsNull: Self = StObject.set(x, "allowTeamMentions", null)
     
-    @scala.inline
-    def setAllowTeamMentionsUndefined: Self = StObject.set(x, "allowTeamMentions", js.undefined)
+    inline def setAllowTeamMentionsUndefined: Self = StObject.set(x, "allowTeamMentions", js.undefined)
     
-    @scala.inline
-    def setAllowUserDeleteMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUserDeleteMessages", value.asInstanceOf[js.Any])
+    inline def setAllowUserDeleteMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUserDeleteMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUserDeleteMessagesNull: Self = StObject.set(x, "allowUserDeleteMessages", null)
+    inline def setAllowUserDeleteMessagesNull: Self = StObject.set(x, "allowUserDeleteMessages", null)
     
-    @scala.inline
-    def setAllowUserDeleteMessagesUndefined: Self = StObject.set(x, "allowUserDeleteMessages", js.undefined)
+    inline def setAllowUserDeleteMessagesUndefined: Self = StObject.set(x, "allowUserDeleteMessages", js.undefined)
     
-    @scala.inline
-    def setAllowUserEditMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUserEditMessages", value.asInstanceOf[js.Any])
+    inline def setAllowUserEditMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUserEditMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUserEditMessagesNull: Self = StObject.set(x, "allowUserEditMessages", null)
+    inline def setAllowUserEditMessagesNull: Self = StObject.set(x, "allowUserEditMessages", null)
     
-    @scala.inline
-    def setAllowUserEditMessagesUndefined: Self = StObject.set(x, "allowUserEditMessages", js.undefined)
+    inline def setAllowUserEditMessagesUndefined: Self = StObject.set(x, "allowUserEditMessages", js.undefined)
   }
 }

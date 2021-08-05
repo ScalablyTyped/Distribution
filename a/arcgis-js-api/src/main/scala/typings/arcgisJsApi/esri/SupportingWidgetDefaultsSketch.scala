@@ -40,8 +40,7 @@ trait SupportingWidgetDefaultsSketch
 }
 object SupportingWidgetDefaultsSketch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -50,31 +49,22 @@ object SupportingWidgetDefaultsSketch {
     __obj.asInstanceOf[SupportingWidgetDefaultsSketch]
   }
   
-  @scala.inline
-  implicit class SupportingWidgetDefaultsSketchMutableBuilder[Self <: SupportingWidgetDefaultsSketch] (val x: Self) extends AnyVal {
+  extension [Self <: SupportingWidgetDefaultsSketch](x: Self) {
     
-    @scala.inline
-    def setDefaultUpdateOptions(value: js.Any): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultUpdateOptions(value: js.Any): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
+    inline def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
     
-    @scala.inline
-    def setMarkerSymbol(value: SimpleMarkerSymbol): Self = StObject.set(x, "markerSymbol", value.asInstanceOf[js.Any])
+    inline def setMarkerSymbol(value: SimpleMarkerSymbol): Self = StObject.set(x, "markerSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerSymbolUndefined: Self = StObject.set(x, "markerSymbol", js.undefined)
+    inline def setMarkerSymbolUndefined: Self = StObject.set(x, "markerSymbol", js.undefined)
     
-    @scala.inline
-    def setPolygonSymbol(value: SimpleFillSymbol): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
+    inline def setPolygonSymbol(value: SimpleFillSymbol): Self = StObject.set(x, "polygonSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
+    inline def setPolygonSymbolUndefined: Self = StObject.set(x, "polygonSymbol", js.undefined)
     
-    @scala.inline
-    def setPolylineSymbol(value: SimpleLineSymbol): Self = StObject.set(x, "polylineSymbol", value.asInstanceOf[js.Any])
+    inline def setPolylineSymbol(value: SimpleLineSymbol): Self = StObject.set(x, "polylineSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineSymbolUndefined: Self = StObject.set(x, "polylineSymbol", js.undefined)
+    inline def setPolylineSymbolUndefined: Self = StObject.set(x, "polylineSymbol", js.undefined)
   }
 }

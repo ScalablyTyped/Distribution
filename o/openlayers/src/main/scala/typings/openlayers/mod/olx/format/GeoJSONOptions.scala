@@ -15,31 +15,23 @@ trait GeoJSONOptions extends StObject {
 }
 object GeoJSONOptions {
   
-  @scala.inline
-  def apply(): GeoJSONOptions = {
+  inline def apply(): GeoJSONOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoJSONOptions]
   }
   
-  @scala.inline
-  implicit class GeoJSONOptionsMutableBuilder[Self <: GeoJSONOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
+    inline def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDataProjectionUndefined: Self = StObject.set(x, "defaultDataProjection", js.undefined)
+    inline def setDefaultDataProjectionUndefined: Self = StObject.set(x, "defaultDataProjection", js.undefined)
     
-    @scala.inline
-    def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+    inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+    inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
     
-    @scala.inline
-    def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+    inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+    inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
   }
 }

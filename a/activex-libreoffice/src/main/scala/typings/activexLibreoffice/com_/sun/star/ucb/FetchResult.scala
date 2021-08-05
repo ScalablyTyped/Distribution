@@ -43,25 +43,19 @@ trait FetchResult extends StObject {
 }
 object FetchResult {
   
-  @scala.inline
-  def apply(FetchError: Double, Orientation: Boolean, Rows: SafeArray[js.Any], StartIndex: Double): FetchResult = {
+  inline def apply(FetchError: Double, Orientation: Boolean, Rows: SafeArray[js.Any], StartIndex: Double): FetchResult = {
     val __obj = js.Dynamic.literal(FetchError = FetchError.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Rows = Rows.asInstanceOf[js.Any], StartIndex = StartIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchResult]
   }
   
-  @scala.inline
-  implicit class FetchResultMutableBuilder[Self <: FetchResult] (val x: Self) extends AnyVal {
+  extension [Self <: FetchResult](x: Self) {
     
-    @scala.inline
-    def setFetchError(value: Double): Self = StObject.set(x, "FetchError", value.asInstanceOf[js.Any])
+    inline def setFetchError(value: Double): Self = StObject.set(x, "FetchError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: Boolean): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Boolean): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: SafeArray[js.Any]): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: SafeArray[js.Any]): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "StartIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "StartIndex", value.asInstanceOf[js.Any])
   }
 }

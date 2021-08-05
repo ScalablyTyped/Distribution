@@ -153,8 +153,7 @@ trait TagManager extends StObject {
 }
 object TagManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newAccount: () => Account,
     newAccountAccess: () => AccountAccess,
     newBuiltInVariable: () => BuiltInVariable,
@@ -584,50 +583,36 @@ object TagManager {
     }
     object Account {
       
-      @scala.inline
-      def apply(): Account = {
+      inline def apply(): Account = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Account]
       }
       
-      @scala.inline
-      implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+      extension [Self <: Account](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setShareData(value: Boolean): Self = StObject.set(x, "shareData", value.asInstanceOf[js.Any])
+        inline def setShareData(value: Boolean): Self = StObject.set(x, "shareData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShareDataUndefined: Self = StObject.set(x, "shareData", js.undefined)
+        inline def setShareDataUndefined: Self = StObject.set(x, "shareData", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
       }
     }
     
@@ -637,20 +622,16 @@ object TagManager {
     }
     object AccountAccess {
       
-      @scala.inline
-      def apply(): AccountAccess = {
+      inline def apply(): AccountAccess = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AccountAccess]
       }
       
-      @scala.inline
-      implicit class AccountAccessMutableBuilder[Self <: AccountAccess] (val x: Self) extends AnyVal {
+      extension [Self <: AccountAccess](x: Self) {
         
-        @scala.inline
-        def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+        inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+        inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
       }
     }
     
@@ -670,50 +651,36 @@ object TagManager {
     }
     object BuiltInVariable {
       
-      @scala.inline
-      def apply(): BuiltInVariable = {
+      inline def apply(): BuiltInVariable = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BuiltInVariable]
       }
       
-      @scala.inline
-      implicit class BuiltInVariableMutableBuilder[Self <: BuiltInVariable] (val x: Self) extends AnyVal {
+      extension [Self <: BuiltInVariable](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -725,29 +692,22 @@ object TagManager {
     }
     object Condition {
       
-      @scala.inline
-      def apply(): Condition = {
+      inline def apply(): Condition = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Condition]
       }
       
-      @scala.inline
-      implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+      extension [Self <: Condition](x: Self) {
         
-        @scala.inline
-        def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+        inline def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+        inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        @scala.inline
-        def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -775,80 +735,56 @@ object TagManager {
     }
     object Container {
       
-      @scala.inline
-      def apply(): Container = {
+      inline def apply(): Container = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Container]
       }
       
-      @scala.inline
-      implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+      extension [Self <: Container](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setDomainName(value: js.Array[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+        inline def setDomainName(value: js.Array[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+        inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
         
-        @scala.inline
-        def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value :_*))
+        inline def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value :_*))
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+        inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
+        inline def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setUsageContext(value: js.Array[String]): Self = StObject.set(x, "usageContext", value.asInstanceOf[js.Any])
+        inline def setUsageContext(value: js.Array[String]): Self = StObject.set(x, "usageContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
+        inline def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
         
-        @scala.inline
-        def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value :_*))
+        inline def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value :_*))
       }
     }
     
@@ -860,26 +796,20 @@ object TagManager {
     }
     object ContainerAccess {
       
-      @scala.inline
-      def apply(): ContainerAccess = {
+      inline def apply(): ContainerAccess = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ContainerAccess]
       }
       
-      @scala.inline
-      implicit class ContainerAccessMutableBuilder[Self <: ContainerAccess] (val x: Self) extends AnyVal {
+      extension [Self <: ContainerAccess](x: Self) {
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+        inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+        inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
       }
     }
     
@@ -921,137 +851,94 @@ object TagManager {
     }
     object ContainerVersion {
       
-      @scala.inline
-      def apply(): ContainerVersion = {
+      inline def apply(): ContainerVersion = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ContainerVersion]
       }
       
-      @scala.inline
-      implicit class ContainerVersionMutableBuilder[Self <: ContainerVersion] (val x: Self) extends AnyVal {
+      extension [Self <: ContainerVersion](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
+        inline def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
+        inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
         
-        @scala.inline
-        def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
         
-        @scala.inline
-        def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+        inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+        inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
         
-        @scala.inline
-        def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
+        inline def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
+        inline def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
         
-        @scala.inline
-        def setCustomTemplate(value: js.Array[CustomTemplate]): Self = StObject.set(x, "customTemplate", value.asInstanceOf[js.Any])
+        inline def setCustomTemplate(value: js.Array[CustomTemplate]): Self = StObject.set(x, "customTemplate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomTemplateUndefined: Self = StObject.set(x, "customTemplate", js.undefined)
+        inline def setCustomTemplateUndefined: Self = StObject.set(x, "customTemplate", js.undefined)
         
-        @scala.inline
-        def setCustomTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "customTemplate", js.Array(value :_*))
+        inline def setCustomTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "customTemplate", js.Array(value :_*))
         
-        @scala.inline
-        def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+        inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+        inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setFolder(value: js.Array[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+        inline def setFolder(value: js.Array[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+        inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
         
-        @scala.inline
-        def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
+        inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        @scala.inline
-        def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
         
-        @scala.inline
-        def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+        inline def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+        inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
         
-        @scala.inline
-        def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
         
-        @scala.inline
-        def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+        inline def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+        inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
         
-        @scala.inline
-        def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
         
-        @scala.inline
-        def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+        inline def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+        inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
         
-        @scala.inline
-        def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+        inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
       }
     }
     
@@ -1085,92 +972,64 @@ object TagManager {
     }
     object ContainerVersionHeader {
       
-      @scala.inline
-      def apply(): ContainerVersionHeader = {
+      inline def apply(): ContainerVersionHeader = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ContainerVersionHeader]
       }
       
-      @scala.inline
-      implicit class ContainerVersionHeaderMutableBuilder[Self <: ContainerVersionHeader] (val x: Self) extends AnyVal {
+      extension [Self <: ContainerVersionHeader](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
+        inline def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
+        inline def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
         
-        @scala.inline
-        def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+        inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+        inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNumCustomTemplates(value: String): Self = StObject.set(x, "numCustomTemplates", value.asInstanceOf[js.Any])
+        inline def setNumCustomTemplates(value: String): Self = StObject.set(x, "numCustomTemplates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumCustomTemplatesUndefined: Self = StObject.set(x, "numCustomTemplates", js.undefined)
+        inline def setNumCustomTemplatesUndefined: Self = StObject.set(x, "numCustomTemplates", js.undefined)
         
-        @scala.inline
-        def setNumMacros(value: String): Self = StObject.set(x, "numMacros", value.asInstanceOf[js.Any])
+        inline def setNumMacros(value: String): Self = StObject.set(x, "numMacros", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumMacrosUndefined: Self = StObject.set(x, "numMacros", js.undefined)
+        inline def setNumMacrosUndefined: Self = StObject.set(x, "numMacros", js.undefined)
         
-        @scala.inline
-        def setNumRules(value: String): Self = StObject.set(x, "numRules", value.asInstanceOf[js.Any])
+        inline def setNumRules(value: String): Self = StObject.set(x, "numRules", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumRulesUndefined: Self = StObject.set(x, "numRules", js.undefined)
+        inline def setNumRulesUndefined: Self = StObject.set(x, "numRules", js.undefined)
         
-        @scala.inline
-        def setNumTags(value: String): Self = StObject.set(x, "numTags", value.asInstanceOf[js.Any])
+        inline def setNumTags(value: String): Self = StObject.set(x, "numTags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumTagsUndefined: Self = StObject.set(x, "numTags", js.undefined)
+        inline def setNumTagsUndefined: Self = StObject.set(x, "numTags", js.undefined)
         
-        @scala.inline
-        def setNumTriggers(value: String): Self = StObject.set(x, "numTriggers", value.asInstanceOf[js.Any])
+        inline def setNumTriggers(value: String): Self = StObject.set(x, "numTriggers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumTriggersUndefined: Self = StObject.set(x, "numTriggers", js.undefined)
+        inline def setNumTriggersUndefined: Self = StObject.set(x, "numTriggers", js.undefined)
         
-        @scala.inline
-        def setNumVariables(value: String): Self = StObject.set(x, "numVariables", value.asInstanceOf[js.Any])
+        inline def setNumVariables(value: String): Self = StObject.set(x, "numVariables", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumVariablesUndefined: Self = StObject.set(x, "numVariables", js.undefined)
+        inline def setNumVariablesUndefined: Self = StObject.set(x, "numVariables", js.undefined)
         
-        @scala.inline
-        def setNumZones(value: String): Self = StObject.set(x, "numZones", value.asInstanceOf[js.Any])
+        inline def setNumZones(value: String): Self = StObject.set(x, "numZones", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumZonesUndefined: Self = StObject.set(x, "numZones", js.undefined)
+        inline def setNumZonesUndefined: Self = StObject.set(x, "numZones", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       }
     }
     
@@ -1180,23 +1039,18 @@ object TagManager {
     }
     object CreateBuiltInVariableResponse {
       
-      @scala.inline
-      def apply(): CreateBuiltInVariableResponse = {
+      inline def apply(): CreateBuiltInVariableResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateBuiltInVariableResponse]
       }
       
-      @scala.inline
-      implicit class CreateBuiltInVariableResponseMutableBuilder[Self <: CreateBuiltInVariableResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateBuiltInVariableResponse](x: Self) {
         
-        @scala.inline
-        def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
+        inline def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
+        inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
         
-        @scala.inline
-        def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
       }
     }
     
@@ -1208,26 +1062,20 @@ object TagManager {
     }
     object CreateContainerVersionRequestVersionOptions {
       
-      @scala.inline
-      def apply(): CreateContainerVersionRequestVersionOptions = {
+      inline def apply(): CreateContainerVersionRequestVersionOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateContainerVersionRequestVersionOptions]
       }
       
-      @scala.inline
-      implicit class CreateContainerVersionRequestVersionOptionsMutableBuilder[Self <: CreateContainerVersionRequestVersionOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CreateContainerVersionRequestVersionOptions](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
       }
     }
     
@@ -1243,38 +1091,28 @@ object TagManager {
     }
     object CreateContainerVersionResponse {
       
-      @scala.inline
-      def apply(): CreateContainerVersionResponse = {
+      inline def apply(): CreateContainerVersionResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateContainerVersionResponse]
       }
       
-      @scala.inline
-      implicit class CreateContainerVersionResponseMutableBuilder[Self <: CreateContainerVersionResponse] (val x: Self) extends AnyVal {
+      extension [Self <: CreateContainerVersionResponse](x: Self) {
         
-        @scala.inline
-        def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
+        inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
+        inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
         
-        @scala.inline
-        def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
+        inline def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
+        inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
         
-        @scala.inline
-        def setNewWorkspacePath(value: String): Self = StObject.set(x, "newWorkspacePath", value.asInstanceOf[js.Any])
+        inline def setNewWorkspacePath(value: String): Self = StObject.set(x, "newWorkspacePath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewWorkspacePathUndefined: Self = StObject.set(x, "newWorkspacePath", js.undefined)
+        inline def setNewWorkspacePathUndefined: Self = StObject.set(x, "newWorkspacePath", js.undefined)
         
-        @scala.inline
-        def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
+        inline def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
+        inline def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
       }
     }
     
@@ -1300,68 +1138,48 @@ object TagManager {
     }
     object CustomTemplate {
       
-      @scala.inline
-      def apply(): CustomTemplate = {
+      inline def apply(): CustomTemplate = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CustomTemplate]
       }
       
-      @scala.inline
-      implicit class CustomTemplateMutableBuilder[Self <: CustomTemplate] (val x: Self) extends AnyVal {
+      extension [Self <: CustomTemplate](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setTemplateData(value: String): Self = StObject.set(x, "templateData", value.asInstanceOf[js.Any])
+        inline def setTemplateData(value: String): Self = StObject.set(x, "templateData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateDataUndefined: Self = StObject.set(x, "templateData", js.undefined)
+        inline def setTemplateDataUndefined: Self = StObject.set(x, "templateData", js.undefined)
         
-        @scala.inline
-        def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+        inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+        inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -1379,44 +1197,32 @@ object TagManager {
     }
     object Entity {
       
-      @scala.inline
-      def apply(): Entity = {
+      inline def apply(): Entity = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Entity]
       }
       
-      @scala.inline
-      implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+      extension [Self <: Entity](x: Self) {
         
-        @scala.inline
-        def setChangeStatus(value: String): Self = StObject.set(x, "changeStatus", value.asInstanceOf[js.Any])
+        inline def setChangeStatus(value: String): Self = StObject.set(x, "changeStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChangeStatusUndefined: Self = StObject.set(x, "changeStatus", js.undefined)
+        inline def setChangeStatusUndefined: Self = StObject.set(x, "changeStatus", js.undefined)
         
-        @scala.inline
-        def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+        inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+        inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
         
-        @scala.inline
-        def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        @scala.inline
-        def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+        inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+        inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
         
-        @scala.inline
-        def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+        inline def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+        inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
       }
     }
     
@@ -1454,104 +1260,72 @@ object TagManager {
     }
     object Environment {
       
-      @scala.inline
-      def apply(): Environment = {
+      inline def apply(): Environment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Environment]
       }
       
-      @scala.inline
-      implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+      extension [Self <: Environment](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
+        inline def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthorizationCodeUndefined: Self = StObject.set(x, "authorizationCode", js.undefined)
+        inline def setAuthorizationCodeUndefined: Self = StObject.set(x, "authorizationCode", js.undefined)
         
-        @scala.inline
-        def setAuthorizationTimestamp(value: Timestamp): Self = StObject.set(x, "authorizationTimestamp", value.asInstanceOf[js.Any])
+        inline def setAuthorizationTimestamp(value: Timestamp): Self = StObject.set(x, "authorizationTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthorizationTimestampUndefined: Self = StObject.set(x, "authorizationTimestamp", js.undefined)
+        inline def setAuthorizationTimestampUndefined: Self = StObject.set(x, "authorizationTimestamp", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
+        inline def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
+        inline def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setEnableDebug(value: Boolean): Self = StObject.set(x, "enableDebug", value.asInstanceOf[js.Any])
+        inline def setEnableDebug(value: Boolean): Self = StObject.set(x, "enableDebug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableDebugUndefined: Self = StObject.set(x, "enableDebug", js.undefined)
+        inline def setEnableDebugUndefined: Self = StObject.set(x, "enableDebug", js.undefined)
         
-        @scala.inline
-        def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+        inline def setEnvironmentId(value: String): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
+        inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -1577,68 +1351,48 @@ object TagManager {
     }
     object Folder {
       
-      @scala.inline
-      def apply(): Folder = {
+      inline def apply(): Folder = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Folder]
       }
       
-      @scala.inline
-      implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+      extension [Self <: Folder](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
+        inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
+        inline def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -1654,47 +1408,34 @@ object TagManager {
     }
     object FolderEntities {
       
-      @scala.inline
-      def apply(): FolderEntities = {
+      inline def apply(): FolderEntities = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FolderEntities]
       }
       
-      @scala.inline
-      implicit class FolderEntitiesMutableBuilder[Self <: FolderEntities] (val x: Self) extends AnyVal {
+      extension [Self <: FolderEntities](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        @scala.inline
-        def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
         
-        @scala.inline
-        def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+        inline def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+        inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
         
-        @scala.inline
-        def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
         
-        @scala.inline
-        def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+        inline def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+        inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
         
-        @scala.inline
-        def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
       }
     }
     
@@ -1706,32 +1447,24 @@ object TagManager {
     }
     object GetWorkspaceStatusResponse {
       
-      @scala.inline
-      def apply(): GetWorkspaceStatusResponse = {
+      inline def apply(): GetWorkspaceStatusResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GetWorkspaceStatusResponse]
       }
       
-      @scala.inline
-      implicit class GetWorkspaceStatusResponseMutableBuilder[Self <: GetWorkspaceStatusResponse] (val x: Self) extends AnyVal {
+      extension [Self <: GetWorkspaceStatusResponse](x: Self) {
         
-        @scala.inline
-        def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+        inline def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+        inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
         
-        @scala.inline
-        def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+        inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
         
-        @scala.inline
-        def setWorkspaceChange(value: js.Array[Entity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
+        inline def setWorkspaceChange(value: js.Array[Entity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
+        inline def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
         
-        @scala.inline
-        def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
+        inline def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
       }
     }
     
@@ -1743,29 +1476,22 @@ object TagManager {
     }
     object ListAccountsResponse {
       
-      @scala.inline
-      def apply(): ListAccountsResponse = {
+      inline def apply(): ListAccountsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListAccountsResponse]
       }
       
-      @scala.inline
-      implicit class ListAccountsResponseMutableBuilder[Self <: ListAccountsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListAccountsResponse](x: Self) {
         
-        @scala.inline
-        def setAccount(value: js.Array[Account]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+        inline def setAccount(value: js.Array[Account]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+        inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
         
-        @scala.inline
-        def setAccountVarargs(value: Account*): Self = StObject.set(x, "account", js.Array(value :_*))
+        inline def setAccountVarargs(value: Account*): Self = StObject.set(x, "account", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1777,29 +1503,22 @@ object TagManager {
     }
     object ListContainerVersionsResponse {
       
-      @scala.inline
-      def apply(): ListContainerVersionsResponse = {
+      inline def apply(): ListContainerVersionsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListContainerVersionsResponse]
       }
       
-      @scala.inline
-      implicit class ListContainerVersionsResponseMutableBuilder[Self <: ListContainerVersionsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListContainerVersionsResponse](x: Self) {
         
-        @scala.inline
-        def setContainerVersionHeader(value: js.Array[ContainerVersionHeader]): Self = StObject.set(x, "containerVersionHeader", value.asInstanceOf[js.Any])
+        inline def setContainerVersionHeader(value: js.Array[ContainerVersionHeader]): Self = StObject.set(x, "containerVersionHeader", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerVersionHeaderUndefined: Self = StObject.set(x, "containerVersionHeader", js.undefined)
+        inline def setContainerVersionHeaderUndefined: Self = StObject.set(x, "containerVersionHeader", js.undefined)
         
-        @scala.inline
-        def setContainerVersionHeaderVarargs(value: ContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value :_*))
+        inline def setContainerVersionHeaderVarargs(value: ContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1811,29 +1530,22 @@ object TagManager {
     }
     object ListContainersResponse {
       
-      @scala.inline
-      def apply(): ListContainersResponse = {
+      inline def apply(): ListContainersResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListContainersResponse]
       }
       
-      @scala.inline
-      implicit class ListContainersResponseMutableBuilder[Self <: ListContainersResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListContainersResponse](x: Self) {
         
-        @scala.inline
-        def setContainer(value: js.Array[Container]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+        inline def setContainer(value: js.Array[Container]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+        inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
         
-        @scala.inline
-        def setContainerVarargs(value: Container*): Self = StObject.set(x, "container", js.Array(value :_*))
+        inline def setContainerVarargs(value: Container*): Self = StObject.set(x, "container", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1845,29 +1557,22 @@ object TagManager {
     }
     object ListEnabledBuiltInVariablesResponse {
       
-      @scala.inline
-      def apply(): ListEnabledBuiltInVariablesResponse = {
+      inline def apply(): ListEnabledBuiltInVariablesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListEnabledBuiltInVariablesResponse]
       }
       
-      @scala.inline
-      implicit class ListEnabledBuiltInVariablesResponseMutableBuilder[Self <: ListEnabledBuiltInVariablesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListEnabledBuiltInVariablesResponse](x: Self) {
         
-        @scala.inline
-        def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
+        inline def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
+        inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
         
-        @scala.inline
-        def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+        inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1879,29 +1584,22 @@ object TagManager {
     }
     object ListEnvironmentsResponse {
       
-      @scala.inline
-      def apply(): ListEnvironmentsResponse = {
+      inline def apply(): ListEnvironmentsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListEnvironmentsResponse]
       }
       
-      @scala.inline
-      implicit class ListEnvironmentsResponseMutableBuilder[Self <: ListEnvironmentsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListEnvironmentsResponse](x: Self) {
         
-        @scala.inline
-        def setEnvironment(value: js.Array[Environment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+        inline def setEnvironment(value: js.Array[Environment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+        inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
         
-        @scala.inline
-        def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value :_*))
+        inline def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1913,29 +1611,22 @@ object TagManager {
     }
     object ListFoldersResponse {
       
-      @scala.inline
-      def apply(): ListFoldersResponse = {
+      inline def apply(): ListFoldersResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListFoldersResponse]
       }
       
-      @scala.inline
-      implicit class ListFoldersResponseMutableBuilder[Self <: ListFoldersResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListFoldersResponse](x: Self) {
         
-        @scala.inline
-        def setFolder(value: js.Array[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+        inline def setFolder(value: js.Array[Folder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+        inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
         
-        @scala.inline
-        def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
+        inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1947,29 +1638,22 @@ object TagManager {
     }
     object ListTagsResponse {
       
-      @scala.inline
-      def apply(): ListTagsResponse = {
+      inline def apply(): ListTagsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListTagsResponse]
       }
       
-      @scala.inline
-      implicit class ListTagsResponseMutableBuilder[Self <: ListTagsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListTagsResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
         
-        @scala.inline
-        def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+        inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
       }
     }
     
@@ -1981,29 +1665,22 @@ object TagManager {
     }
     object ListTriggersResponse {
       
-      @scala.inline
-      def apply(): ListTriggersResponse = {
+      inline def apply(): ListTriggersResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListTriggersResponse]
       }
       
-      @scala.inline
-      implicit class ListTriggersResponseMutableBuilder[Self <: ListTriggersResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListTriggersResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+        inline def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+        inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
         
-        @scala.inline
-        def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+        inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
       }
     }
     
@@ -2015,29 +1692,22 @@ object TagManager {
     }
     object ListUserPermissionsResponse {
       
-      @scala.inline
-      def apply(): ListUserPermissionsResponse = {
+      inline def apply(): ListUserPermissionsResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListUserPermissionsResponse]
       }
       
-      @scala.inline
-      implicit class ListUserPermissionsResponseMutableBuilder[Self <: ListUserPermissionsResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListUserPermissionsResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setUserPermission(value: js.Array[UserPermission]): Self = StObject.set(x, "userPermission", value.asInstanceOf[js.Any])
+        inline def setUserPermission(value: js.Array[UserPermission]): Self = StObject.set(x, "userPermission", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserPermissionUndefined: Self = StObject.set(x, "userPermission", js.undefined)
+        inline def setUserPermissionUndefined: Self = StObject.set(x, "userPermission", js.undefined)
         
-        @scala.inline
-        def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value :_*))
+        inline def setUserPermissionVarargs(value: UserPermission*): Self = StObject.set(x, "userPermission", js.Array(value :_*))
       }
     }
     
@@ -2049,29 +1719,22 @@ object TagManager {
     }
     object ListVariablesResponse {
       
-      @scala.inline
-      def apply(): ListVariablesResponse = {
+      inline def apply(): ListVariablesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListVariablesResponse]
       }
       
-      @scala.inline
-      implicit class ListVariablesResponseMutableBuilder[Self <: ListVariablesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListVariablesResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+        inline def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+        inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
         
-        @scala.inline
-        def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+        inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
       }
     }
     
@@ -2083,29 +1746,22 @@ object TagManager {
     }
     object ListWorkspacesResponse {
       
-      @scala.inline
-      def apply(): ListWorkspacesResponse = {
+      inline def apply(): ListWorkspacesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListWorkspacesResponse]
       }
       
-      @scala.inline
-      implicit class ListWorkspacesResponseMutableBuilder[Self <: ListWorkspacesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListWorkspacesResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setWorkspace(value: js.Array[Workspace]): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+        inline def setWorkspace(value: js.Array[Workspace]): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+        inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
         
-        @scala.inline
-        def setWorkspaceVarargs(value: Workspace*): Self = StObject.set(x, "workspace", js.Array(value :_*))
+        inline def setWorkspaceVarargs(value: Workspace*): Self = StObject.set(x, "workspace", js.Array(value :_*))
       }
     }
     
@@ -2117,29 +1773,22 @@ object TagManager {
     }
     object ListZonesResponse {
       
-      @scala.inline
-      def apply(): ListZonesResponse = {
+      inline def apply(): ListZonesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListZonesResponse]
       }
       
-      @scala.inline
-      implicit class ListZonesResponseMutableBuilder[Self <: ListZonesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: ListZonesResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+        inline def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+        inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
         
-        @scala.inline
-        def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+        inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
       }
     }
     
@@ -2151,26 +1800,20 @@ object TagManager {
     }
     object MergeConflict {
       
-      @scala.inline
-      def apply(): MergeConflict = {
+      inline def apply(): MergeConflict = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MergeConflict]
       }
       
-      @scala.inline
-      implicit class MergeConflictMutableBuilder[Self <: MergeConflict] (val x: Self) extends AnyVal {
+      extension [Self <: MergeConflict](x: Self) {
         
-        @scala.inline
-        def setEntityInBaseVersion(value: Entity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
+        inline def setEntityInBaseVersion(value: Entity): Self = StObject.set(x, "entityInBaseVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEntityInBaseVersionUndefined: Self = StObject.set(x, "entityInBaseVersion", js.undefined)
+        inline def setEntityInBaseVersionUndefined: Self = StObject.set(x, "entityInBaseVersion", js.undefined)
         
-        @scala.inline
-        def setEntityInWorkspace(value: Entity): Self = StObject.set(x, "entityInWorkspace", value.asInstanceOf[js.Any])
+        inline def setEntityInWorkspace(value: Entity): Self = StObject.set(x, "entityInWorkspace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEntityInWorkspaceUndefined: Self = StObject.set(x, "entityInWorkspace", js.undefined)
+        inline def setEntityInWorkspaceUndefined: Self = StObject.set(x, "entityInWorkspace", js.undefined)
       }
     }
     
@@ -2188,50 +1831,36 @@ object TagManager {
     }
     object Parameter {
       
-      @scala.inline
-      def apply(): Parameter = {
+      inline def apply(): Parameter = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Parameter]
       }
       
-      @scala.inline
-      implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+      extension [Self <: Parameter](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setList(value: js.Array[Parameter]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+        inline def setList(value: js.Array[Parameter]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+        inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
         
-        @scala.inline
-        def setListVarargs(value: Parameter*): Self = StObject.set(x, "list", js.Array(value :_*))
+        inline def setListVarargs(value: Parameter*): Self = StObject.set(x, "list", js.Array(value :_*))
         
-        @scala.inline
-        def setMap(value: js.Array[Parameter]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+        inline def setMap(value: js.Array[Parameter]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+        inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
         
-        @scala.inline
-        def setMapVarargs(value: Parameter*): Self = StObject.set(x, "map", js.Array(value :_*))
+        inline def setMapVarargs(value: Parameter*): Self = StObject.set(x, "map", js.Array(value :_*))
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -2243,26 +1872,20 @@ object TagManager {
     }
     object PublishContainerVersionResponse {
       
-      @scala.inline
-      def apply(): PublishContainerVersionResponse = {
+      inline def apply(): PublishContainerVersionResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PublishContainerVersionResponse]
       }
       
-      @scala.inline
-      implicit class PublishContainerVersionResponseMutableBuilder[Self <: PublishContainerVersionResponse] (val x: Self) extends AnyVal {
+      extension [Self <: PublishContainerVersionResponse](x: Self) {
         
-        @scala.inline
-        def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
+        inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
+        inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
         
-        @scala.inline
-        def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
+        inline def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
+        inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
       }
     }
     
@@ -2276,32 +1899,24 @@ object TagManager {
     }
     object QuickPreviewResponse {
       
-      @scala.inline
-      def apply(): QuickPreviewResponse = {
+      inline def apply(): QuickPreviewResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[QuickPreviewResponse]
       }
       
-      @scala.inline
-      implicit class QuickPreviewResponseMutableBuilder[Self <: QuickPreviewResponse] (val x: Self) extends AnyVal {
+      extension [Self <: QuickPreviewResponse](x: Self) {
         
-        @scala.inline
-        def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
+        inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
+        inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
         
-        @scala.inline
-        def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
+        inline def setContainerVersion(value: ContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
+        inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
         
-        @scala.inline
-        def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
+        inline def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
+        inline def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
       }
     }
     
@@ -2311,20 +1926,16 @@ object TagManager {
     }
     object RevertBuiltInVariableResponse {
       
-      @scala.inline
-      def apply(): RevertBuiltInVariableResponse = {
+      inline def apply(): RevertBuiltInVariableResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RevertBuiltInVariableResponse]
       }
       
-      @scala.inline
-      implicit class RevertBuiltInVariableResponseMutableBuilder[Self <: RevertBuiltInVariableResponse] (val x: Self) extends AnyVal {
+      extension [Self <: RevertBuiltInVariableResponse](x: Self) {
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+        inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       }
     }
     
@@ -2334,20 +1945,16 @@ object TagManager {
     }
     object RevertFolderResponse {
       
-      @scala.inline
-      def apply(): RevertFolderResponse = {
+      inline def apply(): RevertFolderResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RevertFolderResponse]
       }
       
-      @scala.inline
-      implicit class RevertFolderResponseMutableBuilder[Self <: RevertFolderResponse] (val x: Self) extends AnyVal {
+      extension [Self <: RevertFolderResponse](x: Self) {
         
-        @scala.inline
-        def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+        inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+        inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       }
     }
     
@@ -2357,20 +1964,16 @@ object TagManager {
     }
     object RevertTagResponse {
       
-      @scala.inline
-      def apply(): RevertTagResponse = {
+      inline def apply(): RevertTagResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RevertTagResponse]
       }
       
-      @scala.inline
-      implicit class RevertTagResponseMutableBuilder[Self <: RevertTagResponse] (val x: Self) extends AnyVal {
+      extension [Self <: RevertTagResponse](x: Self) {
         
-        @scala.inline
-        def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       }
     }
     
@@ -2380,20 +1983,16 @@ object TagManager {
     }
     object RevertTriggerResponse {
       
-      @scala.inline
-      def apply(): RevertTriggerResponse = {
+      inline def apply(): RevertTriggerResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RevertTriggerResponse]
       }
       
-      @scala.inline
-      implicit class RevertTriggerResponseMutableBuilder[Self <: RevertTriggerResponse] (val x: Self) extends AnyVal {
+      extension [Self <: RevertTriggerResponse](x: Self) {
         
-        @scala.inline
-        def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+        inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+        inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       }
     }
     
@@ -2403,20 +2002,16 @@ object TagManager {
     }
     object RevertVariableResponse {
       
-      @scala.inline
-      def apply(): RevertVariableResponse = {
+      inline def apply(): RevertVariableResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RevertVariableResponse]
       }
       
-      @scala.inline
-      implicit class RevertVariableResponseMutableBuilder[Self <: RevertVariableResponse] (val x: Self) extends AnyVal {
+      extension [Self <: RevertVariableResponse](x: Self) {
         
-        @scala.inline
-        def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+        inline def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+        inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
       }
     }
     
@@ -2426,20 +2021,16 @@ object TagManager {
     }
     object RevertZoneResponse {
       
-      @scala.inline
-      def apply(): RevertZoneResponse = {
+      inline def apply(): RevertZoneResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RevertZoneResponse]
       }
       
-      @scala.inline
-      implicit class RevertZoneResponseMutableBuilder[Self <: RevertZoneResponse] (val x: Self) extends AnyVal {
+      extension [Self <: RevertZoneResponse](x: Self) {
         
-        @scala.inline
-        def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+        inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+        inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
       }
     }
     
@@ -2451,26 +2042,20 @@ object TagManager {
     }
     object SetupTag {
       
-      @scala.inline
-      def apply(): SetupTag = {
+      inline def apply(): SetupTag = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SetupTag]
       }
       
-      @scala.inline
-      implicit class SetupTagMutableBuilder[Self <: SetupTag] (val x: Self) extends AnyVal {
+      extension [Self <: SetupTag](x: Self) {
         
-        @scala.inline
-        def setStopOnSetupFailure(value: Boolean): Self = StObject.set(x, "stopOnSetupFailure", value.asInstanceOf[js.Any])
+        inline def setStopOnSetupFailure(value: Boolean): Self = StObject.set(x, "stopOnSetupFailure", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStopOnSetupFailureUndefined: Self = StObject.set(x, "stopOnSetupFailure", js.undefined)
+        inline def setStopOnSetupFailureUndefined: Self = StObject.set(x, "stopOnSetupFailure", js.undefined)
         
-        @scala.inline
-        def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+        inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+        inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       }
     }
     
@@ -2482,26 +2067,20 @@ object TagManager {
     }
     object SyncStatus {
       
-      @scala.inline
-      def apply(): SyncStatus = {
+      inline def apply(): SyncStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SyncStatus]
       }
       
-      @scala.inline
-      implicit class SyncStatusMutableBuilder[Self <: SyncStatus] (val x: Self) extends AnyVal {
+      extension [Self <: SyncStatus](x: Self) {
         
-        @scala.inline
-        def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+        inline def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+        inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
         
-        @scala.inline
-        def setSyncError(value: Boolean): Self = StObject.set(x, "syncError", value.asInstanceOf[js.Any])
+        inline def setSyncError(value: Boolean): Self = StObject.set(x, "syncError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncErrorUndefined: Self = StObject.set(x, "syncError", js.undefined)
+        inline def setSyncErrorUndefined: Self = StObject.set(x, "syncError", js.undefined)
       }
     }
     
@@ -2513,29 +2092,22 @@ object TagManager {
     }
     object SyncWorkspaceResponse {
       
-      @scala.inline
-      def apply(): SyncWorkspaceResponse = {
+      inline def apply(): SyncWorkspaceResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SyncWorkspaceResponse]
       }
       
-      @scala.inline
-      implicit class SyncWorkspaceResponseMutableBuilder[Self <: SyncWorkspaceResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SyncWorkspaceResponse](x: Self) {
         
-        @scala.inline
-        def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+        inline def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+        inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
         
-        @scala.inline
-        def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+        inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
         
-        @scala.inline
-        def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
+        inline def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
+        inline def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
       }
     }
     
@@ -2591,179 +2163,122 @@ object TagManager {
     }
     object Tag {
       
-      @scala.inline
-      def apply(): Tag = {
+      inline def apply(): Tag = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Tag]
       }
       
-      @scala.inline
-      implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+      extension [Self <: Tag](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setBlockingRuleId(value: js.Array[String]): Self = StObject.set(x, "blockingRuleId", value.asInstanceOf[js.Any])
+        inline def setBlockingRuleId(value: js.Array[String]): Self = StObject.set(x, "blockingRuleId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockingRuleIdUndefined: Self = StObject.set(x, "blockingRuleId", js.undefined)
+        inline def setBlockingRuleIdUndefined: Self = StObject.set(x, "blockingRuleId", js.undefined)
         
-        @scala.inline
-        def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value :_*))
+        inline def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value :_*))
         
-        @scala.inline
-        def setBlockingTriggerId(value: js.Array[String]): Self = StObject.set(x, "blockingTriggerId", value.asInstanceOf[js.Any])
+        inline def setBlockingTriggerId(value: js.Array[String]): Self = StObject.set(x, "blockingTriggerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockingTriggerIdUndefined: Self = StObject.set(x, "blockingTriggerId", js.undefined)
+        inline def setBlockingTriggerIdUndefined: Self = StObject.set(x, "blockingTriggerId", js.undefined)
         
-        @scala.inline
-        def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value :_*))
+        inline def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value :_*))
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setFiringRuleId(value: js.Array[String]): Self = StObject.set(x, "firingRuleId", value.asInstanceOf[js.Any])
+        inline def setFiringRuleId(value: js.Array[String]): Self = StObject.set(x, "firingRuleId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiringRuleIdUndefined: Self = StObject.set(x, "firingRuleId", js.undefined)
+        inline def setFiringRuleIdUndefined: Self = StObject.set(x, "firingRuleId", js.undefined)
         
-        @scala.inline
-        def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value :_*))
+        inline def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value :_*))
         
-        @scala.inline
-        def setFiringTriggerId(value: js.Array[String]): Self = StObject.set(x, "firingTriggerId", value.asInstanceOf[js.Any])
+        inline def setFiringTriggerId(value: js.Array[String]): Self = StObject.set(x, "firingTriggerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiringTriggerIdUndefined: Self = StObject.set(x, "firingTriggerId", js.undefined)
+        inline def setFiringTriggerIdUndefined: Self = StObject.set(x, "firingTriggerId", js.undefined)
         
-        @scala.inline
-        def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value :_*))
+        inline def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value :_*))
         
-        @scala.inline
-        def setLiveOnly(value: Boolean): Self = StObject.set(x, "liveOnly", value.asInstanceOf[js.Any])
+        inline def setLiveOnly(value: Boolean): Self = StObject.set(x, "liveOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLiveOnlyUndefined: Self = StObject.set(x, "liveOnly", js.undefined)
+        inline def setLiveOnlyUndefined: Self = StObject.set(x, "liveOnly", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+        inline def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+        inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        @scala.inline
-        def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
         
-        @scala.inline
-        def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
+        inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
+        inline def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+        inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+        inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
         
-        @scala.inline
-        def setPriority(value: Parameter): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+        inline def setPriority(value: Parameter): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+        inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
         
-        @scala.inline
-        def setScheduleEndMs(value: String): Self = StObject.set(x, "scheduleEndMs", value.asInstanceOf[js.Any])
+        inline def setScheduleEndMs(value: String): Self = StObject.set(x, "scheduleEndMs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScheduleEndMsUndefined: Self = StObject.set(x, "scheduleEndMs", js.undefined)
+        inline def setScheduleEndMsUndefined: Self = StObject.set(x, "scheduleEndMs", js.undefined)
         
-        @scala.inline
-        def setScheduleStartMs(value: String): Self = StObject.set(x, "scheduleStartMs", value.asInstanceOf[js.Any])
+        inline def setScheduleStartMs(value: String): Self = StObject.set(x, "scheduleStartMs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScheduleStartMsUndefined: Self = StObject.set(x, "scheduleStartMs", js.undefined)
+        inline def setScheduleStartMsUndefined: Self = StObject.set(x, "scheduleStartMs", js.undefined)
         
-        @scala.inline
-        def setSetupTag(value: js.Array[SetupTag]): Self = StObject.set(x, "setupTag", value.asInstanceOf[js.Any])
+        inline def setSetupTag(value: js.Array[SetupTag]): Self = StObject.set(x, "setupTag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetupTagUndefined: Self = StObject.set(x, "setupTag", js.undefined)
+        inline def setSetupTagUndefined: Self = StObject.set(x, "setupTag", js.undefined)
         
-        @scala.inline
-        def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value :_*))
+        inline def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value :_*))
         
-        @scala.inline
-        def setTagFiringOption(value: String): Self = StObject.set(x, "tagFiringOption", value.asInstanceOf[js.Any])
+        inline def setTagFiringOption(value: String): Self = StObject.set(x, "tagFiringOption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagFiringOptionUndefined: Self = StObject.set(x, "tagFiringOption", js.undefined)
+        inline def setTagFiringOptionUndefined: Self = StObject.set(x, "tagFiringOption", js.undefined)
         
-        @scala.inline
-        def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
+        inline def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
+        inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setTeardownTag(value: js.Array[TeardownTag]): Self = StObject.set(x, "teardownTag", value.asInstanceOf[js.Any])
+        inline def setTeardownTag(value: js.Array[TeardownTag]): Self = StObject.set(x, "teardownTag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeardownTagUndefined: Self = StObject.set(x, "teardownTag", js.undefined)
+        inline def setTeardownTagUndefined: Self = StObject.set(x, "teardownTag", js.undefined)
         
-        @scala.inline
-        def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value :_*))
+        inline def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value :_*))
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -2775,26 +2290,20 @@ object TagManager {
     }
     object TeardownTag {
       
-      @scala.inline
-      def apply(): TeardownTag = {
+      inline def apply(): TeardownTag = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TeardownTag]
       }
       
-      @scala.inline
-      implicit class TeardownTagMutableBuilder[Self <: TeardownTag] (val x: Self) extends AnyVal {
+      extension [Self <: TeardownTag](x: Self) {
         
-        @scala.inline
-        def setStopTeardownOnFailure(value: Boolean): Self = StObject.set(x, "stopTeardownOnFailure", value.asInstanceOf[js.Any])
+        inline def setStopTeardownOnFailure(value: Boolean): Self = StObject.set(x, "stopTeardownOnFailure", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStopTeardownOnFailureUndefined: Self = StObject.set(x, "stopTeardownOnFailure", js.undefined)
+        inline def setStopTeardownOnFailureUndefined: Self = StObject.set(x, "stopTeardownOnFailure", js.undefined)
         
-        @scala.inline
-        def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+        inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+        inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       }
     }
     
@@ -2806,26 +2315,20 @@ object TagManager {
     }
     object Timestamp {
       
-      @scala.inline
-      def apply(): Timestamp = {
+      inline def apply(): Timestamp = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Timestamp]
       }
       
-      @scala.inline
-      implicit class TimestampMutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
+      extension [Self <: Timestamp](x: Self) {
         
-        @scala.inline
-        def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+        inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+        inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
         
-        @scala.inline
-        def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+        inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+        inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
       }
     }
     
@@ -2897,218 +2400,148 @@ object TagManager {
     }
     object Trigger {
       
-      @scala.inline
-      def apply(): Trigger = {
+      inline def apply(): Trigger = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Trigger]
       }
       
-      @scala.inline
-      implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
+      extension [Self <: Trigger](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setAutoEventFilter(value: js.Array[Condition]): Self = StObject.set(x, "autoEventFilter", value.asInstanceOf[js.Any])
+        inline def setAutoEventFilter(value: js.Array[Condition]): Self = StObject.set(x, "autoEventFilter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoEventFilterUndefined: Self = StObject.set(x, "autoEventFilter", js.undefined)
+        inline def setAutoEventFilterUndefined: Self = StObject.set(x, "autoEventFilter", js.undefined)
         
-        @scala.inline
-        def setAutoEventFilterVarargs(value: Condition*): Self = StObject.set(x, "autoEventFilter", js.Array(value :_*))
+        inline def setAutoEventFilterVarargs(value: Condition*): Self = StObject.set(x, "autoEventFilter", js.Array(value :_*))
         
-        @scala.inline
-        def setCheckValidation(value: Parameter): Self = StObject.set(x, "checkValidation", value.asInstanceOf[js.Any])
+        inline def setCheckValidation(value: Parameter): Self = StObject.set(x, "checkValidation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCheckValidationUndefined: Self = StObject.set(x, "checkValidation", js.undefined)
+        inline def setCheckValidationUndefined: Self = StObject.set(x, "checkValidation", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setContinuousTimeMinMilliseconds(value: Parameter): Self = StObject.set(x, "continuousTimeMinMilliseconds", value.asInstanceOf[js.Any])
+        inline def setContinuousTimeMinMilliseconds(value: Parameter): Self = StObject.set(x, "continuousTimeMinMilliseconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContinuousTimeMinMillisecondsUndefined: Self = StObject.set(x, "continuousTimeMinMilliseconds", js.undefined)
+        inline def setContinuousTimeMinMillisecondsUndefined: Self = StObject.set(x, "continuousTimeMinMilliseconds", js.undefined)
         
-        @scala.inline
-        def setCustomEventFilter(value: js.Array[Condition]): Self = StObject.set(x, "customEventFilter", value.asInstanceOf[js.Any])
+        inline def setCustomEventFilter(value: js.Array[Condition]): Self = StObject.set(x, "customEventFilter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomEventFilterUndefined: Self = StObject.set(x, "customEventFilter", js.undefined)
+        inline def setCustomEventFilterUndefined: Self = StObject.set(x, "customEventFilter", js.undefined)
         
-        @scala.inline
-        def setCustomEventFilterVarargs(value: Condition*): Self = StObject.set(x, "customEventFilter", js.Array(value :_*))
+        inline def setCustomEventFilterVarargs(value: Condition*): Self = StObject.set(x, "customEventFilter", js.Array(value :_*))
         
-        @scala.inline
-        def setEventName(value: Parameter): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+        inline def setEventName(value: Parameter): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+        inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
         
-        @scala.inline
-        def setFilter(value: js.Array[Condition]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: js.Array[Condition]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+        inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        @scala.inline
-        def setFilterVarargs(value: Condition*): Self = StObject.set(x, "filter", js.Array(value :_*))
+        inline def setFilterVarargs(value: Condition*): Self = StObject.set(x, "filter", js.Array(value :_*))
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setHorizontalScrollPercentageList(value: Parameter): Self = StObject.set(x, "horizontalScrollPercentageList", value.asInstanceOf[js.Any])
+        inline def setHorizontalScrollPercentageList(value: Parameter): Self = StObject.set(x, "horizontalScrollPercentageList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalScrollPercentageListUndefined: Self = StObject.set(x, "horizontalScrollPercentageList", js.undefined)
+        inline def setHorizontalScrollPercentageListUndefined: Self = StObject.set(x, "horizontalScrollPercentageList", js.undefined)
         
-        @scala.inline
-        def setInterval(value: Parameter): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        inline def setInterval(value: Parameter): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIntervalSeconds(value: Parameter): Self = StObject.set(x, "intervalSeconds", value.asInstanceOf[js.Any])
+        inline def setIntervalSeconds(value: Parameter): Self = StObject.set(x, "intervalSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIntervalSecondsUndefined: Self = StObject.set(x, "intervalSeconds", js.undefined)
+        inline def setIntervalSecondsUndefined: Self = StObject.set(x, "intervalSeconds", js.undefined)
         
-        @scala.inline
-        def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+        inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
         
-        @scala.inline
-        def setLimit(value: Parameter): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Parameter): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        @scala.inline
-        def setMaxTimerLengthSeconds(value: Parameter): Self = StObject.set(x, "maxTimerLengthSeconds", value.asInstanceOf[js.Any])
+        inline def setMaxTimerLengthSeconds(value: Parameter): Self = StObject.set(x, "maxTimerLengthSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxTimerLengthSecondsUndefined: Self = StObject.set(x, "maxTimerLengthSeconds", js.undefined)
+        inline def setMaxTimerLengthSecondsUndefined: Self = StObject.set(x, "maxTimerLengthSeconds", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+        inline def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+        inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        @scala.inline
-        def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
         
-        @scala.inline
-        def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
+        inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
+        inline def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setSelector(value: Parameter): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: Parameter): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setTotalTimeMinMilliseconds(value: Parameter): Self = StObject.set(x, "totalTimeMinMilliseconds", value.asInstanceOf[js.Any])
+        inline def setTotalTimeMinMilliseconds(value: Parameter): Self = StObject.set(x, "totalTimeMinMilliseconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotalTimeMinMillisecondsUndefined: Self = StObject.set(x, "totalTimeMinMilliseconds", js.undefined)
+        inline def setTotalTimeMinMillisecondsUndefined: Self = StObject.set(x, "totalTimeMinMilliseconds", js.undefined)
         
-        @scala.inline
-        def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+        inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
+        inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setUniqueTriggerId(value: Parameter): Self = StObject.set(x, "uniqueTriggerId", value.asInstanceOf[js.Any])
+        inline def setUniqueTriggerId(value: Parameter): Self = StObject.set(x, "uniqueTriggerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUniqueTriggerIdUndefined: Self = StObject.set(x, "uniqueTriggerId", js.undefined)
+        inline def setUniqueTriggerIdUndefined: Self = StObject.set(x, "uniqueTriggerId", js.undefined)
         
-        @scala.inline
-        def setVerticalScrollPercentageList(value: Parameter): Self = StObject.set(x, "verticalScrollPercentageList", value.asInstanceOf[js.Any])
+        inline def setVerticalScrollPercentageList(value: Parameter): Self = StObject.set(x, "verticalScrollPercentageList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalScrollPercentageListUndefined: Self = StObject.set(x, "verticalScrollPercentageList", js.undefined)
+        inline def setVerticalScrollPercentageListUndefined: Self = StObject.set(x, "verticalScrollPercentageList", js.undefined)
         
-        @scala.inline
-        def setVisibilitySelector(value: Parameter): Self = StObject.set(x, "visibilitySelector", value.asInstanceOf[js.Any])
+        inline def setVisibilitySelector(value: Parameter): Self = StObject.set(x, "visibilitySelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibilitySelectorUndefined: Self = StObject.set(x, "visibilitySelector", js.undefined)
+        inline def setVisibilitySelectorUndefined: Self = StObject.set(x, "visibilitySelector", js.undefined)
         
-        @scala.inline
-        def setVisiblePercentageMax(value: Parameter): Self = StObject.set(x, "visiblePercentageMax", value.asInstanceOf[js.Any])
+        inline def setVisiblePercentageMax(value: Parameter): Self = StObject.set(x, "visiblePercentageMax", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisiblePercentageMaxUndefined: Self = StObject.set(x, "visiblePercentageMax", js.undefined)
+        inline def setVisiblePercentageMaxUndefined: Self = StObject.set(x, "visiblePercentageMax", js.undefined)
         
-        @scala.inline
-        def setVisiblePercentageMin(value: Parameter): Self = StObject.set(x, "visiblePercentageMin", value.asInstanceOf[js.Any])
+        inline def setVisiblePercentageMin(value: Parameter): Self = StObject.set(x, "visiblePercentageMin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisiblePercentageMinUndefined: Self = StObject.set(x, "visiblePercentageMin", js.undefined)
+        inline def setVisiblePercentageMinUndefined: Self = StObject.set(x, "visiblePercentageMin", js.undefined)
         
-        @scala.inline
-        def setWaitForTags(value: Parameter): Self = StObject.set(x, "waitForTags", value.asInstanceOf[js.Any])
+        inline def setWaitForTags(value: Parameter): Self = StObject.set(x, "waitForTags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWaitForTagsTimeout(value: Parameter): Self = StObject.set(x, "waitForTagsTimeout", value.asInstanceOf[js.Any])
+        inline def setWaitForTagsTimeout(value: Parameter): Self = StObject.set(x, "waitForTagsTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWaitForTagsTimeoutUndefined: Self = StObject.set(x, "waitForTagsTimeout", js.undefined)
+        inline def setWaitForTagsTimeoutUndefined: Self = StObject.set(x, "waitForTagsTimeout", js.undefined)
         
-        @scala.inline
-        def setWaitForTagsUndefined: Self = StObject.set(x, "waitForTags", js.undefined)
+        inline def setWaitForTagsUndefined: Self = StObject.set(x, "waitForTags", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -3126,47 +2559,34 @@ object TagManager {
     }
     object UserPermission {
       
-      @scala.inline
-      def apply(): UserPermission = {
+      inline def apply(): UserPermission = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UserPermission]
       }
       
-      @scala.inline
-      implicit class UserPermissionMutableBuilder[Self <: UserPermission] (val x: Self) extends AnyVal {
+      extension [Self <: UserPermission](x: Self) {
         
-        @scala.inline
-        def setAccountAccess(value: AccountAccess): Self = StObject.set(x, "accountAccess", value.asInstanceOf[js.Any])
+        inline def setAccountAccess(value: AccountAccess): Self = StObject.set(x, "accountAccess", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountAccessUndefined: Self = StObject.set(x, "accountAccess", js.undefined)
+        inline def setAccountAccessUndefined: Self = StObject.set(x, "accountAccess", js.undefined)
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerAccess(value: js.Array[ContainerAccess]): Self = StObject.set(x, "containerAccess", value.asInstanceOf[js.Any])
+        inline def setContainerAccess(value: js.Array[ContainerAccess]): Self = StObject.set(x, "containerAccess", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
+        inline def setContainerAccessUndefined: Self = StObject.set(x, "containerAccess", js.undefined)
         
-        @scala.inline
-        def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
+        inline def setContainerAccessVarargs(value: ContainerAccess*): Self = StObject.set(x, "containerAccess", js.Array(value :_*))
         
-        @scala.inline
-        def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+        inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+        inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       }
     }
     
@@ -3208,125 +2628,86 @@ object TagManager {
     }
     object Variable {
       
-      @scala.inline
-      def apply(): Variable = {
+      inline def apply(): Variable = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Variable]
       }
       
-      @scala.inline
-      implicit class VariableMutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
+      extension [Self <: Variable](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setDisablingTriggerId(value: js.Array[String]): Self = StObject.set(x, "disablingTriggerId", value.asInstanceOf[js.Any])
+        inline def setDisablingTriggerId(value: js.Array[String]): Self = StObject.set(x, "disablingTriggerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisablingTriggerIdUndefined: Self = StObject.set(x, "disablingTriggerId", js.undefined)
+        inline def setDisablingTriggerIdUndefined: Self = StObject.set(x, "disablingTriggerId", js.undefined)
         
-        @scala.inline
-        def setDisablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "disablingTriggerId", js.Array(value :_*))
+        inline def setDisablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "disablingTriggerId", js.Array(value :_*))
         
-        @scala.inline
-        def setEnablingTriggerId(value: js.Array[String]): Self = StObject.set(x, "enablingTriggerId", value.asInstanceOf[js.Any])
+        inline def setEnablingTriggerId(value: js.Array[String]): Self = StObject.set(x, "enablingTriggerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnablingTriggerIdUndefined: Self = StObject.set(x, "enablingTriggerId", js.undefined)
+        inline def setEnablingTriggerIdUndefined: Self = StObject.set(x, "enablingTriggerId", js.undefined)
         
-        @scala.inline
-        def setEnablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "enablingTriggerId", js.Array(value :_*))
+        inline def setEnablingTriggerIdVarargs(value: String*): Self = StObject.set(x, "enablingTriggerId", js.Array(value :_*))
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setFormatValue(value: VariableFormatValue): Self = StObject.set(x, "formatValue", value.asInstanceOf[js.Any])
+        inline def setFormatValue(value: VariableFormatValue): Self = StObject.set(x, "formatValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatValueUndefined: Self = StObject.set(x, "formatValue", js.undefined)
+        inline def setFormatValueUndefined: Self = StObject.set(x, "formatValue", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+        inline def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+        inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        @scala.inline
-        def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+        inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
         
-        @scala.inline
-        def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
+        inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
+        inline def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setScheduleEndMs(value: String): Self = StObject.set(x, "scheduleEndMs", value.asInstanceOf[js.Any])
+        inline def setScheduleEndMs(value: String): Self = StObject.set(x, "scheduleEndMs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScheduleEndMsUndefined: Self = StObject.set(x, "scheduleEndMs", js.undefined)
+        inline def setScheduleEndMsUndefined: Self = StObject.set(x, "scheduleEndMs", js.undefined)
         
-        @scala.inline
-        def setScheduleStartMs(value: String): Self = StObject.set(x, "scheduleStartMs", value.asInstanceOf[js.Any])
+        inline def setScheduleStartMs(value: String): Self = StObject.set(x, "scheduleStartMs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScheduleStartMsUndefined: Self = StObject.set(x, "scheduleStartMs", js.undefined)
+        inline def setScheduleStartMsUndefined: Self = StObject.set(x, "scheduleStartMs", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setVariableId(value: String): Self = StObject.set(x, "variableId", value.asInstanceOf[js.Any])
+        inline def setVariableId(value: String): Self = StObject.set(x, "variableId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariableIdUndefined: Self = StObject.set(x, "variableId", js.undefined)
+        inline def setVariableIdUndefined: Self = StObject.set(x, "variableId", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -3344,44 +2725,32 @@ object TagManager {
     }
     object VariableFormatValue {
       
-      @scala.inline
-      def apply(): VariableFormatValue = {
+      inline def apply(): VariableFormatValue = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[VariableFormatValue]
       }
       
-      @scala.inline
-      implicit class VariableFormatValueMutableBuilder[Self <: VariableFormatValue] (val x: Self) extends AnyVal {
+      extension [Self <: VariableFormatValue](x: Self) {
         
-        @scala.inline
-        def setCaseConversionType(value: String): Self = StObject.set(x, "caseConversionType", value.asInstanceOf[js.Any])
+        inline def setCaseConversionType(value: String): Self = StObject.set(x, "caseConversionType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaseConversionTypeUndefined: Self = StObject.set(x, "caseConversionType", js.undefined)
+        inline def setCaseConversionTypeUndefined: Self = StObject.set(x, "caseConversionType", js.undefined)
         
-        @scala.inline
-        def setConvertFalseToValue(value: Parameter): Self = StObject.set(x, "convertFalseToValue", value.asInstanceOf[js.Any])
+        inline def setConvertFalseToValue(value: Parameter): Self = StObject.set(x, "convertFalseToValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConvertFalseToValueUndefined: Self = StObject.set(x, "convertFalseToValue", js.undefined)
+        inline def setConvertFalseToValueUndefined: Self = StObject.set(x, "convertFalseToValue", js.undefined)
         
-        @scala.inline
-        def setConvertNullToValue(value: Parameter): Self = StObject.set(x, "convertNullToValue", value.asInstanceOf[js.Any])
+        inline def setConvertNullToValue(value: Parameter): Self = StObject.set(x, "convertNullToValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConvertNullToValueUndefined: Self = StObject.set(x, "convertNullToValue", js.undefined)
+        inline def setConvertNullToValueUndefined: Self = StObject.set(x, "convertNullToValue", js.undefined)
         
-        @scala.inline
-        def setConvertTrueToValue(value: Parameter): Self = StObject.set(x, "convertTrueToValue", value.asInstanceOf[js.Any])
+        inline def setConvertTrueToValue(value: Parameter): Self = StObject.set(x, "convertTrueToValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConvertTrueToValueUndefined: Self = StObject.set(x, "convertTrueToValue", js.undefined)
+        inline def setConvertTrueToValueUndefined: Self = StObject.set(x, "convertTrueToValue", js.undefined)
         
-        @scala.inline
-        def setConvertUndefinedToValue(value: Parameter): Self = StObject.set(x, "convertUndefinedToValue", value.asInstanceOf[js.Any])
+        inline def setConvertUndefinedToValue(value: Parameter): Self = StObject.set(x, "convertUndefinedToValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConvertUndefinedToValueUndefined: Self = StObject.set(x, "convertUndefinedToValue", js.undefined)
+        inline def setConvertUndefinedToValueUndefined: Self = StObject.set(x, "convertUndefinedToValue", js.undefined)
       }
     }
     
@@ -3405,62 +2774,44 @@ object TagManager {
     }
     object Workspace {
       
-      @scala.inline
-      def apply(): Workspace = {
+      inline def apply(): Workspace = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Workspace]
       }
       
-      @scala.inline
-      implicit class WorkspaceMutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
+      extension [Self <: Workspace](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
       }
     }
     
@@ -3492,89 +2843,62 @@ object TagManager {
     }
     object Zone {
       
-      @scala.inline
-      def apply(): Zone = {
+      inline def apply(): Zone = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Zone]
       }
       
-      @scala.inline
-      implicit class ZoneMutableBuilder[Self <: Zone] (val x: Self) extends AnyVal {
+      extension [Self <: Zone](x: Self) {
         
-        @scala.inline
-        def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+        inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+        inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
         
-        @scala.inline
-        def setBoundary(value: ZoneBoundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+        inline def setBoundary(value: ZoneBoundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+        inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
         
-        @scala.inline
-        def setChildContainer(value: js.Array[ZoneChildContainer]): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
+        inline def setChildContainer(value: js.Array[ZoneChildContainer]): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
+        inline def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
         
-        @scala.inline
-        def setChildContainerVarargs(value: ZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value :_*))
+        inline def setChildContainerVarargs(value: ZoneChildContainer*): Self = StObject.set(x, "childContainer", js.Array(value :_*))
         
-        @scala.inline
-        def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+        inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+        inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
         
-        @scala.inline
-        def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+        inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+        inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+        inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+        inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
         
-        @scala.inline
-        def setTypeRestriction(value: ZoneTypeRestriction): Self = StObject.set(x, "typeRestriction", value.asInstanceOf[js.Any])
+        inline def setTypeRestriction(value: ZoneTypeRestriction): Self = StObject.set(x, "typeRestriction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeRestrictionUndefined: Self = StObject.set(x, "typeRestriction", js.undefined)
+        inline def setTypeRestrictionUndefined: Self = StObject.set(x, "typeRestriction", js.undefined)
         
-        @scala.inline
-        def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+        inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+        inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
         
-        @scala.inline
-        def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+        inline def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+        inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
       }
     }
     
@@ -3586,32 +2910,24 @@ object TagManager {
     }
     object ZoneBoundary {
       
-      @scala.inline
-      def apply(): ZoneBoundary = {
+      inline def apply(): ZoneBoundary = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ZoneBoundary]
       }
       
-      @scala.inline
-      implicit class ZoneBoundaryMutableBuilder[Self <: ZoneBoundary] (val x: Self) extends AnyVal {
+      extension [Self <: ZoneBoundary](x: Self) {
         
-        @scala.inline
-        def setCondition(value: js.Array[Condition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+        inline def setCondition(value: js.Array[Condition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+        inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
         
-        @scala.inline
-        def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value :_*))
+        inline def setConditionVarargs(value: Condition*): Self = StObject.set(x, "condition", js.Array(value :_*))
         
-        @scala.inline
-        def setCustomEvaluationTriggerId(value: js.Array[String]): Self = StObject.set(x, "customEvaluationTriggerId", value.asInstanceOf[js.Any])
+        inline def setCustomEvaluationTriggerId(value: js.Array[String]): Self = StObject.set(x, "customEvaluationTriggerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomEvaluationTriggerIdUndefined: Self = StObject.set(x, "customEvaluationTriggerId", js.undefined)
+        inline def setCustomEvaluationTriggerIdUndefined: Self = StObject.set(x, "customEvaluationTriggerId", js.undefined)
         
-        @scala.inline
-        def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value :_*))
+        inline def setCustomEvaluationTriggerIdVarargs(value: String*): Self = StObject.set(x, "customEvaluationTriggerId", js.Array(value :_*))
       }
     }
     
@@ -3623,26 +2939,20 @@ object TagManager {
     }
     object ZoneChildContainer {
       
-      @scala.inline
-      def apply(): ZoneChildContainer = {
+      inline def apply(): ZoneChildContainer = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ZoneChildContainer]
       }
       
-      @scala.inline
-      implicit class ZoneChildContainerMutableBuilder[Self <: ZoneChildContainer] (val x: Self) extends AnyVal {
+      extension [Self <: ZoneChildContainer](x: Self) {
         
-        @scala.inline
-        def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+        inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+        inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
         
-        @scala.inline
-        def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+        inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
+        inline def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
       }
     }
     
@@ -3654,118 +2964,82 @@ object TagManager {
     }
     object ZoneTypeRestriction {
       
-      @scala.inline
-      def apply(): ZoneTypeRestriction = {
+      inline def apply(): ZoneTypeRestriction = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ZoneTypeRestriction]
       }
       
-      @scala.inline
-      implicit class ZoneTypeRestrictionMutableBuilder[Self <: ZoneTypeRestriction] (val x: Self) extends AnyVal {
+      extension [Self <: ZoneTypeRestriction](x: Self) {
         
-        @scala.inline
-        def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+        inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+        inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
         
-        @scala.inline
-        def setWhitelistedTypeId(value: js.Array[String]): Self = StObject.set(x, "whitelistedTypeId", value.asInstanceOf[js.Any])
+        inline def setWhitelistedTypeId(value: js.Array[String]): Self = StObject.set(x, "whitelistedTypeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhitelistedTypeIdUndefined: Self = StObject.set(x, "whitelistedTypeId", js.undefined)
+        inline def setWhitelistedTypeIdUndefined: Self = StObject.set(x, "whitelistedTypeId", js.undefined)
         
-        @scala.inline
-        def setWhitelistedTypeIdVarargs(value: String*): Self = StObject.set(x, "whitelistedTypeId", js.Array(value :_*))
+        inline def setWhitelistedTypeIdVarargs(value: String*): Self = StObject.set(x, "whitelistedTypeId", js.Array(value :_*))
       }
     }
   }
   
-  @scala.inline
-  implicit class TagManagerMutableBuilder[Self <: TagManager] (val x: Self) extends AnyVal {
+  extension [Self <: TagManager](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    @scala.inline
-    def setNewAccount(value: () => Account): Self = StObject.set(x, "newAccount", js.Any.fromFunction0(value))
+    inline def setNewAccount(value: () => Account): Self = StObject.set(x, "newAccount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewAccountAccess(value: () => AccountAccess): Self = StObject.set(x, "newAccountAccess", js.Any.fromFunction0(value))
+    inline def setNewAccountAccess(value: () => AccountAccess): Self = StObject.set(x, "newAccountAccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBuiltInVariable(value: () => BuiltInVariable): Self = StObject.set(x, "newBuiltInVariable", js.Any.fromFunction0(value))
+    inline def setNewBuiltInVariable(value: () => BuiltInVariable): Self = StObject.set(x, "newBuiltInVariable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCondition(value: () => Condition): Self = StObject.set(x, "newCondition", js.Any.fromFunction0(value))
+    inline def setNewCondition(value: () => Condition): Self = StObject.set(x, "newCondition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewContainer(value: () => Container): Self = StObject.set(x, "newContainer", js.Any.fromFunction0(value))
+    inline def setNewContainer(value: () => Container): Self = StObject.set(x, "newContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewContainerAccess(value: () => ContainerAccess): Self = StObject.set(x, "newContainerAccess", js.Any.fromFunction0(value))
+    inline def setNewContainerAccess(value: () => ContainerAccess): Self = StObject.set(x, "newContainerAccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewContainerVersion(value: () => ContainerVersion): Self = StObject.set(x, "newContainerVersion", js.Any.fromFunction0(value))
+    inline def setNewContainerVersion(value: () => ContainerVersion): Self = StObject.set(x, "newContainerVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCreateContainerVersionRequestVersionOptions(value: () => CreateContainerVersionRequestVersionOptions): Self = StObject.set(x, "newCreateContainerVersionRequestVersionOptions", js.Any.fromFunction0(value))
+    inline def setNewCreateContainerVersionRequestVersionOptions(value: () => CreateContainerVersionRequestVersionOptions): Self = StObject.set(x, "newCreateContainerVersionRequestVersionOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewCustomTemplate(value: () => CustomTemplate): Self = StObject.set(x, "newCustomTemplate", js.Any.fromFunction0(value))
+    inline def setNewCustomTemplate(value: () => CustomTemplate): Self = StObject.set(x, "newCustomTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewEntity(value: () => Entity): Self = StObject.set(x, "newEntity", js.Any.fromFunction0(value))
+    inline def setNewEntity(value: () => Entity): Self = StObject.set(x, "newEntity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewEnvironment(value: () => Environment): Self = StObject.set(x, "newEnvironment", js.Any.fromFunction0(value))
+    inline def setNewEnvironment(value: () => Environment): Self = StObject.set(x, "newEnvironment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewFolder(value: () => Folder): Self = StObject.set(x, "newFolder", js.Any.fromFunction0(value))
+    inline def setNewFolder(value: () => Folder): Self = StObject.set(x, "newFolder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewParameter(value: () => Parameter): Self = StObject.set(x, "newParameter", js.Any.fromFunction0(value))
+    inline def setNewParameter(value: () => Parameter): Self = StObject.set(x, "newParameter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSetupTag(value: () => SetupTag): Self = StObject.set(x, "newSetupTag", js.Any.fromFunction0(value))
+    inline def setNewSetupTag(value: () => SetupTag): Self = StObject.set(x, "newSetupTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTag(value: () => Tag): Self = StObject.set(x, "newTag", js.Any.fromFunction0(value))
+    inline def setNewTag(value: () => Tag): Self = StObject.set(x, "newTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTeardownTag(value: () => TeardownTag): Self = StObject.set(x, "newTeardownTag", js.Any.fromFunction0(value))
+    inline def setNewTeardownTag(value: () => TeardownTag): Self = StObject.set(x, "newTeardownTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTimestamp(value: () => Timestamp): Self = StObject.set(x, "newTimestamp", js.Any.fromFunction0(value))
+    inline def setNewTimestamp(value: () => Timestamp): Self = StObject.set(x, "newTimestamp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTrigger(value: () => Trigger): Self = StObject.set(x, "newTrigger", js.Any.fromFunction0(value))
+    inline def setNewTrigger(value: () => Trigger): Self = StObject.set(x, "newTrigger", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewUserPermission(value: () => UserPermission): Self = StObject.set(x, "newUserPermission", js.Any.fromFunction0(value))
+    inline def setNewUserPermission(value: () => UserPermission): Self = StObject.set(x, "newUserPermission", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewVariable(value: () => Variable): Self = StObject.set(x, "newVariable", js.Any.fromFunction0(value))
+    inline def setNewVariable(value: () => Variable): Self = StObject.set(x, "newVariable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewVariableFormatValue(value: () => VariableFormatValue): Self = StObject.set(x, "newVariableFormatValue", js.Any.fromFunction0(value))
+    inline def setNewVariableFormatValue(value: () => VariableFormatValue): Self = StObject.set(x, "newVariableFormatValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewWorkspace(value: () => Workspace): Self = StObject.set(x, "newWorkspace", js.Any.fromFunction0(value))
+    inline def setNewWorkspace(value: () => Workspace): Self = StObject.set(x, "newWorkspace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewZone(value: () => Zone): Self = StObject.set(x, "newZone", js.Any.fromFunction0(value))
+    inline def setNewZone(value: () => Zone): Self = StObject.set(x, "newZone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewZoneBoundary(value: () => ZoneBoundary): Self = StObject.set(x, "newZoneBoundary", js.Any.fromFunction0(value))
+    inline def setNewZoneBoundary(value: () => ZoneBoundary): Self = StObject.set(x, "newZoneBoundary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewZoneChildContainer(value: () => ZoneChildContainer): Self = StObject.set(x, "newZoneChildContainer", js.Any.fromFunction0(value))
+    inline def setNewZoneChildContainer(value: () => ZoneChildContainer): Self = StObject.set(x, "newZoneChildContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewZoneTypeRestriction(value: () => ZoneTypeRestriction): Self = StObject.set(x, "newZoneTypeRestriction", js.Any.fromFunction0(value))
+    inline def setNewZoneTypeRestriction(value: () => ZoneTypeRestriction): Self = StObject.set(x, "newZoneTypeRestriction", js.Any.fromFunction0(value))
   }
 }

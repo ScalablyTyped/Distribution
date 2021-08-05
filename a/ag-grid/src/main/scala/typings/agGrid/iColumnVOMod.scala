@@ -18,26 +18,20 @@ object iColumnVOMod {
   }
   object ColumnVO {
     
-    @scala.inline
-    def apply(aggFunc: String, displayName: String, field: String, id: String): ColumnVO = {
+    inline def apply(aggFunc: String, displayName: String, field: String, id: String): ColumnVO = {
       val __obj = js.Dynamic.literal(aggFunc = aggFunc.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnVO]
     }
     
-    @scala.inline
-    implicit class ColumnVOMutableBuilder[Self <: ColumnVO] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnVO](x: Self) {
       
-      @scala.inline
-      def setAggFunc(value: String): Self = StObject.set(x, "aggFunc", value.asInstanceOf[js.Any])
+      inline def setAggFunc(value: String): Self = StObject.set(x, "aggFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

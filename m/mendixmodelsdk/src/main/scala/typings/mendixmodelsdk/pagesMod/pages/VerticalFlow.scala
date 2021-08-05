@@ -42,8 +42,7 @@ object VerticalFlow {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def create(model: IModel): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -54,8 +53,7 @@ object VerticalFlow {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -66,8 +64,7 @@ object VerticalFlow {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInDataViewUnderFooterWidget(container: DataView): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -78,8 +75,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInDataViewUnderWidget(container: DataView): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -90,8 +86,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInDivContainerUnderWidget(container: DivContainer): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -102,8 +97,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -114,8 +108,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInHeaderUnderLeftWidget(container: Header): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -126,8 +119,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInHeaderUnderRightWidget(container: Header): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -138,8 +130,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -150,8 +141,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -162,8 +152,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInLayoutUnderWidget(container: Layout): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -174,8 +163,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -186,8 +174,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInListViewUnderWidget(container: ListView): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -198,8 +185,7 @@ object VerticalFlow {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -210,8 +196,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -222,8 +207,7 @@ object VerticalFlow {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -234,8 +218,7 @@ object VerticalFlow {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -246,8 +229,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -258,8 +240,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInSnippetUnderWidget(container: Snippet): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -270,8 +251,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -282,8 +262,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -294,8 +273,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInTabPageUnderWidget(container: TabPage): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -306,8 +284,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInTableCellUnderWidget(container: TableCell): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -318,8 +295,7 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /**
     * Creates and returns a new VerticalFlow instance in the SDK and on the server.
@@ -330,20 +306,17 @@ object VerticalFlow {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): VerticalFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalFlow]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalFlow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalFlow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

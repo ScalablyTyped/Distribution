@@ -13,16 +13,13 @@ trait DeleteEntityRecognizerRequest extends StObject {
 }
 object DeleteEntityRecognizerRequest {
   
-  @scala.inline
-  def apply(EntityRecognizerArn: EntityRecognizerArn): DeleteEntityRecognizerRequest = {
+  inline def apply(EntityRecognizerArn: EntityRecognizerArn): DeleteEntityRecognizerRequest = {
     val __obj = js.Dynamic.literal(EntityRecognizerArn = EntityRecognizerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEntityRecognizerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEntityRecognizerRequestMutableBuilder[Self <: DeleteEntityRecognizerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEntityRecognizerRequest](x: Self) {
     
-    @scala.inline
-    def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
+    inline def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
   }
 }

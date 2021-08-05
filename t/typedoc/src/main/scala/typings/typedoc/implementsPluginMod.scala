@@ -14,10 +14,10 @@ object implementsPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var analyzeClass: js.Any = js.native
+    /* private */ var analyzeClass: js.Any = js.native
     
-    var copyComment: js.Any = js.native
+    /* private */ var copyComment: js.Any = js.native
     
-    var onResolve: js.Any = js.native
+    /* private */ var onResolve: js.Any = js.native
   }
 }

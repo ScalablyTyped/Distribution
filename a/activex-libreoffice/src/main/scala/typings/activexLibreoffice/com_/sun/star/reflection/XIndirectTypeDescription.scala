@@ -25,8 +25,7 @@ trait XIndirectTypeDescription
 }
 object XIndirectTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     ReferencedType: XTypeDescription,
     TypeClass: TypeClass,
@@ -41,13 +40,10 @@ object XIndirectTypeDescription {
     __obj.asInstanceOf[XIndirectTypeDescription]
   }
   
-  @scala.inline
-  implicit class XIndirectTypeDescriptionMutableBuilder[Self <: XIndirectTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XIndirectTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetReferencedType(value: () => XTypeDescription): Self = StObject.set(x, "getReferencedType", js.Any.fromFunction0(value))
+    inline def setGetReferencedType(value: () => XTypeDescription): Self = StObject.set(x, "getReferencedType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReferencedType(value: XTypeDescription): Self = StObject.set(x, "ReferencedType", value.asInstanceOf[js.Any])
+    inline def setReferencedType(value: XTypeDescription): Self = StObject.set(x, "ReferencedType", value.asInstanceOf[js.Any])
   }
 }

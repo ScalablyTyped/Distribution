@@ -18,8 +18,7 @@ trait SearchCampaignAudienceBuilder[SearchCampaignAudience]
 }
 object SearchCampaignAudienceBuilder {
   
-  @scala.inline
-  def apply[SearchCampaignAudience](
+  inline def apply[SearchCampaignAudience](
     build: () => AdWordsOperation[SearchCampaignAudience],
     exclude: () => AdWordsOperation[SearchCampaignAudience],
     withAudience: UserList => SearchCampaignAudienceBuilder[SearchCampaignAudience],
@@ -30,19 +29,14 @@ object SearchCampaignAudienceBuilder {
     __obj.asInstanceOf[SearchCampaignAudienceBuilder[SearchCampaignAudience]]
   }
   
-  @scala.inline
-  implicit class SearchCampaignAudienceBuilderMutableBuilder[Self <: SearchCampaignAudienceBuilder[?], SearchCampaignAudience] (val x: Self & SearchCampaignAudienceBuilder[SearchCampaignAudience]) extends AnyVal {
+  extension [Self <: SearchCampaignAudienceBuilder[?], SearchCampaignAudience](x: Self & SearchCampaignAudienceBuilder[SearchCampaignAudience]) {
     
-    @scala.inline
-    def setExclude(value: () => AdWordsOperation[SearchCampaignAudience]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
+    inline def setExclude(value: () => AdWordsOperation[SearchCampaignAudience]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWithAudience(value: UserList => SearchCampaignAudienceBuilder[SearchCampaignAudience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
+    inline def setWithAudience(value: UserList => SearchCampaignAudienceBuilder[SearchCampaignAudience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithAudienceId(value: Double => SearchCampaignAudienceBuilder[SearchCampaignAudience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
+    inline def setWithAudienceId(value: Double => SearchCampaignAudienceBuilder[SearchCampaignAudience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithBidModifier(value: Double => SearchCampaignAudienceBuilder[SearchCampaignAudience]): Self = StObject.set(x, "withBidModifier", js.Any.fromFunction1(value))
+    inline def setWithBidModifier(value: Double => SearchCampaignAudienceBuilder[SearchCampaignAudience]): Self = StObject.set(x, "withBidModifier", js.Any.fromFunction1(value))
   }
 }

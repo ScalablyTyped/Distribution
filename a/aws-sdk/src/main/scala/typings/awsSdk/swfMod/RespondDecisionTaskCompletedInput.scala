@@ -23,31 +23,23 @@ trait RespondDecisionTaskCompletedInput extends StObject {
 }
 object RespondDecisionTaskCompletedInput {
   
-  @scala.inline
-  def apply(taskToken: TaskToken): RespondDecisionTaskCompletedInput = {
+  inline def apply(taskToken: TaskToken): RespondDecisionTaskCompletedInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RespondDecisionTaskCompletedInput]
   }
   
-  @scala.inline
-  implicit class RespondDecisionTaskCompletedInputMutableBuilder[Self <: RespondDecisionTaskCompletedInput] (val x: Self) extends AnyVal {
+  extension [Self <: RespondDecisionTaskCompletedInput](x: Self) {
     
-    @scala.inline
-    def setDecisions(value: DecisionList): Self = StObject.set(x, "decisions", value.asInstanceOf[js.Any])
+    inline def setDecisions(value: DecisionList): Self = StObject.set(x, "decisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecisionsUndefined: Self = StObject.set(x, "decisions", js.undefined)
+    inline def setDecisionsUndefined: Self = StObject.set(x, "decisions", js.undefined)
     
-    @scala.inline
-    def setDecisionsVarargs(value: Decision*): Self = StObject.set(x, "decisions", js.Array(value :_*))
+    inline def setDecisionsVarargs(value: Decision*): Self = StObject.set(x, "decisions", js.Array(value :_*))
     
-    @scala.inline
-    def setExecutionContext(value: Data): Self = StObject.set(x, "executionContext", value.asInstanceOf[js.Any])
+    inline def setExecutionContext(value: Data): Self = StObject.set(x, "executionContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionContextUndefined: Self = StObject.set(x, "executionContext", js.undefined)
+    inline def setExecutionContextUndefined: Self = StObject.set(x, "executionContext", js.undefined)
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

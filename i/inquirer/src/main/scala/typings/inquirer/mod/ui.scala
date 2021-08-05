@@ -24,20 +24,16 @@ object ui {
   }
   object BottomBarOptions {
     
-    @scala.inline
-    def apply(): BottomBarOptions = {
+    inline def apply(): BottomBarOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BottomBarOptions]
     }
     
-    @scala.inline
-    implicit class BottomBarOptionsMutableBuilder[Self <: BottomBarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BottomBarOptions](x: Self) {
       
-      @scala.inline
-      def setBottomBar(value: String): Self = StObject.set(x, "bottomBar", value.asInstanceOf[js.Any])
+      inline def setBottomBar(value: String): Self = StObject.set(x, "bottomBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomBarUndefined: Self = StObject.set(x, "bottomBar", js.undefined)
+      inline def setBottomBarUndefined: Self = StObject.set(x, "bottomBar", js.undefined)
     }
   }
   
@@ -58,20 +54,16 @@ object ui {
   }
   object FetchedAnswer {
     
-    @scala.inline
-    def apply(answer: js.Any, name: String): FetchedAnswer = {
+    inline def apply(answer: js.Any, name: String): FetchedAnswer = {
       val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchedAnswer]
     }
     
-    @scala.inline
-    implicit class FetchedAnswerMutableBuilder[Self <: FetchedAnswer] (val x: Self) extends AnyVal {
+    extension [Self <: FetchedAnswer](x: Self) {
       
-      @scala.inline
-      def setAnswer(value: js.Any): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+      inline def setAnswer(value: js.Any): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

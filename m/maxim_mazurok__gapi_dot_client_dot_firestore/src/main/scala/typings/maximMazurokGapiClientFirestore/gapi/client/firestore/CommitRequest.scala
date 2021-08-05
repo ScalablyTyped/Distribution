@@ -14,28 +14,21 @@ trait CommitRequest extends StObject {
 }
 object CommitRequest {
   
-  @scala.inline
-  def apply(): CommitRequest = {
+  inline def apply(): CommitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitRequest]
   }
   
-  @scala.inline
-  implicit class CommitRequestMutableBuilder[Self <: CommitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CommitRequest](x: Self) {
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
-    @scala.inline
-    def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
+    inline def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
+    inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     
-    @scala.inline
-    def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
+    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
   }
 }

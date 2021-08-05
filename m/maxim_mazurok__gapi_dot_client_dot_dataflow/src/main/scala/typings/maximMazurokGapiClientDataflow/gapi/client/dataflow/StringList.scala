@@ -11,22 +11,17 @@ trait StringList extends StObject {
 }
 object StringList {
   
-  @scala.inline
-  def apply(): StringList = {
+  inline def apply(): StringList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringList]
   }
   
-  @scala.inline
-  implicit class StringListMutableBuilder[Self <: StringList] (val x: Self) extends AnyVal {
+  extension [Self <: StringList](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

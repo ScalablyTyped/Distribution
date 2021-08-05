@@ -19,10 +19,8 @@ object ProjectionMode {
     *
     * This value specifies a flat parallel projection in the specified degree of freedom (X or Y).
     */
-  @scala.inline
-  def PARALLEL: `0` = 0.asInstanceOf[`0`]
+  inline def PARALLEL: `0` = 0.asInstanceOf[`0`]
   
   /** the 3D objects are drawn in the perspective projection. */
-  @scala.inline
-  def PERSPECTIVE: `1` = 1.asInstanceOf[`1`]
+  inline def PERSPECTIVE: `1` = 1.asInstanceOf[`1`]
 }

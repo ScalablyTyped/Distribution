@@ -33,8 +33,7 @@ trait CreateCertificateAuthorityRequest extends StObject {
 }
 object CreateCertificateAuthorityRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CertificateAuthorityConfiguration: CertificateAuthorityConfiguration,
     CertificateAuthorityType: CertificateAuthorityType
   ): CreateCertificateAuthorityRequest = {
@@ -42,34 +41,24 @@ object CreateCertificateAuthorityRequest {
     __obj.asInstanceOf[CreateCertificateAuthorityRequest]
   }
   
-  @scala.inline
-  implicit class CreateCertificateAuthorityRequestMutableBuilder[Self <: CreateCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCertificateAuthorityRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityConfiguration(value: CertificateAuthorityConfiguration): Self = StObject.set(x, "CertificateAuthorityConfiguration", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityConfiguration(value: CertificateAuthorityConfiguration): Self = StObject.set(x, "CertificateAuthorityConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityType(value: CertificateAuthorityType): Self = StObject.set(x, "CertificateAuthorityType", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityType(value: CertificateAuthorityType): Self = StObject.set(x, "CertificateAuthorityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
+    inline def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
     
-    @scala.inline
-    def setRevocationConfiguration(value: RevocationConfiguration): Self = StObject.set(x, "RevocationConfiguration", value.asInstanceOf[js.Any])
+    inline def setRevocationConfiguration(value: RevocationConfiguration): Self = StObject.set(x, "RevocationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevocationConfigurationUndefined: Self = StObject.set(x, "RevocationConfiguration", js.undefined)
+    inline def setRevocationConfigurationUndefined: Self = StObject.set(x, "RevocationConfiguration", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

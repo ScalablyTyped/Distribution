@@ -12,6 +12,5 @@ object mergeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
 }

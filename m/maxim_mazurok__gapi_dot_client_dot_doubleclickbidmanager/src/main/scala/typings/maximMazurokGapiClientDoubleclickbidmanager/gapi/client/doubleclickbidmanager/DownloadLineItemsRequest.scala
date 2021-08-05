@@ -20,40 +20,29 @@ trait DownloadLineItemsRequest extends StObject {
 }
 object DownloadLineItemsRequest {
   
-  @scala.inline
-  def apply(): DownloadLineItemsRequest = {
+  inline def apply(): DownloadLineItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadLineItemsRequest]
   }
   
-  @scala.inline
-  implicit class DownloadLineItemsRequestMutableBuilder[Self <: DownloadLineItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadLineItemsRequest](x: Self) {
     
-    @scala.inline
-    def setFileSpec(value: String): Self = StObject.set(x, "fileSpec", value.asInstanceOf[js.Any])
+    inline def setFileSpec(value: String): Self = StObject.set(x, "fileSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSpecUndefined: Self = StObject.set(x, "fileSpec", js.undefined)
+    inline def setFileSpecUndefined: Self = StObject.set(x, "fileSpec", js.undefined)
     
-    @scala.inline
-    def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
+    inline def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
+    inline def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
     
-    @scala.inline
-    def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
+    inline def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

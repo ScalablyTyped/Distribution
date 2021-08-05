@@ -16,8 +16,7 @@ object mod {
     * @returns
     * A string representing the `author`.
     */
-  @scala.inline
-  def apply(author: Author): String = ^.asInstanceOf[js.Dynamic].apply(author.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(author: Author): String = ^.asInstanceOf[js.Dynamic].apply(author.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("stringify-author", JSImport.Namespace)
   @js.native

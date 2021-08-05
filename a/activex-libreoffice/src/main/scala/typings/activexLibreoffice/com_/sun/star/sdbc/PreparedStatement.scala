@@ -116,8 +116,7 @@ trait PreparedStatement
 }
 object PreparedStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connection: XConnection,
     CursorName: String,
     FetchDirection: Double,
@@ -189,31 +188,22 @@ object PreparedStatement {
     __obj.asInstanceOf[PreparedStatement]
   }
   
-  @scala.inline
-  implicit class PreparedStatementMutableBuilder[Self <: PreparedStatement] (val x: Self) extends AnyVal {
+  extension [Self <: PreparedStatement](x: Self) {
     
-    @scala.inline
-    def setCursorName(value: String): Self = StObject.set(x, "CursorName", value.asInstanceOf[js.Any])
+    inline def setCursorName(value: String): Self = StObject.set(x, "CursorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchDirection(value: Double): Self = StObject.set(x, "FetchDirection", value.asInstanceOf[js.Any])
+    inline def setFetchDirection(value: Double): Self = StObject.set(x, "FetchDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchSize(value: Double): Self = StObject.set(x, "FetchSize", value.asInstanceOf[js.Any])
+    inline def setFetchSize(value: Double): Self = StObject.set(x, "FetchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFieldSize(value: Double): Self = StObject.set(x, "MaxFieldSize", value.asInstanceOf[js.Any])
+    inline def setMaxFieldSize(value: Double): Self = StObject.set(x, "MaxFieldSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTimeOut(value: Double): Self = StObject.set(x, "QueryTimeOut", value.asInstanceOf[js.Any])
+    inline def setQueryTimeOut(value: Double): Self = StObject.set(x, "QueryTimeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetConcurrency(value: Double): Self = StObject.set(x, "ResultSetConcurrency", value.asInstanceOf[js.Any])
+    inline def setResultSetConcurrency(value: Double): Self = StObject.set(x, "ResultSetConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetType(value: Double): Self = StObject.set(x, "ResultSetType", value.asInstanceOf[js.Any])
+    inline def setResultSetType(value: Double): Self = StObject.set(x, "ResultSetType", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait ListItemVersion
 }
 object ListItemVersion {
   
-  @scala.inline
-  def apply(): ListItemVersion = {
+  inline def apply(): ListItemVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemVersion]
   }
   
-  @scala.inline
-  implicit class ListItemVersionMutableBuilder[Self <: ListItemVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemVersion](x: Self) {
     
-    @scala.inline
-    def setFields(value: NullableOption[FieldValueSet]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: NullableOption[FieldValueSet]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsNull: Self = StObject.set(x, "fields", null)
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

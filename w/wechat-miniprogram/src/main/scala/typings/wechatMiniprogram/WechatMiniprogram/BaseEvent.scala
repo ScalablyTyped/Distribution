@@ -24,8 +24,7 @@ trait BaseEvent[Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject 
 }
 object BaseEvent {
   
-  @scala.inline
-  def apply[Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
+  inline def apply[Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](
     currentTarget: Target[CurrentTargetDataset],
     target: Target[TargetDataset],
     timeStamp: Double,
@@ -36,25 +35,18 @@ object BaseEvent {
     __obj.asInstanceOf[BaseEvent[Mark, CurrentTargetDataset, TargetDataset]]
   }
   
-  @scala.inline
-  implicit class BaseEventMutableBuilder[Self <: BaseEvent[?, ?, ?], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
+  extension [Self <: BaseEvent[?, ?, ?], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](x: Self & (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) {
     
-    @scala.inline
-    def setCurrentTarget(value: Target[CurrentTargetDataset]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: Target[CurrentTargetDataset]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMark(value: Mark): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setMark(value: Mark): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+    inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Target[TargetDataset]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Target[TargetDataset]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

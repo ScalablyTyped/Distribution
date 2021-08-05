@@ -32,32 +32,24 @@ object hueHueMod {
   }
   object HuePickerProps {
     
-    @scala.inline
-    def apply(): HuePickerProps = {
+    inline def apply(): HuePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HuePickerProps]
     }
     
-    @scala.inline
-    implicit class HuePickerPropsMutableBuilder[Self <: HuePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: HuePickerProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStyles(value: PartialClassesHuePickerSt): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialClassesHuePickerSt): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -69,20 +61,16 @@ object hueHueMod {
   }
   object HuePickerStylesProps {
     
-    @scala.inline
-    def apply(hue: CSSProperties, picker: CSSProperties): HuePickerStylesProps = {
+    inline def apply(hue: CSSProperties, picker: CSSProperties): HuePickerStylesProps = {
       val __obj = js.Dynamic.literal(hue = hue.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
       __obj.asInstanceOf[HuePickerStylesProps]
     }
     
-    @scala.inline
-    implicit class HuePickerStylesPropsMutableBuilder[Self <: HuePickerStylesProps] (val x: Self) extends AnyVal {
+    extension [Self <: HuePickerStylesProps](x: Self) {
       
-      @scala.inline
-      def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     }
   }
 }

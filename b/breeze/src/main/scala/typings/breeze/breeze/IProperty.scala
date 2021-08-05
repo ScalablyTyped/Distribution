@@ -22,8 +22,7 @@ trait IProperty extends StObject {
 }
 object IProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     isDataProperty: Boolean,
     isNavigationProperty: Boolean,
@@ -36,31 +35,22 @@ object IProperty {
     __obj.asInstanceOf[IProperty]
   }
   
-  @scala.inline
-  implicit class IPropertyMutableBuilder[Self <: IProperty] (val x: Self) extends AnyVal {
+  extension [Self <: IProperty](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDataProperty(value: Boolean): Self = StObject.set(x, "isDataProperty", value.asInstanceOf[js.Any])
+    inline def setIsDataProperty(value: Boolean): Self = StObject.set(x, "isDataProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNavigationProperty(value: Boolean): Self = StObject.set(x, "isNavigationProperty", value.asInstanceOf[js.Any])
+    inline def setIsNavigationProperty(value: Boolean): Self = StObject.set(x, "isNavigationProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameOnServer(value: String): Self = StObject.set(x, "nameOnServer", value.asInstanceOf[js.Any])
+    inline def setNameOnServer(value: String): Self = StObject.set(x, "nameOnServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentType(value: IStructuralType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
+    inline def setParentType(value: IStructuralType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

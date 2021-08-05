@@ -12,19 +12,15 @@ trait ColumnIndex extends StObject {
 }
 object ColumnIndex {
   
-  @scala.inline
-  def apply(columnIndex: Double, rowIndex: Double): ColumnIndex = {
+  inline def apply(columnIndex: Double, rowIndex: Double): ColumnIndex = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnIndex]
   }
   
-  @scala.inline
-  implicit class ColumnIndexMutableBuilder[Self <: ColumnIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnIndex](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

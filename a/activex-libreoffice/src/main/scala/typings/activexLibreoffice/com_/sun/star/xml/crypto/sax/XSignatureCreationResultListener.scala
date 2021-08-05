@@ -25,8 +25,7 @@ trait XSignatureCreationResultListener
 }
 object XSignatureCreationResultListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -36,10 +35,8 @@ object XSignatureCreationResultListener {
     __obj.asInstanceOf[XSignatureCreationResultListener]
   }
   
-  @scala.inline
-  implicit class XSignatureCreationResultListenerMutableBuilder[Self <: XSignatureCreationResultListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSignatureCreationResultListener](x: Self) {
     
-    @scala.inline
-    def setSignatureCreated(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "signatureCreated", js.Any.fromFunction2(value))
+    inline def setSignatureCreated(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "signatureCreated", js.Any.fromFunction2(value))
   }
 }

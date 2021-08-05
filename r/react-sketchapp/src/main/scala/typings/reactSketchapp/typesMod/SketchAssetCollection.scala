@@ -12,19 +12,15 @@ trait SketchAssetCollection extends StObject {
 }
 object SketchAssetCollection {
   
-  @scala.inline
-  def apply(colors: () => js.Array[MSColor], gradients: () => js.Array[MSGradient]): SketchAssetCollection = {
+  inline def apply(colors: () => js.Array[MSColor], gradients: () => js.Array[MSGradient]): SketchAssetCollection = {
     val __obj = js.Dynamic.literal(colors = js.Any.fromFunction0(colors), gradients = js.Any.fromFunction0(gradients))
     __obj.asInstanceOf[SketchAssetCollection]
   }
   
-  @scala.inline
-  implicit class SketchAssetCollectionMutableBuilder[Self <: SketchAssetCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SketchAssetCollection](x: Self) {
     
-    @scala.inline
-    def setColors(value: () => js.Array[MSColor]): Self = StObject.set(x, "colors", js.Any.fromFunction0(value))
+    inline def setColors(value: () => js.Array[MSColor]): Self = StObject.set(x, "colors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGradients(value: () => js.Array[MSGradient]): Self = StObject.set(x, "gradients", js.Any.fromFunction0(value))
+    inline def setGradients(value: () => js.Array[MSGradient]): Self = StObject.set(x, "gradients", js.Any.fromFunction0(value))
   }
 }

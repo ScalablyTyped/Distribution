@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html-to-rtf"
-version := "1.3-dt-20200916Z-fd01cc"
+version := "1.3-dt-20200916Z-f63b5d"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

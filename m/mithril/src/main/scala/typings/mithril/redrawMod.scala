@@ -19,8 +19,7 @@ object redrawMod extends Shortcut {
   }
   object Static {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       redraw: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof redraw */ js.Any,
       render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any
     ): Static = {
@@ -28,14 +27,11 @@ object redrawMod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setRedraw(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof redraw */ js.Any): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
+      inline def setRedraw(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof redraw */ js.Any): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
   

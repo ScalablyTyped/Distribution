@@ -13,16 +13,13 @@ trait UpdateStateMachineOutput extends StObject {
 }
 object UpdateStateMachineOutput {
   
-  @scala.inline
-  def apply(updateDate: Timestamp): UpdateStateMachineOutput = {
+  inline def apply(updateDate: Timestamp): UpdateStateMachineOutput = {
     val __obj = js.Dynamic.literal(updateDate = updateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStateMachineOutput]
   }
   
-  @scala.inline
-  implicit class UpdateStateMachineOutputMutableBuilder[Self <: UpdateStateMachineOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateStateMachineOutput](x: Self) {
     
-    @scala.inline
-    def setUpdateDate(value: Timestamp): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: Timestamp): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
   }
 }

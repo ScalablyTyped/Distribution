@@ -42,31 +42,23 @@ trait AEC extends StObject {
 }
 object AEC {
   
-  @scala.inline
-  def apply(): AEC = {
+  inline def apply(): AEC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AEC]
   }
   
-  @scala.inline
-  implicit class AECMutableBuilder[Self <: AEC] (val x: Self) extends AnyVal {
+  extension [Self <: AEC](x: Self) {
     
-    @scala.inline
-    def setAEC(value: Boolean): Self = StObject.set(x, "AEC", value.asInstanceOf[js.Any])
+    inline def setAEC(value: Boolean): Self = StObject.set(x, "AEC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAECUndefined: Self = StObject.set(x, "AEC", js.undefined)
+    inline def setAECUndefined: Self = StObject.set(x, "AEC", js.undefined)
     
-    @scala.inline
-    def setAGC(value: Boolean): Self = StObject.set(x, "AGC", value.asInstanceOf[js.Any])
+    inline def setAGC(value: Boolean): Self = StObject.set(x, "AGC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAGCUndefined: Self = StObject.set(x, "AGC", js.undefined)
+    inline def setAGCUndefined: Self = StObject.set(x, "AGC", js.undefined)
     
-    @scala.inline
-    def setANS(value: Boolean): Self = StObject.set(x, "ANS", value.asInstanceOf[js.Any])
+    inline def setANS(value: Boolean): Self = StObject.set(x, "ANS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANSUndefined: Self = StObject.set(x, "ANS", js.undefined)
+    inline def setANSUndefined: Self = StObject.set(x, "ANS", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait RenderOption extends StObject {
 }
 object RenderOption {
   
-  @scala.inline
-  def apply(driver: js.Any): RenderOption = {
+  inline def apply(driver: js.Any): RenderOption = {
     val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOption]
   }
   
-  @scala.inline
-  implicit class RenderOptionMutableBuilder[Self <: RenderOption] (val x: Self) extends AnyVal {
+  extension [Self <: RenderOption](x: Self) {
     
-    @scala.inline
-    def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
   }
 }

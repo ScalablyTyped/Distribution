@@ -14,22 +14,17 @@ trait Ca extends StObject {
 }
 object Ca {
   
-  @scala.inline
-  def apply(ca: String, cert: String, key: String): Ca = {
+  inline def apply(ca: String, cert: String, key: String): Ca = {
     val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ca]
   }
   
-  @scala.inline
-  implicit class CaMutableBuilder[Self <: Ca] (val x: Self) extends AnyVal {
+  extension [Self <: Ca](x: Self) {
     
-    @scala.inline
-    def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+    inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

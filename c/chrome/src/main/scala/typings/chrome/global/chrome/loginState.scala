@@ -22,11 +22,9 @@ object loginState {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProfileType(callback: js.Function1[/* profileType */ ProfileType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileType")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getProfileType(callback: js.Function1[/* profileType */ ProfileType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileType")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getSessionState(callback: js.Function1[/* sessionState */ SessionState, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionState")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getSessionState(callback: js.Function1[/* sessionState */ SessionState, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionState")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.loginState.onSessionStateChanged")
   @js.native

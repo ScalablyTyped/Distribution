@@ -257,189 +257,133 @@ trait IPositionable
 }
 object IPositionable {
   
-  @scala.inline
-  def apply(): IPositionable = {
+  inline def apply(): IPositionable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPositionable]
   }
   
-  @scala.inline
-  implicit class IPositionableMutableBuilder[Self <: IPositionable] (val x: Self) extends AnyVal {
+  extension [Self <: IPositionable](x: Self) {
     
-    @scala.inline
-    def setAlignTo(
+    inline def setAlignTo(
       value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable
     ): Self = StObject.set(x, "alignTo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAlignToUndefined: Self = StObject.set(x, "alignTo", js.undefined)
+    inline def setAlignToUndefined: Self = StObject.set(x, "alignTo", js.undefined)
     
-    @scala.inline
-    def setAnchorTo(
+    inline def setAnchorTo(
       value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any], /* monitorScroll */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any]) => IPositionable
     ): Self = StObject.set(x, "anchorTo", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setAnchorToUndefined: Self = StObject.set(x, "anchorTo", js.undefined)
+    inline def setAnchorToUndefined: Self = StObject.set(x, "anchorTo", js.undefined)
     
-    @scala.inline
-    def setCalculateConstrainedPosition(
+    inline def setCalculateConstrainedPosition(
       value: (/* constrainTo */ js.UndefOr[js.Any], /* proposedPosition */ js.UndefOr[Array], /* local */ js.UndefOr[Boolean], /* proposedSize */ js.UndefOr[Array]) => Array
     ): Self = StObject.set(x, "calculateConstrainedPosition", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCalculateConstrainedPositionUndefined: Self = StObject.set(x, "calculateConstrainedPosition", js.undefined)
+    inline def setCalculateConstrainedPositionUndefined: Self = StObject.set(x, "calculateConstrainedPosition", js.undefined)
     
-    @scala.inline
-    def setGetAlignToXY(
+    inline def setGetAlignToXY(
       value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[String], /* offsets */ js.UndefOr[Array]) => Array
     ): Self = StObject.set(x, "getAlignToXY", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAlignToXYUndefined: Self = StObject.set(x, "getAlignToXY", js.undefined)
+    inline def setGetAlignToXYUndefined: Self = StObject.set(x, "getAlignToXY", js.undefined)
     
-    @scala.inline
-    def setGetAnchorXY(
+    inline def setGetAnchorXY(
       value: (/* anchor */ js.UndefOr[String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array
     ): Self = StObject.set(x, "getAnchorXY", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAnchorXYUndefined: Self = StObject.set(x, "getAnchorXY", js.undefined)
+    inline def setGetAnchorXYUndefined: Self = StObject.set(x, "getAnchorXY", js.undefined)
     
-    @scala.inline
-    def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
+    inline def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBoxUndefined: Self = StObject.set(x, "getBox", js.undefined)
+    inline def setGetBoxUndefined: Self = StObject.set(x, "getBox", js.undefined)
     
-    @scala.inline
-    def setGetConstrainVector(
+    inline def setGetConstrainVector(
       value: (/* constrainTo */ js.UndefOr[js.Any], /* proposedPosition */ js.UndefOr[Array], /* proposedSize */ js.UndefOr[Array]) => js.Any
     ): Self = StObject.set(x, "getConstrainVector", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetConstrainVectorUndefined: Self = StObject.set(x, "getConstrainVector", js.undefined)
+    inline def setGetConstrainVectorUndefined: Self = StObject.set(x, "getConstrainVector", js.undefined)
     
-    @scala.inline
-    def setGetLocalX(value: () => Double): Self = StObject.set(x, "getLocalX", js.Any.fromFunction0(value))
+    inline def setGetLocalX(value: () => Double): Self = StObject.set(x, "getLocalX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalXUndefined: Self = StObject.set(x, "getLocalX", js.undefined)
+    inline def setGetLocalXUndefined: Self = StObject.set(x, "getLocalX", js.undefined)
     
-    @scala.inline
-    def setGetLocalXY(value: () => Array): Self = StObject.set(x, "getLocalXY", js.Any.fromFunction0(value))
+    inline def setGetLocalXY(value: () => Array): Self = StObject.set(x, "getLocalXY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalXYUndefined: Self = StObject.set(x, "getLocalXY", js.undefined)
+    inline def setGetLocalXYUndefined: Self = StObject.set(x, "getLocalXY", js.undefined)
     
-    @scala.inline
-    def setGetLocalY(value: () => Double): Self = StObject.set(x, "getLocalY", js.Any.fromFunction0(value))
+    inline def setGetLocalY(value: () => Double): Self = StObject.set(x, "getLocalY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalYUndefined: Self = StObject.set(x, "getLocalY", js.undefined)
+    inline def setGetLocalYUndefined: Self = StObject.set(x, "getLocalY", js.undefined)
     
-    @scala.inline
-    def setGetOffsetsTo(value: /* offsetsTo */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
+    inline def setGetOffsetsTo(value: /* offsetsTo */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOffsetsToUndefined: Self = StObject.set(x, "getOffsetsTo", js.undefined)
+    inline def setGetOffsetsToUndefined: Self = StObject.set(x, "getOffsetsTo", js.undefined)
     
-    @scala.inline
-    def setGetRegion(value: () => IRegion): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
+    inline def setGetRegion(value: () => IRegion): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
+    inline def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
     
-    @scala.inline
-    def setGetViewRegion(value: () => IRegion): Self = StObject.set(x, "getViewRegion", js.Any.fromFunction0(value))
+    inline def setGetViewRegion(value: () => IRegion): Self = StObject.set(x, "getViewRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewRegionUndefined: Self = StObject.set(x, "getViewRegion", js.undefined)
+    inline def setGetViewRegionUndefined: Self = StObject.set(x, "getViewRegion", js.undefined)
     
-    @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+    inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetXUndefined: Self = StObject.set(x, "getX", js.undefined)
+    inline def setGetXUndefined: Self = StObject.set(x, "getX", js.undefined)
     
-    @scala.inline
-    def setGetXY(value: () => Array): Self = StObject.set(x, "getXY", js.Any.fromFunction0(value))
+    inline def setGetXY(value: () => Array): Self = StObject.set(x, "getXY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetXYUndefined: Self = StObject.set(x, "getXY", js.undefined)
+    inline def setGetXYUndefined: Self = StObject.set(x, "getXY", js.undefined)
     
-    @scala.inline
-    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+    inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYUndefined: Self = StObject.set(x, "getY", js.undefined)
+    inline def setGetYUndefined: Self = StObject.set(x, "getY", js.undefined)
     
-    @scala.inline
-    def setMove(
+    inline def setMove(
       value: (/* direction */ js.UndefOr[String], /* distance */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
-    @scala.inline
-    def setRemoveAnchor(value: () => IPositionable): Self = StObject.set(x, "removeAnchor", js.Any.fromFunction0(value))
+    inline def setRemoveAnchor(value: () => IPositionable): Self = StObject.set(x, "removeAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAnchorUndefined: Self = StObject.set(x, "removeAnchor", js.undefined)
+    inline def setRemoveAnchorUndefined: Self = StObject.set(x, "removeAnchor", js.undefined)
     
-    @scala.inline
-    def setSetBox(value: (/* box */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setBox", js.Any.fromFunction2(value))
+    inline def setSetBox(value: (/* box */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setBox", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
+    inline def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
     
-    @scala.inline
-    def setSetLocalX(value: /* x */ js.UndefOr[Double] => IPositionable): Self = StObject.set(x, "setLocalX", js.Any.fromFunction1(value))
+    inline def setSetLocalX(value: /* x */ js.UndefOr[Double] => IPositionable): Self = StObject.set(x, "setLocalX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocalXUndefined: Self = StObject.set(x, "setLocalX", js.undefined)
+    inline def setSetLocalXUndefined: Self = StObject.set(x, "setLocalX", js.undefined)
     
-    @scala.inline
-    def setSetLocalXY(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IPositionable): Self = StObject.set(x, "setLocalXY", js.Any.fromFunction2(value))
+    inline def setSetLocalXY(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IPositionable): Self = StObject.set(x, "setLocalXY", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLocalXYUndefined: Self = StObject.set(x, "setLocalXY", js.undefined)
+    inline def setSetLocalXYUndefined: Self = StObject.set(x, "setLocalXY", js.undefined)
     
-    @scala.inline
-    def setSetLocalY(value: /* y */ js.UndefOr[Double] => IPositionable): Self = StObject.set(x, "setLocalY", js.Any.fromFunction1(value))
+    inline def setSetLocalY(value: /* y */ js.UndefOr[Double] => IPositionable): Self = StObject.set(x, "setLocalY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocalYUndefined: Self = StObject.set(x, "setLocalY", js.undefined)
+    inline def setSetLocalYUndefined: Self = StObject.set(x, "setLocalY", js.undefined)
     
-    @scala.inline
-    def setSetRegion(value: (/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setRegion", js.Any.fromFunction2(value))
+    inline def setSetRegion(value: (/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setRegion", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
+    inline def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
     
-    @scala.inline
-    def setSetX(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setX", js.Any.fromFunction2(value))
+    inline def setSetX(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setX", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetXUndefined: Self = StObject.set(x, "setX", js.undefined)
+    inline def setSetXUndefined: Self = StObject.set(x, "setX", js.undefined)
     
-    @scala.inline
-    def setSetXY(value: (/* pos */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setXY", js.Any.fromFunction2(value))
+    inline def setSetXY(value: (/* pos */ js.UndefOr[Array], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setXY", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetXYUndefined: Self = StObject.set(x, "setXY", js.undefined)
+    inline def setSetXYUndefined: Self = StObject.set(x, "setXY", js.undefined)
     
-    @scala.inline
-    def setSetY(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setY", js.Any.fromFunction2(value))
+    inline def setSetY(value: (/* The */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IPositionable): Self = StObject.set(x, "setY", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetYUndefined: Self = StObject.set(x, "setY", js.undefined)
+    inline def setSetYUndefined: Self = StObject.set(x, "setY", js.undefined)
     
-    @scala.inline
-    def setTranslatePoints(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
+    inline def setTranslatePoints(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTranslatePointsUndefined: Self = StObject.set(x, "translatePoints", js.undefined)
+    inline def setTranslatePointsUndefined: Self = StObject.set(x, "translatePoints", js.undefined)
   }
 }

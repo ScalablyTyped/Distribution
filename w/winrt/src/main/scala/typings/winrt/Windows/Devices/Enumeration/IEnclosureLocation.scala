@@ -14,22 +14,17 @@ trait IEnclosureLocation extends StObject {
 }
 object IEnclosureLocation {
   
-  @scala.inline
-  def apply(inDock: Boolean, inLid: Boolean, panel: Panel): IEnclosureLocation = {
+  inline def apply(inDock: Boolean, inLid: Boolean, panel: Panel): IEnclosureLocation = {
     val __obj = js.Dynamic.literal(inDock = inDock.asInstanceOf[js.Any], inLid = inLid.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnclosureLocation]
   }
   
-  @scala.inline
-  implicit class IEnclosureLocationMutableBuilder[Self <: IEnclosureLocation] (val x: Self) extends AnyVal {
+  extension [Self <: IEnclosureLocation](x: Self) {
     
-    @scala.inline
-    def setInDock(value: Boolean): Self = StObject.set(x, "inDock", value.asInstanceOf[js.Any])
+    inline def setInDock(value: Boolean): Self = StObject.set(x, "inDock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInLid(value: Boolean): Self = StObject.set(x, "inLid", value.asInstanceOf[js.Any])
+    inline def setInLid(value: Boolean): Self = StObject.set(x, "inLid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanel(value: Panel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: Panel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
   }
 }

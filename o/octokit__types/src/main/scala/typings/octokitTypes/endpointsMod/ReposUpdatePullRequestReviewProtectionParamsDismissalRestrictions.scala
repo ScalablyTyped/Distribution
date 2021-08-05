@@ -12,31 +12,23 @@ trait ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions extends 
 }
 object ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions {
   
-  @scala.inline
-  def apply(): ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions = {
+  inline def apply(): ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions]
   }
   
-  @scala.inline
-  implicit class ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictionsMutableBuilder[Self <: ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions](x: Self) {
     
-    @scala.inline
-    def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+    inline def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
+    inline def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
     
-    @scala.inline
-    def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
+    inline def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
     
-    @scala.inline
-    def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

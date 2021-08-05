@@ -18,22 +18,17 @@ trait AwaitPromiseReturnType extends StObject {
 }
 object AwaitPromiseReturnType {
   
-  @scala.inline
-  def apply(result: RemoteObject): AwaitPromiseReturnType = {
+  inline def apply(result: RemoteObject): AwaitPromiseReturnType = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwaitPromiseReturnType]
   }
   
-  @scala.inline
-  implicit class AwaitPromiseReturnTypeMutableBuilder[Self <: AwaitPromiseReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: AwaitPromiseReturnType](x: Self) {
     
-    @scala.inline
-    def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
+    inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
+    inline def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
     
-    @scala.inline
-    def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

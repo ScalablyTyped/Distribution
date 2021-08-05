@@ -15,19 +15,15 @@ trait `26` extends StObject {
 }
 object `26` {
   
-  @scala.inline
-  def apply(failure: Error => js.Any, success: (KiiThing, KiiGroup, Boolean) => js.Any): `26` = {
+  inline def apply(failure: Error => js.Any, success: (KiiThing, KiiGroup, Boolean) => js.Any): `26` = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction3(success))
     __obj.asInstanceOf[`26`]
   }
   
-  @scala.inline
-  implicit class `26MutableBuilder`[Self <: `26`] (val x: Self) extends AnyVal {
+  extension [Self <: `26`](x: Self) {
     
-    @scala.inline
-    def setFailure(value: Error => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
+    inline def setFailure(value: Error => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccess(value: (KiiThing, KiiGroup, Boolean) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+    inline def setSuccess(value: (KiiThing, KiiGroup, Boolean) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
   }
 }

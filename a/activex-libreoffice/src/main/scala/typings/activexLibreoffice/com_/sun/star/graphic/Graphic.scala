@@ -24,8 +24,7 @@ trait Graphic
      with GraphicDescriptor
 object Graphic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alpha: Boolean,
     Animated: Boolean,
     BitsPerPixel: Double,

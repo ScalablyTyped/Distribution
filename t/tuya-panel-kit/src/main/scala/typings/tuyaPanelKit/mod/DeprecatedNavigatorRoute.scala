@@ -13,16 +13,13 @@ trait DeprecatedNavigatorRoute
 }
 object DeprecatedNavigatorRoute {
   
-  @scala.inline
-  def apply(id: String): DeprecatedNavigatorRoute = {
+  inline def apply(id: String): DeprecatedNavigatorRoute = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecatedNavigatorRoute]
   }
   
-  @scala.inline
-  implicit class DeprecatedNavigatorRouteMutableBuilder[Self <: DeprecatedNavigatorRoute] (val x: Self) extends AnyVal {
+  extension [Self <: DeprecatedNavigatorRoute](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

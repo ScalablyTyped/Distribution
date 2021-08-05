@@ -18,25 +18,19 @@ trait GetAssignmentResponse extends StObject {
 }
 object GetAssignmentResponse {
   
-  @scala.inline
-  def apply(): GetAssignmentResponse = {
+  inline def apply(): GetAssignmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAssignmentResponse]
   }
   
-  @scala.inline
-  implicit class GetAssignmentResponseMutableBuilder[Self <: GetAssignmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssignmentResponse](x: Self) {
     
-    @scala.inline
-    def setAssignment(value: Assignment): Self = StObject.set(x, "Assignment", value.asInstanceOf[js.Any])
+    inline def setAssignment(value: Assignment): Self = StObject.set(x, "Assignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentUndefined: Self = StObject.set(x, "Assignment", js.undefined)
+    inline def setAssignmentUndefined: Self = StObject.set(x, "Assignment", js.undefined)
     
-    @scala.inline
-    def setHIT(value: HIT): Self = StObject.set(x, "HIT", value.asInstanceOf[js.Any])
+    inline def setHIT(value: HIT): Self = StObject.set(x, "HIT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITUndefined: Self = StObject.set(x, "HIT", js.undefined)
+    inline def setHITUndefined: Self = StObject.set(x, "HIT", js.undefined)
   }
 }

@@ -26,37 +26,27 @@ trait Translation extends StObject {
 }
 object Translation {
   
-  @scala.inline
-  def apply(): Translation = {
+  inline def apply(): Translation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Translation]
   }
   
-  @scala.inline
-  implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
+  extension [Self <: Translation](x: Self) {
     
-    @scala.inline
-    def setDetectedLanguageCode(value: String): Self = StObject.set(x, "detectedLanguageCode", value.asInstanceOf[js.Any])
+    inline def setDetectedLanguageCode(value: String): Self = StObject.set(x, "detectedLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedLanguageCodeUndefined: Self = StObject.set(x, "detectedLanguageCode", js.undefined)
+    inline def setDetectedLanguageCodeUndefined: Self = StObject.set(x, "detectedLanguageCode", js.undefined)
     
-    @scala.inline
-    def setGlossaryConfig(value: TranslateTextGlossaryConfig): Self = StObject.set(x, "glossaryConfig", value.asInstanceOf[js.Any])
+    inline def setGlossaryConfig(value: TranslateTextGlossaryConfig): Self = StObject.set(x, "glossaryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlossaryConfigUndefined: Self = StObject.set(x, "glossaryConfig", js.undefined)
+    inline def setGlossaryConfigUndefined: Self = StObject.set(x, "glossaryConfig", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
+    inline def setTranslatedText(value: String): Self = StObject.set(x, "translatedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslatedTextUndefined: Self = StObject.set(x, "translatedText", js.undefined)
+    inline def setTranslatedTextUndefined: Self = StObject.set(x, "translatedText", js.undefined)
   }
 }

@@ -108,85 +108,59 @@ trait RangeViewCollectionLoadOptions extends StObject {
 }
 object RangeViewCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): RangeViewCollectionLoadOptions = {
+  inline def apply(): RangeViewCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeViewCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class RangeViewCollectionLoadOptionsMutableBuilder[Self <: RangeViewCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeViewCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCellAddresses(value: Boolean): Self = StObject.set(x, "cellAddresses", value.asInstanceOf[js.Any])
+    inline def setCellAddresses(value: Boolean): Self = StObject.set(x, "cellAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellAddressesUndefined: Self = StObject.set(x, "cellAddresses", js.undefined)
+    inline def setCellAddressesUndefined: Self = StObject.set(x, "cellAddresses", js.undefined)
     
-    @scala.inline
-    def setColumnCount(value: Boolean): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Boolean): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    @scala.inline
-    def setFormulas(value: Boolean): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    inline def setFormulas(value: Boolean): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasLocal(value: Boolean): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    inline def setFormulasLocal(value: Boolean): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
+    inline def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
     
-    @scala.inline
-    def setFormulasR1C1(value: Boolean): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    inline def setFormulasR1C1(value: Boolean): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
+    inline def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
     
-    @scala.inline
-    def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
+    inline def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Boolean): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Boolean): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setValueTypes(value: Boolean): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
+    inline def setValueTypes(value: Boolean): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
+    inline def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
-    @scala.inline
-    def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

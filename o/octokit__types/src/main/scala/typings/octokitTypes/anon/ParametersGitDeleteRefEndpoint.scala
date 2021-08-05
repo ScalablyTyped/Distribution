@@ -17,8 +17,7 @@ trait ParametersGitDeleteRefEndpoint extends StObject {
 }
 object ParametersGitDeleteRefEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GitDeleteRefEndpoint,
     request: GitDeleteRefRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersGitDeleteRefEndpoint {
     __obj.asInstanceOf[ParametersGitDeleteRefEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGitDeleteRefEndpointMutableBuilder[Self <: ParametersGitDeleteRefEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGitDeleteRefEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GitDeleteRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitDeleteRefEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GitDeleteRefRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GitDeleteRefRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

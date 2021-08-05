@@ -17,8 +17,7 @@ trait ArtifactSourceTrigger
 }
 object ArtifactSourceTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactAlias: String,
     triggerConditions: js.Array[ArtifactFilter],
     triggerType: ReleaseTriggerType
@@ -27,16 +26,12 @@ object ArtifactSourceTrigger {
     __obj.asInstanceOf[ArtifactSourceTrigger]
   }
   
-  @scala.inline
-  implicit class ArtifactSourceTriggerMutableBuilder[Self <: ArtifactSourceTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactSourceTrigger](x: Self) {
     
-    @scala.inline
-    def setArtifactAlias(value: String): Self = StObject.set(x, "artifactAlias", value.asInstanceOf[js.Any])
+    inline def setArtifactAlias(value: String): Self = StObject.set(x, "artifactAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerConditions(value: js.Array[ArtifactFilter]): Self = StObject.set(x, "triggerConditions", value.asInstanceOf[js.Any])
+    inline def setTriggerConditions(value: js.Array[ArtifactFilter]): Self = StObject.set(x, "triggerConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerConditionsVarargs(value: ArtifactFilter*): Self = StObject.set(x, "triggerConditions", js.Array(value :_*))
+    inline def setTriggerConditionsVarargs(value: ArtifactFilter*): Self = StObject.set(x, "triggerConditions", js.Array(value :_*))
   }
 }

@@ -31,8 +31,7 @@ trait XFormDocumentsSupplier
 }
 object XFormDocumentsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FormDocuments: XNameAccess,
     acquire: () => Unit,
     getFormDocuments: () => XNameAccess,
@@ -43,13 +42,10 @@ object XFormDocumentsSupplier {
     __obj.asInstanceOf[XFormDocumentsSupplier]
   }
   
-  @scala.inline
-  implicit class XFormDocumentsSupplierMutableBuilder[Self <: XFormDocumentsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XFormDocumentsSupplier](x: Self) {
     
-    @scala.inline
-    def setFormDocuments(value: XNameAccess): Self = StObject.set(x, "FormDocuments", value.asInstanceOf[js.Any])
+    inline def setFormDocuments(value: XNameAccess): Self = StObject.set(x, "FormDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFormDocuments(value: () => XNameAccess): Self = StObject.set(x, "getFormDocuments", js.Any.fromFunction0(value))
+    inline def setGetFormDocuments(value: () => XNameAccess): Self = StObject.set(x, "getFormDocuments", js.Any.fromFunction0(value))
   }
 }

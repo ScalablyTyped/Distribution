@@ -105,59 +105,42 @@ object transitionInterfaceMod {
   }
   object HookMatchCriteria {
     
-    @scala.inline
-    def apply(): HookMatchCriteria = {
+    inline def apply(): HookMatchCriteria = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HookMatchCriteria]
     }
     
-    @scala.inline
-    implicit class HookMatchCriteriaMutableBuilder[Self <: HookMatchCriteria] (val x: Self) extends AnyVal {
+    extension [Self <: HookMatchCriteria](x: Self) {
       
-      @scala.inline
-      def setEntering(value: HookMatchCriterion): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
+      inline def setEntering(value: HookMatchCriterion): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "entering", js.Any.fromFunction2(value))
+      inline def setEnteringFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "entering", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnteringUndefined: Self = StObject.set(x, "entering", js.undefined)
+      inline def setEnteringUndefined: Self = StObject.set(x, "entering", js.undefined)
       
-      @scala.inline
-      def setExiting(value: HookMatchCriterion): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
+      inline def setExiting(value: HookMatchCriterion): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitingFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "exiting", js.Any.fromFunction2(value))
+      inline def setExitingFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "exiting", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExitingUndefined: Self = StObject.set(x, "exiting", js.undefined)
+      inline def setExitingUndefined: Self = StObject.set(x, "exiting", js.undefined)
       
-      @scala.inline
-      def setFrom(value: HookMatchCriterion): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: HookMatchCriterion): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "from", js.Any.fromFunction2(value))
+      inline def setFromFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "from", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setRetained(value: HookMatchCriterion): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
+      inline def setRetained(value: HookMatchCriterion): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainedFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "retained", js.Any.fromFunction2(value))
+      inline def setRetainedFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "retained", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRetainedUndefined: Self = StObject.set(x, "retained", js.undefined)
+      inline def setRetainedUndefined: Self = StObject.set(x, "retained", js.undefined)
       
-      @scala.inline
-      def setTo(value: HookMatchCriterion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: HookMatchCriterion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+      inline def setToFunction2(value: (/* x */ js.UndefOr[StateObject], /* y */ js.UndefOr[Transition]) => Boolean): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -188,32 +171,24 @@ object transitionInterfaceMod {
   }
   object HookRegOptions {
     
-    @scala.inline
-    def apply(): HookRegOptions = {
+    inline def apply(): HookRegOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HookRegOptions]
     }
     
-    @scala.inline
-    implicit class HookRegOptionsMutableBuilder[Self <: HookRegOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HookRegOptions](x: Self) {
       
-      @scala.inline
-      def setBind(value: js.Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: js.Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+      inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
-      @scala.inline
-      def setInvokeLimit(value: Double): Self = StObject.set(x, "invokeLimit", value.asInstanceOf[js.Any])
+      inline def setInvokeLimit(value: Double): Self = StObject.set(x, "invokeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeLimitUndefined: Self = StObject.set(x, "invokeLimit", js.undefined)
+      inline def setInvokeLimitUndefined: Self = StObject.set(x, "invokeLimit", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -682,8 +657,7 @@ object transitionInterfaceMod {
   }
   object IMatchingNodes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entering: js.Array[PathNode],
       exiting: js.Array[PathNode],
       from: js.Array[PathNode],
@@ -694,38 +668,27 @@ object transitionInterfaceMod {
       __obj.asInstanceOf[IMatchingNodes]
     }
     
-    @scala.inline
-    implicit class IMatchingNodesMutableBuilder[Self <: IMatchingNodes] (val x: Self) extends AnyVal {
+    extension [Self <: IMatchingNodes](x: Self) {
       
-      @scala.inline
-      def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
+      inline def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value :_*))
+      inline def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value :_*))
       
-      @scala.inline
-      def setExiting(value: js.Array[PathNode]): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
+      inline def setExiting(value: js.Array[PathNode]): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value :_*))
+      inline def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: js.Array[PathNode]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Array[PathNode]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value :_*))
       
-      @scala.inline
-      def setRetained(value: js.Array[PathNode]): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
+      inline def setRetained(value: js.Array[PathNode]): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value :_*))
+      inline def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value :_*))
       
-      @scala.inline
-      def setTo(value: js.Array[PathNode]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Array[PathNode]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value :_*))
     }
   }
   
@@ -739,20 +702,16 @@ object transitionInterfaceMod {
   }
   object PathType {
     
-    @scala.inline
-    def apply(name: String, scope: TransitionHookScope): PathType = {
+    inline def apply(name: String, scope: TransitionHookScope): PathType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathType]
     }
     
-    @scala.inline
-    implicit class PathTypeMutableBuilder[Self <: PathType] (val x: Self) extends AnyVal {
+    extension [Self <: PathType](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: TransitionHookScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: TransitionHookScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -772,29 +731,22 @@ object transitionInterfaceMod {
   }
   object PathTypes {
     
-    @scala.inline
-    def apply(entering: PathType, exiting: PathType, from: PathType, retained: PathType, to: PathType): PathTypes = {
+    inline def apply(entering: PathType, exiting: PathType, from: PathType, retained: PathType, to: PathType): PathTypes = {
       val __obj = js.Dynamic.literal(entering = entering.asInstanceOf[js.Any], exiting = exiting.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], retained = retained.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathTypes]
     }
     
-    @scala.inline
-    implicit class PathTypesMutableBuilder[Self <: PathTypes] (val x: Self) extends AnyVal {
+    extension [Self <: PathTypes](x: Self) {
       
-      @scala.inline
-      def setEntering(value: PathType): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
+      inline def setEntering(value: PathType): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExiting(value: PathType): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
+      inline def setExiting(value: PathType): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: PathType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: PathType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetained(value: PathType): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
+      inline def setRetained(value: PathType): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: PathType): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: PathType): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -822,56 +774,40 @@ object transitionInterfaceMod {
   }
   object TransitionHookOptions {
     
-    @scala.inline
-    def apply(): TransitionHookOptions = {
+    inline def apply(): TransitionHookOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionHookOptions]
     }
     
-    @scala.inline
-    implicit class TransitionHookOptionsMutableBuilder[Self <: TransitionHookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionHookOptions](x: Self) {
       
-      @scala.inline
-      def setBind(value: js.Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: js.Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+      inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
-      @scala.inline
-      def setCurrent(value: () => Transition): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
+      inline def setCurrent(value: () => Transition): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setHookType(value: String): Self = StObject.set(x, "hookType", value.asInstanceOf[js.Any])
+      inline def setHookType(value: String): Self = StObject.set(x, "hookType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHookTypeUndefined: Self = StObject.set(x, "hookType", js.undefined)
+      inline def setHookTypeUndefined: Self = StObject.set(x, "hookType", js.undefined)
       
-      @scala.inline
-      def setStateHook(value: Boolean): Self = StObject.set(x, "stateHook", value.asInstanceOf[js.Any])
+      inline def setStateHook(value: Boolean): Self = StObject.set(x, "stateHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateHookUndefined: Self = StObject.set(x, "stateHook", js.undefined)
+      inline def setStateHookUndefined: Self = StObject.set(x, "stateHook", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTraceData(value: js.Any): Self = StObject.set(x, "traceData", value.asInstanceOf[js.Any])
+      inline def setTraceData(value: js.Any): Self = StObject.set(x, "traceData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceDataUndefined: Self = StObject.set(x, "traceData", js.undefined)
+      inline def setTraceDataUndefined: Self = StObject.set(x, "traceData", js.undefined)
       
-      @scala.inline
-      def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
   
@@ -967,80 +903,56 @@ object transitionInterfaceMod {
   }
   object TransitionOptions {
     
-    @scala.inline
-    def apply(): TransitionOptions = {
+    inline def apply(): TransitionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionOptions]
     }
     
-    @scala.inline
-    implicit class TransitionOptionsMutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionOptions](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: () => Transition): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
+      inline def setCurrent(value: () => Transition): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+      inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+      inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Boolean | replace): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Boolean | replace): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+      inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
+      inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
       
-      @scala.inline
-      def setRedirectedFrom(value: Transition): Self = StObject.set(x, "redirectedFrom", value.asInstanceOf[js.Any])
+      inline def setRedirectedFrom(value: Transition): Self = StObject.set(x, "redirectedFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectedFromUndefined: Self = StObject.set(x, "redirectedFrom", js.undefined)
+      inline def setRedirectedFromUndefined: Self = StObject.set(x, "redirectedFrom", js.undefined)
       
-      @scala.inline
-      def setRelative(value: String | StateDeclaration | StateObject): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: String | StateDeclaration | StateObject): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setReload(value: Boolean | String | StateDeclaration | StateObject): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+      inline def setReload(value: Boolean | String | StateDeclaration | StateObject): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadState(value: StateObject): Self = StObject.set(x, "reloadState", value.asInstanceOf[js.Any])
+      inline def setReloadState(value: StateObject): Self = StObject.set(x, "reloadState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadStateUndefined: Self = StObject.set(x, "reloadState", js.undefined)
+      inline def setReloadStateUndefined: Self = StObject.set(x, "reloadState", js.undefined)
       
-      @scala.inline
-      def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
+      inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
       
-      @scala.inline
-      def setSource(value: sref | url | redirect | otherwise | unknown): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: sref | url | redirect | otherwise | unknown): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setSupercede(value: Boolean): Self = StObject.set(x, "supercede", value.asInstanceOf[js.Any])
+      inline def setSupercede(value: Boolean): Self = StObject.set(x, "supercede", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupercedeUndefined: Self = StObject.set(x, "supercede", js.undefined)
+      inline def setSupercedeUndefined: Self = StObject.set(x, "supercede", js.undefined)
     }
   }
   
@@ -1099,8 +1011,7 @@ object transitionInterfaceMod {
   }
   object TreeChanges {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entering: js.Array[PathNode],
       exiting: js.Array[PathNode],
       from: js.Array[PathNode],
@@ -1112,44 +1023,31 @@ object transitionInterfaceMod {
       __obj.asInstanceOf[TreeChanges]
     }
     
-    @scala.inline
-    implicit class TreeChangesMutableBuilder[Self <: TreeChanges] (val x: Self) extends AnyVal {
+    extension [Self <: TreeChanges](x: Self) {
       
-      @scala.inline
-      def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
+      inline def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value :_*))
+      inline def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value :_*))
       
-      @scala.inline
-      def setExiting(value: js.Array[PathNode]): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
+      inline def setExiting(value: js.Array[PathNode]): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value :_*))
+      inline def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: js.Array[PathNode]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Array[PathNode]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value :_*))
       
-      @scala.inline
-      def setRetained(value: js.Array[PathNode]): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
+      inline def setRetained(value: js.Array[PathNode]): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value :_*))
+      inline def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value :_*))
       
-      @scala.inline
-      def setRetainedWithToParams(value: js.Array[PathNode]): Self = StObject.set(x, "retainedWithToParams", value.asInstanceOf[js.Any])
+      inline def setRetainedWithToParams(value: js.Array[PathNode]): Self = StObject.set(x, "retainedWithToParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainedWithToParamsVarargs(value: PathNode*): Self = StObject.set(x, "retainedWithToParams", js.Array(value :_*))
+      inline def setRetainedWithToParamsVarargs(value: PathNode*): Self = StObject.set(x, "retainedWithToParams", js.Array(value :_*))
       
-      @scala.inline
-      def setTo(value: js.Array[PathNode]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Array[PathNode]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value :_*))
     }
   }
 }

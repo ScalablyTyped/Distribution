@@ -20,8 +20,7 @@ trait CPHashedData extends StObject {
 }
 object CPHashedData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Algorithm: ValuesOf[CAPICOM_HASH_ALGORITHM],
     DataEncoding: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE],
     Hash: String => Unit,
@@ -32,22 +31,16 @@ object CPHashedData {
     __obj.asInstanceOf[CPHashedData]
   }
   
-  @scala.inline
-  implicit class CPHashedDataMutableBuilder[Self <: CPHashedData] (val x: Self) extends AnyVal {
+  extension [Self <: CPHashedData](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: ValuesOf[CAPICOM_HASH_ALGORITHM]): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: ValuesOf[CAPICOM_HASH_ALGORITHM]): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataEncoding(value: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]): Self = StObject.set(x, "DataEncoding", value.asInstanceOf[js.Any])
+    inline def setDataEncoding(value: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]): Self = StObject.set(x, "DataEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String => Unit): Self = StObject.set(x, "Hash", js.Any.fromFunction1(value))
+    inline def setHash(value: String => Unit): Self = StObject.set(x, "Hash", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHashValue(value: String => Unit): Self = StObject.set(x, "SetHashValue", js.Any.fromFunction1(value))
+    inline def setSetHashValue(value: String => Unit): Self = StObject.set(x, "SetHashValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

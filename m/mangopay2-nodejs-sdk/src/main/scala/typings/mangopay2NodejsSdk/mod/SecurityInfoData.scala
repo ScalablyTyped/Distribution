@@ -10,16 +10,13 @@ trait SecurityInfoData extends StObject {
 }
 object SecurityInfoData {
   
-  @scala.inline
-  def apply(AVSResult: AVSResult): SecurityInfoData = {
+  inline def apply(AVSResult: AVSResult): SecurityInfoData = {
     val __obj = js.Dynamic.literal(AVSResult = AVSResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityInfoData]
   }
   
-  @scala.inline
-  implicit class SecurityInfoDataMutableBuilder[Self <: SecurityInfoData] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityInfoData](x: Self) {
     
-    @scala.inline
-    def setAVSResult(value: AVSResult): Self = StObject.set(x, "AVSResult", value.asInstanceOf[js.Any])
+    inline def setAVSResult(value: AVSResult): Self = StObject.set(x, "AVSResult", value.asInstanceOf[js.Any])
   }
 }

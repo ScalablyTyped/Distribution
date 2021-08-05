@@ -51,52 +51,37 @@ trait EmailOptions extends StObject {
 }
 object EmailOptions {
   
-  @scala.inline
-  def apply(): EmailOptions = {
+  inline def apply(): EmailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailOptions]
   }
   
-  @scala.inline
-  implicit class EmailOptionsMutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmailOptions](x: Self) {
     
-    @scala.inline
-    def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
+    inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
+    inline def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
     
-    @scala.inline
-    def setIgnoreLength(value: Boolean): Self = StObject.set(x, "ignoreLength", value.asInstanceOf[js.Any])
+    inline def setIgnoreLength(value: Boolean): Self = StObject.set(x, "ignoreLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreLengthUndefined: Self = StObject.set(x, "ignoreLength", js.undefined)
+    inline def setIgnoreLengthUndefined: Self = StObject.set(x, "ignoreLength", js.undefined)
     
-    @scala.inline
-    def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
+    inline def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDomainSegmentsUndefined: Self = StObject.set(x, "minDomainSegments", js.undefined)
+    inline def setMinDomainSegmentsUndefined: Self = StObject.set(x, "minDomainSegments", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String | js.Array[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String | js.Array[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setSeparatorVarargs(value: String*): Self = StObject.set(x, "separator", js.Array(value :_*))
+    inline def setSeparatorVarargs(value: String*): Self = StObject.set(x, "separator", js.Array(value :_*))
     
-    @scala.inline
-    def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
+    inline def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
+    inline def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
   }
 }

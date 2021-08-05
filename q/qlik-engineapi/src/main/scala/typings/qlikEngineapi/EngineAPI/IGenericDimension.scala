@@ -69,8 +69,7 @@ trait IGenericDimension extends StObject {
 }
 object IGenericDimension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyPatches: js.Array[INxPatch] => js.Promise[Unit],
     getDimension: () => js.Promise[IGenericDimensionProperties],
     getInfo: () => js.Promise[INxInfo],
@@ -85,34 +84,24 @@ object IGenericDimension {
     __obj.asInstanceOf[IGenericDimension]
   }
   
-  @scala.inline
-  implicit class IGenericDimensionMutableBuilder[Self <: IGenericDimension] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericDimension](x: Self) {
     
-    @scala.inline
-    def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
+    inline def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDimension(value: () => js.Promise[IGenericDimensionProperties]): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
+    inline def setGetDimension(value: () => js.Promise[IGenericDimensionProperties]): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayout(value: () => js.Promise[IGenericDimensionLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => js.Promise[IGenericDimensionLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLinkedObjects(value: () => js.Promise[js.Array[INxLinkedObjectInfo]]): Self = StObject.set(x, "getLinkedObjects", js.Any.fromFunction0(value))
+    inline def setGetLinkedObjects(value: () => js.Promise[js.Array[INxLinkedObjectInfo]]): Self = StObject.set(x, "getLinkedObjects", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProperties(value: () => js.Promise[IGenericDimensionProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => js.Promise[IGenericDimensionProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
+    inline def setPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetProperties(value: () => js.Promise[IGenericDimensionProperties]): Self = StObject.set(x, "setProperties", js.Any.fromFunction0(value))
+    inline def setSetProperties(value: () => js.Promise[IGenericDimensionProperties]): Self = StObject.set(x, "setProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "unPublish", js.Any.fromFunction0(value))
+    inline def setUnPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "unPublish", js.Any.fromFunction0(value))
   }
 }

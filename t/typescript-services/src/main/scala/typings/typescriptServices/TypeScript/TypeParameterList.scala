@@ -12,8 +12,7 @@ trait TypeParameterList
 }
 object TypeParameterList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -40,10 +39,8 @@ object TypeParameterList {
     __obj.asInstanceOf[TypeParameterList]
   }
   
-  @scala.inline
-  implicit class TypeParameterListMutableBuilder[Self <: TypeParameterList] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParameterList](x: Self) {
     
-    @scala.inline
-    def setTypeParameters(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
   }
 }

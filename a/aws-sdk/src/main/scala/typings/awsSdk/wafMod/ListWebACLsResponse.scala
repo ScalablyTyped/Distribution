@@ -18,28 +18,21 @@ trait ListWebACLsResponse extends StObject {
 }
 object ListWebACLsResponse {
   
-  @scala.inline
-  def apply(): ListWebACLsResponse = {
+  inline def apply(): ListWebACLsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWebACLsResponse]
   }
   
-  @scala.inline
-  implicit class ListWebACLsResponseMutableBuilder[Self <: ListWebACLsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWebACLsResponse](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setWebACLs(value: WebACLSummaries): Self = StObject.set(x, "WebACLs", value.asInstanceOf[js.Any])
+    inline def setWebACLs(value: WebACLSummaries): Self = StObject.set(x, "WebACLs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLsUndefined: Self = StObject.set(x, "WebACLs", js.undefined)
+    inline def setWebACLsUndefined: Self = StObject.set(x, "WebACLs", js.undefined)
     
-    @scala.inline
-    def setWebACLsVarargs(value: WebACLSummary*): Self = StObject.set(x, "WebACLs", js.Array(value :_*))
+    inline def setWebACLsVarargs(value: WebACLSummary*): Self = StObject.set(x, "WebACLs", js.Array(value :_*))
   }
 }

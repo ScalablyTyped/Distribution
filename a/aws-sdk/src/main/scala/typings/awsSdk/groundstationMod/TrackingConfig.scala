@@ -13,16 +13,13 @@ trait TrackingConfig extends StObject {
 }
 object TrackingConfig {
   
-  @scala.inline
-  def apply(autotrack: Criticality): TrackingConfig = {
+  inline def apply(autotrack: Criticality): TrackingConfig = {
     val __obj = js.Dynamic.literal(autotrack = autotrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackingConfig]
   }
   
-  @scala.inline
-  implicit class TrackingConfigMutableBuilder[Self <: TrackingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TrackingConfig](x: Self) {
     
-    @scala.inline
-    def setAutotrack(value: Criticality): Self = StObject.set(x, "autotrack", value.asInstanceOf[js.Any])
+    inline def setAutotrack(value: Criticality): Self = StObject.set(x, "autotrack", value.asInstanceOf[js.Any])
   }
 }

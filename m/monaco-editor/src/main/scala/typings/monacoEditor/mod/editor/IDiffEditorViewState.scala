@@ -14,25 +14,19 @@ trait IDiffEditorViewState
 }
 object IDiffEditorViewState {
   
-  @scala.inline
-  def apply(): IDiffEditorViewState = {
+  inline def apply(): IDiffEditorViewState = {
     val __obj = js.Dynamic.literal(modified = null, original = null)
     __obj.asInstanceOf[IDiffEditorViewState]
   }
   
-  @scala.inline
-  implicit class IDiffEditorViewStateMutableBuilder[Self <: IDiffEditorViewState] (val x: Self) extends AnyVal {
+  extension [Self <: IDiffEditorViewState](x: Self) {
     
-    @scala.inline
-    def setModified(value: ICodeEditorViewState): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: ICodeEditorViewState): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedNull: Self = StObject.set(x, "modified", null)
+    inline def setModifiedNull: Self = StObject.set(x, "modified", null)
     
-    @scala.inline
-    def setOriginal(value: ICodeEditorViewState): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: ICodeEditorViewState): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalNull: Self = StObject.set(x, "original", null)
+    inline def setOriginalNull: Self = StObject.set(x, "original", null)
   }
 }

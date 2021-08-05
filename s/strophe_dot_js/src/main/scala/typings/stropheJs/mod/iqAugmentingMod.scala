@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iqAugmentingMod {
   
-  @scala.inline
-  def apply(): Builder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Builder]
-  @scala.inline
-  def apply(attrs: js.Any): Builder = ^.asInstanceOf[js.Dynamic].apply(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  inline def apply(): Builder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Builder]
+  inline def apply(attrs: js.Any): Builder = ^.asInstanceOf[js.Dynamic].apply(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
   @JSImport("$iq", JSImport.Namespace)
   @js.native

@@ -13,19 +13,15 @@ trait StartMailboxExportJobResponse extends StObject {
 }
 object StartMailboxExportJobResponse {
   
-  @scala.inline
-  def apply(): StartMailboxExportJobResponse = {
+  inline def apply(): StartMailboxExportJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartMailboxExportJobResponse]
   }
   
-  @scala.inline
-  implicit class StartMailboxExportJobResponseMutableBuilder[Self <: StartMailboxExportJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartMailboxExportJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: MailboxExportJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: MailboxExportJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

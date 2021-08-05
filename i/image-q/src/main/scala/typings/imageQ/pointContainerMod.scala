@@ -16,11 +16,11 @@ object pointContainerMod {
   @js.native
   class PointContainer () extends StObject {
     
-    var _height: js.Any = js.native
+    /* private */ var _height: js.Any = js.native
     
-    val _pointArray: js.Any = js.native
+    /* private */ val _pointArray: js.Any = js.native
     
-    var _width: js.Any = js.native
+    /* private */ var _width: js.Any = js.native
     
     def getHeight(): Double = js.native
     
@@ -43,28 +43,20 @@ object pointContainerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromArray(byteArray: js.Array[Double], width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(byteArray.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
+    inline def fromArray(byteArray: js.Array[Double], width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(byteArray.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
     
-    @scala.inline
-    def fromCanvasPixelArray(data: js.Any, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCanvasPixelArray")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
+    inline def fromCanvasPixelArray(data: js.Any, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCanvasPixelArray")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
     
-    @scala.inline
-    def fromHTMLCanvasElement(canvas: HTMLCanvasElement): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLCanvasElement")(canvas.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
+    inline def fromHTMLCanvasElement(canvas: HTMLCanvasElement): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLCanvasElement")(canvas.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @scala.inline
-    def fromHTMLImageElement(img: HTMLImageElement): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLImageElement")(img.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
+    inline def fromHTMLImageElement(img: HTMLImageElement): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLImageElement")(img.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @scala.inline
-    def fromImageData(imageData: ImageData): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImageData")(imageData.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
+    inline def fromImageData(imageData: ImageData): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImageData")(imageData.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @scala.inline
-    def fromNodeCanvas(canvas: js.Any): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
+    inline def fromNodeCanvas(canvas: js.Any): PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[PointContainer]
     
-    @scala.inline
-    def fromUint32Array(uint32array: Uint32Array, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint32Array")(uint32array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
+    inline def fromUint32Array(uint32array: Uint32Array, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint32Array")(uint32array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
     
-    @scala.inline
-    def fromUint8Array(uint8array: Uint8Array, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
+    inline def fromUint8Array(uint8array: Uint8Array, width: Double, height: Double): PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[PointContainer]
   }
 }

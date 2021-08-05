@@ -83,8 +83,7 @@ object mod {
   }
   object Scripto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       eval: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit,
       evalSha: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit,
       load: Scripts => Unit,
@@ -96,30 +95,23 @@ object mod {
       __obj.asInstanceOf[Scripto]
     }
     
-    @scala.inline
-    implicit class ScriptoMutableBuilder[Self <: Scripto] (val x: Self) extends AnyVal {
+    extension [Self <: Scripto](x: Self) {
       
-      @scala.inline
-      def setEval(
+      inline def setEval(
         value: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "eval", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setEvalSha(
+      inline def setEvalSha(
         value: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "evalSha", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setLoad(value: Scripts => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: Scripts => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadFromDir(value: String => Unit): Self = StObject.set(x, "loadFromDir", js.Any.fromFunction1(value))
+      inline def setLoadFromDir(value: String => Unit): Self = StObject.set(x, "loadFromDir", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadFromFile(value: (String, String) => Unit): Self = StObject.set(x, "loadFromFile", js.Any.fromFunction2(value))
+      inline def setLoadFromFile(value: (String, String) => Unit): Self = StObject.set(x, "loadFromFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRun(
+      inline def setRun(
         value: (String, js.Array[String], js.Array[js.Any], js.Function2[/* err */ Error, /* result */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "run", js.Any.fromFunction4(value))
     }

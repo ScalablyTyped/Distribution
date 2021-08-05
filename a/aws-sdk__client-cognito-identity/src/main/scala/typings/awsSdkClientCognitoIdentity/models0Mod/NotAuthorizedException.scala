@@ -26,8 +26,7 @@ trait NotAuthorizedException
 }
 object NotAuthorizedException {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): NotAuthorizedException = {
+  inline def apply($metadata: ResponseMetadata): NotAuthorizedException = {
     val __obj = js.Dynamic.literal($fault = "client", $metadata = $metadata.asInstanceOf[js.Any], name = "NotAuthorizedException")
     __obj.asInstanceOf[NotAuthorizedException]
   }
@@ -36,23 +35,17 @@ object NotAuthorizedException {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: NotAuthorizedException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: NotAuthorizedException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class NotAuthorizedExceptionMutableBuilder[Self <: NotAuthorizedException] (val x: Self) extends AnyVal {
+  extension [Self <: NotAuthorizedException](x: Self) {
     
-    @scala.inline
-    def set$fault(value: client): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
+    inline def set$fault(value: client): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(
+    inline def setName(
       value: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.NotAuthorizedException
     ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

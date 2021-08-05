@@ -37,8 +37,7 @@ trait XSubTotalField
 }
 object XSubTotalField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GroupColumn: Double,
     SubTotalColumns: SafeArray[SubTotalColumn],
     acquire: () => Unit,
@@ -53,25 +52,18 @@ object XSubTotalField {
     __obj.asInstanceOf[XSubTotalField]
   }
   
-  @scala.inline
-  implicit class XSubTotalFieldMutableBuilder[Self <: XSubTotalField] (val x: Self) extends AnyVal {
+  extension [Self <: XSubTotalField](x: Self) {
     
-    @scala.inline
-    def setGetGroupColumn(value: () => Double): Self = StObject.set(x, "getGroupColumn", js.Any.fromFunction0(value))
+    inline def setGetGroupColumn(value: () => Double): Self = StObject.set(x, "getGroupColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubTotalColumns(value: () => SafeArray[SubTotalColumn]): Self = StObject.set(x, "getSubTotalColumns", js.Any.fromFunction0(value))
+    inline def setGetSubTotalColumns(value: () => SafeArray[SubTotalColumn]): Self = StObject.set(x, "getSubTotalColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroupColumn(value: Double): Self = StObject.set(x, "GroupColumn", value.asInstanceOf[js.Any])
+    inline def setGroupColumn(value: Double): Self = StObject.set(x, "GroupColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetGroupColumn(value: Double => Unit): Self = StObject.set(x, "setGroupColumn", js.Any.fromFunction1(value))
+    inline def setSetGroupColumn(value: Double => Unit): Self = StObject.set(x, "setGroupColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubTotalColumns(value: SeqEquiv[SubTotalColumn] => Unit): Self = StObject.set(x, "setSubTotalColumns", js.Any.fromFunction1(value))
+    inline def setSetSubTotalColumns(value: SeqEquiv[SubTotalColumn] => Unit): Self = StObject.set(x, "setSubTotalColumns", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubTotalColumns(value: SafeArray[SubTotalColumn]): Self = StObject.set(x, "SubTotalColumns", value.asInstanceOf[js.Any])
+    inline def setSubTotalColumns(value: SafeArray[SubTotalColumn]): Self = StObject.set(x, "SubTotalColumns", value.asInstanceOf[js.Any])
   }
 }

@@ -53,60 +53,43 @@ trait PermissionProfile extends StObject {
 }
 object PermissionProfile {
   
-  @scala.inline
-  def apply(): PermissionProfile = {
+  inline def apply(): PermissionProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionProfile]
   }
   
-  @scala.inline
-  implicit class PermissionProfileMutableBuilder[Self <: PermissionProfile] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionProfile](x: Self) {
     
-    @scala.inline
-    def setModifiedByUsername(value: String): Self = StObject.set(x, "modifiedByUsername", value.asInstanceOf[js.Any])
+    inline def setModifiedByUsername(value: String): Self = StObject.set(x, "modifiedByUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedByUsernameUndefined: Self = StObject.set(x, "modifiedByUsername", js.undefined)
+    inline def setModifiedByUsernameUndefined: Self = StObject.set(x, "modifiedByUsername", js.undefined)
     
-    @scala.inline
-    def setModifiedDateTime(value: String): Self = StObject.set(x, "modifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setModifiedDateTime(value: String): Self = StObject.set(x, "modifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDateTimeUndefined: Self = StObject.set(x, "modifiedDateTime", js.undefined)
+    inline def setModifiedDateTimeUndefined: Self = StObject.set(x, "modifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setPermissionProfileId(value: String): Self = StObject.set(x, "permissionProfileId", value.asInstanceOf[js.Any])
+    inline def setPermissionProfileId(value: String): Self = StObject.set(x, "permissionProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionProfileIdUndefined: Self = StObject.set(x, "permissionProfileId", js.undefined)
+    inline def setPermissionProfileIdUndefined: Self = StObject.set(x, "permissionProfileId", js.undefined)
     
-    @scala.inline
-    def setPermissionProfileName(value: String): Self = StObject.set(x, "permissionProfileName", value.asInstanceOf[js.Any])
+    inline def setPermissionProfileName(value: String): Self = StObject.set(x, "permissionProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionProfileNameUndefined: Self = StObject.set(x, "permissionProfileName", js.undefined)
+    inline def setPermissionProfileNameUndefined: Self = StObject.set(x, "permissionProfileName", js.undefined)
     
-    @scala.inline
-    def setSettings(
+    inline def setSettings(
       value: /* This object defines account permissions for users who are associated with the account permission profile.  */ AccountRoleSettings
     ): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setUserCount(value: String): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])
+    inline def setUserCount(value: String): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCountUndefined: Self = StObject.set(x, "userCount", js.undefined)
+    inline def setUserCountUndefined: Self = StObject.set(x, "userCount", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[UserInformation]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UserInformation]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: UserInformation*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserInformation*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

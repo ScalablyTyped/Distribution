@@ -53,54 +53,47 @@ object xmlElementMod {
   }
   object IXmlElementOptions {
     
-    @scala.inline
-    def apply(name: String): IXmlElementOptions = {
+    inline def apply(name: String): IXmlElementOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlElementOptions]
     }
     
-    @scala.inline
-    implicit class IXmlElementOptionsMutableBuilder[Self <: IXmlElementOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlElementOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInvalidCharsInName(value: Boolean): Self = StObject.set(x, "replaceInvalidCharsInName", value.asInstanceOf[js.Any])
+      inline def setReplaceInvalidCharsInName(value: Boolean): Self = StObject.set(x, "replaceInvalidCharsInName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInvalidCharsInNameUndefined: Self = StObject.set(x, "replaceInvalidCharsInName", js.undefined)
+      inline def setReplaceInvalidCharsInNameUndefined: Self = StObject.set(x, "replaceInvalidCharsInName", js.undefined)
       
-      @scala.inline
-      def setUseSelfClosingTagIfEmpty(value: Boolean): Self = StObject.set(x, "useSelfClosingTagIfEmpty", value.asInstanceOf[js.Any])
+      inline def setUseSelfClosingTagIfEmpty(value: Boolean): Self = StObject.set(x, "useSelfClosingTagIfEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSelfClosingTagIfEmptyUndefined: Self = StObject.set(x, "useSelfClosingTagIfEmpty", js.undefined)
+      inline def setUseSelfClosingTagIfEmptyUndefined: Self = StObject.set(x, "useSelfClosingTagIfEmpty", js.undefined)
     }
   }
   
   @js.native
   trait XmlElement[Parent] extends StObject {
     
-    val _attributeNames: js.Any = js.native
+    /* private */ val _attributeNames: js.Any = js.native
     
-    val _children: js.Any = js.native
+    /* private */ val _children: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _replaceInvalidCharsInName: js.Any = js.native
+    /* private */ val _replaceInvalidCharsInName: js.Any = js.native
     
-    val _useSelfClosingTagIfEmpty: js.Any = js.native
+    /* private */ val _useSelfClosingTagIfEmpty: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Returns true if the specified nodes are all character references,
       * entity references, or character data.
       */
-    var allSameLineNodes: js.Any = js.native
+    /* private */ var allSameLineNodes: js.Any = js.native
     
     /**
       * Adds an attribute to this element and returns the new attribute.
@@ -152,7 +145,7 @@ object xmlElementMod {
       * Returns true if the specified nodes are all character references,
       * entity references, or character data.
       */
-    var onSameLine: js.Any = js.native
+    /* private */ var onSameLine: js.Any = js.native
     
     /**
       * Adds a processing instruction to this element and returns the new
@@ -166,7 +159,7 @@ object xmlElementMod {
       * Returns an XML string representation of this element using the specified
       * options and initial indent.
       */
-    var toStringWithIndent: js.Any = js.native
+    /* private */ var toStringWithIndent: js.Any = js.native
     
     /**
       * Returns the parent of this element.

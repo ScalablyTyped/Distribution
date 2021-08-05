@@ -14,10 +14,8 @@ object utilMod {
   /**
     * Returns the name of the correct transform property to use on the current browser.
     */
-  @scala.inline
-  def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any]).asInstanceOf[CssTransformPropertyName]
-  @scala.inline
-  def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[CssTransformPropertyName]
+  inline def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any]).asInstanceOf[CssTransformPropertyName]
+  inline def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[CssTransformPropertyName]
   
   /**
     * @license
@@ -48,10 +46,8 @@ object utilMod {
   trait CssTransformPropertyName extends StObject
   object CssTransformPropertyName {
     
-    @scala.inline
-    def transform: typings.materialMenuSurface.materialMenuSurfaceStrings.transform = "transform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.transform]
+    inline def transform: typings.materialMenuSurface.materialMenuSurfaceStrings.transform = "transform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.transform]
     
-    @scala.inline
-    def webkitTransform: typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform = "webkitTransform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform]
+    inline def webkitTransform: typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform = "webkitTransform".asInstanceOf[typings.materialMenuSurface.materialMenuSurfaceStrings.webkitTransform]
   }
 }

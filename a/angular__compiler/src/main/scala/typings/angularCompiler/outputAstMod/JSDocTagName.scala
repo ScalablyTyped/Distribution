@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSDocTagName extends StObject
 object JSDocTagName {
   
-  @scala.inline
-  def Desc: desc = "desc".asInstanceOf[desc]
+  inline def Desc: desc = "desc".asInstanceOf[desc]
   
-  @scala.inline
-  def Id: id = "id".asInstanceOf[id]
+  inline def Id: id = "id".asInstanceOf[id]
   
-  @scala.inline
-  def Meaning: meaning = "meaning".asInstanceOf[meaning]
+  inline def Meaning: meaning = "meaning".asInstanceOf[meaning]
 }

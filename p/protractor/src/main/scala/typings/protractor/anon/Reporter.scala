@@ -15,25 +15,19 @@ trait Reporter
 }
 object Reporter {
   
-  @scala.inline
-  def apply(): Reporter = {
+  inline def apply(): Reporter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Reporter]
   }
   
-  @scala.inline
-  implicit class ReporterMutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
+  extension [Self <: Reporter](x: Self) {
     
-    @scala.inline
-    def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
-    @scala.inline
-    def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait AnimationSettings extends StObject {
 }
 object AnimationSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     prefersReducedMotion: Boolean,
     scrollAnimationsEnabledBySystem: Boolean,
     shouldRenderRichAnimation: Boolean
@@ -36,16 +35,12 @@ object AnimationSettings {
     __obj.asInstanceOf[AnimationSettings]
   }
   
-  @scala.inline
-  implicit class AnimationSettingsMutableBuilder[Self <: AnimationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationSettings](x: Self) {
     
-    @scala.inline
-    def setPrefersReducedMotion(value: Boolean): Self = StObject.set(x, "prefersReducedMotion", value.asInstanceOf[js.Any])
+    inline def setPrefersReducedMotion(value: Boolean): Self = StObject.set(x, "prefersReducedMotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollAnimationsEnabledBySystem(value: Boolean): Self = StObject.set(x, "scrollAnimationsEnabledBySystem", value.asInstanceOf[js.Any])
+    inline def setScrollAnimationsEnabledBySystem(value: Boolean): Self = StObject.set(x, "scrollAnimationsEnabledBySystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRenderRichAnimation(value: Boolean): Self = StObject.set(x, "shouldRenderRichAnimation", value.asInstanceOf[js.Any])
+    inline def setShouldRenderRichAnimation(value: Boolean): Self = StObject.set(x, "shouldRenderRichAnimation", value.asInstanceOf[js.Any])
   }
 }

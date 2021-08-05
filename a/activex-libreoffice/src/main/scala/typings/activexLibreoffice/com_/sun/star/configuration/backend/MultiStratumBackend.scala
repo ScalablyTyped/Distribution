@@ -18,8 +18,7 @@ trait MultiStratumBackend
      with XInitialization
 object MultiStratumBackend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdminEntity: String,
     OwnerEntity: String,
     acquire: () => Unit,

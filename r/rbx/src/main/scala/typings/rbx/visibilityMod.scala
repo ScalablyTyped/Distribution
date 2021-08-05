@@ -14,10 +14,8 @@ object visibilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
-  @scala.inline
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  inline def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/visibility", "makeValidatingTransform")
   @js.native
@@ -37,32 +35,24 @@ object visibilityMod {
   }
   object VisibilityHelpersProps {
     
-    @scala.inline
-    def apply(): VisibilityHelpersProps = {
+    inline def apply(): VisibilityHelpersProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VisibilityHelpersProps]
     }
     
-    @scala.inline
-    implicit class VisibilityHelpersPropsMutableBuilder[Self <: VisibilityHelpersProps] (val x: Self) extends AnyVal {
+    extension [Self <: VisibilityHelpersProps](x: Self) {
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+      inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+      inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
       
-      @scala.inline
-      def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
+      inline def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
+      inline def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
     }
   }
 }

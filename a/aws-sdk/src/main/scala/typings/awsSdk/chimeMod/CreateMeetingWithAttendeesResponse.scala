@@ -20,37 +20,27 @@ trait CreateMeetingWithAttendeesResponse extends StObject {
 }
 object CreateMeetingWithAttendeesResponse {
   
-  @scala.inline
-  def apply(): CreateMeetingWithAttendeesResponse = {
+  inline def apply(): CreateMeetingWithAttendeesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMeetingWithAttendeesResponse]
   }
   
-  @scala.inline
-  implicit class CreateMeetingWithAttendeesResponseMutableBuilder[Self <: CreateMeetingWithAttendeesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMeetingWithAttendeesResponse](x: Self) {
     
-    @scala.inline
-    def setAttendees(value: AttendeeList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
+    inline def setAttendees(value: AttendeeList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttendeesUndefined: Self = StObject.set(x, "Attendees", js.undefined)
+    inline def setAttendeesUndefined: Self = StObject.set(x, "Attendees", js.undefined)
     
-    @scala.inline
-    def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: BatchCreateAttendeeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchCreateAttendeeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: CreateAttendeeError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: CreateAttendeeError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
-    @scala.inline
-    def setMeeting(value: Meeting): Self = StObject.set(x, "Meeting", value.asInstanceOf[js.Any])
+    inline def setMeeting(value: Meeting): Self = StObject.set(x, "Meeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingUndefined: Self = StObject.set(x, "Meeting", js.undefined)
+    inline def setMeetingUndefined: Self = StObject.set(x, "Meeting", js.undefined)
   }
 }

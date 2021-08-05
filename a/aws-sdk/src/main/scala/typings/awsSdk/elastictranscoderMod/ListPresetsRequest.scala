@@ -18,25 +18,19 @@ trait ListPresetsRequest extends StObject {
 }
 object ListPresetsRequest {
   
-  @scala.inline
-  def apply(): ListPresetsRequest = {
+  inline def apply(): ListPresetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPresetsRequest]
   }
   
-  @scala.inline
-  implicit class ListPresetsRequestMutableBuilder[Self <: ListPresetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPresetsRequest](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "Ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "Ascending", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: Id): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: Id): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
   }
 }

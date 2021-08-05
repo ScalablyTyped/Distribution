@@ -8,16 +8,13 @@ object reactTwitterAuthStrings {
   
   @js.native
   sealed trait include extends StObject
-  @scala.inline
-  def include: include = "include".asInstanceOf[include]
+  inline def include: include = "include".asInstanceOf[include]
   
   @js.native
   sealed trait omit extends StObject
-  @scala.inline
-  def omit: omit = "omit".asInstanceOf[omit]
+  inline def omit: omit = "omit".asInstanceOf[omit]
   
   @js.native
   sealed trait `same-origin` extends StObject
-  @scala.inline
-  def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  inline def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
 }

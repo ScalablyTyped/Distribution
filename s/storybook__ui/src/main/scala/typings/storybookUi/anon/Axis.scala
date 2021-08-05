@@ -12,19 +12,15 @@ trait Axis extends StObject {
 }
 object Axis {
   
-  @scala.inline
-  def apply(axis: typings.storybookUi.draggersMod.Axis, isDragging: Boolean): Axis = {
+  inline def apply(axis: typings.storybookUi.draggersMod.Axis, isDragging: Boolean): Axis = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any])
     __obj.asInstanceOf[Axis]
   }
   
-  @scala.inline
-  implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
+  extension [Self <: Axis](x: Self) {
     
-    @scala.inline
-    def setAxis(value: typings.storybookUi.draggersMod.Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: typings.storybookUi.draggersMod.Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+    inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
   }
 }

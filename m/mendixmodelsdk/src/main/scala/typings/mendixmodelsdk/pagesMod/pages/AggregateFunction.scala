@@ -21,41 +21,35 @@ object AggregateFunction {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AggregateFunction.Average")
   @js.native
   def Average: AggregateFunction = js.native
-  @scala.inline
-  def Average_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Average")(x.asInstanceOf[js.Any])
+  inline def Average_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Average")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AggregateFunction.Count")
   @js.native
   def Count: AggregateFunction = js.native
-  @scala.inline
-  def Count_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
+  inline def Count_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AggregateFunction.Maximum")
   @js.native
   def Maximum: AggregateFunction = js.native
-  @scala.inline
-  def Maximum_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Maximum")(x.asInstanceOf[js.Any])
+  inline def Maximum_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Maximum")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AggregateFunction.Minimum")
   @js.native
   def Minimum: AggregateFunction = js.native
-  @scala.inline
-  def Minimum_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimum")(x.asInstanceOf[js.Any])
+  inline def Minimum_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimum")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AggregateFunction.None")
   @js.native
   def None: AggregateFunction = js.native
-  @scala.inline
-  def None_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AggregateFunction.Sum")
   @js.native
   def Sum: AggregateFunction = js.native
-  @scala.inline
-  def Sum_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sum")(x.asInstanceOf[js.Any])
+  inline def Sum_=(x: AggregateFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sum")(x.asInstanceOf[js.Any])
 }

@@ -18,13 +18,10 @@ object SharedVolume {
   @js.native
   val ^ : SharedVolumeConstructor = js.native
   
-  @scala.inline
-  implicit class SharedVolumeMutableBuilder[Self <: SharedVolume] (val x: Self) extends AnyVal {
+  extension [Self <: SharedVolume](x: Self) {
     
-    @scala.inline
-    def setKind(value: typings.pulumiCloud.pulumiCloudStrings.SharedVolume): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiCloud.pulumiCloudStrings.SharedVolume): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

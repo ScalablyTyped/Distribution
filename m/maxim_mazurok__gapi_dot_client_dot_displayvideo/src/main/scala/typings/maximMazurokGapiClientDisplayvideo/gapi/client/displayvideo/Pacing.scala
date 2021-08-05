@@ -29,37 +29,27 @@ trait Pacing extends StObject {
 }
 object Pacing {
   
-  @scala.inline
-  def apply(): Pacing = {
+  inline def apply(): Pacing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pacing]
   }
   
-  @scala.inline
-  implicit class PacingMutableBuilder[Self <: Pacing] (val x: Self) extends AnyVal {
+  extension [Self <: Pacing](x: Self) {
     
-    @scala.inline
-    def setDailyMaxImpressions(value: String): Self = StObject.set(x, "dailyMaxImpressions", value.asInstanceOf[js.Any])
+    inline def setDailyMaxImpressions(value: String): Self = StObject.set(x, "dailyMaxImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyMaxImpressionsUndefined: Self = StObject.set(x, "dailyMaxImpressions", js.undefined)
+    inline def setDailyMaxImpressionsUndefined: Self = StObject.set(x, "dailyMaxImpressions", js.undefined)
     
-    @scala.inline
-    def setDailyMaxMicros(value: String): Self = StObject.set(x, "dailyMaxMicros", value.asInstanceOf[js.Any])
+    inline def setDailyMaxMicros(value: String): Self = StObject.set(x, "dailyMaxMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyMaxMicrosUndefined: Self = StObject.set(x, "dailyMaxMicros", js.undefined)
+    inline def setDailyMaxMicrosUndefined: Self = StObject.set(x, "dailyMaxMicros", js.undefined)
     
-    @scala.inline
-    def setPacingPeriod(value: String): Self = StObject.set(x, "pacingPeriod", value.asInstanceOf[js.Any])
+    inline def setPacingPeriod(value: String): Self = StObject.set(x, "pacingPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacingPeriodUndefined: Self = StObject.set(x, "pacingPeriod", js.undefined)
+    inline def setPacingPeriodUndefined: Self = StObject.set(x, "pacingPeriod", js.undefined)
     
-    @scala.inline
-    def setPacingType(value: String): Self = StObject.set(x, "pacingType", value.asInstanceOf[js.Any])
+    inline def setPacingType(value: String): Self = StObject.set(x, "pacingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacingTypeUndefined: Self = StObject.set(x, "pacingType", js.undefined)
+    inline def setPacingTypeUndefined: Self = StObject.set(x, "pacingType", js.undefined)
   }
 }

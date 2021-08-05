@@ -16,20 +16,16 @@ trait ArmSetendOperand
 }
 object ArmSetendOperand {
   
-  @scala.inline
-  def apply(subtracted: Boolean, value: Endian): ArmSetendOperand = {
+  inline def apply(subtracted: Boolean, value: Endian): ArmSetendOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("setend")
     __obj.asInstanceOf[ArmSetendOperand]
   }
   
-  @scala.inline
-  implicit class ArmSetendOperandMutableBuilder[Self <: ArmSetendOperand] (val x: Self) extends AnyVal {
+  extension [Self <: ArmSetendOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: setend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: setend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Endian): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Endian): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

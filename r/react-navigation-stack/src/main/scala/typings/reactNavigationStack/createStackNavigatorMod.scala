@@ -21,16 +21,14 @@ object createStackNavigatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
       js.Any
     ]
   ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigMap.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
-  @scala.inline
-  def default(
+  inline def default(
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 

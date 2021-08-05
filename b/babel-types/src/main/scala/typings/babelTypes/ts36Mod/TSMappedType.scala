@@ -29,31 +29,22 @@ object TSMappedType {
   @js.native
   def apply(typeParameter: TypeParameter_, typeAnnotation: TSType): TSMappedType = js.native
   
-  @scala.inline
-  implicit class TSMappedTypeMutableBuilder[Self <: TSMappedType] (val x: Self) extends AnyVal {
+  extension [Self <: TSMappedType](x: Self) {
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalNull: Self = StObject.set(x, "optional", null)
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyNull: Self = StObject.set(x, "readonly", null)
+    inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSMappedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSMappedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
-    @scala.inline
-    def setTypeParameter(value: TypeParameter_): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
+    inline def setTypeParameter(value: TypeParameter_): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
   }
 }

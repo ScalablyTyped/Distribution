@@ -30,8 +30,7 @@ trait b2WorldManifold extends StObject {
 }
 object b2WorldManifold {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Initialize: (b2Manifold, b2Transform, Double, b2Transform, Double) => Unit,
     m_normal: b2Vec2,
     m_points: js.Array[b2Vec2]
@@ -40,19 +39,14 @@ object b2WorldManifold {
     __obj.asInstanceOf[b2WorldManifold]
   }
   
-  @scala.inline
-  implicit class b2WorldManifoldMutableBuilder[Self <: b2WorldManifold] (val x: Self) extends AnyVal {
+  extension [Self <: b2WorldManifold](x: Self) {
     
-    @scala.inline
-    def setInitialize(value: (b2Manifold, b2Transform, Double, b2Transform, Double) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction5(value))
+    inline def setInitialize(value: (b2Manifold, b2Transform, Double, b2Transform, Double) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setM_normal(value: b2Vec2): Self = StObject.set(x, "m_normal", value.asInstanceOf[js.Any])
+    inline def setM_normal(value: b2Vec2): Self = StObject.set(x, "m_normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_points(value: js.Array[b2Vec2]): Self = StObject.set(x, "m_points", value.asInstanceOf[js.Any])
+    inline def setM_points(value: js.Array[b2Vec2]): Self = StObject.set(x, "m_points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_pointsVarargs(value: b2Vec2*): Self = StObject.set(x, "m_points", js.Array(value :_*))
+    inline def setM_pointsVarargs(value: b2Vec2*): Self = StObject.set(x, "m_points", js.Array(value :_*))
   }
 }

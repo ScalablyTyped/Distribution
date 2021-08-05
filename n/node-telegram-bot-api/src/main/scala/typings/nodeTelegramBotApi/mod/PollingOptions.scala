@@ -15,31 +15,23 @@ trait PollingOptions extends StObject {
 }
 object PollingOptions {
   
-  @scala.inline
-  def apply(): PollingOptions = {
+  inline def apply(): PollingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PollingOptions]
   }
   
-  @scala.inline
-  implicit class PollingOptionsMutableBuilder[Self <: PollingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PollingOptions](x: Self) {
     
-    @scala.inline
-    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+    inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+    inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
-    @scala.inline
-    def setInterval(value: String | Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: String | Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setParams(value: GetUpdatesOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: GetUpdatesOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

@@ -13,11 +13,9 @@ object decoratorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPropDecorator(propertyInitiallyEnumerable: Boolean, propertyCreator: PropertyCreator): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropDecorator")(propertyInitiallyEnumerable.asInstanceOf[js.Any], propertyCreator.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def createPropDecorator(propertyInitiallyEnumerable: Boolean, propertyCreator: PropertyCreator): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropDecorator")(propertyInitiallyEnumerable.asInstanceOf[js.Any], propertyCreator.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @scala.inline
-  def initializeInstance(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeInstance")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def initializeInstance(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeInstance")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("mobx/lib/utils/decorators", "mobxDidRunLazyInitializersSymbol")
   @js.native
@@ -27,8 +25,7 @@ object decoratorsMod {
   @js.native
   val mobxPendingDecorators: js.Symbol = js.native
   
-  @scala.inline
-  def quacksLikeADecorator(args: IArguments): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("quacksLikeADecorator")(args.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def quacksLikeADecorator(args: IArguments): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("quacksLikeADecorator")(args.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait BabelDescriptor
     extends StObject
@@ -38,20 +35,16 @@ object decoratorsMod {
   }
   object BabelDescriptor {
     
-    @scala.inline
-    def apply(): BabelDescriptor = {
+    inline def apply(): BabelDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BabelDescriptor]
     }
     
-    @scala.inline
-    implicit class BabelDescriptorMutableBuilder[Self <: BabelDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: BabelDescriptor](x: Self) {
       
-      @scala.inline
-      def setInitializer(value: () => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction0(value))
+      inline def setInitializer(value: () => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
+      inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
     }
   }
   

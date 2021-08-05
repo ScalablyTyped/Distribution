@@ -17,22 +17,17 @@ trait SurroundingTextInfo extends StObject {
 }
 object SurroundingTextInfo {
   
-  @scala.inline
-  def apply(anchor: Double, focus: Double, text: String): SurroundingTextInfo = {
+  inline def apply(anchor: Double, focus: Double, text: String): SurroundingTextInfo = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurroundingTextInfo]
   }
   
-  @scala.inline
-  implicit class SurroundingTextInfoMutableBuilder[Self <: SurroundingTextInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SurroundingTextInfo](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: Double): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: Double): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

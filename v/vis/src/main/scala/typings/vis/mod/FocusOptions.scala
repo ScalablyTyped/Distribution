@@ -17,19 +17,15 @@ trait FocusOptions
 }
 object FocusOptions {
   
-  @scala.inline
-  def apply(): FocusOptions = {
+  inline def apply(): FocusOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FocusOptions]
   }
   
-  @scala.inline
-  implicit class FocusOptionsMutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FocusOptions](x: Self) {
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
   }
 }

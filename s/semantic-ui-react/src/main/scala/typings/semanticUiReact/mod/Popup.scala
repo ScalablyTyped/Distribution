@@ -19,6 +19,5 @@ class Popup protected ()
 }
 object Popup {
   
-  @scala.inline
-  def apply: PopupComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Popup").asInstanceOf[PopupComponent]
+  inline def apply: PopupComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Popup").asInstanceOf[PopupComponent]
 }

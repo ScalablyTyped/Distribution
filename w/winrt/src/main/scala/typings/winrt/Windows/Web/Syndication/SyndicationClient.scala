@@ -12,8 +12,7 @@ trait SyndicationClient
      with ISyndicationClient
 object SyndicationClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bypassCacheOnRetrieve: Boolean,
     maxResponseBufferSize: Double,
     proxyCredential: PasswordCredential,

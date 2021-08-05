@@ -15,8 +15,7 @@ trait Binding[Scope, ParentScope] extends StObject {
 }
 object Binding {
   
-  @scala.inline
-  def apply[Scope, ParentScope](
+  inline def apply[Scope, ParentScope](
     mount: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => Binding[js.Any, js.Any],
     unmount: (Scope, ParentScope, Boolean) => Binding[js.Any, js.Any],
     update: (Scope, ParentScope) => Binding[js.Any, js.Any]
@@ -25,16 +24,12 @@ object Binding {
     __obj.asInstanceOf[Binding[Scope, ParentScope]]
   }
   
-  @scala.inline
-  implicit class BindingMutableBuilder[Self <: Binding[?, ?], Scope, ParentScope] (val x: Self & (Binding[Scope, ParentScope])) extends AnyVal {
+  extension [Self <: Binding[?, ?], Scope, ParentScope](x: Self & (Binding[Scope, ParentScope])) {
     
-    @scala.inline
-    def setMount(value: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => Binding[js.Any, js.Any]): Self = StObject.set(x, "mount", js.Any.fromFunction4(value))
+    inline def setMount(value: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => Binding[js.Any, js.Any]): Self = StObject.set(x, "mount", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUnmount(value: (Scope, ParentScope, Boolean) => Binding[js.Any, js.Any]): Self = StObject.set(x, "unmount", js.Any.fromFunction3(value))
+    inline def setUnmount(value: (Scope, ParentScope, Boolean) => Binding[js.Any, js.Any]): Self = StObject.set(x, "unmount", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUpdate(value: (Scope, ParentScope) => Binding[js.Any, js.Any]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (Scope, ParentScope) => Binding[js.Any, js.Any]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Types extends StObject
 object Types {
   
-  @scala.inline
-  def alternatives: typings.reactNativeJoi.reactNativeJoiStrings.alternatives = "alternatives".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.alternatives]
+  inline def alternatives: typings.reactNativeJoi.reactNativeJoiStrings.alternatives = "alternatives".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.alternatives]
   
-  @scala.inline
-  def any: typings.reactNativeJoi.reactNativeJoiStrings.any = "any".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.any]
+  inline def any: typings.reactNativeJoi.reactNativeJoiStrings.any = "any".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.any]
   
-  @scala.inline
-  def array: typings.reactNativeJoi.reactNativeJoiStrings.array = "array".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.array]
+  inline def array: typings.reactNativeJoi.reactNativeJoiStrings.array = "array".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.array]
   
-  @scala.inline
-  def binary: typings.reactNativeJoi.reactNativeJoiStrings.binary = "binary".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.binary]
+  inline def binary: typings.reactNativeJoi.reactNativeJoiStrings.binary = "binary".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.binary]
   
-  @scala.inline
-  def boolean: typings.reactNativeJoi.reactNativeJoiStrings.boolean = "boolean".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.boolean]
+  inline def boolean: typings.reactNativeJoi.reactNativeJoiStrings.boolean = "boolean".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.boolean]
   
-  @scala.inline
-  def date: typings.reactNativeJoi.reactNativeJoiStrings.date = "date".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.date]
+  inline def date: typings.reactNativeJoi.reactNativeJoiStrings.date = "date".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.date]
   
-  @scala.inline
-  def function: typings.reactNativeJoi.reactNativeJoiStrings.function = "function".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.function]
+  inline def function: typings.reactNativeJoi.reactNativeJoiStrings.function = "function".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.function]
   
-  @scala.inline
-  def `lazy`: typings.reactNativeJoi.reactNativeJoiStrings.`lazy` = "lazy".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.`lazy`]
+  inline def `lazy`: typings.reactNativeJoi.reactNativeJoiStrings.`lazy` = "lazy".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.`lazy`]
   
-  @scala.inline
-  def number: typings.reactNativeJoi.reactNativeJoiStrings.number = "number".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.number]
+  inline def number: typings.reactNativeJoi.reactNativeJoiStrings.number = "number".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.number]
   
-  @scala.inline
-  def `object`: typings.reactNativeJoi.reactNativeJoiStrings.`object` = "object".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.`object`]
+  inline def `object`: typings.reactNativeJoi.reactNativeJoiStrings.`object` = "object".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.`object`]
   
-  @scala.inline
-  def string: typings.reactNativeJoi.reactNativeJoiStrings.string = "string".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.string]
+  inline def string: typings.reactNativeJoi.reactNativeJoiStrings.string = "string".asInstanceOf[typings.reactNativeJoi.reactNativeJoiStrings.string]
 }

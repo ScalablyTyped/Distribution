@@ -97,98 +97,68 @@ object buttonGridTypesMod {
   }
   object IButtonGridProps {
     
-    @scala.inline
-    def apply(columnCount: Double, items: js.Array[js.Any], onRenderItem: (js.Any, Double) => Element): IButtonGridProps = {
+    inline def apply(columnCount: Double, items: js.Array[js.Any], onRenderItem: (js.Any, Double) => Element): IButtonGridProps = {
       val __obj = js.Dynamic.literal(columnCount = columnCount.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction2(onRenderItem))
       __obj.asInstanceOf[IButtonGridProps]
     }
     
-    @scala.inline
-    implicit class IButtonGridPropsMutableBuilder[Self <: IButtonGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: IButtonGridProps](x: Self) {
       
-      @scala.inline
-      def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
+      inline def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
+      inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
       
-      @scala.inline
-      def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
+      inline def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
+      inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
       
-      @scala.inline
-      def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IButtonGrid]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IButtonGrid]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IButtonGrid | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IButtonGrid | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setDoNotContainWithinFocusZone(value: Boolean): Self = StObject.set(x, "doNotContainWithinFocusZone", value.asInstanceOf[js.Any])
+      inline def setDoNotContainWithinFocusZone(value: Boolean): Self = StObject.set(x, "doNotContainWithinFocusZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
+      inline def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+      inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnRenderItem(value: (js.Any, Double) => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction2(value))
+      inline def setOnRenderItem(value: (js.Any, Double) => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPositionInSet(value: Double): Self = StObject.set(x, "positionInSet", value.asInstanceOf[js.Any])
+      inline def setPositionInSet(value: Double): Self = StObject.set(x, "positionInSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionInSetUndefined: Self = StObject.set(x, "positionInSet", js.undefined)
+      inline def setPositionInSetUndefined: Self = StObject.set(x, "positionInSet", js.undefined)
       
-      @scala.inline
-      def setSetSize(value: Double): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
+      inline def setSetSize(value: Double): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
+      inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
       
-      @scala.inline
-      def setShouldFocusCircularNavigate(value: Boolean): Self = StObject.set(x, "shouldFocusCircularNavigate", value.asInstanceOf[js.Any])
+      inline def setShouldFocusCircularNavigate(value: Boolean): Self = StObject.set(x, "shouldFocusCircularNavigate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFocusCircularNavigateUndefined: Self = StObject.set(x, "shouldFocusCircularNavigate", js.undefined)
+      inline def setShouldFocusCircularNavigateUndefined: Self = StObject.set(x, "shouldFocusCircularNavigate", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IButtonGridStyleProps, IButtonGridStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IButtonGridStyleProps, IButtonGridStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IButtonGridStyleProps => DeepPartial[IButtonGridStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IButtonGridStyleProps => DeepPartial[IButtonGridStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -201,17 +171,14 @@ object buttonGridTypesMod {
   }
   object IButtonGridStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IButtonGridStyleProps = {
+    inline def apply(theme: ITheme): IButtonGridStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IButtonGridStyleProps]
     }
     
-    @scala.inline
-    implicit class IButtonGridStylePropsMutableBuilder[Self <: IButtonGridStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IButtonGridStyleProps](x: Self) {
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,41 +201,30 @@ object buttonGridTypesMod {
   }
   object IButtonGridStyles {
     
-    @scala.inline
-    def apply(): IButtonGridStyles = {
+    inline def apply(): IButtonGridStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IButtonGridStyles]
     }
     
-    @scala.inline
-    implicit class IButtonGridStylesMutableBuilder[Self <: IButtonGridStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IButtonGridStyles](x: Self) {
       
-      @scala.inline
-      def setFocusedContainer(value: IStyle): Self = StObject.set(x, "focusedContainer", value.asInstanceOf[js.Any])
+      inline def setFocusedContainer(value: IStyle): Self = StObject.set(x, "focusedContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedContainerNull: Self = StObject.set(x, "focusedContainer", null)
+      inline def setFocusedContainerNull: Self = StObject.set(x, "focusedContainer", null)
       
-      @scala.inline
-      def setFocusedContainerUndefined: Self = StObject.set(x, "focusedContainer", js.undefined)
+      inline def setFocusedContainerUndefined: Self = StObject.set(x, "focusedContainer", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTableCell(value: IStyle): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
+      inline def setTableCell(value: IStyle): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableCellNull: Self = StObject.set(x, "tableCell", null)
+      inline def setTableCellNull: Self = StObject.set(x, "tableCell", null)
       
-      @scala.inline
-      def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
+      inline def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
     }
   }
   

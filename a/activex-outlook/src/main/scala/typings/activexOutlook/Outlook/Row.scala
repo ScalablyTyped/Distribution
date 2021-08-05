@@ -19,7 +19,7 @@ trait Row extends StObject {
   
   def LocalTimeToUTC(Index: js.Any): VarDate
   
-  @JSName("Outlook.Row_typekey")
+  /* private */ @JSName("Outlook.Row_typekey")
   var OutlookDotRow_typekey: Row
   
   val Parent: js.Any
@@ -30,8 +30,7 @@ trait Row extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BinaryToString: js.Any => String,
     Class: OlObjectClass,
@@ -48,37 +47,26 @@ object Row {
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryToString(value: js.Any => String): Self = StObject.set(x, "BinaryToString", js.Any.fromFunction1(value))
+    inline def setBinaryToString(value: js.Any => String): Self = StObject.set(x, "BinaryToString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetValues(value: () => js.Any): Self = StObject.set(x, "GetValues", js.Any.fromFunction0(value))
+    inline def setGetValues(value: () => js.Any): Self = StObject.set(x, "GetValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocalTimeToUTC(value: js.Any => VarDate): Self = StObject.set(x, "LocalTimeToUTC", js.Any.fromFunction1(value))
+    inline def setLocalTimeToUTC(value: js.Any => VarDate): Self = StObject.set(x, "LocalTimeToUTC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotRow_typekey(value: Row): Self = StObject.set(x, "Outlook.Row_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotRow_typekey(value: Row): Self = StObject.set(x, "Outlook.Row_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUTCToLocalTime(value: js.Any => VarDate): Self = StObject.set(x, "UTCToLocalTime", js.Any.fromFunction1(value))
+    inline def setUTCToLocalTime(value: js.Any => VarDate): Self = StObject.set(x, "UTCToLocalTime", js.Any.fromFunction1(value))
   }
 }

@@ -29,22 +29,17 @@ trait DisplayFeature extends StObject {
 }
 object DisplayFeature {
   
-  @scala.inline
-  def apply(maskLength: integer, offset: integer, orientation: vertical | horizontal): DisplayFeature = {
+  inline def apply(maskLength: integer, offset: integer, orientation: vertical | horizontal): DisplayFeature = {
     val __obj = js.Dynamic.literal(maskLength = maskLength.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayFeature]
   }
   
-  @scala.inline
-  implicit class DisplayFeatureMutableBuilder[Self <: DisplayFeature] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayFeature](x: Self) {
     
-    @scala.inline
-    def setMaskLength(value: integer): Self = StObject.set(x, "maskLength", value.asInstanceOf[js.Any])
+    inline def setMaskLength(value: integer): Self = StObject.set(x, "maskLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }
 }

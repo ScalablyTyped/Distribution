@@ -27,8 +27,7 @@ trait Compactable[F] extends StObject {
 }
 object Compactable {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     URI: F,
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Option<A>> */ js.Any => js.Any,
     separate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Either<A, B>> */ js.Any => Separated[
@@ -40,23 +39,19 @@ object Compactable {
     __obj.asInstanceOf[Compactable[F]]
   }
   
-  @scala.inline
-  implicit class CompactableMutableBuilder[Self <: Compactable[?], F] (val x: Self & Compactable[F]) extends AnyVal {
+  extension [Self <: Compactable[?], F](x: Self & Compactable[F]) {
     
-    @scala.inline
-    def setCompact(
+    inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Option<A>> */ js.Any => js.Any
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparate(
+    inline def setSeparate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Either<A, B>> */ js.Any => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
         ]
     ): Self = StObject.set(x, "separate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }
 }

@@ -56,52 +56,37 @@ trait ScrollbarOptions extends StObject {
 }
 object ScrollbarOptions {
   
-  @scala.inline
-  def apply(el: SelectableElement): ScrollbarOptions = {
+  inline def apply(el: SelectableElement): ScrollbarOptions = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollbarOptions]
   }
   
-  @scala.inline
-  implicit class ScrollbarOptionsMutableBuilder[Self <: ScrollbarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollbarOptions](x: Self) {
     
-    @scala.inline
-    def setDragClass(value: String): Self = StObject.set(x, "dragClass", value.asInstanceOf[js.Any])
+    inline def setDragClass(value: String): Self = StObject.set(x, "dragClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragClassUndefined: Self = StObject.set(x, "dragClass", js.undefined)
+    inline def setDragClassUndefined: Self = StObject.set(x, "dragClass", js.undefined)
     
-    @scala.inline
-    def setDragSize(value: auto | Double): Self = StObject.set(x, "dragSize", value.asInstanceOf[js.Any])
+    inline def setDragSize(value: auto | Double): Self = StObject.set(x, "dragSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragSizeUndefined: Self = StObject.set(x, "dragSize", js.undefined)
+    inline def setDragSizeUndefined: Self = StObject.set(x, "dragSize", js.undefined)
     
-    @scala.inline
-    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    @scala.inline
-    def setEl(value: SelectableElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: SelectableElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setLockClass(value: String): Self = StObject.set(x, "lockClass", value.asInstanceOf[js.Any])
+    inline def setLockClass(value: String): Self = StObject.set(x, "lockClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockClassUndefined: Self = StObject.set(x, "lockClass", js.undefined)
+    inline def setLockClassUndefined: Self = StObject.set(x, "lockClass", js.undefined)
     
-    @scala.inline
-    def setSnapOnRelease(value: Boolean): Self = StObject.set(x, "snapOnRelease", value.asInstanceOf[js.Any])
+    inline def setSnapOnRelease(value: Boolean): Self = StObject.set(x, "snapOnRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapOnReleaseUndefined: Self = StObject.set(x, "snapOnRelease", js.undefined)
+    inline def setSnapOnReleaseUndefined: Self = StObject.set(x, "snapOnRelease", js.undefined)
   }
 }

@@ -42,7 +42,7 @@ trait RuleActions extends StObject {
   
   val NotifyRead: RuleAction
   
-  @JSName("Outlook.RuleActions_typekey")
+  /* private */ @JSName("Outlook.RuleActions_typekey")
   var OutlookDotRuleActions_typekey: RuleActions
   
   val Parent: js.Any
@@ -57,8 +57,7 @@ trait RuleActions extends StObject {
 }
 object RuleActions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AssignToCategory: AssignToCategoryRuleAction,
     CC: SendRuleAction,
@@ -89,79 +88,54 @@ object RuleActions {
     __obj.asInstanceOf[RuleActions]
   }
   
-  @scala.inline
-  implicit class RuleActionsMutableBuilder[Self <: RuleActions] (val x: Self) extends AnyVal {
+  extension [Self <: RuleActions](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignToCategory(value: AssignToCategoryRuleAction): Self = StObject.set(x, "AssignToCategory", value.asInstanceOf[js.Any])
+    inline def setAssignToCategory(value: AssignToCategoryRuleAction): Self = StObject.set(x, "AssignToCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC(value: SendRuleAction): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+    inline def setCC(value: SendRuleAction): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearCategories(value: RuleAction): Self = StObject.set(x, "ClearCategories", value.asInstanceOf[js.Any])
+    inline def setClearCategories(value: RuleAction): Self = StObject.set(x, "ClearCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyToFolder(value: MoveOrCopyRuleAction): Self = StObject.set(x, "CopyToFolder", value.asInstanceOf[js.Any])
+    inline def setCopyToFolder(value: MoveOrCopyRuleAction): Self = StObject.set(x, "CopyToFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: RuleAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RuleAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePermanently(value: RuleAction): Self = StObject.set(x, "DeletePermanently", value.asInstanceOf[js.Any])
+    inline def setDeletePermanently(value: RuleAction): Self = StObject.set(x, "DeletePermanently", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopAlert(value: RuleAction): Self = StObject.set(x, "DesktopAlert", value.asInstanceOf[js.Any])
+    inline def setDesktopAlert(value: RuleAction): Self = StObject.set(x, "DesktopAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForward(value: SendRuleAction): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: SendRuleAction): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardAsAttachment(value: SendRuleAction): Self = StObject.set(x, "ForwardAsAttachment", value.asInstanceOf[js.Any])
+    inline def setForwardAsAttachment(value: SendRuleAction): Self = StObject.set(x, "ForwardAsAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => RuleAction): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => RuleAction): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMarkAsTask(value: MarkAsTaskRuleAction): Self = StObject.set(x, "MarkAsTask", value.asInstanceOf[js.Any])
+    inline def setMarkAsTask(value: MarkAsTaskRuleAction): Self = StObject.set(x, "MarkAsTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveToFolder(value: MoveOrCopyRuleAction): Self = StObject.set(x, "MoveToFolder", value.asInstanceOf[js.Any])
+    inline def setMoveToFolder(value: MoveOrCopyRuleAction): Self = StObject.set(x, "MoveToFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewItemAlert(value: NewItemAlertRuleAction): Self = StObject.set(x, "NewItemAlert", value.asInstanceOf[js.Any])
+    inline def setNewItemAlert(value: NewItemAlertRuleAction): Self = StObject.set(x, "NewItemAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyDelivery(value: RuleAction): Self = StObject.set(x, "NotifyDelivery", value.asInstanceOf[js.Any])
+    inline def setNotifyDelivery(value: RuleAction): Self = StObject.set(x, "NotifyDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyRead(value: RuleAction): Self = StObject.set(x, "NotifyRead", value.asInstanceOf[js.Any])
+    inline def setNotifyRead(value: RuleAction): Self = StObject.set(x, "NotifyRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotRuleActions_typekey(value: RuleActions): Self = StObject.set(x, "Outlook.RuleActions_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotRuleActions_typekey(value: RuleActions): Self = StObject.set(x, "Outlook.RuleActions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaySound(value: PlaySoundRuleAction): Self = StObject.set(x, "PlaySound", value.asInstanceOf[js.Any])
+    inline def setPlaySound(value: PlaySoundRuleAction): Self = StObject.set(x, "PlaySound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect(value: SendRuleAction): Self = StObject.set(x, "Redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: SendRuleAction): Self = StObject.set(x, "Redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: RuleAction): Self = StObject.set(x, "Stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: RuleAction): Self = StObject.set(x, "Stop", value.asInstanceOf[js.Any])
   }
 }

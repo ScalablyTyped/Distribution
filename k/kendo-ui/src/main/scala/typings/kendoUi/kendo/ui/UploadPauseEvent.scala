@@ -12,19 +12,15 @@ trait UploadPauseEvent
 }
 object UploadPauseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Upload): UploadPauseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Upload): UploadPauseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPauseEvent]
   }
   
-  @scala.inline
-  implicit class UploadPauseEventMutableBuilder[Self <: UploadPauseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UploadPauseEvent](x: Self) {
     
-    @scala.inline
-    def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
   }
 }

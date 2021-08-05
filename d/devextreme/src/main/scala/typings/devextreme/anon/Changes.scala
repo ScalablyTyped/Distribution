@@ -10,22 +10,17 @@ trait Changes extends StObject {
 }
 object Changes {
   
-  @scala.inline
-  def apply(): Changes = {
+  inline def apply(): Changes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Changes]
   }
   
-  @scala.inline
-  implicit class ChangesMutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
+  extension [Self <: Changes](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[js.Any]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[js.Any]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+    inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
-    @scala.inline
-    def setChangesVarargs(value: js.Any*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: js.Any*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

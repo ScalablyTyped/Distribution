@@ -41,8 +41,7 @@ trait ScriptCommon
 }
 object ScriptCommon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     custom: Unit,
     debug: Boolean,
     enabled: Boolean,
@@ -56,49 +55,34 @@ object ScriptCommon {
     __obj.asInstanceOf[ScriptCommon]
   }
   
-  @scala.inline
-  implicit class ScriptCommonMutableBuilder[Self <: ScriptCommon] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptCommon](x: Self) {
     
-    @scala.inline
-    def setCompiled(value: String): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
+    inline def setCompiled(value: String): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
+    inline def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarations(value: String): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: String): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
+    inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineType(value: String): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
+    inline def setEngineType(value: String): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceHash(value: String): Self = StObject.set(x, "sourceHash", value.asInstanceOf[js.Any])
+    inline def setSourceHash(value: String): Self = StObject.set(x, "sourceHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceHashUndefined: Self = StObject.set(x, "sourceHash", js.undefined)
+    inline def setSourceHashUndefined: Self = StObject.set(x, "sourceHash", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
   }
 }

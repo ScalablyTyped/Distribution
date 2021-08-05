@@ -14,25 +14,19 @@ trait TargetWindow extends StObject {
 }
 object TargetWindow {
   
-  @scala.inline
-  def apply(): TargetWindow = {
+  inline def apply(): TargetWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetWindow]
   }
   
-  @scala.inline
-  implicit class TargetWindowMutableBuilder[Self <: TargetWindow] (val x: Self) extends AnyVal {
+  extension [Self <: TargetWindow](x: Self) {
     
-    @scala.inline
-    def setCustomHtml(value: String): Self = StObject.set(x, "customHtml", value.asInstanceOf[js.Any])
+    inline def setCustomHtml(value: String): Self = StObject.set(x, "customHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomHtmlUndefined: Self = StObject.set(x, "customHtml", js.undefined)
+    inline def setCustomHtmlUndefined: Self = StObject.set(x, "customHtml", js.undefined)
     
-    @scala.inline
-    def setTargetWindowOption(value: String): Self = StObject.set(x, "targetWindowOption", value.asInstanceOf[js.Any])
+    inline def setTargetWindowOption(value: String): Self = StObject.set(x, "targetWindowOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetWindowOptionUndefined: Self = StObject.set(x, "targetWindowOption", js.undefined)
+    inline def setTargetWindowOptionUndefined: Self = StObject.set(x, "targetWindowOption", js.undefined)
   }
 }

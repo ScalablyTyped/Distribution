@@ -20,13 +20,11 @@ object TrackTabBehavior {
     * @param element The element to update.
     * @param tabIndex The index value of the element within its container.
     **/
-  @scala.inline
-  def attach(element: HTMLElement, tabIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(element.asInstanceOf[js.Any], tabIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(element: HTMLElement, tabIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(element.asInstanceOf[js.Any], tabIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes the tab order information from the specified element.
     * @param element The element to remove tab information from.
     **/
-  @scala.inline
-  def detach(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def detach(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

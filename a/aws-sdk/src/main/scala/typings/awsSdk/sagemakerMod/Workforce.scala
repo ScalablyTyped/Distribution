@@ -48,55 +48,39 @@ trait Workforce extends StObject {
 }
 object Workforce {
   
-  @scala.inline
-  def apply(WorkforceArn: WorkforceArn, WorkforceName: WorkforceName): Workforce = {
+  inline def apply(WorkforceArn: WorkforceArn, WorkforceName: WorkforceName): Workforce = {
     val __obj = js.Dynamic.literal(WorkforceArn = WorkforceArn.asInstanceOf[js.Any], WorkforceName = WorkforceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Workforce]
   }
   
-  @scala.inline
-  implicit class WorkforceMutableBuilder[Self <: Workforce] (val x: Self) extends AnyVal {
+  extension [Self <: Workforce](x: Self) {
     
-    @scala.inline
-    def setCognitoConfig(value: CognitoConfig): Self = StObject.set(x, "CognitoConfig", value.asInstanceOf[js.Any])
+    inline def setCognitoConfig(value: CognitoConfig): Self = StObject.set(x, "CognitoConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoConfigUndefined: Self = StObject.set(x, "CognitoConfig", js.undefined)
+    inline def setCognitoConfigUndefined: Self = StObject.set(x, "CognitoConfig", js.undefined)
     
-    @scala.inline
-    def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
+    inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
-    @scala.inline
-    def setOidcConfig(value: OidcConfigForResponse): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
+    inline def setOidcConfig(value: OidcConfigForResponse): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcConfigUndefined: Self = StObject.set(x, "OidcConfig", js.undefined)
+    inline def setOidcConfigUndefined: Self = StObject.set(x, "OidcConfig", js.undefined)
     
-    @scala.inline
-    def setSourceIpConfig(value: SourceIpConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
+    inline def setSourceIpConfig(value: SourceIpConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
+    inline def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
-    @scala.inline
-    def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
+    inline def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDomainUndefined: Self = StObject.set(x, "SubDomain", js.undefined)
+    inline def setSubDomainUndefined: Self = StObject.set(x, "SubDomain", js.undefined)
     
-    @scala.inline
-    def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
+    inline def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
+    inline def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
   }
 }

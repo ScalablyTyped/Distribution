@@ -20,31 +20,23 @@ trait ValidateAttestationOccurrenceRequest extends StObject {
 }
 object ValidateAttestationOccurrenceRequest {
   
-  @scala.inline
-  def apply(): ValidateAttestationOccurrenceRequest = {
+  inline def apply(): ValidateAttestationOccurrenceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateAttestationOccurrenceRequest]
   }
   
-  @scala.inline
-  implicit class ValidateAttestationOccurrenceRequestMutableBuilder[Self <: ValidateAttestationOccurrenceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateAttestationOccurrenceRequest](x: Self) {
     
-    @scala.inline
-    def setAttestation(value: AttestationOccurrence): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
+    inline def setAttestation(value: AttestationOccurrence): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
+    inline def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
-    @scala.inline
-    def setOccurrenceNote(value: String): Self = StObject.set(x, "occurrenceNote", value.asInstanceOf[js.Any])
+    inline def setOccurrenceNote(value: String): Self = StObject.set(x, "occurrenceNote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceNoteUndefined: Self = StObject.set(x, "occurrenceNote", js.undefined)
+    inline def setOccurrenceNoteUndefined: Self = StObject.set(x, "occurrenceNote", js.undefined)
     
-    @scala.inline
-    def setOccurrenceResourceUri(value: String): Self = StObject.set(x, "occurrenceResourceUri", value.asInstanceOf[js.Any])
+    inline def setOccurrenceResourceUri(value: String): Self = StObject.set(x, "occurrenceResourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceResourceUriUndefined: Self = StObject.set(x, "occurrenceResourceUri", js.undefined)
+    inline def setOccurrenceResourceUriUndefined: Self = StObject.set(x, "occurrenceResourceUri", js.undefined)
   }
 }

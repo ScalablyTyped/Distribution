@@ -12,59 +12,51 @@ object luminoDragdropStrings {
   sealed trait all
     extends StObject
        with SupportedActions
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait copy
     extends StObject
        with DropAction
        with SupportedActions
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
   sealed trait `copy-link`
     extends StObject
        with SupportedActions
-  @scala.inline
-  def `copy-link`: `copy-link` = "copy-link".asInstanceOf[`copy-link`]
+  inline def `copy-link`: `copy-link` = "copy-link".asInstanceOf[`copy-link`]
   
   @js.native
   sealed trait `copy-move`
     extends StObject
        with SupportedActions
-  @scala.inline
-  def `copy-move`: `copy-move` = "copy-move".asInstanceOf[`copy-move`]
+  inline def `copy-move`: `copy-move` = "copy-move".asInstanceOf[`copy-move`]
   
   @js.native
   sealed trait link
     extends StObject
        with DropAction
        with SupportedActions
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait `link-move`
     extends StObject
        with SupportedActions
-  @scala.inline
-  def `link-move`: `link-move` = "link-move".asInstanceOf[`link-move`]
+  inline def `link-move`: `link-move` = "link-move".asInstanceOf[`link-move`]
   
   @js.native
   sealed trait move
     extends StObject
        with DropAction
        with SupportedActions
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait none
     extends StObject
        with DropAction
        with SupportedActions
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

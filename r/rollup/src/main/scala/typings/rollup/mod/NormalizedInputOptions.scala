@@ -56,8 +56,7 @@ trait NormalizedInputOptions extends StObject {
 }
 object NormalizedInputOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acorn: js.Object,
     acornInjectPlugins: js.Array[js.Function],
     context: String,
@@ -78,90 +77,62 @@ object NormalizedInputOptions {
     __obj.asInstanceOf[NormalizedInputOptions]
   }
   
-  @scala.inline
-  implicit class NormalizedInputOptionsMutableBuilder[Self <: NormalizedInputOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizedInputOptions](x: Self) {
     
-    @scala.inline
-    def setAcorn(value: js.Object): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
+    inline def setAcorn(value: js.Object): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcornInjectPlugins(value: js.Array[js.Function]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
+    inline def setAcornInjectPlugins(value: js.Array[js.Function]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcornInjectPluginsVarargs(value: js.Function*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value :_*))
+    inline def setAcornInjectPluginsVarargs(value: js.Function*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value :_*))
     
-    @scala.inline
-    def setCache(value: `false` | RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: `false` | RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentalCacheExpiry(value: Double): Self = StObject.set(x, "experimentalCacheExpiry", value.asInstanceOf[js.Any])
+    inline def setExperimentalCacheExpiry(value: Double): Self = StObject.set(x, "experimentalCacheExpiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal(
+    inline def setExternal(
       value: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean
     ): Self = StObject.set(x, "external", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInlineDynamicImports(value: Boolean): Self = StObject.set(x, "inlineDynamicImports", value.asInstanceOf[js.Any])
+    inline def setInlineDynamicImports(value: Boolean): Self = StObject.set(x, "inlineDynamicImports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineDynamicImportsUndefined: Self = StObject.set(x, "inlineDynamicImports", js.undefined)
+    inline def setInlineDynamicImportsUndefined: Self = StObject.set(x, "inlineDynamicImports", js.undefined)
     
-    @scala.inline
-    def setInput(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
     
-    @scala.inline
-    def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
+    inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
+    inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     
-    @scala.inline
-    def setModuleContext(value: String => String): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
+    inline def setModuleContext(value: String => String): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnwarn(value: /* warning */ RollupWarning => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction1(value))
+    inline def setOnwarn(value: /* warning */ RollupWarning => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPerf(value: Boolean): Self = StObject.set(x, "perf", value.asInstanceOf[js.Any])
+    inline def setPerf(value: Boolean): Self = StObject.set(x, "perf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
-    @scala.inline
-    def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveEntrySignatures", value.asInstanceOf[js.Any])
+    inline def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveEntrySignatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveModules(value: Boolean): Self = StObject.set(x, "preserveModules", value.asInstanceOf[js.Any])
+    inline def setPreserveModules(value: Boolean): Self = StObject.set(x, "preserveModules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveModulesUndefined: Self = StObject.set(x, "preserveModules", js.undefined)
+    inline def setPreserveModulesUndefined: Self = StObject.set(x, "preserveModules", js.undefined)
     
-    @scala.inline
-    def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
+    inline def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShimMissingExports(value: Boolean): Self = StObject.set(x, "shimMissingExports", value.asInstanceOf[js.Any])
+    inline def setShimMissingExports(value: Boolean): Self = StObject.set(x, "shimMissingExports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictDeprecations(value: Boolean): Self = StObject.set(x, "strictDeprecations", value.asInstanceOf[js.Any])
+    inline def setStrictDeprecations(value: Boolean): Self = StObject.set(x, "strictDeprecations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeshake(value: `false` | NormalizedTreeshakingOptions): Self = StObject.set(x, "treeshake", value.asInstanceOf[js.Any])
+    inline def setTreeshake(value: `false` | NormalizedTreeshakingOptions): Self = StObject.set(x, "treeshake", value.asInstanceOf[js.Any])
   }
 }

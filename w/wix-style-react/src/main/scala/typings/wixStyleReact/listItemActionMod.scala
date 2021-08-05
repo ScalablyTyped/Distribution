@@ -28,8 +28,7 @@ object listItemActionMod {
   class default ()
     extends PureComponent[ListItemActionProps, js.Object, js.Any]
   
-  @scala.inline
-  def listItemActionBuilder[T /* <: Partial[ListItemActionProps] */](data: Ellipsis): OverrideOptionStyle[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemActionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[OverrideOptionStyle[T]]
+  inline def listItemActionBuilder[T /* <: Partial[ListItemActionProps] */](data: Ellipsis): OverrideOptionStyle[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemActionBuilder")(data.asInstanceOf[js.Any]).asInstanceOf[OverrideOptionStyle[T]]
   
   type ListItemAction = PureComponent[ListItemActionProps, js.Object, js.Any]
   
@@ -50,11 +49,9 @@ object listItemActionMod {
   trait ListItemActionSize extends StObject
   object ListItemActionSize {
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -65,14 +62,11 @@ object listItemActionMod {
   trait ListItemActionSkin extends StObject
   object ListItemActionSkin {
     
-    @scala.inline
-    def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
+    inline def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
     
-    @scala.inline
-    def destructive: typings.wixStyleReact.wixStyleReactStrings.destructive = "destructive".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.destructive]
+    inline def destructive: typings.wixStyleReact.wixStyleReactStrings.destructive = "destructive".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.destructive]
     
-    @scala.inline
-    def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
+    inline def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
   }
   
   type ListItemActionWithAsProp[T] = ListItemActionAsButtonProps[T] | ListItemActionAsAnchorProps[T] | ListItemActionGenericProps[T] | ListItemActionAsComponentProps[T]

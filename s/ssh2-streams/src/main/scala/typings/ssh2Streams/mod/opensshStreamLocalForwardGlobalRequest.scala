@@ -12,16 +12,13 @@ trait opensshStreamLocalForwardGlobalRequest
 }
 object opensshStreamLocalForwardGlobalRequest {
   
-  @scala.inline
-  def apply(socketPath: String): opensshStreamLocalForwardGlobalRequest = {
+  inline def apply(socketPath: String): opensshStreamLocalForwardGlobalRequest = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[opensshStreamLocalForwardGlobalRequest]
   }
   
-  @scala.inline
-  implicit class opensshStreamLocalForwardGlobalRequestMutableBuilder[Self <: opensshStreamLocalForwardGlobalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: opensshStreamLocalForwardGlobalRequest](x: Self) {
     
-    @scala.inline
-    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+    inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }
 }

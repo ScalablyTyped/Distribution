@@ -18,28 +18,21 @@ trait GetMetricDataResponse extends StObject {
 }
 object GetMetricDataResponse {
   
-  @scala.inline
-  def apply(): GetMetricDataResponse = {
+  inline def apply(): GetMetricDataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMetricDataResponse]
   }
   
-  @scala.inline
-  implicit class GetMetricDataResponseMutableBuilder[Self <: GetMetricDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricDataResponse](x: Self) {
     
-    @scala.inline
-    def setMetricResults(value: HistoricalMetricResults): Self = StObject.set(x, "MetricResults", value.asInstanceOf[js.Any])
+    inline def setMetricResults(value: HistoricalMetricResults): Self = StObject.set(x, "MetricResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricResultsUndefined: Self = StObject.set(x, "MetricResults", js.undefined)
+    inline def setMetricResultsUndefined: Self = StObject.set(x, "MetricResults", js.undefined)
     
-    @scala.inline
-    def setMetricResultsVarargs(value: HistoricalMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value :_*))
+    inline def setMetricResultsVarargs(value: HistoricalMetricResult*): Self = StObject.set(x, "MetricResults", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

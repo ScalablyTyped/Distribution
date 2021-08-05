@@ -21,8 +21,7 @@ trait Twitch extends StObject {
 }
 object Twitch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dailymotion: ComponentType[js.Any],
     facebook: ComponentType[js.Any],
     playable: ComponentType[js.Any],
@@ -34,25 +33,18 @@ object Twitch {
     __obj.asInstanceOf[Twitch]
   }
   
-  @scala.inline
-  implicit class TwitchMutableBuilder[Self <: Twitch] (val x: Self) extends AnyVal {
+  extension [Self <: Twitch](x: Self) {
     
-    @scala.inline
-    def setDailymotion(value: ComponentType[js.Any]): Self = StObject.set(x, "dailymotion", value.asInstanceOf[js.Any])
+    inline def setDailymotion(value: ComponentType[js.Any]): Self = StObject.set(x, "dailymotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebook(value: ComponentType[js.Any]): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+    inline def setFacebook(value: ComponentType[js.Any]): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayable(value: ComponentType[js.Any]): Self = StObject.set(x, "playable", value.asInstanceOf[js.Any])
+    inline def setPlayable(value: ComponentType[js.Any]): Self = StObject.set(x, "playable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitch(value: ComponentType[js.Any]): Self = StObject.set(x, "twitch", value.asInstanceOf[js.Any])
+    inline def setTwitch(value: ComponentType[js.Any]): Self = StObject.set(x, "twitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVimeo(value: ComponentType[js.Any]): Self = StObject.set(x, "vimeo", value.asInstanceOf[js.Any])
+    inline def setVimeo(value: ComponentType[js.Any]): Self = StObject.set(x, "vimeo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutube(value: ComponentType[js.Any]): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
+    inline def setYoutube(value: ComponentType[js.Any]): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait UpdateGatewayRequest extends StObject {
 }
 object UpdateGatewayRequest {
   
-  @scala.inline
-  def apply(gatewayId: ID, gatewayName: Name): UpdateGatewayRequest = {
+  inline def apply(gatewayId: ID, gatewayName: Name): UpdateGatewayRequest = {
     val __obj = js.Dynamic.literal(gatewayId = gatewayId.asInstanceOf[js.Any], gatewayName = gatewayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewayRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGatewayRequestMutableBuilder[Self <: UpdateGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayName(value: Name): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
+    inline def setGatewayName(value: Name): Self = StObject.set(x, "gatewayName", value.asInstanceOf[js.Any])
   }
 }

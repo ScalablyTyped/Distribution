@@ -10,8 +10,6 @@ object waitForExistMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
-  @scala.inline
-  def default(hasTimeoutIntervalReverseTimeoutMsg: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTimeoutIntervalReverseTimeoutMsg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  inline def default(hasTimeoutIntervalReverseTimeoutMsg: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTimeoutIntervalReverseTimeoutMsg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

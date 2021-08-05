@@ -39,19 +39,15 @@ trait AssetReference extends StObject {
 }
 object AssetReference {
   
-  @scala.inline
-  def apply(id: Double, url: String): AssetReference = {
+  inline def apply(id: Double, url: String): AssetReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetReference]
   }
   
-  @scala.inline
-  implicit class AssetReferenceMutableBuilder[Self <: AssetReference] (val x: Self) extends AnyVal {
+  extension [Self <: AssetReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

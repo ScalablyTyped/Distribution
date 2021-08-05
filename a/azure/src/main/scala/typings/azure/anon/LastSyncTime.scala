@@ -13,19 +13,15 @@ trait LastSyncTime extends StObject {
 }
 object LastSyncTime {
   
-  @scala.inline
-  def apply(LastSyncTime: Date, Status: String): LastSyncTime = {
+  inline def apply(LastSyncTime: Date, Status: String): LastSyncTime = {
     val __obj = js.Dynamic.literal(LastSyncTime = LastSyncTime.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastSyncTime]
   }
   
-  @scala.inline
-  implicit class LastSyncTimeMutableBuilder[Self <: LastSyncTime] (val x: Self) extends AnyVal {
+  extension [Self <: LastSyncTime](x: Self) {
     
-    @scala.inline
-    def setLastSyncTime(value: Date): Self = StObject.set(x, "LastSyncTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncTime(value: Date): Self = StObject.set(x, "LastSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

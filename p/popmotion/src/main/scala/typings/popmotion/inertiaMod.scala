@@ -12,8 +12,7 @@ object inertiaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inertia(
+  inline def inertia(
     hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnComplete: InertiaOptions
   ): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(hasFromVelocityMinMaxPowerTimeConstantBounceStiffnessBounceDampingRestDeltaModifyTargetDriverOnUpdateOnComplete.asInstanceOf[js.Any]).asInstanceOf[Stop]
 }

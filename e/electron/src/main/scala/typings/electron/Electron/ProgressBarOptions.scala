@@ -21,16 +21,13 @@ trait ProgressBarOptions extends StObject {
 }
 object ProgressBarOptions {
   
-  @scala.inline
-  def apply(mode: none | normal | indeterminate | error | paused): ProgressBarOptions = {
+  inline def apply(mode: none | normal | indeterminate | error | paused): ProgressBarOptions = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarOptions]
   }
   
-  @scala.inline
-  implicit class ProgressBarOptionsMutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressBarOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: none | normal | indeterminate | error | paused): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: none | normal | indeterminate | error | paused): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

@@ -152,58 +152,41 @@ object mod {
   @js.native
   class NodeTestHelperCls () extends NodeTestHelper
   
-  @scala.inline
-  def NodeTestHelper_=(x: Instantiable0[NodeTestHelper]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NodeTestHelper")(x.asInstanceOf[js.Any])
+  inline def NodeTestHelper_=(x: Instantiable0[NodeTestHelper]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NodeTestHelper")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
-  @scala.inline
-  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
   /**
     * Stop all flows.
     */
-  @scala.inline
-  def clearFlows(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFlows")().asInstanceOf[js.Promise[Unit]]
+  inline def clearFlows(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFlows")().asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
-  @scala.inline
-  def constructor(options: EventEmitterOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+  inline def constructor(options: EventEmitterOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def emit(event: js.Symbol, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def emit(event: js.Symbol, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def eventNames(): js.Array[String | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventNames")().asInstanceOf[js.Array[String | js.Symbol]]
+  inline def eventNames(): js.Array[String | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventNames")().asInstanceOf[js.Array[String | js.Symbol]]
   
-  @scala.inline
-  def getMaxListeners(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxListeners")().asInstanceOf[Double]
+  inline def getMaxListeners(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxListeners")().asInstanceOf[Double]
   
   /**
     * Returns a node instance by id in the testFlow. Any node that is defined in testFlows
     * can be retrieved, including any helper node added to the flow.
     * @param id Node id
     */
-  @scala.inline
-  def getNode(id: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(id.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def getNode(id: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(id.asInstanceOf[js.Any]).asInstanceOf[Node]
   
-  @scala.inline
-  def init(nodeRedRuntime: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(nodeRedRuntime.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def init(nodeRedRuntime: String, userSettings: LocalSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(nodeRedRuntime.asInstanceOf[js.Any], userSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(nodeRedRuntime: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(nodeRedRuntime.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(nodeRedRuntime: String, userSettings: LocalSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(nodeRedRuntime.asInstanceOf[js.Any], userSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def listenerCount(event: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def listenerCount(event: js.Symbol): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def listenerCount(event: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def listenerCount(event: js.Symbol): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(event.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def listeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
-  @scala.inline
-  def listeners(event: js.Symbol): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
+  inline def listeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
+  inline def listeners(event: js.Symbol): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
   
   /**
     * Loads a flow then starts the flow.
@@ -215,19 +198,15 @@ object mod {
     * @param testCredentials Optional node credentials.
     * @param cb Function to call back when testFlows has been started.
     */
-  @scala.inline
-  def load(testNode: TestNodeInitializer, testFlows: TestFlows): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def load(
+  inline def load(testNode: TestNodeInitializer, testFlows: TestFlows): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def load(
     testNode: TestNodeInitializer,
     testFlows: TestFlows,
     testCredentials: js.Object,
     cb: js.Function0[Unit]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: Unit, cb: js.Function0[Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def load(testNode: TestNodeInitializer, testFlows: TestFlows, testCredentials: Unit, cb: js.Function0[Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(testNode.asInstanceOf[js.Any], testFlows.asInstanceOf[js.Any], testCredentials.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Return a spy on the logs to look for events from the node under test. For example:
@@ -237,51 +216,33 @@ object mod {
     * });
     * ```
     */
-  @scala.inline
-  def log(): SinonSpy[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[SinonSpy[js.Array[js.Any], js.Any]]
+  inline def log(): SinonSpy[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[SinonSpy[js.Array[js.Any], js.Any]]
   
-  @scala.inline
-  def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
-  @scala.inline
-  def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @scala.inline
-  def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
-  @scala.inline
-  def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @scala.inline
-  def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
-  @scala.inline
-  def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
   // Added in Node 6...
-  @scala.inline
-  def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
-  @scala.inline
-  def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @scala.inline
-  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependOnceListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
-  @scala.inline
-  def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependOnceListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependOnceListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("prependOnceListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
-  @scala.inline
-  def rawListeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
-  @scala.inline
-  def rawListeners(event: js.Symbol): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
+  inline def rawListeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
+  inline def rawListeners(event: js.Symbol): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawListeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
   
-  @scala.inline
-  def removeAllListeners(): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[this.type]
-  @scala.inline
-  def removeAllListeners(event: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[this.type]
-  @scala.inline
-  def removeAllListeners(event: js.Symbol): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[this.type]
+  inline def removeAllListeners(): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[this.type]
+  inline def removeAllListeners(event: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[this.type]
+  inline def removeAllListeners(event: js.Symbol): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[this.type]
   
-  @scala.inline
-  def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
-  @scala.inline
-  def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
+  inline def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[this.type]
   
   /**
     * Create http (supertest) request to the editor/admin url.
@@ -290,11 +251,9 @@ object mod {
     * helper.request().post('/inject/invalid').expect(404).end(done);
     * ```
     */
-  @scala.inline
-  def request(): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[SuperTest[Test]]
+  inline def request(): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")().asInstanceOf[SuperTest[Test]]
   
-  @scala.inline
-  def setMaxListeners(n: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(n.asInstanceOf[js.Any]).asInstanceOf[this.type]
+  inline def setMaxListeners(n: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(n.asInstanceOf[js.Any]).asInstanceOf[this.type]
   
   /**
     * Merges any userSettings with the defaults returned by `RED.settings`. Each
@@ -315,8 +274,7 @@ object mod {
     * @param userSettings - an object containing the runtime settings
     * @returns custom userSettings merged with default RED.settings
     */
-  @scala.inline
-  def settings(userSettings: PartialLocalSettings): LocalSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(userSettings.asInstanceOf[js.Any]).asInstanceOf[LocalSettings]
+  inline def settings(userSettings: PartialLocalSettings): LocalSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(userSettings.asInstanceOf[js.Any]).asInstanceOf[LocalSettings]
   
   /**
     * Starts a Node-RED server for testing nodes that depend on http or web sockets endpoints
@@ -328,10 +286,8 @@ object mod {
     * ```
     * @param done callback
     */
-  @scala.inline
-  def startServer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startServer")().asInstanceOf[Unit]
-  @scala.inline
-  def startServer(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startServer")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startServer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startServer")().asInstanceOf[Unit]
+  inline def startServer(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startServer")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Stop server. Generally called after unload() complete. For example, to unload a flow then
@@ -345,22 +301,18 @@ object mod {
     * ```
     * @param done callback
     */
-  @scala.inline
-  def stopServer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopServer")().asInstanceOf[Unit]
-  @scala.inline
-  def stopServer(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopServer")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stopServer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopServer")().asInstanceOf[Unit]
+  inline def stopServer(done: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopServer")(done.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns promise to stop all flows, clean up test runtime.
     */
-  @scala.inline
-  def unload(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")().asInstanceOf[js.Promise[Unit]]
+  inline def unload(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * Return the URL of the helper server including the ephemeral port used when starting the server.
     */
-  @scala.inline
-  def url(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[String]
+  inline def url(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[String]
   
   type TestCredentials[TCred] = NodeCredentials[TCred]
   

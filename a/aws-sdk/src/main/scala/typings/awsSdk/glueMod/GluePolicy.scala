@@ -28,37 +28,27 @@ trait GluePolicy extends StObject {
 }
 object GluePolicy {
   
-  @scala.inline
-  def apply(): GluePolicy = {
+  inline def apply(): GluePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GluePolicy]
   }
   
-  @scala.inline
-  implicit class GluePolicyMutableBuilder[Self <: GluePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: GluePolicy](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    @scala.inline
-    def setPolicyHash(value: HashString): Self = StObject.set(x, "PolicyHash", value.asInstanceOf[js.Any])
+    inline def setPolicyHash(value: HashString): Self = StObject.set(x, "PolicyHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyHashUndefined: Self = StObject.set(x, "PolicyHash", js.undefined)
+    inline def setPolicyHashUndefined: Self = StObject.set(x, "PolicyHash", js.undefined)
     
-    @scala.inline
-    def setPolicyInJson(value: PolicyJsonString): Self = StObject.set(x, "PolicyInJson", value.asInstanceOf[js.Any])
+    inline def setPolicyInJson(value: PolicyJsonString): Self = StObject.set(x, "PolicyInJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyInJsonUndefined: Self = StObject.set(x, "PolicyInJson", js.undefined)
+    inline def setPolicyInJsonUndefined: Self = StObject.set(x, "PolicyInJson", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: Timestamp): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: Timestamp): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }
 }

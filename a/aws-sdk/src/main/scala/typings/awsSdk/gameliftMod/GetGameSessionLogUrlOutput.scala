@@ -13,19 +13,15 @@ trait GetGameSessionLogUrlOutput extends StObject {
 }
 object GetGameSessionLogUrlOutput {
   
-  @scala.inline
-  def apply(): GetGameSessionLogUrlOutput = {
+  inline def apply(): GetGameSessionLogUrlOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGameSessionLogUrlOutput]
   }
   
-  @scala.inline
-  implicit class GetGameSessionLogUrlOutputMutableBuilder[Self <: GetGameSessionLogUrlOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetGameSessionLogUrlOutput](x: Self) {
     
-    @scala.inline
-    def setPreSignedUrl(value: NonZeroAndMaxString): Self = StObject.set(x, "PreSignedUrl", value.asInstanceOf[js.Any])
+    inline def setPreSignedUrl(value: NonZeroAndMaxString): Self = StObject.set(x, "PreSignedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreSignedUrlUndefined: Self = StObject.set(x, "PreSignedUrl", js.undefined)
+    inline def setPreSignedUrlUndefined: Self = StObject.set(x, "PreSignedUrl", js.undefined)
   }
 }

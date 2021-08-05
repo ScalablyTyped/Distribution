@@ -11,8 +11,7 @@ object momentPluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  inline def default(config: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
   
   trait Config extends StObject {
     
@@ -20,17 +19,14 @@ object momentPluginMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(moment: js.Function): Config = {
+    inline def apply(moment: js.Function): Config = {
       val __obj = js.Dynamic.literal(moment = moment.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setMoment(value: js.Function): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
+      inline def setMoment(value: js.Function): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
     }
   }
 }

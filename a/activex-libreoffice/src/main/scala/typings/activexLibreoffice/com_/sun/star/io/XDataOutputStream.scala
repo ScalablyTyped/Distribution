@@ -43,8 +43,7 @@ trait XDataOutputStream
 }
 object XDataOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
@@ -65,34 +64,24 @@ object XDataOutputStream {
     __obj.asInstanceOf[XDataOutputStream]
   }
   
-  @scala.inline
-  implicit class XDataOutputStreamMutableBuilder[Self <: XDataOutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XDataOutputStream](x: Self) {
     
-    @scala.inline
-    def setWriteBoolean(value: Boolean => Unit): Self = StObject.set(x, "writeBoolean", js.Any.fromFunction1(value))
+    inline def setWriteBoolean(value: Boolean => Unit): Self = StObject.set(x, "writeBoolean", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteByte(value: Double => Unit): Self = StObject.set(x, "writeByte", js.Any.fromFunction1(value))
+    inline def setWriteByte(value: Double => Unit): Self = StObject.set(x, "writeByte", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteChar(value: String => Unit): Self = StObject.set(x, "writeChar", js.Any.fromFunction1(value))
+    inline def setWriteChar(value: String => Unit): Self = StObject.set(x, "writeChar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteDouble(value: Double => Unit): Self = StObject.set(x, "writeDouble", js.Any.fromFunction1(value))
+    inline def setWriteDouble(value: Double => Unit): Self = StObject.set(x, "writeDouble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteFloat(value: Double => Unit): Self = StObject.set(x, "writeFloat", js.Any.fromFunction1(value))
+    inline def setWriteFloat(value: Double => Unit): Self = StObject.set(x, "writeFloat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteHyper(value: Double => Unit): Self = StObject.set(x, "writeHyper", js.Any.fromFunction1(value))
+    inline def setWriteHyper(value: Double => Unit): Self = StObject.set(x, "writeHyper", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteLong(value: Double => Unit): Self = StObject.set(x, "writeLong", js.Any.fromFunction1(value))
+    inline def setWriteLong(value: Double => Unit): Self = StObject.set(x, "writeLong", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteShort(value: Double => Unit): Self = StObject.set(x, "writeShort", js.Any.fromFunction1(value))
+    inline def setWriteShort(value: Double => Unit): Self = StObject.set(x, "writeShort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteUTF(value: String => Unit): Self = StObject.set(x, "writeUTF", js.Any.fromFunction1(value))
+    inline def setWriteUTF(value: String => Unit): Self = StObject.set(x, "writeUTF", js.Any.fromFunction1(value))
   }
 }

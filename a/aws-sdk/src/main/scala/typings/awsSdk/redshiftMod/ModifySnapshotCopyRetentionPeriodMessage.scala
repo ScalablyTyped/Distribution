@@ -23,25 +23,19 @@ trait ModifySnapshotCopyRetentionPeriodMessage extends StObject {
 }
 object ModifySnapshotCopyRetentionPeriodMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String, RetentionPeriod: Integer): ModifySnapshotCopyRetentionPeriodMessage = {
+  inline def apply(ClusterIdentifier: String, RetentionPeriod: Integer): ModifySnapshotCopyRetentionPeriodMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], RetentionPeriod = RetentionPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySnapshotCopyRetentionPeriodMessage]
   }
   
-  @scala.inline
-  implicit class ModifySnapshotCopyRetentionPeriodMessageMutableBuilder[Self <: ModifySnapshotCopyRetentionPeriodMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifySnapshotCopyRetentionPeriodMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManual(value: Boolean): Self = StObject.set(x, "Manual", value.asInstanceOf[js.Any])
+    inline def setManual(value: Boolean): Self = StObject.set(x, "Manual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualUndefined: Self = StObject.set(x, "Manual", js.undefined)
+    inline def setManualUndefined: Self = StObject.set(x, "Manual", js.undefined)
     
-    @scala.inline
-    def setRetentionPeriod(value: Integer): Self = StObject.set(x, "RetentionPeriod", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriod(value: Integer): Self = StObject.set(x, "RetentionPeriod", value.asInstanceOf[js.Any])
   }
 }

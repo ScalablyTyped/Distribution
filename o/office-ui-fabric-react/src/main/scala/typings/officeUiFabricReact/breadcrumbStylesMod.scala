@@ -12,6 +12,5 @@ object breadcrumbStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IBreadcrumbStyleProps): IBreadcrumbStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IBreadcrumbStyles]
+  inline def getStyles(props: IBreadcrumbStyleProps): IBreadcrumbStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IBreadcrumbStyles]
 }

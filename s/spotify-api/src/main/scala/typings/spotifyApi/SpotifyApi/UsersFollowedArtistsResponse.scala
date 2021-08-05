@@ -16,16 +16,13 @@ trait UsersFollowedArtistsResponse extends StObject {
 }
 object UsersFollowedArtistsResponse {
   
-  @scala.inline
-  def apply(artists: CursorBasedPagingObject[ArtistObjectFull]): UsersFollowedArtistsResponse = {
+  inline def apply(artists: CursorBasedPagingObject[ArtistObjectFull]): UsersFollowedArtistsResponse = {
     val __obj = js.Dynamic.literal(artists = artists.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersFollowedArtistsResponse]
   }
   
-  @scala.inline
-  implicit class UsersFollowedArtistsResponseMutableBuilder[Self <: UsersFollowedArtistsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UsersFollowedArtistsResponse](x: Self) {
     
-    @scala.inline
-    def setArtists(value: CursorBasedPagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+    inline def setArtists(value: CursorBasedPagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
   }
 }

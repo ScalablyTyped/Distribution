@@ -23,28 +23,21 @@ trait SizeConstraintSet extends StObject {
 }
 object SizeConstraintSet {
   
-  @scala.inline
-  def apply(SizeConstraintSetId: ResourceId, SizeConstraints: SizeConstraints): SizeConstraintSet = {
+  inline def apply(SizeConstraintSetId: ResourceId, SizeConstraints: SizeConstraints): SizeConstraintSet = {
     val __obj = js.Dynamic.literal(SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any], SizeConstraints = SizeConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeConstraintSet]
   }
   
-  @scala.inline
-  implicit class SizeConstraintSetMutableBuilder[Self <: SizeConstraintSet] (val x: Self) extends AnyVal {
+  extension [Self <: SizeConstraintSet](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraints(value: SizeConstraints): Self = StObject.set(x, "SizeConstraints", value.asInstanceOf[js.Any])
+    inline def setSizeConstraints(value: SizeConstraints): Self = StObject.set(x, "SizeConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintsVarargs(value: SizeConstraint*): Self = StObject.set(x, "SizeConstraints", js.Array(value :_*))
+    inline def setSizeConstraintsVarargs(value: SizeConstraint*): Self = StObject.set(x, "SizeConstraints", js.Array(value :_*))
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsScrollRails extends StObject
 object styleMsScrollRails {
   
-  @scala.inline
-  def styleMsScrollRailsNone: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsScrollRailsNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsScrollRailsNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsScrollRailsNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsScrollRailsRailed: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsScrollRailsRailed: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsScrollRails_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsScrollRails_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

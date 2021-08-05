@@ -11,6 +11,5 @@ object arrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indexArray[A](): Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexArray")().asInstanceOf[Index_[js.Array[A], Double, A]]
+  inline def indexArray[A](): Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexArray")().asInstanceOf[Index_[js.Array[A], Double, A]]
 }

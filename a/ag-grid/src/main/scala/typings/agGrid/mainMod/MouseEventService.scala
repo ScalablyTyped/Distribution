@@ -18,12 +18,10 @@ object MouseEventService {
   @JSImport("ag-grid/dist/lib/main", "MouseEventService.GRID_DOM_KEY")
   @js.native
   def GRID_DOM_KEY: js.Any = js.native
-  @scala.inline
-  def GRID_DOM_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRID_DOM_KEY")(x.asInstanceOf[js.Any])
+  inline def GRID_DOM_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRID_DOM_KEY")(x.asInstanceOf[js.Any])
   
   @JSImport("ag-grid/dist/lib/main", "MouseEventService.gridInstanceSequence")
   @js.native
   def gridInstanceSequence: js.Any = js.native
-  @scala.inline
-  def gridInstanceSequence_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gridInstanceSequence")(x.asInstanceOf[js.Any])
+  inline def gridInstanceSequence_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gridInstanceSequence")(x.asInstanceOf[js.Any])
 }

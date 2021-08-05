@@ -22,17 +22,14 @@ object mod {
       * @param options Options for setting global hook behaviour.
       * @return Object containing `unmount` method.
       */
-    @scala.inline
-    def globalHook(id: String, resolve: GlobalResolve): Unmount = (^.asInstanceOf[js.Dynamic].applyDynamic("global_hook")(id.asInstanceOf[js.Any], resolve.asInstanceOf[js.Any])).asInstanceOf[Unmount]
-    @scala.inline
-    def globalHook(id: String, resolve: GlobalResolve, options: GlobalHookOptions): Unmount = (^.asInstanceOf[js.Dynamic].applyDynamic("global_hook")(id.asInstanceOf[js.Any], resolve.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unmount]
+    inline def globalHook(id: String, resolve: GlobalResolve): Unmount = (^.asInstanceOf[js.Dynamic].applyDynamic("global_hook")(id.asInstanceOf[js.Any], resolve.asInstanceOf[js.Any])).asInstanceOf[Unmount]
+    inline def globalHook(id: String, resolve: GlobalResolve, options: GlobalHookOptions): Unmount = (^.asInstanceOf[js.Dynamic].applyDynamic("global_hook")(id.asInstanceOf[js.Any], resolve.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unmount]
     
     @JSImport("require-hacker", "default.global_hooks_enabled")
     @js.native
     def globalHooksEnabled: Boolean = js.native
     
-    @scala.inline
-    def globalHooksEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global_hooks_enabled")(x.asInstanceOf[js.Any])
+    inline def globalHooksEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global_hooks_enabled")(x.asInstanceOf[js.Any])
     
     /**
       * Intercept all `require` calls for paths with this file extension and reroute them to the resolve function.
@@ -41,35 +38,30 @@ object mod {
       * @param resolve Function to resolve a matching path to valid JavaScript source.
       * @return Object containing `unmount` method.
       */
-    @scala.inline
-    def hook(`extension`: String, resolve: Resolve): Unmount = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`extension`.asInstanceOf[js.Any], resolve.asInstanceOf[js.Any])).asInstanceOf[Unmount]
+    inline def hook(`extension`: String, resolve: Resolve): Unmount = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`extension`.asInstanceOf[js.Any], resolve.asInstanceOf[js.Any])).asInstanceOf[Unmount]
     
     @JSImport("require-hacker", "default.log")
     @js.native
     def log: Log = js.native
-    @scala.inline
-    def log_=(x: Log): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+    inline def log_=(x: Log): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
     
     @JSImport("require-hacker", "default.occupied_file_extensions")
     @js.native
     def occupiedFileExtensions: Set[String] = js.native
     
-    @scala.inline
-    def occupiedFileExtensions_=(x: Set[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("occupied_file_extensions")(x.asInstanceOf[js.Any])
+    inline def occupiedFileExtensions_=(x: Set[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("occupied_file_extensions")(x.asInstanceOf[js.Any])
     
     @JSImport("require-hacker", "default.path_resolvers")
     @js.native
     def pathResolvers: js.Array[Resolve] = js.native
     
-    @scala.inline
-    def pathResolvers_=(x: js.Array[Resolve]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path_resolvers")(x.asInstanceOf[js.Any])
+    inline def pathResolvers_=(x: js.Array[Resolve]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path_resolvers")(x.asInstanceOf[js.Any])
     
     @JSImport("require-hacker", "default.preceding_path_resolvers")
     @js.native
     def precedingPathResolvers: js.Array[Resolve] = js.native
     
-    @scala.inline
-    def precedingPathResolvers_=(x: js.Array[Resolve]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preceding_path_resolvers")(x.asInstanceOf[js.Any])
+    inline def precedingPathResolvers_=(x: js.Array[Resolve]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preceding_path_resolvers")(x.asInstanceOf[js.Any])
     
     /**
       * Resolve a requireable path to a real filesystem path to a JavaScript or JSON file.
@@ -82,21 +74,17 @@ object mod {
       * Resolve a requireable path to a real filesystem path to a JavaScript or JSON file.
       * Resolution is performed relative to the passed module.
       */
-    @scala.inline
-    def resolve(path: String, module: js.Any): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(path.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-    @scala.inline
-    def resolve_=(x: Resolve): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolve")(x.asInstanceOf[js.Any])
+    inline def resolve(path: String, module: js.Any): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(path.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+    inline def resolve_=(x: Resolve): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolve")(x.asInstanceOf[js.Any])
     
     /**
       * Intercept all `require` calls and tamper with the path, modifying it if needed.
       * Resolver should return a path to a valid JavaScript or JSON file, or return nothing.
       */
-    @scala.inline
-    def resolver(resolve: Resolve): Unmount = ^.asInstanceOf[js.Dynamic].applyDynamic("resolver")(resolve.asInstanceOf[js.Any]).asInstanceOf[Unmount]
+    inline def resolver(resolve: Resolve): Unmount = ^.asInstanceOf[js.Dynamic].applyDynamic("resolver")(resolve.asInstanceOf[js.Any]).asInstanceOf[Unmount]
     
     /** Convert anything to valid CommonJS JavaScript module source code. */
-    @scala.inline
-    def toJavascriptModuleSource(anything: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_javascript_module_source")(anything.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toJavascriptModuleSource(anything: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_javascript_module_source")(anything.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   trait GlobalHookOptions extends StObject {
@@ -111,20 +99,16 @@ object mod {
   }
   object GlobalHookOptions {
     
-    @scala.inline
-    def apply(): GlobalHookOptions = {
+    inline def apply(): GlobalHookOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalHookOptions]
     }
     
-    @scala.inline
-    implicit class GlobalHookOptionsMutableBuilder[Self <: GlobalHookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalHookOptions](x: Self) {
       
-      @scala.inline
-      def setPrecede_node_loader(value: Boolean): Self = StObject.set(x, "precede_node_loader", value.asInstanceOf[js.Any])
+      inline def setPrecede_node_loader(value: Boolean): Self = StObject.set(x, "precede_node_loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecede_node_loaderUndefined: Self = StObject.set(x, "precede_node_loader", js.undefined)
+      inline def setPrecede_node_loaderUndefined: Self = StObject.set(x, "precede_node_loader", js.undefined)
     }
   }
   
@@ -144,8 +128,7 @@ object mod {
   }
   object Log {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: /* repeated */ js.Any => Unit,
       error: /* repeated */ js.Any => Unit,
       options: LogOptions,
@@ -156,23 +139,17 @@ object mod {
       __obj.asInstanceOf[Log]
     }
     
-    @scala.inline
-    implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+    extension [Self <: Log](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: LogOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: LogOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarning(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
     }
   }
   
@@ -183,20 +160,16 @@ object mod {
   }
   object LogOptions {
     
-    @scala.inline
-    def apply(): LogOptions = {
+    inline def apply(): LogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogOptions]
     }
     
-    @scala.inline
-    implicit class LogOptionsMutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LogOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     }
   }
   
@@ -209,17 +182,14 @@ object mod {
   }
   object Unmount {
     
-    @scala.inline
-    def apply(unmount: () => Unit): Unmount = {
+    inline def apply(unmount: () => Unit): Unmount = {
       val __obj = js.Dynamic.literal(unmount = js.Any.fromFunction0(unmount))
       __obj.asInstanceOf[Unmount]
     }
     
-    @scala.inline
-    implicit class UnmountMutableBuilder[Self <: Unmount] (val x: Self) extends AnyVal {
+    extension [Self <: Unmount](x: Self) {
       
-      @scala.inline
-      def setUnmount(value: () => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction0(value))
+      inline def setUnmount(value: () => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction0(value))
     }
   }
 }

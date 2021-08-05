@@ -18,22 +18,17 @@ trait Job extends StObject {
 }
 object Job {
   
-  @scala.inline
-  def apply(steps: Steps, summary: JobSummary): Job = {
+  inline def apply(steps: Steps, summary: JobSummary): Job = {
     val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Job]
   }
   
-  @scala.inline
-  implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+  extension [Self <: Job](x: Self) {
     
-    @scala.inline
-    def setSteps(value: Steps): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: Steps): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: JobSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: JobSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

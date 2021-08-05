@@ -19,22 +19,17 @@ trait DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswo
 }
 object DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption {
   
-  @scala.inline
-  def apply(returnConnectionPasswordEncrypted: Input[Boolean]): DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption = {
+  inline def apply(returnConnectionPasswordEncrypted: Input[Boolean]): DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption = {
     val __obj = js.Dynamic.literal(returnConnectionPasswordEncrypted = returnConnectionPasswordEncrypted.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption]
   }
   
-  @scala.inline
-  implicit class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionMutableBuilder[Self <: DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption](x: Self) {
     
-    @scala.inline
-    def setAwsKmsKeyId(value: Input[String]): Self = StObject.set(x, "awsKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setAwsKmsKeyId(value: Input[String]): Self = StObject.set(x, "awsKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsKmsKeyIdUndefined: Self = StObject.set(x, "awsKmsKeyId", js.undefined)
+    inline def setAwsKmsKeyIdUndefined: Self = StObject.set(x, "awsKmsKeyId", js.undefined)
     
-    @scala.inline
-    def setReturnConnectionPasswordEncrypted(value: Input[Boolean]): Self = StObject.set(x, "returnConnectionPasswordEncrypted", value.asInstanceOf[js.Any])
+    inline def setReturnConnectionPasswordEncrypted(value: Input[Boolean]): Self = StObject.set(x, "returnConnectionPasswordEncrypted", value.asInstanceOf[js.Any])
   }
 }

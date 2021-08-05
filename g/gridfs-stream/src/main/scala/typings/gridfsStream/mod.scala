@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   // Merged declaration, g is both a callable function and a namespace
-  @scala.inline
-  def apply(db: js.Any, mongo: js.Any): Grid = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], mongo.asInstanceOf[js.Any])).asInstanceOf[Grid]
+  inline def apply(db: js.Any, mongo: js.Any): Grid = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], mongo.asInstanceOf[js.Any])).asInstanceOf[Grid]
   
   @JSImport("gridfs-stream", JSImport.Namespace)
   @js.native
@@ -71,62 +70,44 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+        inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+        inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
         
-        @scala.inline
-        def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+        inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+        inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
         
-        @scala.inline
-        def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+        inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+        inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+        inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+        inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
         
-        @scala.inline
-        def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+        inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+        inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
         
-        @scala.inline
-        def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+        inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+        inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
       }
     }
     
@@ -138,20 +119,16 @@ object mod {
     }
     object Range {
       
-      @scala.inline
-      def apply(endPos: Double, startPos: Double): Range = {
+      inline def apply(endPos: Double, startPos: Double): Range = {
         val __obj = js.Dynamic.literal(endPos = endPos.asInstanceOf[js.Any], startPos = startPos.asInstanceOf[js.Any])
         __obj.asInstanceOf[Range]
       }
       
-      @scala.inline
-      implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+      extension [Self <: Range](x: Self) {
         
-        @scala.inline
-        def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
+        inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
+        inline def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
       }
     }
     

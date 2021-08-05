@@ -13,11 +13,9 @@ object utilEntityTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEntityTypeHelpers(entityType: EntityType): EntityTypeHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntityTypeHelpers")(entityType.asInstanceOf[js.Any]).asInstanceOf[EntityTypeHelpers]
+  inline def getEntityTypeHelpers(entityType: EntityType): EntityTypeHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntityTypeHelpers")(entityType.asInstanceOf[js.Any]).asInstanceOf[EntityTypeHelpers]
   
-  @scala.inline
-  def getInstanceByEntityType(entityType: String, wire: default, identity: Identity): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceByEntityType")(entityType.asInstanceOf[js.Any], wire.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def getInstanceByEntityType(entityType: String, wire: default, identity: Identity): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceByEntityType")(entityType.asInstanceOf[js.Any], wire.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   trait EntityTypeHelpers extends StObject {
     
@@ -31,26 +29,20 @@ object utilEntityTypeMod {
   }
   object EntityTypeHelpers {
     
-    @scala.inline
-    def apply(isExternal: Boolean, isFrame: Boolean, isView: Boolean, isWindow: Boolean): EntityTypeHelpers = {
+    inline def apply(isExternal: Boolean, isFrame: Boolean, isView: Boolean, isWindow: Boolean): EntityTypeHelpers = {
       val __obj = js.Dynamic.literal(isExternal = isExternal.asInstanceOf[js.Any], isFrame = isFrame.asInstanceOf[js.Any], isView = isView.asInstanceOf[js.Any], isWindow = isWindow.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntityTypeHelpers]
     }
     
-    @scala.inline
-    implicit class EntityTypeHelpersMutableBuilder[Self <: EntityTypeHelpers] (val x: Self) extends AnyVal {
+    extension [Self <: EntityTypeHelpers](x: Self) {
       
-      @scala.inline
-      def setIsExternal(value: Boolean): Self = StObject.set(x, "isExternal", value.asInstanceOf[js.Any])
+      inline def setIsExternal(value: Boolean): Self = StObject.set(x, "isExternal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFrame(value: Boolean): Self = StObject.set(x, "isFrame", value.asInstanceOf[js.Any])
+      inline def setIsFrame(value: Boolean): Self = StObject.set(x, "isFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsView(value: Boolean): Self = StObject.set(x, "isView", value.asInstanceOf[js.Any])
+      inline def setIsView(value: Boolean): Self = StObject.set(x, "isView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWindow(value: Boolean): Self = StObject.set(x, "isWindow", value.asInstanceOf[js.Any])
+      inline def setIsWindow(value: Boolean): Self = StObject.set(x, "isWindow", value.asInstanceOf[js.Any])
     }
   }
 }

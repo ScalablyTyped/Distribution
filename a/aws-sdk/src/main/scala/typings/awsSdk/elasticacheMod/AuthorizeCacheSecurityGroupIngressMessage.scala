@@ -23,22 +23,17 @@ trait AuthorizeCacheSecurityGroupIngressMessage extends StObject {
 }
 object AuthorizeCacheSecurityGroupIngressMessage {
   
-  @scala.inline
-  def apply(CacheSecurityGroupName: String, EC2SecurityGroupName: String, EC2SecurityGroupOwnerId: String): AuthorizeCacheSecurityGroupIngressMessage = {
+  inline def apply(CacheSecurityGroupName: String, EC2SecurityGroupName: String, EC2SecurityGroupOwnerId: String): AuthorizeCacheSecurityGroupIngressMessage = {
     val __obj = js.Dynamic.literal(CacheSecurityGroupName = CacheSecurityGroupName.asInstanceOf[js.Any], EC2SecurityGroupName = EC2SecurityGroupName.asInstanceOf[js.Any], EC2SecurityGroupOwnerId = EC2SecurityGroupOwnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeCacheSecurityGroupIngressMessage]
   }
   
-  @scala.inline
-  implicit class AuthorizeCacheSecurityGroupIngressMessageMutableBuilder[Self <: AuthorizeCacheSecurityGroupIngressMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeCacheSecurityGroupIngressMessage](x: Self) {
     
-    @scala.inline
-    def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SecurityGroupName(value: String): Self = StObject.set(x, "EC2SecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setEC2SecurityGroupName(value: String): Self = StObject.set(x, "EC2SecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SecurityGroupOwnerId(value: String): Self = StObject.set(x, "EC2SecurityGroupOwnerId", value.asInstanceOf[js.Any])
+    inline def setEC2SecurityGroupOwnerId(value: String): Self = StObject.set(x, "EC2SecurityGroupOwnerId", value.asInstanceOf[js.Any])
   }
 }

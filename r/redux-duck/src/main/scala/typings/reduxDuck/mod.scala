@@ -16,10 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDuck(a: DuckName): DuckBuilder[AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any]).asInstanceOf[DuckBuilder[AnyAction]]
-  @scala.inline
-  def createDuck(a: DuckName, b: AppName): DuckBuilder[AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[DuckBuilder[AnyAction]]
+  inline def createDuck(a: DuckName): DuckBuilder[AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any]).asInstanceOf[DuckBuilder[AnyAction]]
+  inline def createDuck(a: DuckName, b: AppName): DuckBuilder[AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDuck")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[DuckBuilder[AnyAction]]
   
   type ActionCreator[A /* <: FSAHack */] = js.Function0[A] | (js.Function1[
     /* import warning: importer.ImportType#apply Failed type conversion: A['payload'] */ /* a */ js.Any, 
@@ -46,8 +44,7 @@ object mod {
   }
   object DuckBuilder {
     
-    @scala.inline
-    def apply[AppAction /* <: Action[js.Any] */](
+    inline def apply[AppAction /* <: Action[js.Any] */](
       createAction: js.Any => ActionCreator[Extract[AppAction, Type[js.Any, AppAction]]],
       createReducer: (ActionHandlers[js.Any, AppAction], js.Any) => Reducer[js.Any, AppAction],
       defineType: ActionName => ActionType
@@ -56,17 +53,13 @@ object mod {
       __obj.asInstanceOf[DuckBuilder[AppAction]]
     }
     
-    @scala.inline
-    implicit class DuckBuilderMutableBuilder[Self <: DuckBuilder[?], AppAction /* <: Action[js.Any] */] (val x: Self & DuckBuilder[AppAction]) extends AnyVal {
+    extension [Self <: DuckBuilder[?], AppAction /* <: Action[js.Any] */](x: Self & DuckBuilder[AppAction]) {
       
-      @scala.inline
-      def setCreateAction(value: js.Any => ActionCreator[Extract[AppAction, Type[js.Any, AppAction]]]): Self = StObject.set(x, "createAction", js.Any.fromFunction1(value))
+      inline def setCreateAction(value: js.Any => ActionCreator[Extract[AppAction, Type[js.Any, AppAction]]]): Self = StObject.set(x, "createAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateReducer(value: (ActionHandlers[js.Any, AppAction], js.Any) => Reducer[js.Any, AppAction]): Self = StObject.set(x, "createReducer", js.Any.fromFunction2(value))
+      inline def setCreateReducer(value: (ActionHandlers[js.Any, AppAction], js.Any) => Reducer[js.Any, AppAction]): Self = StObject.set(x, "createReducer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDefineType(value: ActionName => ActionType): Self = StObject.set(x, "defineType", js.Any.fromFunction1(value))
+      inline def setDefineType(value: ActionName => ActionType): Self = StObject.set(x, "defineType", js.Any.fromFunction1(value))
     }
   }
   
@@ -80,21 +73,17 @@ object mod {
   }
   object FSAHack {
     
-    @scala.inline
-    def apply(`type`: String): FSAHack = {
+    inline def apply(`type`: String): FSAHack = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FSAHack]
     }
     
-    @scala.inline
-    implicit class FSAHackMutableBuilder[Self <: FSAHack] (val x: Self) extends AnyVal {
+    extension [Self <: FSAHack](x: Self) {
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
 }

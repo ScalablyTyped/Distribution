@@ -15,13 +15,13 @@ class StatWatcher protected () extends EventEmitter {
   
   var filename: String = js.native
   
-  var hasChanged: js.Any = js.native
+  /* private */ var hasChanged: js.Any = js.native
   
   var interval: Double = js.native
   
-  var loop: js.Any = js.native
+  /* private */ var loop: js.Any = js.native
   
-  var onInterval: js.Any = js.native
+  /* private */ var onInterval: js.Any = js.native
   
   var prev: default[TStatNumber] = js.native
   

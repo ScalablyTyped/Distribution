@@ -10,10 +10,8 @@ object ionRenderToStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ionRenderToString(html: String, userAgent: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ionRenderToString")(html.asInstanceOf[js.Any], userAgent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def ionRenderToString(
+  inline def ionRenderToString(html: String, userAgent: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ionRenderToString")(html.asInstanceOf[js.Any], userAgent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def ionRenderToString(
     html: String,
     userAgent: String,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SerializeDocumentOptions */ js.Any

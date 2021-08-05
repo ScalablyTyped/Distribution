@@ -20,20 +20,16 @@ object anon {
   }
   object Column {
     
-    @scala.inline
-    def apply(column: Double, line: Double): Column = {
+    inline def apply(column: Double, line: Double): Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,29 +54,22 @@ object anon {
   }
   object Fast {
     
-    @scala.inline
-    def apply(): Fast = {
+    inline def apply(): Fast = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fast]
     }
     
-    @scala.inline
-    implicit class FastMutableBuilder[Self <: Fast] (val x: Self) extends AnyVal {
+    extension [Self <: Fast](x: Self) {
       
-      @scala.inline
-      def setFast(value: String): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
+      inline def setFast(value: String): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFastUndefined: Self = StObject.set(x, "fast", js.undefined)
+      inline def setFastUndefined: Self = StObject.set(x, "fast", js.undefined)
       
-      @scala.inline
-      def setProps(value: js.Array[String]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Array[String]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setPropsVarargs(value: String*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: String*): Self = StObject.set(x, "props", js.Array(value :_*))
     }
   }
   
@@ -116,26 +105,20 @@ object anon {
   }
   object Map {
     
-    @scala.inline
-    def apply(): Map = {
+    inline def apply(): Map = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Map]
     }
     
-    @scala.inline
-    implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+    extension [Self <: Map](x: Self) {
       
-      @scala.inline
-      def setMap(value: SourceMapOptions): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: SourceMapOptions): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -148,26 +131,20 @@ object anon {
   }
   object PickProcessOptionsmapfrom {
     
-    @scala.inline
-    def apply(): PickProcessOptionsmapfrom = {
+    inline def apply(): PickProcessOptionsmapfrom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickProcessOptionsmapfrom]
     }
     
-    @scala.inline
-    implicit class PickProcessOptionsmapfromMutableBuilder[Self <: PickProcessOptionsmapfrom] (val x: Self) extends AnyVal {
+    extension [Self <: PickProcessOptionsmapfrom](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     }
   }
   
@@ -179,20 +156,16 @@ object anon {
   }
   object Postcss {
     
-    @scala.inline
-    def apply(postcss: TransformCallback | Processor): Postcss = {
+    inline def apply(postcss: TransformCallback | Processor): Postcss = {
       val __obj = js.Dynamic.literal(postcss = postcss.asInstanceOf[js.Any])
       __obj.asInstanceOf[Postcss]
     }
     
-    @scala.inline
-    implicit class PostcssMutableBuilder[Self <: Postcss] (val x: Self) extends AnyVal {
+    extension [Self <: Postcss](x: Self) {
       
-      @scala.inline
-      def setPostcss(value: TransformCallback | Processor): Self = StObject.set(x, "postcss", value.asInstanceOf[js.Any])
+      inline def setPostcss(value: TransformCallback | Processor): Self = StObject.set(x, "postcss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostcssFunction2(value: (/* root */ Root_, /* result */ Result) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "postcss", js.Any.fromFunction2(value))
+      inline def setPostcssFunction2(value: (/* root */ Root_, /* result */ Result) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "postcss", js.Any.fromFunction2(value))
     }
   }
   

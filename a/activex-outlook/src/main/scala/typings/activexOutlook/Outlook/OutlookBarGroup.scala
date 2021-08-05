@@ -12,7 +12,7 @@ trait OutlookBarGroup extends StObject {
   
   var Name: String
   
-  @JSName("Outlook.OutlookBarGroup_typekey")
+  /* private */ @JSName("Outlook.OutlookBarGroup_typekey")
   var OutlookDotOutlookBarGroup_typekey: OutlookBarGroup
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait OutlookBarGroup extends StObject {
 }
 object OutlookBarGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Name: String,
@@ -41,31 +40,22 @@ object OutlookBarGroup {
     __obj.asInstanceOf[OutlookBarGroup]
   }
   
-  @scala.inline
-  implicit class OutlookBarGroupMutableBuilder[Self <: OutlookBarGroup] (val x: Self) extends AnyVal {
+  extension [Self <: OutlookBarGroup](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOutlookBarGroup_typekey(value: OutlookBarGroup): Self = StObject.set(x, "Outlook.OutlookBarGroup_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOutlookBarGroup_typekey(value: OutlookBarGroup): Self = StObject.set(x, "Outlook.OutlookBarGroup_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcuts(value: OutlookBarShortcuts): Self = StObject.set(x, "Shortcuts", value.asInstanceOf[js.Any])
+    inline def setShortcuts(value: OutlookBarShortcuts): Self = StObject.set(x, "Shortcuts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: OlOutlookBarViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: OlOutlookBarViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
   }
 }

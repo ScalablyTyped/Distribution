@@ -18,43 +18,31 @@ trait JSONEditorOptions extends StObject {
 }
 object JSONEditorOptions {
   
-  @scala.inline
-  def apply(): JSONEditorOptions = {
+  inline def apply(): JSONEditorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONEditorOptions]
   }
   
-  @scala.inline
-  implicit class JSONEditorOptionsMutableBuilder[Self <: JSONEditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
+    inline def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

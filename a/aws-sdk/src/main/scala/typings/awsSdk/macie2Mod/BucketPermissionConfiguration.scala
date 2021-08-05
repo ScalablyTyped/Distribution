@@ -18,25 +18,19 @@ trait BucketPermissionConfiguration extends StObject {
 }
 object BucketPermissionConfiguration {
   
-  @scala.inline
-  def apply(): BucketPermissionConfiguration = {
+  inline def apply(): BucketPermissionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketPermissionConfiguration]
   }
   
-  @scala.inline
-  implicit class BucketPermissionConfigurationMutableBuilder[Self <: BucketPermissionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BucketPermissionConfiguration](x: Self) {
     
-    @scala.inline
-    def setAccountLevelPermissions(value: AccountLevelPermissions): Self = StObject.set(x, "accountLevelPermissions", value.asInstanceOf[js.Any])
+    inline def setAccountLevelPermissions(value: AccountLevelPermissions): Self = StObject.set(x, "accountLevelPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountLevelPermissionsUndefined: Self = StObject.set(x, "accountLevelPermissions", js.undefined)
+    inline def setAccountLevelPermissionsUndefined: Self = StObject.set(x, "accountLevelPermissions", js.undefined)
     
-    @scala.inline
-    def setBucketLevelPermissions(value: BucketLevelPermissions): Self = StObject.set(x, "bucketLevelPermissions", value.asInstanceOf[js.Any])
+    inline def setBucketLevelPermissions(value: BucketLevelPermissions): Self = StObject.set(x, "bucketLevelPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketLevelPermissionsUndefined: Self = StObject.set(x, "bucketLevelPermissions", js.undefined)
+    inline def setBucketLevelPermissionsUndefined: Self = StObject.set(x, "bucketLevelPermissions", js.undefined)
   }
 }

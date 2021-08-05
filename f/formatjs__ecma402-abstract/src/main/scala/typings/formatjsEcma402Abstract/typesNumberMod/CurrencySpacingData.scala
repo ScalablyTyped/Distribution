@@ -12,19 +12,15 @@ trait CurrencySpacingData extends StObject {
 }
 object CurrencySpacingData {
   
-  @scala.inline
-  def apply(afterInsertBetween: String, beforeInsertBetween: String): CurrencySpacingData = {
+  inline def apply(afterInsertBetween: String, beforeInsertBetween: String): CurrencySpacingData = {
     val __obj = js.Dynamic.literal(afterInsertBetween = afterInsertBetween.asInstanceOf[js.Any], beforeInsertBetween = beforeInsertBetween.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrencySpacingData]
   }
   
-  @scala.inline
-  implicit class CurrencySpacingDataMutableBuilder[Self <: CurrencySpacingData] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencySpacingData](x: Self) {
     
-    @scala.inline
-    def setAfterInsertBetween(value: String): Self = StObject.set(x, "afterInsertBetween", value.asInstanceOf[js.Any])
+    inline def setAfterInsertBetween(value: String): Self = StObject.set(x, "afterInsertBetween", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeInsertBetween(value: String): Self = StObject.set(x, "beforeInsertBetween", value.asInstanceOf[js.Any])
+    inline def setBeforeInsertBetween(value: String): Self = StObject.set(x, "beforeInsertBetween", value.asInstanceOf[js.Any])
   }
 }

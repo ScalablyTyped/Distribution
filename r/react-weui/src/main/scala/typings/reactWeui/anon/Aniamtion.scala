@@ -24,8 +24,7 @@ trait Aniamtion extends StObject {
 }
 object Aniamtion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aniamtion: Boolean,
     defaultIndex: Double,
     groupIndex: Double,
@@ -39,31 +38,22 @@ object Aniamtion {
     __obj.asInstanceOf[Aniamtion]
   }
   
-  @scala.inline
-  implicit class AniamtionMutableBuilder[Self <: Aniamtion] (val x: Self) extends AnyVal {
+  extension [Self <: Aniamtion](x: Self) {
     
-    @scala.inline
-    def setAniamtion(value: Boolean): Self = StObject.set(x, "aniamtion", value.asInstanceOf[js.Any])
+    inline def setAniamtion(value: Boolean): Self = StObject.set(x, "aniamtion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultIndex(value: Double): Self = StObject.set(x, "defaultIndex", value.asInstanceOf[js.Any])
+    inline def setDefaultIndex(value: Double): Self = StObject.set(x, "defaultIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
+    inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorHeight(value: Double): Self = StObject.set(x, "indicatorHeight", value.asInstanceOf[js.Any])
+    inline def setIndicatorHeight(value: Double): Self = StObject.set(x, "indicatorHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorTop(value: Double): Self = StObject.set(x, "indicatorTop", value.asInstanceOf[js.Any])
+    inline def setIndicatorTop(value: Double): Self = StObject.set(x, "indicatorTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapKeys(value: Label): Self = StObject.set(x, "mapKeys", value.asInstanceOf[js.Any])
+    inline def setMapKeys(value: Label): Self = StObject.set(x, "mapKeys", value.asInstanceOf[js.Any])
   }
 }

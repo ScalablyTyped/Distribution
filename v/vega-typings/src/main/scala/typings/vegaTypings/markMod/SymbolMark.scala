@@ -17,17 +17,14 @@ trait SymbolMark
 }
 object SymbolMark {
   
-  @scala.inline
-  def apply(): SymbolMark = {
+  inline def apply(): SymbolMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("symbol")
     __obj.asInstanceOf[SymbolMark]
   }
   
-  @scala.inline
-  implicit class SymbolMarkMutableBuilder[Self <: SymbolMark] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolMark](x: Self) {
     
-    @scala.inline
-    def setType(value: symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

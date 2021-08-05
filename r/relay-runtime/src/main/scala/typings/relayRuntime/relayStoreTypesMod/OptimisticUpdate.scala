@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptimisticUpdate extends StObject
 object OptimisticUpdate {
   
-  @scala.inline
-  def OptimisticUpdateFunction(storeUpdater: RecordSourceProxy => Unit): typings.relayRuntime.relayStoreTypesMod.OptimisticUpdateFunction = {
+  inline def OptimisticUpdateFunction(storeUpdater: RecordSourceProxy => Unit): typings.relayRuntime.relayStoreTypesMod.OptimisticUpdateFunction = {
     val __obj = js.Dynamic.literal(storeUpdater = js.Any.fromFunction1(storeUpdater))
     __obj.asInstanceOf[typings.relayRuntime.relayStoreTypesMod.OptimisticUpdateFunction]
   }
   
-  @scala.inline
-  def OptimisticUpdateRelayPayload(operation: OperationDescriptor, payload: RelayResponsePayload): typings.relayRuntime.relayStoreTypesMod.OptimisticUpdateRelayPayload = {
+  inline def OptimisticUpdateRelayPayload(operation: OperationDescriptor, payload: RelayResponsePayload): typings.relayRuntime.relayStoreTypesMod.OptimisticUpdateRelayPayload = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.relayStoreTypesMod.OptimisticUpdateRelayPayload]
   }

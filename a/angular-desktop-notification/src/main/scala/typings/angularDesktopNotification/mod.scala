@@ -74,38 +74,28 @@ object mod extends Shortcut {
       }
       object AugmentedNotificationOptions {
         
-        @scala.inline
-        def apply(): AugmentedNotificationOptions = {
+        inline def apply(): AugmentedNotificationOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[AugmentedNotificationOptions]
         }
         
-        @scala.inline
-        implicit class AugmentedNotificationOptionsMutableBuilder[Self <: AugmentedNotificationOptions] (val x: Self) extends AnyVal {
+        extension [Self <: AugmentedNotificationOptions](x: Self) {
           
-          @scala.inline
-          def setOnClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+          inline def setOnClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+          inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
           
-          @scala.inline
-          def setOnError(value: /* evt */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+          inline def setOnError(value: /* evt */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+          inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
           
-          @scala.inline
-          def setVibrate(value: js.Any): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
+          inline def setVibrate(value: js.Any): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
+          inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
         }
       }
       
@@ -120,32 +110,24 @@ object mod extends Shortcut {
       }
       object IDesktopNotificationOptions {
         
-        @scala.inline
-        def apply(): IDesktopNotificationOptions = {
+        inline def apply(): IDesktopNotificationOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IDesktopNotificationOptions]
         }
         
-        @scala.inline
-        implicit class IDesktopNotificationOptionsMutableBuilder[Self <: IDesktopNotificationOptions] (val x: Self) extends AnyVal {
+        extension [Self <: IDesktopNotificationOptions](x: Self) {
           
-          @scala.inline
-          def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+          inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+          inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
           
-          @scala.inline
-          def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+          inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
           
-          @scala.inline
-          def setShowOnPageHidden(value: Boolean): Self = StObject.set(x, "showOnPageHidden", value.asInstanceOf[js.Any])
+          inline def setShowOnPageHidden(value: Boolean): Self = StObject.set(x, "showOnPageHidden", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShowOnPageHiddenUndefined: Self = StObject.set(x, "showOnPageHidden", js.undefined)
+          inline def setShowOnPageHiddenUndefined: Self = StObject.set(x, "showOnPageHidden", js.undefined)
         }
       }
       
@@ -159,17 +141,14 @@ object mod extends Shortcut {
       }
       object IDesktopNotificationProvider {
         
-        @scala.inline
-        def apply(config: IDesktopNotificationOptions => Unit): IDesktopNotificationProvider = {
+        inline def apply(config: IDesktopNotificationOptions => Unit): IDesktopNotificationProvider = {
           val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
           __obj.asInstanceOf[IDesktopNotificationProvider]
         }
         
-        @scala.inline
-        implicit class IDesktopNotificationProviderMutableBuilder[Self <: IDesktopNotificationProvider] (val x: Self) extends AnyVal {
+        extension [Self <: IDesktopNotificationProvider](x: Self) {
           
-          @scala.inline
-          def setConfig(value: IDesktopNotificationOptions => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+          inline def setConfig(value: IDesktopNotificationOptions => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
         }
       }
       

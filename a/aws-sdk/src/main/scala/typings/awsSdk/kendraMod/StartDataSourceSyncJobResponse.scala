@@ -13,19 +13,15 @@ trait StartDataSourceSyncJobResponse extends StObject {
 }
 object StartDataSourceSyncJobResponse {
   
-  @scala.inline
-  def apply(): StartDataSourceSyncJobResponse = {
+  inline def apply(): StartDataSourceSyncJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartDataSourceSyncJobResponse]
   }
   
-  @scala.inline
-  implicit class StartDataSourceSyncJobResponseMutableBuilder[Self <: StartDataSourceSyncJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartDataSourceSyncJobResponse](x: Self) {
     
-    @scala.inline
-    def setExecutionId(value: String): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: String): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
   }
 }

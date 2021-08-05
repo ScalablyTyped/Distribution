@@ -12,20 +12,16 @@ object mod {
     * @param [functionName] Function name if not anonymous
     * @returns Appender that appends code to the function's body
     */
-  @scala.inline
-  def apply(): Codegen = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Codegen]
-  @scala.inline
-  def apply(functionName: String): Codegen = ^.asInstanceOf[js.Dynamic].apply(functionName.asInstanceOf[js.Any]).asInstanceOf[Codegen]
+  inline def apply(): Codegen = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Codegen]
+  inline def apply(functionName: String): Codegen = ^.asInstanceOf[js.Dynamic].apply(functionName.asInstanceOf[js.Any]).asInstanceOf[Codegen]
   /**
     * Begins generating a function.
     * @param functionParams Function parameter names
     * @param [functionName] Function name if not anonymous
     * @returns Appender that appends code to the function's body
     */
-  @scala.inline
-  def apply(functionParams: js.Array[String]): Codegen = ^.asInstanceOf[js.Dynamic].apply(functionParams.asInstanceOf[js.Any]).asInstanceOf[Codegen]
-  @scala.inline
-  def apply(functionParams: js.Array[String], functionName: String): Codegen = (^.asInstanceOf[js.Dynamic].apply(functionParams.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[Codegen]
+  inline def apply(functionParams: js.Array[String]): Codegen = ^.asInstanceOf[js.Dynamic].apply(functionParams.asInstanceOf[js.Any]).asInstanceOf[Codegen]
+  inline def apply(functionParams: js.Array[String], functionName: String): Codegen = (^.asInstanceOf[js.Dynamic].apply(functionParams.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[Codegen]
   
   @JSImport("@protobufjs/codegen", JSImport.Namespace)
   @js.native
@@ -35,8 +31,7 @@ object mod {
   @JSImport("@protobufjs/codegen", "verbose")
   @js.native
   def verbose: Boolean = js.native
-  @scala.inline
-  def verbose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verbose")(x.asInstanceOf[js.Any])
+  inline def verbose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verbose")(x.asInstanceOf[js.Any])
   
   /**
     * Appends code to the function's body.

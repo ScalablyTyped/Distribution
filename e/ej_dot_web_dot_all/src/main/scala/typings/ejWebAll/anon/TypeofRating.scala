@@ -15,19 +15,15 @@ trait TypeofRating extends StObject {
 }
 object TypeofRating {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Rating): TypeofRating = {
+  inline def apply(Locale: js.Any, fn: Rating): TypeofRating = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRating]
   }
   
-  @scala.inline
-  implicit class TypeofRatingMutableBuilder[Self <: TypeofRating] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRating](x: Self) {
     
-    @scala.inline
-    def setFn(value: Rating): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Rating): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

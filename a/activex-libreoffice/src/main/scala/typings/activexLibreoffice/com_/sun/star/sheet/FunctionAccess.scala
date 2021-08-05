@@ -36,8 +36,7 @@ trait FunctionAccess
 }
 object FunctionAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CalcAsShown: Boolean,
     CharLocale: Locale,
     CharLocaleAsian: Locale,
@@ -81,10 +80,8 @@ object FunctionAccess {
     __obj.asInstanceOf[FunctionAccess]
   }
   
-  @scala.inline
-  implicit class FunctionAccessMutableBuilder[Self <: FunctionAccess] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionAccess](x: Self) {
     
-    @scala.inline
-    def setIsArrayFunction(value: Boolean): Self = StObject.set(x, "IsArrayFunction", value.asInstanceOf[js.Any])
+    inline def setIsArrayFunction(value: Boolean): Self = StObject.set(x, "IsArrayFunction", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait DescribeHostReservationOfferingsResult extends StObject {
 }
 object DescribeHostReservationOfferingsResult {
   
-  @scala.inline
-  def apply(): DescribeHostReservationOfferingsResult = {
+  inline def apply(): DescribeHostReservationOfferingsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHostReservationOfferingsResult]
   }
   
-  @scala.inline
-  implicit class DescribeHostReservationOfferingsResultMutableBuilder[Self <: DescribeHostReservationOfferingsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHostReservationOfferingsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOfferingSet(value: HostOfferingSet): Self = StObject.set(x, "OfferingSet", value.asInstanceOf[js.Any])
+    inline def setOfferingSet(value: HostOfferingSet): Self = StObject.set(x, "OfferingSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingSetUndefined: Self = StObject.set(x, "OfferingSet", js.undefined)
+    inline def setOfferingSetUndefined: Self = StObject.set(x, "OfferingSet", js.undefined)
     
-    @scala.inline
-    def setOfferingSetVarargs(value: HostOffering*): Self = StObject.set(x, "OfferingSet", js.Array(value :_*))
+    inline def setOfferingSetVarargs(value: HostOffering*): Self = StObject.set(x, "OfferingSet", js.Array(value :_*))
   }
 }

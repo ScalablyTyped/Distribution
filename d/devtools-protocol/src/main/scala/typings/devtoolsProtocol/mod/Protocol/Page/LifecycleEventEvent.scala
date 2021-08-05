@@ -24,25 +24,19 @@ trait LifecycleEventEvent extends StObject {
 }
 object LifecycleEventEvent {
   
-  @scala.inline
-  def apply(frameId: FrameId, loaderId: LoaderId, name: String, timestamp: MonotonicTime): LifecycleEventEvent = {
+  inline def apply(frameId: FrameId, loaderId: LoaderId, name: String, timestamp: MonotonicTime): LifecycleEventEvent = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], loaderId = loaderId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleEventEvent]
   }
   
-  @scala.inline
-  implicit class LifecycleEventEventMutableBuilder[Self <: LifecycleEventEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LifecycleEventEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
+    inline def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

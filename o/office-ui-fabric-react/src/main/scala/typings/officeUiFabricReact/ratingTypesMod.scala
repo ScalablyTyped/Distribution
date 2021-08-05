@@ -130,110 +130,76 @@ object ratingTypesMod {
   }
   object IRatingProps {
     
-    @scala.inline
-    def apply(): IRatingProps = {
+    inline def apply(): IRatingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRatingProps]
     }
     
-    @scala.inline
-    implicit class IRatingPropsMutableBuilder[Self <: IRatingProps] (val x: Self) extends AnyVal {
+    extension [Self <: IRatingProps](x: Self) {
       
-      @scala.inline
-      def setAllowZeroStars(value: Boolean): Self = StObject.set(x, "allowZeroStars", value.asInstanceOf[js.Any])
+      inline def setAllowZeroStars(value: Boolean): Self = StObject.set(x, "allowZeroStars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowZeroStarsUndefined: Self = StObject.set(x, "allowZeroStars", js.undefined)
+      inline def setAllowZeroStarsUndefined: Self = StObject.set(x, "allowZeroStars", js.undefined)
       
-      @scala.inline
-      def setAriaLabelFormat(value: String): Self = StObject.set(x, "ariaLabelFormat", value.asInstanceOf[js.Any])
+      inline def setAriaLabelFormat(value: String): Self = StObject.set(x, "ariaLabelFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelFormatUndefined: Self = StObject.set(x, "ariaLabelFormat", js.undefined)
+      inline def setAriaLabelFormatUndefined: Self = StObject.set(x, "ariaLabelFormat", js.undefined)
       
-      @scala.inline
-      def setAriaLabelId(value: String): Self = StObject.set(x, "ariaLabelId", value.asInstanceOf[js.Any])
+      inline def setAriaLabelId(value: String): Self = StObject.set(x, "ariaLabelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelIdUndefined: Self = StObject.set(x, "ariaLabelId", js.undefined)
+      inline def setAriaLabelIdUndefined: Self = StObject.set(x, "ariaLabelId", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IRating]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IRating]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IRating | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IRating | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setGetAriaLabel(value: (/* rating */ Double, /* max */ Double) => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction2(value))
+      inline def setGetAriaLabel(value: (/* rating */ Double, /* max */ Double) => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAriaLabelUndefined: Self = StObject.set(x, "getAriaLabel", js.undefined)
+      inline def setGetAriaLabelUndefined: Self = StObject.set(x, "getAriaLabel", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* event */ FocusEvent[HTMLElement], /* rating */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ FocusEvent[HTMLElement], /* rating */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnChanged(value: /* rating */ Double => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
+      inline def setOnChanged(value: /* rating */ Double => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
+      inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
       
-      @scala.inline
-      def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+      inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
       
-      @scala.inline
-      def setSize(value: RatingSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: RatingSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IRatingStyleProps, IRatingStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IRatingStyleProps, IRatingStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IRatingStyleProps => DeepPartial[IRatingStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IRatingStyleProps => DeepPartial[IRatingStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUnselectedIcon(value: String): Self = StObject.set(x, "unselectedIcon", value.asInstanceOf[js.Any])
+      inline def setUnselectedIcon(value: String): Self = StObject.set(x, "unselectedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectedIconUndefined: Self = StObject.set(x, "unselectedIcon", js.undefined)
+      inline def setUnselectedIconUndefined: Self = StObject.set(x, "unselectedIcon", js.undefined)
     }
   }
   
@@ -247,29 +213,22 @@ object ratingTypesMod {
   }
   object IRatingStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IRatingStyleProps = {
+    inline def apply(theme: ITheme): IRatingStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRatingStyleProps]
     }
     
-    @scala.inline
-    implicit class IRatingStylePropsMutableBuilder[Self <: IRatingStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IRatingStyleProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -299,113 +258,78 @@ object ratingTypesMod {
   }
   object IRatingStyles {
     
-    @scala.inline
-    def apply(): IRatingStyles = {
+    inline def apply(): IRatingStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRatingStyles]
     }
     
-    @scala.inline
-    implicit class IRatingStylesMutableBuilder[Self <: IRatingStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IRatingStyles](x: Self) {
       
-      @scala.inline
-      def setLabelText(value: IStyle): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
+      inline def setLabelText(value: IStyle): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelTextNull: Self = StObject.set(x, "labelText", null)
+      inline def setLabelTextNull: Self = StObject.set(x, "labelText", null)
       
-      @scala.inline
-      def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
+      inline def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
       
-      @scala.inline
-      def setRatingButton(value: IStyle): Self = StObject.set(x, "ratingButton", value.asInstanceOf[js.Any])
+      inline def setRatingButton(value: IStyle): Self = StObject.set(x, "ratingButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingButtonNull: Self = StObject.set(x, "ratingButton", null)
+      inline def setRatingButtonNull: Self = StObject.set(x, "ratingButton", null)
       
-      @scala.inline
-      def setRatingButtonUndefined: Self = StObject.set(x, "ratingButton", js.undefined)
+      inline def setRatingButtonUndefined: Self = StObject.set(x, "ratingButton", js.undefined)
       
-      @scala.inline
-      def setRatingFocusZone(value: IStyle): Self = StObject.set(x, "ratingFocusZone", value.asInstanceOf[js.Any])
+      inline def setRatingFocusZone(value: IStyle): Self = StObject.set(x, "ratingFocusZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingFocusZoneNull: Self = StObject.set(x, "ratingFocusZone", null)
+      inline def setRatingFocusZoneNull: Self = StObject.set(x, "ratingFocusZone", null)
       
-      @scala.inline
-      def setRatingFocusZoneUndefined: Self = StObject.set(x, "ratingFocusZone", js.undefined)
+      inline def setRatingFocusZoneUndefined: Self = StObject.set(x, "ratingFocusZone", js.undefined)
       
-      @scala.inline
-      def setRatingStar(value: IStyle): Self = StObject.set(x, "ratingStar", value.asInstanceOf[js.Any])
+      inline def setRatingStar(value: IStyle): Self = StObject.set(x, "ratingStar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingStarBack(value: IStyle): Self = StObject.set(x, "ratingStarBack", value.asInstanceOf[js.Any])
+      inline def setRatingStarBack(value: IStyle): Self = StObject.set(x, "ratingStarBack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingStarBackNull: Self = StObject.set(x, "ratingStarBack", null)
+      inline def setRatingStarBackNull: Self = StObject.set(x, "ratingStarBack", null)
       
-      @scala.inline
-      def setRatingStarBackUndefined: Self = StObject.set(x, "ratingStarBack", js.undefined)
+      inline def setRatingStarBackUndefined: Self = StObject.set(x, "ratingStarBack", js.undefined)
       
-      @scala.inline
-      def setRatingStarFront(value: IStyle): Self = StObject.set(x, "ratingStarFront", value.asInstanceOf[js.Any])
+      inline def setRatingStarFront(value: IStyle): Self = StObject.set(x, "ratingStarFront", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingStarFrontNull: Self = StObject.set(x, "ratingStarFront", null)
+      inline def setRatingStarFrontNull: Self = StObject.set(x, "ratingStarFront", null)
       
-      @scala.inline
-      def setRatingStarFrontUndefined: Self = StObject.set(x, "ratingStarFront", js.undefined)
+      inline def setRatingStarFrontUndefined: Self = StObject.set(x, "ratingStarFront", js.undefined)
       
-      @scala.inline
-      def setRatingStarIsLarge(value: IStyle): Self = StObject.set(x, "ratingStarIsLarge", value.asInstanceOf[js.Any])
+      inline def setRatingStarIsLarge(value: IStyle): Self = StObject.set(x, "ratingStarIsLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingStarIsLargeNull: Self = StObject.set(x, "ratingStarIsLarge", null)
+      inline def setRatingStarIsLargeNull: Self = StObject.set(x, "ratingStarIsLarge", null)
       
-      @scala.inline
-      def setRatingStarIsLargeUndefined: Self = StObject.set(x, "ratingStarIsLarge", js.undefined)
+      inline def setRatingStarIsLargeUndefined: Self = StObject.set(x, "ratingStarIsLarge", js.undefined)
       
-      @scala.inline
-      def setRatingStarIsSmall(value: IStyle): Self = StObject.set(x, "ratingStarIsSmall", value.asInstanceOf[js.Any])
+      inline def setRatingStarIsSmall(value: IStyle): Self = StObject.set(x, "ratingStarIsSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingStarIsSmallNull: Self = StObject.set(x, "ratingStarIsSmall", null)
+      inline def setRatingStarIsSmallNull: Self = StObject.set(x, "ratingStarIsSmall", null)
       
-      @scala.inline
-      def setRatingStarIsSmallUndefined: Self = StObject.set(x, "ratingStarIsSmall", js.undefined)
+      inline def setRatingStarIsSmallUndefined: Self = StObject.set(x, "ratingStarIsSmall", js.undefined)
       
-      @scala.inline
-      def setRatingStarNull: Self = StObject.set(x, "ratingStar", null)
+      inline def setRatingStarNull: Self = StObject.set(x, "ratingStar", null)
       
-      @scala.inline
-      def setRatingStarUndefined: Self = StObject.set(x, "ratingStar", js.undefined)
+      inline def setRatingStarUndefined: Self = StObject.set(x, "ratingStar", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIsLarge(value: IStyle): Self = StObject.set(x, "rootIsLarge", value.asInstanceOf[js.Any])
+      inline def setRootIsLarge(value: IStyle): Self = StObject.set(x, "rootIsLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIsLargeNull: Self = StObject.set(x, "rootIsLarge", null)
+      inline def setRootIsLargeNull: Self = StObject.set(x, "rootIsLarge", null)
       
-      @scala.inline
-      def setRootIsLargeUndefined: Self = StObject.set(x, "rootIsLarge", js.undefined)
+      inline def setRootIsLargeUndefined: Self = StObject.set(x, "rootIsLarge", js.undefined)
       
-      @scala.inline
-      def setRootIsSmall(value: IStyle): Self = StObject.set(x, "rootIsSmall", value.asInstanceOf[js.Any])
+      inline def setRootIsSmall(value: IStyle): Self = StObject.set(x, "rootIsSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIsSmallNull: Self = StObject.set(x, "rootIsSmall", null)
+      inline def setRootIsSmallNull: Self = StObject.set(x, "rootIsSmall", null)
       
-      @scala.inline
-      def setRootIsSmallUndefined: Self = StObject.set(x, "rootIsSmall", js.undefined)
+      inline def setRootIsSmallUndefined: Self = StObject.set(x, "rootIsSmall", js.undefined)
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

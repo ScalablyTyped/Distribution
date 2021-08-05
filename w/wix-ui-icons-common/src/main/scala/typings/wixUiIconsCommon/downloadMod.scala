@@ -22,20 +22,16 @@ object downloadMod extends Shortcut {
   }
   object DownloadProps {
     
-    @scala.inline
-    def apply(): DownloadProps = {
+    inline def apply(): DownloadProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadProps]
     }
     
-    @scala.inline
-    implicit class DownloadPropsMutableBuilder[Self <: DownloadProps] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

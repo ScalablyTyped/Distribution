@@ -30,8 +30,7 @@ object stickyScrollBarMod extends Shortcut {
   }
   object StickyScrollBarProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: HTMLElement | Window,
       offsetScroll: Double,
       onScroll: `0` => Unit,
@@ -41,20 +40,15 @@ object stickyScrollBarMod extends Shortcut {
       __obj.asInstanceOf[StickyScrollBarProps]
     }
     
-    @scala.inline
-    implicit class StickyScrollBarPropsMutableBuilder[Self <: StickyScrollBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: StickyScrollBarProps](x: Self) {
       
-      @scala.inline
-      def setContainer(value: HTMLElement | Window): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement | Window): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
+      inline def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnScroll(value: `0` => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: `0` => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollBodyRef(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "scrollBodyRef", value.asInstanceOf[js.Any])
+      inline def setScrollBodyRef(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "scrollBodyRef", value.asInstanceOf[js.Any])
     }
   }
   

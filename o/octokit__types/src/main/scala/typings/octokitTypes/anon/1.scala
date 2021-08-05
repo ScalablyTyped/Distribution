@@ -25,8 +25,7 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `-1`: Double,
     Plussign1: Double,
     confused: Double,
@@ -42,31 +41,22 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def `set-1`(value: Double): Self = StObject.set(x, "-1", value.asInstanceOf[js.Any])
+    inline def `set-1`(value: Double): Self = StObject.set(x, "-1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfused(value: Double): Self = StObject.set(x, "confused", value.asInstanceOf[js.Any])
+    inline def setConfused(value: Double): Self = StObject.set(x, "confused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeart(value: Double): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
+    inline def setHeart(value: Double): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooray(value: Double): Self = StObject.set(x, "hooray", value.asInstanceOf[js.Any])
+    inline def setHooray(value: Double): Self = StObject.set(x, "hooray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaugh(value: Double): Self = StObject.set(x, "laugh", value.asInstanceOf[js.Any])
+    inline def setLaugh(value: Double): Self = StObject.set(x, "laugh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlussign1(value: Double): Self = StObject.set(x, "+1", value.asInstanceOf[js.Any])
+    inline def setPlussign1(value: Double): Self = StObject.set(x, "+1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

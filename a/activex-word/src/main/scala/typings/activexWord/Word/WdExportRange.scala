@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdExportRange extends StObject
 object WdExportRange {
   
-  @scala.inline
-  def wdExportAllDocument: `0` = 0.asInstanceOf[`0`]
+  inline def wdExportAllDocument: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdExportCurrentPage: `2` = 2.asInstanceOf[`2`]
+  inline def wdExportCurrentPage: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdExportFromTo: `3` = 3.asInstanceOf[`3`]
+  inline def wdExportFromTo: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdExportSelection: `1` = 1.asInstanceOf[`1`]
+  inline def wdExportSelection: `1` = 1.asInstanceOf[`1`]
 }

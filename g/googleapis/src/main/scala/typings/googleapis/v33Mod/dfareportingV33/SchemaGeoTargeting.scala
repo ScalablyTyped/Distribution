@@ -58,64 +58,45 @@ trait SchemaGeoTargeting extends StObject {
 }
 object SchemaGeoTargeting {
   
-  @scala.inline
-  def apply(): SchemaGeoTargeting = {
+  inline def apply(): SchemaGeoTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGeoTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaGeoTargetingMutableBuilder[Self <: SchemaGeoTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGeoTargeting](x: Self) {
     
-    @scala.inline
-    def setCities(value: js.Array[SchemaCity]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
+    inline def setCities(value: js.Array[SchemaCity]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
+    inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
-    @scala.inline
-    def setCitiesVarargs(value: SchemaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
+    inline def setCitiesVarargs(value: SchemaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
     
-    @scala.inline
-    def setCountries(value: js.Array[SchemaCountry]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+    inline def setCountries(value: js.Array[SchemaCountry]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+    inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    @scala.inline
-    def setCountriesVarargs(value: SchemaCountry*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: SchemaCountry*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeCountries(value: Boolean): Self = StObject.set(x, "excludeCountries", value.asInstanceOf[js.Any])
+    inline def setExcludeCountries(value: Boolean): Self = StObject.set(x, "excludeCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeCountriesUndefined: Self = StObject.set(x, "excludeCountries", js.undefined)
+    inline def setExcludeCountriesUndefined: Self = StObject.set(x, "excludeCountries", js.undefined)
     
-    @scala.inline
-    def setMetros(value: js.Array[SchemaMetro]): Self = StObject.set(x, "metros", value.asInstanceOf[js.Any])
+    inline def setMetros(value: js.Array[SchemaMetro]): Self = StObject.set(x, "metros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
+    inline def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
     
-    @scala.inline
-    def setMetrosVarargs(value: SchemaMetro*): Self = StObject.set(x, "metros", js.Array(value :_*))
+    inline def setMetrosVarargs(value: SchemaMetro*): Self = StObject.set(x, "metros", js.Array(value :_*))
     
-    @scala.inline
-    def setPostalCodes(value: js.Array[SchemaPostalCode]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
+    inline def setPostalCodes(value: js.Array[SchemaPostalCode]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
+    inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
-    @scala.inline
-    def setPostalCodesVarargs(value: SchemaPostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+    inline def setPostalCodesVarargs(value: SchemaPostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setRegions(value: js.Array[SchemaRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[SchemaRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: SchemaRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: SchemaRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

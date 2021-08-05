@@ -10,8 +10,7 @@ trait IFocusManager
      with IObservable
 object IFocusManager {
   
-  @scala.inline
-  def apply(): IFocusManager = {
+  inline def apply(): IFocusManager = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFocusManager]
   }

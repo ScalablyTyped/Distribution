@@ -18,25 +18,19 @@ trait StatefulRuleGroup extends StObject {
 }
 object StatefulRuleGroup {
   
-  @scala.inline
-  def apply(): StatefulRuleGroup = {
+  inline def apply(): StatefulRuleGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatefulRuleGroup]
   }
   
-  @scala.inline
-  implicit class StatefulRuleGroupMutableBuilder[Self <: StatefulRuleGroup] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulRuleGroup](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setRuleGroupName(value: NetworkFirewallResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
+    inline def setRuleGroupName(value: NetworkFirewallResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
+    inline def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
   }
 }

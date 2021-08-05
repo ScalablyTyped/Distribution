@@ -19,25 +19,19 @@ trait TradePayOptions
 }
 object TradePayOptions {
   
-  @scala.inline
-  def apply(): TradePayOptions = {
+  inline def apply(): TradePayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TradePayOptions]
   }
   
-  @scala.inline
-  implicit class TradePayOptionsMutableBuilder[Self <: TradePayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TradePayOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ ResultCode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ResultCode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTradeNO(value: String): Self = StObject.set(x, "tradeNO", value.asInstanceOf[js.Any])
+    inline def setTradeNO(value: String): Self = StObject.set(x, "tradeNO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTradeNOUndefined: Self = StObject.set(x, "tradeNO", js.undefined)
+    inline def setTradeNOUndefined: Self = StObject.set(x, "tradeNO", js.undefined)
   }
 }

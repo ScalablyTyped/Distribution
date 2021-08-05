@@ -18,19 +18,15 @@ trait AddRoleToInstanceProfileRequest extends StObject {
 }
 object AddRoleToInstanceProfileRequest {
   
-  @scala.inline
-  def apply(InstanceProfileName: instanceProfileNameType, RoleName: roleNameType): AddRoleToInstanceProfileRequest = {
+  inline def apply(InstanceProfileName: instanceProfileNameType, RoleName: roleNameType): AddRoleToInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRoleToInstanceProfileRequest]
   }
   
-  @scala.inline
-  implicit class AddRoleToInstanceProfileRequestMutableBuilder[Self <: AddRoleToInstanceProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddRoleToInstanceProfileRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
+    inline def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

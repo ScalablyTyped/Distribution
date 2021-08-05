@@ -8,11 +8,9 @@ object domAccessibilityApiStrings {
   
   @js.native
   sealed trait description extends StObject
-  @scala.inline
-  def description: description = "description".asInstanceOf[description]
+  inline def description: description = "description".asInstanceOf[description]
   
   @js.native
   sealed trait name extends StObject
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
 }

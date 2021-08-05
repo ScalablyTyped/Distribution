@@ -31,7 +31,7 @@ object commandsMod {
       layoutProcessor: LayoutProcessor
     ) = this()
     
-    val commandsObserver: js.Any = js.native
+    /* private */ val commandsObserver: js.Any = js.native
     
     def dismissAllModals(): js.Promise[js.Any] = js.native
     def dismissAllModals(mergeOptions: Options): js.Promise[js.Any] = js.native
@@ -43,17 +43,17 @@ object commandsMod {
     
     def getLaunchArgs(): js.Promise[js.Any] = js.native
     
-    val layoutProcessor: js.Any = js.native
+    /* private */ val layoutProcessor: js.Any = js.native
     
-    val layoutTreeCrawler: js.Any = js.native
+    /* private */ val layoutTreeCrawler: js.Any = js.native
     
-    val layoutTreeParser: js.Any = js.native
+    /* private */ val layoutTreeParser: js.Any = js.native
     
     def mergeOptions(componentId: String, options: Options): Unit = js.native
     
-    val nativeCommandsSender: js.Any = js.native
+    /* private */ val nativeCommandsSender: js.Any = js.native
     
-    val optionsProcessor: js.Any = js.native
+    /* private */ val optionsProcessor: js.Any = js.native
     
     def pop(componentId: String): js.Promise[js.Any] = js.native
     def pop(componentId: String, mergeOptions: Options): js.Promise[js.Any] = js.native
@@ -76,9 +76,9 @@ object commandsMod {
     
     def showOverlay(simpleApi: Layout[js.Object]): js.Promise[js.Any] = js.native
     
-    val store: js.Any = js.native
+    /* private */ val store: js.Any = js.native
     
-    val uniqueIdProvider: js.Any = js.native
+    /* private */ val uniqueIdProvider: js.Any = js.native
     
     def updateProps(componentId: String, props: js.Object): Unit = js.native
   }

@@ -23,31 +23,23 @@ trait DvbNitSettings extends StObject {
 }
 object DvbNitSettings {
   
-  @scala.inline
-  def apply(): DvbNitSettings = {
+  inline def apply(): DvbNitSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DvbNitSettings]
   }
   
-  @scala.inline
-  implicit class DvbNitSettingsMutableBuilder[Self <: DvbNitSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DvbNitSettings](x: Self) {
     
-    @scala.inline
-    def setNetworkId(value: integerMin0Max65535): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: integerMin0Max65535): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
+    inline def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
     
-    @scala.inline
-    def setNetworkName(value: stringMin1Max256): Self = StObject.set(x, "NetworkName", value.asInstanceOf[js.Any])
+    inline def setNetworkName(value: stringMin1Max256): Self = StObject.set(x, "NetworkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkNameUndefined: Self = StObject.set(x, "NetworkName", js.undefined)
+    inline def setNetworkNameUndefined: Self = StObject.set(x, "NetworkName", js.undefined)
     
-    @scala.inline
-    def setNitInterval(value: integerMin25Max10000): Self = StObject.set(x, "NitInterval", value.asInstanceOf[js.Any])
+    inline def setNitInterval(value: integerMin25Max10000): Self = StObject.set(x, "NitInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNitIntervalUndefined: Self = StObject.set(x, "NitInterval", js.undefined)
+    inline def setNitIntervalUndefined: Self = StObject.set(x, "NitInterval", js.undefined)
   }
 }

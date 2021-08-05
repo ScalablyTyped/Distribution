@@ -14,8 +14,7 @@ object typesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): js.Promise[js.UndefOr[String | Null]] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyValidators")(value.asInstanceOf[js.Any], validators.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String | Null]]]
+  inline def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): js.Promise[js.UndefOr[String | Null]] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyValidators")(value.asInstanceOf[js.Any], validators.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String | Null]]]
   
   trait ComposibleValidatable[TValue]
     extends StObject
@@ -36,8 +35,7 @@ object typesMod {
   }
   object ComposibleValidatable {
     
-    @scala.inline
-    def apply[TValue](
+    inline def apply[TValue](
       $: TValue,
       _on$Reinit: () => Unit,
       _on$ValidationPass: () => Unit,
@@ -53,20 +51,15 @@ object typesMod {
       __obj.asInstanceOf[ComposibleValidatable[TValue]]
     }
     
-    @scala.inline
-    implicit class ComposibleValidatableMutableBuilder[Self <: ComposibleValidatable[?], TValue] (val x: Self & ComposibleValidatable[TValue]) extends AnyVal {
+    extension [Self <: ComposibleValidatable[?], TValue](x: Self & ComposibleValidatable[TValue]) {
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_on$Reinit(value: () => Unit): Self = StObject.set(x, "_on$Reinit", js.Any.fromFunction0(value))
+      inline def set_on$Reinit(value: () => Unit): Self = StObject.set(x, "_on$Reinit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_on$ValidationPass(value: () => Unit): Self = StObject.set(x, "_on$ValidationPass", js.Any.fromFunction0(value))
+      inline def set_on$ValidationPass(value: () => Unit): Self = StObject.set(x, "_on$ValidationPass", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_setCompositionParent(value: OnReinit => Unit): Self = StObject.set(x, "_setCompositionParent", js.Any.fromFunction1(value))
+      inline def set_setCompositionParent(value: OnReinit => Unit): Self = StObject.set(x, "_setCompositionParent", js.Any.fromFunction1(value))
     }
   }
   
@@ -89,8 +82,7 @@ object typesMod {
   }
   object Validatable {
     
-    @scala.inline
-    def apply[TValue](
+    inline def apply[TValue](
       $: TValue,
       disableAutoValidation: () => Unit,
       enableAutoValidation: () => Unit,
@@ -102,35 +94,25 @@ object typesMod {
       __obj.asInstanceOf[Validatable[TValue]]
     }
     
-    @scala.inline
-    implicit class ValidatableMutableBuilder[Self <: Validatable[?], TValue] (val x: Self & Validatable[TValue]) extends AnyVal {
+    extension [Self <: Validatable[?], TValue](x: Self & Validatable[TValue]) {
       
-      @scala.inline
-      def set$(value: TValue): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+      inline def set$(value: TValue): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAutoValidation(value: () => Unit): Self = StObject.set(x, "disableAutoValidation", js.Any.fromFunction0(value))
+      inline def setDisableAutoValidation(value: () => Unit): Self = StObject.set(x, "disableAutoValidation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableAutoValidation(value: () => Unit): Self = StObject.set(x, "enableAutoValidation", js.Any.fromFunction0(value))
+      inline def setEnableAutoValidation(value: () => Unit): Self = StObject.set(x, "enableAutoValidation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: () => js.Promise[HasError | Value[TValue]]): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+      inline def setValidate(value: () => js.Promise[HasError | Value[TValue]]): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
     }
   }
   

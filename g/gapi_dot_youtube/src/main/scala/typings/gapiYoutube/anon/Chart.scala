@@ -53,8 +53,7 @@ trait Chart extends StObject {
 }
 object Chart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: String,
     id: String,
     locale: String,
@@ -69,34 +68,24 @@ object Chart {
     __obj.asInstanceOf[Chart]
   }
   
-  @scala.inline
-  implicit class ChartMutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
+  extension [Self <: Chart](x: Self) {
     
-    @scala.inline
-    def setChart(value: String): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: String): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMyRating(value: String): Self = StObject.set(x, "myRating", value.asInstanceOf[js.Any])
+    inline def setMyRating(value: String): Self = StObject.set(x, "myRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCategoryId(value: String): Self = StObject.set(x, "videoCategoryId", value.asInstanceOf[js.Any])
+    inline def setVideoCategoryId(value: String): Self = StObject.set(x, "videoCategoryId", value.asInstanceOf[js.Any])
   }
 }

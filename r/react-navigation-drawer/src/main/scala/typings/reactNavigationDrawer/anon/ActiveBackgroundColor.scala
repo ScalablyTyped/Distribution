@@ -16,8 +16,7 @@ trait ActiveBackgroundColor extends StObject {
 }
 object ActiveBackgroundColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeBackgroundColor: Dark,
     activeTintColor: Dark,
     inactiveBackgroundColor: Dark,
@@ -27,19 +26,14 @@ object ActiveBackgroundColor {
     __obj.asInstanceOf[ActiveBackgroundColor]
   }
   
-  @scala.inline
-  implicit class ActiveBackgroundColorMutableBuilder[Self <: ActiveBackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveBackgroundColor](x: Self) {
     
-    @scala.inline
-    def setActiveBackgroundColor(value: Dark): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setActiveBackgroundColor(value: Dark): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTintColor(value: Dark): Self = StObject.set(x, "activeTintColor", value.asInstanceOf[js.Any])
+    inline def setActiveTintColor(value: Dark): Self = StObject.set(x, "activeTintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveBackgroundColor(value: Dark): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setInactiveBackgroundColor(value: Dark): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveTintColor(value: Dark): Self = StObject.set(x, "inactiveTintColor", value.asInstanceOf[js.Any])
+    inline def setInactiveTintColor(value: Dark): Self = StObject.set(x, "inactiveTintColor", value.asInstanceOf[js.Any])
   }
 }

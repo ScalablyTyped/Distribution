@@ -13,19 +13,15 @@ trait GetDeploymentGroupOutput extends StObject {
 }
 object GetDeploymentGroupOutput {
   
-  @scala.inline
-  def apply(): GetDeploymentGroupOutput = {
+  inline def apply(): GetDeploymentGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDeploymentGroupOutput]
   }
   
-  @scala.inline
-  implicit class GetDeploymentGroupOutputMutableBuilder[Self <: GetDeploymentGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentGroupOutput](x: Self) {
     
-    @scala.inline
-    def setDeploymentGroupInfo(value: DeploymentGroupInfo): Self = StObject.set(x, "deploymentGroupInfo", value.asInstanceOf[js.Any])
+    inline def setDeploymentGroupInfo(value: DeploymentGroupInfo): Self = StObject.set(x, "deploymentGroupInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupInfoUndefined: Self = StObject.set(x, "deploymentGroupInfo", js.undefined)
+    inline def setDeploymentGroupInfoUndefined: Self = StObject.set(x, "deploymentGroupInfo", js.undefined)
   }
 }

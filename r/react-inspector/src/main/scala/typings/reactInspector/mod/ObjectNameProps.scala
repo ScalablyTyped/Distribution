@@ -14,31 +14,23 @@ trait ObjectNameProps extends StObject {
 }
 object ObjectNameProps {
   
-  @scala.inline
-  def apply(): ObjectNameProps = {
+  inline def apply(): ObjectNameProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectNameProps]
   }
   
-  @scala.inline
-  implicit class ObjectNamePropsMutableBuilder[Self <: ObjectNameProps] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectNameProps](x: Self) {
     
-    @scala.inline
-    def setDimmed(value: Boolean): Self = StObject.set(x, "dimmed", value.asInstanceOf[js.Any])
+    inline def setDimmed(value: Boolean): Self = StObject.set(x, "dimmed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimmedUndefined: Self = StObject.set(x, "dimmed", js.undefined)
+    inline def setDimmedUndefined: Self = StObject.set(x, "dimmed", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

@@ -40,8 +40,7 @@ trait DragItem extends StObject {
 }
 object DragItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $drag: (HTMLElement, Event) => String,
     $dragHTML: WebixCallback,
     $dragIn: (HTMLElement, HTMLElement, Event) => HTMLElement,
@@ -55,31 +54,22 @@ object DragItem {
     __obj.asInstanceOf[DragItem]
   }
   
-  @scala.inline
-  implicit class DragItemMutableBuilder[Self <: DragItem] (val x: Self) extends AnyVal {
+  extension [Self <: DragItem](x: Self) {
     
-    @scala.inline
-    def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
+    inline def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$dragHTML(value: WebixCallback): Self = StObject.set(x, "$dragHTML", value.asInstanceOf[js.Any])
+    inline def set$dragHTML(value: WebixCallback): Self = StObject.set(x, "$dragHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
+    inline def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set$dragMark(value: (js.Any, Event) => Boolean): Self = StObject.set(x, "$dragMark", js.Any.fromFunction2(value))
+    inline def set$dragMark(value: (js.Any, Event) => Boolean): Self = StObject.set(x, "$dragMark", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$dragOut", js.Any.fromFunction4(value))
+    inline def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$dragOut", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def set$drop(value: (HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$drop", js.Any.fromFunction3(value))
+    inline def set$drop(value: (HTMLElement, HTMLElement, Event) => Unit): Self = StObject.set(x, "$drop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set$dropAllow(value: WebixCallback): Self = StObject.set(x, "$dropAllow", value.asInstanceOf[js.Any])
+    inline def set$dropAllow(value: WebixCallback): Self = StObject.set(x, "$dropAllow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$dropHTML(value: WebixCallback): Self = StObject.set(x, "$dropHTML", value.asInstanceOf[js.Any])
+    inline def set$dropHTML(value: WebixCallback): Self = StObject.set(x, "$dropHTML", value.asInstanceOf[js.Any])
   }
 }

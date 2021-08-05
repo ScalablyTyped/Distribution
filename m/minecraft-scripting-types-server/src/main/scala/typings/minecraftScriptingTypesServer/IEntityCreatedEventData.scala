@@ -17,16 +17,13 @@ trait IEntityCreatedEventData extends StObject {
 }
 object IEntityCreatedEventData {
   
-  @scala.inline
-  def apply(entity: IEntity): IEntityCreatedEventData = {
+  inline def apply(entity: IEntity): IEntityCreatedEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityCreatedEventData]
   }
   
-  @scala.inline
-  implicit class IEntityCreatedEventDataMutableBuilder[Self <: IEntityCreatedEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityCreatedEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
   }
 }

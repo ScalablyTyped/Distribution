@@ -10,16 +10,13 @@ trait `0`[T] extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply[T](previews: Array[T | String]): `0`[T] = {
+  inline def apply[T](previews: Array[T | String]): `0`[T] = {
     val __obj = js.Dynamic.literal(previews = previews.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`[T]]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`[?], T] (val x: Self & `0`[T]) extends AnyVal {
+  extension [Self <: `0`[?], T](x: Self & `0`[T]) {
     
-    @scala.inline
-    def setPreviews(value: Array[T | String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+    inline def setPreviews(value: Array[T | String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
   }
 }

@@ -33,16 +33,13 @@ trait NetworkStats extends StObject {
 }
 object NetworkStats {
   
-  @scala.inline
-  def apply(NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): NetworkStats = {
+  inline def apply(NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): NetworkStats = {
     val __obj = js.Dynamic.literal(NetworkType = NetworkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkStats]
   }
   
-  @scala.inline
-  implicit class NetworkStatsMutableBuilder[Self <: NetworkStats] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkStats](x: Self) {
     
-    @scala.inline
-    def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
   }
 }

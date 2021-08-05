@@ -18,6 +18,5 @@ object clients {
   @JSImport("wix-style-react", "clients.GoogleMapsClient")
   @js.native
   def GoogleMapsClient: typings.wixStyleReact.clientsMod.GoogleMapsClient = js.native
-  @scala.inline
-  def GoogleMapsClient_=(x: typings.wixStyleReact.clientsMod.GoogleMapsClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GoogleMapsClient")(x.asInstanceOf[js.Any])
+  inline def GoogleMapsClient_=(x: typings.wixStyleReact.clientsMod.GoogleMapsClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GoogleMapsClient")(x.asInstanceOf[js.Any])
 }

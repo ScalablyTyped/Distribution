@@ -10,13 +10,10 @@ object orientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def linearRingIsClockwise(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingIsClockwise")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def linearRingIsClockwise(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingIsClockwise")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def linearRingsAreOriented(flatCoordinates: js.Array[Double], offset: Double, ends: js.Array[Double], stride: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingsAreOriented")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def linearRingsAreOriented(
+  inline def linearRingsAreOriented(flatCoordinates: js.Array[Double], offset: Double, ends: js.Array[Double], stride: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingsAreOriented")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def linearRingsAreOriented(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -24,15 +21,13 @@ object orientMod {
     opt_right: Boolean
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingsAreOriented")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def linearRingssAreOriented(
+  inline def linearRingssAreOriented(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
     stride: Double
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingssAreOriented")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def linearRingssAreOriented(
+  inline def linearRingssAreOriented(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
@@ -40,10 +35,8 @@ object orientMod {
     opt_right: Boolean
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingssAreOriented")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def orientLinearRings(flatCoordinates: js.Array[Double], offset: Double, ends: js.Array[Double], stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("orientLinearRings")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def orientLinearRings(
+  inline def orientLinearRings(flatCoordinates: js.Array[Double], offset: Double, ends: js.Array[Double], stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("orientLinearRings")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def orientLinearRings(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -51,15 +44,13 @@ object orientMod {
     opt_right: Boolean
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("orientLinearRings")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def orientLinearRingsArray(
+  inline def orientLinearRingsArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
     stride: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("orientLinearRingsArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def orientLinearRingsArray(
+  inline def orientLinearRingsArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],

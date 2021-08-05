@@ -12,16 +12,13 @@ trait AllJoynSessionMemberAddedEventArgs extends StObject {
 }
 object AllJoynSessionMemberAddedEventArgs {
   
-  @scala.inline
-  def apply(uniqueName: String): AllJoynSessionMemberAddedEventArgs = {
+  inline def apply(uniqueName: String): AllJoynSessionMemberAddedEventArgs = {
     val __obj = js.Dynamic.literal(uniqueName = uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynSessionMemberAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynSessionMemberAddedEventArgsMutableBuilder[Self <: AllJoynSessionMemberAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynSessionMemberAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
   }
 }

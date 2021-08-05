@@ -27,31 +27,23 @@ trait SchemaClusterInfo extends StObject {
 }
 object SchemaClusterInfo {
   
-  @scala.inline
-  def apply(): SchemaClusterInfo = {
+  inline def apply(): SchemaClusterInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClusterInfo]
   }
   
-  @scala.inline
-  implicit class SchemaClusterInfoMutableBuilder[Self <: SchemaClusterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClusterInfo](x: Self) {
     
-    @scala.inline
-    def setCentroidId(value: String): Self = StObject.set(x, "centroidId", value.asInstanceOf[js.Any])
+    inline def setCentroidId(value: String): Self = StObject.set(x, "centroidId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCentroidIdUndefined: Self = StObject.set(x, "centroidId", js.undefined)
+    inline def setCentroidIdUndefined: Self = StObject.set(x, "centroidId", js.undefined)
     
-    @scala.inline
-    def setClusterRadius(value: Double): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
+    inline def setClusterRadius(value: Double): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
+    inline def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
     
-    @scala.inline
-    def setClusterSize(value: String): Self = StObject.set(x, "clusterSize", value.asInstanceOf[js.Any])
+    inline def setClusterSize(value: String): Self = StObject.set(x, "clusterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterSizeUndefined: Self = StObject.set(x, "clusterSize", js.undefined)
+    inline def setClusterSizeUndefined: Self = StObject.set(x, "clusterSize", js.undefined)
   }
 }

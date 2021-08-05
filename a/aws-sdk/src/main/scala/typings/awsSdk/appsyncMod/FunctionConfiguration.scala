@@ -48,61 +48,43 @@ trait FunctionConfiguration extends StObject {
 }
 object FunctionConfiguration {
   
-  @scala.inline
-  def apply(): FunctionConfiguration = {
+  inline def apply(): FunctionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionConfiguration]
   }
   
-  @scala.inline
-  implicit class FunctionConfigurationMutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionConfiguration](x: Self) {
     
-    @scala.inline
-    def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
+    inline def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionArnUndefined: Self = StObject.set(x, "functionArn", js.undefined)
+    inline def setFunctionArnUndefined: Self = StObject.set(x, "functionArn", js.undefined)
     
-    @scala.inline
-    def setFunctionId(value: String): Self = StObject.set(x, "functionId", value.asInstanceOf[js.Any])
+    inline def setFunctionId(value: String): Self = StObject.set(x, "functionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionIdUndefined: Self = StObject.set(x, "functionId", js.undefined)
+    inline def setFunctionIdUndefined: Self = StObject.set(x, "functionId", js.undefined)
     
-    @scala.inline
-    def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
+    inline def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
+    inline def setFunctionVersionUndefined: Self = StObject.set(x, "functionVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRequestMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
+    inline def setRequestMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "requestMappingTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMappingTemplateUndefined: Self = StObject.set(x, "requestMappingTemplate", js.undefined)
+    inline def setRequestMappingTemplateUndefined: Self = StObject.set(x, "requestMappingTemplate", js.undefined)
     
-    @scala.inline
-    def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
+    inline def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
+    inline def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
   }
 }

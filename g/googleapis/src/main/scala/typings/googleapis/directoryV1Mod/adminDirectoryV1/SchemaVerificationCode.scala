@@ -33,37 +33,27 @@ trait SchemaVerificationCode extends StObject {
 }
 object SchemaVerificationCode {
   
-  @scala.inline
-  def apply(): SchemaVerificationCode = {
+  inline def apply(): SchemaVerificationCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVerificationCode]
   }
   
-  @scala.inline
-  implicit class SchemaVerificationCodeMutableBuilder[Self <: SchemaVerificationCode] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVerificationCode](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setVerificationCode(value: String): Self = StObject.set(x, "verificationCode", value.asInstanceOf[js.Any])
+    inline def setVerificationCode(value: String): Self = StObject.set(x, "verificationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationCodeUndefined: Self = StObject.set(x, "verificationCode", js.undefined)
+    inline def setVerificationCodeUndefined: Self = StObject.set(x, "verificationCode", js.undefined)
   }
 }

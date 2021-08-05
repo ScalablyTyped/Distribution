@@ -14,28 +14,21 @@ trait Enable extends StObject {
 }
 object Enable {
   
-  @scala.inline
-  def apply(enable: Boolean): Enable = {
+  inline def apply(enable: Boolean): Enable = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enable]
   }
   
-  @scala.inline
-  implicit class EnableMutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
+  extension [Self <: Enable](x: Self) {
     
-    @scala.inline
-    def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
+    inline def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevtoolsUndefined: Self = StObject.set(x, "devtools", js.undefined)
+    inline def setDevtoolsUndefined: Self = StObject.set(x, "devtools", js.undefined)
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+    inline def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
+    inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
   }
 }

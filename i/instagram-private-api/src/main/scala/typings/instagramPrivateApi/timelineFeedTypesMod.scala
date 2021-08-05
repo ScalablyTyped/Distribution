@@ -15,17 +15,13 @@ object timelineFeedTypesMod {
   trait TimelineFeedReason extends StObject
   object TimelineFeedReason {
     
-    @scala.inline
-    def cold_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.cold_start_fetch = "cold_start_fetch".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.cold_start_fetch]
+    inline def cold_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.cold_start_fetch = "cold_start_fetch".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.cold_start_fetch]
     
-    @scala.inline
-    def pagination: typings.instagramPrivateApi.instagramPrivateApiStrings.pagination = "pagination".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.pagination]
+    inline def pagination: typings.instagramPrivateApi.instagramPrivateApiStrings.pagination = "pagination".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.pagination]
     
-    @scala.inline
-    def pull_to_refresh: typings.instagramPrivateApi.instagramPrivateApiStrings.pull_to_refresh = "pull_to_refresh".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.pull_to_refresh]
+    inline def pull_to_refresh: typings.instagramPrivateApi.instagramPrivateApiStrings.pull_to_refresh = "pull_to_refresh".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.pull_to_refresh]
     
-    @scala.inline
-    def warm_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch = "warm_start_fetch".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch]
+    inline def warm_start_fetch: typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch = "warm_start_fetch".asInstanceOf[typings.instagramPrivateApi.instagramPrivateApiStrings.warm_start_fetch]
   }
   
   trait TimelineFeedsOptions extends StObject {
@@ -40,38 +36,28 @@ object timelineFeedTypesMod {
   }
   object TimelineFeedsOptions {
     
-    @scala.inline
-    def apply(): TimelineFeedsOptions = {
+    inline def apply(): TimelineFeedsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimelineFeedsOptions]
     }
     
-    @scala.inline
-    implicit class TimelineFeedsOptionsMutableBuilder[Self <: TimelineFeedsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineFeedsOptions](x: Self) {
       
-      @scala.inline
-      def setLatestStoryPk(value: String | Double): Self = StObject.set(x, "latestStoryPk", value.asInstanceOf[js.Any])
+      inline def setLatestStoryPk(value: String | Double): Self = StObject.set(x, "latestStoryPk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestStoryPkUndefined: Self = StObject.set(x, "latestStoryPk", js.undefined)
+      inline def setLatestStoryPkUndefined: Self = StObject.set(x, "latestStoryPk", js.undefined)
       
-      @scala.inline
-      def setPushDisabled(value: Boolean): Self = StObject.set(x, "pushDisabled", value.asInstanceOf[js.Any])
+      inline def setPushDisabled(value: Boolean): Self = StObject.set(x, "pushDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushDisabledUndefined: Self = StObject.set(x, "pushDisabled", js.undefined)
+      inline def setPushDisabledUndefined: Self = StObject.set(x, "pushDisabled", js.undefined)
       
-      @scala.inline
-      def setReason(value: TimelineFeedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: TimelineFeedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      @scala.inline
-      def setRecoveredFromCrash(value: String): Self = StObject.set(x, "recoveredFromCrash", value.asInstanceOf[js.Any])
+      inline def setRecoveredFromCrash(value: String): Self = StObject.set(x, "recoveredFromCrash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecoveredFromCrashUndefined: Self = StObject.set(x, "recoveredFromCrash", js.undefined)
+      inline def setRecoveredFromCrashUndefined: Self = StObject.set(x, "recoveredFromCrash", js.undefined)
     }
   }
 }

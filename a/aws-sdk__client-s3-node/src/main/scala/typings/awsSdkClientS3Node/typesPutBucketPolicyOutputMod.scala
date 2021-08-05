@@ -15,8 +15,7 @@ object typesPutBucketPolicyOutputMod {
        with _OutputTypesUnion
   object PutBucketPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutBucketPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): PutBucketPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutBucketPolicyOutput]
     }

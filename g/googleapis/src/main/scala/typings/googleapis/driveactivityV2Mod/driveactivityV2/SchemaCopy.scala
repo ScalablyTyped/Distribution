@@ -16,19 +16,15 @@ trait SchemaCopy extends StObject {
 }
 object SchemaCopy {
   
-  @scala.inline
-  def apply(): SchemaCopy = {
+  inline def apply(): SchemaCopy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCopy]
   }
   
-  @scala.inline
-  implicit class SchemaCopyMutableBuilder[Self <: SchemaCopy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCopy](x: Self) {
     
-    @scala.inline
-    def setOriginalObject(value: SchemaTargetReference): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
+    inline def setOriginalObject(value: SchemaTargetReference): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
+    inline def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
   }
 }

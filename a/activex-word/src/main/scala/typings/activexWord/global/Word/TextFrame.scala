@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TextFrame")
 @js.native
-class TextFrame protected ()
+/* private */ class TextFrame ()
   extends StObject
      with typings.activexWord.Word.TextFrame {
   
@@ -92,7 +92,7 @@ class TextFrame protected ()
   /* CompleteClass */
   var WarpFormat: MsoWarpFormat = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TextFrame_typekey")
   var WordDotTextFrame_typekey: typings.activexWord.Word.TextFrame = js.native
   

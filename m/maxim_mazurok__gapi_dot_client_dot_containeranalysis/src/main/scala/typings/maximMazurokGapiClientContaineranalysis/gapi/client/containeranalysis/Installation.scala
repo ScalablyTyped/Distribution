@@ -14,28 +14,21 @@ trait Installation extends StObject {
 }
 object Installation {
   
-  @scala.inline
-  def apply(): Installation = {
+  inline def apply(): Installation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Installation]
   }
   
-  @scala.inline
-  implicit class InstallationMutableBuilder[Self <: Installation] (val x: Self) extends AnyVal {
+  extension [Self <: Installation](x: Self) {
     
-    @scala.inline
-    def setLocation(value: js.Array[Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setLocationVarargs(value: Location*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Location*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext extends StObject {
 }
 object SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContextMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1ImageAnnotationContext](x: Self) {
     
-    @scala.inline
-    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+    inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

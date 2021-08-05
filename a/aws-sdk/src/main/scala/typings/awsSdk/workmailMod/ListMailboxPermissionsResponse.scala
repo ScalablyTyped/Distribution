@@ -18,28 +18,21 @@ trait ListMailboxPermissionsResponse extends StObject {
 }
 object ListMailboxPermissionsResponse {
   
-  @scala.inline
-  def apply(): ListMailboxPermissionsResponse = {
+  inline def apply(): ListMailboxPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMailboxPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class ListMailboxPermissionsResponseMutableBuilder[Self <: ListMailboxPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMailboxPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: Permissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Permissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
   }
 }

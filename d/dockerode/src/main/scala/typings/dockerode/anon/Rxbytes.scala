@@ -24,8 +24,7 @@ trait Rxbytes extends StObject {
 }
 object Rxbytes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     rx_bytes: Double,
     rx_dropped: Double,
     rx_errors: Double,
@@ -39,31 +38,22 @@ object Rxbytes {
     __obj.asInstanceOf[Rxbytes]
   }
   
-  @scala.inline
-  implicit class RxbytesMutableBuilder[Self <: Rxbytes] (val x: Self) extends AnyVal {
+  extension [Self <: Rxbytes](x: Self) {
     
-    @scala.inline
-    def setRx_bytes(value: Double): Self = StObject.set(x, "rx_bytes", value.asInstanceOf[js.Any])
+    inline def setRx_bytes(value: Double): Self = StObject.set(x, "rx_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_dropped(value: Double): Self = StObject.set(x, "rx_dropped", value.asInstanceOf[js.Any])
+    inline def setRx_dropped(value: Double): Self = StObject.set(x, "rx_dropped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_errors(value: Double): Self = StObject.set(x, "rx_errors", value.asInstanceOf[js.Any])
+    inline def setRx_errors(value: Double): Self = StObject.set(x, "rx_errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_packets(value: Double): Self = StObject.set(x, "rx_packets", value.asInstanceOf[js.Any])
+    inline def setRx_packets(value: Double): Self = StObject.set(x, "rx_packets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_bytes(value: Double): Self = StObject.set(x, "tx_bytes", value.asInstanceOf[js.Any])
+    inline def setTx_bytes(value: Double): Self = StObject.set(x, "tx_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_dropped(value: Double): Self = StObject.set(x, "tx_dropped", value.asInstanceOf[js.Any])
+    inline def setTx_dropped(value: Double): Self = StObject.set(x, "tx_dropped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_errors(value: Double): Self = StObject.set(x, "tx_errors", value.asInstanceOf[js.Any])
+    inline def setTx_errors(value: Double): Self = StObject.set(x, "tx_errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_packets(value: Double): Self = StObject.set(x, "tx_packets", value.asInstanceOf[js.Any])
+    inline def setTx_packets(value: Double): Self = StObject.set(x, "tx_packets", value.asInstanceOf[js.Any])
   }
 }

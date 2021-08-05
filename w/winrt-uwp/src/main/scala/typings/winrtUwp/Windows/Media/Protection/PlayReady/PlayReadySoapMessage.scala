@@ -23,22 +23,17 @@ trait PlayReadySoapMessage extends StObject {
 }
 object PlayReadySoapMessage {
   
-  @scala.inline
-  def apply(getMessageBody: () => js.Array[Double], messageHeaders: IPropertySet, uri: Uri): PlayReadySoapMessage = {
+  inline def apply(getMessageBody: () => js.Array[Double], messageHeaders: IPropertySet, uri: Uri): PlayReadySoapMessage = {
     val __obj = js.Dynamic.literal(getMessageBody = js.Any.fromFunction0(getMessageBody), messageHeaders = messageHeaders.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayReadySoapMessage]
   }
   
-  @scala.inline
-  implicit class PlayReadySoapMessageMutableBuilder[Self <: PlayReadySoapMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadySoapMessage](x: Self) {
     
-    @scala.inline
-    def setGetMessageBody(value: () => js.Array[Double]): Self = StObject.set(x, "getMessageBody", js.Any.fromFunction0(value))
+    inline def setGetMessageBody(value: () => js.Array[Double]): Self = StObject.set(x, "getMessageBody", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessageHeaders(value: IPropertySet): Self = StObject.set(x, "messageHeaders", value.asInstanceOf[js.Any])
+    inline def setMessageHeaders(value: IPropertySet): Self = StObject.set(x, "messageHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

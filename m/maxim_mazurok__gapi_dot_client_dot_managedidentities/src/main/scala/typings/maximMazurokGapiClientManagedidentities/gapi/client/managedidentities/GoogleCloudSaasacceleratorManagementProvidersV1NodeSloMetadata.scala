@@ -20,34 +20,25 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata extends StO
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata = {
+  inline def apply(): GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadataMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata](x: Self) {
     
-    @scala.inline
-    def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
+    inline def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
-    @scala.inline
-    def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: String): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: String): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
   }
 }

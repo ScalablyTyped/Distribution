@@ -382,56 +382,40 @@ object extensionsMod {
     }
     object JQueryAriaClickOptions {
       
-      @scala.inline
-      def apply(): JQueryAriaClickOptions = {
+      inline def apply(): JQueryAriaClickOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[JQueryAriaClickOptions]
       }
       
-      @scala.inline
-      implicit class JQueryAriaClickOptionsMutableBuilder[Self <: JQueryAriaClickOptions] (val x: Self) extends AnyVal {
+      extension [Self <: JQueryAriaClickOptions](x: Self) {
         
-        @scala.inline
-        def setControls(value: java.lang.String): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+        inline def setControls(value: java.lang.String): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+        inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
         
-        @scala.inline
-        def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        @scala.inline
-        def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setNamespace(value: java.lang.String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: java.lang.String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
         
-        @scala.inline
-        def setOne(value: Boolean): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+        inline def setOne(value: Boolean): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+        inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
         
-        @scala.inline
-        def setPressed(value: `true` | `false`): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+        inline def setPressed(value: `true` | `false`): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
+        inline def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
         
-        @scala.inline
-        def setSelector(value: java.lang.String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: java.lang.String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+        inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       }
     }
     
@@ -449,17 +433,14 @@ object extensionsMod {
     }
     object JQueryStatic {
       
-      @scala.inline
-      def apply(wiki: /* repeated */ java.lang.String => Unit): JQueryStatic = {
+      inline def apply(wiki: /* repeated */ java.lang.String => Unit): JQueryStatic = {
         val __obj = js.Dynamic.literal(wiki = js.Any.fromFunction1(wiki))
         __obj.asInstanceOf[JQueryStatic]
       }
       
-      @scala.inline
-      implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+      extension [Self <: JQueryStatic](x: Self) {
         
-        @scala.inline
-        def setWiki(value: /* repeated */ java.lang.String => Unit): Self = StObject.set(x, "wiki", js.Any.fromFunction1(value))
+        inline def setWiki(value: /* repeated */ java.lang.String => Unit): Self = StObject.set(x, "wiki", js.Any.fromFunction1(value))
       }
     }
     
@@ -534,17 +515,14 @@ object extensionsMod {
     }
     object Number {
       
-      @scala.inline
-      def apply(clamp: (Double, Double) => Double): Number = {
+      inline def apply(clamp: (Double, Double) => Double): Number = {
         val __obj = js.Dynamic.literal(clamp = js.Any.fromFunction2(clamp))
         __obj.asInstanceOf[Number]
       }
       
-      @scala.inline
-      implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
+      extension [Self <: Number](x: Self) {
         
-        @scala.inline
-        def setClamp(value: (Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction2(value))
+        inline def setClamp(value: (Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction2(value))
       }
     }
     
@@ -561,17 +539,14 @@ object extensionsMod {
     }
     object RegExpConstructor {
       
-      @scala.inline
-      def apply(escape: java.lang.String => java.lang.String): RegExpConstructor = {
+      inline def apply(escape: java.lang.String => java.lang.String): RegExpConstructor = {
         val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape))
         __obj.asInstanceOf[RegExpConstructor]
       }
       
-      @scala.inline
-      implicit class RegExpConstructorMutableBuilder[Self <: RegExpConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: RegExpConstructor](x: Self) {
         
-        @scala.inline
-        def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+        inline def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       }
     }
     
@@ -638,17 +613,14 @@ object extensionsMod {
     }
     object StringConstructor {
       
-      @scala.inline
-      def apply(format: (java.lang.String, /* repeated */ js.Any) => java.lang.String): StringConstructor = {
+      inline def apply(format: (java.lang.String, /* repeated */ js.Any) => java.lang.String): StringConstructor = {
         val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format))
         __obj.asInstanceOf[StringConstructor]
       }
       
-      @scala.inline
-      implicit class StringConstructorMutableBuilder[Self <: StringConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: StringConstructor](x: Self) {
         
-        @scala.inline
-        def setFormat(value: (java.lang.String, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+        inline def setFormat(value: (java.lang.String, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       }
     }
   }

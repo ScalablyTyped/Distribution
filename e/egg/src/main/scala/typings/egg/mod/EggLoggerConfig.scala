@@ -48,94 +48,65 @@ trait EggLoggerConfig extends StObject {
 }
 object EggLoggerConfig {
   
-  @scala.inline
-  def apply(agentLogName: String, appLogName: String, coreLogName: String, dir: String, errorLogName: String): EggLoggerConfig = {
+  inline def apply(agentLogName: String, appLogName: String, coreLogName: String, dir: String, errorLogName: String): EggLoggerConfig = {
     val __obj = js.Dynamic.literal(agentLogName = agentLogName.asInstanceOf[js.Any], appLogName = appLogName.asInstanceOf[js.Any], coreLogName = coreLogName.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], errorLogName = errorLogName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggLoggerConfig]
   }
   
-  @scala.inline
-  implicit class EggLoggerConfigMutableBuilder[Self <: EggLoggerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EggLoggerConfig](x: Self) {
     
-    @scala.inline
-    def setAgentLogName(value: String): Self = StObject.set(x, "agentLogName", value.asInstanceOf[js.Any])
+    inline def setAgentLogName(value: String): Self = StObject.set(x, "agentLogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDebugAtProd(value: Boolean): Self = StObject.set(x, "allowDebugAtProd", value.asInstanceOf[js.Any])
+    inline def setAllowDebugAtProd(value: Boolean): Self = StObject.set(x, "allowDebugAtProd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDebugAtProdUndefined: Self = StObject.set(x, "allowDebugAtProd", js.undefined)
+    inline def setAllowDebugAtProdUndefined: Self = StObject.set(x, "allowDebugAtProd", js.undefined)
     
-    @scala.inline
-    def setAppLogName(value: String): Self = StObject.set(x, "appLogName", value.asInstanceOf[js.Any])
+    inline def setAppLogName(value: String): Self = StObject.set(x, "appLogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
-    @scala.inline
-    def setConcentrateError(value: duplicate | redirect | ignore): Self = StObject.set(x, "concentrateError", value.asInstanceOf[js.Any])
+    inline def setConcentrateError(value: duplicate | redirect | ignore): Self = StObject.set(x, "concentrateError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
+    inline def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
     
-    @scala.inline
-    def setConsoleLevel(value: typings.eggLogger.mod.LoggerLevel): Self = StObject.set(x, "consoleLevel", value.asInstanceOf[js.Any])
+    inline def setConsoleLevel(value: typings.eggLogger.mod.LoggerLevel): Self = StObject.set(x, "consoleLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsoleLevelUndefined: Self = StObject.set(x, "consoleLevel", js.undefined)
+    inline def setConsoleLevelUndefined: Self = StObject.set(x, "consoleLevel", js.undefined)
     
-    @scala.inline
-    def setCoreLogName(value: String): Self = StObject.set(x, "coreLogName", value.asInstanceOf[js.Any])
+    inline def setCoreLogName(value: String): Self = StObject.set(x, "coreLogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoreLogger(value: PartialEggLoggerOptions): Self = StObject.set(x, "coreLogger", value.asInstanceOf[js.Any])
+    inline def setCoreLogger(value: PartialEggLoggerOptions): Self = StObject.set(x, "coreLogger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoreLoggerUndefined: Self = StObject.set(x, "coreLogger", js.undefined)
+    inline def setCoreLoggerUndefined: Self = StObject.set(x, "coreLogger", js.undefined)
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableConsoleAfterReady(value: Boolean): Self = StObject.set(x, "disableConsoleAfterReady", value.asInstanceOf[js.Any])
+    inline def setDisableConsoleAfterReady(value: Boolean): Self = StObject.set(x, "disableConsoleAfterReady", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableConsoleAfterReadyUndefined: Self = StObject.set(x, "disableConsoleAfterReady", js.undefined)
+    inline def setDisableConsoleAfterReadyUndefined: Self = StObject.set(x, "disableConsoleAfterReady", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+    inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+    inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
     
-    @scala.inline
-    def setErrorLogName(value: String): Self = StObject.set(x, "errorLogName", value.asInstanceOf[js.Any])
+    inline def setErrorLogName(value: String): Self = StObject.set(x, "errorLogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: typings.eggLogger.mod.LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: typings.eggLogger.mod.LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
+    inline def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
+    inline def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
   }
 }

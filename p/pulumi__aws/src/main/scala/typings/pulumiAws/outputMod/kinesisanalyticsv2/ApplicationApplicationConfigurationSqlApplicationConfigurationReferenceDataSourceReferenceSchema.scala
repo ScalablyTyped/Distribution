@@ -25,8 +25,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDat
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     recordColumns: js.Array[
       ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn
     ],
@@ -36,29 +35,23 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDa
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema](x: Self) {
     
-    @scala.inline
-    def setRecordColumns(
+    inline def setRecordColumns(
       value: js.Array[
           ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn
         ]
     ): Self = StObject.set(x, "recordColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordColumnsVarargs(
+    inline def setRecordColumnsVarargs(
       value: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn*
     ): Self = StObject.set(x, "recordColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordEncoding(value: String): Self = StObject.set(x, "recordEncoding", value.asInstanceOf[js.Any])
+    inline def setRecordEncoding(value: String): Self = StObject.set(x, "recordEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordEncodingUndefined: Self = StObject.set(x, "recordEncoding", js.undefined)
+    inline def setRecordEncodingUndefined: Self = StObject.set(x, "recordEncoding", js.undefined)
     
-    @scala.inline
-    def setRecordFormat(
+    inline def setRecordFormat(
       value: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat
     ): Self = StObject.set(x, "recordFormat", value.asInstanceOf[js.Any])
   }

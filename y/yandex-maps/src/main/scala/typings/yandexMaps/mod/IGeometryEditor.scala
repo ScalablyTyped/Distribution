@@ -18,8 +18,7 @@ trait IGeometryEditor
 }
 object IGeometryEditor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: IEventManager[js.Object],
     geometry: IGeometry,
     options: IOptionManager,
@@ -31,19 +30,14 @@ object IGeometryEditor {
     __obj.asInstanceOf[IGeometryEditor]
   }
   
-  @scala.inline
-  implicit class IGeometryEditorMutableBuilder[Self <: IGeometryEditor] (val x: Self) extends AnyVal {
+  extension [Self <: IGeometryEditor](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: IGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: IGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartEditing(value: () => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction0(value))
+    inline def setStartEditing(value: () => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setState(value: IDataManager): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: IDataManager): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopEditing(value: () => Unit): Self = StObject.set(x, "stopEditing", js.Any.fromFunction0(value))
+    inline def setStopEditing(value: () => Unit): Self = StObject.set(x, "stopEditing", js.Any.fromFunction0(value))
   }
 }

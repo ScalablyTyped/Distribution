@@ -29,73 +29,51 @@ trait OnlineMeetingInfo extends StObject {
 }
 object OnlineMeetingInfo {
   
-  @scala.inline
-  def apply(): OnlineMeetingInfo = {
+  inline def apply(): OnlineMeetingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnlineMeetingInfo]
   }
   
-  @scala.inline
-  implicit class OnlineMeetingInfoMutableBuilder[Self <: OnlineMeetingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OnlineMeetingInfo](x: Self) {
     
-    @scala.inline
-    def setConferenceId(value: NullableOption[String]): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
+    inline def setConferenceId(value: NullableOption[String]): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceIdNull: Self = StObject.set(x, "conferenceId", null)
+    inline def setConferenceIdNull: Self = StObject.set(x, "conferenceId", null)
     
-    @scala.inline
-    def setConferenceIdUndefined: Self = StObject.set(x, "conferenceId", js.undefined)
+    inline def setConferenceIdUndefined: Self = StObject.set(x, "conferenceId", js.undefined)
     
-    @scala.inline
-    def setJoinUrl(value: NullableOption[String]): Self = StObject.set(x, "joinUrl", value.asInstanceOf[js.Any])
+    inline def setJoinUrl(value: NullableOption[String]): Self = StObject.set(x, "joinUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinUrlNull: Self = StObject.set(x, "joinUrl", null)
+    inline def setJoinUrlNull: Self = StObject.set(x, "joinUrl", null)
     
-    @scala.inline
-    def setJoinUrlUndefined: Self = StObject.set(x, "joinUrl", js.undefined)
+    inline def setJoinUrlUndefined: Self = StObject.set(x, "joinUrl", js.undefined)
     
-    @scala.inline
-    def setPhones(value: NullableOption[js.Array[Phone]]): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
+    inline def setPhones(value: NullableOption[js.Array[Phone]]): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhonesNull: Self = StObject.set(x, "phones", null)
+    inline def setPhonesNull: Self = StObject.set(x, "phones", null)
     
-    @scala.inline
-    def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
+    inline def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
     
-    @scala.inline
-    def setPhonesVarargs(value: Phone*): Self = StObject.set(x, "phones", js.Array(value :_*))
+    inline def setPhonesVarargs(value: Phone*): Self = StObject.set(x, "phones", js.Array(value :_*))
     
-    @scala.inline
-    def setQuickDial(value: NullableOption[String]): Self = StObject.set(x, "quickDial", value.asInstanceOf[js.Any])
+    inline def setQuickDial(value: NullableOption[String]): Self = StObject.set(x, "quickDial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickDialNull: Self = StObject.set(x, "quickDial", null)
+    inline def setQuickDialNull: Self = StObject.set(x, "quickDial", null)
     
-    @scala.inline
-    def setQuickDialUndefined: Self = StObject.set(x, "quickDial", js.undefined)
+    inline def setQuickDialUndefined: Self = StObject.set(x, "quickDial", js.undefined)
     
-    @scala.inline
-    def setTollFreeNumbers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "tollFreeNumbers", value.asInstanceOf[js.Any])
+    inline def setTollFreeNumbers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "tollFreeNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTollFreeNumbersNull: Self = StObject.set(x, "tollFreeNumbers", null)
+    inline def setTollFreeNumbersNull: Self = StObject.set(x, "tollFreeNumbers", null)
     
-    @scala.inline
-    def setTollFreeNumbersUndefined: Self = StObject.set(x, "tollFreeNumbers", js.undefined)
+    inline def setTollFreeNumbersUndefined: Self = StObject.set(x, "tollFreeNumbers", js.undefined)
     
-    @scala.inline
-    def setTollFreeNumbersVarargs(value: String*): Self = StObject.set(x, "tollFreeNumbers", js.Array(value :_*))
+    inline def setTollFreeNumbersVarargs(value: String*): Self = StObject.set(x, "tollFreeNumbers", js.Array(value :_*))
     
-    @scala.inline
-    def setTollNumber(value: NullableOption[String]): Self = StObject.set(x, "tollNumber", value.asInstanceOf[js.Any])
+    inline def setTollNumber(value: NullableOption[String]): Self = StObject.set(x, "tollNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTollNumberNull: Self = StObject.set(x, "tollNumber", null)
+    inline def setTollNumberNull: Self = StObject.set(x, "tollNumber", null)
     
-    @scala.inline
-    def setTollNumberUndefined: Self = StObject.set(x, "tollNumber", js.undefined)
+    inline def setTollNumberUndefined: Self = StObject.set(x, "tollNumber", js.undefined)
   }
 }

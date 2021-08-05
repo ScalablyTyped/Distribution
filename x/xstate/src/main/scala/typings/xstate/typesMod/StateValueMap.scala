@@ -10,8 +10,7 @@ trait StateValueMap
      with /* key */ StringDictionary[StateValue]
 object StateValueMap {
   
-  @scala.inline
-  def apply(): StateValueMap = {
+  inline def apply(): StateValueMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateValueMap]
   }

@@ -35,35 +35,27 @@ trait GoogleCloudDialogflowV2Context extends StObject {
 }
 object GoogleCloudDialogflowV2Context {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2Context = {
+  inline def apply(): GoogleCloudDialogflowV2Context = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2Context]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2ContextMutableBuilder[Self <: GoogleCloudDialogflowV2Context] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2Context](x: Self) {
     
-    @scala.inline
-    def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
+    inline def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifespanCountUndefined: Self = StObject.set(x, "lifespanCount", js.undefined)
+    inline def setLifespanCountUndefined: Self = StObject.set(x, "lifespanCount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2Context & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

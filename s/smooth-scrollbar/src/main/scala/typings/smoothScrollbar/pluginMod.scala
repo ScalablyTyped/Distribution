@@ -28,8 +28,7 @@ object pluginMod {
   }
   object ScrollbarPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       onDestroy: () => Unit,
       onInit: () => Unit,
@@ -43,32 +42,23 @@ object pluginMod {
       __obj.asInstanceOf[ScrollbarPlugin]
     }
     
-    @scala.inline
-    implicit class ScrollbarPluginMutableBuilder[Self <: ScrollbarPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarPlugin](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDestroy(value: () => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction0(value))
+      inline def setOnDestroy(value: () => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
+      inline def setOnInit(value: () => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRender(value: Data2d => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
+      inline def setOnRender(value: Data2d => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdate(value: () => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
+      inline def setOnUpdate(value: () => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollbar(value: Scrollbar): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
+      inline def setScrollbar(value: Scrollbar): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformDelta(value: (Data2d, js.Any) => Data2d): Self = StObject.set(x, "transformDelta", js.Any.fromFunction2(value))
+      inline def setTransformDelta(value: (Data2d, js.Any) => Data2d): Self = StObject.set(x, "transformDelta", js.Any.fromFunction2(value))
     }
   }
 }

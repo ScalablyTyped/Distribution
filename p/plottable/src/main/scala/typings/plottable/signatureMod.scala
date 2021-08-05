@@ -19,7 +19,7 @@ object signatureMod {
   class ArraySignature protected () extends Signature {
     def this(array: js.Array[Signature]) = this()
     
-    var array: js.Any = js.native
+    /* private */ var array: js.Any = js.native
   }
   
   @JSImport("plottable/build/src/memoize/signature", "ObjectSignature")
@@ -27,7 +27,7 @@ object signatureMod {
   class ObjectSignature protected () extends Signature {
     def this(obj: ISignatureRecord) = this()
     
-    var obj: js.Any = js.native
+    /* private */ var obj: js.Any = js.native
   }
   
   @JSImport("plottable/build/src/memoize/signature", "ReferenceSignature")
@@ -35,7 +35,7 @@ object signatureMod {
   class ReferenceSignature protected () extends Signature {
     def this(ref: js.Any) = this()
     
-    var ref: js.Any = js.native
+    /* private */ var ref: js.Any = js.native
   }
   
   @JSImport("plottable/build/src/memoize/signature", "Signature")
@@ -47,23 +47,17 @@ object signatureMod {
     /* protected */ def isSignatureDifferent(other: this.type): Boolean = js.native
   }
   
-  @scala.inline
-  def sign(a: js.Any): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(a.asInstanceOf[js.Any]).asInstanceOf[Signature]
+  inline def sign(a: js.Any): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(a.asInstanceOf[js.Any]).asInstanceOf[Signature]
   
-  @scala.inline
-  def signArray(a: js.Array[js.Any]): ArraySignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signArray")(a.asInstanceOf[js.Any]).asInstanceOf[ArraySignature]
+  inline def signArray(a: js.Array[js.Any]): ArraySignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signArray")(a.asInstanceOf[js.Any]).asInstanceOf[ArraySignature]
   
-  @scala.inline
-  def signDataset(dataset: Dataset): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signDataset")(dataset.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
+  inline def signDataset(dataset: Dataset): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signDataset")(dataset.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
   
-  @scala.inline
-  def signObj(obj: StringDictionary[js.Any]): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signObj")(obj.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
+  inline def signObj(obj: StringDictionary[js.Any]): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signObj")(obj.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
   
-  @scala.inline
-  def signRef(a: js.Any): ReferenceSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signRef")(a.asInstanceOf[js.Any]).asInstanceOf[ReferenceSignature]
+  inline def signRef(a: js.Any): ReferenceSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signRef")(a.asInstanceOf[js.Any]).asInstanceOf[ReferenceSignature]
   
-  @scala.inline
-  def signScale(scale: Scale[js.Any, js.Any]): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
+  inline def signScale(scale: Scale[js.Any, js.Any]): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
   
   type ISignatureRecord = Record[String, Signature]
 }

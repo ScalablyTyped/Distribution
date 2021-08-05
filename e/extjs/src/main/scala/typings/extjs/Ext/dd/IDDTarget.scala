@@ -16,19 +16,15 @@ trait IDDTarget
 }
 object IDDTarget {
   
-  @scala.inline
-  def apply(): IDDTarget = {
+  inline def apply(): IDDTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDDTarget]
   }
   
-  @scala.inline
-  implicit class IDDTargetMutableBuilder[Self <: IDDTarget] (val x: Self) extends AnyVal {
+  extension [Self <: IDDTarget](x: Self) {
     
-    @scala.inline
-    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+    inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+    inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
   }
 }

@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: F): F & Memoized[F] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[F & Memoized[F]]
-  @scala.inline
-  def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: F, options: Options[F]): F & Memoized[F] = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F & Memoized[F]]
+  inline def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: F): F & Memoized[F] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[F & Memoized[F]]
+  inline def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: F, options: Options[F]): F & Memoized[F] = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F & Memoized[F]]
   
   @JSImport("memoizee", JSImport.Namespace)
   @js.native
@@ -28,20 +26,16 @@ object mod {
   }
   object Memoized {
     
-    @scala.inline
-    def apply[F](clear: F & js.Function0[Unit], delete: F): Memoized[F] = {
+    inline def apply[F](clear: F & js.Function0[Unit], delete: F): Memoized[F] = {
       val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any])
       __obj.asInstanceOf[Memoized[F]]
     }
     
-    @scala.inline
-    implicit class MemoizedMutableBuilder[Self <: Memoized[?], F] (val x: Self & Memoized[F]) extends AnyVal {
+    extension [Self <: Memoized[?], F](x: Self & Memoized[F]) {
       
-      @scala.inline
-      def setClear(value: F & js.Function0[Unit]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: F & js.Function0[Unit]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: F): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: F): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,77 +63,54 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](): Options[F] = {
+    inline def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](): Options[F] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[F]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], F /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & Options[F]) extends AnyVal {
+    extension [Self <: Options[?], F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & Options[F]) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setDispose(value: /* value */ js.Any => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+      inline def setDispose(value: /* value */ js.Any => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+      inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double | `false`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double | `false`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setNormalizer(value: /* args */ Parameters[F] => String): Self = StObject.set(x, "normalizer", js.Any.fromFunction1(value))
+      inline def setNormalizer(value: /* args */ Parameters[F] => String): Self = StObject.set(x, "normalizer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalizerUndefined: Self = StObject.set(x, "normalizer", js.undefined)
+      inline def setNormalizerUndefined: Self = StObject.set(x, "normalizer", js.undefined)
       
-      @scala.inline
-      def setPreFetch(value: Double | `true`): Self = StObject.set(x, "preFetch", value.asInstanceOf[js.Any])
+      inline def setPreFetch(value: Double | `true`): Self = StObject.set(x, "preFetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreFetchUndefined: Self = StObject.set(x, "preFetch", js.undefined)
+      inline def setPreFetchUndefined: Self = StObject.set(x, "preFetch", js.undefined)
       
-      @scala.inline
-      def setPrimitive(value: Boolean): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
+      inline def setPrimitive(value: Boolean): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimitiveUndefined: Self = StObject.set(x, "primitive", js.undefined)
+      inline def setPrimitiveUndefined: Self = StObject.set(x, "primitive", js.undefined)
       
-      @scala.inline
-      def setPromise(value: Boolean): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Boolean): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      @scala.inline
-      def setResolvers(value: js.Array[js.Function1[/* arg */ js.Any, js.Any]]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
+      inline def setResolvers(value: js.Array[js.Function1[/* arg */ js.Any, js.Any]]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
+      inline def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
       
-      @scala.inline
-      def setResolversVarargs(value: (js.Function1[/* arg */ js.Any, js.Any])*): Self = StObject.set(x, "resolvers", js.Array(value :_*))
+      inline def setResolversVarargs(value: (js.Function1[/* arg */ js.Any, js.Any])*): Self = StObject.set(x, "resolvers", js.Array(value :_*))
     }
   }
 }

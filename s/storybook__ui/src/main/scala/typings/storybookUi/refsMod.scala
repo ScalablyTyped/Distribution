@@ -28,8 +28,7 @@ object refsMod {
   }
   object RefProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       highlightedRef: MutableRefObject[Highlight],
       isBrowsing: Boolean,
       isLoading: Boolean,
@@ -39,26 +38,19 @@ object refsMod {
       __obj.asInstanceOf[RefProps]
     }
     
-    @scala.inline
-    implicit class RefPropsMutableBuilder[Self <: RefProps] (val x: Self) extends AnyVal {
+    extension [Self <: RefProps](x: Self) {
       
-      @scala.inline
-      def setHighlightedRef(value: MutableRefObject[Highlight]): Self = StObject.set(x, "highlightedRef", value.asInstanceOf[js.Any])
+      inline def setHighlightedRef(value: MutableRefObject[Highlight]): Self = StObject.set(x, "highlightedRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
+      inline def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStoryId(value: String): Self = StObject.set(x, "selectedStoryId", value.asInstanceOf[js.Any])
+      inline def setSelectedStoryId(value: String): Self = StObject.set(x, "selectedStoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStoryIdNull: Self = StObject.set(x, "selectedStoryId", null)
+      inline def setSelectedStoryIdNull: Self = StObject.set(x, "selectedStoryId", null)
       
-      @scala.inline
-      def setSetHighlighted(value: Highlight => Unit): Self = StObject.set(x, "setHighlighted", js.Any.fromFunction1(value))
+      inline def setSetHighlighted(value: Highlight => Unit): Self = StObject.set(x, "setHighlighted", js.Any.fromFunction1(value))
     }
   }
 }

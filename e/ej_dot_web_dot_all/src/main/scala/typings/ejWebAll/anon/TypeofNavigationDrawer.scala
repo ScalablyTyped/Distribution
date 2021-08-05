@@ -15,19 +15,15 @@ trait TypeofNavigationDrawer extends StObject {
 }
 object TypeofNavigationDrawer {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: NavigationDrawer): TypeofNavigationDrawer = {
+  inline def apply(Locale: js.Any, fn: NavigationDrawer): TypeofNavigationDrawer = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofNavigationDrawer]
   }
   
-  @scala.inline
-  implicit class TypeofNavigationDrawerMutableBuilder[Self <: TypeofNavigationDrawer] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofNavigationDrawer](x: Self) {
     
-    @scala.inline
-    def setFn(value: NavigationDrawer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: NavigationDrawer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

@@ -29,37 +29,27 @@ trait BulkSendTestResponse extends StObject {
 }
 object BulkSendTestResponse {
   
-  @scala.inline
-  def apply(): BulkSendTestResponse = {
+  inline def apply(): BulkSendTestResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendTestResponse]
   }
   
-  @scala.inline
-  implicit class BulkSendTestResponseMutableBuilder[Self <: BulkSendTestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendTestResponse](x: Self) {
     
-    @scala.inline
-    def setCanBeSent(value: Boolean): Self = StObject.set(x, "canBeSent", value.asInstanceOf[js.Any])
+    inline def setCanBeSent(value: Boolean): Self = StObject.set(x, "canBeSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeSentUndefined: Self = StObject.set(x, "canBeSent", js.undefined)
+    inline def setCanBeSentUndefined: Self = StObject.set(x, "canBeSent", js.undefined)
     
-    @scala.inline
-    def setValidationErrorDetails(value: js.Array[String]): Self = StObject.set(x, "validationErrorDetails", value.asInstanceOf[js.Any])
+    inline def setValidationErrorDetails(value: js.Array[String]): Self = StObject.set(x, "validationErrorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationErrorDetailsUndefined: Self = StObject.set(x, "validationErrorDetails", js.undefined)
+    inline def setValidationErrorDetailsUndefined: Self = StObject.set(x, "validationErrorDetails", js.undefined)
     
-    @scala.inline
-    def setValidationErrorDetailsVarargs(value: String*): Self = StObject.set(x, "validationErrorDetails", js.Array(value :_*))
+    inline def setValidationErrorDetailsVarargs(value: String*): Self = StObject.set(x, "validationErrorDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationErrors(value: js.Array[String]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+    inline def setValidationErrors(value: js.Array[String]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+    inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
-    @scala.inline
-    def setValidationErrorsVarargs(value: String*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: String*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
   }
 }

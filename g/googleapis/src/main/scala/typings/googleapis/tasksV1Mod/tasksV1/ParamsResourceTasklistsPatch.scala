@@ -29,31 +29,23 @@ trait ParamsResourceTasklistsPatch
 }
 object ParamsResourceTasklistsPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceTasklistsPatch = {
+  inline def apply(): ParamsResourceTasklistsPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTasklistsPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTasklistsPatchMutableBuilder[Self <: ParamsResourceTasklistsPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTasklistsPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaTaskList): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaTaskList): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setTasklist(value: String): Self = StObject.set(x, "tasklist", value.asInstanceOf[js.Any])
+    inline def setTasklist(value: String): Self = StObject.set(x, "tasklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasklistUndefined: Self = StObject.set(x, "tasklist", js.undefined)
+    inline def setTasklistUndefined: Self = StObject.set(x, "tasklist", js.undefined)
   }
 }

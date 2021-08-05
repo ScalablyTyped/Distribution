@@ -18,8 +18,7 @@ trait GetAggregateResourceConfigRequest extends StObject {
 }
 object GetAggregateResourceConfigRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigurationAggregatorName: ConfigurationAggregatorName,
     ResourceIdentifier: AggregateResourceIdentifier
   ): GetAggregateResourceConfigRequest = {
@@ -27,13 +26,10 @@ object GetAggregateResourceConfigRequest {
     __obj.asInstanceOf[GetAggregateResourceConfigRequest]
   }
   
-  @scala.inline
-  implicit class GetAggregateResourceConfigRequestMutableBuilder[Self <: GetAggregateResourceConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAggregateResourceConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifier(value: AggregateResourceIdentifier): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: AggregateResourceIdentifier): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

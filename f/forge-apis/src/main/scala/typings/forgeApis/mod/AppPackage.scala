@@ -24,8 +24,7 @@ trait AppPackage extends StObject {
 }
 object AppPackage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     references: js.Array[String],
     requiredEngineVersion: String,
@@ -36,43 +35,30 @@ object AppPackage {
     __obj.asInstanceOf[AppPackage]
   }
   
-  @scala.inline
-  implicit class AppPackageMutableBuilder[Self <: AppPackage] (val x: Self) extends AnyVal {
+  extension [Self <: AppPackage](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsObjectEnabler(value: Boolean): Self = StObject.set(x, "isObjectEnabler", value.asInstanceOf[js.Any])
+    inline def setIsObjectEnabler(value: Boolean): Self = StObject.set(x, "isObjectEnabler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsObjectEnablerUndefined: Self = StObject.set(x, "isObjectEnabler", js.undefined)
+    inline def setIsObjectEnablerUndefined: Self = StObject.set(x, "isObjectEnabler", js.undefined)
     
-    @scala.inline
-    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+    inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
+    inline def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
     
-    @scala.inline
-    def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredEngineVersion(value: String): Self = StObject.set(x, "requiredEngineVersion", value.asInstanceOf[js.Any])
+    inline def setRequiredEngineVersion(value: String): Self = StObject.set(x, "requiredEngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

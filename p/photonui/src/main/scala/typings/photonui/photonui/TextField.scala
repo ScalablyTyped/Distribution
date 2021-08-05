@@ -15,8 +15,7 @@ trait TextField
 }
 object TextField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -46,10 +45,8 @@ object TextField {
     __obj.asInstanceOf[TextField]
   }
   
-  @scala.inline
-  implicit class TextFieldMutableBuilder[Self <: TextField] (val x: Self) extends AnyVal {
+  extension [Self <: TextField](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

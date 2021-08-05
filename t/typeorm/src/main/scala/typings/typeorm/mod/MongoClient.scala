@@ -27,8 +27,7 @@ object MongoClient {
     * @param url The connection URI string.
     * @param options Optional settings.
     */
-  @scala.inline
-  def connect(url: String): js.Promise[typings.typeorm.mongodbTypingsMod.Db] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.typeorm.mongodbTypingsMod.Db]]
+  inline def connect(url: String): js.Promise[typings.typeorm.mongodbTypingsMod.Db] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.typeorm.mongodbTypingsMod.Db]]
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
     * Note that for replicasets the replicaSet query parameter is required in the 2.0 driver.
@@ -36,10 +35,8 @@ object MongoClient {
     * @param url The connection URI string.
     * @param callback The command result callback.
     */
-  @scala.inline
-  def connect(url: String, callback: MongoCallback[typings.typeorm.mongodbTypingsMod.Db]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connect(url: String, options: MongoClientOptions): js.Promise[typings.typeorm.mongodbTypingsMod.Db] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typeorm.mongodbTypingsMod.Db]]
+  inline def connect(url: String, callback: MongoCallback[typings.typeorm.mongodbTypingsMod.Db]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(url: String, options: MongoClientOptions): js.Promise[typings.typeorm.mongodbTypingsMod.Db] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.typeorm.mongodbTypingsMod.Db]]
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
     * Note that for replicasets the replicaSet query parameter is required in the 2.0 driver.
@@ -48,8 +45,7 @@ object MongoClient {
     * @param options Optional settings.
     * @param callback The command result callback.
     */
-  @scala.inline
-  def connect(
+  inline def connect(
     url: String,
     options: MongoClientOptions,
     callback: MongoCallback[typings.typeorm.mongodbTypingsMod.Db]

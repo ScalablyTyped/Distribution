@@ -23,28 +23,21 @@ trait ConfigureAgentRequest extends StObject {
 }
 object ConfigureAgentRequest {
   
-  @scala.inline
-  def apply(profilingGroupName: ProfilingGroupName): ConfigureAgentRequest = {
+  inline def apply(profilingGroupName: ProfilingGroupName): ConfigureAgentRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureAgentRequest]
   }
   
-  @scala.inline
-  implicit class ConfigureAgentRequestMutableBuilder[Self <: ConfigureAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigureAgentRequest](x: Self) {
     
-    @scala.inline
-    def setFleetInstanceId(value: FleetInstanceId): Self = StObject.set(x, "fleetInstanceId", value.asInstanceOf[js.Any])
+    inline def setFleetInstanceId(value: FleetInstanceId): Self = StObject.set(x, "fleetInstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetInstanceIdUndefined: Self = StObject.set(x, "fleetInstanceId", js.undefined)
+    inline def setFleetInstanceIdUndefined: Self = StObject.set(x, "fleetInstanceId", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

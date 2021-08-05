@@ -13,19 +13,15 @@ trait SchemaGmailActionRestrict extends StObject {
 }
 object SchemaGmailActionRestrict {
   
-  @scala.inline
-  def apply(): SchemaGmailActionRestrict = {
+  inline def apply(): SchemaGmailActionRestrict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGmailActionRestrict]
   }
   
-  @scala.inline
-  implicit class SchemaGmailActionRestrictMutableBuilder[Self <: SchemaGmailActionRestrict] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGmailActionRestrict](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

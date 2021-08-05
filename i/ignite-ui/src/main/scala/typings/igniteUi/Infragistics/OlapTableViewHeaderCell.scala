@@ -58,8 +58,7 @@ trait OlapTableViewHeaderCell extends StObject {
 }
 object OlapTableViewHeaderCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisName: () => String,
     caption: () => String,
     columnIndex: () => Double,
@@ -75,37 +74,26 @@ object OlapTableViewHeaderCell {
     __obj.asInstanceOf[OlapTableViewHeaderCell]
   }
   
-  @scala.inline
-  implicit class OlapTableViewHeaderCellMutableBuilder[Self <: OlapTableViewHeaderCell] (val x: Self) extends AnyVal {
+  extension [Self <: OlapTableViewHeaderCell](x: Self) {
     
-    @scala.inline
-    def setAxisName(value: () => String): Self = StObject.set(x, "axisName", js.Any.fromFunction0(value))
+    inline def setAxisName(value: () => String): Self = StObject.set(x, "axisName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCaption(value: () => String): Self = StObject.set(x, "caption", js.Any.fromFunction0(value))
+    inline def setCaption(value: () => String): Self = StObject.set(x, "caption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setColumnIndex(value: () => Double): Self = StObject.set(x, "columnIndex", js.Any.fromFunction0(value))
+    inline def setColumnIndex(value: () => Double): Self = StObject.set(x, "columnIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setColumnSpan(value: () => Double): Self = StObject.set(x, "columnSpan", js.Any.fromFunction0(value))
+    inline def setColumnSpan(value: () => Double): Self = StObject.set(x, "columnSpan", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExpanable(value: () => Boolean): Self = StObject.set(x, "isExpanable", js.Any.fromFunction0(value))
+    inline def setIsExpanable(value: () => Boolean): Self = StObject.set(x, "isExpanable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
+    inline def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMemberIndex(value: () => Double): Self = StObject.set(x, "memberIndex", js.Any.fromFunction0(value))
+    inline def setMemberIndex(value: () => Double): Self = StObject.set(x, "memberIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowIndex(value: () => Double): Self = StObject.set(x, "rowIndex", js.Any.fromFunction0(value))
+    inline def setRowIndex(value: () => Double): Self = StObject.set(x, "rowIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowSpan(value: () => Double): Self = StObject.set(x, "rowSpan", js.Any.fromFunction0(value))
+    inline def setRowSpan(value: () => Double): Self = StObject.set(x, "rowSpan", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTupleIndex(value: () => Double): Self = StObject.set(x, "tupleIndex", js.Any.fromFunction0(value))
+    inline def setTupleIndex(value: () => Double): Self = StObject.set(x, "tupleIndex", js.Any.fromFunction0(value))
   }
 }

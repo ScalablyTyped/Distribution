@@ -15,17 +15,14 @@ trait InlineCode
 }
 object InlineCode {
   
-  @scala.inline
-  def apply(value: js.Any): InlineCode = {
+  inline def apply(value: js.Any): InlineCode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("inlineCode")
     __obj.asInstanceOf[InlineCode]
   }
   
-  @scala.inline
-  implicit class InlineCodeMutableBuilder[Self <: InlineCode] (val x: Self) extends AnyVal {
+  extension [Self <: InlineCode](x: Self) {
     
-    @scala.inline
-    def setType(value: inlineCode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: inlineCode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

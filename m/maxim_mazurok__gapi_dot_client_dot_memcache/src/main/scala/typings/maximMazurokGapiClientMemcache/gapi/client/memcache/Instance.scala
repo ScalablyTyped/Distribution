@@ -77,122 +77,85 @@ trait Instance extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply(): Instance = {
+  inline def apply(): Instance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instance]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+  extension [Self <: Instance](x: Self) {
     
-    @scala.inline
-    def setAuthorizedNetwork(value: String): Self = StObject.set(x, "authorizedNetwork", value.asInstanceOf[js.Any])
+    inline def setAuthorizedNetwork(value: String): Self = StObject.set(x, "authorizedNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedNetworkUndefined: Self = StObject.set(x, "authorizedNetwork", js.undefined)
+    inline def setAuthorizedNetworkUndefined: Self = StObject.set(x, "authorizedNetwork", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDiscoveryEndpoint(value: String): Self = StObject.set(x, "discoveryEndpoint", value.asInstanceOf[js.Any])
+    inline def setDiscoveryEndpoint(value: String): Self = StObject.set(x, "discoveryEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoveryEndpointUndefined: Self = StObject.set(x, "discoveryEndpoint", js.undefined)
+    inline def setDiscoveryEndpointUndefined: Self = StObject.set(x, "discoveryEndpoint", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setInstanceMessages(value: js.Array[InstanceMessage]): Self = StObject.set(x, "instanceMessages", value.asInstanceOf[js.Any])
+    inline def setInstanceMessages(value: js.Array[InstanceMessage]): Self = StObject.set(x, "instanceMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceMessagesUndefined: Self = StObject.set(x, "instanceMessages", js.undefined)
+    inline def setInstanceMessagesUndefined: Self = StObject.set(x, "instanceMessages", js.undefined)
     
-    @scala.inline
-    def setInstanceMessagesVarargs(value: InstanceMessage*): Self = StObject.set(x, "instanceMessages", js.Array(value :_*))
+    inline def setInstanceMessagesVarargs(value: InstanceMessage*): Self = StObject.set(x, "instanceMessages", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMemcacheFullVersion(value: String): Self = StObject.set(x, "memcacheFullVersion", value.asInstanceOf[js.Any])
+    inline def setMemcacheFullVersion(value: String): Self = StObject.set(x, "memcacheFullVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemcacheFullVersionUndefined: Self = StObject.set(x, "memcacheFullVersion", js.undefined)
+    inline def setMemcacheFullVersionUndefined: Self = StObject.set(x, "memcacheFullVersion", js.undefined)
     
-    @scala.inline
-    def setMemcacheNodes(value: js.Array[Node]): Self = StObject.set(x, "memcacheNodes", value.asInstanceOf[js.Any])
+    inline def setMemcacheNodes(value: js.Array[Node]): Self = StObject.set(x, "memcacheNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemcacheNodesUndefined: Self = StObject.set(x, "memcacheNodes", js.undefined)
+    inline def setMemcacheNodesUndefined: Self = StObject.set(x, "memcacheNodes", js.undefined)
     
-    @scala.inline
-    def setMemcacheNodesVarargs(value: Node*): Self = StObject.set(x, "memcacheNodes", js.Array(value :_*))
+    inline def setMemcacheNodesVarargs(value: Node*): Self = StObject.set(x, "memcacheNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setMemcacheVersion(value: String): Self = StObject.set(x, "memcacheVersion", value.asInstanceOf[js.Any])
+    inline def setMemcacheVersion(value: String): Self = StObject.set(x, "memcacheVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemcacheVersionUndefined: Self = StObject.set(x, "memcacheVersion", js.undefined)
+    inline def setMemcacheVersionUndefined: Self = StObject.set(x, "memcacheVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodeConfig(value: NodeConfig): Self = StObject.set(x, "nodeConfig", value.asInstanceOf[js.Any])
+    inline def setNodeConfig(value: NodeConfig): Self = StObject.set(x, "nodeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeConfigUndefined: Self = StObject.set(x, "nodeConfig", js.undefined)
+    inline def setNodeConfigUndefined: Self = StObject.set(x, "nodeConfig", js.undefined)
     
-    @scala.inline
-    def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
+    inline def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeCountUndefined: Self = StObject.set(x, "nodeCount", js.undefined)
+    inline def setNodeCountUndefined: Self = StObject.set(x, "nodeCount", js.undefined)
     
-    @scala.inline
-    def setParameters(value: MemcacheParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MemcacheParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    @scala.inline
-    def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

@@ -19,7 +19,7 @@ object columnParserMod {
     
     def parse(scanner: Scanner): String | Null = js.native
     
-    val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: js.Any = js.native
     
     val quotedColumnParser: QuotedColumnParser = js.native
   }

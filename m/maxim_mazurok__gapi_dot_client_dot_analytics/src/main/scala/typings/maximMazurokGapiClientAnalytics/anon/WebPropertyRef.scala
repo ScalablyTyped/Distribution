@@ -10,19 +10,15 @@ trait WebPropertyRef extends StObject {
 }
 object WebPropertyRef {
   
-  @scala.inline
-  def apply(): WebPropertyRef = {
+  inline def apply(): WebPropertyRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebPropertyRef]
   }
   
-  @scala.inline
-  implicit class WebPropertyRefMutableBuilder[Self <: WebPropertyRef] (val x: Self) extends AnyVal {
+  extension [Self <: WebPropertyRef](x: Self) {
     
-    @scala.inline
-    def setWebPropertyRef(value: typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.WebPropertyRef): Self = StObject.set(x, "webPropertyRef", value.asInstanceOf[js.Any])
+    inline def setWebPropertyRef(value: typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.WebPropertyRef): Self = StObject.set(x, "webPropertyRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyRefUndefined: Self = StObject.set(x, "webPropertyRef", js.undefined)
+    inline def setWebPropertyRefUndefined: Self = StObject.set(x, "webPropertyRef", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait ResponseHeader extends StObject {
 }
 object ResponseHeader {
   
-  @scala.inline
-  def apply(): ResponseHeader = {
+  inline def apply(): ResponseHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseHeader]
   }
   
-  @scala.inline
-  implicit class ResponseHeaderMutableBuilder[Self <: ResponseHeader] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseHeader](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }
 }

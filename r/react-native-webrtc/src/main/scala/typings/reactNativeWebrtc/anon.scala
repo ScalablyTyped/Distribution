@@ -13,17 +13,14 @@ object anon {
   }
   object IceConnectionState {
     
-    @scala.inline
-    def apply(iceConnectionState: RTCIceConnectionState): IceConnectionState = {
+    inline def apply(iceConnectionState: RTCIceConnectionState): IceConnectionState = {
       val __obj = js.Dynamic.literal(iceConnectionState = iceConnectionState.asInstanceOf[js.Any])
       __obj.asInstanceOf[IceConnectionState]
     }
     
-    @scala.inline
-    implicit class IceConnectionStateMutableBuilder[Self <: IceConnectionState] (val x: Self) extends AnyVal {
+    extension [Self <: IceConnectionState](x: Self) {
       
-      @scala.inline
-      def setIceConnectionState(value: RTCIceConnectionState): Self = StObject.set(x, "iceConnectionState", value.asInstanceOf[js.Any])
+      inline def setIceConnectionState(value: RTCIceConnectionState): Self = StObject.set(x, "iceConnectionState", value.asInstanceOf[js.Any])
     }
   }
 }

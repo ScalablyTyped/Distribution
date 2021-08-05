@@ -10,6 +10,5 @@ object StaticRegistrationOptions {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasId(value: js.Object): /* is vscode-languageserver-protocol.anon.Id */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasId")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Id */ Boolean]
+  inline def hasId(value: js.Object): /* is vscode-languageserver-protocol.anon.Id */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasId")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.Id */ Boolean]
 }

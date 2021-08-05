@@ -38,40 +38,29 @@ trait CreateUserMessage extends StObject {
 }
 object CreateUserMessage {
   
-  @scala.inline
-  def apply(AccessString: AccessString, Engine: EngineType, UserId: UserId, UserName: UserName): CreateUserMessage = {
+  inline def apply(AccessString: AccessString, Engine: EngineType, UserId: UserId, UserName: UserName): CreateUserMessage = {
     val __obj = js.Dynamic.literal(AccessString = AccessString.asInstanceOf[js.Any], Engine = Engine.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserMessage]
   }
   
-  @scala.inline
-  implicit class CreateUserMessageMutableBuilder[Self <: CreateUserMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserMessage](x: Self) {
     
-    @scala.inline
-    def setAccessString(value: AccessString): Self = StObject.set(x, "AccessString", value.asInstanceOf[js.Any])
+    inline def setAccessString(value: AccessString): Self = StObject.set(x, "AccessString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoPasswordRequired(value: BooleanOptional): Self = StObject.set(x, "NoPasswordRequired", value.asInstanceOf[js.Any])
+    inline def setNoPasswordRequired(value: BooleanOptional): Self = StObject.set(x, "NoPasswordRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoPasswordRequiredUndefined: Self = StObject.set(x, "NoPasswordRequired", js.undefined)
+    inline def setNoPasswordRequiredUndefined: Self = StObject.set(x, "NoPasswordRequired", js.undefined)
     
-    @scala.inline
-    def setPasswords(value: PasswordListInput): Self = StObject.set(x, "Passwords", value.asInstanceOf[js.Any])
+    inline def setPasswords(value: PasswordListInput): Self = StObject.set(x, "Passwords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordsUndefined: Self = StObject.set(x, "Passwords", js.undefined)
+    inline def setPasswordsUndefined: Self = StObject.set(x, "Passwords", js.undefined)
     
-    @scala.inline
-    def setPasswordsVarargs(value: String*): Self = StObject.set(x, "Passwords", js.Array(value :_*))
+    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "Passwords", js.Array(value :_*))
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

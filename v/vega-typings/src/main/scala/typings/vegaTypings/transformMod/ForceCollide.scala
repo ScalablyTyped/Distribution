@@ -21,34 +21,25 @@ trait ForceCollide
 }
 object ForceCollide {
   
-  @scala.inline
-  def apply(): ForceCollide = {
+  inline def apply(): ForceCollide = {
     val __obj = js.Dynamic.literal(force = "collide")
     __obj.asInstanceOf[ForceCollide]
   }
   
-  @scala.inline
-  implicit class ForceCollideMutableBuilder[Self <: ForceCollide] (val x: Self) extends AnyVal {
+  extension [Self <: ForceCollide](x: Self) {
     
-    @scala.inline
-    def setForce(value: collide): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: collide): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterations(value: Double | SignalRef): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double | SignalRef): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setStrength(value: Double | SignalRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double | SignalRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
   }
 }

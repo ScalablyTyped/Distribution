@@ -28,8 +28,7 @@ trait BabelFile extends StObject {
 }
 object BabelFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ast: File_,
     code: String,
     hub: Hub,
@@ -42,34 +41,24 @@ object BabelFile {
     __obj.asInstanceOf[BabelFile]
   }
   
-  @scala.inline
-  implicit class BabelFileMutableBuilder[Self <: BabelFile] (val x: Self) extends AnyVal {
+  extension [Self <: BabelFile](x: Self) {
     
-    @scala.inline
-    def setAst(value: File_): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: File_): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHub(value: Hub): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+    inline def setHub(value: Hub): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMap(value: js.Object): Self = StObject.set(x, "inputMap", value.asInstanceOf[js.Any])
+    inline def setInputMap(value: js.Object): Self = StObject.set(x, "inputMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMapNull: Self = StObject.set(x, "inputMap", null)
+    inline def setInputMapNull: Self = StObject.set(x, "inputMap", null)
     
-    @scala.inline
-    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpts(value: TransformOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: TransformOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: typings.babelTraverse.mod.NodePath[Program_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: typings.babelTraverse.mod.NodePath[Program_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

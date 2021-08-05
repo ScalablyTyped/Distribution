@@ -14,28 +14,21 @@ trait ListRepricingRulesResponse extends StObject {
 }
 object ListRepricingRulesResponse {
   
-  @scala.inline
-  def apply(): ListRepricingRulesResponse = {
+  inline def apply(): ListRepricingRulesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRepricingRulesResponse]
   }
   
-  @scala.inline
-  implicit class ListRepricingRulesResponseMutableBuilder[Self <: ListRepricingRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRepricingRulesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRepricingRules(value: js.Array[RepricingRule]): Self = StObject.set(x, "repricingRules", value.asInstanceOf[js.Any])
+    inline def setRepricingRules(value: js.Array[RepricingRule]): Self = StObject.set(x, "repricingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepricingRulesUndefined: Self = StObject.set(x, "repricingRules", js.undefined)
+    inline def setRepricingRulesUndefined: Self = StObject.set(x, "repricingRules", js.undefined)
     
-    @scala.inline
-    def setRepricingRulesVarargs(value: RepricingRule*): Self = StObject.set(x, "repricingRules", js.Array(value :_*))
+    inline def setRepricingRulesVarargs(value: RepricingRule*): Self = StObject.set(x, "repricingRules", js.Array(value :_*))
   }
 }

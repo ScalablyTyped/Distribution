@@ -69,8 +69,7 @@ trait BannerAd extends StObject {
 }
 object BannerAd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adUnitId: String,
     destroy: () => Unit,
     hide: () => Unit,
@@ -87,40 +86,28 @@ object BannerAd {
     __obj.asInstanceOf[BannerAd]
   }
   
-  @scala.inline
-  implicit class BannerAdMutableBuilder[Self <: BannerAd] (val x: Self) extends AnyVal {
+  extension [Self <: BannerAd](x: Self) {
     
-    @scala.inline
-    def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
+    inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOffError(value: js.Function1[/* res */ ErrMsg, Unit] => Unit): Self = StObject.set(x, "offError", js.Any.fromFunction1(value))
+    inline def setOffError(value: js.Function1[/* res */ ErrMsg, Unit] => Unit): Self = StObject.set(x, "offError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOffLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "offLoad", js.Any.fromFunction1(value))
+    inline def setOffLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "offLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOffResize(value: js.Function1[/* res */ Width, Unit] => Unit): Self = StObject.set(x, "offResize", js.Any.fromFunction1(value))
+    inline def setOffResize(value: js.Function1[/* res */ Width, Unit] => Unit): Self = StObject.set(x, "offResize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnError(value: js.Function1[/* res */ ErrMsg, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: js.Function1[/* res */ ErrMsg, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnResize(value: js.Function1[/* res */ Width, Unit] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    inline def setOnResize(value: js.Function1[/* res */ Width, Unit] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => js.Promise[Unit]): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => js.Promise[Unit]): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyle(value: AdStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: AdStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

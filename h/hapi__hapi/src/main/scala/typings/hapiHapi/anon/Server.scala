@@ -20,25 +20,19 @@ trait Server extends StObject {
 }
 object Server {
   
-  @scala.inline
-  def apply(): Server = {
+  inline def apply(): Server = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Server]
   }
   
-  @scala.inline
-  implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+  extension [Self <: Server](x: Self) {
     
-    @scala.inline
-    def setServer(value: Boolean | Double): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Boolean | Double): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    @scala.inline
-    def setSocket(value: Boolean | Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: Boolean | Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+    inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
   }
 }

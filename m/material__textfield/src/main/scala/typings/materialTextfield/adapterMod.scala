@@ -19,8 +19,7 @@ object adapterMod {
        with MDCTextFieldOutlineAdapter
   object MDCTextFieldAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activateLineRipple: () => Unit,
       addClass: String => Unit,
       closeOutline: () => Unit,
@@ -86,8 +85,7 @@ object adapterMod {
   }
   object MDCTextFieldInputAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deregisterInputInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
       getNativeInput: () => MDCTextFieldNativeInputElement | Null,
       isFocused: () => Boolean,
@@ -99,26 +97,19 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldInputAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldInputAdapterMutableBuilder[Self <: MDCTextFieldInputAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldInputAdapter](x: Self) {
       
-      @scala.inline
-      def setDeregisterInputInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterInputInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetNativeInput(value: () => MDCTextFieldNativeInputElement | Null): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
+      inline def setGetNativeInput(value: () => MDCTextFieldNativeInputElement | Null): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
+      inline def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterInputInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInputInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInputInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInputInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveInputAttr(value: String => Unit): Self = StObject.set(x, "removeInputAttr", js.Any.fromFunction1(value))
+      inline def setRemoveInputAttr(value: String => Unit): Self = StObject.set(x, "removeInputAttr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetInputAttr(value: (String, String) => Unit): Self = StObject.set(x, "setInputAttr", js.Any.fromFunction2(value))
+      inline def setSetInputAttr(value: (String, String) => Unit): Self = StObject.set(x, "setInputAttr", js.Any.fromFunction2(value))
     }
   }
   
@@ -155,8 +146,7 @@ object adapterMod {
   }
   object MDCTextFieldLabelAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       floatLabel: Boolean => Unit,
       getLabelWidth: () => Double,
       hasLabel: () => Boolean,
@@ -167,23 +157,17 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldLabelAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldLabelAdapterMutableBuilder[Self <: MDCTextFieldLabelAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldLabelAdapter](x: Self) {
       
-      @scala.inline
-      def setFloatLabel(value: Boolean => Unit): Self = StObject.set(x, "floatLabel", js.Any.fromFunction1(value))
+      inline def setFloatLabel(value: Boolean => Unit): Self = StObject.set(x, "floatLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLabelWidth(value: () => Double): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
+      inline def setGetLabelWidth(value: () => Double): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasLabel(value: () => Boolean): Self = StObject.set(x, "hasLabel", js.Any.fromFunction0(value))
+      inline def setHasLabel(value: () => Boolean): Self = StObject.set(x, "hasLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetLabelRequired(value: Boolean => Unit): Self = StObject.set(x, "setLabelRequired", js.Any.fromFunction1(value))
+      inline def setSetLabelRequired(value: Boolean => Unit): Self = StObject.set(x, "setLabelRequired", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShakeLabel(value: Boolean => Unit): Self = StObject.set(x, "shakeLabel", js.Any.fromFunction1(value))
+      inline def setShakeLabel(value: Boolean => Unit): Self = StObject.set(x, "shakeLabel", js.Any.fromFunction1(value))
     }
   }
   
@@ -206,8 +190,7 @@ object adapterMod {
   }
   object MDCTextFieldLineRippleAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activateLineRipple: () => Unit,
       deactivateLineRipple: () => Unit,
       setLineRippleTransformOrigin: Double => Unit
@@ -216,17 +199,13 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldLineRippleAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldLineRippleAdapterMutableBuilder[Self <: MDCTextFieldLineRippleAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldLineRippleAdapter](x: Self) {
       
-      @scala.inline
-      def setActivateLineRipple(value: () => Unit): Self = StObject.set(x, "activateLineRipple", js.Any.fromFunction0(value))
+      inline def setActivateLineRipple(value: () => Unit): Self = StObject.set(x, "activateLineRipple", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeactivateLineRipple(value: () => Unit): Self = StObject.set(x, "deactivateLineRipple", js.Any.fromFunction0(value))
+      inline def setDeactivateLineRipple(value: () => Unit): Self = StObject.set(x, "deactivateLineRipple", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetLineRippleTransformOrigin(value: Double => Unit): Self = StObject.set(x, "setLineRippleTransformOrigin", js.Any.fromFunction1(value))
+      inline def setSetLineRippleTransformOrigin(value: Double => Unit): Self = StObject.set(x, "setLineRippleTransformOrigin", js.Any.fromFunction1(value))
     }
   }
   
@@ -250,23 +229,18 @@ object adapterMod {
   }
   object MDCTextFieldOutlineAdapter {
     
-    @scala.inline
-    def apply(closeOutline: () => Unit, hasOutline: () => Boolean, notchOutline: Double => Unit): MDCTextFieldOutlineAdapter = {
+    inline def apply(closeOutline: () => Unit, hasOutline: () => Boolean, notchOutline: Double => Unit): MDCTextFieldOutlineAdapter = {
       val __obj = js.Dynamic.literal(closeOutline = js.Any.fromFunction0(closeOutline), hasOutline = js.Any.fromFunction0(hasOutline), notchOutline = js.Any.fromFunction1(notchOutline))
       __obj.asInstanceOf[MDCTextFieldOutlineAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldOutlineAdapterMutableBuilder[Self <: MDCTextFieldOutlineAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldOutlineAdapter](x: Self) {
       
-      @scala.inline
-      def setCloseOutline(value: () => Unit): Self = StObject.set(x, "closeOutline", js.Any.fromFunction0(value))
+      inline def setCloseOutline(value: () => Unit): Self = StObject.set(x, "closeOutline", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasOutline(value: () => Boolean): Self = StObject.set(x, "hasOutline", js.Any.fromFunction0(value))
+      inline def setHasOutline(value: () => Boolean): Self = StObject.set(x, "hasOutline", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotchOutline(value: Double => Unit): Self = StObject.set(x, "notchOutline", js.Any.fromFunction1(value))
+      inline def setNotchOutline(value: Double => Unit): Self = StObject.set(x, "notchOutline", js.Any.fromFunction1(value))
     }
   }
   
@@ -310,8 +284,7 @@ object adapterMod {
   }
   object MDCTextFieldRootAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       deregisterTextFieldInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
       deregisterValidationAttributeChangeHandler: MutationObserver => Unit,
@@ -324,29 +297,21 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldRootAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldRootAdapterMutableBuilder[Self <: MDCTextFieldRootAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldRootAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterTextFieldInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterTextFieldInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterValidationAttributeChangeHandler(value: MutationObserver => Unit): Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.Any.fromFunction1(value))
+      inline def setDeregisterValidationAttributeChangeHandler(value: MutationObserver => Unit): Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterTextFieldInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterTextFieldInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterValidationAttributeChangeHandler(value: js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver): Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.Any.fromFunction1(value))
+      inline def setRegisterValidationAttributeChangeHandler(value: js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver): Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
     }
   }
 }

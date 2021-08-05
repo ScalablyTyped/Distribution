@@ -18,25 +18,19 @@ trait FunctionRunAsConfig extends StObject {
 }
 object FunctionRunAsConfig {
   
-  @scala.inline
-  def apply(): FunctionRunAsConfig = {
+  inline def apply(): FunctionRunAsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionRunAsConfig]
   }
   
-  @scala.inline
-  implicit class FunctionRunAsConfigMutableBuilder[Self <: FunctionRunAsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionRunAsConfig](x: Self) {
     
-    @scala.inline
-    def setGid(value: integer): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
+    inline def setGid(value: integer): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGidUndefined: Self = StObject.set(x, "Gid", js.undefined)
+    inline def setGidUndefined: Self = StObject.set(x, "Gid", js.undefined)
     
-    @scala.inline
-    def setUid(value: integer): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: integer): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "Uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "Uid", js.undefined)
   }
 }

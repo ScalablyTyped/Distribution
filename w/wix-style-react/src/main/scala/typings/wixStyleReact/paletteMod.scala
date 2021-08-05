@@ -22,26 +22,20 @@ object paletteMod {
   }
   object PaletteProps {
     
-    @scala.inline
-    def apply(): PaletteProps = {
+    inline def apply(): PaletteProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaletteProps]
     }
     
-    @scala.inline
-    implicit class PalettePropsMutableBuilder[Self <: PaletteProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaletteProps](x: Self) {
       
-      @scala.inline
-      def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+      inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     }
   }
 }

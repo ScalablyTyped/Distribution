@@ -22,6 +22,6 @@ trait ListTemplate extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.ListTemplate_typekey")
+  /* private */ @JSName("Word.ListTemplate_typekey")
   var WordDotListTemplate_typekey: ListTemplate = js.native
 }

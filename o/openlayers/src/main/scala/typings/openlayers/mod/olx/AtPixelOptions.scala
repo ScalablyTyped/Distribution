@@ -17,25 +17,19 @@ trait AtPixelOptions extends StObject {
 }
 object AtPixelOptions {
   
-  @scala.inline
-  def apply(): AtPixelOptions = {
+  inline def apply(): AtPixelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AtPixelOptions]
   }
   
-  @scala.inline
-  implicit class AtPixelOptionsMutableBuilder[Self <: AtPixelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AtPixelOptions](x: Self) {
     
-    @scala.inline
-    def setHitTolerance(value: Double): Self = StObject.set(x, "hitTolerance", value.asInstanceOf[js.Any])
+    inline def setHitTolerance(value: Double): Self = StObject.set(x, "hitTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitToleranceUndefined: Self = StObject.set(x, "hitTolerance", js.undefined)
+    inline def setHitToleranceUndefined: Self = StObject.set(x, "hitTolerance", js.undefined)
     
-    @scala.inline
-    def setLayerFilter(value: /* layer */ Layer => Boolean): Self = StObject.set(x, "layerFilter", js.Any.fromFunction1(value))
+    inline def setLayerFilter(value: /* layer */ Layer => Boolean): Self = StObject.set(x, "layerFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLayerFilterUndefined: Self = StObject.set(x, "layerFilter", js.undefined)
+    inline def setLayerFilterUndefined: Self = StObject.set(x, "layerFilter", js.undefined)
   }
 }

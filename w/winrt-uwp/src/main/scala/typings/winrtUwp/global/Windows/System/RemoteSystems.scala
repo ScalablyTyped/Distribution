@@ -80,27 +80,22 @@ object RemoteSystems {
     
     /** Returns a RemoteSystemWatcher object with no filters. */
     /* static member */
-    @scala.inline
-    def createWatcher(): typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher]
+    inline def createWatcher(): typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher]
     /** Returns a RemoteSystemWatcher object that filters the remote systems it can see. The filters parameter determines which remote systems will be seen. */
     /* static member */
-    @scala.inline
-    def createWatcher(filters: IIterable[IRemoteSystemFilter]): typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(filters.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher]
+    inline def createWatcher(filters: IIterable[IRemoteSystemFilter]): typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(filters.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher]
     
     /** Attempts to discover a single remote system specified by the HostName parameter. */
     /* static member */
-    @scala.inline
-    def findByHostNameAsync(host: HostName): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystem] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByHostNameAsync")(host.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystem]]
+    inline def findByHostNameAsync(host: HostName): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystem] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByHostNameAsync")(host.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystem]]
     
     /** Checks whether the client device is authorized to discover other users' devices or just same-user devices. */
     /* static member */
-    @scala.inline
-    def isAuthorizationKindEnabled(kind: RemoteSystemAuthorizationKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAuthorizationKindEnabled")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isAuthorizationKindEnabled(kind: RemoteSystemAuthorizationKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAuthorizationKindEnabled")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Gets the status of the calling app's access to the Remote Systems feature. This method should always be called before an app attempts to discover or otherwise interact with remote systems. */
     /* static member */
-    @scala.inline
-    def requestAccessAsync(): IPromiseWithIAsyncOperation[RemoteSystemAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[RemoteSystemAccessStatus]]
+    inline def requestAccessAsync(): IPromiseWithIAsyncOperation[RemoteSystemAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[RemoteSystemAccessStatus]]
   }
   
   /** Contains the values that describe an app's access to use the Remote Systems feature. */
@@ -200,8 +195,7 @@ object RemoteSystems {
     
     /** Initializes a new instance of the RemoteSystemConnectionRequest class for a particular application on a remote system. */
     /* static member */
-    @scala.inline
-    def createForApp(remoteSystemApp: typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemApp): typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemConnectionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("createForApp")(remoteSystemApp.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemConnectionRequest]
+    inline def createForApp(remoteSystemApp: typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemApp): typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemConnectionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("createForApp")(remoteSystemApp.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemConnectionRequest]
   }
   
   /** Contains the values that describe how remote systems are able to be discovered. */
@@ -273,64 +267,56 @@ object RemoteSystems {
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.desktop")
     @js.native
     def desktop: String = js.native
-    @scala.inline
-    def desktop_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktop")(x.asInstanceOf[js.Any])
+    inline def desktop_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktop")(x.asInstanceOf[js.Any])
     
     /** Gets the string representation of the holographic device type. */
     /* static member */
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.holographic")
     @js.native
     def holographic: String = js.native
-    @scala.inline
-    def holographic_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("holographic")(x.asInstanceOf[js.Any])
+    inline def holographic_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("holographic")(x.asInstanceOf[js.Any])
     
     /** Gets the string representation of the hub device type. */
     /* static member */
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.hub")
     @js.native
     def hub: String = js.native
-    @scala.inline
-    def hub_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hub")(x.asInstanceOf[js.Any])
+    inline def hub_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hub")(x.asInstanceOf[js.Any])
     
     /** Gets the string representation of the Internet of Things (IoT) device type. */
     /* static member */
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.iot")
     @js.native
     def iot: String = js.native
-    @scala.inline
-    def iot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iot")(x.asInstanceOf[js.Any])
+    inline def iot_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iot")(x.asInstanceOf[js.Any])
     
     /** Gets the string representation of the laptop device type. */
     /* static member */
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.laptop")
     @js.native
     def laptop: String = js.native
-    @scala.inline
-    def laptop_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laptop")(x.asInstanceOf[js.Any])
+    inline def laptop_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laptop")(x.asInstanceOf[js.Any])
     
     /** Gets the string representation of the phone device type. */
     /* static member */
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.phone")
     @js.native
     def phone: String = js.native
-    @scala.inline
-    def phone_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phone")(x.asInstanceOf[js.Any])
+    inline def phone_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phone")(x.asInstanceOf[js.Any])
     
     /** Gets the string representation of the tablet device type. */
     /* static member */
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.tablet")
     @js.native
     def tablet: String = js.native
-    @scala.inline
-    def tablet_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tablet")(x.asInstanceOf[js.Any])
+    inline def tablet_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tablet")(x.asInstanceOf[js.Any])
     
     /** Gets the string representation of the xbox device type. */
     /* static member */
     @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds.xbox")
     @js.native
     def xbox: String = js.native
-    @scala.inline
-    def xbox_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xbox")(x.asInstanceOf[js.Any])
+    inline def xbox_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xbox")(x.asInstanceOf[js.Any])
   }
   
   /** Contains values that describe the operating system platforms that a remote system could be running. */

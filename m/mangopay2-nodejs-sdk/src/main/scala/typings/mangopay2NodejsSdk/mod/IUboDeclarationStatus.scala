@@ -32,25 +32,19 @@ trait IUboDeclarationStatus extends StObject {
 }
 object IUboDeclarationStatus {
   
-  @scala.inline
-  def apply(): IUboDeclarationStatus = {
+  inline def apply(): IUboDeclarationStatus = {
     val __obj = js.Dynamic.literal(Created = "CREATED", Refused = "REFUSED", Validated = "VALIDATED", ValidationAsked = "VALIDATION_ASKED")
     __obj.asInstanceOf[IUboDeclarationStatus]
   }
   
-  @scala.inline
-  implicit class IUboDeclarationStatusMutableBuilder[Self <: IUboDeclarationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IUboDeclarationStatus](x: Self) {
     
-    @scala.inline
-    def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefused(value: REFUSED): Self = StObject.set(x, "Refused", value.asInstanceOf[js.Any])
+    inline def setRefused(value: REFUSED): Self = StObject.set(x, "Refused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidated(value: VALIDATED): Self = StObject.set(x, "Validated", value.asInstanceOf[js.Any])
+    inline def setValidated(value: VALIDATED): Self = StObject.set(x, "Validated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationAsked(value: VALIDATION_ASKED): Self = StObject.set(x, "ValidationAsked", value.asInstanceOf[js.Any])
+    inline def setValidationAsked(value: VALIDATION_ASKED): Self = StObject.set(x, "ValidationAsked", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait PieChartOffsetMode extends StObject
 object PieChartOffsetMode {
   
   /** All pies are exploded by a certain percentage. The default is 10 percent. */
-  @scala.inline
-  def ALL_EXPLODED: `1` = 1.asInstanceOf[`1`]
+  inline def ALL_EXPLODED: `1` = 1.asInstanceOf[`1`]
   
   /**
     * Default, no pies are exploded.
@@ -25,6 +24,5 @@ object PieChartOffsetMode {
     *
     * no transparency attribute is evaluated
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
 }

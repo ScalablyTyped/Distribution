@@ -18,8 +18,7 @@ trait ListIdentityPoolsInput extends StObject {
 }
 object ListIdentityPoolsInput {
   
-  @scala.inline
-  def apply(): ListIdentityPoolsInput = {
+  inline def apply(): ListIdentityPoolsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListIdentityPoolsInput]
   }
@@ -28,22 +27,16 @@ object ListIdentityPoolsInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: ListIdentityPoolsInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: ListIdentityPoolsInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class ListIdentityPoolsInputMutableBuilder[Self <: ListIdentityPoolsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentityPoolsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

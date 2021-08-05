@@ -17,23 +17,18 @@ object anon {
   }
   object Counter {
     
-    @scala.inline
-    def apply(counter: Double, secret: SecretKey, token: String): Counter = {
+    inline def apply(counter: Double, secret: SecretKey, token: String): Counter = {
       val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Counter]
     }
     
-    @scala.inline
-    implicit class CounterMutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
+    extension [Self <: Counter](x: Self) {
       
-      @scala.inline
-      def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: SecretKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: SecretKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +40,16 @@ object anon {
   }
   object Secret {
     
-    @scala.inline
-    def apply(secret: SecretKey, token: String): Secret = {
+    inline def apply(secret: SecretKey, token: String): Secret = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Secret]
     }
     
-    @scala.inline
-    implicit class SecretMutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
+    extension [Self <: Secret](x: Self) {
       
-      @scala.inline
-      def setSecret(value: SecretKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: SecretKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

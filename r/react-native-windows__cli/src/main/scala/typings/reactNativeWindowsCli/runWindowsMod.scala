@@ -12,8 +12,7 @@ object runWindowsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAnonymizedProjectName(projectRoot: String): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnonymizedProjectName")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
+  inline def getAnonymizedProjectName(projectRoot: String): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnonymizedProjectName")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
   @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/runWindows", "runWindowsCommand")
   @js.native

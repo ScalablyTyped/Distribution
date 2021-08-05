@@ -28,22 +28,17 @@ trait IPointerPointTransform extends StObject {
 }
 object IPointerPointTransform {
   
-  @scala.inline
-  def apply(inverse: IPointerPointTransform, transformBounds: Rect => Rect, tryTransform: Point => OutPoint): IPointerPointTransform = {
+  inline def apply(inverse: IPointerPointTransform, transformBounds: Rect => Rect, tryTransform: Point => OutPoint): IPointerPointTransform = {
     val __obj = js.Dynamic.literal(inverse = inverse.asInstanceOf[js.Any], transformBounds = js.Any.fromFunction1(transformBounds), tryTransform = js.Any.fromFunction1(tryTransform))
     __obj.asInstanceOf[IPointerPointTransform]
   }
   
-  @scala.inline
-  implicit class IPointerPointTransformMutableBuilder[Self <: IPointerPointTransform] (val x: Self) extends AnyVal {
+  extension [Self <: IPointerPointTransform](x: Self) {
     
-    @scala.inline
-    def setInverse(value: IPointerPointTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: IPointerPointTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformBounds(value: Rect => Rect): Self = StObject.set(x, "transformBounds", js.Any.fromFunction1(value))
+    inline def setTransformBounds(value: Rect => Rect): Self = StObject.set(x, "transformBounds", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryTransform(value: Point => OutPoint): Self = StObject.set(x, "tryTransform", js.Any.fromFunction1(value))
+    inline def setTryTransform(value: Point => OutPoint): Self = StObject.set(x, "tryTransform", js.Any.fromFunction1(value))
   }
 }

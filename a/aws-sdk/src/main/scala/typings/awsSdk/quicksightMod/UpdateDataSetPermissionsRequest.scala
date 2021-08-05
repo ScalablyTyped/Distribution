@@ -28,37 +28,27 @@ trait UpdateDataSetPermissionsRequest extends StObject {
 }
 object UpdateDataSetPermissionsRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DataSetId: ResourceId): UpdateDataSetPermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DataSetId: ResourceId): UpdateDataSetPermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDataSetPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDataSetPermissionsRequestMutableBuilder[Self <: UpdateDataSetPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDataSetPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantPermissions(value: ResourcePermissionList): Self = StObject.set(x, "GrantPermissions", value.asInstanceOf[js.Any])
+    inline def setGrantPermissions(value: ResourcePermissionList): Self = StObject.set(x, "GrantPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantPermissionsUndefined: Self = StObject.set(x, "GrantPermissions", js.undefined)
+    inline def setGrantPermissionsUndefined: Self = StObject.set(x, "GrantPermissions", js.undefined)
     
-    @scala.inline
-    def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value :_*))
+    inline def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setRevokePermissions(value: ResourcePermissionList): Self = StObject.set(x, "RevokePermissions", value.asInstanceOf[js.Any])
+    inline def setRevokePermissions(value: ResourcePermissionList): Self = StObject.set(x, "RevokePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokePermissionsUndefined: Self = StObject.set(x, "RevokePermissions", js.undefined)
+    inline def setRevokePermissionsUndefined: Self = StObject.set(x, "RevokePermissions", js.undefined)
     
-    @scala.inline
-    def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value :_*))
+    inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value :_*))
   }
 }

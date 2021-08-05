@@ -11,8 +11,6 @@ object initializeDirMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeDir(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeDir")().asInstanceOf[Unit]
-  @scala.inline
-  def initializeDir(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeDir")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initializeDir(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeDir")().asInstanceOf[Unit]
+  inline def initializeDir(win: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeDir")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

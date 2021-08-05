@@ -12,6 +12,5 @@ object serveStaticMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def serveStatic(req: IncomingMessage, res: ServerResponse, path: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def serveStatic(req: IncomingMessage, res: ServerResponse, path: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

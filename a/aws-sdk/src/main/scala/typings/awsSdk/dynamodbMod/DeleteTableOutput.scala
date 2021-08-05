@@ -13,19 +13,15 @@ trait DeleteTableOutput extends StObject {
 }
 object DeleteTableOutput {
   
-  @scala.inline
-  def apply(): DeleteTableOutput = {
+  inline def apply(): DeleteTableOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTableOutput]
   }
   
-  @scala.inline
-  implicit class DeleteTableOutputMutableBuilder[Self <: DeleteTableOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTableOutput](x: Self) {
     
-    @scala.inline
-    def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+    inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+    inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
   }
 }

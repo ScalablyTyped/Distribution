@@ -22,25 +22,19 @@ trait DeleteClusterResponse extends StObject {
 }
 object DeleteClusterResponse {
   
-  @scala.inline
-  def apply(): DeleteClusterResponse = {
+  inline def apply(): DeleteClusterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteClusterResponse]
   }
   
-  @scala.inline
-  implicit class DeleteClusterResponseMutableBuilder[Self <: DeleteClusterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClusterResponse](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
+    inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
-    @scala.inline
-    def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

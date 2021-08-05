@@ -134,8 +134,7 @@ trait DropotronConfiguration extends StObject {
 }
 object DropotronConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IEOffsetX: Double,
     IEOffsetY: Double,
     alignment: String,
@@ -162,70 +161,48 @@ object DropotronConfiguration {
     __obj.asInstanceOf[DropotronConfiguration]
   }
   
-  @scala.inline
-  implicit class DropotronConfigurationMutableBuilder[Self <: DropotronConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DropotronConfiguration](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseZIndex(value: Double): Self = StObject.set(x, "baseZIndex", value.asInstanceOf[js.Any])
+    inline def setBaseZIndex(value: Double): Self = StObject.set(x, "baseZIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloneOnDetach(value: Boolean): Self = StObject.set(x, "cloneOnDetach", value.asInstanceOf[js.Any])
+    inline def setCloneOnDetach(value: Boolean): Self = StObject.set(x, "cloneOnDetach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
+    inline def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandMode(value: String): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
+    inline def setExpandMode(value: String): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalOffsetY(value: Double): Self = StObject.set(x, "globalOffsetY", value.asInstanceOf[js.Any])
+    inline def setGlobalOffsetY(value: Double): Self = StObject.set(x, "globalOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+    inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
+    inline def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIEOffsetX(value: Double): Self = StObject.set(x, "IEOffsetX", value.asInstanceOf[js.Any])
+    inline def setIEOffsetX(value: Double): Self = StObject.set(x, "IEOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIEOffsetY(value: Double): Self = StObject.set(x, "IEOffsetY", value.asInstanceOf[js.Any])
+    inline def setIEOffsetY(value: Double): Self = StObject.set(x, "IEOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuClass(value: String): Self = StObject.set(x, "menuClass", value.asInstanceOf[js.Any])
+    inline def setMenuClass(value: String): Self = StObject.set(x, "menuClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoOpenerFade(value: Boolean): Self = StObject.set(x, "noOpenerFade", value.asInstanceOf[js.Any])
+    inline def setNoOpenerFade(value: Boolean): Self = StObject.set(x, "noOpenerFade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenerActiveClass(value: String): Self = StObject.set(x, "openerActiveClass", value.asInstanceOf[js.Any])
+    inline def setOpenerActiveClass(value: String): Self = StObject.set(x, "openerActiveClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenerClass(value: String): Self = StObject.set(x, "openerClass", value.asInstanceOf[js.Any])
+    inline def setOpenerClass(value: String): Self = StObject.set(x, "openerClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorParent(value: JQuery): Self = StObject.set(x, "selectorParent", value.asInstanceOf[js.Any])
+    inline def setSelectorParent(value: JQuery): Self = StObject.set(x, "selectorParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: String): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: String): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmenuClassPrefix(value: String): Self = StObject.set(x, "submenuClassPrefix", value.asInstanceOf[js.Any])
+    inline def setSubmenuClassPrefix(value: String): Self = StObject.set(x, "submenuClassPrefix", value.asInstanceOf[js.Any])
   }
 }

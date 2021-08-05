@@ -18,19 +18,15 @@ trait AccountLimit extends StObject {
 }
 object AccountLimit {
   
-  @scala.inline
-  def apply(Type: AccountLimitType, Value: LimitValue): AccountLimit = {
+  inline def apply(Type: AccountLimitType, Value: LimitValue): AccountLimit = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountLimit]
   }
   
-  @scala.inline
-  implicit class AccountLimitMutableBuilder[Self <: AccountLimit] (val x: Self) extends AnyVal {
+  extension [Self <: AccountLimit](x: Self) {
     
-    @scala.inline
-    def setType(value: AccountLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AccountLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: LimitValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: LimitValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

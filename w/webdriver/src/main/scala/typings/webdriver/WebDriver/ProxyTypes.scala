@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProxyTypes extends StObject
 object ProxyTypes {
   
-  @scala.inline
-  def autodetect: typings.webdriver.webdriverStrings.autodetect = "autodetect".asInstanceOf[typings.webdriver.webdriverStrings.autodetect]
+  inline def autodetect: typings.webdriver.webdriverStrings.autodetect = "autodetect".asInstanceOf[typings.webdriver.webdriverStrings.autodetect]
   
-  @scala.inline
-  def manual: typings.webdriver.webdriverStrings.manual = "manual".asInstanceOf[typings.webdriver.webdriverStrings.manual]
+  inline def manual: typings.webdriver.webdriverStrings.manual = "manual".asInstanceOf[typings.webdriver.webdriverStrings.manual]
   
-  @scala.inline
-  def noproxy: typings.webdriver.webdriverStrings.noproxy = "noproxy".asInstanceOf[typings.webdriver.webdriverStrings.noproxy]
+  inline def noproxy: typings.webdriver.webdriverStrings.noproxy = "noproxy".asInstanceOf[typings.webdriver.webdriverStrings.noproxy]
   
-  @scala.inline
-  def pac: typings.webdriver.webdriverStrings.pac = "pac".asInstanceOf[typings.webdriver.webdriverStrings.pac]
+  inline def pac: typings.webdriver.webdriverStrings.pac = "pac".asInstanceOf[typings.webdriver.webdriverStrings.pac]
   
-  @scala.inline
-  def system: typings.webdriver.webdriverStrings.system = "system".asInstanceOf[typings.webdriver.webdriverStrings.system]
+  inline def system: typings.webdriver.webdriverStrings.system = "system".asInstanceOf[typings.webdriver.webdriverStrings.system]
 }

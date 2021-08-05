@@ -15,31 +15,23 @@ trait UseRowStateOptions[D /* <: js.Object */] extends StObject {
 }
 object UseRowStateOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseRowStateOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseRowStateOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseRowStateOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseRowStateOptionsMutableBuilder[Self <: UseRowStateOptions[?], D /* <: js.Object */] (val x: Self & UseRowStateOptions[D]) extends AnyVal {
+  extension [Self <: UseRowStateOptions[?], D /* <: js.Object */](x: Self & UseRowStateOptions[D]) {
     
-    @scala.inline
-    def setAutoResetRowState(value: Boolean): Self = StObject.set(x, "autoResetRowState", value.asInstanceOf[js.Any])
+    inline def setAutoResetRowState(value: Boolean): Self = StObject.set(x, "autoResetRowState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResetRowStateUndefined: Self = StObject.set(x, "autoResetRowState", js.undefined)
+    inline def setAutoResetRowStateUndefined: Self = StObject.set(x, "autoResetRowState", js.undefined)
     
-    @scala.inline
-    def setGetResetRowStateDeps(value: /* instance */ TableInstance[D] => js.Array[js.Any]): Self = StObject.set(x, "getResetRowStateDeps", js.Any.fromFunction1(value))
+    inline def setGetResetRowStateDeps(value: /* instance */ TableInstance[D] => js.Array[js.Any]): Self = StObject.set(x, "getResetRowStateDeps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetResetRowStateDepsUndefined: Self = StObject.set(x, "getResetRowStateDeps", js.undefined)
+    inline def setGetResetRowStateDepsUndefined: Self = StObject.set(x, "getResetRowStateDeps", js.undefined)
     
-    @scala.inline
-    def setInitialRowStateAccessor(value: /* row */ Row[D] => UseRowStateLocalState[D, js.Any]): Self = StObject.set(x, "initialRowStateAccessor", js.Any.fromFunction1(value))
+    inline def setInitialRowStateAccessor(value: /* row */ Row[D] => UseRowStateLocalState[D, js.Any]): Self = StObject.set(x, "initialRowStateAccessor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitialRowStateAccessorUndefined: Self = StObject.set(x, "initialRowStateAccessor", js.undefined)
+    inline def setInitialRowStateAccessorUndefined: Self = StObject.set(x, "initialRowStateAccessor", js.undefined)
   }
 }

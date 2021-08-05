@@ -22,25 +22,19 @@ trait Prometheus extends StObject {
 }
 object Prometheus {
   
-  @scala.inline
-  def apply(): Prometheus = {
+  inline def apply(): Prometheus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Prometheus]
   }
   
-  @scala.inline
-  implicit class PrometheusMutableBuilder[Self <: Prometheus] (val x: Self) extends AnyVal {
+  extension [Self <: Prometheus](x: Self) {
     
-    @scala.inline
-    def setJmxExporter(value: JmxExporter): Self = StObject.set(x, "JmxExporter", value.asInstanceOf[js.Any])
+    inline def setJmxExporter(value: JmxExporter): Self = StObject.set(x, "JmxExporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJmxExporterUndefined: Self = StObject.set(x, "JmxExporter", js.undefined)
+    inline def setJmxExporterUndefined: Self = StObject.set(x, "JmxExporter", js.undefined)
     
-    @scala.inline
-    def setNodeExporter(value: NodeExporter): Self = StObject.set(x, "NodeExporter", value.asInstanceOf[js.Any])
+    inline def setNodeExporter(value: NodeExporter): Self = StObject.set(x, "NodeExporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeExporterUndefined: Self = StObject.set(x, "NodeExporter", js.undefined)
+    inline def setNodeExporterUndefined: Self = StObject.set(x, "NodeExporter", js.undefined)
   }
 }

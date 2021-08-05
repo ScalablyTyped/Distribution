@@ -13,19 +13,15 @@ trait SchemaDivisionSearchRequest extends StObject {
 }
 object SchemaDivisionSearchRequest {
   
-  @scala.inline
-  def apply(): SchemaDivisionSearchRequest = {
+  inline def apply(): SchemaDivisionSearchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDivisionSearchRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDivisionSearchRequestMutableBuilder[Self <: SchemaDivisionSearchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDivisionSearchRequest](x: Self) {
     
-    @scala.inline
-    def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
+    inline def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
+    inline def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
   }
 }

@@ -28,19 +28,15 @@ trait ConnectionProperties extends StObject {
 }
 object ConnectionProperties {
   
-  @scala.inline
-  def apply(password: String, user: String): ConnectionProperties = {
+  inline def apply(password: String, user: String): ConnectionProperties = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionProperties]
   }
   
-  @scala.inline
-  implicit class ConnectionPropertiesMutableBuilder[Self <: ConnectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionProperties](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

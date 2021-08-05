@@ -14,25 +14,19 @@ trait GetStorybookKind extends StObject {
 }
 object GetStorybookKind {
   
-  @scala.inline
-  def apply(fileName: String, kind: String, stories: js.Array[GetStorybookStory]): GetStorybookKind = {
+  inline def apply(fileName: String, kind: String, stories: js.Array[GetStorybookStory]): GetStorybookKind = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorybookKind]
   }
   
-  @scala.inline
-  implicit class GetStorybookKindMutableBuilder[Self <: GetStorybookKind] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorybookKind](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStories(value: js.Array[GetStorybookStory]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+    inline def setStories(value: js.Array[GetStorybookStory]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoriesVarargs(value: GetStorybookStory*): Self = StObject.set(x, "stories", js.Array(value :_*))
+    inline def setStoriesVarargs(value: GetStorybookStory*): Self = StObject.set(x, "stories", js.Array(value :_*))
   }
 }

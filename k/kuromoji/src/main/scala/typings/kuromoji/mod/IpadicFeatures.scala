@@ -34,8 +34,7 @@ trait IpadicFeatures extends StObject {
 }
 object IpadicFeatures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basic_form: String,
     conjugated_form: String,
     conjugated_type: String,
@@ -52,52 +51,36 @@ object IpadicFeatures {
     __obj.asInstanceOf[IpadicFeatures]
   }
   
-  @scala.inline
-  implicit class IpadicFeaturesMutableBuilder[Self <: IpadicFeatures] (val x: Self) extends AnyVal {
+  extension [Self <: IpadicFeatures](x: Self) {
     
-    @scala.inline
-    def setBasic_form(value: String): Self = StObject.set(x, "basic_form", value.asInstanceOf[js.Any])
+    inline def setBasic_form(value: String): Self = StObject.set(x, "basic_form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConjugated_form(value: String): Self = StObject.set(x, "conjugated_form", value.asInstanceOf[js.Any])
+    inline def setConjugated_form(value: String): Self = StObject.set(x, "conjugated_form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConjugated_type(value: String): Self = StObject.set(x, "conjugated_type", value.asInstanceOf[js.Any])
+    inline def setConjugated_type(value: String): Self = StObject.set(x, "conjugated_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: String): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos_detail_1(value: String): Self = StObject.set(x, "pos_detail_1", value.asInstanceOf[js.Any])
+    inline def setPos_detail_1(value: String): Self = StObject.set(x, "pos_detail_1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos_detail_2(value: String): Self = StObject.set(x, "pos_detail_2", value.asInstanceOf[js.Any])
+    inline def setPos_detail_2(value: String): Self = StObject.set(x, "pos_detail_2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos_detail_3(value: String): Self = StObject.set(x, "pos_detail_3", value.asInstanceOf[js.Any])
+    inline def setPos_detail_3(value: String): Self = StObject.set(x, "pos_detail_3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
+    inline def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
+    inline def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
     
-    @scala.inline
-    def setReading(value: String): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: String): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadingUndefined: Self = StObject.set(x, "reading", js.undefined)
+    inline def setReadingUndefined: Self = StObject.set(x, "reading", js.undefined)
     
-    @scala.inline
-    def setSurface_form(value: String): Self = StObject.set(x, "surface_form", value.asInstanceOf[js.Any])
+    inline def setSurface_form(value: String): Self = StObject.set(x, "surface_form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_id(value: Double): Self = StObject.set(x, "word_id", value.asInstanceOf[js.Any])
+    inline def setWord_id(value: Double): Self = StObject.set(x, "word_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_position(value: Double): Self = StObject.set(x, "word_position", value.asInstanceOf[js.Any])
+    inline def setWord_position(value: Double): Self = StObject.set(x, "word_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_type(value: String): Self = StObject.set(x, "word_type", value.asInstanceOf[js.Any])
+    inline def setWord_type(value: String): Self = StObject.set(x, "word_type", value.asInstanceOf[js.Any])
   }
 }

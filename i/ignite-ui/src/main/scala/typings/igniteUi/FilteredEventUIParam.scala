@@ -18,25 +18,19 @@ trait FilteredEventUIParam extends StObject {
 }
 object FilteredEventUIParam {
   
-  @scala.inline
-  def apply(): FilteredEventUIParam = {
+  inline def apply(): FilteredEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilteredEventUIParam]
   }
   
-  @scala.inline
-  implicit class FilteredEventUIParamMutableBuilder[Self <: FilteredEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FilteredEventUIParam](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

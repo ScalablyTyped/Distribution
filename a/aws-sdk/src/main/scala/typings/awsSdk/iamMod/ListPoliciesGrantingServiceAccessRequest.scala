@@ -23,28 +23,21 @@ trait ListPoliciesGrantingServiceAccessRequest extends StObject {
 }
 object ListPoliciesGrantingServiceAccessRequest {
   
-  @scala.inline
-  def apply(Arn: arnType, ServiceNamespaces: serviceNamespaceListType): ListPoliciesGrantingServiceAccessRequest = {
+  inline def apply(Arn: arnType, ServiceNamespaces: serviceNamespaceListType): ListPoliciesGrantingServiceAccessRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ServiceNamespaces = ServiceNamespaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesGrantingServiceAccessRequest]
   }
   
-  @scala.inline
-  implicit class ListPoliciesGrantingServiceAccessRequestMutableBuilder[Self <: ListPoliciesGrantingServiceAccessRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPoliciesGrantingServiceAccessRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setServiceNamespaces(value: serviceNamespaceListType): Self = StObject.set(x, "ServiceNamespaces", value.asInstanceOf[js.Any])
+    inline def setServiceNamespaces(value: serviceNamespaceListType): Self = StObject.set(x, "ServiceNamespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespacesVarargs(value: serviceNamespaceType*): Self = StObject.set(x, "ServiceNamespaces", js.Array(value :_*))
+    inline def setServiceNamespacesVarargs(value: serviceNamespaceType*): Self = StObject.set(x, "ServiceNamespaces", js.Array(value :_*))
   }
 }

@@ -59,8 +59,7 @@ trait XDataPilotTable2
 }
 object XDataPilotTable2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputRange: CellRangeAddress,
     acquire: () => Unit,
     getDrillDownData: CellAddress => SafeArray[SafeArray[js.Any]],
@@ -76,19 +75,14 @@ object XDataPilotTable2 {
     __obj.asInstanceOf[XDataPilotTable2]
   }
   
-  @scala.inline
-  implicit class XDataPilotTable2MutableBuilder[Self <: XDataPilotTable2] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotTable2](x: Self) {
     
-    @scala.inline
-    def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
+    inline def setGetDrillDownData(value: CellAddress => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOutputRangeByType(value: Double => CellRangeAddress): Self = StObject.set(x, "getOutputRangeByType", js.Any.fromFunction1(value))
+    inline def setGetOutputRangeByType(value: Double => CellRangeAddress): Self = StObject.set(x, "getOutputRangeByType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPositionData(value: CellAddress => DataPilotTablePositionData): Self = StObject.set(x, "getPositionData", js.Any.fromFunction1(value))
+    inline def setGetPositionData(value: CellAddress => DataPilotTablePositionData): Self = StObject.set(x, "getPositionData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertDrillDownSheet(value: CellAddress => Unit): Self = StObject.set(x, "insertDrillDownSheet", js.Any.fromFunction1(value))
+    inline def setInsertDrillDownSheet(value: CellAddress => Unit): Self = StObject.set(x, "insertDrillDownSheet", js.Any.fromFunction1(value))
   }
 }

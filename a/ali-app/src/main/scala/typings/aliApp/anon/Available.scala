@@ -18,19 +18,15 @@ trait Available extends StObject {
 }
 object Available {
   
-  @scala.inline
-  def apply(available: Boolean, discovering: Boolean): Available = {
+  inline def apply(available: Boolean, discovering: Boolean): Available = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any])
     __obj.asInstanceOf[Available]
   }
   
-  @scala.inline
-  implicit class AvailableMutableBuilder[Self <: Available] (val x: Self) extends AnyVal {
+  extension [Self <: Available](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
+    inline def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
   }
 }

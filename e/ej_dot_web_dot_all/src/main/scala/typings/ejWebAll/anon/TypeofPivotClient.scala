@@ -15,19 +15,15 @@ trait TypeofPivotClient extends StObject {
 }
 object TypeofPivotClient {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: PivotClient): TypeofPivotClient = {
+  inline def apply(Locale: js.Any, fn: PivotClient): TypeofPivotClient = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotClient]
   }
   
-  @scala.inline
-  implicit class TypeofPivotClientMutableBuilder[Self <: TypeofPivotClient] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPivotClient](x: Self) {
     
-    @scala.inline
-    def setFn(value: PivotClient): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PivotClient): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

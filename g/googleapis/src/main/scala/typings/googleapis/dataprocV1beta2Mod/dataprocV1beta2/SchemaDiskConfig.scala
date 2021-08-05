@@ -32,31 +32,23 @@ trait SchemaDiskConfig extends StObject {
 }
 object SchemaDiskConfig {
   
-  @scala.inline
-  def apply(): SchemaDiskConfig = {
+  inline def apply(): SchemaDiskConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiskConfig]
   }
   
-  @scala.inline
-  implicit class SchemaDiskConfigMutableBuilder[Self <: SchemaDiskConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiskConfig](x: Self) {
     
-    @scala.inline
-    def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
+    inline def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
+    inline def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
     
-    @scala.inline
-    def setBootDiskType(value: String): Self = StObject.set(x, "bootDiskType", value.asInstanceOf[js.Any])
+    inline def setBootDiskType(value: String): Self = StObject.set(x, "bootDiskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDiskTypeUndefined: Self = StObject.set(x, "bootDiskType", js.undefined)
+    inline def setBootDiskTypeUndefined: Self = StObject.set(x, "bootDiskType", js.undefined)
     
-    @scala.inline
-    def setNumLocalSsds(value: Double): Self = StObject.set(x, "numLocalSsds", value.asInstanceOf[js.Any])
+    inline def setNumLocalSsds(value: Double): Self = StObject.set(x, "numLocalSsds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumLocalSsdsUndefined: Self = StObject.set(x, "numLocalSsds", js.undefined)
+    inline def setNumLocalSsdsUndefined: Self = StObject.set(x, "numLocalSsds", js.undefined)
   }
 }

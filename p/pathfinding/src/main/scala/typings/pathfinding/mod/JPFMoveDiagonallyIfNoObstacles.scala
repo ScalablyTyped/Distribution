@@ -11,6 +11,5 @@ trait JPFMoveDiagonallyIfNoObstacles
      with JumpPointFinderBase
 object JPFMoveDiagonallyIfNoObstacles {
   
-  @scala.inline
-  def apply: JPFMoveDiagonallyIfNoObstacles = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFMoveDiagonallyIfNoObstacles").asInstanceOf[JPFMoveDiagonallyIfNoObstacles]
+  inline def apply: JPFMoveDiagonallyIfNoObstacles = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFMoveDiagonallyIfNoObstacles").asInstanceOf[JPFMoveDiagonallyIfNoObstacles]
 }

@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorFlashDialog
 }
 object ASPxClientHtmlEditorFlashDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAllowFullscreenCheckBox: () => ASPxClientCheckBox,
     GetAutoPlayCheckBox: () => ASPxClientCheckBox,
     GetBorderColorColorEdit: () => ASPxClientColorEdit,
@@ -66,22 +65,16 @@ object ASPxClientHtmlEditorFlashDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorFlashDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorFlashDialogMutableBuilder[Self <: ASPxClientHtmlEditorFlashDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorFlashDialog](x: Self) {
     
-    @scala.inline
-    def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
+    inline def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAutoPlayCheckBox", js.Any.fromFunction0(value))
+    inline def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAutoPlayCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnableFlashMenuCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetEnableFlashMenuCheckBox", js.Any.fromFunction0(value))
+    inline def setGetEnableFlashMenuCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetEnableFlashMenuCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoopCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetLoopCheckBox", js.Any.fromFunction0(value))
+    inline def setGetLoopCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetLoopCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQualityComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetQualityComboBox", js.Any.fromFunction0(value))
+    inline def setGetQualityComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetQualityComboBox", js.Any.fromFunction0(value))
   }
 }

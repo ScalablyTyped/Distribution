@@ -30,31 +30,23 @@ trait ParamsResourceAccountsContainersWorkspacesFoldersEntities
 }
 object ParamsResourceAccountsContainersWorkspacesFoldersEntities {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsContainersWorkspacesFoldersEntities = {
+  inline def apply(): ParamsResourceAccountsContainersWorkspacesFoldersEntities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsContainersWorkspacesFoldersEntities]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsContainersWorkspacesFoldersEntitiesMutableBuilder[Self <: ParamsResourceAccountsContainersWorkspacesFoldersEntities] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsContainersWorkspacesFoldersEntities](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

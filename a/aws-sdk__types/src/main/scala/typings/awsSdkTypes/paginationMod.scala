@@ -18,29 +18,22 @@ object paginationMod {
   }
   object PaginationConfiguration {
     
-    @scala.inline
-    def apply(client: Client[js.Any, js.Any, js.Any]): PaginationConfiguration = {
+    inline def apply(client: Client[js.Any, js.Any, js.Any]): PaginationConfiguration = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationConfiguration]
     }
     
-    @scala.inline
-    implicit class PaginationConfigurationMutableBuilder[Self <: PaginationConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationConfiguration](x: Self) {
       
-      @scala.inline
-      def setClient(value: Client[js.Any, js.Any, js.Any]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client[js.Any, js.Any, js.Any]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setStartingToken(value: String): Self = StObject.set(x, "startingToken", value.asInstanceOf[js.Any])
+      inline def setStartingToken(value: String): Self = StObject.set(x, "startingToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingTokenUndefined: Self = StObject.set(x, "startingToken", js.undefined)
+      inline def setStartingTokenUndefined: Self = StObject.set(x, "startingToken", js.undefined)
     }
   }
   

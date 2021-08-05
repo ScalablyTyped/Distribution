@@ -474,14 +474,10 @@ object mod {
       * * `keepAliveDelay` in seconds to the initial delay before the first keepalive
       *                    probe is sent on an idle socket. Defaults is 30 seconds.
       */
-    @scala.inline
-    def create(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Client]
-    @scala.inline
-    def create(serversStr: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any]).asInstanceOf[Client]
-    @scala.inline
-    def create(serversStr: String, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
-    @scala.inline
-    def create(serversStr: Unit, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+    inline def create(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Client]
+    inline def create(serversStr: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any]).asInstanceOf[Client]
+    inline def create(serversStr: String, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+    inline def create(serversStr: Unit, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   }
   
   trait ClientOptions extends StObject {
@@ -519,44 +515,32 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setFailoverTime(value: Double): Self = StObject.set(x, "failoverTime", value.asInstanceOf[js.Any])
+      inline def setFailoverTime(value: Double): Self = StObject.set(x, "failoverTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailoverTimeUndefined: Self = StObject.set(x, "failoverTime", js.undefined)
+      inline def setFailoverTimeUndefined: Self = StObject.set(x, "failoverTime", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRetry_delay(value: Double): Self = StObject.set(x, "retry_delay", value.asInstanceOf[js.Any])
+      inline def setRetry_delay(value: Double): Self = StObject.set(x, "retry_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry_delayUndefined: Self = StObject.set(x, "retry_delay", js.undefined)
+      inline def setRetry_delayUndefined: Self = StObject.set(x, "retry_delay", js.undefined)
     }
   }
 }

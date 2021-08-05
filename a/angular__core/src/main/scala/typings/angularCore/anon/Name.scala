@@ -14,19 +14,15 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(name: GlobalTargetName, target: EventTarget): Name = {
+  inline def apply(name: GlobalTargetName, target: EventTarget): Name = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setName(value: GlobalTargetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: GlobalTargetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

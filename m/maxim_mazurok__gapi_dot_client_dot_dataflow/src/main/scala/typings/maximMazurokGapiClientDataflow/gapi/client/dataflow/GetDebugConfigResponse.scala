@@ -11,19 +11,15 @@ trait GetDebugConfigResponse extends StObject {
 }
 object GetDebugConfigResponse {
   
-  @scala.inline
-  def apply(): GetDebugConfigResponse = {
+  inline def apply(): GetDebugConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDebugConfigResponse]
   }
   
-  @scala.inline
-  implicit class GetDebugConfigResponseMutableBuilder[Self <: GetDebugConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDebugConfigResponse](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
   }
 }

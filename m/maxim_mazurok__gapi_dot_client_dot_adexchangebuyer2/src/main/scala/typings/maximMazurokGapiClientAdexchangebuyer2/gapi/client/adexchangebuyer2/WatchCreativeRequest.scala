@@ -14,19 +14,15 @@ trait WatchCreativeRequest extends StObject {
 }
 object WatchCreativeRequest {
   
-  @scala.inline
-  def apply(): WatchCreativeRequest = {
+  inline def apply(): WatchCreativeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatchCreativeRequest]
   }
   
-  @scala.inline
-  implicit class WatchCreativeRequestMutableBuilder[Self <: WatchCreativeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WatchCreativeRequest](x: Self) {
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

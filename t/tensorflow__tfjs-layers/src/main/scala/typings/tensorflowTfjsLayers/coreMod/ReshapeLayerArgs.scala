@@ -15,19 +15,15 @@ trait ReshapeLayerArgs
 }
 object ReshapeLayerArgs {
   
-  @scala.inline
-  def apply(targetShape: Shape): ReshapeLayerArgs = {
+  inline def apply(targetShape: Shape): ReshapeLayerArgs = {
     val __obj = js.Dynamic.literal(targetShape = targetShape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReshapeLayerArgs]
   }
   
-  @scala.inline
-  implicit class ReshapeLayerArgsMutableBuilder[Self <: ReshapeLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ReshapeLayerArgs](x: Self) {
     
-    @scala.inline
-    def setTargetShape(value: Shape): Self = StObject.set(x, "targetShape", value.asInstanceOf[js.Any])
+    inline def setTargetShape(value: Shape): Self = StObject.set(x, "targetShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "targetShape", js.Array(value :_*))
+    inline def setTargetShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "targetShape", js.Array(value :_*))
   }
 }

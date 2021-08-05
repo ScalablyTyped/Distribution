@@ -33,46 +33,33 @@ trait Attachment extends StObject {
 }
 object Attachment {
   
-  @scala.inline
-  def apply(artifactLocation: ArtifactLocation): Attachment = {
+  inline def apply(artifactLocation: ArtifactLocation): Attachment = {
     val __obj = js.Dynamic.literal(artifactLocation = artifactLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
   
-  @scala.inline
-  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+  extension [Self <: Attachment](x: Self) {
     
-    @scala.inline
-    def setArtifactLocation(value: ArtifactLocation): Self = StObject.set(x, "artifactLocation", value.asInstanceOf[js.Any])
+    inline def setArtifactLocation(value: ArtifactLocation): Self = StObject.set(x, "artifactLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRectangles(value: js.Array[Rectangle]): Self = StObject.set(x, "rectangles", value.asInstanceOf[js.Any])
+    inline def setRectangles(value: js.Array[Rectangle]): Self = StObject.set(x, "rectangles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectanglesUndefined: Self = StObject.set(x, "rectangles", js.undefined)
+    inline def setRectanglesUndefined: Self = StObject.set(x, "rectangles", js.undefined)
     
-    @scala.inline
-    def setRectanglesVarargs(value: Rectangle*): Self = StObject.set(x, "rectangles", js.Array(value :_*))
+    inline def setRectanglesVarargs(value: Rectangle*): Self = StObject.set(x, "rectangles", js.Array(value :_*))
     
-    @scala.inline
-    def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

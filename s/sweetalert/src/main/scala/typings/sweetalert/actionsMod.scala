@@ -11,17 +11,12 @@ object actionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getState(): SwalState = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[SwalState]
+  inline def getState(): SwalState = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[SwalState]
   
-  @scala.inline
-  def onAction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAction")().asInstanceOf[Unit]
-  @scala.inline
-  def onAction(namespace: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(namespace.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onAction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAction")().asInstanceOf[Unit]
+  inline def onAction(namespace: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(namespace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def openModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openModal")().asInstanceOf[Unit]
+  inline def openModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openModal")().asInstanceOf[Unit]
   
-  @scala.inline
-  def stopLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopLoading")().asInstanceOf[Unit]
+  inline def stopLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopLoading")().asInstanceOf[Unit]
 }

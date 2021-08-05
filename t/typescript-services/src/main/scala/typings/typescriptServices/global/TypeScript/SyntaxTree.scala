@@ -18,29 +18,29 @@ class SyntaxTree protected ()
     parseOtions: typings.typescriptServices.TypeScript.ParseOptions
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _allDiagnostics: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _fileName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _isDeclaration: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _lineMap: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _parseOptions: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _parserDiagnostics: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _sourceUnit: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def computeDiagnostics(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def computeDiagnostics(): js.Any = js.native
   
   /* CompleteClass */
   override def diagnostics(): js.Array[typings.typescriptServices.TypeScript.Diagnostic] = js.native

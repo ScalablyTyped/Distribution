@@ -19,43 +19,31 @@ trait CertificateField
 }
 object CertificateField {
   
-  @scala.inline
-  def apply(): CertificateField = {
+  inline def apply(): CertificateField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateField]
   }
   
-  @scala.inline
-  implicit class CertificateFieldMutableBuilder[Self <: CertificateField] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateField](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: js.Array[js.Any] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[js.Any] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueConstructed(value: Boolean): Self = StObject.set(x, "valueConstructed", value.asInstanceOf[js.Any])
+    inline def setValueConstructed(value: Boolean): Self = StObject.set(x, "valueConstructed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueConstructedUndefined: Self = StObject.set(x, "valueConstructed", js.undefined)
+    inline def setValueConstructedUndefined: Self = StObject.set(x, "valueConstructed", js.undefined)
     
-    @scala.inline
-    def setValueTagClass(value: Class): Self = StObject.set(x, "valueTagClass", value.asInstanceOf[js.Any])
+    inline def setValueTagClass(value: Class): Self = StObject.set(x, "valueTagClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTagClassUndefined: Self = StObject.set(x, "valueTagClass", js.undefined)
+    inline def setValueTagClassUndefined: Self = StObject.set(x, "valueTagClass", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

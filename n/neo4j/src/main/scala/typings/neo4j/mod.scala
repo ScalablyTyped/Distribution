@@ -165,20 +165,16 @@ object mod {
   }
   object Authentication {
     
-    @scala.inline
-    def apply(password: String, username: String): Authentication = {
+    inline def apply(password: String, username: String): Authentication = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Authentication]
     }
     
-    @scala.inline
-    implicit class AuthenticationMutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
+    extension [Self <: Authentication](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,17 +184,14 @@ object mod {
   }
   object ChangePasswordOptions {
     
-    @scala.inline
-    def apply(password: String): ChangePasswordOptions = {
+    inline def apply(password: String): ChangePasswordOptions = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangePasswordOptions]
     }
     
-    @scala.inline
-    implicit class ChangePasswordOptionsMutableBuilder[Self <: ChangePasswordOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChangePasswordOptions](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,26 +203,20 @@ object mod {
   }
   object ConstraintOptions {
     
-    @scala.inline
-    def apply(): ConstraintOptions = {
+    inline def apply(): ConstraintOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstraintOptions]
     }
     
-    @scala.inline
-    implicit class ConstraintOptionsMutableBuilder[Self <: ConstraintOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConstraintOptions](x: Self) {
       
-      @scala.inline
-      def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setProperty(value: js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     }
   }
   
@@ -247,44 +234,32 @@ object mod {
   }
   object CypherOptions {
     
-    @scala.inline
-    def apply(): CypherOptions = {
+    inline def apply(): CypherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CypherOptions]
     }
     
-    @scala.inline
-    implicit class CypherOptionsMutableBuilder[Self <: CypherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CypherOptions](x: Self) {
       
-      @scala.inline
-      def setCommit(value: js.Object): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: js.Object): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+      inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setLean(value: js.Object): Self = StObject.set(x, "lean", value.asInstanceOf[js.Any])
+      inline def setLean(value: js.Object): Self = StObject.set(x, "lean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeanUndefined: Self = StObject.set(x, "lean", js.undefined)
+      inline def setLeanUndefined: Self = StObject.set(x, "lean", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
@@ -324,38 +299,28 @@ object mod {
   }
   object GraphDatabaseOptions {
     
-    @scala.inline
-    def apply(auth: String | Authentication, url: String): GraphDatabaseOptions = {
+    inline def apply(auth: String | Authentication, url: String): GraphDatabaseOptions = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphDatabaseOptions]
     }
     
-    @scala.inline
-    implicit class GraphDatabaseOptionsMutableBuilder[Self <: GraphDatabaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GraphDatabaseOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setAuth(value: String | Authentication): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String | Authentication): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,26 +336,20 @@ object mod {
   }
   object HttpOptions {
     
-    @scala.inline
-    def apply(body: js.Any, method: String, path: String, raw: js.Any): HttpOptions = {
+    inline def apply(body: js.Any, method: String, path: String, raw: js.Any): HttpOptions = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpOptions]
     }
     
-    @scala.inline
-    implicit class HttpOptionsMutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -402,26 +361,20 @@ object mod {
   }
   object IndexOptions {
     
-    @scala.inline
-    def apply(): IndexOptions = {
+    inline def apply(): IndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IndexOptions]
     }
     
-    @scala.inline
-    implicit class IndexOptionsMutableBuilder[Self <: IndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IndexOptions](x: Self) {
       
-      @scala.inline
-      def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setProperty(value: js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     }
   }
   
@@ -445,8 +398,7 @@ object mod {
   }
   object Transaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       commit: DoneCallback => Unit,
       cypher: (CypherOptions, ResultCallback) => Request,
       expiresAt: Date,
@@ -459,29 +411,21 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    @scala.inline
-    implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+    extension [Self <: Transaction](x: Self) {
       
-      @scala.inline
-      def setCommit(value: DoneCallback => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
+      inline def setCommit(value: DoneCallback => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCypher(value: (CypherOptions, ResultCallback) => Request): Self = StObject.set(x, "cypher", js.Any.fromFunction2(value))
+      inline def setCypher(value: (CypherOptions, ResultCallback) => Request): Self = StObject.set(x, "cypher", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresIn(value: Date | Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: Date | Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenew(value: DoneCallback => Unit): Self = StObject.set(x, "renew", js.Any.fromFunction1(value))
+      inline def setRenew(value: DoneCallback => Unit): Self = StObject.set(x, "renew", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRollback(value: DoneCallback => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction1(value))
+      inline def setRollback(value: DoneCallback => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

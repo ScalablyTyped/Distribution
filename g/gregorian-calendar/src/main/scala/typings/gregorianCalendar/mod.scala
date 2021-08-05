@@ -461,8 +461,7 @@ object mod {
   }
   object GregorianCalendar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDayOfMonth: Number => Unit,
       addHourOfDay: Number => Unit,
       addMilliSecond: Number => Unit,
@@ -507,122 +506,83 @@ object mod {
       __obj.asInstanceOf[GregorianCalendar]
     }
     
-    @scala.inline
-    implicit class GregorianCalendarMutableBuilder[Self <: GregorianCalendar] (val x: Self) extends AnyVal {
+    extension [Self <: GregorianCalendar](x: Self) {
       
-      @scala.inline
-      def setAddDayOfMonth(value: Number => Unit): Self = StObject.set(x, "addDayOfMonth", js.Any.fromFunction1(value))
+      inline def setAddDayOfMonth(value: Number => Unit): Self = StObject.set(x, "addDayOfMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddHourOfDay(value: Number => Unit): Self = StObject.set(x, "addHourOfDay", js.Any.fromFunction1(value))
+      inline def setAddHourOfDay(value: Number => Unit): Self = StObject.set(x, "addHourOfDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddMilliSecond(value: Number => Unit): Self = StObject.set(x, "addMilliSecond", js.Any.fromFunction1(value))
+      inline def setAddMilliSecond(value: Number => Unit): Self = StObject.set(x, "addMilliSecond", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddMinute(value: Number => Unit): Self = StObject.set(x, "addMinute", js.Any.fromFunction1(value))
+      inline def setAddMinute(value: Number => Unit): Self = StObject.set(x, "addMinute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddMonth(value: Number => Unit): Self = StObject.set(x, "addMonth", js.Any.fromFunction1(value))
+      inline def setAddMonth(value: Number => Unit): Self = StObject.set(x, "addMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddSecond(value: Number => Unit): Self = StObject.set(x, "addSecond", js.Any.fromFunction1(value))
+      inline def setAddSecond(value: Number => Unit): Self = StObject.set(x, "addSecond", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddYear(value: Number => Unit): Self = StObject.set(x, "addYear", js.Any.fromFunction1(value))
+      inline def setAddYear(value: Number => Unit): Self = StObject.set(x, "addYear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompareToDay(value: GregorianCalendar => Number): Self = StObject.set(x, "compareToDay", js.Any.fromFunction1(value))
+      inline def setCompareToDay(value: GregorianCalendar => Number): Self = StObject.set(x, "compareToDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_(value: GregorianCalendar => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: GregorianCalendar => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDayOfMonth(value: () => Number): Self = StObject.set(x, "getDayOfMonth", js.Any.fromFunction0(value))
+      inline def setGetDayOfMonth(value: () => Number): Self = StObject.set(x, "getDayOfMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDayOfWeek(value: () => Number): Self = StObject.set(x, "getDayOfWeek", js.Any.fromFunction0(value))
+      inline def setGetDayOfWeek(value: () => Number): Self = StObject.set(x, "getDayOfWeek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDayOfWeekInMonth(value: () => Number): Self = StObject.set(x, "getDayOfWeekInMonth", js.Any.fromFunction0(value))
+      inline def setGetDayOfWeekInMonth(value: () => Number): Self = StObject.set(x, "getDayOfWeekInMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDayOfYear(value: () => Number): Self = StObject.set(x, "getDayOfYear", js.Any.fromFunction0(value))
+      inline def setGetDayOfYear(value: () => Number): Self = StObject.set(x, "getDayOfYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHourOfDay(value: () => Number): Self = StObject.set(x, "getHourOfDay", js.Any.fromFunction0(value))
+      inline def setGetHourOfDay(value: () => Number): Self = StObject.set(x, "getHourOfDay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMilliSeconds(value: () => Number): Self = StObject.set(x, "getMilliSeconds", js.Any.fromFunction0(value))
+      inline def setGetMilliSeconds(value: () => Number): Self = StObject.set(x, "getMilliSeconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinutes(value: () => Number): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
+      inline def setGetMinutes(value: () => Number): Self = StObject.set(x, "getMinutes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMonth(value: () => Number): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
+      inline def setGetMonth(value: () => Number): Self = StObject.set(x, "getMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSeconds(value: () => Number): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
+      inline def setGetSeconds(value: () => Number): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTime(value: () => Number): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      inline def setGetTime(value: () => Number): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimezoneOffset(value: () => Number): Self = StObject.set(x, "getTimezoneOffset", js.Any.fromFunction0(value))
+      inline def setGetTimezoneOffset(value: () => Number): Self = StObject.set(x, "getTimezoneOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeekOfMonth(value: () => Number): Self = StObject.set(x, "getWeekOfMonth", js.Any.fromFunction0(value))
+      inline def setGetWeekOfMonth(value: () => Number): Self = StObject.set(x, "getWeekOfMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeekOfYear(value: () => Number): Self = StObject.set(x, "getWeekOfYear", js.Any.fromFunction0(value))
+      inline def setGetWeekOfYear(value: () => Number): Self = StObject.set(x, "getWeekOfYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeekYear(value: () => Number): Self = StObject.set(x, "getWeekYear", js.Any.fromFunction0(value))
+      inline def setGetWeekYear(value: () => Number): Self = StObject.set(x, "getWeekYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeeksInWeekYear(value: () => Number): Self = StObject.set(x, "getWeeksInWeekYear", js.Any.fromFunction0(value))
+      inline def setGetWeeksInWeekYear(value: () => Number): Self = StObject.set(x, "getWeeksInWeekYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetYear(value: () => Number): Self = StObject.set(x, "getYear", js.Any.fromFunction0(value))
+      inline def setGetYear(value: () => Number): Self = StObject.set(x, "getYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRollSetMonth(value: Number => Unit): Self = StObject.set(x, "rollSetMonth", js.Any.fromFunction1(value))
+      inline def setRollSetMonth(value: Number => Unit): Self = StObject.set(x, "rollSetMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (Number, Number, Number, Number, Number, Number, Number) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction7(value))
+      inline def setSet(value: (Number, Number, Number, Number, Number, Number, Number) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setSetDayOfMonth(value: Number => Unit): Self = StObject.set(x, "setDayOfMonth", js.Any.fromFunction1(value))
+      inline def setSetDayOfMonth(value: Number => Unit): Self = StObject.set(x, "setDayOfMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHourOfDay(value: Number => Unit): Self = StObject.set(x, "setHourOfDay", js.Any.fromFunction1(value))
+      inline def setSetHourOfDay(value: Number => Unit): Self = StObject.set(x, "setHourOfDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMilliSeconds(value: Number => Unit): Self = StObject.set(x, "setMilliSeconds", js.Any.fromFunction1(value))
+      inline def setSetMilliSeconds(value: Number => Unit): Self = StObject.set(x, "setMilliSeconds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinutes(value: Number => Unit): Self = StObject.set(x, "setMinutes", js.Any.fromFunction1(value))
+      inline def setSetMinutes(value: Number => Unit): Self = StObject.set(x, "setMinutes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMonth(value: Number => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
+      inline def setSetMonth(value: Number => Unit): Self = StObject.set(x, "setMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSeconds(value: Number => Unit): Self = StObject.set(x, "setSeconds", js.Any.fromFunction1(value))
+      inline def setSetSeconds(value: Number => Unit): Self = StObject.set(x, "setSeconds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTime(value: Number => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
+      inline def setSetTime(value: Number => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTimezoneOffset(value: Number => Unit): Self = StObject.set(x, "setTimezoneOffset", js.Any.fromFunction1(value))
+      inline def setSetTimezoneOffset(value: Number => Unit): Self = StObject.set(x, "setTimezoneOffset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWeekDate(value: (Number, Number, Number) => Unit): Self = StObject.set(x, "setWeekDate", js.Any.fromFunction3(value))
+      inline def setSetWeekDate(value: (Number, Number, Number) => Unit): Self = StObject.set(x, "setWeekDate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetYear(value: Number => Unit): Self = StObject.set(x, "setYear", js.Any.fromFunction1(value))
+      inline def setSetYear(value: Number => Unit): Self = StObject.set(x, "setYear", js.Any.fromFunction1(value))
     }
   }
 }

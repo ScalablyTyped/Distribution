@@ -40,8 +40,7 @@ trait XMetadatable
 }
 object XMetadatable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LocalName: String,
     MetadataReference: StringPair,
     Namespace: String,
@@ -52,13 +51,10 @@ object XMetadatable {
     __obj.asInstanceOf[XMetadatable]
   }
   
-  @scala.inline
-  implicit class XMetadatableMutableBuilder[Self <: XMetadatable] (val x: Self) extends AnyVal {
+  extension [Self <: XMetadatable](x: Self) {
     
-    @scala.inline
-    def setEnsureMetadataReference(value: () => Unit): Self = StObject.set(x, "ensureMetadataReference", js.Any.fromFunction0(value))
+    inline def setEnsureMetadataReference(value: () => Unit): Self = StObject.set(x, "ensureMetadataReference", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMetadataReference(value: StringPair): Self = StObject.set(x, "MetadataReference", value.asInstanceOf[js.Any])
+    inline def setMetadataReference(value: StringPair): Self = StObject.set(x, "MetadataReference", value.asInstanceOf[js.Any])
   }
 }

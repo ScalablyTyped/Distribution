@@ -24,8 +24,7 @@ trait Instance_ extends StObject {
 }
 object Instance_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: Events[js.Any],
     incomingWebhooks: IncomingWebhooks[js.Any],
     interactiveButtons: InteractiveButtons[js.Any],
@@ -39,31 +38,22 @@ object Instance_ {
     __obj.asInstanceOf[Instance_]
   }
   
-  @scala.inline
-  implicit class Instance_MutableBuilder[Self <: Instance_] (val x: Self) extends AnyVal {
+  extension [Self <: Instance_](x: Self) {
     
-    @scala.inline
-    def setEvents(value: Events[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Events[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomingWebhooks(value: IncomingWebhooks[js.Any]): Self = StObject.set(x, "incomingWebhooks", value.asInstanceOf[js.Any])
+    inline def setIncomingWebhooks(value: IncomingWebhooks[js.Any]): Self = StObject.set(x, "incomingWebhooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveButtons(value: InteractiveButtons[js.Any]): Self = StObject.set(x, "interactiveButtons", value.asInstanceOf[js.Any])
+    inline def setInteractiveButtons(value: InteractiveButtons[js.Any]): Self = StObject.set(x, "interactiveButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoingWebhooks(value: OutgoingWebhooks[js.Any]): Self = StObject.set(x, "outgoingWebhooks", value.asInstanceOf[js.Any])
+    inline def setOutgoingWebhooks(value: OutgoingWebhooks[js.Any]): Self = StObject.set(x, "outgoingWebhooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRtm(value: Rtm[js.Any]): Self = StObject.set(x, "rtm", value.asInstanceOf[js.Any])
+    inline def setRtm(value: Rtm[js.Any]): Self = StObject.set(x, "rtm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlashCommands(value: SlashCommands[js.Any]): Self = StObject.set(x, "slashCommands", value.asInstanceOf[js.Any])
+    inline def setSlashCommands(value: SlashCommands[js.Any]): Self = StObject.set(x, "slashCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeb(value: Web[js.Any]): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
+    inline def setWeb(value: Web[js.Any]): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
   }
 }

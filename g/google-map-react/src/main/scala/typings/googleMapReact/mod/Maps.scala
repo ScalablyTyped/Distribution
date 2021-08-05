@@ -56,8 +56,7 @@ trait Maps extends StObject {
 }
 object Maps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Animation: js.Any,
     ControlPosition: js.Any,
     DirectionsStatus: js.Any,
@@ -87,79 +86,54 @@ object Maps {
     __obj.asInstanceOf[Maps]
   }
   
-  @scala.inline
-  implicit class MapsMutableBuilder[Self <: Maps] (val x: Self) extends AnyVal {
+  extension [Self <: Maps](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: js.Any): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: js.Any): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPosition(value: js.Any): Self = StObject.set(x, "ControlPosition", value.asInstanceOf[js.Any])
+    inline def setControlPosition(value: js.Any): Self = StObject.set(x, "ControlPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsStatus(value: js.Any): Self = StObject.set(x, "DirectionsStatus", value.asInstanceOf[js.Any])
+    inline def setDirectionsStatus(value: js.Any): Self = StObject.set(x, "DirectionsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsTravelMode(value: js.Any): Self = StObject.set(x, "DirectionsTravelMode", value.asInstanceOf[js.Any])
+    inline def setDirectionsTravelMode(value: js.Any): Self = StObject.set(x, "DirectionsTravelMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsUnitSystem(value: js.Any): Self = StObject.set(x, "DirectionsUnitSystem", value.asInstanceOf[js.Any])
+    inline def setDirectionsUnitSystem(value: js.Any): Self = StObject.set(x, "DirectionsUnitSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceMatrixElementStatus(value: js.Any): Self = StObject.set(x, "DistanceMatrixElementStatus", value.asInstanceOf[js.Any])
+    inline def setDistanceMatrixElementStatus(value: js.Any): Self = StObject.set(x, "DistanceMatrixElementStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceMatrixStatus(value: js.Any): Self = StObject.set(x, "DistanceMatrixStatus", value.asInstanceOf[js.Any])
+    inline def setDistanceMatrixStatus(value: js.Any): Self = StObject.set(x, "DistanceMatrixStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationStatus(value: js.Any): Self = StObject.set(x, "ElevationStatus", value.asInstanceOf[js.Any])
+    inline def setElevationStatus(value: js.Any): Self = StObject.set(x, "ElevationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocoderLocationType(value: js.Any): Self = StObject.set(x, "GeocoderLocationType", value.asInstanceOf[js.Any])
+    inline def setGeocoderLocationType(value: js.Any): Self = StObject.set(x, "GeocoderLocationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocoderStatus(value: js.Any): Self = StObject.set(x, "GeocoderStatus", value.asInstanceOf[js.Any])
+    inline def setGeocoderStatus(value: js.Any): Self = StObject.set(x, "GeocoderStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmlLayerStats(value: js.Any): Self = StObject.set(x, "KmlLayerStats", value.asInstanceOf[js.Any])
+    inline def setKmlLayerStats(value: js.Any): Self = StObject.set(x, "KmlLayerStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapTypeControlStyle(value: js.Any): Self = StObject.set(x, "MapTypeControlStyle", value.asInstanceOf[js.Any])
+    inline def setMapTypeControlStyle(value: js.Any): Self = StObject.set(x, "MapTypeControlStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapTypeId(value: js.Any): Self = StObject.set(x, "MapTypeId", value.asInstanceOf[js.Any])
+    inline def setMapTypeId(value: js.Any): Self = StObject.set(x, "MapTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomStatus(value: js.Any): Self = StObject.set(x, "MaxZoomStatus", value.asInstanceOf[js.Any])
+    inline def setMaxZoomStatus(value: js.Any): Self = StObject.set(x, "MaxZoomStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationControlStyle(value: js.Any): Self = StObject.set(x, "NavigationControlStyle", value.asInstanceOf[js.Any])
+    inline def setNavigationControlStyle(value: js.Any): Self = StObject.set(x, "NavigationControlStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleControlStyle(value: js.Any): Self = StObject.set(x, "ScaleControlStyle", value.asInstanceOf[js.Any])
+    inline def setScaleControlStyle(value: js.Any): Self = StObject.set(x, "ScaleControlStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetViewStatus(value: js.Any): Self = StObject.set(x, "StreetViewStatus", value.asInstanceOf[js.Any])
+    inline def setStreetViewStatus(value: js.Any): Self = StObject.set(x, "StreetViewStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokePosition(value: js.Any): Self = StObject.set(x, "StrokePosition", value.asInstanceOf[js.Any])
+    inline def setStrokePosition(value: js.Any): Self = StObject.set(x, "StrokePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolPath(value: js.Any): Self = StObject.set(x, "SymbolPath", value.asInstanceOf[js.Any])
+    inline def setSymbolPath(value: js.Any): Self = StObject.set(x, "SymbolPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitMode(value: js.Any): Self = StObject.set(x, "TransitMode", value.asInstanceOf[js.Any])
+    inline def setTransitMode(value: js.Any): Self = StObject.set(x, "TransitMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitRoutePreference(value: js.Any): Self = StObject.set(x, "TransitRoutePreference", value.asInstanceOf[js.Any])
+    inline def setTransitRoutePreference(value: js.Any): Self = StObject.set(x, "TransitRoutePreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelMode(value: js.Any): Self = StObject.set(x, "TravelMode", value.asInstanceOf[js.Any])
+    inline def setTravelMode(value: js.Any): Self = StObject.set(x, "TravelMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitSystem(value: js.Any): Self = StObject.set(x, "UnitSystem", value.asInstanceOf[js.Any])
+    inline def setUnitSystem(value: js.Any): Self = StObject.set(x, "UnitSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomControlStyle(value: js.Any): Self = StObject.set(x, "ZoomControlStyle", value.asInstanceOf[js.Any])
+    inline def setZoomControlStyle(value: js.Any): Self = StObject.set(x, "ZoomControlStyle", value.asInstanceOf[js.Any])
   }
 }

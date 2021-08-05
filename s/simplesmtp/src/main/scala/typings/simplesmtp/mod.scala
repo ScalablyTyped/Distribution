@@ -57,16 +57,11 @@ object mod {
     var server: SMTPServer = js.native
   }
   
-  @scala.inline
-  def createSimpleServer(): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")().asInstanceOf[SimpleServer]
-  @scala.inline
-  def createSimpleServer(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(callback.asInstanceOf[js.Any]).asInstanceOf[SimpleServer]
-  @scala.inline
-  def createSimpleServer(options: Unit, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[SimpleServer]
-  @scala.inline
-  def createSimpleServer(options: SmtpServerOptions): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any]).asInstanceOf[SimpleServer]
-  @scala.inline
-  def createSimpleServer(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[SimpleServer]
+  inline def createSimpleServer(): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")().asInstanceOf[SimpleServer]
+  inline def createSimpleServer(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(callback.asInstanceOf[js.Any]).asInstanceOf[SimpleServer]
+  inline def createSimpleServer(options: Unit, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[SimpleServer]
+  inline def createSimpleServer(options: SmtpServerOptions): SimpleServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any]).asInstanceOf[SimpleServer]
+  inline def createSimpleServer(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleServer")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[SimpleServer]
   
   @js.native
   trait SimpleServerConnection
@@ -180,101 +175,70 @@ object mod {
   }
   object SmtpServerOptions {
     
-    @scala.inline
-    def apply(): SmtpServerOptions = {
+    inline def apply(): SmtpServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmtpServerOptions]
     }
     
-    @scala.inline
-    implicit class SmtpServerOptionsMutableBuilder[Self <: SmtpServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SmtpServerOptions](x: Self) {
       
-      @scala.inline
-      def setAuthMethods(value: js.Array[String]): Self = StObject.set(x, "authMethods", value.asInstanceOf[js.Any])
+      inline def setAuthMethods(value: js.Array[String]): Self = StObject.set(x, "authMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthMethodsUndefined: Self = StObject.set(x, "authMethods", js.undefined)
+      inline def setAuthMethodsUndefined: Self = StObject.set(x, "authMethods", js.undefined)
       
-      @scala.inline
-      def setAuthMethodsVarargs(value: String*): Self = StObject.set(x, "authMethods", js.Array(value :_*))
+      inline def setAuthMethodsVarargs(value: String*): Self = StObject.set(x, "authMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDisableDNSValidation(value: Boolean): Self = StObject.set(x, "disableDNSValidation", value.asInstanceOf[js.Any])
+      inline def setDisableDNSValidation(value: Boolean): Self = StObject.set(x, "disableDNSValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableDNSValidationUndefined: Self = StObject.set(x, "disableDNSValidation", js.undefined)
+      inline def setDisableDNSValidationUndefined: Self = StObject.set(x, "disableDNSValidation", js.undefined)
       
-      @scala.inline
-      def setDisableEHLO(value: Boolean): Self = StObject.set(x, "disableEHLO", value.asInstanceOf[js.Any])
+      inline def setDisableEHLO(value: Boolean): Self = StObject.set(x, "disableEHLO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEHLOUndefined: Self = StObject.set(x, "disableEHLO", js.undefined)
+      inline def setDisableEHLOUndefined: Self = StObject.set(x, "disableEHLO", js.undefined)
       
-      @scala.inline
-      def setEnableAuthentication(value: Boolean): Self = StObject.set(x, "enableAuthentication", value.asInstanceOf[js.Any])
+      inline def setEnableAuthentication(value: Boolean): Self = StObject.set(x, "enableAuthentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAuthenticationUndefined: Self = StObject.set(x, "enableAuthentication", js.undefined)
+      inline def setEnableAuthenticationUndefined: Self = StObject.set(x, "enableAuthentication", js.undefined)
       
-      @scala.inline
-      def setIgnoreTLS(value: Boolean): Self = StObject.set(x, "ignoreTLS", value.asInstanceOf[js.Any])
+      inline def setIgnoreTLS(value: Boolean): Self = StObject.set(x, "ignoreTLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTLSUndefined: Self = StObject.set(x, "ignoreTLS", js.undefined)
+      inline def setIgnoreTLSUndefined: Self = StObject.set(x, "ignoreTLS", js.undefined)
       
-      @scala.inline
-      def setMaxClients(value: Double): Self = StObject.set(x, "maxClients", value.asInstanceOf[js.Any])
+      inline def setMaxClients(value: Double): Self = StObject.set(x, "maxClients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxClientsUndefined: Self = StObject.set(x, "maxClients", js.undefined)
+      inline def setMaxClientsUndefined: Self = StObject.set(x, "maxClients", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRequireAuthentication(value: Boolean): Self = StObject.set(x, "requireAuthentication", value.asInstanceOf[js.Any])
+      inline def setRequireAuthentication(value: Boolean): Self = StObject.set(x, "requireAuthentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireAuthenticationUndefined: Self = StObject.set(x, "requireAuthentication", js.undefined)
+      inline def setRequireAuthenticationUndefined: Self = StObject.set(x, "requireAuthentication", js.undefined)
       
-      @scala.inline
-      def setSMTPBanner(value: String): Self = StObject.set(x, "SMTPBanner", value.asInstanceOf[js.Any])
+      inline def setSMTPBanner(value: String): Self = StObject.set(x, "SMTPBanner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMTPBannerUndefined: Self = StObject.set(x, "SMTPBanner", js.undefined)
+      inline def setSMTPBannerUndefined: Self = StObject.set(x, "SMTPBanner", js.undefined)
       
-      @scala.inline
-      def setSecureConnection(value: Boolean): Self = StObject.set(x, "secureConnection", value.asInstanceOf[js.Any])
+      inline def setSecureConnection(value: Boolean): Self = StObject.set(x, "secureConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureConnectionUndefined: Self = StObject.set(x, "secureConnection", js.undefined)
+      inline def setSecureConnectionUndefined: Self = StObject.set(x, "secureConnection", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

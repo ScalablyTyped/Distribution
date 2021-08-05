@@ -75,32 +75,24 @@ object Scroller {
   }
   object CreateEventArgs {
     
-    @scala.inline
-    def apply(): CreateEventArgs = {
+    inline def apply(): CreateEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    @scala.inline
-    implicit class CreateEventArgsMutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CreateEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -116,26 +108,20 @@ object Scroller {
   }
   object DestroyEventArgs {
     
-    @scala.inline
-    def apply(): DestroyEventArgs = {
+    inline def apply(): DestroyEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    @scala.inline
-    implicit class DestroyEventArgsMutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DestroyEventArgs](x: Self) {
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -245,146 +231,100 @@ object Scroller {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.Scroller.Model = {
+    inline def apply(): typings.ejWebAll.ej.Scroller.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.Scroller.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.Scroller.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.Scroller.Model](x: Self) {
       
-      @scala.inline
-      def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
+      inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
+      inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
       
-      @scala.inline
-      def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
+      inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
+      inline def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
       
-      @scala.inline
-      def setButtonSize(value: Double): Self = StObject.set(x, "buttonSize", value.asInstanceOf[js.Any])
+      inline def setButtonSize(value: Double): Self = StObject.set(x, "buttonSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonSizeUndefined: Self = StObject.set(x, "buttonSize", js.undefined)
+      inline def setButtonSizeUndefined: Self = StObject.set(x, "buttonSize", js.undefined)
       
-      @scala.inline
-      def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setEnablePersistence(value: Boolean): Self = StObject.set(x, "enablePersistence", value.asInstanceOf[js.Any])
+      inline def setEnablePersistence(value: Boolean): Self = StObject.set(x, "enablePersistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePersistenceUndefined: Self = StObject.set(x, "enablePersistence", js.undefined)
+      inline def setEnablePersistenceUndefined: Self = StObject.set(x, "enablePersistence", js.undefined)
       
-      @scala.inline
-      def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
+      inline def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
+      inline def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
       
-      @scala.inline
-      def setEnableTouchScroll(value: Boolean): Self = StObject.set(x, "enableTouchScroll", value.asInstanceOf[js.Any])
+      inline def setEnableTouchScroll(value: Boolean): Self = StObject.set(x, "enableTouchScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTouchScrollUndefined: Self = StObject.set(x, "enableTouchScroll", js.undefined)
+      inline def setEnableTouchScrollUndefined: Self = StObject.set(x, "enableTouchScroll", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+      inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
       
-      @scala.inline
-      def setScrollOneStepBy(value: Double): Self = StObject.set(x, "scrollOneStepBy", value.asInstanceOf[js.Any])
+      inline def setScrollOneStepBy(value: Double): Self = StObject.set(x, "scrollOneStepBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollOneStepByUndefined: Self = StObject.set(x, "scrollOneStepBy", js.undefined)
+      inline def setScrollOneStepByUndefined: Self = StObject.set(x, "scrollOneStepBy", js.undefined)
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+      inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
       
-      @scala.inline
-      def setScrollerSize(value: Double): Self = StObject.set(x, "scrollerSize", value.asInstanceOf[js.Any])
+      inline def setScrollerSize(value: Double): Self = StObject.set(x, "scrollerSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollerSizeUndefined: Self = StObject.set(x, "scrollerSize", js.undefined)
+      inline def setScrollerSizeUndefined: Self = StObject.set(x, "scrollerSize", js.undefined)
       
-      @scala.inline
-      def setTargetPane(value: String): Self = StObject.set(x, "targetPane", value.asInstanceOf[js.Any])
+      inline def setTargetPane(value: String): Self = StObject.set(x, "targetPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetPaneUndefined: Self = StObject.set(x, "targetPane", js.undefined)
+      inline def setTargetPaneUndefined: Self = StObject.set(x, "targetPane", js.undefined)
       
-      @scala.inline
-      def setThumbEnd(value: /* e */ ThumbEndEventArgs => Unit): Self = StObject.set(x, "thumbEnd", js.Any.fromFunction1(value))
+      inline def setThumbEnd(value: /* e */ ThumbEndEventArgs => Unit): Self = StObject.set(x, "thumbEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThumbEndUndefined: Self = StObject.set(x, "thumbEnd", js.undefined)
+      inline def setThumbEndUndefined: Self = StObject.set(x, "thumbEnd", js.undefined)
       
-      @scala.inline
-      def setThumbMove(value: /* e */ ThumbMoveEventArgs => Unit): Self = StObject.set(x, "thumbMove", js.Any.fromFunction1(value))
+      inline def setThumbMove(value: /* e */ ThumbMoveEventArgs => Unit): Self = StObject.set(x, "thumbMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThumbMoveUndefined: Self = StObject.set(x, "thumbMove", js.undefined)
+      inline def setThumbMoveUndefined: Self = StObject.set(x, "thumbMove", js.undefined)
       
-      @scala.inline
-      def setThumbStart(value: /* e */ ThumbStartEventArgs => Unit): Self = StObject.set(x, "thumbStart", js.Any.fromFunction1(value))
+      inline def setThumbStart(value: /* e */ ThumbStartEventArgs => Unit): Self = StObject.set(x, "thumbStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThumbStartUndefined: Self = StObject.set(x, "thumbStart", js.undefined)
+      inline def setThumbStartUndefined: Self = StObject.set(x, "thumbStart", js.undefined)
       
-      @scala.inline
-      def setWheelMove(value: /* e */ WheelMoveEventArgs => Unit): Self = StObject.set(x, "wheelMove", js.Any.fromFunction1(value))
+      inline def setWheelMove(value: /* e */ WheelMoveEventArgs => Unit): Self = StObject.set(x, "wheelMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWheelMoveUndefined: Self = StObject.set(x, "wheelMove", js.undefined)
+      inline def setWheelMoveUndefined: Self = StObject.set(x, "wheelMove", js.undefined)
       
-      @scala.inline
-      def setWheelStart(value: /* e */ WheelStartEventArgs => Unit): Self = StObject.set(x, "wheelStart", js.Any.fromFunction1(value))
+      inline def setWheelStart(value: /* e */ WheelStartEventArgs => Unit): Self = StObject.set(x, "wheelStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWheelStartUndefined: Self = StObject.set(x, "wheelStart", js.undefined)
+      inline def setWheelStartUndefined: Self = StObject.set(x, "wheelStart", js.undefined)
       
-      @scala.inline
-      def setWheelStop(value: /* e */ WheelStopEventArgs => Unit): Self = StObject.set(x, "wheelStop", js.Any.fromFunction1(value))
+      inline def setWheelStop(value: /* e */ WheelStopEventArgs => Unit): Self = StObject.set(x, "wheelStop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWheelStopUndefined: Self = StObject.set(x, "wheelStop", js.undefined)
+      inline def setWheelStopUndefined: Self = StObject.set(x, "wheelStop", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -412,44 +352,32 @@ object Scroller {
   }
   object ThumbEndEventArgs {
     
-    @scala.inline
-    def apply(): ThumbEndEventArgs = {
+    inline def apply(): ThumbEndEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThumbEndEventArgs]
     }
     
-    @scala.inline
-    implicit class ThumbEndEventArgsMutableBuilder[Self <: ThumbEndEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbEndEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
+      inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -477,44 +405,32 @@ object Scroller {
   }
   object ThumbMoveEventArgs {
     
-    @scala.inline
-    def apply(): ThumbMoveEventArgs = {
+    inline def apply(): ThumbMoveEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThumbMoveEventArgs]
     }
     
-    @scala.inline
-    implicit class ThumbMoveEventArgsMutableBuilder[Self <: ThumbMoveEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbMoveEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
+      inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -542,44 +458,32 @@ object Scroller {
   }
   object ThumbStartEventArgs {
     
-    @scala.inline
-    def apply(): ThumbStartEventArgs = {
+    inline def apply(): ThumbStartEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThumbStartEventArgs]
     }
     
-    @scala.inline
-    implicit class ThumbStartEventArgsMutableBuilder[Self <: ThumbStartEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ThumbStartEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
+      inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -599,32 +503,24 @@ object Scroller {
   }
   object WheelMoveEventArgs {
     
-    @scala.inline
-    def apply(): WheelMoveEventArgs = {
+    inline def apply(): WheelMoveEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WheelMoveEventArgs]
     }
     
-    @scala.inline
-    implicit class WheelMoveEventArgsMutableBuilder[Self <: WheelMoveEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WheelMoveEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
   }
   
@@ -652,44 +548,32 @@ object Scroller {
   }
   object WheelStartEventArgs {
     
-    @scala.inline
-    def apply(): WheelStartEventArgs = {
+    inline def apply(): WheelStartEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WheelStartEventArgs]
     }
     
-    @scala.inline
-    implicit class WheelStartEventArgsMutableBuilder[Self <: WheelStartEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WheelStartEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
+      inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -713,38 +597,28 @@ object Scroller {
   }
   object WheelStopEventArgs {
     
-    @scala.inline
-    def apply(): WheelStopEventArgs = {
+    inline def apply(): WheelStopEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WheelStopEventArgs]
     }
     
-    @scala.inline
-    implicit class WheelStopEventArgsMutableBuilder[Self <: WheelStopEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WheelStopEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

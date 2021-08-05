@@ -13,8 +13,6 @@ object drawerRouterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any]): GetActionCreators = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[GetActionCreators]
-  @scala.inline
-  def default(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any], config: InitialRouteName): GetActionCreators = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetActionCreators]
+  inline def default(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any]): GetActionCreators = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[GetActionCreators]
+  inline def default(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any], config: InitialRouteName): GetActionCreators = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetActionCreators]
 }

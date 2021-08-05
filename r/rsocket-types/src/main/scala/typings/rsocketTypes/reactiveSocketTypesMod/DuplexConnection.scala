@@ -57,8 +57,7 @@ trait DuplexConnection extends StObject {
 }
 object DuplexConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     connect: () => Unit,
     connectionStatus: () => Flowable[ConnectionStatus],
@@ -70,25 +69,18 @@ object DuplexConnection {
     __obj.asInstanceOf[DuplexConnection]
   }
   
-  @scala.inline
-  implicit class DuplexConnectionMutableBuilder[Self <: DuplexConnection] (val x: Self) extends AnyVal {
+  extension [Self <: DuplexConnection](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+    inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConnectionStatus(value: () => Flowable[ConnectionStatus]): Self = StObject.set(x, "connectionStatus", js.Any.fromFunction0(value))
+    inline def setConnectionStatus(value: () => Flowable[ConnectionStatus]): Self = StObject.set(x, "connectionStatus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReceive(value: () => Flowable[Frame]): Self = StObject.set(x, "receive", js.Any.fromFunction0(value))
+    inline def setReceive(value: () => Flowable[Frame]): Self = StObject.set(x, "receive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSend(value: Flowable[Frame] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: Flowable[Frame] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendOne(value: Frame => Unit): Self = StObject.set(x, "sendOne", js.Any.fromFunction1(value))
+    inline def setSendOne(value: Frame => Unit): Self = StObject.set(x, "sendOne", js.Any.fromFunction1(value))
   }
 }

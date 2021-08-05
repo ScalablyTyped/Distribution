@@ -18,28 +18,21 @@ trait GetBundlesResult extends StObject {
 }
 object GetBundlesResult {
   
-  @scala.inline
-  def apply(): GetBundlesResult = {
+  inline def apply(): GetBundlesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBundlesResult]
   }
   
-  @scala.inline
-  implicit class GetBundlesResultMutableBuilder[Self <: GetBundlesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBundlesResult](x: Self) {
     
-    @scala.inline
-    def setBundles(value: BundleList): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+    inline def setBundles(value: BundleList): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
+    inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    @scala.inline
-    def setBundlesVarargs(value: Bundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: Bundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

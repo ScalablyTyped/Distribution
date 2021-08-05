@@ -13,22 +13,17 @@ trait ModifyRuleOutput extends StObject {
 }
 object ModifyRuleOutput {
   
-  @scala.inline
-  def apply(): ModifyRuleOutput = {
+  inline def apply(): ModifyRuleOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyRuleOutput]
   }
   
-  @scala.inline
-  implicit class ModifyRuleOutputMutableBuilder[Self <: ModifyRuleOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyRuleOutput](x: Self) {
     
-    @scala.inline
-    def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

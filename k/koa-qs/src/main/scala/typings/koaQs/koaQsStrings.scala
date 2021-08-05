@@ -11,20 +11,17 @@ object koaQsStrings {
   sealed trait extended
     extends StObject
        with ParseMode
-  @scala.inline
-  def extended: extended = "extended".asInstanceOf[extended]
+  inline def extended: extended = "extended".asInstanceOf[extended]
   
   @js.native
   sealed trait first
     extends StObject
        with ParseMode
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait strict
     extends StObject
        with ParseMode
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  inline def strict: strict = "strict".asInstanceOf[strict]
 }

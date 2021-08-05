@@ -13,8 +13,7 @@ object filePickerButtonDotUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filePickerButtonUniDriverFactory(base: UniDriver[js.Any]): FilePickerButtonUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("filePickerButtonUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[FilePickerButtonUniDriver]
+  inline def filePickerButtonUniDriverFactory(base: UniDriver[js.Any]): FilePickerButtonUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("filePickerButtonUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[FilePickerButtonUniDriver]
   
   trait FilePickerButtonUniDriver
     extends StObject
@@ -34,8 +33,7 @@ object filePickerButtonDotUniDriverMod {
   }
   object FilePickerButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -50,26 +48,19 @@ object filePickerButtonDotUniDriverMod {
       __obj.asInstanceOf[FilePickerButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class FilePickerButtonUniDriverMutableBuilder[Self <: FilePickerButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FilePickerButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetAccept(value: () => js.Promise[String]): Self = StObject.set(x, "getAccept", js.Any.fromFunction0(value))
+      inline def setGetAccept(value: () => js.Promise[String]): Self = StObject.set(x, "getAccept", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContent(value: () => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
+      inline def setIsRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectFile(value: PartialFile => js.Promise[Unit]): Self = StObject.set(x, "selectFile", js.Any.fromFunction1(value))
+      inline def setSelectFile(value: PartialFile => js.Promise[Unit]): Self = StObject.set(x, "selectFile", js.Any.fromFunction1(value))
     }
   }
 }

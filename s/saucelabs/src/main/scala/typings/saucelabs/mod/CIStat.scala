@@ -15,22 +15,17 @@ trait CIStat
 }
 object CIStat {
   
-  @scala.inline
-  def apply(platform: String): CIStat = {
+  inline def apply(platform: String): CIStat = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIStat]
   }
   
-  @scala.inline
-  implicit class CIStatMutableBuilder[Self <: CIStat] (val x: Self) extends AnyVal {
+  extension [Self <: CIStat](x: Self) {
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform_version(value: String): Self = StObject.set(x, "platform_version", value.asInstanceOf[js.Any])
+    inline def setPlatform_version(value: String): Self = StObject.set(x, "platform_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform_versionUndefined: Self = StObject.set(x, "platform_version", js.undefined)
+    inline def setPlatform_versionUndefined: Self = StObject.set(x, "platform_version", js.undefined)
   }
 }

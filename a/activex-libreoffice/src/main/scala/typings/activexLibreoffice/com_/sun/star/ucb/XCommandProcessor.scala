@@ -60,8 +60,7 @@ trait XCommandProcessor
 }
 object XCommandProcessor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: Double => Unit,
     acquire: () => Unit,
     createCommandIdentifier: () => Double,
@@ -73,16 +72,12 @@ object XCommandProcessor {
     __obj.asInstanceOf[XCommandProcessor]
   }
   
-  @scala.inline
-  implicit class XCommandProcessorMutableBuilder[Self <: XCommandProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: XCommandProcessor](x: Self) {
     
-    @scala.inline
-    def setAbort(value: Double => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+    inline def setAbort(value: Double => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCommandIdentifier(value: () => Double): Self = StObject.set(x, "createCommandIdentifier", js.Any.fromFunction0(value))
+    inline def setCreateCommandIdentifier(value: () => Double): Self = StObject.set(x, "createCommandIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecute(value: (Command, Double, XCommandEnvironment) => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (Command, Double, XCommandEnvironment) => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }
 }

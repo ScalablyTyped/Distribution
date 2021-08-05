@@ -69,9 +69,9 @@ object virtualScrollMod {
     def checkRange(offset: Double): Unit = js.native
     def checkRange(offset: Double, len: Double): Unit = js.native
     
-    var differ: js.Any = js.native
+    /* private */ var differ: js.Any = js.native
     
-    var el: js.Any = js.native
+    /* private */ var el: js.Any = js.native
     
     /**
       * Section footers and the data used within its given
@@ -89,7 +89,7 @@ object virtualScrollMod {
     
     var ftrTmp: VirtualFooter = js.native
     
-    var getComponent: js.Any = js.native
+    /* private */ var getComponent: js.Any = js.native
     
     var hdrTmp: VirtualHeader = js.native
     
@@ -128,7 +128,7 @@ object virtualScrollMod {
       */
     var items: js.UndefOr[js.Array[js.Any]] = js.native
     
-    var iterableDiffers: js.Any = js.native
+    /* private */ var iterableDiffers: js.Any = js.native
     
     var itmTmp: VirtualItem = js.native
     
@@ -136,14 +136,14 @@ object virtualScrollMod {
     
     def ngOnChanges(changes: SimpleChanges): Unit = js.native
     
-    var nodeRender: js.Any = js.native
+    /* private */ var nodeRender: js.Any = js.native
     
     /**
       * Returns the position of the virtual item at the given index.
       */
     def positionForItem(index: Double): js.Promise[Double] = js.native
     
-    var refMap: js.Any = js.native
+    /* private */ var refMap: js.Any = js.native
     
     /**
       * Same as `ngForTrackBy` which can be used on `ngFor`.
@@ -155,6 +155,6 @@ object virtualScrollMod {
     @JSName("trackBy")
     var trackBy_Original: TrackByFunction[js.Any] = js.native
     
-    var z: js.Any = js.native
+    /* private */ var z: js.Any = js.native
   }
 }

@@ -23,31 +23,23 @@ trait UpdateGroupCertificateConfigurationResponse extends StObject {
 }
 object UpdateGroupCertificateConfigurationResponse {
   
-  @scala.inline
-  def apply(): UpdateGroupCertificateConfigurationResponse = {
+  inline def apply(): UpdateGroupCertificateConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGroupCertificateConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class UpdateGroupCertificateConfigurationResponseMutableBuilder[Self <: UpdateGroupCertificateConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGroupCertificateConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateAuthorityExpiryInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateAuthorityExpiryInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateAuthorityExpiryInMilliseconds", js.undefined)
+    inline def setCertificateAuthorityExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateAuthorityExpiryInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setCertificateExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateExpiryInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setCertificateExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateExpiryInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateExpiryInMilliseconds", js.undefined)
+    inline def setCertificateExpiryInMillisecondsUndefined: Self = StObject.set(x, "CertificateExpiryInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
   }
 }

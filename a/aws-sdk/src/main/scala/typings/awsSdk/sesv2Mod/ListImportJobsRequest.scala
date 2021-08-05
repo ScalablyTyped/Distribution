@@ -23,31 +23,23 @@ trait ListImportJobsRequest extends StObject {
 }
 object ListImportJobsRequest {
   
-  @scala.inline
-  def apply(): ListImportJobsRequest = {
+  inline def apply(): ListImportJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListImportJobsRequest]
   }
   
-  @scala.inline
-  implicit class ListImportJobsRequestMutableBuilder[Self <: ListImportJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListImportJobsRequest](x: Self) {
     
-    @scala.inline
-    def setImportDestinationType(value: ImportDestinationType): Self = StObject.set(x, "ImportDestinationType", value.asInstanceOf[js.Any])
+    inline def setImportDestinationType(value: ImportDestinationType): Self = StObject.set(x, "ImportDestinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportDestinationTypeUndefined: Self = StObject.set(x, "ImportDestinationType", js.undefined)
+    inline def setImportDestinationTypeUndefined: Self = StObject.set(x, "ImportDestinationType", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

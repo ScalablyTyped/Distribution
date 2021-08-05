@@ -16,31 +16,23 @@ trait PartialStyleRulesSnackbarAction extends StObject {
 }
 object PartialStyleRulesSnackbarAction {
   
-  @scala.inline
-  def apply(): PartialStyleRulesSnackbarAction = {
+  inline def apply(): PartialStyleRulesSnackbarAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesSnackbarAction]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesSnackbarActionMutableBuilder[Self <: PartialStyleRulesSnackbarAction] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesSnackbarAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: CSSProperties): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: CSSProperties): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setMessage(value: CSSProperties): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: CSSProperties): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

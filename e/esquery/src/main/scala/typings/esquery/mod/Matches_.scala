@@ -15,17 +15,14 @@ trait Matches_
 }
 object Matches_ {
   
-  @scala.inline
-  def apply(selectors: js.Array[SubjectSelector]): Matches_ = {
+  inline def apply(selectors: js.Array[SubjectSelector]): Matches_ = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("matches")
     __obj.asInstanceOf[Matches_]
   }
   
-  @scala.inline
-  implicit class Matches_MutableBuilder[Self <: Matches_] (val x: Self) extends AnyVal {
+  extension [Self <: Matches_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.esquery.esqueryStrings.matches): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.esquery.esqueryStrings.matches): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

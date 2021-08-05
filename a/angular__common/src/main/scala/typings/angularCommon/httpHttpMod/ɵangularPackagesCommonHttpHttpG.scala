@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ɵangularPackagesCommonHttpHttpG protected () extends HttpXsrfTokenExtractor {
   def this(doc: js.Any, platform: String, cookieName: String) = this()
   
-  var cookieName: js.Any = js.native
+  /* private */ var cookieName: js.Any = js.native
   
-  var doc: js.Any = js.native
+  /* private */ var doc: js.Any = js.native
   
-  var lastCookieString: js.Any = js.native
+  /* private */ var lastCookieString: js.Any = js.native
   
-  var lastToken: js.Any = js.native
+  /* private */ var lastToken: js.Any = js.native
   
-  var platform: js.Any = js.native
+  /* private */ var platform: js.Any = js.native
 }

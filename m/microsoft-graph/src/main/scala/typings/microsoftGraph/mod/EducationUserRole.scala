@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EducationUserRole extends StObject
 object EducationUserRole {
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def student: typings.microsoftGraph.microsoftGraphStrings.student = "student".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.student]
+  inline def student: typings.microsoftGraph.microsoftGraphStrings.student = "student".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.student]
   
-  @scala.inline
-  def teacher: typings.microsoftGraph.microsoftGraphStrings.teacher = "teacher".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.teacher]
+  inline def teacher: typings.microsoftGraph.microsoftGraphStrings.teacher = "teacher".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.teacher]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

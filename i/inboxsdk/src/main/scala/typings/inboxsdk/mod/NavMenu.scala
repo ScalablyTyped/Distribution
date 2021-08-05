@@ -21,21 +21,17 @@ object NavMenu {
   }
   object CreateAccessoryDescriptor {
     
-    @scala.inline
-    def apply(onClick: () => Unit): CreateAccessoryDescriptor = {
+    inline def apply(onClick: () => Unit): CreateAccessoryDescriptor = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick))
       __obj.updateDynamic("type")("CREATE")
       __obj.asInstanceOf[CreateAccessoryDescriptor]
     }
     
-    @scala.inline
-    implicit class CreateAccessoryDescriptorMutableBuilder[Self <: CreateAccessoryDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: CreateAccessoryDescriptor](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: CREATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CREATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,8 +47,7 @@ object NavMenu {
   }
   object DropdownButtonAccessoryDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buttonBackgroundColor: String,
       buttonForegroundColor: String,
       onClick: DropdownButtonClickEvent => Unit
@@ -62,20 +57,15 @@ object NavMenu {
       __obj.asInstanceOf[DropdownButtonAccessoryDescriptor]
     }
     
-    @scala.inline
-    implicit class DropdownButtonAccessoryDescriptorMutableBuilder[Self <: DropdownButtonAccessoryDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownButtonAccessoryDescriptor](x: Self) {
       
-      @scala.inline
-      def setButtonBackgroundColor(value: String): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setButtonBackgroundColor(value: String): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonForegroundColor(value: String): Self = StObject.set(x, "buttonForegroundColor", value.asInstanceOf[js.Any])
+      inline def setButtonForegroundColor(value: String): Self = StObject.set(x, "buttonForegroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: DropdownButtonClickEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: DropdownButtonClickEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: DROPDOWN_BUTTON): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DROPDOWN_BUTTON): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,17 +75,14 @@ object NavMenu {
   }
   object DropdownButtonClickEvent {
     
-    @scala.inline
-    def apply(dropdown: DropdownView): DropdownButtonClickEvent = {
+    inline def apply(dropdown: DropdownView): DropdownButtonClickEvent = {
       val __obj = js.Dynamic.literal(dropdown = dropdown.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropdownButtonClickEvent]
     }
     
-    @scala.inline
-    implicit class DropdownButtonClickEventMutableBuilder[Self <: DropdownButtonClickEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownButtonClickEvent](x: Self) {
       
-      @scala.inline
-      def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+      inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,30 +98,23 @@ object NavMenu {
   }
   object IconButtonAccessoryDescriptor {
     
-    @scala.inline
-    def apply(iconUrl: String, onClick: () => Unit): IconButtonAccessoryDescriptor = {
+    inline def apply(iconUrl: String, onClick: () => Unit): IconButtonAccessoryDescriptor = {
       val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick))
       __obj.updateDynamic("type")("ICON_BUTTON")
       __obj.asInstanceOf[IconButtonAccessoryDescriptor]
     }
     
-    @scala.inline
-    implicit class IconButtonAccessoryDescriptorMutableBuilder[Self <: IconButtonAccessoryDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: IconButtonAccessoryDescriptor](x: Self) {
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: ICON_BUTTON): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ICON_BUTTON): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,14 +125,12 @@ object NavMenu {
   trait NavItemDescriptor extends StObject
   object NavItemDescriptor {
     
-    @scala.inline
-    def NavItemIconHtmlDescriptor(name: String): typings.inboxsdk.mod.NavMenu.NavItemIconHtmlDescriptor = {
+    inline def NavItemIconHtmlDescriptor(name: String): typings.inboxsdk.mod.NavMenu.NavItemIconHtmlDescriptor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.inboxsdk.mod.NavMenu.NavItemIconHtmlDescriptor]
     }
     
-    @scala.inline
-    def NavItemIconUrlDescriptor(name: String): typings.inboxsdk.mod.NavMenu.NavItemIconUrlDescriptor = {
+    inline def NavItemIconUrlDescriptor(name: String): typings.inboxsdk.mod.NavMenu.NavItemIconUrlDescriptor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.inboxsdk.mod.NavMenu.NavItemIconUrlDescriptor]
     }
@@ -182,67 +160,48 @@ object NavMenu {
   }
   object NavItemDescriptorBase {
     
-    @scala.inline
-    def apply(name: String): NavItemDescriptorBase = {
+    inline def apply(name: String): NavItemDescriptorBase = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavItemDescriptorBase]
     }
     
-    @scala.inline
-    implicit class NavItemDescriptorBaseMutableBuilder[Self <: NavItemDescriptorBase] (val x: Self) extends AnyVal {
+    extension [Self <: NavItemDescriptorBase](x: Self) {
       
-      @scala.inline
-      def setAccessory(
+      inline def setAccessory(
         value: CreateAccessoryDescriptor | IconButtonAccessoryDescriptor | DropdownButtonAccessoryDescriptor
       ): Self = StObject.set(x, "accessory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessoryUndefined: Self = StObject.set(x, "accessory", js.undefined)
+      inline def setAccessoryUndefined: Self = StObject.set(x, "accessory", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setExpanderForegroundColor(value: String): Self = StObject.set(x, "expanderForegroundColor", value.asInstanceOf[js.Any])
+      inline def setExpanderForegroundColor(value: String): Self = StObject.set(x, "expanderForegroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanderForegroundColorUndefined: Self = StObject.set(x, "expanderForegroundColor", js.undefined)
+      inline def setExpanderForegroundColorUndefined: Self = StObject.set(x, "expanderForegroundColor", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: /* event */ PreventDefault => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ PreventDefault => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+      inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+      inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
       
-      @scala.inline
-      def setRouteID(value: String): Self = StObject.set(x, "routeID", value.asInstanceOf[js.Any])
+      inline def setRouteID(value: String): Self = StObject.set(x, "routeID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteIDUndefined: Self = StObject.set(x, "routeID", js.undefined)
+      inline def setRouteIDUndefined: Self = StObject.set(x, "routeID", js.undefined)
       
-      @scala.inline
-      def setRouteParams(value: js.Object): Self = StObject.set(x, "routeParams", value.asInstanceOf[js.Any])
+      inline def setRouteParams(value: js.Object): Self = StObject.set(x, "routeParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteParamsUndefined: Self = StObject.set(x, "routeParams", js.undefined)
+      inline def setRouteParamsUndefined: Self = StObject.set(x, "routeParams", js.undefined)
       
-      @scala.inline
-      def setType(value: NavItemTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NavItemTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -255,20 +214,16 @@ object NavMenu {
   }
   object NavItemIconHtmlDescriptor {
     
-    @scala.inline
-    def apply(name: String): NavItemIconHtmlDescriptor = {
+    inline def apply(name: String): NavItemIconHtmlDescriptor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavItemIconHtmlDescriptor]
     }
     
-    @scala.inline
-    implicit class NavItemIconHtmlDescriptorMutableBuilder[Self <: NavItemIconHtmlDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: NavItemIconHtmlDescriptor](x: Self) {
       
-      @scala.inline
-      def setIconElement(value: HTMLElement): Self = StObject.set(x, "iconElement", value.asInstanceOf[js.Any])
+      inline def setIconElement(value: HTMLElement): Self = StObject.set(x, "iconElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconElementUndefined: Self = StObject.set(x, "iconElement", js.undefined)
+      inline def setIconElementUndefined: Self = StObject.set(x, "iconElement", js.undefined)
     }
   }
   
@@ -283,26 +238,20 @@ object NavMenu {
   }
   object NavItemIconUrlDescriptor {
     
-    @scala.inline
-    def apply(name: String): NavItemIconUrlDescriptor = {
+    inline def apply(name: String): NavItemIconUrlDescriptor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavItemIconUrlDescriptor]
     }
     
-    @scala.inline
-    implicit class NavItemIconUrlDescriptorMutableBuilder[Self <: NavItemIconUrlDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: NavItemIconUrlDescriptor](x: Self) {
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     }
   }
   
@@ -313,11 +262,9 @@ object NavMenu {
   trait NavItemTypes extends StObject
   object NavItemTypes {
     
-    @scala.inline
-    def LINK: typings.inboxsdk.inboxsdkStrings.LINK = "LINK".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LINK]
+    inline def LINK: typings.inboxsdk.inboxsdkStrings.LINK = "LINK".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LINK]
     
-    @scala.inline
-    def NAVIGATION: typings.inboxsdk.inboxsdkStrings.NAVIGATION = "NAVIGATION".asInstanceOf[typings.inboxsdk.inboxsdkStrings.NAVIGATION]
+    inline def NAVIGATION: typings.inboxsdk.inboxsdkStrings.NAVIGATION = "NAVIGATION".asInstanceOf[typings.inboxsdk.inboxsdkStrings.NAVIGATION]
   }
   
   trait NavItemView extends StObject {
@@ -337,8 +284,7 @@ object NavMenu {
   }
   object NavItemView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addNavItem: NavItemDescriptor => NavItemView,
       destroyed: Boolean,
       isCollapsed: () => Boolean,
@@ -350,26 +296,19 @@ object NavMenu {
       __obj.asInstanceOf[NavItemView]
     }
     
-    @scala.inline
-    implicit class NavItemViewMutableBuilder[Self <: NavItemView] (val x: Self) extends AnyVal {
+    extension [Self <: NavItemView](x: Self) {
       
-      @scala.inline
-      def setAddNavItem(value: NavItemDescriptor => NavItemView): Self = StObject.set(x, "addNavItem", js.Any.fromFunction1(value))
+      inline def setAddNavItem(value: NavItemDescriptor => NavItemView): Self = StObject.set(x, "addNavItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
+      inline def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCollapsed(value: Boolean => Unit): Self = StObject.set(x, "setCollapsed", js.Any.fromFunction1(value))
+      inline def setSetCollapsed(value: Boolean => Unit): Self = StObject.set(x, "setCollapsed", js.Any.fromFunction1(value))
     }
   }
   
@@ -379,17 +318,14 @@ object NavMenu {
   }
   object NavMenuInstance {
     
-    @scala.inline
-    def apply(addNavItem: NavItemDescriptor => NavItemView): NavMenuInstance = {
+    inline def apply(addNavItem: NavItemDescriptor => NavItemView): NavMenuInstance = {
       val __obj = js.Dynamic.literal(addNavItem = js.Any.fromFunction1(addNavItem))
       __obj.asInstanceOf[NavMenuInstance]
     }
     
-    @scala.inline
-    implicit class NavMenuInstanceMutableBuilder[Self <: NavMenuInstance] (val x: Self) extends AnyVal {
+    extension [Self <: NavMenuInstance](x: Self) {
       
-      @scala.inline
-      def setAddNavItem(value: NavItemDescriptor => NavItemView): Self = StObject.set(x, "addNavItem", js.Any.fromFunction1(value))
+      inline def setAddNavItem(value: NavItemDescriptor => NavItemView): Self = StObject.set(x, "addNavItem", js.Any.fromFunction1(value))
     }
   }
 }

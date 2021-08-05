@@ -14,7 +14,7 @@ trait ToOrFromRuleCondition extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Outlook.ToOrFromRuleCondition_typekey")
+  /* private */ @JSName("Outlook.ToOrFromRuleCondition_typekey")
   var OutlookDotToOrFromRuleCondition_typekey: ToOrFromRuleCondition
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait ToOrFromRuleCondition extends StObject {
 }
 object ToOrFromRuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
@@ -41,31 +40,22 @@ object ToOrFromRuleCondition {
     __obj.asInstanceOf[ToOrFromRuleCondition]
   }
   
-  @scala.inline
-  implicit class ToOrFromRuleConditionMutableBuilder[Self <: ToOrFromRuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ToOrFromRuleCondition](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotToOrFromRuleCondition_typekey(value: ToOrFromRuleCondition): Self = StObject.set(x, "Outlook.ToOrFromRuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotToOrFromRuleCondition_typekey(value: ToOrFromRuleCondition): Self = StObject.set(x, "Outlook.ToOrFromRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipients(value: Recipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: Recipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

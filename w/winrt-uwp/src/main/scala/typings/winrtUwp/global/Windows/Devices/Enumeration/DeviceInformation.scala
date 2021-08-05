@@ -79,8 +79,7 @@ object DeviceInformation {
     * @return An object for starting and managing the asynchronous creation of the DeviceInformation object.
     */
   /* static member */
-  @scala.inline
-  def createFromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation]]
+  inline def createFromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation]]
   /**
     * Creates a DeviceInformation object from a DeviceInformation ID and a list of additional properties.
     * @param deviceId A string containing the DeviceInformation ID.
@@ -88,8 +87,7 @@ object DeviceInformation {
     * @return An object for starting and managing the asynchronous creation of the DeviceInformation object.
     */
   /* static member */
-  @scala.inline
-  def createFromIdAsync(deviceId: String, additionalProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(deviceId.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation]]
+  inline def createFromIdAsync(deviceId: String, additionalProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(deviceId.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation]]
   /**
     * Creates a DeviceInformation object from a DeviceInformation ID, a list of additional properties, and a DeviceInformationKind parameter.
     * @param deviceId A string containing the DeviceInformation ID.
@@ -98,8 +96,7 @@ object DeviceInformation {
     * @return An object for starting and managing the asynchronous creation of the DeviceInformation object.
     */
   /* static member */
-  @scala.inline
-  def createFromIdAsync(
+  inline def createFromIdAsync(
     deviceId: String,
     additionalProperties: IIterable[String],
     kind: typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationKind
@@ -110,16 +107,14 @@ object DeviceInformation {
     * @return The created DeviceWatcher .
     */
   /* static member */
-  @scala.inline
-  def createWatcher(): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
+  inline def createWatcher(): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
   /**
     * Creates a DeviceWatcher for devices matching the specified Advanced Query Syntax (AQS) string.
     * @param aqsFilter An AQS string that filters the DeviceInformation objects to enumerate. Typically this string is retrieved from the GetDeviceSelector method of a class that interacts with devices. For example, GetDeviceSelector retrieves the string for the StorageDevice class.
     * @return The created DeviceWatcher .
     */
   /* static member */
-  @scala.inline
-  def createWatcher(aqsFilter: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
+  inline def createWatcher(aqsFilter: String): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
   /**
     * Creates a DeviceWatcher for devices matching the specified Advanced Query Syntax (AQS) string and the specified collection of properties.
     * @param aqsFilter An AQS string that filters the DeviceInformation objects to enumerate. Typically this string is retrieved from the GetDeviceSelector method of a class that interacts with devices. For example, GetDeviceSelector retrieves the string for the StorageDevice class.
@@ -127,8 +122,7 @@ object DeviceInformation {
     * @return The created DeviceWatcher .
     */
   /* static member */
-  @scala.inline
-  def createWatcher(aqsFilter: String, additionalProperties: IIterable[String]): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
+  inline def createWatcher(aqsFilter: String, additionalProperties: IIterable[String]): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
   /**
     * Creates a DeviceWatcher for devices matching the specified Advanced Query Syntax (AQS) string, the specified collection of properties, and the kind of devices.
     * @param aqsFilter An AQS string that filters the DeviceInformation objects to enumerate. Typically this string is retrieved from the GetDeviceSelector method of a class that interacts with devices. For example, GetDeviceSelector retrieves the string for the StorageDevice class.
@@ -137,8 +131,7 @@ object DeviceInformation {
     * @return The created DeviceWatcher .
     */
   /* static member */
-  @scala.inline
-  def createWatcher(
+  inline def createWatcher(
     aqsFilter: String,
     additionalProperties: IIterable[String],
     kind: typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationKind
@@ -149,24 +142,21 @@ object DeviceInformation {
     * @return The created DeviceWatcher .
     */
   /* static member */
-  @scala.inline
-  def createWatcher(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
+  inline def createWatcher(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.DeviceWatcher]
   
   /**
     * Enumerates all DeviceInformation objects.
     * @return The object for managing the asynchronous operation.
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
+  inline def findAllAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
   /**
     * Enumerates DeviceInformation objects matching the specified Advanced Query Syntax (AQS) string.
     * @param aqsFilter An AQS string that filters the DeviceInformation objects to enumerate. Typically this string is retrieved from the GetDeviceSelector method of a class that interacts with devices. For example, GetDeviceSelector retrieves the string for the StorageDevice class.
     * @return The object for managing the asynchronous operation.
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(aqsFilter: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
+  inline def findAllAsync(aqsFilter: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
   /**
     * Enumerates DeviceInformation objects matching the specified Advanced Query Syntax (AQS) string and including the specified collection of properties.
     * @param aqsFilter An AQS string that filters the DeviceInformation objects to enumerate. Typically this string is retrieved from the GetDeviceSelector method of a class that interacts with devices. For example, GetDeviceSelector retrieves the string for the StorageDevice class.
@@ -174,8 +164,7 @@ object DeviceInformation {
     * @return The object for managing the asynchronous operation.
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(aqsFilter: String, additionalProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
+  inline def findAllAsync(aqsFilter: String, additionalProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(aqsFilter.asInstanceOf[js.Any], additionalProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
   /**
     * Enumerates DeviceInformation objects matching the specified Advanced Query Syntax (AQS) string, the device kind, and including the specified collection of properties.
     * @param aqsFilter An AQS string that filters the DeviceInformation objects to enumerate. Typically this string is retrieved from the GetDeviceSelector method of a class that interacts with devices. For example, GetDeviceSelector retrieves the string for the StorageDevice class.
@@ -184,8 +173,7 @@ object DeviceInformation {
     * @return The object for managing the asynchronous operation.
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(
+  inline def findAllAsync(
     aqsFilter: String,
     additionalProperties: IIterable[String],
     kind: typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationKind
@@ -196,8 +184,7 @@ object DeviceInformation {
     * @return The object for managing the asynchronous operation.
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
+  inline def findAllAsync(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationCollection]]
   
   /**
     * Creates a filter to use to enumerate through a subset of device types.
@@ -205,6 +192,5 @@ object DeviceInformation {
     * @return The Advanced Query Syntax (AQS) filter used to specifically enumerate through the device type specified by deviceClass.
     */
   /* static member */
-  @scala.inline
-  def getAqsFilterFromDeviceClass(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAqsFilterFromDeviceClass")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getAqsFilterFromDeviceClass(deviceClass: typings.winrtUwp.Windows.Devices.Enumeration.DeviceClass): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAqsFilterFromDeviceClass")(deviceClass.asInstanceOf[js.Any]).asInstanceOf[String]
 }

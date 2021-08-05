@@ -32,40 +32,25 @@ object mod {
     /* "swap" */ val SWAP: typings.expoFont.fontTypesMod.FontDisplay.SWAP & String = js.native
   }
   
-  @scala.inline
-  def isLoaded(fontFamily: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoaded")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLoaded(fontFamily: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoaded")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isLoading(fontFamily: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoading")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLoading(fontFamily: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoading")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def loadAsync(fontFamilyOrFontMap: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def loadAsync(fontFamilyOrFontMap: String, source: FontSource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def loadAsync(fontFamilyOrFontMap: StringDictionary[FontSource]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def loadAsync(fontFamilyOrFontMap: StringDictionary[FontSource], source: FontSource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def loadAsync(fontFamilyOrFontMap: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def loadAsync(fontFamilyOrFontMap: String, source: FontSource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def loadAsync(fontFamilyOrFontMap: StringDictionary[FontSource]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def loadAsync(fontFamilyOrFontMap: StringDictionary[FontSource], source: FontSource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def processFontFamily(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processFontFamily")().asInstanceOf[String | Null]
-  @scala.inline
-  def processFontFamily(fontFamily: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processFontFamily")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def processFontFamily(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processFontFamily")().asInstanceOf[String | Null]
+  inline def processFontFamily(fontFamily: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processFontFamily")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def unloadAllAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAllAsync")().asInstanceOf[js.Promise[Unit]]
+  inline def unloadAllAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAllAsync")().asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def unloadAsync(fontFamilyOrFontMap: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def unloadAsync(fontFamilyOrFontMap: String, options: UnloadFontOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def unloadAsync(fontFamilyOrFontMap: StringDictionary[UnloadFontOptions]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def unloadAsync(fontFamilyOrFontMap: StringDictionary[UnloadFontOptions], options: UnloadFontOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def unloadAsync(fontFamilyOrFontMap: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def unloadAsync(fontFamilyOrFontMap: String, options: UnloadFontOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def unloadAsync(fontFamilyOrFontMap: StringDictionary[UnloadFontOptions]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def unloadAsync(fontFamilyOrFontMap: StringDictionary[UnloadFontOptions], options: UnloadFontOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def useFonts(map: String): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
-  @scala.inline
-  def useFonts(map: StringDictionary[FontSource]): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
+  inline def useFonts(map: String): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
+  inline def useFonts(map: StringDictionary[FontSource]): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
 }

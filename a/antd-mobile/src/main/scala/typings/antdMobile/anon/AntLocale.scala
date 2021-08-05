@@ -11,16 +11,13 @@ trait AntLocale extends StObject {
 }
 object AntLocale {
   
-  @scala.inline
-  def apply(antLocale: Requireable[js.Object]): AntLocale = {
+  inline def apply(antLocale: Requireable[js.Object]): AntLocale = {
     val __obj = js.Dynamic.literal(antLocale = antLocale.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntLocale]
   }
   
-  @scala.inline
-  implicit class AntLocaleMutableBuilder[Self <: AntLocale] (val x: Self) extends AnyVal {
+  extension [Self <: AntLocale](x: Self) {
     
-    @scala.inline
-    def setAntLocale(value: Requireable[js.Object]): Self = StObject.set(x, "antLocale", value.asInstanceOf[js.Any])
+    inline def setAntLocale(value: Requireable[js.Object]): Self = StObject.set(x, "antLocale", value.asInstanceOf[js.Any])
   }
 }

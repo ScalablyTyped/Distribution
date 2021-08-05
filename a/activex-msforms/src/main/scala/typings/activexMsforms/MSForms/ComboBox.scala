@@ -110,7 +110,7 @@ trait ComboBox extends StObject {
   
   var Locked: Boolean = js.native
   
-  @JSName("MSForms.ComboBox_typekey")
+  /* private */ @JSName("MSForms.ComboBox_typekey")
   var MSFormsDotComboBox_typekey: ComboBox = js.native
   
   var MatchEntry: fmMatchEntry = js.native

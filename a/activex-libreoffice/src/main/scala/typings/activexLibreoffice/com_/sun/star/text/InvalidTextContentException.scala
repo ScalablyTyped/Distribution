@@ -16,16 +16,13 @@ trait InvalidTextContentException
 }
 object InvalidTextContentException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, TextContent: XTextContent): InvalidTextContentException = {
+  inline def apply(Context: XInterface, Message: String, TextContent: XTextContent): InvalidTextContentException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], TextContent = TextContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidTextContentException]
   }
   
-  @scala.inline
-  implicit class InvalidTextContentExceptionMutableBuilder[Self <: InvalidTextContentException] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidTextContentException](x: Self) {
     
-    @scala.inline
-    def setTextContent(value: XTextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
+    inline def setTextContent(value: XTextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
   }
 }

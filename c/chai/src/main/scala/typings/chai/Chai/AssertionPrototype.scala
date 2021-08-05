@@ -14,19 +14,15 @@ trait AssertionPrototype extends StObject {
 }
 object AssertionPrototype {
   
-  @scala.inline
-  def apply(_obj: js.Any, assert: AssertionArgs => Unit): AssertionPrototype = {
+  inline def apply(_obj: js.Any, assert: AssertionArgs => Unit): AssertionPrototype = {
     val __obj = js.Dynamic.literal(_obj = _obj.asInstanceOf[js.Any], assert = js.Any.fromFunction1(assert))
     __obj.asInstanceOf[AssertionPrototype]
   }
   
-  @scala.inline
-  implicit class AssertionPrototypeMutableBuilder[Self <: AssertionPrototype] (val x: Self) extends AnyVal {
+  extension [Self <: AssertionPrototype](x: Self) {
     
-    @scala.inline
-    def setAssert(value: AssertionArgs => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
+    inline def setAssert(value: AssertionArgs => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_obj(value: js.Any): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
+    inline def set_obj(value: js.Any): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
   }
 }

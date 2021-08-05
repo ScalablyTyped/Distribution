@@ -28,40 +28,29 @@ trait Protection extends StObject {
 }
 object Protection {
   
-  @scala.inline
-  def apply(): Protection = {
+  inline def apply(): Protection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Protection]
   }
   
-  @scala.inline
-  implicit class ProtectionMutableBuilder[Self <: Protection] (val x: Self) extends AnyVal {
+  extension [Self <: Protection](x: Self) {
     
-    @scala.inline
-    def setHealthCheckIds(value: HealthCheckIds): Self = StObject.set(x, "HealthCheckIds", value.asInstanceOf[js.Any])
+    inline def setHealthCheckIds(value: HealthCheckIds): Self = StObject.set(x, "HealthCheckIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckIdsUndefined: Self = StObject.set(x, "HealthCheckIds", js.undefined)
+    inline def setHealthCheckIdsUndefined: Self = StObject.set(x, "HealthCheckIds", js.undefined)
     
-    @scala.inline
-    def setHealthCheckIdsVarargs(value: HealthCheckId*): Self = StObject.set(x, "HealthCheckIds", js.Array(value :_*))
+    inline def setHealthCheckIdsVarargs(value: HealthCheckId*): Self = StObject.set(x, "HealthCheckIds", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: ProtectionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ProtectionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: ProtectionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProtectionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
   }
 }

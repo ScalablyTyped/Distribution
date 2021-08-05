@@ -18,19 +18,15 @@ trait HighlightNotification
 }
 object HighlightNotification {
   
-  @scala.inline
-  def apply(text: Unit): HighlightNotification = {
+  inline def apply(text: Unit): HighlightNotification = {
     val __obj = js.Dynamic.literal(highlight = true, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightNotification]
   }
   
-  @scala.inline
-  implicit class HighlightNotificationMutableBuilder[Self <: HighlightNotification] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightNotification](x: Self) {
     
-    @scala.inline
-    def setHighlight(value: `true`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: `true`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: Unit): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Unit): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

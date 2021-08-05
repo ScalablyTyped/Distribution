@@ -18,31 +18,23 @@ trait ReadonlyControlledComponeChildren extends StObject {
 }
 object ReadonlyControlledComponeChildren {
   
-  @scala.inline
-  def apply(): ReadonlyControlledComponeChildren = {
+  inline def apply(): ReadonlyControlledComponeChildren = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlyControlledComponeChildren]
   }
   
-  @scala.inline
-  implicit class ReadonlyControlledComponeChildrenMutableBuilder[Self <: ReadonlyControlledComponeChildren] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyControlledComponeChildren](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* e */ ChangeEvent[HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* e */ ChangeEvent[HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

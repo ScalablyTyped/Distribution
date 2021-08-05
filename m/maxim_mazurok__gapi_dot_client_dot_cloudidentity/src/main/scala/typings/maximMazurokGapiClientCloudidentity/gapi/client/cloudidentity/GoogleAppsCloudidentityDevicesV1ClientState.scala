@@ -62,92 +62,65 @@ trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
 }
 object GoogleAppsCloudidentityDevicesV1ClientState {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1ClientState = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1ClientState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1ClientState]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1ClientStateMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ClientState] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1ClientState](x: Self) {
     
-    @scala.inline
-    def setAssetTags(value: js.Array[String]): Self = StObject.set(x, "assetTags", value.asInstanceOf[js.Any])
+    inline def setAssetTags(value: js.Array[String]): Self = StObject.set(x, "assetTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTagsUndefined: Self = StObject.set(x, "assetTags", js.undefined)
+    inline def setAssetTagsUndefined: Self = StObject.set(x, "assetTags", js.undefined)
     
-    @scala.inline
-    def setAssetTagsVarargs(value: String*): Self = StObject.set(x, "assetTags", js.Array(value :_*))
+    inline def setAssetTagsVarargs(value: String*): Self = StObject.set(x, "assetTags", js.Array(value :_*))
     
-    @scala.inline
-    def setComplianceState(value: String): Self = StObject.set(x, "complianceState", value.asInstanceOf[js.Any])
+    inline def setComplianceState(value: String): Self = StObject.set(x, "complianceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceStateUndefined: Self = StObject.set(x, "complianceState", js.undefined)
+    inline def setComplianceStateUndefined: Self = StObject.set(x, "complianceState", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
+    inline def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomIdUndefined: Self = StObject.set(x, "customId", js.undefined)
+    inline def setCustomIdUndefined: Self = StObject.set(x, "customId", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setHealthScore(value: String): Self = StObject.set(x, "healthScore", value.asInstanceOf[js.Any])
+    inline def setHealthScore(value: String): Self = StObject.set(x, "healthScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthScoreUndefined: Self = StObject.set(x, "healthScore", js.undefined)
+    inline def setHealthScoreUndefined: Self = StObject.set(x, "healthScore", js.undefined)
     
-    @scala.inline
-    def setKeyValuePairs(
+    inline def setKeyValuePairs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
       */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[js.Any]
     ): Self = StObject.set(x, "keyValuePairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValuePairsUndefined: Self = StObject.set(x, "keyValuePairs", js.undefined)
+    inline def setKeyValuePairsUndefined: Self = StObject.set(x, "keyValuePairs", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setManaged(value: String): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
+    inline def setManaged(value: String): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedUndefined: Self = StObject.set(x, "managed", js.undefined)
+    inline def setManagedUndefined: Self = StObject.set(x, "managed", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
+    inline def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
+    inline def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
     
-    @scala.inline
-    def setScoreReason(value: String): Self = StObject.set(x, "scoreReason", value.asInstanceOf[js.Any])
+    inline def setScoreReason(value: String): Self = StObject.set(x, "scoreReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreReasonUndefined: Self = StObject.set(x, "scoreReason", js.undefined)
+    inline def setScoreReasonUndefined: Self = StObject.set(x, "scoreReason", js.undefined)
   }
 }

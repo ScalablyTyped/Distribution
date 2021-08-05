@@ -20,6 +20,5 @@ trait VirtualRenderStack extends StObject {
 }
 object VirtualRenderStack {
   
-  @scala.inline
-  def apply: VirtualRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VirtualRenderStack").asInstanceOf[VirtualRenderStack]
+  inline def apply: VirtualRenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("VirtualRenderStack").asInstanceOf[VirtualRenderStack]
 }

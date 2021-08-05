@@ -14,31 +14,23 @@ trait WorkbookSessionInfo extends StObject {
 }
 object WorkbookSessionInfo {
   
-  @scala.inline
-  def apply(): WorkbookSessionInfo = {
+  inline def apply(): WorkbookSessionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookSessionInfo]
   }
   
-  @scala.inline
-  implicit class WorkbookSessionInfoMutableBuilder[Self <: WorkbookSessionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookSessionInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPersistChanges(value: NullableOption[Boolean]): Self = StObject.set(x, "persistChanges", value.asInstanceOf[js.Any])
+    inline def setPersistChanges(value: NullableOption[Boolean]): Self = StObject.set(x, "persistChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistChangesNull: Self = StObject.set(x, "persistChanges", null)
+    inline def setPersistChangesNull: Self = StObject.set(x, "persistChanges", null)
     
-    @scala.inline
-    def setPersistChangesUndefined: Self = StObject.set(x, "persistChanges", js.undefined)
+    inline def setPersistChangesUndefined: Self = StObject.set(x, "persistChanges", js.undefined)
   }
 }

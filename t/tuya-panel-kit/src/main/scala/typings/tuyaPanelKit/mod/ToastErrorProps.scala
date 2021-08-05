@@ -20,40 +20,29 @@ trait ToastErrorProps
 }
 object ToastErrorProps {
   
-  @scala.inline
-  def apply(onFinish: () => Unit, show: Boolean): ToastErrorProps = {
+  inline def apply(onFinish: () => Unit, show: Boolean): ToastErrorProps = {
     val __obj = js.Dynamic.literal(onFinish = js.Any.fromFunction0(onFinish), show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastErrorProps]
   }
   
-  @scala.inline
-  implicit class ToastErrorPropsMutableBuilder[Self <: ToastErrorProps] (val x: Self) extends AnyVal {
+  extension [Self <: ToastErrorProps](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
-    @scala.inline
-    def setIconfontStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconfontStyle", value.asInstanceOf[js.Any])
+    inline def setIconfontStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconfontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconfontStyleNull: Self = StObject.set(x, "iconfontStyle", null)
+    inline def setIconfontStyleNull: Self = StObject.set(x, "iconfontStyle", null)
     
-    @scala.inline
-    def setIconfontStyleUndefined: Self = StObject.set(x, "iconfontStyle", js.undefined)
+    inline def setIconfontStyleUndefined: Self = StObject.set(x, "iconfontStyle", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

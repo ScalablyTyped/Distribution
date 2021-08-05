@@ -38,41 +38,30 @@ object nsisOptionsMod {
   }
   object CommonNsisOptions {
     
-    @scala.inline
-    def apply(): CommonNsisOptions = {
+    inline def apply(): CommonNsisOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonNsisOptions]
     }
     
-    @scala.inline
-    implicit class CommonNsisOptionsMutableBuilder[Self <: CommonNsisOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonNsisOptions](x: Self) {
       
-      @scala.inline
-      def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+      inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuidNull: Self = StObject.set(x, "guid", null)
+      inline def setGuidNull: Self = StObject.set(x, "guid", null)
       
-      @scala.inline
-      def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+      inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
       
-      @scala.inline
-      def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: Boolean): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
+      inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
       
-      @scala.inline
-      def setUseZip(value: Boolean): Self = StObject.set(x, "useZip", value.asInstanceOf[js.Any])
+      inline def setUseZip(value: Boolean): Self = StObject.set(x, "useZip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseZipUndefined: Self = StObject.set(x, "useZip", js.undefined)
+      inline def setUseZipUndefined: Self = StObject.set(x, "useZip", js.undefined)
       
-      @scala.inline
-      def setWarningsAsErrors(value: Boolean): Self = StObject.set(x, "warningsAsErrors", value.asInstanceOf[js.Any])
+      inline def setWarningsAsErrors(value: Boolean): Self = StObject.set(x, "warningsAsErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsAsErrorsUndefined: Self = StObject.set(x, "warningsAsErrors", js.undefined)
+      inline def setWarningsAsErrorsUndefined: Self = StObject.set(x, "warningsAsErrors", js.undefined)
     }
   }
   
@@ -202,176 +191,120 @@ object nsisOptionsMod {
   }
   object NsisOptions {
     
-    @scala.inline
-    def apply(): NsisOptions = {
+    inline def apply(): NsisOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NsisOptions]
     }
     
-    @scala.inline
-    implicit class NsisOptionsMutableBuilder[Self <: NsisOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NsisOptions](x: Self) {
       
-      @scala.inline
-      def setAllowElevation(value: Boolean): Self = StObject.set(x, "allowElevation", value.asInstanceOf[js.Any])
+      inline def setAllowElevation(value: Boolean): Self = StObject.set(x, "allowElevation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowElevationUndefined: Self = StObject.set(x, "allowElevation", js.undefined)
+      inline def setAllowElevationUndefined: Self = StObject.set(x, "allowElevation", js.undefined)
       
-      @scala.inline
-      def setAllowToChangeInstallationDirectory(value: Boolean): Self = StObject.set(x, "allowToChangeInstallationDirectory", value.asInstanceOf[js.Any])
+      inline def setAllowToChangeInstallationDirectory(value: Boolean): Self = StObject.set(x, "allowToChangeInstallationDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowToChangeInstallationDirectoryUndefined: Self = StObject.set(x, "allowToChangeInstallationDirectory", js.undefined)
+      inline def setAllowToChangeInstallationDirectoryUndefined: Self = StObject.set(x, "allowToChangeInstallationDirectory", js.undefined)
       
-      @scala.inline
-      def setDeleteAppDataOnUninstall(value: Boolean): Self = StObject.set(x, "deleteAppDataOnUninstall", value.asInstanceOf[js.Any])
+      inline def setDeleteAppDataOnUninstall(value: Boolean): Self = StObject.set(x, "deleteAppDataOnUninstall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteAppDataOnUninstallUndefined: Self = StObject.set(x, "deleteAppDataOnUninstall", js.undefined)
+      inline def setDeleteAppDataOnUninstallUndefined: Self = StObject.set(x, "deleteAppDataOnUninstall", js.undefined)
       
-      @scala.inline
-      def setDifferentialPackage(value: Boolean): Self = StObject.set(x, "differentialPackage", value.asInstanceOf[js.Any])
+      inline def setDifferentialPackage(value: Boolean): Self = StObject.set(x, "differentialPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDifferentialPackageUndefined: Self = StObject.set(x, "differentialPackage", js.undefined)
+      inline def setDifferentialPackageUndefined: Self = StObject.set(x, "differentialPackage", js.undefined)
       
-      @scala.inline
-      def setDisplayLanguageSelector(value: Boolean): Self = StObject.set(x, "displayLanguageSelector", value.asInstanceOf[js.Any])
+      inline def setDisplayLanguageSelector(value: Boolean): Self = StObject.set(x, "displayLanguageSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayLanguageSelectorUndefined: Self = StObject.set(x, "displayLanguageSelector", js.undefined)
+      inline def setDisplayLanguageSelectorUndefined: Self = StObject.set(x, "displayLanguageSelector", js.undefined)
       
-      @scala.inline
-      def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeNull: Self = StObject.set(x, "include", null)
+      inline def setIncludeNull: Self = StObject.set(x, "include", null)
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setInstallerHeader(value: String): Self = StObject.set(x, "installerHeader", value.asInstanceOf[js.Any])
+      inline def setInstallerHeader(value: String): Self = StObject.set(x, "installerHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallerHeaderIcon(value: String): Self = StObject.set(x, "installerHeaderIcon", value.asInstanceOf[js.Any])
+      inline def setInstallerHeaderIcon(value: String): Self = StObject.set(x, "installerHeaderIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallerHeaderIconNull: Self = StObject.set(x, "installerHeaderIcon", null)
+      inline def setInstallerHeaderIconNull: Self = StObject.set(x, "installerHeaderIcon", null)
       
-      @scala.inline
-      def setInstallerHeaderIconUndefined: Self = StObject.set(x, "installerHeaderIcon", js.undefined)
+      inline def setInstallerHeaderIconUndefined: Self = StObject.set(x, "installerHeaderIcon", js.undefined)
       
-      @scala.inline
-      def setInstallerHeaderNull: Self = StObject.set(x, "installerHeader", null)
+      inline def setInstallerHeaderNull: Self = StObject.set(x, "installerHeader", null)
       
-      @scala.inline
-      def setInstallerHeaderUndefined: Self = StObject.set(x, "installerHeader", js.undefined)
+      inline def setInstallerHeaderUndefined: Self = StObject.set(x, "installerHeader", js.undefined)
       
-      @scala.inline
-      def setInstallerIcon(value: String): Self = StObject.set(x, "installerIcon", value.asInstanceOf[js.Any])
+      inline def setInstallerIcon(value: String): Self = StObject.set(x, "installerIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallerIconNull: Self = StObject.set(x, "installerIcon", null)
+      inline def setInstallerIconNull: Self = StObject.set(x, "installerIcon", null)
       
-      @scala.inline
-      def setInstallerIconUndefined: Self = StObject.set(x, "installerIcon", js.undefined)
+      inline def setInstallerIconUndefined: Self = StObject.set(x, "installerIcon", js.undefined)
       
-      @scala.inline
-      def setInstallerLanguages(value: js.Array[String] | String): Self = StObject.set(x, "installerLanguages", value.asInstanceOf[js.Any])
+      inline def setInstallerLanguages(value: js.Array[String] | String): Self = StObject.set(x, "installerLanguages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallerLanguagesNull: Self = StObject.set(x, "installerLanguages", null)
+      inline def setInstallerLanguagesNull: Self = StObject.set(x, "installerLanguages", null)
       
-      @scala.inline
-      def setInstallerLanguagesUndefined: Self = StObject.set(x, "installerLanguages", js.undefined)
+      inline def setInstallerLanguagesUndefined: Self = StObject.set(x, "installerLanguages", js.undefined)
       
-      @scala.inline
-      def setInstallerLanguagesVarargs(value: String*): Self = StObject.set(x, "installerLanguages", js.Array(value :_*))
+      inline def setInstallerLanguagesVarargs(value: String*): Self = StObject.set(x, "installerLanguages", js.Array(value :_*))
       
-      @scala.inline
-      def setInstallerSidebar(value: String): Self = StObject.set(x, "installerSidebar", value.asInstanceOf[js.Any])
+      inline def setInstallerSidebar(value: String): Self = StObject.set(x, "installerSidebar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallerSidebarNull: Self = StObject.set(x, "installerSidebar", null)
+      inline def setInstallerSidebarNull: Self = StObject.set(x, "installerSidebar", null)
       
-      @scala.inline
-      def setInstallerSidebarUndefined: Self = StObject.set(x, "installerSidebar", js.undefined)
+      inline def setInstallerSidebarUndefined: Self = StObject.set(x, "installerSidebar", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageNull: Self = StObject.set(x, "language", null)
+      inline def setLanguageNull: Self = StObject.set(x, "language", null)
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+      inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseNull: Self = StObject.set(x, "license", null)
+      inline def setLicenseNull: Self = StObject.set(x, "license", null)
       
-      @scala.inline
-      def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+      inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
       
-      @scala.inline
-      def setMultiLanguageInstaller(value: Boolean): Self = StObject.set(x, "multiLanguageInstaller", value.asInstanceOf[js.Any])
+      inline def setMultiLanguageInstaller(value: Boolean): Self = StObject.set(x, "multiLanguageInstaller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiLanguageInstallerUndefined: Self = StObject.set(x, "multiLanguageInstaller", js.undefined)
+      inline def setMultiLanguageInstallerUndefined: Self = StObject.set(x, "multiLanguageInstaller", js.undefined)
       
-      @scala.inline
-      def setPackElevateHelper(value: Boolean): Self = StObject.set(x, "packElevateHelper", value.asInstanceOf[js.Any])
+      inline def setPackElevateHelper(value: Boolean): Self = StObject.set(x, "packElevateHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackElevateHelperUndefined: Self = StObject.set(x, "packElevateHelper", js.undefined)
+      inline def setPackElevateHelperUndefined: Self = StObject.set(x, "packElevateHelper", js.undefined)
       
-      @scala.inline
-      def setPreCompressedFileExtensions(value: js.Array[String] | String): Self = StObject.set(x, "preCompressedFileExtensions", value.asInstanceOf[js.Any])
+      inline def setPreCompressedFileExtensions(value: js.Array[String] | String): Self = StObject.set(x, "preCompressedFileExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreCompressedFileExtensionsNull: Self = StObject.set(x, "preCompressedFileExtensions", null)
+      inline def setPreCompressedFileExtensionsNull: Self = StObject.set(x, "preCompressedFileExtensions", null)
       
-      @scala.inline
-      def setPreCompressedFileExtensionsUndefined: Self = StObject.set(x, "preCompressedFileExtensions", js.undefined)
+      inline def setPreCompressedFileExtensionsUndefined: Self = StObject.set(x, "preCompressedFileExtensions", js.undefined)
       
-      @scala.inline
-      def setPreCompressedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "preCompressedFileExtensions", js.Array(value :_*))
+      inline def setPreCompressedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "preCompressedFileExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptNull: Self = StObject.set(x, "script", null)
+      inline def setScriptNull: Self = StObject.set(x, "script", null)
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      @scala.inline
-      def setUninstallDisplayName(value: String): Self = StObject.set(x, "uninstallDisplayName", value.asInstanceOf[js.Any])
+      inline def setUninstallDisplayName(value: String): Self = StObject.set(x, "uninstallDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUninstallDisplayNameUndefined: Self = StObject.set(x, "uninstallDisplayName", js.undefined)
+      inline def setUninstallDisplayNameUndefined: Self = StObject.set(x, "uninstallDisplayName", js.undefined)
       
-      @scala.inline
-      def setUninstallerIcon(value: String): Self = StObject.set(x, "uninstallerIcon", value.asInstanceOf[js.Any])
+      inline def setUninstallerIcon(value: String): Self = StObject.set(x, "uninstallerIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUninstallerIconNull: Self = StObject.set(x, "uninstallerIcon", null)
+      inline def setUninstallerIconNull: Self = StObject.set(x, "uninstallerIcon", null)
       
-      @scala.inline
-      def setUninstallerIconUndefined: Self = StObject.set(x, "uninstallerIcon", js.undefined)
+      inline def setUninstallerIconUndefined: Self = StObject.set(x, "uninstallerIcon", js.undefined)
       
-      @scala.inline
-      def setUninstallerSidebar(value: String): Self = StObject.set(x, "uninstallerSidebar", value.asInstanceOf[js.Any])
+      inline def setUninstallerSidebar(value: String): Self = StObject.set(x, "uninstallerSidebar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUninstallerSidebarNull: Self = StObject.set(x, "uninstallerSidebar", null)
+      inline def setUninstallerSidebarNull: Self = StObject.set(x, "uninstallerSidebar", null)
       
-      @scala.inline
-      def setUninstallerSidebarUndefined: Self = StObject.set(x, "uninstallerSidebar", js.undefined)
+      inline def setUninstallerSidebarUndefined: Self = StObject.set(x, "uninstallerSidebar", js.undefined)
     }
   }
   
@@ -391,23 +324,18 @@ object nsisOptionsMod {
   }
   object NsisWebOptions {
     
-    @scala.inline
-    def apply(): NsisWebOptions = {
+    inline def apply(): NsisWebOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NsisWebOptions]
     }
     
-    @scala.inline
-    implicit class NsisWebOptionsMutableBuilder[Self <: NsisWebOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NsisWebOptions](x: Self) {
       
-      @scala.inline
-      def setAppPackageUrl(value: String): Self = StObject.set(x, "appPackageUrl", value.asInstanceOf[js.Any])
+      inline def setAppPackageUrl(value: String): Self = StObject.set(x, "appPackageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppPackageUrlNull: Self = StObject.set(x, "appPackageUrl", null)
+      inline def setAppPackageUrlNull: Self = StObject.set(x, "appPackageUrl", null)
       
-      @scala.inline
-      def setAppPackageUrlUndefined: Self = StObject.set(x, "appPackageUrl", js.undefined)
+      inline def setAppPackageUrlUndefined: Self = StObject.set(x, "appPackageUrl", js.undefined)
     }
   }
   
@@ -436,35 +364,26 @@ object nsisOptionsMod {
   }
   object PortableOptions {
     
-    @scala.inline
-    def apply(): PortableOptions = {
+    inline def apply(): PortableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortableOptions]
     }
     
-    @scala.inline
-    implicit class PortableOptionsMutableBuilder[Self <: PortableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PortableOptions](x: Self) {
       
-      @scala.inline
-      def setRequestExecutionLevel(value: user | highest | admin): Self = StObject.set(x, "requestExecutionLevel", value.asInstanceOf[js.Any])
+      inline def setRequestExecutionLevel(value: user | highest | admin): Self = StObject.set(x, "requestExecutionLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestExecutionLevelUndefined: Self = StObject.set(x, "requestExecutionLevel", js.undefined)
+      inline def setRequestExecutionLevelUndefined: Self = StObject.set(x, "requestExecutionLevel", js.undefined)
       
-      @scala.inline
-      def setSplashImage(value: String): Self = StObject.set(x, "splashImage", value.asInstanceOf[js.Any])
+      inline def setSplashImage(value: String): Self = StObject.set(x, "splashImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplashImageNull: Self = StObject.set(x, "splashImage", null)
+      inline def setSplashImageNull: Self = StObject.set(x, "splashImage", null)
       
-      @scala.inline
-      def setSplashImageUndefined: Self = StObject.set(x, "splashImage", js.undefined)
+      inline def setSplashImageUndefined: Self = StObject.set(x, "splashImage", js.undefined)
       
-      @scala.inline
-      def setUnpackDirName(value: String): Self = StObject.set(x, "unpackDirName", value.asInstanceOf[js.Any])
+      inline def setUnpackDirName(value: String): Self = StObject.set(x, "unpackDirName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnpackDirNameUndefined: Self = StObject.set(x, "unpackDirName", js.undefined)
+      inline def setUnpackDirNameUndefined: Self = StObject.set(x, "unpackDirName", js.undefined)
     }
   }
 }

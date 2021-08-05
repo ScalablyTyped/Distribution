@@ -17,31 +17,23 @@ trait TableRange extends StObject {
 }
 object TableRange {
   
-  @scala.inline
-  def apply(): TableRange = {
+  inline def apply(): TableRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRange]
   }
   
-  @scala.inline
-  implicit class TableRangeMutableBuilder[Self <: TableRange] (val x: Self) extends AnyVal {
+  extension [Self <: TableRange](x: Self) {
     
-    @scala.inline
-    def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+    inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+    inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+    inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
-    @scala.inline
-    def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
+    inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
+    inline def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
   }
 }

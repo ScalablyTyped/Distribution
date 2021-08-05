@@ -10,16 +10,13 @@ trait AppsGetSubscriptionPlanForAccountStubbedEndpoint extends StObject {
 }
 object AppsGetSubscriptionPlanForAccountStubbedEndpoint {
   
-  @scala.inline
-  def apply(account_id: Double): AppsGetSubscriptionPlanForAccountStubbedEndpoint = {
+  inline def apply(account_id: Double): AppsGetSubscriptionPlanForAccountStubbedEndpoint = {
     val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsGetSubscriptionPlanForAccountStubbedEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsGetSubscriptionPlanForAccountStubbedEndpointMutableBuilder[Self <: AppsGetSubscriptionPlanForAccountStubbedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsGetSubscriptionPlanForAccountStubbedEndpoint](x: Self) {
     
-    @scala.inline
-    def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    inline def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
   }
 }

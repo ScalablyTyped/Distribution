@@ -33,15 +33,14 @@ object mod {
     @JSImport("react-alice-carousel", "default.defaultProps")
     @js.native
     def defaultProps: ActiveIndex = js.native
-    @scala.inline
-    def defaultProps_=(x: ActiveIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ActiveIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait AliceCarousel
     extends PureComponent[Props, State, js.Any] {
     
-    var RootElement: js.Any = js.native
+    /* private */ var RootElement: js.Any = js.native
     
     def _cancelTimeoutAnimations(): Unit = js.native
     
@@ -69,7 +68,7 @@ object mod {
     
     def _handleResize(e: Event): js.Promise[Unit] = js.native
     
-    var _handleResizeDebounced: js.Any = js.native
+    /* private */ var _handleResizeDebounced: js.Any = js.native
     
     def _handleResized(): Unit = js.native
     
@@ -114,9 +113,9 @@ object mod {
     
     def _updateSwipeProps(): Unit = js.native
     
-    var autoPlayTimeoutId: js.Any = js.native
+    /* private */ var autoPlayTimeoutId: js.Any = js.native
     
-    var cancelTouchAnimations: js.Any = js.native
+    /* private */ var cancelTouchAnimations: js.Any = js.native
     
     def clearTouchendTimeout(): Unit = js.native
     
@@ -131,19 +130,19 @@ object mod {
     
     def eventObject: IsNextSlideDisabled = js.native
     
-    var hasUserAction: js.Any = js.native
+    /* private */ var hasUserAction: js.Any = js.native
     
-    var isAnimationDisabled: js.Any = js.native
+    /* private */ var isAnimationDisabled: js.Any = js.native
     
     def isFadeoutAnimationAllowed: Boolean = js.native
     
-    var isHovered: js.Any = js.native
+    /* private */ var isHovered: js.Any = js.native
     
-    var isTouchMoveProcessStarted: js.Any = js.native
+    /* private */ var isTouchMoveProcessStarted: js.Any = js.native
     
-    var rootComponentDimensions: js.Any = js.native
+    /* private */ var rootComponentDimensions: js.Any = js.native
     
-    var slideEndTimeoutId: js.Any = js.native
+    /* private */ var slideEndTimeoutId: js.Any = js.native
     
     def slideNext(e: js.Any): Unit = js.native
     
@@ -152,13 +151,13 @@ object mod {
     def slideTo(): Unit = js.native
     def slideTo(activeIndex: Double): Unit = js.native
     
-    var stageComponent: js.Any = js.native
+    /* private */ var stageComponent: js.Any = js.native
     
-    var startTouchmovePosition: js.Any = js.native
+    /* private */ var startTouchmovePosition: js.Any = js.native
     
-    var swipeListener: js.Any = js.native
+    /* private */ var swipeListener: js.Any = js.native
     
-    var touchEndTimeoutId: js.Any = js.native
+    /* private */ var touchEndTimeoutId: js.Any = js.native
     
     def touchmovePosition: Double = js.native
   }

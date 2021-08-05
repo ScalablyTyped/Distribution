@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.SelectNamesDialog")
 @js.native
-class SelectNamesDialog protected ()
+/* private */ class SelectNamesDialog ()
   extends StObject
      with typings.activexOutlook.Outlook.SelectNamesDialog {
   
@@ -43,7 +43,7 @@ class SelectNamesDialog protected ()
   /* CompleteClass */
   var NumberOfRecipientSelectors: OlRecipientSelectors = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.SelectNamesDialog_typekey")
   var OutlookDotSelectNamesDialog_typekey: typings.activexOutlook.Outlook.SelectNamesDialog = js.native
   

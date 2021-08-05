@@ -10,19 +10,15 @@ trait BiBreadthFirstFinderOptions extends StObject {
 }
 object BiBreadthFirstFinderOptions {
   
-  @scala.inline
-  def apply(): BiBreadthFirstFinderOptions = {
+  inline def apply(): BiBreadthFirstFinderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BiBreadthFirstFinderOptions]
   }
   
-  @scala.inline
-  implicit class BiBreadthFirstFinderOptionsMutableBuilder[Self <: BiBreadthFirstFinderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BiBreadthFirstFinderOptions](x: Self) {
     
-    @scala.inline
-    def setDiagonalMovement(value: DiagonalMovement): Self = StObject.set(x, "diagonalMovement", value.asInstanceOf[js.Any])
+    inline def setDiagonalMovement(value: DiagonalMovement): Self = StObject.set(x, "diagonalMovement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagonalMovementUndefined: Self = StObject.set(x, "diagonalMovement", js.undefined)
+    inline def setDiagonalMovementUndefined: Self = StObject.set(x, "diagonalMovement", js.undefined)
   }
 }

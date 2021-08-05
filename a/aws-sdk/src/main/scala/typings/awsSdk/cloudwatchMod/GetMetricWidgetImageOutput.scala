@@ -13,19 +13,15 @@ trait GetMetricWidgetImageOutput extends StObject {
 }
 object GetMetricWidgetImageOutput {
   
-  @scala.inline
-  def apply(): GetMetricWidgetImageOutput = {
+  inline def apply(): GetMetricWidgetImageOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMetricWidgetImageOutput]
   }
   
-  @scala.inline
-  implicit class GetMetricWidgetImageOutputMutableBuilder[Self <: GetMetricWidgetImageOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricWidgetImageOutput](x: Self) {
     
-    @scala.inline
-    def setMetricWidgetImage(value: MetricWidgetImage): Self = StObject.set(x, "MetricWidgetImage", value.asInstanceOf[js.Any])
+    inline def setMetricWidgetImage(value: MetricWidgetImage): Self = StObject.set(x, "MetricWidgetImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricWidgetImageUndefined: Self = StObject.set(x, "MetricWidgetImage", js.undefined)
+    inline def setMetricWidgetImageUndefined: Self = StObject.set(x, "MetricWidgetImage", js.undefined)
   }
 }

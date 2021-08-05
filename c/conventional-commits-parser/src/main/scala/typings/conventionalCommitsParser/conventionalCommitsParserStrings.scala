@@ -8,6 +8,5 @@ object conventionalCommitsParserStrings {
   
   @js.native
   sealed trait Commit extends StObject
-  @scala.inline
-  def Commit: Commit = "Commit".asInstanceOf[Commit]
+  inline def Commit: Commit = "Commit".asInstanceOf[Commit]
 }

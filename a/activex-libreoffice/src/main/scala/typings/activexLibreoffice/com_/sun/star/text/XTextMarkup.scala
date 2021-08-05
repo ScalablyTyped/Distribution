@@ -43,8 +43,7 @@ trait XTextMarkup extends StObject {
 }
 object XTextMarkup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MarkupInfoContainer: XStringKeyMap,
     commitStringMarkup: (Double, String, Double, Double, XStringKeyMap) => Unit,
     commitTextRangeMarkup: (Double, String, XTextRange, XStringKeyMap) => Unit,
@@ -54,19 +53,14 @@ object XTextMarkup {
     __obj.asInstanceOf[XTextMarkup]
   }
   
-  @scala.inline
-  implicit class XTextMarkupMutableBuilder[Self <: XTextMarkup] (val x: Self) extends AnyVal {
+  extension [Self <: XTextMarkup](x: Self) {
     
-    @scala.inline
-    def setCommitStringMarkup(value: (Double, String, Double, Double, XStringKeyMap) => Unit): Self = StObject.set(x, "commitStringMarkup", js.Any.fromFunction5(value))
+    inline def setCommitStringMarkup(value: (Double, String, Double, Double, XStringKeyMap) => Unit): Self = StObject.set(x, "commitStringMarkup", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setCommitTextRangeMarkup(value: (Double, String, XTextRange, XStringKeyMap) => Unit): Self = StObject.set(x, "commitTextRangeMarkup", js.Any.fromFunction4(value))
+    inline def setCommitTextRangeMarkup(value: (Double, String, XTextRange, XStringKeyMap) => Unit): Self = StObject.set(x, "commitTextRangeMarkup", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetMarkupInfoContainer(value: () => XStringKeyMap): Self = StObject.set(x, "getMarkupInfoContainer", js.Any.fromFunction0(value))
+    inline def setGetMarkupInfoContainer(value: () => XStringKeyMap): Self = StObject.set(x, "getMarkupInfoContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkupInfoContainer(value: XStringKeyMap): Self = StObject.set(x, "MarkupInfoContainer", value.asInstanceOf[js.Any])
+    inline def setMarkupInfoContainer(value: XStringKeyMap): Self = StObject.set(x, "MarkupInfoContainer", value.asInstanceOf[js.Any])
   }
 }

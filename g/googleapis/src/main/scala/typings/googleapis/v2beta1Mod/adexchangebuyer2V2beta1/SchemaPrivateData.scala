@@ -18,19 +18,15 @@ trait SchemaPrivateData extends StObject {
 }
 object SchemaPrivateData {
   
-  @scala.inline
-  def apply(): SchemaPrivateData = {
+  inline def apply(): SchemaPrivateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPrivateData]
   }
   
-  @scala.inline
-  implicit class SchemaPrivateDataMutableBuilder[Self <: SchemaPrivateData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPrivateData](x: Self) {
     
-    @scala.inline
-    def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
+    inline def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
   }
 }

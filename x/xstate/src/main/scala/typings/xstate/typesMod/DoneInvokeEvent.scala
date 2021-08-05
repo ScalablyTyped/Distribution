@@ -12,17 +12,14 @@ trait DoneInvokeEvent[TData]
 }
 object DoneInvokeEvent {
   
-  @scala.inline
-  def apply[TData](data: TData, `type`: String): DoneInvokeEvent[TData] = {
+  inline def apply[TData](data: TData, `type`: String): DoneInvokeEvent[TData] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoneInvokeEvent[TData]]
   }
   
-  @scala.inline
-  implicit class DoneInvokeEventMutableBuilder[Self <: DoneInvokeEvent[?], TData] (val x: Self & DoneInvokeEvent[TData]) extends AnyVal {
+  extension [Self <: DoneInvokeEvent[?], TData](x: Self & DoneInvokeEvent[TData]) {
     
-    @scala.inline
-    def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

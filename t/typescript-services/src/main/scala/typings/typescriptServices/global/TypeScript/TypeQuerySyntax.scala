@@ -90,6 +90,5 @@ object TypeQuerySyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(name: INameSyntax): typings.typescriptServices.TypeScript.TypeQuerySyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(name.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeQuerySyntax]
+  inline def create1(name: INameSyntax): typings.typescriptServices.TypeScript.TypeQuerySyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(name.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.TypeQuerySyntax]
 }

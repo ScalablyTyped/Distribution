@@ -20,8 +20,7 @@ object Photos {
     * Use this for taking a new image using the camera.
     * @see https://docs.scriptable.app/photos/#fromcamera
     */
-  @scala.inline
-  def fromCamera(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCamera")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
+  inline def fromCamera(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCamera")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
   
   /**
     * _Presents the photo library for picking an image._
@@ -29,8 +28,7 @@ object Photos {
     * Use this for picking an image from the photo library.
     * @see https://docs.scriptable.app/photos/#fromlibrary
     */
-  @scala.inline
-  def fromLibrary(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLibrary")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
+  inline def fromLibrary(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLibrary")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
   
   /**
     * _Get latest photo._
@@ -38,8 +36,7 @@ object Photos {
     * Reads the latest photo from your photo library. If no photo is available, the promise will be rejected.
     * @see https://docs.scriptable.app/photos/#latestphoto
     */
-  @scala.inline
-  def latestPhoto(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestPhoto")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
+  inline def latestPhoto(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestPhoto")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
   
   /**
     * _Get latest photos._
@@ -48,8 +45,7 @@ object Photos {
     * @param count - Number of photos to fetch.
     * @see https://docs.scriptable.app/photos/#latestphotos
     */
-  @scala.inline
-  def latestPhotos(count: Double): js.Promise[js.Array[typings.scriptableIos.Image]] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestPhotos")(count.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Image]]]
+  inline def latestPhotos(count: Double): js.Promise[js.Array[typings.scriptableIos.Image]] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestPhotos")(count.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Image]]]
   
   /**
     * _Get latest screenshot._
@@ -57,8 +53,7 @@ object Photos {
     * Reads the latest screenshot from your photo library. If no screenshot is available, the promise will be rejected.
     * @see https://docs.scriptable.app/photos/#latestscreenshot
     */
-  @scala.inline
-  def latestScreenshot(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestScreenshot")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
+  inline def latestScreenshot(): js.Promise[typings.scriptableIos.Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestScreenshot")().asInstanceOf[js.Promise[typings.scriptableIos.Image]]
   
   /**
     * _Get latest screenshots._
@@ -67,8 +62,7 @@ object Photos {
     * @param count - Number of screenshots to fetch.
     * @see https://docs.scriptable.app/photos/#latestscreenshots
     */
-  @scala.inline
-  def latestScreenshots(count: Double): js.Promise[js.Array[typings.scriptableIos.Image]] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestScreenshots")(count.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Image]]]
+  inline def latestScreenshots(count: Double): js.Promise[js.Array[typings.scriptableIos.Image]] = ^.asInstanceOf[js.Dynamic].applyDynamic("latestScreenshots")(count.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Image]]]
   
   /**
     * _Removes latest photo._
@@ -76,8 +70,7 @@ object Photos {
     * Before removing the photo, an alert is shown prompting you to confirm the removal.
     * @see https://docs.scriptable.app/photos/#removelatestphoto
     */
-  @scala.inline
-  def removeLatestPhoto(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestPhoto")().asInstanceOf[Unit]
+  inline def removeLatestPhoto(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestPhoto")().asInstanceOf[Unit]
   
   /**
     * _Removes latest photos._
@@ -86,8 +79,7 @@ object Photos {
     * @param count - Number of photos to remove.
     * @see https://docs.scriptable.app/photos/#removelatestphotos
     */
-  @scala.inline
-  def removeLatestPhotos(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestPhotos")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeLatestPhotos(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestPhotos")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Removes latest screenshot._
@@ -95,8 +87,7 @@ object Photos {
     * Before removing the screenshot, an alert is shown prompting you to confirm the removal.
     * @see https://docs.scriptable.app/photos/#removelatestscreenshot
     */
-  @scala.inline
-  def removeLatestScreenshot(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestScreenshot")().asInstanceOf[Unit]
+  inline def removeLatestScreenshot(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestScreenshot")().asInstanceOf[Unit]
   
   /**
     * _Removes latest screenshots._
@@ -105,8 +96,7 @@ object Photos {
     * @param count - Number of screenshots to remove.
     * @see https://docs.scriptable.app/photos/#removelatestscreenshots
     */
-  @scala.inline
-  def removeLatestScreenshots(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestScreenshots")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeLatestScreenshots(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLatestScreenshots")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Save an image._
@@ -115,6 +105,5 @@ object Photos {
     * @param image - The image to save.
     * @see https://docs.scriptable.app/photos/#save
     */
-  @scala.inline
-  def save(image: typings.scriptableIos.Image): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(image.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def save(image: typings.scriptableIos.Image): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(image.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

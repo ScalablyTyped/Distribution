@@ -80,8 +80,7 @@ trait DERBitString
 }
 object DERBitString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -100,19 +99,14 @@ object DERBitString {
     __obj.asInstanceOf[DERBitString]
   }
   
-  @scala.inline
-  implicit class DERBitStringMutableBuilder[Self <: DERBitString] (val x: Self) extends AnyVal {
+  extension [Self <: DERBitString](x: Self) {
     
-    @scala.inline
-    def setSetByBinaryString(value: String => Unit): Self = StObject.set(x, "setByBinaryString", js.Any.fromFunction1(value))
+    inline def setSetByBinaryString(value: String => Unit): Self = StObject.set(x, "setByBinaryString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetByBooleanArray(value: js.Array[Boolean] => Unit): Self = StObject.set(x, "setByBooleanArray", js.Any.fromFunction1(value))
+    inline def setSetByBooleanArray(value: js.Array[Boolean] => Unit): Self = StObject.set(x, "setByBooleanArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHexValueIncludingUnusedBits(value: String => Unit): Self = StObject.set(x, "setHexValueIncludingUnusedBits", js.Any.fromFunction1(value))
+    inline def setSetHexValueIncludingUnusedBits(value: String => Unit): Self = StObject.set(x, "setHexValueIncludingUnusedBits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUnusedBitsAndHexValue(value: (Double, String) => Unit): Self = StObject.set(x, "setUnusedBitsAndHexValue", js.Any.fromFunction2(value))
+    inline def setSetUnusedBitsAndHexValue(value: (Double, String) => Unit): Self = StObject.set(x, "setUnusedBitsAndHexValue", js.Any.fromFunction2(value))
   }
 }

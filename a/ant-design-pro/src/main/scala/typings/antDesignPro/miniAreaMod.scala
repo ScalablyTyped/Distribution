@@ -29,32 +29,24 @@ object miniAreaMod {
   }
   object IAxis {
     
-    @scala.inline
-    def apply(grid: js.Any, gridAlign: js.Any, labels: js.Any, line: js.Any, tickLine: js.Any, title: js.Any): IAxis = {
+    inline def apply(grid: js.Any, gridAlign: js.Any, labels: js.Any, line: js.Any, tickLine: js.Any, title: js.Any): IAxis = {
       val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any], gridAlign = gridAlign.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], tickLine = tickLine.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAxis]
     }
     
-    @scala.inline
-    implicit class IAxisMutableBuilder[Self <: IAxis] (val x: Self) extends AnyVal {
+    extension [Self <: IAxis](x: Self) {
       
-      @scala.inline
-      def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAlign(value: js.Any): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
+      inline def setGridAlign(value: js.Any): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickLine(value: js.Any): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
+      inline def setTickLine(value: js.Any): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,59 +70,42 @@ object miniAreaMod {
   }
   object IMiniAreaProps {
     
-    @scala.inline
-    def apply(data: js.Array[Y], height: Double): IMiniAreaProps = {
+    inline def apply(data: js.Array[Y], height: Double): IMiniAreaProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMiniAreaProps]
     }
     
-    @scala.inline
-    implicit class IMiniAreaPropsMutableBuilder[Self <: IMiniAreaProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMiniAreaProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[Y]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Y]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Boolean): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Boolean): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setXAxis(value: IAxis): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+      inline def setXAxis(value: IAxis): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+      inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
       
-      @scala.inline
-      def setYAxis(value: IAxis): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+      inline def setYAxis(value: IAxis): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+      inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     }
   }
   

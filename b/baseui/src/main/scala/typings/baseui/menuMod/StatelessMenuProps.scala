@@ -10,8 +10,7 @@ trait StatelessMenuProps
      with MenuProps
 object StatelessMenuProps {
   
-  @scala.inline
-  def apply(items: ItemsT): StatelessMenuProps = {
+  inline def apply(items: ItemsT): StatelessMenuProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatelessMenuProps]
   }

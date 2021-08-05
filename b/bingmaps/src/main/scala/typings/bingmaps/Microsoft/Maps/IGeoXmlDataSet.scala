@@ -33,52 +33,37 @@ trait IGeoXmlDataSet extends StObject {
 }
 object IGeoXmlDataSet {
   
-  @scala.inline
-  def apply(): IGeoXmlDataSet = {
+  inline def apply(): IGeoXmlDataSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeoXmlDataSet]
   }
   
-  @scala.inline
-  implicit class IGeoXmlDataSetMutableBuilder[Self <: IGeoXmlDataSet] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoXmlDataSet](x: Self) {
     
-    @scala.inline
-    def setLayers(value: js.Array[Layer | GroundOverlay]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[Layer | GroundOverlay]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: (Layer | GroundOverlay)*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: (Layer | GroundOverlay)*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setScreenOverlays(value: js.Array[KmlScreenOverlay]): Self = StObject.set(x, "screenOverlays", value.asInstanceOf[js.Any])
+    inline def setScreenOverlays(value: js.Array[KmlScreenOverlay]): Self = StObject.set(x, "screenOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenOverlaysUndefined: Self = StObject.set(x, "screenOverlays", js.undefined)
+    inline def setScreenOverlaysUndefined: Self = StObject.set(x, "screenOverlays", js.undefined)
     
-    @scala.inline
-    def setScreenOverlaysVarargs(value: KmlScreenOverlay*): Self = StObject.set(x, "screenOverlays", js.Array(value :_*))
+    inline def setScreenOverlaysVarargs(value: KmlScreenOverlay*): Self = StObject.set(x, "screenOverlays", js.Array(value :_*))
     
-    @scala.inline
-    def setShapes(value: js.Array[IPrimitive]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[IPrimitive]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+    inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    @scala.inline
-    def setShapesVarargs(value: IPrimitive*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: IPrimitive*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
-    @scala.inline
-    def setStats(value: IGeoXmlStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: IGeoXmlStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    @scala.inline
-    def setSummary(value: IGeoXmlSummaryMetadata): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: IGeoXmlSummaryMetadata): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

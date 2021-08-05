@@ -23,31 +23,23 @@ trait UnprocessedStatistics extends StObject {
 }
 object UnprocessedStatistics {
   
-  @scala.inline
-  def apply(): UnprocessedStatistics = {
+  inline def apply(): UnprocessedStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnprocessedStatistics]
   }
   
-  @scala.inline
-  implicit class UnprocessedStatisticsMutableBuilder[Self <: UnprocessedStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: UnprocessedStatistics](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
   }
 }

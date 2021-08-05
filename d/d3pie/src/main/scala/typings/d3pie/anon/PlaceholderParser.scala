@@ -20,43 +20,31 @@ trait PlaceholderParser extends StObject {
 }
 object PlaceholderParser {
   
-  @scala.inline
-  def apply(): PlaceholderParser = {
+  inline def apply(): PlaceholderParser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaceholderParser]
   }
   
-  @scala.inline
-  implicit class PlaceholderParserMutableBuilder[Self <: PlaceholderParser] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceholderParser](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPlaceholderParser(value: (/* index */ Double, /* data */ Percentage) => Unit): Self = StObject.set(x, "placeholderParser", js.Any.fromFunction2(value))
+    inline def setPlaceholderParser(value: (/* index */ Double, /* data */ Percentage) => Unit): Self = StObject.set(x, "placeholderParser", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlaceholderParserUndefined: Self = StObject.set(x, "placeholderParser", js.undefined)
+    inline def setPlaceholderParserUndefined: Self = StObject.set(x, "placeholderParser", js.undefined)
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
-    @scala.inline
-    def setStyles(value: BackgroundColor): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: BackgroundColor): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setType(value: placeholder | caption): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: placeholder | caption): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

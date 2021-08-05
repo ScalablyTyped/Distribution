@@ -18,25 +18,19 @@ trait TransferDomainToAnotherAwsAccountResponse extends StObject {
 }
 object TransferDomainToAnotherAwsAccountResponse {
   
-  @scala.inline
-  def apply(): TransferDomainToAnotherAwsAccountResponse = {
+  inline def apply(): TransferDomainToAnotherAwsAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferDomainToAnotherAwsAccountResponse]
   }
   
-  @scala.inline
-  implicit class TransferDomainToAnotherAwsAccountResponseMutableBuilder[Self <: TransferDomainToAnotherAwsAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TransferDomainToAnotherAwsAccountResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
   }
 }

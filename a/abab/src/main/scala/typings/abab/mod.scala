@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atob(encodedData: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(encodedData.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def atob(encodedData: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(encodedData.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def btoa(stringToEncode: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def btoa(stringToEncode: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

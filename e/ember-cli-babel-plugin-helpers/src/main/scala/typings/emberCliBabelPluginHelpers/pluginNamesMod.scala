@@ -11,9 +11,7 @@ object pluginNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalizePluginName(rawName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePluginName")(rawName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizePluginName(rawName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePluginName")(rawName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def resolvePluginName(pluginConfig: BabelPluginConfig): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePluginName")(pluginConfig.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  inline def resolvePluginName(pluginConfig: BabelPluginConfig): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePluginName")(pluginConfig.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
 }

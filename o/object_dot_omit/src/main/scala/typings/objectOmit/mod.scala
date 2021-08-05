@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](
+  inline def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](
     `object`: GObject,
     fn: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: GObject[GKey] */ /* value */ js.Any, 
@@ -30,10 +29,8 @@ object mod {
     * @param object
     * @param keys
     */
-  @scala.inline
-  def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](`object`: GObject, key: GKey): Omit[GObject, GKey] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Omit[GObject, GKey]]
-  @scala.inline
-  def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](`object`: GObject, key: js.Array[GKey]): Omit[GObject, GKey] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Omit[GObject, GKey]]
+  inline def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](`object`: GObject, key: GKey): Omit[GObject, GKey] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Omit[GObject, GKey]]
+  inline def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](`object`: GObject, key: js.Array[GKey]): Omit[GObject, GKey] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Omit[GObject, GKey]]
   
   @JSImport("object.omit", JSImport.Namespace)
   @js.native

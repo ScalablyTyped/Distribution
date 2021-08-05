@@ -66,13 +66,13 @@ object mod {
   class Serial () extends Peripheral {
     def this(hasPortIdBaudRateDataBitsStopBitsParity: Options) = this()
     
-    var _isOpen: js.Any = js.native
+    /* private */ var _isOpen: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _portId: js.Any = js.native
+    /* private */ var _portId: js.Any = js.native
     
-    var _portInstance: js.Any = js.native
+    /* private */ var _portInstance: js.Any = js.native
     
     val baudRate: Double = js.native
     
@@ -119,46 +119,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBaudRate(
+      inline def setBaudRate(
         value: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
       ): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
+      inline def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
       
-      @scala.inline
-      def setDataBits(value: `8` | `7` | `6` | `5`): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
+      inline def setDataBits(value: `8` | `7` | `6` | `5`): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
+      inline def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
       
-      @scala.inline
-      def setParity(value: none | even | mark | odd | space): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
+      inline def setParity(value: none | even | mark | odd | space): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
+      inline def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
       
-      @scala.inline
-      def setPortId(value: String): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
+      inline def setPortId(value: String): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortIdUndefined: Self = StObject.set(x, "portId", js.undefined)
+      inline def setPortIdUndefined: Self = StObject.set(x, "portId", js.undefined)
       
-      @scala.inline
-      def setStopBits(value: `1` | `2`): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
+      inline def setStopBits(value: `1` | `2`): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
+      inline def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
     }
   }
 }

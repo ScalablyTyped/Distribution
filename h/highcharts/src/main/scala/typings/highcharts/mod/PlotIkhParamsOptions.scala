@@ -32,37 +32,27 @@ trait PlotIkhParamsOptions extends StObject {
 }
 object PlotIkhParamsOptions {
   
-  @scala.inline
-  def apply(): PlotIkhParamsOptions = {
+  inline def apply(): PlotIkhParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotIkhParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotIkhParamsOptionsMutableBuilder[Self <: PlotIkhParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotIkhParamsOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodSenkouSpanB(value: Double): Self = StObject.set(x, "periodSenkouSpanB", value.asInstanceOf[js.Any])
+    inline def setPeriodSenkouSpanB(value: Double): Self = StObject.set(x, "periodSenkouSpanB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodSenkouSpanBUndefined: Self = StObject.set(x, "periodSenkouSpanB", js.undefined)
+    inline def setPeriodSenkouSpanBUndefined: Self = StObject.set(x, "periodSenkouSpanB", js.undefined)
     
-    @scala.inline
-    def setPeriodTenkan(value: Double): Self = StObject.set(x, "periodTenkan", value.asInstanceOf[js.Any])
+    inline def setPeriodTenkan(value: Double): Self = StObject.set(x, "periodTenkan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodTenkanUndefined: Self = StObject.set(x, "periodTenkan", js.undefined)
+    inline def setPeriodTenkanUndefined: Self = StObject.set(x, "periodTenkan", js.undefined)
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

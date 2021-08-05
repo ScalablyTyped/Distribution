@@ -30,8 +30,7 @@ trait TaskProvider[T /* <: Task */] extends StObject {
 }
 object TaskProvider {
   
-  @scala.inline
-  def apply[T /* <: Task */](
+  inline def apply[T /* <: Task */](
     provideTasks: CancellationToken => ProviderResult[js.Array[T]],
     resolveTask: (T, CancellationToken) => ProviderResult[T]
   ): TaskProvider[T] = {
@@ -39,13 +38,10 @@ object TaskProvider {
     __obj.asInstanceOf[TaskProvider[T]]
   }
   
-  @scala.inline
-  implicit class TaskProviderMutableBuilder[Self <: TaskProvider[?], T /* <: Task */] (val x: Self & TaskProvider[T]) extends AnyVal {
+  extension [Self <: TaskProvider[?], T /* <: Task */](x: Self & TaskProvider[T]) {
     
-    @scala.inline
-    def setProvideTasks(value: CancellationToken => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTasks", js.Any.fromFunction1(value))
+    inline def setProvideTasks(value: CancellationToken => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTasks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveTask(value: (T, CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveTask", js.Any.fromFunction2(value))
+    inline def setResolveTask(value: (T, CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveTask", js.Any.fromFunction2(value))
   }
 }

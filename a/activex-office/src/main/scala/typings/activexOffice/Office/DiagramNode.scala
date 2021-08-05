@@ -38,7 +38,7 @@ trait DiagramNode extends StObject {
   
   def NextNode(): DiagramNode = js.native
   
-  @JSName("Office.DiagramNode_typekey")
+  /* private */ @JSName("Office.DiagramNode_typekey")
   var OfficeDotDiagramNode_typekey: DiagramNode = js.native
   
   val Parent: js.Any = js.native

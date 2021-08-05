@@ -45,72 +45,52 @@ object gapi {
       }
       object Webfont {
         
-        @scala.inline
-        def apply(): Webfont = {
+        inline def apply(): Webfont = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Webfont]
         }
         
-        @scala.inline
-        implicit class WebfontMutableBuilder[Self <: Webfont] (val x: Self) extends AnyVal {
+        extension [Self <: Webfont](x: Self) {
           
-          @scala.inline
-          def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+          inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+          inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
           
-          @scala.inline
-          def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+          inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+          inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
           
-          @scala.inline
-          def setFiles(
+          inline def setFiles(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
             */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[js.Any]
           ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+          inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+          inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+          inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
           
-          @scala.inline
-          def setSubsets(value: js.Array[String]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
+          inline def setSubsets(value: js.Array[String]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSubsetsUndefined: Self = StObject.set(x, "subsets", js.undefined)
+          inline def setSubsetsUndefined: Self = StObject.set(x, "subsets", js.undefined)
           
-          @scala.inline
-          def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value :_*))
+          inline def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value :_*))
           
-          @scala.inline
-          def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+          inline def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+          inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
           
-          @scala.inline
-          def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
+          inline def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
           
-          @scala.inline
-          def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+          inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+          inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
         }
       }
       
@@ -124,29 +104,22 @@ object gapi {
       }
       object WebfontList {
         
-        @scala.inline
-        def apply(): WebfontList = {
+        inline def apply(): WebfontList = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[WebfontList]
         }
         
-        @scala.inline
-        implicit class WebfontListMutableBuilder[Self <: WebfontList] (val x: Self) extends AnyVal {
+        extension [Self <: WebfontList](x: Self) {
           
-          @scala.inline
-          def setItems(value: js.Array[Webfont]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[Webfont]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+          inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          @scala.inline
-          def setItemsVarargs(value: Webfont*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: Webfont*): Self = StObject.set(x, "items", js.Array(value :_*))
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         }
       }
       

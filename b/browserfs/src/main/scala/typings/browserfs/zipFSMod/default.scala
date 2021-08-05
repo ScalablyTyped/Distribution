@@ -36,8 +36,7 @@ object default {
   /**
     * Constructs a ZipFS instance with the given options.
     */
-  @scala.inline
-  def Create(opts: ZipFSOptions, cb: BFSCallback[ZipFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Create(opts: ZipFSOptions, cb: BFSCallback[ZipFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("browserfs/dist/node/backend/ZipFS", "default.Name")
   @js.native
@@ -47,8 +46,7 @@ object default {
   @js.native
   val Options: FileSystemOptions = js.native
   
-  @scala.inline
-  def RegisterDecompressionMethod(
+  inline def RegisterDecompressionMethod(
     m: typings.browserfs.zipFSMod.CompressionMethod,
     fcn: js.Function4[
       /* data */ Buffer, 
@@ -59,19 +57,15 @@ object default {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterDecompressionMethod")(m.asInstanceOf[js.Any], fcn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addToIndex(cd: js.Any, index: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addToIndex")(cd.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addToIndex(cd: js.Any, index: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addToIndex")(cd.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * **Deprecated. Please use ZipFS.Create() method instead.**
     */
-  @scala.inline
-  def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeIndex")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit], deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeIndex")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeIndex")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def computeIndex(data: Buffer, cb: js.Function1[/* zipTOC */ ZipTOC, Unit], deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("computeIndex")(data.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def computeIndexResponsive(
+  inline def computeIndexResponsive(
     data: js.Any,
     index: js.Any,
     cdPtr: js.Any,
@@ -85,9 +79,7 @@ object default {
     * Locates the end of central directory record at the end of the file.
     * Throws an exception if it cannot be found.
     */
-  @scala.inline
-  def getEOCD(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEOCD")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getEOCD(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEOCD")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+  inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
 }

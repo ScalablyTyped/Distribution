@@ -15,22 +15,17 @@ trait MemoryUsageDetails extends StObject {
 }
 object MemoryUsageDetails {
   
-  @scala.inline
-  def apply(count: Double, liveSize: Double, size: Double): MemoryUsageDetails = {
+  inline def apply(count: Double, liveSize: Double, size: Double): MemoryUsageDetails = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], liveSize = liveSize.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryUsageDetails]
   }
   
-  @scala.inline
-  implicit class MemoryUsageDetailsMutableBuilder[Self <: MemoryUsageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryUsageDetails](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSize(value: Double): Self = StObject.set(x, "liveSize", value.asInstanceOf[js.Any])
+    inline def setLiveSize(value: Double): Self = StObject.set(x, "liveSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

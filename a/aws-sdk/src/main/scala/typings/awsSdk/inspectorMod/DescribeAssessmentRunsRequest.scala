@@ -13,19 +13,15 @@ trait DescribeAssessmentRunsRequest extends StObject {
 }
 object DescribeAssessmentRunsRequest {
   
-  @scala.inline
-  def apply(assessmentRunArns: BatchDescribeArnList): DescribeAssessmentRunsRequest = {
+  inline def apply(assessmentRunArns: BatchDescribeArnList): DescribeAssessmentRunsRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArns = assessmentRunArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssessmentRunsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAssessmentRunsRequestMutableBuilder[Self <: DescribeAssessmentRunsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssessmentRunsRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArns(value: BatchDescribeArnList): Self = StObject.set(x, "assessmentRunArns", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArns(value: BatchDescribeArnList): Self = StObject.set(x, "assessmentRunArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
+    inline def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
   }
 }

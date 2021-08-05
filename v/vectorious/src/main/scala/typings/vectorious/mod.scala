@@ -217,8 +217,7 @@ object mod {
       * @param {Matrix} b
       * @returns {Matrix} a new matrix containing the sum of `a` and `b`
       **/
-    @scala.inline
-    def add(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def add(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Augments two matrices `a` and `b` of matching dimensions
@@ -227,8 +226,7 @@ object mod {
       * @param {Matrix} b
       * @returns {Matrix} the resultant matrix of `b` augmented to `a`
       **/
-    @scala.inline
-    def augment(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("augment")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def augment(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("augment")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Checks the equality of two matrices `a` and `b`.
@@ -236,14 +234,11 @@ object mod {
       * @param {Matrix} b
       * @returns {Boolean} `true` if equal, `false` otherwise
       **/
-    @scala.inline
-    def equals(a: Matrix, b: Matrix): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(a: Matrix, b: Matrix): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def fromArray(data: js.Array[js.Array[Double]]): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(data.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+    inline def fromArray(data: js.Array[js.Array[Double]]): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(data.asInstanceOf[js.Any]).asInstanceOf[Matrix]
     
-    @scala.inline
-    def fromTypedArray(data: js.Any, shape: js.Array[Double]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTypedArray")(data.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def fromTypedArray(data: js.Any, shape: js.Array[Double]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTypedArray")(data.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Creates an identity matrix of `size`, takes an optional `type` argument
@@ -252,10 +247,8 @@ object mod {
       * @param {TypedArray} type
       * @returns {Matrix} an identity matrix of the specified `size` and `type`
       **/
-    @scala.inline
-    def identity(size: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(size.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-    @scala.inline
-    def identity(size: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("identity")(size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def identity(size: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(size.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+    inline def identity(size: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("identity")(size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Creates a magic square matrix of `size`, takes an optional `type` argument
@@ -264,10 +257,8 @@ object mod {
       * @param {Number} type
       * @returns {Matrix} a magic square matrix of the specified `size` and `type`
       **/
-    @scala.inline
-    def magic(size: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("magic")(size.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-    @scala.inline
-    def magic(size: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("magic")(size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def magic(size: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("magic")(size.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+    inline def magic(size: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("magic")(size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Multiplies two matrices `a` and `b` of matching dimensions.
@@ -275,8 +266,7 @@ object mod {
       * @param {Matrix} b
       * @returns {Matrix} a new resultant matrix containing the matrix product of `a` and `b`
       **/
-    @scala.inline
-    def multiply(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def multiply(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Creates an `i x j` matrix containing ones (`1`), takes an
@@ -286,18 +276,15 @@ object mod {
       * @param {TypedArray} type
       * @returns {Matrix} a matrix of the specified dimensions and `type`
       **/
-    @scala.inline
-    def ones(i: Double, j: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def ones(i: Double, j: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def ones(i: Double, j: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def ones(i: Double, j: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Performs LU factorization on current matrix.
       * @returns {Array} an array with a new instance of the current matrix LU-
       * factorized and the corresponding pivot Int32Array
       **/
-    @scala.inline
-    def plu(matrix: Matrix): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("plu")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def plu(matrix: Matrix): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("plu")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Static method. Hadamard product of matrices
@@ -305,8 +292,7 @@ object mod {
       * @param {Matrix} b
       * @returns {Matrix} a new matrix containing the hadamard product
       **/
-    @scala.inline
-    def product(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("product")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def product(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("product")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Creates an `i x j` matrix containing random values
@@ -319,30 +305,21 @@ object mod {
       * @param {TypedArray} type
       * @returns {Matrix} a matrix of the specified dimensions and `type`
       **/
-    @scala.inline
-    def random(i: Double, j: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def random(i: Double, j: Double, deviation: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def random(i: Double, j: Double, deviation: Double, mean: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def random(i: Double, j: Double, deviation: Double, mean: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def random(i: Double, j: Double, deviation: Double, mean: Unit, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def random(i: Double, j: Double, deviation: Unit, mean: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def random(i: Double, j: Double, deviation: Unit, mean: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def random(i: Double, j: Double, deviation: Unit, mean: Unit, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double, deviation: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double, deviation: Double, mean: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double, deviation: Double, mean: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double, deviation: Double, mean: Unit, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double, deviation: Unit, mean: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double, deviation: Unit, mean: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def random(i: Double, j: Double, deviation: Unit, mean: Unit, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Finds the rank of a matrix using row echelon form
       * @param {Matrix} matrix
       * @returns {Number} rank
       **/
-    @scala.inline
-    def rank(matrix: Matrix): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rank")(matrix.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def rank(matrix: Matrix): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rank")(matrix.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Static method. Multiplies all elements of a matrix `a` with a specified `scalar`.
@@ -350,8 +327,7 @@ object mod {
       * @param {Number} scalar
       * @returns {Matrix} a new scaled matrix
       **/
-    @scala.inline
-    def scale(matrix: Matrix, scalar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(matrix.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def scale(matrix: Matrix, scalar: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(matrix.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Subtracts the matrix `b` from matrix `a`.
@@ -359,8 +335,7 @@ object mod {
       * @param {Matrix} b
       * @returns {Matrix} a new matrix containing the difference between `a` and `b`
       **/
-    @scala.inline
-    def subtract(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def subtract(a: Matrix, b: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
       * Static method. Creates an `i x j` matrix containing zeros (`0`), takes an
@@ -370,10 +345,8 @@ object mod {
       * @param {TypedArray} type
       * @returns {Matrix} a matrix of the specified dimensions and `type`
       **/
-    @scala.inline
-    def zeros(i: Double, j: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-    @scala.inline
-    def zeros(i: Double, j: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def zeros(i: Double, j: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+    inline def zeros(i: Double, j: Double, `type`: js.Any): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(i.asInstanceOf[js.Any], j.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Matrix]
   }
   
   @JSImport("vectorious", "Vector")
@@ -531,8 +504,7 @@ object mod {
       * @param {Vector} b
       * @returns {Vector} a vector containing the sum of `a` and `b`
       **/
-    @scala.inline
-    def add(a: Vector, v: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def add(a: Vector, v: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Determines the angle between two vectors `a` and `b`.
@@ -540,8 +512,7 @@ object mod {
       * @param {Vector} b
       * @returns {Number} the angle between the two vectors in radians
       **/
-    @scala.inline
-    def angle(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def angle(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Static method. Combines two vectors `a` and `b` (appends `b` to `a`).
@@ -549,8 +520,7 @@ object mod {
       * @param {Vector} b
       * @returns {Vector} `b` appended to vector `a`
       **/
-    @scala.inline
-    def combine(a: Vector, b: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def combine(a: Vector, b: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Performs dot multiplication with two vectors `a` and `b`.
@@ -558,8 +528,7 @@ object mod {
       * @param {Vector} b
       * @returns {Number} the dot product of the two vectors
       **/
-    @scala.inline
-    def dot(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def dot(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Static method. Checks the equality of two vectors `a` and `b`.
@@ -567,16 +536,14 @@ object mod {
       * @param {Vector} b
       * @returns {Boolean} `true` if the two vectors are equal, `false` otherwise
       **/
-    @scala.inline
-    def equals(a: Vector, b: Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(a: Vector, b: Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Static method. Normalizes `vector`, i.e. divides all elements with the magnitude.
       * @param {Vector} vector
       * @returns {Vector} a resultant normalized vector
       **/
-    @scala.inline
-    def normalize(vector: Vector): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[Vector]
+    inline def normalize(vector: Vector): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[Vector]
     
     /**
       * Static method. Creates a vector containing ones (`1`) of `count` size, takes
@@ -585,10 +552,8 @@ object mod {
       * @param {TypedArray} type
       * @returns {Vector} a new vector of the specified size and `type`
       **/
-    @scala.inline
-    def ones(count: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(count.asInstanceOf[js.Any]).asInstanceOf[Vector]
-    @scala.inline
-    def ones(count: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(count.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def ones(count: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(count.asInstanceOf[js.Any]).asInstanceOf[Vector]
+    inline def ones(count: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(count.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Projects the vector `a` onto the vector `b` using
@@ -597,8 +562,7 @@ object mod {
       * @param {Vector} b
       * @returns {Vector} a new resultant projected vector
       **/
-    @scala.inline
-    def project(a: Vector, b: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("project")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def project(a: Vector, b: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("project")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Creates a vector of `count` elements containing random
@@ -610,22 +574,14 @@ object mod {
       * @param {TypedArray} type
       * @returns {Vector} a new vector of the specified size and `type`
       **/
-    @scala.inline
-    def random(count: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any]).asInstanceOf[Vector]
-    @scala.inline
-    def random(count: Double, deviation: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any])).asInstanceOf[Vector]
-    @scala.inline
-    def random(count: Double, deviation: Double, mean: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Vector]
-    @scala.inline
-    def random(count: Double, deviation: Double, mean: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
-    @scala.inline
-    def random(count: Double, deviation: Double, mean: Unit, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
-    @scala.inline
-    def random(count: Double, deviation: Unit, mean: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Vector]
-    @scala.inline
-    def random(count: Double, deviation: Unit, mean: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
-    @scala.inline
-    def random(count: Double, deviation: Unit, mean: Unit, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def random(count: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any]).asInstanceOf[Vector]
+    inline def random(count: Double, deviation: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def random(count: Double, deviation: Double, mean: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def random(count: Double, deviation: Double, mean: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def random(count: Double, deviation: Double, mean: Unit, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def random(count: Double, deviation: Unit, mean: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def random(count: Double, deviation: Unit, mean: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def random(count: Double, deviation: Unit, mean: Unit, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(count.asInstanceOf[js.Any], deviation.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Creates a vector containing a range (can be either ascending or descending)
@@ -638,10 +594,8 @@ object mod {
       * @param {Number} end
       * @returns {Vector} a new vector containing the specified range of the specified `type`
       **/
-    @scala.inline
-    def range(start: Double, end: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Vector]
-    @scala.inline
-    def range(start: Double, step: Double, end: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def range(start: Double, end: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def range(start: Double, step: Double, end: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], step.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Multiplies all elements of `vector` with a specified `scalar`.
@@ -649,8 +603,7 @@ object mod {
       * @param {Number} scalar
       * @returns {Vector} a resultant scaled vector
       **/
-    @scala.inline
-    def scale(vector: Vector, scalar: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(vector.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def scale(vector: Vector, scalar: Double): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(vector.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Subtracts the vector `b` from vector `a`.
@@ -658,8 +611,7 @@ object mod {
       * @param {Vector} b
       * @returns {Vector} a vector containing the difference between `a` and `b`
       **/
-    @scala.inline
-    def subtract(a: Vector, b: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def subtract(a: Vector, b: Vector): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       * Static method. Creates a vector containing zeros (`0`) of `count` size, takes
@@ -668,9 +620,7 @@ object mod {
       * @param {TypedArray} type
       * @returns {Vector} a new vector of the specified size and `type`
       **/
-    @scala.inline
-    def zeros(count: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(count.asInstanceOf[js.Any]).asInstanceOf[Vector]
-    @scala.inline
-    def zeros(count: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(count.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def zeros(count: Double): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(count.asInstanceOf[js.Any]).asInstanceOf[Vector]
+    inline def zeros(count: Double, `type`: js.Any): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(count.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Vector]
   }
 }

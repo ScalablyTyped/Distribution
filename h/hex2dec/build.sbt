@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hex2dec"
-version := "1.1-dt-20200712Z-ce6e1f"
+version := "1.1-dt-20200712Z-c8a856"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

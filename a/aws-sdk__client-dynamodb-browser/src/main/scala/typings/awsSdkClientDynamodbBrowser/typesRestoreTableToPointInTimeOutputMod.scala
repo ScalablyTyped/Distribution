@@ -26,23 +26,18 @@ object typesRestoreTableToPointInTimeOutputMod {
   }
   object RestoreTableToPointInTimeOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): RestoreTableToPointInTimeOutput = {
+    inline def apply($metadata: ResponseMetadata): RestoreTableToPointInTimeOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreTableToPointInTimeOutput]
     }
     
-    @scala.inline
-    implicit class RestoreTableToPointInTimeOutputMutableBuilder[Self <: RestoreTableToPointInTimeOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreTableToPointInTimeOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescription(value: UnmarshalledTableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: UnmarshalledTableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
 }

@@ -18,23 +18,18 @@ trait IntersectionTypeAnnotation_
 }
 object IntersectionTypeAnnotation_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): IntersectionTypeAnnotation_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double, types: js.Array[FlowTypeAnnotation]): IntersectionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("IntersectionTypeAnnotation")
     __obj.asInstanceOf[IntersectionTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class IntersectionTypeAnnotation_MutableBuilder[Self <: IntersectionTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: IntersectionTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[FlowTypeAnnotation]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[FlowTypeAnnotation]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: FlowTypeAnnotation*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: FlowTypeAnnotation*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

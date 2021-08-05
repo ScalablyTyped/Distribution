@@ -39,8 +39,7 @@ object S3 {
     @JSImport("@pulumi/aws", "sdk.S3.ManagedUpload.maxTotalParts")
     @js.native
     def maxTotalParts: Double = js.native
-    @scala.inline
-    def maxTotalParts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxTotalParts")(x.asInstanceOf[js.Any])
+    inline def maxTotalParts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxTotalParts")(x.asInstanceOf[js.Any])
     
     /**
       * Returns the minimum number of bytes for an individual part upload.
@@ -50,8 +49,7 @@ object S3 {
     @JSImport("@pulumi/aws", "sdk.S3.ManagedUpload.minPartSize")
     @js.native
     def minPartSize: Double = js.native
-    @scala.inline
-    def minPartSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPartSize")(x.asInstanceOf[js.Any])
+    inline def minPartSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPartSize")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@pulumi/aws", "sdk.S3.PresignedPost")

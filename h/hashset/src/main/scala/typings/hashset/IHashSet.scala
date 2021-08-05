@@ -32,8 +32,7 @@ trait IHashSet[TValue] extends StObject {
 }
 object IHashSet {
   
-  @scala.inline
-  def apply[TValue](
+  inline def apply[TValue](
     add: TValue => Unit,
     addAll: js.Array[TValue] => Unit,
     clear: () => Unit,
@@ -51,43 +50,30 @@ object IHashSet {
     __obj.asInstanceOf[IHashSet[TValue]]
   }
   
-  @scala.inline
-  implicit class IHashSetMutableBuilder[Self <: IHashSet[?], TValue] (val x: Self & IHashSet[TValue]) extends AnyVal {
+  extension [Self <: IHashSet[?], TValue](x: Self & IHashSet[TValue]) {
     
-    @scala.inline
-    def setAdd(value: TValue => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: TValue => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddAll(value: js.Array[TValue] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+    inline def setAddAll(value: js.Array[TValue] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComplement(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "complement", js.Any.fromFunction1(value))
+    inline def setComplement(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "complement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContains(value: TValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: TValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersection(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+    inline def setIntersection(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSubsetOf(value: IHashSet[TValue] => Boolean): Self = StObject.set(x, "isSubsetOf", js.Any.fromFunction1(value))
+    inline def setIsSubsetOf(value: IHashSet[TValue] => Boolean): Self = StObject.set(x, "isSubsetOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: TValue => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: TValue => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+    inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnion(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
+    inline def setUnion(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValues(value: () => js.Array[TValue]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+    inline def setValues(value: () => js.Array[TValue]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

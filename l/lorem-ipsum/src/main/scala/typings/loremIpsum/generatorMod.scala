@@ -50,20 +50,16 @@ object generatorMod {
   }
   object IBounds {
     
-    @scala.inline
-    def apply(max: Double, min: Double): IBounds = {
+    inline def apply(max: Double, min: Double): IBounds = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBounds]
     }
     
-    @scala.inline
-    implicit class IBoundsMutableBuilder[Self <: IBounds] (val x: Self) extends AnyVal {
+    extension [Self <: IBounds](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,47 +77,34 @@ object generatorMod {
   }
   object IGeneratorOptions {
     
-    @scala.inline
-    def apply(): IGeneratorOptions = {
+    inline def apply(): IGeneratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGeneratorOptions]
     }
     
-    @scala.inline
-    implicit class IGeneratorOptionsMutableBuilder[Self <: IGeneratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IGeneratorOptions](x: Self) {
       
-      @scala.inline
-      def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+      inline def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
       
-      @scala.inline
-      def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
       
-      @scala.inline
-      def setSentencesPerParagraph(value: IBounds): Self = StObject.set(x, "sentencesPerParagraph", value.asInstanceOf[js.Any])
+      inline def setSentencesPerParagraph(value: IBounds): Self = StObject.set(x, "sentencesPerParagraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentencesPerParagraphUndefined: Self = StObject.set(x, "sentencesPerParagraph", js.undefined)
+      inline def setSentencesPerParagraphUndefined: Self = StObject.set(x, "sentencesPerParagraph", js.undefined)
       
-      @scala.inline
-      def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsPerSentence(value: IBounds): Self = StObject.set(x, "wordsPerSentence", value.asInstanceOf[js.Any])
+      inline def setWordsPerSentence(value: IBounds): Self = StObject.set(x, "wordsPerSentence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsPerSentenceUndefined: Self = StObject.set(x, "wordsPerSentence", js.undefined)
+      inline def setWordsPerSentenceUndefined: Self = StObject.set(x, "wordsPerSentence", js.undefined)
       
-      @scala.inline
-      def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+      inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
       
-      @scala.inline
-      def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
   
@@ -131,17 +114,14 @@ object generatorMod {
   }
   object IMath {
     
-    @scala.inline
-    def apply(seedrandom: ISeedRandom): IMath = {
+    inline def apply(seedrandom: ISeedRandom): IMath = {
       val __obj = js.Dynamic.literal(seedrandom = seedrandom.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMath]
     }
     
-    @scala.inline
-    implicit class IMathMutableBuilder[Self <: IMath] (val x: Self) extends AnyVal {
+    extension [Self <: IMath](x: Self) {
       
-      @scala.inline
-      def setSeedrandom(value: ISeedRandom): Self = StObject.set(x, "seedrandom", value.asInstanceOf[js.Any])
+      inline def setSeedrandom(value: ISeedRandom): Self = StObject.set(x, "seedrandom", value.asInstanceOf[js.Any])
     }
   }
   

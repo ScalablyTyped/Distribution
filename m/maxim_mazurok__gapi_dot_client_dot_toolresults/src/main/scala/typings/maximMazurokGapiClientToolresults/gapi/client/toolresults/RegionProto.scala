@@ -20,37 +20,27 @@ trait RegionProto extends StObject {
 }
 object RegionProto {
   
-  @scala.inline
-  def apply(): RegionProto = {
+  inline def apply(): RegionProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionProto]
   }
   
-  @scala.inline
-  implicit class RegionProtoMutableBuilder[Self <: RegionProto] (val x: Self) extends AnyVal {
+  extension [Self <: RegionProto](x: Self) {
     
-    @scala.inline
-    def setHeightPx(value: Double): Self = StObject.set(x, "heightPx", value.asInstanceOf[js.Any])
+    inline def setHeightPx(value: Double): Self = StObject.set(x, "heightPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightPxUndefined: Self = StObject.set(x, "heightPx", js.undefined)
+    inline def setHeightPxUndefined: Self = StObject.set(x, "heightPx", js.undefined)
     
-    @scala.inline
-    def setLeftPx(value: Double): Self = StObject.set(x, "leftPx", value.asInstanceOf[js.Any])
+    inline def setLeftPx(value: Double): Self = StObject.set(x, "leftPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftPxUndefined: Self = StObject.set(x, "leftPx", js.undefined)
+    inline def setLeftPxUndefined: Self = StObject.set(x, "leftPx", js.undefined)
     
-    @scala.inline
-    def setTopPx(value: Double): Self = StObject.set(x, "topPx", value.asInstanceOf[js.Any])
+    inline def setTopPx(value: Double): Self = StObject.set(x, "topPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopPxUndefined: Self = StObject.set(x, "topPx", js.undefined)
+    inline def setTopPxUndefined: Self = StObject.set(x, "topPx", js.undefined)
     
-    @scala.inline
-    def setWidthPx(value: Double): Self = StObject.set(x, "widthPx", value.asInstanceOf[js.Any])
+    inline def setWidthPx(value: Double): Self = StObject.set(x, "widthPx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthPxUndefined: Self = StObject.set(x, "widthPx", js.undefined)
+    inline def setWidthPxUndefined: Self = StObject.set(x, "widthPx", js.undefined)
   }
 }

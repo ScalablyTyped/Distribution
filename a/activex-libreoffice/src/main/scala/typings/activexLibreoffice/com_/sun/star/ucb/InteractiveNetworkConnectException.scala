@@ -17,16 +17,13 @@ trait InteractiveNetworkConnectException
 }
 object InteractiveNetworkConnectException {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Server: String): InteractiveNetworkConnectException = {
+  inline def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Server: String): InteractiveNetworkConnectException = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Server = Server.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveNetworkConnectException]
   }
   
-  @scala.inline
-  implicit class InteractiveNetworkConnectExceptionMutableBuilder[Self <: InteractiveNetworkConnectException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveNetworkConnectException](x: Self) {
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
   }
 }

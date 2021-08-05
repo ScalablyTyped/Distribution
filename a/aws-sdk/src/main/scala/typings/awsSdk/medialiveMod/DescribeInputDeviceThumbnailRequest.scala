@@ -18,19 +18,15 @@ trait DescribeInputDeviceThumbnailRequest extends StObject {
 }
 object DescribeInputDeviceThumbnailRequest {
   
-  @scala.inline
-  def apply(Accept: AcceptHeader, InputDeviceId: string): DescribeInputDeviceThumbnailRequest = {
+  inline def apply(Accept: AcceptHeader, InputDeviceId: string): DescribeInputDeviceThumbnailRequest = {
     val __obj = js.Dynamic.literal(Accept = Accept.asInstanceOf[js.Any], InputDeviceId = InputDeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInputDeviceThumbnailRequest]
   }
   
-  @scala.inline
-  implicit class DescribeInputDeviceThumbnailRequestMutableBuilder[Self <: DescribeInputDeviceThumbnailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInputDeviceThumbnailRequest](x: Self) {
     
-    @scala.inline
-    def setAccept(value: AcceptHeader): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: AcceptHeader): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
+    inline def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
   }
 }

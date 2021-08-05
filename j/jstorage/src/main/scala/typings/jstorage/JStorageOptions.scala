@@ -10,16 +10,13 @@ trait JStorageOptions extends StObject {
 }
 object JStorageOptions {
   
-  @scala.inline
-  def apply(TTL: Double): JStorageOptions = {
+  inline def apply(TTL: Double): JStorageOptions = {
     val __obj = js.Dynamic.literal(TTL = TTL.asInstanceOf[js.Any])
     __obj.asInstanceOf[JStorageOptions]
   }
   
-  @scala.inline
-  implicit class JStorageOptionsMutableBuilder[Self <: JStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JStorageOptions](x: Self) {
     
-    @scala.inline
-    def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
+    inline def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
   }
 }

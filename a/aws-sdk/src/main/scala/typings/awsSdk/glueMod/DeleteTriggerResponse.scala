@@ -13,19 +13,15 @@ trait DeleteTriggerResponse extends StObject {
 }
 object DeleteTriggerResponse {
   
-  @scala.inline
-  def apply(): DeleteTriggerResponse = {
+  inline def apply(): DeleteTriggerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTriggerResponse]
   }
   
-  @scala.inline
-  implicit class DeleteTriggerResponseMutableBuilder[Self <: DeleteTriggerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTriggerResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

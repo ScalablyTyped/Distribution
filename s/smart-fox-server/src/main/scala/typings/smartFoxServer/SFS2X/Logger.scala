@@ -14,16 +14,13 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(setLevel: Double => Unit): Logger = {
+  inline def apply(setLevel: Double => Unit): Logger = {
     val __obj = js.Dynamic.literal(setLevel = js.Any.fromFunction1(setLevel))
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setSetLevel(value: Double => Unit): Self = StObject.set(x, "setLevel", js.Any.fromFunction1(value))
+    inline def setSetLevel(value: Double => Unit): Self = StObject.set(x, "setLevel", js.Any.fromFunction1(value))
   }
 }

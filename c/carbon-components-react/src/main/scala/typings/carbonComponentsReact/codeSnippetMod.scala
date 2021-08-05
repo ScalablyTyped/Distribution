@@ -17,8 +17,7 @@ object codeSnippetMod {
   val ^ : js.Any = js.native
   
   // tslint:disable:unified-signatures
-  @scala.inline
-  def default(props: FCProps[CodeSnippetDivProps | CodeSnippetInlineProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default(props: FCProps[CodeSnippetDivProps | CodeSnippetInlineProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/CodeSnippet", "CodeSnippetSkeleton")
   @js.native

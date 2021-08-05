@@ -64,8 +64,7 @@ trait XStorageRawAccess extends StObject {
 }
 object XStorageRawAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPlainRawStreamElement: String => XInputStream,
     getRawEncrStreamElement: String => XInputStream,
     insertRawEncrStreamElement: (String, XInputStream) => Unit
@@ -74,16 +73,12 @@ object XStorageRawAccess {
     __obj.asInstanceOf[XStorageRawAccess]
   }
   
-  @scala.inline
-  implicit class XStorageRawAccessMutableBuilder[Self <: XStorageRawAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XStorageRawAccess](x: Self) {
     
-    @scala.inline
-    def setGetPlainRawStreamElement(value: String => XInputStream): Self = StObject.set(x, "getPlainRawStreamElement", js.Any.fromFunction1(value))
+    inline def setGetPlainRawStreamElement(value: String => XInputStream): Self = StObject.set(x, "getPlainRawStreamElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRawEncrStreamElement(value: String => XInputStream): Self = StObject.set(x, "getRawEncrStreamElement", js.Any.fromFunction1(value))
+    inline def setGetRawEncrStreamElement(value: String => XInputStream): Self = StObject.set(x, "getRawEncrStreamElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertRawEncrStreamElement(value: (String, XInputStream) => Unit): Self = StObject.set(x, "insertRawEncrStreamElement", js.Any.fromFunction2(value))
+    inline def setInsertRawEncrStreamElement(value: (String, XInputStream) => Unit): Self = StObject.set(x, "insertRawEncrStreamElement", js.Any.fromFunction2(value))
   }
 }

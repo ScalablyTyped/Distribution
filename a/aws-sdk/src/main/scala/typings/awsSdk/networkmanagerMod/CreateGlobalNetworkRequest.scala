@@ -18,28 +18,21 @@ trait CreateGlobalNetworkRequest extends StObject {
 }
 object CreateGlobalNetworkRequest {
   
-  @scala.inline
-  def apply(): CreateGlobalNetworkRequest = {
+  inline def apply(): CreateGlobalNetworkRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGlobalNetworkRequest]
   }
   
-  @scala.inline
-  implicit class CreateGlobalNetworkRequestMutableBuilder[Self <: CreateGlobalNetworkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGlobalNetworkRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

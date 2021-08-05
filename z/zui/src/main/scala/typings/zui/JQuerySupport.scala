@@ -10,16 +10,13 @@ trait JQuerySupport extends StObject {
 }
 object JQuerySupport {
   
-  @scala.inline
-  def apply(transition: Boolean | TransitionEventNames): JQuerySupport = {
+  inline def apply(transition: Boolean | TransitionEventNames): JQuerySupport = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuerySupport]
   }
   
-  @scala.inline
-  implicit class JQuerySupportMutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
+  extension [Self <: JQuerySupport](x: Self) {
     
-    @scala.inline
-    def setTransition(value: Boolean | TransitionEventNames): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: Boolean | TransitionEventNames): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
   }
 }

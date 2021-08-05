@@ -17,8 +17,7 @@ trait ParametersReposDownloadArchiveEndpoint extends StObject {
 }
 object ParametersReposDownloadArchiveEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposDownloadArchiveEndpoint,
     request: ReposDownloadArchiveRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersReposDownloadArchiveEndpoint {
     __obj.asInstanceOf[ParametersReposDownloadArchiveEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposDownloadArchiveEndpointMutableBuilder[Self <: ParametersReposDownloadArchiveEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposDownloadArchiveEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposDownloadArchiveEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposDownloadArchiveEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposDownloadArchiveRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposDownloadArchiveRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

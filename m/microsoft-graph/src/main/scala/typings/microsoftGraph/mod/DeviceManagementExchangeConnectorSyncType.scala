@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceManagementExchangeConnectorSyncType extends StObject
 object DeviceManagementExchangeConnectorSyncType {
   
-  @scala.inline
-  def deltaSync: typings.microsoftGraph.microsoftGraphStrings.deltaSync = "deltaSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deltaSync]
+  inline def deltaSync: typings.microsoftGraph.microsoftGraphStrings.deltaSync = "deltaSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deltaSync]
   
-  @scala.inline
-  def fullSync: typings.microsoftGraph.microsoftGraphStrings.fullSync = "fullSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fullSync]
+  inline def fullSync: typings.microsoftGraph.microsoftGraphStrings.fullSync = "fullSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.fullSync]
 }

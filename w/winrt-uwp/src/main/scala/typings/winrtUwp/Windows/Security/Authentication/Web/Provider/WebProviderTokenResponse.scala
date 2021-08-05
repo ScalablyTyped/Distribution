@@ -13,16 +13,13 @@ trait WebProviderTokenResponse extends StObject {
 }
 object WebProviderTokenResponse {
   
-  @scala.inline
-  def apply(clientResponse: WebTokenResponse): WebProviderTokenResponse = {
+  inline def apply(clientResponse: WebTokenResponse): WebProviderTokenResponse = {
     val __obj = js.Dynamic.literal(clientResponse = clientResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebProviderTokenResponse]
   }
   
-  @scala.inline
-  implicit class WebProviderTokenResponseMutableBuilder[Self <: WebProviderTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WebProviderTokenResponse](x: Self) {
     
-    @scala.inline
-    def setClientResponse(value: WebTokenResponse): Self = StObject.set(x, "clientResponse", value.asInstanceOf[js.Any])
+    inline def setClientResponse(value: WebTokenResponse): Self = StObject.set(x, "clientResponse", value.asInstanceOf[js.Any])
   }
 }

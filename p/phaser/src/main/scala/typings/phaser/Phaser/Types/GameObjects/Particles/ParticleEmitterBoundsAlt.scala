@@ -28,25 +28,19 @@ trait ParticleEmitterBoundsAlt extends StObject {
 }
 object ParticleEmitterBoundsAlt {
   
-  @scala.inline
-  def apply(h: Double, w: Double, x: Double, y: Double): ParticleEmitterBoundsAlt = {
+  inline def apply(h: Double, w: Double, x: Double, y: Double): ParticleEmitterBoundsAlt = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterBoundsAlt]
   }
   
-  @scala.inline
-  implicit class ParticleEmitterBoundsAltMutableBuilder[Self <: ParticleEmitterBoundsAlt] (val x: Self) extends AnyVal {
+  extension [Self <: ParticleEmitterBoundsAlt](x: Self) {
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

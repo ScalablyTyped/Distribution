@@ -56,32 +56,24 @@ object htmlMod {
   }
   object HtmlResponseOptions {
     
-    @scala.inline
-    def apply[TData /* <: JsonObject */](): HtmlResponseOptions[TData] = {
+    inline def apply[TData /* <: JsonObject */](): HtmlResponseOptions[TData] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HtmlResponseOptions[TData]]
     }
     
-    @scala.inline
-    implicit class HtmlResponseOptionsMutableBuilder[Self <: HtmlResponseOptions[?], TData /* <: JsonObject */] (val x: Self & HtmlResponseOptions[TData]) extends AnyVal {
+    extension [Self <: HtmlResponseOptions[?], TData /* <: JsonObject */](x: Self & HtmlResponseOptions[TData]) {
       
-      @scala.inline
-      def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setSuppress(value: Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
+      inline def setSuppress(value: Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressUndefined: Self = StObject.set(x, "suppress", js.undefined)
+      inline def setSuppressUndefined: Self = StObject.set(x, "suppress", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

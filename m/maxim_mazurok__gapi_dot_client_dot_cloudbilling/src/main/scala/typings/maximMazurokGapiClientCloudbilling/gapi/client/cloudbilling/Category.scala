@@ -20,37 +20,27 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(): Category = {
+  inline def apply(): Category = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setResourceFamily(value: String): Self = StObject.set(x, "resourceFamily", value.asInstanceOf[js.Any])
+    inline def setResourceFamily(value: String): Self = StObject.set(x, "resourceFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceFamilyUndefined: Self = StObject.set(x, "resourceFamily", js.undefined)
+    inline def setResourceFamilyUndefined: Self = StObject.set(x, "resourceFamily", js.undefined)
     
-    @scala.inline
-    def setResourceGroup(value: String): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
+    inline def setResourceGroup(value: String): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
+    inline def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
     
-    @scala.inline
-    def setServiceDisplayName(value: String): Self = StObject.set(x, "serviceDisplayName", value.asInstanceOf[js.Any])
+    inline def setServiceDisplayName(value: String): Self = StObject.set(x, "serviceDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDisplayNameUndefined: Self = StObject.set(x, "serviceDisplayName", js.undefined)
+    inline def setServiceDisplayNameUndefined: Self = StObject.set(x, "serviceDisplayName", js.undefined)
     
-    @scala.inline
-    def setUsageType(value: String): Self = StObject.set(x, "usageType", value.asInstanceOf[js.Any])
+    inline def setUsageType(value: String): Self = StObject.set(x, "usageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageTypeUndefined: Self = StObject.set(x, "usageType", js.undefined)
+    inline def setUsageTypeUndefined: Self = StObject.set(x, "usageType", js.undefined)
   }
 }

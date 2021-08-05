@@ -51,7 +51,7 @@ object fdc3 {
   @js.native
   abstract class ChannelBase protected ()
     extends typings.openfin.mainMod.ChannelBase {
-    protected def this(id: String, `type`: String) = this()
+    /* protected */ def this(id: String, `type`: String) = this()
   }
   
   @JSImport("openfin", "fdc3.ChannelError")
@@ -164,63 +164,46 @@ object fdc3 {
     def this(transport: SystemChannelTransport) = this()
   }
   
-  @scala.inline
-  def addContextListener(handler: js.Function1[/* context */ typings.openfin.contextMod.Context, Unit]): typings.openfin.mainMod.ContextListener = ^.asInstanceOf[js.Dynamic].applyDynamic("addContextListener")(handler.asInstanceOf[js.Any]).asInstanceOf[typings.openfin.mainMod.ContextListener]
+  inline def addContextListener(handler: js.Function1[/* context */ typings.openfin.contextMod.Context, Unit]): typings.openfin.mainMod.ContextListener = ^.asInstanceOf[js.Dynamic].applyDynamic("addContextListener")(handler.asInstanceOf[js.Any]).asInstanceOf[typings.openfin.mainMod.ContextListener]
   
-  @scala.inline
-  def addEventListener_channelchanged(
+  inline def addEventListener_channelchanged(
     eventType: `channel-changed`,
     handler: js.Function1[/* event */ typings.openfin.contextChannelsMod.ChannelChangedEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addIntentListener(intent: String, handler: js.Function1[/* context */ typings.openfin.contextMod.Context, js.Any]): typings.openfin.mainMod.IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.openfin.mainMod.IntentListener]
+  inline def addIntentListener(intent: String, handler: js.Function1[/* context */ typings.openfin.contextMod.Context, js.Any]): typings.openfin.mainMod.IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.openfin.mainMod.IntentListener]
   
-  @scala.inline
-  def broadcast(context: typings.openfin.contextMod.Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def broadcast(context: typings.openfin.contextMod.Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("openfin", "fdc3.defaultChannel")
   @js.native
   val defaultChannel: typings.openfin.contextChannelsMod.DefaultChannel_ = js.native
   
-  @scala.inline
-  def findIntent(intent: String): js.Promise[typings.openfin.mainMod.AppIntent] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.mainMod.AppIntent]]
-  @scala.inline
-  def findIntent(intent: String, context: typings.openfin.contextMod.Context): js.Promise[typings.openfin.mainMod.AppIntent] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openfin.mainMod.AppIntent]]
+  inline def findIntent(intent: String): js.Promise[typings.openfin.mainMod.AppIntent] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.mainMod.AppIntent]]
+  inline def findIntent(intent: String, context: typings.openfin.contextMod.Context): js.Promise[typings.openfin.mainMod.AppIntent] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openfin.mainMod.AppIntent]]
   
-  @scala.inline
-  def findIntentsByContext(context: typings.openfin.contextMod.Context): js.Promise[js.Array[typings.openfin.mainMod.AppIntent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntentsByContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.openfin.mainMod.AppIntent]]]
+  inline def findIntentsByContext(context: typings.openfin.contextMod.Context): js.Promise[js.Array[typings.openfin.mainMod.AppIntent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntentsByContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.openfin.mainMod.AppIntent]]]
   
-  @scala.inline
-  def getChannelById(channelId: typings.openfin.contextChannelsMod.ChannelId): js.Promise[typings.openfin.contextChannelsMod.Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.Channel]]
+  inline def getChannelById(channelId: typings.openfin.contextChannelsMod.ChannelId): js.Promise[typings.openfin.contextChannelsMod.Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.Channel]]
   
-  @scala.inline
-  def getCurrentChannel(): js.Promise[typings.openfin.contextChannelsMod.Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.Channel]]
-  @scala.inline
-  def getCurrentChannel(identity: Identity): js.Promise[typings.openfin.contextChannelsMod.Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.Channel]]
+  inline def getCurrentChannel(): js.Promise[typings.openfin.contextChannelsMod.Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.Channel]]
+  inline def getCurrentChannel(identity: Identity): js.Promise[typings.openfin.contextChannelsMod.Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.Channel]]
   
-  @scala.inline
-  def getOrCreateAppChannel(name: String): js.Promise[typings.openfin.contextChannelsMod.AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.AppChannel]]
+  inline def getOrCreateAppChannel(name: String): js.Promise[typings.openfin.contextChannelsMod.AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.AppChannel]]
   
-  @scala.inline
-  def getSystemChannels(): js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]]]
+  inline def getSystemChannels(): js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]]]
   
-  @scala.inline
-  def open(name: typings.openfin.directoryMod.AppName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def open(name: typings.openfin.directoryMod.AppName, context: typings.openfin.contextMod.Context): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def open(name: typings.openfin.directoryMod.AppName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def open(name: typings.openfin.directoryMod.AppName, context: typings.openfin.contextMod.Context): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def raiseIntent(intent: String, context: typings.openfin.contextMod.Context): js.Promise[typings.openfin.mainMod.IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openfin.mainMod.IntentResolution]]
-  @scala.inline
-  def raiseIntent(
+  inline def raiseIntent(intent: String, context: typings.openfin.contextMod.Context): js.Promise[typings.openfin.mainMod.IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openfin.mainMod.IntentResolution]]
+  inline def raiseIntent(
     intent: String,
     context: typings.openfin.contextMod.Context,
     target: typings.openfin.directoryMod.AppName
   ): js.Promise[typings.openfin.mainMod.IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openfin.mainMod.IntentResolution]]
   
-  @scala.inline
-  def removeEventListener_channelchanged(
+  inline def removeEventListener_channelchanged(
     eventType: `channel-changed`,
     handler: js.Function1[/* event */ typings.openfin.contextChannelsMod.ChannelChangedEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]

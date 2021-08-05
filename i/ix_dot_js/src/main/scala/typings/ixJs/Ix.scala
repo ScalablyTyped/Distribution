@@ -37,8 +37,7 @@ object Ix {
   }
   object Dictionary {
     
-    @scala.inline
-    def apply[TKey, TValue](
+    inline def apply[TKey, TValue](
       add: (TKey, TValue) => Unit,
       clear: () => Unit,
       get: TKey => TValue,
@@ -54,38 +53,27 @@ object Ix {
       __obj.asInstanceOf[Dictionary[TKey, TValue]]
     }
     
-    @scala.inline
-    implicit class DictionaryMutableBuilder[Self <: Dictionary[?, ?], TKey, TValue] (val x: Self & (Dictionary[TKey, TValue])) extends AnyVal {
+    extension [Self <: Dictionary[?, ?], TKey, TValue](x: Self & (Dictionary[TKey, TValue])) {
       
-      @scala.inline
-      def setAdd(value: (TKey, TValue) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (TKey, TValue) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: TKey => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: TKey => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValues(value: () => js.Array[TValue]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => js.Array[TValue]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHas(value: TKey => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: TKey => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: TKey => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: TKey => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (TKey, TValue) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (TKey, TValue) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToEnumerable(value: () => Enumerable[KeyValuePair[TKey, TValue]]): Self = StObject.set(x, "toEnumerable", js.Any.fromFunction0(value))
+      inline def setToEnumerable(value: () => Enumerable[KeyValuePair[TKey, TValue]]): Self = StObject.set(x, "toEnumerable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTryGetValue(value: TKey => TValue): Self = StObject.set(x, "tryGetValue", js.Any.fromFunction1(value))
+      inline def setTryGetValue(value: TKey => TValue): Self = StObject.set(x, "tryGetValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -95,17 +83,14 @@ object Ix {
   }
   object Disposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit): Disposable = {
+    inline def apply(dispose: () => Unit): Disposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[Disposable]
     }
     
-    @scala.inline
-    implicit class DisposableMutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
+    extension [Self <: Disposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -570,20 +555,16 @@ object Ix {
   }
   object Enumerator {
     
-    @scala.inline
-    def apply[T](dispose: () => Unit, getCurrent: () => T, moveNext: () => Boolean): Enumerator[T] = {
+    inline def apply[T](dispose: () => Unit, getCurrent: () => T, moveNext: () => Boolean): Enumerator[T] = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), getCurrent = js.Any.fromFunction0(getCurrent), moveNext = js.Any.fromFunction0(moveNext))
       __obj.asInstanceOf[Enumerator[T]]
     }
     
-    @scala.inline
-    implicit class EnumeratorMutableBuilder[Self <: Enumerator[?], T] (val x: Self & Enumerator[T]) extends AnyVal {
+    extension [Self <: Enumerator[?], T](x: Self & Enumerator[T]) {
       
-      @scala.inline
-      def setGetCurrent(value: () => T): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
+      inline def setGetCurrent(value: () => T): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+      inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
     }
   }
   
@@ -619,20 +600,16 @@ object Ix {
   }
   object KeyValuePair {
     
-    @scala.inline
-    def apply[TKey, TValue](key: TKey, value: TValue): KeyValuePair[TKey, TValue] = {
+    inline def apply[TKey, TValue](key: TKey, value: TValue): KeyValuePair[TKey, TValue] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyValuePair[TKey, TValue]]
     }
     
-    @scala.inline
-    implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[?, ?], TKey, TValue] (val x: Self & (KeyValuePair[TKey, TValue])) extends AnyVal {
+    extension [Self <: KeyValuePair[?, ?], TKey, TValue](x: Self & (KeyValuePair[TKey, TValue])) {
       
-      @scala.inline
-      def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -648,8 +625,7 @@ object Ix {
   }
   object Lookup {
     
-    @scala.inline
-    def apply[TKey, TValue](
+    inline def apply[TKey, TValue](
       get: TKey => Enumerable[TValue],
       has: TKey => Boolean,
       length: () => Double,
@@ -659,20 +635,15 @@ object Ix {
       __obj.asInstanceOf[Lookup[TKey, TValue]]
     }
     
-    @scala.inline
-    implicit class LookupMutableBuilder[Self <: Lookup[?, ?], TKey, TValue] (val x: Self & (Lookup[TKey, TValue])) extends AnyVal {
+    extension [Self <: Lookup[?, ?], TKey, TValue](x: Self & (Lookup[TKey, TValue])) {
       
-      @scala.inline
-      def setGet(value: TKey => Enumerable[TValue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: TKey => Enumerable[TValue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: TKey => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: TKey => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToEnumerable(value: () => Enumerable[Grouping[TKey, TValue]]): Self = StObject.set(x, "toEnumerable", js.Any.fromFunction0(value))
+      inline def setToEnumerable(value: () => Enumerable[Grouping[TKey, TValue]]): Self = StObject.set(x, "toEnumerable", js.Any.fromFunction0(value))
     }
   }
   
@@ -686,32 +657,24 @@ object Ix {
   }
   object Observer {
     
-    @scala.inline
-    def apply[T](): Observer[T] = {
+    inline def apply[T](): Observer[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Observer[T]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
       
-      @scala.inline
-      def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
+      inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
+      inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnNext(value: /* value */ T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+      inline def setOnNext(value: /* value */ T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
+      inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     }
   }
   

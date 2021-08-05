@@ -26,50 +26,36 @@ object mod extends Shortcut {
   }
   object Opt {
     
-    @scala.inline
-    def apply(): Opt = {
+    inline def apply(): Opt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Opt]
     }
     
-    @scala.inline
-    implicit class OptMutableBuilder[Self <: Opt] (val x: Self) extends AnyVal {
+    extension [Self <: Opt](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDemand(value: String | Double | js.Array[String]): Self = StObject.set(x, "demand", value.asInstanceOf[js.Any])
+      inline def setDemand(value: String | Double | js.Array[String]): Self = StObject.set(x, "demand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDemandUndefined: Self = StObject.set(x, "demand", js.undefined)
+      inline def setDemandUndefined: Self = StObject.set(x, "demand", js.undefined)
       
-      @scala.inline
-      def setDemandVarargs(value: String*): Self = StObject.set(x, "demand", js.Array(value :_*))
+      inline def setDemandVarargs(value: String*): Self = StObject.set(x, "demand", js.Array(value :_*))
       
-      @scala.inline
-      def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribeUndefined: Self = StObject.set(x, "describe", js.undefined)
+      inline def setDescribeUndefined: Self = StObject.set(x, "describe", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

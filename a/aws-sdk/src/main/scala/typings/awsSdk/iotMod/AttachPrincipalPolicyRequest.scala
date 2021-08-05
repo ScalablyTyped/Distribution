@@ -18,19 +18,15 @@ trait AttachPrincipalPolicyRequest extends StObject {
 }
 object AttachPrincipalPolicyRequest {
   
-  @scala.inline
-  def apply(policyName: PolicyName, principal: Principal): AttachPrincipalPolicyRequest = {
+  inline def apply(policyName: PolicyName, principal: Principal): AttachPrincipalPolicyRequest = {
     val __obj = js.Dynamic.literal(policyName = policyName.asInstanceOf[js.Any], principal = principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachPrincipalPolicyRequest]
   }
   
-  @scala.inline
-  implicit class AttachPrincipalPolicyRequestMutableBuilder[Self <: AttachPrincipalPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachPrincipalPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
   }
 }

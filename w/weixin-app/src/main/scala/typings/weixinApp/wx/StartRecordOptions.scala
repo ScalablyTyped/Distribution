@@ -13,19 +13,15 @@ trait StartRecordOptions
 }
 object StartRecordOptions {
   
-  @scala.inline
-  def apply(): StartRecordOptions = {
+  inline def apply(): StartRecordOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartRecordOptions]
   }
   
-  @scala.inline
-  implicit class StartRecordOptionsMutableBuilder[Self <: StartRecordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartRecordOptions](x: Self) {
     
-    @scala.inline
-    def setTimeoutCallback(value: /* res */ RecordResponse => Unit): Self = StObject.set(x, "timeoutCallback", js.Any.fromFunction1(value))
+    inline def setTimeoutCallback(value: /* res */ RecordResponse => Unit): Self = StObject.set(x, "timeoutCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeoutCallbackUndefined: Self = StObject.set(x, "timeoutCallback", js.undefined)
+    inline def setTimeoutCallbackUndefined: Self = StObject.set(x, "timeoutCallback", js.undefined)
   }
 }

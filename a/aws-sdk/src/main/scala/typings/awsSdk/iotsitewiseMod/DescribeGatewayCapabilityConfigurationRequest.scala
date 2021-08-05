@@ -18,19 +18,15 @@ trait DescribeGatewayCapabilityConfigurationRequest extends StObject {
 }
 object DescribeGatewayCapabilityConfigurationRequest {
   
-  @scala.inline
-  def apply(capabilityNamespace: CapabilityNamespace, gatewayId: ID): DescribeGatewayCapabilityConfigurationRequest = {
+  inline def apply(capabilityNamespace: CapabilityNamespace, gatewayId: ID): DescribeGatewayCapabilityConfigurationRequest = {
     val __obj = js.Dynamic.literal(capabilityNamespace = capabilityNamespace.asInstanceOf[js.Any], gatewayId = gatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGatewayCapabilityConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeGatewayCapabilityConfigurationRequestMutableBuilder[Self <: DescribeGatewayCapabilityConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGatewayCapabilityConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
+    inline def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
   }
 }

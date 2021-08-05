@@ -93,40 +93,30 @@ object RasterLayer {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: /* zoom */ Zoom => Double): Self = StObject.set(x, "buffer", js.Any.fromFunction1(value))
+      inline def setBuffer(value: /* zoom */ Zoom => Double): Self = StObject.set(x, "buffer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setDataToRows(
+      inline def setDataToRows(
         value: (/* data */ Data, /* x */ typings.heredatalens.H.datalens.QueryTileProvider.X, /* y */ typings.heredatalens.H.datalens.QueryTileProvider.Y, /* zoom */ Zoom) => js.Array[Row]
       ): Self = StObject.set(x, "dataToRows", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
+      inline def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
       
-      @scala.inline
-      def setRenderTile(value: (/* points */ js.Array[TilePoint], /* canvas */ HTMLCanvasElement, /* zoom */ Zoom) => Unit): Self = StObject.set(x, "renderTile", js.Any.fromFunction3(value))
+      inline def setRenderTile(value: (/* points */ js.Array[TilePoint], /* canvas */ HTMLCanvasElement, /* zoom */ Zoom) => Unit): Self = StObject.set(x, "renderTile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderTileUndefined: Self = StObject.set(x, "renderTile", js.undefined)
+      inline def setRenderTileUndefined: Self = StObject.set(x, "renderTile", js.undefined)
       
-      @scala.inline
-      def setRowToTilePoint(value: (/* row */ Row, /* x */ X, /* y */ Y) => TilePoint): Self = StObject.set(x, "rowToTilePoint", js.Any.fromFunction3(value))
+      inline def setRowToTilePoint(value: (/* row */ Row, /* x */ X, /* y */ Y) => TilePoint): Self = StObject.set(x, "rowToTilePoint", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRowToTilePointUndefined: Self = StObject.set(x, "rowToTilePoint", js.undefined)
+      inline def setRowToTilePointUndefined: Self = StObject.set(x, "rowToTilePoint", js.undefined)
     }
   }
   
@@ -154,26 +144,20 @@ object RasterLayer {
   }
   object TilePoint {
     
-    @scala.inline
-    def apply(x: Double, y: Double): TilePoint = {
+    inline def apply(x: Double, y: Double): TilePoint = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[TilePoint]
     }
     
-    @scala.inline
-    implicit class TilePointMutableBuilder[Self <: TilePoint] (val x: Self) extends AnyVal {
+    extension [Self <: TilePoint](x: Self) {
       
-      @scala.inline
-      def setData(value: Row): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Row): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

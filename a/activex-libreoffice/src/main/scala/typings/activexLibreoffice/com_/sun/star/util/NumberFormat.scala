@@ -39,46 +39,32 @@ object NumberFormat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL: `0` = 0.asInstanceOf[`0`]
+    inline def ALL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def CURRENCY: `8` = 8.asInstanceOf[`8`]
+    inline def CURRENCY: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def DATE: `2` = 2.asInstanceOf[`2`]
+    inline def DATE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def DATETIME: `6` = 6.asInstanceOf[`6`]
+    inline def DATETIME: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def DEFINED: `1` = 1.asInstanceOf[`1`]
+    inline def DEFINED: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def EMPTY: `4096` = 4096.asInstanceOf[`4096`]
+    inline def EMPTY: `4096` = 4096.asInstanceOf[`4096`]
     
-    @scala.inline
-    def FRACTION: `64` = 64.asInstanceOf[`64`]
+    inline def FRACTION: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def LOGICAL: `1024` = 1024.asInstanceOf[`1024`]
+    inline def LOGICAL: `1024` = 1024.asInstanceOf[`1024`]
     
-    @scala.inline
-    def NUMBER: `16` = 16.asInstanceOf[`16`]
+    inline def NUMBER: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def PERCENT: `128` = 128.asInstanceOf[`128`]
+    inline def PERCENT: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def SCIENTIFIC: `32` = 32.asInstanceOf[`32`]
+    inline def SCIENTIFIC: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def TEXT: `256` = 256.asInstanceOf[`256`]
+    inline def TEXT: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def TIME: `4` = 4.asInstanceOf[`4`]
+    inline def TIME: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def UNDEFINED: `2048` = 2048.asInstanceOf[`2048`]
+    inline def UNDEFINED: `2048` = 2048.asInstanceOf[`2048`]
   }
 }

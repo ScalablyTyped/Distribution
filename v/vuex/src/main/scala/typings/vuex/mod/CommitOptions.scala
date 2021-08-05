@@ -12,25 +12,19 @@ trait CommitOptions extends StObject {
 }
 object CommitOptions {
   
-  @scala.inline
-  def apply(): CommitOptions = {
+  inline def apply(): CommitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitOptions]
   }
   
-  @scala.inline
-  implicit class CommitOptionsMutableBuilder[Self <: CommitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommitOptions](x: Self) {
     
-    @scala.inline
-    def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

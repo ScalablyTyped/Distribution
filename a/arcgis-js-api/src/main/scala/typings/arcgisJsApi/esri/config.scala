@@ -69,8 +69,7 @@ trait config extends StObject {
 }
 object config {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fontsUrl: String,
     geoRSSServiceUrl: String,
     geometryServiceUrl: String,
@@ -84,31 +83,22 @@ object config {
     __obj.asInstanceOf[config]
   }
   
-  @scala.inline
-  implicit class configMutableBuilder[Self <: config] (val x: Self) extends AnyVal {
+  extension [Self <: config](x: Self) {
     
-    @scala.inline
-    def setFontsUrl(value: String): Self = StObject.set(x, "fontsUrl", value.asInstanceOf[js.Any])
+    inline def setFontsUrl(value: String): Self = StObject.set(x, "fontsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoRSSServiceUrl(value: String): Self = StObject.set(x, "geoRSSServiceUrl", value.asInstanceOf[js.Any])
+    inline def setGeoRSSServiceUrl(value: String): Self = StObject.set(x, "geoRSSServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryServiceUrl(value: String): Self = StObject.set(x, "geometryServiceUrl", value.asInstanceOf[js.Any])
+    inline def setGeometryServiceUrl(value: String): Self = StObject.set(x, "geometryServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmlServiceUrl(value: String): Self = StObject.set(x, "kmlServiceUrl", value.asInstanceOf[js.Any])
+    inline def setKmlServiceUrl(value: String): Self = StObject.set(x, "kmlServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: configLog): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: configLog): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+    inline def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: configRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: configRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkers(value: configWorkers): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    inline def setWorkers(value: configWorkers): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
   }
 }

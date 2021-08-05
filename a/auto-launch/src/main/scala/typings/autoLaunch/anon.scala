@@ -15,20 +15,16 @@ object anon {
   }
   object UseLaunchAgent {
     
-    @scala.inline
-    def apply(): UseLaunchAgent = {
+    inline def apply(): UseLaunchAgent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UseLaunchAgent]
     }
     
-    @scala.inline
-    implicit class UseLaunchAgentMutableBuilder[Self <: UseLaunchAgent] (val x: Self) extends AnyVal {
+    extension [Self <: UseLaunchAgent](x: Self) {
       
-      @scala.inline
-      def setUseLaunchAgent(value: Boolean): Self = StObject.set(x, "useLaunchAgent", value.asInstanceOf[js.Any])
+      inline def setUseLaunchAgent(value: Boolean): Self = StObject.set(x, "useLaunchAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLaunchAgentUndefined: Self = StObject.set(x, "useLaunchAgent", js.undefined)
+      inline def setUseLaunchAgentUndefined: Self = StObject.set(x, "useLaunchAgent", js.undefined)
     }
   }
 }

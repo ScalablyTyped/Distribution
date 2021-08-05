@@ -19,34 +19,25 @@ trait ComposeRequest extends StObject {
 }
 object ComposeRequest {
   
-  @scala.inline
-  def apply(): ComposeRequest = {
+  inline def apply(): ComposeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComposeRequest]
   }
   
-  @scala.inline
-  implicit class ComposeRequestMutableBuilder[Self <: ComposeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ComposeRequest](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Object): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Object): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSourceObjects(value: js.Array[Generation]): Self = StObject.set(x, "sourceObjects", value.asInstanceOf[js.Any])
+    inline def setSourceObjects(value: js.Array[Generation]): Self = StObject.set(x, "sourceObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceObjectsUndefined: Self = StObject.set(x, "sourceObjects", js.undefined)
+    inline def setSourceObjectsUndefined: Self = StObject.set(x, "sourceObjects", js.undefined)
     
-    @scala.inline
-    def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value :_*))
+    inline def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value :_*))
   }
 }

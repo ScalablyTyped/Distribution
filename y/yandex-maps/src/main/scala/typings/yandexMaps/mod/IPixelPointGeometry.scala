@@ -12,8 +12,7 @@ trait IPixelPointGeometry
 }
 object IPixelPointGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     equals_ : IPixelGeometry => Boolean,
     events: IEventManager[js.Object],
     getBounds: () => js.Array[js.Array[Double]] | Null,
@@ -28,10 +27,8 @@ object IPixelPointGeometry {
     __obj.asInstanceOf[IPixelPointGeometry]
   }
   
-  @scala.inline
-  implicit class IPixelPointGeometryMutableBuilder[Self <: IPixelPointGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: IPixelPointGeometry](x: Self) {
     
-    @scala.inline
-    def setGetCoordinates(value: () => js.Array[Double]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCoordinates(value: () => js.Array[Double]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
   }
 }

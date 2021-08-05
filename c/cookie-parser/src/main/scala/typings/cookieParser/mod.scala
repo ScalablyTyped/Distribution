@@ -12,46 +12,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(secret: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(secret: String, options: CookieParseOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(secret: js.Array[String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(secret: js.Array[String], options: CookieParseOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(secret: Unit, options: CookieParseOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(secret: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(secret: String, options: CookieParseOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(secret: js.Array[String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(secret: js.Array[String], options: CookieParseOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(secret: Unit, options: CookieParseOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("cookie-parser", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def JSONCookie(jsonCookie: String): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCookie")(jsonCookie.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
+  inline def JSONCookie(jsonCookie: String): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCookie")(jsonCookie.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
   
-  @scala.inline
-  def JSONCookies[T /* <: StringDictionary[String] */](jsonCookies: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def JSONCookies[T /* <: StringDictionary[String] */](jsonCookies: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: object | undefined}
     */ typings.cookieParser.cookieParserStrings.JSONCookies & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONCookies")(jsonCookies.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: object | undefined}
     */ typings.cookieParser.cookieParserStrings.JSONCookies & TopLevel[js.Any]]
   
-  @scala.inline
-  def signedCookie(cookie: String, secret: String): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookie")(cookie.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def signedCookie(cookie: String, secret: js.Array[String]): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookie")(cookie.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def signedCookie(cookie: String, secret: String): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookie")(cookie.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def signedCookie(cookie: String, secret: js.Array[String]): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookie")(cookie.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
-  @scala.inline
-  def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | false}
     */ typings.cookieParser.cookieParserStrings.signedCookies & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookies")(cookies.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | false}
     */ typings.cookieParser.cookieParserStrings.signedCookies & TopLevel[js.Any]]
-  @scala.inline
-  def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: js.Array[String]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def signedCookies[T /* <: StringDictionary[String] */](cookies: T, secret: js.Array[String]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | false}
     */ typings.cookieParser.cookieParserStrings.signedCookies & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("signedCookies")(cookies.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | false}
@@ -63,20 +51,16 @@ object mod {
   }
   object CookieParseOptions {
     
-    @scala.inline
-    def apply(): CookieParseOptions = {
+    inline def apply(): CookieParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieParseOptions]
     }
     
-    @scala.inline
-    implicit class CookieParseOptionsMutableBuilder[Self <: CookieParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CookieParseOptions](x: Self) {
       
-      @scala.inline
-      def setDecode(value: /* val */ String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: /* val */ String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
     }
   }
 }

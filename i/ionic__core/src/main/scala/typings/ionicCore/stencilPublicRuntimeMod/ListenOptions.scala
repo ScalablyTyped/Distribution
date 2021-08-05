@@ -32,31 +32,23 @@ trait ListenOptions extends StObject {
 }
 object ListenOptions {
   
-  @scala.inline
-  def apply(): ListenOptions = {
+  inline def apply(): ListenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListenOptions]
   }
   
-  @scala.inline
-  implicit class ListenOptionsMutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListenOptions](x: Self) {
     
-    @scala.inline
-    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    @scala.inline
-    def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+    inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+    inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
     
-    @scala.inline
-    def setTarget(value: ListenTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: ListenTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

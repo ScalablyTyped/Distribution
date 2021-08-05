@@ -22,8 +22,7 @@ trait CompassReading extends StObject {
 }
 object CompassReading {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headingAccuracy: MagnetometerAccuracy,
     headingMagneticNorth: Double,
     headingTrueNorth: Double,
@@ -33,19 +32,14 @@ object CompassReading {
     __obj.asInstanceOf[CompassReading]
   }
   
-  @scala.inline
-  implicit class CompassReadingMutableBuilder[Self <: CompassReading] (val x: Self) extends AnyVal {
+  extension [Self <: CompassReading](x: Self) {
     
-    @scala.inline
-    def setHeadingAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
+    inline def setHeadingAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingMagneticNorth(value: Double): Self = StObject.set(x, "headingMagneticNorth", value.asInstanceOf[js.Any])
+    inline def setHeadingMagneticNorth(value: Double): Self = StObject.set(x, "headingMagneticNorth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingTrueNorth(value: Double): Self = StObject.set(x, "headingTrueNorth", value.asInstanceOf[js.Any])
+    inline def setHeadingTrueNorth(value: Double): Self = StObject.set(x, "headingTrueNorth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

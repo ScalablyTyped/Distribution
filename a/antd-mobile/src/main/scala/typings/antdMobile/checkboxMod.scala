@@ -21,19 +21,16 @@ object checkboxMod {
     @JSImport("antd-mobile/lib/checkbox", "default.AgreeItem")
     @js.native
     def AgreeItem: js.Any = js.native
-    @scala.inline
-    def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
+    inline def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/checkbox", "default.CheckboxItem")
     @js.native
     def CheckboxItem: js.Any = js.native
-    @scala.inline
-    def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
+    inline def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/checkbox", "default.defaultProps")
     @js.native
     def defaultProps: WrapLabel = js.native
-    @scala.inline
-    def defaultProps_=(x: WrapLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: WrapLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

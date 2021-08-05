@@ -18,22 +18,17 @@ trait DistributedNodesUpdatedEvent extends StObject {
 }
 object DistributedNodesUpdatedEvent {
   
-  @scala.inline
-  def apply(distributedNodes: js.Array[BackendNode], insertionPointId: NodeId): DistributedNodesUpdatedEvent = {
+  inline def apply(distributedNodes: js.Array[BackendNode], insertionPointId: NodeId): DistributedNodesUpdatedEvent = {
     val __obj = js.Dynamic.literal(distributedNodes = distributedNodes.asInstanceOf[js.Any], insertionPointId = insertionPointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributedNodesUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class DistributedNodesUpdatedEventMutableBuilder[Self <: DistributedNodesUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DistributedNodesUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setDistributedNodes(value: js.Array[BackendNode]): Self = StObject.set(x, "distributedNodes", value.asInstanceOf[js.Any])
+    inline def setDistributedNodes(value: js.Array[BackendNode]): Self = StObject.set(x, "distributedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value :_*))
+    inline def setDistributedNodesVarargs(value: BackendNode*): Self = StObject.set(x, "distributedNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setInsertionPointId(value: NodeId): Self = StObject.set(x, "insertionPointId", value.asInstanceOf[js.Any])
+    inline def setInsertionPointId(value: NodeId): Self = StObject.set(x, "insertionPointId", value.asInstanceOf[js.Any])
   }
 }

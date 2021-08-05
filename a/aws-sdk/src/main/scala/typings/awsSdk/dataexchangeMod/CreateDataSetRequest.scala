@@ -28,28 +28,21 @@ trait CreateDataSetRequest extends StObject {
 }
 object CreateDataSetRequest {
   
-  @scala.inline
-  def apply(AssetType: AssetType, Description: Description, Name: Name): CreateDataSetRequest = {
+  inline def apply(AssetType: AssetType, Description: Description, Name: Name): CreateDataSetRequest = {
     val __obj = js.Dynamic.literal(AssetType = AssetType.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSetRequest]
   }
   
-  @scala.inline
-  implicit class CreateDataSetRequestMutableBuilder[Self <: CreateDataSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataSetRequest](x: Self) {
     
-    @scala.inline
-    def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: MapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

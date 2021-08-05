@@ -122,68 +122,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setButtonNextClass(value: String): Self = StObject.set(x, "buttonNextClass", value.asInstanceOf[js.Any])
+      inline def setButtonNextClass(value: String): Self = StObject.set(x, "buttonNextClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonNextClassUndefined: Self = StObject.set(x, "buttonNextClass", js.undefined)
+      inline def setButtonNextClassUndefined: Self = StObject.set(x, "buttonNextClass", js.undefined)
       
-      @scala.inline
-      def setButtonPreviousClass(value: String): Self = StObject.set(x, "buttonPreviousClass", value.asInstanceOf[js.Any])
+      inline def setButtonPreviousClass(value: String): Self = StObject.set(x, "buttonPreviousClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonPreviousClassUndefined: Self = StObject.set(x, "buttonPreviousClass", js.undefined)
+      inline def setButtonPreviousClassUndefined: Self = StObject.set(x, "buttonPreviousClass", js.undefined)
       
-      @scala.inline
-      def setCarousel(value: Boolean): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
+      inline def setCarousel(value: Boolean): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselUndefined: Self = StObject.set(x, "carousel", js.undefined)
+      inline def setCarouselUndefined: Self = StObject.set(x, "carousel", js.undefined)
       
-      @scala.inline
-      def setCurrentItemClass(value: String): Self = StObject.set(x, "currentItemClass", value.asInstanceOf[js.Any])
+      inline def setCurrentItemClass(value: String): Self = StObject.set(x, "currentItemClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentItemClassUndefined: Self = StObject.set(x, "currentItemClass", js.undefined)
+      inline def setCurrentItemClassUndefined: Self = StObject.set(x, "currentItemClass", js.undefined)
       
-      @scala.inline
-      def setHideNextClass(value: String): Self = StObject.set(x, "hideNextClass", value.asInstanceOf[js.Any])
+      inline def setHideNextClass(value: String): Self = StObject.set(x, "hideNextClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideNextClassUndefined: Self = StObject.set(x, "hideNextClass", js.undefined)
+      inline def setHideNextClassUndefined: Self = StObject.set(x, "hideNextClass", js.undefined)
       
-      @scala.inline
-      def setHidePreviousClass(value: String): Self = StObject.set(x, "hidePreviousClass", value.asInstanceOf[js.Any])
+      inline def setHidePreviousClass(value: String): Self = StObject.set(x, "hidePreviousClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePreviousClassUndefined: Self = StObject.set(x, "hidePreviousClass", js.undefined)
+      inline def setHidePreviousClassUndefined: Self = StObject.set(x, "hidePreviousClass", js.undefined)
       
-      @scala.inline
-      def setItemClass(value: String): Self = StObject.set(x, "itemClass", value.asInstanceOf[js.Any])
+      inline def setItemClass(value: String): Self = StObject.set(x, "itemClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClassUndefined: Self = StObject.set(x, "itemClass", js.undefined)
+      inline def setItemClassUndefined: Self = StObject.set(x, "itemClass", js.undefined)
       
-      @scala.inline
-      def setShowNextClass(value: String): Self = StObject.set(x, "showNextClass", value.asInstanceOf[js.Any])
+      inline def setShowNextClass(value: String): Self = StObject.set(x, "showNextClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNextClassUndefined: Self = StObject.set(x, "showNextClass", js.undefined)
+      inline def setShowNextClassUndefined: Self = StObject.set(x, "showNextClass", js.undefined)
       
-      @scala.inline
-      def setShowPreviousClass(value: String): Self = StObject.set(x, "showPreviousClass", value.asInstanceOf[js.Any])
+      inline def setShowPreviousClass(value: String): Self = StObject.set(x, "showPreviousClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPreviousClassUndefined: Self = StObject.set(x, "showPreviousClass", js.undefined)
+      inline def setShowPreviousClassUndefined: Self = StObject.set(x, "showPreviousClass", js.undefined)
     }
   }
   
@@ -221,8 +201,7 @@ object mod {
   }
   object Wallop {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       goTo: Double => Wallop,
       next: () => Wallop,
       off: (String, js.Function0[Unit]) => Wallop,
@@ -234,26 +213,19 @@ object mod {
       __obj.asInstanceOf[Wallop]
     }
     
-    @scala.inline
-    implicit class WallopMutableBuilder[Self <: Wallop] (val x: Self) extends AnyVal {
+    extension [Self <: Wallop](x: Self) {
       
-      @scala.inline
-      def setGoTo(value: Double => Wallop): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
+      inline def setGoTo(value: Double => Wallop): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNext(value: () => Wallop): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Wallop): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOff(value: (String, js.Function0[Unit]) => Wallop): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, js.Function0[Unit]) => Wallop): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function0[Unit]) => Wallop): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function0[Unit]) => Wallop): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrevious(value: () => Wallop): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
+      inline def setPrevious(value: () => Wallop): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Wallop): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Wallop): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
 }

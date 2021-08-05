@@ -10,16 +10,13 @@ trait ExpandedColumnHeaderProps extends StObject {
 }
 object ExpandedColumnHeaderProps {
   
-  @scala.inline
-  def apply(anyExpand: Boolean): ExpandedColumnHeaderProps = {
+  inline def apply(anyExpand: Boolean): ExpandedColumnHeaderProps = {
     val __obj = js.Dynamic.literal(anyExpand = anyExpand.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandedColumnHeaderProps]
   }
   
-  @scala.inline
-  implicit class ExpandedColumnHeaderPropsMutableBuilder[Self <: ExpandedColumnHeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandedColumnHeaderProps](x: Self) {
     
-    @scala.inline
-    def setAnyExpand(value: Boolean): Self = StObject.set(x, "anyExpand", value.asInstanceOf[js.Any])
+    inline def setAnyExpand(value: Boolean): Self = StObject.set(x, "anyExpand", value.asInstanceOf[js.Any])
   }
 }

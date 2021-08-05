@@ -10,8 +10,7 @@ object cubicBezierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTimeGivenProgression(
+  inline def getTimeGivenProgression(
     p0: js.Array[Double],
     p1: js.Array[Double],
     p2: js.Array[Double],

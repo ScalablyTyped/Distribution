@@ -10,8 +10,7 @@ object toBeCalculableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toBeCalculable(actual: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBeCalculable")(actual.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def toBeCalculable(actual: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBeCalculable")(actual.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type ToBeCalculable_ = js.Function1[/* expectationFailOutput */ js.UndefOr[js.Any], Boolean]
   
@@ -25,17 +24,14 @@ object toBeCalculableMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeCalculable: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
+        inline def apply[T](toBeCalculable: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeCalculable = js.Any.fromFunction1(toBeCalculable))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeCalculable(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeCalculable", js.Any.fromFunction1(value))
+          inline def setToBeCalculable(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeCalculable", js.Any.fromFunction1(value))
         }
       }
     }

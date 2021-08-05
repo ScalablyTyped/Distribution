@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Page")
 @js.native
-class Page protected ()
+/* private */ class Page ()
   extends StObject
      with typings.activexExcel.Excel.Page {
   
@@ -16,7 +16,7 @@ class Page protected ()
   /* CompleteClass */
   override val CenterHeader: typings.activexExcel.Excel.HeaderFooter = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Page_typekey")
   var ExcelDotPage_typekey: typings.activexExcel.Excel.Page = js.native
   

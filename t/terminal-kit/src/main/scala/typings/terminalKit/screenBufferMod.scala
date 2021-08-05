@@ -30,20 +30,16 @@ object screenBufferMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def attr2object(attrFlags: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attr2object")(attrFlags.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def attr2object(attrFlags: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attr2object")(attrFlags.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def create(options: Options): ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ScreenBuffer]
+  inline def create(options: Options): ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ScreenBuffer]
   
   /* static member */
-  @scala.inline
-  def createFromString(options: Attr, str: String): ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[ScreenBuffer]
+  inline def createFromString(options: Attr, str: String): ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[ScreenBuffer]
   
   /* static member */
-  @scala.inline
-  def loadImage(
+  inline def loadImage(
     url: String,
     calback: js.Function2[
       /* error */ js.UndefOr[js.Any], 
@@ -52,20 +48,17 @@ object screenBufferMod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def loadImage(
+  inline def loadImage(
     url: String,
     options: Shrink,
     calback: js.Function2[/* error */ js.Any, /* image */ typings.terminalKit.screenBufferHDMod.^, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def loadSync(filepath: String): ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[ScreenBuffer]
+  inline def loadSync(filepath: String): ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[ScreenBuffer]
   
   /* static member */
-  @scala.inline
-  def object2attr(attrObject: Attributes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("object2attr")(attrObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def object2attr(attrObject: Attributes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("object2attr")(attrObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Attributes extends StObject {
     
@@ -105,116 +98,80 @@ object screenBufferMod {
   }
   object Attributes {
     
-    @scala.inline
-    def apply(): Attributes = {
+    inline def apply(): Attributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: Attributes](x: Self) {
       
-      @scala.inline
-      def setBgColor(value: Double): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+      inline def setBgColor(value: Double): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+      inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
       
-      @scala.inline
-      def setBgDefaultColor(value: Boolean): Self = StObject.set(x, "bgDefaultColor", value.asInstanceOf[js.Any])
+      inline def setBgDefaultColor(value: Boolean): Self = StObject.set(x, "bgDefaultColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgDefaultColorUndefined: Self = StObject.set(x, "bgDefaultColor", js.undefined)
+      inline def setBgDefaultColorUndefined: Self = StObject.set(x, "bgDefaultColor", js.undefined)
       
-      @scala.inline
-      def setBgTransparency(value: Boolean): Self = StObject.set(x, "bgTransparency", value.asInstanceOf[js.Any])
+      inline def setBgTransparency(value: Boolean): Self = StObject.set(x, "bgTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgTransparencyUndefined: Self = StObject.set(x, "bgTransparency", js.undefined)
+      inline def setBgTransparencyUndefined: Self = StObject.set(x, "bgTransparency", js.undefined)
       
-      @scala.inline
-      def setBlink(value: Boolean): Self = StObject.set(x, "blink", value.asInstanceOf[js.Any])
+      inline def setBlink(value: Boolean): Self = StObject.set(x, "blink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlinkUndefined: Self = StObject.set(x, "blink", js.undefined)
+      inline def setBlinkUndefined: Self = StObject.set(x, "blink", js.undefined)
       
-      @scala.inline
-      def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setCharTransparency(value: Boolean): Self = StObject.set(x, "charTransparency", value.asInstanceOf[js.Any])
+      inline def setCharTransparency(value: Boolean): Self = StObject.set(x, "charTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharTransparencyUndefined: Self = StObject.set(x, "charTransparency", js.undefined)
+      inline def setCharTransparencyUndefined: Self = StObject.set(x, "charTransparency", js.undefined)
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDefaultColor(value: Boolean): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
+      inline def setDefaultColor(value: Boolean): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultColorUndefined: Self = StObject.set(x, "defaultColor", js.undefined)
+      inline def setDefaultColorUndefined: Self = StObject.set(x, "defaultColor", js.undefined)
       
-      @scala.inline
-      def setDim(value: Boolean): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+      inline def setDim(value: Boolean): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
+      inline def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
       
-      @scala.inline
-      def setFgTransparency(value: Boolean): Self = StObject.set(x, "fgTransparency", value.asInstanceOf[js.Any])
+      inline def setFgTransparency(value: Boolean): Self = StObject.set(x, "fgTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFgTransparencyUndefined: Self = StObject.set(x, "fgTransparency", js.undefined)
+      inline def setFgTransparencyUndefined: Self = StObject.set(x, "fgTransparency", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      @scala.inline
-      def setStrike(value: Boolean): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
+      inline def setStrike(value: Boolean): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikeUndefined: Self = StObject.set(x, "strike", js.undefined)
+      inline def setStrikeUndefined: Self = StObject.set(x, "strike", js.undefined)
       
-      @scala.inline
-      def setStyleTransparency(value: Boolean): Self = StObject.set(x, "styleTransparency", value.asInstanceOf[js.Any])
+      inline def setStyleTransparency(value: Boolean): Self = StObject.set(x, "styleTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleTransparencyUndefined: Self = StObject.set(x, "styleTransparency", js.undefined)
+      inline def setStyleTransparencyUndefined: Self = StObject.set(x, "styleTransparency", js.undefined)
       
-      @scala.inline
-      def setTransparency(value: Boolean): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+      inline def setTransparency(value: Boolean): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+      inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     }
   }
   
@@ -240,68 +197,48 @@ object screenBufferMod {
   }
   object DrawOptions {
     
-    @scala.inline
-    def apply(): DrawOptions = {
+    inline def apply(): DrawOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawOptions]
     }
     
-    @scala.inline
-    implicit class DrawOptionsMutableBuilder[Self <: DrawOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DrawOptions](x: Self) {
       
-      @scala.inline
-      def setBlending(value: Boolean): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
+      inline def setBlending(value: Boolean): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendingUndefined: Self = StObject.set(x, "blending", js.undefined)
+      inline def setBlendingUndefined: Self = StObject.set(x, "blending", js.undefined)
       
-      @scala.inline
-      def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+      inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
       
-      @scala.inline
-      def setDst(value: Terminal | ScreenBuffer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
+      inline def setDst(value: Terminal | ScreenBuffer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDstClipRect(value: typings.terminalKit.rectMod.^): Self = StObject.set(x, "dstClipRect", value.asInstanceOf[js.Any])
+      inline def setDstClipRect(value: typings.terminalKit.rectMod.^): Self = StObject.set(x, "dstClipRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDstClipRectUndefined: Self = StObject.set(x, "dstClipRect", js.undefined)
+      inline def setDstClipRectUndefined: Self = StObject.set(x, "dstClipRect", js.undefined)
       
-      @scala.inline
-      def setDstUndefined: Self = StObject.set(x, "dst", js.undefined)
+      inline def setDstUndefined: Self = StObject.set(x, "dst", js.undefined)
       
-      @scala.inline
-      def setSrcClipRect(value: typings.terminalKit.rectMod.^): Self = StObject.set(x, "srcClipRect", value.asInstanceOf[js.Any])
+      inline def setSrcClipRect(value: typings.terminalKit.rectMod.^): Self = StObject.set(x, "srcClipRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcClipRectUndefined: Self = StObject.set(x, "srcClipRect", js.undefined)
+      inline def setSrcClipRectUndefined: Self = StObject.set(x, "srcClipRect", js.undefined)
       
-      @scala.inline
-      def setTile(value: Boolean): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+      inline def setTile(value: Boolean): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+      inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean | typings.terminalKit.terminalKitStrings.x | y): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean | typings.terminalKit.terminalKitStrings.x | y): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -325,59 +262,42 @@ object screenBufferMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(dst: Terminal | ScreenBuffer): Options = {
+    inline def apply(dst: Terminal | ScreenBuffer): Options = {
       val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBlending(value: Boolean): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
+      inline def setBlending(value: Boolean): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlendingUndefined: Self = StObject.set(x, "blending", js.undefined)
+      inline def setBlendingUndefined: Self = StObject.set(x, "blending", js.undefined)
       
-      @scala.inline
-      def setDst(value: Terminal | ScreenBuffer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
+      inline def setDst(value: Terminal | ScreenBuffer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setNoFill(value: Boolean): Self = StObject.set(x, "noFill", value.asInstanceOf[js.Any])
+      inline def setNoFill(value: Boolean): Self = StObject.set(x, "noFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoFillUndefined: Self = StObject.set(x, "noFill", js.undefined)
+      inline def setNoFillUndefined: Self = StObject.set(x, "noFill", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -399,41 +319,30 @@ object screenBufferMod {
   }
   object PutOptions {
     
-    @scala.inline
-    def apply(attr: Attributes | Double, dx: Double, dy: Double, wrap: Boolean, x: Double, y: Double): PutOptions = {
+    inline def apply(attr: Attributes | Double, dx: Double, dy: Double, wrap: Boolean, x: Double, y: Double): PutOptions = {
       val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutOptions]
     }
     
-    @scala.inline
-    implicit class PutOptionsMutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PutOptions](x: Self) {
       
-      @scala.inline
-      def setAttr(value: Attributes | Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+      inline def setAttr(value: Attributes | Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: right | left | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: right | left | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionNull: Self = StObject.set(x, "direction", null)
+      inline def setDirectionNull: Self = StObject.set(x, "direction", null)
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+      inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+      inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

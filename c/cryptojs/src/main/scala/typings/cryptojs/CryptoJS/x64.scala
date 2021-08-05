@@ -57,20 +57,16 @@ object x64 {
   }
   object X64Static {
     
-    @scala.inline
-    def apply(Word: Word, WordArray: WordArray): X64Static = {
+    inline def apply(Word: Word, WordArray: WordArray): X64Static = {
       val __obj = js.Dynamic.literal(Word = Word.asInstanceOf[js.Any], WordArray = WordArray.asInstanceOf[js.Any])
       __obj.asInstanceOf[X64Static]
     }
     
-    @scala.inline
-    implicit class X64StaticMutableBuilder[Self <: X64Static] (val x: Self) extends AnyVal {
+    extension [Self <: X64Static](x: Self) {
       
-      @scala.inline
-      def setWord(value: Word): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
+      inline def setWord(value: Word): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordArray(value: WordArray): Self = StObject.set(x, "WordArray", value.asInstanceOf[js.Any])
+      inline def setWordArray(value: WordArray): Self = StObject.set(x, "WordArray", value.asInstanceOf[js.Any])
     }
   }
 }

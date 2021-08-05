@@ -13,17 +13,17 @@ object colMod {
     extends StObject
        with ComponentInterface {
     
-    var calculateOffset: js.Any = js.native
+    /* private */ var calculateOffset: js.Any = js.native
     
-    var calculatePosition: js.Any = js.native
+    /* private */ var calculatePosition: js.Any = js.native
     
-    var calculatePull: js.Any = js.native
+    /* private */ var calculatePull: js.Any = js.native
     
-    var calculatePush: js.Any = js.native
+    /* private */ var calculatePush: js.Any = js.native
     
-    var calculateSize: js.Any = js.native
+    /* private */ var calculateSize: js.Any = js.native
     
-    var getColumns: js.Any = js.native
+    /* private */ var getColumns: js.Any = js.native
     
     /**
       * The amount to offset the column, in terms of how many columns it should shift to the end

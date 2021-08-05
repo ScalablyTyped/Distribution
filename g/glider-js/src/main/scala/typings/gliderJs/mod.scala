@@ -47,20 +47,16 @@ object mod extends Shortcut {
   }
   object Breakpoint {
     
-    @scala.inline
-    def apply(breakpoint: Double, settings: Options): Breakpoint = {
+    inline def apply(breakpoint: Double, settings: Options): Breakpoint = {
       val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Breakpoint]
     }
     
-    @scala.inline
-    implicit class BreakpointMutableBuilder[Self <: Breakpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Breakpoint](x: Self) {
       
-      @scala.inline
-      def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: Options): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Options): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,20 +70,16 @@ object mod extends Shortcut {
   }
   object GliderEvent {
     
-    @scala.inline
-    def apply[T](bubbles: Boolean, detail: T): GliderEvent[T] = {
+    inline def apply[T](bubbles: Boolean, detail: T): GliderEvent[T] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any])
       __obj.asInstanceOf[GliderEvent[T]]
     }
     
-    @scala.inline
-    implicit class GliderEventMutableBuilder[Self <: GliderEvent[?], T] (val x: Self & GliderEvent[T]) extends AnyVal {
+    extension [Self <: GliderEvent[?], T](x: Self & GliderEvent[T]) {
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: T): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: T): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +127,7 @@ object mod extends Shortcut {
   }
   object GliderEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `glider-add`: Scroll,
       `glider-animated`: Type,
       `glider-destroy`: Unit,
@@ -158,32 +149,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GliderEventMap]
     }
     
-    @scala.inline
-    implicit class GliderEventMapMutableBuilder[Self <: GliderEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: GliderEventMap](x: Self) {
       
-      @scala.inline
-      def `setGlider-add`(value: Scroll): Self = StObject.set(x, "glider-add", value.asInstanceOf[js.Any])
+      inline def `setGlider-add`(value: Scroll): Self = StObject.set(x, "glider-add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlider-animated`(value: Type): Self = StObject.set(x, "glider-animated", value.asInstanceOf[js.Any])
+      inline def `setGlider-animated`(value: Type): Self = StObject.set(x, "glider-animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlider-destroy`(value: Unit): Self = StObject.set(x, "glider-destroy", value.asInstanceOf[js.Any])
+      inline def `setGlider-destroy`(value: Unit): Self = StObject.set(x, "glider-destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlider-loaded`(value: Unit): Self = StObject.set(x, "glider-loaded", value.asInstanceOf[js.Any])
+      inline def `setGlider-loaded`(value: Unit): Self = StObject.set(x, "glider-loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlider-refresh`(value: Unit): Self = StObject.set(x, "glider-refresh", value.asInstanceOf[js.Any])
+      inline def `setGlider-refresh`(value: Unit): Self = StObject.set(x, "glider-refresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlider-remove`(value: Unit): Self = StObject.set(x, "glider-remove", value.asInstanceOf[js.Any])
+      inline def `setGlider-remove`(value: Unit): Self = StObject.set(x, "glider-remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlider-slide-hidden`(value: Slide): Self = StObject.set(x, "glider-slide-hidden", value.asInstanceOf[js.Any])
+      inline def `setGlider-slide-hidden`(value: Slide): Self = StObject.set(x, "glider-slide-hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGlider-slide-visible`(value: Slide): Self = StObject.set(x, "glider-slide-visible", value.asInstanceOf[js.Any])
+      inline def `setGlider-slide-visible`(value: Slide): Self = StObject.set(x, "glider-slide-visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,128 +279,88 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArrows(value: Next): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+      inline def setArrows(value: Next): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
+      inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
       
-      @scala.inline
-      def setDots(value: Selector): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+      inline def setDots(value: Selector): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotsNull: Self = StObject.set(x, "dots", null)
+      inline def setDotsNull: Self = StObject.set(x, "dots", null)
       
-      @scala.inline
-      def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
+      inline def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
       
-      @scala.inline
-      def setDragVelocity(value: Double): Self = StObject.set(x, "dragVelocity", value.asInstanceOf[js.Any])
+      inline def setDragVelocity(value: Double): Self = StObject.set(x, "dragVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragVelocityUndefined: Self = StObject.set(x, "dragVelocity", js.undefined)
+      inline def setDragVelocityUndefined: Self = StObject.set(x, "dragVelocity", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: (/* x */ Double, /* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easing", js.Any.fromFunction5(value))
+      inline def setEasing(value: (/* x */ Double, /* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easing", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setEventPropagate(value: Boolean): Self = StObject.set(x, "eventPropagate", value.asInstanceOf[js.Any])
+      inline def setEventPropagate(value: Boolean): Self = StObject.set(x, "eventPropagate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPropagateUndefined: Self = StObject.set(x, "eventPropagate", js.undefined)
+      inline def setEventPropagateUndefined: Self = StObject.set(x, "eventPropagate", js.undefined)
       
-      @scala.inline
-      def setExactWidth(value: Boolean): Self = StObject.set(x, "exactWidth", value.asInstanceOf[js.Any])
+      inline def setExactWidth(value: Boolean): Self = StObject.set(x, "exactWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactWidthUndefined: Self = StObject.set(x, "exactWidth", js.undefined)
+      inline def setExactWidthUndefined: Self = StObject.set(x, "exactWidth", js.undefined)
       
-      @scala.inline
-      def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
+      inline def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
+      inline def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
       
-      @scala.inline
-      def setResizeLock(value: Boolean): Self = StObject.set(x, "resizeLock", value.asInstanceOf[js.Any])
+      inline def setResizeLock(value: Boolean): Self = StObject.set(x, "resizeLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeLockUndefined: Self = StObject.set(x, "resizeLock", js.undefined)
+      inline def setResizeLockUndefined: Self = StObject.set(x, "resizeLock", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: js.Array[Breakpoint]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: js.Array[Breakpoint]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      @scala.inline
-      def setResponsiveVarargs(value: Breakpoint*): Self = StObject.set(x, "responsive", js.Array(value :_*))
+      inline def setResponsiveVarargs(value: Breakpoint*): Self = StObject.set(x, "responsive", js.Array(value :_*))
       
-      @scala.inline
-      def setRewind(value: Boolean): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
+      inline def setRewind(value: Boolean): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRewindUndefined: Self = StObject.set(x, "rewind", js.undefined)
+      inline def setRewindUndefined: Self = StObject.set(x, "rewind", js.undefined)
       
-      @scala.inline
-      def setScrollLock(value: Boolean): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
+      inline def setScrollLock(value: Boolean): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLockDelay(value: Double): Self = StObject.set(x, "scrollLockDelay", value.asInstanceOf[js.Any])
+      inline def setScrollLockDelay(value: Double): Self = StObject.set(x, "scrollLockDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLockDelayUndefined: Self = StObject.set(x, "scrollLockDelay", js.undefined)
+      inline def setScrollLockDelayUndefined: Self = StObject.set(x, "scrollLockDelay", js.undefined)
       
-      @scala.inline
-      def setScrollLockUndefined: Self = StObject.set(x, "scrollLock", js.undefined)
+      inline def setScrollLockUndefined: Self = StObject.set(x, "scrollLock", js.undefined)
       
-      @scala.inline
-      def setScrollPropagate(value: Boolean): Self = StObject.set(x, "scrollPropagate", value.asInstanceOf[js.Any])
+      inline def setScrollPropagate(value: Boolean): Self = StObject.set(x, "scrollPropagate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPropagateUndefined: Self = StObject.set(x, "scrollPropagate", js.undefined)
+      inline def setScrollPropagateUndefined: Self = StObject.set(x, "scrollPropagate", js.undefined)
       
-      @scala.inline
-      def setSkipTrack(value: Boolean): Self = StObject.set(x, "skipTrack", value.asInstanceOf[js.Any])
+      inline def setSkipTrack(value: Boolean): Self = StObject.set(x, "skipTrack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipTrackUndefined: Self = StObject.set(x, "skipTrack", js.undefined)
+      inline def setSkipTrackUndefined: Self = StObject.set(x, "skipTrack", js.undefined)
       
-      @scala.inline
-      def setSlidesToScroll(value: Double | auto): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
+      inline def setSlidesToScroll(value: Double | auto): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToScrollUndefined: Self = StObject.set(x, "slidesToScroll", js.undefined)
+      inline def setSlidesToScrollUndefined: Self = StObject.set(x, "slidesToScroll", js.undefined)
       
-      @scala.inline
-      def setSlidesToShow(value: Double | auto): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      inline def setSlidesToShow(value: Double | auto): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
+      inline def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
     }
   }
   

@@ -36,37 +36,27 @@ trait IonRoute extends StObject {
 }
 object IonRoute {
   
-  @scala.inline
-  def apply(component: String, url: String): IonRoute = {
+  inline def apply(component: String, url: String): IonRoute = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRoute]
   }
   
-  @scala.inline
-  implicit class IonRouteMutableBuilder[Self <: IonRoute] (val x: Self) extends AnyVal {
+  extension [Self <: IonRoute](x: Self) {
     
-    @scala.inline
-    def setBeforeEnter(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = StObject.set(x, "beforeEnter", js.Any.fromFunction0(value))
+    inline def setBeforeEnter(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = StObject.set(x, "beforeEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeforeEnterUndefined: Self = StObject.set(x, "beforeEnter", js.undefined)
+    inline def setBeforeEnterUndefined: Self = StObject.set(x, "beforeEnter", js.undefined)
     
-    @scala.inline
-    def setBeforeLeave(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = StObject.set(x, "beforeLeave", js.Any.fromFunction0(value))
+    inline def setBeforeLeave(value: () => NavigationHookResult | js.Promise[NavigationHookResult]): Self = StObject.set(x, "beforeLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeforeLeaveUndefined: Self = StObject.set(x, "beforeLeave", js.undefined)
+    inline def setBeforeLeaveUndefined: Self = StObject.set(x, "beforeLeave", js.undefined)
     
-    @scala.inline
-    def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
+    inline def setComponentProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
+    inline def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -18,43 +18,31 @@ trait RaftConfig extends StObject {
 }
 object RaftConfig {
   
-  @scala.inline
-  def apply(): RaftConfig = {
+  inline def apply(): RaftConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RaftConfig]
   }
   
-  @scala.inline
-  implicit class RaftConfigMutableBuilder[Self <: RaftConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RaftConfig](x: Self) {
     
-    @scala.inline
-    def setElectionTick(value: Double): Self = StObject.set(x, "ElectionTick", value.asInstanceOf[js.Any])
+    inline def setElectionTick(value: Double): Self = StObject.set(x, "ElectionTick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElectionTickUndefined: Self = StObject.set(x, "ElectionTick", js.undefined)
+    inline def setElectionTickUndefined: Self = StObject.set(x, "ElectionTick", js.undefined)
     
-    @scala.inline
-    def setHeartbeatTick(value: Double): Self = StObject.set(x, "HeartbeatTick", value.asInstanceOf[js.Any])
+    inline def setHeartbeatTick(value: Double): Self = StObject.set(x, "HeartbeatTick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatTickUndefined: Self = StObject.set(x, "HeartbeatTick", js.undefined)
+    inline def setHeartbeatTickUndefined: Self = StObject.set(x, "HeartbeatTick", js.undefined)
     
-    @scala.inline
-    def setKeepOldSnapshots(value: Double): Self = StObject.set(x, "KeepOldSnapshots", value.asInstanceOf[js.Any])
+    inline def setKeepOldSnapshots(value: Double): Self = StObject.set(x, "KeepOldSnapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepOldSnapshotsUndefined: Self = StObject.set(x, "KeepOldSnapshots", js.undefined)
+    inline def setKeepOldSnapshotsUndefined: Self = StObject.set(x, "KeepOldSnapshots", js.undefined)
     
-    @scala.inline
-    def setLogEntriesForSlowFollowers(value: Double): Self = StObject.set(x, "LogEntriesForSlowFollowers", value.asInstanceOf[js.Any])
+    inline def setLogEntriesForSlowFollowers(value: Double): Self = StObject.set(x, "LogEntriesForSlowFollowers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogEntriesForSlowFollowersUndefined: Self = StObject.set(x, "LogEntriesForSlowFollowers", js.undefined)
+    inline def setLogEntriesForSlowFollowersUndefined: Self = StObject.set(x, "LogEntriesForSlowFollowers", js.undefined)
     
-    @scala.inline
-    def setSnapshotInterval(value: Double): Self = StObject.set(x, "SnapshotInterval", value.asInstanceOf[js.Any])
+    inline def setSnapshotInterval(value: Double): Self = StObject.set(x, "SnapshotInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIntervalUndefined: Self = StObject.set(x, "SnapshotInterval", js.undefined)
+    inline def setSnapshotIntervalUndefined: Self = StObject.set(x, "SnapshotInterval", js.undefined)
   }
 }

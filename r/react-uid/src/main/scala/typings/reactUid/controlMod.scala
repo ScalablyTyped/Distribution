@@ -26,20 +26,16 @@ object controlMod {
   }
   object WithPrefix {
     
-    @scala.inline
-    def apply(): WithPrefix = {
+    inline def apply(): WithPrefix = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithPrefix]
     }
     
-    @scala.inline
-    implicit class WithPrefixMutableBuilder[Self <: WithPrefix] (val x: Self) extends AnyVal {
+    extension [Self <: WithPrefix](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

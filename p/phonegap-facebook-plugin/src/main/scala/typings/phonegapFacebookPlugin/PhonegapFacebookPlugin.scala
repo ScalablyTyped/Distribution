@@ -26,17 +26,14 @@ object PhonegapFacebookPlugin {
   }
   object BaseDialogOptions {
     
-    @scala.inline
-    def apply(method: String): BaseDialogOptions = {
+    inline def apply(method: String): BaseDialogOptions = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseDialogOptions]
     }
     
-    @scala.inline
-    implicit class BaseDialogOptionsMutableBuilder[Self <: BaseDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseDialogOptions](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,20 +48,16 @@ object PhonegapFacebookPlugin {
   }
   object BaseDialogResult {
     
-    @scala.inline
-    def apply(error_code: String, error_message: String): BaseDialogResult = {
+    inline def apply(error_code: String, error_message: String): BaseDialogResult = {
       val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseDialogResult]
     }
     
-    @scala.inline
-    implicit class BaseDialogResultMutableBuilder[Self <: BaseDialogResult] (val x: Self) extends AnyVal {
+    extension [Self <: BaseDialogResult](x: Self) {
       
-      @scala.inline
-      def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
+      inline def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+      inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -347,68 +340,48 @@ object PhonegapFacebookPlugin {
   }
   object FeedDialogOptions {
     
-    @scala.inline
-    def apply(method: String): FeedDialogOptions = {
+    inline def apply(method: String): FeedDialogOptions = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeedDialogOptions]
     }
     
-    @scala.inline
-    implicit class FeedDialogOptionsMutableBuilder[Self <: FeedDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FeedDialogOptions](x: Self) {
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
+      inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -426,17 +399,14 @@ object PhonegapFacebookPlugin {
   }
   object FeedDialogResult {
     
-    @scala.inline
-    def apply(error_code: String, error_message: String, post_id: String): FeedDialogResult = {
+    inline def apply(error_code: String, error_message: String, post_id: String): FeedDialogResult = {
       val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any], post_id = post_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeedDialogResult]
     }
     
-    @scala.inline
-    implicit class FeedDialogResultMutableBuilder[Self <: FeedDialogResult] (val x: Self) extends AnyVal {
+    extension [Self <: FeedDialogResult](x: Self) {
       
-      @scala.inline
-      def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
+      inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -453,20 +423,16 @@ object PhonegapFacebookPlugin {
   }
   object LoginResult {
     
-    @scala.inline
-    def apply(authResponse: AccessToken, status: String): LoginResult = {
+    inline def apply(authResponse: AccessToken, status: String): LoginResult = {
       val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoginResult]
     }
     
-    @scala.inline
-    implicit class LoginResultMutableBuilder[Self <: LoginResult] (val x: Self) extends AnyVal {
+    extension [Self <: LoginResult](x: Self) {
       
-      @scala.inline
-      def setAuthResponse(value: AccessToken): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
+      inline def setAuthResponse(value: AccessToken): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -493,20 +459,16 @@ object PhonegapFacebookPlugin {
   }
   object SendDialogOptions {
     
-    @scala.inline
-    def apply(link: String, method: String, to: String): SendDialogOptions = {
+    inline def apply(link: String, method: String, to: String): SendDialogOptions = {
       val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendDialogOptions]
     }
     
-    @scala.inline
-    implicit class SendDialogOptionsMutableBuilder[Self <: SendDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SendDialogOptions](x: Self) {
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -534,17 +496,14 @@ object PhonegapFacebookPlugin {
   }
   object ShareDialogOptions {
     
-    @scala.inline
-    def apply(href: String, method: String): ShareDialogOptions = {
+    inline def apply(href: String, method: String): ShareDialogOptions = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareDialogOptions]
     }
     
-    @scala.inline
-    implicit class ShareDialogOptionsMutableBuilder[Self <: ShareDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShareDialogOptions](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
   }
   
@@ -563,17 +522,14 @@ object PhonegapFacebookPlugin {
   }
   object ShareDialogResult {
     
-    @scala.inline
-    def apply(error_code: String, error_message: String, post_id: String): ShareDialogResult = {
+    inline def apply(error_code: String, error_message: String, post_id: String): ShareDialogResult = {
       val __obj = js.Dynamic.literal(error_code = error_code.asInstanceOf[js.Any], error_message = error_message.asInstanceOf[js.Any], post_id = post_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareDialogResult]
     }
     
-    @scala.inline
-    implicit class ShareDialogResultMutableBuilder[Self <: ShareDialogResult] (val x: Self) extends AnyVal {
+    extension [Self <: ShareDialogResult](x: Self) {
       
-      @scala.inline
-      def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
+      inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -603,20 +559,16 @@ object PhonegapFacebookPlugin {
   }
   object ShareOpenGraphDialogOptions {
     
-    @scala.inline
-    def apply(action_properties: String, action_type: String, method: String): ShareOpenGraphDialogOptions = {
+    inline def apply(action_properties: String, action_type: String, method: String): ShareOpenGraphDialogOptions = {
       val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareOpenGraphDialogOptions]
     }
     
-    @scala.inline
-    implicit class ShareOpenGraphDialogOptionsMutableBuilder[Self <: ShareOpenGraphDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShareOpenGraphDialogOptions](x: Self) {
       
-      @scala.inline
-      def setAction_properties(value: String): Self = StObject.set(x, "action_properties", value.asInstanceOf[js.Any])
+      inline def setAction_properties(value: String): Self = StObject.set(x, "action_properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
+      inline def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
     }
   }
 }

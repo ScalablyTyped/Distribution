@@ -14,8 +14,7 @@ trait DateTime extends StObject {
 }
 object DateTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: /* repeated */ js.Any => js.Any,
     dateTime: /* repeated */ js.Any => js.Any,
     time: /* repeated */ js.Any => js.Any
@@ -24,16 +23,12 @@ object DateTime {
     __obj.asInstanceOf[DateTime]
   }
   
-  @scala.inline
-  implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
+  extension [Self <: DateTime](x: Self) {
     
-    @scala.inline
-    def setDate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
+    inline def setDate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDateTime(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dateTime", js.Any.fromFunction1(value))
+    inline def setDateTime(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dateTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTime(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
+    inline def setTime(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
   }
 }

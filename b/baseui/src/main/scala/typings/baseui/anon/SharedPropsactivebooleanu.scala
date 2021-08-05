@@ -20,31 +20,23 @@ trait SharedPropsactivebooleanu extends StObject {
 }
 object SharedPropsactivebooleanu {
   
-  @scala.inline
-  def apply(): SharedPropsactivebooleanu = {
+  inline def apply(): SharedPropsactivebooleanu = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedPropsactivebooleanu]
   }
   
-  @scala.inline
-  implicit class SharedPropsactivebooleanuMutableBuilder[Self <: SharedPropsactivebooleanu] (val x: Self) extends AnyVal {
+  extension [Self <: SharedPropsactivebooleanu](x: Self) {
     
-    @scala.inline
-    def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
+    inline def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$activeUndefined: Self = StObject.set(x, "$active", js.undefined)
+    inline def set$activeUndefined: Self = StObject.set(x, "$active", js.undefined)
     
-    @scala.inline
-    def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+    inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
+    inline def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
     
-    @scala.inline
-    def set$orientation(value: horizontal | vertical): Self = StObject.set(x, "$orientation", value.asInstanceOf[js.Any])
+    inline def set$orientation(value: horizontal | vertical): Self = StObject.set(x, "$orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$orientationUndefined: Self = StObject.set(x, "$orientation", js.undefined)
+    inline def set$orientationUndefined: Self = StObject.set(x, "$orientation", js.undefined)
   }
 }

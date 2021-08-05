@@ -13,19 +13,15 @@ trait GlobalLexicalScopeNamesParameterType extends StObject {
 }
 object GlobalLexicalScopeNamesParameterType {
   
-  @scala.inline
-  def apply(): GlobalLexicalScopeNamesParameterType = {
+  inline def apply(): GlobalLexicalScopeNamesParameterType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalLexicalScopeNamesParameterType]
   }
   
-  @scala.inline
-  implicit class GlobalLexicalScopeNamesParameterTypeMutableBuilder[Self <: GlobalLexicalScopeNamesParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalLexicalScopeNamesParameterType](x: Self) {
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
+    inline def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
   }
 }

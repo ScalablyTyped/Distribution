@@ -23,14 +23,11 @@ object mod extends Shortcut {
     @js.native
     val ^ : ShareMenu = js.native
     
-    @scala.inline
-    implicit class ShareMenuMutableBuilder[Self <: ShareMenu] (val x: Self) extends AnyVal {
+    extension [Self <: ShareMenu](x: Self) {
       
-      @scala.inline
-      def setClearSharedText(value: () => Unit): Self = StObject.set(x, "clearSharedText", js.Any.fromFunction0(value))
+      inline def setClearSharedText(value: () => Unit): Self = StObject.set(x, "clearSharedText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSharedText(value: js.Function1[/* text */ String, Unit] => Unit): Self = StObject.set(x, "getSharedText", js.Any.fromFunction1(value))
+      inline def setGetSharedText(value: js.Function1[/* text */ String, Unit] => Unit): Self = StObject.set(x, "getSharedText", js.Any.fromFunction1(value))
     }
   }
   

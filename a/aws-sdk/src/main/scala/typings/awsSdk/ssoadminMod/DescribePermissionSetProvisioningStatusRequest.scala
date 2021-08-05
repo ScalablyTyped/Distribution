@@ -18,19 +18,15 @@ trait DescribePermissionSetProvisioningStatusRequest extends StObject {
 }
 object DescribePermissionSetProvisioningStatusRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn, ProvisionPermissionSetRequestId: UUId): DescribePermissionSetProvisioningStatusRequest = {
+  inline def apply(InstanceArn: InstanceArn, ProvisionPermissionSetRequestId: UUId): DescribePermissionSetProvisioningStatusRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], ProvisionPermissionSetRequestId = ProvisionPermissionSetRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePermissionSetProvisioningStatusRequest]
   }
   
-  @scala.inline
-  implicit class DescribePermissionSetProvisioningStatusRequestMutableBuilder[Self <: DescribePermissionSetProvisioningStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePermissionSetProvisioningStatusRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionPermissionSetRequestId(value: UUId): Self = StObject.set(x, "ProvisionPermissionSetRequestId", value.asInstanceOf[js.Any])
+    inline def setProvisionPermissionSetRequestId(value: UUId): Self = StObject.set(x, "ProvisionPermissionSetRequestId", value.asInstanceOf[js.Any])
   }
 }

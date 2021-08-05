@@ -24,25 +24,19 @@ trait SchemaRevisionTemplate extends StObject {
 }
 object SchemaRevisionTemplate {
   
-  @scala.inline
-  def apply(): SchemaRevisionTemplate = {
+  inline def apply(): SchemaRevisionTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevisionTemplate]
   }
   
-  @scala.inline
-  implicit class SchemaRevisionTemplateMutableBuilder[Self <: SchemaRevisionTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevisionTemplate](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SchemaObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSpec(value: SchemaRevisionSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: SchemaRevisionSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

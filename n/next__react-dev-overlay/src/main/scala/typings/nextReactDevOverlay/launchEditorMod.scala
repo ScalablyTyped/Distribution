@@ -10,6 +10,5 @@ object launchEditorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def launchEditor(fileName: String, lineNumber: Double, colNumber: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("launchEditor")(fileName.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def launchEditor(fileName: String, lineNumber: Double, colNumber: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("launchEditor")(fileName.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -18,25 +18,19 @@ trait ApplicationResourceLifecycleDescriptionMessage extends StObject {
 }
 object ApplicationResourceLifecycleDescriptionMessage {
   
-  @scala.inline
-  def apply(): ApplicationResourceLifecycleDescriptionMessage = {
+  inline def apply(): ApplicationResourceLifecycleDescriptionMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationResourceLifecycleDescriptionMessage]
   }
   
-  @scala.inline
-  implicit class ApplicationResourceLifecycleDescriptionMessageMutableBuilder[Self <: ApplicationResourceLifecycleDescriptionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationResourceLifecycleDescriptionMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
+    inline def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLifecycleConfigUndefined: Self = StObject.set(x, "ResourceLifecycleConfig", js.undefined)
+    inline def setResourceLifecycleConfigUndefined: Self = StObject.set(x, "ResourceLifecycleConfig", js.undefined)
   }
 }

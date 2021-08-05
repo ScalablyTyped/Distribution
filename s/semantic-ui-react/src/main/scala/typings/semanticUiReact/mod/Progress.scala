@@ -19,6 +19,5 @@ class Progress protected ()
 }
 object Progress {
   
-  @scala.inline
-  def apply: ComponentClass[ProgressProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Progress").asInstanceOf[ComponentClass[ProgressProps, ComponentState]]
+  inline def apply: ComponentClass[ProgressProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Progress").asInstanceOf[ComponentClass[ProgressProps, ComponentState]]
 }

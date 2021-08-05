@@ -26,7 +26,7 @@ object fetchHttpHandlerMod {
     override def handle(request: HttpRequest, handlerOptions: HttpHandlerOptions): js.Promise[RequestHandlerOutput[HttpResponse]] = js.native
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, options: HttpHandlerOptions): js.Promise[Response] = js.native
     
-    val httpOptions: js.Any = js.native
+    /* private */ val httpOptions: js.Any = js.native
   }
   
   trait BrowserHttpOptions extends StObject {
@@ -39,20 +39,16 @@ object fetchHttpHandlerMod {
   }
   object BrowserHttpOptions {
     
-    @scala.inline
-    def apply(): BrowserHttpOptions = {
+    inline def apply(): BrowserHttpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserHttpOptions]
     }
     
-    @scala.inline
-    implicit class BrowserHttpOptionsMutableBuilder[Self <: BrowserHttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserHttpOptions](x: Self) {
       
-      @scala.inline
-      def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
     }
   }
 }

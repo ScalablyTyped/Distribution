@@ -12,9 +12,9 @@ object loggerFactoryMod {
   @js.native
   class LoggerFactory () extends StObject {
     
-    var _connector: js.Any = js.native
+    /* private */ var _connector: js.Any = js.native
     
-    var _level: js.Any = js.native
+    /* private */ var _level: js.Any = js.native
     
     var builtinEnabled: Boolean = js.native
     
@@ -48,10 +48,10 @@ object loggerFactoryMod {
     def level: Levels = js.native
     def level_=(newLevel: Levels): Unit = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var loggers: js.Any = js.native
+    /* private */ var loggers: js.Any = js.native
     
-    var print: js.Any = js.native
+    /* private */ var print: js.Any = js.native
   }
 }

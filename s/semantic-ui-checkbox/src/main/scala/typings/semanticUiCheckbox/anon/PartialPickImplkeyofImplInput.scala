@@ -13,25 +13,19 @@ trait PartialPickImplkeyofImplInput extends StObject {
 }
 object PartialPickImplkeyofImplInput {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplInput = {
+  inline def apply(): PartialPickImplkeyofImplInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplInput]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplInputMutableBuilder[Self <: PartialPickImplkeyofImplInput] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplInput](x: Self) {
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

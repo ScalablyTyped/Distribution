@@ -11,19 +11,15 @@ trait VideoPlayerSizeTargetingOptionDetails extends StObject {
 }
 object VideoPlayerSizeTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): VideoPlayerSizeTargetingOptionDetails = {
+  inline def apply(): VideoPlayerSizeTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoPlayerSizeTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class VideoPlayerSizeTargetingOptionDetailsMutableBuilder[Self <: VideoPlayerSizeTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: VideoPlayerSizeTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setVideoPlayerSize(value: String): Self = StObject.set(x, "videoPlayerSize", value.asInstanceOf[js.Any])
+    inline def setVideoPlayerSize(value: String): Self = StObject.set(x, "videoPlayerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPlayerSizeUndefined: Self = StObject.set(x, "videoPlayerSize", js.undefined)
+    inline def setVideoPlayerSizeUndefined: Self = StObject.set(x, "videoPlayerSize", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait Amd extends StObject {
 }
 object Amd {
   
-  @scala.inline
-  def apply(): Amd = {
+  inline def apply(): Amd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Amd]
   }
   
-  @scala.inline
-  implicit class AmdMutableBuilder[Self <: Amd] (val x: Self) extends AnyVal {
+  extension [Self <: Amd](x: Self) {
     
-    @scala.inline
-    def setAmd(value: String): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
+    inline def setAmd(value: String): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
+    inline def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
     
-    @scala.inline
-    def setCommonjs(value: String): Self = StObject.set(x, "commonjs", value.asInstanceOf[js.Any])
+    inline def setCommonjs(value: String): Self = StObject.set(x, "commonjs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonjs2(value: String): Self = StObject.set(x, "commonjs2", value.asInstanceOf[js.Any])
+    inline def setCommonjs2(value: String): Self = StObject.set(x, "commonjs2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonjs2Undefined: Self = StObject.set(x, "commonjs2", js.undefined)
+    inline def setCommonjs2Undefined: Self = StObject.set(x, "commonjs2", js.undefined)
     
-    @scala.inline
-    def setCommonjsUndefined: Self = StObject.set(x, "commonjs", js.undefined)
+    inline def setCommonjsUndefined: Self = StObject.set(x, "commonjs", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

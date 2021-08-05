@@ -18,22 +18,17 @@ trait SearchSynonymsResponse extends StObject {
 }
 object SearchSynonymsResponse {
   
-  @scala.inline
-  def apply(hits: js.Array[Synonym], nbHits: Double): SearchSynonymsResponse = {
+  inline def apply(hits: js.Array[Synonym], nbHits: Double): SearchSynonymsResponse = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any], nbHits = nbHits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSynonymsResponse]
   }
   
-  @scala.inline
-  implicit class SearchSynonymsResponseMutableBuilder[Self <: SearchSynonymsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSynonymsResponse](x: Self) {
     
-    @scala.inline
-    def setHits(value: js.Array[Synonym]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[Synonym]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsVarargs(value: Synonym*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: Synonym*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
-    @scala.inline
-    def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
+    inline def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait PublicKeyCredentialRpEntity
 }
 object PublicKeyCredentialRpEntity {
   
-  @scala.inline
-  def apply(name: java.lang.String): PublicKeyCredentialRpEntity = {
+  inline def apply(name: java.lang.String): PublicKeyCredentialRpEntity = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialRpEntity]
   }
   
-  @scala.inline
-  implicit class PublicKeyCredentialRpEntityMutableBuilder[Self <: PublicKeyCredentialRpEntity] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyCredentialRpEntity](x: Self) {
     
-    @scala.inline
-    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

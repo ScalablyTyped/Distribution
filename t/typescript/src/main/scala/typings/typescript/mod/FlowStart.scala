@@ -13,19 +13,15 @@ trait FlowStart
 }
 object FlowStart {
   
-  @scala.inline
-  def apply(flags: FlowFlags): FlowStart = {
+  inline def apply(flags: FlowFlags): FlowStart = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowStart]
   }
   
-  @scala.inline
-  implicit class FlowStartMutableBuilder[Self <: FlowStart] (val x: Self) extends AnyVal {
+  extension [Self <: FlowStart](x: Self) {
     
-    @scala.inline
-    def setNode(value: FunctionExpression | ArrowFunction | MethodDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: FunctionExpression | ArrowFunction | MethodDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
   }
 }

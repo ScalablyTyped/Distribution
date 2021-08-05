@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-jsrender", JSImport.Namespace)
   @js.native
@@ -24,17 +23,14 @@ object mod {
     }
     object Template {
       
-      @scala.inline
-      def apply(engine: jsrender | String): Template = {
+      inline def apply(engine: jsrender | String): Template = {
         val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
         __obj.asInstanceOf[Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+      extension [Self <: Template](x: Self) {
         
-        @scala.inline
-        def setEngine(value: jsrender | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+        inline def setEngine(value: jsrender | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       }
     }
   }

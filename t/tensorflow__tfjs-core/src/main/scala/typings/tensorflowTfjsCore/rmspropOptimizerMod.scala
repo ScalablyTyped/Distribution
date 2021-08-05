@@ -30,21 +30,21 @@ object rmspropOptimizerMod {
     def this(learningRate: Double, decay: Unit, momentum: Unit, epsilon: Double, centered: Boolean) = this()
     def this(learningRate: Double, decay: Unit, momentum: Unit, epsilon: Unit, centered: Boolean) = this()
     
-    var accumulatedMeanGrads: js.Any = js.native
+    /* private */ var accumulatedMeanGrads: js.Any = js.native
     
-    var accumulatedMeanSquares: js.Any = js.native
+    /* private */ var accumulatedMeanSquares: js.Any = js.native
     
-    var accumulatedMoments: js.Any = js.native
+    /* private */ var accumulatedMoments: js.Any = js.native
     
-    var centered: js.Any = js.native
+    /* private */ var centered: js.Any = js.native
     
-    var decay: Double = js.native
+    /* protected */ var decay: Double = js.native
     
-    var epsilon: Double = js.native
+    /* protected */ var epsilon: Double = js.native
     
-    var learningRate: Double = js.native
+    /* protected */ var learningRate: Double = js.native
     
-    var momentum: Double = js.native
+    /* protected */ var momentum: Double = js.native
   }
   /* static members */
   object RMSPropOptimizer {
@@ -57,11 +57,9 @@ object rmspropOptimizerMod {
     @JSImport("@tensorflow/tfjs-core/dist/optimizers/rmsprop_optimizer", "RMSPropOptimizer.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

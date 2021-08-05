@@ -14,31 +14,23 @@ trait GetRolesData extends StObject {
 }
 object GetRolesData {
   
-  @scala.inline
-  def apply(): GetRolesData = {
+  inline def apply(): GetRolesData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRolesData]
   }
   
-  @scala.inline
-  implicit class GetRolesDataMutableBuilder[Self <: GetRolesData] (val x: Self) extends AnyVal {
+  extension [Self <: GetRolesData](x: Self) {
     
-    @scala.inline
-    def setName_filter(value: String): Self = StObject.set(x, "name_filter", value.asInstanceOf[js.Any])
+    inline def setName_filter(value: String): Self = StObject.set(x, "name_filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_filterUndefined: Self = StObject.set(x, "name_filter", js.undefined)
+    inline def setName_filterUndefined: Self = StObject.set(x, "name_filter", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
   }
 }

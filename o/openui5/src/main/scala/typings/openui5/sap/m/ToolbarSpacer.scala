@@ -13,7 +13,7 @@ trait ToolbarSpacer
   /**
     * Flexible Spacer Class Name
     */
-  var flexClass: js.Any = js.native
+  /* protected */ var flexClass: js.Any = js.native
   
   /**
     * Gets current value of property <code>width</code>.Defines the width of the horizontal space.Note:

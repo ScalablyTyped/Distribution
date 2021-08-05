@@ -16,23 +16,19 @@ trait GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff extends StOb
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff = {
+  inline def apply(): GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoffMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff](x: Self) {
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

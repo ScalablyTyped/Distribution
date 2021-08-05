@@ -13,19 +13,15 @@ trait DeleteSnapshotScheduleOutput extends StObject {
 }
 object DeleteSnapshotScheduleOutput {
   
-  @scala.inline
-  def apply(): DeleteSnapshotScheduleOutput = {
+  inline def apply(): DeleteSnapshotScheduleOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSnapshotScheduleOutput]
   }
   
-  @scala.inline
-  implicit class DeleteSnapshotScheduleOutputMutableBuilder[Self <: DeleteSnapshotScheduleOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSnapshotScheduleOutput](x: Self) {
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait ARIARoleRelation extends StObject {
 }
 object ARIARoleRelation {
   
-  @scala.inline
-  def apply(): ARIARoleRelation = {
+  inline def apply(): ARIARoleRelation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ARIARoleRelation]
   }
   
-  @scala.inline
-  implicit class ARIARoleRelationMutableBuilder[Self <: ARIARoleRelation] (val x: Self) extends AnyVal {
+  extension [Self <: ARIARoleRelation](x: Self) {
     
-    @scala.inline
-    def setConcept(value: ARIARoleRelationConcept): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
+    inline def setConcept(value: ARIARoleRelationConcept): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
+    inline def setConceptUndefined: Self = StObject.set(x, "concept", js.undefined)
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
   }
 }

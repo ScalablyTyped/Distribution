@@ -14,22 +14,17 @@ trait ReturnTypeAttachToTargetResponse extends StObject {
 }
 object ReturnTypeAttachToTargetResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[AttachToTargetRequest], returnType: AttachToTargetResponse): ReturnTypeAttachToTargetResponse = {
+  inline def apply(paramsType: js.Array[AttachToTargetRequest], returnType: AttachToTargetResponse): ReturnTypeAttachToTargetResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeAttachToTargetResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeAttachToTargetResponseMutableBuilder[Self <: ReturnTypeAttachToTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeAttachToTargetResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[AttachToTargetRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[AttachToTargetRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: AttachToTargetRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: AttachToTargetRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: AttachToTargetResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: AttachToTargetResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

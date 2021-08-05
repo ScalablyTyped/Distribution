@@ -20,17 +20,14 @@ object mod extends Shortcut {
   }
   object LinkedStateMixin {
     
-    @scala.inline
-    def apply(linkState: String => ReactLink[js.Any]): LinkedStateMixin = {
+    inline def apply(linkState: String => ReactLink[js.Any]): LinkedStateMixin = {
       val __obj = js.Dynamic.literal(linkState = js.Any.fromFunction1(linkState))
       __obj.asInstanceOf[LinkedStateMixin]
     }
     
-    @scala.inline
-    implicit class LinkedStateMixinMutableBuilder[Self <: LinkedStateMixin] (val x: Self) extends AnyVal {
+    extension [Self <: LinkedStateMixin](x: Self) {
       
-      @scala.inline
-      def setLinkState(value: String => ReactLink[js.Any]): Self = StObject.set(x, "linkState", js.Any.fromFunction1(value))
+      inline def setLinkState(value: String => ReactLink[js.Any]): Self = StObject.set(x, "linkState", js.Any.fromFunction1(value))
     }
   }
   
@@ -42,20 +39,16 @@ object mod extends Shortcut {
   }
   object ReactLink {
     
-    @scala.inline
-    def apply[T](requestChange: T => Unit, value: T): ReactLink[T] = {
+    inline def apply[T](requestChange: T => Unit, value: T): ReactLink[T] = {
       val __obj = js.Dynamic.literal(requestChange = js.Any.fromFunction1(requestChange), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactLink[T]]
     }
     
-    @scala.inline
-    implicit class ReactLinkMutableBuilder[Self <: ReactLink[?], T] (val x: Self & ReactLink[T]) extends AnyVal {
+    extension [Self <: ReactLink[?], T](x: Self & ReactLink[T]) {
       
-      @scala.inline
-      def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
+      inline def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,26 +68,20 @@ object mod extends Shortcut {
     }
     object HTMLAttributes {
       
-      @scala.inline
-      def apply[T](): HTMLAttributes[T] = {
+      inline def apply[T](): HTMLAttributes[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HTMLAttributes[T]]
       }
       
-      @scala.inline
-      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
+      extension [Self <: HTMLAttributes[?], T](x: Self & HTMLAttributes[T]) {
         
-        @scala.inline
-        def setCheckedLink(value: ReactLink[Boolean]): Self = StObject.set(x, "checkedLink", value.asInstanceOf[js.Any])
+        inline def setCheckedLink(value: ReactLink[Boolean]): Self = StObject.set(x, "checkedLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCheckedLinkUndefined: Self = StObject.set(x, "checkedLink", js.undefined)
+        inline def setCheckedLinkUndefined: Self = StObject.set(x, "checkedLink", js.undefined)
         
-        @scala.inline
-        def setValueLink(value: ReactLink[Boolean | String | Double]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
+        inline def setValueLink(value: ReactLink[Boolean | String | Double]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueLinkUndefined: Self = StObject.set(x, "valueLink", js.undefined)
+        inline def setValueLinkUndefined: Self = StObject.set(x, "valueLink", js.undefined)
       }
     }
   }

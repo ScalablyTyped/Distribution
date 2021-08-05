@@ -19,25 +19,19 @@ trait RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption extends StObject {
 }
 object RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption {
   
-  @scala.inline
-  def apply(keyword: String): RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption = {
+  inline def apply(keyword: String): RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption = {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption](x: Self) {
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: js.Array[String]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Array[String]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: String*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: String*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

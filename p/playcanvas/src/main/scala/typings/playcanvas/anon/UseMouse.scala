@@ -14,31 +14,23 @@ trait UseMouse extends StObject {
 }
 object UseMouse {
   
-  @scala.inline
-  def apply(): UseMouse = {
+  inline def apply(): UseMouse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseMouse]
   }
   
-  @scala.inline
-  implicit class UseMouseMutableBuilder[Self <: UseMouse] (val x: Self) extends AnyVal {
+  extension [Self <: UseMouse](x: Self) {
     
-    @scala.inline
-    def setUseMouse(value: Boolean): Self = StObject.set(x, "useMouse", value.asInstanceOf[js.Any])
+    inline def setUseMouse(value: Boolean): Self = StObject.set(x, "useMouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMouseUndefined: Self = StObject.set(x, "useMouse", js.undefined)
+    inline def setUseMouseUndefined: Self = StObject.set(x, "useMouse", js.undefined)
     
-    @scala.inline
-    def setUseTouch(value: Boolean): Self = StObject.set(x, "useTouch", value.asInstanceOf[js.Any])
+    inline def setUseTouch(value: Boolean): Self = StObject.set(x, "useTouch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTouchUndefined: Self = StObject.set(x, "useTouch", js.undefined)
+    inline def setUseTouchUndefined: Self = StObject.set(x, "useTouch", js.undefined)
     
-    @scala.inline
-    def setUseXr(value: Boolean): Self = StObject.set(x, "useXr", value.asInstanceOf[js.Any])
+    inline def setUseXr(value: Boolean): Self = StObject.set(x, "useXr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseXrUndefined: Self = StObject.set(x, "useXr", js.undefined)
+    inline def setUseXrUndefined: Self = StObject.set(x, "useXr", js.undefined)
   }
 }

@@ -29,31 +29,23 @@ trait ParamsResourceAccountsAdclientsGetadcode
 }
 object ParamsResourceAccountsAdclientsGetadcode {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsAdclientsGetadcode = {
+  inline def apply(): ParamsResourceAccountsAdclientsGetadcode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsAdclientsGetadcode]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsAdclientsGetadcodeMutableBuilder[Self <: ParamsResourceAccountsAdclientsGetadcode] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsAdclientsGetadcode](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
+    inline def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
+    inline def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

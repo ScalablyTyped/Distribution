@@ -18,25 +18,19 @@ trait ConfirmProductInstanceResult extends StObject {
 }
 object ConfirmProductInstanceResult {
   
-  @scala.inline
-  def apply(): ConfirmProductInstanceResult = {
+  inline def apply(): ConfirmProductInstanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmProductInstanceResult]
   }
   
-  @scala.inline
-  implicit class ConfirmProductInstanceResultMutableBuilder[Self <: ConfirmProductInstanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmProductInstanceResult](x: Self) {
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

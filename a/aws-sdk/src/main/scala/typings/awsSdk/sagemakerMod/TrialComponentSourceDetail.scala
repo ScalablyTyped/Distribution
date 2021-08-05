@@ -28,37 +28,27 @@ trait TrialComponentSourceDetail extends StObject {
 }
 object TrialComponentSourceDetail {
   
-  @scala.inline
-  def apply(): TrialComponentSourceDetail = {
+  inline def apply(): TrialComponentSourceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrialComponentSourceDetail]
   }
   
-  @scala.inline
-  implicit class TrialComponentSourceDetailMutableBuilder[Self <: TrialComponentSourceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: TrialComponentSourceDetail](x: Self) {
     
-    @scala.inline
-    def setProcessingJob(value: ProcessingJob): Self = StObject.set(x, "ProcessingJob", value.asInstanceOf[js.Any])
+    inline def setProcessingJob(value: ProcessingJob): Self = StObject.set(x, "ProcessingJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingJobUndefined: Self = StObject.set(x, "ProcessingJob", js.undefined)
+    inline def setProcessingJobUndefined: Self = StObject.set(x, "ProcessingJob", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: TrialComponentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: TrialComponentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
-    @scala.inline
-    def setTrainingJob(value: TrainingJob): Self = StObject.set(x, "TrainingJob", value.asInstanceOf[js.Any])
+    inline def setTrainingJob(value: TrainingJob): Self = StObject.set(x, "TrainingJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobUndefined: Self = StObject.set(x, "TrainingJob", js.undefined)
+    inline def setTrainingJobUndefined: Self = StObject.set(x, "TrainingJob", js.undefined)
     
-    @scala.inline
-    def setTransformJob(value: TransformJob): Self = StObject.set(x, "TransformJob", value.asInstanceOf[js.Any])
+    inline def setTransformJob(value: TransformJob): Self = StObject.set(x, "TransformJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformJobUndefined: Self = StObject.set(x, "TransformJob", js.undefined)
+    inline def setTransformJobUndefined: Self = StObject.set(x, "TransformJob", js.undefined)
   }
 }

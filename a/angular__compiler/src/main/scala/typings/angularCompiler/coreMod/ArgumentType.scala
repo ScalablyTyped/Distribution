@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArgumentType extends StObject
 object ArgumentType {
   
-  @scala.inline
-  def Dynamic: `1` = 1.asInstanceOf[`1`]
+  inline def Dynamic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Inline: `0` = 0.asInstanceOf[`0`]
+  inline def Inline: `0` = 0.asInstanceOf[`0`]
 }

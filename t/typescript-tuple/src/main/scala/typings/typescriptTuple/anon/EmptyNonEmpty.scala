@@ -12,8 +12,7 @@ trait EmptyNonEmpty[Shortest, TupleSet /* <: js.Array[js.Array[js.Any]] */] exte
 }
 object EmptyNonEmpty {
   
-  @scala.inline
-  def apply[Shortest, TupleSet /* <: js.Array[js.Array[js.Any]] */](
+  inline def apply[Shortest, TupleSet /* <: js.Array[js.Array[js.Any]] */](
     empty: Shortest,
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Shortest, any, [Shortest, any]>[0] */ js.Any
   ): EmptyNonEmpty[Shortest, TupleSet] = {
@@ -21,14 +20,11 @@ object EmptyNonEmpty {
     __obj.asInstanceOf[EmptyNonEmpty[Shortest, TupleSet]]
   }
   
-  @scala.inline
-  implicit class EmptyNonEmptyMutableBuilder[Self <: EmptyNonEmpty[?, ?], Shortest, TupleSet /* <: js.Array[js.Array[js.Any]] */] (val x: Self & (EmptyNonEmpty[Shortest, TupleSet])) extends AnyVal {
+  extension [Self <: EmptyNonEmpty[?, ?], Shortest, TupleSet /* <: js.Array[js.Array[js.Any]] */](x: Self & (EmptyNonEmpty[Shortest, TupleSet])) {
     
-    @scala.inline
-    def setEmpty(value: Shortest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Shortest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmpty(
+    inline def setNonEmpty(
       value: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Shortest, any, [Shortest, any]>[0] */ js.Any
     ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
   }

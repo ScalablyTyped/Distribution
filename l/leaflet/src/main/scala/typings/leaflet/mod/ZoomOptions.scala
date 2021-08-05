@@ -10,19 +10,15 @@ trait ZoomOptions extends StObject {
 }
 object ZoomOptions {
   
-  @scala.inline
-  def apply(): ZoomOptions = {
+  inline def apply(): ZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoomOptions]
   }
   
-  @scala.inline
-  implicit class ZoomOptionsMutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomOptions](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
   }
 }

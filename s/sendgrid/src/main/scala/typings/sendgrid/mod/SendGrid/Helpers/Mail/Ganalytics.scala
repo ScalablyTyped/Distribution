@@ -35,8 +35,7 @@ trait Ganalytics extends StObject {
 }
 object Ganalytics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContent: () => String,
     getEnable: () => Boolean,
     getUrmMedium: () => String,
@@ -55,46 +54,32 @@ object Ganalytics {
     __obj.asInstanceOf[Ganalytics]
   }
   
-  @scala.inline
-  implicit class GanalyticsMutableBuilder[Self <: Ganalytics] (val x: Self) extends AnyVal {
+  extension [Self <: Ganalytics](x: Self) {
     
-    @scala.inline
-    def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
+    inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrmMedium(value: () => String): Self = StObject.set(x, "getUrmMedium", js.Any.fromFunction0(value))
+    inline def setGetUrmMedium(value: () => String): Self = StObject.set(x, "getUrmMedium", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrmTerm(value: () => String): Self = StObject.set(x, "getUrmTerm", js.Any.fromFunction0(value))
+    inline def setGetUrmTerm(value: () => String): Self = StObject.set(x, "getUrmTerm", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUtmCampaign(value: () => String): Self = StObject.set(x, "getUtmCampaign", js.Any.fromFunction0(value))
+    inline def setGetUtmCampaign(value: () => String): Self = StObject.set(x, "getUtmCampaign", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUtmSource(value: () => String): Self = StObject.set(x, "getUtmSource", js.Any.fromFunction0(value))
+    inline def setGetUtmSource(value: () => String): Self = StObject.set(x, "getUtmSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+    inline def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrmMedium(value: String => Unit): Self = StObject.set(x, "setUrmMedium", js.Any.fromFunction1(value))
+    inline def setSetUrmMedium(value: String => Unit): Self = StObject.set(x, "setUrmMedium", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrmTerm(value: String => Unit): Self = StObject.set(x, "setUrmTerm", js.Any.fromFunction1(value))
+    inline def setSetUrmTerm(value: String => Unit): Self = StObject.set(x, "setUrmTerm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUtmCampaign(value: String => Unit): Self = StObject.set(x, "setUtmCampaign", js.Any.fromFunction1(value))
+    inline def setSetUtmCampaign(value: String => Unit): Self = StObject.set(x, "setUtmCampaign", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUtmSource(value: String => Unit): Self = StObject.set(x, "setUtmSource", js.Any.fromFunction1(value))
+    inline def setSetUtmSource(value: String => Unit): Self = StObject.set(x, "setUtmSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => Utmcampaign): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Utmcampaign): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

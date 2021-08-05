@@ -17,22 +17,17 @@ trait SecurityValues extends StObject {
 }
 object SecurityValues {
   
-  @scala.inline
-  def apply(editable: Boolean, readable: Boolean, secured: Boolean): SecurityValues = {
+  inline def apply(editable: Boolean, readable: Boolean, secured: Boolean): SecurityValues = {
     val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], secured = secured.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityValues]
   }
   
-  @scala.inline
-  implicit class SecurityValuesMutableBuilder[Self <: SecurityValues] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityValues](x: Self) {
     
-    @scala.inline
-    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecured(value: Boolean): Self = StObject.set(x, "secured", value.asInstanceOf[js.Any])
+    inline def setSecured(value: Boolean): Self = StObject.set(x, "secured", value.asInstanceOf[js.Any])
   }
 }

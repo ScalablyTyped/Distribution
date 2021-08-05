@@ -43,54 +43,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlRemoveDocInfoType extends StObject
 object XlRemoveDocInfoType {
   
-  @scala.inline
-  def xlRDIAll: `99` = 99.asInstanceOf[`99`]
+  inline def xlRDIAll: `99` = 99.asInstanceOf[`99`]
   
-  @scala.inline
-  def xlRDIComments: `1` = 1.asInstanceOf[`1`]
+  inline def xlRDIComments: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlRDIContentType: `16` = 16.asInstanceOf[`16`]
+  inline def xlRDIContentType: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def xlRDIDefinedNameComments: `18` = 18.asInstanceOf[`18`]
+  inline def xlRDIDefinedNameComments: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def xlRDIDocumentManagementPolicy: `15` = 15.asInstanceOf[`15`]
+  inline def xlRDIDocumentManagementPolicy: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def xlRDIDocumentProperties: `8` = 8.asInstanceOf[`8`]
+  inline def xlRDIDocumentProperties: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlRDIDocumentServerProperties: `14` = 14.asInstanceOf[`14`]
+  inline def xlRDIDocumentServerProperties: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def xlRDIDocumentWorkspace: `10` = 10.asInstanceOf[`10`]
+  inline def xlRDIDocumentWorkspace: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def xlRDIEmailHeader: `5` = 5.asInstanceOf[`5`]
+  inline def xlRDIEmailHeader: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlRDIInactiveDataConnections: `19` = 19.asInstanceOf[`19`]
+  inline def xlRDIInactiveDataConnections: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def xlRDIInkAnnotations: `11` = 11.asInstanceOf[`11`]
+  inline def xlRDIInkAnnotations: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def xlRDIPrinterPath: `20` = 20.asInstanceOf[`20`]
+  inline def xlRDIPrinterPath: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def xlRDIPublishInfo: `13` = 13.asInstanceOf[`13`]
+  inline def xlRDIPublishInfo: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def xlRDIRemovePersonalInformation: `4` = 4.asInstanceOf[`4`]
+  inline def xlRDIRemovePersonalInformation: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlRDIRoutingSlip: `6` = 6.asInstanceOf[`6`]
+  inline def xlRDIRoutingSlip: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlRDIScenarioComments: `12` = 12.asInstanceOf[`12`]
+  inline def xlRDIScenarioComments: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def xlRDISendForReview: `7` = 7.asInstanceOf[`7`]
+  inline def xlRDISendForReview: `7` = 7.asInstanceOf[`7`]
 }

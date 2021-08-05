@@ -23,31 +23,23 @@ trait PipelineDetail extends StObject {
 }
 object PipelineDetail {
   
-  @scala.inline
-  def apply(): PipelineDetail = {
+  inline def apply(): PipelineDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineDetail]
   }
   
-  @scala.inline
-  implicit class PipelineDetailMutableBuilder[Self <: PipelineDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineDetail](x: Self) {
     
-    @scala.inline
-    def setActiveInputAttachmentName(value: string): Self = StObject.set(x, "ActiveInputAttachmentName", value.asInstanceOf[js.Any])
+    inline def setActiveInputAttachmentName(value: string): Self = StObject.set(x, "ActiveInputAttachmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveInputAttachmentNameUndefined: Self = StObject.set(x, "ActiveInputAttachmentName", js.undefined)
+    inline def setActiveInputAttachmentNameUndefined: Self = StObject.set(x, "ActiveInputAttachmentName", js.undefined)
     
-    @scala.inline
-    def setActiveInputSwitchActionName(value: string): Self = StObject.set(x, "ActiveInputSwitchActionName", value.asInstanceOf[js.Any])
+    inline def setActiveInputSwitchActionName(value: string): Self = StObject.set(x, "ActiveInputSwitchActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveInputSwitchActionNameUndefined: Self = StObject.set(x, "ActiveInputSwitchActionName", js.undefined)
+    inline def setActiveInputSwitchActionNameUndefined: Self = StObject.set(x, "ActiveInputSwitchActionName", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: string): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: string): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineIdUndefined: Self = StObject.set(x, "PipelineId", js.undefined)
+    inline def setPipelineIdUndefined: Self = StObject.set(x, "PipelineId", js.undefined)
   }
 }

@@ -102,19 +102,16 @@ object AccessToken {
   /**
     * Getter for the access token that is current for the application.
     */
-  @scala.inline
-  def getCurrentAccessToken(): js.Promise[AccessToken | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentAccessToken")().asInstanceOf[js.Promise[AccessToken | Null]]
+  inline def getCurrentAccessToken(): js.Promise[AccessToken | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentAccessToken")().asInstanceOf[js.Promise[AccessToken | Null]]
   
   /**
     * Updates the current access token with up to date permissions,
     * and extends the expiration date, if extension is possible.
     */
-  @scala.inline
-  def refreshCurrentAccessTokenAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCurrentAccessTokenAsync")().asInstanceOf[js.Promise[js.Any]]
+  inline def refreshCurrentAccessTokenAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCurrentAccessTokenAsync")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Setter for the access token that is current for the application.
     */
-  @scala.inline
-  def setCurrentAccessToken(accessToken: AccessTokenMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentAccessToken")(accessToken.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setCurrentAccessToken(accessToken: AccessTokenMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentAccessToken")(accessToken.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -21,7 +21,7 @@ trait DocumentLibraryVersion extends StObject {
   
   val ModifiedBy: String
   
-  @JSName("Office.DocumentLibraryVersion_typekey")
+  /* private */ @JSName("Office.DocumentLibraryVersion_typekey")
   var OfficeDotDocumentLibraryVersion_typekey: DocumentLibraryVersion
   
   def Open(): js.Any
@@ -32,8 +32,7 @@ trait DocumentLibraryVersion extends StObject {
 }
 object DocumentLibraryVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Comments: String,
     Creator: Double,
@@ -51,40 +50,28 @@ object DocumentLibraryVersion {
     __obj.asInstanceOf[DocumentLibraryVersion]
   }
   
-  @scala.inline
-  implicit class DocumentLibraryVersionMutableBuilder[Self <: DocumentLibraryVersion] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLibraryVersion](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModified(value: VarDate): Self = StObject.set(x, "Modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: VarDate): Self = StObject.set(x, "Modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
+    inline def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotDocumentLibraryVersion_typekey(value: DocumentLibraryVersion): Self = StObject.set(x, "Office.DocumentLibraryVersion_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotDocumentLibraryVersion_typekey(value: DocumentLibraryVersion): Self = StObject.set(x, "Office.DocumentLibraryVersion_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => js.Any): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => js.Any): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestore(value: () => js.Any): Self = StObject.set(x, "Restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => js.Any): Self = StObject.set(x, "Restore", js.Any.fromFunction0(value))
   }
 }

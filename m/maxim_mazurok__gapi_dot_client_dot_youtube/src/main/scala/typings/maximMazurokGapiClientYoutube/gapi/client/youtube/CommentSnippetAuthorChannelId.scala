@@ -10,19 +10,15 @@ trait CommentSnippetAuthorChannelId extends StObject {
 }
 object CommentSnippetAuthorChannelId {
   
-  @scala.inline
-  def apply(): CommentSnippetAuthorChannelId = {
+  inline def apply(): CommentSnippetAuthorChannelId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentSnippetAuthorChannelId]
   }
   
-  @scala.inline
-  implicit class CommentSnippetAuthorChannelIdMutableBuilder[Self <: CommentSnippetAuthorChannelId] (val x: Self) extends AnyVal {
+  extension [Self <: CommentSnippetAuthorChannelId](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

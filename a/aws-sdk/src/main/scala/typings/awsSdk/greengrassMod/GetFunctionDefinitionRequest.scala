@@ -13,16 +13,13 @@ trait GetFunctionDefinitionRequest extends StObject {
 }
 object GetFunctionDefinitionRequest {
   
-  @scala.inline
-  def apply(FunctionDefinitionId: string): GetFunctionDefinitionRequest = {
+  inline def apply(FunctionDefinitionId: string): GetFunctionDefinitionRequest = {
     val __obj = js.Dynamic.literal(FunctionDefinitionId = FunctionDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class GetFunctionDefinitionRequestMutableBuilder[Self <: GetFunctionDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
   }
 }

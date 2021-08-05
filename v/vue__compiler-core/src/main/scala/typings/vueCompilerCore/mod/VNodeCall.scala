@@ -34,8 +34,7 @@ trait VNodeCall
 }
 object VNodeCall {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disableTracking: Boolean,
     isBlock: Boolean,
     loc: SourceLocation,
@@ -46,54 +45,38 @@ object VNodeCall {
     __obj.asInstanceOf[VNodeCall]
   }
   
-  @scala.inline
-  implicit class VNodeCallMutableBuilder[Self <: VNodeCall] (val x: Self) extends AnyVal {
+  extension [Self <: VNodeCall](x: Self) {
     
-    @scala.inline
-    def setChildren(
+    inline def setChildren(
       value: js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectives(value: DirectiveArguments): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: DirectiveArguments): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    @scala.inline
-    def setDisableTracking(value: Boolean): Self = StObject.set(x, "disableTracking", value.asInstanceOf[js.Any])
+    inline def setDisableTracking(value: Boolean): Self = StObject.set(x, "disableTracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicProps(value: String): Self = StObject.set(x, "dynamicProps", value.asInstanceOf[js.Any])
+    inline def setDynamicProps(value: String): Self = StObject.set(x, "dynamicProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicPropsUndefined: Self = StObject.set(x, "dynamicProps", js.undefined)
+    inline def setDynamicPropsUndefined: Self = StObject.set(x, "dynamicProps", js.undefined)
     
-    @scala.inline
-    def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
+    inline def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchFlag(value: String): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
+    inline def setPatchFlag(value: String): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchFlagUndefined: Self = StObject.set(x, "patchFlag", js.undefined)
+    inline def setPatchFlagUndefined: Self = StObject.set(x, "patchFlag", js.undefined)
     
-    @scala.inline
-    def setProps(value: PropsExpression): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: PropsExpression): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     
-    @scala.inline
-    def setTag(value: String | js.Symbol | CallExpression): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String | js.Symbol | CallExpression): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `13`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `13`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

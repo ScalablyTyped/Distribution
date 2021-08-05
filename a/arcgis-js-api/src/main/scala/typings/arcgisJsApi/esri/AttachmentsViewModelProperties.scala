@@ -39,37 +39,27 @@ trait AttachmentsViewModelProperties extends StObject {
 }
 object AttachmentsViewModelProperties {
   
-  @scala.inline
-  def apply(): AttachmentsViewModelProperties = {
+  inline def apply(): AttachmentsViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentsViewModelProperties]
   }
   
-  @scala.inline
-  implicit class AttachmentsViewModelPropertiesMutableBuilder[Self <: AttachmentsViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentsViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setActiveAttachmentInfo(value: AttachmentInfoProperties): Self = StObject.set(x, "activeAttachmentInfo", value.asInstanceOf[js.Any])
+    inline def setActiveAttachmentInfo(value: AttachmentInfoProperties): Self = StObject.set(x, "activeAttachmentInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveAttachmentInfoUndefined: Self = StObject.set(x, "activeAttachmentInfo", js.undefined)
+    inline def setActiveAttachmentInfoUndefined: Self = StObject.set(x, "activeAttachmentInfo", js.undefined)
     
-    @scala.inline
-    def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
+    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
-    @scala.inline
-    def setMode(value: view | add | edit): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: view | add | edit): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSupportsResizeAttachments(value: Boolean): Self = StObject.set(x, "supportsResizeAttachments", value.asInstanceOf[js.Any])
+    inline def setSupportsResizeAttachments(value: Boolean): Self = StObject.set(x, "supportsResizeAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsResizeAttachmentsUndefined: Self = StObject.set(x, "supportsResizeAttachments", js.undefined)
+    inline def setSupportsResizeAttachmentsUndefined: Self = StObject.set(x, "supportsResizeAttachments", js.undefined)
   }
 }

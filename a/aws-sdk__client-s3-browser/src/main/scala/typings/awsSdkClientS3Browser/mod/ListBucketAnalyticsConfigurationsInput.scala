@@ -9,8 +9,7 @@ trait ListBucketAnalyticsConfigurationsInput
      with typings.awsSdkClientS3Browser.typesListBucketAnalyticsConfigurationsInputMod.ListBucketAnalyticsConfigurationsInput
 object ListBucketAnalyticsConfigurationsInput {
   
-  @scala.inline
-  def apply(Bucket: String): ListBucketAnalyticsConfigurationsInput = {
+  inline def apply(Bucket: String): ListBucketAnalyticsConfigurationsInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketAnalyticsConfigurationsInput]
   }

@@ -33,16 +33,13 @@ trait Get209 extends StObject {
 }
 object Get209 {
   
-  @scala.inline
-  def apply(get: `209`): Get209 = {
+  inline def apply(get: `209`): Get209 = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Get209]
   }
   
-  @scala.inline
-  implicit class Get209MutableBuilder[Self <: Get209] (val x: Self) extends AnyVal {
+  extension [Self <: Get209](x: Self) {
     
-    @scala.inline
-    def setGet(value: `209`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `209`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

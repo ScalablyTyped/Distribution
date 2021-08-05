@@ -10,16 +10,13 @@ trait UpdateJourneyResponse extends StObject {
 }
 object UpdateJourneyResponse {
   
-  @scala.inline
-  def apply(JourneyResponse: JourneyResponse): UpdateJourneyResponse = {
+  inline def apply(JourneyResponse: JourneyResponse): UpdateJourneyResponse = {
     val __obj = js.Dynamic.literal(JourneyResponse = JourneyResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJourneyResponse]
   }
   
-  @scala.inline
-  implicit class UpdateJourneyResponseMutableBuilder[Self <: UpdateJourneyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJourneyResponse](x: Self) {
     
-    @scala.inline
-    def setJourneyResponse(value: JourneyResponse): Self = StObject.set(x, "JourneyResponse", value.asInstanceOf[js.Any])
+    inline def setJourneyResponse(value: JourneyResponse): Self = StObject.set(x, "JourneyResponse", value.asInstanceOf[js.Any])
   }
 }

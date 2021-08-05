@@ -16,34 +16,25 @@ trait OffsetRequest extends StObject {
 }
 object OffsetRequest {
   
-  @scala.inline
-  def apply(topic: String): OffsetRequest = {
+  inline def apply(topic: String): OffsetRequest = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetRequest]
   }
   
-  @scala.inline
-  implicit class OffsetRequestMutableBuilder[Self <: OffsetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OffsetRequest](x: Self) {
     
-    @scala.inline
-    def setMaxNum(value: Double): Self = StObject.set(x, "maxNum", value.asInstanceOf[js.Any])
+    inline def setMaxNum(value: Double): Self = StObject.set(x, "maxNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumUndefined: Self = StObject.set(x, "maxNum", js.undefined)
+    inline def setMaxNumUndefined: Self = StObject.set(x, "maxNum", js.undefined)
     
-    @scala.inline
-    def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ object constantsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DEFAULT_CONFIGS(): After = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_CONFIGS")().asInstanceOf[After]
+  inline def DEFAULT_CONFIGS(): After = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_CONFIGS")().asInstanceOf[After]
   
   @JSImport("@wdio/config/build/constants", "SUPPORTED_FILE_EXTENSIONS")
   @js.native

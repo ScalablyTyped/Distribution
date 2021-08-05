@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatUrl(request: OmitHttpRequestheadersmet): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUrl")(request.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatUrl(request: OmitHttpRequestheadersmet): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUrl")(request.asInstanceOf[js.Any]).asInstanceOf[String]
 }

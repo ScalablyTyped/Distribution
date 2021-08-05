@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RadioType extends StObject
 object RadioType {
   
-  @scala.inline
-  def cdma: typings.googleMaps.googleMapsStrings.cdma = "cdma".asInstanceOf[typings.googleMaps.googleMapsStrings.cdma]
+  inline def cdma: typings.googleMaps.googleMapsStrings.cdma = "cdma".asInstanceOf[typings.googleMaps.googleMapsStrings.cdma]
   
-  @scala.inline
-  def gsm: typings.googleMaps.googleMapsStrings.gsm = "gsm".asInstanceOf[typings.googleMaps.googleMapsStrings.gsm]
+  inline def gsm: typings.googleMaps.googleMapsStrings.gsm = "gsm".asInstanceOf[typings.googleMaps.googleMapsStrings.gsm]
   
-  @scala.inline
-  def lte: typings.googleMaps.googleMapsStrings.lte = "lte".asInstanceOf[typings.googleMaps.googleMapsStrings.lte]
+  inline def lte: typings.googleMaps.googleMapsStrings.lte = "lte".asInstanceOf[typings.googleMaps.googleMapsStrings.lte]
   
-  @scala.inline
-  def wcdma: typings.googleMaps.googleMapsStrings.wcdma = "wcdma".asInstanceOf[typings.googleMaps.googleMapsStrings.wcdma]
+  inline def wcdma: typings.googleMaps.googleMapsStrings.wcdma = "wcdma".asInstanceOf[typings.googleMaps.googleMapsStrings.wcdma]
 }

@@ -13,16 +13,13 @@ trait FetchInfo extends StObject {
 }
 object FetchInfo {
   
-  @scala.inline
-  def apply(dataTotalSize: Double): FetchInfo = {
+  inline def apply(dataTotalSize: Double): FetchInfo = {
     val __obj = js.Dynamic.literal(dataTotalSize = dataTotalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchInfo]
   }
   
-  @scala.inline
-  implicit class FetchInfoMutableBuilder[Self <: FetchInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FetchInfo](x: Self) {
     
-    @scala.inline
-    def setDataTotalSize(value: Double): Self = StObject.set(x, "dataTotalSize", value.asInstanceOf[js.Any])
+    inline def setDataTotalSize(value: Double): Self = StObject.set(x, "dataTotalSize", value.asInstanceOf[js.Any])
   }
 }

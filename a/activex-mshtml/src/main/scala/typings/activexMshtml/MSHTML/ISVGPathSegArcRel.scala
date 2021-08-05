@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISVGPathSegArcRel extends StObject {
   
-  @JSName("MSHTML.ISVGPathSegArcRel_typekey")
+  /* private */ @JSName("MSHTML.ISVGPathSegArcRel_typekey")
   var MSHTMLDotISVGPathSegArcRel_typekey: ISVGPathSegArcRel
   
   var angle: Double
@@ -25,8 +25,7 @@ trait ISVGPathSegArcRel extends StObject {
 }
 object ISVGPathSegArcRel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotISVGPathSegArcRel_typekey: ISVGPathSegArcRel,
     angle: Double,
     largeArcFlag: Boolean,
@@ -41,31 +40,22 @@ object ISVGPathSegArcRel {
     __obj.asInstanceOf[ISVGPathSegArcRel]
   }
   
-  @scala.inline
-  implicit class ISVGPathSegArcRelMutableBuilder[Self <: ISVGPathSegArcRel] (val x: Self) extends AnyVal {
+  extension [Self <: ISVGPathSegArcRel](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeArcFlag(value: Boolean): Self = StObject.set(x, "largeArcFlag", value.asInstanceOf[js.Any])
+    inline def setLargeArcFlag(value: Boolean): Self = StObject.set(x, "largeArcFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotISVGPathSegArcRel_typekey(value: ISVGPathSegArcRel): Self = StObject.set(x, "MSHTML.ISVGPathSegArcRel_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotISVGPathSegArcRel_typekey(value: ISVGPathSegArcRel): Self = StObject.set(x, "MSHTML.ISVGPathSegArcRel_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+    inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+    inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSweepFlag(value: Boolean): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
+    inline def setSweepFlag(value: Boolean): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

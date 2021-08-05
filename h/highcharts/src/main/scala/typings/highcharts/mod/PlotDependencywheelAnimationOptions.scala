@@ -10,19 +10,15 @@ trait PlotDependencywheelAnimationOptions extends StObject {
 }
 object PlotDependencywheelAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotDependencywheelAnimationOptions = {
+  inline def apply(): PlotDependencywheelAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotDependencywheelAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotDependencywheelAnimationOptionsMutableBuilder[Self <: PlotDependencywheelAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotDependencywheelAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

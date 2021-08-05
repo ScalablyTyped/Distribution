@@ -18,25 +18,19 @@ trait AccountSettings extends StObject {
 }
 object AccountSettings {
   
-  @scala.inline
-  def apply(): AccountSettings = {
+  inline def apply(): AccountSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSettings]
   }
   
-  @scala.inline
-  implicit class AccountSettingsMutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSettings](x: Self) {
     
-    @scala.inline
-    def setDisableRemoteControl(value: Boolean): Self = StObject.set(x, "DisableRemoteControl", value.asInstanceOf[js.Any])
+    inline def setDisableRemoteControl(value: Boolean): Self = StObject.set(x, "DisableRemoteControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableRemoteControlUndefined: Self = StObject.set(x, "DisableRemoteControl", js.undefined)
+    inline def setDisableRemoteControlUndefined: Self = StObject.set(x, "DisableRemoteControl", js.undefined)
     
-    @scala.inline
-    def setEnableDialOut(value: Boolean): Self = StObject.set(x, "EnableDialOut", value.asInstanceOf[js.Any])
+    inline def setEnableDialOut(value: Boolean): Self = StObject.set(x, "EnableDialOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDialOutUndefined: Self = StObject.set(x, "EnableDialOut", js.undefined)
+    inline def setEnableDialOutUndefined: Self = StObject.set(x, "EnableDialOut", js.undefined)
   }
 }

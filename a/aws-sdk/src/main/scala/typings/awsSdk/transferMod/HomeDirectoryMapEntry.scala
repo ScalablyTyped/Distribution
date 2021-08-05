@@ -18,19 +18,15 @@ trait HomeDirectoryMapEntry extends StObject {
 }
 object HomeDirectoryMapEntry {
   
-  @scala.inline
-  def apply(Entry: MapEntry, Target: MapTarget): HomeDirectoryMapEntry = {
+  inline def apply(Entry: MapEntry, Target: MapTarget): HomeDirectoryMapEntry = {
     val __obj = js.Dynamic.literal(Entry = Entry.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[HomeDirectoryMapEntry]
   }
   
-  @scala.inline
-  implicit class HomeDirectoryMapEntryMutableBuilder[Self <: HomeDirectoryMapEntry] (val x: Self) extends AnyVal {
+  extension [Self <: HomeDirectoryMapEntry](x: Self) {
     
-    @scala.inline
-    def setEntry(value: MapEntry): Self = StObject.set(x, "Entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: MapEntry): Self = StObject.set(x, "Entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: MapTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: MapTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

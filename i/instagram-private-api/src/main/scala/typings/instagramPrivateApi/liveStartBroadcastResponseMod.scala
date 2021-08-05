@@ -14,20 +14,16 @@ object liveStartBroadcastResponseMod {
   }
   object LiveStartBroadcastResponseRootObject {
     
-    @scala.inline
-    def apply(media_id: String, status: String): LiveStartBroadcastResponseRootObject = {
+    inline def apply(media_id: String, status: String): LiveStartBroadcastResponseRootObject = {
       val __obj = js.Dynamic.literal(media_id = media_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiveStartBroadcastResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LiveStartBroadcastResponseRootObjectMutableBuilder[Self <: LiveStartBroadcastResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LiveStartBroadcastResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+      inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

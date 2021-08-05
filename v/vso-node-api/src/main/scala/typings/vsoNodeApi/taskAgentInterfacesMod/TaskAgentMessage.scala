@@ -28,28 +28,21 @@ trait TaskAgentMessage extends StObject {
 }
 object TaskAgentMessage {
   
-  @scala.inline
-  def apply(body: String, iV: js.Array[Double], messageId: Double, messageType: String): TaskAgentMessage = {
+  inline def apply(body: String, iV: js.Array[Double], messageId: Double, messageType: String): TaskAgentMessage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], iV = iV.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskAgentMessage]
   }
   
-  @scala.inline
-  implicit class TaskAgentMessageMutableBuilder[Self <: TaskAgentMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIV(value: js.Array[Double]): Self = StObject.set(x, "iV", value.asInstanceOf[js.Any])
+    inline def setIV(value: js.Array[Double]): Self = StObject.set(x, "iV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIVVarargs(value: Double*): Self = StObject.set(x, "iV", js.Array(value :_*))
+    inline def setIVVarargs(value: Double*): Self = StObject.set(x, "iV", js.Array(value :_*))
     
-    @scala.inline
-    def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
   }
 }

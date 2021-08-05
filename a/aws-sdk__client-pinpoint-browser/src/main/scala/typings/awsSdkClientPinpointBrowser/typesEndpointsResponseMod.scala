@@ -18,23 +18,18 @@ object typesEndpointsResponseMod {
   }
   object EndpointsResponse {
     
-    @scala.inline
-    def apply(): EndpointsResponse = {
+    inline def apply(): EndpointsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointsResponse]
     }
     
-    @scala.inline
-    implicit class EndpointsResponseMutableBuilder[Self <: EndpointsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[EndpointResponse] | Iterable[EndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[EndpointResponse] | Iterable[EndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: EndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: EndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
   
@@ -50,23 +45,18 @@ object typesEndpointsResponseMod {
   }
   object UnmarshalledEndpointsResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledEndpointsResponse = {
+    inline def apply(): UnmarshalledEndpointsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEndpointsResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEndpointsResponseMutableBuilder[Self <: UnmarshalledEndpointsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEndpointsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[UnmarshalledEndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[UnmarshalledEndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: UnmarshalledEndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledEndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
 }

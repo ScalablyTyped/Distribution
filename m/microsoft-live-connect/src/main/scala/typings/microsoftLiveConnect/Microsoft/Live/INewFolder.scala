@@ -27,28 +27,21 @@ trait INewFolder extends StObject {
 }
 object INewFolder {
   
-  @scala.inline
-  def apply(name: String): INewFolder = {
+  inline def apply(name: String): INewFolder = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewFolder]
   }
   
-  @scala.inline
-  implicit class INewFolderMutableBuilder[Self <: INewFolder] (val x: Self) extends AnyVal {
+  extension [Self <: INewFolder](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort_by(value: String): Self = StObject.set(x, "sort_by", value.asInstanceOf[js.Any])
+    inline def setSort_by(value: String): Self = StObject.set(x, "sort_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort_byUndefined: Self = StObject.set(x, "sort_by", js.undefined)
+    inline def setSort_byUndefined: Self = StObject.set(x, "sort_by", js.undefined)
   }
 }

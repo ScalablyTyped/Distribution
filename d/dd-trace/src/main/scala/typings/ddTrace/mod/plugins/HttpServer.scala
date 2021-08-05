@@ -24,25 +24,19 @@ trait HttpServer
 }
 object HttpServer {
   
-  @scala.inline
-  def apply(): HttpServer = {
+  inline def apply(): HttpServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpServer]
   }
   
-  @scala.inline
-  implicit class HttpServerMutableBuilder[Self <: HttpServer] (val x: Self) extends AnyVal {
+  extension [Self <: HttpServer](x: Self) {
     
-    @scala.inline
-    def setHooks(value: Request): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Request): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setMiddleware(value: Boolean): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+    inline def setMiddleware(value: Boolean): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+    inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait DeregisterStreamConsumerInput extends StObject {
 }
 object DeregisterStreamConsumerInput {
   
-  @scala.inline
-  def apply(): DeregisterStreamConsumerInput = {
+  inline def apply(): DeregisterStreamConsumerInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterStreamConsumerInput]
   }
   
-  @scala.inline
-  implicit class DeregisterStreamConsumerInputMutableBuilder[Self <: DeregisterStreamConsumerInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterStreamConsumerInput](x: Self) {
     
-    @scala.inline
-    def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
+    inline def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerARNUndefined: Self = StObject.set(x, "ConsumerARN", js.undefined)
+    inline def setConsumerARNUndefined: Self = StObject.set(x, "ConsumerARN", js.undefined)
     
-    @scala.inline
-    def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
+    inline def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNameUndefined: Self = StObject.set(x, "ConsumerName", js.undefined)
+    inline def setConsumerNameUndefined: Self = StObject.set(x, "ConsumerName", js.undefined)
     
-    @scala.inline
-    def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
   }
 }

@@ -15,31 +15,23 @@ trait ConvexOptions
 }
 object ConvexOptions {
   
-  @scala.inline
-  def apply(): ConvexOptions = {
+  inline def apply(): ConvexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConvexOptions]
   }
   
-  @scala.inline
-  implicit class ConvexOptionsMutableBuilder[Self <: ConvexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConvexOptions](x: Self) {
     
-    @scala.inline
-    def setAxes(value: (js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: (js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    @scala.inline
-    def setAxesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "axes", js.Array(value :_*))
     
-    @scala.inline
-    def setVertices(value: (js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: (js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    @scala.inline
-    def setVerticesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

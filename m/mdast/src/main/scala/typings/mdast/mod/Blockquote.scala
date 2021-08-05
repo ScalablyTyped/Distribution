@@ -18,23 +18,18 @@ trait Blockquote
 }
 object Blockquote {
   
-  @scala.inline
-  def apply(children: js.Array[BlockContent]): Blockquote = {
+  inline def apply(children: js.Array[BlockContent]): Blockquote = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("blockquote")
     __obj.asInstanceOf[Blockquote]
   }
   
-  @scala.inline
-  implicit class BlockquoteMutableBuilder[Self <: Blockquote] (val x: Self) extends AnyVal {
+  extension [Self <: Blockquote](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: BlockContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: BlockContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: blockquote): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: blockquote): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

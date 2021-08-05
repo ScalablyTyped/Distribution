@@ -204,8 +204,7 @@ object mod {
   }
   object BitArray {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       and: BitArray => BitArray,
       copy: () => BitArray,
       count: () => Double,
@@ -228,56 +227,39 @@ object mod {
       __obj.asInstanceOf[BitArray]
     }
     
-    @scala.inline
-    implicit class BitArrayMutableBuilder[Self <: BitArray] (val x: Self) extends AnyVal {
+    extension [Self <: BitArray](x: Self) {
       
-      @scala.inline
-      def setAnd(value: BitArray => BitArray): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: BitArray => BitArray): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopy(value: () => BitArray): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+      inline def setCopy(value: () => BitArray): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+      inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEquals_(value: BitArray => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: BitArray => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: Double => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Double => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNot(value: () => BitArray): Self = StObject.set(x, "not", js.Any.fromFunction0(value))
+      inline def setNot(value: () => BitArray): Self = StObject.set(x, "not", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOr(value: BitArray => BitArray): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+      inline def setOr(value: BitArray => BitArray): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => BitArray): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => BitArray): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (Double, Boolean) => BitArray): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (Double, Boolean) => BitArray): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[Boolean]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[Boolean]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBinaryString(value: () => String): Self = StObject.set(x, "toBinaryString", js.Any.fromFunction0(value))
+      inline def setToBinaryString(value: () => String): Self = StObject.set(x, "toBinaryString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
+      inline def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: Double => BitArray): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: Double => BitArray): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setXor(value: BitArray => BitArray): Self = StObject.set(x, "xor", js.Any.fromFunction1(value))
+      inline def setXor(value: BitArray => BitArray): Self = StObject.set(x, "xor", js.Any.fromFunction1(value))
     }
   }
 }

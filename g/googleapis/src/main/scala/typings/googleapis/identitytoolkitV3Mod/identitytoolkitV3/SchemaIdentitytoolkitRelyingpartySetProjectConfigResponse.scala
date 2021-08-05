@@ -16,19 +16,15 @@ trait SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse extends StObject
 }
 object SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse {
   
-  @scala.inline
-  def apply(): SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse = {
+  inline def apply(): SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse]
   }
   
-  @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartySetProjectConfigResponseMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait RegisterImageResult extends StObject {
 }
 object RegisterImageResult {
   
-  @scala.inline
-  def apply(): RegisterImageResult = {
+  inline def apply(): RegisterImageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterImageResult]
   }
   
-  @scala.inline
-  implicit class RegisterImageResultMutableBuilder[Self <: RegisterImageResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterImageResult](x: Self) {
     
-    @scala.inline
-    def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: String): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
   }
 }

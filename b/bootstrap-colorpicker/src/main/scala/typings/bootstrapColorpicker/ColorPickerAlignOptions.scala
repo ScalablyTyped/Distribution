@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorPickerAlignOptions extends StObject
 object ColorPickerAlignOptions {
   
-  @scala.inline
-  def left: typings.bootstrapColorpicker.bootstrapColorpickerStrings.left = "left".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.left]
+  inline def left: typings.bootstrapColorpicker.bootstrapColorpickerStrings.left = "left".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.left]
   
-  @scala.inline
-  def right: typings.bootstrapColorpicker.bootstrapColorpickerStrings.right = "right".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.right]
+  inline def right: typings.bootstrapColorpicker.bootstrapColorpickerStrings.right = "right".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.right]
 }

@@ -8,11 +8,9 @@ object numericStrings {
   
   @js.native
   sealed trait L extends StObject
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
   sealed trait periodic extends StObject
-  @scala.inline
-  def periodic: periodic = "periodic".asInstanceOf[periodic]
+  inline def periodic: periodic = "periodic".asInstanceOf[periodic]
 }

@@ -17,31 +17,23 @@ trait BidResponseWithoutBidsStatusRow extends StObject {
 }
 object BidResponseWithoutBidsStatusRow {
   
-  @scala.inline
-  def apply(): BidResponseWithoutBidsStatusRow = {
+  inline def apply(): BidResponseWithoutBidsStatusRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BidResponseWithoutBidsStatusRow]
   }
   
-  @scala.inline
-  implicit class BidResponseWithoutBidsStatusRowMutableBuilder[Self <: BidResponseWithoutBidsStatusRow] (val x: Self) extends AnyVal {
+  extension [Self <: BidResponseWithoutBidsStatusRow](x: Self) {
     
-    @scala.inline
-    def setImpressionCount(value: MetricValue): Self = StObject.set(x, "impressionCount", value.asInstanceOf[js.Any])
+    inline def setImpressionCount(value: MetricValue): Self = StObject.set(x, "impressionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionCountUndefined: Self = StObject.set(x, "impressionCount", js.undefined)
+    inline def setImpressionCountUndefined: Self = StObject.set(x, "impressionCount", js.undefined)
     
-    @scala.inline
-    def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
+    inline def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
+    inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

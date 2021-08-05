@@ -218,285 +218,193 @@ trait IList
 }
 object IList {
   
-  @scala.inline
-  def apply(): IList = {
+  inline def apply(): IList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IList]
   }
   
-  @scala.inline
-  implicit class IListMutableBuilder[Self <: IList] (val x: Self) extends AnyVal {
+  extension [Self <: IList](x: Self) {
     
-    @scala.inline
-    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+    inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+    inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
-    @scala.inline
-    def setDisclosureProperty(value: java.lang.String): Self = StObject.set(x, "disclosureProperty", value.asInstanceOf[js.Any])
+    inline def setDisclosureProperty(value: java.lang.String): Self = StObject.set(x, "disclosureProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisclosurePropertyUndefined: Self = StObject.set(x, "disclosureProperty", js.undefined)
+    inline def setDisclosurePropertyUndefined: Self = StObject.set(x, "disclosureProperty", js.undefined)
     
-    @scala.inline
-    def setGetDisclosureProperty(value: () => java.lang.String): Self = StObject.set(x, "getDisclosureProperty", js.Any.fromFunction0(value))
+    inline def setGetDisclosureProperty(value: () => java.lang.String): Self = StObject.set(x, "getDisclosureProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisclosurePropertyUndefined: Self = StObject.set(x, "getDisclosureProperty", js.undefined)
+    inline def setGetDisclosurePropertyUndefined: Self = StObject.set(x, "getDisclosureProperty", js.undefined)
     
-    @scala.inline
-    def setGetGrouped(value: () => Boolean): Self = StObject.set(x, "getGrouped", js.Any.fromFunction0(value))
+    inline def setGetGrouped(value: () => Boolean): Self = StObject.set(x, "getGrouped", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupedUndefined: Self = StObject.set(x, "getGrouped", js.undefined)
+    inline def setGetGroupedUndefined: Self = StObject.set(x, "getGrouped", js.undefined)
     
-    @scala.inline
-    def setGetIcon(value: () => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
+    inline def setGetIcon(value: () => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIconUndefined: Self = StObject.set(x, "getIcon", js.undefined)
+    inline def setGetIconUndefined: Self = StObject.set(x, "getIcon", js.undefined)
     
-    @scala.inline
-    def setGetIndexBar(value: () => js.Any): Self = StObject.set(x, "getIndexBar", js.Any.fromFunction0(value))
+    inline def setGetIndexBar(value: () => js.Any): Self = StObject.set(x, "getIndexBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndexBarUndefined: Self = StObject.set(x, "getIndexBar", js.undefined)
+    inline def setGetIndexBarUndefined: Self = StObject.set(x, "getIndexBar", js.undefined)
     
-    @scala.inline
-    def setGetInfinite(value: () => Boolean): Self = StObject.set(x, "getInfinite", js.Any.fromFunction0(value))
+    inline def setGetInfinite(value: () => Boolean): Self = StObject.set(x, "getInfinite", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInfiniteUndefined: Self = StObject.set(x, "getInfinite", js.undefined)
+    inline def setGetInfiniteUndefined: Self = StObject.set(x, "getInfinite", js.undefined)
     
-    @scala.inline
-    def setGetItemHeight(value: () => Double): Self = StObject.set(x, "getItemHeight", js.Any.fromFunction0(value))
+    inline def setGetItemHeight(value: () => Double): Self = StObject.set(x, "getItemHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemHeightUndefined: Self = StObject.set(x, "getItemHeight", js.undefined)
+    inline def setGetItemHeightUndefined: Self = StObject.set(x, "getItemHeight", js.undefined)
     
-    @scala.inline
-    def setGetMinimumBufferDistance(value: () => Double): Self = StObject.set(x, "getMinimumBufferDistance", js.Any.fromFunction0(value))
+    inline def setGetMinimumBufferDistance(value: () => Double): Self = StObject.set(x, "getMinimumBufferDistance", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinimumBufferDistanceUndefined: Self = StObject.set(x, "getMinimumBufferDistance", js.undefined)
+    inline def setGetMinimumBufferDistanceUndefined: Self = StObject.set(x, "getMinimumBufferDistance", js.undefined)
     
-    @scala.inline
-    def setGetOnItemDisclosure(value: () => js.Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
+    inline def setGetOnItemDisclosure(value: () => js.Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
+    inline def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
     
-    @scala.inline
-    def setGetPinHeaders(value: () => Boolean): Self = StObject.set(x, "getPinHeaders", js.Any.fromFunction0(value))
+    inline def setGetPinHeaders(value: () => Boolean): Self = StObject.set(x, "getPinHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPinHeadersUndefined: Self = StObject.set(x, "getPinHeaders", js.undefined)
+    inline def setGetPinHeadersUndefined: Self = StObject.set(x, "getPinHeaders", js.undefined)
     
-    @scala.inline
-    def setGetPreventSelectionOnDisclose(value: () => Boolean): Self = StObject.set(x, "getPreventSelectionOnDisclose", js.Any.fromFunction0(value))
+    inline def setGetPreventSelectionOnDisclose(value: () => Boolean): Self = StObject.set(x, "getPreventSelectionOnDisclose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreventSelectionOnDiscloseUndefined: Self = StObject.set(x, "getPreventSelectionOnDisclose", js.undefined)
+    inline def setGetPreventSelectionOnDiscloseUndefined: Self = StObject.set(x, "getPreventSelectionOnDisclose", js.undefined)
     
-    @scala.inline
-    def setGetRefreshHeightOnUpdate(value: () => Boolean): Self = StObject.set(x, "getRefreshHeightOnUpdate", js.Any.fromFunction0(value))
+    inline def setGetRefreshHeightOnUpdate(value: () => Boolean): Self = StObject.set(x, "getRefreshHeightOnUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "getRefreshHeightOnUpdate", js.undefined)
+    inline def setGetRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "getRefreshHeightOnUpdate", js.undefined)
     
-    @scala.inline
-    def setGetScrollDockedItems(value: () => Array): Self = StObject.set(x, "getScrollDockedItems", js.Any.fromFunction0(value))
+    inline def setGetScrollDockedItems(value: () => Array): Self = StObject.set(x, "getScrollDockedItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollDockedItemsUndefined: Self = StObject.set(x, "getScrollDockedItems", js.undefined)
+    inline def setGetScrollDockedItemsUndefined: Self = StObject.set(x, "getScrollDockedItems", js.undefined)
     
-    @scala.inline
-    def setGetStriped(value: () => Boolean): Self = StObject.set(x, "getStriped", js.Any.fromFunction0(value))
+    inline def setGetStriped(value: () => Boolean): Self = StObject.set(x, "getStriped", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStripedUndefined: Self = StObject.set(x, "getStriped", js.undefined)
+    inline def setGetStripedUndefined: Self = StObject.set(x, "getStriped", js.undefined)
     
-    @scala.inline
-    def setGetUseHeaders(value: () => Boolean): Self = StObject.set(x, "getUseHeaders", js.Any.fromFunction0(value))
+    inline def setGetUseHeaders(value: () => Boolean): Self = StObject.set(x, "getUseHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUseHeadersUndefined: Self = StObject.set(x, "getUseHeaders", js.undefined)
+    inline def setGetUseHeadersUndefined: Self = StObject.set(x, "getUseHeaders", js.undefined)
     
-    @scala.inline
-    def setGetUseSimpleItems(value: () => Boolean): Self = StObject.set(x, "getUseSimpleItems", js.Any.fromFunction0(value))
+    inline def setGetUseSimpleItems(value: () => Boolean): Self = StObject.set(x, "getUseSimpleItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUseSimpleItemsUndefined: Self = StObject.set(x, "getUseSimpleItems", js.undefined)
+    inline def setGetUseSimpleItemsUndefined: Self = StObject.set(x, "getUseSimpleItems", js.undefined)
     
-    @scala.inline
-    def setGetVariableHeights(value: () => Boolean): Self = StObject.set(x, "getVariableHeights", js.Any.fromFunction0(value))
+    inline def setGetVariableHeights(value: () => Boolean): Self = StObject.set(x, "getVariableHeights", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVariableHeightsUndefined: Self = StObject.set(x, "getVariableHeights", js.undefined)
+    inline def setGetVariableHeightsUndefined: Self = StObject.set(x, "getVariableHeights", js.undefined)
     
-    @scala.inline
-    def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
+    inline def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
+    inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
     
-    @scala.inline
-    def setIndexBar(value: js.Any): Self = StObject.set(x, "indexBar", value.asInstanceOf[js.Any])
+    inline def setIndexBar(value: js.Any): Self = StObject.set(x, "indexBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexBarUndefined: Self = StObject.set(x, "indexBar", js.undefined)
+    inline def setIndexBarUndefined: Self = StObject.set(x, "indexBar", js.undefined)
     
-    @scala.inline
-    def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+    inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
+    inline def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
     
-    @scala.inline
-    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+    inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
-    @scala.inline
-    def setOnItemDisclosure(value: js.Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
+    inline def setOnItemDisclosure(value: js.Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnItemDisclosureUndefined: Self = StObject.set(x, "onItemDisclosure", js.undefined)
+    inline def setOnItemDisclosureUndefined: Self = StObject.set(x, "onItemDisclosure", js.undefined)
     
-    @scala.inline
-    def setPinHeaders(value: Boolean): Self = StObject.set(x, "pinHeaders", value.asInstanceOf[js.Any])
+    inline def setPinHeaders(value: Boolean): Self = StObject.set(x, "pinHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinHeadersUndefined: Self = StObject.set(x, "pinHeaders", js.undefined)
+    inline def setPinHeadersUndefined: Self = StObject.set(x, "pinHeaders", js.undefined)
     
-    @scala.inline
-    def setPreventSelectionOnDisclose(value: Boolean): Self = StObject.set(x, "preventSelectionOnDisclose", value.asInstanceOf[js.Any])
+    inline def setPreventSelectionOnDisclose(value: Boolean): Self = StObject.set(x, "preventSelectionOnDisclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventSelectionOnDiscloseUndefined: Self = StObject.set(x, "preventSelectionOnDisclose", js.undefined)
+    inline def setPreventSelectionOnDiscloseUndefined: Self = StObject.set(x, "preventSelectionOnDisclose", js.undefined)
     
-    @scala.inline
-    def setRefreshHeightOnUpdate(value: Boolean): Self = StObject.set(x, "refreshHeightOnUpdate", value.asInstanceOf[js.Any])
+    inline def setRefreshHeightOnUpdate(value: Boolean): Self = StObject.set(x, "refreshHeightOnUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "refreshHeightOnUpdate", js.undefined)
+    inline def setRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "refreshHeightOnUpdate", js.undefined)
     
-    @scala.inline
-    def setScrollToRecord(
+    inline def setScrollToRecord(
       value: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "scrollToRecord", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScrollToRecordUndefined: Self = StObject.set(x, "scrollToRecord", js.undefined)
+    inline def setScrollToRecordUndefined: Self = StObject.set(x, "scrollToRecord", js.undefined)
     
-    @scala.inline
-    def setSetDisclosureProperty(value: /* disclosureProperty */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDisclosureProperty", js.Any.fromFunction1(value))
+    inline def setSetDisclosureProperty(value: /* disclosureProperty */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDisclosureProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisclosurePropertyUndefined: Self = StObject.set(x, "setDisclosureProperty", js.undefined)
+    inline def setSetDisclosurePropertyUndefined: Self = StObject.set(x, "setDisclosureProperty", js.undefined)
     
-    @scala.inline
-    def setSetGrouped(value: /* grouped */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setGrouped", js.Any.fromFunction1(value))
+    inline def setSetGrouped(value: /* grouped */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setGrouped", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroupedUndefined: Self = StObject.set(x, "setGrouped", js.undefined)
+    inline def setSetGroupedUndefined: Self = StObject.set(x, "setGrouped", js.undefined)
     
-    @scala.inline
-    def setSetIcon(value: /* icon */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: /* icon */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
+    inline def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
     
-    @scala.inline
-    def setSetIndexBar(value: /* indexBar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIndexBar", js.Any.fromFunction1(value))
+    inline def setSetIndexBar(value: /* indexBar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIndexBar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIndexBarUndefined: Self = StObject.set(x, "setIndexBar", js.undefined)
+    inline def setSetIndexBarUndefined: Self = StObject.set(x, "setIndexBar", js.undefined)
     
-    @scala.inline
-    def setSetInfinite(value: /* infinite */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setInfinite", js.Any.fromFunction1(value))
+    inline def setSetInfinite(value: /* infinite */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setInfinite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInfiniteUndefined: Self = StObject.set(x, "setInfinite", js.undefined)
+    inline def setSetInfiniteUndefined: Self = StObject.set(x, "setInfinite", js.undefined)
     
-    @scala.inline
-    def setSetItemHeight(value: /* itemHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setItemHeight", js.Any.fromFunction1(value))
+    inline def setSetItemHeight(value: /* itemHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setItemHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItemHeightUndefined: Self = StObject.set(x, "setItemHeight", js.undefined)
+    inline def setSetItemHeightUndefined: Self = StObject.set(x, "setItemHeight", js.undefined)
     
-    @scala.inline
-    def setSetMinimumBufferDistance(value: /* minimumBufferDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimumBufferDistance", js.Any.fromFunction1(value))
+    inline def setSetMinimumBufferDistance(value: /* minimumBufferDistance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimumBufferDistance", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinimumBufferDistanceUndefined: Self = StObject.set(x, "setMinimumBufferDistance", js.undefined)
+    inline def setSetMinimumBufferDistanceUndefined: Self = StObject.set(x, "setMinimumBufferDistance", js.undefined)
     
-    @scala.inline
-    def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
+    inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnItemDisclosureUndefined: Self = StObject.set(x, "setOnItemDisclosure", js.undefined)
+    inline def setSetOnItemDisclosureUndefined: Self = StObject.set(x, "setOnItemDisclosure", js.undefined)
     
-    @scala.inline
-    def setSetPinHeaders(value: /* pinHeaders */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setPinHeaders", js.Any.fromFunction1(value))
+    inline def setSetPinHeaders(value: /* pinHeaders */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setPinHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPinHeadersUndefined: Self = StObject.set(x, "setPinHeaders", js.undefined)
+    inline def setSetPinHeadersUndefined: Self = StObject.set(x, "setPinHeaders", js.undefined)
     
-    @scala.inline
-    def setSetPreventSelectionOnDisclose(value: /* preventSelectionOnDisclose */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setPreventSelectionOnDisclose", js.Any.fromFunction1(value))
+    inline def setSetPreventSelectionOnDisclose(value: /* preventSelectionOnDisclose */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setPreventSelectionOnDisclose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPreventSelectionOnDiscloseUndefined: Self = StObject.set(x, "setPreventSelectionOnDisclose", js.undefined)
+    inline def setSetPreventSelectionOnDiscloseUndefined: Self = StObject.set(x, "setPreventSelectionOnDisclose", js.undefined)
     
-    @scala.inline
-    def setSetRefreshHeightOnUpdate(value: /* refreshHeightOnUpdate */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setRefreshHeightOnUpdate", js.Any.fromFunction1(value))
+    inline def setSetRefreshHeightOnUpdate(value: /* refreshHeightOnUpdate */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setRefreshHeightOnUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "setRefreshHeightOnUpdate", js.undefined)
+    inline def setSetRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "setRefreshHeightOnUpdate", js.undefined)
     
-    @scala.inline
-    def setSetStriped(value: /* striped */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStriped", js.Any.fromFunction1(value))
+    inline def setSetStriped(value: /* striped */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStriped", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStripedUndefined: Self = StObject.set(x, "setStriped", js.undefined)
+    inline def setSetStripedUndefined: Self = StObject.set(x, "setStriped", js.undefined)
     
-    @scala.inline
-    def setSetUseHeaders(value: /* useHeaders */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseHeaders", js.Any.fromFunction1(value))
+    inline def setSetUseHeaders(value: /* useHeaders */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseHeadersUndefined: Self = StObject.set(x, "setUseHeaders", js.undefined)
+    inline def setSetUseHeadersUndefined: Self = StObject.set(x, "setUseHeaders", js.undefined)
     
-    @scala.inline
-    def setSetUseSimpleItems(value: /* useSimpleItems */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseSimpleItems", js.Any.fromFunction1(value))
+    inline def setSetUseSimpleItems(value: /* useSimpleItems */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseSimpleItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseSimpleItemsUndefined: Self = StObject.set(x, "setUseSimpleItems", js.undefined)
+    inline def setSetUseSimpleItemsUndefined: Self = StObject.set(x, "setUseSimpleItems", js.undefined)
     
-    @scala.inline
-    def setSetVariableHeights(value: /* variableHeights */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setVariableHeights", js.Any.fromFunction1(value))
+    inline def setSetVariableHeights(value: /* variableHeights */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setVariableHeights", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVariableHeightsUndefined: Self = StObject.set(x, "setVariableHeights", js.undefined)
+    inline def setSetVariableHeightsUndefined: Self = StObject.set(x, "setVariableHeights", js.undefined)
     
-    @scala.inline
-    def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
+    inline def setStriped(value: Boolean): Self = StObject.set(x, "striped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
+    inline def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
     
-    @scala.inline
-    def setUseSimpleItems(value: Boolean): Self = StObject.set(x, "useSimpleItems", value.asInstanceOf[js.Any])
+    inline def setUseSimpleItems(value: Boolean): Self = StObject.set(x, "useSimpleItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSimpleItemsUndefined: Self = StObject.set(x, "useSimpleItems", js.undefined)
+    inline def setUseSimpleItemsUndefined: Self = StObject.set(x, "useSimpleItems", js.undefined)
     
-    @scala.inline
-    def setVariableHeights(value: Boolean): Self = StObject.set(x, "variableHeights", value.asInstanceOf[js.Any])
+    inline def setVariableHeights(value: Boolean): Self = StObject.set(x, "variableHeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableHeightsUndefined: Self = StObject.set(x, "variableHeights", js.undefined)
+    inline def setVariableHeightsUndefined: Self = StObject.set(x, "variableHeights", js.undefined)
   }
 }

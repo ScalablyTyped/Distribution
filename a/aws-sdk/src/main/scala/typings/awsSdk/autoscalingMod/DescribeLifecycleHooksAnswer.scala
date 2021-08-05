@@ -13,22 +13,17 @@ trait DescribeLifecycleHooksAnswer extends StObject {
 }
 object DescribeLifecycleHooksAnswer {
   
-  @scala.inline
-  def apply(): DescribeLifecycleHooksAnswer = {
+  inline def apply(): DescribeLifecycleHooksAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLifecycleHooksAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeLifecycleHooksAnswerMutableBuilder[Self <: DescribeLifecycleHooksAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLifecycleHooksAnswer](x: Self) {
     
-    @scala.inline
-    def setLifecycleHooks(value: LifecycleHooks): Self = StObject.set(x, "LifecycleHooks", value.asInstanceOf[js.Any])
+    inline def setLifecycleHooks(value: LifecycleHooks): Self = StObject.set(x, "LifecycleHooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleHooksUndefined: Self = StObject.set(x, "LifecycleHooks", js.undefined)
+    inline def setLifecycleHooksUndefined: Self = StObject.set(x, "LifecycleHooks", js.undefined)
     
-    @scala.inline
-    def setLifecycleHooksVarargs(value: LifecycleHook*): Self = StObject.set(x, "LifecycleHooks", js.Array(value :_*))
+    inline def setLifecycleHooksVarargs(value: LifecycleHook*): Self = StObject.set(x, "LifecycleHooks", js.Array(value :_*))
   }
 }

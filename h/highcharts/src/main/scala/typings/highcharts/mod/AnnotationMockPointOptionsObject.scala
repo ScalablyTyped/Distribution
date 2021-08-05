@@ -36,43 +36,31 @@ trait AnnotationMockPointOptionsObject extends StObject {
 }
 object AnnotationMockPointOptionsObject {
   
-  @scala.inline
-  def apply(): AnnotationMockPointOptionsObject = {
+  inline def apply(): AnnotationMockPointOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationMockPointOptionsObject]
   }
   
-  @scala.inline
-  implicit class AnnotationMockPointOptionsObjectMutableBuilder[Self <: AnnotationMockPointOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationMockPointOptionsObject](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisNull: Self = StObject.set(x, "xAxis", null)
+    inline def setXAxisNull: Self = StObject.set(x, "xAxis", null)
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisNull: Self = StObject.set(x, "yAxis", null)
+    inline def setYAxisNull: Self = StObject.set(x, "yAxis", null)
     
-    @scala.inline
-    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

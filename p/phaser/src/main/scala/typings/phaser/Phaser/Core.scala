@@ -437,8 +437,7 @@ object Core {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       antialias: Boolean,
       antialiasGL: Boolean,
       audio: AudioConfig,
@@ -525,266 +524,179 @@ object Core {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+      inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAntialiasGL(value: Boolean): Self = StObject.set(x, "antialiasGL", value.asInstanceOf[js.Any])
+      inline def setAntialiasGL(value: Boolean): Self = StObject.set(x, "antialiasGL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudio(value: AudioConfig): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: AudioConfig): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCenter(value: CenterType): Self = StObject.set(x, "autoCenter", value.asInstanceOf[js.Any])
+      inline def setAutoCenter(value: CenterType): Self = StObject.set(x, "autoCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRound(value: integer): Self = StObject.set(x, "autoRound", value.asInstanceOf[js.Any])
+      inline def setAutoRound(value: integer): Self = StObject.set(x, "autoRound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBannerBackgroundColor(value: js.Array[String]): Self = StObject.set(x, "bannerBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setBannerBackgroundColor(value: js.Array[String]): Self = StObject.set(x, "bannerBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBannerBackgroundColorVarargs(value: String*): Self = StObject.set(x, "bannerBackgroundColor", js.Array(value :_*))
+      inline def setBannerBackgroundColorVarargs(value: String*): Self = StObject.set(x, "bannerBackgroundColor", js.Array(value :_*))
       
-      @scala.inline
-      def setBannerTextColor(value: String): Self = StObject.set(x, "bannerTextColor", value.asInstanceOf[js.Any])
+      inline def setBannerTextColor(value: String): Self = StObject.set(x, "bannerTextColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSize(value: integer): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: integer): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasStyle(value: String): Self = StObject.set(x, "canvasStyle", value.asInstanceOf[js.Any])
+      inline def setCanvasStyle(value: String): Self = StObject.set(x, "canvasStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
+      inline def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: CanvasRenderingContext2D | WebGLRenderingContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: CanvasRenderingContext2D | WebGLRenderingContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomEnvironment(value: Boolean): Self = StObject.set(x, "customEnvironment", value.asInstanceOf[js.Any])
+      inline def setCustomEnvironment(value: Boolean): Self = StObject.set(x, "customEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultImage(value: String): Self = StObject.set(x, "defaultImage", value.asInstanceOf[js.Any])
+      inline def setDefaultImage(value: String): Self = StObject.set(x, "defaultImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPhysicsSystem(value: Boolean | String): Self = StObject.set(x, "defaultPhysicsSystem", value.asInstanceOf[js.Any])
+      inline def setDefaultPhysicsSystem(value: Boolean | String): Self = StObject.set(x, "defaultPhysicsSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPlugins(value: js.Any): Self = StObject.set(x, "defaultPlugins", value.asInstanceOf[js.Any])
+      inline def setDefaultPlugins(value: js.Any): Self = StObject.set(x, "defaultPlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
+      inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableContextMenu(value: Boolean): Self = StObject.set(x, "disableContextMenu", value.asInstanceOf[js.Any])
+      inline def setDisableContextMenu(value: Boolean): Self = StObject.set(x, "disableContextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomBehindCanvas(value: Boolean): Self = StObject.set(x, "domBehindCanvas", value.asInstanceOf[js.Any])
+      inline def setDomBehindCanvas(value: Boolean): Self = StObject.set(x, "domBehindCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomCreateContainer(value: Boolean): Self = StObject.set(x, "domCreateContainer", value.asInstanceOf[js.Any])
+      inline def setDomCreateContainer(value: Boolean): Self = StObject.set(x, "domCreateContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandParent(value: Boolean): Self = StObject.set(x, "expandParent", value.asInstanceOf[js.Any])
+      inline def setExpandParent(value: Boolean): Self = StObject.set(x, "expandParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+      inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFps(value: FPSConfig): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+      inline def setFps(value: FPSConfig): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenTarget(value: HTMLElement | String): Self = StObject.set(x, "fullscreenTarget", value.asInstanceOf[js.Any])
+      inline def setFullscreenTarget(value: HTMLElement | String): Self = StObject.set(x, "fullscreenTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameTitle(value: String): Self = StObject.set(x, "gameTitle", value.asInstanceOf[js.Any])
+      inline def setGameTitle(value: String): Self = StObject.set(x, "gameTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameURL(value: String): Self = StObject.set(x, "gameURL", value.asInstanceOf[js.Any])
+      inline def setGameURL(value: String): Self = StObject.set(x, "gameURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameVersion(value: String): Self = StObject.set(x, "gameVersion", value.asInstanceOf[js.Any])
+      inline def setGameVersion(value: String): Self = StObject.set(x, "gameVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: integer | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: integer | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideBanner(value: Boolean): Self = StObject.set(x, "hideBanner", value.asInstanceOf[js.Any])
+      inline def setHideBanner(value: Boolean): Self = StObject.set(x, "hideBanner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePhaser(value: Boolean): Self = StObject.set(x, "hidePhaser", value.asInstanceOf[js.Any])
+      inline def setHidePhaser(value: Boolean): Self = StObject.set(x, "hidePhaser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputActivePointers(value: integer): Self = StObject.set(x, "inputActivePointers", value.asInstanceOf[js.Any])
+      inline def setInputActivePointers(value: integer): Self = StObject.set(x, "inputActivePointers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputGamepad(value: Boolean): Self = StObject.set(x, "inputGamepad", value.asInstanceOf[js.Any])
+      inline def setInputGamepad(value: Boolean): Self = StObject.set(x, "inputGamepad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputGamepadEventTarget(value: js.Any): Self = StObject.set(x, "inputGamepadEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputGamepadEventTarget(value: js.Any): Self = StObject.set(x, "inputGamepadEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyboard(value: Boolean): Self = StObject.set(x, "inputKeyboard", value.asInstanceOf[js.Any])
+      inline def setInputKeyboard(value: Boolean): Self = StObject.set(x, "inputKeyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyboardCapture(value: js.Array[integer]): Self = StObject.set(x, "inputKeyboardCapture", value.asInstanceOf[js.Any])
+      inline def setInputKeyboardCapture(value: js.Array[integer]): Self = StObject.set(x, "inputKeyboardCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputKeyboardCaptureVarargs(value: integer*): Self = StObject.set(x, "inputKeyboardCapture", js.Array(value :_*))
+      inline def setInputKeyboardCaptureVarargs(value: integer*): Self = StObject.set(x, "inputKeyboardCapture", js.Array(value :_*))
       
-      @scala.inline
-      def setInputKeyboardEventTarget(value: js.Any): Self = StObject.set(x, "inputKeyboardEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputKeyboardEventTarget(value: js.Any): Self = StObject.set(x, "inputKeyboardEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputMouse(value: Boolean | js.Object): Self = StObject.set(x, "inputMouse", value.asInstanceOf[js.Any])
+      inline def setInputMouse(value: Boolean | js.Object): Self = StObject.set(x, "inputMouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputMouseCapture(value: Boolean): Self = StObject.set(x, "inputMouseCapture", value.asInstanceOf[js.Any])
+      inline def setInputMouseCapture(value: Boolean): Self = StObject.set(x, "inputMouseCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputMouseEventTarget(value: js.Any): Self = StObject.set(x, "inputMouseEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputMouseEventTarget(value: js.Any): Self = StObject.set(x, "inputMouseEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputSmoothFactor(value: integer): Self = StObject.set(x, "inputSmoothFactor", value.asInstanceOf[js.Any])
+      inline def setInputSmoothFactor(value: integer): Self = StObject.set(x, "inputSmoothFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTouch(value: Boolean): Self = StObject.set(x, "inputTouch", value.asInstanceOf[js.Any])
+      inline def setInputTouch(value: Boolean): Self = StObject.set(x, "inputTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTouchCapture(value: Boolean): Self = StObject.set(x, "inputTouchCapture", value.asInstanceOf[js.Any])
+      inline def setInputTouchCapture(value: Boolean): Self = StObject.set(x, "inputTouchCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTouchEventTarget(value: js.Any): Self = StObject.set(x, "inputTouchEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputTouchEventTarget(value: js.Any): Self = StObject.set(x, "inputTouchEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputWindowEvents(value: Boolean): Self = StObject.set(x, "inputWindowEvents", value.asInstanceOf[js.Any])
+      inline def setInputWindowEvents(value: Boolean): Self = StObject.set(x, "inputWindowEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallGlobalPlugins(value: js.Any): Self = StObject.set(x, "installGlobalPlugins", value.asInstanceOf[js.Any])
+      inline def setInstallGlobalPlugins(value: js.Any): Self = StObject.set(x, "installGlobalPlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallScenePlugins(value: js.Any): Self = StObject.set(x, "installScenePlugins", value.asInstanceOf[js.Any])
+      inline def setInstallScenePlugins(value: js.Any): Self = StObject.set(x, "installScenePlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderAsync(value: Boolean): Self = StObject.set(x, "loaderAsync", value.asInstanceOf[js.Any])
+      inline def setLoaderAsync(value: Boolean): Self = StObject.set(x, "loaderAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderBaseURL(value: String): Self = StObject.set(x, "loaderBaseURL", value.asInstanceOf[js.Any])
+      inline def setLoaderBaseURL(value: String): Self = StObject.set(x, "loaderBaseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderCrossOrigin(value: String): Self = StObject.set(x, "loaderCrossOrigin", value.asInstanceOf[js.Any])
+      inline def setLoaderCrossOrigin(value: String): Self = StObject.set(x, "loaderCrossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderCrossOriginUndefined: Self = StObject.set(x, "loaderCrossOrigin", js.undefined)
+      inline def setLoaderCrossOriginUndefined: Self = StObject.set(x, "loaderCrossOrigin", js.undefined)
       
-      @scala.inline
-      def setLoaderMaxParallelDownloads(value: integer): Self = StObject.set(x, "loaderMaxParallelDownloads", value.asInstanceOf[js.Any])
+      inline def setLoaderMaxParallelDownloads(value: integer): Self = StObject.set(x, "loaderMaxParallelDownloads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderPassword(value: String): Self = StObject.set(x, "loaderPassword", value.asInstanceOf[js.Any])
+      inline def setLoaderPassword(value: String): Self = StObject.set(x, "loaderPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderPath(value: String): Self = StObject.set(x, "loaderPath", value.asInstanceOf[js.Any])
+      inline def setLoaderPath(value: String): Self = StObject.set(x, "loaderPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderResponseType(value: String): Self = StObject.set(x, "loaderResponseType", value.asInstanceOf[js.Any])
+      inline def setLoaderResponseType(value: String): Self = StObject.set(x, "loaderResponseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderTimeout(value: integer): Self = StObject.set(x, "loaderTimeout", value.asInstanceOf[js.Any])
+      inline def setLoaderTimeout(value: integer): Self = StObject.set(x, "loaderTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderUser(value: String): Self = StObject.set(x, "loaderUser", value.asInstanceOf[js.Any])
+      inline def setLoaderUser(value: String): Self = StObject.set(x, "loaderUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderWithCredentials(value: Boolean): Self = StObject.set(x, "loaderWithCredentials", value.asInstanceOf[js.Any])
+      inline def setLoaderWithCredentials(value: Boolean): Self = StObject.set(x, "loaderWithCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeight(value: integer): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: integer): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLights(value: integer): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
+      inline def setMaxLights(value: integer): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidth(value: integer): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: integer): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeight(value: integer): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: integer): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidth(value: integer): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: integer): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
+      inline def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingImage(value: String): Self = StObject.set(x, "missingImage", value.asInstanceOf[js.Any])
+      inline def setMissingImage(value: String): Self = StObject.set(x, "missingImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+      inline def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
+      inline def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostBoot(value: Game => Unit): Self = StObject.set(x, "postBoot", js.Any.fromFunction1(value))
+      inline def setPostBoot(value: Game => Unit): Self = StObject.set(x, "postBoot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
+      inline def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreBoot(value: Game => Unit): Self = StObject.set(x, "preBoot", js.Any.fromFunction1(value))
+      inline def setPreBoot(value: Game => Unit): Self = StObject.set(x, "preBoot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+      inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderType(value: Double): Self = StObject.set(x, "renderType", value.asInstanceOf[js.Any])
+      inline def setRenderType(value: Double): Self = StObject.set(x, "renderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeInterval(value: integer): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
+      inline def setResizeInterval(value: integer): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
+      inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleMode(value: ScaleModeType): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
+      inline def setScaleMode(value: ScaleModeType): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSceneConfig(value: js.Object): Self = StObject.set(x, "sceneConfig", value.asInstanceOf[js.Any])
+      inline def setSceneConfig(value: js.Object): Self = StObject.set(x, "sceneConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeed(value: js.Array[String]): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: js.Array[String]): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value :_*))
+      inline def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value :_*))
       
-      @scala.inline
-      def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+      inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: integer | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: integer | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: ZoomType | integer): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: ZoomType | integer): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
   

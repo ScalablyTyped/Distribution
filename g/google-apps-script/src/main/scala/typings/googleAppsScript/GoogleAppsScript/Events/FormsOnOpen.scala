@@ -15,16 +15,13 @@ trait FormsOnOpen
 }
 object FormsOnOpen {
   
-  @scala.inline
-  def apply(authMode: AuthMode, source: Form, triggerUid: String, user: User): FormsOnOpen = {
+  inline def apply(authMode: AuthMode, source: Form, triggerUid: String, user: User): FormsOnOpen = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormsOnOpen]
   }
   
-  @scala.inline
-  implicit class FormsOnOpenMutableBuilder[Self <: FormsOnOpen] (val x: Self) extends AnyVal {
+  extension [Self <: FormsOnOpen](x: Self) {
     
-    @scala.inline
-    def setSource(value: Form): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Form): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

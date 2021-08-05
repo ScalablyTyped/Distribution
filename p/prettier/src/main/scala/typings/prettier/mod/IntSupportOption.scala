@@ -19,29 +19,22 @@ trait IntSupportOption
 }
 object IntSupportOption {
   
-  @scala.inline
-  def apply(category: String, default: Double, since: String): IntSupportOption = {
+  inline def apply(category: String, default: Double, since: String): IntSupportOption = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("int")
     __obj.asInstanceOf[IntSupportOption]
   }
   
-  @scala.inline
-  implicit class IntSupportOptionMutableBuilder[Self <: IntSupportOption] (val x: Self) extends AnyVal {
+  extension [Self <: IntSupportOption](x: Self) {
     
-    @scala.inline
-    def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+    inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    @scala.inline
-    def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: SupportOptionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SupportOptionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

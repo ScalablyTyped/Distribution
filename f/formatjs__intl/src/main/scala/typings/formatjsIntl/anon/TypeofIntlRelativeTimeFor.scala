@@ -17,17 +17,17 @@ trait TypeofIntlRelativeTimeFor
   
   def __addLocaleData(data: RelativeTimeLocaleData*): Unit = js.native
   
-  var __defaultLocale: js.Any = js.native
+  /* private */ var __defaultLocale: js.Any = js.native
   
-  var availableLocales: js.Any = js.native
+  /* private */ var availableLocales: js.Any = js.native
   
-  var getDefaultLocale: js.Any = js.native
+  /* private */ var getDefaultLocale: js.Any = js.native
   
   var localeData: Record[String, LocaleFieldsData] = js.native
   
   var polyfilled: Boolean = js.native
   
-  var relevantExtensionKeys: js.Any = js.native
+  /* private */ var relevantExtensionKeys: js.Any = js.native
   
   def supportedLocalesOf(locales: String): js.Array[String] = js.native
   def supportedLocalesOf(locales: String, options: PickIntlRelativeTimeForma): js.Array[String] = js.native

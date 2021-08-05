@@ -11,19 +11,15 @@ trait ResetSearchApplicationRequest extends StObject {
 }
 object ResetSearchApplicationRequest {
   
-  @scala.inline
-  def apply(): ResetSearchApplicationRequest = {
+  inline def apply(): ResetSearchApplicationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetSearchApplicationRequest]
   }
   
-  @scala.inline
-  implicit class ResetSearchApplicationRequestMutableBuilder[Self <: ResetSearchApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetSearchApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
   }
 }

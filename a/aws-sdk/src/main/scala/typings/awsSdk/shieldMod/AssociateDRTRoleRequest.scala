@@ -13,16 +13,13 @@ trait AssociateDRTRoleRequest extends StObject {
 }
 object AssociateDRTRoleRequest {
   
-  @scala.inline
-  def apply(RoleArn: RoleArn): AssociateDRTRoleRequest = {
+  inline def apply(RoleArn: RoleArn): AssociateDRTRoleRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateDRTRoleRequest]
   }
   
-  @scala.inline
-  implicit class AssociateDRTRoleRequestMutableBuilder[Self <: AssociateDRTRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateDRTRoleRequest](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

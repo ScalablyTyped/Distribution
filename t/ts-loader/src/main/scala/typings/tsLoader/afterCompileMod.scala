@@ -11,8 +11,7 @@ object afterCompileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeAfterCompile(instance: TSInstance): js.Function2[
+  inline def makeAfterCompile(instance: TSInstance): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ /* compilation */ js.Any, 
     /* callback */ js.Function0[Unit], 
     Unit
@@ -21,8 +20,7 @@ object afterCompileMod {
     /* callback */ js.Function0[Unit], 
     Unit
   ]]
-  @scala.inline
-  def makeAfterCompile(instance: TSInstance, configFilePath: String): js.Function2[
+  inline def makeAfterCompile(instance: TSInstance, configFilePath: String): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ /* compilation */ js.Any, 
     /* callback */ js.Function0[Unit], 
     Unit

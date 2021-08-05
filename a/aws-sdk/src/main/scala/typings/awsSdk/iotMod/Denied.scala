@@ -18,25 +18,19 @@ trait Denied extends StObject {
 }
 object Denied {
   
-  @scala.inline
-  def apply(): Denied = {
+  inline def apply(): Denied = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Denied]
   }
   
-  @scala.inline
-  implicit class DeniedMutableBuilder[Self <: Denied] (val x: Self) extends AnyVal {
+  extension [Self <: Denied](x: Self) {
     
-    @scala.inline
-    def setExplicitDeny(value: ExplicitDeny): Self = StObject.set(x, "explicitDeny", value.asInstanceOf[js.Any])
+    inline def setExplicitDeny(value: ExplicitDeny): Self = StObject.set(x, "explicitDeny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitDenyUndefined: Self = StObject.set(x, "explicitDeny", js.undefined)
+    inline def setExplicitDenyUndefined: Self = StObject.set(x, "explicitDeny", js.undefined)
     
-    @scala.inline
-    def setImplicitDeny(value: ImplicitDeny): Self = StObject.set(x, "implicitDeny", value.asInstanceOf[js.Any])
+    inline def setImplicitDeny(value: ImplicitDeny): Self = StObject.set(x, "implicitDeny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitDenyUndefined: Self = StObject.set(x, "implicitDeny", js.undefined)
+    inline def setImplicitDenyUndefined: Self = StObject.set(x, "implicitDeny", js.undefined)
   }
 }

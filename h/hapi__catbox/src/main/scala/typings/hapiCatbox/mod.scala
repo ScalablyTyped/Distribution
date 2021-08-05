@@ -118,20 +118,16 @@ object mod {
   }
   object CacheKey {
     
-    @scala.inline
-    def apply(id: String, segment: String): CacheKey = {
+    inline def apply(id: String, segment: String): CacheKey = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheKey]
     }
     
-    @scala.inline
-    implicit class CacheKeyMutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
+    extension [Self <: CacheKey](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,32 +153,24 @@ object mod {
   }
   object CacheStatisticsObject {
     
-    @scala.inline
-    def apply(errors: Double, generates: Double, gets: Double, hits: Double, sets: Double, stales: Double): CacheStatisticsObject = {
+    inline def apply(errors: Double, generates: Double, gets: Double, hits: Double, sets: Double, stales: Double): CacheStatisticsObject = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], generates = generates.asInstanceOf[js.Any], gets = gets.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], sets = sets.asInstanceOf[js.Any], stales = stales.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheStatisticsObject]
     }
     
-    @scala.inline
-    implicit class CacheStatisticsObjectMutableBuilder[Self <: CacheStatisticsObject] (val x: Self) extends AnyVal {
+    extension [Self <: CacheStatisticsObject](x: Self) {
       
-      @scala.inline
-      def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerates(value: Double): Self = StObject.set(x, "generates", value.asInstanceOf[js.Any])
+      inline def setGenerates(value: Double): Self = StObject.set(x, "generates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGets(value: Double): Self = StObject.set(x, "gets", value.asInstanceOf[js.Any])
+      inline def setGets(value: Double): Self = StObject.set(x, "gets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+      inline def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSets(value: Double): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
+      inline def setSets(value: Double): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStales(value: Double): Self = StObject.set(x, "stales", value.asInstanceOf[js.Any])
+      inline def setStales(value: Double): Self = StObject.set(x, "stales", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,23 +187,18 @@ object mod {
   }
   object CachedObject {
     
-    @scala.inline
-    def apply[T](item: T, stored: Double, ttl: Double): CachedObject[T] = {
+    inline def apply[T](item: T, stored: Double, ttl: Double): CachedObject[T] = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], stored = stored.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
       __obj.asInstanceOf[CachedObject[T]]
     }
     
-    @scala.inline
-    implicit class CachedObjectMutableBuilder[Self <: CachedObject[?], T] (val x: Self & CachedObject[T]) extends AnyVal {
+    extension [Self <: CachedObject[?], T](x: Self & CachedObject[T]) {
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStored(value: Double): Self = StObject.set(x, "stored", value.asInstanceOf[js.Any])
+      inline def setStored(value: Double): Self = StObject.set(x, "stored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,8 +238,7 @@ object mod {
   }
   object ClientApi {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       drop: CacheKey => js.Promise[Unit],
       get: CacheKey => js.Promise[Null | CachedObject[T]],
       isReady: () => Boolean,
@@ -269,29 +251,21 @@ object mod {
       __obj.asInstanceOf[ClientApi[T]]
     }
     
-    @scala.inline
-    implicit class ClientApiMutableBuilder[Self <: ClientApi[?], T] (val x: Self & ClientApi[T]) extends AnyVal {
+    extension [Self <: ClientApi[?], T](x: Self & ClientApi[T]) {
       
-      @scala.inline
-      def setDrop(value: CacheKey => js.Promise[Unit]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+      inline def setDrop(value: CacheKey => js.Promise[Unit]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: CacheKey => js.Promise[Null | CachedObject[T]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: CacheKey => js.Promise[Null | CachedObject[T]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsReady(value: () => Boolean): Self = StObject.set(x, "isReady", js.Any.fromFunction0(value))
+      inline def setIsReady(value: () => Boolean): Self = StObject.set(x, "isReady", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (CacheKey, T, Double) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (CacheKey, T, Double) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidateSegmentName(value: String => Null | Error): Self = StObject.set(x, "validateSegmentName", js.Any.fromFunction1(value))
+      inline def setValidateSegmentName(value: String => Null | Error): Self = StObject.set(x, "validateSegmentName", js.Any.fromFunction1(value))
     }
   }
   
@@ -304,20 +278,16 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+      inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     }
   }
   
@@ -333,20 +303,16 @@ object mod {
   }
   object DecoratedPolicyOptions {
     
-    @scala.inline
-    def apply[T](): DecoratedPolicyOptions[T] = {
+    inline def apply[T](): DecoratedPolicyOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecoratedPolicyOptions[T]]
     }
     
-    @scala.inline
-    implicit class DecoratedPolicyOptionsMutableBuilder[Self <: DecoratedPolicyOptions[?], T] (val x: Self & DecoratedPolicyOptions[T]) extends AnyVal {
+    extension [Self <: DecoratedPolicyOptions[?], T](x: Self & DecoratedPolicyOptions[T]) {
       
-      @scala.inline
-      def setGetDecoratedValue(value: Boolean): Self = StObject.set(x, "getDecoratedValue", value.asInstanceOf[js.Any])
+      inline def setGetDecoratedValue(value: Boolean): Self = StObject.set(x, "getDecoratedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDecoratedValueUndefined: Self = StObject.set(x, "getDecoratedValue", js.undefined)
+      inline def setGetDecoratedValueUndefined: Self = StObject.set(x, "getDecoratedValue", js.undefined)
     }
   }
   
@@ -360,23 +326,18 @@ object mod {
   }
   object DecoratedResult {
     
-    @scala.inline
-    def apply[T](cached: PolicyGetCachedOptions[T], report: PolicyGetReportLog, value: T): DecoratedResult[T] = {
+    inline def apply[T](cached: PolicyGetCachedOptions[T], report: PolicyGetReportLog, value: T): DecoratedResult[T] = {
       val __obj = js.Dynamic.literal(cached = cached.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecoratedResult[T]]
     }
     
-    @scala.inline
-    implicit class DecoratedResultMutableBuilder[Self <: DecoratedResult[?], T] (val x: Self & DecoratedResult[T]) extends AnyVal {
+    extension [Self <: DecoratedResult[?], T](x: Self & DecoratedResult[T]) {
       
-      @scala.inline
-      def setCached(value: PolicyGetCachedOptions[T]): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
+      inline def setCached(value: PolicyGetCachedOptions[T]): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReport(value: PolicyGetReportLog): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+      inline def setReport(value: PolicyGetReportLog): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -395,17 +356,14 @@ object mod {
   }
   object GenerateFuncFlags {
     
-    @scala.inline
-    def apply(ttl: Double): GenerateFuncFlags = {
+    inline def apply(ttl: Double): GenerateFuncFlags = {
       val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateFuncFlags]
     }
     
-    @scala.inline
-    implicit class GenerateFuncFlagsMutableBuilder[Self <: GenerateFuncFlags] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateFuncFlags](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -427,26 +385,20 @@ object mod {
   }
   object PolicyGetCachedOptions {
     
-    @scala.inline
-    def apply[T](isStale: Boolean, item: T, stored: Double, ttl: Double): PolicyGetCachedOptions[T] = {
+    inline def apply[T](isStale: Boolean, item: T, stored: Double, ttl: Double): PolicyGetCachedOptions[T] = {
       val __obj = js.Dynamic.literal(isStale = isStale.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], stored = stored.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyGetCachedOptions[T]]
     }
     
-    @scala.inline
-    implicit class PolicyGetCachedOptionsMutableBuilder[Self <: PolicyGetCachedOptions[?], T] (val x: Self & PolicyGetCachedOptions[T]) extends AnyVal {
+    extension [Self <: PolicyGetCachedOptions[?], T](x: Self & PolicyGetCachedOptions[T]) {
       
-      @scala.inline
-      def setIsStale(value: Boolean): Self = StObject.set(x, "isStale", value.asInstanceOf[js.Any])
+      inline def setIsStale(value: Boolean): Self = StObject.set(x, "isStale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStored(value: Double): Self = StObject.set(x, "stored", value.asInstanceOf[js.Any])
+      inline def setStored(value: Double): Self = StObject.set(x, "stored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -469,32 +421,24 @@ object mod {
   }
   object PolicyGetReportLog {
     
-    @scala.inline
-    def apply(isStale: Boolean, msec: Double, stored: Double, ttl: Double): PolicyGetReportLog = {
+    inline def apply(isStale: Boolean, msec: Double, stored: Double, ttl: Double): PolicyGetReportLog = {
       val __obj = js.Dynamic.literal(isStale = isStale.asInstanceOf[js.Any], msec = msec.asInstanceOf[js.Any], stored = stored.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyGetReportLog]
     }
     
-    @scala.inline
-    implicit class PolicyGetReportLogMutableBuilder[Self <: PolicyGetReportLog] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyGetReportLog](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setIsStale(value: Boolean): Self = StObject.set(x, "isStale", value.asInstanceOf[js.Any])
+      inline def setIsStale(value: Boolean): Self = StObject.set(x, "isStale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsec(value: Double): Self = StObject.set(x, "msec", value.asInstanceOf[js.Any])
+      inline def setMsec(value: Double): Self = StObject.set(x, "msec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStored(value: Double): Self = StObject.set(x, "stored", value.asInstanceOf[js.Any])
+      inline def setStored(value: Double): Self = StObject.set(x, "stored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -505,14 +449,12 @@ object mod {
   trait PolicyOptionVariants[T] extends StObject
   object PolicyOptionVariants {
     
-    @scala.inline
-    def DecoratedPolicyOptions[T](): typings.hapiCatbox.mod.DecoratedPolicyOptions[T] = {
+    inline def DecoratedPolicyOptions[T](): typings.hapiCatbox.mod.DecoratedPolicyOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.hapiCatbox.mod.DecoratedPolicyOptions[T]]
     }
     
-    @scala.inline
-    def PolicyOptions[T](): typings.hapiCatbox.mod.PolicyOptions[T] = {
+    inline def PolicyOptions[T](): typings.hapiCatbox.mod.PolicyOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.hapiCatbox.mod.PolicyOptions[T]]
     }
@@ -566,77 +508,54 @@ object mod {
   }
   object PolicyOptions {
     
-    @scala.inline
-    def apply[T](): PolicyOptions[T] = {
+    inline def apply[T](): PolicyOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyOptions[T]]
     }
     
-    @scala.inline
-    implicit class PolicyOptionsMutableBuilder[Self <: PolicyOptions[?], T] (val x: Self & PolicyOptions[T]) extends AnyVal {
+    extension [Self <: PolicyOptions[?], T](x: Self & PolicyOptions[T]) {
       
-      @scala.inline
-      def setDropOnError(value: Boolean): Self = StObject.set(x, "dropOnError", value.asInstanceOf[js.Any])
+      inline def setDropOnError(value: Boolean): Self = StObject.set(x, "dropOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropOnErrorUndefined: Self = StObject.set(x, "dropOnError", js.undefined)
+      inline def setDropOnErrorUndefined: Self = StObject.set(x, "dropOnError", js.undefined)
       
-      @scala.inline
-      def setExpiresAt(value: String): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: String): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
+      inline def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
       
-      @scala.inline
-      def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      @scala.inline
-      def setGenerateFunc(value: (/* id */ Id, /* flags */ GenerateFuncFlags) => js.Promise[T]): Self = StObject.set(x, "generateFunc", js.Any.fromFunction2(value))
+      inline def setGenerateFunc(value: (/* id */ Id, /* flags */ GenerateFuncFlags) => js.Promise[T]): Self = StObject.set(x, "generateFunc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateFuncUndefined: Self = StObject.set(x, "generateFunc", js.undefined)
+      inline def setGenerateFuncUndefined: Self = StObject.set(x, "generateFunc", js.undefined)
       
-      @scala.inline
-      def setGenerateIgnoreWriteError(value: Boolean): Self = StObject.set(x, "generateIgnoreWriteError", value.asInstanceOf[js.Any])
+      inline def setGenerateIgnoreWriteError(value: Boolean): Self = StObject.set(x, "generateIgnoreWriteError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateIgnoreWriteErrorUndefined: Self = StObject.set(x, "generateIgnoreWriteError", js.undefined)
+      inline def setGenerateIgnoreWriteErrorUndefined: Self = StObject.set(x, "generateIgnoreWriteError", js.undefined)
       
-      @scala.inline
-      def setGenerateOnReadError(value: Boolean): Self = StObject.set(x, "generateOnReadError", value.asInstanceOf[js.Any])
+      inline def setGenerateOnReadError(value: Boolean): Self = StObject.set(x, "generateOnReadError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateOnReadErrorUndefined: Self = StObject.set(x, "generateOnReadError", js.undefined)
+      inline def setGenerateOnReadErrorUndefined: Self = StObject.set(x, "generateOnReadError", js.undefined)
       
-      @scala.inline
-      def setGenerateTimeout(value: Double | `false`): Self = StObject.set(x, "generateTimeout", value.asInstanceOf[js.Any])
+      inline def setGenerateTimeout(value: Double | `false`): Self = StObject.set(x, "generateTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateTimeoutUndefined: Self = StObject.set(x, "generateTimeout", js.undefined)
+      inline def setGenerateTimeoutUndefined: Self = StObject.set(x, "generateTimeout", js.undefined)
       
-      @scala.inline
-      def setPendingGenerateTimeout(value: Double): Self = StObject.set(x, "pendingGenerateTimeout", value.asInstanceOf[js.Any])
+      inline def setPendingGenerateTimeout(value: Double): Self = StObject.set(x, "pendingGenerateTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingGenerateTimeoutUndefined: Self = StObject.set(x, "pendingGenerateTimeout", js.undefined)
+      inline def setPendingGenerateTimeoutUndefined: Self = StObject.set(x, "pendingGenerateTimeout", js.undefined)
       
-      @scala.inline
-      def setStaleIn(value: Double | (js.Function2[/* stored */ Double, /* ttl */ Double, Double])): Self = StObject.set(x, "staleIn", value.asInstanceOf[js.Any])
+      inline def setStaleIn(value: Double | (js.Function2[/* stored */ Double, /* ttl */ Double, Double])): Self = StObject.set(x, "staleIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleInFunction2(value: (/* stored */ Double, /* ttl */ Double) => Double): Self = StObject.set(x, "staleIn", js.Any.fromFunction2(value))
+      inline def setStaleInFunction2(value: (/* stored */ Double, /* ttl */ Double) => Double): Self = StObject.set(x, "staleIn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStaleInUndefined: Self = StObject.set(x, "staleIn", js.undefined)
+      inline def setStaleInUndefined: Self = StObject.set(x, "staleIn", js.undefined)
       
-      @scala.inline
-      def setStaleTimeout(value: Double): Self = StObject.set(x, "staleTimeout", value.asInstanceOf[js.Any])
+      inline def setStaleTimeout(value: Double): Self = StObject.set(x, "staleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleTimeoutUndefined: Self = StObject.set(x, "staleTimeout", js.undefined)
+      inline def setStaleTimeoutUndefined: Self = StObject.set(x, "staleTimeout", js.undefined)
     }
   }
 }

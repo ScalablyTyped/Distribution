@@ -10,16 +10,13 @@ trait PkNumber extends StObject {
 }
 object PkNumber {
   
-  @scala.inline
-  def apply(pk: Double): PkNumber = {
+  inline def apply(pk: Double): PkNumber = {
     val __obj = js.Dynamic.literal(pk = pk.asInstanceOf[js.Any])
     __obj.asInstanceOf[PkNumber]
   }
   
-  @scala.inline
-  implicit class PkNumberMutableBuilder[Self <: PkNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PkNumber](x: Self) {
     
-    @scala.inline
-    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
   }
 }

@@ -388,8 +388,7 @@ object rendererMod {
   }
   object Renderer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getBreak: (/* tokens */ js.Array[ContentToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => _empty | Linefeed,
       render: (js.Array[Token], Options, Env) => String,
       renderInline: (js.Array[Token], Options, Env) => String,
@@ -399,22 +398,17 @@ object rendererMod {
       __obj.asInstanceOf[Renderer]
     }
     
-    @scala.inline
-    implicit class RendererMutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
+    extension [Self <: Renderer](x: Self) {
       
-      @scala.inline
-      def setGetBreak(
+      inline def setGetBreak(
         value: (/* tokens */ js.Array[ContentToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => _empty | Linefeed
       ): Self = StObject.set(x, "getBreak", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setRender(value: (js.Array[Token], Options, Env) => String): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+      inline def setRender(value: (js.Array[Token], Options, Env) => String): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderInline(value: (js.Array[Token], Options, Env) => String): Self = StObject.set(x, "renderInline", js.Any.fromFunction3(value))
+      inline def setRenderInline(value: (js.Array[Token], Options, Env) => String): Self = StObject.set(x, "renderInline", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRules(value: Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     }
   }
 }

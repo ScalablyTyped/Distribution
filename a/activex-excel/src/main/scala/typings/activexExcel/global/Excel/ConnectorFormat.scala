@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ConnectorFormat")
 @js.native
-class ConnectorFormat protected ()
+/* private */ class ConnectorFormat ()
   extends StObject
      with typings.activexExcel.Excel.ConnectorFormat {
   
@@ -49,7 +49,7 @@ class ConnectorFormat protected ()
   /* CompleteClass */
   override def EndDisconnect(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ConnectorFormat_typekey")
   var ExcelDotConnectorFormat_typekey: typings.activexExcel.Excel.ConnectorFormat = js.native
   

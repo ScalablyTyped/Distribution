@@ -19,48 +19,35 @@ trait UseSortByColumnOptions[D /* <: js.Object */] extends StObject {
 }
 object UseSortByColumnOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseSortByColumnOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseSortByColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseSortByColumnOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseSortByColumnOptionsMutableBuilder[Self <: UseSortByColumnOptions[?], D /* <: js.Object */] (val x: Self & UseSortByColumnOptions[D]) extends AnyVal {
+  extension [Self <: UseSortByColumnOptions[?], D /* <: js.Object */](x: Self & UseSortByColumnOptions[D]) {
     
-    @scala.inline
-    def setDefaultCanSort(value: Boolean): Self = StObject.set(x, "defaultCanSort", value.asInstanceOf[js.Any])
+    inline def setDefaultCanSort(value: Boolean): Self = StObject.set(x, "defaultCanSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCanSortUndefined: Self = StObject.set(x, "defaultCanSort", js.undefined)
+    inline def setDefaultCanSortUndefined: Self = StObject.set(x, "defaultCanSort", js.undefined)
     
-    @scala.inline
-    def setDisableSortBy(value: Boolean): Self = StObject.set(x, "disableSortBy", value.asInstanceOf[js.Any])
+    inline def setDisableSortBy(value: Boolean): Self = StObject.set(x, "disableSortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableSortByUndefined: Self = StObject.set(x, "disableSortBy", js.undefined)
+    inline def setDisableSortByUndefined: Self = StObject.set(x, "disableSortBy", js.undefined)
     
-    @scala.inline
-    def setSortDescFirst(value: Boolean): Self = StObject.set(x, "sortDescFirst", value.asInstanceOf[js.Any])
+    inline def setSortDescFirst(value: Boolean): Self = StObject.set(x, "sortDescFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDescFirstUndefined: Self = StObject.set(x, "sortDescFirst", js.undefined)
+    inline def setSortDescFirstUndefined: Self = StObject.set(x, "sortDescFirst", js.undefined)
     
-    @scala.inline
-    def setSortInverted(value: Boolean): Self = StObject.set(x, "sortInverted", value.asInstanceOf[js.Any])
+    inline def setSortInverted(value: Boolean): Self = StObject.set(x, "sortInverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortInvertedUndefined: Self = StObject.set(x, "sortInverted", js.undefined)
+    inline def setSortInvertedUndefined: Self = StObject.set(x, "sortInverted", js.undefined)
     
-    @scala.inline
-    def setSortType(value: SortByFn[D] | DefaultSortTypes | String): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
+    inline def setSortType(value: SortByFn[D] | DefaultSortTypes | String): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortTypeFunction4(
+    inline def setSortTypeFunction4(
       value: (/* rowA */ Row[D], /* rowB */ Row[D], /* columnId */ IdType[D], /* desc */ js.UndefOr[Boolean]) => Double
     ): Self = StObject.set(x, "sortType", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
+    inline def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
   }
 }

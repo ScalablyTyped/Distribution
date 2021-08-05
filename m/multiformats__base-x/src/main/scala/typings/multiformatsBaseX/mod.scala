@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(ALPHABET: String): BaseConverter = ^.asInstanceOf[js.Dynamic].apply(ALPHABET.asInstanceOf[js.Any]).asInstanceOf[BaseConverter]
+  inline def apply(ALPHABET: String): BaseConverter = ^.asInstanceOf[js.Dynamic].apply(ALPHABET.asInstanceOf[js.Any]).asInstanceOf[BaseConverter]
   
   @JSImport("@multiformats/base-x", JSImport.Namespace)
   @js.native

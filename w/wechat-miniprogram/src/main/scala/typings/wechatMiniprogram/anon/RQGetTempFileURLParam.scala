@@ -14,25 +14,19 @@ trait RQGetTempFileURLParam extends StObject {
 }
 object RQGetTempFileURLParam {
   
-  @scala.inline
-  def apply(fileList: js.Array[String]): RQGetTempFileURLParam = {
+  inline def apply(fileList: js.Array[String]): RQGetTempFileURLParam = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[RQGetTempFileURLParam]
   }
   
-  @scala.inline
-  implicit class RQGetTempFileURLParamMutableBuilder[Self <: RQGetTempFileURLParam] (val x: Self) extends AnyVal {
+  extension [Self <: RQGetTempFileURLParam](x: Self) {
     
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setFileList(value: js.Array[String]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[String]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: String*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: String*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

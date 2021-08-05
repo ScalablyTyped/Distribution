@@ -18,28 +18,21 @@ trait ListLexBotsResponse extends StObject {
 }
 object ListLexBotsResponse {
   
-  @scala.inline
-  def apply(): ListLexBotsResponse = {
+  inline def apply(): ListLexBotsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLexBotsResponse]
   }
   
-  @scala.inline
-  implicit class ListLexBotsResponseMutableBuilder[Self <: ListLexBotsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLexBotsResponse](x: Self) {
     
-    @scala.inline
-    def setLexBots(value: LexBotsList): Self = StObject.set(x, "LexBots", value.asInstanceOf[js.Any])
+    inline def setLexBots(value: LexBotsList): Self = StObject.set(x, "LexBots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexBotsUndefined: Self = StObject.set(x, "LexBots", js.undefined)
+    inline def setLexBotsUndefined: Self = StObject.set(x, "LexBots", js.undefined)
     
-    @scala.inline
-    def setLexBotsVarargs(value: LexBot*): Self = StObject.set(x, "LexBots", js.Array(value :_*))
+    inline def setLexBotsVarargs(value: LexBot*): Self = StObject.set(x, "LexBots", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait DataRegionAnnotationCfg
 }
 object DataRegionAnnotationCfg {
   
-  @scala.inline
-  def apply(container: IGroup, points: js.Array[Point], text: EnhancedTextCfg): DataRegionAnnotationCfg = {
+  inline def apply(container: IGroup, points: js.Array[Point], text: EnhancedTextCfg): DataRegionAnnotationCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRegionAnnotationCfg]
   }
   
-  @scala.inline
-  implicit class DataRegionAnnotationCfgMutableBuilder[Self <: DataRegionAnnotationCfg] (val x: Self) extends AnyVal {
+  extension [Self <: DataRegionAnnotationCfg](x: Self) {
     
-    @scala.inline
-    def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setRegion(value: `1`): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: `1`): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setText(value: EnhancedTextCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: EnhancedTextCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

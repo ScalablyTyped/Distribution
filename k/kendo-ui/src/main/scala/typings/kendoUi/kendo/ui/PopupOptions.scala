@@ -33,85 +33,59 @@ trait PopupOptions extends StObject {
 }
 object PopupOptions {
   
-  @scala.inline
-  def apply(): PopupOptions = {
+  inline def apply(): PopupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupOptions]
   }
   
-  @scala.inline
-  implicit class PopupOptionsMutableBuilder[Self <: PopupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopupOptions](x: Self) {
     
-    @scala.inline
-    def setActivate(value: /* e */ PopupActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+    inline def setActivate(value: /* e */ PopupActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setAdjustSize(value: js.Any): Self = StObject.set(x, "adjustSize", value.asInstanceOf[js.Any])
+    inline def setAdjustSize(value: js.Any): Self = StObject.set(x, "adjustSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustSizeUndefined: Self = StObject.set(x, "adjustSize", js.undefined)
+    inline def setAdjustSizeUndefined: Self = StObject.set(x, "adjustSize", js.undefined)
     
-    @scala.inline
-    def setAnchor(value: String | JQuery): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: String | JQuery): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setAnimation(value: Boolean | PopupAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PopupAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
-    @scala.inline
-    def setClose(value: /* e */ PopupCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* e */ PopupCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setCollision(value: String): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
+    inline def setCollision(value: String): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
+    inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
-    @scala.inline
-    def setDeactivate(value: /* e */ PopupDeactivateEvent => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
+    inline def setDeactivate(value: /* e */ PopupDeactivateEvent => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
+    inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpen(value: /* e */ PopupOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* e */ PopupOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

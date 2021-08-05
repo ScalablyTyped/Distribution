@@ -28,8 +28,7 @@ trait BrowserView extends StObject {
 }
 object BrowserView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBounds: () => Rectangle,
     setAutoResize: AutoResizeOptions => Unit,
     setBackgroundColor: String => Unit,
@@ -40,22 +39,16 @@ object BrowserView {
     __obj.asInstanceOf[BrowserView]
   }
   
-  @scala.inline
-  implicit class BrowserViewMutableBuilder[Self <: BrowserView] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserView](x: Self) {
     
-    @scala.inline
-    def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAutoResize(value: AutoResizeOptions => Unit): Self = StObject.set(x, "setAutoResize", js.Any.fromFunction1(value))
+    inline def setSetAutoResize(value: AutoResizeOptions => Unit): Self = StObject.set(x, "setAutoResize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBackgroundColor(value: String => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
+    inline def setSetBackgroundColor(value: String => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBounds(value: Rectangle => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction1(value))
+    inline def setSetBounds(value: Rectangle => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWebContents(value: WebContents_): Self = StObject.set(x, "webContents", value.asInstanceOf[js.Any])
+    inline def setWebContents(value: WebContents_): Self = StObject.set(x, "webContents", value.asInstanceOf[js.Any])
   }
 }

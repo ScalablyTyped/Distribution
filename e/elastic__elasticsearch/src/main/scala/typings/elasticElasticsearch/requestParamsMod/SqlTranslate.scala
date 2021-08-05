@@ -12,16 +12,13 @@ trait SqlTranslate[T]
 }
 object SqlTranslate {
   
-  @scala.inline
-  def apply[T](body: T): SqlTranslate[T] = {
+  inline def apply[T](body: T): SqlTranslate[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlTranslate[T]]
   }
   
-  @scala.inline
-  implicit class SqlTranslateMutableBuilder[Self <: SqlTranslate[?], T] (val x: Self & SqlTranslate[T]) extends AnyVal {
+  extension [Self <: SqlTranslate[?], T](x: Self & SqlTranslate[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

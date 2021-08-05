@@ -19,22 +19,17 @@ trait SetTouchEmulationEnabledRequest extends StObject {
 }
 object SetTouchEmulationEnabledRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetTouchEmulationEnabledRequest = {
+  inline def apply(enabled: Boolean): SetTouchEmulationEnabledRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTouchEmulationEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetTouchEmulationEnabledRequestMutableBuilder[Self <: SetTouchEmulationEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetTouchEmulationEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTouchPoints(value: integer): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
+    inline def setMaxTouchPoints(value: integer): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTouchPointsUndefined: Self = StObject.set(x, "maxTouchPoints", js.undefined)
+    inline def setMaxTouchPointsUndefined: Self = StObject.set(x, "maxTouchPoints", js.undefined)
   }
 }

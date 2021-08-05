@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Characters")
 @js.native
-class Characters protected ()
+/* private */ class Characters ()
   extends StObject
      with typings.activexExcel.Excel.Characters

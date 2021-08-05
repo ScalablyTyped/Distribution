@@ -18,30 +18,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dest(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def dest(folder: String, opt: DestOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def dest(getFolderPath: js.Function1[/* file */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def dest(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def dest(folder: String, opt: DestOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def dest(getFolderPath: js.Function1[/* file */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
-  @scala.inline
-  def src(globs: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def src(globs: String, opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def src(globs: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def src(globs: js.Array[String], opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def src(globs: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def src(globs: String, opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def src(globs: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def src(globs: js.Array[String], opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
-  @scala.inline
-  def symlink(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def symlink(folder: String, opts: Cwd): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def symlink(getFolderPath: js.Function1[/* File */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def symlink(getFolderPath: js.Function1[/* File */ File, String], opts: DirMode): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def symlink(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def symlink(folder: String, opts: Cwd): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def symlink(getFolderPath: js.Function1[/* File */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def symlink(getFolderPath: js.Function1[/* File */ File, String], opts: DirMode): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   trait DestOptions extends StObject {
     
@@ -81,56 +70,40 @@ object mod {
   }
   object DestOptions {
     
-    @scala.inline
-    def apply(): DestOptions = {
+    inline def apply(): DestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestOptions]
     }
     
-    @scala.inline
-    implicit class DestOptionsMutableBuilder[Self <: DestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DestOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDirMode(value: Double | String): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
+      inline def setDirMode(value: Double | String): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
+      inline def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
       
-      @scala.inline
-      def setRelativeSymlinks(value: Boolean): Self = StObject.set(x, "relativeSymlinks", value.asInstanceOf[js.Any])
+      inline def setRelativeSymlinks(value: Boolean): Self = StObject.set(x, "relativeSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeSymlinksUndefined: Self = StObject.set(x, "relativeSymlinks", js.undefined)
+      inline def setRelativeSymlinksUndefined: Self = StObject.set(x, "relativeSymlinks", js.undefined)
       
-      @scala.inline
-      def setSourcemaps(value: `true` | String): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
+      inline def setSourcemaps(value: `true` | String): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
+      inline def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
       
-      @scala.inline
-      def setUseJunctions(value: Boolean): Self = StObject.set(x, "useJunctions", value.asInstanceOf[js.Any])
+      inline def setUseJunctions(value: Boolean): Self = StObject.set(x, "useJunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseJunctionsUndefined: Self = StObject.set(x, "useJunctions", js.undefined)
+      inline def setUseJunctionsUndefined: Self = StObject.set(x, "useJunctions", js.undefined)
     }
   }
   
@@ -209,80 +182,56 @@ object mod {
   }
   object SrcOptions {
     
-    @scala.inline
-    def apply(): SrcOptions = {
+    inline def apply(): SrcOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SrcOptions]
     }
     
-    @scala.inline
-    implicit class SrcOptionsMutableBuilder[Self <: SrcOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SrcOptions](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setDirMode(value: Double): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
+      inline def setDirMode(value: Double): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
+      inline def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
       
-      @scala.inline
-      def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
+      inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
+      inline def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
       
-      @scala.inline
-      def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
+      inline def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
+      inline def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
       
-      @scala.inline
-      def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setRemoveBOM(value: Boolean): Self = StObject.set(x, "removeBOM", value.asInstanceOf[js.Any])
+      inline def setRemoveBOM(value: Boolean): Self = StObject.set(x, "removeBOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveBOMUndefined: Self = StObject.set(x, "removeBOM", js.undefined)
+      inline def setRemoveBOMUndefined: Self = StObject.set(x, "removeBOM", js.undefined)
       
-      @scala.inline
-      def setResolveSymlinks(value: Boolean): Self = StObject.set(x, "resolveSymlinks", value.asInstanceOf[js.Any])
+      inline def setResolveSymlinks(value: Boolean): Self = StObject.set(x, "resolveSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveSymlinksUndefined: Self = StObject.set(x, "resolveSymlinks", js.undefined)
+      inline def setResolveSymlinksUndefined: Self = StObject.set(x, "resolveSymlinks", js.undefined)
       
-      @scala.inline
-      def setSince(value: Date | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+      inline def setSince(value: Date | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+      inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
       
-      @scala.inline
-      def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
+      inline def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
+      inline def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
       
-      @scala.inline
-      def setStripBOM(value: Boolean): Self = StObject.set(x, "stripBOM", value.asInstanceOf[js.Any])
+      inline def setStripBOM(value: Boolean): Self = StObject.set(x, "stripBOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripBOMUndefined: Self = StObject.set(x, "stripBOM", js.undefined)
+      inline def setStripBOMUndefined: Self = StObject.set(x, "stripBOM", js.undefined)
     }
   }
   

@@ -14,25 +14,19 @@ trait SensitiveCategoryAssignedTargetingOptionDetails extends StObject {
 }
 object SensitiveCategoryAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): SensitiveCategoryAssignedTargetingOptionDetails = {
+  inline def apply(): SensitiveCategoryAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SensitiveCategoryAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class SensitiveCategoryAssignedTargetingOptionDetailsMutableBuilder[Self <: SensitiveCategoryAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SensitiveCategoryAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setExcludedTargetingOptionId(value: String): Self = StObject.set(x, "excludedTargetingOptionId", value.asInstanceOf[js.Any])
+    inline def setExcludedTargetingOptionId(value: String): Self = StObject.set(x, "excludedTargetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedTargetingOptionIdUndefined: Self = StObject.set(x, "excludedTargetingOptionId", js.undefined)
+    inline def setExcludedTargetingOptionIdUndefined: Self = StObject.set(x, "excludedTargetingOptionId", js.undefined)
     
-    @scala.inline
-    def setSensitiveCategory(value: String): Self = StObject.set(x, "sensitiveCategory", value.asInstanceOf[js.Any])
+    inline def setSensitiveCategory(value: String): Self = StObject.set(x, "sensitiveCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitiveCategoryUndefined: Self = StObject.set(x, "sensitiveCategory", js.undefined)
+    inline def setSensitiveCategoryUndefined: Self = StObject.set(x, "sensitiveCategory", js.undefined)
   }
 }

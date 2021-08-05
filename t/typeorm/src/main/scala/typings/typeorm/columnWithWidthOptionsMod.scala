@@ -27,32 +27,24 @@ object columnWithWidthOptionsMod {
   }
   object ColumnWithWidthOptions {
     
-    @scala.inline
-    def apply(): ColumnWithWidthOptions = {
+    inline def apply(): ColumnWithWidthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnWithWidthOptions]
     }
     
-    @scala.inline
-    implicit class ColumnWithWidthOptionsMutableBuilder[Self <: ColumnWithWidthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnWithWidthOptions](x: Self) {
       
-      @scala.inline
-      def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
+      inline def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
+      inline def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZerofill(value: Boolean): Self = StObject.set(x, "zerofill", value.asInstanceOf[js.Any])
+      inline def setZerofill(value: Boolean): Self = StObject.set(x, "zerofill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZerofillUndefined: Self = StObject.set(x, "zerofill", js.undefined)
+      inline def setZerofillUndefined: Self = StObject.set(x, "zerofill", js.undefined)
     }
   }
 }

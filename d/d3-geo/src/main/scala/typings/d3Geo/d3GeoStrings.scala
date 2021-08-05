@@ -8,6 +8,5 @@ object d3GeoStrings {
   
   @js.native
   sealed trait Sphere extends StObject
-  @scala.inline
-  def Sphere: Sphere = "Sphere".asInstanceOf[Sphere]
+  inline def Sphere: Sphere = "Sphere".asInstanceOf[Sphere]
 }

@@ -16,37 +16,27 @@ trait InitOptions extends StObject {
 }
 object InitOptions {
   
-  @scala.inline
-  def apply(): InitOptions = {
+  inline def apply(): InitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitOptions]
   }
   
-  @scala.inline
-  implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitOptions](x: Self) {
     
-    @scala.inline
-    def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
+    inline def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidIdUndefined: Self = StObject.set(x, "androidId", js.undefined)
+    inline def setAndroidIdUndefined: Self = StObject.set(x, "androidId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setMasterToken(value: String): Self = StObject.set(x, "masterToken", value.asInstanceOf[js.Any])
+    inline def setMasterToken(value: String): Self = StObject.set(x, "masterToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTokenUndefined: Self = StObject.set(x, "masterToken", js.undefined)
+    inline def setMasterTokenUndefined: Self = StObject.set(x, "masterToken", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait Devices extends StObject {
 }
 object Devices {
   
-  @scala.inline
-  def apply(devices: js.Array[BluetoothDevice]): Devices = {
+  inline def apply(devices: js.Array[BluetoothDevice]): Devices = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Devices]
   }
   
-  @scala.inline
-  implicit class DevicesMutableBuilder[Self <: Devices] (val x: Self) extends AnyVal {
+  extension [Self <: Devices](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[BluetoothDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[BluetoothDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesVarargs(value: BluetoothDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: BluetoothDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
   }
 }

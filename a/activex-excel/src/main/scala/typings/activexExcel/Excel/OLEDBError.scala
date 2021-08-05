@@ -12,7 +12,7 @@ trait OLEDBError extends StObject {
   
   val ErrorString: String
   
-  @JSName("Excel.OLEDBError_typekey")
+  /* private */ @JSName("Excel.OLEDBError_typekey")
   var ExcelDotOLEDBError_typekey: OLEDBError
   
   val Native: Double
@@ -27,8 +27,7 @@ trait OLEDBError extends StObject {
 }
 object OLEDBError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ErrorString: String,
@@ -44,34 +43,24 @@ object OLEDBError {
     __obj.asInstanceOf[OLEDBError]
   }
   
-  @scala.inline
-  implicit class OLEDBErrorMutableBuilder[Self <: OLEDBError] (val x: Self) extends AnyVal {
+  extension [Self <: OLEDBError](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorString(value: String): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
+    inline def setErrorString(value: String): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotOLEDBError_typekey(value: OLEDBError): Self = StObject.set(x, "Excel.OLEDBError_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotOLEDBError_typekey(value: OLEDBError): Self = StObject.set(x, "Excel.OLEDBError_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative(value: Double): Self = StObject.set(x, "Native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Double): Self = StObject.set(x, "Native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlState(value: String): Self = StObject.set(x, "SqlState", value.asInstanceOf[js.Any])
+    inline def setSqlState(value: String): Self = StObject.set(x, "SqlState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: Double): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: Double): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
   }
 }

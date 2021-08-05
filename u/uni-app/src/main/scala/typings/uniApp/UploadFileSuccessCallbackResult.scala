@@ -18,25 +18,19 @@ trait UploadFileSuccessCallbackResult extends StObject {
 }
 object UploadFileSuccessCallbackResult {
   
-  @scala.inline
-  def apply(): UploadFileSuccessCallbackResult = {
+  inline def apply(): UploadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadFileSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class UploadFileSuccessCallbackResultMutableBuilder[Self <: UploadFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFileSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

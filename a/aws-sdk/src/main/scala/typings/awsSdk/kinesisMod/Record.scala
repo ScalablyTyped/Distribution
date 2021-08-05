@@ -33,34 +33,25 @@ trait Record extends StObject {
 }
 object Record {
   
-  @scala.inline
-  def apply(Data: Data, PartitionKey: PartitionKey, SequenceNumber: SequenceNumber): Record = {
+  inline def apply(Data: Data, PartitionKey: PartitionKey, SequenceNumber: SequenceNumber): Record = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Record]
   }
   
-  @scala.inline
-  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+  extension [Self <: Record](x: Self) {
     
-    @scala.inline
-    def setApproximateArrivalTimestamp(value: Timestamp): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
+    inline def setApproximateArrivalTimestamp(value: Timestamp): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproximateArrivalTimestampUndefined: Self = StObject.set(x, "ApproximateArrivalTimestamp", js.undefined)
+    inline def setApproximateArrivalTimestampUndefined: Self = StObject.set(x, "ApproximateArrivalTimestamp", js.undefined)
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+    inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
-    @scala.inline
-    def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
   }
 }

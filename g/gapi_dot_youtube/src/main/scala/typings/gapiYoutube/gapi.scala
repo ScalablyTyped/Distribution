@@ -42,8 +42,7 @@ object gapi {
       }
       object activities {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           insert: Part => HttpRequest[GoogleApiYouTubeActivityResource],
           list: Home => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeActivityResource]]
         ): activities = {
@@ -51,14 +50,11 @@ object gapi {
           __obj.asInstanceOf[activities]
         }
         
-        @scala.inline
-        implicit class activitiesMutableBuilder[Self <: activities] (val x: Self) extends AnyVal {
+        extension [Self <: activities](x: Self) {
           
-          @scala.inline
-          def setInsert(value: Part => HttpRequest[GoogleApiYouTubeActivityResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+          inline def setInsert(value: Part => HttpRequest[GoogleApiYouTubeActivityResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setList(value: Home => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeActivityResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Home => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeActivityResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
       
@@ -71,17 +67,14 @@ object gapi {
       }
       object channelBanners {
         
-        @scala.inline
-        def apply(insert: OnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeChannelBannerResource]): channelBanners = {
+        inline def apply(insert: OnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeChannelBannerResource]): channelBanners = {
           val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
           __obj.asInstanceOf[channelBanners]
         }
         
-        @scala.inline
-        implicit class channelBannersMutableBuilder[Self <: channelBanners] (val x: Self) extends AnyVal {
+        extension [Self <: channelBanners](x: Self) {
           
-          @scala.inline
-          def setInsert(value: OnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeChannelBannerResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+          inline def setInsert(value: OnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeChannelBannerResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
         }
       }
       
@@ -99,8 +92,7 @@ object gapi {
       }
       object channels {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           list: ForUsername => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeChannelResource]],
           update: RequestBody => HttpRequest[GoogleApiYouTubeChannelResource]
         ): channels = {
@@ -108,14 +100,11 @@ object gapi {
           __obj.asInstanceOf[channels]
         }
         
-        @scala.inline
-        implicit class channelsMutableBuilder[Self <: channels] (val x: Self) extends AnyVal {
+        extension [Self <: channels](x: Self) {
           
-          @scala.inline
-          def setList(value: ForUsername => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeChannelResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: ForUsername => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeChannelResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setUpdate(value: RequestBody => HttpRequest[GoogleApiYouTubeChannelResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+          inline def setUpdate(value: RequestBody => HttpRequest[GoogleApiYouTubeChannelResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         }
       }
       
@@ -128,17 +117,14 @@ object gapi {
       }
       object guideCategories {
         
-        @scala.inline
-        def apply(list: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeGuideCategoryResource]]): guideCategories = {
+        inline def apply(list: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeGuideCategoryResource]]): guideCategories = {
           val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
           __obj.asInstanceOf[guideCategories]
         }
         
-        @scala.inline
-        implicit class guideCategoriesMutableBuilder[Self <: guideCategories] (val x: Self) extends AnyVal {
+        extension [Self <: guideCategories](x: Self) {
           
-          @scala.inline
-          def setList(value: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeGuideCategoryResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeGuideCategoryResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
       
@@ -166,8 +152,7 @@ object gapi {
       }
       object playlistItems {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           delete: Id => HttpRequest[GoogleApiYouTubePlaylistItemResource],
           insert: Part => HttpRequest[GoogleApiYouTubePlaylistItemResource],
           list: MaxResults => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistItemResource]],
@@ -177,22 +162,17 @@ object gapi {
           __obj.asInstanceOf[playlistItems]
         }
         
-        @scala.inline
-        implicit class playlistItemsMutableBuilder[Self <: playlistItems] (val x: Self) extends AnyVal {
+        extension [Self <: playlistItems](x: Self) {
           
-          @scala.inline
-          def setDelete(value: Id => HttpRequest[GoogleApiYouTubePlaylistItemResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+          inline def setDelete(value: Id => HttpRequest[GoogleApiYouTubePlaylistItemResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setInsert(value: Part => HttpRequest[GoogleApiYouTubePlaylistItemResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+          inline def setInsert(value: Part => HttpRequest[GoogleApiYouTubePlaylistItemResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setList(
+          inline def setList(
             value: MaxResults => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistItemResource]]
           ): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setUpdate(value: Part => HttpRequest[GoogleApiYouTubePlaylistItemResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+          inline def setUpdate(value: Part => HttpRequest[GoogleApiYouTubePlaylistItemResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         }
       }
       
@@ -220,8 +200,7 @@ object gapi {
       }
       object playlists {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           delete: Id => HttpRequest[GoogleApiYouTubePlaylistResource],
           insert: Part => HttpRequest[GoogleApiYouTubePlaylistResource],
           list: Mine => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistResource]],
@@ -231,20 +210,15 @@ object gapi {
           __obj.asInstanceOf[playlists]
         }
         
-        @scala.inline
-        implicit class playlistsMutableBuilder[Self <: playlists] (val x: Self) extends AnyVal {
+        extension [Self <: playlists](x: Self) {
           
-          @scala.inline
-          def setDelete(value: Id => HttpRequest[GoogleApiYouTubePlaylistResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+          inline def setDelete(value: Id => HttpRequest[GoogleApiYouTubePlaylistResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setInsert(value: Part => HttpRequest[GoogleApiYouTubePlaylistResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+          inline def setInsert(value: Part => HttpRequest[GoogleApiYouTubePlaylistResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setList(value: Mine => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Mine => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubePlaylistResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setUpdate(value: Part => HttpRequest[GoogleApiYouTubePlaylistResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+          inline def setUpdate(value: Part => HttpRequest[GoogleApiYouTubePlaylistResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         }
       }
       
@@ -257,17 +231,14 @@ object gapi {
       }
       object search {
         
-        @scala.inline
-        def apply(list: ChannelType => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSearchResource]]): search = {
+        inline def apply(list: ChannelType => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSearchResource]]): search = {
           val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
           __obj.asInstanceOf[search]
         }
         
-        @scala.inline
-        implicit class searchMutableBuilder[Self <: search] (val x: Self) extends AnyVal {
+        extension [Self <: search](x: Self) {
           
-          @scala.inline
-          def setList(value: ChannelType => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSearchResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: ChannelType => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSearchResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
       
@@ -290,8 +261,7 @@ object gapi {
       }
       object subscriptions {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           delete: Id => HttpRequest[GoogleApiYouTubeSubscriptionResource],
           insert: PartRequestBody => HttpRequest[GoogleApiYouTubeSubscriptionResource],
           list: ForChannelId => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]]
@@ -300,17 +270,13 @@ object gapi {
           __obj.asInstanceOf[subscriptions]
         }
         
-        @scala.inline
-        implicit class subscriptionsMutableBuilder[Self <: subscriptions] (val x: Self) extends AnyVal {
+        extension [Self <: subscriptions](x: Self) {
           
-          @scala.inline
-          def setDelete(value: Id => HttpRequest[GoogleApiYouTubeSubscriptionResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+          inline def setDelete(value: Id => HttpRequest[GoogleApiYouTubeSubscriptionResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setInsert(value: PartRequestBody => HttpRequest[GoogleApiYouTubeSubscriptionResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+          inline def setInsert(value: PartRequestBody => HttpRequest[GoogleApiYouTubeSubscriptionResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setList(
+          inline def setList(
             value: ForChannelId => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeSubscriptionResource]]
           ): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -325,17 +291,14 @@ object gapi {
       }
       object thumbnails {
         
-        @scala.inline
-        def apply(set: VideoId => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]]): thumbnails = {
+        inline def apply(set: VideoId => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]]): thumbnails = {
           val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
           __obj.asInstanceOf[thumbnails]
         }
         
-        @scala.inline
-        implicit class thumbnailsMutableBuilder[Self <: thumbnails] (val x: Self) extends AnyVal {
+        extension [Self <: thumbnails](x: Self) {
           
-          @scala.inline
-          def setSet(value: VideoId => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+          inline def setSet(value: VideoId => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeThumbnailResource]]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
         }
       }
       
@@ -348,17 +311,14 @@ object gapi {
       }
       object videoCategories {
         
-        @scala.inline
-        def apply(list: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeVideoCategoryResource]]): videoCategories = {
+        inline def apply(list: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeVideoCategoryResource]]): videoCategories = {
           val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
           __obj.asInstanceOf[videoCategories]
         }
         
-        @scala.inline
-        implicit class videoCategoriesMutableBuilder[Self <: videoCategories] (val x: Self) extends AnyVal {
+        extension [Self <: videoCategories](x: Self) {
           
-          @scala.inline
-          def setList(value: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeVideoCategoryResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Hl => HttpRequest[GoogleApiYouTubePageInfo[GoogleApiYouTubeVideoCategoryResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
       
@@ -396,8 +356,7 @@ object gapi {
       }
       object videos {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           delete: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoResource],
           getRating: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoGetRatingResponse],
           insert: AutoLevels => HttpRequest[GoogleApiYouTubeVideoResource],
@@ -409,26 +368,19 @@ object gapi {
           __obj.asInstanceOf[videos]
         }
         
-        @scala.inline
-        implicit class videosMutableBuilder[Self <: videos] (val x: Self) extends AnyVal {
+        extension [Self <: videos](x: Self) {
           
-          @scala.inline
-          def setDelete(value: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+          inline def setDelete(value: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setGetRating(value: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoGetRatingResponse]): Self = StObject.set(x, "getRating", js.Any.fromFunction1(value))
+          inline def setGetRating(value: IdOnBehalfOfContentOwner => HttpRequest[GoogleApiYouTubeVideoGetRatingResponse]): Self = StObject.set(x, "getRating", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setInsert(value: AutoLevels => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+          inline def setInsert(value: AutoLevels => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setList(value: Chart => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Chart => HttpRequest[GoogleApiYouTubePaginationInfo[GoogleApiYouTubeVideoResource]]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setRate(value: OnBehalfOfContentOwnerRating => HttpRequest[js.Any]): Self = StObject.set(x, "rate", js.Any.fromFunction1(value))
+          inline def setRate(value: OnBehalfOfContentOwnerRating => HttpRequest[js.Any]): Self = StObject.set(x, "rate", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setUpdate(value: RequestBody => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+          inline def setUpdate(value: RequestBody => HttpRequest[GoogleApiYouTubeVideoResource]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
         }
       }
     }

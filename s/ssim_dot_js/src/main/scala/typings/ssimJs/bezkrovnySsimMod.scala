@@ -13,6 +13,5 @@ object bezkrovnySsimMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bezkrovnySsim(pixels1: Matrix, pixels2: Matrix, options: Options): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("bezkrovnySsim")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Data]
+  inline def bezkrovnySsim(pixels1: Matrix, pixels2: Matrix, options: Options): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("bezkrovnySsim")(pixels1.asInstanceOf[js.Any], pixels2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Data]
 }

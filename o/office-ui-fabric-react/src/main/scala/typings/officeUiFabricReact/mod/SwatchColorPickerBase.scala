@@ -21,6 +21,5 @@ object SwatchColorPickerBase {
   @JSImport("office-ui-fabric-react", "SwatchColorPickerBase.defaultProps")
   @js.native
   def defaultProps: ISwatchColorPickerProps = js.native
-  @scala.inline
-  def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

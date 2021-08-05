@@ -14,28 +14,21 @@ trait BatchRunReportsRequest extends StObject {
 }
 object BatchRunReportsRequest {
   
-  @scala.inline
-  def apply(): BatchRunReportsRequest = {
+  inline def apply(): BatchRunReportsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchRunReportsRequest]
   }
   
-  @scala.inline
-  implicit class BatchRunReportsRequestMutableBuilder[Self <: BatchRunReportsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchRunReportsRequest](x: Self) {
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setRequests(value: js.Array[RunReportRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[RunReportRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: RunReportRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: RunReportRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

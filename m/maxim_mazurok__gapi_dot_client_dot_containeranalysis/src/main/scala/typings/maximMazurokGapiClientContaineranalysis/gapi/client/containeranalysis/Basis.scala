@@ -14,25 +14,19 @@ trait Basis extends StObject {
 }
 object Basis {
   
-  @scala.inline
-  def apply(): Basis = {
+  inline def apply(): Basis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Basis]
   }
   
-  @scala.inline
-  implicit class BasisMutableBuilder[Self <: Basis] (val x: Self) extends AnyVal {
+  extension [Self <: Basis](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: Fingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: Fingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
+    inline def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }
 }

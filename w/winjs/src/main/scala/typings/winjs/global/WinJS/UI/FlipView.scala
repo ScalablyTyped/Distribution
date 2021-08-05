@@ -37,8 +37,7 @@ object FlipView {
   @JSGlobal("WinJS.UI.FlipView.datasourceCountChangedEvent")
   @js.native
   def datasourceCountChangedEvent: String = js.native
-  @scala.inline
-  def datasourceCountChangedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datasourceCountChangedEvent")(x.asInstanceOf[js.Any])
+  inline def datasourceCountChangedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datasourceCountChangedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Event Name
@@ -47,8 +46,7 @@ object FlipView {
   @JSGlobal("WinJS.UI.FlipView.pageCompletedEvent")
   @js.native
   def pageCompletedEvent: String = js.native
-  @scala.inline
-  def pageCompletedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageCompletedEvent")(x.asInstanceOf[js.Any])
+  inline def pageCompletedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageCompletedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Event Name
@@ -57,8 +55,7 @@ object FlipView {
   @JSGlobal("WinJS.UI.FlipView.pageSelectedEvent")
   @js.native
   def pageSelectedEvent: String = js.native
-  @scala.inline
-  def pageSelectedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageSelectedEvent")(x.asInstanceOf[js.Any])
+  inline def pageSelectedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageSelectedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Event Name
@@ -67,8 +64,7 @@ object FlipView {
   @JSGlobal("WinJS.UI.FlipView.pageVisibilityChangedEvent")
   @js.native
   def pageVisibilityChangedEvent: String = js.native
-  @scala.inline
-  def pageVisibilityChangedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageVisibilityChangedEvent")(x.asInstanceOf[js.Any])
+  inline def pageVisibilityChangedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageVisibilityChangedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Indicates that the object is compatibile with declarative processing.
@@ -77,6 +73,5 @@ object FlipView {
   @JSGlobal("WinJS.UI.FlipView.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

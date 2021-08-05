@@ -25,25 +25,18 @@ object DictionaryEventFlags {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ACTIVATE_DIC: `32` = 32.asInstanceOf[`32`]
+    inline def ACTIVATE_DIC: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def ADD_ENTRY: `1` = 1.asInstanceOf[`1`]
+    inline def ADD_ENTRY: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def CHG_LANGUAGE: `8` = 8.asInstanceOf[`8`]
+    inline def CHG_LANGUAGE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def CHG_NAME: `4` = 4.asInstanceOf[`4`]
+    inline def CHG_NAME: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def DEACTIVATE_DIC: `64` = 64.asInstanceOf[`64`]
+    inline def DEACTIVATE_DIC: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def DEL_ENTRY: `2` = 2.asInstanceOf[`2`]
+    inline def DEL_ENTRY: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def ENTRIES_CLEARED: `16` = 16.asInstanceOf[`16`]
+    inline def ENTRIES_CLEARED: `16` = 16.asInstanceOf[`16`]
   }
 }

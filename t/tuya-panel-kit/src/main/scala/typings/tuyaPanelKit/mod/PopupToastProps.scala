@@ -12,19 +12,15 @@ trait PopupToastProps
 }
 object PopupToastProps {
   
-  @scala.inline
-  def apply(): PopupToastProps = {
+  inline def apply(): PopupToastProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupToastProps]
   }
   
-  @scala.inline
-  implicit class PopupToastPropsMutableBuilder[Self <: PopupToastProps] (val x: Self) extends AnyVal {
+  extension [Self <: PopupToastProps](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

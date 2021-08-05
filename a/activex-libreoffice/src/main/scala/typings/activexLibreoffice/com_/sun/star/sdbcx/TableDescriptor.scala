@@ -34,8 +34,7 @@ trait TableDescriptor
 }
 object TableDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CatalogName: String,
     Columns: XNameAccess,
     Description: String,
@@ -60,16 +59,12 @@ object TableDescriptor {
     __obj.asInstanceOf[TableDescriptor]
   }
   
-  @scala.inline
-  implicit class TableDescriptorMutableBuilder[Self <: TableDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: TableDescriptor](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
   }
 }

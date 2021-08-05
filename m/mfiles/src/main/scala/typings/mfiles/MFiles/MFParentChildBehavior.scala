@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFParentChildBehavior extends StObject
 object MFParentChildBehavior {
   
-  @scala.inline
-  def IncludeChildValues: `1` = 1.asInstanceOf[`1`]
+  inline def IncludeChildValues: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def IncludeParentValues: `2` = 2.asInstanceOf[`2`]
+  inline def IncludeParentValues: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
 }

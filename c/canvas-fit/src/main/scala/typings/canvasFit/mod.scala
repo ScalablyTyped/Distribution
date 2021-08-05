@@ -12,54 +12,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement): resize = ^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any]).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: Unit, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: Unit, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: Document): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: Document, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: Document, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: EventTarget): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: EventTarget, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: EventTarget, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: HTMLElement): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement): resize = ^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any]).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: Unit, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: Unit, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: Document): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: Document, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: Document, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: EventTarget): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: EventTarget, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: EventTarget, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: HTMLElement): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: HTMLElement, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
-  @scala.inline
-  def apply(canvas: SVGElement, parent: HTMLElement, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement): resize = ^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any]).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: Unit, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: Unit, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: Document): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: Document, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: Document, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: EventTarget): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: EventTarget, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: EventTarget, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: HTMLElement): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement): resize = ^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any]).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: Unit, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: Unit, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: Document): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: Document, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: Document, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: EventTarget): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: EventTarget, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: EventTarget, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: HTMLElement): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: HTMLElement, scale: String): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
+  inline def apply(canvas: SVGElement, parent: HTMLElement, scale: Double): resize = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[resize]
   
   @JSImport("canvas-fit", JSImport.Namespace)
   @js.native

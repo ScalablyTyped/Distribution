@@ -12,19 +12,15 @@ trait Instance[T] extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply[T](instance: typings.firebaseDatabaseTypes.mod.Database, namespace: T): Instance[T] = {
+  inline def apply[T](instance: typings.firebaseDatabaseTypes.mod.Database, namespace: T): Instance[T] = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance[T]]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance[?], T] (val x: Self & Instance[T]) extends AnyVal {
+  extension [Self <: Instance[?], T](x: Self & Instance[T]) {
     
-    @scala.inline
-    def setInstance(value: typings.firebaseDatabaseTypes.mod.Database): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: typings.firebaseDatabaseTypes.mod.Database): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: T): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: T): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
   }
 }

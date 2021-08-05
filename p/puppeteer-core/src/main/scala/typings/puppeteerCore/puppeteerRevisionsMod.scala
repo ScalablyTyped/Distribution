@@ -19,20 +19,16 @@ object puppeteerRevisionsMod {
   }
   object Revisions {
     
-    @scala.inline
-    def apply(chromium: String, firefox: String): Revisions = {
+    inline def apply(chromium: String, firefox: String): Revisions = {
       val __obj = js.Dynamic.literal(chromium = chromium.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any])
       __obj.asInstanceOf[Revisions]
     }
     
-    @scala.inline
-    implicit class RevisionsMutableBuilder[Self <: Revisions] (val x: Self) extends AnyVal {
+    extension [Self <: Revisions](x: Self) {
       
-      @scala.inline
-      def setChromium(value: String): Self = StObject.set(x, "chromium", value.asInstanceOf[js.Any])
+      inline def setChromium(value: String): Self = StObject.set(x, "chromium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirefox(value: String): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+      inline def setFirefox(value: String): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
     }
   }
 }

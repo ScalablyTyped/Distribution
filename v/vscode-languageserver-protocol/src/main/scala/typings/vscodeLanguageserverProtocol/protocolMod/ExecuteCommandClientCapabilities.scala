@@ -13,19 +13,15 @@ trait ExecuteCommandClientCapabilities extends StObject {
 }
 object ExecuteCommandClientCapabilities {
   
-  @scala.inline
-  def apply(): ExecuteCommandClientCapabilities = {
+  inline def apply(): ExecuteCommandClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteCommandClientCapabilities]
   }
   
-  @scala.inline
-  implicit class ExecuteCommandClientCapabilitiesMutableBuilder[Self <: ExecuteCommandClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteCommandClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

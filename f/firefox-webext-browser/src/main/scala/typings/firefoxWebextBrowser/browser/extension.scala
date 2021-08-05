@@ -24,32 +24,24 @@ object `extension` {
   }
   object GetViewsFetchProperties {
     
-    @scala.inline
-    def apply(): GetViewsFetchProperties = {
+    inline def apply(): GetViewsFetchProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetViewsFetchProperties]
     }
     
-    @scala.inline
-    implicit class GetViewsFetchPropertiesMutableBuilder[Self <: GetViewsFetchProperties] (val x: Self) extends AnyVal {
+    extension [Self <: GetViewsFetchProperties](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setType(value: ViewType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ViewType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
   
@@ -63,17 +55,14 @@ object `extension` {
   }
   object LastError {
     
-    @scala.inline
-    def apply(message: String): LastError = {
+    inline def apply(message: String): LastError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[LastError]
     }
     
-    @scala.inline
-    implicit class LastErrorMutableBuilder[Self <: LastError] (val x: Self) extends AnyVal {
+    extension [Self <: LastError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,13 +76,10 @@ object `extension` {
   trait ViewType extends StObject
   object ViewType {
     
-    @scala.inline
-    def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
+    inline def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
     
-    @scala.inline
-    def sidebar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sidebar = "sidebar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sidebar]
+    inline def sidebar: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sidebar = "sidebar".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sidebar]
     
-    @scala.inline
-    def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
+    inline def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
   }
 }

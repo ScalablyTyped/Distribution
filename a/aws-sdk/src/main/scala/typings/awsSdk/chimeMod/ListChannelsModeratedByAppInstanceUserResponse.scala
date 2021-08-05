@@ -18,28 +18,21 @@ trait ListChannelsModeratedByAppInstanceUserResponse extends StObject {
 }
 object ListChannelsModeratedByAppInstanceUserResponse {
   
-  @scala.inline
-  def apply(): ListChannelsModeratedByAppInstanceUserResponse = {
+  inline def apply(): ListChannelsModeratedByAppInstanceUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListChannelsModeratedByAppInstanceUserResponse]
   }
   
-  @scala.inline
-  implicit class ListChannelsModeratedByAppInstanceUserResponseMutableBuilder[Self <: ListChannelsModeratedByAppInstanceUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListChannelsModeratedByAppInstanceUserResponse](x: Self) {
     
-    @scala.inline
-    def setChannels(value: ChannelModeratedByAppInstanceUserSummaryList): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: ChannelModeratedByAppInstanceUserSummaryList): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: ChannelModeratedByAppInstanceUserSummary*): Self = StObject.set(x, "Channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: ChannelModeratedByAppInstanceUserSummary*): Self = StObject.set(x, "Channels", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

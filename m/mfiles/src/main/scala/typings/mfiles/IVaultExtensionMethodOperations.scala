@@ -12,8 +12,7 @@ trait IVaultExtensionMethodOperations extends StObject {
 }
 object IVaultExtensionMethodOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DoesActiveVaultExtensionMethodExist: String => Boolean,
     ExecuteVaultExtensionMethod: (String, String) => String
   ): IVaultExtensionMethodOperations = {
@@ -21,13 +20,10 @@ object IVaultExtensionMethodOperations {
     __obj.asInstanceOf[IVaultExtensionMethodOperations]
   }
   
-  @scala.inline
-  implicit class IVaultExtensionMethodOperationsMutableBuilder[Self <: IVaultExtensionMethodOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultExtensionMethodOperations](x: Self) {
     
-    @scala.inline
-    def setDoesActiveVaultExtensionMethodExist(value: String => Boolean): Self = StObject.set(x, "DoesActiveVaultExtensionMethodExist", js.Any.fromFunction1(value))
+    inline def setDoesActiveVaultExtensionMethodExist(value: String => Boolean): Self = StObject.set(x, "DoesActiveVaultExtensionMethodExist", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecuteVaultExtensionMethod(value: (String, String) => String): Self = StObject.set(x, "ExecuteVaultExtensionMethod", js.Any.fromFunction2(value))
+    inline def setExecuteVaultExtensionMethod(value: (String, String) => String): Self = StObject.set(x, "ExecuteVaultExtensionMethod", js.Any.fromFunction2(value))
   }
 }

@@ -10,19 +10,15 @@ trait Folder extends StObject {
 }
 object Folder {
   
-  @scala.inline
-  def apply(contents: js.Array[File]): Folder = {
+  inline def apply(contents: js.Array[File]): Folder = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     __obj.asInstanceOf[Folder]
   }
   
-  @scala.inline
-  implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+  extension [Self <: Folder](x: Self) {
     
-    @scala.inline
-    def setContents(value: js.Array[File]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[File]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsVarargs(value: File*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: File*): Self = StObject.set(x, "contents", js.Array(value :_*))
   }
 }

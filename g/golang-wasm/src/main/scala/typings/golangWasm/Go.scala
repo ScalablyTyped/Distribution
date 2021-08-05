@@ -26,8 +26,7 @@ trait Go extends StObject {
 }
 object Go {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argv: js.Array[String],
     env: StringDictionary[String],
     exit: Double => Unit,
@@ -40,31 +39,22 @@ object Go {
     __obj.asInstanceOf[Go]
   }
   
-  @scala.inline
-  implicit class GoMutableBuilder[Self <: Go] (val x: Self) extends AnyVal {
+  extension [Self <: Go](x: Self) {
     
-    @scala.inline
-    def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+    inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+    inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
     
-    @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit(value: Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
+    inline def setExit(value: Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExited(value: Boolean): Self = StObject.set(x, "exited", value.asInstanceOf[js.Any])
+    inline def setExited(value: Boolean): Self = StObject.set(x, "exited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportObject(value: Imports): Self = StObject.set(x, "importObject", value.asInstanceOf[js.Any])
+    inline def setImportObject(value: Imports): Self = StObject.set(x, "importObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem(value: DataView): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
+    inline def setMem(value: DataView): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: Instance => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: Instance => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

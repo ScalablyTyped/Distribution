@@ -19,25 +19,19 @@ trait CodeActionContext extends StObject {
 }
 object CodeActionContext {
   
-  @scala.inline
-  def apply(markers: js.Array[IMarkerData]): CodeActionContext = {
+  inline def apply(markers: js.Array[IMarkerData]): CodeActionContext = {
     val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionContext]
   }
   
-  @scala.inline
-  implicit class CodeActionContextMutableBuilder[Self <: CodeActionContext] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionContext](x: Self) {
     
-    @scala.inline
-    def setMarkers(value: js.Array[IMarkerData]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: js.Array[IMarkerData]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkersVarargs(value: IMarkerData*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: IMarkerData*): Self = StObject.set(x, "markers", js.Array(value :_*))
     
-    @scala.inline
-    def setOnly(value: String): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+    inline def setOnly(value: String): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
   }
 }

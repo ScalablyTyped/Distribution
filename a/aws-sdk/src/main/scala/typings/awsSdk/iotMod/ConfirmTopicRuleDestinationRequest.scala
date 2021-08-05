@@ -13,16 +13,13 @@ trait ConfirmTopicRuleDestinationRequest extends StObject {
 }
 object ConfirmTopicRuleDestinationRequest {
   
-  @scala.inline
-  def apply(confirmationToken: ConfirmationToken): ConfirmTopicRuleDestinationRequest = {
+  inline def apply(confirmationToken: ConfirmationToken): ConfirmTopicRuleDestinationRequest = {
     val __obj = js.Dynamic.literal(confirmationToken = confirmationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmTopicRuleDestinationRequest]
   }
   
-  @scala.inline
-  implicit class ConfirmTopicRuleDestinationRequestMutableBuilder[Self <: ConfirmTopicRuleDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmTopicRuleDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setConfirmationToken(value: ConfirmationToken): Self = StObject.set(x, "confirmationToken", value.asInstanceOf[js.Any])
+    inline def setConfirmationToken(value: ConfirmationToken): Self = StObject.set(x, "confirmationToken", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object isSchedulerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isScheduler(value: js.Any): /* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScheduler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean]
+  inline def isScheduler(value: js.Any): /* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScheduler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/internal/types.SchedulerLike */ Boolean]
 }

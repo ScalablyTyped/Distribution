@@ -15,27 +15,21 @@ trait Router[Options, NavigationPropType] extends StObject {
 }
 object Router {
   
-  @scala.inline
-  def apply[Options, NavigationPropType](router: NavigationRouter[Options, js.Object]): Router[Options, NavigationPropType] = {
+  inline def apply[Options, NavigationPropType](router: NavigationRouter[Options, js.Object]): Router[Options, NavigationPropType] = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[Router[Options, NavigationPropType]]
   }
   
-  @scala.inline
-  implicit class RouterMutableBuilder[Self <: Router[?, ?], Options, NavigationPropType] (val x: Self & (Router[Options, NavigationPropType])) extends AnyVal {
+  extension [Self <: Router[?, ?], Options, NavigationPropType](x: Self & (Router[Options, NavigationPropType])) {
     
-    @scala.inline
-    def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationPropType, js.Any]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    inline def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationPropType, js.Any]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptionsFunction1(
+    inline def setNavigationOptionsFunction1(
       value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationPropType, js.Any]) & NavigationOptionsOptions[Options] => Options
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
     
-    @scala.inline
-    def setRouter(value: NavigationRouter[Options, js.Object]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: NavigationRouter[Options, js.Object]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }
 }

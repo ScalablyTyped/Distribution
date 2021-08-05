@@ -29,31 +29,23 @@ trait SchemaTurnBasedMatchData extends StObject {
 }
 object SchemaTurnBasedMatchData {
   
-  @scala.inline
-  def apply(): SchemaTurnBasedMatchData = {
+  inline def apply(): SchemaTurnBasedMatchData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTurnBasedMatchData]
   }
   
-  @scala.inline
-  implicit class SchemaTurnBasedMatchDataMutableBuilder[Self <: SchemaTurnBasedMatchData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTurnBasedMatchData](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAvailable(value: Boolean): Self = StObject.set(x, "dataAvailable", value.asInstanceOf[js.Any])
+    inline def setDataAvailable(value: Boolean): Self = StObject.set(x, "dataAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAvailableUndefined: Self = StObject.set(x, "dataAvailable", js.undefined)
+    inline def setDataAvailableUndefined: Self = StObject.set(x, "dataAvailable", js.undefined)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

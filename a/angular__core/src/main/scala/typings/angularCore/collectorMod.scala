@@ -18,11 +18,11 @@ object collectorMod {
     
     var assignments: Set[PropertyAssignment] = js.native
     
-    var getLiteralNeedingMigration: js.Any = js.native
+    /* private */ var getLiteralNeedingMigration: js.Any = js.native
     
-    var getLiteralNeedingMigrationFromIdentifier: js.Any = js.native
+    /* private */ var getLiteralNeedingMigrationFromIdentifier: js.Any = js.native
     
-    val typeChecker: js.Any = js.native
+    /* private */ val typeChecker: js.Any = js.native
     
     def visitExtraOptionsLiteral(extraOptionsLiteral: ObjectLiteralExpression): Unit = js.native
     

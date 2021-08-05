@@ -32,31 +32,23 @@ trait SchemaUpdateLinePropertiesRequest extends StObject {
 }
 object SchemaUpdateLinePropertiesRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateLinePropertiesRequest = {
+  inline def apply(): SchemaUpdateLinePropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateLinePropertiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateLinePropertiesRequestMutableBuilder[Self <: SchemaUpdateLinePropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateLinePropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setLineProperties(value: SchemaLineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
+    inline def setLineProperties(value: SchemaLineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
+    inline def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

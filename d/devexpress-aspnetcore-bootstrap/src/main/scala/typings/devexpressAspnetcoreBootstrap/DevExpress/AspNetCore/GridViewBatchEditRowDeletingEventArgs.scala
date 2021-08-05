@@ -14,19 +14,15 @@ trait GridViewBatchEditRowDeletingEventArgs
 }
 object GridViewBatchEditRowDeletingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, rowValues: js.Any, sender: Control, visibleIndex: Double): GridViewBatchEditRowDeletingEventArgs = {
+  inline def apply(cancel: Boolean, rowValues: js.Any, sender: Control, visibleIndex: Double): GridViewBatchEditRowDeletingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], rowValues = rowValues.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridViewBatchEditRowDeletingEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewBatchEditRowDeletingEventArgsMutableBuilder[Self <: GridViewBatchEditRowDeletingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewBatchEditRowDeletingEventArgs](x: Self) {
     
-    @scala.inline
-    def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
+    inline def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

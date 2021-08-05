@@ -24,34 +24,25 @@ trait ParentalControlSettings extends StObject {
 }
 object ParentalControlSettings {
   
-  @scala.inline
-  def apply(): ParentalControlSettings = {
+  inline def apply(): ParentalControlSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParentalControlSettings]
   }
   
-  @scala.inline
-  implicit class ParentalControlSettingsMutableBuilder[Self <: ParentalControlSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ParentalControlSettings](x: Self) {
     
-    @scala.inline
-    def setCountriesBlockedForMinors(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "countriesBlockedForMinors", value.asInstanceOf[js.Any])
+    inline def setCountriesBlockedForMinors(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "countriesBlockedForMinors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountriesBlockedForMinorsNull: Self = StObject.set(x, "countriesBlockedForMinors", null)
+    inline def setCountriesBlockedForMinorsNull: Self = StObject.set(x, "countriesBlockedForMinors", null)
     
-    @scala.inline
-    def setCountriesBlockedForMinorsUndefined: Self = StObject.set(x, "countriesBlockedForMinors", js.undefined)
+    inline def setCountriesBlockedForMinorsUndefined: Self = StObject.set(x, "countriesBlockedForMinors", js.undefined)
     
-    @scala.inline
-    def setCountriesBlockedForMinorsVarargs(value: String*): Self = StObject.set(x, "countriesBlockedForMinors", js.Array(value :_*))
+    inline def setCountriesBlockedForMinorsVarargs(value: String*): Self = StObject.set(x, "countriesBlockedForMinors", js.Array(value :_*))
     
-    @scala.inline
-    def setLegalAgeGroupRule(value: NullableOption[String]): Self = StObject.set(x, "legalAgeGroupRule", value.asInstanceOf[js.Any])
+    inline def setLegalAgeGroupRule(value: NullableOption[String]): Self = StObject.set(x, "legalAgeGroupRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegalAgeGroupRuleNull: Self = StObject.set(x, "legalAgeGroupRule", null)
+    inline def setLegalAgeGroupRuleNull: Self = StObject.set(x, "legalAgeGroupRule", null)
     
-    @scala.inline
-    def setLegalAgeGroupRuleUndefined: Self = StObject.set(x, "legalAgeGroupRule", js.undefined)
+    inline def setLegalAgeGroupRuleUndefined: Self = StObject.set(x, "legalAgeGroupRule", js.undefined)
   }
 }

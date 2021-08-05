@@ -18,25 +18,19 @@ trait ComplianceByConfigRule extends StObject {
 }
 object ComplianceByConfigRule {
   
-  @scala.inline
-  def apply(): ComplianceByConfigRule = {
+  inline def apply(): ComplianceByConfigRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceByConfigRule]
   }
   
-  @scala.inline
-  implicit class ComplianceByConfigRuleMutableBuilder[Self <: ComplianceByConfigRule] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceByConfigRule](x: Self) {
     
-    @scala.inline
-    def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
+    inline def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
+    inline def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
     
-    @scala.inline
-    def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
+    inline def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
   }
 }

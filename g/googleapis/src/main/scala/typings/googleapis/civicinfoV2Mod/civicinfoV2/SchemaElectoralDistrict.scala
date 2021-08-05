@@ -33,37 +33,27 @@ trait SchemaElectoralDistrict extends StObject {
 }
 object SchemaElectoralDistrict {
   
-  @scala.inline
-  def apply(): SchemaElectoralDistrict = {
+  inline def apply(): SchemaElectoralDistrict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaElectoralDistrict]
   }
   
-  @scala.inline
-  implicit class SchemaElectoralDistrictMutableBuilder[Self <: SchemaElectoralDistrict] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaElectoralDistrict](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKgForeignKey(value: String): Self = StObject.set(x, "kgForeignKey", value.asInstanceOf[js.Any])
+    inline def setKgForeignKey(value: String): Self = StObject.set(x, "kgForeignKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKgForeignKeyUndefined: Self = StObject.set(x, "kgForeignKey", js.undefined)
+    inline def setKgForeignKeyUndefined: Self = StObject.set(x, "kgForeignKey", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

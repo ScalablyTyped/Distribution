@@ -24,34 +24,25 @@ trait GoogleCloudVideointelligenceV1SpeechRecognitionAlternative extends StObjec
 }
 object GoogleCloudVideointelligenceV1SpeechRecognitionAlternative {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1SpeechRecognitionAlternative = {
+  inline def apply(): GoogleCloudVideointelligenceV1SpeechRecognitionAlternative = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1SpeechRecognitionAlternative]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1SpeechRecognitionAlternativeMutableBuilder[Self <: GoogleCloudVideointelligenceV1SpeechRecognitionAlternative] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1SpeechRecognitionAlternative](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+    inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptUndefined: Self = StObject.set(x, "transcript", js.undefined)
+    inline def setTranscriptUndefined: Self = StObject.set(x, "transcript", js.undefined)
     
-    @scala.inline
-    def setWords(value: js.Array[GoogleCloudVideointelligenceV1WordInfo]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[GoogleCloudVideointelligenceV1WordInfo]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: GoogleCloudVideointelligenceV1WordInfo*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: GoogleCloudVideointelligenceV1WordInfo*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

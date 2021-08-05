@@ -10,8 +10,7 @@ trait EncryptOutput
      with typings.awsSdkClientKmsNode.typesEncryptOutputMod.EncryptOutput
 object EncryptOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): EncryptOutput = {
+  inline def apply($metadata: ResponseMetadata): EncryptOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptOutput]
   }

@@ -17,8 +17,7 @@ trait Seq
 }
 object Seq {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[BlankLine | Comment | SeqItem],
@@ -32,16 +31,12 @@ object Seq {
     __obj.asInstanceOf[Seq]
   }
   
-  @scala.inline
-  implicit class SeqMutableBuilder[Self <: Seq] (val x: Self) extends AnyVal {
+  extension [Self <: Seq](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[BlankLine | Comment | SeqItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[BlankLine | Comment | SeqItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: (BlankLine | Comment | SeqItem)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (BlankLine | Comment | SeqItem)*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: SEQ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SEQ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

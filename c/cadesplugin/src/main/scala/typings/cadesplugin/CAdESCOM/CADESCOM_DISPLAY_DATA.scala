@@ -17,22 +17,17 @@ trait CADESCOM_DISPLAY_DATA extends StObject {
 }
 object CADESCOM_DISPLAY_DATA {
   
-  @scala.inline
-  def apply(): CADESCOM_DISPLAY_DATA = {
+  inline def apply(): CADESCOM_DISPLAY_DATA = {
     val __obj = js.Dynamic.literal(CADESCOM_DISPLAY_DATA_ATTRIBUTE = 2, CADESCOM_DISPLAY_DATA_CONTENT = 1, CADESCOM_DISPLAY_DATA_NONE = 0)
     __obj.asInstanceOf[CADESCOM_DISPLAY_DATA]
   }
   
-  @scala.inline
-  implicit class CADESCOM_DISPLAY_DATAMutableBuilder[Self <: CADESCOM_DISPLAY_DATA] (val x: Self) extends AnyVal {
+  extension [Self <: CADESCOM_DISPLAY_DATA](x: Self) {
     
-    @scala.inline
-    def setCADESCOM_DISPLAY_DATA_ATTRIBUTE(value: `2`): Self = StObject.set(x, "CADESCOM_DISPLAY_DATA_ATTRIBUTE", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_DISPLAY_DATA_ATTRIBUTE(value: `2`): Self = StObject.set(x, "CADESCOM_DISPLAY_DATA_ATTRIBUTE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_DISPLAY_DATA_CONTENT(value: `1`): Self = StObject.set(x, "CADESCOM_DISPLAY_DATA_CONTENT", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_DISPLAY_DATA_CONTENT(value: `1`): Self = StObject.set(x, "CADESCOM_DISPLAY_DATA_CONTENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_DISPLAY_DATA_NONE(value: `0`): Self = StObject.set(x, "CADESCOM_DISPLAY_DATA_NONE", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_DISPLAY_DATA_NONE(value: `0`): Self = StObject.set(x, "CADESCOM_DISPLAY_DATA_NONE", value.asInstanceOf[js.Any])
   }
 }

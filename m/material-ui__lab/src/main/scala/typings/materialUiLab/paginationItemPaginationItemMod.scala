@@ -42,50 +42,35 @@ object paginationItemPaginationItemMod {
   trait PaginationItemClassKey extends StObject
   object PaginationItemClassKey {
     
-    @scala.inline
-    def disabled: typings.materialUiLab.materialUiLabStrings.disabled = "disabled".asInstanceOf[typings.materialUiLab.materialUiLabStrings.disabled]
+    inline def disabled: typings.materialUiLab.materialUiLabStrings.disabled = "disabled".asInstanceOf[typings.materialUiLab.materialUiLabStrings.disabled]
     
-    @scala.inline
-    def ellipsis: typings.materialUiLab.materialUiLabStrings.ellipsis = "ellipsis".asInstanceOf[typings.materialUiLab.materialUiLabStrings.ellipsis]
+    inline def ellipsis: typings.materialUiLab.materialUiLabStrings.ellipsis = "ellipsis".asInstanceOf[typings.materialUiLab.materialUiLabStrings.ellipsis]
     
-    @scala.inline
-    def focusVisible: typings.materialUiLab.materialUiLabStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiLab.materialUiLabStrings.focusVisible]
+    inline def focusVisible: typings.materialUiLab.materialUiLabStrings.focusVisible = "focusVisible".asInstanceOf[typings.materialUiLab.materialUiLabStrings.focusVisible]
     
-    @scala.inline
-    def icon: typings.materialUiLab.materialUiLabStrings.icon = "icon".asInstanceOf[typings.materialUiLab.materialUiLabStrings.icon]
+    inline def icon: typings.materialUiLab.materialUiLabStrings.icon = "icon".asInstanceOf[typings.materialUiLab.materialUiLabStrings.icon]
     
-    @scala.inline
-    def outlined: typings.materialUiLab.materialUiLabStrings.outlined = "outlined".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlined]
+    inline def outlined: typings.materialUiLab.materialUiLabStrings.outlined = "outlined".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlined]
     
-    @scala.inline
-    def outlinedPrimary: typings.materialUiLab.materialUiLabStrings.outlinedPrimary = "outlinedPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedPrimary]
+    inline def outlinedPrimary: typings.materialUiLab.materialUiLabStrings.outlinedPrimary = "outlinedPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedPrimary]
     
-    @scala.inline
-    def outlinedSecondary: typings.materialUiLab.materialUiLabStrings.outlinedSecondary = "outlinedSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedSecondary]
+    inline def outlinedSecondary: typings.materialUiLab.materialUiLabStrings.outlinedSecondary = "outlinedSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.outlinedSecondary]
     
-    @scala.inline
-    def page: typings.materialUiLab.materialUiLabStrings.page = "page".asInstanceOf[typings.materialUiLab.materialUiLabStrings.page]
+    inline def page: typings.materialUiLab.materialUiLabStrings.page = "page".asInstanceOf[typings.materialUiLab.materialUiLabStrings.page]
     
-    @scala.inline
-    def root: typings.materialUiLab.materialUiLabStrings.root = "root".asInstanceOf[typings.materialUiLab.materialUiLabStrings.root]
+    inline def root: typings.materialUiLab.materialUiLabStrings.root = "root".asInstanceOf[typings.materialUiLab.materialUiLabStrings.root]
     
-    @scala.inline
-    def rounded: typings.materialUiLab.materialUiLabStrings.rounded = "rounded".asInstanceOf[typings.materialUiLab.materialUiLabStrings.rounded]
+    inline def rounded: typings.materialUiLab.materialUiLabStrings.rounded = "rounded".asInstanceOf[typings.materialUiLab.materialUiLabStrings.rounded]
     
-    @scala.inline
-    def selected: typings.materialUiLab.materialUiLabStrings.selected = "selected".asInstanceOf[typings.materialUiLab.materialUiLabStrings.selected]
+    inline def selected: typings.materialUiLab.materialUiLabStrings.selected = "selected".asInstanceOf[typings.materialUiLab.materialUiLabStrings.selected]
     
-    @scala.inline
-    def sizeLarge: typings.materialUiLab.materialUiLabStrings.sizeLarge = "sizeLarge".asInstanceOf[typings.materialUiLab.materialUiLabStrings.sizeLarge]
+    inline def sizeLarge: typings.materialUiLab.materialUiLabStrings.sizeLarge = "sizeLarge".asInstanceOf[typings.materialUiLab.materialUiLabStrings.sizeLarge]
     
-    @scala.inline
-    def sizeSmall: typings.materialUiLab.materialUiLabStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiLab.materialUiLabStrings.sizeSmall]
+    inline def sizeSmall: typings.materialUiLab.materialUiLabStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiLab.materialUiLabStrings.sizeSmall]
     
-    @scala.inline
-    def textPrimary: typings.materialUiLab.materialUiLabStrings.textPrimary = "textPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.textPrimary]
+    inline def textPrimary: typings.materialUiLab.materialUiLabStrings.textPrimary = "textPrimary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.textPrimary]
     
-    @scala.inline
-    def textSecondary: typings.materialUiLab.materialUiLabStrings.textSecondary = "textSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.textSecondary]
+    inline def textSecondary: typings.materialUiLab.materialUiLabStrings.textSecondary = "textSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.textSecondary]
   }
   
   type PaginationItemProps[D /* <: ElementType[js.Any] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<PaginationItemTypeMap<P, D>, D> */ js.Any
@@ -100,23 +85,18 @@ object paginationItemPaginationItemMod {
   }
   object PaginationItemTypeMap {
     
-    @scala.inline
-    def apply[P, D /* <: ElementType[js.Any] */](classKey: PaginationItemClassKey, defaultComponent: D, props: P & Color): PaginationItemTypeMap[P, D] = {
+    inline def apply[P, D /* <: ElementType[js.Any] */](classKey: PaginationItemClassKey, defaultComponent: D, props: P & Color): PaginationItemTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationItemTypeMap[P, D]]
     }
     
-    @scala.inline
-    implicit class PaginationItemTypeMapMutableBuilder[Self <: PaginationItemTypeMap[?, ?], P, D /* <: ElementType[js.Any] */] (val x: Self & (PaginationItemTypeMap[P, D])) extends AnyVal {
+    extension [Self <: PaginationItemTypeMap[?, ?], P, D /* <: ElementType[js.Any] */](x: Self & (PaginationItemTypeMap[P, D])) {
       
-      @scala.inline
-      def setClassKey(value: PaginationItemClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
+      inline def setClassKey(value: PaginationItemClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+      inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: P & Color): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P & Color): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

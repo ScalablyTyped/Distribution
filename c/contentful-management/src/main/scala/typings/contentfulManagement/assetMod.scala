@@ -19,11 +19,9 @@ object assetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapAsset(http: AxiosInstance, data: AssetProps): Asset = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsset")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Asset]
+  inline def wrapAsset(http: AxiosInstance, data: AssetProps): Asset = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsset")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Asset]
   
-  @scala.inline
-  def wrapAssetCollection(http: AxiosInstance, data: CollectionProp[AssetProps]): Collection[Asset, AssetProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAssetCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Asset, AssetProps]]
+  inline def wrapAssetCollection(http: AxiosInstance, data: CollectionProp[AssetProps]): Collection[Asset, AssetProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAssetCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Asset, AssetProps]]
   
   @js.native
   trait Asset
@@ -256,20 +254,16 @@ object assetMod {
   }
   object AssetFileProp {
     
-    @scala.inline
-    def apply(fields: Title, sys: MetaSysProps): AssetFileProp = {
+    inline def apply(fields: Title, sys: MetaSysProps): AssetFileProp = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssetFileProp]
     }
     
-    @scala.inline
-    implicit class AssetFilePropMutableBuilder[Self <: AssetFileProp] (val x: Self) extends AnyVal {
+    extension [Self <: AssetFileProp](x: Self) {
       
-      @scala.inline
-      def setFields(value: Title): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Title): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,26 +275,20 @@ object assetMod {
   }
   object AssetProcessingForLocale {
     
-    @scala.inline
-    def apply(): AssetProcessingForLocale = {
+    inline def apply(): AssetProcessingForLocale = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AssetProcessingForLocale]
     }
     
-    @scala.inline
-    implicit class AssetProcessingForLocaleMutableBuilder[Self <: AssetProcessingForLocale] (val x: Self) extends AnyVal {
+    extension [Self <: AssetProcessingForLocale](x: Self) {
       
-      @scala.inline
-      def setProcessingCheckRetries(value: Double): Self = StObject.set(x, "processingCheckRetries", value.asInstanceOf[js.Any])
+      inline def setProcessingCheckRetries(value: Double): Self = StObject.set(x, "processingCheckRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessingCheckRetriesUndefined: Self = StObject.set(x, "processingCheckRetries", js.undefined)
+      inline def setProcessingCheckRetriesUndefined: Self = StObject.set(x, "processingCheckRetries", js.undefined)
       
-      @scala.inline
-      def setProcessingCheckWait(value: Double): Self = StObject.set(x, "processingCheckWait", value.asInstanceOf[js.Any])
+      inline def setProcessingCheckWait(value: Double): Self = StObject.set(x, "processingCheckWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessingCheckWaitUndefined: Self = StObject.set(x, "processingCheckWait", js.undefined)
+      inline def setProcessingCheckWaitUndefined: Self = StObject.set(x, "processingCheckWait", js.undefined)
     }
   }
   
@@ -314,26 +302,20 @@ object assetMod {
   }
   object AssetProps {
     
-    @scala.inline
-    def apply(fields: Description, sys: localestringMetaSysProps): AssetProps = {
+    inline def apply(fields: Description, sys: localestringMetaSysProps): AssetProps = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssetProps]
     }
     
-    @scala.inline
-    implicit class AssetPropsMutableBuilder[Self <: AssetProps] (val x: Self) extends AnyVal {
+    extension [Self <: AssetProps](x: Self) {
       
-      @scala.inline
-      def setFields(value: Description): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Description): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSys(value: localestringMetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: localestringMetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

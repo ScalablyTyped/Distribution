@@ -13,16 +13,13 @@ trait GetResolverEndpointRequest extends StObject {
 }
 object GetResolverEndpointRequest {
   
-  @scala.inline
-  def apply(ResolverEndpointId: ResourceId): GetResolverEndpointRequest = {
+  inline def apply(ResolverEndpointId: ResourceId): GetResolverEndpointRequest = {
     val __obj = js.Dynamic.literal(ResolverEndpointId = ResolverEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResolverEndpointRequest]
   }
   
-  @scala.inline
-  implicit class GetResolverEndpointRequestMutableBuilder[Self <: GetResolverEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResolverEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
+    inline def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GetExtConfigSyncRes extends StObject {
 }
 object GetExtConfigSyncRes {
   
-  @scala.inline
-  def apply(): GetExtConfigSyncRes = {
+  inline def apply(): GetExtConfigSyncRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetExtConfigSyncRes]
   }
   
-  @scala.inline
-  implicit class GetExtConfigSyncResMutableBuilder[Self <: GetExtConfigSyncRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetExtConfigSyncRes](x: Self) {
     
-    @scala.inline
-    def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtConfigUndefined: Self = StObject.set(x, "extConfig", js.undefined)
+    inline def setExtConfigUndefined: Self = StObject.set(x, "extConfig", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait TemporaryDataCreatedDTO
 }
 object TemporaryDataCreatedDTO {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expirationDate: Date,
     expirationSeconds: Double,
     id: String,
@@ -30,16 +29,12 @@ object TemporaryDataCreatedDTO {
     __obj.asInstanceOf[TemporaryDataCreatedDTO]
   }
   
-  @scala.inline
-  implicit class TemporaryDataCreatedDTOMutableBuilder[Self <: TemporaryDataCreatedDTO] (val x: Self) extends AnyVal {
+  extension [Self <: TemporaryDataCreatedDTO](x: Self) {
     
-    @scala.inline
-    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

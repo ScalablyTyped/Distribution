@@ -202,8 +202,7 @@ object ipv4Mod {
       * @param {BigInteger} bigInteger - a BigInteger to convert
       * @returns {Address4}
       */
-    @scala.inline
-    def fromBigInteger(bigInteger: BigInteger): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[Address4]
+    inline def fromBigInteger(bigInteger: BigInteger): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[Address4]
     
     /**
       * Converts a hex string to an IPv4 address object
@@ -212,8 +211,7 @@ object ipv4Mod {
       * @param {string} hex - a hex string to convert
       * @returns {Address4}
       */
-    @scala.inline
-    def fromHex(hex: String): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Address4]
+    inline def fromHex(hex: String): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Address4]
     
     /**
       * Converts an integer into a IPv4 address object
@@ -222,10 +220,8 @@ object ipv4Mod {
       * @param {integer} integer - a number to convert
       * @returns {Address4}
       */
-    @scala.inline
-    def fromInteger(integer: Double): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(integer.asInstanceOf[js.Any]).asInstanceOf[Address4]
+    inline def fromInteger(integer: Double): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(integer.asInstanceOf[js.Any]).asInstanceOf[Address4]
     
-    @scala.inline
-    def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

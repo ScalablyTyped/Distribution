@@ -23,19 +23,15 @@ trait DebugConsole extends StObject {
 }
 object DebugConsole {
   
-  @scala.inline
-  def apply(append: String => Unit, appendLine: String => Unit): DebugConsole = {
+  inline def apply(append: String => Unit, appendLine: String => Unit): DebugConsole = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), appendLine = js.Any.fromFunction1(appendLine))
     __obj.asInstanceOf[DebugConsole]
   }
   
-  @scala.inline
-  implicit class DebugConsoleMutableBuilder[Self <: DebugConsole] (val x: Self) extends AnyVal {
+  extension [Self <: DebugConsole](x: Self) {
     
-    @scala.inline
-    def setAppend(value: String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendLine(value: String => Unit): Self = StObject.set(x, "appendLine", js.Any.fromFunction1(value))
+    inline def setAppendLine(value: String => Unit): Self = StObject.set(x, "appendLine", js.Any.fromFunction1(value))
   }
 }

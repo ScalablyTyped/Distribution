@@ -30,31 +30,23 @@ trait SchemaQueryTestablePermissionsRequest extends StObject {
 }
 object SchemaQueryTestablePermissionsRequest {
   
-  @scala.inline
-  def apply(): SchemaQueryTestablePermissionsRequest = {
+  inline def apply(): SchemaQueryTestablePermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryTestablePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaQueryTestablePermissionsRequestMutableBuilder[Self <: SchemaQueryTestablePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryTestablePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+    inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+    inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

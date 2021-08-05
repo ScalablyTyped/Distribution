@@ -26,20 +26,16 @@ object typesGetBlobOutputMod {
   }
   object GetBlobOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, content: Uint8Array): GetBlobOutput = {
+    inline def apply($metadata: ResponseMetadata, content: Uint8Array): GetBlobOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBlobOutput]
     }
     
-    @scala.inline
-    implicit class GetBlobOutputMutableBuilder[Self <: GetBlobOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBlobOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
   }
 }

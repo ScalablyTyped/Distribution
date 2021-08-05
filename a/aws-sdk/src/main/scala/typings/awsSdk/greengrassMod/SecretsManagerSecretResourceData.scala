@@ -18,28 +18,21 @@ trait SecretsManagerSecretResourceData extends StObject {
 }
 object SecretsManagerSecretResourceData {
   
-  @scala.inline
-  def apply(): SecretsManagerSecretResourceData = {
+  inline def apply(): SecretsManagerSecretResourceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecretsManagerSecretResourceData]
   }
   
-  @scala.inline
-  implicit class SecretsManagerSecretResourceDataMutableBuilder[Self <: SecretsManagerSecretResourceData] (val x: Self) extends AnyVal {
+  extension [Self <: SecretsManagerSecretResourceData](x: Self) {
     
-    @scala.inline
-    def setARN(value: string): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: string): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setAdditionalStagingLabelsToDownload(value: listOfString): Self = StObject.set(x, "AdditionalStagingLabelsToDownload", value.asInstanceOf[js.Any])
+    inline def setAdditionalStagingLabelsToDownload(value: listOfString): Self = StObject.set(x, "AdditionalStagingLabelsToDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalStagingLabelsToDownloadUndefined: Self = StObject.set(x, "AdditionalStagingLabelsToDownload", js.undefined)
+    inline def setAdditionalStagingLabelsToDownloadUndefined: Self = StObject.set(x, "AdditionalStagingLabelsToDownload", js.undefined)
     
-    @scala.inline
-    def setAdditionalStagingLabelsToDownloadVarargs(value: string*): Self = StObject.set(x, "AdditionalStagingLabelsToDownload", js.Array(value :_*))
+    inline def setAdditionalStagingLabelsToDownloadVarargs(value: string*): Self = StObject.set(x, "AdditionalStagingLabelsToDownload", js.Array(value :_*))
   }
 }

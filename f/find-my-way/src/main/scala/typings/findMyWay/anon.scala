@@ -21,8 +21,7 @@ object anon {
   }
   object Del {
     
-    @scala.inline
-    def apply[V /* <: HTTPVersion */](
+    inline def apply[V /* <: HTTPVersion */](
       del: String => Unit,
       empty: () => Unit,
       get: String => Handler[V] | Null,
@@ -32,20 +31,15 @@ object anon {
       __obj.asInstanceOf[Del[V]]
     }
     
-    @scala.inline
-    implicit class DelMutableBuilder[Self <: Del[?], V /* <: HTTPVersion */] (val x: Self & Del[V]) extends AnyVal {
+    extension [Self <: Del[?], V /* <: HTTPVersion */](x: Self & Del[V]) {
       
-      @scala.inline
-      def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+      inline def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+      inline def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => Handler[V] | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Handler[V] | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, Handler[V]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, Handler[V]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   

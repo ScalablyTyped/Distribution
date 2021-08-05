@@ -48,31 +48,23 @@ trait PlusWebviewWebviewAnimationOptions extends StObject {
 }
 object PlusWebviewWebviewAnimationOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewAnimationOptions = {
+  inline def apply(): PlusWebviewWebviewAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewAnimationOptionsMutableBuilder[Self <: PlusWebviewWebviewAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setAction(value: none | hide | close): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: none | hide | close): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setStyles(value: PlusWebviewWebviewAnimationStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlusWebviewWebviewAnimationStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setView(value: PlusWebviewWebviewObject): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: PlusWebviewWebviewObject): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

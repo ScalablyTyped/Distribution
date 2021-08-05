@@ -12,25 +12,19 @@ trait AABBOptions extends StObject {
 }
 object AABBOptions {
   
-  @scala.inline
-  def apply(): AABBOptions = {
+  inline def apply(): AABBOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AABBOptions]
   }
   
-  @scala.inline
-  implicit class AABBOptionsMutableBuilder[Self <: AABBOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AABBOptions](x: Self) {
     
-    @scala.inline
-    def setLowerBound(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
+    inline def setLowerBound(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
+    inline def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
     
-    @scala.inline
-    def setUpperBound(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
+    inline def setUpperBound(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
+    inline def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
   }
 }

@@ -214,8 +214,7 @@ object templateMod {
   }
   object Template {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Active: Boolean,
       AssociatedServerId: Double,
       Name: String,
@@ -227,50 +226,35 @@ object templateMod {
       __obj.asInstanceOf[Template]
     }
     
-    @scala.inline
-    implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+    extension [Self <: Template](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasNull: Self = StObject.set(x, "Alias", null)
+      inline def setAliasNull: Self = StObject.set(x, "Alias", null)
       
-      @scala.inline
-      def setAssociatedServerId(value: Double): Self = StObject.set(x, "AssociatedServerId", value.asInstanceOf[js.Any])
+      inline def setAssociatedServerId(value: Double): Self = StObject.set(x, "AssociatedServerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlBody(value: String): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
+      inline def setHtmlBody(value: String): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlBodyNull: Self = StObject.set(x, "HtmlBody", null)
+      inline def setHtmlBodyNull: Self = StObject.set(x, "HtmlBody", null)
       
-      @scala.inline
-      def setLayoutTemplate(value: String): Self = StObject.set(x, "LayoutTemplate", value.asInstanceOf[js.Any])
+      inline def setLayoutTemplate(value: String): Self = StObject.set(x, "LayoutTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutTemplateNull: Self = StObject.set(x, "LayoutTemplate", null)
+      inline def setLayoutTemplateNull: Self = StObject.set(x, "LayoutTemplate", null)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateId(value: Double): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+      inline def setTemplateId(value: Double): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateType(value: TemplateTypes): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
+      inline def setTemplateType(value: TemplateTypes): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextBody(value: String): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
+      inline def setTextBody(value: String): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextBodyNull: Self = StObject.set(x, "TextBody", null)
+      inline def setTextBodyNull: Self = StObject.set(x, "TextBody", null)
     }
   }
   
@@ -290,38 +274,28 @@ object templateMod {
   }
   object TemplateInList {
     
-    @scala.inline
-    def apply(Active: Boolean, Name: String, TemplateId: Double, TemplateType: TemplateTypes): TemplateInList = {
+    inline def apply(Active: Boolean, Name: String, TemplateId: Double, TemplateType: TemplateTypes): TemplateInList = {
       val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any], Alias = null, LayoutTemplate = null)
       __obj.asInstanceOf[TemplateInList]
     }
     
-    @scala.inline
-    implicit class TemplateInListMutableBuilder[Self <: TemplateInList] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateInList](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasNull: Self = StObject.set(x, "Alias", null)
+      inline def setAliasNull: Self = StObject.set(x, "Alias", null)
       
-      @scala.inline
-      def setLayoutTemplate(value: String): Self = StObject.set(x, "LayoutTemplate", value.asInstanceOf[js.Any])
+      inline def setLayoutTemplate(value: String): Self = StObject.set(x, "LayoutTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutTemplateNull: Self = StObject.set(x, "LayoutTemplate", null)
+      inline def setLayoutTemplateNull: Self = StObject.set(x, "LayoutTemplate", null)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateId(value: Double): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+      inline def setTemplateId(value: Double): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateType(value: TemplateTypes): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
+      inline def setTemplateType(value: TemplateTypes): Self = StObject.set(x, "TemplateType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,29 +311,22 @@ object templateMod {
   }
   object TemplatePushAction {
     
-    @scala.inline
-    def apply(Action: String, Alias: String, Name: String): TemplatePushAction = {
+    inline def apply(Action: String, Alias: String, Name: String): TemplatePushAction = {
       val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Alias = Alias.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplatePushAction]
     }
     
-    @scala.inline
-    implicit class TemplatePushActionMutableBuilder[Self <: TemplatePushAction] (val x: Self) extends AnyVal {
+    extension [Self <: TemplatePushAction](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateId(value: Double): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+      inline def setTemplateId(value: Double): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
+      inline def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
     }
   }
   
@@ -377,8 +344,7 @@ object templateMod {
   }
   object TemplateValidation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AllContentIsValid: Boolean,
       HtmlBody: ValidationSection,
       Subject: ValidationSection,
@@ -389,23 +355,17 @@ object templateMod {
       __obj.asInstanceOf[TemplateValidation]
     }
     
-    @scala.inline
-    implicit class TemplateValidationMutableBuilder[Self <: TemplateValidation] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateValidation](x: Self) {
       
-      @scala.inline
-      def setAllContentIsValid(value: Boolean): Self = StObject.set(x, "AllContentIsValid", value.asInstanceOf[js.Any])
+      inline def setAllContentIsValid(value: Boolean): Self = StObject.set(x, "AllContentIsValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlBody(value: ValidationSection): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
+      inline def setHtmlBody(value: ValidationSection): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: ValidationSection): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: ValidationSection): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedTemplateModel(value: js.Object): Self = StObject.set(x, "SuggestedTemplateModel", value.asInstanceOf[js.Any])
+      inline def setSuggestedTemplateModel(value: js.Object): Self = StObject.set(x, "SuggestedTemplateModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextBody(value: ValidationSection): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
+      inline def setTextBody(value: ValidationSection): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
     }
   }
   
@@ -417,23 +377,18 @@ object templateMod {
   }
   object Templates {
     
-    @scala.inline
-    def apply(Templates: js.Array[TemplateInList], TotalCount: Double): Templates = {
+    inline def apply(Templates: js.Array[TemplateInList], TotalCount: Double): Templates = {
       val __obj = js.Dynamic.literal(Templates = Templates.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[Templates]
     }
     
-    @scala.inline
-    implicit class TemplatesMutableBuilder[Self <: Templates] (val x: Self) extends AnyVal {
+    extension [Self <: Templates](x: Self) {
       
-      @scala.inline
-      def setTemplates(value: js.Array[TemplateInList]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
+      inline def setTemplates(value: js.Array[TemplateInList]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplatesVarargs(value: TemplateInList*): Self = StObject.set(x, "Templates", js.Array(value :_*))
+      inline def setTemplatesVarargs(value: TemplateInList*): Self = StObject.set(x, "Templates", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -445,23 +400,18 @@ object templateMod {
   }
   object TemplatesPush {
     
-    @scala.inline
-    def apply(Templates: js.Array[TemplatePushAction], TotalCount: Double): TemplatesPush = {
+    inline def apply(Templates: js.Array[TemplatePushAction], TotalCount: Double): TemplatesPush = {
       val __obj = js.Dynamic.literal(Templates = Templates.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplatesPush]
     }
     
-    @scala.inline
-    implicit class TemplatesPushMutableBuilder[Self <: TemplatesPush] (val x: Self) extends AnyVal {
+    extension [Self <: TemplatesPush](x: Self) {
       
-      @scala.inline
-      def setTemplates(value: js.Array[TemplatePushAction]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
+      inline def setTemplates(value: js.Array[TemplatePushAction]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplatesVarargs(value: TemplatePushAction*): Self = StObject.set(x, "Templates", js.Array(value :_*))
+      inline def setTemplatesVarargs(value: TemplatePushAction*): Self = StObject.set(x, "Templates", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -475,23 +425,18 @@ object templateMod {
   }
   object ValidationSection {
     
-    @scala.inline
-    def apply(ContentIsValid: Boolean, RenderedContent: String, ValidationErrors: js.Object): ValidationSection = {
+    inline def apply(ContentIsValid: Boolean, RenderedContent: String, ValidationErrors: js.Object): ValidationSection = {
       val __obj = js.Dynamic.literal(ContentIsValid = ContentIsValid.asInstanceOf[js.Any], RenderedContent = RenderedContent.asInstanceOf[js.Any], ValidationErrors = ValidationErrors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationSection]
     }
     
-    @scala.inline
-    implicit class ValidationSectionMutableBuilder[Self <: ValidationSection] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationSection](x: Self) {
       
-      @scala.inline
-      def setContentIsValid(value: Boolean): Self = StObject.set(x, "ContentIsValid", value.asInstanceOf[js.Any])
+      inline def setContentIsValid(value: Boolean): Self = StObject.set(x, "ContentIsValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedContent(value: String): Self = StObject.set(x, "RenderedContent", value.asInstanceOf[js.Any])
+      inline def setRenderedContent(value: String): Self = StObject.set(x, "RenderedContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationErrors(value: js.Object): Self = StObject.set(x, "ValidationErrors", value.asInstanceOf[js.Any])
+      inline def setValidationErrors(value: js.Object): Self = StObject.set(x, "ValidationErrors", value.asInstanceOf[js.Any])
     }
   }
 }

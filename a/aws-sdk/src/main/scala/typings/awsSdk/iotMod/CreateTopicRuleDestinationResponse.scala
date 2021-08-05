@@ -13,19 +13,15 @@ trait CreateTopicRuleDestinationResponse extends StObject {
 }
 object CreateTopicRuleDestinationResponse {
   
-  @scala.inline
-  def apply(): CreateTopicRuleDestinationResponse = {
+  inline def apply(): CreateTopicRuleDestinationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTopicRuleDestinationResponse]
   }
   
-  @scala.inline
-  implicit class CreateTopicRuleDestinationResponseMutableBuilder[Self <: CreateTopicRuleDestinationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTopicRuleDestinationResponse](x: Self) {
     
-    @scala.inline
-    def setTopicRuleDestination(value: TopicRuleDestination): Self = StObject.set(x, "topicRuleDestination", value.asInstanceOf[js.Any])
+    inline def setTopicRuleDestination(value: TopicRuleDestination): Self = StObject.set(x, "topicRuleDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicRuleDestinationUndefined: Self = StObject.set(x, "topicRuleDestination", js.undefined)
+    inline def setTopicRuleDestinationUndefined: Self = StObject.set(x, "topicRuleDestination", js.undefined)
   }
 }

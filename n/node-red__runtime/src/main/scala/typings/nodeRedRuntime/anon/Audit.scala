@@ -37,22 +37,17 @@ trait Audit extends StObject {
 }
 object Audit {
   
-  @scala.inline
-  def apply(audit: Boolean, level: fatal | error | warn | info | debug | trace | off, metrics: Boolean): Audit = {
+  inline def apply(audit: Boolean, level: fatal | error | warn | info | debug | trace | off, metrics: Boolean): Audit = {
     val __obj = js.Dynamic.literal(audit = audit.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audit]
   }
   
-  @scala.inline
-  implicit class AuditMutableBuilder[Self <: Audit] (val x: Self) extends AnyVal {
+  extension [Self <: Audit](x: Self) {
     
-    @scala.inline
-    def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
+    inline def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: fatal | error | warn | info | debug | trace | off): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: fatal | error | warn | info | debug | trace | off): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: Boolean): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Boolean): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesCanOptOut extends StObject {
 }
 object EnumValuesCanOptOut {
   
-  @scala.inline
-  def apply(enumValues: CanOptOut): EnumValuesCanOptOut = {
+  inline def apply(enumValues: CanOptOut): EnumValuesCanOptOut = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCanOptOut]
   }
   
-  @scala.inline
-  implicit class EnumValuesCanOptOutMutableBuilder[Self <: EnumValuesCanOptOut] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCanOptOut](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: CanOptOut): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: CanOptOut): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

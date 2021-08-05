@@ -42,29 +42,21 @@ object resizerMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def bottom: typings.reResizable.reResizableStrings.bottom = "bottom".asInstanceOf[typings.reResizable.reResizableStrings.bottom]
+    inline def bottom: typings.reResizable.reResizableStrings.bottom = "bottom".asInstanceOf[typings.reResizable.reResizableStrings.bottom]
     
-    @scala.inline
-    def bottomLeft: typings.reResizable.reResizableStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.reResizable.reResizableStrings.bottomLeft]
+    inline def bottomLeft: typings.reResizable.reResizableStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.reResizable.reResizableStrings.bottomLeft]
     
-    @scala.inline
-    def bottomRight: typings.reResizable.reResizableStrings.bottomRight = "bottomRight".asInstanceOf[typings.reResizable.reResizableStrings.bottomRight]
+    inline def bottomRight: typings.reResizable.reResizableStrings.bottomRight = "bottomRight".asInstanceOf[typings.reResizable.reResizableStrings.bottomRight]
     
-    @scala.inline
-    def left: typings.reResizable.reResizableStrings.left = "left".asInstanceOf[typings.reResizable.reResizableStrings.left]
+    inline def left: typings.reResizable.reResizableStrings.left = "left".asInstanceOf[typings.reResizable.reResizableStrings.left]
     
-    @scala.inline
-    def right: typings.reResizable.reResizableStrings.right = "right".asInstanceOf[typings.reResizable.reResizableStrings.right]
+    inline def right: typings.reResizable.reResizableStrings.right = "right".asInstanceOf[typings.reResizable.reResizableStrings.right]
     
-    @scala.inline
-    def top: typings.reResizable.reResizableStrings.top = "top".asInstanceOf[typings.reResizable.reResizableStrings.top]
+    inline def top: typings.reResizable.reResizableStrings.top = "top".asInstanceOf[typings.reResizable.reResizableStrings.top]
     
-    @scala.inline
-    def topLeft: typings.reResizable.reResizableStrings.topLeft = "topLeft".asInstanceOf[typings.reResizable.reResizableStrings.topLeft]
+    inline def topLeft: typings.reResizable.reResizableStrings.topLeft = "topLeft".asInstanceOf[typings.reResizable.reResizableStrings.topLeft]
     
-    @scala.inline
-    def topRight: typings.reResizable.reResizableStrings.topRight = "topRight".asInstanceOf[typings.reResizable.reResizableStrings.topRight]
+    inline def topRight: typings.reResizable.reResizableStrings.topRight = "topRight".asInstanceOf[typings.reResizable.reResizableStrings.topRight]
   }
   
   type OnStartCallback = js.Function2[
@@ -87,8 +79,7 @@ object resizerMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       direction: Direction,
       onResizeStart: (/* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | TouchEvent[HTMLDivElement], /* dir */ Direction) => Unit
     ): Props = {
@@ -96,34 +87,25 @@ object resizerMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResizeStart(
+      inline def setOnResizeStart(
         value: (/* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | TouchEvent[HTMLDivElement], /* dir */ Direction) => Unit
       ): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplaceStyles(value: CSSProperties): Self = StObject.set(x, "replaceStyles", value.asInstanceOf[js.Any])
+      inline def setReplaceStyles(value: CSSProperties): Self = StObject.set(x, "replaceStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceStylesUndefined: Self = StObject.set(x, "replaceStyles", js.undefined)
+      inline def setReplaceStylesUndefined: Self = StObject.set(x, "replaceStyles", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait HtmlElms
 }
 object HtmlElms {
   
-  @scala.inline
-  def apply(allowedRoles: Boolean | js.Array[String]): HtmlElms = {
+  inline def apply(allowedRoles: Boolean | js.Array[String]): HtmlElms = {
     val __obj = js.Dynamic.literal(allowedRoles = allowedRoles.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlElms]
   }
   
-  @scala.inline
-  implicit class HtmlElmsMutableBuilder[Self <: HtmlElms] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlElms](x: Self) {
     
-    @scala.inline
-    def setVariant(value: StringDictionary[HtmlElmsVariant]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: StringDictionary[HtmlElmsVariant]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

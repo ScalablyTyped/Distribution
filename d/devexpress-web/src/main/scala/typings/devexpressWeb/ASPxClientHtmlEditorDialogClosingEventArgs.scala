@@ -18,16 +18,13 @@ trait ASPxClientHtmlEditorDialogClosingEventArgs
 }
 object ASPxClientHtmlEditorDialogClosingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, dialog: ASPxClientHtmlEditorDialogBase, dialogName: String, parameter: js.Any): ASPxClientHtmlEditorDialogClosingEventArgs = {
+  inline def apply(cancel: Boolean, dialog: ASPxClientHtmlEditorDialogBase, dialogName: String, parameter: js.Any): ASPxClientHtmlEditorDialogClosingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], dialogName = dialogName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogClosingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorDialogClosingEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorDialogClosingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorDialogClosingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

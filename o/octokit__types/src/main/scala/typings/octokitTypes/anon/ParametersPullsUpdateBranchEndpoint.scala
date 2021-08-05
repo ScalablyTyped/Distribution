@@ -18,8 +18,7 @@ trait ParametersPullsUpdateBranchEndpoint extends StObject {
 }
 object ParametersPullsUpdateBranchEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: PullsUpdateBranchEndpoint,
     request: PullsUpdateBranchRequestOptions,
     response: OctokitResponse[PullsUpdateBranchResponseData]
@@ -28,16 +27,12 @@ object ParametersPullsUpdateBranchEndpoint {
     __obj.asInstanceOf[ParametersPullsUpdateBranchEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersPullsUpdateBranchEndpointMutableBuilder[Self <: ParametersPullsUpdateBranchEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersPullsUpdateBranchEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PullsUpdateBranchEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PullsUpdateBranchEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: PullsUpdateBranchRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: PullsUpdateBranchRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[PullsUpdateBranchResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[PullsUpdateBranchResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait DeleteResourceConfigRequest extends StObject {
 }
 object DeleteResourceConfigRequest {
   
-  @scala.inline
-  def apply(ResourceId: ResourceId, ResourceType: ResourceTypeString): DeleteResourceConfigRequest = {
+  inline def apply(ResourceId: ResourceId, ResourceType: ResourceTypeString): DeleteResourceConfigRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResourceConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResourceConfigRequestMutableBuilder[Self <: DeleteResourceConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourceConfigRequest](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceTypeString): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceTypeString): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

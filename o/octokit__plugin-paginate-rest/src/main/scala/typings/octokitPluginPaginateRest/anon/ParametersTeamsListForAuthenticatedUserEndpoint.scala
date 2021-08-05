@@ -15,8 +15,7 @@ trait ParametersTeamsListForAuthenticatedUserEndpoint extends StObject {
 }
 object ParametersTeamsListForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: TeamsListForAuthenticatedUserEndpoint,
     response: OctokitResponse[TeamsListForAuthenticatedUserResponseData]
   ): ParametersTeamsListForAuthenticatedUserEndpoint = {
@@ -24,13 +23,10 @@ object ParametersTeamsListForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersTeamsListForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersTeamsListForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersTeamsListForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersTeamsListForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: TeamsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TeamsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[TeamsListForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[TeamsListForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

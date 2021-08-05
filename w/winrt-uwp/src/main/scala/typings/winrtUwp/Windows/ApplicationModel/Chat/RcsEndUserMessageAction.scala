@@ -12,16 +12,13 @@ trait RcsEndUserMessageAction extends StObject {
 }
 object RcsEndUserMessageAction {
   
-  @scala.inline
-  def apply(label: String): RcsEndUserMessageAction = {
+  inline def apply(label: String): RcsEndUserMessageAction = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[RcsEndUserMessageAction]
   }
   
-  @scala.inline
-  implicit class RcsEndUserMessageActionMutableBuilder[Self <: RcsEndUserMessageAction] (val x: Self) extends AnyVal {
+  extension [Self <: RcsEndUserMessageAction](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

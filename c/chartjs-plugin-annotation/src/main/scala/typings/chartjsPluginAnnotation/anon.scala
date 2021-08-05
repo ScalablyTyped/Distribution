@@ -20,8 +20,7 @@ object anon {
   }
   object Box {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       box: Instantiable1[/* options */ AnnotationElementOptions[BoxAnnotationOptions], BoxAnnotation],
       line: Instantiable1[/* options */ AnnotationElementOptions[LineAnnotationOptions], LineAnnotation]
     ): Box = {
@@ -29,14 +28,11 @@ object anon {
       __obj.asInstanceOf[Box]
     }
     
-    @scala.inline
-    implicit class BoxMutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
+    extension [Self <: Box](x: Self) {
       
-      @scala.inline
-      def setBox(value: Instantiable1[/* options */ AnnotationElementOptions[BoxAnnotationOptions], BoxAnnotation]): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+      inline def setBox(value: Instantiable1[/* options */ AnnotationElementOptions[BoxAnnotationOptions], BoxAnnotation]): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(
+      inline def setLine(
         value: Instantiable1[/* options */ AnnotationElementOptions[LineAnnotationOptions], LineAnnotation]
       ): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }

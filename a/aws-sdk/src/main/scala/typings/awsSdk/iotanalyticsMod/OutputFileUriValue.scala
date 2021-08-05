@@ -13,16 +13,13 @@ trait OutputFileUriValue extends StObject {
 }
 object OutputFileUriValue {
   
-  @scala.inline
-  def apply(fileName: OutputFileName): OutputFileUriValue = {
+  inline def apply(fileName: OutputFileName): OutputFileUriValue = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputFileUriValue]
   }
   
-  @scala.inline
-  implicit class OutputFileUriValueMutableBuilder[Self <: OutputFileUriValue] (val x: Self) extends AnyVal {
+  extension [Self <: OutputFileUriValue](x: Self) {
     
-    @scala.inline
-    def setFileName(value: OutputFileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: OutputFileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
   }
 }

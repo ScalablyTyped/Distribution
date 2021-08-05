@@ -38,46 +38,33 @@ trait OutputUpdate extends StObject {
 }
 object OutputUpdate {
   
-  @scala.inline
-  def apply(OutputId: Id): OutputUpdate = {
+  inline def apply(OutputId: Id): OutputUpdate = {
     val __obj = js.Dynamic.literal(OutputId = OutputId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputUpdate]
   }
   
-  @scala.inline
-  implicit class OutputUpdateMutableBuilder[Self <: OutputUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: OutputUpdate](x: Self) {
     
-    @scala.inline
-    def setDestinationSchemaUpdate(value: DestinationSchema): Self = StObject.set(x, "DestinationSchemaUpdate", value.asInstanceOf[js.Any])
+    inline def setDestinationSchemaUpdate(value: DestinationSchema): Self = StObject.set(x, "DestinationSchemaUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSchemaUpdateUndefined: Self = StObject.set(x, "DestinationSchemaUpdate", js.undefined)
+    inline def setDestinationSchemaUpdateUndefined: Self = StObject.set(x, "DestinationSchemaUpdate", js.undefined)
     
-    @scala.inline
-    def setKinesisFirehoseOutputUpdate(value: KinesisFirehoseOutputUpdate): Self = StObject.set(x, "KinesisFirehoseOutputUpdate", value.asInstanceOf[js.Any])
+    inline def setKinesisFirehoseOutputUpdate(value: KinesisFirehoseOutputUpdate): Self = StObject.set(x, "KinesisFirehoseOutputUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisFirehoseOutputUpdateUndefined: Self = StObject.set(x, "KinesisFirehoseOutputUpdate", js.undefined)
+    inline def setKinesisFirehoseOutputUpdateUndefined: Self = StObject.set(x, "KinesisFirehoseOutputUpdate", js.undefined)
     
-    @scala.inline
-    def setKinesisStreamsOutputUpdate(value: KinesisStreamsOutputUpdate): Self = StObject.set(x, "KinesisStreamsOutputUpdate", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamsOutputUpdate(value: KinesisStreamsOutputUpdate): Self = StObject.set(x, "KinesisStreamsOutputUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamsOutputUpdateUndefined: Self = StObject.set(x, "KinesisStreamsOutputUpdate", js.undefined)
+    inline def setKinesisStreamsOutputUpdateUndefined: Self = StObject.set(x, "KinesisStreamsOutputUpdate", js.undefined)
     
-    @scala.inline
-    def setLambdaOutputUpdate(value: LambdaOutputUpdate): Self = StObject.set(x, "LambdaOutputUpdate", value.asInstanceOf[js.Any])
+    inline def setLambdaOutputUpdate(value: LambdaOutputUpdate): Self = StObject.set(x, "LambdaOutputUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaOutputUpdateUndefined: Self = StObject.set(x, "LambdaOutputUpdate", js.undefined)
+    inline def setLambdaOutputUpdateUndefined: Self = StObject.set(x, "LambdaOutputUpdate", js.undefined)
     
-    @scala.inline
-    def setNameUpdate(value: InAppStreamName): Self = StObject.set(x, "NameUpdate", value.asInstanceOf[js.Any])
+    inline def setNameUpdate(value: InAppStreamName): Self = StObject.set(x, "NameUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUpdateUndefined: Self = StObject.set(x, "NameUpdate", js.undefined)
+    inline def setNameUpdateUndefined: Self = StObject.set(x, "NameUpdate", js.undefined)
     
-    @scala.inline
-    def setOutputId(value: Id): Self = StObject.set(x, "OutputId", value.asInstanceOf[js.Any])
+    inline def setOutputId(value: Id): Self = StObject.set(x, "OutputId", value.asInstanceOf[js.Any])
   }
 }

@@ -39,8 +39,7 @@ object PrimitiveTypedTemplateArgument {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument]
+  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument]
   
   /**
     * Creates and returns a new PrimitiveTypedTemplateArgument instance in the SDK and on the server.
@@ -51,20 +50,17 @@ object PrimitiveTypedTemplateArgument {
     *  8.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.TypedTemplate): typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument]
+  inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.TypedTemplate): typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.PrimitiveTypedTemplateArgument.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.PrimitiveTypedTemplateArgument.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlImportDataAs extends StObject
 object XlImportDataAs {
   
-  @scala.inline
-  def xlPivotTableReport: `1` = 1.asInstanceOf[`1`]
+  inline def xlPivotTableReport: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlQueryTable: `0` = 0.asInstanceOf[`0`]
+  inline def xlQueryTable: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlTable: `2` = 2.asInstanceOf[`2`]
+  inline def xlTable: `2` = 2.asInstanceOf[`2`]
 }

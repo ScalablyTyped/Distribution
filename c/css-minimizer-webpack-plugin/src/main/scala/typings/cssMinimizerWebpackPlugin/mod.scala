@@ -33,8 +33,7 @@ object mod {
        with /* key */ StringDictionary[String]
   object CacheKeys {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `css-minimizer-webpack-plugin`: String,
       `css-minimizer-webpack-plugin-options`: String,
       cssMinimizer: String,
@@ -61,19 +60,16 @@ object mod {
   }
   object CssMinimizerPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
     ): CssMinimizerPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[CssMinimizerPlugin]
     }
     
-    @scala.inline
-    implicit class CssMinimizerPluginMutableBuilder[Self <: CssMinimizerPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: CssMinimizerPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -96,8 +92,7 @@ object mod {
   }
   object DefaultCacheKeys {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `css-minimizer-webpack-plugin`: String,
       `css-minimizer-webpack-plugin-options`: String,
       cssMinimizer: String,
@@ -110,23 +105,17 @@ object mod {
       __obj.asInstanceOf[DefaultCacheKeys]
     }
     
-    @scala.inline
-    implicit class DefaultCacheKeysMutableBuilder[Self <: DefaultCacheKeys] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultCacheKeys](x: Self) {
       
-      @scala.inline
-      def `setCss-minimizer-webpack-plugin`(value: String): Self = StObject.set(x, "css-minimizer-webpack-plugin", value.asInstanceOf[js.Any])
+      inline def `setCss-minimizer-webpack-plugin`(value: String): Self = StObject.set(x, "css-minimizer-webpack-plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCss-minimizer-webpack-plugin-options`(value: String): Self = StObject.set(x, "css-minimizer-webpack-plugin-options", value.asInstanceOf[js.Any])
+      inline def `setCss-minimizer-webpack-plugin-options`(value: String): Self = StObject.set(x, "css-minimizer-webpack-plugin-options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssMinimizer(value: String): Self = StObject.set(x, "cssMinimizer", value.asInstanceOf[js.Any])
+      inline def setCssMinimizer(value: String): Self = StObject.set(x, "cssMinimizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,85 +185,60 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean | String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean | String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKeys(value: (/* defaultCacheKeys */ CacheKeys, /* file */ String) => CacheKeys): Self = StObject.set(x, "cacheKeys", js.Any.fromFunction2(value))
+      inline def setCacheKeys(value: (/* defaultCacheKeys */ CacheKeys, /* file */ String) => CacheKeys): Self = StObject.set(x, "cacheKeys", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCacheKeysUndefined: Self = StObject.set(x, "cacheKeys", js.undefined)
+      inline def setCacheKeysUndefined: Self = StObject.set(x, "cacheKeys", js.undefined)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setMinify(value: (/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any) => js.Any): Self = StObject.set(x, "minify", js.Any.fromFunction3(value))
+      inline def setMinify(value: (/* data */ js.Any, /* inputMap */ js.Any, /* minimizerOptions */ js.Any) => js.Any): Self = StObject.set(x, "minify", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setMinimizerOptions(value: CssNanoOptions): Self = StObject.set(x, "minimizerOptions", value.asInstanceOf[js.Any])
+      inline def setMinimizerOptions(value: CssNanoOptions): Self = StObject.set(x, "minimizerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimizerOptionsUndefined: Self = StObject.set(x, "minimizerOptions", js.undefined)
+      inline def setMinimizerOptionsUndefined: Self = StObject.set(x, "minimizerOptions", js.undefined)
       
-      @scala.inline
-      def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean | SourceMapOptions): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean | SourceMapOptions): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setTest(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setTestVarargs(value: (String | RegExp)*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: (String | RegExp)*): Self = StObject.set(x, "test", js.Array(value :_*))
       
-      @scala.inline
-      def setWarningsFilter(
+      inline def setWarningsFilter(
         value: (/* warning */ String, /* file */ String, /* source */ String) => js.UndefOr[Boolean | Null]
       ): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
+      inline def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
     }
   }
 }

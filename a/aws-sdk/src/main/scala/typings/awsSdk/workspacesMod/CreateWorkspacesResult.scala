@@ -18,31 +18,23 @@ trait CreateWorkspacesResult extends StObject {
 }
 object CreateWorkspacesResult {
   
-  @scala.inline
-  def apply(): CreateWorkspacesResult = {
+  inline def apply(): CreateWorkspacesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateWorkspacesResult]
   }
   
-  @scala.inline
-  implicit class CreateWorkspacesResultMutableBuilder[Self <: CreateWorkspacesResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkspacesResult](x: Self) {
     
-    @scala.inline
-    def setFailedRequests(value: FailedCreateWorkspaceRequests): Self = StObject.set(x, "FailedRequests", value.asInstanceOf[js.Any])
+    inline def setFailedRequests(value: FailedCreateWorkspaceRequests): Self = StObject.set(x, "FailedRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedRequestsUndefined: Self = StObject.set(x, "FailedRequests", js.undefined)
+    inline def setFailedRequestsUndefined: Self = StObject.set(x, "FailedRequests", js.undefined)
     
-    @scala.inline
-    def setFailedRequestsVarargs(value: FailedCreateWorkspaceRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value :_*))
+    inline def setFailedRequestsVarargs(value: FailedCreateWorkspaceRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value :_*))
     
-    @scala.inline
-    def setPendingRequests(value: WorkspaceList): Self = StObject.set(x, "PendingRequests", value.asInstanceOf[js.Any])
+    inline def setPendingRequests(value: WorkspaceList): Self = StObject.set(x, "PendingRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingRequestsUndefined: Self = StObject.set(x, "PendingRequests", js.undefined)
+    inline def setPendingRequestsUndefined: Self = StObject.set(x, "PendingRequests", js.undefined)
     
-    @scala.inline
-    def setPendingRequestsVarargs(value: Workspace*): Self = StObject.set(x, "PendingRequests", js.Array(value :_*))
+    inline def setPendingRequestsVarargs(value: Workspace*): Self = StObject.set(x, "PendingRequests", js.Array(value :_*))
   }
 }

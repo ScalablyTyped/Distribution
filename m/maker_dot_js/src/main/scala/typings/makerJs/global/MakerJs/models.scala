@@ -62,25 +62,20 @@ object models {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def computeLength(seed: IPathBezierSeed): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLength")(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def computeLength(seed: IPathBezierSeed): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLength")(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def computePoint(seed: IPathBezierSeed, t: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("computePoint")(seed.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IPoint]
+    inline def computePoint(seed: IPathBezierSeed, t: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("computePoint")(seed.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IPoint]
     
     /* static member */
-    @scala.inline
-    def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve): js.Array[IPathBezierSeed] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBezierSeeds")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Array[IPathBezierSeed]]
-    @scala.inline
-    def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve, options: IFindChainsOptions): js.Array[IPathBezierSeed] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBezierSeeds")(curve.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPathBezierSeed]]
+    inline def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve): js.Array[IPathBezierSeed] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBezierSeeds")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Array[IPathBezierSeed]]
+    inline def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve, options: IFindChainsOptions): js.Array[IPathBezierSeed] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBezierSeeds")(curve.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPathBezierSeed]]
     
     /* static member */
     @JSGlobal("MakerJs.models.BezierCurve.typeName")
     @js.native
     def typeName: String = js.native
-    @scala.inline
-    def typeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeName")(x.asInstanceOf[js.Any])
+    inline def typeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeName")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("MakerJs.models.BoltCircle")
@@ -395,18 +390,13 @@ object models {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def circumscribedRadius(radius: Double, angleInRadians: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("circumscribedRadius")(radius.asInstanceOf[js.Any], angleInRadians.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def circumscribedRadius(radius: Double, angleInRadians: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("circumscribedRadius")(radius.asInstanceOf[js.Any], angleInRadians.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def getPoints(numberOfSides: Double, radius: Double): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
-    @scala.inline
-    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
-    @scala.inline
-    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double, circumscribed: Boolean): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any], circumscribed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
-    @scala.inline
-    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Unit, circumscribed: Boolean): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any], circumscribed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
+    inline def getPoints(numberOfSides: Double, radius: Double): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
+    inline def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
+    inline def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double, circumscribed: Boolean): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any], circumscribed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
+    inline def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Unit, circumscribed: Boolean): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any], circumscribed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
   }
   
   @JSGlobal("MakerJs.models.Rectangle")
@@ -594,8 +584,7 @@ object models {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def InnerRadiusRatio(numberOfPoints: Double, skipPoints: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InnerRadiusRatio")(numberOfPoints.asInstanceOf[js.Any], skipPoints.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def InnerRadiusRatio(numberOfPoints: Double, skipPoints: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InnerRadiusRatio")(numberOfPoints.asInstanceOf[js.Any], skipPoints.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSGlobal("MakerJs.models.Text")

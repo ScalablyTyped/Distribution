@@ -116,164 +116,112 @@ object projectionMod {
   }
   object BaseProjection {
     
-    @scala.inline
-    def apply(): BaseProjection = {
+    inline def apply(): BaseProjection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseProjection]
     }
     
-    @scala.inline
-    implicit class BaseProjectionMutableBuilder[Self <: BaseProjection] (val x: Self) extends AnyVal {
+    extension [Self <: BaseProjection](x: Self) {
       
-      @scala.inline
-      def setCenter(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setClipAngle(value: Double | SignalRef): Self = StObject.set(x, "clipAngle", value.asInstanceOf[js.Any])
+      inline def setClipAngle(value: Double | SignalRef): Self = StObject.set(x, "clipAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipAngleUndefined: Self = StObject.set(x, "clipAngle", js.undefined)
+      inline def setClipAngleUndefined: Self = StObject.set(x, "clipAngle", js.undefined)
       
-      @scala.inline
-      def setClipExtent(value: (Vector2[Vector2[Double | SignalRef]]) | SignalRef): Self = StObject.set(x, "clipExtent", value.asInstanceOf[js.Any])
+      inline def setClipExtent(value: (Vector2[Vector2[Double | SignalRef]]) | SignalRef): Self = StObject.set(x, "clipExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipExtentUndefined: Self = StObject.set(x, "clipExtent", js.undefined)
+      inline def setClipExtentUndefined: Self = StObject.set(x, "clipExtent", js.undefined)
       
-      @scala.inline
-      def setCoefficient(value: Double | SignalRef): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
+      inline def setCoefficient(value: Double | SignalRef): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoefficientUndefined: Self = StObject.set(x, "coefficient", js.undefined)
+      inline def setCoefficientUndefined: Self = StObject.set(x, "coefficient", js.undefined)
       
-      @scala.inline
-      def setDistance(value: Double | SignalRef): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double | SignalRef): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setExtent(value: (Vector2[Vector2[Double | SignalRef]]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: (Vector2[Vector2[Double | SignalRef]]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setFit(value: Fit | js.Array[Fit] | SignalRef): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+      inline def setFit(value: Fit | js.Array[Fit] | SignalRef): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+      inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
       
-      @scala.inline
-      def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value :_*))
+      inline def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value :_*))
       
-      @scala.inline
-      def setFraction(value: Double | SignalRef): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+      inline def setFraction(value: Double | SignalRef): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
+      inline def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
       
-      @scala.inline
-      def setLobes(value: Double | SignalRef): Self = StObject.set(x, "lobes", value.asInstanceOf[js.Any])
+      inline def setLobes(value: Double | SignalRef): Self = StObject.set(x, "lobes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLobesUndefined: Self = StObject.set(x, "lobes", js.undefined)
+      inline def setLobesUndefined: Self = StObject.set(x, "lobes", js.undefined)
       
-      @scala.inline
-      def setParallel(value: Double | SignalRef): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Double | SignalRef): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setParallels(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "parallels", value.asInstanceOf[js.Any])
+      inline def setParallels(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "parallels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelsUndefined: Self = StObject.set(x, "parallels", js.undefined)
+      inline def setParallelsUndefined: Self = StObject.set(x, "parallels", js.undefined)
       
-      @scala.inline
-      def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value :_*))
+      inline def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value :_*))
       
-      @scala.inline
-      def setPointRadius(value: Double | SignalRef): Self = StObject.set(x, "pointRadius", value.asInstanceOf[js.Any])
+      inline def setPointRadius(value: Double | SignalRef): Self = StObject.set(x, "pointRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointRadiusUndefined: Self = StObject.set(x, "pointRadius", js.undefined)
+      inline def setPointRadiusUndefined: Self = StObject.set(x, "pointRadius", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double | SignalRef): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double | SignalRef): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double | SignalRef): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double | SignalRef): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setRatio(value: Double | SignalRef): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Double | SignalRef): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+      inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
       
-      @scala.inline
-      def setReflectX(value: Boolean | SignalRef): Self = StObject.set(x, "reflectX", value.asInstanceOf[js.Any])
+      inline def setReflectX(value: Boolean | SignalRef): Self = StObject.set(x, "reflectX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflectXUndefined: Self = StObject.set(x, "reflectX", js.undefined)
+      inline def setReflectXUndefined: Self = StObject.set(x, "reflectX", js.undefined)
       
-      @scala.inline
-      def setReflectY(value: Boolean | SignalRef): Self = StObject.set(x, "reflectY", value.asInstanceOf[js.Any])
+      inline def setReflectY(value: Boolean | SignalRef): Self = StObject.set(x, "reflectY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflectYUndefined: Self = StObject.set(x, "reflectY", js.undefined)
+      inline def setReflectYUndefined: Self = StObject.set(x, "reflectY", js.undefined)
       
-      @scala.inline
-      def setRotate(value: (Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: (Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double | SignalRef): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double | SignalRef): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpacing(value: Double | SignalRef): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double | SignalRef): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       
-      @scala.inline
-      def setTilt(value: Double | SignalRef): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+      inline def setTilt(value: Double | SignalRef): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
+      inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setType(value: ProjectionType | SignalRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ProjectionType | SignalRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -294,17 +242,14 @@ object projectionMod {
   }
   object Projection {
     
-    @scala.inline
-    def apply(name: String): Projection = {
+    inline def apply(name: String): Projection = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Projection]
     }
     
-    @scala.inline
-    implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+    extension [Self <: Projection](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -329,52 +274,36 @@ object projectionMod {
   trait ProjectionType extends StObject
   object ProjectionType {
     
-    @scala.inline
-    def albers: typings.vegaTypings.vegaTypingsStrings.albers = "albers".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.albers]
+    inline def albers: typings.vegaTypings.vegaTypingsStrings.albers = "albers".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.albers]
     
-    @scala.inline
-    def albersUsa: typings.vegaTypings.vegaTypingsStrings.albersUsa = "albersUsa".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.albersUsa]
+    inline def albersUsa: typings.vegaTypings.vegaTypingsStrings.albersUsa = "albersUsa".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.albersUsa]
     
-    @scala.inline
-    def azimuthalEqualArea: typings.vegaTypings.vegaTypingsStrings.azimuthalEqualArea = "azimuthalEqualArea".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.azimuthalEqualArea]
+    inline def azimuthalEqualArea: typings.vegaTypings.vegaTypingsStrings.azimuthalEqualArea = "azimuthalEqualArea".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.azimuthalEqualArea]
     
-    @scala.inline
-    def azimuthalEquidistant: typings.vegaTypings.vegaTypingsStrings.azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.azimuthalEquidistant]
+    inline def azimuthalEquidistant: typings.vegaTypings.vegaTypingsStrings.azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.azimuthalEquidistant]
     
-    @scala.inline
-    def conicConformal: typings.vegaTypings.vegaTypingsStrings.conicConformal = "conicConformal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicConformal]
+    inline def conicConformal: typings.vegaTypings.vegaTypingsStrings.conicConformal = "conicConformal".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicConformal]
     
-    @scala.inline
-    def conicEqualArea: typings.vegaTypings.vegaTypingsStrings.conicEqualArea = "conicEqualArea".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicEqualArea]
+    inline def conicEqualArea: typings.vegaTypings.vegaTypingsStrings.conicEqualArea = "conicEqualArea".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicEqualArea]
     
-    @scala.inline
-    def conicEquidistant: typings.vegaTypings.vegaTypingsStrings.conicEquidistant = "conicEquidistant".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicEquidistant]
+    inline def conicEquidistant: typings.vegaTypings.vegaTypingsStrings.conicEquidistant = "conicEquidistant".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.conicEquidistant]
     
-    @scala.inline
-    def equalEarth: typings.vegaTypings.vegaTypingsStrings.equalEarth = "equalEarth".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.equalEarth]
+    inline def equalEarth: typings.vegaTypings.vegaTypingsStrings.equalEarth = "equalEarth".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.equalEarth]
     
-    @scala.inline
-    def equirectangular: typings.vegaTypings.vegaTypingsStrings.equirectangular = "equirectangular".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.equirectangular]
+    inline def equirectangular: typings.vegaTypings.vegaTypingsStrings.equirectangular = "equirectangular".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.equirectangular]
     
-    @scala.inline
-    def gnomonic: typings.vegaTypings.vegaTypingsStrings.gnomonic = "gnomonic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.gnomonic]
+    inline def gnomonic: typings.vegaTypings.vegaTypingsStrings.gnomonic = "gnomonic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.gnomonic]
     
-    @scala.inline
-    def identity: typings.vegaTypings.vegaTypingsStrings.identity = "identity".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.identity]
+    inline def identity: typings.vegaTypings.vegaTypingsStrings.identity = "identity".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.identity]
     
-    @scala.inline
-    def mercator: typings.vegaTypings.vegaTypingsStrings.mercator = "mercator".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mercator]
+    inline def mercator: typings.vegaTypings.vegaTypingsStrings.mercator = "mercator".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mercator]
     
-    @scala.inline
-    def naturalEarth1: typings.vegaTypings.vegaTypingsStrings.naturalEarth1 = "naturalEarth1".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.naturalEarth1]
+    inline def naturalEarth1: typings.vegaTypings.vegaTypingsStrings.naturalEarth1 = "naturalEarth1".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.naturalEarth1]
     
-    @scala.inline
-    def orthographic: typings.vegaTypings.vegaTypingsStrings.orthographic = "orthographic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.orthographic]
+    inline def orthographic: typings.vegaTypings.vegaTypingsStrings.orthographic = "orthographic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.orthographic]
     
-    @scala.inline
-    def stereographic: typings.vegaTypings.vegaTypingsStrings.stereographic = "stereographic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.stereographic]
+    inline def stereographic: typings.vegaTypings.vegaTypingsStrings.stereographic = "stereographic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.stereographic]
     
-    @scala.inline
-    def transverseMercator: typings.vegaTypings.vegaTypingsStrings.transverseMercator = "transverseMercator".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.transverseMercator]
+    inline def transverseMercator: typings.vegaTypings.vegaTypingsStrings.transverseMercator = "transverseMercator".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.transverseMercator]
   }
 }

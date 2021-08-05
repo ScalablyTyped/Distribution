@@ -14,25 +14,19 @@ trait CpuTemperatureData extends StObject {
 }
 object CpuTemperatureData {
   
-  @scala.inline
-  def apply(cores: js.Array[Double], main: Double, max: Double): CpuTemperatureData = {
+  inline def apply(cores: js.Array[Double], main: Double, max: Double): CpuTemperatureData = {
     val __obj = js.Dynamic.literal(cores = cores.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[CpuTemperatureData]
   }
   
-  @scala.inline
-  implicit class CpuTemperatureDataMutableBuilder[Self <: CpuTemperatureData] (val x: Self) extends AnyVal {
+  extension [Self <: CpuTemperatureData](x: Self) {
     
-    @scala.inline
-    def setCores(value: js.Array[Double]): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
+    inline def setCores(value: js.Array[Double]): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoresVarargs(value: Double*): Self = StObject.set(x, "cores", js.Array(value :_*))
+    inline def setCoresVarargs(value: Double*): Self = StObject.set(x, "cores", js.Array(value :_*))
     
-    @scala.inline
-    def setMain(value: Double): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+    inline def setMain(value: Double): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }
 }

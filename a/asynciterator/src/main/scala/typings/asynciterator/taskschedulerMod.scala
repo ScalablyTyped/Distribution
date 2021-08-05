@@ -10,8 +10,7 @@ object taskschedulerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): TaskScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TaskScheduler]
+  inline def default(): TaskScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TaskScheduler]
   
   type Task = js.Function0[Unit]
   

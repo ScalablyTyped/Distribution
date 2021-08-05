@@ -23,8 +23,7 @@ object affix {
   }
   object IAffix {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checkPosition: () => Unit,
       checkPositionWithEventLoop: () => Unit,
       destroy: () => Unit,
@@ -34,20 +33,15 @@ object affix {
       __obj.asInstanceOf[IAffix]
     }
     
-    @scala.inline
-    implicit class IAffixMutableBuilder[Self <: IAffix] (val x: Self) extends AnyVal {
+    extension [Self <: IAffix](x: Self) {
       
-      @scala.inline
-      def setCheckPosition(value: () => Unit): Self = StObject.set(x, "checkPosition", js.Any.fromFunction0(value))
+      inline def setCheckPosition(value: () => Unit): Self = StObject.set(x, "checkPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCheckPositionWithEventLoop(value: () => Unit): Self = StObject.set(x, "checkPositionWithEventLoop", js.Any.fromFunction0(value))
+      inline def setCheckPositionWithEventLoop(value: () => Unit): Self = StObject.set(x, "checkPositionWithEventLoop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     }
   }
   
@@ -63,38 +57,28 @@ object affix {
   }
   object IAffixOptions {
     
-    @scala.inline
-    def apply(): IAffixOptions = {
+    inline def apply(): IAffixOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAffixOptions]
     }
     
-    @scala.inline
-    implicit class IAffixOptionsMutableBuilder[Self <: IAffixOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAffixOptions](x: Self) {
       
-      @scala.inline
-      def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
+      inline def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
+      inline def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
       
-      @scala.inline
-      def setOffsetParent(value: Double): Self = StObject.set(x, "offsetParent", value.asInstanceOf[js.Any])
+      inline def setOffsetParent(value: Double): Self = StObject.set(x, "offsetParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetParentUndefined: Self = StObject.set(x, "offsetParent", js.undefined)
+      inline def setOffsetParentUndefined: Self = StObject.set(x, "offsetParent", js.undefined)
       
-      @scala.inline
-      def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+      inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
+      inline def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
       
-      @scala.inline
-      def setOffsetUnpin(value: Double): Self = StObject.set(x, "offsetUnpin", value.asInstanceOf[js.Any])
+      inline def setOffsetUnpin(value: Double): Self = StObject.set(x, "offsetUnpin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUnpinUndefined: Self = StObject.set(x, "offsetUnpin", js.undefined)
+      inline def setOffsetUnpinUndefined: Self = StObject.set(x, "offsetUnpin", js.undefined)
     }
   }
   
@@ -104,17 +88,14 @@ object affix {
   }
   object IAffixProvider {
     
-    @scala.inline
-    def apply(defaults: IAffixOptions): IAffixProvider = {
+    inline def apply(defaults: IAffixOptions): IAffixProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAffixProvider]
     }
     
-    @scala.inline
-    implicit class IAffixProviderMutableBuilder[Self <: IAffixProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IAffixProvider](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: IAffixOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: IAffixOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
   

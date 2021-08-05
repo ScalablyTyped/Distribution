@@ -20,25 +20,19 @@ trait GoogleActionsOrdersV3OrderUpdateUserNotification extends StObject {
 }
 object GoogleActionsOrdersV3OrderUpdateUserNotification {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3OrderUpdateUserNotification = {
+  inline def apply(): GoogleActionsOrdersV3OrderUpdateUserNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3OrderUpdateUserNotification]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3OrderUpdateUserNotificationMutableBuilder[Self <: GoogleActionsOrdersV3OrderUpdateUserNotification] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3OrderUpdateUserNotification](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

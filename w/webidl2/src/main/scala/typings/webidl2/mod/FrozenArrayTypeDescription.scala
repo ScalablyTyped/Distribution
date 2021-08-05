@@ -15,8 +15,7 @@ trait FrozenArrayTypeDescription
 }
 object FrozenArrayTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -27,10 +26,8 @@ object FrozenArrayTypeDescription {
     __obj.asInstanceOf[FrozenArrayTypeDescription]
   }
   
-  @scala.inline
-  implicit class FrozenArrayTypeDescriptionMutableBuilder[Self <: FrozenArrayTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: FrozenArrayTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: FrozenArray): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: FrozenArray): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }
 }

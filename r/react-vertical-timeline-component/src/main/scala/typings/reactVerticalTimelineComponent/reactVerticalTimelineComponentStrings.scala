@@ -8,11 +8,9 @@ object reactVerticalTimelineComponentStrings {
   
   @js.native
   sealed trait `1-column` extends StObject
-  @scala.inline
-  def `1-column`: `1-column` = "1-column".asInstanceOf[`1-column`]
+  inline def `1-column`: `1-column` = "1-column".asInstanceOf[`1-column`]
   
   @js.native
   sealed trait `2-columns` extends StObject
-  @scala.inline
-  def `2-columns`: `2-columns` = "2-columns".asInstanceOf[`2-columns`]
+  inline def `2-columns`: `2-columns` = "2-columns".asInstanceOf[`2-columns`]
 }

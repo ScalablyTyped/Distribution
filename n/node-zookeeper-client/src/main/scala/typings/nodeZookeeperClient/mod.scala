@@ -39,26 +39,22 @@ object mod {
     @JSImport("node-zookeeper-client", "CreateMode.EPHEMERAL")
     @js.native
     def EPHEMERAL: Double = js.native
-    @scala.inline
-    def EPHEMERAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPHEMERAL")(x.asInstanceOf[js.Any])
+    inline def EPHEMERAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPHEMERAL")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "CreateMode.EPHEMERAL_SEQUENTIAL")
     @js.native
     def EPHEMERAL_SEQUENTIAL: Double = js.native
-    @scala.inline
-    def EPHEMERAL_SEQUENTIAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPHEMERAL_SEQUENTIAL")(x.asInstanceOf[js.Any])
+    inline def EPHEMERAL_SEQUENTIAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPHEMERAL_SEQUENTIAL")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "CreateMode.PERSISTENT")
     @js.native
     def PERSISTENT: Double = js.native
-    @scala.inline
-    def PERSISTENT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERSISTENT")(x.asInstanceOf[js.Any])
+    inline def PERSISTENT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERSISTENT")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "CreateMode.PERSISTENT_SEQUENTIAL")
     @js.native
     def PERSISTENT_SEQUENTIAL: Double = js.native
-    @scala.inline
-    def PERSISTENT_SEQUENTIAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERSISTENT_SEQUENTIAL")(x.asInstanceOf[js.Any])
+    inline def PERSISTENT_SEQUENTIAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERSISTENT_SEQUENTIAL")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("node-zookeeper-client", "Event")
@@ -88,26 +84,22 @@ object mod {
     @JSImport("node-zookeeper-client", "Event.NODE_CHILDREN_CHANGED")
     @js.native
     def NODE_CHILDREN_CHANGED: Double = js.native
-    @scala.inline
-    def NODE_CHILDREN_CHANGED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_CHILDREN_CHANGED")(x.asInstanceOf[js.Any])
+    inline def NODE_CHILDREN_CHANGED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_CHILDREN_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Event.NODE_CREATED")
     @js.native
     def NODE_CREATED: Double = js.native
-    @scala.inline
-    def NODE_CREATED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_CREATED")(x.asInstanceOf[js.Any])
+    inline def NODE_CREATED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_CREATED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Event.NODE_DATA_CHANGED")
     @js.native
     def NODE_DATA_CHANGED: Double = js.native
-    @scala.inline
-    def NODE_DATA_CHANGED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_DATA_CHANGED")(x.asInstanceOf[js.Any])
+    inline def NODE_DATA_CHANGED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_DATA_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Event.NODE_DELETED")
     @js.native
     def NODE_DELETED: Double = js.native
-    @scala.inline
-    def NODE_DELETED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_DELETED")(x.asInstanceOf[js.Any])
+    inline def NODE_DELETED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_DELETED")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("node-zookeeper-client", "Exception")
@@ -140,122 +132,102 @@ object mod {
     @JSImport("node-zookeeper-client", "Exception.API_ERROR")
     @js.native
     def API_ERROR: Double = js.native
-    @scala.inline
-    def API_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API_ERROR")(x.asInstanceOf[js.Any])
+    inline def API_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.AUTH_FAILED")
     @js.native
     def AUTH_FAILED: Double = js.native
-    @scala.inline
-    def AUTH_FAILED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTH_FAILED")(x.asInstanceOf[js.Any])
+    inline def AUTH_FAILED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTH_FAILED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.BAD_ARGUMENTS")
     @js.native
     def BAD_ARGUMENTS: Double = js.native
-    @scala.inline
-    def BAD_ARGUMENTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BAD_ARGUMENTS")(x.asInstanceOf[js.Any])
+    inline def BAD_ARGUMENTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BAD_ARGUMENTS")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.BAD_VERSION")
     @js.native
     def BAD_VERSION: Double = js.native
-    @scala.inline
-    def BAD_VERSION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BAD_VERSION")(x.asInstanceOf[js.Any])
+    inline def BAD_VERSION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BAD_VERSION")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.CONNECTION_LOSS")
     @js.native
     def CONNECTION_LOSS: Double = js.native
-    @scala.inline
-    def CONNECTION_LOSS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_LOSS")(x.asInstanceOf[js.Any])
+    inline def CONNECTION_LOSS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_LOSS")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.DATA_INCONSISTENCY")
     @js.native
     def DATA_INCONSISTENCY: Double = js.native
-    @scala.inline
-    def DATA_INCONSISTENCY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_INCONSISTENCY")(x.asInstanceOf[js.Any])
+    inline def DATA_INCONSISTENCY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_INCONSISTENCY")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.INVALID_ACL")
     @js.native
     def INVALID_ACL: Double = js.native
-    @scala.inline
-    def INVALID_ACL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ACL")(x.asInstanceOf[js.Any])
+    inline def INVALID_ACL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ACL")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.INVALID_CALLBACK")
     @js.native
     def INVALID_CALLBACK: Double = js.native
-    @scala.inline
-    def INVALID_CALLBACK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CALLBACK")(x.asInstanceOf[js.Any])
+    inline def INVALID_CALLBACK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_CALLBACK")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.MARSHALLING_ERROR")
     @js.native
     def MARSHALLING_ERROR: Double = js.native
-    @scala.inline
-    def MARSHALLING_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARSHALLING_ERROR")(x.asInstanceOf[js.Any])
+    inline def MARSHALLING_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARSHALLING_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.NODE_EXISTS")
     @js.native
     def NODE_EXISTS: Double = js.native
-    @scala.inline
-    def NODE_EXISTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_EXISTS")(x.asInstanceOf[js.Any])
+    inline def NODE_EXISTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NODE_EXISTS")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.NOT_EMPTY")
     @js.native
     def NOT_EMPTY: Double = js.native
-    @scala.inline
-    def NOT_EMPTY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_EMPTY")(x.asInstanceOf[js.Any])
+    inline def NOT_EMPTY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_EMPTY")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.NO_AUTH")
     @js.native
     def NO_AUTH: Double = js.native
-    @scala.inline
-    def NO_AUTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_AUTH")(x.asInstanceOf[js.Any])
+    inline def NO_AUTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_AUTH")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.NO_CHILDREN_FOR_EPHEMERALS")
     @js.native
     def NO_CHILDREN_FOR_EPHEMERALS: Double = js.native
-    @scala.inline
-    def NO_CHILDREN_FOR_EPHEMERALS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_CHILDREN_FOR_EPHEMERALS")(x.asInstanceOf[js.Any])
+    inline def NO_CHILDREN_FOR_EPHEMERALS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_CHILDREN_FOR_EPHEMERALS")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.NO_NODE")
     @js.native
     def NO_NODE: Double = js.native
-    @scala.inline
-    def NO_NODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_NODE")(x.asInstanceOf[js.Any])
+    inline def NO_NODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_NODE")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.OK")
     @js.native
     def OK: Double = js.native
-    @scala.inline
-    def OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OK")(x.asInstanceOf[js.Any])
+    inline def OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OK")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.OPERATION_TIMEOUT")
     @js.native
     def OPERATION_TIMEOUT: Double = js.native
-    @scala.inline
-    def OPERATION_TIMEOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATION_TIMEOUT")(x.asInstanceOf[js.Any])
+    inline def OPERATION_TIMEOUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATION_TIMEOUT")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.RUNTIME_INCONSISTENCY")
     @js.native
     def RUNTIME_INCONSISTENCY: Double = js.native
-    @scala.inline
-    def RUNTIME_INCONSISTENCY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNTIME_INCONSISTENCY")(x.asInstanceOf[js.Any])
+    inline def RUNTIME_INCONSISTENCY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNTIME_INCONSISTENCY")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.SESSION_EXPIRED")
     @js.native
     def SESSION_EXPIRED: Double = js.native
-    @scala.inline
-    def SESSION_EXPIRED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION_EXPIRED")(x.asInstanceOf[js.Any])
+    inline def SESSION_EXPIRED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION_EXPIRED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.SYSTEM_ERROR")
     @js.native
     def SYSTEM_ERROR: Double = js.native
-    @scala.inline
-    def SYSTEM_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYSTEM_ERROR")(x.asInstanceOf[js.Any])
+    inline def SYSTEM_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYSTEM_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Exception.UNIMPLEMENTED")
     @js.native
     def UNIMPLEMENTED: Double = js.native
-    @scala.inline
-    def UNIMPLEMENTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNIMPLEMENTED")(x.asInstanceOf[js.Any])
+    inline def UNIMPLEMENTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNIMPLEMENTED")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("node-zookeeper-client", "Id")
@@ -277,38 +249,32 @@ object mod {
     @JSImport("node-zookeeper-client", "Permission.ADMIN")
     @js.native
     def ADMIN: Double = js.native
-    @scala.inline
-    def ADMIN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADMIN")(x.asInstanceOf[js.Any])
+    inline def ADMIN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADMIN")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Permission.ALL")
     @js.native
     def ALL: Double = js.native
-    @scala.inline
-    def ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
+    inline def ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Permission.CREATE")
     @js.native
     def CREATE: Double = js.native
-    @scala.inline
-    def CREATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATE")(x.asInstanceOf[js.Any])
+    inline def CREATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATE")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Permission.DELETE")
     @js.native
     def DELETE: Double = js.native
-    @scala.inline
-    def DELETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETE")(x.asInstanceOf[js.Any])
+    inline def DELETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETE")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Permission.READ")
     @js.native
     def READ: Double = js.native
-    @scala.inline
-    def READ_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READ")(x.asInstanceOf[js.Any])
+    inline def READ_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READ")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "Permission.WRITE")
     @js.native
     def WRITE: Double = js.native
-    @scala.inline
-    def WRITE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRITE")(x.asInstanceOf[js.Any])
+    inline def WRITE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRITE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("node-zookeeper-client", "State")
@@ -330,44 +296,36 @@ object mod {
     @JSImport("node-zookeeper-client", "State.AUTH_FAILED")
     @js.native
     def AUTH_FAILED: State = js.native
-    @scala.inline
-    def AUTH_FAILED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTH_FAILED")(x.asInstanceOf[js.Any])
+    inline def AUTH_FAILED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTH_FAILED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "State.CONNECTED_READ_ONLY")
     @js.native
     def CONNECTED_READ_ONLY: State = js.native
-    @scala.inline
-    def CONNECTED_READ_ONLY_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTED_READ_ONLY")(x.asInstanceOf[js.Any])
+    inline def CONNECTED_READ_ONLY_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTED_READ_ONLY")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "State.DISCONNECTED")
     @js.native
     def DISCONNECTED: State = js.native
-    @scala.inline
-    def DISCONNECTED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCONNECTED")(x.asInstanceOf[js.Any])
+    inline def DISCONNECTED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCONNECTED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "State.EXPIRED")
     @js.native
     def EXPIRED: State = js.native
-    @scala.inline
-    def EXPIRED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPIRED")(x.asInstanceOf[js.Any])
+    inline def EXPIRED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPIRED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "State.SASL_AUTHENTICATED")
     @js.native
     def SASL_AUTHENTICATED: State = js.native
-    @scala.inline
-    def SASL_AUTHENTICATED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASL_AUTHENTICATED")(x.asInstanceOf[js.Any])
+    inline def SASL_AUTHENTICATED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SASL_AUTHENTICATED")(x.asInstanceOf[js.Any])
     
     @JSImport("node-zookeeper-client", "State.SYNC_CONNECTED")
     @js.native
     def SYNC_CONNECTED: State = js.native
-    @scala.inline
-    def SYNC_CONNECTED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNC_CONNECTED")(x.asInstanceOf[js.Any])
+    inline def SYNC_CONNECTED_=(x: State): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNC_CONNECTED")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createClient(connectionString: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def createClient(connectionString: String, options: PartialOption): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def createClient(connectionString: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def createClient(connectionString: String, options: PartialOption): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   
   @js.native
   trait Client extends EventEmitter {
@@ -1031,23 +989,18 @@ object mod {
   }
   object Option {
     
-    @scala.inline
-    def apply(retries: Double, sessionTimeout: Double, spinDelay: Double): Option = {
+    inline def apply(retries: Double, sessionTimeout: Double, spinDelay: Double): Option = {
       val __obj = js.Dynamic.literal(retries = retries.asInstanceOf[js.Any], sessionTimeout = sessionTimeout.asInstanceOf[js.Any], spinDelay = spinDelay.asInstanceOf[js.Any])
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+      inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinDelay(value: Double): Self = StObject.set(x, "spinDelay", value.asInstanceOf[js.Any])
+      inline def setSpinDelay(value: Double): Self = StObject.set(x, "spinDelay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1077,8 +1030,7 @@ object mod {
   }
   object Stat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aversion: Double,
       ctime: Double,
       cversion: Double,
@@ -1095,41 +1047,29 @@ object mod {
       __obj.asInstanceOf[Stat]
     }
     
-    @scala.inline
-    implicit class StatMutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
+    extension [Self <: Stat](x: Self) {
       
-      @scala.inline
-      def setAversion(value: Double): Self = StObject.set(x, "aversion", value.asInstanceOf[js.Any])
+      inline def setAversion(value: Double): Self = StObject.set(x, "aversion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCversion(value: Double): Self = StObject.set(x, "cversion", value.asInstanceOf[js.Any])
+      inline def setCversion(value: Double): Self = StObject.set(x, "cversion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCzxid(value: Double): Self = StObject.set(x, "czxid", value.asInstanceOf[js.Any])
+      inline def setCzxid(value: Double): Self = StObject.set(x, "czxid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
+      inline def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralOwner(value: Double): Self = StObject.set(x, "ephemeralOwner", value.asInstanceOf[js.Any])
+      inline def setEphemeralOwner(value: Double): Self = StObject.set(x, "ephemeralOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMzxid(value: Double): Self = StObject.set(x, "mzxid", value.asInstanceOf[js.Any])
+      inline def setMzxid(value: Double): Self = StObject.set(x, "mzxid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumChildren(value: Double): Self = StObject.set(x, "numChildren", value.asInstanceOf[js.Any])
+      inline def setNumChildren(value: Double): Self = StObject.set(x, "numChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPzxid(value: Double): Self = StObject.set(x, "pzxid", value.asInstanceOf[js.Any])
+      inline def setPzxid(value: Double): Self = StObject.set(x, "pzxid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

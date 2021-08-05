@@ -25,25 +25,19 @@ trait InkStrokeData extends StObject {
 }
 object InkStrokeData {
   
-  @scala.inline
-  def apply(): InkStrokeData = {
+  inline def apply(): InkStrokeData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkStrokeData]
   }
   
-  @scala.inline
-  implicit class InkStrokeDataMutableBuilder[Self <: InkStrokeData] (val x: Self) extends AnyVal {
+  extension [Self <: InkStrokeData](x: Self) {
     
-    @scala.inline
-    def setFloatingInk(value: FloatingInkData): Self = StObject.set(x, "floatingInk", value.asInstanceOf[js.Any])
+    inline def setFloatingInk(value: FloatingInkData): Self = StObject.set(x, "floatingInk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingInkUndefined: Self = StObject.set(x, "floatingInk", js.undefined)
+    inline def setFloatingInkUndefined: Self = StObject.set(x, "floatingInk", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

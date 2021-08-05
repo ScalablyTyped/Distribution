@@ -13,8 +13,7 @@ object textareaItemStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): TextareaItemStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TextareaItemStyle]
+  inline def default(theme: Theme): TextareaItemStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TextareaItemStyle]
   
   trait TextareaItemStyle extends StObject {
     
@@ -32,8 +31,7 @@ object textareaItemStyleMod {
   }
   object TextareaItemStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: ViewStyle,
       count: ViewStyle,
       countText: TextStyle,
@@ -45,26 +43,19 @@ object textareaItemStyleMod {
       __obj.asInstanceOf[TextareaItemStyle]
     }
     
-    @scala.inline
-    implicit class TextareaItemStyleMutableBuilder[Self <: TextareaItemStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TextareaItemStyle](x: Self) {
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCount(value: ViewStyle): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: ViewStyle): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountText(value: TextStyle): Self = StObject.set(x, "countText", value.asInstanceOf[js.Any])
+      inline def setCountText(value: TextStyle): Self = StObject.set(x, "countText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorIcon(value: ViewStyle): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
+      inline def setErrorIcon(value: ViewStyle): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     }
   }
 }

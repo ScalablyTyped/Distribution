@@ -31,8 +31,6 @@ object Textbox {
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Textbox instance is created
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Textbox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Textbox]
-  @scala.inline
-  def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Textbox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Textbox]
+  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Textbox = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Textbox]
+  inline def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Textbox = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Textbox]
 }

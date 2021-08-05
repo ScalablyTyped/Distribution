@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LineMap extends StObject {
   
-  var _computeLineStarts: js.Any
+  /* private */ var _computeLineStarts: js.Any
   
-  var _lineStarts: js.Any
+  /* private */ var _lineStarts: js.Any
   
   def equals(other: LineMap): Boolean
   
@@ -23,7 +23,7 @@ trait LineMap extends StObject {
   
   def getPosition(line: Double, character: Double): Double
   
-  var length: js.Any
+  /* private */ var length: js.Any
   
   def lineCount(): Double
   
@@ -33,8 +33,7 @@ trait LineMap extends StObject {
 }
 object LineMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _computeLineStarts: js.Any,
     _lineStarts: js.Any,
     equals_ : LineMap => Boolean,
@@ -53,43 +52,30 @@ object LineMap {
     __obj.asInstanceOf[LineMap]
   }
   
-  @scala.inline
-  implicit class LineMapMutableBuilder[Self <: LineMap] (val x: Self) extends AnyVal {
+  extension [Self <: LineMap](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: LineMap => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: LineMap => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFillLineAndCharacterFromPosition(value: (Double, ILineAndCharacter) => Unit): Self = StObject.set(x, "fillLineAndCharacterFromPosition", js.Any.fromFunction2(value))
+    inline def setFillLineAndCharacterFromPosition(value: (Double, ILineAndCharacter) => Unit): Self = StObject.set(x, "fillLineAndCharacterFromPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLineAndCharacterFromPosition(value: Double => LineAndCharacter): Self = StObject.set(x, "getLineAndCharacterFromPosition", js.Any.fromFunction1(value))
+    inline def setGetLineAndCharacterFromPosition(value: Double => LineAndCharacter): Self = StObject.set(x, "getLineAndCharacterFromPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLineNumberFromPosition(value: Double => Double): Self = StObject.set(x, "getLineNumberFromPosition", js.Any.fromFunction1(value))
+    inline def setGetLineNumberFromPosition(value: Double => Double): Self = StObject.set(x, "getLineNumberFromPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLineStartPosition(value: Double => Double): Self = StObject.set(x, "getLineStartPosition", js.Any.fromFunction1(value))
+    inline def setGetLineStartPosition(value: Double => Double): Self = StObject.set(x, "getLineStartPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPosition(value: (Double, Double) => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction2(value))
+    inline def setGetPosition(value: (Double, Double) => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCount(value: () => Double): Self = StObject.set(x, "lineCount", js.Any.fromFunction0(value))
+    inline def setLineCount(value: () => Double): Self = StObject.set(x, "lineCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineStarts(value: () => js.Array[Double]): Self = StObject.set(x, "lineStarts", js.Any.fromFunction0(value))
+    inline def setLineStarts(value: () => js.Array[Double]): Self = StObject.set(x, "lineStarts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJSON(value: js.Any => Length): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+    inline def setToJSON(value: js.Any => Length): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_computeLineStarts(value: js.Any): Self = StObject.set(x, "_computeLineStarts", value.asInstanceOf[js.Any])
+    inline def set_computeLineStarts(value: js.Any): Self = StObject.set(x, "_computeLineStarts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lineStarts(value: js.Any): Self = StObject.set(x, "_lineStarts", value.asInstanceOf[js.Any])
+    inline def set_lineStarts(value: js.Any): Self = StObject.set(x, "_lineStarts", value.asInstanceOf[js.Any])
   }
 }

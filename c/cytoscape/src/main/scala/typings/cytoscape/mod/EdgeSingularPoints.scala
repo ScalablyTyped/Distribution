@@ -52,8 +52,7 @@ trait EdgeSingularPoints extends StObject {
 }
 object EdgeSingularPoints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controlPoints: () => js.Array[Position],
     midpoint: () => Position,
     segmentPoints: () => js.Array[Position],
@@ -64,22 +63,16 @@ object EdgeSingularPoints {
     __obj.asInstanceOf[EdgeSingularPoints]
   }
   
-  @scala.inline
-  implicit class EdgeSingularPointsMutableBuilder[Self <: EdgeSingularPoints] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeSingularPoints](x: Self) {
     
-    @scala.inline
-    def setControlPoints(value: () => js.Array[Position]): Self = StObject.set(x, "controlPoints", js.Any.fromFunction0(value))
+    inline def setControlPoints(value: () => js.Array[Position]): Self = StObject.set(x, "controlPoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMidpoint(value: () => Position): Self = StObject.set(x, "midpoint", js.Any.fromFunction0(value))
+    inline def setMidpoint(value: () => Position): Self = StObject.set(x, "midpoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSegmentPoints(value: () => js.Array[Position]): Self = StObject.set(x, "segmentPoints", js.Any.fromFunction0(value))
+    inline def setSegmentPoints(value: () => js.Array[Position]): Self = StObject.set(x, "segmentPoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSourceEndpoint(value: () => Position): Self = StObject.set(x, "sourceEndpoint", js.Any.fromFunction0(value))
+    inline def setSourceEndpoint(value: () => Position): Self = StObject.set(x, "sourceEndpoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTargetEndpoint(value: () => Position): Self = StObject.set(x, "targetEndpoint", js.Any.fromFunction0(value))
+    inline def setTargetEndpoint(value: () => Position): Self = StObject.set(x, "targetEndpoint", js.Any.fromFunction0(value))
   }
 }

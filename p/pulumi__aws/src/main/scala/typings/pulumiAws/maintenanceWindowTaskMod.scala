@@ -97,21 +97,16 @@ object maintenanceWindowTaskMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState, opts: CustomResourceOptions): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
+    inline def get(name: String, id: Input[ID]): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
+    inline def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
+    inline def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState, opts: CustomResourceOptions): MaintenanceWindowTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTask]
     
     /**
       * Returns true if the given object is an instance of MaintenanceWindowTask.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ Boolean]
   }
   
   trait MaintenanceWindowTaskArgs extends StObject {
@@ -175,8 +170,7 @@ object maintenanceWindowTaskMod {
   }
   object MaintenanceWindowTaskArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       maxConcurrency: Input[String],
       maxErrors: Input[String],
       serviceRoleArn: Input[String],
@@ -189,56 +183,39 @@ object maintenanceWindowTaskMod {
       __obj.asInstanceOf[MaintenanceWindowTaskArgs]
     }
     
-    @scala.inline
-    implicit class MaintenanceWindowTaskArgsMutableBuilder[Self <: MaintenanceWindowTaskArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MaintenanceWindowTaskArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
+      inline def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
       
-      @scala.inline
-      def setTaskArn(value: Input[String]): Self = StObject.set(x, "taskArn", value.asInstanceOf[js.Any])
+      inline def setTaskArn(value: Input[String]): Self = StObject.set(x, "taskArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskInvocationParameters(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters]): Self = StObject.set(x, "taskInvocationParameters", value.asInstanceOf[js.Any])
+      inline def setTaskInvocationParameters(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters]): Self = StObject.set(x, "taskInvocationParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskInvocationParametersUndefined: Self = StObject.set(x, "taskInvocationParameters", js.undefined)
+      inline def setTaskInvocationParametersUndefined: Self = StObject.set(x, "taskInvocationParameters", js.undefined)
       
-      @scala.inline
-      def setTaskType(value: Input[String]): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+      inline def setTaskType(value: Input[String]): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,83 +282,58 @@ object maintenanceWindowTaskMod {
   }
   object MaintenanceWindowTaskState {
     
-    @scala.inline
-    def apply(): MaintenanceWindowTaskState = {
+    inline def apply(): MaintenanceWindowTaskState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaintenanceWindowTaskState]
     }
     
-    @scala.inline
-    implicit class MaintenanceWindowTaskStateMutableBuilder[Self <: MaintenanceWindowTaskState] (val x: Self) extends AnyVal {
+    extension [Self <: MaintenanceWindowTaskState](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
+      inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
       
-      @scala.inline
-      def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
+      inline def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
+      inline def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
+      inline def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
       
-      @scala.inline
-      def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
       
-      @scala.inline
-      def setTaskArn(value: Input[String]): Self = StObject.set(x, "taskArn", value.asInstanceOf[js.Any])
+      inline def setTaskArn(value: Input[String]): Self = StObject.set(x, "taskArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskArnUndefined: Self = StObject.set(x, "taskArn", js.undefined)
+      inline def setTaskArnUndefined: Self = StObject.set(x, "taskArn", js.undefined)
       
-      @scala.inline
-      def setTaskInvocationParameters(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters]): Self = StObject.set(x, "taskInvocationParameters", value.asInstanceOf[js.Any])
+      inline def setTaskInvocationParameters(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTaskTaskInvocationParameters]): Self = StObject.set(x, "taskInvocationParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskInvocationParametersUndefined: Self = StObject.set(x, "taskInvocationParameters", js.undefined)
+      inline def setTaskInvocationParametersUndefined: Self = StObject.set(x, "taskInvocationParameters", js.undefined)
       
-      @scala.inline
-      def setTaskType(value: Input[String]): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+      inline def setTaskType(value: Input[String]): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
+      inline def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
       
-      @scala.inline
-      def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
 }

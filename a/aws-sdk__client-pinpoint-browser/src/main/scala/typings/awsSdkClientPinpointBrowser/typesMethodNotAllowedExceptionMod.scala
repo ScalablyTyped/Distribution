@@ -156,17 +156,14 @@ object typesMethodNotAllowedExceptionMod {
   }
   object MethodNotAllowedException {
     
-    @scala.inline
-    def apply(): MethodNotAllowedException = {
+    inline def apply(): MethodNotAllowedException = {
       val __obj = js.Dynamic.literal(name = "MethodNotAllowedException")
       __obj.asInstanceOf[MethodNotAllowedException]
     }
     
-    @scala.inline
-    implicit class MethodNotAllowedExceptionMutableBuilder[Self <: MethodNotAllowedException] (val x: Self) extends AnyVal {
+    extension [Self <: MethodNotAllowedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.MethodNotAllowedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -186,26 +183,20 @@ object typesMethodNotAllowedExceptionMod {
   }
   object MethodNotAllowedExceptionDetails {
     
-    @scala.inline
-    def apply(): MethodNotAllowedExceptionDetails = {
+    inline def apply(): MethodNotAllowedExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MethodNotAllowedExceptionDetails]
     }
     
-    @scala.inline
-    implicit class MethodNotAllowedExceptionDetailsMutableBuilder[Self <: MethodNotAllowedExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: MethodNotAllowedExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
+      inline def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
+      inline def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
     }
   }
 }

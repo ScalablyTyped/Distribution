@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DayOfWeek extends StObject
 object DayOfWeek {
   
-  @scala.inline
-  def friday: typings.microsoftGraph.microsoftGraphStrings.friday = "friday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.friday]
+  inline def friday: typings.microsoftGraph.microsoftGraphStrings.friday = "friday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.friday]
   
-  @scala.inline
-  def monday: typings.microsoftGraph.microsoftGraphStrings.monday = "monday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monday]
+  inline def monday: typings.microsoftGraph.microsoftGraphStrings.monday = "monday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monday]
   
-  @scala.inline
-  def saturday: typings.microsoftGraph.microsoftGraphStrings.saturday = "saturday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.saturday]
+  inline def saturday: typings.microsoftGraph.microsoftGraphStrings.saturday = "saturday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.saturday]
   
-  @scala.inline
-  def sunday: typings.microsoftGraph.microsoftGraphStrings.sunday = "sunday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sunday]
+  inline def sunday: typings.microsoftGraph.microsoftGraphStrings.sunday = "sunday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sunday]
   
-  @scala.inline
-  def thursday: typings.microsoftGraph.microsoftGraphStrings.thursday = "thursday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.thursday]
+  inline def thursday: typings.microsoftGraph.microsoftGraphStrings.thursday = "thursday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.thursday]
   
-  @scala.inline
-  def tuesday: typings.microsoftGraph.microsoftGraphStrings.tuesday = "tuesday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tuesday]
+  inline def tuesday: typings.microsoftGraph.microsoftGraphStrings.tuesday = "tuesday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tuesday]
   
-  @scala.inline
-  def wednesday: typings.microsoftGraph.microsoftGraphStrings.wednesday = "wednesday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.wednesday]
+  inline def wednesday: typings.microsoftGraph.microsoftGraphStrings.wednesday = "wednesday".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.wednesday]
 }

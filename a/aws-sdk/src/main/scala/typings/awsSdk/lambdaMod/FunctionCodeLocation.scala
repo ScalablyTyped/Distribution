@@ -18,25 +18,19 @@ trait FunctionCodeLocation extends StObject {
 }
 object FunctionCodeLocation {
   
-  @scala.inline
-  def apply(): FunctionCodeLocation = {
+  inline def apply(): FunctionCodeLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionCodeLocation]
   }
   
-  @scala.inline
-  implicit class FunctionCodeLocationMutableBuilder[Self <: FunctionCodeLocation] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionCodeLocation](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setRepositoryType(value: String): Self = StObject.set(x, "RepositoryType", value.asInstanceOf[js.Any])
+    inline def setRepositoryType(value: String): Self = StObject.set(x, "RepositoryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryTypeUndefined: Self = StObject.set(x, "RepositoryType", js.undefined)
+    inline def setRepositoryTypeUndefined: Self = StObject.set(x, "RepositoryType", js.undefined)
   }
 }

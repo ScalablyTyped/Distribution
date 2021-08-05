@@ -10,16 +10,13 @@ trait InitialSlideWidth extends StObject {
 }
 object InitialSlideWidth {
   
-  @scala.inline
-  def apply(initialSlideWidth: Double): InitialSlideWidth = {
+  inline def apply(initialSlideWidth: Double): InitialSlideWidth = {
     val __obj = js.Dynamic.literal(initialSlideWidth = initialSlideWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialSlideWidth]
   }
   
-  @scala.inline
-  implicit class InitialSlideWidthMutableBuilder[Self <: InitialSlideWidth] (val x: Self) extends AnyVal {
+  extension [Self <: InitialSlideWidth](x: Self) {
     
-    @scala.inline
-    def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
+    inline def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
   }
 }

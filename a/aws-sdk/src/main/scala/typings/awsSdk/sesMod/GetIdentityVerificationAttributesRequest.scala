@@ -13,19 +13,15 @@ trait GetIdentityVerificationAttributesRequest extends StObject {
 }
 object GetIdentityVerificationAttributesRequest {
   
-  @scala.inline
-  def apply(Identities: IdentityList): GetIdentityVerificationAttributesRequest = {
+  inline def apply(Identities: IdentityList): GetIdentityVerificationAttributesRequest = {
     val __obj = js.Dynamic.literal(Identities = Identities.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityVerificationAttributesRequest]
   }
   
-  @scala.inline
-  implicit class GetIdentityVerificationAttributesRequestMutableBuilder[Self <: GetIdentityVerificationAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityVerificationAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setIdentities(value: IdentityList): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: IdentityList): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "Identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "Identities", js.Array(value :_*))
   }
 }

@@ -14,31 +14,23 @@ trait Add extends StObject {
 }
 object Add {
   
-  @scala.inline
-  def apply(): Add = {
+  inline def apply(): Add = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Add]
   }
   
-  @scala.inline
-  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
+  extension [Self <: Add](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Any): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: js.Any): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setRemove(value: js.Any): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: js.Any): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

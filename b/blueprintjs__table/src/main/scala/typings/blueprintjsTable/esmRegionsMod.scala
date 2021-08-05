@@ -90,47 +90,37 @@ object esmRegionsMod {
       * Adds the region to the end of a cloned copy of the supplied region
       * array.
       */
-    @scala.inline
-    def add(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
+    inline def add(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
     
     /**
       * Returns a region containing one or more cells.
       */
-    @scala.inline
-    def cell(row: Double, col: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[IRegion]
-    @scala.inline
-    def cell(row: Double, col: Double, row2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
-    @scala.inline
-    def cell(row: Double, col: Double, row2: Double, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
-    @scala.inline
-    def cell(row: Double, col: Double, row2: Unit, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def cell(row: Double, col: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def cell(row: Double, col: Double, row2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def cell(row: Double, col: Double, row2: Double, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def cell(row: Double, col: Double, row2: Unit, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Clamps the region's start and end indices between 0 and the provided
       * maximum values.
       */
-    @scala.inline
-    def clampRegion(region: IRegion, maxRowIndex: Double, maxColumnIndex: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("clampRegion")(region.asInstanceOf[js.Any], maxRowIndex.asInstanceOf[js.Any], maxColumnIndex.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def clampRegion(region: IRegion, maxRowIndex: Double, maxColumnIndex: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("clampRegion")(region.asInstanceOf[js.Any], maxRowIndex.asInstanceOf[js.Any], maxColumnIndex.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Returns a region containing one or more full columns.
       */
-    @scala.inline
-    def column(col: Double): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any]).asInstanceOf[IRegion]
-    @scala.inline
-    def column(col: Double, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def column(col: Double): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any]).asInstanceOf[IRegion]
+    inline def column(col: Double, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Returns true if the regions fully contain the query region.
       */
-    @scala.inline
-    def containsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def containsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns a deep copy of the provided region.
       */
-    @scala.inline
-    def copy(region: IRegion): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(region.asInstanceOf[js.Any]).asInstanceOf[IRegion]
+    inline def copy(region: IRegion): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(region.asInstanceOf[js.Any]).asInstanceOf[IRegion]
     
     /**
       * Iterates over the cells within an `IRegion`, invoking the callback with
@@ -139,22 +129,18 @@ object esmRegionsMod {
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.eachCellInRegion")
     @js.native
     def eachCellInRegion: js.Any = js.native
-    @scala.inline
-    def eachCellInRegion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eachCellInRegion")(x.asInstanceOf[js.Any])
+    inline def eachCellInRegion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eachCellInRegion")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def eachUniqueFullColumn(regions: js.Array[IRegion], iteratee: js.Function1[/* col */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullColumn")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def eachUniqueFullColumn(regions: js.Array[IRegion], iteratee: js.Function1[/* col */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullColumn")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def eachUniqueFullRow(regions: js.Array[IRegion], iteratee: js.Function1[/* row */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullRow")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def eachUniqueFullRow(regions: js.Array[IRegion], iteratee: js.Function1[/* row */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullRow")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Using the supplied array of non-contiguous `IRegion`s, this method
       * returns an ordered array of every unique cell that exists in those
       * regions.
       */
-    @scala.inline
-    def enumerateUniqueCells(regions: js.Array[IRegion], numRows: Double, numCols: Double): js.Array[ICellCoordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateUniqueCells")(regions.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[js.Array[ICellCoordinate]]
+    inline def enumerateUniqueCells(regions: js.Array[IRegion], numRows: Double, numCols: Double): js.Array[ICellCoordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateUniqueCells")(regions.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[js.Array[ICellCoordinate]]
     
     /**
       * Expands an old region to the minimal bounding region that also contains
@@ -162,39 +148,33 @@ object esmRegionsMod {
       * region is returned. Useful for expanding a selected region on
       * shift+click, for instance.
       */
-    @scala.inline
-    def expandRegion(oldRegion: IRegion, newRegion: IRegion): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("expandRegion")(oldRegion.asInstanceOf[js.Any], newRegion.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def expandRegion(oldRegion: IRegion, newRegion: IRegion): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("expandRegion")(oldRegion.asInstanceOf[js.Any], newRegion.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Returns the index of the region that wholly contains the supplied
       * parameter. Returns -1 if no such region is found.
       */
-    @scala.inline
-    def findContainingRegion(regions: js.Array[IRegion], region: IRegion): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findContainingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def findContainingRegion(regions: js.Array[IRegion], region: IRegion): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findContainingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the index of the region that is equal to the supplied
       * parameter. Returns -1 if no such region is found.
       */
-    @scala.inline
-    def findMatchingRegion(regions: js.Array[IRegion], region: IRegion): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def findMatchingRegion(regions: js.Array[IRegion], region: IRegion): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the smallest single contiguous `IRegion` that contains all cells in the
       * supplied array.
       */
-    @scala.inline
-    def getBoundingRegion(cells: js.Array[ICellCoordinate]): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundingRegion")(cells.asInstanceOf[js.Any]).asInstanceOf[IRegion]
+    inline def getBoundingRegion(cells: js.Array[ICellCoordinate]): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundingRegion")(cells.asInstanceOf[js.Any]).asInstanceOf[IRegion]
     
     /**
       * Using the supplied region, returns an "equivalent" region of
       * type CELLS that define the bounds of the given region
       */
-    @scala.inline
-    def getCellRegionFromRegion(region: IRegion, numRows: Double, numCols: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellRegionFromRegion")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def getCellRegionFromRegion(region: IRegion, numRows: Double, numCols: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellRegionFromRegion")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
-    @scala.inline
-    def getFocusCellCoordinatesFromRegion(region: IRegion): Col = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusCellCoordinatesFromRegion")(region.asInstanceOf[js.Any]).asInstanceOf[Col]
+    inline def getFocusCellCoordinatesFromRegion(region: IRegion): Col = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusCellCoordinatesFromRegion")(region.asInstanceOf[js.Any]).asInstanceOf[Col]
     
     /**
       * Determines the cardinality of a region. We use null values to indicate
@@ -224,28 +204,24 @@ object esmRegionsMod {
       *
       * In this case, this method would return `RegionCardinality.CELLS`.
       */
-    @scala.inline
-    def getRegionCardinality(region: IRegion): RegionCardinality = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegionCardinality")(region.asInstanceOf[js.Any]).asInstanceOf[RegionCardinality]
+    inline def getRegionCardinality(region: IRegion): RegionCardinality = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegionCardinality")(region.asInstanceOf[js.Any]).asInstanceOf[RegionCardinality]
     
     /**
       * Returns true if the regions contain a region that has FULL_COLUMNS
       * cardinality and contains the specified column index.
       */
-    @scala.inline
-    def hasFullColumn(regions: js.Array[IRegion], col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullColumn")(regions.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasFullColumn(regions: js.Array[IRegion], col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullColumn")(regions.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns true if the regions contain a region that has FULL_ROWS
       * cardinality and contains the specified row index.
       */
-    @scala.inline
-    def hasFullRow(regions: js.Array[IRegion], row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullRow")(regions.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasFullRow(regions: js.Array[IRegion], row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullRow")(regions.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns true if the regions contain a region that has FULL_TABLE cardinality
       */
-    @scala.inline
-    def hasFullTable(regions: js.Array[IRegion]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFullTable")(regions.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasFullTable(regions: js.Array[IRegion]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFullTable")(regions.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.intervalContains")
     @js.native
@@ -254,32 +230,25 @@ object esmRegionsMod {
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.intervalContainsIndex")
     @js.native
     def intervalContainsIndex: js.Any = js.native
-    @scala.inline
-    def intervalContainsIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalContainsIndex")(x.asInstanceOf[js.Any])
+    inline def intervalContainsIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalContainsIndex")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def intervalContains_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalContains")(x.asInstanceOf[js.Any])
+    inline def intervalContains_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalContains")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.intervalOverlaps")
     @js.native
     def intervalOverlaps: js.Any = js.native
-    @scala.inline
-    def intervalOverlaps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalOverlaps")(x.asInstanceOf[js.Any])
+    inline def intervalOverlaps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalOverlaps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.intervalsEqual")
     @js.native
     def intervalsEqual: js.Any = js.native
-    @scala.inline
-    def intervalsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalsEqual")(x.asInstanceOf[js.Any])
+    inline def intervalsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalsEqual")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isRegionValidForTable(region: IRegion, numRows: Double, numCols: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRegionValidForTable")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isRegionValidForTable(region: IRegion, numRows: Double, numCols: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRegionValidForTable")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isValid(region: IRegion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(region.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(region: IRegion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(region.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def joinStyledRegionGroups(
+    inline def joinStyledRegionGroups(
       selectedRegions: js.Array[IRegion],
       otherRegions: js.Array[IStyledRegionGroup],
       focusedCell: IFocusedCellCoordinates
@@ -289,51 +258,41 @@ object esmRegionsMod {
       * Returns true iff the specified region is equal to the last region in
       * the region list. This allows us to avoid immediate additive re-selection.
       */
-    @scala.inline
-    def lastRegionIsEqual(regions: js.Array[IRegion], region: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lastRegionIsEqual")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def lastRegionIsEqual(regions: js.Array[IRegion], region: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lastRegionIsEqual")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.normalizeInterval")
     @js.native
     def normalizeInterval: js.Any = js.native
-    @scala.inline
-    def normalizeInterval_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizeInterval")(x.asInstanceOf[js.Any])
+    inline def normalizeInterval_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizeInterval")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.numericalComparator")
     @js.native
     def numericalComparator: js.Any = js.native
-    @scala.inline
-    def numericalComparator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("numericalComparator")(x.asInstanceOf[js.Any])
+    inline def numericalComparator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("numericalComparator")(x.asInstanceOf[js.Any])
     
     /**
       * Returns true if the regions at least partially overlap the query region.
       */
-    @scala.inline
-    def overlapsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def overlapsRegion(regions: js.Array[IRegion], query: IRegion, allowPartialOverlap: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any], allowPartialOverlap.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def overlapsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def overlapsRegion(regions: js.Array[IRegion], query: IRegion, allowPartialOverlap: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any], allowPartialOverlap.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.regionContains")
     @js.native
     def regionContains: js.Any = js.native
-    @scala.inline
-    def regionContains_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionContains")(x.asInstanceOf[js.Any])
+    inline def regionContains_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionContains")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def regionsEqual(regionA: IRegion, regionB: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("regionsEqual")(regionA.asInstanceOf[js.Any], regionB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def regionsEqual(regionA: IRegion, regionB: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("regionsEqual")(regionA.asInstanceOf[js.Any], regionB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns a region containing one or more full rows.
       */
-    @scala.inline
-    def row(row: Double): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any]).asInstanceOf[IRegion]
-    @scala.inline
-    def row(row: Double, row2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    inline def row(row: Double): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any]).asInstanceOf[IRegion]
+    inline def row(row: Double, row2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.rowFirstComparator")
     @js.native
     def rowFirstComparator: js.Any = js.native
-    @scala.inline
-    def rowFirstComparator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowFirstComparator")(x.asInstanceOf[js.Any])
+    inline def rowFirstComparator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowFirstComparator")(x.asInstanceOf[js.Any])
     
     /**
       * Maps a dense array of cell coordinates to a sparse 2-dimensional array
@@ -344,23 +303,19 @@ object esmRegionsMod {
       * invoke the mapper callback only on the cells in the supplied coordinate
       * array and store the result. Returns the resulting 2-dimensional array.
       */
-    @scala.inline
-    def sparseMapCells[T](cells: js.Array[ICellCoordinate], mapper: js.Function2[/* row */ Double, /* col */ Double, T]): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseMapCells")(cells.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+    inline def sparseMapCells[T](cells: js.Array[ICellCoordinate], mapper: js.Function2[/* row */ Double, /* col */ Double, T]): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseMapCells")(cells.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
     
     /**
       * Returns a region containing the entire table.
       */
-    @scala.inline
-    def table(): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("table")().asInstanceOf[IRegion]
+    inline def table(): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("table")().asInstanceOf[IRegion]
     
     /**
       * Replaces the region at the end of a cloned copy of the supplied region
       * array, or at the specific index if one is provided.
       */
-    @scala.inline
-    def update(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
-    @scala.inline
-    def update(regions: js.Array[IRegion], region: IRegion, index: Double): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
+    inline def update(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
+    inline def update(regions: js.Array[IRegion], region: IRegion, index: Double): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
   }
   
   @js.native
@@ -394,38 +349,32 @@ object esmRegionsMod {
     @JSImport("@blueprintjs/table/lib/esm/regions", "SelectionModes.ALL")
     @js.native
     def ALL: js.Array[RegionCardinality] = js.native
-    @scala.inline
-    def ALL_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
+    inline def ALL_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "SelectionModes.COLUMNS_AND_CELLS")
     @js.native
     def COLUMNS_AND_CELLS: js.Array[RegionCardinality] = js.native
-    @scala.inline
-    def COLUMNS_AND_CELLS_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLUMNS_AND_CELLS")(x.asInstanceOf[js.Any])
+    inline def COLUMNS_AND_CELLS_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLUMNS_AND_CELLS")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "SelectionModes.COLUMNS_ONLY")
     @js.native
     def COLUMNS_ONLY: js.Array[RegionCardinality] = js.native
-    @scala.inline
-    def COLUMNS_ONLY_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLUMNS_ONLY")(x.asInstanceOf[js.Any])
+    inline def COLUMNS_ONLY_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLUMNS_ONLY")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "SelectionModes.NONE")
     @js.native
     def NONE: js.Array[RegionCardinality] = js.native
-    @scala.inline
-    def NONE_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
+    inline def NONE_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "SelectionModes.ROWS_AND_CELLS")
     @js.native
     def ROWS_AND_CELLS: js.Array[RegionCardinality] = js.native
-    @scala.inline
-    def ROWS_AND_CELLS_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROWS_AND_CELLS")(x.asInstanceOf[js.Any])
+    inline def ROWS_AND_CELLS_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROWS_AND_CELLS")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "SelectionModes.ROWS_ONLY")
     @js.native
     def ROWS_ONLY: js.Array[RegionCardinality] = js.native
-    @scala.inline
-    def ROWS_ONLY_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROWS_ONLY")(x.asInstanceOf[js.Any])
+    inline def ROWS_ONLY_=(x: js.Array[RegionCardinality]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROWS_ONLY")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -478,32 +427,24 @@ object esmRegionsMod {
   }
   object IRegion {
     
-    @scala.inline
-    def apply(): IRegion = {
+    inline def apply(): IRegion = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRegion]
     }
     
-    @scala.inline
-    implicit class IRegionMutableBuilder[Self <: IRegion] (val x: Self) extends AnyVal {
+    extension [Self <: IRegion](x: Self) {
       
-      @scala.inline
-      def setCols(value: ICellInterval): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: ICellInterval): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsNull: Self = StObject.set(x, "cols", null)
+      inline def setColsNull: Self = StObject.set(x, "cols", null)
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setRows(value: ICellInterval): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: ICellInterval): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsNull: Self = StObject.set(x, "rows", null)
+      inline def setRowsNull: Self = StObject.set(x, "rows", null)
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     }
   }
   
@@ -515,26 +456,20 @@ object esmRegionsMod {
   }
   object IStyledRegionGroup {
     
-    @scala.inline
-    def apply(regions: js.Array[IRegion]): IStyledRegionGroup = {
+    inline def apply(regions: js.Array[IRegion]): IStyledRegionGroup = {
       val __obj = js.Dynamic.literal(regions = regions.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStyledRegionGroup]
     }
     
-    @scala.inline
-    implicit class IStyledRegionGroupMutableBuilder[Self <: IStyledRegionGroup] (val x: Self) extends AnyVal {
+    extension [Self <: IStyledRegionGroup](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setRegions(value: js.Array[IRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[IRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsVarargs(value: IRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: IRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
     }
   }
 }

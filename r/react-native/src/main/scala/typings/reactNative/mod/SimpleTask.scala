@@ -12,19 +12,15 @@ trait SimpleTask extends StObject {
 }
 object SimpleTask {
   
-  @scala.inline
-  def apply(gen: () => Unit, name: String): SimpleTask = {
+  inline def apply(gen: () => Unit, name: String): SimpleTask = {
     val __obj = js.Dynamic.literal(gen = js.Any.fromFunction0(gen), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleTask]
   }
   
-  @scala.inline
-  implicit class SimpleTaskMutableBuilder[Self <: SimpleTask] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleTask](x: Self) {
     
-    @scala.inline
-    def setGen(value: () => Unit): Self = StObject.set(x, "gen", js.Any.fromFunction0(value))
+    inline def setGen(value: () => Unit): Self = StObject.set(x, "gen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

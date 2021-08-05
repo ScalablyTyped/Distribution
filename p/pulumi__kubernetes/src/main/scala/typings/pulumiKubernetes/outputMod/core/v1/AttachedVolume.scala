@@ -21,19 +21,15 @@ trait AttachedVolume extends StObject {
 }
 object AttachedVolume {
   
-  @scala.inline
-  def apply(devicePath: String, name: String): AttachedVolume = {
+  inline def apply(devicePath: String, name: String): AttachedVolume = {
     val __obj = js.Dynamic.literal(devicePath = devicePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachedVolume]
   }
   
-  @scala.inline
-  implicit class AttachedVolumeMutableBuilder[Self <: AttachedVolume] (val x: Self) extends AnyVal {
+  extension [Self <: AttachedVolume](x: Self) {
     
-    @scala.inline
-    def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
+    inline def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

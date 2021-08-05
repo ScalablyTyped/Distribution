@@ -97,75 +97,53 @@ trait PrintTemplateProperties extends StObject {
 }
 object PrintTemplateProperties {
   
-  @scala.inline
-  def apply(): PrintTemplateProperties = {
+  inline def apply(): PrintTemplateProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintTemplateProperties]
   }
   
-  @scala.inline
-  implicit class PrintTemplatePropertiesMutableBuilder[Self <: PrintTemplateProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTemplateProperties](x: Self) {
     
-    @scala.inline
-    def setAttributionVisible(value: Boolean): Self = StObject.set(x, "attributionVisible", value.asInstanceOf[js.Any])
+    inline def setAttributionVisible(value: Boolean): Self = StObject.set(x, "attributionVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionVisibleUndefined: Self = StObject.set(x, "attributionVisible", js.undefined)
+    inline def setAttributionVisibleUndefined: Self = StObject.set(x, "attributionVisible", js.undefined)
     
-    @scala.inline
-    def setExportOptions(value: PrintTemplateExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
+    inline def setExportOptions(value: PrintTemplateExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportOptionsUndefined: Self = StObject.set(x, "exportOptions", js.undefined)
+    inline def setExportOptionsUndefined: Self = StObject.set(x, "exportOptions", js.undefined)
     
-    @scala.inline
-    def setForceFeatureAttributes(value: Boolean): Self = StObject.set(x, "forceFeatureAttributes", value.asInstanceOf[js.Any])
+    inline def setForceFeatureAttributes(value: Boolean): Self = StObject.set(x, "forceFeatureAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceFeatureAttributesUndefined: Self = StObject.set(x, "forceFeatureAttributes", js.undefined)
+    inline def setForceFeatureAttributesUndefined: Self = StObject.set(x, "forceFeatureAttributes", js.undefined)
     
-    @scala.inline
-    def setFormat(value: pdf | png32 | png8 | jpg | gif | eps | svg | svgz): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: pdf | png32 | png8 | jpg | gif | eps | svg | svgz): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLayout(
+    inline def setLayout(
       value: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
     ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutOptions(value: PrintTemplateLayoutOptions): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
+    inline def setLayoutOptions(value: PrintTemplateLayoutOptions): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutOptionsUndefined: Self = StObject.set(x, "layoutOptions", js.undefined)
+    inline def setLayoutOptionsUndefined: Self = StObject.set(x, "layoutOptions", js.undefined)
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setOutScale(value: Double): Self = StObject.set(x, "outScale", value.asInstanceOf[js.Any])
+    inline def setOutScale(value: Double): Self = StObject.set(x, "outScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutScaleUndefined: Self = StObject.set(x, "outScale", js.undefined)
+    inline def setOutScaleUndefined: Self = StObject.set(x, "outScale", js.undefined)
     
-    @scala.inline
-    def setPreserveScale(value: Boolean): Self = StObject.set(x, "preserveScale", value.asInstanceOf[js.Any])
+    inline def setPreserveScale(value: Boolean): Self = StObject.set(x, "preserveScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveScaleUndefined: Self = StObject.set(x, "preserveScale", js.undefined)
+    inline def setPreserveScaleUndefined: Self = StObject.set(x, "preserveScale", js.undefined)
     
-    @scala.inline
-    def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
+    inline def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
+    inline def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
     
-    @scala.inline
-    def setShowLabels(value: Boolean): Self = StObject.set(x, "showLabels", value.asInstanceOf[js.Any])
+    inline def setShowLabels(value: Boolean): Self = StObject.set(x, "showLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLabelsUndefined: Self = StObject.set(x, "showLabels", js.undefined)
+    inline def setShowLabelsUndefined: Self = StObject.set(x, "showLabels", js.undefined)
   }
 }

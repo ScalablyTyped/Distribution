@@ -47,8 +47,7 @@ trait UploadTask extends StObject {
 }
 object UploadTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: () => Unit,
     offHeadersReceived: UploadTaskOffHeadersReceivedCallback => Unit,
     offProgressUpdate: UploadTaskOffProgressUpdateCallback => Unit,
@@ -59,22 +58,16 @@ object UploadTask {
     __obj.asInstanceOf[UploadTask]
   }
   
-  @scala.inline
-  implicit class UploadTaskMutableBuilder[Self <: UploadTask] (val x: Self) extends AnyVal {
+  extension [Self <: UploadTask](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOffHeadersReceived(value: UploadTaskOffHeadersReceivedCallback => Unit): Self = StObject.set(x, "offHeadersReceived", js.Any.fromFunction1(value))
+    inline def setOffHeadersReceived(value: UploadTaskOffHeadersReceivedCallback => Unit): Self = StObject.set(x, "offHeadersReceived", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOffProgressUpdate(value: UploadTaskOffProgressUpdateCallback => Unit): Self = StObject.set(x, "offProgressUpdate", js.Any.fromFunction1(value))
+    inline def setOffProgressUpdate(value: UploadTaskOffProgressUpdateCallback => Unit): Self = StObject.set(x, "offProgressUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHeadersReceived(value: UploadTaskOnHeadersReceivedCallback => Unit): Self = StObject.set(x, "onHeadersReceived", js.Any.fromFunction1(value))
+    inline def setOnHeadersReceived(value: UploadTaskOnHeadersReceivedCallback => Unit): Self = StObject.set(x, "onHeadersReceived", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnProgressUpdate(value: UploadTaskOnProgressUpdateCallback => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
+    inline def setOnProgressUpdate(value: UploadTaskOnProgressUpdateCallback => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }
 }

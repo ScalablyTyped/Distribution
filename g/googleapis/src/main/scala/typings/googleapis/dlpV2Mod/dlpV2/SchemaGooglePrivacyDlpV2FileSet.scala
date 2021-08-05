@@ -29,25 +29,19 @@ trait SchemaGooglePrivacyDlpV2FileSet extends StObject {
 }
 object SchemaGooglePrivacyDlpV2FileSet {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2FileSet = {
+  inline def apply(): SchemaGooglePrivacyDlpV2FileSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2FileSet]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2FileSetMutableBuilder[Self <: SchemaGooglePrivacyDlpV2FileSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2FileSet](x: Self) {
     
-    @scala.inline
-    def setRegexFileSet(value: SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet): Self = StObject.set(x, "regexFileSet", value.asInstanceOf[js.Any])
+    inline def setRegexFileSet(value: SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet): Self = StObject.set(x, "regexFileSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexFileSetUndefined: Self = StObject.set(x, "regexFileSet", js.undefined)
+    inline def setRegexFileSetUndefined: Self = StObject.set(x, "regexFileSet", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

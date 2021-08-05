@@ -23,8 +23,7 @@ trait FileListResource extends StObject {
 }
 object FileListResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     etag: String,
     incompleteSearch: Boolean,
     items: js.Array[FileResource],
@@ -36,31 +35,22 @@ object FileListResource {
     __obj.asInstanceOf[FileListResource]
   }
   
-  @scala.inline
-  implicit class FileListResourceMutableBuilder[Self <: FileListResource] (val x: Self) extends AnyVal {
+  extension [Self <: FileListResource](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompleteSearch(value: Boolean): Self = StObject.set(x, "incompleteSearch", value.asInstanceOf[js.Any])
+    inline def setIncompleteSearch(value: Boolean): Self = StObject.set(x, "incompleteSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[FileResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[FileResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: FileResource*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FileResource*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: driveNumbersignfileList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: driveNumbersignfileList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
+    inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
   }
 }

@@ -12,15 +12,11 @@ object coordsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(a: XYCoord, b: XYCoord): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
+  inline def add(a: XYCoord, b: XYCoord): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
   
-  @scala.inline
-  def getDifferenceFromInitialOffset(state: State): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDifferenceFromInitialOffset")(state.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
+  inline def getDifferenceFromInitialOffset(state: State): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDifferenceFromInitialOffset")(state.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
   
-  @scala.inline
-  def getSourceClientOffset(state: State): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceClientOffset")(state.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
+  inline def getSourceClientOffset(state: State): XYCoord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceClientOffset")(state.asInstanceOf[js.Any]).asInstanceOf[XYCoord | Null]
   
-  @scala.inline
-  def subtract(a: XYCoord, b: XYCoord): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
+  inline def subtract(a: XYCoord, b: XYCoord): XYCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[XYCoord]
 }

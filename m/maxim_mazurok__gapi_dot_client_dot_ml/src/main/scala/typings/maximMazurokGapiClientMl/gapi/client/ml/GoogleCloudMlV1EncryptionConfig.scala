@@ -14,19 +14,15 @@ trait GoogleCloudMlV1EncryptionConfig extends StObject {
 }
 object GoogleCloudMlV1EncryptionConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1EncryptionConfig = {
+  inline def apply(): GoogleCloudMlV1EncryptionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1EncryptionConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1EncryptionConfigMutableBuilder[Self <: GoogleCloudMlV1EncryptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1EncryptionConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
   }
 }

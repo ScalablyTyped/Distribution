@@ -17,34 +17,25 @@ trait IosTestLoop extends StObject {
 }
 object IosTestLoop {
   
-  @scala.inline
-  def apply(): IosTestLoop = {
+  inline def apply(): IosTestLoop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosTestLoop]
   }
   
-  @scala.inline
-  implicit class IosTestLoopMutableBuilder[Self <: IosTestLoop] (val x: Self) extends AnyVal {
+  extension [Self <: IosTestLoop](x: Self) {
     
-    @scala.inline
-    def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
+    inline def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
+    inline def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
     
-    @scala.inline
-    def setAppIpa(value: FileReference): Self = StObject.set(x, "appIpa", value.asInstanceOf[js.Any])
+    inline def setAppIpa(value: FileReference): Self = StObject.set(x, "appIpa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIpaUndefined: Self = StObject.set(x, "appIpa", js.undefined)
+    inline def setAppIpaUndefined: Self = StObject.set(x, "appIpa", js.undefined)
     
-    @scala.inline
-    def setScenarios(value: js.Array[Double]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
+    inline def setScenarios(value: js.Array[Double]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
+    inline def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
     
-    @scala.inline
-    def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
   }
 }

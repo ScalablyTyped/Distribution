@@ -19,36 +19,36 @@ object selectMod {
     def this(props: ISelectProps[T]) = this()
     def this(props: ISelectProps[T], context: js.Any) = this()
     
-    var TypedQueryList: js.Any = js.native
+    /* private */ var TypedQueryList: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MSelect(_prevProps: ISelectProps[T], prevState: ISelectState): Unit = js.native
     
-    var handleItemSelect: js.Any = js.native
+    /* private */ var handleItemSelect: js.Any = js.native
     
-    var handlePopoverClosing: js.Any = js.native
+    /* private */ var handlePopoverClosing: js.Any = js.native
     
-    var handlePopoverInteraction: js.Any = js.native
+    /* private */ var handlePopoverInteraction: js.Any = js.native
     
-    var handlePopoverOpened: js.Any = js.native
+    /* private */ var handlePopoverOpened: js.Any = js.native
     
-    var handlePopoverOpening: js.Any = js.native
+    /* private */ var handlePopoverOpening: js.Any = js.native
     
-    var handleTargetKeyDown: js.Any = js.native
+    /* private */ var handleTargetKeyDown: js.Any = js.native
     
-    var inputEl: js.Any = js.native
+    /* private */ var inputEl: js.Any = js.native
     
-    var maybeRenderClearButton: js.Any = js.native
+    /* private */ var maybeRenderClearButton: js.Any = js.native
     
-    var previousFocusedElement: js.Any = js.native
+    /* private */ var previousFocusedElement: js.Any = js.native
     
-    var queryList: js.Any = js.native
+    /* private */ var queryList: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var renderQueryList: js.Any = js.native
+    /* private */ var renderQueryList: js.Any = js.native
     
-    var resetQuery: js.Any = js.native
+    /* private */ var resetQuery: js.Any = js.native
   }
   /* static members */
   object Select {
@@ -60,11 +60,9 @@ object selectMod {
     @JSImport("@blueprintjs/select/lib/esm/components/select/select", "Select.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ofType[U](): Instantiable1[/* props */ ISelectProps[U], Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISelectProps[U], Select[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ ISelectProps[U], Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ISelectProps[U], Select[U]]]
   }
   
   @js.native
@@ -111,17 +109,14 @@ object selectMod {
   }
   object ISelectState {
     
-    @scala.inline
-    def apply(isOpen: Boolean): ISelectState = {
+    inline def apply(isOpen: Boolean): ISelectState = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectState]
     }
     
-    @scala.inline
-    implicit class ISelectStateMutableBuilder[Self <: ISelectState] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectState](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
 }

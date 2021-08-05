@@ -34,28 +34,21 @@ trait AllowDuplication extends StObject {
 }
 object AllowDuplication {
   
-  @scala.inline
-  def apply(allowDuplication: Boolean, basePaths: js.Array[String], defaultProject: String, enable: Boolean): AllowDuplication = {
+  inline def apply(allowDuplication: Boolean, basePaths: js.Array[String], defaultProject: String, enable: Boolean): AllowDuplication = {
     val __obj = js.Dynamic.literal(allowDuplication = allowDuplication.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], defaultProject = defaultProject.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowDuplication]
   }
   
-  @scala.inline
-  implicit class AllowDuplicationMutableBuilder[Self <: AllowDuplication] (val x: Self) extends AnyVal {
+  extension [Self <: AllowDuplication](x: Self) {
     
-    @scala.inline
-    def setAllowDuplication(value: Boolean): Self = StObject.set(x, "allowDuplication", value.asInstanceOf[js.Any])
+    inline def setAllowDuplication(value: Boolean): Self = StObject.set(x, "allowDuplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+    inline def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+    inline def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
+    inline def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }
 }

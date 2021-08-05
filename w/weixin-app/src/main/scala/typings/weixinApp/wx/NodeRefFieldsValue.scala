@@ -26,8 +26,7 @@ trait NodeRefFieldsValue extends StObject {
 }
 object NodeRefFieldsValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataset: Dataset,
     id: Id,
     properties: PropertiesAny,
@@ -39,25 +38,18 @@ object NodeRefFieldsValue {
     __obj.asInstanceOf[NodeRefFieldsValue]
   }
   
-  @scala.inline
-  implicit class NodeRefFieldsValueMutableBuilder[Self <: NodeRefFieldsValue] (val x: Self) extends AnyVal {
+  extension [Self <: NodeRefFieldsValue](x: Self) {
     
-    @scala.inline
-    def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: PropertiesAny): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertiesAny): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: Bottom): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Bottom): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffset(value: ScrollLeft): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+    inline def setScrollOffset(value: ScrollLeft): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

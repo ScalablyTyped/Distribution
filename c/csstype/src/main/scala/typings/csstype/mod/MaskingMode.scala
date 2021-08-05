@@ -15,12 +15,9 @@ trait MaskingMode
      with _MaskModeProperty
 object MaskingMode {
   
-  @scala.inline
-  def alpha: typings.csstype.csstypeStrings.alpha = "alpha".asInstanceOf[typings.csstype.csstypeStrings.alpha]
+  inline def alpha: typings.csstype.csstypeStrings.alpha = "alpha".asInstanceOf[typings.csstype.csstypeStrings.alpha]
   
-  @scala.inline
-  def luminance: typings.csstype.csstypeStrings.luminance = "luminance".asInstanceOf[typings.csstype.csstypeStrings.luminance]
+  inline def luminance: typings.csstype.csstypeStrings.luminance = "luminance".asInstanceOf[typings.csstype.csstypeStrings.luminance]
   
-  @scala.inline
-  def `match-source`: typings.csstype.csstypeStrings.`match-source` = "match-source".asInstanceOf[typings.csstype.csstypeStrings.`match-source`]
+  inline def `match-source`: typings.csstype.csstypeStrings.`match-source` = "match-source".asInstanceOf[typings.csstype.csstypeStrings.`match-source`]
 }

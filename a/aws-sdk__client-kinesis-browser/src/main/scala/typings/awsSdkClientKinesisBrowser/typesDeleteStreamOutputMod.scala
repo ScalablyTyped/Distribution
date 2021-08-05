@@ -20,17 +20,14 @@ object typesDeleteStreamOutputMod {
   }
   object DeleteStreamOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteStreamOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteStreamOutput]
     }
     
-    @scala.inline
-    implicit class DeleteStreamOutputMutableBuilder[Self <: DeleteStreamOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteStreamOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -30,8 +30,7 @@ trait Cakey extends StObject {
 }
 object Cakey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cakey: js.Tuple2[String, String],
     issue: StringParam,
     notafter: StringParam,
@@ -45,40 +44,28 @@ object Cakey {
     __obj.asInstanceOf[Cakey]
   }
   
-  @scala.inline
-  implicit class CakeyMutableBuilder[Self <: Cakey] (val x: Self) extends AnyVal {
+  extension [Self <: Cakey](x: Self) {
     
-    @scala.inline
-    def setCakey(value: js.Tuple2[String, String]): Self = StObject.set(x, "cakey", value.asInstanceOf[js.Any])
+    inline def setCakey(value: js.Tuple2[String, String]): Self = StObject.set(x, "cakey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExt(value: js.Array[Extension]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: js.Array[Extension]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+    inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
-    @scala.inline
-    def setExtVarargs(value: Extension*): Self = StObject.set(x, "ext", js.Array(value :_*))
+    inline def setExtVarargs(value: Extension*): Self = StObject.set(x, "ext", js.Array(value :_*))
     
-    @scala.inline
-    def setIssue(value: StringParam): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setIssue(value: StringParam): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotafter(value: StringParam): Self = StObject.set(x, "notafter", value.asInstanceOf[js.Any])
+    inline def setNotafter(value: StringParam): Self = StObject.set(x, "notafter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSbjpubkey(value: String): Self = StObject.set(x, "sbjpubkey", value.asInstanceOf[js.Any])
+    inline def setSbjpubkey(value: String): Self = StObject.set(x, "sbjpubkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: IntegerParam): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: IntegerParam): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigalg(value: NameParam): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
+    inline def setSigalg(value: NameParam): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSighex(value: String): Self = StObject.set(x, "sighex", value.asInstanceOf[js.Any])
+    inline def setSighex(value: String): Self = StObject.set(x, "sighex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: StringParam): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: StringParam): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

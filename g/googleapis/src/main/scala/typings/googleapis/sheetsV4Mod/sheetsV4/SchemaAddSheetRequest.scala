@@ -22,19 +22,15 @@ trait SchemaAddSheetRequest extends StObject {
 }
 object SchemaAddSheetRequest {
   
-  @scala.inline
-  def apply(): SchemaAddSheetRequest = {
+  inline def apply(): SchemaAddSheetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddSheetRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAddSheetRequestMutableBuilder[Self <: SchemaAddSheetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddSheetRequest](x: Self) {
     
-    @scala.inline
-    def setProperties(value: SchemaSheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SchemaSheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

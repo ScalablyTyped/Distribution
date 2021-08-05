@@ -17,22 +17,17 @@ trait WhitespaceToken
 }
 object WhitespaceToken {
   
-  @scala.inline
-  def apply(contents: String, location: LocationRange): WhitespaceToken = {
+  inline def apply(contents: String, location: LocationRange): WhitespaceToken = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "whitespace")
     __obj.asInstanceOf[WhitespaceToken]
   }
   
-  @scala.inline
-  implicit class WhitespaceTokenMutableBuilder[Self <: WhitespaceToken] (val x: Self) extends AnyVal {
+  extension [Self <: WhitespaceToken](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: whitespace): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: whitespace): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

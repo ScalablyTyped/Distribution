@@ -23,28 +23,21 @@ trait UpdateRoleRequest extends StObject {
 }
 object UpdateRoleRequest {
   
-  @scala.inline
-  def apply(RoleName: roleNameType): UpdateRoleRequest = {
+  inline def apply(RoleName: roleNameType): UpdateRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRoleRequestMutableBuilder[Self <: UpdateRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRoleRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: roleDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: roleDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setMaxSessionDuration(value: roleMaxSessionDurationType): Self = StObject.set(x, "MaxSessionDuration", value.asInstanceOf[js.Any])
+    inline def setMaxSessionDuration(value: roleMaxSessionDurationType): Self = StObject.set(x, "MaxSessionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSessionDurationUndefined: Self = StObject.set(x, "MaxSessionDuration", js.undefined)
+    inline def setMaxSessionDurationUndefined: Self = StObject.set(x, "MaxSessionDuration", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

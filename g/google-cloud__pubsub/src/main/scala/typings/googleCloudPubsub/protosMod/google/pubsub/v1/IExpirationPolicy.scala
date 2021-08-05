@@ -13,22 +13,17 @@ trait IExpirationPolicy extends StObject {
 }
 object IExpirationPolicy {
   
-  @scala.inline
-  def apply(): IExpirationPolicy = {
+  inline def apply(): IExpirationPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IExpirationPolicy]
   }
   
-  @scala.inline
-  implicit class IExpirationPolicyMutableBuilder[Self <: IExpirationPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IExpirationPolicy](x: Self) {
     
-    @scala.inline
-    def setTtl(value: IDuration): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: IDuration): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlNull: Self = StObject.set(x, "ttl", null)
+    inline def setTtlNull: Self = StObject.set(x, "ttl", null)
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

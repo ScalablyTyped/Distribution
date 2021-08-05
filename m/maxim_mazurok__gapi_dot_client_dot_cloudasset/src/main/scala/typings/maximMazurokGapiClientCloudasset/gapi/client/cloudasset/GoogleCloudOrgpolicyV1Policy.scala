@@ -40,55 +40,39 @@ trait GoogleCloudOrgpolicyV1Policy extends StObject {
 }
 object GoogleCloudOrgpolicyV1Policy {
   
-  @scala.inline
-  def apply(): GoogleCloudOrgpolicyV1Policy = {
+  inline def apply(): GoogleCloudOrgpolicyV1Policy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudOrgpolicyV1Policy]
   }
   
-  @scala.inline
-  implicit class GoogleCloudOrgpolicyV1PolicyMutableBuilder[Self <: GoogleCloudOrgpolicyV1Policy] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudOrgpolicyV1Policy](x: Self) {
     
-    @scala.inline
-    def setBooleanPolicy(value: GoogleCloudOrgpolicyV1BooleanPolicy): Self = StObject.set(x, "booleanPolicy", value.asInstanceOf[js.Any])
+    inline def setBooleanPolicy(value: GoogleCloudOrgpolicyV1BooleanPolicy): Self = StObject.set(x, "booleanPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanPolicyUndefined: Self = StObject.set(x, "booleanPolicy", js.undefined)
+    inline def setBooleanPolicyUndefined: Self = StObject.set(x, "booleanPolicy", js.undefined)
     
-    @scala.inline
-    def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setListPolicy(value: GoogleCloudOrgpolicyV1ListPolicy): Self = StObject.set(x, "listPolicy", value.asInstanceOf[js.Any])
+    inline def setListPolicy(value: GoogleCloudOrgpolicyV1ListPolicy): Self = StObject.set(x, "listPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPolicyUndefined: Self = StObject.set(x, "listPolicy", js.undefined)
+    inline def setListPolicyUndefined: Self = StObject.set(x, "listPolicy", js.undefined)
     
-    @scala.inline
-    def setRestoreDefault(value: js.Any): Self = StObject.set(x, "restoreDefault", value.asInstanceOf[js.Any])
+    inline def setRestoreDefault(value: js.Any): Self = StObject.set(x, "restoreDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreDefaultUndefined: Self = StObject.set(x, "restoreDefault", js.undefined)
+    inline def setRestoreDefaultUndefined: Self = StObject.set(x, "restoreDefault", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

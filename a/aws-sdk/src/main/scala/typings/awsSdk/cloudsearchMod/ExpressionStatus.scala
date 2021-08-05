@@ -15,19 +15,15 @@ trait ExpressionStatus extends StObject {
 }
 object ExpressionStatus {
   
-  @scala.inline
-  def apply(Options: Expression, Status: OptionStatus): ExpressionStatus = {
+  inline def apply(Options: Expression, Status: OptionStatus): ExpressionStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressionStatus]
   }
   
-  @scala.inline
-  implicit class ExpressionStatusMutableBuilder[Self <: ExpressionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ExpressionStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Expression): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Expression): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

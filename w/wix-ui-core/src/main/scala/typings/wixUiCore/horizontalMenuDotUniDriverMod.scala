@@ -13,8 +13,7 @@ object horizontalMenuDotUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def horizontalMenuUniDriverFactory(base: UniDriver[js.Any]): ClickMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("horizontalMenuUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ClickMenuItem]
+  inline def horizontalMenuUniDriverFactory(base: UniDriver[js.Any]): ClickMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("horizontalMenuUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ClickMenuItem]
   
   trait HorizontalMenuDriver
     extends StObject
@@ -45,8 +44,7 @@ object horizontalMenuDotUniDriverMod {
   }
   object HorizontalMenuDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickMenuItem: String => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -63,32 +61,23 @@ object horizontalMenuDotUniDriverMod {
       __obj.asInstanceOf[HorizontalMenuDriver]
     }
     
-    @scala.inline
-    implicit class HorizontalMenuDriverMutableBuilder[Self <: HorizontalMenuDriver] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalMenuDriver](x: Self) {
       
-      @scala.inline
-      def setClickMenuItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickMenuItem", js.Any.fromFunction1(value))
+      inline def setClickMenuItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickMenuItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementByDataHook(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getElementByDataHook", js.Any.fromFunction1(value))
+      inline def setGetElementByDataHook(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getElementByDataHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMenuContainer(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getMenuContainer", js.Any.fromFunction0(value))
+      inline def setGetMenuContainer(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getMenuContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMenuItem(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getMenuItem", js.Any.fromFunction1(value))
+      inline def setGetMenuItem(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getMenuItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMenuItemColumnsLayout(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getMenuItemColumnsLayout", js.Any.fromFunction1(value))
+      inline def setGetMenuItemColumnsLayout(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getMenuItemColumnsLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMenuItemGridLayout(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getMenuItemGridLayout", js.Any.fromFunction1(value))
+      inline def setGetMenuItemGridLayout(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getMenuItemGridLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMenuNavigation(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getMenuNavigation", js.Any.fromFunction0(value))
+      inline def setGetMenuNavigation(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getMenuNavigation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHoverMenuItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "hoverMenuItem", js.Any.fromFunction1(value))
+      inline def setHoverMenuItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "hoverMenuItem", js.Any.fromFunction1(value))
     }
   }
 }

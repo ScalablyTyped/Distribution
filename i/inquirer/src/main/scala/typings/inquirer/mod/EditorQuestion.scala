@@ -23,17 +23,14 @@ trait EditorQuestion[T /* <: Answers */]
 }
 object EditorQuestion {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): EditorQuestion[T] = {
+  inline def apply[T /* <: Answers */](): EditorQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("editor")
     __obj.asInstanceOf[EditorQuestion[T]]
   }
   
-  @scala.inline
-  implicit class EditorQuestionMutableBuilder[Self <: EditorQuestion[?], T /* <: Answers */] (val x: Self & EditorQuestion[T]) extends AnyVal {
+  extension [Self <: EditorQuestion[?], T /* <: Answers */](x: Self & EditorQuestion[T]) {
     
-    @scala.inline
-    def setType(value: editor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: editor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

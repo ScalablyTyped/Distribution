@@ -16,26 +16,20 @@ object anon {
   }
   object Fn {
     
-    @scala.inline
-    def apply(): Fn = {
+    inline def apply(): Fn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fn]
     }
     
-    @scala.inline
-    implicit class FnMutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
+    extension [Self <: Fn](x: Self) {
       
-      @scala.inline
-      def setFn(value: (/* snippet */ String, /* match */ String) => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* snippet */ String, /* match */ String) => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     }
   }
   
@@ -45,20 +39,16 @@ object anon {
   }
   object HeartbeatTimeout {
     
-    @scala.inline
-    def apply(): HeartbeatTimeout = {
+    inline def apply(): HeartbeatTimeout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeartbeatTimeout]
     }
     
-    @scala.inline
-    implicit class HeartbeatTimeoutMutableBuilder[Self <: HeartbeatTimeout] (val x: Self) extends AnyVal {
+    extension [Self <: HeartbeatTimeout](x: Self) {
       
-      @scala.inline
-      def setHeartbeatTimeout(value: Double): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
+      inline def setHeartbeatTimeout(value: Double): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
+      inline def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
     }
   }
   
@@ -71,23 +61,18 @@ object anon {
   }
   object Plugin {
     
-    @scala.inline
-    def apply(plugin: (js.Object, BrowserSyncInstance) => js.Any): Plugin = {
+    inline def apply(plugin: (js.Object, BrowserSyncInstance) => js.Any): Plugin = {
       val __obj = js.Dynamic.literal(plugin = js.Any.fromFunction2(plugin))
       __obj.asInstanceOf[Plugin]
     }
     
-    @scala.inline
-    implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+    extension [Self <: Plugin](x: Self) {
       
-      @scala.inline
-      def setPlugin(value: (js.Object, BrowserSyncInstance) => js.Any): Self = StObject.set(x, "plugin", js.Any.fromFunction2(value))
+      inline def setPlugin(value: (js.Object, BrowserSyncInstance) => js.Any): Self = StObject.set(x, "plugin", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPluginColonname(value: String): Self = StObject.set(x, "plugin:name", value.asInstanceOf[js.Any])
+      inline def setPluginColonname(value: String): Self = StObject.set(x, "plugin:name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginColonnameUndefined: Self = StObject.set(x, "plugin:name", js.undefined)
+      inline def setPluginColonnameUndefined: Self = StObject.set(x, "plugin:name", js.undefined)
     }
   }
   
@@ -97,20 +82,16 @@ object anon {
   }
   object Port {
     
-    @scala.inline
-    def apply(): Port = {
+    inline def apply(): Port = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Port]
     }
     
-    @scala.inline
-    implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+    extension [Self <: Port](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -120,17 +101,14 @@ object anon {
   }
   object Stream {
     
-    @scala.inline
-    def apply(stream: Boolean): Stream = {
+    inline def apply(stream: Boolean): Stream = {
       val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stream]
     }
     
-    @scala.inline
-    implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+    extension [Self <: Stream](x: Self) {
       
-      @scala.inline
-      def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

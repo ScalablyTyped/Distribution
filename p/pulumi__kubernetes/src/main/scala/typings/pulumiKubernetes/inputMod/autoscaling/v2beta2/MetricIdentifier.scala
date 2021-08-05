@@ -23,22 +23,17 @@ trait MetricIdentifier extends StObject {
 }
 object MetricIdentifier {
   
-  @scala.inline
-  def apply(name: Input[String]): MetricIdentifier = {
+  inline def apply(name: Input[String]): MetricIdentifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricIdentifier]
   }
   
-  @scala.inline
-  implicit class MetricIdentifierMutableBuilder[Self <: MetricIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: MetricIdentifier](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

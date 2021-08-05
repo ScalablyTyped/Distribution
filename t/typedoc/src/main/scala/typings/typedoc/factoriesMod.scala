@@ -24,29 +24,19 @@ object factoriesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createComment(node: Node): js.UndefOr[Comment] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComment")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Comment]]
+  inline def createComment(node: Node): js.UndefOr[Comment] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComment")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Comment]]
   
-  @scala.inline
-  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
-  @scala.inline
-  def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind, name: String): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
+  inline def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
+  inline def createDeclaration(context: Context, node: Declaration, kind: ReflectionKind, name: String): js.UndefOr[DeclarationReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeclaration")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[DeclarationReflection]]
   
-  @scala.inline
-  def createParameter(context: Context, node: ParameterDeclaration): js.UndefOr[ParameterReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParameterReflection]]
+  inline def createParameter(context: Context, node: ParameterDeclaration): js.UndefOr[ParameterReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParameterReflection]]
   
-  @scala.inline
-  def createReferenceType(context: Context): js.UndefOr[ReferenceType] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReferenceType]]
-  @scala.inline
-  def createReferenceType(context: Context, symbol: Unit, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
-  @scala.inline
-  def createReferenceType(context: Context, symbol: Symbol): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
-  @scala.inline
-  def createReferenceType(context: Context, symbol: Symbol, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
+  inline def createReferenceType(context: Context): js.UndefOr[ReferenceType] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReferenceType]]
+  inline def createReferenceType(context: Context, symbol: Unit, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
+  inline def createReferenceType(context: Context, symbol: Symbol): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
+  inline def createReferenceType(context: Context, symbol: Symbol, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
   
-  @scala.inline
-  def createSignature(context: Context, node: SignatureDeclaration, name: String, kind: ReflectionKind): SignatureReflection = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignature")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[SignatureReflection]
+  inline def createSignature(context: Context, node: SignatureDeclaration, name: String, kind: ReflectionKind): SignatureReflection = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignature")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[SignatureReflection]
   
-  @scala.inline
-  def createTypeParameter(context: Context, node: TypeParameterDeclaration): js.UndefOr[TypeParameterType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TypeParameterType]]
+  inline def createTypeParameter(context: Context, node: TypeParameterDeclaration): js.UndefOr[TypeParameterType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TypeParameterType]]
 }

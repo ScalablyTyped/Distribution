@@ -29,37 +29,27 @@ trait PerformanceGoal extends StObject {
 }
 object PerformanceGoal {
   
-  @scala.inline
-  def apply(): PerformanceGoal = {
+  inline def apply(): PerformanceGoal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceGoal]
   }
   
-  @scala.inline
-  implicit class PerformanceGoalMutableBuilder[Self <: PerformanceGoal] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceGoal](x: Self) {
     
-    @scala.inline
-    def setPerformanceGoalAmountMicros(value: String): Self = StObject.set(x, "performanceGoalAmountMicros", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoalAmountMicros(value: String): Self = StObject.set(x, "performanceGoalAmountMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalAmountMicrosUndefined: Self = StObject.set(x, "performanceGoalAmountMicros", js.undefined)
+    inline def setPerformanceGoalAmountMicrosUndefined: Self = StObject.set(x, "performanceGoalAmountMicros", js.undefined)
     
-    @scala.inline
-    def setPerformanceGoalPercentageMicros(value: String): Self = StObject.set(x, "performanceGoalPercentageMicros", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoalPercentageMicros(value: String): Self = StObject.set(x, "performanceGoalPercentageMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalPercentageMicrosUndefined: Self = StObject.set(x, "performanceGoalPercentageMicros", js.undefined)
+    inline def setPerformanceGoalPercentageMicrosUndefined: Self = StObject.set(x, "performanceGoalPercentageMicros", js.undefined)
     
-    @scala.inline
-    def setPerformanceGoalString(value: String): Self = StObject.set(x, "performanceGoalString", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoalString(value: String): Self = StObject.set(x, "performanceGoalString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalStringUndefined: Self = StObject.set(x, "performanceGoalString", js.undefined)
+    inline def setPerformanceGoalStringUndefined: Self = StObject.set(x, "performanceGoalString", js.undefined)
     
-    @scala.inline
-    def setPerformanceGoalType(value: String): Self = StObject.set(x, "performanceGoalType", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoalType(value: String): Self = StObject.set(x, "performanceGoalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalTypeUndefined: Self = StObject.set(x, "performanceGoalType", js.undefined)
+    inline def setPerformanceGoalTypeUndefined: Self = StObject.set(x, "performanceGoalType", js.undefined)
   }
 }

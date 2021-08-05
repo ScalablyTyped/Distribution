@@ -43,43 +43,31 @@ trait ParamsResourcePresentationsPagesGetthumbnail
 }
 object ParamsResourcePresentationsPagesGetthumbnail {
   
-  @scala.inline
-  def apply(): ParamsResourcePresentationsPagesGetthumbnail = {
+  inline def apply(): ParamsResourcePresentationsPagesGetthumbnail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePresentationsPagesGetthumbnail]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePresentationsPagesGetthumbnailMutableBuilder[Self <: ParamsResourcePresentationsPagesGetthumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePresentationsPagesGetthumbnail](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
+    inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
+    inline def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
     
-    @scala.inline
-    def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
+    inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
+    inline def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
     
-    @scala.inline
-    def setThumbnailPropertiesDotmimeType(value: String): Self = StObject.set(x, "thumbnailProperties.mimeType", value.asInstanceOf[js.Any])
+    inline def setThumbnailPropertiesDotmimeType(value: String): Self = StObject.set(x, "thumbnailProperties.mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailPropertiesDotmimeTypeUndefined: Self = StObject.set(x, "thumbnailProperties.mimeType", js.undefined)
+    inline def setThumbnailPropertiesDotmimeTypeUndefined: Self = StObject.set(x, "thumbnailProperties.mimeType", js.undefined)
     
-    @scala.inline
-    def setThumbnailPropertiesDotthumbnailSize(value: String): Self = StObject.set(x, "thumbnailProperties.thumbnailSize", value.asInstanceOf[js.Any])
+    inline def setThumbnailPropertiesDotthumbnailSize(value: String): Self = StObject.set(x, "thumbnailProperties.thumbnailSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailPropertiesDotthumbnailSizeUndefined: Self = StObject.set(x, "thumbnailProperties.thumbnailSize", js.undefined)
+    inline def setThumbnailPropertiesDotthumbnailSizeUndefined: Self = StObject.set(x, "thumbnailProperties.thumbnailSize", js.undefined)
   }
 }

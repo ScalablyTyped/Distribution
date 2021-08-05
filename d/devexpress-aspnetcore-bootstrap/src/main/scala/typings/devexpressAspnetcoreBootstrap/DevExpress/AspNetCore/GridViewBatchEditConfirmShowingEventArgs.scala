@@ -12,16 +12,13 @@ trait GridViewBatchEditConfirmShowingEventArgs
 }
 object GridViewBatchEditConfirmShowingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, requestTriggerID: String, sender: Control): GridViewBatchEditConfirmShowingEventArgs = {
+  inline def apply(cancel: Boolean, requestTriggerID: String, sender: Control): GridViewBatchEditConfirmShowingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], requestTriggerID = requestTriggerID.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridViewBatchEditConfirmShowingEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewBatchEditConfirmShowingEventArgsMutableBuilder[Self <: GridViewBatchEditConfirmShowingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewBatchEditConfirmShowingEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
+    inline def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
   }
 }

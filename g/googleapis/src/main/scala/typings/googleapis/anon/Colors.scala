@@ -14,34 +14,25 @@ trait Colors extends StObject {
 }
 object Colors {
   
-  @scala.inline
-  def apply(): Colors = {
+  inline def apply(): Colors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Colors]
   }
   
-  @scala.inline
-  implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
+  extension [Self <: Colors](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[Opacity]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Opacity]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(value: Opacity*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Opacity*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

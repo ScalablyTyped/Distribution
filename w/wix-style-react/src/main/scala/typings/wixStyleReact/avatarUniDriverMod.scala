@@ -24,8 +24,7 @@ object avatarUniDriverMod {
   }
   object AvatarUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickCustomIndication: () => js.Promise[Unit],
       clickIndication: () => js.Promise[Unit],
@@ -42,23 +41,17 @@ object avatarUniDriverMod {
       __obj.asInstanceOf[AvatarUniDriver]
     }
     
-    @scala.inline
-    implicit class AvatarUniDriverMutableBuilder[Self <: AvatarUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickCustomIndication(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCustomIndication", js.Any.fromFunction0(value))
+      inline def setClickCustomIndication(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCustomIndication", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickIndication(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickIndication", js.Any.fromFunction0(value))
+      inline def setClickIndication(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickIndication", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCustomIndicationExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "customIndicationExists", js.Any.fromFunction0(value))
+      inline def setCustomIndicationExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "customIndicationExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIndicationExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "indicationExists", js.Any.fromFunction0(value))
+      inline def setIndicationExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "indicationExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoading(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+      inline def setIsLoading(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
     }
   }
 }

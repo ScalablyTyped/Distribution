@@ -17,8 +17,7 @@ trait GlobalTransferCommandArgument2
 }
 object GlobalTransferCommandArgument2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentId: String,
     MimeType: String,
     NameClash: Double,
@@ -31,13 +30,10 @@ object GlobalTransferCommandArgument2 {
     __obj.asInstanceOf[GlobalTransferCommandArgument2]
   }
   
-  @scala.inline
-  implicit class GlobalTransferCommandArgument2MutableBuilder[Self <: GlobalTransferCommandArgument2] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalTransferCommandArgument2](x: Self) {
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
   }
 }

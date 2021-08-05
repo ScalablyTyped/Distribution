@@ -14,25 +14,19 @@ trait Assignment extends StObject {
 }
 object Assignment {
   
-  @scala.inline
-  def apply(): Assignment = {
+  inline def apply(): Assignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Assignment]
   }
   
-  @scala.inline
-  implicit class AssignmentMutableBuilder[Self <: Assignment] (val x: Self) extends AnyVal {
+  extension [Self <: Assignment](x: Self) {
     
-    @scala.inline
-    def setAssignedUser(value: User): Self = StObject.set(x, "assignedUser", value.asInstanceOf[js.Any])
+    inline def setAssignedUser(value: User): Self = StObject.set(x, "assignedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedUserUndefined: Self = StObject.set(x, "assignedUser", js.undefined)
+    inline def setAssignedUserUndefined: Self = StObject.set(x, "assignedUser", js.undefined)
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
   }
 }

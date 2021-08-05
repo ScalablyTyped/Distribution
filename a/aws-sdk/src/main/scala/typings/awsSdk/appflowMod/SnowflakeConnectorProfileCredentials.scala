@@ -18,19 +18,15 @@ trait SnowflakeConnectorProfileCredentials extends StObject {
 }
 object SnowflakeConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(password: Password, username: Username): SnowflakeConnectorProfileCredentials = {
+  inline def apply(password: Password, username: Username): SnowflakeConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnowflakeConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class SnowflakeConnectorProfileCredentialsMutableBuilder[Self <: SnowflakeConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: SnowflakeConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

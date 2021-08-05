@@ -16,17 +16,14 @@ object typesTipOfSourceReferenceIsDifferentExceptionMod {
   }
   object TipOfSourceReferenceIsDifferentException {
     
-    @scala.inline
-    def apply(): TipOfSourceReferenceIsDifferentException = {
+    inline def apply(): TipOfSourceReferenceIsDifferentException = {
       val __obj = js.Dynamic.literal(name = "TipOfSourceReferenceIsDifferentException")
       __obj.asInstanceOf[TipOfSourceReferenceIsDifferentException]
     }
     
-    @scala.inline
-    implicit class TipOfSourceReferenceIsDifferentExceptionMutableBuilder[Self <: TipOfSourceReferenceIsDifferentException] (val x: Self) extends AnyVal {
+    extension [Self <: TipOfSourceReferenceIsDifferentException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TipOfSourceReferenceIsDifferentException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

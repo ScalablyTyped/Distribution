@@ -9,8 +9,7 @@ trait ResolvedCompletionEntry
      with CachedCompletionEntryDetails
 object ResolvedCompletionEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     docComment: String,
     fullSymbolName: String,
     isResolved: () => Boolean,

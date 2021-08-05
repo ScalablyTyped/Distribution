@@ -23,20 +23,16 @@ object hotkeysTypesMod {
   }
   object IHotkeysProps {
     
-    @scala.inline
-    def apply(): IHotkeysProps = {
+    inline def apply(): IHotkeysProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHotkeysProps]
     }
     
-    @scala.inline
-    implicit class IHotkeysPropsMutableBuilder[Self <: IHotkeysProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHotkeysProps](x: Self) {
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
 }

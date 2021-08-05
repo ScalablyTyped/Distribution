@@ -26,8 +26,7 @@ object httpsMod {
   @JSImport("follow-redirects/https", "Agent")
   @js.native
   def Agent: Instantiable0[typings.node.httpsMod.Agent] = js.native
-  @scala.inline
-  def Agent_=(x: Instantiable0[typings.node.httpsMod.Agent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Agent")(x.asInstanceOf[js.Any])
+  inline def Agent_=(x: Instantiable0[typings.node.httpsMod.Agent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Agent")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("follow-redirects/https", "Server")
@@ -37,45 +36,33 @@ object httpsMod {
   @JSImport("follow-redirects/https", "Server")
   @js.native
   def Server: Instantiable0[typings.node.httpsMod.Server] = js.native
-  @scala.inline
-  def Server_=(x: Instantiable0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
+  inline def Server_=(x: Instantiable0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def createServer(): typings.node.httpsMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.httpsMod.Server]
+  inline def createServer(): typings.node.httpsMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.httpsMod.Server]
   @JSImport("follow-redirects/https", "createServer")
   @js.native
   def createServer_FhttpsMod: js.Function0[typings.node.httpsMod.Server] = js.native
   
-  @scala.inline
-  def createServer_FhttpsMod_=(x: js.Function0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
+  inline def createServer_FhttpsMod_=(x: js.Function0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def get(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
-  @scala.inline
-  def get(
+  inline def get(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  inline def get(
     options: RequestOptions & FollowOptions[RequestOptions],
     callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]
   ): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
-  @scala.inline
-  def get(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
-  @scala.inline
-  def get(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  inline def get(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  inline def get(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
   
   @JSImport("follow-redirects/https", "globalAgent")
   @js.native
   def globalAgent: typings.node.httpsMod.Agent = js.native
-  @scala.inline
-  def globalAgent_=(x: typings.node.httpsMod.Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
+  inline def globalAgent_=(x: typings.node.httpsMod.Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def request(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
-  @scala.inline
-  def request(
+  inline def request(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  inline def request(
     options: RequestOptions & FollowOptions[RequestOptions],
     callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]
   ): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
-  @scala.inline
-  def request(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
-  @scala.inline
-  def request(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  inline def request(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+  inline def request(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
 }

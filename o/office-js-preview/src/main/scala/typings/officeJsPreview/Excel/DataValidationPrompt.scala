@@ -38,22 +38,17 @@ trait DataValidationPrompt extends StObject {
 }
 object DataValidationPrompt {
   
-  @scala.inline
-  def apply(message: String, showPrompt: Boolean, title: String): DataValidationPrompt = {
+  inline def apply(message: String, showPrompt: Boolean, title: String): DataValidationPrompt = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], showPrompt = showPrompt.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationPrompt]
   }
   
-  @scala.inline
-  implicit class DataValidationPromptMutableBuilder[Self <: DataValidationPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: DataValidationPrompt](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPrompt(value: Boolean): Self = StObject.set(x, "showPrompt", value.asInstanceOf[js.Any])
+    inline def setShowPrompt(value: Boolean): Self = StObject.set(x, "showPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String): typings.orderedmap.mod.^[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[typings.orderedmap.mod.^[NodeSpec]]
-  @scala.inline
-  def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String, listGroup: String): typings.orderedmap.mod.^[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[typings.orderedmap.mod.^[NodeSpec]]
+  inline def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String): typings.orderedmap.mod.^[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[typings.orderedmap.mod.^[NodeSpec]]
+  inline def addListNodes(nodes: typings.orderedmap.mod.^[NodeSpec], itemContent: String, listGroup: String): typings.orderedmap.mod.^[NodeSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListNodes")(nodes.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any], listGroup.asInstanceOf[js.Any])).asInstanceOf[typings.orderedmap.mod.^[NodeSpec]]
   
   @JSImport("prosemirror-schema-list", "bulletList")
   @js.native
   def bulletList: NodeSpec = js.native
-  @scala.inline
-  def bulletList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bulletList")(x.asInstanceOf[js.Any])
+  inline def bulletList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bulletList")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def liftListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
+  inline def liftListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
@@ -41,17 +37,14 @@ object mod {
   @JSImport("prosemirror-schema-list", "listItem")
   @js.native
   def listItem: NodeSpec = js.native
-  @scala.inline
-  def listItem_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("listItem")(x.asInstanceOf[js.Any])
+  inline def listItem_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("listItem")(x.asInstanceOf[js.Any])
   
   @JSImport("prosemirror-schema-list", "orderedList")
   @js.native
   def orderedList: NodeSpec = js.native
-  @scala.inline
-  def orderedList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderedList")(x.asInstanceOf[js.Any])
+  inline def orderedList_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orderedList")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def sinkListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
+  inline def sinkListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
@@ -61,8 +54,7 @@ object mod {
     Boolean
   ]]
   
-  @scala.inline
-  def splitListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
+  inline def splitListItem[S /* <: Schema[js.Any, js.Any] */](itemType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
@@ -72,8 +64,7 @@ object mod {
     Boolean
   ]]
   
-  @scala.inline
-  def wrapInList[S /* <: Schema[js.Any, js.Any] */](listType: NodeType[S]): js.Function2[
+  inline def wrapInList[S /* <: Schema[js.Any, js.Any] */](listType: NodeType[S]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
@@ -82,8 +73,7 @@ object mod {
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
   ]]
-  @scala.inline
-  def wrapInList[S /* <: Schema[js.Any, js.Any] */](listType: NodeType[S], attrs: StringDictionary[js.Any]): js.Function2[
+  inline def wrapInList[S /* <: Schema[js.Any, js.Any] */](listType: NodeType[S], attrs: StringDictionary[js.Any]): js.Function2[
     /* state */ EditorState[S], 
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean

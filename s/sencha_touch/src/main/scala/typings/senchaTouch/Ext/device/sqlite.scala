@@ -33,38 +33,28 @@ object sqlite {
   }
   object IDatabase {
     
-    @scala.inline
-    def apply(): IDatabase = {
+    inline def apply(): IDatabase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDatabase]
     }
     
-    @scala.inline
-    implicit class IDatabaseMutableBuilder[Self <: IDatabase] (val x: Self) extends AnyVal {
+    extension [Self <: IDatabase](x: Self) {
       
-      @scala.inline
-      def setChangeVersion(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction1(value))
+      inline def setChangeVersion(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeVersionUndefined: Self = StObject.set(x, "changeVersion", js.undefined)
+      inline def setChangeVersionUndefined: Self = StObject.set(x, "changeVersion", js.undefined)
       
-      @scala.inline
-      def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+      inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVersionUndefined: Self = StObject.set(x, "getVersion", js.undefined)
+      inline def setGetVersionUndefined: Self = StObject.set(x, "getVersion", js.undefined)
       
-      @scala.inline
-      def setReadTransaction(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readTransaction", js.Any.fromFunction1(value))
+      inline def setReadTransaction(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readTransaction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadTransactionUndefined: Self = StObject.set(x, "readTransaction", js.undefined)
+      inline def setReadTransactionUndefined: Self = StObject.set(x, "readTransaction", js.undefined)
       
-      @scala.inline
-      def setTransaction(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+      inline def setTransaction(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+      inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     }
   }
   
@@ -89,32 +79,24 @@ object sqlite {
   }
   object ISQLResultSet {
     
-    @scala.inline
-    def apply(): ISQLResultSet = {
+    inline def apply(): ISQLResultSet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISQLResultSet]
     }
     
-    @scala.inline
-    implicit class ISQLResultSetMutableBuilder[Self <: ISQLResultSet] (val x: Self) extends AnyVal {
+    extension [Self <: ISQLResultSet](x: Self) {
       
-      @scala.inline
-      def setGetInsertId(value: () => Double): Self = StObject.set(x, "getInsertId", js.Any.fromFunction0(value))
+      inline def setGetInsertId(value: () => Double): Self = StObject.set(x, "getInsertId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInsertIdUndefined: Self = StObject.set(x, "getInsertId", js.undefined)
+      inline def setGetInsertIdUndefined: Self = StObject.set(x, "getInsertId", js.undefined)
       
-      @scala.inline
-      def setGetRows(value: () => ISQLResultSetRowList): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
+      inline def setGetRows(value: () => ISQLResultSetRowList): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRowsAffected(value: () => Double): Self = StObject.set(x, "getRowsAffected", js.Any.fromFunction0(value))
+      inline def setGetRowsAffected(value: () => Double): Self = StObject.set(x, "getRowsAffected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRowsAffectedUndefined: Self = StObject.set(x, "getRowsAffected", js.undefined)
+      inline def setGetRowsAffectedUndefined: Self = StObject.set(x, "getRowsAffected", js.undefined)
       
-      @scala.inline
-      def setGetRowsUndefined: Self = StObject.set(x, "getRows", js.undefined)
+      inline def setGetRowsUndefined: Self = StObject.set(x, "getRows", js.undefined)
     }
   }
   
@@ -135,26 +117,20 @@ object sqlite {
   }
   object ISQLResultSetRowList {
     
-    @scala.inline
-    def apply(): ISQLResultSetRowList = {
+    inline def apply(): ISQLResultSetRowList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISQLResultSetRowList]
     }
     
-    @scala.inline
-    implicit class ISQLResultSetRowListMutableBuilder[Self <: ISQLResultSetRowList] (val x: Self) extends AnyVal {
+    extension [Self <: ISQLResultSetRowList](x: Self) {
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLengthUndefined: Self = StObject.set(x, "getLength", js.undefined)
+      inline def setGetLengthUndefined: Self = StObject.set(x, "getLength", js.undefined)
       
-      @scala.inline
-      def setItem(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     }
   }
   
@@ -169,20 +145,16 @@ object sqlite {
   }
   object ISQLTransaction {
     
-    @scala.inline
-    def apply(): ISQLTransaction = {
+    inline def apply(): ISQLTransaction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISQLTransaction]
     }
     
-    @scala.inline
-    implicit class ISQLTransactionMutableBuilder[Self <: ISQLTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: ISQLTransaction](x: Self) {
       
-      @scala.inline
-      def setExecuteSql(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
+      inline def setExecuteSql(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecuteSqlUndefined: Self = StObject.set(x, "executeSql", js.undefined)
+      inline def setExecuteSqlUndefined: Self = StObject.set(x, "executeSql", js.undefined)
     }
   }
   
@@ -198,20 +170,16 @@ object sqlite {
   }
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }
     
-    @scala.inline
-    implicit class ISenchaMutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
+    extension [Self <: ISencha](x: Self) {
       
-      @scala.inline
-      def setOpenDatabase(value: /* config */ js.UndefOr[js.Any] => IDatabase): Self = StObject.set(x, "openDatabase", js.Any.fromFunction1(value))
+      inline def setOpenDatabase(value: /* config */ js.UndefOr[js.Any] => IDatabase): Self = StObject.set(x, "openDatabase", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenDatabaseUndefined: Self = StObject.set(x, "openDatabase", js.undefined)
+      inline def setOpenDatabaseUndefined: Self = StObject.set(x, "openDatabase", js.undefined)
     }
   }
 }

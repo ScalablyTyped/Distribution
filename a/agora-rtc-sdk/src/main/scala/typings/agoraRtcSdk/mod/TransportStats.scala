@@ -50,31 +50,23 @@ trait TransportStats extends StObject {
 }
 object TransportStats {
   
-  @scala.inline
-  def apply(): TransportStats = {
+  inline def apply(): TransportStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransportStats]
   }
   
-  @scala.inline
-  implicit class TransportStatsMutableBuilder[Self <: TransportStats] (val x: Self) extends AnyVal {
+  extension [Self <: TransportStats](x: Self) {
     
-    @scala.inline
-    def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
     
-    @scala.inline
-    def setOutgoingAvailableBandwidth(value: String): Self = StObject.set(x, "OutgoingAvailableBandwidth", value.asInstanceOf[js.Any])
+    inline def setOutgoingAvailableBandwidth(value: String): Self = StObject.set(x, "OutgoingAvailableBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoingAvailableBandwidthUndefined: Self = StObject.set(x, "OutgoingAvailableBandwidth", js.undefined)
+    inline def setOutgoingAvailableBandwidthUndefined: Self = StObject.set(x, "OutgoingAvailableBandwidth", js.undefined)
     
-    @scala.inline
-    def setRTT(value: String): Self = StObject.set(x, "RTT", value.asInstanceOf[js.Any])
+    inline def setRTT(value: String): Self = StObject.set(x, "RTT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRTTUndefined: Self = StObject.set(x, "RTT", js.undefined)
+    inline def setRTTUndefined: Self = StObject.set(x, "RTT", js.undefined)
   }
 }

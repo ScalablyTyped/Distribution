@@ -21,8 +21,7 @@ trait NodeAffinity extends StObject {
 }
 object NodeAffinity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     preferredDuringSchedulingIgnoredDuringExecution: js.Array[PreferredSchedulingTerm],
     requiredDuringSchedulingIgnoredDuringExecution: NodeSelector
   ): NodeAffinity = {
@@ -30,16 +29,12 @@ object NodeAffinity {
     __obj.asInstanceOf[NodeAffinity]
   }
   
-  @scala.inline
-  implicit class NodeAffinityMutableBuilder[Self <: NodeAffinity] (val x: Self) extends AnyVal {
+  extension [Self <: NodeAffinity](x: Self) {
     
-    @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecution(value: js.Array[PreferredSchedulingTerm]): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
+    inline def setPreferredDuringSchedulingIgnoredDuringExecution(value: js.Array[PreferredSchedulingTerm]): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: PreferredSchedulingTerm*): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
+    inline def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: PreferredSchedulingTerm*): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredDuringSchedulingIgnoredDuringExecution(value: NodeSelector): Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
+    inline def setRequiredDuringSchedulingIgnoredDuringExecution(value: NodeSelector): Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
   }
 }

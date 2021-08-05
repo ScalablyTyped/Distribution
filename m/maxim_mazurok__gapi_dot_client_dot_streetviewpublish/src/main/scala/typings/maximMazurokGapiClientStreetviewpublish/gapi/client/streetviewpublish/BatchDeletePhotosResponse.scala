@@ -11,22 +11,17 @@ trait BatchDeletePhotosResponse extends StObject {
 }
 object BatchDeletePhotosResponse {
   
-  @scala.inline
-  def apply(): BatchDeletePhotosResponse = {
+  inline def apply(): BatchDeletePhotosResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeletePhotosResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeletePhotosResponseMutableBuilder[Self <: BatchDeletePhotosResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeletePhotosResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: js.Array[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value :_*))
   }
 }

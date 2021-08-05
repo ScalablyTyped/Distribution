@@ -10,16 +10,13 @@ trait HttpResponseCode extends StObject {
 }
 object HttpResponseCode {
   
-  @scala.inline
-  def apply(httpResponseCode: Double): HttpResponseCode = {
+  inline def apply(httpResponseCode: Double): HttpResponseCode = {
     val __obj = js.Dynamic.literal(httpResponseCode = httpResponseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponseCode]
   }
   
-  @scala.inline
-  implicit class HttpResponseCodeMutableBuilder[Self <: HttpResponseCode] (val x: Self) extends AnyVal {
+  extension [Self <: HttpResponseCode](x: Self) {
     
-    @scala.inline
-    def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
+    inline def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
   }
 }

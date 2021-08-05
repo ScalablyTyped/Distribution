@@ -16,25 +16,19 @@ trait ASPxDesignerElementEditor extends StObject {
 }
 object ASPxDesignerElementEditor {
   
-  @scala.inline
-  def apply(content: String, editorType: js.Any, extendedOptions: js.Any, header: String): ASPxDesignerElementEditor = {
+  inline def apply(content: String, editorType: js.Any, extendedOptions: js.Any, header: String): ASPxDesignerElementEditor = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], editorType = editorType.asInstanceOf[js.Any], extendedOptions = extendedOptions.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxDesignerElementEditor]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerElementEditorMutableBuilder[Self <: ASPxDesignerElementEditor] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerElementEditor](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorType(value: js.Any): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
+    inline def setEditorType(value: js.Any): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedOptions(value: js.Any): Self = StObject.set(x, "extendedOptions", value.asInstanceOf[js.Any])
+    inline def setExtendedOptions(value: js.Any): Self = StObject.set(x, "extendedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

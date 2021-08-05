@@ -11,20 +11,16 @@ trait AdminGroupsMigration extends StObject {
 }
 object AdminGroupsMigration {
   
-  @scala.inline
-  def apply(): AdminGroupsMigration = {
+  inline def apply(): AdminGroupsMigration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminGroupsMigration]
   }
   
-  @scala.inline
-  implicit class AdminGroupsMigrationMutableBuilder[Self <: AdminGroupsMigration] (val x: Self) extends AnyVal {
+  extension [Self <: AdminGroupsMigration](x: Self) {
     
-    @scala.inline
-    def setArchive(value: ArchiveCollection): Self = StObject.set(x, "Archive", value.asInstanceOf[js.Any])
+    inline def setArchive(value: ArchiveCollection): Self = StObject.set(x, "Archive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveUndefined: Self = StObject.set(x, "Archive", js.undefined)
+    inline def setArchiveUndefined: Self = StObject.set(x, "Archive", js.undefined)
   }
   
   object Collection {
@@ -49,26 +45,20 @@ object AdminGroupsMigration {
     }
     object Groups {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups]
       }
       
-      @scala.inline
-      implicit class GroupsMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups](x: Self) {
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setResponseCode(value: String): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+        inline def setResponseCode(value: String): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
+        inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
       }
     }
   }

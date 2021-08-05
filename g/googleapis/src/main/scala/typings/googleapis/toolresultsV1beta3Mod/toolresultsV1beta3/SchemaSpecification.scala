@@ -16,19 +16,15 @@ trait SchemaSpecification extends StObject {
 }
 object SchemaSpecification {
   
-  @scala.inline
-  def apply(): SchemaSpecification = {
+  inline def apply(): SchemaSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpecification]
   }
   
-  @scala.inline
-  implicit class SchemaSpecificationMutableBuilder[Self <: SchemaSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpecification](x: Self) {
     
-    @scala.inline
-    def setAndroidTest(value: SchemaAndroidTest): Self = StObject.set(x, "androidTest", value.asInstanceOf[js.Any])
+    inline def setAndroidTest(value: SchemaAndroidTest): Self = StObject.set(x, "androidTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidTestUndefined: Self = StObject.set(x, "androidTest", js.undefined)
+    inline def setAndroidTestUndefined: Self = StObject.set(x, "androidTest", js.undefined)
   }
 }

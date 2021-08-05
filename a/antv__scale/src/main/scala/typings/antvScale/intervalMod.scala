@@ -11,6 +11,5 @@ object intervalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(min: js.Any, max: js.Any, interval: js.Any): Min = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Min]
+  inline def default(min: js.Any, max: js.Any, interval: js.Any): Min = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Min]
 }

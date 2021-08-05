@@ -144,10 +144,8 @@ object mod {
     * Generate URL from url pattern and given `params`.
     */
   /* static member */
-  @scala.inline
-  def url(path: String, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def url(path: RegExp, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def url(path: String, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def url(path: RegExp, params: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ILayerOptions extends StObject {
     
@@ -165,47 +163,34 @@ object mod {
   }
   object ILayerOptions {
     
-    @scala.inline
-    def apply(name: String): ILayerOptions = {
+    inline def apply(name: String): ILayerOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILayerOptions]
     }
     
-    @scala.inline
-    implicit class ILayerOptionsMutableBuilder[Self <: ILayerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ILayerOptions](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setIgnoreCaptures(value: Boolean): Self = StObject.set(x, "ignoreCaptures", value.asInstanceOf[js.Any])
+      inline def setIgnoreCaptures(value: Boolean): Self = StObject.set(x, "ignoreCaptures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCapturesUndefined: Self = StObject.set(x, "ignoreCaptures", js.undefined)
+      inline def setIgnoreCapturesUndefined: Self = StObject.set(x, "ignoreCaptures", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -237,32 +222,24 @@ object mod {
   }
   object IRouterAllowedMethodsOptions {
     
-    @scala.inline
-    def apply(): IRouterAllowedMethodsOptions = {
+    inline def apply(): IRouterAllowedMethodsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRouterAllowedMethodsOptions]
     }
     
-    @scala.inline
-    implicit class IRouterAllowedMethodsOptionsMutableBuilder[Self <: IRouterAllowedMethodsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRouterAllowedMethodsOptions](x: Self) {
       
-      @scala.inline
-      def setMethodNotAllowed(value: () => js.Any): Self = StObject.set(x, "methodNotAllowed", js.Any.fromFunction0(value))
+      inline def setMethodNotAllowed(value: () => js.Any): Self = StObject.set(x, "methodNotAllowed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMethodNotAllowedUndefined: Self = StObject.set(x, "methodNotAllowed", js.undefined)
+      inline def setMethodNotAllowedUndefined: Self = StObject.set(x, "methodNotAllowed", js.undefined)
       
-      @scala.inline
-      def setNotImplemented(value: () => js.Any): Self = StObject.set(x, "notImplemented", js.Any.fromFunction0(value))
+      inline def setNotImplemented(value: () => js.Any): Self = StObject.set(x, "notImplemented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotImplementedUndefined: Self = StObject.set(x, "notImplemented", js.undefined)
+      inline def setNotImplementedUndefined: Self = StObject.set(x, "notImplemented", js.undefined)
       
-      @scala.inline
-      def setThrow(value: Boolean): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
+      inline def setThrow(value: Boolean): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowUndefined: Self = StObject.set(x, "throw", js.undefined)
+      inline def setThrowUndefined: Self = StObject.set(x, "throw", js.undefined)
     }
   }
   
@@ -879,47 +856,34 @@ object mod {
   }
   object IRouterOptions {
     
-    @scala.inline
-    def apply(): IRouterOptions = {
+    inline def apply(): IRouterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRouterOptions]
     }
     
-    @scala.inline
-    implicit class IRouterOptionsMutableBuilder[Self <: IRouterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRouterOptions](x: Self) {
       
-      @scala.inline
-      def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRouterPath(value: String): Self = StObject.set(x, "routerPath", value.asInstanceOf[js.Any])
+      inline def setRouterPath(value: String): Self = StObject.set(x, "routerPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouterPathUndefined: Self = StObject.set(x, "routerPath", js.undefined)
+      inline def setRouterPathUndefined: Self = StObject.set(x, "routerPath", js.undefined)
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -944,32 +908,24 @@ object mod {
   }
   object IRouterParamContext {
     
-    @scala.inline
-    def apply[StateT, CustomT](params: js.Any, router: Router[StateT, CustomT]): IRouterParamContext[StateT, CustomT] = {
+    inline def apply[StateT, CustomT](params: js.Any, router: Router[StateT, CustomT]): IRouterParamContext[StateT, CustomT] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRouterParamContext[StateT, CustomT]]
     }
     
-    @scala.inline
-    implicit class IRouterParamContextMutableBuilder[Self <: IRouterParamContext[?, ?], StateT, CustomT] (val x: Self & (IRouterParamContext[StateT, CustomT])) extends AnyVal {
+    extension [Self <: IRouterParamContext[?, ?], StateT, CustomT](x: Self & (IRouterParamContext[StateT, CustomT])) {
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouter(value: Router[StateT, CustomT]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: Router[StateT, CustomT]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_matchedRoute(value: String | RegExp): Self = StObject.set(x, "_matchedRoute", value.asInstanceOf[js.Any])
+      inline def set_matchedRoute(value: String | RegExp): Self = StObject.set(x, "_matchedRoute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_matchedRouteName(value: String): Self = StObject.set(x, "_matchedRouteName", value.asInstanceOf[js.Any])
+      inline def set_matchedRouteName(value: String): Self = StObject.set(x, "_matchedRouteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_matchedRouteNameUndefined: Self = StObject.set(x, "_matchedRouteName", js.undefined)
+      inline def set_matchedRouteNameUndefined: Self = StObject.set(x, "_matchedRouteName", js.undefined)
       
-      @scala.inline
-      def set_matchedRouteUndefined: Self = StObject.set(x, "_matchedRoute", js.undefined)
+      inline def set_matchedRouteUndefined: Self = StObject.set(x, "_matchedRoute", js.undefined)
     }
   }
   
@@ -983,29 +939,22 @@ object mod {
   }
   object IRoutesMatch {
     
-    @scala.inline
-    def apply(path: js.Array[Layer], pathAndMethod: js.Array[Layer], route: Boolean): IRoutesMatch = {
+    inline def apply(path: js.Array[Layer], pathAndMethod: js.Array[Layer], route: Boolean): IRoutesMatch = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], pathAndMethod = pathAndMethod.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRoutesMatch]
     }
     
-    @scala.inline
-    implicit class IRoutesMatchMutableBuilder[Self <: IRoutesMatch] (val x: Self) extends AnyVal {
+    extension [Self <: IRoutesMatch](x: Self) {
       
-      @scala.inline
-      def setPath(value: js.Array[Layer]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Layer]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathAndMethod(value: js.Array[Layer]): Self = StObject.set(x, "pathAndMethod", value.asInstanceOf[js.Any])
+      inline def setPathAndMethod(value: js.Array[Layer]): Self = StObject.set(x, "pathAndMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathAndMethodVarargs(value: Layer*): Self = StObject.set(x, "pathAndMethod", js.Array(value :_*))
+      inline def setPathAndMethodVarargs(value: Layer*): Self = StObject.set(x, "pathAndMethod", js.Array(value :_*))
       
-      @scala.inline
-      def setPathVarargs(value: Layer*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Layer*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setRoute(value: Boolean): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Boolean): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1015,17 +964,14 @@ object mod {
   }
   object IUrlOptionsQuery {
     
-    @scala.inline
-    def apply(query: js.Object | String): IUrlOptionsQuery = {
+    inline def apply(query: js.Object | String): IUrlOptionsQuery = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUrlOptionsQuery]
     }
     
-    @scala.inline
-    implicit class IUrlOptionsQueryMutableBuilder[Self <: IUrlOptionsQuery] (val x: Self) extends AnyVal {
+    extension [Self <: IUrlOptionsQuery](x: Self) {
       
-      @scala.inline
-      def setQuery(value: js.Object | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Object | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   

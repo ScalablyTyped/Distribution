@@ -60,8 +60,7 @@ trait IStateAdmin extends StObject {
 }
 object IStateAdmin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionAssignToUser: Boolean,
     ActionAssignToUserDefinition: IActionCreateAssignment,
     ActionConvertToPDF: Boolean,
@@ -93,85 +92,58 @@ object IStateAdmin {
     __obj.asInstanceOf[IStateAdmin]
   }
   
-  @scala.inline
-  implicit class IStateAdminMutableBuilder[Self <: IStateAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: IStateAdmin](x: Self) {
     
-    @scala.inline
-    def setActionAssignToUser(value: Boolean): Self = StObject.set(x, "ActionAssignToUser", value.asInstanceOf[js.Any])
+    inline def setActionAssignToUser(value: Boolean): Self = StObject.set(x, "ActionAssignToUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionAssignToUserDefinition(value: IActionCreateAssignment): Self = StObject.set(x, "ActionAssignToUserDefinition", value.asInstanceOf[js.Any])
+    inline def setActionAssignToUserDefinition(value: IActionCreateAssignment): Self = StObject.set(x, "ActionAssignToUserDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionConvertToPDF(value: Boolean): Self = StObject.set(x, "ActionConvertToPDF", value.asInstanceOf[js.Any])
+    inline def setActionConvertToPDF(value: Boolean): Self = StObject.set(x, "ActionConvertToPDF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionConvertToPDFDefinition(value: IActionConvertToPDF): Self = StObject.set(x, "ActionConvertToPDFDefinition", value.asInstanceOf[js.Any])
+    inline def setActionConvertToPDFDefinition(value: IActionConvertToPDF): Self = StObject.set(x, "ActionConvertToPDFDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionCreateSeparateAssignment(value: Boolean): Self = StObject.set(x, "ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
+    inline def setActionCreateSeparateAssignment(value: Boolean): Self = StObject.set(x, "ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionDefinitions(value: IActionDefinitions): Self = StObject.set(x, "ActionDefinitions", value.asInstanceOf[js.Any])
+    inline def setActionDefinitions(value: IActionDefinitions): Self = StObject.set(x, "ActionDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionDelete(value: Boolean): Self = StObject.set(x, "ActionDelete", value.asInstanceOf[js.Any])
+    inline def setActionDelete(value: Boolean): Self = StObject.set(x, "ActionDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionMarkForArchiving(value: Boolean): Self = StObject.set(x, "ActionMarkForArchiving", value.asInstanceOf[js.Any])
+    inline def setActionMarkForArchiving(value: Boolean): Self = StObject.set(x, "ActionMarkForArchiving", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionRunVBScript(value: Boolean): Self = StObject.set(x, "ActionRunVBScript", value.asInstanceOf[js.Any])
+    inline def setActionRunVBScript(value: Boolean): Self = StObject.set(x, "ActionRunVBScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionRunVBScriptDefinition(value: String): Self = StObject.set(x, "ActionRunVBScriptDefinition", value.asInstanceOf[js.Any])
+    inline def setActionRunVBScriptDefinition(value: String): Self = StObject.set(x, "ActionRunVBScriptDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionSendNotification(value: Boolean): Self = StObject.set(x, "ActionSendNotification", value.asInstanceOf[js.Any])
+    inline def setActionSendNotification(value: Boolean): Self = StObject.set(x, "ActionSendNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionSendNotificationDefinition(value: IActionSendNotification): Self = StObject.set(x, "ActionSendNotificationDefinition", value.asInstanceOf[js.Any])
+    inline def setActionSendNotificationDefinition(value: IActionSendNotification): Self = StObject.set(x, "ActionSendNotificationDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionSetPermissions(value: Boolean): Self = StObject.set(x, "ActionSetPermissions", value.asInstanceOf[js.Any])
+    inline def setActionSetPermissions(value: Boolean): Self = StObject.set(x, "ActionSetPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionSetPermissionsDetailedDefinition(value: IActionSetPermissions): Self = StObject.set(x, "ActionSetPermissionsDetailedDefinition", value.asInstanceOf[js.Any])
+    inline def setActionSetPermissionsDetailedDefinition(value: IActionSetPermissions): Self = StObject.set(x, "ActionSetPermissionsDetailedDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionSetProperties(value: Boolean): Self = StObject.set(x, "ActionSetProperties", value.asInstanceOf[js.Any])
+    inline def setActionSetProperties(value: Boolean): Self = StObject.set(x, "ActionSetProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionSetPropertiesDefinition(value: IActionSetProperties): Self = StObject.set(x, "ActionSetPropertiesDefinition", value.asInstanceOf[js.Any])
+    inline def setActionSetPropertiesDefinition(value: IActionSetProperties): Self = StObject.set(x, "ActionSetPropertiesDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckInOutPermissions(value: Boolean): Self = StObject.set(x, "CheckInOutPermissions", value.asInstanceOf[js.Any])
+    inline def setCheckInOutPermissions(value: Boolean): Self = StObject.set(x, "CheckInOutPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IStateAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IStateAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInOutPermissions(value: IAccessControlList): Self = StObject.set(x, "InOutPermissions", value.asInstanceOf[js.Any])
+    inline def setInOutPermissions(value: IAccessControlList): Self = StObject.set(x, "InOutPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostconditions(value: IStateConditions): Self = StObject.set(x, "Postconditions", value.asInstanceOf[js.Any])
+    inline def setPostconditions(value: IStateConditions): Self = StObject.set(x, "Postconditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreconditions(value: IStateConditions): Self = StObject.set(x, "Preconditions", value.asInstanceOf[js.Any])
+    inline def setPreconditions(value: IStateConditions): Self = StObject.set(x, "Preconditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
+    inline def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionsRequireEditAccessToObject(value: Boolean): Self = StObject.set(x, "TransitionsRequireEditAccessToObject", value.asInstanceOf[js.Any])
+    inline def setTransitionsRequireEditAccessToObject(value: Boolean): Self = StObject.set(x, "TransitionsRequireEditAccessToObject", value.asInstanceOf[js.Any])
   }
 }

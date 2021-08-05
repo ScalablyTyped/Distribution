@@ -16,28 +16,21 @@ trait AuthConfig extends StObject {
 }
 object AuthConfig {
   
-  @scala.inline
-  def apply(password: String, serveraddress: String, username: String): AuthConfig = {
+  inline def apply(password: String, serveraddress: String, username: String): AuthConfig = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], serveraddress = serveraddress.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthConfig]
   }
   
-  @scala.inline
-  implicit class AuthConfigMutableBuilder[Self <: AuthConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AuthConfig](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServeraddress(value: String): Self = StObject.set(x, "serveraddress", value.asInstanceOf[js.Any])
+    inline def setServeraddress(value: String): Self = StObject.set(x, "serveraddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

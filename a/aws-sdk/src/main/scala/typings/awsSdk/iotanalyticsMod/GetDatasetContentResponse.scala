@@ -23,34 +23,25 @@ trait GetDatasetContentResponse extends StObject {
 }
 object GetDatasetContentResponse {
   
-  @scala.inline
-  def apply(): GetDatasetContentResponse = {
+  inline def apply(): GetDatasetContentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDatasetContentResponse]
   }
   
-  @scala.inline
-  implicit class GetDatasetContentResponseMutableBuilder[Self <: GetDatasetContentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDatasetContentResponse](x: Self) {
     
-    @scala.inline
-    def setEntries(value: DatasetEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: DatasetEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: DatasetEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: DatasetEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: DatasetContentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DatasetContentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

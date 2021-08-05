@@ -17,22 +17,16 @@ object httpmethodMod {
   trait HTTPMethod extends StObject
   object HTTPMethod {
     
-    @scala.inline
-    def DELETE: typings.workboxRouting.workboxRoutingStrings.DELETE = "DELETE".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.DELETE]
+    inline def DELETE: typings.workboxRouting.workboxRoutingStrings.DELETE = "DELETE".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.workboxRouting.workboxRoutingStrings.GET = "GET".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.GET]
+    inline def GET: typings.workboxRouting.workboxRoutingStrings.GET = "GET".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.workboxRouting.workboxRoutingStrings.HEAD = "HEAD".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.HEAD]
+    inline def HEAD: typings.workboxRouting.workboxRoutingStrings.HEAD = "HEAD".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.HEAD]
     
-    @scala.inline
-    def PATCH: typings.workboxRouting.workboxRoutingStrings.PATCH = "PATCH".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.PATCH]
+    inline def PATCH: typings.workboxRouting.workboxRoutingStrings.PATCH = "PATCH".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.workboxRouting.workboxRoutingStrings.POST = "POST".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.POST]
+    inline def POST: typings.workboxRouting.workboxRoutingStrings.POST = "POST".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.POST]
     
-    @scala.inline
-    def PUT: typings.workboxRouting.workboxRoutingStrings.PUT = "PUT".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.PUT]
+    inline def PUT: typings.workboxRouting.workboxRoutingStrings.PUT = "PUT".asInstanceOf[typings.workboxRouting.workboxRoutingStrings.PUT]
   }
 }

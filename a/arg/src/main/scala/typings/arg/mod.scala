@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: Spec */](spec: T): Result[T] = ^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any]).asInstanceOf[Result[T]]
-  @scala.inline
-  def apply[T /* <: Spec */](spec: T, options: Options): Result[T] = (^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[T]]
+  inline def apply[T /* <: Spec */](spec: T): Result[T] = ^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any]).asInstanceOf[Result[T]]
+  inline def apply[T /* <: Spec */](spec: T, options: Options): Result[T] = (^.asInstanceOf[js.Dynamic].apply(spec.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[T]]
   
   @JSImport("arg", JSImport.Namespace)
   @js.native
@@ -21,8 +19,7 @@ object mod {
   @js.native
   val COUNT: Handler[Double] & FlagSymbol = js.native
   
-  @scala.inline
-  def flag[T](fn: T): T & FlagSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("flag")(fn.asInstanceOf[js.Any]).asInstanceOf[T & FlagSymbol]
+  inline def flag[T](fn: T): T & FlagSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("flag")(fn.asInstanceOf[js.Any]).asInstanceOf[T & FlagSymbol]
   
   type Handler[T] = js.Function3[/* value */ String, /* name */ String, /* previousValue */ js.UndefOr[T], T]
   
@@ -36,35 +33,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
+      inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      @scala.inline
-      def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
       
-      @scala.inline
-      def setPermissive(value: Boolean): Self = StObject.set(x, "permissive", value.asInstanceOf[js.Any])
+      inline def setPermissive(value: Boolean): Self = StObject.set(x, "permissive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissiveUndefined: Self = StObject.set(x, "permissive", js.undefined)
+      inline def setPermissiveUndefined: Self = StObject.set(x, "permissive", js.undefined)
       
-      @scala.inline
-      def setStopAtPositional(value: Boolean): Self = StObject.set(x, "stopAtPositional", value.asInstanceOf[js.Any])
+      inline def setStopAtPositional(value: Boolean): Self = StObject.set(x, "stopAtPositional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopAtPositionalUndefined: Self = StObject.set(x, "stopAtPositional", js.undefined)
+      inline def setStopAtPositionalUndefined: Self = StObject.set(x, "stopAtPositional", js.undefined)
     }
   }
   

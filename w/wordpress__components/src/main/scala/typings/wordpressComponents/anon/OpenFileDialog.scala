@@ -10,16 +10,13 @@ trait OpenFileDialog extends StObject {
 }
 object OpenFileDialog {
   
-  @scala.inline
-  def apply(openFileDialog: () => Unit): OpenFileDialog = {
+  inline def apply(openFileDialog: () => Unit): OpenFileDialog = {
     val __obj = js.Dynamic.literal(openFileDialog = js.Any.fromFunction0(openFileDialog))
     __obj.asInstanceOf[OpenFileDialog]
   }
   
-  @scala.inline
-  implicit class OpenFileDialogMutableBuilder[Self <: OpenFileDialog] (val x: Self) extends AnyVal {
+  extension [Self <: OpenFileDialog](x: Self) {
     
-    @scala.inline
-    def setOpenFileDialog(value: () => Unit): Self = StObject.set(x, "openFileDialog", js.Any.fromFunction0(value))
+    inline def setOpenFileDialog(value: () => Unit): Self = StObject.set(x, "openFileDialog", js.Any.fromFunction0(value))
   }
 }

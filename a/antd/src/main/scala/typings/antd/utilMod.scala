@@ -12,21 +12,13 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPlaceholder(picker: Unit, locale: PickerLocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getPlaceholder(picker: Unit, locale: PickerLocale, customizePlaceholder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getPlaceholder(picker: PickerMode, locale: PickerLocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getPlaceholder(picker: PickerMode, locale: PickerLocale, customizePlaceholder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPlaceholder(picker: Unit, locale: PickerLocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPlaceholder(picker: Unit, locale: PickerLocale, customizePlaceholder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPlaceholder(picker: PickerMode, locale: PickerLocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPlaceholder(picker: PickerMode, locale: PickerLocale, customizePlaceholder: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getRangePlaceholder(picker: Unit, locale: PickerLocale): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
-  @scala.inline
-  def getRangePlaceholder(picker: Unit, locale: PickerLocale, customizePlaceholder: js.Tuple2[String, String]): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
-  @scala.inline
-  def getRangePlaceholder(picker: PickerMode, locale: PickerLocale): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
-  @scala.inline
-  def getRangePlaceholder(picker: PickerMode, locale: PickerLocale, customizePlaceholder: js.Tuple2[String, String]): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
+  inline def getRangePlaceholder(picker: Unit, locale: PickerLocale): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
+  inline def getRangePlaceholder(picker: Unit, locale: PickerLocale, customizePlaceholder: js.Tuple2[String, String]): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
+  inline def getRangePlaceholder(picker: PickerMode, locale: PickerLocale): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
+  inline def getRangePlaceholder(picker: PickerMode, locale: PickerLocale, customizePlaceholder: js.Tuple2[String, String]): js.UndefOr[js.Tuple2[String, String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangePlaceholder")(picker.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], customizePlaceholder.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Tuple2[String, String]]]
 }

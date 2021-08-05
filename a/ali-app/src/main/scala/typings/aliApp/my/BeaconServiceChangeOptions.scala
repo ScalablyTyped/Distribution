@@ -14,19 +14,15 @@ trait BeaconServiceChangeOptions
 }
 object BeaconServiceChangeOptions {
   
-  @scala.inline
-  def apply(): BeaconServiceChangeOptions = {
+  inline def apply(): BeaconServiceChangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BeaconServiceChangeOptions]
   }
   
-  @scala.inline
-  implicit class BeaconServiceChangeOptionsMutableBuilder[Self <: BeaconServiceChangeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BeaconServiceChangeOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ Available => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Available => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

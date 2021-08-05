@@ -10,16 +10,13 @@ trait OESTextureHalfFloatLinear extends StObject {
 }
 object OESTextureHalfFloatLinear {
   
-  @scala.inline
-  def apply(__OES_texture_half_float_linear: Unit): OESTextureHalfFloatLinear = {
+  inline def apply(__OES_texture_half_float_linear: Unit): OESTextureHalfFloatLinear = {
     val __obj = js.Dynamic.literal(__OES_texture_half_float_linear = __OES_texture_half_float_linear.asInstanceOf[js.Any])
     __obj.asInstanceOf[OESTextureHalfFloatLinear]
   }
   
-  @scala.inline
-  implicit class OESTextureHalfFloatLinearMutableBuilder[Self <: OESTextureHalfFloatLinear] (val x: Self) extends AnyVal {
+  extension [Self <: OESTextureHalfFloatLinear](x: Self) {
     
-    @scala.inline
-    def set__OES_texture_half_float_linear(value: Unit): Self = StObject.set(x, "__OES_texture_half_float_linear", value.asInstanceOf[js.Any])
+    inline def set__OES_texture_half_float_linear(value: Unit): Self = StObject.set(x, "__OES_texture_half_float_linear", value.asInstanceOf[js.Any])
   }
 }

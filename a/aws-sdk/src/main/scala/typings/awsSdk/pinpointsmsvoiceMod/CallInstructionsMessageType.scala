@@ -13,19 +13,15 @@ trait CallInstructionsMessageType extends StObject {
 }
 object CallInstructionsMessageType {
   
-  @scala.inline
-  def apply(): CallInstructionsMessageType = {
+  inline def apply(): CallInstructionsMessageType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallInstructionsMessageType]
   }
   
-  @scala.inline
-  implicit class CallInstructionsMessageTypeMutableBuilder[Self <: CallInstructionsMessageType] (val x: Self) extends AnyVal {
+  extension [Self <: CallInstructionsMessageType](x: Self) {
     
-    @scala.inline
-    def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
   }
 }

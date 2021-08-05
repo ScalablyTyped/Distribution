@@ -13,16 +13,13 @@ trait DescribeReplayRequest extends StObject {
 }
 object DescribeReplayRequest {
   
-  @scala.inline
-  def apply(ReplayName: ReplayName): DescribeReplayRequest = {
+  inline def apply(ReplayName: ReplayName): DescribeReplayRequest = {
     val __obj = js.Dynamic.literal(ReplayName = ReplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplayRequest]
   }
   
-  @scala.inline
-  implicit class DescribeReplayRequestMutableBuilder[Self <: DescribeReplayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplayRequest](x: Self) {
     
-    @scala.inline
-    def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
+    inline def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
   }
 }

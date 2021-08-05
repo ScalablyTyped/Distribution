@@ -11,8 +11,6 @@ object stylesXmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(androidMainPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(androidMainPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def default(androidMainPath: String, config: DarkModeStatusBar): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(androidMainPath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(androidMainPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(androidMainPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(androidMainPath: String, config: DarkModeStatusBar): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(androidMainPath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

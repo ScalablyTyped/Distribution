@@ -14,19 +14,15 @@ trait And extends StObject {
 }
 object And {
   
-  @scala.inline
-  def apply($and: js.Any, $or: js.Any): And = {
+  inline def apply($and: js.Any, $or: js.Any): And = {
     val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any], $or = $or.asInstanceOf[js.Any])
     __obj.asInstanceOf[And]
   }
   
-  @scala.inline
-  implicit class AndMutableBuilder[Self <: And] (val x: Self) extends AnyVal {
+  extension [Self <: And](x: Self) {
     
-    @scala.inline
-    def set$and(value: js.Any): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
+    inline def set$and(value: js.Any): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$or(value: js.Any): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
+    inline def set$or(value: js.Any): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
   }
 }

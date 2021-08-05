@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ToolbarButton")
 @js.native
-class ToolbarButton protected ()
+/* private */ class ToolbarButton ()
   extends StObject
      with typings.activexExcel.Excel.ToolbarButton {
   
@@ -38,7 +38,7 @@ class ToolbarButton protected ()
   /* CompleteClass */
   var Enabled: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ToolbarButton_typekey")
   var ExcelDotToolbarButton_typekey: typings.activexExcel.Excel.ToolbarButton = js.native
   

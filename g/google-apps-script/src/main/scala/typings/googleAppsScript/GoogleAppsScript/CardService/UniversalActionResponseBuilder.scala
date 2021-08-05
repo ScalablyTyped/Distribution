@@ -17,8 +17,7 @@ trait UniversalActionResponseBuilder extends StObject {
 }
 object UniversalActionResponseBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => UniversalActionResponse,
     displayAddOnCards: js.Array[Card] => UniversalActionResponseBuilder,
     setOpenLink: OpenLink => UniversalActionResponseBuilder
@@ -27,16 +26,12 @@ object UniversalActionResponseBuilder {
     __obj.asInstanceOf[UniversalActionResponseBuilder]
   }
   
-  @scala.inline
-  implicit class UniversalActionResponseBuilderMutableBuilder[Self <: UniversalActionResponseBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: UniversalActionResponseBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => UniversalActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => UniversalActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayAddOnCards(value: js.Array[Card] => UniversalActionResponseBuilder): Self = StObject.set(x, "displayAddOnCards", js.Any.fromFunction1(value))
+    inline def setDisplayAddOnCards(value: js.Array[Card] => UniversalActionResponseBuilder): Self = StObject.set(x, "displayAddOnCards", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => UniversalActionResponseBuilder): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    inline def setSetOpenLink(value: OpenLink => UniversalActionResponseBuilder): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
   }
 }

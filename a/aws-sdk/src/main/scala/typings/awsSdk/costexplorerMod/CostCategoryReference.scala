@@ -40,61 +40,43 @@ trait CostCategoryReference extends StObject {
 }
 object CostCategoryReference {
   
-  @scala.inline
-  def apply(): CostCategoryReference = {
+  inline def apply(): CostCategoryReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CostCategoryReference]
   }
   
-  @scala.inline
-  implicit class CostCategoryReferenceMutableBuilder[Self <: CostCategoryReference] (val x: Self) extends AnyVal {
+  extension [Self <: CostCategoryReference](x: Self) {
     
-    @scala.inline
-    def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
+    inline def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostCategoryArnUndefined: Self = StObject.set(x, "CostCategoryArn", js.undefined)
+    inline def setCostCategoryArnUndefined: Self = StObject.set(x, "CostCategoryArn", js.undefined)
     
-    @scala.inline
-    def setEffectiveEnd(value: ZonedDateTime): Self = StObject.set(x, "EffectiveEnd", value.asInstanceOf[js.Any])
+    inline def setEffectiveEnd(value: ZonedDateTime): Self = StObject.set(x, "EffectiveEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveEndUndefined: Self = StObject.set(x, "EffectiveEnd", js.undefined)
+    inline def setEffectiveEndUndefined: Self = StObject.set(x, "EffectiveEnd", js.undefined)
     
-    @scala.inline
-    def setEffectiveStart(value: ZonedDateTime): Self = StObject.set(x, "EffectiveStart", value.asInstanceOf[js.Any])
+    inline def setEffectiveStart(value: ZonedDateTime): Self = StObject.set(x, "EffectiveStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveStartUndefined: Self = StObject.set(x, "EffectiveStart", js.undefined)
+    inline def setEffectiveStartUndefined: Self = StObject.set(x, "EffectiveStart", js.undefined)
     
-    @scala.inline
-    def setName(value: CostCategoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CostCategoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNumberOfRules(value: NonNegativeInteger): Self = StObject.set(x, "NumberOfRules", value.asInstanceOf[js.Any])
+    inline def setNumberOfRules(value: NonNegativeInteger): Self = StObject.set(x, "NumberOfRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRulesUndefined: Self = StObject.set(x, "NumberOfRules", js.undefined)
+    inline def setNumberOfRulesUndefined: Self = StObject.set(x, "NumberOfRules", js.undefined)
     
-    @scala.inline
-    def setProcessingStatus(value: CostCategoryProcessingStatusList): Self = StObject.set(x, "ProcessingStatus", value.asInstanceOf[js.Any])
+    inline def setProcessingStatus(value: CostCategoryProcessingStatusList): Self = StObject.set(x, "ProcessingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingStatusUndefined: Self = StObject.set(x, "ProcessingStatus", js.undefined)
+    inline def setProcessingStatusUndefined: Self = StObject.set(x, "ProcessingStatus", js.undefined)
     
-    @scala.inline
-    def setProcessingStatusVarargs(value: CostCategoryProcessingStatus*): Self = StObject.set(x, "ProcessingStatus", js.Array(value :_*))
+    inline def setProcessingStatusVarargs(value: CostCategoryProcessingStatus*): Self = StObject.set(x, "ProcessingStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: CostCategoryValuesList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: CostCategoryValuesList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: CostCategoryValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: CostCategoryValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

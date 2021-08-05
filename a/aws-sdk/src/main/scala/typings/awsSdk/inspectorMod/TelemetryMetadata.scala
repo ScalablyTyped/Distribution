@@ -23,25 +23,19 @@ trait TelemetryMetadata extends StObject {
 }
 object TelemetryMetadata {
   
-  @scala.inline
-  def apply(count: Long, messageType: MessageType): TelemetryMetadata = {
+  inline def apply(count: Long, messageType: MessageType): TelemetryMetadata = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryMetadata]
   }
   
-  @scala.inline
-  implicit class TelemetryMetadataMutableBuilder[Self <: TelemetryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TelemetryMetadata](x: Self) {
     
-    @scala.inline
-    def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSize(value: Long): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Long): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSizeUndefined: Self = StObject.set(x, "dataSize", js.undefined)
+    inline def setDataSizeUndefined: Self = StObject.set(x, "dataSize", js.undefined)
     
-    @scala.inline
-    def setMessageType(value: MessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: MessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
   }
 }

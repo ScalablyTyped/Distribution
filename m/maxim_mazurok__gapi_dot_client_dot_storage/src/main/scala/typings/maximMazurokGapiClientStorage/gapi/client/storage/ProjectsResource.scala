@@ -12,19 +12,15 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(hmacKeys: HmacKeysResource, serviceAccount: ServiceAccountResource): ProjectsResource = {
+  inline def apply(hmacKeys: HmacKeysResource, serviceAccount: ServiceAccountResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(hmacKeys = hmacKeys.asInstanceOf[js.Any], serviceAccount = serviceAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setHmacKeys(value: HmacKeysResource): Self = StObject.set(x, "hmacKeys", value.asInstanceOf[js.Any])
+    inline def setHmacKeys(value: HmacKeysResource): Self = StObject.set(x, "hmacKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccount(value: ServiceAccountResource): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: ServiceAccountResource): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
   }
 }

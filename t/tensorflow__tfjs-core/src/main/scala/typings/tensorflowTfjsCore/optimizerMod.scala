@@ -66,7 +66,7 @@ object optimizerMod {
       */
     val iterations: Double = js.native
     
-    var iterations_ : Double = js.native
+    /* protected */ var iterations_ : Double = js.native
     
     /**
       * Executes `f()` and minimizes the scalar output of `f()` by computing
@@ -100,20 +100,16 @@ object optimizerMod {
   }
   object OptimizerVariable {
     
-    @scala.inline
-    def apply(originalName: String, variable: Variable[Rank]): OptimizerVariable = {
+    inline def apply(originalName: String, variable: Variable[Rank]): OptimizerVariable = {
       val __obj = js.Dynamic.literal(originalName = originalName.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptimizerVariable]
     }
     
-    @scala.inline
-    implicit class OptimizerVariableMutableBuilder[Self <: OptimizerVariable] (val x: Self) extends AnyVal {
+    extension [Self <: OptimizerVariable](x: Self) {
       
-      @scala.inline
-      def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+      inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariable(value: Variable[Rank]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+      inline def setVariable(value: Variable[Rank]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     }
   }
 }

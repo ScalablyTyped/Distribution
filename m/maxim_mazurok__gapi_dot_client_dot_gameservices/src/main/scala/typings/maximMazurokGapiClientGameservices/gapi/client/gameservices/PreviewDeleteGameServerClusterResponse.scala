@@ -14,25 +14,19 @@ trait PreviewDeleteGameServerClusterResponse extends StObject {
 }
 object PreviewDeleteGameServerClusterResponse {
   
-  @scala.inline
-  def apply(): PreviewDeleteGameServerClusterResponse = {
+  inline def apply(): PreviewDeleteGameServerClusterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreviewDeleteGameServerClusterResponse]
   }
   
-  @scala.inline
-  implicit class PreviewDeleteGameServerClusterResponseMutableBuilder[Self <: PreviewDeleteGameServerClusterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewDeleteGameServerClusterResponse](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setTargetState(value: TargetState): Self = StObject.set(x, "targetState", value.asInstanceOf[js.Any])
+    inline def setTargetState(value: TargetState): Self = StObject.set(x, "targetState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetStateUndefined: Self = StObject.set(x, "targetState", js.undefined)
+    inline def setTargetStateUndefined: Self = StObject.set(x, "targetState", js.undefined)
   }
 }

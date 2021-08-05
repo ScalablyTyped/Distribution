@@ -68,8 +68,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getCustomEventNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomEventNames")().asInstanceOf[js.Array[String]]
+    inline def getCustomEventNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomEventNames")().asInstanceOf[js.Array[String]]
   }
   
   @JSImport("d3kit", "AbstractPlate")
@@ -91,10 +90,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
-    @scala.inline
-    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "Base")
@@ -131,10 +128,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
-    @scala.inline
-    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "CanvasChart")
@@ -156,8 +151,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "CanvasPlate")
@@ -176,10 +170,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
-    @scala.inline
-    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "DivPlate")
@@ -194,10 +186,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
-    @scala.inline
-    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "HybridChart")
@@ -223,8 +213,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
   }
   
   @JSImport("d3kit", "LayerOrganizer")
@@ -275,10 +264,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
-    @scala.inline
-    def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ChartOptions]
+    inline def getDefaultOptions(options: ChartOptions): ChartOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ChartOptions]
   }
   
   object helper {
@@ -287,32 +274,23 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+    inline def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
     
-    @scala.inline
-    def deepExtend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def deepExtend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def extend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def functor(value: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+    inline def functor(value: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    @scala.inline
-    def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def kebabCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebabCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def kebabCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebabCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def rebind(target: js.Any, source: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def rebind(target: js.Any, source: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def throttle(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+    inline def throttle(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   }
   
   trait ChartMargin extends StObject {
@@ -327,38 +305,28 @@ object mod {
   }
   object ChartMargin {
     
-    @scala.inline
-    def apply(): ChartMargin = {
+    inline def apply(): ChartMargin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChartMargin]
     }
     
-    @scala.inline
-    implicit class ChartMarginMutableBuilder[Self <: ChartMargin] (val x: Self) extends AnyVal {
+    extension [Self <: ChartMargin](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -376,44 +344,32 @@ object mod {
   }
   object ChartOptions {
     
-    @scala.inline
-    def apply(): ChartOptions = {
+    inline def apply(): ChartOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChartOptions]
     }
     
-    @scala.inline
-    implicit class ChartOptionsMutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChartOptions](x: Self) {
       
-      @scala.inline
-      def setInitialHeight(value: Double): Self = StObject.set(x, "initialHeight", value.asInstanceOf[js.Any])
+      inline def setInitialHeight(value: Double): Self = StObject.set(x, "initialHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialHeightUndefined: Self = StObject.set(x, "initialHeight", js.undefined)
+      inline def setInitialHeightUndefined: Self = StObject.set(x, "initialHeight", js.undefined)
       
-      @scala.inline
-      def setInitialWidth(value: Double): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
+      inline def setInitialWidth(value: Double): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialWidthUndefined: Self = StObject.set(x, "initialWidth", js.undefined)
+      inline def setInitialWidthUndefined: Self = StObject.set(x, "initialWidth", js.undefined)
       
-      @scala.inline
-      def setMargin(value: ChartMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ChartMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setOffset(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
     }
   }
   
@@ -433,50 +389,36 @@ object mod {
   }
   object FitOptions {
     
-    @scala.inline
-    def apply(): FitOptions = {
+    inline def apply(): FitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FitOptions]
     }
     
-    @scala.inline
-    implicit class FitOptionsMutableBuilder[Self <: FitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FitOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: String | Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: String | Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: String | Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: String | Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+      inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -485,8 +427,7 @@ object mod {
        with /* layerName */ StringDictionary[String | (js.Array[LayerConfig | String]) | LayerConfig]
   object LayerConfig {
     
-    @scala.inline
-    def apply(): LayerConfig = {
+    inline def apply(): LayerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayerConfig]
     }
@@ -502,35 +443,26 @@ object mod {
   }
   object WatchOptions {
     
-    @scala.inline
-    def apply(): WatchOptions = {
+    inline def apply(): WatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WatchOptions]
     }
     
-    @scala.inline
-    implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatchOptions](x: Self) {
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Element | (js.Tuple2[Double, Double]) | Height): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element | (js.Tuple2[Double, Double]) | Height): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

@@ -16,22 +16,17 @@ trait BlobEventInit
 }
 object BlobEventInit {
   
-  @scala.inline
-  def apply(data: Blob): BlobEventInit = {
+  inline def apply(data: Blob): BlobEventInit = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobEventInit]
   }
   
-  @scala.inline
-  implicit class BlobEventInitMutableBuilder[Self <: BlobEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: BlobEventInit](x: Self) {
     
-    @scala.inline
-    def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecode(value: Double): Self = StObject.set(x, "timecode", value.asInstanceOf[js.Any])
+    inline def setTimecode(value: Double): Self = StObject.set(x, "timecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeUndefined: Self = StObject.set(x, "timecode", js.undefined)
+    inline def setTimecodeUndefined: Self = StObject.set(x, "timecode", js.undefined)
   }
 }

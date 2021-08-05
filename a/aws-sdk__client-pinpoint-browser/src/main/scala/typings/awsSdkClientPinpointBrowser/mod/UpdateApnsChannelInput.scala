@@ -10,8 +10,7 @@ trait UpdateApnsChannelInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateApnsChannelInputMod.UpdateApnsChannelInput
 object UpdateApnsChannelInput {
   
-  @scala.inline
-  def apply(APNSChannelRequest: APNSChannelRequest, ApplicationId: String): UpdateApnsChannelInput = {
+  inline def apply(APNSChannelRequest: APNSChannelRequest, ApplicationId: String): UpdateApnsChannelInput = {
     val __obj = js.Dynamic.literal(APNSChannelRequest = APNSChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApnsChannelInput]
   }

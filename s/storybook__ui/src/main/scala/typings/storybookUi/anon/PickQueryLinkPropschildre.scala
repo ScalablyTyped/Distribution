@@ -14,22 +14,17 @@ trait PickQueryLinkPropschildre extends StObject {
 }
 object PickQueryLinkPropschildre {
   
-  @scala.inline
-  def apply(to: String): PickQueryLinkPropschildre = {
+  inline def apply(to: String): PickQueryLinkPropschildre = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickQueryLinkPropschildre]
   }
   
-  @scala.inline
-  implicit class PickQueryLinkPropschildreMutableBuilder[Self <: PickQueryLinkPropschildre] (val x: Self) extends AnyVal {
+  extension [Self <: PickQueryLinkPropschildre](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

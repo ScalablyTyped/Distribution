@@ -22,25 +22,19 @@ trait SchemaParagraphMarker extends StObject {
 }
 object SchemaParagraphMarker {
   
-  @scala.inline
-  def apply(): SchemaParagraphMarker = {
+  inline def apply(): SchemaParagraphMarker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParagraphMarker]
   }
   
-  @scala.inline
-  implicit class SchemaParagraphMarkerMutableBuilder[Self <: SchemaParagraphMarker] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParagraphMarker](x: Self) {
     
-    @scala.inline
-    def setBullet(value: SchemaBullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+    inline def setBullet(value: SchemaBullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+    inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
     
-    @scala.inline
-    def setStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

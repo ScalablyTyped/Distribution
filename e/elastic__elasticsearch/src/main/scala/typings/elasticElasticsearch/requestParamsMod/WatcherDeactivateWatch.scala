@@ -12,16 +12,13 @@ trait WatcherDeactivateWatch
 }
 object WatcherDeactivateWatch {
   
-  @scala.inline
-  def apply(watch_id: String): WatcherDeactivateWatch = {
+  inline def apply(watch_id: String): WatcherDeactivateWatch = {
     val __obj = js.Dynamic.literal(watch_id = watch_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatcherDeactivateWatch]
   }
   
-  @scala.inline
-  implicit class WatcherDeactivateWatchMutableBuilder[Self <: WatcherDeactivateWatch] (val x: Self) extends AnyVal {
+  extension [Self <: WatcherDeactivateWatch](x: Self) {
     
-    @scala.inline
-    def setWatch_id(value: String): Self = StObject.set(x, "watch_id", value.asInstanceOf[js.Any])
+    inline def setWatch_id(value: String): Self = StObject.set(x, "watch_id", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ trait XSystemChildFactory
 }
 object XSystemChildFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createSystemChild: (js.Any, SeqEquiv[Double], Double) => XWindowPeer,
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XSystemChildFactory {
     __obj.asInstanceOf[XSystemChildFactory]
   }
   
-  @scala.inline
-  implicit class XSystemChildFactoryMutableBuilder[Self <: XSystemChildFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XSystemChildFactory](x: Self) {
     
-    @scala.inline
-    def setCreateSystemChild(value: (js.Any, SeqEquiv[Double], Double) => XWindowPeer): Self = StObject.set(x, "createSystemChild", js.Any.fromFunction3(value))
+    inline def setCreateSystemChild(value: (js.Any, SeqEquiv[Double], Double) => XWindowPeer): Self = StObject.set(x, "createSystemChild", js.Any.fromFunction3(value))
   }
 }

@@ -13,7 +13,7 @@ class Uri protected ()
   /**
     * Use the `file` and `parse` factory functions to create new `Uri` objects.
     */
-  protected def this(scheme: String, authority: String, path: String, query: String, fragment: String) = this()
+  /* private */ def this(scheme: String, authority: String, path: String, query: String, fragment: String) = this()
   
   /**
     * Authority is the `www.msft.com` part of `http://www.msft.com/some/path?query#fragment`.
@@ -118,8 +118,7 @@ object Uri {
     * @param path A file system or UNC path.
     * @return A new Uri instance.
     */
-  @scala.inline
-  def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
   /**
     * Create a new uri which path is the result of joining
@@ -141,8 +140,7 @@ object Uri {
     * @param pathSegments One more more path fragments
     * @returns A new uri which path is joined with the given fragments
     */
-  @scala.inline
-  def joinPath(base: Uri, pathSegments: String*): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(base.asInstanceOf[js.Any], pathSegments.asInstanceOf[js.Any])).asInstanceOf[Uri]
+  inline def joinPath(base: Uri, pathSegments: String*): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(base.asInstanceOf[js.Any], pathSegments.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
   /**
     * Create an URI from a string, e.g. `http://www.msft.com/some/path`,
@@ -157,8 +155,6 @@ object Uri {
     * @param strict Throw an error when `value` is empty or when no `scheme` can be parsed.
     * @return A new Uri instance.
     */
-  @scala.inline
-  def parse(value: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Uri]
-  @scala.inline
-  def parse(value: String, strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
+  inline def parse(value: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def parse(value: String, strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
 }

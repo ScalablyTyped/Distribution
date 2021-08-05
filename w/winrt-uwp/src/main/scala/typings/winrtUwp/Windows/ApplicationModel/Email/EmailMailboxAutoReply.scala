@@ -15,19 +15,15 @@ trait EmailMailboxAutoReply extends StObject {
 }
 object EmailMailboxAutoReply {
   
-  @scala.inline
-  def apply(isEnabled: Boolean, response: String): EmailMailboxAutoReply = {
+  inline def apply(isEnabled: Boolean, response: String): EmailMailboxAutoReply = {
     val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailMailboxAutoReply]
   }
   
-  @scala.inline
-  implicit class EmailMailboxAutoReplyMutableBuilder[Self <: EmailMailboxAutoReply] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxAutoReply](x: Self) {
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

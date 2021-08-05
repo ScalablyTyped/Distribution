@@ -23,8 +23,7 @@ trait Footer extends StObject {
 }
 object Footer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEnable: () => Boolean,
     getHtml: () => String,
     getText: () => String,
@@ -37,28 +36,20 @@ object Footer {
     __obj.asInstanceOf[Footer]
   }
   
-  @scala.inline
-  implicit class FooterMutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
+  extension [Self <: Footer](x: Self) {
     
-    @scala.inline
-    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
+    inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHtml(value: () => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
+    inline def setGetHtml(value: () => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHtml(value: String => Unit): Self = StObject.set(x, "setHtml", js.Any.fromFunction1(value))
+    inline def setSetHtml(value: String => Unit): Self = StObject.set(x, "setHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => Text): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Text): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

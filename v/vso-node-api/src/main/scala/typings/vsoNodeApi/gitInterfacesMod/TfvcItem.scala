@@ -31,8 +31,7 @@ trait TfvcItem
 }
 object TfvcItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     changeDate: Date,
     contentMetadata: FileContentMetadata,
@@ -51,28 +50,20 @@ object TfvcItem {
     __obj.asInstanceOf[TfvcItem]
   }
   
-  @scala.inline
-  implicit class TfvcItemMutableBuilder[Self <: TfvcItem] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcItem](x: Self) {
     
-    @scala.inline
-    def setChangeDate(value: Date): Self = StObject.set(x, "changeDate", value.asInstanceOf[js.Any])
+    inline def setChangeDate(value: Date): Self = StObject.set(x, "changeDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionId(value: Double): Self = StObject.set(x, "deletionId", value.asInstanceOf[js.Any])
+    inline def setDeletionId(value: Double): Self = StObject.set(x, "deletionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashValue(value: String): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
+    inline def setHashValue(value: String): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBranch(value: Boolean): Self = StObject.set(x, "isBranch", value.asInstanceOf[js.Any])
+    inline def setIsBranch(value: Boolean): Self = StObject.set(x, "isBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPendingChange(value: Boolean): Self = StObject.set(x, "isPendingChange", value.asInstanceOf[js.Any])
+    inline def setIsPendingChange(value: Boolean): Self = StObject.set(x, "isPendingChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

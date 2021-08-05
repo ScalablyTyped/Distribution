@@ -13,19 +13,15 @@ trait PlotStochasticParamsOptions extends StObject {
 }
 object PlotStochasticParamsOptions {
   
-  @scala.inline
-  def apply(): PlotStochasticParamsOptions = {
+  inline def apply(): PlotStochasticParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotStochasticParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotStochasticParamsOptionsMutableBuilder[Self <: PlotStochasticParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotStochasticParamsOptions](x: Self) {
     
-    @scala.inline
-    def setPeriods(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+    inline def setPeriods(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
+    inline def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
   }
 }

@@ -18,17 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MixedTypeAnnotation_ {
   
-  @scala.inline
-  def apply(): MixedTypeAnnotation_ = {
+  inline def apply(): MixedTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("MixedTypeAnnotation")
     __obj.asInstanceOf[MixedTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class MixedTypeAnnotation_MutableBuilder[Self <: MixedTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: MixedTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: MixedTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MixedTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

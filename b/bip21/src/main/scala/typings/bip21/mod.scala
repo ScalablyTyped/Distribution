@@ -11,11 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(uri: String): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(uri.asInstanceOf[js.Any]).asInstanceOf[Address]
+  inline def decode(uri: String): Address = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(uri.asInstanceOf[js.Any]).asInstanceOf[Address]
   
-  @scala.inline
-  def encode(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(address.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(address: String, options: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(address: String, options: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

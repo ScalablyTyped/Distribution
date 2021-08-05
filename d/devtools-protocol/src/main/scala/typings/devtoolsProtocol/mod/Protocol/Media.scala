@@ -30,21 +30,17 @@ object Media {
   }
   object PlayerError {
     
-    @scala.inline
-    def apply(errorCode: String, `type`: pipeline_error | media_error): PlayerError = {
+    inline def apply(errorCode: String, `type`: pipeline_error | media_error): PlayerError = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerError]
     }
     
-    @scala.inline
-    implicit class PlayerErrorMutableBuilder[Self <: PlayerError] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerError](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: pipeline_error | media_error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: pipeline_error | media_error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,11 +51,9 @@ object Media {
   trait PlayerErrorType extends StObject
   object PlayerErrorType {
     
-    @scala.inline
-    def Media_error: media_error = "media_error".asInstanceOf[media_error]
+    inline def Media_error: media_error = "media_error".asInstanceOf[media_error]
     
-    @scala.inline
-    def Pipeline_error: pipeline_error = "pipeline_error".asInstanceOf[pipeline_error]
+    inline def Pipeline_error: pipeline_error = "pipeline_error".asInstanceOf[pipeline_error]
   }
   
   trait PlayerErrorsRaisedEvent extends StObject {
@@ -70,23 +64,18 @@ object Media {
   }
   object PlayerErrorsRaisedEvent {
     
-    @scala.inline
-    def apply(errors: js.Array[PlayerError], playerId: PlayerId): PlayerErrorsRaisedEvent = {
+    inline def apply(errors: js.Array[PlayerError], playerId: PlayerId): PlayerErrorsRaisedEvent = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerErrorsRaisedEvent]
     }
     
-    @scala.inline
-    implicit class PlayerErrorsRaisedEventMutableBuilder[Self <: PlayerErrorsRaisedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerErrorsRaisedEvent](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[PlayerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[PlayerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: PlayerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: PlayerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+      inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,20 +87,16 @@ object Media {
   }
   object PlayerEvent {
     
-    @scala.inline
-    def apply(timestamp: Timestamp, value: String): PlayerEvent = {
+    inline def apply(timestamp: Timestamp, value: String): PlayerEvent = {
       val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerEvent]
     }
     
-    @scala.inline
-    implicit class PlayerEventMutableBuilder[Self <: PlayerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerEvent](x: Self) {
       
-      @scala.inline
-      def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,23 +108,18 @@ object Media {
   }
   object PlayerEventsAddedEvent {
     
-    @scala.inline
-    def apply(events: js.Array[PlayerEvent], playerId: PlayerId): PlayerEventsAddedEvent = {
+    inline def apply(events: js.Array[PlayerEvent], playerId: PlayerId): PlayerEventsAddedEvent = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerEventsAddedEvent]
     }
     
-    @scala.inline
-    implicit class PlayerEventsAddedEventMutableBuilder[Self <: PlayerEventsAddedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerEventsAddedEvent](x: Self) {
       
-      @scala.inline
-      def setEvents(value: js.Array[PlayerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[PlayerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: PlayerEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: PlayerEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+      inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,20 +144,16 @@ object Media {
   }
   object PlayerMessage {
     
-    @scala.inline
-    def apply(level: error | warning | info | debug, message: String): PlayerMessage = {
+    inline def apply(level: error | warning | info | debug, message: String): PlayerMessage = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerMessage]
     }
     
-    @scala.inline
-    implicit class PlayerMessageMutableBuilder[Self <: PlayerMessage] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerMessage](x: Self) {
       
-      @scala.inline
-      def setLevel(value: error | warning | info | debug): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: error | warning | info | debug): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,17 +166,13 @@ object Media {
   trait PlayerMessageLevel extends StObject
   object PlayerMessageLevel {
     
-    @scala.inline
-    def Debug: debug = "debug".asInstanceOf[debug]
+    inline def Debug: debug = "debug".asInstanceOf[debug]
     
-    @scala.inline
-    def Error: error = "error".asInstanceOf[error]
+    inline def Error: error = "error".asInstanceOf[error]
     
-    @scala.inline
-    def Info: info = "info".asInstanceOf[info]
+    inline def Info: info = "info".asInstanceOf[info]
     
-    @scala.inline
-    def Warning: warning = "warning".asInstanceOf[warning]
+    inline def Warning: warning = "warning".asInstanceOf[warning]
   }
   
   trait PlayerMessagesLoggedEvent extends StObject {
@@ -211,23 +183,18 @@ object Media {
   }
   object PlayerMessagesLoggedEvent {
     
-    @scala.inline
-    def apply(messages: js.Array[PlayerMessage], playerId: PlayerId): PlayerMessagesLoggedEvent = {
+    inline def apply(messages: js.Array[PlayerMessage], playerId: PlayerId): PlayerMessagesLoggedEvent = {
       val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerMessagesLoggedEvent]
     }
     
-    @scala.inline
-    implicit class PlayerMessagesLoggedEventMutableBuilder[Self <: PlayerMessagesLoggedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerMessagesLoggedEvent](x: Self) {
       
-      @scala.inline
-      def setMessages(value: js.Array[PlayerMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[PlayerMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: PlayerMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: PlayerMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
       
-      @scala.inline
-      def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+      inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,23 +206,18 @@ object Media {
   }
   object PlayerPropertiesChangedEvent {
     
-    @scala.inline
-    def apply(playerId: PlayerId, properties: js.Array[PlayerProperty]): PlayerPropertiesChangedEvent = {
+    inline def apply(playerId: PlayerId, properties: js.Array[PlayerProperty]): PlayerPropertiesChangedEvent = {
       val __obj = js.Dynamic.literal(playerId = playerId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerPropertiesChangedEvent]
     }
     
-    @scala.inline
-    implicit class PlayerPropertiesChangedEventMutableBuilder[Self <: PlayerPropertiesChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerPropertiesChangedEvent](x: Self) {
       
-      @scala.inline
-      def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+      inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Array[PlayerProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[PlayerProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesVarargs(value: PlayerProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: PlayerProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
     }
   }
   
@@ -267,20 +229,16 @@ object Media {
   }
   object PlayerProperty {
     
-    @scala.inline
-    def apply(name: String, value: String): PlayerProperty = {
+    inline def apply(name: String, value: String): PlayerProperty = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerProperty]
     }
     
-    @scala.inline
-    implicit class PlayerPropertyMutableBuilder[Self <: PlayerProperty] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerProperty](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,20 +248,16 @@ object Media {
   }
   object PlayersCreatedEvent {
     
-    @scala.inline
-    def apply(players: js.Array[PlayerId]): PlayersCreatedEvent = {
+    inline def apply(players: js.Array[PlayerId]): PlayersCreatedEvent = {
       val __obj = js.Dynamic.literal(players = players.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayersCreatedEvent]
     }
     
-    @scala.inline
-    implicit class PlayersCreatedEventMutableBuilder[Self <: PlayersCreatedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PlayersCreatedEvent](x: Self) {
       
-      @scala.inline
-      def setPlayers(value: js.Array[PlayerId]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
+      inline def setPlayers(value: js.Array[PlayerId]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayersVarargs(value: PlayerId*): Self = StObject.set(x, "players", js.Array(value :_*))
+      inline def setPlayersVarargs(value: PlayerId*): Self = StObject.set(x, "players", js.Array(value :_*))
     }
   }
   

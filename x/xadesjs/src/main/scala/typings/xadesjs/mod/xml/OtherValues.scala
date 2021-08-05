@@ -13,6 +13,5 @@ class OtherValues ()
   extends typings.xadesjs.xmlMod.OtherValues
 object OtherValues {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.OtherValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherValues]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OtherValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherValues]]
 }

@@ -27,8 +27,7 @@ trait relationship extends StObject {
 }
 object relationship {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createRenderer: relationshipCreateRendererParams => js.Promise[relationshipRendererResult],
     updateRenderer: relationshipUpdateRendererParams => js.Promise[UniqueValueRenderer]
   ): relationship = {
@@ -36,13 +35,10 @@ object relationship {
     __obj.asInstanceOf[relationship]
   }
   
-  @scala.inline
-  implicit class relationshipMutableBuilder[Self <: relationship] (val x: Self) extends AnyVal {
+  extension [Self <: relationship](x: Self) {
     
-    @scala.inline
-    def setCreateRenderer(value: relationshipCreateRendererParams => js.Promise[relationshipRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: relationshipCreateRendererParams => js.Promise[relationshipRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateRenderer(value: relationshipUpdateRendererParams => js.Promise[UniqueValueRenderer]): Self = StObject.set(x, "updateRenderer", js.Any.fromFunction1(value))
+    inline def setUpdateRenderer(value: relationshipUpdateRendererParams => js.Promise[UniqueValueRenderer]): Self = StObject.set(x, "updateRenderer", js.Any.fromFunction1(value))
   }
 }

@@ -18,28 +18,21 @@ trait Arc extends StObject {
 }
 object Arc {
   
-  @scala.inline
-  def apply(arc: Double, radialSegments: Double, radius: Double, tube: Double, tubularSegments: Double): Arc = {
+  inline def apply(arc: Double, radialSegments: Double, radius: Double, tube: Double, tubularSegments: Double): Arc = {
     val __obj = js.Dynamic.literal(arc = arc.asInstanceOf[js.Any], radialSegments = radialSegments.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tube = tube.asInstanceOf[js.Any], tubularSegments = tubularSegments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arc]
   }
   
-  @scala.inline
-  implicit class ArcMutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
+  extension [Self <: Arc](x: Self) {
     
-    @scala.inline
-    def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
+    inline def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTube(value: Double): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
+    inline def setTube(value: Double): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
+    inline def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
   }
 }

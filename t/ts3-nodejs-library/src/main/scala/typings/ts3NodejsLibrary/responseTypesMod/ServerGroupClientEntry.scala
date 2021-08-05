@@ -17,22 +17,17 @@ trait ServerGroupClientEntry
 }
 object ServerGroupClientEntry {
   
-  @scala.inline
-  def apply(cldbid: String, clientNickname: String, clientUniqueIdentifier: String): ServerGroupClientEntry = {
+  inline def apply(cldbid: String, clientNickname: String, clientUniqueIdentifier: String): ServerGroupClientEntry = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], clientNickname = clientNickname.asInstanceOf[js.Any], clientUniqueIdentifier = clientUniqueIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerGroupClientEntry]
   }
   
-  @scala.inline
-  implicit class ServerGroupClientEntryMutableBuilder[Self <: ServerGroupClientEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ServerGroupClientEntry](x: Self) {
     
-    @scala.inline
-    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
+    inline def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUniqueIdentifier(value: String): Self = StObject.set(x, "clientUniqueIdentifier", value.asInstanceOf[js.Any])
+    inline def setClientUniqueIdentifier(value: String): Self = StObject.set(x, "clientUniqueIdentifier", value.asInstanceOf[js.Any])
   }
 }

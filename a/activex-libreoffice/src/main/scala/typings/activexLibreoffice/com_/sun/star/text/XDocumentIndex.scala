@@ -29,8 +29,7 @@ trait XDocumentIndex
 }
 object XDocumentIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     ServiceName: String,
     acquire: () => Unit,
@@ -48,16 +47,12 @@ object XDocumentIndex {
     __obj.asInstanceOf[XDocumentIndex]
   }
   
-  @scala.inline
-  implicit class XDocumentIndexMutableBuilder[Self <: XDocumentIndex] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentIndex](x: Self) {
     
-    @scala.inline
-    def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
+    inline def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

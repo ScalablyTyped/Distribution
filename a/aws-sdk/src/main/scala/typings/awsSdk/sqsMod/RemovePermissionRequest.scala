@@ -18,19 +18,15 @@ trait RemovePermissionRequest extends StObject {
 }
 object RemovePermissionRequest {
   
-  @scala.inline
-  def apply(Label: String, QueueUrl: String): RemovePermissionRequest = {
+  inline def apply(Label: String, QueueUrl: String): RemovePermissionRequest = {
     val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovePermissionRequest]
   }
   
-  @scala.inline
-  implicit class RemovePermissionRequestMutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

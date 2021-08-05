@@ -10,16 +10,13 @@ trait Secs extends StObject {
 }
 object Secs {
   
-  @scala.inline
-  def apply(secs: js.Any): Secs = {
+  inline def apply(secs: js.Any): Secs = {
     val __obj = js.Dynamic.literal(secs = secs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Secs]
   }
   
-  @scala.inline
-  implicit class SecsMutableBuilder[Self <: Secs] (val x: Self) extends AnyVal {
+  extension [Self <: Secs](x: Self) {
     
-    @scala.inline
-    def setSecs(value: js.Any): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
+    inline def setSecs(value: js.Any): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
   }
 }

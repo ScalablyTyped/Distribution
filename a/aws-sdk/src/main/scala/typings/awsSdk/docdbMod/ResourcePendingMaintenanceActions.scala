@@ -18,28 +18,21 @@ trait ResourcePendingMaintenanceActions extends StObject {
 }
 object ResourcePendingMaintenanceActions {
   
-  @scala.inline
-  def apply(): ResourcePendingMaintenanceActions = {
+  inline def apply(): ResourcePendingMaintenanceActions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePendingMaintenanceActions]
   }
   
-  @scala.inline
-  implicit class ResourcePendingMaintenanceActionsMutableBuilder[Self <: ResourcePendingMaintenanceActions] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePendingMaintenanceActions](x: Self) {
     
-    @scala.inline
-    def setPendingMaintenanceActionDetails(value: PendingMaintenanceActionDetails): Self = StObject.set(x, "PendingMaintenanceActionDetails", value.asInstanceOf[js.Any])
+    inline def setPendingMaintenanceActionDetails(value: PendingMaintenanceActionDetails): Self = StObject.set(x, "PendingMaintenanceActionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingMaintenanceActionDetailsUndefined: Self = StObject.set(x, "PendingMaintenanceActionDetails", js.undefined)
+    inline def setPendingMaintenanceActionDetailsUndefined: Self = StObject.set(x, "PendingMaintenanceActionDetails", js.undefined)
     
-    @scala.inline
-    def setPendingMaintenanceActionDetailsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "PendingMaintenanceActionDetails", js.Array(value :_*))
+    inline def setPendingMaintenanceActionDetailsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "PendingMaintenanceActionDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceIdentifier(value: String): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: String): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifierUndefined: Self = StObject.set(x, "ResourceIdentifier", js.undefined)
+    inline def setResourceIdentifierUndefined: Self = StObject.set(x, "ResourceIdentifier", js.undefined)
   }
 }

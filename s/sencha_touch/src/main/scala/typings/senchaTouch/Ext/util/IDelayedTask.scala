@@ -81,87 +81,61 @@ trait IDelayedTask
 }
 object IDelayedTask {
   
-  @scala.inline
-  def apply(): IDelayedTask = {
+  inline def apply(): IDelayedTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDelayedTask]
   }
   
-  @scala.inline
-  implicit class IDelayedTaskMutableBuilder[Self <: IDelayedTask] (val x: Self) extends AnyVal {
+  extension [Self <: IDelayedTask](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setDelay(
+    inline def setDelay(
       value: (/* delay */ js.UndefOr[Double], /* newFn */ js.UndefOr[js.Any], /* newScope */ js.UndefOr[js.Any], /* newArgs */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "delay", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+    inline def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
+    inline def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
     
-    @scala.inline
-    def setGetDelay(value: () => js.Any): Self = StObject.set(x, "getDelay", js.Any.fromFunction0(value))
+    inline def setGetDelay(value: () => js.Any): Self = StObject.set(x, "getDelay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDelayUndefined: Self = StObject.set(x, "getDelay", js.undefined)
+    inline def setGetDelayUndefined: Self = StObject.set(x, "getDelay", js.undefined)
     
-    @scala.inline
-    def setGetFn(value: () => js.Any): Self = StObject.set(x, "getFn", js.Any.fromFunction0(value))
+    inline def setGetFn(value: () => js.Any): Self = StObject.set(x, "getFn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFnUndefined: Self = StObject.set(x, "getFn", js.undefined)
+    inline def setGetFnUndefined: Self = StObject.set(x, "getFn", js.undefined)
     
-    @scala.inline
-    def setGetInterval(value: () => js.Any): Self = StObject.set(x, "getInterval", js.Any.fromFunction0(value))
+    inline def setGetInterval(value: () => js.Any): Self = StObject.set(x, "getInterval", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
+    inline def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
     
-    @scala.inline
-    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
+    inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
-    @scala.inline
-    def setSetArgs(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+    inline def setSetArgs(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
+    inline def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
     
-    @scala.inline
-    def setSetDelay(value: /* delay */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDelay", js.Any.fromFunction1(value))
+    inline def setSetDelay(value: /* delay */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDelay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDelayUndefined: Self = StObject.set(x, "setDelay", js.undefined)
+    inline def setSetDelayUndefined: Self = StObject.set(x, "setDelay", js.undefined)
     
-    @scala.inline
-    def setSetFn(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFn", js.Any.fromFunction1(value))
+    inline def setSetFn(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFnUndefined: Self = StObject.set(x, "setFn", js.undefined)
+    inline def setSetFnUndefined: Self = StObject.set(x, "setFn", js.undefined)
     
-    @scala.inline
-    def setSetInterval(value: /* interval */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInterval", js.Any.fromFunction1(value))
+    inline def setSetInterval(value: /* interval */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInterval", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
+    inline def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
     
-    @scala.inline
-    def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
+    inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
   }
 }

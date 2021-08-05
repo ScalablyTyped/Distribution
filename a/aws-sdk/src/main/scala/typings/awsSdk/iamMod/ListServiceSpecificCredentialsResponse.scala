@@ -13,22 +13,17 @@ trait ListServiceSpecificCredentialsResponse extends StObject {
 }
 object ListServiceSpecificCredentialsResponse {
   
-  @scala.inline
-  def apply(): ListServiceSpecificCredentialsResponse = {
+  inline def apply(): ListServiceSpecificCredentialsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServiceSpecificCredentialsResponse]
   }
   
-  @scala.inline
-  implicit class ListServiceSpecificCredentialsResponseMutableBuilder[Self <: ListServiceSpecificCredentialsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServiceSpecificCredentialsResponse](x: Self) {
     
-    @scala.inline
-    def setServiceSpecificCredentials(value: ServiceSpecificCredentialsListType): Self = StObject.set(x, "ServiceSpecificCredentials", value.asInstanceOf[js.Any])
+    inline def setServiceSpecificCredentials(value: ServiceSpecificCredentialsListType): Self = StObject.set(x, "ServiceSpecificCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSpecificCredentialsUndefined: Self = StObject.set(x, "ServiceSpecificCredentials", js.undefined)
+    inline def setServiceSpecificCredentialsUndefined: Self = StObject.set(x, "ServiceSpecificCredentials", js.undefined)
     
-    @scala.inline
-    def setServiceSpecificCredentialsVarargs(value: ServiceSpecificCredentialMetadata*): Self = StObject.set(x, "ServiceSpecificCredentials", js.Array(value :_*))
+    inline def setServiceSpecificCredentialsVarargs(value: ServiceSpecificCredentialMetadata*): Self = StObject.set(x, "ServiceSpecificCredentials", js.Array(value :_*))
   }
 }

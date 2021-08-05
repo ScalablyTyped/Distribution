@@ -128,8 +128,7 @@ trait IDataTypeResource extends StObject {
 }
 object IDataTypeResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteById: Double => IPromise[IResourcePromise],
     getAll: () => js.Any,
     getById: Double => IPromise[IResourcePromise],
@@ -141,25 +140,18 @@ object IDataTypeResource {
     __obj.asInstanceOf[IDataTypeResource]
   }
   
-  @scala.inline
-  implicit class IDataTypeResourceMutableBuilder[Self <: IDataTypeResource] (val x: Self) extends AnyVal {
+  extension [Self <: IDataTypeResource](x: Self) {
     
-    @scala.inline
-    def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteById", js.Any.fromFunction1(value))
+    inline def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAll(value: () => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+    inline def setGetAll(value: () => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
+    inline def setGetById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPreValues(value: (String, Double) => IPromise[IResourcePromise]): Self = StObject.set(x, "getPreValues", js.Any.fromFunction2(value))
+    inline def setGetPreValues(value: (String, Double) => IPromise[IResourcePromise]): Self = StObject.set(x, "getPreValues", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetScaffold(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getScaffold", js.Any.fromFunction0(value))
+    inline def setGetScaffold(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getScaffold", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: (js.Object, js.Array[js.Any], Boolean) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
+    inline def setSave(value: (js.Object, js.Array[js.Any], Boolean) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
   }
 }

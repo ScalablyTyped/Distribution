@@ -16,8 +16,7 @@ trait DomEvent extends StObject {
 }
 object DomEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     domEvent: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement],
     key: typings.react.mod.Key
   ): DomEvent = {
@@ -25,13 +24,10 @@ object DomEvent {
     __obj.asInstanceOf[DomEvent]
   }
   
-  @scala.inline
-  implicit class DomEventMutableBuilder[Self <: DomEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DomEvent](x: Self) {
     
-    @scala.inline
-    def setDomEvent(value: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
+    inline def setDomEvent(value: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

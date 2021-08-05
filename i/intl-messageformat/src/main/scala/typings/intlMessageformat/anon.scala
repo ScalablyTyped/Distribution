@@ -23,20 +23,16 @@ object anon {
   }
   object Currency {
     
-    @scala.inline
-    def apply(currency: Style, percent: Style): Currency = {
+    inline def apply(currency: Style, percent: Style): Currency = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Currency]
     }
     
-    @scala.inline
-    implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+    extension [Self <: Currency](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: Style): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: Style): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Style): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Style): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,23 +46,18 @@ object anon {
   }
   object Date {
     
-    @scala.inline
-    def apply(date: Full, number: Currency, time: Long): Date = {
+    inline def apply(date: Full, number: Currency, time: Long): Date = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setDate(value: Full): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Full): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Currency): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Currency): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Long): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Long): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,23 +71,18 @@ object anon {
   }
   object Day {
     
-    @scala.inline
-    def apply(day: String, month: String, year: String): Day = {
+    inline def apply(day: String, month: String, year: String): Day = {
       val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
       __obj.asInstanceOf[Day]
     }
     
-    @scala.inline
-    implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
+    extension [Self <: Day](x: Self) {
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,26 +105,20 @@ object anon {
   }
   object Full {
     
-    @scala.inline
-    def apply(full: Month, long: Day, medium: Day, short: Day): Full = {
+    inline def apply(full: Month, long: Day, medium: Day, short: Day): Full = {
       val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
       __obj.asInstanceOf[Full]
     }
     
-    @scala.inline
-    implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
+    extension [Self <: Full](x: Self) {
       
-      @scala.inline
-      def setFull(value: Month): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Month): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong(value: Day): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: Day): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedium(value: Day): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: Day): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: Day): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: Day): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,20 +130,16 @@ object anon {
   }
   object Hour {
     
-    @scala.inline
-    def apply(hour: String, minute: String): Hour = {
+    inline def apply(hour: String, minute: String): Hour = {
       val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hour]
     }
     
-    @scala.inline
-    implicit class HourMutableBuilder[Self <: Hour] (val x: Self) extends AnyVal {
+    extension [Self <: Hour](x: Self) {
       
-      @scala.inline
-      def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,17 +149,14 @@ object anon {
   }
   object Locale {
     
-    @scala.inline
-    def apply(locale: String): Locale = {
+    inline def apply(locale: String): Locale = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,26 +172,20 @@ object anon {
   }
   object Long {
     
-    @scala.inline
-    def apply(full: Second, long: Second, medium: Minute, short: Hour): Long = {
+    inline def apply(full: Second, long: Second, medium: Minute, short: Hour): Long = {
       val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
       __obj.asInstanceOf[Long]
     }
     
-    @scala.inline
-    implicit class LongMutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
+    extension [Self <: Long](x: Self) {
       
-      @scala.inline
-      def setFull(value: Second): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Second): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong(value: Second): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: Second): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedium(value: Minute): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: Minute): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: Hour): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: Hour): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,23 +199,18 @@ object anon {
   }
   object Minute {
     
-    @scala.inline
-    def apply(hour: String, minute: String, second: String): Minute = {
+    inline def apply(hour: String, minute: String, second: String): Minute = {
       val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
       __obj.asInstanceOf[Minute]
     }
     
-    @scala.inline
-    implicit class MinuteMutableBuilder[Self <: Minute] (val x: Self) extends AnyVal {
+    extension [Self <: Minute](x: Self) {
       
-      @scala.inline
-      def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,26 +226,20 @@ object anon {
   }
   object Month {
     
-    @scala.inline
-    def apply(day: String, month: String, weekday: String, year: String): Month = {
+    inline def apply(day: String, month: String, weekday: String, year: String): Month = {
       val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
       __obj.asInstanceOf[Month]
     }
     
-    @scala.inline
-    implicit class MonthMutableBuilder[Self <: Month] (val x: Self) extends AnyVal {
+    extension [Self <: Month](x: Self) {
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,32 +254,24 @@ object anon {
   }
   object PartialFormats {
     
-    @scala.inline
-    def apply(): PartialFormats = {
+    inline def apply(): PartialFormats = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFormats]
     }
     
-    @scala.inline
-    implicit class PartialFormatsMutableBuilder[Self <: PartialFormats] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFormats](x: Self) {
       
-      @scala.inline
-      def setDate(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setNumber(value: Record[String, NumberFormatOptions]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Record[String, NumberFormatOptions]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setTime(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
   
@@ -339,26 +287,20 @@ object anon {
   }
   object Second {
     
-    @scala.inline
-    def apply(hour: String, minute: String, second: String, timeZoneName: String): Second = {
+    inline def apply(hour: String, minute: String, second: String, timeZoneName: String): Second = {
       val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any], timeZoneName = timeZoneName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Second]
     }
     
-    @scala.inline
-    implicit class SecondMutableBuilder[Self <: Second] (val x: Self) extends AnyVal {
+    extension [Self <: Second](x: Self) {
       
-      @scala.inline
-      def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -368,17 +310,14 @@ object anon {
   }
   object Style {
     
-    @scala.inline
-    def apply(style: String): Style = {
+    inline def apply(style: String): Style = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Style]
     }
     
-    @scala.inline
-    implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+    extension [Self <: Style](x: Self) {
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   

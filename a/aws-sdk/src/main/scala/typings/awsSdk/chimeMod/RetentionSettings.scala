@@ -18,25 +18,19 @@ trait RetentionSettings extends StObject {
 }
 object RetentionSettings {
   
-  @scala.inline
-  def apply(): RetentionSettings = {
+  inline def apply(): RetentionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetentionSettings]
   }
   
-  @scala.inline
-  implicit class RetentionSettingsMutableBuilder[Self <: RetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionSettings](x: Self) {
     
-    @scala.inline
-    def setConversationRetentionSettings(value: ConversationRetentionSettings): Self = StObject.set(x, "ConversationRetentionSettings", value.asInstanceOf[js.Any])
+    inline def setConversationRetentionSettings(value: ConversationRetentionSettings): Self = StObject.set(x, "ConversationRetentionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationRetentionSettingsUndefined: Self = StObject.set(x, "ConversationRetentionSettings", js.undefined)
+    inline def setConversationRetentionSettingsUndefined: Self = StObject.set(x, "ConversationRetentionSettings", js.undefined)
     
-    @scala.inline
-    def setRoomRetentionSettings(value: RoomRetentionSettings): Self = StObject.set(x, "RoomRetentionSettings", value.asInstanceOf[js.Any])
+    inline def setRoomRetentionSettings(value: RoomRetentionSettings): Self = StObject.set(x, "RoomRetentionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomRetentionSettingsUndefined: Self = StObject.set(x, "RoomRetentionSettings", js.undefined)
+    inline def setRoomRetentionSettingsUndefined: Self = StObject.set(x, "RoomRetentionSettings", js.undefined)
   }
 }

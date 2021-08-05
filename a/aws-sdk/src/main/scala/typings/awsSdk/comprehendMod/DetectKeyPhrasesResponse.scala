@@ -13,22 +13,17 @@ trait DetectKeyPhrasesResponse extends StObject {
 }
 object DetectKeyPhrasesResponse {
   
-  @scala.inline
-  def apply(): DetectKeyPhrasesResponse = {
+  inline def apply(): DetectKeyPhrasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectKeyPhrasesResponse]
   }
   
-  @scala.inline
-  implicit class DetectKeyPhrasesResponseMutableBuilder[Self <: DetectKeyPhrasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectKeyPhrasesResponse](x: Self) {
     
-    @scala.inline
-    def setKeyPhrases(value: ListOfKeyPhrases): Self = StObject.set(x, "KeyPhrases", value.asInstanceOf[js.Any])
+    inline def setKeyPhrases(value: ListOfKeyPhrases): Self = StObject.set(x, "KeyPhrases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPhrasesUndefined: Self = StObject.set(x, "KeyPhrases", js.undefined)
+    inline def setKeyPhrasesUndefined: Self = StObject.set(x, "KeyPhrases", js.undefined)
     
-    @scala.inline
-    def setKeyPhrasesVarargs(value: KeyPhrase*): Self = StObject.set(x, "KeyPhrases", js.Array(value :_*))
+    inline def setKeyPhrasesVarargs(value: KeyPhrase*): Self = StObject.set(x, "KeyPhrases", js.Array(value :_*))
   }
 }

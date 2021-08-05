@@ -14,17 +14,14 @@ trait NavigationPopAction
 }
 object NavigationPopAction {
   
-  @scala.inline
-  def apply(): NavigationPopAction = {
+  inline def apply(): NavigationPopAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/POP")
     __obj.asInstanceOf[NavigationPopAction]
   }
   
-  @scala.inline
-  implicit class NavigationPopActionMutableBuilder[Self <: NavigationPopAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationPopAction](x: Self) {
     
-    @scala.inline
-    def setType(value: NavigationSlashPOP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashPOP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

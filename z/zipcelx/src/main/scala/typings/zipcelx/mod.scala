@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: ZipCelXConfig): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
+  inline def default(config: ZipCelXConfig): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
   
   trait ZipCelXCell extends StObject {
     
@@ -30,21 +29,17 @@ object mod {
   }
   object ZipCelXCell {
     
-    @scala.inline
-    def apply(`type`: string | number, value: String | Double): ZipCelXCell = {
+    inline def apply(`type`: string | number, value: String | Double): ZipCelXCell = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZipCelXCell]
     }
     
-    @scala.inline
-    implicit class ZipCelXCellMutableBuilder[Self <: ZipCelXCell] (val x: Self) extends AnyVal {
+    extension [Self <: ZipCelXCell](x: Self) {
       
-      @scala.inline
-      def setType(value: string | number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: string | number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,20 +57,16 @@ object mod {
   }
   object ZipCelXConfig {
     
-    @scala.inline
-    def apply(filename: String, sheet: ZipCelXSheet): ZipCelXConfig = {
+    inline def apply(filename: String, sheet: ZipCelXSheet): ZipCelXConfig = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZipCelXConfig]
     }
     
-    @scala.inline
-    implicit class ZipCelXConfigMutableBuilder[Self <: ZipCelXConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ZipCelXConfig](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheet(value: ZipCelXSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+      inline def setSheet(value: ZipCelXSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,20 +83,16 @@ object mod {
   }
   object ZipCelXSheet {
     
-    @scala.inline
-    def apply(data: ZipCelXDataSet): ZipCelXSheet = {
+    inline def apply(data: ZipCelXDataSet): ZipCelXSheet = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZipCelXSheet]
     }
     
-    @scala.inline
-    implicit class ZipCelXSheetMutableBuilder[Self <: ZipCelXSheet] (val x: Self) extends AnyVal {
+    extension [Self <: ZipCelXSheet](x: Self) {
       
-      @scala.inline
-      def setData(value: ZipCelXDataSet): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ZipCelXDataSet): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: ZipCelXRow*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ZipCelXRow*): Self = StObject.set(x, "data", js.Array(value :_*))
     }
   }
 }

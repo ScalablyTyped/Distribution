@@ -18,22 +18,17 @@ trait AugmentedManifestsListItem extends StObject {
 }
 object AugmentedManifestsListItem {
   
-  @scala.inline
-  def apply(AttributeNames: AttributeNamesList, S3Uri: S3Uri): AugmentedManifestsListItem = {
+  inline def apply(AttributeNames: AttributeNamesList, S3Uri: S3Uri): AugmentedManifestsListItem = {
     val __obj = js.Dynamic.literal(AttributeNames = AttributeNames.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AugmentedManifestsListItem]
   }
   
-  @scala.inline
-  implicit class AugmentedManifestsListItemMutableBuilder[Self <: AugmentedManifestsListItem] (val x: Self) extends AnyVal {
+  extension [Self <: AugmentedManifestsListItem](x: Self) {
     
-    @scala.inline
-    def setAttributeNames(value: AttributeNamesList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
+    inline def setAttributeNames(value: AttributeNamesList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNamesVarargs(value: AttributeNamesListItem*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: AttributeNamesListItem*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

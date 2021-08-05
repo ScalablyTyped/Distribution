@@ -23,25 +23,19 @@ trait UpdateServiceSpecificCredentialRequest extends StObject {
 }
 object UpdateServiceSpecificCredentialRequest {
   
-  @scala.inline
-  def apply(ServiceSpecificCredentialId: serviceSpecificCredentialId, Status: statusType): UpdateServiceSpecificCredentialRequest = {
+  inline def apply(ServiceSpecificCredentialId: serviceSpecificCredentialId, Status: statusType): UpdateServiceSpecificCredentialRequest = {
     val __obj = js.Dynamic.literal(ServiceSpecificCredentialId = ServiceSpecificCredentialId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServiceSpecificCredentialRequest]
   }
   
-  @scala.inline
-  implicit class UpdateServiceSpecificCredentialRequestMutableBuilder[Self <: UpdateServiceSpecificCredentialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateServiceSpecificCredentialRequest](x: Self) {
     
-    @scala.inline
-    def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = StObject.set(x, "ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
+    inline def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = StObject.set(x, "ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

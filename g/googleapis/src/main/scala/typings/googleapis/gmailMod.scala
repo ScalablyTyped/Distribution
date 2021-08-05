@@ -36,8 +36,7 @@ object gmailMod {
     @JSImport("googleapis/build/src/apis/gmail", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Gmail] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Gmail]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Gmail]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
   object auth extends Shortcut {
@@ -73,8 +72,7 @@ object gmailMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -118,9 +116,7 @@ object gmailMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def gmail(options: Options): Gmail = ^.asInstanceOf[js.Dynamic].applyDynamic("gmail")(options.asInstanceOf[js.Any]).asInstanceOf[Gmail]
+  inline def gmail(options: Options): Gmail = ^.asInstanceOf[js.Dynamic].applyDynamic("gmail")(options.asInstanceOf[js.Any]).asInstanceOf[Gmail]
   
-  @scala.inline
-  def gmail_v1(version: v1): Gmail = ^.asInstanceOf[js.Dynamic].applyDynamic("gmail")(version.asInstanceOf[js.Any]).asInstanceOf[Gmail]
+  inline def gmail_v1(version: v1): Gmail = ^.asInstanceOf[js.Dynamic].applyDynamic("gmail")(version.asInstanceOf[js.Any]).asInstanceOf[Gmail]
 }

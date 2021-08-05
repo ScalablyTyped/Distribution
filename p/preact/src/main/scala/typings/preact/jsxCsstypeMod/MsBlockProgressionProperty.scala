@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsBlockProgressionProperty extends StObject
 object MsBlockProgressionProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def bt: typings.preact.preactStrings.bt = "bt".asInstanceOf[typings.preact.preactStrings.bt]
+  inline def bt: typings.preact.preactStrings.bt = "bt".asInstanceOf[typings.preact.preactStrings.bt]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def lr: typings.preact.preactStrings.lr = "lr".asInstanceOf[typings.preact.preactStrings.lr]
+  inline def lr: typings.preact.preactStrings.lr = "lr".asInstanceOf[typings.preact.preactStrings.lr]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def rl: typings.preact.preactStrings.rl = "rl".asInstanceOf[typings.preact.preactStrings.rl]
+  inline def rl: typings.preact.preactStrings.rl = "rl".asInstanceOf[typings.preact.preactStrings.rl]
   
-  @scala.inline
-  def tb: typings.preact.preactStrings.tb = "tb".asInstanceOf[typings.preact.preactStrings.tb]
+  inline def tb: typings.preact.preactStrings.tb = "tb".asInstanceOf[typings.preact.preactStrings.tb]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
 }

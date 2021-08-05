@@ -36,44 +36,32 @@ object workspaces {
   }
   object DirectorySelfServicePermissions {
     
-    @scala.inline
-    def apply(): DirectorySelfServicePermissions = {
+    inline def apply(): DirectorySelfServicePermissions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectorySelfServicePermissions]
     }
     
-    @scala.inline
-    implicit class DirectorySelfServicePermissionsMutableBuilder[Self <: DirectorySelfServicePermissions] (val x: Self) extends AnyVal {
+    extension [Self <: DirectorySelfServicePermissions](x: Self) {
       
-      @scala.inline
-      def setChangeComputeType(value: Input[Boolean]): Self = StObject.set(x, "changeComputeType", value.asInstanceOf[js.Any])
+      inline def setChangeComputeType(value: Input[Boolean]): Self = StObject.set(x, "changeComputeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeComputeTypeUndefined: Self = StObject.set(x, "changeComputeType", js.undefined)
+      inline def setChangeComputeTypeUndefined: Self = StObject.set(x, "changeComputeType", js.undefined)
       
-      @scala.inline
-      def setIncreaseVolumeSize(value: Input[Boolean]): Self = StObject.set(x, "increaseVolumeSize", value.asInstanceOf[js.Any])
+      inline def setIncreaseVolumeSize(value: Input[Boolean]): Self = StObject.set(x, "increaseVolumeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncreaseVolumeSizeUndefined: Self = StObject.set(x, "increaseVolumeSize", js.undefined)
+      inline def setIncreaseVolumeSizeUndefined: Self = StObject.set(x, "increaseVolumeSize", js.undefined)
       
-      @scala.inline
-      def setRebuildWorkspace(value: Input[Boolean]): Self = StObject.set(x, "rebuildWorkspace", value.asInstanceOf[js.Any])
+      inline def setRebuildWorkspace(value: Input[Boolean]): Self = StObject.set(x, "rebuildWorkspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRebuildWorkspaceUndefined: Self = StObject.set(x, "rebuildWorkspace", js.undefined)
+      inline def setRebuildWorkspaceUndefined: Self = StObject.set(x, "rebuildWorkspace", js.undefined)
       
-      @scala.inline
-      def setRestartWorkspace(value: Input[Boolean]): Self = StObject.set(x, "restartWorkspace", value.asInstanceOf[js.Any])
+      inline def setRestartWorkspace(value: Input[Boolean]): Self = StObject.set(x, "restartWorkspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestartWorkspaceUndefined: Self = StObject.set(x, "restartWorkspace", js.undefined)
+      inline def setRestartWorkspaceUndefined: Self = StObject.set(x, "restartWorkspace", js.undefined)
       
-      @scala.inline
-      def setSwitchRunningMode(value: Input[Boolean]): Self = StObject.set(x, "switchRunningMode", value.asInstanceOf[js.Any])
+      inline def setSwitchRunningMode(value: Input[Boolean]): Self = StObject.set(x, "switchRunningMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchRunningModeUndefined: Self = StObject.set(x, "switchRunningMode", js.undefined)
+      inline def setSwitchRunningModeUndefined: Self = StObject.set(x, "switchRunningMode", js.undefined)
     }
   }
   
@@ -106,44 +94,32 @@ object workspaces {
   }
   object DirectoryWorkspaceCreationProperties {
     
-    @scala.inline
-    def apply(): DirectoryWorkspaceCreationProperties = {
+    inline def apply(): DirectoryWorkspaceCreationProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectoryWorkspaceCreationProperties]
     }
     
-    @scala.inline
-    implicit class DirectoryWorkspaceCreationPropertiesMutableBuilder[Self <: DirectoryWorkspaceCreationProperties] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryWorkspaceCreationProperties](x: Self) {
       
-      @scala.inline
-      def setCustomSecurityGroupId(value: Input[String]): Self = StObject.set(x, "customSecurityGroupId", value.asInstanceOf[js.Any])
+      inline def setCustomSecurityGroupId(value: Input[String]): Self = StObject.set(x, "customSecurityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSecurityGroupIdUndefined: Self = StObject.set(x, "customSecurityGroupId", js.undefined)
+      inline def setCustomSecurityGroupIdUndefined: Self = StObject.set(x, "customSecurityGroupId", js.undefined)
       
-      @scala.inline
-      def setDefaultOu(value: Input[String]): Self = StObject.set(x, "defaultOu", value.asInstanceOf[js.Any])
+      inline def setDefaultOu(value: Input[String]): Self = StObject.set(x, "defaultOu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOuUndefined: Self = StObject.set(x, "defaultOu", js.undefined)
+      inline def setDefaultOuUndefined: Self = StObject.set(x, "defaultOu", js.undefined)
       
-      @scala.inline
-      def setEnableInternetAccess(value: Input[Boolean]): Self = StObject.set(x, "enableInternetAccess", value.asInstanceOf[js.Any])
+      inline def setEnableInternetAccess(value: Input[Boolean]): Self = StObject.set(x, "enableInternetAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableInternetAccessUndefined: Self = StObject.set(x, "enableInternetAccess", js.undefined)
+      inline def setEnableInternetAccessUndefined: Self = StObject.set(x, "enableInternetAccess", js.undefined)
       
-      @scala.inline
-      def setEnableMaintenanceMode(value: Input[Boolean]): Self = StObject.set(x, "enableMaintenanceMode", value.asInstanceOf[js.Any])
+      inline def setEnableMaintenanceMode(value: Input[Boolean]): Self = StObject.set(x, "enableMaintenanceMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableMaintenanceModeUndefined: Self = StObject.set(x, "enableMaintenanceMode", js.undefined)
+      inline def setEnableMaintenanceModeUndefined: Self = StObject.set(x, "enableMaintenanceMode", js.undefined)
       
-      @scala.inline
-      def setUserEnabledAsLocalAdministrator(value: Input[Boolean]): Self = StObject.set(x, "userEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
+      inline def setUserEnabledAsLocalAdministrator(value: Input[Boolean]): Self = StObject.set(x, "userEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserEnabledAsLocalAdministratorUndefined: Self = StObject.set(x, "userEnabledAsLocalAdministrator", js.undefined)
+      inline def setUserEnabledAsLocalAdministratorUndefined: Self = StObject.set(x, "userEnabledAsLocalAdministrator", js.undefined)
     }
   }
   
@@ -176,44 +152,32 @@ object workspaces {
   }
   object GetDirectoryWorkspaceCreationProperties {
     
-    @scala.inline
-    def apply(): GetDirectoryWorkspaceCreationProperties = {
+    inline def apply(): GetDirectoryWorkspaceCreationProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetDirectoryWorkspaceCreationProperties]
     }
     
-    @scala.inline
-    implicit class GetDirectoryWorkspaceCreationPropertiesMutableBuilder[Self <: GetDirectoryWorkspaceCreationProperties] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectoryWorkspaceCreationProperties](x: Self) {
       
-      @scala.inline
-      def setCustomSecurityGroupId(value: String): Self = StObject.set(x, "customSecurityGroupId", value.asInstanceOf[js.Any])
+      inline def setCustomSecurityGroupId(value: String): Self = StObject.set(x, "customSecurityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSecurityGroupIdUndefined: Self = StObject.set(x, "customSecurityGroupId", js.undefined)
+      inline def setCustomSecurityGroupIdUndefined: Self = StObject.set(x, "customSecurityGroupId", js.undefined)
       
-      @scala.inline
-      def setDefaultOu(value: String): Self = StObject.set(x, "defaultOu", value.asInstanceOf[js.Any])
+      inline def setDefaultOu(value: String): Self = StObject.set(x, "defaultOu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOuUndefined: Self = StObject.set(x, "defaultOu", js.undefined)
+      inline def setDefaultOuUndefined: Self = StObject.set(x, "defaultOu", js.undefined)
       
-      @scala.inline
-      def setEnableInternetAccess(value: Boolean): Self = StObject.set(x, "enableInternetAccess", value.asInstanceOf[js.Any])
+      inline def setEnableInternetAccess(value: Boolean): Self = StObject.set(x, "enableInternetAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableInternetAccessUndefined: Self = StObject.set(x, "enableInternetAccess", js.undefined)
+      inline def setEnableInternetAccessUndefined: Self = StObject.set(x, "enableInternetAccess", js.undefined)
       
-      @scala.inline
-      def setEnableMaintenanceMode(value: Boolean): Self = StObject.set(x, "enableMaintenanceMode", value.asInstanceOf[js.Any])
+      inline def setEnableMaintenanceMode(value: Boolean): Self = StObject.set(x, "enableMaintenanceMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableMaintenanceModeUndefined: Self = StObject.set(x, "enableMaintenanceMode", js.undefined)
+      inline def setEnableMaintenanceModeUndefined: Self = StObject.set(x, "enableMaintenanceMode", js.undefined)
       
-      @scala.inline
-      def setUserEnabledAsLocalAdministrator(value: Boolean): Self = StObject.set(x, "userEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
+      inline def setUserEnabledAsLocalAdministrator(value: Boolean): Self = StObject.set(x, "userEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserEnabledAsLocalAdministratorUndefined: Self = StObject.set(x, "userEnabledAsLocalAdministrator", js.undefined)
+      inline def setUserEnabledAsLocalAdministratorUndefined: Self = StObject.set(x, "userEnabledAsLocalAdministrator", js.undefined)
     }
   }
   
@@ -231,23 +195,18 @@ object workspaces {
   }
   object IpGroupRule {
     
-    @scala.inline
-    def apply(source: Input[String]): IpGroupRule = {
+    inline def apply(source: Input[String]): IpGroupRule = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[IpGroupRule]
     }
     
-    @scala.inline
-    implicit class IpGroupRuleMutableBuilder[Self <: IpGroupRule] (val x: Self) extends AnyVal {
+    extension [Self <: IpGroupRule](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setSource(value: Input[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Input[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -280,44 +239,32 @@ object workspaces {
   }
   object WorkspaceWorkspaceProperties {
     
-    @scala.inline
-    def apply(): WorkspaceWorkspaceProperties = {
+    inline def apply(): WorkspaceWorkspaceProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkspaceWorkspaceProperties]
     }
     
-    @scala.inline
-    implicit class WorkspaceWorkspacePropertiesMutableBuilder[Self <: WorkspaceWorkspaceProperties] (val x: Self) extends AnyVal {
+    extension [Self <: WorkspaceWorkspaceProperties](x: Self) {
       
-      @scala.inline
-      def setComputeTypeName(value: Input[String]): Self = StObject.set(x, "computeTypeName", value.asInstanceOf[js.Any])
+      inline def setComputeTypeName(value: Input[String]): Self = StObject.set(x, "computeTypeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeTypeNameUndefined: Self = StObject.set(x, "computeTypeName", js.undefined)
+      inline def setComputeTypeNameUndefined: Self = StObject.set(x, "computeTypeName", js.undefined)
       
-      @scala.inline
-      def setRootVolumeSizeGib(value: Input[Double]): Self = StObject.set(x, "rootVolumeSizeGib", value.asInstanceOf[js.Any])
+      inline def setRootVolumeSizeGib(value: Input[Double]): Self = StObject.set(x, "rootVolumeSizeGib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVolumeSizeGibUndefined: Self = StObject.set(x, "rootVolumeSizeGib", js.undefined)
+      inline def setRootVolumeSizeGibUndefined: Self = StObject.set(x, "rootVolumeSizeGib", js.undefined)
       
-      @scala.inline
-      def setRunningMode(value: Input[String]): Self = StObject.set(x, "runningMode", value.asInstanceOf[js.Any])
+      inline def setRunningMode(value: Input[String]): Self = StObject.set(x, "runningMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningModeAutoStopTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "runningModeAutoStopTimeoutInMinutes", value.asInstanceOf[js.Any])
+      inline def setRunningModeAutoStopTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "runningModeAutoStopTimeoutInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningModeAutoStopTimeoutInMinutesUndefined: Self = StObject.set(x, "runningModeAutoStopTimeoutInMinutes", js.undefined)
+      inline def setRunningModeAutoStopTimeoutInMinutesUndefined: Self = StObject.set(x, "runningModeAutoStopTimeoutInMinutes", js.undefined)
       
-      @scala.inline
-      def setRunningModeUndefined: Self = StObject.set(x, "runningMode", js.undefined)
+      inline def setRunningModeUndefined: Self = StObject.set(x, "runningMode", js.undefined)
       
-      @scala.inline
-      def setUserVolumeSizeGib(value: Input[Double]): Self = StObject.set(x, "userVolumeSizeGib", value.asInstanceOf[js.Any])
+      inline def setUserVolumeSizeGib(value: Input[Double]): Self = StObject.set(x, "userVolumeSizeGib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserVolumeSizeGibUndefined: Self = StObject.set(x, "userVolumeSizeGib", js.undefined)
+      inline def setUserVolumeSizeGibUndefined: Self = StObject.set(x, "userVolumeSizeGib", js.undefined)
     }
   }
 }

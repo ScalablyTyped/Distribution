@@ -16,8 +16,7 @@ trait AdaptiveMediaSourceAdvancedSettings extends StObject {
 }
 object AdaptiveMediaSourceAdvancedSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allSegmentsIndependent: js.Any,
     bitrateDowngradeTriggerRatio: js.Any,
     desiredBitrateHeadroomRatio: js.Any
@@ -26,16 +25,12 @@ object AdaptiveMediaSourceAdvancedSettings {
     __obj.asInstanceOf[AdaptiveMediaSourceAdvancedSettings]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourceAdvancedSettingsMutableBuilder[Self <: AdaptiveMediaSourceAdvancedSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourceAdvancedSettings](x: Self) {
     
-    @scala.inline
-    def setAllSegmentsIndependent(value: js.Any): Self = StObject.set(x, "allSegmentsIndependent", value.asInstanceOf[js.Any])
+    inline def setAllSegmentsIndependent(value: js.Any): Self = StObject.set(x, "allSegmentsIndependent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateDowngradeTriggerRatio(value: js.Any): Self = StObject.set(x, "bitrateDowngradeTriggerRatio", value.asInstanceOf[js.Any])
+    inline def setBitrateDowngradeTriggerRatio(value: js.Any): Self = StObject.set(x, "bitrateDowngradeTriggerRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredBitrateHeadroomRatio(value: js.Any): Self = StObject.set(x, "desiredBitrateHeadroomRatio", value.asInstanceOf[js.Any])
+    inline def setDesiredBitrateHeadroomRatio(value: js.Any): Self = StObject.set(x, "desiredBitrateHeadroomRatio", value.asInstanceOf[js.Any])
   }
 }

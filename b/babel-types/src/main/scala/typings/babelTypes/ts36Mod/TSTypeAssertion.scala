@@ -22,16 +22,12 @@ object TSTypeAssertion {
   @js.native
   def apply(typeAnnotation: TSType, expression: Expression): TSTypeAssertion = js.native
   
-  @scala.inline
-  implicit class TSTypeAssertionMutableBuilder[Self <: TSTypeAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeAssertion](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSTypeAssertion): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSTypeAssertion): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

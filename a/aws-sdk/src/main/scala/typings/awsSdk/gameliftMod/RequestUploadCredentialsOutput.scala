@@ -18,25 +18,19 @@ trait RequestUploadCredentialsOutput extends StObject {
 }
 object RequestUploadCredentialsOutput {
   
-  @scala.inline
-  def apply(): RequestUploadCredentialsOutput = {
+  inline def apply(): RequestUploadCredentialsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestUploadCredentialsOutput]
   }
   
-  @scala.inline
-  implicit class RequestUploadCredentialsOutputMutableBuilder[Self <: RequestUploadCredentialsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RequestUploadCredentialsOutput](x: Self) {
     
-    @scala.inline
-    def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
+    inline def setStorageLocation(value: S3Location): Self = StObject.set(x, "StorageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageLocationUndefined: Self = StObject.set(x, "StorageLocation", js.undefined)
+    inline def setStorageLocationUndefined: Self = StObject.set(x, "StorageLocation", js.undefined)
     
-    @scala.inline
-    def setUploadCredentials(value: AwsCredentials): Self = StObject.set(x, "UploadCredentials", value.asInstanceOf[js.Any])
+    inline def setUploadCredentials(value: AwsCredentials): Self = StObject.set(x, "UploadCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadCredentialsUndefined: Self = StObject.set(x, "UploadCredentials", js.undefined)
+    inline def setUploadCredentialsUndefined: Self = StObject.set(x, "UploadCredentials", js.undefined)
   }
 }

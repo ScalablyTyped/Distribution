@@ -14,22 +14,17 @@ trait Queued extends StObject {
 }
 object Queued {
   
-  @scala.inline
-  def apply(all: scala.Double, queued: scala.Double, running: scala.Double): Queued = {
+  inline def apply(all: scala.Double, queued: scala.Double, running: scala.Double): Queued = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any])
     __obj.asInstanceOf[Queued]
   }
   
-  @scala.inline
-  implicit class QueuedMutableBuilder[Self <: Queued] (val x: Self) extends AnyVal {
+  extension [Self <: Queued](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunning(value: scala.Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: scala.Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
   }
 }

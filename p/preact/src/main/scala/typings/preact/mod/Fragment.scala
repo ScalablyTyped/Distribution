@@ -19,6 +19,5 @@ object Fragment {
   // Preact Built-in Components
   // -----------------------------------
   // TODO: Revisit what the public type of this is...
-  @scala.inline
-  def apply: ComponentClass[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("Fragment").asInstanceOf[ComponentClass[js.Object, js.Object]]
+  inline def apply: ComponentClass[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("Fragment").asInstanceOf[ComponentClass[js.Object, js.Object]]
 }

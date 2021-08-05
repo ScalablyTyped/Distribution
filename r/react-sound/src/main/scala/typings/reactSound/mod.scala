@@ -63,110 +63,76 @@ object mod extends Shortcut {
   }
   object ReactSoundProps {
     
-    @scala.inline
-    def apply(playStatus: PLAYING | STOPPED | PAUSED, url: String): ReactSoundProps = {
+    inline def apply(playStatus: PLAYING | STOPPED | PAUSED, url: String): ReactSoundProps = {
       val __obj = js.Dynamic.literal(playStatus = playStatus.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactSoundProps]
     }
     
-    @scala.inline
-    implicit class ReactSoundPropsMutableBuilder[Self <: ReactSoundProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactSoundProps](x: Self) {
       
-      @scala.inline
-      def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+      inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
+      inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setOnBufferChange(value: () => Unit): Self = StObject.set(x, "onBufferChange", js.Any.fromFunction0(value))
+      inline def setOnBufferChange(value: () => Unit): Self = StObject.set(x, "onBufferChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBufferChangeUndefined: Self = StObject.set(x, "onBufferChange", js.undefined)
+      inline def setOnBufferChangeUndefined: Self = StObject.set(x, "onBufferChange", js.undefined)
       
-      @scala.inline
-      def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+      inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnFinishedPlaying(value: () => Unit): Self = StObject.set(x, "onFinishedPlaying", js.Any.fromFunction0(value))
+      inline def setOnFinishedPlaying(value: () => Unit): Self = StObject.set(x, "onFinishedPlaying", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFinishedPlayingUndefined: Self = StObject.set(x, "onFinishedPlaying", js.undefined)
+      inline def setOnFinishedPlayingUndefined: Self = StObject.set(x, "onFinishedPlaying", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnLoading(value: () => Unit): Self = StObject.set(x, "onLoading", js.Any.fromFunction0(value))
+      inline def setOnLoading(value: () => Unit): Self = StObject.set(x, "onLoading", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadingUndefined: Self = StObject.set(x, "onLoading", js.undefined)
+      inline def setOnLoadingUndefined: Self = StObject.set(x, "onLoading", js.undefined)
       
-      @scala.inline
-      def setOnPause(value: () => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
+      inline def setOnPause(value: () => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      @scala.inline
-      def setOnPlaying(value: () => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction0(value))
+      inline def setOnPlaying(value: () => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
+      inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
-      @scala.inline
-      def setOnResume(value: () => Unit): Self = StObject.set(x, "onResume", js.Any.fromFunction0(value))
+      inline def setOnResume(value: () => Unit): Self = StObject.set(x, "onResume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
+      inline def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: () => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction0(value))
+      inline def setOnStop(value: () => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setPlayFromPosition(value: Double): Self = StObject.set(x, "playFromPosition", value.asInstanceOf[js.Any])
+      inline def setPlayFromPosition(value: Double): Self = StObject.set(x, "playFromPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayFromPositionUndefined: Self = StObject.set(x, "playFromPosition", js.undefined)
+      inline def setPlayFromPositionUndefined: Self = StObject.set(x, "playFromPosition", js.undefined)
       
-      @scala.inline
-      def setPlayStatus(value: PLAYING | STOPPED | PAUSED): Self = StObject.set(x, "playStatus", value.asInstanceOf[js.Any])
+      inline def setPlayStatus(value: PLAYING | STOPPED | PAUSED): Self = StObject.set(x, "playStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+      inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
+      inline def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
   

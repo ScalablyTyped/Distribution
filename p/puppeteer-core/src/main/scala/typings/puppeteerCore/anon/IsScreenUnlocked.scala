@@ -12,19 +12,15 @@ trait IsScreenUnlocked extends StObject {
 }
 object IsScreenUnlocked {
   
-  @scala.inline
-  def apply(isScreenUnlocked: Boolean, isUserActive: Boolean): IsScreenUnlocked = {
+  inline def apply(isScreenUnlocked: Boolean, isUserActive: Boolean): IsScreenUnlocked = {
     val __obj = js.Dynamic.literal(isScreenUnlocked = isScreenUnlocked.asInstanceOf[js.Any], isUserActive = isUserActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsScreenUnlocked]
   }
   
-  @scala.inline
-  implicit class IsScreenUnlockedMutableBuilder[Self <: IsScreenUnlocked] (val x: Self) extends AnyVal {
+  extension [Self <: IsScreenUnlocked](x: Self) {
     
-    @scala.inline
-    def setIsScreenUnlocked(value: Boolean): Self = StObject.set(x, "isScreenUnlocked", value.asInstanceOf[js.Any])
+    inline def setIsScreenUnlocked(value: Boolean): Self = StObject.set(x, "isScreenUnlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserActive(value: Boolean): Self = StObject.set(x, "isUserActive", value.asInstanceOf[js.Any])
+    inline def setIsUserActive(value: Boolean): Self = StObject.set(x, "isUserActive", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait RuleDescriptor extends StObject {
 }
 object RuleDescriptor {
   
-  @scala.inline
-  def apply(LeftTokenRange: TokenRange, RightTokenRange: TokenRange): RuleDescriptor = {
+  inline def apply(LeftTokenRange: TokenRange, RightTokenRange: TokenRange): RuleDescriptor = {
     val __obj = js.Dynamic.literal(LeftTokenRange = LeftTokenRange.asInstanceOf[js.Any], RightTokenRange = RightTokenRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleDescriptor]
   }
   
-  @scala.inline
-  implicit class RuleDescriptorMutableBuilder[Self <: RuleDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: RuleDescriptor](x: Self) {
     
-    @scala.inline
-    def setLeftTokenRange(value: TokenRange): Self = StObject.set(x, "LeftTokenRange", value.asInstanceOf[js.Any])
+    inline def setLeftTokenRange(value: TokenRange): Self = StObject.set(x, "LeftTokenRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightTokenRange(value: TokenRange): Self = StObject.set(x, "RightTokenRange", value.asInstanceOf[js.Any])
+    inline def setRightTokenRange(value: TokenRange): Self = StObject.set(x, "RightTokenRange", value.asInstanceOf[js.Any])
   }
 }

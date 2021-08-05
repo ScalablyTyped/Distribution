@@ -64,74 +64,53 @@ trait SharedEventProperties extends StObject {
 }
 object SharedEventProperties {
   
-  @scala.inline
-  def apply(ph: EventsPhase): SharedEventProperties = {
+  inline def apply(ph: EventsPhase): SharedEventProperties = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedEventProperties]
   }
   
-  @scala.inline
-  implicit class SharedEventPropertiesMutableBuilder[Self <: SharedEventProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SharedEventProperties](x: Self) {
     
-    @scala.inline
-    def setArgs(
+    inline def setArgs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: any}
       */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties & TopLevel[js.Any]
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setCat(value: String): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
+    inline def setCat(value: String): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatUndefined: Self = StObject.set(x, "cat", js.undefined)
+    inline def setCatUndefined: Self = StObject.set(x, "cat", js.undefined)
     
-    @scala.inline
-    def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
+    inline def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
+    inline def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPh(value: EventsPhase): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: EventsPhase): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
+    inline def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
     
-    @scala.inline
-    def setSf(value: Double): Self = StObject.set(x, "sf", value.asInstanceOf[js.Any])
+    inline def setSf(value: Double): Self = StObject.set(x, "sf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSfUndefined: Self = StObject.set(x, "sf", js.undefined)
+    inline def setSfUndefined: Self = StObject.set(x, "sf", js.undefined)
     
-    @scala.inline
-    def setTid(value: Double): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
+    inline def setTid(value: Double): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTidUndefined: Self = StObject.set(x, "tid", js.undefined)
+    inline def setTidUndefined: Self = StObject.set(x, "tid", js.undefined)
     
-    @scala.inline
-    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
+    inline def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
-    @scala.inline
-    def setTts(value: Double): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
+    inline def setTts(value: Double): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtsUndefined: Self = StObject.set(x, "tts", js.undefined)
+    inline def setTtsUndefined: Self = StObject.set(x, "tts", js.undefined)
   }
 }

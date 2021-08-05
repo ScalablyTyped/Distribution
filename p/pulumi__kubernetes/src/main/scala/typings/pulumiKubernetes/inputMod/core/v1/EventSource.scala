@@ -22,25 +22,19 @@ trait EventSource extends StObject {
 }
 object EventSource {
   
-  @scala.inline
-  def apply(): EventSource = {
+  inline def apply(): EventSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventSource]
   }
   
-  @scala.inline
-  implicit class EventSourceMutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
+  extension [Self <: EventSource](x: Self) {
     
-    @scala.inline
-    def setComponent(value: Input[String]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Input[String]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setHost(value: Input[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Input[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
   }
 }

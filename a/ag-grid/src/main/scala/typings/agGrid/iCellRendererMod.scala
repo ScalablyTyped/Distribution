@@ -21,17 +21,14 @@ object iCellRendererMod {
   }
   object ICellRenderer {
     
-    @scala.inline
-    def apply(refresh: js.Any => Boolean): ICellRenderer = {
+    inline def apply(refresh: js.Any => Boolean): ICellRenderer = {
       val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction1(refresh))
       __obj.asInstanceOf[ICellRenderer]
     }
     
-    @scala.inline
-    implicit class ICellRendererMutableBuilder[Self <: ICellRenderer] (val x: Self) extends AnyVal {
+    extension [Self <: ICellRenderer](x: Self) {
       
-      @scala.inline
-      def setRefresh(value: js.Any => Boolean): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+      inline def setRefresh(value: js.Any => Boolean): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     }
   }
   
@@ -41,8 +38,7 @@ object iCellRendererMod {
        with IComponent[ICellRendererParams]
   object ICellRendererComp {
     
-    @scala.inline
-    def apply(getGui: () => HTMLElement, refresh: js.Any => Boolean): ICellRendererComp = {
+    inline def apply(getGui: () => HTMLElement, refresh: js.Any => Boolean): ICellRendererComp = {
       val __obj = js.Dynamic.literal(getGui = js.Any.fromFunction0(getGui), refresh = js.Any.fromFunction1(refresh))
       __obj.asInstanceOf[ICellRendererComp]
     }
@@ -91,8 +87,7 @@ object iCellRendererMod {
   }
   object ICellRendererParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       addRenderedRowListener: (String, js.Function) => Unit,
       api: GridApi,
@@ -116,62 +111,43 @@ object iCellRendererMod {
       __obj.asInstanceOf[ICellRendererParams]
     }
     
-    @scala.inline
-    implicit class ICellRendererParamsMutableBuilder[Self <: ICellRendererParams] (val x: Self) extends AnyVal {
+    extension [Self <: ICellRendererParams](x: Self) {
       
-      @scala.inline
-      def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
+      inline def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddRenderedRowListener(value: (String, js.Function) => Unit): Self = StObject.set(x, "addRenderedRowListener", js.Any.fromFunction2(value))
+      inline def setAddRenderedRowListener(value: (String, js.Function) => Unit): Self = StObject.set(x, "addRenderedRowListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
+      inline def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
+      inline def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEGridCell(value: HTMLElement): Self = StObject.set(x, "eGridCell", value.asInstanceOf[js.Any])
+      inline def setEGridCell(value: HTMLElement): Self = StObject.set(x, "eGridCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEParentOfValue(value: HTMLElement): Self = StObject.set(x, "eParentOfValue", value.asInstanceOf[js.Any])
+      inline def setEParentOfValue(value: HTMLElement): Self = StObject.set(x, "eParentOfValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatValue(value: js.Any => js.Any): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
+      inline def setFormatValue(value: js.Any => js.Any): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshCell(value: () => Unit): Self = StObject.set(x, "refreshCell", js.Any.fromFunction0(value))
+      inline def setRefreshCell(value: () => Unit): Self = StObject.set(x, "refreshCell", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueFormatted(value: js.Any): Self = StObject.set(x, "valueFormatted", value.asInstanceOf[js.Any])
+      inline def setValueFormatted(value: js.Any): Self = StObject.set(x, "valueFormatted", value.asInstanceOf[js.Any])
     }
   }
 }

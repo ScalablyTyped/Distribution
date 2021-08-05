@@ -22,25 +22,19 @@ trait ProductLicense extends StObject {
 }
 object ProductLicense {
   
-  @scala.inline
-  def apply(expirationDate: Date, isActive: Boolean, isConsumable: Boolean, productId: String): ProductLicense = {
+  inline def apply(expirationDate: Date, isActive: Boolean, isConsumable: Boolean, productId: String): ProductLicense = {
     val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isConsumable = isConsumable.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductLicense]
   }
   
-  @scala.inline
-  implicit class ProductLicenseMutableBuilder[Self <: ProductLicense] (val x: Self) extends AnyVal {
+  extension [Self <: ProductLicense](x: Self) {
     
-    @scala.inline
-    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConsumable(value: Boolean): Self = StObject.set(x, "isConsumable", value.asInstanceOf[js.Any])
+    inline def setIsConsumable(value: Boolean): Self = StObject.set(x, "isConsumable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,10 +11,8 @@ object getServiceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
-  @scala.inline
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
+  inline def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
+  inline def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
   
   trait GetServiceArgs extends StObject {
     
@@ -30,20 +28,16 @@ object getServiceMod {
   }
   object GetServiceArgs {
     
-    @scala.inline
-    def apply(clusterArn: String, serviceName: String): GetServiceArgs = {
+    inline def apply(clusterArn: String, serviceName: String): GetServiceArgs = {
       val __obj = js.Dynamic.literal(clusterArn = clusterArn.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetServiceArgs]
     }
     
-    @scala.inline
-    implicit class GetServiceArgsMutableBuilder[Self <: GetServiceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceArgs](x: Self) {
       
-      @scala.inline
-      def setClusterArn(value: String): Self = StObject.set(x, "clusterArn", value.asInstanceOf[js.Any])
+      inline def setClusterArn(value: String): Self = StObject.set(x, "clusterArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,8 +79,7 @@ object getServiceMod {
   }
   object GetServiceResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       clusterArn: String,
       desiredCount: Double,
@@ -100,32 +93,23 @@ object getServiceMod {
       __obj.asInstanceOf[GetServiceResult]
     }
     
-    @scala.inline
-    implicit class GetServiceResultMutableBuilder[Self <: GetServiceResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterArn(value: String): Self = StObject.set(x, "clusterArn", value.asInstanceOf[js.Any])
+      inline def setClusterArn(value: String): Self = StObject.set(x, "clusterArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredCount(value: Double): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
+      inline def setDesiredCount(value: Double): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchType(value: String): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
+      inline def setLaunchType(value: String): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedulingStrategy(value: String): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
+      inline def setSchedulingStrategy(value: String): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+      inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,19 +11,15 @@ trait AccessDeniedPageSettings extends StObject {
 }
 object AccessDeniedPageSettings {
   
-  @scala.inline
-  def apply(): AccessDeniedPageSettings = {
+  inline def apply(): AccessDeniedPageSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessDeniedPageSettings]
   }
   
-  @scala.inline
-  implicit class AccessDeniedPageSettingsMutableBuilder[Self <: AccessDeniedPageSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccessDeniedPageSettings](x: Self) {
     
-    @scala.inline
-    def setAccessDeniedPageUri(value: String): Self = StObject.set(x, "accessDeniedPageUri", value.asInstanceOf[js.Any])
+    inline def setAccessDeniedPageUri(value: String): Self = StObject.set(x, "accessDeniedPageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessDeniedPageUriUndefined: Self = StObject.set(x, "accessDeniedPageUri", js.undefined)
+    inline def setAccessDeniedPageUriUndefined: Self = StObject.set(x, "accessDeniedPageUri", js.undefined)
   }
 }

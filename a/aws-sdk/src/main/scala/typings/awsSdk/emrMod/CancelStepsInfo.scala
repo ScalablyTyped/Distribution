@@ -23,31 +23,23 @@ trait CancelStepsInfo extends StObject {
 }
 object CancelStepsInfo {
   
-  @scala.inline
-  def apply(): CancelStepsInfo = {
+  inline def apply(): CancelStepsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelStepsInfo]
   }
   
-  @scala.inline
-  implicit class CancelStepsInfoMutableBuilder[Self <: CancelStepsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CancelStepsInfo](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CancelStepsRequestStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CancelStepsRequestStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setStepId(value: StepId): Self = StObject.set(x, "StepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: StepId): Self = StObject.set(x, "StepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdUndefined: Self = StObject.set(x, "StepId", js.undefined)
+    inline def setStepIdUndefined: Self = StObject.set(x, "StepId", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait SourceSplitRequest extends StObject {
 }
 object SourceSplitRequest {
   
-  @scala.inline
-  def apply(): SourceSplitRequest = {
+  inline def apply(): SourceSplitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceSplitRequest]
   }
   
-  @scala.inline
-  implicit class SourceSplitRequestMutableBuilder[Self <: SourceSplitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSplitRequest](x: Self) {
     
-    @scala.inline
-    def setOptions(value: SourceSplitOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SourceSplitOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

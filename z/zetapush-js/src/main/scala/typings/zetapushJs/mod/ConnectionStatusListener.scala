@@ -28,8 +28,7 @@ trait ConnectionStatusListener extends StObject {
 }
 object ConnectionStatusListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onConnectionBroken: () => Unit,
     onConnectionClosed: () => Unit,
     onConnectionEstablished: () => Unit,
@@ -45,37 +44,26 @@ object ConnectionStatusListener {
     __obj.asInstanceOf[ConnectionStatusListener]
   }
   
-  @scala.inline
-  implicit class ConnectionStatusListenerMutableBuilder[Self <: ConnectionStatusListener] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionStatusListener](x: Self) {
     
-    @scala.inline
-    def setOnConnectionBroken(value: () => Unit): Self = StObject.set(x, "onConnectionBroken", js.Any.fromFunction0(value))
+    inline def setOnConnectionBroken(value: () => Unit): Self = StObject.set(x, "onConnectionBroken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnConnectionClosed(value: () => Unit): Self = StObject.set(x, "onConnectionClosed", js.Any.fromFunction0(value))
+    inline def setOnConnectionClosed(value: () => Unit): Self = StObject.set(x, "onConnectionClosed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnConnectionEstablished(value: () => Unit): Self = StObject.set(x, "onConnectionEstablished", js.Any.fromFunction0(value))
+    inline def setOnConnectionEstablished(value: () => Unit): Self = StObject.set(x, "onConnectionEstablished", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnConnectionToServerFail(value: js.Any => Unit): Self = StObject.set(x, "onConnectionToServerFail", js.Any.fromFunction1(value))
+    inline def setOnConnectionToServerFail(value: js.Any => Unit): Self = StObject.set(x, "onConnectionToServerFail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnConnectionWillClose(value: () => Unit): Self = StObject.set(x, "onConnectionWillClose", js.Any.fromFunction0(value))
+    inline def setOnConnectionWillClose(value: () => Unit): Self = StObject.set(x, "onConnectionWillClose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFailedHandshake(value: js.Any => Unit): Self = StObject.set(x, "onFailedHandshake", js.Any.fromFunction1(value))
+    inline def setOnFailedHandshake(value: js.Any => Unit): Self = StObject.set(x, "onFailedHandshake", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMessageLost(value: () => Unit): Self = StObject.set(x, "onMessageLost", js.Any.fromFunction0(value))
+    inline def setOnMessageLost(value: () => Unit): Self = StObject.set(x, "onMessageLost", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnNegotiationFailed(value: js.Any => Unit): Self = StObject.set(x, "onNegotiationFailed", js.Any.fromFunction1(value))
+    inline def setOnNegotiationFailed(value: js.Any => Unit): Self = StObject.set(x, "onNegotiationFailed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNoServerUrlAvailable(value: () => Unit): Self = StObject.set(x, "onNoServerUrlAvailable", js.Any.fromFunction0(value))
+    inline def setOnNoServerUrlAvailable(value: () => Unit): Self = StObject.set(x, "onNoServerUrlAvailable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSuccessfulHandshake(value: js.Any => Unit): Self = StObject.set(x, "onSuccessfulHandshake", js.Any.fromFunction1(value))
+    inline def setOnSuccessfulHandshake(value: js.Any => Unit): Self = StObject.set(x, "onSuccessfulHandshake", js.Any.fromFunction1(value))
   }
 }

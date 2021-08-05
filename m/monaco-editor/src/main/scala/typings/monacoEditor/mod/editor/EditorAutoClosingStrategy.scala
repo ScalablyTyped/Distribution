@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditorAutoClosingStrategy extends StObject
 object EditorAutoClosingStrategy {
   
-  @scala.inline
-  def always: typings.monacoEditor.monacoEditorStrings.always = "always".asInstanceOf[typings.monacoEditor.monacoEditorStrings.always]
+  inline def always: typings.monacoEditor.monacoEditorStrings.always = "always".asInstanceOf[typings.monacoEditor.monacoEditorStrings.always]
   
-  @scala.inline
-  def beforeWhitespace: typings.monacoEditor.monacoEditorStrings.beforeWhitespace = "beforeWhitespace".asInstanceOf[typings.monacoEditor.monacoEditorStrings.beforeWhitespace]
+  inline def beforeWhitespace: typings.monacoEditor.monacoEditorStrings.beforeWhitespace = "beforeWhitespace".asInstanceOf[typings.monacoEditor.monacoEditorStrings.beforeWhitespace]
   
-  @scala.inline
-  def languageDefined: typings.monacoEditor.monacoEditorStrings.languageDefined = "languageDefined".asInstanceOf[typings.monacoEditor.monacoEditorStrings.languageDefined]
+  inline def languageDefined: typings.monacoEditor.monacoEditorStrings.languageDefined = "languageDefined".asInstanceOf[typings.monacoEditor.monacoEditorStrings.languageDefined]
   
-  @scala.inline
-  def never: typings.monacoEditor.monacoEditorStrings.never = "never".asInstanceOf[typings.monacoEditor.monacoEditorStrings.never]
+  inline def never: typings.monacoEditor.monacoEditorStrings.never = "never".asInstanceOf[typings.monacoEditor.monacoEditorStrings.never]
 }

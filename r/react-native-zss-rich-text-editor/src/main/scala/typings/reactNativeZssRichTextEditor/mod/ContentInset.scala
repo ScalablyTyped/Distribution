@@ -12,19 +12,15 @@ trait ContentInset extends StObject {
 }
 object ContentInset {
   
-  @scala.inline
-  def apply(left: Double, top: Double): ContentInset = {
+  inline def apply(left: Double, top: Double): ContentInset = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentInset]
   }
   
-  @scala.inline
-  implicit class ContentInsetMutableBuilder[Self <: ContentInset] (val x: Self) extends AnyVal {
+  extension [Self <: ContentInset](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

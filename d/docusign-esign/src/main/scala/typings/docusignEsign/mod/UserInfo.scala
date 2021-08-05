@@ -81,93 +81,65 @@ trait UserInfo extends StObject {
 }
 object UserInfo {
   
-  @scala.inline
-  def apply(): UserInfo = {
+  inline def apply(): UserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserInfo]
   }
   
-  @scala.inline
-  implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserInfo](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
-    @scala.inline
-    def setActivationAccessCode(value: String): Self = StObject.set(x, "activationAccessCode", value.asInstanceOf[js.Any])
+    inline def setActivationAccessCode(value: String): Self = StObject.set(x, "activationAccessCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationAccessCodeUndefined: Self = StObject.set(x, "activationAccessCode", js.undefined)
+    inline def setActivationAccessCodeUndefined: Self = StObject.set(x, "activationAccessCode", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setLoginStatus(value: String): Self = StObject.set(x, "loginStatus", value.asInstanceOf[js.Any])
+    inline def setLoginStatus(value: String): Self = StObject.set(x, "loginStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginStatusUndefined: Self = StObject.set(x, "loginStatus", js.undefined)
+    inline def setLoginStatusUndefined: Self = StObject.set(x, "loginStatus", js.undefined)
     
-    @scala.inline
-    def setMembershipId(value: String): Self = StObject.set(x, "membershipId", value.asInstanceOf[js.Any])
+    inline def setMembershipId(value: String): Self = StObject.set(x, "membershipId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipIdUndefined: Self = StObject.set(x, "membershipId", js.undefined)
+    inline def setMembershipIdUndefined: Self = StObject.set(x, "membershipId", js.undefined)
     
-    @scala.inline
-    def setSendActivationEmail(value: String): Self = StObject.set(x, "sendActivationEmail", value.asInstanceOf[js.Any])
+    inline def setSendActivationEmail(value: String): Self = StObject.set(x, "sendActivationEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendActivationEmailUndefined: Self = StObject.set(x, "sendActivationEmail", js.undefined)
+    inline def setSendActivationEmailUndefined: Self = StObject.set(x, "sendActivationEmail", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     
-    @scala.inline
-    def setUserStatus(value: String): Self = StObject.set(x, "userStatus", value.asInstanceOf[js.Any])
+    inline def setUserStatus(value: String): Self = StObject.set(x, "userStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStatusUndefined: Self = StObject.set(x, "userStatus", js.undefined)
+    inline def setUserStatusUndefined: Self = StObject.set(x, "userStatus", js.undefined)
     
-    @scala.inline
-    def setUserType(value: String): Self = StObject.set(x, "userType", value.asInstanceOf[js.Any])
+    inline def setUserType(value: String): Self = StObject.set(x, "userType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTypeUndefined: Self = StObject.set(x, "userType", js.undefined)
+    inline def setUserTypeUndefined: Self = StObject.set(x, "userType", js.undefined)
   }
 }

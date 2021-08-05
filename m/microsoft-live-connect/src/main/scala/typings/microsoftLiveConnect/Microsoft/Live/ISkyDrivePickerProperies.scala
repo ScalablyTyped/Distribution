@@ -57,46 +57,33 @@ trait ISkyDrivePickerProperies
 }
 object ISkyDrivePickerProperies {
   
-  @scala.inline
-  def apply(element: String, mode: String, name: String): ISkyDrivePickerProperies = {
+  inline def apply(element: String, mode: String, name: String): ISkyDrivePickerProperies = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISkyDrivePickerProperies]
   }
   
-  @scala.inline
-  implicit class ISkyDrivePickerProperiesMutableBuilder[Self <: ISkyDrivePickerProperies] (val x: Self) extends AnyVal {
+  extension [Self <: ISkyDrivePickerProperies](x: Self) {
     
-    @scala.inline
-    def setLightbox(value: String): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
+    inline def setLightbox(value: String): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightboxUndefined: Self = StObject.set(x, "lightbox", js.undefined)
+    inline def setLightboxUndefined: Self = StObject.set(x, "lightbox", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+    inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    @scala.inline
-    def setOnselected(value: js.Function): Self = StObject.set(x, "onselected", value.asInstanceOf[js.Any])
+    inline def setOnselected(value: js.Function): Self = StObject.set(x, "onselected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnselectedUndefined: Self = StObject.set(x, "onselected", js.undefined)
+    inline def setOnselectedUndefined: Self = StObject.set(x, "onselected", js.undefined)
     
-    @scala.inline
-    def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

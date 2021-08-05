@@ -14,25 +14,19 @@ trait HighlightResult extends StObject {
 }
 object HighlightResult {
   
-  @scala.inline
-  def apply(language: String, relevance: Double, value: js.Array[HastNode]): HighlightResult = {
+  inline def apply(language: String, relevance: Double, value: js.Array[HastNode]): HighlightResult = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightResult]
   }
   
-  @scala.inline
-  implicit class HighlightResultMutableBuilder[Self <: HighlightResult] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightResult](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+    inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[HastNode]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[HastNode]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: HastNode*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: HastNode*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

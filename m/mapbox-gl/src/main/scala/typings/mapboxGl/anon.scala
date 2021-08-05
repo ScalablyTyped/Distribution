@@ -18,26 +18,20 @@ object anon {
   }
   object BearingSnap {
     
-    @scala.inline
-    def apply(): BearingSnap = {
+    inline def apply(): BearingSnap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BearingSnap]
     }
     
-    @scala.inline
-    implicit class BearingSnapMutableBuilder[Self <: BearingSnap] (val x: Self) extends AnyVal {
+    extension [Self <: BearingSnap](x: Self) {
       
-      @scala.inline
-      def setBearingSnap(value: Double): Self = StObject.set(x, "bearingSnap", value.asInstanceOf[js.Any])
+      inline def setBearingSnap(value: Double): Self = StObject.set(x, "bearingSnap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBearingSnapUndefined: Self = StObject.set(x, "bearingSnap", js.undefined)
+      inline def setBearingSnapUndefined: Self = StObject.set(x, "bearingSnap", js.undefined)
       
-      @scala.inline
-      def setPitchWithRotate(value: Boolean): Self = StObject.set(x, "pitchWithRotate", value.asInstanceOf[js.Any])
+      inline def setPitchWithRotate(value: Boolean): Self = StObject.set(x, "pitchWithRotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPitchWithRotateUndefined: Self = StObject.set(x, "pitchWithRotate", js.undefined)
+      inline def setPitchWithRotateUndefined: Self = StObject.set(x, "pitchWithRotate", js.undefined)
     }
   }
   
@@ -49,29 +43,22 @@ object anon {
   }
   object Compact {
     
-    @scala.inline
-    def apply(): Compact = {
+    inline def apply(): Compact = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Compact]
     }
     
-    @scala.inline
-    implicit class CompactMutableBuilder[Self <: Compact] (val x: Self) extends AnyVal {
+    extension [Self <: Compact](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setCustomAttribution(value: String | js.Array[String]): Self = StObject.set(x, "customAttribution", value.asInstanceOf[js.Any])
+      inline def setCustomAttribution(value: String | js.Array[String]): Self = StObject.set(x, "customAttribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAttributionUndefined: Self = StObject.set(x, "customAttribution", js.undefined)
+      inline def setCustomAttributionUndefined: Self = StObject.set(x, "customAttribution", js.undefined)
       
-      @scala.inline
-      def setCustomAttributionVarargs(value: String*): Self = StObject.set(x, "customAttribution", js.Array(value :_*))
+      inline def setCustomAttributionVarargs(value: String*): Self = StObject.set(x, "customAttribution", js.Array(value :_*))
     }
   }
   
@@ -85,23 +72,18 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: Uint8Array | Uint8ClampedArray, height: Double, width: Double): Data = {
+    inline def apply(data: Uint8Array | Uint8ClampedArray, height: Double, width: Double): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8Array | Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array | Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,26 +95,20 @@ object anon {
   }
   object Diff {
     
-    @scala.inline
-    def apply(): Diff = {
+    inline def apply(): Diff = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Diff]
     }
     
-    @scala.inline
-    implicit class DiffMutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
+    extension [Self <: Diff](x: Self) {
       
-      @scala.inline
-      def setDiff(value: Boolean): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+      inline def setDiff(value: Boolean): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
+      inline def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
       
-      @scala.inline
-      def setLocalIdeographFontFamily(value: String): Self = StObject.set(x, "localIdeographFontFamily", value.asInstanceOf[js.Any])
+      inline def setLocalIdeographFontFamily(value: String): Self = StObject.set(x, "localIdeographFontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalIdeographFontFamilyUndefined: Self = StObject.set(x, "localIdeographFontFamily", js.undefined)
+      inline def setLocalIdeographFontFamilyUndefined: Self = StObject.set(x, "localIdeographFontFamily", js.undefined)
     }
   }
   
@@ -142,20 +118,16 @@ object anon {
   }
   object FailIfMajorPerformanceCaveat {
     
-    @scala.inline
-    def apply(): FailIfMajorPerformanceCaveat = {
+    inline def apply(): FailIfMajorPerformanceCaveat = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FailIfMajorPerformanceCaveat]
     }
     
-    @scala.inline
-    implicit class FailIfMajorPerformanceCaveatMutableBuilder[Self <: FailIfMajorPerformanceCaveat] (val x: Self) extends AnyVal {
+    extension [Self <: FailIfMajorPerformanceCaveat](x: Self) {
       
-      @scala.inline
-      def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+      inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
+      inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
     }
   }
   
@@ -173,44 +145,32 @@ object anon {
   }
   object FitBoundsOptions {
     
-    @scala.inline
-    def apply(): FitBoundsOptions = {
+    inline def apply(): FitBoundsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FitBoundsOptions]
     }
     
-    @scala.inline
-    implicit class FitBoundsOptionsMutableBuilder[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FitBoundsOptions](x: Self) {
       
-      @scala.inline
-      def setFitBoundsOptions(value: typings.mapboxGl.mod.FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
+      inline def setFitBoundsOptions(value: typings.mapboxGl.mod.FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
+      inline def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
       
-      @scala.inline
-      def setPositionOptions(value: PositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
+      inline def setPositionOptions(value: PositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
+      inline def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
       
-      @scala.inline
-      def setShowAccuracyCircle(value: Boolean): Self = StObject.set(x, "showAccuracyCircle", value.asInstanceOf[js.Any])
+      inline def setShowAccuracyCircle(value: Boolean): Self = StObject.set(x, "showAccuracyCircle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAccuracyCircleUndefined: Self = StObject.set(x, "showAccuracyCircle", js.undefined)
+      inline def setShowAccuracyCircleUndefined: Self = StObject.set(x, "showAccuracyCircle", js.undefined)
       
-      @scala.inline
-      def setShowUserLocation(value: Boolean): Self = StObject.set(x, "showUserLocation", value.asInstanceOf[js.Any])
+      inline def setShowUserLocation(value: Boolean): Self = StObject.set(x, "showUserLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUserLocationUndefined: Self = StObject.set(x, "showUserLocation", js.undefined)
+      inline def setShowUserLocationUndefined: Self = StObject.set(x, "showUserLocation", js.undefined)
       
-      @scala.inline
-      def setTrackUserLocation(value: Boolean): Self = StObject.set(x, "trackUserLocation", value.asInstanceOf[js.Any])
+      inline def setTrackUserLocation(value: Boolean): Self = StObject.set(x, "trackUserLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUserLocationUndefined: Self = StObject.set(x, "trackUserLocation", js.undefined)
+      inline def setTrackUserLocationUndefined: Self = StObject.set(x, "trackUserLocation", js.undefined)
     }
   }
   
@@ -224,20 +184,16 @@ object anon {
   }
   object Lat {
     
-    @scala.inline
-    def apply(lat: Double, lng: Double): Lat = {
+    inline def apply(lat: Double, lng: Double): Lat = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lat]
     }
     
-    @scala.inline
-    implicit class LatMutableBuilder[Self <: Lat] (val x: Self) extends AnyVal {
+    extension [Self <: Lat](x: Self) {
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,20 +207,16 @@ object anon {
   }
   object Lon {
     
-    @scala.inline
-    def apply(lat: Double, lon: Double): Lon = {
+    inline def apply(lat: Double, lon: Double): Lon = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lon]
     }
     
-    @scala.inline
-    implicit class LonMutableBuilder[Self <: Lon] (val x: Self) extends AnyVal {
+    extension [Self <: Lon](x: Self) {
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
+      inline def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,26 +228,20 @@ object anon {
   }
   object MaxWidth {
     
-    @scala.inline
-    def apply(): MaxWidth = {
+    inline def apply(): MaxWidth = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxWidth]
     }
     
-    @scala.inline
-    implicit class MaxWidthMutableBuilder[Self <: MaxWidth] (val x: Self) extends AnyVal {
+    extension [Self <: MaxWidth](x: Self) {
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
   
@@ -307,26 +253,20 @@ object anon {
   }
   object PixelRatio {
     
-    @scala.inline
-    def apply(): PixelRatio = {
+    inline def apply(): PixelRatio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PixelRatio]
     }
     
-    @scala.inline
-    implicit class PixelRatioMutableBuilder[Self <: PixelRatio] (val x: Self) extends AnyVal {
+    extension [Self <: PixelRatio](x: Self) {
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setSdf(value: Boolean): Self = StObject.set(x, "sdf", value.asInstanceOf[js.Any])
+      inline def setSdf(value: Boolean): Self = StObject.set(x, "sdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSdfUndefined: Self = StObject.set(x, "sdf", js.undefined)
+      inline def setSdfUndefined: Self = StObject.set(x, "sdf", js.undefined)
     }
   }
   
@@ -340,32 +280,24 @@ object anon {
   }
   object ShowCompass {
     
-    @scala.inline
-    def apply(): ShowCompass = {
+    inline def apply(): ShowCompass = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShowCompass]
     }
     
-    @scala.inline
-    implicit class ShowCompassMutableBuilder[Self <: ShowCompass] (val x: Self) extends AnyVal {
+    extension [Self <: ShowCompass](x: Self) {
       
-      @scala.inline
-      def setShowCompass(value: Boolean): Self = StObject.set(x, "showCompass", value.asInstanceOf[js.Any])
+      inline def setShowCompass(value: Boolean): Self = StObject.set(x, "showCompass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCompassUndefined: Self = StObject.set(x, "showCompass", js.undefined)
+      inline def setShowCompassUndefined: Self = StObject.set(x, "showCompass", js.undefined)
       
-      @scala.inline
-      def setShowZoom(value: Boolean): Self = StObject.set(x, "showZoom", value.asInstanceOf[js.Any])
+      inline def setShowZoom(value: Boolean): Self = StObject.set(x, "showZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowZoomUndefined: Self = StObject.set(x, "showZoom", js.undefined)
+      inline def setShowZoomUndefined: Self = StObject.set(x, "showZoom", js.undefined)
       
-      @scala.inline
-      def setVisualizePitch(value: Boolean): Self = StObject.set(x, "visualizePitch", value.asInstanceOf[js.Any])
+      inline def setVisualizePitch(value: Boolean): Self = StObject.set(x, "visualizePitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisualizePitchUndefined: Self = StObject.set(x, "visualizePitch", js.undefined)
+      inline def setVisualizePitchUndefined: Self = StObject.set(x, "visualizePitch", js.undefined)
     }
   }
   
@@ -385,41 +317,30 @@ object anon {
   }
   object layersArraystringundefine {
     
-    @scala.inline
-    def apply(): layersArraystringundefine = {
+    inline def apply(): layersArraystringundefine = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[layersArraystringundefine]
     }
     
-    @scala.inline
-    implicit class layersArraystringundefineMutableBuilder[Self <: layersArraystringundefine] (val x: Self) extends AnyVal {
+    extension [Self <: layersArraystringundefine](x: Self) {
       
-      @scala.inline
-      def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
       
-      @scala.inline
-      def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateNull: Self = StObject.set(x, "validate", null)
+      inline def setValidateNull: Self = StObject.set(x, "validate", null)
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -439,38 +360,28 @@ object anon {
   }
   object sourceLayerstringundefine {
     
-    @scala.inline
-    def apply(): sourceLayerstringundefine = {
+    inline def apply(): sourceLayerstringundefine = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[sourceLayerstringundefine]
     }
     
-    @scala.inline
-    implicit class sourceLayerstringundefineMutableBuilder[Self <: sourceLayerstringundefine] (val x: Self) extends AnyVal {
+    extension [Self <: sourceLayerstringundefine](x: Self) {
       
-      @scala.inline
-      def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: js.Any*): Self = StObject.set(x, "filter", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceLayer(value: String): Self = StObject.set(x, "sourceLayer", value.asInstanceOf[js.Any])
+      inline def setSourceLayer(value: String): Self = StObject.set(x, "sourceLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLayerUndefined: Self = StObject.set(x, "sourceLayer", js.undefined)
+      inline def setSourceLayerUndefined: Self = StObject.set(x, "sourceLayer", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateNull: Self = StObject.set(x, "validate", null)
+      inline def setValidateNull: Self = StObject.set(x, "validate", null)
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
 }

@@ -15,7 +15,7 @@ object progressMod {
        with StaticFeature {
     def this(_client: BaseLanguageClient) = this()
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
     def initialize(): Unit = js.native
   }

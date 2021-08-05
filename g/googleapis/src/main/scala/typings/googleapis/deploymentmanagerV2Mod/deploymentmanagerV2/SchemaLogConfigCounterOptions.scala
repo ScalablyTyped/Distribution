@@ -36,25 +36,19 @@ trait SchemaLogConfigCounterOptions extends StObject {
 }
 object SchemaLogConfigCounterOptions {
   
-  @scala.inline
-  def apply(): SchemaLogConfigCounterOptions = {
+  inline def apply(): SchemaLogConfigCounterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogConfigCounterOptions]
   }
   
-  @scala.inline
-  implicit class SchemaLogConfigCounterOptionsMutableBuilder[Self <: SchemaLogConfigCounterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLogConfigCounterOptions](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
   }
 }

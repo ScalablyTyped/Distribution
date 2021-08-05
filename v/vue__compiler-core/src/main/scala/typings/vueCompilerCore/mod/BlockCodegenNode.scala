@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlockCodegenNode extends StObject
 object BlockCodegenNode {
   
-  @scala.inline
-  def RenderSlotCall(
+  inline def RenderSlotCall(
     arguments: (js.Tuple2[String, String | ExpressionNode]) | (js.Tuple3[String, String | ExpressionNode, PropsExpression]) | (js.Tuple4[
       String, 
       String | ExpressionNode, 
@@ -28,8 +27,7 @@ object BlockCodegenNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.RenderSlotCall]
   }
   
-  @scala.inline
-  def VNodeCall(
+  inline def VNodeCall(
     disableTracking: Boolean,
     isBlock: Boolean,
     loc: SourceLocation,

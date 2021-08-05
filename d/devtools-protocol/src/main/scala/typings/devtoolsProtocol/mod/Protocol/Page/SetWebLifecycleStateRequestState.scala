@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetWebLifecycleStateRequestState extends StObject
 object SetWebLifecycleStateRequestState {
   
-  @scala.inline
-  def Active: active = "active".asInstanceOf[active]
+  inline def Active: active = "active".asInstanceOf[active]
   
-  @scala.inline
-  def Frozen: frozen = "frozen".asInstanceOf[frozen]
+  inline def Frozen: frozen = "frozen".asInstanceOf[frozen]
 }

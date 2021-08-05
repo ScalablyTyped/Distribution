@@ -18,19 +18,15 @@ trait UnshareApplicationRequest extends StObject {
 }
 object UnshareApplicationRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, OrganizationId: string): UnshareApplicationRequest = {
+  inline def apply(ApplicationId: string, OrganizationId: string): UnshareApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnshareApplicationRequest]
   }
   
-  @scala.inline
-  implicit class UnshareApplicationRequestMutableBuilder[Self <: UnshareApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnshareApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: string): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: string): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

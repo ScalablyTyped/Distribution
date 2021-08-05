@@ -34,44 +34,32 @@ object touchRippleMod {
   }
   object TouchRippleProps {
     
-    @scala.inline
-    def apply(): TouchRippleProps = {
+    inline def apply(): TouchRippleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TouchRippleProps]
     }
     
-    @scala.inline
-    implicit class TouchRipplePropsMutableBuilder[Self <: TouchRippleProps] (val x: Self) extends AnyVal {
+    extension [Self <: TouchRippleProps](x: Self) {
       
-      @scala.inline
-      def setAbortOnScroll(value: Boolean): Self = StObject.set(x, "abortOnScroll", value.asInstanceOf[js.Any])
+      inline def setAbortOnScroll(value: Boolean): Self = StObject.set(x, "abortOnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortOnScrollUndefined: Self = StObject.set(x, "abortOnScroll", js.undefined)
+      inline def setAbortOnScrollUndefined: Self = StObject.set(x, "abortOnScroll", js.undefined)
       
-      @scala.inline
-      def setCenterRipple(value: Boolean): Self = StObject.set(x, "centerRipple", value.asInstanceOf[js.Any])
+      inline def setCenterRipple(value: Boolean): Self = StObject.set(x, "centerRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterRippleUndefined: Self = StObject.set(x, "centerRipple", js.undefined)
+      inline def setCenterRippleUndefined: Self = StObject.set(x, "centerRipple", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

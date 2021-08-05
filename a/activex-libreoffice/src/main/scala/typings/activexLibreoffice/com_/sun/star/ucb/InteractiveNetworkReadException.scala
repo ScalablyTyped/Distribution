@@ -17,8 +17,7 @@ trait InteractiveNetworkReadException
 }
 object InteractiveNetworkReadException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     Diagnostic: String,
@@ -28,10 +27,8 @@ object InteractiveNetworkReadException {
     __obj.asInstanceOf[InteractiveNetworkReadException]
   }
   
-  @scala.inline
-  implicit class InteractiveNetworkReadExceptionMutableBuilder[Self <: InteractiveNetworkReadException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveNetworkReadException](x: Self) {
     
-    @scala.inline
-    def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
+    inline def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait VoiceErrorResponse extends StObject {
 }
 object VoiceErrorResponse {
   
-  @scala.inline
-  def apply(result: String): VoiceErrorResponse = {
+  inline def apply(result: String): VoiceErrorResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceErrorResponse]
   }
   
-  @scala.inline
-  implicit class VoiceErrorResponseMutableBuilder[Self <: VoiceErrorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceErrorResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

@@ -54,8 +54,7 @@ trait Addnewitem extends StObject {
 }
 object Addnewitem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add_new_item: String,
     all_items: String,
     back_to_items: String,
@@ -78,94 +77,64 @@ object Addnewitem {
     __obj.asInstanceOf[Addnewitem]
   }
   
-  @scala.inline
-  implicit class AddnewitemMutableBuilder[Self <: Addnewitem] (val x: Self) extends AnyVal {
+  extension [Self <: Addnewitem](x: Self) {
     
-    @scala.inline
-    def setAdd_new_item(value: String): Self = StObject.set(x, "add_new_item", value.asInstanceOf[js.Any])
+    inline def setAdd_new_item(value: String): Self = StObject.set(x, "add_new_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdd_or_remove_items(value: String): Self = StObject.set(x, "add_or_remove_items", value.asInstanceOf[js.Any])
+    inline def setAdd_or_remove_items(value: String): Self = StObject.set(x, "add_or_remove_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdd_or_remove_itemsNull: Self = StObject.set(x, "add_or_remove_items", null)
+    inline def setAdd_or_remove_itemsNull: Self = StObject.set(x, "add_or_remove_items", null)
     
-    @scala.inline
-    def setAll_items(value: String): Self = StObject.set(x, "all_items", value.asInstanceOf[js.Any])
+    inline def setAll_items(value: String): Self = StObject.set(x, "all_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBack_to_items(value: String): Self = StObject.set(x, "back_to_items", value.asInstanceOf[js.Any])
+    inline def setBack_to_items(value: String): Self = StObject.set(x, "back_to_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoose_from_most_used(value: String): Self = StObject.set(x, "choose_from_most_used", value.asInstanceOf[js.Any])
+    inline def setChoose_from_most_used(value: String): Self = StObject.set(x, "choose_from_most_used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoose_from_most_usedNull: Self = StObject.set(x, "choose_from_most_used", null)
+    inline def setChoose_from_most_usedNull: Self = StObject.set(x, "choose_from_most_used", null)
     
-    @scala.inline
-    def setEdit_item(value: String): Self = StObject.set(x, "edit_item", value.asInstanceOf[js.Any])
+    inline def setEdit_item(value: String): Self = StObject.set(x, "edit_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems_list(value: String): Self = StObject.set(x, "items_list", value.asInstanceOf[js.Any])
+    inline def setItems_list(value: String): Self = StObject.set(x, "items_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems_list_navigation(value: String): Self = StObject.set(x, "items_list_navigation", value.asInstanceOf[js.Any])
+    inline def setItems_list_navigation(value: String): Self = StObject.set(x, "items_list_navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu_name(value: String): Self = StObject.set(x, "menu_name", value.asInstanceOf[js.Any])
+    inline def setMenu_name(value: String): Self = StObject.set(x, "menu_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMost_used(value: String): Self = StObject.set(x, "most_used", value.asInstanceOf[js.Any])
+    inline def setMost_used(value: String): Self = StObject.set(x, "most_used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName_admin_bar(value: String): Self = StObject.set(x, "name_admin_bar", value.asInstanceOf[js.Any])
+    inline def setName_admin_bar(value: String): Self = StObject.set(x, "name_admin_bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_item_name(value: String): Self = StObject.set(x, "new_item_name", value.asInstanceOf[js.Any])
+    inline def setNew_item_name(value: String): Self = StObject.set(x, "new_item_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNo_terms(value: String): Self = StObject.set(x, "no_terms", value.asInstanceOf[js.Any])
+    inline def setNo_terms(value: String): Self = StObject.set(x, "no_terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNot_found(value: String): Self = StObject.set(x, "not_found", value.asInstanceOf[js.Any])
+    inline def setNot_found(value: String): Self = StObject.set(x, "not_found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_item(value: String): Self = StObject.set(x, "parent_item", value.asInstanceOf[js.Any])
+    inline def setParent_item(value: String): Self = StObject.set(x, "parent_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_itemNull: Self = StObject.set(x, "parent_item", null)
+    inline def setParent_itemNull: Self = StObject.set(x, "parent_item", null)
     
-    @scala.inline
-    def setParent_item_colon(value: String): Self = StObject.set(x, "parent_item_colon", value.asInstanceOf[js.Any])
+    inline def setParent_item_colon(value: String): Self = StObject.set(x, "parent_item_colon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_item_colonNull: Self = StObject.set(x, "parent_item_colon", null)
+    inline def setParent_item_colonNull: Self = StObject.set(x, "parent_item_colon", null)
     
-    @scala.inline
-    def setPopular_items(value: String): Self = StObject.set(x, "popular_items", value.asInstanceOf[js.Any])
+    inline def setPopular_items(value: String): Self = StObject.set(x, "popular_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopular_itemsNull: Self = StObject.set(x, "popular_items", null)
+    inline def setPopular_itemsNull: Self = StObject.set(x, "popular_items", null)
     
-    @scala.inline
-    def setSearch_items(value: String): Self = StObject.set(x, "search_items", value.asInstanceOf[js.Any])
+    inline def setSearch_items(value: String): Self = StObject.set(x, "search_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparate_items_with_commas(value: String): Self = StObject.set(x, "separate_items_with_commas", value.asInstanceOf[js.Any])
+    inline def setSeparate_items_with_commas(value: String): Self = StObject.set(x, "separate_items_with_commas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparate_items_with_commasNull: Self = StObject.set(x, "separate_items_with_commas", null)
+    inline def setSeparate_items_with_commasNull: Self = StObject.set(x, "separate_items_with_commas", null)
     
-    @scala.inline
-    def setSingular_name(value: String): Self = StObject.set(x, "singular_name", value.asInstanceOf[js.Any])
+    inline def setSingular_name(value: String): Self = StObject.set(x, "singular_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_item(value: String): Self = StObject.set(x, "update_item", value.asInstanceOf[js.Any])
+    inline def setUpdate_item(value: String): Self = StObject.set(x, "update_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_item(value: String): Self = StObject.set(x, "view_item", value.asInstanceOf[js.Any])
+    inline def setView_item(value: String): Self = StObject.set(x, "view_item", value.asInstanceOf[js.Any])
   }
 }

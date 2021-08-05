@@ -13,19 +13,15 @@ trait ScheduleRunResult extends StObject {
 }
 object ScheduleRunResult {
   
-  @scala.inline
-  def apply(): ScheduleRunResult = {
+  inline def apply(): ScheduleRunResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduleRunResult]
   }
   
-  @scala.inline
-  implicit class ScheduleRunResultMutableBuilder[Self <: ScheduleRunResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleRunResult](x: Self) {
     
-    @scala.inline
-    def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    inline def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
   }
 }

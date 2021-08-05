@@ -12,8 +12,7 @@ trait SmartHomeV1ExecuteRequestCommands extends StObject {
 }
 object SmartHomeV1ExecuteRequestCommands {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     devices: js.Array[SmartHomeV1QueryRequestDevices],
     execution: js.Array[SmartHomeV1ExecuteRequestExecution]
   ): SmartHomeV1ExecuteRequestCommands = {
@@ -21,19 +20,14 @@ object SmartHomeV1ExecuteRequestCommands {
     __obj.asInstanceOf[SmartHomeV1ExecuteRequestCommands]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1ExecuteRequestCommandsMutableBuilder[Self <: SmartHomeV1ExecuteRequestCommands] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1ExecuteRequestCommands](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[SmartHomeV1QueryRequestDevices]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[SmartHomeV1QueryRequestDevices]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesVarargs(value: SmartHomeV1QueryRequestDevices*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: SmartHomeV1QueryRequestDevices*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setExecution(value: js.Array[SmartHomeV1ExecuteRequestExecution]): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: js.Array[SmartHomeV1ExecuteRequestExecution]): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionVarargs(value: SmartHomeV1ExecuteRequestExecution*): Self = StObject.set(x, "execution", js.Array(value :_*))
+    inline def setExecutionVarargs(value: SmartHomeV1ExecuteRequestExecution*): Self = StObject.set(x, "execution", js.Array(value :_*))
   }
 }

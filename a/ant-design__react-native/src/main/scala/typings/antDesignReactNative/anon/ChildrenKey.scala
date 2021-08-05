@@ -19,26 +19,20 @@ trait ChildrenKey
 }
 object ChildrenKey {
   
-  @scala.inline
-  def apply(key: Double): ChildrenKey = {
+  inline def apply(key: Double): ChildrenKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("mount")
     __obj.asInstanceOf[ChildrenKey]
   }
   
-  @scala.inline
-  implicit class ChildrenKeyMutableBuilder[Self <: ChildrenKey] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenKey](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: mount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: mount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -47,67 +47,49 @@ trait UseTableOptions[D /* <: js.Object */] extends StObject {
 }
 object UseTableOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](columns: js.Array[Column[D]], data: js.Array[D]): UseTableOptions[D] = {
+  inline def apply[D /* <: js.Object */](columns: js.Array[Column[D]], data: js.Array[D]): UseTableOptions[D] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseTableOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseTableOptionsMutableBuilder[Self <: UseTableOptions[?], D /* <: js.Object */] (val x: Self & UseTableOptions[D]) extends AnyVal {
+  extension [Self <: UseTableOptions[?], D /* <: js.Object */](x: Self & UseTableOptions[D]) {
     
-    @scala.inline
-    def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultColumn(value: Partial[Column[D]]): Self = StObject.set(x, "defaultColumn", value.asInstanceOf[js.Any])
+    inline def setDefaultColumn(value: Partial[Column[D]]): Self = StObject.set(x, "defaultColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultColumnUndefined: Self = StObject.set(x, "defaultColumn", js.undefined)
+    inline def setDefaultColumnUndefined: Self = StObject.set(x, "defaultColumn", js.undefined)
     
-    @scala.inline
-    def setGetRowId(
+    inline def setGetRowId(
       value: (/* originalRow */ D, /* relativeIndex */ Double, /* parent */ js.UndefOr[Row[D]]) => String
     ): Self = StObject.set(x, "getRowId", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetRowIdUndefined: Self = StObject.set(x, "getRowId", js.undefined)
+    inline def setGetRowIdUndefined: Self = StObject.set(x, "getRowId", js.undefined)
     
-    @scala.inline
-    def setGetSubRows(value: (/* originalRow */ D, /* relativeIndex */ Double) => js.Array[D]): Self = StObject.set(x, "getSubRows", js.Any.fromFunction2(value))
+    inline def setGetSubRows(value: (/* originalRow */ D, /* relativeIndex */ Double) => js.Array[D]): Self = StObject.set(x, "getSubRows", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSubRowsUndefined: Self = StObject.set(x, "getSubRows", js.undefined)
+    inline def setGetSubRowsUndefined: Self = StObject.set(x, "getSubRows", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: Partial[TableState[D]]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: Partial[TableState[D]]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setStateReducer(
+    inline def setStateReducer(
       value: (/* newState */ TableState[D], /* action */ ActionType, /* previousState */ TableState[D], /* instance */ js.UndefOr[TableInstance[D]]) => TableState[D]
     ): Self = StObject.set(x, "stateReducer", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+    inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     
-    @scala.inline
-    def setUseControlledState(
+    inline def setUseControlledState(
       value: (/* state */ TableState[D], /* meta */ Meta[D, scala.Nothing, MetaBase[D]]) => TableState[D]
     ): Self = StObject.set(x, "useControlledState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUseControlledStateUndefined: Self = StObject.set(x, "useControlledState", js.undefined)
+    inline def setUseControlledStateUndefined: Self = StObject.set(x, "useControlledState", js.undefined)
   }
 }

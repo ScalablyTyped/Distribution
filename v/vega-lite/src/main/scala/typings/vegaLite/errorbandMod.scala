@@ -38,8 +38,7 @@ object errorbandMod {
   @js.native
   val errorBandNormalizer: CompositeMarkNormalizer[errorband] = js.native
   
-  @scala.inline
-  def normalizeErrorBand(spec: GenericUnitSpec[Encoding[String], ErrorBand | ErrorBandDef], hasConfig: NormalizerParams): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBand")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
+  inline def normalizeErrorBand(spec: GenericUnitSpec[Encoding[String], ErrorBand | ErrorBandDef], hasConfig: NormalizerParams): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBand")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
   
   type ErrorBand = errorband
   
@@ -95,38 +94,28 @@ object errorbandMod {
   }
   object ErrorBandConfig {
     
-    @scala.inline
-    def apply(): ErrorBandConfig = {
+    inline def apply(): ErrorBandConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorBandConfig]
     }
     
-    @scala.inline
-    implicit class ErrorBandConfigMutableBuilder[Self <: ErrorBandConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBandConfig](x: Self) {
       
-      @scala.inline
-      def setCenter(value: ErrorBarCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: ErrorBarCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setExtent(value: ErrorBarExtent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: ErrorBarExtent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setInterpolate(value: Interpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+      inline def setInterpolate(value: Interpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+      inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
       
-      @scala.inline
-      def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
+      inline def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
+      inline def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     }
   }
   
@@ -139,20 +128,16 @@ object errorbandMod {
   }
   object ErrorBandConfigMixins {
     
-    @scala.inline
-    def apply(): ErrorBandConfigMixins = {
+    inline def apply(): ErrorBandConfigMixins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorBandConfigMixins]
     }
     
-    @scala.inline
-    implicit class ErrorBandConfigMixinsMutableBuilder[Self <: ErrorBandConfigMixins] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBandConfigMixins](x: Self) {
       
-      @scala.inline
-      def setErrorband(value: ErrorBandConfig): Self = StObject.set(x, "errorband", value.asInstanceOf[js.Any])
+      inline def setErrorband(value: ErrorBandConfig): Self = StObject.set(x, "errorband", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorbandUndefined: Self = StObject.set(x, "errorband", js.undefined)
+      inline def setErrorbandUndefined: Self = StObject.set(x, "errorband", js.undefined)
     }
   }
   

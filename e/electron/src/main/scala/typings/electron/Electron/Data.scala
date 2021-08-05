@@ -21,43 +21,31 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(): Data = {
+  inline def apply(): Data = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
+    inline def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setImage(value: NativeImage_): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: NativeImage_): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setRtf(value: String): Self = StObject.set(x, "rtf", value.asInstanceOf[js.Any])
+    inline def setRtf(value: String): Self = StObject.set(x, "rtf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtfUndefined: Self = StObject.set(x, "rtf", js.undefined)
+    inline def setRtfUndefined: Self = StObject.set(x, "rtf", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

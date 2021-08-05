@@ -10,19 +10,15 @@ trait PruneNetworksInfo extends StObject {
 }
 object PruneNetworksInfo {
   
-  @scala.inline
-  def apply(NetworksDeleted: js.Array[String]): PruneNetworksInfo = {
+  inline def apply(NetworksDeleted: js.Array[String]): PruneNetworksInfo = {
     val __obj = js.Dynamic.literal(NetworksDeleted = NetworksDeleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[PruneNetworksInfo]
   }
   
-  @scala.inline
-  implicit class PruneNetworksInfoMutableBuilder[Self <: PruneNetworksInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PruneNetworksInfo](x: Self) {
     
-    @scala.inline
-    def setNetworksDeleted(value: js.Array[String]): Self = StObject.set(x, "NetworksDeleted", value.asInstanceOf[js.Any])
+    inline def setNetworksDeleted(value: js.Array[String]): Self = StObject.set(x, "NetworksDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworksDeletedVarargs(value: String*): Self = StObject.set(x, "NetworksDeleted", js.Array(value :_*))
+    inline def setNetworksDeletedVarargs(value: String*): Self = StObject.set(x, "NetworksDeleted", js.Array(value :_*))
   }
 }

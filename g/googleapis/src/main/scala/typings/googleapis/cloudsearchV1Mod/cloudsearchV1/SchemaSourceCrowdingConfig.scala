@@ -42,37 +42,27 @@ trait SchemaSourceCrowdingConfig extends StObject {
 }
 object SchemaSourceCrowdingConfig {
   
-  @scala.inline
-  def apply(): SchemaSourceCrowdingConfig = {
+  inline def apply(): SchemaSourceCrowdingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceCrowdingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSourceCrowdingConfigMutableBuilder[Self <: SchemaSourceCrowdingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceCrowdingConfig](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
+    inline def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
     
-    @scala.inline
-    def setNumSuggestions(value: Double): Self = StObject.set(x, "numSuggestions", value.asInstanceOf[js.Any])
+    inline def setNumSuggestions(value: Double): Self = StObject.set(x, "numSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumSuggestionsUndefined: Self = StObject.set(x, "numSuggestions", js.undefined)
+    inline def setNumSuggestionsUndefined: Self = StObject.set(x, "numSuggestions", js.undefined)
     
-    @scala.inline
-    def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

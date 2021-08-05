@@ -20,8 +20,7 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auditRefs: js.Array[AuditRef],
     description: String,
     id: String,
@@ -33,28 +32,20 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setAuditRefs(value: js.Array[AuditRef]): Self = StObject.set(x, "auditRefs", value.asInstanceOf[js.Any])
+    inline def setAuditRefs(value: js.Array[AuditRef]): Self = StObject.set(x, "auditRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditRefsVarargs(value: AuditRef*): Self = StObject.set(x, "auditRefs", js.Array(value :_*))
+    inline def setAuditRefsVarargs(value: AuditRef*): Self = StObject.set(x, "auditRefs", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualDescription(value: String): Self = StObject.set(x, "manualDescription", value.asInstanceOf[js.Any])
+    inline def setManualDescription(value: String): Self = StObject.set(x, "manualDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: js.Object): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: js.Object): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

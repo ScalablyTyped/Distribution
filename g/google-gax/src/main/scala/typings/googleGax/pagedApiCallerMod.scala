@@ -59,7 +59,7 @@ object pagedApiCallerMod {
       * (the main content of the request object stays unchanged, only the next page token changes)
       * @param callback The user's callback that expects the page content, next page request, and raw response.
       */
-    var generateParseResponseCallback: js.Any = js.native
+    /* private */ var generateParseResponseCallback: js.Any = js.native
     
     var pageDescriptor: PageDescriptor = js.native
   }

@@ -27,56 +27,40 @@ trait Journey extends StObject {
 }
 object Journey {
   
-  @scala.inline
-  def apply(legs: js.Array[Leg]): Journey = {
+  inline def apply(legs: js.Array[Leg]): Journey = {
     val __obj = js.Dynamic.literal(legs = legs.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("journey")
     __obj.asInstanceOf[Journey]
   }
   
-  @scala.inline
-  implicit class JourneyMutableBuilder[Self <: Journey] (val x: Self) extends AnyVal {
+  extension [Self <: Journey](x: Self) {
     
-    @scala.inline
-    def setCycle(value: Cycle): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    inline def setCycle(value: Cycle): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
-    @scala.inline
-    def setLegs(value: js.Array[Leg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
+    inline def setLegs(value: js.Array[Leg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+    inline def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value :_*))
     
-    @scala.inline
-    def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     
-    @scala.inline
-    def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
+    inline def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
+    inline def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
-    @scala.inline
-    def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
+    inline def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
     
-    @scala.inline
-    def setScheduledDays(value: ScheduledDays): Self = StObject.set(x, "scheduledDays", value.asInstanceOf[js.Any])
+    inline def setScheduledDays(value: ScheduledDays): Self = StObject.set(x, "scheduledDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledDaysUndefined: Self = StObject.set(x, "scheduledDays", js.undefined)
+    inline def setScheduledDaysUndefined: Self = StObject.set(x, "scheduledDays", js.undefined)
     
-    @scala.inline
-    def setType(value: journey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: journey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

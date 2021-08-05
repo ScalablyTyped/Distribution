@@ -21,8 +21,7 @@ trait Ref extends StObject {
 }
 object Ref {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ref: ComposedRef,
     refId: String,
     source: String,
@@ -35,25 +34,18 @@ object Ref {
     __obj.asInstanceOf[Ref]
   }
   
-  @scala.inline
-  implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+  extension [Self <: Ref](x: Self) {
     
-    @scala.inline
-    def setRef(value: ComposedRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: ComposedRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+    inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLocation(value: String): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
+    inline def setSourceLocation(value: String): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait WebCreationInformation
 }
 object WebCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -58,43 +57,30 @@ object WebCreationInformation {
     __obj.asInstanceOf[WebCreationInformation]
   }
   
-  @scala.inline
-  implicit class WebCreationInformationMutableBuilder[Self <: WebCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: WebCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
+    inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_language(value: () => Double): Self = StObject.set(x, "get_language", js.Any.fromFunction0(value))
+    inline def setGet_language(value: () => Double): Self = StObject.set(x, "get_language", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_useSamePermissionsAsParentSite(value: () => Boolean): Self = StObject.set(x, "get_useSamePermissionsAsParentSite", js.Any.fromFunction0(value))
+    inline def setGet_useSamePermissionsAsParentSite(value: () => Boolean): Self = StObject.set(x, "get_useSamePermissionsAsParentSite", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_webTemplate(value: () => String): Self = StObject.set(x, "get_webTemplate", js.Any.fromFunction0(value))
+    inline def setGet_webTemplate(value: () => String): Self = StObject.set(x, "get_webTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
+    inline def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_language(value: Double => Unit): Self = StObject.set(x, "set_language", js.Any.fromFunction1(value))
+    inline def setSet_language(value: Double => Unit): Self = StObject.set(x, "set_language", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_useSamePermissionsAsParentSite(value: Boolean => Unit): Self = StObject.set(x, "set_useSamePermissionsAsParentSite", js.Any.fromFunction1(value))
+    inline def setSet_useSamePermissionsAsParentSite(value: Boolean => Unit): Self = StObject.set(x, "set_useSamePermissionsAsParentSite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_webTemplate(value: String => Unit): Self = StObject.set(x, "set_webTemplate", js.Any.fromFunction1(value))
+    inline def setSet_webTemplate(value: String => Unit): Self = StObject.set(x, "set_webTemplate", js.Any.fromFunction1(value))
   }
 }

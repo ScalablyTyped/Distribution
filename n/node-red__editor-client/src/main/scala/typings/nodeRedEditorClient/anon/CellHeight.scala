@@ -24,58 +24,41 @@ trait CellHeight extends StObject {
 }
 object CellHeight {
   
-  @scala.inline
-  def apply(id: String, value: String): CellHeight = {
+  inline def apply(id: String, value: String): CellHeight = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellHeight]
   }
   
-  @scala.inline
-  implicit class CellHeightMutableBuilder[Self <: CellHeight] (val x: Self) extends AnyVal {
+  extension [Self <: CellHeight](x: Self) {
     
-    @scala.inline
-    def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+    inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
     
-    @scala.inline
-    def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
+    inline def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
+    inline def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
     
-    @scala.inline
-    def setCellPerRow(value: Double): Self = StObject.set(x, "cellPerRow", value.asInstanceOf[js.Any])
+    inline def setCellPerRow(value: Double): Self = StObject.set(x, "cellPerRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellPerRowUndefined: Self = StObject.set(x, "cellPerRow", js.undefined)
+    inline def setCellPerRowUndefined: Self = StObject.set(x, "cellPerRow", js.undefined)
     
-    @scala.inline
-    def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
+    inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
+    inline def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setPalette(value: js.Array[js.Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: js.Array[js.Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    @scala.inline
-    def setPaletteVarargs(value: js.Any*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: js.Any*): Self = StObject.set(x, "palette", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

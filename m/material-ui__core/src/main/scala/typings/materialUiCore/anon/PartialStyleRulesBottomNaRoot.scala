@@ -12,19 +12,15 @@ trait PartialStyleRulesBottomNaRoot extends StObject {
 }
 object PartialStyleRulesBottomNaRoot {
   
-  @scala.inline
-  def apply(): PartialStyleRulesBottomNaRoot = {
+  inline def apply(): PartialStyleRulesBottomNaRoot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesBottomNaRoot]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesBottomNaRootMutableBuilder[Self <: PartialStyleRulesBottomNaRoot] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesBottomNaRoot](x: Self) {
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait CX extends StObject {
 }
 object CX {
   
-  @scala.inline
-  def apply(CX: Double, CY: Double): CX = {
+  inline def apply(CX: Double, CY: Double): CX = {
     val __obj = js.Dynamic.literal(CX = CX.asInstanceOf[js.Any], CY = CY.asInstanceOf[js.Any])
     __obj.asInstanceOf[CX]
   }
   
-  @scala.inline
-  implicit class CXMutableBuilder[Self <: CX] (val x: Self) extends AnyVal {
+  extension [Self <: CX](x: Self) {
     
-    @scala.inline
-    def setCX(value: Double): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
+    inline def setCX(value: Double): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCY(value: Double): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
+    inline def setCY(value: Double): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
   }
 }

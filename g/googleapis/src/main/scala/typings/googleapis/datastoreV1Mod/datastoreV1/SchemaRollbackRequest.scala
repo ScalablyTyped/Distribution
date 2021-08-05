@@ -17,19 +17,15 @@ trait SchemaRollbackRequest extends StObject {
 }
 object SchemaRollbackRequest {
   
-  @scala.inline
-  def apply(): SchemaRollbackRequest = {
+  inline def apply(): SchemaRollbackRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRollbackRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRollbackRequestMutableBuilder[Self <: SchemaRollbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRollbackRequest](x: Self) {
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

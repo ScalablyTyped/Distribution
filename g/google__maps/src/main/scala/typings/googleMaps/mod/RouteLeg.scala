@@ -71,8 +71,7 @@ trait RouteLeg extends StObject {
 }
 object RouteLeg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrival_time: Time,
     departure_time: Time,
     distance: Distance,
@@ -88,40 +87,28 @@ object RouteLeg {
     __obj.asInstanceOf[RouteLeg]
   }
   
-  @scala.inline
-  implicit class RouteLegMutableBuilder[Self <: RouteLeg] (val x: Self) extends AnyVal {
+  extension [Self <: RouteLeg](x: Self) {
     
-    @scala.inline
-    def setArrival_time(value: Time): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
+    inline def setArrival_time(value: Time): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeparture_time(value: Time): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
+    inline def setDeparture_time(value: Time): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration_in_traffic(value: Duration): Self = StObject.set(x, "duration_in_traffic", value.asInstanceOf[js.Any])
+    inline def setDuration_in_traffic(value: Duration): Self = StObject.set(x, "duration_in_traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_address(value: String): Self = StObject.set(x, "end_address", value.asInstanceOf[js.Any])
+    inline def setEnd_address(value: String): Self = StObject.set(x, "end_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_location(value: LatLngLiteral): Self = StObject.set(x, "end_location", value.asInstanceOf[js.Any])
+    inline def setEnd_location(value: LatLngLiteral): Self = StObject.set(x, "end_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_address(value: String): Self = StObject.set(x, "start_address", value.asInstanceOf[js.Any])
+    inline def setStart_address(value: String): Self = StObject.set(x, "start_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_location(value: LatLngLiteral): Self = StObject.set(x, "start_location", value.asInstanceOf[js.Any])
+    inline def setStart_location(value: LatLngLiteral): Self = StObject.set(x, "start_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteps(value: js.Array[DirectionsStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[DirectionsStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: DirectionsStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: DirectionsStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

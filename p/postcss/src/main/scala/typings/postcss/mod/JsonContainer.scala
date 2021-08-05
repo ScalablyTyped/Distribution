@@ -25,34 +25,25 @@ trait JsonContainer
 }
 object JsonContainer {
   
-  @scala.inline
-  def apply(): JsonContainer = {
+  inline def apply(): JsonContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonContainer]
   }
   
-  @scala.inline
-  implicit class JsonContainerMutableBuilder[Self <: JsonContainer] (val x: Self) extends AnyVal {
+  extension [Self <: JsonContainer](x: Self) {
     
-    @scala.inline
-    def setFirst(value: ChildNode): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: ChildNode): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setLast(value: ChildNode): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: ChildNode): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setNodes(value: js.Array[ChildNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[ChildNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: ChildNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: ChildNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

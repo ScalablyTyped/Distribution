@@ -21,19 +21,15 @@ trait BoardChart
 }
 object BoardChart {
   
-  @scala.inline
-  def apply(_links: js.Any, name: String, settings: StringDictionary[js.Any], url: String): BoardChart = {
+  inline def apply(_links: js.Any, name: String, settings: StringDictionary[js.Any], url: String): BoardChart = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardChart]
   }
   
-  @scala.inline
-  implicit class BoardChartMutableBuilder[Self <: BoardChart] (val x: Self) extends AnyVal {
+  extension [Self <: BoardChart](x: Self) {
     
-    @scala.inline
-    def setSettings(value: StringDictionary[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: StringDictionary[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

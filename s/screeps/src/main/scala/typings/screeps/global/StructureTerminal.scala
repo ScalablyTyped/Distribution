@@ -87,6 +87,5 @@ class StructureTerminal protected ()
 }
 object StructureTerminal {
   
-  @scala.inline
-  def apply: StructureTerminalConstructor = js.Dynamic.global.selectDynamic("StructureTerminal").asInstanceOf[StructureTerminalConstructor]
+  inline def apply: StructureTerminalConstructor = js.Dynamic.global.selectDynamic("StructureTerminal").asInstanceOf[StructureTerminalConstructor]
 }

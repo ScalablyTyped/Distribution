@@ -13,25 +13,19 @@ trait LayerProps extends StObject {
 }
 object LayerProps {
   
-  @scala.inline
-  def apply(): LayerProps = {
+  inline def apply(): LayerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerProps]
   }
   
-  @scala.inline
-  implicit class LayerPropsMutableBuilder[Self <: LayerProps] (val x: Self) extends AnyVal {
+  extension [Self <: LayerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Indexable): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Indexable): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -17,13 +17,10 @@ object TextAnimationType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BY_LETTER: `2` = 2.asInstanceOf[`2`]
+    inline def BY_LETTER: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def BY_PARAGRAPH: `0` = 0.asInstanceOf[`0`]
+    inline def BY_PARAGRAPH: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def BY_WORD: `1` = 1.asInstanceOf[`1`]
+    inline def BY_WORD: `1` = 1.asInstanceOf[`1`]
   }
 }

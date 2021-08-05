@@ -25,62 +25,49 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addClassName(elem: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassName")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addClassName(elem: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassName")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     @JSGlobal("JSONEditor.focusNode")
     @js.native
     def focusNode: typings.jsoneditoronline.JSONEditorNode = js.native
-    @scala.inline
-    def focusNode_=(x: typings.jsoneditoronline.JSONEditorNode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusNode")(x.asInstanceOf[js.Any])
+    inline def focusNode_=(x: typings.jsoneditoronline.JSONEditorNode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusNode")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("JSONEditor.freezeHighlight")
     @js.native
     def freezeHighlight: Boolean = js.native
-    @scala.inline
-    def freezeHighlight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("freezeHighlight")(x.asInstanceOf[js.Any])
+    inline def freezeHighlight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("freezeHighlight")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def getAbsoluteLeft(elem: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteLeft")(elem.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getAbsoluteLeft(elem: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteLeft")(elem.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def getAbsoluteTop(elem: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteTop")(elem.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getAbsoluteTop(elem: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteTop")(elem.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def getInnerText(element: HTMLElement, buffer: JSONEditorBuffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInnerText")(element.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getInnerText(element: HTMLElement, buffer: JSONEditorBuffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInnerText")(element.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def getInternetExplorerVersion(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetExplorerVersion")().asInstanceOf[Double]
+    inline def getInternetExplorerVersion(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetExplorerVersion")().asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def getNodeFromTarget(target: HTMLElement): typings.jsoneditoronline.JSONEditorNode = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeFromTarget")(target.asInstanceOf[js.Any]).asInstanceOf[typings.jsoneditoronline.JSONEditorNode]
+    inline def getNodeFromTarget(target: HTMLElement): typings.jsoneditoronline.JSONEditorNode = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeFromTarget")(target.asInstanceOf[js.Any]).asInstanceOf[typings.jsoneditoronline.JSONEditorNode]
     
     /* static member */
-    @scala.inline
-    def parse(jsonString: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def parse(jsonString: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(jsonString.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /* static member */
-    @scala.inline
-    def removeClassName(elem: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClassName")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeClassName(elem: HTMLElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClassName")(elem.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def setEndOfContentEditable(contentEditableElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEndOfContentEditable")(contentEditableElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setEndOfContentEditable(contentEditableElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEndOfContentEditable")(contentEditableElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def stripFormatting(divElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stripFormatting")(divElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stripFormatting(divElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stripFormatting")(divElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def validate(jsonString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(jsonString.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def validate(jsonString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(jsonString.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("JSONEditorAppendNode")

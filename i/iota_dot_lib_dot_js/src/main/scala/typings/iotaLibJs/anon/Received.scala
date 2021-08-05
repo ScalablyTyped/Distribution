@@ -13,25 +13,19 @@ trait Received extends StObject {
 }
 object Received {
   
-  @scala.inline
-  def apply(received: js.Array[TransactionObject], sent: js.Array[TransactionObject]): Received = {
+  inline def apply(received: js.Array[TransactionObject], sent: js.Array[TransactionObject]): Received = {
     val __obj = js.Dynamic.literal(received = received.asInstanceOf[js.Any], sent = sent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Received]
   }
   
-  @scala.inline
-  implicit class ReceivedMutableBuilder[Self <: Received] (val x: Self) extends AnyVal {
+  extension [Self <: Received](x: Self) {
     
-    @scala.inline
-    def setReceived(value: js.Array[TransactionObject]): Self = StObject.set(x, "received", value.asInstanceOf[js.Any])
+    inline def setReceived(value: js.Array[TransactionObject]): Self = StObject.set(x, "received", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedVarargs(value: TransactionObject*): Self = StObject.set(x, "received", js.Array(value :_*))
+    inline def setReceivedVarargs(value: TransactionObject*): Self = StObject.set(x, "received", js.Array(value :_*))
     
-    @scala.inline
-    def setSent(value: js.Array[TransactionObject]): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
+    inline def setSent(value: js.Array[TransactionObject]): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentVarargs(value: TransactionObject*): Self = StObject.set(x, "sent", js.Array(value :_*))
+    inline def setSentVarargs(value: TransactionObject*): Self = StObject.set(x, "sent", js.Array(value :_*))
   }
 }

@@ -22,8 +22,6 @@ object QuickLook {
     * @param fullscreen - Optional. Set to true to present the item in fullscreen. This only has an effect when used within the app. Defaults to false.
     * @see https://docs.scriptable.app/quicklook/#present
     */
-  @scala.inline
-  def present(item: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("present")(item.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def present(item: js.Any, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("present")(item.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def present(item: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("present")(item.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def present(item: js.Any, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("present")(item.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

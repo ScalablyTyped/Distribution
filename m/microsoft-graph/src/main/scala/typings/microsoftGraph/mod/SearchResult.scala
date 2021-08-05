@@ -14,22 +14,17 @@ trait SearchResult extends StObject {
 }
 object SearchResult {
   
-  @scala.inline
-  def apply(): SearchResult = {
+  inline def apply(): SearchResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchResult]
   }
   
-  @scala.inline
-  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResult](x: Self) {
     
-    @scala.inline
-    def setOnClickTelemetryUrl(value: NullableOption[String]): Self = StObject.set(x, "onClickTelemetryUrl", value.asInstanceOf[js.Any])
+    inline def setOnClickTelemetryUrl(value: NullableOption[String]): Self = StObject.set(x, "onClickTelemetryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickTelemetryUrlNull: Self = StObject.set(x, "onClickTelemetryUrl", null)
+    inline def setOnClickTelemetryUrlNull: Self = StObject.set(x, "onClickTelemetryUrl", null)
     
-    @scala.inline
-    def setOnClickTelemetryUrlUndefined: Self = StObject.set(x, "onClickTelemetryUrl", js.undefined)
+    inline def setOnClickTelemetryUrlUndefined: Self = StObject.set(x, "onClickTelemetryUrl", js.undefined)
   }
 }

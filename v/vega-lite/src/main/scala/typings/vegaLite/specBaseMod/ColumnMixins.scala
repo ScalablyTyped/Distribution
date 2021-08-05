@@ -24,19 +24,15 @@ trait ColumnMixins extends StObject {
 }
 object ColumnMixins {
   
-  @scala.inline
-  def apply(): ColumnMixins = {
+  inline def apply(): ColumnMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnMixins]
   }
   
-  @scala.inline
-  implicit class ColumnMixinsMutableBuilder[Self <: ColumnMixins] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnMixins](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
   }
 }

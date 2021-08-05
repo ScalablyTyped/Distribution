@@ -19,13 +19,13 @@ object messageReaderMod {
   @js.native
   abstract class AbstractMessageReader () extends StObject {
     
-    var asError: js.Any = js.native
+    /* private */ var asError: js.Any = js.native
     
-    var closeEmitter: js.Any = js.native
+    /* private */ var closeEmitter: js.Any = js.native
     
     def dispose(): Unit = js.native
     
-    var errorEmitter: js.Any = js.native
+    /* private */ var errorEmitter: js.Any = js.native
     
     /* protected */ def fireClose(): Unit = js.native
     
@@ -39,7 +39,7 @@ object messageReaderMod {
     
     def onPartialMessage: Event[PartialMessageInfo] = js.native
     
-    var partialMessageEmitter: js.Any = js.native
+    /* private */ var partialMessageEmitter: js.Any = js.native
   }
   
   @JSImport("vscode-jsonrpc/lib/messageReader", "IPCMessageReader")
@@ -53,7 +53,7 @@ object messageReaderMod {
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     
-    var process: js.Any = js.native
+    /* private */ var process: js.Any = js.native
   }
   
   @js.native
@@ -92,8 +92,7 @@ object messageReaderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean]
+    inline def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean]
   }
   
   @JSImport("vscode-jsonrpc/lib/messageReader", "SocketMessageReader")
@@ -111,31 +110,31 @@ object messageReaderMod {
     def this(readable: ReadableStream) = this()
     def this(readable: ReadableStream, encoding: BufferEncoding) = this()
     
-    var _partialMessageTimeout: js.Any = js.native
+    /* private */ var _partialMessageTimeout: js.Any = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var callback: js.Any = js.native
+    /* private */ var callback: js.Any = js.native
     
-    var clearPartialMessageTimer: js.Any = js.native
+    /* private */ var clearPartialMessageTimer: js.Any = js.native
     
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     
-    var messageToken: js.Any = js.native
+    /* private */ var messageToken: js.Any = js.native
     
-    var nextMessageLength: js.Any = js.native
+    /* private */ var nextMessageLength: js.Any = js.native
     
-    var onData: js.Any = js.native
+    /* private */ var onData: js.Any = js.native
     
     def partialMessageTimeout: Double = js.native
     def partialMessageTimeout_=(timeout: Double): Unit = js.native
     
-    var partialMessageTimer: js.Any = js.native
+    /* private */ var partialMessageTimer: js.Any = js.native
     
-    var readable: js.Any = js.native
+    /* private */ var readable: js.Any = js.native
     
-    var setPartialMessageTimer: js.Any = js.native
+    /* private */ var setPartialMessageTimer: js.Any = js.native
   }
   
   type DataCallback = js.Function1[/* data */ Message, Unit]
@@ -148,20 +147,16 @@ object messageReaderMod {
   }
   object PartialMessageInfo {
     
-    @scala.inline
-    def apply(messageToken: Double, waitingTime: Double): PartialMessageInfo = {
+    inline def apply(messageToken: Double, waitingTime: Double): PartialMessageInfo = {
       val __obj = js.Dynamic.literal(messageToken = messageToken.asInstanceOf[js.Any], waitingTime = waitingTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialMessageInfo]
     }
     
-    @scala.inline
-    implicit class PartialMessageInfoMutableBuilder[Self <: PartialMessageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMessageInfo](x: Self) {
       
-      @scala.inline
-      def setMessageToken(value: Double): Self = StObject.set(x, "messageToken", value.asInstanceOf[js.Any])
+      inline def setMessageToken(value: Double): Self = StObject.set(x, "messageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitingTime(value: Double): Self = StObject.set(x, "waitingTime", value.asInstanceOf[js.Any])
+      inline def setWaitingTime(value: Double): Self = StObject.set(x, "waitingTime", value.asInstanceOf[js.Any])
     }
   }
 }

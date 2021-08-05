@@ -11,15 +11,11 @@ object mimeTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def detectExtension(mimeType: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectExtension")(mimeType.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def detectExtension(mimeType: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectExtension")(mimeType.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def detectExtension_false(mimeType: `false`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectExtension")(mimeType.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def detectExtension_false(mimeType: `false`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectExtension")(mimeType.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def detectMimeType(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectMimeType")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def detectMimeType(filename: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectMimeType")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def detectMimeType_false(filename: `false`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectMimeType")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def detectMimeType_false(filename: `false`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectMimeType")(filename.asInstanceOf[js.Any]).asInstanceOf[String]
 }

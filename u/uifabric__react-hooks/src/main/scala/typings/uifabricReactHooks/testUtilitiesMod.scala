@@ -11,8 +11,6 @@ object testUtilitiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateHookValueNotChanged[TValues /* <: js.Array[NonNullable[js.Any]] */](testDescription: String, useHook: js.Function0[TValues]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHookValueNotChanged")(testDescription.asInstanceOf[js.Any], useHook.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def validateHookValueNotChanged[TValues /* <: js.Array[NonNullable[js.Any]] */](testDescription: String, useHook: js.Function0[TValues], useHookAgain: js.Function0[TValues]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHookValueNotChanged")(testDescription.asInstanceOf[js.Any], useHook.asInstanceOf[js.Any], useHookAgain.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateHookValueNotChanged[TValues /* <: js.Array[NonNullable[js.Any]] */](testDescription: String, useHook: js.Function0[TValues]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHookValueNotChanged")(testDescription.asInstanceOf[js.Any], useHook.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateHookValueNotChanged[TValues /* <: js.Array[NonNullable[js.Any]] */](testDescription: String, useHook: js.Function0[TValues], useHookAgain: js.Function0[TValues]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHookValueNotChanged")(testDescription.asInstanceOf[js.Any], useHook.asInstanceOf[js.Any], useHookAgain.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

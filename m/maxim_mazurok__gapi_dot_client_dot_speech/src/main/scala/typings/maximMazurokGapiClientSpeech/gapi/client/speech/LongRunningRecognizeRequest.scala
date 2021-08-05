@@ -14,25 +14,19 @@ trait LongRunningRecognizeRequest extends StObject {
 }
 object LongRunningRecognizeRequest {
   
-  @scala.inline
-  def apply(): LongRunningRecognizeRequest = {
+  inline def apply(): LongRunningRecognizeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LongRunningRecognizeRequest]
   }
   
-  @scala.inline
-  implicit class LongRunningRecognizeRequestMutableBuilder[Self <: LongRunningRecognizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LongRunningRecognizeRequest](x: Self) {
     
-    @scala.inline
-    def setAudio(value: RecognitionAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: RecognitionAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    @scala.inline
-    def setConfig(value: RecognitionConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: RecognitionConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
   }
 }

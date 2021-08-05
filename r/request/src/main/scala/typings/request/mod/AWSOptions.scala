@@ -12,22 +12,17 @@ trait AWSOptions extends StObject {
 }
 object AWSOptions {
   
-  @scala.inline
-  def apply(secret: String): AWSOptions = {
+  inline def apply(secret: String): AWSOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[AWSOptions]
   }
   
-  @scala.inline
-  implicit class AWSOptionsMutableBuilder[Self <: AWSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AWSOptions](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
   }
 }

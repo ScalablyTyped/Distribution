@@ -18,19 +18,15 @@ trait DeleteUserPolicyRequest extends StObject {
 }
 object DeleteUserPolicyRequest {
   
-  @scala.inline
-  def apply(PolicyName: policyNameType, UserName: existingUserNameType): DeleteUserPolicyRequest = {
+  inline def apply(PolicyName: policyNameType, UserName: existingUserNameType): DeleteUserPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserPolicyRequestMutableBuilder[Self <: DeleteUserPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

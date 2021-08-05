@@ -16,19 +16,15 @@ trait SchemaAddBandingResponse extends StObject {
 }
 object SchemaAddBandingResponse {
   
-  @scala.inline
-  def apply(): SchemaAddBandingResponse = {
+  inline def apply(): SchemaAddBandingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddBandingResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAddBandingResponseMutableBuilder[Self <: SchemaAddBandingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddBandingResponse](x: Self) {
     
-    @scala.inline
-    def setBandedRange(value: SchemaBandedRange): Self = StObject.set(x, "bandedRange", value.asInstanceOf[js.Any])
+    inline def setBandedRange(value: SchemaBandedRange): Self = StObject.set(x, "bandedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandedRangeUndefined: Self = StObject.set(x, "bandedRange", js.undefined)
+    inline def setBandedRangeUndefined: Self = StObject.set(x, "bandedRange", js.undefined)
   }
 }

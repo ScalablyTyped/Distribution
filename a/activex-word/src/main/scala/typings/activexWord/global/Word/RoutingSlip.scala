@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.RoutingSlip")
 @js.native
-class RoutingSlip protected ()
+/* private */ class RoutingSlip ()
   extends StObject
      with typings.activexWord.Word.RoutingSlip

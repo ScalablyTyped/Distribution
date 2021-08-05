@@ -24,43 +24,31 @@ trait ToneChatParams extends StObject {
 }
 object ToneChatParams {
   
-  @scala.inline
-  def apply(utterances: js.Array[Utterance]): ToneChatParams = {
+  inline def apply(utterances: js.Array[Utterance]): ToneChatParams = {
     val __obj = js.Dynamic.literal(utterances = utterances.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneChatParams]
   }
   
-  @scala.inline
-  implicit class ToneChatParamsMutableBuilder[Self <: ToneChatParams] (val x: Self) extends AnyVal {
+  extension [Self <: ToneChatParams](x: Self) {
     
-    @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
+    inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
+    inline def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
-    @scala.inline
-    def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
+    inline def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
+    inline def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setUtterances(value: js.Array[Utterance]): Self = StObject.set(x, "utterances", value.asInstanceOf[js.Any])
+    inline def setUtterances(value: js.Array[Utterance]): Self = StObject.set(x, "utterances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "utterances", js.Array(value :_*))
+    inline def setUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "utterances", js.Array(value :_*))
   }
 }

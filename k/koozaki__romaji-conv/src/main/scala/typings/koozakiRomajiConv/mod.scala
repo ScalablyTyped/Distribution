@@ -12,8 +12,7 @@ object mod {
     * @param someString 変換対象の文字列
     * @return のインスタンス
     */
-  @scala.inline
-  def apply(someString: String): RomajiConv = ^.asInstanceOf[js.Dynamic].apply(someString.asInstanceOf[js.Any]).asInstanceOf[RomajiConv]
+  inline def apply(someString: String): RomajiConv = ^.asInstanceOf[js.Dynamic].apply(someString.asInstanceOf[js.Any]).asInstanceOf[RomajiConv]
   
   @JSImport("@koozaki/romaji-conv", JSImport.Namespace)
   @js.native
@@ -25,8 +24,7 @@ object mod {
     * @param someString 変換対象の文字列
     * @return 変換後のひらがな
     */
-  @scala.inline
-  def toHiragana(someString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(someString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHiragana(someString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(someString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * 変換後のカタカナを返す
@@ -34,8 +32,7 @@ object mod {
     * @param someString 変換対象の文字列
     * @return 変換後のカタカナ
     */
-  @scala.inline
-  def toKatakana(someString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(someString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toKatakana(someString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(someString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait RomajiConv extends StObject {
     
@@ -71,8 +68,7 @@ object mod {
   }
   object RomajiConv {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       convert: (String, js.Object) => String,
       string: () => String,
       toHiragana: () => String,
@@ -82,20 +78,15 @@ object mod {
       __obj.asInstanceOf[RomajiConv]
     }
     
-    @scala.inline
-    implicit class RomajiConvMutableBuilder[Self <: RomajiConv] (val x: Self) extends AnyVal {
+    extension [Self <: RomajiConv](x: Self) {
       
-      @scala.inline
-      def setConvert(value: (String, js.Object) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
+      inline def setConvert(value: (String, js.Object) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setString(value: () => String): Self = StObject.set(x, "string", js.Any.fromFunction0(value))
+      inline def setString(value: () => String): Self = StObject.set(x, "string", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHiragana(value: () => String): Self = StObject.set(x, "toHiragana", js.Any.fromFunction0(value))
+      inline def setToHiragana(value: () => String): Self = StObject.set(x, "toHiragana", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToKatakana(value: () => String): Self = StObject.set(x, "toKatakana", js.Any.fromFunction0(value))
+      inline def setToKatakana(value: () => String): Self = StObject.set(x, "toKatakana", js.Any.fromFunction0(value))
     }
   }
 }

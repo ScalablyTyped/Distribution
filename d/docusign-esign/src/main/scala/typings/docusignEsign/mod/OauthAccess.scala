@@ -33,58 +33,43 @@ trait OauthAccess extends StObject {
 }
 object OauthAccess {
   
-  @scala.inline
-  def apply(): OauthAccess = {
+  inline def apply(): OauthAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OauthAccess]
   }
   
-  @scala.inline
-  implicit class OauthAccessMutableBuilder[Self <: OauthAccess] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAccess](x: Self) {
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(
+    inline def setDataVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+    inline def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
+    inline def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
     
-    @scala.inline
-    def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+    inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
+    inline def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
+    inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
+    inline def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
   }
 }

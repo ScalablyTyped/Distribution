@@ -14,6 +14,5 @@ object normalizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalize(criteria: AnyFilter, opts: Options): Filters[js.Array[FilterFunction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(criteria.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filters[js.Array[FilterFunction]]]
+  inline def normalize(criteria: AnyFilter, opts: Options): Filters[js.Array[FilterFunction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(criteria.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filters[js.Array[FilterFunction]]]
 }

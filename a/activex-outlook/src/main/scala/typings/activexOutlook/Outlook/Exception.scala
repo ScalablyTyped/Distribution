@@ -19,7 +19,7 @@ trait Exception extends StObject {
   
   val OriginalDate: VarDate
   
-  @JSName("Outlook.Exception_typekey")
+  /* private */ @JSName("Outlook.Exception_typekey")
   var OutlookDotException_typekey: Exception
   
   val Parent: js.Any
@@ -28,8 +28,7 @@ trait Exception extends StObject {
 }
 object Exception {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AppointmentItem: AppointmentItem,
     Class: OlObjectClass,
@@ -45,34 +44,24 @@ object Exception {
     __obj.asInstanceOf[Exception]
   }
   
-  @scala.inline
-  implicit class ExceptionMutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
+  extension [Self <: Exception](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentItem(value: AppointmentItem): Self = StObject.set(x, "AppointmentItem", value.asInstanceOf[js.Any])
+    inline def setAppointmentItem(value: AppointmentItem): Self = StObject.set(x, "AppointmentItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemProperties(value: ItemProperties): Self = StObject.set(x, "ItemProperties", value.asInstanceOf[js.Any])
+    inline def setItemProperties(value: ItemProperties): Self = StObject.set(x, "ItemProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalDate(value: VarDate): Self = StObject.set(x, "OriginalDate", value.asInstanceOf[js.Any])
+    inline def setOriginalDate(value: VarDate): Self = StObject.set(x, "OriginalDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotException_typekey(value: Exception): Self = StObject.set(x, "Outlook.Exception_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotException_typekey(value: Exception): Self = StObject.set(x, "Outlook.Exception_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

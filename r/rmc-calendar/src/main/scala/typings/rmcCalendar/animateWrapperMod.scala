@@ -20,8 +20,7 @@ object animateWrapperMod {
     @JSImport("rmc-calendar/lib/calendar/AnimateWrapper", "default.defaultProps")
     @js.native
     def defaultProps: PropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -38,29 +37,22 @@ object animateWrapperMod {
   }
   object PropsType {
     
-    @scala.inline
-    def apply(visible: Boolean): PropsType = {
+    inline def apply(visible: Boolean): PropsType = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropsType]
     }
     
-    @scala.inline
-    implicit class PropsTypeMutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
+    extension [Self <: PropsType](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisplayType(value: String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+      inline def setDisplayType(value: String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
+      inline def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -38,52 +38,37 @@ trait GetEmailIdentityResponse extends StObject {
 }
 object GetEmailIdentityResponse {
   
-  @scala.inline
-  def apply(): GetEmailIdentityResponse = {
+  inline def apply(): GetEmailIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEmailIdentityResponse]
   }
   
-  @scala.inline
-  implicit class GetEmailIdentityResponseMutableBuilder[Self <: GetEmailIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEmailIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
+    inline def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimAttributesUndefined: Self = StObject.set(x, "DkimAttributes", js.undefined)
+    inline def setDkimAttributesUndefined: Self = StObject.set(x, "DkimAttributes", js.undefined)
     
-    @scala.inline
-    def setFeedbackForwardingStatus(value: Enabled): Self = StObject.set(x, "FeedbackForwardingStatus", value.asInstanceOf[js.Any])
+    inline def setFeedbackForwardingStatus(value: Enabled): Self = StObject.set(x, "FeedbackForwardingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackForwardingStatusUndefined: Self = StObject.set(x, "FeedbackForwardingStatus", js.undefined)
+    inline def setFeedbackForwardingStatusUndefined: Self = StObject.set(x, "FeedbackForwardingStatus", js.undefined)
     
-    @scala.inline
-    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
+    inline def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
-    @scala.inline
-    def setMailFromAttributes(value: MailFromAttributes): Self = StObject.set(x, "MailFromAttributes", value.asInstanceOf[js.Any])
+    inline def setMailFromAttributes(value: MailFromAttributes): Self = StObject.set(x, "MailFromAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailFromAttributesUndefined: Self = StObject.set(x, "MailFromAttributes", js.undefined)
+    inline def setMailFromAttributesUndefined: Self = StObject.set(x, "MailFromAttributes", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
+    inline def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedForSendingStatusUndefined: Self = StObject.set(x, "VerifiedForSendingStatus", js.undefined)
+    inline def setVerifiedForSendingStatusUndefined: Self = StObject.set(x, "VerifiedForSendingStatus", js.undefined)
   }
 }

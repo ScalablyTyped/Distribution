@@ -28,16 +28,13 @@ trait WithT extends StObject {
 }
 object WithT {
   
-  @scala.inline
-  def apply(t: TFunction): WithT = {
+  inline def apply(t: TFunction): WithT = {
     val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithT]
   }
   
-  @scala.inline
-  implicit class WithTMutableBuilder[Self <: WithT] (val x: Self) extends AnyVal {
+  extension [Self <: WithT](x: Self) {
     
-    @scala.inline
-    def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

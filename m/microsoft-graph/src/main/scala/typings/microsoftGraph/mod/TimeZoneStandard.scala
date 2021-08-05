@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeZoneStandard extends StObject
 object TimeZoneStandard {
   
-  @scala.inline
-  def iana: typings.microsoftGraph.microsoftGraphStrings.iana = "iana".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iana]
+  inline def iana: typings.microsoftGraph.microsoftGraphStrings.iana = "iana".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iana]
   
-  @scala.inline
-  def windows: typings.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows]
+  inline def windows: typings.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows]
 }

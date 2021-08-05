@@ -23,31 +23,23 @@ trait IgBrowseButton
 }
 object IgBrowseButton {
   
-  @scala.inline
-  def apply(): IgBrowseButton = {
+  inline def apply(): IgBrowseButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgBrowseButton]
   }
   
-  @scala.inline
-  implicit class IgBrowseButtonMutableBuilder[Self <: IgBrowseButton] (val x: Self) extends AnyVal {
+  extension [Self <: IgBrowseButton](x: Self) {
     
-    @scala.inline
-    def setAutoselect(value: Boolean): Self = StObject.set(x, "autoselect", value.asInstanceOf[js.Any])
+    inline def setAutoselect(value: Boolean): Self = StObject.set(x, "autoselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoselectUndefined: Self = StObject.set(x, "autoselect", js.undefined)
+    inline def setAutoselectUndefined: Self = StObject.set(x, "autoselect", js.undefined)
     
-    @scala.inline
-    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setMultipleFiles(value: Boolean): Self = StObject.set(x, "multipleFiles", value.asInstanceOf[js.Any])
+    inline def setMultipleFiles(value: Boolean): Self = StObject.set(x, "multipleFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleFilesUndefined: Self = StObject.set(x, "multipleFiles", js.undefined)
+    inline def setMultipleFilesUndefined: Self = StObject.set(x, "multipleFiles", js.undefined)
   }
 }

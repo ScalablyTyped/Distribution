@@ -24,19 +24,15 @@ trait DropOptions
 }
 object DropOptions {
   
-  @scala.inline
-  def apply(): DropOptions = {
+  inline def apply(): DropOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropOptions]
   }
   
-  @scala.inline
-  implicit class DropOptionsMutableBuilder[Self <: DropOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DropOptions](x: Self) {
     
-    @scala.inline
-    def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+    inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+    inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
   }
 }

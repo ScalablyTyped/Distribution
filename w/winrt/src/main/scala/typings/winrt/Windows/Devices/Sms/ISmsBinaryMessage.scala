@@ -17,8 +17,7 @@ trait ISmsBinaryMessage
 }
 object ISmsBinaryMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: SmsDataFormat,
     getData: () => Uint8Array,
     id: Double,
@@ -29,16 +28,12 @@ object ISmsBinaryMessage {
     __obj.asInstanceOf[ISmsBinaryMessage]
   }
   
-  @scala.inline
-  implicit class ISmsBinaryMessageMutableBuilder[Self <: ISmsBinaryMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsBinaryMessage](x: Self) {
     
-    @scala.inline
-    def setFormat(value: SmsDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: SmsDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetData(value: () => Uint8Array): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => Uint8Array): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetData(value: Uint8Array => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: Uint8Array => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

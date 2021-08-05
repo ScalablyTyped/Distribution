@@ -22,19 +22,15 @@ trait SchemaLoggingOptions extends StObject {
 }
 object SchemaLoggingOptions {
   
-  @scala.inline
-  def apply(): SchemaLoggingOptions = {
+  inline def apply(): SchemaLoggingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLoggingOptions]
   }
   
-  @scala.inline
-  implicit class SchemaLoggingOptionsMutableBuilder[Self <: SchemaLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
+    inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }
 }

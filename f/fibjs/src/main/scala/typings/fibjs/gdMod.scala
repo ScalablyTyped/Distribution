@@ -131,36 +131,24 @@ object gdMod {
   @js.native
   val WEBP: /* 6 */ Double = js.native
   
-  @scala.inline
-  def color(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def color(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def create(width: Double, height: Double): ClassImage = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ClassImage]
-  @scala.inline
-  def create(width: Double, height: Double, color: Double): ClassImage = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ClassImage]
+  inline def create(width: Double, height: Double): ClassImage = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ClassImage]
+  inline def create(width: Double, height: Double, color: Double): ClassImage = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ClassImage]
   
-  @scala.inline
-  def hsb(hue: Double, saturation: Double, brightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsb")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def hsb(hue: Double, saturation: Double, brightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsb")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def hsba(hue: Double, saturation: Double, brightness: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsba")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def hsba(hue: Double, saturation: Double, brightness: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsba")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def hsl(hue: Double, saturation: Double, lightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def hsl(hue: Double, saturation: Double, lightness: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def hsla(hue: Double, saturation: Double, lightness: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def hsla(hue: Double, saturation: Double, lightness: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def load(data: ClassBuffer): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
-  @scala.inline
-  def load(fname: String): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
-  @scala.inline
-  def load(stm: ClassSeekableStream): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(stm.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
+  inline def load(data: ClassBuffer): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
+  inline def load(fname: String): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
+  inline def load(stm: ClassSeekableStream): ClassImage = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(stm.asInstanceOf[js.Any]).asInstanceOf[ClassImage]
   
-  @scala.inline
-  def rgb(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def rgb(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def rgba(red: Double, green: Double, blue: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def rgba(red: Double, green: Double, blue: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.UpBars")
 @js.native
-class UpBars protected ()
+/* private */ class UpBars ()
   extends StObject
      with typings.activexExcel.Excel.UpBars {
   
@@ -23,7 +23,7 @@ class UpBars protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.UpBars_typekey")
   var ExcelDotUpBars_typekey: typings.activexExcel.Excel.UpBars = js.native
   

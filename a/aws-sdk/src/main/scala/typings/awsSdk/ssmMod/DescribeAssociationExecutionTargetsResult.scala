@@ -18,28 +18,21 @@ trait DescribeAssociationExecutionTargetsResult extends StObject {
 }
 object DescribeAssociationExecutionTargetsResult {
   
-  @scala.inline
-  def apply(): DescribeAssociationExecutionTargetsResult = {
+  inline def apply(): DescribeAssociationExecutionTargetsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAssociationExecutionTargetsResult]
   }
   
-  @scala.inline
-  implicit class DescribeAssociationExecutionTargetsResultMutableBuilder[Self <: DescribeAssociationExecutionTargetsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssociationExecutionTargetsResult](x: Self) {
     
-    @scala.inline
-    def setAssociationExecutionTargets(value: AssociationExecutionTargetsList): Self = StObject.set(x, "AssociationExecutionTargets", value.asInstanceOf[js.Any])
+    inline def setAssociationExecutionTargets(value: AssociationExecutionTargetsList): Self = StObject.set(x, "AssociationExecutionTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationExecutionTargetsUndefined: Self = StObject.set(x, "AssociationExecutionTargets", js.undefined)
+    inline def setAssociationExecutionTargetsUndefined: Self = StObject.set(x, "AssociationExecutionTargets", js.undefined)
     
-    @scala.inline
-    def setAssociationExecutionTargetsVarargs(value: AssociationExecutionTarget*): Self = StObject.set(x, "AssociationExecutionTargets", js.Array(value :_*))
+    inline def setAssociationExecutionTargetsVarargs(value: AssociationExecutionTarget*): Self = StObject.set(x, "AssociationExecutionTargets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

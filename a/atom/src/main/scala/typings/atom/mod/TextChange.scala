@@ -22,8 +22,7 @@ trait TextChange extends StObject {
 }
 object TextChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newExtent: Point,
     newRange: Range,
     newText: String,
@@ -36,28 +35,20 @@ object TextChange {
     __obj.asInstanceOf[TextChange]
   }
   
-  @scala.inline
-  implicit class TextChangeMutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {
+  extension [Self <: TextChange](x: Self) {
     
-    @scala.inline
-    def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
+    inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
+    inline def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+    inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
+    inline def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
+    inline def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
+    inline def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

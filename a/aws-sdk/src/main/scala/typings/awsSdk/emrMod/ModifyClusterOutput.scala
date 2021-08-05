@@ -13,19 +13,15 @@ trait ModifyClusterOutput extends StObject {
 }
 object ModifyClusterOutput {
   
-  @scala.inline
-  def apply(): ModifyClusterOutput = {
+  inline def apply(): ModifyClusterOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyClusterOutput]
   }
   
-  @scala.inline
-  implicit class ModifyClusterOutputMutableBuilder[Self <: ModifyClusterOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterOutput](x: Self) {
     
-    @scala.inline
-    def setStepConcurrencyLevel(value: Integer): Self = StObject.set(x, "StepConcurrencyLevel", value.asInstanceOf[js.Any])
+    inline def setStepConcurrencyLevel(value: Integer): Self = StObject.set(x, "StepConcurrencyLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepConcurrencyLevelUndefined: Self = StObject.set(x, "StepConcurrencyLevel", js.undefined)
+    inline def setStepConcurrencyLevelUndefined: Self = StObject.set(x, "StepConcurrencyLevel", js.undefined)
   }
 }

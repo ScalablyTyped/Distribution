@@ -17,8 +17,7 @@ trait XAutoStyleFamily
 }
 object XAutoStyleFamily {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     acquire: () => Unit,
     createEnumeration: () => XEnumeration,
@@ -32,10 +31,8 @@ object XAutoStyleFamily {
     __obj.asInstanceOf[XAutoStyleFamily]
   }
   
-  @scala.inline
-  implicit class XAutoStyleFamilyMutableBuilder[Self <: XAutoStyleFamily] (val x: Self) extends AnyVal {
+  extension [Self <: XAutoStyleFamily](x: Self) {
     
-    @scala.inline
-    def setInsertStyle(value: PropertyValues => XAutoStyle): Self = StObject.set(x, "insertStyle", js.Any.fromFunction1(value))
+    inline def setInsertStyle(value: PropertyValues => XAutoStyle): Self = StObject.set(x, "insertStyle", js.Any.fromFunction1(value))
   }
 }

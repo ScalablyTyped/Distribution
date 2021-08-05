@@ -10,8 +10,7 @@ object mod {
   
   object restEndpointMethods {
     
-    @scala.inline
-    def apply(octokit: Octokit): Api = ^.asInstanceOf[js.Dynamic].apply(octokit.asInstanceOf[js.Any]).asInstanceOf[Api]
+    inline def apply(octokit: Octokit): Api = ^.asInstanceOf[js.Dynamic].apply(octokit.asInstanceOf[js.Any]).asInstanceOf[Api]
     
     @JSImport("@octokit/plugin-rest-endpoint-methods", "restEndpointMethods")
     @js.native
@@ -20,7 +19,6 @@ object mod {
     @JSImport("@octokit/plugin-rest-endpoint-methods", "restEndpointMethods.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
 }

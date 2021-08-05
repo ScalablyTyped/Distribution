@@ -98,79 +98,55 @@ trait SchemaBeacon extends StObject {
 }
 object SchemaBeacon {
   
-  @scala.inline
-  def apply(): SchemaBeacon = {
+  inline def apply(): SchemaBeacon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBeacon]
   }
   
-  @scala.inline
-  implicit class SchemaBeaconMutableBuilder[Self <: SchemaBeacon] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBeacon](x: Self) {
     
-    @scala.inline
-    def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
+    inline def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
+    inline def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
     
-    @scala.inline
-    def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
+    inline def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
+    inline def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEphemeralIdRegistration(value: SchemaEphemeralIdRegistration): Self = StObject.set(x, "ephemeralIdRegistration", value.asInstanceOf[js.Any])
+    inline def setEphemeralIdRegistration(value: SchemaEphemeralIdRegistration): Self = StObject.set(x, "ephemeralIdRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEphemeralIdRegistrationUndefined: Self = StObject.set(x, "ephemeralIdRegistration", js.undefined)
+    inline def setEphemeralIdRegistrationUndefined: Self = StObject.set(x, "ephemeralIdRegistration", js.undefined)
     
-    @scala.inline
-    def setExpectedStability(value: String): Self = StObject.set(x, "expectedStability", value.asInstanceOf[js.Any])
+    inline def setExpectedStability(value: String): Self = StObject.set(x, "expectedStability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedStabilityUndefined: Self = StObject.set(x, "expectedStability", js.undefined)
+    inline def setExpectedStabilityUndefined: Self = StObject.set(x, "expectedStability", js.undefined)
     
-    @scala.inline
-    def setIndoorLevel(value: SchemaIndoorLevel): Self = StObject.set(x, "indoorLevel", value.asInstanceOf[js.Any])
+    inline def setIndoorLevel(value: SchemaIndoorLevel): Self = StObject.set(x, "indoorLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndoorLevelUndefined: Self = StObject.set(x, "indoorLevel", js.undefined)
+    inline def setIndoorLevelUndefined: Self = StObject.set(x, "indoorLevel", js.undefined)
     
-    @scala.inline
-    def setLatLng(value: SchemaLatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: SchemaLatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
+    inline def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setProvisioningKey(value: String): Self = StObject.set(x, "provisioningKey", value.asInstanceOf[js.Any])
+    inline def setProvisioningKey(value: String): Self = StObject.set(x, "provisioningKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningKeyUndefined: Self = StObject.set(x, "provisioningKey", js.undefined)
+    inline def setProvisioningKeyUndefined: Self = StObject.set(x, "provisioningKey", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListAvailableManagedRuleGroupsResponse extends StObject {
 }
 object ListAvailableManagedRuleGroupsResponse {
   
-  @scala.inline
-  def apply(): ListAvailableManagedRuleGroupsResponse = {
+  inline def apply(): ListAvailableManagedRuleGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAvailableManagedRuleGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListAvailableManagedRuleGroupsResponseMutableBuilder[Self <: ListAvailableManagedRuleGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAvailableManagedRuleGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setManagedRuleGroups(value: ManagedRuleGroupSummaries): Self = StObject.set(x, "ManagedRuleGroups", value.asInstanceOf[js.Any])
+    inline def setManagedRuleGroups(value: ManagedRuleGroupSummaries): Self = StObject.set(x, "ManagedRuleGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedRuleGroupsUndefined: Self = StObject.set(x, "ManagedRuleGroups", js.undefined)
+    inline def setManagedRuleGroupsUndefined: Self = StObject.set(x, "ManagedRuleGroups", js.undefined)
     
-    @scala.inline
-    def setManagedRuleGroupsVarargs(value: ManagedRuleGroupSummary*): Self = StObject.set(x, "ManagedRuleGroups", js.Array(value :_*))
+    inline def setManagedRuleGroupsVarargs(value: ManagedRuleGroupSummary*): Self = StObject.set(x, "ManagedRuleGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

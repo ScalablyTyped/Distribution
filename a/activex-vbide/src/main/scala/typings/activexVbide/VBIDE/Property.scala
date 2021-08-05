@@ -34,7 +34,7 @@ trait Property extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE = js.native
   
-  @JSName("VBIDE.Property_typekey")
+  /* private */ @JSName("VBIDE.Property_typekey")
   var VBIDEDotProperty_typekey: Property = js.native
   
   var Value: js.Any = js.native

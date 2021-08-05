@@ -20,25 +20,19 @@ trait SliderOptions
 }
 object SliderOptions {
   
-  @scala.inline
-  def apply(): SliderOptions = {
+  inline def apply(): SliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderOptions]
   }
   
-  @scala.inline
-  implicit class SliderOptionsMutableBuilder[Self <: SliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SliderOptions](x: Self) {
     
-    @scala.inline
-    def setBarName(value: String): Self = StObject.set(x, "barName", value.asInstanceOf[js.Any])
+    inline def setBarName(value: String): Self = StObject.set(x, "barName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarNameUndefined: Self = StObject.set(x, "barName", js.undefined)
+    inline def setBarNameUndefined: Self = StObject.set(x, "barName", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

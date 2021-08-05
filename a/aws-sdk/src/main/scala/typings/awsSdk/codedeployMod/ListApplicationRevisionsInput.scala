@@ -43,52 +43,37 @@ trait ListApplicationRevisionsInput extends StObject {
 }
 object ListApplicationRevisionsInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName): ListApplicationRevisionsInput = {
+  inline def apply(applicationName: ApplicationName): ListApplicationRevisionsInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationRevisionsInput]
   }
   
-  @scala.inline
-  implicit class ListApplicationRevisionsInputMutableBuilder[Self <: ListApplicationRevisionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationRevisionsInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployed(value: ListStateFilterAction): Self = StObject.set(x, "deployed", value.asInstanceOf[js.Any])
+    inline def setDeployed(value: ListStateFilterAction): Self = StObject.set(x, "deployed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedUndefined: Self = StObject.set(x, "deployed", js.undefined)
+    inline def setDeployedUndefined: Self = StObject.set(x, "deployed", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3KeyPrefix(value: S3Key): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setS3KeyPrefix(value: S3Key): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+    inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: ApplicationRevisionSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: ApplicationRevisionSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

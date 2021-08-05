@@ -38,31 +38,23 @@ trait ParamsResourceVideosReportabuse
 }
 object ParamsResourceVideosReportabuse {
   
-  @scala.inline
-  def apply(): ParamsResourceVideosReportabuse = {
+  inline def apply(): ParamsResourceVideosReportabuse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVideosReportabuse]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVideosReportabuseMutableBuilder[Self <: ParamsResourceVideosReportabuse] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVideosReportabuse](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaVideoAbuseReport): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaVideoAbuseReport): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

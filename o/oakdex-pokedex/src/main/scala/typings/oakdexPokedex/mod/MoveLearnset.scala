@@ -12,25 +12,19 @@ trait MoveLearnset extends StObject {
 }
 object MoveLearnset {
   
-  @scala.inline
-  def apply(games: js.Array[String], learnset: js.Array[Learnset]): MoveLearnset = {
+  inline def apply(games: js.Array[String], learnset: js.Array[Learnset]): MoveLearnset = {
     val __obj = js.Dynamic.literal(games = games.asInstanceOf[js.Any], learnset = learnset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveLearnset]
   }
   
-  @scala.inline
-  implicit class MoveLearnsetMutableBuilder[Self <: MoveLearnset] (val x: Self) extends AnyVal {
+  extension [Self <: MoveLearnset](x: Self) {
     
-    @scala.inline
-    def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
+    inline def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
+    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
     
-    @scala.inline
-    def setLearnset(value: js.Array[Learnset]): Self = StObject.set(x, "learnset", value.asInstanceOf[js.Any])
+    inline def setLearnset(value: js.Array[Learnset]): Self = StObject.set(x, "learnset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLearnsetVarargs(value: Learnset*): Self = StObject.set(x, "learnset", js.Array(value :_*))
+    inline def setLearnsetVarargs(value: Learnset*): Self = StObject.set(x, "learnset", js.Array(value :_*))
   }
 }

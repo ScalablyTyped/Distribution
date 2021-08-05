@@ -26,8 +26,7 @@ trait IMultiValuePropertyType
 }
 object IMultiValuePropertyType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
     GetSerializableMultiValuePropType: () => BDelayInit,
     ID: String,
@@ -42,28 +41,20 @@ object IMultiValuePropertyType {
     __obj.asInstanceOf[IMultiValuePropertyType]
   }
   
-  @scala.inline
-  implicit class IMultiValuePropertyTypeMutableBuilder[Self <: IMultiValuePropertyType] (val x: Self) extends AnyVal {
+  extension [Self <: IMultiValuePropertyType](x: Self) {
     
-    @scala.inline
-    def setBMultiValue(value: Boolean): Self = StObject.set(x, "bMultiValue", value.asInstanceOf[js.Any])
+    inline def setBMultiValue(value: Boolean): Self = StObject.set(x, "bMultiValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSerializableMultiValuePropType(value: () => BDelayInit): Self = StObject.set(x, "GetSerializableMultiValuePropType", js.Any.fromFunction0(value))
+    inline def setGetSerializableMultiValuePropType(value: () => BDelayInit): Self = StObject.set(x, "GetSerializableMultiValuePropType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitSingleValuePropType(value: () => Unit): Self = StObject.set(x, "InitSingleValuePropType", js.Any.fromFunction0(value))
+    inline def setInitSingleValuePropType(value: () => Unit): Self = StObject.set(x, "InitSingleValuePropType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocStrArrayToLocStr(value: js.Array[String] => String): Self = StObject.set(x, "LocStrArrayToLocStr", js.Any.fromFunction1(value))
+    inline def setLocStrArrayToLocStr(value: js.Array[String] => String): Self = StObject.set(x, "LocStrArrayToLocStr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocStrToLocStrArray(value: String => js.Array[String]): Self = StObject.set(x, "LocStrToLocStrArray", js.Any.fromFunction1(value))
+    inline def setLocStrToLocStrArray(value: String => js.Array[String]): Self = StObject.set(x, "LocStrToLocStrArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleValuePropType(value: String): Self = StObject.set(x, "singleValuePropType", value.asInstanceOf[js.Any])
+    inline def setSingleValuePropType(value: String): Self = StObject.set(x, "singleValuePropType", value.asInstanceOf[js.Any])
   }
 }

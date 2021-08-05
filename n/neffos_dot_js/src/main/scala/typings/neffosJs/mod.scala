@@ -213,24 +213,17 @@ object mod {
   @js.native
   val URLParamAsHeaderPrefix: /* "X-Websocket-Header-" */ String = js.native
   
-  @scala.inline
-  def dial(endpoint: String, connHandler: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
-  @scala.inline
-  def dial(endpoint: String, connHandler: js.Any, options: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
-  @scala.inline
-  def dial(endpoint: String, connHandler: js.Any, options: Options): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  inline def dial(endpoint: String, connHandler: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  inline def dial(endpoint: String, connHandler: js.Any, options: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  inline def dial(endpoint: String, connHandler: js.Any, options: Options): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
   
-  @scala.inline
-  def isCloseError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCloseError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSystemEvent(event: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSystemEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSystemEvent(event: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSystemEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def marshal(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("marshal")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def marshal(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("marshal")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def reply(body: WSData): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("reply")(body.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def reply(body: WSData): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("reply")(body.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   type Events = Map[String, MessageHandlerFunc]
   
@@ -250,35 +243,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+      inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      @scala.inline
-      def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
       
-      @scala.inline
-      def setReconnnect(value: Double): Self = StObject.set(x, "reconnnect", value.asInstanceOf[js.Any])
+      inline def setReconnnect(value: Double): Self = StObject.set(x, "reconnnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnnectUndefined: Self = StObject.set(x, "reconnnect", js.undefined)
+      inline def setReconnnectUndefined: Self = StObject.set(x, "reconnnect", js.undefined)
     }
   }
   

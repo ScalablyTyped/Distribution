@@ -21,25 +21,19 @@ trait SchemaImportError extends StObject {
 }
 object SchemaImportError {
   
-  @scala.inline
-  def apply(): SchemaImportError = {
+  inline def apply(): SchemaImportError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportError]
   }
   
-  @scala.inline
-  implicit class SchemaImportErrorMutableBuilder[Self <: SchemaImportError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportError](x: Self) {
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

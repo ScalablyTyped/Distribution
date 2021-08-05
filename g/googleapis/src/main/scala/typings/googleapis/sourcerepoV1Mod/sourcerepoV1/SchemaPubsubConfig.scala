@@ -32,31 +32,23 @@ trait SchemaPubsubConfig extends StObject {
 }
 object SchemaPubsubConfig {
   
-  @scala.inline
-  def apply(): SchemaPubsubConfig = {
+  inline def apply(): SchemaPubsubConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPubsubConfig]
   }
   
-  @scala.inline
-  implicit class SchemaPubsubConfigMutableBuilder[Self <: SchemaPubsubConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPubsubConfig](x: Self) {
     
-    @scala.inline
-    def setMessageFormat(value: String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+    inline def setMessageFormat(value: String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+    inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
     
-    @scala.inline
-    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+    inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+    inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

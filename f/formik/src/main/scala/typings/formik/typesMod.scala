@@ -66,38 +66,28 @@ object typesMod {
   }
   object FieldInputProps {
     
-    @scala.inline
-    def apply[Value](name: String, onBlur: FnCallE, onChange: FnCall, value: Value): FieldInputProps[Value] = {
+    inline def apply[Value](name: String, onBlur: FnCallE, onChange: FnCall, value: Value): FieldInputProps[Value] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = onBlur.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldInputProps[Value]]
     }
     
-    @scala.inline
-    implicit class FieldInputPropsMutableBuilder[Self <: FieldInputProps[?], Value] (val x: Self & FieldInputProps[Value]) extends AnyVal {
+    extension [Self <: FieldInputProps[?], Value](x: Self & FieldInputProps[Value]) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBlur(value: FnCallE): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      inline def setOnBlur(value: FnCallE): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: FnCall): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: FnCall): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,41 +113,30 @@ object typesMod {
   }
   object FieldMetaProps {
     
-    @scala.inline
-    def apply[Value](initialTouched: Boolean, touched: Boolean, value: Value): FieldMetaProps[Value] = {
+    inline def apply[Value](initialTouched: Boolean, touched: Boolean, value: Value): FieldMetaProps[Value] = {
       val __obj = js.Dynamic.literal(initialTouched = initialTouched.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldMetaProps[Value]]
     }
     
-    @scala.inline
-    implicit class FieldMetaPropsMutableBuilder[Self <: FieldMetaProps[?], Value] (val x: Self & FieldMetaProps[Value]) extends AnyVal {
+    extension [Self <: FieldMetaProps[?], Value](x: Self & FieldMetaProps[Value]) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInitialError(value: String): Self = StObject.set(x, "initialError", value.asInstanceOf[js.Any])
+      inline def setInitialError(value: String): Self = StObject.set(x, "initialError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialErrorUndefined: Self = StObject.set(x, "initialError", js.undefined)
+      inline def setInitialErrorUndefined: Self = StObject.set(x, "initialError", js.undefined)
       
-      @scala.inline
-      def setInitialTouched(value: Boolean): Self = StObject.set(x, "initialTouched", value.asInstanceOf[js.Any])
+      inline def setInitialTouched(value: Boolean): Self = StObject.set(x, "initialTouched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValue(value: Value): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      inline def setInitialValue(value: Value): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+      inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
-      @scala.inline
-      def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,8 +164,7 @@ object typesMod {
   }
   object FormikComputedProps {
     
-    @scala.inline
-    def apply[Values](
+    inline def apply[Values](
       dirty: Boolean,
       initialErrors: FormikErrors[Values],
       initialTouched: FormikTouched[Values],
@@ -197,29 +175,21 @@ object typesMod {
       __obj.asInstanceOf[FormikComputedProps[Values]]
     }
     
-    @scala.inline
-    implicit class FormikComputedPropsMutableBuilder[Self <: FormikComputedProps[?], Values] (val x: Self & FormikComputedProps[Values]) extends AnyVal {
+    extension [Self <: FormikComputedProps[?], Values](x: Self & FormikComputedProps[Values]) {
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialErrors(value: FormikErrors[Values]): Self = StObject.set(x, "initialErrors", value.asInstanceOf[js.Any])
+      inline def setInitialErrors(value: FormikErrors[Values]): Self = StObject.set(x, "initialErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStatus(value: js.Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
+      inline def setInitialStatus(value: js.Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStatusUndefined: Self = StObject.set(x, "initialStatus", js.undefined)
+      inline def setInitialStatusUndefined: Self = StObject.set(x, "initialStatus", js.undefined)
       
-      @scala.inline
-      def setInitialTouched(value: FormikTouched[Values]): Self = StObject.set(x, "initialTouched", value.asInstanceOf[js.Any])
+      inline def setInitialTouched(value: FormikTouched[Values]): Self = StObject.set(x, "initialTouched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValues(value: Values): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+      inline def setInitialValues(value: Values): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,92 +259,64 @@ object typesMod {
   }
   object FormikConfig {
     
-    @scala.inline
-    def apply[Values](initialValues: Values, onSubmit: (Values, FormikHelpers[Values]) => Unit | js.Promise[js.Any]): FormikConfig[Values] = {
+    inline def apply[Values](initialValues: Values, onSubmit: (Values, FormikHelpers[Values]) => Unit | js.Promise[js.Any]): FormikConfig[Values] = {
       val __obj = js.Dynamic.literal(initialValues = initialValues.asInstanceOf[js.Any], onSubmit = js.Any.fromFunction2(onSubmit))
       __obj.asInstanceOf[FormikConfig[Values]]
     }
     
-    @scala.inline
-    implicit class FormikConfigMutableBuilder[Self <: FormikConfig[?], Values] (val x: Self & FormikConfig[Values]) extends AnyVal {
+    extension [Self <: FormikConfig[?], Values](x: Self & FormikConfig[Values]) {
       
-      @scala.inline
-      def setChildren(value: (js.Function1[/* props */ FormikProps[Values], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (js.Function1[/* props */ FormikProps[Values], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* props */ FormikProps[Values] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* props */ FormikProps[Values] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ComponentType[FormikProps[Values]] | ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[FormikProps[Values]] | ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setInitialErrors(value: FormikErrors[Values]): Self = StObject.set(x, "initialErrors", value.asInstanceOf[js.Any])
+      inline def setInitialErrors(value: FormikErrors[Values]): Self = StObject.set(x, "initialErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialErrorsUndefined: Self = StObject.set(x, "initialErrors", js.undefined)
+      inline def setInitialErrorsUndefined: Self = StObject.set(x, "initialErrors", js.undefined)
       
-      @scala.inline
-      def setInitialStatus(value: js.Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
+      inline def setInitialStatus(value: js.Any): Self = StObject.set(x, "initialStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStatusUndefined: Self = StObject.set(x, "initialStatus", js.undefined)
+      inline def setInitialStatusUndefined: Self = StObject.set(x, "initialStatus", js.undefined)
       
-      @scala.inline
-      def setInitialTouched(value: FormikTouched[Values]): Self = StObject.set(x, "initialTouched", value.asInstanceOf[js.Any])
+      inline def setInitialTouched(value: FormikTouched[Values]): Self = StObject.set(x, "initialTouched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTouchedUndefined: Self = StObject.set(x, "initialTouched", js.undefined)
+      inline def setInitialTouchedUndefined: Self = StObject.set(x, "initialTouched", js.undefined)
       
-      @scala.inline
-      def setInitialValues(value: Values): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+      inline def setInitialValues(value: Values): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRef(value: Ref[FormikProps[Values]]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[FormikProps[Values]]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ FormikProps[Values] | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ FormikProps[Values] | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setOnReset(value: (/* values */ Values, /* formikHelpers */ FormikHelpers[Values]) => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction2(value))
+      inline def setOnReset(value: (/* values */ Values, /* formikHelpers */ FormikHelpers[Values]) => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: (Values, FormikHelpers[Values]) => Unit | js.Promise[js.Any]): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
+      inline def setOnSubmit(value: (Values, FormikHelpers[Values]) => Unit | js.Promise[js.Any]): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRender(value: /* props */ FormikProps[Values] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* props */ FormikProps[Values] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setValidate(value: /* values */ Values => Unit | js.Object | js.Promise[FormikErrors[Values]]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* values */ Values => Unit | js.Object | js.Promise[FormikErrors[Values]]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      @scala.inline
-      def setValidationSchema(value: js.Any | js.Function0[js.Any]): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
+      inline def setValidationSchema(value: js.Any | js.Function0[js.Any]): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationSchemaFunction0(value: () => js.Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction0(value))
+      inline def setValidationSchemaFunction0(value: () => js.Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidationSchemaUndefined: Self = StObject.set(x, "validationSchema", js.undefined)
+      inline def setValidationSchemaUndefined: Self = StObject.set(x, "validationSchema", js.undefined)
     }
   }
   
@@ -619,20 +561,16 @@ object typesMod {
   }
   object FormikRegistration {
     
-    @scala.inline
-    def apply(registerField: (String, Validate) => Unit, unregisterField: String => Unit): FormikRegistration = {
+    inline def apply(registerField: (String, Validate) => Unit, unregisterField: String => Unit): FormikRegistration = {
       val __obj = js.Dynamic.literal(registerField = js.Any.fromFunction2(registerField), unregisterField = js.Any.fromFunction1(unregisterField))
       __obj.asInstanceOf[FormikRegistration]
     }
     
-    @scala.inline
-    implicit class FormikRegistrationMutableBuilder[Self <: FormikRegistration] (val x: Self) extends AnyVal {
+    extension [Self <: FormikRegistration](x: Self) {
       
-      @scala.inline
-      def setRegisterField(value: (String, Validate) => Unit): Self = StObject.set(x, "registerField", js.Any.fromFunction2(value))
+      inline def setRegisterField(value: (String, Validate) => Unit): Self = StObject.set(x, "registerField", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnregisterField(value: String => Unit): Self = StObject.set(x, "unregisterField", js.Any.fromFunction1(value))
+      inline def setUnregisterField(value: String => Unit): Self = StObject.set(x, "unregisterField", js.Any.fromFunction1(value))
     }
   }
   
@@ -655,47 +593,34 @@ object typesMod {
   }
   object FormikSharedConfig {
     
-    @scala.inline
-    def apply[Props](): FormikSharedConfig[Props] = {
+    inline def apply[Props](): FormikSharedConfig[Props] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormikSharedConfig[Props]]
     }
     
-    @scala.inline
-    implicit class FormikSharedConfigMutableBuilder[Self <: FormikSharedConfig[?], Props] (val x: Self & FormikSharedConfig[Props]) extends AnyVal {
+    extension [Self <: FormikSharedConfig[?], Props](x: Self & FormikSharedConfig[Props]) {
       
-      @scala.inline
-      def setEnableReinitialize(value: Boolean): Self = StObject.set(x, "enableReinitialize", value.asInstanceOf[js.Any])
+      inline def setEnableReinitialize(value: Boolean): Self = StObject.set(x, "enableReinitialize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableReinitializeUndefined: Self = StObject.set(x, "enableReinitialize", js.undefined)
+      inline def setEnableReinitializeUndefined: Self = StObject.set(x, "enableReinitialize", js.undefined)
       
-      @scala.inline
-      def setIsInitialValid(value: Boolean | (js.Function1[/* props */ Props, Boolean])): Self = StObject.set(x, "isInitialValid", value.asInstanceOf[js.Any])
+      inline def setIsInitialValid(value: Boolean | (js.Function1[/* props */ Props, Boolean])): Self = StObject.set(x, "isInitialValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInitialValidFunction1(value: /* props */ Props => Boolean): Self = StObject.set(x, "isInitialValid", js.Any.fromFunction1(value))
+      inline def setIsInitialValidFunction1(value: /* props */ Props => Boolean): Self = StObject.set(x, "isInitialValid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsInitialValidUndefined: Self = StObject.set(x, "isInitialValid", js.undefined)
+      inline def setIsInitialValidUndefined: Self = StObject.set(x, "isInitialValid", js.undefined)
       
-      @scala.inline
-      def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
+      inline def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnBlurUndefined: Self = StObject.set(x, "validateOnBlur", js.undefined)
+      inline def setValidateOnBlurUndefined: Self = StObject.set(x, "validateOnBlur", js.undefined)
       
-      @scala.inline
-      def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
+      inline def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnChangeUndefined: Self = StObject.set(x, "validateOnChange", js.undefined)
+      inline def setValidateOnChangeUndefined: Self = StObject.set(x, "validateOnChange", js.undefined)
       
-      @scala.inline
-      def setValidateOnMount(value: Boolean): Self = StObject.set(x, "validateOnMount", value.asInstanceOf[js.Any])
+      inline def setValidateOnMount(value: Boolean): Self = StObject.set(x, "validateOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnMountUndefined: Self = StObject.set(x, "validateOnMount", js.undefined)
+      inline def setValidateOnMountUndefined: Self = StObject.set(x, "validateOnMount", js.undefined)
     }
   }
   
@@ -724,8 +649,7 @@ object typesMod {
   }
   object FormikState {
     
-    @scala.inline
-    def apply[Values](
+    inline def apply[Values](
       errors: FormikErrors[Values],
       isSubmitting: Boolean,
       isValidating: Boolean,
@@ -737,32 +661,23 @@ object typesMod {
       __obj.asInstanceOf[FormikState[Values]]
     }
     
-    @scala.inline
-    implicit class FormikStateMutableBuilder[Self <: FormikState[?], Values] (val x: Self & FormikState[Values]) extends AnyVal {
+    extension [Self <: FormikState[?], Values](x: Self & FormikState[Values]) {
       
-      @scala.inline
-      def setErrors(value: FormikErrors[Values]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: FormikErrors[Values]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSubmitting(value: Boolean): Self = StObject.set(x, "isSubmitting", value.asInstanceOf[js.Any])
+      inline def setIsSubmitting(value: Boolean): Self = StObject.set(x, "isSubmitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValidating(value: Boolean): Self = StObject.set(x, "isValidating", value.asInstanceOf[js.Any])
+      inline def setIsValidating(value: Boolean): Self = StObject.set(x, "isValidating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setSubmitCount(value: Double): Self = StObject.set(x, "submitCount", value.asInstanceOf[js.Any])
+      inline def setSubmitCount(value: Double): Self = StObject.set(x, "submitCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouched(value: FormikTouched[Values]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: FormikTouched[Values]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: Values): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Values): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -796,32 +711,24 @@ object typesMod {
   }
   object SharedRenderProps {
     
-    @scala.inline
-    def apply[T](): SharedRenderProps[T] = {
+    inline def apply[T](): SharedRenderProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SharedRenderProps[T]]
     }
     
-    @scala.inline
-    implicit class SharedRenderPropsMutableBuilder[Self <: SharedRenderProps[?], T] (val x: Self & SharedRenderProps[T]) extends AnyVal {
+    extension [Self <: SharedRenderProps[?], T](x: Self & SharedRenderProps[T]) {
       
-      @scala.inline
-      def setChildren(value: /* props */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* props */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setComponent(value: String | (ComponentType[T | Unit])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String | (ComponentType[T | Unit])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* props */ T => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* props */ T => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

@@ -17,16 +17,13 @@ trait ShowAuthGuideArgs
 }
 object ShowAuthGuideArgs {
   
-  @scala.inline
-  def apply(authType: String): ShowAuthGuideArgs = {
+  inline def apply(authType: String): ShowAuthGuideArgs = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowAuthGuideArgs]
   }
   
-  @scala.inline
-  implicit class ShowAuthGuideArgsMutableBuilder[Self <: ShowAuthGuideArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ShowAuthGuideArgs](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
   }
 }

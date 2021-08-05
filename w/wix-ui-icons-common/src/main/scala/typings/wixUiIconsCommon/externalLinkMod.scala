@@ -22,20 +22,16 @@ object externalLinkMod extends Shortcut {
   }
   object ExternalLinkProps {
     
-    @scala.inline
-    def apply(): ExternalLinkProps = {
+    inline def apply(): ExternalLinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExternalLinkProps]
     }
     
-    @scala.inline
-    implicit class ExternalLinkPropsMutableBuilder[Self <: ExternalLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalLinkProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

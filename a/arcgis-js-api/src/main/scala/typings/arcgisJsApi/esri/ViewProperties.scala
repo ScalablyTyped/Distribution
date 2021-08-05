@@ -87,88 +87,61 @@ trait ViewProperties
 }
 object ViewProperties {
   
-  @scala.inline
-  def apply(): ViewProperties = {
+  inline def apply(): ViewProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewProperties]
   }
   
-  @scala.inline
-  implicit class ViewPropertiesMutableBuilder[Self <: ViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ViewProperties](x: Self) {
     
-    @scala.inline
-    def setAllLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "allLayerViews", value.asInstanceOf[js.Any])
+    inline def setAllLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "allLayerViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllLayerViewsUndefined: Self = StObject.set(x, "allLayerViews", js.undefined)
+    inline def setAllLayerViewsUndefined: Self = StObject.set(x, "allLayerViews", js.undefined)
     
-    @scala.inline
-    def setAllLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "allLayerViews", js.Array(value :_*))
+    inline def setAllLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "allLayerViews", js.Array(value :_*))
     
-    @scala.inline
-    def setAnimation(value: ViewAnimationProperties): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: ViewAnimationProperties): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setBasemapView(value: BasemapViewProperties): Self = StObject.set(x, "basemapView", value.asInstanceOf[js.Any])
+    inline def setBasemapView(value: BasemapViewProperties): Self = StObject.set(x, "basemapView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapViewUndefined: Self = StObject.set(x, "basemapView", js.undefined)
+    inline def setBasemapViewUndefined: Self = StObject.set(x, "basemapView", js.undefined)
     
-    @scala.inline
-    def setFatalError(value: Error): Self = StObject.set(x, "fatalError", value.asInstanceOf[js.Any])
+    inline def setFatalError(value: Error): Self = StObject.set(x, "fatalError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFatalErrorUndefined: Self = StObject.set(x, "fatalError", js.undefined)
+    inline def setFatalErrorUndefined: Self = StObject.set(x, "fatalError", js.undefined)
     
-    @scala.inline
-    def setGraphics(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
+    inline def setGraphics(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
+    inline def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
     
-    @scala.inline
-    def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
-    @scala.inline
-    def setLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "layerViews", value.asInstanceOf[js.Any])
+    inline def setLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "layerViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerViewsUndefined: Self = StObject.set(x, "layerViews", js.undefined)
+    inline def setLayerViewsUndefined: Self = StObject.set(x, "layerViews", js.undefined)
     
-    @scala.inline
-    def setLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "layerViews", js.Array(value :_*))
+    inline def setLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "layerViews", js.Array(value :_*))
     
-    @scala.inline
-    def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setNavigation(value: NavigationProperties): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationProperties): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
-    @scala.inline
-    def setPadding(value: ViewPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: ViewPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }
 }

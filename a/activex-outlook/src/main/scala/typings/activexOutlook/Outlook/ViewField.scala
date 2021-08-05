@@ -12,7 +12,7 @@ trait ViewField extends StObject {
   
   val ColumnFormat: typings.activexOutlook.Outlook.ColumnFormat
   
-  @JSName("Outlook.ViewField_typekey")
+  /* private */ @JSName("Outlook.ViewField_typekey")
   var OutlookDotViewField_typekey: ViewField
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait ViewField extends StObject {
 }
 object ViewField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ColumnFormat: ColumnFormat,
@@ -38,28 +37,20 @@ object ViewField {
     __obj.asInstanceOf[ViewField]
   }
   
-  @scala.inline
-  implicit class ViewFieldMutableBuilder[Self <: ViewField] (val x: Self) extends AnyVal {
+  extension [Self <: ViewField](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnFormat(value: ColumnFormat): Self = StObject.set(x, "ColumnFormat", value.asInstanceOf[js.Any])
+    inline def setColumnFormat(value: ColumnFormat): Self = StObject.set(x, "ColumnFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotViewField_typekey(value: ViewField): Self = StObject.set(x, "Outlook.ViewField_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotViewField_typekey(value: ViewField): Self = StObject.set(x, "Outlook.ViewField_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewXMLSchemaName(value: String): Self = StObject.set(x, "ViewXMLSchemaName", value.asInstanceOf[js.Any])
+    inline def setViewXMLSchemaName(value: String): Self = StObject.set(x, "ViewXMLSchemaName", value.asInstanceOf[js.Any])
   }
 }

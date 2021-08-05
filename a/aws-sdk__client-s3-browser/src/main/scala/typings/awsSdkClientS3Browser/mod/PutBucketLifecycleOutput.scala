@@ -10,8 +10,7 @@ trait PutBucketLifecycleOutput
      with typings.awsSdkClientS3Browser.typesPutBucketLifecycleOutputMod.PutBucketLifecycleOutput
 object PutBucketLifecycleOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): PutBucketLifecycleOutput = {
+  inline def apply($metadata: ResponseMetadata): PutBucketLifecycleOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLifecycleOutput]
   }

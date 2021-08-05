@@ -13,6 +13,5 @@ trait TreeDataLoader extends StObject {
 }
 object TreeDataLoader {
   
-  @scala.inline
-  def apply: TreeDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataLoader").asInstanceOf[TreeDataLoader]
+  inline def apply: TreeDataLoader = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeDataLoader").asInstanceOf[TreeDataLoader]
 }

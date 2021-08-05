@@ -25,8 +25,7 @@ trait ReorderingRule
 }
 object ReorderingRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -43,25 +42,18 @@ object ReorderingRule {
     __obj.asInstanceOf[ReorderingRule]
   }
   
-  @scala.inline
-  implicit class ReorderingRuleMutableBuilder[Self <: ReorderingRule] (val x: Self) extends AnyVal {
+  extension [Self <: ReorderingRule](x: Self) {
     
-    @scala.inline
-    def setGet_boost(value: () => Double): Self = StObject.set(x, "get_boost", js.Any.fromFunction0(value))
+    inline def setGet_boost(value: () => Double): Self = StObject.set(x, "get_boost", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_matchType(value: () => ReorderingRuleMatchType): Self = StObject.set(x, "get_matchType", js.Any.fromFunction0(value))
+    inline def setGet_matchType(value: () => ReorderingRuleMatchType): Self = StObject.set(x, "get_matchType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_matchValue(value: () => String): Self = StObject.set(x, "get_matchValue", js.Any.fromFunction0(value))
+    inline def setGet_matchValue(value: () => String): Self = StObject.set(x, "get_matchValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_boost(value: Double => Unit): Self = StObject.set(x, "set_boost", js.Any.fromFunction1(value))
+    inline def setSet_boost(value: Double => Unit): Self = StObject.set(x, "set_boost", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_matchType(value: ReorderingRuleMatchType => Unit): Self = StObject.set(x, "set_matchType", js.Any.fromFunction1(value))
+    inline def setSet_matchType(value: ReorderingRuleMatchType => Unit): Self = StObject.set(x, "set_matchType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_matchValue(value: String => Unit): Self = StObject.set(x, "set_matchValue", js.Any.fromFunction1(value))
+    inline def setSet_matchValue(value: String => Unit): Self = StObject.set(x, "set_matchValue", js.Any.fromFunction1(value))
   }
 }

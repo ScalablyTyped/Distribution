@@ -21,33 +21,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RangeSelectorButtonTypeValue extends StObject
 object RangeSelectorButtonTypeValue {
   
-  @scala.inline
-  def all: typings.highcharts.highchartsStrings.all = "all".asInstanceOf[typings.highcharts.highchartsStrings.all]
+  inline def all: typings.highcharts.highchartsStrings.all = "all".asInstanceOf[typings.highcharts.highchartsStrings.all]
   
-  @scala.inline
-  def day: day_ = "day".asInstanceOf[day_]
+  inline def day: day_ = "day".asInstanceOf[day_]
   
-  @scala.inline
-  def hour: typings.highcharts.highchartsStrings.hour = "hour".asInstanceOf[typings.highcharts.highchartsStrings.hour]
+  inline def hour: typings.highcharts.highchartsStrings.hour = "hour".asInstanceOf[typings.highcharts.highchartsStrings.hour]
   
-  @scala.inline
-  def millisecond: typings.highcharts.highchartsStrings.millisecond = "millisecond".asInstanceOf[typings.highcharts.highchartsStrings.millisecond]
+  inline def millisecond: typings.highcharts.highchartsStrings.millisecond = "millisecond".asInstanceOf[typings.highcharts.highchartsStrings.millisecond]
   
-  @scala.inline
-  def minute: typings.highcharts.highchartsStrings.minute = "minute".asInstanceOf[typings.highcharts.highchartsStrings.minute]
+  inline def minute: typings.highcharts.highchartsStrings.minute = "minute".asInstanceOf[typings.highcharts.highchartsStrings.minute]
   
-  @scala.inline
-  def month: month_ = "month".asInstanceOf[month_]
+  inline def month: month_ = "month".asInstanceOf[month_]
   
-  @scala.inline
-  def second: typings.highcharts.highchartsStrings.second = "second".asInstanceOf[typings.highcharts.highchartsStrings.second]
+  inline def second: typings.highcharts.highchartsStrings.second = "second".asInstanceOf[typings.highcharts.highchartsStrings.second]
   
-  @scala.inline
-  def week: typings.highcharts.highchartsStrings.week = "week".asInstanceOf[typings.highcharts.highchartsStrings.week]
+  inline def week: typings.highcharts.highchartsStrings.week = "week".asInstanceOf[typings.highcharts.highchartsStrings.week]
   
-  @scala.inline
-  def year: typings.highcharts.highchartsStrings.year = "year".asInstanceOf[typings.highcharts.highchartsStrings.year]
+  inline def year: typings.highcharts.highchartsStrings.year = "year".asInstanceOf[typings.highcharts.highchartsStrings.year]
   
-  @scala.inline
-  def ytd: typings.highcharts.highchartsStrings.ytd = "ytd".asInstanceOf[typings.highcharts.highchartsStrings.ytd]
+  inline def ytd: typings.highcharts.highchartsStrings.ytd = "ytd".asInstanceOf[typings.highcharts.highchartsStrings.ytd]
 }

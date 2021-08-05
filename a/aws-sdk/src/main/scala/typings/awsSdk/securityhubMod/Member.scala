@@ -38,49 +38,35 @@ trait Member extends StObject {
 }
 object Member {
   
-  @scala.inline
-  def apply(): Member = {
+  inline def apply(): Member = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Member]
   }
   
-  @scala.inline
-  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
+  extension [Self <: Member](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: NonEmptyString): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: NonEmptyString): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    @scala.inline
-    def setInvitedAt(value: Timestamp): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: Timestamp): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
+    inline def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
     
-    @scala.inline
-    def setMasterId(value: NonEmptyString): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
+    inline def setMasterId(value: NonEmptyString): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterIdUndefined: Self = StObject.set(x, "MasterId", js.undefined)
+    inline def setMasterIdUndefined: Self = StObject.set(x, "MasterId", js.undefined)
     
-    @scala.inline
-    def setMemberStatus(value: NonEmptyString): Self = StObject.set(x, "MemberStatus", value.asInstanceOf[js.Any])
+    inline def setMemberStatus(value: NonEmptyString): Self = StObject.set(x, "MemberStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberStatusUndefined: Self = StObject.set(x, "MemberStatus", js.undefined)
+    inline def setMemberStatusUndefined: Self = StObject.set(x, "MemberStatus", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

@@ -32,8 +32,7 @@ trait SystemModule extends StObject {
 }
 object SystemModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[String],
     env: StringDictionary[String],
     os: Architecture,
@@ -50,43 +49,30 @@ object SystemModule {
     __obj.asInstanceOf[SystemModule]
   }
   
-  @scala.inline
-  implicit class SystemModuleMutableBuilder[Self <: SystemModule] (val x: Self) extends AnyVal {
+  extension [Self <: SystemModule](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: Architecture): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: Architecture): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandarderr(value: Std): Self = StObject.set(x, "standarderr", value.asInstanceOf[js.Any])
+    inline def setStandarderr(value: Std): Self = StObject.set(x, "standarderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardin(value: Std): Self = StObject.set(x, "standardin", value.asInstanceOf[js.Any])
+    inline def setStandardin(value: Std): Self = StObject.set(x, "standardin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardout(value: Std): Self = StObject.set(x, "standardout", value.asInstanceOf[js.Any])
+    inline def setStandardout(value: Std): Self = StObject.set(x, "standardout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderr(value: Std): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: Std): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdin(value: Std): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: Std): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdout(value: Std): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: Std): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
   }
 }

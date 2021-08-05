@@ -33,8 +33,7 @@ object singletonLifecycleMod {
   }
   object SingletonLifecycle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       instance: js.Any,
       resolve: (typings.forgeDi.resolverMod.default, typings.forgeDi.contextMod.default, Arguments) => js.Any
     ): SingletonLifecycle = {
@@ -42,11 +41,9 @@ object singletonLifecycleMod {
       __obj.asInstanceOf[SingletonLifecycle]
     }
     
-    @scala.inline
-    implicit class SingletonLifecycleMutableBuilder[Self <: SingletonLifecycle] (val x: Self) extends AnyVal {
+    extension [Self <: SingletonLifecycle](x: Self) {
       
-      @scala.inline
-      def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
   }
 }

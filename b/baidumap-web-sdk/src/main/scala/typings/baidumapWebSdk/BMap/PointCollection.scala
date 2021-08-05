@@ -23,8 +23,7 @@ trait PointCollection
 }
 object PointCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     onclick: Type => Unit,
     onmouseout: Type => Unit,
@@ -36,25 +35,18 @@ object PointCollection {
     __obj.asInstanceOf[PointCollection]
   }
   
-  @scala.inline
-  implicit class PointCollectionMutableBuilder[Self <: PointCollection] (val x: Self) extends AnyVal {
+  extension [Self <: PointCollection](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnclick(value: Type => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: Type => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnmouseout(value: Type => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
+    inline def setOnmouseout(value: Type => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnmouseover(value: Type => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
+    inline def setOnmouseover(value: Type => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPoints(value: js.Array[Point] => Unit): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
+    inline def setSetPoints(value: js.Array[Point] => Unit): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStyles(value: PointCollectionOption => Unit): Self = StObject.set(x, "setStyles", js.Any.fromFunction1(value))
+    inline def setSetStyles(value: PointCollectionOption => Unit): Self = StObject.set(x, "setStyles", js.Any.fromFunction1(value))
   }
 }

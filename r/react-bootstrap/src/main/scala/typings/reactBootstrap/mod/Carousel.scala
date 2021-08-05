@@ -24,8 +24,7 @@ object Carousel {
   @JSImport("react-bootstrap", "Carousel.Caption")
   @js.native
   def Caption: Instantiable0[typings.reactBootstrap.carouselCaptionMod.^] = js.native
-  @scala.inline
-  def Caption_=(x: Instantiable0[typings.reactBootstrap.carouselCaptionMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Caption")(x.asInstanceOf[js.Any])
+  inline def Caption_=(x: Instantiable0[typings.reactBootstrap.carouselCaptionMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Caption")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Carousel.Item")
@@ -36,6 +35,5 @@ object Carousel {
   @JSImport("react-bootstrap", "Carousel.Item")
   @js.native
   def Item: Instantiable0[typings.reactBootstrap.carouselItemMod.^] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[typings.reactBootstrap.carouselItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.carouselItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

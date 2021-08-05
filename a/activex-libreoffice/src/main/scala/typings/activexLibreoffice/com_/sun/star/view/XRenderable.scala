@@ -43,8 +43,7 @@ trait XRenderable
 }
 object XRenderable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getRenderer: (Double, js.Any, SeqEquiv[PropertyValue]) => SafeArray[PropertyValue],
     getRendererCount: (js.Any, SeqEquiv[PropertyValue]) => Double,
@@ -56,16 +55,12 @@ object XRenderable {
     __obj.asInstanceOf[XRenderable]
   }
   
-  @scala.inline
-  implicit class XRenderableMutableBuilder[Self <: XRenderable] (val x: Self) extends AnyVal {
+  extension [Self <: XRenderable](x: Self) {
     
-    @scala.inline
-    def setGetRenderer(value: (Double, js.Any, SeqEquiv[PropertyValue]) => SafeArray[PropertyValue]): Self = StObject.set(x, "getRenderer", js.Any.fromFunction3(value))
+    inline def setGetRenderer(value: (Double, js.Any, SeqEquiv[PropertyValue]) => SafeArray[PropertyValue]): Self = StObject.set(x, "getRenderer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetRendererCount(value: (js.Any, SeqEquiv[PropertyValue]) => Double): Self = StObject.set(x, "getRendererCount", js.Any.fromFunction2(value))
+    inline def setGetRendererCount(value: (js.Any, SeqEquiv[PropertyValue]) => Double): Self = StObject.set(x, "getRendererCount", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRender(value: (Double, js.Any, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    inline def setRender(value: (Double, js.Any, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
   }
 }

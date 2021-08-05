@@ -8,15 +8,14 @@ trait DataAdaptersCollection extends StObject {
   
   val Count: Double
   
-  @JSName("InfoPath.DataAdaptersCollection_typekey")
+  /* private */ @JSName("InfoPath.DataAdaptersCollection_typekey")
   var InfoPathDotDataAdaptersCollection_typekey: DataAdaptersCollection
   
   def Item(varIndex: js.Any): js.Any
 }
 object DataAdaptersCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     InfoPathDotDataAdaptersCollection_typekey: DataAdaptersCollection,
     Item: js.Any => js.Any
@@ -26,16 +25,12 @@ object DataAdaptersCollection {
     __obj.asInstanceOf[DataAdaptersCollection]
   }
   
-  @scala.inline
-  implicit class DataAdaptersCollectionMutableBuilder[Self <: DataAdaptersCollection] (val x: Self) extends AnyVal {
+  extension [Self <: DataAdaptersCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotDataAdaptersCollection_typekey(value: DataAdaptersCollection): Self = StObject.set(x, "InfoPath.DataAdaptersCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotDataAdaptersCollection_typekey(value: DataAdaptersCollection): Self = StObject.set(x, "InfoPath.DataAdaptersCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

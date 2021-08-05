@@ -12,7 +12,7 @@ object objectContainingMatcherMod {
   class ObjectContainingMatcher protected () extends Matcher {
     def this(expectedValue: js.Any) = this()
     
-    var expectedValue: js.Any = js.native
+    /* private */ var expectedValue: js.Any = js.native
     
     def `match`(value: js.Object): Boolean = js.native
   }

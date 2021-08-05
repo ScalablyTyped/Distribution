@@ -18,25 +18,19 @@ trait UploadMetadata extends StObject {
 }
 object UploadMetadata {
   
-  @scala.inline
-  def apply(): UploadMetadata = {
+  inline def apply(): UploadMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadMetadata]
   }
   
-  @scala.inline
-  implicit class UploadMetadataMutableBuilder[Self <: UploadMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UploadMetadata](x: Self) {
     
-    @scala.inline
-    def setSignedHeaders(value: SignedHeaderMap): Self = StObject.set(x, "SignedHeaders", value.asInstanceOf[js.Any])
+    inline def setSignedHeaders(value: SignedHeaderMap): Self = StObject.set(x, "SignedHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedHeadersUndefined: Self = StObject.set(x, "SignedHeaders", js.undefined)
+    inline def setSignedHeadersUndefined: Self = StObject.set(x, "SignedHeaders", js.undefined)
     
-    @scala.inline
-    def setUploadUrl(value: UrlType): Self = StObject.set(x, "UploadUrl", value.asInstanceOf[js.Any])
+    inline def setUploadUrl(value: UrlType): Self = StObject.set(x, "UploadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUrlUndefined: Self = StObject.set(x, "UploadUrl", js.undefined)
+    inline def setUploadUrlUndefined: Self = StObject.set(x, "UploadUrl", js.undefined)
   }
 }

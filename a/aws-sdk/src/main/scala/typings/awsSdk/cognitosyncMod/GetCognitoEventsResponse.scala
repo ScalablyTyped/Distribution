@@ -13,19 +13,15 @@ trait GetCognitoEventsResponse extends StObject {
 }
 object GetCognitoEventsResponse {
   
-  @scala.inline
-  def apply(): GetCognitoEventsResponse = {
+  inline def apply(): GetCognitoEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCognitoEventsResponse]
   }
   
-  @scala.inline
-  implicit class GetCognitoEventsResponseMutableBuilder[Self <: GetCognitoEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCognitoEventsResponse](x: Self) {
     
-    @scala.inline
-    def setEvents(value: Events): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Events): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
   }
 }

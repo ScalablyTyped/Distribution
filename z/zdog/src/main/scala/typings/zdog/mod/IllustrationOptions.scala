@@ -52,52 +52,37 @@ trait IllustrationOptions
 }
 object IllustrationOptions {
   
-  @scala.inline
-  def apply(element: String | HTMLCanvasElement | SVGSVGElement): IllustrationOptions = {
+  inline def apply(element: String | HTMLCanvasElement | SVGSVGElement): IllustrationOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[IllustrationOptions]
   }
   
-  @scala.inline
-  implicit class IllustrationOptionsMutableBuilder[Self <: IllustrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IllustrationOptions](x: Self) {
     
-    @scala.inline
-    def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+    inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+    inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
-    @scala.inline
-    def setDragRotate(value: Boolean | Anchor): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
+    inline def setDragRotate(value: Boolean | Anchor): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
+    inline def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
     
-    @scala.inline
-    def setElement(value: String | HTMLCanvasElement | SVGSVGElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String | HTMLCanvasElement | SVGSVGElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPrerender(value: PrerenderListener): Self = StObject.set(x, "onPrerender", value.asInstanceOf[js.Any])
+    inline def setOnPrerender(value: PrerenderListener): Self = StObject.set(x, "onPrerender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPrerenderUndefined: Self = StObject.set(x, "onPrerender", js.undefined)
+    inline def setOnPrerenderUndefined: Self = StObject.set(x, "onPrerender", js.undefined)
     
-    @scala.inline
-    def setOnResize(value: ResizeListener): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+    inline def setOnResize(value: ResizeListener): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
-    @scala.inline
-    def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

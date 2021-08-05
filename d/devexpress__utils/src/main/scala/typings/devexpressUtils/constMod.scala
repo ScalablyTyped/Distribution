@@ -41,7 +41,6 @@ object constMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isCollapsed(intervals: js.Array[ConstInterval]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollapsed")(intervals.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isCollapsed(intervals: js.Array[ConstInterval]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollapsed")(intervals.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Duration")
 @js.native
-class Duration protected () extends TemporalAmount {
+/* private */ class Duration () extends TemporalAmount {
   
   def abs(): Duration = js.native
   
@@ -96,46 +96,35 @@ object Duration {
   @JSImport("js-joda", "Duration.ZERO")
   @js.native
   def ZERO: Duration = js.native
-  @scala.inline
-  def ZERO_=(x: Duration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  inline def ZERO_=(x: Duration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def between(startInclusive: Temporal, endExclusive: Temporal): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startInclusive.asInstanceOf[js.Any], endExclusive.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  inline def between(startInclusive: Temporal, endExclusive: Temporal): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startInclusive.asInstanceOf[js.Any], endExclusive.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def from(amount: TemporalAmount): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def from(amount: TemporalAmount): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def of(amount: Double, unit: TemporalUnit): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(amount.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  inline def of(amount: Double, unit: TemporalUnit): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(amount.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def ofDays(days: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofDays")(days.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def ofDays(days: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofDays")(days.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def ofHours(hours: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofHours")(hours.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def ofHours(hours: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofHours")(hours.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def ofMillis(millis: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMillis")(millis.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def ofMillis(millis: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMillis")(millis.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def ofMinutes(minutes: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMinutes")(minutes.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def ofMinutes(minutes: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMinutes")(minutes.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def ofNanos(nanos: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNanos")(nanos.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def ofNanos(nanos: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNanos")(nanos.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def ofSeconds(seconds: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def ofSeconds(seconds: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("ofSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def parse(text: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def parse(text: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Duration]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ReflectionFormat")
 @js.native
-class ReflectionFormat protected ()
+/* private */ class ReflectionFormat ()
   extends StObject
      with typings.activexOffice.Office.ReflectionFormat {
   
@@ -20,7 +20,7 @@ class ReflectionFormat protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ReflectionFormat_typekey")
   var OfficeDotReflectionFormat_typekey: typings.activexOffice.Office.ReflectionFormat = js.native
   

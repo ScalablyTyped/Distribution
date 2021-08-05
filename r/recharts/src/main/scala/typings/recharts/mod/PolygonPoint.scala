@@ -12,19 +12,15 @@ trait PolygonPoint extends StObject {
 }
 object PolygonPoint {
   
-  @scala.inline
-  def apply(x: Double, y: Double): PolygonPoint = {
+  inline def apply(x: Double, y: Double): PolygonPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonPoint]
   }
   
-  @scala.inline
-  implicit class PolygonPointMutableBuilder[Self <: PolygonPoint] (val x: Self) extends AnyVal {
+  extension [Self <: PolygonPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

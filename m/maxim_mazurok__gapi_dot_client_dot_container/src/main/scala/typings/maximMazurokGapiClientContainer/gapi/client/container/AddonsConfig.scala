@@ -35,55 +35,39 @@ trait AddonsConfig extends StObject {
 }
 object AddonsConfig {
   
-  @scala.inline
-  def apply(): AddonsConfig = {
+  inline def apply(): AddonsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddonsConfig]
   }
   
-  @scala.inline
-  implicit class AddonsConfigMutableBuilder[Self <: AddonsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AddonsConfig](x: Self) {
     
-    @scala.inline
-    def setCloudRunConfig(value: CloudRunConfig): Self = StObject.set(x, "cloudRunConfig", value.asInstanceOf[js.Any])
+    inline def setCloudRunConfig(value: CloudRunConfig): Self = StObject.set(x, "cloudRunConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudRunConfigUndefined: Self = StObject.set(x, "cloudRunConfig", js.undefined)
+    inline def setCloudRunConfigUndefined: Self = StObject.set(x, "cloudRunConfig", js.undefined)
     
-    @scala.inline
-    def setConfigConnectorConfig(value: ConfigConnectorConfig): Self = StObject.set(x, "configConnectorConfig", value.asInstanceOf[js.Any])
+    inline def setConfigConnectorConfig(value: ConfigConnectorConfig): Self = StObject.set(x, "configConnectorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigConnectorConfigUndefined: Self = StObject.set(x, "configConnectorConfig", js.undefined)
+    inline def setConfigConnectorConfigUndefined: Self = StObject.set(x, "configConnectorConfig", js.undefined)
     
-    @scala.inline
-    def setDnsCacheConfig(value: DnsCacheConfig): Self = StObject.set(x, "dnsCacheConfig", value.asInstanceOf[js.Any])
+    inline def setDnsCacheConfig(value: DnsCacheConfig): Self = StObject.set(x, "dnsCacheConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsCacheConfigUndefined: Self = StObject.set(x, "dnsCacheConfig", js.undefined)
+    inline def setDnsCacheConfigUndefined: Self = StObject.set(x, "dnsCacheConfig", js.undefined)
     
-    @scala.inline
-    def setHorizontalPodAutoscaling(value: HorizontalPodAutoscaling): Self = StObject.set(x, "horizontalPodAutoscaling", value.asInstanceOf[js.Any])
+    inline def setHorizontalPodAutoscaling(value: HorizontalPodAutoscaling): Self = StObject.set(x, "horizontalPodAutoscaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalPodAutoscalingUndefined: Self = StObject.set(x, "horizontalPodAutoscaling", js.undefined)
+    inline def setHorizontalPodAutoscalingUndefined: Self = StObject.set(x, "horizontalPodAutoscaling", js.undefined)
     
-    @scala.inline
-    def setHttpLoadBalancing(value: HttpLoadBalancing): Self = StObject.set(x, "httpLoadBalancing", value.asInstanceOf[js.Any])
+    inline def setHttpLoadBalancing(value: HttpLoadBalancing): Self = StObject.set(x, "httpLoadBalancing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpLoadBalancingUndefined: Self = StObject.set(x, "httpLoadBalancing", js.undefined)
+    inline def setHttpLoadBalancingUndefined: Self = StObject.set(x, "httpLoadBalancing", js.undefined)
     
-    @scala.inline
-    def setKubernetesDashboard(value: KubernetesDashboard): Self = StObject.set(x, "kubernetesDashboard", value.asInstanceOf[js.Any])
+    inline def setKubernetesDashboard(value: KubernetesDashboard): Self = StObject.set(x, "kubernetesDashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKubernetesDashboardUndefined: Self = StObject.set(x, "kubernetesDashboard", js.undefined)
+    inline def setKubernetesDashboardUndefined: Self = StObject.set(x, "kubernetesDashboard", js.undefined)
     
-    @scala.inline
-    def setNetworkPolicyConfig(value: NetworkPolicyConfig): Self = StObject.set(x, "networkPolicyConfig", value.asInstanceOf[js.Any])
+    inline def setNetworkPolicyConfig(value: NetworkPolicyConfig): Self = StObject.set(x, "networkPolicyConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPolicyConfigUndefined: Self = StObject.set(x, "networkPolicyConfig", js.undefined)
+    inline def setNetworkPolicyConfigUndefined: Self = StObject.set(x, "networkPolicyConfig", js.undefined)
   }
 }

@@ -45,55 +45,39 @@ trait DescribeVpcPeeringConnect extends StObject {
 }
 object DescribeVpcPeeringConnect {
   
-  @scala.inline
-  def apply(): DescribeVpcPeeringConnect = {
+  inline def apply(): DescribeVpcPeeringConnect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcPeeringConnect]
   }
   
-  @scala.inline
-  implicit class DescribeVpcPeeringConnectMutableBuilder[Self <: DescribeVpcPeeringConnect] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcPeeringConnect](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeVpcPeeringConnectionsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeVpcPeeringConnectionsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionIds(value: VpcPeeringConnectionIdList): Self = StObject.set(x, "VpcPeeringConnectionIds", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectionIds(value: VpcPeeringConnectionIdList): Self = StObject.set(x, "VpcPeeringConnectionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectionIdsUndefined: Self = StObject.set(x, "VpcPeeringConnectionIds", js.undefined)
+    inline def setVpcPeeringConnectionIdsUndefined: Self = StObject.set(x, "VpcPeeringConnectionIds", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionIdsVarargs(value: VpcPeeringConnectionId*): Self = StObject.set(x, "VpcPeeringConnectionIds", js.Array(value :_*))
+    inline def setVpcPeeringConnectionIdsVarargs(value: VpcPeeringConnectionId*): Self = StObject.set(x, "VpcPeeringConnectionIds", js.Array(value :_*))
   }
 }

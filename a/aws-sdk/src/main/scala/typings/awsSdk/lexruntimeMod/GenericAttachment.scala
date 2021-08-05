@@ -33,46 +33,33 @@ trait GenericAttachment extends StObject {
 }
 object GenericAttachment {
   
-  @scala.inline
-  def apply(): GenericAttachment = {
+  inline def apply(): GenericAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenericAttachment]
   }
   
-  @scala.inline
-  implicit class GenericAttachmentMutableBuilder[Self <: GenericAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: GenericAttachment](x: Self) {
     
-    @scala.inline
-    def setAttachmentLinkUrl(value: StringUrlWithLength): Self = StObject.set(x, "attachmentLinkUrl", value.asInstanceOf[js.Any])
+    inline def setAttachmentLinkUrl(value: StringUrlWithLength): Self = StObject.set(x, "attachmentLinkUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentLinkUrlUndefined: Self = StObject.set(x, "attachmentLinkUrl", js.undefined)
+    inline def setAttachmentLinkUrlUndefined: Self = StObject.set(x, "attachmentLinkUrl", js.undefined)
     
-    @scala.inline
-    def setButtons(value: listOfButtons): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: listOfButtons): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setImageUrl(value: StringUrlWithLength): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: StringUrlWithLength): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setSubTitle(value: StringWithLength): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+    inline def setSubTitle(value: StringWithLength): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
+    inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: StringWithLength): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: StringWithLength): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

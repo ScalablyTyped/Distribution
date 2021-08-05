@@ -43,29 +43,22 @@ object mod {
   }
   object Attrs {
     
-    @scala.inline
-    def apply(local: String, name: String, prefix: String, uri: String, value: js.Any): Attrs = {
+    inline def apply(local: String, name: String, prefix: String, uri: String, value: js.Any): Attrs = {
       val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attrs]
     }
     
-    @scala.inline
-    implicit class AttrsMutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
+    extension [Self <: Attrs](x: Self) {
       
-      @scala.inline
-      def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,8 +70,7 @@ object mod {
   }
   object Document {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       categories: js.Array[String],
       copyright: String,
@@ -101,14 +93,11 @@ object mod {
       __obj.asInstanceOf[Document]
     }
     
-    @scala.inline
-    implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+    extension [Self <: Document](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
@@ -148,20 +137,16 @@ object mod {
   }
   object Guid {
     
-    @scala.inline
-    def apply(ispermalink: String, text: String): Guid = {
+    inline def apply(ispermalink: String, text: String): Guid = {
       val __obj = js.Dynamic.literal(ispermalink = ispermalink.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Guid]
     }
     
-    @scala.inline
-    implicit class GuidMutableBuilder[Self <: Guid] (val x: Self) extends AnyVal {
+    extension [Self <: Guid](x: Self) {
       
-      @scala.inline
-      def setIspermalink(value: String): Self = StObject.set(x, "ispermalink", value.asInstanceOf[js.Any])
+      inline def setIspermalink(value: String): Self = StObject.set(x, "ispermalink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,29 +164,22 @@ object mod {
   }
   object Image {
     
-    @scala.inline
-    def apply(height: String, link: String, title: String, url: String, width: String): Image = {
+    inline def apply(height: String, link: String, title: String, url: String, width: String): Image = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Image]
     }
     
-    @scala.inline
-    implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+    extension [Self <: Image](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +215,7 @@ object mod {
   }
   object Item {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       categories: js.Array[String],
       comments: String,
@@ -257,53 +234,37 @@ object mod {
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
       
-      @scala.inline
-      def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnclosures(value: js.Array[String]): Self = StObject.set(x, "enclosures", value.asInstanceOf[js.Any])
+      inline def setEnclosures(value: js.Array[String]): Self = StObject.set(x, "enclosures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnclosuresVarargs(value: String*): Self = StObject.set(x, "enclosures", js.Array(value :_*))
+      inline def setEnclosuresVarargs(value: String*): Self = StObject.set(x, "enclosures", js.Array(value :_*))
       
-      @scala.inline
-      def setGuid(value: String | Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+      inline def setGuid(value: String | Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriglink(value: String): Self = StObject.set(x, "origlink", value.asInstanceOf[js.Any])
+      inline def setOriglink(value: String): Self = StObject.set(x, "origlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubdate(value: String): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
+      inline def setPubdate(value: String): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,8 +306,7 @@ object mod {
   }
   object Meta {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       categories: js.Array[String],
       copyright: String,
@@ -368,56 +328,39 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    @scala.inline
-    implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+    extension [Self <: Meta](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
       
-      @scala.inline
-      def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
+      inline def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerator(value: String): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+      inline def setGenerator(value: String): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastbuilddate(value: String): Self = StObject.set(x, "lastbuilddate", value.asInstanceOf[js.Any])
+      inline def setLastbuilddate(value: String): Self = StObject.set(x, "lastbuilddate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubdate(value: String): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
+      inline def setPubdate(value: String): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlurl(value: String): Self = StObject.set(x, "xmlurl", value.asInstanceOf[js.Any])
+      inline def setXmlurl(value: String): Self = StObject.set(x, "xmlurl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -437,31 +380,22 @@ object mod {
   trait Type extends StObject
   object Type {
     
-    @scala.inline
-    def atom: typings.feedme.feedmeStrings.atom = "atom".asInstanceOf[typings.feedme.feedmeStrings.atom]
+    inline def atom: typings.feedme.feedmeStrings.atom = "atom".asInstanceOf[typings.feedme.feedmeStrings.atom]
     
-    @scala.inline
-    def json: typings.feedme.feedmeStrings.json = "json".asInstanceOf[typings.feedme.feedmeStrings.json]
+    inline def json: typings.feedme.feedmeStrings.json = "json".asInstanceOf[typings.feedme.feedmeStrings.json]
     
-    @scala.inline
-    def `rss 0Dot90`: typings.feedme.feedmeStrings.`rss 0Dot90` = ("rss 0.90").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot90`]
+    inline def `rss 0Dot90`: typings.feedme.feedmeStrings.`rss 0Dot90` = ("rss 0.90").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot90`]
     
-    @scala.inline
-    def `rss 0Dot91`: typings.feedme.feedmeStrings.`rss 0Dot91` = ("rss 0.91").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot91`]
+    inline def `rss 0Dot91`: typings.feedme.feedmeStrings.`rss 0Dot91` = ("rss 0.91").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot91`]
     
-    @scala.inline
-    def `rss 0Dot92`: typings.feedme.feedmeStrings.`rss 0Dot92` = ("rss 0.92").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot92`]
+    inline def `rss 0Dot92`: typings.feedme.feedmeStrings.`rss 0Dot92` = ("rss 0.92").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot92`]
     
-    @scala.inline
-    def `rss 0Dot93`: typings.feedme.feedmeStrings.`rss 0Dot93` = ("rss 0.93").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot93`]
+    inline def `rss 0Dot93`: typings.feedme.feedmeStrings.`rss 0Dot93` = ("rss 0.93").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot93`]
     
-    @scala.inline
-    def `rss 0Dot94`: typings.feedme.feedmeStrings.`rss 0Dot94` = ("rss 0.94").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot94`]
+    inline def `rss 0Dot94`: typings.feedme.feedmeStrings.`rss 0Dot94` = ("rss 0.94").asInstanceOf[typings.feedme.feedmeStrings.`rss 0Dot94`]
     
-    @scala.inline
-    def `rss 1Dot0`: typings.feedme.feedmeStrings.`rss 1Dot0` = ("rss 1.0").asInstanceOf[typings.feedme.feedmeStrings.`rss 1Dot0`]
+    inline def `rss 1Dot0`: typings.feedme.feedmeStrings.`rss 1Dot0` = ("rss 1.0").asInstanceOf[typings.feedme.feedmeStrings.`rss 1Dot0`]
     
-    @scala.inline
-    def `rss 2Dot0`: typings.feedme.feedmeStrings.`rss 2Dot0` = ("rss 2.0").asInstanceOf[typings.feedme.feedmeStrings.`rss 2Dot0`]
+    inline def `rss 2Dot0`: typings.feedme.feedmeStrings.`rss 2Dot0` = ("rss 2.0").asInstanceOf[typings.feedme.feedmeStrings.`rss 2Dot0`]
   }
 }

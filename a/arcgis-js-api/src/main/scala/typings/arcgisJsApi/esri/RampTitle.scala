@@ -47,8 +47,7 @@ trait RampTitle
 }
 object RampTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -62,22 +61,16 @@ object RampTitle {
     __obj.asInstanceOf[RampTitle]
   }
   
-  @scala.inline
-  implicit class RampTitleMutableBuilder[Self <: RampTitle] (val x: Self) extends AnyVal {
+  extension [Self <: RampTitle](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormField(value: String): Self = StObject.set(x, "normField", value.asInstanceOf[js.Any])
+    inline def setNormField(value: String): Self = StObject.set(x, "normField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatio(value: Boolean): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Boolean): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioPercent(value: Boolean): Self = StObject.set(x, "ratioPercent", value.asInstanceOf[js.Any])
+    inline def setRatioPercent(value: Boolean): Self = StObject.set(x, "ratioPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioPercentTotal(value: Boolean): Self = StObject.set(x, "ratioPercentTotal", value.asInstanceOf[js.Any])
+    inline def setRatioPercentTotal(value: Boolean): Self = StObject.set(x, "ratioPercentTotal", value.asInstanceOf[js.Any])
   }
 }

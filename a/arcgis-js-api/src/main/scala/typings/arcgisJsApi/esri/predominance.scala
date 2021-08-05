@@ -20,16 +20,13 @@ trait predominance extends StObject {
 }
 object predominance {
   
-  @scala.inline
-  def apply(createRenderer: predominanceCreateRendererParams => js.Promise[predominanceRendererResult]): predominance = {
+  inline def apply(createRenderer: predominanceCreateRendererParams => js.Promise[predominanceRendererResult]): predominance = {
     val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer))
     __obj.asInstanceOf[predominance]
   }
   
-  @scala.inline
-  implicit class predominanceMutableBuilder[Self <: predominance] (val x: Self) extends AnyVal {
+  extension [Self <: predominance](x: Self) {
     
-    @scala.inline
-    def setCreateRenderer(value: predominanceCreateRendererParams => js.Promise[predominanceRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: predominanceCreateRendererParams => js.Promise[predominanceRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }
 }

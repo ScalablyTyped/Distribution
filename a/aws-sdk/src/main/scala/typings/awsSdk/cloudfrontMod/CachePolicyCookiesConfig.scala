@@ -15,22 +15,17 @@ trait CachePolicyCookiesConfig extends StObject {
 }
 object CachePolicyCookiesConfig {
   
-  @scala.inline
-  def apply(CookieBehavior: CachePolicyCookieBehavior): CachePolicyCookiesConfig = {
+  inline def apply(CookieBehavior: CachePolicyCookieBehavior): CachePolicyCookiesConfig = {
     val __obj = js.Dynamic.literal(CookieBehavior = CookieBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachePolicyCookiesConfig]
   }
   
-  @scala.inline
-  implicit class CachePolicyCookiesConfigMutableBuilder[Self <: CachePolicyCookiesConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CachePolicyCookiesConfig](x: Self) {
     
-    @scala.inline
-    def setCookieBehavior(value: CachePolicyCookieBehavior): Self = StObject.set(x, "CookieBehavior", value.asInstanceOf[js.Any])
+    inline def setCookieBehavior(value: CachePolicyCookieBehavior): Self = StObject.set(x, "CookieBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookies(value: CookieNames): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: CookieNames): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesUndefined: Self = StObject.set(x, "Cookies", js.undefined)
+    inline def setCookiesUndefined: Self = StObject.set(x, "Cookies", js.undefined)
   }
 }

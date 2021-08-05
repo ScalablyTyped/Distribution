@@ -10,6 +10,5 @@ object forwardSlashMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

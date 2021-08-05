@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def polyfill(component: ComponentClass[js.Any, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def polyfill(component: ComponentClass[js.Any, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

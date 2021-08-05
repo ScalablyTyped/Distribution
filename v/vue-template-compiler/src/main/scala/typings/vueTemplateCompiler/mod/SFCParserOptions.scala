@@ -18,25 +18,19 @@ trait SFCParserOptions extends StObject {
 }
 object SFCParserOptions {
   
-  @scala.inline
-  def apply(): SFCParserOptions = {
+  inline def apply(): SFCParserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SFCParserOptions]
   }
   
-  @scala.inline
-  implicit class SFCParserOptionsMutableBuilder[Self <: SFCParserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SFCParserOptions](x: Self) {
     
-    @scala.inline
-    def setDeindent(value: Boolean): Self = StObject.set(x, "deindent", value.asInstanceOf[js.Any])
+    inline def setDeindent(value: Boolean): Self = StObject.set(x, "deindent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeindentUndefined: Self = StObject.set(x, "deindent", js.undefined)
+    inline def setDeindentUndefined: Self = StObject.set(x, "deindent", js.undefined)
     
-    @scala.inline
-    def setPad(value: `true` | line | space): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: `true` | line | space): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListBudgetsForResourceOutput extends StObject {
 }
 object ListBudgetsForResourceOutput {
   
-  @scala.inline
-  def apply(): ListBudgetsForResourceOutput = {
+  inline def apply(): ListBudgetsForResourceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBudgetsForResourceOutput]
   }
   
-  @scala.inline
-  implicit class ListBudgetsForResourceOutputMutableBuilder[Self <: ListBudgetsForResourceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBudgetsForResourceOutput](x: Self) {
     
-    @scala.inline
-    def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
+    inline def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
+    inline def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
     
-    @scala.inline
-    def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
+    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

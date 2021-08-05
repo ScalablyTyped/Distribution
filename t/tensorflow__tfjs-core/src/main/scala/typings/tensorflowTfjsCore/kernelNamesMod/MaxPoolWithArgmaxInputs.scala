@@ -11,19 +11,15 @@ trait MaxPoolWithArgmaxInputs extends StObject {
 }
 object MaxPoolWithArgmaxInputs {
   
-  @scala.inline
-  def apply(): MaxPoolWithArgmaxInputs = {
+  inline def apply(): MaxPoolWithArgmaxInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxPoolWithArgmaxInputs]
   }
   
-  @scala.inline
-  implicit class MaxPoolWithArgmaxInputsMutableBuilder[Self <: MaxPoolWithArgmaxInputs] (val x: Self) extends AnyVal {
+  extension [Self <: MaxPoolWithArgmaxInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

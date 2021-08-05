@@ -18,19 +18,15 @@ trait CreateVpnConnectionRouteRequest extends StObject {
 }
 object CreateVpnConnectionRouteRequest {
   
-  @scala.inline
-  def apply(DestinationCidrBlock: String, VpnConnectionId: VpnConnectionId): CreateVpnConnectionRouteRequest = {
+  inline def apply(DestinationCidrBlock: String, VpnConnectionId: VpnConnectionId): CreateVpnConnectionRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], VpnConnectionId = VpnConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpnConnectionRouteRequest]
   }
   
-  @scala.inline
-  implicit class CreateVpnConnectionRouteRequestMutableBuilder[Self <: CreateVpnConnectionRouteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVpnConnectionRouteRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
+    inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnConnectionId(value: VpnConnectionId): Self = StObject.set(x, "VpnConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpnConnectionId(value: VpnConnectionId): Self = StObject.set(x, "VpnConnectionId", value.asInstanceOf[js.Any])
   }
 }

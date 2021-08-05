@@ -11,19 +11,15 @@ trait MasterProperties extends StObject {
 }
 object MasterProperties {
   
-  @scala.inline
-  def apply(): MasterProperties = {
+  inline def apply(): MasterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MasterProperties]
   }
   
-  @scala.inline
-  implicit class MasterPropertiesMutableBuilder[Self <: MasterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MasterProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

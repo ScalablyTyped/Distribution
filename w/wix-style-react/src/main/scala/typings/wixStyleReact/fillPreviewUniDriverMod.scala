@@ -15,8 +15,7 @@ object fillPreviewUniDriverMod {
   }
   object FillPreviewUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object fillPreviewUniDriverMod {
       __obj.asInstanceOf[FillPreviewUniDriver]
     }
     
-    @scala.inline
-    implicit class FillPreviewUniDriverMutableBuilder[Self <: FillPreviewUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FillPreviewUniDriver](x: Self) {
       
-      @scala.inline
-      def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
+      inline def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
     }
   }
 }

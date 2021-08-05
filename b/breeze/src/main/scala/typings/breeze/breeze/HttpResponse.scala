@@ -20,40 +20,29 @@ trait HttpResponse extends StObject {
 }
 object HttpResponse {
   
-  @scala.inline
-  def apply(config: js.Any, data: js.Array[Entity], getHeaders: String => String, status: Double): HttpResponse = {
+  inline def apply(config: js.Any, data: js.Array[Entity], getHeaders: String => String, status: Double): HttpResponse = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getHeaders = js.Any.fromFunction1(getHeaders), status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponse]
   }
   
-  @scala.inline
-  implicit class HttpResponseMutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
+  extension [Self <: HttpResponse](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[Entity]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Entity]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Entity*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Entity*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setGetHeaders(value: String => String): Self = StObject.set(x, "getHeaders", js.Any.fromFunction1(value))
+    inline def setGetHeaders(value: String => String): Self = StObject.set(x, "getHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveContext(value: js.Any): Self = StObject.set(x, "saveContext", value.asInstanceOf[js.Any])
+    inline def setSaveContext(value: js.Any): Self = StObject.set(x, "saveContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveContextUndefined: Self = StObject.set(x, "saveContext", js.undefined)
+    inline def setSaveContextUndefined: Self = StObject.set(x, "saveContext", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

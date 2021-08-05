@@ -33,8 +33,7 @@ trait GetLaunchConfigurationRootBlockDevice extends StObject {
 }
 object GetLaunchConfigurationRootBlockDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteOnTermination: Boolean,
     encrypted: Boolean,
     iops: Double,
@@ -45,22 +44,16 @@ object GetLaunchConfigurationRootBlockDevice {
     __obj.asInstanceOf[GetLaunchConfigurationRootBlockDevice]
   }
   
-  @scala.inline
-  implicit class GetLaunchConfigurationRootBlockDeviceMutableBuilder[Self <: GetLaunchConfigurationRootBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchConfigurationRootBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
   }
 }

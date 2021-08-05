@@ -20,8 +20,7 @@ trait ExtensionSchedule extends StObject {
 }
 object ExtensionSchedule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDayOfWeek: () => DayOfWeekString,
     getEndHour: () => Double,
     getEndMinute: () => Double,
@@ -32,22 +31,16 @@ object ExtensionSchedule {
     __obj.asInstanceOf[ExtensionSchedule]
   }
   
-  @scala.inline
-  implicit class ExtensionScheduleMutableBuilder[Self <: ExtensionSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionSchedule](x: Self) {
     
-    @scala.inline
-    def setGetDayOfWeek(value: () => DayOfWeekString): Self = StObject.set(x, "getDayOfWeek", js.Any.fromFunction0(value))
+    inline def setGetDayOfWeek(value: () => DayOfWeekString): Self = StObject.set(x, "getDayOfWeek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEndHour(value: () => Double): Self = StObject.set(x, "getEndHour", js.Any.fromFunction0(value))
+    inline def setGetEndHour(value: () => Double): Self = StObject.set(x, "getEndHour", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEndMinute(value: () => Double): Self = StObject.set(x, "getEndMinute", js.Any.fromFunction0(value))
+    inline def setGetEndMinute(value: () => Double): Self = StObject.set(x, "getEndMinute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStartHour(value: () => Double): Self = StObject.set(x, "getStartHour", js.Any.fromFunction0(value))
+    inline def setGetStartHour(value: () => Double): Self = StObject.set(x, "getStartHour", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStartMinute(value: () => Double): Self = StObject.set(x, "getStartMinute", js.Any.fromFunction0(value))
+    inline def setGetStartMinute(value: () => Double): Self = StObject.set(x, "getStartMinute", js.Any.fromFunction0(value))
   }
 }

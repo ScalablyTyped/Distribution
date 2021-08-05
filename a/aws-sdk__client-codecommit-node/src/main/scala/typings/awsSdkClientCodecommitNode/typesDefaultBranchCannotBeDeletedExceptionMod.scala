@@ -16,17 +16,14 @@ object typesDefaultBranchCannotBeDeletedExceptionMod {
   }
   object DefaultBranchCannotBeDeletedException {
     
-    @scala.inline
-    def apply(): DefaultBranchCannotBeDeletedException = {
+    inline def apply(): DefaultBranchCannotBeDeletedException = {
       val __obj = js.Dynamic.literal(name = "DefaultBranchCannotBeDeletedException")
       __obj.asInstanceOf[DefaultBranchCannotBeDeletedException]
     }
     
-    @scala.inline
-    implicit class DefaultBranchCannotBeDeletedExceptionMutableBuilder[Self <: DefaultBranchCannotBeDeletedException] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultBranchCannotBeDeletedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.DefaultBranchCannotBeDeletedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

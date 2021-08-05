@@ -18,13 +18,12 @@ trait HangulAndAlphabetExceptions extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.HangulAndAlphabetExceptions_typekey")
+  /* private */ @JSName("Word.HangulAndAlphabetExceptions_typekey")
   var WordDotHangulAndAlphabetExceptions_typekey: HangulAndAlphabetExceptions
 }
 object HangulAndAlphabetExceptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: String => HangulAndAlphabetException,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object HangulAndAlphabetExceptions {
     __obj.asInstanceOf[HangulAndAlphabetExceptions]
   }
   
-  @scala.inline
-  implicit class HangulAndAlphabetExceptionsMutableBuilder[Self <: HangulAndAlphabetExceptions] (val x: Self) extends AnyVal {
+  extension [Self <: HangulAndAlphabetExceptions](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => HangulAndAlphabetException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => HangulAndAlphabetException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => HangulAndAlphabetException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => HangulAndAlphabetException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotHangulAndAlphabetExceptions_typekey(value: HangulAndAlphabetExceptions): Self = StObject.set(x, "Word.HangulAndAlphabetExceptions_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotHangulAndAlphabetExceptions_typekey(value: HangulAndAlphabetExceptions): Self = StObject.set(x, "Word.HangulAndAlphabetExceptions_typekey", value.asInstanceOf[js.Any])
   }
 }

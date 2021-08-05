@@ -10,6 +10,5 @@ object element$Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(selector: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def default(selector: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

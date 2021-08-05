@@ -10,8 +10,7 @@ trait DeleteObjectsOutput
      with typings.awsSdkClientS3Browser.typesDeleteObjectsOutputMod.DeleteObjectsOutput
 object DeleteObjectsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DeleteObjectsOutput = {
+  inline def apply($metadata: ResponseMetadata): DeleteObjectsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectsOutput]
   }

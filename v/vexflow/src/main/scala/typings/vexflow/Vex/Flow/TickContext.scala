@@ -59,8 +59,7 @@ trait TickContext extends StObject {
 }
 object TickContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTickable: Tickable => TickContext,
     getCenterAlignedTickables: () => js.Array[Tickable],
     getContext: () => IRenderContext,
@@ -90,79 +89,54 @@ object TickContext {
     __obj.asInstanceOf[TickContext]
   }
   
-  @scala.inline
-  implicit class TickContextMutableBuilder[Self <: TickContext] (val x: Self) extends AnyVal {
+  extension [Self <: TickContext](x: Self) {
     
-    @scala.inline
-    def setAddTickable(value: Tickable => TickContext): Self = StObject.set(x, "addTickable", js.Any.fromFunction1(value))
+    inline def setAddTickable(value: Tickable => TickContext): Self = StObject.set(x, "addTickable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCenterAlignedTickables(value: () => js.Array[Tickable]): Self = StObject.set(x, "getCenterAlignedTickables", js.Any.fromFunction0(value))
+    inline def setGetCenterAlignedTickables(value: () => js.Array[Tickable]): Self = StObject.set(x, "getCenterAlignedTickables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+    inline def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentTick(value: () => Fraction): Self = StObject.set(x, "getCurrentTick", js.Any.fromFunction0(value))
+    inline def setGetCurrentTick(value: () => Fraction): Self = StObject.set(x, "getCurrentTick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtraPx(value: () => ExtraLeft): Self = StObject.set(x, "getExtraPx", js.Any.fromFunction0(value))
+    inline def setGetExtraPx(value: () => ExtraLeft): Self = StObject.set(x, "getExtraPx", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxTicks(value: () => Double): Self = StObject.set(x, "getMaxTicks", js.Any.fromFunction0(value))
+    inline def setGetMaxTicks(value: () => Double): Self = StObject.set(x, "getMaxTicks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMetrics(value: () => ExtraRightPx): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
+    inline def setGetMetrics(value: () => ExtraRightPx): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinTicks(value: () => Double): Self = StObject.set(x, "getMinTicks", js.Any.fromFunction0(value))
+    inline def setGetMinTicks(value: () => Double): Self = StObject.set(x, "getMinTicks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPixelsUsed(value: () => Double): Self = StObject.set(x, "getPixelsUsed", js.Any.fromFunction0(value))
+    inline def setGetPixelsUsed(value: () => Double): Self = StObject.set(x, "getPixelsUsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTickables(value: () => js.Array[Tickable]): Self = StObject.set(x, "getTickables", js.Any.fromFunction0(value))
+    inline def setGetTickables(value: () => js.Array[Tickable]): Self = StObject.set(x, "getTickables", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+    inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetXBase(value: () => Double): Self = StObject.set(x, "getXBase", js.Any.fromFunction0(value))
+    inline def setGetXBase(value: () => Double): Self = StObject.set(x, "getXBase", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetXOffset(value: () => Double): Self = StObject.set(x, "getXOffset", js.Any.fromFunction0(value))
+    inline def setGetXOffset(value: () => Double): Self = StObject.set(x, "getXOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostFormat(value: () => TickContext): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
+    inline def setPostFormat(value: () => TickContext): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreFormat(value: () => TickContext): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
+    inline def setPreFormat(value: () => TickContext): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCurrentTick(value: Fraction => Unit): Self = StObject.set(x, "setCurrentTick", js.Any.fromFunction1(value))
+    inline def setSetCurrentTick(value: Fraction => Unit): Self = StObject.set(x, "setCurrentTick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPadding(value: Double => TickContext): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
+    inline def setSetPadding(value: Double => TickContext): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPixelsUsed(value: Double => TickContext): Self = StObject.set(x, "setPixelsUsed", js.Any.fromFunction1(value))
+    inline def setSetPixelsUsed(value: Double => TickContext): Self = StObject.set(x, "setPixelsUsed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetX(value: Double => TickContext): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
+    inline def setSetX(value: Double => TickContext): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXBase(value: Double => Unit): Self = StObject.set(x, "setXBase", js.Any.fromFunction1(value))
+    inline def setSetXBase(value: Double => Unit): Self = StObject.set(x, "setXBase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXOffset(value: Double => Unit): Self = StObject.set(x, "setXOffset", js.Any.fromFunction1(value))
+    inline def setSetXOffset(value: Double => Unit): Self = StObject.set(x, "setXOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldIgnoreTicks(value: () => Boolean): Self = StObject.set(x, "shouldIgnoreTicks", js.Any.fromFunction0(value))
+    inline def setShouldIgnoreTicks(value: () => Boolean): Self = StObject.set(x, "shouldIgnoreTicks", js.Any.fromFunction0(value))
   }
 }

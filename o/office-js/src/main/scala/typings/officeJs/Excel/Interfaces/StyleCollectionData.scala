@@ -11,22 +11,17 @@ trait StyleCollectionData extends StObject {
 }
 object StyleCollectionData {
   
-  @scala.inline
-  def apply(): StyleCollectionData = {
+  inline def apply(): StyleCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleCollectionData]
   }
   
-  @scala.inline
-  implicit class StyleCollectionDataMutableBuilder[Self <: StyleCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: StyleCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[StyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[StyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: StyleData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: StyleData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

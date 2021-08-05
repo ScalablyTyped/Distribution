@@ -17,20 +17,16 @@ object typesDeleteMarkerReplicationMod {
   }
   object DeleteMarkerReplication {
     
-    @scala.inline
-    def apply(): DeleteMarkerReplication = {
+    inline def apply(): DeleteMarkerReplication = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteMarkerReplication]
     }
     
-    @scala.inline
-    implicit class DeleteMarkerReplicationMutableBuilder[Self <: DeleteMarkerReplication] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteMarkerReplication](x: Self) {
       
-      @scala.inline
-      def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     }
   }
   

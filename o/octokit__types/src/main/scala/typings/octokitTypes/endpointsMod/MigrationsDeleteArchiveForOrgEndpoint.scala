@@ -17,20 +17,16 @@ trait MigrationsDeleteArchiveForOrgEndpoint
 }
 object MigrationsDeleteArchiveForOrgEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[wyandotte], migration_id: Double, org_ : String): MigrationsDeleteArchiveForOrgEndpoint = {
+  inline def apply(mediaType: `0`[wyandotte], migration_id: Double, org_ : String): MigrationsDeleteArchiveForOrgEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], migration_id = migration_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsDeleteArchiveForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsDeleteArchiveForOrgEndpointMutableBuilder[Self <: MigrationsDeleteArchiveForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsDeleteArchiveForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
+    inline def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait SchemaBatchAnnotateImagesRequest extends StObject {
 }
 object SchemaBatchAnnotateImagesRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchAnnotateImagesRequest = {
+  inline def apply(): SchemaBatchAnnotateImagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchAnnotateImagesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchAnnotateImagesRequestMutableBuilder[Self <: SchemaBatchAnnotateImagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchAnnotateImagesRequest](x: Self) {
     
-    @scala.inline
-    def setRequests(value: js.Array[SchemaAnnotateImageRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[SchemaAnnotateImageRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: SchemaAnnotateImageRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: SchemaAnnotateImageRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

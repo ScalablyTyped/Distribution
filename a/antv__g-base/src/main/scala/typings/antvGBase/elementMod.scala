@@ -137,7 +137,7 @@ object elementMod {
     @JSName("clone")
     def clone_Any(): js.Any = js.native
     
-    var emitDelegateEvent: js.Any = js.native
+    /* private */ var emitDelegateEvent: js.Any = js.native
     
     /**
       * 触发委托事件

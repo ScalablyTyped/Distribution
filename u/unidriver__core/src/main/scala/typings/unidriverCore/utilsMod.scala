@@ -10,40 +10,23 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def delay(ms: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def delay(ms: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def eventually(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def eventually(callback: js.Function0[Unit], timeout: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Double, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Unit, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Double, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Unit, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Double, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Double, retryDelay: Unit, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Double, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Unit, lastError: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double, retryDelay: Double, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double, retryDelay: Unit, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Double, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Unit, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double, retryDelay: Double, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Double, retryDelay: Unit, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Double, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitFor(fn: js.Function0[js.Promise[Boolean]], timeout: Unit, retryDelay: Unit, customError: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(fn.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], customError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

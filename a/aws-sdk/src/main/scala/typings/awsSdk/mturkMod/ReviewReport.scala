@@ -18,31 +18,23 @@ trait ReviewReport extends StObject {
 }
 object ReviewReport {
   
-  @scala.inline
-  def apply(): ReviewReport = {
+  inline def apply(): ReviewReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewReport]
   }
   
-  @scala.inline
-  implicit class ReviewReportMutableBuilder[Self <: ReviewReport] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewReport](x: Self) {
     
-    @scala.inline
-    def setReviewActions(value: ReviewActionDetailList): Self = StObject.set(x, "ReviewActions", value.asInstanceOf[js.Any])
+    inline def setReviewActions(value: ReviewActionDetailList): Self = StObject.set(x, "ReviewActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewActionsUndefined: Self = StObject.set(x, "ReviewActions", js.undefined)
+    inline def setReviewActionsUndefined: Self = StObject.set(x, "ReviewActions", js.undefined)
     
-    @scala.inline
-    def setReviewActionsVarargs(value: ReviewActionDetail*): Self = StObject.set(x, "ReviewActions", js.Array(value :_*))
+    inline def setReviewActionsVarargs(value: ReviewActionDetail*): Self = StObject.set(x, "ReviewActions", js.Array(value :_*))
     
-    @scala.inline
-    def setReviewResults(value: ReviewResultDetailList): Self = StObject.set(x, "ReviewResults", value.asInstanceOf[js.Any])
+    inline def setReviewResults(value: ReviewResultDetailList): Self = StObject.set(x, "ReviewResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewResultsUndefined: Self = StObject.set(x, "ReviewResults", js.undefined)
+    inline def setReviewResultsUndefined: Self = StObject.set(x, "ReviewResults", js.undefined)
     
-    @scala.inline
-    def setReviewResultsVarargs(value: ReviewResultDetail*): Self = StObject.set(x, "ReviewResults", js.Array(value :_*))
+    inline def setReviewResultsVarargs(value: ReviewResultDetail*): Self = StObject.set(x, "ReviewResults", js.Array(value :_*))
   }
 }

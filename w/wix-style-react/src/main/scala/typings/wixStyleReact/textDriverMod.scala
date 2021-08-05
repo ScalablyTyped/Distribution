@@ -30,8 +30,7 @@ object textDriverMod {
   }
   object TextDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getSize: () => TextSize,
       getSkin: () => TextSkin,
@@ -45,29 +44,21 @@ object textDriverMod {
       __obj.asInstanceOf[TextDriver]
     }
     
-    @scala.inline
-    implicit class TextDriverMutableBuilder[Self <: TextDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TextDriver](x: Self) {
       
-      @scala.inline
-      def setGetSize(value: () => TextSize): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => TextSize): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => TextSkin): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => TextSkin): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTagName(value: () => String): Self = StObject.set(x, "getTagName", js.Any.fromFunction0(value))
+      inline def setGetTagName(value: () => String): Self = StObject.set(x, "getTagName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWeight(value: () => TextWeight): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
+      inline def setGetWeight(value: () => TextWeight): Self = StObject.set(x, "getWeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLight(value: () => Boolean): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
+      inline def setIsLight(value: () => Boolean): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSecondary(value: () => Boolean): Self = StObject.set(x, "isSecondary", js.Any.fromFunction0(value))
+      inline def setIsSecondary(value: () => Boolean): Self = StObject.set(x, "isSecondary", js.Any.fromFunction0(value))
     }
   }
 }

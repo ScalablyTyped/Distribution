@@ -15,17 +15,14 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(equals_ : Subscription => Boolean): Subscription = {
+  inline def apply(equals_ : Subscription => Boolean): Subscription = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: Subscription => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Subscription => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
   }
 }

@@ -12,16 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IResourceServiceProvider {
   
-  @scala.inline
-  def apply(defaults: IResourceOptions): IResourceServiceProvider = {
+  inline def apply(defaults: IResourceOptions): IResourceServiceProvider = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceServiceProvider]
   }
   
-  @scala.inline
-  implicit class IResourceServiceProviderMutableBuilder[Self <: IResourceServiceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IResourceServiceProvider](x: Self) {
     
-    @scala.inline
-    def setDefaults(value: IResourceOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: IResourceOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
   }
 }

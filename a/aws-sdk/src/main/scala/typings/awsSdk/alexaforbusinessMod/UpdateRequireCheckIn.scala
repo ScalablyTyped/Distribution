@@ -18,25 +18,19 @@ trait UpdateRequireCheckIn extends StObject {
 }
 object UpdateRequireCheckIn {
   
-  @scala.inline
-  def apply(): UpdateRequireCheckIn = {
+  inline def apply(): UpdateRequireCheckIn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRequireCheckIn]
   }
   
-  @scala.inline
-  implicit class UpdateRequireCheckInMutableBuilder[Self <: UpdateRequireCheckIn] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRequireCheckIn](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setReleaseAfterMinutes(value: Minutes): Self = StObject.set(x, "ReleaseAfterMinutes", value.asInstanceOf[js.Any])
+    inline def setReleaseAfterMinutes(value: Minutes): Self = StObject.set(x, "ReleaseAfterMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseAfterMinutesUndefined: Self = StObject.set(x, "ReleaseAfterMinutes", js.undefined)
+    inline def setReleaseAfterMinutesUndefined: Self = StObject.set(x, "ReleaseAfterMinutes", js.undefined)
   }
 }

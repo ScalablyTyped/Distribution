@@ -34,8 +34,7 @@ trait XEnhancedMouseClickBroadcaster
 }
 object XEnhancedMouseClickBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEnhancedMouseClickHandler: XEnhancedMouseClickHandler => Unit,
     queryInterface: `type` => js.Any,
@@ -46,13 +45,10 @@ object XEnhancedMouseClickBroadcaster {
     __obj.asInstanceOf[XEnhancedMouseClickBroadcaster]
   }
   
-  @scala.inline
-  implicit class XEnhancedMouseClickBroadcasterMutableBuilder[Self <: XEnhancedMouseClickBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XEnhancedMouseClickBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddEnhancedMouseClickHandler(value: XEnhancedMouseClickHandler => Unit): Self = StObject.set(x, "addEnhancedMouseClickHandler", js.Any.fromFunction1(value))
+    inline def setAddEnhancedMouseClickHandler(value: XEnhancedMouseClickHandler => Unit): Self = StObject.set(x, "addEnhancedMouseClickHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveEnhancedMouseClickHandler(value: XEnhancedMouseClickHandler => Unit): Self = StObject.set(x, "removeEnhancedMouseClickHandler", js.Any.fromFunction1(value))
+    inline def setRemoveEnhancedMouseClickHandler(value: XEnhancedMouseClickHandler => Unit): Self = StObject.set(x, "removeEnhancedMouseClickHandler", js.Any.fromFunction1(value))
   }
 }

@@ -15,22 +15,17 @@ trait GooglePrivacyDlpV2DeltaPresenceEstimationResult extends StObject {
 }
 object GooglePrivacyDlpV2DeltaPresenceEstimationResult {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2DeltaPresenceEstimationResult = {
+  inline def apply(): GooglePrivacyDlpV2DeltaPresenceEstimationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2DeltaPresenceEstimationResult]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2DeltaPresenceEstimationResultMutableBuilder[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2DeltaPresenceEstimationResult](x: Self) {
     
-    @scala.inline
-    def setDeltaPresenceEstimationHistogram(value: js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]): Self = StObject.set(x, "deltaPresenceEstimationHistogram", value.asInstanceOf[js.Any])
+    inline def setDeltaPresenceEstimationHistogram(value: js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]): Self = StObject.set(x, "deltaPresenceEstimationHistogram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaPresenceEstimationHistogramUndefined: Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.undefined)
+    inline def setDeltaPresenceEstimationHistogramUndefined: Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.undefined)
     
-    @scala.inline
-    def setDeltaPresenceEstimationHistogramVarargs(value: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket*): Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.Array(value :_*))
+    inline def setDeltaPresenceEstimationHistogramVarargs(value: GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket*): Self = StObject.set(x, "deltaPresenceEstimationHistogram", js.Array(value :_*))
   }
 }

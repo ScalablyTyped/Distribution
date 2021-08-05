@@ -26,19 +26,15 @@ trait GeneralNames extends StObject {
 }
 object GeneralNames {
   
-  @scala.inline
-  def apply(getEncodedHex: () => String, setByParamArray: js.Array[GeneralNameParam] => Unit): GeneralNames = {
+  inline def apply(getEncodedHex: () => String, setByParamArray: js.Array[GeneralNameParam] => Unit): GeneralNames = {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), setByParamArray = js.Any.fromFunction1(setByParamArray))
     __obj.asInstanceOf[GeneralNames]
   }
   
-  @scala.inline
-  implicit class GeneralNamesMutableBuilder[Self <: GeneralNames] (val x: Self) extends AnyVal {
+  extension [Self <: GeneralNames](x: Self) {
     
-    @scala.inline
-    def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
+    inline def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetByParamArray(value: js.Array[GeneralNameParam] => Unit): Self = StObject.set(x, "setByParamArray", js.Any.fromFunction1(value))
+    inline def setSetByParamArray(value: js.Array[GeneralNameParam] => Unit): Self = StObject.set(x, "setByParamArray", js.Any.fromFunction1(value))
   }
 }

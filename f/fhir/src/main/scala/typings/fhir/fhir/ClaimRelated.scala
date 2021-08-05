@@ -28,31 +28,23 @@ trait ClaimRelated
 }
 object ClaimRelated {
   
-  @scala.inline
-  def apply(): ClaimRelated = {
+  inline def apply(): ClaimRelated = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClaimRelated]
   }
   
-  @scala.inline
-  implicit class ClaimRelatedMutableBuilder[Self <: ClaimRelated] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimRelated](x: Self) {
     
-    @scala.inline
-    def setClaim(value: Reference): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
+    inline def setClaim(value: Reference): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
+    inline def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
     
-    @scala.inline
-    def setReference(value: Identifier): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Identifier): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    @scala.inline
-    def setRelationship(value: CodeableConcept): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    inline def setRelationship(value: CodeableConcept): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
+    inline def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
   }
 }

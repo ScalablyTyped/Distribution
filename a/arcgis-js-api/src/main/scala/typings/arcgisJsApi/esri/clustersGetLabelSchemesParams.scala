@@ -33,8 +33,7 @@ trait clustersGetLabelSchemesParams
 }
 object clustersGetLabelSchemesParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | CSVLayer | GeoJSONLayer,
@@ -45,19 +44,14 @@ object clustersGetLabelSchemesParams {
     __obj.asInstanceOf[clustersGetLabelSchemesParams]
   }
   
-  @scala.inline
-  implicit class clustersGetLabelSchemesParamsMutableBuilder[Self <: clustersGetLabelSchemesParams] (val x: Self) extends AnyVal {
+  extension [Self <: clustersGetLabelSchemesParams](x: Self) {
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

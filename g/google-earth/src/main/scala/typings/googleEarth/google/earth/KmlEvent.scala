@@ -48,8 +48,7 @@ trait KmlEvent extends StObject {
 }
 object KmlEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBubbles: () => Boolean,
     getCancelable: () => Boolean,
     getCurrentTarget: GEEventEmitter,
@@ -62,28 +61,20 @@ object KmlEvent {
     __obj.asInstanceOf[KmlEvent]
   }
   
-  @scala.inline
-  implicit class KmlEventMutableBuilder[Self <: KmlEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KmlEvent](x: Self) {
     
-    @scala.inline
-    def setGetBubbles(value: () => Boolean): Self = StObject.set(x, "getBubbles", js.Any.fromFunction0(value))
+    inline def setGetBubbles(value: () => Boolean): Self = StObject.set(x, "getBubbles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCancelable(value: () => Boolean): Self = StObject.set(x, "getCancelable", js.Any.fromFunction0(value))
+    inline def setGetCancelable(value: () => Boolean): Self = StObject.set(x, "getCancelable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentTarget(value: GEEventEmitter): Self = StObject.set(x, "getCurrentTarget", value.asInstanceOf[js.Any])
+    inline def setGetCurrentTarget(value: GEEventEmitter): Self = StObject.set(x, "getCurrentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEventPhase(value: () => GEEventPhaseEnum): Self = StObject.set(x, "getEventPhase", js.Any.fromFunction0(value))
+    inline def setGetEventPhase(value: () => GEEventPhaseEnum): Self = StObject.set(x, "getEventPhase", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTarget(value: () => GEEventEmitter): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => GEEventEmitter): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

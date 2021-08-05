@@ -24,13 +24,11 @@ object functionConstructorRuleMod {
     @JSImport("tslint/lib/rules/functionConstructorRule", "Rule.FAILURE")
     @js.native
     def FAILURE: String = js.native
-    @scala.inline
-    def FAILURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE")(x.asInstanceOf[js.Any])
+    inline def FAILURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/functionConstructorRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

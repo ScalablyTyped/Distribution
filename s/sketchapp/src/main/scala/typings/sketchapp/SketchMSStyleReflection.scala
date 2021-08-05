@@ -17,25 +17,19 @@ trait SketchMSStyleReflection extends StObject {
 }
 object SketchMSStyleReflection {
   
-  @scala.inline
-  def apply(distance: Double, isEnabled: Double, strength: Double): SketchMSStyleReflection = {
+  inline def apply(distance: Double, isEnabled: Double, strength: Double): SketchMSStyleReflection = {
     val __obj = js.Dynamic.literal(_class = "styleReflection", distance = distance.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleReflection]
   }
   
-  @scala.inline
-  implicit class SketchMSStyleReflectionMutableBuilder[Self <: SketchMSStyleReflection] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSStyleReflection](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: styleReflection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: styleReflection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

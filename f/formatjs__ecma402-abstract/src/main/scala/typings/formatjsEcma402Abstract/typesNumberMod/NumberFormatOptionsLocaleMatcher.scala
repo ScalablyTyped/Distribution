@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatOptionsLocaleMatcher extends StObject
 object NumberFormatOptionsLocaleMatcher {
   
-  @scala.inline
-  def `best fit`: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit` = ("best fit").asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit`]
+  inline def `best fit`: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit` = ("best fit").asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit`]
   
-  @scala.inline
-  def lookup: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup = "lookup".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup]
+  inline def lookup: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup = "lookup".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup]
 }

@@ -21,13 +21,11 @@ object Slider {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Slider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Slider]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Slider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Slider]
   
   /* static member */
   @JSGlobal("kendo.ui.Slider.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Slider = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Slider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Slider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

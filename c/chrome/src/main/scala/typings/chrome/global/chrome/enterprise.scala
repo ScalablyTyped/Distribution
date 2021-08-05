@@ -25,17 +25,13 @@ object enterprise {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAnnotatedLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAnnotatedLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAssetId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAssetId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSerialNumber")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSerialNumber")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectoryDeviceId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getDirectoryDeviceId(callback: js.Function1[/* deviceId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectoryDeviceId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   ////////////////////
@@ -52,8 +48,7 @@ object enterprise {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getNetworkDetails(callback: js.Function1[/* networkDetails */ NetworkDetails, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkDetails")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getNetworkDetails(callback: js.Function1[/* networkDetails */ NetworkDetails, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkDetails")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   ////////////////////
@@ -72,36 +67,27 @@ object enterprise {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def challengeMachineKey(
+    inline def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def challengeMachineKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def challengeUserKey(
+    inline def challengeUserKey(
       challenge: ArrayBuffer,
       registerKey: Boolean,
       callback: js.Function1[/* response */ ArrayBuffer, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeUserKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificates")(tokenId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificates")(tokenId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTokens")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTokens")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def importCertificate(tokenId: String, certificate: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def importCertificate(tokenId: String, certificate: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def removeCertificate(tokenId: String, certificate: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeCertificate(tokenId: String, certificate: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

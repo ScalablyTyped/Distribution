@@ -15,16 +15,13 @@ trait RaphaelCartesianCurvePoint
 }
 object RaphaelCartesianCurvePoint {
   
-  @scala.inline
-  def apply(alpha: Double, x: Double, y: Double): RaphaelCartesianCurvePoint = {
+  inline def apply(alpha: Double, x: Double, y: Double): RaphaelCartesianCurvePoint = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelCartesianCurvePoint]
   }
   
-  @scala.inline
-  implicit class RaphaelCartesianCurvePointMutableBuilder[Self <: RaphaelCartesianCurvePoint] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelCartesianCurvePoint](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
   }
 }

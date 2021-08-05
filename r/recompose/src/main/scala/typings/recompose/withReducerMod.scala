@@ -15,15 +15,13 @@ object withReducerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
+  inline def default[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
     reducer: reducer[TState, TAction],
     initialState: TState
   ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(stateName.asInstanceOf[js.Any], dispatchName.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter]]
-  @scala.inline
-  def default[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
+  inline def default[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
     reducer: reducer[TState, TAction],

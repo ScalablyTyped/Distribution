@@ -12,19 +12,15 @@ trait SjclKeyPair[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] exte
 }
 object SjclKeyPair {
   
-  @scala.inline
-  def apply[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */](pub: P, sec: S): SjclKeyPair[P, S] = {
+  inline def apply[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */](pub: P, sec: S): SjclKeyPair[P, S] = {
     val __obj = js.Dynamic.literal(pub = pub.asInstanceOf[js.Any], sec = sec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclKeyPair[P, S]]
   }
   
-  @scala.inline
-  implicit class SjclKeyPairMutableBuilder[Self <: SjclKeyPair[?, ?], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] (val x: Self & (SjclKeyPair[P, S])) extends AnyVal {
+  extension [Self <: SjclKeyPair[?, ?], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */](x: Self & (SjclKeyPair[P, S])) {
     
-    @scala.inline
-    def setPub(value: P): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+    inline def setPub(value: P): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSec(value: S): Self = StObject.set(x, "sec", value.asInstanceOf[js.Any])
+    inline def setSec(value: S): Self = StObject.set(x, "sec", value.asInstanceOf[js.Any])
   }
 }

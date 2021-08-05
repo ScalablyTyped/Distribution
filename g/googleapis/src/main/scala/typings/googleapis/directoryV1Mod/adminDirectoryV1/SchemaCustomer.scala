@@ -58,67 +58,47 @@ trait SchemaCustomer extends StObject {
 }
 object SchemaCustomer {
   
-  @scala.inline
-  def apply(): SchemaCustomer = {
+  inline def apply(): SchemaCustomer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomer]
   }
   
-  @scala.inline
-  implicit class SchemaCustomerMutableBuilder[Self <: SchemaCustomer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomer](x: Self) {
     
-    @scala.inline
-    def setAlternateEmail(value: String): Self = StObject.set(x, "alternateEmail", value.asInstanceOf[js.Any])
+    inline def setAlternateEmail(value: String): Self = StObject.set(x, "alternateEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateEmailUndefined: Self = StObject.set(x, "alternateEmail", js.undefined)
+    inline def setAlternateEmailUndefined: Self = StObject.set(x, "alternateEmail", js.undefined)
     
-    @scala.inline
-    def setCustomerCreationTime(value: String): Self = StObject.set(x, "customerCreationTime", value.asInstanceOf[js.Any])
+    inline def setCustomerCreationTime(value: String): Self = StObject.set(x, "customerCreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerCreationTimeUndefined: Self = StObject.set(x, "customerCreationTime", js.undefined)
+    inline def setCustomerCreationTimeUndefined: Self = StObject.set(x, "customerCreationTime", js.undefined)
     
-    @scala.inline
-    def setCustomerDomain(value: String): Self = StObject.set(x, "customerDomain", value.asInstanceOf[js.Any])
+    inline def setCustomerDomain(value: String): Self = StObject.set(x, "customerDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerDomainUndefined: Self = StObject.set(x, "customerDomain", js.undefined)
+    inline def setCustomerDomainUndefined: Self = StObject.set(x, "customerDomain", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setPostalAddress(value: SchemaCustomerPostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
+    inline def setPostalAddress(value: SchemaCustomerPostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
+    inline def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
   }
 }

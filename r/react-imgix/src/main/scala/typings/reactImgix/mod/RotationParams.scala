@@ -14,31 +14,23 @@ trait RotationParams extends StObject {
 }
 object RotationParams {
   
-  @scala.inline
-  def apply(): RotationParams = {
+  inline def apply(): RotationParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotationParams]
   }
   
-  @scala.inline
-  implicit class RotationParamsMutableBuilder[Self <: RotationParams] (val x: Self) extends AnyVal {
+  extension [Self <: RotationParams](x: Self) {
     
-    @scala.inline
-    def setFlip(value: ImgixParamType): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    inline def setFlip(value: ImgixParamType): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+    inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
     
-    @scala.inline
-    def setOrient(value: ImgixParamType): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    inline def setOrient(value: ImgixParamType): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+    inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
-    @scala.inline
-    def setRot(value: ImgixParamType): Self = StObject.set(x, "rot", value.asInstanceOf[js.Any])
+    inline def setRot(value: ImgixParamType): Self = StObject.set(x, "rot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotUndefined: Self = StObject.set(x, "rot", js.undefined)
+    inline def setRotUndefined: Self = StObject.set(x, "rot", js.undefined)
   }
 }

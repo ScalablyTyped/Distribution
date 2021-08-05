@@ -23,34 +23,25 @@ trait ListGrantsResponse extends StObject {
 }
 object ListGrantsResponse {
   
-  @scala.inline
-  def apply(): ListGrantsResponse = {
+  inline def apply(): ListGrantsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGrantsResponse]
   }
   
-  @scala.inline
-  implicit class ListGrantsResponseMutableBuilder[Self <: ListGrantsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGrantsResponse](x: Self) {
     
-    @scala.inline
-    def setGrants(value: GrantList): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
+    inline def setGrants(value: GrantList): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
+    inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
     
-    @scala.inline
-    def setGrantsVarargs(value: GrantListEntry*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+    inline def setGrantsVarargs(value: GrantListEntry*): Self = StObject.set(x, "Grants", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

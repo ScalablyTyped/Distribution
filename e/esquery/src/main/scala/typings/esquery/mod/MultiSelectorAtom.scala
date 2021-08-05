@@ -12,20 +12,16 @@ trait MultiSelectorAtom
 }
 object MultiSelectorAtom {
   
-  @scala.inline
-  def apply(selectors: js.Array[SubjectSelector], `type`: String): MultiSelectorAtom = {
+  inline def apply(selectors: js.Array[SubjectSelector], `type`: String): MultiSelectorAtom = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectorAtom]
   }
   
-  @scala.inline
-  implicit class MultiSelectorAtomMutableBuilder[Self <: MultiSelectorAtom] (val x: Self) extends AnyVal {
+  extension [Self <: MultiSelectorAtom](x: Self) {
     
-    @scala.inline
-    def setSelectors(value: js.Array[SubjectSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[SubjectSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsVarargs(value: SubjectSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: SubjectSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

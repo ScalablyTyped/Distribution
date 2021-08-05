@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any]]
+  inline def default(): js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any]]
   
   trait AsyncQueueAction[T /* <: Action[js.Any] */] extends StObject {
     
@@ -24,20 +23,16 @@ object mod {
   }
   object AsyncQueueAction {
     
-    @scala.inline
-    def apply[T /* <: Action[js.Any] */](callback: (js.Function0[Unit], Dispatch[T]) => Unit, queue: String): AsyncQueueAction[T] = {
+    inline def apply[T /* <: Action[js.Any] */](callback: (js.Function0[Unit], Dispatch[T]) => Unit, queue: String): AsyncQueueAction[T] = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncQueueAction[T]]
     }
     
-    @scala.inline
-    implicit class AsyncQueueActionMutableBuilder[Self <: AsyncQueueAction[?], T /* <: Action[js.Any] */] (val x: Self & AsyncQueueAction[T]) extends AnyVal {
+    extension [Self <: AsyncQueueAction[?], T /* <: Action[js.Any] */](x: Self & AsyncQueueAction[T]) {
       
-      @scala.inline
-      def setCallback(value: (js.Function0[Unit], Dispatch[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (js.Function0[Unit], Dispatch[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     }
   }
 }

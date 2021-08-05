@@ -12,19 +12,15 @@ trait Classifiers extends StObject {
 }
 object Classifiers {
   
-  @scala.inline
-  def apply(classifiers: js.Array[Classifier]): Classifiers = {
+  inline def apply(classifiers: js.Array[Classifier]): Classifiers = {
     val __obj = js.Dynamic.literal(classifiers = classifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classifiers]
   }
   
-  @scala.inline
-  implicit class ClassifiersMutableBuilder[Self <: Classifiers] (val x: Self) extends AnyVal {
+  extension [Self <: Classifiers](x: Self) {
     
-    @scala.inline
-    def setClassifiers(value: js.Array[Classifier]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
+    inline def setClassifiers(value: js.Array[Classifier]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassifiersVarargs(value: Classifier*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
+    inline def setClassifiersVarargs(value: Classifier*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
   }
 }

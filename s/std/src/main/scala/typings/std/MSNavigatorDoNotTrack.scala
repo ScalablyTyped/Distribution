@@ -20,8 +20,7 @@ trait MSNavigatorDoNotTrack extends StObject {
 }
 object MSNavigatorDoNotTrack {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     confirmSiteSpecificTrackingException: ConfirmSiteSpecificExceptionsInformation => scala.Boolean,
     confirmWebWideTrackingException: ExceptionInformation => scala.Boolean,
     removeSiteSpecificTrackingException: ExceptionInformation => Unit,
@@ -33,25 +32,18 @@ object MSNavigatorDoNotTrack {
     __obj.asInstanceOf[MSNavigatorDoNotTrack]
   }
   
-  @scala.inline
-  implicit class MSNavigatorDoNotTrackMutableBuilder[Self <: MSNavigatorDoNotTrack] (val x: Self) extends AnyVal {
+  extension [Self <: MSNavigatorDoNotTrack](x: Self) {
     
-    @scala.inline
-    def setConfirmSiteSpecificTrackingException(value: ConfirmSiteSpecificExceptionsInformation => scala.Boolean): Self = StObject.set(x, "confirmSiteSpecificTrackingException", js.Any.fromFunction1(value))
+    inline def setConfirmSiteSpecificTrackingException(value: ConfirmSiteSpecificExceptionsInformation => scala.Boolean): Self = StObject.set(x, "confirmSiteSpecificTrackingException", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConfirmWebWideTrackingException(value: ExceptionInformation => scala.Boolean): Self = StObject.set(x, "confirmWebWideTrackingException", js.Any.fromFunction1(value))
+    inline def setConfirmWebWideTrackingException(value: ExceptionInformation => scala.Boolean): Self = StObject.set(x, "confirmWebWideTrackingException", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSiteSpecificTrackingException(value: ExceptionInformation => Unit): Self = StObject.set(x, "removeSiteSpecificTrackingException", js.Any.fromFunction1(value))
+    inline def setRemoveSiteSpecificTrackingException(value: ExceptionInformation => Unit): Self = StObject.set(x, "removeSiteSpecificTrackingException", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveWebWideTrackingException(value: ExceptionInformation => Unit): Self = StObject.set(x, "removeWebWideTrackingException", js.Any.fromFunction1(value))
+    inline def setRemoveWebWideTrackingException(value: ExceptionInformation => Unit): Self = StObject.set(x, "removeWebWideTrackingException", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoreSiteSpecificTrackingException(value: StoreSiteSpecificExceptionsInformation => Unit): Self = StObject.set(x, "storeSiteSpecificTrackingException", js.Any.fromFunction1(value))
+    inline def setStoreSiteSpecificTrackingException(value: StoreSiteSpecificExceptionsInformation => Unit): Self = StObject.set(x, "storeSiteSpecificTrackingException", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoreWebWideTrackingException(value: StoreExceptionsInformation => Unit): Self = StObject.set(x, "storeWebWideTrackingException", js.Any.fromFunction1(value))
+    inline def setStoreWebWideTrackingException(value: StoreExceptionsInformation => Unit): Self = StObject.set(x, "storeWebWideTrackingException", js.Any.fromFunction1(value))
   }
 }

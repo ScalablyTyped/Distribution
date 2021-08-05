@@ -27,25 +27,19 @@ trait SchemaSolidFill extends StObject {
 }
 object SchemaSolidFill {
   
-  @scala.inline
-  def apply(): SchemaSolidFill = {
+  inline def apply(): SchemaSolidFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSolidFill]
   }
   
-  @scala.inline
-  implicit class SchemaSolidFillMutableBuilder[Self <: SchemaSolidFill] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSolidFill](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setColor(value: SchemaOpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: SchemaOpaqueColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(promise: js.Any): ISpex = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[ISpex]
+  inline def apply(promise: js.Any): ISpex = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[ISpex]
   
   @JSImport("spex", JSImport.Namespace)
   @js.native
@@ -141,26 +140,20 @@ object mod {
   }
   object IBatchData {
     
-    @scala.inline
-    def apply(result: js.Any, success: Boolean): IBatchData = {
+    inline def apply(result: js.Any, success: Boolean): IBatchData = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBatchData]
     }
     
-    @scala.inline
-    implicit class IBatchDataMutableBuilder[Self <: IBatchData] (val x: Self) extends AnyVal {
+    extension [Self <: IBatchData](x: Self) {
       
-      @scala.inline
-      def setOrigin(value: IOriginData): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: IOriginData): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,26 +169,20 @@ object mod {
   }
   object IBatchStat {
     
-    @scala.inline
-    def apply(duration: Double, failed: Double, succeeded: Double, total: Double): IBatchStat = {
+    inline def apply(duration: Double, failed: Double, succeeded: Double, total: Double): IBatchStat = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBatchStat]
     }
     
-    @scala.inline
-    implicit class IBatchStatMutableBuilder[Self <: IBatchStat] (val x: Self) extends AnyVal {
+    extension [Self <: IBatchStat](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSucceeded(value: Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+      inline def setSucceeded(value: Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,20 +194,16 @@ object mod {
   }
   object IOriginData {
     
-    @scala.inline
-    def apply(result: js.Any, success: Boolean): IOriginData = {
+    inline def apply(result: js.Any, success: Boolean): IOriginData = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOriginData]
     }
     
-    @scala.inline
-    implicit class IOriginDataMutableBuilder[Self <: IOriginData] (val x: Self) extends AnyVal {
+    extension [Self <: IOriginData](x: Self) {
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,23 +217,18 @@ object mod {
   }
   object IPageResult {
     
-    @scala.inline
-    def apply(duration: Double, pages: Double, total: Double): IPageResult = {
+    inline def apply(duration: Double, pages: Double, total: Double): IPageResult = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPageResult]
     }
     
-    @scala.inline
-    implicit class IPageResultMutableBuilder[Self <: IPageResult] (val x: Self) extends AnyVal {
+    extension [Self <: IPageResult](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,20 +240,16 @@ object mod {
   }
   object ISequenceResult {
     
-    @scala.inline
-    def apply(duration: Double, total: Double): ISequenceResult = {
+    inline def apply(duration: Double, total: Double): ISequenceResult = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISequenceResult]
     }
     
-    @scala.inline
-    implicit class ISequenceResultMutableBuilder[Self <: ISequenceResult] (val x: Self) extends AnyVal {
+    extension [Self <: ISequenceResult](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -340,32 +314,24 @@ object mod {
   }
   object IStreamReadOptions {
     
-    @scala.inline
-    def apply(): IStreamReadOptions = {
+    inline def apply(): IStreamReadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStreamReadOptions]
     }
     
-    @scala.inline
-    implicit class IStreamReadOptionsMutableBuilder[Self <: IStreamReadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IStreamReadOptions](x: Self) {
       
-      @scala.inline
-      def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+      inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+      inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
       
-      @scala.inline
-      def setReadChunks(value: Boolean): Self = StObject.set(x, "readChunks", value.asInstanceOf[js.Any])
+      inline def setReadChunks(value: Boolean): Self = StObject.set(x, "readChunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadChunksUndefined: Self = StObject.set(x, "readChunks", js.undefined)
+      inline def setReadChunksUndefined: Self = StObject.set(x, "readChunks", js.undefined)
       
-      @scala.inline
-      def setReadSize(value: Double): Self = StObject.set(x, "readSize", value.asInstanceOf[js.Any])
+      inline def setReadSize(value: Double): Self = StObject.set(x, "readSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadSizeUndefined: Self = StObject.set(x, "readSize", js.undefined)
+      inline def setReadSizeUndefined: Self = StObject.set(x, "readSize", js.undefined)
     }
   }
   
@@ -381,26 +347,20 @@ object mod {
   }
   object IStreamReadResult {
     
-    @scala.inline
-    def apply(calls: Double, duration: Double, length: Double, reads: Double): IStreamReadResult = {
+    inline def apply(calls: Double, duration: Double, length: Double, reads: Double): IStreamReadResult = {
       val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], reads = reads.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStreamReadResult]
     }
     
-    @scala.inline
-    implicit class IStreamReadResultMutableBuilder[Self <: IStreamReadResult] (val x: Self) extends AnyVal {
+    extension [Self <: IStreamReadResult](x: Self) {
       
-      @scala.inline
-      def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+      inline def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReads(value: Double): Self = StObject.set(x, "reads", value.asInstanceOf[js.Any])
+      inline def setReads(value: Double): Self = StObject.set(x, "reads", value.asInstanceOf[js.Any])
     }
   }
 }

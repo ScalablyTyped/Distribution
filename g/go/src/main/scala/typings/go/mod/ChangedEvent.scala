@@ -107,30 +107,26 @@ object ChangedEvent {
   @JSImport("go", "ChangedEvent.Insert")
   @js.native
   def Insert: EnumValue = js.native
-  @scala.inline
-  def Insert_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Insert")(x.asInstanceOf[js.Any])
+  inline def Insert_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Insert")(x.asInstanceOf[js.Any])
   
   /**For simple property changes, and used as the value for ChangedEvent.change.*/
   /* static member */
   @JSImport("go", "ChangedEvent.Property")
   @js.native
   def Property: EnumValue = js.native
-  @scala.inline
-  def Property_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
+  inline def Property_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
   
   /**For removing from collections, and used as the value for ChangedEvent.change.*/
   /* static member */
   @JSImport("go", "ChangedEvent.Remove")
   @js.native
   def Remove: EnumValue = js.native
-  @scala.inline
-  def Remove_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Remove")(x.asInstanceOf[js.Any])
+  inline def Remove_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Remove")(x.asInstanceOf[js.Any])
   
   /**For informational events, such as transactions and undo/redo operations, and used as the value for ChangedEvent.change.*/
   /* static member */
   @JSImport("go", "ChangedEvent.Transaction")
   @js.native
   def Transaction: EnumValue = js.native
-  @scala.inline
-  def Transaction_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transaction")(x.asInstanceOf[js.Any])
+  inline def Transaction_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transaction")(x.asInstanceOf[js.Any])
 }

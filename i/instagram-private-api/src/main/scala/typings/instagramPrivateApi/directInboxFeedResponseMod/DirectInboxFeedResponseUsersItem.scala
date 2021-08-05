@@ -28,8 +28,7 @@ trait DirectInboxFeedResponseUsersItem extends StObject {
 }
 object DirectInboxFeedResponseUsersItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendship_status: DirectInboxFeedResponseFriendshipStatus,
     full_name: String,
     has_anonymous_profile_picture: Boolean,
@@ -44,40 +43,28 @@ object DirectInboxFeedResponseUsersItem {
     __obj.asInstanceOf[DirectInboxFeedResponseUsersItem]
   }
   
-  @scala.inline
-  implicit class DirectInboxFeedResponseUsersItemMutableBuilder[Self <: DirectInboxFeedResponseUsersItem] (val x: Self) extends AnyVal {
+  extension [Self <: DirectInboxFeedResponseUsersItem](x: Self) {
     
-    @scala.inline
-    def setFriendship_status(value: DirectInboxFeedResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+    inline def setFriendship_status(value: DirectInboxFeedResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+    inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+    inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
+    inline def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+    inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+    inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+    inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
+    inline def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
     
-    @scala.inline
-    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+    inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

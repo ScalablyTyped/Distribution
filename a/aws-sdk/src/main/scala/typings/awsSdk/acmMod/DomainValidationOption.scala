@@ -18,19 +18,15 @@ trait DomainValidationOption extends StObject {
 }
 object DomainValidationOption {
   
-  @scala.inline
-  def apply(DomainName: DomainNameString, ValidationDomain: DomainNameString): DomainValidationOption = {
+  inline def apply(DomainName: DomainNameString, ValidationDomain: DomainNameString): DomainValidationOption = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], ValidationDomain = ValidationDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainValidationOption]
   }
   
-  @scala.inline
-  implicit class DomainValidationOptionMutableBuilder[Self <: DomainValidationOption] (val x: Self) extends AnyVal {
+  extension [Self <: DomainValidationOption](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDomain(value: DomainNameString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
+    inline def setValidationDomain(value: DomainNameString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
   }
 }

@@ -47,109 +47,75 @@ trait SessionReport
 }
 object SessionReport {
   
-  @scala.inline
-  def apply(): SessionReport = {
+  inline def apply(): SessionReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionReport]
   }
   
-  @scala.inline
-  implicit class SessionReportMutableBuilder[Self <: SessionReport] (val x: Self) extends AnyVal {
+  extension [Self <: SessionReport](x: Self) {
     
-    @scala.inline
-    def setAppId(value: Id): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: Id): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setDeviceDescriptorId(value: Id): Self = StObject.set(x, "deviceDescriptorId", value.asInstanceOf[js.Any])
+    inline def setDeviceDescriptorId(value: Id): Self = StObject.set(x, "deviceDescriptorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceDescriptorIdUndefined: Self = StObject.set(x, "deviceDescriptorId", js.undefined)
+    inline def setDeviceDescriptorIdUndefined: Self = StObject.set(x, "deviceDescriptorId", js.undefined)
     
-    @scala.inline
-    def setDurationInSeconds(value: Double): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: Double): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "durationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "durationInSeconds", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setFrameworkAppId(value: Id): Self = StObject.set(x, "frameworkAppId", value.asInstanceOf[js.Any])
+    inline def setFrameworkAppId(value: Id): Self = StObject.set(x, "frameworkAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkAppIdUndefined: Self = StObject.set(x, "frameworkAppId", js.undefined)
+    inline def setFrameworkAppIdUndefined: Self = StObject.set(x, "frameworkAppId", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: Id): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: Id): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
-    @scala.inline
-    def setTestFrameworkType(value: String): Self = StObject.set(x, "testFrameworkType", value.asInstanceOf[js.Any])
+    inline def setTestFrameworkType(value: String): Self = StObject.set(x, "testFrameworkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestFrameworkTypeUndefined: Self = StObject.set(x, "testFrameworkType", js.undefined)
+    inline def setTestFrameworkTypeUndefined: Self = StObject.set(x, "testFrameworkType", js.undefined)
     
-    @scala.inline
-    def setTestFrameworkVersion(value: String): Self = StObject.set(x, "testFrameworkVersion", value.asInstanceOf[js.Any])
+    inline def setTestFrameworkVersion(value: String): Self = StObject.set(x, "testFrameworkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestFrameworkVersionUndefined: Self = StObject.set(x, "testFrameworkVersion", js.undefined)
+    inline def setTestFrameworkVersionUndefined: Self = StObject.set(x, "testFrameworkVersion", js.undefined)
     
-    @scala.inline
-    def setTestIds(value: js.Array[Id]): Self = StObject.set(x, "testIds", value.asInstanceOf[js.Any])
+    inline def setTestIds(value: js.Array[Id]): Self = StObject.set(x, "testIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIdsUndefined: Self = StObject.set(x, "testIds", js.undefined)
+    inline def setTestIdsUndefined: Self = StObject.set(x, "testIds", js.undefined)
     
-    @scala.inline
-    def setTestIdsVarargs(value: Id*): Self = StObject.set(x, "testIds", js.Array(value :_*))
+    inline def setTestIdsVarargs(value: Id*): Self = StObject.set(x, "testIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTestReportIds(value: js.Array[Id]): Self = StObject.set(x, "testReportIds", value.asInstanceOf[js.Any])
+    inline def setTestReportIds(value: js.Array[Id]): Self = StObject.set(x, "testReportIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestReportIdsUndefined: Self = StObject.set(x, "testReportIds", js.undefined)
+    inline def setTestReportIdsUndefined: Self = StObject.set(x, "testReportIds", js.undefined)
     
-    @scala.inline
-    def setTestReportIdsVarargs(value: Id*): Self = StObject.set(x, "testReportIds", js.Array(value :_*))
+    inline def setTestReportIdsVarargs(value: Id*): Self = StObject.set(x, "testReportIds", js.Array(value :_*))
     
-    @scala.inline
-    def setUsage(value: MANUAL | BATCH | APPIUM | PIRANHA | XCUITEST | ANDROID_INSTRUMENTATION): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: MANUAL | BATCH | APPIUM | PIRANHA | XCUITEST | ANDROID_INSTRUMENTATION): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     
-    @scala.inline
-    def setUserId(value: Id): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: Id): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

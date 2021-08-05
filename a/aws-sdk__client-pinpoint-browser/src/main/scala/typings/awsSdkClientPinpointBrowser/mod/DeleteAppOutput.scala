@@ -11,8 +11,7 @@ trait DeleteAppOutput
      with typings.awsSdkClientPinpointBrowser.typesDeleteAppOutputMod.DeleteAppOutput
 object DeleteAppOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): DeleteAppOutput = {
+  inline def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): DeleteAppOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationResponse = ApplicationResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppOutput]
   }

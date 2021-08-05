@@ -16,25 +16,19 @@ trait Now extends StObject {
 }
 object Now {
   
-  @scala.inline
-  def apply(id: js.Any, now: js.Any, overwrite: Boolean, was: js.Any): Now = {
+  inline def apply(id: js.Any, now: js.Any, overwrite: Boolean, was: js.Any): Now = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any], overwrite = overwrite.asInstanceOf[js.Any], was = was.asInstanceOf[js.Any])
     __obj.asInstanceOf[Now]
   }
   
-  @scala.inline
-  implicit class NowMutableBuilder[Self <: Now] (val x: Self) extends AnyVal {
+  extension [Self <: Now](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNow(value: js.Any): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    inline def setNow(value: js.Any): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWas(value: js.Any): Self = StObject.set(x, "was", value.asInstanceOf[js.Any])
+    inline def setWas(value: js.Any): Self = StObject.set(x, "was", value.asInstanceOf[js.Any])
   }
 }

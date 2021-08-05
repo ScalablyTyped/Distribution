@@ -8,11 +8,9 @@ object activexStdoleStrings {
   
   @js.native
   sealed trait FontChanged extends StObject
-  @scala.inline
-  def FontChanged: FontChanged = "FontChanged".asInstanceOf[FontChanged]
+  inline def FontChanged: FontChanged = "FontChanged".asInstanceOf[FontChanged]
   
   @js.native
   sealed trait PropertyName extends StObject
-  @scala.inline
-  def PropertyName: PropertyName = "PropertyName".asInstanceOf[PropertyName]
+  inline def PropertyName: PropertyName = "PropertyName".asInstanceOf[PropertyName]
 }

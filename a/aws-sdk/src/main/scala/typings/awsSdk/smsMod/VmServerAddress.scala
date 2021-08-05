@@ -18,25 +18,19 @@ trait VmServerAddress extends StObject {
 }
 object VmServerAddress {
   
-  @scala.inline
-  def apply(): VmServerAddress = {
+  inline def apply(): VmServerAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VmServerAddress]
   }
   
-  @scala.inline
-  implicit class VmServerAddressMutableBuilder[Self <: VmServerAddress] (val x: Self) extends AnyVal {
+  extension [Self <: VmServerAddress](x: Self) {
     
-    @scala.inline
-    def setVmId(value: VmId): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
+    inline def setVmId(value: VmId): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
+    inline def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
     
-    @scala.inline
-    def setVmManagerId(value: VmManagerId): Self = StObject.set(x, "vmManagerId", value.asInstanceOf[js.Any])
+    inline def setVmManagerId(value: VmManagerId): Self = StObject.set(x, "vmManagerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmManagerIdUndefined: Self = StObject.set(x, "vmManagerId", js.undefined)
+    inline def setVmManagerIdUndefined: Self = StObject.set(x, "vmManagerId", js.undefined)
   }
 }

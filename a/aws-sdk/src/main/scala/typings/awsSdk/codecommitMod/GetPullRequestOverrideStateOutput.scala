@@ -18,25 +18,19 @@ trait GetPullRequestOverrideStateOutput extends StObject {
 }
 object GetPullRequestOverrideStateOutput {
   
-  @scala.inline
-  def apply(): GetPullRequestOverrideStateOutput = {
+  inline def apply(): GetPullRequestOverrideStateOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPullRequestOverrideStateOutput]
   }
   
-  @scala.inline
-  implicit class GetPullRequestOverrideStateOutputMutableBuilder[Self <: GetPullRequestOverrideStateOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPullRequestOverrideStateOutput](x: Self) {
     
-    @scala.inline
-    def setOverridden(value: Overridden): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
+    inline def setOverridden(value: Overridden): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverriddenUndefined: Self = StObject.set(x, "overridden", js.undefined)
+    inline def setOverriddenUndefined: Self = StObject.set(x, "overridden", js.undefined)
     
-    @scala.inline
-    def setOverrider(value: Arn): Self = StObject.set(x, "overrider", value.asInstanceOf[js.Any])
+    inline def setOverrider(value: Arn): Self = StObject.set(x, "overrider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverriderUndefined: Self = StObject.set(x, "overrider", js.undefined)
+    inline def setOverriderUndefined: Self = StObject.set(x, "overrider", js.undefined)
   }
 }

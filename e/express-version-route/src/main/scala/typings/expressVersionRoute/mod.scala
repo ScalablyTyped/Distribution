@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def route(versionsMap: Map[String, Handler]): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(versionsMap.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def route(versionsMap: Map[String, Handler]): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(versionsMap.asInstanceOf[js.Any]).asInstanceOf[Handler]
 }

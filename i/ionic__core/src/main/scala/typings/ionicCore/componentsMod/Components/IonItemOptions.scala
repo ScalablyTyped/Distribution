@@ -16,19 +16,15 @@ trait IonItemOptions extends StObject {
 }
 object IonItemOptions {
   
-  @scala.inline
-  def apply(fireSwipeEvent: () => js.Promise[Unit], side: Side): IonItemOptions = {
+  inline def apply(fireSwipeEvent: () => js.Promise[Unit], side: Side): IonItemOptions = {
     val __obj = js.Dynamic.literal(fireSwipeEvent = js.Any.fromFunction0(fireSwipeEvent), side = side.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonItemOptions]
   }
   
-  @scala.inline
-  implicit class IonItemOptionsMutableBuilder[Self <: IonItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IonItemOptions](x: Self) {
     
-    @scala.inline
-    def setFireSwipeEvent(value: () => js.Promise[Unit]): Self = StObject.set(x, "fireSwipeEvent", js.Any.fromFunction0(value))
+    inline def setFireSwipeEvent(value: () => js.Promise[Unit]): Self = StObject.set(x, "fireSwipeEvent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
   }
 }

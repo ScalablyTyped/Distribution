@@ -22,8 +22,7 @@ trait Backreference
 }
 object Backreference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     parent: Alternative | Quantifier,
     raw: String,
@@ -36,19 +35,14 @@ object Backreference {
     __obj.asInstanceOf[Backreference]
   }
   
-  @scala.inline
-  implicit class BackreferenceMutableBuilder[Self <: Backreference] (val x: Self) extends AnyVal {
+  extension [Self <: Backreference](x: Self) {
     
-    @scala.inline
-    def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: Double | String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Double | String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolved(value: CapturingGroup): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+    inline def setResolved(value: CapturingGroup): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Backreference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.Backreference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

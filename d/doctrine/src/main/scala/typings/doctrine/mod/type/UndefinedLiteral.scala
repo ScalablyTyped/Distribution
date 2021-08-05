@@ -13,17 +13,14 @@ trait UndefinedLiteral
 }
 object UndefinedLiteral {
   
-  @scala.inline
-  def apply(): UndefinedLiteral = {
+  inline def apply(): UndefinedLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("UndefinedLiteral")
     __obj.asInstanceOf[UndefinedLiteral]
   }
   
-  @scala.inline
-  implicit class UndefinedLiteralMutableBuilder[Self <: UndefinedLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: UndefinedLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.UndefinedLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.UndefinedLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

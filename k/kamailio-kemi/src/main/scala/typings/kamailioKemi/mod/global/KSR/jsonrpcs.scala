@@ -10,6 +10,5 @@ object jsonrpcs {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exec(scmd: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(scmd.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def exec(scmd: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(scmd.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

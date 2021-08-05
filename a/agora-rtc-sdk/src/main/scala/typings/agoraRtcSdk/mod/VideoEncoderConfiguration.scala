@@ -49,31 +49,23 @@ trait VideoEncoderConfiguration extends StObject {
 }
 object VideoEncoderConfiguration {
   
-  @scala.inline
-  def apply(): VideoEncoderConfiguration = {
+  inline def apply(): VideoEncoderConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoEncoderConfiguration]
   }
   
-  @scala.inline
-  implicit class VideoEncoderConfigurationMutableBuilder[Self <: VideoEncoderConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VideoEncoderConfiguration](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: Max): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Max): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: Max): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Max): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setResolution(value: Height): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Height): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

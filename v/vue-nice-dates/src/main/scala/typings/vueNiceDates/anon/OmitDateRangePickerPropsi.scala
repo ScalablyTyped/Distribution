@@ -37,8 +37,7 @@ trait OmitDateRangePickerPropsi extends StObject {
 }
 object OmitDateRangePickerPropsi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enableGridSwitch: Boolean,
     endDate: String,
     focusName: String,
@@ -53,58 +52,40 @@ object OmitDateRangePickerPropsi {
     __obj.asInstanceOf[OmitDateRangePickerPropsi]
   }
   
-  @scala.inline
-  implicit class OmitDateRangePickerPropsiMutableBuilder[Self <: OmitDateRangePickerPropsi] (val x: Self) extends AnyVal {
+  extension [Self <: OmitDateRangePickerPropsi](x: Self) {
     
-    @scala.inline
-    def setEnableGridSwitch(value: Boolean): Self = StObject.set(x, "enableGridSwitch", value.asInstanceOf[js.Any])
+    inline def setEnableGridSwitch(value: Boolean): Self = StObject.set(x, "enableGridSwitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusName(value: String): Self = StObject.set(x, "focusName", value.asInstanceOf[js.Any])
+    inline def setFocusName(value: String): Self = StObject.set(x, "focusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDate(value: typings.std.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+    inline def setInitialDate(value: typings.std.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
+    inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
     
-    @scala.inline
-    def setLocale(value: DateLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: DateLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumDate(value: typings.std.Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+    inline def setMaximumDate(value: typings.std.Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumDateNull: Self = StObject.set(x, "maximumDate", null)
+    inline def setMaximumDateNull: Self = StObject.set(x, "maximumDate", null)
     
-    @scala.inline
-    def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
+    inline def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
     
-    @scala.inline
-    def setMinimumDate(value: typings.std.Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+    inline def setMinimumDate(value: typings.std.Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumDateNull: Self = StObject.set(x, "minimumDate", null)
+    inline def setMinimumDateNull: Self = StObject.set(x, "minimumDate", null)
     
-    @scala.inline
-    def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
+    inline def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
     
-    @scala.inline
-    def setModifiers(value: Modifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: Modifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersClassNames(value: ModifiersClassNames): Self = StObject.set(x, "modifiersClassNames", value.asInstanceOf[js.Any])
+    inline def setModifiersClassNames(value: ModifiersClassNames): Self = StObject.set(x, "modifiersClassNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidator(value: StringDictionary[js.Function1[/* date */ typings.std.Date, Boolean]]): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    inline def setValidator(value: StringDictionary[js.Function1[/* date */ typings.std.Date, Boolean]]): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
   }
 }

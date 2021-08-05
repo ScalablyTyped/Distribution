@@ -18,8 +18,7 @@ object global {
       @JSGlobal("Azure.MobileApps.nh")
       @js.native
       def nh: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Azure.ServiceBus.NotificationHubService */ js.Any = js.native
-      @scala.inline
-      def nh_=(
+      inline def nh_=(
         x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Azure.ServiceBus.NotificationHubService */ js.Any
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nh")(x.asInstanceOf[js.Any])
     }

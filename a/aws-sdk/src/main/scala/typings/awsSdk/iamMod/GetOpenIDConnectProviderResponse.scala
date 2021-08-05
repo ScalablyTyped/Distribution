@@ -28,43 +28,31 @@ trait GetOpenIDConnectProviderResponse extends StObject {
 }
 object GetOpenIDConnectProviderResponse {
   
-  @scala.inline
-  def apply(): GetOpenIDConnectProviderResponse = {
+  inline def apply(): GetOpenIDConnectProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOpenIDConnectProviderResponse]
   }
   
-  @scala.inline
-  implicit class GetOpenIDConnectProviderResponseMutableBuilder[Self <: GetOpenIDConnectProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetOpenIDConnectProviderResponse](x: Self) {
     
-    @scala.inline
-    def setClientIDList(value: clientIDListType): Self = StObject.set(x, "ClientIDList", value.asInstanceOf[js.Any])
+    inline def setClientIDList(value: clientIDListType): Self = StObject.set(x, "ClientIDList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIDListUndefined: Self = StObject.set(x, "ClientIDList", js.undefined)
+    inline def setClientIDListUndefined: Self = StObject.set(x, "ClientIDList", js.undefined)
     
-    @scala.inline
-    def setClientIDListVarargs(value: clientIDType*): Self = StObject.set(x, "ClientIDList", js.Array(value :_*))
+    inline def setClientIDListVarargs(value: clientIDType*): Self = StObject.set(x, "ClientIDList", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setThumbprintList(value: thumbprintListType): Self = StObject.set(x, "ThumbprintList", value.asInstanceOf[js.Any])
+    inline def setThumbprintList(value: thumbprintListType): Self = StObject.set(x, "ThumbprintList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbprintListUndefined: Self = StObject.set(x, "ThumbprintList", js.undefined)
+    inline def setThumbprintListUndefined: Self = StObject.set(x, "ThumbprintList", js.undefined)
     
-    @scala.inline
-    def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value :_*))
+    inline def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: OpenIDConnectProviderUrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: OpenIDConnectProviderUrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

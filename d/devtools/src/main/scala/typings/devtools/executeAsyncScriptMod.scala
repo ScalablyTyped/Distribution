@@ -11,6 +11,5 @@ object executeAsyncScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasScriptArgs: Args): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasScriptArgs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def default(hasScriptArgs: Args): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasScriptArgs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

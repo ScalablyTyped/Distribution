@@ -16,25 +16,19 @@ trait Align extends StObject {
 }
 object Align {
   
-  @scala.inline
-  def apply(align: String, direction: String, justify: String, wrap: String): Align = {
+  inline def apply(align: String, direction: String, justify: String, wrap: String): Align = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], justify = justify.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Align]
   }
   
-  @scala.inline
-  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+  extension [Self <: Align](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustify(value: String): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
+    inline def setJustify(value: String): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
   }
 }

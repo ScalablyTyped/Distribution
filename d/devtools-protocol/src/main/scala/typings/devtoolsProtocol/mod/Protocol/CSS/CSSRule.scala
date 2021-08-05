@@ -35,37 +35,27 @@ trait CSSRule extends StObject {
 }
 object CSSRule {
   
-  @scala.inline
-  def apply(origin: StyleSheetOrigin, selectorList: SelectorList, style: CSSStyle): CSSRule = {
+  inline def apply(origin: StyleSheetOrigin, selectorList: SelectorList, style: CSSStyle): CSSRule = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], selectorList = selectorList.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSRule]
   }
   
-  @scala.inline
-  implicit class CSSRuleMutableBuilder[Self <: CSSRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSRule](x: Self) {
     
-    @scala.inline
-    def setMedia(value: js.Array[CSSMedia]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: js.Array[CSSMedia]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setMediaVarargs(value: CSSMedia*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: CSSMedia*): Self = StObject.set(x, "media", js.Array(value :_*))
     
-    @scala.inline
-    def setOrigin(value: StyleSheetOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: StyleSheetOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorList(value: SelectorList): Self = StObject.set(x, "selectorList", value.asInstanceOf[js.Any])
+    inline def setSelectorList(value: SelectorList): Self = StObject.set(x, "selectorList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
+    inline def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
   }
 }

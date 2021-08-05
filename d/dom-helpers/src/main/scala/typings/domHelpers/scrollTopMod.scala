@@ -11,8 +11,6 @@ object scrollTopMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default(node: Element, `val`: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(node: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(node: Element, `val`: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

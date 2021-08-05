@@ -39,10 +39,8 @@ object GoogleEarthEnterpriseMetadata {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def quadKeyToTileXY(quadkey: String): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("quadKeyToTileXY")(quadkey.asInstanceOf[js.Any]).asInstanceOf[Level]
+  inline def quadKeyToTileXY(quadkey: String): Level = ^.asInstanceOf[js.Dynamic].applyDynamic("quadKeyToTileXY")(quadkey.asInstanceOf[js.Any]).asInstanceOf[Level]
   
   /* static member */
-  @scala.inline
-  def tileXYToQuadKey(x: Double, y: Double, level: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tileXYToQuadKey")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def tileXYToQuadKey(x: Double, y: Double, level: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tileXYToQuadKey")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
 }

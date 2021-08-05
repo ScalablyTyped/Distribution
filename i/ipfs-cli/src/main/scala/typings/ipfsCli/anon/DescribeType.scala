@@ -12,20 +12,16 @@ trait DescribeType extends StObject {
 }
 object DescribeType {
   
-  @scala.inline
-  def apply(describe: String, `type`: String): DescribeType = {
+  inline def apply(describe: String, `type`: String): DescribeType = {
     val __obj = js.Dynamic.literal(describe = describe.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeType]
   }
   
-  @scala.inline
-  implicit class DescribeTypeMutableBuilder[Self <: DescribeType] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeType](x: Self) {
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

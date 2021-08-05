@@ -106,8 +106,7 @@ object Managers {
   }
   object BuddyManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containsBuddy: String => Boolean,
       getBuddyById: Double => SFSBuddy,
       getBuddyByName: String => SFSBuddy,
@@ -127,50 +126,35 @@ object Managers {
       __obj.asInstanceOf[BuddyManager]
     }
     
-    @scala.inline
-    implicit class BuddyManagerMutableBuilder[Self <: BuddyManager] (val x: Self) extends AnyVal {
+    extension [Self <: BuddyManager](x: Self) {
       
-      @scala.inline
-      def setContainsBuddy(value: String => Boolean): Self = StObject.set(x, "containsBuddy", js.Any.fromFunction1(value))
+      inline def setContainsBuddy(value: String => Boolean): Self = StObject.set(x, "containsBuddy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBuddyById(value: Double => SFSBuddy): Self = StObject.set(x, "getBuddyById", js.Any.fromFunction1(value))
+      inline def setGetBuddyById(value: Double => SFSBuddy): Self = StObject.set(x, "getBuddyById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBuddyByName(value: String => SFSBuddy): Self = StObject.set(x, "getBuddyByName", js.Any.fromFunction1(value))
+      inline def setGetBuddyByName(value: String => SFSBuddy): Self = StObject.set(x, "getBuddyByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBuddyByNickName(value: String => SFSBuddy): Self = StObject.set(x, "getBuddyByNickName", js.Any.fromFunction1(value))
+      inline def setGetBuddyByNickName(value: String => SFSBuddy): Self = StObject.set(x, "getBuddyByNickName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBuddyList(value: () => js.Array[SFSBuddy]): Self = StObject.set(x, "getBuddyList", js.Any.fromFunction0(value))
+      inline def setGetBuddyList(value: () => js.Array[SFSBuddy]): Self = StObject.set(x, "getBuddyList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBuddyStates(value: () => js.Array[String]): Self = StObject.set(x, "getBuddyStates", js.Any.fromFunction0(value))
+      inline def setGetBuddyStates(value: () => js.Array[String]): Self = StObject.set(x, "getBuddyStates", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMyNickName(value: () => String): Self = StObject.set(x, "getMyNickName", js.Any.fromFunction0(value))
+      inline def setGetMyNickName(value: () => String): Self = StObject.set(x, "getMyNickName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMyOnlineState(value: () => Boolean): Self = StObject.set(x, "getMyOnlineState", js.Any.fromFunction0(value))
+      inline def setGetMyOnlineState(value: () => Boolean): Self = StObject.set(x, "getMyOnlineState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMyState(value: () => String): Self = StObject.set(x, "getMyState", js.Any.fromFunction0(value))
+      inline def setGetMyState(value: () => String): Self = StObject.set(x, "getMyState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMyVariable(value: String => SFSBuddyVariable): Self = StObject.set(x, "getMyVariable", js.Any.fromFunction1(value))
+      inline def setGetMyVariable(value: String => SFSBuddyVariable): Self = StObject.set(x, "getMyVariable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMyVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getMyVariables", js.Any.fromFunction0(value))
+      inline def setGetMyVariables(value: () => js.Array[SFSBuddyVariable]): Self = StObject.set(x, "getMyVariables", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOfflineBuddies(value: () => js.Array[SFSBuddy]): Self = StObject.set(x, "getOfflineBuddies", js.Any.fromFunction0(value))
+      inline def setGetOfflineBuddies(value: () => js.Array[SFSBuddy]): Self = StObject.set(x, "getOfflineBuddies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOnlineBuddies(value: () => js.Array[SFSBuddy]): Self = StObject.set(x, "getOnlineBuddies", js.Any.fromFunction0(value))
+      inline def setGetOnlineBuddies(value: () => js.Array[SFSBuddy]): Self = StObject.set(x, "getOnlineBuddies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsInited(value: () => Boolean): Self = StObject.set(x, "isInited", js.Any.fromFunction0(value))
+      inline def setIsInited(value: () => Boolean): Self = StObject.set(x, "isInited", js.Any.fromFunction0(value))
     }
   }
   
@@ -252,8 +236,7 @@ object Managers {
   }
   object RoomManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containsGroup: String => Boolean,
       containsRoom: js.Any => Boolean,
       containsRoomInGroup: (js.Any, String) => Boolean,
@@ -270,41 +253,29 @@ object Managers {
       __obj.asInstanceOf[RoomManager]
     }
     
-    @scala.inline
-    implicit class RoomManagerMutableBuilder[Self <: RoomManager] (val x: Self) extends AnyVal {
+    extension [Self <: RoomManager](x: Self) {
       
-      @scala.inline
-      def setContainsGroup(value: String => Boolean): Self = StObject.set(x, "containsGroup", js.Any.fromFunction1(value))
+      inline def setContainsGroup(value: String => Boolean): Self = StObject.set(x, "containsGroup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainsRoom(value: js.Any => Boolean): Self = StObject.set(x, "containsRoom", js.Any.fromFunction1(value))
+      inline def setContainsRoom(value: js.Any => Boolean): Self = StObject.set(x, "containsRoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainsRoomInGroup(value: (js.Any, String) => Boolean): Self = StObject.set(x, "containsRoomInGroup", js.Any.fromFunction2(value))
+      inline def setContainsRoomInGroup(value: (js.Any, String) => Boolean): Self = StObject.set(x, "containsRoomInGroup", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetJoinedRooms(value: () => js.Array[SFSRoom]): Self = StObject.set(x, "getJoinedRooms", js.Any.fromFunction0(value))
+      inline def setGetJoinedRooms(value: () => js.Array[SFSRoom]): Self = StObject.set(x, "getJoinedRooms", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRoomById(value: Double => SFSRoom): Self = StObject.set(x, "getRoomById", js.Any.fromFunction1(value))
+      inline def setGetRoomById(value: Double => SFSRoom): Self = StObject.set(x, "getRoomById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRoomByName(value: String => SFSRoom): Self = StObject.set(x, "getRoomByName", js.Any.fromFunction1(value))
+      inline def setGetRoomByName(value: String => SFSRoom): Self = StObject.set(x, "getRoomByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRoomCount(value: () => Double): Self = StObject.set(x, "getRoomCount", js.Any.fromFunction0(value))
+      inline def setGetRoomCount(value: () => Double): Self = StObject.set(x, "getRoomCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRoomGroups(value: () => js.Array[String]): Self = StObject.set(x, "getRoomGroups", js.Any.fromFunction0(value))
+      inline def setGetRoomGroups(value: () => js.Array[String]): Self = StObject.set(x, "getRoomGroups", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRoomList(value: () => js.Array[SFSRoom]): Self = StObject.set(x, "getRoomList", js.Any.fromFunction0(value))
+      inline def setGetRoomList(value: () => js.Array[SFSRoom]): Self = StObject.set(x, "getRoomList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRoomListFromGroup(value: String => js.Array[SFSRoom]): Self = StObject.set(x, "getRoomListFromGroup", js.Any.fromFunction1(value))
+      inline def setGetRoomListFromGroup(value: String => js.Array[SFSRoom]): Self = StObject.set(x, "getRoomListFromGroup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUserRooms(value: SFSUser => js.Array[SFSRoom]): Self = StObject.set(x, "getUserRooms", js.Any.fromFunction1(value))
+      inline def setGetUserRooms(value: SFSUser => js.Array[SFSRoom]): Self = StObject.set(x, "getUserRooms", js.Any.fromFunction1(value))
     }
   }
   
@@ -359,8 +330,7 @@ object Managers {
   }
   object UserManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containsUser: SFSUser => Boolean,
       containsUserId: Double => Boolean,
       containsUserName: String => Boolean,
@@ -373,29 +343,21 @@ object Managers {
       __obj.asInstanceOf[UserManager]
     }
     
-    @scala.inline
-    implicit class UserManagerMutableBuilder[Self <: UserManager] (val x: Self) extends AnyVal {
+    extension [Self <: UserManager](x: Self) {
       
-      @scala.inline
-      def setContainsUser(value: SFSUser => Boolean): Self = StObject.set(x, "containsUser", js.Any.fromFunction1(value))
+      inline def setContainsUser(value: SFSUser => Boolean): Self = StObject.set(x, "containsUser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainsUserId(value: Double => Boolean): Self = StObject.set(x, "containsUserId", js.Any.fromFunction1(value))
+      inline def setContainsUserId(value: Double => Boolean): Self = StObject.set(x, "containsUserId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainsUserName(value: String => Boolean): Self = StObject.set(x, "containsUserName", js.Any.fromFunction1(value))
+      inline def setContainsUserName(value: String => Boolean): Self = StObject.set(x, "containsUserName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUserById(value: Double => SFSUser): Self = StObject.set(x, "getUserById", js.Any.fromFunction1(value))
+      inline def setGetUserById(value: Double => SFSUser): Self = StObject.set(x, "getUserById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUserByName(value: String => SFSUser): Self = StObject.set(x, "getUserByName", js.Any.fromFunction1(value))
+      inline def setGetUserByName(value: String => SFSUser): Self = StObject.set(x, "getUserByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUserCount(value: () => Double): Self = StObject.set(x, "getUserCount", js.Any.fromFunction0(value))
+      inline def setGetUserCount(value: () => Double): Self = StObject.set(x, "getUserCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserList(value: () => js.Array[SFSUser]): Self = StObject.set(x, "getUserList", js.Any.fromFunction0(value))
+      inline def setGetUserList(value: () => js.Array[SFSUser]): Self = StObject.set(x, "getUserList", js.Any.fromFunction0(value))
     }
   }
 }

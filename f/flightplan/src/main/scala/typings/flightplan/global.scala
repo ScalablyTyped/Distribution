@@ -10,6 +10,5 @@ object global {
   @JSGlobal("flightplan")
   @js.native
   def flightplan: Flightplan = js.native
-  @scala.inline
-  def flightplan_=(x: Flightplan): Unit = js.Dynamic.global.updateDynamic("flightplan")(x.asInstanceOf[js.Any])
+  inline def flightplan_=(x: Flightplan): Unit = js.Dynamic.global.updateDynamic("flightplan")(x.asInstanceOf[js.Any])
 }

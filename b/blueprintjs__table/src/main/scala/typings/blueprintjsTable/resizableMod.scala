@@ -26,15 +26,15 @@ object resizableMod {
       * Returns the CSS style to apply to the child element given the state's
       * size value.
       */
-    var getStyle: js.Any = js.native
+    /* private */ var getStyle: js.Any = js.native
     
-    var offsetSize: js.Any = js.native
+    /* private */ var offsetSize: js.Any = js.native
     
-    var onResizeEnd: js.Any = js.native
+    /* private */ var onResizeEnd: js.Any = js.native
     
-    var onResizeMove: js.Any = js.native
+    /* private */ var onResizeMove: js.Any = js.native
     
-    var renderResizeHandle: js.Any = js.native
+    /* private */ var renderResizeHandle: js.Any = js.native
   }
   /* static members */
   object Resizable {
@@ -46,11 +46,9 @@ object resizableMod {
     @JSImport("@blueprintjs/table/lib/esm/interactions/resizable", "Resizable.defaultProps")
     @js.native
     def defaultProps: IsResizable = js.native
-    @scala.inline
-    def defaultProps_=(x: IsResizable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IsResizable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(hasSize: IResizableProps, prevState: IResizeableState): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Size]
+    inline def getDerivedStateFromProps(hasSize: IResizableProps, prevState: IResizeableState): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Size]
   }
   
   type IIndexedResizeCallback = js.Function2[/* index */ Double, /* size */ Double, Unit]
@@ -123,26 +121,20 @@ object resizableMod {
   }
   object IResizeableState {
     
-    @scala.inline
-    def apply(): IResizeableState = {
+    inline def apply(): IResizeableState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IResizeableState]
     }
     
-    @scala.inline
-    implicit class IResizeableStateMutableBuilder[Self <: IResizeableState] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeableState](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setUnclampedSize(value: Double): Self = StObject.set(x, "unclampedSize", value.asInstanceOf[js.Any])
+      inline def setUnclampedSize(value: Double): Self = StObject.set(x, "unclampedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnclampedSizeUndefined: Self = StObject.set(x, "unclampedSize", js.undefined)
+      inline def setUnclampedSizeUndefined: Self = StObject.set(x, "unclampedSize", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait DescribeElasticsearchDomainsResponse extends StObject {
 }
 object DescribeElasticsearchDomainsResponse {
   
-  @scala.inline
-  def apply(DomainStatusList: ElasticsearchDomainStatusList): DescribeElasticsearchDomainsResponse = {
+  inline def apply(DomainStatusList: ElasticsearchDomainStatusList): DescribeElasticsearchDomainsResponse = {
     val __obj = js.Dynamic.literal(DomainStatusList = DomainStatusList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeElasticsearchDomainsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeElasticsearchDomainsResponseMutableBuilder[Self <: DescribeElasticsearchDomainsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticsearchDomainsResponse](x: Self) {
     
-    @scala.inline
-    def setDomainStatusList(value: ElasticsearchDomainStatusList): Self = StObject.set(x, "DomainStatusList", value.asInstanceOf[js.Any])
+    inline def setDomainStatusList(value: ElasticsearchDomainStatusList): Self = StObject.set(x, "DomainStatusList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainStatusListVarargs(value: ElasticsearchDomainStatus*): Self = StObject.set(x, "DomainStatusList", js.Array(value :_*))
+    inline def setDomainStatusListVarargs(value: ElasticsearchDomainStatus*): Self = StObject.set(x, "DomainStatusList", js.Array(value :_*))
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleGridColumnSpan extends StObject
 object styleGridColumnSpan {
   
-  @scala.inline
-  def styleGridColumnSpanNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleGridColumnSpanNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleGridColumnSpan_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleGridColumnSpan_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -16,10 +16,8 @@ object mod {
   @js.native
   val default: SpeechRecognition = js.native
   
-  @scala.inline
-  def useSpeechRecognition(): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")().asInstanceOf[FinalTranscript]
-  @scala.inline
-  def useSpeechRecognition(options: SpeechRecognitionOptions): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")(options.asInstanceOf[js.Any]).asInstanceOf[FinalTranscript]
+  inline def useSpeechRecognition(): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")().asInstanceOf[FinalTranscript]
+  inline def useSpeechRecognition(options: SpeechRecognitionOptions): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")(options.asInstanceOf[js.Any]).asInstanceOf[FinalTranscript]
   
   trait Command extends StObject {
     
@@ -35,38 +33,28 @@ object mod {
   }
   object Command {
     
-    @scala.inline
-    def apply(callback: /* repeated */ js.Any => js.Any, command: String | RegExp): Command = {
+    inline def apply(callback: /* repeated */ js.Any => js.Any, command: String | RegExp): Command = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command]
     }
     
-    @scala.inline
-    implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+    extension [Self <: Command](x: Self) {
       
-      @scala.inline
-      def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCommand(value: String | RegExp): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String | RegExp): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuzzyMatchingThreshold(value: Double): Self = StObject.set(x, "fuzzyMatchingThreshold", value.asInstanceOf[js.Any])
+      inline def setFuzzyMatchingThreshold(value: Double): Self = StObject.set(x, "fuzzyMatchingThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuzzyMatchingThresholdUndefined: Self = StObject.set(x, "fuzzyMatchingThreshold", js.undefined)
+      inline def setFuzzyMatchingThresholdUndefined: Self = StObject.set(x, "fuzzyMatchingThreshold", js.undefined)
       
-      @scala.inline
-      def setIsFuzzyMatch(value: Boolean): Self = StObject.set(x, "isFuzzyMatch", value.asInstanceOf[js.Any])
+      inline def setIsFuzzyMatch(value: Boolean): Self = StObject.set(x, "isFuzzyMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFuzzyMatchUndefined: Self = StObject.set(x, "isFuzzyMatch", js.undefined)
+      inline def setIsFuzzyMatchUndefined: Self = StObject.set(x, "isFuzzyMatch", js.undefined)
       
-      @scala.inline
-      def setMatchInterim(value: Boolean): Self = StObject.set(x, "matchInterim", value.asInstanceOf[js.Any])
+      inline def setMatchInterim(value: Boolean): Self = StObject.set(x, "matchInterim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchInterimUndefined: Self = StObject.set(x, "matchInterim", js.undefined)
+      inline def setMatchInterimUndefined: Self = StObject.set(x, "matchInterim", js.undefined)
     }
   }
   
@@ -78,26 +66,20 @@ object mod {
   }
   object ListeningOptions {
     
-    @scala.inline
-    def apply(): ListeningOptions = {
+    inline def apply(): ListeningOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListeningOptions]
     }
     
-    @scala.inline
-    implicit class ListeningOptionsMutableBuilder[Self <: ListeningOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListeningOptions](x: Self) {
       
-      @scala.inline
-      def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+      inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+      inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     }
   }
   
@@ -126,35 +108,26 @@ object mod {
   }
   object SpeechRecognitionOptions {
     
-    @scala.inline
-    def apply(): SpeechRecognitionOptions = {
+    inline def apply(): SpeechRecognitionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpeechRecognitionOptions]
     }
     
-    @scala.inline
-    implicit class SpeechRecognitionOptionsMutableBuilder[Self <: SpeechRecognitionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpeechRecognitionOptions](x: Self) {
       
-      @scala.inline
-      def setClearTranscriptOnListen(value: Boolean): Self = StObject.set(x, "clearTranscriptOnListen", value.asInstanceOf[js.Any])
+      inline def setClearTranscriptOnListen(value: Boolean): Self = StObject.set(x, "clearTranscriptOnListen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearTranscriptOnListenUndefined: Self = StObject.set(x, "clearTranscriptOnListen", js.undefined)
+      inline def setClearTranscriptOnListenUndefined: Self = StObject.set(x, "clearTranscriptOnListen", js.undefined)
       
-      @scala.inline
-      def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+      inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      @scala.inline
-      def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
-      @scala.inline
-      def setTranscribing(value: Boolean): Self = StObject.set(x, "transcribing", value.asInstanceOf[js.Any])
+      inline def setTranscribing(value: Boolean): Self = StObject.set(x, "transcribing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscribingUndefined: Self = StObject.set(x, "transcribing", js.undefined)
+      inline def setTranscribingUndefined: Self = StObject.set(x, "transcribing", js.undefined)
     }
   }
 }

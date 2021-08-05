@@ -57,50 +57,36 @@ object mod {
   }
   object TrackerParams {
     
-    @scala.inline
-    def apply(): TrackerParams = {
+    inline def apply(): TrackerParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrackerParams]
     }
     
-    @scala.inline
-    implicit class TrackerParamsMutableBuilder[Self <: TrackerParams] (val x: Self) extends AnyVal {
+    extension [Self <: TrackerParams](x: Self) {
       
-      @scala.inline
-      def setConstantVelocity(value: Boolean): Self = StObject.set(x, "constantVelocity", value.asInstanceOf[js.Any])
+      inline def setConstantVelocity(value: Boolean): Self = StObject.set(x, "constantVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantVelocityUndefined: Self = StObject.set(x, "constantVelocity", js.undefined)
+      inline def setConstantVelocityUndefined: Self = StObject.set(x, "constantVelocity", js.undefined)
       
-      @scala.inline
-      def setFaceDetection(value: UseWebWorkers): Self = StObject.set(x, "faceDetection", value.asInstanceOf[js.Any])
+      inline def setFaceDetection(value: UseWebWorkers): Self = StObject.set(x, "faceDetection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceDetectionUndefined: Self = StObject.set(x, "faceDetection", js.undefined)
+      inline def setFaceDetectionUndefined: Self = StObject.set(x, "faceDetection", js.undefined)
       
-      @scala.inline
-      def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
+      inline def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoreThresholdUndefined: Self = StObject.set(x, "scoreThreshold", js.undefined)
+      inline def setScoreThresholdUndefined: Self = StObject.set(x, "scoreThreshold", js.undefined)
       
-      @scala.inline
-      def setSearchWindow(value: Double): Self = StObject.set(x, "searchWindow", value.asInstanceOf[js.Any])
+      inline def setSearchWindow(value: Double): Self = StObject.set(x, "searchWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchWindowUndefined: Self = StObject.set(x, "searchWindow", js.undefined)
+      inline def setSearchWindowUndefined: Self = StObject.set(x, "searchWindow", js.undefined)
       
-      @scala.inline
-      def setStopOnConvergence(value: Boolean): Self = StObject.set(x, "stopOnConvergence", value.asInstanceOf[js.Any])
+      inline def setStopOnConvergence(value: Boolean): Self = StObject.set(x, "stopOnConvergence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnConvergenceUndefined: Self = StObject.set(x, "stopOnConvergence", js.undefined)
+      inline def setStopOnConvergenceUndefined: Self = StObject.set(x, "stopOnConvergence", js.undefined)
       
-      @scala.inline
-      def setUseWebGL(value: Boolean): Self = StObject.set(x, "useWebGL", value.asInstanceOf[js.Any])
+      inline def setUseWebGL(value: Boolean): Self = StObject.set(x, "useWebGL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWebGLUndefined: Self = StObject.set(x, "useWebGL", js.undefined)
+      inline def setUseWebGLUndefined: Self = StObject.set(x, "useWebGL", js.undefined)
     }
   }
   

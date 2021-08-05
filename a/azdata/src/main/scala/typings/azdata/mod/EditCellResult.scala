@@ -12,19 +12,15 @@ trait EditCellResult extends StObject {
 }
 object EditCellResult {
   
-  @scala.inline
-  def apply(cell: EditCell, isRowDirty: Boolean): EditCellResult = {
+  inline def apply(cell: EditCell, isRowDirty: Boolean): EditCellResult = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], isRowDirty = isRowDirty.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditCellResult]
   }
   
-  @scala.inline
-  implicit class EditCellResultMutableBuilder[Self <: EditCellResult] (val x: Self) extends AnyVal {
+  extension [Self <: EditCellResult](x: Self) {
     
-    @scala.inline
-    def setCell(value: EditCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: EditCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRowDirty(value: Boolean): Self = StObject.set(x, "isRowDirty", value.asInstanceOf[js.Any])
+    inline def setIsRowDirty(value: Boolean): Self = StObject.set(x, "isRowDirty", value.asInstanceOf[js.Any])
   }
 }

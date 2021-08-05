@@ -17,25 +17,19 @@ trait NavigateBackMiniProgramOptions
 }
 object NavigateBackMiniProgramOptions {
   
-  @scala.inline
-  def apply(): NavigateBackMiniProgramOptions = {
+  inline def apply(): NavigateBackMiniProgramOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigateBackMiniProgramOptions]
   }
   
-  @scala.inline
-  implicit class NavigateBackMiniProgramOptionsMutableBuilder[Self <: NavigateBackMiniProgramOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateBackMiniProgramOptions](x: Self) {
     
-    @scala.inline
-    def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+    inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* res */ ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

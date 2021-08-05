@@ -14,8 +14,7 @@ trait GridsterCollision extends StObject {
 }
 object GridsterCollision {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     on_overlap: GridsterCollisionData => Unit,
     on_overlap_start: GridsterCollisionData => Unit,
     on_overlap_stop: GridsterCollisionData => Unit
@@ -24,16 +23,12 @@ object GridsterCollision {
     __obj.asInstanceOf[GridsterCollision]
   }
   
-  @scala.inline
-  implicit class GridsterCollisionMutableBuilder[Self <: GridsterCollision] (val x: Self) extends AnyVal {
+  extension [Self <: GridsterCollision](x: Self) {
     
-    @scala.inline
-    def setOn_overlap(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap", js.Any.fromFunction1(value))
+    inline def setOn_overlap(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn_overlap_start(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap_start", js.Any.fromFunction1(value))
+    inline def setOn_overlap_start(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap_start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn_overlap_stop(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap_stop", js.Any.fromFunction1(value))
+    inline def setOn_overlap_stop(value: GridsterCollisionData => Unit): Self = StObject.set(x, "on_overlap_stop", js.Any.fromFunction1(value))
   }
 }

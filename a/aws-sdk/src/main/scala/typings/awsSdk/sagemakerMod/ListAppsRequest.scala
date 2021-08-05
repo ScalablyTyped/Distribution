@@ -38,49 +38,35 @@ trait ListAppsRequest extends StObject {
 }
 object ListAppsRequest {
   
-  @scala.inline
-  def apply(): ListAppsRequest = {
+  inline def apply(): ListAppsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAppsRequest]
   }
   
-  @scala.inline
-  implicit class ListAppsRequestMutableBuilder[Self <: ListAppsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAppsRequest](x: Self) {
     
-    @scala.inline
-    def setDomainIdEquals(value: DomainId): Self = StObject.set(x, "DomainIdEquals", value.asInstanceOf[js.Any])
+    inline def setDomainIdEquals(value: DomainId): Self = StObject.set(x, "DomainIdEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIdEqualsUndefined: Self = StObject.set(x, "DomainIdEquals", js.undefined)
+    inline def setDomainIdEqualsUndefined: Self = StObject.set(x, "DomainIdEquals", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: AppSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: AppSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
-    @scala.inline
-    def setUserProfileNameEquals(value: UserProfileName): Self = StObject.set(x, "UserProfileNameEquals", value.asInstanceOf[js.Any])
+    inline def setUserProfileNameEquals(value: UserProfileName): Self = StObject.set(x, "UserProfileNameEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfileNameEqualsUndefined: Self = StObject.set(x, "UserProfileNameEquals", js.undefined)
+    inline def setUserProfileNameEqualsUndefined: Self = StObject.set(x, "UserProfileNameEquals", js.undefined)
   }
 }

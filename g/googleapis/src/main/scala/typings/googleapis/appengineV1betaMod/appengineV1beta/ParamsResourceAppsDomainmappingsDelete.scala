@@ -30,31 +30,23 @@ trait ParamsResourceAppsDomainmappingsDelete
 }
 object ParamsResourceAppsDomainmappingsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceAppsDomainmappingsDelete = {
+  inline def apply(): ParamsResourceAppsDomainmappingsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAppsDomainmappingsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAppsDomainmappingsDeleteMutableBuilder[Self <: ParamsResourceAppsDomainmappingsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAppsDomainmappingsDelete](x: Self) {
     
-    @scala.inline
-    def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
+    inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
+    inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDomainMappingsId(value: String): Self = StObject.set(x, "domainMappingsId", value.asInstanceOf[js.Any])
+    inline def setDomainMappingsId(value: String): Self = StObject.set(x, "domainMappingsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainMappingsIdUndefined: Self = StObject.set(x, "domainMappingsId", js.undefined)
+    inline def setDomainMappingsIdUndefined: Self = StObject.set(x, "domainMappingsId", js.undefined)
   }
 }

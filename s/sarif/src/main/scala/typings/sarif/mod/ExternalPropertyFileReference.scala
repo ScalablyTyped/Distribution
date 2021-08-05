@@ -28,37 +28,27 @@ trait ExternalPropertyFileReference extends StObject {
 }
 object ExternalPropertyFileReference {
   
-  @scala.inline
-  def apply(): ExternalPropertyFileReference = {
+  inline def apply(): ExternalPropertyFileReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalPropertyFileReference]
   }
   
-  @scala.inline
-  implicit class ExternalPropertyFileReferenceMutableBuilder[Self <: ExternalPropertyFileReference] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalPropertyFileReference](x: Self) {
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
-    @scala.inline
-    def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
     
-    @scala.inline
-    def setLocation(value: ArtifactLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ArtifactLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

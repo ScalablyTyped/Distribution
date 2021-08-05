@@ -22,8 +22,7 @@ trait Base extends StObject {
 }
 object Base {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addons: StringDictionary[String],
     base: Plan,
     currency: Code,
@@ -35,28 +34,20 @@ object Base {
     __obj.asInstanceOf[Base]
   }
   
-  @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+  extension [Self <: Base](x: Self) {
     
-    @scala.inline
-    def setAddons(value: StringDictionary[String]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
+    inline def setAddons(value: StringDictionary[String]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase(value: Plan): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Plan): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: Code): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: Code): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: Addons): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Addons): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNow(value: Addons): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    inline def setNow(value: Addons): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxes(value: js.Array[SubscriptionPricingStateTax]): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
+    inline def setTaxes(value: js.Array[SubscriptionPricingStateTax]): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxesVarargs(value: SubscriptionPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
+    inline def setTaxesVarargs(value: SubscriptionPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
   }
 }

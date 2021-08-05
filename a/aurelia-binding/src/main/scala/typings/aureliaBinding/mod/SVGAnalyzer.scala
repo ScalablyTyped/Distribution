@@ -10,16 +10,13 @@ trait SVGAnalyzer extends StObject {
 }
 object SVGAnalyzer {
   
-  @scala.inline
-  def apply(isStandardSvgAttribute: (String, String) => Boolean): SVGAnalyzer = {
+  inline def apply(isStandardSvgAttribute: (String, String) => Boolean): SVGAnalyzer = {
     val __obj = js.Dynamic.literal(isStandardSvgAttribute = js.Any.fromFunction2(isStandardSvgAttribute))
     __obj.asInstanceOf[SVGAnalyzer]
   }
   
-  @scala.inline
-  implicit class SVGAnalyzerMutableBuilder[Self <: SVGAnalyzer] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnalyzer](x: Self) {
     
-    @scala.inline
-    def setIsStandardSvgAttribute(value: (String, String) => Boolean): Self = StObject.set(x, "isStandardSvgAttribute", js.Any.fromFunction2(value))
+    inline def setIsStandardSvgAttribute(value: (String, String) => Boolean): Self = StObject.set(x, "isStandardSvgAttribute", js.Any.fromFunction2(value))
   }
 }

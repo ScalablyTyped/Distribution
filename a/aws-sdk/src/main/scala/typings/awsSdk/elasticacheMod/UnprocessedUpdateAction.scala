@@ -33,43 +33,31 @@ trait UnprocessedUpdateAction extends StObject {
 }
 object UnprocessedUpdateAction {
   
-  @scala.inline
-  def apply(): UnprocessedUpdateAction = {
+  inline def apply(): UnprocessedUpdateAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnprocessedUpdateAction]
   }
   
-  @scala.inline
-  implicit class UnprocessedUpdateActionMutableBuilder[Self <: UnprocessedUpdateAction] (val x: Self) extends AnyVal {
+  extension [Self <: UnprocessedUpdateAction](x: Self) {
     
-    @scala.inline
-    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
+    inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
+    inline def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTypeUndefined: Self = StObject.set(x, "ErrorType", js.undefined)
+    inline def setErrorTypeUndefined: Self = StObject.set(x, "ErrorType", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
+    inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
     
-    @scala.inline
-    def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
+    inline def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
+    inline def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
   }
 }

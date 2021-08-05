@@ -173,8 +173,7 @@ object Diagnostics {
   }
   object HttpDiagnosticProviderRequestResponseCompletedEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activityId: String,
       initiator: HttpDiagnosticRequestInitiator,
       processId: js.Any,
@@ -187,29 +186,21 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticProviderRequestResponseCompletedEventArgs]
     }
     
-    @scala.inline
-    implicit class HttpDiagnosticProviderRequestResponseCompletedEventArgsMutableBuilder[Self <: HttpDiagnosticProviderRequestResponseCompletedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HttpDiagnosticProviderRequestResponseCompletedEventArgs](x: Self) {
       
-      @scala.inline
-      def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+      inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiator(value: HttpDiagnosticRequestInitiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+      inline def setInitiator(value: HttpDiagnosticRequestInitiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: js.Any): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: js.Any): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
+      inline def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLocations(value: js.Any): Self = StObject.set(x, "sourceLocations", value.asInstanceOf[js.Any])
+      inline def setSourceLocations(value: js.Any): Self = StObject.set(x, "sourceLocations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadId(value: js.Any): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+      inline def setThreadId(value: js.Any): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamps(value: HttpDiagnosticProviderRequestResponseTimestamps): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+      inline def setTimestamps(value: HttpDiagnosticProviderRequestResponseTimestamps): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,8 +236,7 @@ object Diagnostics {
   }
   object HttpDiagnosticProviderRequestResponseTimestamps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheCheckedTimestamp: Date,
       connectionCompletedTimestamp: Date,
       connectionInitiatedTimestamp: Date,
@@ -261,35 +251,25 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticProviderRequestResponseTimestamps]
     }
     
-    @scala.inline
-    implicit class HttpDiagnosticProviderRequestResponseTimestampsMutableBuilder[Self <: HttpDiagnosticProviderRequestResponseTimestamps] (val x: Self) extends AnyVal {
+    extension [Self <: HttpDiagnosticProviderRequestResponseTimestamps](x: Self) {
       
-      @scala.inline
-      def setCacheCheckedTimestamp(value: Date): Self = StObject.set(x, "cacheCheckedTimestamp", value.asInstanceOf[js.Any])
+      inline def setCacheCheckedTimestamp(value: Date): Self = StObject.set(x, "cacheCheckedTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionCompletedTimestamp(value: Date): Self = StObject.set(x, "connectionCompletedTimestamp", value.asInstanceOf[js.Any])
+      inline def setConnectionCompletedTimestamp(value: Date): Self = StObject.set(x, "connectionCompletedTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionInitiatedTimestamp(value: Date): Self = StObject.set(x, "connectionInitiatedTimestamp", value.asInstanceOf[js.Any])
+      inline def setConnectionInitiatedTimestamp(value: Date): Self = StObject.set(x, "connectionInitiatedTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameResolvedTimestamp(value: Date): Self = StObject.set(x, "nameResolvedTimestamp", value.asInstanceOf[js.Any])
+      inline def setNameResolvedTimestamp(value: Date): Self = StObject.set(x, "nameResolvedTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestCompletedTimestamp(value: Date): Self = StObject.set(x, "requestCompletedTimestamp", value.asInstanceOf[js.Any])
+      inline def setRequestCompletedTimestamp(value: Date): Self = StObject.set(x, "requestCompletedTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestSentTimestamp(value: Date): Self = StObject.set(x, "requestSentTimestamp", value.asInstanceOf[js.Any])
+      inline def setRequestSentTimestamp(value: Date): Self = StObject.set(x, "requestSentTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseCompletedTimestamp(value: Date): Self = StObject.set(x, "responseCompletedTimestamp", value.asInstanceOf[js.Any])
+      inline def setResponseCompletedTimestamp(value: Date): Self = StObject.set(x, "responseCompletedTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseReceivedTimestamp(value: Date): Self = StObject.set(x, "responseReceivedTimestamp", value.asInstanceOf[js.Any])
+      inline def setResponseReceivedTimestamp(value: Date): Self = StObject.set(x, "responseReceivedTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslNegotiatedTimestamp(value: Date): Self = StObject.set(x, "sslNegotiatedTimestamp", value.asInstanceOf[js.Any])
+      inline def setSslNegotiatedTimestamp(value: Date): Self = StObject.set(x, "sslNegotiatedTimestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,8 +299,7 @@ object Diagnostics {
   }
   object HttpDiagnosticProviderRequestSentEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activityId: String,
       initiator: HttpDiagnosticRequestInitiator,
       message: HttpRequestMessage,
@@ -333,29 +312,21 @@ object Diagnostics {
       __obj.asInstanceOf[HttpDiagnosticProviderRequestSentEventArgs]
     }
     
-    @scala.inline
-    implicit class HttpDiagnosticProviderRequestSentEventArgsMutableBuilder[Self <: HttpDiagnosticProviderRequestSentEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HttpDiagnosticProviderRequestSentEventArgs](x: Self) {
       
-      @scala.inline
-      def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+      inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiator(value: HttpDiagnosticRequestInitiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+      inline def setInitiator(value: HttpDiagnosticRequestInitiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: HttpRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: HttpRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLocations(value: IVectorView[HttpDiagnosticSourceLocation]): Self = StObject.set(x, "sourceLocations", value.asInstanceOf[js.Any])
+      inline def setSourceLocations(value: IVectorView[HttpDiagnosticSourceLocation]): Self = StObject.set(x, "sourceLocations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadId(value: Double): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+      inline def setThreadId(value: Double): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -373,23 +344,18 @@ object Diagnostics {
   }
   object HttpDiagnosticProviderResponseReceivedEventArgs {
     
-    @scala.inline
-    def apply(activityId: String, message: HttpResponseMessage, timestamp: Date): HttpDiagnosticProviderResponseReceivedEventArgs = {
+    inline def apply(activityId: String, message: HttpResponseMessage, timestamp: Date): HttpDiagnosticProviderResponseReceivedEventArgs = {
       val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpDiagnosticProviderResponseReceivedEventArgs]
     }
     
-    @scala.inline
-    implicit class HttpDiagnosticProviderResponseReceivedEventArgsMutableBuilder[Self <: HttpDiagnosticProviderResponseReceivedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HttpDiagnosticProviderResponseReceivedEventArgs](x: Self) {
       
-      @scala.inline
-      def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+      inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: HttpResponseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: HttpResponseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -407,23 +373,18 @@ object Diagnostics {
   }
   object HttpDiagnosticSourceLocation {
     
-    @scala.inline
-    def apply(columnNumber: Double, lineNumber: Double, sourceUri: Uri): HttpDiagnosticSourceLocation = {
+    inline def apply(columnNumber: Double, lineNumber: Double, sourceUri: Uri): HttpDiagnosticSourceLocation = {
       val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], sourceUri = sourceUri.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpDiagnosticSourceLocation]
     }
     
-    @scala.inline
-    implicit class HttpDiagnosticSourceLocationMutableBuilder[Self <: HttpDiagnosticSourceLocation] (val x: Self) extends AnyVal {
+    extension [Self <: HttpDiagnosticSourceLocation](x: Self) {
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUri(value: Uri): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
+      inline def setSourceUri(value: Uri): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
     }
   }
 }

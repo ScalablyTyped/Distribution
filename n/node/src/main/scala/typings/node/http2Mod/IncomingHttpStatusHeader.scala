@@ -11,19 +11,15 @@ trait IncomingHttpStatusHeader extends StObject {
 }
 object IncomingHttpStatusHeader {
   
-  @scala.inline
-  def apply(): IncomingHttpStatusHeader = {
+  inline def apply(): IncomingHttpStatusHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncomingHttpStatusHeader]
   }
   
-  @scala.inline
-  implicit class IncomingHttpStatusHeaderMutableBuilder[Self <: IncomingHttpStatusHeader] (val x: Self) extends AnyVal {
+  extension [Self <: IncomingHttpStatusHeader](x: Self) {
     
-    @scala.inline
-    def setColonstatus(value: Double): Self = StObject.set(x, ":status", value.asInstanceOf[js.Any])
+    inline def setColonstatus(value: Double): Self = StObject.set(x, ":status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColonstatusUndefined: Self = StObject.set(x, ":status", js.undefined)
+    inline def setColonstatusUndefined: Self = StObject.set(x, ":status", js.undefined)
   }
 }

@@ -69,8 +69,7 @@ trait XDiagram
 }
 object XDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultColorScheme: XColorScheme,
     Floor: XPropertySet,
     Legend: XLegend,
@@ -90,40 +89,28 @@ object XDiagram {
     __obj.asInstanceOf[XDiagram]
   }
   
-  @scala.inline
-  implicit class XDiagramMutableBuilder[Self <: XDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: XDiagram](x: Self) {
     
-    @scala.inline
-    def setDefaultColorScheme(value: XColorScheme): Self = StObject.set(x, "DefaultColorScheme", value.asInstanceOf[js.Any])
+    inline def setDefaultColorScheme(value: XColorScheme): Self = StObject.set(x, "DefaultColorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloor(value: XPropertySet): Self = StObject.set(x, "Floor", value.asInstanceOf[js.Any])
+    inline def setFloor(value: XPropertySet): Self = StObject.set(x, "Floor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultColorScheme(value: () => XColorScheme): Self = StObject.set(x, "getDefaultColorScheme", js.Any.fromFunction0(value))
+    inline def setGetDefaultColorScheme(value: () => XColorScheme): Self = StObject.set(x, "getDefaultColorScheme", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFloor(value: () => XPropertySet): Self = StObject.set(x, "getFloor", js.Any.fromFunction0(value))
+    inline def setGetFloor(value: () => XPropertySet): Self = StObject.set(x, "getFloor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLegend(value: () => XLegend): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
+    inline def setGetLegend(value: () => XLegend): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWall(value: () => XPropertySet): Self = StObject.set(x, "getWall", js.Any.fromFunction0(value))
+    inline def setGetWall(value: () => XPropertySet): Self = StObject.set(x, "getWall", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLegend(value: XLegend): Self = StObject.set(x, "Legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: XLegend): Self = StObject.set(x, "Legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultColorScheme(value: XColorScheme => Unit): Self = StObject.set(x, "setDefaultColorScheme", js.Any.fromFunction1(value))
+    inline def setSetDefaultColorScheme(value: XColorScheme => Unit): Self = StObject.set(x, "setDefaultColorScheme", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDiagramData(value: (XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "setDiagramData", js.Any.fromFunction2(value))
+    inline def setSetDiagramData(value: (XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "setDiagramData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLegend(value: XLegend => Unit): Self = StObject.set(x, "setLegend", js.Any.fromFunction1(value))
+    inline def setSetLegend(value: XLegend => Unit): Self = StObject.set(x, "setLegend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWall(value: XPropertySet): Self = StObject.set(x, "Wall", value.asInstanceOf[js.Any])
+    inline def setWall(value: XPropertySet): Self = StObject.set(x, "Wall", value.asInstanceOf[js.Any])
   }
 }

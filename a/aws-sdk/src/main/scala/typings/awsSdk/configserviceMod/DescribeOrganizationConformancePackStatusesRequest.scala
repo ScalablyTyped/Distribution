@@ -23,34 +23,25 @@ trait DescribeOrganizationConformancePackStatusesRequest extends StObject {
 }
 object DescribeOrganizationConformancePackStatusesRequest {
   
-  @scala.inline
-  def apply(): DescribeOrganizationConformancePackStatusesRequest = {
+  inline def apply(): DescribeOrganizationConformancePackStatusesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrganizationConformancePackStatusesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConformancePackStatusesRequestMutableBuilder[Self <: DescribeOrganizationConformancePackStatusesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConformancePackStatusesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: CosmosPageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: CosmosPageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationConformancePackNames(value: OrganizationConformancePackNames): Self = StObject.set(x, "OrganizationConformancePackNames", value.asInstanceOf[js.Any])
+    inline def setOrganizationConformancePackNames(value: OrganizationConformancePackNames): Self = StObject.set(x, "OrganizationConformancePackNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConformancePackNamesUndefined: Self = StObject.set(x, "OrganizationConformancePackNames", js.undefined)
+    inline def setOrganizationConformancePackNamesUndefined: Self = StObject.set(x, "OrganizationConformancePackNames", js.undefined)
     
-    @scala.inline
-    def setOrganizationConformancePackNamesVarargs(value: OrganizationConformancePackName*): Self = StObject.set(x, "OrganizationConformancePackNames", js.Array(value :_*))
+    inline def setOrganizationConformancePackNamesVarargs(value: OrganizationConformancePackName*): Self = StObject.set(x, "OrganizationConformancePackNames", js.Array(value :_*))
   }
 }

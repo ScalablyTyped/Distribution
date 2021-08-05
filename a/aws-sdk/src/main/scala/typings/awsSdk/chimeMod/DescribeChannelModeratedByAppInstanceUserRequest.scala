@@ -18,19 +18,15 @@ trait DescribeChannelModeratedByAppInstanceUserRequest extends StObject {
 }
 object DescribeChannelModeratedByAppInstanceUserRequest {
   
-  @scala.inline
-  def apply(AppInstanceUserArn: ChimeArn, ChannelArn: ChimeArn): DescribeChannelModeratedByAppInstanceUserRequest = {
+  inline def apply(AppInstanceUserArn: ChimeArn, ChannelArn: ChimeArn): DescribeChannelModeratedByAppInstanceUserRequest = {
     val __obj = js.Dynamic.literal(AppInstanceUserArn = AppInstanceUserArn.asInstanceOf[js.Any], ChannelArn = ChannelArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelModeratedByAppInstanceUserRequest]
   }
   
-  @scala.inline
-  implicit class DescribeChannelModeratedByAppInstanceUserRequestMutableBuilder[Self <: DescribeChannelModeratedByAppInstanceUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelModeratedByAppInstanceUserRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
   }
 }

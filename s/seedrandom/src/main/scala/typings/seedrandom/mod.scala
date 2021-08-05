@@ -58,40 +58,30 @@ object mod extends Shortcut {
   }
   object seedRandomOptions {
     
-    @scala.inline
-    def apply(): seedRandomOptions = {
+    inline def apply(): seedRandomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[seedRandomOptions]
     }
     
-    @scala.inline
-    implicit class seedRandomOptionsMutableBuilder[Self <: seedRandomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: seedRandomOptions](x: Self) {
       
-      @scala.inline
-      def setEntropy(value: Boolean): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
+      inline def setEntropy(value: Boolean): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntropyUndefined: Self = StObject.set(x, "entropy", js.undefined)
+      inline def setEntropyUndefined: Self = StObject.set(x, "entropy", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setPass(
+      inline def setPass(
         value: (/* prng */ js.UndefOr[prng], /* shortseed */ js.UndefOr[String], /* global */ js.UndefOr[Boolean], /* state */ js.UndefOr[State]) => prng
       ): Self = StObject.set(x, "pass", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      @scala.inline
-      def setState(value: Boolean | State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Boolean | State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   

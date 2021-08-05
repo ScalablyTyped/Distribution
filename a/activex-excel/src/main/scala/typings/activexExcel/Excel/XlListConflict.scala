@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlListConflict extends StObject
 object XlListConflict {
   
-  @scala.inline
-  def xlListConflictDialog: `0` = 0.asInstanceOf[`0`]
+  inline def xlListConflictDialog: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlListConflictDiscardAllConflicts: `2` = 2.asInstanceOf[`2`]
+  inline def xlListConflictDiscardAllConflicts: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlListConflictError: `3` = 3.asInstanceOf[`3`]
+  inline def xlListConflictError: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlListConflictRetryAllConflicts: `1` = 1.asInstanceOf[`1`]
+  inline def xlListConflictRetryAllConflicts: `1` = 1.asInstanceOf[`1`]
 }

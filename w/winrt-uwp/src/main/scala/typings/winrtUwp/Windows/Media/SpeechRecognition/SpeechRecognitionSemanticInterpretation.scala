@@ -14,16 +14,13 @@ trait SpeechRecognitionSemanticInterpretation extends StObject {
 }
 object SpeechRecognitionSemanticInterpretation {
   
-  @scala.inline
-  def apply(properties: IMapView[String, IVectorView[js.Any]]): SpeechRecognitionSemanticInterpretation = {
+  inline def apply(properties: IMapView[String, IVectorView[js.Any]]): SpeechRecognitionSemanticInterpretation = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionSemanticInterpretation]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionSemanticInterpretationMutableBuilder[Self <: SpeechRecognitionSemanticInterpretation] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionSemanticInterpretation](x: Self) {
     
-    @scala.inline
-    def setProperties(value: IMapView[String, IVectorView[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, IVectorView[js.Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

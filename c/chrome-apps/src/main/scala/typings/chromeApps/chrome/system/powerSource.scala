@@ -66,8 +66,7 @@ object powerSource {
   }
   object PowerSourceInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       `type`: (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PowerSourceType * / any */ String) | PowerSourceType
     ): PowerSourceInfo = {
@@ -76,20 +75,15 @@ object powerSource {
       __obj.asInstanceOf[PowerSourceInfo]
     }
     
-    @scala.inline
-    implicit class PowerSourceInfoMutableBuilder[Self <: PowerSourceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PowerSourceInfo](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPower(value: double): Self = StObject.set(x, "maxPower", value.asInstanceOf[js.Any])
+      inline def setMaxPower(value: double): Self = StObject.set(x, "maxPower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPowerUndefined: Self = StObject.set(x, "maxPower", js.undefined)
+      inline def setMaxPowerUndefined: Self = StObject.set(x, "maxPower", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PowerSourceType * / any */ String) | PowerSourceType
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

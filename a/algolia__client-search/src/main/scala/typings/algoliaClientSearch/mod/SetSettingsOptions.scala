@@ -13,19 +13,15 @@ trait SetSettingsOptions extends StObject {
 }
 object SetSettingsOptions {
   
-  @scala.inline
-  def apply(): SetSettingsOptions = {
+  inline def apply(): SetSettingsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetSettingsOptions]
   }
   
-  @scala.inline
-  implicit class SetSettingsOptionsMutableBuilder[Self <: SetSettingsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetSettingsOptions](x: Self) {
     
-    @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
+    inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
+    inline def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
   }
 }

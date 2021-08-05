@@ -24,43 +24,31 @@ trait EmotionScores extends StObject {
 }
 object EmotionScores {
   
-  @scala.inline
-  def apply(): EmotionScores = {
+  inline def apply(): EmotionScores = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmotionScores]
   }
   
-  @scala.inline
-  implicit class EmotionScoresMutableBuilder[Self <: EmotionScores] (val x: Self) extends AnyVal {
+  extension [Self <: EmotionScores](x: Self) {
     
-    @scala.inline
-    def setAnger(value: Double): Self = StObject.set(x, "anger", value.asInstanceOf[js.Any])
+    inline def setAnger(value: Double): Self = StObject.set(x, "anger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngerUndefined: Self = StObject.set(x, "anger", js.undefined)
+    inline def setAngerUndefined: Self = StObject.set(x, "anger", js.undefined)
     
-    @scala.inline
-    def setDisgust(value: Double): Self = StObject.set(x, "disgust", value.asInstanceOf[js.Any])
+    inline def setDisgust(value: Double): Self = StObject.set(x, "disgust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisgustUndefined: Self = StObject.set(x, "disgust", js.undefined)
+    inline def setDisgustUndefined: Self = StObject.set(x, "disgust", js.undefined)
     
-    @scala.inline
-    def setFear(value: Double): Self = StObject.set(x, "fear", value.asInstanceOf[js.Any])
+    inline def setFear(value: Double): Self = StObject.set(x, "fear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFearUndefined: Self = StObject.set(x, "fear", js.undefined)
+    inline def setFearUndefined: Self = StObject.set(x, "fear", js.undefined)
     
-    @scala.inline
-    def setJoy(value: Double): Self = StObject.set(x, "joy", value.asInstanceOf[js.Any])
+    inline def setJoy(value: Double): Self = StObject.set(x, "joy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoyUndefined: Self = StObject.set(x, "joy", js.undefined)
+    inline def setJoyUndefined: Self = StObject.set(x, "joy", js.undefined)
     
-    @scala.inline
-    def setSadness(value: Double): Self = StObject.set(x, "sadness", value.asInstanceOf[js.Any])
+    inline def setSadness(value: Double): Self = StObject.set(x, "sadness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSadnessUndefined: Self = StObject.set(x, "sadness", js.undefined)
+    inline def setSadnessUndefined: Self = StObject.set(x, "sadness", js.undefined)
   }
 }

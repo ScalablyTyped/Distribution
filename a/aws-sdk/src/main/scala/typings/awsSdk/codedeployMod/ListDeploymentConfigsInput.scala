@@ -13,19 +13,15 @@ trait ListDeploymentConfigsInput extends StObject {
 }
 object ListDeploymentConfigsInput {
   
-  @scala.inline
-  def apply(): ListDeploymentConfigsInput = {
+  inline def apply(): ListDeploymentConfigsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeploymentConfigsInput]
   }
   
-  @scala.inline
-  implicit class ListDeploymentConfigsInputMutableBuilder[Self <: ListDeploymentConfigsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeploymentConfigsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

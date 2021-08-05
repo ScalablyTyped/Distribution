@@ -21,8 +21,7 @@ trait IAsyncAction
 }
 object IAsyncAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => Unit,
     close: () => Unit,
     completed: (/* asyncInfo */ IAsyncAction, /* asyncStatus */ AsyncStatus) => Unit,
@@ -35,13 +34,10 @@ object IAsyncAction {
     __obj.asInstanceOf[IAsyncAction]
   }
   
-  @scala.inline
-  implicit class IAsyncActionMutableBuilder[Self <: IAsyncAction] (val x: Self) extends AnyVal {
+  extension [Self <: IAsyncAction](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: (/* asyncInfo */ IAsyncAction, /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    inline def setCompleted(value: (/* asyncInfo */ IAsyncAction, /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResults(value: () => Unit): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => Unit): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
   }
 }

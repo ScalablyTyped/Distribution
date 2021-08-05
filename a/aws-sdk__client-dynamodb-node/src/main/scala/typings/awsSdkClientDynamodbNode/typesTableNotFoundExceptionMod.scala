@@ -26,17 +26,14 @@ object typesTableNotFoundExceptionMod {
   }
   object TableNotFoundException {
     
-    @scala.inline
-    def apply(): TableNotFoundException = {
+    inline def apply(): TableNotFoundException = {
       val __obj = js.Dynamic.literal(name = "TableNotFoundException")
       __obj.asInstanceOf[TableNotFoundException]
     }
     
-    @scala.inline
-    implicit class TableNotFoundExceptionMutableBuilder[Self <: TableNotFoundException] (val x: Self) extends AnyVal {
+    extension [Self <: TableNotFoundException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +46,16 @@ object typesTableNotFoundExceptionMod {
   }
   object TableNotFoundExceptionDetails {
     
-    @scala.inline
-    def apply(): TableNotFoundExceptionDetails = {
+    inline def apply(): TableNotFoundExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableNotFoundExceptionDetails]
     }
     
-    @scala.inline
-    implicit class TableNotFoundExceptionDetailsMutableBuilder[Self <: TableNotFoundExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TableNotFoundExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

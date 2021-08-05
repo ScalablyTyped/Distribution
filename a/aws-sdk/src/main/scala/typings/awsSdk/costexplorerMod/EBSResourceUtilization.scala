@@ -28,37 +28,27 @@ trait EBSResourceUtilization extends StObject {
 }
 object EBSResourceUtilization {
   
-  @scala.inline
-  def apply(): EBSResourceUtilization = {
+  inline def apply(): EBSResourceUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EBSResourceUtilization]
   }
   
-  @scala.inline
-  implicit class EBSResourceUtilizationMutableBuilder[Self <: EBSResourceUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: EBSResourceUtilization](x: Self) {
     
-    @scala.inline
-    def setEbsReadBytesPerSecond(value: GenericString): Self = StObject.set(x, "EbsReadBytesPerSecond", value.asInstanceOf[js.Any])
+    inline def setEbsReadBytesPerSecond(value: GenericString): Self = StObject.set(x, "EbsReadBytesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsReadBytesPerSecondUndefined: Self = StObject.set(x, "EbsReadBytesPerSecond", js.undefined)
+    inline def setEbsReadBytesPerSecondUndefined: Self = StObject.set(x, "EbsReadBytesPerSecond", js.undefined)
     
-    @scala.inline
-    def setEbsReadOpsPerSecond(value: GenericString): Self = StObject.set(x, "EbsReadOpsPerSecond", value.asInstanceOf[js.Any])
+    inline def setEbsReadOpsPerSecond(value: GenericString): Self = StObject.set(x, "EbsReadOpsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsReadOpsPerSecondUndefined: Self = StObject.set(x, "EbsReadOpsPerSecond", js.undefined)
+    inline def setEbsReadOpsPerSecondUndefined: Self = StObject.set(x, "EbsReadOpsPerSecond", js.undefined)
     
-    @scala.inline
-    def setEbsWriteBytesPerSecond(value: GenericString): Self = StObject.set(x, "EbsWriteBytesPerSecond", value.asInstanceOf[js.Any])
+    inline def setEbsWriteBytesPerSecond(value: GenericString): Self = StObject.set(x, "EbsWriteBytesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsWriteBytesPerSecondUndefined: Self = StObject.set(x, "EbsWriteBytesPerSecond", js.undefined)
+    inline def setEbsWriteBytesPerSecondUndefined: Self = StObject.set(x, "EbsWriteBytesPerSecond", js.undefined)
     
-    @scala.inline
-    def setEbsWriteOpsPerSecond(value: GenericString): Self = StObject.set(x, "EbsWriteOpsPerSecond", value.asInstanceOf[js.Any])
+    inline def setEbsWriteOpsPerSecond(value: GenericString): Self = StObject.set(x, "EbsWriteOpsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsWriteOpsPerSecondUndefined: Self = StObject.set(x, "EbsWriteOpsPerSecond", js.undefined)
+    inline def setEbsWriteOpsPerSecondUndefined: Self = StObject.set(x, "EbsWriteOpsPerSecond", js.undefined)
   }
 }

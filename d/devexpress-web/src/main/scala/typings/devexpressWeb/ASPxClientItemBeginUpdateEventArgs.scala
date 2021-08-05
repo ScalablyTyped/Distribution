@@ -18,16 +18,13 @@ trait ASPxClientItemBeginUpdateEventArgs
 }
 object ASPxClientItemBeginUpdateEventArgs {
   
-  @scala.inline
-  def apply(ItemName: String): ASPxClientItemBeginUpdateEventArgs = {
+  inline def apply(ItemName: String): ASPxClientItemBeginUpdateEventArgs = {
     val __obj = js.Dynamic.literal(ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientItemBeginUpdateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientItemBeginUpdateEventArgsMutableBuilder[Self <: ASPxClientItemBeginUpdateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientItemBeginUpdateEventArgs](x: Self) {
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

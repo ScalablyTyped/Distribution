@@ -38,46 +38,33 @@ trait TerminateProvisionedProductInput extends StObject {
 }
 object TerminateProvisionedProductInput {
   
-  @scala.inline
-  def apply(TerminateToken: IdempotencyToken): TerminateProvisionedProductInput = {
+  inline def apply(TerminateToken: IdempotencyToken): TerminateProvisionedProductInput = {
     val __obj = js.Dynamic.literal(TerminateToken = TerminateToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateProvisionedProductInput]
   }
   
-  @scala.inline
-  implicit class TerminateProvisionedProductInputMutableBuilder[Self <: TerminateProvisionedProductInput] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateProvisionedProductInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setIgnoreErrors(value: IgnoreErrors): Self = StObject.set(x, "IgnoreErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreErrors(value: IgnoreErrors): Self = StObject.set(x, "IgnoreErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreErrorsUndefined: Self = StObject.set(x, "IgnoreErrors", js.undefined)
+    inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "IgnoreErrors", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
+    inline def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductNameOrArn): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductName(value: ProvisionedProductNameOrArn): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
+    inline def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
     
-    @scala.inline
-    def setRetainPhysicalResources(value: RetainPhysicalResources): Self = StObject.set(x, "RetainPhysicalResources", value.asInstanceOf[js.Any])
+    inline def setRetainPhysicalResources(value: RetainPhysicalResources): Self = StObject.set(x, "RetainPhysicalResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainPhysicalResourcesUndefined: Self = StObject.set(x, "RetainPhysicalResources", js.undefined)
+    inline def setRetainPhysicalResourcesUndefined: Self = StObject.set(x, "RetainPhysicalResources", js.undefined)
     
-    @scala.inline
-    def setTerminateToken(value: IdempotencyToken): Self = StObject.set(x, "TerminateToken", value.asInstanceOf[js.Any])
+    inline def setTerminateToken(value: IdempotencyToken): Self = StObject.set(x, "TerminateToken", value.asInstanceOf[js.Any])
   }
 }

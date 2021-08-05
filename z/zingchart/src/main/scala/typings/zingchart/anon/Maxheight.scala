@@ -34,43 +34,31 @@ trait Maxheight extends StObject {
 }
 object Maxheight {
   
-  @scala.inline
-  def apply(): Maxheight = {
+  inline def apply(): Maxheight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Maxheight]
   }
   
-  @scala.inline
-  implicit class MaxheightMutableBuilder[Self <: Maxheight] (val x: Self) extends AnyVal {
+  extension [Self <: Maxheight](x: Self) {
     
-    @scala.inline
-    def `setMax-height`(value: Double): Self = StObject.set(x, "max-height", value.asInstanceOf[js.Any])
+    inline def `setMax-height`(value: Double): Self = StObject.set(x, "max-height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-heightUndefined`: Self = StObject.set(x, "max-height", js.undefined)
+    inline def `setMax-heightUndefined`: Self = StObject.set(x, "max-height", js.undefined)
     
-    @scala.inline
-    def `setMax-width`(value: Double): Self = StObject.set(x, "max-width", value.asInstanceOf[js.Any])
+    inline def `setMax-width`(value: Double): Self = StObject.set(x, "max-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-widthUndefined`: Self = StObject.set(x, "max-width", js.undefined)
+    inline def `setMax-widthUndefined`: Self = StObject.set(x, "max-width", js.undefined)
     
-    @scala.inline
-    def `setMin-height`(value: Double): Self = StObject.set(x, "min-height", value.asInstanceOf[js.Any])
+    inline def `setMin-height`(value: Double): Self = StObject.set(x, "min-height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMin-heightUndefined`: Self = StObject.set(x, "min-height", js.undefined)
+    inline def `setMin-heightUndefined`: Self = StObject.set(x, "min-height", js.undefined)
     
-    @scala.inline
-    def `setMin-width`(value: Double): Self = StObject.set(x, "min-width", value.asInstanceOf[js.Any])
+    inline def `setMin-width`(value: Double): Self = StObject.set(x, "min-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMin-widthUndefined`: Self = StObject.set(x, "min-width", js.undefined)
+    inline def `setMin-widthUndefined`: Self = StObject.set(x, "min-width", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

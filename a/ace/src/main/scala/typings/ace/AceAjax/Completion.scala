@@ -24,55 +24,39 @@ trait Completion extends StObject {
 }
 object Completion {
   
-  @scala.inline
-  def apply(meta: String, value: String): Completion = {
+  inline def apply(meta: String, value: String): Completion = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Completion]
   }
   
-  @scala.inline
-  implicit class CompletionMutableBuilder[Self <: Completion] (val x: Self) extends AnyVal {
+  extension [Self <: Completion](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDocHTML(value: String): Self = StObject.set(x, "docHTML", value.asInstanceOf[js.Any])
+    inline def setDocHTML(value: String): Self = StObject.set(x, "docHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocHTMLUndefined: Self = StObject.set(x, "docHTML", js.undefined)
+    inline def setDocHTMLUndefined: Self = StObject.set(x, "docHTML", js.undefined)
     
-    @scala.inline
-    def setExactMatch(value: Double): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    inline def setExactMatch(value: Double): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    @scala.inline
-    def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: js.Any): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: js.Any): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

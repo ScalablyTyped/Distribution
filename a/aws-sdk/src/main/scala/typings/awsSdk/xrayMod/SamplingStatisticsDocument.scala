@@ -38,8 +38,7 @@ trait SamplingStatisticsDocument extends StObject {
 }
 object SamplingStatisticsDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientID: ClientID,
     RequestCount: RequestCount,
     RuleName: RuleName,
@@ -50,28 +49,20 @@ object SamplingStatisticsDocument {
     __obj.asInstanceOf[SamplingStatisticsDocument]
   }
   
-  @scala.inline
-  implicit class SamplingStatisticsDocumentMutableBuilder[Self <: SamplingStatisticsDocument] (val x: Self) extends AnyVal {
+  extension [Self <: SamplingStatisticsDocument](x: Self) {
     
-    @scala.inline
-    def setBorrowCount(value: BorrowCount): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
+    inline def setBorrowCount(value: BorrowCount): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorrowCountUndefined: Self = StObject.set(x, "BorrowCount", js.undefined)
+    inline def setBorrowCountUndefined: Self = StObject.set(x, "BorrowCount", js.undefined)
     
-    @scala.inline
-    def setClientID(value: ClientID): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
+    inline def setClientID(value: ClientID): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestCount(value: RequestCount): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
+    inline def setRequestCount(value: RequestCount): Self = StObject.set(x, "RequestCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampledCount(value: SampledCount): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
+    inline def setSampledCount(value: SampledCount): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

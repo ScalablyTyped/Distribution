@@ -17,8 +17,7 @@ object fontUpgradeUniDriverMod {
   }
   object FontUpgradeUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object fontUpgradeUniDriverMod {
       __obj.asInstanceOf[FontUpgradeUniDriver]
     }
     
-    @scala.inline
-    implicit class FontUpgradeUniDriverMutableBuilder[Self <: FontUpgradeUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FontUpgradeUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetElement(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
+      inline def setGetElement(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsActive(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+      inline def setIsActive(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     }
   }
 }

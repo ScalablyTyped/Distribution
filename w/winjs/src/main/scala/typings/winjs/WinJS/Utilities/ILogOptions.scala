@@ -18,37 +18,27 @@ trait ILogOptions extends StObject {
 }
 object ILogOptions {
   
-  @scala.inline
-  def apply(): ILogOptions = {
+  inline def apply(): ILogOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILogOptions]
   }
   
-  @scala.inline
-  implicit class ILogOptionsMutableBuilder[Self <: ILogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILogOptions](x: Self) {
     
-    @scala.inline
-    def setAction(value: (/* message */ String, /* tags */ String, /* type */ String) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction3(value))
+    inline def setAction(value: (/* message */ String, /* tags */ String, /* type */ String) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setExcludeTags(value: String): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
+    inline def setExcludeTags(value: String): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeTagsUndefined: Self = StObject.set(x, "excludeTags", js.undefined)
+    inline def setExcludeTagsUndefined: Self = StObject.set(x, "excludeTags", js.undefined)
     
-    @scala.inline
-    def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

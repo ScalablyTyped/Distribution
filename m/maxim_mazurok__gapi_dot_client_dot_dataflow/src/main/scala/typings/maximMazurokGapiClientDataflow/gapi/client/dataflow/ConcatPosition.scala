@@ -14,25 +14,19 @@ trait ConcatPosition extends StObject {
 }
 object ConcatPosition {
   
-  @scala.inline
-  def apply(): ConcatPosition = {
+  inline def apply(): ConcatPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConcatPosition]
   }
   
-  @scala.inline
-  implicit class ConcatPositionMutableBuilder[Self <: ConcatPosition] (val x: Self) extends AnyVal {
+  extension [Self <: ConcatPosition](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

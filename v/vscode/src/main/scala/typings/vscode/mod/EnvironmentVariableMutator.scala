@@ -18,20 +18,16 @@ trait EnvironmentVariableMutator extends StObject {
 }
 object EnvironmentVariableMutator {
   
-  @scala.inline
-  def apply(`type`: EnvironmentVariableMutatorType, value: String): EnvironmentVariableMutator = {
+  inline def apply(`type`: EnvironmentVariableMutatorType, value: String): EnvironmentVariableMutator = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentVariableMutator]
   }
   
-  @scala.inline
-  implicit class EnvironmentVariableMutatorMutableBuilder[Self <: EnvironmentVariableMutator] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentVariableMutator](x: Self) {
     
-    @scala.inline
-    def setType(value: EnvironmentVariableMutatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EnvironmentVariableMutatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait GetBeaconsSuccessCallbackResult extends StObject {
 }
 object GetBeaconsSuccessCallbackResult {
   
-  @scala.inline
-  def apply(beacons: js.Array[IBeaconInfo], errMsg: String): GetBeaconsSuccessCallbackResult = {
+  inline def apply(beacons: js.Array[IBeaconInfo], errMsg: String): GetBeaconsSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBeaconsSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetBeaconsSuccessCallbackResultMutableBuilder[Self <: GetBeaconsSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBeaconsSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setBeacons(value: js.Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    inline def setBeacons(value: js.Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconsVarargs(value: IBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: IBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

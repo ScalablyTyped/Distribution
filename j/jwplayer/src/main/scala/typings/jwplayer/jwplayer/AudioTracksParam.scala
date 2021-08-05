@@ -10,19 +10,15 @@ trait AudioTracksParam extends StObject {
 }
 object AudioTracksParam {
   
-  @scala.inline
-  def apply(levels: js.Array[js.Any]): AudioTracksParam = {
+  inline def apply(levels: js.Array[js.Any]): AudioTracksParam = {
     val __obj = js.Dynamic.literal(levels = levels.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTracksParam]
   }
   
-  @scala.inline
-  implicit class AudioTracksParamMutableBuilder[Self <: AudioTracksParam] (val x: Self) extends AnyVal {
+  extension [Self <: AudioTracksParam](x: Self) {
     
-    @scala.inline
-    def setLevels(value: js.Array[js.Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[js.Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsVarargs(value: js.Any*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: js.Any*): Self = StObject.set(x, "levels", js.Array(value :_*))
   }
 }

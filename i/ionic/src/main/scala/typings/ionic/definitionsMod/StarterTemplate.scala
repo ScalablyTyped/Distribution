@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StarterTemplate extends StObject
 object StarterTemplate {
   
-  @scala.inline
-  def ManagedStarterTemplate(id: String, name: String, projectType: ProjectType): typings.ionic.definitionsMod.ManagedStarterTemplate = {
+  inline def ManagedStarterTemplate(id: String, name: String, projectType: ProjectType): typings.ionic.definitionsMod.ManagedStarterTemplate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("managed")
     __obj.asInstanceOf[typings.ionic.definitionsMod.ManagedStarterTemplate]
   }
   
-  @scala.inline
-  def RepoStarterTemplate(name: String, projectType: ProjectType, repo: String): typings.ionic.definitionsMod.RepoStarterTemplate = {
+  inline def RepoStarterTemplate(name: String, projectType: ProjectType, repo: String): typings.ionic.definitionsMod.RepoStarterTemplate = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("repo")
     __obj.asInstanceOf[typings.ionic.definitionsMod.RepoStarterTemplate]

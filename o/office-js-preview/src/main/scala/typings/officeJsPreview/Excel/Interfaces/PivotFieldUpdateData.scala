@@ -34,31 +34,23 @@ trait PivotFieldUpdateData extends StObject {
 }
 object PivotFieldUpdateData {
   
-  @scala.inline
-  def apply(): PivotFieldUpdateData = {
+  inline def apply(): PivotFieldUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotFieldUpdateData]
   }
   
-  @scala.inline
-  implicit class PivotFieldUpdateDataMutableBuilder[Self <: PivotFieldUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: PivotFieldUpdateData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setShowAllItems(value: Boolean): Self = StObject.set(x, "showAllItems", value.asInstanceOf[js.Any])
+    inline def setShowAllItems(value: Boolean): Self = StObject.set(x, "showAllItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAllItemsUndefined: Self = StObject.set(x, "showAllItems", js.undefined)
+    inline def setShowAllItemsUndefined: Self = StObject.set(x, "showAllItems", js.undefined)
     
-    @scala.inline
-    def setSubtotals(value: Subtotals): Self = StObject.set(x, "subtotals", value.asInstanceOf[js.Any])
+    inline def setSubtotals(value: Subtotals): Self = StObject.set(x, "subtotals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotalsUndefined: Self = StObject.set(x, "subtotals", js.undefined)
+    inline def setSubtotalsUndefined: Self = StObject.set(x, "subtotals", js.undefined)
   }
 }

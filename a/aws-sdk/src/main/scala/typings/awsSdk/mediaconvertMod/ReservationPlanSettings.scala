@@ -23,22 +23,17 @@ trait ReservationPlanSettings extends StObject {
 }
 object ReservationPlanSettings {
   
-  @scala.inline
-  def apply(Commitment: Commitment, RenewalType: RenewalType, ReservedSlots: integer): ReservationPlanSettings = {
+  inline def apply(Commitment: Commitment, RenewalType: RenewalType, ReservedSlots: integer): ReservationPlanSettings = {
     val __obj = js.Dynamic.literal(Commitment = Commitment.asInstanceOf[js.Any], RenewalType = RenewalType.asInstanceOf[js.Any], ReservedSlots = ReservedSlots.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationPlanSettings]
   }
   
-  @scala.inline
-  implicit class ReservationPlanSettingsMutableBuilder[Self <: ReservationPlanSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationPlanSettings](x: Self) {
     
-    @scala.inline
-    def setCommitment(value: Commitment): Self = StObject.set(x, "Commitment", value.asInstanceOf[js.Any])
+    inline def setCommitment(value: Commitment): Self = StObject.set(x, "Commitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalType(value: RenewalType): Self = StObject.set(x, "RenewalType", value.asInstanceOf[js.Any])
+    inline def setRenewalType(value: RenewalType): Self = StObject.set(x, "RenewalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedSlots(value: integer): Self = StObject.set(x, "ReservedSlots", value.asInstanceOf[js.Any])
+    inline def setReservedSlots(value: integer): Self = StObject.set(x, "ReservedSlots", value.asInstanceOf[js.Any])
   }
 }

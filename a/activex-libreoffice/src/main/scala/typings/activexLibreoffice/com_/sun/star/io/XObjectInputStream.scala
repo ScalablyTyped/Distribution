@@ -19,8 +19,7 @@ trait XObjectInputStream
 }
 object XObjectInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     available: () => Double,
     closeInput: () => Unit,
@@ -44,10 +43,8 @@ object XObjectInputStream {
     __obj.asInstanceOf[XObjectInputStream]
   }
   
-  @scala.inline
-  implicit class XObjectInputStreamMutableBuilder[Self <: XObjectInputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XObjectInputStream](x: Self) {
     
-    @scala.inline
-    def setReadObject(value: () => XPersistObject): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
+    inline def setReadObject(value: () => XPersistObject): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
   }
 }

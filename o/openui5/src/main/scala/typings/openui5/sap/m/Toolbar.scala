@@ -29,7 +29,7 @@ trait Toolbar
     * Sets classes and tag according to the context in the page. Possible contexts are header, footer,
     * subheader
     */
-  var applyTagAndContextClassFor: js.Any = js.native
+  /* protected */ var applyTagAndContextClassFor: js.Any = js.native
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
@@ -117,7 +117,7 @@ trait Toolbar
   /**
     * Gets the HTML tag of the root domref
     */
-  var getHTMLTag: js.Any = js.native
+  /* protected */ var getHTMLTag: js.Any = js.native
   
   /**
     * Gets current value of property <code>height</code>.Defines the height of the control.Note: By
@@ -163,7 +163,7 @@ trait Toolbar
   /**
     * Returns if the bar is sensitive to the container context. Implementation of the IBar interface
     */
-  var isContextSensitive: js.Any = js.native
+  /* protected */ var isContextSensitive: js.Any = js.native
   
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
@@ -231,7 +231,7 @@ trait Toolbar
   /**
     * Sets the HTML tag of the root domref
     */
-  var setHTMLTag: js.Any = js.native
+  /* protected */ var setHTMLTag: js.Any = js.native
   
   /**
     * Sets a new value for property <code>height</code>.Defines the height of the control.Note: By

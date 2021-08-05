@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLCSSRule extends StObject {
   
-  @JSName("MSHTML.HTMLCSSRule_typekey")
+  /* private */ @JSName("MSHTML.HTMLCSSRule_typekey")
   var MSHTMLDotHTMLCSSRule_typekey: HTMLCSSRule
   
   var cssText: String
@@ -19,8 +19,7 @@ trait HTMLCSSRule extends StObject {
 }
 object HTMLCSSRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLCSSRule_typekey: HTMLCSSRule,
     cssText: String,
     parentRule: IHTMLCSSRule,
@@ -33,22 +32,16 @@ object HTMLCSSRule {
     __obj.asInstanceOf[HTMLCSSRule]
   }
   
-  @scala.inline
-  implicit class HTMLCSSRuleMutableBuilder[Self <: HTMLCSSRule] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLCSSRule](x: Self) {
     
-    @scala.inline
-    def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
+    inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLCSSRule_typekey(value: HTMLCSSRule): Self = StObject.set(x, "MSHTML.HTMLCSSRule_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLCSSRule_typekey(value: HTMLCSSRule): Self = StObject.set(x, "MSHTML.HTMLCSSRule_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
+    inline def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
+    inline def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

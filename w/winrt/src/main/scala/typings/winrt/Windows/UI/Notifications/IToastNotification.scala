@@ -20,8 +20,7 @@ trait IToastNotification extends StObject {
 }
 object IToastNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: XmlDocument,
     expirationTime: Date,
     onactivated: js.Any,
@@ -32,22 +31,16 @@ object IToastNotification {
     __obj.asInstanceOf[IToastNotification]
   }
   
-  @scala.inline
-  implicit class IToastNotificationMutableBuilder[Self <: IToastNotification] (val x: Self) extends AnyVal {
+  extension [Self <: IToastNotification](x: Self) {
     
-    @scala.inline
-    def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: Date): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
+    inline def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndismissed(value: js.Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
+    inline def setOndismissed(value: js.Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnfailed(value: js.Any): Self = StObject.set(x, "onfailed", value.asInstanceOf[js.Any])
+    inline def setOnfailed(value: js.Any): Self = StObject.set(x, "onfailed", value.asInstanceOf[js.Any])
   }
 }

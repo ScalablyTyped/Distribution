@@ -14,25 +14,19 @@ trait CommonSubUserstate
 }
 object CommonSubUserstate {
   
-  @scala.inline
-  def apply(): CommonSubUserstate = {
+  inline def apply(): CommonSubUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonSubUserstate]
   }
   
-  @scala.inline
-  implicit class CommonSubUserstateMutableBuilder[Self <: CommonSubUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: CommonSubUserstate](x: Self) {
     
-    @scala.inline
-    def `setMsg-param-sub-plan`(value: SubMethod): Self = StObject.set(x, "msg-param-sub-plan", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-sub-plan`(value: SubMethod): Self = StObject.set(x, "msg-param-sub-plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-sub-plan-name`(value: String): Self = StObject.set(x, "msg-param-sub-plan-name", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-sub-plan-name`(value: String): Self = StObject.set(x, "msg-param-sub-plan-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-sub-plan-nameUndefined`: Self = StObject.set(x, "msg-param-sub-plan-name", js.undefined)
+    inline def `setMsg-param-sub-plan-nameUndefined`: Self = StObject.set(x, "msg-param-sub-plan-name", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-sub-planUndefined`: Self = StObject.set(x, "msg-param-sub-plan", js.undefined)
+    inline def `setMsg-param-sub-planUndefined`: Self = StObject.set(x, "msg-param-sub-plan", js.undefined)
   }
 }

@@ -17,20 +17,16 @@ trait Raw
 }
 object Raw {
   
-  @scala.inline
-  def apply(value: String): Raw = {
+  inline def apply(value: String): Raw = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Raw")
     __obj.asInstanceOf[Raw]
   }
   
-  @scala.inline
-  implicit class RawMutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
+  extension [Self <: Raw](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

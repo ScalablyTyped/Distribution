@@ -10,19 +10,16 @@ trait IGeoIntersectsCommandOptions extends StObject {
 }
 object IGeoIntersectsCommandOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     geometry: GeoPoint | GeoMultiPoint | GeoLineString | GeoMultiLineString | GeoPolygon | GeoMultiPolygon
   ): IGeoIntersectsCommandOptions = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoIntersectsCommandOptions]
   }
   
-  @scala.inline
-  implicit class IGeoIntersectsCommandOptionsMutableBuilder[Self <: IGeoIntersectsCommandOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoIntersectsCommandOptions](x: Self) {
     
-    @scala.inline
-    def setGeometry(
+    inline def setGeometry(
       value: GeoPoint | GeoMultiPoint | GeoLineString | GeoMultiLineString | GeoPolygon | GeoMultiPolygon
     ): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }

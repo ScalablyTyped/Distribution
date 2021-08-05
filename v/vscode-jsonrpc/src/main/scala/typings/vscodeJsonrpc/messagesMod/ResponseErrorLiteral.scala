@@ -24,25 +24,19 @@ trait ResponseErrorLiteral[D] extends StObject {
 }
 object ResponseErrorLiteral {
   
-  @scala.inline
-  def apply[D](code: Double, message: String): ResponseErrorLiteral[D] = {
+  inline def apply[D](code: Double, message: String): ResponseErrorLiteral[D] = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseErrorLiteral[D]]
   }
   
-  @scala.inline
-  implicit class ResponseErrorLiteralMutableBuilder[Self <: ResponseErrorLiteral[?], D] (val x: Self & ResponseErrorLiteral[D]) extends AnyVal {
+  extension [Self <: ResponseErrorLiteral[?], D](x: Self & ResponseErrorLiteral[D]) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

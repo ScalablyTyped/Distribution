@@ -38,73 +38,51 @@ trait AndroidRoboTest extends StObject {
 }
 object AndroidRoboTest {
   
-  @scala.inline
-  def apply(): AndroidRoboTest = {
+  inline def apply(): AndroidRoboTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidRoboTest]
   }
   
-  @scala.inline
-  implicit class AndroidRoboTestMutableBuilder[Self <: AndroidRoboTest] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidRoboTest](x: Self) {
     
-    @scala.inline
-    def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
+    inline def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
+    inline def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
     
-    @scala.inline
-    def setAppBundle(value: AppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
+    inline def setAppBundle(value: AppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
+    inline def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
     
-    @scala.inline
-    def setAppInitialActivity(value: String): Self = StObject.set(x, "appInitialActivity", value.asInstanceOf[js.Any])
+    inline def setAppInitialActivity(value: String): Self = StObject.set(x, "appInitialActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInitialActivityUndefined: Self = StObject.set(x, "appInitialActivity", js.undefined)
+    inline def setAppInitialActivityUndefined: Self = StObject.set(x, "appInitialActivity", js.undefined)
     
-    @scala.inline
-    def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
+    inline def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
+    inline def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
     
-    @scala.inline
-    def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+    inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+    inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
-    @scala.inline
-    def setMaxSteps(value: Double): Self = StObject.set(x, "maxSteps", value.asInstanceOf[js.Any])
+    inline def setMaxSteps(value: Double): Self = StObject.set(x, "maxSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStepsUndefined: Self = StObject.set(x, "maxSteps", js.undefined)
+    inline def setMaxStepsUndefined: Self = StObject.set(x, "maxSteps", js.undefined)
     
-    @scala.inline
-    def setRoboDirectives(value: js.Array[RoboDirective]): Self = StObject.set(x, "roboDirectives", value.asInstanceOf[js.Any])
+    inline def setRoboDirectives(value: js.Array[RoboDirective]): Self = StObject.set(x, "roboDirectives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoboDirectivesUndefined: Self = StObject.set(x, "roboDirectives", js.undefined)
+    inline def setRoboDirectivesUndefined: Self = StObject.set(x, "roboDirectives", js.undefined)
     
-    @scala.inline
-    def setRoboDirectivesVarargs(value: RoboDirective*): Self = StObject.set(x, "roboDirectives", js.Array(value :_*))
+    inline def setRoboDirectivesVarargs(value: RoboDirective*): Self = StObject.set(x, "roboDirectives", js.Array(value :_*))
     
-    @scala.inline
-    def setRoboScript(value: FileReference): Self = StObject.set(x, "roboScript", value.asInstanceOf[js.Any])
+    inline def setRoboScript(value: FileReference): Self = StObject.set(x, "roboScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoboScriptUndefined: Self = StObject.set(x, "roboScript", js.undefined)
+    inline def setRoboScriptUndefined: Self = StObject.set(x, "roboScript", js.undefined)
     
-    @scala.inline
-    def setStartingIntents(value: js.Array[RoboStartingIntent]): Self = StObject.set(x, "startingIntents", value.asInstanceOf[js.Any])
+    inline def setStartingIntents(value: js.Array[RoboStartingIntent]): Self = StObject.set(x, "startingIntents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingIntentsUndefined: Self = StObject.set(x, "startingIntents", js.undefined)
+    inline def setStartingIntentsUndefined: Self = StObject.set(x, "startingIntents", js.undefined)
     
-    @scala.inline
-    def setStartingIntentsVarargs(value: RoboStartingIntent*): Self = StObject.set(x, "startingIntents", js.Array(value :_*))
+    inline def setStartingIntentsVarargs(value: RoboStartingIntent*): Self = StObject.set(x, "startingIntents", js.Array(value :_*))
   }
 }

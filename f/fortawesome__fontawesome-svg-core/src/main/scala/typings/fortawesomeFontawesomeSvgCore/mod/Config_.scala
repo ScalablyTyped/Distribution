@@ -30,8 +30,7 @@ trait Config_ extends StObject {
 }
 object Config_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoA11y: Boolean,
     autoAddCss: Boolean,
     autoReplaceSvg: Boolean | nest,
@@ -47,37 +46,26 @@ object Config_ {
     __obj.asInstanceOf[Config_]
   }
   
-  @scala.inline
-  implicit class Config_MutableBuilder[Self <: Config_] (val x: Self) extends AnyVal {
+  extension [Self <: Config_](x: Self) {
     
-    @scala.inline
-    def setAutoA11y(value: Boolean): Self = StObject.set(x, "autoA11y", value.asInstanceOf[js.Any])
+    inline def setAutoA11y(value: Boolean): Self = StObject.set(x, "autoA11y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAddCss(value: Boolean): Self = StObject.set(x, "autoAddCss", value.asInstanceOf[js.Any])
+    inline def setAutoAddCss(value: Boolean): Self = StObject.set(x, "autoAddCss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoReplaceSvg(value: Boolean | nest): Self = StObject.set(x, "autoReplaceSvg", value.asInstanceOf[js.Any])
+    inline def setAutoReplaceSvg(value: Boolean | nest): Self = StObject.set(x, "autoReplaceSvg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyPrefix(value: IconPrefix): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
+    inline def setFamilyPrefix(value: IconPrefix): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepOriginalSource(value: Boolean): Self = StObject.set(x, "keepOriginalSource", value.asInstanceOf[js.Any])
+    inline def setKeepOriginalSource(value: Boolean): Self = StObject.set(x, "keepOriginalSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurePerformance(value: Boolean): Self = StObject.set(x, "measurePerformance", value.asInstanceOf[js.Any])
+    inline def setMeasurePerformance(value: Boolean): Self = StObject.set(x, "measurePerformance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObserveMutations(value: Boolean): Self = StObject.set(x, "observeMutations", value.asInstanceOf[js.Any])
+    inline def setObserveMutations(value: Boolean): Self = StObject.set(x, "observeMutations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementClass(value: String): Self = StObject.set(x, "replacementClass", value.asInstanceOf[js.Any])
+    inline def setReplacementClass(value: String): Self = StObject.set(x, "replacementClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPseudoElements(value: Boolean): Self = StObject.set(x, "searchPseudoElements", value.asInstanceOf[js.Any])
+    inline def setSearchPseudoElements(value: Boolean): Self = StObject.set(x, "searchPseudoElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMissingIcons(value: Boolean): Self = StObject.set(x, "showMissingIcons", value.asInstanceOf[js.Any])
+    inline def setShowMissingIcons(value: Boolean): Self = StObject.set(x, "showMissingIcons", value.asInstanceOf[js.Any])
   }
 }

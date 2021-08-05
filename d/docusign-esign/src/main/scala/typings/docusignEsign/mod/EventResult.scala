@@ -28,37 +28,27 @@ trait EventResult extends StObject {
 }
 object EventResult {
   
-  @scala.inline
-  def apply(): EventResult = {
+  inline def apply(): EventResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventResult]
   }
   
-  @scala.inline
-  implicit class EventResultMutableBuilder[Self <: EventResult] (val x: Self) extends AnyVal {
+  extension [Self <: EventResult](x: Self) {
     
-    @scala.inline
-    def setEventTimestamp(value: String): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
+    inline def setEventTimestamp(value: String): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimestampUndefined: Self = StObject.set(x, "eventTimestamp", js.undefined)
+    inline def setEventTimestampUndefined: Self = StObject.set(x, "eventTimestamp", js.undefined)
     
-    @scala.inline
-    def setFailureDescription(value: String): Self = StObject.set(x, "failureDescription", value.asInstanceOf[js.Any])
+    inline def setFailureDescription(value: String): Self = StObject.set(x, "failureDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDescriptionUndefined: Self = StObject.set(x, "failureDescription", js.undefined)
+    inline def setFailureDescriptionUndefined: Self = StObject.set(x, "failureDescription", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setVendorFailureStatusCode(value: String): Self = StObject.set(x, "vendorFailureStatusCode", value.asInstanceOf[js.Any])
+    inline def setVendorFailureStatusCode(value: String): Self = StObject.set(x, "vendorFailureStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorFailureStatusCodeUndefined: Self = StObject.set(x, "vendorFailureStatusCode", js.undefined)
+    inline def setVendorFailureStatusCodeUndefined: Self = StObject.set(x, "vendorFailureStatusCode", js.undefined)
   }
 }

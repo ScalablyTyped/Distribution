@@ -59,8 +59,7 @@ trait Math extends StObject {
 }
 object Math {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DEG_PER_RAD: Double,
     RAD_PER_DEG: Double,
     clamp: (Double, Double, Double) => Double,
@@ -73,28 +72,20 @@ object Math {
     __obj.asInstanceOf[Math]
   }
   
-  @scala.inline
-  implicit class MathMutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
+  extension [Self <: Math](x: Self) {
     
-    @scala.inline
-    def setClamp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
+    inline def setClamp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDEG_PER_RAD(value: Double): Self = StObject.set(x, "DEG_PER_RAD", value.asInstanceOf[js.Any])
+    inline def setDEG_PER_RAD(value: Double): Self = StObject.set(x, "DEG_PER_RAD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDegrees(value: Double => Double): Self = StObject.set(x, "degrees", js.Any.fromFunction1(value))
+    inline def setDegrees(value: Double => Double): Self = StObject.set(x, "degrees", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFscale(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "fscale", js.Any.fromFunction5(value))
+    inline def setFscale(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "fscale", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setRAD_PER_DEG(value: Double): Self = StObject.set(x, "RAD_PER_DEG", value.asInstanceOf[js.Any])
+    inline def setRAD_PER_DEG(value: Double): Self = StObject.set(x, "RAD_PER_DEG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadians(value: Double => Double): Self = StObject.set(x, "radians", js.Any.fromFunction1(value))
+    inline def setRadians(value: Double => Double): Self = StObject.set(x, "radians", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScale(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "scale", js.Any.fromFunction5(value))
+    inline def setScale(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "scale", js.Any.fromFunction5(value))
   }
 }

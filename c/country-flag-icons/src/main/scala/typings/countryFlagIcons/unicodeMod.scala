@@ -10,6 +10,5 @@ object unicodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(country: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(country.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(country: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(country.asInstanceOf[js.Any]).asInstanceOf[String]
 }

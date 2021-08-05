@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceMemCacheType extends StObject
 object DeviceMemCacheType {
   
-  @scala.inline
-  def NONE: `0x0` = 0x0.asInstanceOf[`0x0`]
+  inline def NONE: `0x0` = 0x0.asInstanceOf[`0x0`]
   
-  @scala.inline
-  def READ_ONLY_CACHE: `0x1` = 0x1.asInstanceOf[`0x1`]
+  inline def READ_ONLY_CACHE: `0x1` = 0x1.asInstanceOf[`0x1`]
   
-  @scala.inline
-  def READ_WRITE_CACHE: `0x2` = 0x2.asInstanceOf[`0x2`]
+  inline def READ_WRITE_CACHE: `0x2` = 0x2.asInstanceOf[`0x2`]
 }

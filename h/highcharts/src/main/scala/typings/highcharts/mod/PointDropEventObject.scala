@@ -49,8 +49,7 @@ trait PointDropEventObject extends StObject {
 }
 object PointDropEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newPoints: Dictionary[PointDragDropObject],
     numNewPoints: Double,
     origin: DragDropPositionObject,
@@ -62,37 +61,26 @@ object PointDropEventObject {
     __obj.asInstanceOf[PointDropEventObject]
   }
   
-  @scala.inline
-  implicit class PointDropEventObjectMutableBuilder[Self <: PointDropEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointDropEventObject](x: Self) {
     
-    @scala.inline
-    def setNewPoint(value: PointDragDropObject): Self = StObject.set(x, "newPoint", value.asInstanceOf[js.Any])
+    inline def setNewPoint(value: PointDragDropObject): Self = StObject.set(x, "newPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPointId(value: String): Self = StObject.set(x, "newPointId", value.asInstanceOf[js.Any])
+    inline def setNewPointId(value: String): Self = StObject.set(x, "newPointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPointIdUndefined: Self = StObject.set(x, "newPointId", js.undefined)
+    inline def setNewPointIdUndefined: Self = StObject.set(x, "newPointId", js.undefined)
     
-    @scala.inline
-    def setNewPointUndefined: Self = StObject.set(x, "newPoint", js.undefined)
+    inline def setNewPointUndefined: Self = StObject.set(x, "newPoint", js.undefined)
     
-    @scala.inline
-    def setNewPoints(value: Dictionary[PointDragDropObject]): Self = StObject.set(x, "newPoints", value.asInstanceOf[js.Any])
+    inline def setNewPoints(value: Dictionary[PointDragDropObject]): Self = StObject.set(x, "newPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumNewPoints(value: Double): Self = StObject.set(x, "numNewPoints", value.asInstanceOf[js.Any])
+    inline def setNumNewPoints(value: Double): Self = StObject.set(x, "numNewPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: DragDropPositionObject): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: DragDropPositionObject): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Point): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Point): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

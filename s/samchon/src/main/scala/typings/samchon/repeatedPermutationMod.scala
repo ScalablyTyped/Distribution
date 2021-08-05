@@ -32,7 +32,7 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    var divider_array: js.Any = js.native
+    /* private */ var divider_array: js.Any = js.native
     
     /**
       * Get N, number of candidates.
@@ -42,7 +42,7 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    var n_ : js.Any = js.native
+    /* private */ var n_ : js.Any = js.native
     
     /**
       * Get R, number of elements for each case.
@@ -52,7 +52,7 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    var r_ : js.Any = js.native
+    /* private */ var r_ : js.Any = js.native
     
     /**
       * Get size of all cases.
@@ -65,6 +65,6 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    var size_ : js.Any = js.native
+    /* private */ var size_ : js.Any = js.native
   }
 }

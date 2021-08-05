@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Selection")
 @js.native
-class Selection protected ()
+/* private */ class Selection ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Selection {
   
@@ -32,7 +32,7 @@ class Selection protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Selection_typekey")
   var PowerPointDotSelection_typekey: typings.activexPowerpoint.PowerPoint.Selection = js.native
   

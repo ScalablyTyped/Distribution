@@ -23,22 +23,17 @@ trait SchemaSpeechContext extends StObject {
 }
 object SchemaSpeechContext {
   
-  @scala.inline
-  def apply(): SchemaSpeechContext = {
+  inline def apply(): SchemaSpeechContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpeechContext]
   }
   
-  @scala.inline
-  implicit class SchemaSpeechContextMutableBuilder[Self <: SchemaSpeechContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpeechContext](x: Self) {
     
-    @scala.inline
-    def setPhrases(value: js.Array[String]): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
+    inline def setPhrases(value: js.Array[String]): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
+    inline def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
-    @scala.inline
-    def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
+    inline def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
   }
 }

@@ -285,175 +285,119 @@ trait ConfigureOptions extends StObject {
 }
 object ConfigureOptions {
   
-  @scala.inline
-  def apply(): ConfigureOptions = {
+  inline def apply(): ConfigureOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigureOptions]
   }
   
-  @scala.inline
-  implicit class ConfigureOptionsMutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigureOptions](x: Self) {
     
-    @scala.inline
-    def setActivitiesInterval(value: Double): Self = StObject.set(x, "activitiesInterval", value.asInstanceOf[js.Any])
+    inline def setActivitiesInterval(value: Double): Self = StObject.set(x, "activitiesInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesIntervalUndefined: Self = StObject.set(x, "activitiesInterval", js.undefined)
+    inline def setActivitiesIntervalUndefined: Self = StObject.set(x, "activitiesInterval", js.undefined)
     
-    @scala.inline
-    def setActivityType(value: iOSActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: iOSActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
+    inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDesiredAccuracy(value: AccuracyLevel): Self = StObject.set(x, "desiredAccuracy", value.asInstanceOf[js.Any])
+    inline def setDesiredAccuracy(value: AccuracyLevel): Self = StObject.set(x, "desiredAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredAccuracyUndefined: Self = StObject.set(x, "desiredAccuracy", js.undefined)
+    inline def setDesiredAccuracyUndefined: Self = StObject.set(x, "desiredAccuracy", js.undefined)
     
-    @scala.inline
-    def setDistanceFilter(value: Double): Self = StObject.set(x, "distanceFilter", value.asInstanceOf[js.Any])
+    inline def setDistanceFilter(value: Double): Self = StObject.set(x, "distanceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceFilterUndefined: Self = StObject.set(x, "distanceFilter", js.undefined)
+    inline def setDistanceFilterUndefined: Self = StObject.set(x, "distanceFilter", js.undefined)
     
-    @scala.inline
-    def setFastestInterval(value: Double): Self = StObject.set(x, "fastestInterval", value.asInstanceOf[js.Any])
+    inline def setFastestInterval(value: Double): Self = StObject.set(x, "fastestInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastestIntervalUndefined: Self = StObject.set(x, "fastestInterval", js.undefined)
+    inline def setFastestIntervalUndefined: Self = StObject.set(x, "fastestInterval", js.undefined)
     
-    @scala.inline
-    def setHttpHeaders(value: js.Any): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
+    inline def setHttpHeaders(value: js.Any): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
+    inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setLocationProvider(value: LocationProvider): Self = StObject.set(x, "locationProvider", value.asInstanceOf[js.Any])
+    inline def setLocationProvider(value: LocationProvider): Self = StObject.set(x, "locationProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationProviderUndefined: Self = StObject.set(x, "locationProvider", js.undefined)
+    inline def setLocationProviderUndefined: Self = StObject.set(x, "locationProvider", js.undefined)
     
-    @scala.inline
-    def setMaxLocations(value: Double): Self = StObject.set(x, "maxLocations", value.asInstanceOf[js.Any])
+    inline def setMaxLocations(value: Double): Self = StObject.set(x, "maxLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLocationsUndefined: Self = StObject.set(x, "maxLocations", js.undefined)
+    inline def setMaxLocationsUndefined: Self = StObject.set(x, "maxLocations", js.undefined)
     
-    @scala.inline
-    def setNotificationIconColor(value: String): Self = StObject.set(x, "notificationIconColor", value.asInstanceOf[js.Any])
+    inline def setNotificationIconColor(value: String): Self = StObject.set(x, "notificationIconColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationIconColorUndefined: Self = StObject.set(x, "notificationIconColor", js.undefined)
+    inline def setNotificationIconColorUndefined: Self = StObject.set(x, "notificationIconColor", js.undefined)
     
-    @scala.inline
-    def setNotificationIconLarge(value: String): Self = StObject.set(x, "notificationIconLarge", value.asInstanceOf[js.Any])
+    inline def setNotificationIconLarge(value: String): Self = StObject.set(x, "notificationIconLarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationIconLargeUndefined: Self = StObject.set(x, "notificationIconLarge", js.undefined)
+    inline def setNotificationIconLargeUndefined: Self = StObject.set(x, "notificationIconLarge", js.undefined)
     
-    @scala.inline
-    def setNotificationIconSmall(value: String): Self = StObject.set(x, "notificationIconSmall", value.asInstanceOf[js.Any])
+    inline def setNotificationIconSmall(value: String): Self = StObject.set(x, "notificationIconSmall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationIconSmallUndefined: Self = StObject.set(x, "notificationIconSmall", js.undefined)
+    inline def setNotificationIconSmallUndefined: Self = StObject.set(x, "notificationIconSmall", js.undefined)
     
-    @scala.inline
-    def setNotificationText(value: String): Self = StObject.set(x, "notificationText", value.asInstanceOf[js.Any])
+    inline def setNotificationText(value: String): Self = StObject.set(x, "notificationText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTextUndefined: Self = StObject.set(x, "notificationText", js.undefined)
+    inline def setNotificationTextUndefined: Self = StObject.set(x, "notificationText", js.undefined)
     
-    @scala.inline
-    def setNotificationTitle(value: String): Self = StObject.set(x, "notificationTitle", value.asInstanceOf[js.Any])
+    inline def setNotificationTitle(value: String): Self = StObject.set(x, "notificationTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTitleUndefined: Self = StObject.set(x, "notificationTitle", js.undefined)
+    inline def setNotificationTitleUndefined: Self = StObject.set(x, "notificationTitle", js.undefined)
     
-    @scala.inline
-    def setNotificationsEnabled(value: Boolean): Self = StObject.set(x, "notificationsEnabled", value.asInstanceOf[js.Any])
+    inline def setNotificationsEnabled(value: Boolean): Self = StObject.set(x, "notificationsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsEnabledUndefined: Self = StObject.set(x, "notificationsEnabled", js.undefined)
+    inline def setNotificationsEnabledUndefined: Self = StObject.set(x, "notificationsEnabled", js.undefined)
     
-    @scala.inline
-    def setPauseLocationUpdates(value: Boolean): Self = StObject.set(x, "pauseLocationUpdates", value.asInstanceOf[js.Any])
+    inline def setPauseLocationUpdates(value: Boolean): Self = StObject.set(x, "pauseLocationUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPauseLocationUpdatesUndefined: Self = StObject.set(x, "pauseLocationUpdates", js.undefined)
+    inline def setPauseLocationUpdatesUndefined: Self = StObject.set(x, "pauseLocationUpdates", js.undefined)
     
-    @scala.inline
-    def setPostTemplate(value: js.Any): Self = StObject.set(x, "postTemplate", value.asInstanceOf[js.Any])
+    inline def setPostTemplate(value: js.Any): Self = StObject.set(x, "postTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostTemplateUndefined: Self = StObject.set(x, "postTemplate", js.undefined)
+    inline def setPostTemplateUndefined: Self = StObject.set(x, "postTemplate", js.undefined)
     
-    @scala.inline
-    def setSaveBatteryOnBackground(value: Boolean): Self = StObject.set(x, "saveBatteryOnBackground", value.asInstanceOf[js.Any])
+    inline def setSaveBatteryOnBackground(value: Boolean): Self = StObject.set(x, "saveBatteryOnBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveBatteryOnBackgroundUndefined: Self = StObject.set(x, "saveBatteryOnBackground", js.undefined)
+    inline def setSaveBatteryOnBackgroundUndefined: Self = StObject.set(x, "saveBatteryOnBackground", js.undefined)
     
-    @scala.inline
-    def setStartForeground(value: Boolean): Self = StObject.set(x, "startForeground", value.asInstanceOf[js.Any])
+    inline def setStartForeground(value: Boolean): Self = StObject.set(x, "startForeground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartForegroundUndefined: Self = StObject.set(x, "startForeground", js.undefined)
+    inline def setStartForegroundUndefined: Self = StObject.set(x, "startForeground", js.undefined)
     
-    @scala.inline
-    def setStartOnBoot(value: Boolean): Self = StObject.set(x, "startOnBoot", value.asInstanceOf[js.Any])
+    inline def setStartOnBoot(value: Boolean): Self = StObject.set(x, "startOnBoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOnBootUndefined: Self = StObject.set(x, "startOnBoot", js.undefined)
+    inline def setStartOnBootUndefined: Self = StObject.set(x, "startOnBoot", js.undefined)
     
-    @scala.inline
-    def setStationaryRadius(value: Double): Self = StObject.set(x, "stationaryRadius", value.asInstanceOf[js.Any])
+    inline def setStationaryRadius(value: Double): Self = StObject.set(x, "stationaryRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStationaryRadiusUndefined: Self = StObject.set(x, "stationaryRadius", js.undefined)
+    inline def setStationaryRadiusUndefined: Self = StObject.set(x, "stationaryRadius", js.undefined)
     
-    @scala.inline
-    def setStopOnStillActivity(value: Boolean): Self = StObject.set(x, "stopOnStillActivity", value.asInstanceOf[js.Any])
+    inline def setStopOnStillActivity(value: Boolean): Self = StObject.set(x, "stopOnStillActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopOnStillActivityUndefined: Self = StObject.set(x, "stopOnStillActivity", js.undefined)
+    inline def setStopOnStillActivityUndefined: Self = StObject.set(x, "stopOnStillActivity", js.undefined)
     
-    @scala.inline
-    def setStopOnTerminate(value: Boolean): Self = StObject.set(x, "stopOnTerminate", value.asInstanceOf[js.Any])
+    inline def setStopOnTerminate(value: Boolean): Self = StObject.set(x, "stopOnTerminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopOnTerminateUndefined: Self = StObject.set(x, "stopOnTerminate", js.undefined)
+    inline def setStopOnTerminateUndefined: Self = StObject.set(x, "stopOnTerminate", js.undefined)
     
-    @scala.inline
-    def setSyncThreshold(value: String): Self = StObject.set(x, "syncThreshold", value.asInstanceOf[js.Any])
+    inline def setSyncThreshold(value: String): Self = StObject.set(x, "syncThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncThresholdUndefined: Self = StObject.set(x, "syncThreshold", js.undefined)
+    inline def setSyncThresholdUndefined: Self = StObject.set(x, "syncThreshold", js.undefined)
     
-    @scala.inline
-    def setSyncUrl(value: String): Self = StObject.set(x, "syncUrl", value.asInstanceOf[js.Any])
+    inline def setSyncUrl(value: String): Self = StObject.set(x, "syncUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncUrlUndefined: Self = StObject.set(x, "syncUrl", js.undefined)
+    inline def setSyncUrlUndefined: Self = StObject.set(x, "syncUrl", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

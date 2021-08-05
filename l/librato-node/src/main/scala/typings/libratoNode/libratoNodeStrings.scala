@@ -8,11 +8,9 @@ object libratoNodeStrings {
   
   @js.native
   sealed trait SIGINT extends StObject
-  @scala.inline
-  def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
+  inline def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
 }

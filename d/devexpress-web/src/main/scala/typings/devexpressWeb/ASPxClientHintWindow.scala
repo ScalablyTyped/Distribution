@@ -28,8 +28,7 @@ trait ASPxClientHintWindow extends StObject {
 }
 object ASPxClientHintWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SetContent: (js.Any, ASPxClientHintOptions) => Unit,
     SetContentLoading: () => Unit,
     UpdatePosition: () => Unit
@@ -38,16 +37,12 @@ object ASPxClientHintWindow {
     __obj.asInstanceOf[ASPxClientHintWindow]
   }
   
-  @scala.inline
-  implicit class ASPxClientHintWindowMutableBuilder[Self <: ASPxClientHintWindow] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHintWindow](x: Self) {
     
-    @scala.inline
-    def setSetContent(value: (js.Any, ASPxClientHintOptions) => Unit): Self = StObject.set(x, "SetContent", js.Any.fromFunction2(value))
+    inline def setSetContent(value: (js.Any, ASPxClientHintOptions) => Unit): Self = StObject.set(x, "SetContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetContentLoading(value: () => Unit): Self = StObject.set(x, "SetContentLoading", js.Any.fromFunction0(value))
+    inline def setSetContentLoading(value: () => Unit): Self = StObject.set(x, "SetContentLoading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdatePosition(value: () => Unit): Self = StObject.set(x, "UpdatePosition", js.Any.fromFunction0(value))
+    inline def setUpdatePosition(value: () => Unit): Self = StObject.set(x, "UpdatePosition", js.Any.fromFunction0(value))
   }
 }

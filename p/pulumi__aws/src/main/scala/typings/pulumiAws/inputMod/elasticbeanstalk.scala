@@ -31,35 +31,26 @@ object elasticbeanstalk {
   }
   object ApplicationAppversionLifecycle {
     
-    @scala.inline
-    def apply(serviceRole: Input[String]): ApplicationAppversionLifecycle = {
+    inline def apply(serviceRole: Input[String]): ApplicationAppversionLifecycle = {
       val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationAppversionLifecycle]
     }
     
-    @scala.inline
-    implicit class ApplicationAppversionLifecycleMutableBuilder[Self <: ApplicationAppversionLifecycle] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationAppversionLifecycle](x: Self) {
       
-      @scala.inline
-      def setDeleteSourceFromS3(value: Input[Boolean]): Self = StObject.set(x, "deleteSourceFromS3", value.asInstanceOf[js.Any])
+      inline def setDeleteSourceFromS3(value: Input[Boolean]): Self = StObject.set(x, "deleteSourceFromS3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "deleteSourceFromS3", js.undefined)
+      inline def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "deleteSourceFromS3", js.undefined)
       
-      @scala.inline
-      def setMaxAgeInDays(value: Input[Double]): Self = StObject.set(x, "maxAgeInDays", value.asInstanceOf[js.Any])
+      inline def setMaxAgeInDays(value: Input[Double]): Self = StObject.set(x, "maxAgeInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeInDaysUndefined: Self = StObject.set(x, "maxAgeInDays", js.undefined)
+      inline def setMaxAgeInDaysUndefined: Self = StObject.set(x, "maxAgeInDays", js.undefined)
       
-      @scala.inline
-      def setMaxCount(value: Input[Double]): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      inline def setMaxCount(value: Input[Double]): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
+      inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      @scala.inline
-      def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,29 +69,22 @@ object elasticbeanstalk {
   }
   object ConfigurationTemplateSetting {
     
-    @scala.inline
-    def apply(name: Input[String], namespace: Input[String], value: Input[String]): ConfigurationTemplateSetting = {
+    inline def apply(name: Input[String], namespace: Input[String], value: Input[String]): ConfigurationTemplateSetting = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationTemplateSetting]
     }
     
-    @scala.inline
-    implicit class ConfigurationTemplateSettingMutableBuilder[Self <: ConfigurationTemplateSetting] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationTemplateSetting](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,29 +104,22 @@ object elasticbeanstalk {
   }
   object EnvironmentAllSetting {
     
-    @scala.inline
-    def apply(name: Input[String], namespace: Input[String], value: Input[String]): EnvironmentAllSetting = {
+    inline def apply(name: Input[String], namespace: Input[String], value: Input[String]): EnvironmentAllSetting = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentAllSetting]
     }
     
-    @scala.inline
-    implicit class EnvironmentAllSettingMutableBuilder[Self <: EnvironmentAllSetting] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentAllSetting](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,29 +139,22 @@ object elasticbeanstalk {
   }
   object EnvironmentSetting {
     
-    @scala.inline
-    def apply(name: Input[String], namespace: Input[String], value: Input[String]): EnvironmentSetting = {
+    inline def apply(name: Input[String], namespace: Input[String], value: Input[String]): EnvironmentSetting = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentSetting]
     }
     
-    @scala.inline
-    implicit class EnvironmentSettingMutableBuilder[Self <: EnvironmentSetting] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentSetting](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

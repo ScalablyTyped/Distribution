@@ -12,6 +12,5 @@ object useNotificationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(notificationInstance: typings.rcNotification.notificationMod.default): js.Tuple2[NoticeFunc, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(notificationInstance.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[NoticeFunc, ReactElement]]
+  inline def default(notificationInstance: typings.rcNotification.notificationMod.default): js.Tuple2[NoticeFunc, ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(notificationInstance.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[NoticeFunc, ReactElement]]
 }

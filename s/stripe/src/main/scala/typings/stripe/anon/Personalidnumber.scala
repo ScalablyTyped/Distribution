@@ -13,16 +13,13 @@ trait Personalidnumber extends StObject {
 }
 object Personalidnumber {
   
-  @scala.inline
-  def apply(personal_id_number: String): Personalidnumber = {
+  inline def apply(personal_id_number: String): Personalidnumber = {
     val __obj = js.Dynamic.literal(personal_id_number = personal_id_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Personalidnumber]
   }
   
-  @scala.inline
-  implicit class PersonalidnumberMutableBuilder[Self <: Personalidnumber] (val x: Self) extends AnyVal {
+  extension [Self <: Personalidnumber](x: Self) {
     
-    @scala.inline
-    def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
+    inline def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
   }
 }

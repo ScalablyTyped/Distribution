@@ -15,20 +15,16 @@ trait AnimationKeyframesSequenceMetadata
 }
 object AnimationKeyframesSequenceMetadata {
   
-  @scala.inline
-  def apply(steps: js.Array[AnimationStyleMetadata], `type`: AnimationMetadataType): AnimationKeyframesSequenceMetadata = {
+  inline def apply(steps: js.Array[AnimationStyleMetadata], `type`: AnimationMetadataType): AnimationKeyframesSequenceMetadata = {
     val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationKeyframesSequenceMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationKeyframesSequenceMetadataMutableBuilder[Self <: AnimationKeyframesSequenceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationKeyframesSequenceMetadata](x: Self) {
     
-    @scala.inline
-    def setSteps(value: js.Array[AnimationStyleMetadata]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[AnimationStyleMetadata]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: AnimationStyleMetadata*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: AnimationStyleMetadata*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

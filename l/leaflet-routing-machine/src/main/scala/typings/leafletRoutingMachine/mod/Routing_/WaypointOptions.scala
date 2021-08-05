@@ -10,19 +10,15 @@ trait WaypointOptions extends StObject {
 }
 object WaypointOptions {
   
-  @scala.inline
-  def apply(): WaypointOptions = {
+  inline def apply(): WaypointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaypointOptions]
   }
   
-  @scala.inline
-  implicit class WaypointOptionsMutableBuilder[Self <: WaypointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WaypointOptions](x: Self) {
     
-    @scala.inline
-    def setAllowUTurn(value: Boolean): Self = StObject.set(x, "allowUTurn", value.asInstanceOf[js.Any])
+    inline def setAllowUTurn(value: Boolean): Self = StObject.set(x, "allowUTurn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUTurnUndefined: Self = StObject.set(x, "allowUTurn", js.undefined)
+    inline def setAllowUTurnUndefined: Self = StObject.set(x, "allowUTurn", js.undefined)
   }
 }

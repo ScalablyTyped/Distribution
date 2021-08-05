@@ -36,26 +36,20 @@ object titleTypesMod {
   }
   object ITitleAPI {
     
-    @scala.inline
-    def apply(): ITitleAPI = {
+    inline def apply(): ITitleAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITitleAPI]
     }
     
-    @scala.inline
-    implicit class ITitleAPIMutableBuilder[Self <: ITitleAPI] (val x: Self) extends AnyVal {
+    extension [Self <: ITitleAPI](x: Self) {
       
-      @scala.inline
-      def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitleClickCallback(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "setTitleClickCallback", js.Any.fromFunction1(value))
+      inline def setSetTitleClickCallback(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "setTitleClickCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitleClickCallbackUndefined: Self = StObject.set(x, "setTitleClickCallback", js.undefined)
+      inline def setSetTitleClickCallbackUndefined: Self = StObject.set(x, "setTitleClickCallback", js.undefined)
       
-      @scala.inline
-      def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
+      inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     }
   }
   
@@ -65,20 +59,16 @@ object titleTypesMod {
   }
   object ITitleViewCallbacks {
     
-    @scala.inline
-    def apply(onClick: EventListenerOrEventListenerObject): ITitleViewCallbacks = {
+    inline def apply(onClick: EventListenerOrEventListenerObject): ITitleViewCallbacks = {
       val __obj = js.Dynamic.literal(onClick = onClick.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITitleViewCallbacks]
     }
     
-    @scala.inline
-    implicit class ITitleViewCallbacksMutableBuilder[Self <: ITitleViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: ITitleViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -90,20 +80,16 @@ object titleTypesMod {
   }
   object ITitleViewConfig {
     
-    @scala.inline
-    def apply(callbacks: ITitleViewCallbacks, theme: IThemeService): ITitleViewConfig = {
+    inline def apply(callbacks: ITitleViewCallbacks, theme: IThemeService): ITitleViewConfig = {
       val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITitleViewConfig]
     }
     
-    @scala.inline
-    implicit class ITitleViewConfigMutableBuilder[Self <: ITitleViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ITitleViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: ITitleViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: ITitleViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,23 +103,18 @@ object titleTypesMod {
   }
   object ITitleViewStyles {
     
-    @scala.inline
-    def apply(hidden: String, link: String, title: String): ITitleViewStyles = {
+    inline def apply(hidden: String, link: String, title: String): ITitleViewStyles = {
       val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITitleViewStyles]
     }
     
-    @scala.inline
-    implicit class ITitleViewStylesMutableBuilder[Self <: ITitleViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ITitleViewStyles](x: Self) {
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

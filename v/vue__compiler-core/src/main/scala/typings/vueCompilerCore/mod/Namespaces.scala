@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Namespaces {
   
-  @scala.inline
-  def HTML: `0` = 0.asInstanceOf[`0`]
+  inline def HTML: `0` = 0.asInstanceOf[`0`]
 }

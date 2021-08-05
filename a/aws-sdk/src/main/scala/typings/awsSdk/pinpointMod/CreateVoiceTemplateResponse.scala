@@ -10,16 +10,13 @@ trait CreateVoiceTemplateResponse extends StObject {
 }
 object CreateVoiceTemplateResponse {
   
-  @scala.inline
-  def apply(CreateTemplateMessageBody: CreateTemplateMessageBody): CreateVoiceTemplateResponse = {
+  inline def apply(CreateTemplateMessageBody: CreateTemplateMessageBody): CreateVoiceTemplateResponse = {
     val __obj = js.Dynamic.literal(CreateTemplateMessageBody = CreateTemplateMessageBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVoiceTemplateResponse]
   }
   
-  @scala.inline
-  implicit class CreateVoiceTemplateResponseMutableBuilder[Self <: CreateVoiceTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVoiceTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setCreateTemplateMessageBody(value: CreateTemplateMessageBody): Self = StObject.set(x, "CreateTemplateMessageBody", value.asInstanceOf[js.Any])
+    inline def setCreateTemplateMessageBody(value: CreateTemplateMessageBody): Self = StObject.set(x, "CreateTemplateMessageBody", value.asInstanceOf[js.Any])
   }
 }

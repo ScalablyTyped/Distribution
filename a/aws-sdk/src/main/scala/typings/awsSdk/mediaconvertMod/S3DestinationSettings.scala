@@ -18,25 +18,19 @@ trait S3DestinationSettings extends StObject {
 }
 object S3DestinationSettings {
   
-  @scala.inline
-  def apply(): S3DestinationSettings = {
+  inline def apply(): S3DestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3DestinationSettings]
   }
   
-  @scala.inline
-  implicit class S3DestinationSettingsMutableBuilder[Self <: S3DestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: S3DestinationSettings](x: Self) {
     
-    @scala.inline
-    def setAccessControl(value: S3DestinationAccessControl): Self = StObject.set(x, "AccessControl", value.asInstanceOf[js.Any])
+    inline def setAccessControl(value: S3DestinationAccessControl): Self = StObject.set(x, "AccessControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlUndefined: Self = StObject.set(x, "AccessControl", js.undefined)
+    inline def setAccessControlUndefined: Self = StObject.set(x, "AccessControl", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: S3EncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: S3EncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
   }
 }

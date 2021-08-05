@@ -30,8 +30,7 @@ trait SlideSorter
 }
 object SlideSorter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackgroundColor: Color,
     CurrentPage: XDrawPage,
     DocumentSlides: XIndexAccess,
@@ -60,10 +59,8 @@ object SlideSorter {
     __obj.asInstanceOf[SlideSorter]
   }
   
-  @scala.inline
-  implicit class SlideSorterMutableBuilder[Self <: SlideSorter] (val x: Self) extends AnyVal {
+  extension [Self <: SlideSorter](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (XResourceId, XController, XWindow) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+    inline def setCreate(value: (XResourceId, XController, XWindow) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
   }
 }

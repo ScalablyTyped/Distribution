@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.QuerySnapshot")
 @js.native
-class QuerySnapshot[T] protected () extends StObject {
+/* private */ class QuerySnapshot[T] () extends StObject {
   
   /**
     * Returns an array of the documents changes since the last snapshot. If this

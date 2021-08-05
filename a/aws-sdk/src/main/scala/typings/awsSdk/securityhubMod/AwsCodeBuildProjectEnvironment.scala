@@ -28,37 +28,27 @@ trait AwsCodeBuildProjectEnvironment extends StObject {
 }
 object AwsCodeBuildProjectEnvironment {
   
-  @scala.inline
-  def apply(): AwsCodeBuildProjectEnvironment = {
+  inline def apply(): AwsCodeBuildProjectEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCodeBuildProjectEnvironment]
   }
   
-  @scala.inline
-  implicit class AwsCodeBuildProjectEnvironmentMutableBuilder[Self <: AwsCodeBuildProjectEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCodeBuildProjectEnvironment](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: NonEmptyString): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: NonEmptyString): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
-    @scala.inline
-    def setImagePullCredentialsType(value: NonEmptyString): Self = StObject.set(x, "ImagePullCredentialsType", value.asInstanceOf[js.Any])
+    inline def setImagePullCredentialsType(value: NonEmptyString): Self = StObject.set(x, "ImagePullCredentialsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePullCredentialsTypeUndefined: Self = StObject.set(x, "ImagePullCredentialsType", js.undefined)
+    inline def setImagePullCredentialsTypeUndefined: Self = StObject.set(x, "ImagePullCredentialsType", js.undefined)
     
-    @scala.inline
-    def setRegistryCredential(value: AwsCodeBuildProjectEnvironmentRegistryCredential): Self = StObject.set(x, "RegistryCredential", value.asInstanceOf[js.Any])
+    inline def setRegistryCredential(value: AwsCodeBuildProjectEnvironmentRegistryCredential): Self = StObject.set(x, "RegistryCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryCredentialUndefined: Self = StObject.set(x, "RegistryCredential", js.undefined)
+    inline def setRegistryCredentialUndefined: Self = StObject.set(x, "RegistryCredential", js.undefined)
     
-    @scala.inline
-    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

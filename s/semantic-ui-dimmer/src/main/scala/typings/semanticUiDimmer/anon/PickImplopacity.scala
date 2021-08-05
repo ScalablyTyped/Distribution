@@ -12,16 +12,13 @@ trait PickImplopacity extends StObject {
 }
 object PickImplopacity {
   
-  @scala.inline
-  def apply(opacity: auto | Double): PickImplopacity = {
+  inline def apply(opacity: auto | Double): PickImplopacity = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplopacity]
   }
   
-  @scala.inline
-  implicit class PickImplopacityMutableBuilder[Self <: PickImplopacity] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplopacity](x: Self) {
     
-    @scala.inline
-    def setOpacity(value: auto | Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: auto | Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }
 }

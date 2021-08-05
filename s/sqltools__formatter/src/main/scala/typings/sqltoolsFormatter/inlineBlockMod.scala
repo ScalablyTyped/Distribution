@@ -28,7 +28,7 @@ object inlineBlockMod {
     /* CompleteClass */
     override def isInlineBlock(tokens: js.Any, index: js.Any): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var level: js.Any = js.native
   }
   
@@ -44,12 +44,11 @@ object inlineBlockMod {
     
     def isInlineBlock(tokens: js.Any, index: js.Any): Boolean
     
-    var level: js.Any
+    /* private */ var level: js.Any
   }
   object InlineBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beginIfPossible: (js.Any, js.Any) => Unit,
       end: () => Unit,
       isActive: () => Boolean,
@@ -61,26 +60,19 @@ object inlineBlockMod {
       __obj.asInstanceOf[InlineBlock]
     }
     
-    @scala.inline
-    implicit class InlineBlockMutableBuilder[Self <: InlineBlock] (val x: Self) extends AnyVal {
+    extension [Self <: InlineBlock](x: Self) {
       
-      @scala.inline
-      def setBeginIfPossible(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "beginIfPossible", js.Any.fromFunction2(value))
+      inline def setBeginIfPossible(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "beginIfPossible", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+      inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsForbiddenToken(value: Type => Boolean): Self = StObject.set(x, "isForbiddenToken", js.Any.fromFunction1(value))
+      inline def setIsForbiddenToken(value: Type => Boolean): Self = StObject.set(x, "isForbiddenToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsInlineBlock(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "isInlineBlock", js.Any.fromFunction2(value))
+      inline def setIsInlineBlock(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "isInlineBlock", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLevel(value: js.Any): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: js.Any): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
 }

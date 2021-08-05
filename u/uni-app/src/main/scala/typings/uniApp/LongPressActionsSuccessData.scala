@@ -18,25 +18,19 @@ trait LongPressActionsSuccessData extends StObject {
 }
 object LongPressActionsSuccessData {
   
-  @scala.inline
-  def apply(): LongPressActionsSuccessData = {
+  inline def apply(): LongPressActionsSuccessData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LongPressActionsSuccessData]
   }
   
-  @scala.inline
-  implicit class LongPressActionsSuccessDataMutableBuilder[Self <: LongPressActionsSuccessData] (val x: Self) extends AnyVal {
+  extension [Self <: LongPressActionsSuccessData](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
+    inline def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapIndexUndefined: Self = StObject.set(x, "tapIndex", js.undefined)
+    inline def setTapIndexUndefined: Self = StObject.set(x, "tapIndex", js.undefined)
   }
 }

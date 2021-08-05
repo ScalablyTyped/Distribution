@@ -14,31 +14,23 @@ trait Conflict extends StObject {
 }
 object Conflict {
   
-  @scala.inline
-  def apply(): Conflict = {
+  inline def apply(): Conflict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Conflict]
   }
   
-  @scala.inline
-  implicit class ConflictMutableBuilder[Self <: Conflict] (val x: Self) extends AnyVal {
+  extension [Self <: Conflict](x: Self) {
     
-    @scala.inline
-    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setConflict(value: String): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
+    inline def setConflict(value: String): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)
+    inline def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

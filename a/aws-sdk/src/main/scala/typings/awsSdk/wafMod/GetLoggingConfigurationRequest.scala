@@ -13,16 +13,13 @@ trait GetLoggingConfigurationRequest extends StObject {
 }
 object GetLoggingConfigurationRequest {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArn): GetLoggingConfigurationRequest = {
+  inline def apply(ResourceArn: ResourceArn): GetLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLoggingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetLoggingConfigurationRequestMutableBuilder[Self <: GetLoggingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoggingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

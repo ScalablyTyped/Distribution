@@ -28,8 +28,7 @@ trait CapacityProviderAutoScalingGroupProviderManagedScaling extends StObject {
 }
 object CapacityProviderAutoScalingGroupProviderManagedScaling {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maximumScalingStepSize: Double,
     minimumScalingStepSize: Double,
     status: String,
@@ -39,19 +38,14 @@ object CapacityProviderAutoScalingGroupProviderManagedScaling {
     __obj.asInstanceOf[CapacityProviderAutoScalingGroupProviderManagedScaling]
   }
   
-  @scala.inline
-  implicit class CapacityProviderAutoScalingGroupProviderManagedScalingMutableBuilder[Self <: CapacityProviderAutoScalingGroupProviderManagedScaling] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityProviderAutoScalingGroupProviderManagedScaling](x: Self) {
     
-    @scala.inline
-    def setMaximumScalingStepSize(value: Double): Self = StObject.set(x, "maximumScalingStepSize", value.asInstanceOf[js.Any])
+    inline def setMaximumScalingStepSize(value: Double): Self = StObject.set(x, "maximumScalingStepSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumScalingStepSize(value: Double): Self = StObject.set(x, "minimumScalingStepSize", value.asInstanceOf[js.Any])
+    inline def setMinimumScalingStepSize(value: Double): Self = StObject.set(x, "minimumScalingStepSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCapacity(value: Double): Self = StObject.set(x, "targetCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetCapacity(value: Double): Self = StObject.set(x, "targetCapacity", value.asInstanceOf[js.Any])
   }
 }

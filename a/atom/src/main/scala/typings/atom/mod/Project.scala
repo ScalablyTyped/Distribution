@@ -81,8 +81,7 @@ trait Project extends StObject {
 }
 object Project {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addPath: String => Unit,
     contains: String => Boolean,
     getDirectories: () => js.Array[Directory],
@@ -106,61 +105,42 @@ object Project {
     __obj.asInstanceOf[Project]
   }
   
-  @scala.inline
-  implicit class ProjectMutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
+  extension [Self <: Project](x: Self) {
     
-    @scala.inline
-    def setAddPath(value: String => Unit): Self = StObject.set(x, "addPath", js.Any.fromFunction1(value))
+    inline def setAddPath(value: String => Unit): Self = StObject.set(x, "addPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDirectories(value: () => js.Array[Directory]): Self = StObject.set(x, "getDirectories", js.Any.fromFunction0(value))
+    inline def setGetDirectories(value: () => js.Array[Directory]): Self = StObject.set(x, "getDirectories", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPaths(value: () => js.Array[String]): Self = StObject.set(x, "getPaths", js.Any.fromFunction0(value))
+    inline def setGetPaths(value: () => js.Array[String]): Self = StObject.set(x, "getPaths", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRepositories(value: () => js.Array[GitRepository]): Self = StObject.set(x, "getRepositories", js.Any.fromFunction0(value))
+    inline def setGetRepositories(value: () => js.Array[GitRepository]): Self = StObject.set(x, "getRepositories", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWatcherPromise(value: String => js.Promise[PathWatcher]): Self = StObject.set(x, "getWatcherPromise", js.Any.fromFunction1(value))
+    inline def setGetWatcherPromise(value: String => js.Promise[PathWatcher]): Self = StObject.set(x, "getWatcherPromise", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObserveBuffers(value: js.Function1[/* buffer */ TextBuffer, Unit] => Disposable): Self = StObject.set(x, "observeBuffers", js.Any.fromFunction1(value))
+    inline def setObserveBuffers(value: js.Function1[/* buffer */ TextBuffer, Unit] => Disposable): Self = StObject.set(x, "observeBuffers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObserveRepositories(value: js.Function1[/* repository */ GitRepository, Unit] => Disposable): Self = StObject.set(x, "observeRepositories", js.Any.fromFunction1(value))
+    inline def setObserveRepositories(value: js.Function1[/* repository */ GitRepository, Unit] => Disposable): Self = StObject.set(x, "observeRepositories", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidAddBuffer(value: js.Function1[/* buffer */ TextBuffer, Unit] => Disposable): Self = StObject.set(x, "onDidAddBuffer", js.Any.fromFunction1(value))
+    inline def setOnDidAddBuffer(value: js.Function1[/* buffer */ TextBuffer, Unit] => Disposable): Self = StObject.set(x, "onDidAddBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidAddRepository(value: js.Function1[/* repository */ GitRepository, Unit] => Disposable): Self = StObject.set(x, "onDidAddRepository", js.Any.fromFunction1(value))
+    inline def setOnDidAddRepository(value: js.Function1[/* repository */ GitRepository, Unit] => Disposable): Self = StObject.set(x, "onDidAddRepository", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidChangeFiles(value: js.Function1[/* events */ FilesystemChangeEvent, Unit] => Disposable): Self = StObject.set(x, "onDidChangeFiles", js.Any.fromFunction1(value))
+    inline def setOnDidChangeFiles(value: js.Function1[/* events */ FilesystemChangeEvent, Unit] => Disposable): Self = StObject.set(x, "onDidChangeFiles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidChangePaths(value: js.Function1[/* projectPaths */ js.Array[String], Unit] => Disposable): Self = StObject.set(x, "onDidChangePaths", js.Any.fromFunction1(value))
+    inline def setOnDidChangePaths(value: js.Function1[/* projectPaths */ js.Array[String], Unit] => Disposable): Self = StObject.set(x, "onDidChangePaths", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidReplace(value: js.Function1[/* projectSpec */ js.UndefOr[ProjectSpecification | Null], Unit] => Disposable): Self = StObject.set(x, "onDidReplace", js.Any.fromFunction1(value))
+    inline def setOnDidReplace(value: js.Function1[/* projectSpec */ js.UndefOr[ProjectSpecification | Null], Unit] => Disposable): Self = StObject.set(x, "onDidReplace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRelativize(value: String => String): Self = StObject.set(x, "relativize", js.Any.fromFunction1(value))
+    inline def setRelativize(value: String => String): Self = StObject.set(x, "relativize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRelativizePath(value: String => js.Tuple2[String | Null, String]): Self = StObject.set(x, "relativizePath", js.Any.fromFunction1(value))
+    inline def setRelativizePath(value: String => js.Tuple2[String | Null, String]): Self = StObject.set(x, "relativizePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemovePath(value: String => Unit): Self = StObject.set(x, "removePath", js.Any.fromFunction1(value))
+    inline def setRemovePath(value: String => Unit): Self = StObject.set(x, "removePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRepositoryForDirectory(value: Directory => js.Promise[GitRepository | Null]): Self = StObject.set(x, "repositoryForDirectory", js.Any.fromFunction1(value))
+    inline def setRepositoryForDirectory(value: Directory => js.Promise[GitRepository | Null]): Self = StObject.set(x, "repositoryForDirectory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPaths(value: js.Array[String] => Unit): Self = StObject.set(x, "setPaths", js.Any.fromFunction1(value))
+    inline def setSetPaths(value: js.Array[String] => Unit): Self = StObject.set(x, "setPaths", js.Any.fromFunction1(value))
   }
 }

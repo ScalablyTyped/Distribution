@@ -22,8 +22,7 @@ trait FaceDetectionEffectDefinition extends StObject {
 }
 object FaceDetectionEffectDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatableClassId: String,
     detectionMode: FaceDetectionMode,
     properties: IPropertySet,
@@ -33,19 +32,14 @@ object FaceDetectionEffectDefinition {
     __obj.asInstanceOf[FaceDetectionEffectDefinition]
   }
   
-  @scala.inline
-  implicit class FaceDetectionEffectDefinitionMutableBuilder[Self <: FaceDetectionEffectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: FaceDetectionEffectDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectionMode(value: FaceDetectionMode): Self = StObject.set(x, "detectionMode", value.asInstanceOf[js.Any])
+    inline def setDetectionMode(value: FaceDetectionMode): Self = StObject.set(x, "detectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynchronousDetectionEnabled(value: Boolean): Self = StObject.set(x, "synchronousDetectionEnabled", value.asInstanceOf[js.Any])
+    inline def setSynchronousDetectionEnabled(value: Boolean): Self = StObject.set(x, "synchronousDetectionEnabled", value.asInstanceOf[js.Any])
   }
 }

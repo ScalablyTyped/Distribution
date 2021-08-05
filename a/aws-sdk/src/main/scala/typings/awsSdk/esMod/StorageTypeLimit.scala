@@ -18,28 +18,21 @@ trait StorageTypeLimit extends StObject {
 }
 object StorageTypeLimit {
   
-  @scala.inline
-  def apply(): StorageTypeLimit = {
+  inline def apply(): StorageTypeLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageTypeLimit]
   }
   
-  @scala.inline
-  implicit class StorageTypeLimitMutableBuilder[Self <: StorageTypeLimit] (val x: Self) extends AnyVal {
+  extension [Self <: StorageTypeLimit](x: Self) {
     
-    @scala.inline
-    def setLimitName(value: LimitName): Self = StObject.set(x, "LimitName", value.asInstanceOf[js.Any])
+    inline def setLimitName(value: LimitName): Self = StObject.set(x, "LimitName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitNameUndefined: Self = StObject.set(x, "LimitName", js.undefined)
+    inline def setLimitNameUndefined: Self = StObject.set(x, "LimitName", js.undefined)
     
-    @scala.inline
-    def setLimitValues(value: LimitValueList): Self = StObject.set(x, "LimitValues", value.asInstanceOf[js.Any])
+    inline def setLimitValues(value: LimitValueList): Self = StObject.set(x, "LimitValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitValuesUndefined: Self = StObject.set(x, "LimitValues", js.undefined)
+    inline def setLimitValuesUndefined: Self = StObject.set(x, "LimitValues", js.undefined)
     
-    @scala.inline
-    def setLimitValuesVarargs(value: LimitValue*): Self = StObject.set(x, "LimitValues", js.Array(value :_*))
+    inline def setLimitValuesVarargs(value: LimitValue*): Self = StObject.set(x, "LimitValues", js.Array(value :_*))
   }
 }

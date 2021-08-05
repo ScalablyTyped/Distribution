@@ -14,7 +14,7 @@ trait PropertyEffect extends StObject {
   
   val Points: AnimationPoints
   
-  @JSName("PowerPoint.PropertyEffect_typekey")
+  /* private */ @JSName("PowerPoint.PropertyEffect_typekey")
   var PowerPointDotPropertyEffect_typekey: PropertyEffect
   
   var Property: MsoAnimProperty
@@ -23,8 +23,7 @@ trait PropertyEffect extends StObject {
 }
 object PropertyEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     From: js.Any,
     Parent: js.Any,
@@ -38,28 +37,20 @@ object PropertyEffect {
     __obj.asInstanceOf[PropertyEffect]
   }
   
-  @scala.inline
-  implicit class PropertyEffectMutableBuilder[Self <: PropertyEffect] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: js.Any): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Any): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: AnimationPoints): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: AnimationPoints): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPropertyEffect_typekey(value: PropertyEffect): Self = StObject.set(x, "PowerPoint.PropertyEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPropertyEffect_typekey(value: PropertyEffect): Self = StObject.set(x, "PowerPoint.PropertyEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: MsoAnimProperty): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: MsoAnimProperty): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

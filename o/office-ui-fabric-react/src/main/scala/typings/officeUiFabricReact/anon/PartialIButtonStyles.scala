@@ -118,499 +118,335 @@ trait PartialIButtonStyles extends StObject {
 }
 object PartialIButtonStyles {
   
-  @scala.inline
-  def apply(): PartialIButtonStyles = {
+  inline def apply(): PartialIButtonStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIButtonStyles]
   }
   
-  @scala.inline
-  implicit class PartialIButtonStylesMutableBuilder[Self <: PartialIButtonStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIButtonStyles](x: Self) {
     
-    @scala.inline
-    def setDescription(value: IStyle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: IStyle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionChecked(value: IStyle): Self = StObject.set(x, "descriptionChecked", value.asInstanceOf[js.Any])
+    inline def setDescriptionChecked(value: IStyle): Self = StObject.set(x, "descriptionChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionCheckedNull: Self = StObject.set(x, "descriptionChecked", null)
+    inline def setDescriptionCheckedNull: Self = StObject.set(x, "descriptionChecked", null)
     
-    @scala.inline
-    def setDescriptionCheckedUndefined: Self = StObject.set(x, "descriptionChecked", js.undefined)
+    inline def setDescriptionCheckedUndefined: Self = StObject.set(x, "descriptionChecked", js.undefined)
     
-    @scala.inline
-    def setDescriptionDisabled(value: IStyle): Self = StObject.set(x, "descriptionDisabled", value.asInstanceOf[js.Any])
+    inline def setDescriptionDisabled(value: IStyle): Self = StObject.set(x, "descriptionDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionDisabledNull: Self = StObject.set(x, "descriptionDisabled", null)
+    inline def setDescriptionDisabledNull: Self = StObject.set(x, "descriptionDisabled", null)
     
-    @scala.inline
-    def setDescriptionDisabledUndefined: Self = StObject.set(x, "descriptionDisabled", js.undefined)
+    inline def setDescriptionDisabledUndefined: Self = StObject.set(x, "descriptionDisabled", js.undefined)
     
-    @scala.inline
-    def setDescriptionHovered(value: IStyle): Self = StObject.set(x, "descriptionHovered", value.asInstanceOf[js.Any])
+    inline def setDescriptionHovered(value: IStyle): Self = StObject.set(x, "descriptionHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionHoveredNull: Self = StObject.set(x, "descriptionHovered", null)
+    inline def setDescriptionHoveredNull: Self = StObject.set(x, "descriptionHovered", null)
     
-    @scala.inline
-    def setDescriptionHoveredUndefined: Self = StObject.set(x, "descriptionHovered", js.undefined)
+    inline def setDescriptionHoveredUndefined: Self = StObject.set(x, "descriptionHovered", js.undefined)
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionPressed(value: IStyle): Self = StObject.set(x, "descriptionPressed", value.asInstanceOf[js.Any])
+    inline def setDescriptionPressed(value: IStyle): Self = StObject.set(x, "descriptionPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionPressedNull: Self = StObject.set(x, "descriptionPressed", null)
+    inline def setDescriptionPressedNull: Self = StObject.set(x, "descriptionPressed", null)
     
-    @scala.inline
-    def setDescriptionPressedUndefined: Self = StObject.set(x, "descriptionPressed", js.undefined)
+    inline def setDescriptionPressedUndefined: Self = StObject.set(x, "descriptionPressed", js.undefined)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFlexContainer(value: IStyle): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+    inline def setFlexContainer(value: IStyle): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexContainerNull: Self = StObject.set(x, "flexContainer", null)
+    inline def setFlexContainerNull: Self = StObject.set(x, "flexContainer", null)
     
-    @scala.inline
-    def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
+    inline def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
     
-    @scala.inline
-    def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconChecked(value: IStyle): Self = StObject.set(x, "iconChecked", value.asInstanceOf[js.Any])
+    inline def setIconChecked(value: IStyle): Self = StObject.set(x, "iconChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconCheckedNull: Self = StObject.set(x, "iconChecked", null)
+    inline def setIconCheckedNull: Self = StObject.set(x, "iconChecked", null)
     
-    @scala.inline
-    def setIconCheckedUndefined: Self = StObject.set(x, "iconChecked", js.undefined)
+    inline def setIconCheckedUndefined: Self = StObject.set(x, "iconChecked", js.undefined)
     
-    @scala.inline
-    def setIconDisabled(value: IStyle): Self = StObject.set(x, "iconDisabled", value.asInstanceOf[js.Any])
+    inline def setIconDisabled(value: IStyle): Self = StObject.set(x, "iconDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconDisabledNull: Self = StObject.set(x, "iconDisabled", null)
+    inline def setIconDisabledNull: Self = StObject.set(x, "iconDisabled", null)
     
-    @scala.inline
-    def setIconDisabledUndefined: Self = StObject.set(x, "iconDisabled", js.undefined)
+    inline def setIconDisabledUndefined: Self = StObject.set(x, "iconDisabled", js.undefined)
     
-    @scala.inline
-    def setIconExpanded(value: IStyle): Self = StObject.set(x, "iconExpanded", value.asInstanceOf[js.Any])
+    inline def setIconExpanded(value: IStyle): Self = StObject.set(x, "iconExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconExpandedHovered(value: IStyle): Self = StObject.set(x, "iconExpandedHovered", value.asInstanceOf[js.Any])
+    inline def setIconExpandedHovered(value: IStyle): Self = StObject.set(x, "iconExpandedHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconExpandedHoveredNull: Self = StObject.set(x, "iconExpandedHovered", null)
+    inline def setIconExpandedHoveredNull: Self = StObject.set(x, "iconExpandedHovered", null)
     
-    @scala.inline
-    def setIconExpandedHoveredUndefined: Self = StObject.set(x, "iconExpandedHovered", js.undefined)
+    inline def setIconExpandedHoveredUndefined: Self = StObject.set(x, "iconExpandedHovered", js.undefined)
     
-    @scala.inline
-    def setIconExpandedNull: Self = StObject.set(x, "iconExpanded", null)
+    inline def setIconExpandedNull: Self = StObject.set(x, "iconExpanded", null)
     
-    @scala.inline
-    def setIconExpandedUndefined: Self = StObject.set(x, "iconExpanded", js.undefined)
+    inline def setIconExpandedUndefined: Self = StObject.set(x, "iconExpanded", js.undefined)
     
-    @scala.inline
-    def setIconHovered(value: IStyle): Self = StObject.set(x, "iconHovered", value.asInstanceOf[js.Any])
+    inline def setIconHovered(value: IStyle): Self = StObject.set(x, "iconHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconHoveredNull: Self = StObject.set(x, "iconHovered", null)
+    inline def setIconHoveredNull: Self = StObject.set(x, "iconHovered", null)
     
-    @scala.inline
-    def setIconHoveredUndefined: Self = StObject.set(x, "iconHovered", js.undefined)
+    inline def setIconHoveredUndefined: Self = StObject.set(x, "iconHovered", js.undefined)
     
-    @scala.inline
-    def setIconNull: Self = StObject.set(x, "icon", null)
+    inline def setIconNull: Self = StObject.set(x, "icon", null)
     
-    @scala.inline
-    def setIconPressed(value: IStyle): Self = StObject.set(x, "iconPressed", value.asInstanceOf[js.Any])
+    inline def setIconPressed(value: IStyle): Self = StObject.set(x, "iconPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPressedNull: Self = StObject.set(x, "iconPressed", null)
+    inline def setIconPressedNull: Self = StObject.set(x, "iconPressed", null)
     
-    @scala.inline
-    def setIconPressedUndefined: Self = StObject.set(x, "iconPressed", js.undefined)
+    inline def setIconPressedUndefined: Self = StObject.set(x, "iconPressed", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelChecked(value: IStyle): Self = StObject.set(x, "labelChecked", value.asInstanceOf[js.Any])
+    inline def setLabelChecked(value: IStyle): Self = StObject.set(x, "labelChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelCheckedNull: Self = StObject.set(x, "labelChecked", null)
+    inline def setLabelCheckedNull: Self = StObject.set(x, "labelChecked", null)
     
-    @scala.inline
-    def setLabelCheckedUndefined: Self = StObject.set(x, "labelChecked", js.undefined)
+    inline def setLabelCheckedUndefined: Self = StObject.set(x, "labelChecked", js.undefined)
     
-    @scala.inline
-    def setLabelDisabled(value: IStyle): Self = StObject.set(x, "labelDisabled", value.asInstanceOf[js.Any])
+    inline def setLabelDisabled(value: IStyle): Self = StObject.set(x, "labelDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelDisabledNull: Self = StObject.set(x, "labelDisabled", null)
+    inline def setLabelDisabledNull: Self = StObject.set(x, "labelDisabled", null)
     
-    @scala.inline
-    def setLabelDisabledUndefined: Self = StObject.set(x, "labelDisabled", js.undefined)
+    inline def setLabelDisabledUndefined: Self = StObject.set(x, "labelDisabled", js.undefined)
     
-    @scala.inline
-    def setLabelHovered(value: IStyle): Self = StObject.set(x, "labelHovered", value.asInstanceOf[js.Any])
+    inline def setLabelHovered(value: IStyle): Self = StObject.set(x, "labelHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelHoveredNull: Self = StObject.set(x, "labelHovered", null)
+    inline def setLabelHoveredNull: Self = StObject.set(x, "labelHovered", null)
     
-    @scala.inline
-    def setLabelHoveredUndefined: Self = StObject.set(x, "labelHovered", js.undefined)
+    inline def setLabelHoveredUndefined: Self = StObject.set(x, "labelHovered", js.undefined)
     
-    @scala.inline
-    def setLabelNull: Self = StObject.set(x, "label", null)
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMenuIcon(value: IStyle): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+    inline def setMenuIcon(value: IStyle): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconChecked(value: IStyle): Self = StObject.set(x, "menuIconChecked", value.asInstanceOf[js.Any])
+    inline def setMenuIconChecked(value: IStyle): Self = StObject.set(x, "menuIconChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconCheckedNull: Self = StObject.set(x, "menuIconChecked", null)
+    inline def setMenuIconCheckedNull: Self = StObject.set(x, "menuIconChecked", null)
     
-    @scala.inline
-    def setMenuIconCheckedUndefined: Self = StObject.set(x, "menuIconChecked", js.undefined)
+    inline def setMenuIconCheckedUndefined: Self = StObject.set(x, "menuIconChecked", js.undefined)
     
-    @scala.inline
-    def setMenuIconDisabled(value: IStyle): Self = StObject.set(x, "menuIconDisabled", value.asInstanceOf[js.Any])
+    inline def setMenuIconDisabled(value: IStyle): Self = StObject.set(x, "menuIconDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconDisabledNull: Self = StObject.set(x, "menuIconDisabled", null)
+    inline def setMenuIconDisabledNull: Self = StObject.set(x, "menuIconDisabled", null)
     
-    @scala.inline
-    def setMenuIconDisabledUndefined: Self = StObject.set(x, "menuIconDisabled", js.undefined)
+    inline def setMenuIconDisabledUndefined: Self = StObject.set(x, "menuIconDisabled", js.undefined)
     
-    @scala.inline
-    def setMenuIconExpanded(value: IStyle): Self = StObject.set(x, "menuIconExpanded", value.asInstanceOf[js.Any])
+    inline def setMenuIconExpanded(value: IStyle): Self = StObject.set(x, "menuIconExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconExpandedHovered(value: IStyle): Self = StObject.set(x, "menuIconExpandedHovered", value.asInstanceOf[js.Any])
+    inline def setMenuIconExpandedHovered(value: IStyle): Self = StObject.set(x, "menuIconExpandedHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconExpandedHoveredNull: Self = StObject.set(x, "menuIconExpandedHovered", null)
+    inline def setMenuIconExpandedHoveredNull: Self = StObject.set(x, "menuIconExpandedHovered", null)
     
-    @scala.inline
-    def setMenuIconExpandedHoveredUndefined: Self = StObject.set(x, "menuIconExpandedHovered", js.undefined)
+    inline def setMenuIconExpandedHoveredUndefined: Self = StObject.set(x, "menuIconExpandedHovered", js.undefined)
     
-    @scala.inline
-    def setMenuIconExpandedNull: Self = StObject.set(x, "menuIconExpanded", null)
+    inline def setMenuIconExpandedNull: Self = StObject.set(x, "menuIconExpanded", null)
     
-    @scala.inline
-    def setMenuIconExpandedUndefined: Self = StObject.set(x, "menuIconExpanded", js.undefined)
+    inline def setMenuIconExpandedUndefined: Self = StObject.set(x, "menuIconExpanded", js.undefined)
     
-    @scala.inline
-    def setMenuIconHovered(value: IStyle): Self = StObject.set(x, "menuIconHovered", value.asInstanceOf[js.Any])
+    inline def setMenuIconHovered(value: IStyle): Self = StObject.set(x, "menuIconHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconHoveredNull: Self = StObject.set(x, "menuIconHovered", null)
+    inline def setMenuIconHoveredNull: Self = StObject.set(x, "menuIconHovered", null)
     
-    @scala.inline
-    def setMenuIconHoveredUndefined: Self = StObject.set(x, "menuIconHovered", js.undefined)
+    inline def setMenuIconHoveredUndefined: Self = StObject.set(x, "menuIconHovered", js.undefined)
     
-    @scala.inline
-    def setMenuIconNull: Self = StObject.set(x, "menuIcon", null)
+    inline def setMenuIconNull: Self = StObject.set(x, "menuIcon", null)
     
-    @scala.inline
-    def setMenuIconPressed(value: IStyle): Self = StObject.set(x, "menuIconPressed", value.asInstanceOf[js.Any])
+    inline def setMenuIconPressed(value: IStyle): Self = StObject.set(x, "menuIconPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuIconPressedNull: Self = StObject.set(x, "menuIconPressed", null)
+    inline def setMenuIconPressedNull: Self = StObject.set(x, "menuIconPressed", null)
     
-    @scala.inline
-    def setMenuIconPressedUndefined: Self = StObject.set(x, "menuIconPressed", js.undefined)
+    inline def setMenuIconPressedUndefined: Self = StObject.set(x, "menuIconPressed", js.undefined)
     
-    @scala.inline
-    def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
+    inline def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
     
-    @scala.inline
-    def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootChecked(value: IStyle): Self = StObject.set(x, "rootChecked", value.asInstanceOf[js.Any])
+    inline def setRootChecked(value: IStyle): Self = StObject.set(x, "rootChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootCheckedDisabled(value: IStyle): Self = StObject.set(x, "rootCheckedDisabled", value.asInstanceOf[js.Any])
+    inline def setRootCheckedDisabled(value: IStyle): Self = StObject.set(x, "rootCheckedDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootCheckedDisabledNull: Self = StObject.set(x, "rootCheckedDisabled", null)
+    inline def setRootCheckedDisabledNull: Self = StObject.set(x, "rootCheckedDisabled", null)
     
-    @scala.inline
-    def setRootCheckedDisabledUndefined: Self = StObject.set(x, "rootCheckedDisabled", js.undefined)
+    inline def setRootCheckedDisabledUndefined: Self = StObject.set(x, "rootCheckedDisabled", js.undefined)
     
-    @scala.inline
-    def setRootCheckedHovered(value: IStyle): Self = StObject.set(x, "rootCheckedHovered", value.asInstanceOf[js.Any])
+    inline def setRootCheckedHovered(value: IStyle): Self = StObject.set(x, "rootCheckedHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootCheckedHoveredNull: Self = StObject.set(x, "rootCheckedHovered", null)
+    inline def setRootCheckedHoveredNull: Self = StObject.set(x, "rootCheckedHovered", null)
     
-    @scala.inline
-    def setRootCheckedHoveredUndefined: Self = StObject.set(x, "rootCheckedHovered", js.undefined)
+    inline def setRootCheckedHoveredUndefined: Self = StObject.set(x, "rootCheckedHovered", js.undefined)
     
-    @scala.inline
-    def setRootCheckedNull: Self = StObject.set(x, "rootChecked", null)
+    inline def setRootCheckedNull: Self = StObject.set(x, "rootChecked", null)
     
-    @scala.inline
-    def setRootCheckedPressed(value: IStyle): Self = StObject.set(x, "rootCheckedPressed", value.asInstanceOf[js.Any])
+    inline def setRootCheckedPressed(value: IStyle): Self = StObject.set(x, "rootCheckedPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootCheckedPressedNull: Self = StObject.set(x, "rootCheckedPressed", null)
+    inline def setRootCheckedPressedNull: Self = StObject.set(x, "rootCheckedPressed", null)
     
-    @scala.inline
-    def setRootCheckedPressedUndefined: Self = StObject.set(x, "rootCheckedPressed", js.undefined)
+    inline def setRootCheckedPressedUndefined: Self = StObject.set(x, "rootCheckedPressed", js.undefined)
     
-    @scala.inline
-    def setRootCheckedUndefined: Self = StObject.set(x, "rootChecked", js.undefined)
+    inline def setRootCheckedUndefined: Self = StObject.set(x, "rootChecked", js.undefined)
     
-    @scala.inline
-    def setRootDisabled(value: IStyle): Self = StObject.set(x, "rootDisabled", value.asInstanceOf[js.Any])
+    inline def setRootDisabled(value: IStyle): Self = StObject.set(x, "rootDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDisabledNull: Self = StObject.set(x, "rootDisabled", null)
+    inline def setRootDisabledNull: Self = StObject.set(x, "rootDisabled", null)
     
-    @scala.inline
-    def setRootDisabledUndefined: Self = StObject.set(x, "rootDisabled", js.undefined)
+    inline def setRootDisabledUndefined: Self = StObject.set(x, "rootDisabled", js.undefined)
     
-    @scala.inline
-    def setRootExpanded(value: IStyle): Self = StObject.set(x, "rootExpanded", value.asInstanceOf[js.Any])
+    inline def setRootExpanded(value: IStyle): Self = StObject.set(x, "rootExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootExpandedHovered(value: IStyle): Self = StObject.set(x, "rootExpandedHovered", value.asInstanceOf[js.Any])
+    inline def setRootExpandedHovered(value: IStyle): Self = StObject.set(x, "rootExpandedHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootExpandedHoveredNull: Self = StObject.set(x, "rootExpandedHovered", null)
+    inline def setRootExpandedHoveredNull: Self = StObject.set(x, "rootExpandedHovered", null)
     
-    @scala.inline
-    def setRootExpandedHoveredUndefined: Self = StObject.set(x, "rootExpandedHovered", js.undefined)
+    inline def setRootExpandedHoveredUndefined: Self = StObject.set(x, "rootExpandedHovered", js.undefined)
     
-    @scala.inline
-    def setRootExpandedNull: Self = StObject.set(x, "rootExpanded", null)
+    inline def setRootExpandedNull: Self = StObject.set(x, "rootExpanded", null)
     
-    @scala.inline
-    def setRootExpandedUndefined: Self = StObject.set(x, "rootExpanded", js.undefined)
+    inline def setRootExpandedUndefined: Self = StObject.set(x, "rootExpanded", js.undefined)
     
-    @scala.inline
-    def setRootFocused(value: IStyle): Self = StObject.set(x, "rootFocused", value.asInstanceOf[js.Any])
+    inline def setRootFocused(value: IStyle): Self = StObject.set(x, "rootFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootFocusedNull: Self = StObject.set(x, "rootFocused", null)
+    inline def setRootFocusedNull: Self = StObject.set(x, "rootFocused", null)
     
-    @scala.inline
-    def setRootFocusedUndefined: Self = StObject.set(x, "rootFocused", js.undefined)
+    inline def setRootFocusedUndefined: Self = StObject.set(x, "rootFocused", js.undefined)
     
-    @scala.inline
-    def setRootHasMenu(value: IStyle): Self = StObject.set(x, "rootHasMenu", value.asInstanceOf[js.Any])
+    inline def setRootHasMenu(value: IStyle): Self = StObject.set(x, "rootHasMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootHasMenuNull: Self = StObject.set(x, "rootHasMenu", null)
+    inline def setRootHasMenuNull: Self = StObject.set(x, "rootHasMenu", null)
     
-    @scala.inline
-    def setRootHasMenuUndefined: Self = StObject.set(x, "rootHasMenu", js.undefined)
+    inline def setRootHasMenuUndefined: Self = StObject.set(x, "rootHasMenu", js.undefined)
     
-    @scala.inline
-    def setRootHovered(value: IStyle): Self = StObject.set(x, "rootHovered", value.asInstanceOf[js.Any])
+    inline def setRootHovered(value: IStyle): Self = StObject.set(x, "rootHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootHoveredNull: Self = StObject.set(x, "rootHovered", null)
+    inline def setRootHoveredNull: Self = StObject.set(x, "rootHovered", null)
     
-    @scala.inline
-    def setRootHoveredUndefined: Self = StObject.set(x, "rootHovered", js.undefined)
+    inline def setRootHoveredUndefined: Self = StObject.set(x, "rootHovered", js.undefined)
     
-    @scala.inline
-    def setRootNull: Self = StObject.set(x, "root", null)
+    inline def setRootNull: Self = StObject.set(x, "root", null)
     
-    @scala.inline
-    def setRootPressed(value: IStyle): Self = StObject.set(x, "rootPressed", value.asInstanceOf[js.Any])
+    inline def setRootPressed(value: IStyle): Self = StObject.set(x, "rootPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPressedNull: Self = StObject.set(x, "rootPressed", null)
+    inline def setRootPressedNull: Self = StObject.set(x, "rootPressed", null)
     
-    @scala.inline
-    def setRootPressedUndefined: Self = StObject.set(x, "rootPressed", js.undefined)
+    inline def setRootPressedUndefined: Self = StObject.set(x, "rootPressed", js.undefined)
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
+    inline def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
+    inline def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
     
-    @scala.inline
-    def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
+    inline def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
     
-    @scala.inline
-    def setSecondaryText(value: IStyle): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
+    inline def setSecondaryText(value: IStyle): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryTextNull: Self = StObject.set(x, "secondaryText", null)
+    inline def setSecondaryTextNull: Self = StObject.set(x, "secondaryText", null)
     
-    @scala.inline
-    def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
+    inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
     
-    @scala.inline
-    def setSplitButtonContainer(value: IStyle): Self = StObject.set(x, "splitButtonContainer", value.asInstanceOf[js.Any])
+    inline def setSplitButtonContainer(value: IStyle): Self = StObject.set(x, "splitButtonContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonContainerChecked(value: IStyle): Self = StObject.set(x, "splitButtonContainerChecked", value.asInstanceOf[js.Any])
+    inline def setSplitButtonContainerChecked(value: IStyle): Self = StObject.set(x, "splitButtonContainerChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonContainerCheckedHovered(value: IStyle): Self = StObject.set(x, "splitButtonContainerCheckedHovered", value.asInstanceOf[js.Any])
+    inline def setSplitButtonContainerCheckedHovered(value: IStyle): Self = StObject.set(x, "splitButtonContainerCheckedHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonContainerCheckedHoveredNull: Self = StObject.set(x, "splitButtonContainerCheckedHovered", null)
+    inline def setSplitButtonContainerCheckedHoveredNull: Self = StObject.set(x, "splitButtonContainerCheckedHovered", null)
     
-    @scala.inline
-    def setSplitButtonContainerCheckedHoveredUndefined: Self = StObject.set(x, "splitButtonContainerCheckedHovered", js.undefined)
+    inline def setSplitButtonContainerCheckedHoveredUndefined: Self = StObject.set(x, "splitButtonContainerCheckedHovered", js.undefined)
     
-    @scala.inline
-    def setSplitButtonContainerCheckedNull: Self = StObject.set(x, "splitButtonContainerChecked", null)
+    inline def setSplitButtonContainerCheckedNull: Self = StObject.set(x, "splitButtonContainerChecked", null)
     
-    @scala.inline
-    def setSplitButtonContainerCheckedUndefined: Self = StObject.set(x, "splitButtonContainerChecked", js.undefined)
+    inline def setSplitButtonContainerCheckedUndefined: Self = StObject.set(x, "splitButtonContainerChecked", js.undefined)
     
-    @scala.inline
-    def setSplitButtonContainerDisabled(value: IStyle): Self = StObject.set(x, "splitButtonContainerDisabled", value.asInstanceOf[js.Any])
+    inline def setSplitButtonContainerDisabled(value: IStyle): Self = StObject.set(x, "splitButtonContainerDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonContainerDisabledNull: Self = StObject.set(x, "splitButtonContainerDisabled", null)
+    inline def setSplitButtonContainerDisabledNull: Self = StObject.set(x, "splitButtonContainerDisabled", null)
     
-    @scala.inline
-    def setSplitButtonContainerDisabledUndefined: Self = StObject.set(x, "splitButtonContainerDisabled", js.undefined)
+    inline def setSplitButtonContainerDisabledUndefined: Self = StObject.set(x, "splitButtonContainerDisabled", js.undefined)
     
-    @scala.inline
-    def setSplitButtonContainerFocused(value: IStyle): Self = StObject.set(x, "splitButtonContainerFocused", value.asInstanceOf[js.Any])
+    inline def setSplitButtonContainerFocused(value: IStyle): Self = StObject.set(x, "splitButtonContainerFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonContainerFocusedNull: Self = StObject.set(x, "splitButtonContainerFocused", null)
+    inline def setSplitButtonContainerFocusedNull: Self = StObject.set(x, "splitButtonContainerFocused", null)
     
-    @scala.inline
-    def setSplitButtonContainerFocusedUndefined: Self = StObject.set(x, "splitButtonContainerFocused", js.undefined)
+    inline def setSplitButtonContainerFocusedUndefined: Self = StObject.set(x, "splitButtonContainerFocused", js.undefined)
     
-    @scala.inline
-    def setSplitButtonContainerHovered(value: IStyle): Self = StObject.set(x, "splitButtonContainerHovered", value.asInstanceOf[js.Any])
+    inline def setSplitButtonContainerHovered(value: IStyle): Self = StObject.set(x, "splitButtonContainerHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonContainerHoveredNull: Self = StObject.set(x, "splitButtonContainerHovered", null)
+    inline def setSplitButtonContainerHoveredNull: Self = StObject.set(x, "splitButtonContainerHovered", null)
     
-    @scala.inline
-    def setSplitButtonContainerHoveredUndefined: Self = StObject.set(x, "splitButtonContainerHovered", js.undefined)
+    inline def setSplitButtonContainerHoveredUndefined: Self = StObject.set(x, "splitButtonContainerHovered", js.undefined)
     
-    @scala.inline
-    def setSplitButtonContainerNull: Self = StObject.set(x, "splitButtonContainer", null)
+    inline def setSplitButtonContainerNull: Self = StObject.set(x, "splitButtonContainer", null)
     
-    @scala.inline
-    def setSplitButtonContainerUndefined: Self = StObject.set(x, "splitButtonContainer", js.undefined)
+    inline def setSplitButtonContainerUndefined: Self = StObject.set(x, "splitButtonContainer", js.undefined)
     
-    @scala.inline
-    def setSplitButtonDivider(value: IStyle): Self = StObject.set(x, "splitButtonDivider", value.asInstanceOf[js.Any])
+    inline def setSplitButtonDivider(value: IStyle): Self = StObject.set(x, "splitButtonDivider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonDividerDisabled(value: IStyle): Self = StObject.set(x, "splitButtonDividerDisabled", value.asInstanceOf[js.Any])
+    inline def setSplitButtonDividerDisabled(value: IStyle): Self = StObject.set(x, "splitButtonDividerDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonDividerDisabledNull: Self = StObject.set(x, "splitButtonDividerDisabled", null)
+    inline def setSplitButtonDividerDisabledNull: Self = StObject.set(x, "splitButtonDividerDisabled", null)
     
-    @scala.inline
-    def setSplitButtonDividerDisabledUndefined: Self = StObject.set(x, "splitButtonDividerDisabled", js.undefined)
+    inline def setSplitButtonDividerDisabledUndefined: Self = StObject.set(x, "splitButtonDividerDisabled", js.undefined)
     
-    @scala.inline
-    def setSplitButtonDividerNull: Self = StObject.set(x, "splitButtonDivider", null)
+    inline def setSplitButtonDividerNull: Self = StObject.set(x, "splitButtonDivider", null)
     
-    @scala.inline
-    def setSplitButtonDividerUndefined: Self = StObject.set(x, "splitButtonDivider", js.undefined)
+    inline def setSplitButtonDividerUndefined: Self = StObject.set(x, "splitButtonDivider", js.undefined)
     
-    @scala.inline
-    def setSplitButtonFlexContainer(value: IStyle): Self = StObject.set(x, "splitButtonFlexContainer", value.asInstanceOf[js.Any])
+    inline def setSplitButtonFlexContainer(value: IStyle): Self = StObject.set(x, "splitButtonFlexContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonFlexContainerNull: Self = StObject.set(x, "splitButtonFlexContainer", null)
+    inline def setSplitButtonFlexContainerNull: Self = StObject.set(x, "splitButtonFlexContainer", null)
     
-    @scala.inline
-    def setSplitButtonFlexContainerUndefined: Self = StObject.set(x, "splitButtonFlexContainer", js.undefined)
+    inline def setSplitButtonFlexContainerUndefined: Self = StObject.set(x, "splitButtonFlexContainer", js.undefined)
     
-    @scala.inline
-    def setSplitButtonMenuButton(value: IStyle): Self = StObject.set(x, "splitButtonMenuButton", value.asInstanceOf[js.Any])
+    inline def setSplitButtonMenuButton(value: IStyle): Self = StObject.set(x, "splitButtonMenuButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonMenuButtonChecked(value: IStyle): Self = StObject.set(x, "splitButtonMenuButtonChecked", value.asInstanceOf[js.Any])
+    inline def setSplitButtonMenuButtonChecked(value: IStyle): Self = StObject.set(x, "splitButtonMenuButtonChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonMenuButtonCheckedNull: Self = StObject.set(x, "splitButtonMenuButtonChecked", null)
+    inline def setSplitButtonMenuButtonCheckedNull: Self = StObject.set(x, "splitButtonMenuButtonChecked", null)
     
-    @scala.inline
-    def setSplitButtonMenuButtonCheckedUndefined: Self = StObject.set(x, "splitButtonMenuButtonChecked", js.undefined)
+    inline def setSplitButtonMenuButtonCheckedUndefined: Self = StObject.set(x, "splitButtonMenuButtonChecked", js.undefined)
     
-    @scala.inline
-    def setSplitButtonMenuButtonDisabled(value: IStyle): Self = StObject.set(x, "splitButtonMenuButtonDisabled", value.asInstanceOf[js.Any])
+    inline def setSplitButtonMenuButtonDisabled(value: IStyle): Self = StObject.set(x, "splitButtonMenuButtonDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonMenuButtonDisabledNull: Self = StObject.set(x, "splitButtonMenuButtonDisabled", null)
+    inline def setSplitButtonMenuButtonDisabledNull: Self = StObject.set(x, "splitButtonMenuButtonDisabled", null)
     
-    @scala.inline
-    def setSplitButtonMenuButtonDisabledUndefined: Self = StObject.set(x, "splitButtonMenuButtonDisabled", js.undefined)
+    inline def setSplitButtonMenuButtonDisabledUndefined: Self = StObject.set(x, "splitButtonMenuButtonDisabled", js.undefined)
     
-    @scala.inline
-    def setSplitButtonMenuButtonExpanded(value: IStyle): Self = StObject.set(x, "splitButtonMenuButtonExpanded", value.asInstanceOf[js.Any])
+    inline def setSplitButtonMenuButtonExpanded(value: IStyle): Self = StObject.set(x, "splitButtonMenuButtonExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonMenuButtonExpandedNull: Self = StObject.set(x, "splitButtonMenuButtonExpanded", null)
+    inline def setSplitButtonMenuButtonExpandedNull: Self = StObject.set(x, "splitButtonMenuButtonExpanded", null)
     
-    @scala.inline
-    def setSplitButtonMenuButtonExpandedUndefined: Self = StObject.set(x, "splitButtonMenuButtonExpanded", js.undefined)
+    inline def setSplitButtonMenuButtonExpandedUndefined: Self = StObject.set(x, "splitButtonMenuButtonExpanded", js.undefined)
     
-    @scala.inline
-    def setSplitButtonMenuButtonNull: Self = StObject.set(x, "splitButtonMenuButton", null)
+    inline def setSplitButtonMenuButtonNull: Self = StObject.set(x, "splitButtonMenuButton", null)
     
-    @scala.inline
-    def setSplitButtonMenuButtonUndefined: Self = StObject.set(x, "splitButtonMenuButton", js.undefined)
+    inline def setSplitButtonMenuButtonUndefined: Self = StObject.set(x, "splitButtonMenuButton", js.undefined)
     
-    @scala.inline
-    def setSplitButtonMenuIcon(value: IStyle): Self = StObject.set(x, "splitButtonMenuIcon", value.asInstanceOf[js.Any])
+    inline def setSplitButtonMenuIcon(value: IStyle): Self = StObject.set(x, "splitButtonMenuIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonMenuIconDisabled(value: IStyle): Self = StObject.set(x, "splitButtonMenuIconDisabled", value.asInstanceOf[js.Any])
+    inline def setSplitButtonMenuIconDisabled(value: IStyle): Self = StObject.set(x, "splitButtonMenuIconDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonMenuIconDisabledNull: Self = StObject.set(x, "splitButtonMenuIconDisabled", null)
+    inline def setSplitButtonMenuIconDisabledNull: Self = StObject.set(x, "splitButtonMenuIconDisabled", null)
     
-    @scala.inline
-    def setSplitButtonMenuIconDisabledUndefined: Self = StObject.set(x, "splitButtonMenuIconDisabled", js.undefined)
+    inline def setSplitButtonMenuIconDisabledUndefined: Self = StObject.set(x, "splitButtonMenuIconDisabled", js.undefined)
     
-    @scala.inline
-    def setSplitButtonMenuIconNull: Self = StObject.set(x, "splitButtonMenuIcon", null)
+    inline def setSplitButtonMenuIconNull: Self = StObject.set(x, "splitButtonMenuIcon", null)
     
-    @scala.inline
-    def setSplitButtonMenuIconUndefined: Self = StObject.set(x, "splitButtonMenuIcon", js.undefined)
+    inline def setSplitButtonMenuIconUndefined: Self = StObject.set(x, "splitButtonMenuIcon", js.undefined)
     
-    @scala.inline
-    def setTextContainer(value: IStyle): Self = StObject.set(x, "textContainer", value.asInstanceOf[js.Any])
+    inline def setTextContainer(value: IStyle): Self = StObject.set(x, "textContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContainerNull: Self = StObject.set(x, "textContainer", null)
+    inline def setTextContainerNull: Self = StObject.set(x, "textContainer", null)
     
-    @scala.inline
-    def setTextContainerUndefined: Self = StObject.set(x, "textContainer", js.undefined)
+    inline def setTextContainerUndefined: Self = StObject.set(x, "textContainer", js.undefined)
   }
 }

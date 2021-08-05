@@ -10,19 +10,15 @@ trait InsightsServiceAccountResponseFollowStatus extends StObject {
 }
 object InsightsServiceAccountResponseFollowStatus {
   
-  @scala.inline
-  def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseFollowStatus = {
+  inline def apply(nodes: js.Array[InsightsServiceAccountResponseNodesItem]): InsightsServiceAccountResponseFollowStatus = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseFollowStatus]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseFollowStatusMutableBuilder[Self <: InsightsServiceAccountResponseFollowStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseFollowStatus](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[InsightsServiceAccountResponseNodesItem]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[InsightsServiceAccountResponseNodesItem]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: InsightsServiceAccountResponseNodesItem*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: InsightsServiceAccountResponseNodesItem*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

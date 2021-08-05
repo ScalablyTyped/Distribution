@@ -12,19 +12,15 @@ trait GistsGetRevisionEndpoint extends StObject {
 }
 object GistsGetRevisionEndpoint {
   
-  @scala.inline
-  def apply(gist_id: String, sha: String): GistsGetRevisionEndpoint = {
+  inline def apply(gist_id: String, sha: String): GistsGetRevisionEndpoint = {
     val __obj = js.Dynamic.literal(gist_id = gist_id.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsGetRevisionEndpoint]
   }
   
-  @scala.inline
-  implicit class GistsGetRevisionEndpointMutableBuilder[Self <: GistsGetRevisionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GistsGetRevisionEndpoint](x: Self) {
     
-    @scala.inline
-    def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
+    inline def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
   }
 }

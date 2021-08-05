@@ -12,19 +12,15 @@ trait InsertableQueryBuilder extends StObject {
 }
 object InsertableQueryBuilder {
   
-  @scala.inline
-  def apply(ifNotExists: () => InsertableQueryBuilder, into: String => InsertableQueryBuilder): InsertableQueryBuilder = {
+  inline def apply(ifNotExists: () => InsertableQueryBuilder, into: String => InsertableQueryBuilder): InsertableQueryBuilder = {
     val __obj = js.Dynamic.literal(ifNotExists = js.Any.fromFunction0(ifNotExists), into = js.Any.fromFunction1(into))
     __obj.asInstanceOf[InsertableQueryBuilder]
   }
   
-  @scala.inline
-  implicit class InsertableQueryBuilderMutableBuilder[Self <: InsertableQueryBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: InsertableQueryBuilder](x: Self) {
     
-    @scala.inline
-    def setIfNotExists(value: () => InsertableQueryBuilder): Self = StObject.set(x, "ifNotExists", js.Any.fromFunction0(value))
+    inline def setIfNotExists(value: () => InsertableQueryBuilder): Self = StObject.set(x, "ifNotExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInto(value: String => InsertableQueryBuilder): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
+    inline def setInto(value: String => InsertableQueryBuilder): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
   }
 }

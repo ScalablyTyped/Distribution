@@ -32,22 +32,17 @@ object LocalDate {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromBuffer(buffer: Buffer): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
+  inline def fromBuffer(buffer: Buffer): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @scala.inline
-  def fromDate(date: Date): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
+  inline def fromDate(date: Date): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @scala.inline
-  def fromString(value: String): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
+  inline def fromString(value: String): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[LocalDate]
   
   /* static member */
-  @scala.inline
-  def now(): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalDate]
+  inline def now(): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[LocalDate]
   
   /* static member */
-  @scala.inline
-  def utcNow(): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("utcNow")().asInstanceOf[LocalDate]
+  inline def utcNow(): LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("utcNow")().asInstanceOf[LocalDate]
 }

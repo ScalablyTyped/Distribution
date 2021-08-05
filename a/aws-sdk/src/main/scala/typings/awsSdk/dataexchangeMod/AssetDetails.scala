@@ -10,19 +10,15 @@ trait AssetDetails extends StObject {
 }
 object AssetDetails {
   
-  @scala.inline
-  def apply(): AssetDetails = {
+  inline def apply(): AssetDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssetDetails]
   }
   
-  @scala.inline
-  implicit class AssetDetailsMutableBuilder[Self <: AssetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AssetDetails](x: Self) {
     
-    @scala.inline
-    def setS3SnapshotAsset(value: S3SnapshotAsset): Self = StObject.set(x, "S3SnapshotAsset", value.asInstanceOf[js.Any])
+    inline def setS3SnapshotAsset(value: S3SnapshotAsset): Self = StObject.set(x, "S3SnapshotAsset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3SnapshotAssetUndefined: Self = StObject.set(x, "S3SnapshotAsset", js.undefined)
+    inline def setS3SnapshotAssetUndefined: Self = StObject.set(x, "S3SnapshotAsset", js.undefined)
   }
 }

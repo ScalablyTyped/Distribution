@@ -18,29 +18,22 @@ trait BackgroundLayer
 }
 object BackgroundLayer {
   
-  @scala.inline
-  def apply(id: String): BackgroundLayer = {
+  inline def apply(id: String): BackgroundLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("background")
     __obj.asInstanceOf[BackgroundLayer]
   }
   
-  @scala.inline
-  implicit class BackgroundLayerMutableBuilder[Self <: BackgroundLayer] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundLayer](x: Self) {
     
-    @scala.inline
-    def setLayout(value: BackgroundLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: BackgroundLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setPaint(value: BackgroundPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: BackgroundPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
+    inline def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
     
-    @scala.inline
-    def setType(value: background): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: background): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

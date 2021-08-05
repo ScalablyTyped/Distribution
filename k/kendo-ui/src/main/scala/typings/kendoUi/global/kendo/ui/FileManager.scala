@@ -21,13 +21,11 @@ object FileManager {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.FileManager]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.FileManager]
   
   /* static member */
   @JSGlobal("kendo.ui.FileManager.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.FileManager = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.FileManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.FileManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

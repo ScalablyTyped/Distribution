@@ -13,22 +13,17 @@ trait GetChannelMetadataParameters extends StObject {
 }
 object GetChannelMetadataParameters {
   
-  @scala.inline
-  def apply(channel: String): GetChannelMetadataParameters = {
+  inline def apply(channel: String): GetChannelMetadataParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChannelMetadataParameters]
   }
   
-  @scala.inline
-  implicit class GetChannelMetadataParametersMutableBuilder[Self <: GetChannelMetadataParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GetChannelMetadataParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude(value: CustomFieldsBoolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: CustomFieldsBoolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
   }
 }

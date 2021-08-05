@@ -15,25 +15,19 @@ trait OptimizedSvg extends StObject {
 }
 object OptimizedSvg {
   
-  @scala.inline
-  def apply(data: String, info: Height): OptimizedSvg = {
+  inline def apply(data: String, info: Height): OptimizedSvg = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimizedSvg]
   }
   
-  @scala.inline
-  implicit class OptimizedSvgMutableBuilder[Self <: OptimizedSvg] (val x: Self) extends AnyVal {
+  extension [Self <: OptimizedSvg](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: Height): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Height): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait CastColumnTypeOperation extends StObject {
 }
 object CastColumnTypeOperation {
   
-  @scala.inline
-  def apply(ColumnName: ColumnName, NewColumnType: ColumnDataType): CastColumnTypeOperation = {
+  inline def apply(ColumnName: ColumnName, NewColumnType: ColumnDataType): CastColumnTypeOperation = {
     val __obj = js.Dynamic.literal(ColumnName = ColumnName.asInstanceOf[js.Any], NewColumnType = NewColumnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastColumnTypeOperation]
   }
   
-  @scala.inline
-  implicit class CastColumnTypeOperationMutableBuilder[Self <: CastColumnTypeOperation] (val x: Self) extends AnyVal {
+  extension [Self <: CastColumnTypeOperation](x: Self) {
     
-    @scala.inline
-    def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: TypeCastFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: TypeCastFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setNewColumnType(value: ColumnDataType): Self = StObject.set(x, "NewColumnType", value.asInstanceOf[js.Any])
+    inline def setNewColumnType(value: ColumnDataType): Self = StObject.set(x, "NewColumnType", value.asInstanceOf[js.Any])
   }
 }

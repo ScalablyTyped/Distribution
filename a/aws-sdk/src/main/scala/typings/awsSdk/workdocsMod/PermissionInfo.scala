@@ -18,25 +18,19 @@ trait PermissionInfo extends StObject {
 }
 object PermissionInfo {
   
-  @scala.inline
-  def apply(): PermissionInfo = {
+  inline def apply(): PermissionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionInfo]
   }
   
-  @scala.inline
-  implicit class PermissionInfoMutableBuilder[Self <: PermissionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionInfo](x: Self) {
     
-    @scala.inline
-    def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
-    @scala.inline
-    def setType(value: RolePermissionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RolePermissionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -181,7 +181,7 @@ trait GameObject
     * The Scene to which this Game Object belongs.
     * Game Objects can only belong to one Scene.
     */
-  var scene: Scene = js.native
+  /* protected */ var scene: Scene = js.native
   
   /**
     * Sets the `active` property of this Game Object and returns this Game Object for further chaining.

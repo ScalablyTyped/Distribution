@@ -33,8 +33,7 @@ trait WorkflowExecutionDetail extends StObject {
 }
 object WorkflowExecutionDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     executionConfiguration: WorkflowExecutionConfiguration,
     executionInfo: WorkflowExecutionInfo,
     openCounts: WorkflowExecutionOpenCounts
@@ -43,28 +42,20 @@ object WorkflowExecutionDetail {
     __obj.asInstanceOf[WorkflowExecutionDetail]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionDetailMutableBuilder[Self <: WorkflowExecutionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionDetail](x: Self) {
     
-    @scala.inline
-    def setExecutionConfiguration(value: WorkflowExecutionConfiguration): Self = StObject.set(x, "executionConfiguration", value.asInstanceOf[js.Any])
+    inline def setExecutionConfiguration(value: WorkflowExecutionConfiguration): Self = StObject.set(x, "executionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionInfo(value: WorkflowExecutionInfo): Self = StObject.set(x, "executionInfo", value.asInstanceOf[js.Any])
+    inline def setExecutionInfo(value: WorkflowExecutionInfo): Self = StObject.set(x, "executionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestActivityTaskTimestamp(value: Timestamp): Self = StObject.set(x, "latestActivityTaskTimestamp", value.asInstanceOf[js.Any])
+    inline def setLatestActivityTaskTimestamp(value: Timestamp): Self = StObject.set(x, "latestActivityTaskTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestActivityTaskTimestampUndefined: Self = StObject.set(x, "latestActivityTaskTimestamp", js.undefined)
+    inline def setLatestActivityTaskTimestampUndefined: Self = StObject.set(x, "latestActivityTaskTimestamp", js.undefined)
     
-    @scala.inline
-    def setLatestExecutionContext(value: Data): Self = StObject.set(x, "latestExecutionContext", value.asInstanceOf[js.Any])
+    inline def setLatestExecutionContext(value: Data): Self = StObject.set(x, "latestExecutionContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestExecutionContextUndefined: Self = StObject.set(x, "latestExecutionContext", js.undefined)
+    inline def setLatestExecutionContextUndefined: Self = StObject.set(x, "latestExecutionContext", js.undefined)
     
-    @scala.inline
-    def setOpenCounts(value: WorkflowExecutionOpenCounts): Self = StObject.set(x, "openCounts", value.asInstanceOf[js.Any])
+    inline def setOpenCounts(value: WorkflowExecutionOpenCounts): Self = StObject.set(x, "openCounts", value.asInstanceOf[js.Any])
   }
 }

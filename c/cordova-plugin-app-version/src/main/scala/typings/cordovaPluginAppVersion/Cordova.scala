@@ -11,16 +11,13 @@ trait Cordova extends StObject {
 }
 object Cordova {
   
-  @scala.inline
-  def apply(getAppVersion: GetAppName): Cordova = {
+  inline def apply(getAppVersion: GetAppName): Cordova = {
     val __obj = js.Dynamic.literal(getAppVersion = getAppVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cordova]
   }
   
-  @scala.inline
-  implicit class CordovaMutableBuilder[Self <: Cordova] (val x: Self) extends AnyVal {
+  extension [Self <: Cordova](x: Self) {
     
-    @scala.inline
-    def setGetAppVersion(value: GetAppName): Self = StObject.set(x, "getAppVersion", value.asInstanceOf[js.Any])
+    inline def setGetAppVersion(value: GetAppName): Self = StObject.set(x, "getAppVersion", value.asInstanceOf[js.Any])
   }
 }

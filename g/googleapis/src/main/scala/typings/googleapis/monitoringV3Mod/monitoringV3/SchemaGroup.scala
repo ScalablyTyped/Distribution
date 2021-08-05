@@ -64,43 +64,31 @@ trait SchemaGroup extends StObject {
 }
 object SchemaGroup {
   
-  @scala.inline
-  def apply(): SchemaGroup = {
+  inline def apply(): SchemaGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroup]
   }
   
-  @scala.inline
-  implicit class SchemaGroupMutableBuilder[Self <: SchemaGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroup](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setIsCluster(value: Boolean): Self = StObject.set(x, "isCluster", value.asInstanceOf[js.Any])
+    inline def setIsCluster(value: Boolean): Self = StObject.set(x, "isCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClusterUndefined: Self = StObject.set(x, "isCluster", js.undefined)
+    inline def setIsClusterUndefined: Self = StObject.set(x, "isCluster", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentName(value: String): Self = StObject.set(x, "parentName", value.asInstanceOf[js.Any])
+    inline def setParentName(value: String): Self = StObject.set(x, "parentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNameUndefined: Self = StObject.set(x, "parentName", js.undefined)
+    inline def setParentNameUndefined: Self = StObject.set(x, "parentName", js.undefined)
   }
 }

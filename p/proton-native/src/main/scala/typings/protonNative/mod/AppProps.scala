@@ -13,19 +13,15 @@ trait AppProps extends StObject {
 }
 object AppProps {
   
-  @scala.inline
-  def apply(): AppProps = {
+  inline def apply(): AppProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppProps]
   }
   
-  @scala.inline
-  implicit class AppPropsMutableBuilder[Self <: AppProps] (val x: Self) extends AnyVal {
+  extension [Self <: AppProps](x: Self) {
     
-    @scala.inline
-    def setOnShouldQuit(value: () => Unit): Self = StObject.set(x, "onShouldQuit", js.Any.fromFunction0(value))
+    inline def setOnShouldQuit(value: () => Unit): Self = StObject.set(x, "onShouldQuit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShouldQuitUndefined: Self = StObject.set(x, "onShouldQuit", js.undefined)
+    inline def setOnShouldQuitUndefined: Self = StObject.set(x, "onShouldQuit", js.undefined)
   }
 }

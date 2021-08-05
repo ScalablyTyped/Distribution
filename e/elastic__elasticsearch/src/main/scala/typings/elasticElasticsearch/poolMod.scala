@@ -171,20 +171,17 @@ object poolMod {
       @JSImport("@elastic/elasticsearch/lib/pool", "ConnectionPool.resurrectStrategies.none")
       @js.native
       def none: Double = js.native
-      @scala.inline
-      def none_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+      inline def none_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
       
       @JSImport("@elastic/elasticsearch/lib/pool", "ConnectionPool.resurrectStrategies.optimistic")
       @js.native
       def optimistic: Double = js.native
-      @scala.inline
-      def optimistic_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optimistic")(x.asInstanceOf[js.Any])
+      inline def optimistic_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optimistic")(x.asInstanceOf[js.Any])
       
       @JSImport("@elastic/elasticsearch/lib/pool", "ConnectionPool.resurrectStrategies.ping")
       @js.native
       def ping: Double = js.native
-      @scala.inline
-      def ping_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ping")(x.asInstanceOf[js.Any])
+      inline def ping_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ping")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -197,27 +194,21 @@ object poolMod {
     @JSImport("@elastic/elasticsearch/lib/pool", "internals.defaultNodeFilter")
     @js.native
     def defaultNodeFilter: js.Function1[/* node */ default, Boolean] = js.native
-    @scala.inline
-    def defaultNodeFilter(node: default): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultNodeFilter")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def defaultNodeFilter_=(x: js.Function1[/* node */ default, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNodeFilter")(x.asInstanceOf[js.Any])
+    inline def defaultNodeFilter(node: default): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultNodeFilter")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def defaultNodeFilter_=(x: js.Function1[/* node */ default, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNodeFilter")(x.asInstanceOf[js.Any])
     
     @JSImport("@elastic/elasticsearch/lib/pool", "internals.randomSelector")
     @js.native
     def randomSelector: js.Function1[/* connections */ js.Array[default], default] = js.native
-    @scala.inline
-    def randomSelector(connections: js.Array[default]): default = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSelector")(connections.asInstanceOf[js.Any]).asInstanceOf[default]
-    @scala.inline
-    def randomSelector_=(x: js.Function1[/* connections */ js.Array[default], default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("randomSelector")(x.asInstanceOf[js.Any])
+    inline def randomSelector(connections: js.Array[default]): default = ^.asInstanceOf[js.Dynamic].applyDynamic("randomSelector")(connections.asInstanceOf[js.Any]).asInstanceOf[default]
+    inline def randomSelector_=(x: js.Function1[/* connections */ js.Array[default], default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("randomSelector")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def roundRobinSelector(): js.Function1[/* connections */ js.Array[default], default] = ^.asInstanceOf[js.Dynamic].applyDynamic("roundRobinSelector")().asInstanceOf[js.Function1[/* connections */ js.Array[default], default]]
+    inline def roundRobinSelector(): js.Function1[/* connections */ js.Array[default], default] = ^.asInstanceOf[js.Dynamic].applyDynamic("roundRobinSelector")().asInstanceOf[js.Function1[/* connections */ js.Array[default], default]]
     @JSImport("@elastic/elasticsearch/lib/pool", "internals.roundRobinSelector")
     @js.native
     def roundRobinSelector_Finternals: js.Function0[js.Function1[/* connections */ js.Array[default], default]] = js.native
     
-    @scala.inline
-    def roundRobinSelector_Finternals_=(x: js.Function0[js.Function1[/* connections */ js.Array[default], default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundRobinSelector")(x.asInstanceOf[js.Any])
+    inline def roundRobinSelector_Finternals_=(x: js.Function0[js.Function1[/* connections */ js.Array[default], default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundRobinSelector")(x.asInstanceOf[js.Any])
   }
   
   trait ApiKeyAuth extends StObject {
@@ -226,17 +217,14 @@ object poolMod {
   }
   object ApiKeyAuth {
     
-    @scala.inline
-    def apply(apiKey: String | Apikey): ApiKeyAuth = {
+    inline def apply(apiKey: String | Apikey): ApiKeyAuth = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiKeyAuth]
     }
     
-    @scala.inline
-    implicit class ApiKeyAuthMutableBuilder[Self <: ApiKeyAuth] (val x: Self) extends AnyVal {
+    extension [Self <: ApiKeyAuth](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String | Apikey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String | Apikey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,20 +253,16 @@ object poolMod {
   }
   object BasicAuth {
     
-    @scala.inline
-    def apply(password: String, username: String): BasicAuth = {
+    inline def apply(password: String, username: String): BasicAuth = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasicAuth]
     }
     
-    @scala.inline
-    implicit class BasicAuthMutableBuilder[Self <: BasicAuth] (val x: Self) extends AnyVal {
+    extension [Self <: BasicAuth](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,29 +292,22 @@ object poolMod {
   }
   object ResurrectEvent {
     
-    @scala.inline
-    def apply(connection: default, isAlive: Boolean, name: String, request: IdAny, strategy: String): ResurrectEvent = {
+    inline def apply(connection: default, isAlive: Boolean, name: String, request: IdAny, strategy: String): ResurrectEvent = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isAlive = isAlive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResurrectEvent]
     }
     
-    @scala.inline
-    implicit class ResurrectEventMutableBuilder[Self <: ResurrectEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ResurrectEvent](x: Self) {
       
-      @scala.inline
-      def setConnection(value: default): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: default): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlive(value: Boolean): Self = StObject.set(x, "isAlive", value.asInstanceOf[js.Any])
+      inline def setIsAlive(value: Boolean): Self = StObject.set(x, "isAlive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: IdAny): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: IdAny): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -348,44 +325,32 @@ object poolMod {
   }
   object getConnectionOptions {
     
-    @scala.inline
-    def apply(): getConnectionOptions = {
+    inline def apply(): getConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[getConnectionOptions]
     }
     
-    @scala.inline
-    implicit class getConnectionOptionsMutableBuilder[Self <: getConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: getConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: /* connection */ default => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* connection */ default => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String | Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String | Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
       
-      @scala.inline
-      def setSelector(value: /* connections */ js.Array[default] => default): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
+      inline def setSelector(value: /* connections */ js.Array[default] => default): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     }
   }
   
@@ -399,26 +364,20 @@ object poolMod {
   }
   object resurrectOptions {
     
-    @scala.inline
-    def apply(name: String, requestId: String): resurrectOptions = {
+    inline def apply(name: String, requestId: String): resurrectOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[resurrectOptions]
     }
     
-    @scala.inline
-    implicit class resurrectOptionsMutableBuilder[Self <: resurrectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: resurrectOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }
   }
 }

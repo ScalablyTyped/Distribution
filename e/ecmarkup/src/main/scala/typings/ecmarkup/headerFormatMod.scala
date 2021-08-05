@@ -12,6 +12,5 @@ object headerFormatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(report: js.Function1[/* e */ LintingError, Unit], node: Element, source: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(report: js.Function1[/* e */ LintingError, Unit], node: Element, source: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

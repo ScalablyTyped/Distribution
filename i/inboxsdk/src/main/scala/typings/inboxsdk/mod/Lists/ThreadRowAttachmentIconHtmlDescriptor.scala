@@ -13,16 +13,13 @@ trait ThreadRowAttachmentIconHtmlDescriptor
 }
 object ThreadRowAttachmentIconHtmlDescriptor {
   
-  @scala.inline
-  def apply(iconHtml: String): ThreadRowAttachmentIconHtmlDescriptor = {
+  inline def apply(iconHtml: String): ThreadRowAttachmentIconHtmlDescriptor = {
     val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowAttachmentIconHtmlDescriptor]
   }
   
-  @scala.inline
-  implicit class ThreadRowAttachmentIconHtmlDescriptorMutableBuilder[Self <: ThreadRowAttachmentIconHtmlDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadRowAttachmentIconHtmlDescriptor](x: Self) {
     
-    @scala.inline
-    def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
+    inline def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
   }
 }

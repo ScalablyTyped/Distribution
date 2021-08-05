@@ -50,34 +50,25 @@ trait InsertSlideOptions extends StObject {
 }
 object InsertSlideOptions {
   
-  @scala.inline
-  def apply(): InsertSlideOptions = {
+  inline def apply(): InsertSlideOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertSlideOptions]
   }
   
-  @scala.inline
-  implicit class InsertSlideOptionsMutableBuilder[Self <: InsertSlideOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InsertSlideOptions](x: Self) {
     
-    @scala.inline
-    def setFormatting(value: InsertSlideFormatting | KeepSourceFormatting | UseDestinationTheme): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
+    inline def setFormatting(value: InsertSlideFormatting | KeepSourceFormatting | UseDestinationTheme): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattingUndefined: Self = StObject.set(x, "formatting", js.undefined)
+    inline def setFormattingUndefined: Self = StObject.set(x, "formatting", js.undefined)
     
-    @scala.inline
-    def setSourceSlideIds(value: js.Array[String]): Self = StObject.set(x, "sourceSlideIds", value.asInstanceOf[js.Any])
+    inline def setSourceSlideIds(value: js.Array[String]): Self = StObject.set(x, "sourceSlideIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSlideIdsUndefined: Self = StObject.set(x, "sourceSlideIds", js.undefined)
+    inline def setSourceSlideIdsUndefined: Self = StObject.set(x, "sourceSlideIds", js.undefined)
     
-    @scala.inline
-    def setSourceSlideIdsVarargs(value: String*): Self = StObject.set(x, "sourceSlideIds", js.Array(value :_*))
+    inline def setSourceSlideIdsVarargs(value: String*): Self = StObject.set(x, "sourceSlideIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetSlideId(value: String): Self = StObject.set(x, "targetSlideId", value.asInstanceOf[js.Any])
+    inline def setTargetSlideId(value: String): Self = StObject.set(x, "targetSlideId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSlideIdUndefined: Self = StObject.set(x, "targetSlideId", js.undefined)
+    inline def setTargetSlideIdUndefined: Self = StObject.set(x, "targetSlideId", js.undefined)
   }
 }

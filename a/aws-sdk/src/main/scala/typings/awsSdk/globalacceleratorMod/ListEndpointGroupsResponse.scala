@@ -18,28 +18,21 @@ trait ListEndpointGroupsResponse extends StObject {
 }
 object ListEndpointGroupsResponse {
   
-  @scala.inline
-  def apply(): ListEndpointGroupsResponse = {
+  inline def apply(): ListEndpointGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEndpointGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListEndpointGroupsResponseMutableBuilder[Self <: ListEndpointGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEndpointGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setEndpointGroups(value: EndpointGroups): Self = StObject.set(x, "EndpointGroups", value.asInstanceOf[js.Any])
+    inline def setEndpointGroups(value: EndpointGroups): Self = StObject.set(x, "EndpointGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointGroupsUndefined: Self = StObject.set(x, "EndpointGroups", js.undefined)
+    inline def setEndpointGroupsUndefined: Self = StObject.set(x, "EndpointGroups", js.undefined)
     
-    @scala.inline
-    def setEndpointGroupsVarargs(value: EndpointGroup*): Self = StObject.set(x, "EndpointGroups", js.Array(value :_*))
+    inline def setEndpointGroupsVarargs(value: EndpointGroup*): Self = StObject.set(x, "EndpointGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -49,8 +49,7 @@ object inspection {
   }
   object DefaultComponentInspectorModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       HandlerFactories: SafeArray[js.Any],
       HasHelpSection: Boolean,
       IsReadOnly: Boolean,
@@ -65,14 +64,11 @@ object inspection {
       __obj.asInstanceOf[DefaultComponentInspectorModel]
     }
     
-    @scala.inline
-    implicit class DefaultComponentInspectorModelMutableBuilder[Self <: DefaultComponentInspectorModel] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultComponentInspectorModel](x: Self) {
       
-      @scala.inline
-      def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+      inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateWithHelpSection(value: (Double, Double) => Unit): Self = StObject.set(x, "createWithHelpSection", js.Any.fromFunction2(value))
+      inline def setCreateWithHelpSection(value: (Double, Double) => Unit): Self = StObject.set(x, "createWithHelpSection", js.Any.fromFunction2(value))
     }
   }
   

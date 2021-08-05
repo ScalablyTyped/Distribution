@@ -34,8 +34,7 @@ trait SinonFakeServerOptions extends StObject {
 }
 object SinonFakeServerOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoRespond: Boolean,
     autoRespondAfter: Double,
     fakeHTTPMethods: Boolean,
@@ -45,19 +44,14 @@ object SinonFakeServerOptions {
     __obj.asInstanceOf[SinonFakeServerOptions]
   }
   
-  @scala.inline
-  implicit class SinonFakeServerOptionsMutableBuilder[Self <: SinonFakeServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SinonFakeServerOptions](x: Self) {
     
-    @scala.inline
-    def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
+    inline def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRespondAfter(value: Double): Self = StObject.set(x, "autoRespondAfter", value.asInstanceOf[js.Any])
+    inline def setAutoRespondAfter(value: Double): Self = StObject.set(x, "autoRespondAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFakeHTTPMethods(value: Boolean): Self = StObject.set(x, "fakeHTTPMethods", value.asInstanceOf[js.Any])
+    inline def setFakeHTTPMethods(value: Boolean): Self = StObject.set(x, "fakeHTTPMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespondImmediately(value: Boolean): Self = StObject.set(x, "respondImmediately", value.asInstanceOf[js.Any])
+    inline def setRespondImmediately(value: Boolean): Self = StObject.set(x, "respondImmediately", value.asInstanceOf[js.Any])
   }
 }

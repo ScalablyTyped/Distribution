@@ -10,19 +10,15 @@ trait ReposGetAllTopicsResponseData extends StObject {
 }
 object ReposGetAllTopicsResponseData {
   
-  @scala.inline
-  def apply(names: js.Array[String]): ReposGetAllTopicsResponseData = {
+  inline def apply(names: js.Array[String]): ReposGetAllTopicsResponseData = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetAllTopicsResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetAllTopicsResponseDataMutableBuilder[Self <: ReposGetAllTopicsResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetAllTopicsResponseData](x: Self) {
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

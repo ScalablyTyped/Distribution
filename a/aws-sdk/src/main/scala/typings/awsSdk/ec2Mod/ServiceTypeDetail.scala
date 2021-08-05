@@ -13,19 +13,15 @@ trait ServiceTypeDetail extends StObject {
 }
 object ServiceTypeDetail {
   
-  @scala.inline
-  def apply(): ServiceTypeDetail = {
+  inline def apply(): ServiceTypeDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceTypeDetail]
   }
   
-  @scala.inline
-  implicit class ServiceTypeDetailMutableBuilder[Self <: ServiceTypeDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceTypeDetail](x: Self) {
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
   }
 }

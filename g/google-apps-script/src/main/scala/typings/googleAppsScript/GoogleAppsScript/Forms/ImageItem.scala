@@ -50,8 +50,7 @@ trait ImageItem extends StObject {
 }
 object ImageItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duplicate: () => ImageItem,
     getAlignment: () => Alignment,
     getHelpText: () => String,
@@ -71,49 +70,34 @@ object ImageItem {
     __obj.asInstanceOf[ImageItem]
   }
   
-  @scala.inline
-  implicit class ImageItemMutableBuilder[Self <: ImageItem] (val x: Self) extends AnyVal {
+  extension [Self <: ImageItem](x: Self) {
     
-    @scala.inline
-    def setDuplicate(value: () => ImageItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
+    inline def setDuplicate(value: () => ImageItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAlignment(value: () => Alignment): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
+    inline def setGetAlignment(value: () => Alignment): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
+    inline def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetImage(value: () => Blob): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
+    inline def setGetImage(value: () => Blob): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAlignment(value: Alignment => ImageItem): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
+    inline def setSetAlignment(value: Alignment => ImageItem): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHelpText(value: String => ImageItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    inline def setSetHelpText(value: String => ImageItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImage(value: BlobSource => ImageItem): Self = StObject.set(x, "setImage", js.Any.fromFunction1(value))
+    inline def setSetImage(value: BlobSource => ImageItem): Self = StObject.set(x, "setImage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => ImageItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => ImageItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidth(value: Integer => ImageItem): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Integer => ImageItem): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
   }
 }

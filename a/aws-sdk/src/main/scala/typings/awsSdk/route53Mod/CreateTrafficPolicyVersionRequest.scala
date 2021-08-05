@@ -23,25 +23,19 @@ trait CreateTrafficPolicyVersionRequest extends StObject {
 }
 object CreateTrafficPolicyVersionRequest {
   
-  @scala.inline
-  def apply(Document: TrafficPolicyDocument, Id: TrafficPolicyId): CreateTrafficPolicyVersionRequest = {
+  inline def apply(Document: TrafficPolicyDocument, Id: TrafficPolicyId): CreateTrafficPolicyVersionRequest = {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTrafficPolicyVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateTrafficPolicyVersionRequestMutableBuilder[Self <: CreateTrafficPolicyVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTrafficPolicyVersionRequest](x: Self) {
     
-    @scala.inline
-    def setComment(value: TrafficPolicyComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: TrafficPolicyComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setDocument(value: TrafficPolicyDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: TrafficPolicyDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

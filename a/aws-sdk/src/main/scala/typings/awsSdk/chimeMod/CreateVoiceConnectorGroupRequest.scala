@@ -18,25 +18,19 @@ trait CreateVoiceConnectorGroupRequest extends StObject {
 }
 object CreateVoiceConnectorGroupRequest {
   
-  @scala.inline
-  def apply(Name: VoiceConnectorGroupName): CreateVoiceConnectorGroupRequest = {
+  inline def apply(Name: VoiceConnectorGroupName): CreateVoiceConnectorGroupRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVoiceConnectorGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateVoiceConnectorGroupRequestMutableBuilder[Self <: CreateVoiceConnectorGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVoiceConnectorGroupRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: VoiceConnectorGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: VoiceConnectorGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorItems(value: VoiceConnectorItemList): Self = StObject.set(x, "VoiceConnectorItems", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorItems(value: VoiceConnectorItemList): Self = StObject.set(x, "VoiceConnectorItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorItemsUndefined: Self = StObject.set(x, "VoiceConnectorItems", js.undefined)
+    inline def setVoiceConnectorItemsUndefined: Self = StObject.set(x, "VoiceConnectorItems", js.undefined)
     
-    @scala.inline
-    def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = StObject.set(x, "VoiceConnectorItems", js.Array(value :_*))
+    inline def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = StObject.set(x, "VoiceConnectorItems", js.Array(value :_*))
   }
 }

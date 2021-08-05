@@ -18,28 +18,21 @@ trait ListSizeConstraintSetsResponse extends StObject {
 }
 object ListSizeConstraintSetsResponse {
   
-  @scala.inline
-  def apply(): ListSizeConstraintSetsResponse = {
+  inline def apply(): ListSizeConstraintSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSizeConstraintSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListSizeConstraintSetsResponseMutableBuilder[Self <: ListSizeConstraintSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSizeConstraintSetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setSizeConstraintSets(value: SizeConstraintSetSummaries): Self = StObject.set(x, "SizeConstraintSets", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSets(value: SizeConstraintSetSummaries): Self = StObject.set(x, "SizeConstraintSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintSetsUndefined: Self = StObject.set(x, "SizeConstraintSets", js.undefined)
+    inline def setSizeConstraintSetsUndefined: Self = StObject.set(x, "SizeConstraintSets", js.undefined)
     
-    @scala.inline
-    def setSizeConstraintSetsVarargs(value: SizeConstraintSetSummary*): Self = StObject.set(x, "SizeConstraintSets", js.Array(value :_*))
+    inline def setSizeConstraintSetsVarargs(value: SizeConstraintSetSummary*): Self = StObject.set(x, "SizeConstraintSets", js.Array(value :_*))
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndexingMode extends StObject
 object IndexingMode {
   
-  @scala.inline
-  def Consistent: typings.documentdb.documentdbStrings.Consistent = "Consistent".asInstanceOf[typings.documentdb.documentdbStrings.Consistent]
+  inline def Consistent: typings.documentdb.documentdbStrings.Consistent = "Consistent".asInstanceOf[typings.documentdb.documentdbStrings.Consistent]
   
-  @scala.inline
-  def Lazy: typings.documentdb.documentdbStrings.Lazy = "Lazy".asInstanceOf[typings.documentdb.documentdbStrings.Lazy]
+  inline def Lazy: typings.documentdb.documentdbStrings.Lazy = "Lazy".asInstanceOf[typings.documentdb.documentdbStrings.Lazy]
 }

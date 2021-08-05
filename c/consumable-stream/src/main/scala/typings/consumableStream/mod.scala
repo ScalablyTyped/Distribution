@@ -42,21 +42,17 @@ object mod {
   }
   object Consumer {
     
-    @scala.inline
-    def apply[T](next: () => js.Promise[IteratorResult[T, js.Any]], `return`: () => Unit): Consumer[T] = {
+    inline def apply[T](next: () => js.Promise[IteratorResult[T, js.Any]], `return`: () => Unit): Consumer[T] = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.updateDynamic("return")(js.Any.fromFunction0(`return`))
       __obj.asInstanceOf[Consumer[T]]
     }
     
-    @scala.inline
-    implicit class ConsumerMutableBuilder[Self <: Consumer[?], T] (val x: Self & Consumer[T]) extends AnyVal {
+    extension [Self <: Consumer[?], T](x: Self & Consumer[T]) {
       
-      @scala.inline
-      def setNext(value: () => js.Promise[IteratorResult[T, js.Any]]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => js.Promise[IteratorResult[T, js.Any]]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReturn(value: () => Unit): Self = StObject.set(x, "return", js.Any.fromFunction0(value))
+      inline def setReturn(value: () => Unit): Self = StObject.set(x, "return", js.Any.fromFunction0(value))
     }
   }
 }

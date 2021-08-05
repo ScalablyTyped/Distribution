@@ -21,8 +21,6 @@ object AuthCredential {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromJSON(json: String): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
-  @scala.inline
-  def fromJSON(json: js.Object): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
+  inline def fromJSON(json: String): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
+  inline def fromJSON(json: js.Object): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
 }

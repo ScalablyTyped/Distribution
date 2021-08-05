@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def paramCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def paramCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def paramCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def paramCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

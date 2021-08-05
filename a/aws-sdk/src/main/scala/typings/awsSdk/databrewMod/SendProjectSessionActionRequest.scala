@@ -32,46 +32,33 @@ trait SendProjectSessionActionRequest extends StObject {
 }
 object SendProjectSessionActionRequest {
   
-  @scala.inline
-  def apply(Name: ProjectName): SendProjectSessionActionRequest = {
+  inline def apply(Name: ProjectName): SendProjectSessionActionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendProjectSessionActionRequest]
   }
   
-  @scala.inline
-  implicit class SendProjectSessionActionRequestMutableBuilder[Self <: SendProjectSessionActionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendProjectSessionActionRequest](x: Self) {
     
-    @scala.inline
-    def setClientSessionId(value: ClientSessionId): Self = StObject.set(x, "ClientSessionId", value.asInstanceOf[js.Any])
+    inline def setClientSessionId(value: ClientSessionId): Self = StObject.set(x, "ClientSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSessionIdUndefined: Self = StObject.set(x, "ClientSessionId", js.undefined)
+    inline def setClientSessionIdUndefined: Self = StObject.set(x, "ClientSessionId", js.undefined)
     
-    @scala.inline
-    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: Preview): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Preview): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "Preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "Preview", js.undefined)
     
-    @scala.inline
-    def setRecipeStep(value: RecipeStep): Self = StObject.set(x, "RecipeStep", value.asInstanceOf[js.Any])
+    inline def setRecipeStep(value: RecipeStep): Self = StObject.set(x, "RecipeStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeStepUndefined: Self = StObject.set(x, "RecipeStep", js.undefined)
+    inline def setRecipeStepUndefined: Self = StObject.set(x, "RecipeStep", js.undefined)
     
-    @scala.inline
-    def setStepIndex(value: StepIndex): Self = StObject.set(x, "StepIndex", value.asInstanceOf[js.Any])
+    inline def setStepIndex(value: StepIndex): Self = StObject.set(x, "StepIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIndexUndefined: Self = StObject.set(x, "StepIndex", js.undefined)
+    inline def setStepIndexUndefined: Self = StObject.set(x, "StepIndex", js.undefined)
     
-    @scala.inline
-    def setViewFrame(value: ViewFrame): Self = StObject.set(x, "ViewFrame", value.asInstanceOf[js.Any])
+    inline def setViewFrame(value: ViewFrame): Self = StObject.set(x, "ViewFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewFrameUndefined: Self = StObject.set(x, "ViewFrame", js.undefined)
+    inline def setViewFrameUndefined: Self = StObject.set(x, "ViewFrame", js.undefined)
   }
 }

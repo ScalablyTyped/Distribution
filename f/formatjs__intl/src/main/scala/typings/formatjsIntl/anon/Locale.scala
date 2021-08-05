@@ -26,8 +26,7 @@ trait Locale extends StObject {
 }
 object Locale {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     locale: String,
     onError: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
   ): Locale = {
@@ -35,14 +34,11 @@ object Locale {
     __obj.asInstanceOf[Locale]
   }
   
-  @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+  extension [Self <: Locale](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(
+    inline def setOnError(
       value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
     ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
   }

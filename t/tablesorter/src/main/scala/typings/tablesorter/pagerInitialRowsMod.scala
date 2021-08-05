@@ -20,26 +20,20 @@ object pagerInitialRowsMod {
   }
   object PagerInitialRows {
     
-    @scala.inline
-    def apply(): PagerInitialRows = {
+    inline def apply(): PagerInitialRows = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PagerInitialRows]
     }
     
-    @scala.inline
-    implicit class PagerInitialRowsMutableBuilder[Self <: PagerInitialRows] (val x: Self) extends AnyVal {
+    extension [Self <: PagerInitialRows](x: Self) {
       
-      @scala.inline
-      def setFiltered(value: Double): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
+      inline def setFiltered(value: Double): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredUndefined: Self = StObject.set(x, "filtered", js.undefined)
+      inline def setFilteredUndefined: Self = StObject.set(x, "filtered", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
 }

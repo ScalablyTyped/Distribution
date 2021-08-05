@@ -41,8 +41,7 @@ object entryPointTypesMod {
   }
   object EntryPointProps {
     
-    @scala.inline
-    def apply[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps](
+    inline def apply[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps](
       entryPoints: PreloadedEntryPoints[TPreloadedEntryPoints],
       extraProps: TExtraProps,
       props: TRuntimeProps,
@@ -52,20 +51,15 @@ object entryPointTypesMod {
       __obj.asInstanceOf[EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]]
     }
     
-    @scala.inline
-    implicit class EntryPointPropsMutableBuilder[Self <: EntryPointProps[?, ?, ?, ?], TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] (val x: Self & (EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
+    extension [Self <: EntryPointProps[?, ?, ?, ?], TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps](x: Self & (EntryPointProps[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) {
       
-      @scala.inline
-      def setEntryPoints(value: PreloadedEntryPoints[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
+      inline def setEntryPoints(value: PreloadedEntryPoints[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraProps(value: TExtraProps): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
+      inline def setExtraProps(value: TExtraProps): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: TRuntimeProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: TRuntimeProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueries(value: PreloadedQueries[TPreloadedQueries]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+      inline def setQueries(value: PreloadedQueries[TPreloadedQueries]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,8 +125,7 @@ object entryPointTypesMod {
   }
   object InternalEntryPointRepresentation {
     
-    @scala.inline
-    def apply[/**
+    inline def apply[/**
       * object that contains all necessary information to execute the preloaders (routeParams, query variables)
       */
     TEntryPointParams /* <: js.Object */, /**
@@ -159,8 +152,7 @@ object entryPointTypesMod {
       __obj.asInstanceOf[InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]]
     }
     
-    @scala.inline
-    implicit class InternalEntryPointRepresentationMutableBuilder[Self <: InternalEntryPointRepresentation[?, ?, ?, ?, ?], /**
+    extension [Self <: InternalEntryPointRepresentation[?, ?, ?, ?, ?], /**
       * object that contains all necessary information to execute the preloaders (routeParams, query variables)
       */
     TEntryPointParams /* <: js.Object */, /**
@@ -177,15 +169,13 @@ object entryPointTypesMod {
       * a bag of extra props that you may define in `entrypoint` file and they will be passed to the EntryPointComponent
       * as `extraProps`
       */
-    TExtraProps] (val x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
+    TExtraProps](x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) {
       
-      @scala.inline
-      def setGetPreloadProps(
+      inline def setGetPreloadProps(
         value: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]
       ): Self = StObject.set(x, "getPreloadProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: JSResourceReference[
               EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
             ]
@@ -203,8 +193,7 @@ object entryPointTypesMod {
   }
   object JSResourceReference {
     
-    @scala.inline
-    def apply[TModule](
+    inline def apply[TModule](
       getModuleId: () => String,
       getModuleIfRequired: () => TModule | Null,
       load: () => js.Promise[TModule]
@@ -213,17 +202,13 @@ object entryPointTypesMod {
       __obj.asInstanceOf[JSResourceReference[TModule]]
     }
     
-    @scala.inline
-    implicit class JSResourceReferenceMutableBuilder[Self <: JSResourceReference[?], TModule] (val x: Self & JSResourceReference[TModule]) extends AnyVal {
+    extension [Self <: JSResourceReference[?], TModule](x: Self & JSResourceReference[TModule]) {
       
-      @scala.inline
-      def setGetModuleId(value: () => String): Self = StObject.set(x, "getModuleId", js.Any.fromFunction0(value))
+      inline def setGetModuleId(value: () => String): Self = StObject.set(x, "getModuleId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetModuleIfRequired(value: () => TModule | Null): Self = StObject.set(x, "getModuleIfRequired", js.Any.fromFunction0(value))
+      inline def setGetModuleIfRequired(value: () => TModule | Null): Self = StObject.set(x, "getModuleIfRequired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoad(value: () => js.Promise[TModule]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Promise[TModule]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     }
   }
   
@@ -238,41 +223,30 @@ object entryPointTypesMod {
   }
   object LoadQueryOptions {
     
-    @scala.inline
-    def apply(): LoadQueryOptions = {
+    inline def apply(): LoadQueryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadQueryOptions]
     }
     
-    @scala.inline
-    implicit class LoadQueryOptionsMutableBuilder[Self <: LoadQueryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoadQueryOptions](x: Self) {
       
-      @scala.inline
-      def setFetchPolicy(value: PreloadFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: PreloadFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicyNull: Self = StObject.set(x, "fetchPolicy", null)
+      inline def setFetchPolicyNull: Self = StObject.set(x, "fetchPolicy", null)
       
-      @scala.inline
-      def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+      inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
       
-      @scala.inline
-      def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
+      inline def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkCacheConfigNull: Self = StObject.set(x, "networkCacheConfig", null)
+      inline def setNetworkCacheConfigNull: Self = StObject.set(x, "networkCacheConfig", null)
       
-      @scala.inline
-      def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
+      inline def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
       
-      @scala.inline
-      def setOnQueryAstLoadTimeout(value: () => Unit): Self = StObject.set(x, "onQueryAstLoadTimeout", js.Any.fromFunction0(value))
+      inline def setOnQueryAstLoadTimeout(value: () => Unit): Self = StObject.set(x, "onQueryAstLoadTimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnQueryAstLoadTimeoutNull: Self = StObject.set(x, "onQueryAstLoadTimeout", null)
+      inline def setOnQueryAstLoadTimeoutNull: Self = StObject.set(x, "onQueryAstLoadTimeout", null)
       
-      @scala.inline
-      def setOnQueryAstLoadTimeoutUndefined: Self = StObject.set(x, "onQueryAstLoadTimeout", js.undefined)
+      inline def setOnQueryAstLoadTimeoutUndefined: Self = StObject.set(x, "onQueryAstLoadTimeout", js.undefined)
     }
   }
   
@@ -284,14 +258,11 @@ object entryPointTypesMod {
   trait PreloadFetchPolicy extends StObject
   object PreloadFetchPolicy {
     
-    @scala.inline
-    def `network-only`: typings.reactRelay.reactRelayStrings.`network-only` = "network-only".asInstanceOf[typings.reactRelay.reactRelayStrings.`network-only`]
+    inline def `network-only`: typings.reactRelay.reactRelayStrings.`network-only` = "network-only".asInstanceOf[typings.reactRelay.reactRelayStrings.`network-only`]
     
-    @scala.inline
-    def `store-and-network`: typings.reactRelay.reactRelayStrings.`store-and-network` = "store-and-network".asInstanceOf[typings.reactRelay.reactRelayStrings.`store-and-network`]
+    inline def `store-and-network`: typings.reactRelay.reactRelayStrings.`store-and-network` = "store-and-network".asInstanceOf[typings.reactRelay.reactRelayStrings.`store-and-network`]
     
-    @scala.inline
-    def `store-or-network`: typings.reactRelay.reactRelayStrings.`store-or-network` = "store-or-network".asInstanceOf[typings.reactRelay.reactRelayStrings.`store-or-network`]
+    inline def `store-or-network`: typings.reactRelay.reactRelayStrings.`store-or-network` = "store-or-network".asInstanceOf[typings.reactRelay.reactRelayStrings.`store-or-network`]
   }
   
   /* Inlined std.Readonly<{  fetchKey :string | number | undefined,   fetchPolicy :react-relay.react-relay/lib/relay-experimental/EntryPointTypes.PreloadFetchPolicy | null | undefined,   networkCacheConfig :relay-runtime.relay-runtime.CacheConfig | null | undefined}> */
@@ -305,38 +276,28 @@ object entryPointTypesMod {
   }
   object PreloadOptions {
     
-    @scala.inline
-    def apply(): PreloadOptions = {
+    inline def apply(): PreloadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreloadOptions]
     }
     
-    @scala.inline
-    implicit class PreloadOptionsMutableBuilder[Self <: PreloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PreloadOptions](x: Self) {
       
-      @scala.inline
-      def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
+      inline def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchKeyUndefined: Self = StObject.set(x, "fetchKey", js.undefined)
+      inline def setFetchKeyUndefined: Self = StObject.set(x, "fetchKey", js.undefined)
       
-      @scala.inline
-      def setFetchPolicy(value: PreloadFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: PreloadFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicyNull: Self = StObject.set(x, "fetchPolicy", null)
+      inline def setFetchPolicyNull: Self = StObject.set(x, "fetchPolicy", null)
       
-      @scala.inline
-      def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+      inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
       
-      @scala.inline
-      def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
+      inline def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkCacheConfigNull: Self = StObject.set(x, "networkCacheConfig", null)
+      inline def setNetworkCacheConfigNull: Self = StObject.set(x, "networkCacheConfig", null)
       
-      @scala.inline
-      def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
+      inline def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
     }
   }
   
@@ -351,32 +312,24 @@ object entryPointTypesMod {
   }
   object PreloadProps {
     
-    @scala.inline
-    def apply[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */](): PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps] = {
+    inline def apply[TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */](): PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]]
     }
     
-    @scala.inline
-    implicit class PreloadPropsMutableBuilder[Self <: PreloadProps[?, ?, ?, ?], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */] (val x: Self & (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) extends AnyVal {
+    extension [Self <: PreloadProps[?, ?, ?, ?], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[js.Any, js.Any]]] */, TExtraProps /* <: js.Object | Null */](x: Self & (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) {
       
-      @scala.inline
-      def setEntryPoints(value: ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
+      inline def setEntryPoints(value: ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
+      inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
       
-      @scala.inline
-      def setExtraProps(value: TExtraProps): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
+      inline def setExtraProps(value: TExtraProps): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraPropsUndefined: Self = StObject.set(x, "extraProps", js.undefined)
+      inline def setExtraPropsUndefined: Self = StObject.set(x, "extraProps", js.undefined)
       
-      @scala.inline
-      def setQueries(value: ThinQueryParamsObject[TPreloadedQueries]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+      inline def setQueries(value: ThinQueryParamsObject[TPreloadedQueries]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+      inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     }
   }
   
@@ -391,35 +344,26 @@ object entryPointTypesMod {
   }
   object PreloadQueryStatus {
     
-    @scala.inline
-    def apply(source: cache | network): PreloadQueryStatus = {
+    inline def apply(source: cache | network): PreloadQueryStatus = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreloadQueryStatus]
     }
     
-    @scala.inline
-    implicit class PreloadQueryStatusMutableBuilder[Self <: PreloadQueryStatus] (val x: Self) extends AnyVal {
+    extension [Self <: PreloadQueryStatus](x: Self) {
       
-      @scala.inline
-      def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
+      inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheConfigNull: Self = StObject.set(x, "cacheConfig", null)
+      inline def setCacheConfigNull: Self = StObject.set(x, "cacheConfig", null)
       
-      @scala.inline
-      def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
+      inline def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
       
-      @scala.inline
-      def setFetchTime(value: Double): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
+      inline def setFetchTime(value: Double): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchTimeNull: Self = StObject.set(x, "fetchTime", null)
+      inline def setFetchTimeNull: Self = StObject.set(x, "fetchTime", null)
       
-      @scala.inline
-      def setFetchTimeUndefined: Self = StObject.set(x, "fetchTime", js.undefined)
+      inline def setFetchTimeUndefined: Self = StObject.set(x, "fetchTime", js.undefined)
       
-      @scala.inline
-      def setSource(value: cache | network): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: cache | network): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,20 +375,16 @@ object entryPointTypesMod {
   }
   object PreloadableConcreteRequest {
     
-    @scala.inline
-    def apply[TQuery /* <: OperationType */](params: RequestParameters): PreloadableConcreteRequest[TQuery] = {
+    inline def apply[TQuery /* <: OperationType */](params: RequestParameters): PreloadableConcreteRequest[TQuery] = {
       val __obj = js.Dynamic.literal(kind = "PreloadableConcreteRequest", params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreloadableConcreteRequest[TQuery]]
     }
     
-    @scala.inline
-    implicit class PreloadableConcreteRequestMutableBuilder[Self <: PreloadableConcreteRequest[?], TQuery /* <: OperationType */] (val x: Self & PreloadableConcreteRequest[TQuery]) extends AnyVal {
+    extension [Self <: PreloadableConcreteRequest[?], TQuery /* <: OperationType */](x: Self & PreloadableConcreteRequest[TQuery]) {
       
-      @scala.inline
-      def setKind(value: typings.reactRelay.reactRelayStrings.PreloadableConcreteRequest): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: typings.reactRelay.reactRelayStrings.PreloadableConcreteRequest): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: RequestParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: RequestParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -487,8 +427,7 @@ object entryPointTypesMod {
   }
   object PreloadedQuery {
     
-    @scala.inline
-    def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
+    inline def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
       dispose: () => Unit,
       environment: Environment,
       fetchKey: String | Double,
@@ -501,68 +440,47 @@ object entryPointTypesMod {
       __obj.asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
     }
     
-    @scala.inline
-    implicit class PreloadedQueryMutableBuilder[Self <: PreloadedQuery[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions] (val x: Self & (PreloadedQuery[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
+    extension [Self <: PreloadedQuery[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions](x: Self & (PreloadedQuery[TQuery, TEnvironmentProviderOptions])) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentProviderOptions(value: TEnvironmentProviderOptions): Self = StObject.set(x, "environmentProviderOptions", value.asInstanceOf[js.Any])
+      inline def setEnvironmentProviderOptions(value: TEnvironmentProviderOptions): Self = StObject.set(x, "environmentProviderOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentProviderOptionsNull: Self = StObject.set(x, "environmentProviderOptions", null)
+      inline def setEnvironmentProviderOptionsNull: Self = StObject.set(x, "environmentProviderOptions", null)
       
-      @scala.inline
-      def setEnvironmentProviderOptionsUndefined: Self = StObject.set(x, "environmentProviderOptions", js.undefined)
+      inline def setEnvironmentProviderOptionsUndefined: Self = StObject.set(x, "environmentProviderOptions", js.undefined)
       
-      @scala.inline
-      def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
+      inline def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicy(value: PreloadFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: PreloadFetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+      inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: typings.reactRelay.reactRelayStrings.PreloadedQuery): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: typings.reactRelay.reactRelayStrings.PreloadedQuery): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
+      inline def setNetworkCacheConfig(value: CacheConfig): Self = StObject.set(x, "networkCacheConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkCacheConfigNull: Self = StObject.set(x, "networkCacheConfig", null)
+      inline def setNetworkCacheConfigNull: Self = StObject.set(x, "networkCacheConfig", null)
       
-      @scala.inline
-      def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
+      inline def setNetworkCacheConfigUndefined: Self = StObject.set(x, "networkCacheConfig", js.undefined)
       
-      @scala.inline
-      def setSource(value: Observable[GraphQLResponse]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Observable[GraphQLResponse]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceNull: Self = StObject.set(x, "source", null)
+      inline def setSourceNull: Self = StObject.set(x, "source", null)
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setVariables(value: VariablesOf[TQuery]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: VariablesOf[TQuery]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
   
@@ -575,20 +493,16 @@ object entryPointTypesMod {
   }
   object ThinNestedEntryPointParams {
     
-    @scala.inline
-    def apply[TEntryPoint](entryPoint: TEntryPoint, entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint]): ThinNestedEntryPointParams[TEntryPoint] = {
+    inline def apply[TEntryPoint](entryPoint: TEntryPoint, entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint]): ThinNestedEntryPointParams[TEntryPoint] = {
       val __obj = js.Dynamic.literal(entryPoint = entryPoint.asInstanceOf[js.Any], entryPointParams = entryPointParams.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThinNestedEntryPointParams[TEntryPoint]]
     }
     
-    @scala.inline
-    implicit class ThinNestedEntryPointParamsMutableBuilder[Self <: ThinNestedEntryPointParams[?], TEntryPoint] (val x: Self & ThinNestedEntryPointParams[TEntryPoint]) extends AnyVal {
+    extension [Self <: ThinNestedEntryPointParams[?], TEntryPoint](x: Self & ThinNestedEntryPointParams[TEntryPoint]) {
       
-      @scala.inline
-      def setEntryPoint(value: TEntryPoint): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
+      inline def setEntryPoint(value: TEntryPoint): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryPointParams(value: GetEntryPointParamsFromEntryPoint[TEntryPoint]): Self = StObject.set(x, "entryPointParams", value.asInstanceOf[js.Any])
+      inline def setEntryPointParams(value: GetEntryPointParamsFromEntryPoint[TEntryPoint]): Self = StObject.set(x, "entryPointParams", value.asInstanceOf[js.Any])
     }
   }
   
@@ -609,38 +523,28 @@ object entryPointTypesMod {
   }
   object ThinQueryParams {
     
-    @scala.inline
-    def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery], variables: VariablesOf[TQuery]): ThinQueryParams[TQuery, TEnvironmentProviderOptions] = {
+    inline def apply[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](parameters: ConcreteRequest | PreloadableConcreteRequest[TQuery], variables: VariablesOf[TQuery]): ThinQueryParams[TQuery, TEnvironmentProviderOptions] = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThinQueryParams[TQuery, TEnvironmentProviderOptions]]
     }
     
-    @scala.inline
-    implicit class ThinQueryParamsMutableBuilder[Self <: ThinQueryParams[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */] (val x: Self & (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
+    extension [Self <: ThinQueryParams[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, js.Any]] */](x: Self & (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) {
       
-      @scala.inline
-      def setEnvironmentProviderOptions(value: TEnvironmentProviderOptions): Self = StObject.set(x, "environmentProviderOptions", value.asInstanceOf[js.Any])
+      inline def setEnvironmentProviderOptions(value: TEnvironmentProviderOptions): Self = StObject.set(x, "environmentProviderOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentProviderOptionsNull: Self = StObject.set(x, "environmentProviderOptions", null)
+      inline def setEnvironmentProviderOptionsNull: Self = StObject.set(x, "environmentProviderOptions", null)
       
-      @scala.inline
-      def setEnvironmentProviderOptionsUndefined: Self = StObject.set(x, "environmentProviderOptions", js.undefined)
+      inline def setEnvironmentProviderOptionsUndefined: Self = StObject.set(x, "environmentProviderOptions", js.undefined)
       
-      @scala.inline
-      def setOptions(value: PreloadOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: PreloadOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsNull: Self = StObject.set(x, "options", null)
+      inline def setOptionsNull: Self = StObject.set(x, "options", null)
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setParameters(value: ConcreteRequest | PreloadableConcreteRequest[TQuery]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: ConcreteRequest | PreloadableConcreteRequest[TQuery]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: VariablesOf[TQuery]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: VariablesOf[TQuery]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
   

@@ -42,8 +42,7 @@ object tableActionCellDriverMod {
   }
   object TableActionCellDriver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clickHiddenAction: Double => Unit,
       clickHiddenActionByDataHook: String => Unit,
       clickPopoverMenu: () => Unit,
@@ -63,47 +62,33 @@ object tableActionCellDriverMod {
       __obj.asInstanceOf[TableActionCellDriver[T]]
     }
     
-    @scala.inline
-    implicit class TableActionCellDriverMutableBuilder[Self <: TableActionCellDriver[?], T] (val x: Self & TableActionCellDriver[T]) extends AnyVal {
+    extension [Self <: TableActionCellDriver[?], T](x: Self & TableActionCellDriver[T]) {
       
-      @scala.inline
-      def setClickHiddenAction(value: Double => Unit): Self = StObject.set(x, "clickHiddenAction", js.Any.fromFunction1(value))
+      inline def setClickHiddenAction(value: Double => Unit): Self = StObject.set(x, "clickHiddenAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickHiddenActionByDataHook(value: String => Unit): Self = StObject.set(x, "clickHiddenActionByDataHook", js.Any.fromFunction1(value))
+      inline def setClickHiddenActionByDataHook(value: String => Unit): Self = StObject.set(x, "clickHiddenActionByDataHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickPopoverMenu(value: () => Unit): Self = StObject.set(x, "clickPopoverMenu", js.Any.fromFunction0(value))
+      inline def setClickPopoverMenu(value: () => Unit): Self = StObject.set(x, "clickPopoverMenu", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickPrimaryActionButton(value: () => Unit): Self = StObject.set(x, "clickPrimaryActionButton", js.Any.fromFunction0(value))
+      inline def setClickPrimaryActionButton(value: () => Unit): Self = StObject.set(x, "clickPrimaryActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickVisibleAction(value: Double => Unit): Self = StObject.set(x, "clickVisibleAction", js.Any.fromFunction1(value))
+      inline def setClickVisibleAction(value: Double => Unit): Self = StObject.set(x, "clickVisibleAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickVisibleActionByDataHook(value: String => Unit): Self = StObject.set(x, "clickVisibleActionByDataHook", js.Any.fromFunction1(value))
+      inline def setClickVisibleActionByDataHook(value: String => Unit): Self = StObject.set(x, "clickVisibleActionByDataHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHiddenActionsCount(value: () => Double): Self = StObject.set(x, "getHiddenActionsCount", js.Any.fromFunction0(value))
+      inline def setGetHiddenActionsCount(value: () => Double): Self = StObject.set(x, "getHiddenActionsCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHiddenActionsPopoverMenuDriver(value: () => PopoverMenuUniDriver): Self = StObject.set(x, "getHiddenActionsPopoverMenuDriver", js.Any.fromFunction0(value))
+      inline def setGetHiddenActionsPopoverMenuDriver(value: () => PopoverMenuUniDriver): Self = StObject.set(x, "getHiddenActionsPopoverMenuDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIsPrimaryActionButtonDisabled(value: () => Boolean): Self = StObject.set(x, "getIsPrimaryActionButtonDisabled", js.Any.fromFunction0(value))
+      inline def setGetIsPrimaryActionButtonDisabled(value: () => Boolean): Self = StObject.set(x, "getIsPrimaryActionButtonDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVisibleActionByDataHookTooltipDriver(value: String => ReturnType[js.Function1[/* args */ js.Any, GetElementId]]): Self = StObject.set(x, "getVisibleActionByDataHookTooltipDriver", js.Any.fromFunction1(value))
+      inline def setGetVisibleActionByDataHookTooltipDriver(value: String => ReturnType[js.Function1[/* args */ js.Any, GetElementId]]): Self = StObject.set(x, "getVisibleActionByDataHookTooltipDriver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVisibleActionTooltipDriver(value: Double => ReturnType[js.Function1[/* args */ js.Any, GetElementId]]): Self = StObject.set(x, "getVisibleActionTooltipDriver", js.Any.fromFunction1(value))
+      inline def setGetVisibleActionTooltipDriver(value: Double => ReturnType[js.Function1[/* args */ js.Any, GetElementId]]): Self = StObject.set(x, "getVisibleActionTooltipDriver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVisibleActionsCount(value: () => Double): Self = StObject.set(x, "getVisibleActionsCount", js.Any.fromFunction0(value))
+      inline def setGetVisibleActionsCount(value: () => Double): Self = StObject.set(x, "getVisibleActionsCount", js.Any.fromFunction0(value))
     }
   }
 }

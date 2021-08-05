@@ -54,8 +54,7 @@ trait XHeaderFooterContent
 }
 object XHeaderFooterContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CenterText: XText,
     LeftText: XText,
     RightText: XText,
@@ -70,25 +69,18 @@ object XHeaderFooterContent {
     __obj.asInstanceOf[XHeaderFooterContent]
   }
   
-  @scala.inline
-  implicit class XHeaderFooterContentMutableBuilder[Self <: XHeaderFooterContent] (val x: Self) extends AnyVal {
+  extension [Self <: XHeaderFooterContent](x: Self) {
     
-    @scala.inline
-    def setCenterText(value: XText): Self = StObject.set(x, "CenterText", value.asInstanceOf[js.Any])
+    inline def setCenterText(value: XText): Self = StObject.set(x, "CenterText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCenterText(value: () => XText): Self = StObject.set(x, "getCenterText", js.Any.fromFunction0(value))
+    inline def setGetCenterText(value: () => XText): Self = StObject.set(x, "getCenterText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLeftText(value: () => XText): Self = StObject.set(x, "getLeftText", js.Any.fromFunction0(value))
+    inline def setGetLeftText(value: () => XText): Self = StObject.set(x, "getLeftText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRightText(value: () => XText): Self = StObject.set(x, "getRightText", js.Any.fromFunction0(value))
+    inline def setGetRightText(value: () => XText): Self = StObject.set(x, "getRightText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLeftText(value: XText): Self = StObject.set(x, "LeftText", value.asInstanceOf[js.Any])
+    inline def setLeftText(value: XText): Self = StObject.set(x, "LeftText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightText(value: XText): Self = StObject.set(x, "RightText", value.asInstanceOf[js.Any])
+    inline def setRightText(value: XText): Self = StObject.set(x, "RightText", value.asInstanceOf[js.Any])
   }
 }

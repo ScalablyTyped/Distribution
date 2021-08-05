@@ -22,8 +22,7 @@ trait Max extends StObject {
 }
 object Max {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     max: Double,
     min: Double,
     onBlur: () => Unit,
@@ -36,28 +35,20 @@ object Max {
     __obj.asInstanceOf[Max]
   }
   
-  @scala.inline
-  implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+  extension [Self <: Max](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+    inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+    inline def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParser(value: /* input */ String => String): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+    inline def setParser(value: /* input */ String => String): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

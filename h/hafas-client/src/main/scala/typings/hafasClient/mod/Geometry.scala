@@ -13,23 +13,18 @@ trait Geometry extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply(coordinates: js.Array[Double]): Geometry = {
+  inline def apply(coordinates: js.Array[Double]): Geometry = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Point")
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait XUnoUrlResolver
 }
 object XUnoUrlResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -31,10 +30,8 @@ object XUnoUrlResolver {
     __obj.asInstanceOf[XUnoUrlResolver]
   }
   
-  @scala.inline
-  implicit class XUnoUrlResolverMutableBuilder[Self <: XUnoUrlResolver] (val x: Self) extends AnyVal {
+  extension [Self <: XUnoUrlResolver](x: Self) {
     
-    @scala.inline
-    def setResolve(value: String => XInterface): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    inline def setResolve(value: String => XInterface): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
   }
 }

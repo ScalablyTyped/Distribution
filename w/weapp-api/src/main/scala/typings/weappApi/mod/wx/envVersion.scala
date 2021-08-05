@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait envVersion extends StObject
 object envVersion {
   
-  @scala.inline
-  def develop: typings.weappApi.weappApiStrings.develop = "develop".asInstanceOf[typings.weappApi.weappApiStrings.develop]
+  inline def develop: typings.weappApi.weappApiStrings.develop = "develop".asInstanceOf[typings.weappApi.weappApiStrings.develop]
   
-  @scala.inline
-  def release: typings.weappApi.weappApiStrings.release = "release".asInstanceOf[typings.weappApi.weappApiStrings.release]
+  inline def release: typings.weappApi.weappApiStrings.release = "release".asInstanceOf[typings.weappApi.weappApiStrings.release]
   
-  @scala.inline
-  def trial: typings.weappApi.weappApiStrings.trial = "trial".asInstanceOf[typings.weappApi.weappApiStrings.trial]
+  inline def trial: typings.weappApi.weappApiStrings.trial = "trial".asInstanceOf[typings.weappApi.weappApiStrings.trial]
 }

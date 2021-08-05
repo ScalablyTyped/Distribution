@@ -11,16 +11,13 @@ trait SpecularMap extends StObject {
 }
 object SpecularMap {
   
-  @scala.inline
-  def apply(specularMap: IUniform): SpecularMap = {
+  inline def apply(specularMap: IUniform): SpecularMap = {
     val __obj = js.Dynamic.literal(specularMap = specularMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecularMap]
   }
   
-  @scala.inline
-  implicit class SpecularMapMutableBuilder[Self <: SpecularMap] (val x: Self) extends AnyVal {
+  extension [Self <: SpecularMap](x: Self) {
     
-    @scala.inline
-    def setSpecularMap(value: IUniform): Self = StObject.set(x, "specularMap", value.asInstanceOf[js.Any])
+    inline def setSpecularMap(value: IUniform): Self = StObject.set(x, "specularMap", value.asInstanceOf[js.Any])
   }
 }

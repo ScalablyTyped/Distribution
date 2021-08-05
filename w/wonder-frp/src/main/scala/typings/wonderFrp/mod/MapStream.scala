@@ -17,6 +17,5 @@ object MapStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(source: typings.wonderFrp.streamMod.Stream, selector: js.Function): typings.wonderFrp.mapStreamMod.MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.mapStreamMod.MapStream]
+  inline def create(source: typings.wonderFrp.streamMod.Stream, selector: js.Function): typings.wonderFrp.mapStreamMod.MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.mapStreamMod.MapStream]
 }

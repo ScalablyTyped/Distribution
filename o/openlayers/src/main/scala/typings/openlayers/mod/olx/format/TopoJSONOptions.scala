@@ -11,19 +11,15 @@ trait TopoJSONOptions extends StObject {
 }
 object TopoJSONOptions {
   
-  @scala.inline
-  def apply(): TopoJSONOptions = {
+  inline def apply(): TopoJSONOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopoJSONOptions]
   }
   
-  @scala.inline
-  implicit class TopoJSONOptionsMutableBuilder[Self <: TopoJSONOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TopoJSONOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
+    inline def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDataProjectionUndefined: Self = StObject.set(x, "defaultDataProjection", js.undefined)
+    inline def setDefaultDataProjectionUndefined: Self = StObject.set(x, "defaultDataProjection", js.undefined)
   }
 }

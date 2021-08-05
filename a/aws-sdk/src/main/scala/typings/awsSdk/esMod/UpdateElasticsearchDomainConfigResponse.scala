@@ -13,16 +13,13 @@ trait UpdateElasticsearchDomainConfigResponse extends StObject {
 }
 object UpdateElasticsearchDomainConfigResponse {
   
-  @scala.inline
-  def apply(DomainConfig: ElasticsearchDomainConfig): UpdateElasticsearchDomainConfigResponse = {
+  inline def apply(DomainConfig: ElasticsearchDomainConfig): UpdateElasticsearchDomainConfigResponse = {
     val __obj = js.Dynamic.literal(DomainConfig = DomainConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateElasticsearchDomainConfigResponse]
   }
   
-  @scala.inline
-  implicit class UpdateElasticsearchDomainConfigResponseMutableBuilder[Self <: UpdateElasticsearchDomainConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateElasticsearchDomainConfigResponse](x: Self) {
     
-    @scala.inline
-    def setDomainConfig(value: ElasticsearchDomainConfig): Self = StObject.set(x, "DomainConfig", value.asInstanceOf[js.Any])
+    inline def setDomainConfig(value: ElasticsearchDomainConfig): Self = StObject.set(x, "DomainConfig", value.asInstanceOf[js.Any])
   }
 }

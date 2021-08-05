@@ -26,31 +26,23 @@ trait SchemaDynamicLinkEventStat extends StObject {
 }
 object SchemaDynamicLinkEventStat {
   
-  @scala.inline
-  def apply(): SchemaDynamicLinkEventStat = {
+  inline def apply(): SchemaDynamicLinkEventStat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDynamicLinkEventStat]
   }
   
-  @scala.inline
-  implicit class SchemaDynamicLinkEventStatMutableBuilder[Self <: SchemaDynamicLinkEventStat] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDynamicLinkEventStat](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

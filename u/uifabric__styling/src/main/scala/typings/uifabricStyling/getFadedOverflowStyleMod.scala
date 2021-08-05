@@ -14,8 +14,7 @@ object getFadedOverflowStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFadedOverflowStyle(
+  inline def getFadedOverflowStyle(
     theme: ITheme,
     color: js.UndefOr[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154 */ js.Any

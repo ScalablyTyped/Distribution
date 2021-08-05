@@ -9,8 +9,7 @@ trait IComponentLoader
      with IElementLoader
 object IComponentLoader {
   
-  @scala.inline
-  def apply(): IComponentLoader = {
+  inline def apply(): IComponentLoader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IComponentLoader]
   }

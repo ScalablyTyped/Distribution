@@ -55,8 +55,7 @@ trait Paragraph
 }
 object Paragraph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: () => Unit,
     deleteAfter: () => Unit,
     didExceedMaxLines: () => Boolean,
@@ -79,46 +78,32 @@ object Paragraph {
     __obj.asInstanceOf[Paragraph]
   }
   
-  @scala.inline
-  implicit class ParagraphMutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
+  extension [Self <: Paragraph](x: Self) {
     
-    @scala.inline
-    def setDidExceedMaxLines(value: () => Boolean): Self = StObject.set(x, "didExceedMaxLines", js.Any.fromFunction0(value))
+    inline def setDidExceedMaxLines(value: () => Boolean): Self = StObject.set(x, "didExceedMaxLines", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAlphabeticBaseline(value: () => Double): Self = StObject.set(x, "getAlphabeticBaseline", js.Any.fromFunction0(value))
+    inline def setGetAlphabeticBaseline(value: () => Double): Self = StObject.set(x, "getAlphabeticBaseline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGlyphPositionAtCoordinate(value: (Double, Double) => PositionWithAffinity): Self = StObject.set(x, "getGlyphPositionAtCoordinate", js.Any.fromFunction2(value))
+    inline def setGetGlyphPositionAtCoordinate(value: (Double, Double) => PositionWithAffinity): Self = StObject.set(x, "getGlyphPositionAtCoordinate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIdeographicBaseline(value: () => Double): Self = StObject.set(x, "getIdeographicBaseline", js.Any.fromFunction0(value))
+    inline def setGetIdeographicBaseline(value: () => Double): Self = StObject.set(x, "getIdeographicBaseline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLongestLine(value: () => Double): Self = StObject.set(x, "getLongestLine", js.Any.fromFunction0(value))
+    inline def setGetLongestLine(value: () => Double): Self = StObject.set(x, "getLongestLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxIntrinsicWidth(value: () => Double): Self = StObject.set(x, "getMaxIntrinsicWidth", js.Any.fromFunction0(value))
+    inline def setGetMaxIntrinsicWidth(value: () => Double): Self = StObject.set(x, "getMaxIntrinsicWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxWidth(value: () => Double): Self = StObject.set(x, "getMaxWidth", js.Any.fromFunction0(value))
+    inline def setGetMaxWidth(value: () => Double): Self = StObject.set(x, "getMaxWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinIntrinsicWidth(value: () => Double): Self = StObject.set(x, "getMinIntrinsicWidth", js.Any.fromFunction0(value))
+    inline def setGetMinIntrinsicWidth(value: () => Double): Self = StObject.set(x, "getMinIntrinsicWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRectsForPlaceholders(value: () => FlattenedRectangleArray): Self = StObject.set(x, "getRectsForPlaceholders", js.Any.fromFunction0(value))
+    inline def setGetRectsForPlaceholders(value: () => FlattenedRectangleArray): Self = StObject.set(x, "getRectsForPlaceholders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRectsForRange(value: (Double, Double, RectHeightStyle, RectWidthStyle) => FlattenedRectangleArray): Self = StObject.set(x, "getRectsForRange", js.Any.fromFunction4(value))
+    inline def setGetRectsForRange(value: (Double, Double, RectHeightStyle, RectWidthStyle) => FlattenedRectangleArray): Self = StObject.set(x, "getRectsForRange", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetWordBoundary(value: Double => URange): Self = StObject.set(x, "getWordBoundary", js.Any.fromFunction1(value))
+    inline def setGetWordBoundary(value: Double => URange): Self = StObject.set(x, "getWordBoundary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLayout(value: Double => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction1(value))
+    inline def setLayout(value: Double => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction1(value))
   }
 }

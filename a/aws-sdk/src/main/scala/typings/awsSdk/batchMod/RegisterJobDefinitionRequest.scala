@@ -48,56 +48,40 @@ trait RegisterJobDefinitionRequest extends StObject {
 }
 object RegisterJobDefinitionRequest {
   
-  @scala.inline
-  def apply(jobDefinitionName: String, `type`: JobDefinitionType): RegisterJobDefinitionRequest = {
+  inline def apply(jobDefinitionName: String, `type`: JobDefinitionType): RegisterJobDefinitionRequest = {
     val __obj = js.Dynamic.literal(jobDefinitionName = jobDefinitionName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterJobDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class RegisterJobDefinitionRequestMutableBuilder[Self <: RegisterJobDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterJobDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setContainerProperties(value: ContainerProperties): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
+    inline def setContainerProperties(value: ContainerProperties): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
+    inline def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
     
-    @scala.inline
-    def setJobDefinitionName(value: String): Self = StObject.set(x, "jobDefinitionName", value.asInstanceOf[js.Any])
+    inline def setJobDefinitionName(value: String): Self = StObject.set(x, "jobDefinitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeProperties(value: NodeProperties): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
+    inline def setNodeProperties(value: NodeProperties): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
+    inline def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
     
-    @scala.inline
-    def setParameters(value: ParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+    inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
+    inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: JobTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: JobTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setType(value: JobDefinitionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JobDefinitionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

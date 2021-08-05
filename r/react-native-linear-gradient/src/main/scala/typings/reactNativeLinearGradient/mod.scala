@@ -52,59 +52,42 @@ object mod {
   }
   object LinearGradientProps {
     
-    @scala.inline
-    def apply(colors: js.Array[String | Double]): LinearGradientProps = {
+    inline def apply(colors: js.Array[String | Double]): LinearGradientProps = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinearGradientProps]
     }
     
-    @scala.inline
-    implicit class LinearGradientPropsMutableBuilder[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinearGradientProps](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleCenter(value: X): Self = StObject.set(x, "angleCenter", value.asInstanceOf[js.Any])
+      inline def setAngleCenter(value: X): Self = StObject.set(x, "angleCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleCenterUndefined: Self = StObject.set(x, "angleCenter", js.undefined)
+      inline def setAngleCenterUndefined: Self = StObject.set(x, "angleCenter", js.undefined)
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setColors(value: js.Array[String | Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[String | Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: (String | Double)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: (String | Double)*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+      inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      @scala.inline
-      def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setUseAngle(value: Boolean): Self = StObject.set(x, "useAngle", value.asInstanceOf[js.Any])
+      inline def setUseAngle(value: Boolean): Self = StObject.set(x, "useAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAngleUndefined: Self = StObject.set(x, "useAngle", js.undefined)
+      inline def setUseAngleUndefined: Self = StObject.set(x, "useAngle", js.undefined)
     }
   }
 }

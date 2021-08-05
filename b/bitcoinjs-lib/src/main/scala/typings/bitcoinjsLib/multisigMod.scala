@@ -12,14 +12,10 @@ object multisigMod {
     
     object check {
       
-      @scala.inline
-      def apply(script: Stack): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Stack, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def apply(script: Stack): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: Stack, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       @JSImport("bitcoinjs-lib/types/templates/multisig", "input.check")
       @js.native
@@ -28,8 +24,7 @@ object multisigMod {
       @JSImport("bitcoinjs-lib/types/templates/multisig", "input.check.toJSON")
       @js.native
       def toJSON: js.Function0[String] = js.native
-      @scala.inline
-      def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
+      inline def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -37,14 +32,10 @@ object multisigMod {
     
     object check {
       
-      @scala.inline
-      def apply(script: Stack): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Stack, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      @scala.inline
-      def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def apply(script: Stack): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: Stack, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       @JSImport("bitcoinjs-lib/types/templates/multisig", "output.check")
       @js.native
@@ -53,8 +44,7 @@ object multisigMod {
       @JSImport("bitcoinjs-lib/types/templates/multisig", "output.check.toJSON")
       @js.native
       def toJSON: js.Function0[String] = js.native
-      @scala.inline
-      def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
+      inline def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
     }
   }
 }

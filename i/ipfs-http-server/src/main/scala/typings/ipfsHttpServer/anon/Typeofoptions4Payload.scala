@@ -14,25 +14,19 @@ trait Typeofoptions4Payload extends StObject {
 }
 object Typeofoptions4Payload {
   
-  @scala.inline
-  def apply(payload: Typeofpayload, pre: js.Array[AssignStringMethod], validate_2: Typeofvalidate2): Typeofoptions4Payload = {
+  inline def apply(payload: Typeofpayload, pre: js.Array[AssignStringMethod], validate_2: Typeofvalidate2): Typeofoptions4Payload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], validate_2 = validate_2.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofoptions4Payload]
   }
   
-  @scala.inline
-  implicit class Typeofoptions4PayloadMutableBuilder[Self <: Typeofoptions4Payload] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofoptions4Payload](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Typeofpayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Typeofpayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPre(value: js.Array[AssignStringMethod]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: js.Array[AssignStringMethod]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreVarargs(value: AssignStringMethod*): Self = StObject.set(x, "pre", js.Array(value :_*))
+    inline def setPreVarargs(value: AssignStringMethod*): Self = StObject.set(x, "pre", js.Array(value :_*))
     
-    @scala.inline
-    def setValidate_2(value: Typeofvalidate2): Self = StObject.set(x, "validate_2", value.asInstanceOf[js.Any])
+    inline def setValidate_2(value: Typeofvalidate2): Self = StObject.set(x, "validate_2", value.asInstanceOf[js.Any])
   }
 }

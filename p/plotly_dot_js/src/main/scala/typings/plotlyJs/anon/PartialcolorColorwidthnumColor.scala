@@ -13,28 +13,21 @@ trait PartialcolorColorwidthnumColor extends StObject {
 }
 object PartialcolorColorwidthnumColor {
   
-  @scala.inline
-  def apply(): PartialcolorColorwidthnumColor = {
+  inline def apply(): PartialcolorColorwidthnumColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialcolorColorwidthnumColor]
   }
   
-  @scala.inline
-  implicit class PartialcolorColorwidthnumColorMutableBuilder[Self <: PartialcolorColorwidthnumColor] (val x: Self) extends AnyVal {
+  extension [Self <: PartialcolorColorwidthnumColor](x: Self) {
     
-    @scala.inline
-    def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

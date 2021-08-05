@@ -38,29 +38,22 @@ object stdinContextMod extends Shortcut {
   }
   object Props {
     
-    @scala.inline
-    def apply(internal_exitOnCtrlC: Boolean, isRawModeSupported: Boolean, setRawMode: Boolean => Unit): Props = {
+    inline def apply(internal_exitOnCtrlC: Boolean, isRawModeSupported: Boolean, setRawMode: Boolean => Unit): Props = {
       val __obj = js.Dynamic.literal(internal_exitOnCtrlC = internal_exitOnCtrlC.asInstanceOf[js.Any], isRawModeSupported = isRawModeSupported.asInstanceOf[js.Any], setRawMode = js.Any.fromFunction1(setRawMode))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setInternal_exitOnCtrlC(value: Boolean): Self = StObject.set(x, "internal_exitOnCtrlC", value.asInstanceOf[js.Any])
+      inline def setInternal_exitOnCtrlC(value: Boolean): Self = StObject.set(x, "internal_exitOnCtrlC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRawModeSupported(value: Boolean): Self = StObject.set(x, "isRawModeSupported", value.asInstanceOf[js.Any])
+      inline def setIsRawModeSupported(value: Boolean): Self = StObject.set(x, "isRawModeSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetRawMode(value: Boolean => Unit): Self = StObject.set(x, "setRawMode", js.Any.fromFunction1(value))
+      inline def setSetRawMode(value: Boolean => Unit): Self = StObject.set(x, "setRawMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     }
   }
   

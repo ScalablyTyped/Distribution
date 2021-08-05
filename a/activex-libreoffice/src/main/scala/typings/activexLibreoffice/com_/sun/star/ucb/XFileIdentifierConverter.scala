@@ -41,8 +41,7 @@ trait XFileIdentifierConverter
 }
 object XFileIdentifierConverter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getFileProviderLocality: String => Double,
     getFileURLFromSystemPath: (String, String) => String,
@@ -54,16 +53,12 @@ object XFileIdentifierConverter {
     __obj.asInstanceOf[XFileIdentifierConverter]
   }
   
-  @scala.inline
-  implicit class XFileIdentifierConverterMutableBuilder[Self <: XFileIdentifierConverter] (val x: Self) extends AnyVal {
+  extension [Self <: XFileIdentifierConverter](x: Self) {
     
-    @scala.inline
-    def setGetFileProviderLocality(value: String => Double): Self = StObject.set(x, "getFileProviderLocality", js.Any.fromFunction1(value))
+    inline def setGetFileProviderLocality(value: String => Double): Self = StObject.set(x, "getFileProviderLocality", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFileURLFromSystemPath(value: (String, String) => String): Self = StObject.set(x, "getFileURLFromSystemPath", js.Any.fromFunction2(value))
+    inline def setGetFileURLFromSystemPath(value: (String, String) => String): Self = StObject.set(x, "getFileURLFromSystemPath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSystemPathFromFileURL(value: String => String): Self = StObject.set(x, "getSystemPathFromFileURL", js.Any.fromFunction1(value))
+    inline def setGetSystemPathFromFileURL(value: String => String): Self = StObject.set(x, "getSystemPathFromFileURL", js.Any.fromFunction1(value))
   }
 }

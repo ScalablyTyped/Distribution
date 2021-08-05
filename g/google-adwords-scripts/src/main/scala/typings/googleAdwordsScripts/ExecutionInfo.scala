@@ -16,8 +16,7 @@ trait ExecutionInfo extends StObject {
 }
 object ExecutionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRemainingCreateQuota: () => Double,
     getRemainingGetQuota: () => Double,
     getRemainingTime: () => Double,
@@ -27,19 +26,14 @@ object ExecutionInfo {
     __obj.asInstanceOf[ExecutionInfo]
   }
   
-  @scala.inline
-  implicit class ExecutionInfoMutableBuilder[Self <: ExecutionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionInfo](x: Self) {
     
-    @scala.inline
-    def setGetRemainingCreateQuota(value: () => Double): Self = StObject.set(x, "getRemainingCreateQuota", js.Any.fromFunction0(value))
+    inline def setGetRemainingCreateQuota(value: () => Double): Self = StObject.set(x, "getRemainingCreateQuota", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRemainingGetQuota(value: () => Double): Self = StObject.set(x, "getRemainingGetQuota", js.Any.fromFunction0(value))
+    inline def setGetRemainingGetQuota(value: () => Double): Self = StObject.set(x, "getRemainingGetQuota", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRemainingTime(value: () => Double): Self = StObject.set(x, "getRemainingTime", js.Any.fromFunction0(value))
+    inline def setGetRemainingTime(value: () => Double): Self = StObject.set(x, "getRemainingTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPreview(value: () => Boolean): Self = StObject.set(x, "isPreview", js.Any.fromFunction0(value))
+    inline def setIsPreview(value: () => Boolean): Self = StObject.set(x, "isPreview", js.Any.fromFunction0(value))
   }
 }

@@ -18,28 +18,21 @@ trait ListTerminologiesResponse extends StObject {
 }
 object ListTerminologiesResponse {
   
-  @scala.inline
-  def apply(): ListTerminologiesResponse = {
+  inline def apply(): ListTerminologiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTerminologiesResponse]
   }
   
-  @scala.inline
-  implicit class ListTerminologiesResponseMutableBuilder[Self <: ListTerminologiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTerminologiesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTerminologyPropertiesList(value: TerminologyPropertiesList): Self = StObject.set(x, "TerminologyPropertiesList", value.asInstanceOf[js.Any])
+    inline def setTerminologyPropertiesList(value: TerminologyPropertiesList): Self = StObject.set(x, "TerminologyPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyPropertiesListUndefined: Self = StObject.set(x, "TerminologyPropertiesList", js.undefined)
+    inline def setTerminologyPropertiesListUndefined: Self = StObject.set(x, "TerminologyPropertiesList", js.undefined)
     
-    @scala.inline
-    def setTerminologyPropertiesListVarargs(value: TerminologyProperties*): Self = StObject.set(x, "TerminologyPropertiesList", js.Array(value :_*))
+    inline def setTerminologyPropertiesListVarargs(value: TerminologyProperties*): Self = StObject.set(x, "TerminologyPropertiesList", js.Array(value :_*))
   }
 }

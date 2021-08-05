@@ -12,8 +12,7 @@ trait MultiReporter
 }
 object MultiReporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addReporter: Reporter => Unit,
     log: String => Unit,
     reportRunnerResults: Runner => Unit,
@@ -26,10 +25,8 @@ object MultiReporter {
     __obj.asInstanceOf[MultiReporter]
   }
   
-  @scala.inline
-  implicit class MultiReporterMutableBuilder[Self <: MultiReporter] (val x: Self) extends AnyVal {
+  extension [Self <: MultiReporter](x: Self) {
     
-    @scala.inline
-    def setAddReporter(value: Reporter => Unit): Self = StObject.set(x, "addReporter", js.Any.fromFunction1(value))
+    inline def setAddReporter(value: Reporter => Unit): Self = StObject.set(x, "addReporter", js.Any.fromFunction1(value))
   }
 }

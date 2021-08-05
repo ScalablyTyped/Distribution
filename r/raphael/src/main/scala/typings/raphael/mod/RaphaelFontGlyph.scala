@@ -14,19 +14,15 @@ trait RaphaelFontGlyph extends StObject {
 }
 object RaphaelFontGlyph {
   
-  @scala.inline
-  def apply(d: String, w: Double): RaphaelFontGlyph = {
+  inline def apply(d: String, w: Double): RaphaelFontGlyph = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelFontGlyph]
   }
   
-  @scala.inline
-  implicit class RaphaelFontGlyphMutableBuilder[Self <: RaphaelFontGlyph] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelFontGlyph](x: Self) {
     
-    @scala.inline
-    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

@@ -8,16 +8,13 @@ object rabbitmqSchemaStrings {
   
   @js.native
   sealed trait direct extends StObject
-  @scala.inline
-  def direct: direct = "direct".asInstanceOf[direct]
+  inline def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
   sealed trait fanout extends StObject
-  @scala.inline
-  def fanout: fanout = "fanout".asInstanceOf[fanout]
+  inline def fanout: fanout = "fanout".asInstanceOf[fanout]
   
   @js.native
   sealed trait topic extends StObject
-  @scala.inline
-  def topic: topic = "topic".asInstanceOf[topic]
+  inline def topic: topic = "topic".asInstanceOf[topic]
 }

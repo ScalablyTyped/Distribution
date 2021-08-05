@@ -10,8 +10,7 @@ trait SerialPortInfo
      with SerialPortFilter
 object SerialPortInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     locationId: String,
     manufacturer: String,
     product: String,

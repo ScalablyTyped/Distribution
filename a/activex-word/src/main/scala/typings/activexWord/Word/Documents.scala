@@ -146,6 +146,6 @@ trait Documents extends StObject {
   def Save(NoPrompt: js.Any, OriginalFormat: js.Any): Unit = js.native
   def Save(NoPrompt: Unit, OriginalFormat: js.Any): Unit = js.native
   
-  @JSName("Word.Documents_typekey")
+  /* private */ @JSName("Word.Documents_typekey")
   var WordDotDocuments_typekey: Documents = js.native
 }

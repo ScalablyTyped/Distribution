@@ -14,31 +14,23 @@ trait SchemaApiDimensionFilter extends StObject {
 }
 object SchemaApiDimensionFilter {
   
-  @scala.inline
-  def apply(): SchemaApiDimensionFilter = {
+  inline def apply(): SchemaApiDimensionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApiDimensionFilter]
   }
   
-  @scala.inline
-  implicit class SchemaApiDimensionFilterMutableBuilder[Self <: SchemaApiDimensionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApiDimensionFilter](x: Self) {
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
   }
 }

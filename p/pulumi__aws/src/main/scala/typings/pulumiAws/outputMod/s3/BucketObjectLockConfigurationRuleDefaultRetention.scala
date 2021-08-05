@@ -23,28 +23,21 @@ trait BucketObjectLockConfigurationRuleDefaultRetention extends StObject {
 }
 object BucketObjectLockConfigurationRuleDefaultRetention {
   
-  @scala.inline
-  def apply(mode: String): BucketObjectLockConfigurationRuleDefaultRetention = {
+  inline def apply(mode: String): BucketObjectLockConfigurationRuleDefaultRetention = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketObjectLockConfigurationRuleDefaultRetention]
   }
   
-  @scala.inline
-  implicit class BucketObjectLockConfigurationRuleDefaultRetentionMutableBuilder[Self <: BucketObjectLockConfigurationRuleDefaultRetention] (val x: Self) extends AnyVal {
+  extension [Self <: BucketObjectLockConfigurationRuleDefaultRetention](x: Self) {
     
-    @scala.inline
-    def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+    inline def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
+    inline def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
   }
 }

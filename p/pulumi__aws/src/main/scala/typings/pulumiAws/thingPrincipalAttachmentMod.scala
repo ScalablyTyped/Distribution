@@ -51,21 +51,16 @@ object thingPrincipalAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState, opts: CustomResourceOptions): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
+    inline def get(name: String, id: Input[ID]): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
+    inline def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
+    inline def get(name: String, id: Input[ID], state: ThingPrincipalAttachmentState, opts: CustomResourceOptions): ThingPrincipalAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThingPrincipalAttachment]
     
     /**
       * Returns true if the given object is an instance of ThingPrincipalAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ Boolean]
   }
   
   trait ThingPrincipalAttachmentArgs extends StObject {
@@ -82,14 +77,11 @@ object thingPrincipalAttachmentMod {
   }
   object ThingPrincipalAttachmentArgs {
     
-    @scala.inline
-    implicit class ThingPrincipalAttachmentArgsMutableBuilder[Self <: ThingPrincipalAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ThingPrincipalAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setPrincipal(value: Input[ARN]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[ARN]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThing(value: Input[String]): Self = StObject.set(x, "thing", value.asInstanceOf[js.Any])
+      inline def setThing(value: Input[String]): Self = StObject.set(x, "thing", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,26 +99,20 @@ object thingPrincipalAttachmentMod {
   }
   object ThingPrincipalAttachmentState {
     
-    @scala.inline
-    def apply(): ThingPrincipalAttachmentState = {
+    inline def apply(): ThingPrincipalAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThingPrincipalAttachmentState]
     }
     
-    @scala.inline
-    implicit class ThingPrincipalAttachmentStateMutableBuilder[Self <: ThingPrincipalAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: ThingPrincipalAttachmentState](x: Self) {
       
-      @scala.inline
-      def setPrincipal(value: Input[ARN]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[ARN]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+      inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
       
-      @scala.inline
-      def setThing(value: Input[String]): Self = StObject.set(x, "thing", value.asInstanceOf[js.Any])
+      inline def setThing(value: Input[String]): Self = StObject.set(x, "thing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThingUndefined: Self = StObject.set(x, "thing", js.undefined)
+      inline def setThingUndefined: Self = StObject.set(x, "thing", js.undefined)
     }
   }
 }

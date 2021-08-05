@@ -15,23 +15,18 @@ object anon {
   }
   object Messages {
     
-    @scala.inline
-    def apply(messages: js.Array[ResultMessage], source: String): Messages = {
+    inline def apply(messages: js.Array[ResultMessage], source: String): Messages = {
       val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Messages]
     }
     
-    @scala.inline
-    implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
+    extension [Self <: Messages](x: Self) {
       
-      @scala.inline
-      def setMessages(value: js.Array[ResultMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Array[ResultMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesVarargs(value: ResultMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: ResultMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

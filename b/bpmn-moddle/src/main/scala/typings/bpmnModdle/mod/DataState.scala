@@ -12,16 +12,13 @@ trait DataState
 }
 object DataState {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, id: String, name: String): DataState = {
+  inline def apply($parent: TypeDerived, $type: ElementType, id: String, name: String): DataState = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataState]
   }
   
-  @scala.inline
-  implicit class DataStateMutableBuilder[Self <: DataState] (val x: Self) extends AnyVal {
+  extension [Self <: DataState](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

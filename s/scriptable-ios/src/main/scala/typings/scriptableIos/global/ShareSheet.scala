@@ -21,6 +21,5 @@ object ShareSheet {
     * @param activityItems - Items to perform activity on.
     * @see https://docs.scriptable.app/sharesheet/#present
     */
-  @scala.inline
-  def present(activityItems: js.Array[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("present")(activityItems.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def present(activityItems: js.Array[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("present")(activityItems.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

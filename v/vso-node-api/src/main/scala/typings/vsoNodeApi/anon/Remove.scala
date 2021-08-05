@@ -12,19 +12,15 @@ trait Remove extends StObject {
 }
 object Remove {
   
-  @scala.inline
-  def apply(create: scala.Double, remove: scala.Double): Remove = {
+  inline def apply(create: scala.Double, remove: scala.Double): Remove = {
     val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[Remove]
   }
   
-  @scala.inline
-  implicit class RemoveMutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
+  extension [Self <: Remove](x: Self) {
     
-    @scala.inline
-    def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: scala.Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: scala.Double): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: scala.Double): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
   }
 }

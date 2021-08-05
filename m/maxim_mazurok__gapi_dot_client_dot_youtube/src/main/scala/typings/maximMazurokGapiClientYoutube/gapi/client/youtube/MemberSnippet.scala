@@ -17,31 +17,23 @@ trait MemberSnippet extends StObject {
 }
 object MemberSnippet {
   
-  @scala.inline
-  def apply(): MemberSnippet = {
+  inline def apply(): MemberSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberSnippet]
   }
   
-  @scala.inline
-  implicit class MemberSnippetMutableBuilder[Self <: MemberSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: MemberSnippet](x: Self) {
     
-    @scala.inline
-    def setCreatorChannelId(value: String): Self = StObject.set(x, "creatorChannelId", value.asInstanceOf[js.Any])
+    inline def setCreatorChannelId(value: String): Self = StObject.set(x, "creatorChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorChannelIdUndefined: Self = StObject.set(x, "creatorChannelId", js.undefined)
+    inline def setCreatorChannelIdUndefined: Self = StObject.set(x, "creatorChannelId", js.undefined)
     
-    @scala.inline
-    def setMemberDetails(value: ChannelProfileDetails): Self = StObject.set(x, "memberDetails", value.asInstanceOf[js.Any])
+    inline def setMemberDetails(value: ChannelProfileDetails): Self = StObject.set(x, "memberDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberDetailsUndefined: Self = StObject.set(x, "memberDetails", js.undefined)
+    inline def setMemberDetailsUndefined: Self = StObject.set(x, "memberDetails", js.undefined)
     
-    @scala.inline
-    def setMembershipsDetails(value: MembershipsDetails): Self = StObject.set(x, "membershipsDetails", value.asInstanceOf[js.Any])
+    inline def setMembershipsDetails(value: MembershipsDetails): Self = StObject.set(x, "membershipsDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipsDetailsUndefined: Self = StObject.set(x, "membershipsDetails", js.undefined)
+    inline def setMembershipsDetailsUndefined: Self = StObject.set(x, "membershipsDetails", js.undefined)
   }
 }

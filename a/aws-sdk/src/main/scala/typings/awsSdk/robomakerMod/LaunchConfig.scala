@@ -33,37 +33,27 @@ trait LaunchConfig extends StObject {
 }
 object LaunchConfig {
   
-  @scala.inline
-  def apply(launchFile: Command, packageName: Command): LaunchConfig = {
+  inline def apply(launchFile: Command, packageName: Command): LaunchConfig = {
     val __obj = js.Dynamic.literal(launchFile = launchFile.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchConfig]
   }
   
-  @scala.inline
-  implicit class LaunchConfigMutableBuilder[Self <: LaunchConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchConfig](x: Self) {
     
-    @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariableMap): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: EnvironmentVariableMap): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    @scala.inline
-    def setLaunchFile(value: Command): Self = StObject.set(x, "launchFile", value.asInstanceOf[js.Any])
+    inline def setLaunchFile(value: Command): Self = StObject.set(x, "launchFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageName(value: Command): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: Command): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortForwardingConfig(value: PortForwardingConfig): Self = StObject.set(x, "portForwardingConfig", value.asInstanceOf[js.Any])
+    inline def setPortForwardingConfig(value: PortForwardingConfig): Self = StObject.set(x, "portForwardingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortForwardingConfigUndefined: Self = StObject.set(x, "portForwardingConfig", js.undefined)
+    inline def setPortForwardingConfigUndefined: Self = StObject.set(x, "portForwardingConfig", js.undefined)
     
-    @scala.inline
-    def setStreamUI(value: Boolean): Self = StObject.set(x, "streamUI", value.asInstanceOf[js.Any])
+    inline def setStreamUI(value: Boolean): Self = StObject.set(x, "streamUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUIUndefined: Self = StObject.set(x, "streamUI", js.undefined)
+    inline def setStreamUIUndefined: Self = StObject.set(x, "streamUI", js.undefined)
   }
 }

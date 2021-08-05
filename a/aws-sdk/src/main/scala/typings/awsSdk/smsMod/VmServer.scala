@@ -33,43 +33,31 @@ trait VmServer extends StObject {
 }
 object VmServer {
   
-  @scala.inline
-  def apply(): VmServer = {
+  inline def apply(): VmServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VmServer]
   }
   
-  @scala.inline
-  implicit class VmServerMutableBuilder[Self <: VmServer] (val x: Self) extends AnyVal {
+  extension [Self <: VmServer](x: Self) {
     
-    @scala.inline
-    def setVmManagerName(value: VmManagerName): Self = StObject.set(x, "vmManagerName", value.asInstanceOf[js.Any])
+    inline def setVmManagerName(value: VmManagerName): Self = StObject.set(x, "vmManagerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmManagerNameUndefined: Self = StObject.set(x, "vmManagerName", js.undefined)
+    inline def setVmManagerNameUndefined: Self = StObject.set(x, "vmManagerName", js.undefined)
     
-    @scala.inline
-    def setVmManagerType(value: VmManagerType): Self = StObject.set(x, "vmManagerType", value.asInstanceOf[js.Any])
+    inline def setVmManagerType(value: VmManagerType): Self = StObject.set(x, "vmManagerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmManagerTypeUndefined: Self = StObject.set(x, "vmManagerType", js.undefined)
+    inline def setVmManagerTypeUndefined: Self = StObject.set(x, "vmManagerType", js.undefined)
     
-    @scala.inline
-    def setVmName(value: VmName): Self = StObject.set(x, "vmName", value.asInstanceOf[js.Any])
+    inline def setVmName(value: VmName): Self = StObject.set(x, "vmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmNameUndefined: Self = StObject.set(x, "vmName", js.undefined)
+    inline def setVmNameUndefined: Self = StObject.set(x, "vmName", js.undefined)
     
-    @scala.inline
-    def setVmPath(value: VmPath): Self = StObject.set(x, "vmPath", value.asInstanceOf[js.Any])
+    inline def setVmPath(value: VmPath): Self = StObject.set(x, "vmPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmPathUndefined: Self = StObject.set(x, "vmPath", js.undefined)
+    inline def setVmPathUndefined: Self = StObject.set(x, "vmPath", js.undefined)
     
-    @scala.inline
-    def setVmServerAddress(value: VmServerAddress): Self = StObject.set(x, "vmServerAddress", value.asInstanceOf[js.Any])
+    inline def setVmServerAddress(value: VmServerAddress): Self = StObject.set(x, "vmServerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmServerAddressUndefined: Self = StObject.set(x, "vmServerAddress", js.undefined)
+    inline def setVmServerAddressUndefined: Self = StObject.set(x, "vmServerAddress", js.undefined)
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.OLEFormat")
 @js.native
-class OLEFormat protected ()
+/* private */ class OLEFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.OLEFormat

@@ -15,19 +15,15 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(getBytesAsync: () => js.Promise[Uint8Array], hash: String): Image = {
+  inline def apply(getBytesAsync: () => js.Promise[Uint8Array], hash: String): Image = {
     val __obj = js.Dynamic.literal(getBytesAsync = js.Any.fromFunction0(getBytesAsync), hash = hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setGetBytesAsync(value: () => js.Promise[Uint8Array]): Self = StObject.set(x, "getBytesAsync", js.Any.fromFunction0(value))
+    inline def setGetBytesAsync(value: () => js.Promise[Uint8Array]): Self = StObject.set(x, "getBytesAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait SessionToken extends StObject {
 }
 object SessionToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getExpirationTime: () => Double,
     getKeyStatuses: () => MediaKeyStatusMap,
     getSessionID: () => String,
@@ -35,25 +34,18 @@ object SessionToken {
     __obj.asInstanceOf[SessionToken]
   }
   
-  @scala.inline
-  implicit class SessionTokenMutableBuilder[Self <: SessionToken] (val x: Self) extends AnyVal {
+  extension [Self <: SessionToken](x: Self) {
     
-    @scala.inline
-    def setGetExpirationTime(value: () => Double): Self = StObject.set(x, "getExpirationTime", js.Any.fromFunction0(value))
+    inline def setGetExpirationTime(value: () => Double): Self = StObject.set(x, "getExpirationTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetKeyStatuses(value: () => MediaKeyStatusMap): Self = StObject.set(x, "getKeyStatuses", js.Any.fromFunction0(value))
+    inline def setGetKeyStatuses(value: () => MediaKeyStatusMap): Self = StObject.set(x, "getKeyStatuses", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSessionID(value: () => String): Self = StObject.set(x, "getSessionID", js.Any.fromFunction0(value))
+    inline def setGetSessionID(value: () => String): Self = StObject.set(x, "getSessionID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSessionType(value: () => String): Self = StObject.set(x, "getSessionType", js.Any.fromFunction0(value))
+    inline def setGetSessionType(value: () => String): Self = StObject.set(x, "getSessionType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitData(value: js.Any): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
+    inline def setInitData(value: js.Any): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: MediaKeySession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: MediaKeySession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

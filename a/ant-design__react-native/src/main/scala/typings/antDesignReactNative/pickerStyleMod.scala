@@ -12,8 +12,7 @@ object pickerStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PickerStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PickerStyle]
+  inline def default(): PickerStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PickerStyle]
   
   trait PickerStyle extends StObject {
     
@@ -33,8 +32,7 @@ object pickerStyleMod {
   }
   object PickerStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actionText: TextStyle,
       dismissText: TextStyle,
       header: ViewStyle,
@@ -47,29 +45,21 @@ object pickerStyleMod {
       __obj.asInstanceOf[PickerStyle]
     }
     
-    @scala.inline
-    implicit class PickerStyleMutableBuilder[Self <: PickerStyle] (val x: Self) extends AnyVal {
+    extension [Self <: PickerStyle](x: Self) {
       
-      @scala.inline
-      def setActionText(value: TextStyle): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
+      inline def setActionText(value: TextStyle): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissText(value: TextStyle): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
+      inline def setDismissText(value: TextStyle): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: ViewStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ViewStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderItem(value: ViewStyle): Self = StObject.set(x, "headerItem", value.asInstanceOf[js.Any])
+      inline def setHeaderItem(value: ViewStyle): Self = StObject.set(x, "headerItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModal(value: ViewStyle): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: ViewStyle): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkText(value: TextStyle): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+      inline def setOkText(value: TextStyle): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: TextStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: TextStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,8 +13,7 @@ object fusedConv2dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv2d[T /* <: Tensor3D | Tensor4D */](
+  inline def conv2d[T /* <: Tensor3D | Tensor4D */](
     hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
   ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
 }

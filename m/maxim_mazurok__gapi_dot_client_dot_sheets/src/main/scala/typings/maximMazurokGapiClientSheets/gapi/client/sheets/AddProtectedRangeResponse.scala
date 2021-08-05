@@ -11,19 +11,15 @@ trait AddProtectedRangeResponse extends StObject {
 }
 object AddProtectedRangeResponse {
   
-  @scala.inline
-  def apply(): AddProtectedRangeResponse = {
+  inline def apply(): AddProtectedRangeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddProtectedRangeResponse]
   }
   
-  @scala.inline
-  implicit class AddProtectedRangeResponseMutableBuilder[Self <: AddProtectedRangeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddProtectedRangeResponse](x: Self) {
     
-    @scala.inline
-    def setProtectedRange(value: ProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
+    inline def setProtectedRange(value: ProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedRangeUndefined: Self = StObject.set(x, "protectedRange", js.undefined)
+    inline def setProtectedRangeUndefined: Self = StObject.set(x, "protectedRange", js.undefined)
   }
 }

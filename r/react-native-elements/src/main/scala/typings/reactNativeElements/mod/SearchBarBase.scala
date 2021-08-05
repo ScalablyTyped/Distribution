@@ -50,55 +50,39 @@ trait SearchBarBase
 }
 object SearchBarBase {
   
-  @scala.inline
-  def apply(): SearchBarBase = {
+  inline def apply(): SearchBarBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBarBase]
   }
   
-  @scala.inline
-  implicit class SearchBarBaseMutableBuilder[Self <: SearchBarBase] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBarBase](x: Self) {
     
-    @scala.inline
-    def setClearIcon(value: IconNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+    inline def setClearIcon(value: IconNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
+    inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
-    @scala.inline
-    def setLoadingProps(value: ActivityIndicatorProperties): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
+    inline def setLoadingProps(value: ActivityIndicatorProperties): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingPropsUndefined: Self = StObject.set(x, "loadingProps", js.undefined)
+    inline def setLoadingPropsUndefined: Self = StObject.set(x, "loadingProps", js.undefined)
     
-    @scala.inline
-    def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+    inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    @scala.inline
-    def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+    inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+    inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
     
-    @scala.inline
-    def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+    inline def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    @scala.inline
-    def setSearchIcon(value: IconNode): Self = StObject.set(x, "searchIcon", value.asInstanceOf[js.Any])
+    inline def setSearchIcon(value: IconNode): Self = StObject.set(x, "searchIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchIconUndefined: Self = StObject.set(x, "searchIcon", js.undefined)
+    inline def setSearchIconUndefined: Self = StObject.set(x, "searchIcon", js.undefined)
     
-    @scala.inline
-    def setShowLoading(value: Boolean): Self = StObject.set(x, "showLoading", value.asInstanceOf[js.Any])
+    inline def setShowLoading(value: Boolean): Self = StObject.set(x, "showLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLoadingUndefined: Self = StObject.set(x, "showLoading", js.undefined)
+    inline def setShowLoadingUndefined: Self = StObject.set(x, "showLoading", js.undefined)
   }
 }

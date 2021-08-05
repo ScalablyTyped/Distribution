@@ -16,16 +16,13 @@ trait NodeSingularLayout extends StObject {
 }
 object NodeSingularLayout {
   
-  @scala.inline
-  def apply(layoutDimensions: LayoutDimensionOptions => X): NodeSingularLayout = {
+  inline def apply(layoutDimensions: LayoutDimensionOptions => X): NodeSingularLayout = {
     val __obj = js.Dynamic.literal(layoutDimensions = js.Any.fromFunction1(layoutDimensions))
     __obj.asInstanceOf[NodeSingularLayout]
   }
   
-  @scala.inline
-  implicit class NodeSingularLayoutMutableBuilder[Self <: NodeSingularLayout] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSingularLayout](x: Self) {
     
-    @scala.inline
-    def setLayoutDimensions(value: LayoutDimensionOptions => X): Self = StObject.set(x, "layoutDimensions", js.Any.fromFunction1(value))
+    inline def setLayoutDimensions(value: LayoutDimensionOptions => X): Self = StObject.set(x, "layoutDimensions", js.Any.fromFunction1(value))
   }
 }

@@ -14,19 +14,15 @@ trait SeriesStatesNormalOptionsObject extends StObject {
 }
 object SeriesStatesNormalOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesStatesNormalOptionsObject = {
+  inline def apply(): SeriesStatesNormalOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesStatesNormalOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesStatesNormalOptionsObjectMutableBuilder[Self <: SeriesStatesNormalOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesStatesNormalOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
   }
 }

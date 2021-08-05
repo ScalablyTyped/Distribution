@@ -14,25 +14,19 @@ trait IamPolicyAnalysisOutputConfig extends StObject {
 }
 object IamPolicyAnalysisOutputConfig {
   
-  @scala.inline
-  def apply(): IamPolicyAnalysisOutputConfig = {
+  inline def apply(): IamPolicyAnalysisOutputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IamPolicyAnalysisOutputConfig]
   }
   
-  @scala.inline
-  implicit class IamPolicyAnalysisOutputConfigMutableBuilder[Self <: IamPolicyAnalysisOutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IamPolicyAnalysisOutputConfig](x: Self) {
     
-    @scala.inline
-    def setBigqueryDestination(value: GoogleCloudAssetV1BigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
+    inline def setBigqueryDestination(value: GoogleCloudAssetV1BigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
+    inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
-    @scala.inline
-    def setGcsDestination(value: GoogleCloudAssetV1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: GoogleCloudAssetV1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

@@ -25,20 +25,15 @@ object transportMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def sshWithPaths(owner: Remote, payload: String): js.Promise[Transport] = (^.asInstanceOf[js.Dynamic].applyDynamic("sshWithPaths")(owner.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport]]
-    @scala.inline
-    def sshWithPaths(owner: Remote, payload: js.Array[String]): js.Promise[Transport] = (^.asInstanceOf[js.Dynamic].applyDynamic("sshWithPaths")(owner.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport]]
-    @scala.inline
-    def sshWithPaths(owner: Remote, payload: Strarray): js.Promise[Transport] = (^.asInstanceOf[js.Dynamic].applyDynamic("sshWithPaths")(owner.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport]]
+    inline def sshWithPaths(owner: Remote, payload: String): js.Promise[Transport] = (^.asInstanceOf[js.Dynamic].applyDynamic("sshWithPaths")(owner.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport]]
+    inline def sshWithPaths(owner: Remote, payload: js.Array[String]): js.Promise[Transport] = (^.asInstanceOf[js.Dynamic].applyDynamic("sshWithPaths")(owner.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport]]
+    inline def sshWithPaths(owner: Remote, payload: Strarray): js.Promise[Transport] = (^.asInstanceOf[js.Dynamic].applyDynamic("sshWithPaths")(owner.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport]]
     
-    @scala.inline
-    def unregister(prefix: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(prefix.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def unregister(prefix: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(prefix.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     object FLAGS {
       
-      @scala.inline
-      def NONE: `0` = 0.asInstanceOf[`0`]
+      inline def NONE: `0` = 0.asInstanceOf[`0`]
     }
     type FLAGS = `0`
   }

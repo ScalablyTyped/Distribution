@@ -17,34 +17,25 @@ trait ConnectEventData extends StObject {
 }
 object ConnectEventData {
   
-  @scala.inline
-  def apply(): ConnectEventData = {
+  inline def apply(): ConnectEventData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectEventData]
   }
   
-  @scala.inline
-  implicit class ConnectEventDataMutableBuilder[Self <: ConnectEventData] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectEventData](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setIncludeData(value: js.Array[String]): Self = StObject.set(x, "includeData", value.asInstanceOf[js.Any])
+    inline def setIncludeData(value: js.Array[String]): Self = StObject.set(x, "includeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDataUndefined: Self = StObject.set(x, "includeData", js.undefined)
+    inline def setIncludeDataUndefined: Self = StObject.set(x, "includeData", js.undefined)
     
-    @scala.inline
-    def setIncludeDataVarargs(value: String*): Self = StObject.set(x, "includeData", js.Array(value :_*))
+    inline def setIncludeDataVarargs(value: String*): Self = StObject.set(x, "includeData", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

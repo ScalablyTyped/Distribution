@@ -10,16 +10,13 @@ trait DynaTreeCookieOptions extends StObject {
 }
 object DynaTreeCookieOptions {
   
-  @scala.inline
-  def apply(expires: js.Any): DynaTreeCookieOptions = {
+  inline def apply(expires: js.Any): DynaTreeCookieOptions = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeCookieOptions]
   }
   
-  @scala.inline
-  implicit class DynaTreeCookieOptionsMutableBuilder[Self <: DynaTreeCookieOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DynaTreeCookieOptions](x: Self) {
     
-    @scala.inline
-    def setExpires(value: js.Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: js.Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
   }
 }

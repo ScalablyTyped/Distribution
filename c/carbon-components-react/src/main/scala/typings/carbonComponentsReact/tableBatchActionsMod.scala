@@ -40,26 +40,20 @@ object tableBatchActionsMod extends Shortcut {
   }
   object TableBatchActionsProps {
     
-    @scala.inline
-    def apply(onCancel: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit, totalSelected: Double): TableBatchActionsProps = {
+    inline def apply(onCancel: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit, totalSelected: Double): TableBatchActionsProps = {
       val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction1(onCancel), totalSelected = totalSelected.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableBatchActionsProps]
     }
     
-    @scala.inline
-    implicit class TableBatchActionsPropsMutableBuilder[Self <: TableBatchActionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableBatchActionsProps](x: Self) {
       
-      @scala.inline
-      def setOnCancel(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldShowBatchActions(value: Boolean): Self = StObject.set(x, "shouldShowBatchActions", value.asInstanceOf[js.Any])
+      inline def setShouldShowBatchActions(value: Boolean): Self = StObject.set(x, "shouldShowBatchActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldShowBatchActionsUndefined: Self = StObject.set(x, "shouldShowBatchActions", js.undefined)
+      inline def setShouldShowBatchActionsUndefined: Self = StObject.set(x, "shouldShowBatchActions", js.undefined)
       
-      @scala.inline
-      def setTotalSelected(value: Double): Self = StObject.set(x, "totalSelected", value.asInstanceOf[js.Any])
+      inline def setTotalSelected(value: Double): Self = StObject.set(x, "totalSelected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,14 +67,11 @@ object tableBatchActionsMod extends Shortcut {
        with _CarbonTranslationKey
   object TableBatchActionsTranslationKey {
     
-    @scala.inline
-    def carbonDottableDotbatchDotcancel: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotcancel = "carbon.table.batch.cancel".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotcancel]
+    inline def carbonDottableDotbatchDotcancel: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotcancel = "carbon.table.batch.cancel".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotcancel]
     
-    @scala.inline
-    def carbonDottableDotbatchDotitemDotselected: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemDotselected = "carbon.table.batch.item.selected".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemDotselected]
+    inline def carbonDottableDotbatchDotitemDotselected: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemDotselected = "carbon.table.batch.item.selected".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemDotselected]
     
-    @scala.inline
-    def carbonDottableDotbatchDotitemsDotselected: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemsDotselected = "carbon.table.batch.items.selected".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemsDotselected]
+    inline def carbonDottableDotbatchDotitemsDotselected: typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemsDotselected = "carbon.table.batch.items.selected".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotbatchDotitemsDotselected]
   }
   
   type _To = TableBatchActionsFC

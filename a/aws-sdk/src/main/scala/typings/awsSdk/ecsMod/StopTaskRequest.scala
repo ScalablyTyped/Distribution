@@ -23,28 +23,21 @@ trait StopTaskRequest extends StObject {
 }
 object StopTaskRequest {
   
-  @scala.inline
-  def apply(task: String): StopTaskRequest = {
+  inline def apply(task: String): StopTaskRequest = {
     val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopTaskRequest]
   }
   
-  @scala.inline
-  implicit class StopTaskRequestMutableBuilder[Self <: StopTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopTaskRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
   }
 }

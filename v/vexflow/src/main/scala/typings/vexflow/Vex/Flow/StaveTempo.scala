@@ -20,8 +20,7 @@ trait StaveTempo
 }
 object StaveTempo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEndModifier: () => Unit,
     addModifier: () => Unit,
     addToStave: (Stave, Boolean) => StaveModifier,
@@ -42,19 +41,14 @@ object StaveTempo {
     __obj.asInstanceOf[StaveTempo]
   }
   
-  @scala.inline
-  implicit class StaveTempoMutableBuilder[Self <: StaveTempo] (val x: Self) extends AnyVal {
+  extension [Self <: StaveTempo](x: Self) {
     
-    @scala.inline
-    def setDraw(value: (Stave, Double) => StaveTempo): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+    inline def setDraw(value: (Stave, Double) => StaveTempo): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetShiftX(value: Double => StaveTempo): Self = StObject.set(x, "setShiftX", js.Any.fromFunction1(value))
+    inline def setSetShiftX(value: Double => StaveTempo): Self = StObject.set(x, "setShiftX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetShiftY(value: Double => StaveTempo): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
+    inline def setSetShiftY(value: Double => StaveTempo): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTempo(value: Bpm => StaveTempo): Self = StObject.set(x, "setTempo", js.Any.fromFunction1(value))
+    inline def setSetTempo(value: Bpm => StaveTempo): Self = StObject.set(x, "setTempo", js.Any.fromFunction1(value))
   }
 }

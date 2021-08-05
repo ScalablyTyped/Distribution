@@ -103,8 +103,7 @@ trait BackgroundImageUrl extends StObject {
 }
 object BackgroundImageUrl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundImageUrl: Default,
     bannerExternalUrl: String,
     bannerImageUrl: String,
@@ -129,64 +128,44 @@ object BackgroundImageUrl {
     __obj.asInstanceOf[BackgroundImageUrl]
   }
   
-  @scala.inline
-  implicit class BackgroundImageUrlMutableBuilder[Self <: BackgroundImageUrl] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundImageUrl](x: Self) {
     
-    @scala.inline
-    def setBackgroundImageUrl(value: Default): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageUrl(value: Default): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerExternalUrl(value: String): Self = StObject.set(x, "bannerExternalUrl", value.asInstanceOf[js.Any])
+    inline def setBannerExternalUrl(value: String): Self = StObject.set(x, "bannerExternalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerImageUrl(value: String): Self = StObject.set(x, "bannerImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerImageUrl(value: String): Self = StObject.set(x, "bannerImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileExtraHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileExtraHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileHdImageUrl(value: String): Self = StObject.set(x, "bannerMobileHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileImageUrl(value: String): Self = StObject.set(x, "bannerMobileImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileImageUrl(value: String): Self = StObject.set(x, "bannerMobileImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileLowImageUrl(value: String): Self = StObject.set(x, "bannerMobileLowImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileLowImageUrl(value: String): Self = StObject.set(x, "bannerMobileLowImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerMobileMediumImageUrl(value: String): Self = StObject.set(x, "bannerMobileMediumImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerMobileMediumImageUrl(value: String): Self = StObject.set(x, "bannerMobileMediumImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletExtraHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletExtraHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletExtraHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletHdImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletHdImageUrl(value: String): Self = StObject.set(x, "bannerTabletHdImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletImageUrl(value: String): Self = StObject.set(x, "bannerTabletImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletImageUrl(value: String): Self = StObject.set(x, "bannerTabletImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTabletLowImageUrl(value: String): Self = StObject.set(x, "bannerTabletLowImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTabletLowImageUrl(value: String): Self = StObject.set(x, "bannerTabletLowImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerTvImageUrl(value: String): Self = StObject.set(x, "bannerTvImageUrl", value.asInstanceOf[js.Any])
+    inline def setBannerTvImageUrl(value: String): Self = StObject.set(x, "bannerTvImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeBrandedBannerImageImapScript(value: Default): Self = StObject.set(x, "largeBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
+    inline def setLargeBrandedBannerImageImapScript(value: Default): Self = StObject.set(x, "largeBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeBrandedBannerImageUrl(value: Default): Self = StObject.set(x, "largeBrandedBannerImageUrl", value.asInstanceOf[js.Any])
+    inline def setLargeBrandedBannerImageUrl(value: Default): Self = StObject.set(x, "largeBrandedBannerImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallBrandedBannerImageImapScript(value: Default): Self = StObject.set(x, "smallBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
+    inline def setSmallBrandedBannerImageImapScript(value: Default): Self = StObject.set(x, "smallBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallBrandedBannerImageUrl(value: Default): Self = StObject.set(x, "smallBrandedBannerImageUrl", value.asInstanceOf[js.Any])
+    inline def setSmallBrandedBannerImageUrl(value: Default): Self = StObject.set(x, "smallBrandedBannerImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingImageUrl(value: String): Self = StObject.set(x, "trackingImageUrl", value.asInstanceOf[js.Any])
+    inline def setTrackingImageUrl(value: String): Self = StObject.set(x, "trackingImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchIconImageUrl(value: String): Self = StObject.set(x, "watchIconImageUrl", value.asInstanceOf[js.Any])
+    inline def setWatchIconImageUrl(value: String): Self = StObject.set(x, "watchIconImageUrl", value.asInstanceOf[js.Any])
   }
 }

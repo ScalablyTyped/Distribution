@@ -26,8 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object JSXFragment_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[
       JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
     ],
@@ -39,26 +38,20 @@ object JSXFragment_ {
     __obj.asInstanceOf[JSXFragment_]
   }
   
-  @scala.inline
-  implicit class JSXFragment_MutableBuilder[Self <: JSXFragment_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXFragment_](x: Self) {
     
-    @scala.inline
-    def setChildren(
+    inline def setChildren(
       value: js.Array[
           JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setClosingFragment(value: JSXClosingFragment_): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
+    inline def setClosingFragment(value: JSXClosingFragment_): Self = StObject.set(x, "closingFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpeningFragment(value: JSXOpeningFragment_): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
+    inline def setOpeningFragment(value: JSXOpeningFragment_): Self = StObject.set(x, "openingFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: JSXFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

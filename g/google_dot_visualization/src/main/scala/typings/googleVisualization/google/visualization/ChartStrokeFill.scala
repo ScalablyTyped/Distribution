@@ -10,8 +10,7 @@ trait ChartStrokeFill
      with ChartFill
 object ChartStrokeFill {
   
-  @scala.inline
-  def apply(): ChartStrokeFill = {
+  inline def apply(): ChartStrokeFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartStrokeFill]
   }

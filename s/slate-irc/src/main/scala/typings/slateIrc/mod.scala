@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(socket: Socket): Client = ^.asInstanceOf[js.Dynamic].apply(socket.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def apply(socket: Socket): Client = ^.asInstanceOf[js.Dynamic].apply(socket.asInstanceOf[js.Any]).asInstanceOf[Client]
   
   @JSImport("slate-irc", JSImport.Namespace)
   @js.native
@@ -112,20 +111,16 @@ object mod {
   }
   object AwayEvent {
     
-    @scala.inline
-    def apply(message: String, nick: String): AwayEvent = {
+    inline def apply(message: String, nick: String): AwayEvent = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any])
       __obj.asInstanceOf[AwayEvent]
     }
     
-    @scala.inline
-    implicit class AwayEventMutableBuilder[Self <: AwayEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AwayEvent](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,29 +138,22 @@ object mod {
   }
   object DataEvent {
     
-    @scala.inline
-    def apply(command: String, params: String, prefix: String, string: String, trailing: String): DataEvent = {
+    inline def apply(command: String, params: String, prefix: String, string: String, trailing: String): DataEvent = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], trailing = trailing.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataEvent]
     }
     
-    @scala.inline
-    implicit class DataEventMutableBuilder[Self <: DataEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DataEvent](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailing(value: String): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: String): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,23 +167,18 @@ object mod {
   }
   object JoinEvent {
     
-    @scala.inline
-    def apply(channel: String, hostmask: String, nick: String): JoinEvent = {
+    inline def apply(channel: String, hostmask: String, nick: String): JoinEvent = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], hostmask = hostmask.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any])
       __obj.asInstanceOf[JoinEvent]
     }
     
-    @scala.inline
-    implicit class JoinEventMutableBuilder[Self <: JoinEvent] (val x: Self) extends AnyVal {
+    extension [Self <: JoinEvent](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
+      inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,20 +188,16 @@ object mod {
   }
   object MOTDEvent {
     
-    @scala.inline
-    def apply(motd: js.Array[String]): MOTDEvent = {
+    inline def apply(motd: js.Array[String]): MOTDEvent = {
       val __obj = js.Dynamic.literal(motd = motd.asInstanceOf[js.Any])
       __obj.asInstanceOf[MOTDEvent]
     }
     
-    @scala.inline
-    implicit class MOTDEventMutableBuilder[Self <: MOTDEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MOTDEvent](x: Self) {
       
-      @scala.inline
-      def setMotd(value: js.Array[String]): Self = StObject.set(x, "motd", value.asInstanceOf[js.Any])
+      inline def setMotd(value: js.Array[String]): Self = StObject.set(x, "motd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotdVarargs(value: String*): Self = StObject.set(x, "motd", js.Array(value :_*))
+      inline def setMotdVarargs(value: String*): Self = StObject.set(x, "motd", js.Array(value :_*))
     }
   }
   
@@ -234,26 +213,20 @@ object mod {
   }
   object MessageEvent {
     
-    @scala.inline
-    def apply(from: String, hostmask: String, message: String, to: String): MessageEvent = {
+    inline def apply(from: String, hostmask: String, message: String, to: String): MessageEvent = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], hostmask = hostmask.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageEvent]
     }
     
-    @scala.inline
-    implicit class MessageEventMutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MessageEvent](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
+      inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,26 +242,20 @@ object mod {
   }
   object ModeEvent {
     
-    @scala.inline
-    def apply(client: String, mode: String, nick: String, target: String): ModeEvent = {
+    inline def apply(client: String, mode: String, nick: String, target: String): ModeEvent = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModeEvent]
     }
     
-    @scala.inline
-    implicit class ModeEventMutableBuilder[Self <: ModeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ModeEvent](x: Self) {
       
-      @scala.inline
-      def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -302,24 +269,19 @@ object mod {
   }
   object NickEvent {
     
-    @scala.inline
-    def apply(hostmask: String, `new`: String, nick: String): NickEvent = {
+    inline def apply(hostmask: String, `new`: String, nick: String): NickEvent = {
       val __obj = js.Dynamic.literal(hostmask = hostmask.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any])
       __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NickEvent]
     }
     
-    @scala.inline
-    implicit class NickEventMutableBuilder[Self <: NickEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NickEvent](x: Self) {
       
-      @scala.inline
-      def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
+      inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNew(value: String): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+      inline def setNew(value: String): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,26 +295,20 @@ object mod {
   }
   object PartEvent {
     
-    @scala.inline
-    def apply(channels: js.Array[String], hostmask: String, nick: String): PartEvent = {
+    inline def apply(channels: js.Array[String], hostmask: String, nick: String): PartEvent = {
       val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], hostmask = hostmask.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartEvent]
     }
     
-    @scala.inline
-    implicit class PartEventMutableBuilder[Self <: PartEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PartEvent](x: Self) {
       
-      @scala.inline
-      def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
       
-      @scala.inline
-      def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
+      inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     }
   }
   
@@ -366,23 +322,18 @@ object mod {
   }
   object QuitEvent {
     
-    @scala.inline
-    def apply(hostmask: String, message: String, nick: String): QuitEvent = {
+    inline def apply(hostmask: String, message: String, nick: String): QuitEvent = {
       val __obj = js.Dynamic.literal(hostmask = hostmask.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuitEvent]
     }
     
-    @scala.inline
-    implicit class QuitEventMutableBuilder[Self <: QuitEvent] (val x: Self) extends AnyVal {
+    extension [Self <: QuitEvent](x: Self) {
       
-      @scala.inline
-      def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
+      inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     }
   }
   
@@ -398,26 +349,20 @@ object mod {
   }
   object TopicEvent {
     
-    @scala.inline
-    def apply(channel: String, hostmask: String, nick: String, topic: String): TopicEvent = {
+    inline def apply(channel: String, hostmask: String, nick: String, topic: String): TopicEvent = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], hostmask = hostmask.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopicEvent]
     }
     
-    @scala.inline
-    implicit class TopicEventMutableBuilder[Self <: TopicEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TopicEvent](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
+      inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+      inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
 }

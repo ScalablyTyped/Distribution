@@ -17,6 +17,5 @@ object TreeBindingUtils {
     * @param oNewSection the section which should be merged into aNewSections
     * @returns a new array containing all sections from aSections merged with oNewSection
     */
-  @scala.inline
-  def mergeSections(aSections: js.Array[js.Any], oNewSection: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSections")(aSections.asInstanceOf[js.Any], oNewSection.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def mergeSections(aSections: js.Array[js.Any], oNewSection: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSections")(aSections.asInstanceOf[js.Any], oNewSection.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

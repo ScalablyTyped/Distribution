@@ -83,9 +83,9 @@ object prometheusmetricsMod {
       */
     def addTimer(opts: CounterOpts): Histogram[String] = js.native
     
-    var collectors: js.Any = js.native
+    /* private */ var collectors: js.Any = js.native
     
-    var counters: js.Any = js.native
+    /* private */ var counters: js.Any = js.native
     
     /**
       * Increments the value of a counter metric
@@ -96,7 +96,7 @@ object prometheusmetricsMod {
     
     def refresh(): Unit = js.native
     
-    var register: js.Any = js.native
+    /* private */ var register: js.Any = js.native
     
     /**
       * Registers some exported metrics that expose counts of various kinds of
@@ -122,7 +122,7 @@ object prometheusmetricsMod {
       */
     def startTimer(name: String, labels: StringDictionary[String]): js.Function1[/* labels */ js.UndefOr[Partial[Record[String, String | Double]]], Unit] = js.native
     
-    var timers: js.Any = js.native
+    /* private */ var timers: js.Any = js.native
   }
   /* static members */
   object PrometheusMetrics {
@@ -137,8 +137,7 @@ object prometheusmetricsMod {
         /* counterPeriods */ js.UndefOr[js.Array[String]], 
         typings.matrixAppserviceBridge.agecountersMod.AgeCounters
       ] = js.native
-    @scala.inline
-    def AgeCounters_=(x: Instantiable1[/* counterPeriods */ js.UndefOr[js.Array[String]], AgeCounters]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgeCounters")(x.asInstanceOf[js.Any])
+    inline def AgeCounters_=(x: Instantiable1[/* counterPeriods */ js.UndefOr[js.Array[String]], AgeCounters]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgeCounters")(x.asInstanceOf[js.Any])
   }
   
   trait BridgeGaugesCounts extends StObject {
@@ -161,62 +160,44 @@ object prometheusmetricsMod {
   }
   object BridgeGaugesCounts {
     
-    @scala.inline
-    def apply(): BridgeGaugesCounts = {
+    inline def apply(): BridgeGaugesCounts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BridgeGaugesCounts]
     }
     
-    @scala.inline
-    implicit class BridgeGaugesCountsMutableBuilder[Self <: BridgeGaugesCounts] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeGaugesCounts](x: Self) {
       
-      @scala.inline
-      def setMatrixGhosts(value: Double): Self = StObject.set(x, "matrixGhosts", value.asInstanceOf[js.Any])
+      inline def setMatrixGhosts(value: Double): Self = StObject.set(x, "matrixGhosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixGhostsUndefined: Self = StObject.set(x, "matrixGhosts", js.undefined)
+      inline def setMatrixGhostsUndefined: Self = StObject.set(x, "matrixGhosts", js.undefined)
       
-      @scala.inline
-      def setMatrixRoomConfigs(value: Double): Self = StObject.set(x, "matrixRoomConfigs", value.asInstanceOf[js.Any])
+      inline def setMatrixRoomConfigs(value: Double): Self = StObject.set(x, "matrixRoomConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixRoomConfigsUndefined: Self = StObject.set(x, "matrixRoomConfigs", js.undefined)
+      inline def setMatrixRoomConfigsUndefined: Self = StObject.set(x, "matrixRoomConfigs", js.undefined)
       
-      @scala.inline
-      def setMatrixRoomsByAge(value: AgeCounters): Self = StObject.set(x, "matrixRoomsByAge", value.asInstanceOf[js.Any])
+      inline def setMatrixRoomsByAge(value: AgeCounters): Self = StObject.set(x, "matrixRoomsByAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixRoomsByAgeUndefined: Self = StObject.set(x, "matrixRoomsByAge", js.undefined)
+      inline def setMatrixRoomsByAgeUndefined: Self = StObject.set(x, "matrixRoomsByAge", js.undefined)
       
-      @scala.inline
-      def setMatrixUsersByAge(value: AgeCounters): Self = StObject.set(x, "matrixUsersByAge", value.asInstanceOf[js.Any])
+      inline def setMatrixUsersByAge(value: AgeCounters): Self = StObject.set(x, "matrixUsersByAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixUsersByAgeUndefined: Self = StObject.set(x, "matrixUsersByAge", js.undefined)
+      inline def setMatrixUsersByAgeUndefined: Self = StObject.set(x, "matrixUsersByAge", js.undefined)
       
-      @scala.inline
-      def setRemoteGhosts(value: Double): Self = StObject.set(x, "remoteGhosts", value.asInstanceOf[js.Any])
+      inline def setRemoteGhosts(value: Double): Self = StObject.set(x, "remoteGhosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteGhostsUndefined: Self = StObject.set(x, "remoteGhosts", js.undefined)
+      inline def setRemoteGhostsUndefined: Self = StObject.set(x, "remoteGhosts", js.undefined)
       
-      @scala.inline
-      def setRemoteRoomConfigs(value: Double): Self = StObject.set(x, "remoteRoomConfigs", value.asInstanceOf[js.Any])
+      inline def setRemoteRoomConfigs(value: Double): Self = StObject.set(x, "remoteRoomConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteRoomConfigsUndefined: Self = StObject.set(x, "remoteRoomConfigs", js.undefined)
+      inline def setRemoteRoomConfigsUndefined: Self = StObject.set(x, "remoteRoomConfigs", js.undefined)
       
-      @scala.inline
-      def setRemoteRoomsByAge(value: AgeCounters): Self = StObject.set(x, "remoteRoomsByAge", value.asInstanceOf[js.Any])
+      inline def setRemoteRoomsByAge(value: AgeCounters): Self = StObject.set(x, "remoteRoomsByAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteRoomsByAgeUndefined: Self = StObject.set(x, "remoteRoomsByAge", js.undefined)
+      inline def setRemoteRoomsByAgeUndefined: Self = StObject.set(x, "remoteRoomsByAge", js.undefined)
       
-      @scala.inline
-      def setRemoteUsersByAge(value: AgeCounters): Self = StObject.set(x, "remoteUsersByAge", value.asInstanceOf[js.Any])
+      inline def setRemoteUsersByAge(value: AgeCounters): Self = StObject.set(x, "remoteUsersByAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUsersByAgeUndefined: Self = StObject.set(x, "remoteUsersByAge", js.undefined)
+      inline def setRemoteUsersByAgeUndefined: Self = StObject.set(x, "remoteUsersByAge", js.undefined)
     }
   }
   
@@ -234,35 +215,26 @@ object prometheusmetricsMod {
   }
   object CounterOpts {
     
-    @scala.inline
-    def apply(help: String, name: String): CounterOpts = {
+    inline def apply(help: String, name: String): CounterOpts = {
       val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CounterOpts]
     }
     
-    @scala.inline
-    implicit class CounterOptsMutableBuilder[Self <: CounterOpts] (val x: Self) extends AnyVal {
+    extension [Self <: CounterOpts](x: Self) {
       
-      @scala.inline
-      def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     }
   }
   
@@ -280,41 +252,30 @@ object prometheusmetricsMod {
   }
   object GagueOpts {
     
-    @scala.inline
-    def apply(help: String, name: String): GagueOpts = {
+    inline def apply(help: String, name: String): GagueOpts = {
       val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GagueOpts]
     }
     
-    @scala.inline
-    implicit class GagueOptsMutableBuilder[Self <: GagueOpts] (val x: Self) extends AnyVal {
+    extension [Self <: GagueOpts](x: Self) {
       
-      @scala.inline
-      def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setRefresh(value: /* gauge */ Gauge[String] => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+      inline def setRefresh(value: /* gauge */ Gauge[String] => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+      inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     }
   }
 }

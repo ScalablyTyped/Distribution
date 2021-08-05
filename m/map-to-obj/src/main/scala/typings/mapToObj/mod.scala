@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[K /* <: String | Double | js.Symbol */, V](map: Map[K, V]): Record[K, V] = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[Record[K, V]]
+  inline def apply[K /* <: String | Double | js.Symbol */, V](map: Map[K, V]): Record[K, V] = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[Record[K, V]]
   
   @JSImport("map-to-obj", JSImport.Namespace)
   @js.native

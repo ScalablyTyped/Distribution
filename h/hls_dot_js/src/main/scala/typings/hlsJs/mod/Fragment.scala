@@ -56,8 +56,7 @@ trait Fragment extends StObject {
 }
 object Fragment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cc: Double,
     duration: Double,
     level: Double,
@@ -72,37 +71,26 @@ object Fragment {
     __obj.asInstanceOf[Fragment]
   }
   
-  @scala.inline
-  implicit class FragmentMutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
+  extension [Self <: Fragment](x: Self) {
     
-    @scala.inline
-    def setCc(value: Double): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: Double): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramDateTime(value: Double): Self = StObject.set(x, "programDateTime", value.asInstanceOf[js.Any])
+    inline def setProgramDateTime(value: Double): Self = StObject.set(x, "programDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSn(value: Double): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
+    inline def setSn(value: Double): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListVarargs(value: js.Array[String]*): Self = StObject.set(x, "tagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: js.Array[String]*): Self = StObject.set(x, "tagList", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

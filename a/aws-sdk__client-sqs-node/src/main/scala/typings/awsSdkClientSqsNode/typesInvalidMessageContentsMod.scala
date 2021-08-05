@@ -16,17 +16,14 @@ object typesInvalidMessageContentsMod {
   }
   object InvalidMessageContents {
     
-    @scala.inline
-    def apply(): InvalidMessageContents = {
+    inline def apply(): InvalidMessageContents = {
       val __obj = js.Dynamic.literal(name = "InvalidMessageContents")
       __obj.asInstanceOf[InvalidMessageContents]
     }
     
-    @scala.inline
-    implicit class InvalidMessageContentsMutableBuilder[Self <: InvalidMessageContents] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidMessageContents](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

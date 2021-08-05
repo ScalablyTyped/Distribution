@@ -21,8 +21,7 @@ trait OleDragSource
      with XComponent
 object OleDragSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,

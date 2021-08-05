@@ -18,16 +18,13 @@ trait ASPxClientBeginCallbackEventArgs
 }
 object ASPxClientBeginCallbackEventArgs {
   
-  @scala.inline
-  def apply(command: String): ASPxClientBeginCallbackEventArgs = {
+  inline def apply(command: String): ASPxClientBeginCallbackEventArgs = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientBeginCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientBeginCallbackEventArgsMutableBuilder[Self <: ASPxClientBeginCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientBeginCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

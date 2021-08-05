@@ -36,97 +36,67 @@ trait RangeSliderOptions extends StObject {
 }
 object RangeSliderOptions {
   
-  @scala.inline
-  def apply(): RangeSliderOptions = {
+  inline def apply(): RangeSliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeSliderOptions]
   }
   
-  @scala.inline
-  implicit class RangeSliderOptionsMutableBuilder[Self <: RangeSliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RangeSliderOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: /* e */ RangeSliderChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ RangeSliderChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setLargeStep(value: Double): Self = StObject.set(x, "largeStep", value.asInstanceOf[js.Any])
+    inline def setLargeStep(value: Double): Self = StObject.set(x, "largeStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeStepUndefined: Self = StObject.set(x, "largeStep", js.undefined)
+    inline def setLargeStepUndefined: Self = StObject.set(x, "largeStep", js.undefined)
     
-    @scala.inline
-    def setLeftDragHandleTitle(value: String): Self = StObject.set(x, "leftDragHandleTitle", value.asInstanceOf[js.Any])
+    inline def setLeftDragHandleTitle(value: String): Self = StObject.set(x, "leftDragHandleTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftDragHandleTitleUndefined: Self = StObject.set(x, "leftDragHandleTitle", js.undefined)
+    inline def setLeftDragHandleTitleUndefined: Self = StObject.set(x, "leftDragHandleTitle", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setRightDragHandleTitle(value: String): Self = StObject.set(x, "rightDragHandleTitle", value.asInstanceOf[js.Any])
+    inline def setRightDragHandleTitle(value: String): Self = StObject.set(x, "rightDragHandleTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightDragHandleTitleUndefined: Self = StObject.set(x, "rightDragHandleTitle", js.undefined)
+    inline def setRightDragHandleTitleUndefined: Self = StObject.set(x, "rightDragHandleTitle", js.undefined)
     
-    @scala.inline
-    def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
+    inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionEndUndefined: Self = StObject.set(x, "selectionEnd", js.undefined)
+    inline def setSelectionEndUndefined: Self = StObject.set(x, "selectionEnd", js.undefined)
     
-    @scala.inline
-    def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
+    inline def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionStartUndefined: Self = StObject.set(x, "selectionStart", js.undefined)
+    inline def setSelectionStartUndefined: Self = StObject.set(x, "selectionStart", js.undefined)
     
-    @scala.inline
-    def setSlide(value: /* e */ RangeSliderSlideEvent => Unit): Self = StObject.set(x, "slide", js.Any.fromFunction1(value))
+    inline def setSlide(value: /* e */ RangeSliderSlideEvent => Unit): Self = StObject.set(x, "slide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
+    inline def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
     
-    @scala.inline
-    def setSmallStep(value: Double): Self = StObject.set(x, "smallStep", value.asInstanceOf[js.Any])
+    inline def setSmallStep(value: Double): Self = StObject.set(x, "smallStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallStepUndefined: Self = StObject.set(x, "smallStep", js.undefined)
+    inline def setSmallStepUndefined: Self = StObject.set(x, "smallStep", js.undefined)
     
-    @scala.inline
-    def setTickPlacement(value: String): Self = StObject.set(x, "tickPlacement", value.asInstanceOf[js.Any])
+    inline def setTickPlacement(value: String): Self = StObject.set(x, "tickPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickPlacementUndefined: Self = StObject.set(x, "tickPlacement", js.undefined)
+    inline def setTickPlacementUndefined: Self = StObject.set(x, "tickPlacement", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: RangeSliderTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: RangeSliderTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

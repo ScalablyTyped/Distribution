@@ -16,8 +16,7 @@ trait EndDate extends StObject {
 }
 object EndDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endDate: String => Unit,
     isFocus: Boolean => Unit,
     receivedFocusName: String => Unit,
@@ -27,19 +26,14 @@ object EndDate {
     __obj.asInstanceOf[EndDate]
   }
   
-  @scala.inline
-  implicit class EndDateMutableBuilder[Self <: EndDate] (val x: Self) extends AnyVal {
+  extension [Self <: EndDate](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String => Unit): Self = StObject.set(x, "endDate", js.Any.fromFunction1(value))
+    inline def setEndDate(value: String => Unit): Self = StObject.set(x, "endDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFocus(value: Boolean => Unit): Self = StObject.set(x, "isFocus", js.Any.fromFunction1(value))
+    inline def setIsFocus(value: Boolean => Unit): Self = StObject.set(x, "isFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReceivedFocusName(value: String => Unit): Self = StObject.set(x, "receivedFocusName", js.Any.fromFunction1(value))
+    inline def setReceivedFocusName(value: String => Unit): Self = StObject.set(x, "receivedFocusName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartDate(value: String => Unit): Self = StObject.set(x, "startDate", js.Any.fromFunction1(value))
+    inline def setStartDate(value: String => Unit): Self = StObject.set(x, "startDate", js.Any.fromFunction1(value))
   }
 }

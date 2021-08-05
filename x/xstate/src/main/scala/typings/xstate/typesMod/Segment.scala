@@ -20,19 +20,15 @@ trait Segment[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object Segment {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](event: TEvent, state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Segment[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](event: TEvent, state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Segment[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class SegmentMutableBuilder[Self <: Segment[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Segment[TContext, TEvent])) extends AnyVal {
+  extension [Self <: Segment[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (Segment[TContext, TEvent])) {
     
-    @scala.inline
-    def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

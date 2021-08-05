@@ -23,28 +23,21 @@ trait UpdateMLModelInput extends StObject {
 }
 object UpdateMLModelInput {
   
-  @scala.inline
-  def apply(MLModelId: EntityId): UpdateMLModelInput = {
+  inline def apply(MLModelId: EntityId): UpdateMLModelInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMLModelInput]
   }
   
-  @scala.inline
-  implicit class UpdateMLModelInputMutableBuilder[Self <: UpdateMLModelInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMLModelInput](x: Self) {
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelName(value: EntityName): Self = StObject.set(x, "MLModelName", value.asInstanceOf[js.Any])
+    inline def setMLModelName(value: EntityName): Self = StObject.set(x, "MLModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelNameUndefined: Self = StObject.set(x, "MLModelName", js.undefined)
+    inline def setMLModelNameUndefined: Self = StObject.set(x, "MLModelName", js.undefined)
     
-    @scala.inline
-    def setScoreThreshold(value: ScoreThreshold): Self = StObject.set(x, "ScoreThreshold", value.asInstanceOf[js.Any])
+    inline def setScoreThreshold(value: ScoreThreshold): Self = StObject.set(x, "ScoreThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreThresholdUndefined: Self = StObject.set(x, "ScoreThreshold", js.undefined)
+    inline def setScoreThresholdUndefined: Self = StObject.set(x, "ScoreThreshold", js.undefined)
   }
 }

@@ -15,23 +15,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClock(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")().asInstanceOf[Clock]
-  @scala.inline
-  def createClock(now: Double): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[Clock]
-  @scala.inline
-  def createClock(now: Double, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
-  @scala.inline
-  def createClock(now: Unit, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
-  @scala.inline
-  def createClock(now: Date): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[Clock]
-  @scala.inline
-  def createClock(now: Date, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
+  inline def createClock(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")().asInstanceOf[Clock]
+  inline def createClock(now: Double): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[Clock]
+  inline def createClock(now: Double, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
+  inline def createClock(now: Unit, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
+  inline def createClock(now: Date): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[Clock]
+  inline def createClock(now: Date, loopLimit: Double): Clock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[Clock]
   
-  @scala.inline
-  def install(): InstalledClock = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[InstalledClock]
-  @scala.inline
-  def install(opts: FakeTimerInstallOpts): InstalledClock = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any]).asInstanceOf[InstalledClock]
+  inline def install(): InstalledClock = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[InstalledClock]
+  inline def install(opts: FakeTimerInstallOpts): InstalledClock = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any]).asInstanceOf[InstalledClock]
   
   object timers extends Shortcut {
     
@@ -132,8 +124,7 @@ object mod {
     override def _to: GlobalTimers[TimerId] = ^
   }
   
-  @scala.inline
-  def withGlobal(global: js.Object): FakeTimerWithContext = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobal")(global.asInstanceOf[js.Any]).asInstanceOf[FakeTimerWithContext]
+  inline def withGlobal(global: js.Object): FakeTimerWithContext = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobal")(global.asInstanceOf[js.Any]).asInstanceOf[FakeTimerWithContext]
   
   @js.native
   trait BrowserClock
@@ -315,44 +306,31 @@ object mod {
   trait FakeMethod extends StObject
   object FakeMethod {
     
-    @scala.inline
-    def Date: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.Date = "Date".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.Date]
+    inline def Date: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.Date = "Date".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.Date]
     
-    @scala.inline
-    def cancelAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame]
+    inline def cancelAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelAnimationFrame]
     
-    @scala.inline
-    def cancelIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback = "cancelIdleCallback".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback]
+    inline def cancelIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback = "cancelIdleCallback".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.cancelIdleCallback]
     
-    @scala.inline
-    def clearImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearImmediate = "clearImmediate".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearImmediate]
+    inline def clearImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearImmediate = "clearImmediate".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearImmediate]
     
-    @scala.inline
-    def clearInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearInterval = "clearInterval".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearInterval]
+    inline def clearInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearInterval = "clearInterval".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearInterval]
     
-    @scala.inline
-    def clearTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearTimeout = "clearTimeout".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearTimeout]
+    inline def clearTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearTimeout = "clearTimeout".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.clearTimeout]
     
-    @scala.inline
-    def hrtime: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime = "hrtime".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime]
+    inline def hrtime: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime = "hrtime".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.hrtime]
     
-    @scala.inline
-    def nextTick: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick = "nextTick".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick]
+    inline def nextTick: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick = "nextTick".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.nextTick]
     
-    @scala.inline
-    def requestAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame = "requestAnimationFrame".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame]
+    inline def requestAnimationFrame: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame = "requestAnimationFrame".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestAnimationFrame]
     
-    @scala.inline
-    def requestIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback = "requestIdleCallback".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback]
+    inline def requestIdleCallback: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback = "requestIdleCallback".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.requestIdleCallback]
     
-    @scala.inline
-    def setImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setImmediate = "setImmediate".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setImmediate]
+    inline def setImmediate: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setImmediate = "setImmediate".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setImmediate]
     
-    @scala.inline
-    def setInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setInterval = "setInterval".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setInterval]
+    inline def setInterval: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setInterval = "setInterval".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setInterval]
     
-    @scala.inline
-    def setTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setTimeout = "setTimeout".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setTimeout]
+    inline def setTimeout: typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setTimeout = "setTimeout".asInstanceOf[typings.sinonjsFakeTimers.sinonjsFakeTimersStrings.setTimeout]
   }
   
   trait FakeTimerInstallOpts extends StObject {
@@ -392,53 +370,38 @@ object mod {
   }
   object FakeTimerInstallOpts {
     
-    @scala.inline
-    def apply(): FakeTimerInstallOpts = {
+    inline def apply(): FakeTimerInstallOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FakeTimerInstallOpts]
     }
     
-    @scala.inline
-    implicit class FakeTimerInstallOptsMutableBuilder[Self <: FakeTimerInstallOpts] (val x: Self) extends AnyVal {
+    extension [Self <: FakeTimerInstallOpts](x: Self) {
       
-      @scala.inline
-      def setAdvanceTimeDelta(value: Double): Self = StObject.set(x, "advanceTimeDelta", value.asInstanceOf[js.Any])
+      inline def setAdvanceTimeDelta(value: Double): Self = StObject.set(x, "advanceTimeDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvanceTimeDeltaUndefined: Self = StObject.set(x, "advanceTimeDelta", js.undefined)
+      inline def setAdvanceTimeDeltaUndefined: Self = StObject.set(x, "advanceTimeDelta", js.undefined)
       
-      @scala.inline
-      def setLoopLimit(value: Double): Self = StObject.set(x, "loopLimit", value.asInstanceOf[js.Any])
+      inline def setLoopLimit(value: Double): Self = StObject.set(x, "loopLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopLimitUndefined: Self = StObject.set(x, "loopLimit", js.undefined)
+      inline def setLoopLimitUndefined: Self = StObject.set(x, "loopLimit", js.undefined)
       
-      @scala.inline
-      def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
+      inline def setShouldAdvanceTime(value: Boolean): Self = StObject.set(x, "shouldAdvanceTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
+      inline def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setToFake(value: js.Array[FakeMethod]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
+      inline def setToFake(value: js.Array[FakeMethod]): Self = StObject.set(x, "toFake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
+      inline def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
       
-      @scala.inline
-      def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value :_*))
+      inline def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value :_*))
     }
   }
   
@@ -525,8 +488,7 @@ object mod {
   }
   object GlobalTimers {
     
-    @scala.inline
-    def apply[TTimerId /* <: TimerId */](
+    inline def apply[TTimerId /* <: TimerId */](
       Date: DateConstructor,
       clearImmediate: TTimerId => Unit,
       clearInterval: TTimerId => Unit,
@@ -539,29 +501,21 @@ object mod {
       __obj.asInstanceOf[GlobalTimers[TTimerId]]
     }
     
-    @scala.inline
-    implicit class GlobalTimersMutableBuilder[Self <: GlobalTimers[?], TTimerId /* <: TimerId */] (val x: Self & GlobalTimers[TTimerId]) extends AnyVal {
+    extension [Self <: GlobalTimers[?], TTimerId /* <: TimerId */](x: Self & GlobalTimers[TTimerId]) {
       
-      @scala.inline
-      def setClearImmediate(value: TTimerId => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
+      inline def setClearImmediate(value: TTimerId => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearInterval(value: TTimerId => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
+      inline def setClearInterval(value: TTimerId => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearTimeout(value: TTimerId => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: TTimerId => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDate(value: DateConstructor): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+      inline def setDate(value: DateConstructor): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetImmediate(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
+      inline def setSetImmediate(value: (js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetInterval(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
+      inline def setSetInterval(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetTimeout(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
+      inline def setSetTimeout(value: (js.Function1[/* repeated */ js.Any, Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
     }
   }
   
@@ -579,23 +533,18 @@ object mod {
   }
   object InstalledMethods {
     
-    @scala.inline
-    def apply(methods: js.Array[FakeMethod], uninstall: () => Unit): InstalledMethods = {
+    inline def apply(methods: js.Array[FakeMethod], uninstall: () => Unit): InstalledMethods = {
       val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], uninstall = js.Any.fromFunction0(uninstall))
       __obj.asInstanceOf[InstalledMethods]
     }
     
-    @scala.inline
-    implicit class InstalledMethodsMutableBuilder[Self <: InstalledMethods] (val x: Self) extends AnyVal {
+    extension [Self <: InstalledMethods](x: Self) {
       
-      @scala.inline
-      def setMethods(value: js.Array[FakeMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[FakeMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setUninstall(value: () => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction0(value))
+      inline def setUninstall(value: () => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction0(value))
     }
   }
   
@@ -644,20 +593,16 @@ object mod {
   }
   object NodeTimer {
     
-    @scala.inline
-    def apply(ref: () => Unit, unref: () => Unit): NodeTimer = {
+    inline def apply(ref: () => Unit, unref: () => Unit): NodeTimer = {
       val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), unref = js.Any.fromFunction0(unref))
       __obj.asInstanceOf[NodeTimer]
     }
     
-    @scala.inline
-    implicit class NodeTimerMutableBuilder[Self <: NodeTimer] (val x: Self) extends AnyVal {
+    extension [Self <: NodeTimer](x: Self) {
       
-      @scala.inline
-      def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
+      inline def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
     }
   }
   

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleInterpolation extends StObject
 object styleInterpolation {
   
-  @scala.inline
-  def styleInterpolationBCH: `2` = 2.asInstanceOf[`2`]
+  inline def styleInterpolationBCH: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleInterpolationNN: `1` = 1.asInstanceOf[`1`]
+  inline def styleInterpolationNN: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleInterpolationNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleInterpolationNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleInterpolation_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleInterpolation_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

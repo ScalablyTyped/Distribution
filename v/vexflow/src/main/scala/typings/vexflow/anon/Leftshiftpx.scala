@@ -16,28 +16,21 @@ trait Leftshiftpx extends StObject {
 }
 object Leftshiftpx {
   
-  @scala.inline
-  def apply(left_shift_px: Double, right_shift_px: Double, y_shift: Double): Leftshiftpx = {
+  inline def apply(left_shift_px: Double, right_shift_px: Double, y_shift: Double): Leftshiftpx = {
     val __obj = js.Dynamic.literal(left_shift_px = left_shift_px.asInstanceOf[js.Any], right_shift_px = right_shift_px.asInstanceOf[js.Any], y_shift = y_shift.asInstanceOf[js.Any])
     __obj.asInstanceOf[Leftshiftpx]
   }
   
-  @scala.inline
-  implicit class LeftshiftpxMutableBuilder[Self <: Leftshiftpx] (val x: Self) extends AnyVal {
+  extension [Self <: Leftshiftpx](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft_shift_px(value: Double): Self = StObject.set(x, "left_shift_px", value.asInstanceOf[js.Any])
+    inline def setLeft_shift_px(value: Double): Self = StObject.set(x, "left_shift_px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight_shift_px(value: Double): Self = StObject.set(x, "right_shift_px", value.asInstanceOf[js.Any])
+    inline def setRight_shift_px(value: Double): Self = StObject.set(x, "right_shift_px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY_shift(value: Double): Self = StObject.set(x, "y_shift", value.asInstanceOf[js.Any])
+    inline def setY_shift(value: Double): Self = StObject.set(x, "y_shift", value.asInstanceOf[js.Any])
   }
 }

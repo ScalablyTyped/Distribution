@@ -38,40 +38,29 @@ trait DragDropPositionObject extends StObject {
 }
 object DragDropPositionObject {
   
-  @scala.inline
-  def apply(chartX: Double, chartY: Double, points: Dictionary[Dictionary[Double]]): DragDropPositionObject = {
+  inline def apply(chartX: Double, chartY: Double, points: Dictionary[Dictionary[Double]]): DragDropPositionObject = {
     val __obj = js.Dynamic.literal(chartX = chartX.asInstanceOf[js.Any], chartY = chartY.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragDropPositionObject]
   }
   
-  @scala.inline
-  implicit class DragDropPositionObjectMutableBuilder[Self <: DragDropPositionObject] (val x: Self) extends AnyVal {
+  extension [Self <: DragDropPositionObject](x: Self) {
     
-    @scala.inline
-    def setChartX(value: Double): Self = StObject.set(x, "chartX", value.asInstanceOf[js.Any])
+    inline def setChartX(value: Double): Self = StObject.set(x, "chartX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartY(value: Double): Self = StObject.set(x, "chartY", value.asInstanceOf[js.Any])
+    inline def setChartY(value: Double): Self = StObject.set(x, "chartY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuideBox(value: BBoxObject): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
+    inline def setGuideBox(value: BBoxObject): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
+    inline def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
     
-    @scala.inline
-    def setPoints(value: Dictionary[Dictionary[Double]]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Dictionary[Dictionary[Double]]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevdX(value: Double): Self = StObject.set(x, "prevdX", value.asInstanceOf[js.Any])
+    inline def setPrevdX(value: Double): Self = StObject.set(x, "prevdX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevdXUndefined: Self = StObject.set(x, "prevdX", js.undefined)
+    inline def setPrevdXUndefined: Self = StObject.set(x, "prevdX", js.undefined)
     
-    @scala.inline
-    def setPrevdY(value: Double): Self = StObject.set(x, "prevdY", value.asInstanceOf[js.Any])
+    inline def setPrevdY(value: Double): Self = StObject.set(x, "prevdY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevdYUndefined: Self = StObject.set(x, "prevdY", js.undefined)
+    inline def setPrevdYUndefined: Self = StObject.set(x, "prevdY", js.undefined)
   }
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxOutgoingArchive Class */
 @JSGlobal("FAXCOMEXLib.FaxOutgoingArchive")
 @js.native
-class FaxOutgoingArchive protected ()
+/* private */ class FaxOutgoingArchive ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxOutgoingArchive

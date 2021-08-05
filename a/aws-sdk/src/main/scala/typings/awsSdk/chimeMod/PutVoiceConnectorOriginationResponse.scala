@@ -13,19 +13,15 @@ trait PutVoiceConnectorOriginationResponse extends StObject {
 }
 object PutVoiceConnectorOriginationResponse {
   
-  @scala.inline
-  def apply(): PutVoiceConnectorOriginationResponse = {
+  inline def apply(): PutVoiceConnectorOriginationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutVoiceConnectorOriginationResponse]
   }
   
-  @scala.inline
-  implicit class PutVoiceConnectorOriginationResponseMutableBuilder[Self <: PutVoiceConnectorOriginationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutVoiceConnectorOriginationResponse](x: Self) {
     
-    @scala.inline
-    def setOrigination(value: Origination): Self = StObject.set(x, "Origination", value.asInstanceOf[js.Any])
+    inline def setOrigination(value: Origination): Self = StObject.set(x, "Origination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginationUndefined: Self = StObject.set(x, "Origination", js.undefined)
+    inline def setOriginationUndefined: Self = StObject.set(x, "Origination", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait MouseEventArgs
      with IMouseEventArgs
 object MouseEventArgs {
   
-  @scala.inline
-  def apply(mouseDelta: MouseDelta): MouseEventArgs = {
+  inline def apply(mouseDelta: MouseDelta): MouseEventArgs = {
     val __obj = js.Dynamic.literal(mouseDelta = mouseDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseEventArgs]
   }

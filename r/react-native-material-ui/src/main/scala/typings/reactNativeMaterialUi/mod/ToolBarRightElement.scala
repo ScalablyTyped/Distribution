@@ -14,28 +14,21 @@ trait ToolBarRightElement extends StObject {
 }
 object ToolBarRightElement {
   
-  @scala.inline
-  def apply(): ToolBarRightElement = {
+  inline def apply(): ToolBarRightElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolBarRightElement]
   }
   
-  @scala.inline
-  implicit class ToolBarRightElementMutableBuilder[Self <: ToolBarRightElement] (val x: Self) extends AnyVal {
+  extension [Self <: ToolBarRightElement](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[Element | String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[Element | String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: (Element | String)*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (Element | String)*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setMenu(value: Labels): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: Labels): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
   }
 }

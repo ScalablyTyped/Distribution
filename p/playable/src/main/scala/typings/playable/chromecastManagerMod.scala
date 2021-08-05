@@ -19,28 +19,28 @@ object chromecastManagerMod {
        with ChromecastManager {
     def this(hasEngineEventEmitter: Engine) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindToContextEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _context: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initCastContext: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _insertCastCallback: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onCastStateChange: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onSessionStateChange: js.Any = js.native
     
     /* CompleteClass */
@@ -62,20 +62,17 @@ object chromecastManagerMod {
     @JSImport("playable/dist/src/modules/chromecast-manager/chromecast-manager", "default._chromecastInited")
     @js.native
     def _chromecastInited: Boolean = js.native
-    @scala.inline
-    def _chromecastInited_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_chromecastInited")(x.asInstanceOf[js.Any])
+    inline def _chromecastInited_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_chromecastInited")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/chromecast-manager/chromecast-manager", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/chromecast-manager/chromecast-manager", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -140,26 +137,25 @@ object chromecastManagerMod {
     extends StObject
        with IChromecastManager {
     
-    var _bindToContextEvents: js.Any
+    /* private */ var _bindToContextEvents: js.Any
     
-    var _context: js.Any
+    /* private */ var _context: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _initCastContext: js.Any
+    /* private */ var _initCastContext: js.Any
     
-    var _insertCastCallback: js.Any
+    /* private */ var _insertCastCallback: js.Any
     
-    var _onCastStateChange: js.Any
+    /* private */ var _onCastStateChange: js.Any
     
-    var _onSessionStateChange: js.Any
+    /* private */ var _onSessionStateChange: js.Any
   }
   object ChromecastManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindToContextEvents: js.Any,
       _context: js.Any,
       _engine: js.Any,
@@ -176,32 +172,23 @@ object chromecastManagerMod {
       __obj.asInstanceOf[ChromecastManager]
     }
     
-    @scala.inline
-    implicit class ChromecastManagerMutableBuilder[Self <: ChromecastManager] (val x: Self) extends AnyVal {
+    extension [Self <: ChromecastManager](x: Self) {
       
-      @scala.inline
-      def set_bindToContextEvents(value: js.Any): Self = StObject.set(x, "_bindToContextEvents", value.asInstanceOf[js.Any])
+      inline def set_bindToContextEvents(value: js.Any): Self = StObject.set(x, "_bindToContextEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_context(value: js.Any): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+      inline def set_context(value: js.Any): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initCastContext(value: js.Any): Self = StObject.set(x, "_initCastContext", value.asInstanceOf[js.Any])
+      inline def set_initCastContext(value: js.Any): Self = StObject.set(x, "_initCastContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_insertCastCallback(value: js.Any): Self = StObject.set(x, "_insertCastCallback", value.asInstanceOf[js.Any])
+      inline def set_insertCastCallback(value: js.Any): Self = StObject.set(x, "_insertCastCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onCastStateChange(value: js.Any): Self = StObject.set(x, "_onCastStateChange", value.asInstanceOf[js.Any])
+      inline def set_onCastStateChange(value: js.Any): Self = StObject.set(x, "_onCastStateChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onSessionStateChange(value: js.Any): Self = StObject.set(x, "_onSessionStateChange", value.asInstanceOf[js.Any])
+      inline def set_onSessionStateChange(value: js.Any): Self = StObject.set(x, "_onSessionStateChange", value.asInstanceOf[js.Any])
     }
   }
   

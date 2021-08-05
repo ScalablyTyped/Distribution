@@ -22,23 +22,18 @@ trait RegexMatchSetRegexMatchTupleFieldToMatch extends StObject {
 }
 object RegexMatchSetRegexMatchTupleFieldToMatch {
   
-  @scala.inline
-  def apply(`type`: String): RegexMatchSetRegexMatchTupleFieldToMatch = {
+  inline def apply(`type`: String): RegexMatchSetRegexMatchTupleFieldToMatch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexMatchSetRegexMatchTupleFieldToMatch]
   }
   
-  @scala.inline
-  implicit class RegexMatchSetRegexMatchTupleFieldToMatchMutableBuilder[Self <: RegexMatchSetRegexMatchTupleFieldToMatch] (val x: Self) extends AnyVal {
+  extension [Self <: RegexMatchSetRegexMatchTupleFieldToMatch](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

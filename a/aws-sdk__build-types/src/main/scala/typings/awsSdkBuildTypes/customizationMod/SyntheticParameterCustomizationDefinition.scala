@@ -55,44 +55,32 @@ trait SyntheticParameterCustomizationDefinition
 }
 object SyntheticParameterCustomizationDefinition {
   
-  @scala.inline
-  def apply(documentation: String, location: input | output, name: String, typeExpression: String): SyntheticParameterCustomizationDefinition = {
+  inline def apply(documentation: String, location: input | output, name: String, typeExpression: String): SyntheticParameterCustomizationDefinition = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeExpression = typeExpression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SyntheticParameter")
     __obj.asInstanceOf[SyntheticParameterCustomizationDefinition]
   }
   
-  @scala.inline
-  implicit class SyntheticParameterCustomizationDefinitionMutableBuilder[Self <: SyntheticParameterCustomizationDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SyntheticParameterCustomizationDefinition](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: input | output): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: input | output): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setType(value: SyntheticParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SyntheticParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeExpression(value: String): Self = StObject.set(x, "typeExpression", value.asInstanceOf[js.Any])
+    inline def setTypeExpression(value: String): Self = StObject.set(x, "typeExpression", value.asInstanceOf[js.Any])
   }
 }

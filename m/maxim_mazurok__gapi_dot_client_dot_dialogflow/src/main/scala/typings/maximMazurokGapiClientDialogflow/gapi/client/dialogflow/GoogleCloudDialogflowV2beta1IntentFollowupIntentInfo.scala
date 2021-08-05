@@ -14,25 +14,19 @@ trait GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo extends StObject {
 }
 object GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentFollowupIntentInfoMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo](x: Self) {
     
-    @scala.inline
-    def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
+    inline def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowupIntentNameUndefined: Self = StObject.set(x, "followupIntentName", js.undefined)
+    inline def setFollowupIntentNameUndefined: Self = StObject.set(x, "followupIntentName", js.undefined)
     
-    @scala.inline
-    def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
+    inline def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFollowupIntentNameUndefined: Self = StObject.set(x, "parentFollowupIntentName", js.undefined)
+    inline def setParentFollowupIntentNameUndefined: Self = StObject.set(x, "parentFollowupIntentName", js.undefined)
   }
 }

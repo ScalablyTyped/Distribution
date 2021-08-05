@@ -10,26 +10,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
-  @scala.inline
-  def getStatusBarHeight(skipAndroid: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(skipAndroid.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
+  inline def getStatusBarHeight(skipAndroid: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(skipAndroid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def isExpo(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpo")().asInstanceOf[Boolean]
+  inline def isExpo(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpo")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPhone12(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone12")().asInstanceOf[Boolean]
+  inline def isIPhone12(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone12")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPhone12Max(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone12Max")().asInstanceOf[Boolean]
+  inline def isIPhone12Max(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone12Max")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPhoneWithMonobrow(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneWithMonobrow")().asInstanceOf[Boolean]
+  inline def isIPhoneWithMonobrow(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneWithMonobrow")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPhoneX(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneX")().asInstanceOf[Boolean]
+  inline def isIPhoneX(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneX")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPhoneXMax(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneXMax")().asInstanceOf[Boolean]
+  inline def isIPhoneXMax(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneXMax")().asInstanceOf[Boolean]
 }

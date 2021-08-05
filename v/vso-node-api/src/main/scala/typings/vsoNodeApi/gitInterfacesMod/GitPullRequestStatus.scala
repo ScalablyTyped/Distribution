@@ -22,8 +22,7 @@ trait GitPullRequestStatus
 }
 object GitPullRequestStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     context: GitStatusContext,
     createdBy: IdentityRef,
@@ -40,13 +39,10 @@ object GitPullRequestStatus {
     __obj.asInstanceOf[GitPullRequestStatus]
   }
   
-  @scala.inline
-  implicit class GitPullRequestStatusMutableBuilder[Self <: GitPullRequestStatus] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestStatus](x: Self) {
     
-    @scala.inline
-    def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
+    inline def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

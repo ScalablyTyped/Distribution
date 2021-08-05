@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExitKey extends StObject
 object ExitKey {
   
-  @scala.inline
-  def `1`: typings.screeps.screepsStrings.`1` = "1".asInstanceOf[typings.screeps.screepsStrings.`1`]
+  inline def `1`: typings.screeps.screepsStrings.`1` = "1".asInstanceOf[typings.screeps.screepsStrings.`1`]
   
-  @scala.inline
-  def `3`: typings.screeps.screepsStrings.`3` = "3".asInstanceOf[typings.screeps.screepsStrings.`3`]
+  inline def `3`: typings.screeps.screepsStrings.`3` = "3".asInstanceOf[typings.screeps.screepsStrings.`3`]
   
-  @scala.inline
-  def `5`: typings.screeps.screepsStrings.`5` = "5".asInstanceOf[typings.screeps.screepsStrings.`5`]
+  inline def `5`: typings.screeps.screepsStrings.`5` = "5".asInstanceOf[typings.screeps.screepsStrings.`5`]
   
-  @scala.inline
-  def `7`: typings.screeps.screepsStrings.`7` = "7".asInstanceOf[typings.screeps.screepsStrings.`7`]
+  inline def `7`: typings.screeps.screepsStrings.`7` = "7".asInstanceOf[typings.screeps.screepsStrings.`7`]
 }

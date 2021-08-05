@@ -41,43 +41,31 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs extends StObjec
 }
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputsMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs](x: Self) {
     
-    @scala.inline
-    def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+    inline def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+    inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    @scala.inline
-    def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value :_*))
     
-    @scala.inline
-    def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setStderrDestination(value: String): Self = StObject.set(x, "stderrDestination", value.asInstanceOf[js.Any])
+    inline def setStderrDestination(value: String): Self = StObject.set(x, "stderrDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderrDestinationUndefined: Self = StObject.set(x, "stderrDestination", js.undefined)
+    inline def setStderrDestinationUndefined: Self = StObject.set(x, "stderrDestination", js.undefined)
     
-    @scala.inline
-    def setStdoutDestination(value: String): Self = StObject.set(x, "stdoutDestination", value.asInstanceOf[js.Any])
+    inline def setStdoutDestination(value: String): Self = StObject.set(x, "stdoutDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdoutDestinationUndefined: Self = StObject.set(x, "stdoutDestination", js.undefined)
+    inline def setStdoutDestinationUndefined: Self = StObject.set(x, "stdoutDestination", js.undefined)
   }
 }

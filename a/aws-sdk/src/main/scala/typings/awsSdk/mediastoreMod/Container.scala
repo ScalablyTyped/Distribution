@@ -38,49 +38,35 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(): Container = {
+  inline def apply(): Container = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setARN(value: ContainerARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: ContainerARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setAccessLoggingEnabled(value: ContainerAccessLoggingEnabled): Self = StObject.set(x, "AccessLoggingEnabled", value.asInstanceOf[js.Any])
+    inline def setAccessLoggingEnabled(value: ContainerAccessLoggingEnabled): Self = StObject.set(x, "AccessLoggingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLoggingEnabledUndefined: Self = StObject.set(x, "AccessLoggingEnabled", js.undefined)
+    inline def setAccessLoggingEnabledUndefined: Self = StObject.set(x, "AccessLoggingEnabled", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: TimeStamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: TimeStamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setName(value: ContainerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ContainerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ContainerStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ContainerStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

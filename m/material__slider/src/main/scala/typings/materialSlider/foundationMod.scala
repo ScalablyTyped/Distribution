@@ -129,7 +129,6 @@ object foundationMod {
     @JSImport("@material/slider/foundation", "MDCSliderFoundation.SUPPORTS_POINTER_EVENTS")
     @js.native
     def SUPPORTS_POINTER_EVENTS: Boolean = js.native
-    @scala.inline
-    def SUPPORTS_POINTER_EVENTS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTS_POINTER_EVENTS")(x.asInstanceOf[js.Any])
+    inline def SUPPORTS_POINTER_EVENTS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTS_POINTER_EVENTS")(x.asInstanceOf[js.Any])
   }
 }

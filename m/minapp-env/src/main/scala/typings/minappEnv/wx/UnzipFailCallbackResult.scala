@@ -15,16 +15,13 @@ trait UnzipFailCallbackResult extends StObject {
 }
 object UnzipFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): UnzipFailCallbackResult = {
+  inline def apply(errMsg: String): UnzipFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnzipFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class UnzipFailCallbackResultMutableBuilder[Self <: UnzipFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UnzipFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

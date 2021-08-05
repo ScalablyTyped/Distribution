@@ -11,8 +11,7 @@ object xdsBootstrapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadBootstrapInfo(): js.Promise[BootstrapInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadBootstrapInfo")().asInstanceOf[js.Promise[BootstrapInfo]]
+  inline def loadBootstrapInfo(): js.Promise[BootstrapInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadBootstrapInfo")().asInstanceOf[js.Promise[BootstrapInfo]]
   
   trait BootstrapInfo extends StObject {
     
@@ -22,23 +21,18 @@ object xdsBootstrapMod {
   }
   object BootstrapInfo {
     
-    @scala.inline
-    def apply(node: Node, xdsServers: js.Array[XdsServerConfig]): BootstrapInfo = {
+    inline def apply(node: Node, xdsServers: js.Array[XdsServerConfig]): BootstrapInfo = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], xdsServers = xdsServers.asInstanceOf[js.Any])
       __obj.asInstanceOf[BootstrapInfo]
     }
     
-    @scala.inline
-    implicit class BootstrapInfoMutableBuilder[Self <: BootstrapInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BootstrapInfo](x: Self) {
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdsServers(value: js.Array[XdsServerConfig]): Self = StObject.set(x, "xdsServers", value.asInstanceOf[js.Any])
+      inline def setXdsServers(value: js.Array[XdsServerConfig]): Self = StObject.set(x, "xdsServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdsServersVarargs(value: XdsServerConfig*): Self = StObject.set(x, "xdsServers", js.Array(value :_*))
+      inline def setXdsServersVarargs(value: XdsServerConfig*): Self = StObject.set(x, "xdsServers", js.Array(value :_*))
     }
   }
   
@@ -50,24 +44,19 @@ object xdsBootstrapMod {
   }
   object ChannelCredsConfig {
     
-    @scala.inline
-    def apply(`type`: String): ChannelCredsConfig = {
+    inline def apply(`type`: String): ChannelCredsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelCredsConfig]
     }
     
-    @scala.inline
-    implicit class ChannelCredsConfigMutableBuilder[Self <: ChannelCredsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelCredsConfig](x: Self) {
       
-      @scala.inline
-      def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,23 +68,18 @@ object xdsBootstrapMod {
   }
   object XdsServerConfig {
     
-    @scala.inline
-    def apply(channelCreds: js.Array[ChannelCredsConfig], serverUri: String): XdsServerConfig = {
+    inline def apply(channelCreds: js.Array[ChannelCredsConfig], serverUri: String): XdsServerConfig = {
       val __obj = js.Dynamic.literal(channelCreds = channelCreds.asInstanceOf[js.Any], serverUri = serverUri.asInstanceOf[js.Any])
       __obj.asInstanceOf[XdsServerConfig]
     }
     
-    @scala.inline
-    implicit class XdsServerConfigMutableBuilder[Self <: XdsServerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: XdsServerConfig](x: Self) {
       
-      @scala.inline
-      def setChannelCreds(value: js.Array[ChannelCredsConfig]): Self = StObject.set(x, "channelCreds", value.asInstanceOf[js.Any])
+      inline def setChannelCreds(value: js.Array[ChannelCredsConfig]): Self = StObject.set(x, "channelCreds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCredsVarargs(value: ChannelCredsConfig*): Self = StObject.set(x, "channelCreds", js.Array(value :_*))
+      inline def setChannelCredsVarargs(value: ChannelCredsConfig*): Self = StObject.set(x, "channelCreds", js.Array(value :_*))
       
-      @scala.inline
-      def setServerUri(value: String): Self = StObject.set(x, "serverUri", value.asInstanceOf[js.Any])
+      inline def setServerUri(value: String): Self = StObject.set(x, "serverUri", value.asInstanceOf[js.Any])
     }
   }
 }

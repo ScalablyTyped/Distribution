@@ -14,25 +14,19 @@ trait ChartCustomNumberFormatOptions extends StObject {
 }
 object ChartCustomNumberFormatOptions {
   
-  @scala.inline
-  def apply(): ChartCustomNumberFormatOptions = {
+  inline def apply(): ChartCustomNumberFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartCustomNumberFormatOptions]
   }
   
-  @scala.inline
-  implicit class ChartCustomNumberFormatOptionsMutableBuilder[Self <: ChartCustomNumberFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartCustomNumberFormatOptions](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

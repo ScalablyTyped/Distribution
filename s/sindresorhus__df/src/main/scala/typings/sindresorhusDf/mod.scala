@@ -11,8 +11,7 @@ object mod {
   	 *
   	 * @returns A list of space info objects for each filesystem.
   	 */
-  @scala.inline
-  def apply(): js.Promise[js.Array[SpaceInfo]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[SpaceInfo]]]
+  inline def apply(): js.Promise[js.Array[SpaceInfo]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[SpaceInfo]]]
   
   @JSImport("@sindresorhus/df", JSImport.Namespace)
   @js.native
@@ -22,22 +21,19 @@ object mod {
   @JSImport("@sindresorhus/df", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof df */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof df */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof df */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	 * @param path - Path to a file on the filesystem to get the space info for.
   	 * @returns Space info for the filesystem the given file is part of.
   	 */
-  @scala.inline
-  def file(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
+  inline def file(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
   
   /**
   	 * @param path - Path to a filesystem device file. Example: `'/dev/disk1'`.
   	 * @returns Space info for the given filesystem.
   	 */
-  @scala.inline
-  def fs(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
+  inline def fs(path: String): js.Promise[SpaceInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpaceInfo]]
   
   trait SpaceInfo extends StObject {
     
@@ -73,8 +69,7 @@ object mod {
   }
   object SpaceInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       available: Double,
       capacity: Double,
       filesystem: String,
@@ -86,26 +81,19 @@ object mod {
       __obj.asInstanceOf[SpaceInfo]
     }
     
-    @scala.inline
-    implicit class SpaceInfoMutableBuilder[Self <: SpaceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SpaceInfo](x: Self) {
       
-      @scala.inline
-      def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+      inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesystem(value: String): Self = StObject.set(x, "filesystem", value.asInstanceOf[js.Any])
+      inline def setFilesystem(value: String): Self = StObject.set(x, "filesystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountpoint(value: String): Self = StObject.set(x, "mountpoint", value.asInstanceOf[js.Any])
+      inline def setMountpoint(value: String): Self = StObject.set(x, "mountpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsed(value: Double): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+      inline def setUsed(value: Double): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     }
   }
 }

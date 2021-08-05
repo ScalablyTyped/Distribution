@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ShadowFormat")
 @js.native
-class ShadowFormat protected ()
+/* private */ class ShadowFormat ()
   extends StObject
      with typings.activexExcel.Excel.ShadowFormat {
   
@@ -22,7 +22,7 @@ class ShadowFormat protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ShadowFormat_typekey")
   var ExcelDotShadowFormat_typekey: typings.activexExcel.Excel.ShadowFormat = js.native
   

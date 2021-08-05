@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpWindowState extends StObject
 object PpWindowState {
   
-  @scala.inline
-  def ppWindowMaximized: `3` = 3.asInstanceOf[`3`]
+  inline def ppWindowMaximized: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppWindowMinimized: `2` = 2.asInstanceOf[`2`]
+  inline def ppWindowMinimized: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppWindowNormal: `1` = 1.asInstanceOf[`1`]
+  inline def ppWindowNormal: `1` = 1.asInstanceOf[`1`]
 }

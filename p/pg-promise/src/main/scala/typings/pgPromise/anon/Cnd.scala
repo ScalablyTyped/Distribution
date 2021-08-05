@@ -13,28 +13,21 @@ trait Cnd[Ext] extends StObject {
 }
 object Cnd {
   
-  @scala.inline
-  def apply[Ext](): Cnd[Ext] = {
+  inline def apply[Ext](): Cnd[Ext] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cnd[Ext]]
   }
   
-  @scala.inline
-  implicit class CndMutableBuilder[Self <: Cnd[?], Ext] (val x: Self & Cnd[Ext]) extends AnyVal {
+  extension [Self <: Cnd[?], Ext](x: Self & Cnd[Ext]) {
     
-    @scala.inline
-    def setCnd(value: Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
+    inline def setCnd(value: Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCndFunction1(value: /* t */ ITask[Ext] & Ext => Boolean): Self = StObject.set(x, "cnd", js.Any.fromFunction1(value))
+    inline def setCndFunction1(value: /* t */ ITask[Ext] & Ext => Boolean): Self = StObject.set(x, "cnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
+    inline def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
     
-    @scala.inline
-    def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

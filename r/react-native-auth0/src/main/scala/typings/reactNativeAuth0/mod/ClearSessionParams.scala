@@ -10,16 +10,13 @@ trait ClearSessionParams extends StObject {
 }
 object ClearSessionParams {
   
-  @scala.inline
-  def apply(federated: Boolean): ClearSessionParams = {
+  inline def apply(federated: Boolean): ClearSessionParams = {
     val __obj = js.Dynamic.literal(federated = federated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearSessionParams]
   }
   
-  @scala.inline
-  implicit class ClearSessionParamsMutableBuilder[Self <: ClearSessionParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClearSessionParams](x: Self) {
     
-    @scala.inline
-    def setFederated(value: Boolean): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
+    inline def setFederated(value: Boolean): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
   }
 }

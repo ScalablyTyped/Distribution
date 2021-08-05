@@ -18,16 +18,13 @@ trait InsertHeaderCommand
 }
 object InsertHeaderCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertHeaderCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertHeaderCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertHeaderCommand]
   }
   
-  @scala.inline
-  implicit class InsertHeaderCommandMutableBuilder[Self <: InsertHeaderCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertHeaderCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

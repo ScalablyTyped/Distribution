@@ -28,25 +28,19 @@ trait TestScriptOrigin
 }
 object TestScriptOrigin {
   
-  @scala.inline
-  def apply(index: integer, profile: Coding): TestScriptOrigin = {
+  inline def apply(index: integer, profile: Coding): TestScriptOrigin = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptOrigin]
   }
   
-  @scala.inline
-  implicit class TestScriptOriginMutableBuilder[Self <: TestScriptOrigin] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptOrigin](x: Self) {
     
-    @scala.inline
-    def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: Coding): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Coding): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_index(value: Element): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+    inline def set_index(value: Element): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_indexUndefined: Self = StObject.set(x, "_index", js.undefined)
+    inline def set_indexUndefined: Self = StObject.set(x, "_index", js.undefined)
   }
 }

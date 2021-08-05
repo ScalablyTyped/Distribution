@@ -40,8 +40,7 @@ object urlshortenerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Urlshortener
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object urlshortenerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object urlshortenerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def urlshortener(options: Options): Urlshortener = ^.asInstanceOf[js.Dynamic].applyDynamic("urlshortener")(options.asInstanceOf[js.Any]).asInstanceOf[Urlshortener]
+  inline def urlshortener(options: Options): Urlshortener = ^.asInstanceOf[js.Dynamic].applyDynamic("urlshortener")(options.asInstanceOf[js.Any]).asInstanceOf[Urlshortener]
   
-  @scala.inline
-  def urlshortener_v1(version: v1): Urlshortener = ^.asInstanceOf[js.Dynamic].applyDynamic("urlshortener")(version.asInstanceOf[js.Any]).asInstanceOf[Urlshortener]
+  inline def urlshortener_v1(version: v1): Urlshortener = ^.asInstanceOf[js.Dynamic].applyDynamic("urlshortener")(version.asInstanceOf[js.Any]).asInstanceOf[Urlshortener]
 }

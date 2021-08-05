@@ -12,6 +12,6 @@ object abstractMethodStubMod {
     
     def getGroupIndex(): Double = js.native
     
-    var groupIndex: Double = js.native
+    /* protected */ var groupIndex: Double = js.native
   }
 }

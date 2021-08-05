@@ -47,7 +47,7 @@ object gridOptionsWrapperMod {
     
     /* private */ def agWire(gridApi: js.Any, columnApi: js.Any): js.Any = js.native
     
-    var autoHeightCalculator: js.Any = js.native
+    /* private */ var autoHeightCalculator: js.Any = js.native
     
     /* private */ def checkColumnDefProperties(): js.Any = js.native
     
@@ -63,23 +63,23 @@ object gridOptionsWrapperMod {
       docsUrl: js.Any
     ): js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
     /* private */ def destroy(): js.Any = js.native
     
     def doesExternalFilterPass(node: RowNode): Boolean = js.native
     
-    var domDataKey: js.Any = js.native
+    /* private */ var domDataKey: js.Any = js.native
     
-    var enterprise: js.Any = js.native
+    /* private */ var enterprise: js.Any = js.native
     
-    var environment: js.Any = js.native
+    /* private */ var environment: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var frameworkFactory: js.Any = js.native
+    /* private */ var frameworkFactory: js.Any = js.native
     
     def getAggFuncs(): StringDictionary[IAggFunc] = js.native
     
@@ -262,9 +262,9 @@ object gridOptionsWrapperMod {
     def globalEventHandler(eventName: String): Unit = js.native
     def globalEventHandler(eventName: String, event: js.Any): Unit = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptions: js.Any = js.native
+    /* private */ var gridOptions: js.Any = js.native
     
     def init(): Unit = js.native
     
@@ -506,9 +506,9 @@ object gridOptionsWrapperMod {
     
     def isValueCacheNeverExpires(): Boolean = js.native
     
-    var layoutElements: js.Any = js.native
+    /* private */ var layoutElements: js.Any = js.native
     
-    var propertyEventService: js.Any = js.native
+    /* private */ var propertyEventService: js.Any = js.native
     
     def removeEventListener(key: String, listener: js.Function): Unit = js.native
     
@@ -534,77 +534,64 @@ object gridOptionsWrapperMod {
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.MIN_COL_WIDTH")
     @js.native
     def MIN_COL_WIDTH: js.Any = js.native
-    @scala.inline
-    def MIN_COL_WIDTH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_COL_WIDTH")(x.asInstanceOf[js.Any])
+    inline def MIN_COL_WIDTH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_COL_WIDTH")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_FLOATING_FILTERS_HEIGHT")
     @js.native
     def PROP_FLOATING_FILTERS_HEIGHT: String = js.native
-    @scala.inline
-    def PROP_FLOATING_FILTERS_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_FLOATING_FILTERS_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def PROP_FLOATING_FILTERS_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_FLOATING_FILTERS_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_GRID_AUTO_HEIGHT")
     @js.native
     def PROP_GRID_AUTO_HEIGHT: String = js.native
-    @scala.inline
-    def PROP_GRID_AUTO_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GRID_AUTO_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def PROP_GRID_AUTO_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GRID_AUTO_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_GROUP_HEADER_HEIGHT")
     @js.native
     def PROP_GROUP_HEADER_HEIGHT: String = js.native
-    @scala.inline
-    def PROP_GROUP_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GROUP_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def PROP_GROUP_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GROUP_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_GROUP_REMOVE_LOWEST_SINGLE_CHILDREN")
     @js.native
     def PROP_GROUP_REMOVE_LOWEST_SINGLE_CHILDREN: String = js.native
-    @scala.inline
-    def PROP_GROUP_REMOVE_LOWEST_SINGLE_CHILDREN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GROUP_REMOVE_LOWEST_SINGLE_CHILDREN")(x.asInstanceOf[js.Any])
+    inline def PROP_GROUP_REMOVE_LOWEST_SINGLE_CHILDREN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GROUP_REMOVE_LOWEST_SINGLE_CHILDREN")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_GROUP_REMOVE_SINGLE_CHILDREN")
     @js.native
     def PROP_GROUP_REMOVE_SINGLE_CHILDREN: String = js.native
-    @scala.inline
-    def PROP_GROUP_REMOVE_SINGLE_CHILDREN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GROUP_REMOVE_SINGLE_CHILDREN")(x.asInstanceOf[js.Any])
+    inline def PROP_GROUP_REMOVE_SINGLE_CHILDREN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_GROUP_REMOVE_SINGLE_CHILDREN")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_HEADER_HEIGHT")
     @js.native
     def PROP_HEADER_HEIGHT: String = js.native
-    @scala.inline
-    def PROP_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def PROP_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_PIVOT_GROUP_HEADER_HEIGHT")
     @js.native
     def PROP_PIVOT_GROUP_HEADER_HEIGHT: String = js.native
-    @scala.inline
-    def PROP_PIVOT_GROUP_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_PIVOT_GROUP_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def PROP_PIVOT_GROUP_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_PIVOT_GROUP_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_PIVOT_HEADER_HEIGHT")
     @js.native
     def PROP_PIVOT_HEADER_HEIGHT: String = js.native
-    @scala.inline
-    def PROP_PIVOT_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_PIVOT_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def PROP_PIVOT_HEADER_HEIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_PIVOT_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_POPUP_PARENT")
     @js.native
     def PROP_POPUP_PARENT: String = js.native
-    @scala.inline
-    def PROP_POPUP_PARENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_POPUP_PARENT")(x.asInstanceOf[js.Any])
+    inline def PROP_POPUP_PARENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_POPUP_PARENT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_SUPPRESS_CLIPBOARD_PASTE")
     @js.native
     def PROP_SUPPRESS_CLIPBOARD_PASTE: String = js.native
-    @scala.inline
-    def PROP_SUPPRESS_CLIPBOARD_PASTE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_SUPPRESS_CLIPBOARD_PASTE")(x.asInstanceOf[js.Any])
+    inline def PROP_SUPPRESS_CLIPBOARD_PASTE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_SUPPRESS_CLIPBOARD_PASTE")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/gridOptionsWrapper", "GridOptionsWrapper.PROP_SUPPRESS_ROW_DRAG")
     @js.native
     def PROP_SUPPRESS_ROW_DRAG: String = js.native
-    @scala.inline
-    def PROP_SUPPRESS_ROW_DRAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_SUPPRESS_ROW_DRAG")(x.asInstanceOf[js.Any])
+    inline def PROP_SUPPRESS_ROW_DRAG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROP_SUPPRESS_ROW_DRAG")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def checkEventDeprecation(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEventDeprecation")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def checkEventDeprecation(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkEventDeprecation")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait PropertyChangedEvent
@@ -617,21 +604,17 @@ object gridOptionsWrapperMod {
   }
   object PropertyChangedEvent {
     
-    @scala.inline
-    def apply(currentValue: js.Any, previousValue: js.Any, `type`: String): PropertyChangedEvent = {
+    inline def apply(currentValue: js.Any, previousValue: js.Any, `type`: String): PropertyChangedEvent = {
       val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropertyChangedEvent]
     }
     
-    @scala.inline
-    implicit class PropertyChangedEventMutableBuilder[Self <: PropertyChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PropertyChangedEvent](x: Self) {
       
-      @scala.inline
-      def setCurrentValue(value: js.Any): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+      inline def setCurrentValue(value: js.Any): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+      inline def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     }
   }
 }

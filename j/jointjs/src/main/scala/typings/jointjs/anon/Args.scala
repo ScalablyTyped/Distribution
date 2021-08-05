@@ -13,25 +13,19 @@ trait Args extends StObject {
 }
 object Args {
   
-  @scala.inline
-  def apply(): Args = {
+  inline def apply(): Args = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Args]
   }
   
-  @scala.inline
-  implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
+  extension [Self <: Args](x: Self) {
     
-    @scala.inline
-    def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

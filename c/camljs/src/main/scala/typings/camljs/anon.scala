@@ -15,17 +15,14 @@ object anon {
   }
   object Avg {
     
-    @scala.inline
-    def apply(avg: String): Avg = {
+    inline def apply(avg: String): Avg = {
       val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Avg]
     }
     
-    @scala.inline
-    implicit class AvgMutableBuilder[Self <: Avg] (val x: Self) extends AnyVal {
+    extension [Self <: Avg](x: Self) {
       
-      @scala.inline
-      def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+      inline def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +34,14 @@ object anon {
   }
   object Count {
     
-    @scala.inline
-    def apply(count: String): Count = {
+    inline def apply(count: String): Count = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
       __obj.asInstanceOf[Count]
     }
     
-    @scala.inline
-    implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+    extension [Self <: Count](x: Self) {
       
-      @scala.inline
-      def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,17 +53,14 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(max: String): Max = {
+    inline def apply(max: String): Max = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,17 +72,14 @@ object anon {
   }
   object Min {
     
-    @scala.inline
-    def apply(min: String): Min = {
+    inline def apply(min: String): Min = {
       val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[Min]
     }
     
-    @scala.inline
-    implicit class MinMutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
+    extension [Self <: Min](x: Self) {
       
-      @scala.inline
-      def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,17 +91,14 @@ object anon {
   }
   object Stdev {
     
-    @scala.inline
-    def apply(stdev: String): Stdev = {
+    inline def apply(stdev: String): Stdev = {
       val __obj = js.Dynamic.literal(stdev = stdev.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stdev]
     }
     
-    @scala.inline
-    implicit class StdevMutableBuilder[Self <: Stdev] (val x: Self) extends AnyVal {
+    extension [Self <: Stdev](x: Self) {
       
-      @scala.inline
-      def setStdev(value: String): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
+      inline def setStdev(value: String): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,17 +110,14 @@ object anon {
   }
   object Sum {
     
-    @scala.inline
-    def apply(sum: String): Sum = {
+    inline def apply(sum: String): Sum = {
       val __obj = js.Dynamic.literal(sum = sum.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sum]
     }
     
-    @scala.inline
-    implicit class SumMutableBuilder[Self <: Sum] (val x: Self) extends AnyVal {
+    extension [Self <: Sum](x: Self) {
       
-      @scala.inline
-      def setSum(value: String): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+      inline def setSum(value: String): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,18 +129,15 @@ object anon {
   }
   object Var {
     
-    @scala.inline
-    def apply(`var`: String): Var = {
+    inline def apply(`var`: String): Var = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Var]
     }
     
-    @scala.inline
-    implicit class VarMutableBuilder[Self <: Var] (val x: Self) extends AnyVal {
+    extension [Self <: Var](x: Self) {
       
-      @scala.inline
-      def setVar(value: String): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
+      inline def setVar(value: String): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     }
   }
 }

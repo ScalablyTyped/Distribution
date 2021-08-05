@@ -18,10 +18,8 @@ object fileMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def loadJavascriptFile(srcUri: String, callback: js.Function0[Unit]): HtmlScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadJavascriptFile")(srcUri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[HtmlScriptElement]
+    inline def loadJavascriptFile(srcUri: String, callback: js.Function0[Unit]): HtmlScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadJavascriptFile")(srcUri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[HtmlScriptElement]
     
-    @scala.inline
-    def startDownloadFileLocal(file: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDownloadFileLocal")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def startDownloadFileLocal(file: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startDownloadFileLocal")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

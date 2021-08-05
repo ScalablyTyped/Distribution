@@ -23,26 +23,20 @@ trait FrameMetric extends StObject {
 }
 object FrameMetric {
   
-  @scala.inline
-  def apply(frameName: String, threadStates: ThreadStates, `type`: MetricType): FrameMetric = {
+  inline def apply(frameName: String, threadStates: ThreadStates, `type`: MetricType): FrameMetric = {
     val __obj = js.Dynamic.literal(frameName = frameName.asInstanceOf[js.Any], threadStates = threadStates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameMetric]
   }
   
-  @scala.inline
-  implicit class FrameMetricMutableBuilder[Self <: FrameMetric] (val x: Self) extends AnyVal {
+  extension [Self <: FrameMetric](x: Self) {
     
-    @scala.inline
-    def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
+    inline def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadStates(value: ThreadStates): Self = StObject.set(x, "threadStates", value.asInstanceOf[js.Any])
+    inline def setThreadStates(value: ThreadStates): Self = StObject.set(x, "threadStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadStatesVarargs(value: String*): Self = StObject.set(x, "threadStates", js.Array(value :_*))
+    inline def setThreadStatesVarargs(value: String*): Self = StObject.set(x, "threadStates", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: MetricType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MetricType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

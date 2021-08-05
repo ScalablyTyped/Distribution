@@ -23,31 +23,23 @@ trait Cvv extends StObject {
 }
 object Cvv {
   
-  @scala.inline
-  def apply(): Cvv = {
+  inline def apply(): Cvv = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cvv]
   }
   
-  @scala.inline
-  implicit class CvvMutableBuilder[Self <: Cvv] (val x: Self) extends AnyVal {
+  extension [Self <: Cvv](x: Self) {
     
-    @scala.inline
-    def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+    inline def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
+    inline def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
     
-    @scala.inline
-    def setExpiry(value: String): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: String): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

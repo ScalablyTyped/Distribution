@@ -18,8 +18,7 @@ trait SearchCampaignExcludedAudience
 }
 object SearchCampaignExcludedAudience {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAudienceId: () => Double,
     getCampaign: () => Campaign,
     getId: () => Double,
@@ -30,19 +29,14 @@ object SearchCampaignExcludedAudience {
     __obj.asInstanceOf[SearchCampaignExcludedAudience]
   }
   
-  @scala.inline
-  implicit class SearchCampaignExcludedAudienceMutableBuilder[Self <: SearchCampaignExcludedAudience] (val x: Self) extends AnyVal {
+  extension [Self <: SearchCampaignExcludedAudience](x: Self) {
     
-    @scala.inline
-    def setGetAudienceId(value: () => Double): Self = StObject.set(x, "getAudienceId", js.Any.fromFunction0(value))
+    inline def setGetAudienceId(value: () => Double): Self = StObject.set(x, "getAudienceId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

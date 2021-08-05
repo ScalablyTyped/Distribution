@@ -38,49 +38,35 @@ trait ConfigTypeData extends StObject {
 }
 object ConfigTypeData {
   
-  @scala.inline
-  def apply(): ConfigTypeData = {
+  inline def apply(): ConfigTypeData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigTypeData]
   }
   
-  @scala.inline
-  implicit class ConfigTypeDataMutableBuilder[Self <: ConfigTypeData] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigTypeData](x: Self) {
     
-    @scala.inline
-    def setAntennaDownlinkConfig(value: AntennaDownlinkConfig): Self = StObject.set(x, "antennaDownlinkConfig", value.asInstanceOf[js.Any])
+    inline def setAntennaDownlinkConfig(value: AntennaDownlinkConfig): Self = StObject.set(x, "antennaDownlinkConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaDownlinkConfigUndefined: Self = StObject.set(x, "antennaDownlinkConfig", js.undefined)
+    inline def setAntennaDownlinkConfigUndefined: Self = StObject.set(x, "antennaDownlinkConfig", js.undefined)
     
-    @scala.inline
-    def setAntennaDownlinkDemodDecodeConfig(value: AntennaDownlinkDemodDecodeConfig): Self = StObject.set(x, "antennaDownlinkDemodDecodeConfig", value.asInstanceOf[js.Any])
+    inline def setAntennaDownlinkDemodDecodeConfig(value: AntennaDownlinkDemodDecodeConfig): Self = StObject.set(x, "antennaDownlinkDemodDecodeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaDownlinkDemodDecodeConfigUndefined: Self = StObject.set(x, "antennaDownlinkDemodDecodeConfig", js.undefined)
+    inline def setAntennaDownlinkDemodDecodeConfigUndefined: Self = StObject.set(x, "antennaDownlinkDemodDecodeConfig", js.undefined)
     
-    @scala.inline
-    def setAntennaUplinkConfig(value: AntennaUplinkConfig): Self = StObject.set(x, "antennaUplinkConfig", value.asInstanceOf[js.Any])
+    inline def setAntennaUplinkConfig(value: AntennaUplinkConfig): Self = StObject.set(x, "antennaUplinkConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaUplinkConfigUndefined: Self = StObject.set(x, "antennaUplinkConfig", js.undefined)
+    inline def setAntennaUplinkConfigUndefined: Self = StObject.set(x, "antennaUplinkConfig", js.undefined)
     
-    @scala.inline
-    def setDataflowEndpointConfig(value: DataflowEndpointConfig): Self = StObject.set(x, "dataflowEndpointConfig", value.asInstanceOf[js.Any])
+    inline def setDataflowEndpointConfig(value: DataflowEndpointConfig): Self = StObject.set(x, "dataflowEndpointConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataflowEndpointConfigUndefined: Self = StObject.set(x, "dataflowEndpointConfig", js.undefined)
+    inline def setDataflowEndpointConfigUndefined: Self = StObject.set(x, "dataflowEndpointConfig", js.undefined)
     
-    @scala.inline
-    def setTrackingConfig(value: TrackingConfig): Self = StObject.set(x, "trackingConfig", value.asInstanceOf[js.Any])
+    inline def setTrackingConfig(value: TrackingConfig): Self = StObject.set(x, "trackingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingConfigUndefined: Self = StObject.set(x, "trackingConfig", js.undefined)
+    inline def setTrackingConfigUndefined: Self = StObject.set(x, "trackingConfig", js.undefined)
     
-    @scala.inline
-    def setUplinkEchoConfig(value: UplinkEchoConfig): Self = StObject.set(x, "uplinkEchoConfig", value.asInstanceOf[js.Any])
+    inline def setUplinkEchoConfig(value: UplinkEchoConfig): Self = StObject.set(x, "uplinkEchoConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUplinkEchoConfigUndefined: Self = StObject.set(x, "uplinkEchoConfig", js.undefined)
+    inline def setUplinkEchoConfigUndefined: Self = StObject.set(x, "uplinkEchoConfig", js.undefined)
   }
 }

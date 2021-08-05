@@ -75,8 +75,7 @@ object SelectionStateAPI {
   }
   object IQFieldSelections {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       field: IQField,
       fieldName: String,
       isNumeric: Boolean,
@@ -94,50 +93,35 @@ object SelectionStateAPI {
       __obj.asInstanceOf[IQFieldSelections]
     }
     
-    @scala.inline
-    implicit class IQFieldSelectionsMutableBuilder[Self <: IQFieldSelections] (val x: Self) extends AnyVal {
+    extension [Self <: IQFieldSelections](x: Self) {
       
-      @scala.inline
-      def setField(value: IQField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: IQField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+      inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNumeric(value: Boolean): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
+      inline def setIsNumeric(value: Boolean): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+      inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotSelectedValues(value: js.Array[Double]): Self = StObject.set(x, "notSelectedValues", value.asInstanceOf[js.Any])
+      inline def setNotSelectedValues(value: js.Array[Double]): Self = StObject.set(x, "notSelectedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "notSelectedValues", js.Array(value :_*))
+      inline def setNotSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "notSelectedValues", js.Array(value :_*))
       
-      @scala.inline
-      def setQSelected(value: String): Self = StObject.set(x, "qSelected", value.asInstanceOf[js.Any])
+      inline def setQSelected(value: String): Self = StObject.set(x, "qSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQSelectionThreshold(value: Double): Self = StObject.set(x, "qSelectionThreshold", value.asInstanceOf[js.Any])
+      inline def setQSelectionThreshold(value: Double): Self = StObject.set(x, "qSelectionThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQSortIndex(value: Double): Self = StObject.set(x, "qSortIndex", value.asInstanceOf[js.Any])
+      inline def setQSortIndex(value: Double): Self = StObject.set(x, "qSortIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQStateCounts(value: js.Any): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
+      inline def setQStateCounts(value: js.Any): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedCount(value: Double): Self = StObject.set(x, "selectedCount", value.asInstanceOf[js.Any])
+      inline def setSelectedCount(value: Double): Self = StObject.set(x, "selectedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValues(value: js.Array[Double]): Self = StObject.set(x, "selectedValues", value.asInstanceOf[js.Any])
+      inline def setSelectedValues(value: js.Array[Double]): Self = StObject.set(x, "selectedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "selectedValues", js.Array(value :_*))
+      inline def setSelectedValuesVarargs(value: Double*): Self = StObject.set(x, "selectedValues", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,8 +168,7 @@ object SelectionStateAPI {
   }
   object IQSelectionState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backCount: Double,
       clearAll: Boolean => IPromise[js.Any],
       forwardCount: Double,
@@ -198,29 +181,21 @@ object SelectionStateAPI {
       __obj.asInstanceOf[IQSelectionState]
     }
     
-    @scala.inline
-    implicit class IQSelectionStateMutableBuilder[Self <: IQSelectionState] (val x: Self) extends AnyVal {
+    extension [Self <: IQSelectionState](x: Self) {
       
-      @scala.inline
-      def setBackCount(value: Double): Self = StObject.set(x, "backCount", value.asInstanceOf[js.Any])
+      inline def setBackCount(value: Double): Self = StObject.set(x, "backCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearAll(value: Boolean => IPromise[js.Any]): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
+      inline def setClearAll(value: Boolean => IPromise[js.Any]): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForwardCount(value: Double): Self = StObject.set(x, "forwardCount", value.asInstanceOf[js.Any])
+      inline def setForwardCount(value: Double): Self = StObject.set(x, "forwardCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "lockAll", js.Any.fromFunction0(value))
+      inline def setLockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "lockAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelections(value: IQFieldSelections): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+      inline def setSelections(value: IQFieldSelections): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateName(value: String): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
+      inline def setStateName(value: String): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "unlockAll", js.Any.fromFunction0(value))
+      inline def setUnlockAll(value: () => IPromise[js.Any]): Self = StObject.set(x, "unlockAll", js.Any.fromFunction0(value))
     }
   }
 }

@@ -13,17 +13,14 @@ object anon {
   }
   object Any {
     
-    @scala.inline
-    def apply(): Any = {
+    inline def apply(): Any = {
       val __obj = js.Dynamic.literal(any = true)
       __obj.asInstanceOf[Any]
     }
     
-    @scala.inline
-    implicit class AnyMutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
+    extension [Self <: Any](x: Self) {
       
-      @scala.inline
-      def setAny(value: `true`): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+      inline def setAny(value: `true`): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,20 +30,16 @@ object anon {
   }
   object Inverted {
     
-    @scala.inline
-    def apply(): Inverted = {
+    inline def apply(): Inverted = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Inverted]
     }
     
-    @scala.inline
-    implicit class InvertedMutableBuilder[Self <: Inverted] (val x: Self) extends AnyVal {
+    extension [Self <: Inverted](x: Self) {
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     }
   }
 }

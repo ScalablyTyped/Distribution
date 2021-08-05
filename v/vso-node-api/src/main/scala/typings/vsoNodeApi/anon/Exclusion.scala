@@ -12,19 +12,15 @@ trait Exclusion extends StObject {
 }
 object Exclusion {
   
-  @scala.inline
-  def apply(exclusion: scala.Double, inclusion: scala.Double): Exclusion = {
+  inline def apply(exclusion: scala.Double, inclusion: scala.Double): Exclusion = {
     val __obj = js.Dynamic.literal(exclusion = exclusion.asInstanceOf[js.Any], inclusion = inclusion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exclusion]
   }
   
-  @scala.inline
-  implicit class ExclusionMutableBuilder[Self <: Exclusion] (val x: Self) extends AnyVal {
+  extension [Self <: Exclusion](x: Self) {
     
-    @scala.inline
-    def setExclusion(value: scala.Double): Self = StObject.set(x, "exclusion", value.asInstanceOf[js.Any])
+    inline def setExclusion(value: scala.Double): Self = StObject.set(x, "exclusion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusion(value: scala.Double): Self = StObject.set(x, "inclusion", value.asInstanceOf[js.Any])
+    inline def setInclusion(value: scala.Double): Self = StObject.set(x, "inclusion", value.asInstanceOf[js.Any])
   }
 }

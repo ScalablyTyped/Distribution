@@ -96,82 +96,57 @@ trait VictoryVoronoiContainerProps
 }
 object VictoryVoronoiContainerProps {
   
-  @scala.inline
-  def apply(): VictoryVoronoiContainerProps = {
+  inline def apply(): VictoryVoronoiContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryVoronoiContainerProps]
   }
   
-  @scala.inline
-  implicit class VictoryVoronoiContainerPropsMutableBuilder[Self <: VictoryVoronoiContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryVoronoiContainerProps](x: Self) {
     
-    @scala.inline
-    def setActivateData(value: Boolean): Self = StObject.set(x, "activateData", value.asInstanceOf[js.Any])
+    inline def setActivateData(value: Boolean): Self = StObject.set(x, "activateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivateDataUndefined: Self = StObject.set(x, "activateData", js.undefined)
+    inline def setActivateDataUndefined: Self = StObject.set(x, "activateData", js.undefined)
     
-    @scala.inline
-    def setActivateLabels(value: Boolean): Self = StObject.set(x, "activateLabels", value.asInstanceOf[js.Any])
+    inline def setActivateLabels(value: Boolean): Self = StObject.set(x, "activateLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivateLabelsUndefined: Self = StObject.set(x, "activateLabels", js.undefined)
+    inline def setActivateLabelsUndefined: Self = StObject.set(x, "activateLabels", js.undefined)
     
-    @scala.inline
-    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
+    inline def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
+    inline def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
     
-    @scala.inline
-    def setLabels(value: (/* point */ js.Any, /* index */ Double, /* points */ js.Array[js.Any]) => String): Self = StObject.set(x, "labels", js.Any.fromFunction3(value))
+    inline def setLabels(value: (/* point */ js.Any, /* index */ Double, /* points */ js.Array[js.Any]) => String): Self = StObject.set(x, "labels", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setOnActivated(value: (/* points */ js.Array[js.Any], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onActivated", js.Any.fromFunction2(value))
+    inline def setOnActivated(value: (/* points */ js.Array[js.Any], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onActivated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnActivatedUndefined: Self = StObject.set(x, "onActivated", js.undefined)
+    inline def setOnActivatedUndefined: Self = StObject.set(x, "onActivated", js.undefined)
     
-    @scala.inline
-    def setOnDeactivated(value: (/* points */ js.Array[js.Any], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onDeactivated", js.Any.fromFunction2(value))
+    inline def setOnDeactivated(value: (/* points */ js.Array[js.Any], VictoryVoronoiContainerProps) => Unit): Self = StObject.set(x, "onDeactivated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDeactivatedUndefined: Self = StObject.set(x, "onDeactivated", js.undefined)
+    inline def setOnDeactivatedUndefined: Self = StObject.set(x, "onDeactivated", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setVoronoiBlacklist(value: js.Array[String]): Self = StObject.set(x, "voronoiBlacklist", value.asInstanceOf[js.Any])
+    inline def setVoronoiBlacklist(value: js.Array[String]): Self = StObject.set(x, "voronoiBlacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoronoiBlacklistUndefined: Self = StObject.set(x, "voronoiBlacklist", js.undefined)
+    inline def setVoronoiBlacklistUndefined: Self = StObject.set(x, "voronoiBlacklist", js.undefined)
     
-    @scala.inline
-    def setVoronoiBlacklistVarargs(value: String*): Self = StObject.set(x, "voronoiBlacklist", js.Array(value :_*))
+    inline def setVoronoiBlacklistVarargs(value: String*): Self = StObject.set(x, "voronoiBlacklist", js.Array(value :_*))
     
-    @scala.inline
-    def setVoronoiDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "voronoiDimension", value.asInstanceOf[js.Any])
+    inline def setVoronoiDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "voronoiDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoronoiDimensionUndefined: Self = StObject.set(x, "voronoiDimension", js.undefined)
+    inline def setVoronoiDimensionUndefined: Self = StObject.set(x, "voronoiDimension", js.undefined)
     
-    @scala.inline
-    def setVoronoiPadding(value: Double): Self = StObject.set(x, "voronoiPadding", value.asInstanceOf[js.Any])
+    inline def setVoronoiPadding(value: Double): Self = StObject.set(x, "voronoiPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoronoiPaddingUndefined: Self = StObject.set(x, "voronoiPadding", js.undefined)
+    inline def setVoronoiPaddingUndefined: Self = StObject.set(x, "voronoiPadding", js.undefined)
   }
 }

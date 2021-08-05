@@ -18,8 +18,7 @@ trait DataPilotSourceHierarchy
      with XLevelsSupplier
 object DataPilotSourceHierarchy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Levels: XNameAccess,
     Name: String,
     acquire: () => Unit,

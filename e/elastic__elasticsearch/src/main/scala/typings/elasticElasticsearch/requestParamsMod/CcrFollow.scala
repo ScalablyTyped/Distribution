@@ -16,25 +16,19 @@ trait CcrFollow[T]
 }
 object CcrFollow {
   
-  @scala.inline
-  def apply[T](body: T, index: String): CcrFollow[T] = {
+  inline def apply[T](body: T, index: String): CcrFollow[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrFollow[T]]
   }
   
-  @scala.inline
-  implicit class CcrFollowMutableBuilder[Self <: CcrFollow[?], T] (val x: Self & CcrFollow[T]) extends AnyVal {
+  extension [Self <: CcrFollow[?], T](x: Self & CcrFollow[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_active_shards(value: String): Self = StObject.set(x, "wait_for_active_shards", value.asInstanceOf[js.Any])
+    inline def setWait_for_active_shards(value: String): Self = StObject.set(x, "wait_for_active_shards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_active_shardsUndefined: Self = StObject.set(x, "wait_for_active_shards", js.undefined)
+    inline def setWait_for_active_shardsUndefined: Self = StObject.set(x, "wait_for_active_shards", js.undefined)
   }
 }

@@ -22,19 +22,15 @@ trait IDimensionListDef extends StObject {
 }
 object IDimensionListDef {
   
-  @scala.inline
-  def apply(qData: js.Any): IDimensionListDef = {
+  inline def apply(qData: js.Any): IDimensionListDef = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qType = "dimension")
     __obj.asInstanceOf[IDimensionListDef]
   }
   
-  @scala.inline
-  implicit class IDimensionListDefMutableBuilder[Self <: IDimensionListDef] (val x: Self) extends AnyVal {
+  extension [Self <: IDimensionListDef](x: Self) {
     
-    @scala.inline
-    def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: dimension): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: dimension): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

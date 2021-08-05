@@ -21,13 +21,13 @@ object sanitizationMod {
     def this(sanitizer: CustomSanitizer, custom: Boolean, options: js.Array[js.Any]) = this()
     def this(sanitizer: StandardSanitizer, custom: Boolean, options: js.Array[js.Any]) = this()
     
-    val custom: js.Any = js.native
+    /* private */ val custom: js.Any = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
     /* CompleteClass */
     override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
     
-    val sanitizer: js.Any = js.native
+    /* private */ val sanitizer: js.Any = js.native
   }
 }

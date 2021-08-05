@@ -11,19 +11,15 @@ trait PdfSettings extends StObject {
 }
 object PdfSettings {
   
-  @scala.inline
-  def apply(): PdfSettings = {
+  inline def apply(): PdfSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PdfSettings]
   }
   
-  @scala.inline
-  implicit class PdfSettingsMutableBuilder[Self <: PdfSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PdfSettings](x: Self) {
     
-    @scala.inline
-    def setHeading(value: PdfHeadingDetection): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: PdfHeadingDetection): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
   }
 }

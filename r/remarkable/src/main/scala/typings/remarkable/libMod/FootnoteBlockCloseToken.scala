@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object FootnoteBlockCloseToken {
   
-  @scala.inline
-  def apply(level: Double): FootnoteBlockCloseToken = {
+  inline def apply(level: Double): FootnoteBlockCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("footnote_block_close")
     __obj.asInstanceOf[FootnoteBlockCloseToken]
   }
   
-  @scala.inline
-  implicit class FootnoteBlockCloseTokenMutableBuilder[Self <: FootnoteBlockCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: FootnoteBlockCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: footnote_block_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: footnote_block_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

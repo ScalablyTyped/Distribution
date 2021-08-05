@@ -12,16 +12,13 @@ trait ConferenceInstance
 }
 object ConferenceInstance {
   
-  @scala.inline
-  def apply(get: RestMethod, participants: ConferenceParticipantResource): ConferenceInstance = {
+  inline def apply(get: RestMethod, participants: ConferenceParticipantResource): ConferenceInstance = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], participants = participants.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceInstance]
   }
   
-  @scala.inline
-  implicit class ConferenceInstanceMutableBuilder[Self <: ConferenceInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ConferenceInstance](x: Self) {
     
-    @scala.inline
-    def setParticipants(value: ConferenceParticipantResource): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: ConferenceParticipantResource): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
   }
 }

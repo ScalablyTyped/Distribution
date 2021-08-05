@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMSiteModeEvent")
 @js.native
-class DOMSiteModeEvent protected ()
+/* private */ class DOMSiteModeEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMSiteModeEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMSiteModeEvent_typekey")
   var MSHTMLDotDOMSiteModeEvent_typekey: typings.activexMshtml.MSHTML.DOMSiteModeEvent = js.native
   

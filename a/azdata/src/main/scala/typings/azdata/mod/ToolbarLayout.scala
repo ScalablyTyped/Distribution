@@ -10,16 +10,13 @@ trait ToolbarLayout extends StObject {
 }
 object ToolbarLayout {
   
-  @scala.inline
-  def apply(orientation: Orientation): ToolbarLayout = {
+  inline def apply(orientation: Orientation): ToolbarLayout = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarLayout]
   }
   
-  @scala.inline
-  implicit class ToolbarLayoutMutableBuilder[Self <: ToolbarLayout] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarLayout](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait CancelSpotInstanceRequestsRequest extends StObject {
 }
 object CancelSpotInstanceRequestsRequest {
   
-  @scala.inline
-  def apply(SpotInstanceRequestIds: SpotInstanceRequestIdList): CancelSpotInstanceRequestsRequest = {
+  inline def apply(SpotInstanceRequestIds: SpotInstanceRequestIdList): CancelSpotInstanceRequestsRequest = {
     val __obj = js.Dynamic.literal(SpotInstanceRequestIds = SpotInstanceRequestIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSpotInstanceRequestsRequest]
   }
   
-  @scala.inline
-  implicit class CancelSpotInstanceRequestsRequestMutableBuilder[Self <: CancelSpotInstanceRequestsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSpotInstanceRequestsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setSpotInstanceRequestIds(value: SpotInstanceRequestIdList): Self = StObject.set(x, "SpotInstanceRequestIds", value.asInstanceOf[js.Any])
+    inline def setSpotInstanceRequestIds(value: SpotInstanceRequestIdList): Self = StObject.set(x, "SpotInstanceRequestIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotInstanceRequestIdsVarargs(value: SpotInstanceRequestId*): Self = StObject.set(x, "SpotInstanceRequestIds", js.Array(value :_*))
+    inline def setSpotInstanceRequestIdsVarargs(value: SpotInstanceRequestId*): Self = StObject.set(x, "SpotInstanceRequestIds", js.Array(value :_*))
   }
 }

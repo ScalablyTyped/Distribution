@@ -33,43 +33,31 @@ trait LifecycleEvent extends StObject {
 }
 object LifecycleEvent {
   
-  @scala.inline
-  def apply(): LifecycleEvent = {
+  inline def apply(): LifecycleEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecycleEvent]
   }
   
-  @scala.inline
-  implicit class LifecycleEventMutableBuilder[Self <: LifecycleEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LifecycleEvent](x: Self) {
     
-    @scala.inline
-    def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setLifecycleEventName(value: LifecycleEventName): Self = StObject.set(x, "lifecycleEventName", value.asInstanceOf[js.Any])
+    inline def setLifecycleEventName(value: LifecycleEventName): Self = StObject.set(x, "lifecycleEventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleEventNameUndefined: Self = StObject.set(x, "lifecycleEventName", js.undefined)
+    inline def setLifecycleEventNameUndefined: Self = StObject.set(x, "lifecycleEventName", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: LifecycleEventStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LifecycleEventStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

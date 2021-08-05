@@ -18,8 +18,7 @@ trait Geometry[T] extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     data: T,
     geometry: typings.three.mod.Geometry,
     init: js.Any => Unit,
@@ -30,22 +29,16 @@ object Geometry {
     __obj.asInstanceOf[Geometry[T]]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry[?], T] (val x: Self & Geometry[T]) extends AnyVal {
+  extension [Self <: Geometry[?], T](x: Self & Geometry[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: typings.three.mod.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: typings.three.mod.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: js.Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: Schema_[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema_[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object cssResetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CssReset(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CssReset")().asInstanceOf[Element]
+  inline def CssReset(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CssReset")().asInstanceOf[Element]
 }

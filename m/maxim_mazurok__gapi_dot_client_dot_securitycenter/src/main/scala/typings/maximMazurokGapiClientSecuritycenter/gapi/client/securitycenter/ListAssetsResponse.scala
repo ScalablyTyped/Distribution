@@ -20,40 +20,29 @@ trait ListAssetsResponse extends StObject {
 }
 object ListAssetsResponse {
   
-  @scala.inline
-  def apply(): ListAssetsResponse = {
+  inline def apply(): ListAssetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAssetsResponse]
   }
   
-  @scala.inline
-  implicit class ListAssetsResponseMutableBuilder[Self <: ListAssetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssetsResponse](x: Self) {
     
-    @scala.inline
-    def setListAssetsResults(value: js.Array[ListAssetsResult]): Self = StObject.set(x, "listAssetsResults", value.asInstanceOf[js.Any])
+    inline def setListAssetsResults(value: js.Array[ListAssetsResult]): Self = StObject.set(x, "listAssetsResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListAssetsResultsUndefined: Self = StObject.set(x, "listAssetsResults", js.undefined)
+    inline def setListAssetsResultsUndefined: Self = StObject.set(x, "listAssetsResults", js.undefined)
     
-    @scala.inline
-    def setListAssetsResultsVarargs(value: ListAssetsResult*): Self = StObject.set(x, "listAssetsResults", js.Array(value :_*))
+    inline def setListAssetsResultsVarargs(value: ListAssetsResult*): Self = StObject.set(x, "listAssetsResults", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

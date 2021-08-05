@@ -28,8 +28,7 @@ trait VoteOnProposalInput extends StObject {
 }
 object VoteOnProposalInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NetworkId: ResourceIdString,
     ProposalId: ResourceIdString,
     Vote: VoteValue,
@@ -39,19 +38,14 @@ object VoteOnProposalInput {
     __obj.asInstanceOf[VoteOnProposalInput]
   }
   
-  @scala.inline
-  implicit class VoteOnProposalInputMutableBuilder[Self <: VoteOnProposalInput] (val x: Self) extends AnyVal {
+  extension [Self <: VoteOnProposalInput](x: Self) {
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVote(value: VoteValue): Self = StObject.set(x, "Vote", value.asInstanceOf[js.Any])
+    inline def setVote(value: VoteValue): Self = StObject.set(x, "Vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoterMemberId(value: ResourceIdString): Self = StObject.set(x, "VoterMemberId", value.asInstanceOf[js.Any])
+    inline def setVoterMemberId(value: ResourceIdString): Self = StObject.set(x, "VoterMemberId", value.asInstanceOf[js.Any])
   }
 }

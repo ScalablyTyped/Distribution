@@ -17,34 +17,25 @@ trait GooglePrivacyDlpV2AuxiliaryTable extends StObject {
 }
 object GooglePrivacyDlpV2AuxiliaryTable {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2AuxiliaryTable = {
+  inline def apply(): GooglePrivacyDlpV2AuxiliaryTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2AuxiliaryTable]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2AuxiliaryTableMutableBuilder[Self <: GooglePrivacyDlpV2AuxiliaryTable] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2AuxiliaryTable](x: Self) {
     
-    @scala.inline
-    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2QuasiIdField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
+    inline def setQuasiIds(value: js.Array[GooglePrivacyDlpV2QuasiIdField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
+    inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiIdField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2QuasiIdField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRelativeFrequency(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "relativeFrequency", value.asInstanceOf[js.Any])
+    inline def setRelativeFrequency(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "relativeFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeFrequencyUndefined: Self = StObject.set(x, "relativeFrequency", js.undefined)
+    inline def setRelativeFrequencyUndefined: Self = StObject.set(x, "relativeFrequency", js.undefined)
     
-    @scala.inline
-    def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

@@ -19,31 +19,23 @@ trait OutputField extends StObject {
 }
 object OutputField {
   
-  @scala.inline
-  def apply(): OutputField = {
+  inline def apply(): OutputField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputField]
   }
   
-  @scala.inline
-  implicit class OutputFieldMutableBuilder[Self <: OutputField] (val x: Self) extends AnyVal {
+  extension [Self <: OutputField](x: Self) {
     
-    @scala.inline
-    def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
+    inline def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
+    inline def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
     
-    @scala.inline
-    def setOn_error(value: SKIP | FAIL): Self = StObject.set(x, "on_error", value.asInstanceOf[js.Any])
+    inline def setOn_error(value: SKIP | FAIL): Self = StObject.set(x, "on_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_errorUndefined: Self = StObject.set(x, "on_error", js.undefined)
+    inline def setOn_errorUndefined: Self = StObject.set(x, "on_error", js.undefined)
     
-    @scala.inline
-    def setValue(value: SqlExpression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SqlExpression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

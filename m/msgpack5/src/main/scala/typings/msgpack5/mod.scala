@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): MessagePack = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MessagePack]
-  @scala.inline
-  def apply(opts: MsgPackOptions): MessagePack = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[MessagePack]
+  inline def apply(): MessagePack = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MessagePack]
+  inline def apply(opts: MsgPackOptions): MessagePack = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[MessagePack]
   
   @JSImport("msgpack5", JSImport.Namespace)
   @js.native
@@ -42,20 +40,16 @@ object mod {
   }
   object EncodeDecodeOptions {
     
-    @scala.inline
-    def apply(): EncodeDecodeOptions = {
+    inline def apply(): EncodeDecodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodeDecodeOptions]
     }
     
-    @scala.inline
-    implicit class EncodeDecodeOptionsMutableBuilder[Self <: EncodeDecodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EncodeDecodeOptions](x: Self) {
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
   
@@ -93,26 +87,20 @@ object mod {
   }
   object MsgPackOptions {
     
-    @scala.inline
-    def apply(): MsgPackOptions = {
+    inline def apply(): MsgPackOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MsgPackOptions]
     }
     
-    @scala.inline
-    implicit class MsgPackOptionsMutableBuilder[Self <: MsgPackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MsgPackOptions](x: Self) {
       
-      @scala.inline
-      def setCompatibilityMode(value: Boolean): Self = StObject.set(x, "compatibilityMode", value.asInstanceOf[js.Any])
+      inline def setCompatibilityMode(value: Boolean): Self = StObject.set(x, "compatibilityMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompatibilityModeUndefined: Self = StObject.set(x, "compatibilityMode", js.undefined)
+      inline def setCompatibilityModeUndefined: Self = StObject.set(x, "compatibilityMode", js.undefined)
       
-      @scala.inline
-      def setForceFloat64(value: Boolean): Self = StObject.set(x, "forceFloat64", value.asInstanceOf[js.Any])
+      inline def setForceFloat64(value: Boolean): Self = StObject.set(x, "forceFloat64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceFloat64Undefined: Self = StObject.set(x, "forceFloat64", js.undefined)
+      inline def setForceFloat64Undefined: Self = StObject.set(x, "forceFloat64", js.undefined)
     }
   }
 }

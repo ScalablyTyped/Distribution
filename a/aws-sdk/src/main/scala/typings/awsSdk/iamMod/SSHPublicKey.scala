@@ -38,8 +38,7 @@ trait SSHPublicKey extends StObject {
 }
 object SSHPublicKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Fingerprint: publicKeyFingerprintType,
     SSHPublicKeyBody: publicKeyMaterialType,
     SSHPublicKeyId: publicKeyIdType,
@@ -50,28 +49,20 @@ object SSHPublicKey {
     __obj.asInstanceOf[SSHPublicKey]
   }
   
-  @scala.inline
-  implicit class SSHPublicKeyMutableBuilder[Self <: SSHPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: SSHPublicKey](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: publicKeyFingerprintType): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: publicKeyFingerprintType): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSHPublicKeyBody(value: publicKeyMaterialType): Self = StObject.set(x, "SSHPublicKeyBody", value.asInstanceOf[js.Any])
+    inline def setSSHPublicKeyBody(value: publicKeyMaterialType): Self = StObject.set(x, "SSHPublicKeyBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSHPublicKeyId(value: publicKeyIdType): Self = StObject.set(x, "SSHPublicKeyId", value.asInstanceOf[js.Any])
+    inline def setSSHPublicKeyId(value: publicKeyIdType): Self = StObject.set(x, "SSHPublicKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
+    inline def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
+    inline def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

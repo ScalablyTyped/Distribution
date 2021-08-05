@@ -24,25 +24,19 @@ trait `5` extends StObject {
 }
 object `5` {
   
-  @scala.inline
-  def apply(): `5` = {
+  inline def apply(): `5` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`5`]
   }
   
-  @scala.inline
-  implicit class `5MutableBuilder`[Self <: `5`] (val x: Self) extends AnyVal {
+  extension [Self <: `5`](x: Self) {
     
-    @scala.inline
-    def set0(value: SymbolOffset): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: SymbolOffset): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set0Undefined: Self = StObject.set(x, "0", js.undefined)
+    inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
     
-    @scala.inline
-    def set1(value: SymbolOffset): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: SymbolOffset): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1Undefined: Self = StObject.set(x, "1", js.undefined)
+    inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
   }
 }

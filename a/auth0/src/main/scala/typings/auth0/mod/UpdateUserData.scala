@@ -18,37 +18,27 @@ trait UpdateUserData
 }
 object UpdateUserData {
   
-  @scala.inline
-  def apply(): UpdateUserData = {
+  inline def apply(): UpdateUserData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateUserData]
   }
   
-  @scala.inline
-  implicit class UpdateUserDataMutableBuilder[Self <: UpdateUserData] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserData](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setVerify_password(value: Boolean): Self = StObject.set(x, "verify_password", value.asInstanceOf[js.Any])
+    inline def setVerify_password(value: Boolean): Self = StObject.set(x, "verify_password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerify_passwordUndefined: Self = StObject.set(x, "verify_password", js.undefined)
+    inline def setVerify_passwordUndefined: Self = StObject.set(x, "verify_password", js.undefined)
     
-    @scala.inline
-    def setVerify_phone_number(value: Boolean): Self = StObject.set(x, "verify_phone_number", value.asInstanceOf[js.Any])
+    inline def setVerify_phone_number(value: Boolean): Self = StObject.set(x, "verify_phone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerify_phone_numberUndefined: Self = StObject.set(x, "verify_phone_number", js.undefined)
+    inline def setVerify_phone_numberUndefined: Self = StObject.set(x, "verify_phone_number", js.undefined)
   }
 }

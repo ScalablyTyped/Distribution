@@ -37,34 +37,25 @@ trait ConfigMapNodeConfigSource extends StObject {
 }
 object ConfigMapNodeConfigSource {
   
-  @scala.inline
-  def apply(kubeletConfigKey: Input[String], name: Input[String], namespace: Input[String]): ConfigMapNodeConfigSource = {
+  inline def apply(kubeletConfigKey: Input[String], name: Input[String], namespace: Input[String]): ConfigMapNodeConfigSource = {
     val __obj = js.Dynamic.literal(kubeletConfigKey = kubeletConfigKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMapNodeConfigSource]
   }
   
-  @scala.inline
-  implicit class ConfigMapNodeConfigSourceMutableBuilder[Self <: ConfigMapNodeConfigSource] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigMapNodeConfigSource](x: Self) {
     
-    @scala.inline
-    def setKubeletConfigKey(value: Input[String]): Self = StObject.set(x, "kubeletConfigKey", value.asInstanceOf[js.Any])
+    inline def setKubeletConfigKey(value: Input[String]): Self = StObject.set(x, "kubeletConfigKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersion(value: Input[String]): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: Input[String]): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
+    inline def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
-    @scala.inline
-    def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: Input[String]): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }
 }

@@ -17,19 +17,16 @@ trait LocalForageDbMethodsOptional extends StObject {
 }
 object LocalForageDbMethodsOptional {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dropInstance: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ js.Any, Unit]]) => js.Promise[Unit]
   ): LocalForageDbMethodsOptional = {
     val __obj = js.Dynamic.literal(dropInstance = js.Any.fromFunction2(dropInstance))
     __obj.asInstanceOf[LocalForageDbMethodsOptional]
   }
   
-  @scala.inline
-  implicit class LocalForageDbMethodsOptionalMutableBuilder[Self <: LocalForageDbMethodsOptional] (val x: Self) extends AnyVal {
+  extension [Self <: LocalForageDbMethodsOptional](x: Self) {
     
-    @scala.inline
-    def setDropInstance(
+    inline def setDropInstance(
       value: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ js.Any, Unit]]) => js.Promise[Unit]
     ): Self = StObject.set(x, "dropInstance", js.Any.fromFunction2(value))
   }

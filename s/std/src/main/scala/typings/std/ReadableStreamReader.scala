@@ -14,8 +14,7 @@ trait ReadableStreamReader[R] extends StObject {
 }
 object ReadableStreamReader {
   
-  @scala.inline
-  def apply[R](
+  inline def apply[R](
     cancel: () => js.Promise[Unit],
     read: () => js.Promise[ReadableStreamReadResult[R]],
     releaseLock: () => Unit
@@ -24,16 +23,12 @@ object ReadableStreamReader {
     __obj.asInstanceOf[ReadableStreamReader[R]]
   }
   
-  @scala.inline
-  implicit class ReadableStreamReaderMutableBuilder[Self <: ReadableStreamReader[?], R] (val x: Self & ReadableStreamReader[R]) extends AnyVal {
+  extension [Self <: ReadableStreamReader[?], R](x: Self & ReadableStreamReader[R]) {
     
-    @scala.inline
-    def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRead(value: () => js.Promise[ReadableStreamReadResult[R]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => js.Promise[ReadableStreamReadResult[R]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReleaseLock(value: () => Unit): Self = StObject.set(x, "releaseLock", js.Any.fromFunction0(value))
+    inline def setReleaseLock(value: () => Unit): Self = StObject.set(x, "releaseLock", js.Any.fromFunction0(value))
   }
 }

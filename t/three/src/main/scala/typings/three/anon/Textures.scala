@@ -12,19 +12,15 @@ trait Textures extends StObject {
 }
 object Textures {
   
-  @scala.inline
-  def apply(geometries: Double, textures: Double): Textures = {
+  inline def apply(geometries: Double, textures: Double): Textures = {
     val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any])
     __obj.asInstanceOf[Textures]
   }
   
-  @scala.inline
-  implicit class TexturesMutableBuilder[Self <: Textures] (val x: Self) extends AnyVal {
+  extension [Self <: Textures](x: Self) {
     
-    @scala.inline
-    def setGeometries(value: Double): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: Double): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextures(value: Double): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: Double): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
   }
 }

@@ -10,22 +10,17 @@ trait MutateResponses extends StObject {
 }
 object MutateResponses {
   
-  @scala.inline
-  def apply(): MutateResponses = {
+  inline def apply(): MutateResponses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MutateResponses]
   }
   
-  @scala.inline
-  implicit class MutateResponsesMutableBuilder[Self <: MutateResponses] (val x: Self) extends AnyVal {
+  extension [Self <: MutateResponses](x: Self) {
     
-    @scala.inline
-    def setMutate_response(value: js.Array[MutateResponse]): Self = StObject.set(x, "mutate_response", value.asInstanceOf[js.Any])
+    inline def setMutate_response(value: js.Array[MutateResponse]): Self = StObject.set(x, "mutate_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutate_responseUndefined: Self = StObject.set(x, "mutate_response", js.undefined)
+    inline def setMutate_responseUndefined: Self = StObject.set(x, "mutate_response", js.undefined)
     
-    @scala.inline
-    def setMutate_responseVarargs(value: MutateResponse*): Self = StObject.set(x, "mutate_response", js.Array(value :_*))
+    inline def setMutate_responseVarargs(value: MutateResponse*): Self = StObject.set(x, "mutate_response", js.Array(value :_*))
   }
 }

@@ -31,44 +31,32 @@ object Toolbar {
   }
   object ToolbarGroupProps {
     
-    @scala.inline
-    def apply(): ToolbarGroupProps = {
+    inline def apply(): ToolbarGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarGroupProps]
     }
     
-    @scala.inline
-    implicit class ToolbarGroupPropsMutableBuilder[Self <: ToolbarGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarGroupProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFirstChild(value: Boolean): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+      inline def setFirstChild(value: Boolean): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstChildUndefined: Self = StObject.set(x, "firstChild", js.undefined)
+      inline def setFirstChildUndefined: Self = StObject.set(x, "firstChild", js.undefined)
       
-      @scala.inline
-      def setFloat(value: left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
-      @scala.inline
-      def setLastChild(value: Boolean): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+      inline def setLastChild(value: Boolean): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChildUndefined: Self = StObject.set(x, "lastChild", js.undefined)
+      inline def setLastChildUndefined: Self = StObject.set(x, "lastChild", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -82,32 +70,24 @@ object Toolbar {
   }
   object ToolbarProps {
     
-    @scala.inline
-    def apply(): ToolbarProps = {
+    inline def apply(): ToolbarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarProps]
     }
     
-    @scala.inline
-    implicit class ToolbarPropsMutableBuilder[Self <: ToolbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setNoGutter(value: Boolean): Self = StObject.set(x, "noGutter", value.asInstanceOf[js.Any])
+      inline def setNoGutter(value: Boolean): Self = StObject.set(x, "noGutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoGutterUndefined: Self = StObject.set(x, "noGutter", js.undefined)
+      inline def setNoGutterUndefined: Self = StObject.set(x, "noGutter", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -121,26 +101,20 @@ object Toolbar {
   }
   object ToolbarSeparatorProps {
     
-    @scala.inline
-    def apply(): ToolbarSeparatorProps = {
+    inline def apply(): ToolbarSeparatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarSeparatorProps]
     }
     
-    @scala.inline
-    implicit class ToolbarSeparatorPropsMutableBuilder[Self <: ToolbarSeparatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarSeparatorProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -161,38 +135,28 @@ object Toolbar {
   }
   object ToolbarTitleProps {
     
-    @scala.inline
-    def apply(): ToolbarTitleProps = {
+    inline def apply(): ToolbarTitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarTitleProps]
     }
     
-    @scala.inline
-    implicit class ToolbarTitlePropsMutableBuilder[Self <: ToolbarTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarTitleProps](x: Self) {
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setRef(value: LegacyRef[ToolbarTitle]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: LegacyRef[ToolbarTitle]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ ToolbarTitle | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ ToolbarTitle | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

@@ -83,8 +83,7 @@ object adapterMod {
   }
   object MDCListAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClassForElementIndex: (Double, String) => Unit,
       focusItemAtIndex: Double => Unit,
       getAttributeForElementIndex: (Double, String) => String | Null,
@@ -107,59 +106,41 @@ object adapterMod {
       __obj.asInstanceOf[MDCListAdapter]
     }
     
-    @scala.inline
-    implicit class MDCListAdapterMutableBuilder[Self <: MDCListAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCListAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClassForElementIndex(value: (Double, String) => Unit): Self = StObject.set(x, "addClassForElementIndex", js.Any.fromFunction2(value))
+      inline def setAddClassForElementIndex(value: (Double, String) => Unit): Self = StObject.set(x, "addClassForElementIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusItemAtIndex(value: Double => Unit): Self = StObject.set(x, "focusItemAtIndex", js.Any.fromFunction1(value))
+      inline def setFocusItemAtIndex(value: Double => Unit): Self = StObject.set(x, "focusItemAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttributeForElementIndex(value: (Double, String) => String | Null): Self = StObject.set(x, "getAttributeForElementIndex", js.Any.fromFunction2(value))
+      inline def setGetAttributeForElementIndex(value: (Double, String) => String | Null): Self = StObject.set(x, "getAttributeForElementIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetFocusedElementIndex(value: () => Double): Self = StObject.set(x, "getFocusedElementIndex", js.Any.fromFunction0(value))
+      inline def setGetFocusedElementIndex(value: () => Double): Self = StObject.set(x, "getFocusedElementIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetListItemCount(value: () => Double): Self = StObject.set(x, "getListItemCount", js.Any.fromFunction0(value))
+      inline def setGetListItemCount(value: () => Double): Self = StObject.set(x, "getListItemCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryTextAtIndex(value: Double => String): Self = StObject.set(x, "getPrimaryTextAtIndex", js.Any.fromFunction1(value))
+      inline def setGetPrimaryTextAtIndex(value: Double => String): Self = StObject.set(x, "getPrimaryTextAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasCheckboxAtIndex(value: Double => Boolean): Self = StObject.set(x, "hasCheckboxAtIndex", js.Any.fromFunction1(value))
+      inline def setHasCheckboxAtIndex(value: Double => Boolean): Self = StObject.set(x, "hasCheckboxAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasRadioAtIndex(value: Double => Boolean): Self = StObject.set(x, "hasRadioAtIndex", js.Any.fromFunction1(value))
+      inline def setHasRadioAtIndex(value: Double => Boolean): Self = StObject.set(x, "hasRadioAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCheckboxCheckedAtIndex(value: Double => Boolean): Self = StObject.set(x, "isCheckboxCheckedAtIndex", js.Any.fromFunction1(value))
+      inline def setIsCheckboxCheckedAtIndex(value: Double => Boolean): Self = StObject.set(x, "isCheckboxCheckedAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFocusInsideList(value: () => Boolean): Self = StObject.set(x, "isFocusInsideList", js.Any.fromFunction0(value))
+      inline def setIsFocusInsideList(value: () => Boolean): Self = StObject.set(x, "isFocusInsideList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRootFocused(value: () => Boolean): Self = StObject.set(x, "isRootFocused", js.Any.fromFunction0(value))
+      inline def setIsRootFocused(value: () => Boolean): Self = StObject.set(x, "isRootFocused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListItemAtIndexHasClass(value: (Double, String) => Boolean): Self = StObject.set(x, "listItemAtIndexHasClass", js.Any.fromFunction2(value))
+      inline def setListItemAtIndexHasClass(value: (Double, String) => Boolean): Self = StObject.set(x, "listItemAtIndexHasClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotifyAction(value: Double => Unit): Self = StObject.set(x, "notifyAction", js.Any.fromFunction1(value))
+      inline def setNotifyAction(value: Double => Unit): Self = StObject.set(x, "notifyAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassForElementIndex(value: (Double, String) => Unit): Self = StObject.set(x, "removeClassForElementIndex", js.Any.fromFunction2(value))
+      inline def setRemoveClassForElementIndex(value: (Double, String) => Unit): Self = StObject.set(x, "removeClassForElementIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetAttributeForElementIndex(value: (Double, String, String) => Unit): Self = StObject.set(x, "setAttributeForElementIndex", js.Any.fromFunction3(value))
+      inline def setSetAttributeForElementIndex(value: (Double, String, String) => Unit): Self = StObject.set(x, "setAttributeForElementIndex", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetCheckedCheckboxOrRadioAtIndex(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setCheckedCheckboxOrRadioAtIndex", js.Any.fromFunction2(value))
+      inline def setSetCheckedCheckboxOrRadioAtIndex(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setCheckedCheckboxOrRadioAtIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTabIndexForListItemChildren(value: (Double, String) => Unit): Self = StObject.set(x, "setTabIndexForListItemChildren", js.Any.fromFunction2(value))
+      inline def setSetTabIndexForListItemChildren(value: (Double, String) => Unit): Self = StObject.set(x, "setTabIndexForListItemChildren", js.Any.fromFunction2(value))
     }
   }
 }

@@ -49,64 +49,44 @@ object BorderLineStyle {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BORDER_LINE_STYLE_MAX: `17` = 17.asInstanceOf[`17`]
+    inline def BORDER_LINE_STYLE_MAX: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def DASHED: `2` = 2.asInstanceOf[`2`]
+    inline def DASHED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def DASH_DOT: `16` = 16.asInstanceOf[`16`]
+    inline def DASH_DOT: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def DASH_DOT_DOT: `17` = 17.asInstanceOf[`17`]
+    inline def DASH_DOT_DOT: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def DOTTED: `1` = 1.asInstanceOf[`1`]
+    inline def DOTTED: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DOUBLE: `3` = 3.asInstanceOf[`3`]
+    inline def DOUBLE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DOUBLE_THIN: `15` = 15.asInstanceOf[`15`]
+    inline def DOUBLE_THIN: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def EMBOSSED: `10` = 10.asInstanceOf[`10`]
+    inline def EMBOSSED: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def ENGRAVED: `11` = 11.asInstanceOf[`11`]
+    inline def ENGRAVED: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def FINE_DASHED: `14` = 14.asInstanceOf[`14`]
+    inline def FINE_DASHED: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def INSET: `13` = 13.asInstanceOf[`13`]
+    inline def INSET: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def NONE: `32767` = 32767.asInstanceOf[`32767`]
+    inline def NONE: `32767` = 32767.asInstanceOf[`32767`]
     
-    @scala.inline
-    def OUTSET: `12` = 12.asInstanceOf[`12`]
+    inline def OUTSET: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def SOLID: `0` = 0.asInstanceOf[`0`]
+    inline def SOLID: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def THICKTHIN_LARGEGAP: `9` = 9.asInstanceOf[`9`]
+    inline def THICKTHIN_LARGEGAP: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def THICKTHIN_MEDIUMGAP: `8` = 8.asInstanceOf[`8`]
+    inline def THICKTHIN_MEDIUMGAP: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def THICKTHIN_SMALLGAP: `7` = 7.asInstanceOf[`7`]
+    inline def THICKTHIN_SMALLGAP: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def THINTHICK_LARGEGAP: `6` = 6.asInstanceOf[`6`]
+    inline def THINTHICK_LARGEGAP: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def THINTHICK_MEDIUMGAP: `5` = 5.asInstanceOf[`5`]
+    inline def THINTHICK_MEDIUMGAP: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def THINTHICK_SMALLGAP: `4` = 4.asInstanceOf[`4`]
+    inline def THINTHICK_SMALLGAP: `4` = 4.asInstanceOf[`4`]
   }
 }

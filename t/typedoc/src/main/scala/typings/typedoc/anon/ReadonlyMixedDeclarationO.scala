@@ -23,41 +23,30 @@ trait ReadonlyMixedDeclarationO extends StObject {
 }
 object ReadonlyMixedDeclarationO {
   
-  @scala.inline
-  def apply(help: String, name: String, `type`: Mixed): ReadonlyMixedDeclarationO = {
+  inline def apply(help: String, name: String, `type`: Mixed): ReadonlyMixedDeclarationO = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyMixedDeclarationO]
   }
   
-  @scala.inline
-  implicit class ReadonlyMixedDeclarationOMutableBuilder[Self <: ReadonlyMixedDeclarationO] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyMixedDeclarationO](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: ParameterScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: ParameterScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+    inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
-    @scala.inline
-    def setType(value: Mixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Mixed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

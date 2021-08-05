@@ -11,20 +11,17 @@ object htmlParserStrings {
   sealed trait Greaterthansign
     extends StObject
        with Token
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
   sealed trait QuestionmarkGreaterthansign
     extends StObject
        with Token
-  @scala.inline
-  def QuestionmarkGreaterthansign: QuestionmarkGreaterthansign = "?>".asInstanceOf[QuestionmarkGreaterthansign]
+  inline def QuestionmarkGreaterthansign: QuestionmarkGreaterthansign = "?>".asInstanceOf[QuestionmarkGreaterthansign]
   
   @js.native
   sealed trait SlashGreaterthansign
     extends StObject
        with Token
-  @scala.inline
-  def SlashGreaterthansign: SlashGreaterthansign = "/>".asInstanceOf[SlashGreaterthansign]
+  inline def SlashGreaterthansign: SlashGreaterthansign = "/>".asInstanceOf[SlashGreaterthansign]
 }

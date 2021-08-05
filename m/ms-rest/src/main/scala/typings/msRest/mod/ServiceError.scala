@@ -19,8 +19,7 @@ trait ServiceError
 }
 object ServiceError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: js.Any,
     message: String,
     name: String,
@@ -32,19 +31,14 @@ object ServiceError {
     __obj.asInstanceOf[ServiceError]
   }
   
-  @scala.inline
-  implicit class ServiceErrorMutableBuilder[Self <: ServiceError] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceError](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: WebResource): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: WebResource): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: typings.node.httpMod.IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: typings.node.httpMod.IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

@@ -29,61 +29,43 @@ trait PartialZlibOptions extends StObject {
 }
 object PartialZlibOptions {
   
-  @scala.inline
-  def apply(): PartialZlibOptions = {
+  inline def apply(): PartialZlibOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialZlibOptions]
   }
   
-  @scala.inline
-  implicit class PartialZlibOptionsMutableBuilder[Self <: PartialZlibOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialZlibOptions](x: Self) {
     
-    @scala.inline
-    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    @scala.inline
-    def setDictionary(value: Buffer | TypedArray | DataView | ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+    inline def setDictionary(value: Buffer | TypedArray | DataView | ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
+    inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
-    @scala.inline
-    def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
+    inline def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishFlushUndefined: Self = StObject.set(x, "finishFlush", js.undefined)
+    inline def setFinishFlushUndefined: Self = StObject.set(x, "finishFlush", js.undefined)
     
-    @scala.inline
-    def setFlush(value: Double): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+    inline def setFlush(value: Double): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+    inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
+    inline def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
+    inline def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
     
-    @scala.inline
-    def setStrategy(value: Double): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: Double): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
-    @scala.inline
-    def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
+    inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
+    inline def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
   }
 }

@@ -50,21 +50,16 @@ object workingStorageMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WorkingStorageState): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WorkingStorageState, opts: CustomResourceOptions): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
+    inline def get(name: String, id: Input[ID]): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
+    inline def get(name: String, id: Input[ID], state: WorkingStorageState): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
+    inline def get(name: String, id: Input[ID], state: WorkingStorageState, opts: CustomResourceOptions): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
     
     /**
       * Returns true if the given object is an instance of WorkingStorage.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean]
   }
   
   trait WorkingStorageArgs extends StObject {
@@ -81,20 +76,16 @@ object workingStorageMod {
   }
   object WorkingStorageArgs {
     
-    @scala.inline
-    def apply(diskId: Input[String], gatewayArn: Input[String]): WorkingStorageArgs = {
+    inline def apply(diskId: Input[String], gatewayArn: Input[String]): WorkingStorageArgs = {
       val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkingStorageArgs]
     }
     
-    @scala.inline
-    implicit class WorkingStorageArgsMutableBuilder[Self <: WorkingStorageArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WorkingStorageArgs](x: Self) {
       
-      @scala.inline
-      def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
+      inline def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object workingStorageMod {
   }
   object WorkingStorageState {
     
-    @scala.inline
-    def apply(): WorkingStorageState = {
+    inline def apply(): WorkingStorageState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkingStorageState]
     }
     
-    @scala.inline
-    implicit class WorkingStorageStateMutableBuilder[Self <: WorkingStorageState] (val x: Self) extends AnyVal {
+    extension [Self <: WorkingStorageState](x: Self) {
       
-      @scala.inline
-      def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
+      inline def setDiskId(value: Input[String]): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskIdUndefined: Self = StObject.set(x, "diskId", js.undefined)
+      inline def setDiskIdUndefined: Self = StObject.set(x, "diskId", js.undefined)
       
-      @scala.inline
-      def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: Input[String]): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayArnUndefined: Self = StObject.set(x, "gatewayArn", js.undefined)
+      inline def setGatewayArnUndefined: Self = StObject.set(x, "gatewayArn", js.undefined)
     }
   }
 }

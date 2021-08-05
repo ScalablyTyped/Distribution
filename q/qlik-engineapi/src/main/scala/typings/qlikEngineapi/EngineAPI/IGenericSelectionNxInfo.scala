@@ -17,16 +17,13 @@ trait IGenericSelectionNxInfo
 }
 object IGenericSelectionNxInfo {
   
-  @scala.inline
-  def apply(): IGenericSelectionNxInfo = {
+  inline def apply(): IGenericSelectionNxInfo = {
     val __obj = js.Dynamic.literal(qType = "CurrentSelection")
     __obj.asInstanceOf[IGenericSelectionNxInfo]
   }
   
-  @scala.inline
-  implicit class IGenericSelectionNxInfoMutableBuilder[Self <: IGenericSelectionNxInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericSelectionNxInfo](x: Self) {
     
-    @scala.inline
-    def setQType(value: CurrentSelection): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: CurrentSelection): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

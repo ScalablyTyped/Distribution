@@ -15,8 +15,7 @@ object parseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(options: ParseOptions): SFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[SFCDescriptor]
+  inline def parse(options: ParseOptions): SFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[SFCDescriptor]
   
   trait ParseOptions extends StObject {
     
@@ -34,44 +33,32 @@ object parseMod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(compiler: VueTemplateCompiler, source: String): ParseOptions = {
+    inline def apply(compiler: VueTemplateCompiler, source: String): ParseOptions = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: VueTemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: VueTemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerParseOptions(value: VueTemplateCompilerParseOptions): Self = StObject.set(x, "compilerParseOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerParseOptions(value: VueTemplateCompilerParseOptions): Self = StObject.set(x, "compilerParseOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerParseOptionsUndefined: Self = StObject.set(x, "compilerParseOptions", js.undefined)
+      inline def setCompilerParseOptionsUndefined: Self = StObject.set(x, "compilerParseOptions", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setNeedMap(value: Boolean): Self = StObject.set(x, "needMap", value.asInstanceOf[js.Any])
+      inline def setNeedMap(value: Boolean): Self = StObject.set(x, "needMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedMapUndefined: Self = StObject.set(x, "needMap", js.undefined)
+      inline def setNeedMapUndefined: Self = StObject.set(x, "needMap", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
+      inline def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
+      inline def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
     }
   }
   
@@ -89,8 +76,7 @@ object parseMod {
   }
   object SFCBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attrs: StringDictionary[String | `true`],
       content: String,
       end: Double,
@@ -102,32 +88,23 @@ object parseMod {
       __obj.asInstanceOf[SFCBlock]
     }
     
-    @scala.inline
-    implicit class SFCBlockMutableBuilder[Self <: SFCBlock] (val x: Self) extends AnyVal {
+    extension [Self <: SFCBlock](x: Self) {
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setModule(value: String | Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String | Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+      inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
+      inline def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   
@@ -147,8 +124,7 @@ object parseMod {
   }
   object SFCCustomBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attrs: StringDictionary[String | `true`],
       content: String,
       end: Double,
@@ -160,29 +136,21 @@ object parseMod {
       __obj.asInstanceOf[SFCCustomBlock]
     }
     
-    @scala.inline
-    implicit class SFCCustomBlockMutableBuilder[Self <: SFCCustomBlock] (val x: Self) extends AnyVal {
+    extension [Self <: SFCCustomBlock](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: StringDictionary[String | `true`]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[String | `true`]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,38 +166,28 @@ object parseMod {
   }
   object SFCDescriptor {
     
-    @scala.inline
-    def apply(customBlocks: js.Array[SFCCustomBlock], styles: js.Array[SFCBlock]): SFCDescriptor = {
+    inline def apply(customBlocks: js.Array[SFCCustomBlock], styles: js.Array[SFCBlock]): SFCDescriptor = {
       val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], script = null, template = null)
       __obj.asInstanceOf[SFCDescriptor]
     }
     
-    @scala.inline
-    implicit class SFCDescriptorMutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: SFCDescriptor](x: Self) {
       
-      @scala.inline
-      def setCustomBlocks(value: js.Array[SFCCustomBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
+      inline def setCustomBlocks(value: js.Array[SFCCustomBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomBlocksVarargs(value: SFCCustomBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
+      inline def setCustomBlocksVarargs(value: SFCCustomBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptNull: Self = StObject.set(x, "script", null)
+      inline def setScriptNull: Self = StObject.set(x, "script", null)
       
-      @scala.inline
-      def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateNull: Self = StObject.set(x, "template", null)
+      inline def setTemplateNull: Self = StObject.set(x, "template", null)
     }
   }
 }

@@ -12,6 +12,5 @@ object typeScriptReporterRpcClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTypeScriptReporterRpcClient(configuration: TypeScriptReporterConfiguration): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporterRpcClient")(configuration.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
+  inline def createTypeScriptReporterRpcClient(configuration: TypeScriptReporterConfiguration): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporterRpcClient")(configuration.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
 }

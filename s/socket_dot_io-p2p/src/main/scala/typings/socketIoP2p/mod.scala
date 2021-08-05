@@ -83,20 +83,16 @@ object mod {
   }
   object DefaultOps {
     
-    @scala.inline
-    def apply(autoUpgrade: Boolean, numClients: Double): DefaultOps = {
+    inline def apply(autoUpgrade: Boolean, numClients: Double): DefaultOps = {
       val __obj = js.Dynamic.literal(autoUpgrade = autoUpgrade.asInstanceOf[js.Any], numClients = numClients.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultOps]
     }
     
-    @scala.inline
-    implicit class DefaultOpsMutableBuilder[Self <: DefaultOps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultOps](x: Self) {
       
-      @scala.inline
-      def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
+      inline def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumClients(value: Double): Self = StObject.set(x, "numClients", value.asInstanceOf[js.Any])
+      inline def setNumClients(value: Double): Self = StObject.set(x, "numClients", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,32 +118,24 @@ object mod {
   }
   object P2POptions {
     
-    @scala.inline
-    def apply(): P2POptions = {
+    inline def apply(): P2POptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[P2POptions]
     }
     
-    @scala.inline
-    implicit class P2POptionsMutableBuilder[Self <: P2POptions] (val x: Self) extends AnyVal {
+    extension [Self <: P2POptions](x: Self) {
       
-      @scala.inline
-      def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
+      inline def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUpgradeUndefined: Self = StObject.set(x, "autoUpgrade", js.undefined)
+      inline def setAutoUpgradeUndefined: Self = StObject.set(x, "autoUpgrade", js.undefined)
       
-      @scala.inline
-      def setNumClients(value: Double): Self = StObject.set(x, "numClients", value.asInstanceOf[js.Any])
+      inline def setNumClients(value: Double): Self = StObject.set(x, "numClients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumClientsUndefined: Self = StObject.set(x, "numClients", js.undefined)
+      inline def setNumClientsUndefined: Self = StObject.set(x, "numClients", js.undefined)
       
-      @scala.inline
-      def setPeerOpts(value: PeerOpts): Self = StObject.set(x, "peerOpts", value.asInstanceOf[js.Any])
+      inline def setPeerOpts(value: PeerOpts): Self = StObject.set(x, "peerOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerOptsUndefined: Self = StObject.set(x, "peerOpts", js.undefined)
+      inline def setPeerOptsUndefined: Self = StObject.set(x, "peerOpts", js.undefined)
     }
   }
   
@@ -232,95 +220,66 @@ object mod {
   }
   object PeerOpts {
     
-    @scala.inline
-    def apply(): PeerOpts = {
+    inline def apply(): PeerOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PeerOpts]
     }
     
-    @scala.inline
-    implicit class PeerOptsMutableBuilder[Self <: PeerOpts] (val x: Self) extends AnyVal {
+    extension [Self <: PeerOpts](x: Self) {
       
-      @scala.inline
-      def setAnswerConstraints(value: js.Object): Self = StObject.set(x, "answerConstraints", value.asInstanceOf[js.Any])
+      inline def setAnswerConstraints(value: js.Object): Self = StObject.set(x, "answerConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnswerConstraintsUndefined: Self = StObject.set(x, "answerConstraints", js.undefined)
+      inline def setAnswerConstraintsUndefined: Self = StObject.set(x, "answerConstraints", js.undefined)
       
-      @scala.inline
-      def setChannelConfig(value: js.Object): Self = StObject.set(x, "channelConfig", value.asInstanceOf[js.Any])
+      inline def setChannelConfig(value: js.Object): Self = StObject.set(x, "channelConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelConfigUndefined: Self = StObject.set(x, "channelConfig", js.undefined)
+      inline def setChannelConfigUndefined: Self = StObject.set(x, "channelConfig", js.undefined)
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+      inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
       
-      @scala.inline
-      def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      @scala.inline
-      def setInitiator(value: Boolean): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+      inline def setInitiator(value: Boolean): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
+      inline def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setOfferConstraints(value: js.Object): Self = StObject.set(x, "offerConstraints", value.asInstanceOf[js.Any])
+      inline def setOfferConstraints(value: js.Object): Self = StObject.set(x, "offerConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOfferConstraintsUndefined: Self = StObject.set(x, "offerConstraints", js.undefined)
+      inline def setOfferConstraintsUndefined: Self = StObject.set(x, "offerConstraints", js.undefined)
       
-      @scala.inline
-      def setSdpTransfrom(value: /* sdp */ js.Any => js.Any): Self = StObject.set(x, "sdpTransfrom", js.Any.fromFunction1(value))
+      inline def setSdpTransfrom(value: /* sdp */ js.Any => js.Any): Self = StObject.set(x, "sdpTransfrom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSdpTransfromUndefined: Self = StObject.set(x, "sdpTransfrom", js.undefined)
+      inline def setSdpTransfromUndefined: Self = StObject.set(x, "sdpTransfrom", js.undefined)
       
-      @scala.inline
-      def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setStreams(value: js.Array[MediaStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+      inline def setStreams(value: js.Array[MediaStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
+      inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
       
-      @scala.inline
-      def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
       
-      @scala.inline
-      def setTrickle(value: Boolean): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
+      inline def setTrickle(value: Boolean): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrickleUndefined: Self = StObject.set(x, "trickle", js.undefined)
+      inline def setTrickleUndefined: Self = StObject.set(x, "trickle", js.undefined)
       
-      @scala.inline
-      def setWrtc(value: RTCPeerConnection | RTCSessionDescription | RTCIceCandidate): Self = StObject.set(x, "wrtc", value.asInstanceOf[js.Any])
+      inline def setWrtc(value: RTCPeerConnection | RTCSessionDescription | RTCIceCandidate): Self = StObject.set(x, "wrtc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrtcUndefined: Self = StObject.set(x, "wrtc", js.undefined)
+      inline def setWrtcUndefined: Self = StObject.set(x, "wrtc", js.undefined)
     }
   }
   
@@ -367,8 +326,7 @@ object mod {
   }
   object SocketioP2PStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       binarySlice: (js.Array[js.Any], Double, js.Function0[Unit]) => Unit,
       cb: () => Unit,
       decoder: js.Any,
@@ -389,53 +347,37 @@ object mod {
       __obj.asInstanceOf[SocketioP2PStatic]
     }
     
-    @scala.inline
-    implicit class SocketioP2PStaticMutableBuilder[Self <: SocketioP2PStatic] (val x: Self) extends AnyVal {
+    extension [Self <: SocketioP2PStatic](x: Self) {
       
-      @scala.inline
-      def setBinarySlice(value: (js.Array[js.Any], Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "binarySlice", js.Any.fromFunction3(value))
+      inline def setBinarySlice(value: (js.Array[js.Any], Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "binarySlice", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCb(value: () => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction0(value))
+      inline def setCb(value: () => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+      inline def setDecoder(value: js.Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOps(value: DefaultOps): Self = StObject.set(x, "defaultOps", value.asInstanceOf[js.Any])
+      inline def setDefaultOps(value: DefaultOps): Self = StObject.set(x, "defaultOps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmit(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNumConnectedClients(value: Double): Self = StObject.set(x, "numConnectedClients", value.asInstanceOf[js.Any])
+      inline def setNumConnectedClients(value: Double): Self = StObject.set(x, "numConnectedClients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: (String, js.Function1[/* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpts(value: P2POptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: P2POptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerOpts(value: PeerOpts): Self = StObject.set(x, "peerOpts", value.asInstanceOf[js.Any])
+      inline def setPeerOpts(value: PeerOpts): Self = StObject.set(x, "peerOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupPeerEvents(value: js.Any => Unit): Self = StObject.set(x, "setupPeerEvents", js.Any.fromFunction1(value))
+      inline def setSetupPeerEvents(value: js.Any => Unit): Self = StObject.set(x, "setupPeerEvents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSocket(value: js.Any): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: js.Any): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpgrade(value: () => Unit): Self = StObject.set(x, "upgrade", js.Any.fromFunction0(value))
+      inline def setUpgrade(value: () => Unit): Self = StObject.set(x, "upgrade", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUsePeerConnection(value: Boolean): Self = StObject.set(x, "usePeerConnection", value.asInstanceOf[js.Any])
+      inline def setUsePeerConnection(value: Boolean): Self = StObject.set(x, "usePeerConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSockets(value: Boolean): Self = StObject.set(x, "useSockets", value.asInstanceOf[js.Any])
+      inline def setUseSockets(value: Boolean): Self = StObject.set(x, "useSockets", value.asInstanceOf[js.Any])
     }
   }
 }

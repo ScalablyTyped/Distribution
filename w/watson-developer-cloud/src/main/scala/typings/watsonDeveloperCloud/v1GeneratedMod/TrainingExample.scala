@@ -18,31 +18,23 @@ trait TrainingExample extends StObject {
 }
 object TrainingExample {
   
-  @scala.inline
-  def apply(): TrainingExample = {
+  inline def apply(): TrainingExample = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingExample]
   }
   
-  @scala.inline
-  implicit class TrainingExampleMutableBuilder[Self <: TrainingExample] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingExample](x: Self) {
     
-    @scala.inline
-    def setCross_reference(value: String): Self = StObject.set(x, "cross_reference", value.asInstanceOf[js.Any])
+    inline def setCross_reference(value: String): Self = StObject.set(x, "cross_reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCross_referenceUndefined: Self = StObject.set(x, "cross_reference", js.undefined)
+    inline def setCross_referenceUndefined: Self = StObject.set(x, "cross_reference", js.undefined)
     
-    @scala.inline
-    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
+    inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
+    inline def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
-    @scala.inline
-    def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+    inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
+    inline def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
   }
 }

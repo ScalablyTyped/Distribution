@@ -18,28 +18,21 @@ trait ListStacksInput extends StObject {
 }
 object ListStacksInput {
   
-  @scala.inline
-  def apply(): ListStacksInput = {
+  inline def apply(): ListStacksInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStacksInput]
   }
   
-  @scala.inline
-  implicit class ListStacksInputMutableBuilder[Self <: ListStacksInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStacksInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackStatusFilter(value: StackStatusFilter): Self = StObject.set(x, "StackStatusFilter", value.asInstanceOf[js.Any])
+    inline def setStackStatusFilter(value: StackStatusFilter): Self = StObject.set(x, "StackStatusFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackStatusFilterUndefined: Self = StObject.set(x, "StackStatusFilter", js.undefined)
+    inline def setStackStatusFilterUndefined: Self = StObject.set(x, "StackStatusFilter", js.undefined)
     
-    @scala.inline
-    def setStackStatusFilterVarargs(value: StackStatus*): Self = StObject.set(x, "StackStatusFilter", js.Array(value :_*))
+    inline def setStackStatusFilterVarargs(value: StackStatus*): Self = StObject.set(x, "StackStatusFilter", js.Array(value :_*))
   }
 }

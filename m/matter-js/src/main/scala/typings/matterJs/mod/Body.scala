@@ -417,8 +417,7 @@ object Body {
     * @param {vector} position
     * @param {vector} force
     */
-  @scala.inline
-  def applyForce(body: Body, position: Vector, force: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyForce")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyForce(body: Body, position: Vector, force: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyForce")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new rigid body model. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -428,8 +427,7 @@ object Body {
     * @param {} options
     * @return {body} body
     */
-  @scala.inline
-  def create(options: IBodyDefinition): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Body]
+  inline def create(options: IBodyDefinition): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Body]
   
   /**
     * Returns the next unique category bitfield (starting after the initial default category `0x0001`).
@@ -437,8 +435,7 @@ object Body {
     * @method nextCategory
     * @return {Number} Unique category bitfield
     */
-  @scala.inline
-  def nextCategory(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextCategory")().asInstanceOf[Double]
+  inline def nextCategory(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextCategory")().asInstanceOf[Double]
   
   /**
     * Returns the next unique group index for which bodies will collide.
@@ -448,8 +445,7 @@ object Body {
     * @param {bool} [isNonColliding=false]
     * @return {Number} Unique group index
     */
-  @scala.inline
-  def nextGroup(isNonColliding: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextGroup")(isNonColliding.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def nextGroup(isNonColliding: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextGroup")(isNonColliding.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Rotates a body by a given angle relative to its current angle, without imparting any angular velocity.
@@ -457,8 +453,7 @@ object Body {
     * @param {body} body
     * @param {number} rotation
     */
-  @scala.inline
-  def rotate(body: Body, rotation: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(body.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rotate(body: Body, rotation: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(body.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Scales the body, including updating physical properties (mass, area, axes, inertia), from a world-space point (default is body centre).
@@ -468,10 +463,8 @@ object Body {
     * @param {number} scaleY
     * @param {vector} [point]
     */
-  @scala.inline
-  def scale(body: Body, scaleX: Double, scaleY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def scale(body: Body, scaleX: Double, scaleY: Double, point: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scale(body: Body, scaleX: Double, scaleY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scale(body: Body, scaleX: Double, scaleY: Double, point: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(body.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Given a property and a value (or map of), sets the property(s) on the body, using the appropriate setter functions if they exist.
@@ -481,10 +474,8 @@ object Body {
     * @param {} settings A property name (or map of properties and values) to set on the body.
     * @param {} value The value to set if `settings` is a single property name.
     */
-  @scala.inline
-  def set(body: Body, settings: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def set(body: Body, settings: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(body: Body, settings: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(body: Body, settings: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the angle of the body instantly. Angular velocity, position, force etc. are unchanged.
@@ -492,8 +483,7 @@ object Body {
     * @param {body} body
     * @param {number} angle
     */
-  @scala.inline
-  def setAngle(body: Body, angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngle")(body.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setAngle(body: Body, angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngle")(body.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the angular velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
@@ -501,8 +491,7 @@ object Body {
     * @param {body} body
     * @param {number} velocity
     */
-  @scala.inline
-  def setAngularVelocity(body: Body, velocity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngularVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setAngularVelocity(body: Body, velocity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAngularVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set the centre of mass of the body.
@@ -515,10 +504,8 @@ object Body {
     * @param centre
     * @param relative
     */
-  @scala.inline
-  def setCentre(body: Body, centre: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCentre")(body.asInstanceOf[js.Any], centre.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setCentre(body: Body, centre: Vector, relative: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCentre")(body.asInstanceOf[js.Any], centre.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCentre(body: Body, centre: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCentre")(body.asInstanceOf[js.Any], centre.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setCentre(body: Body, centre: Vector, relative: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCentre")(body.asInstanceOf[js.Any], centre.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the density of the body. Mass is automatically updated to reflect the change.
@@ -526,8 +513,7 @@ object Body {
     * @param {body} body
     * @param {number} density
     */
-  @scala.inline
-  def setDensity(body: Body, density: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDensity")(body.asInstanceOf[js.Any], density.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setDensity(body: Body, density: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDensity")(body.asInstanceOf[js.Any], density.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the moment of inertia (i.e. second moment of area) of the body of the body.
@@ -536,8 +522,7 @@ object Body {
     * @param {body} body
     * @param {number} inertia
     */
-  @scala.inline
-  def setInertia(body: Body, interna: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInertia")(body.asInstanceOf[js.Any], interna.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setInertia(body: Body, interna: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInertia")(body.asInstanceOf[js.Any], interna.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the mass of the body. Inverse mass and density are automatically updated to reflect the change.
@@ -545,8 +530,7 @@ object Body {
     * @param {body} body
     * @param {number} mass
     */
-  @scala.inline
-  def setMass(body: Body, mass: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMass")(body.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setMass(body: Body, mass: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMass")(body.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the parts of the `body` and updates mass, inertia and centroid.
@@ -558,10 +542,8 @@ object Body {
     * @param [body] parts
     * @param {bool} [autoHull=true]
     */
-  @scala.inline
-  def setParts(body: Body, parts: js.Array[Body]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setParts(body: Body, parts: js.Array[Body], autoHull: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any], autoHull.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setParts(body: Body, parts: js.Array[Body]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setParts(body: Body, parts: js.Array[Body], autoHull: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParts")(body.asInstanceOf[js.Any], parts.asInstanceOf[js.Any], autoHull.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the position of the body instantly. Velocity, angle, force etc. are unchanged.
@@ -569,8 +551,7 @@ object Body {
     * @param {body} body
     * @param {vector} position
     */
-  @scala.inline
-  def setPosition(body: Body, position: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPosition(body: Body, position: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(body.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the body as static, including isStatic flag and setting mass and inertia to Infinity.
@@ -578,8 +559,7 @@ object Body {
     * @param {body} body
     * @param {bool} isStatic
     */
-  @scala.inline
-  def setStatic(body: Body, isStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(body.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setStatic(body: Body, isStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(body.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the linear velocity of the body instantly. Position, angle, force etc. are unchanged. See also `Body.applyForce`.
@@ -587,8 +567,7 @@ object Body {
     * @param {body} body
     * @param {vector} velocity
     */
-  @scala.inline
-  def setVelocity(body: Body, velocity: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setVelocity(body: Body, velocity: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVelocity")(body.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the body's vertices and updates body properties accordingly, including inertia, area and mass (with respect to `body.density`).
@@ -602,8 +581,7 @@ object Body {
     * @param {body} body
     * @param {vector[]} vertices
     */
-  @scala.inline
-  def setVertices(body: Body, vertices: js.Array[Vector]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVertices")(body.asInstanceOf[js.Any], vertices.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setVertices(body: Body, vertices: js.Array[Vector]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVertices")(body.asInstanceOf[js.Any], vertices.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Moves a body by a given vector relative to its current position, without imparting any velocity.
@@ -611,8 +589,7 @@ object Body {
     * @param {body} body
     * @param {vector} translation
     */
-  @scala.inline
-  def translate(body: Body, translation: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(body.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def translate(body: Body, translation: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(body.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Performs a simulation step for the given `body`, including updating position and angle using Verlet integration.
@@ -622,6 +599,5 @@ object Body {
     * @param {number} timeScale
     * @param {number} correction
     */
-  @scala.inline
-  def update(body: Body, deltaTime: Double, timeScale: Double, correction: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(body.asInstanceOf[js.Any], deltaTime.asInstanceOf[js.Any], timeScale.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(body: Body, deltaTime: Double, timeScale: Double, correction: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(body.asInstanceOf[js.Any], deltaTime.asInstanceOf[js.Any], timeScale.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

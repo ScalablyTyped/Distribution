@@ -14,31 +14,23 @@ trait DialogAction extends StObject {
 }
 object DialogAction {
   
-  @scala.inline
-  def apply(): DialogAction = {
+  inline def apply(): DialogAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogAction]
   }
   
-  @scala.inline
-  implicit class DialogActionMutableBuilder[Self <: DialogAction] (val x: Self) extends AnyVal {
+  extension [Self <: DialogAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

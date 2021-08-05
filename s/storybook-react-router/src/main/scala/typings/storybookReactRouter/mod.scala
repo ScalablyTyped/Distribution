@@ -15,14 +15,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): DecoratorFunction[StoryFnReactReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
-  @scala.inline
-  def default(links: js.Object): DecoratorFunction[StoryFnReactReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(links.asInstanceOf[js.Any]).asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
-  @scala.inline
-  def default(links: js.Object, routerProps: MemoryRouterProps): DecoratorFunction[StoryFnReactReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(links.asInstanceOf[js.Any], routerProps.asInstanceOf[js.Any])).asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
-  @scala.inline
-  def default(links: Unit, routerProps: MemoryRouterProps): DecoratorFunction[StoryFnReactReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(links.asInstanceOf[js.Any], routerProps.asInstanceOf[js.Any])).asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
+  inline def default(): DecoratorFunction[StoryFnReactReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
+  inline def default(links: js.Object): DecoratorFunction[StoryFnReactReturnType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(links.asInstanceOf[js.Any]).asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
+  inline def default(links: js.Object, routerProps: MemoryRouterProps): DecoratorFunction[StoryFnReactReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(links.asInstanceOf[js.Any], routerProps.asInstanceOf[js.Any])).asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
+  inline def default(links: Unit, routerProps: MemoryRouterProps): DecoratorFunction[StoryFnReactReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(links.asInstanceOf[js.Any], routerProps.asInstanceOf[js.Any])).asInstanceOf[DecoratorFunction[StoryFnReactReturnType]]
   
   @JSImport("storybook-react-router", "StoryRouter")
   @js.native

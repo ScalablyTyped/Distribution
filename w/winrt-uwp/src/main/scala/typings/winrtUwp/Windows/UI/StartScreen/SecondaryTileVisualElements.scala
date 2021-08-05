@@ -47,8 +47,7 @@ trait SecondaryTileVisualElements extends StObject {
 }
 object SecondaryTileVisualElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: Color,
     foregroundText: ForegroundText,
     showNameOnSquare150x150Logo: Boolean,
@@ -66,43 +65,30 @@ object SecondaryTileVisualElements {
     __obj.asInstanceOf[SecondaryTileVisualElements]
   }
   
-  @scala.inline
-  implicit class SecondaryTileVisualElementsMutableBuilder[Self <: SecondaryTileVisualElements] (val x: Self) extends AnyVal {
+  extension [Self <: SecondaryTileVisualElements](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundText(value: ForegroundText): Self = StObject.set(x, "foregroundText", value.asInstanceOf[js.Any])
+    inline def setForegroundText(value: ForegroundText): Self = StObject.set(x, "foregroundText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNameOnSquare150x150Logo(value: Boolean): Self = StObject.set(x, "showNameOnSquare150x150Logo", value.asInstanceOf[js.Any])
+    inline def setShowNameOnSquare150x150Logo(value: Boolean): Self = StObject.set(x, "showNameOnSquare150x150Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNameOnSquare310x310Logo(value: Boolean): Self = StObject.set(x, "showNameOnSquare310x310Logo", value.asInstanceOf[js.Any])
+    inline def setShowNameOnSquare310x310Logo(value: Boolean): Self = StObject.set(x, "showNameOnSquare310x310Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNameOnWide310x150Logo(value: Boolean): Self = StObject.set(x, "showNameOnWide310x150Logo", value.asInstanceOf[js.Any])
+    inline def setShowNameOnWide310x150Logo(value: Boolean): Self = StObject.set(x, "showNameOnWide310x150Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare150x150Logo(value: Uri): Self = StObject.set(x, "square150x150Logo", value.asInstanceOf[js.Any])
+    inline def setSquare150x150Logo(value: Uri): Self = StObject.set(x, "square150x150Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare30x30Logo(value: Uri): Self = StObject.set(x, "square30x30Logo", value.asInstanceOf[js.Any])
+    inline def setSquare30x30Logo(value: Uri): Self = StObject.set(x, "square30x30Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare310x310Logo(value: Uri): Self = StObject.set(x, "square310x310Logo", value.asInstanceOf[js.Any])
+    inline def setSquare310x310Logo(value: Uri): Self = StObject.set(x, "square310x310Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare44x44Logo(value: Uri): Self = StObject.set(x, "square44x44Logo", value.asInstanceOf[js.Any])
+    inline def setSquare44x44Logo(value: Uri): Self = StObject.set(x, "square44x44Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare70x70Logo(value: Uri): Self = StObject.set(x, "square70x70Logo", value.asInstanceOf[js.Any])
+    inline def setSquare70x70Logo(value: Uri): Self = StObject.set(x, "square70x70Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare71x71Logo(value: Uri): Self = StObject.set(x, "square71x71Logo", value.asInstanceOf[js.Any])
+    inline def setSquare71x71Logo(value: Uri): Self = StObject.set(x, "square71x71Logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWide310x150Logo(value: Uri): Self = StObject.set(x, "wide310x150Logo", value.asInstanceOf[js.Any])
+    inline def setWide310x150Logo(value: Uri): Self = StObject.set(x, "wide310x150Logo", value.asInstanceOf[js.Any])
   }
 }

@@ -8,21 +8,17 @@ object grpcStrings {
   
   @js.native
   sealed trait ServiceDefinition extends StObject
-  @scala.inline
-  def ServiceDefinition: ServiceDefinition = "ServiceDefinition".asInstanceOf[ServiceDefinition]
+  inline def ServiceDefinition: ServiceDefinition = "ServiceDefinition".asInstanceOf[ServiceDefinition]
   
   @js.native
   sealed trait detect extends StObject
-  @scala.inline
-  def detect: detect = "detect".asInstanceOf[detect]
+  inline def detect: detect = "detect".asInstanceOf[detect]
   
   @js.native
   sealed trait json extends StObject
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait proto extends StObject
-  @scala.inline
-  def proto: proto = "proto".asInstanceOf[proto]
+  inline def proto: proto = "proto".asInstanceOf[proto]
 }

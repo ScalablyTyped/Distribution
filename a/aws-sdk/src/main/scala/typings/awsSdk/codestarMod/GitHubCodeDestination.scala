@@ -43,8 +43,7 @@ trait GitHubCodeDestination extends StObject {
 }
 object GitHubCodeDestination {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     issuesEnabled: RepositoryEnableIssues,
     name: RepositoryName,
     owner: RepositoryOwner,
@@ -57,31 +56,22 @@ object GitHubCodeDestination {
     __obj.asInstanceOf[GitHubCodeDestination]
   }
   
-  @scala.inline
-  implicit class GitHubCodeDestinationMutableBuilder[Self <: GitHubCodeDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GitHubCodeDestination](x: Self) {
     
-    @scala.inline
-    def setDescription(value: RepositoryDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: RepositoryDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIssuesEnabled(value: RepositoryEnableIssues): Self = StObject.set(x, "issuesEnabled", value.asInstanceOf[js.Any])
+    inline def setIssuesEnabled(value: RepositoryEnableIssues): Self = StObject.set(x, "issuesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: RepositoryOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: RepositoryOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateRepository(value: RepositoryIsPrivate): Self = StObject.set(x, "privateRepository", value.asInstanceOf[js.Any])
+    inline def setPrivateRepository(value: RepositoryIsPrivate): Self = StObject.set(x, "privateRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: GitHubPersonalToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: GitHubPersonalToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RepositoryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RepositoryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

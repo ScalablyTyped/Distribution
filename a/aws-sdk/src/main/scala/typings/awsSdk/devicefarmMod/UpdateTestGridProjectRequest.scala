@@ -23,28 +23,21 @@ trait UpdateTestGridProjectRequest extends StObject {
 }
 object UpdateTestGridProjectRequest {
   
-  @scala.inline
-  def apply(projectArn: DeviceFarmArn): UpdateTestGridProjectRequest = {
+  inline def apply(projectArn: DeviceFarmArn): UpdateTestGridProjectRequest = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTestGridProjectRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTestGridProjectRequestMutableBuilder[Self <: UpdateTestGridProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTestGridProjectRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ResourceDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
   }
 }

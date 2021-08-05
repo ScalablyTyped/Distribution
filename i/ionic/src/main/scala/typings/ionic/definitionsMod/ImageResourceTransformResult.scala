@@ -15,25 +15,19 @@ trait ImageResourceTransformResult extends StObject {
 }
 object ImageResourceTransformResult {
   
-  @scala.inline
-  def apply(resource: ImageResource, tmpDest: String): ImageResourceTransformResult = {
+  inline def apply(resource: ImageResource, tmpDest: String): ImageResourceTransformResult = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], tmpDest = tmpDest.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageResourceTransformResult]
   }
   
-  @scala.inline
-  implicit class ImageResourceTransformResultMutableBuilder[Self <: ImageResourceTransformResult] (val x: Self) extends AnyVal {
+  extension [Self <: ImageResourceTransformResult](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setResource(value: ImageResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ImageResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmpDest(value: String): Self = StObject.set(x, "tmpDest", value.asInstanceOf[js.Any])
+    inline def setTmpDest(value: String): Self = StObject.set(x, "tmpDest", value.asInstanceOf[js.Any])
   }
 }

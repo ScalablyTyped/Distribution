@@ -26,11 +26,11 @@ object omnibarMod {
       */
     def this(props: IOmnibarProps[T], context: js.Any) = this()
     
-    var TypedQueryList: js.Any = js.native
+    /* private */ var TypedQueryList: js.Any = js.native
     
-    var handleOverlayClose: js.Any = js.native
+    /* private */ var handleOverlayClose: js.Any = js.native
     
-    var renderQueryList: js.Any = js.native
+    /* private */ var renderQueryList: js.Any = js.native
   }
   /* static members */
   object Omnibar {
@@ -42,11 +42,9 @@ object omnibarMod {
     @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]]]
+    inline def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]]]
   }
   
   @js.native

@@ -18,28 +18,21 @@ trait ListApplicationRevisionsOutput extends StObject {
 }
 object ListApplicationRevisionsOutput {
   
-  @scala.inline
-  def apply(): ListApplicationRevisionsOutput = {
+  inline def apply(): ListApplicationRevisionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApplicationRevisionsOutput]
   }
   
-  @scala.inline
-  implicit class ListApplicationRevisionsOutputMutableBuilder[Self <: ListApplicationRevisionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationRevisionsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRevisions(value: RevisionLocationList): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
+    inline def setRevisions(value: RevisionLocationList): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
+    inline def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
-    @scala.inline
-    def setRevisionsVarargs(value: RevisionLocation*): Self = StObject.set(x, "revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: RevisionLocation*): Self = StObject.set(x, "revisions", js.Array(value :_*))
   }
 }

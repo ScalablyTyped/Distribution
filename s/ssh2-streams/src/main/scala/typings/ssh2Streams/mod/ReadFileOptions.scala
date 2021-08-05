@@ -12,25 +12,19 @@ trait ReadFileOptions extends StObject {
 }
 object ReadFileOptions {
   
-  @scala.inline
-  def apply(): ReadFileOptions = {
+  inline def apply(): ReadFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadFileOptions]
   }
   
-  @scala.inline
-  implicit class ReadFileOptionsMutableBuilder[Self <: ReadFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadFileOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ object buttonNextUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buttonNextDriverFactory(base: UniDriver[js.Any]): ButtonNextDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonNextDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ButtonNextDriver]
+  inline def buttonNextDriverFactory(base: UniDriver[js.Any]): ButtonNextDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonNextDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ButtonNextDriver]
   
   trait ButtonNextDriver
     extends StObject
@@ -30,8 +29,7 @@ object buttonNextUniDriverMod {
   }
   object ButtonNextDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -43,17 +41,13 @@ object buttonNextUniDriverMod {
       __obj.asInstanceOf[ButtonNextDriver]
     }
     
-    @scala.inline
-    implicit class ButtonNextDriverMutableBuilder[Self <: ButtonNextDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonNextDriver](x: Self) {
       
-      @scala.inline
-      def setGetButtonTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getButtonTextContent", js.Any.fromFunction0(value))
+      inline def setGetButtonTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getButtonTextContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
+      inline def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
+      inline def setIsFocused(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
     }
   }
 }

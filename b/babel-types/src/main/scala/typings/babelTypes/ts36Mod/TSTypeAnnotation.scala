@@ -19,13 +19,10 @@ object TSTypeAnnotation {
   @js.native
   def apply(typeAnnotation: TSType): TSTypeAnnotation = js.native
   
-  @scala.inline
-  implicit class TSTypeAnnotationMutableBuilder[Self <: TSTypeAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeAnnotation](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

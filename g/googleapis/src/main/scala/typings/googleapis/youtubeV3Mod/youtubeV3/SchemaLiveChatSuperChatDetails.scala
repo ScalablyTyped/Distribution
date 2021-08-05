@@ -34,43 +34,31 @@ trait SchemaLiveChatSuperChatDetails extends StObject {
 }
 object SchemaLiveChatSuperChatDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveChatSuperChatDetails = {
+  inline def apply(): SchemaLiveChatSuperChatDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatSuperChatDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatSuperChatDetailsMutableBuilder[Self <: SchemaLiveChatSuperChatDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatSuperChatDetails](x: Self) {
     
-    @scala.inline
-    def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
+    inline def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountDisplayStringUndefined: Self = StObject.set(x, "amountDisplayString", js.undefined)
+    inline def setAmountDisplayStringUndefined: Self = StObject.set(x, "amountDisplayString", js.undefined)
     
-    @scala.inline
-    def setAmountMicros(value: String): Self = StObject.set(x, "amountMicros", value.asInstanceOf[js.Any])
+    inline def setAmountMicros(value: String): Self = StObject.set(x, "amountMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountMicrosUndefined: Self = StObject.set(x, "amountMicros", js.undefined)
+    inline def setAmountMicrosUndefined: Self = StObject.set(x, "amountMicros", js.undefined)
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setTier(value: Double): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: Double): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
-    @scala.inline
-    def setUserComment(value: String): Self = StObject.set(x, "userComment", value.asInstanceOf[js.Any])
+    inline def setUserComment(value: String): Self = StObject.set(x, "userComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCommentUndefined: Self = StObject.set(x, "userComment", js.undefined)
+    inline def setUserCommentUndefined: Self = StObject.set(x, "userComment", js.undefined)
   }
 }

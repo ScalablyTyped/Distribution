@@ -465,98 +465,68 @@ object mod {
         }
         object ConnectionOptions {
           
-          @scala.inline
-          def apply(): ConnectionOptions = {
+          inline def apply(): ConnectionOptions = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[ConnectionOptions]
           }
           
-          @scala.inline
-          implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+          extension [Self <: ConnectionOptions](x: Self) {
             
-            @scala.inline
-            def setCleanSession(value: Boolean): Self = StObject.set(x, "cleanSession", value.asInstanceOf[js.Any])
+            inline def setCleanSession(value: Boolean): Self = StObject.set(x, "cleanSession", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setCleanSessionUndefined: Self = StObject.set(x, "cleanSession", js.undefined)
+            inline def setCleanSessionUndefined: Self = StObject.set(x, "cleanSession", js.undefined)
             
-            @scala.inline
-            def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+            inline def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+            inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
             
-            @scala.inline
-            def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+            inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
             
-            @scala.inline
-            def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
+            inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
             
-            @scala.inline
-            def setKeepAliveInterval(value: Double): Self = StObject.set(x, "keepAliveInterval", value.asInstanceOf[js.Any])
+            inline def setKeepAliveInterval(value: Double): Self = StObject.set(x, "keepAliveInterval", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKeepAliveIntervalUndefined: Self = StObject.set(x, "keepAliveInterval", js.undefined)
+            inline def setKeepAliveIntervalUndefined: Self = StObject.set(x, "keepAliveInterval", js.undefined)
             
-            @scala.inline
-            def setMqttVersion(value: `3` | `4`): Self = StObject.set(x, "mqttVersion", value.asInstanceOf[js.Any])
+            inline def setMqttVersion(value: `3` | `4`): Self = StObject.set(x, "mqttVersion", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMqttVersionUndefined: Self = StObject.set(x, "mqttVersion", js.undefined)
+            inline def setMqttVersionUndefined: Self = StObject.set(x, "mqttVersion", js.undefined)
             
-            @scala.inline
-            def setOnFailure(value: /* e */ ErrorWithInvocationContext => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+            inline def setOnFailure(value: /* e */ ErrorWithInvocationContext => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+            inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
             
-            @scala.inline
-            def setOnSuccess(value: /* o */ WithInvocationContext => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+            inline def setOnSuccess(value: /* o */ WithInvocationContext => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+            inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
             
-            @scala.inline
-            def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+            inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+            inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
             
-            @scala.inline
-            def setPorts(value: js.Array[Double]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+            inline def setPorts(value: js.Array[Double]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+            inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
             
-            @scala.inline
-            def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value :_*))
+            inline def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value :_*))
             
-            @scala.inline
-            def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+            inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+            inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
             
-            @scala.inline
-            def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
+            inline def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setUseSSLUndefined: Self = StObject.set(x, "useSSL", js.undefined)
+            inline def setUseSSLUndefined: Self = StObject.set(x, "useSSL", js.undefined)
             
-            @scala.inline
-            def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+            inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+            inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
             
-            @scala.inline
-            def setWillMessage(value: typings.pahoMqtt.mod.global.Paho.MQTT.Message): Self = StObject.set(x, "willMessage", value.asInstanceOf[js.Any])
+            inline def setWillMessage(value: typings.pahoMqtt.mod.global.Paho.MQTT.Message): Self = StObject.set(x, "willMessage", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setWillMessageUndefined: Self = StObject.set(x, "willMessage", js.undefined)
+            inline def setWillMessageUndefined: Self = StObject.set(x, "willMessage", js.undefined)
           }
         }
         
@@ -566,8 +536,7 @@ object mod {
              with WithInvocationContext
         object ErrorWithInvocationContext {
           
-          @scala.inline
-          def apply(errorCode: Double, errorMessage: String, invocationContext: js.Any): ErrorWithInvocationContext = {
+          inline def apply(errorCode: Double, errorMessage: String, invocationContext: js.Any): ErrorWithInvocationContext = {
             val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], invocationContext = invocationContext.asInstanceOf[js.Any])
             __obj.asInstanceOf[ErrorWithInvocationContext]
           }
@@ -583,20 +552,16 @@ object mod {
         }
         object MQTTError {
           
-          @scala.inline
-          def apply(errorCode: Double, errorMessage: String): MQTTError = {
+          inline def apply(errorCode: Double, errorMessage: String): MQTTError = {
             val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
             __obj.asInstanceOf[MQTTError]
           }
           
-          @scala.inline
-          implicit class MQTTErrorMutableBuilder[Self <: MQTTError] (val x: Self) extends AnyVal {
+          extension [Self <: MQTTError](x: Self) {
             
-            @scala.inline
-            def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+            inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+            inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
           }
         }
         
@@ -641,17 +606,14 @@ object mod {
         }
         object OnSubscribeSuccessParams {
           
-          @scala.inline
-          def apply(grantedQos: Qos, invocationContext: js.Any): OnSubscribeSuccessParams = {
+          inline def apply(grantedQos: Qos, invocationContext: js.Any): OnSubscribeSuccessParams = {
             val __obj = js.Dynamic.literal(grantedQos = grantedQos.asInstanceOf[js.Any], invocationContext = invocationContext.asInstanceOf[js.Any])
             __obj.asInstanceOf[OnSubscribeSuccessParams]
           }
           
-          @scala.inline
-          implicit class OnSubscribeSuccessParamsMutableBuilder[Self <: OnSubscribeSuccessParams] (val x: Self) extends AnyVal {
+          extension [Self <: OnSubscribeSuccessParams](x: Self) {
             
-            @scala.inline
-            def setGrantedQos(value: Qos): Self = StObject.set(x, "grantedQos", value.asInstanceOf[js.Any])
+            inline def setGrantedQos(value: Qos): Self = StObject.set(x, "grantedQos", value.asInstanceOf[js.Any])
           }
         }
         
@@ -679,14 +641,11 @@ object mod {
         trait Qos extends StObject
         object Qos {
           
-          @scala.inline
-          def `0`: typings.pahoMqtt.pahoMqttNumbers.`0` = 0.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`0`]
+          inline def `0`: typings.pahoMqtt.pahoMqttNumbers.`0` = 0.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`0`]
           
-          @scala.inline
-          def `1`: typings.pahoMqtt.pahoMqttNumbers.`1` = 1.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`1`]
+          inline def `1`: typings.pahoMqtt.pahoMqttNumbers.`1` = 1.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`1`]
           
-          @scala.inline
-          def `2`: typings.pahoMqtt.pahoMqttNumbers.`2` = 2.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`2`]
+          inline def `2`: typings.pahoMqtt.pahoMqttNumbers.`2` = 2.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`2`]
         }
         
         /**
@@ -715,44 +674,32 @@ object mod {
         }
         object SubscribeOptions {
           
-          @scala.inline
-          def apply(): SubscribeOptions = {
+          inline def apply(): SubscribeOptions = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[SubscribeOptions]
           }
           
-          @scala.inline
-          implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+          extension [Self <: SubscribeOptions](x: Self) {
             
-            @scala.inline
-            def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
+            inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
             
-            @scala.inline
-            def setOnFailure(value: /* e */ ErrorWithInvocationContext => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+            inline def setOnFailure(value: /* e */ ErrorWithInvocationContext => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+            inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
             
-            @scala.inline
-            def setOnSuccess(value: /* o */ OnSubscribeSuccessParams => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+            inline def setOnSuccess(value: /* o */ OnSubscribeSuccessParams => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+            inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
             
-            @scala.inline
-            def setQos(value: Qos): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
+            inline def setQos(value: Qos): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
+            inline def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
             
-            @scala.inline
-            def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+            inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+            inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
           }
         }
         
@@ -764,20 +711,16 @@ object mod {
         }
         object TraceElement {
           
-          @scala.inline
-          def apply(message: String): TraceElement = {
+          inline def apply(message: String): TraceElement = {
             val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], severity = "Debug")
             __obj.asInstanceOf[TraceElement]
           }
           
-          @scala.inline
-          implicit class TraceElementMutableBuilder[Self <: TraceElement] (val x: Self) extends AnyVal {
+          extension [Self <: TraceElement](x: Self) {
             
-            @scala.inline
-            def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+            inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setSeverity(value: Debug): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+            inline def setSeverity(value: Debug): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
           }
         }
         
@@ -805,38 +748,28 @@ object mod {
         }
         object UnsubscribeOptions {
           
-          @scala.inline
-          def apply(): UnsubscribeOptions = {
+          inline def apply(): UnsubscribeOptions = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[UnsubscribeOptions]
           }
           
-          @scala.inline
-          implicit class UnsubscribeOptionsMutableBuilder[Self <: UnsubscribeOptions] (val x: Self) extends AnyVal {
+          extension [Self <: UnsubscribeOptions](x: Self) {
             
-            @scala.inline
-            def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
+            inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
             
-            @scala.inline
-            def setOnFailure(value: /* e */ ErrorWithInvocationContext => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+            inline def setOnFailure(value: /* e */ ErrorWithInvocationContext => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+            inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
             
-            @scala.inline
-            def setOnSuccess(value: /* o */ WithInvocationContext => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+            inline def setOnSuccess(value: /* o */ WithInvocationContext => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+            inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
             
-            @scala.inline
-            def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+            inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+            inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
           }
         }
         
@@ -850,17 +783,14 @@ object mod {
         }
         object WithInvocationContext {
           
-          @scala.inline
-          def apply(invocationContext: js.Any): WithInvocationContext = {
+          inline def apply(invocationContext: js.Any): WithInvocationContext = {
             val __obj = js.Dynamic.literal(invocationContext = invocationContext.asInstanceOf[js.Any])
             __obj.asInstanceOf[WithInvocationContext]
           }
           
-          @scala.inline
-          implicit class WithInvocationContextMutableBuilder[Self <: WithInvocationContext] (val x: Self) extends AnyVal {
+          extension [Self <: WithInvocationContext](x: Self) {
             
-            @scala.inline
-            def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+            inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
           }
         }
       }

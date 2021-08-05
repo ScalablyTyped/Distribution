@@ -13,16 +13,13 @@ trait WiFiDirectServiceSessionDeferredEventArgs extends StObject {
 }
 object WiFiDirectServiceSessionDeferredEventArgs {
   
-  @scala.inline
-  def apply(deferredSessionInfo: IBuffer): WiFiDirectServiceSessionDeferredEventArgs = {
+  inline def apply(deferredSessionInfo: IBuffer): WiFiDirectServiceSessionDeferredEventArgs = {
     val __obj = js.Dynamic.literal(deferredSessionInfo = deferredSessionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiDirectServiceSessionDeferredEventArgs]
   }
   
-  @scala.inline
-  implicit class WiFiDirectServiceSessionDeferredEventArgsMutableBuilder[Self <: WiFiDirectServiceSessionDeferredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectServiceSessionDeferredEventArgs](x: Self) {
     
-    @scala.inline
-    def setDeferredSessionInfo(value: IBuffer): Self = StObject.set(x, "deferredSessionInfo", value.asInstanceOf[js.Any])
+    inline def setDeferredSessionInfo(value: IBuffer): Self = StObject.set(x, "deferredSessionInfo", value.asInstanceOf[js.Any])
   }
 }

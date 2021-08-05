@@ -50,52 +50,37 @@ trait CommitCharactersSupport extends StObject {
 }
 object CommitCharactersSupport {
   
-  @scala.inline
-  def apply(): CommitCharactersSupport = {
+  inline def apply(): CommitCharactersSupport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitCharactersSupport]
   }
   
-  @scala.inline
-  implicit class CommitCharactersSupportMutableBuilder[Self <: CommitCharactersSupport] (val x: Self) extends AnyVal {
+  extension [Self <: CommitCharactersSupport](x: Self) {
     
-    @scala.inline
-    def setCommitCharactersSupport(value: Boolean): Self = StObject.set(x, "commitCharactersSupport", value.asInstanceOf[js.Any])
+    inline def setCommitCharactersSupport(value: Boolean): Self = StObject.set(x, "commitCharactersSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitCharactersSupportUndefined: Self = StObject.set(x, "commitCharactersSupport", js.undefined)
+    inline def setCommitCharactersSupportUndefined: Self = StObject.set(x, "commitCharactersSupport", js.undefined)
     
-    @scala.inline
-    def setDeprecatedSupport(value: Boolean): Self = StObject.set(x, "deprecatedSupport", value.asInstanceOf[js.Any])
+    inline def setDeprecatedSupport(value: Boolean): Self = StObject.set(x, "deprecatedSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedSupportUndefined: Self = StObject.set(x, "deprecatedSupport", js.undefined)
+    inline def setDeprecatedSupportUndefined: Self = StObject.set(x, "deprecatedSupport", js.undefined)
     
-    @scala.inline
-    def setDocumentationFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "documentationFormat", value.asInstanceOf[js.Any])
+    inline def setDocumentationFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "documentationFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationFormatUndefined: Self = StObject.set(x, "documentationFormat", js.undefined)
+    inline def setDocumentationFormatUndefined: Self = StObject.set(x, "documentationFormat", js.undefined)
     
-    @scala.inline
-    def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value :_*))
+    inline def setDocumentationFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "documentationFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setPreselectSupport(value: Boolean): Self = StObject.set(x, "preselectSupport", value.asInstanceOf[js.Any])
+    inline def setPreselectSupport(value: Boolean): Self = StObject.set(x, "preselectSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreselectSupportUndefined: Self = StObject.set(x, "preselectSupport", js.undefined)
+    inline def setPreselectSupportUndefined: Self = StObject.set(x, "preselectSupport", js.undefined)
     
-    @scala.inline
-    def setSnippetSupport(value: Boolean): Self = StObject.set(x, "snippetSupport", value.asInstanceOf[js.Any])
+    inline def setSnippetSupport(value: Boolean): Self = StObject.set(x, "snippetSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetSupportUndefined: Self = StObject.set(x, "snippetSupport", js.undefined)
+    inline def setSnippetSupportUndefined: Self = StObject.set(x, "snippetSupport", js.undefined)
     
-    @scala.inline
-    def setTagSupport(value: ValueSetArray): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
+    inline def setTagSupport(value: ValueSetArray): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
+    inline def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
   }
 }

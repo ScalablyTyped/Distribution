@@ -21,40 +21,29 @@ trait TrainingQuery extends StObject {
 }
 object TrainingQuery {
   
-  @scala.inline
-  def apply(): TrainingQuery = {
+  inline def apply(): TrainingQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingQuery]
   }
   
-  @scala.inline
-  implicit class TrainingQueryMutableBuilder[Self <: TrainingQuery] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingQuery](x: Self) {
     
-    @scala.inline
-    def setExamples(value: js.Array[TrainingExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: js.Array[TrainingExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    @scala.inline
-    def setExamplesVarargs(value: TrainingExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: TrainingExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setNatural_language_query(value: String): Self = StObject.set(x, "natural_language_query", value.asInstanceOf[js.Any])
+    inline def setNatural_language_query(value: String): Self = StObject.set(x, "natural_language_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatural_language_queryUndefined: Self = StObject.set(x, "natural_language_query", js.undefined)
+    inline def setNatural_language_queryUndefined: Self = StObject.set(x, "natural_language_query", js.undefined)
     
-    @scala.inline
-    def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
+    inline def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery_idUndefined: Self = StObject.set(x, "query_id", js.undefined)
+    inline def setQuery_idUndefined: Self = StObject.set(x, "query_id", js.undefined)
   }
 }

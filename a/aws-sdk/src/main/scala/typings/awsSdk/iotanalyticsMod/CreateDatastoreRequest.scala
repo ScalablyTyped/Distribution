@@ -28,37 +28,27 @@ trait CreateDatastoreRequest extends StObject {
 }
 object CreateDatastoreRequest {
   
-  @scala.inline
-  def apply(datastoreName: DatastoreName): CreateDatastoreRequest = {
+  inline def apply(datastoreName: DatastoreName): CreateDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatastoreRequest]
   }
   
-  @scala.inline
-  implicit class CreateDatastoreRequestMutableBuilder[Self <: CreateDatastoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatastoreRequest](x: Self) {
     
-    @scala.inline
-    def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
+    inline def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreStorage(value: DatastoreStorage): Self = StObject.set(x, "datastoreStorage", value.asInstanceOf[js.Any])
+    inline def setDatastoreStorage(value: DatastoreStorage): Self = StObject.set(x, "datastoreStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreStorageUndefined: Self = StObject.set(x, "datastoreStorage", js.undefined)
+    inline def setDatastoreStorageUndefined: Self = StObject.set(x, "datastoreStorage", js.undefined)
     
-    @scala.inline
-    def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+    inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

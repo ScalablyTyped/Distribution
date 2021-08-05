@@ -10,6 +10,5 @@ object global {
   @JSGlobal("getUserMedia")
   @js.native
   def getUserMedia: NavigatorGetUserMedia = js.native
-  @scala.inline
-  def getUserMedia_=(x: NavigatorGetUserMedia): Unit = js.Dynamic.global.updateDynamic("getUserMedia")(x.asInstanceOf[js.Any])
+  inline def getUserMedia_=(x: NavigatorGetUserMedia): Unit = js.Dynamic.global.updateDynamic("getUserMedia")(x.asInstanceOf[js.Any])
 }

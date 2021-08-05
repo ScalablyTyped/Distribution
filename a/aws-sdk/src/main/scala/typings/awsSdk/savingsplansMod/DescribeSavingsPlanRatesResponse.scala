@@ -23,34 +23,25 @@ trait DescribeSavingsPlanRatesResponse extends StObject {
 }
 object DescribeSavingsPlanRatesResponse {
   
-  @scala.inline
-  def apply(): DescribeSavingsPlanRatesResponse = {
+  inline def apply(): DescribeSavingsPlanRatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSavingsPlanRatesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSavingsPlanRatesResponseMutableBuilder[Self <: DescribeSavingsPlanRatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSavingsPlanRatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSavingsPlanId(value: SavingsPlanId): Self = StObject.set(x, "savingsPlanId", value.asInstanceOf[js.Any])
+    inline def setSavingsPlanId(value: SavingsPlanId): Self = StObject.set(x, "savingsPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlanIdUndefined: Self = StObject.set(x, "savingsPlanId", js.undefined)
+    inline def setSavingsPlanIdUndefined: Self = StObject.set(x, "savingsPlanId", js.undefined)
     
-    @scala.inline
-    def setSearchResults(value: SavingsPlanRateList): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
+    inline def setSearchResults(value: SavingsPlanRateList): Self = StObject.set(x, "searchResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchResultsUndefined: Self = StObject.set(x, "searchResults", js.undefined)
+    inline def setSearchResultsUndefined: Self = StObject.set(x, "searchResults", js.undefined)
     
-    @scala.inline
-    def setSearchResultsVarargs(value: SavingsPlanRate*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
+    inline def setSearchResultsVarargs(value: SavingsPlanRate*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
   }
 }

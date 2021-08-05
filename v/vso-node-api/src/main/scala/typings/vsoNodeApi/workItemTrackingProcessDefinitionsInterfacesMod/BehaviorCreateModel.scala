@@ -23,22 +23,17 @@ trait BehaviorCreateModel extends StObject {
 }
 object BehaviorCreateModel {
   
-  @scala.inline
-  def apply(color: String, inherits: String, name: String): BehaviorCreateModel = {
+  inline def apply(color: String, inherits: String, name: String): BehaviorCreateModel = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], inherits = inherits.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BehaviorCreateModel]
   }
   
-  @scala.inline
-  implicit class BehaviorCreateModelMutableBuilder[Self <: BehaviorCreateModel] (val x: Self) extends AnyVal {
+  extension [Self <: BehaviorCreateModel](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherits(value: String): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
+    inline def setInherits(value: String): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

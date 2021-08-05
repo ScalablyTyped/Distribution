@@ -21,28 +21,21 @@ trait SchemaDeviceCompromised extends StObject {
 }
 object SchemaDeviceCompromised {
   
-  @scala.inline
-  def apply(): SchemaDeviceCompromised = {
+  inline def apply(): SchemaDeviceCompromised = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceCompromised]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceCompromisedMutableBuilder[Self <: SchemaDeviceCompromised] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceCompromised](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[SchemaDeviceCompromisedSecurityDetail]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[SchemaDeviceCompromisedSecurityDetail]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: SchemaDeviceCompromisedSecurityDetail*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: SchemaDeviceCompromisedSecurityDetail*): Self = StObject.set(x, "events", js.Array(value :_*))
   }
 }

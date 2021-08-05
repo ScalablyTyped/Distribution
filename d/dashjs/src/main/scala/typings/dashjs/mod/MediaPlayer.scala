@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MediaPlayer {
   
-  @scala.inline
-  def apply(): MediaPlayerFactory = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MediaPlayerFactory]
+  inline def apply(): MediaPlayerFactory = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MediaPlayerFactory]
   
   @JSImport("dashjs", "MediaPlayer")
   @js.native

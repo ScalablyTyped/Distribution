@@ -28,13 +28,12 @@ trait CoAuthoring extends StObject {
   
   val Updates: CoAuthUpdates
   
-  @JSName("Word.CoAuthoring_typekey")
+  /* private */ @JSName("Word.CoAuthoring_typekey")
   var WordDotCoAuthoring_typekey: CoAuthoring
 }
 object CoAuthoring {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Authors: CoAuthors,
     CanMerge: Boolean,
@@ -53,43 +52,30 @@ object CoAuthoring {
     __obj.asInstanceOf[CoAuthoring]
   }
   
-  @scala.inline
-  implicit class CoAuthoringMutableBuilder[Self <: CoAuthoring] (val x: Self) extends AnyVal {
+  extension [Self <: CoAuthoring](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthors(value: CoAuthors): Self = StObject.set(x, "Authors", value.asInstanceOf[js.Any])
+    inline def setAuthors(value: CoAuthors): Self = StObject.set(x, "Authors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanMerge(value: Boolean): Self = StObject.set(x, "CanMerge", value.asInstanceOf[js.Any])
+    inline def setCanMerge(value: Boolean): Self = StObject.set(x, "CanMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanShare(value: Boolean): Self = StObject.set(x, "CanShare", value.asInstanceOf[js.Any])
+    inline def setCanShare(value: Boolean): Self = StObject.set(x, "CanShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflicts(value: Conflicts): Self = StObject.set(x, "Conflicts", value.asInstanceOf[js.Any])
+    inline def setConflicts(value: Conflicts): Self = StObject.set(x, "Conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocks(value: CoAuthLocks): Self = StObject.set(x, "Locks", value.asInstanceOf[js.Any])
+    inline def setLocks(value: CoAuthLocks): Self = StObject.set(x, "Locks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMe(value: CoAuthor): Self = StObject.set(x, "Me", value.asInstanceOf[js.Any])
+    inline def setMe(value: CoAuthor): Self = StObject.set(x, "Me", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUpdates(value: Boolean): Self = StObject.set(x, "PendingUpdates", value.asInstanceOf[js.Any])
+    inline def setPendingUpdates(value: Boolean): Self = StObject.set(x, "PendingUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdates(value: CoAuthUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: CoAuthUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCoAuthoring_typekey(value: CoAuthoring): Self = StObject.set(x, "Word.CoAuthoring_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCoAuthoring_typekey(value: CoAuthoring): Self = StObject.set(x, "Word.CoAuthoring_typekey", value.asInstanceOf[js.Any])
   }
 }

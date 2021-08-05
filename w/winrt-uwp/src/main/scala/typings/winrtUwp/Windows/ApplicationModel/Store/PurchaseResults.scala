@@ -21,25 +21,19 @@ trait PurchaseResults extends StObject {
 }
 object PurchaseResults {
   
-  @scala.inline
-  def apply(offerId: String, receiptXml: String, status: ProductPurchaseStatus, transactionId: String): PurchaseResults = {
+  inline def apply(offerId: String, receiptXml: String, status: ProductPurchaseStatus, transactionId: String): PurchaseResults = {
     val __obj = js.Dynamic.literal(offerId = offerId.asInstanceOf[js.Any], receiptXml = receiptXml.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseResults]
   }
   
-  @scala.inline
-  implicit class PurchaseResultsMutableBuilder[Self <: PurchaseResults] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseResults](x: Self) {
     
-    @scala.inline
-    def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
+    inline def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptXml(value: String): Self = StObject.set(x, "receiptXml", value.asInstanceOf[js.Any])
+    inline def setReceiptXml(value: String): Self = StObject.set(x, "receiptXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ProductPurchaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ProductPurchaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }
 }

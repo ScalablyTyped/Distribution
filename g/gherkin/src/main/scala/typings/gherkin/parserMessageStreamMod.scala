@@ -21,6 +21,6 @@ object parserMessageStreamMod {
     
     def _transform(envelope: IEnvelope, encoding: String, callback: TransformCallback): Unit = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
   }
 }

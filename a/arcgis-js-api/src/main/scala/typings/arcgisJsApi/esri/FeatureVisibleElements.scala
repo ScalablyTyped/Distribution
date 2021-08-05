@@ -33,8 +33,7 @@ trait FeatureVisibleElements
 }
 object FeatureVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object FeatureVisibleElements {
     __obj.asInstanceOf[FeatureVisibleElements]
   }
   
-  @scala.inline
-  implicit class FeatureVisibleElementsMutableBuilder[Self <: FeatureVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureVisibleElements](x: Self) {
     
-    @scala.inline
-    def setContent(value: Boolean | VisibleContentElements): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Boolean | VisibleContentElements): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setLastEditInfo(value: Boolean): Self = StObject.set(x, "lastEditInfo", value.asInstanceOf[js.Any])
+    inline def setLastEditInfo(value: Boolean): Self = StObject.set(x, "lastEditInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEditInfoUndefined: Self = StObject.set(x, "lastEditInfo", js.undefined)
+    inline def setLastEditInfoUndefined: Self = StObject.set(x, "lastEditInfo", js.undefined)
     
-    @scala.inline
-    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

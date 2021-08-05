@@ -8,22 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: String): Unit = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: String, config: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: String, config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: String, config: Configuration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: js.Array[String], config: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: js.Array[String], config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: js.Array[String], config: Configuration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String): Unit = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(path: String, config: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, config: Configuration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(path: js.Array[String], config: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: js.Array[String], config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: js.Array[String], config: Configuration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("markdown-magic", JSImport.Namespace)
   @js.native
@@ -55,38 +47,28 @@ object mod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(): Configuration = {
+    inline def apply(): Configuration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setDEBUG(value: Boolean): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: Boolean): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEBUGUndefined: Self = StObject.set(x, "DEBUG", js.undefined)
+      inline def setDEBUGUndefined: Self = StObject.set(x, "DEBUG", js.undefined)
       
-      @scala.inline
-      def setMatchWord(value: String): Self = StObject.set(x, "matchWord", value.asInstanceOf[js.Any])
+      inline def setMatchWord(value: String): Self = StObject.set(x, "matchWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchWordUndefined: Self = StObject.set(x, "matchWord", js.undefined)
+      inline def setMatchWordUndefined: Self = StObject.set(x, "matchWord", js.undefined)
       
-      @scala.inline
-      def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
+      inline def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputDirUndefined: Self = StObject.set(x, "outputDir", js.undefined)
+      inline def setOutputDirUndefined: Self = StObject.set(x, "outputDir", js.undefined)
       
-      @scala.inline
-      def setTransforms(value: StringDictionary[TransformFunction]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      inline def setTransforms(value: StringDictionary[TransformFunction]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+      inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
     }
   }
   
@@ -105,26 +87,20 @@ object mod {
   }
   object ProcessedConfig {
     
-    @scala.inline
-    def apply(originalPath: String, outputContent: String, outputDir: String, outputFilePath: String): ProcessedConfig = {
+    inline def apply(originalPath: String, outputContent: String, outputDir: String, outputFilePath: String): ProcessedConfig = {
       val __obj = js.Dynamic.literal(originalPath = originalPath.asInstanceOf[js.Any], outputContent = outputContent.asInstanceOf[js.Any], outputDir = outputDir.asInstanceOf[js.Any], outputFilePath = outputFilePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessedConfig]
     }
     
-    @scala.inline
-    implicit class ProcessedConfigMutableBuilder[Self <: ProcessedConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessedConfig](x: Self) {
       
-      @scala.inline
-      def setOriginalPath(value: String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
+      inline def setOriginalPath(value: String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputContent(value: String): Self = StObject.set(x, "outputContent", value.asInstanceOf[js.Any])
+      inline def setOutputContent(value: String): Self = StObject.set(x, "outputContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
+      inline def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFilePath(value: String): Self = StObject.set(x, "outputFilePath", value.asInstanceOf[js.Any])
+      inline def setOutputFilePath(value: String): Self = StObject.set(x, "outputFilePath", value.asInstanceOf[js.Any])
     }
   }
   

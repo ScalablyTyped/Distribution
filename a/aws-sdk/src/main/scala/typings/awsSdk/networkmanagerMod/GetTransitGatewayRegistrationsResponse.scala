@@ -18,28 +18,21 @@ trait GetTransitGatewayRegistrationsResponse extends StObject {
 }
 object GetTransitGatewayRegistrationsResponse {
   
-  @scala.inline
-  def apply(): GetTransitGatewayRegistrationsResponse = {
+  inline def apply(): GetTransitGatewayRegistrationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTransitGatewayRegistrationsResponse]
   }
   
-  @scala.inline
-  implicit class GetTransitGatewayRegistrationsResponseMutableBuilder[Self <: GetTransitGatewayRegistrationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTransitGatewayRegistrationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRegistrations(value: TransitGatewayRegistrationList): Self = StObject.set(x, "TransitGatewayRegistrations", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRegistrations(value: TransitGatewayRegistrationList): Self = StObject.set(x, "TransitGatewayRegistrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRegistrationsUndefined: Self = StObject.set(x, "TransitGatewayRegistrations", js.undefined)
+    inline def setTransitGatewayRegistrationsUndefined: Self = StObject.set(x, "TransitGatewayRegistrations", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRegistrationsVarargs(value: TransitGatewayRegistration*): Self = StObject.set(x, "TransitGatewayRegistrations", js.Array(value :_*))
+    inline def setTransitGatewayRegistrationsVarargs(value: TransitGatewayRegistration*): Self = StObject.set(x, "TransitGatewayRegistrations", js.Array(value :_*))
   }
 }

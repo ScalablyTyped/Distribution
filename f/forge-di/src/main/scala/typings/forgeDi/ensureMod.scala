@@ -10,6 +10,5 @@ object ensureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(name: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(name: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

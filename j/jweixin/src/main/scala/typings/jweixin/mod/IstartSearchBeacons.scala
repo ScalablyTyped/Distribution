@@ -19,19 +19,15 @@ trait IstartSearchBeacons
 }
 object IstartSearchBeacons {
   
-  @scala.inline
-  def apply(complete: js.Any => Unit, ticket: String): IstartSearchBeacons = {
+  inline def apply(complete: js.Any => Unit, ticket: String): IstartSearchBeacons = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), ticket = ticket.asInstanceOf[js.Any])
     __obj.asInstanceOf[IstartSearchBeacons]
   }
   
-  @scala.inline
-  implicit class IstartSearchBeaconsMutableBuilder[Self <: IstartSearchBeacons] (val x: Self) extends AnyVal {
+  extension [Self <: IstartSearchBeacons](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+    inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
   }
 }

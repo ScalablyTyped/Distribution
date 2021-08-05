@@ -290,7 +290,7 @@ object keyValueFilesystemMod {
       */
     /* private */ def removeEntry(p: js.Any, isDir: js.Any, cb: js.Any): js.Any = js.native
     
-    var store: AsyncKeyValueStore = js.native
+    /* protected */ var store: AsyncKeyValueStore = js.native
     
     def supportsProps(): Boolean = js.native
     
@@ -305,8 +305,7 @@ object keyValueFilesystemMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SimpleSyncRWTransaction")
@@ -353,13 +352,13 @@ object keyValueFilesystemMod {
     /**
       * List of keys modified in this transaction, if any.
       */
-    var modifiedKeys: js.Any = js.native
+    /* private */ var modifiedKeys: js.Any = js.native
     
     /**
       * Stores data in the keys we modify prior to modifying them.
       * Allows us to roll back commits.
       */
-    var originalData: js.Any = js.native
+    /* private */ var originalData: js.Any = js.native
     
     /**
       * Adds the data to the store under the given key.
@@ -380,7 +379,7 @@ object keyValueFilesystemMod {
       */
     /* private */ def stashOldValue(key: js.Any, value: js.Any): js.Any = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
   }
   
   @JSImport("browserfs/dist/node/generic/key_value_filesystem", "SyncKeyValueFile")
@@ -644,7 +643,7 @@ object keyValueFilesystemMod {
       */
     /* private */ def removeEntry(p: js.Any, isDir: js.Any): js.Any = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
     
     def supportsProps(): Boolean = js.native
     
@@ -657,8 +656,7 @@ object keyValueFilesystemMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   trait AsyncKeyValueROTransaction extends StObject {
@@ -671,17 +669,14 @@ object keyValueFilesystemMod {
   }
   object AsyncKeyValueROTransaction {
     
-    @scala.inline
-    def apply(get: (String, BFSCallback[Buffer]) => Unit): AsyncKeyValueROTransaction = {
+    inline def apply(get: (String, BFSCallback[Buffer]) => Unit): AsyncKeyValueROTransaction = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[AsyncKeyValueROTransaction]
     }
     
-    @scala.inline
-    implicit class AsyncKeyValueROTransactionMutableBuilder[Self <: AsyncKeyValueROTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncKeyValueROTransaction](x: Self) {
       
-      @scala.inline
-      def setGet(value: (String, BFSCallback[Buffer]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (String, BFSCallback[Buffer]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
   
@@ -724,8 +719,7 @@ object keyValueFilesystemMod {
   }
   object AsyncKeyValueRWTransaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: BFSOneArgCallback => Unit,
       commit: BFSOneArgCallback => Unit,
       del: (String, BFSOneArgCallback) => Unit,
@@ -736,20 +730,15 @@ object keyValueFilesystemMod {
       __obj.asInstanceOf[AsyncKeyValueRWTransaction]
     }
     
-    @scala.inline
-    implicit class AsyncKeyValueRWTransactionMutableBuilder[Self <: AsyncKeyValueRWTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncKeyValueRWTransaction](x: Self) {
       
-      @scala.inline
-      def setAbort(value: BFSOneArgCallback => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+      inline def setAbort(value: BFSOneArgCallback => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCommit(value: BFSOneArgCallback => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
+      inline def setCommit(value: BFSOneArgCallback => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDel(value: (String, BFSOneArgCallback) => Unit): Self = StObject.set(x, "del", js.Any.fromFunction2(value))
+      inline def setDel(value: (String, BFSOneArgCallback) => Unit): Self = StObject.set(x, "del", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPut(
+      inline def setPut(
         value: (String, Buffer, Boolean, js.Function2[/* e */ ApiError, /* committed */ js.UndefOr[Boolean], Unit]) => Unit
       ): Self = StObject.set(x, "put", js.Any.fromFunction4(value))
     }
@@ -791,23 +780,18 @@ object keyValueFilesystemMod {
   }
   object SimpleSyncStore {
     
-    @scala.inline
-    def apply(del: String => Unit, get: String => js.UndefOr[Buffer], put: (String, Buffer, Boolean) => Boolean): SimpleSyncStore = {
+    inline def apply(del: String => Unit, get: String => js.UndefOr[Buffer], put: (String, Buffer, Boolean) => Boolean): SimpleSyncStore = {
       val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), put = js.Any.fromFunction3(put))
       __obj.asInstanceOf[SimpleSyncStore]
     }
     
-    @scala.inline
-    implicit class SimpleSyncStoreMutableBuilder[Self <: SimpleSyncStore] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleSyncStore](x: Self) {
       
-      @scala.inline
-      def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+      inline def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => js.UndefOr[Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: (String, Buffer, Boolean) => Boolean): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+      inline def setPut(value: (String, Buffer, Boolean) => Boolean): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
     }
   }
   
@@ -820,17 +804,14 @@ object keyValueFilesystemMod {
   }
   object SyncKeyValueFileSystemOptions {
     
-    @scala.inline
-    def apply(store: SyncKeyValueStore): SyncKeyValueFileSystemOptions = {
+    inline def apply(store: SyncKeyValueStore): SyncKeyValueFileSystemOptions = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncKeyValueFileSystemOptions]
     }
     
-    @scala.inline
-    implicit class SyncKeyValueFileSystemOptionsMutableBuilder[Self <: SyncKeyValueFileSystemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SyncKeyValueFileSystemOptions](x: Self) {
       
-      @scala.inline
-      def setStore(value: SyncKeyValueStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: SyncKeyValueStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -846,17 +827,14 @@ object keyValueFilesystemMod {
   }
   object SyncKeyValueROTransaction {
     
-    @scala.inline
-    def apply(get: String => js.UndefOr[Buffer]): SyncKeyValueROTransaction = {
+    inline def apply(get: String => js.UndefOr[Buffer]): SyncKeyValueROTransaction = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[SyncKeyValueROTransaction]
     }
     
-    @scala.inline
-    implicit class SyncKeyValueROTransactionMutableBuilder[Self <: SyncKeyValueROTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: SyncKeyValueROTransaction](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.UndefOr[Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
@@ -892,8 +870,7 @@ object keyValueFilesystemMod {
   }
   object SyncKeyValueRWTransaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       commit: () => Unit,
       del: String => Unit,
@@ -904,20 +881,15 @@ object keyValueFilesystemMod {
       __obj.asInstanceOf[SyncKeyValueRWTransaction]
     }
     
-    @scala.inline
-    implicit class SyncKeyValueRWTransactionMutableBuilder[Self <: SyncKeyValueRWTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: SyncKeyValueRWTransaction](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+      inline def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+      inline def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPut(value: (String, Buffer, Boolean) => Boolean): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+      inline def setPut(value: (String, Buffer, Boolean) => Boolean): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
     }
   }
   

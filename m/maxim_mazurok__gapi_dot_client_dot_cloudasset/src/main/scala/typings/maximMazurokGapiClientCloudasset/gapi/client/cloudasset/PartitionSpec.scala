@@ -11,19 +11,15 @@ trait PartitionSpec extends StObject {
 }
 object PartitionSpec {
   
-  @scala.inline
-  def apply(): PartitionSpec = {
+  inline def apply(): PartitionSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartitionSpec]
   }
   
-  @scala.inline
-  implicit class PartitionSpecMutableBuilder[Self <: PartitionSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionSpec](x: Self) {
     
-    @scala.inline
-    def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+    inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
   }
 }

@@ -55,61 +55,43 @@ trait VizCreateOptions
 }
 object VizCreateOptions {
   
-  @scala.inline
-  def apply(): VizCreateOptions = {
+  inline def apply(): VizCreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VizCreateOptions]
   }
   
-  @scala.inline
-  implicit class VizCreateOptionsMutableBuilder[Self <: VizCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VizCreateOptions](x: Self) {
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHideTabs(value: Boolean): Self = StObject.set(x, "hideTabs", value.asInstanceOf[js.Any])
+    inline def setHideTabs(value: Boolean): Self = StObject.set(x, "hideTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideTabsUndefined: Self = StObject.set(x, "hideTabs", js.undefined)
+    inline def setHideTabsUndefined: Self = StObject.set(x, "hideTabs", js.undefined)
     
-    @scala.inline
-    def setHideToolbar(value: Boolean): Self = StObject.set(x, "hideToolbar", value.asInstanceOf[js.Any])
+    inline def setHideToolbar(value: Boolean): Self = StObject.set(x, "hideToolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideToolbarUndefined: Self = StObject.set(x, "hideToolbar", js.undefined)
+    inline def setHideToolbarUndefined: Self = StObject.set(x, "hideToolbar", js.undefined)
     
-    @scala.inline
-    def setInstanceIdToClone(value: String): Self = StObject.set(x, "instanceIdToClone", value.asInstanceOf[js.Any])
+    inline def setInstanceIdToClone(value: String): Self = StObject.set(x, "instanceIdToClone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdToCloneUndefined: Self = StObject.set(x, "instanceIdToClone", js.undefined)
+    inline def setInstanceIdToCloneUndefined: Self = StObject.set(x, "instanceIdToClone", js.undefined)
     
-    @scala.inline
-    def setOnFirstInteractive(value: /* e */ TableauEvent => Unit): Self = StObject.set(x, "onFirstInteractive", js.Any.fromFunction1(value))
+    inline def setOnFirstInteractive(value: /* e */ TableauEvent => Unit): Self = StObject.set(x, "onFirstInteractive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFirstInteractiveUndefined: Self = StObject.set(x, "onFirstInteractive", js.undefined)
+    inline def setOnFirstInteractiveUndefined: Self = StObject.set(x, "onFirstInteractive", js.undefined)
     
-    @scala.inline
-    def setOnFirstVizSizeKnown(value: /* e */ VizResizeEvent => Unit): Self = StObject.set(x, "onFirstVizSizeKnown", js.Any.fromFunction1(value))
+    inline def setOnFirstVizSizeKnown(value: /* e */ VizResizeEvent => Unit): Self = StObject.set(x, "onFirstVizSizeKnown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFirstVizSizeKnownUndefined: Self = StObject.set(x, "onFirstVizSizeKnown", js.undefined)
+    inline def setOnFirstVizSizeKnownUndefined: Self = StObject.set(x, "onFirstVizSizeKnown", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

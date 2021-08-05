@@ -8,6 +8,5 @@ object bitcoreLibStrings {
   
   @js.native
   sealed trait little extends StObject
-  @scala.inline
-  def little: little = "little".asInstanceOf[little]
+  inline def little: little = "little".asInstanceOf[little]
 }

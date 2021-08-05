@@ -32,61 +32,43 @@ trait DefinitionQueryResult extends StObject {
 }
 object DefinitionQueryResult {
   
-  @scala.inline
-  def apply(): DefinitionQueryResult = {
+  inline def apply(): DefinitionQueryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefinitionQueryResult]
   }
   
-  @scala.inline
-  implicit class DefinitionQueryResultMutableBuilder[Self <: DefinitionQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionQueryResult](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextOffset(value: Double): Self = StObject.set(x, "contextOffset", value.asInstanceOf[js.Any])
+    inline def setContextOffset(value: Double): Self = StObject.set(x, "contextOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextOffsetUndefined: Self = StObject.set(x, "contextOffset", js.undefined)
+    inline def setContextOffsetUndefined: Self = StObject.set(x, "contextOffset", js.undefined)
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+    inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

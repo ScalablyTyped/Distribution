@@ -13,19 +13,15 @@ trait CreateAccountAssignmentResponse extends StObject {
 }
 object CreateAccountAssignmentResponse {
   
-  @scala.inline
-  def apply(): CreateAccountAssignmentResponse = {
+  inline def apply(): CreateAccountAssignmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAccountAssignmentResponse]
   }
   
-  @scala.inline
-  implicit class CreateAccountAssignmentResponseMutableBuilder[Self <: CreateAccountAssignmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccountAssignmentResponse](x: Self) {
     
-    @scala.inline
-    def setAccountAssignmentCreationStatus(value: AccountAssignmentOperationStatus): Self = StObject.set(x, "AccountAssignmentCreationStatus", value.asInstanceOf[js.Any])
+    inline def setAccountAssignmentCreationStatus(value: AccountAssignmentOperationStatus): Self = StObject.set(x, "AccountAssignmentCreationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountAssignmentCreationStatusUndefined: Self = StObject.set(x, "AccountAssignmentCreationStatus", js.undefined)
+    inline def setAccountAssignmentCreationStatusUndefined: Self = StObject.set(x, "AccountAssignmentCreationStatus", js.undefined)
   }
 }

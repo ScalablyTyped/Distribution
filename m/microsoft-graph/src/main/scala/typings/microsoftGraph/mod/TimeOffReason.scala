@@ -22,40 +22,29 @@ trait TimeOffReason
 }
 object TimeOffReason {
   
-  @scala.inline
-  def apply(): TimeOffReason = {
+  inline def apply(): TimeOffReason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeOffReason]
   }
   
-  @scala.inline
-  implicit class TimeOffReasonMutableBuilder[Self <: TimeOffReason] (val x: Self) extends AnyVal {
+  extension [Self <: TimeOffReason](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setIconType(value: NullableOption[TimeOffReasonIconType]): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
+    inline def setIconType(value: NullableOption[TimeOffReasonIconType]): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconTypeNull: Self = StObject.set(x, "iconType", null)
+    inline def setIconTypeNull: Self = StObject.set(x, "iconType", null)
     
-    @scala.inline
-    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
+    inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: NullableOption[Boolean]): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: NullableOption[Boolean]): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveNull: Self = StObject.set(x, "isActive", null)
+    inline def setIsActiveNull: Self = StObject.set(x, "isActive", null)
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
   }
 }

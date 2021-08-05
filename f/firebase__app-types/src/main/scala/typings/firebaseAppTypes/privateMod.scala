@@ -50,17 +50,14 @@ object privateMod {
   }
   object FirebaseAuthTokenData {
     
-    @scala.inline
-    def apply(accessToken: String): FirebaseAuthTokenData = {
+    inline def apply(accessToken: String): FirebaseAuthTokenData = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirebaseAuthTokenData]
     }
     
-    @scala.inline
-    implicit class FirebaseAuthTokenDataMutableBuilder[Self <: FirebaseAuthTokenData] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseAuthTokenData](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,23 +77,18 @@ object privateMod {
   }
   object FirebaseService {
     
-    @scala.inline
-    def apply(app: typings.firebaseAppTypes.mod.FirebaseApp): FirebaseService = {
+    inline def apply(app: typings.firebaseAppTypes.mod.FirebaseApp): FirebaseService = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirebaseService]
     }
     
-    @scala.inline
-    implicit class FirebaseServiceMutableBuilder[Self <: FirebaseService] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseService](x: Self) {
       
-      @scala.inline
-      def setApp(value: typings.firebaseAppTypes.mod.FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: typings.firebaseAppTypes.mod.FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTERNAL(value: FirebaseServiceInternals): Self = StObject.set(x, "INTERNAL", value.asInstanceOf[js.Any])
+      inline def setINTERNAL(value: FirebaseServiceInternals): Self = StObject.set(x, "INTERNAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTERNALUndefined: Self = StObject.set(x, "INTERNAL", js.undefined)
+      inline def setINTERNALUndefined: Self = StObject.set(x, "INTERNAL", js.undefined)
     }
   }
   
@@ -117,17 +109,14 @@ object privateMod {
   }
   object FirebaseServiceInternals {
     
-    @scala.inline
-    def apply(delete: () => js.Promise[Unit]): FirebaseServiceInternals = {
+    inline def apply(delete: () => js.Promise[Unit]): FirebaseServiceInternals = {
       val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete))
       __obj.asInstanceOf[FirebaseServiceInternals]
     }
     
-    @scala.inline
-    implicit class FirebaseServiceInternalsMutableBuilder[Self <: FirebaseServiceInternals] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseServiceInternals](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
   }
   
@@ -139,17 +128,14 @@ object privateMod {
   }
   object PlatformLoggerService {
     
-    @scala.inline
-    def apply(getPlatformInfoString: () => String): PlatformLoggerService = {
+    inline def apply(getPlatformInfoString: () => String): PlatformLoggerService = {
       val __obj = js.Dynamic.literal(getPlatformInfoString = js.Any.fromFunction0(getPlatformInfoString))
       __obj.asInstanceOf[PlatformLoggerService]
     }
     
-    @scala.inline
-    implicit class PlatformLoggerServiceMutableBuilder[Self <: PlatformLoggerService] (val x: Self) extends AnyVal {
+    extension [Self <: PlatformLoggerService](x: Self) {
       
-      @scala.inline
-      def setGetPlatformInfoString(value: () => String): Self = StObject.set(x, "getPlatformInfoString", js.Any.fromFunction0(value))
+      inline def setGetPlatformInfoString(value: () => String): Self = StObject.set(x, "getPlatformInfoString", js.Any.fromFunction0(value))
     }
   }
   
@@ -162,18 +148,15 @@ object privateMod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(`platform-logger`: PlatformLoggerService): NameServiceMapping = {
+      inline def apply(`platform-logger`: PlatformLoggerService): NameServiceMapping = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("platform-logger")(`platform-logger`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def `setPlatform-logger`(value: PlatformLoggerService): Self = StObject.set(x, "platform-logger", value.asInstanceOf[js.Any])
+        inline def `setPlatform-logger`(value: PlatformLoggerService): Self = StObject.set(x, "platform-logger", value.asInstanceOf[js.Any])
       }
     }
   }

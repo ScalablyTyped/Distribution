@@ -19,19 +19,15 @@ trait FirewallPolicyFirewallPolicyStatelessRuleGroupReference extends StObject {
 }
 object FirewallPolicyFirewallPolicyStatelessRuleGroupReference {
   
-  @scala.inline
-  def apply(priority: Input[Double], resourceArn: Input[String]): FirewallPolicyFirewallPolicyStatelessRuleGroupReference = {
+  inline def apply(priority: Input[Double], resourceArn: Input[String]): FirewallPolicyFirewallPolicyStatelessRuleGroupReference = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallPolicyFirewallPolicyStatelessRuleGroupReference]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyFirewallPolicyStatelessRuleGroupReferenceMutableBuilder[Self <: FirewallPolicyFirewallPolicyStatelessRuleGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyFirewallPolicyStatelessRuleGroupReference](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

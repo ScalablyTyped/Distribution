@@ -12,19 +12,15 @@ trait Pub extends StObject {
 }
 object Pub {
   
-  @scala.inline
-  def apply(pub: String): Pub = {
+  inline def apply(pub: String): Pub = {
     val __obj = js.Dynamic.literal(ok = 0, pub = pub.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pub]
   }
   
-  @scala.inline
-  implicit class PubMutableBuilder[Self <: Pub] (val x: Self) extends AnyVal {
+  extension [Self <: Pub](x: Self) {
     
-    @scala.inline
-    def setOk(value: typings.gun.gunNumbers.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: typings.gun.gunNumbers.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+    inline def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
   }
 }

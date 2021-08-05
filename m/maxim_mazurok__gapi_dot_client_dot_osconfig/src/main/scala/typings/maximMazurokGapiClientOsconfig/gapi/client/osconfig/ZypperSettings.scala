@@ -29,61 +29,43 @@ trait ZypperSettings extends StObject {
 }
 object ZypperSettings {
   
-  @scala.inline
-  def apply(): ZypperSettings = {
+  inline def apply(): ZypperSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZypperSettings]
   }
   
-  @scala.inline
-  implicit class ZypperSettingsMutableBuilder[Self <: ZypperSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ZypperSettings](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+    inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+    inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    @scala.inline
-    def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
-    @scala.inline
-    def setExclusivePatches(value: js.Array[String]): Self = StObject.set(x, "exclusivePatches", value.asInstanceOf[js.Any])
+    inline def setExclusivePatches(value: js.Array[String]): Self = StObject.set(x, "exclusivePatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusivePatchesUndefined: Self = StObject.set(x, "exclusivePatches", js.undefined)
+    inline def setExclusivePatchesUndefined: Self = StObject.set(x, "exclusivePatches", js.undefined)
     
-    @scala.inline
-    def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value :_*))
+    inline def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverities(value: js.Array[String]): Self = StObject.set(x, "severities", value.asInstanceOf[js.Any])
+    inline def setSeverities(value: js.Array[String]): Self = StObject.set(x, "severities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeveritiesUndefined: Self = StObject.set(x, "severities", js.undefined)
+    inline def setSeveritiesUndefined: Self = StObject.set(x, "severities", js.undefined)
     
-    @scala.inline
-    def setSeveritiesVarargs(value: String*): Self = StObject.set(x, "severities", js.Array(value :_*))
+    inline def setSeveritiesVarargs(value: String*): Self = StObject.set(x, "severities", js.Array(value :_*))
     
-    @scala.inline
-    def setWithOptional(value: Boolean): Self = StObject.set(x, "withOptional", value.asInstanceOf[js.Any])
+    inline def setWithOptional(value: Boolean): Self = StObject.set(x, "withOptional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithOptionalUndefined: Self = StObject.set(x, "withOptional", js.undefined)
+    inline def setWithOptionalUndefined: Self = StObject.set(x, "withOptional", js.undefined)
     
-    @scala.inline
-    def setWithUpdate(value: Boolean): Self = StObject.set(x, "withUpdate", value.asInstanceOf[js.Any])
+    inline def setWithUpdate(value: Boolean): Self = StObject.set(x, "withUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithUpdateUndefined: Self = StObject.set(x, "withUpdate", js.undefined)
+    inline def setWithUpdateUndefined: Self = StObject.set(x, "withUpdate", js.undefined)
   }
 }

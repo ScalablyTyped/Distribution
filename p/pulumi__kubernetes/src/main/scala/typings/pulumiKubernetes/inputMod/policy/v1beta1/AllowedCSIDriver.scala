@@ -17,16 +17,13 @@ trait AllowedCSIDriver extends StObject {
 }
 object AllowedCSIDriver {
   
-  @scala.inline
-  def apply(name: Input[String]): AllowedCSIDriver = {
+  inline def apply(name: Input[String]): AllowedCSIDriver = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowedCSIDriver]
   }
   
-  @scala.inline
-  implicit class AllowedCSIDriverMutableBuilder[Self <: AllowedCSIDriver] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedCSIDriver](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

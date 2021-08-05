@@ -12,19 +12,15 @@ trait Base64Encoded extends StObject {
 }
 object Base64Encoded {
   
-  @scala.inline
-  def apply(base64Encoded: scala.Double, rawText: scala.Double): Base64Encoded = {
+  inline def apply(base64Encoded: scala.Double, rawText: scala.Double): Base64Encoded = {
     val __obj = js.Dynamic.literal(base64Encoded = base64Encoded.asInstanceOf[js.Any], rawText = rawText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base64Encoded]
   }
   
-  @scala.inline
-  implicit class Base64EncodedMutableBuilder[Self <: Base64Encoded] (val x: Self) extends AnyVal {
+  extension [Self <: Base64Encoded](x: Self) {
     
-    @scala.inline
-    def setBase64Encoded(value: scala.Double): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
+    inline def setBase64Encoded(value: scala.Double): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawText(value: scala.Double): Self = StObject.set(x, "rawText", value.asInstanceOf[js.Any])
+    inline def setRawText(value: scala.Double): Self = StObject.set(x, "rawText", value.asInstanceOf[js.Any])
   }
 }

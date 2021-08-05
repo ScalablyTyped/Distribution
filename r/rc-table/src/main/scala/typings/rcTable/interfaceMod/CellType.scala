@@ -33,75 +33,53 @@ trait CellType[RecordType] extends StObject {
 }
 object CellType {
   
-  @scala.inline
-  def apply[RecordType](): CellType[RecordType] = {
+  inline def apply[RecordType](): CellType[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellType[RecordType]]
   }
   
-  @scala.inline
-  implicit class CellTypeMutableBuilder[Self <: CellType[?], RecordType] (val x: Self & CellType[RecordType]) extends AnyVal {
+  extension [Self <: CellType[?], RecordType](x: Self & CellType[RecordType]) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setColEnd(value: Double): Self = StObject.set(x, "colEnd", value.asInstanceOf[js.Any])
+    inline def setColEnd(value: Double): Self = StObject.set(x, "colEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColEndUndefined: Self = StObject.set(x, "colEnd", js.undefined)
+    inline def setColEndUndefined: Self = StObject.set(x, "colEnd", js.undefined)
     
-    @scala.inline
-    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+    inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+    inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
-    @scala.inline
-    def setColStart(value: Double): Self = StObject.set(x, "colStart", value.asInstanceOf[js.Any])
+    inline def setColStart(value: Double): Self = StObject.set(x, "colStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColStartUndefined: Self = StObject.set(x, "colStart", js.undefined)
+    inline def setColStartUndefined: Self = StObject.set(x, "colStart", js.undefined)
     
-    @scala.inline
-    def setColumn(
+    inline def setColumn(
       value: /* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any
     ): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setHasSubColumns(value: Boolean): Self = StObject.set(x, "hasSubColumns", value.asInstanceOf[js.Any])
+    inline def setHasSubColumns(value: Boolean): Self = StObject.set(x, "hasSubColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSubColumnsUndefined: Self = StObject.set(x, "hasSubColumns", js.undefined)
+    inline def setHasSubColumnsUndefined: Self = StObject.set(x, "hasSubColumns", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+    inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object inputShimsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def startInputShims(config: Config_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startInputShims")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startInputShims(config: Config_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startInputShims")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
-  @scala.inline
-  def apply(options: Options): Rule = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
+  inline def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
+  inline def apply(options: Options): Rule = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
   @JSImport("metascraper-media-provider", JSImport.Namespace)
   @js.native
@@ -25,20 +23,16 @@ object mod {
   }
   object GetProxyData {
     
-    @scala.inline
-    def apply(retryCount: Double, url: String): GetProxyData = {
+    inline def apply(retryCount: Double, url: String): GetProxyData = {
       val __obj = js.Dynamic.literal(retryCount = retryCount.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetProxyData]
     }
     
-    @scala.inline
-    implicit class GetProxyDataMutableBuilder[Self <: GetProxyData] (val x: Self) extends AnyVal {
+    extension [Self <: GetProxyData](x: Self) {
       
-      @scala.inline
-      def setRetryCount(value: Double): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
+      inline def setRetryCount(value: Double): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,44 +68,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCacheDir(value: String): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
+      inline def setCacheDir(value: String): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheDirUndefined: Self = StObject.set(x, "cacheDir", js.undefined)
+      inline def setCacheDirUndefined: Self = StObject.set(x, "cacheDir", js.undefined)
       
-      @scala.inline
-      def setGetProxy(value: /* data */ GetProxyData => String): Self = StObject.set(x, "getProxy", js.Any.fromFunction1(value))
+      inline def setGetProxy(value: /* data */ GetProxyData => String): Self = StObject.set(x, "getProxy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+      inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
       
-      @scala.inline
-      def setOnError(value: (/* url */ String, /* error */ Error) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* url */ String, /* error */ Error) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
 }

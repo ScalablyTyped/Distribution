@@ -18,28 +18,21 @@ trait DescribePublicIpv4PoolsResult extends StObject {
 }
 object DescribePublicIpv4PoolsResult {
   
-  @scala.inline
-  def apply(): DescribePublicIpv4PoolsResult = {
+  inline def apply(): DescribePublicIpv4PoolsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePublicIpv4PoolsResult]
   }
   
-  @scala.inline
-  implicit class DescribePublicIpv4PoolsResultMutableBuilder[Self <: DescribePublicIpv4PoolsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePublicIpv4PoolsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPublicIpv4Pools(value: PublicIpv4PoolSet): Self = StObject.set(x, "PublicIpv4Pools", value.asInstanceOf[js.Any])
+    inline def setPublicIpv4Pools(value: PublicIpv4PoolSet): Self = StObject.set(x, "PublicIpv4Pools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpv4PoolsUndefined: Self = StObject.set(x, "PublicIpv4Pools", js.undefined)
+    inline def setPublicIpv4PoolsUndefined: Self = StObject.set(x, "PublicIpv4Pools", js.undefined)
     
-    @scala.inline
-    def setPublicIpv4PoolsVarargs(value: PublicIpv4Pool*): Self = StObject.set(x, "PublicIpv4Pools", js.Array(value :_*))
+    inline def setPublicIpv4PoolsVarargs(value: PublicIpv4Pool*): Self = StObject.set(x, "PublicIpv4Pools", js.Array(value :_*))
   }
 }

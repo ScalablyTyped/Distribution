@@ -19,8 +19,7 @@ trait ContactHoverEvent extends StObject {
 }
 object ContactHoverEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contact: Contact,
     contactType: sender | recipient,
     messageView: MessageView,
@@ -30,19 +29,14 @@ object ContactHoverEvent {
     __obj.asInstanceOf[ContactHoverEvent]
   }
   
-  @scala.inline
-  implicit class ContactHoverEventMutableBuilder[Self <: ContactHoverEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContactHoverEvent](x: Self) {
     
-    @scala.inline
-    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactType(value: sender | recipient): Self = StObject.set(x, "contactType", value.asInstanceOf[js.Any])
+    inline def setContactType(value: sender | recipient): Self = StObject.set(x, "contactType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageView(value: MessageView): Self = StObject.set(x, "messageView", value.asInstanceOf[js.Any])
+    inline def setMessageView(value: MessageView): Self = StObject.set(x, "messageView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadView(value: ThreadView): Self = StObject.set(x, "threadView", value.asInstanceOf[js.Any])
+    inline def setThreadView(value: ThreadView): Self = StObject.set(x, "threadView", value.asInstanceOf[js.Any])
   }
 }

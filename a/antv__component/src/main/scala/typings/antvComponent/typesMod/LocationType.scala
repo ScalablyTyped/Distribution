@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocationType extends StObject
 object LocationType {
   
-  @scala.inline
-  def Region: typings.antvComponent.antvComponentStrings.Region = "Region".asInstanceOf[typings.antvComponent.antvComponentStrings.Region]
+  inline def Region: typings.antvComponent.antvComponentStrings.Region = "Region".asInstanceOf[typings.antvComponent.antvComponentStrings.Region]
   
-  @scala.inline
-  def circle: typings.antvComponent.antvComponentStrings.circle = "circle".asInstanceOf[typings.antvComponent.antvComponentStrings.circle]
+  inline def circle: typings.antvComponent.antvComponentStrings.circle = "circle".asInstanceOf[typings.antvComponent.antvComponentStrings.circle]
   
-  @scala.inline
-  def none: typings.antvComponent.antvComponentStrings.none = "none".asInstanceOf[typings.antvComponent.antvComponentStrings.none]
+  inline def none: typings.antvComponent.antvComponentStrings.none = "none".asInstanceOf[typings.antvComponent.antvComponentStrings.none]
   
-  @scala.inline
-  def point: typings.antvComponent.antvComponentStrings.point = "point".asInstanceOf[typings.antvComponent.antvComponentStrings.point]
+  inline def point: typings.antvComponent.antvComponentStrings.point = "point".asInstanceOf[typings.antvComponent.antvComponentStrings.point]
   
-  @scala.inline
-  def points: typings.antvComponent.antvComponentStrings.points = "points".asInstanceOf[typings.antvComponent.antvComponentStrings.points]
+  inline def points: typings.antvComponent.antvComponentStrings.points = "points".asInstanceOf[typings.antvComponent.antvComponentStrings.points]
 }

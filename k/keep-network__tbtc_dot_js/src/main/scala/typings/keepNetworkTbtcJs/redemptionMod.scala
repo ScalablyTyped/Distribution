@@ -29,8 +29,7 @@ object redemptionMod {
   }
   object AutoSubmitState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       broadcastTransactionID: js.Promise[String],
       confirmations: js.Promise[RequiredConfirmationsTransactionID],
       proofTransaction: js.Promise[Unit]
@@ -39,17 +38,13 @@ object redemptionMod {
       __obj.asInstanceOf[AutoSubmitState]
     }
     
-    @scala.inline
-    implicit class AutoSubmitStateMutableBuilder[Self <: AutoSubmitState] (val x: Self) extends AnyVal {
+    extension [Self <: AutoSubmitState](x: Self) {
       
-      @scala.inline
-      def setBroadcastTransactionID(value: js.Promise[String]): Self = StObject.set(x, "broadcastTransactionID", value.asInstanceOf[js.Any])
+      inline def setBroadcastTransactionID(value: js.Promise[String]): Self = StObject.set(x, "broadcastTransactionID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmations(value: js.Promise[RequiredConfirmationsTransactionID]): Self = StObject.set(x, "confirmations", value.asInstanceOf[js.Any])
+      inline def setConfirmations(value: js.Promise[RequiredConfirmationsTransactionID]): Self = StObject.set(x, "confirmations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProofTransaction(value: js.Promise[Unit]): Self = StObject.set(x, "proofTransaction", value.asInstanceOf[js.Any])
+      inline def setProofTransaction(value: js.Promise[Unit]): Self = StObject.set(x, "proofTransaction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +89,16 @@ object redemptionMod {
   }
   object UnsignedTransactionDetails {
     
-    @scala.inline
-    def apply(digest: String, hex: String): UnsignedTransactionDetails = {
+    inline def apply(digest: String, hex: String): UnsignedTransactionDetails = {
       val __obj = js.Dynamic.literal(digest = digest.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnsignedTransactionDetails]
     }
     
-    @scala.inline
-    implicit class UnsignedTransactionDetailsMutableBuilder[Self <: UnsignedTransactionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: UnsignedTransactionDetails](x: Self) {
       
-      @scala.inline
-      def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     }
   }
 }

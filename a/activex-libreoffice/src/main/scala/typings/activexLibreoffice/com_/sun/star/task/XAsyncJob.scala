@@ -31,8 +31,7 @@ trait XAsyncJob
 }
 object XAsyncJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     executeAsync: (SeqEquiv[NamedValue], XJobListener) => Unit,
     queryInterface: `type` => js.Any,
@@ -42,10 +41,8 @@ object XAsyncJob {
     __obj.asInstanceOf[XAsyncJob]
   }
   
-  @scala.inline
-  implicit class XAsyncJobMutableBuilder[Self <: XAsyncJob] (val x: Self) extends AnyVal {
+  extension [Self <: XAsyncJob](x: Self) {
     
-    @scala.inline
-    def setExecuteAsync(value: (SeqEquiv[NamedValue], XJobListener) => Unit): Self = StObject.set(x, "executeAsync", js.Any.fromFunction2(value))
+    inline def setExecuteAsync(value: (SeqEquiv[NamedValue], XJobListener) => Unit): Self = StObject.set(x, "executeAsync", js.Any.fromFunction2(value))
   }
 }

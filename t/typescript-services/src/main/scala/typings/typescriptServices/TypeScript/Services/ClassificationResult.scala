@@ -12,22 +12,17 @@ trait ClassificationResult extends StObject {
 }
 object ClassificationResult {
   
-  @scala.inline
-  def apply(entries: js.Array[ClassificationInfo], finalLexState: EndOfLineState): ClassificationResult = {
+  inline def apply(entries: js.Array[ClassificationInfo], finalLexState: EndOfLineState): ClassificationResult = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], finalLexState = finalLexState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassificationResult]
   }
   
-  @scala.inline
-  implicit class ClassificationResultMutableBuilder[Self <: ClassificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationResult](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[ClassificationInfo]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[ClassificationInfo]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: ClassificationInfo*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ClassificationInfo*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setFinalLexState(value: EndOfLineState): Self = StObject.set(x, "finalLexState", value.asInstanceOf[js.Any])
+    inline def setFinalLexState(value: EndOfLineState): Self = StObject.set(x, "finalLexState", value.asInstanceOf[js.Any])
   }
 }

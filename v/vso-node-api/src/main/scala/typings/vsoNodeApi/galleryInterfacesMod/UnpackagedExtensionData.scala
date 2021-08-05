@@ -40,8 +40,7 @@ trait UnpackagedExtensionData extends StObject {
 }
 object UnpackagedExtensionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categories: js.Array[String],
     description: String,
     displayName: String,
@@ -63,64 +62,44 @@ object UnpackagedExtensionData {
     __obj.asInstanceOf[UnpackagedExtensionData]
   }
   
-  @scala.inline
-  implicit class UnpackagedExtensionDataMutableBuilder[Self <: UnpackagedExtensionData] (val x: Self) extends AnyVal {
+  extension [Self <: UnpackagedExtensionData](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftId(value: String): Self = StObject.set(x, "draftId", value.asInstanceOf[js.Any])
+    inline def setDraftId(value: String): Self = StObject.set(x, "draftId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationTargets(value: js.Array[InstallationTarget]): Self = StObject.set(x, "installationTargets", value.asInstanceOf[js.Any])
+    inline def setInstallationTargets(value: js.Array[InstallationTarget]): Self = StObject.set(x, "installationTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value :_*))
+    inline def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value :_*))
     
-    @scala.inline
-    def setIsConvertedToMarkdown(value: Boolean): Self = StObject.set(x, "isConvertedToMarkdown", value.asInstanceOf[js.Any])
+    inline def setIsConvertedToMarkdown(value: Boolean): Self = StObject.set(x, "isConvertedToMarkdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingCategory(value: String): Self = StObject.set(x, "pricingCategory", value.asInstanceOf[js.Any])
+    inline def setPricingCategory(value: String): Self = StObject.set(x, "pricingCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQnAEnabled(value: Boolean): Self = StObject.set(x, "qnAEnabled", value.asInstanceOf[js.Any])
+    inline def setQnAEnabled(value: Boolean): Self = StObject.set(x, "qnAEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferralUrl(value: String): Self = StObject.set(x, "referralUrl", value.asInstanceOf[js.Any])
+    inline def setReferralUrl(value: String): Self = StObject.set(x, "referralUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
+    inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVsixId(value: String): Self = StObject.set(x, "vsixId", value.asInstanceOf[js.Any])
+    inline def setVsixId(value: String): Self = StObject.set(x, "vsixId", value.asInstanceOf[js.Any])
   }
 }

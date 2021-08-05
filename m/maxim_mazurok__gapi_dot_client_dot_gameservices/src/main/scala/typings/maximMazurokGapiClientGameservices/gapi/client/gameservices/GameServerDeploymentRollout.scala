@@ -32,52 +32,37 @@ trait GameServerDeploymentRollout extends StObject {
 }
 object GameServerDeploymentRollout {
   
-  @scala.inline
-  def apply(): GameServerDeploymentRollout = {
+  inline def apply(): GameServerDeploymentRollout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameServerDeploymentRollout]
   }
   
-  @scala.inline
-  implicit class GameServerDeploymentRolloutMutableBuilder[Self <: GameServerDeploymentRollout] (val x: Self) extends AnyVal {
+  extension [Self <: GameServerDeploymentRollout](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDefaultGameServerConfig(value: String): Self = StObject.set(x, "defaultGameServerConfig", value.asInstanceOf[js.Any])
+    inline def setDefaultGameServerConfig(value: String): Self = StObject.set(x, "defaultGameServerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultGameServerConfigUndefined: Self = StObject.set(x, "defaultGameServerConfig", js.undefined)
+    inline def setDefaultGameServerConfigUndefined: Self = StObject.set(x, "defaultGameServerConfig", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setGameServerConfigOverrides(value: js.Array[GameServerConfigOverride]): Self = StObject.set(x, "gameServerConfigOverrides", value.asInstanceOf[js.Any])
+    inline def setGameServerConfigOverrides(value: js.Array[GameServerConfigOverride]): Self = StObject.set(x, "gameServerConfigOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerConfigOverridesUndefined: Self = StObject.set(x, "gameServerConfigOverrides", js.undefined)
+    inline def setGameServerConfigOverridesUndefined: Self = StObject.set(x, "gameServerConfigOverrides", js.undefined)
     
-    @scala.inline
-    def setGameServerConfigOverridesVarargs(value: GameServerConfigOverride*): Self = StObject.set(x, "gameServerConfigOverrides", js.Array(value :_*))
+    inline def setGameServerConfigOverridesVarargs(value: GameServerConfigOverride*): Self = StObject.set(x, "gameServerConfigOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

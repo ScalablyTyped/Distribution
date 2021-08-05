@@ -13,19 +13,15 @@ trait LifecycleConfiguration extends StObject {
 }
 object LifecycleConfiguration {
   
-  @scala.inline
-  def apply(Rules: Rules): LifecycleConfiguration = {
+  inline def apply(Rules: Rules): LifecycleConfiguration = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleConfiguration]
   }
   
-  @scala.inline
-  implicit class LifecycleConfigurationMutableBuilder[Self <: LifecycleConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LifecycleConfiguration](x: Self) {
     
-    @scala.inline
-    def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

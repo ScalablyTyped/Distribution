@@ -26,22 +26,17 @@ trait PersistentVolumeStatus extends StObject {
 }
 object PersistentVolumeStatus {
   
-  @scala.inline
-  def apply(message: String, phase: String, reason: String): PersistentVolumeStatus = {
+  inline def apply(message: String, phase: String, reason: String): PersistentVolumeStatus = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentVolumeStatus]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeStatusMutableBuilder[Self <: PersistentVolumeStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeStatus](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

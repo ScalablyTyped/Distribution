@@ -18,25 +18,19 @@ trait CaptureSnapshotResponse extends StObject {
 }
 object CaptureSnapshotResponse {
   
-  @scala.inline
-  def apply(documents: js.Array[DocumentSnapshot], strings: js.Array[String]): CaptureSnapshotResponse = {
+  inline def apply(documents: js.Array[DocumentSnapshot], strings: js.Array[String]): CaptureSnapshotResponse = {
     val __obj = js.Dynamic.literal(documents = documents.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class CaptureSnapshotResponseMutableBuilder[Self <: CaptureSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CaptureSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: js.Array[DocumentSnapshot]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: js.Array[DocumentSnapshot]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsVarargs(value: DocumentSnapshot*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: DocumentSnapshot*): Self = StObject.set(x, "documents", js.Array(value :_*))
     
-    @scala.inline
-    def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+    inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
   }
 }

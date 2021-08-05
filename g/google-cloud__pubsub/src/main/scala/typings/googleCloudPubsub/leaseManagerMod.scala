@@ -20,7 +20,7 @@ object leaseManagerMod {
       *
       * @private
       */
-    var _cancelExtension: js.Any = js.native
+    /* private */ var _cancelExtension: js.Any = js.native
     
     /**
       * Emits the message. Emitting messages is very slow, so to avoid it acting
@@ -32,7 +32,7 @@ object leaseManagerMod {
       *
       * @param {Message} message The message to emit.
       */
-    var _dispense: js.Any = js.native
+    /* private */ var _dispense: js.Any = js.native
     
     /**
       * Loops through inventory and extends the deadlines for any messages that
@@ -40,7 +40,7 @@ object leaseManagerMod {
       *
       * @private
       */
-    var _extendDeadlines: js.Any = js.native
+    /* private */ var _extendDeadlines: js.Any = js.native
     
     /**
       * Creates a timeout(ms) that should allow us to extend any message deadlines
@@ -50,26 +50,26 @@ object leaseManagerMod {
       *
       * @returns {number}
       */
-    var _getNextExtensionTimeoutMs: js.Any = js.native
+    /* private */ var _getNextExtensionTimeoutMs: js.Any = js.native
     
-    var _isLeasing: js.Any = js.native
+    /* private */ var _isLeasing: js.Any = js.native
     
-    var _messages: js.Any = js.native
+    /* private */ var _messages: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
     /**
       * Schedules an deadline extension for all messages.
       *
       * @private
       */
-    var _scheduleExtension: js.Any = js.native
+    /* private */ var _scheduleExtension: js.Any = js.native
     
-    var _subscriber: js.Any = js.native
+    /* private */ var _subscriber: js.Any = js.native
     
-    var _timer: js.Any = js.native
+    /* private */ var _timer: js.Any = js.native
     
     /**
       * Adds a message to the inventory, kicking off the deadline extender if it
@@ -140,38 +140,28 @@ object leaseManagerMod {
   }
   object FlowControlOptions {
     
-    @scala.inline
-    def apply(): FlowControlOptions = {
+    inline def apply(): FlowControlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlowControlOptions]
     }
     
-    @scala.inline
-    implicit class FlowControlOptionsMutableBuilder[Self <: FlowControlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FlowControlOptions](x: Self) {
       
-      @scala.inline
-      def setAllowExcessMessages(value: Boolean): Self = StObject.set(x, "allowExcessMessages", value.asInstanceOf[js.Any])
+      inline def setAllowExcessMessages(value: Boolean): Self = StObject.set(x, "allowExcessMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowExcessMessagesUndefined: Self = StObject.set(x, "allowExcessMessages", js.undefined)
+      inline def setAllowExcessMessagesUndefined: Self = StObject.set(x, "allowExcessMessages", js.undefined)
       
-      @scala.inline
-      def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
+      inline def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
+      inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
       
-      @scala.inline
-      def setMaxExtension(value: Double): Self = StObject.set(x, "maxExtension", value.asInstanceOf[js.Any])
+      inline def setMaxExtension(value: Double): Self = StObject.set(x, "maxExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxExtensionUndefined: Self = StObject.set(x, "maxExtension", js.undefined)
+      inline def setMaxExtensionUndefined: Self = StObject.set(x, "maxExtension", js.undefined)
       
-      @scala.inline
-      def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+      inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
+      inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     }
   }
 }

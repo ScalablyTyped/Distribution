@@ -14,28 +14,21 @@ trait ListPackagesResponse extends StObject {
 }
 object ListPackagesResponse {
   
-  @scala.inline
-  def apply(): ListPackagesResponse = {
+  inline def apply(): ListPackagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPackagesResponse]
   }
   
-  @scala.inline
-  implicit class ListPackagesResponseMutableBuilder[Self <: ListPackagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPackagesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPackages(value: js.Array[Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    inline def setPackages(value: js.Array[Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    @scala.inline
-    def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
   }
 }

@@ -24,29 +24,22 @@ object iconsManifestMod {
   }
   object IconManifest {
     
-    @scala.inline
-    def apply(id: String, license: String, licenseUrl: String, name: String, projectUrl: String): IconManifest = {
+    inline def apply(id: String, license: String, licenseUrl: String, name: String, projectUrl: String): IconManifest = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], licenseUrl = licenseUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectUrl = projectUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconManifest]
     }
     
-    @scala.inline
-    implicit class IconManifestMutableBuilder[Self <: IconManifest] (val x: Self) extends AnyVal {
+    extension [Self <: IconManifest](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+      inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
+      inline def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUrl(value: String): Self = StObject.set(x, "projectUrl", value.asInstanceOf[js.Any])
+      inline def setProjectUrl(value: String): Self = StObject.set(x, "projectUrl", value.asInstanceOf[js.Any])
     }
   }
 }

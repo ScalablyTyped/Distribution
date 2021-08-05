@@ -16,22 +16,17 @@ trait SchemaManagedPropertyBundle extends StObject {
 }
 object SchemaManagedPropertyBundle {
   
-  @scala.inline
-  def apply(): SchemaManagedPropertyBundle = {
+  inline def apply(): SchemaManagedPropertyBundle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedPropertyBundle]
   }
   
-  @scala.inline
-  implicit class SchemaManagedPropertyBundleMutableBuilder[Self <: SchemaManagedPropertyBundle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedPropertyBundle](x: Self) {
     
-    @scala.inline
-    def setManagedProperty(value: js.Array[SchemaManagedProperty]): Self = StObject.set(x, "managedProperty", value.asInstanceOf[js.Any])
+    inline def setManagedProperty(value: js.Array[SchemaManagedProperty]): Self = StObject.set(x, "managedProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
+    inline def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
     
-    @scala.inline
-    def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
+    inline def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
   }
 }

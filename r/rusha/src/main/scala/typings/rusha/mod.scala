@@ -43,23 +43,18 @@ object mod extends Shortcut {
   }
   object Rusha {
     
-    @scala.inline
-    def apply(createHash: () => Hash, createWorker: () => RushaWorker, disableWorkerBehaviour: () => Unit): Rusha = {
+    inline def apply(createHash: () => Hash, createWorker: () => RushaWorker, disableWorkerBehaviour: () => Unit): Rusha = {
       val __obj = js.Dynamic.literal(createHash = js.Any.fromFunction0(createHash), createWorker = js.Any.fromFunction0(createWorker), disableWorkerBehaviour = js.Any.fromFunction0(disableWorkerBehaviour))
       __obj.asInstanceOf[Rusha]
     }
     
-    @scala.inline
-    implicit class RushaMutableBuilder[Self <: Rusha] (val x: Self) extends AnyVal {
+    extension [Self <: Rusha](x: Self) {
       
-      @scala.inline
-      def setCreateHash(value: () => Hash): Self = StObject.set(x, "createHash", js.Any.fromFunction0(value))
+      inline def setCreateHash(value: () => Hash): Self = StObject.set(x, "createHash", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateWorker(value: () => RushaWorker): Self = StObject.set(x, "createWorker", js.Any.fromFunction0(value))
+      inline def setCreateWorker(value: () => RushaWorker): Self = StObject.set(x, "createWorker", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableWorkerBehaviour(value: () => Unit): Self = StObject.set(x, "disableWorkerBehaviour", js.Any.fromFunction0(value))
+      inline def setDisableWorkerBehaviour(value: () => Unit): Self = StObject.set(x, "disableWorkerBehaviour", js.Any.fromFunction0(value))
     }
   }
   
@@ -96,23 +91,18 @@ object mod extends Shortcut {
   }
   object RushaWorkerRequest {
     
-    @scala.inline
-    def apply(data: String | js.Array[Double] | ArrayBuffer | Buffer | Blob, id: String): RushaWorkerRequest = {
+    inline def apply(data: String | js.Array[Double] | ArrayBuffer | Buffer | Blob, id: String): RushaWorkerRequest = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RushaWorkerRequest]
     }
     
-    @scala.inline
-    implicit class RushaWorkerRequestMutableBuilder[Self <: RushaWorkerRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RushaWorkerRequest](x: Self) {
       
-      @scala.inline
-      def setData(value: String | js.Array[Double] | ArrayBuffer | Buffer | Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | js.Array[Double] | ArrayBuffer | Buffer | Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,20 +114,16 @@ object mod extends Shortcut {
   }
   object RushaWorkerResponse {
     
-    @scala.inline
-    def apply(hash: String, id: String): RushaWorkerResponse = {
+    inline def apply(hash: String, id: String): RushaWorkerResponse = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RushaWorkerResponse]
     }
     
-    @scala.inline
-    implicit class RushaWorkerResponseMutableBuilder[Self <: RushaWorkerResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RushaWorkerResponse](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

@@ -29,40 +29,29 @@ trait SchemaHistogramFacets extends StObject {
 }
 object SchemaHistogramFacets {
   
-  @scala.inline
-  def apply(): SchemaHistogramFacets = {
+  inline def apply(): SchemaHistogramFacets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistogramFacets]
   }
   
-  @scala.inline
-  implicit class SchemaHistogramFacetsMutableBuilder[Self <: SchemaHistogramFacets] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistogramFacets](x: Self) {
     
-    @scala.inline
-    def setCompensationHistogramFacets(value: js.Array[SchemaCompensationHistogramRequest]): Self = StObject.set(x, "compensationHistogramFacets", value.asInstanceOf[js.Any])
+    inline def setCompensationHistogramFacets(value: js.Array[SchemaCompensationHistogramRequest]): Self = StObject.set(x, "compensationHistogramFacets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompensationHistogramFacetsUndefined: Self = StObject.set(x, "compensationHistogramFacets", js.undefined)
+    inline def setCompensationHistogramFacetsUndefined: Self = StObject.set(x, "compensationHistogramFacets", js.undefined)
     
-    @scala.inline
-    def setCompensationHistogramFacetsVarargs(value: SchemaCompensationHistogramRequest*): Self = StObject.set(x, "compensationHistogramFacets", js.Array(value :_*))
+    inline def setCompensationHistogramFacetsVarargs(value: SchemaCompensationHistogramRequest*): Self = StObject.set(x, "compensationHistogramFacets", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomAttributeHistogramFacets(value: js.Array[SchemaCustomAttributeHistogramRequest]): Self = StObject.set(x, "customAttributeHistogramFacets", value.asInstanceOf[js.Any])
+    inline def setCustomAttributeHistogramFacets(value: js.Array[SchemaCustomAttributeHistogramRequest]): Self = StObject.set(x, "customAttributeHistogramFacets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAttributeHistogramFacetsUndefined: Self = StObject.set(x, "customAttributeHistogramFacets", js.undefined)
+    inline def setCustomAttributeHistogramFacetsUndefined: Self = StObject.set(x, "customAttributeHistogramFacets", js.undefined)
     
-    @scala.inline
-    def setCustomAttributeHistogramFacetsVarargs(value: SchemaCustomAttributeHistogramRequest*): Self = StObject.set(x, "customAttributeHistogramFacets", js.Array(value :_*))
+    inline def setCustomAttributeHistogramFacetsVarargs(value: SchemaCustomAttributeHistogramRequest*): Self = StObject.set(x, "customAttributeHistogramFacets", js.Array(value :_*))
     
-    @scala.inline
-    def setSimpleHistogramFacets(value: js.Array[String]): Self = StObject.set(x, "simpleHistogramFacets", value.asInstanceOf[js.Any])
+    inline def setSimpleHistogramFacets(value: js.Array[String]): Self = StObject.set(x, "simpleHistogramFacets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleHistogramFacetsUndefined: Self = StObject.set(x, "simpleHistogramFacets", js.undefined)
+    inline def setSimpleHistogramFacetsUndefined: Self = StObject.set(x, "simpleHistogramFacets", js.undefined)
     
-    @scala.inline
-    def setSimpleHistogramFacetsVarargs(value: String*): Self = StObject.set(x, "simpleHistogramFacets", js.Array(value :_*))
+    inline def setSimpleHistogramFacetsVarargs(value: String*): Self = StObject.set(x, "simpleHistogramFacets", js.Array(value :_*))
   }
 }

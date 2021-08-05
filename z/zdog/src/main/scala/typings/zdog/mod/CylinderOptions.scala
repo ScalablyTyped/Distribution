@@ -18,31 +18,23 @@ trait CylinderOptions
 }
 object CylinderOptions {
   
-  @scala.inline
-  def apply(): CylinderOptions = {
+  inline def apply(): CylinderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CylinderOptions]
   }
   
-  @scala.inline
-  implicit class CylinderOptionsMutableBuilder[Self <: CylinderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CylinderOptions](x: Self) {
     
-    @scala.inline
-    def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
+    inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
+    inline def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
     
-    @scala.inline
-    def setFrontFace(value: Boolean | String): Self = StObject.set(x, "frontFace", value.asInstanceOf[js.Any])
+    inline def setFrontFace(value: Boolean | String): Self = StObject.set(x, "frontFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontFaceUndefined: Self = StObject.set(x, "frontFace", js.undefined)
+    inline def setFrontFaceUndefined: Self = StObject.set(x, "frontFace", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
   }
 }

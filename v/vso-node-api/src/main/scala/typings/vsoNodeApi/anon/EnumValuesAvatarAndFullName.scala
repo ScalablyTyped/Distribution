@@ -10,16 +10,13 @@ trait EnumValuesAvatarAndFullName extends StObject {
 }
 object EnumValuesAvatarAndFullName {
   
-  @scala.inline
-  def apply(enumValues: AvatarAndFullName): EnumValuesAvatarAndFullName = {
+  inline def apply(enumValues: AvatarAndFullName): EnumValuesAvatarAndFullName = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAvatarAndFullName]
   }
   
-  @scala.inline
-  implicit class EnumValuesAvatarAndFullNameMutableBuilder[Self <: EnumValuesAvatarAndFullName] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAvatarAndFullName](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AvatarAndFullName): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AvatarAndFullName): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

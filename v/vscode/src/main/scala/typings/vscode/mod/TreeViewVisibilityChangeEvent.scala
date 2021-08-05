@@ -13,16 +13,13 @@ trait TreeViewVisibilityChangeEvent extends StObject {
 }
 object TreeViewVisibilityChangeEvent {
   
-  @scala.inline
-  def apply(visible: Boolean): TreeViewVisibilityChangeEvent = {
+  inline def apply(visible: Boolean): TreeViewVisibilityChangeEvent = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewVisibilityChangeEvent]
   }
   
-  @scala.inline
-  implicit class TreeViewVisibilityChangeEventMutableBuilder[Self <: TreeViewVisibilityChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewVisibilityChangeEvent](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

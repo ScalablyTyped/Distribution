@@ -15,19 +15,15 @@ trait TypeofSplitButton extends StObject {
 }
 object TypeofSplitButton {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: SplitButton): TypeofSplitButton = {
+  inline def apply(Locale: js.Any, fn: SplitButton): TypeofSplitButton = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSplitButton]
   }
   
-  @scala.inline
-  implicit class TypeofSplitButtonMutableBuilder[Self <: TypeofSplitButton] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSplitButton](x: Self) {
     
-    @scala.inline
-    def setFn(value: SplitButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: SplitButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

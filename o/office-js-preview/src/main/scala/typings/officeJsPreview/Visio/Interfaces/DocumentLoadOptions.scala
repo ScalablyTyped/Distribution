@@ -33,31 +33,23 @@ trait DocumentLoadOptions extends StObject {
 }
 object DocumentLoadOptions {
   
-  @scala.inline
-  def apply(): DocumentLoadOptions = {
+  inline def apply(): DocumentLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentLoadOptions]
   }
   
-  @scala.inline
-  implicit class DocumentLoadOptionsMutableBuilder[Self <: DocumentLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setApplication(value: ApplicationLoadOptions): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: ApplicationLoadOptions): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
-    @scala.inline
-    def setView(value: DocumentViewLoadOptions): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: DocumentViewLoadOptions): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

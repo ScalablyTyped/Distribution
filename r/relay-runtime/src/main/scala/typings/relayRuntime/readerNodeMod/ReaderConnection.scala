@@ -20,8 +20,7 @@ trait ReaderConnection extends StObject {
 }
 object ReaderConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[ReaderArgument],
     edges: ReaderLinkedField,
     kind: String,
@@ -33,28 +32,20 @@ object ReaderConnection {
     __obj.asInstanceOf[ReaderConnection]
   }
   
-  @scala.inline
-  implicit class ReaderConnectionMutableBuilder[Self <: ReaderConnection] (val x: Self) extends AnyVal {
+  extension [Self <: ReaderConnection](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[ReaderArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[ReaderArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: ReaderArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: ReaderArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setEdges(value: ReaderLinkedField): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: ReaderLinkedField): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfo(value: ReaderLinkedField): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: ReaderLinkedField): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
   }
 }

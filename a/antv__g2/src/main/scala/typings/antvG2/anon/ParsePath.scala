@@ -14,22 +14,17 @@ trait ParsePath extends StObject {
 }
 object ParsePath {
   
-  @scala.inline
-  def apply(parsePath: js.Any, parsePoint: js.Any, parsePoints: js.Any): ParsePath = {
+  inline def apply(parsePath: js.Any, parsePoint: js.Any, parsePoints: js.Any): ParsePath = {
     val __obj = js.Dynamic.literal(parsePath = parsePath.asInstanceOf[js.Any], parsePoint = parsePoint.asInstanceOf[js.Any], parsePoints = parsePoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsePath]
   }
   
-  @scala.inline
-  implicit class ParsePathMutableBuilder[Self <: ParsePath] (val x: Self) extends AnyVal {
+  extension [Self <: ParsePath](x: Self) {
     
-    @scala.inline
-    def setParsePath(value: js.Any): Self = StObject.set(x, "parsePath", value.asInstanceOf[js.Any])
+    inline def setParsePath(value: js.Any): Self = StObject.set(x, "parsePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsePoint(value: js.Any): Self = StObject.set(x, "parsePoint", value.asInstanceOf[js.Any])
+    inline def setParsePoint(value: js.Any): Self = StObject.set(x, "parsePoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsePoints(value: js.Any): Self = StObject.set(x, "parsePoints", value.asInstanceOf[js.Any])
+    inline def setParsePoints(value: js.Any): Self = StObject.set(x, "parsePoints", value.asInstanceOf[js.Any])
   }
 }

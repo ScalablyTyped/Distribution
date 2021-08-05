@@ -105,8 +105,7 @@ trait XDocumentDigitalSignatures
 }
 object XDocumentDigitalSignatures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentContentSignatureDefaultStreamName: String,
     PackageSignatureDefaultStreamName: String,
     ScriptingContentSignatureDefaultStreamName: String,
@@ -137,73 +136,50 @@ object XDocumentDigitalSignatures {
     __obj.asInstanceOf[XDocumentDigitalSignatures]
   }
   
-  @scala.inline
-  implicit class XDocumentDigitalSignaturesMutableBuilder[Self <: XDocumentDigitalSignatures] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentDigitalSignatures](x: Self) {
     
-    @scala.inline
-    def setAddAuthorToTrustedSources(value: XCertificate => Unit): Self = StObject.set(x, "addAuthorToTrustedSources", js.Any.fromFunction1(value))
+    inline def setAddAuthorToTrustedSources(value: XCertificate => Unit): Self = StObject.set(x, "addAuthorToTrustedSources", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddLocationToTrustedSources(value: String => Unit): Self = StObject.set(x, "addLocationToTrustedSources", js.Any.fromFunction1(value))
+    inline def setAddLocationToTrustedSources(value: String => Unit): Self = StObject.set(x, "addLocationToTrustedSources", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChooseCertificate(value: js.Array[String] => XCertificate): Self = StObject.set(x, "chooseCertificate", js.Any.fromFunction1(value))
+    inline def setChooseCertificate(value: js.Array[String] => XCertificate): Self = StObject.set(x, "chooseCertificate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDocumentContentSignatureDefaultStreamName(value: String): Self = StObject.set(x, "DocumentContentSignatureDefaultStreamName", value.asInstanceOf[js.Any])
+    inline def setDocumentContentSignatureDefaultStreamName(value: String): Self = StObject.set(x, "DocumentContentSignatureDefaultStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDocumentContentSignatureDefaultStreamName(value: () => String): Self = StObject.set(x, "getDocumentContentSignatureDefaultStreamName", js.Any.fromFunction0(value))
+    inline def setGetDocumentContentSignatureDefaultStreamName(value: () => String): Self = StObject.set(x, "getDocumentContentSignatureDefaultStreamName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPackageSignatureDefaultStreamName(value: () => String): Self = StObject.set(x, "getPackageSignatureDefaultStreamName", js.Any.fromFunction0(value))
+    inline def setGetPackageSignatureDefaultStreamName(value: () => String): Self = StObject.set(x, "getPackageSignatureDefaultStreamName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScriptingContentSignatureDefaultStreamName(value: () => String): Self = StObject.set(x, "getScriptingContentSignatureDefaultStreamName", js.Any.fromFunction0(value))
+    inline def setGetScriptingContentSignatureDefaultStreamName(value: () => String): Self = StObject.set(x, "getScriptingContentSignatureDefaultStreamName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAuthorTrusted(value: XCertificate => Boolean): Self = StObject.set(x, "isAuthorTrusted", js.Any.fromFunction1(value))
+    inline def setIsAuthorTrusted(value: XCertificate => Boolean): Self = StObject.set(x, "isAuthorTrusted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLocationTrusted(value: String => Boolean): Self = StObject.set(x, "isLocationTrusted", js.Any.fromFunction1(value))
+    inline def setIsLocationTrusted(value: String => Boolean): Self = StObject.set(x, "isLocationTrusted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setManageTrustedSources(value: () => Unit): Self = StObject.set(x, "manageTrustedSources", js.Any.fromFunction0(value))
+    inline def setManageTrustedSources(value: () => Unit): Self = StObject.set(x, "manageTrustedSources", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPackageSignatureDefaultStreamName(value: String): Self = StObject.set(x, "PackageSignatureDefaultStreamName", value.asInstanceOf[js.Any])
+    inline def setPackageSignatureDefaultStreamName(value: String): Self = StObject.set(x, "PackageSignatureDefaultStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptingContentSignatureDefaultStreamName(value: String): Self = StObject.set(x, "ScriptingContentSignatureDefaultStreamName", value.asInstanceOf[js.Any])
+    inline def setScriptingContentSignatureDefaultStreamName(value: String): Self = StObject.set(x, "ScriptingContentSignatureDefaultStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCertificate(value: XCertificate => Unit): Self = StObject.set(x, "showCertificate", js.Any.fromFunction1(value))
+    inline def setShowCertificate(value: XCertificate => Unit): Self = StObject.set(x, "showCertificate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowDocumentContentSignatures(value: (XStorage, XInputStream) => Unit): Self = StObject.set(x, "showDocumentContentSignatures", js.Any.fromFunction2(value))
+    inline def setShowDocumentContentSignatures(value: (XStorage, XInputStream) => Unit): Self = StObject.set(x, "showDocumentContentSignatures", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowPackageSignatures(value: (XStorage, XInputStream) => Unit): Self = StObject.set(x, "showPackageSignatures", js.Any.fromFunction2(value))
+    inline def setShowPackageSignatures(value: (XStorage, XInputStream) => Unit): Self = StObject.set(x, "showPackageSignatures", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowScriptingContentSignatures(value: (XStorage, XInputStream) => Unit): Self = StObject.set(x, "showScriptingContentSignatures", js.Any.fromFunction2(value))
+    inline def setShowScriptingContentSignatures(value: (XStorage, XInputStream) => Unit): Self = StObject.set(x, "showScriptingContentSignatures", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSignDocumentContent(value: (XStorage, XStream) => Boolean): Self = StObject.set(x, "signDocumentContent", js.Any.fromFunction2(value))
+    inline def setSignDocumentContent(value: (XStorage, XStream) => Boolean): Self = StObject.set(x, "signDocumentContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSignPackage(value: (XStorage, XStream) => Boolean): Self = StObject.set(x, "signPackage", js.Any.fromFunction2(value))
+    inline def setSignPackage(value: (XStorage, XStream) => Boolean): Self = StObject.set(x, "signPackage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSignScriptingContent(value: (XStorage, XStream) => Boolean): Self = StObject.set(x, "signScriptingContent", js.Any.fromFunction2(value))
+    inline def setSignScriptingContent(value: (XStorage, XStream) => Boolean): Self = StObject.set(x, "signScriptingContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVerifyDocumentContentSignatures(value: (XStorage, XInputStream) => SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "verifyDocumentContentSignatures", js.Any.fromFunction2(value))
+    inline def setVerifyDocumentContentSignatures(value: (XStorage, XInputStream) => SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "verifyDocumentContentSignatures", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVerifyPackageSignatures(value: (XStorage, XInputStream) => SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "verifyPackageSignatures", js.Any.fromFunction2(value))
+    inline def setVerifyPackageSignatures(value: (XStorage, XInputStream) => SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "verifyPackageSignatures", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVerifyScriptingContentSignatures(value: (XStorage, XInputStream) => SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "verifyScriptingContentSignatures", js.Any.fromFunction2(value))
+    inline def setVerifyScriptingContentSignatures(value: (XStorage, XInputStream) => SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "verifyScriptingContentSignatures", js.Any.fromFunction2(value))
   }
 }

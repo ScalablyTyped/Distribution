@@ -18,25 +18,19 @@ trait RowDimensions extends StObject {
 }
 object RowDimensions {
   
-  @scala.inline
-  def apply(): RowDimensions = {
+  inline def apply(): RowDimensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowDimensions]
   }
   
-  @scala.inline
-  implicit class RowDimensionsMutableBuilder[Self <: RowDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: RowDimensions](x: Self) {
     
-    @scala.inline
-    def setPublisherIdentifier(value: String): Self = StObject.set(x, "publisherIdentifier", value.asInstanceOf[js.Any])
+    inline def setPublisherIdentifier(value: String): Self = StObject.set(x, "publisherIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherIdentifierUndefined: Self = StObject.set(x, "publisherIdentifier", js.undefined)
+    inline def setPublisherIdentifierUndefined: Self = StObject.set(x, "publisherIdentifier", js.undefined)
     
-    @scala.inline
-    def setTimeInterval(value: TimeInterval): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
+    inline def setTimeInterval(value: TimeInterval): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
+    inline def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
   }
 }

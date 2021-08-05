@@ -187,20 +187,15 @@ object stateBlockMod {
   trait ParentType extends StObject
   object ParentType {
     
-    @scala.inline
-    def blockquote: typings.markdownIt.markdownItStrings.blockquote = "blockquote".asInstanceOf[typings.markdownIt.markdownItStrings.blockquote]
+    inline def blockquote: typings.markdownIt.markdownItStrings.blockquote = "blockquote".asInstanceOf[typings.markdownIt.markdownItStrings.blockquote]
     
-    @scala.inline
-    def list: typings.markdownIt.markdownItStrings.list = "list".asInstanceOf[typings.markdownIt.markdownItStrings.list]
+    inline def list: typings.markdownIt.markdownItStrings.list = "list".asInstanceOf[typings.markdownIt.markdownItStrings.list]
     
-    @scala.inline
-    def paragraph: typings.markdownIt.markdownItStrings.paragraph = "paragraph".asInstanceOf[typings.markdownIt.markdownItStrings.paragraph]
+    inline def paragraph: typings.markdownIt.markdownItStrings.paragraph = "paragraph".asInstanceOf[typings.markdownIt.markdownItStrings.paragraph]
     
-    @scala.inline
-    def reference: typings.markdownIt.markdownItStrings.reference = "reference".asInstanceOf[typings.markdownIt.markdownItStrings.reference]
+    inline def reference: typings.markdownIt.markdownItStrings.reference = "reference".asInstanceOf[typings.markdownIt.markdownItStrings.reference]
     
-    @scala.inline
-    def root: typings.markdownIt.markdownItStrings.root = "root".asInstanceOf[typings.markdownIt.markdownItStrings.root]
+    inline def root: typings.markdownIt.markdownItStrings.root = "root".asInstanceOf[typings.markdownIt.markdownItStrings.root]
   }
   
   trait StateBlock extends StObject {
@@ -340,8 +335,7 @@ object stateBlockMod {
   }
   object StateBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Token: Instantiable3[
           /* type */ String, 
           /* tag */ String, 
@@ -379,101 +373,69 @@ object stateBlockMod {
       __obj.asInstanceOf[StateBlock]
     }
     
-    @scala.inline
-    implicit class StateBlockMutableBuilder[Self <: StateBlock] (val x: Self) extends AnyVal {
+    extension [Self <: StateBlock](x: Self) {
       
-      @scala.inline
-      def setBMarks(value: js.Array[Double]): Self = StObject.set(x, "bMarks", value.asInstanceOf[js.Any])
+      inline def setBMarks(value: js.Array[Double]): Self = StObject.set(x, "bMarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBMarksVarargs(value: Double*): Self = StObject.set(x, "bMarks", js.Array(value :_*))
+      inline def setBMarksVarargs(value: Double*): Self = StObject.set(x, "bMarks", js.Array(value :_*))
       
-      @scala.inline
-      def setBlkIndent(value: Double): Self = StObject.set(x, "blkIndent", value.asInstanceOf[js.Any])
+      inline def setBlkIndent(value: Double): Self = StObject.set(x, "blkIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsCount(value: js.Array[Double]): Self = StObject.set(x, "bsCount", value.asInstanceOf[js.Any])
+      inline def setBsCount(value: js.Array[Double]): Self = StObject.set(x, "bsCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsCountVarargs(value: Double*): Self = StObject.set(x, "bsCount", js.Array(value :_*))
+      inline def setBsCountVarargs(value: Double*): Self = StObject.set(x, "bsCount", js.Array(value :_*))
       
-      @scala.inline
-      def setDdIndent(value: Double): Self = StObject.set(x, "ddIndent", value.asInstanceOf[js.Any])
+      inline def setDdIndent(value: Double): Self = StObject.set(x, "ddIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMarks(value: js.Array[Double]): Self = StObject.set(x, "eMarks", value.asInstanceOf[js.Any])
+      inline def setEMarks(value: js.Array[Double]): Self = StObject.set(x, "eMarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMarksVarargs(value: Double*): Self = StObject.set(x, "eMarks", js.Array(value :_*))
+      inline def setEMarksVarargs(value: Double*): Self = StObject.set(x, "eMarks", js.Array(value :_*))
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetLines(value: (Double, Double, Double, Boolean) => String): Self = StObject.set(x, "getLines", js.Any.fromFunction4(value))
+      inline def setGetLines(value: (Double, Double, Double, Boolean) => String): Self = StObject.set(x, "getLines", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setIsEmpty(value: Double => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+      inline def setIsEmpty(value: Double => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineMax(value: Double): Self = StObject.set(x, "lineMax", value.asInstanceOf[js.Any])
+      inline def setLineMax(value: Double): Self = StObject.set(x, "lineMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListIndent(value: Double): Self = StObject.set(x, "listIndent", value.asInstanceOf[js.Any])
+      inline def setListIndent(value: Double): Self = StObject.set(x, "listIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd(value: MarkdownIt): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: MarkdownIt): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentType(value: ParentType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
+      inline def setParentType(value: ParentType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPush(value: (String, String, Nesting) => typings.markdownIt.tokenMod.^): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
+      inline def setPush(value: (String, String, Nesting) => typings.markdownIt.tokenMod.^): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCount(value: js.Array[Double]): Self = StObject.set(x, "sCount", value.asInstanceOf[js.Any])
+      inline def setSCount(value: js.Array[Double]): Self = StObject.set(x, "sCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCountVarargs(value: Double*): Self = StObject.set(x, "sCount", js.Array(value :_*))
+      inline def setSCountVarargs(value: Double*): Self = StObject.set(x, "sCount", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipChars(value: (Double, Double) => Double): Self = StObject.set(x, "skipChars", js.Any.fromFunction2(value))
+      inline def setSkipChars(value: (Double, Double) => Double): Self = StObject.set(x, "skipChars", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkipCharsBack(value: (Double, Double, Double) => Double): Self = StObject.set(x, "skipCharsBack", js.Any.fromFunction3(value))
+      inline def setSkipCharsBack(value: (Double, Double, Double) => Double): Self = StObject.set(x, "skipCharsBack", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSkipEmptyLines(value: Double => Double): Self = StObject.set(x, "skipEmptyLines", js.Any.fromFunction1(value))
+      inline def setSkipEmptyLines(value: Double => Double): Self = StObject.set(x, "skipEmptyLines", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkipSpaces(value: Double => Double): Self = StObject.set(x, "skipSpaces", js.Any.fromFunction1(value))
+      inline def setSkipSpaces(value: Double => Double): Self = StObject.set(x, "skipSpaces", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkipSpacesBack(value: (Double, Double) => Double): Self = StObject.set(x, "skipSpacesBack", js.Any.fromFunction2(value))
+      inline def setSkipSpacesBack(value: (Double, Double) => Double): Self = StObject.set(x, "skipSpacesBack", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTShift(value: js.Array[Double]): Self = StObject.set(x, "tShift", value.asInstanceOf[js.Any])
+      inline def setTShift(value: js.Array[Double]): Self = StObject.set(x, "tShift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTShiftVarargs(value: Double*): Self = StObject.set(x, "tShift", js.Array(value :_*))
+      inline def setTShiftVarargs(value: Double*): Self = StObject.set(x, "tShift", js.Array(value :_*))
       
-      @scala.inline
-      def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
+      inline def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(
+      inline def setToken(
         value: Instantiable3[
               /* type */ String, 
               /* tag */ String, 
@@ -482,11 +444,9 @@ object stateBlockMod {
             ]
       ): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
     }
   }
 }

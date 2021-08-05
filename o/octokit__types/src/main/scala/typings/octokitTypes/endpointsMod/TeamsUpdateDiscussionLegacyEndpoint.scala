@@ -22,31 +22,23 @@ trait TeamsUpdateDiscussionLegacyEndpoint extends StObject {
 }
 object TeamsUpdateDiscussionLegacyEndpoint {
   
-  @scala.inline
-  def apply(discussion_number: Double, team_id: Double): TeamsUpdateDiscussionLegacyEndpoint = {
+  inline def apply(discussion_number: Double, team_id: Double): TeamsUpdateDiscussionLegacyEndpoint = {
     val __obj = js.Dynamic.literal(discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateDiscussionLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsUpdateDiscussionLegacyEndpointMutableBuilder[Self <: TeamsUpdateDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsUpdateDiscussionLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
+    inline def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

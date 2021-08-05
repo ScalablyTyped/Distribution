@@ -14,19 +14,15 @@ trait OnBluetoothDeviceFoundOptions
 }
 object OnBluetoothDeviceFoundOptions {
   
-  @scala.inline
-  def apply(): OnBluetoothDeviceFoundOptions = {
+  inline def apply(): OnBluetoothDeviceFoundOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnBluetoothDeviceFoundOptions]
   }
   
-  @scala.inline
-  implicit class OnBluetoothDeviceFoundOptionsMutableBuilder[Self <: OnBluetoothDeviceFoundOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OnBluetoothDeviceFoundOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ Devices => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Devices => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

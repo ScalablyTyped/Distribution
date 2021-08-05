@@ -134,8 +134,7 @@ object Imaging {
     @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder.bmpDecoderId")
     @js.native
     def bmpDecoderId: String = js.native
-    @scala.inline
-    def bmpDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bmpDecoderId")(x.asInstanceOf[js.Any])
+    inline def bmpDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bmpDecoderId")(x.asInstanceOf[js.Any])
     
     /**
       * Asynchronously creates a new BitmapDecoder using a specific bitmap codec and initializes it using a stream.
@@ -144,72 +143,63 @@ object Imaging {
       * @return An object that manages the asynchronous creation of a new BitmapDecoder .
       */
     /* static member */
-    @scala.inline
-    def createAsync(decoderId: String, stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(decoderId.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder]]
+    inline def createAsync(decoderId: String, stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(decoderId.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder]]
     /**
       * Asynchronously creates a new BitmapDecoder and initializes it using a stream.
       * @param stream The stream containing the image file to be decoded.
       * @return An object that manages the asynchronous creation of a new BitmapDecoder .
       */
     /* static member */
-    @scala.inline
-    def createAsync(stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(stream.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder]]
+    inline def createAsync(stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(stream.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder]]
     
     /**
       * The bitmap decoders installed on the system and information about them.
       * @return A list of BitmapCodecInformation objects containing information about each decoder.
       */
     /* static member */
-    @scala.inline
-    def getDecoderInformationEnumerator(): IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecoderInformationEnumerator")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation]]
+    inline def getDecoderInformationEnumerator(): IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecoderInformationEnumerator")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation]]
     
     /** The unique identifier of the GIF decoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder.gifDecoderId")
     @js.native
     def gifDecoderId: String = js.native
-    @scala.inline
-    def gifDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gifDecoderId")(x.asInstanceOf[js.Any])
+    inline def gifDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gifDecoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the ICO decoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder.icoDecoderId")
     @js.native
     def icoDecoderId: String = js.native
-    @scala.inline
-    def icoDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icoDecoderId")(x.asInstanceOf[js.Any])
+    inline def icoDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icoDecoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the JPEG decoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder.jpegDecoderId")
     @js.native
     def jpegDecoderId: String = js.native
-    @scala.inline
-    def jpegDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegDecoderId")(x.asInstanceOf[js.Any])
+    inline def jpegDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegDecoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the JPEG-XR decoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder.jpegXRDecoderId")
     @js.native
     def jpegXRDecoderId: String = js.native
-    @scala.inline
-    def jpegXRDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegXRDecoderId")(x.asInstanceOf[js.Any])
+    inline def jpegXRDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegXRDecoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the PNG decoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder.pngDecoderId")
     @js.native
     def pngDecoderId: String = js.native
-    @scala.inline
-    def pngDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pngDecoderId")(x.asInstanceOf[js.Any])
+    inline def pngDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pngDecoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the TIFF decoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder.tiffDecoderId")
     @js.native
     def tiffDecoderId: String = js.native
-    @scala.inline
-    def tiffDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tiffDecoderId")(x.asInstanceOf[js.Any])
+    inline def tiffDecoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tiffDecoderId")(x.asInstanceOf[js.Any])
   }
   
   /** Contains methods to create, edit and save images. */
@@ -229,8 +219,7 @@ object Imaging {
     @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder.bmpEncoderId")
     @js.native
     def bmpEncoderId: String = js.native
-    @scala.inline
-    def bmpEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bmpEncoderId")(x.asInstanceOf[js.Any])
+    inline def bmpEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bmpEncoderId")(x.asInstanceOf[js.Any])
     
     /**
       * Asynchronously creates a new BitmapEncoder .
@@ -239,8 +228,7 @@ object Imaging {
       * @return An object that manages the asynchronous creation of a new BitmapEncoder .
       */
     /* static member */
-    @scala.inline
-    def createAsync(encoderId: String, stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(encoderId.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder]]
+    inline def createAsync(encoderId: String, stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(encoderId.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder]]
     /**
       * Asynchronously creates a new BitmapEncoder for the specified codec with the specified encoding options and initializes it on a stream.
       * @param encoderId The unique identifier of the specified encoder.
@@ -249,8 +237,7 @@ object Imaging {
       * @return An object that manages the asynchronous creation of a new BitmapEncoder .
       */
     /* static member */
-    @scala.inline
-    def createAsync(
+    inline def createAsync(
       encoderId: String,
       stream: IRandomAccessStream,
       encodingOptions: IIterable[IKeyValuePair[js.Any, js.Any]]
@@ -262,8 +249,7 @@ object Imaging {
       * @return An object that manages the asynchronous initialization of a new BitmapEncoder using data from an existing BitmapDecoder .
       */
     /* static member */
-    @scala.inline
-    def createForInPlacePropertyEncodingAsync(bitmapDecoder: typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForInPlacePropertyEncodingAsync")(bitmapDecoder.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder]]
+    inline def createForInPlacePropertyEncodingAsync(bitmapDecoder: typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForInPlacePropertyEncodingAsync")(bitmapDecoder.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder]]
     
     /**
       * Asynchronously creates a new BitmapEncoder and initializes it using data from an existing BitmapDecoder .
@@ -272,8 +258,7 @@ object Imaging {
       * @return An object that manages the asynchronous creation of a new BitmapEncoder using data from an existing BitmapDecoder .
       */
     /* static member */
-    @scala.inline
-    def createForTranscodingAsync(
+    inline def createForTranscodingAsync(
       stream: IRandomAccessStream,
       bitmapDecoder: typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder
     ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createForTranscodingAsync")(stream.asInstanceOf[js.Any], bitmapDecoder.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder]]
@@ -283,48 +268,42 @@ object Imaging {
       * @return A list of BitmapCodecInformation objects containing information about each encoder.
       */
     /* static member */
-    @scala.inline
-    def getEncoderInformationEnumerator(): IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncoderInformationEnumerator")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation]]
+    inline def getEncoderInformationEnumerator(): IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncoderInformationEnumerator")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation]]
     
     /** The unique identifier of the built-in GIF encoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder.gifEncoderId")
     @js.native
     def gifEncoderId: String = js.native
-    @scala.inline
-    def gifEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gifEncoderId")(x.asInstanceOf[js.Any])
+    inline def gifEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gifEncoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the built-in JPEG encoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder.jpegEncoderId")
     @js.native
     def jpegEncoderId: String = js.native
-    @scala.inline
-    def jpegEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegEncoderId")(x.asInstanceOf[js.Any])
+    inline def jpegEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegEncoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the built-in JPEG-XR encoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder.jpegXREncoderId")
     @js.native
     def jpegXREncoderId: String = js.native
-    @scala.inline
-    def jpegXREncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegXREncoderId")(x.asInstanceOf[js.Any])
+    inline def jpegXREncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpegXREncoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the built-in PNG encoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder.pngEncoderId")
     @js.native
     def pngEncoderId: String = js.native
-    @scala.inline
-    def pngEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pngEncoderId")(x.asInstanceOf[js.Any])
+    inline def pngEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pngEncoderId")(x.asInstanceOf[js.Any])
     
     /** The unique identifier of the built-in TIFF encoder. */
     /* static member */
     @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder.tiffEncoderId")
     @js.native
     def tiffEncoderId: String = js.native
-    @scala.inline
-    def tiffEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tiffEncoderId")(x.asInstanceOf[js.Any])
+    inline def tiffEncoderId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tiffEncoderId")(x.asInstanceOf[js.Any])
   }
   
   /** Specifies the flip operation to be performed on pixel data. */
@@ -782,8 +761,7 @@ object Imaging {
       * @return The converted software bitmap.
       */
     /* static member */
-    @scala.inline
-    def convert(source: typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap, format: BitmapPixelFormat): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
+    inline def convert(source: typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap, format: BitmapPixelFormat): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
     /**
       * Converts an existing SoftwareBitmap to a SoftwareBitmap with a different pixel format or alpha mode.
       * @param source The software bitmap to convert.
@@ -792,8 +770,7 @@ object Imaging {
       * @return The converted software bitmap.
       */
     /* static member */
-    @scala.inline
-    def convert(
+    inline def convert(
       source: typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap,
       format: BitmapPixelFormat,
       alpha: BitmapAlphaMode
@@ -805,8 +782,7 @@ object Imaging {
       * @return The newly created copy of the software bitmap.
       */
     /* static member */
-    @scala.inline
-    def copy(source: typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
+    inline def copy(source: typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
     
     /**
       * Creates a new SoftwareBitmap by performing a deep copy of the provided buffer. Modifications to the data in the new SoftwareBitmap will not effect the buffer from which it was created.
@@ -817,8 +793,7 @@ object Imaging {
       * @return The new software bitmap.
       */
     /* static member */
-    @scala.inline
-    def createCopyFromBuffer(source: IBuffer, format: BitmapPixelFormat, width: Double, height: Double): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = (^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromBuffer")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
+    inline def createCopyFromBuffer(source: IBuffer, format: BitmapPixelFormat, width: Double, height: Double): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = (^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromBuffer")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
     /**
       * Creates a new SoftwareBitmap by performing a deep copy of the provided buffer. Modifications to the data in the new SoftwareBitmap will not effect the buffer from which it was created.
       * @param source The source buffer from which the copy will be created.
@@ -829,8 +804,7 @@ object Imaging {
       * @return The new software bitmap.
       */
     /* static member */
-    @scala.inline
-    def createCopyFromBuffer(source: IBuffer, format: BitmapPixelFormat, width: Double, height: Double, alpha: BitmapAlphaMode): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = (^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromBuffer")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
+    inline def createCopyFromBuffer(source: IBuffer, format: BitmapPixelFormat, width: Double, height: Double, alpha: BitmapAlphaMode): typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap = (^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromBuffer")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]
     
     /**
       * Asynchronously creates a new SoftwareBitmap by performing a deep copy of the provided IDirect3DSurface . Modifications to the data in the new SoftwareBitmap will not effect the surface from which it was created.
@@ -838,8 +812,7 @@ object Imaging {
       * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
       */
     /* static member */
-    @scala.inline
-    def createCopyFromSurfaceAsync(surface: IDirect3DSurface): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromSurfaceAsync")(surface.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]]
+    inline def createCopyFromSurfaceAsync(surface: IDirect3DSurface): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromSurfaceAsync")(surface.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]]
     /**
       * Asynchronously creates a new SoftwareBitmap by performing a deep copy of the provided IDirect3DSurface . Modifications to the data in the new SoftwareBitmap will not effect the surface from which it was created.
       * @param surface The source surface from which the copy will be created.
@@ -847,8 +820,7 @@ object Imaging {
       * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
       */
     /* static member */
-    @scala.inline
-    def createCopyFromSurfaceAsync(surface: IDirect3DSurface, alpha: BitmapAlphaMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromSurfaceAsync")(surface.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]]
+    inline def createCopyFromSurfaceAsync(surface: IDirect3DSurface, alpha: BitmapAlphaMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCopyFromSurfaceAsync")(surface.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap]]
   }
   
   /** Specifies the compression mode used for TIFF images. */

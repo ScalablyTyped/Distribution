@@ -13,16 +13,13 @@ trait DeleteArchiveRequest extends StObject {
 }
 object DeleteArchiveRequest {
   
-  @scala.inline
-  def apply(ArchiveName: ArchiveName): DeleteArchiveRequest = {
+  inline def apply(ArchiveName: ArchiveName): DeleteArchiveRequest = {
     val __obj = js.Dynamic.literal(ArchiveName = ArchiveName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteArchiveRequest]
   }
   
-  @scala.inline
-  implicit class DeleteArchiveRequestMutableBuilder[Self <: DeleteArchiveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteArchiveRequest](x: Self) {
     
-    @scala.inline
-    def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
+    inline def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
   }
 }

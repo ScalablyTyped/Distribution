@@ -19,31 +19,23 @@ trait PolicyAlternativeNameServerConfigTargetNameServer extends StObject {
 }
 object PolicyAlternativeNameServerConfigTargetNameServer {
   
-  @scala.inline
-  def apply(): PolicyAlternativeNameServerConfigTargetNameServer = {
+  inline def apply(): PolicyAlternativeNameServerConfigTargetNameServer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyAlternativeNameServerConfigTargetNameServer]
   }
   
-  @scala.inline
-  implicit class PolicyAlternativeNameServerConfigTargetNameServerMutableBuilder[Self <: PolicyAlternativeNameServerConfigTargetNameServer] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyAlternativeNameServerConfigTargetNameServer](x: Self) {
     
-    @scala.inline
-    def setForwardingPath(value: String): Self = StObject.set(x, "forwardingPath", value.asInstanceOf[js.Any])
+    inline def setForwardingPath(value: String): Self = StObject.set(x, "forwardingPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingPathUndefined: Self = StObject.set(x, "forwardingPath", js.undefined)
+    inline def setForwardingPathUndefined: Self = StObject.set(x, "forwardingPath", js.undefined)
     
-    @scala.inline
-    def setIpv4Address(value: String): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
+    inline def setIpv4Address(value: String): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
+    inline def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

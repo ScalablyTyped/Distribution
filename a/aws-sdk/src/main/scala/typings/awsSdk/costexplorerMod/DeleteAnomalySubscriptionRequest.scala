@@ -13,16 +13,13 @@ trait DeleteAnomalySubscriptionRequest extends StObject {
 }
 object DeleteAnomalySubscriptionRequest {
   
-  @scala.inline
-  def apply(SubscriptionArn: GenericString): DeleteAnomalySubscriptionRequest = {
+  inline def apply(SubscriptionArn: GenericString): DeleteAnomalySubscriptionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAnomalySubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAnomalySubscriptionRequestMutableBuilder[Self <: DeleteAnomalySubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAnomalySubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

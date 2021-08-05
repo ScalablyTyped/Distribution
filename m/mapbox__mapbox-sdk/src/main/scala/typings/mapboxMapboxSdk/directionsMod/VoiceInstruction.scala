@@ -24,22 +24,17 @@ trait VoiceInstruction extends StObject {
 }
 object VoiceInstruction {
   
-  @scala.inline
-  def apply(announcement: String, distanceAlongGeometry: Double, ssmlAnnouncement: String): VoiceInstruction = {
+  inline def apply(announcement: String, distanceAlongGeometry: Double, ssmlAnnouncement: String): VoiceInstruction = {
     val __obj = js.Dynamic.literal(announcement = announcement.asInstanceOf[js.Any], distanceAlongGeometry = distanceAlongGeometry.asInstanceOf[js.Any], ssmlAnnouncement = ssmlAnnouncement.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceInstruction]
   }
   
-  @scala.inline
-  implicit class VoiceInstructionMutableBuilder[Self <: VoiceInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceInstruction](x: Self) {
     
-    @scala.inline
-    def setAnnouncement(value: String): Self = StObject.set(x, "announcement", value.asInstanceOf[js.Any])
+    inline def setAnnouncement(value: String): Self = StObject.set(x, "announcement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceAlongGeometry(value: Double): Self = StObject.set(x, "distanceAlongGeometry", value.asInstanceOf[js.Any])
+    inline def setDistanceAlongGeometry(value: Double): Self = StObject.set(x, "distanceAlongGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlAnnouncement(value: String): Self = StObject.set(x, "ssmlAnnouncement", value.asInstanceOf[js.Any])
+    inline def setSsmlAnnouncement(value: String): Self = StObject.set(x, "ssmlAnnouncement", value.asInstanceOf[js.Any])
   }
 }

@@ -39,43 +39,31 @@ trait ParamsResourceMylibraryBookshelvesAddvolume
 }
 object ParamsResourceMylibraryBookshelvesAddvolume {
   
-  @scala.inline
-  def apply(): ParamsResourceMylibraryBookshelvesAddvolume = {
+  inline def apply(): ParamsResourceMylibraryBookshelvesAddvolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMylibraryBookshelvesAddvolume]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMylibraryBookshelvesAddvolumeMutableBuilder[Self <: ParamsResourceMylibraryBookshelvesAddvolume] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMylibraryBookshelvesAddvolume](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setShelf(value: String): Self = StObject.set(x, "shelf", value.asInstanceOf[js.Any])
+    inline def setShelf(value: String): Self = StObject.set(x, "shelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShelfUndefined: Self = StObject.set(x, "shelf", js.undefined)
+    inline def setShelfUndefined: Self = StObject.set(x, "shelf", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

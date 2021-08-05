@@ -10,16 +10,13 @@ trait Fd extends StObject {
 }
 object Fd {
   
-  @scala.inline
-  def apply(fd: Double): Fd = {
+  inline def apply(fd: Double): Fd = {
     val __obj = js.Dynamic.literal(fd = fd.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fd]
   }
   
-  @scala.inline
-  implicit class FdMutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
+  extension [Self <: Fd](x: Self) {
     
-    @scala.inline
-    def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+    inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
   }
 }

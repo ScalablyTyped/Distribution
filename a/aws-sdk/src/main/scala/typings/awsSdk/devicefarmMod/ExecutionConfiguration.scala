@@ -33,43 +33,31 @@ trait ExecutionConfiguration extends StObject {
 }
 object ExecutionConfiguration {
   
-  @scala.inline
-  def apply(): ExecutionConfiguration = {
+  inline def apply(): ExecutionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionConfiguration]
   }
   
-  @scala.inline
-  implicit class ExecutionConfigurationMutableBuilder[Self <: ExecutionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionConfiguration](x: Self) {
     
-    @scala.inline
-    def setAccountsCleanup(value: AccountsCleanup): Self = StObject.set(x, "accountsCleanup", value.asInstanceOf[js.Any])
+    inline def setAccountsCleanup(value: AccountsCleanup): Self = StObject.set(x, "accountsCleanup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsCleanupUndefined: Self = StObject.set(x, "accountsCleanup", js.undefined)
+    inline def setAccountsCleanupUndefined: Self = StObject.set(x, "accountsCleanup", js.undefined)
     
-    @scala.inline
-    def setAppPackagesCleanup(value: AppPackagesCleanup): Self = StObject.set(x, "appPackagesCleanup", value.asInstanceOf[js.Any])
+    inline def setAppPackagesCleanup(value: AppPackagesCleanup): Self = StObject.set(x, "appPackagesCleanup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppPackagesCleanupUndefined: Self = StObject.set(x, "appPackagesCleanup", js.undefined)
+    inline def setAppPackagesCleanupUndefined: Self = StObject.set(x, "appPackagesCleanup", js.undefined)
     
-    @scala.inline
-    def setJobTimeoutMinutes(value: JobTimeoutMinutes): Self = StObject.set(x, "jobTimeoutMinutes", value.asInstanceOf[js.Any])
+    inline def setJobTimeoutMinutes(value: JobTimeoutMinutes): Self = StObject.set(x, "jobTimeoutMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTimeoutMinutesUndefined: Self = StObject.set(x, "jobTimeoutMinutes", js.undefined)
+    inline def setJobTimeoutMinutesUndefined: Self = StObject.set(x, "jobTimeoutMinutes", js.undefined)
     
-    @scala.inline
-    def setSkipAppResign(value: SkipAppResign): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
+    inline def setSkipAppResign(value: SkipAppResign): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
+    inline def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
-    @scala.inline
-    def setVideoCapture(value: VideoCapture): Self = StObject.set(x, "videoCapture", value.asInstanceOf[js.Any])
+    inline def setVideoCapture(value: VideoCapture): Self = StObject.set(x, "videoCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCaptureUndefined: Self = StObject.set(x, "videoCapture", js.undefined)
+    inline def setVideoCaptureUndefined: Self = StObject.set(x, "videoCapture", js.undefined)
   }
 }

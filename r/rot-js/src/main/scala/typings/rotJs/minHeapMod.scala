@@ -12,21 +12,21 @@ object minHeapMod {
     
     def debugPrint(): Unit = js.native
     
-    var existNode: js.Any = js.native
+    /* private */ var existNode: js.Any = js.native
     
     def find(v: T): HeapWrapper[T] | Null = js.native
     
-    var heap: js.Any = js.native
+    /* private */ var heap: js.Any = js.native
     
-    var leftChildNode: js.Any = js.native
+    /* private */ var leftChildNode: js.Any = js.native
     
     def len(): Double = js.native
     
     def lessThan(a: HeapWrapper[T], b: HeapWrapper[T]): Boolean = js.native
     
-    var minNode: js.Any = js.native
+    /* private */ var minNode: js.Any = js.native
     
-    var parentNode: js.Any = js.native
+    /* private */ var parentNode: js.Any = js.native
     
     def pop(): HeapWrapper[T] = js.native
     
@@ -34,17 +34,17 @@ object minHeapMod {
     
     def remove(v: T): Boolean = js.native
     
-    var rightChildNode: js.Any = js.native
+    /* private */ var rightChildNode: js.Any = js.native
     
     def shift(v: Double): Unit = js.native
     
-    var swap: js.Any = js.native
+    /* private */ var swap: js.Any = js.native
     
-    var timestamp: js.Any = js.native
+    /* private */ var timestamp: js.Any = js.native
     
-    var updateDown: js.Any = js.native
+    /* private */ var updateDown: js.Any = js.native
     
-    var updateUp: js.Any = js.native
+    /* private */ var updateUp: js.Any = js.native
   }
   
   trait HeapWrapper[T] extends StObject {
@@ -57,23 +57,18 @@ object minHeapMod {
   }
   object HeapWrapper {
     
-    @scala.inline
-    def apply[T](key: Double, timestamp: Double, value: T): HeapWrapper[T] = {
+    inline def apply[T](key: Double, timestamp: Double, value: T): HeapWrapper[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeapWrapper[T]]
     }
     
-    @scala.inline
-    implicit class HeapWrapperMutableBuilder[Self <: HeapWrapper[?], T] (val x: Self & HeapWrapper[T]) extends AnyVal {
+    extension [Self <: HeapWrapper[?], T](x: Self & HeapWrapper[T]) {
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,25 +17,19 @@ trait Alignment extends StObject {
 }
 object Alignment {
   
-  @scala.inline
-  def apply(): Alignment = {
+  inline def apply(): Alignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alignment]
   }
   
-  @scala.inline
-  implicit class AlignmentMutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
+  extension [Self <: Alignment](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: top | centerY | stretchY | bottom | baseline): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: top | centerY | stretchY | bottom | baseline): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

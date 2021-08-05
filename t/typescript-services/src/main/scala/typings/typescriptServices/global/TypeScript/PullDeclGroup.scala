@@ -11,7 +11,7 @@ class PullDeclGroup protected ()
      with typings.typescriptServices.TypeScript.PullDeclGroup {
   def this(name: String) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _decls: js.Any = js.native
   
   /* CompleteClass */

@@ -10,9 +10,7 @@ object styleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachStyle")().asInstanceOf[Unit]
+  inline def attachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachStyle")().asInstanceOf[Unit]
   
-  @scala.inline
-  def detachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachStyle")().asInstanceOf[Unit]
+  inline def detachStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachStyle")().asInstanceOf[Unit]
 }

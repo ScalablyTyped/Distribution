@@ -11,16 +11,13 @@ trait FileSystemManagerGetSavedFileListSuccessCallbackResult extends StObject {
 }
 object FileSystemManagerGetSavedFileListSuccessCallbackResult {
   
-  @scala.inline
-  def apply(fileList: FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem): FileSystemManagerGetSavedFileListSuccessCallbackResult = {
+  inline def apply(fileList: FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem): FileSystemManagerGetSavedFileListSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemManagerGetSavedFileListSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class FileSystemManagerGetSavedFileListSuccessCallbackResultMutableBuilder[Self <: FileSystemManagerGetSavedFileListSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemManagerGetSavedFileListSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setFileList(value: FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
   }
 }

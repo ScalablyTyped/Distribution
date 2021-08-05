@@ -18,19 +18,15 @@ trait CreatePrivateVirtualInterfaceRequest extends StObject {
 }
 object CreatePrivateVirtualInterfaceRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId, newPrivateVirtualInterface: NewPrivateVirtualInterface): CreatePrivateVirtualInterfaceRequest = {
+  inline def apply(connectionId: ConnectionId, newPrivateVirtualInterface: NewPrivateVirtualInterface): CreatePrivateVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newPrivateVirtualInterface = newPrivateVirtualInterface.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePrivateVirtualInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class CreatePrivateVirtualInterfaceRequestMutableBuilder[Self <: CreatePrivateVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePrivateVirtualInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPrivateVirtualInterface(value: NewPrivateVirtualInterface): Self = StObject.set(x, "newPrivateVirtualInterface", value.asInstanceOf[js.Any])
+    inline def setNewPrivateVirtualInterface(value: NewPrivateVirtualInterface): Self = StObject.set(x, "newPrivateVirtualInterface", value.asInstanceOf[js.Any])
   }
 }

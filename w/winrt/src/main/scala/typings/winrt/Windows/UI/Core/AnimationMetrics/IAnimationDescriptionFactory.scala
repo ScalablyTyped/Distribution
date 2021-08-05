@@ -10,16 +10,13 @@ trait IAnimationDescriptionFactory extends StObject {
 }
 object IAnimationDescriptionFactory {
   
-  @scala.inline
-  def apply(createInstance: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): IAnimationDescriptionFactory = {
+  inline def apply(createInstance: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): IAnimationDescriptionFactory = {
     val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction2(createInstance))
     __obj.asInstanceOf[IAnimationDescriptionFactory]
   }
   
-  @scala.inline
-  implicit class IAnimationDescriptionFactoryMutableBuilder[Self <: IAnimationDescriptionFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IAnimationDescriptionFactory](x: Self) {
     
-    @scala.inline
-    def setCreateInstance(value: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): Self = StObject.set(x, "createInstance", js.Any.fromFunction2(value))
+    inline def setCreateInstance(value: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): Self = StObject.set(x, "createInstance", js.Any.fromFunction2(value))
   }
 }

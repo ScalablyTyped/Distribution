@@ -14,31 +14,23 @@ trait ReplaceLocalhost extends StObject {
 }
 object ReplaceLocalhost {
   
-  @scala.inline
-  def apply(): ReplaceLocalhost = {
+  inline def apply(): ReplaceLocalhost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceLocalhost]
   }
   
-  @scala.inline
-  implicit class ReplaceLocalhostMutableBuilder[Self <: ReplaceLocalhost] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceLocalhost](x: Self) {
     
-    @scala.inline
-    def setReplaceLocalhost(value: Boolean): Self = StObject.set(x, "replaceLocalhost", value.asInstanceOf[js.Any])
+    inline def setReplaceLocalhost(value: Boolean): Self = StObject.set(x, "replaceLocalhost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceLocalhostUndefined: Self = StObject.set(x, "replaceLocalhost", js.undefined)
+    inline def setReplaceLocalhostUndefined: Self = StObject.set(x, "replaceLocalhost", js.undefined)
     
-    @scala.inline
-    def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
+    inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
+    inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteTagOptionInput extends StObject {
 }
 object DeleteTagOptionInput {
   
-  @scala.inline
-  def apply(Id: TagOptionId): DeleteTagOptionInput = {
+  inline def apply(Id: TagOptionId): DeleteTagOptionInput = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTagOptionInput]
   }
   
-  @scala.inline
-  implicit class DeleteTagOptionInputMutableBuilder[Self <: DeleteTagOptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTagOptionInput](x: Self) {
     
-    @scala.inline
-    def setId(value: TagOptionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TagOptionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

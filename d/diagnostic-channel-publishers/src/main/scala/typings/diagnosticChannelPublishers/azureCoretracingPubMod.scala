@@ -19,6 +19,5 @@ object azureCoretracingPubMod {
   @js.native
   val azureCoreTracing: IModulePatcher = js.native
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
 }

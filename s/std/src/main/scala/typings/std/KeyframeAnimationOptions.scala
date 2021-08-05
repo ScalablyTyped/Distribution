@@ -12,19 +12,15 @@ trait KeyframeAnimationOptions
 }
 object KeyframeAnimationOptions {
   
-  @scala.inline
-  def apply(): KeyframeAnimationOptions = {
+  inline def apply(): KeyframeAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyframeAnimationOptions]
   }
   
-  @scala.inline
-  implicit class KeyframeAnimationOptionsMutableBuilder[Self <: KeyframeAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KeyframeAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

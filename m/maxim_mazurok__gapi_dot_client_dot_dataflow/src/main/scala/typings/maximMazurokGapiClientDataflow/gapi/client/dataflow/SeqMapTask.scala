@@ -31,59 +31,43 @@ trait SeqMapTask extends StObject {
 }
 object SeqMapTask {
   
-  @scala.inline
-  def apply(): SeqMapTask = {
+  inline def apply(): SeqMapTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeqMapTask]
   }
   
-  @scala.inline
-  implicit class SeqMapTaskMutableBuilder[Self <: SeqMapTask] (val x: Self) extends AnyVal {
+  extension [Self <: SeqMapTask](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[SideInputInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[SideInputInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutputInfos(value: js.Array[SeqMapTaskOutputInfo]): Self = StObject.set(x, "outputInfos", value.asInstanceOf[js.Any])
+    inline def setOutputInfos(value: js.Array[SeqMapTaskOutputInfo]): Self = StObject.set(x, "outputInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputInfosUndefined: Self = StObject.set(x, "outputInfos", js.undefined)
+    inline def setOutputInfosUndefined: Self = StObject.set(x, "outputInfos", js.undefined)
     
-    @scala.inline
-    def setOutputInfosVarargs(value: SeqMapTaskOutputInfo*): Self = StObject.set(x, "outputInfos", js.Array(value :_*))
+    inline def setOutputInfosVarargs(value: SeqMapTaskOutputInfo*): Self = StObject.set(x, "outputInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+    inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
-    @scala.inline
-    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
+    inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
-    @scala.inline
-    def setUserFn(
+    inline def setUserFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[js.Any]
     ): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
+    inline def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
   }
 }

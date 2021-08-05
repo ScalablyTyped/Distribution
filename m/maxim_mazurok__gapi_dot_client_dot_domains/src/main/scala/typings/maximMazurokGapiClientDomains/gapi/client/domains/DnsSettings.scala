@@ -17,34 +17,25 @@ trait DnsSettings extends StObject {
 }
 object DnsSettings {
   
-  @scala.inline
-  def apply(): DnsSettings = {
+  inline def apply(): DnsSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DnsSettings]
   }
   
-  @scala.inline
-  implicit class DnsSettingsMutableBuilder[Self <: DnsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DnsSettings](x: Self) {
     
-    @scala.inline
-    def setCustomDns(value: CustomDns): Self = StObject.set(x, "customDns", value.asInstanceOf[js.Any])
+    inline def setCustomDns(value: CustomDns): Self = StObject.set(x, "customDns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDnsUndefined: Self = StObject.set(x, "customDns", js.undefined)
+    inline def setCustomDnsUndefined: Self = StObject.set(x, "customDns", js.undefined)
     
-    @scala.inline
-    def setGlueRecords(value: js.Array[GlueRecord]): Self = StObject.set(x, "glueRecords", value.asInstanceOf[js.Any])
+    inline def setGlueRecords(value: js.Array[GlueRecord]): Self = StObject.set(x, "glueRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlueRecordsUndefined: Self = StObject.set(x, "glueRecords", js.undefined)
+    inline def setGlueRecordsUndefined: Self = StObject.set(x, "glueRecords", js.undefined)
     
-    @scala.inline
-    def setGlueRecordsVarargs(value: GlueRecord*): Self = StObject.set(x, "glueRecords", js.Array(value :_*))
+    inline def setGlueRecordsVarargs(value: GlueRecord*): Self = StObject.set(x, "glueRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setGoogleDomainsDns(value: GoogleDomainsDns): Self = StObject.set(x, "googleDomainsDns", value.asInstanceOf[js.Any])
+    inline def setGoogleDomainsDns(value: GoogleDomainsDns): Self = StObject.set(x, "googleDomainsDns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleDomainsDnsUndefined: Self = StObject.set(x, "googleDomainsDns", js.undefined)
+    inline def setGoogleDomainsDnsUndefined: Self = StObject.set(x, "googleDomainsDns", js.undefined)
   }
 }

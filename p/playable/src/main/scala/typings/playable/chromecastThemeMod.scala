@@ -16,7 +16,6 @@ object chromecastThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/chromecast/chromecast.theme", "default.chromecastButtonFill")
     @js.native
     def chromecastButtonFill: Disconnectedcolor = js.native
-    @scala.inline
-    def chromecastButtonFill_=(x: Disconnectedcolor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chromecastButtonFill")(x.asInstanceOf[js.Any])
+    inline def chromecastButtonFill_=(x: Disconnectedcolor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chromecastButtonFill")(x.asInstanceOf[js.Any])
   }
 }

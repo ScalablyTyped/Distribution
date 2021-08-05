@@ -30,31 +30,23 @@ trait ParamsResourceProductstatusesCustombatch
 }
 object ParamsResourceProductstatusesCustombatch {
   
-  @scala.inline
-  def apply(): ParamsResourceProductstatusesCustombatch = {
+  inline def apply(): ParamsResourceProductstatusesCustombatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProductstatusesCustombatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProductstatusesCustombatchMutableBuilder[Self <: ParamsResourceProductstatusesCustombatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProductstatusesCustombatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
+    inline def setIncludeAttributes(value: Boolean): Self = StObject.set(x, "includeAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAttributesUndefined: Self = StObject.set(x, "includeAttributes", js.undefined)
+    inline def setIncludeAttributesUndefined: Self = StObject.set(x, "includeAttributes", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaProductstatusesCustomBatchRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaProductstatusesCustomBatchRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

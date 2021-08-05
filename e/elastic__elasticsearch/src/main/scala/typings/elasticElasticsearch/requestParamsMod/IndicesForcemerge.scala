@@ -29,58 +29,41 @@ trait IndicesForcemerge
 }
 object IndicesForcemerge {
   
-  @scala.inline
-  def apply(): IndicesForcemerge = {
+  inline def apply(): IndicesForcemerge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndicesForcemerge]
   }
   
-  @scala.inline
-  implicit class IndicesForcemergeMutableBuilder[Self <: IndicesForcemerge] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesForcemerge](x: Self) {
     
-    @scala.inline
-    def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
+    inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_no_indicesUndefined: Self = StObject.set(x, "allow_no_indices", js.undefined)
+    inline def setAllow_no_indicesUndefined: Self = StObject.set(x, "allow_no_indices", js.undefined)
     
-    @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
+    inline def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
+    inline def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
-    @scala.inline
-    def setFlush(value: Boolean): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+    inline def setFlush(value: Boolean): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+    inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
-    @scala.inline
-    def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
+    inline def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
+    inline def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
-    @scala.inline
-    def setMax_num_segments(value: Double): Self = StObject.set(x, "max_num_segments", value.asInstanceOf[js.Any])
+    inline def setMax_num_segments(value: Double): Self = StObject.set(x, "max_num_segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_num_segmentsUndefined: Self = StObject.set(x, "max_num_segments", js.undefined)
+    inline def setMax_num_segmentsUndefined: Self = StObject.set(x, "max_num_segments", js.undefined)
     
-    @scala.inline
-    def setOnly_expunge_deletes(value: Boolean): Self = StObject.set(x, "only_expunge_deletes", value.asInstanceOf[js.Any])
+    inline def setOnly_expunge_deletes(value: Boolean): Self = StObject.set(x, "only_expunge_deletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnly_expunge_deletesUndefined: Self = StObject.set(x, "only_expunge_deletes", js.undefined)
+    inline def setOnly_expunge_deletesUndefined: Self = StObject.set(x, "only_expunge_deletes", js.undefined)
   }
 }

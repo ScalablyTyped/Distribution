@@ -29,8 +29,7 @@ trait MailMessage extends StObject {
 }
 object MailMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: String,
     cC: EmailRecipients,
     inReplyTo: String,
@@ -46,40 +45,28 @@ object MailMessage {
     __obj.asInstanceOf[MailMessage]
   }
   
-  @scala.inline
-  implicit class MailMessageMutableBuilder[Self <: MailMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MailMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC(value: EmailRecipients): Self = StObject.set(x, "cC", value.asInstanceOf[js.Any])
+    inline def setCC(value: EmailRecipients): Self = StObject.set(x, "cC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
+    inline def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyBy(value: Date): Self = StObject.set(x, "replyBy", value.asInstanceOf[js.Any])
+    inline def setReplyBy(value: Date): Self = StObject.set(x, "replyBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyTo(value: EmailRecipients): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
+    inline def setReplyTo(value: EmailRecipients): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSections(value: js.Array[MailSectionType]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: js.Array[MailSectionType]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsVarargs(value: MailSectionType*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: MailSectionType*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
-    @scala.inline
-    def setSenderType(value: SenderType): Self = StObject.set(x, "senderType", value.asInstanceOf[js.Any])
+    inline def setSenderType(value: SenderType): Self = StObject.set(x, "senderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: EmailRecipients): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: EmailRecipients): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

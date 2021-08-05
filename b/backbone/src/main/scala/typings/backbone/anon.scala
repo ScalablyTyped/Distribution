@@ -47,17 +47,14 @@ object anon {
   }
   object TypeofHistory {
     
-    @scala.inline
-    def apply(started: Boolean): TypeofHistory = {
+    inline def apply(started: Boolean): TypeofHistory = {
       val __obj = js.Dynamic.literal(started = started.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofHistory]
     }
     
-    @scala.inline
-    implicit class TypeofHistoryMutableBuilder[Self <: TypeofHistory] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofHistory](x: Self) {
       
-      @scala.inline
-      def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+      inline def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     }
   }
   

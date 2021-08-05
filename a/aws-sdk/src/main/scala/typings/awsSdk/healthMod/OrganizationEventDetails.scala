@@ -22,37 +22,27 @@ trait OrganizationEventDetails extends StObject {
 }
 object OrganizationEventDetails {
   
-  @scala.inline
-  def apply(): OrganizationEventDetails = {
+  inline def apply(): OrganizationEventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrganizationEventDetails]
   }
   
-  @scala.inline
-  implicit class OrganizationEventDetailsMutableBuilder[Self <: OrganizationEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationEventDetails](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
+    inline def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
     
-    @scala.inline
-    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDescription(value: EventDescription_): Self = StObject.set(x, "eventDescription", value.asInstanceOf[js.Any])
+    inline def setEventDescription(value: EventDescription_): Self = StObject.set(x, "eventDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDescriptionUndefined: Self = StObject.set(x, "eventDescription", js.undefined)
+    inline def setEventDescriptionUndefined: Self = StObject.set(x, "eventDescription", js.undefined)
     
-    @scala.inline
-    def setEventMetadata(value: eventMetadata): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
+    inline def setEventMetadata(value: eventMetadata): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventMetadataUndefined: Self = StObject.set(x, "eventMetadata", js.undefined)
+    inline def setEventMetadataUndefined: Self = StObject.set(x, "eventMetadata", js.undefined)
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
   }
 }

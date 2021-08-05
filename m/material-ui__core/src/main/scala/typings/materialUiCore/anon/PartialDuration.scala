@@ -23,55 +23,39 @@ trait PartialDuration extends StObject {
 }
 object PartialDuration {
   
-  @scala.inline
-  def apply(): PartialDuration = {
+  inline def apply(): PartialDuration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDuration]
   }
   
-  @scala.inline
-  implicit class PartialDurationMutableBuilder[Self <: PartialDuration] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDuration](x: Self) {
     
-    @scala.inline
-    def setComplex(value: Double): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
+    inline def setComplex(value: Double): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplexUndefined: Self = StObject.set(x, "complex", js.undefined)
+    inline def setComplexUndefined: Self = StObject.set(x, "complex", js.undefined)
     
-    @scala.inline
-    def setEnteringScreen(value: Double): Self = StObject.set(x, "enteringScreen", value.asInstanceOf[js.Any])
+    inline def setEnteringScreen(value: Double): Self = StObject.set(x, "enteringScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnteringScreenUndefined: Self = StObject.set(x, "enteringScreen", js.undefined)
+    inline def setEnteringScreenUndefined: Self = StObject.set(x, "enteringScreen", js.undefined)
     
-    @scala.inline
-    def setLeavingScreen(value: Double): Self = StObject.set(x, "leavingScreen", value.asInstanceOf[js.Any])
+    inline def setLeavingScreen(value: Double): Self = StObject.set(x, "leavingScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeavingScreenUndefined: Self = StObject.set(x, "leavingScreen", js.undefined)
+    inline def setLeavingScreenUndefined: Self = StObject.set(x, "leavingScreen", js.undefined)
     
-    @scala.inline
-    def setShort(value: Double): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: Double): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+    inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
-    @scala.inline
-    def setShorter(value: Double): Self = StObject.set(x, "shorter", value.asInstanceOf[js.Any])
+    inline def setShorter(value: Double): Self = StObject.set(x, "shorter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShorterUndefined: Self = StObject.set(x, "shorter", js.undefined)
+    inline def setShorterUndefined: Self = StObject.set(x, "shorter", js.undefined)
     
-    @scala.inline
-    def setShortest(value: Double): Self = StObject.set(x, "shortest", value.asInstanceOf[js.Any])
+    inline def setShortest(value: Double): Self = StObject.set(x, "shortest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortestUndefined: Self = StObject.set(x, "shortest", js.undefined)
+    inline def setShortestUndefined: Self = StObject.set(x, "shortest", js.undefined)
     
-    @scala.inline
-    def setStandard(value: Double): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: Double): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

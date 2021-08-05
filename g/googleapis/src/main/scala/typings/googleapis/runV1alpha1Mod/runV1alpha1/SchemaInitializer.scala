@@ -16,19 +16,15 @@ trait SchemaInitializer extends StObject {
 }
 object SchemaInitializer {
   
-  @scala.inline
-  def apply(): SchemaInitializer = {
+  inline def apply(): SchemaInitializer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInitializer]
   }
   
-  @scala.inline
-  implicit class SchemaInitializerMutableBuilder[Self <: SchemaInitializer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInitializer](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

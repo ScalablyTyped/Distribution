@@ -28,31 +28,23 @@ trait BacktrackDBClusterMessage extends StObject {
 }
 object BacktrackDBClusterMessage {
   
-  @scala.inline
-  def apply(BacktrackTo: TStamp, DBClusterIdentifier: String): BacktrackDBClusterMessage = {
+  inline def apply(BacktrackTo: TStamp, DBClusterIdentifier: String): BacktrackDBClusterMessage = {
     val __obj = js.Dynamic.literal(BacktrackTo = BacktrackTo.asInstanceOf[js.Any], DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[BacktrackDBClusterMessage]
   }
   
-  @scala.inline
-  implicit class BacktrackDBClusterMessageMutableBuilder[Self <: BacktrackDBClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: BacktrackDBClusterMessage](x: Self) {
     
-    @scala.inline
-    def setBacktrackTo(value: TStamp): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
+    inline def setBacktrackTo(value: TStamp): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: BooleanOptional): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: BooleanOptional): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
-    @scala.inline
-    def setUseEarliestTimeOnPointInTimeUnavailable(value: BooleanOptional): Self = StObject.set(x, "UseEarliestTimeOnPointInTimeUnavailable", value.asInstanceOf[js.Any])
+    inline def setUseEarliestTimeOnPointInTimeUnavailable(value: BooleanOptional): Self = StObject.set(x, "UseEarliestTimeOnPointInTimeUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseEarliestTimeOnPointInTimeUnavailableUndefined: Self = StObject.set(x, "UseEarliestTimeOnPointInTimeUnavailable", js.undefined)
+    inline def setUseEarliestTimeOnPointInTimeUnavailableUndefined: Self = StObject.set(x, "UseEarliestTimeOnPointInTimeUnavailable", js.undefined)
   }
 }

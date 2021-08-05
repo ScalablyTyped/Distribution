@@ -19,8 +19,7 @@ trait WheelEvent[T]
 }
 object WheelEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     altKey: Boolean,
     bubbles: Boolean,
     button: Double,
@@ -63,19 +62,14 @@ object WheelEvent {
     __obj.asInstanceOf[WheelEvent[T]]
   }
   
-  @scala.inline
-  implicit class WheelEventMutableBuilder[Self <: WheelEvent[?], T] (val x: Self & WheelEvent[T]) extends AnyVal {
+  extension [Self <: WheelEvent[?], T](x: Self & WheelEvent[T]) {
     
-    @scala.inline
-    def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
+    inline def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+    inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+    inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaZ(value: Double): Self = StObject.set(x, "deltaZ", value.asInstanceOf[js.Any])
+    inline def setDeltaZ(value: Double): Self = StObject.set(x, "deltaZ", value.asInstanceOf[js.Any])
   }
 }

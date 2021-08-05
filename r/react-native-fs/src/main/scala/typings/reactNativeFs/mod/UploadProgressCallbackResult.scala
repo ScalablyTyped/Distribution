@@ -16,22 +16,17 @@ trait UploadProgressCallbackResult extends StObject {
 }
 object UploadProgressCallbackResult {
   
-  @scala.inline
-  def apply(jobId: Double, totalBytesExpectedToSend: Double, totalBytesSent: Double): UploadProgressCallbackResult = {
+  inline def apply(jobId: Double, totalBytesExpectedToSend: Double, totalBytesSent: Double): UploadProgressCallbackResult = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], totalBytesExpectedToSend = totalBytesExpectedToSend.asInstanceOf[js.Any], totalBytesSent = totalBytesSent.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadProgressCallbackResult]
   }
   
-  @scala.inline
-  implicit class UploadProgressCallbackResultMutableBuilder[Self <: UploadProgressCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UploadProgressCallbackResult](x: Self) {
     
-    @scala.inline
-    def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesExpectedToSend(value: Double): Self = StObject.set(x, "totalBytesExpectedToSend", value.asInstanceOf[js.Any])
+    inline def setTotalBytesExpectedToSend(value: Double): Self = StObject.set(x, "totalBytesExpectedToSend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesSent(value: Double): Self = StObject.set(x, "totalBytesSent", value.asInstanceOf[js.Any])
+    inline def setTotalBytesSent(value: Double): Self = StObject.set(x, "totalBytesSent", value.asInstanceOf[js.Any])
   }
 }

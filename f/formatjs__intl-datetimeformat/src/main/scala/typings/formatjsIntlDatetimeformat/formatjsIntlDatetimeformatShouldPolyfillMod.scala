@@ -10,6 +10,5 @@ object formatjsIntlDatetimeformatShouldPolyfillMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def shouldPolyfill(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldPolyfill")().asInstanceOf[Boolean]
+  inline def shouldPolyfill(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldPolyfill")().asInstanceOf[Boolean]
 }

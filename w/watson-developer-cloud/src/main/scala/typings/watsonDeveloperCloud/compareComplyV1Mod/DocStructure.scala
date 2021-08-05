@@ -15,31 +15,23 @@ trait DocStructure extends StObject {
 }
 object DocStructure {
   
-  @scala.inline
-  def apply(): DocStructure = {
+  inline def apply(): DocStructure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocStructure]
   }
   
-  @scala.inline
-  implicit class DocStructureMutableBuilder[Self <: DocStructure] (val x: Self) extends AnyVal {
+  extension [Self <: DocStructure](x: Self) {
     
-    @scala.inline
-    def setLeading_sentences(value: js.Array[LeadingSentence]): Self = StObject.set(x, "leading_sentences", value.asInstanceOf[js.Any])
+    inline def setLeading_sentences(value: js.Array[LeadingSentence]): Self = StObject.set(x, "leading_sentences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeading_sentencesUndefined: Self = StObject.set(x, "leading_sentences", js.undefined)
+    inline def setLeading_sentencesUndefined: Self = StObject.set(x, "leading_sentences", js.undefined)
     
-    @scala.inline
-    def setLeading_sentencesVarargs(value: LeadingSentence*): Self = StObject.set(x, "leading_sentences", js.Array(value :_*))
+    inline def setLeading_sentencesVarargs(value: LeadingSentence*): Self = StObject.set(x, "leading_sentences", js.Array(value :_*))
     
-    @scala.inline
-    def setSection_titles(value: js.Array[SectionTitles]): Self = StObject.set(x, "section_titles", value.asInstanceOf[js.Any])
+    inline def setSection_titles(value: js.Array[SectionTitles]): Self = StObject.set(x, "section_titles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection_titlesUndefined: Self = StObject.set(x, "section_titles", js.undefined)
+    inline def setSection_titlesUndefined: Self = StObject.set(x, "section_titles", js.undefined)
     
-    @scala.inline
-    def setSection_titlesVarargs(value: SectionTitles*): Self = StObject.set(x, "section_titles", js.Array(value :_*))
+    inline def setSection_titlesVarargs(value: SectionTitles*): Self = StObject.set(x, "section_titles", js.Array(value :_*))
   }
 }

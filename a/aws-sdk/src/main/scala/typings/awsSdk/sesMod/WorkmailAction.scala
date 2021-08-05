@@ -18,22 +18,17 @@ trait WorkmailAction extends StObject {
 }
 object WorkmailAction {
   
-  @scala.inline
-  def apply(OrganizationArn: AmazonResourceName): WorkmailAction = {
+  inline def apply(OrganizationArn: AmazonResourceName): WorkmailAction = {
     val __obj = js.Dynamic.literal(OrganizationArn = OrganizationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkmailAction]
   }
   
-  @scala.inline
-  implicit class WorkmailActionMutableBuilder[Self <: WorkmailAction] (val x: Self) extends AnyVal {
+  extension [Self <: WorkmailAction](x: Self) {
     
-    @scala.inline
-    def setOrganizationArn(value: AmazonResourceName): Self = StObject.set(x, "OrganizationArn", value.asInstanceOf[js.Any])
+    inline def setOrganizationArn(value: AmazonResourceName): Self = StObject.set(x, "OrganizationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

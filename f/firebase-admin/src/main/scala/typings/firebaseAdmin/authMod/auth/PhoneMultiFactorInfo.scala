@@ -18,16 +18,13 @@ trait PhoneMultiFactorInfo
 }
 object PhoneMultiFactorInfo {
   
-  @scala.inline
-  def apply(factorId: String, phoneNumber: String, toJSON: () => js.Object, uid: String): PhoneMultiFactorInfo = {
+  inline def apply(factorId: String, phoneNumber: String, toJSON: () => js.Object, uid: String): PhoneMultiFactorInfo = {
     val __obj = js.Dynamic.literal(factorId = factorId.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneMultiFactorInfo]
   }
   
-  @scala.inline
-  implicit class PhoneMultiFactorInfoMutableBuilder[Self <: PhoneMultiFactorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneMultiFactorInfo](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

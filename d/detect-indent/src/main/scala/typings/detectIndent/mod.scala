@@ -29,8 +29,7 @@ object mod {
   // }
   ```
   */
-  @scala.inline
-  def apply(string: String): Indent = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Indent]
+  inline def apply(string: String): Indent = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Indent]
   
   @JSImport("detect-indent", JSImport.Namespace)
   @js.native
@@ -55,26 +54,20 @@ object mod {
   }
   object Indent {
     
-    @scala.inline
-    def apply(amount: Double, indent: String): Indent = {
+    inline def apply(amount: Double, indent: String): Indent = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Indent]
     }
     
-    @scala.inline
-    implicit class IndentMutableBuilder[Self <: Indent] (val x: Self) extends AnyVal {
+    extension [Self <: Indent](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: tab | space): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: tab | space): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

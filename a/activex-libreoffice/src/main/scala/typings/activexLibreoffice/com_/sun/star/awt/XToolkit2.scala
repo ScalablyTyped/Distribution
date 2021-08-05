@@ -26,8 +26,7 @@ trait XToolkit2
      with XReschedule
 object XToolkit2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveTopWindow: XTopWindow,
     DesktopWindow: XWindowPeer,
     TopWindowCount: Double,

@@ -12,8 +12,7 @@ object diagnosticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createStructuredLoggingDiagnosticsMiddleware(store: GatsbyCLIStore): DiagnosticsMiddleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredLoggingDiagnosticsMiddleware")(store.asInstanceOf[js.Any]).asInstanceOf[DiagnosticsMiddleware]
+  inline def createStructuredLoggingDiagnosticsMiddleware(store: GatsbyCLIStore): DiagnosticsMiddleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredLoggingDiagnosticsMiddleware")(store.asInstanceOf[js.Any]).asInstanceOf[DiagnosticsMiddleware]
   
   type DiagnosticsMiddleware = js.Function1[/* action */ ActionsUnion, Unit]
 }

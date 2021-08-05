@@ -28,10 +28,8 @@ object mod {
   	//=> 'e233b19aabc7d5e53826fb734d1222f1f0444c3a3fc67ff4af370a66e7cadd2cb24009f1bc86f0bed12ca5fcb226145ad10fc5f650f6ef0959f8aadc5a594b27'
   	```
   	*/
-  @scala.inline
-  def apply(input: HashaInput): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(input: HashaInput, options: Options[ToStringEncoding]): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: HashaInput): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(input: HashaInput, options: Options[ToStringEncoding]): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("hasha", JSImport.Namespace)
   @js.native
@@ -53,13 +51,10 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def async(input: HashaInput): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def async(input: HashaInput, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def async(input: HashaInput): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def async(input: HashaInput, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def async_buffer(input: HashaInput, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def async_buffer(input: HashaInput, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   /**
   	Calculate the hash for a file.
@@ -77,39 +72,30 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def fromFile(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def fromFile(filePath: String, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def fromFile(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def fromFile(filePath: String, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
   	Synchronously calculate the hash for a file.
   	@param filePath - Path to a file you want to hash.
   	@returns The calculated file hash.
   	*/
-  @scala.inline
-  def fromFileSync(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fromFileSync(filePath: String, options: Options[ToStringEncoding]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromFileSync(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromFileSync(filePath: String, options: Options[ToStringEncoding]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def fromFileSync_buffer(filePath: String, options: Options[buffer]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def fromFileSync_buffer(filePath: String, options: Options[buffer]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def fromFile_buffer(filePath: String, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def fromFile_buffer(filePath: String, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   /**
   	Calculate the hash for a stream.
   	@param stream - A stream you want to hash.
   	@returns The calculated hash.
   	*/
-  @scala.inline
-  def fromStream(stream: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def fromStream(stream: ReadableStream, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def fromStream(stream: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def fromStream(stream: ReadableStream, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def fromStream_buffer(stream: ReadableStream, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def fromStream_buffer(stream: ReadableStream, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   /**
   	Create a [hash transform stream](https://nodejs.org/api/crypto.html#crypto_class_hash).
@@ -121,10 +107,8 @@ object mod {
   	process.stdin.pipe(hasha.stream()).pipe(process.stdout);
   	```
   	*/
-  @scala.inline
-  def stream(): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[Hash]
-  @scala.inline
-  def stream(options: Options[HashaEncoding]): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(options.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  inline def stream(): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[Hash]
+  inline def stream(options: Options[HashaEncoding]): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(options.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
   type AlgorithmName = LiteralUnion[md5 | sha1 | sha256 | sha512, String]
   
@@ -137,17 +121,13 @@ object mod {
   trait HashaEncoding extends StObject
   object HashaEncoding {
     
-    @scala.inline
-    def base64: typings.hasha.hashaStrings.base64 = "base64".asInstanceOf[typings.hasha.hashaStrings.base64]
+    inline def base64: typings.hasha.hashaStrings.base64 = "base64".asInstanceOf[typings.hasha.hashaStrings.base64]
     
-    @scala.inline
-    def buffer: typings.hasha.hashaStrings.buffer = "buffer".asInstanceOf[typings.hasha.hashaStrings.buffer]
+    inline def buffer: typings.hasha.hashaStrings.buffer = "buffer".asInstanceOf[typings.hasha.hashaStrings.buffer]
     
-    @scala.inline
-    def hex: typings.hasha.hashaStrings.hex = "hex".asInstanceOf[typings.hasha.hashaStrings.hex]
+    inline def hex: typings.hasha.hashaStrings.hex = "hex".asInstanceOf[typings.hasha.hashaStrings.hex]
     
-    @scala.inline
-    def latin1: typings.hasha.hashaStrings.latin1 = "latin1".asInstanceOf[typings.hasha.hashaStrings.latin1]
+    inline def latin1: typings.hasha.hashaStrings.latin1 = "latin1".asInstanceOf[typings.hasha.hashaStrings.latin1]
   }
   
   type HashaInput = Buffer | String | (js.Array[Buffer | String])
@@ -169,26 +149,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[EncodingType](): Options[EncodingType] = {
+    inline def apply[EncodingType](): Options[EncodingType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[EncodingType]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], EncodingType] (val x: Self & Options[EncodingType]) extends AnyVal {
+    extension [Self <: Options[?], EncodingType](x: Self & Options[EncodingType]) {
       
-      @scala.inline
-      def setAlgorithm(value: AlgorithmName): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: AlgorithmName): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
   
@@ -200,13 +174,10 @@ object mod {
   trait ToStringEncoding extends StObject
   object ToStringEncoding {
     
-    @scala.inline
-    def base64: typings.hasha.hashaStrings.base64 = "base64".asInstanceOf[typings.hasha.hashaStrings.base64]
+    inline def base64: typings.hasha.hashaStrings.base64 = "base64".asInstanceOf[typings.hasha.hashaStrings.base64]
     
-    @scala.inline
-    def hex: typings.hasha.hashaStrings.hex = "hex".asInstanceOf[typings.hasha.hashaStrings.hex]
+    inline def hex: typings.hasha.hashaStrings.hex = "hex".asInstanceOf[typings.hasha.hashaStrings.hex]
     
-    @scala.inline
-    def latin1: typings.hasha.hashaStrings.latin1 = "latin1".asInstanceOf[typings.hasha.hashaStrings.latin1]
+    inline def latin1: typings.hasha.hashaStrings.latin1 = "latin1".asInstanceOf[typings.hasha.hashaStrings.latin1]
   }
 }

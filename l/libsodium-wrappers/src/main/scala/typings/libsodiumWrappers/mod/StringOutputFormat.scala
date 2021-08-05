@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringOutputFormat extends StObject
 object StringOutputFormat {
   
-  @scala.inline
-  def base64: typings.libsodiumWrappers.libsodiumWrappersStrings.base64 = "base64".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.base64]
+  inline def base64: typings.libsodiumWrappers.libsodiumWrappersStrings.base64 = "base64".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.base64]
   
-  @scala.inline
-  def hex: typings.libsodiumWrappers.libsodiumWrappersStrings.hex = "hex".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.hex]
+  inline def hex: typings.libsodiumWrappers.libsodiumWrappersStrings.hex = "hex".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.hex]
   
-  @scala.inline
-  def text: typings.libsodiumWrappers.libsodiumWrappersStrings.text = "text".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.text]
+  inline def text: typings.libsodiumWrappers.libsodiumWrappersStrings.text = "text".asInstanceOf[typings.libsodiumWrappers.libsodiumWrappersStrings.text]
 }

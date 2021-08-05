@@ -66,13 +66,10 @@ object sourceMod {
     var sync: Boolean = js.native
   }
   
-  @scala.inline
-  def fromObservable[V](s: default[V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
-  @scala.inline
-  def fromObservable[V](s: Source[V, V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
+  inline def fromObservable[V](s: default[V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
+  inline def fromObservable[V](s: Source[V, V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
   
-  @scala.inline
-  def isTrigger(s: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrigger")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTrigger(s: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrigger")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Event[V] extends StObject {
     
@@ -80,17 +77,14 @@ object sourceMod {
   }
   object Event {
     
-    @scala.inline
-    def apply[V](value: V): Event[V] = {
+    inline def apply[V](value: V): Event[V] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event[V]]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event[?], V] (val x: Self & Event[V]) extends AnyVal {
+    extension [Self <: Event[?], V](x: Self & Event[V]) {
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

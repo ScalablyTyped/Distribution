@@ -11,20 +11,17 @@ object idyllCompilerStrings {
   sealed trait expression
     extends StObject
        with PropType
-  @scala.inline
-  def expression: expression = "expression".asInstanceOf[expression]
+  inline def expression: expression = "expression".asInstanceOf[expression]
   
   @js.native
   sealed trait value
     extends StObject
        with PropType
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
   sealed trait variable
     extends StObject
        with PropType
-  @scala.inline
-  def variable: variable = "variable".asInstanceOf[variable]
+  inline def variable: variable = "variable".asInstanceOf[variable]
 }

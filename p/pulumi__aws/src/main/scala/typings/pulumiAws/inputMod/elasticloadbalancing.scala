@@ -31,35 +31,26 @@ object elasticloadbalancing {
   }
   object LoadBalancerAccessLogs {
     
-    @scala.inline
-    def apply(bucket: Input[String]): LoadBalancerAccessLogs = {
+    inline def apply(bucket: Input[String]): LoadBalancerAccessLogs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadBalancerAccessLogs]
     }
     
-    @scala.inline
-    implicit class LoadBalancerAccessLogsMutableBuilder[Self <: LoadBalancerAccessLogs] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerAccessLogs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketPrefix(value: Input[String]): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+      inline def setBucketPrefix(value: Input[String]): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+      inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     }
   }
   
@@ -95,8 +86,7 @@ object elasticloadbalancing {
   }
   object LoadBalancerHealthCheck {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       healthyThreshold: Input[Double],
       interval: Input[Double],
       target: Input[String],
@@ -107,23 +97,17 @@ object elasticloadbalancing {
       __obj.asInstanceOf[LoadBalancerHealthCheck]
     }
     
-    @scala.inline
-    implicit class LoadBalancerHealthCheckMutableBuilder[Self <: LoadBalancerHealthCheck] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerHealthCheck](x: Self) {
       
-      @scala.inline
-      def setHealthyThreshold(value: Input[Double]): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
+      inline def setHealthyThreshold(value: Input[Double]): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Input[Double]): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Input[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Input[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnhealthyThreshold(value: Input[Double]): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
+      inline def setUnhealthyThreshold(value: Input[Double]): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,8 +143,7 @@ object elasticloadbalancing {
   }
   object LoadBalancerListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       instancePort: Input[Double],
       instanceProtocol: Input[String],
       lbPort: Input[Double],
@@ -170,26 +153,19 @@ object elasticloadbalancing {
       __obj.asInstanceOf[LoadBalancerListener]
     }
     
-    @scala.inline
-    implicit class LoadBalancerListenerMutableBuilder[Self <: LoadBalancerListener] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerListener](x: Self) {
       
-      @scala.inline
-      def setInstancePort(value: Input[Double]): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
+      inline def setInstancePort(value: Input[Double]): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceProtocol(value: Input[String]): Self = StObject.set(x, "instanceProtocol", value.asInstanceOf[js.Any])
+      inline def setInstanceProtocol(value: Input[String]): Self = StObject.set(x, "instanceProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLbPort(value: Input[Double]): Self = StObject.set(x, "lbPort", value.asInstanceOf[js.Any])
+      inline def setLbPort(value: Input[Double]): Self = StObject.set(x, "lbPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLbProtocol(value: Input[String]): Self = StObject.set(x, "lbProtocol", value.asInstanceOf[js.Any])
+      inline def setLbProtocol(value: Input[String]): Self = StObject.set(x, "lbProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslCertificateId(value: Input[String]): Self = StObject.set(x, "sslCertificateId", value.asInstanceOf[js.Any])
+      inline def setSslCertificateId(value: Input[String]): Self = StObject.set(x, "sslCertificateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslCertificateIdUndefined: Self = StObject.set(x, "sslCertificateId", js.undefined)
+      inline def setSslCertificateIdUndefined: Self = StObject.set(x, "sslCertificateId", js.undefined)
     }
   }
   
@@ -201,26 +177,20 @@ object elasticloadbalancing {
   }
   object LoadBalancerPolicyPolicyAttribute {
     
-    @scala.inline
-    def apply(): LoadBalancerPolicyPolicyAttribute = {
+    inline def apply(): LoadBalancerPolicyPolicyAttribute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadBalancerPolicyPolicyAttribute]
     }
     
-    @scala.inline
-    implicit class LoadBalancerPolicyPolicyAttributeMutableBuilder[Self <: LoadBalancerPolicyPolicyAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancerPolicyPolicyAttribute](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -238,20 +208,16 @@ object elasticloadbalancing {
   }
   object SslNegotiationPolicyAttribute {
     
-    @scala.inline
-    def apply(name: Input[String], value: Input[String]): SslNegotiationPolicyAttribute = {
+    inline def apply(name: Input[String], value: Input[String]): SslNegotiationPolicyAttribute = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SslNegotiationPolicyAttribute]
     }
     
-    @scala.inline
-    implicit class SslNegotiationPolicyAttributeMutableBuilder[Self <: SslNegotiationPolicyAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: SslNegotiationPolicyAttribute](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

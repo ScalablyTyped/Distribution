@@ -15,6 +15,6 @@ object flattenMod {
     
     def assemble(): typings.vegaTypings.transformMod.FlattenTransform = js.native
     
-    var transform: js.Any = js.native
+    /* private */ var transform: js.Any = js.native
   }
 }

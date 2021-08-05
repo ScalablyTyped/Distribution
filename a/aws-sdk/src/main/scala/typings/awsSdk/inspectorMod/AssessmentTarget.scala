@@ -33,31 +33,23 @@ trait AssessmentTarget extends StObject {
 }
 object AssessmentTarget {
   
-  @scala.inline
-  def apply(arn: Arn, createdAt: Timestamp, name: AssessmentTargetName, updatedAt: Timestamp): AssessmentTarget = {
+  inline def apply(arn: Arn, createdAt: Timestamp, name: AssessmentTargetName, updatedAt: Timestamp): AssessmentTarget = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentTarget]
   }
   
-  @scala.inline
-  implicit class AssessmentTargetMutableBuilder[Self <: AssessmentTarget] (val x: Self) extends AnyVal {
+  extension [Self <: AssessmentTarget](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AssessmentTargetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AssessmentTargetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
+    inline def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
+    inline def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

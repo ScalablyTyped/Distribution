@@ -24,25 +24,19 @@ trait SchemaDailyMaintenanceWindow extends StObject {
 }
 object SchemaDailyMaintenanceWindow {
   
-  @scala.inline
-  def apply(): SchemaDailyMaintenanceWindow = {
+  inline def apply(): SchemaDailyMaintenanceWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDailyMaintenanceWindow]
   }
   
-  @scala.inline
-  implicit class SchemaDailyMaintenanceWindowMutableBuilder[Self <: SchemaDailyMaintenanceWindow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDailyMaintenanceWindow](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

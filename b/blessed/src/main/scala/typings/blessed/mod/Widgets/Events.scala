@@ -23,32 +23,24 @@ object Events {
   }
   object IKeyEventArg {
     
-    @scala.inline
-    def apply(ctrl: Boolean, full: String, meta: Boolean, name: String, sequence: String, shift: Boolean): IKeyEventArg = {
+    inline def apply(ctrl: Boolean, full: String, meta: Boolean, name: String, sequence: String, shift: Boolean): IKeyEventArg = {
       val __obj = js.Dynamic.literal(ctrl = ctrl.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeyEventArg]
     }
     
-    @scala.inline
-    implicit class IKeyEventArgMutableBuilder[Self <: IKeyEventArg] (val x: Self) extends AnyVal {
+    extension [Self <: IKeyEventArg](x: Self) {
       
-      @scala.inline
-      def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
+      inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,23 +54,18 @@ object Events {
   }
   object IMouseEventArg {
     
-    @scala.inline
-    def apply(action: TMouseAction, x: Double, y: Double): IMouseEventArg = {
+    inline def apply(action: TMouseAction, x: Double, y: Double): IMouseEventArg = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMouseEventArg]
     }
     
-    @scala.inline
-    implicit class IMouseEventArgMutableBuilder[Self <: IMouseEventArg] (val x: Self) extends AnyVal {
+    extension [Self <: IMouseEventArg](x: Self) {
       
-      @scala.inline
-      def setAction(value: TMouseAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: TMouseAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

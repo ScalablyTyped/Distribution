@@ -14,10 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  @scala.inline
-  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  inline def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   @JSImport("imagemin-mozjpeg", JSImport.Namespace)
   @js.native
@@ -135,119 +133,82 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArithmetic(value: Boolean): Self = StObject.set(x, "arithmetic", value.asInstanceOf[js.Any])
+      inline def setArithmetic(value: Boolean): Self = StObject.set(x, "arithmetic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArithmeticUndefined: Self = StObject.set(x, "arithmetic", js.undefined)
+      inline def setArithmeticUndefined: Self = StObject.set(x, "arithmetic", js.undefined)
       
-      @scala.inline
-      def setDcScanOpt(value: Double): Self = StObject.set(x, "dcScanOpt", value.asInstanceOf[js.Any])
+      inline def setDcScanOpt(value: Double): Self = StObject.set(x, "dcScanOpt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDcScanOptUndefined: Self = StObject.set(x, "dcScanOpt", js.undefined)
+      inline def setDcScanOptUndefined: Self = StObject.set(x, "dcScanOpt", js.undefined)
       
-      @scala.inline
-      def setDct(value: int | fast | float): Self = StObject.set(x, "dct", value.asInstanceOf[js.Any])
+      inline def setDct(value: int | fast | float): Self = StObject.set(x, "dct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDctUndefined: Self = StObject.set(x, "dct", js.undefined)
+      inline def setDctUndefined: Self = StObject.set(x, "dct", js.undefined)
       
-      @scala.inline
-      def setFastCrush(value: Boolean): Self = StObject.set(x, "fastCrush", value.asInstanceOf[js.Any])
+      inline def setFastCrush(value: Boolean): Self = StObject.set(x, "fastCrush", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFastCrushUndefined: Self = StObject.set(x, "fastCrush", js.undefined)
+      inline def setFastCrushUndefined: Self = StObject.set(x, "fastCrush", js.undefined)
       
-      @scala.inline
-      def setMaxMemory(value: Double): Self = StObject.set(x, "maxMemory", value.asInstanceOf[js.Any])
+      inline def setMaxMemory(value: Double): Self = StObject.set(x, "maxMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMemoryUndefined: Self = StObject.set(x, "maxMemory", js.undefined)
+      inline def setMaxMemoryUndefined: Self = StObject.set(x, "maxMemory", js.undefined)
       
-      @scala.inline
-      def setOvershoot(value: Boolean): Self = StObject.set(x, "overshoot", value.asInstanceOf[js.Any])
+      inline def setOvershoot(value: Boolean): Self = StObject.set(x, "overshoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOvershootUndefined: Self = StObject.set(x, "overshoot", js.undefined)
+      inline def setOvershootUndefined: Self = StObject.set(x, "overshoot", js.undefined)
       
-      @scala.inline
-      def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
+      inline def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
+      inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setQuantBaseline(value: Boolean): Self = StObject.set(x, "quantBaseline", value.asInstanceOf[js.Any])
+      inline def setQuantBaseline(value: Boolean): Self = StObject.set(x, "quantBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantBaselineUndefined: Self = StObject.set(x, "quantBaseline", js.undefined)
+      inline def setQuantBaselineUndefined: Self = StObject.set(x, "quantBaseline", js.undefined)
       
-      @scala.inline
-      def setQuantTable(value: Double): Self = StObject.set(x, "quantTable", value.asInstanceOf[js.Any])
+      inline def setQuantTable(value: Double): Self = StObject.set(x, "quantTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantTableUndefined: Self = StObject.set(x, "quantTable", js.undefined)
+      inline def setQuantTableUndefined: Self = StObject.set(x, "quantTable", js.undefined)
       
-      @scala.inline
-      def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+      inline def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
+      inline def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
       
-      @scala.inline
-      def setSample(value: js.Array[String]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+      inline def setSample(value: js.Array[String]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
+      inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
       
-      @scala.inline
-      def setSampleVarargs(value: String*): Self = StObject.set(x, "sample", js.Array(value :_*))
+      inline def setSampleVarargs(value: String*): Self = StObject.set(x, "sample", js.Array(value :_*))
       
-      @scala.inline
-      def setSmooth(value: Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+      inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
       
-      @scala.inline
-      def setTarga(value: Boolean): Self = StObject.set(x, "targa", value.asInstanceOf[js.Any])
+      inline def setTarga(value: Boolean): Self = StObject.set(x, "targa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargaUndefined: Self = StObject.set(x, "targa", js.undefined)
+      inline def setTargaUndefined: Self = StObject.set(x, "targa", js.undefined)
       
-      @scala.inline
-      def setTrellis(value: Boolean): Self = StObject.set(x, "trellis", value.asInstanceOf[js.Any])
+      inline def setTrellis(value: Boolean): Self = StObject.set(x, "trellis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrellisDC(value: Boolean): Self = StObject.set(x, "trellisDC", value.asInstanceOf[js.Any])
+      inline def setTrellisDC(value: Boolean): Self = StObject.set(x, "trellisDC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrellisDCUndefined: Self = StObject.set(x, "trellisDC", js.undefined)
+      inline def setTrellisDCUndefined: Self = StObject.set(x, "trellisDC", js.undefined)
       
-      @scala.inline
-      def setTrellisUndefined: Self = StObject.set(x, "trellis", js.undefined)
+      inline def setTrellisUndefined: Self = StObject.set(x, "trellis", js.undefined)
       
-      @scala.inline
-      def setTune(value: psnr | `hvs-psnr` | ssim | `ms-ssim`): Self = StObject.set(x, "tune", value.asInstanceOf[js.Any])
+      inline def setTune(value: psnr | `hvs-psnr` | ssim | `ms-ssim`): Self = StObject.set(x, "tune", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTuneUndefined: Self = StObject.set(x, "tune", js.undefined)
+      inline def setTuneUndefined: Self = StObject.set(x, "tune", js.undefined)
     }
   }
 }

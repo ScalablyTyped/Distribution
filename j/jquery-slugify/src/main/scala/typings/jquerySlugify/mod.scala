@@ -37,98 +37,68 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCustom(value: js.Array[String]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: js.Array[String]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setCustomVarargs(value: String*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: String*): Self = StObject.set(x, "custom", js.Array(value :_*))
       
-      @scala.inline
-      def setLang(value: String | Boolean): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String | Boolean): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setMaintainCase(value: Boolean): Self = StObject.set(x, "maintainCase", value.asInstanceOf[js.Any])
+      inline def setMaintainCase(value: Boolean): Self = StObject.set(x, "maintainCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintainCaseUndefined: Self = StObject.set(x, "maintainCase", js.undefined)
+      inline def setMaintainCaseUndefined: Self = StObject.set(x, "maintainCase", js.undefined)
       
-      @scala.inline
-      def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setPostSlug(value: /* source */ String => String): Self = StObject.set(x, "postSlug", js.Any.fromFunction1(value))
+      inline def setPostSlug(value: /* source */ String => String): Self = StObject.set(x, "postSlug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostSlugUndefined: Self = StObject.set(x, "postSlug", js.undefined)
+      inline def setPostSlugUndefined: Self = StObject.set(x, "postSlug", js.undefined)
       
-      @scala.inline
-      def setPreSlug(value: /* source */ String => String): Self = StObject.set(x, "preSlug", js.Any.fromFunction1(value))
+      inline def setPreSlug(value: /* source */ String => String): Self = StObject.set(x, "preSlug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreSlugUndefined: Self = StObject.set(x, "preSlug", js.undefined)
+      inline def setPreSlugUndefined: Self = StObject.set(x, "preSlug", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setSlugFunc(value: (/* input */ String, Options) => String): Self = StObject.set(x, "slugFunc", js.Any.fromFunction2(value))
+      inline def setSlugFunc(value: (/* input */ String, Options) => String): Self = StObject.set(x, "slugFunc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSlugFuncUndefined: Self = StObject.set(x, "slugFunc", js.undefined)
+      inline def setSlugFuncUndefined: Self = StObject.set(x, "slugFunc", js.undefined)
       
-      @scala.inline
-      def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+      inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
       
-      @scala.inline
-      def setTitleCase(value: js.Array[String] | Boolean): Self = StObject.set(x, "titleCase", value.asInstanceOf[js.Any])
+      inline def setTitleCase(value: js.Array[String] | Boolean): Self = StObject.set(x, "titleCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleCaseUndefined: Self = StObject.set(x, "titleCase", js.undefined)
+      inline def setTitleCaseUndefined: Self = StObject.set(x, "titleCase", js.undefined)
       
-      @scala.inline
-      def setTitleCaseVarargs(value: String*): Self = StObject.set(x, "titleCase", js.Array(value :_*))
+      inline def setTitleCaseVarargs(value: String*): Self = StObject.set(x, "titleCase", js.Array(value :_*))
       
-      @scala.inline
-      def setTruncate(value: Double): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: Double): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      @scala.inline
-      def setUric(value: Boolean): Self = StObject.set(x, "uric", value.asInstanceOf[js.Any])
+      inline def setUric(value: Boolean): Self = StObject.set(x, "uric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUricNoSlash(value: Boolean): Self = StObject.set(x, "uricNoSlash", value.asInstanceOf[js.Any])
+      inline def setUricNoSlash(value: Boolean): Self = StObject.set(x, "uricNoSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUricNoSlashUndefined: Self = StObject.set(x, "uricNoSlash", js.undefined)
+      inline def setUricNoSlashUndefined: Self = StObject.set(x, "uricNoSlash", js.undefined)
       
-      @scala.inline
-      def setUricUndefined: Self = StObject.set(x, "uric", js.undefined)
+      inline def setUricUndefined: Self = StObject.set(x, "uric", js.undefined)
     }
   }
   

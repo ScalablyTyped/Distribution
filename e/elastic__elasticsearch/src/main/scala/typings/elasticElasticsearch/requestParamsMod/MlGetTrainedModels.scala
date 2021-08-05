@@ -28,70 +28,49 @@ trait MlGetTrainedModels
 }
 object MlGetTrainedModels {
   
-  @scala.inline
-  def apply(): MlGetTrainedModels = {
+  inline def apply(): MlGetTrainedModels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MlGetTrainedModels]
   }
   
-  @scala.inline
-  implicit class MlGetTrainedModelsMutableBuilder[Self <: MlGetTrainedModels] (val x: Self) extends AnyVal {
+  extension [Self <: MlGetTrainedModels](x: Self) {
     
-    @scala.inline
-    def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
+    inline def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
+    inline def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
     
-    @scala.inline
-    def setDecompress_definition(value: Boolean): Self = StObject.set(x, "decompress_definition", value.asInstanceOf[js.Any])
+    inline def setDecompress_definition(value: Boolean): Self = StObject.set(x, "decompress_definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecompress_definitionUndefined: Self = StObject.set(x, "decompress_definition", js.undefined)
+    inline def setDecompress_definitionUndefined: Self = StObject.set(x, "decompress_definition", js.undefined)
     
-    @scala.inline
-    def setFor_export(value: Boolean): Self = StObject.set(x, "for_export", value.asInstanceOf[js.Any])
+    inline def setFor_export(value: Boolean): Self = StObject.set(x, "for_export", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFor_exportUndefined: Self = StObject.set(x, "for_export", js.undefined)
+    inline def setFor_exportUndefined: Self = StObject.set(x, "for_export", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setInclude_model_definition(value: Boolean): Self = StObject.set(x, "include_model_definition", value.asInstanceOf[js.Any])
+    inline def setInclude_model_definition(value: Boolean): Self = StObject.set(x, "include_model_definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_model_definitionUndefined: Self = StObject.set(x, "include_model_definition", js.undefined)
+    inline def setInclude_model_definitionUndefined: Self = StObject.set(x, "include_model_definition", js.undefined)
     
-    @scala.inline
-    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
+    inline def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
+    inline def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTags(value: String | js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: String | js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

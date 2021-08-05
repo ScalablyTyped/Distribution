@@ -20,8 +20,7 @@ trait DecorationStyleEnumValues
 }
 object DecorationStyleEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dashed: DecorationStyle,
     Dotted: DecorationStyle,
     Double: DecorationStyle,
@@ -33,22 +32,16 @@ object DecorationStyleEnumValues {
     __obj.asInstanceOf[DecorationStyleEnumValues]
   }
   
-  @scala.inline
-  implicit class DecorationStyleEnumValuesMutableBuilder[Self <: DecorationStyleEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: DecorationStyleEnumValues](x: Self) {
     
-    @scala.inline
-    def setDashed(value: DecorationStyle): Self = StObject.set(x, "Dashed", value.asInstanceOf[js.Any])
+    inline def setDashed(value: DecorationStyle): Self = StObject.set(x, "Dashed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotted(value: DecorationStyle): Self = StObject.set(x, "Dotted", value.asInstanceOf[js.Any])
+    inline def setDotted(value: DecorationStyle): Self = StObject.set(x, "Dotted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDouble(value: DecorationStyle): Self = StObject.set(x, "Double", value.asInstanceOf[js.Any])
+    inline def setDouble(value: DecorationStyle): Self = StObject.set(x, "Double", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolid(value: DecorationStyle): Self = StObject.set(x, "Solid", value.asInstanceOf[js.Any])
+    inline def setSolid(value: DecorationStyle): Self = StObject.set(x, "Solid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWavy(value: DecorationStyle): Self = StObject.set(x, "Wavy", value.asInstanceOf[js.Any])
+    inline def setWavy(value: DecorationStyle): Self = StObject.set(x, "Wavy", value.asInstanceOf[js.Any])
   }
 }

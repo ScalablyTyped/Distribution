@@ -18,28 +18,21 @@ trait ListDetectorModelVersionsResponse extends StObject {
 }
 object ListDetectorModelVersionsResponse {
   
-  @scala.inline
-  def apply(): ListDetectorModelVersionsResponse = {
+  inline def apply(): ListDetectorModelVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDetectorModelVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListDetectorModelVersionsResponseMutableBuilder[Self <: ListDetectorModelVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDetectorModelVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setDetectorModelVersionSummaries(value: DetectorModelVersionSummaries): Self = StObject.set(x, "detectorModelVersionSummaries", value.asInstanceOf[js.Any])
+    inline def setDetectorModelVersionSummaries(value: DetectorModelVersionSummaries): Self = StObject.set(x, "detectorModelVersionSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelVersionSummariesUndefined: Self = StObject.set(x, "detectorModelVersionSummaries", js.undefined)
+    inline def setDetectorModelVersionSummariesUndefined: Self = StObject.set(x, "detectorModelVersionSummaries", js.undefined)
     
-    @scala.inline
-    def setDetectorModelVersionSummariesVarargs(value: DetectorModelVersionSummary*): Self = StObject.set(x, "detectorModelVersionSummaries", js.Array(value :_*))
+    inline def setDetectorModelVersionSummariesVarargs(value: DetectorModelVersionSummary*): Self = StObject.set(x, "detectorModelVersionSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -44,8 +44,7 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       can_view_more_preview_comments: Boolean,
       caption: MediaCommentsFeedResponseCaption,
       caption_is_edited: Boolean,
@@ -68,68 +67,47 @@ object mediaCommentsFeedResponseMod {
       __obj.asInstanceOf[MediaCommentsFeedResponse]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponseMutableBuilder[Self <: MediaCommentsFeedResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponse](x: Self) {
       
-      @scala.inline
-      def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
+      inline def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: MediaCommentsFeedResponseCaption): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: MediaCommentsFeedResponseCaption): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
+      inline def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+      inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
+      inline def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComments(value: js.Array[MediaCommentsFeedResponseCommentsItem]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[MediaCommentsFeedResponseCommentsItem]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsVarargs(value: MediaCommentsFeedResponseCommentsItem*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: MediaCommentsFeedResponseCommentsItem*): Self = StObject.set(x, "comments", js.Array(value :_*))
       
-      @scala.inline
-      def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more_headload_comments(value: Boolean): Self = StObject.set(x, "has_more_headload_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_headload_comments(value: Boolean): Self = StObject.set(x, "has_more_headload_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiate_at_top(value: Boolean): Self = StObject.set(x, "initiate_at_top", value.asInstanceOf[js.Any])
+      inline def setInitiate_at_top(value: Boolean): Self = StObject.set(x, "initiate_at_top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsert_new_comment_to_top(value: Boolean): Self = StObject.set(x, "insert_new_comment_to_top", value.asInstanceOf[js.Any])
+      inline def setInsert_new_comment_to_top(value: Boolean): Self = StObject.set(x, "insert_new_comment_to_top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_header_display(value: String): Self = StObject.set(x, "media_header_display", value.asInstanceOf[js.Any])
+      inline def setMedia_header_display(value: String): Self = StObject.set(x, "media_header_display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+      inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_min_id(value: String): Self = StObject.set(x, "next_min_id", value.asInstanceOf[js.Any])
+      inline def setNext_min_id(value: String): Self = StObject.set(x, "next_min_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_comments(value: js.Array[MediaCommentsFeedResponsePreviewCommentsItem]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      inline def setPreview_comments(value: js.Array[MediaCommentsFeedResponsePreviewCommentsItem]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_commentsVarargs(value: MediaCommentsFeedResponsePreviewCommentsItem*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
+      inline def setPreview_commentsVarargs(value: MediaCommentsFeedResponsePreviewCommentsItem*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
       
-      @scala.inline
-      def setQuick_response_emojis(value: js.Array[MediaCommentsFeedResponseQuickResponseEmojisItem]): Self = StObject.set(x, "quick_response_emojis", value.asInstanceOf[js.Any])
+      inline def setQuick_response_emojis(value: js.Array[MediaCommentsFeedResponseQuickResponseEmojisItem]): Self = StObject.set(x, "quick_response_emojis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuick_response_emojisVarargs(value: MediaCommentsFeedResponseQuickResponseEmojisItem*): Self = StObject.set(x, "quick_response_emojis", js.Array(value :_*))
+      inline def setQuick_response_emojisVarargs(value: MediaCommentsFeedResponseQuickResponseEmojisItem*): Self = StObject.set(x, "quick_response_emojis", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreading_enabled(value: Boolean): Self = StObject.set(x, "threading_enabled", value.asInstanceOf[js.Any])
+      inline def setThreading_enabled(value: Boolean): Self = StObject.set(x, "threading_enabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,8 +141,7 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponseCaption {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bit_flags: Double,
       content_type: String,
       created_at: Double,
@@ -184,47 +161,33 @@ object mediaCommentsFeedResponseMod {
       __obj.asInstanceOf[MediaCommentsFeedResponseCaption]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponseCaptionMutableBuilder[Self <: MediaCommentsFeedResponseCaption] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponseCaption](x: Self) {
       
-      @scala.inline
-      def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
+      inline def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
+      inline def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
+      inline def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
+      inline def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
+      inline def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,8 +245,7 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponseCommentsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bit_flags: Double,
       child_comment_count: Double,
       comment_index: Double,
@@ -309,107 +271,73 @@ object mediaCommentsFeedResponseMod {
       __obj.asInstanceOf[MediaCommentsFeedResponseCommentsItem]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponseCommentsItemMutableBuilder[Self <: MediaCommentsFeedResponseCommentsItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponseCommentsItem](x: Self) {
       
-      @scala.inline
-      def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
+      inline def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChild_comment_count(value: Double): Self = StObject.set(x, "child_comment_count", value.asInstanceOf[js.Any])
+      inline def setChild_comment_count(value: Double): Self = StObject.set(x, "child_comment_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_index(value: Double): Self = StObject.set(x, "comment_index", value.asInstanceOf[js.Any])
+      inline def setComment_index(value: Double): Self = StObject.set(x, "comment_index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_like_count(value: Double): Self = StObject.set(x, "comment_like_count", value.asInstanceOf[js.Any])
+      inline def setComment_like_count(value: Double): Self = StObject.set(x, "comment_like_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
+      inline def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
+      inline def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_liked_comment(value: Boolean): Self = StObject.set(x, "has_liked_comment", value.asInstanceOf[js.Any])
+      inline def setHas_liked_comment(value: Boolean): Self = StObject.set(x, "has_liked_comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more_head_child_comments(value: Boolean): Self = StObject.set(x, "has_more_head_child_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_head_child_comments(value: Boolean): Self = StObject.set(x, "has_more_head_child_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more_head_child_commentsUndefined: Self = StObject.set(x, "has_more_head_child_comments", js.undefined)
+      inline def setHas_more_head_child_commentsUndefined: Self = StObject.set(x, "has_more_head_child_comments", js.undefined)
       
-      @scala.inline
-      def setHas_more_tail_child_comments(value: Boolean): Self = StObject.set(x, "has_more_tail_child_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_tail_child_comments(value: Boolean): Self = StObject.set(x, "has_more_tail_child_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more_tail_child_commentsUndefined: Self = StObject.set(x, "has_more_tail_child_comments", js.undefined)
+      inline def setHas_more_tail_child_commentsUndefined: Self = StObject.set(x, "has_more_tail_child_comments", js.undefined)
       
-      @scala.inline
-      def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
+      inline def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_translationUndefined: Self = StObject.set(x, "has_translation", js.undefined)
+      inline def setHas_translationUndefined: Self = StObject.set(x, "has_translation", js.undefined)
       
-      @scala.inline
-      def setInline_composer_display_condition(value: String): Self = StObject.set(x, "inline_composer_display_condition", value.asInstanceOf[js.Any])
+      inline def setInline_composer_display_condition(value: String): Self = StObject.set(x, "inline_composer_display_condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_min_child_cursor(value: String): Self = StObject.set(x, "next_min_child_cursor", value.asInstanceOf[js.Any])
+      inline def setNext_min_child_cursor(value: String): Self = StObject.set(x, "next_min_child_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_min_child_cursorUndefined: Self = StObject.set(x, "next_min_child_cursor", js.undefined)
+      inline def setNext_min_child_cursorUndefined: Self = StObject.set(x, "next_min_child_cursor", js.undefined)
       
-      @scala.inline
-      def setNum_head_child_comments(value: Double): Self = StObject.set(x, "num_head_child_comments", value.asInstanceOf[js.Any])
+      inline def setNum_head_child_comments(value: Double): Self = StObject.set(x, "num_head_child_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_head_child_commentsUndefined: Self = StObject.set(x, "num_head_child_comments", js.undefined)
+      inline def setNum_head_child_commentsUndefined: Self = StObject.set(x, "num_head_child_comments", js.undefined)
       
-      @scala.inline
-      def setNum_tail_child_comments(value: Double): Self = StObject.set(x, "num_tail_child_comments", value.asInstanceOf[js.Any])
+      inline def setNum_tail_child_comments(value: Double): Self = StObject.set(x, "num_tail_child_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_tail_child_commentsUndefined: Self = StObject.set(x, "num_tail_child_comments", js.undefined)
+      inline def setNum_tail_child_commentsUndefined: Self = StObject.set(x, "num_tail_child_comments", js.undefined)
       
-      @scala.inline
-      def setOther_preview_users(value: js.Array[MediaCommentsFeedResponseOtherPreviewUsersItem]): Self = StObject.set(x, "other_preview_users", value.asInstanceOf[js.Any])
+      inline def setOther_preview_users(value: js.Array[MediaCommentsFeedResponseOtherPreviewUsersItem]): Self = StObject.set(x, "other_preview_users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOther_preview_usersVarargs(value: MediaCommentsFeedResponseOtherPreviewUsersItem*): Self = StObject.set(x, "other_preview_users", js.Array(value :_*))
+      inline def setOther_preview_usersVarargs(value: MediaCommentsFeedResponseOtherPreviewUsersItem*): Self = StObject.set(x, "other_preview_users", js.Array(value :_*))
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_child_comments(value: js.Array[MediaCommentsFeedResponsePreviewChildCommentsItem]): Self = StObject.set(x, "preview_child_comments", value.asInstanceOf[js.Any])
+      inline def setPreview_child_comments(value: js.Array[MediaCommentsFeedResponsePreviewChildCommentsItem]): Self = StObject.set(x, "preview_child_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_child_commentsVarargs(value: MediaCommentsFeedResponsePreviewChildCommentsItem*): Self = StObject.set(x, "preview_child_comments", js.Array(value :_*))
+      inline def setPreview_child_commentsVarargs(value: MediaCommentsFeedResponsePreviewChildCommentsItem*): Self = StObject.set(x, "preview_child_comments", js.Array(value :_*))
       
-      @scala.inline
-      def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
+      inline def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -421,20 +349,16 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponseOtherPreviewUsersItem {
     
-    @scala.inline
-    def apply(id: Double, profile_pic_url: String): MediaCommentsFeedResponseOtherPreviewUsersItem = {
+    inline def apply(id: Double, profile_pic_url: String): MediaCommentsFeedResponseOtherPreviewUsersItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaCommentsFeedResponseOtherPreviewUsersItem]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponseOtherPreviewUsersItemMutableBuilder[Self <: MediaCommentsFeedResponseOtherPreviewUsersItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponseOtherPreviewUsersItem](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -468,8 +392,7 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponsePreviewChildCommentsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       comment_like_count: Double,
       content_type: String,
       created_at: Double,
@@ -489,47 +412,33 @@ object mediaCommentsFeedResponseMod {
       __obj.asInstanceOf[MediaCommentsFeedResponsePreviewChildCommentsItem]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponsePreviewChildCommentsItemMutableBuilder[Self <: MediaCommentsFeedResponsePreviewChildCommentsItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponsePreviewChildCommentsItem](x: Self) {
       
-      @scala.inline
-      def setComment_like_count(value: Double): Self = StObject.set(x, "comment_like_count", value.asInstanceOf[js.Any])
+      inline def setComment_like_count(value: Double): Self = StObject.set(x, "comment_like_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
+      inline def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_liked_comment(value: Boolean): Self = StObject.set(x, "has_liked_comment", value.asInstanceOf[js.Any])
+      inline def setHas_liked_comment(value: Boolean): Self = StObject.set(x, "has_liked_comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+      inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_comment_id(value: String): Self = StObject.set(x, "parent_comment_id", value.asInstanceOf[js.Any])
+      inline def setParent_comment_id(value: String): Self = StObject.set(x, "parent_comment_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
+      inline def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -569,8 +478,7 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponsePreviewCommentsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bit_flags: Double,
       comment_like_count: Double,
       content_type: String,
@@ -592,59 +500,41 @@ object mediaCommentsFeedResponseMod {
       __obj.asInstanceOf[MediaCommentsFeedResponsePreviewCommentsItem]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponsePreviewCommentsItemMutableBuilder[Self <: MediaCommentsFeedResponsePreviewCommentsItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponsePreviewCommentsItem](x: Self) {
       
-      @scala.inline
-      def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
+      inline def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_like_count(value: Double): Self = StObject.set(x, "comment_like_count", value.asInstanceOf[js.Any])
+      inline def setComment_like_count(value: Double): Self = StObject.set(x, "comment_like_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
+      inline def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
+      inline def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_liked_comment(value: Boolean): Self = StObject.set(x, "has_liked_comment", value.asInstanceOf[js.Any])
+      inline def setHas_liked_comment(value: Boolean): Self = StObject.set(x, "has_liked_comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
+      inline def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_comment_id(value: String): Self = StObject.set(x, "parent_comment_id", value.asInstanceOf[js.Any])
+      inline def setParent_comment_id(value: String): Self = StObject.set(x, "parent_comment_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_comment_idUndefined: Self = StObject.set(x, "parent_comment_id", js.undefined)
+      inline def setParent_comment_idUndefined: Self = StObject.set(x, "parent_comment_id", js.undefined)
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
+      inline def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: MediaCommentsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -654,17 +544,14 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponseQuickResponseEmojisItem {
     
-    @scala.inline
-    def apply(unicode: String): MediaCommentsFeedResponseQuickResponseEmojisItem = {
+    inline def apply(unicode: String): MediaCommentsFeedResponseQuickResponseEmojisItem = {
       val __obj = js.Dynamic.literal(unicode = unicode.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaCommentsFeedResponseQuickResponseEmojisItem]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponseQuickResponseEmojisItemMutableBuilder[Self <: MediaCommentsFeedResponseQuickResponseEmojisItem] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponseQuickResponseEmojisItem](x: Self) {
       
-      @scala.inline
-      def setUnicode(value: String): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: String): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -690,8 +577,7 @@ object mediaCommentsFeedResponseMod {
   }
   object MediaCommentsFeedResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       full_name: String,
       is_private: Boolean,
       is_verified: Boolean,
@@ -703,44 +589,31 @@ object mediaCommentsFeedResponseMod {
       __obj.asInstanceOf[MediaCommentsFeedResponseUser]
     }
     
-    @scala.inline
-    implicit class MediaCommentsFeedResponseUserMutableBuilder[Self <: MediaCommentsFeedResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: MediaCommentsFeedResponseUser](x: Self) {
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_pictureUndefined: Self = StObject.set(x, "has_anonymous_profile_picture", js.undefined)
+      inline def setHas_anonymous_profile_pictureUndefined: Self = StObject.set(x, "has_anonymous_profile_picture", js.undefined)
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
+      inline def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
+      inline def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
+      inline def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

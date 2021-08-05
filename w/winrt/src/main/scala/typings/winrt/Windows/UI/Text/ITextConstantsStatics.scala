@@ -25,8 +25,7 @@ trait ITextConstantsStatics extends StObject {
 }
 object ITextConstantsStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoColor: Color,
     maxUnitCount: Double,
     minUnitCount: Double,
@@ -40,31 +39,22 @@ object ITextConstantsStatics {
     __obj.asInstanceOf[ITextConstantsStatics]
   }
   
-  @scala.inline
-  implicit class ITextConstantsStaticsMutableBuilder[Self <: ITextConstantsStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ITextConstantsStatics](x: Self) {
     
-    @scala.inline
-    def setAutoColor(value: Color): Self = StObject.set(x, "autoColor", value.asInstanceOf[js.Any])
+    inline def setAutoColor(value: Color): Self = StObject.set(x, "autoColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUnitCount(value: Double): Self = StObject.set(x, "maxUnitCount", value.asInstanceOf[js.Any])
+    inline def setMaxUnitCount(value: Double): Self = StObject.set(x, "maxUnitCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUnitCount(value: Double): Self = StObject.set(x, "minUnitCount", value.asInstanceOf[js.Any])
+    inline def setMinUnitCount(value: Double): Self = StObject.set(x, "minUnitCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedColor(value: Color): Self = StObject.set(x, "undefinedColor", value.asInstanceOf[js.Any])
+    inline def setUndefinedColor(value: Color): Self = StObject.set(x, "undefinedColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedFloatValue(value: Double): Self = StObject.set(x, "undefinedFloatValue", value.asInstanceOf[js.Any])
+    inline def setUndefinedFloatValue(value: Double): Self = StObject.set(x, "undefinedFloatValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedFontStretch(value: FontStretch): Self = StObject.set(x, "undefinedFontStretch", value.asInstanceOf[js.Any])
+    inline def setUndefinedFontStretch(value: FontStretch): Self = StObject.set(x, "undefinedFontStretch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedFontStyle(value: FontStyle): Self = StObject.set(x, "undefinedFontStyle", value.asInstanceOf[js.Any])
+    inline def setUndefinedFontStyle(value: FontStyle): Self = StObject.set(x, "undefinedFontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedInt32Value(value: Double): Self = StObject.set(x, "undefinedInt32Value", value.asInstanceOf[js.Any])
+    inline def setUndefinedInt32Value(value: Double): Self = StObject.set(x, "undefinedInt32Value", value.asInstanceOf[js.Any])
   }
 }

@@ -19,22 +19,17 @@ trait BucketLogging extends StObject {
 }
 object BucketLogging {
   
-  @scala.inline
-  def apply(targetBucket: Input[String]): BucketLogging = {
+  inline def apply(targetBucket: Input[String]): BucketLogging = {
     val __obj = js.Dynamic.literal(targetBucket = targetBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLogging]
   }
   
-  @scala.inline
-  implicit class BucketLoggingMutableBuilder[Self <: BucketLogging] (val x: Self) extends AnyVal {
+  extension [Self <: BucketLogging](x: Self) {
     
-    @scala.inline
-    def setTargetBucket(value: Input[String]): Self = StObject.set(x, "targetBucket", value.asInstanceOf[js.Any])
+    inline def setTargetBucket(value: Input[String]): Self = StObject.set(x, "targetBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPrefix(value: Input[String]): Self = StObject.set(x, "targetPrefix", value.asInstanceOf[js.Any])
+    inline def setTargetPrefix(value: Input[String]): Self = StObject.set(x, "targetPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPrefixUndefined: Self = StObject.set(x, "targetPrefix", js.undefined)
+    inline def setTargetPrefixUndefined: Self = StObject.set(x, "targetPrefix", js.undefined)
   }
 }

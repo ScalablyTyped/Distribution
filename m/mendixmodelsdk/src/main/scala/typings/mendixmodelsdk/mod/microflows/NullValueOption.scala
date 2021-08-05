@@ -21,13 +21,11 @@ object NullValueOption {
   @JSImport("mendixmodelsdk", "microflows.NullValueOption.LeaveOutElement")
   @js.native
   def LeaveOutElement: typings.mendixmodelsdk.microflowsMod.microflows.NullValueOption = js.native
-  @scala.inline
-  def LeaveOutElement_=(x: typings.mendixmodelsdk.microflowsMod.microflows.NullValueOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeaveOutElement")(x.asInstanceOf[js.Any])
+  inline def LeaveOutElement_=(x: typings.mendixmodelsdk.microflowsMod.microflows.NullValueOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeaveOutElement")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.NullValueOption.SendAsNil")
   @js.native
   def SendAsNil: typings.mendixmodelsdk.microflowsMod.microflows.NullValueOption = js.native
-  @scala.inline
-  def SendAsNil_=(x: typings.mendixmodelsdk.microflowsMod.microflows.NullValueOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SendAsNil")(x.asInstanceOf[js.Any])
+  inline def SendAsNil_=(x: typings.mendixmodelsdk.microflowsMod.microflows.NullValueOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SendAsNil")(x.asInstanceOf[js.Any])
 }

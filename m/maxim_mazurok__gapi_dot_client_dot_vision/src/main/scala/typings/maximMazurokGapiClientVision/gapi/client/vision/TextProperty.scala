@@ -14,28 +14,21 @@ trait TextProperty extends StObject {
 }
 object TextProperty {
   
-  @scala.inline
-  def apply(): TextProperty = {
+  inline def apply(): TextProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextProperty]
   }
   
-  @scala.inline
-  implicit class TextPropertyMutableBuilder[Self <: TextProperty] (val x: Self) extends AnyVal {
+  extension [Self <: TextProperty](x: Self) {
     
-    @scala.inline
-    def setDetectedBreak(value: DetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
+    inline def setDetectedBreak(value: DetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedBreakUndefined: Self = StObject.set(x, "detectedBreak", js.undefined)
+    inline def setDetectedBreakUndefined: Self = StObject.set(x, "detectedBreak", js.undefined)
     
-    @scala.inline
-    def setDetectedLanguages(value: js.Array[DetectedLanguage]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
+    inline def setDetectedLanguages(value: js.Array[DetectedLanguage]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
+    inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    @scala.inline
-    def setDetectedLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
   }
 }

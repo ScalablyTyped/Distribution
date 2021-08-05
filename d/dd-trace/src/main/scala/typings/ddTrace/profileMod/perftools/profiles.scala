@@ -62,10 +62,8 @@ object profiles {
       * @returns Function instance
       */
     /* static member */
-    @scala.inline
-    def create(): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Function]
-    @scala.inline
-    def create(properties: IFunction): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Function]
+    inline def create(): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Function]
+    inline def create(properties: IFunction): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Function]
     
     /**
       * Decodes a Function message from the specified reader or buffer.
@@ -76,14 +74,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Function]
-    @scala.inline
-    def decode(reader: Uint8Array): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def decode(reader: Reader): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
+    inline def decode(reader: Reader, length: Double): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def decode(reader: Uint8Array): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
+    inline def decode(reader: Uint8Array, length: Double): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Function]
     
     /**
       * Decodes a Function message from the specified reader or buffer, length delimited.
@@ -93,10 +87,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
+    inline def decodeDelimited(reader: Reader): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
+    inline def decodeDelimited(reader: Uint8Array): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
     
     /**
       * Encodes the specified Function message. Does not implicitly {@link perftools.profiles.Function.verify|verify} messages.
@@ -105,10 +97,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IFunction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IFunction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IFunction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IFunction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Function message, length delimited. Does not implicitly {@link perftools.profiles.Function.verify|verify} messages.
@@ -117,10 +107,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IFunction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IFunction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IFunction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IFunction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Function message from a plain object. Also converts values to their respective internal types.
@@ -128,8 +116,7 @@ object profiles {
       * @returns Function
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Function]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Function]
     
     /**
       * Creates a plain object from a Function message. Also converts values to other types if specified.
@@ -138,10 +125,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Function): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Function, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Function): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Function, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Function message.
@@ -149,8 +134,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Label. */
@@ -199,10 +183,8 @@ object profiles {
       * @returns Label instance
       */
     /* static member */
-    @scala.inline
-    def create(): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Label]
-    @scala.inline
-    def create(properties: ILabel): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Label]
+    inline def create(): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Label]
+    inline def create(properties: ILabel): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Label]
     
     /**
       * Decodes a Label message from the specified reader or buffer.
@@ -213,14 +195,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Label]
-    @scala.inline
-    def decode(reader: Uint8Array): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Label]
+    inline def decode(reader: Reader): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
+    inline def decode(reader: Reader, length: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Label]
+    inline def decode(reader: Uint8Array): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
+    inline def decode(reader: Uint8Array, length: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Label]
     
     /**
       * Decodes a Label message from the specified reader or buffer, length delimited.
@@ -230,10 +208,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
+    inline def decodeDelimited(reader: Reader): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
+    inline def decodeDelimited(reader: Uint8Array): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
     
     /**
       * Encodes the specified Label message. Does not implicitly {@link perftools.profiles.Label.verify|verify} messages.
@@ -242,10 +218,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ILabel): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ILabel, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ILabel): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ILabel, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Label message, length delimited. Does not implicitly {@link perftools.profiles.Label.verify|verify} messages.
@@ -254,10 +228,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ILabel): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ILabel, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ILabel): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ILabel, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Label message from a plain object. Also converts values to their respective internal types.
@@ -265,8 +237,7 @@ object profiles {
       * @returns Label
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Label]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Label]
     
     /**
       * Creates a plain object from a Label message. Also converts values to other types if specified.
@@ -275,10 +246,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Label): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Label, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Label): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Label, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Label message.
@@ -286,8 +255,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Line. */
@@ -328,10 +296,8 @@ object profiles {
       * @returns Line instance
       */
     /* static member */
-    @scala.inline
-    def create(): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Line]
-    @scala.inline
-    def create(properties: ILine): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Line]
+    inline def create(): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Line]
+    inline def create(properties: ILine): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Line]
     
     /**
       * Decodes a Line message from the specified reader or buffer.
@@ -342,14 +308,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Line]
-    @scala.inline
-    def decode(reader: Uint8Array): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Line]
+    inline def decode(reader: Reader): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
+    inline def decode(reader: Reader, length: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Line]
+    inline def decode(reader: Uint8Array): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
+    inline def decode(reader: Uint8Array, length: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Line]
     
     /**
       * Decodes a Line message from the specified reader or buffer, length delimited.
@@ -359,10 +321,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
+    inline def decodeDelimited(reader: Reader): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
+    inline def decodeDelimited(reader: Uint8Array): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
     
     /**
       * Encodes the specified Line message. Does not implicitly {@link perftools.profiles.Line.verify|verify} messages.
@@ -371,10 +331,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ILine): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ILine, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ILine): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ILine, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Line message, length delimited. Does not implicitly {@link perftools.profiles.Line.verify|verify} messages.
@@ -383,10 +341,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ILine): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ILine, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ILine): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ILine, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Line message from a plain object. Also converts values to their respective internal types.
@@ -394,8 +350,7 @@ object profiles {
       * @returns Line
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Line]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Line]
     
     /**
       * Creates a plain object from a Line message. Also converts values to other types if specified.
@@ -404,10 +359,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Line): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Line, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Line): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Line, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Line message.
@@ -415,8 +368,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Location. */
@@ -469,10 +421,8 @@ object profiles {
       * @returns Location instance
       */
     /* static member */
-    @scala.inline
-    def create(): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Location]
-    @scala.inline
-    def create(properties: ILocation): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def create(): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Location]
+    inline def create(properties: ILocation): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Decodes a Location message from the specified reader or buffer.
@@ -483,14 +433,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
-    @scala.inline
-    def decode(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
+    inline def decode(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def decode(reader: Reader, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
+    inline def decode(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def decode(reader: Uint8Array, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
     
     /**
       * Decodes a Location message from the specified reader or buffer, length delimited.
@@ -500,10 +446,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def decodeDelimited(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def decodeDelimited(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Encodes the specified Location message. Does not implicitly {@link perftools.profiles.Location.verify|verify} messages.
@@ -512,10 +456,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Location message, length delimited. Does not implicitly {@link perftools.profiles.Location.verify|verify} messages.
@@ -524,10 +466,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Location message from a plain object. Also converts values to their respective internal types.
@@ -535,8 +475,7 @@ object profiles {
       * @returns Location
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Creates a plain object from a Location message. Also converts values to other types if specified.
@@ -545,10 +484,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Location): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Location, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Location): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Location, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Location message.
@@ -556,8 +493,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Mapping. */
@@ -630,10 +566,8 @@ object profiles {
       * @returns Mapping instance
       */
     /* static member */
-    @scala.inline
-    def create(): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Mapping]
-    @scala.inline
-    def create(properties: IMapping): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    inline def create(): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Mapping]
+    inline def create(properties: IMapping): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Mapping]
     
     /**
       * Decodes a Mapping message from the specified reader or buffer.
@@ -644,14 +578,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Mapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Mapping]
-    @scala.inline
-    def decode(reader: Uint8Array): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Mapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Mapping]
+    inline def decode(reader: Reader): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    inline def decode(reader: Reader, length: Double): Mapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Mapping]
+    inline def decode(reader: Uint8Array): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    inline def decode(reader: Uint8Array, length: Double): Mapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Mapping]
     
     /**
       * Decodes a Mapping message from the specified reader or buffer, length delimited.
@@ -661,10 +591,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    inline def decodeDelimited(reader: Reader): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    inline def decodeDelimited(reader: Uint8Array): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
     
     /**
       * Encodes the specified Mapping message. Does not implicitly {@link perftools.profiles.Mapping.verify|verify} messages.
@@ -673,10 +601,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IMapping): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IMapping, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IMapping): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IMapping, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Mapping message, length delimited. Does not implicitly {@link perftools.profiles.Mapping.verify|verify} messages.
@@ -685,10 +611,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IMapping): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IMapping, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IMapping): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IMapping, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Mapping message from a plain object. Also converts values to their respective internal types.
@@ -696,8 +620,7 @@ object profiles {
       * @returns Mapping
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Mapping]
     
     /**
       * Creates a plain object from a Mapping message. Also converts values to other types if specified.
@@ -706,10 +629,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Mapping): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Mapping, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Mapping): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Mapping, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Mapping message.
@@ -717,8 +638,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Profile. */
@@ -805,10 +725,8 @@ object profiles {
       * @returns Profile instance
       */
     /* static member */
-    @scala.inline
-    def create(): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Profile]
-    @scala.inline
-    def create(properties: IProfile): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    inline def create(): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Profile]
+    inline def create(properties: IProfile): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Profile]
     
     /**
       * Decodes a Profile message from the specified reader or buffer.
@@ -819,14 +737,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Profile]
-    @scala.inline
-    def decode(reader: Uint8Array): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Profile]
+    inline def decode(reader: Reader): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    inline def decode(reader: Reader, length: Double): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Profile]
+    inline def decode(reader: Uint8Array): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    inline def decode(reader: Uint8Array, length: Double): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Profile]
     
     /**
       * Decodes a Profile message from the specified reader or buffer, length delimited.
@@ -836,10 +750,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    inline def decodeDelimited(reader: Reader): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    inline def decodeDelimited(reader: Uint8Array): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
     
     /**
       * Encodes the specified Profile message. Does not implicitly {@link perftools.profiles.Profile.verify|verify} messages.
@@ -848,10 +760,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IProfile): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IProfile, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IProfile): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IProfile, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Profile message, length delimited. Does not implicitly {@link perftools.profiles.Profile.verify|verify} messages.
@@ -860,10 +770,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IProfile): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IProfile, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IProfile): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IProfile, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Profile message from a plain object. Also converts values to their respective internal types.
@@ -871,8 +779,7 @@ object profiles {
       * @returns Profile
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Profile]
     
     /**
       * Creates a plain object from a Profile message. Also converts values to other types if specified.
@@ -881,10 +788,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Profile): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Profile, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Profile): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Profile, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Profile message.
@@ -892,8 +797,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Sample. */
@@ -942,10 +846,8 @@ object profiles {
       * @returns Sample instance
       */
     /* static member */
-    @scala.inline
-    def create(): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Sample]
-    @scala.inline
-    def create(properties: ISample): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    inline def create(): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Sample]
+    inline def create(properties: ISample): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Sample]
     
     /**
       * Decodes a Sample message from the specified reader or buffer.
@@ -956,14 +858,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Sample = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sample]
-    @scala.inline
-    def decode(reader: Uint8Array): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Sample = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sample]
+    inline def decode(reader: Reader): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    inline def decode(reader: Reader, length: Double): Sample = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sample]
+    inline def decode(reader: Uint8Array): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    inline def decode(reader: Uint8Array, length: Double): Sample = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sample]
     
     /**
       * Decodes a Sample message from the specified reader or buffer, length delimited.
@@ -973,10 +871,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    inline def decodeDelimited(reader: Reader): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    inline def decodeDelimited(reader: Uint8Array): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
     
     /**
       * Encodes the specified Sample message. Does not implicitly {@link perftools.profiles.Sample.verify|verify} messages.
@@ -985,10 +881,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ISample): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ISample, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ISample): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISample, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Sample message, length delimited. Does not implicitly {@link perftools.profiles.Sample.verify|verify} messages.
@@ -997,10 +891,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ISample): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ISample, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISample): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISample, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Sample message from a plain object. Also converts values to their respective internal types.
@@ -1008,8 +900,7 @@ object profiles {
       * @returns Sample
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Sample]
     
     /**
       * Creates a plain object from a Sample message. Also converts values to other types if specified.
@@ -1018,10 +909,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Sample): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Sample, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Sample): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Sample, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Sample message.
@@ -1029,8 +918,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ValueType. */
@@ -1071,10 +959,8 @@ object profiles {
       * @returns ValueType instance
       */
     /* static member */
-    @scala.inline
-    def create(): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ValueType]
-    @scala.inline
-    def create(properties: IValueType): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    inline def create(): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ValueType]
+    inline def create(properties: IValueType): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ValueType]
     
     /**
       * Decodes a ValueType message from the specified reader or buffer.
@@ -1085,14 +971,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
-    @scala.inline
-    def decode(reader: Reader, length: Double): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValueType]
-    @scala.inline
-    def decode(reader: Uint8Array): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValueType]
+    inline def decode(reader: Reader): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    inline def decode(reader: Reader, length: Double): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValueType]
+    inline def decode(reader: Uint8Array): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    inline def decode(reader: Uint8Array, length: Double): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValueType]
     
     /**
       * Decodes a ValueType message from the specified reader or buffer, length delimited.
@@ -1102,10 +984,8 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    inline def decodeDelimited(reader: Reader): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    inline def decodeDelimited(reader: Uint8Array): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
     
     /**
       * Encodes the specified ValueType message. Does not implicitly {@link perftools.profiles.ValueType.verify|verify} messages.
@@ -1114,10 +994,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IValueType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IValueType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IValueType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IValueType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ValueType message, length delimited. Does not implicitly {@link perftools.profiles.ValueType.verify|verify} messages.
@@ -1126,10 +1004,8 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IValueType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IValueType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IValueType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IValueType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ValueType message from a plain object. Also converts values to their respective internal types.
@@ -1137,8 +1013,7 @@ object profiles {
       * @returns ValueType
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    inline def fromObject(`object`: StringDictionary[js.Any]): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ValueType]
     
     /**
       * Creates a plain object from a ValueType message. Also converts values to other types if specified.
@@ -1147,10 +1022,8 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: ValueType): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: ValueType, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: ValueType): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: ValueType, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a ValueType message.
@@ -1158,8 +1031,7 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of a Function. */
@@ -1192,69 +1064,52 @@ object profiles {
   }
   object IFunction {
     
-    @scala.inline
-    def apply(): IFunction = {
+    inline def apply(): IFunction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFunction]
     }
     
-    @scala.inline
-    implicit class IFunctionMutableBuilder[Self <: IFunction] (val x: Self) extends AnyVal {
+    extension [Self <: IFunction](x: Self) {
       
-      @scala.inline
-      def setFilename(
+      inline def setFilename(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameNull: Self = StObject.set(x, "filename", null)
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setId(
+      inline def setId(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStartLine(
+      inline def setStartLine(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartLineNull: Self = StObject.set(x, "startLine", null)
+      inline def setStartLineNull: Self = StObject.set(x, "startLine", null)
       
-      @scala.inline
-      def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
+      inline def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
       
-      @scala.inline
-      def setSystemName(
+      inline def setSystemName(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemNameNull: Self = StObject.set(x, "systemName", null)
+      inline def setSystemNameNull: Self = StObject.set(x, "systemName", null)
       
-      @scala.inline
-      def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
+      inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     }
   }
   
@@ -1283,58 +1138,44 @@ object profiles {
   }
   object ILabel {
     
-    @scala.inline
-    def apply(): ILabel = {
+    inline def apply(): ILabel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILabel]
     }
     
-    @scala.inline
-    implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
+    extension [Self <: ILabel](x: Self) {
       
-      @scala.inline
-      def setKey(
+      inline def setKey(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setNum(
+      inline def setNum(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumNull: Self = StObject.set(x, "num", null)
+      inline def setNumNull: Self = StObject.set(x, "num", null)
       
-      @scala.inline
-      def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
+      inline def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
       
-      @scala.inline
-      def setNumUnit(
+      inline def setNumUnit(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "numUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumUnitNull: Self = StObject.set(x, "numUnit", null)
+      inline def setNumUnitNull: Self = StObject.set(x, "numUnit", null)
       
-      @scala.inline
-      def setNumUnitUndefined: Self = StObject.set(x, "numUnit", js.undefined)
+      inline def setNumUnitUndefined: Self = StObject.set(x, "numUnit", js.undefined)
       
-      @scala.inline
-      def setStr(
+      inline def setStr(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrNull: Self = StObject.set(x, "str", null)
+      inline def setStrNull: Self = StObject.set(x, "str", null)
       
-      @scala.inline
-      def setStrUndefined: Self = StObject.set(x, "str", js.undefined)
+      inline def setStrUndefined: Self = StObject.set(x, "str", js.undefined)
     }
   }
   
@@ -1353,36 +1194,28 @@ object profiles {
   }
   object ILine {
     
-    @scala.inline
-    def apply(): ILine = {
+    inline def apply(): ILine = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILine]
     }
     
-    @scala.inline
-    implicit class ILineMutableBuilder[Self <: ILine] (val x: Self) extends AnyVal {
+    extension [Self <: ILine](x: Self) {
       
-      @scala.inline
-      def setFunctionId(
+      inline def setFunctionId(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "functionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionIdNull: Self = StObject.set(x, "functionId", null)
+      inline def setFunctionIdNull: Self = StObject.set(x, "functionId", null)
       
-      @scala.inline
-      def setFunctionIdUndefined: Self = StObject.set(x, "functionId", js.undefined)
+      inline def setFunctionIdUndefined: Self = StObject.set(x, "functionId", js.undefined)
       
-      @scala.inline
-      def setLine(
+      inline def setLine(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNull: Self = StObject.set(x, "line", null)
+      inline def setLineNull: Self = StObject.set(x, "line", null)
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     }
   }
   
@@ -1412,68 +1245,50 @@ object profiles {
   }
   object ILocation {
     
-    @scala.inline
-    def apply(): ILocation = {
+    inline def apply(): ILocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILocation]
     }
     
-    @scala.inline
-    implicit class ILocationMutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
+    extension [Self <: ILocation](x: Self) {
       
-      @scala.inline
-      def setAddress(
+      inline def setAddress(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressNull: Self = StObject.set(x, "address", null)
+      inline def setAddressNull: Self = StObject.set(x, "address", null)
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setId(
+      inline def setId(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsFolded(value: Boolean): Self = StObject.set(x, "isFolded", value.asInstanceOf[js.Any])
+      inline def setIsFolded(value: Boolean): Self = StObject.set(x, "isFolded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFoldedNull: Self = StObject.set(x, "isFolded", null)
+      inline def setIsFoldedNull: Self = StObject.set(x, "isFolded", null)
       
-      @scala.inline
-      def setIsFoldedUndefined: Self = StObject.set(x, "isFolded", js.undefined)
+      inline def setIsFoldedUndefined: Self = StObject.set(x, "isFolded", js.undefined)
       
-      @scala.inline
-      def setLine(value: js.Array[ILine]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: js.Array[ILine]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNull: Self = StObject.set(x, "line", null)
+      inline def setLineNull: Self = StObject.set(x, "line", null)
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setLineVarargs(value: ILine*): Self = StObject.set(x, "line", js.Array(value :_*))
+      inline def setLineVarargs(value: ILine*): Self = StObject.set(x, "line", js.Array(value :_*))
       
-      @scala.inline
-      def setMappingId(
+      inline def setMappingId(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "mappingId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingIdNull: Self = StObject.set(x, "mappingId", null)
+      inline def setMappingIdNull: Self = StObject.set(x, "mappingId", null)
       
-      @scala.inline
-      def setMappingIdUndefined: Self = StObject.set(x, "mappingId", js.undefined)
+      inline def setMappingIdUndefined: Self = StObject.set(x, "mappingId", js.undefined)
     }
   }
   
@@ -1524,116 +1339,84 @@ object profiles {
   }
   object IMapping {
     
-    @scala.inline
-    def apply(): IMapping = {
+    inline def apply(): IMapping = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMapping]
     }
     
-    @scala.inline
-    implicit class IMappingMutableBuilder[Self <: IMapping] (val x: Self) extends AnyVal {
+    extension [Self <: IMapping](x: Self) {
       
-      @scala.inline
-      def setBuildId(
+      inline def setBuildId(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildIdNull: Self = StObject.set(x, "buildId", null)
+      inline def setBuildIdNull: Self = StObject.set(x, "buildId", null)
       
-      @scala.inline
-      def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
+      inline def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
       
-      @scala.inline
-      def setFileOffset(
+      inline def setFileOffset(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "fileOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileOffsetNull: Self = StObject.set(x, "fileOffset", null)
+      inline def setFileOffsetNull: Self = StObject.set(x, "fileOffset", null)
       
-      @scala.inline
-      def setFileOffsetUndefined: Self = StObject.set(x, "fileOffset", js.undefined)
+      inline def setFileOffsetUndefined: Self = StObject.set(x, "fileOffset", js.undefined)
       
-      @scala.inline
-      def setFilename(
+      inline def setFilename(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameNull: Self = StObject.set(x, "filename", null)
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setHasFilenames(value: Boolean): Self = StObject.set(x, "hasFilenames", value.asInstanceOf[js.Any])
+      inline def setHasFilenames(value: Boolean): Self = StObject.set(x, "hasFilenames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasFilenamesNull: Self = StObject.set(x, "hasFilenames", null)
+      inline def setHasFilenamesNull: Self = StObject.set(x, "hasFilenames", null)
       
-      @scala.inline
-      def setHasFilenamesUndefined: Self = StObject.set(x, "hasFilenames", js.undefined)
+      inline def setHasFilenamesUndefined: Self = StObject.set(x, "hasFilenames", js.undefined)
       
-      @scala.inline
-      def setHasFunctions(value: Boolean): Self = StObject.set(x, "hasFunctions", value.asInstanceOf[js.Any])
+      inline def setHasFunctions(value: Boolean): Self = StObject.set(x, "hasFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasFunctionsNull: Self = StObject.set(x, "hasFunctions", null)
+      inline def setHasFunctionsNull: Self = StObject.set(x, "hasFunctions", null)
       
-      @scala.inline
-      def setHasFunctionsUndefined: Self = StObject.set(x, "hasFunctions", js.undefined)
+      inline def setHasFunctionsUndefined: Self = StObject.set(x, "hasFunctions", js.undefined)
       
-      @scala.inline
-      def setHasInlineFrames(value: Boolean): Self = StObject.set(x, "hasInlineFrames", value.asInstanceOf[js.Any])
+      inline def setHasInlineFrames(value: Boolean): Self = StObject.set(x, "hasInlineFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasInlineFramesNull: Self = StObject.set(x, "hasInlineFrames", null)
+      inline def setHasInlineFramesNull: Self = StObject.set(x, "hasInlineFrames", null)
       
-      @scala.inline
-      def setHasInlineFramesUndefined: Self = StObject.set(x, "hasInlineFrames", js.undefined)
+      inline def setHasInlineFramesUndefined: Self = StObject.set(x, "hasInlineFrames", js.undefined)
       
-      @scala.inline
-      def setHasLineNumbers(value: Boolean): Self = StObject.set(x, "hasLineNumbers", value.asInstanceOf[js.Any])
+      inline def setHasLineNumbers(value: Boolean): Self = StObject.set(x, "hasLineNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasLineNumbersNull: Self = StObject.set(x, "hasLineNumbers", null)
+      inline def setHasLineNumbersNull: Self = StObject.set(x, "hasLineNumbers", null)
       
-      @scala.inline
-      def setHasLineNumbersUndefined: Self = StObject.set(x, "hasLineNumbers", js.undefined)
+      inline def setHasLineNumbersUndefined: Self = StObject.set(x, "hasLineNumbers", js.undefined)
       
-      @scala.inline
-      def setId(
+      inline def setId(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMemoryLimit(
+      inline def setMemoryLimit(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryLimitNull: Self = StObject.set(x, "memoryLimit", null)
+      inline def setMemoryLimitNull: Self = StObject.set(x, "memoryLimit", null)
       
-      @scala.inline
-      def setMemoryLimitUndefined: Self = StObject.set(x, "memoryLimit", js.undefined)
+      inline def setMemoryLimitUndefined: Self = StObject.set(x, "memoryLimit", js.undefined)
       
-      @scala.inline
-      def setMemoryStart(
+      inline def setMemoryStart(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "memoryStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryStartNull: Self = StObject.set(x, "memoryStart", null)
+      inline def setMemoryStartNull: Self = StObject.set(x, "memoryStart", null)
       
-      @scala.inline
-      def setMemoryStartUndefined: Self = StObject.set(x, "memoryStart", js.undefined)
+      inline def setMemoryStartUndefined: Self = StObject.set(x, "memoryStart", js.undefined)
     }
   }
   
@@ -1700,179 +1483,128 @@ object profiles {
   }
   object IProfile {
     
-    @scala.inline
-    def apply(): IProfile = {
+    inline def apply(): IProfile = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProfile]
     }
     
-    @scala.inline
-    implicit class IProfileMutableBuilder[Self <: IProfile] (val x: Self) extends AnyVal {
+    extension [Self <: IProfile](x: Self) {
       
-      @scala.inline
-      def setComment(
+      inline def setComment(
         value: js.Array[
               Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
             ]
       ): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentNull: Self = StObject.set(x, "comment", null)
+      inline def setCommentNull: Self = StObject.set(x, "comment", null)
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCommentVarargs(
+      inline def setCommentVarargs(
         value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
       ): Self = StObject.set(x, "comment", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultSampleType(
+      inline def setDefaultSampleType(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "defaultSampleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSampleTypeNull: Self = StObject.set(x, "defaultSampleType", null)
+      inline def setDefaultSampleTypeNull: Self = StObject.set(x, "defaultSampleType", null)
       
-      @scala.inline
-      def setDefaultSampleTypeUndefined: Self = StObject.set(x, "defaultSampleType", js.undefined)
+      inline def setDefaultSampleTypeUndefined: Self = StObject.set(x, "defaultSampleType", js.undefined)
       
-      @scala.inline
-      def setDropFrames(
+      inline def setDropFrames(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "dropFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropFramesNull: Self = StObject.set(x, "dropFrames", null)
+      inline def setDropFramesNull: Self = StObject.set(x, "dropFrames", null)
       
-      @scala.inline
-      def setDropFramesUndefined: Self = StObject.set(x, "dropFrames", js.undefined)
+      inline def setDropFramesUndefined: Self = StObject.set(x, "dropFrames", js.undefined)
       
-      @scala.inline
-      def setDurationNanos(
+      inline def setDurationNanos(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "durationNanos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationNanosNull: Self = StObject.set(x, "durationNanos", null)
+      inline def setDurationNanosNull: Self = StObject.set(x, "durationNanos", null)
       
-      @scala.inline
-      def setDurationNanosUndefined: Self = StObject.set(x, "durationNanos", js.undefined)
+      inline def setDurationNanosUndefined: Self = StObject.set(x, "durationNanos", js.undefined)
       
-      @scala.inline
-      def setFunction(value: js.Array[IFunction]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: js.Array[IFunction]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNull: Self = StObject.set(x, "function", null)
+      inline def setFunctionNull: Self = StObject.set(x, "function", null)
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setFunctionVarargs(value: IFunction*): Self = StObject.set(x, "function", js.Array(value :_*))
+      inline def setFunctionVarargs(value: IFunction*): Self = StObject.set(x, "function", js.Array(value :_*))
       
-      @scala.inline
-      def setKeepFrames(
+      inline def setKeepFrames(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "keepFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepFramesNull: Self = StObject.set(x, "keepFrames", null)
+      inline def setKeepFramesNull: Self = StObject.set(x, "keepFrames", null)
       
-      @scala.inline
-      def setKeepFramesUndefined: Self = StObject.set(x, "keepFrames", js.undefined)
+      inline def setKeepFramesUndefined: Self = StObject.set(x, "keepFrames", js.undefined)
       
-      @scala.inline
-      def setLocation(value: js.Array[ILocation]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: js.Array[ILocation]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationNull: Self = StObject.set(x, "location", null)
+      inline def setLocationNull: Self = StObject.set(x, "location", null)
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setLocationVarargs(value: ILocation*): Self = StObject.set(x, "location", js.Array(value :_*))
+      inline def setLocationVarargs(value: ILocation*): Self = StObject.set(x, "location", js.Array(value :_*))
       
-      @scala.inline
-      def setMapping(value: js.Array[IMapping]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: js.Array[IMapping]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingNull: Self = StObject.set(x, "mapping", null)
+      inline def setMappingNull: Self = StObject.set(x, "mapping", null)
       
-      @scala.inline
-      def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+      inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
       
-      @scala.inline
-      def setMappingVarargs(value: IMapping*): Self = StObject.set(x, "mapping", js.Array(value :_*))
+      inline def setMappingVarargs(value: IMapping*): Self = StObject.set(x, "mapping", js.Array(value :_*))
       
-      @scala.inline
-      def setPeriod(
+      inline def setPeriod(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodNull: Self = StObject.set(x, "period", null)
+      inline def setPeriodNull: Self = StObject.set(x, "period", null)
       
-      @scala.inline
-      def setPeriodType(value: IValueType): Self = StObject.set(x, "periodType", value.asInstanceOf[js.Any])
+      inline def setPeriodType(value: IValueType): Self = StObject.set(x, "periodType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodTypeNull: Self = StObject.set(x, "periodType", null)
+      inline def setPeriodTypeNull: Self = StObject.set(x, "periodType", null)
       
-      @scala.inline
-      def setPeriodTypeUndefined: Self = StObject.set(x, "periodType", js.undefined)
+      inline def setPeriodTypeUndefined: Self = StObject.set(x, "periodType", js.undefined)
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      @scala.inline
-      def setSample(value: js.Array[ISample]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+      inline def setSample(value: js.Array[ISample]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleNull: Self = StObject.set(x, "sample", null)
+      inline def setSampleNull: Self = StObject.set(x, "sample", null)
       
-      @scala.inline
-      def setSampleType(value: js.Array[IValueType]): Self = StObject.set(x, "sampleType", value.asInstanceOf[js.Any])
+      inline def setSampleType(value: js.Array[IValueType]): Self = StObject.set(x, "sampleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleTypeNull: Self = StObject.set(x, "sampleType", null)
+      inline def setSampleTypeNull: Self = StObject.set(x, "sampleType", null)
       
-      @scala.inline
-      def setSampleTypeUndefined: Self = StObject.set(x, "sampleType", js.undefined)
+      inline def setSampleTypeUndefined: Self = StObject.set(x, "sampleType", js.undefined)
       
-      @scala.inline
-      def setSampleTypeVarargs(value: IValueType*): Self = StObject.set(x, "sampleType", js.Array(value :_*))
+      inline def setSampleTypeVarargs(value: IValueType*): Self = StObject.set(x, "sampleType", js.Array(value :_*))
       
-      @scala.inline
-      def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
+      inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
       
-      @scala.inline
-      def setSampleVarargs(value: ISample*): Self = StObject.set(x, "sample", js.Array(value :_*))
+      inline def setSampleVarargs(value: ISample*): Self = StObject.set(x, "sample", js.Array(value :_*))
       
-      @scala.inline
-      def setStringTable(value: js.Array[String]): Self = StObject.set(x, "stringTable", value.asInstanceOf[js.Any])
+      inline def setStringTable(value: js.Array[String]): Self = StObject.set(x, "stringTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringTableNull: Self = StObject.set(x, "stringTable", null)
+      inline def setStringTableNull: Self = StObject.set(x, "stringTable", null)
       
-      @scala.inline
-      def setStringTableUndefined: Self = StObject.set(x, "stringTable", js.undefined)
+      inline def setStringTableUndefined: Self = StObject.set(x, "stringTable", js.undefined)
       
-      @scala.inline
-      def setStringTableVarargs(value: String*): Self = StObject.set(x, "stringTable", js.Array(value :_*))
+      inline def setStringTableVarargs(value: String*): Self = StObject.set(x, "stringTable", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeNanos(
+      inline def setTimeNanos(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "timeNanos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeNanosNull: Self = StObject.set(x, "timeNanos", null)
+      inline def setTimeNanosNull: Self = StObject.set(x, "timeNanos", null)
       
-      @scala.inline
-      def setTimeNanosUndefined: Self = StObject.set(x, "timeNanos", js.undefined)
+      inline def setTimeNanosUndefined: Self = StObject.set(x, "timeNanos", js.undefined)
     }
   }
   
@@ -1898,60 +1630,46 @@ object profiles {
   }
   object ISample {
     
-    @scala.inline
-    def apply(): ISample = {
+    inline def apply(): ISample = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISample]
     }
     
-    @scala.inline
-    implicit class ISampleMutableBuilder[Self <: ISample] (val x: Self) extends AnyVal {
+    extension [Self <: ISample](x: Self) {
       
-      @scala.inline
-      def setLabel(value: js.Array[ILabel]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: js.Array[ILabel]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelNull: Self = StObject.set(x, "label", null)
+      inline def setLabelNull: Self = StObject.set(x, "label", null)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLabelVarargs(value: ILabel*): Self = StObject.set(x, "label", js.Array(value :_*))
+      inline def setLabelVarargs(value: ILabel*): Self = StObject.set(x, "label", js.Array(value :_*))
       
-      @scala.inline
-      def setLocationId(
+      inline def setLocationId(
         value: js.Array[
               Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
             ]
       ): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationIdNull: Self = StObject.set(x, "locationId", null)
+      inline def setLocationIdNull: Self = StObject.set(x, "locationId", null)
       
-      @scala.inline
-      def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+      inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
       
-      @scala.inline
-      def setLocationIdVarargs(
+      inline def setLocationIdVarargs(
         value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
       ): Self = StObject.set(x, "locationId", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(
+      inline def setValue(
         value: js.Array[
               Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
             ]
       ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(
+      inline def setValueVarargs(
         value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
       ): Self = StObject.set(x, "value", js.Array(value :_*))
     }
@@ -1972,36 +1690,28 @@ object profiles {
   }
   object IValueType {
     
-    @scala.inline
-    def apply(): IValueType = {
+    inline def apply(): IValueType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IValueType]
     }
     
-    @scala.inline
-    implicit class IValueTypeMutableBuilder[Self <: IValueType] (val x: Self) extends AnyVal {
+    extension [Self <: IValueType](x: Self) {
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnit(
+      inline def setUnit(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitNull: Self = StObject.set(x, "unit", null)
+      inline def setUnitNull: Self = StObject.set(x, "unit", null)
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
 }

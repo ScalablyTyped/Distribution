@@ -18,22 +18,17 @@ trait MultiFactorUpdateSettings extends StObject {
 }
 object MultiFactorUpdateSettings {
   
-  @scala.inline
-  def apply(): MultiFactorUpdateSettings = {
+  inline def apply(): MultiFactorUpdateSettings = {
     val __obj = js.Dynamic.literal(enrolledFactors = null)
     __obj.asInstanceOf[MultiFactorUpdateSettings]
   }
   
-  @scala.inline
-  implicit class MultiFactorUpdateSettingsMutableBuilder[Self <: MultiFactorUpdateSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFactorUpdateSettings](x: Self) {
     
-    @scala.inline
-    def setEnrolledFactors(value: js.Array[UpdateMultiFactorInfoRequest]): Self = StObject.set(x, "enrolledFactors", value.asInstanceOf[js.Any])
+    inline def setEnrolledFactors(value: js.Array[UpdateMultiFactorInfoRequest]): Self = StObject.set(x, "enrolledFactors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrolledFactorsNull: Self = StObject.set(x, "enrolledFactors", null)
+    inline def setEnrolledFactorsNull: Self = StObject.set(x, "enrolledFactors", null)
     
-    @scala.inline
-    def setEnrolledFactorsVarargs(value: UpdateMultiFactorInfoRequest*): Self = StObject.set(x, "enrolledFactors", js.Array(value :_*))
+    inline def setEnrolledFactorsVarargs(value: UpdateMultiFactorInfoRequest*): Self = StObject.set(x, "enrolledFactors", js.Array(value :_*))
   }
 }

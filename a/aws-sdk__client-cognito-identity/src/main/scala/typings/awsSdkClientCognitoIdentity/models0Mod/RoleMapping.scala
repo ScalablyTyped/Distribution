@@ -33,8 +33,7 @@ trait RoleMapping extends StObject {
 }
 object RoleMapping {
   
-  @scala.inline
-  def apply(): RoleMapping = {
+  inline def apply(): RoleMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoleMapping]
   }
@@ -43,28 +42,20 @@ object RoleMapping {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: RoleMapping): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: RoleMapping): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class RoleMappingMutableBuilder[Self <: RoleMapping] (val x: Self) extends AnyVal {
+  extension [Self <: RoleMapping](x: Self) {
     
-    @scala.inline
-    def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
+    inline def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
+    inline def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
     
-    @scala.inline
-    def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
+    inline def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
+    inline def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
     
-    @scala.inline
-    def setType(value: RoleMappingType | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RoleMappingType | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

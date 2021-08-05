@@ -10,7 +10,7 @@ trait HTMLIFrame extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLIFrame_typekey")
+  /* private */ @JSName("MSHTML.HTMLIFrame_typekey")
   var MSHTMLDotHTMLIFrame_typekey: HTMLIFrame = js.native
   
   var accessKey: String = js.native

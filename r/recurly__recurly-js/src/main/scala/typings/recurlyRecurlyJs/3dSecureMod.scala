@@ -22,20 +22,16 @@ object `3dSecureMod` {
   }
   object RiskOptions {
     
-    @scala.inline
-    def apply(): RiskOptions = {
+    inline def apply(): RiskOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RiskOptions]
     }
     
-    @scala.inline
-    implicit class RiskOptionsMutableBuilder[Self <: RiskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RiskOptions](x: Self) {
       
-      @scala.inline
-      def setActionTokenId(value: String): Self = StObject.set(x, "actionTokenId", value.asInstanceOf[js.Any])
+      inline def setActionTokenId(value: String): Self = StObject.set(x, "actionTokenId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionTokenIdUndefined: Self = StObject.set(x, "actionTokenId", js.undefined)
+      inline def setActionTokenIdUndefined: Self = StObject.set(x, "actionTokenId", js.undefined)
     }
   }
   
@@ -59,10 +55,8 @@ object `3dSecureMod` {
   trait ThreeDSecureEvent extends StObject
   object ThreeDSecureEvent {
     
-    @scala.inline
-    def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
+    inline def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
     
-    @scala.inline
-    def token: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token = "token".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token]
+    inline def token: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token = "token".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token]
   }
 }

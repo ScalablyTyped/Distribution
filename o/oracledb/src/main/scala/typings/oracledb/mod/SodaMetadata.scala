@@ -50,73 +50,51 @@ trait SodaMetadata extends StObject {
 }
 object SodaMetadata {
   
-  @scala.inline
-  def apply(): SodaMetadata = {
+  inline def apply(): SodaMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SodaMetadata]
   }
   
-  @scala.inline
-  implicit class SodaMetadataMutableBuilder[Self <: SodaMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SodaMetadata](x: Self) {
     
-    @scala.inline
-    def setContentColumn(value: Cache): Self = StObject.set(x, "contentColumn", value.asInstanceOf[js.Any])
+    inline def setContentColumn(value: Cache): Self = StObject.set(x, "contentColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentColumnUndefined: Self = StObject.set(x, "contentColumn", js.undefined)
+    inline def setContentColumnUndefined: Self = StObject.set(x, "contentColumn", js.undefined)
     
-    @scala.inline
-    def setCreationTimeColumn(value: Name): Self = StObject.set(x, "creationTimeColumn", value.asInstanceOf[js.Any])
+    inline def setCreationTimeColumn(value: Name): Self = StObject.set(x, "creationTimeColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeColumnUndefined: Self = StObject.set(x, "creationTimeColumn", js.undefined)
+    inline def setCreationTimeColumnUndefined: Self = StObject.set(x, "creationTimeColumn", js.undefined)
     
-    @scala.inline
-    def setKeyColumn(value: AssignmentMethod): Self = StObject.set(x, "keyColumn", value.asInstanceOf[js.Any])
+    inline def setKeyColumn(value: AssignmentMethod): Self = StObject.set(x, "keyColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyColumnUndefined: Self = StObject.set(x, "keyColumn", js.undefined)
+    inline def setKeyColumnUndefined: Self = StObject.set(x, "keyColumn", js.undefined)
     
-    @scala.inline
-    def setLastModifiedColumn(value: Index): Self = StObject.set(x, "lastModifiedColumn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedColumn(value: Index): Self = StObject.set(x, "lastModifiedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedColumnUndefined: Self = StObject.set(x, "lastModifiedColumn", js.undefined)
+    inline def setLastModifiedColumnUndefined: Self = StObject.set(x, "lastModifiedColumn", js.undefined)
     
-    @scala.inline
-    def setMediaTypeColumn(value: Name): Self = StObject.set(x, "mediaTypeColumn", value.asInstanceOf[js.Any])
+    inline def setMediaTypeColumn(value: Name): Self = StObject.set(x, "mediaTypeColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeColumnUndefined: Self = StObject.set(x, "mediaTypeColumn", js.undefined)
+    inline def setMediaTypeColumnUndefined: Self = StObject.set(x, "mediaTypeColumn", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     
-    @scala.inline
-    def setVersionColumn(value: Method): Self = StObject.set(x, "versionColumn", value.asInstanceOf[js.Any])
+    inline def setVersionColumn(value: Method): Self = StObject.set(x, "versionColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionColumnUndefined: Self = StObject.set(x, "versionColumn", js.undefined)
+    inline def setVersionColumnUndefined: Self = StObject.set(x, "versionColumn", js.undefined)
     
-    @scala.inline
-    def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
+    inline def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewNameUndefined: Self = StObject.set(x, "viewName", js.undefined)
+    inline def setViewNameUndefined: Self = StObject.set(x, "viewName", js.undefined)
   }
 }

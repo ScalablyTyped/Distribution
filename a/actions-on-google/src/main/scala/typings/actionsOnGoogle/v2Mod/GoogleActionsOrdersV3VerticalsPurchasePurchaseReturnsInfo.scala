@@ -23,31 +23,23 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo extends StObject
 }
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfoMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo](x: Self) {
     
-    @scala.inline
-    def setDaysToReturn(value: Double): Self = StObject.set(x, "daysToReturn", value.asInstanceOf[js.Any])
+    inline def setDaysToReturn(value: Double): Self = StObject.set(x, "daysToReturn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysToReturnUndefined: Self = StObject.set(x, "daysToReturn", js.undefined)
+    inline def setDaysToReturnUndefined: Self = StObject.set(x, "daysToReturn", js.undefined)
     
-    @scala.inline
-    def setIsReturnable(value: Boolean): Self = StObject.set(x, "isReturnable", value.asInstanceOf[js.Any])
+    inline def setIsReturnable(value: Boolean): Self = StObject.set(x, "isReturnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReturnableUndefined: Self = StObject.set(x, "isReturnable", js.undefined)
+    inline def setIsReturnableUndefined: Self = StObject.set(x, "isReturnable", js.undefined)
     
-    @scala.inline
-    def setPolicyUrl(value: String): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
+    inline def setPolicyUrl(value: String): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
+    inline def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
   }
 }

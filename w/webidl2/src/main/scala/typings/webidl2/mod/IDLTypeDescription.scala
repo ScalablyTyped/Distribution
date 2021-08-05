@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDLTypeDescription extends StObject
 object IDLTypeDescription {
   
-  @scala.inline
-  def FrozenArrayTypeDescription(
+  inline def FrozenArrayTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -24,8 +23,7 @@ object IDLTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.FrozenArrayTypeDescription]
   }
   
-  @scala.inline
-  def ObservableArrayTypeDescription(
+  inline def ObservableArrayTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -36,8 +34,7 @@ object IDLTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.ObservableArrayTypeDescription]
   }
   
-  @scala.inline
-  def PromiseTypeDescription(
+  inline def PromiseTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -48,8 +45,7 @@ object IDLTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.PromiseTypeDescription]
   }
   
-  @scala.inline
-  def RecordTypeDescription(
+  inline def RecordTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
     nullable: Boolean,
@@ -60,8 +56,7 @@ object IDLTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.RecordTypeDescription]
   }
   
-  @scala.inline
-  def SequenceTypeDescription(
+  inline def SequenceTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -72,8 +67,7 @@ object IDLTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.SequenceTypeDescription]
   }
   
-  @scala.inline
-  def SingleTypeDescription(
+  inline def SingleTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: String,
     nullable: Boolean,
@@ -84,8 +78,7 @@ object IDLTypeDescription {
     __obj.asInstanceOf[typings.webidl2.mod.SingleTypeDescription]
   }
   
-  @scala.inline
-  def UnionTypeDescription(
+  inline def UnionTypeDescription(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,

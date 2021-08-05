@@ -23,31 +23,23 @@ trait EntityRecognizerFilter extends StObject {
 }
 object EntityRecognizerFilter {
   
-  @scala.inline
-  def apply(): EntityRecognizerFilter = {
+  inline def apply(): EntityRecognizerFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityRecognizerFilter]
   }
   
-  @scala.inline
-  implicit class EntityRecognizerFilterMutableBuilder[Self <: EntityRecognizerFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EntityRecognizerFilter](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ModelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ModelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setSubmitTimeAfter(value: Timestamp): Self = StObject.set(x, "SubmitTimeAfter", value.asInstanceOf[js.Any])
+    inline def setSubmitTimeAfter(value: Timestamp): Self = StObject.set(x, "SubmitTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeAfterUndefined: Self = StObject.set(x, "SubmitTimeAfter", js.undefined)
+    inline def setSubmitTimeAfterUndefined: Self = StObject.set(x, "SubmitTimeAfter", js.undefined)
     
-    @scala.inline
-    def setSubmitTimeBefore(value: Timestamp): Self = StObject.set(x, "SubmitTimeBefore", value.asInstanceOf[js.Any])
+    inline def setSubmitTimeBefore(value: Timestamp): Self = StObject.set(x, "SubmitTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeBeforeUndefined: Self = StObject.set(x, "SubmitTimeBefore", js.undefined)
+    inline def setSubmitTimeBeforeUndefined: Self = StObject.set(x, "SubmitTimeBefore", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteAssessmentTargetRequest extends StObject {
 }
 object DeleteAssessmentTargetRequest {
   
-  @scala.inline
-  def apply(assessmentTargetArn: Arn): DeleteAssessmentTargetRequest = {
+  inline def apply(assessmentTargetArn: Arn): DeleteAssessmentTargetRequest = {
     val __obj = js.Dynamic.literal(assessmentTargetArn = assessmentTargetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAssessmentTargetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAssessmentTargetRequestMutableBuilder[Self <: DeleteAssessmentTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAssessmentTargetRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
   }
 }

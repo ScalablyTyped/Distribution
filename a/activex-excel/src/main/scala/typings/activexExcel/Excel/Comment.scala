@@ -15,7 +15,7 @@ trait Comment extends StObject {
   
   def Delete(): Unit = js.native
   
-  @JSName("Excel.Comment_typekey")
+  /* private */ @JSName("Excel.Comment_typekey")
   var ExcelDotComment_typekey: Comment = js.native
   
   def Next(): Comment = js.native

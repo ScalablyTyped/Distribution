@@ -12,16 +12,13 @@ trait PickImplanimation extends StObject {
 }
 object PickImplanimation {
   
-  @scala.inline
-  def apply(animation: AnimationSettings): PickImplanimation = {
+  inline def apply(animation: AnimationSettings): PickImplanimation = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplanimation]
   }
   
-  @scala.inline
-  implicit class PickImplanimationMutableBuilder[Self <: PickImplanimation] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplanimation](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: AnimationSettings): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationSettings): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
   }
 }

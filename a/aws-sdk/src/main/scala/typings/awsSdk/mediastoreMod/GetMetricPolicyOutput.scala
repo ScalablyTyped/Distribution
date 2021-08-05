@@ -13,16 +13,13 @@ trait GetMetricPolicyOutput extends StObject {
 }
 object GetMetricPolicyOutput {
   
-  @scala.inline
-  def apply(MetricPolicy: MetricPolicy): GetMetricPolicyOutput = {
+  inline def apply(MetricPolicy: MetricPolicy): GetMetricPolicyOutput = {
     val __obj = js.Dynamic.literal(MetricPolicy = MetricPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetMetricPolicyOutputMutableBuilder[Self <: GetMetricPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setMetricPolicy(value: MetricPolicy): Self = StObject.set(x, "MetricPolicy", value.asInstanceOf[js.Any])
+    inline def setMetricPolicy(value: MetricPolicy): Self = StObject.set(x, "MetricPolicy", value.asInstanceOf[js.Any])
   }
 }

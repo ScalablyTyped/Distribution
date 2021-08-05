@@ -16,8 +16,7 @@ object mod {
     * @param redactOptions.strict The strict option, when set to true, will cause the redactor function to throw if instead of an object it finds a primitive.
     * @returns Redacted value from input
     */
-  @scala.inline
-  def apply(redactOptions: RedactOptions): redactFn = ^.asInstanceOf[js.Dynamic].apply(redactOptions.asInstanceOf[js.Any]).asInstanceOf[redactFn]
+  inline def apply(redactOptions: RedactOptions): redactFn = ^.asInstanceOf[js.Dynamic].apply(redactOptions.asInstanceOf[js.Any]).asInstanceOf[redactFn]
   
   @JSImport("fast-redact", JSImport.Namespace)
   @js.native
@@ -42,50 +41,36 @@ object mod {
   }
   object RedactOptions {
     
-    @scala.inline
-    def apply(paths: js.Array[String]): RedactOptions = {
+    inline def apply(paths: js.Array[String]): RedactOptions = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedactOptions]
     }
     
-    @scala.inline
-    implicit class RedactOptionsMutableBuilder[Self <: RedactOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RedactOptions](x: Self) {
       
-      @scala.inline
-      def setCensor(value: String | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
+      inline def setCensor(value: String | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCensorFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
+      inline def setCensorFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
+      inline def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: Boolean | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+      inline def setSerialize(value: Boolean | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializeFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerializeFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   

@@ -18,19 +18,15 @@ trait DeleteProvisioningTemplateVersionRequest extends StObject {
 }
 object DeleteProvisioningTemplateVersionRequest {
   
-  @scala.inline
-  def apply(templateName: TemplateName, versionId: TemplateVersionId): DeleteProvisioningTemplateVersionRequest = {
+  inline def apply(templateName: TemplateName, versionId: TemplateVersionId): DeleteProvisioningTemplateVersionRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any], versionId = versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProvisioningTemplateVersionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProvisioningTemplateVersionRequestMutableBuilder[Self <: DeleteProvisioningTemplateVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProvisioningTemplateVersionRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: TemplateVersionId): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: TemplateVersionId): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

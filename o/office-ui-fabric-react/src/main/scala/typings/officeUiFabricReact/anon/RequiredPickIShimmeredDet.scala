@@ -11,16 +11,13 @@ trait RequiredPickIShimmeredDet extends StObject {
 }
 object RequiredPickIShimmeredDet {
   
-  @scala.inline
-  def apply(theme: js.Any): RequiredPickIShimmeredDet = {
+  inline def apply(theme: js.Any): RequiredPickIShimmeredDet = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredPickIShimmeredDet]
   }
   
-  @scala.inline
-  implicit class RequiredPickIShimmeredDetMutableBuilder[Self <: RequiredPickIShimmeredDet] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredPickIShimmeredDet](x: Self) {
     
-    @scala.inline
-    def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

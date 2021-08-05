@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCopyPictureFormat extends StObject
 object XlCopyPictureFormat {
   
-  @scala.inline
-  def xlBitmap: `2` = 2.asInstanceOf[`2`]
+  inline def xlBitmap: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPicture: `-4147` = -4147.asInstanceOf[`-4147`]
+  inline def xlPicture: `-4147` = -4147.asInstanceOf[`-4147`]
 }

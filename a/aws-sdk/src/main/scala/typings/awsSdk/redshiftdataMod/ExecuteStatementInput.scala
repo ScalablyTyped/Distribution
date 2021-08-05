@@ -43,49 +43,35 @@ trait ExecuteStatementInput extends StObject {
 }
 object ExecuteStatementInput {
   
-  @scala.inline
-  def apply(ClusterIdentifier: Location, Sql: StatementString): ExecuteStatementInput = {
+  inline def apply(ClusterIdentifier: Location, Sql: StatementString): ExecuteStatementInput = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], Sql = Sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteStatementInput]
   }
   
-  @scala.inline
-  implicit class ExecuteStatementInputMutableBuilder[Self <: ExecuteStatementInput] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteStatementInput](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
     
-    @scala.inline
-    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
+    inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
+    inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
-    @scala.inline
-    def setSql(value: StatementString): Self = StObject.set(x, "Sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: StatementString): Self = StObject.set(x, "Sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementName(value: StatementNameString): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
+    inline def setStatementName(value: StatementNameString): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementNameUndefined: Self = StObject.set(x, "StatementName", js.undefined)
+    inline def setStatementNameUndefined: Self = StObject.set(x, "StatementName", js.undefined)
     
-    @scala.inline
-    def setWithEvent(value: Boolean): Self = StObject.set(x, "WithEvent", value.asInstanceOf[js.Any])
+    inline def setWithEvent(value: Boolean): Self = StObject.set(x, "WithEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithEventUndefined: Self = StObject.set(x, "WithEvent", js.undefined)
+    inline def setWithEventUndefined: Self = StObject.set(x, "WithEvent", js.undefined)
   }
 }

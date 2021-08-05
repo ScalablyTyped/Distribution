@@ -39,23 +39,18 @@ trait ChartActivatedEventArgs extends StObject {
 }
 object ChartActivatedEventArgs {
   
-  @scala.inline
-  def apply(chartId: String, worksheetId: String): ChartActivatedEventArgs = {
+  inline def apply(chartId: String, worksheetId: String): ChartActivatedEventArgs = {
     val __obj = js.Dynamic.literal(chartId = chartId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ChartActivated")
     __obj.asInstanceOf[ChartActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ChartActivatedEventArgsMutableBuilder[Self <: ChartActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ChartActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setChartId(value: String): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    inline def setChartId(value: String): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ChartActivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartActivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

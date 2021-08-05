@@ -12,19 +12,15 @@ trait DataMarkerTextCfg
 }
 object DataMarkerTextCfg {
   
-  @scala.inline
-  def apply(content: String | Double): DataMarkerTextCfg = {
+  inline def apply(content: String | Double): DataMarkerTextCfg = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataMarkerTextCfg]
   }
   
-  @scala.inline
-  implicit class DataMarkerTextCfgMutableBuilder[Self <: DataMarkerTextCfg] (val x: Self) extends AnyVal {
+  extension [Self <: DataMarkerTextCfg](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
   }
 }

@@ -25,20 +25,16 @@ trait KeyboardInputEvent
 }
 object KeyboardInputEvent {
   
-  @scala.inline
-  def apply(keyCode: String, `type`: keyDown | keyUp | char): KeyboardInputEvent = {
+  inline def apply(keyCode: String, `type`: keyDown | keyUp | char): KeyboardInputEvent = {
     val __obj = js.Dynamic.literal(keyCode = keyCode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardInputEvent]
   }
   
-  @scala.inline
-  implicit class KeyboardInputEventMutableBuilder[Self <: KeyboardInputEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardInputEvent](x: Self) {
     
-    @scala.inline
-    def setKeyCode(value: String): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+    inline def setKeyCode(value: String): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: keyDown | keyUp | char): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: keyDown | keyUp | char): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait SubscribeToEventRequest extends StObject {
 }
 object SubscribeToEventRequest {
   
-  @scala.inline
-  def apply(event: InspectorEvent, resourceArn: Arn, topicArn: Arn): SubscribeToEventRequest = {
+  inline def apply(event: InspectorEvent, resourceArn: Arn, topicArn: Arn): SubscribeToEventRequest = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeToEventRequest]
   }
   
-  @scala.inline
-  implicit class SubscribeToEventRequestMutableBuilder[Self <: SubscribeToEventRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeToEventRequest](x: Self) {
     
-    @scala.inline
-    def setEvent(value: InspectorEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: InspectorEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArn(value: Arn): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: Arn): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait SignedUrlKey extends StObject {
 }
 object SignedUrlKey {
   
-  @scala.inline
-  def apply(): SignedUrlKey = {
+  inline def apply(): SignedUrlKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignedUrlKey]
   }
   
-  @scala.inline
-  implicit class SignedUrlKeyMutableBuilder[Self <: SignedUrlKey] (val x: Self) extends AnyVal {
+  extension [Self <: SignedUrlKey](x: Self) {
     
-    @scala.inline
-    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
+    inline def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
-    @scala.inline
-    def setKeyValue(value: String): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
+    inline def setKeyValue(value: String): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
+    inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
   }
 }

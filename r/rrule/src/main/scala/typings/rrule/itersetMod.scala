@@ -14,16 +14,14 @@ object itersetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iterSet[M /* <: QueryMethodTypes */](
+  inline def iterSet[M /* <: QueryMethodTypes */](
     iterResult: default[M],
     _rrule: js.Array[typings.rrule.rruleMod.default],
     _exrule: js.Array[typings.rrule.rruleMod.default],
     _rdate: js.Array[Date],
     _exdate: js.Array[Date]
   ): IterResultType[M] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterSet")(iterResult.asInstanceOf[js.Any], _rrule.asInstanceOf[js.Any], _exrule.asInstanceOf[js.Any], _rdate.asInstanceOf[js.Any], _exdate.asInstanceOf[js.Any])).asInstanceOf[IterResultType[M]]
-  @scala.inline
-  def iterSet[M /* <: QueryMethodTypes */](
+  inline def iterSet[M /* <: QueryMethodTypes */](
     iterResult: default[M],
     _rrule: js.Array[typings.rrule.rruleMod.default],
     _exrule: js.Array[typings.rrule.rruleMod.default],

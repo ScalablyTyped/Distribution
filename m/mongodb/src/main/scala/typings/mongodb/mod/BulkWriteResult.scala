@@ -85,8 +85,7 @@ trait BulkWriteResult extends StObject {
 }
 object BulkWriteResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getInsertedIds: () => js.Array[js.Object],
     getLastOp: () => js.Object,
     getRawResponse: () => js.Object,
@@ -108,55 +107,38 @@ object BulkWriteResult {
     __obj.asInstanceOf[BulkWriteResult]
   }
   
-  @scala.inline
-  implicit class BulkWriteResultMutableBuilder[Self <: BulkWriteResult] (val x: Self) extends AnyVal {
+  extension [Self <: BulkWriteResult](x: Self) {
     
-    @scala.inline
-    def setGetInsertedIds(value: () => js.Array[js.Object]): Self = StObject.set(x, "getInsertedIds", js.Any.fromFunction0(value))
+    inline def setGetInsertedIds(value: () => js.Array[js.Object]): Self = StObject.set(x, "getInsertedIds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastOp(value: () => js.Object): Self = StObject.set(x, "getLastOp", js.Any.fromFunction0(value))
+    inline def setGetLastOp(value: () => js.Object): Self = StObject.set(x, "getLastOp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRawResponse(value: () => js.Object): Self = StObject.set(x, "getRawResponse", js.Any.fromFunction0(value))
+    inline def setGetRawResponse(value: () => js.Object): Self = StObject.set(x, "getRawResponse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpsertedIdAt(value: scala.Double => BulkWriteResultUpsertedIdObject): Self = StObject.set(x, "getUpsertedIdAt", js.Any.fromFunction1(value))
+    inline def setGetUpsertedIdAt(value: scala.Double => BulkWriteResultUpsertedIdObject): Self = StObject.set(x, "getUpsertedIdAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUpsertedIds(value: () => js.Array[BulkWriteResultUpsertedIdObject]): Self = StObject.set(x, "getUpsertedIds", js.Any.fromFunction0(value))
+    inline def setGetUpsertedIds(value: () => js.Array[BulkWriteResultUpsertedIdObject]): Self = StObject.set(x, "getUpsertedIds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWriteConcernError(value: () => WriteConcernError): Self = StObject.set(x, "getWriteConcernError", js.Any.fromFunction0(value))
+    inline def setGetWriteConcernError(value: () => WriteConcernError): Self = StObject.set(x, "getWriteConcernError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWriteErrorAt(value: scala.Double => WriteError): Self = StObject.set(x, "getWriteErrorAt", js.Any.fromFunction1(value))
+    inline def setGetWriteErrorAt(value: scala.Double => WriteError): Self = StObject.set(x, "getWriteErrorAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWriteErrorCount(value: () => scala.Double): Self = StObject.set(x, "getWriteErrorCount", js.Any.fromFunction0(value))
+    inline def setGetWriteErrorCount(value: () => scala.Double): Self = StObject.set(x, "getWriteErrorCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWriteErrors(value: () => js.Array[js.Object]): Self = StObject.set(x, "getWriteErrors", js.Any.fromFunction0(value))
+    inline def setGetWriteErrors(value: () => js.Array[js.Object]): Self = StObject.set(x, "getWriteErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasWriteErrors(value: () => Boolean): Self = StObject.set(x, "hasWriteErrors", js.Any.fromFunction0(value))
+    inline def setHasWriteErrors(value: () => Boolean): Self = StObject.set(x, "hasWriteErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNInserted(value: scala.Double): Self = StObject.set(x, "nInserted", value.asInstanceOf[js.Any])
+    inline def setNInserted(value: scala.Double): Self = StObject.set(x, "nInserted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNMatched(value: scala.Double): Self = StObject.set(x, "nMatched", value.asInstanceOf[js.Any])
+    inline def setNMatched(value: scala.Double): Self = StObject.set(x, "nMatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNModified(value: scala.Double): Self = StObject.set(x, "nModified", value.asInstanceOf[js.Any])
+    inline def setNModified(value: scala.Double): Self = StObject.set(x, "nModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNRemoved(value: scala.Double): Self = StObject.set(x, "nRemoved", value.asInstanceOf[js.Any])
+    inline def setNRemoved(value: scala.Double): Self = StObject.set(x, "nRemoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUpserted(value: scala.Double): Self = StObject.set(x, "nUpserted", value.asInstanceOf[js.Any])
+    inline def setNUpserted(value: scala.Double): Self = StObject.set(x, "nUpserted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

@@ -31,8 +31,7 @@ trait ASPxClientDashboardItemRequestUnderlyingDataParameters extends StObject {
 }
 object ASPxClientDashboardItemRequestUnderlyingDataParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AxisPoints: js.Array[ASPxClientDashboardItemDataAxisPoint],
     DataMembers: js.Array[String],
     UniqueValuesByAxisName: js.Any,
@@ -42,25 +41,18 @@ object ASPxClientDashboardItemRequestUnderlyingDataParameters {
     __obj.asInstanceOf[ASPxClientDashboardItemRequestUnderlyingDataParameters]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemRequestUnderlyingDataParametersMutableBuilder[Self <: ASPxClientDashboardItemRequestUnderlyingDataParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemRequestUnderlyingDataParameters](x: Self) {
     
-    @scala.inline
-    def setAxisPoints(value: js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "AxisPoints", value.asInstanceOf[js.Any])
+    inline def setAxisPoints(value: js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "AxisPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisPointsVarargs(value: ASPxClientDashboardItemDataAxisPoint*): Self = StObject.set(x, "AxisPoints", js.Array(value :_*))
+    inline def setAxisPointsVarargs(value: ASPxClientDashboardItemDataAxisPoint*): Self = StObject.set(x, "AxisPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setDataMembers(value: js.Array[String]): Self = StObject.set(x, "DataMembers", value.asInstanceOf[js.Any])
+    inline def setDataMembers(value: js.Array[String]): Self = StObject.set(x, "DataMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataMembersVarargs(value: String*): Self = StObject.set(x, "DataMembers", js.Array(value :_*))
+    inline def setDataMembersVarargs(value: String*): Self = StObject.set(x, "DataMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setUniqueValuesByAxisName(value: js.Any): Self = StObject.set(x, "UniqueValuesByAxisName", value.asInstanceOf[js.Any])
+    inline def setUniqueValuesByAxisName(value: js.Any): Self = StObject.set(x, "UniqueValuesByAxisName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesByAxisName(value: js.Any): Self = StObject.set(x, "ValuesByAxisName", value.asInstanceOf[js.Any])
+    inline def setValuesByAxisName(value: js.Any): Self = StObject.set(x, "ValuesByAxisName", value.asInstanceOf[js.Any])
   }
 }

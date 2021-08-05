@@ -10,19 +10,15 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(Result: js.Array[Location]): Result = {
+  inline def apply(Result: js.Array[Location]): Result = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Array[Location]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[Location]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: Location*): Self = StObject.set(x, "Result", js.Array(value :_*))
+    inline def setResultVarargs(value: Location*): Self = StObject.set(x, "Result", js.Array(value :_*))
   }
 }

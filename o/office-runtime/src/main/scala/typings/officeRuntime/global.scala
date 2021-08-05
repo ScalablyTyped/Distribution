@@ -39,10 +39,8 @@ object global {
       * @param url Must be a string.
       * @param options Optional parameter. Must be of type DisplayWebDialogOptions.
       */
-    @scala.inline
-    def displayWebDialog(url: String): js.Promise[Dialog] = ^.asInstanceOf[js.Dynamic].applyDynamic("displayWebDialog")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Dialog]]
-    @scala.inline
-    def displayWebDialog(url: String, options: DisplayWebDialogOptions): js.Promise[Dialog] = (^.asInstanceOf[js.Dynamic].applyDynamic("displayWebDialog")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Dialog]]
+    inline def displayWebDialog(url: String): js.Promise[Dialog] = ^.asInstanceOf[js.Dynamic].applyDynamic("displayWebDialog")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Dialog]]
+    inline def displayWebDialog(url: String, options: DisplayWebDialogOptions): js.Promise[Dialog] = (^.asInstanceOf[js.Dynamic].applyDynamic("displayWebDialog")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Dialog]]
     
     /**
       * Asynchronous, global, and persistent key-value storage.

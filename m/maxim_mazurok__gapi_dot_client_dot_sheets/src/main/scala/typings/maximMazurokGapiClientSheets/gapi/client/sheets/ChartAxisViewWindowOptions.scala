@@ -17,31 +17,23 @@ trait ChartAxisViewWindowOptions extends StObject {
 }
 object ChartAxisViewWindowOptions {
   
-  @scala.inline
-  def apply(): ChartAxisViewWindowOptions = {
+  inline def apply(): ChartAxisViewWindowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAxisViewWindowOptions]
   }
   
-  @scala.inline
-  implicit class ChartAxisViewWindowOptionsMutableBuilder[Self <: ChartAxisViewWindowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxisViewWindowOptions](x: Self) {
     
-    @scala.inline
-    def setViewWindowMax(value: Double): Self = StObject.set(x, "viewWindowMax", value.asInstanceOf[js.Any])
+    inline def setViewWindowMax(value: Double): Self = StObject.set(x, "viewWindowMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewWindowMaxUndefined: Self = StObject.set(x, "viewWindowMax", js.undefined)
+    inline def setViewWindowMaxUndefined: Self = StObject.set(x, "viewWindowMax", js.undefined)
     
-    @scala.inline
-    def setViewWindowMin(value: Double): Self = StObject.set(x, "viewWindowMin", value.asInstanceOf[js.Any])
+    inline def setViewWindowMin(value: Double): Self = StObject.set(x, "viewWindowMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewWindowMinUndefined: Self = StObject.set(x, "viewWindowMin", js.undefined)
+    inline def setViewWindowMinUndefined: Self = StObject.set(x, "viewWindowMin", js.undefined)
     
-    @scala.inline
-    def setViewWindowMode(value: String): Self = StObject.set(x, "viewWindowMode", value.asInstanceOf[js.Any])
+    inline def setViewWindowMode(value: String): Self = StObject.set(x, "viewWindowMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewWindowModeUndefined: Self = StObject.set(x, "viewWindowMode", js.undefined)
+    inline def setViewWindowModeUndefined: Self = StObject.set(x, "viewWindowMode", js.undefined)
   }
 }

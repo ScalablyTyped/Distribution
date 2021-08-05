@@ -18,19 +18,15 @@ trait CreateSAMLProviderRequest extends StObject {
 }
 object CreateSAMLProviderRequest {
   
-  @scala.inline
-  def apply(Name: SAMLProviderNameType, SAMLMetadataDocument: SAMLMetadataDocumentType): CreateSAMLProviderRequest = {
+  inline def apply(Name: SAMLProviderNameType, SAMLMetadataDocument: SAMLMetadataDocumentType): CreateSAMLProviderRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SAMLMetadataDocument = SAMLMetadataDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSAMLProviderRequest]
   }
   
-  @scala.inline
-  implicit class CreateSAMLProviderRequestMutableBuilder[Self <: CreateSAMLProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSAMLProviderRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SAMLProviderNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SAMLProviderNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = StObject.set(x, "SAMLMetadataDocument", value.asInstanceOf[js.Any])
+    inline def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = StObject.set(x, "SAMLMetadataDocument", value.asInstanceOf[js.Any])
   }
 }

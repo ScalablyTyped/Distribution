@@ -29,11 +29,11 @@ object defaultStrategyMod {
     def this(maxAttemptsProvider: Provider[Double]) = this()
     def this(maxAttemptsProvider: Provider[Double], options: StandardRetryStrategyOptions) = this()
     
-    var delayDecider: js.Any = js.native
+    /* private */ var delayDecider: js.Any = js.native
     
-    var getMaxAttempts: js.Any = js.native
+    /* private */ var getMaxAttempts: js.Any = js.native
     
-    val maxAttemptsProvider: js.Any = js.native
+    /* private */ val maxAttemptsProvider: js.Any = js.native
     
     /**
       * the retry behavior the will invoke the next handler and handle the retry accordingly.
@@ -43,11 +43,11 @@ object defaultStrategyMod {
     /* CompleteClass */
     override def retry[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: FinalizeHandler[Input, Output], args: FinalizeHandlerArguments[Input]): js.Promise[FinalizeHandlerOutput[Output]] = js.native
     
-    var retryDecider: js.Any = js.native
+    /* private */ var retryDecider: js.Any = js.native
     
-    var retryQuota: js.Any = js.native
+    /* private */ var retryQuota: js.Any = js.native
     
-    var shouldRetry: js.Any = js.native
+    /* private */ var shouldRetry: js.Any = js.native
   }
   
   type DelayDecider = js.Function2[/* delayBase */ Double, /* attempts */ Double, Double]
@@ -85,32 +85,24 @@ object defaultStrategyMod {
   }
   object StandardRetryStrategyOptions {
     
-    @scala.inline
-    def apply(): StandardRetryStrategyOptions = {
+    inline def apply(): StandardRetryStrategyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StandardRetryStrategyOptions]
     }
     
-    @scala.inline
-    implicit class StandardRetryStrategyOptionsMutableBuilder[Self <: StandardRetryStrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StandardRetryStrategyOptions](x: Self) {
       
-      @scala.inline
-      def setDelayDecider(value: (/* delayBase */ Double, /* attempts */ Double) => Double): Self = StObject.set(x, "delayDecider", js.Any.fromFunction2(value))
+      inline def setDelayDecider(value: (/* delayBase */ Double, /* attempts */ Double) => Double): Self = StObject.set(x, "delayDecider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDelayDeciderUndefined: Self = StObject.set(x, "delayDecider", js.undefined)
+      inline def setDelayDeciderUndefined: Self = StObject.set(x, "delayDecider", js.undefined)
       
-      @scala.inline
-      def setRetryDecider(value: /* error */ SdkError => Boolean): Self = StObject.set(x, "retryDecider", js.Any.fromFunction1(value))
+      inline def setRetryDecider(value: /* error */ SdkError => Boolean): Self = StObject.set(x, "retryDecider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRetryDeciderUndefined: Self = StObject.set(x, "retryDecider", js.undefined)
+      inline def setRetryDeciderUndefined: Self = StObject.set(x, "retryDecider", js.undefined)
       
-      @scala.inline
-      def setRetryQuota(value: RetryQuota): Self = StObject.set(x, "retryQuota", value.asInstanceOf[js.Any])
+      inline def setRetryQuota(value: RetryQuota): Self = StObject.set(x, "retryQuota", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryQuotaUndefined: Self = StObject.set(x, "retryQuota", js.undefined)
+      inline def setRetryQuotaUndefined: Self = StObject.set(x, "retryQuota", js.undefined)
     }
   }
 }

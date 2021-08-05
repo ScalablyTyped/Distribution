@@ -29,8 +29,7 @@ trait CPAttributeAsync extends StObject {
 }
 object CPAttributeAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: (// tslint:disable-line ban-types
   js.Promise[Unpacked[ValuesOf[CADESCOM_ATTRIBUTE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_ATTRIBUTE]],
     Value: (// tslint:disable-line ban-types
@@ -45,52 +44,42 @@ object CPAttributeAsync {
     __obj.asInstanceOf[CPAttributeAsync]
   }
   
-  @scala.inline
-  implicit class CPAttributeAsyncMutableBuilder[Self <: CPAttributeAsync] (val x: Self) extends AnyVal {
+  extension [Self <: CPAttributeAsync](x: Self) {
     
-    @scala.inline
-    def setName(
+    inline def setName(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CADESCOM_ATTRIBUTE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_ATTRIBUTE]]
     ): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFunction1(
+    inline def setNameFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_Name(value: ValuesOf[CADESCOM_ATTRIBUTE] => js.Promise[Unit]): Self = StObject.set(x, "propset_Name", js.Any.fromFunction1(value))
+    inline def setPropset_Name(value: ValuesOf[CADESCOM_ATTRIBUTE] => js.Promise[Unit]): Self = StObject.set(x, "propset_Name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_Value(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "propset_Value", js.Any.fromFunction1(value))
+    inline def setPropset_Value(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "propset_Value", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropset_ValueEncoding(value: ValuesOf[CAPICOM_ENCODING_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_ValueEncoding", js.Any.fromFunction1(value))
+    inline def setPropset_ValueEncoding(value: ValuesOf[CAPICOM_ENCODING_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_ValueEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[js.Any]]) | PromisifiedFunction[js.Any]
     ): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueEncoding(
+    inline def setValueEncoding(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[ValuesOf[CAPICOM_ENCODING_TYPE]]]) | PromisifiedFunction[ValuesOf[CAPICOM_ENCODING_TYPE]]
     ): Self = StObject.set(x, "ValueEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueEncodingFunction1(
+    inline def setValueEncodingFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "ValueEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueFunction1(
+    inline def setValueFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]

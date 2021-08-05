@@ -11,19 +11,15 @@ trait Waitable extends StObject {
 }
 object Waitable {
   
-  @scala.inline
-  def apply(): Waitable = {
+  inline def apply(): Waitable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Waitable]
   }
   
-  @scala.inline
-  implicit class WaitableMutableBuilder[Self <: Waitable] (val x: Self) extends AnyVal {
+  extension [Self <: Waitable](x: Self) {
     
-    @scala.inline
-    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+    inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

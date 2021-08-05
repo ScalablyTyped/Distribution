@@ -27,31 +27,23 @@ trait SchemaApplicationCategory extends StObject {
 }
 object SchemaApplicationCategory {
   
-  @scala.inline
-  def apply(): SchemaApplicationCategory = {
+  inline def apply(): SchemaApplicationCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApplicationCategory]
   }
   
-  @scala.inline
-  implicit class SchemaApplicationCategoryMutableBuilder[Self <: SchemaApplicationCategory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApplicationCategory](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }
 }

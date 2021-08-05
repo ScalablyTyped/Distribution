@@ -18,28 +18,21 @@ trait ReservedNodesMessage extends StObject {
 }
 object ReservedNodesMessage {
   
-  @scala.inline
-  def apply(): ReservedNodesMessage = {
+  inline def apply(): ReservedNodesMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedNodesMessage]
   }
   
-  @scala.inline
-  implicit class ReservedNodesMessageMutableBuilder[Self <: ReservedNodesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedNodesMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReservedNodes(value: ReservedNodeList): Self = StObject.set(x, "ReservedNodes", value.asInstanceOf[js.Any])
+    inline def setReservedNodes(value: ReservedNodeList): Self = StObject.set(x, "ReservedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedNodesUndefined: Self = StObject.set(x, "ReservedNodes", js.undefined)
+    inline def setReservedNodesUndefined: Self = StObject.set(x, "ReservedNodes", js.undefined)
     
-    @scala.inline
-    def setReservedNodesVarargs(value: ReservedNode*): Self = StObject.set(x, "ReservedNodes", js.Array(value :_*))
+    inline def setReservedNodesVarargs(value: ReservedNode*): Self = StObject.set(x, "ReservedNodes", js.Array(value :_*))
   }
 }

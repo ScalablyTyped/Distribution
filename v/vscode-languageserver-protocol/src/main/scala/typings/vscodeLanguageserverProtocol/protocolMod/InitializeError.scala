@@ -16,8 +16,7 @@ trait InitializeError extends StObject {
 }
 object InitializeError {
   
-  @scala.inline
-  def apply(retry: Boolean): InitializeError = {
+  inline def apply(retry: Boolean): InitializeError = {
     val __obj = js.Dynamic.literal(retry = retry.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeError]
   }
@@ -31,10 +30,8 @@ object InitializeError {
   @js.native
   val unknownProtocolVersion: Double = js.native
   
-  @scala.inline
-  implicit class InitializeErrorMutableBuilder[Self <: InitializeError] (val x: Self) extends AnyVal {
+  extension [Self <: InitializeError](x: Self) {
     
-    @scala.inline
-    def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait Delay[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object Delay {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](delay: Double | String | (Expr[TContext, TEvent, Double])): Delay[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](delay: Double | String | (Expr[TContext, TEvent, Double])): Delay[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delay[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class DelayMutableBuilder[Self <: Delay[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Delay[TContext, TEvent])) extends AnyVal {
+  extension [Self <: Delay[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (Delay[TContext, TEvent])) {
     
-    @scala.inline
-    def setDelay(value: Double | String | (Expr[TContext, TEvent, Double])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double | String | (Expr[TContext, TEvent, Double])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayFunction2(value: (TContext, TEvent) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction2(value))
+    inline def setDelayFunction2(value: (TContext, TEvent) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction2(value))
   }
 }

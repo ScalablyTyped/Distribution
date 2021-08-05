@@ -26,31 +26,23 @@ trait InputFieldGroupProperties extends StObject {
 }
 object InputFieldGroupProperties {
   
-  @scala.inline
-  def apply(): InputFieldGroupProperties = {
+  inline def apply(): InputFieldGroupProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputFieldGroupProperties]
   }
   
-  @scala.inline
-  implicit class InputFieldGroupPropertiesMutableBuilder[Self <: InputFieldGroupProperties] (val x: Self) extends AnyVal {
+  extension [Self <: InputFieldGroupProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
+    inline def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
+    inline def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
   }
 }

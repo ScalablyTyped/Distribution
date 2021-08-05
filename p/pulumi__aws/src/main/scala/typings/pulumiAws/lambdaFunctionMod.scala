@@ -193,21 +193,16 @@ object lambdaFunctionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Function]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FunctionState): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Function]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID], state: FunctionState): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Function]
+    inline def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
     
     /**
       * Returns true if the given object is an instance of Function.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean]
   }
   
   trait FunctionArgs extends StObject {
@@ -321,134 +316,91 @@ object lambdaFunctionMod {
   }
   object FunctionArgs {
     
-    @scala.inline
-    implicit class FunctionArgsMutableBuilder[Self <: FunctionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionArgs](x: Self) {
       
-      @scala.inline
-      def setCode(value: Input[Archive]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Input[Archive]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDeadLetterConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]): Self = StObject.set(x, "deadLetterConfig", value.asInstanceOf[js.Any])
+      inline def setDeadLetterConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]): Self = StObject.set(x, "deadLetterConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadLetterConfigUndefined: Self = StObject.set(x, "deadLetterConfig", js.undefined)
+      inline def setDeadLetterConfigUndefined: Self = StObject.set(x, "deadLetterConfig", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setFileSystemConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]): Self = StObject.set(x, "fileSystemConfig", value.asInstanceOf[js.Any])
+      inline def setFileSystemConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]): Self = StObject.set(x, "fileSystemConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemConfigUndefined: Self = StObject.set(x, "fileSystemConfig", js.undefined)
+      inline def setFileSystemConfigUndefined: Self = StObject.set(x, "fileSystemConfig", js.undefined)
       
-      @scala.inline
-      def setHandler(value: Input[String]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Input[String]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setLayers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: Input[String]*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Input[String]*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setMemorySize(value: Input[Double]): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
+      inline def setMemorySize(value: Input[Double]): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
+      inline def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPublish(value: Input[Boolean]): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+      inline def setPublish(value: Input[Boolean]): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
+      inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
       
-      @scala.inline
-      def setReservedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "reservedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setReservedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "reservedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "reservedConcurrentExecutions", js.undefined)
+      inline def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "reservedConcurrentExecutions", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[ARN]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[ARN]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: Input[String]): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: Input[String]): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+      inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
       
-      @scala.inline
-      def setS3Key(value: Input[String]): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
+      inline def setS3Key(value: Input[String]): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
+      inline def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
       
-      @scala.inline
-      def setS3ObjectVersion(value: Input[String]): Self = StObject.set(x, "s3ObjectVersion", value.asInstanceOf[js.Any])
+      inline def setS3ObjectVersion(value: Input[String]): Self = StObject.set(x, "s3ObjectVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3ObjectVersionUndefined: Self = StObject.set(x, "s3ObjectVersion", js.undefined)
+      inline def setS3ObjectVersionUndefined: Self = StObject.set(x, "s3ObjectVersion", js.undefined)
       
-      @scala.inline
-      def setSourceCodeHash(value: Input[String]): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
+      inline def setSourceCodeHash(value: Input[String]): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeHashUndefined: Self = StObject.set(x, "sourceCodeHash", js.undefined)
+      inline def setSourceCodeHashUndefined: Self = StObject.set(x, "sourceCodeHash", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTracingConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]): Self = StObject.set(x, "tracingConfig", value.asInstanceOf[js.Any])
+      inline def setTracingConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]): Self = StObject.set(x, "tracingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingConfigUndefined: Self = StObject.set(x, "tracingConfig", js.undefined)
+      inline def setTracingConfigUndefined: Self = StObject.set(x, "tracingConfig", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
     }
   }
   
@@ -594,185 +546,126 @@ object lambdaFunctionMod {
   }
   object FunctionState {
     
-    @scala.inline
-    def apply(): FunctionState = {
+    inline def apply(): FunctionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FunctionState]
     }
     
-    @scala.inline
-    implicit class FunctionStateMutableBuilder[Self <: FunctionState] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCode(value: Input[Archive]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Input[Archive]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDeadLetterConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]): Self = StObject.set(x, "deadLetterConfig", value.asInstanceOf[js.Any])
+      inline def setDeadLetterConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig]): Self = StObject.set(x, "deadLetterConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadLetterConfigUndefined: Self = StObject.set(x, "deadLetterConfig", js.undefined)
+      inline def setDeadLetterConfigUndefined: Self = StObject.set(x, "deadLetterConfig", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setFileSystemConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]): Self = StObject.set(x, "fileSystemConfig", value.asInstanceOf[js.Any])
+      inline def setFileSystemConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig]): Self = StObject.set(x, "fileSystemConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemConfigUndefined: Self = StObject.set(x, "fileSystemConfig", js.undefined)
+      inline def setFileSystemConfigUndefined: Self = StObject.set(x, "fileSystemConfig", js.undefined)
       
-      @scala.inline
-      def setHandler(value: Input[String]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Input[String]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setInvokeArn(value: Input[String]): Self = StObject.set(x, "invokeArn", value.asInstanceOf[js.Any])
+      inline def setInvokeArn(value: Input[String]): Self = StObject.set(x, "invokeArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeArnUndefined: Self = StObject.set(x, "invokeArn", js.undefined)
+      inline def setInvokeArnUndefined: Self = StObject.set(x, "invokeArn", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setLastModified(value: Input[String]): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: Input[String]): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
       
-      @scala.inline
-      def setLayers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: Input[String]*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Input[String]*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setMemorySize(value: Input[Double]): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
+      inline def setMemorySize(value: Input[Double]): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
+      inline def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPublish(value: Input[Boolean]): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+      inline def setPublish(value: Input[Boolean]): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
+      inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
       
-      @scala.inline
-      def setQualifiedArn(value: Input[String]): Self = StObject.set(x, "qualifiedArn", value.asInstanceOf[js.Any])
+      inline def setQualifiedArn(value: Input[String]): Self = StObject.set(x, "qualifiedArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiedArnUndefined: Self = StObject.set(x, "qualifiedArn", js.undefined)
+      inline def setQualifiedArnUndefined: Self = StObject.set(x, "qualifiedArn", js.undefined)
       
-      @scala.inline
-      def setReservedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "reservedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setReservedConcurrentExecutions(value: Input[Double]): Self = StObject.set(x, "reservedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "reservedConcurrentExecutions", js.undefined)
+      inline def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "reservedConcurrentExecutions", js.undefined)
       
-      @scala.inline
-      def setRole(value: Input[ARN]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Input[ARN]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setRuntime(value: Input[String]): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: Input[String]): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: Input[String]): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+      inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
       
-      @scala.inline
-      def setS3Key(value: Input[String]): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
+      inline def setS3Key(value: Input[String]): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
+      inline def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
       
-      @scala.inline
-      def setS3ObjectVersion(value: Input[String]): Self = StObject.set(x, "s3ObjectVersion", value.asInstanceOf[js.Any])
+      inline def setS3ObjectVersion(value: Input[String]): Self = StObject.set(x, "s3ObjectVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3ObjectVersionUndefined: Self = StObject.set(x, "s3ObjectVersion", js.undefined)
+      inline def setS3ObjectVersionUndefined: Self = StObject.set(x, "s3ObjectVersion", js.undefined)
       
-      @scala.inline
-      def setSourceCodeHash(value: Input[String]): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
+      inline def setSourceCodeHash(value: Input[String]): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeHashUndefined: Self = StObject.set(x, "sourceCodeHash", js.undefined)
+      inline def setSourceCodeHashUndefined: Self = StObject.set(x, "sourceCodeHash", js.undefined)
       
-      @scala.inline
-      def setSourceCodeSize(value: Input[Double]): Self = StObject.set(x, "sourceCodeSize", value.asInstanceOf[js.Any])
+      inline def setSourceCodeSize(value: Input[Double]): Self = StObject.set(x, "sourceCodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeSizeUndefined: Self = StObject.set(x, "sourceCodeSize", js.undefined)
+      inline def setSourceCodeSizeUndefined: Self = StObject.set(x, "sourceCodeSize", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Input[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTracingConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]): Self = StObject.set(x, "tracingConfig", value.asInstanceOf[js.Any])
+      inline def setTracingConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionTracingConfig]): Self = StObject.set(x, "tracingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingConfigUndefined: Self = StObject.set(x, "tracingConfig", js.undefined)
+      inline def setTracingConfigUndefined: Self = StObject.set(x, "tracingConfig", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
     }
   }
 }

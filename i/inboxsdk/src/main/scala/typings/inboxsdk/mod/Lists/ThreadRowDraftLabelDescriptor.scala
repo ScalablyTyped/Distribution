@@ -12,22 +12,17 @@ trait ThreadRowDraftLabelDescriptor extends StObject {
 }
 object ThreadRowDraftLabelDescriptor {
   
-  @scala.inline
-  def apply(text: String): ThreadRowDraftLabelDescriptor = {
+  inline def apply(text: String): ThreadRowDraftLabelDescriptor = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowDraftLabelDescriptor]
   }
   
-  @scala.inline
-  implicit class ThreadRowDraftLabelDescriptorMutableBuilder[Self <: ThreadRowDraftLabelDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadRowDraftLabelDescriptor](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

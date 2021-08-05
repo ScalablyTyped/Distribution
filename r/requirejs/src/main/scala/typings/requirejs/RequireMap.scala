@@ -41,8 +41,7 @@ trait RequireMap extends StObject {
 }
 object RequireMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fullName: String,
     name: String,
     originalName: String,
@@ -54,25 +53,18 @@ object RequireMap {
     __obj.asInstanceOf[RequireMap]
   }
   
-  @scala.inline
-  implicit class RequireMapMutableBuilder[Self <: RequireMap] (val x: Self) extends AnyVal {
+  extension [Self <: RequireMap](x: Self) {
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+    inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentMap(value: RequireMap): Self = StObject.set(x, "parentMap", value.asInstanceOf[js.Any])
+    inline def setParentMap(value: RequireMap): Self = StObject.set(x, "parentMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

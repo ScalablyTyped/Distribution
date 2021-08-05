@@ -16,17 +16,14 @@ object typesDirectoryNameConflictsWithFileNameExceptionMod {
   }
   object DirectoryNameConflictsWithFileNameException {
     
-    @scala.inline
-    def apply(): DirectoryNameConflictsWithFileNameException = {
+    inline def apply(): DirectoryNameConflictsWithFileNameException = {
       val __obj = js.Dynamic.literal(name = "DirectoryNameConflictsWithFileNameException")
       __obj.asInstanceOf[DirectoryNameConflictsWithFileNameException]
     }
     
-    @scala.inline
-    implicit class DirectoryNameConflictsWithFileNameExceptionMutableBuilder[Self <: DirectoryNameConflictsWithFileNameException] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryNameConflictsWithFileNameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.DirectoryNameConflictsWithFileNameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

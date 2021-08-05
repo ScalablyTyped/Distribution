@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcPrintItemLayout extends StObject
 object AcPrintItemLayout {
   
-  @scala.inline
-  def acPRHorizontalColumnLayout: `1953` = 1953.asInstanceOf[`1953`]
+  inline def acPRHorizontalColumnLayout: `1953` = 1953.asInstanceOf[`1953`]
   
-  @scala.inline
-  def acPRVerticalColumnLayout: `1954` = 1954.asInstanceOf[`1954`]
+  inline def acPRVerticalColumnLayout: `1954` = 1954.asInstanceOf[`1954`]
 }

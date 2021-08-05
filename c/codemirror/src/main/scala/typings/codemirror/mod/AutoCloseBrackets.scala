@@ -34,43 +34,31 @@ trait AutoCloseBrackets extends StObject {
 }
 object AutoCloseBrackets {
   
-  @scala.inline
-  def apply(): AutoCloseBrackets = {
+  inline def apply(): AutoCloseBrackets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoCloseBrackets]
   }
   
-  @scala.inline
-  implicit class AutoCloseBracketsMutableBuilder[Self <: AutoCloseBrackets] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCloseBrackets](x: Self) {
     
-    @scala.inline
-    def setCloseBefore(value: String): Self = StObject.set(x, "closeBefore", value.asInstanceOf[js.Any])
+    inline def setCloseBefore(value: String): Self = StObject.set(x, "closeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseBeforeUndefined: Self = StObject.set(x, "closeBefore", js.undefined)
+    inline def setCloseBeforeUndefined: Self = StObject.set(x, "closeBefore", js.undefined)
     
-    @scala.inline
-    def setExplode(value: String): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
+    inline def setExplode(value: String): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplodeUndefined: Self = StObject.set(x, "explode", js.undefined)
+    inline def setExplodeUndefined: Self = StObject.set(x, "explode", js.undefined)
     
-    @scala.inline
-    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    @scala.inline
-    def setPairs(value: String): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
+    inline def setPairs(value: String): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPairsUndefined: Self = StObject.set(x, "pairs", js.undefined)
+    inline def setPairsUndefined: Self = StObject.set(x, "pairs", js.undefined)
     
-    @scala.inline
-    def setTriples(value: String): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
+    inline def setTriples(value: String): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriplesUndefined: Self = StObject.set(x, "triples", js.undefined)
+    inline def setTriplesUndefined: Self = StObject.set(x, "triples", js.undefined)
   }
 }

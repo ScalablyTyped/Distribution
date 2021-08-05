@@ -42,8 +42,7 @@ trait DatabaseGetResponse extends StObject {
 }
 object DatabaseGetResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compact_running: Boolean,
     data_size: Double,
     db_name: String,
@@ -60,40 +59,28 @@ object DatabaseGetResponse {
     __obj.asInstanceOf[DatabaseGetResponse]
   }
   
-  @scala.inline
-  implicit class DatabaseGetResponseMutableBuilder[Self <: DatabaseGetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseGetResponse](x: Self) {
     
-    @scala.inline
-    def setCompact_running(value: Boolean): Self = StObject.set(x, "compact_running", value.asInstanceOf[js.Any])
+    inline def setCompact_running(value: Boolean): Self = StObject.set(x, "compact_running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData_size(value: Double): Self = StObject.set(x, "data_size", value.asInstanceOf[js.Any])
+    inline def setData_size(value: Double): Self = StObject.set(x, "data_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDb_name(value: String): Self = StObject.set(x, "db_name", value.asInstanceOf[js.Any])
+    inline def setDb_name(value: String): Self = StObject.set(x, "db_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisk_format_version(value: Double): Self = StObject.set(x, "disk_format_version", value.asInstanceOf[js.Any])
+    inline def setDisk_format_version(value: Double): Self = StObject.set(x, "disk_format_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisk_size(value: Double): Self = StObject.set(x, "disk_size", value.asInstanceOf[js.Any])
+    inline def setDisk_size(value: Double): Self = StObject.set(x, "disk_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
+    inline def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoc_del_count(value: Double): Self = StObject.set(x, "doc_del_count", value.asInstanceOf[js.Any])
+    inline def setDoc_del_count(value: Double): Self = StObject.set(x, "doc_del_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstance_start_time(value: String): Self = StObject.set(x, "instance_start_time", value.asInstanceOf[js.Any])
+    inline def setInstance_start_time(value: String): Self = StObject.set(x, "instance_start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurge_seq(value: Double): Self = StObject.set(x, "purge_seq", value.asInstanceOf[js.Any])
+    inline def setPurge_seq(value: Double): Self = StObject.set(x, "purge_seq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizes(value: Active): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    inline def setSizes(value: Active): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
+    inline def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
   }
 }

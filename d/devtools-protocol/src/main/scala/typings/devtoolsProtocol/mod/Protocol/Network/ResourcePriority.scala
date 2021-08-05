@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourcePriority extends StObject
 object ResourcePriority {
   
-  @scala.inline
-  def High: typings.devtoolsProtocol.devtoolsProtocolStrings.High = "High".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.High]
+  inline def High: typings.devtoolsProtocol.devtoolsProtocolStrings.High = "High".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.High]
   
-  @scala.inline
-  def Low: typings.devtoolsProtocol.devtoolsProtocolStrings.Low = "Low".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Low]
+  inline def Low: typings.devtoolsProtocol.devtoolsProtocolStrings.Low = "Low".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Low]
   
-  @scala.inline
-  def Medium: typings.devtoolsProtocol.devtoolsProtocolStrings.Medium = "Medium".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Medium]
+  inline def Medium: typings.devtoolsProtocol.devtoolsProtocolStrings.Medium = "Medium".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Medium]
   
-  @scala.inline
-  def VeryHigh: typings.devtoolsProtocol.devtoolsProtocolStrings.VeryHigh = "VeryHigh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.VeryHigh]
+  inline def VeryHigh: typings.devtoolsProtocol.devtoolsProtocolStrings.VeryHigh = "VeryHigh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.VeryHigh]
   
-  @scala.inline
-  def VeryLow: typings.devtoolsProtocol.devtoolsProtocolStrings.VeryLow = "VeryLow".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.VeryLow]
+  inline def VeryLow: typings.devtoolsProtocol.devtoolsProtocolStrings.VeryLow = "VeryLow".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.VeryLow]
 }

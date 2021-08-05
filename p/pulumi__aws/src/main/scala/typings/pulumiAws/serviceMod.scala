@@ -162,21 +162,16 @@ object serviceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Service]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServiceState): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Service]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID]): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID], state: ServiceState): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
     
     /**
       * Returns true if the given object is an instance of Service.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean]
   }
   
   trait ServiceArgs extends StObject {
@@ -301,164 +296,112 @@ object serviceMod {
   }
   object ServiceArgs {
     
-    @scala.inline
-    def apply(): ServiceArgs = {
+    inline def apply(): ServiceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceArgs]
     }
     
-    @scala.inline
-    implicit class ServiceArgsMutableBuilder[Self <: ServiceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceArgs](x: Self) {
       
-      @scala.inline
-      def setCapacityProviderStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]]]): Self = StObject.set(x, "capacityProviderStrategies", value.asInstanceOf[js.Any])
+      inline def setCapacityProviderStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]]]): Self = StObject.set(x, "capacityProviderStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityProviderStrategiesUndefined: Self = StObject.set(x, "capacityProviderStrategies", js.undefined)
+      inline def setCapacityProviderStrategiesUndefined: Self = StObject.set(x, "capacityProviderStrategies", js.undefined)
       
-      @scala.inline
-      def setCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]*): Self = StObject.set(x, "capacityProviderStrategies", js.Array(value :_*))
+      inline def setCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]*): Self = StObject.set(x, "capacityProviderStrategies", js.Array(value :_*))
       
-      @scala.inline
-      def setCluster(value: Input[String]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      inline def setCluster(value: Input[String]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+      inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
       
-      @scala.inline
-      def setDeploymentController(value: Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]): Self = StObject.set(x, "deploymentController", value.asInstanceOf[js.Any])
+      inline def setDeploymentController(value: Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]): Self = StObject.set(x, "deploymentController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentControllerUndefined: Self = StObject.set(x, "deploymentController", js.undefined)
+      inline def setDeploymentControllerUndefined: Self = StObject.set(x, "deploymentController", js.undefined)
       
-      @scala.inline
-      def setDeploymentMaximumPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMaximumPercent", value.asInstanceOf[js.Any])
+      inline def setDeploymentMaximumPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMaximumPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentMaximumPercentUndefined: Self = StObject.set(x, "deploymentMaximumPercent", js.undefined)
+      inline def setDeploymentMaximumPercentUndefined: Self = StObject.set(x, "deploymentMaximumPercent", js.undefined)
       
-      @scala.inline
-      def setDeploymentMinimumHealthyPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMinimumHealthyPercent", value.asInstanceOf[js.Any])
+      inline def setDeploymentMinimumHealthyPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMinimumHealthyPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentMinimumHealthyPercentUndefined: Self = StObject.set(x, "deploymentMinimumHealthyPercent", js.undefined)
+      inline def setDeploymentMinimumHealthyPercentUndefined: Self = StObject.set(x, "deploymentMinimumHealthyPercent", js.undefined)
       
-      @scala.inline
-      def setDesiredCount(value: Input[Double]): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
+      inline def setDesiredCount(value: Input[Double]): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
+      inline def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
       
-      @scala.inline
-      def setEnableEcsManagedTags(value: Input[Boolean]): Self = StObject.set(x, "enableEcsManagedTags", value.asInstanceOf[js.Any])
+      inline def setEnableEcsManagedTags(value: Input[Boolean]): Self = StObject.set(x, "enableEcsManagedTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableEcsManagedTagsUndefined: Self = StObject.set(x, "enableEcsManagedTags", js.undefined)
+      inline def setEnableEcsManagedTagsUndefined: Self = StObject.set(x, "enableEcsManagedTags", js.undefined)
       
-      @scala.inline
-      def setForceNewDeployment(value: Input[Boolean]): Self = StObject.set(x, "forceNewDeployment", value.asInstanceOf[js.Any])
+      inline def setForceNewDeployment(value: Input[Boolean]): Self = StObject.set(x, "forceNewDeployment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceNewDeploymentUndefined: Self = StObject.set(x, "forceNewDeployment", js.undefined)
+      inline def setForceNewDeploymentUndefined: Self = StObject.set(x, "forceNewDeployment", js.undefined)
       
-      @scala.inline
-      def setHealthCheckGracePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
+      inline def setHealthCheckGracePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckGracePeriodSecondsUndefined: Self = StObject.set(x, "healthCheckGracePeriodSeconds", js.undefined)
+      inline def setHealthCheckGracePeriodSecondsUndefined: Self = StObject.set(x, "healthCheckGracePeriodSeconds", js.undefined)
       
-      @scala.inline
-      def setIamRole(value: Input[String]): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
+      inline def setIamRole(value: Input[String]): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
+      inline def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
       
-      @scala.inline
-      def setLaunchType(value: Input[String]): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
+      inline def setLaunchType(value: Input[String]): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
+      inline def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
       
-      @scala.inline
-      def setLoadBalancers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]): Self = StObject.set(x, "loadBalancers", value.asInstanceOf[js.Any])
+      inline def setLoadBalancers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]): Self = StObject.set(x, "loadBalancers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
+      inline def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
       
-      @scala.inline
-      def setLoadBalancersVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
+      inline def setLoadBalancersVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetworkConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
+      inline def setNetworkConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
+      inline def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
       
-      @scala.inline
-      def setOrderedPlacementStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]]]): Self = StObject.set(x, "orderedPlacementStrategies", value.asInstanceOf[js.Any])
+      inline def setOrderedPlacementStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]]]): Self = StObject.set(x, "orderedPlacementStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedPlacementStrategiesUndefined: Self = StObject.set(x, "orderedPlacementStrategies", js.undefined)
+      inline def setOrderedPlacementStrategiesUndefined: Self = StObject.set(x, "orderedPlacementStrategies", js.undefined)
       
-      @scala.inline
-      def setOrderedPlacementStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]*): Self = StObject.set(x, "orderedPlacementStrategies", js.Array(value :_*))
+      inline def setOrderedPlacementStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]*): Self = StObject.set(x, "orderedPlacementStrategies", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacementConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]]]): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
+      inline def setPlacementConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]]]): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
+      inline def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
       
-      @scala.inline
-      def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
+      inline def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
       
-      @scala.inline
-      def setPlatformVersion(value: Input[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+      inline def setPlatformVersion(value: Input[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
+      inline def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
       
-      @scala.inline
-      def setPropagateTags(value: Input[String]): Self = StObject.set(x, "propagateTags", value.asInstanceOf[js.Any])
+      inline def setPropagateTags(value: Input[String]): Self = StObject.set(x, "propagateTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
+      inline def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
       
-      @scala.inline
-      def setSchedulingStrategy(value: Input[String]): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
+      inline def setSchedulingStrategy(value: Input[String]): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedulingStrategyUndefined: Self = StObject.set(x, "schedulingStrategy", js.undefined)
+      inline def setSchedulingStrategyUndefined: Self = StObject.set(x, "schedulingStrategy", js.undefined)
       
-      @scala.inline
-      def setServiceRegistries(value: Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]): Self = StObject.set(x, "serviceRegistries", value.asInstanceOf[js.Any])
+      inline def setServiceRegistries(value: Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]): Self = StObject.set(x, "serviceRegistries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRegistriesUndefined: Self = StObject.set(x, "serviceRegistries", js.undefined)
+      inline def setServiceRegistriesUndefined: Self = StObject.set(x, "serviceRegistries", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTaskDefinition(value: Input[String]): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+      inline def setTaskDefinition(value: Input[String]): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
+      inline def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
       
-      @scala.inline
-      def setWaitForSteadyState(value: Input[Boolean]): Self = StObject.set(x, "waitForSteadyState", value.asInstanceOf[js.Any])
+      inline def setWaitForSteadyState(value: Input[Boolean]): Self = StObject.set(x, "waitForSteadyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForSteadyStateUndefined: Self = StObject.set(x, "waitForSteadyState", js.undefined)
+      inline def setWaitForSteadyStateUndefined: Self = StObject.set(x, "waitForSteadyState", js.undefined)
     }
   }
   
@@ -584,164 +527,112 @@ object serviceMod {
   }
   object ServiceState {
     
-    @scala.inline
-    def apply(): ServiceState = {
+    inline def apply(): ServiceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceState]
     }
     
-    @scala.inline
-    implicit class ServiceStateMutableBuilder[Self <: ServiceState] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceState](x: Self) {
       
-      @scala.inline
-      def setCapacityProviderStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]]]): Self = StObject.set(x, "capacityProviderStrategies", value.asInstanceOf[js.Any])
+      inline def setCapacityProviderStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]]]): Self = StObject.set(x, "capacityProviderStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityProviderStrategiesUndefined: Self = StObject.set(x, "capacityProviderStrategies", js.undefined)
+      inline def setCapacityProviderStrategiesUndefined: Self = StObject.set(x, "capacityProviderStrategies", js.undefined)
       
-      @scala.inline
-      def setCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]*): Self = StObject.set(x, "capacityProviderStrategies", js.Array(value :_*))
+      inline def setCapacityProviderStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceCapacityProviderStrategy]*): Self = StObject.set(x, "capacityProviderStrategies", js.Array(value :_*))
       
-      @scala.inline
-      def setCluster(value: Input[String]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      inline def setCluster(value: Input[String]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+      inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
       
-      @scala.inline
-      def setDeploymentController(value: Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]): Self = StObject.set(x, "deploymentController", value.asInstanceOf[js.Any])
+      inline def setDeploymentController(value: Input[typings.pulumiAws.inputMod.ecs.ServiceDeploymentController]): Self = StObject.set(x, "deploymentController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentControllerUndefined: Self = StObject.set(x, "deploymentController", js.undefined)
+      inline def setDeploymentControllerUndefined: Self = StObject.set(x, "deploymentController", js.undefined)
       
-      @scala.inline
-      def setDeploymentMaximumPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMaximumPercent", value.asInstanceOf[js.Any])
+      inline def setDeploymentMaximumPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMaximumPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentMaximumPercentUndefined: Self = StObject.set(x, "deploymentMaximumPercent", js.undefined)
+      inline def setDeploymentMaximumPercentUndefined: Self = StObject.set(x, "deploymentMaximumPercent", js.undefined)
       
-      @scala.inline
-      def setDeploymentMinimumHealthyPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMinimumHealthyPercent", value.asInstanceOf[js.Any])
+      inline def setDeploymentMinimumHealthyPercent(value: Input[Double]): Self = StObject.set(x, "deploymentMinimumHealthyPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentMinimumHealthyPercentUndefined: Self = StObject.set(x, "deploymentMinimumHealthyPercent", js.undefined)
+      inline def setDeploymentMinimumHealthyPercentUndefined: Self = StObject.set(x, "deploymentMinimumHealthyPercent", js.undefined)
       
-      @scala.inline
-      def setDesiredCount(value: Input[Double]): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
+      inline def setDesiredCount(value: Input[Double]): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
+      inline def setDesiredCountUndefined: Self = StObject.set(x, "desiredCount", js.undefined)
       
-      @scala.inline
-      def setEnableEcsManagedTags(value: Input[Boolean]): Self = StObject.set(x, "enableEcsManagedTags", value.asInstanceOf[js.Any])
+      inline def setEnableEcsManagedTags(value: Input[Boolean]): Self = StObject.set(x, "enableEcsManagedTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableEcsManagedTagsUndefined: Self = StObject.set(x, "enableEcsManagedTags", js.undefined)
+      inline def setEnableEcsManagedTagsUndefined: Self = StObject.set(x, "enableEcsManagedTags", js.undefined)
       
-      @scala.inline
-      def setForceNewDeployment(value: Input[Boolean]): Self = StObject.set(x, "forceNewDeployment", value.asInstanceOf[js.Any])
+      inline def setForceNewDeployment(value: Input[Boolean]): Self = StObject.set(x, "forceNewDeployment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceNewDeploymentUndefined: Self = StObject.set(x, "forceNewDeployment", js.undefined)
+      inline def setForceNewDeploymentUndefined: Self = StObject.set(x, "forceNewDeployment", js.undefined)
       
-      @scala.inline
-      def setHealthCheckGracePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
+      inline def setHealthCheckGracePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckGracePeriodSecondsUndefined: Self = StObject.set(x, "healthCheckGracePeriodSeconds", js.undefined)
+      inline def setHealthCheckGracePeriodSecondsUndefined: Self = StObject.set(x, "healthCheckGracePeriodSeconds", js.undefined)
       
-      @scala.inline
-      def setIamRole(value: Input[String]): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
+      inline def setIamRole(value: Input[String]): Self = StObject.set(x, "iamRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
+      inline def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
       
-      @scala.inline
-      def setLaunchType(value: Input[String]): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
+      inline def setLaunchType(value: Input[String]): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
+      inline def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
       
-      @scala.inline
-      def setLoadBalancers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]): Self = StObject.set(x, "loadBalancers", value.asInstanceOf[js.Any])
+      inline def setLoadBalancers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]]]): Self = StObject.set(x, "loadBalancers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
+      inline def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
       
-      @scala.inline
-      def setLoadBalancersVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
+      inline def setLoadBalancersVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceLoadBalancer]*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetworkConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
+      inline def setNetworkConfiguration(value: Input[typings.pulumiAws.inputMod.ecs.ServiceNetworkConfiguration]): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
+      inline def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
       
-      @scala.inline
-      def setOrderedPlacementStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]]]): Self = StObject.set(x, "orderedPlacementStrategies", value.asInstanceOf[js.Any])
+      inline def setOrderedPlacementStrategies(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]]]): Self = StObject.set(x, "orderedPlacementStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedPlacementStrategiesUndefined: Self = StObject.set(x, "orderedPlacementStrategies", js.undefined)
+      inline def setOrderedPlacementStrategiesUndefined: Self = StObject.set(x, "orderedPlacementStrategies", js.undefined)
       
-      @scala.inline
-      def setOrderedPlacementStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]*): Self = StObject.set(x, "orderedPlacementStrategies", js.Array(value :_*))
+      inline def setOrderedPlacementStrategiesVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServiceOrderedPlacementStrategy]*): Self = StObject.set(x, "orderedPlacementStrategies", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacementConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]]]): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
+      inline def setPlacementConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]]]): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
+      inline def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
       
-      @scala.inline
-      def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
+      inline def setPlacementConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.ecs.ServicePlacementConstraint]*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
       
-      @scala.inline
-      def setPlatformVersion(value: Input[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+      inline def setPlatformVersion(value: Input[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
+      inline def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
       
-      @scala.inline
-      def setPropagateTags(value: Input[String]): Self = StObject.set(x, "propagateTags", value.asInstanceOf[js.Any])
+      inline def setPropagateTags(value: Input[String]): Self = StObject.set(x, "propagateTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
+      inline def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
       
-      @scala.inline
-      def setSchedulingStrategy(value: Input[String]): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
+      inline def setSchedulingStrategy(value: Input[String]): Self = StObject.set(x, "schedulingStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedulingStrategyUndefined: Self = StObject.set(x, "schedulingStrategy", js.undefined)
+      inline def setSchedulingStrategyUndefined: Self = StObject.set(x, "schedulingStrategy", js.undefined)
       
-      @scala.inline
-      def setServiceRegistries(value: Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]): Self = StObject.set(x, "serviceRegistries", value.asInstanceOf[js.Any])
+      inline def setServiceRegistries(value: Input[typings.pulumiAws.inputMod.ecs.ServiceServiceRegistries]): Self = StObject.set(x, "serviceRegistries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRegistriesUndefined: Self = StObject.set(x, "serviceRegistries", js.undefined)
+      inline def setServiceRegistriesUndefined: Self = StObject.set(x, "serviceRegistries", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTaskDefinition(value: Input[String]): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+      inline def setTaskDefinition(value: Input[String]): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
+      inline def setTaskDefinitionUndefined: Self = StObject.set(x, "taskDefinition", js.undefined)
       
-      @scala.inline
-      def setWaitForSteadyState(value: Input[Boolean]): Self = StObject.set(x, "waitForSteadyState", value.asInstanceOf[js.Any])
+      inline def setWaitForSteadyState(value: Input[Boolean]): Self = StObject.set(x, "waitForSteadyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForSteadyStateUndefined: Self = StObject.set(x, "waitForSteadyState", js.undefined)
+      inline def setWaitForSteadyStateUndefined: Self = StObject.set(x, "waitForSteadyState", js.undefined)
     }
   }
 }

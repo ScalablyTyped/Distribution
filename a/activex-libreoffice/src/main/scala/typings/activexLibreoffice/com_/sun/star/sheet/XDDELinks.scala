@@ -30,8 +30,7 @@ trait XDDELinks
 }
 object XDDELinks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -48,10 +47,8 @@ object XDDELinks {
     __obj.asInstanceOf[XDDELinks]
   }
   
-  @scala.inline
-  implicit class XDDELinksMutableBuilder[Self <: XDDELinks] (val x: Self) extends AnyVal {
+  extension [Self <: XDDELinks](x: Self) {
     
-    @scala.inline
-    def setAddDDELink(value: (String, String, String, DDELinkMode) => XDDELink): Self = StObject.set(x, "addDDELink", js.Any.fromFunction4(value))
+    inline def setAddDDELink(value: (String, String, String, DDELinkMode) => XDDELink): Self = StObject.set(x, "addDDELink", js.Any.fromFunction4(value))
   }
 }

@@ -14,22 +14,17 @@ trait Headers extends StObject {
 }
 object Headers {
   
-  @scala.inline
-  def apply(headers: Accept, qs: String, url: String): Headers = {
+  inline def apply(headers: Accept, qs: String, url: String): Headers = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], qs = qs.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
   
-  @scala.inline
-  implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+  extension [Self <: Headers](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Accept): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Accept): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQs(value: String): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+    inline def setQs(value: String): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

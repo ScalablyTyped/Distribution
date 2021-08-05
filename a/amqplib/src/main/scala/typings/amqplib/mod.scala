@@ -34,14 +34,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connect(url: String): typings.bluebird.mod.^[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Connection]]
-  @scala.inline
-  def connect(url: String, socketOptions: js.Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
-  @scala.inline
-  def connect(url: Connect): typings.bluebird.mod.^[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Connection]]
-  @scala.inline
-  def connect(url: Connect, socketOptions: js.Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
+  inline def connect(url: String): typings.bluebird.mod.^[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Connection]]
+  inline def connect(url: String, socketOptions: js.Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
+  inline def connect(url: Connect): typings.bluebird.mod.^[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Connection]]
+  inline def connect(url: Connect, socketOptions: js.Any): typings.bluebird.mod.^[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Connection]]
   
   object credentials {
     
@@ -49,11 +45,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def external(): Mechanism = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[Mechanism]
+    inline def external(): Mechanism = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[Mechanism]
     
-    @scala.inline
-    def plain(username: String, password: String): Password = (^.asInstanceOf[js.Dynamic].applyDynamic("plain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Password]
+    inline def plain(username: String, password: String): Password = (^.asInstanceOf[js.Dynamic].applyDynamic("plain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Password]
   }
   
   @js.native

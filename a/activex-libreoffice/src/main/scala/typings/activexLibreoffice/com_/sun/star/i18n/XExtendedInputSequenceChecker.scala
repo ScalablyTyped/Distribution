@@ -26,8 +26,7 @@ trait XExtendedInputSequenceChecker
 }
 object XExtendedInputSequenceChecker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     checkInputSequence: (String, Double, String, Double) => Boolean,
     correctInputSequence: (js.Array[String], Double, String, Double) => Double,
@@ -38,10 +37,8 @@ object XExtendedInputSequenceChecker {
     __obj.asInstanceOf[XExtendedInputSequenceChecker]
   }
   
-  @scala.inline
-  implicit class XExtendedInputSequenceCheckerMutableBuilder[Self <: XExtendedInputSequenceChecker] (val x: Self) extends AnyVal {
+  extension [Self <: XExtendedInputSequenceChecker](x: Self) {
     
-    @scala.inline
-    def setCorrectInputSequence(value: (js.Array[String], Double, String, Double) => Double): Self = StObject.set(x, "correctInputSequence", js.Any.fromFunction4(value))
+    inline def setCorrectInputSequence(value: (js.Array[String], Double, String, Double) => Double): Self = StObject.set(x, "correctInputSequence", js.Any.fromFunction4(value))
   }
 }

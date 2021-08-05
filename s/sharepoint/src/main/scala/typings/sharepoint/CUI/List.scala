@@ -28,8 +28,7 @@ trait List[T]
 }
 object List {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     add: T => scala.Unit,
     clear: () => scala.Unit,
     getEnumerator: () => IEnumerator[T],
@@ -44,31 +43,22 @@ object List {
     __obj.asInstanceOf[List[T]]
   }
   
-  @scala.inline
-  implicit class ListMutableBuilder[Self <: List[?], T] (val x: Self & List[T]) extends AnyVal {
+  extension [Self <: List[?], T](x: Self & List[T]) {
     
-    @scala.inline
-    def setAdd(value: T => scala.Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: T => scala.Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => scala.Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => scala.Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnumeratorAtPos(value: () => ListEnumerator[T]): Self = StObject.set(x, "getEnumeratorAtPos", js.Any.fromFunction0(value))
+    inline def setGetEnumeratorAtPos(value: () => ListEnumerator[T]): Self = StObject.set(x, "getEnumeratorAtPos", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
+    inline def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_item(value: Double => T): Self = StObject.set(x, "get_item", js.Any.fromFunction1(value))
+    inline def setGet_item(value: Double => T): Self = StObject.set(x, "get_item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexOf(value: T => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: T => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsert(value: (Double, T) => scala.Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Double, T) => scala.Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: T => scala.Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: T => scala.Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

@@ -33,8 +33,7 @@ trait Utxo extends StObject {
 }
 object Utxo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addressPath: js.Tuple2[Double, Double],
     coinbase: Boolean,
     index: Double,
@@ -48,37 +47,26 @@ object Utxo {
     __obj.asInstanceOf[Utxo]
   }
   
-  @scala.inline
-  implicit class UtxoMutableBuilder[Self <: Utxo] (val x: Self) extends AnyVal {
+  extension [Self <: Utxo](x: Self) {
     
-    @scala.inline
-    def setAddressPath(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "addressPath", value.asInstanceOf[js.Any])
+    inline def setAddressPath(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "addressPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoinbase(value: Boolean): Self = StObject.set(x, "coinbase", value.asInstanceOf[js.Any])
+    inline def setCoinbase(value: Boolean): Self = StObject.set(x, "coinbase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwn(value: Boolean): Self = StObject.set(x, "own", value.asInstanceOf[js.Any])
+    inline def setOwn(value: Boolean): Self = StObject.set(x, "own", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
+    inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTsize(value: Double): Self = StObject.set(x, "tsize", value.asInstanceOf[js.Any])
+    inline def setTsize(value: Double): Self = StObject.set(x, "tsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVsize(value: Double): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
+    inline def setVsize(value: Double): Self = StObject.set(x, "vsize", value.asInstanceOf[js.Any])
   }
 }

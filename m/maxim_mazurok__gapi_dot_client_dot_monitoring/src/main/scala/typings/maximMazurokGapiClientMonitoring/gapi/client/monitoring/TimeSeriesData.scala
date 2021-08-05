@@ -17,31 +17,23 @@ trait TimeSeriesData extends StObject {
 }
 object TimeSeriesData {
   
-  @scala.inline
-  def apply(): TimeSeriesData = {
+  inline def apply(): TimeSeriesData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeSeriesData]
   }
   
-  @scala.inline
-  implicit class TimeSeriesDataMutableBuilder[Self <: TimeSeriesData] (val x: Self) extends AnyVal {
+  extension [Self <: TimeSeriesData](x: Self) {
     
-    @scala.inline
-    def setLabelValues(value: js.Array[LabelValue]): Self = StObject.set(x, "labelValues", value.asInstanceOf[js.Any])
+    inline def setLabelValues(value: js.Array[LabelValue]): Self = StObject.set(x, "labelValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelValuesUndefined: Self = StObject.set(x, "labelValues", js.undefined)
+    inline def setLabelValuesUndefined: Self = StObject.set(x, "labelValues", js.undefined)
     
-    @scala.inline
-    def setLabelValuesVarargs(value: LabelValue*): Self = StObject.set(x, "labelValues", js.Array(value :_*))
+    inline def setLabelValuesVarargs(value: LabelValue*): Self = StObject.set(x, "labelValues", js.Array(value :_*))
     
-    @scala.inline
-    def setPointData(value: js.Array[PointData]): Self = StObject.set(x, "pointData", value.asInstanceOf[js.Any])
+    inline def setPointData(value: js.Array[PointData]): Self = StObject.set(x, "pointData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointDataUndefined: Self = StObject.set(x, "pointData", js.undefined)
+    inline def setPointDataUndefined: Self = StObject.set(x, "pointData", js.undefined)
     
-    @scala.inline
-    def setPointDataVarargs(value: PointData*): Self = StObject.set(x, "pointData", js.Array(value :_*))
+    inline def setPointDataVarargs(value: PointData*): Self = StObject.set(x, "pointData", js.Array(value :_*))
   }
 }

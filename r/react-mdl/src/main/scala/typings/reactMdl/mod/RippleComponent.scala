@@ -10,19 +10,15 @@ trait RippleComponent extends StObject {
 }
 object RippleComponent {
   
-  @scala.inline
-  def apply(): RippleComponent = {
+  inline def apply(): RippleComponent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RippleComponent]
   }
   
-  @scala.inline
-  implicit class RippleComponentMutableBuilder[Self <: RippleComponent] (val x: Self) extends AnyVal {
+  extension [Self <: RippleComponent](x: Self) {
     
-    @scala.inline
-    def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
+    inline def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleUndefined: Self = StObject.set(x, "ripple", js.undefined)
+    inline def setRippleUndefined: Self = StObject.set(x, "ripple", js.undefined)
   }
 }

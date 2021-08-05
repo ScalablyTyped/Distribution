@@ -13,19 +13,15 @@ trait DescribeStackSetOperationOutput extends StObject {
 }
 object DescribeStackSetOperationOutput {
   
-  @scala.inline
-  def apply(): DescribeStackSetOperationOutput = {
+  inline def apply(): DescribeStackSetOperationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStackSetOperationOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStackSetOperationOutputMutableBuilder[Self <: DescribeStackSetOperationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackSetOperationOutput](x: Self) {
     
-    @scala.inline
-    def setStackSetOperation(value: StackSetOperation): Self = StObject.set(x, "StackSetOperation", value.asInstanceOf[js.Any])
+    inline def setStackSetOperation(value: StackSetOperation): Self = StObject.set(x, "StackSetOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetOperationUndefined: Self = StObject.set(x, "StackSetOperation", js.undefined)
+    inline def setStackSetOperationUndefined: Self = StObject.set(x, "StackSetOperation", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object useIntlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): IntlShape = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[IntlShape]
+  inline def default(): IntlShape = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[IntlShape]
 }

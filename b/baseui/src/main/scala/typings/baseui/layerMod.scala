@@ -78,47 +78,33 @@ object layerMod {
     @js.native
     val ^ : TETHER_PLACEMENT = js.native
     
-    @scala.inline
-    implicit class TETHER_PLACEMENTMutableBuilder[Self <: TETHER_PLACEMENT] (val x: Self) extends AnyVal {
+    extension [Self <: TETHER_PLACEMENT](x: Self) {
       
-      @scala.inline
-      def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomLeft(value: bottomLeft): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
+      inline def setBottomLeft(value: bottomLeft): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomRight(value: bottomRight): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
+      inline def setBottomRight(value: bottomRight): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftBottom(value: leftBottom): Self = StObject.set(x, "leftBottom", value.asInstanceOf[js.Any])
+      inline def setLeftBottom(value: leftBottom): Self = StObject.set(x, "leftBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftTop(value: leftTop): Self = StObject.set(x, "leftTop", value.asInstanceOf[js.Any])
+      inline def setLeftTop(value: leftTop): Self = StObject.set(x, "leftTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightBottom(value: rightBottom): Self = StObject.set(x, "rightBottom", value.asInstanceOf[js.Any])
+      inline def setRightBottom(value: rightBottom): Self = StObject.set(x, "rightBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightTop(value: rightTop): Self = StObject.set(x, "rightTop", value.asInstanceOf[js.Any])
+      inline def setRightTop(value: rightTop): Self = StObject.set(x, "rightTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLeft(value: topLeft): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
+      inline def setTopLeft(value: topLeft): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopRight(value: topRight): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
+      inline def setTopRight(value: topRight): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,50 +145,36 @@ object layerMod {
   }
   object LayerProps {
     
-    @scala.inline
-    def apply(): LayerProps = {
+    inline def apply(): LayerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayerProps]
     }
     
-    @scala.inline
-    implicit class LayerPropsMutableBuilder[Self <: LayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
+      inline def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
+      inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
-      @scala.inline
-      def setOnMount(value: () => js.Any): Self = StObject.set(x, "onMount", js.Any.fromFunction0(value))
+      inline def setOnMount(value: () => js.Any): Self = StObject.set(x, "onMount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
+      inline def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
       
-      @scala.inline
-      def setOnUnmount(value: () => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction0(value))
+      inline def setOnUnmount(value: () => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
+      inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
     }
   }
   
@@ -214,26 +186,20 @@ object layerMod {
   }
   object LayersManagerProps {
     
-    @scala.inline
-    def apply(): LayersManagerProps = {
+    inline def apply(): LayersManagerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayersManagerProps]
     }
     
-    @scala.inline
-    implicit class LayersManagerPropsMutableBuilder[Self <: LayersManagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayersManagerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -245,20 +211,16 @@ object layerMod {
   }
   object NormalizedOffset {
     
-    @scala.inline
-    def apply(left: Double, top: Double): NormalizedOffset = {
+    inline def apply(left: Double, top: Double): NormalizedOffset = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizedOffset]
     }
     
-    @scala.inline
-    implicit class NormalizedOffsetMutableBuilder[Self <: NormalizedOffset] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedOffset](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,23 +232,18 @@ object layerMod {
   }
   object NormalizedOffsets {
     
-    @scala.inline
-    def apply(popper: NormalizedOffset): NormalizedOffsets = {
+    inline def apply(popper: NormalizedOffset): NormalizedOffsets = {
       val __obj = js.Dynamic.literal(popper = popper.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizedOffsets]
     }
     
-    @scala.inline
-    implicit class NormalizedOffsetsMutableBuilder[Self <: NormalizedOffsets] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedOffsets](x: Self) {
       
-      @scala.inline
-      def setArrow(value: NormalizedOffset): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: NormalizedOffset): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+      inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
       
-      @scala.inline
-      def setPopper(value: NormalizedOffset): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      inline def setPopper(value: NormalizedOffset): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,20 +255,16 @@ object layerMod {
   }
   object PopperDataObject {
     
-    @scala.inline
-    def apply(offsets: Arrow, placement: String): PopperDataObject = {
+    inline def apply(offsets: Arrow, placement: String): PopperDataObject = {
       val __obj = js.Dynamic.literal(offsets = offsets.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopperDataObject]
     }
     
-    @scala.inline
-    implicit class PopperDataObjectMutableBuilder[Self <: PopperDataObject] (val x: Self) extends AnyVal {
+    extension [Self <: PopperDataObject](x: Self) {
       
-      @scala.inline
-      def setOffsets(value: Arrow): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+      inline def setOffsets(value: Arrow): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     }
   }
   
@@ -323,32 +276,24 @@ object layerMod {
   }
   object PopperOffset {
     
-    @scala.inline
-    def apply(): PopperOffset = {
+    inline def apply(): PopperOffset = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopperOffset]
     }
     
-    @scala.inline
-    implicit class PopperOffsetMutableBuilder[Self <: PopperOffset] (val x: Self) extends AnyVal {
+    extension [Self <: PopperOffset](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftNull: Self = StObject.set(x, "left", null)
+      inline def setLeftNull: Self = StObject.set(x, "left", null)
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopNull: Self = StObject.set(x, "top", null)
+      inline def setTopNull: Self = StObject.set(x, "top", null)
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -376,76 +321,54 @@ object layerMod {
   }
   object TetherProps {
     
-    @scala.inline
-    def apply(): TetherProps = {
+    inline def apply(): TetherProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TetherProps]
     }
     
-    @scala.inline
-    implicit class TetherPropsMutableBuilder[Self <: TetherProps] (val x: Self) extends AnyVal {
+    extension [Self <: TetherProps](x: Self) {
       
-      @scala.inline
-      def setAnchorRef(value: Ref[HTMLElement]): Self = StObject.set(x, "anchorRef", value.asInstanceOf[js.Any])
+      inline def setAnchorRef(value: Ref[HTMLElement]): Self = StObject.set(x, "anchorRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "anchorRef", js.Any.fromFunction1(value))
+      inline def setAnchorRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "anchorRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnchorRefNull: Self = StObject.set(x, "anchorRef", null)
+      inline def setAnchorRefNull: Self = StObject.set(x, "anchorRef", null)
       
-      @scala.inline
-      def setAnchorRefUndefined: Self = StObject.set(x, "anchorRef", js.undefined)
+      inline def setAnchorRefUndefined: Self = StObject.set(x, "anchorRef", js.undefined)
       
-      @scala.inline
-      def setArrowRef(value: Ref[HTMLElement]): Self = StObject.set(x, "arrowRef", value.asInstanceOf[js.Any])
+      inline def setArrowRef(value: Ref[HTMLElement]): Self = StObject.set(x, "arrowRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "arrowRef", js.Any.fromFunction1(value))
+      inline def setArrowRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "arrowRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setArrowRefNull: Self = StObject.set(x, "arrowRef", null)
+      inline def setArrowRefNull: Self = StObject.set(x, "arrowRef", null)
       
-      @scala.inline
-      def setArrowRefUndefined: Self = StObject.set(x, "arrowRef", js.undefined)
+      inline def setArrowRefUndefined: Self = StObject.set(x, "arrowRef", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnPopperUpdate(value: (/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject) => js.Any): Self = StObject.set(x, "onPopperUpdate", js.Any.fromFunction2(value))
+      inline def setOnPopperUpdate(value: (/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject) => js.Any): Self = StObject.set(x, "onPopperUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPopperUpdateUndefined: Self = StObject.set(x, "onPopperUpdate", js.undefined)
+      inline def setOnPopperUpdateUndefined: Self = StObject.set(x, "onPopperUpdate", js.undefined)
       
-      @scala.inline
-      def setPlacement(
+      inline def setPlacement(
         value: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
       ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setPopperOptions(value: js.Any): Self = StObject.set(x, "popperOptions", value.asInstanceOf[js.Any])
+      inline def setPopperOptions(value: js.Any): Self = StObject.set(x, "popperOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopperOptionsUndefined: Self = StObject.set(x, "popperOptions", js.undefined)
+      inline def setPopperOptionsUndefined: Self = StObject.set(x, "popperOptions", js.undefined)
       
-      @scala.inline
-      def setPopperRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popperRef", value.asInstanceOf[js.Any])
+      inline def setPopperRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popperRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopperRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popperRef", js.Any.fromFunction1(value))
+      inline def setPopperRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popperRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPopperRefNull: Self = StObject.set(x, "popperRef", null)
+      inline def setPopperRefNull: Self = StObject.set(x, "popperRef", null)
       
-      @scala.inline
-      def setPopperRefUndefined: Self = StObject.set(x, "popperRef", js.undefined)
+      inline def setPopperRefUndefined: Self = StObject.set(x, "popperRef", js.undefined)
     }
   }
   
@@ -455,17 +378,14 @@ object layerMod {
   }
   object TetherState {
     
-    @scala.inline
-    def apply(isMounted: Boolean): TetherState = {
+    inline def apply(isMounted: Boolean): TetherState = {
       val __obj = js.Dynamic.literal(isMounted = isMounted.asInstanceOf[js.Any])
       __obj.asInstanceOf[TetherState]
     }
     
-    @scala.inline
-    implicit class TetherStateMutableBuilder[Self <: TetherState] (val x: Self) extends AnyVal {
+    extension [Self <: TetherState](x: Self) {
       
-      @scala.inline
-      def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
+      inline def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
     }
   }
 }

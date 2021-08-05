@@ -129,8 +129,7 @@ object Scheduler {
   }
   object IJob {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: () => Unit,
       completed: Boolean,
       id: Double,
@@ -144,32 +143,23 @@ object Scheduler {
       __obj.asInstanceOf[IJob]
     }
     
-    @scala.inline
-    implicit class IJobMutableBuilder[Self <: IJob] (val x: Self) extends AnyVal {
+    extension [Self <: IJob](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: IOwnerToken): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: IOwnerToken): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     }
   }
   
@@ -205,26 +195,20 @@ object Scheduler {
   }
   object IJobInfo {
     
-    @scala.inline
-    def apply(job: IJob, setPromise: Promise[js.Any] => Unit, setWork: js.Function => Unit, shouldYield: Boolean): IJobInfo = {
+    inline def apply(job: IJob, setPromise: Promise[js.Any] => Unit, setWork: js.Function => Unit, shouldYield: Boolean): IJobInfo = {
       val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any], setPromise = js.Any.fromFunction1(setPromise), setWork = js.Any.fromFunction1(setWork), shouldYield = shouldYield.asInstanceOf[js.Any])
       __obj.asInstanceOf[IJobInfo]
     }
     
-    @scala.inline
-    implicit class IJobInfoMutableBuilder[Self <: IJobInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IJobInfo](x: Self) {
       
-      @scala.inline
-      def setJob(value: IJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+      inline def setJob(value: IJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetPromise(value: Promise[js.Any] => Unit): Self = StObject.set(x, "setPromise", js.Any.fromFunction1(value))
+      inline def setSetPromise(value: Promise[js.Any] => Unit): Self = StObject.set(x, "setPromise", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWork(value: js.Function => Unit): Self = StObject.set(x, "setWork", js.Any.fromFunction1(value))
+      inline def setSetWork(value: js.Function => Unit): Self = StObject.set(x, "setWork", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldYield(value: Boolean): Self = StObject.set(x, "shouldYield", value.asInstanceOf[js.Any])
+      inline def setShouldYield(value: Boolean): Self = StObject.set(x, "shouldYield", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,17 +225,14 @@ object Scheduler {
   }
   object IOwnerToken {
     
-    @scala.inline
-    def apply(cancelAll: () => Unit): IOwnerToken = {
+    inline def apply(cancelAll: () => Unit): IOwnerToken = {
       val __obj = js.Dynamic.literal(cancelAll = js.Any.fromFunction0(cancelAll))
       __obj.asInstanceOf[IOwnerToken]
     }
     
-    @scala.inline
-    implicit class IOwnerTokenMutableBuilder[Self <: IOwnerToken] (val x: Self) extends AnyVal {
+    extension [Self <: IOwnerToken](x: Self) {
       
-      @scala.inline
-      def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
+      inline def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
     }
   }
 }

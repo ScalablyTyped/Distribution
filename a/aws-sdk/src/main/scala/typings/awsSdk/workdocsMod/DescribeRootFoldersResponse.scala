@@ -18,28 +18,21 @@ trait DescribeRootFoldersResponse extends StObject {
 }
 object DescribeRootFoldersResponse {
   
-  @scala.inline
-  def apply(): DescribeRootFoldersResponse = {
+  inline def apply(): DescribeRootFoldersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRootFoldersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRootFoldersResponseMutableBuilder[Self <: DescribeRootFoldersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRootFoldersResponse](x: Self) {
     
-    @scala.inline
-    def setFolders(value: FolderMetadataList): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
+    inline def setFolders(value: FolderMetadataList): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldersUndefined: Self = StObject.set(x, "Folders", js.undefined)
+    inline def setFoldersUndefined: Self = StObject.set(x, "Folders", js.undefined)
     
-    @scala.inline
-    def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

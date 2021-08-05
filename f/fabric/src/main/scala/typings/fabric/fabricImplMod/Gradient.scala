@@ -71,10 +71,8 @@ object Gradient {
     * @param {Object} obj
     * @param {Object} [options] Options object
     */
-  @scala.inline
-  def forObject(obj: js.Any): Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Gradient]
-  @scala.inline
-  def forObject(obj: js.Any, options: IGradientOptions): Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Gradient]
+  inline def forObject(obj: js.Any): Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Gradient]
+  inline def forObject(obj: js.Any, options: IGradientOptions): Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Gradient]
   
   /**
     * Returns {@link fabric.Gradient} instance from an SVG element
@@ -86,6 +84,5 @@ object Gradient {
     * @see http://www.w3.org/TR/SVG/pservers.html#LinearGradientElement
     * @see http://www.w3.org/TR/SVG/pservers.html#RadialGradientElement
     */
-  @scala.inline
-  def fromElement(el: SVGGradientElement, instance: Object): Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(el.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Gradient]
+  inline def fromElement(el: SVGGradientElement, instance: Object): Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(el.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Gradient]
 }

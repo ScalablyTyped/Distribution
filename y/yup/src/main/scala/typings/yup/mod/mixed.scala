@@ -17,6 +17,5 @@ class mixed[T, C] ()
 }
 object mixed {
   
-  @scala.inline
-  def apply: MixedSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("mixed").asInstanceOf[MixedSchemaConstructor]
+  inline def apply: MixedSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("mixed").asInstanceOf[MixedSchemaConstructor]
 }

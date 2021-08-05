@@ -18,20 +18,16 @@ trait CornerPosition extends StObject {
 }
 object CornerPosition {
   
-  @scala.inline
-  def apply(cornerPosition: String, `type`: String): CornerPosition = {
+  inline def apply(cornerPosition: String, `type`: String): CornerPosition = {
     val __obj = js.Dynamic.literal(cornerPosition = cornerPosition.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CornerPosition]
   }
   
-  @scala.inline
-  implicit class CornerPositionMutableBuilder[Self <: CornerPosition] (val x: Self) extends AnyVal {
+  extension [Self <: CornerPosition](x: Self) {
     
-    @scala.inline
-    def setCornerPosition(value: String): Self = StObject.set(x, "cornerPosition", value.asInstanceOf[js.Any])
+    inline def setCornerPosition(value: String): Self = StObject.set(x, "cornerPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

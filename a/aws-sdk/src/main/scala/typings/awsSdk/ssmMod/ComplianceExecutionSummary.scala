@@ -23,28 +23,21 @@ trait ComplianceExecutionSummary extends StObject {
 }
 object ComplianceExecutionSummary {
   
-  @scala.inline
-  def apply(ExecutionTime: DateTime): ComplianceExecutionSummary = {
+  inline def apply(ExecutionTime: DateTime): ComplianceExecutionSummary = {
     val __obj = js.Dynamic.literal(ExecutionTime = ExecutionTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceExecutionSummary]
   }
   
-  @scala.inline
-  implicit class ComplianceExecutionSummaryMutableBuilder[Self <: ComplianceExecutionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceExecutionSummary](x: Self) {
     
-    @scala.inline
-    def setExecutionId(value: ComplianceExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: ComplianceExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
-    @scala.inline
-    def setExecutionTime(value: DateTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
+    inline def setExecutionTime(value: DateTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionType(value: ComplianceExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
+    inline def setExecutionType(value: ComplianceExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionTypeUndefined: Self = StObject.set(x, "ExecutionType", js.undefined)
+    inline def setExecutionTypeUndefined: Self = StObject.set(x, "ExecutionType", js.undefined)
   }
 }

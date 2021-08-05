@@ -18,25 +18,19 @@ trait OnOrderByChange extends StObject {
 }
 object OnOrderByChange {
   
-  @scala.inline
-  def apply(onOrderByChange: OrderBy => Unit, onOrderChange: Order => Unit, order: Order, orderBy: OrderBy): OnOrderByChange = {
+  inline def apply(onOrderByChange: OrderBy => Unit, onOrderChange: Order => Unit, order: Order, orderBy: OrderBy): OnOrderByChange = {
     val __obj = js.Dynamic.literal(onOrderByChange = js.Any.fromFunction1(onOrderByChange), onOrderChange = js.Any.fromFunction1(onOrderChange), order = order.asInstanceOf[js.Any], orderBy = orderBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnOrderByChange]
   }
   
-  @scala.inline
-  implicit class OnOrderByChangeMutableBuilder[Self <: OnOrderByChange] (val x: Self) extends AnyVal {
+  extension [Self <: OnOrderByChange](x: Self) {
     
-    @scala.inline
-    def setOnOrderByChange(value: OrderBy => Unit): Self = StObject.set(x, "onOrderByChange", js.Any.fromFunction1(value))
+    inline def setOnOrderByChange(value: OrderBy => Unit): Self = StObject.set(x, "onOrderByChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOrderChange(value: Order => Unit): Self = StObject.set(x, "onOrderChange", js.Any.fromFunction1(value))
+    inline def setOnOrderChange(value: Order => Unit): Self = StObject.set(x, "onOrderChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
   }
 }

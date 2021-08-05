@@ -38,37 +38,27 @@ trait SchemaNotificationEndpointGrpcSettings extends StObject {
 }
 object SchemaNotificationEndpointGrpcSettings {
   
-  @scala.inline
-  def apply(): SchemaNotificationEndpointGrpcSettings = {
+  inline def apply(): SchemaNotificationEndpointGrpcSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotificationEndpointGrpcSettings]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationEndpointGrpcSettingsMutableBuilder[Self <: SchemaNotificationEndpointGrpcSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotificationEndpointGrpcSettings](x: Self) {
     
-    @scala.inline
-    def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+    inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
+    inline def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
+    inline def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
+    inline def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
     
-    @scala.inline
-    def setRetryDurationSec(value: Double): Self = StObject.set(x, "retryDurationSec", value.asInstanceOf[js.Any])
+    inline def setRetryDurationSec(value: Double): Self = StObject.set(x, "retryDurationSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDurationSecUndefined: Self = StObject.set(x, "retryDurationSec", js.undefined)
+    inline def setRetryDurationSecUndefined: Self = StObject.set(x, "retryDurationSec", js.undefined)
   }
 }

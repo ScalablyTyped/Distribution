@@ -30,11 +30,11 @@ object typingindicatorMod {
   class TypingIndicator protected () extends StObject {
     def this(config: Configuration, services: TypingIndicatorServices, getChannel: js.Any) = this()
     
-    var _send: js.Any = js.native
+    /* private */ var _send: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
-    var getChannel: js.Any = js.native
+    /* private */ var getChannel: js.Any = js.native
     
     /**
       * Remote members typing events handler
@@ -55,11 +55,11 @@ object typingindicatorMod {
       */
     def send(channelSid: String): js.Any = js.native
     
-    var sentUpdates: js.Any = js.native
+    /* private */ var sentUpdates: js.Any = js.native
     
-    var serviceTypingTimeout: js.Any = js.native
+    /* private */ var serviceTypingTimeout: js.Any = js.native
     
-    val services: js.Any = js.native
+    /* private */ val services: js.Any = js.native
     
     def typingTimeout: Double = js.native
   }
@@ -72,20 +72,16 @@ object typingindicatorMod {
   }
   object TypingIndicatorServices {
     
-    @scala.inline
-    def apply(notificationClient: Notifications, transport: Transport): TypingIndicatorServices = {
+    inline def apply(notificationClient: Notifications, transport: Transport): TypingIndicatorServices = {
       val __obj = js.Dynamic.literal(notificationClient = notificationClient.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypingIndicatorServices]
     }
     
-    @scala.inline
-    implicit class TypingIndicatorServicesMutableBuilder[Self <: TypingIndicatorServices] (val x: Self) extends AnyVal {
+    extension [Self <: TypingIndicatorServices](x: Self) {
       
-      @scala.inline
-      def setNotificationClient(value: Notifications): Self = StObject.set(x, "notificationClient", value.asInstanceOf[js.Any])
+      inline def setNotificationClient(value: Notifications): Self = StObject.set(x, "notificationClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     }
   }
 }

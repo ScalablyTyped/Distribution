@@ -14,28 +14,21 @@ trait NavigationJumpToActionPayload extends StObject {
 }
 object NavigationJumpToActionPayload {
   
-  @scala.inline
-  def apply(routeName: String): NavigationJumpToActionPayload = {
+  inline def apply(routeName: String): NavigationJumpToActionPayload = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationJumpToActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationJumpToActionPayloadMutableBuilder[Self <: NavigationJumpToActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationJumpToActionPayload](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
+    inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
+    inline def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
     
-    @scala.inline
-    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+    inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait NetworkOperatorTetheringAccessPointConfiguration extends StObject {
 }
 object NetworkOperatorTetheringAccessPointConfiguration {
   
-  @scala.inline
-  def apply(passphrase: String, ssid: String): NetworkOperatorTetheringAccessPointConfiguration = {
+  inline def apply(passphrase: String, ssid: String): NetworkOperatorTetheringAccessPointConfiguration = {
     val __obj = js.Dynamic.literal(passphrase = passphrase.asInstanceOf[js.Any], ssid = ssid.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkOperatorTetheringAccessPointConfiguration]
   }
   
-  @scala.inline
-  implicit class NetworkOperatorTetheringAccessPointConfigurationMutableBuilder[Self <: NetworkOperatorTetheringAccessPointConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkOperatorTetheringAccessPointConfiguration](x: Self) {
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
+    inline def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
   }
 }

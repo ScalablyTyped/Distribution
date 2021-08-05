@@ -18,16 +18,13 @@ trait ToggleMultilevelListCommand
 }
 object ToggleMultilevelListCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleMultilevelListCommand = {
+  inline def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleMultilevelListCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ToggleMultilevelListCommand]
   }
   
-  @scala.inline
-  implicit class ToggleMultilevelListCommandMutableBuilder[Self <: ToggleMultilevelListCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ToggleMultilevelListCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

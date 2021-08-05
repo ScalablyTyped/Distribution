@@ -11,28 +11,28 @@ class ThisExpression protected ()
      with typings.typescriptServices.TypeScript.ThisExpression {
   def this(_text: String, _valueText: String) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _astID: js.Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _postComments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _preComments: js.Any = js.native
   
   /* CompleteClass */
   var _start: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _text: js.Any = js.native
   
   /* CompleteClass */
   var _trailingTriviaWidth: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _valueText: js.Any = js.native
   
   /* CompleteClass */

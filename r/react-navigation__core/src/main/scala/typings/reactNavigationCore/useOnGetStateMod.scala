@@ -14,8 +14,7 @@ object useOnGetStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasGetStateGetStateListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetStateGetStateListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(hasGetStateGetStateListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetStateGetStateListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -25,8 +24,7 @@ object useOnGetStateMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getState: () => NavigationState[ParamListBase],
       getStateListeners: Record[String, js.UndefOr[GetStateListener]]
     ): Options = {
@@ -34,14 +32,11 @@ object useOnGetStateMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStateListeners(value: Record[String, js.UndefOr[GetStateListener]]): Self = StObject.set(x, "getStateListeners", value.asInstanceOf[js.Any])
+      inline def setGetStateListeners(value: Record[String, js.UndefOr[GetStateListener]]): Self = StObject.set(x, "getStateListeners", value.asInstanceOf[js.Any])
     }
   }
 }

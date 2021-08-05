@@ -14,19 +14,15 @@ trait Ch extends StObject {
 }
 object Ch {
   
-  @scala.inline
-  def apply(Ch: Chart, Wb: Workbook): Ch = {
+  inline def apply(Ch: Chart, Wb: Workbook): Ch = {
     val __obj = js.Dynamic.literal(Ch = Ch.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ch]
   }
   
-  @scala.inline
-  implicit class ChMutableBuilder[Self <: Ch] (val x: Self) extends AnyVal {
+  extension [Self <: Ch](x: Self) {
     
-    @scala.inline
-    def setCh(value: Chart): Self = StObject.set(x, "Ch", value.asInstanceOf[js.Any])
+    inline def setCh(value: Chart): Self = StObject.set(x, "Ch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
+    inline def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
   }
 }

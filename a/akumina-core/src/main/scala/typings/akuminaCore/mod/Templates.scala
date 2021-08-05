@@ -26,8 +26,7 @@ trait Templates extends StObject {
 }
 object Templates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BindErrorTemplateForWidgets: js.Any => Unit,
     GetCoreTemplate: String => String,
     GetErrorTemplate: js.Object => js.Promise[js.Any],
@@ -40,28 +39,20 @@ object Templates {
     __obj.asInstanceOf[Templates]
   }
   
-  @scala.inline
-  implicit class TemplatesMutableBuilder[Self <: Templates] (val x: Self) extends AnyVal {
+  extension [Self <: Templates](x: Self) {
     
-    @scala.inline
-    def setBindErrorTemplateForWidgets(value: js.Any => Unit): Self = StObject.set(x, "BindErrorTemplateForWidgets", js.Any.fromFunction1(value))
+    inline def setBindErrorTemplateForWidgets(value: js.Any => Unit): Self = StObject.set(x, "BindErrorTemplateForWidgets", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCoreTemplate(value: String => String): Self = StObject.set(x, "GetCoreTemplate", js.Any.fromFunction1(value))
+    inline def setGetCoreTemplate(value: String => String): Self = StObject.set(x, "GetCoreTemplate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetErrorTemplate(value: js.Object => js.Promise[js.Any]): Self = StObject.set(x, "GetErrorTemplate", js.Any.fromFunction1(value))
+    inline def setGetErrorTemplate(value: js.Object => js.Promise[js.Any]): Self = StObject.set(x, "GetErrorTemplate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetViewPrefix(value: () => Unit): Self = StObject.set(x, "GetViewPrefix", js.Any.fromFunction0(value))
+    inline def setGetViewPrefix(value: () => Unit): Self = StObject.set(x, "GetViewPrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVirtualMasterTemplate(value: () => String): Self = StObject.set(x, "GetVirtualMasterTemplate", js.Any.fromFunction0(value))
+    inline def setGetVirtualMasterTemplate(value: () => String): Self = StObject.set(x, "GetVirtualMasterTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParseTemplate(value: (String, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "ParseTemplate", js.Any.fromFunction2(value))
+    inline def setParseTemplate(value: (String, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "ParseTemplate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRequestTemplateFromServer(value: String => js.Promise[js.Any]): Self = StObject.set(x, "RequestTemplateFromServer", js.Any.fromFunction1(value))
+    inline def setRequestTemplateFromServer(value: String => js.Promise[js.Any]): Self = StObject.set(x, "RequestTemplateFromServer", js.Any.fromFunction1(value))
   }
 }

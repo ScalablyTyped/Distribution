@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HttpMethods extends StObject
 object HttpMethods {
   
-  @scala.inline
-  def DELETE: typings.msRest.msRestStrings.DELETE = "DELETE".asInstanceOf[typings.msRest.msRestStrings.DELETE]
+  inline def DELETE: typings.msRest.msRestStrings.DELETE = "DELETE".asInstanceOf[typings.msRest.msRestStrings.DELETE]
   
-  @scala.inline
-  def GET: typings.msRest.msRestStrings.GET = "GET".asInstanceOf[typings.msRest.msRestStrings.GET]
+  inline def GET: typings.msRest.msRestStrings.GET = "GET".asInstanceOf[typings.msRest.msRestStrings.GET]
   
-  @scala.inline
-  def HEAD: typings.msRest.msRestStrings.HEAD = "HEAD".asInstanceOf[typings.msRest.msRestStrings.HEAD]
+  inline def HEAD: typings.msRest.msRestStrings.HEAD = "HEAD".asInstanceOf[typings.msRest.msRestStrings.HEAD]
   
-  @scala.inline
-  def OPTIONS: typings.msRest.msRestStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.msRest.msRestStrings.OPTIONS]
+  inline def OPTIONS: typings.msRest.msRestStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.msRest.msRestStrings.OPTIONS]
   
-  @scala.inline
-  def PATCH: typings.msRest.msRestStrings.PATCH = "PATCH".asInstanceOf[typings.msRest.msRestStrings.PATCH]
+  inline def PATCH: typings.msRest.msRestStrings.PATCH = "PATCH".asInstanceOf[typings.msRest.msRestStrings.PATCH]
   
-  @scala.inline
-  def POST: typings.msRest.msRestStrings.POST = "POST".asInstanceOf[typings.msRest.msRestStrings.POST]
+  inline def POST: typings.msRest.msRestStrings.POST = "POST".asInstanceOf[typings.msRest.msRestStrings.POST]
   
-  @scala.inline
-  def PUT: typings.msRest.msRestStrings.PUT = "PUT".asInstanceOf[typings.msRest.msRestStrings.PUT]
+  inline def PUT: typings.msRest.msRestStrings.PUT = "PUT".asInstanceOf[typings.msRest.msRestStrings.PUT]
   
-  @scala.inline
-  def TRACE: typings.msRest.msRestStrings.TRACE = "TRACE".asInstanceOf[typings.msRest.msRestStrings.TRACE]
+  inline def TRACE: typings.msRest.msRestStrings.TRACE = "TRACE".asInstanceOf[typings.msRest.msRestStrings.TRACE]
 }

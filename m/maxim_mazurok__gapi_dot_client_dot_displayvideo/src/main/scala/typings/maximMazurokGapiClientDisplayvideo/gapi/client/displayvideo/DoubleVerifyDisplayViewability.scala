@@ -14,25 +14,19 @@ trait DoubleVerifyDisplayViewability extends StObject {
 }
 object DoubleVerifyDisplayViewability {
   
-  @scala.inline
-  def apply(): DoubleVerifyDisplayViewability = {
+  inline def apply(): DoubleVerifyDisplayViewability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleVerifyDisplayViewability]
   }
   
-  @scala.inline
-  implicit class DoubleVerifyDisplayViewabilityMutableBuilder[Self <: DoubleVerifyDisplayViewability] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleVerifyDisplayViewability](x: Self) {
     
-    @scala.inline
-    def setIab(value: String): Self = StObject.set(x, "iab", value.asInstanceOf[js.Any])
+    inline def setIab(value: String): Self = StObject.set(x, "iab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIabUndefined: Self = StObject.set(x, "iab", js.undefined)
+    inline def setIabUndefined: Self = StObject.set(x, "iab", js.undefined)
     
-    @scala.inline
-    def setViewableDuring(value: String): Self = StObject.set(x, "viewableDuring", value.asInstanceOf[js.Any])
+    inline def setViewableDuring(value: String): Self = StObject.set(x, "viewableDuring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewableDuringUndefined: Self = StObject.set(x, "viewableDuring", js.undefined)
+    inline def setViewableDuringUndefined: Self = StObject.set(x, "viewableDuring", js.undefined)
   }
 }

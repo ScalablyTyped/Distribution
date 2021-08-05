@@ -19,12 +19,10 @@ trait TextFitToSizeType extends StObject
 object TextFitToSizeType {
   
   /** like `PROPORTIONAL` , but the width of each text row is also scaled proportional. */
-  @scala.inline
-  def ALLLINES: `2` = 2.asInstanceOf[`2`]
+  inline def ALLLINES: `2` = 2.asInstanceOf[`2`]
   
   /** if the shape is scaled, the font is scaled isotropically to fit the available space. Auto line-breaks will keep working */
-  @scala.inline
-  def AUTOFIT: `3` = 3.asInstanceOf[`3`]
+  inline def AUTOFIT: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the area is not filled.
@@ -39,10 +37,8 @@ object TextFitToSizeType {
     *
     * the text size is only defined by the font properties
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** if the shape is scaled, the text character size is scaled proportional */
-  @scala.inline
-  def PROPORTIONAL: `1` = 1.asInstanceOf[`1`]
+  inline def PROPORTIONAL: `1` = 1.asInstanceOf[`1`]
 }

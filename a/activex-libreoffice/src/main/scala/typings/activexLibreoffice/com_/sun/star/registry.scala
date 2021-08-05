@@ -139,8 +139,7 @@ object registry {
        with XInitialization
   object NestedRegistry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RootKey: XRegistryKey,
       URL: String,
       acquire: () => Unit,
@@ -173,11 +172,9 @@ object registry {
   trait RegistryKeyType extends StObject
   object RegistryKeyType {
     
-    @scala.inline
-    def KEY: `0` = 0.asInstanceOf[`0`]
+    inline def KEY: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def LINK: `1` = 1.asInstanceOf[`1`]
+    inline def LINK: `1` = 1.asInstanceOf[`1`]
   }
   
   /**
@@ -200,36 +197,28 @@ object registry {
   object RegistryValueType {
     
     /** the type of the key is ASCII. */
-    @scala.inline
-    def ASCII: `2` = 2.asInstanceOf[`2`]
+    inline def ASCII: `2` = 2.asInstanceOf[`2`]
     
     /** the type of the key is a ASCIILIST. */
-    @scala.inline
-    def ASCIILIST: `6` = 6.asInstanceOf[`6`]
+    inline def ASCIILIST: `6` = 6.asInstanceOf[`6`]
     
     /** the type of the key is binary. */
-    @scala.inline
-    def BINARY: `4` = 4.asInstanceOf[`4`]
+    inline def BINARY: `4` = 4.asInstanceOf[`4`]
     
     /** the type of the key is long. */
-    @scala.inline
-    def LONG: `1` = 1.asInstanceOf[`1`]
+    inline def LONG: `1` = 1.asInstanceOf[`1`]
     
     /** the type of the key is LONGLIST. */
-    @scala.inline
-    def LONGLIST: `5` = 5.asInstanceOf[`5`]
+    inline def LONGLIST: `5` = 5.asInstanceOf[`5`]
     
     /** the type of the key is not defined. */
-    @scala.inline
-    def NOT_DEFINED: `0` = 0.asInstanceOf[`0`]
+    inline def NOT_DEFINED: `0` = 0.asInstanceOf[`0`]
     
     /** the type of the key is a string. */
-    @scala.inline
-    def STRING: `3` = 3.asInstanceOf[`3`]
+    inline def STRING: `3` = 3.asInstanceOf[`3`]
     
     /** the type of the key is a STRINGLIST. */
-    @scala.inline
-    def STRINGLIST: `7` = 7.asInstanceOf[`7`]
+    inline def STRINGLIST: `7` = 7.asInstanceOf[`7`]
   }
   
   /**
@@ -274,8 +263,7 @@ object registry {
   }
   object XImplementationRegistration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       checkInstantiation: String => SafeArray[String],
       getImplementations: (String, String) => SafeArray[String],
@@ -288,20 +276,15 @@ object registry {
       __obj.asInstanceOf[XImplementationRegistration]
     }
     
-    @scala.inline
-    implicit class XImplementationRegistrationMutableBuilder[Self <: XImplementationRegistration] (val x: Self) extends AnyVal {
+    extension [Self <: XImplementationRegistration](x: Self) {
       
-      @scala.inline
-      def setCheckInstantiation(value: String => SafeArray[String]): Self = StObject.set(x, "checkInstantiation", js.Any.fromFunction1(value))
+      inline def setCheckInstantiation(value: String => SafeArray[String]): Self = StObject.set(x, "checkInstantiation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetImplementations(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "getImplementations", js.Any.fromFunction2(value))
+      inline def setGetImplementations(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "getImplementations", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterImplementation(value: (String, String, XSimpleRegistry) => Unit): Self = StObject.set(x, "registerImplementation", js.Any.fromFunction3(value))
+      inline def setRegisterImplementation(value: (String, String, XSimpleRegistry) => Unit): Self = StObject.set(x, "registerImplementation", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRevokeImplementation(value: (String, XSimpleRegistry) => Boolean): Self = StObject.set(x, "revokeImplementation", js.Any.fromFunction2(value))
+      inline def setRevokeImplementation(value: (String, XSimpleRegistry) => Boolean): Self = StObject.set(x, "revokeImplementation", js.Any.fromFunction2(value))
     }
   }
   
@@ -330,8 +313,7 @@ object registry {
   }
   object XImplementationRegistration2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       checkInstantiation: String => SafeArray[String],
       getImplementations: (String, String) => SafeArray[String],
@@ -345,11 +327,9 @@ object registry {
       __obj.asInstanceOf[XImplementationRegistration2]
     }
     
-    @scala.inline
-    implicit class XImplementationRegistration2MutableBuilder[Self <: XImplementationRegistration2] (val x: Self) extends AnyVal {
+    extension [Self <: XImplementationRegistration2](x: Self) {
       
-      @scala.inline
-      def setRegisterImplementationWithLocation(value: (String, String, String, XSimpleRegistry) => Unit): Self = StObject.set(x, "registerImplementationWithLocation", js.Any.fromFunction4(value))
+      inline def setRegisterImplementationWithLocation(value: (String, String, String, XSimpleRegistry) => Unit): Self = StObject.set(x, "registerImplementationWithLocation", js.Any.fromFunction4(value))
     }
   }
   
@@ -639,8 +619,7 @@ object registry {
   }
   object XRegistryKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AsciiListValue: SafeArray[String],
       AsciiValue: String,
       BinaryValue: SafeArray[Double],
@@ -687,122 +666,83 @@ object registry {
       __obj.asInstanceOf[XRegistryKey]
     }
     
-    @scala.inline
-    implicit class XRegistryKeyMutableBuilder[Self <: XRegistryKey] (val x: Self) extends AnyVal {
+    extension [Self <: XRegistryKey](x: Self) {
       
-      @scala.inline
-      def setAsciiListValue(value: SafeArray[String]): Self = StObject.set(x, "AsciiListValue", value.asInstanceOf[js.Any])
+      inline def setAsciiListValue(value: SafeArray[String]): Self = StObject.set(x, "AsciiListValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsciiValue(value: String): Self = StObject.set(x, "AsciiValue", value.asInstanceOf[js.Any])
+      inline def setAsciiValue(value: String): Self = StObject.set(x, "AsciiValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryValue(value: SafeArray[Double]): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
+      inline def setBinaryValue(value: SafeArray[Double]): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseKey(value: () => Unit): Self = StObject.set(x, "closeKey", js.Any.fromFunction0(value))
+      inline def setCloseKey(value: () => Unit): Self = StObject.set(x, "closeKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateKey(value: String => XRegistryKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
+      inline def setCreateKey(value: String => XRegistryKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateLink(value: (String, String) => Boolean): Self = StObject.set(x, "createLink", js.Any.fromFunction2(value))
+      inline def setCreateLink(value: (String, String) => Boolean): Self = StObject.set(x, "createLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeleteKey(value: String => Unit): Self = StObject.set(x, "deleteKey", js.Any.fromFunction1(value))
+      inline def setDeleteKey(value: String => Unit): Self = StObject.set(x, "deleteKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteLink(value: String => Unit): Self = StObject.set(x, "deleteLink", js.Any.fromFunction1(value))
+      inline def setDeleteLink(value: String => Unit): Self = StObject.set(x, "deleteLink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAsciiListValue(value: () => SafeArray[String]): Self = StObject.set(x, "getAsciiListValue", js.Any.fromFunction0(value))
+      inline def setGetAsciiListValue(value: () => SafeArray[String]): Self = StObject.set(x, "getAsciiListValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAsciiValue(value: () => String): Self = StObject.set(x, "getAsciiValue", js.Any.fromFunction0(value))
+      inline def setGetAsciiValue(value: () => String): Self = StObject.set(x, "getAsciiValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBinaryValue(value: () => SafeArray[Double]): Self = StObject.set(x, "getBinaryValue", js.Any.fromFunction0(value))
+      inline def setGetBinaryValue(value: () => SafeArray[Double]): Self = StObject.set(x, "getBinaryValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetKeyNames(value: () => SafeArray[String]): Self = StObject.set(x, "getKeyNames", js.Any.fromFunction0(value))
+      inline def setGetKeyNames(value: () => SafeArray[String]): Self = StObject.set(x, "getKeyNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetKeyType(value: String => RegistryKeyType): Self = StObject.set(x, "getKeyType", js.Any.fromFunction1(value))
+      inline def setGetKeyType(value: String => RegistryKeyType): Self = StObject.set(x, "getKeyType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLinkTarget(value: String => String): Self = StObject.set(x, "getLinkTarget", js.Any.fromFunction1(value))
+      inline def setGetLinkTarget(value: String => String): Self = StObject.set(x, "getLinkTarget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLongListValue(value: () => SafeArray[Double]): Self = StObject.set(x, "getLongListValue", js.Any.fromFunction0(value))
+      inline def setGetLongListValue(value: () => SafeArray[Double]): Self = StObject.set(x, "getLongListValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLongValue(value: () => Double): Self = StObject.set(x, "getLongValue", js.Any.fromFunction0(value))
+      inline def setGetLongValue(value: () => Double): Self = StObject.set(x, "getLongValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResolvedName(value: String => String): Self = StObject.set(x, "getResolvedName", js.Any.fromFunction1(value))
+      inline def setGetResolvedName(value: String => String): Self = StObject.set(x, "getResolvedName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStringListValue(value: () => SafeArray[String]): Self = StObject.set(x, "getStringListValue", js.Any.fromFunction0(value))
+      inline def setGetStringListValue(value: () => SafeArray[String]): Self = StObject.set(x, "getStringListValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStringValue(value: () => String): Self = StObject.set(x, "getStringValue", js.Any.fromFunction0(value))
+      inline def setGetStringValue(value: () => String): Self = StObject.set(x, "getStringValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValueType(value: () => RegistryValueType): Self = StObject.set(x, "getValueType", js.Any.fromFunction0(value))
+      inline def setGetValueType(value: () => RegistryValueType): Self = StObject.set(x, "getValueType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+      inline def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
+      inline def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNames(value: SafeArray[String]): Self = StObject.set(x, "KeyNames", value.asInstanceOf[js.Any])
+      inline def setKeyNames(value: SafeArray[String]): Self = StObject.set(x, "KeyNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongListValue(value: SafeArray[Double]): Self = StObject.set(x, "LongListValue", value.asInstanceOf[js.Any])
+      inline def setLongListValue(value: SafeArray[Double]): Self = StObject.set(x, "LongListValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongValue(value: Double): Self = StObject.set(x, "LongValue", value.asInstanceOf[js.Any])
+      inline def setLongValue(value: Double): Self = StObject.set(x, "LongValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenKey(value: String => XRegistryKey): Self = StObject.set(x, "openKey", js.Any.fromFunction1(value))
+      inline def setOpenKey(value: String => XRegistryKey): Self = StObject.set(x, "openKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenKeys(value: () => SafeArray[XRegistryKey]): Self = StObject.set(x, "openKeys", js.Any.fromFunction0(value))
+      inline def setOpenKeys(value: () => SafeArray[XRegistryKey]): Self = StObject.set(x, "openKeys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetAsciiListValue(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setAsciiListValue", js.Any.fromFunction1(value))
+      inline def setSetAsciiListValue(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setAsciiListValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAsciiValue(value: String => Unit): Self = StObject.set(x, "setAsciiValue", js.Any.fromFunction1(value))
+      inline def setSetAsciiValue(value: String => Unit): Self = StObject.set(x, "setAsciiValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBinaryValue(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setBinaryValue", js.Any.fromFunction1(value))
+      inline def setSetBinaryValue(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setBinaryValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLongListValue(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setLongListValue", js.Any.fromFunction1(value))
+      inline def setSetLongListValue(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setLongListValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLongValue(value: Double => Unit): Self = StObject.set(x, "setLongValue", js.Any.fromFunction1(value))
+      inline def setSetLongValue(value: Double => Unit): Self = StObject.set(x, "setLongValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStringListValue(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setStringListValue", js.Any.fromFunction1(value))
+      inline def setSetStringListValue(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setStringListValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStringValue(value: String => Unit): Self = StObject.set(x, "setStringValue", js.Any.fromFunction1(value))
+      inline def setSetStringValue(value: String => Unit): Self = StObject.set(x, "setStringValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringListValue(value: SafeArray[String]): Self = StObject.set(x, "StringListValue", value.asInstanceOf[js.Any])
+      inline def setStringListValue(value: SafeArray[String]): Self = StObject.set(x, "StringListValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+      inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueType(value: RegistryValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: RegistryValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -878,8 +818,7 @@ object registry {
   }
   object XSimpleRegistry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RootKey: XRegistryKey,
       URL: String,
       acquire: () => Unit,
@@ -898,38 +837,27 @@ object registry {
       __obj.asInstanceOf[XSimpleRegistry]
     }
     
-    @scala.inline
-    implicit class XSimpleRegistryMutableBuilder[Self <: XSimpleRegistry] (val x: Self) extends AnyVal {
+    extension [Self <: XSimpleRegistry](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootKey(value: () => XRegistryKey): Self = StObject.set(x, "getRootKey", js.Any.fromFunction0(value))
+      inline def setGetRootKey(value: () => XRegistryKey): Self = StObject.set(x, "getRootKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+      inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+      inline def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMergeKey(value: (String, String) => Unit): Self = StObject.set(x, "mergeKey", js.Any.fromFunction2(value))
+      inline def setMergeKey(value: (String, String) => Unit): Self = StObject.set(x, "mergeKey", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpen(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction3(value))
+      inline def setOpen(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRootKey(value: XRegistryKey): Self = StObject.set(x, "RootKey", value.asInstanceOf[js.Any])
+      inline def setRootKey(value: XRegistryKey): Self = StObject.set(x, "RootKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
 }

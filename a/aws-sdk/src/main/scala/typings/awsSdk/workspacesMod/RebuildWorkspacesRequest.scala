@@ -13,19 +13,15 @@ trait RebuildWorkspacesRequest extends StObject {
 }
 object RebuildWorkspacesRequest {
   
-  @scala.inline
-  def apply(RebuildWorkspaceRequests: RebuildWorkspaceRequests): RebuildWorkspacesRequest = {
+  inline def apply(RebuildWorkspaceRequests: RebuildWorkspaceRequests): RebuildWorkspacesRequest = {
     val __obj = js.Dynamic.literal(RebuildWorkspaceRequests = RebuildWorkspaceRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebuildWorkspacesRequest]
   }
   
-  @scala.inline
-  implicit class RebuildWorkspacesRequestMutableBuilder[Self <: RebuildWorkspacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RebuildWorkspacesRequest](x: Self) {
     
-    @scala.inline
-    def setRebuildWorkspaceRequests(value: RebuildWorkspaceRequests): Self = StObject.set(x, "RebuildWorkspaceRequests", value.asInstanceOf[js.Any])
+    inline def setRebuildWorkspaceRequests(value: RebuildWorkspaceRequests): Self = StObject.set(x, "RebuildWorkspaceRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebuildWorkspaceRequestsVarargs(value: RebuildRequest*): Self = StObject.set(x, "RebuildWorkspaceRequests", js.Array(value :_*))
+    inline def setRebuildWorkspaceRequestsVarargs(value: RebuildRequest*): Self = StObject.set(x, "RebuildWorkspaceRequests", js.Array(value :_*))
   }
 }

@@ -15,28 +15,21 @@ trait RequestValidators extends StObject {
 }
 object RequestValidators {
   
-  @scala.inline
-  def apply(): RequestValidators = {
+  inline def apply(): RequestValidators = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestValidators]
   }
   
-  @scala.inline
-  implicit class RequestValidatorsMutableBuilder[Self <: RequestValidators] (val x: Self) extends AnyVal {
+  extension [Self <: RequestValidators](x: Self) {
     
-    @scala.inline
-    def setItems(value: ListOfRequestValidator): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ListOfRequestValidator): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: RequestValidator*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: RequestValidator*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

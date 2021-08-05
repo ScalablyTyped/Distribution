@@ -13,16 +13,13 @@ trait SetLocalFontsEnabledRequest extends StObject {
 }
 object SetLocalFontsEnabledRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetLocalFontsEnabledRequest = {
+  inline def apply(enabled: Boolean): SetLocalFontsEnabledRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLocalFontsEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetLocalFontsEnabledRequestMutableBuilder[Self <: SetLocalFontsEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetLocalFontsEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

@@ -14,9 +14,9 @@ object indexedDbStorageMod {
        with Storage {
     def this(dbName: String) = this()
     
-    val dbName: js.Any = js.native
+    /* private */ val dbName: js.Any = js.native
     
-    var getDb: js.Any = js.native
+    /* private */ var getDb: js.Any = js.native
     
     /* CompleteClass */
     override def getItem(key: String): String | Null | (js.Promise[String | Null]) = js.native
@@ -27,6 +27,6 @@ object indexedDbStorageMod {
     /* CompleteClass */
     override def setItem(key: String, data: String): Unit | js.Promise[Unit] = js.native
     
-    var withObjectStore: js.Any = js.native
+    /* private */ var withObjectStore: js.Any = js.native
   }
 }

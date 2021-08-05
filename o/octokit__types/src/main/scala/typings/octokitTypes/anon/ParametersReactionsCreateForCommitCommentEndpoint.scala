@@ -18,8 +18,7 @@ trait ParametersReactionsCreateForCommitCommentEndpoint extends StObject {
 }
 object ParametersReactionsCreateForCommitCommentEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReactionsCreateForCommitCommentEndpoint,
     request: ReactionsCreateForCommitCommentRequestOptions,
     response: OctokitResponse[ReactionsCreateForCommitCommentResponseData]
@@ -28,16 +27,12 @@ object ParametersReactionsCreateForCommitCommentEndpoint {
     __obj.asInstanceOf[ParametersReactionsCreateForCommitCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReactionsCreateForCommitCommentEndpointMutableBuilder[Self <: ParametersReactionsCreateForCommitCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReactionsCreateForCommitCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReactionsCreateForCommitCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReactionsCreateForCommitCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReactionsCreateForCommitCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReactionsCreateForCommitCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReactionsCreateForCommitCommentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReactionsCreateForCommitCommentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

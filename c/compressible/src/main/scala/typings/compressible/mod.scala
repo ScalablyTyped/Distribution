@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(`type`: String): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  inline def apply(`type`: String): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   
   @JSImport("compressible", JSImport.Namespace)
   @js.native

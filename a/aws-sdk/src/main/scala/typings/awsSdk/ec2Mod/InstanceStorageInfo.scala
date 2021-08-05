@@ -23,34 +23,25 @@ trait InstanceStorageInfo extends StObject {
 }
 object InstanceStorageInfo {
   
-  @scala.inline
-  def apply(): InstanceStorageInfo = {
+  inline def apply(): InstanceStorageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceStorageInfo]
   }
   
-  @scala.inline
-  implicit class InstanceStorageInfoMutableBuilder[Self <: InstanceStorageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceStorageInfo](x: Self) {
     
-    @scala.inline
-    def setDisks(value: DiskInfoList): Self = StObject.set(x, "Disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: DiskInfoList): Self = StObject.set(x, "Disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "Disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "Disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: DiskInfo*): Self = StObject.set(x, "Disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: DiskInfo*): Self = StObject.set(x, "Disks", js.Array(value :_*))
     
-    @scala.inline
-    def setNvmeSupport(value: EphemeralNvmeSupport): Self = StObject.set(x, "NvmeSupport", value.asInstanceOf[js.Any])
+    inline def setNvmeSupport(value: EphemeralNvmeSupport): Self = StObject.set(x, "NvmeSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNvmeSupportUndefined: Self = StObject.set(x, "NvmeSupport", js.undefined)
+    inline def setNvmeSupportUndefined: Self = StObject.set(x, "NvmeSupport", js.undefined)
     
-    @scala.inline
-    def setTotalSizeInGB(value: DiskSize): Self = StObject.set(x, "TotalSizeInGB", value.asInstanceOf[js.Any])
+    inline def setTotalSizeInGB(value: DiskSize): Self = StObject.set(x, "TotalSizeInGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeInGBUndefined: Self = StObject.set(x, "TotalSizeInGB", js.undefined)
+    inline def setTotalSizeInGBUndefined: Self = StObject.set(x, "TotalSizeInGB", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait PartialStyleRulesStepCont extends StObject {
 }
 object PartialStyleRulesStepCont {
   
-  @scala.inline
-  def apply(): PartialStyleRulesStepCont = {
+  inline def apply(): PartialStyleRulesStepCont = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesStepCont]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesStepContMutableBuilder[Self <: PartialStyleRulesStepCont] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesStepCont](x: Self) {
     
-    @scala.inline
-    def setLast(value: CSSProperties): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: CSSProperties): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTransition(value: CSSProperties): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: CSSProperties): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

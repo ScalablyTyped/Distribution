@@ -23,29 +23,23 @@ trait CreateSnapshotRequest extends StObject {
 }
 object CreateSnapshotRequest {
   
-  @scala.inline
-  def apply(): CreateSnapshotRequest = {
+  inline def apply(): CreateSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateSnapshotRequestMutableBuilder[Self <: CreateSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.CreateSnapshotRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

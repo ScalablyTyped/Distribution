@@ -16,22 +16,17 @@ trait SchemaGooglePrivacyDlpV2KAnonymityResult extends StObject {
 }
 object SchemaGooglePrivacyDlpV2KAnonymityResult {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2KAnonymityResult = {
+  inline def apply(): SchemaGooglePrivacyDlpV2KAnonymityResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2KAnonymityResult]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KAnonymityResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2KAnonymityResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2KAnonymityResult](x: Self) {
     
-    @scala.inline
-    def setEquivalenceClassHistogramBuckets(value: js.Array[SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket]): Self = StObject.set(x, "equivalenceClassHistogramBuckets", value.asInstanceOf[js.Any])
+    inline def setEquivalenceClassHistogramBuckets(value: js.Array[SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket]): Self = StObject.set(x, "equivalenceClassHistogramBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquivalenceClassHistogramBucketsUndefined: Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.undefined)
+    inline def setEquivalenceClassHistogramBucketsUndefined: Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.undefined)
     
-    @scala.inline
-    def setEquivalenceClassHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket*): Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.Array(value :_*))
+    inline def setEquivalenceClassHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket*): Self = StObject.set(x, "equivalenceClassHistogramBuckets", js.Array(value :_*))
   }
 }

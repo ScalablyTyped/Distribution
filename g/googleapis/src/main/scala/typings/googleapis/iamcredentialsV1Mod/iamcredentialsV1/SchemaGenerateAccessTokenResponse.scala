@@ -18,25 +18,19 @@ trait SchemaGenerateAccessTokenResponse extends StObject {
 }
 object SchemaGenerateAccessTokenResponse {
   
-  @scala.inline
-  def apply(): SchemaGenerateAccessTokenResponse = {
+  inline def apply(): SchemaGenerateAccessTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateAccessTokenResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateAccessTokenResponseMutableBuilder[Self <: SchemaGenerateAccessTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateAccessTokenResponse](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
   }
 }

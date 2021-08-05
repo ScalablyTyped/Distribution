@@ -58,16 +58,12 @@ object mod {
   @js.native
   val GraphQLContext: Context[GraphQL] = js.native
   
-  @scala.inline
-  def reportCacheErrors(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def reportCacheErrors(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def ssr(grapphql: GraphQL, node: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ssr(grapphql: GraphQL, node: ReactNode, render: js.Function1[/* element */ ReactNode, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any], render.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ssr(grapphql: GraphQL, node: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ssr(grapphql: GraphQL, node: ReactNode, render: js.Function1[/* element */ ReactNode, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any], render.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraphQL")(options.asInstanceOf[js.Any]).asInstanceOf[GraphQLOperationStatus[T]]
+  inline def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraphQL")(options.asInstanceOf[js.Any]).asInstanceOf[GraphQLOperationStatus[T]]
   
   type GraphQLCache = StringDictionary[GraphQLCacheValue[js.Any]]
   
@@ -87,44 +83,32 @@ object mod {
   }
   object GraphQLCacheValue {
     
-    @scala.inline
-    def apply[T](data: T): GraphQLCacheValue[T] = {
+    inline def apply[T](data: T): GraphQLCacheValue[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fetchError = null, graphQLErrors = null, httpError = null, parseError = null)
       __obj.asInstanceOf[GraphQLCacheValue[T]]
     }
     
-    @scala.inline
-    implicit class GraphQLCacheValueMutableBuilder[Self <: GraphQLCacheValue[?], T] (val x: Self & GraphQLCacheValue[T]) extends AnyVal {
+    extension [Self <: GraphQLCacheValue[?], T](x: Self & GraphQLCacheValue[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchError(value: String): Self = StObject.set(x, "fetchError", value.asInstanceOf[js.Any])
+      inline def setFetchError(value: String): Self = StObject.set(x, "fetchError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchErrorNull: Self = StObject.set(x, "fetchError", null)
+      inline def setFetchErrorNull: Self = StObject.set(x, "fetchError", null)
       
-      @scala.inline
-      def setGraphQLErrors(value: js.Array[Locations]): Self = StObject.set(x, "graphQLErrors", value.asInstanceOf[js.Any])
+      inline def setGraphQLErrors(value: js.Array[Locations]): Self = StObject.set(x, "graphQLErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphQLErrorsNull: Self = StObject.set(x, "graphQLErrors", null)
+      inline def setGraphQLErrorsNull: Self = StObject.set(x, "graphQLErrors", null)
       
-      @scala.inline
-      def setGraphQLErrorsVarargs(value: Locations*): Self = StObject.set(x, "graphQLErrors", js.Array(value :_*))
+      inline def setGraphQLErrorsVarargs(value: Locations*): Self = StObject.set(x, "graphQLErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setHttpError(value: HttpError): Self = StObject.set(x, "httpError", value.asInstanceOf[js.Any])
+      inline def setHttpError(value: HttpError): Self = StObject.set(x, "httpError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpErrorNull: Self = StObject.set(x, "httpError", null)
+      inline def setHttpErrorNull: Self = StObject.set(x, "httpError", null)
       
-      @scala.inline
-      def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
+      inline def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseErrorNull: Self = StObject.set(x, "parseError", null)
+      inline def setParseErrorNull: Self = StObject.set(x, "parseError", null)
     }
   }
   
@@ -140,29 +124,22 @@ object mod {
   }
   object GraphQLFetchOptions {
     
-    @scala.inline
-    def apply(body: String | FormData, headers: Headers, url: String): GraphQLFetchOptions = {
+    inline def apply(body: String | FormData, headers: Headers, url: String): GraphQLFetchOptions = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], credentials = null)
       __obj.asInstanceOf[GraphQLFetchOptions]
     }
     
-    @scala.inline
-    implicit class GraphQLFetchOptionsMutableBuilder[Self <: GraphQLFetchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLFetchOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | FormData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | FormData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsNull: Self = StObject.set(x, "credentials", null)
+      inline def setCredentialsNull: Self = StObject.set(x, "credentials", null)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,26 +157,20 @@ object mod {
   }
   object GraphQLOperationLoading {
     
-    @scala.inline
-    def apply[T](cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[T]]): GraphQLOperationLoading[T] = {
+    inline def apply[T](cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[T]]): GraphQLOperationLoading[T] = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValuePromise = cacheValuePromise.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLOperationLoading[T]]
     }
     
-    @scala.inline
-    implicit class GraphQLOperationLoadingMutableBuilder[Self <: GraphQLOperationLoading[?], T] (val x: Self & GraphQLOperationLoading[T]) extends AnyVal {
+    extension [Self <: GraphQLOperationLoading[?], T](x: Self & GraphQLOperationLoading[T]) {
       
-      @scala.inline
-      def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheValue(value: GraphQLCacheValue[T]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
+      inline def setCacheValue(value: GraphQLCacheValue[T]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[T]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
+      inline def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[T]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheValueUndefined: Self = StObject.set(x, "cacheValue", js.undefined)
+      inline def setCacheValueUndefined: Self = StObject.set(x, "cacheValue", js.undefined)
     }
   }
   
@@ -215,29 +186,22 @@ object mod {
   }
   object GraphQLOperationStatus {
     
-    @scala.inline
-    def apply[T](cacheKey: GraphQLCacheKey, load: () => Unit, loading: Boolean): GraphQLOperationStatus[T] = {
+    inline def apply[T](cacheKey: GraphQLCacheKey, load: () => Unit, loading: Boolean): GraphQLOperationStatus[T] = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loading = loading.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLOperationStatus[T]]
     }
     
-    @scala.inline
-    implicit class GraphQLOperationStatusMutableBuilder[Self <: GraphQLOperationStatus[?], T] (val x: Self & GraphQLOperationStatus[T]) extends AnyVal {
+    extension [Self <: GraphQLOperationStatus[?], T](x: Self & GraphQLOperationStatus[T]) {
       
-      @scala.inline
-      def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheValue(value: GraphQLCacheValue[T]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
+      inline def setCacheValue(value: GraphQLCacheValue[T]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheValueUndefined: Self = StObject.set(x, "cacheValue", js.undefined)
+      inline def setCacheValueUndefined: Self = StObject.set(x, "cacheValue", js.undefined)
       
-      @scala.inline
-      def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,20 +213,16 @@ object mod {
   }
   object HttpError {
     
-    @scala.inline
-    def apply(status: Double, statusText: String): HttpError = {
+    inline def apply(status: Double, statusText: String): HttpError = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpError]
     }
     
-    @scala.inline
-    implicit class HttpErrorMutableBuilder[Self <: HttpError] (val x: Self) extends AnyVal {
+    extension [Self <: HttpError](x: Self) {
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
 }

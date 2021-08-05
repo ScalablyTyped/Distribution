@@ -23,31 +23,23 @@ trait LifecycleExpiration extends StObject {
 }
 object LifecycleExpiration {
   
-  @scala.inline
-  def apply(): LifecycleExpiration = {
+  inline def apply(): LifecycleExpiration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecycleExpiration]
   }
   
-  @scala.inline
-  implicit class LifecycleExpirationMutableBuilder[Self <: LifecycleExpiration] (val x: Self) extends AnyVal {
+  extension [Self <: LifecycleExpiration](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
-    @scala.inline
-    def setDays(value: Days): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Days): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
+    inline def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
     
-    @scala.inline
-    def setExpiredObjectDeleteMarker(value: ExpiredObjectDeleteMarker): Self = StObject.set(x, "ExpiredObjectDeleteMarker", value.asInstanceOf[js.Any])
+    inline def setExpiredObjectDeleteMarker(value: ExpiredObjectDeleteMarker): Self = StObject.set(x, "ExpiredObjectDeleteMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredObjectDeleteMarkerUndefined: Self = StObject.set(x, "ExpiredObjectDeleteMarker", js.undefined)
+    inline def setExpiredObjectDeleteMarkerUndefined: Self = StObject.set(x, "ExpiredObjectDeleteMarker", js.undefined)
   }
 }

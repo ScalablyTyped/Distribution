@@ -139,8 +139,7 @@ object keyboardMod {
         * @param event The keyboard event to read.
         * @returns The current state of keyboard modifiers.
         */
-      @scala.inline
-      def fromKeyboardEvent(event: KeyboardEvent): ModifierState = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeyboardEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ModifierState]
+      inline def fromKeyboardEvent(event: KeyboardEvent): ModifierState = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeyboardEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ModifierState]
     }
   }
 }

@@ -20,8 +20,7 @@ trait IgEditorFilterMethods extends StObject {
 }
 object IgEditorFilterMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     exitEditMode: () => Unit,
     hasInvalidMessage: () => Unit,
@@ -33,25 +32,18 @@ object IgEditorFilterMethods {
     __obj.asInstanceOf[IgEditorFilterMethods]
   }
   
-  @scala.inline
-  implicit class IgEditorFilterMethodsMutableBuilder[Self <: IgEditorFilterMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgEditorFilterMethods](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExitEditMode(value: () => Unit): Self = StObject.set(x, "exitEditMode", js.Any.fromFunction0(value))
+    inline def setExitEditMode(value: () => Unit): Self = StObject.set(x, "exitEditMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasInvalidMessage(value: () => Unit): Self = StObject.set(x, "hasInvalidMessage", js.Any.fromFunction0(value))
+    inline def setHasInvalidMessage(value: () => Unit): Self = StObject.set(x, "hasInvalidMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFocus(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction2(value))
+    inline def setSetFocus(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidator(value: () => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction0(value))
+    inline def setValidator(value: () => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction0(value))
   }
 }

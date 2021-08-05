@@ -13,16 +13,13 @@ trait GatewayRouteStatus extends StObject {
 }
 object GatewayRouteStatus {
   
-  @scala.inline
-  def apply(status: GatewayRouteStatusCode): GatewayRouteStatus = {
+  inline def apply(status: GatewayRouteStatusCode): GatewayRouteStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayRouteStatus]
   }
   
-  @scala.inline
-  implicit class GatewayRouteStatusMutableBuilder[Self <: GatewayRouteStatus] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayRouteStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GatewayRouteStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GatewayRouteStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

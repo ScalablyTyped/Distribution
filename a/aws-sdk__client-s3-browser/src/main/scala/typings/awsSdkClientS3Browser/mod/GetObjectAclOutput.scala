@@ -10,8 +10,7 @@ trait GetObjectAclOutput
      with typings.awsSdkClientS3Browser.typesGetObjectAclOutputMod.GetObjectAclOutput
 object GetObjectAclOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetObjectAclOutput = {
+  inline def apply($metadata: ResponseMetadata): GetObjectAclOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectAclOutput]
   }

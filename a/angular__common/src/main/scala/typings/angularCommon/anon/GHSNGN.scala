@@ -12,25 +12,19 @@ trait GHSNGN extends StObject {
 }
 object GHSNGN {
   
-  @scala.inline
-  def apply(GHS: js.Array[String], NGN: js.Array[String]): GHSNGN = {
+  inline def apply(GHS: js.Array[String], NGN: js.Array[String]): GHSNGN = {
     val __obj = js.Dynamic.literal(GHS = GHS.asInstanceOf[js.Any], NGN = NGN.asInstanceOf[js.Any])
     __obj.asInstanceOf[GHSNGN]
   }
   
-  @scala.inline
-  implicit class GHSNGNMutableBuilder[Self <: GHSNGN] (val x: Self) extends AnyVal {
+  extension [Self <: GHSNGN](x: Self) {
     
-    @scala.inline
-    def setGHS(value: js.Array[String]): Self = StObject.set(x, "GHS", value.asInstanceOf[js.Any])
+    inline def setGHS(value: js.Array[String]): Self = StObject.set(x, "GHS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGHSVarargs(value: String*): Self = StObject.set(x, "GHS", js.Array(value :_*))
+    inline def setGHSVarargs(value: String*): Self = StObject.set(x, "GHS", js.Array(value :_*))
     
-    @scala.inline
-    def setNGN(value: js.Array[String]): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
+    inline def setNGN(value: js.Array[String]): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNGNVarargs(value: String*): Self = StObject.set(x, "NGN", js.Array(value :_*))
+    inline def setNGNVarargs(value: String*): Self = StObject.set(x, "NGN", js.Array(value :_*))
   }
 }

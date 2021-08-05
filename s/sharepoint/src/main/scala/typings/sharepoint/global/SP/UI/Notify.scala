@@ -143,12 +143,9 @@ object Notify {
     override def SetEventHandler(eventId: EventID, eventHandler: js.Any): Unit = js.native
   }
   
-  @scala.inline
-  def addNotification(strHtml: String, bSticky: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addNotification")(strHtml.asInstanceOf[js.Any], bSticky.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addNotification(strHtml: String, bSticky: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addNotification")(strHtml.asInstanceOf[js.Any], bSticky.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def removeNotification(nid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNotification")(nid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeNotification(nid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNotification")(nid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def showLoadingNotification(bSticky: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("showLoadingNotification")(bSticky.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def showLoadingNotification(bSticky: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("showLoadingNotification")(bSticky.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -22,19 +22,14 @@ object TSTypeOperator {
   @js.native
   def apply(typeAnnotation: TSType): TSTypeOperator = js.native
   
-  @scala.inline
-  implicit class TSTypeOperatorMutableBuilder[Self <: TSTypeOperator] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeOperator](x: Self) {
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNull: Self = StObject.set(x, "operator", null)
+    inline def setOperatorNull: Self = StObject.set(x, "operator", null)
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSTypeOperator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSTypeOperator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TSType): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

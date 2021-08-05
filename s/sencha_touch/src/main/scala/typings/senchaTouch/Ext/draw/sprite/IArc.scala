@@ -19,31 +19,23 @@ trait IArc
 }
 object IArc {
   
-  @scala.inline
-  def apply(): IArc = {
+  inline def apply(): IArc = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IArc]
   }
   
-  @scala.inline
-  implicit class IArcMutableBuilder[Self <: IArc] (val x: Self) extends AnyVal {
+  extension [Self <: IArc](x: Self) {
     
-    @scala.inline
-    def setAnticlockwise(value: Boolean): Self = StObject.set(x, "anticlockwise", value.asInstanceOf[js.Any])
+    inline def setAnticlockwise(value: Boolean): Self = StObject.set(x, "anticlockwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnticlockwiseUndefined: Self = StObject.set(x, "anticlockwise", js.undefined)
+    inline def setAnticlockwiseUndefined: Self = StObject.set(x, "anticlockwise", js.undefined)
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait BuildCoverage extends StObject {
 }
 object BuildCoverage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codeCoverageFileUrl: String,
     configuration: BuildConfiguration,
     lastError: String,
@@ -30,25 +29,18 @@ object BuildCoverage {
     __obj.asInstanceOf[BuildCoverage]
   }
   
-  @scala.inline
-  implicit class BuildCoverageMutableBuilder[Self <: BuildCoverage] (val x: Self) extends AnyVal {
+  extension [Self <: BuildCoverage](x: Self) {
     
-    @scala.inline
-    def setCodeCoverageFileUrl(value: String): Self = StObject.set(x, "codeCoverageFileUrl", value.asInstanceOf[js.Any])
+    inline def setCodeCoverageFileUrl(value: String): Self = StObject.set(x, "codeCoverageFileUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguration(value: BuildConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: BuildConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
+    inline def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModules(value: js.Array[ModuleCoverage]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: js.Array[ModuleCoverage]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulesVarargs(value: ModuleCoverage*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: ModuleCoverage*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

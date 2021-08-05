@@ -13,20 +13,16 @@ trait PickTypeParameterTypetype extends StObject {
 }
 object PickTypeParameterTypetype {
   
-  @scala.inline
-  def apply(`type`: ModelToObject[String] | String): PickTypeParameterTypetype = {
+  inline def apply(`type`: ModelToObject[String] | String): PickTypeParameterTypetype = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickTypeParameterTypetype]
   }
   
-  @scala.inline
-  implicit class PickTypeParameterTypetypeMutableBuilder[Self <: PickTypeParameterTypetype] (val x: Self) extends AnyVal {
+  extension [Self <: PickTypeParameterTypetype](x: Self) {
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

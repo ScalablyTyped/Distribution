@@ -12,28 +12,21 @@ trait Route extends StObject {
 }
 object Route {
   
-  @scala.inline
-  def apply(): Route = {
+  inline def apply(): Route = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Route]
   }
   
-  @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+  extension [Self <: Route](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[Route]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Route]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadChildren(value: String | Type | js.Any): Self = StObject.set(x, "loadChildren", value.asInstanceOf[js.Any])
+    inline def setLoadChildren(value: String | Type | js.Any): Self = StObject.set(x, "loadChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
+    inline def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
   }
 }

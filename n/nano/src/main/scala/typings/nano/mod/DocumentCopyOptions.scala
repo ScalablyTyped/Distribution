@@ -10,19 +10,15 @@ trait DocumentCopyOptions extends StObject {
 }
 object DocumentCopyOptions {
   
-  @scala.inline
-  def apply(): DocumentCopyOptions = {
+  inline def apply(): DocumentCopyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentCopyOptions]
   }
   
-  @scala.inline
-  implicit class DocumentCopyOptionsMutableBuilder[Self <: DocumentCopyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentCopyOptions](x: Self) {
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

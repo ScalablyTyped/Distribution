@@ -15,19 +15,15 @@ trait UpdateSMBSecurityStrategyInput extends StObject {
 }
 object UpdateSMBSecurityStrategyInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN, SMBSecurityStrategy: SMBSecurityStrategy): UpdateSMBSecurityStrategyInput = {
+  inline def apply(GatewayARN: GatewayARN, SMBSecurityStrategy: SMBSecurityStrategy): UpdateSMBSecurityStrategyInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], SMBSecurityStrategy = SMBSecurityStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSMBSecurityStrategyInput]
   }
   
-  @scala.inline
-  implicit class UpdateSMBSecurityStrategyInputMutableBuilder[Self <: UpdateSMBSecurityStrategyInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSMBSecurityStrategyInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = StObject.set(x, "SMBSecurityStrategy", value.asInstanceOf[js.Any])
+    inline def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = StObject.set(x, "SMBSecurityStrategy", value.asInstanceOf[js.Any])
   }
 }

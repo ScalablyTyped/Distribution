@@ -21,6 +21,5 @@ object NoticeBar {
   @JSImport("antd-mobile", "NoticeBar.defaultProps")
   @js.native
   def defaultProps: typings.antdMobile.anon.Icon = js.native
-  @scala.inline
-  def defaultProps_=(x: typings.antdMobile.anon.Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: typings.antdMobile.anon.Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

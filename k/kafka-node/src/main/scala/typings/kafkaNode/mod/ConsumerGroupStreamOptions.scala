@@ -12,19 +12,15 @@ trait ConsumerGroupStreamOptions
 }
 object ConsumerGroupStreamOptions {
   
-  @scala.inline
-  def apply(groupId: String): ConsumerGroupStreamOptions = {
+  inline def apply(groupId: String): ConsumerGroupStreamOptions = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumerGroupStreamOptions]
   }
   
-  @scala.inline
-  implicit class ConsumerGroupStreamOptionsMutableBuilder[Self <: ConsumerGroupStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumerGroupStreamOptions](x: Self) {
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
   }
 }

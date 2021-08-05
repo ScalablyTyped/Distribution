@@ -17,22 +17,17 @@ trait AttrsTransposeAttrs extends StObject {
 }
 object AttrsTransposeAttrs {
   
-  @scala.inline
-  def apply(attrs: TransposeAttrs, backend: MathBackendCPU, inputs: TransposeInputs): AttrsTransposeAttrs = {
+  inline def apply(attrs: TransposeAttrs, backend: MathBackendCPU, inputs: TransposeInputs): AttrsTransposeAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsTransposeAttrs]
   }
   
-  @scala.inline
-  implicit class AttrsTransposeAttrsMutableBuilder[Self <: AttrsTransposeAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsTransposeAttrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: TransposeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: TransposeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: TransposeInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: TransposeInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

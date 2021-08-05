@@ -23,35 +23,26 @@ object tooltipMessageMod {
   }
   object TooltipMessageProps {
     
-    @scala.inline
-    def apply(): TooltipMessageProps = {
+    inline def apply(): TooltipMessageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TooltipMessageProps]
     }
     
-    @scala.inline
-    implicit class TooltipMessagePropsMutableBuilder[Self <: TooltipMessageProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipMessageProps](x: Self) {
       
-      @scala.inline
-      def setDesc(value: ReactNode): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      inline def setDesc(value: ReactNode): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

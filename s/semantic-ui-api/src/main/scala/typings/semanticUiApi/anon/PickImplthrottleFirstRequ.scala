@@ -11,16 +11,13 @@ trait PickImplthrottleFirstRequ extends StObject {
 }
 object PickImplthrottleFirstRequ {
   
-  @scala.inline
-  def apply(throttleFirstRequest: Boolean): PickImplthrottleFirstRequ = {
+  inline def apply(throttleFirstRequest: Boolean): PickImplthrottleFirstRequ = {
     val __obj = js.Dynamic.literal(throttleFirstRequest = throttleFirstRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplthrottleFirstRequ]
   }
   
-  @scala.inline
-  implicit class PickImplthrottleFirstRequMutableBuilder[Self <: PickImplthrottleFirstRequ] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplthrottleFirstRequ](x: Self) {
     
-    @scala.inline
-    def setThrottleFirstRequest(value: Boolean): Self = StObject.set(x, "throttleFirstRequest", value.asInstanceOf[js.Any])
+    inline def setThrottleFirstRequest(value: Boolean): Self = StObject.set(x, "throttleFirstRequest", value.asInstanceOf[js.Any])
   }
 }

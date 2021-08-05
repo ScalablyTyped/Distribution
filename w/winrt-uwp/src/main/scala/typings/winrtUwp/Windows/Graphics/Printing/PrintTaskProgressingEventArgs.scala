@@ -12,16 +12,13 @@ trait PrintTaskProgressingEventArgs extends StObject {
 }
 object PrintTaskProgressingEventArgs {
   
-  @scala.inline
-  def apply(documentPageCount: Double): PrintTaskProgressingEventArgs = {
+  inline def apply(documentPageCount: Double): PrintTaskProgressingEventArgs = {
     val __obj = js.Dynamic.literal(documentPageCount = documentPageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTaskProgressingEventArgs]
   }
   
-  @scala.inline
-  implicit class PrintTaskProgressingEventArgsMutableBuilder[Self <: PrintTaskProgressingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTaskProgressingEventArgs](x: Self) {
     
-    @scala.inline
-    def setDocumentPageCount(value: Double): Self = StObject.set(x, "documentPageCount", value.asInstanceOf[js.Any])
+    inline def setDocumentPageCount(value: Double): Self = StObject.set(x, "documentPageCount", value.asInstanceOf[js.Any])
   }
 }

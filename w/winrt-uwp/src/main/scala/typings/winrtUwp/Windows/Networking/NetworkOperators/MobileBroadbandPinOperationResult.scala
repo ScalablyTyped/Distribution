@@ -15,19 +15,15 @@ trait MobileBroadbandPinOperationResult extends StObject {
 }
 object MobileBroadbandPinOperationResult {
   
-  @scala.inline
-  def apply(attemptsRemaining: Double, isSuccessful: Boolean): MobileBroadbandPinOperationResult = {
+  inline def apply(attemptsRemaining: Double, isSuccessful: Boolean): MobileBroadbandPinOperationResult = {
     val __obj = js.Dynamic.literal(attemptsRemaining = attemptsRemaining.asInstanceOf[js.Any], isSuccessful = isSuccessful.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandPinOperationResult]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandPinOperationResultMutableBuilder[Self <: MobileBroadbandPinOperationResult] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandPinOperationResult](x: Self) {
     
-    @scala.inline
-    def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
+    inline def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
+    inline def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
   }
 }

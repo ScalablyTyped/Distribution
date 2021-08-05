@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpIndentControl extends StObject
 object PpIndentControl {
   
-  @scala.inline
-  def ppIndentControlMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppIndentControlMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppIndentKeepAttr: `2` = 2.asInstanceOf[`2`]
+  inline def ppIndentKeepAttr: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppIndentReplaceAttr: `1` = 1.asInstanceOf[`1`]
+  inline def ppIndentReplaceAttr: `1` = 1.asInstanceOf[`1`]
 }

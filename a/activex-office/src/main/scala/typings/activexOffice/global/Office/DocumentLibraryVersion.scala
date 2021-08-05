@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.DocumentLibraryVersion")
 @js.native
-class DocumentLibraryVersion protected ()
+/* private */ class DocumentLibraryVersion ()
   extends StObject
      with typings.activexOffice.Office.DocumentLibraryVersion {
   
@@ -32,7 +32,7 @@ class DocumentLibraryVersion protected ()
   /* CompleteClass */
   override val ModifiedBy: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.DocumentLibraryVersion_typekey")
   var OfficeDotDocumentLibraryVersion_typekey: typings.activexOffice.Office.DocumentLibraryVersion = js.native
   

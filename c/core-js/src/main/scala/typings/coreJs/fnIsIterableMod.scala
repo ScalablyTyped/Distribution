@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fnIsIterableMod {
   
   /* was `typeof core.isIterable` */
-  @scala.inline
-  def apply(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("core-js/library/fn/is-iterable", JSImport.Namespace)
   @js.native

@@ -29,8 +29,7 @@ trait Dictname
 }
 object Dictname {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     android: PlatformConfig[
       AndroidProjectConfig, 
       AndroidProjectParams, 
@@ -43,11 +42,9 @@ object Dictname {
     __obj.asInstanceOf[Dictname]
   }
   
-  @scala.inline
-  implicit class DictnameMutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
+  extension [Self <: Dictname](x: Self) {
     
-    @scala.inline
-    def setAndroid(
+    inline def setAndroid(
       value: PlatformConfig[
           AndroidProjectConfig, 
           AndroidProjectParams, 
@@ -56,8 +53,7 @@ object Dictname {
         ]
     ): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIos(
+    inline def setIos(
       value: PlatformConfig[IOSProjectConfig, IOSProjectParams, IOSDependencyConfig, IOSDependencyParams]
     ): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
   }

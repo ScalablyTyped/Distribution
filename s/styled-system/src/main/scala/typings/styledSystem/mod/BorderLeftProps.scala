@@ -16,25 +16,19 @@ trait BorderLeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exten
 }
 object BorderLeftProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderLeftProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderLeftProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderLeftProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BorderLeftPropsMutableBuilder[Self <: BorderLeftProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderLeftProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BorderLeftProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderLeftProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBorderLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    inline def setBorderLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftNull: Self = StObject.set(x, "borderLeft", null)
+    inline def setBorderLeftNull: Self = StObject.set(x, "borderLeft", null)
     
-    @scala.inline
-    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+    inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
-    @scala.inline
-    def setBorderLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
+    inline def setBorderLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
   }
 }

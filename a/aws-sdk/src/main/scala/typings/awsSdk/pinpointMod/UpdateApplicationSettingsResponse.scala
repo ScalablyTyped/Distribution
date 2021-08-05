@@ -10,16 +10,13 @@ trait UpdateApplicationSettingsResponse extends StObject {
 }
 object UpdateApplicationSettingsResponse {
   
-  @scala.inline
-  def apply(ApplicationSettingsResource: ApplicationSettingsResource): UpdateApplicationSettingsResponse = {
+  inline def apply(ApplicationSettingsResource: ApplicationSettingsResource): UpdateApplicationSettingsResponse = {
     val __obj = js.Dynamic.literal(ApplicationSettingsResource = ApplicationSettingsResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationSettingsResponse]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationSettingsResponseMutableBuilder[Self <: UpdateApplicationSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationSettingsResource(value: ApplicationSettingsResource): Self = StObject.set(x, "ApplicationSettingsResource", value.asInstanceOf[js.Any])
+    inline def setApplicationSettingsResource(value: ApplicationSettingsResource): Self = StObject.set(x, "ApplicationSettingsResource", value.asInstanceOf[js.Any])
   }
 }

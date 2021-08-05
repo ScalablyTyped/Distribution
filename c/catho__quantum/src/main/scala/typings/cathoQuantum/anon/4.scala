@@ -11,16 +11,13 @@ trait `4` extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply(): `4` = {
+  inline def apply(): `4` = {
     val __obj = js.Dynamic.literal(displayName = "Card.Header")
     __obj.asInstanceOf[`4`]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+  extension [Self <: `4`](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: CardDotHeader): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: CardDotHeader): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }
 }

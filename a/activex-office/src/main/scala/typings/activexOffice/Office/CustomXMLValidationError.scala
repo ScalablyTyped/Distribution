@@ -18,7 +18,7 @@ trait CustomXMLValidationError extends StObject {
   
   val Node: CustomXMLNode
   
-  @JSName("Office.CustomXMLValidationError_typekey")
+  /* private */ @JSName("Office.CustomXMLValidationError_typekey")
   var OfficeDotCustomXMLValidationError_typekey: CustomXMLValidationError
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait CustomXMLValidationError extends StObject {
 }
 object CustomXMLValidationError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Delete: () => Unit,
@@ -47,37 +46,26 @@ object CustomXMLValidationError {
     __obj.asInstanceOf[CustomXMLValidationError]
   }
   
-  @scala.inline
-  implicit class CustomXMLValidationErrorMutableBuilder[Self <: CustomXMLValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: CustomXMLValidationError](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: CustomXMLNode): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+    inline def setNode(value: CustomXMLNode): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotCustomXMLValidationError_typekey(value: CustomXMLValidationError): Self = StObject.set(x, "Office.CustomXMLValidationError_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotCustomXMLValidationError_typekey(value: CustomXMLValidationError): Self = StObject.set(x, "Office.CustomXMLValidationError_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoCustomXMLValidationErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoCustomXMLValidationErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

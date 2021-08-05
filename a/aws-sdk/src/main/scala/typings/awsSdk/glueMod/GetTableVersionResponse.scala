@@ -13,19 +13,15 @@ trait GetTableVersionResponse extends StObject {
 }
 object GetTableVersionResponse {
   
-  @scala.inline
-  def apply(): GetTableVersionResponse = {
+  inline def apply(): GetTableVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTableVersionResponse]
   }
   
-  @scala.inline
-  implicit class GetTableVersionResponseMutableBuilder[Self <: GetTableVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTableVersionResponse](x: Self) {
     
-    @scala.inline
-    def setTableVersion(value: TableVersion): Self = StObject.set(x, "TableVersion", value.asInstanceOf[js.Any])
+    inline def setTableVersion(value: TableVersion): Self = StObject.set(x, "TableVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableVersionUndefined: Self = StObject.set(x, "TableVersion", js.undefined)
+    inline def setTableVersionUndefined: Self = StObject.set(x, "TableVersion", js.undefined)
   }
 }

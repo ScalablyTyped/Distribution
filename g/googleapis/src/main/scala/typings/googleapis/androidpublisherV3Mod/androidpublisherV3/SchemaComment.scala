@@ -18,25 +18,19 @@ trait SchemaComment extends StObject {
 }
 object SchemaComment {
   
-  @scala.inline
-  def apply(): SchemaComment = {
+  inline def apply(): SchemaComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaComment]
   }
   
-  @scala.inline
-  implicit class SchemaCommentMutableBuilder[Self <: SchemaComment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaComment](x: Self) {
     
-    @scala.inline
-    def setDeveloperComment(value: SchemaDeveloperComment): Self = StObject.set(x, "developerComment", value.asInstanceOf[js.Any])
+    inline def setDeveloperComment(value: SchemaDeveloperComment): Self = StObject.set(x, "developerComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperCommentUndefined: Self = StObject.set(x, "developerComment", js.undefined)
+    inline def setDeveloperCommentUndefined: Self = StObject.set(x, "developerComment", js.undefined)
     
-    @scala.inline
-    def setUserComment(value: SchemaUserComment): Self = StObject.set(x, "userComment", value.asInstanceOf[js.Any])
+    inline def setUserComment(value: SchemaUserComment): Self = StObject.set(x, "userComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCommentUndefined: Self = StObject.set(x, "userComment", js.undefined)
+    inline def setUserCommentUndefined: Self = StObject.set(x, "userComment", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ object iToolPanelMod {
   }
   object IToolPanel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getGui: () => HTMLElement,
       getPreferredWidth: () => Double,
       isToolPanelShowing: () => Boolean,
@@ -38,23 +37,17 @@ object iToolPanelMod {
       __obj.asInstanceOf[IToolPanel]
     }
     
-    @scala.inline
-    implicit class IToolPanelMutableBuilder[Self <: IToolPanel] (val x: Self) extends AnyVal {
+    extension [Self <: IToolPanel](x: Self) {
       
-      @scala.inline
-      def setGetPreferredWidth(value: () => Double): Self = StObject.set(x, "getPreferredWidth", js.Any.fromFunction0(value))
+      inline def setGetPreferredWidth(value: () => Double): Self = StObject.set(x, "getPreferredWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsToolPanelShowing(value: () => Boolean): Self = StObject.set(x, "isToolPanelShowing", js.Any.fromFunction0(value))
+      inline def setIsToolPanelShowing(value: () => Boolean): Self = StObject.set(x, "isToolPanelShowing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterGridComp(value: GridPanel => Unit): Self = StObject.set(x, "registerGridComp", js.Any.fromFunction1(value))
+      inline def setRegisterGridComp(value: GridPanel => Unit): Self = StObject.set(x, "registerGridComp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowToolPanel(value: Boolean => Unit): Self = StObject.set(x, "showToolPanel", js.Any.fromFunction1(value))
+      inline def setShowToolPanel(value: Boolean => Unit): Self = StObject.set(x, "showToolPanel", js.Any.fromFunction1(value))
     }
   }
 }

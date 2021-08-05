@@ -12,25 +12,19 @@ trait Interval extends StObject {
 }
 object Interval {
   
-  @scala.inline
-  def apply(): Interval = {
+  inline def apply(): Interval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Interval]
   }
   
-  @scala.inline
-  implicit class IntervalMutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
+  extension [Self <: Interval](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
   }
 }

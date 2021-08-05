@@ -18,25 +18,19 @@ trait ArtifactLocation extends StObject {
 }
 object ArtifactLocation {
   
-  @scala.inline
-  def apply(): ArtifactLocation = {
+  inline def apply(): ArtifactLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtifactLocation]
   }
   
-  @scala.inline
-  implicit class ArtifactLocationMutableBuilder[Self <: ArtifactLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactLocation](x: Self) {
     
-    @scala.inline
-    def setS3Location(value: S3ArtifactLocation): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3ArtifactLocation): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
     
-    @scala.inline
-    def setType(value: ArtifactLocationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArtifactLocationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

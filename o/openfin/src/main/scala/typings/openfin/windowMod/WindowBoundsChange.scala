@@ -26,8 +26,7 @@ trait WindowBoundsChange[Topic, Type]
 }
 object WindowBoundsChange {
   
-  @scala.inline
-  def apply[Topic, Type](
+  inline def apply[Topic, Type](
     changeType: `0` | `1` | `2`,
     deferred: Boolean,
     height: Double,
@@ -44,25 +43,18 @@ object WindowBoundsChange {
     __obj.asInstanceOf[WindowBoundsChange[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WindowBoundsChangeMutableBuilder[Self <: WindowBoundsChange[?, ?], Topic, Type] (val x: Self & (WindowBoundsChange[Topic, Type])) extends AnyVal {
+  extension [Self <: WindowBoundsChange[?, ?], Topic, Type](x: Self & (WindowBoundsChange[Topic, Type])) {
     
-    @scala.inline
-    def setChangeType(value: `0` | `1` | `2`): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: `0` | `1` | `2`): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+    inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

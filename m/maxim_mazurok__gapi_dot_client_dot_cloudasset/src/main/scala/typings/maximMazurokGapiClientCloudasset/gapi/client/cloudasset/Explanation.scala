@@ -20,23 +20,19 @@ trait Explanation extends StObject {
 }
 object Explanation {
   
-  @scala.inline
-  def apply(): Explanation = {
+  inline def apply(): Explanation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Explanation]
   }
   
-  @scala.inline
-  implicit class ExplanationMutableBuilder[Self <: Explanation] (val x: Self) extends AnyVal {
+  extension [Self <: Explanation](x: Self) {
     
-    @scala.inline
-    def setMatchedPermissions(
+    inline def setMatchedPermissions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions}
       */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Explanation & TopLevel[js.Any]
     ): Self = StObject.set(x, "matchedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedPermissionsUndefined: Self = StObject.set(x, "matchedPermissions", js.undefined)
+    inline def setMatchedPermissionsUndefined: Self = StObject.set(x, "matchedPermissions", js.undefined)
   }
 }

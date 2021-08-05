@@ -14,8 +14,7 @@ object makeDecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(hasNameParameterNameWrapperSkipIfNoParametersOrOptions.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
+  inline def makeDecorator(hasNameParameterNameWrapperSkipIfNoParametersOrOptions: MakeDecoratorOptions): MakeDecoratorResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDecorator")(hasNameParameterNameWrapperSkipIfNoParametersOrOptions.asInstanceOf[js.Any]).asInstanceOf[MakeDecoratorResult]
   
   trait MakeDecoratorOptions extends StObject {
     
@@ -29,8 +28,7 @@ object makeDecoratorMod {
   }
   object MakeDecoratorOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       parameterName: String,
       wrapper: (/* getStory */ StoryGetter, /* context */ StoryContext, /* settings */ WrapperSettings) => js.Any
@@ -39,23 +37,17 @@ object makeDecoratorMod {
       __obj.asInstanceOf[MakeDecoratorOptions]
     }
     
-    @scala.inline
-    implicit class MakeDecoratorOptionsMutableBuilder[Self <: MakeDecoratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MakeDecoratorOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+      inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipIfNoParametersOrOptions(value: Boolean): Self = StObject.set(x, "skipIfNoParametersOrOptions", value.asInstanceOf[js.Any])
+      inline def setSkipIfNoParametersOrOptions(value: Boolean): Self = StObject.set(x, "skipIfNoParametersOrOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipIfNoParametersOrOptionsUndefined: Self = StObject.set(x, "skipIfNoParametersOrOptions", js.undefined)
+      inline def setSkipIfNoParametersOrOptionsUndefined: Self = StObject.set(x, "skipIfNoParametersOrOptions", js.undefined)
       
-      @scala.inline
-      def setWrapper(
+      inline def setWrapper(
         value: (/* getStory */ StoryGetter, /* context */ StoryContext, /* settings */ WrapperSettings) => js.Any
       ): Self = StObject.set(x, "wrapper", js.Any.fromFunction3(value))
     }

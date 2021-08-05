@@ -13,16 +13,13 @@ trait DeleteOpenIDConnectProviderRequest extends StObject {
 }
 object DeleteOpenIDConnectProviderRequest {
   
-  @scala.inline
-  def apply(OpenIDConnectProviderArn: arnType): DeleteOpenIDConnectProviderRequest = {
+  inline def apply(OpenIDConnectProviderArn: arnType): DeleteOpenIDConnectProviderRequest = {
     val __obj = js.Dynamic.literal(OpenIDConnectProviderArn = OpenIDConnectProviderArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOpenIDConnectProviderRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOpenIDConnectProviderRequestMutableBuilder[Self <: DeleteOpenIDConnectProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOpenIDConnectProviderRequest](x: Self) {
     
-    @scala.inline
-    def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
+    inline def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
   }
 }

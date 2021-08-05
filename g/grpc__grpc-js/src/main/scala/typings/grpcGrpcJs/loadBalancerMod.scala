@@ -18,20 +18,15 @@ object loadBalancerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createLoadBalancer(typeName: String, channelControlHelper: ChannelControlHelper): LoadBalancer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoadBalancer")(typeName.asInstanceOf[js.Any], channelControlHelper.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer | Null]
+  inline def createLoadBalancer(typeName: String, channelControlHelper: ChannelControlHelper): LoadBalancer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoadBalancer")(typeName.asInstanceOf[js.Any], channelControlHelper.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer | Null]
   
-  @scala.inline
-  def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig | Null]
+  inline def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig | Null]
   
-  @scala.inline
-  def isLoadBalancerNameRegistered(typeName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoadBalancerNameRegistered")(typeName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLoadBalancerNameRegistered(typeName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoadBalancerNameRegistered")(typeName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
+  inline def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
   
-  @scala.inline
-  def registerLoadBalancerType(typeName: String, loadBalancerType: LoadBalancerConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadBalancerType")(typeName.asInstanceOf[js.Any], loadBalancerType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerLoadBalancerType(typeName: String, loadBalancerType: LoadBalancerConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadBalancerType")(typeName.asInstanceOf[js.Any], loadBalancerType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ChannelControlHelper extends StObject {
     
@@ -58,8 +53,7 @@ object loadBalancerMod {
   }
   object ChannelControlHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createSubchannel: (SubchannelAddress, ChannelOptions) => Subchannel,
       requestReresolution: () => Unit,
       updateState: (ConnectivityState, Picker) => Unit
@@ -68,17 +62,13 @@ object loadBalancerMod {
       __obj.asInstanceOf[ChannelControlHelper]
     }
     
-    @scala.inline
-    implicit class ChannelControlHelperMutableBuilder[Self <: ChannelControlHelper] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelControlHelper](x: Self) {
       
-      @scala.inline
-      def setCreateSubchannel(value: (SubchannelAddress, ChannelOptions) => Subchannel): Self = StObject.set(x, "createSubchannel", js.Any.fromFunction2(value))
+      inline def setCreateSubchannel(value: (SubchannelAddress, ChannelOptions) => Subchannel): Self = StObject.set(x, "createSubchannel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestReresolution(value: () => Unit): Self = StObject.set(x, "requestReresolution", js.Any.fromFunction0(value))
+      inline def setRequestReresolution(value: () => Unit): Self = StObject.set(x, "requestReresolution", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateState(value: (ConnectivityState, Picker) => Unit): Self = StObject.set(x, "updateState", js.Any.fromFunction2(value))
+      inline def setUpdateState(value: (ConnectivityState, Picker) => Unit): Self = StObject.set(x, "updateState", js.Any.fromFunction2(value))
     }
   }
   
@@ -126,8 +116,7 @@ object loadBalancerMod {
   }
   object LoadBalancer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       exitIdle: () => Unit,
       getTypeName: () => String,
@@ -138,23 +127,17 @@ object loadBalancerMod {
       __obj.asInstanceOf[LoadBalancer]
     }
     
-    @scala.inline
-    implicit class LoadBalancerMutableBuilder[Self <: LoadBalancer] (val x: Self) extends AnyVal {
+    extension [Self <: LoadBalancer](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExitIdle(value: () => Unit): Self = StObject.set(x, "exitIdle", js.Any.fromFunction0(value))
+      inline def setExitIdle(value: () => Unit): Self = StObject.set(x, "exitIdle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
+      inline def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetBackoff(value: () => Unit): Self = StObject.set(x, "resetBackoff", js.Any.fromFunction0(value))
+      inline def setResetBackoff(value: () => Unit): Self = StObject.set(x, "resetBackoff", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateAddressList(value: (js.Array[SubchannelAddress], LoadBalancingConfig, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "updateAddressList", js.Any.fromFunction3(value))
+      inline def setUpdateAddressList(value: (js.Array[SubchannelAddress], LoadBalancingConfig, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "updateAddressList", js.Any.fromFunction3(value))
     }
   }
   

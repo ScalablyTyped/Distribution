@@ -28,37 +28,27 @@ trait StringifyOptions extends StObject {
 }
 object StringifyOptions {
   
-  @scala.inline
-  def apply(): StringifyOptions = {
+  inline def apply(): StringifyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringifyOptions]
   }
   
-  @scala.inline
-  implicit class StringifyOptionsMutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StringifyOptions](x: Self) {
     
-    @scala.inline
-    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
-    @scala.inline
-    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
-    @scala.inline
-    def setInputSourcemaps(value: Boolean): Self = StObject.set(x, "inputSourcemaps", value.asInstanceOf[js.Any])
+    inline def setInputSourcemaps(value: Boolean): Self = StObject.set(x, "inputSourcemaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSourcemapsUndefined: Self = StObject.set(x, "inputSourcemaps", js.undefined)
+    inline def setInputSourcemapsUndefined: Self = StObject.set(x, "inputSourcemaps", js.undefined)
     
-    @scala.inline
-    def setSourcemap(value: String): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
+    inline def setSourcemap(value: String): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
+    inline def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
   }
 }

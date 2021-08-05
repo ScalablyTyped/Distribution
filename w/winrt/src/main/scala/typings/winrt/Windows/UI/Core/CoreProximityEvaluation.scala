@@ -13,19 +13,15 @@ trait CoreProximityEvaluation extends StObject {
 }
 object CoreProximityEvaluation {
   
-  @scala.inline
-  def apply(adjustedPoint: Point, score: Double): CoreProximityEvaluation = {
+  inline def apply(adjustedPoint: Point, score: Double): CoreProximityEvaluation = {
     val __obj = js.Dynamic.literal(adjustedPoint = adjustedPoint.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreProximityEvaluation]
   }
   
-  @scala.inline
-  implicit class CoreProximityEvaluationMutableBuilder[Self <: CoreProximityEvaluation] (val x: Self) extends AnyVal {
+  extension [Self <: CoreProximityEvaluation](x: Self) {
     
-    @scala.inline
-    def setAdjustedPoint(value: Point): Self = StObject.set(x, "adjustedPoint", value.asInstanceOf[js.Any])
+    inline def setAdjustedPoint(value: Point): Self = StObject.set(x, "adjustedPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
   }
 }

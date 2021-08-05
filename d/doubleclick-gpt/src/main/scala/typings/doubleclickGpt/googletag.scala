@@ -26,17 +26,14 @@ object googletag {
   }
   object CommandArray {
     
-    @scala.inline
-    def apply(push: js.Function0[Unit] => Double): CommandArray = {
+    inline def apply(push: js.Function0[Unit] => Double): CommandArray = {
       val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
       __obj.asInstanceOf[CommandArray]
     }
     
-    @scala.inline
-    implicit class CommandArrayMutableBuilder[Self <: CommandArray] (val x: Self) extends AnyVal {
+    extension [Self <: CommandArray](x: Self) {
       
-      @scala.inline
-      def setPush(value: js.Function0[Unit] => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: js.Function0[Unit] => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
   
@@ -113,32 +110,24 @@ object googletag {
   }
   object LazyLoadOptionsConfig {
     
-    @scala.inline
-    def apply(): LazyLoadOptionsConfig = {
+    inline def apply(): LazyLoadOptionsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LazyLoadOptionsConfig]
     }
     
-    @scala.inline
-    implicit class LazyLoadOptionsConfigMutableBuilder[Self <: LazyLoadOptionsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LazyLoadOptionsConfig](x: Self) {
       
-      @scala.inline
-      def setFetchMarginPercent(value: Double): Self = StObject.set(x, "fetchMarginPercent", value.asInstanceOf[js.Any])
+      inline def setFetchMarginPercent(value: Double): Self = StObject.set(x, "fetchMarginPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchMarginPercentUndefined: Self = StObject.set(x, "fetchMarginPercent", js.undefined)
+      inline def setFetchMarginPercentUndefined: Self = StObject.set(x, "fetchMarginPercent", js.undefined)
       
-      @scala.inline
-      def setMobileScaling(value: Double): Self = StObject.set(x, "mobileScaling", value.asInstanceOf[js.Any])
+      inline def setMobileScaling(value: Double): Self = StObject.set(x, "mobileScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileScalingUndefined: Self = StObject.set(x, "mobileScaling", js.undefined)
+      inline def setMobileScalingUndefined: Self = StObject.set(x, "mobileScaling", js.undefined)
       
-      @scala.inline
-      def setRenderMarginPercent(value: Double): Self = StObject.set(x, "renderMarginPercent", value.asInstanceOf[js.Any])
+      inline def setRenderMarginPercent(value: Double): Self = StObject.set(x, "renderMarginPercent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderMarginPercentUndefined: Self = StObject.set(x, "renderMarginPercent", js.undefined)
+      inline def setRenderMarginPercentUndefined: Self = StObject.set(x, "renderMarginPercent", js.undefined)
     }
   }
   
@@ -281,38 +270,28 @@ object googletag {
   }
   object ResponseInformation {
     
-    @scala.inline
-    def apply(advertiserId: String, campaignId: String): ResponseInformation = {
+    inline def apply(advertiserId: String, campaignId: String): ResponseInformation = {
       val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], campaignId = campaignId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseInformation]
     }
     
-    @scala.inline
-    implicit class ResponseInformationMutableBuilder[Self <: ResponseInformation] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseInformation](x: Self) {
       
-      @scala.inline
-      def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+      inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+      inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreativeId(value: Double): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+      inline def setCreativeId(value: Double): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
+      inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
       
-      @scala.inline
-      def setCreativeTemplateId(value: Double): Self = StObject.set(x, "creativeTemplateId", value.asInstanceOf[js.Any])
+      inline def setCreativeTemplateId(value: Double): Self = StObject.set(x, "creativeTemplateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreativeTemplateIdUndefined: Self = StObject.set(x, "creativeTemplateId", js.undefined)
+      inline def setCreativeTemplateIdUndefined: Self = StObject.set(x, "creativeTemplateId", js.undefined)
       
-      @scala.inline
-      def setLineItemId(value: Double): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+      inline def setLineItemId(value: Double): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
+      inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     }
   }
   
@@ -328,41 +307,30 @@ object googletag {
   }
   object SafeFrameConfig {
     
-    @scala.inline
-    def apply(): SafeFrameConfig = {
+    inline def apply(): SafeFrameConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SafeFrameConfig]
     }
     
-    @scala.inline
-    implicit class SafeFrameConfigMutableBuilder[Self <: SafeFrameConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SafeFrameConfig](x: Self) {
       
-      @scala.inline
-      def setAllowOverlayExpansion(value: Boolean): Self = StObject.set(x, "allowOverlayExpansion", value.asInstanceOf[js.Any])
+      inline def setAllowOverlayExpansion(value: Boolean): Self = StObject.set(x, "allowOverlayExpansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowOverlayExpansionUndefined: Self = StObject.set(x, "allowOverlayExpansion", js.undefined)
+      inline def setAllowOverlayExpansionUndefined: Self = StObject.set(x, "allowOverlayExpansion", js.undefined)
       
-      @scala.inline
-      def setAllowPushExpansion(value: Boolean): Self = StObject.set(x, "allowPushExpansion", value.asInstanceOf[js.Any])
+      inline def setAllowPushExpansion(value: Boolean): Self = StObject.set(x, "allowPushExpansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowPushExpansionUndefined: Self = StObject.set(x, "allowPushExpansion", js.undefined)
+      inline def setAllowPushExpansionUndefined: Self = StObject.set(x, "allowPushExpansion", js.undefined)
       
-      @scala.inline
-      def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+      inline def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+      inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
       
-      @scala.inline
-      def setUseUniqueDomain(value: Boolean): Self = StObject.set(x, "useUniqueDomain", value.asInstanceOf[js.Any])
+      inline def setUseUniqueDomain(value: Boolean): Self = StObject.set(x, "useUniqueDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUniqueDomainNull: Self = StObject.set(x, "useUniqueDomain", null)
+      inline def setUseUniqueDomainNull: Self = StObject.set(x, "useUniqueDomain", null)
       
-      @scala.inline
-      def setUseUniqueDomainUndefined: Self = StObject.set(x, "useUniqueDomain", js.undefined)
+      inline def setUseUniqueDomainUndefined: Self = StObject.set(x, "useUniqueDomain", js.undefined)
     }
   }
   
@@ -401,20 +369,16 @@ object googletag {
   }
   object SizeMappingBuilder {
     
-    @scala.inline
-    def apply(addSize: (SingleSizeArray, GeneralSize) => SizeMappingBuilder, build: () => SizeMappingArray): SizeMappingBuilder = {
+    inline def apply(addSize: (SingleSizeArray, GeneralSize) => SizeMappingBuilder, build: () => SizeMappingArray): SizeMappingBuilder = {
       val __obj = js.Dynamic.literal(addSize = js.Any.fromFunction2(addSize), build = js.Any.fromFunction0(build))
       __obj.asInstanceOf[SizeMappingBuilder]
     }
     
-    @scala.inline
-    implicit class SizeMappingBuilderMutableBuilder[Self <: SizeMappingBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: SizeMappingBuilder](x: Self) {
       
-      @scala.inline
-      def setAddSize(value: (SingleSizeArray, GeneralSize) => SizeMappingBuilder): Self = StObject.set(x, "addSize", js.Any.fromFunction2(value))
+      inline def setAddSize(value: (SingleSizeArray, GeneralSize) => SizeMappingBuilder): Self = StObject.set(x, "addSize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBuild(value: () => SizeMappingArray): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+      inline def setBuild(value: () => SizeMappingArray): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }
   }
   
@@ -473,20 +437,16 @@ object googletag {
     }
     object Event {
       
-      @scala.inline
-      def apply(serviceName: String, slot: Slot): Event = {
+      inline def apply(serviceName: String, slot: Slot): Event = {
         val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
         __obj.asInstanceOf[Event]
       }
       
-      @scala.inline
-      implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+      extension [Self <: Event](x: Self) {
         
-        @scala.inline
-        def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+        inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlot(value: Slot): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+        inline def setSlot(value: Slot): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       }
     }
     
@@ -518,59 +478,42 @@ object googletag {
     }
     object SlotRenderEndedEvent {
       
-      @scala.inline
-      def apply(isEmpty: Boolean, serviceName: String, size: js.Array[Double] | String, slot: Slot): SlotRenderEndedEvent = {
+      inline def apply(isEmpty: Boolean, serviceName: String, size: js.Array[Double] | String, slot: Slot): SlotRenderEndedEvent = {
         val __obj = js.Dynamic.literal(isEmpty = isEmpty.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
         __obj.asInstanceOf[SlotRenderEndedEvent]
       }
       
-      @scala.inline
-      implicit class SlotRenderEndedEventMutableBuilder[Self <: SlotRenderEndedEvent] (val x: Self) extends AnyVal {
+      extension [Self <: SlotRenderEndedEvent](x: Self) {
         
-        @scala.inline
-        def setAdvertiserId(value: Double): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+        inline def setAdvertiserId(value: Double): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+        inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
         
-        @scala.inline
-        def setCampaignId(value: Double): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+        inline def setCampaignId(value: Double): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
+        inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
         
-        @scala.inline
-        def setCreativeId(value: Double): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+        inline def setCreativeId(value: Double): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
+        inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
         
-        @scala.inline
-        def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+        inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineItemId(value: Double): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+        inline def setLineItemId(value: Double): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
+        inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
         
-        @scala.inline
-        def setSize(value: js.Array[Double] | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: js.Array[Double] | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+        inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
         
-        @scala.inline
-        def setSourceAgnosticCreativeId(value: Double): Self = StObject.set(x, "sourceAgnosticCreativeId", value.asInstanceOf[js.Any])
+        inline def setSourceAgnosticCreativeId(value: Double): Self = StObject.set(x, "sourceAgnosticCreativeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceAgnosticCreativeIdUndefined: Self = StObject.set(x, "sourceAgnosticCreativeId", js.undefined)
+        inline def setSourceAgnosticCreativeIdUndefined: Self = StObject.set(x, "sourceAgnosticCreativeId", js.undefined)
         
-        @scala.inline
-        def setSourceAgnosticLineItemId(value: Double): Self = StObject.set(x, "sourceAgnosticLineItemId", value.asInstanceOf[js.Any])
+        inline def setSourceAgnosticLineItemId(value: Double): Self = StObject.set(x, "sourceAgnosticLineItemId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceAgnosticLineItemIdUndefined: Self = StObject.set(x, "sourceAgnosticLineItemId", js.undefined)
+        inline def setSourceAgnosticLineItemIdUndefined: Self = StObject.set(x, "sourceAgnosticLineItemId", js.undefined)
       }
     }
     
@@ -588,17 +531,14 @@ object googletag {
     }
     object SlotVisibilityChangedEvent {
       
-      @scala.inline
-      def apply(inViewPercentage: Double, serviceName: String, slot: Slot): SlotVisibilityChangedEvent = {
+      inline def apply(inViewPercentage: Double, serviceName: String, slot: Slot): SlotVisibilityChangedEvent = {
         val __obj = js.Dynamic.literal(inViewPercentage = inViewPercentage.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
         __obj.asInstanceOf[SlotVisibilityChangedEvent]
       }
       
-      @scala.inline
-      implicit class SlotVisibilityChangedEventMutableBuilder[Self <: SlotVisibilityChangedEvent] (val x: Self) extends AnyVal {
+      extension [Self <: SlotVisibilityChangedEvent](x: Self) {
         
-        @scala.inline
-        def setInViewPercentage(value: Double): Self = StObject.set(x, "inViewPercentage", value.asInstanceOf[js.Any])
+        inline def setInViewPercentage(value: Double): Self = StObject.set(x, "inViewPercentage", value.asInstanceOf[js.Any])
       }
     }
   }

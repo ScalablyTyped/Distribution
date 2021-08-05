@@ -46,26 +46,20 @@ object mod {
   }
   object BaseUrlOptions {
     
-    @scala.inline
-    def apply(accessToken: String, baseUrl: String): BaseUrlOptions = {
+    inline def apply(accessToken: String, baseUrl: String): BaseUrlOptions = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseUrlOptions]
     }
     
-    @scala.inline
-    implicit class BaseUrlOptionsMutableBuilder[Self <: BaseUrlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseUrlOptions](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpclient(value: js.Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
+      inline def setHttpclient(value: js.Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpclientUndefined: Self = StObject.set(x, "httpclient", js.undefined)
+      inline def setHttpclientUndefined: Self = StObject.set(x, "httpclient", js.undefined)
     }
   }
   
@@ -150,20 +144,16 @@ object mod {
     }
     object ActionCard {
       
-      @scala.inline
-      def apply(actionCard: BtnOrientation): ActionCard = {
+      inline def apply(actionCard: BtnOrientation): ActionCard = {
         val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = "actionCard")
         __obj.asInstanceOf[ActionCard]
       }
       
-      @scala.inline
-      implicit class ActionCardMutableBuilder[Self <: ActionCard] (val x: Self) extends AnyVal {
+      extension [Self <: ActionCard](x: Self) {
         
-        @scala.inline
-        def setActionCard(value: BtnOrientation): Self = StObject.set(x, "actionCard", value.asInstanceOf[js.Any])
+        inline def setActionCard(value: BtnOrientation): Self = StObject.set(x, "actionCard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMsgtype(value: actionCard): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
+        inline def setMsgtype(value: actionCard): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
       }
     }
     
@@ -177,20 +167,16 @@ object mod {
     }
     object FeedCardItem {
       
-      @scala.inline
-      def apply(feedCard: MessageURL_): FeedCardItem = {
+      inline def apply(feedCard: MessageURL_): FeedCardItem = {
         val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = "feedCard")
         __obj.asInstanceOf[FeedCardItem]
       }
       
-      @scala.inline
-      implicit class FeedCardItemMutableBuilder[Self <: FeedCardItem] (val x: Self) extends AnyVal {
+      extension [Self <: FeedCardItem](x: Self) {
         
-        @scala.inline
-        def setFeedCard(value: MessageURL_): Self = StObject.set(x, "feedCard", value.asInstanceOf[js.Any])
+        inline def setFeedCard(value: MessageURL_): Self = StObject.set(x, "feedCard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMsgtype(value: feedCard): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
+        inline def setMsgtype(value: feedCard): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
       }
     }
     
@@ -204,20 +190,16 @@ object mod {
     }
     object Link {
       
-      @scala.inline
-      def apply(link: MessageUrl): Link = {
+      inline def apply(link: MessageUrl): Link = {
         val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = "link")
         __obj.asInstanceOf[Link]
       }
       
-      @scala.inline
-      implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+      extension [Self <: Link](x: Self) {
         
-        @scala.inline
-        def setLink(value: MessageUrl): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: MessageUrl): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMsgtype(value: link): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
+        inline def setMsgtype(value: link): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
       }
     }
     
@@ -231,20 +213,16 @@ object mod {
     }
     object Markdown {
       
-      @scala.inline
-      def apply(markdown: IsAtAll): Markdown = {
+      inline def apply(markdown: IsAtAll): Markdown = {
         val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = "markdown")
         __obj.asInstanceOf[Markdown]
       }
       
-      @scala.inline
-      implicit class MarkdownMutableBuilder[Self <: Markdown] (val x: Self) extends AnyVal {
+      extension [Self <: Markdown](x: Self) {
         
-        @scala.inline
-        def setMarkdown(value: IsAtAll): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+        inline def setMarkdown(value: IsAtAll): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMsgtype(value: markdown): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
+        inline def setMsgtype(value: markdown): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
       }
     }
     
@@ -260,26 +238,20 @@ object mod {
     }
     object Text {
       
-      @scala.inline
-      def apply(text: Content): Text = {
+      inline def apply(text: Content): Text = {
         val __obj = js.Dynamic.literal(msgtype = "text", text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[Text]
       }
       
-      @scala.inline
-      implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+      extension [Self <: Text](x: Self) {
         
-        @scala.inline
-        def setAt(value: AtMobiles): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+        inline def setAt(value: AtMobiles): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+        inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
         
-        @scala.inline
-        def setMsgtype(value: text): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
+        inline def setMsgtype(value: text): Self = StObject.set(x, "msgtype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: Content): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: Content): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -294,32 +266,27 @@ object mod {
   trait MessageType extends StObject
   object MessageType {
     
-    @scala.inline
-    def ActionCard(actionCard: BtnOrientation): typings.dingtalkRobotSender.mod.Message.ActionCard = {
+    inline def ActionCard(actionCard: BtnOrientation): typings.dingtalkRobotSender.mod.Message.ActionCard = {
       val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = "actionCard")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.ActionCard]
     }
     
-    @scala.inline
-    def FeedCardItem(feedCard: MessageURL_): typings.dingtalkRobotSender.mod.Message.FeedCardItem = {
+    inline def FeedCardItem(feedCard: MessageURL_): typings.dingtalkRobotSender.mod.Message.FeedCardItem = {
       val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = "feedCard")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.FeedCardItem]
     }
     
-    @scala.inline
-    def Link(link: MessageUrl): typings.dingtalkRobotSender.mod.Message.Link = {
+    inline def Link(link: MessageUrl): typings.dingtalkRobotSender.mod.Message.Link = {
       val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = "link")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.Link]
     }
     
-    @scala.inline
-    def Markdown(markdown: IsAtAll): typings.dingtalkRobotSender.mod.Message.Markdown = {
+    inline def Markdown(markdown: IsAtAll): typings.dingtalkRobotSender.mod.Message.Markdown = {
       val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = "markdown")
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.Markdown]
     }
     
-    @scala.inline
-    def Text(text: Content): typings.dingtalkRobotSender.mod.Message.Text = {
+    inline def Text(text: Content): typings.dingtalkRobotSender.mod.Message.Text = {
       val __obj = js.Dynamic.literal(msgtype = "text", text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.dingtalkRobotSender.mod.Message.Text]
     }
@@ -333,23 +300,18 @@ object mod {
   }
   object WebHookOptions {
     
-    @scala.inline
-    def apply(webhook: String): WebHookOptions = {
+    inline def apply(webhook: String): WebHookOptions = {
       val __obj = js.Dynamic.literal(webhook = webhook.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebHookOptions]
     }
     
-    @scala.inline
-    implicit class WebHookOptionsMutableBuilder[Self <: WebHookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebHookOptions](x: Self) {
       
-      @scala.inline
-      def setHttpclient(value: js.Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
+      inline def setHttpclient(value: js.Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpclientUndefined: Self = StObject.set(x, "httpclient", js.undefined)
+      inline def setHttpclientUndefined: Self = StObject.set(x, "httpclient", js.undefined)
       
-      @scala.inline
-      def setWebhook(value: String): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+      inline def setWebhook(value: String): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
     }
   }
 }

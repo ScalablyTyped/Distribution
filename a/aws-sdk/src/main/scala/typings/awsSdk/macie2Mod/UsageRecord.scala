@@ -23,34 +23,25 @@ trait UsageRecord extends StObject {
 }
 object UsageRecord {
   
-  @scala.inline
-  def apply(): UsageRecord = {
+  inline def apply(): UsageRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageRecord]
   }
   
-  @scala.inline
-  implicit class UsageRecordMutableBuilder[Self <: UsageRecord] (val x: Self) extends AnyVal {
+  extension [Self <: UsageRecord](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setFreeTrialStartDate(value: timestampIso8601): Self = StObject.set(x, "freeTrialStartDate", value.asInstanceOf[js.Any])
+    inline def setFreeTrialStartDate(value: timestampIso8601): Self = StObject.set(x, "freeTrialStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeTrialStartDateUndefined: Self = StObject.set(x, "freeTrialStartDate", js.undefined)
+    inline def setFreeTrialStartDateUndefined: Self = StObject.set(x, "freeTrialStartDate", js.undefined)
     
-    @scala.inline
-    def setUsage(value: listOfUsageByAccount): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: listOfUsageByAccount): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     
-    @scala.inline
-    def setUsageVarargs(value: UsageByAccount*): Self = StObject.set(x, "usage", js.Array(value :_*))
+    inline def setUsageVarargs(value: UsageByAccount*): Self = StObject.set(x, "usage", js.Array(value :_*))
   }
 }

@@ -12,16 +12,13 @@ trait SecurityInvalidateToken[T]
 }
 object SecurityInvalidateToken {
   
-  @scala.inline
-  def apply[T](body: T): SecurityInvalidateToken[T] = {
+  inline def apply[T](body: T): SecurityInvalidateToken[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityInvalidateToken[T]]
   }
   
-  @scala.inline
-  implicit class SecurityInvalidateTokenMutableBuilder[Self <: SecurityInvalidateToken[?], T] (val x: Self & SecurityInvalidateToken[T]) extends AnyVal {
+  extension [Self <: SecurityInvalidateToken[?], T](x: Self & SecurityInvalidateToken[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

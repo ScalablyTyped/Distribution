@@ -31,8 +31,7 @@ trait FormContext[T /* <: js.Object */] extends StObject {
 }
 object FormContext {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](
+  inline def apply[T /* <: js.Object */](
     dirty: Dirty[T],
     errors: Errors[T],
     fields: Fields[T],
@@ -49,40 +48,28 @@ object FormContext {
     __obj.asInstanceOf[FormContext[T]]
   }
   
-  @scala.inline
-  implicit class FormContextMutableBuilder[Self <: FormContext[?], T /* <: js.Object */] (val x: Self & FormContext[T]) extends AnyVal {
+  extension [Self <: FormContext[?], T /* <: js.Object */](x: Self & FormContext[T]) {
     
-    @scala.inline
-    def setDirty(value: Dirty[T]): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Dirty[T]): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: Errors[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Errors[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: Fields[T]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Fields[T]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegister(value: (FieldsConfig[T], Transforms[T], T) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
+    inline def setRegister(value: (FieldsConfig[T], Transforms[T], T) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
+    inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetError(value: Errors[T] => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+    inline def setSetError(value: Errors[T] => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetField(value: Partial[T] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
+    inline def setSetField(value: Partial[T] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
+    inline def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnregister(value: FieldsConfig[T] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: FieldsConfig[T] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
   }
 }

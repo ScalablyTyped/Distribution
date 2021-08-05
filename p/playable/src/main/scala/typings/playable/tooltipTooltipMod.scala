@@ -41,19 +41,19 @@ object tooltipTooltipMod {
     extends typings.playable.stylableMod.default[ITooltipStyles]
        with ITooltip {
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    @JSName("_$tooltipInner")
+    /* private */ @JSName("_$tooltipInner")
     var _$tooltipInner: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _isHidden: js.Any = js.native
+    /* private */ var _isHidden: js.Any = js.native
     
-    var _showAsElement: js.Any = js.native
+    /* private */ var _showAsElement: js.Any = js.native
     
-    var _showAsText: js.Any = js.native
+    /* private */ var _showAsText: js.Any = js.native
     
     def clearElement(): Unit = js.native
     

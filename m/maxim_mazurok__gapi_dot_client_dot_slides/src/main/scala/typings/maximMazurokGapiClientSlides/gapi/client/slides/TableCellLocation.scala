@@ -14,25 +14,19 @@ trait TableCellLocation extends StObject {
 }
 object TableCellLocation {
   
-  @scala.inline
-  def apply(): TableCellLocation = {
+  inline def apply(): TableCellLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableCellLocation]
   }
   
-  @scala.inline
-  implicit class TableCellLocationMutableBuilder[Self <: TableCellLocation] (val x: Self) extends AnyVal {
+  extension [Self <: TableCellLocation](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

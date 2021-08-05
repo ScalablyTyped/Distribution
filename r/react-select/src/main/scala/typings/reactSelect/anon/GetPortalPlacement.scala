@@ -11,16 +11,13 @@ trait GetPortalPlacement extends StObject {
 }
 object GetPortalPlacement {
   
-  @scala.inline
-  def apply(getPortalPlacement: MenuState => Unit): GetPortalPlacement = {
+  inline def apply(getPortalPlacement: MenuState => Unit): GetPortalPlacement = {
     val __obj = js.Dynamic.literal(getPortalPlacement = js.Any.fromFunction1(getPortalPlacement))
     __obj.asInstanceOf[GetPortalPlacement]
   }
   
-  @scala.inline
-  implicit class GetPortalPlacementMutableBuilder[Self <: GetPortalPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: GetPortalPlacement](x: Self) {
     
-    @scala.inline
-    def setGetPortalPlacement(value: MenuState => Unit): Self = StObject.set(x, "getPortalPlacement", js.Any.fromFunction1(value))
+    inline def setGetPortalPlacement(value: MenuState => Unit): Self = StObject.set(x, "getPortalPlacement", js.Any.fromFunction1(value))
   }
 }

@@ -11,19 +11,15 @@ trait CombinedAudienceTargetingSetting extends StObject {
 }
 object CombinedAudienceTargetingSetting {
   
-  @scala.inline
-  def apply(): CombinedAudienceTargetingSetting = {
+  inline def apply(): CombinedAudienceTargetingSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CombinedAudienceTargetingSetting]
   }
   
-  @scala.inline
-  implicit class CombinedAudienceTargetingSettingMutableBuilder[Self <: CombinedAudienceTargetingSetting] (val x: Self) extends AnyVal {
+  extension [Self <: CombinedAudienceTargetingSetting](x: Self) {
     
-    @scala.inline
-    def setCombinedAudienceId(value: String): Self = StObject.set(x, "combinedAudienceId", value.asInstanceOf[js.Any])
+    inline def setCombinedAudienceId(value: String): Self = StObject.set(x, "combinedAudienceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombinedAudienceIdUndefined: Self = StObject.set(x, "combinedAudienceId", js.undefined)
+    inline def setCombinedAudienceIdUndefined: Self = StObject.set(x, "combinedAudienceId", js.undefined)
   }
 }

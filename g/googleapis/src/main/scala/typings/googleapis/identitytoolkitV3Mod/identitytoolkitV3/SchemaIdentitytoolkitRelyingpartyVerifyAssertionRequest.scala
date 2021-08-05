@@ -84,91 +84,63 @@ trait SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest extends StObject {
 }
 object SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest {
   
-  @scala.inline
-  def apply(): SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest = {
+  inline def apply(): SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest]
   }
   
-  @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequestMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest](x: Self) {
     
-    @scala.inline
-    def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
+    inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
+    inline def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
     
-    @scala.inline
-    def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
+    inline def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
+    inline def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
-    @scala.inline
-    def setPendingIdToken(value: String): Self = StObject.set(x, "pendingIdToken", value.asInstanceOf[js.Any])
+    inline def setPendingIdToken(value: String): Self = StObject.set(x, "pendingIdToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingIdTokenUndefined: Self = StObject.set(x, "pendingIdToken", js.undefined)
+    inline def setPendingIdTokenUndefined: Self = StObject.set(x, "pendingIdToken", js.undefined)
     
-    @scala.inline
-    def setPostBody(value: String): Self = StObject.set(x, "postBody", value.asInstanceOf[js.Any])
+    inline def setPostBody(value: String): Self = StObject.set(x, "postBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostBodyUndefined: Self = StObject.set(x, "postBody", js.undefined)
+    inline def setPostBodyUndefined: Self = StObject.set(x, "postBody", js.undefined)
     
-    @scala.inline
-    def setRequestUri(value: String): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])
+    inline def setRequestUri(value: String): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUriUndefined: Self = StObject.set(x, "requestUri", js.undefined)
+    inline def setRequestUriUndefined: Self = StObject.set(x, "requestUri", js.undefined)
     
-    @scala.inline
-    def setReturnIdpCredential(value: Boolean): Self = StObject.set(x, "returnIdpCredential", value.asInstanceOf[js.Any])
+    inline def setReturnIdpCredential(value: Boolean): Self = StObject.set(x, "returnIdpCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnIdpCredentialUndefined: Self = StObject.set(x, "returnIdpCredential", js.undefined)
+    inline def setReturnIdpCredentialUndefined: Self = StObject.set(x, "returnIdpCredential", js.undefined)
     
-    @scala.inline
-    def setReturnRefreshToken(value: Boolean): Self = StObject.set(x, "returnRefreshToken", value.asInstanceOf[js.Any])
+    inline def setReturnRefreshToken(value: Boolean): Self = StObject.set(x, "returnRefreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnRefreshTokenUndefined: Self = StObject.set(x, "returnRefreshToken", js.undefined)
+    inline def setReturnRefreshTokenUndefined: Self = StObject.set(x, "returnRefreshToken", js.undefined)
     
-    @scala.inline
-    def setReturnSecureToken(value: Boolean): Self = StObject.set(x, "returnSecureToken", value.asInstanceOf[js.Any])
+    inline def setReturnSecureToken(value: Boolean): Self = StObject.set(x, "returnSecureToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnSecureTokenUndefined: Self = StObject.set(x, "returnSecureToken", js.undefined)
+    inline def setReturnSecureTokenUndefined: Self = StObject.set(x, "returnSecureToken", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+    inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
-    @scala.inline
-    def setTenantProjectNumber(value: String): Self = StObject.set(x, "tenantProjectNumber", value.asInstanceOf[js.Any])
+    inline def setTenantProjectNumber(value: String): Self = StObject.set(x, "tenantProjectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantProjectNumberUndefined: Self = StObject.set(x, "tenantProjectNumber", js.undefined)
+    inline def setTenantProjectNumberUndefined: Self = StObject.set(x, "tenantProjectNumber", js.undefined)
   }
 }

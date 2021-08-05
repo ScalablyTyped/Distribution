@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1PolylineConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1PolylineConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1PolylineConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1PolylineConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1PolylineConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1PolylineConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1PolylineConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1PolylineConfig](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
+    inline def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
     
-    @scala.inline
-    def setInstructionMessage(value: String): Self = StObject.set(x, "instructionMessage", value.asInstanceOf[js.Any])
+    inline def setInstructionMessage(value: String): Self = StObject.set(x, "instructionMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionMessageUndefined: Self = StObject.set(x, "instructionMessage", js.undefined)
+    inline def setInstructionMessageUndefined: Self = StObject.set(x, "instructionMessage", js.undefined)
   }
 }

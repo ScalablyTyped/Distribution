@@ -13,16 +13,13 @@ trait TouchBarGroupConstructorOptions extends StObject {
 }
 object TouchBarGroupConstructorOptions {
   
-  @scala.inline
-  def apply(items: TouchBar): TouchBarGroupConstructorOptions = {
+  inline def apply(items: TouchBar): TouchBarGroupConstructorOptions = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarGroupConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarGroupConstructorOptionsMutableBuilder[Self <: TouchBarGroupConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarGroupConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setItems(value: TouchBar): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: TouchBar): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

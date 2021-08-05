@@ -13,16 +13,13 @@ trait VirtualGatewayHttp2ConnectionPool extends StObject {
 }
 object VirtualGatewayHttp2ConnectionPool {
   
-  @scala.inline
-  def apply(maxRequests: MaxRequests): VirtualGatewayHttp2ConnectionPool = {
+  inline def apply(maxRequests: MaxRequests): VirtualGatewayHttp2ConnectionPool = {
     val __obj = js.Dynamic.literal(maxRequests = maxRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayHttp2ConnectionPool]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayHttp2ConnectionPoolMutableBuilder[Self <: VirtualGatewayHttp2ConnectionPool] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayHttp2ConnectionPool](x: Self) {
     
-    @scala.inline
-    def setMaxRequests(value: MaxRequests): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
+    inline def setMaxRequests(value: MaxRequests): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
   }
 }

@@ -34,7 +34,7 @@ trait Window extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE
   
-  @JSName("VBIDE.Window_typekey")
+  /* private */ @JSName("VBIDE.Window_typekey")
   var VBIDEDotWindow_typekey: Window
   
   var Visible: Boolean
@@ -45,8 +45,7 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Caption: String,
     Close: () => Unit,
     Collection: Windows,
@@ -69,55 +68,38 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollection(value: Windows): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: Windows): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHWnd(value: Double): Self = StObject.set(x, "HWnd", value.asInstanceOf[js.Any])
+    inline def setHWnd(value: Double): Self = StObject.set(x, "HWnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedWindowFrame(value: Window): Self = StObject.set(x, "LinkedWindowFrame", value.asInstanceOf[js.Any])
+    inline def setLinkedWindowFrame(value: Window): Self = StObject.set(x, "LinkedWindowFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedWindows(value: LinkedWindows): Self = StObject.set(x, "LinkedWindows", value.asInstanceOf[js.Any])
+    inline def setLinkedWindows(value: LinkedWindows): Self = StObject.set(x, "LinkedWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFocus(value: () => Unit): Self = StObject.set(x, "SetFocus", js.Any.fromFunction0(value))
+    inline def setSetFocus(value: () => Unit): Self = StObject.set(x, "SetFocus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: vbextWindowType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: vbextWindowType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
+    inline def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotWindow_typekey(value: Window): Self = StObject.set(x, "VBIDE.Window_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotWindow_typekey(value: Window): Self = StObject.set(x, "VBIDE.Window_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowState(value: vbextWindowState): Self = StObject.set(x, "WindowState", value.asInstanceOf[js.Any])
+    inline def setWindowState(value: vbextWindowState): Self = StObject.set(x, "WindowState", value.asInstanceOf[js.Any])
   }
 }

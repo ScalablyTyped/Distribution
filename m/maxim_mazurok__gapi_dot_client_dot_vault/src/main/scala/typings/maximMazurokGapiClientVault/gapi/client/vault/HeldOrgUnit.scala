@@ -14,25 +14,19 @@ trait HeldOrgUnit extends StObject {
 }
 object HeldOrgUnit {
   
-  @scala.inline
-  def apply(): HeldOrgUnit = {
+  inline def apply(): HeldOrgUnit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeldOrgUnit]
   }
   
-  @scala.inline
-  implicit class HeldOrgUnitMutableBuilder[Self <: HeldOrgUnit] (val x: Self) extends AnyVal {
+  extension [Self <: HeldOrgUnit](x: Self) {
     
-    @scala.inline
-    def setHoldTime(value: String): Self = StObject.set(x, "holdTime", value.asInstanceOf[js.Any])
+    inline def setHoldTime(value: String): Self = StObject.set(x, "holdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoldTimeUndefined: Self = StObject.set(x, "holdTime", js.undefined)
+    inline def setHoldTimeUndefined: Self = StObject.set(x, "holdTime", js.undefined)
     
-    @scala.inline
-    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
+    inline def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
+    inline def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
   }
 }

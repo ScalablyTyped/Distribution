@@ -18,17 +18,14 @@ object typesConcurrentModificationExceptionMod {
   }
   object ConcurrentModificationException {
     
-    @scala.inline
-    def apply(): ConcurrentModificationException = {
+    inline def apply(): ConcurrentModificationException = {
       val __obj = js.Dynamic.literal(name = "ConcurrentModificationException")
       __obj.asInstanceOf[ConcurrentModificationException]
     }
     
-    @scala.inline
-    implicit class ConcurrentModificationExceptionMutableBuilder[Self <: ConcurrentModificationException] (val x: Self) extends AnyVal {
+    extension [Self <: ConcurrentModificationException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ConcurrentModificationException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -43,20 +40,16 @@ object typesConcurrentModificationExceptionMod {
   }
   object ConcurrentModificationExceptionDetails {
     
-    @scala.inline
-    def apply(): ConcurrentModificationExceptionDetails = {
+    inline def apply(): ConcurrentModificationExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConcurrentModificationExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ConcurrentModificationExceptionDetailsMutableBuilder[Self <: ConcurrentModificationExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ConcurrentModificationExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

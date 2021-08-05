@@ -13,19 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ensureLoggedIn(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def ensureLoggedIn(options: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def ensureLoggedIn(options: LoggedInOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def ensureLoggedIn(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def ensureLoggedIn(options: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def ensureLoggedIn(options: LoggedInOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedIn")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def ensureLoggedOut(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def ensureLoggedOut(options: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def ensureLoggedOut(options: LoggedOutOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def ensureLoggedOut(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def ensureLoggedOut(options: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def ensureLoggedOut(options: LoggedOutOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureLoggedOut")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   trait LoggedInOptions extends StObject {
     
@@ -41,26 +35,20 @@ object mod {
   }
   object LoggedInOptions {
     
-    @scala.inline
-    def apply(): LoggedInOptions = {
+    inline def apply(): LoggedInOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggedInOptions]
     }
     
-    @scala.inline
-    implicit class LoggedInOptionsMutableBuilder[Self <: LoggedInOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggedInOptions](x: Self) {
       
-      @scala.inline
-      def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+      inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+      inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
-      @scala.inline
-      def setSetRedirectTo(value: Boolean): Self = StObject.set(x, "setRedirectTo", value.asInstanceOf[js.Any])
+      inline def setSetRedirectTo(value: Boolean): Self = StObject.set(x, "setRedirectTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetRedirectToUndefined: Self = StObject.set(x, "setRedirectTo", js.undefined)
+      inline def setSetRedirectToUndefined: Self = StObject.set(x, "setRedirectTo", js.undefined)
     }
   }
   
@@ -73,20 +61,16 @@ object mod {
   }
   object LoggedOutOptions {
     
-    @scala.inline
-    def apply(): LoggedOutOptions = {
+    inline def apply(): LoggedOutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggedOutOptions]
     }
     
-    @scala.inline
-    implicit class LoggedOutOptionsMutableBuilder[Self <: LoggedOutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggedOutOptions](x: Self) {
       
-      @scala.inline
-      def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+      inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+      inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
     }
   }
 }

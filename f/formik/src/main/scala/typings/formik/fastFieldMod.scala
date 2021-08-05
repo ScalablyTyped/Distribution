@@ -29,20 +29,16 @@ object fastFieldMod {
   }
   object FastFieldConfig {
     
-    @scala.inline
-    def apply[T](name: String): FastFieldConfig[T] = {
+    inline def apply[T](name: String): FastFieldConfig[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastFieldConfig[T]]
     }
     
-    @scala.inline
-    implicit class FastFieldConfigMutableBuilder[Self <: FastFieldConfig[?], T] (val x: Self & FastFieldConfig[T]) extends AnyVal {
+    extension [Self <: FastFieldConfig[?], T](x: Self & FastFieldConfig[T]) {
       
-      @scala.inline
-      def setShouldUpdate(value: (/* nextProps */ T & GenericFieldHTMLAttributes, /* props */ js.Object) => Boolean): Self = StObject.set(x, "shouldUpdate", js.Any.fromFunction2(value))
+      inline def setShouldUpdate(value: (/* nextProps */ T & GenericFieldHTMLAttributes, /* props */ js.Object) => Boolean): Self = StObject.set(x, "shouldUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldUpdateUndefined: Self = StObject.set(x, "shouldUpdate", js.undefined)
+      inline def setShouldUpdateUndefined: Self = StObject.set(x, "shouldUpdate", js.undefined)
     }
   }
   
@@ -56,23 +52,18 @@ object fastFieldMod {
   }
   object FastFieldProps {
     
-    @scala.inline
-    def apply[V](field: FieldInputProps[V], form: FormikProps[V], meta: FieldMetaProps[V]): FastFieldProps[V] = {
+    inline def apply[V](field: FieldInputProps[V], form: FormikProps[V], meta: FieldMetaProps[V]): FastFieldProps[V] = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastFieldProps[V]]
     }
     
-    @scala.inline
-    implicit class FastFieldPropsMutableBuilder[Self <: FastFieldProps[?], V] (val x: Self & FastFieldProps[V]) extends AnyVal {
+    extension [Self <: FastFieldProps[?], V](x: Self & FastFieldProps[V]) {
       
-      @scala.inline
-      def setField(value: FieldInputProps[V]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: FieldInputProps[V]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForm(value: FormikProps[V]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: FormikProps[V]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: FieldMetaProps[V]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: FieldMetaProps[V]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
 }

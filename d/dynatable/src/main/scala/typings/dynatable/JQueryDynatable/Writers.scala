@@ -90,33 +90,25 @@ trait Writers extends StObject {
 }
 object Writers {
   
-  @scala.inline
-  def apply(): Writers = {
+  inline def apply(): Writers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Writers]
   }
   
-  @scala.inline
-  implicit class WritersMutableBuilder[Self <: Writers] (val x: Self) extends AnyVal {
+  extension [Self <: Writers](x: Self) {
     
-    @scala.inline
-    def set_attributeWriter(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
+    inline def set_attributeWriter(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_attributeWriterUndefined: Self = StObject.set(x, "_attributeWriter", js.undefined)
+    inline def set_attributeWriterUndefined: Self = StObject.set(x, "_attributeWriter", js.undefined)
     
-    @scala.inline
-    def set_cellWriter(value: (/* column */ Column, /* record */ js.Any) => String): Self = StObject.set(x, "_cellWriter", js.Any.fromFunction2(value))
+    inline def set_cellWriter(value: (/* column */ Column, /* record */ js.Any) => String): Self = StObject.set(x, "_cellWriter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_cellWriterUndefined: Self = StObject.set(x, "_cellWriter", js.undefined)
+    inline def set_cellWriterUndefined: Self = StObject.set(x, "_cellWriter", js.undefined)
     
-    @scala.inline
-    def set_rowWriter(
+    inline def set_rowWriter(
       value: (/* rowIndex */ Double, /* record */ js.Any, /* columns */ js.Array[Column], /* cellWriter */ js.Function) => String
     ): Self = StObject.set(x, "_rowWriter", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def set_rowWriterUndefined: Self = StObject.set(x, "_rowWriter", js.undefined)
+    inline def set_rowWriterUndefined: Self = StObject.set(x, "_rowWriter", js.undefined)
   }
 }

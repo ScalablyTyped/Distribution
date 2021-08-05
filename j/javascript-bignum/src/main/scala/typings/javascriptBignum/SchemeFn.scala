@@ -133,8 +133,7 @@ trait SchemeFn
 }
 object SchemeFn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abs: SchemeOperator,
     acos: SchemeOperator,
     angle: SchemeOperator,
@@ -170,97 +169,66 @@ object SchemeFn {
     __obj.asInstanceOf[SchemeFn]
   }
   
-  @scala.inline
-  implicit class SchemeFnMutableBuilder[Self <: SchemeFn] (val x: Self) extends AnyVal {
+  extension [Self <: SchemeFn](x: Self) {
     
-    @scala.inline
-    def setAbs(value: SchemeOperator): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
+    inline def setAbs(value: SchemeOperator): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcos(value: SchemeOperator): Self = StObject.set(x, "acos", value.asInstanceOf[js.Any])
+    inline def setAcos(value: SchemeOperator): Self = StObject.set(x, "acos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngle(value: SchemeOperator): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: SchemeOperator): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsin(value: SchemeOperator): Self = StObject.set(x, "asin", value.asInstanceOf[js.Any])
+    inline def setAsin(value: SchemeOperator): Self = StObject.set(x, "asin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtan(value: SchemeOperator): Self = StObject.set(x, "atan", value.asInstanceOf[js.Any])
+    inline def setAtan(value: SchemeOperator): Self = StObject.set(x, "atan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCeiling(value: SchemeOperator): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
+    inline def setCeiling(value: SchemeOperator): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCos(value: SchemeOperator): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
+    inline def setCos(value: SchemeOperator): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenominator(value: SchemeOperator): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
+    inline def setDenominator(value: SchemeOperator): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiv(value: SchemeOperator): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+    inline def setDiv(value: SchemeOperator): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiv0(value: SchemeOperator): Self = StObject.set(x, "div0", value.asInstanceOf[js.Any])
+    inline def setDiv0(value: SchemeOperator): Self = StObject.set(x, "div0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExact(value: SchemeOperator): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: SchemeOperator): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExp(value: SchemeOperator): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+    inline def setExp(value: SchemeOperator): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpt(value: SchemeOperator): Self = StObject.set(x, "expt", value.asInstanceOf[js.Any])
+    inline def setExpt(value: SchemeOperator): Self = StObject.set(x, "expt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloor(value: SchemeOperator): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+    inline def setFloor(value: SchemeOperator): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcd(value: SchemeOperator): Self = StObject.set(x, "gcd", value.asInstanceOf[js.Any])
+    inline def setGcd(value: SchemeOperator): Self = StObject.set(x, "gcd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInexact(value: SchemeOperator): Self = StObject.set(x, "inexact", value.asInstanceOf[js.Any])
+    inline def setInexact(value: SchemeOperator): Self = StObject.set(x, "inexact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLcm(value: SchemeOperator): Self = StObject.set(x, "lcm", value.asInstanceOf[js.Any])
+    inline def setLcm(value: SchemeOperator): Self = StObject.set(x, "lcm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: SchemeOperator): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: SchemeOperator): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnitude(value: SchemeOperator): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
+    inline def setMagnitude(value: SchemeOperator): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: SchemeOperator): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: SchemeOperator): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: SchemeOperator): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: SchemeOperator): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMod(value: SchemeOperator): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+    inline def setMod(value: SchemeOperator): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMod0(value: SchemeOperator): Self = StObject.set(x, "mod0", value.asInstanceOf[js.Any])
+    inline def setMod0(value: SchemeOperator): Self = StObject.set(x, "mod0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumerator(value: SchemeOperator): Self = StObject.set(x, "numerator", value.asInstanceOf[js.Any])
+    inline def setNumerator(value: SchemeOperator): Self = StObject.set(x, "numerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRationalize(value: SchemeOperator): Self = StObject.set(x, "rationalize", value.asInstanceOf[js.Any])
+    inline def setRationalize(value: SchemeOperator): Self = StObject.set(x, "rationalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRound(value: SchemeOperator): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: SchemeOperator): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSin(value: SchemeOperator): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
+    inline def setSin(value: SchemeOperator): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqrt(value: SchemeOperator): Self = StObject.set(x, "sqrt", value.asInstanceOf[js.Any])
+    inline def setSqrt(value: SchemeOperator): Self = StObject.set(x, "sqrt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTan(value: SchemeOperator): Self = StObject.set(x, "tan", value.asInstanceOf[js.Any])
+    inline def setTan(value: SchemeOperator): Self = StObject.set(x, "tan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncate(value: SchemeOperator): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+    inline def setTruncate(value: SchemeOperator): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
   }
 }

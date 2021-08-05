@@ -20,8 +20,7 @@ object anon {
   }
   object CcEmailAddresses {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ccEmailAddresses: js.Array[String],
       message: String,
       signatures: js.Array[Singature],
@@ -31,26 +30,19 @@ object anon {
       __obj.asInstanceOf[CcEmailAddresses]
     }
     
-    @scala.inline
-    implicit class CcEmailAddressesMutableBuilder[Self <: CcEmailAddresses] (val x: Self) extends AnyVal {
+    extension [Self <: CcEmailAddresses](x: Self) {
       
-      @scala.inline
-      def setCcEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
+      inline def setCcEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcEmailAddressesVarargs(value: String*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
+      inline def setCcEmailAddressesVarargs(value: String*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatures(value: js.Array[Singature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+      inline def setSignatures(value: js.Array[Singature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignaturesVarargs(value: Singature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+      inline def setSignaturesVarargs(value: Singature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,26 +58,20 @@ object anon {
   }
   object CcRoles {
     
-    @scala.inline
-    def apply(ccRoles: String, message: String, signerRoles: SignerRole, title: String): CcRoles = {
+    inline def apply(ccRoles: String, message: String, signerRoles: SignerRole, title: String): CcRoles = {
       val __obj = js.Dynamic.literal(ccRoles = ccRoles.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], signerRoles = signerRoles.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CcRoles]
     }
     
-    @scala.inline
-    implicit class CcRolesMutableBuilder[Self <: CcRoles] (val x: Self) extends AnyVal {
+    extension [Self <: CcRoles](x: Self) {
       
-      @scala.inline
-      def setCcRoles(value: String): Self = StObject.set(x, "ccRoles", value.asInstanceOf[js.Any])
+      inline def setCcRoles(value: String): Self = StObject.set(x, "ccRoles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerRoles(value: SignerRole): Self = StObject.set(x, "signerRoles", value.asInstanceOf[js.Any])
+      inline def setSignerRoles(value: SignerRole): Self = StObject.set(x, "signerRoles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

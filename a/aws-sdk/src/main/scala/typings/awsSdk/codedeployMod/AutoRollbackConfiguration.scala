@@ -18,28 +18,21 @@ trait AutoRollbackConfiguration extends StObject {
 }
 object AutoRollbackConfiguration {
   
-  @scala.inline
-  def apply(): AutoRollbackConfiguration = {
+  inline def apply(): AutoRollbackConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoRollbackConfiguration]
   }
   
-  @scala.inline
-  implicit class AutoRollbackConfigurationMutableBuilder[Self <: AutoRollbackConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AutoRollbackConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setEvents(value: AutoRollbackEventsList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: AutoRollbackEventsList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: AutoRollbackEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: AutoRollbackEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
   }
 }

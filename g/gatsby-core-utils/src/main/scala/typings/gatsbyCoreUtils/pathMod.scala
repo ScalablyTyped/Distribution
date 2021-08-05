@@ -10,12 +10,9 @@ object pathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isNodeInternalModulePath(fileName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeInternalModulePath")(fileName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNodeInternalModulePath(fileName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeInternalModulePath")(fileName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def joinPath(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def joinPath(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def slash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def slash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
 }

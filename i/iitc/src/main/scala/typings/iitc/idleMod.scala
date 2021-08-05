@@ -11,24 +11,19 @@ object idleMod {
     @JSGlobal("IDLE_POLL_TIME")
     @js.native
     def IDLE_POLL_TIME: Double = js.native
-    @scala.inline
-    def IDLE_POLL_TIME_=(x: Double): Unit = js.Dynamic.global.updateDynamic("IDLE_POLL_TIME")(x.asInstanceOf[js.Any])
+    inline def IDLE_POLL_TIME_=(x: Double): Unit = js.Dynamic.global.updateDynamic("IDLE_POLL_TIME")(x.asInstanceOf[js.Any])
     
     /**
       * add your function here if you want to be notified when the user
       * resumes from being idle
       */
-    @scala.inline
-    def addResumeFunction(fct: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("addResumeFunction")(fct.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addResumeFunction(fct: js.Function0[Unit]): Unit = js.Dynamic.global.applyDynamic("addResumeFunction")(fct.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def idlePoll(): Unit = js.Dynamic.global.applyDynamic("idlePoll")().asInstanceOf[Unit]
+    inline def idlePoll(): Unit = js.Dynamic.global.applyDynamic("idlePoll")().asInstanceOf[Unit]
     
-    @scala.inline
-    def idleReset(): Unit = js.Dynamic.global.applyDynamic("idleReset")().asInstanceOf[Unit]
+    inline def idleReset(): Unit = js.Dynamic.global.applyDynamic("idleReset")().asInstanceOf[Unit]
     
-    @scala.inline
-    def idleSet(): Unit = js.Dynamic.global.applyDynamic("idleSet")().asInstanceOf[Unit]
+    inline def idleSet(): Unit = js.Dynamic.global.applyDynamic("idleSet")().asInstanceOf[Unit]
     
     @JSGlobal("idleTime")
     @js.native
@@ -40,13 +35,10 @@ object idleMod {
     @js.native
     def idleTimeLimit: Double = js.native
     
-    @scala.inline
-    def idleTimeLimit_=(x: Double): Unit = js.Dynamic.global.updateDynamic("_idleTimeLimit")(x.asInstanceOf[js.Any])
+    inline def idleTimeLimit_=(x: Double): Unit = js.Dynamic.global.updateDynamic("_idleTimeLimit")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def idleTime_=(x: Double): Unit = js.Dynamic.global.updateDynamic("idleTime")(x.asInstanceOf[js.Any])
+    inline def idleTime_=(x: Double): Unit = js.Dynamic.global.updateDynamic("idleTime")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setupIdle(): Unit = js.Dynamic.global.applyDynamic("setupIdle")().asInstanceOf[Unit]
+    inline def setupIdle(): Unit = js.Dynamic.global.applyDynamic("setupIdle")().asInstanceOf[Unit]
   }
 }

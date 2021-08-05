@@ -8,6 +8,5 @@ object pahoMqttStrings {
   
   @js.native
   sealed trait Debug extends StObject
-  @scala.inline
-  def Debug: Debug = "Debug".asInstanceOf[Debug]
+  inline def Debug: Debug = "Debug".asInstanceOf[Debug]
 }

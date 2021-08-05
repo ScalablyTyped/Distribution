@@ -11,16 +11,13 @@ trait XStyleSettingsSupplier extends StObject {
 }
 object XStyleSettingsSupplier {
   
-  @scala.inline
-  def apply(StyleSettings: XStyleSettings): XStyleSettingsSupplier = {
+  inline def apply(StyleSettings: XStyleSettings): XStyleSettingsSupplier = {
     val __obj = js.Dynamic.literal(StyleSettings = StyleSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[XStyleSettingsSupplier]
   }
   
-  @scala.inline
-  implicit class XStyleSettingsSupplierMutableBuilder[Self <: XStyleSettingsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XStyleSettingsSupplier](x: Self) {
     
-    @scala.inline
-    def setStyleSettings(value: XStyleSettings): Self = StObject.set(x, "StyleSettings", value.asInstanceOf[js.Any])
+    inline def setStyleSettings(value: XStyleSettings): Self = StObject.set(x, "StyleSettings", value.asInstanceOf[js.Any])
   }
 }

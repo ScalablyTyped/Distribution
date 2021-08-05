@@ -44,8 +44,7 @@ object mod {
     @JSImport("ethereumjs-common", "default._getChainParams")
     @js.native
     def _getChainParams: js.Any = js.native
-    @scala.inline
-    def _getChainParams_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getChainParams")(x.asInstanceOf[js.Any])
+    inline def _getChainParams_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getChainParams")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a Common object for a custom chain, based on a standard one. It uses all the [[Chain]]
@@ -57,51 +56,41 @@ object mod {
       * @param hardfork String identifier ('byzantium') for hardfork (optional)
       * @param supportedHardforks Limit parameter returns to the given hardforks (optional)
       */
-    @scala.inline
-    def forCustomChain(baseChain: String, customChainParams: PartialChain): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(baseChain: String, customChainParams: PartialChain, hardfork: String): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(
+    inline def forCustomChain(baseChain: String, customChainParams: PartialChain): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any])).asInstanceOf[Common]
+    inline def forCustomChain(baseChain: String, customChainParams: PartialChain, hardfork: String): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any])).asInstanceOf[Common]
+    inline def forCustomChain(
       baseChain: String,
       customChainParams: PartialChain,
       hardfork: String,
       supportedHardforks: js.Array[String]
     ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(
+    inline def forCustomChain(
       baseChain: String,
       customChainParams: PartialChain,
       hardfork: Null,
       supportedHardforks: js.Array[String]
     ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(
+    inline def forCustomChain(
       baseChain: String,
       customChainParams: PartialChain,
       hardfork: Unit,
       supportedHardforks: js.Array[String]
     ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(baseChain: Double, customChainParams: PartialChain): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(baseChain: Double, customChainParams: PartialChain, hardfork: String): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(
+    inline def forCustomChain(baseChain: Double, customChainParams: PartialChain): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any])).asInstanceOf[Common]
+    inline def forCustomChain(baseChain: Double, customChainParams: PartialChain, hardfork: String): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any])).asInstanceOf[Common]
+    inline def forCustomChain(
       baseChain: Double,
       customChainParams: PartialChain,
       hardfork: String,
       supportedHardforks: js.Array[String]
     ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(
+    inline def forCustomChain(
       baseChain: Double,
       customChainParams: PartialChain,
       hardfork: Null,
       supportedHardforks: js.Array[String]
     ): Common = (^.asInstanceOf[js.Dynamic].applyDynamic("forCustomChain")(baseChain.asInstanceOf[js.Any], customChainParams.asInstanceOf[js.Any], hardfork.asInstanceOf[js.Any], supportedHardforks.asInstanceOf[js.Any])).asInstanceOf[Common]
-    @scala.inline
-    def forCustomChain(
+    inline def forCustomChain(
       baseChain: Double,
       customChainParams: PartialChain,
       hardfork: Unit,
@@ -112,7 +101,7 @@ object mod {
   @js.native
   trait Common extends StObject {
     
-    var _chainParams: js.Any = js.native
+    /* private */ var _chainParams: js.Any = js.native
     
     /**
       * Internal helper function to choose between hardfork set and hardfork provided as param
@@ -132,7 +121,7 @@ object mod {
       */
     def _getHardfork(hardfork: String): js.Any = js.native
     
-    var _hardfork: js.Any = js.native
+    /* private */ var _hardfork: js.Any = js.native
     
     /**
       * Internal helper function to check if a hardfork is set to be supported by the library
@@ -142,7 +131,7 @@ object mod {
     def _isSupportedHardfork(): Boolean = js.native
     def _isSupportedHardfork(hardfork: String): Boolean = js.native
     
-    var _supportedHardforks: js.Any = js.native
+    /* private */ var _supportedHardforks: js.Any = js.native
     
     /**
       * Returns the latest active hardfork name for chain or block or throws if unavailable
@@ -342,26 +331,20 @@ object mod {
   }
   object hardforkOptions {
     
-    @scala.inline
-    def apply(): hardforkOptions = {
+    inline def apply(): hardforkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[hardforkOptions]
     }
     
-    @scala.inline
-    implicit class hardforkOptionsMutableBuilder[Self <: hardforkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: hardforkOptions](x: Self) {
       
-      @scala.inline
-      def setOnlyActive(value: Boolean): Self = StObject.set(x, "onlyActive", value.asInstanceOf[js.Any])
+      inline def setOnlyActive(value: Boolean): Self = StObject.set(x, "onlyActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyActiveUndefined: Self = StObject.set(x, "onlyActive", js.undefined)
+      inline def setOnlyActiveUndefined: Self = StObject.set(x, "onlyActive", js.undefined)
       
-      @scala.inline
-      def setOnlySupported(value: Boolean): Self = StObject.set(x, "onlySupported", value.asInstanceOf[js.Any])
+      inline def setOnlySupported(value: Boolean): Self = StObject.set(x, "onlySupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlySupportedUndefined: Self = StObject.set(x, "onlySupported", js.undefined)
+      inline def setOnlySupportedUndefined: Self = StObject.set(x, "onlySupported", js.undefined)
     }
   }
 }

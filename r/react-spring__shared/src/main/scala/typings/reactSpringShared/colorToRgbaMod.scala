@@ -10,6 +10,5 @@ object colorToRgbaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def colorToRgba(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToRgba")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def colorToRgba(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToRgba")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

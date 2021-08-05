@@ -13,16 +13,13 @@ trait SetBypassServiceWorkerRequest extends StObject {
 }
 object SetBypassServiceWorkerRequest {
   
-  @scala.inline
-  def apply(bypass: Boolean): SetBypassServiceWorkerRequest = {
+  inline def apply(bypass: Boolean): SetBypassServiceWorkerRequest = {
     val __obj = js.Dynamic.literal(bypass = bypass.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBypassServiceWorkerRequest]
   }
   
-  @scala.inline
-  implicit class SetBypassServiceWorkerRequestMutableBuilder[Self <: SetBypassServiceWorkerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetBypassServiceWorkerRequest](x: Self) {
     
-    @scala.inline
-    def setBypass(value: Boolean): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
+    inline def setBypass(value: Boolean): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
   }
 }

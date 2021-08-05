@@ -30,6 +30,5 @@ object GoogleEarthEnterpriseMapsProvider {
   @JSImport("cesium", "GoogleEarthEnterpriseMapsProvider.logoUrl")
   @js.native
   def logoUrl: String = js.native
-  @scala.inline
-  def logoUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logoUrl")(x.asInstanceOf[js.Any])
+  inline def logoUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logoUrl")(x.asInstanceOf[js.Any])
 }

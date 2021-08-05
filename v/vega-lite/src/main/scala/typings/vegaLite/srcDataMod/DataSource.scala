@@ -14,20 +14,17 @@ trait DataSource
      with Data
 object DataSource {
   
-  @scala.inline
-  def InlineData(values: InlineDataset): typings.vegaLite.srcDataMod.InlineData = {
+  inline def InlineData(values: InlineDataset): typings.vegaLite.srcDataMod.InlineData = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.InlineData]
   }
   
-  @scala.inline
-  def NamedData(name: String): typings.vegaLite.srcDataMod.NamedData = {
+  inline def NamedData(name: String): typings.vegaLite.srcDataMod.NamedData = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.NamedData]
   }
   
-  @scala.inline
-  def UrlData(url: String): typings.vegaLite.srcDataMod.UrlData = {
+  inline def UrlData(url: String): typings.vegaLite.srcDataMod.UrlData = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaLite.srcDataMod.UrlData]
   }

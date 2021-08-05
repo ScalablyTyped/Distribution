@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(dataBuffer: Buffer): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(dataBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
-  @scala.inline
-  def apply(dataBuffer: Buffer, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(dataBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def apply(dataBuffer: Buffer): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(dataBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def apply(dataBuffer: Buffer, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(dataBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   @JSImport("pdf-parse", JSImport.Namespace)
   @js.native
@@ -26,32 +24,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setPagerender(value: /* pageData */ js.Any => String): Self = StObject.set(x, "pagerender", js.Any.fromFunction1(value))
+      inline def setPagerender(value: /* pageData */ js.Any => String): Self = StObject.set(x, "pagerender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPagerenderUndefined: Self = StObject.set(x, "pagerender", js.undefined)
+      inline def setPagerenderUndefined: Self = StObject.set(x, "pagerender", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -71,8 +61,7 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       info: js.Any,
       metadata: js.Any,
       numpages: Double,
@@ -84,26 +73,19 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumpages(value: Double): Self = StObject.set(x, "numpages", value.asInstanceOf[js.Any])
+      inline def setNumpages(value: Double): Self = StObject.set(x, "numpages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumrender(value: Double): Self = StObject.set(x, "numrender", value.asInstanceOf[js.Any])
+      inline def setNumrender(value: Double): Self = StObject.set(x, "numrender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,19 +99,14 @@ object mod {
   trait Version extends StObject
   object Version {
     
-    @scala.inline
-    def default: typings.pdfParse.pdfParseStrings.default = "default".asInstanceOf[typings.pdfParse.pdfParseStrings.default]
+    inline def default: typings.pdfParse.pdfParseStrings.default = "default".asInstanceOf[typings.pdfParse.pdfParseStrings.default]
     
-    @scala.inline
-    def v1Dot10Dot100: typings.pdfParse.pdfParseStrings.v1Dot10Dot100 = "v1.10.100".asInstanceOf[typings.pdfParse.pdfParseStrings.v1Dot10Dot100]
+    inline def v1Dot10Dot100: typings.pdfParse.pdfParseStrings.v1Dot10Dot100 = "v1.10.100".asInstanceOf[typings.pdfParse.pdfParseStrings.v1Dot10Dot100]
     
-    @scala.inline
-    def v1Dot10Dot88: typings.pdfParse.pdfParseStrings.v1Dot10Dot88 = "v1.10.88".asInstanceOf[typings.pdfParse.pdfParseStrings.v1Dot10Dot88]
+    inline def v1Dot10Dot88: typings.pdfParse.pdfParseStrings.v1Dot10Dot88 = "v1.10.88".asInstanceOf[typings.pdfParse.pdfParseStrings.v1Dot10Dot88]
     
-    @scala.inline
-    def v1Dot9Dot426: typings.pdfParse.pdfParseStrings.v1Dot9Dot426 = "v1.9.426".asInstanceOf[typings.pdfParse.pdfParseStrings.v1Dot9Dot426]
+    inline def v1Dot9Dot426: typings.pdfParse.pdfParseStrings.v1Dot9Dot426 = "v1.9.426".asInstanceOf[typings.pdfParse.pdfParseStrings.v1Dot9Dot426]
     
-    @scala.inline
-    def v2Dot0Dot550: typings.pdfParse.pdfParseStrings.v2Dot0Dot550 = "v2.0.550".asInstanceOf[typings.pdfParse.pdfParseStrings.v2Dot0Dot550]
+    inline def v2Dot0Dot550: typings.pdfParse.pdfParseStrings.v2Dot0Dot550 = "v2.0.550".asInstanceOf[typings.pdfParse.pdfParseStrings.v2Dot0Dot550]
   }
 }

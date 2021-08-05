@@ -12,19 +12,15 @@ trait QueryExecuteSubsetResult extends StObject {
 }
 object QueryExecuteSubsetResult {
   
-  @scala.inline
-  def apply(message: String, resultSubset: ResultSetSubset): QueryExecuteSubsetResult = {
+  inline def apply(message: String, resultSubset: ResultSetSubset): QueryExecuteSubsetResult = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultSubset = resultSubset.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecuteSubsetResult]
   }
   
-  @scala.inline
-  implicit class QueryExecuteSubsetResultMutableBuilder[Self <: QueryExecuteSubsetResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecuteSubsetResult](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSubset(value: ResultSetSubset): Self = StObject.set(x, "resultSubset", value.asInstanceOf[js.Any])
+    inline def setResultSubset(value: ResultSetSubset): Self = StObject.set(x, "resultSubset", value.asInstanceOf[js.Any])
   }
 }

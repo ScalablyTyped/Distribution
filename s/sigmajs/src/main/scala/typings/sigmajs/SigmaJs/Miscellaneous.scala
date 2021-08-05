@@ -10,16 +10,13 @@ trait Miscellaneous extends StObject {
 }
 object Miscellaneous {
   
-  @scala.inline
-  def apply(animation: Animation): Miscellaneous = {
+  inline def apply(animation: Animation): Miscellaneous = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Miscellaneous]
   }
   
-  @scala.inline
-  implicit class MiscellaneousMutableBuilder[Self <: Miscellaneous] (val x: Self) extends AnyVal {
+  extension [Self <: Miscellaneous](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
   }
 }

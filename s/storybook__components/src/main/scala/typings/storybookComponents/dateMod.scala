@@ -20,8 +20,7 @@ object dateMod {
        with DateConfig
   object DateProps {
     
-    @scala.inline
-    def apply(name: String, onChange: DateValue => DateValue | Unit): DateProps = {
+    inline def apply(name: String, onChange: DateValue => DateValue | Unit): DateProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[DateProps]
     }

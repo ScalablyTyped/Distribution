@@ -12,25 +12,19 @@ trait PreviousNetworkTransactionId extends StObject {
 }
 object PreviousNetworkTransactionId {
   
-  @scala.inline
-  def apply(): PreviousNetworkTransactionId = {
+  inline def apply(): PreviousNetworkTransactionId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreviousNetworkTransactionId]
   }
   
-  @scala.inline
-  implicit class PreviousNetworkTransactionIdMutableBuilder[Self <: PreviousNetworkTransactionId] (val x: Self) extends AnyVal {
+  extension [Self <: PreviousNetworkTransactionId](x: Self) {
     
-    @scala.inline
-    def setPreviousNetworkTransactionId(value: String): Self = StObject.set(x, "previousNetworkTransactionId", value.asInstanceOf[js.Any])
+    inline def setPreviousNetworkTransactionId(value: String): Self = StObject.set(x, "previousNetworkTransactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousNetworkTransactionIdUndefined: Self = StObject.set(x, "previousNetworkTransactionId", js.undefined)
+    inline def setPreviousNetworkTransactionIdUndefined: Self = StObject.set(x, "previousNetworkTransactionId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

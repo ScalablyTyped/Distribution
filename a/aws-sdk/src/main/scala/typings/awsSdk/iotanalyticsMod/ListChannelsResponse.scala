@@ -18,28 +18,21 @@ trait ListChannelsResponse extends StObject {
 }
 object ListChannelsResponse {
   
-  @scala.inline
-  def apply(): ListChannelsResponse = {
+  inline def apply(): ListChannelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListChannelsResponse]
   }
   
-  @scala.inline
-  implicit class ListChannelsResponseMutableBuilder[Self <: ListChannelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListChannelsResponse](x: Self) {
     
-    @scala.inline
-    def setChannelSummaries(value: ChannelSummaries): Self = StObject.set(x, "channelSummaries", value.asInstanceOf[js.Any])
+    inline def setChannelSummaries(value: ChannelSummaries): Self = StObject.set(x, "channelSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelSummariesUndefined: Self = StObject.set(x, "channelSummaries", js.undefined)
+    inline def setChannelSummariesUndefined: Self = StObject.set(x, "channelSummaries", js.undefined)
     
-    @scala.inline
-    def setChannelSummariesVarargs(value: ChannelSummary*): Self = StObject.set(x, "channelSummaries", js.Array(value :_*))
+    inline def setChannelSummariesVarargs(value: ChannelSummary*): Self = StObject.set(x, "channelSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -40,45 +40,33 @@ object bluetoothLowEnergy {
   }
   object Advertisement {
     
-    @scala.inline
-    def apply(serviceData: Uuid, `type`: AdvertisementType): Advertisement = {
+    inline def apply(serviceData: Uuid, `type`: AdvertisementType): Advertisement = {
       val __obj = js.Dynamic.literal(serviceData = serviceData.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Advertisement]
     }
     
-    @scala.inline
-    implicit class AdvertisementMutableBuilder[Self <: Advertisement] (val x: Self) extends AnyVal {
+    extension [Self <: Advertisement](x: Self) {
       
-      @scala.inline
-      def setManufacturerData(value: Data): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
+      inline def setManufacturerData(value: Data): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerDataUndefined: Self = StObject.set(x, "manufacturerData", js.undefined)
+      inline def setManufacturerDataUndefined: Self = StObject.set(x, "manufacturerData", js.undefined)
       
-      @scala.inline
-      def setServiceData(value: Uuid): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
+      inline def setServiceData(value: Uuid): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUuids(value: js.Array[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
+      inline def setServiceUuids(value: js.Array[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUuidsUndefined: Self = StObject.set(x, "serviceUuids", js.undefined)
+      inline def setServiceUuidsUndefined: Self = StObject.set(x, "serviceUuids", js.undefined)
       
-      @scala.inline
-      def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
+      inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
       
-      @scala.inline
-      def setSolicitUuids(value: js.Array[String]): Self = StObject.set(x, "solicitUuids", value.asInstanceOf[js.Any])
+      inline def setSolicitUuids(value: js.Array[String]): Self = StObject.set(x, "solicitUuids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolicitUuidsUndefined: Self = StObject.set(x, "solicitUuids", js.undefined)
+      inline def setSolicitUuidsUndefined: Self = StObject.set(x, "solicitUuids", js.undefined)
       
-      @scala.inline
-      def setSolicitUuidsVarargs(value: String*): Self = StObject.set(x, "solicitUuids", js.Array(value :_*))
+      inline def setSolicitUuidsVarargs(value: String*): Self = StObject.set(x, "solicitUuids", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: AdvertisementType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AdvertisementType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,11 +77,9 @@ object bluetoothLowEnergy {
   trait AdvertisementType extends StObject
   object AdvertisementType {
     
-    @scala.inline
-    def broadcast: typings.chromeApps.chromeAppsStrings.broadcast = "broadcast".asInstanceOf[typings.chromeApps.chromeAppsStrings.broadcast]
+    inline def broadcast: typings.chromeApps.chromeAppsStrings.broadcast = "broadcast".asInstanceOf[typings.chromeApps.chromeAppsStrings.broadcast]
     
-    @scala.inline
-    def peripheral: typings.chromeApps.chromeAppsStrings.peripheral = "peripheral".asInstanceOf[typings.chromeApps.chromeAppsStrings.peripheral]
+    inline def peripheral: typings.chromeApps.chromeAppsStrings.peripheral = "peripheral".asInstanceOf[typings.chromeApps.chromeAppsStrings.peripheral]
   }
   
   trait Characteristic extends StObject {
@@ -115,41 +101,30 @@ object bluetoothLowEnergy {
   }
   object Characteristic {
     
-    @scala.inline
-    def apply(properties: js.Array[CharacteristicProperties], uuid: String): Characteristic = {
+    inline def apply(properties: js.Array[CharacteristicProperties], uuid: String): Characteristic = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Characteristic]
     }
     
-    @scala.inline
-    implicit class CharacteristicMutableBuilder[Self <: Characteristic] (val x: Self) extends AnyVal {
+    extension [Self <: Characteristic](x: Self) {
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Array[CharacteristicProperties]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[CharacteristicProperties]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesVarargs(value: CharacteristicProperties*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: CharacteristicProperties*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setService(value: Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -172,44 +147,31 @@ object bluetoothLowEnergy {
   trait CharacteristicProperties extends StObject
   object CharacteristicProperties {
     
-    @scala.inline
-    def authenticatedSignedWrites: typings.chromeApps.chromeAppsStrings.authenticatedSignedWrites = "authenticatedSignedWrites".asInstanceOf[typings.chromeApps.chromeAppsStrings.authenticatedSignedWrites]
+    inline def authenticatedSignedWrites: typings.chromeApps.chromeAppsStrings.authenticatedSignedWrites = "authenticatedSignedWrites".asInstanceOf[typings.chromeApps.chromeAppsStrings.authenticatedSignedWrites]
     
-    @scala.inline
-    def broadcast: typings.chromeApps.chromeAppsStrings.broadcast = "broadcast".asInstanceOf[typings.chromeApps.chromeAppsStrings.broadcast]
+    inline def broadcast: typings.chromeApps.chromeAppsStrings.broadcast = "broadcast".asInstanceOf[typings.chromeApps.chromeAppsStrings.broadcast]
     
-    @scala.inline
-    def encryptAuthenticatedRead: typings.chromeApps.chromeAppsStrings.encryptAuthenticatedRead = "encryptAuthenticatedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptAuthenticatedRead]
+    inline def encryptAuthenticatedRead: typings.chromeApps.chromeAppsStrings.encryptAuthenticatedRead = "encryptAuthenticatedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptAuthenticatedRead]
     
-    @scala.inline
-    def encryptAuthenticatedWrite: typings.chromeApps.chromeAppsStrings.encryptAuthenticatedWrite = "encryptAuthenticatedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptAuthenticatedWrite]
+    inline def encryptAuthenticatedWrite: typings.chromeApps.chromeAppsStrings.encryptAuthenticatedWrite = "encryptAuthenticatedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptAuthenticatedWrite]
     
-    @scala.inline
-    def encryptRead: typings.chromeApps.chromeAppsStrings.encryptRead = "encryptRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptRead]
+    inline def encryptRead: typings.chromeApps.chromeAppsStrings.encryptRead = "encryptRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptRead]
     
-    @scala.inline
-    def encryptWrite: typings.chromeApps.chromeAppsStrings.encryptWrite = "encryptWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptWrite]
+    inline def encryptWrite: typings.chromeApps.chromeAppsStrings.encryptWrite = "encryptWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptWrite]
     
-    @scala.inline
-    def extendedProperties: typings.chromeApps.chromeAppsStrings.extendedProperties = "extendedProperties".asInstanceOf[typings.chromeApps.chromeAppsStrings.extendedProperties]
+    inline def extendedProperties: typings.chromeApps.chromeAppsStrings.extendedProperties = "extendedProperties".asInstanceOf[typings.chromeApps.chromeAppsStrings.extendedProperties]
     
-    @scala.inline
-    def indicate: typings.chromeApps.chromeAppsStrings.indicate = "indicate".asInstanceOf[typings.chromeApps.chromeAppsStrings.indicate]
+    inline def indicate: typings.chromeApps.chromeAppsStrings.indicate = "indicate".asInstanceOf[typings.chromeApps.chromeAppsStrings.indicate]
     
-    @scala.inline
-    def read: read_ = "read".asInstanceOf[read_]
+    inline def read: read_ = "read".asInstanceOf[read_]
     
-    @scala.inline
-    def reliableWrite: typings.chromeApps.chromeAppsStrings.reliableWrite = "reliableWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.reliableWrite]
+    inline def reliableWrite: typings.chromeApps.chromeAppsStrings.reliableWrite = "reliableWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.reliableWrite]
     
-    @scala.inline
-    def writableAuxiliaries: typings.chromeApps.chromeAppsStrings.writableAuxiliaries = "writableAuxiliaries".asInstanceOf[typings.chromeApps.chromeAppsStrings.writableAuxiliaries]
+    inline def writableAuxiliaries: typings.chromeApps.chromeAppsStrings.writableAuxiliaries = "writableAuxiliaries".asInstanceOf[typings.chromeApps.chromeAppsStrings.writableAuxiliaries]
     
-    @scala.inline
-    def write: write_ = "write".asInstanceOf[write_]
+    inline def write: write_ = "write".asInstanceOf[write_]
     
-    @scala.inline
-    def writeWithoutResponse: typings.chromeApps.chromeAppsStrings.writeWithoutResponse = "writeWithoutResponse".asInstanceOf[typings.chromeApps.chromeAppsStrings.writeWithoutResponse]
+    inline def writeWithoutResponse: typings.chromeApps.chromeAppsStrings.writeWithoutResponse = "writeWithoutResponse".asInstanceOf[typings.chromeApps.chromeAppsStrings.writeWithoutResponse]
   }
   
   trait Descriptor extends StObject {
@@ -234,41 +196,30 @@ object bluetoothLowEnergy {
   }
   object Descriptor {
     
-    @scala.inline
-    def apply(permissions: js.Array[DescriptorPermissions], uuid: String): Descriptor = {
+    inline def apply(permissions: js.Array[DescriptorPermissions], uuid: String): Descriptor = {
       val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Descriptor]
     }
     
-    @scala.inline
-    implicit class DescriptorMutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
+    extension [Self <: Descriptor](x: Self) {
       
-      @scala.inline
-      def setCharacteristic(value: Characteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+      inline def setCharacteristic(value: Characteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
+      inline def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setPermissions(value: js.Array[DescriptorPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: js.Array[DescriptorPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsVarargs(value: DescriptorPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: DescriptorPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -283,23 +234,17 @@ object bluetoothLowEnergy {
   trait DescriptorPermissions extends StObject
   object DescriptorPermissions {
     
-    @scala.inline
-    def encryptedAuthenticatedRead: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedRead = "encryptedAuthenticatedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedRead]
+    inline def encryptedAuthenticatedRead: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedRead = "encryptedAuthenticatedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedRead]
     
-    @scala.inline
-    def encryptedAuthenticatedWrite: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedWrite = "encryptedAuthenticatedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedWrite]
+    inline def encryptedAuthenticatedWrite: typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedWrite = "encryptedAuthenticatedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedAuthenticatedWrite]
     
-    @scala.inline
-    def encryptedRead: typings.chromeApps.chromeAppsStrings.encryptedRead = "encryptedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedRead]
+    inline def encryptedRead: typings.chromeApps.chromeAppsStrings.encryptedRead = "encryptedRead".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedRead]
     
-    @scala.inline
-    def encryptedWrite: typings.chromeApps.chromeAppsStrings.encryptedWrite = "encryptedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedWrite]
+    inline def encryptedWrite: typings.chromeApps.chromeAppsStrings.encryptedWrite = "encryptedWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.encryptedWrite]
     
-    @scala.inline
-    def read: read_ = "read".asInstanceOf[read_]
+    inline def read: read_ = "read".asInstanceOf[read_]
     
-    @scala.inline
-    def write: write_ = "write".asInstanceOf[write_]
+    inline def write: write_ = "write".asInstanceOf[write_]
   }
   
   trait INotification extends StObject {
@@ -312,20 +257,16 @@ object bluetoothLowEnergy {
   }
   object INotification {
     
-    @scala.inline
-    def apply(shouldIndicate: Boolean, value: ArrayBuffer): INotification = {
+    inline def apply(shouldIndicate: Boolean, value: ArrayBuffer): INotification = {
       val __obj = js.Dynamic.literal(shouldIndicate = shouldIndicate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[INotification]
     }
     
-    @scala.inline
-    implicit class INotificationMutableBuilder[Self <: INotification] (val x: Self) extends AnyVal {
+    extension [Self <: INotification](x: Self) {
       
-      @scala.inline
-      def setShouldIndicate(value: Boolean): Self = StObject.set(x, "shouldIndicate", value.asInstanceOf[js.Any])
+      inline def setShouldIndicate(value: Boolean): Self = StObject.set(x, "shouldIndicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -340,17 +281,14 @@ object bluetoothLowEnergy {
   }
   object IProperties {
     
-    @scala.inline
-    def apply(persistent: Boolean): IProperties = {
+    inline def apply(persistent: Boolean): IProperties = {
       val __obj = js.Dynamic.literal(persistent = persistent.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProperties]
     }
     
-    @scala.inline
-    implicit class IPropertiesMutableBuilder[Self <: IProperties] (val x: Self) extends AnyVal {
+    extension [Self <: IProperties](x: Self) {
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -367,26 +305,20 @@ object bluetoothLowEnergy {
   }
   object IResponse {
     
-    @scala.inline
-    def apply(isError: Boolean, requestId: integer): IResponse = {
+    inline def apply(isError: Boolean, requestId: integer): IResponse = {
       val __obj = js.Dynamic.literal(isError = isError.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResponse]
     }
     
-    @scala.inline
-    implicit class IResponseMutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IResponse](x: Self) {
       
-      @scala.inline
-      def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
+      inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -403,26 +335,20 @@ object bluetoothLowEnergy {
   }
   object Request {
     
-    @scala.inline
-    def apply(device: RequestDevice, requestId: integer): Request = {
+    inline def apply(device: RequestDevice, requestId: integer): Request = {
       val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setDevice(value: RequestDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: RequestDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -441,29 +367,22 @@ object bluetoothLowEnergy {
   }
   object RequestDevice {
     
-    @scala.inline
-    def apply(address: String): RequestDevice = {
+    inline def apply(address: String): RequestDevice = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestDevice]
     }
     
-    @scala.inline
-    implicit class RequestDeviceMutableBuilder[Self <: RequestDevice] (val x: Self) extends AnyVal {
+    extension [Self <: RequestDevice](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceClass(value: integer): Self = StObject.set(x, "deviceClass", value.asInstanceOf[js.Any])
+      inline def setDeviceClass(value: integer): Self = StObject.set(x, "deviceClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceClassUndefined: Self = StObject.set(x, "deviceClass", js.undefined)
+      inline def setDeviceClassUndefined: Self = StObject.set(x, "deviceClass", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -490,32 +409,24 @@ object bluetoothLowEnergy {
   }
   object Service {
     
-    @scala.inline
-    def apply(isPrimary: Boolean, uuid: String): Service = {
+    inline def apply(isPrimary: Boolean, uuid: String): Service = {
       val __obj = js.Dynamic.literal(isPrimary = isPrimary.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setDeviceAddress(value: String): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
+      inline def setDeviceAddress(value: String): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceAddressUndefined: Self = StObject.set(x, "deviceAddress", js.undefined)
+      inline def setDeviceAddressUndefined: Self = StObject.set(x, "deviceAddress", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+      inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
 }

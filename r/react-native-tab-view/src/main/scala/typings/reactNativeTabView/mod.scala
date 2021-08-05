@@ -20,8 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SceneMap[T /* <: js.Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("SceneMap")(scenes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element]]
+  inline def SceneMap[T /* <: js.Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("SceneMap")(scenes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element]]
   
   @JSImport("react-native-tab-view", "ScrollPager")
   @js.native
@@ -36,8 +35,7 @@ object mod {
     @JSImport("react-native-tab-view", "ScrollPager.defaultProps")
     @js.native
     def defaultProps: Bounces = js.native
-    @scala.inline
-    def defaultProps_=(x: Bounces): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Bounces): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-native-tab-view", "TabBar")
@@ -54,8 +52,7 @@ object mod {
     @JSImport("react-native-tab-view", "TabBar.defaultProps")
     @js.native
     def defaultProps: GetAccessibilityLabel = js.native
-    @scala.inline
-    def defaultProps_=(x: GetAccessibilityLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: GetAccessibilityLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-native-tab-view", "TabBarIndicator")
@@ -82,8 +79,7 @@ object mod {
     @JSImport("react-native-tab-view", "TabView.defaultProps")
     @js.native
     def defaultProps: GestureHandlerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: GestureHandlerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: GestureHandlerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-native-tab-view", "TouchableItem")
@@ -100,7 +96,6 @@ object mod {
     @JSImport("react-native-tab-view", "TouchableItem.defaultProps")
     @js.native
     def defaultProps: PressColor = js.native
-    @scala.inline
-    def defaultProps_=(x: PressColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PressColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

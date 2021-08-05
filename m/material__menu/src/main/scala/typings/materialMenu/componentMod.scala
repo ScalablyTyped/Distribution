@@ -152,8 +152,7 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCMenu]
+    inline def attachTo(root: Element): MDCMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCMenu]
   }
   
   type MDCMenuFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCMenuFoundation], MDCMenu]

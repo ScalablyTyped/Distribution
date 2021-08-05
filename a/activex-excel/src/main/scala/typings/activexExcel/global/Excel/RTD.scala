@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.RTD")
 @js.native
-class RTD protected ()
+/* private */ class RTD ()
   extends StObject
      with typings.activexExcel.Excel.RTD {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.RTD_typekey")
   var ExcelDotRTD_typekey: typings.activexExcel.Excel.RTD = js.native
   

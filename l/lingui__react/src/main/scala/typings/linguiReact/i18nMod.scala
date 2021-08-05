@@ -26,29 +26,22 @@ object i18nMod {
   }
   object I18nComponentProps {
     
-    @scala.inline
-    def apply(children: I18n => ReactNode): I18nComponentProps = {
+    inline def apply(children: I18n => ReactNode): I18nComponentProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[I18nComponentProps]
     }
     
-    @scala.inline
-    implicit class I18nComponentPropsMutableBuilder[Self <: I18nComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: I18nComponentProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: I18n => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: I18n => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
-      @scala.inline
-      def setWithHash(value: Boolean): Self = StObject.set(x, "withHash", value.asInstanceOf[js.Any])
+      inline def setWithHash(value: Boolean): Self = StObject.set(x, "withHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithHashUndefined: Self = StObject.set(x, "withHash", js.undefined)
+      inline def setWithHashUndefined: Self = StObject.set(x, "withHash", js.undefined)
     }
   }
 }

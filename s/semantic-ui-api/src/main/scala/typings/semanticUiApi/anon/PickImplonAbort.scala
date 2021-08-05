@@ -15,16 +15,13 @@ trait PickImplonAbort extends StObject {
 }
 object PickImplonAbort {
   
-  @scala.inline
-  def apply(onAbort: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): PickImplonAbort = {
+  inline def apply(onAbort: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): PickImplonAbort = {
     val __obj = js.Dynamic.literal(onAbort = js.Any.fromFunction3(onAbort))
     __obj.asInstanceOf[PickImplonAbort]
   }
   
-  @scala.inline
-  implicit class PickImplonAbortMutableBuilder[Self <: PickImplonAbort] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonAbort](x: Self) {
     
-    @scala.inline
-    def setOnAbort(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
+    inline def setOnAbort(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
   }
 }

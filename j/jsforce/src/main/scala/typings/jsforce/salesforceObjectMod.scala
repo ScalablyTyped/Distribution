@@ -482,20 +482,16 @@ object salesforceObjectMod {
   }
   object ApprovalLayoutInfo {
     
-    @scala.inline
-    def apply(approvalLayouts: js.Array[js.Object]): ApprovalLayoutInfo = {
+    inline def apply(approvalLayouts: js.Array[js.Object]): ApprovalLayoutInfo = {
       val __obj = js.Dynamic.literal(approvalLayouts = approvalLayouts.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApprovalLayoutInfo]
     }
     
-    @scala.inline
-    implicit class ApprovalLayoutInfoMutableBuilder[Self <: ApprovalLayoutInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ApprovalLayoutInfo](x: Self) {
       
-      @scala.inline
-      def setApprovalLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "approvalLayouts", value.asInstanceOf[js.Any])
+      inline def setApprovalLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "approvalLayouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApprovalLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "approvalLayouts", js.Array(value :_*))
+      inline def setApprovalLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "approvalLayouts", js.Array(value :_*))
     }
   }
   
@@ -509,8 +505,7 @@ object salesforceObjectMod {
   }
   object CompactLayoutInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compactLayouts: js.Array[js.Object],
       defaultCompactLayoutId: String,
       recordTypeCompactLayoutMappings: js.Array[js.Object]
@@ -519,23 +514,17 @@ object salesforceObjectMod {
       __obj.asInstanceOf[CompactLayoutInfo]
     }
     
-    @scala.inline
-    implicit class CompactLayoutInfoMutableBuilder[Self <: CompactLayoutInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CompactLayoutInfo](x: Self) {
       
-      @scala.inline
-      def setCompactLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "compactLayouts", value.asInstanceOf[js.Any])
+      inline def setCompactLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "compactLayouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "compactLayouts", js.Array(value :_*))
+      inline def setCompactLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "compactLayouts", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultCompactLayoutId(value: String): Self = StObject.set(x, "defaultCompactLayoutId", value.asInstanceOf[js.Any])
+      inline def setDefaultCompactLayoutId(value: String): Self = StObject.set(x, "defaultCompactLayoutId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordTypeCompactLayoutMappings(value: js.Array[js.Object]): Self = StObject.set(x, "recordTypeCompactLayoutMappings", value.asInstanceOf[js.Any])
+      inline def setRecordTypeCompactLayoutMappings(value: js.Array[js.Object]): Self = StObject.set(x, "recordTypeCompactLayoutMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordTypeCompactLayoutMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeCompactLayoutMappings", js.Array(value :_*))
+      inline def setRecordTypeCompactLayoutMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeCompactLayoutMappings", js.Array(value :_*))
     }
   }
   
@@ -547,20 +536,16 @@ object salesforceObjectMod {
   }
   object DeletedRecord {
     
-    @scala.inline
-    def apply(deletedDate: String, id: String): DeletedRecord = {
+    inline def apply(deletedDate: String, id: String): DeletedRecord = {
       val __obj = js.Dynamic.literal(deletedDate = deletedDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeletedRecord]
     }
     
-    @scala.inline
-    implicit class DeletedRecordMutableBuilder[Self <: DeletedRecord] (val x: Self) extends AnyVal {
+    extension [Self <: DeletedRecord](x: Self) {
       
-      @scala.inline
-      def setDeletedDate(value: String): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
+      inline def setDeletedDate(value: String): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -574,26 +559,20 @@ object salesforceObjectMod {
   }
   object DeletedRecordsInfo {
     
-    @scala.inline
-    def apply(deletedRecords: js.Array[DeletedRecord], earliestDateAvailable: String, latestDateCovered: String): DeletedRecordsInfo = {
+    inline def apply(deletedRecords: js.Array[DeletedRecord], earliestDateAvailable: String, latestDateCovered: String): DeletedRecordsInfo = {
       val __obj = js.Dynamic.literal(deletedRecords = deletedRecords.asInstanceOf[js.Any], earliestDateAvailable = earliestDateAvailable.asInstanceOf[js.Any], latestDateCovered = latestDateCovered.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeletedRecordsInfo]
     }
     
-    @scala.inline
-    implicit class DeletedRecordsInfoMutableBuilder[Self <: DeletedRecordsInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DeletedRecordsInfo](x: Self) {
       
-      @scala.inline
-      def setDeletedRecords(value: js.Array[DeletedRecord]): Self = StObject.set(x, "deletedRecords", value.asInstanceOf[js.Any])
+      inline def setDeletedRecords(value: js.Array[DeletedRecord]): Self = StObject.set(x, "deletedRecords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedRecordsVarargs(value: DeletedRecord*): Self = StObject.set(x, "deletedRecords", js.Array(value :_*))
+      inline def setDeletedRecordsVarargs(value: DeletedRecord*): Self = StObject.set(x, "deletedRecords", js.Array(value :_*))
       
-      @scala.inline
-      def setEarliestDateAvailable(value: String): Self = StObject.set(x, "earliestDateAvailable", value.asInstanceOf[js.Any])
+      inline def setEarliestDateAvailable(value: String): Self = StObject.set(x, "earliestDateAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestDateCovered(value: String): Self = StObject.set(x, "latestDateCovered", value.asInstanceOf[js.Any])
+      inline def setLatestDateCovered(value: String): Self = StObject.set(x, "latestDateCovered", value.asInstanceOf[js.Any])
     }
   }
   
@@ -607,32 +586,24 @@ object salesforceObjectMod {
   }
   object FindOptions {
     
-    @scala.inline
-    def apply(): FindOptions = {
+    inline def apply(): FindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOptions]
     }
     
-    @scala.inline
-    implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     }
   }
   
@@ -644,26 +615,20 @@ object salesforceObjectMod {
   }
   object LayoutInfo {
     
-    @scala.inline
-    def apply(layouts: js.Array[js.Object], recordTypeMappings: js.Array[js.Object]): LayoutInfo = {
+    inline def apply(layouts: js.Array[js.Object], recordTypeMappings: js.Array[js.Object]): LayoutInfo = {
       val __obj = js.Dynamic.literal(layouts = layouts.asInstanceOf[js.Any], recordTypeMappings = recordTypeMappings.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutInfo]
     }
     
-    @scala.inline
-    implicit class LayoutInfoMutableBuilder[Self <: LayoutInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutInfo](x: Self) {
       
-      @scala.inline
-      def setLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
+      inline def setLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "layouts", js.Array(value :_*))
+      inline def setLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "layouts", js.Array(value :_*))
       
-      @scala.inline
-      def setRecordTypeMappings(value: js.Array[js.Object]): Self = StObject.set(x, "recordTypeMappings", value.asInstanceOf[js.Any])
+      inline def setRecordTypeMappings(value: js.Array[js.Object]): Self = StObject.set(x, "recordTypeMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordTypeMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeMappings", js.Array(value :_*))
+      inline def setRecordTypeMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeMappings", js.Array(value :_*))
     }
   }
   
@@ -675,23 +640,18 @@ object salesforceObjectMod {
   }
   object UpdatedRecordsInfo {
     
-    @scala.inline
-    def apply(ids: js.Array[String], latestDateCovered: String): UpdatedRecordsInfo = {
+    inline def apply(ids: js.Array[String], latestDateCovered: String): UpdatedRecordsInfo = {
       val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], latestDateCovered = latestDateCovered.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdatedRecordsInfo]
     }
     
-    @scala.inline
-    implicit class UpdatedRecordsInfoMutableBuilder[Self <: UpdatedRecordsInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UpdatedRecordsInfo](x: Self) {
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setLatestDateCovered(value: String): Self = StObject.set(x, "latestDateCovered", value.asInstanceOf[js.Any])
+      inline def setLatestDateCovered(value: String): Self = StObject.set(x, "latestDateCovered", value.asInstanceOf[js.Any])
     }
   }
 }

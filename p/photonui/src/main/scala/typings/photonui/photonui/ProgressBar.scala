@@ -21,8 +21,7 @@ trait ProgressBar
 }
 object ProgressBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -52,19 +51,14 @@ object ProgressBar {
     __obj.asInstanceOf[ProgressBar]
   }
   
-  @scala.inline
-  implicit class ProgressBarMutableBuilder[Self <: ProgressBar] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressBar](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPulsate(value: Boolean): Self = StObject.set(x, "pulsate", value.asInstanceOf[js.Any])
+    inline def setPulsate(value: Boolean): Self = StObject.set(x, "pulsate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
+    inline def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

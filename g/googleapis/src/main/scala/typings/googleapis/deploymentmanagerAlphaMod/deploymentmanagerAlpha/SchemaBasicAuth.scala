@@ -15,25 +15,19 @@ trait SchemaBasicAuth extends StObject {
 }
 object SchemaBasicAuth {
   
-  @scala.inline
-  def apply(): SchemaBasicAuth = {
+  inline def apply(): SchemaBasicAuth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasicAuth]
   }
   
-  @scala.inline
-  implicit class SchemaBasicAuthMutableBuilder[Self <: SchemaBasicAuth] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasicAuth](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

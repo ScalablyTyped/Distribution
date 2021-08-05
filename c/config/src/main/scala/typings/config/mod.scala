@@ -21,23 +21,18 @@ object mod extends Shortcut {
   }
   object IConfig {
     
-    @scala.inline
-    def apply(get: String => js.Any, has: String => Boolean, util: IUtil): IConfig = {
+    inline def apply(get: String => js.Any, has: String => Boolean, util: IUtil): IConfig = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), util = util.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConfig]
     }
     
-    @scala.inline
-    implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IConfig](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtil(value: IUtil): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+      inline def setUtil(value: IUtil): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,26 +46,20 @@ object mod extends Shortcut {
   }
   object IConfigSource {
     
-    @scala.inline
-    def apply(name: String, parsed: js.Any): IConfigSource = {
+    inline def apply(name: String, parsed: js.Any): IConfigSource = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConfigSource]
     }
     
-    @scala.inline
-    implicit class IConfigSourceMutableBuilder[Self <: IConfigSource] (val x: Self) extends AnyVal {
+    extension [Self <: IConfigSource](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
+      inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
       
-      @scala.inline
-      def setParsed(value: js.Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: js.Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     }
   }
   

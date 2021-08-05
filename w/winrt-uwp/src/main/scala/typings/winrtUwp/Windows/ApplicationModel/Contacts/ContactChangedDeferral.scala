@@ -12,16 +12,13 @@ trait ContactChangedDeferral extends StObject {
 }
 object ContactChangedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): ContactChangedDeferral = {
+  inline def apply(complete: () => Unit): ContactChangedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[ContactChangedDeferral]
   }
   
-  @scala.inline
-  implicit class ContactChangedDeferralMutableBuilder[Self <: ContactChangedDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: ContactChangedDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

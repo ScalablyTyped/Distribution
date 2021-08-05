@@ -18,25 +18,19 @@ trait EnvelopeEvent extends StObject {
 }
 object EnvelopeEvent {
   
-  @scala.inline
-  def apply(): EnvelopeEvent = {
+  inline def apply(): EnvelopeEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeEvent]
   }
   
-  @scala.inline
-  implicit class EnvelopeEventMutableBuilder[Self <: EnvelopeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeEvent](x: Self) {
     
-    @scala.inline
-    def setEnvelopeEventStatusCode(value: String): Self = StObject.set(x, "envelopeEventStatusCode", value.asInstanceOf[js.Any])
+    inline def setEnvelopeEventStatusCode(value: String): Self = StObject.set(x, "envelopeEventStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeEventStatusCodeUndefined: Self = StObject.set(x, "envelopeEventStatusCode", js.undefined)
+    inline def setEnvelopeEventStatusCodeUndefined: Self = StObject.set(x, "envelopeEventStatusCode", js.undefined)
     
-    @scala.inline
-    def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
+    inline def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDocumentsUndefined: Self = StObject.set(x, "includeDocuments", js.undefined)
+    inline def setIncludeDocumentsUndefined: Self = StObject.set(x, "includeDocuments", js.undefined)
   }
 }

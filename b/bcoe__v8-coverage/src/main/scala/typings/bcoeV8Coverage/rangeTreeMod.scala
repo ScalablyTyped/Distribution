@@ -45,7 +45,6 @@ object rangeTreeMod {
     /**
       * @precodition `ranges` are well-formed and pre-order sorted
       */
-    @scala.inline
-    def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[RangeTree] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSortedRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[RangeTree]]
+    inline def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[RangeTree] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSortedRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[RangeTree]]
   }
 }

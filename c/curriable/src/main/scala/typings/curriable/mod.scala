@@ -14,25 +14,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Fn /* <: Handler */](fn: Fn): Curried[Fn] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Curried[Fn]]
-  @scala.inline
-  def default[Fn /* <: Handler */](fn: Fn, arityOverride: Double): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], arityOverride.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def default[Fn /* <: Handler */](fn: Fn): Curried[Fn] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Curried[Fn]]
+  inline def default[Fn /* <: Handler */](fn: Fn, arityOverride: Double): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], arityOverride.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
   @JSImport("curriable", "__")
   @js.native
   val __ : Placeholder = js.native
   
-  @scala.inline
-  def curry[Fn /* <: Handler */](fn: Fn): Curried[Fn] = ^.asInstanceOf[js.Dynamic].applyDynamic("curry")(fn.asInstanceOf[js.Any]).asInstanceOf[Curried[Fn]]
-  @scala.inline
-  def curry[Fn /* <: Handler */](fn: Fn, arityOverride: Double): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("curry")(fn.asInstanceOf[js.Any], arityOverride.asInstanceOf[js.Any])).asInstanceOf[Handler]
+  inline def curry[Fn /* <: Handler */](fn: Fn): Curried[Fn] = ^.asInstanceOf[js.Dynamic].applyDynamic("curry")(fn.asInstanceOf[js.Any]).asInstanceOf[Curried[Fn]]
+  inline def curry[Fn /* <: Handler */](fn: Fn, arityOverride: Double): Handler = (^.asInstanceOf[js.Dynamic].applyDynamic("curry")(fn.asInstanceOf[js.Any], arityOverride.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
-  @scala.inline
-  def isPlaceholder(value: js.Any): /* is curriable.curriable.Placeholder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlaceholder")(value.asInstanceOf[js.Any]).asInstanceOf[/* is curriable.curriable.Placeholder */ Boolean]
+  inline def isPlaceholder(value: js.Any): /* is curriable.curriable.Placeholder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlaceholder")(value.asInstanceOf[js.Any]).asInstanceOf[/* is curriable.curriable.Placeholder */ Boolean]
   
-  @scala.inline
-  def uncurry[Fn /* <: Handler */](curried: Curried[Fn]): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("uncurry")(curried.asInstanceOf[js.Any]).asInstanceOf[Fn]
+  inline def uncurry[Fn /* <: Handler */](curried: Curried[Fn]): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("uncurry")(curried.asInstanceOf[js.Any]).asInstanceOf[Fn]
   
   type Append[E, T /* <: js.Array[js.Any] */] = Concat[T, js.Array[E]]
   

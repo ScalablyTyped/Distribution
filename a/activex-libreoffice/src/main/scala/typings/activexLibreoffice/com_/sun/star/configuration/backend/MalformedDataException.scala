@@ -43,16 +43,13 @@ trait MalformedDataException
 }
 object MalformedDataException {
   
-  @scala.inline
-  def apply(Context: XInterface, ErrorDetails: js.Any, Message: String): MalformedDataException = {
+  inline def apply(Context: XInterface, ErrorDetails: js.Any, Message: String): MalformedDataException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorDetails = ErrorDetails.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MalformedDataException]
   }
   
-  @scala.inline
-  implicit class MalformedDataExceptionMutableBuilder[Self <: MalformedDataException] (val x: Self) extends AnyVal {
+  extension [Self <: MalformedDataException](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(value: js.Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: js.Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait IsDaemon extends StObject {
 }
 object IsDaemon {
   
-  @scala.inline
-  def apply(ipfs: js.Any, isDaemon: js.Any): IsDaemon = {
+  inline def apply(ipfs: js.Any, isDaemon: js.Any): IsDaemon = {
     val __obj = js.Dynamic.literal(ipfs = ipfs.asInstanceOf[js.Any], isDaemon = isDaemon.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsDaemon]
   }
   
-  @scala.inline
-  implicit class IsDaemonMutableBuilder[Self <: IsDaemon] (val x: Self) extends AnyVal {
+  extension [Self <: IsDaemon](x: Self) {
     
-    @scala.inline
-    def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+    inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDaemon(value: js.Any): Self = StObject.set(x, "isDaemon", value.asInstanceOf[js.Any])
+    inline def setIsDaemon(value: js.Any): Self = StObject.set(x, "isDaemon", value.asInstanceOf[js.Any])
   }
 }

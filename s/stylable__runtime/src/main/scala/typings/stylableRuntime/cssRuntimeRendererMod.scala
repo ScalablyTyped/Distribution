@@ -56,20 +56,16 @@ object cssRuntimeRendererMod {
     }
     object Window {
       
-      @scala.inline
-      def apply(): Window = {
+      inline def apply(): Window = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def set__stylable_renderer_global_counter(value: Double): Self = StObject.set(x, "__stylable_renderer_global_counter", value.asInstanceOf[js.Any])
+        inline def set__stylable_renderer_global_counter(value: Double): Self = StObject.set(x, "__stylable_renderer_global_counter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set__stylable_renderer_global_counterUndefined: Self = StObject.set(x, "__stylable_renderer_global_counter", js.undefined)
+        inline def set__stylable_renderer_global_counterUndefined: Self = StObject.set(x, "__stylable_renderer_global_counter", js.undefined)
       }
     }
   }

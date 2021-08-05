@@ -10,8 +10,7 @@ trait UpdateTimeToLiveOutput
      with typings.awsSdkClientDynamodbNode.typesUpdateTimeToLiveOutputMod.UpdateTimeToLiveOutput
 object UpdateTimeToLiveOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UpdateTimeToLiveOutput = {
+  inline def apply($metadata: ResponseMetadata): UpdateTimeToLiveOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTimeToLiveOutput]
   }

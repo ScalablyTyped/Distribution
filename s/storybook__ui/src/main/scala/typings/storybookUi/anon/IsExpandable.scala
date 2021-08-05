@@ -12,25 +12,19 @@ trait IsExpandable extends StObject {
 }
 object IsExpandable {
   
-  @scala.inline
-  def apply(): IsExpandable = {
+  inline def apply(): IsExpandable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsExpandable]
   }
   
-  @scala.inline
-  implicit class IsExpandableMutableBuilder[Self <: IsExpandable] (val x: Self) extends AnyVal {
+  extension [Self <: IsExpandable](x: Self) {
     
-    @scala.inline
-    def setIsExpandable(value: Boolean): Self = StObject.set(x, "isExpandable", value.asInstanceOf[js.Any])
+    inline def setIsExpandable(value: Boolean): Self = StObject.set(x, "isExpandable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpandableUndefined: Self = StObject.set(x, "isExpandable", js.undefined)
+    inline def setIsExpandableUndefined: Self = StObject.set(x, "isExpandable", js.undefined)
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+    inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
   }
 }

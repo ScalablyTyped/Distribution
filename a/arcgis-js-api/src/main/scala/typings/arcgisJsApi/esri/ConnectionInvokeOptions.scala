@@ -27,8 +27,7 @@ trait ConnectionInvokeOptions
 }
 object ConnectionInvokeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -37,22 +36,16 @@ object ConnectionInvokeOptions {
     __obj.asInstanceOf[ConnectionInvokeOptions]
   }
   
-  @scala.inline
-  implicit class ConnectionInvokeOptionsMutableBuilder[Self <: ConnectionInvokeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionInvokeOptions](x: Self) {
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setTransferList(value: js.Array[js.Any]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
+    inline def setTransferList(value: js.Array[js.Any]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)
+    inline def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)
     
-    @scala.inline
-    def setTransferListVarargs(value: js.Any*): Self = StObject.set(x, "transferList", js.Array(value :_*))
+    inline def setTransferListVarargs(value: js.Any*): Self = StObject.set(x, "transferList", js.Array(value :_*))
   }
 }

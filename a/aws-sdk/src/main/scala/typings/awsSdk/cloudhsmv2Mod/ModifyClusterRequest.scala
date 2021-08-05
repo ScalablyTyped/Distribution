@@ -18,19 +18,15 @@ trait ModifyClusterRequest extends StObject {
 }
 object ModifyClusterRequest {
   
-  @scala.inline
-  def apply(BackupRetentionPolicy: BackupRetentionPolicy, ClusterId: ClusterId): ModifyClusterRequest = {
+  inline def apply(BackupRetentionPolicy: BackupRetentionPolicy, ClusterId: ClusterId): ModifyClusterRequest = {
     val __obj = js.Dynamic.literal(BackupRetentionPolicy = BackupRetentionPolicy.asInstanceOf[js.Any], ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterRequest]
   }
   
-  @scala.inline
-  implicit class ModifyClusterRequestMutableBuilder[Self <: ModifyClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterRequest](x: Self) {
     
-    @scala.inline
-    def setBackupRetentionPolicy(value: BackupRetentionPolicy): Self = StObject.set(x, "BackupRetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setBackupRetentionPolicy(value: BackupRetentionPolicy): Self = StObject.set(x, "BackupRetentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
   }
 }

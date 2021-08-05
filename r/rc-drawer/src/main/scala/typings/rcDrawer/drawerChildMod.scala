@@ -28,20 +28,18 @@ object drawerChildMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def switchScrollingEffect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchScrollingEffect")().asInstanceOf[Unit]
+      inline def switchScrollingEffect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchScrollingEffect")().asInstanceOf[Unit]
     }
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromProps(props: IDrawerChildProps, hasPrevProps_self: PrevProps): PrevPropsIDrawerChildProps = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevProps_self.asInstanceOf[js.Any])).asInstanceOf[PrevPropsIDrawerChildProps]
+    inline def getDerivedStateFromProps(props: IDrawerChildProps, hasPrevProps_self: PrevProps): PrevPropsIDrawerChildProps = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevProps_self.asInstanceOf[js.Any])).asInstanceOf[PrevPropsIDrawerChildProps]
   }
   
   @js.native
   trait DrawerChild
     extends Component[IDrawerChildProps, IState, js.Any] {
     
-    var addScrollingEffect: js.Any = js.native
+    /* private */ var addScrollingEffect: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDrawerChild(): Unit = js.native
@@ -52,53 +50,53 @@ object drawerChildMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDrawerChild(): Unit = js.native
     
-    var contentDom: js.Any = js.native
+    /* private */ var contentDom: js.Any = js.native
     
-    var contentWrapper: js.Any = js.native
+    /* private */ var contentWrapper: js.Any = js.native
     
-    var dom: js.Any = js.native
+    /* private */ var dom: js.Any = js.native
     
-    var domFocus: js.Any = js.native
+    /* private */ var domFocus: js.Any = js.native
     
-    var drawerId: js.Any = js.native
+    /* private */ var drawerId: js.Any = js.native
     
-    var getCurrentDrawerSome: js.Any = js.native
+    /* private */ var getCurrentDrawerSome: js.Any = js.native
     
-    var getHorizontalBoolAndPlacementName: js.Any = js.native
+    /* private */ var getHorizontalBoolAndPlacementName: js.Any = js.native
     
-    var getLevelDom: js.Any = js.native
+    /* private */ var getLevelDom: js.Any = js.native
     
-    var handlerDom: js.Any = js.native
+    /* private */ var handlerDom: js.Any = js.native
     
-    var levelDom: js.Any = js.native
+    /* private */ var levelDom: js.Any = js.native
     
-    var maskDom: js.Any = js.native
+    /* private */ var maskDom: js.Any = js.native
     
-    var onKeyDown: js.Any = js.native
+    /* private */ var onKeyDown: js.Any = js.native
     
-    var onWrapperTransitionEnd: js.Any = js.native
+    /* private */ var onWrapperTransitionEnd: js.Any = js.native
     
-    var openLevelTransition: js.Any = js.native
+    /* private */ var openLevelTransition: js.Any = js.native
     
-    var passive: js.Any = js.native
+    /* private */ var passive: js.Any = js.native
     
-    var remScrollingEffect: js.Any = js.native
+    /* private */ var remScrollingEffect: js.Any = js.native
     
-    var removeMoveHandler: js.Any = js.native
+    /* private */ var removeMoveHandler: js.Any = js.native
     
-    var removeStartHandler: js.Any = js.native
+    /* private */ var removeStartHandler: js.Any = js.native
     
-    var setLevelAndScrolling: js.Any = js.native
+    /* private */ var setLevelAndScrolling: js.Any = js.native
     
-    var setLevelTransform: js.Any = js.native
+    /* private */ var setLevelTransform: js.Any = js.native
     
-    var startPos: js.Any = js.native
+    /* private */ var startPos: js.Any = js.native
     
-    var timeout: js.Any = js.native
+    /* private */ var timeout: js.Any = js.native
     
-    var toggleScrollingToDrawerAndBody: js.Any = js.native
+    /* private */ var toggleScrollingToDrawerAndBody: js.Any = js.native
     
-    var transitionEnd: js.Any = js.native
+    /* private */ var transitionEnd: js.Any = js.native
   }
   
   trait IState extends StObject {
@@ -109,23 +107,18 @@ object drawerChildMod {
   }
   object IState {
     
-    @scala.inline
-    def apply(_self: DrawerChild): IState = {
+    inline def apply(_self: DrawerChild): IState = {
       val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any])
       __obj.asInstanceOf[IState]
     }
     
-    @scala.inline
-    implicit class IStateMutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
+    extension [Self <: IState](x: Self) {
       
-      @scala.inline
-      def setPrevProps(value: IDrawerChildProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: IDrawerChildProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
+      inline def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
       
-      @scala.inline
-      def set_self(value: DrawerChild): Self = StObject.set(x, "_self", value.asInstanceOf[js.Any])
+      inline def set_self(value: DrawerChild): Self = StObject.set(x, "_self", value.asInstanceOf[js.Any])
     }
   }
 }

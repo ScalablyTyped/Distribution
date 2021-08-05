@@ -16,8 +16,7 @@ trait Display extends StObject {
 }
 object Display {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audiences: () => AdWordsSelector[Audience],
     keywords: () => AdWordsSelector[DisplayKeyword],
     placements: () => AdWordsSelector[Placement],
@@ -27,19 +26,14 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  @scala.inline
-  implicit class DisplayMutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
+  extension [Self <: Display](x: Self) {
     
-    @scala.inline
-    def setAudiences(value: () => AdWordsSelector[Audience]): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
+    inline def setAudiences(value: () => AdWordsSelector[Audience]): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeywords(value: () => AdWordsSelector[DisplayKeyword]): Self = StObject.set(x, "keywords", js.Any.fromFunction0(value))
+    inline def setKeywords(value: () => AdWordsSelector[DisplayKeyword]): Self = StObject.set(x, "keywords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlacements(value: () => AdWordsSelector[Placement]): Self = StObject.set(x, "placements", js.Any.fromFunction0(value))
+    inline def setPlacements(value: () => AdWordsSelector[Placement]): Self = StObject.set(x, "placements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTopics(value: () => AdWordsSelector[Topic]): Self = StObject.set(x, "topics", js.Any.fromFunction0(value))
+    inline def setTopics(value: () => AdWordsSelector[Topic]): Self = StObject.set(x, "topics", js.Any.fromFunction0(value))
   }
 }

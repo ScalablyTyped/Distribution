@@ -29,61 +29,43 @@ trait GroupOptions extends StObject {
 }
 object GroupOptions {
   
-  @scala.inline
-  def apply(): GroupOptions = {
+  inline def apply(): GroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupOptions]
   }
   
-  @scala.inline
-  implicit class GroupOptionsMutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GroupOptions](x: Self) {
     
-    @scala.inline
-    def setColor1(value: String): Self = StObject.set(x, "color1", value.asInstanceOf[js.Any])
+    inline def setColor1(value: String): Self = StObject.set(x, "color1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor1Undefined: Self = StObject.set(x, "color1", js.undefined)
+    inline def setColor1Undefined: Self = StObject.set(x, "color1", js.undefined)
     
-    @scala.inline
-    def setColor2(value: String): Self = StObject.set(x, "color2", value.asInstanceOf[js.Any])
+    inline def setColor2(value: String): Self = StObject.set(x, "color2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor2Undefined: Self = StObject.set(x, "color2", js.undefined)
+    inline def setColor2Undefined: Self = StObject.set(x, "color2", js.undefined)
     
-    @scala.inline
-    def setColor3(value: String): Self = StObject.set(x, "color3", value.asInstanceOf[js.Any])
+    inline def setColor3(value: String): Self = StObject.set(x, "color3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor3Undefined: Self = StObject.set(x, "color3", js.undefined)
+    inline def setColor3Undefined: Self = StObject.set(x, "color3", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMode(value: `1` | `3` | `4`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: `1` | `3` | `4`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setNo_cover(value: NumericBoolean): Self = StObject.set(x, "no_cover", value.asInstanceOf[js.Any])
+    inline def setNo_cover(value: NumericBoolean): Self = StObject.set(x, "no_cover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNo_coverUndefined: Self = StObject.set(x, "no_cover", js.undefined)
+    inline def setNo_coverUndefined: Self = StObject.set(x, "no_cover", js.undefined)
     
-    @scala.inline
-    def setWide(value: NumericBoolean): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
+    inline def setWide(value: NumericBoolean): Self = StObject.set(x, "wide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWideUndefined: Self = StObject.set(x, "wide", js.undefined)
+    inline def setWideUndefined: Self = StObject.set(x, "wide", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

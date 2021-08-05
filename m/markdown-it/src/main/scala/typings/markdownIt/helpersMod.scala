@@ -34,8 +34,7 @@ object helpersMod extends Shortcut {
   }
   object Helpers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       parseLinkDestination: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult,
       parseLinkLabel: (/* state */ typings.markdownIt.stateInlineMod.^, /* start */ Double, /* disableNested */ js.UndefOr[Boolean]) => Double,
       parseLinkTitle: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult
@@ -44,19 +43,15 @@ object helpersMod extends Shortcut {
       __obj.asInstanceOf[Helpers]
     }
     
-    @scala.inline
-    implicit class HelpersMutableBuilder[Self <: Helpers] (val x: Self) extends AnyVal {
+    extension [Self <: Helpers](x: Self) {
       
-      @scala.inline
-      def setParseLinkDestination(value: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult): Self = StObject.set(x, "parseLinkDestination", js.Any.fromFunction3(value))
+      inline def setParseLinkDestination(value: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult): Self = StObject.set(x, "parseLinkDestination", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setParseLinkLabel(
+      inline def setParseLinkLabel(
         value: (/* state */ typings.markdownIt.stateInlineMod.^, /* start */ Double, /* disableNested */ js.UndefOr[Boolean]) => Double
       ): Self = StObject.set(x, "parseLinkLabel", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setParseLinkTitle(value: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult): Self = StObject.set(x, "parseLinkTitle", js.Any.fromFunction3(value))
+      inline def setParseLinkTitle(value: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult): Self = StObject.set(x, "parseLinkTitle", js.Any.fromFunction3(value))
     }
   }
   

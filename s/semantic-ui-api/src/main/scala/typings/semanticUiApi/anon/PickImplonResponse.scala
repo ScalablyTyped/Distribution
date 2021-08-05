@@ -13,16 +13,13 @@ trait PickImplonResponse extends StObject {
 }
 object PickImplonResponse {
   
-  @scala.inline
-  def apply(onResponse: /* response */ js.Any => Unit): PickImplonResponse = {
+  inline def apply(onResponse: /* response */ js.Any => Unit): PickImplonResponse = {
     val __obj = js.Dynamic.literal(onResponse = js.Any.fromFunction1(onResponse))
     __obj.asInstanceOf[PickImplonResponse]
   }
   
-  @scala.inline
-  implicit class PickImplonResponseMutableBuilder[Self <: PickImplonResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonResponse](x: Self) {
     
-    @scala.inline
-    def setOnResponse(value: /* response */ js.Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
+    inline def setOnResponse(value: /* response */ js.Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
   }
 }

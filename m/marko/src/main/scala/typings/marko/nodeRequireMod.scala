@@ -10,11 +10,8 @@ object nodeRequireMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getExtensions(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")().asInstanceOf[js.Any]
+  inline def getExtensions(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
-  @scala.inline
-  def install(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
+  inline def install(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -17,24 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Scope extends StObject
 object Scope {
   
-  @scala.inline
-  def scopeDotaddress: typings.baiduApp.baiduAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotaddress]
+  inline def scopeDotaddress: typings.baiduApp.baiduAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotaddress]
   
-  @scala.inline
-  def scopeDotinvoiceTitle: typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle]
+  inline def scopeDotinvoiceTitle: typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotinvoiceTitle]
   
-  @scala.inline
-  def scopeDotrecord: typings.baiduApp.baiduAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotrecord]
+  inline def scopeDotrecord: typings.baiduApp.baiduAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotrecord]
   
-  @scala.inline
-  def scopeDotuserInfo: typings.baiduApp.baiduAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserInfo]
+  inline def scopeDotuserInfo: typings.baiduApp.baiduAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserInfo]
   
-  @scala.inline
-  def scopeDotuserLocation: typings.baiduApp.baiduAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserLocation]
+  inline def scopeDotuserLocation: typings.baiduApp.baiduAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotuserLocation]
   
-  @scala.inline
-  def scopeDotwerun: typings.baiduApp.baiduAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwerun]
+  inline def scopeDotwerun: typings.baiduApp.baiduAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwerun]
   
-  @scala.inline
-  def scopeDotwritePhotosAlbum: typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum]
+  inline def scopeDotwritePhotosAlbum: typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typings.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum]
 }

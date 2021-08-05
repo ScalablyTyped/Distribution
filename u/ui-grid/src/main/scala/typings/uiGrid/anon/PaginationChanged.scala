@@ -17,16 +17,13 @@ trait PaginationChanged extends StObject {
 }
 object PaginationChanged {
   
-  @scala.inline
-  def apply(paginationChanged: (IScope, paginationChangedHandler) => Unit): PaginationChanged = {
+  inline def apply(paginationChanged: (IScope, paginationChangedHandler) => Unit): PaginationChanged = {
     val __obj = js.Dynamic.literal(paginationChanged = js.Any.fromFunction2(paginationChanged))
     __obj.asInstanceOf[PaginationChanged]
   }
   
-  @scala.inline
-  implicit class PaginationChangedMutableBuilder[Self <: PaginationChanged] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationChanged](x: Self) {
     
-    @scala.inline
-    def setPaginationChanged(value: (IScope, paginationChangedHandler) => Unit): Self = StObject.set(x, "paginationChanged", js.Any.fromFunction2(value))
+    inline def setPaginationChanged(value: (IScope, paginationChangedHandler) => Unit): Self = StObject.set(x, "paginationChanged", js.Any.fromFunction2(value))
   }
 }

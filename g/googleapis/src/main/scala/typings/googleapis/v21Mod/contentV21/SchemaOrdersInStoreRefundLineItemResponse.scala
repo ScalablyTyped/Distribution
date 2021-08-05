@@ -19,25 +19,19 @@ trait SchemaOrdersInStoreRefundLineItemResponse extends StObject {
 }
 object SchemaOrdersInStoreRefundLineItemResponse {
   
-  @scala.inline
-  def apply(): SchemaOrdersInStoreRefundLineItemResponse = {
+  inline def apply(): SchemaOrdersInStoreRefundLineItemResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersInStoreRefundLineItemResponse]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersInStoreRefundLineItemResponseMutableBuilder[Self <: SchemaOrdersInStoreRefundLineItemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersInStoreRefundLineItemResponse](x: Self) {
     
-    @scala.inline
-    def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
+    inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
+    inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

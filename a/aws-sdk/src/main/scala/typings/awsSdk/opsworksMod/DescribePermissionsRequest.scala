@@ -18,25 +18,19 @@ trait DescribePermissionsRequest extends StObject {
 }
 object DescribePermissionsRequest {
   
-  @scala.inline
-  def apply(): DescribePermissionsRequest = {
+  inline def apply(): DescribePermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribePermissionsRequestMutableBuilder[Self <: DescribePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
+    inline def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserArnUndefined: Self = StObject.set(x, "IamUserArn", js.undefined)
+    inline def setIamUserArnUndefined: Self = StObject.set(x, "IamUserArn", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

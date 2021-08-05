@@ -67,8 +67,7 @@ trait Env extends StObject {
 }
 object Env {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCustomEqualityTester: CustomEqualityTester => Unit,
     addMatchers: CustomMatcherFactories => Unit,
     addReporter: Reporter => Unit,
@@ -102,91 +101,62 @@ object Env {
     __obj.asInstanceOf[Env]
   }
   
-  @scala.inline
-  implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+  extension [Self <: Env](x: Self) {
     
-    @scala.inline
-    def setAddCustomEqualityTester(value: CustomEqualityTester => Unit): Self = StObject.set(x, "addCustomEqualityTester", js.Any.fromFunction1(value))
+    inline def setAddCustomEqualityTester(value: CustomEqualityTester => Unit): Self = StObject.set(x, "addCustomEqualityTester", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMatchers(value: CustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
+    inline def setAddMatchers(value: CustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddReporter(value: Reporter => Unit): Self = StObject.set(x, "addReporter", js.Any.fromFunction1(value))
+    inline def setAddReporter(value: Reporter => Unit): Self = StObject.set(x, "addReporter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterAll(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction1(value))
+    inline def setAfterAll(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterEach(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
+    inline def setAfterEach(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeAll(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "beforeAll", js.Any.fromFunction1(value))
+    inline def setBeforeAll(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "beforeAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeEach(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
+    inline def setBeforeEach(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearInterval(value: Unit): Self = StObject.set(x, "clearInterval", value.asInstanceOf[js.Any])
+    inline def setClearInterval(value: Unit): Self = StObject.set(x, "clearInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearTimeout(value: Unit): Self = StObject.set(x, "clearTimeout", value.asInstanceOf[js.Any])
+    inline def setClearTimeout(value: Unit): Self = StObject.set(x, "clearTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareObjects_(value: (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareObjects_", js.Any.fromFunction4(value))
+    inline def setCompareObjects_(value: (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareObjects_", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCompareRegExps_(value: (RegExp, RegExp, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareRegExps_", js.Any.fromFunction4(value))
+    inline def setCompareRegExps_(value: (RegExp, RegExp, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "compareRegExps_", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setContains_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "contains_", js.Any.fromFunction2(value))
+    inline def setContains_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "contains_", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCurrentRunner(value: () => Runner): Self = StObject.set(x, "currentRunner", js.Any.fromFunction0(value))
+    inline def setCurrentRunner(value: () => Runner): Self = StObject.set(x, "currentRunner", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCurrentSpec(value: Spec): Self = StObject.set(x, "currentSpec", value.asInstanceOf[js.Any])
+    inline def setCurrentSpec(value: Spec): Self = StObject.set(x, "currentSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: (String, js.Function0[Unit]) => Suite): Self = StObject.set(x, "describe", js.Any.fromFunction2(value))
+    inline def setDescribe(value: (String, js.Function0[Unit]) => Suite): Self = StObject.set(x, "describe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEquals_(value: (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "equals_", js.Any.fromFunction4(value))
+    inline def setEquals_(value: (js.Any, js.Any, js.Array[String], js.Array[String]) => Boolean): Self = StObject.set(x, "equals_", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIt(value: (String, js.Function0[Unit]) => Spec): Self = StObject.set(x, "it", js.Any.fromFunction2(value))
+    inline def setIt(value: (String, js.Function0[Unit]) => Spec): Self = StObject.set(x, "it", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMatchersClass(value: Matchers): Self = StObject.set(x, "matchersClass", value.asInstanceOf[js.Any])
+    inline def setMatchersClass(value: Matchers): Self = StObject.set(x, "matchersClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSpecId(value: () => Double): Self = StObject.set(x, "nextSpecId", js.Any.fromFunction0(value))
+    inline def setNextSpecId(value: () => Double): Self = StObject.set(x, "nextSpecId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetInterval(value: js.Any): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
+    inline def setSetInterval(value: js.Any): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetTimeout(value: js.Any): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
+    inline def setSetTimeout(value: js.Any): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecFilter(value: Spec => Boolean): Self = StObject.set(x, "specFilter", js.Any.fromFunction1(value))
+    inline def setSpecFilter(value: Spec => Boolean): Self = StObject.set(x, "specFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+    inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: () => js.Any): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
+    inline def setVersion(value: () => js.Any): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVersionString(value: () => String): Self = StObject.set(x, "versionString", js.Any.fromFunction0(value))
+    inline def setVersionString(value: () => String): Self = StObject.set(x, "versionString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setXdescribe(value: (String, js.Function0[Unit]) => XSuite): Self = StObject.set(x, "xdescribe", js.Any.fromFunction2(value))
+    inline def setXdescribe(value: (String, js.Function0[Unit]) => XSuite): Self = StObject.set(x, "xdescribe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setXit(value: (String, js.Function0[Unit]) => XSpec): Self = StObject.set(x, "xit", js.Any.fromFunction2(value))
+    inline def setXit(value: (String, js.Function0[Unit]) => XSpec): Self = StObject.set(x, "xit", js.Any.fromFunction2(value))
   }
 }

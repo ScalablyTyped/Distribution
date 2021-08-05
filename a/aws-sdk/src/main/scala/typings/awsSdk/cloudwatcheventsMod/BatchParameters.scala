@@ -28,31 +28,23 @@ trait BatchParameters extends StObject {
 }
 object BatchParameters {
   
-  @scala.inline
-  def apply(JobDefinition: String, JobName: String): BatchParameters = {
+  inline def apply(JobDefinition: String, JobName: String): BatchParameters = {
     val __obj = js.Dynamic.literal(JobDefinition = JobDefinition.asInstanceOf[js.Any], JobName = JobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchParameters]
   }
   
-  @scala.inline
-  implicit class BatchParametersMutableBuilder[Self <: BatchParameters] (val x: Self) extends AnyVal {
+  extension [Self <: BatchParameters](x: Self) {
     
-    @scala.inline
-    def setArrayProperties(value: BatchArrayProperties): Self = StObject.set(x, "ArrayProperties", value.asInstanceOf[js.Any])
+    inline def setArrayProperties(value: BatchArrayProperties): Self = StObject.set(x, "ArrayProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayPropertiesUndefined: Self = StObject.set(x, "ArrayProperties", js.undefined)
+    inline def setArrayPropertiesUndefined: Self = StObject.set(x, "ArrayProperties", js.undefined)
     
-    @scala.inline
-    def setJobDefinition(value: String): Self = StObject.set(x, "JobDefinition", value.asInstanceOf[js.Any])
+    inline def setJobDefinition(value: String): Self = StObject.set(x, "JobDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryStrategy(value: BatchRetryStrategy): Self = StObject.set(x, "RetryStrategy", value.asInstanceOf[js.Any])
+    inline def setRetryStrategy(value: BatchRetryStrategy): Self = StObject.set(x, "RetryStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryStrategyUndefined: Self = StObject.set(x, "RetryStrategy", js.undefined)
+    inline def setRetryStrategyUndefined: Self = StObject.set(x, "RetryStrategy", js.undefined)
   }
 }

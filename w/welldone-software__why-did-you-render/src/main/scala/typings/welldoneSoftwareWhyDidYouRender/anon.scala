@@ -106,23 +106,18 @@ object anon {
   }
   object TypeofComponent {
     
-    @scala.inline
-    def apply(whyDidYouRender: WhyDidYouRenderComponentMember): TypeofComponent = {
+    inline def apply(whyDidYouRender: WhyDidYouRenderComponentMember): TypeofComponent = {
       val __obj = js.Dynamic.literal(whyDidYouRender = whyDidYouRender.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    @scala.inline
-    implicit class TypeofComponentMutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofComponent](x: Self) {
       
-      @scala.inline
-      def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      inline def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
+      inline def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
       
-      @scala.inline
-      def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
+      inline def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
     }
   }
   

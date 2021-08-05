@@ -23,37 +23,27 @@ trait SupportedLanguage extends StObject {
 }
 object SupportedLanguage {
   
-  @scala.inline
-  def apply(): SupportedLanguage = {
+  inline def apply(): SupportedLanguage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupportedLanguage]
   }
   
-  @scala.inline
-  implicit class SupportedLanguageMutableBuilder[Self <: SupportedLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedLanguage](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setSupportSource(value: Boolean): Self = StObject.set(x, "supportSource", value.asInstanceOf[js.Any])
+    inline def setSupportSource(value: Boolean): Self = StObject.set(x, "supportSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportSourceUndefined: Self = StObject.set(x, "supportSource", js.undefined)
+    inline def setSupportSourceUndefined: Self = StObject.set(x, "supportSource", js.undefined)
     
-    @scala.inline
-    def setSupportTarget(value: Boolean): Self = StObject.set(x, "supportTarget", value.asInstanceOf[js.Any])
+    inline def setSupportTarget(value: Boolean): Self = StObject.set(x, "supportTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportTargetUndefined: Self = StObject.set(x, "supportTarget", js.undefined)
+    inline def setSupportTargetUndefined: Self = StObject.set(x, "supportTarget", js.undefined)
   }
 }

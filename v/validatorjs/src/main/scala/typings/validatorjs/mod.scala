@@ -33,8 +33,7 @@ object mod extends Shortcut {
        with /* key */ StringDictionary[String | ErrorMessages]
   object ErrorMessages {
     
-    @scala.inline
-    def apply(): ErrorMessages = {
+    inline def apply(): ErrorMessages = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorMessages]
     }
@@ -56,8 +55,7 @@ object mod extends Shortcut {
   }
   object Errors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (String, String) => Unit,
       all: () => ValidationErrors,
       errors: ValidationErrors,
@@ -69,26 +67,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAll(value: () => ValidationErrors): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+      inline def setAll(value: () => ValidationErrors): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst(value: String => String | `false`): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
+      inline def setFirst(value: String => String | `false`): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => js.Array[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Array[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     }
   }
   
@@ -112,8 +103,7 @@ object mod extends Shortcut {
        with /* attribute */ StringDictionary[String | (js.Array[String | TypeCheckingRule]) | Rules]
   object Rules {
     
-    @scala.inline
-    def apply(): Rules = {
+    inline def apply(): Rules = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Rules]
     }

@@ -26,31 +26,23 @@ trait SchemaResultTableColumnHeader extends StObject {
 }
 object SchemaResultTableColumnHeader {
   
-  @scala.inline
-  def apply(): SchemaResultTableColumnHeader = {
+  inline def apply(): SchemaResultTableColumnHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultTableColumnHeader]
   }
   
-  @scala.inline
-  implicit class SchemaResultTableColumnHeaderMutableBuilder[Self <: SchemaResultTableColumnHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResultTableColumnHeader](x: Self) {
     
-    @scala.inline
-    def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
+    inline def setColumnType(value: String): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnTypeUndefined: Self = StObject.set(x, "columnType", js.undefined)
+    inline def setColumnTypeUndefined: Self = StObject.set(x, "columnType", js.undefined)
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

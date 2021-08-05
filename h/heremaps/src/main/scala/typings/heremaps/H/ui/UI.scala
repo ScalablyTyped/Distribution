@@ -119,62 +119,44 @@ object UI {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDistancemeasurement(value: typings.heremaps.H.ui.DistanceMeasurement.Options | Boolean): Self = StObject.set(x, "distancemeasurement", value.asInstanceOf[js.Any])
+      inline def setDistancemeasurement(value: typings.heremaps.H.ui.DistanceMeasurement.Options | Boolean): Self = StObject.set(x, "distancemeasurement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistancemeasurementUndefined: Self = StObject.set(x, "distancemeasurement", js.undefined)
+      inline def setDistancemeasurementUndefined: Self = StObject.set(x, "distancemeasurement", js.undefined)
       
-      @scala.inline
-      def setLocale(value: Localization | String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Localization | String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMapsettings(value: typings.heremaps.H.ui.MapSettingsControl.Options | Boolean): Self = StObject.set(x, "mapsettings", value.asInstanceOf[js.Any])
+      inline def setMapsettings(value: typings.heremaps.H.ui.MapSettingsControl.Options | Boolean): Self = StObject.set(x, "mapsettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapsettingsUndefined: Self = StObject.set(x, "mapsettings", js.undefined)
+      inline def setMapsettingsUndefined: Self = StObject.set(x, "mapsettings", js.undefined)
       
-      @scala.inline
-      def setPanorama(value: typings.heremaps.H.ui.Pano.Options | Boolean): Self = StObject.set(x, "panorama", value.asInstanceOf[js.Any])
+      inline def setPanorama(value: typings.heremaps.H.ui.Pano.Options | Boolean): Self = StObject.set(x, "panorama", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanoramaUndefined: Self = StObject.set(x, "panorama", js.undefined)
+      inline def setPanoramaUndefined: Self = StObject.set(x, "panorama", js.undefined)
       
-      @scala.inline
-      def setScalebar(value: typings.heremaps.H.ui.ScaleBar.Options | Boolean): Self = StObject.set(x, "scalebar", value.asInstanceOf[js.Any])
+      inline def setScalebar(value: typings.heremaps.H.ui.ScaleBar.Options | Boolean): Self = StObject.set(x, "scalebar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalebarUndefined: Self = StObject.set(x, "scalebar", js.undefined)
+      inline def setScalebarUndefined: Self = StObject.set(x, "scalebar", js.undefined)
       
-      @scala.inline
-      def setUnitSystem(value: UnitSystem): Self = StObject.set(x, "unitSystem", value.asInstanceOf[js.Any])
+      inline def setUnitSystem(value: UnitSystem): Self = StObject.set(x, "unitSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitSystemUndefined: Self = StObject.set(x, "unitSystem", js.undefined)
+      inline def setUnitSystemUndefined: Self = StObject.set(x, "unitSystem", js.undefined)
       
-      @scala.inline
-      def setZoom(value: typings.heremaps.H.ui.ZoomControl.Options | Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: typings.heremaps.H.ui.ZoomControl.Options | Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
       
-      @scala.inline
-      def setZoomrectangle(value: typings.heremaps.H.ui.ZoomRectangle.Options | Boolean): Self = StObject.set(x, "zoomrectangle", value.asInstanceOf[js.Any])
+      inline def setZoomrectangle(value: typings.heremaps.H.ui.ZoomRectangle.Options | Boolean): Self = StObject.set(x, "zoomrectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomrectangleUndefined: Self = StObject.set(x, "zoomrectangle", js.undefined)
+      inline def setZoomrectangleUndefined: Self = StObject.set(x, "zoomrectangle", js.undefined)
     }
   }
 }

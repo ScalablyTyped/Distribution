@@ -11,28 +11,23 @@ object restifyStrings {
   sealed trait aborted
     extends StObject
        with _TMetricsCallback
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
   sealed trait after extends StObject
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
+  inline def after: after = "after".asInstanceOf[after]
   
   @js.native
   sealed trait close
     extends StObject
        with _TMetricsCallback
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait pre extends StObject
-  @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
+  inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
   sealed trait routed extends StObject
-  @scala.inline
-  def routed: routed = "routed".asInstanceOf[routed]
+  inline def routed: routed = "routed".asInstanceOf[routed]
 }

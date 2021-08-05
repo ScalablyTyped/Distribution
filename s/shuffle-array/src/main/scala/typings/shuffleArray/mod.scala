@@ -23,26 +23,20 @@ object mod extends Shortcut {
   }
   object PickOptions {
     
-    @scala.inline
-    def apply(): PickOptions = {
+    inline def apply(): PickOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickOptions]
     }
     
-    @scala.inline
-    implicit class PickOptionsMutableBuilder[Self <: PickOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PickOptions](x: Self) {
       
-      @scala.inline
-      def setPicks(value: Double): Self = StObject.set(x, "picks", value.asInstanceOf[js.Any])
+      inline def setPicks(value: Double): Self = StObject.set(x, "picks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicksUndefined: Self = StObject.set(x, "picks", js.undefined)
+      inline def setPicksUndefined: Self = StObject.set(x, "picks", js.undefined)
       
-      @scala.inline
-      def setRng(value: () => Double): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
+      inline def setRng(value: () => Double): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
+      inline def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
     }
   }
   
@@ -77,26 +71,20 @@ object mod extends Shortcut {
   }
   object ShuffleOptions {
     
-    @scala.inline
-    def apply(): ShuffleOptions = {
+    inline def apply(): ShuffleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShuffleOptions]
     }
     
-    @scala.inline
-    implicit class ShuffleOptionsMutableBuilder[Self <: ShuffleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShuffleOptions](x: Self) {
       
-      @scala.inline
-      def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setRng(value: () => Double): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
+      inline def setRng(value: () => Double): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
+      inline def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
     }
   }
   

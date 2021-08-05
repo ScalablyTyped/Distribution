@@ -43,55 +43,39 @@ trait UpdateNetworkProfileRequest extends StObject {
 }
 object UpdateNetworkProfileRequest {
   
-  @scala.inline
-  def apply(NetworkProfileArn: Arn): UpdateNetworkProfileRequest = {
+  inline def apply(NetworkProfileArn: Arn): UpdateNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(NetworkProfileArn = NetworkProfileArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNetworkProfileRequest]
   }
   
-  @scala.inline
-  implicit class UpdateNetworkProfileRequestMutableBuilder[Self <: UpdateNetworkProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNetworkProfileRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
+    inline def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
-    @scala.inline
-    def setCurrentPassword(value: CurrentWiFiPassword): Self = StObject.set(x, "CurrentPassword", value.asInstanceOf[js.Any])
+    inline def setCurrentPassword(value: CurrentWiFiPassword): Self = StObject.set(x, "CurrentPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPasswordUndefined: Self = StObject.set(x, "CurrentPassword", js.undefined)
+    inline def setCurrentPasswordUndefined: Self = StObject.set(x, "CurrentPassword", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NetworkProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NetworkProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
+    inline def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileName(value: NetworkProfileName): Self = StObject.set(x, "NetworkProfileName", value.asInstanceOf[js.Any])
+    inline def setNetworkProfileName(value: NetworkProfileName): Self = StObject.set(x, "NetworkProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileNameUndefined: Self = StObject.set(x, "NetworkProfileName", js.undefined)
+    inline def setNetworkProfileNameUndefined: Self = StObject.set(x, "NetworkProfileName", js.undefined)
     
-    @scala.inline
-    def setNextPassword(value: NextWiFiPassword): Self = StObject.set(x, "NextPassword", value.asInstanceOf[js.Any])
+    inline def setNextPassword(value: NextWiFiPassword): Self = StObject.set(x, "NextPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPasswordUndefined: Self = StObject.set(x, "NextPassword", js.undefined)
+    inline def setNextPasswordUndefined: Self = StObject.set(x, "NextPassword", js.undefined)
     
-    @scala.inline
-    def setTrustAnchors(value: TrustAnchorList): Self = StObject.set(x, "TrustAnchors", value.asInstanceOf[js.Any])
+    inline def setTrustAnchors(value: TrustAnchorList): Self = StObject.set(x, "TrustAnchors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustAnchorsUndefined: Self = StObject.set(x, "TrustAnchors", js.undefined)
+    inline def setTrustAnchorsUndefined: Self = StObject.set(x, "TrustAnchors", js.undefined)
     
-    @scala.inline
-    def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value :_*))
+    inline def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value :_*))
   }
 }

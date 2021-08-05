@@ -20,31 +20,23 @@ trait FusedDepthwiseConv2DInputs
 }
 object FusedDepthwiseConv2DInputs {
   
-  @scala.inline
-  def apply(filter: TensorInfo, x: TensorInfo): FusedDepthwiseConv2DInputs = {
+  inline def apply(filter: TensorInfo, x: TensorInfo): FusedDepthwiseConv2DInputs = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusedDepthwiseConv2DInputs]
   }
   
-  @scala.inline
-  implicit class FusedDepthwiseConv2DInputsMutableBuilder[Self <: FusedDepthwiseConv2DInputs] (val x: Self) extends AnyVal {
+  extension [Self <: FusedDepthwiseConv2DInputs](x: Self) {
     
-    @scala.inline
-    def setBias(value: TensorInfo): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+    inline def setBias(value: TensorInfo): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+    inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
-    @scala.inline
-    def setFilter(value: TensorInfo): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: TensorInfo): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreluActivationWeights(value: TensorInfo): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
+    inline def setPreluActivationWeights(value: TensorInfo): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
+    inline def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
     
-    @scala.inline
-    def setX(value: TensorInfo): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: TensorInfo): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
   }
 }

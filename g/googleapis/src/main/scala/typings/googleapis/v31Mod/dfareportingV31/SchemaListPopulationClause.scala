@@ -18,22 +18,17 @@ trait SchemaListPopulationClause extends StObject {
 }
 object SchemaListPopulationClause {
   
-  @scala.inline
-  def apply(): SchemaListPopulationClause = {
+  inline def apply(): SchemaListPopulationClause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListPopulationClause]
   }
   
-  @scala.inline
-  implicit class SchemaListPopulationClauseMutableBuilder[Self <: SchemaListPopulationClause] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListPopulationClause](x: Self) {
     
-    @scala.inline
-    def setTerms(value: js.Array[SchemaListPopulationTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: js.Array[SchemaListPopulationTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
+    inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
-    @scala.inline
-    def setTermsVarargs(value: SchemaListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: SchemaListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
   }
 }

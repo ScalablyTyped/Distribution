@@ -14,16 +14,13 @@ trait RtcError
 }
 object RtcError {
   
-  @scala.inline
-  def apply(getCode: () => String, message: String, name: String): RtcError = {
+  inline def apply(getCode: () => String, message: String, name: String): RtcError = {
     val __obj = js.Dynamic.literal(getCode = js.Any.fromFunction0(getCode), message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RtcError]
   }
   
-  @scala.inline
-  implicit class RtcErrorMutableBuilder[Self <: RtcError] (val x: Self) extends AnyVal {
+  extension [Self <: RtcError](x: Self) {
     
-    @scala.inline
-    def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+    inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
   }
 }

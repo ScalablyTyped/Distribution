@@ -30,31 +30,23 @@ trait ContainerResource extends StObject {
 }
 object ContainerResource {
   
-  @scala.inline
-  def apply(animations: js.Array[Asset], materials: js.Array[Asset], textures: js.Array[Asset]): ContainerResource = {
+  inline def apply(animations: js.Array[Asset], materials: js.Array[Asset], textures: js.Array[Asset]): ContainerResource = {
     val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], materials = materials.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerResource]
   }
   
-  @scala.inline
-  implicit class ContainerResourceMutableBuilder[Self <: ContainerResource] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerResource](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: js.Array[Asset]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Array[Asset]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsVarargs(value: Asset*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: Asset*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
-    @scala.inline
-    def setMaterials(value: js.Array[Asset]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
+    inline def setMaterials(value: js.Array[Asset]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialsVarargs(value: Asset*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: Asset*): Self = StObject.set(x, "materials", js.Array(value :_*))
     
-    @scala.inline
-    def setTextures(value: js.Array[Asset]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: js.Array[Asset]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexturesVarargs(value: Asset*): Self = StObject.set(x, "textures", js.Array(value :_*))
+    inline def setTexturesVarargs(value: Asset*): Self = StObject.set(x, "textures", js.Array(value :_*))
   }
 }

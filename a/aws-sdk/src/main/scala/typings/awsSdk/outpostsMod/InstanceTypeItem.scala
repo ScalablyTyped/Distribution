@@ -10,19 +10,15 @@ trait InstanceTypeItem extends StObject {
 }
 object InstanceTypeItem {
   
-  @scala.inline
-  def apply(): InstanceTypeItem = {
+  inline def apply(): InstanceTypeItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceTypeItem]
   }
   
-  @scala.inline
-  implicit class InstanceTypeItemMutableBuilder[Self <: InstanceTypeItem] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceTypeItem](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
   }
 }

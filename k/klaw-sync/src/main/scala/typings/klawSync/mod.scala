@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(root: String): js.Array[Item] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Item]]
-  @scala.inline
-  def apply(root: String, options: Options): js.Array[Item] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Item]]
+  inline def apply(root: String): js.Array[Item] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Item]]
+  inline def apply(root: String, options: Options): js.Array[Item] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Item]]
   
   @JSImport("klaw-sync", JSImport.Namespace)
   @js.native
@@ -27,20 +25,16 @@ object mod {
   }
   object Item {
     
-    @scala.inline
-    def apply(path: String, stats: Stats): Item = {
+    inline def apply(path: String, stats: Stats): Item = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,50 +89,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDepthLimit(value: Double): Self = StObject.set(x, "depthLimit", value.asInstanceOf[js.Any])
+      inline def setDepthLimit(value: Double): Self = StObject.set(x, "depthLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthLimitUndefined: Self = StObject.set(x, "depthLimit", js.undefined)
+      inline def setDepthLimitUndefined: Self = StObject.set(x, "depthLimit", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* item */ Item => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* item */ Item => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFs(value: ReaddirSync): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: ReaddirSync): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
+      inline def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodirUndefined: Self = StObject.set(x, "nodir", js.undefined)
+      inline def setNodirUndefined: Self = StObject.set(x, "nodir", js.undefined)
       
-      @scala.inline
-      def setNofile(value: Boolean): Self = StObject.set(x, "nofile", value.asInstanceOf[js.Any])
+      inline def setNofile(value: Boolean): Self = StObject.set(x, "nofile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNofileUndefined: Self = StObject.set(x, "nofile", js.undefined)
+      inline def setNofileUndefined: Self = StObject.set(x, "nofile", js.undefined)
       
-      @scala.inline
-      def setTraverseAll(value: Boolean): Self = StObject.set(x, "traverseAll", value.asInstanceOf[js.Any])
+      inline def setTraverseAll(value: Boolean): Self = StObject.set(x, "traverseAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraverseAllUndefined: Self = StObject.set(x, "traverseAll", js.undefined)
+      inline def setTraverseAllUndefined: Self = StObject.set(x, "traverseAll", js.undefined)
     }
   }
 }

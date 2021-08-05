@@ -16,31 +16,23 @@ trait IRetryPolicy extends StObject {
 }
 object IRetryPolicy {
   
-  @scala.inline
-  def apply(): IRetryPolicy = {
+  inline def apply(): IRetryPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRetryPolicy]
   }
   
-  @scala.inline
-  implicit class IRetryPolicyMutableBuilder[Self <: IRetryPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IRetryPolicy](x: Self) {
     
-    @scala.inline
-    def setMaximumBackoff(value: IDuration): Self = StObject.set(x, "maximumBackoff", value.asInstanceOf[js.Any])
+    inline def setMaximumBackoff(value: IDuration): Self = StObject.set(x, "maximumBackoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumBackoffNull: Self = StObject.set(x, "maximumBackoff", null)
+    inline def setMaximumBackoffNull: Self = StObject.set(x, "maximumBackoff", null)
     
-    @scala.inline
-    def setMaximumBackoffUndefined: Self = StObject.set(x, "maximumBackoff", js.undefined)
+    inline def setMaximumBackoffUndefined: Self = StObject.set(x, "maximumBackoff", js.undefined)
     
-    @scala.inline
-    def setMinimumBackoff(value: IDuration): Self = StObject.set(x, "minimumBackoff", value.asInstanceOf[js.Any])
+    inline def setMinimumBackoff(value: IDuration): Self = StObject.set(x, "minimumBackoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumBackoffNull: Self = StObject.set(x, "minimumBackoff", null)
+    inline def setMinimumBackoffNull: Self = StObject.set(x, "minimumBackoff", null)
     
-    @scala.inline
-    def setMinimumBackoffUndefined: Self = StObject.set(x, "minimumBackoff", js.undefined)
+    inline def setMinimumBackoffUndefined: Self = StObject.set(x, "minimumBackoff", js.undefined)
   }
 }

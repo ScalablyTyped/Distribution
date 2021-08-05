@@ -19,6 +19,5 @@ class MenuHeader protected ()
 }
 object MenuHeader {
   
-  @scala.inline
-  def apply: ComponentClass[MenuHeaderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("MenuHeader").asInstanceOf[ComponentClass[MenuHeaderProps, ComponentState]]
+  inline def apply: ComponentClass[MenuHeaderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("MenuHeader").asInstanceOf[ComponentClass[MenuHeaderProps, ComponentState]]
 }

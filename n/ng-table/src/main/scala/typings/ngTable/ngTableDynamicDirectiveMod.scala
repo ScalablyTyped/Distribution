@@ -15,6 +15,5 @@ object ngTableDynamicDirectiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ngTableDynamic(): IDirective[IScope, JQLite, IAttributes, IController] = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableDynamic")().asInstanceOf[IDirective[IScope, JQLite, IAttributes, IController]]
+  inline def ngTableDynamic(): IDirective[IScope, JQLite, IAttributes, IController] = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableDynamic")().asInstanceOf[IDirective[IScope, JQLite, IAttributes, IController]]
 }

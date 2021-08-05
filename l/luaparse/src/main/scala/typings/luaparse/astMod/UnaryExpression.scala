@@ -19,20 +19,16 @@ trait UnaryExpression
 }
 object UnaryExpression {
   
-  @scala.inline
-  def apply(argument: Expression, operator: not | `-_` | Tilde | Numbersign): UnaryExpression = {
+  inline def apply(argument: Expression, operator: not | `-_` | Tilde | Numbersign): UnaryExpression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[UnaryExpression]
   }
   
-  @scala.inline
-  implicit class UnaryExpressionMutableBuilder[Self <: UnaryExpression] (val x: Self) extends AnyVal {
+  extension [Self <: UnaryExpression](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: not | `-_` | Tilde | Numbersign): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: not | `-_` | Tilde | Numbersign): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait SlotOutletNode
 }
 object SlotOutletNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[TemplateChildNode],
     isSelfClosing: Boolean,
     loc: SourceLocation,
@@ -33,22 +32,16 @@ object SlotOutletNode {
     __obj.asInstanceOf[SlotOutletNode]
   }
   
-  @scala.inline
-  implicit class SlotOutletNodeMutableBuilder[Self <: SlotOutletNode] (val x: Self) extends AnyVal {
+  extension [Self <: SlotOutletNode](x: Self) {
     
-    @scala.inline
-    def setCodegenNode(value: RenderSlotCall | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: RenderSlotCall | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
+    inline def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
-    @scala.inline
-    def setSsrCodegenNode(value: CallExpression): Self = StObject.set(x, "ssrCodegenNode", value.asInstanceOf[js.Any])
+    inline def setSsrCodegenNode(value: CallExpression): Self = StObject.set(x, "ssrCodegenNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrCodegenNodeUndefined: Self = StObject.set(x, "ssrCodegenNode", js.undefined)
+    inline def setSsrCodegenNodeUndefined: Self = StObject.set(x, "ssrCodegenNode", js.undefined)
     
-    @scala.inline
-    def setTagType(value: `2`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
+    inline def setTagType(value: `2`): Self = StObject.set(x, "tagType", value.asInstanceOf[js.Any])
   }
 }

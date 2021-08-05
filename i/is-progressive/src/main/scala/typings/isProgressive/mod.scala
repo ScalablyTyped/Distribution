@@ -12,15 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buffer(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def buffer(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def file(filepath: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def file(filepath: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def fileSync(filepath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def fileSync(filepath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def stream(stream: Readable): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def stream(stream: Readable): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

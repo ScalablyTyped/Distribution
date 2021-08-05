@@ -15,14 +15,11 @@ object slotHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def getSlotComment(path: NodePath[js.Any, js.Any], descriptor: SlotDescriptor): js.UndefOr[SlotComment] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlotComment")(path.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SlotComment]]
+  inline def getSlotComment(path: NodePath[js.Any, js.Any], descriptor: SlotDescriptor): js.UndefOr[SlotComment] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlotComment")(path.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SlotComment]]
   
-  @scala.inline
-  def parseSlotDocBlock(str: String, descriptor: SlotDescriptor): js.UndefOr[Bindings] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSlotDocBlock")(str.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Bindings]]
+  inline def parseSlotDocBlock(str: String, descriptor: SlotDescriptor): js.UndefOr[Bindings] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSlotDocBlock")(str.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Bindings]]
   
   /* Inlined std.Pick<vue-docgen-api.vue-docgen-api/dist/Documentation.SlotDescriptor, 'bindings'> */
   trait SlotComment extends StObject {
@@ -31,23 +28,18 @@ object slotHandlerMod {
   }
   object SlotComment {
     
-    @scala.inline
-    def apply(): SlotComment = {
+    inline def apply(): SlotComment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlotComment]
     }
     
-    @scala.inline
-    implicit class SlotCommentMutableBuilder[Self <: SlotComment] (val x: Self) extends AnyVal {
+    extension [Self <: SlotComment](x: Self) {
       
-      @scala.inline
-      def setBindings(value: js.Array[ParamTag]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: js.Array[ParamTag]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+      inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
       
-      @scala.inline
-      def setBindingsVarargs(value: ParamTag*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: ParamTag*): Self = StObject.set(x, "bindings", js.Array(value :_*))
     }
   }
   
@@ -60,18 +52,15 @@ object slotHandlerMod {
   }
   object TypedParamTag {
     
-    @scala.inline
-    def apply(title: String, `type`: ParamType): TypedParamTag = {
+    inline def apply(title: String, `type`: ParamType): TypedParamTag = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypedParamTag]
     }
     
-    @scala.inline
-    implicit class TypedParamTagMutableBuilder[Self <: TypedParamTag] (val x: Self) extends AnyVal {
+    extension [Self <: TypedParamTag](x: Self) {
       
-      @scala.inline
-      def setType(value: ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

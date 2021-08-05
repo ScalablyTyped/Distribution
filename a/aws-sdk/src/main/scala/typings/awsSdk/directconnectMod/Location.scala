@@ -33,49 +33,35 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(): Location = {
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setAvailablePortSpeeds(value: AvailablePortSpeeds): Self = StObject.set(x, "availablePortSpeeds", value.asInstanceOf[js.Any])
+    inline def setAvailablePortSpeeds(value: AvailablePortSpeeds): Self = StObject.set(x, "availablePortSpeeds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailablePortSpeedsUndefined: Self = StObject.set(x, "availablePortSpeeds", js.undefined)
+    inline def setAvailablePortSpeedsUndefined: Self = StObject.set(x, "availablePortSpeeds", js.undefined)
     
-    @scala.inline
-    def setAvailablePortSpeedsVarargs(value: PortSpeed*): Self = StObject.set(x, "availablePortSpeeds", js.Array(value :_*))
+    inline def setAvailablePortSpeedsVarargs(value: PortSpeed*): Self = StObject.set(x, "availablePortSpeeds", js.Array(value :_*))
     
-    @scala.inline
-    def setAvailableProviders(value: ProviderList): Self = StObject.set(x, "availableProviders", value.asInstanceOf[js.Any])
+    inline def setAvailableProviders(value: ProviderList): Self = StObject.set(x, "availableProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableProvidersUndefined: Self = StObject.set(x, "availableProviders", js.undefined)
+    inline def setAvailableProvidersUndefined: Self = StObject.set(x, "availableProviders", js.undefined)
     
-    @scala.inline
-    def setAvailableProvidersVarargs(value: ProviderName*): Self = StObject.set(x, "availableProviders", js.Array(value :_*))
+    inline def setAvailableProvidersVarargs(value: ProviderName*): Self = StObject.set(x, "availableProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setLocationCode(value: LocationCode): Self = StObject.set(x, "locationCode", value.asInstanceOf[js.Any])
+    inline def setLocationCode(value: LocationCode): Self = StObject.set(x, "locationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationCodeUndefined: Self = StObject.set(x, "locationCode", js.undefined)
+    inline def setLocationCodeUndefined: Self = StObject.set(x, "locationCode", js.undefined)
     
-    @scala.inline
-    def setLocationName(value: LocationName): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
+    inline def setLocationName(value: LocationName): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
+    inline def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
     
-    @scala.inline
-    def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

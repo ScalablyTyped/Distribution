@@ -14,25 +14,19 @@ trait CustomHttpPattern extends StObject {
 }
 object CustomHttpPattern {
   
-  @scala.inline
-  def apply(): CustomHttpPattern = {
+  inline def apply(): CustomHttpPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomHttpPattern]
   }
   
-  @scala.inline
-  implicit class CustomHttpPatternMutableBuilder[Self <: CustomHttpPattern] (val x: Self) extends AnyVal {
+  extension [Self <: CustomHttpPattern](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

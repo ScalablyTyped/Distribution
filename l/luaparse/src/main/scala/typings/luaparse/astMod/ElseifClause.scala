@@ -15,23 +15,18 @@ trait ElseifClause
 }
 object ElseifClause {
   
-  @scala.inline
-  def apply(body: js.Array[Statement], condition: Expression): ElseifClause = {
+  inline def apply(body: js.Array[Statement], condition: Expression): ElseifClause = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ElseifClause")
     __obj.asInstanceOf[ElseifClause]
   }
   
-  @scala.inline
-  implicit class ElseifClauseMutableBuilder[Self <: ElseifClause] (val x: Self) extends AnyVal {
+  extension [Self <: ElseifClause](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }
 }

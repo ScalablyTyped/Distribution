@@ -8,11 +8,9 @@ object reactDatepickerStrings {
   
   @js.native
   sealed trait scroll extends StObject
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait select extends StObject
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
+  inline def select: select = "select".asInstanceOf[select]
 }

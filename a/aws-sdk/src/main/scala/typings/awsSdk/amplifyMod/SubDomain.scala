@@ -23,22 +23,17 @@ trait SubDomain extends StObject {
 }
 object SubDomain {
   
-  @scala.inline
-  def apply(dnsRecord: DNSRecord, subDomainSetting: SubDomainSetting, verified: Verified): SubDomain = {
+  inline def apply(dnsRecord: DNSRecord, subDomainSetting: SubDomainSetting, verified: Verified): SubDomain = {
     val __obj = js.Dynamic.literal(dnsRecord = dnsRecord.asInstanceOf[js.Any], subDomainSetting = subDomainSetting.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubDomain]
   }
   
-  @scala.inline
-  implicit class SubDomainMutableBuilder[Self <: SubDomain] (val x: Self) extends AnyVal {
+  extension [Self <: SubDomain](x: Self) {
     
-    @scala.inline
-    def setDnsRecord(value: DNSRecord): Self = StObject.set(x, "dnsRecord", value.asInstanceOf[js.Any])
+    inline def setDnsRecord(value: DNSRecord): Self = StObject.set(x, "dnsRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDomainSetting(value: SubDomainSetting): Self = StObject.set(x, "subDomainSetting", value.asInstanceOf[js.Any])
+    inline def setSubDomainSetting(value: SubDomainSetting): Self = StObject.set(x, "subDomainSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified(value: Verified): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setVerified(value: Verified): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

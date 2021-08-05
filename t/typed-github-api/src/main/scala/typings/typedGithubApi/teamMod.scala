@@ -30,8 +30,7 @@ object teamMod {
   }
   object Team {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       id: Double,
       members_url: String,
@@ -44,35 +43,25 @@ object teamMod {
       __obj.asInstanceOf[Team]
     }
     
-    @scala.inline
-    implicit class TeamMutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
+    extension [Self <: Team](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers_url(value: String): Self = StObject.set(x, "members_url", value.asInstanceOf[js.Any])
+      inline def setMembers_url(value: String): Self = StObject.set(x, "members_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermission(value: admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+      inline def setPermission(value: admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivacy(value: closed): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+      inline def setPrivacy(value: closed): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
+      inline def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

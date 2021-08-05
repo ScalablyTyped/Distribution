@@ -16,34 +16,25 @@ trait IDeviceOrientationHeading extends StObject {
 }
 object IDeviceOrientationHeading {
   
-  @scala.inline
-  def apply(magneticHeading: Double): IDeviceOrientationHeading = {
+  inline def apply(magneticHeading: Double): IDeviceOrientationHeading = {
     val __obj = js.Dynamic.literal(magneticHeading = magneticHeading.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeviceOrientationHeading]
   }
   
-  @scala.inline
-  implicit class IDeviceOrientationHeadingMutableBuilder[Self <: IDeviceOrientationHeading] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceOrientationHeading](x: Self) {
     
-    @scala.inline
-    def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
+    inline def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingAccuracyUndefined: Self = StObject.set(x, "headingAccuracy", js.undefined)
+    inline def setHeadingAccuracyUndefined: Self = StObject.set(x, "headingAccuracy", js.undefined)
     
-    @scala.inline
-    def setMagneticHeading(value: Double): Self = StObject.set(x, "magneticHeading", value.asInstanceOf[js.Any])
+    inline def setMagneticHeading(value: Double): Self = StObject.set(x, "magneticHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setTrueHeading(value: Double): Self = StObject.set(x, "trueHeading", value.asInstanceOf[js.Any])
+    inline def setTrueHeading(value: Double): Self = StObject.set(x, "trueHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueHeadingUndefined: Self = StObject.set(x, "trueHeading", js.undefined)
+    inline def setTrueHeadingUndefined: Self = StObject.set(x, "trueHeading", js.undefined)
   }
 }

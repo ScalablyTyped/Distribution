@@ -51,8 +51,7 @@ trait ColumnDescriptorControlModel
 }
 object ColumnDescriptorControlModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveConnection: XConnection,
     Border: Double,
     Column: XPropertySet,
@@ -96,25 +95,18 @@ object ColumnDescriptorControlModel {
     __obj.asInstanceOf[ColumnDescriptorControlModel]
   }
   
-  @scala.inline
-  implicit class ColumnDescriptorControlModelMutableBuilder[Self <: ColumnDescriptorControlModel] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnDescriptorControlModel](x: Self) {
     
-    @scala.inline
-    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
+    inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: XPropertySet): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: XPropertySet): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
+    inline def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
   }
 }

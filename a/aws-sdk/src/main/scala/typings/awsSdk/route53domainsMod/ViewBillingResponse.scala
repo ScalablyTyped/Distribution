@@ -18,28 +18,21 @@ trait ViewBillingResponse extends StObject {
 }
 object ViewBillingResponse {
   
-  @scala.inline
-  def apply(): ViewBillingResponse = {
+  inline def apply(): ViewBillingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewBillingResponse]
   }
   
-  @scala.inline
-  implicit class ViewBillingResponseMutableBuilder[Self <: ViewBillingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ViewBillingResponse](x: Self) {
     
-    @scala.inline
-    def setBillingRecords(value: BillingRecords): Self = StObject.set(x, "BillingRecords", value.asInstanceOf[js.Any])
+    inline def setBillingRecords(value: BillingRecords): Self = StObject.set(x, "BillingRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingRecordsUndefined: Self = StObject.set(x, "BillingRecords", js.undefined)
+    inline def setBillingRecordsUndefined: Self = StObject.set(x, "BillingRecords", js.undefined)
     
-    @scala.inline
-    def setBillingRecordsVarargs(value: BillingRecord*): Self = StObject.set(x, "BillingRecords", js.Array(value :_*))
+    inline def setBillingRecordsVarargs(value: BillingRecord*): Self = StObject.set(x, "BillingRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageMarker(value: PageMarker): Self = StObject.set(x, "NextPageMarker", value.asInstanceOf[js.Any])
+    inline def setNextPageMarker(value: PageMarker): Self = StObject.set(x, "NextPageMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageMarkerUndefined: Self = StObject.set(x, "NextPageMarker", js.undefined)
+    inline def setNextPageMarkerUndefined: Self = StObject.set(x, "NextPageMarker", js.undefined)
   }
 }

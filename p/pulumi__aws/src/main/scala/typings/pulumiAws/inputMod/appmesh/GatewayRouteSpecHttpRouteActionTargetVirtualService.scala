@@ -14,16 +14,13 @@ trait GatewayRouteSpecHttpRouteActionTargetVirtualService extends StObject {
 }
 object GatewayRouteSpecHttpRouteActionTargetVirtualService {
   
-  @scala.inline
-  def apply(virtualServiceName: Input[String]): GatewayRouteSpecHttpRouteActionTargetVirtualService = {
+  inline def apply(virtualServiceName: Input[String]): GatewayRouteSpecHttpRouteActionTargetVirtualService = {
     val __obj = js.Dynamic.literal(virtualServiceName = virtualServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayRouteSpecHttpRouteActionTargetVirtualService]
   }
   
-  @scala.inline
-  implicit class GatewayRouteSpecHttpRouteActionTargetVirtualServiceMutableBuilder[Self <: GatewayRouteSpecHttpRouteActionTargetVirtualService] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayRouteSpecHttpRouteActionTargetVirtualService](x: Self) {
     
-    @scala.inline
-    def setVirtualServiceName(value: Input[String]): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
+    inline def setVirtualServiceName(value: Input[String]): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
   }
 }

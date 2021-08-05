@@ -13,19 +13,15 @@ trait ResourceGroupProperties extends StObject {
 }
 object ResourceGroupProperties {
   
-  @scala.inline
-  def apply(): ResourceGroupProperties = {
+  inline def apply(): ResourceGroupProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceGroupProperties]
   }
   
-  @scala.inline
-  implicit class ResourceGroupPropertiesMutableBuilder[Self <: ResourceGroupProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceGroupProperties](x: Self) {
     
-    @scala.inline
-    def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
+    inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
+    inline def setProvisioningStateUndefined: Self = StObject.set(x, "provisioningState", js.undefined)
   }
 }

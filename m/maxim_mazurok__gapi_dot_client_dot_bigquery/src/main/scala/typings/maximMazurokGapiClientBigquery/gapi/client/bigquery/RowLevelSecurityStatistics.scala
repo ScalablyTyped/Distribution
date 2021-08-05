@@ -11,19 +11,15 @@ trait RowLevelSecurityStatistics extends StObject {
 }
 object RowLevelSecurityStatistics {
   
-  @scala.inline
-  def apply(): RowLevelSecurityStatistics = {
+  inline def apply(): RowLevelSecurityStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowLevelSecurityStatistics]
   }
   
-  @scala.inline
-  implicit class RowLevelSecurityStatisticsMutableBuilder[Self <: RowLevelSecurityStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: RowLevelSecurityStatistics](x: Self) {
     
-    @scala.inline
-    def setRowLevelSecurityApplied(value: Boolean): Self = StObject.set(x, "rowLevelSecurityApplied", value.asInstanceOf[js.Any])
+    inline def setRowLevelSecurityApplied(value: Boolean): Self = StObject.set(x, "rowLevelSecurityApplied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowLevelSecurityAppliedUndefined: Self = StObject.set(x, "rowLevelSecurityApplied", js.undefined)
+    inline def setRowLevelSecurityAppliedUndefined: Self = StObject.set(x, "rowLevelSecurityApplied", js.undefined)
   }
 }

@@ -37,86 +37,60 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAutoCommands(value: String): Self = StObject.set(x, "autoCommands", value.asInstanceOf[js.Any])
+      inline def setAutoCommands(value: String): Self = StObject.set(x, "autoCommands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCommandsUndefined: Self = StObject.set(x, "autoCommands", js.undefined)
+      inline def setAutoCommandsUndefined: Self = StObject.set(x, "autoCommands", js.undefined)
       
-      @scala.inline
-      def setAutoOperatorNames(value: String): Self = StObject.set(x, "autoOperatorNames", value.asInstanceOf[js.Any])
+      inline def setAutoOperatorNames(value: String): Self = StObject.set(x, "autoOperatorNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoOperatorNamesUndefined: Self = StObject.set(x, "autoOperatorNames", js.undefined)
+      inline def setAutoOperatorNamesUndefined: Self = StObject.set(x, "autoOperatorNames", js.undefined)
       
-      @scala.inline
-      def setAutoSubscriptNumerals(value: Boolean): Self = StObject.set(x, "autoSubscriptNumerals", value.asInstanceOf[js.Any])
+      inline def setAutoSubscriptNumerals(value: Boolean): Self = StObject.set(x, "autoSubscriptNumerals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSubscriptNumeralsUndefined: Self = StObject.set(x, "autoSubscriptNumerals", js.undefined)
+      inline def setAutoSubscriptNumeralsUndefined: Self = StObject.set(x, "autoSubscriptNumerals", js.undefined)
       
-      @scala.inline
-      def setCharsThatBreakOutOfSupSub(value: String): Self = StObject.set(x, "charsThatBreakOutOfSupSub", value.asInstanceOf[js.Any])
+      inline def setCharsThatBreakOutOfSupSub(value: String): Self = StObject.set(x, "charsThatBreakOutOfSupSub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsThatBreakOutOfSupSubUndefined: Self = StObject.set(x, "charsThatBreakOutOfSupSub", js.undefined)
+      inline def setCharsThatBreakOutOfSupSubUndefined: Self = StObject.set(x, "charsThatBreakOutOfSupSub", js.undefined)
       
-      @scala.inline
-      def setHandlers(value: Edit): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: Edit): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+      inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
       
-      @scala.inline
-      def setLeftRightIntoCmdGoes(value: String): Self = StObject.set(x, "leftRightIntoCmdGoes", value.asInstanceOf[js.Any])
+      inline def setLeftRightIntoCmdGoes(value: String): Self = StObject.set(x, "leftRightIntoCmdGoes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftRightIntoCmdGoesUndefined: Self = StObject.set(x, "leftRightIntoCmdGoes", js.undefined)
+      inline def setLeftRightIntoCmdGoesUndefined: Self = StObject.set(x, "leftRightIntoCmdGoes", js.undefined)
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+      inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
       
-      @scala.inline
-      def setRestrictMismatchedBrackets(value: Boolean): Self = StObject.set(x, "restrictMismatchedBrackets", value.asInstanceOf[js.Any])
+      inline def setRestrictMismatchedBrackets(value: Boolean): Self = StObject.set(x, "restrictMismatchedBrackets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictMismatchedBracketsUndefined: Self = StObject.set(x, "restrictMismatchedBrackets", js.undefined)
+      inline def setRestrictMismatchedBracketsUndefined: Self = StObject.set(x, "restrictMismatchedBrackets", js.undefined)
       
-      @scala.inline
-      def setSpaceBehavesLikeTab(value: Boolean): Self = StObject.set(x, "spaceBehavesLikeTab", value.asInstanceOf[js.Any])
+      inline def setSpaceBehavesLikeTab(value: Boolean): Self = StObject.set(x, "spaceBehavesLikeTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceBehavesLikeTabUndefined: Self = StObject.set(x, "spaceBehavesLikeTab", js.undefined)
+      inline def setSpaceBehavesLikeTabUndefined: Self = StObject.set(x, "spaceBehavesLikeTab", js.undefined)
       
-      @scala.inline
-      def setSubstituteTextarea(value: () => HTMLTextAreaElement): Self = StObject.set(x, "substituteTextarea", js.Any.fromFunction0(value))
+      inline def setSubstituteTextarea(value: () => HTMLTextAreaElement): Self = StObject.set(x, "substituteTextarea", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubstituteTextareaUndefined: Self = StObject.set(x, "substituteTextarea", js.undefined)
+      inline def setSubstituteTextareaUndefined: Self = StObject.set(x, "substituteTextarea", js.undefined)
       
-      @scala.inline
-      def setSumStartsWithNEquals(value: Boolean): Self = StObject.set(x, "sumStartsWithNEquals", value.asInstanceOf[js.Any])
+      inline def setSumStartsWithNEquals(value: Boolean): Self = StObject.set(x, "sumStartsWithNEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSumStartsWithNEqualsUndefined: Self = StObject.set(x, "sumStartsWithNEquals", js.undefined)
+      inline def setSumStartsWithNEqualsUndefined: Self = StObject.set(x, "sumStartsWithNEquals", js.undefined)
       
-      @scala.inline
-      def setSupSubsRequireOperand(value: Boolean): Self = StObject.set(x, "supSubsRequireOperand", value.asInstanceOf[js.Any])
+      inline def setSupSubsRequireOperand(value: Boolean): Self = StObject.set(x, "supSubsRequireOperand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupSubsRequireOperandUndefined: Self = StObject.set(x, "supSubsRequireOperand", js.undefined)
+      inline def setSupSubsRequireOperandUndefined: Self = StObject.set(x, "supSubsRequireOperand", js.undefined)
     }
   }
   
@@ -167,8 +141,7 @@ object mod {
   }
   object MathField {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blur: () => MQ,
       clearSelection: () => MQ,
       cmd: String => MQ,
@@ -186,44 +159,31 @@ object mod {
       __obj.asInstanceOf[MathField]
     }
     
-    @scala.inline
-    implicit class MathFieldMutableBuilder[Self <: MathField] (val x: Self) extends AnyVal {
+    extension [Self <: MathField](x: Self) {
       
-      @scala.inline
-      def setBlur(value: () => MQ): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => MQ): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearSelection(value: () => MQ): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
+      inline def setClearSelection(value: () => MQ): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCmd(value: String => MQ): Self = StObject.set(x, "cmd", js.Any.fromFunction1(value))
+      inline def setCmd(value: String => MQ): Self = StObject.set(x, "cmd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConfig(value: Config => MQ): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+      inline def setConfig(value: Config => MQ): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocus(value: () => MQ): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => MQ): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeystroke(value: String => MQ): Self = StObject.set(x, "keystroke", js.Any.fromFunction1(value))
+      inline def setKeystroke(value: String => MQ): Self = StObject.set(x, "keystroke", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoveToDirEnd(value: Double => MQ): Self = StObject.set(x, "moveToDirEnd", js.Any.fromFunction1(value))
+      inline def setMoveToDirEnd(value: Double => MQ): Self = StObject.set(x, "moveToDirEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoveToLeftEnd(value: () => MQ): Self = StObject.set(x, "moveToLeftEnd", js.Any.fromFunction0(value))
+      inline def setMoveToLeftEnd(value: () => MQ): Self = StObject.set(x, "moveToLeftEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMoveToRightEnd(value: () => MQ): Self = StObject.set(x, "moveToRightEnd", js.Any.fromFunction0(value))
+      inline def setMoveToRightEnd(value: () => MQ): Self = StObject.set(x, "moveToRightEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelect(value: () => MQ): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => MQ): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTypedText(value: String => MQ): Self = StObject.set(x, "typedText", js.Any.fromFunction1(value))
+      inline def setTypedText(value: String => MQ): Self = StObject.set(x, "typedText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: String => MQ): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => MQ): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

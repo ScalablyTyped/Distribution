@@ -12,19 +12,15 @@ trait HexName extends StObject {
 }
 object HexName {
   
-  @scala.inline
-  def apply(hex: String, name: String): HexName = {
+  inline def apply(hex: String, name: String): HexName = {
     val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexName]
   }
   
-  @scala.inline
-  implicit class HexNameMutableBuilder[Self <: HexName] (val x: Self) extends AnyVal {
+  extension [Self <: HexName](x: Self) {
     
-    @scala.inline
-    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+    inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

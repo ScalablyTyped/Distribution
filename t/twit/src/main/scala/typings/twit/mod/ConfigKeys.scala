@@ -16,31 +16,23 @@ trait ConfigKeys extends StObject {
 }
 object ConfigKeys {
   
-  @scala.inline
-  def apply(consumer_key: String, consumer_secret: String): ConfigKeys = {
+  inline def apply(consumer_key: String, consumer_secret: String): ConfigKeys = {
     val __obj = js.Dynamic.literal(consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigKeys]
   }
   
-  @scala.inline
-  implicit class ConfigKeysMutableBuilder[Self <: ConfigKeys] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigKeys](x: Self) {
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
-    @scala.inline
-    def setAccess_token_secret(value: String): Self = StObject.set(x, "access_token_secret", value.asInstanceOf[js.Any])
+    inline def setAccess_token_secret(value: String): Self = StObject.set(x, "access_token_secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_token_secretUndefined: Self = StObject.set(x, "access_token_secret", js.undefined)
+    inline def setAccess_token_secretUndefined: Self = StObject.set(x, "access_token_secret", js.undefined)
     
-    @scala.inline
-    def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
+    inline def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
+    inline def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
   }
 }

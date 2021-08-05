@@ -11,22 +11,17 @@ trait GoogleCloudRecommenderV1RecommendationContent extends StObject {
 }
 object GoogleCloudRecommenderV1RecommendationContent {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1RecommendationContent = {
+  inline def apply(): GoogleCloudRecommenderV1RecommendationContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1RecommendationContent]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1RecommendationContentMutableBuilder[Self <: GoogleCloudRecommenderV1RecommendationContent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1RecommendationContent](x: Self) {
     
-    @scala.inline
-    def setOperationGroups(value: js.Array[GoogleCloudRecommenderV1OperationGroup]): Self = StObject.set(x, "operationGroups", value.asInstanceOf[js.Any])
+    inline def setOperationGroups(value: js.Array[GoogleCloudRecommenderV1OperationGroup]): Self = StObject.set(x, "operationGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationGroupsUndefined: Self = StObject.set(x, "operationGroups", js.undefined)
+    inline def setOperationGroupsUndefined: Self = StObject.set(x, "operationGroups", js.undefined)
     
-    @scala.inline
-    def setOperationGroupsVarargs(value: GoogleCloudRecommenderV1OperationGroup*): Self = StObject.set(x, "operationGroups", js.Array(value :_*))
+    inline def setOperationGroupsVarargs(value: GoogleCloudRecommenderV1OperationGroup*): Self = StObject.set(x, "operationGroups", js.Array(value :_*))
   }
 }

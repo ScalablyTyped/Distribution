@@ -56,7 +56,7 @@ object textareaMod {
     /**
       * Check if we need to clear the text input if clearOnEdit is enabled
       */
-    var checkClearOnEdit: js.Any = js.native
+    /* private */ var checkClearOnEdit: js.Any = js.native
     
     /**
       * If `true`, the value will be cleared after focus upon edit. Defaults to `true` when `type` is `"password"`, `false` for all other types.
@@ -91,7 +91,7 @@ object textareaMod {
     
     /* protected */ def debounceChanged(): Unit = js.native
     
-    var didBlurAfterEdit: js.Any = js.native
+    /* private */ var didBlurAfterEdit: js.Any = js.native
     
     /**
       * If `true`, the user cannot interact with the textarea.
@@ -105,7 +105,7 @@ object textareaMod {
     
     var el: HTMLElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
     /**
       * A hint to the browser for which enter key to display.
@@ -124,22 +124,22 @@ object textareaMod {
       */
     var fireFocusEvents: Boolean = js.native
     
-    var focusChange: js.Any = js.native
+    /* private */ var focusChange: js.Any = js.native
     
     /**
       * Returns the native `<textarea>` element used under the hood.
       */
     def getInputElement(): js.Promise[HTMLTextAreaElement] = js.native
     
-    var getValue: js.Any = js.native
+    /* private */ var getValue: js.Any = js.native
     
     var hasFocus: Boolean = js.native
     
-    var hasValue: js.Any = js.native
+    /* private */ var hasValue: js.Any = js.native
     
-    var inheritedAttributes: js.Any = js.native
+    /* private */ var inheritedAttributes: js.Any = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * A hint to the browser for which keyboard to display.
@@ -189,15 +189,15 @@ object textareaMod {
       */
     var name: String = js.native
     
-    var nativeInput: js.Any = js.native
+    /* private */ var nativeInput: js.Any = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
-    var onInput: js.Any = js.native
+    /* private */ var onInput: js.Any = js.native
     
-    var onKeyDown: js.Any = js.native
+    /* private */ var onKeyDown: js.Any = js.native
     
     /**
       * Instructional text that shows before the input has a value.
@@ -222,7 +222,7 @@ object textareaMod {
       */
     var rows: js.UndefOr[Double] = js.native
     
-    var runAutoGrow: js.Any = js.native
+    /* private */ var runAutoGrow: js.Any = js.native
     
     /**
       * Sets blur on the native `textarea` in `ion-textarea`. Use this method instead of the global
@@ -242,7 +242,7 @@ object textareaMod {
       */
     var spellcheck: Boolean = js.native
     
-    var textareaWrapper: js.Any = js.native
+    /* private */ var textareaWrapper: js.Any = js.native
     
     /**
       * The value of the textarea.

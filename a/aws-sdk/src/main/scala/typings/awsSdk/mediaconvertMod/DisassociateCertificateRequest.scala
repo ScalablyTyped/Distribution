@@ -13,16 +13,13 @@ trait DisassociateCertificateRequest extends StObject {
 }
 object DisassociateCertificateRequest {
   
-  @scala.inline
-  def apply(Arn: string): DisassociateCertificateRequest = {
+  inline def apply(Arn: string): DisassociateCertificateRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateCertificateRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateCertificateRequestMutableBuilder[Self <: DisassociateCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

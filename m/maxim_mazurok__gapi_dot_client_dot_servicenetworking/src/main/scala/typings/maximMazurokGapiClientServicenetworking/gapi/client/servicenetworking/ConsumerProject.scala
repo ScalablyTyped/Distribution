@@ -14,19 +14,15 @@ trait ConsumerProject extends StObject {
 }
 object ConsumerProject {
   
-  @scala.inline
-  def apply(): ConsumerProject = {
+  inline def apply(): ConsumerProject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConsumerProject]
   }
   
-  @scala.inline
-  implicit class ConsumerProjectMutableBuilder[Self <: ConsumerProject] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumerProject](x: Self) {
     
-    @scala.inline
-    def setProjectNum(value: String): Self = StObject.set(x, "projectNum", value.asInstanceOf[js.Any])
+    inline def setProjectNum(value: String): Self = StObject.set(x, "projectNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNumUndefined: Self = StObject.set(x, "projectNum", js.undefined)
+    inline def setProjectNumUndefined: Self = StObject.set(x, "projectNum", js.undefined)
   }
 }

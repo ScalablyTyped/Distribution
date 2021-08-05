@@ -25,25 +25,19 @@ trait ParamsResourceGoogleserviceaccountsGet
 }
 object ParamsResourceGoogleserviceaccountsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceGoogleserviceaccountsGet = {
+  inline def apply(): ParamsResourceGoogleserviceaccountsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceGoogleserviceaccountsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceGoogleserviceaccountsGetMutableBuilder[Self <: ParamsResourceGoogleserviceaccountsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceGoogleserviceaccountsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

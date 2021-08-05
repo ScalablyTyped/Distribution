@@ -11,8 +11,6 @@ object functionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultGroupComparator(valueA: js.Any, valueB: js.Any, nodeA: RowNode, nodeB: RowNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGroupComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def defaultGroupComparator(valueA: js.Any, valueB: js.Any, nodeA: RowNode, nodeB: RowNode, accentedCompare: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGroupComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any], accentedCompare.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def defaultGroupComparator(valueA: js.Any, valueB: js.Any, nodeA: RowNode, nodeB: RowNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGroupComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def defaultGroupComparator(valueA: js.Any, valueB: js.Any, nodeA: RowNode, nodeB: RowNode, accentedCompare: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGroupComparator")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any], nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any], accentedCompare.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

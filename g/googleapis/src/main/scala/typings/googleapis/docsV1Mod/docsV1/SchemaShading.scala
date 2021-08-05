@@ -16,19 +16,15 @@ trait SchemaShading extends StObject {
 }
 object SchemaShading {
   
-  @scala.inline
-  def apply(): SchemaShading = {
+  inline def apply(): SchemaShading = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShading]
   }
   
-  @scala.inline
-  implicit class SchemaShadingMutableBuilder[Self <: SchemaShading] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShading](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: SchemaOptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: SchemaOptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
   }
 }

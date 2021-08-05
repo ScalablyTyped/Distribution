@@ -17,22 +17,17 @@ trait IPersonType extends StObject {
 }
 object IPersonType {
   
-  @scala.inline
-  def apply(): IPersonType = {
+  inline def apply(): IPersonType = {
     val __obj = js.Dynamic.literal(Legal = "LEGAL", Natural = "NATURAL", NotSpecified = "NotSpecified")
     __obj.asInstanceOf[IPersonType]
   }
   
-  @scala.inline
-  implicit class IPersonTypeMutableBuilder[Self <: IPersonType] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonType](x: Self) {
     
-    @scala.inline
-    def setLegal(value: LEGAL): Self = StObject.set(x, "Legal", value.asInstanceOf[js.Any])
+    inline def setLegal(value: LEGAL): Self = StObject.set(x, "Legal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatural(value: NATURAL): Self = StObject.set(x, "Natural", value.asInstanceOf[js.Any])
+    inline def setNatural(value: NATURAL): Self = StObject.set(x, "Natural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
+    inline def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
   }
 }

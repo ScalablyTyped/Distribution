@@ -72,30 +72,26 @@ object LinkReshapingTool {
   @JSImport("go", "LinkReshapingTool.All")
   @js.native
   def All: EnumValue = js.native
-  @scala.inline
-  def All_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
+  inline def All_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
   
   /**Allow only horizontal (left-and-right) dragging.*/
   /* static member */
   @JSImport("go", "LinkReshapingTool.Horizontal")
   @js.native
   def Horizontal: EnumValue = js.native
-  @scala.inline
-  def Horizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
+  inline def Horizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /**Disallow dragging.*/
   /* static member */
   @JSImport("go", "LinkReshapingTool.None")
   @js.native
   def None: EnumValue = js.native
-  @scala.inline
-  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**Allow only vertical (up-and-down) dragging.*/
   /* static member */
   @JSImport("go", "LinkReshapingTool.Vertical")
   @js.native
   def Vertical: EnumValue = js.native
-  @scala.inline
-  def Vertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
+  inline def Vertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
 }

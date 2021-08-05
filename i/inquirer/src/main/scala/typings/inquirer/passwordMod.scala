@@ -48,7 +48,7 @@ object passwordMod {
     /**
       * The answer to this prompt.
       */
-    var answer: js.Any = js.native
+    /* protected */ var answer: js.Any = js.native
     
     /**
       * Resolves the value of the prompt.

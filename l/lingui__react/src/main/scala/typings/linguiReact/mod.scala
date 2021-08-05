@@ -100,19 +100,16 @@ object mod {
   class Trans ()
     extends typings.linguiReact.transMod.default
   
-  @scala.inline
-  def i18nMark(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nMark")(id.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def i18nMark(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nMark")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def withI18n(): js.Function1[
+  inline def withI18n(): js.Function1[
     /* WrappedComponent */ ComponentConstructor[js.Any], 
     ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withI18n")().asInstanceOf[js.Function1[
     /* WrappedComponent */ ComponentConstructor[js.Any], 
     ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
   ]]
-  @scala.inline
-  def withI18n(options: withI18nOptions): js.Function1[
+  inline def withI18n(options: withI18nOptions): js.Function1[
     /* WrappedComponent */ ComponentConstructor[js.Any], 
     ComponentClass[Pick[js.Any, Exclude[/* keyof any */ String, i18n | i18nHash]], ComponentState]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withI18n")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

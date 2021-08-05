@@ -21,22 +21,17 @@ trait LegendMixins extends StObject {
 }
 object LegendMixins {
   
-  @scala.inline
-  def apply(): LegendMixins = {
+  inline def apply(): LegendMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendMixins]
   }
   
-  @scala.inline
-  implicit class LegendMixinsMutableBuilder[Self <: LegendMixins] (val x: Self) extends AnyVal {
+  extension [Self <: LegendMixins](x: Self) {
     
-    @scala.inline
-    def setLegend(value: Legend[ExprRef | SignalRef]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Legend[ExprRef | SignalRef]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendNull: Self = StObject.set(x, "legend", null)
+    inline def setLegendNull: Self = StObject.set(x, "legend", null)
     
-    @scala.inline
-    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
   }
 }

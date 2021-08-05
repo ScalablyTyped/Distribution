@@ -18,12 +18,10 @@ object Serializer {
   @JSImport("typedoc/dist/lib/serialization", "Serializer.EVENT_BEGIN")
   @js.native
   def EVENT_BEGIN: String = js.native
-  @scala.inline
-  def EVENT_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_BEGIN")(x.asInstanceOf[js.Any])
+  inline def EVENT_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_BEGIN")(x.asInstanceOf[js.Any])
   
   @JSImport("typedoc/dist/lib/serialization", "Serializer.EVENT_END")
   @js.native
   def EVENT_END: String = js.native
-  @scala.inline
-  def EVENT_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_END")(x.asInstanceOf[js.Any])
+  inline def EVENT_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_END")(x.asInstanceOf[js.Any])
 }

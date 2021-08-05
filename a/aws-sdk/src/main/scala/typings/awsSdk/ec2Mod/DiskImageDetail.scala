@@ -23,22 +23,17 @@ trait DiskImageDetail extends StObject {
 }
 object DiskImageDetail {
   
-  @scala.inline
-  def apply(Bytes: Long, Format: DiskImageFormat, ImportManifestUrl: String): DiskImageDetail = {
+  inline def apply(Bytes: Long, Format: DiskImageFormat, ImportManifestUrl: String): DiskImageDetail = {
     val __obj = js.Dynamic.literal(Bytes = Bytes.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], ImportManifestUrl = ImportManifestUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskImageDetail]
   }
   
-  @scala.inline
-  implicit class DiskImageDetailMutableBuilder[Self <: DiskImageDetail] (val x: Self) extends AnyVal {
+  extension [Self <: DiskImageDetail](x: Self) {
     
-    @scala.inline
-    def setBytes(value: Long): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: Long): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: DiskImageFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: DiskImageFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportManifestUrl(value: String): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
+    inline def setImportManifestUrl(value: String): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
   }
 }

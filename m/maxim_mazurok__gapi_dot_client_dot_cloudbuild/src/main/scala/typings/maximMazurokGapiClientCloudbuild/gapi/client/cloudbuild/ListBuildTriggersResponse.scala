@@ -14,28 +14,21 @@ trait ListBuildTriggersResponse extends StObject {
 }
 object ListBuildTriggersResponse {
   
-  @scala.inline
-  def apply(): ListBuildTriggersResponse = {
+  inline def apply(): ListBuildTriggersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBuildTriggersResponse]
   }
   
-  @scala.inline
-  implicit class ListBuildTriggersResponseMutableBuilder[Self <: ListBuildTriggersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListBuildTriggersResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTriggers(value: js.Array[BuildTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+    inline def setTriggers(value: js.Array[BuildTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
+    inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    @scala.inline
-    def setTriggersVarargs(value: BuildTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: BuildTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
   }
 }

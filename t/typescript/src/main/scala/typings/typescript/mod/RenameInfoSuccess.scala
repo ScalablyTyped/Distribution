@@ -29,8 +29,7 @@ trait RenameInfoSuccess
 }
 object RenameInfoSuccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: java.lang.String,
     fullDisplayName: java.lang.String,
     kind: ScriptElementKind,
@@ -41,31 +40,22 @@ object RenameInfoSuccess {
     __obj.asInstanceOf[RenameInfoSuccess]
   }
   
-  @scala.inline
-  implicit class RenameInfoSuccessMutableBuilder[Self <: RenameInfoSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: RenameInfoSuccess](x: Self) {
     
-    @scala.inline
-    def setCanRename(value: `true`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
+    inline def setCanRename(value: `true`): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: java.lang.String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: java.lang.String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileToRename(value: java.lang.String): Self = StObject.set(x, "fileToRename", value.asInstanceOf[js.Any])
+    inline def setFileToRename(value: java.lang.String): Self = StObject.set(x, "fileToRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileToRenameUndefined: Self = StObject.set(x, "fileToRename", js.undefined)
+    inline def setFileToRenameUndefined: Self = StObject.set(x, "fileToRename", js.undefined)
     
-    @scala.inline
-    def setFullDisplayName(value: java.lang.String): Self = StObject.set(x, "fullDisplayName", value.asInstanceOf[js.Any])
+    inline def setFullDisplayName(value: java.lang.String): Self = StObject.set(x, "fullDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
+    inline def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerSpan(value: TextSpan): Self = StObject.set(x, "triggerSpan", value.asInstanceOf[js.Any])
+    inline def setTriggerSpan(value: TextSpan): Self = StObject.set(x, "triggerSpan", value.asInstanceOf[js.Any])
   }
 }

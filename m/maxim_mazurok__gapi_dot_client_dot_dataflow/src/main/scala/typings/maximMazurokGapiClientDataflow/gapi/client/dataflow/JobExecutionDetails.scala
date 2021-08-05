@@ -14,28 +14,21 @@ trait JobExecutionDetails extends StObject {
 }
 object JobExecutionDetails {
   
-  @scala.inline
-  def apply(): JobExecutionDetails = {
+  inline def apply(): JobExecutionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobExecutionDetails]
   }
   
-  @scala.inline
-  implicit class JobExecutionDetailsMutableBuilder[Self <: JobExecutionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: JobExecutionDetails](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setStages(value: js.Array[StageSummary]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+    inline def setStages(value: js.Array[StageSummary]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
+    inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
-    @scala.inline
-    def setStagesVarargs(value: StageSummary*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: StageSummary*): Self = StObject.set(x, "stages", js.Array(value :_*))
   }
 }

@@ -12,8 +12,7 @@ object decadeBodyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](props: YearBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](props: YearBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-picker/es/panels/DecadePanel/DecadeBody", "DECADE_COL_COUNT")
   @js.native
@@ -33,8 +32,7 @@ object decadeBodyMod {
   }
   object YearBodyProps {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       generateConfig: GenerateConfig[DateType],
       onSelect: DateType => Unit,
       prefixCls: String,
@@ -44,26 +42,19 @@ object decadeBodyMod {
       __obj.asInstanceOf[YearBodyProps[DateType]]
     }
     
-    @scala.inline
-    implicit class YearBodyPropsMutableBuilder[Self <: YearBodyProps[?], DateType] (val x: Self & YearBodyProps[DateType]) extends AnyVal {
+    extension [Self <: YearBodyProps[?], DateType](x: Self & YearBodyProps[DateType]) {
       
-      @scala.inline
-      def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
+      inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
+      inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
       
-      @scala.inline
-      def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelect(value: DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: DateType => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewDate(value: DateType): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
+      inline def setViewDate(value: DateType): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
     }
   }
 }

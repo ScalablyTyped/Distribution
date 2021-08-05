@@ -11,19 +11,15 @@ trait RareBooleanData extends StObject {
 }
 object RareBooleanData {
   
-  @scala.inline
-  def apply(index: js.Array[integer]): RareBooleanData = {
+  inline def apply(index: js.Array[integer]): RareBooleanData = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[RareBooleanData]
   }
   
-  @scala.inline
-  implicit class RareBooleanDataMutableBuilder[Self <: RareBooleanData] (val x: Self) extends AnyVal {
+  extension [Self <: RareBooleanData](x: Self) {
     
-    @scala.inline
-    def setIndex(value: js.Array[integer]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: js.Array[integer]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexVarargs(value: integer*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: integer*): Self = StObject.set(x, "index", js.Array(value :_*))
   }
 }

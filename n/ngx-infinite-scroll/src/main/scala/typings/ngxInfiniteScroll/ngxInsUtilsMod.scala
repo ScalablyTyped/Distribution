@@ -12,23 +12,15 @@ object ngxInsUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findElement(selector: String, customRoot: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def findElement(selector: String, customRoot: ElementRef[js.Any], fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def findElement(selector: js.Any, customRoot: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def findElement(selector: js.Any, customRoot: ElementRef[js.Any], fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def findElement(selector: String, customRoot: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def findElement(selector: String, customRoot: ElementRef[js.Any], fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def findElement(selector: js.Any, customRoot: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def findElement(selector: js.Any, customRoot: ElementRef[js.Any], fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(selector.asInstanceOf[js.Any], customRoot.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hasWindowDefined(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWindowDefined")().asInstanceOf[Boolean]
+  inline def hasWindowDefined(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWindowDefined")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def inputPropChanged(prop: SimpleChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inputPropChanged")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def inputPropChanged(prop: SimpleChange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inputPropChanged")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def resolveContainerElement(selector: String, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContainerElement")(selector.asInstanceOf[js.Any], scrollWindow.asInstanceOf[js.Any], defaultElement.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def resolveContainerElement(selector: js.Any, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContainerElement")(selector.asInstanceOf[js.Any], scrollWindow.asInstanceOf[js.Any], defaultElement.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolveContainerElement(selector: String, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContainerElement")(selector.asInstanceOf[js.Any], scrollWindow.asInstanceOf[js.Any], defaultElement.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolveContainerElement(selector: js.Any, scrollWindow: js.Any, defaultElement: js.Any, fromRoot: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContainerElement")(selector.asInstanceOf[js.Any], scrollWindow.asInstanceOf[js.Any], defaultElement.asInstanceOf[js.Any], fromRoot.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

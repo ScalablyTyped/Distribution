@@ -12,20 +12,16 @@ trait Altitude extends StObject {
 }
 object Altitude {
   
-  @scala.inline
-  def apply(altitude: Boolean, `type`: String): Altitude = {
+  inline def apply(altitude: Boolean, `type`: String): Altitude = {
     val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Altitude]
   }
   
-  @scala.inline
-  implicit class AltitudeMutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
+  extension [Self <: Altitude](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: Boolean): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Boolean): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

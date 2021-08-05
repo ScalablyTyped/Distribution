@@ -18,22 +18,17 @@ trait InstanceProperties extends StObject {
 }
 object InstanceProperties {
   
-  @scala.inline
-  def apply(dataset: Record[String, String], id: String, is: String): InstanceProperties = {
+  inline def apply(dataset: Record[String, String], id: String, is: String): InstanceProperties = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceProperties]
   }
   
-  @scala.inline
-  implicit class InstancePropertiesMutableBuilder[Self <: InstanceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceProperties](x: Self) {
     
-    @scala.inline
-    def setDataset(value: Record[String, String]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: Record[String, String]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
   }
 }

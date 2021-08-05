@@ -13,19 +13,15 @@ trait DetachClassicLinkVpcResult extends StObject {
 }
 object DetachClassicLinkVpcResult {
   
-  @scala.inline
-  def apply(): DetachClassicLinkVpcResult = {
+  inline def apply(): DetachClassicLinkVpcResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetachClassicLinkVpcResult]
   }
   
-  @scala.inline
-  implicit class DetachClassicLinkVpcResultMutableBuilder[Self <: DetachClassicLinkVpcResult] (val x: Self) extends AnyVal {
+  extension [Self <: DetachClassicLinkVpcResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

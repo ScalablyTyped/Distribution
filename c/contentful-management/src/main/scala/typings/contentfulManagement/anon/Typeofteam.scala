@@ -17,8 +17,7 @@ trait Typeofteam extends StObject {
 }
 object Typeofteam {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapTeam: (AxiosInstance, TeamProps) => Team,
     wrapTeamCollection: (AxiosInstance, CollectionProp[TeamProps]) => Collection[Team, TeamProps]
   ): Typeofteam = {
@@ -26,13 +25,10 @@ object Typeofteam {
     __obj.asInstanceOf[Typeofteam]
   }
   
-  @scala.inline
-  implicit class TypeofteamMutableBuilder[Self <: Typeofteam] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofteam](x: Self) {
     
-    @scala.inline
-    def setWrapTeam(value: (AxiosInstance, TeamProps) => Team): Self = StObject.set(x, "wrapTeam", js.Any.fromFunction2(value))
+    inline def setWrapTeam(value: (AxiosInstance, TeamProps) => Team): Self = StObject.set(x, "wrapTeam", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapTeamCollection(value: (AxiosInstance, CollectionProp[TeamProps]) => Collection[Team, TeamProps]): Self = StObject.set(x, "wrapTeamCollection", js.Any.fromFunction2(value))
+    inline def setWrapTeamCollection(value: (AxiosInstance, CollectionProp[TeamProps]) => Collection[Team, TeamProps]): Self = StObject.set(x, "wrapTeamCollection", js.Any.fromFunction2(value))
   }
 }

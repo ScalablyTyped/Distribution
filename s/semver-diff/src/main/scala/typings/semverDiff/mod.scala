@@ -34,8 +34,7 @@ object mod {
   //=> undefined
   ```
   */
-  @scala.inline
-  def apply(versionA: String, versionB: String): js.UndefOr[Result] = (^.asInstanceOf[js.Dynamic].apply(versionA.asInstanceOf[js.Any], versionB.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Result]]
+  inline def apply(versionA: String, versionB: String): js.UndefOr[Result] = (^.asInstanceOf[js.Dynamic].apply(versionA.asInstanceOf[js.Any], versionB.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Result]]
   
   @JSImport("semver-diff", JSImport.Namespace)
   @js.native
@@ -54,28 +53,20 @@ object mod {
   trait Result extends StObject
   object Result {
     
-    @scala.inline
-    def build: typings.semverDiff.semverDiffStrings.build = "build".asInstanceOf[typings.semverDiff.semverDiffStrings.build]
+    inline def build: typings.semverDiff.semverDiffStrings.build = "build".asInstanceOf[typings.semverDiff.semverDiffStrings.build]
     
-    @scala.inline
-    def major: typings.semverDiff.semverDiffStrings.major = "major".asInstanceOf[typings.semverDiff.semverDiffStrings.major]
+    inline def major: typings.semverDiff.semverDiffStrings.major = "major".asInstanceOf[typings.semverDiff.semverDiffStrings.major]
     
-    @scala.inline
-    def minor: typings.semverDiff.semverDiffStrings.minor = "minor".asInstanceOf[typings.semverDiff.semverDiffStrings.minor]
+    inline def minor: typings.semverDiff.semverDiffStrings.minor = "minor".asInstanceOf[typings.semverDiff.semverDiffStrings.minor]
     
-    @scala.inline
-    def patch: typings.semverDiff.semverDiffStrings.patch = "patch".asInstanceOf[typings.semverDiff.semverDiffStrings.patch]
+    inline def patch: typings.semverDiff.semverDiffStrings.patch = "patch".asInstanceOf[typings.semverDiff.semverDiffStrings.patch]
     
-    @scala.inline
-    def premajor: typings.semverDiff.semverDiffStrings.premajor = "premajor".asInstanceOf[typings.semverDiff.semverDiffStrings.premajor]
+    inline def premajor: typings.semverDiff.semverDiffStrings.premajor = "premajor".asInstanceOf[typings.semverDiff.semverDiffStrings.premajor]
     
-    @scala.inline
-    def preminor: typings.semverDiff.semverDiffStrings.preminor = "preminor".asInstanceOf[typings.semverDiff.semverDiffStrings.preminor]
+    inline def preminor: typings.semverDiff.semverDiffStrings.preminor = "preminor".asInstanceOf[typings.semverDiff.semverDiffStrings.preminor]
     
-    @scala.inline
-    def prepatch: typings.semverDiff.semverDiffStrings.prepatch = "prepatch".asInstanceOf[typings.semverDiff.semverDiffStrings.prepatch]
+    inline def prepatch: typings.semverDiff.semverDiffStrings.prepatch = "prepatch".asInstanceOf[typings.semverDiff.semverDiffStrings.prepatch]
     
-    @scala.inline
-    def prerelease: typings.semverDiff.semverDiffStrings.prerelease = "prerelease".asInstanceOf[typings.semverDiff.semverDiffStrings.prerelease]
+    inline def prerelease: typings.semverDiff.semverDiffStrings.prerelease = "prerelease".asInstanceOf[typings.semverDiff.semverDiffStrings.prerelease]
   }
 }

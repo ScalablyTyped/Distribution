@@ -24,29 +24,22 @@ object tagCloudMod {
   }
   object ITagCloudProps {
     
-    @scala.inline
-    def apply(data: js.Array[Name], height: Double): ITagCloudProps = {
+    inline def apply(data: js.Array[Name], height: Double): ITagCloudProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITagCloudProps]
     }
     
-    @scala.inline
-    implicit class ITagCloudPropsMutableBuilder[Self <: ITagCloudProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITagCloudProps](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[Name]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Name]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Name*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Name*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

@@ -24,8 +24,7 @@ trait MomentObjectOutput extends StObject {
 }
 object MomentObjectOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: Double,
     hours: Double,
     milliseconds: Double,
@@ -38,28 +37,20 @@ object MomentObjectOutput {
     __obj.asInstanceOf[MomentObjectOutput]
   }
   
-  @scala.inline
-  implicit class MomentObjectOutputMutableBuilder[Self <: MomentObjectOutput] (val x: Self) extends AnyVal {
+  extension [Self <: MomentObjectOutput](x: Self) {
     
-    @scala.inline
-    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+    inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+    inline def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
   }
 }

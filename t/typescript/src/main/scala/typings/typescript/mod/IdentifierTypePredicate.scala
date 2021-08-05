@@ -21,8 +21,7 @@ trait IdentifierTypePredicate
 }
 object IdentifierTypePredicate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: typings.typescript.mod.TypePredicateKind.Identifier,
     parameterIndex: Double,
     parameterName: java.lang.String,
@@ -33,19 +32,14 @@ object IdentifierTypePredicate {
     __obj.asInstanceOf[IdentifierTypePredicate]
   }
   
-  @scala.inline
-  implicit class IdentifierTypePredicateMutableBuilder[Self <: IdentifierTypePredicate] (val x: Self) extends AnyVal {
+  extension [Self <: IdentifierTypePredicate](x: Self) {
     
-    @scala.inline
-    def setKind(value: typings.typescript.mod.TypePredicateKind.Identifier): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.typescript.mod.TypePredicateKind.Identifier): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterIndex(value: Double): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
+    inline def setParameterIndex(value: Double): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterName(value: java.lang.String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: java.lang.String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

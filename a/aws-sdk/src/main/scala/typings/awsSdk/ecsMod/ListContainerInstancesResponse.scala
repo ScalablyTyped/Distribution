@@ -18,28 +18,21 @@ trait ListContainerInstancesResponse extends StObject {
 }
 object ListContainerInstancesResponse {
   
-  @scala.inline
-  def apply(): ListContainerInstancesResponse = {
+  inline def apply(): ListContainerInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListContainerInstancesResponse]
   }
   
-  @scala.inline
-  implicit class ListContainerInstancesResponseMutableBuilder[Self <: ListContainerInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListContainerInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setContainerInstanceArns(value: StringList): Self = StObject.set(x, "containerInstanceArns", value.asInstanceOf[js.Any])
+    inline def setContainerInstanceArns(value: StringList): Self = StObject.set(x, "containerInstanceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstanceArnsUndefined: Self = StObject.set(x, "containerInstanceArns", js.undefined)
+    inline def setContainerInstanceArnsUndefined: Self = StObject.set(x, "containerInstanceArns", js.undefined)
     
-    @scala.inline
-    def setContainerInstanceArnsVarargs(value: String*): Self = StObject.set(x, "containerInstanceArns", js.Array(value :_*))
+    inline def setContainerInstanceArnsVarargs(value: String*): Self = StObject.set(x, "containerInstanceArns", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

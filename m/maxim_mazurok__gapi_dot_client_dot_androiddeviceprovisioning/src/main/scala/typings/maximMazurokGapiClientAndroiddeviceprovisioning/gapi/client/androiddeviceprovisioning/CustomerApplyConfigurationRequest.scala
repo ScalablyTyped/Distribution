@@ -14,25 +14,19 @@ trait CustomerApplyConfigurationRequest extends StObject {
 }
 object CustomerApplyConfigurationRequest {
   
-  @scala.inline
-  def apply(): CustomerApplyConfigurationRequest = {
+  inline def apply(): CustomerApplyConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerApplyConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class CustomerApplyConfigurationRequestMutableBuilder[Self <: CustomerApplyConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerApplyConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setDevice(value: DeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: DeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }
 }

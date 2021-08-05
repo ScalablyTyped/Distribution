@@ -32,8 +32,7 @@ trait XMultipleOperation
 }
 object XMultipleOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -43,10 +42,8 @@ object XMultipleOperation {
     __obj.asInstanceOf[XMultipleOperation]
   }
   
-  @scala.inline
-  implicit class XMultipleOperationMutableBuilder[Self <: XMultipleOperation] (val x: Self) extends AnyVal {
+  extension [Self <: XMultipleOperation](x: Self) {
     
-    @scala.inline
-    def setSetTableOperation(value: (CellRangeAddress, TableOperationMode, CellAddress, CellAddress) => Unit): Self = StObject.set(x, "setTableOperation", js.Any.fromFunction4(value))
+    inline def setSetTableOperation(value: (CellRangeAddress, TableOperationMode, CellAddress, CellAddress) => Unit): Self = StObject.set(x, "setTableOperation", js.Any.fromFunction4(value))
   }
 }

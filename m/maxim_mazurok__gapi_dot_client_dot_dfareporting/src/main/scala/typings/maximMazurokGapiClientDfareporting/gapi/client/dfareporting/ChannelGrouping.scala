@@ -20,40 +20,29 @@ trait ChannelGrouping extends StObject {
 }
 object ChannelGrouping {
   
-  @scala.inline
-  def apply(): ChannelGrouping = {
+  inline def apply(): ChannelGrouping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelGrouping]
   }
   
-  @scala.inline
-  implicit class ChannelGroupingMutableBuilder[Self <: ChannelGrouping] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelGrouping](x: Self) {
     
-    @scala.inline
-    def setFallbackName(value: String): Self = StObject.set(x, "fallbackName", value.asInstanceOf[js.Any])
+    inline def setFallbackName(value: String): Self = StObject.set(x, "fallbackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackNameUndefined: Self = StObject.set(x, "fallbackName", js.undefined)
+    inline def setFallbackNameUndefined: Self = StObject.set(x, "fallbackName", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRules(value: js.Array[ChannelGroupingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[ChannelGroupingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: ChannelGroupingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ChannelGroupingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

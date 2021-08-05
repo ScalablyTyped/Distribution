@@ -13,14 +13,12 @@ object libTypesMod {
   trait Point extends StObject
   object Point {
     
-    @scala.inline
-    def Point2D(x: Double, y: Double): typings.popmotion.libTypesMod.Point2D = {
+    inline def Point2D(x: Double, y: Double): typings.popmotion.libTypesMod.Point2D = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.popmotion.libTypesMod.Point2D]
     }
     
-    @scala.inline
-    def Point3D(x: Double, y: Double, z: Double): typings.popmotion.libTypesMod.Point3D = {
+    inline def Point3D(x: Double, y: Double, z: Double): typings.popmotion.libTypesMod.Point3D = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.popmotion.libTypesMod.Point3D]
     }
@@ -36,20 +34,16 @@ object libTypesMod {
   }
   object Point2D {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Point2D = {
+    inline def apply(x: Double, y: Double): Point2D = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point2D]
     }
     
-    @scala.inline
-    implicit class Point2DMutableBuilder[Self <: Point2D] (val x: Self) extends AnyVal {
+    extension [Self <: Point2D](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,17 +56,14 @@ object libTypesMod {
   }
   object Point3D {
     
-    @scala.inline
-    def apply(x: Double, y: Double, z: Double): Point3D = {
+    inline def apply(x: Double, y: Double, z: Double): Point3D = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point3D]
     }
     
-    @scala.inline
-    implicit class Point3DMutableBuilder[Self <: Point3D] (val x: Self) extends AnyVal {
+    extension [Self <: Point3D](x: Self) {
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
 }

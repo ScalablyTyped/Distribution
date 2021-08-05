@@ -54,44 +54,32 @@ object anon {
   }
   object ReadonlyGraylogConfig {
     
-    @scala.inline
-    def apply(servers: js.Array[Readonlyhoststringportnum]): ReadonlyGraylogConfig = {
+    inline def apply(servers: js.Array[Readonlyhoststringportnum]): ReadonlyGraylogConfig = {
       val __obj = js.Dynamic.literal(servers = servers.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyGraylogConfig]
     }
     
-    @scala.inline
-    implicit class ReadonlyGraylogConfigMutableBuilder[Self <: ReadonlyGraylogConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyGraylogConfig](x: Self) {
       
-      @scala.inline
-      def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setDeflate(value: GraylogDeflate): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
+      inline def setDeflate(value: GraylogDeflate): Self = StObject.set(x, "deflate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
+      inline def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
       
-      @scala.inline
-      def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+      inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+      inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setServers(value: js.Array[Readonlyhoststringportnum]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+      inline def setServers(value: js.Array[Readonlyhoststringportnum]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServersVarargs(value: Readonlyhoststringportnum*): Self = StObject.set(x, "servers", js.Array(value :_*))
+      inline def setServersVarargs(value: Readonlyhoststringportnum*): Self = StObject.set(x, "servers", js.Array(value :_*))
     }
   }
   
@@ -104,20 +92,16 @@ object anon {
   }
   object Readonlyhoststringportnum {
     
-    @scala.inline
-    def apply(host: String, port: Double): Readonlyhoststringportnum = {
+    inline def apply(host: String, port: Double): Readonlyhoststringportnum = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Readonlyhoststringportnum]
     }
     
-    @scala.inline
-    implicit class ReadonlyhoststringportnumMutableBuilder[Self <: Readonlyhoststringportnum] (val x: Self) extends AnyVal {
+    extension [Self <: Readonlyhoststringportnum](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

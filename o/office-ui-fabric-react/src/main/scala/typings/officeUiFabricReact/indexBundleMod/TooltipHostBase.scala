@@ -22,12 +22,10 @@ object TooltipHostBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "TooltipHostBase._currentVisibleTooltip")
   @js.native
   def _currentVisibleTooltip: js.Any = js.native
-  @scala.inline
-  def _currentVisibleTooltip_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
+  inline def _currentVisibleTooltip_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
   
   @JSImport("office-ui-fabric-react/lib/index.bundle", "TooltipHostBase.defaultProps")
   @js.native
   def defaultProps: Delay = js.native
-  @scala.inline
-  def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

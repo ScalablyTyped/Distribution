@@ -17,18 +17,12 @@ object mod {
     * @param {number|string} [size=1]
     * @returns {AsyncIterable<T[]>}
     */
-  @scala.inline
-  def apply[T](source: AsyncIterable[T]): AsyncIterable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.Array[T]]]
-  @scala.inline
-  def apply[T](source: AsyncIterable[T], size: String): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
-  @scala.inline
-  def apply[T](source: AsyncIterable[T], size: Double): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
-  @scala.inline
-  def apply[T](source: Iterable[T]): AsyncIterable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.Array[T]]]
-  @scala.inline
-  def apply[T](source: Iterable[T], size: String): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
-  @scala.inline
-  def apply[T](source: Iterable[T], size: Double): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  inline def apply[T](source: AsyncIterable[T]): AsyncIterable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.Array[T]]]
+  inline def apply[T](source: AsyncIterable[T], size: String): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  inline def apply[T](source: AsyncIterable[T], size: Double): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  inline def apply[T](source: Iterable[T]): AsyncIterable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.Array[T]]]
+  inline def apply[T](source: Iterable[T], size: String): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  inline def apply[T](source: Iterable[T], size: Double): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
   
   @JSImport("it-batch/dist", JSImport.Namespace)
   @js.native

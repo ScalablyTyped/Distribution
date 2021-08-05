@@ -12,16 +12,13 @@ trait GameSaveOperationResult extends StObject {
 }
 object GameSaveOperationResult {
   
-  @scala.inline
-  def apply(status: GameSaveErrorStatus): GameSaveOperationResult = {
+  inline def apply(status: GameSaveErrorStatus): GameSaveOperationResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSaveOperationResult]
   }
   
-  @scala.inline
-  implicit class GameSaveOperationResultMutableBuilder[Self <: GameSaveOperationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GameSaveOperationResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GameSaveErrorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GameSaveErrorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

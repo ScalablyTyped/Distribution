@@ -21,33 +21,23 @@ trait ThrottlePreset
      with ThrottleOptions
 object ThrottlePreset {
   
-  @scala.inline
-  def DSL: typings.webdriverio.webdriverioStrings.DSL = "DSL".asInstanceOf[typings.webdriverio.webdriverioStrings.DSL]
+  inline def DSL: typings.webdriverio.webdriverioStrings.DSL = "DSL".asInstanceOf[typings.webdriverio.webdriverioStrings.DSL]
   
-  @scala.inline
-  def GPRS: typings.webdriverio.webdriverioStrings.GPRS = "GPRS".asInstanceOf[typings.webdriverio.webdriverioStrings.GPRS]
+  inline def GPRS: typings.webdriverio.webdriverioStrings.GPRS = "GPRS".asInstanceOf[typings.webdriverio.webdriverioStrings.GPRS]
   
-  @scala.inline
-  def Good2G: typings.webdriverio.webdriverioStrings.Good2G = "Good2G".asInstanceOf[typings.webdriverio.webdriverioStrings.Good2G]
+  inline def Good2G: typings.webdriverio.webdriverioStrings.Good2G = "Good2G".asInstanceOf[typings.webdriverio.webdriverioStrings.Good2G]
   
-  @scala.inline
-  def Good3G: typings.webdriverio.webdriverioStrings.Good3G = "Good3G".asInstanceOf[typings.webdriverio.webdriverioStrings.Good3G]
+  inline def Good3G: typings.webdriverio.webdriverioStrings.Good3G = "Good3G".asInstanceOf[typings.webdriverio.webdriverioStrings.Good3G]
   
-  @scala.inline
-  def Regular2G: typings.webdriverio.webdriverioStrings.Regular2G = "Regular2G".asInstanceOf[typings.webdriverio.webdriverioStrings.Regular2G]
+  inline def Regular2G: typings.webdriverio.webdriverioStrings.Regular2G = "Regular2G".asInstanceOf[typings.webdriverio.webdriverioStrings.Regular2G]
   
-  @scala.inline
-  def Regular3G: typings.webdriverio.webdriverioStrings.Regular3G = "Regular3G".asInstanceOf[typings.webdriverio.webdriverioStrings.Regular3G]
+  inline def Regular3G: typings.webdriverio.webdriverioStrings.Regular3G = "Regular3G".asInstanceOf[typings.webdriverio.webdriverioStrings.Regular3G]
   
-  @scala.inline
-  def Regular4G: typings.webdriverio.webdriverioStrings.Regular4G = "Regular4G".asInstanceOf[typings.webdriverio.webdriverioStrings.Regular4G]
+  inline def Regular4G: typings.webdriverio.webdriverioStrings.Regular4G = "Regular4G".asInstanceOf[typings.webdriverio.webdriverioStrings.Regular4G]
   
-  @scala.inline
-  def WiFi: typings.webdriverio.webdriverioStrings.WiFi = "WiFi".asInstanceOf[typings.webdriverio.webdriverioStrings.WiFi]
+  inline def WiFi: typings.webdriverio.webdriverioStrings.WiFi = "WiFi".asInstanceOf[typings.webdriverio.webdriverioStrings.WiFi]
   
-  @scala.inline
-  def offline: typings.webdriverio.webdriverioStrings.offline = "offline".asInstanceOf[typings.webdriverio.webdriverioStrings.offline]
+  inline def offline: typings.webdriverio.webdriverioStrings.offline = "offline".asInstanceOf[typings.webdriverio.webdriverioStrings.offline]
   
-  @scala.inline
-  def online: typings.webdriverio.webdriverioStrings.online = "online".asInstanceOf[typings.webdriverio.webdriverioStrings.online]
+  inline def online: typings.webdriverio.webdriverioStrings.online = "online".asInstanceOf[typings.webdriverio.webdriverioStrings.online]
 }

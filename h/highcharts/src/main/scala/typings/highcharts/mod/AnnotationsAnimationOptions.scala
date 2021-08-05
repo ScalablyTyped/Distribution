@@ -15,19 +15,15 @@ trait AnnotationsAnimationOptions extends StObject {
 }
 object AnnotationsAnimationOptions {
   
-  @scala.inline
-  def apply(): AnnotationsAnimationOptions = {
+  inline def apply(): AnnotationsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsAnimationOptionsMutableBuilder[Self <: AnnotationsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

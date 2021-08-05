@@ -12,19 +12,15 @@ trait TableRequestRename extends StObject {
 }
 object TableRequestRename {
   
-  @scala.inline
-  def apply(limitName: String, pageName: String): TableRequestRename = {
+  inline def apply(limitName: String, pageName: String): TableRequestRename = {
     val __obj = js.Dynamic.literal(limitName = limitName.asInstanceOf[js.Any], pageName = pageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRequestRename]
   }
   
-  @scala.inline
-  implicit class TableRequestRenameMutableBuilder[Self <: TableRequestRename] (val x: Self) extends AnyVal {
+  extension [Self <: TableRequestRename](x: Self) {
     
-    @scala.inline
-    def setLimitName(value: String): Self = StObject.set(x, "limitName", value.asInstanceOf[js.Any])
+    inline def setLimitName(value: String): Self = StObject.set(x, "limitName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
+    inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
   }
 }

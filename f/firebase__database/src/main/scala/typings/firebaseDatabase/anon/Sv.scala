@@ -11,17 +11,14 @@ trait Sv extends StObject {
 }
 object Sv {
   
-  @scala.inline
-  def apply(Dotsv: String): Sv = {
+  inline def apply(Dotsv: String): Sv = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic(".sv")(Dotsv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sv]
   }
   
-  @scala.inline
-  implicit class SvMutableBuilder[Self <: Sv] (val x: Self) extends AnyVal {
+  extension [Self <: Sv](x: Self) {
     
-    @scala.inline
-    def setDotsv(value: String): Self = StObject.set(x, ".sv", value.asInstanceOf[js.Any])
+    inline def setDotsv(value: String): Self = StObject.set(x, ".sv", value.asInstanceOf[js.Any])
   }
 }

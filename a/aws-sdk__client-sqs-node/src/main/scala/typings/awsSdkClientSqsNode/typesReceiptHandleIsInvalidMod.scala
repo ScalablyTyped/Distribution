@@ -18,17 +18,14 @@ object typesReceiptHandleIsInvalidMod {
   }
   object ReceiptHandleIsInvalid {
     
-    @scala.inline
-    def apply(): ReceiptHandleIsInvalid = {
+    inline def apply(): ReceiptHandleIsInvalid = {
       val __obj = js.Dynamic.literal(name = "ReceiptHandleIsInvalid")
       __obj.asInstanceOf[ReceiptHandleIsInvalid]
     }
     
-    @scala.inline
-    implicit class ReceiptHandleIsInvalidMutableBuilder[Self <: ReceiptHandleIsInvalid] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptHandleIsInvalid](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ReceiptHandleIsInvalid): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ReceiptHandleIsInvalid): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

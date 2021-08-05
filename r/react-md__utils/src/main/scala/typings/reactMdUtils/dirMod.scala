@@ -11,13 +11,11 @@ object dirMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DEFAULT_DIR(): WritingDirection = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_DIR")().asInstanceOf[WritingDirection]
+  inline def DEFAULT_DIR(): WritingDirection = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_DIR")().asInstanceOf[WritingDirection]
   
   object Dir {
     
-    @scala.inline
-    def apply(hasChildrenDefaultDir: DirProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenDefaultDir.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(hasChildrenDefaultDir: DirProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenDefaultDir.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/utils/types/Dir", "Dir")
     @js.native
@@ -32,19 +30,16 @@ object dirMod {
       @JSImport("@react-md/utils/types/Dir", "Dir.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/utils/types/Dir", "Dir.propTypes.defaultDir")
       @js.native
       def defaultDir: js.Any = js.native
-      @scala.inline
-      def defaultDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDir")(x.asInstanceOf[js.Any])
+      inline def defaultDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDir")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def useDir(): WritingDirectionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useDir")().asInstanceOf[WritingDirectionContext]
+  inline def useDir(): WritingDirectionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useDir")().asInstanceOf[WritingDirectionContext]
   
   trait DirProps extends StObject {
     
@@ -63,26 +58,20 @@ object dirMod {
   }
   object DirProps {
     
-    @scala.inline
-    def apply(children: ReactElement): DirProps = {
+    inline def apply(children: ReactElement): DirProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirProps]
     }
     
-    @scala.inline
-    implicit class DirPropsMutableBuilder[Self <: DirProps] (val x: Self) extends AnyVal {
+    extension [Self <: DirProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDir(value: WritingDirection | js.Function0[WritingDirection]): Self = StObject.set(x, "defaultDir", value.asInstanceOf[js.Any])
+      inline def setDefaultDir(value: WritingDirection | js.Function0[WritingDirection]): Self = StObject.set(x, "defaultDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDirFunction0(value: () => WritingDirection): Self = StObject.set(x, "defaultDir", js.Any.fromFunction0(value))
+      inline def setDefaultDirFunction0(value: () => WritingDirection): Self = StObject.set(x, "defaultDir", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultDirUndefined: Self = StObject.set(x, "defaultDir", js.undefined)
+      inline def setDefaultDirUndefined: Self = StObject.set(x, "defaultDir", js.undefined)
     }
   }
   
@@ -93,11 +82,9 @@ object dirMod {
   trait WritingDirection extends StObject
   object WritingDirection {
     
-    @scala.inline
-    def ltr: typings.reactMdUtils.reactMdUtilsStrings.ltr = "ltr".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.ltr]
+    inline def ltr: typings.reactMdUtils.reactMdUtilsStrings.ltr = "ltr".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.ltr]
     
-    @scala.inline
-    def rtl: typings.reactMdUtils.reactMdUtilsStrings.rtl = "rtl".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.rtl]
+    inline def rtl: typings.reactMdUtils.reactMdUtilsStrings.rtl = "rtl".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.rtl]
   }
   
   trait WritingDirectionContext extends StObject {
@@ -114,20 +101,16 @@ object dirMod {
   }
   object WritingDirectionContext {
     
-    @scala.inline
-    def apply(dir: WritingDirection, toggleDir: () => Unit): WritingDirectionContext = {
+    inline def apply(dir: WritingDirection, toggleDir: () => Unit): WritingDirectionContext = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], toggleDir = js.Any.fromFunction0(toggleDir))
       __obj.asInstanceOf[WritingDirectionContext]
     }
     
-    @scala.inline
-    implicit class WritingDirectionContextMutableBuilder[Self <: WritingDirectionContext] (val x: Self) extends AnyVal {
+    extension [Self <: WritingDirectionContext](x: Self) {
       
-      @scala.inline
-      def setDir(value: WritingDirection): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: WritingDirection): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleDir(value: () => Unit): Self = StObject.set(x, "toggleDir", js.Any.fromFunction0(value))
+      inline def setToggleDir(value: () => Unit): Self = StObject.set(x, "toggleDir", js.Any.fromFunction0(value))
     }
   }
 }

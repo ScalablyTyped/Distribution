@@ -14,22 +14,17 @@ trait FlatMenuKeys extends StObject {
 }
 object FlatMenuKeys {
   
-  @scala.inline
-  def apply(flatMenuKeys: js.Array[String], setFlatMenuKeys: SetStateAction[js.Array[String]] => Unit): FlatMenuKeys = {
+  inline def apply(flatMenuKeys: js.Array[String], setFlatMenuKeys: SetStateAction[js.Array[String]] => Unit): FlatMenuKeys = {
     val __obj = js.Dynamic.literal(flatMenuKeys = flatMenuKeys.asInstanceOf[js.Any], setFlatMenuKeys = js.Any.fromFunction1(setFlatMenuKeys))
     __obj.asInstanceOf[FlatMenuKeys]
   }
   
-  @scala.inline
-  implicit class FlatMenuKeysMutableBuilder[Self <: FlatMenuKeys] (val x: Self) extends AnyVal {
+  extension [Self <: FlatMenuKeys](x: Self) {
     
-    @scala.inline
-    def setFlatMenuKeys(value: js.Array[String]): Self = StObject.set(x, "flatMenuKeys", value.asInstanceOf[js.Any])
+    inline def setFlatMenuKeys(value: js.Array[String]): Self = StObject.set(x, "flatMenuKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatMenuKeysVarargs(value: String*): Self = StObject.set(x, "flatMenuKeys", js.Array(value :_*))
+    inline def setFlatMenuKeysVarargs(value: String*): Self = StObject.set(x, "flatMenuKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setSetFlatMenuKeys(value: SetStateAction[js.Array[String]] => Unit): Self = StObject.set(x, "setFlatMenuKeys", js.Any.fromFunction1(value))
+    inline def setSetFlatMenuKeys(value: SetStateAction[js.Array[String]] => Unit): Self = StObject.set(x, "setFlatMenuKeys", js.Any.fromFunction1(value))
   }
 }

@@ -28,34 +28,25 @@ trait SchemaGooglePrivacyDlpV2FindingLimits extends StObject {
 }
 object SchemaGooglePrivacyDlpV2FindingLimits {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2FindingLimits = {
+  inline def apply(): SchemaGooglePrivacyDlpV2FindingLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2FindingLimits]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2FindingLimitsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2FindingLimits] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2FindingLimits](x: Self) {
     
-    @scala.inline
-    def setMaxFindingsPerInfoType(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeLimit]): Self = StObject.set(x, "maxFindingsPerInfoType", value.asInstanceOf[js.Any])
+    inline def setMaxFindingsPerInfoType(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeLimit]): Self = StObject.set(x, "maxFindingsPerInfoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFindingsPerInfoTypeUndefined: Self = StObject.set(x, "maxFindingsPerInfoType", js.undefined)
+    inline def setMaxFindingsPerInfoTypeUndefined: Self = StObject.set(x, "maxFindingsPerInfoType", js.undefined)
     
-    @scala.inline
-    def setMaxFindingsPerInfoTypeVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeLimit*): Self = StObject.set(x, "maxFindingsPerInfoType", js.Array(value :_*))
+    inline def setMaxFindingsPerInfoTypeVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeLimit*): Self = StObject.set(x, "maxFindingsPerInfoType", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxFindingsPerItem(value: Double): Self = StObject.set(x, "maxFindingsPerItem", value.asInstanceOf[js.Any])
+    inline def setMaxFindingsPerItem(value: Double): Self = StObject.set(x, "maxFindingsPerItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFindingsPerItemUndefined: Self = StObject.set(x, "maxFindingsPerItem", js.undefined)
+    inline def setMaxFindingsPerItemUndefined: Self = StObject.set(x, "maxFindingsPerItem", js.undefined)
     
-    @scala.inline
-    def setMaxFindingsPerRequest(value: Double): Self = StObject.set(x, "maxFindingsPerRequest", value.asInstanceOf[js.Any])
+    inline def setMaxFindingsPerRequest(value: Double): Self = StObject.set(x, "maxFindingsPerRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFindingsPerRequestUndefined: Self = StObject.set(x, "maxFindingsPerRequest", js.undefined)
+    inline def setMaxFindingsPerRequestUndefined: Self = StObject.set(x, "maxFindingsPerRequest", js.undefined)
   }
 }

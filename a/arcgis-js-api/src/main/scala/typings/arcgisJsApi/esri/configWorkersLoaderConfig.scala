@@ -47,8 +47,7 @@ trait configWorkersLoaderConfig
 }
 object configWorkersLoaderConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -57,40 +56,28 @@ object configWorkersLoaderConfig {
     __obj.asInstanceOf[configWorkersLoaderConfig]
   }
   
-  @scala.inline
-  implicit class configWorkersLoaderConfigMutableBuilder[Self <: configWorkersLoaderConfig] (val x: Self) extends AnyVal {
+  extension [Self <: configWorkersLoaderConfig](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setHas(value: js.Any): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
+    inline def setHas(value: js.Any): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasUndefined: Self = StObject.set(x, "has", js.undefined)
+    inline def setHasUndefined: Self = StObject.set(x, "has", js.undefined)
     
-    @scala.inline
-    def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setPackages(value: js.Array[js.Any]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    inline def setPackages(value: js.Array[js.Any]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    @scala.inline
-    def setPackagesVarargs(value: js.Any*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: js.Any*): Self = StObject.set(x, "packages", js.Array(value :_*))
     
-    @scala.inline
-    def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
   }
 }

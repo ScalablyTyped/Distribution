@@ -21,19 +21,15 @@ trait Lifecycle extends StObject {
 }
 object Lifecycle {
   
-  @scala.inline
-  def apply(postStart: Handler, preStop: Handler): Lifecycle = {
+  inline def apply(postStart: Handler, preStop: Handler): Lifecycle = {
     val __obj = js.Dynamic.literal(postStart = postStart.asInstanceOf[js.Any], preStop = preStop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lifecycle]
   }
   
-  @scala.inline
-  implicit class LifecycleMutableBuilder[Self <: Lifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: Lifecycle](x: Self) {
     
-    @scala.inline
-    def setPostStart(value: Handler): Self = StObject.set(x, "postStart", value.asInstanceOf[js.Any])
+    inline def setPostStart(value: Handler): Self = StObject.set(x, "postStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreStop(value: Handler): Self = StObject.set(x, "preStop", value.asInstanceOf[js.Any])
+    inline def setPreStop(value: Handler): Self = StObject.set(x, "preStop", value.asInstanceOf[js.Any])
   }
 }

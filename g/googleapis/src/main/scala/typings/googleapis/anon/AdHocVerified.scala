@@ -10,19 +10,15 @@ trait AdHocVerified extends StObject {
 }
 object AdHocVerified {
   
-  @scala.inline
-  def apply(): AdHocVerified = {
+  inline def apply(): AdHocVerified = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdHocVerified]
   }
   
-  @scala.inline
-  implicit class AdHocVerifiedMutableBuilder[Self <: AdHocVerified] (val x: Self) extends AnyVal {
+  extension [Self <: AdHocVerified](x: Self) {
     
-    @scala.inline
-    def setAdHocVerified(value: String): Self = StObject.set(x, "adHocVerified", value.asInstanceOf[js.Any])
+    inline def setAdHocVerified(value: String): Self = StObject.set(x, "adHocVerified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdHocVerifiedUndefined: Self = StObject.set(x, "adHocVerified", js.undefined)
+    inline def setAdHocVerifiedUndefined: Self = StObject.set(x, "adHocVerified", js.undefined)
   }
 }

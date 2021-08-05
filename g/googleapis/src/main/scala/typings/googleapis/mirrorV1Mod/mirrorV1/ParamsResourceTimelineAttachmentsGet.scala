@@ -29,31 +29,23 @@ trait ParamsResourceTimelineAttachmentsGet
 }
 object ParamsResourceTimelineAttachmentsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceTimelineAttachmentsGet = {
+  inline def apply(): ParamsResourceTimelineAttachmentsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTimelineAttachmentsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTimelineAttachmentsGetMutableBuilder[Self <: ParamsResourceTimelineAttachmentsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTimelineAttachmentsGet](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
   }
 }

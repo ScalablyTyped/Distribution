@@ -30,29 +30,22 @@ object typesCreateGrantOutputMod {
   }
   object CreateGrantOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateGrantOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateGrantOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateGrantOutput]
     }
     
-    @scala.inline
-    implicit class CreateGrantOutputMutableBuilder[Self <: CreateGrantOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateGrantOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantId(value: String): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
+      inline def setGrantId(value: String): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
+      inline def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
       
-      @scala.inline
-      def setGrantToken(value: String): Self = StObject.set(x, "GrantToken", value.asInstanceOf[js.Any])
+      inline def setGrantToken(value: String): Self = StObject.set(x, "GrantToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantTokenUndefined: Self = StObject.set(x, "GrantToken", js.undefined)
+      inline def setGrantTokenUndefined: Self = StObject.set(x, "GrantToken", js.undefined)
     }
   }
 }

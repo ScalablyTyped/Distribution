@@ -23,8 +23,7 @@ object calendarPanelDriverMod {
   }
   object CalendarPanelDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calendarDriver: () => CalendarDriver,
       exists: () => Boolean,
       findByDataHook: String => Boolean,
@@ -35,20 +34,15 @@ object calendarPanelDriverMod {
       __obj.asInstanceOf[CalendarPanelDriver]
     }
     
-    @scala.inline
-    implicit class CalendarPanelDriverMutableBuilder[Self <: CalendarPanelDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarPanelDriver](x: Self) {
       
-      @scala.inline
-      def setCalendarDriver(value: () => CalendarDriver): Self = StObject.set(x, "calendarDriver", js.Any.fromFunction0(value))
+      inline def setCalendarDriver(value: () => CalendarDriver): Self = StObject.set(x, "calendarDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindByDataHook(value: String => Boolean): Self = StObject.set(x, "findByDataHook", js.Any.fromFunction1(value))
+      inline def setFindByDataHook(value: String => Boolean): Self = StObject.set(x, "findByDataHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDropdownExists(value: () => Boolean): Self = StObject.set(x, "isDropdownExists", js.Any.fromFunction0(value))
+      inline def setIsDropdownExists(value: () => Boolean): Self = StObject.set(x, "isDropdownExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPresetsDropdownLayoutDriver(value: () => DropdownLayoutDriver): Self = StObject.set(x, "presetsDropdownLayoutDriver", js.Any.fromFunction0(value))
+      inline def setPresetsDropdownLayoutDriver(value: () => DropdownLayoutDriver): Self = StObject.set(x, "presetsDropdownLayoutDriver", js.Any.fromFunction0(value))
     }
   }
 }

@@ -60,65 +60,46 @@ object ScCommunicator {
   }
   object Environment {
     
-    @scala.inline
-    def apply(DOMAIN: String, NAME: String, URL: String): Environment = {
+    inline def apply(DOMAIN: String, NAME: String, URL: String): Environment = {
       val __obj = js.Dynamic.literal(DOMAIN = DOMAIN.asInstanceOf[js.Any], NAME = NAME.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
       __obj.asInstanceOf[Environment]
     }
     
-    @scala.inline
-    implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+    extension [Self <: Environment](x: Self) {
       
-      @scala.inline
-      def setDOMAIN(value: String): Self = StObject.set(x, "DOMAIN", value.asInstanceOf[js.Any])
+      inline def setDOMAIN(value: String): Self = StObject.set(x, "DOMAIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGOODDATA_SERVICE(value: String): Self = StObject.set(x, "GOODDATA_SERVICE", value.asInstanceOf[js.Any])
+      inline def setGOODDATA_SERVICE(value: String): Self = StObject.set(x, "GOODDATA_SERVICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGOODDATA_SERVICEUndefined: Self = StObject.set(x, "GOODDATA_SERVICE", js.undefined)
+      inline def setGOODDATA_SERVICEUndefined: Self = StObject.set(x, "GOODDATA_SERVICE", js.undefined)
       
-      @scala.inline
-      def setMERCHANT_SERVICE(value: String): Self = StObject.set(x, "MERCHANT_SERVICE", value.asInstanceOf[js.Any])
+      inline def setMERCHANT_SERVICE(value: String): Self = StObject.set(x, "MERCHANT_SERVICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMERCHANT_SERVICEUndefined: Self = StObject.set(x, "MERCHANT_SERVICE", js.undefined)
+      inline def setMERCHANT_SERVICEUndefined: Self = StObject.set(x, "MERCHANT_SERVICE", js.undefined)
       
-      @scala.inline
-      def setMODULE_SERVICE(value: String): Self = StObject.set(x, "MODULE_SERVICE", value.asInstanceOf[js.Any])
+      inline def setMODULE_SERVICE(value: String): Self = StObject.set(x, "MODULE_SERVICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMODULE_SERVICEUndefined: Self = StObject.set(x, "MODULE_SERVICE", js.undefined)
+      inline def setMODULE_SERVICEUndefined: Self = StObject.set(x, "MODULE_SERVICE", js.undefined)
       
-      @scala.inline
-      def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
+      inline def setNAME(value: String): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPORT(value: String): Self = StObject.set(x, "PORT", value.asInstanceOf[js.Any])
+      inline def setPORT(value: String): Self = StObject.set(x, "PORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPORTUndefined: Self = StObject.set(x, "PORT", js.undefined)
+      inline def setPORTUndefined: Self = StObject.set(x, "PORT", js.undefined)
       
-      @scala.inline
-      def setTOKEN_SERVICE(value: String): Self = StObject.set(x, "TOKEN_SERVICE", value.asInstanceOf[js.Any])
+      inline def setTOKEN_SERVICE(value: String): Self = StObject.set(x, "TOKEN_SERVICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOKEN_SERVICEUndefined: Self = StObject.set(x, "TOKEN_SERVICE", js.undefined)
+      inline def setTOKEN_SERVICEUndefined: Self = StObject.set(x, "TOKEN_SERVICE", js.undefined)
       
-      @scala.inline
-      def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_SERVICE(value: String): Self = StObject.set(x, "USER_SERVICE", value.asInstanceOf[js.Any])
+      inline def setUSER_SERVICE(value: String): Self = StObject.set(x, "USER_SERVICE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_SERVICEUndefined: Self = StObject.set(x, "USER_SERVICE", js.undefined)
+      inline def setUSER_SERVICEUndefined: Self = StObject.set(x, "USER_SERVICE", js.undefined)
       
-      @scala.inline
-      def setUSER_SERVICE_NEW(value: String): Self = StObject.set(x, "USER_SERVICE_NEW", value.asInstanceOf[js.Any])
+      inline def setUSER_SERVICE_NEW(value: String): Self = StObject.set(x, "USER_SERVICE_NEW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER_SERVICE_NEWUndefined: Self = StObject.set(x, "USER_SERVICE_NEW", js.undefined)
+      inline def setUSER_SERVICE_NEWUndefined: Self = StObject.set(x, "USER_SERVICE_NEW", js.undefined)
     }
   }
   
@@ -156,8 +137,7 @@ object ScCommunicator {
   }
   object Environments {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEVELOPMENT: Environment,
       INTEGRATION: Environment,
       LOCAL: Environment,
@@ -169,26 +149,19 @@ object ScCommunicator {
       __obj.asInstanceOf[Environments]
     }
     
-    @scala.inline
-    implicit class EnvironmentsMutableBuilder[Self <: Environments] (val x: Self) extends AnyVal {
+    extension [Self <: Environments](x: Self) {
       
-      @scala.inline
-      def setDEVELOPMENT(value: Environment): Self = StObject.set(x, "DEVELOPMENT", value.asInstanceOf[js.Any])
+      inline def setDEVELOPMENT(value: Environment): Self = StObject.set(x, "DEVELOPMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTEGRATION(value: Environment): Self = StObject.set(x, "INTEGRATION", value.asInstanceOf[js.Any])
+      inline def setINTEGRATION(value: Environment): Self = StObject.set(x, "INTEGRATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCAL(value: Environment): Self = StObject.set(x, "LOCAL", value.asInstanceOf[js.Any])
+      inline def setLOCAL(value: Environment): Self = StObject.set(x, "LOCAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRODUCTION(value: Environment): Self = StObject.set(x, "PRODUCTION", value.asInstanceOf[js.Any])
+      inline def setPRODUCTION(value: Environment): Self = StObject.set(x, "PRODUCTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTAGE(value: Environment): Self = StObject.set(x, "STAGE", value.asInstanceOf[js.Any])
+      inline def setSTAGE(value: Environment): Self = StObject.set(x, "STAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTESTING(value: Environment): Self = StObject.set(x, "TESTING", value.asInstanceOf[js.Any])
+      inline def setTESTING(value: Environment): Self = StObject.set(x, "TESTING", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,8 +202,7 @@ object ScCommunicator {
   }
   object ScEnvironmentsProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $get: () => js.Any,
       getCurrentEnvironment: () => Environment,
       getSpecificEnvironment: String => Environment,
@@ -240,20 +212,15 @@ object ScCommunicator {
       __obj.asInstanceOf[ScEnvironmentsProvider]
     }
     
-    @scala.inline
-    implicit class ScEnvironmentsProviderMutableBuilder[Self <: ScEnvironmentsProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ScEnvironmentsProvider](x: Self) {
       
-      @scala.inline
-      def set$get(value: () => js.Any): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
+      inline def set$get(value: () => js.Any): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentEnvironment(value: () => Environment): Self = StObject.set(x, "getCurrentEnvironment", js.Any.fromFunction0(value))
+      inline def setGetCurrentEnvironment(value: () => Environment): Self = StObject.set(x, "getCurrentEnvironment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSpecificEnvironment(value: String => Environment): Self = StObject.set(x, "getSpecificEnvironment", js.Any.fromFunction1(value))
+      inline def setGetSpecificEnvironment(value: String => Environment): Self = StObject.set(x, "getSpecificEnvironment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCurrentEnvironment(value: js.Any => Environment): Self = StObject.set(x, "setCurrentEnvironment", js.Any.fromFunction1(value))
+      inline def setSetCurrentEnvironment(value: js.Any => Environment): Self = StObject.set(x, "setCurrentEnvironment", js.Any.fromFunction1(value))
     }
   }
 }

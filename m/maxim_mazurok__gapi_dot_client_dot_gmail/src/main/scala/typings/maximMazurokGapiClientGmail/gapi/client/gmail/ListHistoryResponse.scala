@@ -17,34 +17,25 @@ trait ListHistoryResponse extends StObject {
 }
 object ListHistoryResponse {
   
-  @scala.inline
-  def apply(): ListHistoryResponse = {
+  inline def apply(): ListHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHistoryResponse]
   }
   
-  @scala.inline
-  implicit class ListHistoryResponseMutableBuilder[Self <: ListHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setHistory(value: js.Array[History]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[History]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+    inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+    inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

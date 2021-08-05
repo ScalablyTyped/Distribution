@@ -27,9 +27,9 @@ object svgMod {
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
     def this(element: SVGElement, className: Unit, addTitleElement: Boolean) = this()
     
-    var addTitleElement: js.Any = js.native
+    /* private */ var addTitleElement: js.Any = js.native
     
-    var className: js.Any = js.native
+    /* private */ var className: js.Any = js.native
     
     /* CompleteClass */
     override def createPen(text: String, transform: ITransform): IPen = js.native
@@ -48,7 +48,7 @@ object svgMod {
     
     /* private */ def createSvgLinePen(textBlockGroup: js.Any): js.Any = js.native
     
-    var element: js.Any = js.native
+    /* private */ var element: js.Any = js.native
     
     /* private */ def getTextElements(element: js.Any): js.Any = js.native
     
@@ -64,8 +64,7 @@ object svgMod {
     @JSImport("typesettable/build/src/contexts/svg", "SvgContext.AnchorMap")
     @js.native
     def AnchorMap: js.Any = js.native
-    @scala.inline
-    def AnchorMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
+    inline def AnchorMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typesettable/build/src/contexts/svg", "SvgUtils")
@@ -81,8 +80,7 @@ object svgMod {
     @JSImport("typesettable/build/src/contexts/svg", "SvgUtils.SVG_NS")
     @js.native
     def SVG_NS: String = js.native
-    @scala.inline
-    def SVG_NS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SVG_NS")(x.asInstanceOf[js.Any])
+    inline def SVG_NS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SVG_NS")(x.asInstanceOf[js.Any])
     
     /**
       * Appends an SVG element with the specified tag name to the provided element.
@@ -90,20 +88,17 @@ object svgMod {
       *
       * Returns the new element.
       */
-    @scala.inline
-    def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
-    @scala.inline
-    def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
     
     /**
       * Returns the width/height of svg element's bounding box
       */
-    @scala.inline
-    def getDimensions(element: SVGGraphicsElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
+    inline def getDimensions(element: SVGGraphicsElement): IDimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[IDimensions]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -114,13 +109,10 @@ object svgMod {
   trait IAnchor extends StObject
   object IAnchor {
     
-    @scala.inline
-    def end: typings.typesettable.typesettableStrings.end = "end".asInstanceOf[typings.typesettable.typesettableStrings.end]
+    inline def end: typings.typesettable.typesettableStrings.end = "end".asInstanceOf[typings.typesettable.typesettableStrings.end]
     
-    @scala.inline
-    def middle: typings.typesettable.typesettableStrings.middle = "middle".asInstanceOf[typings.typesettable.typesettableStrings.middle]
+    inline def middle: typings.typesettable.typesettableStrings.middle = "middle".asInstanceOf[typings.typesettable.typesettableStrings.middle]
     
-    @scala.inline
-    def start: typings.typesettable.typesettableStrings.start = "start".asInstanceOf[typings.typesettable.typesettableStrings.start]
+    inline def start: typings.typesettable.typesettableStrings.start = "start".asInstanceOf[typings.typesettable.typesettableStrings.start]
   }
 }

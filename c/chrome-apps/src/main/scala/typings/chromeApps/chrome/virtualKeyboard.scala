@@ -47,44 +47,32 @@ object virtualKeyboard {
   }
   object FeatureRestrictions {
     
-    @scala.inline
-    def apply(): FeatureRestrictions = {
+    inline def apply(): FeatureRestrictions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeatureRestrictions]
     }
     
-    @scala.inline
-    implicit class FeatureRestrictionsMutableBuilder[Self <: FeatureRestrictions] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureRestrictions](x: Self) {
       
-      @scala.inline
-      def setAutoCompleteEnabled(value: Boolean): Self = StObject.set(x, "autoCompleteEnabled", value.asInstanceOf[js.Any])
+      inline def setAutoCompleteEnabled(value: Boolean): Self = StObject.set(x, "autoCompleteEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCompleteEnabledUndefined: Self = StObject.set(x, "autoCompleteEnabled", js.undefined)
+      inline def setAutoCompleteEnabledUndefined: Self = StObject.set(x, "autoCompleteEnabled", js.undefined)
       
-      @scala.inline
-      def setAutoCorrectEnabled(value: Boolean): Self = StObject.set(x, "autoCorrectEnabled", value.asInstanceOf[js.Any])
+      inline def setAutoCorrectEnabled(value: Boolean): Self = StObject.set(x, "autoCorrectEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCorrectEnabledUndefined: Self = StObject.set(x, "autoCorrectEnabled", js.undefined)
+      inline def setAutoCorrectEnabledUndefined: Self = StObject.set(x, "autoCorrectEnabled", js.undefined)
       
-      @scala.inline
-      def setHandwritingEnabled(value: Boolean): Self = StObject.set(x, "handwritingEnabled", value.asInstanceOf[js.Any])
+      inline def setHandwritingEnabled(value: Boolean): Self = StObject.set(x, "handwritingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandwritingEnabledUndefined: Self = StObject.set(x, "handwritingEnabled", js.undefined)
+      inline def setHandwritingEnabledUndefined: Self = StObject.set(x, "handwritingEnabled", js.undefined)
       
-      @scala.inline
-      def setSpellCheckEnabled(value: Boolean): Self = StObject.set(x, "spellCheckEnabled", value.asInstanceOf[js.Any])
+      inline def setSpellCheckEnabled(value: Boolean): Self = StObject.set(x, "spellCheckEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpellCheckEnabledUndefined: Self = StObject.set(x, "spellCheckEnabled", js.undefined)
+      inline def setSpellCheckEnabledUndefined: Self = StObject.set(x, "spellCheckEnabled", js.undefined)
       
-      @scala.inline
-      def setVoiceInputEnabled(value: Boolean): Self = StObject.set(x, "voiceInputEnabled", value.asInstanceOf[js.Any])
+      inline def setVoiceInputEnabled(value: Boolean): Self = StObject.set(x, "voiceInputEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceInputEnabledUndefined: Self = StObject.set(x, "voiceInputEnabled", js.undefined)
+      inline def setVoiceInputEnabledUndefined: Self = StObject.set(x, "voiceInputEnabled", js.undefined)
     }
   }
 }

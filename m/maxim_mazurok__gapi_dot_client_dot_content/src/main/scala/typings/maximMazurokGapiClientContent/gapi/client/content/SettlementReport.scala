@@ -32,64 +32,45 @@ trait SettlementReport extends StObject {
 }
 object SettlementReport {
   
-  @scala.inline
-  def apply(): SettlementReport = {
+  inline def apply(): SettlementReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettlementReport]
   }
   
-  @scala.inline
-  implicit class SettlementReportMutableBuilder[Self <: SettlementReport] (val x: Self) extends AnyVal {
+  extension [Self <: SettlementReport](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPreviousBalance(value: Price): Self = StObject.set(x, "previousBalance", value.asInstanceOf[js.Any])
+    inline def setPreviousBalance(value: Price): Self = StObject.set(x, "previousBalance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousBalanceUndefined: Self = StObject.set(x, "previousBalance", js.undefined)
+    inline def setPreviousBalanceUndefined: Self = StObject.set(x, "previousBalance", js.undefined)
     
-    @scala.inline
-    def setSettlementId(value: String): Self = StObject.set(x, "settlementId", value.asInstanceOf[js.Any])
+    inline def setSettlementId(value: String): Self = StObject.set(x, "settlementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettlementIdUndefined: Self = StObject.set(x, "settlementId", js.undefined)
+    inline def setSettlementIdUndefined: Self = StObject.set(x, "settlementId", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setTransferAmount(value: Price): Self = StObject.set(x, "transferAmount", value.asInstanceOf[js.Any])
+    inline def setTransferAmount(value: Price): Self = StObject.set(x, "transferAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferAmountUndefined: Self = StObject.set(x, "transferAmount", js.undefined)
+    inline def setTransferAmountUndefined: Self = StObject.set(x, "transferAmount", js.undefined)
     
-    @scala.inline
-    def setTransferDate(value: String): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
+    inline def setTransferDate(value: String): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
+    inline def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
     
-    @scala.inline
-    def setTransferIds(value: js.Array[String]): Self = StObject.set(x, "transferIds", value.asInstanceOf[js.Any])
+    inline def setTransferIds(value: js.Array[String]): Self = StObject.set(x, "transferIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferIdsUndefined: Self = StObject.set(x, "transferIds", js.undefined)
+    inline def setTransferIdsUndefined: Self = StObject.set(x, "transferIds", js.undefined)
     
-    @scala.inline
-    def setTransferIdsVarargs(value: String*): Self = StObject.set(x, "transferIds", js.Array(value :_*))
+    inline def setTransferIdsVarargs(value: String*): Self = StObject.set(x, "transferIds", js.Array(value :_*))
   }
 }

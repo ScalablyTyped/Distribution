@@ -40,50 +40,37 @@ trait Hl7V2Store extends StObject {
 }
 object Hl7V2Store {
   
-  @scala.inline
-  def apply(): Hl7V2Store = {
+  inline def apply(): Hl7V2Store = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hl7V2Store]
   }
   
-  @scala.inline
-  implicit class Hl7V2StoreMutableBuilder[Self <: Hl7V2Store] (val x: Self) extends AnyVal {
+  extension [Self <: Hl7V2Store](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotificationConfigs(value: js.Array[Hl7V2NotificationConfig]): Self = StObject.set(x, "notificationConfigs", value.asInstanceOf[js.Any])
+    inline def setNotificationConfigs(value: js.Array[Hl7V2NotificationConfig]): Self = StObject.set(x, "notificationConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigsUndefined: Self = StObject.set(x, "notificationConfigs", js.undefined)
+    inline def setNotificationConfigsUndefined: Self = StObject.set(x, "notificationConfigs", js.undefined)
     
-    @scala.inline
-    def setNotificationConfigsVarargs(value: Hl7V2NotificationConfig*): Self = StObject.set(x, "notificationConfigs", js.Array(value :_*))
+    inline def setNotificationConfigsVarargs(value: Hl7V2NotificationConfig*): Self = StObject.set(x, "notificationConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setParserConfig(value: ParserConfig): Self = StObject.set(x, "parserConfig", value.asInstanceOf[js.Any])
+    inline def setParserConfig(value: ParserConfig): Self = StObject.set(x, "parserConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParserConfigUndefined: Self = StObject.set(x, "parserConfig", js.undefined)
+    inline def setParserConfigUndefined: Self = StObject.set(x, "parserConfig", js.undefined)
     
-    @scala.inline
-    def setRejectDuplicateMessage(value: Boolean): Self = StObject.set(x, "rejectDuplicateMessage", value.asInstanceOf[js.Any])
+    inline def setRejectDuplicateMessage(value: Boolean): Self = StObject.set(x, "rejectDuplicateMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectDuplicateMessageUndefined: Self = StObject.set(x, "rejectDuplicateMessage", js.undefined)
+    inline def setRejectDuplicateMessageUndefined: Self = StObject.set(x, "rejectDuplicateMessage", js.undefined)
   }
 }

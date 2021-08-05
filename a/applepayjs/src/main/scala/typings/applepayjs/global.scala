@@ -267,8 +267,7 @@ object global {
       * @returns true if the device supports making payments with Apple Pay; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def canMakePayments(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canMakePayments")().asInstanceOf[Boolean]
+    inline def canMakePayments(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canMakePayments")().asInstanceOf[Boolean]
     
     /**
       * Indicates whether the device supports Apple Pay and whether the user has an active card in Wallet.
@@ -276,8 +275,7 @@ object global {
       * @returns true if the device supports Apple Pay and there is at least one active card in Wallet that is qualified for payments on the web; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def canMakePaymentsWithActiveCard(merchantIdentifier: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canMakePaymentsWithActiveCard")(merchantIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def canMakePaymentsWithActiveCard(merchantIdentifier: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canMakePaymentsWithActiveCard")(merchantIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Displays the Set up Apple Pay button.
@@ -285,8 +283,7 @@ object global {
       * @returns A boolean value indicating whether setup was successful.
       */
     /* static member */
-    @scala.inline
-    def openPaymentSetup(merchantIdentifier: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openPaymentSetup")(merchantIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def openPaymentSetup(merchantIdentifier: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openPaymentSetup")(merchantIdentifier.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Verifies whether a web browser supports a given Apple Pay JS API version.
@@ -294,7 +291,6 @@ object global {
       * @returns A boolean value indicating whether the web browser supports the given API version. Returns false if the web browser does not support the specified version.
       */
     /* static member */
-    @scala.inline
-    def supportsVersion(version: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def supportsVersion(version: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

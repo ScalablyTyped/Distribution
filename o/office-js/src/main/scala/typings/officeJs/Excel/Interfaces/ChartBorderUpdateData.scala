@@ -47,33 +47,25 @@ trait ChartBorderUpdateData extends StObject {
 }
 object ChartBorderUpdateData {
   
-  @scala.inline
-  def apply(): ChartBorderUpdateData = {
+  inline def apply(): ChartBorderUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartBorderUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartBorderUpdateDataMutableBuilder[Self <: ChartBorderUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBorderUpdateData](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLineStyle(
+    inline def setLineStyle(
       value: ChartLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Grey25 | Grey50 | Grey75 | Automatic | RoundDot
     ): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

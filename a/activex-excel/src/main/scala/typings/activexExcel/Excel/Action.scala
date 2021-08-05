@@ -16,7 +16,7 @@ trait Action extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Action_typekey")
+  /* private */ @JSName("Excel.Action_typekey")
   var ExcelDotAction_typekey: Action
   
   def Execute(): Unit
@@ -29,8 +29,7 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Caption: String,
     Content: String,
@@ -47,37 +46,26 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinate(value: String): Self = StObject.set(x, "Coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: String): Self = StObject.set(x, "Coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotAction_typekey(value: Action): Self = StObject.set(x, "Excel.Action_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotAction_typekey(value: Action): Self = StObject.set(x, "Excel.Action_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecute(value: () => Unit): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Unit): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlActionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlActionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object defaultGetItemValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultGetItemValue(item: UnknownTreeItem, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetItemValue")(item.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def defaultGetItemValue(item: UnknownTreeItem, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetItemValue")(item.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
 }

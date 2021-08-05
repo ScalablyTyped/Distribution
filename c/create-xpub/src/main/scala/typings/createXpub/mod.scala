@@ -17,8 +17,7 @@ object mod {
     *
     * @returns A Base58 encoded extended public key.
     */
-  @scala.inline
-  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("create-xpub", JSImport.Namespace)
   @js.native
@@ -68,32 +67,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(chainCode: String, childNumber: Double, depth: Double, publicKey: String): Options = {
+    inline def apply(chainCode: String, childNumber: Double, depth: Double, publicKey: String): Options = {
       val __obj = js.Dynamic.literal(chainCode = chainCode.asInstanceOf[js.Any], childNumber = childNumber.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChainCode(value: String): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
+      inline def setChainCode(value: String): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildNumber(value: Double): Self = StObject.set(x, "childNumber", value.asInstanceOf[js.Any])
+      inline def setChildNumber(value: Double): Self = StObject.set(x, "childNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkVersion(value: Double): Self = StObject.set(x, "networkVersion", value.asInstanceOf[js.Any])
+      inline def setNetworkVersion(value: Double): Self = StObject.set(x, "networkVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkVersionUndefined: Self = StObject.set(x, "networkVersion", js.undefined)
+      inline def setNetworkVersionUndefined: Self = StObject.set(x, "networkVersion", js.undefined)
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }
   }
 }

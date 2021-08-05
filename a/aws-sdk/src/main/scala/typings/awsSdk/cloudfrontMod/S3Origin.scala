@@ -18,19 +18,15 @@ trait S3Origin extends StObject {
 }
 object S3Origin {
   
-  @scala.inline
-  def apply(DomainName: String, OriginAccessIdentity: String): S3Origin = {
+  inline def apply(DomainName: String, OriginAccessIdentity: String): S3Origin = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], OriginAccessIdentity = OriginAccessIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Origin]
   }
   
-  @scala.inline
-  implicit class S3OriginMutableBuilder[Self <: S3Origin] (val x: Self) extends AnyVal {
+  extension [Self <: S3Origin](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginAccessIdentity(value: String): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
+    inline def setOriginAccessIdentity(value: String): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
   }
 }

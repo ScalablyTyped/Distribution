@@ -20,28 +20,21 @@ trait ISubscribePacket
 }
 object ISubscribePacket {
   
-  @scala.inline
-  def apply(subscriptions: js.Array[ISubscription]): ISubscribePacket = {
+  inline def apply(subscriptions: js.Array[ISubscription]): ISubscribePacket = {
     val __obj = js.Dynamic.literal(cmd = "subscribe", subscriptions = subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscribePacket]
   }
   
-  @scala.inline
-  implicit class ISubscribePacketMutableBuilder[Self <: ISubscribePacket] (val x: Self) extends AnyVal {
+  extension [Self <: ISubscribePacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: subscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: subscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setSubscriptions(value: js.Array[ISubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: js.Array[ISubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: ISubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: ISubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
   }
 }

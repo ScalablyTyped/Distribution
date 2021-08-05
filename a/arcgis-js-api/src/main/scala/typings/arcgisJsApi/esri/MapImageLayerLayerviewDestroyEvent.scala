@@ -12,19 +12,15 @@ trait MapImageLayerLayerviewDestroyEvent extends StObject {
 }
 object MapImageLayerLayerviewDestroyEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): MapImageLayerLayerviewDestroyEvent = {
+  inline def apply(layerView: LayerView, view: View): MapImageLayerLayerviewDestroyEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapImageLayerLayerviewDestroyEvent]
   }
   
-  @scala.inline
-  implicit class MapImageLayerLayerviewDestroyEventMutableBuilder[Self <: MapImageLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MapImageLayerLayerviewDestroyEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

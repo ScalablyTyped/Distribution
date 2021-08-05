@@ -19,19 +19,19 @@ object snapMod {
   @js.native
   trait SnapTarget extends Target {
     
-    var createDescriptor: js.Any = js.native
+    /* private */ var createDescriptor: js.Any = js.native
     
-    val helper: js.Any = js.native
+    /* private */ val helper: js.Any = js.native
     
-    var isElectronVersionGreaterOrEqualThen: js.Any = js.native
+    /* private */ var isElectronVersionGreaterOrEqualThen: js.Any = js.native
     
     var isUseTemplateApp: Boolean = js.native
     
     @JSName("options")
     val options_SnapTarget: SnapOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
     
-    var replaceDefault: js.Any = js.native
+    /* private */ var replaceDefault: js.Any = js.native
   }
 }

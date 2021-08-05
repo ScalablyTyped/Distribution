@@ -16,36 +16,31 @@ trait NavigationDrawerAction
      with _NavigationAction
 object NavigationDrawerAction {
   
-  @scala.inline
-  def NavigationCloseDrawerAction(): typings.reactNavigation.mod.NavigationCloseDrawerAction = {
+  inline def NavigationCloseDrawerAction(): typings.reactNavigation.mod.NavigationCloseDrawerAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/CLOSE_DRAWER")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationCloseDrawerAction]
   }
   
-  @scala.inline
-  def NavigationDrawerClosedAction(): typings.reactNavigation.mod.NavigationDrawerClosedAction = {
+  inline def NavigationDrawerClosedAction(): typings.reactNavigation.mod.NavigationDrawerClosedAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/DRAWER_CLOSED")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationDrawerClosedAction]
   }
   
-  @scala.inline
-  def NavigationDrawerOpenedAction(): typings.reactNavigation.mod.NavigationDrawerOpenedAction = {
+  inline def NavigationDrawerOpenedAction(): typings.reactNavigation.mod.NavigationDrawerOpenedAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/DRAWER_OPENED")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationDrawerOpenedAction]
   }
   
-  @scala.inline
-  def NavigationOpenDrawerAction(): typings.reactNavigation.mod.NavigationOpenDrawerAction = {
+  inline def NavigationOpenDrawerAction(): typings.reactNavigation.mod.NavigationOpenDrawerAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/OPEN_DRAWER")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationOpenDrawerAction]
   }
   
-  @scala.inline
-  def NavigationToggleDrawerAction(): typings.reactNavigation.mod.NavigationToggleDrawerAction = {
+  inline def NavigationToggleDrawerAction(): typings.reactNavigation.mod.NavigationToggleDrawerAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/TOGGLE_DRAWER")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationToggleDrawerAction]

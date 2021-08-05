@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.FormRegionStartup")
 @js.native
-class FormRegionStartup protected ()
+/* private */ class FormRegionStartup ()
   extends StObject
      with typings.activexOutlook.Outlook.FormRegionStartup {
   
@@ -31,7 +31,7 @@ class FormRegionStartup protected ()
     FormRegionSize: OlFormRegionSize
   ): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.FormRegionStartup_typekey")
   var OutlookDotFormRegionStartup_typekey: typings.activexOutlook.Outlook.FormRegionStartup = js.native
 }

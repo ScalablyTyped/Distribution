@@ -20,16 +20,13 @@ trait IEnigmaClass extends StObject {
 }
 object IEnigmaClass {
   
-  @scala.inline
-  def apply(create: IConfig => ISession): IEnigmaClass = {
+  inline def apply(create: IConfig => ISession): IEnigmaClass = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[IEnigmaClass]
   }
   
-  @scala.inline
-  implicit class IEnigmaClassMutableBuilder[Self <: IEnigmaClass] (val x: Self) extends AnyVal {
+  extension [Self <: IEnigmaClass](x: Self) {
     
-    @scala.inline
-    def setCreate(value: IConfig => ISession): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: IConfig => ISession): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

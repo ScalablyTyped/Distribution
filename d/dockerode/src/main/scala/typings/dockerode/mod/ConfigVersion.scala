@@ -10,16 +10,13 @@ trait ConfigVersion extends StObject {
 }
 object ConfigVersion {
   
-  @scala.inline
-  def apply(Index: Double): ConfigVersion = {
+  inline def apply(Index: Double): ConfigVersion = {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigVersion]
   }
   
-  @scala.inline
-  implicit class ConfigVersionMutableBuilder[Self <: ConfigVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigVersion](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
   }
 }

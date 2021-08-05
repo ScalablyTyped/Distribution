@@ -18,8 +18,7 @@ trait CerData extends StObject {
 }
 object CerData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cerData: String,
     feedBackOptions: BatchFeedback,
     keyData: String,
@@ -30,22 +29,16 @@ object CerData {
     __obj.asInstanceOf[CerData]
   }
   
-  @scala.inline
-  implicit class CerDataMutableBuilder[Self <: CerData] (val x: Self) extends AnyVal {
+  extension [Self <: CerData](x: Self) {
     
-    @scala.inline
-    def setCerData(value: String): Self = StObject.set(x, "cerData", value.asInstanceOf[js.Any])
+    inline def setCerData(value: String): Self = StObject.set(x, "cerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedBackOptions(value: BatchFeedback): Self = StObject.set(x, "feedBackOptions", value.asInstanceOf[js.Any])
+    inline def setFeedBackOptions(value: BatchFeedback): Self = StObject.set(x, "feedBackOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyData(value: String): Self = StObject.set(x, "keyData", value.asInstanceOf[js.Any])
+    inline def setKeyData(value: String): Self = StObject.set(x, "keyData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+    inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushOptions(value: Gateway): Self = StObject.set(x, "pushOptions", value.asInstanceOf[js.Any])
+    inline def setPushOptions(value: Gateway): Self = StObject.set(x, "pushOptions", value.asInstanceOf[js.Any])
   }
 }

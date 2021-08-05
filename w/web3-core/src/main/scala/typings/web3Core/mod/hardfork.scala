@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait hardfork extends StObject
 object hardfork {
   
-  @scala.inline
-  def byzantium: typings.web3Core.web3CoreStrings.byzantium = "byzantium".asInstanceOf[typings.web3Core.web3CoreStrings.byzantium]
+  inline def byzantium: typings.web3Core.web3CoreStrings.byzantium = "byzantium".asInstanceOf[typings.web3Core.web3CoreStrings.byzantium]
   
-  @scala.inline
-  def chainstart: typings.web3Core.web3CoreStrings.chainstart = "chainstart".asInstanceOf[typings.web3Core.web3CoreStrings.chainstart]
+  inline def chainstart: typings.web3Core.web3CoreStrings.chainstart = "chainstart".asInstanceOf[typings.web3Core.web3CoreStrings.chainstart]
   
-  @scala.inline
-  def constantinople: typings.web3Core.web3CoreStrings.constantinople = "constantinople".asInstanceOf[typings.web3Core.web3CoreStrings.constantinople]
+  inline def constantinople: typings.web3Core.web3CoreStrings.constantinople = "constantinople".asInstanceOf[typings.web3Core.web3CoreStrings.constantinople]
   
-  @scala.inline
-  def dao: typings.web3Core.web3CoreStrings.dao = "dao".asInstanceOf[typings.web3Core.web3CoreStrings.dao]
+  inline def dao: typings.web3Core.web3CoreStrings.dao = "dao".asInstanceOf[typings.web3Core.web3CoreStrings.dao]
   
-  @scala.inline
-  def homestead: typings.web3Core.web3CoreStrings.homestead = "homestead".asInstanceOf[typings.web3Core.web3CoreStrings.homestead]
+  inline def homestead: typings.web3Core.web3CoreStrings.homestead = "homestead".asInstanceOf[typings.web3Core.web3CoreStrings.homestead]
   
-  @scala.inline
-  def istanbul: typings.web3Core.web3CoreStrings.istanbul = "istanbul".asInstanceOf[typings.web3Core.web3CoreStrings.istanbul]
+  inline def istanbul: typings.web3Core.web3CoreStrings.istanbul = "istanbul".asInstanceOf[typings.web3Core.web3CoreStrings.istanbul]
   
-  @scala.inline
-  def petersburg: typings.web3Core.web3CoreStrings.petersburg = "petersburg".asInstanceOf[typings.web3Core.web3CoreStrings.petersburg]
+  inline def petersburg: typings.web3Core.web3CoreStrings.petersburg = "petersburg".asInstanceOf[typings.web3Core.web3CoreStrings.petersburg]
   
-  @scala.inline
-  def spuriousDragon: typings.web3Core.web3CoreStrings.spuriousDragon = "spuriousDragon".asInstanceOf[typings.web3Core.web3CoreStrings.spuriousDragon]
+  inline def spuriousDragon: typings.web3Core.web3CoreStrings.spuriousDragon = "spuriousDragon".asInstanceOf[typings.web3Core.web3CoreStrings.spuriousDragon]
   
-  @scala.inline
-  def tangerineWhistle: typings.web3Core.web3CoreStrings.tangerineWhistle = "tangerineWhistle".asInstanceOf[typings.web3Core.web3CoreStrings.tangerineWhistle]
+  inline def tangerineWhistle: typings.web3Core.web3CoreStrings.tangerineWhistle = "tangerineWhistle".asInstanceOf[typings.web3Core.web3CoreStrings.tangerineWhistle]
 }

@@ -13,19 +13,15 @@ trait CreateTransitGatewayRouteResult extends StObject {
 }
 object CreateTransitGatewayRouteResult {
   
-  @scala.inline
-  def apply(): CreateTransitGatewayRouteResult = {
+  inline def apply(): CreateTransitGatewayRouteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTransitGatewayRouteResult]
   }
   
-  @scala.inline
-  implicit class CreateTransitGatewayRouteResultMutableBuilder[Self <: CreateTransitGatewayRouteResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTransitGatewayRouteResult](x: Self) {
     
-    @scala.inline
-    def setRoute(value: TransitGatewayRoute): Self = StObject.set(x, "Route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: TransitGatewayRoute): Self = StObject.set(x, "Route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "Route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "Route", js.undefined)
   }
 }

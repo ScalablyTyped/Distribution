@@ -16,40 +16,29 @@ trait WorkbookOperationError extends StObject {
 }
 object WorkbookOperationError {
   
-  @scala.inline
-  def apply(): WorkbookOperationError = {
+  inline def apply(): WorkbookOperationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookOperationError]
   }
   
-  @scala.inline
-  implicit class WorkbookOperationErrorMutableBuilder[Self <: WorkbookOperationError] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookOperationError](x: Self) {
     
-    @scala.inline
-    def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeNull: Self = StObject.set(x, "code", null)
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setInnerError(value: NullableOption[WorkbookOperationError]): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
+    inline def setInnerError(value: NullableOption[WorkbookOperationError]): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerErrorNull: Self = StObject.set(x, "innerError", null)
+    inline def setInnerErrorNull: Self = StObject.set(x, "innerError", null)
     
-    @scala.inline
-    def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
+    inline def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
     
-    @scala.inline
-    def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

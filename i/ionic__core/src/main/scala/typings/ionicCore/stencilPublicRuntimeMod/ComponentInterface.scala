@@ -75,73 +75,51 @@ trait ComponentInterface
 }
 object ComponentInterface {
   
-  @scala.inline
-  def apply(): ComponentInterface = {
+  inline def apply(): ComponentInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentInterface]
   }
   
-  @scala.inline
-  implicit class ComponentInterfaceMutableBuilder[Self <: ComponentInterface] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentInterface](x: Self) {
     
-    @scala.inline
-    def setComponentDidLoad(value: () => Unit): Self = StObject.set(x, "componentDidLoad", js.Any.fromFunction0(value))
+    inline def setComponentDidLoad(value: () => Unit): Self = StObject.set(x, "componentDidLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentDidLoadUndefined: Self = StObject.set(x, "componentDidLoad", js.undefined)
+    inline def setComponentDidLoadUndefined: Self = StObject.set(x, "componentDidLoad", js.undefined)
     
-    @scala.inline
-    def setComponentDidRender(value: () => Unit): Self = StObject.set(x, "componentDidRender", js.Any.fromFunction0(value))
+    inline def setComponentDidRender(value: () => Unit): Self = StObject.set(x, "componentDidRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentDidRenderUndefined: Self = StObject.set(x, "componentDidRender", js.undefined)
+    inline def setComponentDidRenderUndefined: Self = StObject.set(x, "componentDidRender", js.undefined)
     
-    @scala.inline
-    def setComponentDidUpdate(value: () => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction0(value))
+    inline def setComponentDidUpdate(value: () => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
+    inline def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
     
-    @scala.inline
-    def setComponentShouldUpdate(value: (/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String) => Boolean | Unit): Self = StObject.set(x, "componentShouldUpdate", js.Any.fromFunction3(value))
+    inline def setComponentShouldUpdate(value: (/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String) => Boolean | Unit): Self = StObject.set(x, "componentShouldUpdate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setComponentShouldUpdateUndefined: Self = StObject.set(x, "componentShouldUpdate", js.undefined)
+    inline def setComponentShouldUpdateUndefined: Self = StObject.set(x, "componentShouldUpdate", js.undefined)
     
-    @scala.inline
-    def setComponentWillLoad(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillLoad", js.Any.fromFunction0(value))
+    inline def setComponentWillLoad(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentWillLoadUndefined: Self = StObject.set(x, "componentWillLoad", js.undefined)
+    inline def setComponentWillLoadUndefined: Self = StObject.set(x, "componentWillLoad", js.undefined)
     
-    @scala.inline
-    def setComponentWillRender(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillRender", js.Any.fromFunction0(value))
+    inline def setComponentWillRender(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentWillRenderUndefined: Self = StObject.set(x, "componentWillRender", js.undefined)
+    inline def setComponentWillRenderUndefined: Self = StObject.set(x, "componentWillRender", js.undefined)
     
-    @scala.inline
-    def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction0(value))
+    inline def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
+    inline def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
     
-    @scala.inline
-    def setConnectedCallback(value: () => Unit): Self = StObject.set(x, "connectedCallback", js.Any.fromFunction0(value))
+    inline def setConnectedCallback(value: () => Unit): Self = StObject.set(x, "connectedCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConnectedCallbackUndefined: Self = StObject.set(x, "connectedCallback", js.undefined)
+    inline def setConnectedCallbackUndefined: Self = StObject.set(x, "connectedCallback", js.undefined)
     
-    @scala.inline
-    def setDisconnectedCallback(value: () => Unit): Self = StObject.set(x, "disconnectedCallback", js.Any.fromFunction0(value))
+    inline def setDisconnectedCallback(value: () => Unit): Self = StObject.set(x, "disconnectedCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisconnectedCallbackUndefined: Self = StObject.set(x, "disconnectedCallback", js.undefined)
+    inline def setDisconnectedCallbackUndefined: Self = StObject.set(x, "disconnectedCallback", js.undefined)
     
-    @scala.inline
-    def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

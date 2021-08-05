@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCheckInVersionType extends StObject
 object WdCheckInVersionType {
   
-  @scala.inline
-  def wdCheckInMajorVersion: `1` = 1.asInstanceOf[`1`]
+  inline def wdCheckInMajorVersion: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdCheckInMinorVersion: `0` = 0.asInstanceOf[`0`]
+  inline def wdCheckInMinorVersion: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdCheckInOverwriteVersion: `2` = 2.asInstanceOf[`2`]
+  inline def wdCheckInOverwriteVersion: `2` = 2.asInstanceOf[`2`]
 }

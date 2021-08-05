@@ -22,25 +22,19 @@ trait SchemaClearOrgPolicyRequest extends StObject {
 }
 object SchemaClearOrgPolicyRequest {
   
-  @scala.inline
-  def apply(): SchemaClearOrgPolicyRequest = {
+  inline def apply(): SchemaClearOrgPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClearOrgPolicyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaClearOrgPolicyRequestMutableBuilder[Self <: SchemaClearOrgPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClearOrgPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

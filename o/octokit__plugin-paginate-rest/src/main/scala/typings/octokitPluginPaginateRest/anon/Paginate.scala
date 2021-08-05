@@ -5195,16 +5195,13 @@ trait Paginate extends StObject {
 }
 object Paginate {
   
-  @scala.inline
-  def apply(paginate: PaginateInterface): Paginate = {
+  inline def apply(paginate: PaginateInterface): Paginate = {
     val __obj = js.Dynamic.literal(paginate = paginate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paginate]
   }
   
-  @scala.inline
-  implicit class PaginateMutableBuilder[Self <: Paginate] (val x: Self) extends AnyVal {
+  extension [Self <: Paginate](x: Self) {
     
-    @scala.inline
-    def setPaginate(value: PaginateInterface): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    inline def setPaginate(value: PaginateInterface): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
   }
 }

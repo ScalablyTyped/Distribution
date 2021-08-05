@@ -41,37 +41,27 @@ trait InkAnalysisLineCollectionLoadOptions extends StObject {
 }
 object InkAnalysisLineCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): InkAnalysisLineCollectionLoadOptions = {
+  inline def apply(): InkAnalysisLineCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkAnalysisLineCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class InkAnalysisLineCollectionLoadOptionsMutableBuilder[Self <: InkAnalysisLineCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InkAnalysisLineCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParagraph(value: InkAnalysisParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: InkAnalysisParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    @scala.inline
-    def setWords(value: InkAnalysisWordCollectionLoadOptions): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: InkAnalysisWordCollectionLoadOptions): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
   }
 }

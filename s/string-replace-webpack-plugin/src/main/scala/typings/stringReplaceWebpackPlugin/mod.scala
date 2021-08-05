@@ -18,21 +18,17 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def replace(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def replace(options: Options, /**
+  inline def replace(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def replace(options: Options, /**
     * loaders to follow the replacement
     */
   nextLoaders: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], nextLoaders.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   /* static member */
-  @scala.inline
-  def replace(/**
+  inline def replace(/**
     * loaders to apply prior to the replacement
     */
   prevLoaders: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(prevLoaders.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def replace(
+  inline def replace(
     /**
     * loaders to apply prior to the replacement
     */
@@ -50,20 +46,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(replacements: js.Array[ReplacementItem]): Options = {
+    inline def apply(replacements: js.Array[ReplacementItem]): Options = {
       val __obj = js.Dynamic.literal(replacements = replacements.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setReplacements(value: js.Array[ReplacementItem]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
+      inline def setReplacements(value: js.Array[ReplacementItem]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacementsVarargs(value: ReplacementItem*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+      inline def setReplacementsVarargs(value: ReplacementItem*): Self = StObject.set(x, "replacements", js.Array(value :_*))
     }
   }
   
@@ -82,20 +74,16 @@ object mod {
   }
   object ReplacementItem {
     
-    @scala.inline
-    def apply(pattern: RegExp, replacement: (String, /* repeated */ js.Any) => String): ReplacementItem = {
+    inline def apply(pattern: RegExp, replacement: (String, /* repeated */ js.Any) => String): ReplacementItem = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], replacement = js.Any.fromFunction2(replacement))
       __obj.asInstanceOf[ReplacementItem]
     }
     
-    @scala.inline
-    implicit class ReplacementItemMutableBuilder[Self <: ReplacementItem] (val x: Self) extends AnyVal {
+    extension [Self <: ReplacementItem](x: Self) {
       
-      @scala.inline
-      def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacement(value: (String, /* repeated */ js.Any) => String): Self = StObject.set(x, "replacement", js.Any.fromFunction2(value))
+      inline def setReplacement(value: (String, /* repeated */ js.Any) => String): Self = StObject.set(x, "replacement", js.Any.fromFunction2(value))
     }
   }
   

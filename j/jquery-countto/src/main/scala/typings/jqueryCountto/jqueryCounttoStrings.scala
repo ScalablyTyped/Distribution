@@ -11,27 +11,23 @@ object jqueryCounttoStrings {
   sealed trait restart
     extends StObject
        with Method
-  @scala.inline
-  def restart: restart = "restart".asInstanceOf[restart]
+  inline def restart: restart = "restart".asInstanceOf[restart]
   
   @js.native
   sealed trait start
     extends StObject
        with Method
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait stop
     extends StObject
        with Method
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
   sealed trait toggle
     extends StObject
        with Method
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
 }

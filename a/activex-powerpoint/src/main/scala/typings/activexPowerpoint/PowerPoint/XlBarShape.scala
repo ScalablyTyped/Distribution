@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlBarShape extends StObject
 object XlBarShape {
   
-  @scala.inline
-  def xlBox: `0` = 0.asInstanceOf[`0`]
+  inline def xlBox: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlConeToMax: `5` = 5.asInstanceOf[`5`]
+  inline def xlConeToMax: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlConeToPoint: `4` = 4.asInstanceOf[`4`]
+  inline def xlConeToPoint: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlCylinder: `3` = 3.asInstanceOf[`3`]
+  inline def xlCylinder: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlPyramidToMax: `2` = 2.asInstanceOf[`2`]
+  inline def xlPyramidToMax: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPyramidToPoint: `1` = 1.asInstanceOf[`1`]
+  inline def xlPyramidToPoint: `1` = 1.asInstanceOf[`1`]
 }

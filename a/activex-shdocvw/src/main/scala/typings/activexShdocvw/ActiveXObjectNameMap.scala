@@ -24,8 +24,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InternetExplorerDotApplication: InternetExplorer,
     ShellDotExplorer: WebBrowser,
     ShellDotUIHelper: ShellUIHelper,
@@ -39,19 +38,14 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setInternetExplorerDotApplication(value: InternetExplorer): Self = StObject.set(x, "InternetExplorer.Application", value.asInstanceOf[js.Any])
+    inline def setInternetExplorerDotApplication(value: InternetExplorer): Self = StObject.set(x, "InternetExplorer.Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellDotExplorer(value: WebBrowser): Self = StObject.set(x, "Shell.Explorer", value.asInstanceOf[js.Any])
+    inline def setShellDotExplorer(value: WebBrowser): Self = StObject.set(x, "Shell.Explorer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellDotUIHelper(value: ShellUIHelper): Self = StObject.set(x, "Shell.UIHelper", value.asInstanceOf[js.Any])
+    inline def setShellDotUIHelper(value: ShellUIHelper): Self = StObject.set(x, "Shell.UIHelper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellNameSpaceDotShellNameSpace(value: ShellNameSpace): Self = StObject.set(x, "ShellNameSpace.ShellNameSpace", value.asInstanceOf[js.Any])
+    inline def setShellNameSpaceDotShellNameSpace(value: ShellNameSpace): Self = StObject.set(x, "ShellNameSpace.ShellNameSpace", value.asInstanceOf[js.Any])
   }
 }

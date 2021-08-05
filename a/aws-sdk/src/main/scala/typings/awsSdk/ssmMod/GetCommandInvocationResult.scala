@@ -93,115 +93,79 @@ trait GetCommandInvocationResult extends StObject {
 }
 object GetCommandInvocationResult {
   
-  @scala.inline
-  def apply(): GetCommandInvocationResult = {
+  inline def apply(): GetCommandInvocationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCommandInvocationResult]
   }
   
-  @scala.inline
-  implicit class GetCommandInvocationResultMutableBuilder[Self <: GetCommandInvocationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommandInvocationResult](x: Self) {
     
-    @scala.inline
-    def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = StObject.set(x, "CloudWatchOutputConfig", value.asInstanceOf[js.Any])
+    inline def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = StObject.set(x, "CloudWatchOutputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchOutputConfigUndefined: Self = StObject.set(x, "CloudWatchOutputConfig", js.undefined)
+    inline def setCloudWatchOutputConfigUndefined: Self = StObject.set(x, "CloudWatchOutputConfig", js.undefined)
     
-    @scala.inline
-    def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
+    inline def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandIdUndefined: Self = StObject.set(x, "CommandId", js.undefined)
+    inline def setCommandIdUndefined: Self = StObject.set(x, "CommandId", js.undefined)
     
-    @scala.inline
-    def setComment(value: Comment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: Comment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setDocumentName(value: DocumentName): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
+    inline def setDocumentName(value: DocumentName): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentNameUndefined: Self = StObject.set(x, "DocumentName", js.undefined)
+    inline def setDocumentNameUndefined: Self = StObject.set(x, "DocumentName", js.undefined)
     
-    @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
+    inline def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
-    @scala.inline
-    def setExecutionElapsedTime(value: StringDateTime): Self = StObject.set(x, "ExecutionElapsedTime", value.asInstanceOf[js.Any])
+    inline def setExecutionElapsedTime(value: StringDateTime): Self = StObject.set(x, "ExecutionElapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionElapsedTimeUndefined: Self = StObject.set(x, "ExecutionElapsedTime", js.undefined)
+    inline def setExecutionElapsedTimeUndefined: Self = StObject.set(x, "ExecutionElapsedTime", js.undefined)
     
-    @scala.inline
-    def setExecutionEndDateTime(value: StringDateTime): Self = StObject.set(x, "ExecutionEndDateTime", value.asInstanceOf[js.Any])
+    inline def setExecutionEndDateTime(value: StringDateTime): Self = StObject.set(x, "ExecutionEndDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionEndDateTimeUndefined: Self = StObject.set(x, "ExecutionEndDateTime", js.undefined)
+    inline def setExecutionEndDateTimeUndefined: Self = StObject.set(x, "ExecutionEndDateTime", js.undefined)
     
-    @scala.inline
-    def setExecutionStartDateTime(value: StringDateTime): Self = StObject.set(x, "ExecutionStartDateTime", value.asInstanceOf[js.Any])
+    inline def setExecutionStartDateTime(value: StringDateTime): Self = StObject.set(x, "ExecutionStartDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStartDateTimeUndefined: Self = StObject.set(x, "ExecutionStartDateTime", js.undefined)
+    inline def setExecutionStartDateTimeUndefined: Self = StObject.set(x, "ExecutionStartDateTime", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setPluginName(value: CommandPluginName): Self = StObject.set(x, "PluginName", value.asInstanceOf[js.Any])
+    inline def setPluginName(value: CommandPluginName): Self = StObject.set(x, "PluginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginNameUndefined: Self = StObject.set(x, "PluginName", js.undefined)
+    inline def setPluginNameUndefined: Self = StObject.set(x, "PluginName", js.undefined)
     
-    @scala.inline
-    def setResponseCode(value: ResponseCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: ResponseCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCodeUndefined: Self = StObject.set(x, "ResponseCode", js.undefined)
+    inline def setResponseCodeUndefined: Self = StObject.set(x, "ResponseCode", js.undefined)
     
-    @scala.inline
-    def setStandardErrorContent(value: StandardErrorContent): Self = StObject.set(x, "StandardErrorContent", value.asInstanceOf[js.Any])
+    inline def setStandardErrorContent(value: StandardErrorContent): Self = StObject.set(x, "StandardErrorContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardErrorContentUndefined: Self = StObject.set(x, "StandardErrorContent", js.undefined)
+    inline def setStandardErrorContentUndefined: Self = StObject.set(x, "StandardErrorContent", js.undefined)
     
-    @scala.inline
-    def setStandardErrorUrl(value: Url): Self = StObject.set(x, "StandardErrorUrl", value.asInstanceOf[js.Any])
+    inline def setStandardErrorUrl(value: Url): Self = StObject.set(x, "StandardErrorUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardErrorUrlUndefined: Self = StObject.set(x, "StandardErrorUrl", js.undefined)
+    inline def setStandardErrorUrlUndefined: Self = StObject.set(x, "StandardErrorUrl", js.undefined)
     
-    @scala.inline
-    def setStandardOutputContent(value: StandardOutputContent): Self = StObject.set(x, "StandardOutputContent", value.asInstanceOf[js.Any])
+    inline def setStandardOutputContent(value: StandardOutputContent): Self = StObject.set(x, "StandardOutputContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardOutputContentUndefined: Self = StObject.set(x, "StandardOutputContent", js.undefined)
+    inline def setStandardOutputContentUndefined: Self = StObject.set(x, "StandardOutputContent", js.undefined)
     
-    @scala.inline
-    def setStandardOutputUrl(value: Url): Self = StObject.set(x, "StandardOutputUrl", value.asInstanceOf[js.Any])
+    inline def setStandardOutputUrl(value: Url): Self = StObject.set(x, "StandardOutputUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardOutputUrlUndefined: Self = StObject.set(x, "StandardOutputUrl", js.undefined)
+    inline def setStandardOutputUrlUndefined: Self = StObject.set(x, "StandardOutputUrl", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CommandInvocationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CommandInvocationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetails(value: StatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
+    inline def setStatusDetails(value: StatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
+    inline def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

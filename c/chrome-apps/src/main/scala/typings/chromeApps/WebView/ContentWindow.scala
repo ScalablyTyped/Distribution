@@ -27,16 +27,13 @@ trait ContentWindow extends StObject {
 }
 object ContentWindow {
   
-  @scala.inline
-  def apply(postMessage: (js.Any, String) => Unit): ContentWindow = {
+  inline def apply(postMessage: (js.Any, String) => Unit): ContentWindow = {
     val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2(postMessage))
     __obj.asInstanceOf[ContentWindow]
   }
   
-  @scala.inline
-  implicit class ContentWindowMutableBuilder[Self <: ContentWindow] (val x: Self) extends AnyVal {
+  extension [Self <: ContentWindow](x: Self) {
     
-    @scala.inline
-    def setPostMessage(value: (js.Any, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
+    inline def setPostMessage(value: (js.Any, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
   }
 }

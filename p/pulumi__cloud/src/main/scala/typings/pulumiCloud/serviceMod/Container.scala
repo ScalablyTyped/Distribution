@@ -98,88 +98,61 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(): Container = {
+  inline def apply(): Container = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setBuild(value: String | ContainerBuild): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: String | ContainerBuild): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    @scala.inline
-    def setCommand(value: Input[js.Array[String]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Input[js.Array[String]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
     
-    @scala.inline
-    def setCpu(value: Input[Double]): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: Input[Double]): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+    inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
-    @scala.inline
-    def setDockerLabels(value: Input[StringDictionary[String]]): Self = StObject.set(x, "dockerLabels", value.asInstanceOf[js.Any])
+    inline def setDockerLabels(value: Input[StringDictionary[String]]): Self = StObject.set(x, "dockerLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerLabelsUndefined: Self = StObject.set(x, "dockerLabels", js.undefined)
+    inline def setDockerLabelsUndefined: Self = StObject.set(x, "dockerLabels", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: StringDictionary[Input[String]]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: StringDictionary[Input[String]]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setFunction(value: () => Unit): Self = StObject.set(x, "function", js.Any.fromFunction0(value))
+    inline def setFunction(value: () => Unit): Self = StObject.set(x, "function", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setImage(value: Input[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Input[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setMemory(value: Input[Double]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: Input[Double]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryReservation(value: Input[Double]): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
+    inline def setMemoryReservation(value: Input[Double]): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryReservationUndefined: Self = StObject.set(x, "memoryReservation", js.undefined)
+    inline def setMemoryReservationUndefined: Self = StObject.set(x, "memoryReservation", js.undefined)
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
-    @scala.inline
-    def setPorts(value: js.Array[ContainerPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[ContainerPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: ContainerPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: ContainerPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
-    @scala.inline
-    def setVolumes(value: js.Array[ContainerVolumeMount]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+    inline def setVolumes(value: js.Array[ContainerVolumeMount]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+    inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    @scala.inline
-    def setVolumesVarargs(value: ContainerVolumeMount*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: ContainerVolumeMount*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

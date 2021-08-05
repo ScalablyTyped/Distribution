@@ -25,31 +25,23 @@ trait EditorProperties
 }
 object EditorProperties {
   
-  @scala.inline
-  def apply(): EditorProperties = {
+  inline def apply(): EditorProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorProperties]
   }
   
-  @scala.inline
-  implicit class EditorPropertiesMutableBuilder[Self <: EditorProperties] (val x: Self) extends AnyVal {
+  extension [Self <: EditorProperties](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setLanguageMode(value: String): Self = StObject.set(x, "languageMode", value.asInstanceOf[js.Any])
+    inline def setLanguageMode(value: String): Self = StObject.set(x, "languageMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageModeUndefined: Self = StObject.set(x, "languageMode", js.undefined)
+    inline def setLanguageModeUndefined: Self = StObject.set(x, "languageMode", js.undefined)
     
-    @scala.inline
-    def setMinimumHeight(value: Double): Self = StObject.set(x, "minimumHeight", value.asInstanceOf[js.Any])
+    inline def setMinimumHeight(value: Double): Self = StObject.set(x, "minimumHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumHeightUndefined: Self = StObject.set(x, "minimumHeight", js.undefined)
+    inline def setMinimumHeightUndefined: Self = StObject.set(x, "minimumHeight", js.undefined)
   }
 }

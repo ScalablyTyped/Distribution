@@ -13,16 +13,13 @@ trait StyleId
 }
 object StyleId {
   
-  @scala.inline
-  def apply(styleId: String): StyleId = {
+  inline def apply(styleId: String): StyleId = {
     val __obj = js.Dynamic.literal(styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleId]
   }
   
-  @scala.inline
-  implicit class StyleIdMutableBuilder[Self <: StyleId] (val x: Self) extends AnyVal {
+  extension [Self <: StyleId](x: Self) {
     
-    @scala.inline
-    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

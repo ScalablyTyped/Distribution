@@ -21,9 +21,9 @@ object foldingRangeMod {
   class FoldingRangeFeature protected () extends TextDocumentFeature[Boolean | FoldingRangeOptions, FoldingRangeRegistrationOptions, FoldingRangeProvider] {
     def this(client: BaseLanguageClient) = this()
     
-    var asFoldingRangeKind: js.Any = js.native
+    /* private */ var asFoldingRangeKind: js.Any = js.native
     
-    var asFoldingRanges: js.Any = js.native
+    /* private */ var asFoldingRanges: js.Any = js.native
   }
   
   trait FoldingRangeProviderMiddleware extends StObject {
@@ -41,17 +41,14 @@ object foldingRangeMod {
   }
   object FoldingRangeProviderMiddleware {
     
-    @scala.inline
-    def apply(): FoldingRangeProviderMiddleware = {
+    inline def apply(): FoldingRangeProviderMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FoldingRangeProviderMiddleware]
     }
     
-    @scala.inline
-    implicit class FoldingRangeProviderMiddlewareMutableBuilder[Self <: FoldingRangeProviderMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: FoldingRangeProviderMiddleware](x: Self) {
       
-      @scala.inline
-      def setProvideFoldingRanges(
+      inline def setProvideFoldingRanges(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -62,8 +59,7 @@ object foldingRangeMod {
             ]
       ): Self = StObject.set(x, "provideFoldingRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideFoldingRangesUndefined: Self = StObject.set(x, "provideFoldingRanges", js.undefined)
+      inline def setProvideFoldingRangesUndefined: Self = StObject.set(x, "provideFoldingRanges", js.undefined)
     }
   }
   

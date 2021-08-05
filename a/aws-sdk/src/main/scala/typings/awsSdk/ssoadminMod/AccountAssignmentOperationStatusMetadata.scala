@@ -23,31 +23,23 @@ trait AccountAssignmentOperationStatusMetadata extends StObject {
 }
 object AccountAssignmentOperationStatusMetadata {
   
-  @scala.inline
-  def apply(): AccountAssignmentOperationStatusMetadata = {
+  inline def apply(): AccountAssignmentOperationStatusMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountAssignmentOperationStatusMetadata]
   }
   
-  @scala.inline
-  implicit class AccountAssignmentOperationStatusMetadataMutableBuilder[Self <: AccountAssignmentOperationStatusMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AccountAssignmentOperationStatusMetadata](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: UUId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: UUId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusValues): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusValues): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

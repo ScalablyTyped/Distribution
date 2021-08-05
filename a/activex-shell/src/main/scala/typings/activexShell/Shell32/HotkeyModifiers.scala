@@ -18,15 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HotkeyModifiers extends StObject
 object HotkeyModifiers {
   
-  @scala.inline
-  def ALT: `4` = 4.asInstanceOf[`4`]
+  inline def ALT: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def CTRL: `2` = 2.asInstanceOf[`2`]
+  inline def CTRL: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Extended: `8` = 8.asInstanceOf[`8`]
+  inline def Extended: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def SHIFT: `1` = 1.asInstanceOf[`1`]
+  inline def SHIFT: `1` = 1.asInstanceOf[`1`]
 }

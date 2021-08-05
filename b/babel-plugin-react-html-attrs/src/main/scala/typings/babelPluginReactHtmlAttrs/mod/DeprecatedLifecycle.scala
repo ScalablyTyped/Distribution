@@ -104,49 +104,35 @@ trait DeprecatedLifecycle[P, S] extends StObject {
 }
 object DeprecatedLifecycle {
   
-  @scala.inline
-  def apply[P, S](): DeprecatedLifecycle[P, S] = {
+  inline def apply[P, S](): DeprecatedLifecycle[P, S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeprecatedLifecycle[P, S]]
   }
   
-  @scala.inline
-  implicit class DeprecatedLifecycleMutableBuilder[Self <: DeprecatedLifecycle[?, ?], P, S] (val x: Self & (DeprecatedLifecycle[P, S])) extends AnyVal {
+  extension [Self <: DeprecatedLifecycle[?, ?], P, S](x: Self & (DeprecatedLifecycle[P, S])) {
     
-    @scala.inline
-    def setComponentWillMount(value: () => Unit): Self = StObject.set(x, "componentWillMount", js.Any.fromFunction0(value))
+    inline def setComponentWillMount(value: () => Unit): Self = StObject.set(x, "componentWillMount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentWillMountUndefined: Self = StObject.set(x, "componentWillMount", js.undefined)
+    inline def setComponentWillMountUndefined: Self = StObject.set(x, "componentWillMount", js.undefined)
     
-    @scala.inline
-    def setComponentWillReceiveProps(value: (/* nextProps */ P, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "componentWillReceiveProps", js.Any.fromFunction2(value))
+    inline def setComponentWillReceiveProps(value: (/* nextProps */ P, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "componentWillReceiveProps", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComponentWillReceivePropsUndefined: Self = StObject.set(x, "componentWillReceiveProps", js.undefined)
+    inline def setComponentWillReceivePropsUndefined: Self = StObject.set(x, "componentWillReceiveProps", js.undefined)
     
-    @scala.inline
-    def setComponentWillUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction3(value))
+    inline def setComponentWillUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
+    inline def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
     
-    @scala.inline
-    def setUNSAFE_componentWillMount(value: () => Unit): Self = StObject.set(x, "UNSAFE_componentWillMount", js.Any.fromFunction0(value))
+    inline def setUNSAFE_componentWillMount(value: () => Unit): Self = StObject.set(x, "UNSAFE_componentWillMount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUNSAFE_componentWillMountUndefined: Self = StObject.set(x, "UNSAFE_componentWillMount", js.undefined)
+    inline def setUNSAFE_componentWillMountUndefined: Self = StObject.set(x, "UNSAFE_componentWillMount", js.undefined)
     
-    @scala.inline
-    def setUNSAFE_componentWillReceiveProps(value: (/* nextProps */ P, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "UNSAFE_componentWillReceiveProps", js.Any.fromFunction2(value))
+    inline def setUNSAFE_componentWillReceiveProps(value: (/* nextProps */ P, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "UNSAFE_componentWillReceiveProps", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUNSAFE_componentWillReceivePropsUndefined: Self = StObject.set(x, "UNSAFE_componentWillReceiveProps", js.undefined)
+    inline def setUNSAFE_componentWillReceivePropsUndefined: Self = StObject.set(x, "UNSAFE_componentWillReceiveProps", js.undefined)
     
-    @scala.inline
-    def setUNSAFE_componentWillUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "UNSAFE_componentWillUpdate", js.Any.fromFunction3(value))
+    inline def setUNSAFE_componentWillUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "UNSAFE_componentWillUpdate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUNSAFE_componentWillUpdateUndefined: Self = StObject.set(x, "UNSAFE_componentWillUpdate", js.undefined)
+    inline def setUNSAFE_componentWillUpdateUndefined: Self = StObject.set(x, "UNSAFE_componentWillUpdate", js.undefined)
   }
 }

@@ -11,20 +11,17 @@ object jsMoneyStrings {
   sealed trait ceil
     extends StObject
        with Rounders
-  @scala.inline
-  def ceil: ceil = "ceil".asInstanceOf[ceil]
+  inline def ceil: ceil = "ceil".asInstanceOf[ceil]
   
   @js.native
   sealed trait floor
     extends StObject
        with Rounders
-  @scala.inline
-  def floor: floor = "floor".asInstanceOf[floor]
+  inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
   sealed trait round
     extends StObject
        with Rounders
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
+  inline def round: round = "round".asInstanceOf[round]
 }

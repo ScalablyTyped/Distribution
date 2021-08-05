@@ -26,14 +26,14 @@ object svgDrawerMod {
     
     /* protected */ def _applyDefaultAttributes(selection: SimpleSelection[js.Any]): Unit = js.native
     
-    var _cachedVisualPrimitivesNodeMap: js.Any = js.native
+    /* private */ var _cachedVisualPrimitivesNodeMap: js.Any = js.native
     
     /**
       * Cache of the _selection.nodes().
       */
-    var _cachedVisualPrimitivesNodes: js.Any = js.native
+    /* private */ var _cachedVisualPrimitivesNodes: js.Any = js.native
     
-    var _className: String = js.native
+    /* protected */ var _className: String = js.native
     
     /* private */ def _createAndDestroyDOMElements(data: js.Any): js.Any = js.native
     
@@ -48,14 +48,14 @@ object svgDrawerMod {
       * The root element holding the visual elements. The SVGDrawer owns
       * this variable and manipulates it accordingly.
       */
-    var _root: Selection_[SVGElement, js.Any, js.Any, js.Any] = js.native
+    /* protected */ var _root: Selection_[SVGElement, js.Any, js.Any, js.Any] = js.native
     
     /**
       * All of the DOM elements from the last draw.
       */
-    var _selection: js.Any = js.native
+    /* private */ var _selection: js.Any = js.native
     
-    var _svgElementName: String = js.native
+    /* protected */ var _svgElementName: String = js.native
     
     def attachTo(parent: Selection_[SVGElement, js.Any, js.Any, js.Any]): Unit = js.native
     

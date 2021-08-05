@@ -15,25 +15,19 @@ trait DataTableCustomSelectionData[R /* <: DataTableRow[String] */] extends StOb
 }
 object DataTableCustomSelectionData {
   
-  @scala.inline
-  def apply[R /* <: DataTableRow[String] */](): DataTableCustomSelectionData[R] = {
+  inline def apply[R /* <: DataTableRow[String] */](): DataTableCustomSelectionData[R] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataTableCustomSelectionData[R]]
   }
   
-  @scala.inline
-  implicit class DataTableCustomSelectionDataMutableBuilder[Self <: DataTableCustomSelectionData[?], R /* <: DataTableRow[String] */] (val x: Self & DataTableCustomSelectionData[R]) extends AnyVal {
+  extension [Self <: DataTableCustomSelectionData[?], R /* <: DataTableRow[String] */](x: Self & DataTableCustomSelectionData[R]) {
     
-    @scala.inline
-    def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setRow(value: R): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: R): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

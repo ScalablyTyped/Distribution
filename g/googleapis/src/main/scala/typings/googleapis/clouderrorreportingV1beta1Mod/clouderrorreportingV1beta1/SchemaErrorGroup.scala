@@ -28,34 +28,25 @@ trait SchemaErrorGroup extends StObject {
 }
 object SchemaErrorGroup {
   
-  @scala.inline
-  def apply(): SchemaErrorGroup = {
+  inline def apply(): SchemaErrorGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorGroup]
   }
   
-  @scala.inline
-  implicit class SchemaErrorGroupMutableBuilder[Self <: SchemaErrorGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorGroup](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTrackingIssues(value: js.Array[SchemaTrackingIssue]): Self = StObject.set(x, "trackingIssues", value.asInstanceOf[js.Any])
+    inline def setTrackingIssues(value: js.Array[SchemaTrackingIssue]): Self = StObject.set(x, "trackingIssues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingIssuesUndefined: Self = StObject.set(x, "trackingIssues", js.undefined)
+    inline def setTrackingIssuesUndefined: Self = StObject.set(x, "trackingIssues", js.undefined)
     
-    @scala.inline
-    def setTrackingIssuesVarargs(value: SchemaTrackingIssue*): Self = StObject.set(x, "trackingIssues", js.Array(value :_*))
+    inline def setTrackingIssuesVarargs(value: SchemaTrackingIssue*): Self = StObject.set(x, "trackingIssues", js.Array(value :_*))
   }
 }

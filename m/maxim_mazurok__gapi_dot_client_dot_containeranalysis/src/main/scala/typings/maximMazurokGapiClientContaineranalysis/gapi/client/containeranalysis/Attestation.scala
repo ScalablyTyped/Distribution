@@ -13,25 +13,19 @@ trait Attestation extends StObject {
 }
 object Attestation {
   
-  @scala.inline
-  def apply(): Attestation = {
+  inline def apply(): Attestation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attestation]
   }
   
-  @scala.inline
-  implicit class AttestationMutableBuilder[Self <: Attestation] (val x: Self) extends AnyVal {
+  extension [Self <: Attestation](x: Self) {
     
-    @scala.inline
-    def setGenericSignedAttestation(value: GenericSignedAttestation): Self = StObject.set(x, "genericSignedAttestation", value.asInstanceOf[js.Any])
+    inline def setGenericSignedAttestation(value: GenericSignedAttestation): Self = StObject.set(x, "genericSignedAttestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericSignedAttestationUndefined: Self = StObject.set(x, "genericSignedAttestation", js.undefined)
+    inline def setGenericSignedAttestationUndefined: Self = StObject.set(x, "genericSignedAttestation", js.undefined)
     
-    @scala.inline
-    def setPgpSignedAttestation(value: PgpSignedAttestation): Self = StObject.set(x, "pgpSignedAttestation", value.asInstanceOf[js.Any])
+    inline def setPgpSignedAttestation(value: PgpSignedAttestation): Self = StObject.set(x, "pgpSignedAttestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgpSignedAttestationUndefined: Self = StObject.set(x, "pgpSignedAttestation", js.undefined)
+    inline def setPgpSignedAttestationUndefined: Self = StObject.set(x, "pgpSignedAttestation", js.undefined)
   }
 }

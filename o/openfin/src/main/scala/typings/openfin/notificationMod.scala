@@ -29,13 +29,13 @@ object notificationMod {
     
     /* protected */ def generalListener(msg: js.Any): Unit = js.native
     
-    var listenerList: js.Any = js.native
+    /* private */ var listenerList: js.Any = js.native
     
     var message: js.Any = js.native
     
-    var notificationId: Double = js.native
+    /* protected */ var notificationId: Double = js.native
     
-    var options: NotificationOptions = js.native
+    /* protected */ var options: NotificationOptions = js.native
     
     /**
       * Sends a message to the notification.
@@ -57,7 +57,7 @@ object notificationMod {
     
     var timeout: Double | String = js.native
     
-    var unhookAllListeners: js.Any = js.native
+    /* private */ var unhookAllListeners: js.Any = js.native
     
     var url: String = js.native
   }
@@ -86,20 +86,16 @@ object notificationMod {
   }
   object NotificationCallback {
     
-    @scala.inline
-    def apply(): NotificationCallback = {
+    inline def apply(): NotificationCallback = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationCallback]
     }
     
-    @scala.inline
-    implicit class NotificationCallbackMutableBuilder[Self <: NotificationCallback] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationCallback](x: Self) {
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -117,8 +113,8 @@ object notificationMod {
     
     var events: Click = js.native
     
-    var genNoteId: js.Any = js.native
+    /* private */ var genNoteId: js.Any = js.native
     
-    var nextNoteId: js.Any = js.native
+    /* private */ var nextNoteId: js.Any = js.native
   }
 }

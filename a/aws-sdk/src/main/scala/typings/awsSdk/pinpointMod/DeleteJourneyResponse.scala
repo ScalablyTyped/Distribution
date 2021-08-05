@@ -10,16 +10,13 @@ trait DeleteJourneyResponse extends StObject {
 }
 object DeleteJourneyResponse {
   
-  @scala.inline
-  def apply(JourneyResponse: JourneyResponse): DeleteJourneyResponse = {
+  inline def apply(JourneyResponse: JourneyResponse): DeleteJourneyResponse = {
     val __obj = js.Dynamic.literal(JourneyResponse = JourneyResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteJourneyResponse]
   }
   
-  @scala.inline
-  implicit class DeleteJourneyResponseMutableBuilder[Self <: DeleteJourneyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteJourneyResponse](x: Self) {
     
-    @scala.inline
-    def setJourneyResponse(value: JourneyResponse): Self = StObject.set(x, "JourneyResponse", value.asInstanceOf[js.Any])
+    inline def setJourneyResponse(value: JourneyResponse): Self = StObject.set(x, "JourneyResponse", value.asInstanceOf[js.Any])
   }
 }

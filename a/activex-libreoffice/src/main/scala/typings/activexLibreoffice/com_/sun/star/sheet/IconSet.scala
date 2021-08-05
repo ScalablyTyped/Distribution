@@ -21,8 +21,7 @@ trait IconSet
 }
 object IconSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IconSetEntries: SafeArray[XIconSetEntry],
     Icons: Double,
     Reverse: Boolean,
@@ -37,19 +36,14 @@ object IconSet {
     __obj.asInstanceOf[IconSet]
   }
   
-  @scala.inline
-  implicit class IconSetMutableBuilder[Self <: IconSet] (val x: Self) extends AnyVal {
+  extension [Self <: IconSet](x: Self) {
     
-    @scala.inline
-    def setIconSetEntries(value: SafeArray[XIconSetEntry]): Self = StObject.set(x, "IconSetEntries", value.asInstanceOf[js.Any])
+    inline def setIconSetEntries(value: SafeArray[XIconSetEntry]): Self = StObject.set(x, "IconSetEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcons(value: Double): Self = StObject.set(x, "Icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Double): Self = StObject.set(x, "Icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
   }
 }

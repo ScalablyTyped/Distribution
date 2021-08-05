@@ -13,16 +13,13 @@ trait DeleteFleetRequest extends StObject {
 }
 object DeleteFleetRequest {
   
-  @scala.inline
-  def apply(Name: String): DeleteFleetRequest = {
+  inline def apply(Name: String): DeleteFleetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFleetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFleetRequestMutableBuilder[Self <: DeleteFleetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFleetRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

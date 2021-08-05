@@ -13,16 +13,13 @@ trait StopQueryExecutionInput extends StObject {
 }
 object StopQueryExecutionInput {
   
-  @scala.inline
-  def apply(QueryExecutionId: QueryExecutionId): StopQueryExecutionInput = {
+  inline def apply(QueryExecutionId: QueryExecutionId): StopQueryExecutionInput = {
     val __obj = js.Dynamic.literal(QueryExecutionId = QueryExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopQueryExecutionInput]
   }
   
-  @scala.inline
-  implicit class StopQueryExecutionInputMutableBuilder[Self <: StopQueryExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopQueryExecutionInput](x: Self) {
     
-    @scala.inline
-    def setQueryExecutionId(value: QueryExecutionId): Self = StObject.set(x, "QueryExecutionId", value.asInstanceOf[js.Any])
+    inline def setQueryExecutionId(value: QueryExecutionId): Self = StObject.set(x, "QueryExecutionId", value.asInstanceOf[js.Any])
   }
 }

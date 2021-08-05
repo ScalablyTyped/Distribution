@@ -19,17 +19,14 @@ object ibubbleeventhandlerMod {
   }
   object IBubbleEventHandler {
     
-    @scala.inline
-    def apply(onEventBubbled: IEvent => Boolean): IBubbleEventHandler = {
+    inline def apply(onEventBubbled: IEvent => Boolean): IBubbleEventHandler = {
       val __obj = js.Dynamic.literal(onEventBubbled = js.Any.fromFunction1(onEventBubbled))
       __obj.asInstanceOf[IBubbleEventHandler]
     }
     
-    @scala.inline
-    implicit class IBubbleEventHandlerMutableBuilder[Self <: IBubbleEventHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IBubbleEventHandler](x: Self) {
       
-      @scala.inline
-      def setOnEventBubbled(value: IEvent => Boolean): Self = StObject.set(x, "onEventBubbled", js.Any.fromFunction1(value))
+      inline def setOnEventBubbled(value: IEvent => Boolean): Self = StObject.set(x, "onEventBubbled", js.Any.fromFunction1(value))
     }
   }
 }

@@ -32,16 +32,13 @@ trait IHitArea extends StObject {
 }
 object IHitArea {
   
-  @scala.inline
-  def apply(contains: (Double, Double) => Boolean): IHitArea = {
+  inline def apply(contains: (Double, Double) => Boolean): IHitArea = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains))
     __obj.asInstanceOf[IHitArea]
   }
   
-  @scala.inline
-  implicit class IHitAreaMutableBuilder[Self <: IHitArea] (val x: Self) extends AnyVal {
+  extension [Self <: IHitArea](x: Self) {
     
-    @scala.inline
-    def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+    inline def setContains(value: (Double, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionMethod extends StObject
 object ConnectionMethod {
   
-  @scala.inline
-  def in_band: typings.openssiWebsdk.openssiWebsdkStrings.in_band = "in_band".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.in_band]
+  inline def in_band: typings.openssiWebsdk.openssiWebsdkStrings.in_band = "in_band".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.in_band]
   
-  @scala.inline
-  def invitation: typings.openssiWebsdk.openssiWebsdkStrings.invitation = "invitation".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.invitation]
+  inline def invitation: typings.openssiWebsdk.openssiWebsdkStrings.invitation = "invitation".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.invitation]
   
-  @scala.inline
-  def out_of_band: typings.openssiWebsdk.openssiWebsdkStrings.out_of_band = "out_of_band".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.out_of_band]
+  inline def out_of_band: typings.openssiWebsdk.openssiWebsdkStrings.out_of_band = "out_of_band".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.out_of_band]
 }

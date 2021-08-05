@@ -23,31 +23,23 @@ trait DomainDeliverabilityTrackingOption extends StObject {
 }
 object DomainDeliverabilityTrackingOption {
   
-  @scala.inline
-  def apply(): DomainDeliverabilityTrackingOption = {
+  inline def apply(): DomainDeliverabilityTrackingOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDeliverabilityTrackingOption]
   }
   
-  @scala.inline
-  implicit class DomainDeliverabilityTrackingOptionMutableBuilder[Self <: DomainDeliverabilityTrackingOption] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDeliverabilityTrackingOption](x: Self) {
     
-    @scala.inline
-    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setInboxPlacementTrackingOption(value: InboxPlacementTrackingOption): Self = StObject.set(x, "InboxPlacementTrackingOption", value.asInstanceOf[js.Any])
+    inline def setInboxPlacementTrackingOption(value: InboxPlacementTrackingOption): Self = StObject.set(x, "InboxPlacementTrackingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboxPlacementTrackingOptionUndefined: Self = StObject.set(x, "InboxPlacementTrackingOption", js.undefined)
+    inline def setInboxPlacementTrackingOptionUndefined: Self = StObject.set(x, "InboxPlacementTrackingOption", js.undefined)
     
-    @scala.inline
-    def setSubscriptionStartDate(value: Timestamp): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
+    inline def setSubscriptionStartDate(value: Timestamp): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionStartDateUndefined: Self = StObject.set(x, "SubscriptionStartDate", js.undefined)
+    inline def setSubscriptionStartDateUndefined: Self = StObject.set(x, "SubscriptionStartDate", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait TabMetadataList extends StObject {
 }
 object TabMetadataList {
   
-  @scala.inline
-  def apply(): TabMetadataList = {
+  inline def apply(): TabMetadataList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabMetadataList]
   }
   
-  @scala.inline
-  implicit class TabMetadataListMutableBuilder[Self <: TabMetadataList] (val x: Self) extends AnyVal {
+  extension [Self <: TabMetadataList](x: Self) {
     
-    @scala.inline
-    def setTabs(value: js.Array[TabMetadata]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: js.Array[TabMetadata]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+    inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
-    @scala.inline
-    def setTabsVarargs(value: TabMetadata*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: TabMetadata*): Self = StObject.set(x, "tabs", js.Array(value :_*))
   }
 }

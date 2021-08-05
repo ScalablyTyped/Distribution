@@ -28,25 +28,19 @@ trait ClickQueryOptions
 }
 object ClickQueryOptions {
   
-  @scala.inline
-  def apply(): ClickQueryOptions = {
+  inline def apply(): ClickQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClickQueryOptions]
   }
   
-  @scala.inline
-  implicit class ClickQueryOptionsMutableBuilder[Self <: ClickQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClickQueryOptions](x: Self) {
     
-    @scala.inline
-    def setExpectReload(value: Boolean): Self = StObject.set(x, "expectReload", value.asInstanceOf[js.Any])
+    inline def setExpectReload(value: Boolean): Self = StObject.set(x, "expectReload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectReloadUndefined: Self = StObject.set(x, "expectReload", js.undefined)
+    inline def setExpectReloadUndefined: Self = StObject.set(x, "expectReload", js.undefined)
     
-    @scala.inline
-    def setMethod(value: clickQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: clickQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

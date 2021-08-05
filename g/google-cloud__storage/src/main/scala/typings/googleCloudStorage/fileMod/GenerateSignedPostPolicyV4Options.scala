@@ -19,43 +19,31 @@ trait GenerateSignedPostPolicyV4Options extends StObject {
 }
 object GenerateSignedPostPolicyV4Options {
   
-  @scala.inline
-  def apply(expires: String | Double | Date): GenerateSignedPostPolicyV4Options = {
+  inline def apply(expires: String | Double | Date): GenerateSignedPostPolicyV4Options = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateSignedPostPolicyV4Options]
   }
   
-  @scala.inline
-  implicit class GenerateSignedPostPolicyV4OptionsMutableBuilder[Self <: GenerateSignedPostPolicyV4Options] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateSignedPostPolicyV4Options](x: Self) {
     
-    @scala.inline
-    def setBucketBoundHostname(value: String): Self = StObject.set(x, "bucketBoundHostname", value.asInstanceOf[js.Any])
+    inline def setBucketBoundHostname(value: String): Self = StObject.set(x, "bucketBoundHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketBoundHostnameUndefined: Self = StObject.set(x, "bucketBoundHostname", js.undefined)
+    inline def setBucketBoundHostnameUndefined: Self = StObject.set(x, "bucketBoundHostname", js.undefined)
     
-    @scala.inline
-    def setConditions(value: js.Array[js.Object]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[js.Object]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: js.Object*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: js.Object*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: PolicyFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: PolicyFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
+    inline def setVirtualHostedStyle(value: Boolean): Self = StObject.set(x, "virtualHostedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
+    inline def setVirtualHostedStyleUndefined: Self = StObject.set(x, "virtualHostedStyle", js.undefined)
   }
 }

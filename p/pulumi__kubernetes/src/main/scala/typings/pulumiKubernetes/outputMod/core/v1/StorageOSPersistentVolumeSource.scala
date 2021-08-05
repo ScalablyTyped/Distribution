@@ -36,8 +36,7 @@ trait StorageOSPersistentVolumeSource extends StObject {
 }
 object StorageOSPersistentVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fsType: String,
     readOnly: Boolean,
     secretRef: ObjectReference,
@@ -48,22 +47,16 @@ object StorageOSPersistentVolumeSource {
     __obj.asInstanceOf[StorageOSPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class StorageOSPersistentVolumeSourceMutableBuilder[Self <: StorageOSPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: StorageOSPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: ObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: ObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeName(value: String): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
+    inline def setVolumeName(value: String): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeNamespace(value: String): Self = StObject.set(x, "volumeNamespace", value.asInstanceOf[js.Any])
+    inline def setVolumeNamespace(value: String): Self = StObject.set(x, "volumeNamespace", value.asInstanceOf[js.Any])
   }
 }

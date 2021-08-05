@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "survicate__react-native-survicate"
-version := "1.0-dt-20201017Z-983752"
+version := "1.0-dt-20201017Z-b5a51c"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

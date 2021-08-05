@@ -10,16 +10,13 @@ trait ContactError extends StObject {
 }
 object ContactError {
   
-  @scala.inline
-  def apply(code: Double): ContactError = {
+  inline def apply(code: Double): ContactError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactError]
   }
   
-  @scala.inline
-  implicit class ContactErrorMutableBuilder[Self <: ContactError] (val x: Self) extends AnyVal {
+  extension [Self <: ContactError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

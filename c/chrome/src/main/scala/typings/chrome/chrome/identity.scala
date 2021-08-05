@@ -22,17 +22,14 @@ object identity {
   }
   object AccountInfo {
     
-    @scala.inline
-    def apply(id: String): AccountInfo = {
+    inline def apply(id: String): AccountInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountInfo]
     }
     
-    @scala.inline
-    implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AccountInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,35 +61,26 @@ object identity {
   }
   object TokenDetails {
     
-    @scala.inline
-    def apply(): TokenDetails = {
+    inline def apply(): TokenDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenDetails]
     }
     
-    @scala.inline
-    implicit class TokenDetailsMutableBuilder[Self <: TokenDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TokenDetails](x: Self) {
       
-      @scala.inline
-      def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+      inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
       
-      @scala.inline
-      def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+      inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   
@@ -103,17 +91,14 @@ object identity {
   }
   object TokenInformation {
     
-    @scala.inline
-    def apply(token: String): TokenInformation = {
+    inline def apply(token: String): TokenInformation = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenInformation]
     }
     
-    @scala.inline
-    implicit class TokenInformationMutableBuilder[Self <: TokenInformation] (val x: Self) extends AnyVal {
+    extension [Self <: TokenInformation](x: Self) {
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,20 +112,16 @@ object identity {
   }
   object UserInfo {
     
-    @scala.inline
-    def apply(email: String, id: String): UserInfo = {
+    inline def apply(email: String, id: String): UserInfo = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserInfo]
     }
     
-    @scala.inline
-    implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UserInfo](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,23 +140,18 @@ object identity {
   }
   object WebAuthFlowOptions {
     
-    @scala.inline
-    def apply(url: String): WebAuthFlowOptions = {
+    inline def apply(url: String): WebAuthFlowOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebAuthFlowOptions]
     }
     
-    @scala.inline
-    implicit class WebAuthFlowOptionsMutableBuilder[Self <: WebAuthFlowOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebAuthFlowOptions](x: Self) {
       
-      @scala.inline
-      def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+      inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

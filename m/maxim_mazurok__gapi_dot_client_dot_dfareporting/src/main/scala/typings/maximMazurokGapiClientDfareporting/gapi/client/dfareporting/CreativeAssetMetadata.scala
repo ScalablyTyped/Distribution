@@ -50,97 +50,67 @@ trait CreativeAssetMetadata extends StObject {
 }
 object CreativeAssetMetadata {
   
-  @scala.inline
-  def apply(): CreativeAssetMetadata = {
+  inline def apply(): CreativeAssetMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeAssetMetadata]
   }
   
-  @scala.inline
-  implicit class CreativeAssetMetadataMutableBuilder[Self <: CreativeAssetMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeAssetMetadata](x: Self) {
     
-    @scala.inline
-    def setAssetIdentifier(value: CreativeAssetId): Self = StObject.set(x, "assetIdentifier", value.asInstanceOf[js.Any])
+    inline def setAssetIdentifier(value: CreativeAssetId): Self = StObject.set(x, "assetIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdentifierUndefined: Self = StObject.set(x, "assetIdentifier", js.undefined)
+    inline def setAssetIdentifierUndefined: Self = StObject.set(x, "assetIdentifier", js.undefined)
     
-    @scala.inline
-    def setClickTags(value: js.Array[ClickTag]): Self = StObject.set(x, "clickTags", value.asInstanceOf[js.Any])
+    inline def setClickTags(value: js.Array[ClickTag]): Self = StObject.set(x, "clickTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickTagsUndefined: Self = StObject.set(x, "clickTags", js.undefined)
+    inline def setClickTagsUndefined: Self = StObject.set(x, "clickTags", js.undefined)
     
-    @scala.inline
-    def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value :_*))
+    inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value :_*))
     
-    @scala.inline
-    def setCounterCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "counterCustomEvents", value.asInstanceOf[js.Any])
+    inline def setCounterCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "counterCustomEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterCustomEventsUndefined: Self = StObject.set(x, "counterCustomEvents", js.undefined)
+    inline def setCounterCustomEventsUndefined: Self = StObject.set(x, "counterCustomEvents", js.undefined)
     
-    @scala.inline
-    def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value :_*))
+    inline def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectedFeatures(value: js.Array[String]): Self = StObject.set(x, "detectedFeatures", value.asInstanceOf[js.Any])
+    inline def setDetectedFeatures(value: js.Array[String]): Self = StObject.set(x, "detectedFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedFeaturesUndefined: Self = StObject.set(x, "detectedFeatures", js.undefined)
+    inline def setDetectedFeaturesUndefined: Self = StObject.set(x, "detectedFeatures", js.undefined)
     
-    @scala.inline
-    def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value :_*))
+    inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setExitCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "exitCustomEvents", value.asInstanceOf[js.Any])
+    inline def setExitCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "exitCustomEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCustomEventsUndefined: Self = StObject.set(x, "exitCustomEvents", js.undefined)
+    inline def setExitCustomEventsUndefined: Self = StObject.set(x, "exitCustomEvents", js.undefined)
     
-    @scala.inline
-    def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value :_*))
+    inline def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
+    inline def setIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
+    inline def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRichMedia(value: Boolean): Self = StObject.set(x, "richMedia", value.asInstanceOf[js.Any])
+    inline def setRichMedia(value: Boolean): Self = StObject.set(x, "richMedia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRichMediaUndefined: Self = StObject.set(x, "richMedia", js.undefined)
+    inline def setRichMediaUndefined: Self = StObject.set(x, "richMedia", js.undefined)
     
-    @scala.inline
-    def setTimerCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "timerCustomEvents", value.asInstanceOf[js.Any])
+    inline def setTimerCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "timerCustomEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimerCustomEventsUndefined: Self = StObject.set(x, "timerCustomEvents", js.undefined)
+    inline def setTimerCustomEventsUndefined: Self = StObject.set(x, "timerCustomEvents", js.undefined)
     
-    @scala.inline
-    def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value :_*))
+    inline def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setWarnedValidationRules(value: js.Array[String]): Self = StObject.set(x, "warnedValidationRules", value.asInstanceOf[js.Any])
+    inline def setWarnedValidationRules(value: js.Array[String]): Self = StObject.set(x, "warnedValidationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnedValidationRulesUndefined: Self = StObject.set(x, "warnedValidationRules", js.undefined)
+    inline def setWarnedValidationRulesUndefined: Self = StObject.set(x, "warnedValidationRules", js.undefined)
     
-    @scala.inline
-    def setWarnedValidationRulesVarargs(value: String*): Self = StObject.set(x, "warnedValidationRules", js.Array(value :_*))
+    inline def setWarnedValidationRulesVarargs(value: String*): Self = StObject.set(x, "warnedValidationRules", js.Array(value :_*))
   }
 }

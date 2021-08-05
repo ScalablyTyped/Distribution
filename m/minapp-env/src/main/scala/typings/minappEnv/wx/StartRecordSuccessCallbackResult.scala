@@ -11,16 +11,13 @@ trait StartRecordSuccessCallbackResult extends StObject {
 }
 object StartRecordSuccessCallbackResult {
   
-  @scala.inline
-  def apply(tempFilePath: String): StartRecordSuccessCallbackResult = {
+  inline def apply(tempFilePath: String): StartRecordSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartRecordSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class StartRecordSuccessCallbackResultMutableBuilder[Self <: StartRecordSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartRecordSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

@@ -33,40 +33,29 @@ trait DebugSymbol extends StObject {
 }
 object DebugSymbol {
   
-  @scala.inline
-  def apply(address: NativePointer): DebugSymbol = {
+  inline def apply(address: NativePointer): DebugSymbol = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], fileName = null, lineNumber = null, moduleName = null, name = null)
     __obj.asInstanceOf[DebugSymbol]
   }
   
-  @scala.inline
-  implicit class DebugSymbolMutableBuilder[Self <: DebugSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: DebugSymbol](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameNull: Self = StObject.set(x, "fileName", null)
+    inline def setFileNameNull: Self = StObject.set(x, "fileName", null)
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumberNull: Self = StObject.set(x, "lineNumber", null)
+    inline def setLineNumberNull: Self = StObject.set(x, "lineNumber", null)
     
-    @scala.inline
-    def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
+    inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleNameNull: Self = StObject.set(x, "moduleName", null)
+    inline def setModuleNameNull: Self = StObject.set(x, "moduleName", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
   }
 }

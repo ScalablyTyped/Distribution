@@ -43,8 +43,7 @@ trait TableListListItem extends StObject {
 }
 object TableListListItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionsOpen: Boolean,
     actionsSections: Collection[Collection[ActionButton | ActionToggle]],
     error: Error,
@@ -55,22 +54,16 @@ object TableListListItem {
     __obj.asInstanceOf[TableListListItem]
   }
   
-  @scala.inline
-  implicit class TableListListItemMutableBuilder[Self <: TableListListItem] (val x: Self) extends AnyVal {
+  extension [Self <: TableListListItem](x: Self) {
     
-    @scala.inline
-    def setActionsOpen(value: Boolean): Self = StObject.set(x, "actionsOpen", value.asInstanceOf[js.Any])
+    inline def setActionsOpen(value: Boolean): Self = StObject.set(x, "actionsOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsSections(value: Collection[Collection[ActionButton | ActionToggle]]): Self = StObject.set(x, "actionsSections", value.asInstanceOf[js.Any])
+    inline def setActionsSections(value: Collection[Collection[ActionButton | ActionToggle]]): Self = StObject.set(x, "actionsSections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesTestResult extends StObject {
 }
 object EnumValuesTestResult {
   
-  @scala.inline
-  def apply(enumValues: TestResult): EnumValuesTestResult = {
+  inline def apply(enumValues: TestResult): EnumValuesTestResult = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesTestResult]
   }
   
-  @scala.inline
-  implicit class EnumValuesTestResultMutableBuilder[Self <: EnumValuesTestResult] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesTestResult](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: TestResult): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: TestResult): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

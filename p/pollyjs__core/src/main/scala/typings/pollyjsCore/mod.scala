@@ -72,27 +72,19 @@ object mod {
     @JSImport("@pollyjs/core", "Polly.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def off(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def off(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def on(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def on(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def once(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def once(event: PollyEvent, listener: PollyEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def register(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def register(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def unregister(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def unregister(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unregister(Factory: TypeofAdapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unregister(Factory: TypeofPersister): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(Factory.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@pollyjs/core", "PollyServer")
@@ -191,61 +183,44 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fixed(ms: Double): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+    inline def fixed(ms: Double): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
     
-    @scala.inline
-    def relative(ratio: Double): js.Function1[/* ms */ Double, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("relative")(ratio.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ms */ Double, js.Promise[Unit]]]
+    inline def relative(ratio: Double): js.Function1[/* ms */ Double, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("relative")(ratio.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ms */ Double, js.Promise[Unit]]]
   }
   
   object setupMocha {
     
-    @scala.inline
-    def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-    @scala.inline
-    def apply(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def apply(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+    inline def apply(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def apply(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@pollyjs/core", "setupMocha")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def afterEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")().asInstanceOf[Unit]
-    @scala.inline
-    def afterEach(context: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")().asInstanceOf[Unit]
+    inline def afterEach(context: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")().asInstanceOf[Unit]
-    @scala.inline
-    def beforeEach(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def beforeEach(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def beforeEach(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")().asInstanceOf[Unit]
+    inline def beforeEach(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeEach(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeEach(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object setupQunit {
     
-    @scala.inline
-    def apply(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def apply(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def apply(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@pollyjs/core", "setupQunit")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def afterEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def beforeEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def beforeEach(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeEach(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -257,17 +232,13 @@ object mod {
   trait ACTION extends StObject
   object ACTION {
     
-    @scala.inline
-    def intercept: typings.pollyjsCore.pollyjsCoreStrings.intercept = "intercept".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.intercept]
+    inline def intercept: typings.pollyjsCore.pollyjsCoreStrings.intercept = "intercept".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.intercept]
     
-    @scala.inline
-    def passthrough: typings.pollyjsCore.pollyjsCoreStrings.passthrough = "passthrough".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.passthrough]
+    inline def passthrough: typings.pollyjsCore.pollyjsCoreStrings.passthrough = "passthrough".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.passthrough]
     
-    @scala.inline
-    def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
+    inline def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
     
-    @scala.inline
-    def replay: typings.pollyjsCore.pollyjsCoreStrings.replay = "replay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.replay]
+    inline def replay: typings.pollyjsCore.pollyjsCoreStrings.replay = "replay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.replay]
   }
   
   type AbortEventListener = js.Function2[/* req */ Request, /* event */ ListenerEvent, Unit | js.Promise[Unit]]
@@ -282,14 +253,11 @@ object mod {
   trait EXPIRY_STRATEGY extends StObject
   object EXPIRY_STRATEGY {
     
-    @scala.inline
-    def error: typings.pollyjsCore.pollyjsCoreStrings.error = "error".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.error]
+    inline def error: typings.pollyjsCore.pollyjsCoreStrings.error = "error".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.error]
     
-    @scala.inline
-    def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
+    inline def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
     
-    @scala.inline
-    def warn: typings.pollyjsCore.pollyjsCoreStrings.warn = "warn".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.warn]
+    inline def warn: typings.pollyjsCore.pollyjsCoreStrings.warn = "warn".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.warn]
   }
   
   type ErrorEventListener = js.Function3[
@@ -348,20 +316,16 @@ object mod {
   }
   object Interceptor {
     
-    @scala.inline
-    def apply(abort: () => Unit, passthrough: () => Unit): Interceptor = {
+    inline def apply(abort: () => Unit, passthrough: () => Unit): Interceptor = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), passthrough = js.Any.fromFunction0(passthrough))
       __obj.asInstanceOf[Interceptor]
     }
     
-    @scala.inline
-    implicit class InterceptorMutableBuilder[Self <: Interceptor] (val x: Self) extends AnyVal {
+    extension [Self <: Interceptor](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPassthrough(value: () => Unit): Self = StObject.set(x, "passthrough", js.Any.fromFunction0(value))
+      inline def setPassthrough(value: () => Unit): Self = StObject.set(x, "passthrough", js.Any.fromFunction0(value))
     }
   }
   
@@ -373,21 +337,17 @@ object mod {
   }
   object ListenerEvent {
     
-    @scala.inline
-    def apply(stopPropagation: () => Unit, `type`: String): ListenerEvent = {
+    inline def apply(stopPropagation: () => Unit, `type`: String): ListenerEvent = {
       val __obj = js.Dynamic.literal(stopPropagation = js.Any.fromFunction0(stopPropagation))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListenerEvent]
     }
     
-    @scala.inline
-    implicit class ListenerEventMutableBuilder[Self <: ListenerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerEvent](x: Self) {
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,17 +360,13 @@ object mod {
   trait MODE extends StObject
   object MODE {
     
-    @scala.inline
-    def passthrough: typings.pollyjsCore.pollyjsCoreStrings.passthrough = "passthrough".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.passthrough]
+    inline def passthrough: typings.pollyjsCore.pollyjsCoreStrings.passthrough = "passthrough".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.passthrough]
     
-    @scala.inline
-    def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
+    inline def record: typings.pollyjsCore.pollyjsCoreStrings.record = "record".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.record]
     
-    @scala.inline
-    def replay: typings.pollyjsCore.pollyjsCoreStrings.replay = "replay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.replay]
+    inline def replay: typings.pollyjsCore.pollyjsCoreStrings.replay = "replay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.replay]
     
-    @scala.inline
-    def stopped: typings.pollyjsCore.pollyjsCoreStrings.stopped = "stopped".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.stopped]
+    inline def stopped: typings.pollyjsCore.pollyjsCoreStrings.stopped = "stopped".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.stopped]
   }
   
   type MatchBy[T, R] = js.Function2[/* input */ T, /* req */ Request, R]
@@ -447,104 +403,72 @@ object mod {
   }
   object PollyConfig {
     
-    @scala.inline
-    def apply(): PollyConfig = {
+    inline def apply(): PollyConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PollyConfig]
     }
     
-    @scala.inline
-    implicit class PollyConfigMutableBuilder[Self <: PollyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PollyConfig](x: Self) {
       
-      @scala.inline
-      def setAdapterOptions(value: Dictkey): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
+      inline def setAdapterOptions(value: Dictkey): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterOptionsUndefined: Self = StObject.set(x, "adapterOptions", js.undefined)
+      inline def setAdapterOptionsUndefined: Self = StObject.set(x, "adapterOptions", js.undefined)
       
-      @scala.inline
-      def setAdapters(value: js.Array[String | TypeofAdapter]): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
+      inline def setAdapters(value: js.Array[String | TypeofAdapter]): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdaptersUndefined: Self = StObject.set(x, "adapters", js.undefined)
+      inline def setAdaptersUndefined: Self = StObject.set(x, "adapters", js.undefined)
       
-      @scala.inline
-      def setAdaptersVarargs(value: (String | TypeofAdapter)*): Self = StObject.set(x, "adapters", js.Array(value :_*))
+      inline def setAdaptersVarargs(value: (String | TypeofAdapter)*): Self = StObject.set(x, "adapters", js.Array(value :_*))
       
-      @scala.inline
-      def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInNull: Self = StObject.set(x, "expiresIn", null)
+      inline def setExpiresInNull: Self = StObject.set(x, "expiresIn", null)
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      @scala.inline
-      def setExpiryStrategy(value: EXPIRY_STRATEGY): Self = StObject.set(x, "expiryStrategy", value.asInstanceOf[js.Any])
+      inline def setExpiryStrategy(value: EXPIRY_STRATEGY): Self = StObject.set(x, "expiryStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryStrategyUndefined: Self = StObject.set(x, "expiryStrategy", js.undefined)
+      inline def setExpiryStrategyUndefined: Self = StObject.set(x, "expiryStrategy", js.undefined)
       
-      @scala.inline
-      def setFlushRequestsOnStop(value: Boolean): Self = StObject.set(x, "flushRequestsOnStop", value.asInstanceOf[js.Any])
+      inline def setFlushRequestsOnStop(value: Boolean): Self = StObject.set(x, "flushRequestsOnStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushRequestsOnStopUndefined: Self = StObject.set(x, "flushRequestsOnStop", js.undefined)
+      inline def setFlushRequestsOnStopUndefined: Self = StObject.set(x, "flushRequestsOnStop", js.undefined)
       
-      @scala.inline
-      def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      @scala.inline
-      def setMatchRequestsBy(value: Body): Self = StObject.set(x, "matchRequestsBy", value.asInstanceOf[js.Any])
+      inline def setMatchRequestsBy(value: Body): Self = StObject.set(x, "matchRequestsBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchRequestsByUndefined: Self = StObject.set(x, "matchRequestsBy", js.undefined)
+      inline def setMatchRequestsByUndefined: Self = StObject.set(x, "matchRequestsBy", js.undefined)
       
-      @scala.inline
-      def setMode(value: MODE): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: MODE): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPersister(value: String | TypeofPersister): Self = StObject.set(x, "persister", value.asInstanceOf[js.Any])
+      inline def setPersister(value: String | TypeofPersister): Self = StObject.set(x, "persister", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersisterOptions(value: DisableSortingHarEntries): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
+      inline def setPersisterOptions(value: DisableSortingHarEntries): Self = StObject.set(x, "persisterOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersisterOptionsUndefined: Self = StObject.set(x, "persisterOptions", js.undefined)
+      inline def setPersisterOptionsUndefined: Self = StObject.set(x, "persisterOptions", js.undefined)
       
-      @scala.inline
-      def setPersisterUndefined: Self = StObject.set(x, "persister", js.undefined)
+      inline def setPersisterUndefined: Self = StObject.set(x, "persister", js.undefined)
       
-      @scala.inline
-      def setRecordFailedRequests(value: Boolean): Self = StObject.set(x, "recordFailedRequests", value.asInstanceOf[js.Any])
+      inline def setRecordFailedRequests(value: Boolean): Self = StObject.set(x, "recordFailedRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordFailedRequestsUndefined: Self = StObject.set(x, "recordFailedRequests", js.undefined)
+      inline def setRecordFailedRequestsUndefined: Self = StObject.set(x, "recordFailedRequests", js.undefined)
       
-      @scala.inline
-      def setRecordIfMissing(value: Boolean): Self = StObject.set(x, "recordIfMissing", value.asInstanceOf[js.Any])
+      inline def setRecordIfMissing(value: Boolean): Self = StObject.set(x, "recordIfMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordIfMissingUndefined: Self = StObject.set(x, "recordIfMissing", js.undefined)
+      inline def setRecordIfMissingUndefined: Self = StObject.set(x, "recordIfMissing", js.undefined)
       
-      @scala.inline
-      def setTiming(value: (js.Function1[/* ms */ Double, js.Promise[Unit]]) | js.Function0[js.Promise[Unit]]): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+      inline def setTiming(value: (js.Function1[/* ms */ Double, js.Promise[Unit]]) | js.Function0[js.Promise[Unit]]): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimingFunction0(value: () => js.Promise[Unit]): Self = StObject.set(x, "timing", js.Any.fromFunction0(value))
+      inline def setTimingFunction0(value: () => js.Promise[Unit]): Self = StObject.set(x, "timing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimingFunction1(value: /* ms */ Double => js.Promise[Unit]): Self = StObject.set(x, "timing", js.Any.fromFunction1(value))
+      inline def setTimingFunction1(value: /* ms */ Double => js.Promise[Unit]): Self = StObject.set(x, "timing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+      inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
     }
   }
   
@@ -556,14 +480,11 @@ object mod {
   trait PollyEvent extends StObject
   object PollyEvent {
     
-    @scala.inline
-    def create: typings.pollyjsCore.pollyjsCoreStrings.create = "create".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.create]
+    inline def create: typings.pollyjsCore.pollyjsCoreStrings.create = "create".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.create]
     
-    @scala.inline
-    def register: typings.pollyjsCore.pollyjsCoreStrings.register = "register".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.register]
+    inline def register: typings.pollyjsCore.pollyjsCoreStrings.register = "register".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.register]
     
-    @scala.inline
-    def stop: typings.pollyjsCore.pollyjsCoreStrings.stop = "stop".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.stop]
+    inline def stop: typings.pollyjsCore.pollyjsCoreStrings.stop = "stop".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.stop]
   }
   
   type PollyEventListener = js.Function1[/* poll */ Polly, Unit]
@@ -582,11 +503,9 @@ object mod {
   trait RecordingRouteEvent extends StObject
   object RecordingRouteEvent {
     
-    @scala.inline
-    def beforePersist: typings.pollyjsCore.pollyjsCoreStrings.beforePersist = "beforePersist".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforePersist]
+    inline def beforePersist: typings.pollyjsCore.pollyjsCoreStrings.beforePersist = "beforePersist".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforePersist]
     
-    @scala.inline
-    def beforeReplay: typings.pollyjsCore.pollyjsCoreStrings.beforeReplay = "beforeReplay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforeReplay]
+    inline def beforeReplay: typings.pollyjsCore.pollyjsCoreStrings.beforeReplay = "beforeReplay".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforeReplay]
   }
   
   @js.native
@@ -667,10 +586,8 @@ object mod {
   trait ResponseRouteEvent extends StObject
   object ResponseRouteEvent {
     
-    @scala.inline
-    def beforeResponse: typings.pollyjsCore.pollyjsCoreStrings.beforeResponse = "beforeResponse".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforeResponse]
+    inline def beforeResponse: typings.pollyjsCore.pollyjsCoreStrings.beforeResponse = "beforeResponse".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.beforeResponse]
     
-    @scala.inline
-    def response: typings.pollyjsCore.pollyjsCoreStrings.response = "response".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.response]
+    inline def response: typings.pollyjsCore.pollyjsCoreStrings.response = "response".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.response]
   }
 }

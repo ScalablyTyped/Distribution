@@ -20,52 +20,37 @@ trait ConsulOptions extends StObject {
 }
 object ConsulOptions {
   
-  @scala.inline
-  def apply(): ConsulOptions = {
+  inline def apply(): ConsulOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConsulOptions]
   }
   
-  @scala.inline
-  implicit class ConsulOptionsMutableBuilder[Self <: ConsulOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConsulOptions](x: Self) {
     
-    @scala.inline
-    def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+    inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+    inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
-    @scala.inline
-    def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+    inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaults(value: CommonOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: CommonOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setPromisify(value: Boolean | js.Function): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
+    inline def setPromisify(value: Boolean | js.Function): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
+    inline def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
   }
 }

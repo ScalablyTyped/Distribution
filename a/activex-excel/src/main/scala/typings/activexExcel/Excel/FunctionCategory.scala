@@ -37,45 +37,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionCategory extends StObject
 object FunctionCategory {
   
-  @scala.inline
-  def Commands: `10` = 10.asInstanceOf[`10`]
+  inline def Commands: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def Customizing: `11` = 11.asInstanceOf[`11`]
+  inline def Customizing: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def DDEAndExternal: `13` = 13.asInstanceOf[`13`]
+  inline def DDEAndExternal: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def Database: `6` = 6.asInstanceOf[`6`]
+  inline def Database: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def DateAndTime: `2` = 2.asInstanceOf[`2`]
+  inline def DateAndTime: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Financial: `1` = 1.asInstanceOf[`1`]
+  inline def Financial: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Information: `9` = 9.asInstanceOf[`9`]
+  inline def Information: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def Logical: `8` = 8.asInstanceOf[`8`]
+  inline def Logical: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def LookupAndReference: `5` = 5.asInstanceOf[`5`]
+  inline def LookupAndReference: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def MacroControl: `12` = 12.asInstanceOf[`12`]
+  inline def MacroControl: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def MathAndTrig: `3` = 3.asInstanceOf[`3`]
+  inline def MathAndTrig: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Statistical: `4` = 4.asInstanceOf[`4`]
+  inline def Statistical: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Text: `7` = 7.asInstanceOf[`7`]
+  inline def Text: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def UserDefined: `14` = 14.asInstanceOf[`14`]
+  inline def UserDefined: `14` = 14.asInstanceOf[`14`]
 }

@@ -18,31 +18,23 @@ trait BatchGetAggregateResourceConfigResponse extends StObject {
 }
 object BatchGetAggregateResourceConfigResponse {
   
-  @scala.inline
-  def apply(): BatchGetAggregateResourceConfigResponse = {
+  inline def apply(): BatchGetAggregateResourceConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetAggregateResourceConfigResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetAggregateResourceConfigResponseMutableBuilder[Self <: BatchGetAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetAggregateResourceConfigResponse](x: Self) {
     
-    @scala.inline
-    def setBaseConfigurationItems(value: BaseConfigurationItems): Self = StObject.set(x, "BaseConfigurationItems", value.asInstanceOf[js.Any])
+    inline def setBaseConfigurationItems(value: BaseConfigurationItems): Self = StObject.set(x, "BaseConfigurationItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseConfigurationItemsUndefined: Self = StObject.set(x, "BaseConfigurationItems", js.undefined)
+    inline def setBaseConfigurationItemsUndefined: Self = StObject.set(x, "BaseConfigurationItems", js.undefined)
     
-    @scala.inline
-    def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = StObject.set(x, "BaseConfigurationItems", js.Array(value :_*))
+    inline def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = StObject.set(x, "BaseConfigurationItems", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedResourceIdentifiers(value: UnprocessedResourceIdentifierList): Self = StObject.set(x, "UnprocessedResourceIdentifiers", value.asInstanceOf[js.Any])
+    inline def setUnprocessedResourceIdentifiers(value: UnprocessedResourceIdentifierList): Self = StObject.set(x, "UnprocessedResourceIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedResourceIdentifiersUndefined: Self = StObject.set(x, "UnprocessedResourceIdentifiers", js.undefined)
+    inline def setUnprocessedResourceIdentifiersUndefined: Self = StObject.set(x, "UnprocessedResourceIdentifiers", js.undefined)
     
-    @scala.inline
-    def setUnprocessedResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "UnprocessedResourceIdentifiers", js.Array(value :_*))
+    inline def setUnprocessedResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "UnprocessedResourceIdentifiers", js.Array(value :_*))
   }
 }

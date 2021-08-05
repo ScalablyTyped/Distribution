@@ -16,37 +16,27 @@ trait PhotoSettings extends StObject {
 }
 object PhotoSettings {
   
-  @scala.inline
-  def apply(): PhotoSettings = {
+  inline def apply(): PhotoSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhotoSettings]
   }
   
-  @scala.inline
-  implicit class PhotoSettingsMutableBuilder[Self <: PhotoSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoSettings](x: Self) {
     
-    @scala.inline
-    def setFillLightMode(value: FillLightMode): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
+    inline def setFillLightMode(value: FillLightMode): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillLightModeUndefined: Self = StObject.set(x, "fillLightMode", js.undefined)
+    inline def setFillLightModeUndefined: Self = StObject.set(x, "fillLightMode", js.undefined)
     
-    @scala.inline
-    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+    inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
+    inline def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
     
-    @scala.inline
-    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+    inline def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
+    inline def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
     
-    @scala.inline
-    def setRedEyeReduction(value: Boolean): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
+    inline def setRedEyeReduction(value: Boolean): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedEyeReductionUndefined: Self = StObject.set(x, "redEyeReduction", js.undefined)
+    inline def setRedEyeReductionUndefined: Self = StObject.set(x, "redEyeReduction", js.undefined)
   }
 }

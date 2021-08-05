@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InspectorIssueCode extends StObject
 object InspectorIssueCode {
   
-  @scala.inline
-  def BlockedByResponseIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByResponseIssue = "BlockedByResponseIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByResponseIssue]
+  inline def BlockedByResponseIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByResponseIssue = "BlockedByResponseIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByResponseIssue]
   
-  @scala.inline
-  def ContentSecurityPolicyIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityPolicyIssue = "ContentSecurityPolicyIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityPolicyIssue]
+  inline def ContentSecurityPolicyIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityPolicyIssue = "ContentSecurityPolicyIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityPolicyIssue]
   
-  @scala.inline
-  def HeavyAdIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdIssue = "HeavyAdIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdIssue]
+  inline def HeavyAdIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdIssue = "HeavyAdIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdIssue]
   
-  @scala.inline
-  def MixedContentIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentIssue = "MixedContentIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentIssue]
+  inline def MixedContentIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentIssue = "MixedContentIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentIssue]
   
-  @scala.inline
-  def SameSiteCookieIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCookieIssue = "SameSiteCookieIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCookieIssue]
+  inline def SameSiteCookieIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCookieIssue = "SameSiteCookieIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCookieIssue]
 }

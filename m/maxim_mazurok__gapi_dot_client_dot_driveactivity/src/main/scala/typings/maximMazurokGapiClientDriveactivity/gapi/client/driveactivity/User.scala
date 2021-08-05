@@ -17,31 +17,23 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(): User = {
+  inline def apply(): User = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setDeletedUser(value: js.Any): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
+    inline def setDeletedUser(value: js.Any): Self = StObject.set(x, "deletedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
+    inline def setDeletedUserUndefined: Self = StObject.set(x, "deletedUser", js.undefined)
     
-    @scala.inline
-    def setKnownUser(value: KnownUser): Self = StObject.set(x, "knownUser", value.asInstanceOf[js.Any])
+    inline def setKnownUser(value: KnownUser): Self = StObject.set(x, "knownUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
+    inline def setKnownUserUndefined: Self = StObject.set(x, "knownUser", js.undefined)
     
-    @scala.inline
-    def setUnknownUser(value: js.Any): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
+    inline def setUnknownUser(value: js.Any): Self = StObject.set(x, "unknownUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
+    inline def setUnknownUserUndefined: Self = StObject.set(x, "unknownUser", js.undefined)
   }
 }

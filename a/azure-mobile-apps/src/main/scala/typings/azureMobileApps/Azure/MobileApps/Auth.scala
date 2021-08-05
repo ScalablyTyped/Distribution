@@ -14,22 +14,17 @@ trait Auth extends StObject {
 }
 object Auth {
   
-  @scala.inline
-  def apply(decode: String => User, sign: js.Any => String, validate: String => Thenable[User]): Auth = {
+  inline def apply(decode: String => User, sign: js.Any => String, validate: String => Thenable[User]): Auth = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), sign = js.Any.fromFunction1(sign), validate = js.Any.fromFunction1(validate))
     __obj.asInstanceOf[Auth]
   }
   
-  @scala.inline
-  implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+  extension [Self <: Auth](x: Self) {
     
-    @scala.inline
-    def setDecode(value: String => User): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: String => User): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSign(value: js.Any => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+    inline def setSign(value: js.Any => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidate(value: String => Thenable[User]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: String => Thenable[User]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

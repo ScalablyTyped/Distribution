@@ -13,19 +13,15 @@ trait YArray
 }
 object YArray {
   
-  @scala.inline
-  def apply(y: js.Array[String]): YArray = {
+  inline def apply(y: js.Array[String]): YArray = {
     val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[YArray]
   }
   
-  @scala.inline
-  implicit class YArrayMutableBuilder[Self <: YArray] (val x: Self) extends AnyVal {
+  extension [Self <: YArray](x: Self) {
     
-    @scala.inline
-    def setY(value: js.Array[String]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: js.Array[String]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

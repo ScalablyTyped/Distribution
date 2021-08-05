@@ -23,17 +23,14 @@ trait StickyNotesContextMenuExecutedEventArgs extends StObject {
 }
 object StickyNotesContextMenuExecutedEventArgs {
   
-  @scala.inline
-  def apply(): StickyNotesContextMenuExecutedEventArgs = {
+  inline def apply(): StickyNotesContextMenuExecutedEventArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("StickyNotesContextMenuExecuted")
     __obj.asInstanceOf[StickyNotesContextMenuExecutedEventArgs]
   }
   
-  @scala.inline
-  implicit class StickyNotesContextMenuExecutedEventArgsMutableBuilder[Self <: StickyNotesContextMenuExecutedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: StickyNotesContextMenuExecutedEventArgs](x: Self) {
     
-    @scala.inline
-    def setType(value: StickyNotesContextMenuExecuted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StickyNotesContextMenuExecuted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

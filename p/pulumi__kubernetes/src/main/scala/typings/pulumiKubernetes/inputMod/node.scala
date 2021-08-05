@@ -26,20 +26,16 @@ object node {
     }
     object Overhead {
       
-      @scala.inline
-      def apply(): Overhead = {
+      inline def apply(): Overhead = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Overhead]
       }
       
-      @scala.inline
-      implicit class OverheadMutableBuilder[Self <: Overhead] (val x: Self) extends AnyVal {
+      extension [Self <: Overhead](x: Self) {
         
-        @scala.inline
-        def setPodFixed(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "podFixed", value.asInstanceOf[js.Any])
+        inline def setPodFixed(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "podFixed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPodFixedUndefined: Self = StObject.set(x, "podFixed", js.undefined)
+        inline def setPodFixedUndefined: Self = StObject.set(x, "podFixed", js.undefined)
       }
     }
     
@@ -70,35 +66,26 @@ object node {
     }
     object RuntimeClass {
       
-      @scala.inline
-      def apply(spec: Input[RuntimeClassSpec]): RuntimeClass = {
+      inline def apply(spec: Input[RuntimeClassSpec]): RuntimeClass = {
         val __obj = js.Dynamic.literal(spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[RuntimeClass]
       }
       
-      @scala.inline
-      implicit class RuntimeClassMutableBuilder[Self <: RuntimeClass] (val x: Self) extends AnyVal {
+      extension [Self <: RuntimeClass](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[nodeDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[nodeDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RuntimeClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RuntimeClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[RuntimeClassSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[RuntimeClassSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       }
     }
     
@@ -124,29 +111,22 @@ object node {
     }
     object RuntimeClassSpec {
       
-      @scala.inline
-      def apply(runtimeHandler: Input[String]): RuntimeClassSpec = {
+      inline def apply(runtimeHandler: Input[String]): RuntimeClassSpec = {
         val __obj = js.Dynamic.literal(runtimeHandler = runtimeHandler.asInstanceOf[js.Any])
         __obj.asInstanceOf[RuntimeClassSpec]
       }
       
-      @scala.inline
-      implicit class RuntimeClassSpecMutableBuilder[Self <: RuntimeClassSpec] (val x: Self) extends AnyVal {
+      extension [Self <: RuntimeClassSpec](x: Self) {
         
-        @scala.inline
-        def setOverhead(value: Input[Overhead]): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
+        inline def setOverhead(value: Input[Overhead]): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
+        inline def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
         
-        @scala.inline
-        def setRuntimeHandler(value: Input[String]): Self = StObject.set(x, "runtimeHandler", value.asInstanceOf[js.Any])
+        inline def setRuntimeHandler(value: Input[String]): Self = StObject.set(x, "runtimeHandler", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScheduling(value: Input[Scheduling]): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
+        inline def setScheduling(value: Input[Scheduling]): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
+        inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
       }
     }
     
@@ -167,29 +147,22 @@ object node {
     }
     object Scheduling {
       
-      @scala.inline
-      def apply(): Scheduling = {
+      inline def apply(): Scheduling = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Scheduling]
       }
       
-      @scala.inline
-      implicit class SchedulingMutableBuilder[Self <: Scheduling] (val x: Self) extends AnyVal {
+      extension [Self <: Scheduling](x: Self) {
         
-        @scala.inline
-        def setNodeSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nodeSelector", value.asInstanceOf[js.Any])
+        inline def setNodeSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nodeSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodeSelectorUndefined: Self = StObject.set(x, "nodeSelector", js.undefined)
+        inline def setNodeSelectorUndefined: Self = StObject.set(x, "nodeSelector", js.undefined)
         
-        @scala.inline
-        def setTolerations(value: Input[js.Array[Input[Toleration]]]): Self = StObject.set(x, "tolerations", value.asInstanceOf[js.Any])
+        inline def setTolerations(value: Input[js.Array[Input[Toleration]]]): Self = StObject.set(x, "tolerations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTolerationsUndefined: Self = StObject.set(x, "tolerations", js.undefined)
+        inline def setTolerationsUndefined: Self = StObject.set(x, "tolerations", js.undefined)
         
-        @scala.inline
-        def setTolerationsVarargs(value: Input[Toleration]*): Self = StObject.set(x, "tolerations", js.Array(value :_*))
+        inline def setTolerationsVarargs(value: Input[Toleration]*): Self = StObject.set(x, "tolerations", js.Array(value :_*))
       }
     }
   }
@@ -208,20 +181,16 @@ object node {
     }
     object Overhead {
       
-      @scala.inline
-      def apply(): Overhead = {
+      inline def apply(): Overhead = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Overhead]
       }
       
-      @scala.inline
-      implicit class OverheadMutableBuilder[Self <: Overhead] (val x: Self) extends AnyVal {
+      extension [Self <: Overhead](x: Self) {
         
-        @scala.inline
-        def setPodFixed(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "podFixed", value.asInstanceOf[js.Any])
+        inline def setPodFixed(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "podFixed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPodFixedUndefined: Self = StObject.set(x, "podFixed", js.undefined)
+        inline def setPodFixedUndefined: Self = StObject.set(x, "podFixed", js.undefined)
       }
     }
     
@@ -262,47 +231,34 @@ object node {
     }
     object RuntimeClass {
       
-      @scala.inline
-      def apply(handler: Input[String]): RuntimeClass = {
+      inline def apply(handler: Input[String]): RuntimeClass = {
         val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
         __obj.asInstanceOf[RuntimeClass]
       }
       
-      @scala.inline
-      implicit class RuntimeClassMutableBuilder[Self <: RuntimeClass] (val x: Self) extends AnyVal {
+      extension [Self <: RuntimeClass](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[nodeDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[nodeDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setHandler(value: Input[String]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+        inline def setHandler(value: Input[String]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RuntimeClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RuntimeClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setOverhead(value: Input[Overhead]): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
+        inline def setOverhead(value: Input[Overhead]): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
+        inline def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
         
-        @scala.inline
-        def setScheduling(value: Input[Scheduling]): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
+        inline def setScheduling(value: Input[Scheduling]): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
+        inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
       }
     }
     
@@ -323,29 +279,22 @@ object node {
     }
     object Scheduling {
       
-      @scala.inline
-      def apply(): Scheduling = {
+      inline def apply(): Scheduling = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Scheduling]
       }
       
-      @scala.inline
-      implicit class SchedulingMutableBuilder[Self <: Scheduling] (val x: Self) extends AnyVal {
+      extension [Self <: Scheduling](x: Self) {
         
-        @scala.inline
-        def setNodeSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nodeSelector", value.asInstanceOf[js.Any])
+        inline def setNodeSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nodeSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodeSelectorUndefined: Self = StObject.set(x, "nodeSelector", js.undefined)
+        inline def setNodeSelectorUndefined: Self = StObject.set(x, "nodeSelector", js.undefined)
         
-        @scala.inline
-        def setTolerations(value: Input[js.Array[Input[Toleration]]]): Self = StObject.set(x, "tolerations", value.asInstanceOf[js.Any])
+        inline def setTolerations(value: Input[js.Array[Input[Toleration]]]): Self = StObject.set(x, "tolerations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTolerationsUndefined: Self = StObject.set(x, "tolerations", js.undefined)
+        inline def setTolerationsUndefined: Self = StObject.set(x, "tolerations", js.undefined)
         
-        @scala.inline
-        def setTolerationsVarargs(value: Input[Toleration]*): Self = StObject.set(x, "tolerations", js.Array(value :_*))
+        inline def setTolerationsVarargs(value: Input[Toleration]*): Self = StObject.set(x, "tolerations", js.Array(value :_*))
       }
     }
   }

@@ -32,11 +32,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def GetHashCode(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHashCode")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def GetHashCode(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHashCode")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def StringifyNonCircular(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("StringifyNonCircular")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def StringifyNonCircular(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("StringifyNonCircular")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
     trait IEqualityComparer[T] extends StObject {
       
@@ -46,20 +44,16 @@ object mod {
     }
     object IEqualityComparer {
       
-      @scala.inline
-      def apply[T](Equals: (T, T) => Boolean, GetHashCode: T => Double): IEqualityComparer[T] = {
+      inline def apply[T](Equals: (T, T) => Boolean, GetHashCode: T => Double): IEqualityComparer[T] = {
         val __obj = js.Dynamic.literal(Equals = js.Any.fromFunction2(Equals), GetHashCode = js.Any.fromFunction1(GetHashCode))
         __obj.asInstanceOf[IEqualityComparer[T]]
       }
       
-      @scala.inline
-      implicit class IEqualityComparerMutableBuilder[Self <: IEqualityComparer[?], T] (val x: Self & IEqualityComparer[T]) extends AnyVal {
+      extension [Self <: IEqualityComparer[?], T](x: Self & IEqualityComparer[T]) {
         
-        @scala.inline
-        def setEquals(value: (T, T) => Boolean): Self = StObject.set(x, "Equals", js.Any.fromFunction2(value))
+        inline def setEquals(value: (T, T) => Boolean): Self = StObject.set(x, "Equals", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setGetHashCode(value: T => Double): Self = StObject.set(x, "GetHashCode", js.Any.fromFunction1(value))
+        inline def setGetHashCode(value: T => Double): Self = StObject.set(x, "GetHashCode", js.Any.fromFunction1(value))
       }
     }
     
@@ -71,23 +65,18 @@ object mod {
     }
     object IGrouping {
       
-      @scala.inline
-      def apply[TKey, T](Elements: js.Array[T], Key: TKey): IGrouping[TKey, T] = {
+      inline def apply[TKey, T](Elements: js.Array[T], Key: TKey): IGrouping[TKey, T] = {
         val __obj = js.Dynamic.literal(Elements = Elements.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
         __obj.asInstanceOf[IGrouping[TKey, T]]
       }
       
-      @scala.inline
-      implicit class IGroupingMutableBuilder[Self <: IGrouping[?, ?], TKey, T] (val x: Self & (IGrouping[TKey, T])) extends AnyVal {
+      extension [Self <: IGrouping[?, ?], TKey, T](x: Self & (IGrouping[TKey, T])) {
         
-        @scala.inline
-        def setElements(value: js.Array[T]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
+        inline def setElements(value: js.Array[T]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementsVarargs(value: T*): Self = StObject.set(x, "Elements", js.Array(value :_*))
+        inline def setElementsVarargs(value: T*): Self = StObject.set(x, "Elements", js.Array(value :_*))
         
-        @scala.inline
-        def setKey(value: TKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+        inline def setKey(value: TKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -588,6 +577,6 @@ object mod {
     def Zip[TInner, TResult](array: js.Array[TInner], resultSelector: js.Function2[/* o */ T, /* i */ TInner, TResult]): Linq[TResult] = js.native
     
     /** {T[]} Internal array reference. */
-    var a: js.Array[T] = js.native
+    /* private */ var a: js.Array[T] = js.native
   }
 }

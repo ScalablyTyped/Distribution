@@ -108,8 +108,7 @@ object bitcoinReceivers {
   }
   object IBitcoinReceiver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       amount: Double,
       amount_received: Double,
@@ -137,71 +136,49 @@ object bitcoinReceivers {
       __obj.asInstanceOf[IBitcoinReceiver]
     }
     
-    @scala.inline
-    implicit class IBitcoinReceiverMutableBuilder[Self <: IBitcoinReceiver] (val x: Self) extends AnyVal {
+    extension [Self <: IBitcoinReceiver](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_received(value: Double): Self = StObject.set(x, "amount_received", value.asInstanceOf[js.Any])
+      inline def setAmount_received(value: Double): Self = StObject.set(x, "amount_received", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitcoin_amount(value: Double): Self = StObject.set(x, "bitcoin_amount", value.asInstanceOf[js.Any])
+      inline def setBitcoin_amount(value: Double): Self = StObject.set(x, "bitcoin_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitcoin_amount_received(value: Double): Self = StObject.set(x, "bitcoin_amount_received", value.asInstanceOf[js.Any])
+      inline def setBitcoin_amount_received(value: Double): Self = StObject.set(x, "bitcoin_amount_received", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitcoin_uri(value: Double): Self = StObject.set(x, "bitcoin_uri", value.asInstanceOf[js.Any])
+      inline def setBitcoin_uri(value: Double): Self = StObject.set(x, "bitcoin_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+      inline def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInbound_address(value: String): Self = StObject.set(x, "inbound_address", value.asInstanceOf[js.Any])
+      inline def setInbound_address(value: String): Self = StObject.set(x, "inbound_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: bitcoin_receiver): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: bitcoin_receiver): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayment(value: String): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
+      inline def setPayment(value: String): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefund_address(value: String): Self = StObject.set(x, "refund_address", value.asInstanceOf[js.Any])
+      inline def setRefund_address(value: String): Self = StObject.set(x, "refund_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactions(value: IList[IBitcoinTransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+      inline def setTransactions(value: IList[IBitcoinTransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncaptured_funds(value: Boolean): Self = StObject.set(x, "uncaptured_funds", value.asInstanceOf[js.Any])
+      inline def setUncaptured_funds(value: Boolean): Self = StObject.set(x, "uncaptured_funds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsed_for_payment(value: Boolean): Self = StObject.set(x, "used_for_payment", value.asInstanceOf[js.Any])
+      inline def setUsed_for_payment(value: Boolean): Self = StObject.set(x, "used_for_payment", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,35 +210,26 @@ object bitcoinReceivers {
   }
   object IBitcoinReceiverCreationOptions {
     
-    @scala.inline
-    def apply(amount: Double, currency: String, email: String): IBitcoinReceiverCreationOptions = {
+    inline def apply(amount: Double, currency: String, email: String): IBitcoinReceiverCreationOptions = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBitcoinReceiverCreationOptions]
     }
     
-    @scala.inline
-    implicit class IBitcoinReceiverCreationOptionsMutableBuilder[Self <: IBitcoinReceiverCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IBitcoinReceiverCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefund_mispayments(value: Boolean): Self = StObject.set(x, "refund_mispayments", value.asInstanceOf[js.Any])
+      inline def setRefund_mispayments(value: Boolean): Self = StObject.set(x, "refund_mispayments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefund_mispaymentsUndefined: Self = StObject.set(x, "refund_mispayments", js.undefined)
+      inline def setRefund_mispaymentsUndefined: Self = StObject.set(x, "refund_mispayments", js.undefined)
     }
   }
   
@@ -286,32 +254,24 @@ object bitcoinReceivers {
   }
   object IBitcoinReceiverListOptions {
     
-    @scala.inline
-    def apply(): IBitcoinReceiverListOptions = {
+    inline def apply(): IBitcoinReceiverListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBitcoinReceiverListOptions]
     }
     
-    @scala.inline
-    implicit class IBitcoinReceiverListOptionsMutableBuilder[Self <: IBitcoinReceiverListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IBitcoinReceiverListOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+      inline def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
+      inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
       
-      @scala.inline
-      def setUncaptured_funds(value: Boolean): Self = StObject.set(x, "uncaptured_funds", value.asInstanceOf[js.Any])
+      inline def setUncaptured_funds(value: Boolean): Self = StObject.set(x, "uncaptured_funds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncaptured_fundsUndefined: Self = StObject.set(x, "uncaptured_funds", js.undefined)
+      inline def setUncaptured_fundsUndefined: Self = StObject.set(x, "uncaptured_funds", js.undefined)
     }
   }
   
@@ -343,8 +303,7 @@ object bitcoinReceivers {
   }
   object IBitcoinTransaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       bitcoin_amount: Double,
       created: Double,
@@ -358,23 +317,17 @@ object bitcoinReceivers {
       __obj.asInstanceOf[IBitcoinTransaction]
     }
     
-    @scala.inline
-    implicit class IBitcoinTransactionMutableBuilder[Self <: IBitcoinTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: IBitcoinTransaction](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitcoin_amount(value: Double): Self = StObject.set(x, "bitcoin_amount", value.asInstanceOf[js.Any])
+      inline def setBitcoin_amount(value: Double): Self = StObject.set(x, "bitcoin_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiver(value: String): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+      inline def setReceiver(value: String): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     }
   }
 }

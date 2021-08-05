@@ -12,19 +12,15 @@ trait HighlightsRepositoryEditReelResponseTalliesItem extends StObject {
 }
 object HighlightsRepositoryEditReelResponseTalliesItem {
   
-  @scala.inline
-  def apply(count: Double, text: String): HighlightsRepositoryEditReelResponseTalliesItem = {
+  inline def apply(count: Double, text: String): HighlightsRepositoryEditReelResponseTalliesItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseTalliesItem]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseTalliesItemMutableBuilder[Self <: HighlightsRepositoryEditReelResponseTalliesItem] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseTalliesItem](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

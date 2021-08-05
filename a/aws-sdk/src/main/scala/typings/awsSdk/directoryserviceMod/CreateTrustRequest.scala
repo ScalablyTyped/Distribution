@@ -43,8 +43,7 @@ trait CreateTrustRequest extends StObject {
 }
 object CreateTrustRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DirectoryId: DirectoryId,
     RemoteDomainName: RemoteDomainName,
     TrustDirection: TrustDirection,
@@ -54,40 +53,28 @@ object CreateTrustRequest {
     __obj.asInstanceOf[CreateTrustRequest]
   }
   
-  @scala.inline
-  implicit class CreateTrustRequestMutableBuilder[Self <: CreateTrustRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTrustRequest](x: Self) {
     
-    @scala.inline
-    def setConditionalForwarderIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "ConditionalForwarderIpAddrs", value.asInstanceOf[js.Any])
+    inline def setConditionalForwarderIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "ConditionalForwarderIpAddrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionalForwarderIpAddrsUndefined: Self = StObject.set(x, "ConditionalForwarderIpAddrs", js.undefined)
+    inline def setConditionalForwarderIpAddrsUndefined: Self = StObject.set(x, "ConditionalForwarderIpAddrs", js.undefined)
     
-    @scala.inline
-    def setConditionalForwarderIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "ConditionalForwarderIpAddrs", js.Array(value :_*))
+    inline def setConditionalForwarderIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "ConditionalForwarderIpAddrs", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
+    inline def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectiveAuth(value: SelectiveAuth): Self = StObject.set(x, "SelectiveAuth", value.asInstanceOf[js.Any])
+    inline def setSelectiveAuth(value: SelectiveAuth): Self = StObject.set(x, "SelectiveAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectiveAuthUndefined: Self = StObject.set(x, "SelectiveAuth", js.undefined)
+    inline def setSelectiveAuthUndefined: Self = StObject.set(x, "SelectiveAuth", js.undefined)
     
-    @scala.inline
-    def setTrustDirection(value: TrustDirection): Self = StObject.set(x, "TrustDirection", value.asInstanceOf[js.Any])
+    inline def setTrustDirection(value: TrustDirection): Self = StObject.set(x, "TrustDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustPassword(value: TrustPassword): Self = StObject.set(x, "TrustPassword", value.asInstanceOf[js.Any])
+    inline def setTrustPassword(value: TrustPassword): Self = StObject.set(x, "TrustPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustType(value: TrustType): Self = StObject.set(x, "TrustType", value.asInstanceOf[js.Any])
+    inline def setTrustType(value: TrustType): Self = StObject.set(x, "TrustType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustTypeUndefined: Self = StObject.set(x, "TrustType", js.undefined)
+    inline def setTrustTypeUndefined: Self = StObject.set(x, "TrustType", js.undefined)
   }
 }

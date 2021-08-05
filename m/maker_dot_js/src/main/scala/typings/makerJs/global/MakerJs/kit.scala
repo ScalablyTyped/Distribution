@@ -19,8 +19,7 @@ object kit {
     * @param args The array of parameters passed to the constructor.
     * @returns A new instance of the class, which implements the IModel interface.
     */
-  @scala.inline
-  def construct(ctor: IKit, args: js.Any): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(ctor.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  inline def construct(ctor: IKit, args: js.Any): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(ctor.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Extract just the initial sample values from a kit.
@@ -28,6 +27,5 @@ object kit {
     * @param ctor The constructor for the class which is an IKit.
     * @returns Array of the inital sample values provided in the metaParameters array.
     */
-  @scala.inline
-  def getParameterValues(ctor: IKit): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameterValues")(ctor.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getParameterValues(ctor: IKit): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameterValues")(ctor.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

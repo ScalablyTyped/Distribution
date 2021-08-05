@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IosNotificationAlertType extends StObject
 object IosNotificationAlertType {
   
-  @scala.inline
-  def banner: typings.microsoftGraph.microsoftGraphStrings.banner = "banner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.banner]
+  inline def banner: typings.microsoftGraph.microsoftGraphStrings.banner = "banner".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.banner]
   
-  @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   
-  @scala.inline
-  def modal: typings.microsoftGraph.microsoftGraphStrings.modal = "modal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modal]
+  inline def modal: typings.microsoftGraph.microsoftGraphStrings.modal = "modal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modal]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
 }

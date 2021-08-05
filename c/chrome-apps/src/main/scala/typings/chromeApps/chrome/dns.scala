@@ -31,23 +31,18 @@ object dns {
   }
   object ResolveCallbackResolveInfo {
     
-    @scala.inline
-    def apply(resultCode: integer): ResolveCallbackResolveInfo = {
+    inline def apply(resultCode: integer): ResolveCallbackResolveInfo = {
       val __obj = js.Dynamic.literal(resultCode = resultCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveCallbackResolveInfo]
     }
     
-    @scala.inline
-    implicit class ResolveCallbackResolveInfoMutableBuilder[Self <: ResolveCallbackResolveInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveCallbackResolveInfo](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     }
   }
 }

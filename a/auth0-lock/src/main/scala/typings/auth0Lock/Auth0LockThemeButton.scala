@@ -16,34 +16,25 @@ trait Auth0LockThemeButton extends StObject {
 }
 object Auth0LockThemeButton {
   
-  @scala.inline
-  def apply(displayName: String): Auth0LockThemeButton = {
+  inline def apply(displayName: String): Auth0LockThemeButton = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockThemeButton]
   }
   
-  @scala.inline
-  implicit class Auth0LockThemeButtonMutableBuilder[Self <: Auth0LockThemeButton] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockThemeButton](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+    inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+    inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+    inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
   }
 }

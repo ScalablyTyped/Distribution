@@ -52,6 +52,6 @@ trait ProtectedViewWindow extends StObject {
   
   var WindowState: WdWindowState = js.native
   
-  @JSName("Word.ProtectedViewWindow_typekey")
+  /* private */ @JSName("Word.ProtectedViewWindow_typekey")
   var WordDotProtectedViewWindow_typekey: ProtectedViewWindow = js.native
 }

@@ -18,25 +18,19 @@ trait GetEntitiesRequest extends StObject {
 }
 object GetEntitiesRequest {
   
-  @scala.inline
-  def apply(ids: Urns): GetEntitiesRequest = {
+  inline def apply(ids: Urns): GetEntitiesRequest = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class GetEntitiesRequestMutableBuilder[Self <: GetEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setIds(value: Urns): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: Urns): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: Urn*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: Urn*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setNamespaceVersion(value: Version): Self = StObject.set(x, "namespaceVersion", value.asInstanceOf[js.Any])
+    inline def setNamespaceVersion(value: Version): Self = StObject.set(x, "namespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceVersionUndefined: Self = StObject.set(x, "namespaceVersion", js.undefined)
+    inline def setNamespaceVersionUndefined: Self = StObject.set(x, "namespaceVersion", js.undefined)
   }
 }

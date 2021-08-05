@@ -20,6 +20,5 @@ object SegmentedControl {
   @JSImport("antd-mobile-rn", "SegmentedControl.defaultProps")
   @js.native
   def defaultProps: SelectedIndex = js.native
-  @scala.inline
-  def defaultProps_=(x: SelectedIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: SelectedIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

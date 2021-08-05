@@ -23,31 +23,23 @@ trait GetReservationUtilizationResponse extends StObject {
 }
 object GetReservationUtilizationResponse {
   
-  @scala.inline
-  def apply(UtilizationsByTime: UtilizationsByTime): GetReservationUtilizationResponse = {
+  inline def apply(UtilizationsByTime: UtilizationsByTime): GetReservationUtilizationResponse = {
     val __obj = js.Dynamic.literal(UtilizationsByTime = UtilizationsByTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReservationUtilizationResponse]
   }
   
-  @scala.inline
-  implicit class GetReservationUtilizationResponseMutableBuilder[Self <: GetReservationUtilizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetReservationUtilizationResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotal(value: ReservationAggregates): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: ReservationAggregates): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
     
-    @scala.inline
-    def setUtilizationsByTime(value: UtilizationsByTime): Self = StObject.set(x, "UtilizationsByTime", value.asInstanceOf[js.Any])
+    inline def setUtilizationsByTime(value: UtilizationsByTime): Self = StObject.set(x, "UtilizationsByTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationsByTimeVarargs(value: UtilizationByTime*): Self = StObject.set(x, "UtilizationsByTime", js.Array(value :_*))
+    inline def setUtilizationsByTimeVarargs(value: UtilizationByTime*): Self = StObject.set(x, "UtilizationsByTime", js.Array(value :_*))
   }
 }

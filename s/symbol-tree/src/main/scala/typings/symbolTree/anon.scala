@@ -14,20 +14,16 @@ object anon {
   }
   object Filter {
     
-    @scala.inline
-    def apply[THIS, T /* <: js.Object */](filter: T => js.Any, thisArg: THIS): Filter[THIS, T] = {
+    inline def apply[THIS, T /* <: js.Object */](filter: T => js.Any, thisArg: THIS): Filter[THIS, T] = {
       val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), thisArg = thisArg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filter[THIS, T]]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter[?, ?], THIS, T /* <: js.Object */] (val x: Self & (Filter[THIS, T])) extends AnyVal {
+    extension [Self <: Filter[?, ?], THIS, T /* <: js.Object */](x: Self & (Filter[THIS, T])) {
       
-      @scala.inline
-      def setFilter(value: T => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: T => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThisArg(value: THIS): Self = StObject.set(x, "thisArg", value.asInstanceOf[js.Any])
+      inline def setThisArg(value: THIS): Self = StObject.set(x, "thisArg", value.asInstanceOf[js.Any])
     }
   }
 }

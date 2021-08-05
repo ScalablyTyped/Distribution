@@ -33,32 +33,24 @@ trait ImplementationGuideDependency
 }
 object ImplementationGuideDependency {
   
-  @scala.inline
-  def apply(`type`: code, uri: uri): ImplementationGuideDependency = {
+  inline def apply(`type`: code, uri: uri): ImplementationGuideDependency = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImplementationGuideDependency]
   }
   
-  @scala.inline
-  implicit class ImplementationGuideDependencyMutableBuilder[Self <: ImplementationGuideDependency] (val x: Self) extends AnyVal {
+  extension [Self <: ImplementationGuideDependency](x: Self) {
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
-    @scala.inline
-    def set_uri(value: Element): Self = StObject.set(x, "_uri", value.asInstanceOf[js.Any])
+    inline def set_uri(value: Element): Self = StObject.set(x, "_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_uriUndefined: Self = StObject.set(x, "_uri", js.undefined)
+    inline def set_uriUndefined: Self = StObject.set(x, "_uri", js.undefined)
   }
 }

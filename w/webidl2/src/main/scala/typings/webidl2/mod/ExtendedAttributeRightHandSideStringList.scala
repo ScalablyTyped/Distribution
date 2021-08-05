@@ -15,23 +15,18 @@ trait ExtendedAttributeRightHandSideStringList
 }
 object ExtendedAttributeRightHandSideStringList {
   
-  @scala.inline
-  def apply(value: js.Array[ExtendedAttributeRightHandSideString]): ExtendedAttributeRightHandSideStringList = {
+  inline def apply(value: js.Array[ExtendedAttributeRightHandSideString]): ExtendedAttributeRightHandSideStringList = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("string-list")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideStringList]
   }
   
-  @scala.inline
-  implicit class ExtendedAttributeRightHandSideStringListMutableBuilder[Self <: ExtendedAttributeRightHandSideStringList] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedAttributeRightHandSideStringList](x: Self) {
     
-    @scala.inline
-    def setType(value: `string-list`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `string-list`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[ExtendedAttributeRightHandSideString]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[ExtendedAttributeRightHandSideString]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: ExtendedAttributeRightHandSideString*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: ExtendedAttributeRightHandSideString*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

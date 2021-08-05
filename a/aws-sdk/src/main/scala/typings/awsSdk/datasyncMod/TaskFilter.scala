@@ -23,25 +23,19 @@ trait TaskFilter extends StObject {
 }
 object TaskFilter {
   
-  @scala.inline
-  def apply(Name: TaskFilterName, Operator: Operator, Values: FilterValues): TaskFilter = {
+  inline def apply(Name: TaskFilterName, Operator: Operator, Values: FilterValues): TaskFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskFilter]
   }
   
-  @scala.inline
-  implicit class TaskFilterMutableBuilder[Self <: TaskFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TaskFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: TaskFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TaskFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: FilterAttributeValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterAttributeValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

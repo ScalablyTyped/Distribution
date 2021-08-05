@@ -15,34 +15,29 @@ object stateEventsMod {
   @js.native
   def stateChangeCancel: IAngularEvent = js.native
   
-  @scala.inline
-  def stateChangeCancel_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeCancel")(x.asInstanceOf[js.Any])
+  inline def stateChangeCancel_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeCancel")(x.asInstanceOf[js.Any])
   
   @JSImport("@uirouter/angularjs/lib/legacy/stateEvents", "$stateChangeError")
   @js.native
   def stateChangeError: IAngularEvent = js.native
   
-  @scala.inline
-  def stateChangeError_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeError")(x.asInstanceOf[js.Any])
+  inline def stateChangeError_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeError")(x.asInstanceOf[js.Any])
   
   @JSImport("@uirouter/angularjs/lib/legacy/stateEvents", "$stateChangeStart")
   @js.native
   def stateChangeStart: IAngularEvent = js.native
   
-  @scala.inline
-  def stateChangeStart_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeStart")(x.asInstanceOf[js.Any])
+  inline def stateChangeStart_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeStart")(x.asInstanceOf[js.Any])
   
   @JSImport("@uirouter/angularjs/lib/legacy/stateEvents", "$stateChangeSuccess")
   @js.native
   def stateChangeSuccess: IAngularEvent = js.native
   
-  @scala.inline
-  def stateChangeSuccess_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeSuccess")(x.asInstanceOf[js.Any])
+  inline def stateChangeSuccess_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateChangeSuccess")(x.asInstanceOf[js.Any])
   
   @JSImport("@uirouter/angularjs/lib/legacy/stateEvents", "$stateNotFound")
   @js.native
   def stateNotFound: IAngularEvent = js.native
   
-  @scala.inline
-  def stateNotFound_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateNotFound")(x.asInstanceOf[js.Any])
+  inline def stateNotFound_=(x: IAngularEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$stateNotFound")(x.asInstanceOf[js.Any])
 }

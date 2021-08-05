@@ -26,43 +26,31 @@ trait DocumentSearchResponse[V] extends StObject {
 }
 object DocumentSearchResponse {
   
-  @scala.inline
-  def apply[V](bookmark: String, rows: js.Array[Doc[V]], total_rows: Double): DocumentSearchResponse[V] = {
+  inline def apply[V](bookmark: String, rows: js.Array[Doc[V]], total_rows: Double): DocumentSearchResponse[V] = {
     val __obj = js.Dynamic.literal(bookmark = bookmark.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], total_rows = total_rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSearchResponse[V]]
   }
   
-  @scala.inline
-  implicit class DocumentSearchResponseMutableBuilder[Self <: DocumentSearchResponse[?], V] (val x: Self & DocumentSearchResponse[V]) extends AnyVal {
+  extension [Self <: DocumentSearchResponse[?], V](x: Self & DocumentSearchResponse[V]) {
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounts(value: js.Object): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: js.Object): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
+    inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
-    @scala.inline
-    def setHighlights(value: js.Object): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
+    inline def setHighlights(value: js.Object): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
+    inline def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
-    @scala.inline
-    def setRanges(value: js.Object): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Object): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[Doc[V]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Doc[V]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: Doc[V]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Doc[V]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
+    inline def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
   }
 }

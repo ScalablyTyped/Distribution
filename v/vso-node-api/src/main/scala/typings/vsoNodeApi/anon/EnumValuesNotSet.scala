@@ -10,16 +10,13 @@ trait EnumValuesNotSet extends StObject {
 }
 object EnumValuesNotSet {
   
-  @scala.inline
-  def apply(enumValues: NotSet): EnumValuesNotSet = {
+  inline def apply(enumValues: NotSet): EnumValuesNotSet = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesNotSet]
   }
   
-  @scala.inline
-  implicit class EnumValuesNotSetMutableBuilder[Self <: EnumValuesNotSet] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesNotSet](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: NotSet): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: NotSet): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

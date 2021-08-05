@@ -28,37 +28,27 @@ trait ApplyEnvironmentManagedActionResult extends StObject {
 }
 object ApplyEnvironmentManagedActionResult {
   
-  @scala.inline
-  def apply(): ApplyEnvironmentManagedActionResult = {
+  inline def apply(): ApplyEnvironmentManagedActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplyEnvironmentManagedActionResult]
   }
   
-  @scala.inline
-  implicit class ApplyEnvironmentManagedActionResultMutableBuilder[Self <: ApplyEnvironmentManagedActionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyEnvironmentManagedActionResult](x: Self) {
     
-    @scala.inline
-    def setActionDescription(value: String): Self = StObject.set(x, "ActionDescription", value.asInstanceOf[js.Any])
+    inline def setActionDescription(value: String): Self = StObject.set(x, "ActionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionDescriptionUndefined: Self = StObject.set(x, "ActionDescription", js.undefined)
+    inline def setActionDescriptionUndefined: Self = StObject.set(x, "ActionDescription", js.undefined)
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
-    @scala.inline
-    def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

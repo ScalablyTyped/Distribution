@@ -8,6 +8,5 @@ object skiaCanvasStrings {
   
   @js.native
   sealed trait `2d` extends StObject
-  @scala.inline
-  def `2d`: `2d` = "2d".asInstanceOf[`2d`]
+  inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
 }

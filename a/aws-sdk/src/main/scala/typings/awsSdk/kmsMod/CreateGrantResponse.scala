@@ -18,25 +18,19 @@ trait CreateGrantResponse extends StObject {
 }
 object CreateGrantResponse {
   
-  @scala.inline
-  def apply(): CreateGrantResponse = {
+  inline def apply(): CreateGrantResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGrantResponse]
   }
   
-  @scala.inline
-  implicit class CreateGrantResponseMutableBuilder[Self <: CreateGrantResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGrantResponse](x: Self) {
     
-    @scala.inline
-    def setGrantId(value: GrantIdType): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
+    inline def setGrantId(value: GrantIdType): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
+    inline def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
     
-    @scala.inline
-    def setGrantToken(value: GrantTokenType): Self = StObject.set(x, "GrantToken", value.asInstanceOf[js.Any])
+    inline def setGrantToken(value: GrantTokenType): Self = StObject.set(x, "GrantToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantTokenUndefined: Self = StObject.set(x, "GrantToken", js.undefined)
+    inline def setGrantTokenUndefined: Self = StObject.set(x, "GrantToken", js.undefined)
   }
 }

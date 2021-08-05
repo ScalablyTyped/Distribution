@@ -13,16 +13,13 @@ trait DeleteAssetResponse extends StObject {
 }
 object DeleteAssetResponse {
   
-  @scala.inline
-  def apply(assetStatus: AssetStatus): DeleteAssetResponse = {
+  inline def apply(assetStatus: AssetStatus): DeleteAssetResponse = {
     val __obj = js.Dynamic.literal(assetStatus = assetStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAssetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteAssetResponseMutableBuilder[Self <: DeleteAssetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAssetResponse](x: Self) {
     
-    @scala.inline
-    def setAssetStatus(value: AssetStatus): Self = StObject.set(x, "assetStatus", value.asInstanceOf[js.Any])
+    inline def setAssetStatus(value: AssetStatus): Self = StObject.set(x, "assetStatus", value.asInstanceOf[js.Any])
   }
 }

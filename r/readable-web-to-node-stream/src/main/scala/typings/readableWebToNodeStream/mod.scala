@@ -32,17 +32,17 @@ object mod {
       */
     def close(): js.Promise[Unit] = js.native
     
-    var pendingRead: js.Any = js.native
+    /* private */ var pendingRead: js.Any = js.native
     
     /**
       * Default web API stream reader
       * https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader
       */
-    var reader: js.Any = js.native
+    /* private */ var reader: js.Any = js.native
     
     var released: Boolean = js.native
     
-    var syncAndRelease: js.Any = js.native
+    /* private */ var syncAndRelease: js.Any = js.native
     
     /**
       * If there is no unresolved read call to Web-API Readable​Stream immediately returns;

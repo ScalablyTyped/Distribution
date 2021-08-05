@@ -19,10 +19,8 @@ object staticMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): StaticMapService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StaticMapService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): StaticMapService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StaticMapService]
+  inline def default(config: SdkConfig): StaticMapService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StaticMapService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): StaticMapService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StaticMapService]
   
   trait CustomMarker extends StObject {
     
@@ -32,20 +30,16 @@ object staticMod {
   }
   object CustomMarker {
     
-    @scala.inline
-    def apply(coordinates: LngLatLike, url: String): CustomMarker = {
+    inline def apply(coordinates: LngLatLike, url: String): CustomMarker = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomMarker]
     }
     
-    @scala.inline
-    implicit class CustomMarkerMutableBuilder[Self <: CustomMarker] (val x: Self) extends AnyVal {
+    extension [Self <: CustomMarker](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,17 +49,14 @@ object staticMod {
   }
   object CustomMarkerOverlay {
     
-    @scala.inline
-    def apply(marker: CustomMarker): CustomMarkerOverlay = {
+    inline def apply(marker: CustomMarker): CustomMarkerOverlay = {
       val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomMarkerOverlay]
     }
     
-    @scala.inline
-    implicit class CustomMarkerOverlayMutableBuilder[Self <: CustomMarkerOverlay] (val x: Self) extends AnyVal {
+    extension [Self <: CustomMarkerOverlay](x: Self) {
       
-      @scala.inline
-      def setMarker(value: CustomMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: CustomMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,17 +66,14 @@ object staticMod {
   }
   object GeoJsonOverlay {
     
-    @scala.inline
-    def apply(geoJson: GeoJSON): GeoJsonOverlay = {
+    inline def apply(geoJson: GeoJSON): GeoJsonOverlay = {
       val __obj = js.Dynamic.literal(geoJson = geoJson.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeoJsonOverlay]
     }
     
-    @scala.inline
-    implicit class GeoJsonOverlayMutableBuilder[Self <: GeoJsonOverlay] (val x: Self) extends AnyVal {
+    extension [Self <: GeoJsonOverlay](x: Self) {
       
-      @scala.inline
-      def setGeoJson(value: GeoJSON): Self = StObject.set(x, "geoJson", value.asInstanceOf[js.Any])
+      inline def setGeoJson(value: GeoJSON): Self = StObject.set(x, "geoJson", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,50 +105,36 @@ object staticMod {
   }
   object Path {
     
-    @scala.inline
-    def apply(coordinates: js.Array[LngLatBoundsLike]): Path = {
+    inline def apply(coordinates: js.Array[LngLatBoundsLike]): Path = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: js.Array[LngLatBoundsLike]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: js.Array[LngLatBoundsLike]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesVarargs(value: LngLatBoundsLike*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: LngLatBoundsLike*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+      inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      @scala.inline
-      def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     }
   }
   
@@ -170,17 +144,14 @@ object staticMod {
   }
   object PathOverlay {
     
-    @scala.inline
-    def apply(path: Path): PathOverlay = {
+    inline def apply(path: Path): PathOverlay = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathOverlay]
     }
     
-    @scala.inline
-    implicit class PathOverlayMutableBuilder[Self <: PathOverlay] (val x: Self) extends AnyVal {
+    extension [Self <: PathOverlay](x: Self) {
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,35 +167,26 @@ object staticMod {
   }
   object SimpleMarker {
     
-    @scala.inline
-    def apply(coordinates: LngLatLike): SimpleMarker = {
+    inline def apply(coordinates: LngLatLike): SimpleMarker = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleMarker]
     }
     
-    @scala.inline
-    implicit class SimpleMarkerMutableBuilder[Self <: SimpleMarker] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleMarker](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCoordinates(value: LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -234,17 +196,14 @@ object staticMod {
   }
   object SimpleMarkerOverlay {
     
-    @scala.inline
-    def apply(marker: SimpleMarker): SimpleMarkerOverlay = {
+    inline def apply(marker: SimpleMarker): SimpleMarkerOverlay = {
       val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleMarkerOverlay]
     }
     
-    @scala.inline
-    implicit class SimpleMarkerOverlayMutableBuilder[Self <: SimpleMarkerOverlay] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleMarkerOverlay](x: Self) {
       
-      @scala.inline
-      def setMarker(value: SimpleMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: SimpleMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,62 +233,44 @@ object staticMod {
   }
   object StaticMapRequest {
     
-    @scala.inline
-    def apply(height: Double, ownerId: String, position: Bearing | auto, styleId: String, width: Double): StaticMapRequest = {
+    inline def apply(height: Double, ownerId: String, position: Bearing | auto, styleId: String, width: Double): StaticMapRequest = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticMapRequest]
     }
     
-    @scala.inline
-    implicit class StaticMapRequestMutableBuilder[Self <: StaticMapRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StaticMapRequest](x: Self) {
       
-      @scala.inline
-      def setAttribution(value: Boolean): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+      inline def setAttribution(value: Boolean): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+      inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighRes(value: Boolean): Self = StObject.set(x, "highRes", value.asInstanceOf[js.Any])
+      inline def setHighRes(value: Boolean): Self = StObject.set(x, "highRes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighResUndefined: Self = StObject.set(x, "highRes", js.undefined)
+      inline def setHighResUndefined: Self = StObject.set(x, "highRes", js.undefined)
       
-      @scala.inline
-      def setInsertOverlayBeforeLayer(value: String): Self = StObject.set(x, "insertOverlayBeforeLayer", value.asInstanceOf[js.Any])
+      inline def setInsertOverlayBeforeLayer(value: String): Self = StObject.set(x, "insertOverlayBeforeLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertOverlayBeforeLayerUndefined: Self = StObject.set(x, "insertOverlayBeforeLayer", js.undefined)
+      inline def setInsertOverlayBeforeLayerUndefined: Self = StObject.set(x, "insertOverlayBeforeLayer", js.undefined)
       
-      @scala.inline
-      def setLogo(value: Boolean): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: Boolean): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+      inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      @scala.inline
-      def setOverlays(value: js.Array[CustomMarkerOverlay | SimpleMarkerOverlay | PathOverlay | GeoJsonOverlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+      inline def setOverlays(value: js.Array[CustomMarkerOverlay | SimpleMarkerOverlay | PathOverlay | GeoJsonOverlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
+      inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
       
-      @scala.inline
-      def setOverlaysVarargs(value: (CustomMarkerOverlay | SimpleMarkerOverlay | PathOverlay | GeoJsonOverlay)*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+      inline def setOverlaysVarargs(value: (CustomMarkerOverlay | SimpleMarkerOverlay | PathOverlay | GeoJsonOverlay)*): Self = StObject.set(x, "overlays", js.Array(value :_*))
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Bearing | auto): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Bearing | auto): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+      inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -343,17 +284,14 @@ object staticMod {
   }
   object StaticMapService {
     
-    @scala.inline
-    def apply(getStaticImage: StaticMapRequest => MapiRequest): StaticMapService = {
+    inline def apply(getStaticImage: StaticMapRequest => MapiRequest): StaticMapService = {
       val __obj = js.Dynamic.literal(getStaticImage = js.Any.fromFunction1(getStaticImage))
       __obj.asInstanceOf[StaticMapService]
     }
     
-    @scala.inline
-    implicit class StaticMapServiceMutableBuilder[Self <: StaticMapService] (val x: Self) extends AnyVal {
+    extension [Self <: StaticMapService](x: Self) {
       
-      @scala.inline
-      def setGetStaticImage(value: StaticMapRequest => MapiRequest): Self = StObject.set(x, "getStaticImage", js.Any.fromFunction1(value))
+      inline def setGetStaticImage(value: StaticMapRequest => MapiRequest): Self = StObject.set(x, "getStaticImage", js.Any.fromFunction1(value))
     }
   }
 }

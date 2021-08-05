@@ -25,28 +25,21 @@ trait SchemaListFilteredBidRequestsResponse extends StObject {
 }
 object SchemaListFilteredBidRequestsResponse {
   
-  @scala.inline
-  def apply(): SchemaListFilteredBidRequestsResponse = {
+  inline def apply(): SchemaListFilteredBidRequestsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListFilteredBidRequestsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListFilteredBidRequestsResponseMutableBuilder[Self <: SchemaListFilteredBidRequestsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListFilteredBidRequestsResponse](x: Self) {
     
-    @scala.inline
-    def setCalloutStatusRows(value: js.Array[SchemaCalloutStatusRow]): Self = StObject.set(x, "calloutStatusRows", value.asInstanceOf[js.Any])
+    inline def setCalloutStatusRows(value: js.Array[SchemaCalloutStatusRow]): Self = StObject.set(x, "calloutStatusRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutStatusRowsUndefined: Self = StObject.set(x, "calloutStatusRows", js.undefined)
+    inline def setCalloutStatusRowsUndefined: Self = StObject.set(x, "calloutStatusRows", js.undefined)
     
-    @scala.inline
-    def setCalloutStatusRowsVarargs(value: SchemaCalloutStatusRow*): Self = StObject.set(x, "calloutStatusRows", js.Array(value :_*))
+    inline def setCalloutStatusRowsVarargs(value: SchemaCalloutStatusRow*): Self = StObject.set(x, "calloutStatusRows", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

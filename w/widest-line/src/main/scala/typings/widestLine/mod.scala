@@ -16,8 +16,7 @@ object mod {
   	//=> 2
   	```
   	*/
-  @scala.inline
-  def apply(input: String): Double = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(input: String): Double = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("widest-line", JSImport.Namespace)
   @js.native
@@ -41,8 +40,6 @@ object mod {
   // TODO: remove this in the next major version, refactor definition to:
   // declare function widestLine(input: string): number;
   // export = widestLine;
-  @scala.inline
-  def default(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

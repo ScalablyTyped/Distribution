@@ -28,7 +28,7 @@ trait ProtectedViewWindow extends StObject {
   
   var EnableResize: Boolean = js.native
   
-  @JSName("Excel.ProtectedViewWindow_typekey")
+  /* private */ @JSName("Excel.ProtectedViewWindow_typekey")
   var ExcelDotProtectedViewWindow_typekey: ProtectedViewWindow = js.native
   
   var Height: Double = js.native

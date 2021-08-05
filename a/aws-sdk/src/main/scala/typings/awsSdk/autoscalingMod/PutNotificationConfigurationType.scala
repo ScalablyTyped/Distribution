@@ -23,8 +23,7 @@ trait PutNotificationConfigurationType extends StObject {
 }
 object PutNotificationConfigurationType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoScalingGroupName: ResourceName,
     NotificationTypes: AutoScalingNotificationTypes,
     TopicARN: ResourceName
@@ -33,19 +32,14 @@ object PutNotificationConfigurationType {
     __obj.asInstanceOf[PutNotificationConfigurationType]
   }
   
-  @scala.inline
-  implicit class PutNotificationConfigurationTypeMutableBuilder[Self <: PutNotificationConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: PutNotificationConfigurationType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "NotificationTypes", value.asInstanceOf[js.Any])
+    inline def setNotificationTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "NotificationTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "NotificationTypes", js.Array(value :_*))
+    inline def setNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "NotificationTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
+    inline def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
   }
 }

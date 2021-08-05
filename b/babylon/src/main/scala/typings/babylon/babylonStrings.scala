@@ -11,107 +11,91 @@ object babylonStrings {
   sealed trait asyncGenerators
     extends StObject
        with PluginName
-  @scala.inline
-  def asyncGenerators: asyncGenerators = "asyncGenerators".asInstanceOf[asyncGenerators]
+  inline def asyncGenerators: asyncGenerators = "asyncGenerators".asInstanceOf[asyncGenerators]
   
   @js.native
   sealed trait classConstructorCall
     extends StObject
        with PluginName
-  @scala.inline
-  def classConstructorCall: classConstructorCall = "classConstructorCall".asInstanceOf[classConstructorCall]
+  inline def classConstructorCall: classConstructorCall = "classConstructorCall".asInstanceOf[classConstructorCall]
   
   @js.native
   sealed trait classProperties
     extends StObject
        with PluginName
-  @scala.inline
-  def classProperties: classProperties = "classProperties".asInstanceOf[classProperties]
+  inline def classProperties: classProperties = "classProperties".asInstanceOf[classProperties]
   
   @js.native
   sealed trait decorators
     extends StObject
        with PluginName
-  @scala.inline
-  def decorators: decorators = "decorators".asInstanceOf[decorators]
+  inline def decorators: decorators = "decorators".asInstanceOf[decorators]
   
   @js.native
   sealed trait doExpressions
     extends StObject
        with PluginName
-  @scala.inline
-  def doExpressions: doExpressions = "doExpressions".asInstanceOf[doExpressions]
+  inline def doExpressions: doExpressions = "doExpressions".asInstanceOf[doExpressions]
   
   @js.native
   sealed trait dynamicImport
     extends StObject
        with PluginName
-  @scala.inline
-  def dynamicImport: dynamicImport = "dynamicImport".asInstanceOf[dynamicImport]
+  inline def dynamicImport: dynamicImport = "dynamicImport".asInstanceOf[dynamicImport]
   
   @js.native
   sealed trait estree
     extends StObject
        with PluginName
-  @scala.inline
-  def estree: estree = "estree".asInstanceOf[estree]
+  inline def estree: estree = "estree".asInstanceOf[estree]
   
   @js.native
   sealed trait exportExtensions
     extends StObject
        with PluginName
-  @scala.inline
-  def exportExtensions: exportExtensions = "exportExtensions".asInstanceOf[exportExtensions]
+  inline def exportExtensions: exportExtensions = "exportExtensions".asInstanceOf[exportExtensions]
   
   @js.native
   sealed trait flow
     extends StObject
        with PluginName
-  @scala.inline
-  def flow: flow = "flow".asInstanceOf[flow]
+  inline def flow: flow = "flow".asInstanceOf[flow]
   
   @js.native
   sealed trait functionBind
     extends StObject
        with PluginName
-  @scala.inline
-  def functionBind: functionBind = "functionBind".asInstanceOf[functionBind]
+  inline def functionBind: functionBind = "functionBind".asInstanceOf[functionBind]
   
   @js.native
   sealed trait functionSent
     extends StObject
        with PluginName
-  @scala.inline
-  def functionSent: functionSent = "functionSent".asInstanceOf[functionSent]
+  inline def functionSent: functionSent = "functionSent".asInstanceOf[functionSent]
   
   @js.native
   sealed trait jsx
     extends StObject
        with PluginName
-  @scala.inline
-  def jsx: jsx = "jsx".asInstanceOf[jsx]
+  inline def jsx: jsx = "jsx".asInstanceOf[jsx]
   
   @js.native
   sealed trait module extends StObject
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
   sealed trait objectRestSpread
     extends StObject
        with PluginName
-  @scala.inline
-  def objectRestSpread: objectRestSpread = "objectRestSpread".asInstanceOf[objectRestSpread]
+  inline def objectRestSpread: objectRestSpread = "objectRestSpread".asInstanceOf[objectRestSpread]
   
   @js.native
   sealed trait script extends StObject
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
+  inline def script: script = "script".asInstanceOf[script]
   
   @js.native
   sealed trait typescript
     extends StObject
        with PluginName
-  @scala.inline
-  def typescript: typescript = "typescript".asInstanceOf[typescript]
+  inline def typescript: typescript = "typescript".asInstanceOf[typescript]
 }

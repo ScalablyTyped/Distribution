@@ -28,8 +28,7 @@ trait OnCreatedNavigationTargetDetails extends StObject {
 }
 object OnCreatedNavigationTargetDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     sourceFrameId: Double,
     sourceProcessId: Double,
     sourceTabId: Double,
@@ -41,25 +40,18 @@ object OnCreatedNavigationTargetDetails {
     __obj.asInstanceOf[OnCreatedNavigationTargetDetails]
   }
   
-  @scala.inline
-  implicit class OnCreatedNavigationTargetDetailsMutableBuilder[Self <: OnCreatedNavigationTargetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnCreatedNavigationTargetDetails](x: Self) {
     
-    @scala.inline
-    def setSourceFrameId(value: Double): Self = StObject.set(x, "sourceFrameId", value.asInstanceOf[js.Any])
+    inline def setSourceFrameId(value: Double): Self = StObject.set(x, "sourceFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProcessId(value: Double): Self = StObject.set(x, "sourceProcessId", value.asInstanceOf[js.Any])
+    inline def setSourceProcessId(value: Double): Self = StObject.set(x, "sourceProcessId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTabId(value: Double): Self = StObject.set(x, "sourceTabId", value.asInstanceOf[js.Any])
+    inline def setSourceTabId(value: Double): Self = StObject.set(x, "sourceTabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait Peer extends StObject {
 }
 object Peer {
   
-  @scala.inline
-  def apply(addr: Multiaddr, peer: PeerInfo): Peer = {
+  inline def apply(addr: Multiaddr, peer: PeerInfo): Peer = {
     val __obj = js.Dynamic.literal(addr = addr.asInstanceOf[js.Any], peer = peer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Peer]
   }
   
-  @scala.inline
-  implicit class PeerMutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
+  extension [Self <: Peer](x: Self) {
     
-    @scala.inline
-    def setAddr(value: Multiaddr): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
+    inline def setAddr(value: Multiaddr): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeer(value: PeerInfo): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
+    inline def setPeer(value: PeerInfo): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
   }
 }

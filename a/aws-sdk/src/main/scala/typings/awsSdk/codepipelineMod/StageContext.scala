@@ -13,19 +13,15 @@ trait StageContext extends StObject {
 }
 object StageContext {
   
-  @scala.inline
-  def apply(): StageContext = {
+  inline def apply(): StageContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StageContext]
   }
   
-  @scala.inline
-  implicit class StageContextMutableBuilder[Self <: StageContext] (val x: Self) extends AnyVal {
+  extension [Self <: StageContext](x: Self) {
     
-    @scala.inline
-    def setName(value: StageName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: StageName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

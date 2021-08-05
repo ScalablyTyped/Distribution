@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("tabris", "ColorResources")
 @js.native
 class ColorResources protected () extends Resources[Color, ColorValue] {
-  protected def this(options: ResourcesConstructorOptions[Color, ColorValue]) = this()
+  /* protected */ def this(options: ResourcesConstructorOptions[Color, ColorValue]) = this()
 }
 /* static members */
 object ColorResources {
@@ -24,8 +24,7 @@ object ColorResources {
     * become entries in the final colors dictionary.
     * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js colors JSON schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/colors.json).
     */
-  @scala.inline
-  def from[Data /* <: ResourceDataWithConfig[ColorValue] */](data: Data): NamedResources[Color, /* keyof Data */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[NamedResources[Color, /* keyof Data */ String]]
+  inline def from[Data /* <: ResourceDataWithConfig[ColorValue] */](data: Data): NamedResources[Color, /* keyof Data */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[NamedResources[Color, /* keyof Data */ String]]
   /**
     * Creates a colors dictionary from the given raw "data" object. All colors from the given "base"
     * dictionary are inherited unless overwritten.
@@ -34,6 +33,5 @@ object ColorResources {
     * @param base A plain object or another `ColorResources` instance containing values to inherit by the new `ColorResources` dictionary.
     * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js colors JSON schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/colors.json).
     */
-  @scala.inline
-  def from[Base /* <: NamedResources[Color, /* keyof Base */ String] */, Data /* <: ResourceDataWithConfig[ColorValue] */](base: Base, data: Data): NamedResources[Color, /* keyof Base & Data */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(base.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[NamedResources[Color, /* keyof Base & Data */ String]]
+  inline def from[Base /* <: NamedResources[Color, /* keyof Base */ String] */, Data /* <: ResourceDataWithConfig[ColorValue] */](base: Base, data: Data): NamedResources[Color, /* keyof Base & Data */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(base.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[NamedResources[Color, /* keyof Base & Data */ String]]
 }

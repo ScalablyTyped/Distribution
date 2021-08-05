@@ -27,7 +27,7 @@ class GraphicsGeometry ()
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _buffer: typings.pixiJs.PIXI.Buffer = js.native
   
   /**
@@ -36,7 +36,7 @@ class GraphicsGeometry ()
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
     * @protected
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _indexBuffer: typings.pixiJs.PIXI.Buffer = js.native
 }
 object GraphicsGeometry {
@@ -58,6 +58,5 @@ object GraphicsGeometry {
   @JSGlobal("PIXI.GraphicsGeometry.BATCHABLE_SIZE")
   @js.native
   def BATCHABLE_SIZE: Double = js.native
-  @scala.inline
-  def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
+  inline def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
 }

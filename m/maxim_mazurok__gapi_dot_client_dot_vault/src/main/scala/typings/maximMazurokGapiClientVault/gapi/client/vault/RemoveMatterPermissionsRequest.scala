@@ -11,19 +11,15 @@ trait RemoveMatterPermissionsRequest extends StObject {
 }
 object RemoveMatterPermissionsRequest {
   
-  @scala.inline
-  def apply(): RemoveMatterPermissionsRequest = {
+  inline def apply(): RemoveMatterPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveMatterPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class RemoveMatterPermissionsRequestMutableBuilder[Self <: RemoveMatterPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveMatterPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }
 }

@@ -110,139 +110,95 @@ trait GetMLModelOutput extends StObject {
 }
 object GetMLModelOutput {
   
-  @scala.inline
-  def apply(): GetMLModelOutput = {
+  inline def apply(): GetMLModelOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMLModelOutput]
   }
   
-  @scala.inline
-  implicit class GetMLModelOutputMutableBuilder[Self <: GetMLModelOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMLModelOutput](x: Self) {
     
-    @scala.inline
-    def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
+    inline def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
+    inline def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setCreatedByIamUser(value: AwsUserArn): Self = StObject.set(x, "CreatedByIamUser", value.asInstanceOf[js.Any])
+    inline def setCreatedByIamUser(value: AwsUserArn): Self = StObject.set(x, "CreatedByIamUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByIamUserUndefined: Self = StObject.set(x, "CreatedByIamUser", js.undefined)
+    inline def setCreatedByIamUserUndefined: Self = StObject.set(x, "CreatedByIamUser", js.undefined)
     
-    @scala.inline
-    def setEndpointInfo(value: RealtimeEndpointInfo): Self = StObject.set(x, "EndpointInfo", value.asInstanceOf[js.Any])
+    inline def setEndpointInfo(value: RealtimeEndpointInfo): Self = StObject.set(x, "EndpointInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointInfoUndefined: Self = StObject.set(x, "EndpointInfo", js.undefined)
+    inline def setEndpointInfoUndefined: Self = StObject.set(x, "EndpointInfo", js.undefined)
     
-    @scala.inline
-    def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
+    inline def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
-    @scala.inline
-    def setInputDataLocationS3(value: S3Url): Self = StObject.set(x, "InputDataLocationS3", value.asInstanceOf[js.Any])
+    inline def setInputDataLocationS3(value: S3Url): Self = StObject.set(x, "InputDataLocationS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDataLocationS3Undefined: Self = StObject.set(x, "InputDataLocationS3", js.undefined)
+    inline def setInputDataLocationS3Undefined: Self = StObject.set(x, "InputDataLocationS3", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setLogUri(value: PresignedS3Url): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
+    inline def setLogUri(value: PresignedS3Url): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
+    inline def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
+    inline def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
     
-    @scala.inline
-    def setMLModelType(value: MLModelType): Self = StObject.set(x, "MLModelType", value.asInstanceOf[js.Any])
+    inline def setMLModelType(value: MLModelType): Self = StObject.set(x, "MLModelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelTypeUndefined: Self = StObject.set(x, "MLModelType", js.undefined)
+    inline def setMLModelTypeUndefined: Self = StObject.set(x, "MLModelType", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setName(value: MLModelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: MLModelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRecipe(value: Recipe): Self = StObject.set(x, "Recipe", value.asInstanceOf[js.Any])
+    inline def setRecipe(value: Recipe): Self = StObject.set(x, "Recipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeUndefined: Self = StObject.set(x, "Recipe", js.undefined)
+    inline def setRecipeUndefined: Self = StObject.set(x, "Recipe", js.undefined)
     
-    @scala.inline
-    def setSchema(value: DataSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: DataSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
-    @scala.inline
-    def setScoreThreshold(value: ScoreThreshold): Self = StObject.set(x, "ScoreThreshold", value.asInstanceOf[js.Any])
+    inline def setScoreThreshold(value: ScoreThreshold): Self = StObject.set(x, "ScoreThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreThresholdLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "ScoreThresholdLastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setScoreThresholdLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "ScoreThresholdLastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreThresholdLastUpdatedAtUndefined: Self = StObject.set(x, "ScoreThresholdLastUpdatedAt", js.undefined)
+    inline def setScoreThresholdLastUpdatedAtUndefined: Self = StObject.set(x, "ScoreThresholdLastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setScoreThresholdUndefined: Self = StObject.set(x, "ScoreThreshold", js.undefined)
+    inline def setScoreThresholdUndefined: Self = StObject.set(x, "ScoreThreshold", js.undefined)
     
-    @scala.inline
-    def setSizeInBytes(value: LongType): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: LongType): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
+    inline def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
     
-    @scala.inline
-    def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     
-    @scala.inline
-    def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTrainingDataSourceId(value: EntityId): Self = StObject.set(x, "TrainingDataSourceId", value.asInstanceOf[js.Any])
+    inline def setTrainingDataSourceId(value: EntityId): Self = StObject.set(x, "TrainingDataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingDataSourceIdUndefined: Self = StObject.set(x, "TrainingDataSourceId", js.undefined)
+    inline def setTrainingDataSourceIdUndefined: Self = StObject.set(x, "TrainingDataSourceId", js.undefined)
     
-    @scala.inline
-    def setTrainingParameters(value: TrainingParameters): Self = StObject.set(x, "TrainingParameters", value.asInstanceOf[js.Any])
+    inline def setTrainingParameters(value: TrainingParameters): Self = StObject.set(x, "TrainingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingParametersUndefined: Self = StObject.set(x, "TrainingParameters", js.undefined)
+    inline def setTrainingParametersUndefined: Self = StObject.set(x, "TrainingParameters", js.undefined)
   }
 }

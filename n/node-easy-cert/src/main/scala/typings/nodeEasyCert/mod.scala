@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: CertManagerOptions): CertManager = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CertManager]
+  inline def apply(options: CertManagerOptions): CertManager = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CertManager]
   
   @JSImport("node-easy-cert", JSImport.Namespace)
   @js.native
@@ -29,14 +28,11 @@ object mod {
   trait CertErrors extends StObject
   object CertErrors {
     
-    @scala.inline
-    def ROOT_CA_COMMON_NAME_UNSPECIFIED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_COMMON_NAME_UNSPECIFIED = "ROOT_CA_COMMON_NAME_UNSPECIFIED".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_COMMON_NAME_UNSPECIFIED]
+    inline def ROOT_CA_COMMON_NAME_UNSPECIFIED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_COMMON_NAME_UNSPECIFIED = "ROOT_CA_COMMON_NAME_UNSPECIFIED".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_COMMON_NAME_UNSPECIFIED]
     
-    @scala.inline
-    def ROOT_CA_EXISTED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_EXISTED = "ROOT_CA_EXISTED".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_EXISTED]
+    inline def ROOT_CA_EXISTED: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_EXISTED = "ROOT_CA_EXISTED".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_EXISTED]
     
-    @scala.inline
-    def ROOT_CA_NOT_EXISTS: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS = "ROOT_CA_NOT_EXISTS".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS]
+    inline def ROOT_CA_NOT_EXISTS: typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS = "ROOT_CA_NOT_EXISTS".asInstanceOf[typings.nodeEasyCert.nodeEasyCertStrings.ROOT_CA_NOT_EXISTS]
   }
   
   @js.native
@@ -100,29 +96,22 @@ object mod {
   }
   object CertManagerOptions {
     
-    @scala.inline
-    def apply(): CertManagerOptions = {
+    inline def apply(): CertManagerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertManagerOptions]
     }
     
-    @scala.inline
-    implicit class CertManagerOptionsMutableBuilder[Self <: CertManagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CertManagerOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultCertAttrs(value: js.Array[CertificateAttribute]): Self = StObject.set(x, "defaultCertAttrs", value.asInstanceOf[js.Any])
+      inline def setDefaultCertAttrs(value: js.Array[CertificateAttribute]): Self = StObject.set(x, "defaultCertAttrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCertAttrsUndefined: Self = StObject.set(x, "defaultCertAttrs", js.undefined)
+      inline def setDefaultCertAttrsUndefined: Self = StObject.set(x, "defaultCertAttrs", js.undefined)
       
-      @scala.inline
-      def setDefaultCertAttrsVarargs(value: CertificateAttribute*): Self = StObject.set(x, "defaultCertAttrs", js.Array(value :_*))
+      inline def setDefaultCertAttrsVarargs(value: CertificateAttribute*): Self = StObject.set(x, "defaultCertAttrs", js.Array(value :_*))
       
-      @scala.inline
-      def setRootDirPath(value: String): Self = StObject.set(x, "rootDirPath", value.asInstanceOf[js.Any])
+      inline def setRootDirPath(value: String): Self = StObject.set(x, "rootDirPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDirPathUndefined: Self = StObject.set(x, "rootDirPath", js.undefined)
+      inline def setRootDirPathUndefined: Self = StObject.set(x, "rootDirPath", js.undefined)
     }
   }
   
@@ -133,14 +122,12 @@ object mod {
   trait CertificateAttribute extends StObject
   object CertificateAttribute {
     
-    @scala.inline
-    def CertificateAttributeName(name: String, value: String): typings.nodeEasyCert.mod.CertificateAttributeName = {
+    inline def CertificateAttributeName(name: String, value: String): typings.nodeEasyCert.mod.CertificateAttributeName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeEasyCert.mod.CertificateAttributeName]
     }
     
-    @scala.inline
-    def CertificateAttributeShortName(shortName: String, value: String): typings.nodeEasyCert.mod.CertificateAttributeShortName = {
+    inline def CertificateAttributeShortName(shortName: String, value: String): typings.nodeEasyCert.mod.CertificateAttributeShortName = {
       val __obj = js.Dynamic.literal(shortName = shortName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeEasyCert.mod.CertificateAttributeShortName]
     }
@@ -156,20 +143,16 @@ object mod {
   }
   object CertificateAttributeName {
     
-    @scala.inline
-    def apply(name: String, value: String): CertificateAttributeName = {
+    inline def apply(name: String, value: String): CertificateAttributeName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateAttributeName]
     }
     
-    @scala.inline
-    implicit class CertificateAttributeNameMutableBuilder[Self <: CertificateAttributeName] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAttributeName](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,20 +166,16 @@ object mod {
   }
   object CertificateAttributeShortName {
     
-    @scala.inline
-    def apply(shortName: String, value: String): CertificateAttributeShortName = {
+    inline def apply(shortName: String, value: String): CertificateAttributeShortName = {
       val __obj = js.Dynamic.literal(shortName = shortName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateAttributeShortName]
     }
     
-    @scala.inline
-    implicit class CertificateAttributeShortNameMutableBuilder[Self <: CertificateAttributeShortName] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAttributeShortName](x: Self) {
       
-      @scala.inline
-      def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,23 +199,18 @@ object mod {
   }
   object GenerateConfig {
     
-    @scala.inline
-    def apply(commonName: String): GenerateConfig = {
+    inline def apply(commonName: String): GenerateConfig = {
       val __obj = js.Dynamic.literal(commonName = commonName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateConfig]
     }
     
-    @scala.inline
-    implicit class GenerateConfigMutableBuilder[Self <: GenerateConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateConfig](x: Self) {
       
-      @scala.inline
-      def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     }
   }
   

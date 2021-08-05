@@ -566,13 +566,10 @@ object layer {
   trait VectorTileRenderType extends StObject
   object VectorTileRenderType {
     
-    @scala.inline
-    def hybrid: typings.openlayers.openlayersStrings.hybrid = "hybrid".asInstanceOf[typings.openlayers.openlayersStrings.hybrid]
+    inline def hybrid: typings.openlayers.openlayersStrings.hybrid = "hybrid".asInstanceOf[typings.openlayers.openlayersStrings.hybrid]
     
-    @scala.inline
-    def image: typings.openlayers.openlayersStrings.image = "image".asInstanceOf[typings.openlayers.openlayersStrings.image]
+    inline def image: typings.openlayers.openlayersStrings.image = "image".asInstanceOf[typings.openlayers.openlayersStrings.image]
     
-    @scala.inline
-    def vector: typings.openlayers.openlayersStrings.vector = "vector".asInstanceOf[typings.openlayers.openlayersStrings.vector]
+    inline def vector: typings.openlayers.openlayersStrings.vector = "vector".asInstanceOf[typings.openlayers.openlayersStrings.vector]
   }
 }

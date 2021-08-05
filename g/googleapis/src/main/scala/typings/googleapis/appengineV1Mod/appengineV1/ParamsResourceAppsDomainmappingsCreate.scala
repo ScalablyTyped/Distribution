@@ -36,37 +36,27 @@ trait ParamsResourceAppsDomainmappingsCreate
 }
 object ParamsResourceAppsDomainmappingsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceAppsDomainmappingsCreate = {
+  inline def apply(): ParamsResourceAppsDomainmappingsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAppsDomainmappingsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAppsDomainmappingsCreateMutableBuilder[Self <: ParamsResourceAppsDomainmappingsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAppsDomainmappingsCreate](x: Self) {
     
-    @scala.inline
-    def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
+    inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
+    inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setOverrideStrategy(value: String): Self = StObject.set(x, "overrideStrategy", value.asInstanceOf[js.Any])
+    inline def setOverrideStrategy(value: String): Self = StObject.set(x, "overrideStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideStrategyUndefined: Self = StObject.set(x, "overrideStrategy", js.undefined)
+    inline def setOverrideStrategyUndefined: Self = StObject.set(x, "overrideStrategy", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaDomainMapping): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaDomainMapping): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

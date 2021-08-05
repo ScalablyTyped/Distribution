@@ -20,31 +20,23 @@ trait IgButtonLink
 }
 object IgButtonLink {
   
-  @scala.inline
-  def apply(): IgButtonLink = {
+  inline def apply(): IgButtonLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgButtonLink]
   }
   
-  @scala.inline
-  implicit class IgButtonLinkMutableBuilder[Self <: IgButtonLink] (val x: Self) extends AnyVal {
+  extension [Self <: IgButtonLink](x: Self) {
     
-    @scala.inline
-    def setHref(value: js.Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: js.Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

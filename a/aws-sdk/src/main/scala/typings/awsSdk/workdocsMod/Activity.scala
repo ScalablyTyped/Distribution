@@ -53,67 +53,47 @@ trait Activity extends StObject {
 }
 object Activity {
   
-  @scala.inline
-  def apply(): Activity = {
+  inline def apply(): Activity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Activity]
   }
   
-  @scala.inline
-  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+  extension [Self <: Activity](x: Self) {
     
-    @scala.inline
-    def setCommentMetadata(value: CommentMetadata): Self = StObject.set(x, "CommentMetadata", value.asInstanceOf[js.Any])
+    inline def setCommentMetadata(value: CommentMetadata): Self = StObject.set(x, "CommentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentMetadataUndefined: Self = StObject.set(x, "CommentMetadata", js.undefined)
+    inline def setCommentMetadataUndefined: Self = StObject.set(x, "CommentMetadata", js.undefined)
     
-    @scala.inline
-    def setInitiator(value: UserMetadata): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
+    inline def setInitiator(value: UserMetadata): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
+    inline def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
     
-    @scala.inline
-    def setIsIndirectActivity(value: BooleanType): Self = StObject.set(x, "IsIndirectActivity", value.asInstanceOf[js.Any])
+    inline def setIsIndirectActivity(value: BooleanType): Self = StObject.set(x, "IsIndirectActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIndirectActivityUndefined: Self = StObject.set(x, "IsIndirectActivity", js.undefined)
+    inline def setIsIndirectActivityUndefined: Self = StObject.set(x, "IsIndirectActivity", js.undefined)
     
-    @scala.inline
-    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
+    inline def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
-    @scala.inline
-    def setOriginalParent(value: ResourceMetadata): Self = StObject.set(x, "OriginalParent", value.asInstanceOf[js.Any])
+    inline def setOriginalParent(value: ResourceMetadata): Self = StObject.set(x, "OriginalParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalParentUndefined: Self = StObject.set(x, "OriginalParent", js.undefined)
+    inline def setOriginalParentUndefined: Self = StObject.set(x, "OriginalParent", js.undefined)
     
-    @scala.inline
-    def setParticipants(value: Participants): Self = StObject.set(x, "Participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: Participants): Self = StObject.set(x, "Participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsUndefined: Self = StObject.set(x, "Participants", js.undefined)
+    inline def setParticipantsUndefined: Self = StObject.set(x, "Participants", js.undefined)
     
-    @scala.inline
-    def setResourceMetadata(value: ResourceMetadata): Self = StObject.set(x, "ResourceMetadata", value.asInstanceOf[js.Any])
+    inline def setResourceMetadata(value: ResourceMetadata): Self = StObject.set(x, "ResourceMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceMetadataUndefined: Self = StObject.set(x, "ResourceMetadata", js.undefined)
+    inline def setResourceMetadataUndefined: Self = StObject.set(x, "ResourceMetadata", js.undefined)
     
-    @scala.inline
-    def setTimeStamp(value: TimestampType): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: TimestampType): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStampUndefined: Self = StObject.set(x, "TimeStamp", js.undefined)
+    inline def setTimeStampUndefined: Self = StObject.set(x, "TimeStamp", js.undefined)
     
-    @scala.inline
-    def setType(value: ActivityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ActivityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

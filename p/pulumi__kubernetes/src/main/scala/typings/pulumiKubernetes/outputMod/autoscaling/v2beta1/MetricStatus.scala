@@ -36,8 +36,7 @@ trait MetricStatus extends StObject {
 }
 object MetricStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     external: ExternalMetricStatus,
     `object`: ObjectMetricStatus,
     pods: PodsMetricStatus,
@@ -50,22 +49,16 @@ object MetricStatus {
     __obj.asInstanceOf[MetricStatus]
   }
   
-  @scala.inline
-  implicit class MetricStatusMutableBuilder[Self <: MetricStatus] (val x: Self) extends AnyVal {
+  extension [Self <: MetricStatus](x: Self) {
     
-    @scala.inline
-    def setExternal(value: ExternalMetricStatus): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+    inline def setExternal(value: ExternalMetricStatus): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: ObjectMetricStatus): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ObjectMetricStatus): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPods(value: PodsMetricStatus): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
+    inline def setPods(value: PodsMetricStatus): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: ResourceMetricStatus): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ResourceMetricStatus): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

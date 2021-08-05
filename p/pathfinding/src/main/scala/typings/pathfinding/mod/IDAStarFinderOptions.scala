@@ -14,25 +14,19 @@ trait IDAStarFinderOptions
 }
 object IDAStarFinderOptions {
   
-  @scala.inline
-  def apply(): IDAStarFinderOptions = {
+  inline def apply(): IDAStarFinderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDAStarFinderOptions]
   }
   
-  @scala.inline
-  implicit class IDAStarFinderOptionsMutableBuilder[Self <: IDAStarFinderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDAStarFinderOptions](x: Self) {
     
-    @scala.inline
-    def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+    inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+    inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
     
-    @scala.inline
-    def setTrackRecursion(value: Boolean): Self = StObject.set(x, "trackRecursion", value.asInstanceOf[js.Any])
+    inline def setTrackRecursion(value: Boolean): Self = StObject.set(x, "trackRecursion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackRecursionUndefined: Self = StObject.set(x, "trackRecursion", js.undefined)
+    inline def setTrackRecursionUndefined: Self = StObject.set(x, "trackRecursion", js.undefined)
   }
 }

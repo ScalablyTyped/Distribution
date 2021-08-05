@@ -63,8 +63,7 @@ trait SocialPostCreationData
 }
 object SocialPostCreationData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -89,49 +88,34 @@ object SocialPostCreationData {
     __obj.asInstanceOf[SocialPostCreationData]
   }
   
-  @scala.inline
-  implicit class SocialPostCreationDataMutableBuilder[Self <: SocialPostCreationData] (val x: Self) extends AnyVal {
+  extension [Self <: SocialPostCreationData](x: Self) {
     
-    @scala.inline
-    def setGet_attachment(value: () => SocialAttachment): Self = StObject.set(x, "get_attachment", js.Any.fromFunction0(value))
+    inline def setGet_attachment(value: () => SocialAttachment): Self = StObject.set(x, "get_attachment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_contentItems(value: () => js.Array[SocialDataItem]): Self = StObject.set(x, "get_contentItems", js.Any.fromFunction0(value))
+    inline def setGet_contentItems(value: () => js.Array[SocialDataItem]): Self = StObject.set(x, "get_contentItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_contentText(value: () => String): Self = StObject.set(x, "get_contentText", js.Any.fromFunction0(value))
+    inline def setGet_contentText(value: () => String): Self = StObject.set(x, "get_contentText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_definitionData(value: () => SocialPostDefinitionData): Self = StObject.set(x, "get_definitionData", js.Any.fromFunction0(value))
+    inline def setGet_definitionData(value: () => SocialPostDefinitionData): Self = StObject.set(x, "get_definitionData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_securityUris(value: () => js.Array[String]): Self = StObject.set(x, "get_securityUris", js.Any.fromFunction0(value))
+    inline def setGet_securityUris(value: () => js.Array[String]): Self = StObject.set(x, "get_securityUris", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_source(value: () => SocialLink): Self = StObject.set(x, "get_source", js.Any.fromFunction0(value))
+    inline def setGet_source(value: () => SocialLink): Self = StObject.set(x, "get_source", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_updateStatusText(value: () => Boolean): Self = StObject.set(x, "get_updateStatusText", js.Any.fromFunction0(value))
+    inline def setGet_updateStatusText(value: () => Boolean): Self = StObject.set(x, "get_updateStatusText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_attachment(value: SocialAttachment => SocialAttachment): Self = StObject.set(x, "set_attachment", js.Any.fromFunction1(value))
+    inline def setSet_attachment(value: SocialAttachment => SocialAttachment): Self = StObject.set(x, "set_attachment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_contentItems(value: js.Array[SocialDataItem] => js.Array[SocialDataItem]): Self = StObject.set(x, "set_contentItems", js.Any.fromFunction1(value))
+    inline def setSet_contentItems(value: js.Array[SocialDataItem] => js.Array[SocialDataItem]): Self = StObject.set(x, "set_contentItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_contentText(value: String => String): Self = StObject.set(x, "set_contentText", js.Any.fromFunction1(value))
+    inline def setSet_contentText(value: String => String): Self = StObject.set(x, "set_contentText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_definitionData(value: SocialPostDefinitionData => SocialPostDefinitionData): Self = StObject.set(x, "set_definitionData", js.Any.fromFunction1(value))
+    inline def setSet_definitionData(value: SocialPostDefinitionData => SocialPostDefinitionData): Self = StObject.set(x, "set_definitionData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_securityUris(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "set_securityUris", js.Any.fromFunction1(value))
+    inline def setSet_securityUris(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "set_securityUris", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_source(value: SocialLink => SocialLink): Self = StObject.set(x, "set_source", js.Any.fromFunction1(value))
+    inline def setSet_source(value: SocialLink => SocialLink): Self = StObject.set(x, "set_source", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_updateStatusText(value: Boolean => Boolean): Self = StObject.set(x, "set_updateStatusText", js.Any.fromFunction1(value))
+    inline def setSet_updateStatusText(value: Boolean => Boolean): Self = StObject.set(x, "set_updateStatusText", js.Any.fromFunction1(value))
   }
 }

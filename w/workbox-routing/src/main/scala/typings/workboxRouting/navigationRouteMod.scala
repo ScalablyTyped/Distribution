@@ -24,32 +24,24 @@ object navigationRouteMod {
   }
   object NavigationRouteOptions {
     
-    @scala.inline
-    def apply(): NavigationRouteOptions = {
+    inline def apply(): NavigationRouteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationRouteOptions]
     }
     
-    @scala.inline
-    implicit class NavigationRouteOptionsMutableBuilder[Self <: NavigationRouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationRouteOptions](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: js.Array[RegExp]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: js.Array[RegExp]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setBlacklistVarargs(value: RegExp*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: RegExp*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setWhitelist(value: js.Array[RegExp]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: js.Array[RegExp]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: RegExp*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: RegExp*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
 }

@@ -10,16 +10,13 @@ trait Includedirectories extends StObject {
 }
 object Includedirectories {
   
-  @scala.inline
-  def apply(include_directories: Boolean): Includedirectories = {
+  inline def apply(include_directories: Boolean): Includedirectories = {
     val __obj = js.Dynamic.literal(include_directories = include_directories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Includedirectories]
   }
   
-  @scala.inline
-  implicit class IncludedirectoriesMutableBuilder[Self <: Includedirectories] (val x: Self) extends AnyVal {
+  extension [Self <: Includedirectories](x: Self) {
     
-    @scala.inline
-    def setInclude_directories(value: Boolean): Self = StObject.set(x, "include_directories", value.asInstanceOf[js.Any])
+    inline def setInclude_directories(value: Boolean): Self = StObject.set(x, "include_directories", value.asInstanceOf[js.Any])
   }
 }

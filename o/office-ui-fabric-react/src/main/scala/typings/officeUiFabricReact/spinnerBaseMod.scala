@@ -29,7 +29,6 @@ object spinnerBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Spinner/Spinner.base", "SpinnerBase.defaultProps")
     @js.native
     def defaultProps: ISpinnerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ISpinnerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ISpinnerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

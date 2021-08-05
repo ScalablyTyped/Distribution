@@ -26,20 +26,17 @@ object dispatchersMod {
     @JSImport("plottable/build/src/dispatchers", "Key._DISPATCHER_KEY")
     @js.native
     def _DISPATCHER_KEY: js.Any = js.native
-    @scala.inline
-    def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    inline def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Key._KEYDOWN_EVENT_NAME")
     @js.native
     def _KEYDOWN_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _KEYDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _KEYDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Key._KEYUP_EVENT_NAME")
     @js.native
     def _KEYUP_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _KEYUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _KEYUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a Key Dispatcher. If one already exists it will be returned;
@@ -47,8 +44,7 @@ object dispatchersMod {
       *
       * @return {Dispatchers.Key}
       */
-    @scala.inline
-    def getDispatcher(): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[Key]
+    inline def getDispatcher(): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[Key]
   }
   
   @JSImport("plottable/build/src/dispatchers", "Mouse")
@@ -58,7 +54,7 @@ object dispatchersMod {
     *
     * @constructor
     */
-  class Mouse protected ()
+  /* private */ class Mouse ()
     extends typings.plottable.mouseDispatcherMod.Mouse
   /* static members */
   object Mouse {
@@ -70,50 +66,42 @@ object dispatchersMod {
     @JSImport("plottable/build/src/dispatchers", "Mouse._DBLCLICK_EVENT_NAME")
     @js.native
     def _DBLCLICK_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _DBLCLICK_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DBLCLICK_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _DBLCLICK_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DBLCLICK_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Mouse._DISPATCHER_KEY")
     @js.native
     def _DISPATCHER_KEY: js.Any = js.native
-    @scala.inline
-    def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    inline def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Mouse._MOUSEDOWN_EVENT_NAME")
     @js.native
     def _MOUSEDOWN_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _MOUSEDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _MOUSEDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Mouse._MOUSEMOVE_EVENT_NAME")
     @js.native
     def _MOUSEMOVE_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _MOUSEMOVE_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEMOVE_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _MOUSEMOVE_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEMOVE_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Mouse._MOUSEOUT_EVENT_NAME")
     @js.native
     def _MOUSEOUT_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _MOUSEOUT_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEOUT_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _MOUSEOUT_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEOUT_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Mouse._MOUSEOVER_EVENT_NAME")
     @js.native
     def _MOUSEOVER_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _MOUSEOVER_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEOVER_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _MOUSEOVER_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEOVER_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Mouse._MOUSEUP_EVENT_NAME")
     @js.native
     def _MOUSEUP_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _MOUSEUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEUP_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _MOUSEUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEUP_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Mouse._WHEEL_EVENT_NAME")
     @js.native
     def _WHEEL_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _WHEEL_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WHEEL_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _WHEEL_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WHEEL_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * Get a Mouse Dispatcher for the component tree.
@@ -122,8 +110,7 @@ object dispatchersMod {
       * @param {SVGElement} elem
       * @return {Dispatchers.Mouse}
       */
-    @scala.inline
-    def getDispatcher(component: Component): Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[Mouse]
+    inline def getDispatcher(component: Component): Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[Mouse]
   }
   
   @JSImport("plottable/build/src/dispatchers", "Touch")
@@ -147,32 +134,27 @@ object dispatchersMod {
     @JSImport("plottable/build/src/dispatchers", "Touch._DISPATCHER_KEY")
     @js.native
     def _DISPATCHER_KEY: js.Any = js.native
-    @scala.inline
-    def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    inline def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Touch._TOUCHCANCEL_EVENT_NAME")
     @js.native
     def _TOUCHCANCEL_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _TOUCHCANCEL_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHCANCEL_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _TOUCHCANCEL_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHCANCEL_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Touch._TOUCHEND_EVENT_NAME")
     @js.native
     def _TOUCHEND_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _TOUCHEND_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHEND_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _TOUCHEND_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHEND_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Touch._TOUCHMOVE_EVENT_NAME")
     @js.native
     def _TOUCHMOVE_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _TOUCHMOVE_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHMOVE_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _TOUCHMOVE_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHMOVE_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers", "Touch._TOUCHSTART_EVENT_NAME")
     @js.native
     def _TOUCHSTART_EVENT_NAME: js.Any = js.native
-    @scala.inline
-    def _TOUCHSTART_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHSTART_EVENT_NAME")(x.asInstanceOf[js.Any])
+    inline def _TOUCHSTART_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHSTART_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a Touch Dispatcher for the component.
@@ -181,7 +163,6 @@ object dispatchersMod {
       * @param component
       * @return {Dispatchers.Touch}
       */
-    @scala.inline
-    def getDispatcher(component: Component): Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[Touch]
+    inline def getDispatcher(component: Component): Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[Touch]
   }
 }

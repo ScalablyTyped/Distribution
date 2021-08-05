@@ -66,23 +66,18 @@ object mod {
     }
     object View {
       
-      @scala.inline
-      def apply(bind: () => Unit, build: () => Unit, unbind: () => Unit): View = {
+      inline def apply(bind: () => Unit, build: () => Unit, unbind: () => Unit): View = {
         val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), build = js.Any.fromFunction0(build), unbind = js.Any.fromFunction0(unbind))
         __obj.asInstanceOf[View]
       }
       
-      @scala.inline
-      implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+      extension [Self <: View](x: Self) {
         
-        @scala.inline
-        def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
+        inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setBuild(value: () => Unit): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+        inline def setBuild(value: () => Unit): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+        inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
       }
     }
     

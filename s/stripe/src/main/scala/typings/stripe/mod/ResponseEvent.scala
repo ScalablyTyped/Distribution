@@ -28,8 +28,7 @@ trait ResponseEvent extends StObject {
 }
 object ResponseEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api_version: String,
     elapsed: Double,
     method: String,
@@ -43,43 +42,30 @@ object ResponseEvent {
     __obj.asInstanceOf[ResponseEvent]
   }
   
-  @scala.inline
-  implicit class ResponseEventMutableBuilder[Self <: ResponseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseEvent](x: Self) {
     
-    @scala.inline
-    def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
+    inline def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+    inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
+    inline def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
+    inline def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_end_time(value: Double): Self = StObject.set(x, "request_end_time", value.asInstanceOf[js.Any])
+    inline def setRequest_end_time(value: Double): Self = StObject.set(x, "request_end_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+    inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_start_time(value: Double): Self = StObject.set(x, "request_start_time", value.asInstanceOf[js.Any])
+    inline def setRequest_start_time(value: Double): Self = StObject.set(x, "request_start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

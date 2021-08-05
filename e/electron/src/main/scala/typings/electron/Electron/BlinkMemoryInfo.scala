@@ -23,22 +23,17 @@ trait BlinkMemoryInfo extends StObject {
 }
 object BlinkMemoryInfo {
   
-  @scala.inline
-  def apply(allocated: Double, marked: Double, total: Double): BlinkMemoryInfo = {
+  inline def apply(allocated: Double, marked: Double, total: Double): BlinkMemoryInfo = {
     val __obj = js.Dynamic.literal(allocated = allocated.asInstanceOf[js.Any], marked = marked.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlinkMemoryInfo]
   }
   
-  @scala.inline
-  implicit class BlinkMemoryInfoMutableBuilder[Self <: BlinkMemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BlinkMemoryInfo](x: Self) {
     
-    @scala.inline
-    def setAllocated(value: Double): Self = StObject.set(x, "allocated", value.asInstanceOf[js.Any])
+    inline def setAllocated(value: Double): Self = StObject.set(x, "allocated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarked(value: Double): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
+    inline def setMarked(value: Double): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

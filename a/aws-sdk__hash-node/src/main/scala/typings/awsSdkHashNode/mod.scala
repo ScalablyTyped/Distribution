@@ -18,7 +18,7 @@ object mod {
     def this(algorithmIdentifier: String) = this()
     def this(algorithmIdentifier: String, secret: SourceData) = this()
     
-    val hash: js.Any = js.native
+    /* private */ val hash: js.Any = js.native
     
     @JSName("update")
     def update_ascii(toHash: SourceData, encoding: ascii): Unit = js.native

@@ -13,16 +13,13 @@ trait StopKeyPhrasesDetectionJobRequest extends StObject {
 }
 object StopKeyPhrasesDetectionJobRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): StopKeyPhrasesDetectionJobRequest = {
+  inline def apply(JobId: JobId): StopKeyPhrasesDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopKeyPhrasesDetectionJobRequest]
   }
   
-  @scala.inline
-  implicit class StopKeyPhrasesDetectionJobRequestMutableBuilder[Self <: StopKeyPhrasesDetectionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopKeyPhrasesDetectionJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

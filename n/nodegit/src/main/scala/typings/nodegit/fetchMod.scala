@@ -20,8 +20,7 @@ object fetchMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def initOptions(opts: FetchOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def initOptions(opts: FetchOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -31,14 +30,11 @@ object fetchMod {
     trait PRUNE extends StObject
     object PRUNE {
       
-      @scala.inline
-      def GIT_FETCH_NO_PRUNE: `2` = 2.asInstanceOf[`2`]
+      inline def GIT_FETCH_NO_PRUNE: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def GIT_FETCH_PRUNE: `1` = 1.asInstanceOf[`1`]
+      inline def GIT_FETCH_PRUNE: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def GIT_FETCH_PRUNE_UNSPECIFIED: `0` = 0.asInstanceOf[`0`]
+      inline def GIT_FETCH_PRUNE_UNSPECIFIED: `0` = 0.asInstanceOf[`0`]
     }
   }
 }

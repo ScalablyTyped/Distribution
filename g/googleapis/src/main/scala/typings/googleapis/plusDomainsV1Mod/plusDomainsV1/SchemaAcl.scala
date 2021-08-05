@@ -29,40 +29,29 @@ trait SchemaAcl extends StObject {
 }
 object SchemaAcl {
   
-  @scala.inline
-  def apply(): SchemaAcl = {
+  inline def apply(): SchemaAcl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAcl]
   }
   
-  @scala.inline
-  implicit class SchemaAclMutableBuilder[Self <: SchemaAcl] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAcl](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDomainRestricted(value: Boolean): Self = StObject.set(x, "domainRestricted", value.asInstanceOf[js.Any])
+    inline def setDomainRestricted(value: Boolean): Self = StObject.set(x, "domainRestricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainRestrictedUndefined: Self = StObject.set(x, "domainRestricted", js.undefined)
+    inline def setDomainRestrictedUndefined: Self = StObject.set(x, "domainRestricted", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaPlusDomainsAclentryResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaPlusDomainsAclentryResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaPlusDomainsAclentryResource*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaPlusDomainsAclentryResource*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

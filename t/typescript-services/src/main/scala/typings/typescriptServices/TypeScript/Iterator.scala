@@ -12,19 +12,15 @@ trait Iterator[T] extends StObject {
 }
 object Iterator {
   
-  @scala.inline
-  def apply[T](current: () => T, moveNext: () => Boolean): Iterator[T] = {
+  inline def apply[T](current: () => T, moveNext: () => Boolean): Iterator[T] = {
     val __obj = js.Dynamic.literal(current = js.Any.fromFunction0(current), moveNext = js.Any.fromFunction0(moveNext))
     __obj.asInstanceOf[Iterator[T]]
   }
   
-  @scala.inline
-  implicit class IteratorMutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
+  extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
     
-    @scala.inline
-    def setCurrent(value: () => T): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
+    inline def setCurrent(value: () => T): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+    inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
   }
 }

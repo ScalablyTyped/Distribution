@@ -15,8 +15,7 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def ContentFilter(expr: String): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("ContentFilter")(expr.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def ContentFilter(expr: String): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("ContentFilter")(expr.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("DDS.DataCache")
     @js.native
@@ -100,8 +99,7 @@ object global {
     @JSGlobal("DDS.DataReaderQos")
     @js.native
     def DataReaderQos: EntityQos = js.native
-    @scala.inline
-    def DataReaderQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataReaderQos")(x.asInstanceOf[js.Any])
+    inline def DataReaderQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataReaderQos")(x.asInstanceOf[js.Any])
     
     @JSGlobal("DDS.DataWriter")
     @js.native
@@ -155,8 +153,7 @@ object global {
     @JSGlobal("DDS.DataWriterQos")
     @js.native
     def DataWriterQos: EntityQos = js.native
-    @scala.inline
-    def DataWriterQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataWriterQos")(x.asInstanceOf[js.Any])
+    inline def DataWriterQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataWriterQos")(x.asInstanceOf[js.Any])
     
     @JSGlobal("DDS.Durability")
     @js.native
@@ -176,8 +173,7 @@ object global {
       @JSGlobal("DDS.Durability.Persistent")
       @js.native
       def Persistent: js.Any = js.native
-      @scala.inline
-      def Persistent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
+      inline def Persistent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
       
       /**
         * Transient - Transient durability policy
@@ -192,11 +188,9 @@ object global {
       @JSGlobal("DDS.Durability.TransientLocal")
       @js.native
       def TransientLocal: js.Any = js.native
-      @scala.inline
-      def TransientLocal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
+      inline def TransientLocal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Transient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
+      inline def Transient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
       
       /**
         * Volatile - Volatile durability policy
@@ -204,8 +198,7 @@ object global {
       @JSGlobal("DDS.Durability.Volatile")
       @js.native
       def Volatile: js.Any = js.native
-      @scala.inline
-      def Volatile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
+      inline def Volatile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("DDS.DurabilityKind")
@@ -242,8 +235,7 @@ object global {
       @JSGlobal("DDS.History.KeepAll")
       @js.native
       def KeepAll: js.Any = js.native
-      @scala.inline
-      def KeepAll_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
+      inline def KeepAll_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
       
       /**
         * KeepLast - KEEP_LAST qos policy
@@ -251,8 +243,7 @@ object global {
       @JSGlobal("DDS.History.KeepLast")
       @js.native
       def KeepLast: js.Any = js.native
-      @scala.inline
-      def KeepLast_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
+      inline def KeepLast_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("DDS.HistoryKind")
@@ -267,8 +258,7 @@ object global {
       /* 1 */ val KeepLast: typings.vortexWebClient.DDS_.HistoryKind.KeepLast & Double = js.native
     }
     
-    @scala.inline
-    def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("DDS.Reliability")
     @js.native
@@ -288,8 +278,7 @@ object global {
       @JSGlobal("DDS.Reliability.BestEffort")
       @js.native
       def BestEffort: js.Any = js.native
-      @scala.inline
-      def BestEffort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
+      inline def BestEffort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
       
       /**
         * Reliable - 'Reliable' reliability policy
@@ -297,8 +286,7 @@ object global {
       @JSGlobal("DDS.Reliability.Reliable")
       @js.native
       def Reliable: js.Any = js.native
-      @scala.inline
-      def Reliable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
+      inline def Reliable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("DDS.ReliabilityKind")
@@ -313,8 +301,7 @@ object global {
       /* 0 */ val Reliable: typings.vortexWebClient.DDS_.ReliabilityKind.Reliable & Double = js.native
     }
     
-    @scala.inline
-    def TimeFilter(period: Double): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeFilter")(period.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def TimeFilter(period: Double): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeFilter")(period.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("DDS.Topic")
     @js.native
@@ -364,14 +351,12 @@ object global {
     @JSGlobal("DDS.TopicQos")
     @js.native
     def TopicQos: EntityQos = js.native
-    @scala.inline
-    def TopicQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopicQos")(x.asInstanceOf[js.Any])
+    inline def TopicQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopicQos")(x.asInstanceOf[js.Any])
     
     @JSGlobal("DDS.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
     object runtime {
       
@@ -396,8 +381,7 @@ object global {
         extends StObject
            with Runtime
       
-      @scala.inline
-      def Runtime_=(x: Runtime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Runtime")(x.asInstanceOf[js.Any])
+      inline def Runtime_=(x: Runtime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Runtime")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -408,8 +392,7 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def ContentFilter(expr: String): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("ContentFilter")(expr.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def ContentFilter(expr: String): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("ContentFilter")(expr.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("dds.DataCache")
     @js.native
@@ -493,8 +476,7 @@ object global {
     @JSGlobal("dds.DataReaderQos")
     @js.native
     def DataReaderQos: EntityQos = js.native
-    @scala.inline
-    def DataReaderQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataReaderQos")(x.asInstanceOf[js.Any])
+    inline def DataReaderQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataReaderQos")(x.asInstanceOf[js.Any])
     
     @JSGlobal("dds.DataWriter")
     @js.native
@@ -548,8 +530,7 @@ object global {
     @JSGlobal("dds.DataWriterQos")
     @js.native
     def DataWriterQos: EntityQos = js.native
-    @scala.inline
-    def DataWriterQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataWriterQos")(x.asInstanceOf[js.Any])
+    inline def DataWriterQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataWriterQos")(x.asInstanceOf[js.Any])
     
     @JSGlobal("dds.Durability")
     @js.native
@@ -569,8 +550,7 @@ object global {
       @JSGlobal("dds.Durability.Persistent")
       @js.native
       def Persistent: js.Any = js.native
-      @scala.inline
-      def Persistent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
+      inline def Persistent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
       
       /**
         * Transient - Transient durability policy
@@ -585,11 +565,9 @@ object global {
       @JSGlobal("dds.Durability.TransientLocal")
       @js.native
       def TransientLocal: js.Any = js.native
-      @scala.inline
-      def TransientLocal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
+      inline def TransientLocal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Transient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
+      inline def Transient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
       
       /**
         * Volatile - Volatile durability policy
@@ -597,8 +575,7 @@ object global {
       @JSGlobal("dds.Durability.Volatile")
       @js.native
       def Volatile: js.Any = js.native
-      @scala.inline
-      def Volatile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
+      inline def Volatile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("dds.DurabilityKind")
@@ -635,8 +612,7 @@ object global {
       @JSGlobal("dds.History.KeepAll")
       @js.native
       def KeepAll: js.Any = js.native
-      @scala.inline
-      def KeepAll_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
+      inline def KeepAll_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
       
       /**
         * KeepLast - KEEP_LAST qos policy
@@ -644,8 +620,7 @@ object global {
       @JSGlobal("dds.History.KeepLast")
       @js.native
       def KeepLast: js.Any = js.native
-      @scala.inline
-      def KeepLast_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
+      inline def KeepLast_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("dds.HistoryKind")
@@ -660,8 +635,7 @@ object global {
       /* 1 */ val KeepLast: typings.vortexWebClient.dds.HistoryKind.KeepLast & Double = js.native
     }
     
-    @scala.inline
-    def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("dds.Reliability")
     @js.native
@@ -681,8 +655,7 @@ object global {
       @JSGlobal("dds.Reliability.BestEffort")
       @js.native
       def BestEffort: js.Any = js.native
-      @scala.inline
-      def BestEffort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
+      inline def BestEffort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
       
       /**
         * Reliable - 'Reliable' reliability policy
@@ -690,8 +663,7 @@ object global {
       @JSGlobal("dds.Reliability.Reliable")
       @js.native
       def Reliable: js.Any = js.native
-      @scala.inline
-      def Reliable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
+      inline def Reliable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("dds.ReliabilityKind")
@@ -706,8 +678,7 @@ object global {
       /* 0 */ val Reliable: typings.vortexWebClient.dds.ReliabilityKind.Reliable & Double = js.native
     }
     
-    @scala.inline
-    def TimeFilter(period: Double): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeFilter")(period.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def TimeFilter(period: Double): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeFilter")(period.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("dds.Topic")
     @js.native
@@ -757,14 +728,12 @@ object global {
     @JSGlobal("dds.TopicQos")
     @js.native
     def TopicQos: EntityQos = js.native
-    @scala.inline
-    def TopicQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopicQos")(x.asInstanceOf[js.Any])
+    inline def TopicQos_=(x: EntityQos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopicQos")(x.asInstanceOf[js.Any])
     
     @JSGlobal("dds.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
     object runtime {
       
@@ -789,8 +758,7 @@ object global {
         extends StObject
            with Runtime
       
-      @scala.inline
-      def Runtime_=(x: Runtime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Runtime")(x.asInstanceOf[js.Any])
+      inline def Runtime_=(x: Runtime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Runtime")(x.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,25 +23,19 @@ trait GeocoderConstructorOptions extends StObject {
 }
 object GeocoderConstructorOptions {
   
-  @scala.inline
-  def apply(): GeocoderConstructorOptions = {
+  inline def apply(): GeocoderConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeocoderConstructorOptions]
   }
   
-  @scala.inline
-  implicit class GeocoderConstructorOptionsMutableBuilder[Self <: GeocoderConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setGetsUserLocation(value: Boolean): Self = StObject.set(x, "getsUserLocation", value.asInstanceOf[js.Any])
+    inline def setGetsUserLocation(value: Boolean): Self = StObject.set(x, "getsUserLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetsUserLocationUndefined: Self = StObject.set(x, "getsUserLocation", js.undefined)
+    inline def setGetsUserLocationUndefined: Self = StObject.set(x, "getsUserLocation", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

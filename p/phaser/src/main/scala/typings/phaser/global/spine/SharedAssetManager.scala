@@ -13,13 +13,13 @@ class SharedAssetManager ()
      with typings.phaser.spine.SharedAssetManager {
   def this(pathPrefix: String) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var clientAssets: js.Any = js.native
   
   /* CompleteClass */
   override def dispose(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var errors: js.Any = js.native
   
   /* CompleteClass */
@@ -43,18 +43,18 @@ class SharedAssetManager ()
   /* CompleteClass */
   override def loadTexture(clientId: String, textureLoader: js.Function1[/* image */ HTMLImageElement, js.Any], path: String): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var pathPrefix: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var queueAsset: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var queuedAssets: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var rawAssets: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var updateClientAssets: js.Any = js.native
 }

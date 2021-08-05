@@ -13,19 +13,15 @@ trait StaticValue extends StObject {
 }
 object StaticValue {
   
-  @scala.inline
-  def apply(Values: StaticParameterValues): StaticValue = {
+  inline def apply(Values: StaticParameterValues): StaticValue = {
     val __obj = js.Dynamic.literal(Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticValue]
   }
   
-  @scala.inline
-  implicit class StaticValueMutableBuilder[Self <: StaticValue] (val x: Self) extends AnyVal {
+  extension [Self <: StaticValue](x: Self) {
     
-    @scala.inline
-    def setValues(value: StaticParameterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StaticParameterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

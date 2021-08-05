@@ -70,17 +70,14 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(servicePath: String): Config = {
+    inline def apply(servicePath: String): Config = {
       val __obj = js.Dynamic.literal(servicePath = servicePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+      inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,60 +107,43 @@ object mod {
   }
   object FunctionDefinition {
     
-    @scala.inline
-    def apply(_package: Package, events: js.Array[Event], handler: String, name: String): FunctionDefinition = {
+    inline def apply(_package: Package, events: js.Array[Event], handler: String, name: String): FunctionDefinition = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionDefinition]
     }
     
-    @scala.inline
-    implicit class FunctionDefinitionMutableBuilder[Self <: FunctionDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionDefinition](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemorySize(value: Double): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
+      inline def setMemorySize(value: Double): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
+      inline def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,50 +163,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal(region = null, stage = null)
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtraServicePath(value: String): Self = StObject.set(x, "extraServicePath", value.asInstanceOf[js.Any])
+      inline def setExtraServicePath(value: String): Self = StObject.set(x, "extraServicePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraServicePathUndefined: Self = StObject.set(x, "extraServicePath", js.undefined)
+      inline def setExtraServicePathUndefined: Self = StObject.set(x, "extraServicePath", js.undefined)
       
-      @scala.inline
-      def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setNoDeploy(value: Boolean): Self = StObject.set(x, "noDeploy", value.asInstanceOf[js.Any])
+      inline def setNoDeploy(value: Boolean): Self = StObject.set(x, "noDeploy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDeployUndefined: Self = StObject.set(x, "noDeploy", js.undefined)
+      inline def setNoDeployUndefined: Self = StObject.set(x, "noDeploy", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNull: Self = StObject.set(x, "region", null)
+      inline def setRegionNull: Self = StObject.set(x, "region", null)
       
-      @scala.inline
-      def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageNull: Self = StObject.set(x, "stage", null)
+      inline def setStageNull: Self = StObject.set(x, "stage", null)
       
-      @scala.inline
-      def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
   
@@ -242,38 +208,28 @@ object mod {
   }
   object Package {
     
-    @scala.inline
-    def apply(exclude: js.Array[String], include: js.Array[String]): Package = {
+    inline def apply(exclude: js.Array[String], include: js.Array[String]): Package = {
       val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any])
       __obj.asInstanceOf[Package]
     }
     
-    @scala.inline
-    implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
+    extension [Self <: Package](x: Self) {
       
-      @scala.inline
-      def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
+      inline def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtifactUndefined: Self = StObject.set(x, "artifact", js.undefined)
+      inline def setArtifactUndefined: Self = StObject.set(x, "artifact", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setIndividually(value: Boolean): Self = StObject.set(x, "individually", value.asInstanceOf[js.Any])
+      inline def setIndividually(value: Boolean): Self = StObject.set(x, "individually", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndividuallyUndefined: Self = StObject.set(x, "individually", js.undefined)
+      inline def setIndividuallyUndefined: Self = StObject.set(x, "individually", js.undefined)
     }
   }
   
@@ -311,8 +267,7 @@ object mod {
   }
   object Serverless {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cli: Log,
       config: Config,
       getProvider: String => typings.serverless.awsProviderMod.^,
@@ -333,53 +288,37 @@ object mod {
       __obj.asInstanceOf[Serverless]
     }
     
-    @scala.inline
-    implicit class ServerlessMutableBuilder[Self <: Serverless] (val x: Self) extends AnyVal {
+    extension [Self <: Serverless](x: Self) {
       
-      @scala.inline
-      def setCli(value: Log): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
+      inline def setCli(value: Log): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetProvider(value: String => typings.serverless.awsProviderMod.^): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
+      inline def setGetProvider(value: String => typings.serverless.awsProviderMod.^): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+      inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInit(value: () => js.Promise[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => js.Promise[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPluginManager(value: typings.serverless.pluginManagerMod.^): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
+      inline def setPluginManager(value: typings.serverless.pluginManagerMod.^): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: () => js.Promise[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => js.Promise[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setServerlessDirPath(value: String): Self = StObject.set(x, "serverlessDirPath", value.asInstanceOf[js.Any])
+      inline def setServerlessDirPath(value: String): Self = StObject.set(x, "serverlessDirPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: typings.serverless.serviceMod.^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: typings.serverless.serviceMod.^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetProvider(value: (String, typings.serverless.awsProviderMod.^) => Null): Self = StObject.set(x, "setProvider", js.Any.fromFunction2(value))
+      inline def setSetProvider(value: (String, typings.serverless.awsProviderMod.^) => Null): Self = StObject.set(x, "setProvider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUtils(value: typings.serverless.utilsMod.^): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: typings.serverless.utilsMod.^): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: PopulateService): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: PopulateService): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYamlParser(value: typings.serverless.yamlParserMod.^): Self = StObject.set(x, "yamlParser", value.asInstanceOf[js.Any])
+      inline def setYamlParser(value: typings.serverless.yamlParserMod.^): Self = StObject.set(x, "yamlParser", value.asInstanceOf[js.Any])
     }
   }
 }

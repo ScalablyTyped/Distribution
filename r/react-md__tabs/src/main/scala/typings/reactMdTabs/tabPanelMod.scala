@@ -21,8 +21,7 @@ object tabPanelMod {
        with OverridableCSSTransitionProps
   object TabPanelProps {
     
-    @scala.inline
-    def apply(): TabPanelProps = {
+    inline def apply(): TabPanelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabPanelProps]
     }

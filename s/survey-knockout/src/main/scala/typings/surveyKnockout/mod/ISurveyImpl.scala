@@ -14,22 +14,17 @@ trait ISurveyImpl extends StObject {
 }
 object ISurveyImpl {
   
-  @scala.inline
-  def apply(geSurveyData: () => ISurveyData, getSurvey: () => ISurvey, getTextProcessor: () => ITextProcessor): ISurveyImpl = {
+  inline def apply(geSurveyData: () => ISurveyData, getSurvey: () => ISurvey, getTextProcessor: () => ITextProcessor): ISurveyImpl = {
     val __obj = js.Dynamic.literal(geSurveyData = js.Any.fromFunction0(geSurveyData), getSurvey = js.Any.fromFunction0(getSurvey), getTextProcessor = js.Any.fromFunction0(getTextProcessor))
     __obj.asInstanceOf[ISurveyImpl]
   }
   
-  @scala.inline
-  implicit class ISurveyImplMutableBuilder[Self <: ISurveyImpl] (val x: Self) extends AnyVal {
+  extension [Self <: ISurveyImpl](x: Self) {
     
-    @scala.inline
-    def setGeSurveyData(value: () => ISurveyData): Self = StObject.set(x, "geSurveyData", js.Any.fromFunction0(value))
+    inline def setGeSurveyData(value: () => ISurveyData): Self = StObject.set(x, "geSurveyData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
+    inline def setGetSurvey(value: () => ISurvey): Self = StObject.set(x, "getSurvey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextProcessor(value: () => ITextProcessor): Self = StObject.set(x, "getTextProcessor", js.Any.fromFunction0(value))
+    inline def setGetTextProcessor(value: () => ITextProcessor): Self = StObject.set(x, "getTextProcessor", js.Any.fromFunction0(value))
   }
 }

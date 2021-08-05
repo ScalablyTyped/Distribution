@@ -18,25 +18,19 @@ trait QueryStringKeyValuePair extends StObject {
 }
 object QueryStringKeyValuePair {
   
-  @scala.inline
-  def apply(): QueryStringKeyValuePair = {
+  inline def apply(): QueryStringKeyValuePair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryStringKeyValuePair]
   }
   
-  @scala.inline
-  implicit class QueryStringKeyValuePairMutableBuilder[Self <: QueryStringKeyValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: QueryStringKeyValuePair](x: Self) {
     
-    @scala.inline
-    def setKey(value: StringValue): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: StringValue): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValue(value: StringValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StringValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait DatabaseLogicCommand extends StObject {
 }
 object DatabaseLogicCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _setFieldName: String => DatabaseLogicCommand,
     and: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
     fieldName: String | InternalSymbol,
@@ -35,25 +34,18 @@ object DatabaseLogicCommand {
     __obj.asInstanceOf[DatabaseLogicCommand]
   }
   
-  @scala.inline
-  implicit class DatabaseLogicCommandMutableBuilder[Self <: DatabaseLogicCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseLogicCommand](x: Self) {
     
-    @scala.inline
-    def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    inline def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperands(value: Array[js.Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+    inline def setOperands(value: Array[js.Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: LOGIC_COMMANDS_LITERAL | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: LOGIC_COMMANDS_LITERAL | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+    inline def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_setFieldName(value: String => DatabaseLogicCommand): Self = StObject.set(x, "_setFieldName", js.Any.fromFunction1(value))
+    inline def set_setFieldName(value: String => DatabaseLogicCommand): Self = StObject.set(x, "_setFieldName", js.Any.fromFunction1(value))
   }
 }

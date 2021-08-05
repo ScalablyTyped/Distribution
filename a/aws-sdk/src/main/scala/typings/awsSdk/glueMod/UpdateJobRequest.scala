@@ -18,19 +18,15 @@ trait UpdateJobRequest extends StObject {
 }
 object UpdateJobRequest {
   
-  @scala.inline
-  def apply(JobName: NameString, JobUpdate: JobUpdate): UpdateJobRequest = {
+  inline def apply(JobName: NameString, JobUpdate: JobUpdate): UpdateJobRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any], JobUpdate = JobUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobRequest]
   }
   
-  @scala.inline
-  implicit class UpdateJobRequestMutableBuilder[Self <: UpdateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUpdate(value: JobUpdate): Self = StObject.set(x, "JobUpdate", value.asInstanceOf[js.Any])
+    inline def setJobUpdate(value: JobUpdate): Self = StObject.set(x, "JobUpdate", value.asInstanceOf[js.Any])
   }
 }

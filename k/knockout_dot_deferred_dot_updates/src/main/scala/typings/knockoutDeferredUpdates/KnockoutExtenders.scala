@@ -11,16 +11,13 @@ trait KnockoutExtenders extends StObject {
 }
 object KnockoutExtenders {
   
-  @scala.inline
-  def apply(deferred: (js.Any, Boolean) => js.Any): KnockoutExtenders = {
+  inline def apply(deferred: (js.Any, Boolean) => js.Any): KnockoutExtenders = {
     val __obj = js.Dynamic.literal(deferred = js.Any.fromFunction2(deferred))
     __obj.asInstanceOf[KnockoutExtenders]
   }
   
-  @scala.inline
-  implicit class KnockoutExtendersMutableBuilder[Self <: KnockoutExtenders] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutExtenders](x: Self) {
     
-    @scala.inline
-    def setDeferred(value: (js.Any, Boolean) => js.Any): Self = StObject.set(x, "deferred", js.Any.fromFunction2(value))
+    inline def setDeferred(value: (js.Any, Boolean) => js.Any): Self = StObject.set(x, "deferred", js.Any.fromFunction2(value))
   }
 }

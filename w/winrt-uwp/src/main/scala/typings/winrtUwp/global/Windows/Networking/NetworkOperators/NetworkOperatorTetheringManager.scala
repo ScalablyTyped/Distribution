@@ -83,8 +83,7 @@ object NetworkOperatorTetheringManager {
     * @return The resulting manager object.
     */
   /* static member */
-  @scala.inline
-  def createFromConnectionProfile(profile: ConnectionProfile): typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConnectionProfile")(profile.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager]
+  inline def createFromConnectionProfile(profile: ConnectionProfile): typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromConnectionProfile")(profile.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager]
   
   /**
     * Creates an instance of NetworkOperatorTetheringManager for a specific network account using the provided network account ID for the mobile broadband device.
@@ -92,8 +91,7 @@ object NetworkOperatorTetheringManager {
     * @return A NetworkOperatorTetheringManager object.
     */
   /* static member */
-  @scala.inline
-  def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkAccountId")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager]
+  inline def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkAccountId")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager]
   
   /**
     * Indicates if a device is capable of creating a tethering network. Possible values are defined by TetheringCapability .
@@ -101,8 +99,7 @@ object NetworkOperatorTetheringManager {
     * @return The tethering capabilities of a network account.
     */
   /* static member */
-  @scala.inline
-  def getTetheringCapability(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability = ^.asInstanceOf[js.Dynamic].applyDynamic("getTetheringCapability")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability]
+  inline def getTetheringCapability(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability = ^.asInstanceOf[js.Dynamic].applyDynamic("getTetheringCapability")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability]
   
   /**
     * Gets tethering capabilities, based on the given connection profile.
@@ -110,6 +107,5 @@ object NetworkOperatorTetheringManager {
     * @return Tethering capabilities of the connection profile.
     */
   /* static member */
-  @scala.inline
-  def getTetheringCapabilityFromConnectionProfile(profile: ConnectionProfile): typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability = ^.asInstanceOf[js.Dynamic].applyDynamic("getTetheringCapabilityFromConnectionProfile")(profile.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability]
+  inline def getTetheringCapabilityFromConnectionProfile(profile: ConnectionProfile): typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability = ^.asInstanceOf[js.Dynamic].applyDynamic("getTetheringCapabilityFromConnectionProfile")(profile.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.TetheringCapability]
 }

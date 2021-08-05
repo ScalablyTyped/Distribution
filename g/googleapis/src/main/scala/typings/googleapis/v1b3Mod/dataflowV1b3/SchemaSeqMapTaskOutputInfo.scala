@@ -21,25 +21,19 @@ trait SchemaSeqMapTaskOutputInfo extends StObject {
 }
 object SchemaSeqMapTaskOutputInfo {
   
-  @scala.inline
-  def apply(): SchemaSeqMapTaskOutputInfo = {
+  inline def apply(): SchemaSeqMapTaskOutputInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSeqMapTaskOutputInfo]
   }
   
-  @scala.inline
-  implicit class SchemaSeqMapTaskOutputInfoMutableBuilder[Self <: SchemaSeqMapTaskOutputInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSeqMapTaskOutputInfo](x: Self) {
     
-    @scala.inline
-    def setSink(value: SchemaSink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: SchemaSink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
+    inline def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

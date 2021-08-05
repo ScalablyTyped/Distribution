@@ -8,16 +8,13 @@ object vueSharedStrings {
   
   @js.native
   sealed trait bigInt extends StObject
-  @scala.inline
-  def bigInt: bigInt = "bigInt".asInstanceOf[bigInt]
+  inline def bigInt: bigInt = "bigInt".asInstanceOf[bigInt]
   
   @js.native
   sealed trait nullishCoalescingOperator extends StObject
-  @scala.inline
-  def nullishCoalescingOperator: nullishCoalescingOperator = "nullishCoalescingOperator".asInstanceOf[nullishCoalescingOperator]
+  inline def nullishCoalescingOperator: nullishCoalescingOperator = "nullishCoalescingOperator".asInstanceOf[nullishCoalescingOperator]
   
   @js.native
   sealed trait optionalChaining extends StObject
-  @scala.inline
-  def optionalChaining: optionalChaining = "optionalChaining".asInstanceOf[optionalChaining]
+  inline def optionalChaining: optionalChaining = "optionalChaining".asInstanceOf[optionalChaining]
 }

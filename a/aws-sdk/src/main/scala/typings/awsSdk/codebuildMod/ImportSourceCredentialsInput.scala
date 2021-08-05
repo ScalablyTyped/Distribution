@@ -33,34 +33,25 @@ trait ImportSourceCredentialsInput extends StObject {
 }
 object ImportSourceCredentialsInput {
   
-  @scala.inline
-  def apply(authType: AuthType, serverType: ServerType, token: SensitiveNonEmptyString): ImportSourceCredentialsInput = {
+  inline def apply(authType: AuthType, serverType: ServerType, token: SensitiveNonEmptyString): ImportSourceCredentialsInput = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], serverType = serverType.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportSourceCredentialsInput]
   }
   
-  @scala.inline
-  implicit class ImportSourceCredentialsInputMutableBuilder[Self <: ImportSourceCredentialsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ImportSourceCredentialsInput](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: AuthType): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: AuthType): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+    inline def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldOverwrite(value: WrapperBoolean): Self = StObject.set(x, "shouldOverwrite", value.asInstanceOf[js.Any])
+    inline def setShouldOverwrite(value: WrapperBoolean): Self = StObject.set(x, "shouldOverwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldOverwriteUndefined: Self = StObject.set(x, "shouldOverwrite", js.undefined)
+    inline def setShouldOverwriteUndefined: Self = StObject.set(x, "shouldOverwrite", js.undefined)
     
-    @scala.inline
-    def setToken(value: SensitiveNonEmptyString): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: SensitiveNonEmptyString): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: NonEmptyString): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: NonEmptyString): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

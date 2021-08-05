@@ -18,25 +18,19 @@ trait PlayerLatencyPolicy extends StObject {
 }
 object PlayerLatencyPolicy {
   
-  @scala.inline
-  def apply(): PlayerLatencyPolicy = {
+  inline def apply(): PlayerLatencyPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayerLatencyPolicy]
   }
   
-  @scala.inline
-  implicit class PlayerLatencyPolicyMutableBuilder[Self <: PlayerLatencyPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerLatencyPolicy](x: Self) {
     
-    @scala.inline
-    def setMaximumIndividualPlayerLatencyMilliseconds(value: WholeNumber): Self = StObject.set(x, "MaximumIndividualPlayerLatencyMilliseconds", value.asInstanceOf[js.Any])
+    inline def setMaximumIndividualPlayerLatencyMilliseconds(value: WholeNumber): Self = StObject.set(x, "MaximumIndividualPlayerLatencyMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumIndividualPlayerLatencyMillisecondsUndefined: Self = StObject.set(x, "MaximumIndividualPlayerLatencyMilliseconds", js.undefined)
+    inline def setMaximumIndividualPlayerLatencyMillisecondsUndefined: Self = StObject.set(x, "MaximumIndividualPlayerLatencyMilliseconds", js.undefined)
     
-    @scala.inline
-    def setPolicyDurationSeconds(value: WholeNumber): Self = StObject.set(x, "PolicyDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setPolicyDurationSeconds(value: WholeNumber): Self = StObject.set(x, "PolicyDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDurationSecondsUndefined: Self = StObject.set(x, "PolicyDurationSeconds", js.undefined)
+    inline def setPolicyDurationSecondsUndefined: Self = StObject.set(x, "PolicyDurationSeconds", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait GhostStore[T] extends StObject {
 }
 object GhostStore {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     eachGhost: js.Function1[/* ghost */ Ghost[T], Unit] => Unit,
     get: EntityId => js.Promise[Ghost[T]],
     getChangeVersion: () => js.Promise[ChangeVersion],
@@ -33,25 +32,18 @@ object GhostStore {
     __obj.asInstanceOf[GhostStore[T]]
   }
   
-  @scala.inline
-  implicit class GhostStoreMutableBuilder[Self <: GhostStore[?], T] (val x: Self & GhostStore[T]) extends AnyVal {
+  extension [Self <: GhostStore[?], T](x: Self & GhostStore[T]) {
     
-    @scala.inline
-    def setEachGhost(value: js.Function1[/* ghost */ Ghost[T], Unit] => Unit): Self = StObject.set(x, "eachGhost", js.Any.fromFunction1(value))
+    inline def setEachGhost(value: js.Function1[/* ghost */ Ghost[T], Unit] => Unit): Self = StObject.set(x, "eachGhost", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: EntityId => js.Promise[Ghost[T]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: EntityId => js.Promise[Ghost[T]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChangeVersion(value: () => js.Promise[ChangeVersion]): Self = StObject.set(x, "getChangeVersion", js.Any.fromFunction0(value))
+    inline def setGetChangeVersion(value: () => js.Promise[ChangeVersion]): Self = StObject.set(x, "getChangeVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPut(value: (EntityId, Double, T) => js.Promise[Ghost[T]]): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+    inline def setPut(value: (EntityId, Double, T) => js.Promise[Ghost[T]]): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemove(value: EntityId => js.Promise[Ghost[T]]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: EntityId => js.Promise[Ghost[T]]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetChangeVersion(value: ChangeVersion => js.Promise[Unit]): Self = StObject.set(x, "setChangeVersion", js.Any.fromFunction1(value))
+    inline def setSetChangeVersion(value: ChangeVersion => js.Promise[Unit]): Self = StObject.set(x, "setChangeVersion", js.Any.fromFunction1(value))
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFOfflineTransitionResultFlags extends StObject
 object MFOfflineTransitionResultFlags {
   
-  @scala.inline
-  def LoggedOut: `2` = 2.asInstanceOf[`2`]
+  inline def LoggedOut: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def StatusChanged: `1` = 1.asInstanceOf[`1`]
+  inline def StatusChanged: `1` = 1.asInstanceOf[`1`]
 }

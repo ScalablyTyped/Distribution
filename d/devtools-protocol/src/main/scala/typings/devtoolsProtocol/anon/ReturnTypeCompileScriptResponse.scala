@@ -14,22 +14,17 @@ trait ReturnTypeCompileScriptResponse extends StObject {
 }
 object ReturnTypeCompileScriptResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[CompileScriptRequest], returnType: CompileScriptResponse): ReturnTypeCompileScriptResponse = {
+  inline def apply(paramsType: js.Array[CompileScriptRequest], returnType: CompileScriptResponse): ReturnTypeCompileScriptResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeCompileScriptResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeCompileScriptResponseMutableBuilder[Self <: ReturnTypeCompileScriptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeCompileScriptResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[CompileScriptRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[CompileScriptRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: CompileScriptRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: CompileScriptRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: CompileScriptResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: CompileScriptResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

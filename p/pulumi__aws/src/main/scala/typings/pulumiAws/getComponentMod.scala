@@ -12,10 +12,8 @@ object getComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComponentResult]]
-  @scala.inline
-  def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComponentResult]]
+  inline def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComponentResult]]
+  inline def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComponentResult]]
   
   trait GetComponentArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getComponentMod {
   }
   object GetComponentArgs {
     
-    @scala.inline
-    def apply(arn: String): GetComponentArgs = {
+    inline def apply(arn: String): GetComponentArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetComponentArgs]
     }
     
-    @scala.inline
-    implicit class GetComponentArgsMutableBuilder[Self <: GetComponentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetComponentArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -127,8 +120,7 @@ object getComponentMod {
   }
   object GetComponentResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       changeDescription: String,
       data: String,
@@ -150,56 +142,39 @@ object getComponentMod {
       __obj.asInstanceOf[GetComponentResult]
     }
     
-    @scala.inline
-    implicit class GetComponentResultMutableBuilder[Self <: GetComponentResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetComponentResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeDescription(value: String): Self = StObject.set(x, "changeDescription", value.asInstanceOf[js.Any])
+      inline def setChangeDescription(value: String): Self = StObject.set(x, "changeDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedOsVersions(value: js.Array[String]): Self = StObject.set(x, "supportedOsVersions", value.asInstanceOf[js.Any])
+      inline def setSupportedOsVersions(value: js.Array[String]): Self = StObject.set(x, "supportedOsVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedOsVersionsVarargs(value: String*): Self = StObject.set(x, "supportedOsVersions", js.Array(value :_*))
+      inline def setSupportedOsVersionsVarargs(value: String*): Self = StObject.set(x, "supportedOsVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

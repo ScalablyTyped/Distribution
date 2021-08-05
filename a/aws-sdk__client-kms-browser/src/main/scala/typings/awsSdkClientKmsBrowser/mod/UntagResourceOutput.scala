@@ -10,8 +10,7 @@ trait UntagResourceOutput
      with typings.awsSdkClientKmsBrowser.typesUntagResourceOutputMod.UntagResourceOutput
 object UntagResourceOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UntagResourceOutput = {
+  inline def apply($metadata: ResponseMetadata): UntagResourceOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceOutput]
   }

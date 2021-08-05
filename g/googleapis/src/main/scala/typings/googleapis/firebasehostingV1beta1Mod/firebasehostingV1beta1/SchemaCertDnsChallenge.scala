@@ -22,25 +22,19 @@ trait SchemaCertDnsChallenge extends StObject {
 }
 object SchemaCertDnsChallenge {
   
-  @scala.inline
-  def apply(): SchemaCertDnsChallenge = {
+  inline def apply(): SchemaCertDnsChallenge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCertDnsChallenge]
   }
   
-  @scala.inline
-  implicit class SchemaCertDnsChallengeMutableBuilder[Self <: SchemaCertDnsChallenge] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCertDnsChallenge](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

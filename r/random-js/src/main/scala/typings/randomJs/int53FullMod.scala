@@ -11,6 +11,5 @@ object int53FullMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def int53Full(engine: Engine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("int53Full")(engine.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def int53Full(engine: Engine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("int53Full")(engine.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

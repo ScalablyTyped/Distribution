@@ -13,28 +13,21 @@ trait Urls extends StObject {
 }
 object Urls {
   
-  @scala.inline
-  def apply(): Urls = {
+  inline def apply(): Urls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Urls]
   }
   
-  @scala.inline
-  implicit class UrlsMutableBuilder[Self <: Urls] (val x: Self) extends AnyVal {
+  extension [Self <: Urls](x: Self) {
     
-    @scala.inline
-    def setHeader(value: SchemaPagespeedApiFormatStringV2): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: SchemaPagespeedApiFormatStringV2): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setUrls(value: js.Array[DetailsResult]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[DetailsResult]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: DetailsResult*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: DetailsResult*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

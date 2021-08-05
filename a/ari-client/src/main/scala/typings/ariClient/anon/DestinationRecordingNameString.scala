@@ -10,16 +10,13 @@ trait DestinationRecordingNameString extends StObject {
 }
 object DestinationRecordingNameString {
   
-  @scala.inline
-  def apply(destinationRecordingName: String): DestinationRecordingNameString = {
+  inline def apply(destinationRecordingName: String): DestinationRecordingNameString = {
     val __obj = js.Dynamic.literal(destinationRecordingName = destinationRecordingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationRecordingNameString]
   }
   
-  @scala.inline
-  implicit class DestinationRecordingNameStringMutableBuilder[Self <: DestinationRecordingNameString] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationRecordingNameString](x: Self) {
     
-    @scala.inline
-    def setDestinationRecordingName(value: String): Self = StObject.set(x, "destinationRecordingName", value.asInstanceOf[js.Any])
+    inline def setDestinationRecordingName(value: String): Self = StObject.set(x, "destinationRecordingName", value.asInstanceOf[js.Any])
   }
 }

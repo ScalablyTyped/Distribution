@@ -20,16 +20,13 @@ trait ListEvent
 }
 object ListEvent {
   
-  @scala.inline
-  def apply(Changes: SafeArray[ListAction], Source: XInterface): ListEvent = {
+  inline def apply(Changes: SafeArray[ListAction], Source: XInterface): ListEvent = {
     val __obj = js.Dynamic.literal(Changes = Changes.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEvent]
   }
   
-  @scala.inline
-  implicit class ListEventMutableBuilder[Self <: ListEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ListEvent](x: Self) {
     
-    @scala.inline
-    def setChanges(value: SafeArray[ListAction]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: SafeArray[ListAction]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
   }
 }

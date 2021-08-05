@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorFormat extends StObject
 object ColorFormat {
   
-  @scala.inline
-  def hex: typings.bootstrapColorpicker.bootstrapColorpickerStrings.hex = "hex".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.hex]
+  inline def hex: typings.bootstrapColorpicker.bootstrapColorpickerStrings.hex = "hex".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.hex]
   
-  @scala.inline
-  def rgb: typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgb = "rgb".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgb]
+  inline def rgb: typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgb = "rgb".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgb]
   
-  @scala.inline
-  def rgba: typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgba = "rgba".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgba]
+  inline def rgba: typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgba = "rgba".asInstanceOf[typings.bootstrapColorpicker.bootstrapColorpickerStrings.rgba]
 }

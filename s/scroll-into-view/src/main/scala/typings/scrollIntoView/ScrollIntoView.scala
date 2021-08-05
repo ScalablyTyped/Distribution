@@ -23,38 +23,28 @@ object ScrollIntoView {
   }
   object Alignment {
     
-    @scala.inline
-    def apply(): Alignment = {
+    inline def apply(): Alignment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Alignment]
     }
     
-    @scala.inline
-    implicit class AlignmentMutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
+    extension [Self <: Alignment](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftOffset(value: Double): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
+      inline def setLeftOffset(value: Double): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
+      inline def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+      inline def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+      inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -81,38 +71,28 @@ object ScrollIntoView {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setAlign(value: Alignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Alignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setEase(value: /* value */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
+      inline def setEase(value: /* value */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setValidTarget(value: (/* target */ HTMLElement, /* parentsScrolled */ Double) => Boolean): Self = StObject.set(x, "validTarget", js.Any.fromFunction2(value))
+      inline def setValidTarget(value: (/* target */ HTMLElement, /* parentsScrolled */ Double) => Boolean): Self = StObject.set(x, "validTarget", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidTargetUndefined: Self = StObject.set(x, "validTarget", js.undefined)
+      inline def setValidTargetUndefined: Self = StObject.set(x, "validTarget", js.undefined)
     }
   }
   
@@ -124,10 +104,8 @@ object ScrollIntoView {
   trait callbackParameterType extends StObject
   object callbackParameterType {
     
-    @scala.inline
-    def canceled: typings.scrollIntoView.scrollIntoViewStrings.canceled = "canceled".asInstanceOf[typings.scrollIntoView.scrollIntoViewStrings.canceled]
+    inline def canceled: typings.scrollIntoView.scrollIntoViewStrings.canceled = "canceled".asInstanceOf[typings.scrollIntoView.scrollIntoViewStrings.canceled]
     
-    @scala.inline
-    def complete: typings.scrollIntoView.scrollIntoViewStrings.complete = "complete".asInstanceOf[typings.scrollIntoView.scrollIntoViewStrings.complete]
+    inline def complete: typings.scrollIntoView.scrollIntoViewStrings.complete = "complete".asInstanceOf[typings.scrollIntoView.scrollIntoViewStrings.complete]
   }
 }

@@ -16,8 +16,7 @@ trait AnalyticsConfigurationStorageClassAnalysisDataExportDestination extends St
 }
 object AnalyticsConfigurationStorageClassAnalysisDataExportDestination {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     s3BucketDestination: Input[
       AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination
     ]
@@ -26,11 +25,9 @@ object AnalyticsConfigurationStorageClassAnalysisDataExportDestination {
     __obj.asInstanceOf[AnalyticsConfigurationStorageClassAnalysisDataExportDestination]
   }
   
-  @scala.inline
-  implicit class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationMutableBuilder[Self <: AnalyticsConfigurationStorageClassAnalysisDataExportDestination] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsConfigurationStorageClassAnalysisDataExportDestination](x: Self) {
     
-    @scala.inline
-    def setS3BucketDestination(
+    inline def setS3BucketDestination(
       value: Input[
           AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination
         ]

@@ -18,8 +18,7 @@ trait IStateConditions extends StObject {
 }
 object IStateConditions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IStateConditions,
     PropertyConditions: Boolean,
     PropertyConditionsDefinition: ISearchConditions,
@@ -30,22 +29,16 @@ object IStateConditions {
     __obj.asInstanceOf[IStateConditions]
   }
   
-  @scala.inline
-  implicit class IStateConditionsMutableBuilder[Self <: IStateConditions] (val x: Self) extends AnyVal {
+  extension [Self <: IStateConditions](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IStateConditions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IStateConditions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPropertyConditions(value: Boolean): Self = StObject.set(x, "PropertyConditions", value.asInstanceOf[js.Any])
+    inline def setPropertyConditions(value: Boolean): Self = StObject.set(x, "PropertyConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyConditionsDefinition(value: ISearchConditions): Self = StObject.set(x, "PropertyConditionsDefinition", value.asInstanceOf[js.Any])
+    inline def setPropertyConditionsDefinition(value: ISearchConditions): Self = StObject.set(x, "PropertyConditionsDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBScript(value: Boolean): Self = StObject.set(x, "VBScript", value.asInstanceOf[js.Any])
+    inline def setVBScript(value: Boolean): Self = StObject.set(x, "VBScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBScriptDefinition(value: String): Self = StObject.set(x, "VBScriptDefinition", value.asInstanceOf[js.Any])
+    inline def setVBScriptDefinition(value: String): Self = StObject.set(x, "VBScriptDefinition", value.asInstanceOf[js.Any])
   }
 }

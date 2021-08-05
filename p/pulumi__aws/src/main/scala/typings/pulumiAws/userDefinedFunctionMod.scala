@@ -80,21 +80,16 @@ object userDefinedFunctionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserDefinedFunctionState): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserDefinedFunctionState, opts: CustomResourceOptions): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
+    inline def get(name: String, id: Input[ID]): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
+    inline def get(name: String, id: Input[ID], state: UserDefinedFunctionState): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
+    inline def get(name: String, id: Input[ID], state: UserDefinedFunctionState, opts: CustomResourceOptions): UserDefinedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserDefinedFunction]
     
     /**
       * Returns true if the given object is an instance of UserDefinedFunction.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/userDefinedFunction.UserDefinedFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/userDefinedFunction.UserDefinedFunction */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/userDefinedFunction.UserDefinedFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/userDefinedFunction.UserDefinedFunction */ Boolean]
   }
   
   trait UserDefinedFunctionArgs extends StObject {
@@ -138,8 +133,7 @@ object userDefinedFunctionMod {
   }
   object UserDefinedFunctionArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       className: Input[String],
       databaseName: Input[String],
       ownerName: Input[String],
@@ -149,41 +143,29 @@ object userDefinedFunctionMod {
       __obj.asInstanceOf[UserDefinedFunctionArgs]
     }
     
-    @scala.inline
-    implicit class UserDefinedFunctionArgsMutableBuilder[Self <: UserDefinedFunctionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserDefinedFunctionArgs](x: Self) {
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setClassName(value: Input[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: Input[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerName(value: Input[String]): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
+      inline def setOwnerName(value: Input[String]): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerType(value: Input[String]): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
+      inline def setOwnerType(value: Input[String]): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUris(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]]]): Self = StObject.set(x, "resourceUris", value.asInstanceOf[js.Any])
+      inline def setResourceUris(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]]]): Self = StObject.set(x, "resourceUris", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUrisUndefined: Self = StObject.set(x, "resourceUris", js.undefined)
+      inline def setResourceUrisUndefined: Self = StObject.set(x, "resourceUris", js.undefined)
       
-      @scala.inline
-      def setResourceUrisVarargs(value: Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]*): Self = StObject.set(x, "resourceUris", js.Array(value :_*))
+      inline def setResourceUrisVarargs(value: Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]*): Self = StObject.set(x, "resourceUris", js.Array(value :_*))
     }
   }
   
@@ -232,71 +214,50 @@ object userDefinedFunctionMod {
   }
   object UserDefinedFunctionState {
     
-    @scala.inline
-    def apply(): UserDefinedFunctionState = {
+    inline def apply(): UserDefinedFunctionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserDefinedFunctionState]
     }
     
-    @scala.inline
-    implicit class UserDefinedFunctionStateMutableBuilder[Self <: UserDefinedFunctionState] (val x: Self) extends AnyVal {
+    extension [Self <: UserDefinedFunctionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setClassName(value: Input[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: Input[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCreateTime(value: Input[String]): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+      inline def setCreateTime(value: Input[String]): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+      inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+      inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerName(value: Input[String]): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
+      inline def setOwnerName(value: Input[String]): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
+      inline def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
       
-      @scala.inline
-      def setOwnerType(value: Input[String]): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
+      inline def setOwnerType(value: Input[String]): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
+      inline def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
       
-      @scala.inline
-      def setResourceUris(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]]]): Self = StObject.set(x, "resourceUris", value.asInstanceOf[js.Any])
+      inline def setResourceUris(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]]]): Self = StObject.set(x, "resourceUris", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUrisUndefined: Self = StObject.set(x, "resourceUris", js.undefined)
+      inline def setResourceUrisUndefined: Self = StObject.set(x, "resourceUris", js.undefined)
       
-      @scala.inline
-      def setResourceUrisVarargs(value: Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]*): Self = StObject.set(x, "resourceUris", js.Array(value :_*))
+      inline def setResourceUrisVarargs(value: Input[typings.pulumiAws.inputMod.glue.UserDefinedFunctionResourceUri]*): Self = StObject.set(x, "resourceUris", js.Array(value :_*))
     }
   }
 }

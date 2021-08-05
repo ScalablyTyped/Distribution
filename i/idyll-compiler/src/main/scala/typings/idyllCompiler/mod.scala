@@ -15,14 +15,10 @@ object mod {
     * Otherwise, compile returns the AST synchronously
     *
     */
-  @scala.inline
-  def apply(input: String): js.Promise[AST] | AST = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AST] | AST]
-  @scala.inline
-  def apply(input: String, options: Unit, callback: js.Function0[Unit]): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
-  @scala.inline
-  def apply(input: String, options: Options): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
-  @scala.inline
-  def apply(input: String, options: Options, callback: js.Function0[Unit]): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
+  inline def apply(input: String): js.Promise[AST] | AST = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AST] | AST]
+  inline def apply(input: String, options: Unit, callback: js.Function0[Unit]): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
+  inline def apply(input: String, options: Options): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
+  inline def apply(input: String, options: Options, callback: js.Function0[Unit]): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
   
   @JSImport("idyll-compiler", JSImport.Namespace)
   @js.native
@@ -53,41 +49,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setPostProcessors(value: js.Array[PostProcessor]): Self = StObject.set(x, "postProcessors", value.asInstanceOf[js.Any])
+      inline def setPostProcessors(value: js.Array[PostProcessor]): Self = StObject.set(x, "postProcessors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostProcessorsUndefined: Self = StObject.set(x, "postProcessors", js.undefined)
+      inline def setPostProcessorsUndefined: Self = StObject.set(x, "postProcessors", js.undefined)
       
-      @scala.inline
-      def setPostProcessorsVarargs(value: PostProcessor*): Self = StObject.set(x, "postProcessors", js.Array(value :_*))
+      inline def setPostProcessorsVarargs(value: PostProcessor*): Self = StObject.set(x, "postProcessors", js.Array(value :_*))
       
-      @scala.inline
-      def setSmartquotes(value: Boolean): Self = StObject.set(x, "smartquotes", value.asInstanceOf[js.Any])
+      inline def setSmartquotes(value: Boolean): Self = StObject.set(x, "smartquotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartquotesUndefined: Self = StObject.set(x, "smartquotes", js.undefined)
+      inline def setSmartquotesUndefined: Self = StObject.set(x, "smartquotes", js.undefined)
       
-      @scala.inline
-      def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
+      inline def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpellcheckUndefined: Self = StObject.set(x, "spellcheck", js.undefined)
+      inline def setSpellcheckUndefined: Self = StObject.set(x, "spellcheck", js.undefined)
     }
   }
   
@@ -109,14 +94,11 @@ object mod {
   trait PropType extends StObject
   object PropType {
     
-    @scala.inline
-    def expression: typings.idyllCompiler.idyllCompilerStrings.expression = "expression".asInstanceOf[typings.idyllCompiler.idyllCompilerStrings.expression]
+    inline def expression: typings.idyllCompiler.idyllCompilerStrings.expression = "expression".asInstanceOf[typings.idyllCompiler.idyllCompilerStrings.expression]
     
-    @scala.inline
-    def value: typings.idyllCompiler.idyllCompilerStrings.value = "value".asInstanceOf[typings.idyllCompiler.idyllCompilerStrings.value]
+    inline def value: typings.idyllCompiler.idyllCompilerStrings.value = "value".asInstanceOf[typings.idyllCompiler.idyllCompilerStrings.value]
     
-    @scala.inline
-    def variable: typings.idyllCompiler.idyllCompilerStrings.variable = "variable".asInstanceOf[typings.idyllCompiler.idyllCompilerStrings.variable]
+    inline def variable: typings.idyllCompiler.idyllCompilerStrings.variable = "variable".asInstanceOf[typings.idyllCompiler.idyllCompilerStrings.variable]
   }
   
   type PropValue = js.Tuple2[PropType, PropData]

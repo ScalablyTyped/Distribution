@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyGeneratorType extends StObject
 object KeyGeneratorType {
   
-  @scala.inline
-  def autoincrement: typings.arangodb.arangodbStrings.autoincrement = "autoincrement".asInstanceOf[typings.arangodb.arangodbStrings.autoincrement]
+  inline def autoincrement: typings.arangodb.arangodbStrings.autoincrement = "autoincrement".asInstanceOf[typings.arangodb.arangodbStrings.autoincrement]
   
-  @scala.inline
-  def traditional: typings.arangodb.arangodbStrings.traditional = "traditional".asInstanceOf[typings.arangodb.arangodbStrings.traditional]
+  inline def traditional: typings.arangodb.arangodbStrings.traditional = "traditional".asInstanceOf[typings.arangodb.arangodbStrings.traditional]
 }

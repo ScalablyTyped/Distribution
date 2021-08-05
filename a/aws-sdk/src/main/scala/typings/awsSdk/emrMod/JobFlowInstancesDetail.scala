@@ -73,85 +73,59 @@ trait JobFlowInstancesDetail extends StObject {
 }
 object JobFlowInstancesDetail {
   
-  @scala.inline
-  def apply(InstanceCount: Integer, MasterInstanceType: InstanceType, SlaveInstanceType: InstanceType): JobFlowInstancesDetail = {
+  inline def apply(InstanceCount: Integer, MasterInstanceType: InstanceType, SlaveInstanceType: InstanceType): JobFlowInstancesDetail = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], MasterInstanceType = MasterInstanceType.asInstanceOf[js.Any], SlaveInstanceType = SlaveInstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowInstancesDetail]
   }
   
-  @scala.inline
-  implicit class JobFlowInstancesDetailMutableBuilder[Self <: JobFlowInstancesDetail] (val x: Self) extends AnyVal {
+  extension [Self <: JobFlowInstancesDetail](x: Self) {
     
-    @scala.inline
-    def setEc2KeyName(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2KeyName", value.asInstanceOf[js.Any])
+    inline def setEc2KeyName(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2KeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2KeyNameUndefined: Self = StObject.set(x, "Ec2KeyName", js.undefined)
+    inline def setEc2KeyNameUndefined: Self = StObject.set(x, "Ec2KeyName", js.undefined)
     
-    @scala.inline
-    def setEc2SubnetId(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2SubnetId", value.asInstanceOf[js.Any])
+    inline def setEc2SubnetId(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2SubnetIdUndefined: Self = StObject.set(x, "Ec2SubnetId", js.undefined)
+    inline def setEc2SubnetIdUndefined: Self = StObject.set(x, "Ec2SubnetId", js.undefined)
     
-    @scala.inline
-    def setHadoopVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "HadoopVersion", value.asInstanceOf[js.Any])
+    inline def setHadoopVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "HadoopVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHadoopVersionUndefined: Self = StObject.set(x, "HadoopVersion", js.undefined)
+    inline def setHadoopVersionUndefined: Self = StObject.set(x, "HadoopVersion", js.undefined)
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroups(value: InstanceGroupDetailList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
+    inline def setInstanceGroups(value: InstanceGroupDetailList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
+    inline def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupsVarargs(value: InstanceGroupDetail*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroupDetail*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
+    inline def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepJobFlowAliveWhenNoStepsUndefined: Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", js.undefined)
+    inline def setKeepJobFlowAliveWhenNoStepsUndefined: Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", js.undefined)
     
-    @scala.inline
-    def setMasterInstanceId(value: XmlString): Self = StObject.set(x, "MasterInstanceId", value.asInstanceOf[js.Any])
+    inline def setMasterInstanceId(value: XmlString): Self = StObject.set(x, "MasterInstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterInstanceIdUndefined: Self = StObject.set(x, "MasterInstanceId", js.undefined)
+    inline def setMasterInstanceIdUndefined: Self = StObject.set(x, "MasterInstanceId", js.undefined)
     
-    @scala.inline
-    def setMasterInstanceType(value: InstanceType): Self = StObject.set(x, "MasterInstanceType", value.asInstanceOf[js.Any])
+    inline def setMasterInstanceType(value: InstanceType): Self = StObject.set(x, "MasterInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterPublicDnsName(value: XmlString): Self = StObject.set(x, "MasterPublicDnsName", value.asInstanceOf[js.Any])
+    inline def setMasterPublicDnsName(value: XmlString): Self = StObject.set(x, "MasterPublicDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterPublicDnsNameUndefined: Self = StObject.set(x, "MasterPublicDnsName", js.undefined)
+    inline def setMasterPublicDnsNameUndefined: Self = StObject.set(x, "MasterPublicDnsName", js.undefined)
     
-    @scala.inline
-    def setNormalizedInstanceHours(value: Integer): Self = StObject.set(x, "NormalizedInstanceHours", value.asInstanceOf[js.Any])
+    inline def setNormalizedInstanceHours(value: Integer): Self = StObject.set(x, "NormalizedInstanceHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedInstanceHoursUndefined: Self = StObject.set(x, "NormalizedInstanceHours", js.undefined)
+    inline def setNormalizedInstanceHoursUndefined: Self = StObject.set(x, "NormalizedInstanceHours", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: PlacementType): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: PlacementType): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "Placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "Placement", js.undefined)
     
-    @scala.inline
-    def setSlaveInstanceType(value: InstanceType): Self = StObject.set(x, "SlaveInstanceType", value.asInstanceOf[js.Any])
+    inline def setSlaveInstanceType(value: InstanceType): Self = StObject.set(x, "SlaveInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationProtected(value: Boolean): Self = StObject.set(x, "TerminationProtected", value.asInstanceOf[js.Any])
+    inline def setTerminationProtected(value: Boolean): Self = StObject.set(x, "TerminationProtected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationProtectedUndefined: Self = StObject.set(x, "TerminationProtected", js.undefined)
+    inline def setTerminationProtectedUndefined: Self = StObject.set(x, "TerminationProtected", js.undefined)
   }
 }

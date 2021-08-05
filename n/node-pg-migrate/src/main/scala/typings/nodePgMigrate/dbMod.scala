@@ -16,18 +16,12 @@ object dbMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(connection: String): DBConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any]).asInstanceOf[DBConnection]
-  @scala.inline
-  def default(connection: String, logger: Logger): DBConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[DBConnection]
-  @scala.inline
-  def default(connection: ClientBase): DBConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any]).asInstanceOf[DBConnection]
-  @scala.inline
-  def default(connection: ClientBase, logger: Logger): DBConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[DBConnection]
-  @scala.inline
-  def default(connection: ClientConfig): DBConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any]).asInstanceOf[DBConnection]
-  @scala.inline
-  def default(connection: ClientConfig, logger: Logger): DBConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[DBConnection]
+  inline def default(connection: String): DBConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any]).asInstanceOf[DBConnection]
+  inline def default(connection: String, logger: Logger): DBConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[DBConnection]
+  inline def default(connection: ClientBase): DBConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any]).asInstanceOf[DBConnection]
+  inline def default(connection: ClientBase, logger: Logger): DBConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[DBConnection]
+  inline def default(connection: ClientConfig): DBConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any]).asInstanceOf[DBConnection]
+  inline def default(connection: ClientConfig, logger: Logger): DBConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(connection.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[DBConnection]
   
   @js.native
   trait DBConnection

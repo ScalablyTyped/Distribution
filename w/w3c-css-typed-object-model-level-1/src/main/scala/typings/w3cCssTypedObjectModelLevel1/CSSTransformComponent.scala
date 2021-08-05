@@ -13,19 +13,15 @@ trait CSSTransformComponent extends StObject {
 }
 object CSSTransformComponent {
   
-  @scala.inline
-  def apply(is2D: Boolean, toMatrix: () => DOMMatrix): CSSTransformComponent = {
+  inline def apply(is2D: Boolean, toMatrix: () => DOMMatrix): CSSTransformComponent = {
     val __obj = js.Dynamic.literal(is2D = is2D.asInstanceOf[js.Any], toMatrix = js.Any.fromFunction0(toMatrix))
     __obj.asInstanceOf[CSSTransformComponent]
   }
   
-  @scala.inline
-  implicit class CSSTransformComponentMutableBuilder[Self <: CSSTransformComponent] (val x: Self) extends AnyVal {
+  extension [Self <: CSSTransformComponent](x: Self) {
     
-    @scala.inline
-    def setIs2D(value: Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
+    inline def setIs2D(value: Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToMatrix(value: () => DOMMatrix): Self = StObject.set(x, "toMatrix", js.Any.fromFunction0(value))
+    inline def setToMatrix(value: () => DOMMatrix): Self = StObject.set(x, "toMatrix", js.Any.fromFunction0(value))
   }
 }

@@ -23,8 +23,7 @@ object anon {
   }
   object History {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       history: typings.history.mod.History[LocationState],
       location: Location[LocationState],
       `match`: IsExact
@@ -34,17 +33,13 @@ object anon {
       __obj.asInstanceOf[History]
     }
     
-    @scala.inline
-    implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+    extension [Self <: History](x: Self) {
       
-      @scala.inline
-      def setHistory(value: typings.history.mod.History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: typings.history.mod.History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: IsExact): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: IsExact): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,26 +55,20 @@ object anon {
   }
   object IsExact {
     
-    @scala.inline
-    def apply(isExact: Boolean, params: js.Any, path: String, url: String): IsExact = {
+    inline def apply(isExact: Boolean, params: js.Any, path: String, url: String): IsExact = {
       val __obj = js.Dynamic.literal(isExact = isExact.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsExact]
     }
     
-    @scala.inline
-    implicit class IsExactMutableBuilder[Self <: IsExact] (val x: Self) extends AnyVal {
+    extension [Self <: IsExact](x: Self) {
       
-      @scala.inline
-      def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
+      inline def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,38 +89,28 @@ object anon {
   }
   object LocationLocationStateprop {
     
-    @scala.inline
-    def apply(hash: Hash, pathname: Pathname, search: Search, state: LocationState): LocationLocationStateprop = {
+    inline def apply(hash: Hash, pathname: Pathname, search: Search, state: LocationState): LocationLocationStateprop = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationLocationStateprop]
     }
     
-    @scala.inline
-    implicit class LocationLocationStatepropMutableBuilder[Self <: LocationLocationStateprop] (val x: Self) extends AnyVal {
+    extension [Self <: LocationLocationStateprop](x: Self) {
       
-      @scala.inline
-      def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: History): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: History): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: LocationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: LocationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,17 +120,14 @@ object anon {
   }
   object Router {
     
-    @scala.inline
-    def apply(router: RouterState): Router = {
+    inline def apply(router: RouterState): Router = {
       val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
       __obj.asInstanceOf[Router]
     }
     
-    @scala.inline
-    implicit class RouterMutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
+    extension [Self <: Router](x: Self) {
       
-      @scala.inline
-      def setRouter(value: RouterState): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: RouterState): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     }
   }
 }

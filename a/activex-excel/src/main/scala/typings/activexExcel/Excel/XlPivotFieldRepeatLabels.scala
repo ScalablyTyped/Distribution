@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPivotFieldRepeatLabels extends StObject
 object XlPivotFieldRepeatLabels {
   
-  @scala.inline
-  def xlDoNotRepeatLabels: `1` = 1.asInstanceOf[`1`]
+  inline def xlDoNotRepeatLabels: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlRepeatLabels: `2` = 2.asInstanceOf[`2`]
+  inline def xlRepeatLabels: `2` = 2.asInstanceOf[`2`]
 }

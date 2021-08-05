@@ -18,22 +18,17 @@ trait NetworkUsage extends StObject {
 }
 object NetworkUsage {
   
-  @scala.inline
-  def apply(bytesReceived: Double, bytesSent: Double, connectionDuration: Double): NetworkUsage = {
+  inline def apply(bytesReceived: Double, bytesSent: Double, connectionDuration: Double): NetworkUsage = {
     val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], bytesSent = bytesSent.asInstanceOf[js.Any], connectionDuration = connectionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkUsage]
   }
   
-  @scala.inline
-  implicit class NetworkUsageMutableBuilder[Self <: NetworkUsage] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkUsage](x: Self) {
     
-    @scala.inline
-    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionDuration(value: Double): Self = StObject.set(x, "connectionDuration", value.asInstanceOf[js.Any])
+    inline def setConnectionDuration(value: Double): Self = StObject.set(x, "connectionDuration", value.asInstanceOf[js.Any])
   }
 }

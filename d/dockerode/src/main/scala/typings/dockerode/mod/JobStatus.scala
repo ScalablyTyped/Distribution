@@ -12,22 +12,17 @@ trait JobStatus extends StObject {
 }
 object JobStatus {
   
-  @scala.inline
-  def apply(JobIteration: Version): JobStatus = {
+  inline def apply(JobIteration: Version): JobStatus = {
     val __obj = js.Dynamic.literal(JobIteration = JobIteration.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobStatus]
   }
   
-  @scala.inline
-  implicit class JobStatusMutableBuilder[Self <: JobStatus] (val x: Self) extends AnyVal {
+  extension [Self <: JobStatus](x: Self) {
     
-    @scala.inline
-    def setJobIteration(value: Version): Self = StObject.set(x, "JobIteration", value.asInstanceOf[js.Any])
+    inline def setJobIteration(value: Version): Self = StObject.set(x, "JobIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastExecution(value: String): Self = StObject.set(x, "LastExecution", value.asInstanceOf[js.Any])
+    inline def setLastExecution(value: String): Self = StObject.set(x, "LastExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastExecutionUndefined: Self = StObject.set(x, "LastExecution", js.undefined)
+    inline def setLastExecutionUndefined: Self = StObject.set(x, "LastExecution", js.undefined)
   }
 }

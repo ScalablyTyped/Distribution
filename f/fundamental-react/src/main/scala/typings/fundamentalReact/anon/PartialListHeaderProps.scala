@@ -11,19 +11,15 @@ trait PartialListHeaderProps extends StObject {
 }
 object PartialListHeaderProps {
   
-  @scala.inline
-  def apply(): PartialListHeaderProps = {
+  inline def apply(): PartialListHeaderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialListHeaderProps]
   }
   
-  @scala.inline
-  implicit class PartialListHeaderPropsMutableBuilder[Self <: PartialListHeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialListHeaderProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
   }
 }

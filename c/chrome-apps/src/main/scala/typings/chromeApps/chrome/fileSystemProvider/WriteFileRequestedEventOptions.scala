@@ -22,8 +22,7 @@ trait WriteFileRequestedEventOptions
 }
 object WriteFileRequestedEventOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: ArrayBuffer,
     fileSystemId: String,
     offset: integer,
@@ -34,16 +33,12 @@ object WriteFileRequestedEventOptions {
     __obj.asInstanceOf[WriteFileRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class WriteFileRequestedEventOptionsMutableBuilder[Self <: WriteFileRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WriteFileRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
+    inline def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
   }
 }

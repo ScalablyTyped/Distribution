@@ -54,8 +54,7 @@ trait BootstrapSchedulerEventMap
 }
 object BootstrapSchedulerEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeViewChanged: EventArgs,
     activeViewChanging: ActiveViewChangingEventArgs,
     appointmentClick: AppointmentClickEventArgs,
@@ -84,73 +83,50 @@ object BootstrapSchedulerEventMap {
     __obj.asInstanceOf[BootstrapSchedulerEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapSchedulerEventMapMutableBuilder[Self <: BootstrapSchedulerEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapSchedulerEventMap](x: Self) {
     
-    @scala.inline
-    def setActiveViewChanged(value: EventArgs): Self = StObject.set(x, "activeViewChanged", value.asInstanceOf[js.Any])
+    inline def setActiveViewChanged(value: EventArgs): Self = StObject.set(x, "activeViewChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveViewChanging(value: ActiveViewChangingEventArgs): Self = StObject.set(x, "activeViewChanging", value.asInstanceOf[js.Any])
+    inline def setActiveViewChanging(value: ActiveViewChangingEventArgs): Self = StObject.set(x, "activeViewChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentClick(value: AppointmentClickEventArgs): Self = StObject.set(x, "appointmentClick", value.asInstanceOf[js.Any])
+    inline def setAppointmentClick(value: AppointmentClickEventArgs): Self = StObject.set(x, "appointmentClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentDeleting(value: AppointmentDeletingEventArgs): Self = StObject.set(x, "appointmentDeleting", value.asInstanceOf[js.Any])
+    inline def setAppointmentDeleting(value: AppointmentDeletingEventArgs): Self = StObject.set(x, "appointmentDeleting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentDoubleClick(value: AppointmentClickEventArgs): Self = StObject.set(x, "appointmentDoubleClick", value.asInstanceOf[js.Any])
+    inline def setAppointmentDoubleClick(value: AppointmentClickEventArgs): Self = StObject.set(x, "appointmentDoubleClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentDrag(value: AppointmentDragEventArgs): Self = StObject.set(x, "appointmentDrag", value.asInstanceOf[js.Any])
+    inline def setAppointmentDrag(value: AppointmentDragEventArgs): Self = StObject.set(x, "appointmentDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentDrop(value: AppointmentDropEventArgs): Self = StObject.set(x, "appointmentDrop", value.asInstanceOf[js.Any])
+    inline def setAppointmentDrop(value: AppointmentDropEventArgs): Self = StObject.set(x, "appointmentDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentResize(value: AppointmentResizeEventArgs): Self = StObject.set(x, "appointmentResize", value.asInstanceOf[js.Any])
+    inline def setAppointmentResize(value: AppointmentResizeEventArgs): Self = StObject.set(x, "appointmentResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentResizing(value: AppointmentResizingEventArgs): Self = StObject.set(x, "appointmentResizing", value.asInstanceOf[js.Any])
+    inline def setAppointmentResizing(value: AppointmentResizingEventArgs): Self = StObject.set(x, "appointmentResizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentToolTipShowing(value: AppointmentToolTipShowingEventArgs): Self = StObject.set(x, "appointmentToolTipShowing", value.asInstanceOf[js.Any])
+    inline def setAppointmentToolTipShowing(value: AppointmentToolTipShowingEventArgs): Self = StObject.set(x, "appointmentToolTipShowing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentsSelectionChanged(value: AppointmentsSelectionEventArgs): Self = StObject.set(x, "appointmentsSelectionChanged", value.asInstanceOf[js.Any])
+    inline def setAppointmentsSelectionChanged(value: AppointmentsSelectionEventArgs): Self = StObject.set(x, "appointmentsSelectionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellClick(value: CellClickEventArgs): Self = StObject.set(x, "cellClick", value.asInstanceOf[js.Any])
+    inline def setCellClick(value: CellClickEventArgs): Self = StObject.set(x, "cellClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellDoubleClick(value: CellClickEventArgs): Self = StObject.set(x, "cellDoubleClick", value.asInstanceOf[js.Any])
+    inline def setCellDoubleClick(value: CellClickEventArgs): Self = StObject.set(x, "cellDoubleClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItemClicked(value: MenuItemClickedEventArgs): Self = StObject.set(x, "menuItemClicked", value.asInstanceOf[js.Any])
+    inline def setMenuItemClicked(value: MenuItemClickedEventArgs): Self = StObject.set(x, "menuItemClicked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreButtonClicked(value: MoreButtonClickedEventArgs): Self = StObject.set(x, "moreButtonClicked", value.asInstanceOf[js.Any])
+    inline def setMoreButtonClicked(value: MoreButtonClickedEventArgs): Self = StObject.set(x, "moreButtonClicked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionChanged(value: EventArgs): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
+    inline def setSelectionChanged(value: EventArgs): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionChanging(value: EventArgs): Self = StObject.set(x, "selectionChanging", value.asInstanceOf[js.Any])
+    inline def setSelectionChanging(value: EventArgs): Self = StObject.set(x, "selectionChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcut(value: ShortcutEventArgs): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+    inline def setShortcut(value: ShortcutEventArgs): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIntervalChanged(value: EventArgs): Self = StObject.set(x, "visibleIntervalChanged", value.asInstanceOf[js.Any])
+    inline def setVisibleIntervalChanged(value: EventArgs): Self = StObject.set(x, "visibleIntervalChanged", value.asInstanceOf[js.Any])
   }
 }

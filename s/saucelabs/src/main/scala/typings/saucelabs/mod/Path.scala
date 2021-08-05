@@ -15,25 +15,19 @@ trait Path
 }
 object Path {
   
-  @scala.inline
-  def apply(): Path = {
+  inline def apply(): Path = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Path]
   }
   
-  @scala.inline
-  implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+  extension [Self <: Path](x: Self) {
     
-    @scala.inline
-    def setFirst(value: Id): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Id): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setSecond(value: Id): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Id): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
   }
 }

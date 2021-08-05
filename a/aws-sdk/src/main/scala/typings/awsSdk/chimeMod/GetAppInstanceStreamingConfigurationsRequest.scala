@@ -13,16 +13,13 @@ trait GetAppInstanceStreamingConfigurationsRequest extends StObject {
 }
 object GetAppInstanceStreamingConfigurationsRequest {
   
-  @scala.inline
-  def apply(AppInstanceArn: ChimeArn): GetAppInstanceStreamingConfigurationsRequest = {
+  inline def apply(AppInstanceArn: ChimeArn): GetAppInstanceStreamingConfigurationsRequest = {
     val __obj = js.Dynamic.literal(AppInstanceArn = AppInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAppInstanceStreamingConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class GetAppInstanceStreamingConfigurationsRequestMutableBuilder[Self <: GetAppInstanceStreamingConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppInstanceStreamingConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
   }
 }

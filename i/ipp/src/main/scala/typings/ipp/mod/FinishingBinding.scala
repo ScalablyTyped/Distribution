@@ -12,25 +12,19 @@ trait FinishingBinding extends StObject {
 }
 object FinishingBinding {
   
-  @scala.inline
-  def apply(): FinishingBinding = {
+  inline def apply(): FinishingBinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinishingBinding]
   }
   
-  @scala.inline
-  implicit class FinishingBindingMutableBuilder[Self <: FinishingBinding] (val x: Self) extends AnyVal {
+  extension [Self <: FinishingBinding](x: Self) {
     
-    @scala.inline
-    def `setBinding-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "binding-reference-edge", value.asInstanceOf[js.Any])
+    inline def `setBinding-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "binding-reference-edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBinding-reference-edgeUndefined`: Self = StObject.set(x, "binding-reference-edge", js.undefined)
+    inline def `setBinding-reference-edgeUndefined`: Self = StObject.set(x, "binding-reference-edge", js.undefined)
     
-    @scala.inline
-    def `setBinding-type`(value: BindingType): Self = StObject.set(x, "binding-type", value.asInstanceOf[js.Any])
+    inline def `setBinding-type`(value: BindingType): Self = StObject.set(x, "binding-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBinding-typeUndefined`: Self = StObject.set(x, "binding-type", js.undefined)
+    inline def `setBinding-typeUndefined`: Self = StObject.set(x, "binding-type", js.undefined)
   }
 }

@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exec(cmd: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def exec(
+  inline def exec(cmd: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def exec(
     cmd: String,
     options: js.Function3[
       /* error */ js.UndefOr[Error], 
@@ -25,8 +23,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def exec(
+  inline def exec(
     cmd: String,
     options: js.Function3[
       /* error */ js.UndefOr[Error], 
@@ -41,8 +38,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def exec(
+  inline def exec(
     cmd: String,
     options: Unit,
     callback: js.Function3[
@@ -52,10 +48,8 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def exec(cmd: String, options: Env): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def exec(
+  inline def exec(cmd: String, options: Env): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exec(
     cmd: String,
     options: Env,
     callback: js.Function3[

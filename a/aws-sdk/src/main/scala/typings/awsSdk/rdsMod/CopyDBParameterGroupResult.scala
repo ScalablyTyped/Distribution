@@ -10,19 +10,15 @@ trait CopyDBParameterGroupResult extends StObject {
 }
 object CopyDBParameterGroupResult {
   
-  @scala.inline
-  def apply(): CopyDBParameterGroupResult = {
+  inline def apply(): CopyDBParameterGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyDBParameterGroupResult]
   }
   
-  @scala.inline
-  implicit class CopyDBParameterGroupResultMutableBuilder[Self <: CopyDBParameterGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyDBParameterGroupResult](x: Self) {
     
-    @scala.inline
-    def setDBParameterGroup(value: DBParameterGroup): Self = StObject.set(x, "DBParameterGroup", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroup(value: DBParameterGroup): Self = StObject.set(x, "DBParameterGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupUndefined: Self = StObject.set(x, "DBParameterGroup", js.undefined)
+    inline def setDBParameterGroupUndefined: Self = StObject.set(x, "DBParameterGroup", js.undefined)
   }
 }

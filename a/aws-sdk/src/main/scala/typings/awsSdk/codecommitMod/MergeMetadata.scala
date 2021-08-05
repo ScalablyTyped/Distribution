@@ -28,37 +28,27 @@ trait MergeMetadata extends StObject {
 }
 object MergeMetadata {
   
-  @scala.inline
-  def apply(): MergeMetadata = {
+  inline def apply(): MergeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeMetadata]
   }
   
-  @scala.inline
-  implicit class MergeMetadataMutableBuilder[Self <: MergeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MergeMetadata](x: Self) {
     
-    @scala.inline
-    def setIsMerged(value: IsMerged): Self = StObject.set(x, "isMerged", value.asInstanceOf[js.Any])
+    inline def setIsMerged(value: IsMerged): Self = StObject.set(x, "isMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMergedUndefined: Self = StObject.set(x, "isMerged", js.undefined)
+    inline def setIsMergedUndefined: Self = StObject.set(x, "isMerged", js.undefined)
     
-    @scala.inline
-    def setMergeCommitId(value: CommitId): Self = StObject.set(x, "mergeCommitId", value.asInstanceOf[js.Any])
+    inline def setMergeCommitId(value: CommitId): Self = StObject.set(x, "mergeCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeCommitIdUndefined: Self = StObject.set(x, "mergeCommitId", js.undefined)
+    inline def setMergeCommitIdUndefined: Self = StObject.set(x, "mergeCommitId", js.undefined)
     
-    @scala.inline
-    def setMergeOption(value: MergeOptionTypeEnum): Self = StObject.set(x, "mergeOption", value.asInstanceOf[js.Any])
+    inline def setMergeOption(value: MergeOptionTypeEnum): Self = StObject.set(x, "mergeOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOptionUndefined: Self = StObject.set(x, "mergeOption", js.undefined)
+    inline def setMergeOptionUndefined: Self = StObject.set(x, "mergeOption", js.undefined)
     
-    @scala.inline
-    def setMergedBy(value: Arn): Self = StObject.set(x, "mergedBy", value.asInstanceOf[js.Any])
+    inline def setMergedBy(value: Arn): Self = StObject.set(x, "mergedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergedByUndefined: Self = StObject.set(x, "mergedBy", js.undefined)
+    inline def setMergedByUndefined: Self = StObject.set(x, "mergedBy", js.undefined)
   }
 }

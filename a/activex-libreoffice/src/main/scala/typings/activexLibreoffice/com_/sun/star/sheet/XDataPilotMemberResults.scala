@@ -27,8 +27,7 @@ trait XDataPilotMemberResults
 }
 object XDataPilotMemberResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Results: SafeArray[MemberResult],
     acquire: () => Unit,
     getResults: () => SafeArray[MemberResult],
@@ -39,13 +38,10 @@ object XDataPilotMemberResults {
     __obj.asInstanceOf[XDataPilotMemberResults]
   }
   
-  @scala.inline
-  implicit class XDataPilotMemberResultsMutableBuilder[Self <: XDataPilotMemberResults] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotMemberResults](x: Self) {
     
-    @scala.inline
-    def setGetResults(value: () => SafeArray[MemberResult]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => SafeArray[MemberResult]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResults(value: SafeArray[MemberResult]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: SafeArray[MemberResult]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
   }
 }

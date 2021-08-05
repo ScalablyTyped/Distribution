@@ -15,16 +15,13 @@ trait AppointmentStoreChangedEventArgs extends StObject {
 }
 object AppointmentStoreChangedEventArgs {
   
-  @scala.inline
-  def apply(getDeferral: () => AppointmentStoreChangedDeferral): AppointmentStoreChangedEventArgs = {
+  inline def apply(getDeferral: () => AppointmentStoreChangedDeferral): AppointmentStoreChangedEventArgs = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[AppointmentStoreChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentStoreChangedEventArgsMutableBuilder[Self <: AppointmentStoreChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentStoreChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => AppointmentStoreChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => AppointmentStoreChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

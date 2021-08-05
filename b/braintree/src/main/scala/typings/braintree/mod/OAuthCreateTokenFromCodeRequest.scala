@@ -10,16 +10,13 @@ trait OAuthCreateTokenFromCodeRequest extends StObject {
 }
 object OAuthCreateTokenFromCodeRequest {
   
-  @scala.inline
-  def apply(code: String): OAuthCreateTokenFromCodeRequest = {
+  inline def apply(code: String): OAuthCreateTokenFromCodeRequest = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthCreateTokenFromCodeRequest]
   }
   
-  @scala.inline
-  implicit class OAuthCreateTokenFromCodeRequestMutableBuilder[Self <: OAuthCreateTokenFromCodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthCreateTokenFromCodeRequest](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

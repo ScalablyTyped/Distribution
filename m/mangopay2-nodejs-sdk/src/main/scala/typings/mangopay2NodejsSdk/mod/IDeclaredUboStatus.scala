@@ -17,22 +17,17 @@ trait IDeclaredUboStatus extends StObject {
 }
 object IDeclaredUboStatus {
   
-  @scala.inline
-  def apply(): IDeclaredUboStatus = {
+  inline def apply(): IDeclaredUboStatus = {
     val __obj = js.Dynamic.literal(Created = "CREATED", Refused = "REFUSED", Validated = "VALIDATED")
     __obj.asInstanceOf[IDeclaredUboStatus]
   }
   
-  @scala.inline
-  implicit class IDeclaredUboStatusMutableBuilder[Self <: IDeclaredUboStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IDeclaredUboStatus](x: Self) {
     
-    @scala.inline
-    def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefused(value: REFUSED): Self = StObject.set(x, "Refused", value.asInstanceOf[js.Any])
+    inline def setRefused(value: REFUSED): Self = StObject.set(x, "Refused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidated(value: VALIDATED): Self = StObject.set(x, "Validated", value.asInstanceOf[js.Any])
+    inline def setValidated(value: VALIDATED): Self = StObject.set(x, "Validated", value.asInstanceOf[js.Any])
   }
 }

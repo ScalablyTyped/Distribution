@@ -18,19 +18,15 @@ trait Title extends StObject {
 }
 object Title {
   
-  @scala.inline
-  def apply(channelId: String, title: String): Title = {
+  inline def apply(channelId: String, title: String): Title = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Title]
   }
   
-  @scala.inline
-  implicit class TitleMutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
+  extension [Self <: Title](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

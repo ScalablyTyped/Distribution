@@ -22,20 +22,16 @@ object textAlignLeftSmallMod extends Shortcut {
   }
   object TextAlignLeftSmallProps {
     
-    @scala.inline
-    def apply(): TextAlignLeftSmallProps = {
+    inline def apply(): TextAlignLeftSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAlignLeftSmallProps]
     }
     
-    @scala.inline
-    implicit class TextAlignLeftSmallPropsMutableBuilder[Self <: TextAlignLeftSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextAlignLeftSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

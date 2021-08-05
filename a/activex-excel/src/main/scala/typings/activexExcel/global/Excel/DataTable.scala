@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DataTable")
 @js.native
-class DataTable protected ()
+/* private */ class DataTable ()
   extends StObject
      with typings.activexExcel.Excel.DataTable {
   
@@ -26,7 +26,7 @@ class DataTable protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.DataTable_typekey")
   var ExcelDotDataTable_typekey: typings.activexExcel.Excel.DataTable = js.native
   

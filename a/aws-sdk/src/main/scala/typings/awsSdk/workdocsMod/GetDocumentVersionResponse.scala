@@ -18,25 +18,19 @@ trait GetDocumentVersionResponse extends StObject {
 }
 object GetDocumentVersionResponse {
   
-  @scala.inline
-  def apply(): GetDocumentVersionResponse = {
+  inline def apply(): GetDocumentVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDocumentVersionResponse]
   }
   
-  @scala.inline
-  implicit class GetDocumentVersionResponseMutableBuilder[Self <: GetDocumentVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentVersionResponse](x: Self) {
     
-    @scala.inline
-    def setCustomMetadata(value: CustomMetadataMap): Self = StObject.set(x, "CustomMetadata", value.asInstanceOf[js.Any])
+    inline def setCustomMetadata(value: CustomMetadataMap): Self = StObject.set(x, "CustomMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMetadataUndefined: Self = StObject.set(x, "CustomMetadata", js.undefined)
+    inline def setCustomMetadataUndefined: Self = StObject.set(x, "CustomMetadata", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: DocumentVersionMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: DocumentVersionMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
   }
 }

@@ -48,8 +48,7 @@ trait XUnitConversion
 }
 object XUnitConversion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertPointToLogic: (Point, Double) => Point,
     convertPointToPixel: (Point, Double) => Point,
@@ -62,19 +61,14 @@ object XUnitConversion {
     __obj.asInstanceOf[XUnitConversion]
   }
   
-  @scala.inline
-  implicit class XUnitConversionMutableBuilder[Self <: XUnitConversion] (val x: Self) extends AnyVal {
+  extension [Self <: XUnitConversion](x: Self) {
     
-    @scala.inline
-    def setConvertPointToLogic(value: (Point, Double) => Point): Self = StObject.set(x, "convertPointToLogic", js.Any.fromFunction2(value))
+    inline def setConvertPointToLogic(value: (Point, Double) => Point): Self = StObject.set(x, "convertPointToLogic", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertPointToPixel(value: (Point, Double) => Point): Self = StObject.set(x, "convertPointToPixel", js.Any.fromFunction2(value))
+    inline def setConvertPointToPixel(value: (Point, Double) => Point): Self = StObject.set(x, "convertPointToPixel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertSizeToLogic(value: (Size, Double) => Size): Self = StObject.set(x, "convertSizeToLogic", js.Any.fromFunction2(value))
+    inline def setConvertSizeToLogic(value: (Size, Double) => Size): Self = StObject.set(x, "convertSizeToLogic", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertSizeToPixel(value: (Size, Double) => Size): Self = StObject.set(x, "convertSizeToPixel", js.Any.fromFunction2(value))
+    inline def setConvertSizeToPixel(value: (Size, Double) => Size): Self = StObject.set(x, "convertSizeToPixel", js.Any.fromFunction2(value))
   }
 }

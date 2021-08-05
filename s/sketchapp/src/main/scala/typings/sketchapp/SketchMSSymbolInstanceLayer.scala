@@ -24,8 +24,7 @@ trait SketchMSSymbolInstanceLayer
 }
 object SketchMSSymbolInstanceLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
     do_objectID: String,
@@ -55,28 +54,20 @@ object SketchMSSymbolInstanceLayer {
     __obj.asInstanceOf[SketchMSSymbolInstanceLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSSymbolInstanceLayerMutableBuilder[Self <: SketchMSSymbolInstanceLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSSymbolInstanceLayer](x: Self) {
     
-    @scala.inline
-    def setHorizontalSpacing(value: Double): Self = StObject.set(x, "horizontalSpacing", value.asInstanceOf[js.Any])
+    inline def setHorizontalSpacing(value: Double): Self = StObject.set(x, "horizontalSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideValues(value: js.Array[js.Any]): Self = StObject.set(x, "overrideValues", value.asInstanceOf[js.Any])
+    inline def setOverrideValues(value: js.Array[js.Any]): Self = StObject.set(x, "overrideValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideValuesVarargs(value: js.Any*): Self = StObject.set(x, "overrideValues", js.Array(value :_*))
+    inline def setOverrideValuesVarargs(value: js.Any*): Self = StObject.set(x, "overrideValues", js.Array(value :_*))
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolID(value: String): Self = StObject.set(x, "symbolID", value.asInstanceOf[js.Any])
+    inline def setSymbolID(value: String): Self = StObject.set(x, "symbolID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalSpacing(value: Double): Self = StObject.set(x, "verticalSpacing", value.asInstanceOf[js.Any])
+    inline def setVerticalSpacing(value: Double): Self = StObject.set(x, "verticalSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: symbolInstance): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: symbolInstance): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

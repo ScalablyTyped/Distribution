@@ -32,22 +32,17 @@ trait RaycastResult extends StObject {
 }
 object RaycastResult {
   
-  @scala.inline
-  def apply(entity: Entity, normal: Vec3, point: Vec3): RaycastResult = {
+  inline def apply(entity: Entity, normal: Vec3, point: Vec3): RaycastResult = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaycastResult]
   }
   
-  @scala.inline
-  implicit class RaycastResultMutableBuilder[Self <: RaycastResult] (val x: Self) extends AnyVal {
+  extension [Self <: RaycastResult](x: Self) {
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: Vec3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Vec3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Vec3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Vec3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }
 }

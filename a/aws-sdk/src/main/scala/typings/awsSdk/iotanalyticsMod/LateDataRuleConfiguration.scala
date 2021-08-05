@@ -13,19 +13,15 @@ trait LateDataRuleConfiguration extends StObject {
 }
 object LateDataRuleConfiguration {
   
-  @scala.inline
-  def apply(): LateDataRuleConfiguration = {
+  inline def apply(): LateDataRuleConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LateDataRuleConfiguration]
   }
   
-  @scala.inline
-  implicit class LateDataRuleConfigurationMutableBuilder[Self <: LateDataRuleConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LateDataRuleConfiguration](x: Self) {
     
-    @scala.inline
-    def setDeltaTimeSessionWindowConfiguration(value: DeltaTimeSessionWindowConfiguration): Self = StObject.set(x, "deltaTimeSessionWindowConfiguration", value.asInstanceOf[js.Any])
+    inline def setDeltaTimeSessionWindowConfiguration(value: DeltaTimeSessionWindowConfiguration): Self = StObject.set(x, "deltaTimeSessionWindowConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaTimeSessionWindowConfigurationUndefined: Self = StObject.set(x, "deltaTimeSessionWindowConfiguration", js.undefined)
+    inline def setDeltaTimeSessionWindowConfigurationUndefined: Self = StObject.set(x, "deltaTimeSessionWindowConfiguration", js.undefined)
   }
 }

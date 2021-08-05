@@ -19,19 +19,15 @@ trait StackableDiagram extends StObject {
 }
 object StackableDiagram {
   
-  @scala.inline
-  def apply(Percent: Boolean, Stacked: Boolean): StackableDiagram = {
+  inline def apply(Percent: Boolean, Stacked: Boolean): StackableDiagram = {
     val __obj = js.Dynamic.literal(Percent = Percent.asInstanceOf[js.Any], Stacked = Stacked.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackableDiagram]
   }
   
-  @scala.inline
-  implicit class StackableDiagramMutableBuilder[Self <: StackableDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: StackableDiagram](x: Self) {
     
-    @scala.inline
-    def setPercent(value: Boolean): Self = StObject.set(x, "Percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Boolean): Self = StObject.set(x, "Percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStacked(value: Boolean): Self = StObject.set(x, "Stacked", value.asInstanceOf[js.Any])
+    inline def setStacked(value: Boolean): Self = StObject.set(x, "Stacked", value.asInstanceOf[js.Any])
   }
 }

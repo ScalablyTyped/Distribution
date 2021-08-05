@@ -13,19 +13,15 @@ trait DeleteRoomRequest extends StObject {
 }
 object DeleteRoomRequest {
   
-  @scala.inline
-  def apply(): DeleteRoomRequest = {
+  inline def apply(): DeleteRoomRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRoomRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRoomRequestMutableBuilder[Self <: DeleteRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRoomRequest](x: Self) {
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait DescribeVpcEndpointConnectionsResult extends StObject {
 }
 object DescribeVpcEndpointConnectionsResult {
   
-  @scala.inline
-  def apply(): DescribeVpcEndpointConnectionsResult = {
+  inline def apply(): DescribeVpcEndpointConnectionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcEndpointConnectionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeVpcEndpointConnectionsResultMutableBuilder[Self <: DescribeVpcEndpointConnectionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcEndpointConnectionsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVpcEndpointConnections(value: VpcEndpointConnectionSet): Self = StObject.set(x, "VpcEndpointConnections", value.asInstanceOf[js.Any])
+    inline def setVpcEndpointConnections(value: VpcEndpointConnectionSet): Self = StObject.set(x, "VpcEndpointConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointConnectionsUndefined: Self = StObject.set(x, "VpcEndpointConnections", js.undefined)
+    inline def setVpcEndpointConnectionsUndefined: Self = StObject.set(x, "VpcEndpointConnections", js.undefined)
     
-    @scala.inline
-    def setVpcEndpointConnectionsVarargs(value: VpcEndpointConnection*): Self = StObject.set(x, "VpcEndpointConnections", js.Array(value :_*))
+    inline def setVpcEndpointConnectionsVarargs(value: VpcEndpointConnection*): Self = StObject.set(x, "VpcEndpointConnections", js.Array(value :_*))
   }
 }

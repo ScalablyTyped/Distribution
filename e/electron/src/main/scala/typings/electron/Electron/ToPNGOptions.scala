@@ -13,19 +13,15 @@ trait ToPNGOptions extends StObject {
 }
 object ToPNGOptions {
   
-  @scala.inline
-  def apply(): ToPNGOptions = {
+  inline def apply(): ToPNGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToPNGOptions]
   }
   
-  @scala.inline
-  implicit class ToPNGOptionsMutableBuilder[Self <: ToPNGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToPNGOptions](x: Self) {
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
   }
 }

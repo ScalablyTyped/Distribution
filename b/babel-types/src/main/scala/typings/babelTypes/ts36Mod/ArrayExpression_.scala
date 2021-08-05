@@ -17,8 +17,7 @@ trait ArrayExpression_
 }
 object ArrayExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elements: js.Array[Null | Expression | SpreadElement_],
     end: Double,
     loc: SourceLocation,
@@ -29,16 +28,12 @@ object ArrayExpression_ {
     __obj.asInstanceOf[ArrayExpression_]
   }
   
-  @scala.inline
-  implicit class ArrayExpression_MutableBuilder[Self <: ArrayExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayExpression_](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[Null | Expression | SpreadElement_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Null | Expression | SpreadElement_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: (Null | Expression | SpreadElement_)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (Null | Expression | SpreadElement_)*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ArrayExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArrayExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

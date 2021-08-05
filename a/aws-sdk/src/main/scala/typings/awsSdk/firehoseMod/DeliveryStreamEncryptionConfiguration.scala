@@ -28,37 +28,27 @@ trait DeliveryStreamEncryptionConfiguration extends StObject {
 }
 object DeliveryStreamEncryptionConfiguration {
   
-  @scala.inline
-  def apply(): DeliveryStreamEncryptionConfiguration = {
+  inline def apply(): DeliveryStreamEncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliveryStreamEncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class DeliveryStreamEncryptionConfigurationMutableBuilder[Self <: DeliveryStreamEncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryStreamEncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
+    inline def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
+    inline def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
     
-    @scala.inline
-    def setKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "KeyARN", value.asInstanceOf[js.Any])
+    inline def setKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "KeyARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyARNUndefined: Self = StObject.set(x, "KeyARN", js.undefined)
+    inline def setKeyARNUndefined: Self = StObject.set(x, "KeyARN", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "KeyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "KeyType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DeliveryStreamEncryptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeliveryStreamEncryptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

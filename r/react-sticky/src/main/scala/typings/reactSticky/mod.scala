@@ -53,8 +53,7 @@ object mod {
   }
   object StickyChildArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calculatedHeight: Double,
       distanceFromBottom: Double,
       distanceFromTop: Double,
@@ -66,26 +65,19 @@ object mod {
       __obj.asInstanceOf[StickyChildArgs]
     }
     
-    @scala.inline
-    implicit class StickyChildArgsMutableBuilder[Self <: StickyChildArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StickyChildArgs](x: Self) {
       
-      @scala.inline
-      def setCalculatedHeight(value: Double): Self = StObject.set(x, "calculatedHeight", value.asInstanceOf[js.Any])
+      inline def setCalculatedHeight(value: Double): Self = StObject.set(x, "calculatedHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceFromBottom(value: Double): Self = StObject.set(x, "distanceFromBottom", value.asInstanceOf[js.Any])
+      inline def setDistanceFromBottom(value: Double): Self = StObject.set(x, "distanceFromBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceFromTop(value: Double): Self = StObject.set(x, "distanceFromTop", value.asInstanceOf[js.Any])
+      inline def setDistanceFromTop(value: Double): Self = StObject.set(x, "distanceFromTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
+      inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWasSticky(value: Boolean): Self = StObject.set(x, "wasSticky", value.asInstanceOf[js.Any])
+      inline def setWasSticky(value: Boolean): Self = StObject.set(x, "wasSticky", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,83 +109,58 @@ object mod {
   }
   object StickyProps {
     
-    @scala.inline
-    def apply(children: StickyChildArgs => ReactElement): StickyProps = {
+    inline def apply(children: StickyChildArgs => ReactElement): StickyProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[StickyProps]
     }
     
-    @scala.inline
-    implicit class StickyPropsMutableBuilder[Self <: StickyProps] (val x: Self) extends AnyVal {
+    extension [Self <: StickyProps](x: Self) {
       
-      @scala.inline
-      def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
+      inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
+      inline def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
       
-      @scala.inline
-      def setChildren(value: StickyChildArgs => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: StickyChildArgs => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableCompensation(value: Boolean): Self = StObject.set(x, "disableCompensation", value.asInstanceOf[js.Any])
+      inline def setDisableCompensation(value: Boolean): Self = StObject.set(x, "disableCompensation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCompensationUndefined: Self = StObject.set(x, "disableCompensation", js.undefined)
+      inline def setDisableCompensationUndefined: Self = StObject.set(x, "disableCompensation", js.undefined)
       
-      @scala.inline
-      def setDisableHardwareAcceleration(value: Boolean): Self = StObject.set(x, "disableHardwareAcceleration", value.asInstanceOf[js.Any])
+      inline def setDisableHardwareAcceleration(value: Boolean): Self = StObject.set(x, "disableHardwareAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHardwareAccelerationUndefined: Self = StObject.set(x, "disableHardwareAcceleration", js.undefined)
+      inline def setDisableHardwareAccelerationUndefined: Self = StObject.set(x, "disableHardwareAcceleration", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setOnStickyStateChange(value: /* isSticky */ Boolean => Unit): Self = StObject.set(x, "onStickyStateChange", js.Any.fromFunction1(value))
+      inline def setOnStickyStateChange(value: /* isSticky */ Boolean => Unit): Self = StObject.set(x, "onStickyStateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStickyStateChangeUndefined: Self = StObject.set(x, "onStickyStateChange", js.undefined)
+      inline def setOnStickyStateChangeUndefined: Self = StObject.set(x, "onStickyStateChange", js.undefined)
       
-      @scala.inline
-      def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
+      inline def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
+      inline def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
       
-      @scala.inline
-      def setStickyStyle(value: js.Any): Self = StObject.set(x, "stickyStyle", value.asInstanceOf[js.Any])
+      inline def setStickyStyle(value: js.Any): Self = StObject.set(x, "stickyStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyStyleUndefined: Self = StObject.set(x, "stickyStyle", js.undefined)
+      inline def setStickyStyleUndefined: Self = StObject.set(x, "stickyStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+      inline def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+      inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
     }
   }
 }

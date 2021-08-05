@@ -16,20 +16,16 @@ object anon {
   }
   object Host {
     
-    @scala.inline
-    def apply(host: String, port: Double): Host = {
+    inline def apply(host: String, port: Double): Host = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,26 +39,20 @@ object anon {
   }
   object Ip {
     
-    @scala.inline
-    def apply(ip: String, port: String): Ip = {
+    inline def apply(ip: String, port: String): Ip = {
       val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ip]
     }
     
-    @scala.inline
-    implicit class IpMutableBuilder[Self <: Ip] (val x: Self) extends AnyVal {
+    extension [Self <: Ip](x: Self) {
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrio(value: Double): Self = StObject.set(x, "prio", value.asInstanceOf[js.Any])
+      inline def setPrio(value: Double): Self = StObject.set(x, "prio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrioUndefined: Self = StObject.set(x, "prio", js.undefined)
+      inline def setPrioUndefined: Self = StObject.set(x, "prio", js.undefined)
     }
   }
   
@@ -74,26 +64,20 @@ object anon {
   }
   object Lua {
     
-    @scala.inline
-    def apply(): Lua = {
+    inline def apply(): Lua = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Lua]
     }
     
-    @scala.inline
-    implicit class LuaMutableBuilder[Self <: Lua] (val x: Self) extends AnyVal {
+    extension [Self <: Lua](x: Self) {
       
-      @scala.inline
-      def setLua(value: String): Self = StObject.set(x, "lua", value.asInstanceOf[js.Any])
+      inline def setLua(value: String): Self = StObject.set(x, "lua", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLuaUndefined: Self = StObject.set(x, "lua", js.undefined)
+      inline def setLuaUndefined: Self = StObject.set(x, "lua", js.undefined)
       
-      @scala.inline
-      def setNumberOfKeys(value: Double): Self = StObject.set(x, "numberOfKeys", value.asInstanceOf[js.Any])
+      inline def setNumberOfKeys(value: Double): Self = StObject.set(x, "numberOfKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfKeysUndefined: Self = StObject.set(x, "numberOfKeys", js.undefined)
+      inline def setNumberOfKeysUndefined: Self = StObject.set(x, "numberOfKeys", js.undefined)
     }
   }
   
@@ -103,17 +87,14 @@ object anon {
   }
   object Pipeline {
     
-    @scala.inline
-    def apply(): Pipeline = {
+    inline def apply(): Pipeline = {
       val __obj = js.Dynamic.literal(pipeline = false)
       __obj.asInstanceOf[Pipeline]
     }
     
-    @scala.inline
-    implicit class PipelineMutableBuilder[Self <: Pipeline] (val x: Self) extends AnyVal {
+    extension [Self <: Pipeline](x: Self) {
       
-      @scala.inline
-      def setPipeline(value: `false`): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+      inline def setPipeline(value: `false`): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,8 +108,7 @@ object anon {
   }
   object TypeofCommand {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setArgumentTransformer: (String, js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]) => Unit,
       setReplyTransformer: (String, js.Function1[/* result */ js.Any, js.Any]) => Unit
     ): TypeofCommand = {
@@ -136,14 +116,11 @@ object anon {
       __obj.asInstanceOf[TypeofCommand]
     }
     
-    @scala.inline
-    implicit class TypeofCommandMutableBuilder[Self <: TypeofCommand] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofCommand](x: Self) {
       
-      @scala.inline
-      def setSetArgumentTransformer(value: (String, js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]) => Unit): Self = StObject.set(x, "setArgumentTransformer", js.Any.fromFunction2(value))
+      inline def setSetArgumentTransformer(value: (String, js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]) => Unit): Self = StObject.set(x, "setArgumentTransformer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetReplyTransformer(value: (String, js.Function1[/* result */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "setReplyTransformer", js.Any.fromFunction2(value))
+      inline def setSetReplyTransformer(value: (String, js.Function1[/* result */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "setReplyTransformer", js.Any.fromFunction2(value))
     }
   }
 }

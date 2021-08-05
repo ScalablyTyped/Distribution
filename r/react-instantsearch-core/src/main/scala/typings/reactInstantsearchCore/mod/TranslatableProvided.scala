@@ -10,16 +10,13 @@ trait TranslatableProvided extends StObject {
 }
 object TranslatableProvided {
   
-  @scala.inline
-  def apply(translate: (String, /* repeated */ js.Any) => String): TranslatableProvided = {
+  inline def apply(translate: (String, /* repeated */ js.Any) => String): TranslatableProvided = {
     val __obj = js.Dynamic.literal(translate = js.Any.fromFunction2(translate))
     __obj.asInstanceOf[TranslatableProvided]
   }
   
-  @scala.inline
-  implicit class TranslatableProvidedMutableBuilder[Self <: TranslatableProvided] (val x: Self) extends AnyVal {
+  extension [Self <: TranslatableProvided](x: Self) {
     
-    @scala.inline
-    def setTranslate(value: (String, /* repeated */ js.Any) => String): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (String, /* repeated */ js.Any) => String): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
   }
 }

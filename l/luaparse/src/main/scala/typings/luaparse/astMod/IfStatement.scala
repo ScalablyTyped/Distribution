@@ -13,20 +13,16 @@ trait IfStatement
 }
 object IfStatement {
   
-  @scala.inline
-  def apply(clauses: js.Array[IfClause | ElseifClause | ElseClause]): IfStatement = {
+  inline def apply(clauses: js.Array[IfClause | ElseifClause | ElseClause]): IfStatement = {
     val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[IfStatement]
   }
   
-  @scala.inline
-  implicit class IfStatementMutableBuilder[Self <: IfStatement] (val x: Self) extends AnyVal {
+  extension [Self <: IfStatement](x: Self) {
     
-    @scala.inline
-    def setClauses(value: js.Array[IfClause | ElseifClause | ElseClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
+    inline def setClauses(value: js.Array[IfClause | ElseifClause | ElseClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClausesVarargs(value: (IfClause | ElseifClause | ElseClause)*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+    inline def setClausesVarargs(value: (IfClause | ElseifClause | ElseClause)*): Self = StObject.set(x, "clauses", js.Array(value :_*))
   }
 }

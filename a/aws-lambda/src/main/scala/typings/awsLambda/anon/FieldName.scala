@@ -19,8 +19,7 @@ trait FieldName extends StObject {
 }
 object FieldName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldName: String,
     parentTypeName: String,
     selectionSetGraphQL: String,
@@ -31,25 +30,18 @@ object FieldName {
     __obj.asInstanceOf[FieldName]
   }
   
-  @scala.inline
-  implicit class FieldNameMutableBuilder[Self <: FieldName] (val x: Self) extends AnyVal {
+  extension [Self <: FieldName](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTypeName(value: String): Self = StObject.set(x, "parentTypeName", value.asInstanceOf[js.Any])
+    inline def setParentTypeName(value: String): Self = StObject.set(x, "parentTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionSetGraphQL(value: String): Self = StObject.set(x, "selectionSetGraphQL", value.asInstanceOf[js.Any])
+    inline def setSelectionSetGraphQL(value: String): Self = StObject.set(x, "selectionSetGraphQL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionSetList(value: js.Array[String]): Self = StObject.set(x, "selectionSetList", value.asInstanceOf[js.Any])
+    inline def setSelectionSetList(value: js.Array[String]): Self = StObject.set(x, "selectionSetList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionSetListVarargs(value: String*): Self = StObject.set(x, "selectionSetList", js.Array(value :_*))
+    inline def setSelectionSetListVarargs(value: String*): Self = StObject.set(x, "selectionSetList", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

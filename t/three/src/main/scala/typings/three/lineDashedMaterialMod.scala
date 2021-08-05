@@ -46,32 +46,24 @@ object lineDashedMaterialMod {
   }
   object LineDashedMaterialParameters {
     
-    @scala.inline
-    def apply(): LineDashedMaterialParameters = {
+    inline def apply(): LineDashedMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineDashedMaterialParameters]
     }
     
-    @scala.inline
-    implicit class LineDashedMaterialParametersMutableBuilder[Self <: LineDashedMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: LineDashedMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setDashSize(value: Double): Self = StObject.set(x, "dashSize", value.asInstanceOf[js.Any])
+      inline def setDashSize(value: Double): Self = StObject.set(x, "dashSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashSizeUndefined: Self = StObject.set(x, "dashSize", js.undefined)
+      inline def setDashSizeUndefined: Self = StObject.set(x, "dashSize", js.undefined)
       
-      @scala.inline
-      def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
+      inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
+      inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     }
   }
 }

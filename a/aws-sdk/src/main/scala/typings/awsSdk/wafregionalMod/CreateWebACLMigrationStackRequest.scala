@@ -23,22 +23,17 @@ trait CreateWebACLMigrationStackRequest extends StObject {
 }
 object CreateWebACLMigrationStackRequest {
   
-  @scala.inline
-  def apply(IgnoreUnsupportedType: IgnoreUnsupportedType, S3BucketName: S3BucketName, WebACLId: ResourceId): CreateWebACLMigrationStackRequest = {
+  inline def apply(IgnoreUnsupportedType: IgnoreUnsupportedType, S3BucketName: S3BucketName, WebACLId: ResourceId): CreateWebACLMigrationStackRequest = {
     val __obj = js.Dynamic.literal(IgnoreUnsupportedType = IgnoreUnsupportedType.asInstanceOf[js.Any], S3BucketName = S3BucketName.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWebACLMigrationStackRequest]
   }
   
-  @scala.inline
-  implicit class CreateWebACLMigrationStackRequestMutableBuilder[Self <: CreateWebACLMigrationStackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWebACLMigrationStackRequest](x: Self) {
     
-    @scala.inline
-    def setIgnoreUnsupportedType(value: IgnoreUnsupportedType): Self = StObject.set(x, "IgnoreUnsupportedType", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnsupportedType(value: IgnoreUnsupportedType): Self = StObject.set(x, "IgnoreUnsupportedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
+    inline def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

@@ -30,50 +30,35 @@ object taskGroupMod {
     @js.native
     def apply[A /* <: js.Array[js.Any] */, R](tasks: js.Array[Task_[A, R]]): TaskGroup[A, R] = js.native
     
-    @scala.inline
-    implicit class TaskGroupMutableBuilder[Self <: TaskGroup[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskGroup[A, R])) extends AnyVal {
+    extension [Self <: TaskGroup[?, ?], A /* <: js.Array[js.Any] */, R](x: Self & (TaskGroup[A, R])) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setPending(value: js.Any): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: js.Any): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+      inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
       
-      @scala.inline
-      def setRejected(value: js.Any): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      inline def setRejected(value: js.Any): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectedUndefined: Self = StObject.set(x, "rejected", js.undefined)
+      inline def setRejectedUndefined: Self = StObject.set(x, "rejected", js.undefined)
       
-      @scala.inline
-      def setResolved(value: js.Any): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: js.Any): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
+      inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -89,25 +74,18 @@ object taskGroupMod {
   trait QueryableMethods extends StObject
   object QueryableMethods {
     
-    @scala.inline
-    def error: typings.mobxTask.mobxTaskStrings.error = "error".asInstanceOf[typings.mobxTask.mobxTaskStrings.error]
+    inline def error: typings.mobxTask.mobxTaskStrings.error = "error".asInstanceOf[typings.mobxTask.mobxTaskStrings.error]
     
-    @scala.inline
-    def `match`: typings.mobxTask.mobxTaskStrings.`match` = "match".asInstanceOf[typings.mobxTask.mobxTaskStrings.`match`]
+    inline def `match`: typings.mobxTask.mobxTaskStrings.`match` = "match".asInstanceOf[typings.mobxTask.mobxTaskStrings.`match`]
     
-    @scala.inline
-    def pending: typings.mobxTask.mobxTaskStrings.pending = "pending".asInstanceOf[typings.mobxTask.mobxTaskStrings.pending]
+    inline def pending: typings.mobxTask.mobxTaskStrings.pending = "pending".asInstanceOf[typings.mobxTask.mobxTaskStrings.pending]
     
-    @scala.inline
-    def rejected: typings.mobxTask.mobxTaskStrings.rejected = "rejected".asInstanceOf[typings.mobxTask.mobxTaskStrings.rejected]
+    inline def rejected: typings.mobxTask.mobxTaskStrings.rejected = "rejected".asInstanceOf[typings.mobxTask.mobxTaskStrings.rejected]
     
-    @scala.inline
-    def resolved: typings.mobxTask.mobxTaskStrings.resolved = "resolved".asInstanceOf[typings.mobxTask.mobxTaskStrings.resolved]
+    inline def resolved: typings.mobxTask.mobxTaskStrings.resolved = "resolved".asInstanceOf[typings.mobxTask.mobxTaskStrings.resolved]
     
-    @scala.inline
-    def result: typings.mobxTask.mobxTaskStrings.result = "result".asInstanceOf[typings.mobxTask.mobxTaskStrings.result]
+    inline def result: typings.mobxTask.mobxTaskStrings.result = "result".asInstanceOf[typings.mobxTask.mobxTaskStrings.result]
     
-    @scala.inline
-    def state: typings.mobxTask.mobxTaskStrings.state = "state".asInstanceOf[typings.mobxTask.mobxTaskStrings.state]
+    inline def state: typings.mobxTask.mobxTaskStrings.state = "state".asInstanceOf[typings.mobxTask.mobxTaskStrings.state]
   }
 }

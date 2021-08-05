@@ -225,147 +225,105 @@ trait IPath
 }
 object IPath {
   
-  @scala.inline
-  def apply(): IPath = {
+  inline def apply(): IPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPath]
   }
   
-  @scala.inline
-  implicit class IPathMutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
+  extension [Self <: IPath](x: Self) {
     
-    @scala.inline
-    def setArc(
+    inline def setArc(
       value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* radius */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "arc", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setArcSvg(
+    inline def setArcSvg(
       value: (/* rx */ js.UndefOr[Double], /* ry */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double], /* fA */ js.UndefOr[Double], /* fS */ js.UndefOr[Double], /* x2 */ js.UndefOr[Double], /* y2 */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "arcSvg", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setArcSvgUndefined: Self = StObject.set(x, "arcSvg", js.undefined)
+    inline def setArcSvgUndefined: Self = StObject.set(x, "arcSvg", js.undefined)
     
-    @scala.inline
-    def setArcTo(
+    inline def setArcTo(
       value: (/* x1 */ js.UndefOr[Double], /* y1 */ js.UndefOr[Double], /* x2 */ js.UndefOr[Double], /* y2 */ js.UndefOr[Double], /* rx */ js.UndefOr[Double], /* ry */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "arcTo", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setArcToUndefined: Self = StObject.set(x, "arcTo", js.undefined)
+    inline def setArcToUndefined: Self = StObject.set(x, "arcTo", js.undefined)
     
-    @scala.inline
-    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
+    inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
-    @scala.inline
-    def setBezierCurveTo(
+    inline def setBezierCurveTo(
       value: (/* cx1 */ js.UndefOr[Double], /* cy1 */ js.UndefOr[Double], /* cx2 */ js.UndefOr[Double], /* cy2 */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "bezierCurveTo", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setBezierCurveToUndefined: Self = StObject.set(x, "bezierCurveTo", js.undefined)
+    inline def setBezierCurveToUndefined: Self = StObject.set(x, "bezierCurveTo", js.undefined)
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setClone_(value: () => IPath): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
+    inline def setClone_(value: () => IPath): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    @scala.inline
-    def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
+    inline def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClosePathUndefined: Self = StObject.set(x, "closePath", js.undefined)
+    inline def setClosePathUndefined: Self = StObject.set(x, "closePath", js.undefined)
     
-    @scala.inline
-    def setEllipse(
+    inline def setEllipse(
       value: (/* cx */ js.UndefOr[Double], /* cy */ js.UndefOr[Double], /* radiusX */ js.UndefOr[Double], /* radiusY */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "ellipse", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
+    inline def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
     
-    @scala.inline
-    def setFromStripes(value: /* stripes */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "fromStripes", js.Any.fromFunction1(value))
+    inline def setFromStripes(value: /* stripes */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "fromStripes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromStripesUndefined: Self = StObject.set(x, "fromStripes", js.undefined)
+    inline def setFromStripesUndefined: Self = StObject.set(x, "fromStripes", js.undefined)
     
-    @scala.inline
-    def setFromSvgString(value: /* pathString */ js.UndefOr[String] => Unit): Self = StObject.set(x, "fromSvgString", js.Any.fromFunction1(value))
+    inline def setFromSvgString(value: /* pathString */ js.UndefOr[String] => Unit): Self = StObject.set(x, "fromSvgString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromSvgStringUndefined: Self = StObject.set(x, "fromSvgString", js.undefined)
+    inline def setFromSvgStringUndefined: Self = StObject.set(x, "fromSvgString", js.undefined)
     
-    @scala.inline
-    def setGetDimension(value: /* target */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
+    inline def setGetDimension(value: /* target */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDimensionUndefined: Self = StObject.set(x, "getDimension", js.undefined)
+    inline def setGetDimensionUndefined: Self = StObject.set(x, "getDimension", js.undefined)
     
-    @scala.inline
-    def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getDimensionWithTransform", js.Any.fromFunction2(value))
+    inline def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getDimensionWithTransform", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDimensionWithTransformUndefined: Self = StObject.set(x, "getDimensionWithTransform", js.undefined)
+    inline def setGetDimensionWithTransformUndefined: Self = StObject.set(x, "getDimensionWithTransform", js.undefined)
     
-    @scala.inline
-    def setIsPointInPath(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "isPointInPath", js.Any.fromFunction2(value))
+    inline def setIsPointInPath(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "isPointInPath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsPointInPathUndefined: Self = StObject.set(x, "isPointInPath", js.undefined)
+    inline def setIsPointInPathUndefined: Self = StObject.set(x, "isPointInPath", js.undefined)
     
-    @scala.inline
-    def setLineTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
+    inline def setLineTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLineToUndefined: Self = StObject.set(x, "lineTo", js.undefined)
+    inline def setLineToUndefined: Self = StObject.set(x, "lineTo", js.undefined)
     
-    @scala.inline
-    def setMoveTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
+    inline def setMoveTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveToUndefined: Self = StObject.set(x, "moveTo", js.undefined)
+    inline def setMoveToUndefined: Self = StObject.set(x, "moveTo", js.undefined)
     
-    @scala.inline
-    def setQuadraticCurveTo(
+    inline def setQuadraticCurveTo(
       value: (/* cx */ js.UndefOr[Double], /* cy */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "quadraticCurveTo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setQuadraticCurveToUndefined: Self = StObject.set(x, "quadraticCurveTo", js.undefined)
+    inline def setQuadraticCurveToUndefined: Self = StObject.set(x, "quadraticCurveTo", js.undefined)
     
-    @scala.inline
-    def setRect(
+    inline def setRect(
       value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "rect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+    inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
-    @scala.inline
-    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+    inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+    inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
-    @scala.inline
-    def setToStripes(value: /* target */ js.UndefOr[Array] => Array): Self = StObject.set(x, "toStripes", js.Any.fromFunction1(value))
+    inline def setToStripes(value: /* target */ js.UndefOr[Array] => Array): Self = StObject.set(x, "toStripes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToStripesUndefined: Self = StObject.set(x, "toStripes", js.undefined)
+    inline def setToStripesUndefined: Self = StObject.set(x, "toStripes", js.undefined)
     
-    @scala.inline
-    def setTransform(value: /* matrix */ js.UndefOr[IMatrix] => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: /* matrix */ js.UndefOr[IMatrix] => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

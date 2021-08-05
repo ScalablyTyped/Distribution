@@ -23,31 +23,23 @@ trait DisassociateAddressRequest extends StObject {
 }
 object DisassociateAddressRequest {
   
-  @scala.inline
-  def apply(): DisassociateAddressRequest = {
+  inline def apply(): DisassociateAddressRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateAddressRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateAddressRequestMutableBuilder[Self <: DisassociateAddressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateAddressRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: ElasticIpAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: ElasticIpAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
+    inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }
 }

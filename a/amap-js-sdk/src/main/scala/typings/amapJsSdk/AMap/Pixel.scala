@@ -28,23 +28,18 @@ trait Pixel extends StObject {
 }
 object Pixel {
   
-  @scala.inline
-  def apply(equals_ : Pixel => Boolean, getX: () => Double, getY: () => Double): Pixel = {
+  inline def apply(equals_ : Pixel => Boolean, getX: () => Double, getY: () => Double): Pixel = {
     val __obj = js.Dynamic.literal(getX = js.Any.fromFunction0(getX), getY = js.Any.fromFunction0(getY))
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Pixel]
   }
   
-  @scala.inline
-  implicit class PixelMutableBuilder[Self <: Pixel] (val x: Self) extends AnyVal {
+  extension [Self <: Pixel](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: Pixel => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Pixel => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+    inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+    inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
   }
 }

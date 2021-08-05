@@ -28,34 +28,25 @@ trait UpdateComputeEnvironmentRequest extends StObject {
 }
 object UpdateComputeEnvironmentRequest {
   
-  @scala.inline
-  def apply(computeEnvironment: String): UpdateComputeEnvironmentRequest = {
+  inline def apply(computeEnvironment: String): UpdateComputeEnvironmentRequest = {
     val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateComputeEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class UpdateComputeEnvironmentRequestMutableBuilder[Self <: UpdateComputeEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateComputeEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeResources(value: ComputeResourceUpdate): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
+    inline def setComputeResources(value: ComputeResourceUpdate): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
+    inline def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
     
-    @scala.inline
-    def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
+    inline def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
     
-    @scala.inline
-    def setState(value: CEState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CEState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

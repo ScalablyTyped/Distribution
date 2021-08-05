@@ -16,28 +16,21 @@ trait IdentitySelf extends StObject {
 }
 object IdentitySelf {
   
-  @scala.inline
-  def apply(accountName: String, displayName: String, id: String, tenants: js.Array[TenantInfo]): IdentitySelf = {
+  inline def apply(accountName: String, displayName: String, id: String, tenants: js.Array[TenantInfo]): IdentitySelf = {
     val __obj = js.Dynamic.literal(accountName = accountName.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tenants = tenants.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitySelf]
   }
   
-  @scala.inline
-  implicit class IdentitySelfMutableBuilder[Self <: IdentitySelf] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitySelf](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenants(value: js.Array[TenantInfo]): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
+    inline def setTenants(value: js.Array[TenantInfo]): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantsVarargs(value: TenantInfo*): Self = StObject.set(x, "tenants", js.Array(value :_*))
+    inline def setTenantsVarargs(value: TenantInfo*): Self = StObject.set(x, "tenants", js.Array(value :_*))
   }
 }

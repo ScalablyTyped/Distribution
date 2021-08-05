@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Shape")
 @js.native
-class Shape protected ()
+/* private */ class Shape ()
   extends StObject
      with typings.activexExcel.Excel.Shape

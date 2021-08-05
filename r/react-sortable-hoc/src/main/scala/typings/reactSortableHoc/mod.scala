@@ -21,23 +21,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SortableContainer[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P & SortableContainerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableContainer")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & SortableContainerProps, ComponentState]]
-  @scala.inline
-  def SortableContainer[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P & SortableContainerProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableContainer")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P & SortableContainerProps, ComponentState]]
+  inline def SortableContainer[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P & SortableContainerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableContainer")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & SortableContainerProps, ComponentState]]
+  inline def SortableContainer[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P & SortableContainerProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableContainer")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P & SortableContainerProps, ComponentState]]
   
-  @scala.inline
-  def SortableElement[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P & SortableElementProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableElement")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & SortableElementProps, ComponentState]]
-  @scala.inline
-  def SortableElement[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P & SortableElementProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableElement")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P & SortableElementProps, ComponentState]]
+  inline def SortableElement[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P & SortableElementProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableElement")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & SortableElementProps, ComponentState]]
+  inline def SortableElement[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P & SortableElementProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableElement")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P & SortableElementProps, ComponentState]]
   
-  @scala.inline
-  def SortableHandle[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableHandle")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
-  @scala.inline
-  def SortableHandle[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableHandle")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P, ComponentState]]
+  inline def SortableHandle[P](wrappedComponent: WrappedComponent[P]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableHandle")(wrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
+  inline def SortableHandle[P](wrappedComponent: WrappedComponent[P], config: Config): ComponentClass[P, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("SortableHandle")(wrappedComponent.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[P, ComponentState]]
   
-  @scala.inline
-  def arrayMove[T](collection: js.Array[T], previousIndex: Double, newIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(collection.asInstanceOf[js.Any], previousIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def arrayMove[T](collection: js.Array[T], previousIndex: Double, newIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(collection.asInstanceOf[js.Any], previousIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactSortableHoc.reactSortableHocStrings.x
@@ -47,14 +40,11 @@ object mod {
   trait Axis extends StObject
   object Axis {
     
-    @scala.inline
-    def x: typings.reactSortableHoc.reactSortableHocStrings.x = "x".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.x]
+    inline def x: typings.reactSortableHoc.reactSortableHocStrings.x = "x".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.x]
     
-    @scala.inline
-    def xy: typings.reactSortableHoc.reactSortableHocStrings.xy = "xy".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.xy]
+    inline def xy: typings.reactSortableHoc.reactSortableHocStrings.xy = "xy".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.xy]
     
-    @scala.inline
-    def y: typings.reactSortableHoc.reactSortableHocStrings.y = "y".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.y]
+    inline def y: typings.reactSortableHoc.reactSortableHocStrings.y = "y".asInstanceOf[typings.reactSortableHoc.reactSortableHocStrings.y]
   }
   
   trait Config extends StObject {
@@ -63,17 +53,14 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(withRef: Boolean): Config = {
+    inline def apply(withRef: Boolean): Config = {
       val __obj = js.Dynamic.literal(withRef = withRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
+      inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,20 +74,16 @@ object mod {
   }
   object Dimensions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Dimensions = {
+    inline def apply(height: Double, width: Double): Dimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dimensions]
     }
     
-    @scala.inline
-    implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+    extension [Self <: Dimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,8 +105,7 @@ object mod {
   }
   object SortEnd {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collection: Offset,
       isKeySorting: Boolean,
       newIndex: Double,
@@ -134,26 +116,19 @@ object mod {
       __obj.asInstanceOf[SortEnd]
     }
     
-    @scala.inline
-    implicit class SortEndMutableBuilder[Self <: SortEnd] (val x: Self) extends AnyVal {
+    extension [Self <: SortEnd](x: Self) {
       
-      @scala.inline
-      def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsKeySorting(value: Boolean): Self = StObject.set(x, "isKeySorting", value.asInstanceOf[js.Any])
+      inline def setIsKeySorting(value: Boolean): Self = StObject.set(x, "isKeySorting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,8 +158,7 @@ object mod {
   }
   object SortOver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collection: Offset,
       helper: HTMLElement,
       index: Double,
@@ -197,32 +171,23 @@ object mod {
       __obj.asInstanceOf[SortOver]
     }
     
-    @scala.inline
-    implicit class SortOverMutableBuilder[Self <: SortOver] (val x: Self) extends AnyVal {
+    extension [Self <: SortOver](x: Self) {
       
-      @scala.inline
-      def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelper(value: HTMLElement): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+      inline def setHelper(value: HTMLElement): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsKeySorting(value: Boolean): Self = StObject.set(x, "isKeySorting", value.asInstanceOf[js.Any])
+      inline def setIsKeySorting(value: Boolean): Self = StObject.set(x, "isKeySorting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,8 +209,7 @@ object mod {
   }
   object SortStart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collection: Offset,
       helper: HTMLElement,
       index: Double,
@@ -257,29 +221,21 @@ object mod {
       __obj.asInstanceOf[SortStart]
     }
     
-    @scala.inline
-    implicit class SortStartMutableBuilder[Self <: SortStart] (val x: Self) extends AnyVal {
+    extension [Self <: SortStart](x: Self) {
       
-      @scala.inline
-      def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelper(value: HTMLElement): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+      inline def setHelper(value: HTMLElement): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsKeySorting(value: Boolean): Self = StObject.set(x, "isKeySorting", value.asInstanceOf[js.Any])
+      inline def setIsKeySorting(value: Boolean): Self = StObject.set(x, "isKeySorting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[HTMLElement]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: HTMLElement*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
@@ -335,155 +291,106 @@ object mod {
   }
   object SortableContainerProps {
     
-    @scala.inline
-    def apply(): SortableContainerProps = {
+    inline def apply(): SortableContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SortableContainerProps]
     }
     
-    @scala.inline
-    implicit class SortableContainerPropsMutableBuilder[Self <: SortableContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortableContainerProps](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: /* element */ ReactElement => HTMLElement | js.Promise[HTMLElement]): Self = StObject.set(x, "getContainer", js.Any.fromFunction1(value))
+      inline def setGetContainer(value: /* element */ ReactElement => HTMLElement | js.Promise[HTMLElement]): Self = StObject.set(x, "getContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
-      @scala.inline
-      def setGetHelperDimensions(value: /* sort */ SortStart => Dimensions): Self = StObject.set(x, "getHelperDimensions", js.Any.fromFunction1(value))
+      inline def setGetHelperDimensions(value: /* sort */ SortStart => Dimensions): Self = StObject.set(x, "getHelperDimensions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHelperDimensionsUndefined: Self = StObject.set(x, "getHelperDimensions", js.undefined)
+      inline def setGetHelperDimensionsUndefined: Self = StObject.set(x, "getHelperDimensions", js.undefined)
       
-      @scala.inline
-      def setHelperClass(value: String): Self = StObject.set(x, "helperClass", value.asInstanceOf[js.Any])
+      inline def setHelperClass(value: String): Self = StObject.set(x, "helperClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperClassUndefined: Self = StObject.set(x, "helperClass", js.undefined)
+      inline def setHelperClassUndefined: Self = StObject.set(x, "helperClass", js.undefined)
       
-      @scala.inline
-      def setHelperContainer(value: HTMLElement | HelperContainerGetter): Self = StObject.set(x, "helperContainer", value.asInstanceOf[js.Any])
+      inline def setHelperContainer(value: HTMLElement | HelperContainerGetter): Self = StObject.set(x, "helperContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "helperContainer", js.Any.fromFunction0(value))
+      inline def setHelperContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "helperContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHelperContainerUndefined: Self = StObject.set(x, "helperContainer", js.undefined)
+      inline def setHelperContainerUndefined: Self = StObject.set(x, "helperContainer", js.undefined)
       
-      @scala.inline
-      def setHideSortableGhost(value: Boolean): Self = StObject.set(x, "hideSortableGhost", value.asInstanceOf[js.Any])
+      inline def setHideSortableGhost(value: Boolean): Self = StObject.set(x, "hideSortableGhost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideSortableGhostUndefined: Self = StObject.set(x, "hideSortableGhost", js.undefined)
+      inline def setHideSortableGhostUndefined: Self = StObject.set(x, "hideSortableGhost", js.undefined)
       
-      @scala.inline
-      def setKeyCodes(value: Cancel): Self = StObject.set(x, "keyCodes", value.asInstanceOf[js.Any])
+      inline def setKeyCodes(value: Cancel): Self = StObject.set(x, "keyCodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCodesUndefined: Self = StObject.set(x, "keyCodes", js.undefined)
+      inline def setKeyCodesUndefined: Self = StObject.set(x, "keyCodes", js.undefined)
       
-      @scala.inline
-      def setKeyboardSortingTransitionDuration(value: Double): Self = StObject.set(x, "keyboardSortingTransitionDuration", value.asInstanceOf[js.Any])
+      inline def setKeyboardSortingTransitionDuration(value: Double): Self = StObject.set(x, "keyboardSortingTransitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardSortingTransitionDurationUndefined: Self = StObject.set(x, "keyboardSortingTransitionDuration", js.undefined)
+      inline def setKeyboardSortingTransitionDurationUndefined: Self = StObject.set(x, "keyboardSortingTransitionDuration", js.undefined)
       
-      @scala.inline
-      def setLockAxis(value: Axis): Self = StObject.set(x, "lockAxis", value.asInstanceOf[js.Any])
+      inline def setLockAxis(value: Axis): Self = StObject.set(x, "lockAxis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockAxisUndefined: Self = StObject.set(x, "lockAxis", js.undefined)
+      inline def setLockAxisUndefined: Self = StObject.set(x, "lockAxis", js.undefined)
       
-      @scala.inline
-      def setLockOffset(value: Offset | (js.Tuple2[Offset, Offset])): Self = StObject.set(x, "lockOffset", value.asInstanceOf[js.Any])
+      inline def setLockOffset(value: Offset | (js.Tuple2[Offset, Offset])): Self = StObject.set(x, "lockOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockOffsetUndefined: Self = StObject.set(x, "lockOffset", js.undefined)
+      inline def setLockOffsetUndefined: Self = StObject.set(x, "lockOffset", js.undefined)
       
-      @scala.inline
-      def setLockToContainerEdges(value: Boolean): Self = StObject.set(x, "lockToContainerEdges", value.asInstanceOf[js.Any])
+      inline def setLockToContainerEdges(value: Boolean): Self = StObject.set(x, "lockToContainerEdges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockToContainerEdgesUndefined: Self = StObject.set(x, "lockToContainerEdges", js.undefined)
+      inline def setLockToContainerEdgesUndefined: Self = StObject.set(x, "lockToContainerEdges", js.undefined)
       
-      @scala.inline
-      def setOnSortEnd(value: (/* sort */ SortEnd, /* event */ SortEvent) => Unit): Self = StObject.set(x, "onSortEnd", js.Any.fromFunction2(value))
+      inline def setOnSortEnd(value: (/* sort */ SortEnd, /* event */ SortEvent) => Unit): Self = StObject.set(x, "onSortEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSortEndUndefined: Self = StObject.set(x, "onSortEnd", js.undefined)
+      inline def setOnSortEndUndefined: Self = StObject.set(x, "onSortEnd", js.undefined)
       
-      @scala.inline
-      def setOnSortMove(value: /* event */ SortEvent => Unit): Self = StObject.set(x, "onSortMove", js.Any.fromFunction1(value))
+      inline def setOnSortMove(value: /* event */ SortEvent => Unit): Self = StObject.set(x, "onSortMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSortMoveUndefined: Self = StObject.set(x, "onSortMove", js.undefined)
+      inline def setOnSortMoveUndefined: Self = StObject.set(x, "onSortMove", js.undefined)
       
-      @scala.inline
-      def setOnSortOver(value: (/* sort */ SortOver, /* event */ SortEvent) => Unit): Self = StObject.set(x, "onSortOver", js.Any.fromFunction2(value))
+      inline def setOnSortOver(value: (/* sort */ SortOver, /* event */ SortEvent) => Unit): Self = StObject.set(x, "onSortOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSortOverUndefined: Self = StObject.set(x, "onSortOver", js.undefined)
+      inline def setOnSortOverUndefined: Self = StObject.set(x, "onSortOver", js.undefined)
       
-      @scala.inline
-      def setOnSortStart(value: (/* sort */ SortStart, /* event */ SortEvent) => Unit): Self = StObject.set(x, "onSortStart", js.Any.fromFunction2(value))
+      inline def setOnSortStart(value: (/* sort */ SortStart, /* event */ SortEvent) => Unit): Self = StObject.set(x, "onSortStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSortStartUndefined: Self = StObject.set(x, "onSortStart", js.undefined)
+      inline def setOnSortStartUndefined: Self = StObject.set(x, "onSortStart", js.undefined)
       
-      @scala.inline
-      def setPressDelay(value: Double): Self = StObject.set(x, "pressDelay", value.asInstanceOf[js.Any])
+      inline def setPressDelay(value: Double): Self = StObject.set(x, "pressDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressDelayUndefined: Self = StObject.set(x, "pressDelay", js.undefined)
+      inline def setPressDelayUndefined: Self = StObject.set(x, "pressDelay", js.undefined)
       
-      @scala.inline
-      def setPressThreshold(value: Double): Self = StObject.set(x, "pressThreshold", value.asInstanceOf[js.Any])
+      inline def setPressThreshold(value: Double): Self = StObject.set(x, "pressThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressThresholdUndefined: Self = StObject.set(x, "pressThreshold", js.undefined)
+      inline def setPressThresholdUndefined: Self = StObject.set(x, "pressThreshold", js.undefined)
       
-      @scala.inline
-      def setShouldCancelStart(value: /* event */ SortEvent | SortEventWithTag => Boolean): Self = StObject.set(x, "shouldCancelStart", js.Any.fromFunction1(value))
+      inline def setShouldCancelStart(value: /* event */ SortEvent | SortEventWithTag => Boolean): Self = StObject.set(x, "shouldCancelStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldCancelStartUndefined: Self = StObject.set(x, "shouldCancelStart", js.undefined)
+      inline def setShouldCancelStartUndefined: Self = StObject.set(x, "shouldCancelStart", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setUpdateBeforeSortStart(value: (/* sort */ SortStart, /* event */ SortEvent) => Unit): Self = StObject.set(x, "updateBeforeSortStart", js.Any.fromFunction2(value))
+      inline def setUpdateBeforeSortStart(value: (/* sort */ SortStart, /* event */ SortEvent) => Unit): Self = StObject.set(x, "updateBeforeSortStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateBeforeSortStartUndefined: Self = StObject.set(x, "updateBeforeSortStart", js.undefined)
+      inline def setUpdateBeforeSortStartUndefined: Self = StObject.set(x, "updateBeforeSortStart", js.undefined)
       
-      @scala.inline
-      def setUseDragHandle(value: Boolean): Self = StObject.set(x, "useDragHandle", value.asInstanceOf[js.Any])
+      inline def setUseDragHandle(value: Boolean): Self = StObject.set(x, "useDragHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDragHandleUndefined: Self = StObject.set(x, "useDragHandle", js.undefined)
+      inline def setUseDragHandleUndefined: Self = StObject.set(x, "useDragHandle", js.undefined)
       
-      @scala.inline
-      def setUseWindowAsScrollContainer(value: Boolean): Self = StObject.set(x, "useWindowAsScrollContainer", value.asInstanceOf[js.Any])
+      inline def setUseWindowAsScrollContainer(value: Boolean): Self = StObject.set(x, "useWindowAsScrollContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWindowAsScrollContainerUndefined: Self = StObject.set(x, "useWindowAsScrollContainer", js.undefined)
+      inline def setUseWindowAsScrollContainerUndefined: Self = StObject.set(x, "useWindowAsScrollContainer", js.undefined)
     }
   }
   
@@ -497,29 +404,22 @@ object mod {
   }
   object SortableElementProps {
     
-    @scala.inline
-    def apply(index: Double): SortableElementProps = {
+    inline def apply(index: Double): SortableElementProps = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortableElementProps]
     }
     
-    @scala.inline
-    implicit class SortableElementPropsMutableBuilder[Self <: SortableElementProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortableElementProps](x: Self) {
       
-      @scala.inline
-      def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   

@@ -12,20 +12,16 @@ object anon {
   }
   object ContentType {
     
-    @scala.inline
-    def apply(): ContentType = {
+    inline def apply(): ContentType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentType]
     }
     
-    @scala.inline
-    implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+    extension [Self <: ContentType](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     }
   }
   
@@ -49,47 +45,34 @@ object anon {
   }
   object Contentlength {
     
-    @scala.inline
-    def apply(ip: String, method: String, path: String, status: Double, time: String): Contentlength = {
+    inline def apply(ip: String, method: String, path: String, status: Double, time: String): Contentlength = {
       val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Contentlength]
     }
     
-    @scala.inline
-    implicit class ContentlengthMutableBuilder[Self <: Contentlength] (val x: Self) extends AnyVal {
+    extension [Self <: Contentlength](x: Self) {
       
-      @scala.inline
-      def setContent_length(value: String): Self = StObject.set(x, "content_length", value.asInstanceOf[js.Any])
+      inline def setContent_length(value: String): Self = StObject.set(x, "content_length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_lengthUndefined: Self = StObject.set(x, "content_length", js.undefined)
+      inline def setContent_lengthUndefined: Self = StObject.set(x, "content_length", js.undefined)
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+      inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+      inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
+      inline def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,20 +82,16 @@ object anon {
   }
   object Delimiter {
     
-    @scala.inline
-    def apply(): Delimiter = {
+    inline def apply(): Delimiter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Delimiter]
     }
     
-    @scala.inline
-    implicit class DelimiterMutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
+    extension [Self <: Delimiter](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     }
   }
   
@@ -122,20 +101,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(): End = {
+    inline def apply(): End = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     }
   }
 }

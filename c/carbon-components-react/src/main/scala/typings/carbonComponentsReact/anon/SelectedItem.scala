@@ -10,22 +10,17 @@ trait SelectedItem[ItemType] extends StObject {
 }
 object SelectedItem {
   
-  @scala.inline
-  def apply[ItemType](): SelectedItem[ItemType] = {
+  inline def apply[ItemType](): SelectedItem[ItemType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectedItem[ItemType]]
   }
   
-  @scala.inline
-  implicit class SelectedItemMutableBuilder[Self <: SelectedItem[?], ItemType] (val x: Self & SelectedItem[ItemType]) extends AnyVal {
+  extension [Self <: SelectedItem[?], ItemType](x: Self & SelectedItem[ItemType]) {
     
-    @scala.inline
-    def setSelectedItem(value: ItemType): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: ItemType): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
+    inline def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
     
-    @scala.inline
-    def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait ArtifactVersion extends StObject {
 }
 object ArtifactVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alias: String,
     defaultVersion: BuildVersion,
     errorMessage: String,
@@ -30,25 +29,18 @@ object ArtifactVersion {
     __obj.asInstanceOf[ArtifactVersion]
   }
   
-  @scala.inline
-  implicit class ArtifactVersionMutableBuilder[Self <: ArtifactVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactVersion](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersion(value: BuildVersion): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultVersion(value: BuildVersion): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersions(value: js.Array[BuildVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[BuildVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsVarargs(value: BuildVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: BuildVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

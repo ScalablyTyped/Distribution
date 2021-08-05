@@ -12,17 +12,14 @@ object firebaseComponentAugmentingMod {
   }
   object NameServiceMapping {
     
-    @scala.inline
-    def apply(auth: FirebaseAuth): NameServiceMapping = {
+    inline def apply(auth: FirebaseAuth): NameServiceMapping = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameServiceMapping]
     }
     
-    @scala.inline
-    implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+    extension [Self <: NameServiceMapping](x: Self) {
       
-      @scala.inline
-      def setAuth(value: FirebaseAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: FirebaseAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     }
   }
 }

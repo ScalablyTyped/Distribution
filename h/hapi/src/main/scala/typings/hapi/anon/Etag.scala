@@ -14,31 +14,23 @@ trait Etag extends StObject {
 }
 object Etag {
   
-  @scala.inline
-  def apply(): Etag = {
+  inline def apply(): Etag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Etag]
   }
   
-  @scala.inline
-  implicit class EtagMutableBuilder[Self <: Etag] (val x: Self) extends AnyVal {
+  extension [Self <: Etag](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+    inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
-    @scala.inline
-    def setVary(value: Boolean): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
+    inline def setVary(value: Boolean): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaryUndefined: Self = StObject.set(x, "vary", js.undefined)
+    inline def setVaryUndefined: Self = StObject.set(x, "vary", js.undefined)
   }
 }

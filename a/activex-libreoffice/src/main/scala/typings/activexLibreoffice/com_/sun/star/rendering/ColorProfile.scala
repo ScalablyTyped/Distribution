@@ -10,16 +10,13 @@ trait ColorProfile extends StObject {
 }
 object ColorProfile {
   
-  @scala.inline
-  def apply(dummy: Double): ColorProfile = {
+  inline def apply(dummy: Double): ColorProfile = {
     val __obj = js.Dynamic.literal(dummy = dummy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorProfile]
   }
   
-  @scala.inline
-  implicit class ColorProfileMutableBuilder[Self <: ColorProfile] (val x: Self) extends AnyVal {
+  extension [Self <: ColorProfile](x: Self) {
     
-    @scala.inline
-    def setDummy(value: Double): Self = StObject.set(x, "dummy", value.asInstanceOf[js.Any])
+    inline def setDummy(value: Double): Self = StObject.set(x, "dummy", value.asInstanceOf[js.Any])
   }
 }

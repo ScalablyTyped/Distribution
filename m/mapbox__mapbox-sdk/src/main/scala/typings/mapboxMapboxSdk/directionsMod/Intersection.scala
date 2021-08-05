@@ -51,8 +51,7 @@ trait Intersection extends StObject {
 }
 object Intersection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bearings: js.Array[Double],
     entry: js.Array[Boolean],
     lanes: js.Array[Lane],
@@ -62,52 +61,36 @@ object Intersection {
     __obj.asInstanceOf[Intersection]
   }
   
-  @scala.inline
-  implicit class IntersectionMutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
+  extension [Self <: Intersection](x: Self) {
     
-    @scala.inline
-    def setBearings(value: js.Array[Double]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
+    inline def setBearings(value: js.Array[Double]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearingsVarargs(value: Double*): Self = StObject.set(x, "bearings", js.Array(value :_*))
+    inline def setBearingsVarargs(value: Double*): Self = StObject.set(x, "bearings", js.Array(value :_*))
     
-    @scala.inline
-    def setClasses(value: js.Array[DirectionsClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Array[DirectionsClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setClassesVarargs(value: DirectionsClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: DirectionsClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
-    @scala.inline
-    def setEntry(value: js.Array[Boolean]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: js.Array[Boolean]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryVarargs(value: Boolean*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: Boolean*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
-    @scala.inline
-    def setIn(value: Double): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: Double): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+    inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
-    @scala.inline
-    def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
+    inline def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
+    inline def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setOut(value: Double): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+    inline def setOut(value: Double): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
+    inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
   }
 }

@@ -9386,8 +9386,7 @@ trait Rules
 }
 object Rules {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abbr_close: (/* tokens */ js.Array[AbbrCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String,
     abbr_open: (/* tokens */ js.Array[AbbrOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String,
     blockquote_close: (/* tokens */ js.Array[BlockquoteCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String,
@@ -9456,319 +9455,255 @@ object Rules {
     __obj.asInstanceOf[Rules]
   }
   
-  @scala.inline
-  implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+  extension [Self <: Rules](x: Self) {
     
-    @scala.inline
-    def setAbbr_close(
+    inline def setAbbr_close(
       value: (/* tokens */ js.Array[AbbrCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "abbr_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAbbr_open(
+    inline def setAbbr_open(
       value: (/* tokens */ js.Array[AbbrOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "abbr_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setBlockquote_close(
+    inline def setBlockquote_close(
       value: (/* tokens */ js.Array[BlockquoteCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "blockquote_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setBlockquote_open(
+    inline def setBlockquote_open(
       value: (/* tokens */ js.Array[BlockquoteOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "blockquote_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setBullet_list_close(
+    inline def setBullet_list_close(
       value: (/* tokens */ js.Array[BulletListCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "bullet_list_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setBullet_list_open(
+    inline def setBullet_list_open(
       value: (/* tokens */ js.Array[BulletListOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "bullet_list_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setCode(
+    inline def setCode(
       value: (/* tokens */ js.Array[CodeToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "code", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDd_close(
+    inline def setDd_close(
       value: (/* tokens */ js.Array[DdCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "dd_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDd_open(
+    inline def setDd_open(
       value: (/* tokens */ js.Array[DdOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "dd_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDel_close(
+    inline def setDel_close(
       value: (/* tokens */ js.Array[DelCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "del_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDel_open(
+    inline def setDel_open(
       value: (/* tokens */ js.Array[DelOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "del_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDl_close(
+    inline def setDl_close(
       value: (/* tokens */ js.Array[DlCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "dl_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDl_open(
+    inline def setDl_open(
       value: (/* tokens */ js.Array[DlOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "dl_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDt_close(
+    inline def setDt_close(
       value: (/* tokens */ js.Array[DtCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "dt_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setDt_open(
+    inline def setDt_open(
       value: (/* tokens */ js.Array[DtOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "dt_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setEm_close(
+    inline def setEm_close(
       value: (/* tokens */ js.Array[EmCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "em_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setEm_open(
+    inline def setEm_open(
       value: (/* tokens */ js.Array[EmOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "em_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFence(
+    inline def setFence(
       value: (/* tokens */ js.Array[FenceToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "fence", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFence_custom(value: StringDictionary[Rule[FenceToken, String]]): Self = StObject.set(x, "fence_custom", value.asInstanceOf[js.Any])
+    inline def setFence_custom(value: StringDictionary[Rule[FenceToken, String]]): Self = StObject.set(x, "fence_custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnote_anchor(
+    inline def setFootnote_anchor(
       value: (/* tokens */ js.Array[FootnoteAnchorToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "footnote_anchor", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFootnote_block_close(
+    inline def setFootnote_block_close(
       value: (/* tokens */ js.Array[FootnoteBlockCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "footnote_block_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFootnote_block_open(
+    inline def setFootnote_block_open(
       value: (/* tokens */ js.Array[FootnoteBlockOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "footnote_block_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFootnote_close(
+    inline def setFootnote_close(
       value: (/* tokens */ js.Array[FootnoteCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "footnote_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFootnote_open(
+    inline def setFootnote_open(
       value: (/* tokens */ js.Array[FootnoteOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "footnote_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFootnote_ref(
+    inline def setFootnote_ref(
       value: (/* tokens */ js.Array[FootnoteInlineToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "footnote_ref", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetBreak(
+    inline def setGetBreak(
       value: (/* tokens */ js.Array[ContentToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => _empty | Linefeed
     ): Self = StObject.set(x, "getBreak", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setHardbreak(
+    inline def setHardbreak(
       value: (/* tokens */ js.Array[HardbreakToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "hardbreak", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setHeading_close(
+    inline def setHeading_close(
       value: (/* tokens */ js.Array[HeadingCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "heading_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setHeading_open(
+    inline def setHeading_open(
       value: (/* tokens */ js.Array[HeadingOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "heading_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setHr(
+    inline def setHr(
       value: (/* tokens */ js.Array[HrToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "hr", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setHtmlblock(
+    inline def setHtmlblock(
       value: (/* tokens */ js.Array[HtmlBlockToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "htmlblock", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setHtmltag(
+    inline def setHtmltag(
       value: (/* tokens */ js.Array[HtmlTagToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "htmltag", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setImage(
+    inline def setImage(
       value: (/* tokens */ js.Array[ImageToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "image", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setIns_close(
+    inline def setIns_close(
       value: (/* tokens */ js.Array[InsCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "ins_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setIns_open(
+    inline def setIns_open(
       value: (/* tokens */ js.Array[InsOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "ins_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setLink_close(
+    inline def setLink_close(
       value: (/* tokens */ js.Array[LinkCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "link_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setLink_open(
+    inline def setLink_open(
       value: (/* tokens */ js.Array[LinkOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "link_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setList_item_close(
+    inline def setList_item_close(
       value: (/* tokens */ js.Array[ListItemCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "list_item_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setList_item_open(
+    inline def setList_item_open(
       value: (/* tokens */ js.Array[ListItemOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "list_item_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setMark_close(
+    inline def setMark_close(
       value: (/* tokens */ js.Array[MarkCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "mark_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setMark_open(
+    inline def setMark_open(
       value: (/* tokens */ js.Array[MarkOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "mark_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setOrdered_list_close(
+    inline def setOrdered_list_close(
       value: (/* tokens */ js.Array[OrderedListCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "ordered_list_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setOrdered_list_open(
+    inline def setOrdered_list_open(
       value: (/* tokens */ js.Array[OrderedListOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "ordered_list_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setParagraph_close(
+    inline def setParagraph_close(
       value: (/* tokens */ js.Array[ParagraphCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "paragraph_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setParagraph_open(
+    inline def setParagraph_open(
       value: (/* tokens */ js.Array[ParagraphOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "paragraph_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSoftbreak(
+    inline def setSoftbreak(
       value: (/* tokens */ js.Array[SoftbreakToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "softbreak", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setStrong_close(
+    inline def setStrong_close(
       value: (/* tokens */ js.Array[StrongCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "strong_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setStrong_open(
+    inline def setStrong_open(
       value: (/* tokens */ js.Array[StrongOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "strong_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSub(
+    inline def setSub(
       value: (/* tokens */ js.Array[SubToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "sub", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSup(
+    inline def setSup(
       value: (/* tokens */ js.Array[SupToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "sup", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTable_close(
+    inline def setTable_close(
       value: (/* tokens */ js.Array[TableCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "table_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTable_open(
+    inline def setTable_open(
       value: (/* tokens */ js.Array[TableOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "table_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTbody_close(
+    inline def setTbody_close(
       value: (/* tokens */ js.Array[TBodyCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "tbody_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTbody_open(
+    inline def setTbody_open(
       value: (/* tokens */ js.Array[TBodyOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "tbody_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTd_close(
+    inline def setTd_close(
       value: (/* tokens */ js.Array[TDCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "td_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTd_open(
+    inline def setTd_open(
       value: (/* tokens */ js.Array[TDOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "td_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setText(
+    inline def setText(
       value: (/* tokens */ js.Array[TextToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "text", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTh_close(
+    inline def setTh_close(
       value: (/* tokens */ js.Array[THCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "th_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTh_open(
+    inline def setTh_open(
       value: (/* tokens */ js.Array[THOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "th_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setThead_close(
+    inline def setThead_close(
       value: (/* tokens */ js.Array[THeadCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "thead_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setThead_open(
+    inline def setThead_open(
       value: (/* tokens */ js.Array[THeadOpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "thead_open", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTr_close(
+    inline def setTr_close(
       value: (/* tokens */ js.Array[TRCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "tr_close", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTr_open(
+    inline def setTr_open(
       value: (/* tokens */ js.Array[TROpenToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String
     ): Self = StObject.set(x, "tr_open", js.Any.fromFunction5(value))
   }

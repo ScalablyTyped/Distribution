@@ -30,25 +30,19 @@ trait SchemaAttributes extends StObject {
 }
 object SchemaAttributes {
   
-  @scala.inline
-  def apply(): SchemaAttributes = {
+  inline def apply(): SchemaAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttributes]
   }
   
-  @scala.inline
-  implicit class SchemaAttributesMutableBuilder[Self <: SchemaAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttributes](x: Self) {
     
-    @scala.inline
-    def setAttributeMap(value: StringDictionary[SchemaAttributeValue]): Self = StObject.set(x, "attributeMap", value.asInstanceOf[js.Any])
+    inline def setAttributeMap(value: StringDictionary[SchemaAttributeValue]): Self = StObject.set(x, "attributeMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeMapUndefined: Self = StObject.set(x, "attributeMap", js.undefined)
+    inline def setAttributeMapUndefined: Self = StObject.set(x, "attributeMap", js.undefined)
     
-    @scala.inline
-    def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
+    inline def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedAttributesCountUndefined: Self = StObject.set(x, "droppedAttributesCount", js.undefined)
+    inline def setDroppedAttributesCountUndefined: Self = StObject.set(x, "droppedAttributesCount", js.undefined)
   }
 }

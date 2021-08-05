@@ -18,22 +18,17 @@ trait PlacementGroupConfig extends StObject {
 }
 object PlacementGroupConfig {
   
-  @scala.inline
-  def apply(InstanceRole: InstanceRoleType): PlacementGroupConfig = {
+  inline def apply(InstanceRole: InstanceRoleType): PlacementGroupConfig = {
     val __obj = js.Dynamic.literal(InstanceRole = InstanceRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementGroupConfig]
   }
   
-  @scala.inline
-  implicit class PlacementGroupConfigMutableBuilder[Self <: PlacementGroupConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementGroupConfig](x: Self) {
     
-    @scala.inline
-    def setInstanceRole(value: InstanceRoleType): Self = StObject.set(x, "InstanceRole", value.asInstanceOf[js.Any])
+    inline def setInstanceRole(value: InstanceRoleType): Self = StObject.set(x, "InstanceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementStrategy(value: PlacementGroupStrategy): Self = StObject.set(x, "PlacementStrategy", value.asInstanceOf[js.Any])
+    inline def setPlacementStrategy(value: PlacementGroupStrategy): Self = StObject.set(x, "PlacementStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementStrategyUndefined: Self = StObject.set(x, "PlacementStrategy", js.undefined)
+    inline def setPlacementStrategyUndefined: Self = StObject.set(x, "PlacementStrategy", js.undefined)
   }
 }

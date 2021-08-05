@@ -15,17 +15,14 @@ trait ColumnAggFuncChangeRequestEvent
 }
 object ColumnAggFuncChangeRequestEvent {
   
-  @scala.inline
-  def apply(aggFunc: js.Any, api: GridApi, columnApi: ColumnApi, columns: js.Array[Column], `type`: String): ColumnAggFuncChangeRequestEvent = {
+  inline def apply(aggFunc: js.Any, api: GridApi, columnApi: ColumnApi, columns: js.Array[Column], `type`: String): ColumnAggFuncChangeRequestEvent = {
     val __obj = js.Dynamic.literal(aggFunc = aggFunc.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnAggFuncChangeRequestEvent]
   }
   
-  @scala.inline
-  implicit class ColumnAggFuncChangeRequestEventMutableBuilder[Self <: ColumnAggFuncChangeRequestEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnAggFuncChangeRequestEvent](x: Self) {
     
-    @scala.inline
-    def setAggFunc(value: js.Any): Self = StObject.set(x, "aggFunc", value.asInstanceOf[js.Any])
+    inline def setAggFunc(value: js.Any): Self = StObject.set(x, "aggFunc", value.asInstanceOf[js.Any])
   }
 }

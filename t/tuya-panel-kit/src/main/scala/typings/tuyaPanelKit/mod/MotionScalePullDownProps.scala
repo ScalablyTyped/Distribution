@@ -14,25 +14,19 @@ trait MotionScalePullDownProps
 }
 object MotionScalePullDownProps {
   
-  @scala.inline
-  def apply(): MotionScalePullDownProps = {
+  inline def apply(): MotionScalePullDownProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionScalePullDownProps]
   }
   
-  @scala.inline
-  implicit class MotionScalePullDownPropsMutableBuilder[Self <: MotionScalePullDownProps] (val x: Self) extends AnyVal {
+  extension [Self <: MotionScalePullDownProps](x: Self) {
     
-    @scala.inline
-    def setInitScale(value: Double): Self = StObject.set(x, "initScale", value.asInstanceOf[js.Any])
+    inline def setInitScale(value: Double): Self = StObject.set(x, "initScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitScaleUndefined: Self = StObject.set(x, "initScale", js.undefined)
+    inline def setInitScaleUndefined: Self = StObject.set(x, "initScale", js.undefined)
     
-    @scala.inline
-    def setIsAlign(value: Boolean): Self = StObject.set(x, "isAlign", value.asInstanceOf[js.Any])
+    inline def setIsAlign(value: Boolean): Self = StObject.set(x, "isAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAlignUndefined: Self = StObject.set(x, "isAlign", js.undefined)
+    inline def setIsAlignUndefined: Self = StObject.set(x, "isAlign", js.undefined)
   }
 }

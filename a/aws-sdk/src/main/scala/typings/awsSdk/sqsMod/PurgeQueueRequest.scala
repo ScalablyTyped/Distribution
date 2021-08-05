@@ -13,16 +13,13 @@ trait PurgeQueueRequest extends StObject {
 }
 object PurgeQueueRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String): PurgeQueueRequest = {
+  inline def apply(QueueUrl: String): PurgeQueueRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurgeQueueRequest]
   }
   
-  @scala.inline
-  implicit class PurgeQueueRequestMutableBuilder[Self <: PurgeQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurgeQueueRequest](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

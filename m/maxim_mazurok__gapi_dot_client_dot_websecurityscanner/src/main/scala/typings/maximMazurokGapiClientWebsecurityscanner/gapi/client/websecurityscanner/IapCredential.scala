@@ -11,19 +11,15 @@ trait IapCredential extends StObject {
 }
 object IapCredential {
   
-  @scala.inline
-  def apply(): IapCredential = {
+  inline def apply(): IapCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IapCredential]
   }
   
-  @scala.inline
-  implicit class IapCredentialMutableBuilder[Self <: IapCredential] (val x: Self) extends AnyVal {
+  extension [Self <: IapCredential](x: Self) {
     
-    @scala.inline
-    def setIapTestServiceAccountInfo(value: IapTestServiceAccountInfo): Self = StObject.set(x, "iapTestServiceAccountInfo", value.asInstanceOf[js.Any])
+    inline def setIapTestServiceAccountInfo(value: IapTestServiceAccountInfo): Self = StObject.set(x, "iapTestServiceAccountInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIapTestServiceAccountInfoUndefined: Self = StObject.set(x, "iapTestServiceAccountInfo", js.undefined)
+    inline def setIapTestServiceAccountInfoUndefined: Self = StObject.set(x, "iapTestServiceAccountInfo", js.undefined)
   }
 }

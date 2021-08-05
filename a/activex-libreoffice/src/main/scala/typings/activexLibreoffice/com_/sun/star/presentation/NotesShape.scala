@@ -18,8 +18,7 @@ trait NotesShape
      with TextShape
 object NotesShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

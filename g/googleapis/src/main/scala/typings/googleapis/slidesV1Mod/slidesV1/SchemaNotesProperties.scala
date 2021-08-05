@@ -22,19 +22,15 @@ trait SchemaNotesProperties extends StObject {
 }
 object SchemaNotesProperties {
   
-  @scala.inline
-  def apply(): SchemaNotesProperties = {
+  inline def apply(): SchemaNotesProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotesProperties]
   }
   
-  @scala.inline
-  implicit class SchemaNotesPropertiesMutableBuilder[Self <: SchemaNotesProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotesProperties](x: Self) {
     
-    @scala.inline
-    def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
+    inline def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeakerNotesObjectIdUndefined: Self = StObject.set(x, "speakerNotesObjectId", js.undefined)
+    inline def setSpeakerNotesObjectIdUndefined: Self = StObject.set(x, "speakerNotesObjectId", js.undefined)
   }
 }

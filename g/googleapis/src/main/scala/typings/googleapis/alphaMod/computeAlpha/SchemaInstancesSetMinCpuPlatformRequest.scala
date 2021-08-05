@@ -13,19 +13,15 @@ trait SchemaInstancesSetMinCpuPlatformRequest extends StObject {
 }
 object SchemaInstancesSetMinCpuPlatformRequest {
   
-  @scala.inline
-  def apply(): SchemaInstancesSetMinCpuPlatformRequest = {
+  inline def apply(): SchemaInstancesSetMinCpuPlatformRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstancesSetMinCpuPlatformRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstancesSetMinCpuPlatformRequestMutableBuilder[Self <: SchemaInstancesSetMinCpuPlatformRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstancesSetMinCpuPlatformRequest](x: Self) {
     
-    @scala.inline
-    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
+    inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
+    inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
   }
 }

@@ -63,19 +63,16 @@ object mod {
   }
   object DSProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any
     ): DSProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[DSProvider]
     }
     
-    @scala.inline
-    implicit class DSProviderMutableBuilder[Self <: DSProvider] (val x: Self) extends AnyVal {
+    extension [Self <: DSProvider](x: Self) {
       
-      @scala.inline
-      def setDefaults(
+      inline def setDefaults(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any
       ): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

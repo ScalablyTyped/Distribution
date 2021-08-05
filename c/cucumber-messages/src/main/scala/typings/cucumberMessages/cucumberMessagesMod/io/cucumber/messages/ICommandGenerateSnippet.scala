@@ -18,43 +18,31 @@ trait ICommandGenerateSnippet extends StObject {
 }
 object ICommandGenerateSnippet {
   
-  @scala.inline
-  def apply(): ICommandGenerateSnippet = {
+  inline def apply(): ICommandGenerateSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICommandGenerateSnippet]
   }
   
-  @scala.inline
-  implicit class ICommandGenerateSnippetMutableBuilder[Self <: ICommandGenerateSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: ICommandGenerateSnippet](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdNull: Self = StObject.set(x, "actionId", null)
+    inline def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setGeneratedExpressions(value: js.Array[IGeneratedExpression]): Self = StObject.set(x, "generatedExpressions", value.asInstanceOf[js.Any])
+    inline def setGeneratedExpressions(value: js.Array[IGeneratedExpression]): Self = StObject.set(x, "generatedExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratedExpressionsNull: Self = StObject.set(x, "generatedExpressions", null)
+    inline def setGeneratedExpressionsNull: Self = StObject.set(x, "generatedExpressions", null)
     
-    @scala.inline
-    def setGeneratedExpressionsUndefined: Self = StObject.set(x, "generatedExpressions", js.undefined)
+    inline def setGeneratedExpressionsUndefined: Self = StObject.set(x, "generatedExpressions", js.undefined)
     
-    @scala.inline
-    def setGeneratedExpressionsVarargs(value: IGeneratedExpression*): Self = StObject.set(x, "generatedExpressions", js.Array(value :_*))
+    inline def setGeneratedExpressionsVarargs(value: IGeneratedExpression*): Self = StObject.set(x, "generatedExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setPickleStepArgument(value: IPickleStepArgument): Self = StObject.set(x, "pickleStepArgument", value.asInstanceOf[js.Any])
+    inline def setPickleStepArgument(value: IPickleStepArgument): Self = StObject.set(x, "pickleStepArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleStepArgumentNull: Self = StObject.set(x, "pickleStepArgument", null)
+    inline def setPickleStepArgumentNull: Self = StObject.set(x, "pickleStepArgument", null)
     
-    @scala.inline
-    def setPickleStepArgumentUndefined: Self = StObject.set(x, "pickleStepArgument", js.undefined)
+    inline def setPickleStepArgumentUndefined: Self = StObject.set(x, "pickleStepArgument", js.undefined)
   }
 }

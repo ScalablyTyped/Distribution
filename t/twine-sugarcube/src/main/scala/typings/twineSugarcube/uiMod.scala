@@ -269,26 +269,20 @@ object uiMod {
   }
   object DialogOptions {
     
-    @scala.inline
-    def apply(): DialogOptions = {
+    inline def apply(): DialogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogOptions]
     }
     
-    @scala.inline
-    implicit class DialogOptionsMutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DialogOptions](x: Self) {
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -392,17 +386,14 @@ object uiMod {
   }
   object FullscreenRequestOptions {
     
-    @scala.inline
-    def apply(navigationUI: auto | hide | show): FullscreenRequestOptions = {
+    inline def apply(navigationUI: auto | hide | show): FullscreenRequestOptions = {
       val __obj = js.Dynamic.literal(navigationUI = navigationUI.asInstanceOf[js.Any])
       __obj.asInstanceOf[FullscreenRequestOptions]
     }
     
-    @scala.inline
-    implicit class FullscreenRequestOptionsMutableBuilder[Self <: FullscreenRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FullscreenRequestOptions](x: Self) {
       
-      @scala.inline
-      def setNavigationUI(value: auto | hide | show): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
+      inline def setNavigationUI(value: auto | hide | show): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -427,20 +418,16 @@ object uiMod {
   }
   object LoadScreenAPI {
     
-    @scala.inline
-    def apply(lock: () => Double, unlock: Double => Unit): LoadScreenAPI = {
+    inline def apply(lock: () => Double, unlock: Double => Unit): LoadScreenAPI = {
       val __obj = js.Dynamic.literal(lock = js.Any.fromFunction0(lock), unlock = js.Any.fromFunction1(unlock))
       __obj.asInstanceOf[LoadScreenAPI]
     }
     
-    @scala.inline
-    implicit class LoadScreenAPIMutableBuilder[Self <: LoadScreenAPI] (val x: Self) extends AnyVal {
+    extension [Self <: LoadScreenAPI](x: Self) {
       
-      @scala.inline
-      def setLock(value: () => Double): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
+      inline def setLock(value: () => Double): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnlock(value: Double => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction1(value))
+      inline def setUnlock(value: Double => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction1(value))
     }
   }
   

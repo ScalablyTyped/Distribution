@@ -16,31 +16,23 @@ trait TableProgress extends StObject {
 }
 object TableProgress {
   
-  @scala.inline
-  def apply(): TableProgress = {
+  inline def apply(): TableProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableProgress]
   }
   
-  @scala.inline
-  implicit class TableProgressMutableBuilder[Self <: TableProgress] (val x: Self) extends AnyVal {
+  extension [Self <: TableProgress](x: Self) {
     
-    @scala.inline
-    def setEstimatedCopiedBytes(value: String): Self = StObject.set(x, "estimatedCopiedBytes", value.asInstanceOf[js.Any])
+    inline def setEstimatedCopiedBytes(value: String): Self = StObject.set(x, "estimatedCopiedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedCopiedBytesUndefined: Self = StObject.set(x, "estimatedCopiedBytes", js.undefined)
+    inline def setEstimatedCopiedBytesUndefined: Self = StObject.set(x, "estimatedCopiedBytes", js.undefined)
     
-    @scala.inline
-    def setEstimatedSizeBytes(value: String): Self = StObject.set(x, "estimatedSizeBytes", value.asInstanceOf[js.Any])
+    inline def setEstimatedSizeBytes(value: String): Self = StObject.set(x, "estimatedSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedSizeBytesUndefined: Self = StObject.set(x, "estimatedSizeBytes", js.undefined)
+    inline def setEstimatedSizeBytesUndefined: Self = StObject.set(x, "estimatedSizeBytes", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ object mod {
   // ]
   ```
   */
-  @scala.inline
-  def apply(regexp: RegExp, string: String): js.Array[Match] = (^.asInstanceOf[js.Dynamic].apply(regexp.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
+  inline def apply(regexp: RegExp, string: String): js.Array[Match] = (^.asInstanceOf[js.Dynamic].apply(regexp.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
   
   @JSImport("execall", JSImport.Namespace)
   @js.native
@@ -46,27 +45,21 @@ object mod {
   }
   object Match {
     
-    @scala.inline
-    def apply(index: Double, `match`: String, subMatches: js.Array[String]): Match = {
+    inline def apply(index: Double, `match`: String, subMatches: js.Array[String]): Match = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], subMatches = subMatches.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match]
     }
     
-    @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+    extension [Self <: Match](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubMatches(value: js.Array[String]): Self = StObject.set(x, "subMatches", value.asInstanceOf[js.Any])
+      inline def setSubMatches(value: js.Array[String]): Self = StObject.set(x, "subMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubMatchesVarargs(value: String*): Self = StObject.set(x, "subMatches", js.Array(value :_*))
+      inline def setSubMatchesVarargs(value: String*): Self = StObject.set(x, "subMatches", js.Array(value :_*))
     }
   }
 }

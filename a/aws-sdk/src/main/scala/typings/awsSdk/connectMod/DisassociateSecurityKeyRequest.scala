@@ -18,19 +18,15 @@ trait DisassociateSecurityKeyRequest extends StObject {
 }
 object DisassociateSecurityKeyRequest {
   
-  @scala.inline
-  def apply(AssociationId: AssociationId, InstanceId: InstanceId): DisassociateSecurityKeyRequest = {
+  inline def apply(AssociationId: AssociationId, InstanceId: InstanceId): DisassociateSecurityKeyRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateSecurityKeyRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateSecurityKeyRequestMutableBuilder[Self <: DisassociateSecurityKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateSecurityKeyRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

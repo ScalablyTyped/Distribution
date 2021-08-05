@@ -11,16 +11,13 @@ trait ChChart extends StObject {
 }
 object ChChart {
   
-  @scala.inline
-  def apply(Ch: Chart): ChChart = {
+  inline def apply(Ch: Chart): ChChart = {
     val __obj = js.Dynamic.literal(Ch = Ch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChChart]
   }
   
-  @scala.inline
-  implicit class ChChartMutableBuilder[Self <: ChChart] (val x: Self) extends AnyVal {
+  extension [Self <: ChChart](x: Self) {
     
-    @scala.inline
-    def setCh(value: Chart): Self = StObject.set(x, "Ch", value.asInstanceOf[js.Any])
+    inline def setCh(value: Chart): Self = StObject.set(x, "Ch", value.asInstanceOf[js.Any])
   }
 }

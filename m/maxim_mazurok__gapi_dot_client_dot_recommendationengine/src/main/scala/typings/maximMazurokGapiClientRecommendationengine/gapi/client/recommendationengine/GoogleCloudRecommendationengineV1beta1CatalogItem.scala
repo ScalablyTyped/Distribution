@@ -54,73 +54,51 @@ trait GoogleCloudRecommendationengineV1beta1CatalogItem extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1CatalogItem {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1CatalogItem = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1CatalogItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1CatalogItem]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1CatalogItemMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1CatalogItem] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1CatalogItem](x: Self) {
     
-    @scala.inline
-    def setCategoryHierarchies(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]): Self = StObject.set(x, "categoryHierarchies", value.asInstanceOf[js.Any])
+    inline def setCategoryHierarchies(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]): Self = StObject.set(x, "categoryHierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryHierarchiesUndefined: Self = StObject.set(x, "categoryHierarchies", js.undefined)
+    inline def setCategoryHierarchiesUndefined: Self = StObject.set(x, "categoryHierarchies", js.undefined)
     
-    @scala.inline
-    def setCategoryHierarchiesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = StObject.set(x, "categoryHierarchies", js.Array(value :_*))
+    inline def setCategoryHierarchiesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = StObject.set(x, "categoryHierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItemAttributes(value: GoogleCloudRecommendationengineV1beta1FeatureMap): Self = StObject.set(x, "itemAttributes", value.asInstanceOf[js.Any])
+    inline def setItemAttributes(value: GoogleCloudRecommendationengineV1beta1FeatureMap): Self = StObject.set(x, "itemAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemAttributesUndefined: Self = StObject.set(x, "itemAttributes", js.undefined)
+    inline def setItemAttributesUndefined: Self = StObject.set(x, "itemAttributes", js.undefined)
     
-    @scala.inline
-    def setItemGroupId(value: String): Self = StObject.set(x, "itemGroupId", value.asInstanceOf[js.Any])
+    inline def setItemGroupId(value: String): Self = StObject.set(x, "itemGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemGroupIdUndefined: Self = StObject.set(x, "itemGroupId", js.undefined)
+    inline def setItemGroupIdUndefined: Self = StObject.set(x, "itemGroupId", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setProductMetadata(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItem): Self = StObject.set(x, "productMetadata", value.asInstanceOf[js.Any])
+    inline def setProductMetadata(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItem): Self = StObject.set(x, "productMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductMetadataUndefined: Self = StObject.set(x, "productMetadata", js.undefined)
+    inline def setProductMetadataUndefined: Self = StObject.set(x, "productMetadata", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

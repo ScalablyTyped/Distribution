@@ -99,6 +99,5 @@ class StructurePowerBank protected ()
 }
 object StructurePowerBank {
   
-  @scala.inline
-  def apply: StructurePowerBankConstructor = js.Dynamic.global.selectDynamic("StructurePowerBank").asInstanceOf[StructurePowerBankConstructor]
+  inline def apply: StructurePowerBankConstructor = js.Dynamic.global.selectDynamic("StructurePowerBank").asInstanceOf[StructurePowerBankConstructor]
 }

@@ -12,8 +12,7 @@ trait IgtvBrowseFeedResponseImageVersions2 extends StObject {
 }
 object IgtvBrowseFeedResponseImageVersions2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additional_candidates: IgtvBrowseFeedResponseAdditionalCandidates,
     candidates: js.Array[IgtvBrowseFeedResponseCandidatesItem]
   ): IgtvBrowseFeedResponseImageVersions2 = {
@@ -21,16 +20,12 @@ object IgtvBrowseFeedResponseImageVersions2 {
     __obj.asInstanceOf[IgtvBrowseFeedResponseImageVersions2]
   }
   
-  @scala.inline
-  implicit class IgtvBrowseFeedResponseImageVersions2MutableBuilder[Self <: IgtvBrowseFeedResponseImageVersions2] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvBrowseFeedResponseImageVersions2](x: Self) {
     
-    @scala.inline
-    def setAdditional_candidates(value: IgtvBrowseFeedResponseAdditionalCandidates): Self = StObject.set(x, "additional_candidates", value.asInstanceOf[js.Any])
+    inline def setAdditional_candidates(value: IgtvBrowseFeedResponseAdditionalCandidates): Self = StObject.set(x, "additional_candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidates(value: js.Array[IgtvBrowseFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[IgtvBrowseFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: IgtvBrowseFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: IgtvBrowseFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
   }
 }

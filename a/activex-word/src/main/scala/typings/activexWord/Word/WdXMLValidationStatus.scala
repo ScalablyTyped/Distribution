@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdXMLValidationStatus extends StObject
 object WdXMLValidationStatus {
   
-  @scala.inline
-  def wdXMLValidationStatusCustom: `-1072898048` = -1072898048.asInstanceOf[`-1072898048`]
+  inline def wdXMLValidationStatusCustom: `-1072898048` = -1072898048.asInstanceOf[`-1072898048`]
   
-  @scala.inline
-  def wdXMLValidationStatusOK: `0` = 0.asInstanceOf[`0`]
+  inline def wdXMLValidationStatusOK: `0` = 0.asInstanceOf[`0`]
 }

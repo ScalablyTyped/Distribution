@@ -47,44 +47,32 @@ object mod extends Shortcut {
   }
   object DjvConfig {
     
-    @scala.inline
-    def apply(): DjvConfig = {
+    inline def apply(): DjvConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DjvConfig]
     }
     
-    @scala.inline
-    implicit class DjvConfigMutableBuilder[Self <: DjvConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DjvConfig](x: Self) {
       
-      @scala.inline
-      def setErrorHandler(value: () => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction0(value))
+      inline def setErrorHandler(value: () => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setFormats(value: Record[String, js.Function1[/* repeated */ String, String]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Record[String, js.Function1[/* repeated */ String, String]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setInner(value: Boolean): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
+      inline def setInner(value: Boolean): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
+      inline def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionConfigure(value: /* object */ js.Object => Unit): Self = StObject.set(x, "versionConfigure", js.Any.fromFunction1(value))
+      inline def setVersionConfigure(value: /* object */ js.Object => Unit): Self = StObject.set(x, "versionConfigure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVersionConfigureUndefined: Self = StObject.set(x, "versionConfigure", js.undefined)
+      inline def setVersionConfigureUndefined: Self = StObject.set(x, "versionConfigure", js.undefined)
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -108,20 +96,16 @@ object mod extends Shortcut {
   }
   object Resolved {
     
-    @scala.inline
-    def apply(fn: /* repeated */ js.Any => js.Any, schema: js.Object): Resolved = {
+    inline def apply(fn: /* repeated */ js.Any => js.Any, schema: js.Object): Resolved = {
       val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn), schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resolved]
     }
     
-    @scala.inline
-    implicit class ResolvedMutableBuilder[Self <: Resolved] (val x: Self) extends AnyVal {
+    extension [Self <: Resolved](x: Self) {
       
-      @scala.inline
-      def setFn(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      inline def setFn(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   

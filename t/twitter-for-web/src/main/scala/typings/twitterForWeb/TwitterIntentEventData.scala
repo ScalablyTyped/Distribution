@@ -31,37 +31,27 @@ trait TwitterIntentEventData extends StObject {
 }
 object TwitterIntentEventData {
   
-  @scala.inline
-  def apply(): TwitterIntentEventData = {
+  inline def apply(): TwitterIntentEventData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TwitterIntentEventData]
   }
   
-  @scala.inline
-  implicit class TwitterIntentEventDataMutableBuilder[Self <: TwitterIntentEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterIntentEventData](x: Self) {
     
-    @scala.inline
-    def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
+    inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen_nameUndefined: Self = StObject.set(x, "screen_name", js.undefined)
+    inline def setScreen_nameUndefined: Self = StObject.set(x, "screen_name", js.undefined)
     
-    @scala.inline
-    def setSource_tweet_id(value: String): Self = StObject.set(x, "source_tweet_id", value.asInstanceOf[js.Any])
+    inline def setSource_tweet_id(value: String): Self = StObject.set(x, "source_tweet_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_tweet_idUndefined: Self = StObject.set(x, "source_tweet_id", js.undefined)
+    inline def setSource_tweet_idUndefined: Self = StObject.set(x, "source_tweet_id", js.undefined)
     
-    @scala.inline
-    def setTweet_id(value: String): Self = StObject.set(x, "tweet_id", value.asInstanceOf[js.Any])
+    inline def setTweet_id(value: String): Self = StObject.set(x, "tweet_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTweet_idUndefined: Self = StObject.set(x, "tweet_id", js.undefined)
+    inline def setTweet_idUndefined: Self = StObject.set(x, "tweet_id", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

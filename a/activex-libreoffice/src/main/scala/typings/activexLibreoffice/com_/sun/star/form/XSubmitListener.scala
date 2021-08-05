@@ -27,8 +27,7 @@ trait XSubmitListener
 }
 object XSubmitListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveSubmit: EventObject => Boolean,
     disposing: EventObject => Unit,
@@ -39,10 +38,8 @@ object XSubmitListener {
     __obj.asInstanceOf[XSubmitListener]
   }
   
-  @scala.inline
-  implicit class XSubmitListenerMutableBuilder[Self <: XSubmitListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSubmitListener](x: Self) {
     
-    @scala.inline
-    def setApproveSubmit(value: EventObject => Boolean): Self = StObject.set(x, "approveSubmit", js.Any.fromFunction1(value))
+    inline def setApproveSubmit(value: EventObject => Boolean): Self = StObject.set(x, "approveSubmit", js.Any.fromFunction1(value))
   }
 }

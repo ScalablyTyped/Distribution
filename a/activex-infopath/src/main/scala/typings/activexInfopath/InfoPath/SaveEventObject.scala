@@ -8,7 +8,7 @@ trait SaveEventObject extends StObject {
   
   val FileName: String
   
-  @JSName("InfoPath.SaveEventObject_typekey")
+  /* private */ @JSName("InfoPath.SaveEventObject_typekey")
   var InfoPathDotSaveEventObject_typekey: SaveEventObject
   
   var IsCancelled: Boolean
@@ -23,8 +23,7 @@ trait SaveEventObject extends StObject {
 }
 object SaveEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FileName: String,
     InfoPathDotSaveEventObject_typekey: SaveEventObject,
     IsCancelled: Boolean,
@@ -38,28 +37,20 @@ object SaveEventObject {
     __obj.asInstanceOf[SaveEventObject]
   }
   
-  @scala.inline
-  implicit class SaveEventObjectMutableBuilder[Self <: SaveEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: SaveEventObject](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotSaveEventObject_typekey(value: SaveEventObject): Self = StObject.set(x, "InfoPath.SaveEventObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSaveEventObject_typekey(value: SaveEventObject): Self = StObject.set(x, "InfoPath.SaveEventObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCancelled(value: Boolean): Self = StObject.set(x, "IsCancelled", value.asInstanceOf[js.Any])
+    inline def setIsCancelled(value: Boolean): Self = StObject.set(x, "IsCancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSaveAs(value: Boolean): Self = StObject.set(x, "IsSaveAs", value.asInstanceOf[js.Any])
+    inline def setIsSaveAs(value: Boolean): Self = StObject.set(x, "IsSaveAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformSaveOperation(value: () => Boolean): Self = StObject.set(x, "PerformSaveOperation", js.Any.fromFunction0(value))
+    inline def setPerformSaveOperation(value: () => Boolean): Self = StObject.set(x, "PerformSaveOperation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
+    inline def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

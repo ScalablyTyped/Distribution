@@ -15,6 +15,5 @@ object DomEventListenerMap {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.domEventListenerMapMod.DomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.domEventListenerMapMod.DomEventListenerMap]
+  inline def create(): typings.wonderJs.domEventListenerMapMod.DomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.domEventListenerMapMod.DomEventListenerMap]
 }

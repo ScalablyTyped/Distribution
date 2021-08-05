@@ -25,8 +25,7 @@ trait TypeofFieldValue extends StObject {
 }
 object TypeofFieldValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrayRemove: /* repeated */ AnyJs => FieldValue,
     arrayUnion: /* repeated */ AnyJs => FieldValue,
     delete: () => FieldValue,
@@ -37,22 +36,16 @@ object TypeofFieldValue {
     __obj.asInstanceOf[TypeofFieldValue]
   }
   
-  @scala.inline
-  implicit class TypeofFieldValueMutableBuilder[Self <: TypeofFieldValue] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofFieldValue](x: Self) {
     
-    @scala.inline
-    def setArrayRemove(value: /* repeated */ AnyJs => FieldValue): Self = StObject.set(x, "arrayRemove", js.Any.fromFunction1(value))
+    inline def setArrayRemove(value: /* repeated */ AnyJs => FieldValue): Self = StObject.set(x, "arrayRemove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArrayUnion(value: /* repeated */ AnyJs => FieldValue): Self = StObject.set(x, "arrayUnion", js.Any.fromFunction1(value))
+    inline def setArrayUnion(value: /* repeated */ AnyJs => FieldValue): Self = StObject.set(x, "arrayUnion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: () => FieldValue): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => FieldValue): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncrement(value: Double => FieldValue): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
+    inline def setIncrement(value: Double => FieldValue): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setServerTimestamp(value: () => FieldValue): Self = StObject.set(x, "serverTimestamp", js.Any.fromFunction0(value))
+    inline def setServerTimestamp(value: () => FieldValue): Self = StObject.set(x, "serverTimestamp", js.Any.fromFunction0(value))
   }
 }

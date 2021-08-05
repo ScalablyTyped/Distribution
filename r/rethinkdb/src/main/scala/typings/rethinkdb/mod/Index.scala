@@ -15,28 +15,21 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(index: String): Index = {
+  inline def apply(index: String): Index = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft_bound(value: String): Self = StObject.set(x, "left_bound", value.asInstanceOf[js.Any])
+    inline def setLeft_bound(value: String): Self = StObject.set(x, "left_bound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft_boundUndefined: Self = StObject.set(x, "left_bound", js.undefined)
+    inline def setLeft_boundUndefined: Self = StObject.set(x, "left_bound", js.undefined)
     
-    @scala.inline
-    def setRight_bound(value: String): Self = StObject.set(x, "right_bound", value.asInstanceOf[js.Any])
+    inline def setRight_bound(value: String): Self = StObject.set(x, "right_bound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight_boundUndefined: Self = StObject.set(x, "right_bound", js.undefined)
+    inline def setRight_boundUndefined: Self = StObject.set(x, "right_bound", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait SchemaJwtHeader extends StObject {
 }
 object SchemaJwtHeader {
   
-  @scala.inline
-  def apply(): SchemaJwtHeader = {
+  inline def apply(): SchemaJwtHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJwtHeader]
   }
   
-  @scala.inline
-  implicit class SchemaJwtHeaderMutableBuilder[Self <: SchemaJwtHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJwtHeader](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
+    inline def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
+    inline def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
   }
 }

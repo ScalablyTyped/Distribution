@@ -24,23 +24,18 @@ object thunkMod {
   }
   object ThunkData {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any], fn: () => VNode_): ThunkData = {
+    inline def apply(args: js.Array[js.Any], fn: () => VNode_): ThunkData = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], fn = js.Any.fromFunction0(fn))
       __obj.asInstanceOf[ThunkData]
     }
     
-    @scala.inline
-    implicit class ThunkDataMutableBuilder[Self <: ThunkData] (val x: Self) extends AnyVal {
+    extension [Self <: ThunkData](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setFn(value: () => VNode_): Self = StObject.set(x, "fn", js.Any.fromFunction0(value))
+      inline def setFn(value: () => VNode_): Self = StObject.set(x, "fn", js.Any.fromFunction0(value))
     }
   }
   
@@ -60,17 +55,14 @@ object thunkMod {
   }
   object Thunk_ {
     
-    @scala.inline
-    def apply(data: ThunkData): Thunk_ = {
+    inline def apply(data: ThunkData): Thunk_ = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Thunk_]
     }
     
-    @scala.inline
-    implicit class Thunk_MutableBuilder[Self <: Thunk_] (val x: Self) extends AnyVal {
+    extension [Self <: Thunk_](x: Self) {
       
-      @scala.inline
-      def setData(value: ThunkData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ThunkData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
 }

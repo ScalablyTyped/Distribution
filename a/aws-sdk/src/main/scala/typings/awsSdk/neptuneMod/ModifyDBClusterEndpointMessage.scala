@@ -28,40 +28,29 @@ trait ModifyDBClusterEndpointMessage extends StObject {
 }
 object ModifyDBClusterEndpointMessage {
   
-  @scala.inline
-  def apply(DBClusterEndpointIdentifier: String): ModifyDBClusterEndpointMessage = {
+  inline def apply(DBClusterEndpointIdentifier: String): ModifyDBClusterEndpointMessage = {
     val __obj = js.Dynamic.literal(DBClusterEndpointIdentifier = DBClusterEndpointIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBClusterEndpointMessage]
   }
   
-  @scala.inline
-  implicit class ModifyDBClusterEndpointMessageMutableBuilder[Self <: ModifyDBClusterEndpointMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyDBClusterEndpointMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointType(value: String): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: String): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
+    inline def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
-    @scala.inline
-    def setExcludedMembers(value: StringList): Self = StObject.set(x, "ExcludedMembers", value.asInstanceOf[js.Any])
+    inline def setExcludedMembers(value: StringList): Self = StObject.set(x, "ExcludedMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
+    inline def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
     
-    @scala.inline
-    def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
+    inline def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
+    inline def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
+    inline def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
     
-    @scala.inline
-    def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
+    inline def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
   }
 }

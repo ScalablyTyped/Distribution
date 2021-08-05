@@ -23,31 +23,23 @@ trait FileMatch extends StObject {
 }
 object FileMatch {
   
-  @scala.inline
-  def apply(uri: String): FileMatch = {
+  inline def apply(uri: String): FileMatch = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileMatch]
   }
   
-  @scala.inline
-  implicit class FileMatchMutableBuilder[Self <: FileMatch] (val x: Self) extends AnyVal {
+  extension [Self <: FileMatch](x: Self) {
     
-    @scala.inline
-    def setFileMatch(value: js.Array[String]): Self = StObject.set(x, "fileMatch", value.asInstanceOf[js.Any])
+    inline def setFileMatch(value: js.Array[String]): Self = StObject.set(x, "fileMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileMatchUndefined: Self = StObject.set(x, "fileMatch", js.undefined)
+    inline def setFileMatchUndefined: Self = StObject.set(x, "fileMatch", js.undefined)
     
-    @scala.inline
-    def setFileMatchVarargs(value: String*): Self = StObject.set(x, "fileMatch", js.Array(value :_*))
+    inline def setFileMatchVarargs(value: String*): Self = StObject.set(x, "fileMatch", js.Array(value :_*))
     
-    @scala.inline
-    def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait GetTopicRuleResponse extends StObject {
 }
 object GetTopicRuleResponse {
   
-  @scala.inline
-  def apply(): GetTopicRuleResponse = {
+  inline def apply(): GetTopicRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTopicRuleResponse]
   }
   
-  @scala.inline
-  implicit class GetTopicRuleResponseMutableBuilder[Self <: GetTopicRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTopicRuleResponse](x: Self) {
     
-    @scala.inline
-    def setRule(value: TopicRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: TopicRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = StObject.set(x, "ruleArn", value.asInstanceOf[js.Any])
+    inline def setRuleArn(value: RuleArn): Self = StObject.set(x, "ruleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleArnUndefined: Self = StObject.set(x, "ruleArn", js.undefined)
+    inline def setRuleArnUndefined: Self = StObject.set(x, "ruleArn", js.undefined)
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

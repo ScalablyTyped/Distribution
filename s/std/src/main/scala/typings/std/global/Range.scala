@@ -63,6 +63,5 @@ object Range {
   @js.native
   val START_TO_START: Double = js.native
   
-  @scala.inline
-  def toString_(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[java.lang.String]
+  inline def toString_(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[java.lang.String]
 }

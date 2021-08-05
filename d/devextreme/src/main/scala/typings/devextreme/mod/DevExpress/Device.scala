@@ -62,70 +62,49 @@ trait Device extends StObject {
 }
 object Device {
   
-  @scala.inline
-  def apply(): Device = {
+  inline def apply(): Device = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Device]
   }
   
-  @scala.inline
-  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+  extension [Self <: Device](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+    inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
-    @scala.inline
-    def setDeviceType(value: phone | tablet | desktop): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: phone | tablet | desktop): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
-    @scala.inline
-    def setGeneric(value: Boolean): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: Boolean): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
+    inline def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
     
-    @scala.inline
-    def setGrade(value: A | B | C): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
+    inline def setGrade(value: A | B | C): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
+    inline def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
     
-    @scala.inline
-    def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
-    @scala.inline
-    def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: android | ios | generic): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: android | ios | generic): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
+    inline def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
     
-    @scala.inline
-    def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

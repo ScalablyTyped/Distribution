@@ -10,16 +10,13 @@ trait FontWeight extends StObject {
 }
 object FontWeight {
   
-  @scala.inline
-  def apply(weight: Double): FontWeight = {
+  inline def apply(weight: Double): FontWeight = {
     val __obj = js.Dynamic.literal(weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontWeight]
   }
   
-  @scala.inline
-  implicit class FontWeightMutableBuilder[Self <: FontWeight] (val x: Self) extends AnyVal {
+  extension [Self <: FontWeight](x: Self) {
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

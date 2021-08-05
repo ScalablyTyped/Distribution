@@ -11,6 +11,5 @@ object matchesSelectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(elements: js.Array[Element], compareSelector: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], compareSelector.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(elements: js.Array[Element], compareSelector: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], compareSelector.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

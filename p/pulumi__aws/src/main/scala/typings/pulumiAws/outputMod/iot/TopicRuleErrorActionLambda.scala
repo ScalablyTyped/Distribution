@@ -13,16 +13,13 @@ trait TopicRuleErrorActionLambda extends StObject {
 }
 object TopicRuleErrorActionLambda {
   
-  @scala.inline
-  def apply(functionArn: String): TopicRuleErrorActionLambda = {
+  inline def apply(functionArn: String): TopicRuleErrorActionLambda = {
     val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleErrorActionLambda]
   }
   
-  @scala.inline
-  implicit class TopicRuleErrorActionLambdaMutableBuilder[Self <: TopicRuleErrorActionLambda] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleErrorActionLambda](x: Self) {
     
-    @scala.inline
-    def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
   }
 }

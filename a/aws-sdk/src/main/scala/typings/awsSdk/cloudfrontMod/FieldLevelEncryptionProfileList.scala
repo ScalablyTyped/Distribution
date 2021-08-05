@@ -28,34 +28,25 @@ trait FieldLevelEncryptionProfileList extends StObject {
 }
 object FieldLevelEncryptionProfileList {
   
-  @scala.inline
-  def apply(MaxItems: integer, Quantity: integer): FieldLevelEncryptionProfileList = {
+  inline def apply(MaxItems: integer, Quantity: integer): FieldLevelEncryptionProfileList = {
     val __obj = js.Dynamic.literal(MaxItems = MaxItems.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldLevelEncryptionProfileList]
   }
   
-  @scala.inline
-  implicit class FieldLevelEncryptionProfileListMutableBuilder[Self <: FieldLevelEncryptionProfileList] (val x: Self) extends AnyVal {
+  extension [Self <: FieldLevelEncryptionProfileList](x: Self) {
     
-    @scala.inline
-    def setItems(value: FieldLevelEncryptionProfileSummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: FieldLevelEncryptionProfileSummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: FieldLevelEncryptionProfileSummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FieldLevelEncryptionProfileSummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxItems(value: integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

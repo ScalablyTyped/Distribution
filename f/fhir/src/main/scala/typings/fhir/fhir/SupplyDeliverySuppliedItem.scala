@@ -28,31 +28,23 @@ trait SupplyDeliverySuppliedItem
 }
 object SupplyDeliverySuppliedItem {
   
-  @scala.inline
-  def apply(): SupplyDeliverySuppliedItem = {
+  inline def apply(): SupplyDeliverySuppliedItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SupplyDeliverySuppliedItem]
   }
   
-  @scala.inline
-  implicit class SupplyDeliverySuppliedItemMutableBuilder[Self <: SupplyDeliverySuppliedItem] (val x: Self) extends AnyVal {
+  extension [Self <: SupplyDeliverySuppliedItem](x: Self) {
     
-    @scala.inline
-    def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
+    inline def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
+    inline def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
+    inline def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

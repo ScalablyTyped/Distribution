@@ -10,16 +10,13 @@ trait PlaylistMetadataOptions extends StObject {
 }
 object PlaylistMetadataOptions {
   
-  @scala.inline
-  def apply(listId: String): PlaylistMetadataOptions = {
+  inline def apply(listId: String): PlaylistMetadataOptions = {
     val __obj = js.Dynamic.literal(listId = listId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistMetadataOptions]
   }
   
-  @scala.inline
-  implicit class PlaylistMetadataOptionsMutableBuilder[Self <: PlaylistMetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistMetadataOptions](x: Self) {
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
   }
 }

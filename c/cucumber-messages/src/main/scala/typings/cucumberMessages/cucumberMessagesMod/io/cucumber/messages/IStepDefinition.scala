@@ -18,40 +18,29 @@ trait IStepDefinition extends StObject {
 }
 object IStepDefinition {
   
-  @scala.inline
-  def apply(): IStepDefinition = {
+  inline def apply(): IStepDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStepDefinition]
   }
   
-  @scala.inline
-  implicit class IStepDefinitionMutableBuilder[Self <: IStepDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IStepDefinition](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPattern(value: IStepDefinitionPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: IStepDefinitionPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternNull: Self = StObject.set(x, "pattern", null)
+    inline def setPatternNull: Self = StObject.set(x, "pattern", null)
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setSourceReference(value: ISourceReference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
+    inline def setSourceReference(value: ISourceReference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceReferenceNull: Self = StObject.set(x, "sourceReference", null)
+    inline def setSourceReferenceNull: Self = StObject.set(x, "sourceReference", null)
     
-    @scala.inline
-    def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
+    inline def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait MakeDirectoryOptions
      with typings.node.fsMod.MakeDirectoryOptions
 object MakeDirectoryOptions {
   
-  @scala.inline
-  def apply(): MakeDirectoryOptions = {
+  inline def apply(): MakeDirectoryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MakeDirectoryOptions]
   }

@@ -25,19 +25,15 @@ trait XRepositorySupplier extends StObject {
 }
 object XRepositorySupplier {
   
-  @scala.inline
-  def apply(RDFRepository: XRepository, getRDFRepository: () => XRepository): XRepositorySupplier = {
+  inline def apply(RDFRepository: XRepository, getRDFRepository: () => XRepository): XRepositorySupplier = {
     val __obj = js.Dynamic.literal(RDFRepository = RDFRepository.asInstanceOf[js.Any], getRDFRepository = js.Any.fromFunction0(getRDFRepository))
     __obj.asInstanceOf[XRepositorySupplier]
   }
   
-  @scala.inline
-  implicit class XRepositorySupplierMutableBuilder[Self <: XRepositorySupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XRepositorySupplier](x: Self) {
     
-    @scala.inline
-    def setGetRDFRepository(value: () => XRepository): Self = StObject.set(x, "getRDFRepository", js.Any.fromFunction0(value))
+    inline def setGetRDFRepository(value: () => XRepository): Self = StObject.set(x, "getRDFRepository", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRDFRepository(value: XRepository): Self = StObject.set(x, "RDFRepository", value.asInstanceOf[js.Any])
+    inline def setRDFRepository(value: XRepository): Self = StObject.set(x, "RDFRepository", value.asInstanceOf[js.Any])
   }
 }

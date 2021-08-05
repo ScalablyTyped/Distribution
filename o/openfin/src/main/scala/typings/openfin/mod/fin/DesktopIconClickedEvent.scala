@@ -22,26 +22,20 @@ trait DesktopIconClickedEvent extends StObject {
 }
 object DesktopIconClickedEvent {
   
-  @scala.inline
-  def apply(mouse: Top, tickCount: Double): DesktopIconClickedEvent = {
+  inline def apply(mouse: Top, tickCount: Double): DesktopIconClickedEvent = {
     val __obj = js.Dynamic.literal(mouse = mouse.asInstanceOf[js.Any], tickCount = tickCount.asInstanceOf[js.Any], topic = "system")
     __obj.updateDynamic("type")("desktop-icon-clicked")
     __obj.asInstanceOf[DesktopIconClickedEvent]
   }
   
-  @scala.inline
-  implicit class DesktopIconClickedEventMutableBuilder[Self <: DesktopIconClickedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DesktopIconClickedEvent](x: Self) {
     
-    @scala.inline
-    def setMouse(value: Top): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Top): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
+    inline def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `desktop-icon-clicked`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `desktop-icon-clicked`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

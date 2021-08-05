@@ -21,25 +21,19 @@ trait SchemaVideoLocalization extends StObject {
 }
 object SchemaVideoLocalization {
   
-  @scala.inline
-  def apply(): SchemaVideoLocalization = {
+  inline def apply(): SchemaVideoLocalization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoLocalization]
   }
   
-  @scala.inline
-  implicit class SchemaVideoLocalizationMutableBuilder[Self <: SchemaVideoLocalization] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoLocalization](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

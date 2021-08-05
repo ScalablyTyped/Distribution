@@ -26,7 +26,7 @@ object accountRepositoryMod {
     
     def changeProfilePicture(picture: Buffer): js.Promise[AccountRepositoryCurrentUserResponseRootObject] = js.native
     
-    var command: js.Any = js.native
+    /* private */ var command: js.Any = js.native
     
     def contactPointPrefill(): js.Promise[js.Any] = js.native
     def contactPointPrefill(usage: String): js.Promise[js.Any] = js.native
@@ -75,10 +75,8 @@ object accountRepositoryMod {
     @JSImport("instagram-private-api/dist/repositories/account.repository", "AccountRepository.accountDebug")
     @js.native
     def accountDebug: js.Any = js.native
-    @scala.inline
-    def accountDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountDebug")(x.asInstanceOf[js.Any])
+    inline def accountDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountDebug")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def createJazoest(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createJazoest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createJazoest(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createJazoest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

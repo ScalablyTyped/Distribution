@@ -9,6 +9,5 @@ object global {
   @JSGlobal("mixpanel")
   @js.native
   def mixpanel: Mixpanel = js.native
-  @scala.inline
-  def mixpanel_=(x: Mixpanel): Unit = js.Dynamic.global.updateDynamic("mixpanel")(x.asInstanceOf[js.Any])
+  inline def mixpanel_=(x: Mixpanel): Unit = js.Dynamic.global.updateDynamic("mixpanel")(x.asInstanceOf[js.Any])
 }

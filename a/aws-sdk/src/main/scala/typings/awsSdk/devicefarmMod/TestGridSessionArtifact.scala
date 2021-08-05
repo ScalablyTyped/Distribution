@@ -23,31 +23,23 @@ trait TestGridSessionArtifact extends StObject {
 }
 object TestGridSessionArtifact {
   
-  @scala.inline
-  def apply(): TestGridSessionArtifact = {
+  inline def apply(): TestGridSessionArtifact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestGridSessionArtifact]
   }
   
-  @scala.inline
-  implicit class TestGridSessionArtifactMutableBuilder[Self <: TestGridSessionArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: TestGridSessionArtifact](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setType(value: TestGridSessionArtifactType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TestGridSessionArtifactType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait Warning extends StObject {
 }
 object Warning {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error: ForwardRefExoticComponent[PickAntdIconPropschildren],
     info: ForwardRefExoticComponent[PickAntdIconPropschildren],
     success: ForwardRefExoticComponent[PickAntdIconPropschildren],
@@ -28,19 +27,14 @@ object Warning {
     __obj.asInstanceOf[Warning]
   }
   
-  @scala.inline
-  implicit class WarningMutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
+  extension [Self <: Warning](x: Self) {
     
-    @scala.inline
-    def setError(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: ForwardRefExoticComponent[PickAntdIconPropschildren]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait StopGameSessionPlacementOutput extends StObject {
 }
 object StopGameSessionPlacementOutput {
   
-  @scala.inline
-  def apply(): StopGameSessionPlacementOutput = {
+  inline def apply(): StopGameSessionPlacementOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopGameSessionPlacementOutput]
   }
   
-  @scala.inline
-  implicit class StopGameSessionPlacementOutputMutableBuilder[Self <: StopGameSessionPlacementOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StopGameSessionPlacementOutput](x: Self) {
     
-    @scala.inline
-    def setGameSessionPlacement(value: GameSessionPlacement): Self = StObject.set(x, "GameSessionPlacement", value.asInstanceOf[js.Any])
+    inline def setGameSessionPlacement(value: GameSessionPlacement): Self = StObject.set(x, "GameSessionPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionPlacementUndefined: Self = StObject.set(x, "GameSessionPlacement", js.undefined)
+    inline def setGameSessionPlacementUndefined: Self = StObject.set(x, "GameSessionPlacement", js.undefined)
   }
 }

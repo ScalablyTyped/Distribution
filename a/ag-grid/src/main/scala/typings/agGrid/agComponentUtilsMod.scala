@@ -26,7 +26,7 @@ object agComponentUtilsMod {
       source: ComponentSource
     ): ResolvedComponent[A, B] = js.native
     
-    var componentMetadataProvider: js.Any = js.native
+    /* private */ var componentMetadataProvider: js.Any = js.native
     
     def doesImplementIComponent(candidate: AgGridRegisteredComponentInput[IComponent[js.Any]]): Boolean = js.native
   }

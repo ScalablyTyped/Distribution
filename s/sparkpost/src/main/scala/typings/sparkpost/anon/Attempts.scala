@@ -16,25 +16,19 @@ trait Attempts extends StObject {
 }
 object Attempts {
   
-  @scala.inline
-  def apply(attempts: Double, batch_id: String, response_code: Double, ts: String): Attempts = {
+  inline def apply(attempts: Double, batch_id: String, response_code: Double, ts: String): Attempts = {
     val __obj = js.Dynamic.literal(attempts = attempts.asInstanceOf[js.Any], batch_id = batch_id.asInstanceOf[js.Any], response_code = response_code.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attempts]
   }
   
-  @scala.inline
-  implicit class AttemptsMutableBuilder[Self <: Attempts] (val x: Self) extends AnyVal {
+  extension [Self <: Attempts](x: Self) {
     
-    @scala.inline
-    def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+    inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatch_id(value: String): Self = StObject.set(x, "batch_id", value.asInstanceOf[js.Any])
+    inline def setBatch_id(value: String): Self = StObject.set(x, "batch_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_code(value: Double): Self = StObject.set(x, "response_code", value.asInstanceOf[js.Any])
+    inline def setResponse_code(value: Double): Self = StObject.set(x, "response_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTs(value: String): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setTs(value: String): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
   }
 }

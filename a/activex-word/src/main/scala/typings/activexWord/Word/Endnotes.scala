@@ -46,6 +46,6 @@ trait Endnotes extends StObject {
   
   def SwapWithFootnotes(): Unit = js.native
   
-  @JSName("Word.Endnotes_typekey")
+  /* private */ @JSName("Word.Endnotes_typekey")
   var WordDotEndnotes_typekey: Endnotes = js.native
 }

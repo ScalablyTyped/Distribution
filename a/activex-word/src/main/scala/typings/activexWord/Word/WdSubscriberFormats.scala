@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSubscriberFormats extends StObject
 object WdSubscriberFormats {
   
-  @scala.inline
-  def wdSubscriberBestFormat: `0` = 0.asInstanceOf[`0`]
+  inline def wdSubscriberBestFormat: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdSubscriberPict: `4` = 4.asInstanceOf[`4`]
+  inline def wdSubscriberPict: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdSubscriberRTF: `1` = 1.asInstanceOf[`1`]
+  inline def wdSubscriberRTF: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdSubscriberText: `2` = 2.asInstanceOf[`2`]
+  inline def wdSubscriberText: `2` = 2.asInstanceOf[`2`]
 }

@@ -18,22 +18,17 @@ trait ListTagsOfResourceInput extends StObject {
 }
 object ListTagsOfResourceInput {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArnString): ListTagsOfResourceInput = {
+  inline def apply(ResourceArn: ResourceArnString): ListTagsOfResourceInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsOfResourceInput]
   }
   
-  @scala.inline
-  implicit class ListTagsOfResourceInputMutableBuilder[Self <: ListTagsOfResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsOfResourceInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

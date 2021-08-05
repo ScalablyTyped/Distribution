@@ -23,22 +23,17 @@ trait AssociateResourceRequest extends StObject {
 }
 object AssociateResourceRequest {
   
-  @scala.inline
-  def apply(application: ApplicationSpecifier, resource: ResourceSpecifier, resourceType: ResourceType): AssociateResourceRequest = {
+  inline def apply(application: ApplicationSpecifier, resource: ResourceSpecifier, resourceType: ResourceType): AssociateResourceRequest = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateResourceRequest]
   }
   
-  @scala.inline
-  implicit class AssociateResourceRequestMutableBuilder[Self <: AssociateResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateResourceRequest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: ResourceSpecifier): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ResourceSpecifier): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

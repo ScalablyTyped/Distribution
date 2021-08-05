@@ -10,16 +10,13 @@ trait QueryUndefined extends StObject {
 }
 object QueryUndefined {
   
-  @scala.inline
-  def apply(query: Unit): QueryUndefined = {
+  inline def apply(query: Unit): QueryUndefined = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryUndefined]
   }
   
-  @scala.inline
-  implicit class QueryUndefinedMutableBuilder[Self <: QueryUndefined] (val x: Self) extends AnyVal {
+  extension [Self <: QueryUndefined](x: Self) {
     
-    @scala.inline
-    def setQuery(value: Unit): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Unit): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

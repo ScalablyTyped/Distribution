@@ -33,31 +33,23 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(Component: LoggerComponent, Id: string, Level: LoggerLevel, Type: LoggerType): Logger = {
+  inline def apply(Component: LoggerComponent, Id: string, Level: LoggerLevel, Type: LoggerType): Logger = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Level = Level.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setComponent(value: LoggerComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: LoggerComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: LoggerLevel): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: LoggerLevel): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpace(value: integer): Self = StObject.set(x, "Space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: integer): Self = StObject.set(x, "Space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "Space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "Space", js.undefined)
     
-    @scala.inline
-    def setType(value: LoggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: LoggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

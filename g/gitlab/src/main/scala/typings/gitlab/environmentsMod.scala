@@ -59,26 +59,20 @@ object environmentsMod {
   }
   object EnvironmentDetailSchema {
     
-    @scala.inline
-    def apply(id: Double, name: String): EnvironmentDetailSchema = {
+    inline def apply(id: Double, name: String): EnvironmentDetailSchema = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentDetailSchema]
     }
     
-    @scala.inline
-    implicit class EnvironmentDetailSchemaMutableBuilder[Self <: EnvironmentDetailSchema] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentDetailSchema](x: Self) {
       
-      @scala.inline
-      def setDeployable(value: DeploymentSchema): Self = StObject.set(x, "deployable", value.asInstanceOf[js.Any])
+      inline def setDeployable(value: DeploymentSchema): Self = StObject.set(x, "deployable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeployableUndefined: Self = StObject.set(x, "deployable", js.undefined)
+      inline def setDeployableUndefined: Self = StObject.set(x, "deployable", js.undefined)
       
-      @scala.inline
-      def setLast_deployment(value: DeploymentSchema): Self = StObject.set(x, "last_deployment", value.asInstanceOf[js.Any])
+      inline def setLast_deployment(value: DeploymentSchema): Self = StObject.set(x, "last_deployment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_deploymentUndefined: Self = StObject.set(x, "last_deployment", js.undefined)
+      inline def setLast_deploymentUndefined: Self = StObject.set(x, "last_deployment", js.undefined)
     }
   }
   
@@ -98,44 +92,32 @@ object environmentsMod {
   }
   object EnvironmentSchema {
     
-    @scala.inline
-    def apply(id: Double, name: String): EnvironmentSchema = {
+    inline def apply(id: Double, name: String): EnvironmentSchema = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentSchema]
     }
     
-    @scala.inline
-    implicit class EnvironmentSchemaMutableBuilder[Self <: EnvironmentSchema] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentSchema](x: Self) {
       
-      @scala.inline
-      def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
+      inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_urlUndefined: Self = StObject.set(x, "external_url", js.undefined)
+      inline def setExternal_urlUndefined: Self = StObject.set(x, "external_url", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: ProjectSchema): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: ProjectSchema): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
+      inline def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
 }

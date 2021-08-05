@@ -24,8 +24,7 @@ trait JobEnvironment extends StObject {
 }
 object JobEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endpoints: js.Array[ServiceEndpoint],
     mask: js.Array[MaskHint],
     options: StringDictionary[JobOption],
@@ -37,34 +36,24 @@ object JobEnvironment {
     __obj.asInstanceOf[JobEnvironment]
   }
   
-  @scala.inline
-  implicit class JobEnvironmentMutableBuilder[Self <: JobEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: JobEnvironment](x: Self) {
     
-    @scala.inline
-    def setEndpoints(value: js.Array[ServiceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: js.Array[ServiceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsVarargs(value: ServiceEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: ServiceEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value :_*))
+    inline def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: StringDictionary[JobOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[JobOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureFiles(value: js.Array[SecureFile]): Self = StObject.set(x, "secureFiles", value.asInstanceOf[js.Any])
+    inline def setSecureFiles(value: js.Array[SecureFile]): Self = StObject.set(x, "secureFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureFilesVarargs(value: SecureFile*): Self = StObject.set(x, "secureFiles", js.Array(value :_*))
+    inline def setSecureFilesVarargs(value: SecureFile*): Self = StObject.set(x, "secureFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setSystemConnection(value: ServiceEndpoint): Self = StObject.set(x, "systemConnection", value.asInstanceOf[js.Any])
+    inline def setSystemConnection(value: ServiceEndpoint): Self = StObject.set(x, "systemConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

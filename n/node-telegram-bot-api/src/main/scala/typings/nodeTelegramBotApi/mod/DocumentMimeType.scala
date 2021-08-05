@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentMimeType extends StObject
 object DocumentMimeType {
   
-  @scala.inline
-  def applicationSlashpdf: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf]
+  inline def applicationSlashpdf: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf]
   
-  @scala.inline
-  def applicationSlashzip: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip = "application/zip".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip]
+  inline def applicationSlashzip: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip = "application/zip".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip]
 }

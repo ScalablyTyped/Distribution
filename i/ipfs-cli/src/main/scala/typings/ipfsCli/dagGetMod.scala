@@ -23,14 +23,12 @@ object dagGetMod {
     @js.native
     def localResolve: Type = js.native
     
-    @scala.inline
-    def localResolve_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local-resolve")(x.asInstanceOf[js.Any])
+    inline def localResolve_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local-resolve")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/dag/get", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/dag/get", "command")
@@ -41,6 +39,5 @@ object dagGetMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintCidpathLocalResolveTimeout: Cidpath): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintCidpathLocalResolveTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def handler(hasHasIpfsPrintCidpathLocalResolveTimeout: Cidpath): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintCidpathLocalResolveTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

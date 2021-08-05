@@ -28,37 +28,27 @@ trait ExportToS3TaskSpecification extends StObject {
 }
 object ExportToS3TaskSpecification {
   
-  @scala.inline
-  def apply(): ExportToS3TaskSpecification = {
+  inline def apply(): ExportToS3TaskSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportToS3TaskSpecification]
   }
   
-  @scala.inline
-  implicit class ExportToS3TaskSpecificationMutableBuilder[Self <: ExportToS3TaskSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ExportToS3TaskSpecification](x: Self) {
     
-    @scala.inline
-    def setContainerFormat(value: ContainerFormat): Self = StObject.set(x, "ContainerFormat", value.asInstanceOf[js.Any])
+    inline def setContainerFormat(value: ContainerFormat): Self = StObject.set(x, "ContainerFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerFormatUndefined: Self = StObject.set(x, "ContainerFormat", js.undefined)
+    inline def setContainerFormatUndefined: Self = StObject.set(x, "ContainerFormat", js.undefined)
     
-    @scala.inline
-    def setDiskImageFormat(value: DiskImageFormat): Self = StObject.set(x, "DiskImageFormat", value.asInstanceOf[js.Any])
+    inline def setDiskImageFormat(value: DiskImageFormat): Self = StObject.set(x, "DiskImageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskImageFormatUndefined: Self = StObject.set(x, "DiskImageFormat", js.undefined)
+    inline def setDiskImageFormatUndefined: Self = StObject.set(x, "DiskImageFormat", js.undefined)
     
-    @scala.inline
-    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+    inline def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
+    inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
   }
 }

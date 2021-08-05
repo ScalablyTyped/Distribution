@@ -14,28 +14,21 @@ trait GoogleCloudDatacatalogV1beta1ListPolicyTagsResponse extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1ListPolicyTagsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1ListPolicyTagsResponse = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1ListPolicyTagsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1ListPolicyTagsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ListPolicyTagsResponseMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ListPolicyTagsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1ListPolicyTagsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPolicyTags(value: js.Array[GoogleCloudDatacatalogV1beta1PolicyTag]): Self = StObject.set(x, "policyTags", value.asInstanceOf[js.Any])
+    inline def setPolicyTags(value: js.Array[GoogleCloudDatacatalogV1beta1PolicyTag]): Self = StObject.set(x, "policyTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTagsUndefined: Self = StObject.set(x, "policyTags", js.undefined)
+    inline def setPolicyTagsUndefined: Self = StObject.set(x, "policyTags", js.undefined)
     
-    @scala.inline
-    def setPolicyTagsVarargs(value: GoogleCloudDatacatalogV1beta1PolicyTag*): Self = StObject.set(x, "policyTags", js.Array(value :_*))
+    inline def setPolicyTagsVarargs(value: GoogleCloudDatacatalogV1beta1PolicyTag*): Self = StObject.set(x, "policyTags", js.Array(value :_*))
   }
 }

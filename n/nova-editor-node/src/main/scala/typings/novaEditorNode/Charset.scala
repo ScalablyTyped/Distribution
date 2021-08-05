@@ -13,19 +13,15 @@ trait Charset extends StObject {
 }
 object Charset {
   
-  @scala.inline
-  def apply(concat: /* repeated */ Charset => Charset, intersect: /* repeated */ Charset => Charset): Charset = {
+  inline def apply(concat: /* repeated */ Charset => Charset, intersect: /* repeated */ Charset => Charset): Charset = {
     val __obj = js.Dynamic.literal(concat = js.Any.fromFunction1(concat), intersect = js.Any.fromFunction1(intersect))
     __obj.asInstanceOf[Charset]
   }
   
-  @scala.inline
-  implicit class CharsetMutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
+  extension [Self <: Charset](x: Self) {
     
-    @scala.inline
-    def setConcat(value: /* repeated */ Charset => Charset): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+    inline def setConcat(value: /* repeated */ Charset => Charset): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersect(value: /* repeated */ Charset => Charset): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
+    inline def setIntersect(value: /* repeated */ Charset => Charset): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
   }
 }

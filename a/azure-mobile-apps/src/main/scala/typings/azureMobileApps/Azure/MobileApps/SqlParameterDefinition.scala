@@ -12,19 +12,15 @@ trait SqlParameterDefinition extends StObject {
 }
 object SqlParameterDefinition {
   
-  @scala.inline
-  def apply(name: String, value: js.Any): SqlParameterDefinition = {
+  inline def apply(name: String, value: js.Any): SqlParameterDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlParameterDefinition]
   }
   
-  @scala.inline
-  implicit class SqlParameterDefinitionMutableBuilder[Self <: SqlParameterDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SqlParameterDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

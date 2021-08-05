@@ -74,8 +74,7 @@ object mod {
   }
   object KDBush {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       coords: js.Array[Double],
       ids: js.Array[Double],
       nodeSize: Double,
@@ -87,35 +86,25 @@ object mod {
       __obj.asInstanceOf[KDBush[T]]
     }
     
-    @scala.inline
-    implicit class KDBushMutableBuilder[Self <: KDBush[?], T] (val x: Self & KDBush[T]) extends AnyVal {
+    extension [Self <: KDBush[?], T](x: Self & KDBush[T]) {
       
-      @scala.inline
-      def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
       
-      @scala.inline
-      def setIds(value: js.Array[Double]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[Double]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: Double*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: Double*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeSize(value: Double): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
+      inline def setNodeSize(value: Double): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoints(value: js.Array[T]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[T]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsVarargs(value: T*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: T*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setRange(value: (Double, Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "range", js.Any.fromFunction4(value))
+      inline def setRange(value: (Double, Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "range", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setWithin(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "within", js.Any.fromFunction3(value))
+      inline def setWithin(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "within", js.Any.fromFunction3(value))
     }
   }
   

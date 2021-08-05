@@ -8,11 +8,9 @@ object d3CloudStrings {
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait word extends StObject
-  @scala.inline
-  def word: word = "word".asInstanceOf[word]
+  inline def word: word = "word".asInstanceOf[word]
 }

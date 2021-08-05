@@ -13,19 +13,15 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(details: MessageDetails, occurredOn: Date): Message = {
+  inline def apply(details: MessageDetails, occurredOn: Date): Message = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], occurredOn = occurredOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setDetails(value: MessageDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: MessageDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurredOn(value: Date): Self = StObject.set(x, "occurredOn", value.asInstanceOf[js.Any])
+    inline def setOccurredOn(value: Date): Self = StObject.set(x, "occurredOn", value.asInstanceOf[js.Any])
   }
 }

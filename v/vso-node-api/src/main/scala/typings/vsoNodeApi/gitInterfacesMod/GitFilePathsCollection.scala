@@ -14,25 +14,19 @@ trait GitFilePathsCollection extends StObject {
 }
 object GitFilePathsCollection {
   
-  @scala.inline
-  def apply(commitId: String, paths: js.Array[String], url: String): GitFilePathsCollection = {
+  inline def apply(commitId: String, paths: js.Array[String], url: String): GitFilePathsCollection = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitFilePathsCollection]
   }
   
-  @scala.inline
-  implicit class GitFilePathsCollectionMutableBuilder[Self <: GitFilePathsCollection] (val x: Self) extends AnyVal {
+  extension [Self <: GitFilePathsCollection](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

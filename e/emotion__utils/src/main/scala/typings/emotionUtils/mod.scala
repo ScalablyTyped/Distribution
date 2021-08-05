@@ -14,11 +14,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRegisteredStyles(registered: RegisteredCache, registeredStyles: js.Array[String], classNames: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredStyles")(registered.asInstanceOf[js.Any], registeredStyles.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getRegisteredStyles(registered: RegisteredCache, registeredStyles: js.Array[String], classNames: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredStyles")(registered.asInstanceOf[js.Any], registeredStyles.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def insertStyles(cache: EmotionCache, serialized: SerializedStyles, isStringTag: Boolean): String | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertStyles")(cache.asInstanceOf[js.Any], serialized.asInstanceOf[js.Any], isStringTag.asInstanceOf[js.Any])).asInstanceOf[String | Unit]
+  inline def insertStyles(cache: EmotionCache, serialized: SerializedStyles, isStringTag: Boolean): String | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertStyles")(cache.asInstanceOf[js.Any], serialized.asInstanceOf[js.Any], isStringTag.asInstanceOf[js.Any])).asInstanceOf[String | Unit]
   
   @JSImport("@emotion/utils", "isBrowser")
   @js.native
@@ -42,8 +40,7 @@ object mod {
   }
   object EmotionCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inserted: StringDictionary[String | `true`],
       key: String,
       registered: RegisteredCache,
@@ -54,35 +51,25 @@ object mod {
       __obj.asInstanceOf[EmotionCache]
     }
     
-    @scala.inline
-    implicit class EmotionCacheMutableBuilder[Self <: EmotionCache] (val x: Self) extends AnyVal {
+    extension [Self <: EmotionCache](x: Self) {
       
-      @scala.inline
-      def setCompat(value: `true`): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
+      inline def setCompat(value: `true`): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompatUndefined: Self = StObject.set(x, "compat", js.undefined)
+      inline def setCompatUndefined: Self = StObject.set(x, "compat", js.undefined)
       
-      @scala.inline
-      def setInserted(value: StringDictionary[String | `true`]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
+      inline def setInserted(value: StringDictionary[String | `true`]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setRegistered(value: RegisteredCache): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
+      inline def setRegistered(value: RegisteredCache): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheet(value: StyleSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+      inline def setSheet(value: StyleSheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylis(value: (String, String) => js.Array[String]): Self = StObject.set(x, "stylis", js.Any.fromFunction2(value))
+      inline def setStylis(value: (String, String) => js.Array[String]): Self = StObject.set(x, "stylis", js.Any.fromFunction2(value))
     }
   }
   
@@ -100,32 +87,24 @@ object mod {
   }
   object SerializedStyles {
     
-    @scala.inline
-    def apply(name: String, styles: String): SerializedStyles = {
+    inline def apply(name: String, styles: String): SerializedStyles = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedStyles]
     }
     
-    @scala.inline
-    implicit class SerializedStylesMutableBuilder[Self <: SerializedStyles] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedStyles](x: Self) {
       
-      @scala.inline
-      def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: SerializedStyles): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: SerializedStyles): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,8 +124,7 @@ object mod {
   }
   object StyleSheet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: HTMLElement,
       flush: () => Unit,
       insert: String => Unit,
@@ -157,32 +135,23 @@ object mod {
       __obj.asInstanceOf[StyleSheet]
     }
     
-    @scala.inline
-    implicit class StyleSheetMutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
+    extension [Self <: StyleSheet](x: Self) {
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInsert(value: String => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: String => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
 }

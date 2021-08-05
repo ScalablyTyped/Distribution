@@ -43,12 +43,10 @@ object Logger {
   @JSImport("azure", "Logger.LogLevels")
   @js.native
   def LogLevels: ALERT = js.native
-  @scala.inline
-  def LogLevels_=(x: ALERT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogLevels")(x.asInstanceOf[js.Any])
+  inline def LogLevels_=(x: ALERT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogLevels")(x.asInstanceOf[js.Any])
   
   @JSImport("azure", "Logger.logPriority")
   @js.native
   def logPriority: js.Array[String] = js.native
-  @scala.inline
-  def logPriority_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logPriority")(x.asInstanceOf[js.Any])
+  inline def logPriority_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logPriority")(x.asInstanceOf[js.Any])
 }

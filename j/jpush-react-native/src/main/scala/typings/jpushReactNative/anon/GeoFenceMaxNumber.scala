@@ -10,16 +10,13 @@ trait GeoFenceMaxNumber extends StObject {
 }
 object GeoFenceMaxNumber {
   
-  @scala.inline
-  def apply(geoFenceMaxNumber: Double): GeoFenceMaxNumber = {
+  inline def apply(geoFenceMaxNumber: Double): GeoFenceMaxNumber = {
     val __obj = js.Dynamic.literal(geoFenceMaxNumber = geoFenceMaxNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoFenceMaxNumber]
   }
   
-  @scala.inline
-  implicit class GeoFenceMaxNumberMutableBuilder[Self <: GeoFenceMaxNumber] (val x: Self) extends AnyVal {
+  extension [Self <: GeoFenceMaxNumber](x: Self) {
     
-    @scala.inline
-    def setGeoFenceMaxNumber(value: Double): Self = StObject.set(x, "geoFenceMaxNumber", value.asInstanceOf[js.Any])
+    inline def setGeoFenceMaxNumber(value: Double): Self = StObject.set(x, "geoFenceMaxNumber", value.asInstanceOf[js.Any])
   }
 }

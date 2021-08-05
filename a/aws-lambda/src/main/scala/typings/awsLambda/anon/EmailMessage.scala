@@ -14,22 +14,17 @@ trait EmailMessage extends StObject {
 }
 object EmailMessage {
   
-  @scala.inline
-  def apply(emailMessage: String, emailSubject: String, smsMessage: String): EmailMessage = {
+  inline def apply(emailMessage: String, emailSubject: String, smsMessage: String): EmailMessage = {
     val __obj = js.Dynamic.literal(emailMessage = emailMessage.asInstanceOf[js.Any], emailSubject = emailSubject.asInstanceOf[js.Any], smsMessage = smsMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailMessage]
   }
   
-  @scala.inline
-  implicit class EmailMessageMutableBuilder[Self <: EmailMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMessage](x: Self) {
     
-    @scala.inline
-    def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
+    inline def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
+    inline def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
+    inline def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
   }
 }

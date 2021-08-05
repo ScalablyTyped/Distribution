@@ -15,6 +15,5 @@ object Program {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.programMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.programMod.Program]
+  inline def create(): typings.wonderJs.programMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.programMod.Program]
 }

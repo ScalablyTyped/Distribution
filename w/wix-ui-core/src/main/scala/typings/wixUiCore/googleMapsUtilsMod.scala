@@ -10,6 +10,5 @@ object googleMapsUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateID")().asInstanceOf[String]
+  inline def generateID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateID")().asInstanceOf[String]
 }

@@ -12,8 +12,7 @@ object classPropHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
     path: NodePath[ClassDeclaration_, js.Any]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

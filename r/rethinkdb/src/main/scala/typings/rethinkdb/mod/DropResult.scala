@@ -10,16 +10,13 @@ trait DropResult extends StObject {
 }
 object DropResult {
   
-  @scala.inline
-  def apply(dropped: Double): DropResult = {
+  inline def apply(dropped: Double): DropResult = {
     val __obj = js.Dynamic.literal(dropped = dropped.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropResult]
   }
   
-  @scala.inline
-  implicit class DropResultMutableBuilder[Self <: DropResult] (val x: Self) extends AnyVal {
+  extension [Self <: DropResult](x: Self) {
     
-    @scala.inline
-    def setDropped(value: Double): Self = StObject.set(x, "dropped", value.asInstanceOf[js.Any])
+    inline def setDropped(value: Double): Self = StObject.set(x, "dropped", value.asInstanceOf[js.Any])
   }
 }

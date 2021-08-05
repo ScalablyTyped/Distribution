@@ -16,22 +16,17 @@ trait RegSymbol extends StObject {
 }
 object RegSymbol {
   
-  @scala.inline
-  def apply(infix: Notation): RegSymbol = {
+  inline def apply(infix: Notation): RegSymbol = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = "\\*", symbol = "*")
     __obj.asInstanceOf[RegSymbol]
   }
   
-  @scala.inline
-  implicit class RegSymbolMutableBuilder[Self <: RegSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: RegSymbol](x: Self) {
     
-    @scala.inline
-    def setInfix(value: Notation): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: Notation): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: BackslashAsterisk): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: BackslashAsterisk): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Asterisk): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Asterisk): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

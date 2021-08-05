@@ -12,22 +12,17 @@ trait CreateRoleData extends StObject {
 }
 object CreateRoleData {
   
-  @scala.inline
-  def apply(name: String): CreateRoleData = {
+  inline def apply(name: String): CreateRoleData = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRoleData]
   }
   
-  @scala.inline
-  implicit class CreateRoleDataMutableBuilder[Self <: CreateRoleData] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRoleData](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

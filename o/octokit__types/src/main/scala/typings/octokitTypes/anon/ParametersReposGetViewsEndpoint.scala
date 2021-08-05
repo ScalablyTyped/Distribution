@@ -18,8 +18,7 @@ trait ParametersReposGetViewsEndpoint extends StObject {
 }
 object ParametersReposGetViewsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetViewsEndpoint,
     request: ReposGetViewsRequestOptions,
     response: OctokitResponse[ReposGetViewsResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetViewsEndpoint {
     __obj.asInstanceOf[ParametersReposGetViewsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetViewsEndpointMutableBuilder[Self <: ParametersReposGetViewsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetViewsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetViewsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetViewsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetViewsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetViewsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetViewsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetViewsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

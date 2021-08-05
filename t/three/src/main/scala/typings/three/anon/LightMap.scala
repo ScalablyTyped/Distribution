@@ -13,19 +13,15 @@ trait LightMap extends StObject {
 }
 object LightMap {
   
-  @scala.inline
-  def apply(lightMap: IUniform, lightMapIntensity: IUniform): LightMap = {
+  inline def apply(lightMap: IUniform, lightMapIntensity: IUniform): LightMap = {
     val __obj = js.Dynamic.literal(lightMap = lightMap.asInstanceOf[js.Any], lightMapIntensity = lightMapIntensity.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightMap]
   }
   
-  @scala.inline
-  implicit class LightMapMutableBuilder[Self <: LightMap] (val x: Self) extends AnyVal {
+  extension [Self <: LightMap](x: Self) {
     
-    @scala.inline
-    def setLightMap(value: IUniform): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
+    inline def setLightMap(value: IUniform): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightMapIntensity(value: IUniform): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
+    inline def setLightMapIntensity(value: IUniform): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
   }
 }

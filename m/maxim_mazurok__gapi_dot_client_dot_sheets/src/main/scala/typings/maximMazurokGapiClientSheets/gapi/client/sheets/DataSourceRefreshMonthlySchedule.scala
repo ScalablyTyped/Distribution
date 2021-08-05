@@ -14,28 +14,21 @@ trait DataSourceRefreshMonthlySchedule extends StObject {
 }
 object DataSourceRefreshMonthlySchedule {
   
-  @scala.inline
-  def apply(): DataSourceRefreshMonthlySchedule = {
+  inline def apply(): DataSourceRefreshMonthlySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceRefreshMonthlySchedule]
   }
   
-  @scala.inline
-  implicit class DataSourceRefreshMonthlyScheduleMutableBuilder[Self <: DataSourceRefreshMonthlySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceRefreshMonthlySchedule](x: Self) {
     
-    @scala.inline
-    def setDaysOfMonth(value: js.Array[Double]): Self = StObject.set(x, "daysOfMonth", value.asInstanceOf[js.Any])
+    inline def setDaysOfMonth(value: js.Array[Double]): Self = StObject.set(x, "daysOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOfMonthUndefined: Self = StObject.set(x, "daysOfMonth", js.undefined)
+    inline def setDaysOfMonthUndefined: Self = StObject.set(x, "daysOfMonth", js.undefined)
     
-    @scala.inline
-    def setDaysOfMonthVarargs(value: Double*): Self = StObject.set(x, "daysOfMonth", js.Array(value :_*))
+    inline def setDaysOfMonthVarargs(value: Double*): Self = StObject.set(x, "daysOfMonth", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait UndeleteAlertRequest extends StObject {
 }
 object UndeleteAlertRequest {
   
-  @scala.inline
-  def apply(): UndeleteAlertRequest = {
+  inline def apply(): UndeleteAlertRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UndeleteAlertRequest]
   }
   
-  @scala.inline
-  implicit class UndeleteAlertRequestMutableBuilder[Self <: UndeleteAlertRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UndeleteAlertRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
   }
 }

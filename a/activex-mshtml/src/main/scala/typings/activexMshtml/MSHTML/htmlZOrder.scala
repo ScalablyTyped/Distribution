@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlZOrder extends StObject
 object htmlZOrder {
   
-  @scala.inline
-  def htmlZOrderBack: `1` = 1.asInstanceOf[`1`]
+  inline def htmlZOrderBack: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlZOrderFront: `0` = 0.asInstanceOf[`0`]
+  inline def htmlZOrderFront: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlZOrder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlZOrder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

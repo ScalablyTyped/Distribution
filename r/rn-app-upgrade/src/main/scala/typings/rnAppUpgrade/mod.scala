@@ -12,15 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addDownListener(callBack: js.Function1[/* progress */ Double, Unit]): EmitterSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("addDownListener")(callBack.asInstanceOf[js.Any]).asInstanceOf[EmitterSubscription]
+  inline def addDownListener(callBack: js.Function1[/* progress */ Double, Unit]): EmitterSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("addDownListener")(callBack.asInstanceOf[js.Any]).asInstanceOf[EmitterSubscription]
   
-  @scala.inline
-  def checkUpdate(appId: String, version: String): js.Promise[Code] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUpdate")(appId.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Code]]
+  inline def checkUpdate(appId: String, version: String): js.Promise[Code] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUpdate")(appId.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Code]]
   
-  @scala.inline
-  def openAPPStore(appid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openAPPStore")(appid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openAPPStore(appid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openAPPStore")(appid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def upgrade(apkUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("upgrade")(apkUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def upgrade(apkUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("upgrade")(apkUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

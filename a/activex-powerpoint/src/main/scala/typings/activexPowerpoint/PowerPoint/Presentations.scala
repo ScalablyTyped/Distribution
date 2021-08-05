@@ -117,6 +117,6 @@ trait Presentations extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.Presentations_typekey")
+  /* private */ @JSName("PowerPoint.Presentations_typekey")
   var PowerPointDotPresentations_typekey: Presentations = js.native
 }

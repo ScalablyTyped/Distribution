@@ -42,31 +42,24 @@ object precacheControllerMod {
     }
     object InstallOptions {
       
-      @scala.inline
-      def apply(): InstallOptions = {
+      inline def apply(): InstallOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InstallOptions]
       }
       
-      @scala.inline
-      implicit class InstallOptionsMutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
+      extension [Self <: InstallOptions](x: Self) {
         
-        @scala.inline
-        def setEvent(
+        inline def setEvent(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
         ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+        inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
         
-        @scala.inline
-        def setPlugins(value: js.Array[WorkboxPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+        inline def setPlugins(value: js.Array[WorkboxPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+        inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
         
-        @scala.inline
-        def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       }
     }
   }

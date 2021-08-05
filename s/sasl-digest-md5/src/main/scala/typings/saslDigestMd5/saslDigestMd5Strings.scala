@@ -8,6 +8,5 @@ object saslDigestMd5Strings {
   
   @js.native
   sealed trait `DIGEST-MD5` extends StObject
-  @scala.inline
-  def `DIGEST-MD5`: `DIGEST-MD5` = "DIGEST-MD5".asInstanceOf[`DIGEST-MD5`]
+  inline def `DIGEST-MD5`: `DIGEST-MD5` = "DIGEST-MD5".asInstanceOf[`DIGEST-MD5`]
 }

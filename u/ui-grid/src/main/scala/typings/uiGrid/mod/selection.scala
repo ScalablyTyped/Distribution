@@ -92,80 +92,56 @@ object selection {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.selection.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.selection.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.selection.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.selection.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.selection.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnableFooterTotalSelected(value: Boolean): Self = StObject.set(x, "enableFooterTotalSelected", value.asInstanceOf[js.Any])
+      inline def setEnableFooterTotalSelected(value: Boolean): Self = StObject.set(x, "enableFooterTotalSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableFooterTotalSelectedUndefined: Self = StObject.set(x, "enableFooterTotalSelected", js.undefined)
+      inline def setEnableFooterTotalSelectedUndefined: Self = StObject.set(x, "enableFooterTotalSelected", js.undefined)
       
-      @scala.inline
-      def setEnableFullRowSelection(value: Boolean): Self = StObject.set(x, "enableFullRowSelection", value.asInstanceOf[js.Any])
+      inline def setEnableFullRowSelection(value: Boolean): Self = StObject.set(x, "enableFullRowSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableFullRowSelectionUndefined: Self = StObject.set(x, "enableFullRowSelection", js.undefined)
+      inline def setEnableFullRowSelectionUndefined: Self = StObject.set(x, "enableFullRowSelection", js.undefined)
       
-      @scala.inline
-      def setEnableRowHeaderSelection(value: Boolean): Self = StObject.set(x, "enableRowHeaderSelection", value.asInstanceOf[js.Any])
+      inline def setEnableRowHeaderSelection(value: Boolean): Self = StObject.set(x, "enableRowHeaderSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRowHeaderSelectionUndefined: Self = StObject.set(x, "enableRowHeaderSelection", js.undefined)
+      inline def setEnableRowHeaderSelectionUndefined: Self = StObject.set(x, "enableRowHeaderSelection", js.undefined)
       
-      @scala.inline
-      def setEnableRowSelection(value: Boolean): Self = StObject.set(x, "enableRowSelection", value.asInstanceOf[js.Any])
+      inline def setEnableRowSelection(value: Boolean): Self = StObject.set(x, "enableRowSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRowSelectionUndefined: Self = StObject.set(x, "enableRowSelection", js.undefined)
+      inline def setEnableRowSelectionUndefined: Self = StObject.set(x, "enableRowSelection", js.undefined)
       
-      @scala.inline
-      def setEnableSelectAll(value: Boolean): Self = StObject.set(x, "enableSelectAll", value.asInstanceOf[js.Any])
+      inline def setEnableSelectAll(value: Boolean): Self = StObject.set(x, "enableSelectAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSelectAllUndefined: Self = StObject.set(x, "enableSelectAll", js.undefined)
+      inline def setEnableSelectAllUndefined: Self = StObject.set(x, "enableSelectAll", js.undefined)
       
-      @scala.inline
-      def setEnableSelectionBatchEvent(value: Boolean): Self = StObject.set(x, "enableSelectionBatchEvent", value.asInstanceOf[js.Any])
+      inline def setEnableSelectionBatchEvent(value: Boolean): Self = StObject.set(x, "enableSelectionBatchEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSelectionBatchEventUndefined: Self = StObject.set(x, "enableSelectionBatchEvent", js.undefined)
+      inline def setEnableSelectionBatchEventUndefined: Self = StObject.set(x, "enableSelectionBatchEvent", js.undefined)
       
-      @scala.inline
-      def setIsRowSelectable(value: /* row */ typings.uiGrid.mod.selection.IGridRow => Boolean): Self = StObject.set(x, "isRowSelectable", js.Any.fromFunction1(value))
+      inline def setIsRowSelectable(value: /* row */ typings.uiGrid.mod.selection.IGridRow => Boolean): Self = StObject.set(x, "isRowSelectable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRowSelectableUndefined: Self = StObject.set(x, "isRowSelectable", js.undefined)
+      inline def setIsRowSelectableUndefined: Self = StObject.set(x, "isRowSelectable", js.undefined)
       
-      @scala.inline
-      def setModifierKeysToMultiSelect(value: Boolean): Self = StObject.set(x, "modifierKeysToMultiSelect", value.asInstanceOf[js.Any])
+      inline def setModifierKeysToMultiSelect(value: Boolean): Self = StObject.set(x, "modifierKeysToMultiSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifierKeysToMultiSelectUndefined: Self = StObject.set(x, "modifierKeysToMultiSelect", js.undefined)
+      inline def setModifierKeysToMultiSelectUndefined: Self = StObject.set(x, "modifierKeysToMultiSelect", js.undefined)
       
-      @scala.inline
-      def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+      inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+      inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
       
-      @scala.inline
-      def setNoUnselect(value: Boolean): Self = StObject.set(x, "noUnselect", value.asInstanceOf[js.Any])
+      inline def setNoUnselect(value: Boolean): Self = StObject.set(x, "noUnselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoUnselectUndefined: Self = StObject.set(x, "noUnselect", js.undefined)
+      inline def setNoUnselectUndefined: Self = StObject.set(x, "noUnselect", js.undefined)
       
-      @scala.inline
-      def setSelectionRowHeaderWidth(value: Double): Self = StObject.set(x, "selectionRowHeaderWidth", value.asInstanceOf[js.Any])
+      inline def setSelectionRowHeaderWidth(value: Double): Self = StObject.set(x, "selectionRowHeaderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionRowHeaderWidthUndefined: Self = StObject.set(x, "selectionRowHeaderWidth", js.undefined)
+      inline def setSelectionRowHeaderWidthUndefined: Self = StObject.set(x, "selectionRowHeaderWidth", js.undefined)
     }
   }
   
@@ -200,29 +176,22 @@ object selection {
   }
   object IGridRow {
     
-    @scala.inline
-    def apply(setSelected: Boolean => Unit): typings.uiGrid.mod.selection.IGridRow = {
+    inline def apply(setSelected: Boolean => Unit): typings.uiGrid.mod.selection.IGridRow = {
       val __obj = js.Dynamic.literal(setSelected = js.Any.fromFunction1(setSelected))
       __obj.asInstanceOf[typings.uiGrid.mod.selection.IGridRow]
     }
     
-    @scala.inline
-    implicit class IGridRowMutableBuilder[Self <: typings.uiGrid.mod.selection.IGridRow] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.selection.IGridRow](x: Self) {
       
-      @scala.inline
-      def setEnableSelection(value: Boolean): Self = StObject.set(x, "enableSelection", value.asInstanceOf[js.Any])
+      inline def setEnableSelection(value: Boolean): Self = StObject.set(x, "enableSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSelectionUndefined: Self = StObject.set(x, "enableSelection", js.undefined)
+      inline def setEnableSelectionUndefined: Self = StObject.set(x, "enableSelection", js.undefined)
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      @scala.inline
-      def setSetSelected(value: Boolean => Unit): Self = StObject.set(x, "setSelected", js.Any.fromFunction1(value))
+      inline def setSetSelected(value: Boolean => Unit): Self = StObject.set(x, "setSelected", js.Any.fromFunction1(value))
     }
   }
   

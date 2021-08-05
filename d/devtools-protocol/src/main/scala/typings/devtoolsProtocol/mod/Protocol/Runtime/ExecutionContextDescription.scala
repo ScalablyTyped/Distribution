@@ -29,28 +29,21 @@ trait ExecutionContextDescription extends StObject {
 }
 object ExecutionContextDescription {
   
-  @scala.inline
-  def apply(id: ExecutionContextId, name: String, origin: String): ExecutionContextDescription = {
+  inline def apply(id: ExecutionContextId, name: String, origin: String): ExecutionContextDescription = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionContextDescription]
   }
   
-  @scala.inline
-  implicit class ExecutionContextDescriptionMutableBuilder[Self <: ExecutionContextDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionContextDescription](x: Self) {
     
-    @scala.inline
-    def setAuxData(value: js.Any): Self = StObject.set(x, "auxData", value.asInstanceOf[js.Any])
+    inline def setAuxData(value: js.Any): Self = StObject.set(x, "auxData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuxDataUndefined: Self = StObject.set(x, "auxData", js.undefined)
+    inline def setAuxDataUndefined: Self = StObject.set(x, "auxData", js.undefined)
     
-    @scala.inline
-    def setId(value: ExecutionContextId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ExecutionContextId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

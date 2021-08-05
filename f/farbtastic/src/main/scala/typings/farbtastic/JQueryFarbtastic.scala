@@ -38,35 +38,26 @@ object JQueryFarbtastic {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCallback(value: Callback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: Callback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackFunction1(value: /* color */ String => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallbackFunction1(value: /* color */ String => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setWheelWidth(value: Double): Self = StObject.set(x, "wheelWidth", value.asInstanceOf[js.Any])
+      inline def setWheelWidth(value: Double): Self = StObject.set(x, "wheelWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelWidthUndefined: Self = StObject.set(x, "wheelWidth", js.undefined)
+      inline def setWheelWidthUndefined: Self = StObject.set(x, "wheelWidth", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

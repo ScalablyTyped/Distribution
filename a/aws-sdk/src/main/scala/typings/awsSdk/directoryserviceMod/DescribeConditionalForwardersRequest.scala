@@ -18,25 +18,19 @@ trait DescribeConditionalForwardersRequest extends StObject {
 }
 object DescribeConditionalForwardersRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): DescribeConditionalForwardersRequest = {
+  inline def apply(DirectoryId: DirectoryId): DescribeConditionalForwardersRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConditionalForwardersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConditionalForwardersRequestMutableBuilder[Self <: DescribeConditionalForwardersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConditionalForwardersRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteDomainNames(value: RemoteDomainNames): Self = StObject.set(x, "RemoteDomainNames", value.asInstanceOf[js.Any])
+    inline def setRemoteDomainNames(value: RemoteDomainNames): Self = StObject.set(x, "RemoteDomainNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteDomainNamesUndefined: Self = StObject.set(x, "RemoteDomainNames", js.undefined)
+    inline def setRemoteDomainNamesUndefined: Self = StObject.set(x, "RemoteDomainNames", js.undefined)
     
-    @scala.inline
-    def setRemoteDomainNamesVarargs(value: RemoteDomainName*): Self = StObject.set(x, "RemoteDomainNames", js.Array(value :_*))
+    inline def setRemoteDomainNamesVarargs(value: RemoteDomainName*): Self = StObject.set(x, "RemoteDomainNames", js.Array(value :_*))
   }
 }

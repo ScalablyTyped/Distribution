@@ -14,8 +14,7 @@ trait WEBGLCompressedTextureAtc extends StObject {
 }
 object WEBGLCompressedTextureAtc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL: Double,
     COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL: Double,
     COMPRESSED_RGB_ATC_WEBGL: Double
@@ -24,16 +23,12 @@ object WEBGLCompressedTextureAtc {
     __obj.asInstanceOf[WEBGLCompressedTextureAtc]
   }
   
-  @scala.inline
-  implicit class WEBGLCompressedTextureAtcMutableBuilder[Self <: WEBGLCompressedTextureAtc] (val x: Self) extends AnyVal {
+  extension [Self <: WEBGLCompressedTextureAtc](x: Self) {
     
-    @scala.inline
-    def setCOMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_RGB_ATC_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_ATC_WEBGL", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_RGB_ATC_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_ATC_WEBGL", value.asInstanceOf[js.Any])
   }
 }

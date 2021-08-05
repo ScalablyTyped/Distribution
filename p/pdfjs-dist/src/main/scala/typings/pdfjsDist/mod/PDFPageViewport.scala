@@ -26,8 +26,7 @@ trait PDFPageViewport extends StObject {
 }
 object PDFPageViewport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clone_ : PDFPageViewportOptions => PDFPageViewport,
     convertToPdfPoint: (Double, Double) => js.Array[Double],
     convertToViewportPoint: (Double, Double) => js.Array[Double],
@@ -42,34 +41,24 @@ object PDFPageViewport {
     __obj.asInstanceOf[PDFPageViewport]
   }
   
-  @scala.inline
-  implicit class PDFPageViewportMutableBuilder[Self <: PDFPageViewport] (val x: Self) extends AnyVal {
+  extension [Self <: PDFPageViewport](x: Self) {
     
-    @scala.inline
-    def setClone_(value: PDFPageViewportOptions => PDFPageViewport): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: PDFPageViewportOptions => PDFPageViewport): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertToPdfPoint(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "convertToPdfPoint", js.Any.fromFunction2(value))
+    inline def setConvertToPdfPoint(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "convertToPdfPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertToViewportPoint(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "convertToViewportPoint", js.Any.fromFunction2(value))
+    inline def setConvertToViewportPoint(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "convertToViewportPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertToViewportRectangle(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "convertToViewportRectangle", js.Any.fromFunction1(value))
+    inline def setConvertToViewportRectangle(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "convertToViewportRectangle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransforms(value: js.Array[Double]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+    inline def setTransforms(value: js.Array[Double]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformsVarargs(value: Double*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+    inline def setTransformsVarargs(value: Double*): Self = StObject.set(x, "transforms", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -53,8 +53,7 @@ trait XContentIdentifierMapping
 }
 object XContentIdentifierMapping {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     mapContent: XContent => XContent,
     mapContentIdentifier: XContentIdentifier => XContentIdentifier,
@@ -67,19 +66,14 @@ object XContentIdentifierMapping {
     __obj.asInstanceOf[XContentIdentifierMapping]
   }
   
-  @scala.inline
-  implicit class XContentIdentifierMappingMutableBuilder[Self <: XContentIdentifierMapping] (val x: Self) extends AnyVal {
+  extension [Self <: XContentIdentifierMapping](x: Self) {
     
-    @scala.inline
-    def setMapContent(value: XContent => XContent): Self = StObject.set(x, "mapContent", js.Any.fromFunction1(value))
+    inline def setMapContent(value: XContent => XContent): Self = StObject.set(x, "mapContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMapContentIdentifier(value: XContentIdentifier => XContentIdentifier): Self = StObject.set(x, "mapContentIdentifier", js.Any.fromFunction1(value))
+    inline def setMapContentIdentifier(value: XContentIdentifier => XContentIdentifier): Self = StObject.set(x, "mapContentIdentifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMapContentIdentifierString(value: String => String): Self = StObject.set(x, "mapContentIdentifierString", js.Any.fromFunction1(value))
+    inline def setMapContentIdentifierString(value: String => String): Self = StObject.set(x, "mapContentIdentifierString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMapRow(value: js.Array[SeqEquiv[js.Any]] => Boolean): Self = StObject.set(x, "mapRow", js.Any.fromFunction1(value))
+    inline def setMapRow(value: js.Array[SeqEquiv[js.Any]] => Boolean): Self = StObject.set(x, "mapRow", js.Any.fromFunction1(value))
   }
 }

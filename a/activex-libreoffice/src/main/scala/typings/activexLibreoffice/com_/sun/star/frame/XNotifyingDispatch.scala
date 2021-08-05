@@ -27,8 +27,7 @@ trait XNotifyingDispatch
 }
 object XNotifyingDispatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addStatusListener: (XStatusListener, URL) => Unit,
     dispatch: (URL, SeqEquiv[PropertyValue]) => Unit,
@@ -41,10 +40,8 @@ object XNotifyingDispatch {
     __obj.asInstanceOf[XNotifyingDispatch]
   }
   
-  @scala.inline
-  implicit class XNotifyingDispatchMutableBuilder[Self <: XNotifyingDispatch] (val x: Self) extends AnyVal {
+  extension [Self <: XNotifyingDispatch](x: Self) {
     
-    @scala.inline
-    def setDispatchWithNotification(value: (URL, SeqEquiv[PropertyValue], XDispatchResultListener) => Unit): Self = StObject.set(x, "dispatchWithNotification", js.Any.fromFunction3(value))
+    inline def setDispatchWithNotification(value: (URL, SeqEquiv[PropertyValue], XDispatchResultListener) => Unit): Self = StObject.set(x, "dispatchWithNotification", js.Any.fromFunction3(value))
   }
 }

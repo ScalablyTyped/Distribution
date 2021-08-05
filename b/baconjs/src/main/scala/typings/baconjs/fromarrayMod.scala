@@ -12,6 +12,5 @@ object fromarrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](values: js.Array[T | Event[T]]): EventStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[EventStream[T]]
+  inline def default[T](values: js.Array[T | Event[T]]): EventStream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[EventStream[T]]
 }

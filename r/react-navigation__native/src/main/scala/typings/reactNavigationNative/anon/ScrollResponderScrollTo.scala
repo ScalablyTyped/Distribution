@@ -14,16 +14,13 @@ trait ScrollResponderScrollTo
 }
 object ScrollResponderScrollTo {
   
-  @scala.inline
-  def apply(scrollResponderScrollTo: ScrollOptions => Unit): ScrollResponderScrollTo = {
+  inline def apply(scrollResponderScrollTo: ScrollOptions => Unit): ScrollResponderScrollTo = {
     val __obj = js.Dynamic.literal(scrollResponderScrollTo = js.Any.fromFunction1(scrollResponderScrollTo))
     __obj.asInstanceOf[ScrollResponderScrollTo]
   }
   
-  @scala.inline
-  implicit class ScrollResponderScrollToMutableBuilder[Self <: ScrollResponderScrollTo] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollResponderScrollTo](x: Self) {
     
-    @scala.inline
-    def setScrollResponderScrollTo(value: ScrollOptions => Unit): Self = StObject.set(x, "scrollResponderScrollTo", js.Any.fromFunction1(value))
+    inline def setScrollResponderScrollTo(value: ScrollOptions => Unit): Self = StObject.set(x, "scrollResponderScrollTo", js.Any.fromFunction1(value))
   }
 }

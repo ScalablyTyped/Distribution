@@ -18,22 +18,17 @@ trait GetStorageInfoSuccessCallbackOption extends StObject {
 }
 object GetStorageInfoSuccessCallbackOption {
   
-  @scala.inline
-  def apply(currentSize: Double, keys: Array[String], limitSize: Double): GetStorageInfoSuccessCallbackOption = {
+  inline def apply(currentSize: Double, keys: Array[String], limitSize: Double): GetStorageInfoSuccessCallbackOption = {
     val __obj = js.Dynamic.literal(currentSize = currentSize.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], limitSize = limitSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorageInfoSuccessCallbackOption]
   }
   
-  @scala.inline
-  implicit class GetStorageInfoSuccessCallbackOptionMutableBuilder[Self <: GetStorageInfoSuccessCallbackOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageInfoSuccessCallbackOption](x: Self) {
     
-    @scala.inline
-    def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
+    inline def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
+    inline def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
   }
 }

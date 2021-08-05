@@ -24,37 +24,27 @@ trait SchemaUnitInvoice extends StObject {
 }
 object SchemaUnitInvoice {
   
-  @scala.inline
-  def apply(): SchemaUnitInvoice = {
+  inline def apply(): SchemaUnitInvoice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUnitInvoice]
   }
   
-  @scala.inline
-  implicit class SchemaUnitInvoiceMutableBuilder[Self <: SchemaUnitInvoice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUnitInvoice](x: Self) {
     
-    @scala.inline
-    def setAdditionalCharges(value: js.Array[SchemaUnitInvoiceAdditionalCharge]): Self = StObject.set(x, "additionalCharges", value.asInstanceOf[js.Any])
+    inline def setAdditionalCharges(value: js.Array[SchemaUnitInvoiceAdditionalCharge]): Self = StObject.set(x, "additionalCharges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalChargesUndefined: Self = StObject.set(x, "additionalCharges", js.undefined)
+    inline def setAdditionalChargesUndefined: Self = StObject.set(x, "additionalCharges", js.undefined)
     
-    @scala.inline
-    def setAdditionalChargesVarargs(value: SchemaUnitInvoiceAdditionalCharge*): Self = StObject.set(x, "additionalCharges", js.Array(value :_*))
+    inline def setAdditionalChargesVarargs(value: SchemaUnitInvoiceAdditionalCharge*): Self = StObject.set(x, "additionalCharges", js.Array(value :_*))
     
-    @scala.inline
-    def setUnitPrice(value: SchemaPrice): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
+    inline def setUnitPrice(value: SchemaPrice): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitPriceTaxes(value: js.Array[SchemaUnitInvoiceTaxLine]): Self = StObject.set(x, "unitPriceTaxes", value.asInstanceOf[js.Any])
+    inline def setUnitPriceTaxes(value: js.Array[SchemaUnitInvoiceTaxLine]): Self = StObject.set(x, "unitPriceTaxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitPriceTaxesUndefined: Self = StObject.set(x, "unitPriceTaxes", js.undefined)
+    inline def setUnitPriceTaxesUndefined: Self = StObject.set(x, "unitPriceTaxes", js.undefined)
     
-    @scala.inline
-    def setUnitPriceTaxesVarargs(value: SchemaUnitInvoiceTaxLine*): Self = StObject.set(x, "unitPriceTaxes", js.Array(value :_*))
+    inline def setUnitPriceTaxesVarargs(value: SchemaUnitInvoiceTaxLine*): Self = StObject.set(x, "unitPriceTaxes", js.Array(value :_*))
     
-    @scala.inline
-    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
+    inline def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
   }
 }

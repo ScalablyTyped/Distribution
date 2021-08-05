@@ -18,22 +18,17 @@ trait DescribeProjectRequest extends StObject {
 }
 object DescribeProjectRequest {
   
-  @scala.inline
-  def apply(projectId: ProjectId): DescribeProjectRequest = {
+  inline def apply(projectId: ProjectId): DescribeProjectRequest = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProjectRequest]
   }
   
-  @scala.inline
-  implicit class DescribeProjectRequestMutableBuilder[Self <: DescribeProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProjectRequest](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncFromResources(value: Boolean): Self = StObject.set(x, "syncFromResources", value.asInstanceOf[js.Any])
+    inline def setSyncFromResources(value: Boolean): Self = StObject.set(x, "syncFromResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncFromResourcesUndefined: Self = StObject.set(x, "syncFromResources", js.undefined)
+    inline def setSyncFromResourcesUndefined: Self = StObject.set(x, "syncFromResources", js.undefined)
   }
 }

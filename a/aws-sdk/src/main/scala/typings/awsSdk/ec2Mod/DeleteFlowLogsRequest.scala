@@ -18,25 +18,19 @@ trait DeleteFlowLogsRequest extends StObject {
 }
 object DeleteFlowLogsRequest {
   
-  @scala.inline
-  def apply(FlowLogIds: FlowLogIdList): DeleteFlowLogsRequest = {
+  inline def apply(FlowLogIds: FlowLogIdList): DeleteFlowLogsRequest = {
     val __obj = js.Dynamic.literal(FlowLogIds = FlowLogIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFlowLogsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFlowLogsRequestMutableBuilder[Self <: DeleteFlowLogsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFlowLogsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFlowLogIds(value: FlowLogIdList): Self = StObject.set(x, "FlowLogIds", value.asInstanceOf[js.Any])
+    inline def setFlowLogIds(value: FlowLogIdList): Self = StObject.set(x, "FlowLogIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogIdsVarargs(value: VpcFlowLogId*): Self = StObject.set(x, "FlowLogIds", js.Array(value :_*))
+    inline def setFlowLogIdsVarargs(value: VpcFlowLogId*): Self = StObject.set(x, "FlowLogIds", js.Array(value :_*))
   }
 }

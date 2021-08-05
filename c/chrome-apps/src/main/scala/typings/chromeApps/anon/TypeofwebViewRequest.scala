@@ -187,8 +187,7 @@ trait TypeofwebViewRequest extends StObject {
 }
 object TypeofwebViewRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddRequestCookie: Instantiable1[/* parameters */ AddCookie[RequestCookie], AddRequestCookie],
     AddResponseCookie: Instantiable1[/* parameters */ AddCookie[ResponseCookie], AddResponseCookie],
     AddResponseHeader: Instantiable1[/* parameters */ AddResponseHeaderParams, AddResponseHeader],
@@ -215,70 +214,51 @@ object TypeofwebViewRequest {
     __obj.asInstanceOf[TypeofwebViewRequest]
   }
   
-  @scala.inline
-  implicit class TypeofwebViewRequestMutableBuilder[Self <: TypeofwebViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofwebViewRequest](x: Self) {
     
-    @scala.inline
-    def setAddRequestCookie(value: Instantiable1[/* parameters */ AddCookie[RequestCookie], AddRequestCookie]): Self = StObject.set(x, "AddRequestCookie", value.asInstanceOf[js.Any])
+    inline def setAddRequestCookie(value: Instantiable1[/* parameters */ AddCookie[RequestCookie], AddRequestCookie]): Self = StObject.set(x, "AddRequestCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddResponseCookie(value: Instantiable1[/* parameters */ AddCookie[ResponseCookie], AddResponseCookie]): Self = StObject.set(x, "AddResponseCookie", value.asInstanceOf[js.Any])
+    inline def setAddResponseCookie(value: Instantiable1[/* parameters */ AddCookie[ResponseCookie], AddResponseCookie]): Self = StObject.set(x, "AddResponseCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddResponseHeader(value: Instantiable1[/* parameters */ AddResponseHeaderParams, AddResponseHeader]): Self = StObject.set(x, "AddResponseHeader", value.asInstanceOf[js.Any])
+    inline def setAddResponseHeader(value: Instantiable1[/* parameters */ AddResponseHeaderParams, AddResponseHeader]): Self = StObject.set(x, "AddResponseHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelRequest(value: Instantiable0[CancelRequest]): Self = StObject.set(x, "CancelRequest", value.asInstanceOf[js.Any])
+    inline def setCancelRequest(value: Instantiable0[CancelRequest]): Self = StObject.set(x, "CancelRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditRequestCookie(
+    inline def setEditRequestCookie(
       value: Instantiable1[/* parameters */ EditCookieParams[RequestCookie, RequestCookie], EditRequestCookie]
     ): Self = StObject.set(x, "EditRequestCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditResponseCookie(
+    inline def setEditResponseCookie(
       value: Instantiable1[
           /* parameter */ EditCookieParams[FilterResponseCookie, ResponseCookie], 
           EditResponseCookie
         ]
     ): Self = StObject.set(x, "EditResponseCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreRules(value: Instantiable1[/* parameters */ IgnoreRulesParams, IgnoreRules]): Self = StObject.set(x, "IgnoreRules", value.asInstanceOf[js.Any])
+    inline def setIgnoreRules(value: Instantiable1[/* parameters */ IgnoreRulesParams, IgnoreRules]): Self = StObject.set(x, "IgnoreRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectByRegEx(value: Instantiable1[/* parameters */ RedirectByRegExParams, RedirectByRegEx]): Self = StObject.set(x, "RedirectByRegEx", value.asInstanceOf[js.Any])
+    inline def setRedirectByRegEx(value: Instantiable1[/* parameters */ RedirectByRegExParams, RedirectByRegEx]): Self = StObject.set(x, "RedirectByRegEx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectRequest(value: Instantiable1[/* parameters */ RedirectRequestParams, RedirectRequest]): Self = StObject.set(x, "RedirectRequest", value.asInstanceOf[js.Any])
+    inline def setRedirectRequest(value: Instantiable1[/* parameters */ RedirectRequestParams, RedirectRequest]): Self = StObject.set(x, "RedirectRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectToEmptyDocument(value: Instantiable0[RedirectToEmptyDocument]): Self = StObject.set(x, "RedirectToEmptyDocument", value.asInstanceOf[js.Any])
+    inline def setRedirectToEmptyDocument(value: Instantiable0[RedirectToEmptyDocument]): Self = StObject.set(x, "RedirectToEmptyDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectToTransparentImage(value: Instantiable0[RedirectToTransparentImage]): Self = StObject.set(x, "RedirectToTransparentImage", value.asInstanceOf[js.Any])
+    inline def setRedirectToTransparentImage(value: Instantiable0[RedirectToTransparentImage]): Self = StObject.set(x, "RedirectToTransparentImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRequestCookie(value: Instantiable1[/* parameters */ RemoveCookieParams[RequestCookie], RemoveRequestCookie]): Self = StObject.set(x, "RemoveRequestCookie", value.asInstanceOf[js.Any])
+    inline def setRemoveRequestCookie(value: Instantiable1[/* parameters */ RemoveCookieParams[RequestCookie], RemoveRequestCookie]): Self = StObject.set(x, "RemoveRequestCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRequestHeader(value: Instantiable1[/* parameters */ RemoveRequestHeaderParams, RemoveRequestHeader]): Self = StObject.set(x, "RemoveRequestHeader", value.asInstanceOf[js.Any])
+    inline def setRemoveRequestHeader(value: Instantiable1[/* parameters */ RemoveRequestHeaderParams, RemoveRequestHeader]): Self = StObject.set(x, "RemoveRequestHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveResponseCookie(
+    inline def setRemoveResponseCookie(
       value: Instantiable1[/* parameters */ RemoveCookieParams[FilterResponseCookie], RemoveResponseCookie]
     ): Self = StObject.set(x, "RemoveResponseCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveResponseHeader(value: Instantiable1[/* parameters */ RemoveResponseHeaderParams, RemoveResponseHeader]): Self = StObject.set(x, "RemoveResponseHeader", value.asInstanceOf[js.Any])
+    inline def setRemoveResponseHeader(value: Instantiable1[/* parameters */ RemoveResponseHeaderParams, RemoveResponseHeader]): Self = StObject.set(x, "RemoveResponseHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMatcher(value: Instantiable1[/* parameters */ js.UndefOr[RequestMatcherFields], RequestMatcher]): Self = StObject.set(x, "RequestMatcher", value.asInstanceOf[js.Any])
+    inline def setRequestMatcher(value: Instantiable1[/* parameters */ js.UndefOr[RequestMatcherFields], RequestMatcher]): Self = StObject.set(x, "RequestMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendMessageToExtension(value: Instantiable1[/* parameters */ SendMessageParams, SendMessageToExtension]): Self = StObject.set(x, "SendMessageToExtension", value.asInstanceOf[js.Any])
+    inline def setSendMessageToExtension(value: Instantiable1[/* parameters */ SendMessageParams, SendMessageToExtension]): Self = StObject.set(x, "SendMessageToExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRequestHeader(value: Instantiable1[/* parameters */ SetRequestHeaderParams, SetRequestHeader]): Self = StObject.set(x, "SetRequestHeader", value.asInstanceOf[js.Any])
+    inline def setSetRequestHeader(value: Instantiable1[/* parameters */ SetRequestHeaderParams, SetRequestHeader]): Self = StObject.set(x, "SetRequestHeader", value.asInstanceOf[js.Any])
   }
 }

@@ -25,50 +25,36 @@ object settingsMod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(application: Password, baseUrl: String): Settings = {
+    inline def apply(application: Password, baseUrl: String): Settings = {
       val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setApplication(value: Password): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: Password): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesEncoder(value: /* obj */ js.Any => String): Self = StObject.set(x, "attributesEncoder", js.Any.fromFunction1(value))
+      inline def setAttributesEncoder(value: /* obj */ js.Any => String): Self = StObject.set(x, "attributesEncoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttributesEncoderUndefined: Self = StObject.set(x, "attributesEncoder", js.undefined)
+      inline def setAttributesEncoderUndefined: Self = StObject.set(x, "attributesEncoder", js.undefined)
       
-      @scala.inline
-      def setAttributesParser(value: /* json */ String => js.Any): Self = StObject.set(x, "attributesParser", js.Any.fromFunction1(value))
+      inline def setAttributesParser(value: /* json */ String => js.Any): Self = StObject.set(x, "attributesParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttributesParserUndefined: Self = StObject.set(x, "attributesParser", js.undefined)
+      inline def setAttributesParserUndefined: Self = StObject.set(x, "attributesParser", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setNesting(value: Boolean): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
+      inline def setNesting(value: Boolean): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestingUndefined: Self = StObject.set(x, "nesting", js.undefined)
+      inline def setNestingUndefined: Self = StObject.set(x, "nesting", js.undefined)
       
-      @scala.inline
-      def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+      inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+      inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     }
   }
 }

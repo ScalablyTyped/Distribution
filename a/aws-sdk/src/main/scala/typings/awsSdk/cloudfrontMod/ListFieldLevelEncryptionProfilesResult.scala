@@ -13,19 +13,15 @@ trait ListFieldLevelEncryptionProfilesResult extends StObject {
 }
 object ListFieldLevelEncryptionProfilesResult {
   
-  @scala.inline
-  def apply(): ListFieldLevelEncryptionProfilesResult = {
+  inline def apply(): ListFieldLevelEncryptionProfilesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFieldLevelEncryptionProfilesResult]
   }
   
-  @scala.inline
-  implicit class ListFieldLevelEncryptionProfilesResultMutableBuilder[Self <: ListFieldLevelEncryptionProfilesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListFieldLevelEncryptionProfilesResult](x: Self) {
     
-    @scala.inline
-    def setFieldLevelEncryptionProfileList(value: FieldLevelEncryptionProfileList): Self = StObject.set(x, "FieldLevelEncryptionProfileList", value.asInstanceOf[js.Any])
+    inline def setFieldLevelEncryptionProfileList(value: FieldLevelEncryptionProfileList): Self = StObject.set(x, "FieldLevelEncryptionProfileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldLevelEncryptionProfileListUndefined: Self = StObject.set(x, "FieldLevelEncryptionProfileList", js.undefined)
+    inline def setFieldLevelEncryptionProfileListUndefined: Self = StObject.set(x, "FieldLevelEncryptionProfileList", js.undefined)
   }
 }

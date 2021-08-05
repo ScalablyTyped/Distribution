@@ -12,25 +12,19 @@ trait IFileDescriptorSet extends StObject {
 }
 object IFileDescriptorSet {
   
-  @scala.inline
-  def apply(): IFileDescriptorSet = {
+  inline def apply(): IFileDescriptorSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileDescriptorSet]
   }
   
-  @scala.inline
-  implicit class IFileDescriptorSetMutableBuilder[Self <: IFileDescriptorSet] (val x: Self) extends AnyVal {
+  extension [Self <: IFileDescriptorSet](x: Self) {
     
-    @scala.inline
-    def setFile(value: js.Array[IFileDescriptorProto]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Array[IFileDescriptorProto]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNull: Self = StObject.set(x, "file", null)
+    inline def setFileNull: Self = StObject.set(x, "file", null)
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFileVarargs(value: IFileDescriptorProto*): Self = StObject.set(x, "file", js.Array(value :_*))
+    inline def setFileVarargs(value: IFileDescriptorProto*): Self = StObject.set(x, "file", js.Array(value :_*))
   }
 }

@@ -18,22 +18,17 @@ trait UserAgentOptions extends StObject {
 }
 object UserAgentOptions {
   
-  @scala.inline
-  def apply(segment: String): UserAgentOptions = {
+  inline def apply(segment: String): UserAgentOptions = {
     val __obj = js.Dynamic.literal(segment = segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentOptions]
   }
   
-  @scala.inline
-  implicit class UserAgentOptionsMutableBuilder[Self <: UserAgentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentOptions](x: Self) {
     
-    @scala.inline
-    def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

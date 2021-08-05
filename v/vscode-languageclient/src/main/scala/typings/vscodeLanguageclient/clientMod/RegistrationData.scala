@@ -12,19 +12,15 @@ trait RegistrationData[T] extends StObject {
 }
 object RegistrationData {
   
-  @scala.inline
-  def apply[T](id: String, registerOptions: T): RegistrationData[T] = {
+  inline def apply[T](id: String, registerOptions: T): RegistrationData[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], registerOptions = registerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistrationData[T]]
   }
   
-  @scala.inline
-  implicit class RegistrationDataMutableBuilder[Self <: RegistrationData[?], T] (val x: Self & RegistrationData[T]) extends AnyVal {
+  extension [Self <: RegistrationData[?], T](x: Self & RegistrationData[T]) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterOptions(value: T): Self = StObject.set(x, "registerOptions", value.asInstanceOf[js.Any])
+    inline def setRegisterOptions(value: T): Self = StObject.set(x, "registerOptions", value.asInstanceOf[js.Any])
   }
 }

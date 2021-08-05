@@ -82,8 +82,7 @@ trait XCertificate
 }
 object XCertificate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CertificateUsage: Double,
     Encoded: SafeArray[Double],
     Extensions: SafeArray[XCertificateExtension],
@@ -110,61 +109,42 @@ object XCertificate {
     __obj.asInstanceOf[XCertificate]
   }
   
-  @scala.inline
-  implicit class XCertificateMutableBuilder[Self <: XCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: XCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificateUsage(value: Double): Self = StObject.set(x, "CertificateUsage", value.asInstanceOf[js.Any])
+    inline def setCertificateUsage(value: Double): Self = StObject.set(x, "CertificateUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoded(value: SafeArray[Double]): Self = StObject.set(x, "Encoded", value.asInstanceOf[js.Any])
+    inline def setEncoded(value: SafeArray[Double]): Self = StObject.set(x, "Encoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensions(value: SafeArray[XCertificateExtension]): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: SafeArray[XCertificateExtension]): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindCertificateExtension(value: SeqEquiv[Double] => XCertificateExtension): Self = StObject.set(x, "findCertificateExtension", js.Any.fromFunction1(value))
+    inline def setFindCertificateExtension(value: SeqEquiv[Double] => XCertificateExtension): Self = StObject.set(x, "findCertificateExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCertificateUsage(value: () => Double): Self = StObject.set(x, "getCertificateUsage", js.Any.fromFunction0(value))
+    inline def setGetCertificateUsage(value: () => Double): Self = StObject.set(x, "getCertificateUsage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIssuerName(value: String): Self = StObject.set(x, "IssuerName", value.asInstanceOf[js.Any])
+    inline def setIssuerName(value: String): Self = StObject.set(x, "IssuerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUniqueID(value: SafeArray[Double]): Self = StObject.set(x, "IssuerUniqueID", value.asInstanceOf[js.Any])
+    inline def setIssuerUniqueID(value: SafeArray[Double]): Self = StObject.set(x, "IssuerUniqueID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5Thumbprint(value: SafeArray[Double]): Self = StObject.set(x, "MD5Thumbprint", value.asInstanceOf[js.Any])
+    inline def setMD5Thumbprint(value: SafeArray[Double]): Self = StObject.set(x, "MD5Thumbprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotValidAfter(value: DateTime): Self = StObject.set(x, "NotValidAfter", value.asInstanceOf[js.Any])
+    inline def setNotValidAfter(value: DateTime): Self = StObject.set(x, "NotValidAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotValidBefore(value: DateTime): Self = StObject.set(x, "NotValidBefore", value.asInstanceOf[js.Any])
+    inline def setNotValidBefore(value: DateTime): Self = StObject.set(x, "NotValidBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA1Thumbprint(value: SafeArray[Double]): Self = StObject.set(x, "SHA1Thumbprint", value.asInstanceOf[js.Any])
+    inline def setSHA1Thumbprint(value: SafeArray[Double]): Self = StObject.set(x, "SHA1Thumbprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: SafeArray[Double]): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: SafeArray[Double]): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAlgorithm(value: String): Self = StObject.set(x, "SignatureAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "SignatureAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectName(value: String): Self = StObject.set(x, "SubjectName", value.asInstanceOf[js.Any])
+    inline def setSubjectName(value: String): Self = StObject.set(x, "SubjectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectPublicKeyAlgorithm(value: String): Self = StObject.set(x, "SubjectPublicKeyAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSubjectPublicKeyAlgorithm(value: String): Self = StObject.set(x, "SubjectPublicKeyAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectPublicKeyValue(value: SafeArray[Double]): Self = StObject.set(x, "SubjectPublicKeyValue", value.asInstanceOf[js.Any])
+    inline def setSubjectPublicKeyValue(value: SafeArray[Double]): Self = StObject.set(x, "SubjectPublicKeyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUniqueID(value: SafeArray[Double]): Self = StObject.set(x, "SubjectUniqueID", value.asInstanceOf[js.Any])
+    inline def setSubjectUniqueID(value: SafeArray[Double]): Self = StObject.set(x, "SubjectUniqueID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

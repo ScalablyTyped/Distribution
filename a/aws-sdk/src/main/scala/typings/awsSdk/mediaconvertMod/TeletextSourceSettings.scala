@@ -13,19 +13,15 @@ trait TeletextSourceSettings extends StObject {
 }
 object TeletextSourceSettings {
   
-  @scala.inline
-  def apply(): TeletextSourceSettings = {
+  inline def apply(): TeletextSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeletextSourceSettings]
   }
   
-  @scala.inline
-  implicit class TeletextSourceSettingsMutableBuilder[Self <: TeletextSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TeletextSourceSettings](x: Self) {
     
-    @scala.inline
-    def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
+    inline def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
   }
 }

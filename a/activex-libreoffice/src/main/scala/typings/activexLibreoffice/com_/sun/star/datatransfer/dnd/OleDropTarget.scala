@@ -20,8 +20,7 @@ trait OleDropTarget
      with XComponent
 object OleDropTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultActions: Double,
     acquire: () => Unit,
     addDropTargetListener: XDropTargetListener => Unit,

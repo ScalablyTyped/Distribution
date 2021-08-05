@@ -23,8 +23,7 @@ trait FunctionDescriptions
      with XEnumerationAccess
 object FunctionDescriptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,

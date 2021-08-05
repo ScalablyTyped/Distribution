@@ -34,8 +34,7 @@ trait IDBKeyRange extends StObject {
 }
 object IDBKeyRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includes: js.Any => scala.Boolean,
     lower: js.Any,
     lowerOpen: scala.Boolean,
@@ -46,22 +45,16 @@ object IDBKeyRange {
     __obj.asInstanceOf[IDBKeyRange]
   }
   
-  @scala.inline
-  implicit class IDBKeyRangeMutableBuilder[Self <: IDBKeyRange] (val x: Self) extends AnyVal {
+  extension [Self <: IDBKeyRange](x: Self) {
     
-    @scala.inline
-    def setIncludes(value: js.Any => scala.Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
+    inline def setIncludes(value: js.Any => scala.Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLower(value: js.Any): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+    inline def setLower(value: js.Any): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerOpen(value: scala.Boolean): Self = StObject.set(x, "lowerOpen", value.asInstanceOf[js.Any])
+    inline def setLowerOpen(value: scala.Boolean): Self = StObject.set(x, "lowerOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpper(value: js.Any): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
+    inline def setUpper(value: js.Any): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperOpen(value: scala.Boolean): Self = StObject.set(x, "upperOpen", value.asInstanceOf[js.Any])
+    inline def setUpperOpen(value: scala.Boolean): Self = StObject.set(x, "upperOpen", value.asInstanceOf[js.Any])
   }
 }

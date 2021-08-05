@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(data: String): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(data: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(data: js.Array[DataObject | String]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(data: js.Array[DataObject | String], prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: String): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(data: String, prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: js.Array[DataObject | String]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(data: js.Array[DataObject | String], prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Converts a JSON input to markdown.
     *
@@ -25,10 +21,8 @@ object mod {
     * @param prefix A snippet to add before each line.
     * @return The generated markdown result.
     */
-  @scala.inline
-  def apply(data: DataObject): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(data: DataObject, prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: DataObject): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(data: DataObject, prefix: String): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("json2md", JSImport.Namespace)
   @js.native
@@ -106,8 +100,7 @@ object mod {
   }
   object ConvertersMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blockquote: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String,
       code: (CodeInput, /* json2md */ typings.json2md.mod.json2md) => String,
       h1: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String,
@@ -126,47 +119,33 @@ object mod {
       __obj.asInstanceOf[ConvertersMethods]
     }
     
-    @scala.inline
-    implicit class ConvertersMethodsMutableBuilder[Self <: ConvertersMethods] (val x: Self) extends AnyVal {
+    extension [Self <: ConvertersMethods](x: Self) {
       
-      @scala.inline
-      def setBlockquote(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "blockquote", js.Any.fromFunction2(value))
+      inline def setBlockquote(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "blockquote", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCode(value: (CodeInput, /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "code", js.Any.fromFunction2(value))
+      inline def setCode(value: (CodeInput, /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "code", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setH1(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h1", js.Any.fromFunction2(value))
+      inline def setH1(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setH2(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h2", js.Any.fromFunction2(value))
+      inline def setH2(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setH3(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h3", js.Any.fromFunction2(value))
+      inline def setH3(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h3", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setH4(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h4", js.Any.fromFunction2(value))
+      inline def setH4(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h4", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setH5(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h5", js.Any.fromFunction2(value))
+      inline def setH5(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h5", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setH6(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h6", js.Any.fromFunction2(value))
+      inline def setH6(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "h6", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImg(value: (ImgInput | js.Array[ImgInput], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "img", js.Any.fromFunction2(value))
+      inline def setImg(value: (ImgInput | js.Array[ImgInput], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "img", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOl(value: (js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "ol", js.Any.fromFunction2(value))
+      inline def setOl(value: (js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "ol", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setP(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "p", js.Any.fromFunction2(value))
+      inline def setP(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "p", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTable(value: (TableInput, /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "table", js.Any.fromFunction2(value))
+      inline def setTable(value: (TableInput, /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "table", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUl(value: (js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "ul", js.Any.fromFunction2(value))
+      inline def setUl(value: (js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "ul", js.Any.fromFunction2(value))
     }
   }
   
@@ -201,125 +180,86 @@ object mod {
   }
   object DataObject {
     
-    @scala.inline
-    def apply(): DataObject = {
+    inline def apply(): DataObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataObject]
     }
     
-    @scala.inline
-    implicit class DataObjectMutableBuilder[Self <: DataObject] (val x: Self) extends AnyVal {
+    extension [Self <: DataObject](x: Self) {
       
-      @scala.inline
-      def setBlockquote(value: String | js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+      inline def setBlockquote(value: String | js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
+      inline def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
       
-      @scala.inline
-      def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value :_*))
+      inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value :_*))
       
-      @scala.inline
-      def setCode(value: CodeInput): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: CodeInput): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setH1(value: String | js.Array[String]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+      inline def setH1(value: String | js.Array[String]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
+      inline def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
       
-      @scala.inline
-      def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value :_*))
+      inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value :_*))
       
-      @scala.inline
-      def setH2(value: String | js.Array[String]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+      inline def setH2(value: String | js.Array[String]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
+      inline def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
       
-      @scala.inline
-      def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value :_*))
+      inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value :_*))
       
-      @scala.inline
-      def setH3(value: String | js.Array[String]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+      inline def setH3(value: String | js.Array[String]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
+      inline def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
       
-      @scala.inline
-      def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value :_*))
+      inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value :_*))
       
-      @scala.inline
-      def setH4(value: String | js.Array[String]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+      inline def setH4(value: String | js.Array[String]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
+      inline def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
       
-      @scala.inline
-      def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value :_*))
+      inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value :_*))
       
-      @scala.inline
-      def setH5(value: String | js.Array[String]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+      inline def setH5(value: String | js.Array[String]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
+      inline def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
       
-      @scala.inline
-      def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value :_*))
+      inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value :_*))
       
-      @scala.inline
-      def setH6(value: String | js.Array[String]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+      inline def setH6(value: String | js.Array[String]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
+      inline def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
       
-      @scala.inline
-      def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value :_*))
+      inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value :_*))
       
-      @scala.inline
-      def setImg(value: ImgInput | js.Array[ImgInput]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: ImgInput | js.Array[ImgInput]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+      inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
       
-      @scala.inline
-      def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value :_*))
+      inline def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value :_*))
       
-      @scala.inline
-      def setOl(value: js.Array[String]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+      inline def setOl(value: js.Array[String]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
+      inline def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
       
-      @scala.inline
-      def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value :_*))
+      inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value :_*))
       
-      @scala.inline
-      def setP(value: String | js.Array[String]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: String | js.Array[String]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+      inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      @scala.inline
-      def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value :_*))
       
-      @scala.inline
-      def setTable(value: TableInput): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: TableInput): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def setUl(value: js.Array[String]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+      inline def setUl(value: js.Array[String]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
+      inline def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
       
-      @scala.inline
-      def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value :_*))
+      inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value :_*))
     }
   }
   
@@ -333,26 +273,20 @@ object mod {
     }
     object CodeInput {
       
-      @scala.inline
-      def apply(content: String | js.Array[String]): CodeInput = {
+      inline def apply(content: String | js.Array[String]): CodeInput = {
         val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
         __obj.asInstanceOf[CodeInput]
       }
       
-      @scala.inline
-      implicit class CodeInputMutableBuilder[Self <: CodeInput] (val x: Self) extends AnyVal {
+      extension [Self <: CodeInput](x: Self) {
         
-        @scala.inline
-        def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+        inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       }
     }
     
@@ -388,8 +322,7 @@ object mod {
     }
     object Converters {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         blockquote: String | js.Array[String],
         code: CodeInput,
         h1: String | js.Array[String],
@@ -408,80 +341,55 @@ object mod {
         __obj.asInstanceOf[Converters]
       }
       
-      @scala.inline
-      implicit class ConvertersMutableBuilder[Self <: Converters] (val x: Self) extends AnyVal {
+      extension [Self <: Converters](x: Self) {
         
-        @scala.inline
-        def setBlockquote(value: String | js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+        inline def setBlockquote(value: String | js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value :_*))
+        inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value :_*))
         
-        @scala.inline
-        def setCode(value: CodeInput): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: CodeInput): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH1(value: String | js.Array[String]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+        inline def setH1(value: String | js.Array[String]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value :_*))
+        inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value :_*))
         
-        @scala.inline
-        def setH2(value: String | js.Array[String]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+        inline def setH2(value: String | js.Array[String]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value :_*))
+        inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value :_*))
         
-        @scala.inline
-        def setH3(value: String | js.Array[String]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+        inline def setH3(value: String | js.Array[String]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value :_*))
+        inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value :_*))
         
-        @scala.inline
-        def setH4(value: String | js.Array[String]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+        inline def setH4(value: String | js.Array[String]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value :_*))
+        inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value :_*))
         
-        @scala.inline
-        def setH5(value: String | js.Array[String]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+        inline def setH5(value: String | js.Array[String]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value :_*))
+        inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value :_*))
         
-        @scala.inline
-        def setH6(value: String | js.Array[String]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+        inline def setH6(value: String | js.Array[String]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value :_*))
+        inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value :_*))
         
-        @scala.inline
-        def setImg(value: ImgInput | js.Array[ImgInput]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+        inline def setImg(value: ImgInput | js.Array[ImgInput]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value :_*))
+        inline def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value :_*))
         
-        @scala.inline
-        def setOl(value: js.Array[String]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+        inline def setOl(value: js.Array[String]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value :_*))
+        inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value :_*))
         
-        @scala.inline
-        def setP(value: String | js.Array[String]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+        inline def setP(value: String | js.Array[String]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value :_*))
+        inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value :_*))
         
-        @scala.inline
-        def setTable(value: TableInput): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+        inline def setTable(value: TableInput): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUl(value: js.Array[String]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+        inline def setUl(value: js.Array[String]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value :_*))
+        inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value :_*))
       }
     }
     
@@ -493,20 +401,16 @@ object mod {
     }
     object ImgInput {
       
-      @scala.inline
-      def apply(source: String, title: String): ImgInput = {
+      inline def apply(source: String, title: String): ImgInput = {
         val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[ImgInput]
       }
       
-      @scala.inline
-      implicit class ImgInputMutableBuilder[Self <: ImgInput] (val x: Self) extends AnyVal {
+      extension [Self <: ImgInput](x: Self) {
         
-        @scala.inline
-        def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -518,26 +422,20 @@ object mod {
     }
     object TableInput {
       
-      @scala.inline
-      def apply(headers: js.Array[String], rows: js.Array[js.Array[String] | StringDictionary[String]]): TableInput = {
+      inline def apply(headers: js.Array[String], rows: js.Array[js.Array[String] | StringDictionary[String]]): TableInput = {
         val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
         __obj.asInstanceOf[TableInput]
       }
       
-      @scala.inline
-      implicit class TableInputMutableBuilder[Self <: TableInput] (val x: Self) extends AnyVal {
+      extension [Self <: TableInput](x: Self) {
         
-        @scala.inline
-        def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
         
-        @scala.inline
-        def setRows(value: js.Array[js.Array[String] | StringDictionary[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: js.Array[js.Array[String] | StringDictionary[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowsVarargs(value: (js.Array[String] | StringDictionary[String])*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: (js.Array[String] | StringDictionary[String])*): Self = StObject.set(x, "rows", js.Array(value :_*))
       }
     }
   }

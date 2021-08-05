@@ -19,28 +19,21 @@ trait DistributionTrustedSignerItem extends StObject {
 }
 object DistributionTrustedSignerItem {
   
-  @scala.inline
-  def apply(): DistributionTrustedSignerItem = {
+  inline def apply(): DistributionTrustedSignerItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistributionTrustedSignerItem]
   }
   
-  @scala.inline
-  implicit class DistributionTrustedSignerItemMutableBuilder[Self <: DistributionTrustedSignerItem] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionTrustedSignerItem](x: Self) {
     
-    @scala.inline
-    def setAwsAccountNumber(value: Input[String]): Self = StObject.set(x, "awsAccountNumber", value.asInstanceOf[js.Any])
+    inline def setAwsAccountNumber(value: Input[String]): Self = StObject.set(x, "awsAccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountNumberUndefined: Self = StObject.set(x, "awsAccountNumber", js.undefined)
+    inline def setAwsAccountNumberUndefined: Self = StObject.set(x, "awsAccountNumber", js.undefined)
     
-    @scala.inline
-    def setKeyPairIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "keyPairIds", value.asInstanceOf[js.Any])
+    inline def setKeyPairIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "keyPairIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairIdsUndefined: Self = StObject.set(x, "keyPairIds", js.undefined)
+    inline def setKeyPairIdsUndefined: Self = StObject.set(x, "keyPairIds", js.undefined)
     
-    @scala.inline
-    def setKeyPairIdsVarargs(value: Input[String]*): Self = StObject.set(x, "keyPairIds", js.Array(value :_*))
+    inline def setKeyPairIdsVarargs(value: Input[String]*): Self = StObject.set(x, "keyPairIds", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait FlushUpdates extends StObject {
 }
 object FlushUpdates {
   
-  @scala.inline
-  def apply(flushUpdates: () => Unit, scheduleUpdate: js.Function0[Unit] => Unit): FlushUpdates = {
+  inline def apply(flushUpdates: () => Unit, scheduleUpdate: js.Function0[Unit] => Unit): FlushUpdates = {
     val __obj = js.Dynamic.literal(flushUpdates = js.Any.fromFunction0(flushUpdates), scheduleUpdate = js.Any.fromFunction1(scheduleUpdate))
     __obj.asInstanceOf[FlushUpdates]
   }
   
-  @scala.inline
-  implicit class FlushUpdatesMutableBuilder[Self <: FlushUpdates] (val x: Self) extends AnyVal {
+  extension [Self <: FlushUpdates](x: Self) {
     
-    @scala.inline
-    def setFlushUpdates(value: () => Unit): Self = StObject.set(x, "flushUpdates", js.Any.fromFunction0(value))
+    inline def setFlushUpdates(value: () => Unit): Self = StObject.set(x, "flushUpdates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScheduleUpdate(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "scheduleUpdate", js.Any.fromFunction1(value))
+    inline def setScheduleUpdate(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "scheduleUpdate", js.Any.fromFunction1(value))
   }
 }

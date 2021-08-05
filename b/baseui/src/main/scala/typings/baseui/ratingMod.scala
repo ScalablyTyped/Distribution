@@ -74,44 +74,32 @@ object ratingMod {
   }
   object EmoticonRatingProps {
     
-    @scala.inline
-    def apply(): EmoticonRatingProps = {
+    inline def apply(): EmoticonRatingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmoticonRatingProps]
     }
     
-    @scala.inline
-    implicit class EmoticonRatingPropsMutableBuilder[Self <: EmoticonRatingProps] (val x: Self) extends AnyVal {
+    extension [Self <: EmoticonRatingProps](x: Self) {
       
-      @scala.inline
-      def setOnChange(value: /* args */ ValueNumber => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* args */ ValueNumber => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: RatingOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: RatingOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -127,30 +115,24 @@ object ratingMod {
   }
   object RatingOverrides {
     
-    @scala.inline
-    def apply(): RatingOverrides = {
+    inline def apply(): RatingOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RatingOverrides]
     }
     
-    @scala.inline
-    implicit class RatingOverridesMutableBuilder[Self <: RatingOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: RatingOverrides](x: Self) {
       
-      @scala.inline
-      def setItem(
+      inline def setItem(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -160,20 +142,16 @@ object ratingMod {
   }
   object RatingState {
     
-    @scala.inline
-    def apply(): RatingState = {
+    inline def apply(): RatingState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RatingState]
     }
     
-    @scala.inline
-    implicit class RatingStateMutableBuilder[Self <: RatingState] (val x: Self) extends AnyVal {
+    extension [Self <: RatingState](x: Self) {
       
-      @scala.inline
-      def setPreviewIndex(value: Double): Self = StObject.set(x, "previewIndex", value.asInstanceOf[js.Any])
+      inline def setPreviewIndex(value: Double): Self = StObject.set(x, "previewIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewIndexUndefined: Self = StObject.set(x, "previewIndex", js.undefined)
+      inline def setPreviewIndexUndefined: Self = StObject.set(x, "previewIndex", js.undefined)
     }
   }
   
@@ -193,50 +171,36 @@ object ratingMod {
   }
   object StarRatingProps {
     
-    @scala.inline
-    def apply(): StarRatingProps = {
+    inline def apply(): StarRatingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StarRatingProps]
     }
     
-    @scala.inline
-    implicit class StarRatingPropsMutableBuilder[Self <: StarRatingProps] (val x: Self) extends AnyVal {
+    extension [Self <: StarRatingProps](x: Self) {
       
-      @scala.inline
-      def setNumItems(value: Double): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
+      inline def setNumItems(value: Double): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
+      inline def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* args */ ValueNumber => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* args */ ValueNumber => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: RatingOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: RatingOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -256,8 +220,7 @@ object ratingMod {
   }
   object StyledRatingItemProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $index: Double,
       $isActive: Boolean,
       $isSelected: Boolean,
@@ -267,20 +230,15 @@ object ratingMod {
       __obj.asInstanceOf[StyledRatingItemProps]
     }
     
-    @scala.inline
-    implicit class StyledRatingItemPropsMutableBuilder[Self <: StyledRatingItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyledRatingItemProps](x: Self) {
       
-      @scala.inline
-      def set$index(value: Double): Self = StObject.set(x, "$index", value.asInstanceOf[js.Any])
+      inline def set$index(value: Double): Self = StObject.set(x, "$index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isActive(value: Boolean): Self = StObject.set(x, "$isActive", value.asInstanceOf[js.Any])
+      inline def set$isActive(value: Boolean): Self = StObject.set(x, "$isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isSelected(value: Boolean): Self = StObject.set(x, "$isSelected", value.asInstanceOf[js.Any])
+      inline def set$isSelected(value: Boolean): Self = StObject.set(x, "$isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$theme(
+      inline def set$theme(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
       ): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
     }
@@ -293,19 +251,16 @@ object ratingMod {
   }
   object StyledRootProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
     ): StyledRootProps = {
       val __obj = js.Dynamic.literal($theme = $theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyledRootProps]
     }
     
-    @scala.inline
-    implicit class StyledRootPropsMutableBuilder[Self <: StyledRootProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyledRootProps](x: Self) {
       
-      @scala.inline
-      def set$theme(
+      inline def set$theme(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
       ): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
     }

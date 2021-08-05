@@ -26,16 +26,16 @@ object clientApiMod {
        with ClientApi {
     def this(hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose: ClientApiParams) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _addons: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _decorateStory: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _noStoryModuleAddMethodHotDispose: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _storyStore: js.Any = js.native
     
     /* CompleteClass */
@@ -69,33 +69,26 @@ object clientApiMod {
     override def storiesOf[StoryFnReturnType](kind: String, m: NodeModule): StoryApi[StoryFnReturnType] = js.native
   }
   
-  @scala.inline
-  def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgTypesEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgTypesEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addDecorator(decorator: DecoratorFunction[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addDecorator(decorator: DecoratorFunction[js.Any], deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addDecorator(decorator: DecoratorFunction[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addDecorator(decorator: DecoratorFunction[js.Any], deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addLoader(loader: LoaderFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addLoader(loader: LoaderFunction, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addLoader(loader: LoaderFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addLoader(loader: LoaderFunction, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addParameters(parameters: Parameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addParameters(parameters: Parameters, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addParameters(parameters: Parameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addParameters(parameters: Parameters, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ClientApi extends StObject {
     
-    var _addons: js.Any
+    /* private */ var _addons: js.Any
     
-    var _decorateStory: js.Any
+    /* private */ var _decorateStory: js.Any
     
-    var _noStoryModuleAddMethodHotDispose: js.Any
+    /* private */ var _noStoryModuleAddMethodHotDispose: js.Any
     
-    var _storyStore: js.Any
+    /* private */ var _storyStore: js.Any
     
     def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit
     
@@ -119,8 +112,7 @@ object clientApiMod {
   }
   object ClientApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _addons: js.Any,
       _decorateStory: js.Any,
       _noStoryModuleAddMethodHotDispose: js.Any,
@@ -140,50 +132,35 @@ object clientApiMod {
       __obj.asInstanceOf[ClientApi]
     }
     
-    @scala.inline
-    implicit class ClientApiMutableBuilder[Self <: ClientApi] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApi](x: Self) {
       
-      @scala.inline
-      def setAddArgTypesEnhancer(value: ArgTypesEnhancer => Unit): Self = StObject.set(x, "addArgTypesEnhancer", js.Any.fromFunction1(value))
+      inline def setAddArgTypesEnhancer(value: ArgTypesEnhancer => Unit): Self = StObject.set(x, "addArgTypesEnhancer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddDecorator(value: DecoratorFunction[js.Any] => Unit): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
+      inline def setAddDecorator(value: DecoratorFunction[js.Any] => Unit): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddLoader(value: LoaderFunction => Unit): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))
+      inline def setAddLoader(value: LoaderFunction => Unit): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddParameters(value: Parameters => Unit): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
+      inline def setAddParameters(value: Parameters => Unit): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
+      inline def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStorybook(value: () => js.Array[GetStorybookKind]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
+      inline def setGetStorybook(value: () => js.Array[GetStorybookKind]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRaw(value: () => js.Array[PublishedStoreItem]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      inline def setRaw(value: () => js.Array[PublishedStoreItem]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
+      inline def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStore(value: () => typings.storybookClientApi.storyStoreMod.default): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
+      inline def setStore(value: () => typings.storybookClientApi.storyStoreMod.default): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStoriesOf(value: (String, NodeModule) => StoryApi[js.Any]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
+      inline def setStoriesOf(value: (String, NodeModule) => StoryApi[js.Any]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_addons(value: js.Any): Self = StObject.set(x, "_addons", value.asInstanceOf[js.Any])
+      inline def set_addons(value: js.Any): Self = StObject.set(x, "_addons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_decorateStory(value: js.Any): Self = StObject.set(x, "_decorateStory", value.asInstanceOf[js.Any])
+      inline def set_decorateStory(value: js.Any): Self = StObject.set(x, "_decorateStory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_noStoryModuleAddMethodHotDispose(value: js.Any): Self = StObject.set(x, "_noStoryModuleAddMethodHotDispose", value.asInstanceOf[js.Any])
+      inline def set_noStoryModuleAddMethodHotDispose(value: js.Any): Self = StObject.set(x, "_noStoryModuleAddMethodHotDispose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_storyStore(value: js.Any): Self = StObject.set(x, "_storyStore", value.asInstanceOf[js.Any])
+      inline def set_storyStore(value: js.Any): Self = StObject.set(x, "_storyStore", value.asInstanceOf[js.Any])
     }
   }
 }

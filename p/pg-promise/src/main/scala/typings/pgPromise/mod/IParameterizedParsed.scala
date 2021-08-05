@@ -17,28 +17,21 @@ trait IParameterizedParsed extends StObject {
 }
 object IParameterizedParsed {
   
-  @scala.inline
-  def apply(binary: Boolean, rowMode: Unit | array, text: String, values: js.Array[js.Any]): IParameterizedParsed = {
+  inline def apply(binary: Boolean, rowMode: Unit | array, text: String, values: js.Array[js.Any]): IParameterizedParsed = {
     val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any], rowMode = rowMode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParameterizedParsed]
   }
   
-  @scala.inline
-  implicit class IParameterizedParsedMutableBuilder[Self <: IParameterizedParsed] (val x: Self) extends AnyVal {
+  extension [Self <: IParameterizedParsed](x: Self) {
     
-    @scala.inline
-    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowMode(value: Unit | array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
+    inline def setRowMode(value: Unit | array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

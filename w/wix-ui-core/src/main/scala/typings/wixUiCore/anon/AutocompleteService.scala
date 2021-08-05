@@ -16,8 +16,7 @@ trait AutocompleteService extends StObject {
 }
 object AutocompleteService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutocompleteService: () => js.Any,
     AutocompleteServiceStatus: ERROR,
     PlacesService: () => js.Any,
@@ -27,19 +26,14 @@ object AutocompleteService {
     __obj.asInstanceOf[AutocompleteService]
   }
   
-  @scala.inline
-  implicit class AutocompleteServiceMutableBuilder[Self <: AutocompleteService] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteService](x: Self) {
     
-    @scala.inline
-    def setAutocompleteService(value: () => js.Any): Self = StObject.set(x, "AutocompleteService", js.Any.fromFunction0(value))
+    inline def setAutocompleteService(value: () => js.Any): Self = StObject.set(x, "AutocompleteService", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAutocompleteServiceStatus(value: ERROR): Self = StObject.set(x, "AutocompleteServiceStatus", value.asInstanceOf[js.Any])
+    inline def setAutocompleteServiceStatus(value: ERROR): Self = StObject.set(x, "AutocompleteServiceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacesService(value: () => js.Any): Self = StObject.set(x, "PlacesService", js.Any.fromFunction0(value))
+    inline def setPlacesService(value: () => js.Any): Self = StObject.set(x, "PlacesService", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlacesServiceStatus(value: OK): Self = StObject.set(x, "PlacesServiceStatus", value.asInstanceOf[js.Any])
+    inline def setPlacesServiceStatus(value: OK): Self = StObject.set(x, "PlacesServiceStatus", value.asInstanceOf[js.Any])
   }
 }

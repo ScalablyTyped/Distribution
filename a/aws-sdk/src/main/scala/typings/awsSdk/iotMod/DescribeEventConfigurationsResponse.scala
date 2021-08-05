@@ -23,31 +23,23 @@ trait DescribeEventConfigurationsResponse extends StObject {
 }
 object DescribeEventConfigurationsResponse {
   
-  @scala.inline
-  def apply(): DescribeEventConfigurationsResponse = {
+  inline def apply(): DescribeEventConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEventConfigurationsResponseMutableBuilder[Self <: DescribeEventConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setEventConfigurations(value: EventConfigurations): Self = StObject.set(x, "eventConfigurations", value.asInstanceOf[js.Any])
+    inline def setEventConfigurations(value: EventConfigurations): Self = StObject.set(x, "eventConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventConfigurationsUndefined: Self = StObject.set(x, "eventConfigurations", js.undefined)
+    inline def setEventConfigurationsUndefined: Self = StObject.set(x, "eventConfigurations", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
   }
 }

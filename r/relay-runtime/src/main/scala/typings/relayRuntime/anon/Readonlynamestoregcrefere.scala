@@ -19,19 +19,15 @@ trait Readonlynamestoregcrefere
 }
 object Readonlynamestoregcrefere {
   
-  @scala.inline
-  def apply(references: Set[DataID]): Readonlynamestoregcrefere = {
+  inline def apply(references: Set[DataID]): Readonlynamestoregcrefere = {
     val __obj = js.Dynamic.literal(name = "store.gc", references = references.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynamestoregcrefere]
   }
   
-  @scala.inline
-  implicit class ReadonlynamestoregcrefereMutableBuilder[Self <: Readonlynamestoregcrefere] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynamestoregcrefere](x: Self) {
     
-    @scala.inline
-    def setName(value: storeDotgc): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: storeDotgc): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferences(value: Set[DataID]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: Set[DataID]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
   }
 }

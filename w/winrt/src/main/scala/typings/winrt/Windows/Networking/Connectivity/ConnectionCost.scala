@@ -9,8 +9,7 @@ trait ConnectionCost
      with IConnectionCost
 object ConnectionCost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approachingDataLimit: Boolean,
     networkCostType: NetworkCostType,
     overDataLimit: Boolean,

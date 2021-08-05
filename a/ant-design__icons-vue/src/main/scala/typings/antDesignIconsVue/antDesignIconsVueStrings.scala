@@ -8,6 +8,5 @@ object antDesignIconsVueStrings {
   
   @js.native
   sealed trait EventHandlers extends StObject
-  @scala.inline
-  def EventHandlers: EventHandlers = "EventHandlers".asInstanceOf[EventHandlers]
+  inline def EventHandlers: EventHandlers = "EventHandlers".asInstanceOf[EventHandlers]
 }

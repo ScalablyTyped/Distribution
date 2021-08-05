@@ -37,31 +37,25 @@ trait NotificationDefaultSettings extends StObject {
 }
 object NotificationDefaultSettings {
   
-  @scala.inline
-  def apply(): NotificationDefaultSettings = {
+  inline def apply(): NotificationDefaultSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationDefaultSettings]
   }
   
-  @scala.inline
-  implicit class NotificationDefaultSettingsMutableBuilder[Self <: NotificationDefaultSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationDefaultSettings](x: Self) {
     
-    @scala.inline
-    def setSenderEmailNotifications(
+    inline def setSenderEmailNotifications(
       value: /* Contains the settings for the email notifications that senders receive about the envelopes that they send. */ SenderEmailNotifications
     ): Self = StObject.set(x, "senderEmailNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderEmailNotificationsUndefined: Self = StObject.set(x, "senderEmailNotifications", js.undefined)
+    inline def setSenderEmailNotificationsUndefined: Self = StObject.set(x, "senderEmailNotifications", js.undefined)
     
-    @scala.inline
-    def setSignerEmailNotifications(
+    inline def setSignerEmailNotifications(
       value: /* An array of email notifications that specifies the email the user receives when they are a sender. When the specific email notification is
       set to true, the user receives those types of email notifications from DocuSign. The user inherits the default account sender email notification settings when the user is created.
       */ SignerEmailNotifications
     ): Self = StObject.set(x, "signerEmailNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerEmailNotificationsUndefined: Self = StObject.set(x, "signerEmailNotifications", js.undefined)
+    inline def setSignerEmailNotificationsUndefined: Self = StObject.set(x, "signerEmailNotifications", js.undefined)
   }
 }

@@ -51,8 +51,7 @@ object regexLibMod {
   @js.native
   val emojiStr: String = js.native
   
-  @scala.inline
-  def getDomainNameStr(group: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameStr")(group.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDomainNameStr(group: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameStr")(group.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "letterRe")
   @js.native

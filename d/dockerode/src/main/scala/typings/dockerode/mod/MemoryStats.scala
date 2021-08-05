@@ -19,28 +19,21 @@ trait MemoryStats extends StObject {
 }
 object MemoryStats {
   
-  @scala.inline
-  def apply(failcnt: Double, limit: Double, max_usage: Double, stats: Activeanon, usage: Double): MemoryStats = {
+  inline def apply(failcnt: Double, limit: Double, max_usage: Double, stats: Activeanon, usage: Double): MemoryStats = {
     val __obj = js.Dynamic.literal(failcnt = failcnt.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], max_usage = max_usage.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryStats]
   }
   
-  @scala.inline
-  implicit class MemoryStatsMutableBuilder[Self <: MemoryStats] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryStats](x: Self) {
     
-    @scala.inline
-    def setFailcnt(value: Double): Self = StObject.set(x, "failcnt", value.asInstanceOf[js.Any])
+    inline def setFailcnt(value: Double): Self = StObject.set(x, "failcnt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_usage(value: Double): Self = StObject.set(x, "max_usage", value.asInstanceOf[js.Any])
+    inline def setMax_usage(value: Double): Self = StObject.set(x, "max_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Activeanon): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Activeanon): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
   }
 }

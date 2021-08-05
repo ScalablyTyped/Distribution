@@ -18,19 +18,15 @@ trait CountPendingDecisionTasksInput extends StObject {
 }
 object CountPendingDecisionTasksInput {
   
-  @scala.inline
-  def apply(domain: DomainName, taskList: TaskList): CountPendingDecisionTasksInput = {
+  inline def apply(domain: DomainName, taskList: TaskList): CountPendingDecisionTasksInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], taskList = taskList.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountPendingDecisionTasksInput]
   }
   
-  @scala.inline
-  implicit class CountPendingDecisionTasksInputMutableBuilder[Self <: CountPendingDecisionTasksInput] (val x: Self) extends AnyVal {
+  extension [Self <: CountPendingDecisionTasksInput](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
+    inline def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
   }
 }

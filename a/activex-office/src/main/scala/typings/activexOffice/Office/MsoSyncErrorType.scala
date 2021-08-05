@@ -43,54 +43,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSyncErrorType extends StObject
 object MsoSyncErrorType {
   
-  @scala.inline
-  def msoSyncErrorCouldNotCompare: `13` = 13.asInstanceOf[`13`]
+  inline def msoSyncErrorCouldNotCompare: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def msoSyncErrorCouldNotConnect: `2` = 2.asInstanceOf[`2`]
+  inline def msoSyncErrorCouldNotConnect: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoSyncErrorCouldNotOpen: `11` = 11.asInstanceOf[`11`]
+  inline def msoSyncErrorCouldNotOpen: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoSyncErrorCouldNotResolve: `14` = 14.asInstanceOf[`14`]
+  inline def msoSyncErrorCouldNotResolve: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def msoSyncErrorCouldNotUpdate: `12` = 12.asInstanceOf[`12`]
+  inline def msoSyncErrorCouldNotUpdate: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoSyncErrorFileInUse: `6` = 6.asInstanceOf[`6`]
+  inline def msoSyncErrorFileInUse: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoSyncErrorFileNotFound: `4` = 4.asInstanceOf[`4`]
+  inline def msoSyncErrorFileNotFound: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoSyncErrorFileTooLarge: `5` = 5.asInstanceOf[`5`]
+  inline def msoSyncErrorFileTooLarge: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoSyncErrorNoNetwork: `15` = 15.asInstanceOf[`15`]
+  inline def msoSyncErrorNoNetwork: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def msoSyncErrorNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoSyncErrorNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoSyncErrorOutOfSpace: `3` = 3.asInstanceOf[`3`]
+  inline def msoSyncErrorOutOfSpace: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoSyncErrorUnauthorizedUser: `1` = 1.asInstanceOf[`1`]
+  inline def msoSyncErrorUnauthorizedUser: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoSyncErrorUnknown: `16` = 16.asInstanceOf[`16`]
+  inline def msoSyncErrorUnknown: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def msoSyncErrorUnknownDownload: `10` = 10.asInstanceOf[`10`]
+  inline def msoSyncErrorUnknownDownload: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoSyncErrorUnknownUpload: `9` = 9.asInstanceOf[`9`]
+  inline def msoSyncErrorUnknownUpload: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoSyncErrorVirusDownload: `8` = 8.asInstanceOf[`8`]
+  inline def msoSyncErrorVirusDownload: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoSyncErrorVirusUpload: `7` = 7.asInstanceOf[`7`]
+  inline def msoSyncErrorVirusUpload: `7` = 7.asInstanceOf[`7`]
 }

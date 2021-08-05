@@ -22,40 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object LayersControlProps {
   
-  @scala.inline
-  def apply(): LayersControlProps = {
+  inline def apply(): LayersControlProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayersControlProps]
   }
   
-  @scala.inline
-  implicit class LayersControlPropsMutableBuilder[Self <: LayersControlProps] (val x: Self) extends AnyVal {
+  extension [Self <: LayersControlProps](x: Self) {
     
-    @scala.inline
-    def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
+    inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
+    inline def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
     
-    @scala.inline
-    def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setHideSingleBase(value: Boolean): Self = StObject.set(x, "hideSingleBase", value.asInstanceOf[js.Any])
+    inline def setHideSingleBase(value: Boolean): Self = StObject.set(x, "hideSingleBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSingleBaseUndefined: Self = StObject.set(x, "hideSingleBase", js.undefined)
+    inline def setHideSingleBaseUndefined: Self = StObject.set(x, "hideSingleBase", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait DASHFragmentSelector extends StObject {
 }
 object DASHFragmentSelector {
   
-  @scala.inline
-  def apply(): DASHFragmentSelector = {
+  inline def apply(): DASHFragmentSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DASHFragmentSelector]
   }
   
-  @scala.inline
-  implicit class DASHFragmentSelectorMutableBuilder[Self <: DASHFragmentSelector] (val x: Self) extends AnyVal {
+  extension [Self <: DASHFragmentSelector](x: Self) {
     
-    @scala.inline
-    def setFragmentSelectorType(value: DASHFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
+    inline def setFragmentSelectorType(value: DASHFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentSelectorTypeUndefined: Self = StObject.set(x, "FragmentSelectorType", js.undefined)
+    inline def setFragmentSelectorTypeUndefined: Self = StObject.set(x, "FragmentSelectorType", js.undefined)
     
-    @scala.inline
-    def setTimestampRange(value: DASHTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
+    inline def setTimestampRange(value: DASHTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampRangeUndefined: Self = StObject.set(x, "TimestampRange", js.undefined)
+    inline def setTimestampRangeUndefined: Self = StObject.set(x, "TimestampRange", js.undefined)
   }
 }

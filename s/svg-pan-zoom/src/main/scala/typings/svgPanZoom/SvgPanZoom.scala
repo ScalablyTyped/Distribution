@@ -22,26 +22,20 @@ object SvgPanZoom {
   }
   object CustomEventHandler {
     
-    @scala.inline
-    def apply(destroy: js.Function, haltEventListeners: js.Array[String], init: CustomEventOptions => Unit): CustomEventHandler = {
+    inline def apply(destroy: js.Function, haltEventListeners: js.Array[String], init: CustomEventOptions => Unit): CustomEventHandler = {
       val __obj = js.Dynamic.literal(destroy = destroy.asInstanceOf[js.Any], haltEventListeners = haltEventListeners.asInstanceOf[js.Any], init = js.Any.fromFunction1(init))
       __obj.asInstanceOf[CustomEventHandler]
     }
     
-    @scala.inline
-    implicit class CustomEventHandlerMutableBuilder[Self <: CustomEventHandler] (val x: Self) extends AnyVal {
+    extension [Self <: CustomEventHandler](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: js.Function): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+      inline def setDestroy(value: js.Function): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHaltEventListeners(value: js.Array[String]): Self = StObject.set(x, "haltEventListeners", value.asInstanceOf[js.Any])
+      inline def setHaltEventListeners(value: js.Array[String]): Self = StObject.set(x, "haltEventListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHaltEventListenersVarargs(value: String*): Self = StObject.set(x, "haltEventListeners", js.Array(value :_*))
+      inline def setHaltEventListenersVarargs(value: String*): Self = StObject.set(x, "haltEventListeners", js.Array(value :_*))
       
-      @scala.inline
-      def setInit(value: CustomEventOptions => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: CustomEventOptions => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
   
@@ -67,20 +61,16 @@ object SvgPanZoom {
   }
   object CustomEventOptions {
     
-    @scala.inline
-    def apply(instance: Instance, svgElement: SVGSVGElement): CustomEventOptions = {
+    inline def apply(instance: Instance, svgElement: SVGSVGElement): CustomEventOptions = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], svgElement = svgElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomEventOptions]
     }
     
-    @scala.inline
-    implicit class CustomEventOptionsMutableBuilder[Self <: CustomEventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomEventOptions](x: Self) {
       
-      @scala.inline
-      def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgElement(value: SVGSVGElement): Self = StObject.set(x, "svgElement", value.asInstanceOf[js.Any])
+      inline def setSvgElement(value: SVGSVGElement): Self = StObject.set(x, "svgElement", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,140 +331,96 @@ object SvgPanZoom {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBeforePan(value: (/* oldPan */ Point, /* newPan */ Point) => Unit | Boolean | PointModifier): Self = StObject.set(x, "beforePan", js.Any.fromFunction2(value))
+      inline def setBeforePan(value: (/* oldPan */ Point, /* newPan */ Point) => Unit | Boolean | PointModifier): Self = StObject.set(x, "beforePan", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforePanUndefined: Self = StObject.set(x, "beforePan", js.undefined)
+      inline def setBeforePanUndefined: Self = StObject.set(x, "beforePan", js.undefined)
       
-      @scala.inline
-      def setBeforeZoom(value: (/* oldScale */ Double, /* newScale */ Double) => Unit | Boolean): Self = StObject.set(x, "beforeZoom", js.Any.fromFunction2(value))
+      inline def setBeforeZoom(value: (/* oldScale */ Double, /* newScale */ Double) => Unit | Boolean): Self = StObject.set(x, "beforeZoom", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeZoomUndefined: Self = StObject.set(x, "beforeZoom", js.undefined)
+      inline def setBeforeZoomUndefined: Self = StObject.set(x, "beforeZoom", js.undefined)
       
-      @scala.inline
-      def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setContain(value: Boolean): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+      inline def setContain(value: Boolean): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+      inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
       
-      @scala.inline
-      def setControlIconsEnabled(value: Boolean): Self = StObject.set(x, "controlIconsEnabled", value.asInstanceOf[js.Any])
+      inline def setControlIconsEnabled(value: Boolean): Self = StObject.set(x, "controlIconsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlIconsEnabledUndefined: Self = StObject.set(x, "controlIconsEnabled", js.undefined)
+      inline def setControlIconsEnabledUndefined: Self = StObject.set(x, "controlIconsEnabled", js.undefined)
       
-      @scala.inline
-      def setCustomEventsHandler(value: CustomEventHandler): Self = StObject.set(x, "customEventsHandler", value.asInstanceOf[js.Any])
+      inline def setCustomEventsHandler(value: CustomEventHandler): Self = StObject.set(x, "customEventsHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomEventsHandlerUndefined: Self = StObject.set(x, "customEventsHandler", js.undefined)
+      inline def setCustomEventsHandlerUndefined: Self = StObject.set(x, "customEventsHandler", js.undefined)
       
-      @scala.inline
-      def setDblClickZoomEnabled(value: Boolean): Self = StObject.set(x, "dblClickZoomEnabled", value.asInstanceOf[js.Any])
+      inline def setDblClickZoomEnabled(value: Boolean): Self = StObject.set(x, "dblClickZoomEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDblClickZoomEnabledUndefined: Self = StObject.set(x, "dblClickZoomEnabled", js.undefined)
+      inline def setDblClickZoomEnabledUndefined: Self = StObject.set(x, "dblClickZoomEnabled", js.undefined)
       
-      @scala.inline
-      def setEventsListenerElement(value: SVGElement): Self = StObject.set(x, "eventsListenerElement", value.asInstanceOf[js.Any])
+      inline def setEventsListenerElement(value: SVGElement): Self = StObject.set(x, "eventsListenerElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsListenerElementUndefined: Self = StObject.set(x, "eventsListenerElement", js.undefined)
+      inline def setEventsListenerElementUndefined: Self = StObject.set(x, "eventsListenerElement", js.undefined)
       
-      @scala.inline
-      def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+      inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+      inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
       
-      @scala.inline
-      def setMouseWheelZoomEnabled(value: Boolean): Self = StObject.set(x, "mouseWheelZoomEnabled", value.asInstanceOf[js.Any])
+      inline def setMouseWheelZoomEnabled(value: Boolean): Self = StObject.set(x, "mouseWheelZoomEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseWheelZoomEnabledUndefined: Self = StObject.set(x, "mouseWheelZoomEnabled", js.undefined)
+      inline def setMouseWheelZoomEnabledUndefined: Self = StObject.set(x, "mouseWheelZoomEnabled", js.undefined)
       
-      @scala.inline
-      def setOnPan(value: /* newPan */ Point => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
+      inline def setOnPan(value: /* newPan */ Point => Unit): Self = StObject.set(x, "onPan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPanUndefined: Self = StObject.set(x, "onPan", js.undefined)
+      inline def setOnPanUndefined: Self = StObject.set(x, "onPan", js.undefined)
       
-      @scala.inline
-      def setOnUpdatedCTM(value: /* newCTM */ SVGMatrix => Unit): Self = StObject.set(x, "onUpdatedCTM", js.Any.fromFunction1(value))
+      inline def setOnUpdatedCTM(value: /* newCTM */ SVGMatrix => Unit): Self = StObject.set(x, "onUpdatedCTM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdatedCTMUndefined: Self = StObject.set(x, "onUpdatedCTM", js.undefined)
+      inline def setOnUpdatedCTMUndefined: Self = StObject.set(x, "onUpdatedCTM", js.undefined)
       
-      @scala.inline
-      def setOnZoom(value: /* newScale */ Double => Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction1(value))
+      inline def setOnZoom(value: /* newScale */ Double => Unit): Self = StObject.set(x, "onZoom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnZoomUndefined: Self = StObject.set(x, "onZoom", js.undefined)
+      inline def setOnZoomUndefined: Self = StObject.set(x, "onZoom", js.undefined)
       
-      @scala.inline
-      def setPanEnabled(value: Boolean): Self = StObject.set(x, "panEnabled", value.asInstanceOf[js.Any])
+      inline def setPanEnabled(value: Boolean): Self = StObject.set(x, "panEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanEnabledUndefined: Self = StObject.set(x, "panEnabled", js.undefined)
+      inline def setPanEnabledUndefined: Self = StObject.set(x, "panEnabled", js.undefined)
       
-      @scala.inline
-      def setPreventMouseEventsDefault(value: Boolean): Self = StObject.set(x, "preventMouseEventsDefault", value.asInstanceOf[js.Any])
+      inline def setPreventMouseEventsDefault(value: Boolean): Self = StObject.set(x, "preventMouseEventsDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventMouseEventsDefaultUndefined: Self = StObject.set(x, "preventMouseEventsDefault", js.undefined)
+      inline def setPreventMouseEventsDefaultUndefined: Self = StObject.set(x, "preventMouseEventsDefault", js.undefined)
       
-      @scala.inline
-      def setRefreshRate(value: Double | auto): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
+      inline def setRefreshRate(value: Double | auto): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshRateUndefined: Self = StObject.set(x, "refreshRate", js.undefined)
+      inline def setRefreshRateUndefined: Self = StObject.set(x, "refreshRate", js.undefined)
       
-      @scala.inline
-      def setViewportSelector(value: String | HTMLElement | SVGElement): Self = StObject.set(x, "viewportSelector", value.asInstanceOf[js.Any])
+      inline def setViewportSelector(value: String | HTMLElement | SVGElement): Self = StObject.set(x, "viewportSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportSelectorUndefined: Self = StObject.set(x, "viewportSelector", js.undefined)
+      inline def setViewportSelectorUndefined: Self = StObject.set(x, "viewportSelector", js.undefined)
       
-      @scala.inline
-      def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
+      inline def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomEnabledUndefined: Self = StObject.set(x, "zoomEnabled", js.undefined)
+      inline def setZoomEnabledUndefined: Self = StObject.set(x, "zoomEnabled", js.undefined)
       
-      @scala.inline
-      def setZoomScaleSensitivity(value: Double): Self = StObject.set(x, "zoomScaleSensitivity", value.asInstanceOf[js.Any])
+      inline def setZoomScaleSensitivity(value: Double): Self = StObject.set(x, "zoomScaleSensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomScaleSensitivityUndefined: Self = StObject.set(x, "zoomScaleSensitivity", js.undefined)
+      inline def setZoomScaleSensitivityUndefined: Self = StObject.set(x, "zoomScaleSensitivity", js.undefined)
     }
   }
   
@@ -486,20 +432,16 @@ object SvgPanZoom {
   }
   object Point {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Point = {
+    inline def apply(x: Double, y: Double): Point = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -511,20 +453,16 @@ object SvgPanZoom {
   }
   object PointModifier {
     
-    @scala.inline
-    def apply(x: Double | Boolean, y: Double | Boolean): PointModifier = {
+    inline def apply(x: Double | Boolean, y: Double | Boolean): PointModifier = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointModifier]
     }
     
-    @scala.inline
-    implicit class PointModifierMutableBuilder[Self <: PointModifier] (val x: Self) extends AnyVal {
+    extension [Self <: PointModifier](x: Self) {
       
-      @scala.inline
-      def setX(value: Double | Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double | Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double | Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double | Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -540,26 +478,20 @@ object SvgPanZoom {
   }
   object Sizes {
     
-    @scala.inline
-    def apply(height: Double, realZoom: Double, viewBox: Height, width: Double): Sizes = {
+    inline def apply(height: Double, realZoom: Double, viewBox: Height, width: Double): Sizes = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], realZoom = realZoom.asInstanceOf[js.Any], viewBox = viewBox.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sizes]
     }
     
-    @scala.inline
-    implicit class SizesMutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
+    extension [Self <: Sizes](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealZoom(value: Double): Self = StObject.set(x, "realZoom", value.asInstanceOf[js.Any])
+      inline def setRealZoom(value: Double): Self = StObject.set(x, "realZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBox(value: Height): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+      inline def setViewBox(value: Height): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

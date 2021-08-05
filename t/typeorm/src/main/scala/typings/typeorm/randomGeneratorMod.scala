@@ -28,13 +28,11 @@ object randomGeneratorMod {
       *   example 1: sha1('Kevin van Zonneveld')
       *   returns 1: '54916d2e62f65b3afa6e192e6a601cdbe5cb5897'
       */
-    @scala.inline
-    def sha1(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha1(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * RFC4122 compliant UUID v4 generator.
       */
-    @scala.inline
-    def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
+    inline def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
   }
 }

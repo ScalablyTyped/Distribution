@@ -23,22 +23,17 @@ trait Alpha extends StObject {
 }
 object Alpha {
   
-  @scala.inline
-  def apply(alpha: Double, beta: Double, gamma: Double): Alpha = {
+  inline def apply(alpha: Double, beta: Double, gamma: Double): Alpha = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alpha]
   }
   
-  @scala.inline
-  implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+  extension [Self <: Alpha](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
   }
 }

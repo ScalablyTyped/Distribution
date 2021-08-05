@@ -10,22 +10,17 @@ trait ArtifactRule extends StObject {
 }
 object ArtifactRule {
   
-  @scala.inline
-  def apply(): ArtifactRule = {
+  inline def apply(): ArtifactRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtifactRule]
   }
   
-  @scala.inline
-  implicit class ArtifactRuleMutableBuilder[Self <: ArtifactRule] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactRule](x: Self) {
     
-    @scala.inline
-    def setArtifactRule(value: js.Array[String]): Self = StObject.set(x, "artifactRule", value.asInstanceOf[js.Any])
+    inline def setArtifactRule(value: js.Array[String]): Self = StObject.set(x, "artifactRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactRuleUndefined: Self = StObject.set(x, "artifactRule", js.undefined)
+    inline def setArtifactRuleUndefined: Self = StObject.set(x, "artifactRule", js.undefined)
     
-    @scala.inline
-    def setArtifactRuleVarargs(value: String*): Self = StObject.set(x, "artifactRule", js.Array(value :_*))
+    inline def setArtifactRuleVarargs(value: String*): Self = StObject.set(x, "artifactRule", js.Array(value :_*))
   }
 }

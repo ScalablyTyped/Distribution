@@ -8,6 +8,5 @@ object miniCssExtractPluginStrings {
   
   @js.native
   sealed trait textSlashcss extends StObject
-  @scala.inline
-  def textSlashcss: textSlashcss = "text/css".asInstanceOf[textSlashcss]
+  inline def textSlashcss: textSlashcss = "text/css".asInstanceOf[textSlashcss]
 }

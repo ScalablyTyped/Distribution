@@ -20,37 +20,27 @@ trait FractalConfig extends StObject {
 }
 object FractalConfig {
   
-  @scala.inline
-  def apply(): FractalConfig = {
+  inline def apply(): FractalConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FractalConfig]
   }
   
-  @scala.inline
-  implicit class FractalConfigMutableBuilder[Self <: FractalConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FractalConfig](x: Self) {
     
-    @scala.inline
-    def setProject(value: Author): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: Author): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectDotauthor(value: String): Self = StObject.set(x, "project.author", value.asInstanceOf[js.Any])
+    inline def setProjectDotauthor(value: String): Self = StObject.set(x, "project.author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectDotauthorUndefined: Self = StObject.set(x, "project.author", js.undefined)
+    inline def setProjectDotauthorUndefined: Self = StObject.set(x, "project.author", js.undefined)
     
-    @scala.inline
-    def setProjectDottitle(value: String): Self = StObject.set(x, "project.title", value.asInstanceOf[js.Any])
+    inline def setProjectDottitle(value: String): Self = StObject.set(x, "project.title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectDottitleUndefined: Self = StObject.set(x, "project.title", js.undefined)
+    inline def setProjectDottitleUndefined: Self = StObject.set(x, "project.title", js.undefined)
     
-    @scala.inline
-    def setProjectDotversion(value: String): Self = StObject.set(x, "project.version", value.asInstanceOf[js.Any])
+    inline def setProjectDotversion(value: String): Self = StObject.set(x, "project.version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectDotversionUndefined: Self = StObject.set(x, "project.version", js.undefined)
+    inline def setProjectDotversionUndefined: Self = StObject.set(x, "project.version", js.undefined)
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

@@ -74,18 +74,15 @@ object mod extends Shortcut {
   }
   object Plugin2 {
     
-    @scala.inline
-    def apply[T1, T2](`match`: (js.Any, js.Any) => Boolean): Plugin2[T1, T2] = {
+    inline def apply[T1, T2](`match`: (js.Any, js.Any) => Boolean): Plugin2[T1, T2] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
       __obj.asInstanceOf[Plugin2[T1, T2]]
     }
     
-    @scala.inline
-    implicit class Plugin2MutableBuilder[Self <: Plugin2[?, ?], T1, T2] (val x: Self & (Plugin2[T1, T2])) extends AnyVal {
+    extension [Self <: Plugin2[?, ?], T1, T2](x: Self & (Plugin2[T1, T2])) {
       
-      @scala.inline
-      def setMatch(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+      inline def setMatch(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
     }
   }
   
@@ -173,20 +170,16 @@ object mod extends Shortcut {
   }
   object ReceivedRequest {
     
-    @scala.inline
-    def apply(method: Method, url: String): ReceivedRequest = {
+    inline def apply(method: Method, url: String): ReceivedRequest = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceivedRequest]
     }
     
-    @scala.inline
-    implicit class ReceivedRequestMutableBuilder[Self <: ReceivedRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ReceivedRequest](x: Self) {
       
-      @scala.inline
-      def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,20 +206,16 @@ object mod extends Shortcut {
     }
     object Delete {
       
-      @scala.inline
-      def apply[TResponse](request: MethodPath, response: Data[TResponse]): Delete[TResponse] = {
+      inline def apply[TResponse](request: MethodPath, response: Data[TResponse]): Delete[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Delete[TResponse]]
       }
       
-      @scala.inline
-      implicit class DeleteMutableBuilder[Self <: Delete[?], TResponse] (val x: Self & Delete[TResponse]) extends AnyVal {
+      extension [Self <: Delete[?], TResponse](x: Self & Delete[TResponse]) {
         
-        @scala.inline
-        def setRequest(value: MethodPath): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: MethodPath): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -241,20 +230,16 @@ object mod extends Shortcut {
     }
     object Get {
       
-      @scala.inline
-      def apply[TResponse](request: Headers, response: Data[TResponse]): Get[TResponse] = {
+      inline def apply[TResponse](request: Headers, response: Data[TResponse]): Get[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Get[TResponse]]
       }
       
-      @scala.inline
-      implicit class GetMutableBuilder[Self <: Get[?], TResponse] (val x: Self & Get[TResponse]) extends AnyVal {
+      extension [Self <: Get[?], TResponse](x: Self & Get[TResponse]) {
         
-        @scala.inline
-        def setRequest(value: Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -269,20 +254,16 @@ object mod extends Shortcut {
     }
     object Head {
       
-      @scala.inline
-      def apply[TResponse](request: Regex, response: Data[TResponse]): Head[TResponse] = {
+      inline def apply[TResponse](request: Regex, response: Data[TResponse]): Head[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Head[TResponse]]
       }
       
-      @scala.inline
-      implicit class HeadMutableBuilder[Self <: Head[?], TResponse] (val x: Self & Head[TResponse]) extends AnyVal {
+      extension [Self <: Head[?], TResponse](x: Self & Head[TResponse]) {
         
-        @scala.inline
-        def setRequest(value: Regex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Regex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -297,20 +278,16 @@ object mod extends Shortcut {
     }
     object Jsonp {
       
-      @scala.inline
-      def apply[TResponse](request: PathString, response: Data[TResponse]): Jsonp[TResponse] = {
+      inline def apply[TResponse](request: PathString, response: Data[TResponse]): Jsonp[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Jsonp[TResponse]]
       }
       
-      @scala.inline
-      implicit class JsonpMutableBuilder[Self <: Jsonp[?], TResponse] (val x: Self & Jsonp[TResponse]) extends AnyVal {
+      extension [Self <: Jsonp[?], TResponse](x: Self & Jsonp[TResponse]) {
         
-        @scala.inline
-        def setRequest(value: PathString): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: PathString): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -329,26 +306,19 @@ object mod extends Shortcut {
     trait Method extends StObject
     object Method {
       
-      @scala.inline
-      def DELETE: typings.protractorHttpMock.protractorHttpMockStrings.DELETE = "DELETE".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.DELETE]
+      inline def DELETE: typings.protractorHttpMock.protractorHttpMockStrings.DELETE = "DELETE".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.DELETE]
       
-      @scala.inline
-      def GET: typings.protractorHttpMock.protractorHttpMockStrings.GET = "GET".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.GET]
+      inline def GET: typings.protractorHttpMock.protractorHttpMockStrings.GET = "GET".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.GET]
       
-      @scala.inline
-      def HEAD: typings.protractorHttpMock.protractorHttpMockStrings.HEAD = "HEAD".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.HEAD]
+      inline def HEAD: typings.protractorHttpMock.protractorHttpMockStrings.HEAD = "HEAD".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.HEAD]
       
-      @scala.inline
-      def JSONP: typings.protractorHttpMock.protractorHttpMockStrings.JSONP = "JSONP".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.JSONP]
+      inline def JSONP: typings.protractorHttpMock.protractorHttpMockStrings.JSONP = "JSONP".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.JSONP]
       
-      @scala.inline
-      def PATCH: typings.protractorHttpMock.protractorHttpMockStrings.PATCH = "PATCH".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.PATCH]
+      inline def PATCH: typings.protractorHttpMock.protractorHttpMockStrings.PATCH = "PATCH".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.PATCH]
       
-      @scala.inline
-      def POST: typings.protractorHttpMock.protractorHttpMockStrings.POST = "POST".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.POST]
+      inline def POST: typings.protractorHttpMock.protractorHttpMockStrings.POST = "POST".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.POST]
       
-      @scala.inline
-      def PUT: typings.protractorHttpMock.protractorHttpMockStrings.PUT = "PUT".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.PUT]
+      inline def PUT: typings.protractorHttpMock.protractorHttpMockStrings.PUT = "PUT".asInstanceOf[typings.protractorHttpMock.protractorHttpMockStrings.PUT]
     }
     
     /**
@@ -362,20 +332,16 @@ object mod extends Shortcut {
     }
     object Patch {
       
-      @scala.inline
-      def apply[TResponse](request: MethodPathRegex, response: Data[TResponse]): Patch[TResponse] = {
+      inline def apply[TResponse](request: MethodPathRegex, response: Data[TResponse]): Patch[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Patch[TResponse]]
       }
       
-      @scala.inline
-      implicit class PatchMutableBuilder[Self <: Patch[?], TResponse] (val x: Self & Patch[TResponse]) extends AnyVal {
+      extension [Self <: Patch[?], TResponse](x: Self & Patch[TResponse]) {
         
-        @scala.inline
-        def setRequest(value: MethodPathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: MethodPathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -390,20 +356,16 @@ object mod extends Shortcut {
     }
     object Post {
       
-      @scala.inline
-      def apply[TResponse](request: Path, response: Data[TResponse]): Post[TResponse] = {
+      inline def apply[TResponse](request: Path, response: Data[TResponse]): Post[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Post[TResponse]]
       }
       
-      @scala.inline
-      implicit class PostMutableBuilder[Self <: Post[?], TResponse] (val x: Self & Post[TResponse]) extends AnyVal {
+      extension [Self <: Post[?], TResponse](x: Self & Post[TResponse]) {
         
-        @scala.inline
-        def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -418,20 +380,16 @@ object mod extends Shortcut {
     }
     object PostData {
       
-      @scala.inline
-      def apply[TResponse, TPayload](request: typings.protractorHttpMock.anon.Method[TPayload], response: Data[TResponse]): PostData[TResponse, TPayload] = {
+      inline def apply[TResponse, TPayload](request: typings.protractorHttpMock.anon.Method[TPayload], response: Data[TResponse]): PostData[TResponse, TPayload] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[PostData[TResponse, TPayload]]
       }
       
-      @scala.inline
-      implicit class PostDataMutableBuilder[Self <: PostData[?, ?], TResponse, TPayload] (val x: Self & (PostData[TResponse, TPayload])) extends AnyVal {
+      extension [Self <: PostData[?, ?], TResponse, TPayload](x: Self & (PostData[TResponse, TPayload])) {
         
-        @scala.inline
-        def setRequest(value: typings.protractorHttpMock.anon.Method[TPayload]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: typings.protractorHttpMock.anon.Method[TPayload]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -446,20 +404,16 @@ object mod extends Shortcut {
     }
     object Put {
       
-      @scala.inline
-      def apply[TResponse](request: PathRegex, response: Data[TResponse]): Put[TResponse] = {
+      inline def apply[TResponse](request: PathRegex, response: Data[TResponse]): Put[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Put[TResponse]]
       }
       
-      @scala.inline
-      implicit class PutMutableBuilder[Self <: Put[?], TResponse] (val x: Self & Put[TResponse]) extends AnyVal {
+      extension [Self <: Put[?], TResponse](x: Self & Put[TResponse]) {
         
-        @scala.inline
-        def setRequest(value: PathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: PathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
   }

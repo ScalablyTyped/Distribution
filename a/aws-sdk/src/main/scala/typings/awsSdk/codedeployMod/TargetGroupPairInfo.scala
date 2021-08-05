@@ -23,34 +23,25 @@ trait TargetGroupPairInfo extends StObject {
 }
 object TargetGroupPairInfo {
   
-  @scala.inline
-  def apply(): TargetGroupPairInfo = {
+  inline def apply(): TargetGroupPairInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetGroupPairInfo]
   }
   
-  @scala.inline
-  implicit class TargetGroupPairInfoMutableBuilder[Self <: TargetGroupPairInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TargetGroupPairInfo](x: Self) {
     
-    @scala.inline
-    def setProdTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "prodTrafficRoute", value.asInstanceOf[js.Any])
+    inline def setProdTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "prodTrafficRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProdTrafficRouteUndefined: Self = StObject.set(x, "prodTrafficRoute", js.undefined)
+    inline def setProdTrafficRouteUndefined: Self = StObject.set(x, "prodTrafficRoute", js.undefined)
     
-    @scala.inline
-    def setTargetGroups(value: TargetGroupInfoList): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
+    inline def setTargetGroups(value: TargetGroupInfoList): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupsUndefined: Self = StObject.set(x, "targetGroups", js.undefined)
+    inline def setTargetGroupsUndefined: Self = StObject.set(x, "targetGroups", js.undefined)
     
-    @scala.inline
-    def setTargetGroupsVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
+    inline def setTargetGroupsVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setTestTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "testTrafficRoute", value.asInstanceOf[js.Any])
+    inline def setTestTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "testTrafficRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTrafficRouteUndefined: Self = StObject.set(x, "testTrafficRoute", js.undefined)
+    inline def setTestTrafficRouteUndefined: Self = StObject.set(x, "testTrafficRoute", js.undefined)
   }
 }

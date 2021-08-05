@@ -34,34 +34,25 @@ trait HttpRetryPolicy extends StObject {
 }
 object HttpRetryPolicy {
   
-  @scala.inline
-  def apply(): HttpRetryPolicy = {
+  inline def apply(): HttpRetryPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpRetryPolicy]
   }
   
-  @scala.inline
-  implicit class HttpRetryPolicyMutableBuilder[Self <: HttpRetryPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: HttpRetryPolicy](x: Self) {
     
-    @scala.inline
-    def setNumRetries(value: Double): Self = StObject.set(x, "numRetries", value.asInstanceOf[js.Any])
+    inline def setNumRetries(value: Double): Self = StObject.set(x, "numRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRetriesUndefined: Self = StObject.set(x, "numRetries", js.undefined)
+    inline def setNumRetriesUndefined: Self = StObject.set(x, "numRetries", js.undefined)
     
-    @scala.inline
-    def setPerTryTimeout(value: Duration): Self = StObject.set(x, "perTryTimeout", value.asInstanceOf[js.Any])
+    inline def setPerTryTimeout(value: Duration): Self = StObject.set(x, "perTryTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerTryTimeoutUndefined: Self = StObject.set(x, "perTryTimeout", js.undefined)
+    inline def setPerTryTimeoutUndefined: Self = StObject.set(x, "perTryTimeout", js.undefined)
     
-    @scala.inline
-    def setRetryConditions(value: js.Array[String]): Self = StObject.set(x, "retryConditions", value.asInstanceOf[js.Any])
+    inline def setRetryConditions(value: js.Array[String]): Self = StObject.set(x, "retryConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryConditionsUndefined: Self = StObject.set(x, "retryConditions", js.undefined)
+    inline def setRetryConditionsUndefined: Self = StObject.set(x, "retryConditions", js.undefined)
     
-    @scala.inline
-    def setRetryConditionsVarargs(value: String*): Self = StObject.set(x, "retryConditions", js.Array(value :_*))
+    inline def setRetryConditionsVarargs(value: String*): Self = StObject.set(x, "retryConditions", js.Array(value :_*))
   }
 }

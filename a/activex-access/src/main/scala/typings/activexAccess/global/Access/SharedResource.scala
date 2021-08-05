@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.SharedResource")
 @js.native
-class SharedResource protected ()
+/* private */ class SharedResource ()
   extends StObject
      with typings.activexAccess.Access.SharedResource {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.SharedResource_typekey")
   var AccessDotSharedResource_typekey: typings.activexAccess.Access.SharedResource = js.native
   

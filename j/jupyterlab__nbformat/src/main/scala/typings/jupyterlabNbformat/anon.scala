@@ -14,20 +14,16 @@ object anon {
   }
   object PartialIBaseCellJupyterMe {
     
-    @scala.inline
-    def apply(): PartialIBaseCellJupyterMe = {
+    inline def apply(): PartialIBaseCellJupyterMe = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialIBaseCellJupyterMe]
     }
     
-    @scala.inline
-    implicit class PartialIBaseCellJupyterMeMutableBuilder[Self <: PartialIBaseCellJupyterMe] (val x: Self) extends AnyVal {
+    extension [Self <: PartialIBaseCellJupyterMe](x: Self) {
       
-      @scala.inline
-      def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
+      inline def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_hiddenUndefined: Self = StObject.set(x, "source_hidden", js.undefined)
+      inline def setSource_hiddenUndefined: Self = StObject.set(x, "source_hidden", js.undefined)
     }
   }
   
@@ -40,26 +36,20 @@ object anon {
   }
   object PartialICodeCellJupyterMe {
     
-    @scala.inline
-    def apply(): PartialICodeCellJupyterMe = {
+    inline def apply(): PartialICodeCellJupyterMe = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialICodeCellJupyterMe]
     }
     
-    @scala.inline
-    implicit class PartialICodeCellJupyterMeMutableBuilder[Self <: PartialICodeCellJupyterMe] (val x: Self) extends AnyVal {
+    extension [Self <: PartialICodeCellJupyterMe](x: Self) {
       
-      @scala.inline
-      def setOutputs_hidden(value: Boolean): Self = StObject.set(x, "outputs_hidden", value.asInstanceOf[js.Any])
+      inline def setOutputs_hidden(value: Boolean): Self = StObject.set(x, "outputs_hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputs_hiddenUndefined: Self = StObject.set(x, "outputs_hidden", js.undefined)
+      inline def setOutputs_hiddenUndefined: Self = StObject.set(x, "outputs_hidden", js.undefined)
       
-      @scala.inline
-      def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
+      inline def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_hiddenUndefined: Self = StObject.set(x, "source_hidden", js.undefined)
+      inline def setSource_hiddenUndefined: Self = StObject.set(x, "source_hidden", js.undefined)
     }
   }
   
@@ -80,53 +70,38 @@ object anon {
   }
   object PartialICodeCellMetadata {
     
-    @scala.inline
-    def apply(): PartialICodeCellMetadata = {
+    inline def apply(): PartialICodeCellMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialICodeCellMetadata]
     }
     
-    @scala.inline
-    implicit class PartialICodeCellMetadataMutableBuilder[Self <: PartialICodeCellMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: PartialICodeCellMetadata](x: Self) {
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setJupyter(value: PartialICodeCellJupyterMe): Self = StObject.set(x, "jupyter", value.asInstanceOf[js.Any])
+      inline def setJupyter(value: PartialICodeCellJupyterMe): Self = StObject.set(x, "jupyter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJupyterUndefined: Self = StObject.set(x, "jupyter", js.undefined)
+      inline def setJupyterUndefined: Self = StObject.set(x, "jupyter", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setScrolled(value: Boolean | auto): Self = StObject.set(x, "scrolled", value.asInstanceOf[js.Any])
+      inline def setScrolled(value: Boolean | auto): Self = StObject.set(x, "scrolled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrolledUndefined: Self = StObject.set(x, "scrolled", js.undefined)
+      inline def setScrolledUndefined: Self = StObject.set(x, "scrolled", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+      inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustedUndefined: Self = StObject.set(x, "trusted", js.undefined)
+      inline def setTrustedUndefined: Self = StObject.set(x, "trusted", js.undefined)
     }
   }
   
@@ -145,47 +120,34 @@ object anon {
   }
   object PartialIRawCellMetadata {
     
-    @scala.inline
-    def apply(): PartialIRawCellMetadata = {
+    inline def apply(): PartialIRawCellMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialIRawCellMetadata]
     }
     
-    @scala.inline
-    implicit class PartialIRawCellMetadataMutableBuilder[Self <: PartialIRawCellMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: PartialIRawCellMetadata](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setJupyter(value: PartialIBaseCellJupyterMe): Self = StObject.set(x, "jupyter", value.asInstanceOf[js.Any])
+      inline def setJupyter(value: PartialIBaseCellJupyterMe): Self = StObject.set(x, "jupyter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJupyterUndefined: Self = StObject.set(x, "jupyter", js.undefined)
+      inline def setJupyterUndefined: Self = StObject.set(x, "jupyter", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+      inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustedUndefined: Self = StObject.set(x, "trusted", js.undefined)
+      inline def setTrustedUndefined: Self = StObject.set(x, "trusted", js.undefined)
     }
   }
 }

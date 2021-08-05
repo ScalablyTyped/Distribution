@@ -28,8 +28,7 @@ trait UpdateTypedLinkFacetRequest extends StObject {
 }
 object UpdateTypedLinkFacetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttributeUpdates: TypedLinkFacetAttributeUpdateList,
     IdentityAttributeOrder: AttributeNameList,
     Name: TypedLinkName,
@@ -39,25 +38,18 @@ object UpdateTypedLinkFacetRequest {
     __obj.asInstanceOf[UpdateTypedLinkFacetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTypedLinkFacetRequestMutableBuilder[Self <: UpdateTypedLinkFacetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTypedLinkFacetRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeUpdates(value: TypedLinkFacetAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
+    inline def setAttributeUpdates(value: TypedLinkFacetAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUpdatesVarargs(value: TypedLinkFacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
+    inline def setAttributeUpdatesVarargs(value: TypedLinkFacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
+    inline def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
+    inline def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

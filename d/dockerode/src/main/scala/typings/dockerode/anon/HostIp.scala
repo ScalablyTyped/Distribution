@@ -12,19 +12,15 @@ trait HostIp extends StObject {
 }
 object HostIp {
   
-  @scala.inline
-  def apply(HostIp: String, HostPort: String): HostIp = {
+  inline def apply(HostIp: String, HostPort: String): HostIp = {
     val __obj = js.Dynamic.literal(HostIp = HostIp.asInstanceOf[js.Any], HostPort = HostPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostIp]
   }
   
-  @scala.inline
-  implicit class HostIpMutableBuilder[Self <: HostIp] (val x: Self) extends AnyVal {
+  extension [Self <: HostIp](x: Self) {
     
-    @scala.inline
-    def setHostIp(value: String): Self = StObject.set(x, "HostIp", value.asInstanceOf[js.Any])
+    inline def setHostIp(value: String): Self = StObject.set(x, "HostIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPort(value: String): Self = StObject.set(x, "HostPort", value.asInstanceOf[js.Any])
+    inline def setHostPort(value: String): Self = StObject.set(x, "HostPort", value.asInstanceOf[js.Any])
   }
 }

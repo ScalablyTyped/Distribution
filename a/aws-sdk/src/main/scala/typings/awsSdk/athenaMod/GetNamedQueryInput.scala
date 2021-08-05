@@ -13,16 +13,13 @@ trait GetNamedQueryInput extends StObject {
 }
 object GetNamedQueryInput {
   
-  @scala.inline
-  def apply(NamedQueryId: NamedQueryId): GetNamedQueryInput = {
+  inline def apply(NamedQueryId: NamedQueryId): GetNamedQueryInput = {
     val __obj = js.Dynamic.literal(NamedQueryId = NamedQueryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNamedQueryInput]
   }
   
-  @scala.inline
-  implicit class GetNamedQueryInputMutableBuilder[Self <: GetNamedQueryInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetNamedQueryInput](x: Self) {
     
-    @scala.inline
-    def setNamedQueryId(value: NamedQueryId): Self = StObject.set(x, "NamedQueryId", value.asInstanceOf[js.Any])
+    inline def setNamedQueryId(value: NamedQueryId): Self = StObject.set(x, "NamedQueryId", value.asInstanceOf[js.Any])
   }
 }

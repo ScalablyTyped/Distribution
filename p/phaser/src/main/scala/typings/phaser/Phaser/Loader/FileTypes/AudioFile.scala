@@ -26,8 +26,7 @@ trait AudioFile
      with File
 object AudioFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

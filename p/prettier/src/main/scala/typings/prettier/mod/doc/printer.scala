@@ -12,8 +12,7 @@ object printer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def printDocToString(doc: Doc_, options: Options): CursorNodeStart = (^.asInstanceOf[js.Dynamic].applyDynamic("printDocToString")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CursorNodeStart]
+  inline def printDocToString(doc: Doc_, options: Options): CursorNodeStart = (^.asInstanceOf[js.Dynamic].applyDynamic("printDocToString")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CursorNodeStart]
   
   trait Options extends StObject {
     
@@ -41,32 +40,24 @@ object printer {
   }
   object Options {
     
-    @scala.inline
-    def apply(embeddedInHtml: Boolean, printWidth: Double, tabWidth: Double, useTabs: Boolean): Options = {
+    inline def apply(embeddedInHtml: Boolean, printWidth: Double, tabWidth: Double, useTabs: Boolean): Options = {
       val __obj = js.Dynamic.literal(embeddedInHtml = embeddedInHtml.asInstanceOf[js.Any], printWidth = printWidth.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEmbeddedInHtml(value: Boolean): Self = StObject.set(x, "embeddedInHtml", value.asInstanceOf[js.Any])
+      inline def setEmbeddedInHtml(value: Boolean): Self = StObject.set(x, "embeddedInHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentParser(value: String): Self = StObject.set(x, "parentParser", value.asInstanceOf[js.Any])
+      inline def setParentParser(value: String): Self = StObject.set(x, "parentParser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentParserUndefined: Self = StObject.set(x, "parentParser", js.undefined)
+      inline def setParentParserUndefined: Self = StObject.set(x, "parentParser", js.undefined)
       
-      @scala.inline
-      def setPrintWidth(value: Double): Self = StObject.set(x, "printWidth", value.asInstanceOf[js.Any])
+      inline def setPrintWidth(value: Double): Self = StObject.set(x, "printWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabWidth(value: Double): Self = StObject.set(x, "tabWidth", value.asInstanceOf[js.Any])
+      inline def setTabWidth(value: Double): Self = StObject.set(x, "tabWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTabs(value: Boolean): Self = StObject.set(x, "useTabs", value.asInstanceOf[js.Any])
+      inline def setUseTabs(value: Boolean): Self = StObject.set(x, "useTabs", value.asInstanceOf[js.Any])
     }
   }
 }

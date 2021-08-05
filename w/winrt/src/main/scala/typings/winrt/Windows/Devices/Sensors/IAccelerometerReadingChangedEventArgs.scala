@@ -10,16 +10,13 @@ trait IAccelerometerReadingChangedEventArgs extends StObject {
 }
 object IAccelerometerReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: AccelerometerReading): IAccelerometerReadingChangedEventArgs = {
+  inline def apply(reading: AccelerometerReading): IAccelerometerReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccelerometerReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class IAccelerometerReadingChangedEventArgsMutableBuilder[Self <: IAccelerometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IAccelerometerReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: AccelerometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: AccelerometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

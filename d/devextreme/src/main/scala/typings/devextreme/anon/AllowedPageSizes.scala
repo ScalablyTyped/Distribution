@@ -21,52 +21,37 @@ trait AllowedPageSizes extends StObject {
 }
 object AllowedPageSizes {
   
-  @scala.inline
-  def apply(): AllowedPageSizes = {
+  inline def apply(): AllowedPageSizes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowedPageSizes]
   }
   
-  @scala.inline
-  implicit class AllowedPageSizesMutableBuilder[Self <: AllowedPageSizes] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedPageSizes](x: Self) {
     
-    @scala.inline
-    def setAllowedPageSizes(value: js.Array[Double] | auto): Self = StObject.set(x, "allowedPageSizes", value.asInstanceOf[js.Any])
+    inline def setAllowedPageSizes(value: js.Array[Double] | auto): Self = StObject.set(x, "allowedPageSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedPageSizesUndefined: Self = StObject.set(x, "allowedPageSizes", js.undefined)
+    inline def setAllowedPageSizesUndefined: Self = StObject.set(x, "allowedPageSizes", js.undefined)
     
-    @scala.inline
-    def setAllowedPageSizesVarargs(value: Double*): Self = StObject.set(x, "allowedPageSizes", js.Array(value :_*))
+    inline def setAllowedPageSizesVarargs(value: Double*): Self = StObject.set(x, "allowedPageSizes", js.Array(value :_*))
     
-    @scala.inline
-    def setInfoText(value: String): Self = StObject.set(x, "infoText", value.asInstanceOf[js.Any])
+    inline def setInfoText(value: String): Self = StObject.set(x, "infoText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTextUndefined: Self = StObject.set(x, "infoText", js.undefined)
+    inline def setInfoTextUndefined: Self = StObject.set(x, "infoText", js.undefined)
     
-    @scala.inline
-    def setShowInfo(value: Boolean): Self = StObject.set(x, "showInfo", value.asInstanceOf[js.Any])
+    inline def setShowInfo(value: Boolean): Self = StObject.set(x, "showInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowInfoUndefined: Self = StObject.set(x, "showInfo", js.undefined)
+    inline def setShowInfoUndefined: Self = StObject.set(x, "showInfo", js.undefined)
     
-    @scala.inline
-    def setShowNavigationButtons(value: Boolean): Self = StObject.set(x, "showNavigationButtons", value.asInstanceOf[js.Any])
+    inline def setShowNavigationButtons(value: Boolean): Self = StObject.set(x, "showNavigationButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNavigationButtonsUndefined: Self = StObject.set(x, "showNavigationButtons", js.undefined)
+    inline def setShowNavigationButtonsUndefined: Self = StObject.set(x, "showNavigationButtons", js.undefined)
     
-    @scala.inline
-    def setShowPageSizeSelector(value: Boolean): Self = StObject.set(x, "showPageSizeSelector", value.asInstanceOf[js.Any])
+    inline def setShowPageSizeSelector(value: Boolean): Self = StObject.set(x, "showPageSizeSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPageSizeSelectorUndefined: Self = StObject.set(x, "showPageSizeSelector", js.undefined)
+    inline def setShowPageSizeSelectorUndefined: Self = StObject.set(x, "showPageSizeSelector", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean | auto): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean | auto): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

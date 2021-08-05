@@ -13,19 +13,15 @@ trait AwsDynamoDbTableProvisionedThroughputOverride extends StObject {
 }
 object AwsDynamoDbTableProvisionedThroughputOverride {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableProvisionedThroughputOverride = {
+  inline def apply(): AwsDynamoDbTableProvisionedThroughputOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableProvisionedThroughputOverride]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableProvisionedThroughputOverrideMutableBuilder[Self <: AwsDynamoDbTableProvisionedThroughputOverride] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableProvisionedThroughputOverride](x: Self) {
     
-    @scala.inline
-    def setReadCapacityUnits(value: Integer): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setReadCapacityUnits(value: Integer): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+    inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
   }
 }

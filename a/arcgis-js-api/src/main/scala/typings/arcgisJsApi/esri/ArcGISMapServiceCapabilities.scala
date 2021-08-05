@@ -33,8 +33,7 @@ trait ArcGISMapServiceCapabilities
 }
 object ArcGISMapServiceCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     exportMap: ArcGISMapServiceCapabilitiesExportMap,
     exportTiles: ArcGISMapServiceCapabilitiesExportTiles,
@@ -46,16 +45,12 @@ object ArcGISMapServiceCapabilities {
     __obj.asInstanceOf[ArcGISMapServiceCapabilities]
   }
   
-  @scala.inline
-  implicit class ArcGISMapServiceCapabilitiesMutableBuilder[Self <: ArcGISMapServiceCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISMapServiceCapabilities](x: Self) {
     
-    @scala.inline
-    def setExportMap(value: ArcGISMapServiceCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
+    inline def setExportMap(value: ArcGISMapServiceCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTiles(value: ArcGISMapServiceCapabilitiesExportTiles): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
+    inline def setExportTiles(value: ArcGISMapServiceCapabilitiesExportTiles): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: ArcGISMapServiceCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: ArcGISMapServiceCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

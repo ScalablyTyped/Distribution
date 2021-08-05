@@ -27,43 +27,31 @@ trait HTMLSnippets extends StObject {
 }
 object HTMLSnippets {
   
-  @scala.inline
-  def apply(): HTMLSnippets = {
+  inline def apply(): HTMLSnippets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTMLSnippets]
   }
   
-  @scala.inline
-  implicit class HTMLSnippetsMutableBuilder[Self <: HTMLSnippets] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLSnippets](x: Self) {
     
-    @scala.inline
-    def setCloseBox(value: String): Self = StObject.set(x, "closeBox", value.asInstanceOf[js.Any])
+    inline def setCloseBox(value: String): Self = StObject.set(x, "closeBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseBoxUndefined: Self = StObject.set(x, "closeBox", js.undefined)
+    inline def setCloseBoxUndefined: Self = StObject.set(x, "closeBox", js.undefined)
     
-    @scala.inline
-    def setFonts(value: String): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: String): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+    inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
-    @scala.inline
-    def setSTIXfonts(value: String): Self = StObject.set(x, "STIXfonts", value.asInstanceOf[js.Any])
+    inline def setSTIXfonts(value: String): Self = StObject.set(x, "STIXfonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTIXfontsUndefined: Self = StObject.set(x, "STIXfonts", js.undefined)
+    inline def setSTIXfontsUndefined: Self = StObject.set(x, "STIXfonts", js.undefined)
     
-    @scala.inline
-    def setTeXfonts(value: String): Self = StObject.set(x, "TeXfonts", value.asInstanceOf[js.Any])
+    inline def setTeXfonts(value: String): Self = StObject.set(x, "TeXfonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeXfontsUndefined: Self = StObject.set(x, "TeXfonts", js.undefined)
+    inline def setTeXfontsUndefined: Self = StObject.set(x, "TeXfonts", js.undefined)
     
-    @scala.inline
-    def setWebfonts(value: String): Self = StObject.set(x, "webfonts", value.asInstanceOf[js.Any])
+    inline def setWebfonts(value: String): Self = StObject.set(x, "webfonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebfontsUndefined: Self = StObject.set(x, "webfonts", js.undefined)
+    inline def setWebfontsUndefined: Self = StObject.set(x, "webfonts", js.undefined)
   }
 }

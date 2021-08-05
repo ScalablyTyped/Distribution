@@ -21,28 +21,21 @@ trait SchemaListExportsResponse extends StObject {
 }
 object SchemaListExportsResponse {
   
-  @scala.inline
-  def apply(): SchemaListExportsResponse = {
+  inline def apply(): SchemaListExportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListExportsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListExportsResponseMutableBuilder[Self <: SchemaListExportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListExportsResponse](x: Self) {
     
-    @scala.inline
-    def setExports(value: js.Array[SchemaExport]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: js.Array[SchemaExport]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
+    inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    @scala.inline
-    def setExportsVarargs(value: SchemaExport*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: SchemaExport*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

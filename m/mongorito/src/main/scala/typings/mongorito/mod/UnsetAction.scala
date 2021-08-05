@@ -15,23 +15,18 @@ trait UnsetAction
 }
 object UnsetAction {
   
-  @scala.inline
-  def apply(keys: String | js.Array[String], `type`: UNSET): UnsetAction = {
+  inline def apply(keys: String | js.Array[String], `type`: UNSET): UnsetAction = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsetAction]
   }
   
-  @scala.inline
-  implicit class UnsetActionMutableBuilder[Self <: UnsetAction] (val x: Self) extends AnyVal {
+  extension [Self <: UnsetAction](x: Self) {
     
-    @scala.inline
-    def setKeys(value: String | js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: String | js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: UNSET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UNSET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

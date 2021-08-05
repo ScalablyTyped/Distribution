@@ -220,19 +220,19 @@ object preloadFileMod {
   @js.native
   trait PreloadFile[T /* <: FileSystem */] extends BaseFile {
     
-    var _buffer: js.Any = js.native
+    /* private */ var _buffer: js.Any = js.native
     
-    var _dirty: js.Any = js.native
+    /* private */ var _dirty: js.Any = js.native
     
-    var _flag: js.Any = js.native
+    /* private */ var _flag: js.Any = js.native
     
-    var _fs: T = js.native
+    /* protected */ var _fs: T = js.native
     
-    var _path: js.Any = js.native
+    /* private */ var _path: js.Any = js.native
     
-    var _pos: js.Any = js.native
+    /* private */ var _pos: js.Any = js.native
     
-    var _stat: js.Any = js.native
+    /* private */ var _stat: js.Any = js.native
     
     /**
       * Advance the current file position by the indicated number of positions.

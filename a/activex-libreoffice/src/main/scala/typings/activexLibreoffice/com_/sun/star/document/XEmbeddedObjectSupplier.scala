@@ -20,8 +20,7 @@ trait XEmbeddedObjectSupplier
 }
 object XEmbeddedObjectSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EmbeddedObject: XComponent,
     acquire: () => Unit,
     getEmbeddedObject: () => XComponent,
@@ -32,13 +31,10 @@ object XEmbeddedObjectSupplier {
     __obj.asInstanceOf[XEmbeddedObjectSupplier]
   }
   
-  @scala.inline
-  implicit class XEmbeddedObjectSupplierMutableBuilder[Self <: XEmbeddedObjectSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbeddedObjectSupplier](x: Self) {
     
-    @scala.inline
-    def setEmbeddedObject(value: XComponent): Self = StObject.set(x, "EmbeddedObject", value.asInstanceOf[js.Any])
+    inline def setEmbeddedObject(value: XComponent): Self = StObject.set(x, "EmbeddedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEmbeddedObject(value: () => XComponent): Self = StObject.set(x, "getEmbeddedObject", js.Any.fromFunction0(value))
+    inline def setGetEmbeddedObject(value: () => XComponent): Self = StObject.set(x, "getEmbeddedObject", js.Any.fromFunction0(value))
   }
 }

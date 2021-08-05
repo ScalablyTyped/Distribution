@@ -40,44 +40,32 @@ object objectStatusMod extends Shortcut {
   }
   object ObjectStatusProps {
     
-    @scala.inline
-    def apply(): ObjectStatusProps = {
+    inline def apply(): ObjectStatusProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObjectStatusProps]
     }
     
-    @scala.inline
-    implicit class ObjectStatusPropsMutableBuilder[Self <: ObjectStatusProps] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectStatusProps](x: Self) {
       
-      @scala.inline
-      def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+      inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
-      @scala.inline
-      def setIndication(value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
+      inline def setIndication(value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicationUndefined: Self = StObject.set(x, "indication", js.undefined)
+      inline def setIndicationUndefined: Self = StObject.set(x, "indication", js.undefined)
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setSize(value: l): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: l): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStatus(value: ObjectStatusTypes): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ObjectStatusTypes): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -90,17 +78,13 @@ object objectStatusMod extends Shortcut {
   trait ObjectStatusTypes extends StObject
   object ObjectStatusTypes {
     
-    @scala.inline
-    def critical: typings.fundamentalReact.fundamentalReactStrings.critical = "critical".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.critical]
+    inline def critical: typings.fundamentalReact.fundamentalReactStrings.critical = "critical".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.critical]
     
-    @scala.inline
-    def informative: typings.fundamentalReact.fundamentalReactStrings.informative = "informative".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.informative]
+    inline def informative: typings.fundamentalReact.fundamentalReactStrings.informative = "informative".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.informative]
     
-    @scala.inline
-    def negative: typings.fundamentalReact.fundamentalReactStrings.negative = "negative".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.negative]
+    inline def negative: typings.fundamentalReact.fundamentalReactStrings.negative = "negative".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.negative]
     
-    @scala.inline
-    def positive: typings.fundamentalReact.fundamentalReactStrings.positive = "positive".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.positive]
+    inline def positive: typings.fundamentalReact.fundamentalReactStrings.positive = "positive".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.positive]
   }
   
   type _To = FunctionComponent[ObjectStatusProps]

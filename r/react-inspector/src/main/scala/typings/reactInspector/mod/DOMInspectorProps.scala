@@ -14,16 +14,13 @@ trait DOMInspectorProps
 }
 object DOMInspectorProps {
   
-  @scala.inline
-  def apply(data: js.Object): DOMInspectorProps = {
+  inline def apply(data: js.Object): DOMInspectorProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMInspectorProps]
   }
   
-  @scala.inline
-  implicit class DOMInspectorPropsMutableBuilder[Self <: DOMInspectorProps] (val x: Self) extends AnyVal {
+  extension [Self <: DOMInspectorProps](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

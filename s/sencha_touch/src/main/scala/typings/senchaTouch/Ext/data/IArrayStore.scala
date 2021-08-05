@@ -19,19 +19,15 @@ trait IArrayStore
 }
 object IArrayStore {
   
-  @scala.inline
-  def apply(): IArrayStore = {
+  inline def apply(): IArrayStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IArrayStore]
   }
   
-  @scala.inline
-  implicit class IArrayStoreMutableBuilder[Self <: IArrayStore] (val x: Self) extends AnyVal {
+  extension [Self <: IArrayStore](x: Self) {
     
-    @scala.inline
-    def setLoadData(value: (/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction2(value))
+    inline def setLoadData(value: (/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
+    inline def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
   }
 }

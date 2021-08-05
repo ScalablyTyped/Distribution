@@ -38,38 +38,28 @@ object ZoomControl {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      @scala.inline
-      def setSlider(value: Boolean): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+      inline def setSlider(value: Boolean): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderSnaps(value: Boolean): Self = StObject.set(x, "sliderSnaps", value.asInstanceOf[js.Any])
+      inline def setSliderSnaps(value: Boolean): Self = StObject.set(x, "sliderSnaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderSnapsUndefined: Self = StObject.set(x, "sliderSnaps", js.undefined)
+      inline def setSliderSnapsUndefined: Self = StObject.set(x, "sliderSnaps", js.undefined)
       
-      @scala.inline
-      def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
+      inline def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
       
-      @scala.inline
-      def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
+      inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomSpeedUndefined: Self = StObject.set(x, "zoomSpeed", js.undefined)
+      inline def setZoomSpeedUndefined: Self = StObject.set(x, "zoomSpeed", js.undefined)
     }
   }
 }

@@ -12,19 +12,15 @@ trait ListReelMediaViewerFeedResponseHashtag extends StObject {
 }
 object ListReelMediaViewerFeedResponseHashtag {
   
-  @scala.inline
-  def apply(id: String, name: String): ListReelMediaViewerFeedResponseHashtag = {
+  inline def apply(id: String, name: String): ListReelMediaViewerFeedResponseHashtag = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseHashtag]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseHashtagMutableBuilder[Self <: ListReelMediaViewerFeedResponseHashtag] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseHashtag](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

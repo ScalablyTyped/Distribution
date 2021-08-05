@@ -10,19 +10,15 @@ trait ReadPreference extends StObject {
 }
 object ReadPreference {
   
-  @scala.inline
-  def apply(): ReadPreference = {
+  inline def apply(): ReadPreference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadPreference]
   }
   
-  @scala.inline
-  implicit class ReadPreferenceMutableBuilder[Self <: ReadPreference] (val x: Self) extends AnyVal {
+  extension [Self <: ReadPreference](x: Self) {
     
-    @scala.inline
-    def setReadPreference(value: typings.typeorm.typingsMod.ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: typings.typeorm.typingsMod.ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

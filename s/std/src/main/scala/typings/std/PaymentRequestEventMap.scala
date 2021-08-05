@@ -12,19 +12,15 @@ trait PaymentRequestEventMap extends StObject {
 }
 object PaymentRequestEventMap {
   
-  @scala.inline
-  def apply(shippingaddresschange: Event, shippingoptionchange: Event): PaymentRequestEventMap = {
+  inline def apply(shippingaddresschange: Event, shippingoptionchange: Event): PaymentRequestEventMap = {
     val __obj = js.Dynamic.literal(shippingaddresschange = shippingaddresschange.asInstanceOf[js.Any], shippingoptionchange = shippingoptionchange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentRequestEventMap]
   }
   
-  @scala.inline
-  implicit class PaymentRequestEventMapMutableBuilder[Self <: PaymentRequestEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentRequestEventMap](x: Self) {
     
-    @scala.inline
-    def setShippingaddresschange(value: Event): Self = StObject.set(x, "shippingaddresschange", value.asInstanceOf[js.Any])
+    inline def setShippingaddresschange(value: Event): Self = StObject.set(x, "shippingaddresschange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingoptionchange(value: Event): Self = StObject.set(x, "shippingoptionchange", value.asInstanceOf[js.Any])
+    inline def setShippingoptionchange(value: Event): Self = StObject.set(x, "shippingoptionchange", value.asInstanceOf[js.Any])
   }
 }

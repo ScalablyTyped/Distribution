@@ -13,19 +13,15 @@ trait GetPlatformApplicationAttributesResponse extends StObject {
 }
 object GetPlatformApplicationAttributesResponse {
   
-  @scala.inline
-  def apply(): GetPlatformApplicationAttributesResponse = {
+  inline def apply(): GetPlatformApplicationAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPlatformApplicationAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetPlatformApplicationAttributesResponseMutableBuilder[Self <: GetPlatformApplicationAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPlatformApplicationAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
   }
 }

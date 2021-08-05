@@ -30,13 +30,12 @@ trait SynonymInfo extends StObject {
   
   val Word: String
   
-  @JSName("Word.SynonymInfo_typekey")
+  /* private */ @JSName("Word.SynonymInfo_typekey")
   var WordDotSynonymInfo_typekey: SynonymInfo
 }
 object SynonymInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AntonymList: js.Any,
     Application: Application,
     Creator: Double,
@@ -56,46 +55,32 @@ object SynonymInfo {
     __obj.asInstanceOf[SynonymInfo]
   }
   
-  @scala.inline
-  implicit class SynonymInfoMutableBuilder[Self <: SynonymInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SynonymInfo](x: Self) {
     
-    @scala.inline
-    def setAntonymList(value: js.Any): Self = StObject.set(x, "AntonymList", value.asInstanceOf[js.Any])
+    inline def setAntonymList(value: js.Any): Self = StObject.set(x, "AntonymList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFound(value: Boolean): Self = StObject.set(x, "Found", value.asInstanceOf[js.Any])
+    inline def setFound(value: Boolean): Self = StObject.set(x, "Found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeaningCount(value: Double): Self = StObject.set(x, "MeaningCount", value.asInstanceOf[js.Any])
+    inline def setMeaningCount(value: Double): Self = StObject.set(x, "MeaningCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeaningList(value: js.Any): Self = StObject.set(x, "MeaningList", value.asInstanceOf[js.Any])
+    inline def setMeaningList(value: js.Any): Self = StObject.set(x, "MeaningList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartOfSpeechList(value: js.Any): Self = StObject.set(x, "PartOfSpeechList", value.asInstanceOf[js.Any])
+    inline def setPartOfSpeechList(value: js.Any): Self = StObject.set(x, "PartOfSpeechList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedExpressionList(value: js.Any): Self = StObject.set(x, "RelatedExpressionList", value.asInstanceOf[js.Any])
+    inline def setRelatedExpressionList(value: js.Any): Self = StObject.set(x, "RelatedExpressionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedWordList(value: js.Any): Self = StObject.set(x, "RelatedWordList", value.asInstanceOf[js.Any])
+    inline def setRelatedWordList(value: js.Any): Self = StObject.set(x, "RelatedWordList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymList(value: js.Any => js.Any): Self = StObject.set(x, "SynonymList", js.Any.fromFunction1(value))
+    inline def setSynonymList(value: js.Any => js.Any): Self = StObject.set(x, "SynonymList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSynonymInfo_typekey(value: SynonymInfo): Self = StObject.set(x, "Word.SynonymInfo_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSynonymInfo_typekey(value: SynonymInfo): Self = StObject.set(x, "Word.SynonymInfo_typekey", value.asInstanceOf[js.Any])
   }
 }

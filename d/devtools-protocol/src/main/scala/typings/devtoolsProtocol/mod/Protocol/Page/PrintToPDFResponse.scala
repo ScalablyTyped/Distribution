@@ -19,22 +19,17 @@ trait PrintToPDFResponse extends StObject {
 }
 object PrintToPDFResponse {
   
-  @scala.inline
-  def apply(data: String): PrintToPDFResponse = {
+  inline def apply(data: String): PrintToPDFResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintToPDFResponse]
   }
   
-  @scala.inline
-  implicit class PrintToPDFResponseMutableBuilder[Self <: PrintToPDFResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PrintToPDFResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

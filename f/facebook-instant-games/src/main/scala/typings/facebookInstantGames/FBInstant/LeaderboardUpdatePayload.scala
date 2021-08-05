@@ -26,25 +26,19 @@ trait LeaderboardUpdatePayload extends StObject {
 }
 object LeaderboardUpdatePayload {
   
-  @scala.inline
-  def apply(action: UpdateAction, name: String): LeaderboardUpdatePayload = {
+  inline def apply(action: UpdateAction, name: String): LeaderboardUpdatePayload = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaderboardUpdatePayload]
   }
   
-  @scala.inline
-  implicit class LeaderboardUpdatePayloadMutableBuilder[Self <: LeaderboardUpdatePayload] (val x: Self) extends AnyVal {
+  extension [Self <: LeaderboardUpdatePayload](x: Self) {
     
-    @scala.inline
-    def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

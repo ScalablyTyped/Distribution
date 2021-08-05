@@ -99,21 +99,21 @@ object viewMod {
     
     var _HexJSON: js.Any = js.native
     
-    var _executeTransform: js.Any = js.native
+    /* private */ var _executeTransform: js.Any = js.native
     
     var _gridRows: js.Any = js.native
     
-    var _parseStateExpression: js.Any = js.native
+    /* private */ var _parseStateExpression: js.Any = js.native
     
-    var _prepareSource: js.Any = js.native
+    /* private */ var _prepareSource: js.Any = js.native
     
-    var _preparseOptions: js.Any = js.native
+    /* private */ var _preparseOptions: js.Any = js.native
     
     var _projectedAs: js.Array[String] = js.native
     
-    var _reExecute: js.Any = js.native
+    /* private */ var _reExecute: js.Any = js.native
     
-    var _reExecuteTransforms: js.Any = js.native
+    /* private */ var _reExecuteTransforms: js.Any = js.native
     
     var _source: CustomSource = js.native
     
@@ -374,7 +374,7 @@ object viewMod {
     /**
       *
       */
-    var watchingStates: js.Any = js.native
+    /* private */ var watchingStates: js.Any = js.native
   }
   /* static members */
   object View {
@@ -386,8 +386,7 @@ object viewMod {
     @JSImport("@antv/data-set/lib/view", "View.DataSet")
     @js.native
     def DataSet: TypeofDataSetInstantiable = js.native
-    @scala.inline
-    def DataSet_=(x: TypeofDataSetInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSet")(x.asInstanceOf[js.Any])
+    inline def DataSet_=(x: TypeofDataSetInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSet")(x.asInstanceOf[js.Any])
   }
   
   type ConnectorOptions[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] = TypeT[T] & (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/connector-params.ConnectorParams[T][1] */ js.Any)
@@ -400,20 +399,16 @@ object viewMod {
   }
   object CustomSource {
     
-    @scala.inline
-    def apply(options: js.Any, source: js.Any): CustomSource = {
+    inline def apply(options: js.Any, source: js.Any): CustomSource = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomSource]
     }
     
-    @scala.inline
-    implicit class CustomSourceMutableBuilder[Self <: CustomSource] (val x: Self) extends AnyVal {
+    extension [Self <: CustomSource](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -425,23 +420,18 @@ object viewMod {
   }
   object ViewOptions {
     
-    @scala.inline
-    def apply(): ViewOptions = {
+    inline def apply(): ViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewOptions]
     }
     
-    @scala.inline
-    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ViewOptions](x: Self) {
       
-      @scala.inline
-      def setWatchingStates(value: js.Array[String]): Self = StObject.set(x, "watchingStates", value.asInstanceOf[js.Any])
+      inline def setWatchingStates(value: js.Array[String]): Self = StObject.set(x, "watchingStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchingStatesUndefined: Self = StObject.set(x, "watchingStates", js.undefined)
+      inline def setWatchingStatesUndefined: Self = StObject.set(x, "watchingStates", js.undefined)
       
-      @scala.inline
-      def setWatchingStatesVarargs(value: String*): Self = StObject.set(x, "watchingStates", js.Array(value :_*))
+      inline def setWatchingStatesVarargs(value: String*): Self = StObject.set(x, "watchingStates", js.Array(value :_*))
     }
   }
 }

@@ -46,8 +46,7 @@ object peerMod {
   }
   object Peer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachConnection: Connection => Unit,
       close: () => Unit,
       conn: Connection,
@@ -67,53 +66,37 @@ object peerMod {
       __obj.asInstanceOf[Peer]
     }
     
-    @scala.inline
-    implicit class PeerMutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
+    extension [Self <: Peer](x: Self) {
       
-      @scala.inline
-      def setAttachConnection(value: Connection => Unit): Self = StObject.set(x, "attachConnection", js.Any.fromFunction1(value))
+      inline def setAttachConnection(value: Connection => Unit): Self = StObject.set(x, "attachConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConn(value: Connection): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
+      inline def setConn(value: Connection): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: ^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+      inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWritable(value: Boolean): Self = StObject.set(x, "isWritable", value.asInstanceOf[js.Any])
+      inline def setIsWritable(value: Boolean): Self = StObject.set(x, "isWritable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
       
-      @scala.inline
-      def setSendMessages(value: js.Array[Message] => Unit): Self = StObject.set(x, "sendMessages", js.Any.fromFunction1(value))
+      inline def setSendMessages(value: js.Array[Message] => Unit): Self = StObject.set(x, "sendMessages", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendSubscriptions(value: js.Array[String] => Unit): Self = StObject.set(x, "sendSubscriptions", js.Any.fromFunction1(value))
+      inline def setSendSubscriptions(value: js.Array[String] => Unit): Self = StObject.set(x, "sendSubscriptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendUnsubscriptions(value: js.Array[String] => Unit): Self = StObject.set(x, "sendUnsubscriptions", js.Any.fromFunction1(value))
+      inline def setSendUnsubscriptions(value: js.Array[String] => Unit): Self = StObject.set(x, "sendUnsubscriptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStream(value: Pushable[Uint8Array]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Pushable[Uint8Array]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopics(value: Set[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: Set[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateSubscriptions(value: js.Array[SubOpts] => Unit): Self = StObject.set(x, "updateSubscriptions", js.Any.fromFunction1(value))
+      inline def setUpdateSubscriptions(value: js.Array[SubOpts] => Unit): Self = StObject.set(x, "updateSubscriptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: Uint8Array => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Uint8Array => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -127,23 +110,18 @@ object peerMod {
   }
   object Registrar {
     
-    @scala.inline
-    def apply(handle: () => Unit, register: () => Unit, unregister: () => Unit): Registrar = {
+    inline def apply(handle: () => Unit, register: () => Unit, unregister: () => Unit): Registrar = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction0(handle), register = js.Any.fromFunction0(register), unregister = js.Any.fromFunction0(unregister))
       __obj.asInstanceOf[Registrar]
     }
     
-    @scala.inline
-    implicit class RegistrarMutableBuilder[Self <: Registrar] (val x: Self) extends AnyVal {
+    extension [Self <: Registrar](x: Self) {
       
-      @scala.inline
-      def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
+      inline def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
+      inline def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+      inline def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
   }
 }

@@ -116,8 +116,7 @@ object Change {
     * @param  {Change} b
     */
   /* static member */
-  @scala.inline
-  def bothDeleted(a: Change, b: Change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bothDeleted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bothDeleted(a: Change, b: Change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bothDeleted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Determine the differences for a given model since a given checkpoint.
@@ -159,8 +158,7 @@ object Change {
     * @end
     */
   /* static member */
-  @scala.inline
-  def findOrCreateChange(
+  inline def findOrCreateChange(
     modelName: String,
     modelId: String,
     callback: js.Function2[/* err */ Error, /* change */ Change, Unit]
@@ -170,8 +168,7 @@ object Change {
     * Get the checkpoint model.
     */
   /* static member */
-  @scala.inline
-  def getCheckpointModel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCheckpointModel")().asInstanceOf[Unit]
+  inline def getCheckpointModel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCheckpointModel")().asInstanceOf[Unit]
   
   /**
     * Create a hash of the given `string` with the `options.hashAlgorithm`.
@@ -179,8 +176,7 @@ object Change {
     * @param  {string} str The string to be hashed
     */
   /* static member */
-  @scala.inline
-  def hash(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hash(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Get an identifier for a given model
@@ -188,16 +184,14 @@ object Change {
     * @param  {string} modelId
     */
   /* static member */
-  @scala.inline
-  def idForModel(modelName: String, modelId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("idForModel")(modelName.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def idForModel(modelName: String, modelId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("idForModel")(modelName.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Correct all change list entries.
     * @param {() => void} c
     */
   /* static member */
-  @scala.inline
-  def rectifyAll(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyAll")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def rectifyAll(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyAll")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Track the recent change of the given modelIds
@@ -208,8 +202,7 @@ object Change {
     * @param {Array} changes Changes that were tracke
     */
   /* static member */
-  @scala.inline
-  def rectifyModelChanges(
+  inline def rectifyModelChanges(
     modelName: String,
     modelIds: js.Array[js.Any],
     callback: js.Function2[/* err */ Error, /* changes */ js.Array[js.Any], Unit]
@@ -220,6 +213,5 @@ object Change {
     * @param  {any} inst The data to get the revision string for
     */
   /* static member */
-  @scala.inline
-  def revisionForInst(inst: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revisionForInst")(inst.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def revisionForInst(inst: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revisionForInst")(inst.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

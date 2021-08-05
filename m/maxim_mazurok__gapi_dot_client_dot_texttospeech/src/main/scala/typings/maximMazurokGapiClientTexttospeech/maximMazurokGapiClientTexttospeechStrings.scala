@@ -8,11 +8,9 @@ object maximMazurokGapiClientTexttospeechStrings {
   
   @js.native
   sealed trait texttospeech extends StObject
-  @scala.inline
-  def texttospeech: texttospeech = "texttospeech".asInstanceOf[texttospeech]
+  inline def texttospeech: texttospeech = "texttospeech".asInstanceOf[texttospeech]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

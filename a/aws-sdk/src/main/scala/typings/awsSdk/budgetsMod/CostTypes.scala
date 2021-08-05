@@ -63,79 +63,55 @@ trait CostTypes extends StObject {
 }
 object CostTypes {
   
-  @scala.inline
-  def apply(): CostTypes = {
+  inline def apply(): CostTypes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CostTypes]
   }
   
-  @scala.inline
-  implicit class CostTypesMutableBuilder[Self <: CostTypes] (val x: Self) extends AnyVal {
+  extension [Self <: CostTypes](x: Self) {
     
-    @scala.inline
-    def setIncludeCredit(value: NullableBoolean): Self = StObject.set(x, "IncludeCredit", value.asInstanceOf[js.Any])
+    inline def setIncludeCredit(value: NullableBoolean): Self = StObject.set(x, "IncludeCredit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCreditUndefined: Self = StObject.set(x, "IncludeCredit", js.undefined)
+    inline def setIncludeCreditUndefined: Self = StObject.set(x, "IncludeCredit", js.undefined)
     
-    @scala.inline
-    def setIncludeDiscount(value: NullableBoolean): Self = StObject.set(x, "IncludeDiscount", value.asInstanceOf[js.Any])
+    inline def setIncludeDiscount(value: NullableBoolean): Self = StObject.set(x, "IncludeDiscount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDiscountUndefined: Self = StObject.set(x, "IncludeDiscount", js.undefined)
+    inline def setIncludeDiscountUndefined: Self = StObject.set(x, "IncludeDiscount", js.undefined)
     
-    @scala.inline
-    def setIncludeOtherSubscription(value: NullableBoolean): Self = StObject.set(x, "IncludeOtherSubscription", value.asInstanceOf[js.Any])
+    inline def setIncludeOtherSubscription(value: NullableBoolean): Self = StObject.set(x, "IncludeOtherSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOtherSubscriptionUndefined: Self = StObject.set(x, "IncludeOtherSubscription", js.undefined)
+    inline def setIncludeOtherSubscriptionUndefined: Self = StObject.set(x, "IncludeOtherSubscription", js.undefined)
     
-    @scala.inline
-    def setIncludeRecurring(value: NullableBoolean): Self = StObject.set(x, "IncludeRecurring", value.asInstanceOf[js.Any])
+    inline def setIncludeRecurring(value: NullableBoolean): Self = StObject.set(x, "IncludeRecurring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRecurringUndefined: Self = StObject.set(x, "IncludeRecurring", js.undefined)
+    inline def setIncludeRecurringUndefined: Self = StObject.set(x, "IncludeRecurring", js.undefined)
     
-    @scala.inline
-    def setIncludeRefund(value: NullableBoolean): Self = StObject.set(x, "IncludeRefund", value.asInstanceOf[js.Any])
+    inline def setIncludeRefund(value: NullableBoolean): Self = StObject.set(x, "IncludeRefund", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRefundUndefined: Self = StObject.set(x, "IncludeRefund", js.undefined)
+    inline def setIncludeRefundUndefined: Self = StObject.set(x, "IncludeRefund", js.undefined)
     
-    @scala.inline
-    def setIncludeSubscription(value: NullableBoolean): Self = StObject.set(x, "IncludeSubscription", value.asInstanceOf[js.Any])
+    inline def setIncludeSubscription(value: NullableBoolean): Self = StObject.set(x, "IncludeSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSubscriptionUndefined: Self = StObject.set(x, "IncludeSubscription", js.undefined)
+    inline def setIncludeSubscriptionUndefined: Self = StObject.set(x, "IncludeSubscription", js.undefined)
     
-    @scala.inline
-    def setIncludeSupport(value: NullableBoolean): Self = StObject.set(x, "IncludeSupport", value.asInstanceOf[js.Any])
+    inline def setIncludeSupport(value: NullableBoolean): Self = StObject.set(x, "IncludeSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSupportUndefined: Self = StObject.set(x, "IncludeSupport", js.undefined)
+    inline def setIncludeSupportUndefined: Self = StObject.set(x, "IncludeSupport", js.undefined)
     
-    @scala.inline
-    def setIncludeTax(value: NullableBoolean): Self = StObject.set(x, "IncludeTax", value.asInstanceOf[js.Any])
+    inline def setIncludeTax(value: NullableBoolean): Self = StObject.set(x, "IncludeTax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTaxUndefined: Self = StObject.set(x, "IncludeTax", js.undefined)
+    inline def setIncludeTaxUndefined: Self = StObject.set(x, "IncludeTax", js.undefined)
     
-    @scala.inline
-    def setIncludeUpfront(value: NullableBoolean): Self = StObject.set(x, "IncludeUpfront", value.asInstanceOf[js.Any])
+    inline def setIncludeUpfront(value: NullableBoolean): Self = StObject.set(x, "IncludeUpfront", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUpfrontUndefined: Self = StObject.set(x, "IncludeUpfront", js.undefined)
+    inline def setIncludeUpfrontUndefined: Self = StObject.set(x, "IncludeUpfront", js.undefined)
     
-    @scala.inline
-    def setUseAmortized(value: NullableBoolean): Self = StObject.set(x, "UseAmortized", value.asInstanceOf[js.Any])
+    inline def setUseAmortized(value: NullableBoolean): Self = StObject.set(x, "UseAmortized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAmortizedUndefined: Self = StObject.set(x, "UseAmortized", js.undefined)
+    inline def setUseAmortizedUndefined: Self = StObject.set(x, "UseAmortized", js.undefined)
     
-    @scala.inline
-    def setUseBlended(value: NullableBoolean): Self = StObject.set(x, "UseBlended", value.asInstanceOf[js.Any])
+    inline def setUseBlended(value: NullableBoolean): Self = StObject.set(x, "UseBlended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBlendedUndefined: Self = StObject.set(x, "UseBlended", js.undefined)
+    inline def setUseBlendedUndefined: Self = StObject.set(x, "UseBlended", js.undefined)
   }
 }

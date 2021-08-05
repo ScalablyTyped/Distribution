@@ -15,20 +15,16 @@ trait ReorderImpact
 }
 object ReorderImpact {
   
-  @scala.inline
-  def apply(destination: DraggableLocation): ReorderImpact = {
+  inline def apply(destination: DraggableLocation): ReorderImpact = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("REORDER")
     __obj.asInstanceOf[ReorderImpact]
   }
   
-  @scala.inline
-  implicit class ReorderImpactMutableBuilder[Self <: ReorderImpact] (val x: Self) extends AnyVal {
+  extension [Self <: ReorderImpact](x: Self) {
     
-    @scala.inline
-    def setDestination(value: DraggableLocation): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: DraggableLocation): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: REORDER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: REORDER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

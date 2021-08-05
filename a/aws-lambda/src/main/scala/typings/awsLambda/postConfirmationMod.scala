@@ -20,8 +20,7 @@ object postConfirmationMod {
   }
   object BasePostConfirmationTriggerEvent {
     
-    @scala.inline
-    def apply[T /* <: String */](
+    inline def apply[T /* <: String */](
       callerContext: AwsSdkVersion,
       region: String,
       request: UserAttributes,
@@ -34,11 +33,9 @@ object postConfirmationMod {
       __obj.asInstanceOf[BasePostConfirmationTriggerEvent[T]]
     }
     
-    @scala.inline
-    implicit class BasePostConfirmationTriggerEventMutableBuilder[Self <: BasePostConfirmationTriggerEvent[?], T /* <: String */] (val x: Self & BasePostConfirmationTriggerEvent[T]) extends AnyVal {
+    extension [Self <: BasePostConfirmationTriggerEvent[?], T /* <: String */](x: Self & BasePostConfirmationTriggerEvent[T]) {
       
-      @scala.inline
-      def setRequest(value: UserAttributes): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: UserAttributes): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   

@@ -22,28 +22,21 @@ trait Name
 }
 object Name {
   
-  @scala.inline
-  def apply(parentProcess: Process, runtimeGlobals: JestGlobals): Name = {
+  inline def apply(parentProcess: Process, runtimeGlobals: JestGlobals): Name = {
     val __obj = js.Dynamic.literal(name = "setup", parentProcess = parentProcess.asInstanceOf[js.Any], runtimeGlobals = runtimeGlobals.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setName(value: setup): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: setup): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentProcess(value: Process): Self = StObject.set(x, "parentProcess", value.asInstanceOf[js.Any])
+    inline def setParentProcess(value: Process): Self = StObject.set(x, "parentProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeGlobals(value: JestGlobals): Self = StObject.set(x, "runtimeGlobals", value.asInstanceOf[js.Any])
+    inline def setRuntimeGlobals(value: JestGlobals): Self = StObject.set(x, "runtimeGlobals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestNamePattern(value: String): Self = StObject.set(x, "testNamePattern", value.asInstanceOf[js.Any])
+    inline def setTestNamePattern(value: String): Self = StObject.set(x, "testNamePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestNamePatternUndefined: Self = StObject.set(x, "testNamePattern", js.undefined)
+    inline def setTestNamePatternUndefined: Self = StObject.set(x, "testNamePattern", js.undefined)
   }
 }

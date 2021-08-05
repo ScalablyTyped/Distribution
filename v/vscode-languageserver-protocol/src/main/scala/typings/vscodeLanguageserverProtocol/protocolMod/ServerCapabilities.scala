@@ -11,8 +11,7 @@ trait ServerCapabilities[T]
      with WorkspaceFoldersServerCapabilities
 object ServerCapabilities {
   
-  @scala.inline
-  def apply[T](): ServerCapabilities[T] = {
+  inline def apply[T](): ServerCapabilities[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerCapabilities[T]]
   }

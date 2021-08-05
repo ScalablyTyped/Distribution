@@ -19,8 +19,7 @@ trait CSSRotate
 }
 object CSSRotate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angle: CSSNumericValue,
     is2D: Boolean,
     toMatrix: () => DOMMatrix,
@@ -32,19 +31,14 @@ object CSSRotate {
     __obj.asInstanceOf[CSSRotate]
   }
   
-  @scala.inline
-  implicit class CSSRotateMutableBuilder[Self <: CSSRotate] (val x: Self) extends AnyVal {
+  extension [Self <: CSSRotate](x: Self) {
     
-    @scala.inline
-    def setAngle(value: CSSNumericValue): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: CSSNumericValue): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: CSSNumberish): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: CSSNumberish): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: CSSNumberish): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: CSSNumberish): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: CSSNumberish): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: CSSNumberish): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

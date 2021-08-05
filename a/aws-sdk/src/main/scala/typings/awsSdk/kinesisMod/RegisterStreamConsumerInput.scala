@@ -18,19 +18,15 @@ trait RegisterStreamConsumerInput extends StObject {
 }
 object RegisterStreamConsumerInput {
   
-  @scala.inline
-  def apply(ConsumerName: ConsumerName, StreamARN: StreamARN): RegisterStreamConsumerInput = {
+  inline def apply(ConsumerName: ConsumerName, StreamARN: StreamARN): RegisterStreamConsumerInput = {
     val __obj = js.Dynamic.literal(ConsumerName = ConsumerName.asInstanceOf[js.Any], StreamARN = StreamARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterStreamConsumerInput]
   }
   
-  @scala.inline
-  implicit class RegisterStreamConsumerInputMutableBuilder[Self <: RegisterStreamConsumerInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterStreamConsumerInput](x: Self) {
     
-    @scala.inline
-    def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
+    inline def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
   }
 }

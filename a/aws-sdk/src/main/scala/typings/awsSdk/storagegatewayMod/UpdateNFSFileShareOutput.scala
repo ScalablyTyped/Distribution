@@ -13,19 +13,15 @@ trait UpdateNFSFileShareOutput extends StObject {
 }
 object UpdateNFSFileShareOutput {
   
-  @scala.inline
-  def apply(): UpdateNFSFileShareOutput = {
+  inline def apply(): UpdateNFSFileShareOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateNFSFileShareOutput]
   }
   
-  @scala.inline
-  implicit class UpdateNFSFileShareOutputMutableBuilder[Self <: UpdateNFSFileShareOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNFSFileShareOutput](x: Self) {
     
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
+    inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
+    inline def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
   }
 }

@@ -19,6 +19,5 @@ class Card protected ()
 }
 object Card {
   
-  @scala.inline
-  def apply: CardComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Card").asInstanceOf[CardComponent]
+  inline def apply: CardComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Card").asInstanceOf[CardComponent]
 }

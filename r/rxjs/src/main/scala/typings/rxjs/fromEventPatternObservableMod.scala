@@ -18,21 +18,17 @@ object fromEventPatternObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](addHandler: js.Function1[/* handler */ js.Function, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](addHandler: js.Function1[/* handler */ js.Function, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](
       addHandler: js.Function1[/* handler */ js.Function, js.Any],
       removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], Unit]
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       addHandler: js.Function1[/* handler */ js.Function, js.Any],
       removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], Unit],
       selector: js.Function1[/* repeated */ js.Any, T]
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       addHandler: js.Function1[/* handler */ js.Function, js.Any],
       removeHandler: Unit,
       selector: js.Function1[/* repeated */ js.Any, T]

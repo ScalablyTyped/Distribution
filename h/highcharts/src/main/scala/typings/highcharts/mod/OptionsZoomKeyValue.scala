@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsZoomKeyValue extends StObject
 object OptionsZoomKeyValue {
   
-  @scala.inline
-  def alt: typings.highcharts.highchartsStrings.alt = "alt".asInstanceOf[typings.highcharts.highchartsStrings.alt]
+  inline def alt: typings.highcharts.highchartsStrings.alt = "alt".asInstanceOf[typings.highcharts.highchartsStrings.alt]
   
-  @scala.inline
-  def ctrl: typings.highcharts.highchartsStrings.ctrl = "ctrl".asInstanceOf[typings.highcharts.highchartsStrings.ctrl]
+  inline def ctrl: typings.highcharts.highchartsStrings.ctrl = "ctrl".asInstanceOf[typings.highcharts.highchartsStrings.ctrl]
   
-  @scala.inline
-  def meta: typings.highcharts.highchartsStrings.meta = "meta".asInstanceOf[typings.highcharts.highchartsStrings.meta]
+  inline def meta: typings.highcharts.highchartsStrings.meta = "meta".asInstanceOf[typings.highcharts.highchartsStrings.meta]
   
-  @scala.inline
-  def shift: typings.highcharts.highchartsStrings.shift = "shift".asInstanceOf[typings.highcharts.highchartsStrings.shift]
+  inline def shift: typings.highcharts.highchartsStrings.shift = "shift".asInstanceOf[typings.highcharts.highchartsStrings.shift]
 }

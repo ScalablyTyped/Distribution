@@ -35,12 +35,12 @@ object distributedSystemArrayMod {
     /**
       * @hidden
       */
-    var estimate_process_resource: js.Any = js.native
+    /* private */ var estimate_process_resource: js.Any = js.native
     
     /**
       * @hidden
       */
-    var estimate_system_performance: js.Any = js.native
+    /* private */ var estimate_system_performance: js.Any = js.native
     
     /**
       * Get a process.
@@ -80,6 +80,6 @@ object distributedSystemArrayMod {
     /**
       * @hidden
       */
-    var process_map_ : js.Any = js.native
+    /* private */ var process_map_ : js.Any = js.native
   }
 }

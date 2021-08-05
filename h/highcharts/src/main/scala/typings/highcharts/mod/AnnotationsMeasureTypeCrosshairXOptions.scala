@@ -30,37 +30,27 @@ trait AnnotationsMeasureTypeCrosshairXOptions extends StObject {
 }
 object AnnotationsMeasureTypeCrosshairXOptions {
   
-  @scala.inline
-  def apply(): AnnotationsMeasureTypeCrosshairXOptions = {
+  inline def apply(): AnnotationsMeasureTypeCrosshairXOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsMeasureTypeCrosshairXOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsMeasureTypeCrosshairXOptionsMutableBuilder[Self <: AnnotationsMeasureTypeCrosshairXOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsMeasureTypeCrosshairXOptions](x: Self) {
     
-    @scala.inline
-    def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMarkerEnd(value: String): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
+    inline def setMarkerEnd(value: String): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
+    inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

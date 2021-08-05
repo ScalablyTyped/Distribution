@@ -10,16 +10,13 @@ trait Crypto extends StObject {
 }
 object Crypto {
   
-  @scala.inline
-  def apply(getRandomValues: TypedArray => TypedArray): Crypto = {
+  inline def apply(getRandomValues: TypedArray => TypedArray): Crypto = {
     val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues))
     __obj.asInstanceOf[Crypto]
   }
   
-  @scala.inline
-  implicit class CryptoMutableBuilder[Self <: Crypto] (val x: Self) extends AnyVal {
+  extension [Self <: Crypto](x: Self) {
     
-    @scala.inline
-    def setGetRandomValues(value: TypedArray => TypedArray): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
+    inline def setGetRandomValues(value: TypedArray => TypedArray): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
   }
 }

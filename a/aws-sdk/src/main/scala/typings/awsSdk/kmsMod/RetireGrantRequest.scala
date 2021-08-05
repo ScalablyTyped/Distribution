@@ -23,31 +23,23 @@ trait RetireGrantRequest extends StObject {
 }
 object RetireGrantRequest {
   
-  @scala.inline
-  def apply(): RetireGrantRequest = {
+  inline def apply(): RetireGrantRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetireGrantRequest]
   }
   
-  @scala.inline
-  implicit class RetireGrantRequestMutableBuilder[Self <: RetireGrantRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RetireGrantRequest](x: Self) {
     
-    @scala.inline
-    def setGrantId(value: GrantIdType): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
+    inline def setGrantId(value: GrantIdType): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
+    inline def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
     
-    @scala.inline
-    def setGrantToken(value: GrantTokenType): Self = StObject.set(x, "GrantToken", value.asInstanceOf[js.Any])
+    inline def setGrantToken(value: GrantTokenType): Self = StObject.set(x, "GrantToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantTokenUndefined: Self = StObject.set(x, "GrantToken", js.undefined)
+    inline def setGrantTokenUndefined: Self = StObject.set(x, "GrantToken", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
   }
 }

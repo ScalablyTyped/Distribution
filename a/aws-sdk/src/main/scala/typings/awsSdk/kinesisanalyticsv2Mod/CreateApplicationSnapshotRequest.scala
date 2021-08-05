@@ -18,19 +18,15 @@ trait CreateApplicationSnapshotRequest extends StObject {
 }
 object CreateApplicationSnapshotRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, SnapshotName: SnapshotName): CreateApplicationSnapshotRequest = {
+  inline def apply(ApplicationName: ApplicationName, SnapshotName: SnapshotName): CreateApplicationSnapshotRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], SnapshotName = SnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateApplicationSnapshotRequestMutableBuilder[Self <: CreateApplicationSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateApplicationSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
+    inline def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
   }
 }

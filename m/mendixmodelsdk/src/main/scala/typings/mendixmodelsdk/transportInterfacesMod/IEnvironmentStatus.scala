@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IEnvironmentStatus extends StObject
 object IEnvironmentStatus {
   
-  @scala.inline
-  def AppType(
+  inline def AppType(
     disk: Double,
     endpoint: String,
     environmentId: String,
@@ -28,8 +27,7 @@ object IEnvironmentStatus {
     __obj.asInstanceOf[typings.mendixmodelsdk.anon.AppType]
   }
   
-  @scala.inline
-  def Cause(state: CannotFixAppState): typings.mendixmodelsdk.anon.Cause = {
+  inline def Cause(state: CannotFixAppState): typings.mendixmodelsdk.anon.Cause = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fail")
     __obj.asInstanceOf[typings.mendixmodelsdk.anon.Cause]

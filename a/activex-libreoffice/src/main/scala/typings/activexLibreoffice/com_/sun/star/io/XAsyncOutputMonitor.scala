@@ -32,16 +32,13 @@ trait XAsyncOutputMonitor extends StObject {
 }
 object XAsyncOutputMonitor {
   
-  @scala.inline
-  def apply(waitForCompletion: () => Unit): XAsyncOutputMonitor = {
+  inline def apply(waitForCompletion: () => Unit): XAsyncOutputMonitor = {
     val __obj = js.Dynamic.literal(waitForCompletion = js.Any.fromFunction0(waitForCompletion))
     __obj.asInstanceOf[XAsyncOutputMonitor]
   }
   
-  @scala.inline
-  implicit class XAsyncOutputMonitorMutableBuilder[Self <: XAsyncOutputMonitor] (val x: Self) extends AnyVal {
+  extension [Self <: XAsyncOutputMonitor](x: Self) {
     
-    @scala.inline
-    def setWaitForCompletion(value: () => Unit): Self = StObject.set(x, "waitForCompletion", js.Any.fromFunction0(value))
+    inline def setWaitForCompletion(value: () => Unit): Self = StObject.set(x, "waitForCompletion", js.Any.fromFunction0(value))
   }
 }

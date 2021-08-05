@@ -19,38 +19,28 @@ object anon {
   }
   object ReadonlyPartialOptions {
     
-    @scala.inline
-    def apply(): ReadonlyPartialOptions = {
+    inline def apply(): ReadonlyPartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyPartialOptions]
     }
     
-    @scala.inline
-    implicit class ReadonlyPartialOptionsMutableBuilder[Self <: ReadonlyPartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPartialOptions](x: Self) {
       
-      @scala.inline
-      def setEscapeEverything(value: Boolean): Self = StObject.set(x, "escapeEverything", value.asInstanceOf[js.Any])
+      inline def setEscapeEverything(value: Boolean): Self = StObject.set(x, "escapeEverything", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeEverythingUndefined: Self = StObject.set(x, "escapeEverything", js.undefined)
+      inline def setEscapeEverythingUndefined: Self = StObject.set(x, "escapeEverything", js.undefined)
       
-      @scala.inline
-      def setIsIdentifier(value: Boolean): Self = StObject.set(x, "isIdentifier", value.asInstanceOf[js.Any])
+      inline def setIsIdentifier(value: Boolean): Self = StObject.set(x, "isIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIdentifierUndefined: Self = StObject.set(x, "isIdentifier", js.undefined)
+      inline def setIsIdentifierUndefined: Self = StObject.set(x, "isIdentifier", js.undefined)
       
-      @scala.inline
-      def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+      inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
 }

@@ -13,8 +13,7 @@ trait BootstrapClientDateEdit
      with ASPxClientDateEdit
 object BootstrapClientDateEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     AdjustDropDownWindow: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],

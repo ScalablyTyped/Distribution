@@ -13,8 +13,7 @@ object padV2Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def padV2(args: AttrsPadV2Attrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("padV2")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def padV2(args: AttrsPadV2Attrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("padV2")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/PadV2", "padV2Config")
   @js.native

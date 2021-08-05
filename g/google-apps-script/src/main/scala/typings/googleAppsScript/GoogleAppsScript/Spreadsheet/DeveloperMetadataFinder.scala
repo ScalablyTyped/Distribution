@@ -28,8 +28,7 @@ trait DeveloperMetadataFinder extends StObject {
 }
 object DeveloperMetadataFinder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     find: () => js.Array[DeveloperMetadata],
     onIntersectingLocations: () => DeveloperMetadataFinder,
     withId: Integer => DeveloperMetadataFinder,
@@ -42,28 +41,20 @@ object DeveloperMetadataFinder {
     __obj.asInstanceOf[DeveloperMetadataFinder]
   }
   
-  @scala.inline
-  implicit class DeveloperMetadataFinderMutableBuilder[Self <: DeveloperMetadataFinder] (val x: Self) extends AnyVal {
+  extension [Self <: DeveloperMetadataFinder](x: Self) {
     
-    @scala.inline
-    def setFind(value: () => js.Array[DeveloperMetadata]): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
+    inline def setFind(value: () => js.Array[DeveloperMetadata]): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnIntersectingLocations(value: () => DeveloperMetadataFinder): Self = StObject.set(x, "onIntersectingLocations", js.Any.fromFunction0(value))
+    inline def setOnIntersectingLocations(value: () => DeveloperMetadataFinder): Self = StObject.set(x, "onIntersectingLocations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWithId(value: Integer => DeveloperMetadataFinder): Self = StObject.set(x, "withId", js.Any.fromFunction1(value))
+    inline def setWithId(value: Integer => DeveloperMetadataFinder): Self = StObject.set(x, "withId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithKey(value: String => DeveloperMetadataFinder): Self = StObject.set(x, "withKey", js.Any.fromFunction1(value))
+    inline def setWithKey(value: String => DeveloperMetadataFinder): Self = StObject.set(x, "withKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithLocationType(value: DeveloperMetadataLocationType => DeveloperMetadataFinder): Self = StObject.set(x, "withLocationType", js.Any.fromFunction1(value))
+    inline def setWithLocationType(value: DeveloperMetadataLocationType => DeveloperMetadataFinder): Self = StObject.set(x, "withLocationType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithValue(value: String => DeveloperMetadataFinder): Self = StObject.set(x, "withValue", js.Any.fromFunction1(value))
+    inline def setWithValue(value: String => DeveloperMetadataFinder): Self = StObject.set(x, "withValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithVisibility(value: DeveloperMetadataVisibility => DeveloperMetadataFinder): Self = StObject.set(x, "withVisibility", js.Any.fromFunction1(value))
+    inline def setWithVisibility(value: DeveloperMetadataVisibility => DeveloperMetadataFinder): Self = StObject.set(x, "withVisibility", js.Any.fromFunction1(value))
   }
 }

@@ -65,13 +65,9 @@ object MongoClient {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connect(uri: String): js.Promise[MongoClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoClient]]
+  inline def connect(uri: String): js.Promise[MongoClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoClient]]
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#.connect */
-  @scala.inline
-  def connect(uri: String, callback: MongoCallback[MongoClient]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connect(uri: String, options: MongoClientOptions): js.Promise[MongoClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MongoClient]]
-  @scala.inline
-  def connect(uri: String, options: MongoClientOptions, callback: MongoCallback[MongoClient]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(uri: String, callback: MongoCallback[MongoClient]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(uri: String, options: MongoClientOptions): js.Promise[MongoClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MongoClient]]
+  inline def connect(uri: String, options: MongoClientOptions, callback: MongoCallback[MongoClient]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

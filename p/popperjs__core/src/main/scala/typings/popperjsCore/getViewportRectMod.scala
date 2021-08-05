@@ -12,6 +12,5 @@ object getViewportRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Element): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Height]
+  inline def default(element: Element): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Height]
 }

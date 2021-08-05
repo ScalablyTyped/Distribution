@@ -28,34 +28,25 @@ trait DomainSummary extends StObject {
 }
 object DomainSummary {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DomainSummary = {
+  inline def apply(DomainName: DomainName): DomainSummary = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainSummary]
   }
   
-  @scala.inline
-  implicit class DomainSummaryMutableBuilder[Self <: DomainSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DomainSummary](x: Self) {
     
-    @scala.inline
-    def setAutoRenew(value: Boolean): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
+    inline def setAutoRenew(value: Boolean): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
+    inline def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiry(value: Timestamp): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: Timestamp): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
     
-    @scala.inline
-    def setTransferLock(value: Boolean): Self = StObject.set(x, "TransferLock", value.asInstanceOf[js.Any])
+    inline def setTransferLock(value: Boolean): Self = StObject.set(x, "TransferLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferLockUndefined: Self = StObject.set(x, "TransferLock", js.undefined)
+    inline def setTransferLockUndefined: Self = StObject.set(x, "TransferLock", js.undefined)
   }
 }

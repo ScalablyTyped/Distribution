@@ -29,29 +29,22 @@ object tooltipLinkListMod {
   }
   object Link {
     
-    @scala.inline
-    def apply(id: String): Link = {
+    inline def apply(id: String): Link = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Link]
     }
     
-    @scala.inline
-    implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+    extension [Self <: Link](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGatsby(value: Boolean): Self = StObject.set(x, "isGatsby", value.asInstanceOf[js.Any])
+      inline def setIsGatsby(value: Boolean): Self = StObject.set(x, "isGatsby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGatsbyUndefined: Self = StObject.set(x, "isGatsby", js.undefined)
+      inline def setIsGatsbyUndefined: Self = StObject.set(x, "isGatsby", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* event */ SyntheticEvent[Element, Event], /* item */ ListItemProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* event */ SyntheticEvent[Element, Event], /* item */ ListItemProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
   
@@ -63,26 +56,20 @@ object tooltipLinkListMod {
   }
   object TooltipLinkListProps {
     
-    @scala.inline
-    def apply(links: js.Array[Link]): TooltipLinkListProps = {
+    inline def apply(links: js.Array[Link]): TooltipLinkListProps = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipLinkListProps]
     }
     
-    @scala.inline
-    implicit class TooltipLinkListPropsMutableBuilder[Self <: TooltipLinkListProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipLinkListProps](x: Self) {
       
-      @scala.inline
-      def setLinkWrapper(value: LinkWrapperType): Self = StObject.set(x, "LinkWrapper", value.asInstanceOf[js.Any])
+      inline def setLinkWrapper(value: LinkWrapperType): Self = StObject.set(x, "LinkWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkWrapperUndefined: Self = StObject.set(x, "LinkWrapper", js.undefined)
+      inline def setLinkWrapperUndefined: Self = StObject.set(x, "LinkWrapper", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
     }
   }
 }

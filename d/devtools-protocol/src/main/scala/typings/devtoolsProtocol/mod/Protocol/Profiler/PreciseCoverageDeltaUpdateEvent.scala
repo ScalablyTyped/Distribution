@@ -23,25 +23,19 @@ trait PreciseCoverageDeltaUpdateEvent extends StObject {
 }
 object PreciseCoverageDeltaUpdateEvent {
   
-  @scala.inline
-  def apply(occassion: String, result: js.Array[ScriptCoverage], timestamp: Double): PreciseCoverageDeltaUpdateEvent = {
+  inline def apply(occassion: String, result: js.Array[ScriptCoverage], timestamp: Double): PreciseCoverageDeltaUpdateEvent = {
     val __obj = js.Dynamic.literal(occassion = occassion.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreciseCoverageDeltaUpdateEvent]
   }
   
-  @scala.inline
-  implicit class PreciseCoverageDeltaUpdateEventMutableBuilder[Self <: PreciseCoverageDeltaUpdateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PreciseCoverageDeltaUpdateEvent](x: Self) {
     
-    @scala.inline
-    def setOccassion(value: String): Self = StObject.set(x, "occassion", value.asInstanceOf[js.Any])
+    inline def setOccassion(value: String): Self = StObject.set(x, "occassion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

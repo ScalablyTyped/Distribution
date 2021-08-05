@@ -27,8 +27,7 @@ trait ParagraphCount
 }
 object ParagraphCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object ParagraphCount {
     __obj.asInstanceOf[ParagraphCount]
   }
   
-  @scala.inline
-  implicit class ParagraphCountMutableBuilder[Self <: ParagraphCount] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphCount](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

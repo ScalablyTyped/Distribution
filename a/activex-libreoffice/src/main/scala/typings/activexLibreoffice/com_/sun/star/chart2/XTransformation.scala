@@ -38,8 +38,7 @@ trait XTransformation
 }
 object XTransformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SourceDimension: Double,
     TargetDimension: Double,
     acquire: () => Unit,
@@ -53,22 +52,16 @@ object XTransformation {
     __obj.asInstanceOf[XTransformation]
   }
   
-  @scala.inline
-  implicit class XTransformationMutableBuilder[Self <: XTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: XTransformation](x: Self) {
     
-    @scala.inline
-    def setGetSourceDimension(value: () => Double): Self = StObject.set(x, "getSourceDimension", js.Any.fromFunction0(value))
+    inline def setGetSourceDimension(value: () => Double): Self = StObject.set(x, "getSourceDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetDimension(value: () => Double): Self = StObject.set(x, "getTargetDimension", js.Any.fromFunction0(value))
+    inline def setGetTargetDimension(value: () => Double): Self = StObject.set(x, "getTargetDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSourceDimension(value: Double): Self = StObject.set(x, "SourceDimension", value.asInstanceOf[js.Any])
+    inline def setSourceDimension(value: Double): Self = StObject.set(x, "SourceDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDimension(value: Double): Self = StObject.set(x, "TargetDimension", value.asInstanceOf[js.Any])
+    inline def setTargetDimension(value: Double): Self = StObject.set(x, "TargetDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

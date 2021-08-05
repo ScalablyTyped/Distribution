@@ -10,9 +10,9 @@ trait ReferenceResolver extends StObject {
   
   /* private */ def getUniqueFileId(filePath: js.Any): js.Any
   
-  var host: js.Any
+  /* private */ var host: js.Any
   
-  var inputFileNames: js.Any
+  /* private */ var inputFileNames: js.Any
   
   /* private */ def isSameFile(filePath1: js.Any, filePath2: js.Any): js.Any
   
@@ -28,14 +28,13 @@ trait ReferenceResolver extends StObject {
   
   def resolveInputFiles(): ReferenceResolutionResult
   
-  var useCaseSensitiveFileResolution: js.Any
+  /* private */ var useCaseSensitiveFileResolution: js.Any
   
-  var visited: js.Any
+  /* private */ var visited: js.Any
 }
 object ReferenceResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNormalizedFilePath: (js.Any, js.Any) => js.Any,
     getUniqueFileId: js.Any => js.Any,
     host: js.Any,
@@ -54,46 +53,32 @@ object ReferenceResolver {
     __obj.asInstanceOf[ReferenceResolver]
   }
   
-  @scala.inline
-  implicit class ReferenceResolverMutableBuilder[Self <: ReferenceResolver] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceResolver](x: Self) {
     
-    @scala.inline
-    def setGetNormalizedFilePath(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getNormalizedFilePath", js.Any.fromFunction2(value))
+    inline def setGetNormalizedFilePath(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getNormalizedFilePath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUniqueFileId(value: js.Any => js.Any): Self = StObject.set(x, "getUniqueFileId", js.Any.fromFunction1(value))
+    inline def setGetUniqueFileId(value: js.Any => js.Any): Self = StObject.set(x, "getUniqueFileId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFileNames(value: js.Any): Self = StObject.set(x, "inputFileNames", value.asInstanceOf[js.Any])
+    inline def setInputFileNames(value: js.Any): Self = StObject.set(x, "inputFileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSameFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "isSameFile", js.Any.fromFunction2(value))
+    inline def setIsSameFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "isSameFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsVisited(value: js.Any => js.Any): Self = StObject.set(x, "isVisited", js.Any.fromFunction1(value))
+    inline def setIsVisited(value: js.Any => js.Any): Self = StObject.set(x, "isVisited", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRecordVisitedFile(value: js.Any => js.Any): Self = StObject.set(x, "recordVisitedFile", js.Any.fromFunction1(value))
+    inline def setRecordVisitedFile(value: js.Any => js.Any): Self = StObject.set(x, "recordVisitedFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveFile", js.Any.fromFunction2(value))
+    inline def setResolveFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveImportedFile(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveImportedFile", js.Any.fromFunction3(value))
+    inline def setResolveImportedFile(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveImportedFile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveIncludedFile(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveIncludedFile", js.Any.fromFunction3(value))
+    inline def setResolveIncludedFile(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "resolveIncludedFile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveInputFiles(value: () => ReferenceResolutionResult): Self = StObject.set(x, "resolveInputFiles", js.Any.fromFunction0(value))
+    inline def setResolveInputFiles(value: () => ReferenceResolutionResult): Self = StObject.set(x, "resolveInputFiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseCaseSensitiveFileResolution(value: js.Any): Self = StObject.set(x, "useCaseSensitiveFileResolution", value.asInstanceOf[js.Any])
+    inline def setUseCaseSensitiveFileResolution(value: js.Any): Self = StObject.set(x, "useCaseSensitiveFileResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisited(value: js.Any): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+    inline def setVisited(value: js.Any): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
   }
 }

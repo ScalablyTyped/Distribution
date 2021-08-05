@@ -12,17 +12,14 @@ object anon {
   }
   object Brand {
     
-    @scala.inline
-    def apply[A /* <: js.Object */](__brand: /* keyof A */ String): Brand[A] = {
+    inline def apply[A /* <: js.Object */](__brand: /* keyof A */ String): Brand[A] = {
       val __obj = js.Dynamic.literal(__brand = __brand.asInstanceOf[js.Any])
       __obj.asInstanceOf[Brand[A]]
     }
     
-    @scala.inline
-    implicit class BrandMutableBuilder[Self <: Brand[?], A /* <: js.Object */] (val x: Self & Brand[A]) extends AnyVal {
+    extension [Self <: Brand[?], A /* <: js.Object */](x: Self & Brand[A]) {
       
-      @scala.inline
-      def set__brand(value: /* keyof A */ String): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
+      inline def set__brand(value: /* keyof A */ String): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object BrandU {
     
-    @scala.inline
-    def apply[U](__brand: U): BrandU[U] = {
+    inline def apply[U](__brand: U): BrandU[U] = {
       val __obj = js.Dynamic.literal(__brand = __brand.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrandU[U]]
     }
     
-    @scala.inline
-    implicit class BrandUMutableBuilder[Self <: BrandU[?], U] (val x: Self & BrandU[U]) extends AnyVal {
+    extension [Self <: BrandU[?], U](x: Self & BrandU[U]) {
       
-      @scala.inline
-      def set__brand(value: U): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
+      inline def set__brand(value: U): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
     }
   }
 }

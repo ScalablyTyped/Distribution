@@ -13,19 +13,15 @@ trait DeleteLocalGatewayRouteResult extends StObject {
 }
 object DeleteLocalGatewayRouteResult {
   
-  @scala.inline
-  def apply(): DeleteLocalGatewayRouteResult = {
+  inline def apply(): DeleteLocalGatewayRouteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteLocalGatewayRouteResult]
   }
   
-  @scala.inline
-  implicit class DeleteLocalGatewayRouteResultMutableBuilder[Self <: DeleteLocalGatewayRouteResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLocalGatewayRouteResult](x: Self) {
     
-    @scala.inline
-    def setRoute(value: LocalGatewayRoute): Self = StObject.set(x, "Route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: LocalGatewayRoute): Self = StObject.set(x, "Route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "Route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "Route", js.undefined)
   }
 }

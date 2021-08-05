@@ -67,6 +67,5 @@ object wsMod {
   @js.native
   val TEXT: /* 1 */ Double = js.native
   
-  @scala.inline
-  def upgrade(accept: js.Function): ClassHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("upgrade")(accept.asInstanceOf[js.Any]).asInstanceOf[ClassHandler]
+  inline def upgrade(accept: js.Function): ClassHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("upgrade")(accept.asInstanceOf[js.Any]).asInstanceOf[ClassHandler]
 }

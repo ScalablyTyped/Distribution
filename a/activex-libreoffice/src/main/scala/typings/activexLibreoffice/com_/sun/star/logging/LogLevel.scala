@@ -29,31 +29,22 @@ object LogLevel {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+    inline def ALL: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
     
-    @scala.inline
-    def CONFIG: `700` = 700.asInstanceOf[`700`]
+    inline def CONFIG: `700` = 700.asInstanceOf[`700`]
     
-    @scala.inline
-    def FINE: `500` = 500.asInstanceOf[`500`]
+    inline def FINE: `500` = 500.asInstanceOf[`500`]
     
-    @scala.inline
-    def FINER: `400` = 400.asInstanceOf[`400`]
+    inline def FINER: `400` = 400.asInstanceOf[`400`]
     
-    @scala.inline
-    def FINEST: `300` = 300.asInstanceOf[`300`]
+    inline def FINEST: `300` = 300.asInstanceOf[`300`]
     
-    @scala.inline
-    def INFO: `800` = 800.asInstanceOf[`800`]
+    inline def INFO: `800` = 800.asInstanceOf[`800`]
     
-    @scala.inline
-    def OFF: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+    inline def OFF: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
     
-    @scala.inline
-    def SEVERE: `1000` = 1000.asInstanceOf[`1000`]
+    inline def SEVERE: `1000` = 1000.asInstanceOf[`1000`]
     
-    @scala.inline
-    def WARNING: `900` = 900.asInstanceOf[`900`]
+    inline def WARNING: `900` = 900.asInstanceOf[`900`]
   }
 }

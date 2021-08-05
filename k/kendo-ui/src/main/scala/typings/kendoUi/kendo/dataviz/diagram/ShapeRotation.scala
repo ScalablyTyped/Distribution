@@ -10,19 +10,15 @@ trait ShapeRotation extends StObject {
 }
 object ShapeRotation {
   
-  @scala.inline
-  def apply(): ShapeRotation = {
+  inline def apply(): ShapeRotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeRotation]
   }
   
-  @scala.inline
-  implicit class ShapeRotationMutableBuilder[Self <: ShapeRotation] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeRotation](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
   }
 }

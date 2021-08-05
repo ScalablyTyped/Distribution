@@ -32,22 +32,17 @@ trait Rule extends StObject {
 }
 object Rule {
   
-  @scala.inline
-  def apply(Action: Double, Parameter: String, Terms: SafeArray[RuleTerm]): Rule = {
+  inline def apply(Action: Double, Parameter: String, Terms: SafeArray[RuleTerm]): Rule = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Parameter = Parameter.asInstanceOf[js.Any], Terms = Terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
   
-  @scala.inline
-  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+  extension [Self <: Rule](x: Self) {
     
-    @scala.inline
-    def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "Parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "Parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerms(value: SafeArray[RuleTerm]): Self = StObject.set(x, "Terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: SafeArray[RuleTerm]): Self = StObject.set(x, "Terms", value.asInstanceOf[js.Any])
   }
 }

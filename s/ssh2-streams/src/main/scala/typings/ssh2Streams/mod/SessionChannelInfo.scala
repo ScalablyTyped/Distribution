@@ -19,26 +19,20 @@ trait SessionChannelInfo
 }
 object SessionChannelInfo {
   
-  @scala.inline
-  def apply(packetSize: Double, sender: Double, window: Double): SessionChannelInfo = {
+  inline def apply(packetSize: Double, sender: Double, window: Double): SessionChannelInfo = {
     val __obj = js.Dynamic.literal(packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("session")
     __obj.asInstanceOf[SessionChannelInfo]
   }
   
-  @scala.inline
-  implicit class SessionChannelInfoMutableBuilder[Self <: SessionChannelInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SessionChannelInfo](x: Self) {
     
-    @scala.inline
-    def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
+    inline def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: Double): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Double): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: session): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: session): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

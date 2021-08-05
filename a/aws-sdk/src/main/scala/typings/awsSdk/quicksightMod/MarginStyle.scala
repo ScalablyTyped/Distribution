@@ -13,19 +13,15 @@ trait MarginStyle extends StObject {
 }
 object MarginStyle {
   
-  @scala.inline
-  def apply(): MarginStyle = {
+  inline def apply(): MarginStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarginStyle]
   }
   
-  @scala.inline
-  implicit class MarginStyleMutableBuilder[Self <: MarginStyle] (val x: Self) extends AnyVal {
+  extension [Self <: MarginStyle](x: Self) {
     
-    @scala.inline
-    def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
+    inline def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
   }
 }

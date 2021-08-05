@@ -12,25 +12,19 @@ trait NewWindowOptions extends StObject {
 }
 object NewWindowOptions {
   
-  @scala.inline
-  def apply(): NewWindowOptions = {
+  inline def apply(): NewWindowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NewWindowOptions]
   }
   
-  @scala.inline
-  implicit class NewWindowOptionsMutableBuilder[Self <: NewWindowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NewWindowOptions](x: Self) {
     
-    @scala.inline
-    def setWindowFeatures(value: String): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
+    inline def setWindowFeatures(value: String): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowFeaturesUndefined: Self = StObject.set(x, "windowFeatures", js.undefined)
+    inline def setWindowFeaturesUndefined: Self = StObject.set(x, "windowFeatures", js.undefined)
     
-    @scala.inline
-    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
+    inline def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowNameUndefined: Self = StObject.set(x, "windowName", js.undefined)
+    inline def setWindowNameUndefined: Self = StObject.set(x, "windowName", js.undefined)
   }
 }

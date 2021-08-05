@@ -28,32 +28,24 @@ object barMod {
   }
   object FlexBarProps {
     
-    @scala.inline
-    def apply(): FlexBarProps = {
+    inline def apply(): FlexBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexBarProps]
     }
     
-    @scala.inline
-    implicit class FlexBarPropsMutableBuilder[Self <: FlexBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlexBarProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -65,26 +57,20 @@ object barMod {
   }
   object SideProps {
     
-    @scala.inline
-    def apply(): SideProps = {
+    inline def apply(): SideProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SideProps]
     }
     
-    @scala.inline
-    implicit class SidePropsMutableBuilder[Self <: SideProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideProps](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     }
   }
 }

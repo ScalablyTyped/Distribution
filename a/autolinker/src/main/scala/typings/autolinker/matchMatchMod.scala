@@ -25,7 +25,7 @@ object matchMatchMod {
       * Reference to the AnchorTagBuilder instance to use to generate an anchor
       * tag for the Match.
       */
-    var __jsduckDummyDocProp: js.Any = js.native
+    /* private */ var __jsduckDummyDocProp: js.Any = js.native
     
     /**
       * Builds and returns an {@link Autolinker.HtmlTag} instance based on the
@@ -125,14 +125,14 @@ object matchMatchMod {
       *
       * The original text that was matched by the {@link Autolinker.matcher.Matcher}.
       */
-    val matchedText: String = js.native
+    /* protected */ val matchedText: String = js.native
     
     /**
       * @cfg {Number} offset (required)
       *
       * The offset of where the match was made in the input string.
       */
-    var offset: js.Any = js.native
+    /* private */ var offset: js.Any = js.native
     
     /**
       * Sets the {@link #offset} of where the match was made in the input string.
@@ -148,7 +148,7 @@ object matchMatchMod {
       */
     def setOffset(offset: Double): Unit = js.native
     
-    val tagBuilder: js.Any = js.native
+    /* private */ val tagBuilder: js.Any = js.native
   }
   
   trait MatchConfig extends StObject {
@@ -161,23 +161,18 @@ object matchMatchMod {
   }
   object MatchConfig {
     
-    @scala.inline
-    def apply(matchedText: String, offset: Double, tagBuilder: AnchorTagBuilder): MatchConfig = {
+    inline def apply(matchedText: String, offset: Double, tagBuilder: AnchorTagBuilder): MatchConfig = {
       val __obj = js.Dynamic.literal(matchedText = matchedText.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchConfig]
     }
     
-    @scala.inline
-    implicit class MatchConfigMutableBuilder[Self <: MatchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MatchConfig](x: Self) {
       
-      @scala.inline
-      def setMatchedText(value: String): Self = StObject.set(x, "matchedText", value.asInstanceOf[js.Any])
+      inline def setMatchedText(value: String): Self = StObject.set(x, "matchedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagBuilder(value: AnchorTagBuilder): Self = StObject.set(x, "tagBuilder", value.asInstanceOf[js.Any])
+      inline def setTagBuilder(value: AnchorTagBuilder): Self = StObject.set(x, "tagBuilder", value.asInstanceOf[js.Any])
     }
   }
 }

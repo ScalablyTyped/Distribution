@@ -12,11 +12,9 @@ object immediateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def clearImmediate(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearImmediate(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setImmediate(cb: js.Function0[Unit]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(cb.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def setImmediate(cb: js.Function0[Unit]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(cb.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   object TestTools {
@@ -25,7 +23,6 @@ object immediateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def pending(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pending")().asInstanceOf[Double]
+    inline def pending(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pending")().asInstanceOf[Double]
   }
 }

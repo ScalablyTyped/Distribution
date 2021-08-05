@@ -67,223 +67,151 @@ trait Call
 }
 object Call {
   
-  @scala.inline
-  def apply(): Call = {
+  inline def apply(): Call = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Call]
   }
   
-  @scala.inline
-  implicit class CallMutableBuilder[Self <: Call] (val x: Self) extends AnyVal {
+  extension [Self <: Call](x: Self) {
     
-    @scala.inline
-    def setCallChainId(value: NullableOption[String]): Self = StObject.set(x, "callChainId", value.asInstanceOf[js.Any])
+    inline def setCallChainId(value: NullableOption[String]): Self = StObject.set(x, "callChainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallChainIdNull: Self = StObject.set(x, "callChainId", null)
+    inline def setCallChainIdNull: Self = StObject.set(x, "callChainId", null)
     
-    @scala.inline
-    def setCallChainIdUndefined: Self = StObject.set(x, "callChainId", js.undefined)
+    inline def setCallChainIdUndefined: Self = StObject.set(x, "callChainId", js.undefined)
     
-    @scala.inline
-    def setCallOptions(value: NullableOption[CallOptions]): Self = StObject.set(x, "callOptions", value.asInstanceOf[js.Any])
+    inline def setCallOptions(value: NullableOption[CallOptions]): Self = StObject.set(x, "callOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallOptionsNull: Self = StObject.set(x, "callOptions", null)
+    inline def setCallOptionsNull: Self = StObject.set(x, "callOptions", null)
     
-    @scala.inline
-    def setCallOptionsUndefined: Self = StObject.set(x, "callOptions", js.undefined)
+    inline def setCallOptionsUndefined: Self = StObject.set(x, "callOptions", js.undefined)
     
-    @scala.inline
-    def setCallRoutes(value: NullableOption[js.Array[CallRoute]]): Self = StObject.set(x, "callRoutes", value.asInstanceOf[js.Any])
+    inline def setCallRoutes(value: NullableOption[js.Array[CallRoute]]): Self = StObject.set(x, "callRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallRoutesNull: Self = StObject.set(x, "callRoutes", null)
+    inline def setCallRoutesNull: Self = StObject.set(x, "callRoutes", null)
     
-    @scala.inline
-    def setCallRoutesUndefined: Self = StObject.set(x, "callRoutes", js.undefined)
+    inline def setCallRoutesUndefined: Self = StObject.set(x, "callRoutes", js.undefined)
     
-    @scala.inline
-    def setCallRoutesVarargs(value: CallRoute*): Self = StObject.set(x, "callRoutes", js.Array(value :_*))
+    inline def setCallRoutesVarargs(value: CallRoute*): Self = StObject.set(x, "callRoutes", js.Array(value :_*))
     
-    @scala.inline
-    def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
+    inline def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUriUndefined: Self = StObject.set(x, "callbackUri", js.undefined)
+    inline def setCallbackUriUndefined: Self = StObject.set(x, "callbackUri", js.undefined)
     
-    @scala.inline
-    def setChatInfo(value: NullableOption[ChatInfo]): Self = StObject.set(x, "chatInfo", value.asInstanceOf[js.Any])
+    inline def setChatInfo(value: NullableOption[ChatInfo]): Self = StObject.set(x, "chatInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChatInfoNull: Self = StObject.set(x, "chatInfo", null)
+    inline def setChatInfoNull: Self = StObject.set(x, "chatInfo", null)
     
-    @scala.inline
-    def setChatInfoUndefined: Self = StObject.set(x, "chatInfo", js.undefined)
+    inline def setChatInfoUndefined: Self = StObject.set(x, "chatInfo", js.undefined)
     
-    @scala.inline
-    def setDirection(value: NullableOption[CallDirection]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: NullableOption[CallDirection]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionNull: Self = StObject.set(x, "direction", null)
+    inline def setDirectionNull: Self = StObject.set(x, "direction", null)
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setIncomingContext(value: NullableOption[IncomingContext]): Self = StObject.set(x, "incomingContext", value.asInstanceOf[js.Any])
+    inline def setIncomingContext(value: NullableOption[IncomingContext]): Self = StObject.set(x, "incomingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomingContextNull: Self = StObject.set(x, "incomingContext", null)
+    inline def setIncomingContextNull: Self = StObject.set(x, "incomingContext", null)
     
-    @scala.inline
-    def setIncomingContextUndefined: Self = StObject.set(x, "incomingContext", js.undefined)
+    inline def setIncomingContextUndefined: Self = StObject.set(x, "incomingContext", js.undefined)
     
-    @scala.inline
-    def setMediaConfig(value: NullableOption[MediaConfig]): Self = StObject.set(x, "mediaConfig", value.asInstanceOf[js.Any])
+    inline def setMediaConfig(value: NullableOption[MediaConfig]): Self = StObject.set(x, "mediaConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaConfigNull: Self = StObject.set(x, "mediaConfig", null)
+    inline def setMediaConfigNull: Self = StObject.set(x, "mediaConfig", null)
     
-    @scala.inline
-    def setMediaConfigUndefined: Self = StObject.set(x, "mediaConfig", js.undefined)
+    inline def setMediaConfigUndefined: Self = StObject.set(x, "mediaConfig", js.undefined)
     
-    @scala.inline
-    def setMediaState(value: NullableOption[CallMediaState]): Self = StObject.set(x, "mediaState", value.asInstanceOf[js.Any])
+    inline def setMediaState(value: NullableOption[CallMediaState]): Self = StObject.set(x, "mediaState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaStateNull: Self = StObject.set(x, "mediaState", null)
+    inline def setMediaStateNull: Self = StObject.set(x, "mediaState", null)
     
-    @scala.inline
-    def setMediaStateUndefined: Self = StObject.set(x, "mediaState", js.undefined)
+    inline def setMediaStateUndefined: Self = StObject.set(x, "mediaState", js.undefined)
     
-    @scala.inline
-    def setMeetingInfo(value: NullableOption[MeetingInfo]): Self = StObject.set(x, "meetingInfo", value.asInstanceOf[js.Any])
+    inline def setMeetingInfo(value: NullableOption[MeetingInfo]): Self = StObject.set(x, "meetingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingInfoNull: Self = StObject.set(x, "meetingInfo", null)
+    inline def setMeetingInfoNull: Self = StObject.set(x, "meetingInfo", null)
     
-    @scala.inline
-    def setMeetingInfoUndefined: Self = StObject.set(x, "meetingInfo", js.undefined)
+    inline def setMeetingInfoUndefined: Self = StObject.set(x, "meetingInfo", js.undefined)
     
-    @scala.inline
-    def setMyParticipantId(value: NullableOption[String]): Self = StObject.set(x, "myParticipantId", value.asInstanceOf[js.Any])
+    inline def setMyParticipantId(value: NullableOption[String]): Self = StObject.set(x, "myParticipantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMyParticipantIdNull: Self = StObject.set(x, "myParticipantId", null)
+    inline def setMyParticipantIdNull: Self = StObject.set(x, "myParticipantId", null)
     
-    @scala.inline
-    def setMyParticipantIdUndefined: Self = StObject.set(x, "myParticipantId", js.undefined)
+    inline def setMyParticipantIdUndefined: Self = StObject.set(x, "myParticipantId", js.undefined)
     
-    @scala.inline
-    def setOperations(value: NullableOption[js.Array[CommsOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: NullableOption[js.Array[CommsOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsNull: Self = StObject.set(x, "operations", null)
+    inline def setOperationsNull: Self = StObject.set(x, "operations", null)
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: CommsOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: CommsOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
-    @scala.inline
-    def setParticipants(value: NullableOption[js.Array[Participant]]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: NullableOption[js.Array[Participant]]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsNull: Self = StObject.set(x, "participants", null)
+    inline def setParticipantsNull: Self = StObject.set(x, "participants", null)
     
-    @scala.inline
-    def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
+    inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
-    @scala.inline
-    def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestedModalities(value: NullableOption[js.Array[Modality]]): Self = StObject.set(x, "requestedModalities", value.asInstanceOf[js.Any])
+    inline def setRequestedModalities(value: NullableOption[js.Array[Modality]]): Self = StObject.set(x, "requestedModalities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedModalitiesNull: Self = StObject.set(x, "requestedModalities", null)
+    inline def setRequestedModalitiesNull: Self = StObject.set(x, "requestedModalities", null)
     
-    @scala.inline
-    def setRequestedModalitiesUndefined: Self = StObject.set(x, "requestedModalities", js.undefined)
+    inline def setRequestedModalitiesUndefined: Self = StObject.set(x, "requestedModalities", js.undefined)
     
-    @scala.inline
-    def setRequestedModalitiesVarargs(value: Modality*): Self = StObject.set(x, "requestedModalities", js.Array(value :_*))
+    inline def setRequestedModalitiesVarargs(value: Modality*): Self = StObject.set(x, "requestedModalities", js.Array(value :_*))
     
-    @scala.inline
-    def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
+    inline def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultInfoNull: Self = StObject.set(x, "resultInfo", null)
+    inline def setResultInfoNull: Self = StObject.set(x, "resultInfo", null)
     
-    @scala.inline
-    def setResultInfoUndefined: Self = StObject.set(x, "resultInfo", js.undefined)
+    inline def setResultInfoUndefined: Self = StObject.set(x, "resultInfo", js.undefined)
     
-    @scala.inline
-    def setSource(value: NullableOption[ParticipantInfo]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NullableOption[ParticipantInfo]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setState(value: NullableOption[CallState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NullableOption[CallState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectNull: Self = StObject.set(x, "subject", null)
+    inline def setSubjectNull: Self = StObject.set(x, "subject", null)
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setTargets(value: NullableOption[js.Array[InvitationParticipantInfo]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: NullableOption[js.Array[InvitationParticipantInfo]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsNull: Self = StObject.set(x, "targets", null)
+    inline def setTargetsNull: Self = StObject.set(x, "targets", null)
     
-    @scala.inline
-    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+    inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    @scala.inline
-    def setTargetsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: InvitationParticipantInfo*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
-    @scala.inline
-    def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
+    inline def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
     
-    @scala.inline
-    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+    inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
-    @scala.inline
-    def setToneInfo(value: NullableOption[ToneInfo]): Self = StObject.set(x, "toneInfo", value.asInstanceOf[js.Any])
+    inline def setToneInfo(value: NullableOption[ToneInfo]): Self = StObject.set(x, "toneInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToneInfoNull: Self = StObject.set(x, "toneInfo", null)
+    inline def setToneInfoNull: Self = StObject.set(x, "toneInfo", null)
     
-    @scala.inline
-    def setToneInfoUndefined: Self = StObject.set(x, "toneInfo", js.undefined)
+    inline def setToneInfoUndefined: Self = StObject.set(x, "toneInfo", js.undefined)
     
-    @scala.inline
-    def setTranscription(value: NullableOption[CallTranscriptionInfo]): Self = StObject.set(x, "transcription", value.asInstanceOf[js.Any])
+    inline def setTranscription(value: NullableOption[CallTranscriptionInfo]): Self = StObject.set(x, "transcription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptionNull: Self = StObject.set(x, "transcription", null)
+    inline def setTranscriptionNull: Self = StObject.set(x, "transcription", null)
     
-    @scala.inline
-    def setTranscriptionUndefined: Self = StObject.set(x, "transcription", js.undefined)
+    inline def setTranscriptionUndefined: Self = StObject.set(x, "transcription", js.undefined)
   }
 }

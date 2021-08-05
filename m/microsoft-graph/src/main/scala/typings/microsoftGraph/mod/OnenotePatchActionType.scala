@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnenotePatchActionType extends StObject
 object OnenotePatchActionType {
   
-  @scala.inline
-  def Append: typings.microsoftGraph.microsoftGraphStrings.Append = "Append".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Append]
+  inline def Append: typings.microsoftGraph.microsoftGraphStrings.Append = "Append".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Append]
   
-  @scala.inline
-  def Delete: typings.microsoftGraph.microsoftGraphStrings.Delete = "Delete".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Delete]
+  inline def Delete: typings.microsoftGraph.microsoftGraphStrings.Delete = "Delete".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Delete]
   
-  @scala.inline
-  def Insert: typings.microsoftGraph.microsoftGraphStrings.Insert = "Insert".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Insert]
+  inline def Insert: typings.microsoftGraph.microsoftGraphStrings.Insert = "Insert".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Insert]
   
-  @scala.inline
-  def Prepend: typings.microsoftGraph.microsoftGraphStrings.Prepend = "Prepend".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Prepend]
+  inline def Prepend: typings.microsoftGraph.microsoftGraphStrings.Prepend = "Prepend".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Prepend]
   
-  @scala.inline
-  def Replace: typings.microsoftGraph.microsoftGraphStrings.Replace = "Replace".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Replace]
+  inline def Replace: typings.microsoftGraph.microsoftGraphStrings.Replace = "Replace".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Replace]
 }

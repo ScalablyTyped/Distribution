@@ -37,8 +37,7 @@ trait DeliveryViewData
 }
 object DeliveryViewData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childIdToParentIdMap: NumberDictionary[Double],
     criteriaStatus: TimelineCriteriaStatus,
     endDate: Date,
@@ -51,25 +50,18 @@ object DeliveryViewData {
     __obj.asInstanceOf[DeliveryViewData]
   }
   
-  @scala.inline
-  implicit class DeliveryViewDataMutableBuilder[Self <: DeliveryViewData] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryViewData](x: Self) {
     
-    @scala.inline
-    def setChildIdToParentIdMap(value: NumberDictionary[Double]): Self = StObject.set(x, "childIdToParentIdMap", value.asInstanceOf[js.Any])
+    inline def setChildIdToParentIdMap(value: NumberDictionary[Double]): Self = StObject.set(x, "childIdToParentIdMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaStatus(value: TimelineCriteriaStatus): Self = StObject.set(x, "criteriaStatus", value.asInstanceOf[js.Any])
+    inline def setCriteriaStatus(value: TimelineCriteriaStatus): Self = StObject.set(x, "criteriaStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeams(value: js.Array[TimelineTeamData]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+    inline def setTeams(value: js.Array[TimelineTeamData]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamsVarargs(value: TimelineTeamData*): Self = StObject.set(x, "teams", js.Array(value :_*))
+    inline def setTeamsVarargs(value: TimelineTeamData*): Self = StObject.set(x, "teams", js.Array(value :_*))
   }
 }

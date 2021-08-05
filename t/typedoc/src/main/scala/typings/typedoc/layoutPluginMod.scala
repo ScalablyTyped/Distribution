@@ -14,6 +14,6 @@ object layoutPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Renderer) = this()
     
-    var onRendererEndPage: js.Any = js.native
+    /* private */ var onRendererEndPage: js.Any = js.native
   }
 }

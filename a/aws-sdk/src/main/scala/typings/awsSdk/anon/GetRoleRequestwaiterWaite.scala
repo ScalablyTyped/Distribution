@@ -19,22 +19,17 @@ trait GetRoleRequestwaiterWaite extends StObject {
 }
 object GetRoleRequestwaiterWaite {
   
-  @scala.inline
-  def apply(RoleName: roleNameType): GetRoleRequestwaiterWaite = {
+  inline def apply(RoleName: roleNameType): GetRoleRequestwaiterWaite = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRoleRequestwaiterWaite]
   }
   
-  @scala.inline
-  implicit class GetRoleRequestwaiterWaiteMutableBuilder[Self <: GetRoleRequestwaiterWaite] (val x: Self) extends AnyVal {
+  extension [Self <: GetRoleRequestwaiterWaite](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

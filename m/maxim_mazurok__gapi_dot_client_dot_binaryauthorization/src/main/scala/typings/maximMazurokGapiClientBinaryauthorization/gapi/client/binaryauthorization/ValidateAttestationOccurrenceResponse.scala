@@ -14,25 +14,19 @@ trait ValidateAttestationOccurrenceResponse extends StObject {
 }
 object ValidateAttestationOccurrenceResponse {
   
-  @scala.inline
-  def apply(): ValidateAttestationOccurrenceResponse = {
+  inline def apply(): ValidateAttestationOccurrenceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateAttestationOccurrenceResponse]
   }
   
-  @scala.inline
-  implicit class ValidateAttestationOccurrenceResponseMutableBuilder[Self <: ValidateAttestationOccurrenceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateAttestationOccurrenceResponse](x: Self) {
     
-    @scala.inline
-    def setDenialReason(value: String): Self = StObject.set(x, "denialReason", value.asInstanceOf[js.Any])
+    inline def setDenialReason(value: String): Self = StObject.set(x, "denialReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenialReasonUndefined: Self = StObject.set(x, "denialReason", js.undefined)
+    inline def setDenialReasonUndefined: Self = StObject.set(x, "denialReason", js.undefined)
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

@@ -68,8 +68,7 @@ trait AuthenticateOidcActionConfig extends StObject {
 }
 object AuthenticateOidcActionConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AuthorizationEndpoint: AuthenticateOidcActionAuthorizationEndpoint,
     ClientId: AuthenticateOidcActionClientId,
     Issuer: AuthenticateOidcActionIssuer,
@@ -80,64 +79,44 @@ object AuthenticateOidcActionConfig {
     __obj.asInstanceOf[AuthenticateOidcActionConfig]
   }
   
-  @scala.inline
-  implicit class AuthenticateOidcActionConfigMutableBuilder[Self <: AuthenticateOidcActionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticateOidcActionConfig](x: Self) {
     
-    @scala.inline
-    def setAuthenticationRequestExtraParams(value: AuthenticateOidcActionAuthenticationRequestExtraParams): Self = StObject.set(x, "AuthenticationRequestExtraParams", value.asInstanceOf[js.Any])
+    inline def setAuthenticationRequestExtraParams(value: AuthenticateOidcActionAuthenticationRequestExtraParams): Self = StObject.set(x, "AuthenticationRequestExtraParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationRequestExtraParamsUndefined: Self = StObject.set(x, "AuthenticationRequestExtraParams", js.undefined)
+    inline def setAuthenticationRequestExtraParamsUndefined: Self = StObject.set(x, "AuthenticationRequestExtraParams", js.undefined)
     
-    @scala.inline
-    def setAuthorizationEndpoint(value: AuthenticateOidcActionAuthorizationEndpoint): Self = StObject.set(x, "AuthorizationEndpoint", value.asInstanceOf[js.Any])
+    inline def setAuthorizationEndpoint(value: AuthenticateOidcActionAuthorizationEndpoint): Self = StObject.set(x, "AuthorizationEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: AuthenticateOidcActionClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: AuthenticateOidcActionClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: AuthenticateOidcActionClientSecret): Self = StObject.set(x, "ClientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: AuthenticateOidcActionClientSecret): Self = StObject.set(x, "ClientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecretUndefined: Self = StObject.set(x, "ClientSecret", js.undefined)
+    inline def setClientSecretUndefined: Self = StObject.set(x, "ClientSecret", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: AuthenticateOidcActionIssuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: AuthenticateOidcActionIssuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUnauthenticatedRequest(value: AuthenticateOidcActionConditionalBehaviorEnum): Self = StObject.set(x, "OnUnauthenticatedRequest", value.asInstanceOf[js.Any])
+    inline def setOnUnauthenticatedRequest(value: AuthenticateOidcActionConditionalBehaviorEnum): Self = StObject.set(x, "OnUnauthenticatedRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUnauthenticatedRequestUndefined: Self = StObject.set(x, "OnUnauthenticatedRequest", js.undefined)
+    inline def setOnUnauthenticatedRequestUndefined: Self = StObject.set(x, "OnUnauthenticatedRequest", js.undefined)
     
-    @scala.inline
-    def setScope(value: AuthenticateOidcActionScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: AuthenticateOidcActionScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
     
-    @scala.inline
-    def setSessionCookieName(value: AuthenticateOidcActionSessionCookieName): Self = StObject.set(x, "SessionCookieName", value.asInstanceOf[js.Any])
+    inline def setSessionCookieName(value: AuthenticateOidcActionSessionCookieName): Self = StObject.set(x, "SessionCookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionCookieNameUndefined: Self = StObject.set(x, "SessionCookieName", js.undefined)
+    inline def setSessionCookieNameUndefined: Self = StObject.set(x, "SessionCookieName", js.undefined)
     
-    @scala.inline
-    def setSessionTimeout(value: AuthenticateOidcActionSessionTimeout): Self = StObject.set(x, "SessionTimeout", value.asInstanceOf[js.Any])
+    inline def setSessionTimeout(value: AuthenticateOidcActionSessionTimeout): Self = StObject.set(x, "SessionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTimeoutUndefined: Self = StObject.set(x, "SessionTimeout", js.undefined)
+    inline def setSessionTimeoutUndefined: Self = StObject.set(x, "SessionTimeout", js.undefined)
     
-    @scala.inline
-    def setTokenEndpoint(value: AuthenticateOidcActionTokenEndpoint): Self = StObject.set(x, "TokenEndpoint", value.asInstanceOf[js.Any])
+    inline def setTokenEndpoint(value: AuthenticateOidcActionTokenEndpoint): Self = StObject.set(x, "TokenEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExistingClientSecret(value: AuthenticateOidcActionUseExistingClientSecret): Self = StObject.set(x, "UseExistingClientSecret", value.asInstanceOf[js.Any])
+    inline def setUseExistingClientSecret(value: AuthenticateOidcActionUseExistingClientSecret): Self = StObject.set(x, "UseExistingClientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExistingClientSecretUndefined: Self = StObject.set(x, "UseExistingClientSecret", js.undefined)
+    inline def setUseExistingClientSecretUndefined: Self = StObject.set(x, "UseExistingClientSecret", js.undefined)
     
-    @scala.inline
-    def setUserInfoEndpoint(value: AuthenticateOidcActionUserInfoEndpoint): Self = StObject.set(x, "UserInfoEndpoint", value.asInstanceOf[js.Any])
+    inline def setUserInfoEndpoint(value: AuthenticateOidcActionUserInfoEndpoint): Self = StObject.set(x, "UserInfoEndpoint", value.asInstanceOf[js.Any])
   }
 }

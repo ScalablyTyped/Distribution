@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TickLabels")
 @js.native
-class TickLabels protected ()
+/* private */ class TickLabels ()
   extends StObject
      with typings.activexWord.Word.TickLabels {
   
@@ -65,7 +65,7 @@ class TickLabels protected ()
   /* CompleteClass */
   override def Select(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TickLabels_typekey")
   var WordDotTickLabels_typekey: typings.activexWord.Word.TickLabels = js.native
 }

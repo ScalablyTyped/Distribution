@@ -19,26 +19,20 @@ object srcResolveMod {
   }
   object AxisResolveMap {
     
-    @scala.inline
-    def apply(): AxisResolveMap = {
+    inline def apply(): AxisResolveMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AxisResolveMap]
     }
     
-    @scala.inline
-    implicit class AxisResolveMapMutableBuilder[Self <: AxisResolveMap] (val x: Self) extends AnyVal {
+    extension [Self <: AxisResolveMap](x: Self) {
       
-      @scala.inline
-      def setX(value: ResolveMode): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: ResolveMode): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: ResolveMode): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: ResolveMode): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -54,32 +48,24 @@ object srcResolveMod {
   }
   object Resolve {
     
-    @scala.inline
-    def apply(): Resolve = {
+    inline def apply(): Resolve = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Resolve]
     }
     
-    @scala.inline
-    implicit class ResolveMutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
+    extension [Self <: Resolve](x: Self) {
       
-      @scala.inline
-      def setAxis(value: AxisResolveMap): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: AxisResolveMap): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setLegend(value: LegendResolveMap): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: LegendResolveMap): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
-      @scala.inline
-      def setScale(value: ScaleResolveMap): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: ScaleResolveMap): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     }
   }
   
@@ -90,11 +76,9 @@ object srcResolveMod {
   trait ResolveMode extends StObject
   object ResolveMode {
     
-    @scala.inline
-    def independent: typings.vegaLite.vegaLiteStrings.independent = "independent".asInstanceOf[typings.vegaLite.vegaLiteStrings.independent]
+    inline def independent: typings.vegaLite.vegaLiteStrings.independent = "independent".asInstanceOf[typings.vegaLite.vegaLiteStrings.independent]
     
-    @scala.inline
-    def shared: typings.vegaLite.vegaLiteStrings.shared = "shared".asInstanceOf[typings.vegaLite.vegaLiteStrings.shared]
+    inline def shared: typings.vegaLite.vegaLiteStrings.shared = "shared".asInstanceOf[typings.vegaLite.vegaLiteStrings.shared]
   }
   
   type ScaleResolveMap = Partial[Record[ScaleChannel, ResolveMode]]

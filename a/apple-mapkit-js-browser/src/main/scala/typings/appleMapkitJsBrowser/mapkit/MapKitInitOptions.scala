@@ -25,22 +25,17 @@ trait MapKitInitOptions extends StObject {
 }
 object MapKitInitOptions {
   
-  @scala.inline
-  def apply(authorizationCallback: js.Function1[/* token */ String, Unit] => Unit): MapKitInitOptions = {
+  inline def apply(authorizationCallback: js.Function1[/* token */ String, Unit] => Unit): MapKitInitOptions = {
     val __obj = js.Dynamic.literal(authorizationCallback = js.Any.fromFunction1(authorizationCallback))
     __obj.asInstanceOf[MapKitInitOptions]
   }
   
-  @scala.inline
-  implicit class MapKitInitOptionsMutableBuilder[Self <: MapKitInitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapKitInitOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorizationCallback(value: js.Function1[/* token */ String, Unit] => Unit): Self = StObject.set(x, "authorizationCallback", js.Any.fromFunction1(value))
+    inline def setAuthorizationCallback(value: js.Function1[/* token */ String, Unit] => Unit): Self = StObject.set(x, "authorizationCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

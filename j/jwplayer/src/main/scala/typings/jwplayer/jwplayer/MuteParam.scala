@@ -10,16 +10,13 @@ trait MuteParam extends StObject {
 }
 object MuteParam {
   
-  @scala.inline
-  def apply(mute: Boolean): MuteParam = {
+  inline def apply(mute: Boolean): MuteParam = {
     val __obj = js.Dynamic.literal(mute = mute.asInstanceOf[js.Any])
     __obj.asInstanceOf[MuteParam]
   }
   
-  @scala.inline
-  implicit class MuteParamMutableBuilder[Self <: MuteParam] (val x: Self) extends AnyVal {
+  extension [Self <: MuteParam](x: Self) {
     
-    @scala.inline
-    def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+    inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
   }
 }

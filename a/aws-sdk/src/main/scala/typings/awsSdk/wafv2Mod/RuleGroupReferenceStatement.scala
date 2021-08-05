@@ -18,25 +18,19 @@ trait RuleGroupReferenceStatement extends StObject {
 }
 object RuleGroupReferenceStatement {
   
-  @scala.inline
-  def apply(ARN: ResourceArn): RuleGroupReferenceStatement = {
+  inline def apply(ARN: ResourceArn): RuleGroupReferenceStatement = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupReferenceStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupReferenceStatementMutableBuilder[Self <: RuleGroupReferenceStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupReferenceStatement](x: Self) {
     
-    @scala.inline
-    def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
+    inline def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
+    inline def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
     
-    @scala.inline
-    def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
+    inline def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
   }
 }

@@ -15,7 +15,7 @@ abstract class Adapter[TEngine] protected () extends EventEmitter {
   /* protected */ def _resolve[T](value: T): js.Promise[T] = js.native
   /* protected */ def _resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
   
-  var _source: EntitySource[js.Any, js.Any] = js.native
+  /* protected */ var _source: EntitySource[js.Any, js.Any] = js.native
   
   val engine: TEngine = js.native
   

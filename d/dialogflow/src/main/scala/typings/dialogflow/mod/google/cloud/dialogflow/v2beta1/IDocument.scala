@@ -32,79 +32,55 @@ trait IDocument extends StObject {
 }
 object IDocument {
   
-  @scala.inline
-  def apply(): IDocument = {
+  inline def apply(): IDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDocument]
   }
   
-  @scala.inline
-  implicit class IDocumentMutableBuilder[Self <: IDocument] (val x: Self) extends AnyVal {
+  extension [Self <: IDocument](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
+    inline def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUriNull: Self = StObject.set(x, "contentUri", null)
+    inline def setContentUriNull: Self = StObject.set(x, "contentUri", null)
     
-    @scala.inline
-    def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
+    inline def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setKnowledgeTypes(value: js.Array[KnowledgeType]): Self = StObject.set(x, "knowledgeTypes", value.asInstanceOf[js.Any])
+    inline def setKnowledgeTypes(value: js.Array[KnowledgeType]): Self = StObject.set(x, "knowledgeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeTypesNull: Self = StObject.set(x, "knowledgeTypes", null)
+    inline def setKnowledgeTypesNull: Self = StObject.set(x, "knowledgeTypes", null)
     
-    @scala.inline
-    def setKnowledgeTypesUndefined: Self = StObject.set(x, "knowledgeTypes", js.undefined)
+    inline def setKnowledgeTypesUndefined: Self = StObject.set(x, "knowledgeTypes", js.undefined)
     
-    @scala.inline
-    def setKnowledgeTypesVarargs(value: KnowledgeType*): Self = StObject.set(x, "knowledgeTypes", js.Array(value :_*))
+    inline def setKnowledgeTypesVarargs(value: KnowledgeType*): Self = StObject.set(x, "knowledgeTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
+    inline def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRawContent(value: Uint8Array | String): Self = StObject.set(x, "rawContent", value.asInstanceOf[js.Any])
+    inline def setRawContent(value: Uint8Array | String): Self = StObject.set(x, "rawContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawContentNull: Self = StObject.set(x, "rawContent", null)
+    inline def setRawContentNull: Self = StObject.set(x, "rawContent", null)
     
-    @scala.inline
-    def setRawContentUndefined: Self = StObject.set(x, "rawContent", js.undefined)
+    inline def setRawContentUndefined: Self = StObject.set(x, "rawContent", js.undefined)
   }
 }

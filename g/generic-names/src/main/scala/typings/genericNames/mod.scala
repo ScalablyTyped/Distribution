@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pattern: String): Generator = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator]
-  @scala.inline
-  def apply(pattern: String, options: PartialOptions): Generator = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator]
+  inline def apply(pattern: String): Generator = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Generator]
+  inline def apply(pattern: String, options: PartialOptions): Generator = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator]
   
   @JSImport("generic-names", JSImport.Namespace)
   @js.native
@@ -26,20 +24,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(context: String, hashPrefix: String): Options = {
+    inline def apply(context: String, hashPrefix: String): Options = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], hashPrefix = hashPrefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
+      inline def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
     }
   }
 }

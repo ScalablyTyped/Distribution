@@ -9,12 +9,12 @@ object mod {
   
   @JSImport("optional-js", JSImport.Default)
   @js.native
-  class default[T] protected ()
+  /* private */ class default[T] ()
     extends StObject
        with Optional[T] {
-    protected def this(value: T) = this()
+    /* private */ def this(value: T) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _value: js.Any = js.native
     
     /**
@@ -143,8 +143,7 @@ object mod {
       *
       * @return an empty Optional
       */
-    @scala.inline
-    def empty[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Optional[T]]
+    inline def empty[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Optional[T]]
     
     /**
       * Returns an Optional describing the given non-null value.
@@ -154,8 +153,7 @@ object mod {
       * @return an Optional with the value present
       * @throws Error if value is null
       */
-    @scala.inline
-    def of[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+    inline def of[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
     
     /**
       * Returns an Optional describing the given value, if non-null, otherwise returns an empty Optional.
@@ -164,15 +162,13 @@ object mod {
       * @param value the possibly-null value to describe
       * @return an Optional with a present value if the specified value is non-null, otherwise an empty Optional
       */
-    @scala.inline
-    def ofNullable[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[Optional[T]]
-    @scala.inline
-    def ofNullable[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
+    inline def ofNullable[T](): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[Optional[T]]
+    inline def ofNullable[T](value: T): Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(value.asInstanceOf[js.Any]).asInstanceOf[Optional[T]]
   }
   
   trait Optional[T] extends StObject {
     
-    val _value: js.Any
+    /* private */ val _value: js.Any
     
     /**
       * If a value is present, and the value matches the given predicate, return an Optional describing the value,
@@ -279,8 +275,7 @@ object mod {
   }
   object Optional {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       _value: js.Any,
       filter: js.Function1[/* value */ T, Boolean] => Optional[T],
       flatMap: js.Function1[/* value */ T, js.UndefOr[Optional[js.Any] | Null]] => Optional[js.Any],
@@ -298,44 +293,31 @@ object mod {
       __obj.asInstanceOf[Optional[T]]
     }
     
-    @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
+    extension [Self <: Optional[?], T](x: Self & Optional[T]) {
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* value */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* value */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatMap(value: js.Function1[/* value */ T, js.UndefOr[Optional[js.Any] | Null]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: js.Function1[/* value */ T, js.UndefOr[Optional[js.Any] | Null]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIfPresent(value: js.Function1[/* value */ T, Unit] => Unit): Self = StObject.set(x, "ifPresent", js.Any.fromFunction1(value))
+      inline def setIfPresent(value: js.Function1[/* value */ T, Unit] => Unit): Self = StObject.set(x, "ifPresent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIfPresentOrElse(value: (js.Function1[/* value */ T, Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "ifPresentOrElse", js.Any.fromFunction2(value))
+      inline def setIfPresentOrElse(value: (js.Function1[/* value */ T, Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "ifPresentOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsPresent(value: () => Boolean): Self = StObject.set(x, "isPresent", js.Any.fromFunction0(value))
+      inline def setIsPresent(value: () => Boolean): Self = StObject.set(x, "isPresent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMap(value: js.Function1[/* value */ T, js.UndefOr[js.Any | Null]] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* value */ T, js.UndefOr[js.Any | Null]] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOr(value: js.Function0[Optional[T]] => Optional[T]): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+      inline def setOr(value: js.Function0[Optional[T]] => Optional[T]): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrElse(value: T => T): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
+      inline def setOrElse(value: T => T): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrElseGet(value: js.Function0[T] => T): Self = StObject.set(x, "orElseGet", js.Any.fromFunction1(value))
+      inline def setOrElseGet(value: js.Function0[T] => T): Self = StObject.set(x, "orElseGet", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrElseThrow(value: js.Function0[Error] => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
+      inline def setOrElseThrow(value: js.Function0[Error] => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+      inline def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     }
   }
 }

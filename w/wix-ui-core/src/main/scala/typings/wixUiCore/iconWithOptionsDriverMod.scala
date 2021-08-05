@@ -11,6 +11,5 @@ object iconWithOptionsDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iconWithOptionsDriverFactory(args: js.Any): ClickOutside = ^.asInstanceOf[js.Dynamic].applyDynamic("iconWithOptionsDriverFactory")(args.asInstanceOf[js.Any]).asInstanceOf[ClickOutside]
+  inline def iconWithOptionsDriverFactory(args: js.Any): ClickOutside = ^.asInstanceOf[js.Dynamic].applyDynamic("iconWithOptionsDriverFactory")(args.asInstanceOf[js.Any]).asInstanceOf[ClickOutside]
 }

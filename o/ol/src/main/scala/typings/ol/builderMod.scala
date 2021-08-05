@@ -39,7 +39,7 @@ object builderMod {
     /* protected */ def beginGeometry(geometry: typings.ol.geometryMod.default, feature: FeatureLike): Unit = js.native
     /* protected */ def beginGeometry(geometry: typings.ol.renderFeatureMod.default, feature: FeatureLike): Unit = js.native
     
-    var coordinates: js.Array[Double] = js.native
+    /* protected */ var coordinates: js.Array[Double] = js.native
     
     def createFill(state: FillStrokeState): js.Array[js.Any] = js.native
     
@@ -64,26 +64,26 @@ object builderMod {
       */
     /* protected */ def getBufferedMaxExtent(): Extent = js.native
     
-    var hitDetectionInstructions: js.Array[js.Any] = js.native
+    /* protected */ var hitDetectionInstructions: js.Array[js.Any] = js.native
     
-    var instructions: js.Array[js.Any] = js.native
+    /* protected */ var instructions: js.Array[js.Any] = js.native
     
-    var maxExtent: Extent = js.native
+    /* protected */ var maxExtent: Extent = js.native
     
-    var maxLineWidth: Double = js.native
+    /* protected */ var maxLineWidth: Double = js.native
     
-    var pixelRatio: Double = js.native
+    /* protected */ var pixelRatio: Double = js.native
     
-    var resolution: Double = js.native
+    /* protected */ var resolution: Double = js.native
     
     /**
       * Reverse the hit detection instructions.
       */
     def reverseHitDetectionInstructions(): Unit = js.native
     
-    var state: FillStrokeState = js.native
+    /* protected */ var state: FillStrokeState = js.native
     
-    var tolerance: Double = js.native
+    /* protected */ var tolerance: Double = js.native
     
     def updateFillStyle(
       state: FillStrokeState,
@@ -112,8 +112,7 @@ object builderMod {
   }
   object SerializableInstructions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coordinates: js.Array[Double],
       hitDetectionInstructions: js.Array[js.Any],
       instructions: js.Array[js.Any]
@@ -122,44 +121,31 @@ object builderMod {
       __obj.asInstanceOf[SerializableInstructions]
     }
     
-    @scala.inline
-    implicit class SerializableInstructionsMutableBuilder[Self <: SerializableInstructions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializableInstructions](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
       
-      @scala.inline
-      def setFillStates(value: StringDictionary[FillState]): Self = StObject.set(x, "fillStates", value.asInstanceOf[js.Any])
+      inline def setFillStates(value: StringDictionary[FillState]): Self = StObject.set(x, "fillStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillStatesUndefined: Self = StObject.set(x, "fillStates", js.undefined)
+      inline def setFillStatesUndefined: Self = StObject.set(x, "fillStates", js.undefined)
       
-      @scala.inline
-      def setHitDetectionInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
+      inline def setHitDetectionInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitDetectionInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value :_*))
+      inline def setHitDetectionInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value :_*))
       
-      @scala.inline
-      def setInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      inline def setInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+      inline def setInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "instructions", js.Array(value :_*))
       
-      @scala.inline
-      def setStrokeStates(value: StringDictionary[StrokeState]): Self = StObject.set(x, "strokeStates", value.asInstanceOf[js.Any])
+      inline def setStrokeStates(value: StringDictionary[StrokeState]): Self = StObject.set(x, "strokeStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStatesUndefined: Self = StObject.set(x, "strokeStates", js.undefined)
+      inline def setStrokeStatesUndefined: Self = StObject.set(x, "strokeStates", js.undefined)
       
-      @scala.inline
-      def setTextStates(value: StringDictionary[TextState]): Self = StObject.set(x, "textStates", value.asInstanceOf[js.Any])
+      inline def setTextStates(value: StringDictionary[TextState]): Self = StObject.set(x, "textStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStatesUndefined: Self = StObject.set(x, "textStates", js.undefined)
+      inline def setTextStatesUndefined: Self = StObject.set(x, "textStates", js.undefined)
     }
   }
 }

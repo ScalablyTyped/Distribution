@@ -44,8 +44,7 @@ trait XSheetAnnotation
 }
 object XSheetAnnotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Author: String,
     Date: String,
     IsVisible: Boolean,
@@ -63,34 +62,24 @@ object XSheetAnnotation {
     __obj.asInstanceOf[XSheetAnnotation]
   }
   
-  @scala.inline
-  implicit class XSheetAnnotationMutableBuilder[Self <: XSheetAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetAnnotation](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAuthor(value: () => String): Self = StObject.set(x, "getAuthor", js.Any.fromFunction0(value))
+    inline def setGetAuthor(value: () => String): Self = StObject.set(x, "getAuthor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDate(value: () => String): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+    inline def setGetDate(value: () => String): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsVisible(value: () => Boolean): Self = StObject.set(x, "getIsVisible", js.Any.fromFunction0(value))
+    inline def setGetIsVisible(value: () => Boolean): Self = StObject.set(x, "getIsVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => CellAddress): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => CellAddress): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: CellAddress): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: CellAddress): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIsVisible(value: Boolean => Unit): Self = StObject.set(x, "setIsVisible", js.Any.fromFunction1(value))
+    inline def setSetIsVisible(value: Boolean => Unit): Self = StObject.set(x, "setIsVisible", js.Any.fromFunction1(value))
   }
 }

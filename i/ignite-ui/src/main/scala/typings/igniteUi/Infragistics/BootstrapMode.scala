@@ -10,16 +10,13 @@ trait BootstrapMode extends StObject {
 }
 object BootstrapMode {
   
-  @scala.inline
-  def apply(isActive: () => Unit): BootstrapMode = {
+  inline def apply(isActive: () => Unit): BootstrapMode = {
     val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction0(isActive))
     __obj.asInstanceOf[BootstrapMode]
   }
   
-  @scala.inline
-  implicit class BootstrapModeMutableBuilder[Self <: BootstrapMode] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapMode](x: Self) {
     
-    @scala.inline
-    def setIsActive(value: () => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
   }
 }

@@ -215,14 +215,11 @@ object ui {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def alert(messageHtml: String, title: String): Promise[Unit] & JQueryPromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit] & JQueryPromise[Unit]]
+    inline def alert(messageHtml: String, title: String): Promise[Unit] & JQueryPromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit] & JQueryPromise[Unit]]
     
-    @scala.inline
-    def confirm(messageHtml: String, title: String): Promise[Boolean] & JQueryPromise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Promise[Boolean] & JQueryPromise[Boolean]]
+    inline def confirm(messageHtml: String, title: String): Promise[Boolean] & JQueryPromise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Promise[Boolean] & JQueryPromise[Boolean]]
     
-    @scala.inline
-    def custom(options: Buttons): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def custom(options: Buttons): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("devextreme", "default.ui.dxAccordion")
@@ -537,8 +534,7 @@ object ui {
   @JSImport("devextreme", "default.ui.dxItem")
   @js.native
   def dxItem: js.Any = js.native
-  @scala.inline
-  def dxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dxItem")(x.asInstanceOf[js.Any])
+  inline def dxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dxItem")(x.asInstanceOf[js.Any])
   
   @JSImport("devextreme", "default.ui.dxList")
   @js.native
@@ -666,8 +662,7 @@ object ui {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def baseZIndex(zIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("baseZIndex")(zIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def baseZIndex(zIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("baseZIndex")(zIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("devextreme", "default.ui.dxPivotGrid")
@@ -1086,42 +1081,31 @@ object ui {
   /**
     * [descr:ui.notify(message,type,displayTime)]
     */
-  @scala.inline
-  def notify(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def notify(message: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def notify(message: String, `type`: String, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def notify(message: String, `type`: Unit, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def notify(message: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify(message: String, `type`: String, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify(message: String, `type`: Unit, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * [descr:ui.notify(options,type,displayTime)]
     */
-  @scala.inline
-  def notify(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def notify(options: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def notify(options: js.Any, `type`: String, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def notify(options: js.Any, `type`: Unit, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def notify(options: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify(options: js.Any, `type`: String, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify(options: js.Any, `type`: Unit, displayTime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], displayTime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * [descr:ui.repaintFloatingActionButton()]
     */
-  @scala.inline
-  def repaintFloatingActionButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repaintFloatingActionButton")().asInstanceOf[Unit]
+  inline def repaintFloatingActionButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repaintFloatingActionButton")().asInstanceOf[Unit]
   
   /**
     * [descr:ui.setTemplateEngine(name)]
     */
-  @scala.inline
-  def setTemplateEngine(templateEngineName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTemplateEngine(templateEngineName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * [descr:ui.setTemplateEngine(options)]
     */
-  @scala.inline
-  def setTemplateEngine(templateEngineOptions: Compile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTemplateEngine(templateEngineOptions: Compile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateEngine")(templateEngineOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("devextreme", "default.ui.themes")
   @js.native
@@ -1138,24 +1122,20 @@ object ui {
     /**
       * [descr:ui.themes.current()]
       */
-    @scala.inline
-    def current(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[String]
+    inline def current(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[String]
     /**
       * [descr:ui.themes.current(themeName)]
       */
-    @scala.inline
-    def current(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("current")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def current(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("current")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * [descr:ui.themes.initialized(callback)]
       */
-    @scala.inline
-    def initialized(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialized")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def initialized(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialized")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * [descr:ui.themes.ready(callback)]
       */
-    @scala.inline
-    def ready(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ready(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -40,7 +40,7 @@ trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* k
     * Adding private keyword works, but the annotation is stripped away in declaration.
     * Turns out if we use an empty string, it doesn't show up in intelliSense.
     */
-  @JSName("")
+  /* protected */ @JSName("")
   var _empty: js.UndefOr[A[ParamList]] & (js.UndefOr[BC[ParamList, RouteName]]) = js.native
   
   /**

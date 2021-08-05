@@ -15,8 +15,7 @@ trait GifOptions
      with AnimationOptions
 object GifOptions {
   
-  @scala.inline
-  def apply(): GifOptions = {
+  inline def apply(): GifOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GifOptions]
   }

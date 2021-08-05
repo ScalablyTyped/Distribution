@@ -30,37 +30,27 @@ trait SigninDetail extends StObject {
 }
 object SigninDetail {
   
-  @scala.inline
-  def apply(): SigninDetail = {
+  inline def apply(): SigninDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigninDetail]
   }
   
-  @scala.inline
-  implicit class SigninDetailMutableBuilder[Self <: SigninDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SigninDetail](x: Self) {
     
-    @scala.inline
-    def setAllowPersonalUsage(value: String): Self = StObject.set(x, "allowPersonalUsage", value.asInstanceOf[js.Any])
+    inline def setAllowPersonalUsage(value: String): Self = StObject.set(x, "allowPersonalUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPersonalUsageUndefined: Self = StObject.set(x, "allowPersonalUsage", js.undefined)
+    inline def setAllowPersonalUsageUndefined: Self = StObject.set(x, "allowPersonalUsage", js.undefined)
     
-    @scala.inline
-    def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
+    inline def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
+    inline def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
     
-    @scala.inline
-    def setSigninEnrollmentToken(value: String): Self = StObject.set(x, "signinEnrollmentToken", value.asInstanceOf[js.Any])
+    inline def setSigninEnrollmentToken(value: String): Self = StObject.set(x, "signinEnrollmentToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninEnrollmentTokenUndefined: Self = StObject.set(x, "signinEnrollmentToken", js.undefined)
+    inline def setSigninEnrollmentTokenUndefined: Self = StObject.set(x, "signinEnrollmentToken", js.undefined)
     
-    @scala.inline
-    def setSigninUrl(value: String): Self = StObject.set(x, "signinUrl", value.asInstanceOf[js.Any])
+    inline def setSigninUrl(value: String): Self = StObject.set(x, "signinUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninUrlUndefined: Self = StObject.set(x, "signinUrl", js.undefined)
+    inline def setSigninUrlUndefined: Self = StObject.set(x, "signinUrl", js.undefined)
   }
 }

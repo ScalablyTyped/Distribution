@@ -24,31 +24,23 @@ trait GoogleActionsTransactionsV3SkuId extends StObject {
 }
 object GoogleActionsTransactionsV3SkuId {
   
-  @scala.inline
-  def apply(): GoogleActionsTransactionsV3SkuId = {
+  inline def apply(): GoogleActionsTransactionsV3SkuId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsTransactionsV3SkuId]
   }
   
-  @scala.inline
-  implicit class GoogleActionsTransactionsV3SkuIdMutableBuilder[Self <: GoogleActionsTransactionsV3SkuId] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsTransactionsV3SkuId](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setSkuType(value: GoogleActionsTransactionsV3SkuIdSkuType): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
+    inline def setSkuType(value: GoogleActionsTransactionsV3SkuIdSkuType): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuTypeUndefined: Self = StObject.set(x, "skuType", js.undefined)
+    inline def setSkuTypeUndefined: Self = StObject.set(x, "skuType", js.undefined)
   }
 }

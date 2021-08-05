@@ -14,8 +14,7 @@ object batchnormMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def batchNorm[R /* <: Rank */](
+  inline def batchNorm[R /* <: Rank */](
     x: Tensor[R] | TensorLike,
     mean: Tensor[R] | Tensor1D | TensorLike,
     variance: Tensor[R] | Tensor1D | TensorLike,

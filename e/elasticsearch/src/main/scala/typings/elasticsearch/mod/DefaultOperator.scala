@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefaultOperator extends StObject
 object DefaultOperator {
   
-  @scala.inline
-  def AND: typings.elasticsearch.elasticsearchStrings.AND = "AND".asInstanceOf[typings.elasticsearch.elasticsearchStrings.AND]
+  inline def AND: typings.elasticsearch.elasticsearchStrings.AND = "AND".asInstanceOf[typings.elasticsearch.elasticsearchStrings.AND]
   
-  @scala.inline
-  def OR: typings.elasticsearch.elasticsearchStrings.OR = "OR".asInstanceOf[typings.elasticsearch.elasticsearchStrings.OR]
+  inline def OR: typings.elasticsearch.elasticsearchStrings.OR = "OR".asInstanceOf[typings.elasticsearch.elasticsearchStrings.OR]
 }

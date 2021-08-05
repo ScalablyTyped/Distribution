@@ -23,8 +23,7 @@ trait RequestCancelActivityTaskFailedEventAttributes extends StObject {
 }
 object RequestCancelActivityTaskFailedEventAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activityId: ActivityId,
     cause: RequestCancelActivityTaskFailedCause,
     decisionTaskCompletedEventId: EventId
@@ -33,16 +32,12 @@ object RequestCancelActivityTaskFailedEventAttributes {
     __obj.asInstanceOf[RequestCancelActivityTaskFailedEventAttributes]
   }
   
-  @scala.inline
-  implicit class RequestCancelActivityTaskFailedEventAttributesMutableBuilder[Self <: RequestCancelActivityTaskFailedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: RequestCancelActivityTaskFailedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCause(value: RequestCancelActivityTaskFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: RequestCancelActivityTaskFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
   }
 }

@@ -46,37 +46,27 @@ trait PivotFilters extends StObject {
 }
 object PivotFilters {
   
-  @scala.inline
-  def apply(): PivotFilters = {
+  inline def apply(): PivotFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotFilters]
   }
   
-  @scala.inline
-  implicit class PivotFiltersMutableBuilder[Self <: PivotFilters] (val x: Self) extends AnyVal {
+  extension [Self <: PivotFilters](x: Self) {
     
-    @scala.inline
-    def setDateFilter(value: PivotDateFilter): Self = StObject.set(x, "dateFilter", value.asInstanceOf[js.Any])
+    inline def setDateFilter(value: PivotDateFilter): Self = StObject.set(x, "dateFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFilterUndefined: Self = StObject.set(x, "dateFilter", js.undefined)
+    inline def setDateFilterUndefined: Self = StObject.set(x, "dateFilter", js.undefined)
     
-    @scala.inline
-    def setLabelFilter(value: PivotLabelFilter): Self = StObject.set(x, "labelFilter", value.asInstanceOf[js.Any])
+    inline def setLabelFilter(value: PivotLabelFilter): Self = StObject.set(x, "labelFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFilterUndefined: Self = StObject.set(x, "labelFilter", js.undefined)
+    inline def setLabelFilterUndefined: Self = StObject.set(x, "labelFilter", js.undefined)
     
-    @scala.inline
-    def setManualFilter(value: PivotManualFilter): Self = StObject.set(x, "manualFilter", value.asInstanceOf[js.Any])
+    inline def setManualFilter(value: PivotManualFilter): Self = StObject.set(x, "manualFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualFilterUndefined: Self = StObject.set(x, "manualFilter", js.undefined)
+    inline def setManualFilterUndefined: Self = StObject.set(x, "manualFilter", js.undefined)
     
-    @scala.inline
-    def setValueFilter(value: PivotValueFilter): Self = StObject.set(x, "valueFilter", value.asInstanceOf[js.Any])
+    inline def setValueFilter(value: PivotValueFilter): Self = StObject.set(x, "valueFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFilterUndefined: Self = StObject.set(x, "valueFilter", js.undefined)
+    inline def setValueFilterUndefined: Self = StObject.set(x, "valueFilter", js.undefined)
   }
 }

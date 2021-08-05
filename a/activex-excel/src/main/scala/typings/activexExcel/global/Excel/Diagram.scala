@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Diagram")
 @js.native
-class Diagram protected ()
+/* private */ class Diagram ()
   extends StObject
      with typings.activexExcel.Excel.Diagram {
   
@@ -29,7 +29,7 @@ class Diagram protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Diagram_typekey")
   var ExcelDotDiagram_typekey: typings.activexExcel.Excel.Diagram = js.native
   

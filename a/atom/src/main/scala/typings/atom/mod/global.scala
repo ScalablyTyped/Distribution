@@ -16,18 +16,15 @@ object global {
   }
   object HTMLElementTagNameMap {
     
-    @scala.inline
-    def apply(`atom-text-editor`: TextEditorElement): HTMLElementTagNameMap = {
+    inline def apply(`atom-text-editor`: TextEditorElement): HTMLElementTagNameMap = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("atom-text-editor")(`atom-text-editor`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTMLElementTagNameMap]
     }
     
-    @scala.inline
-    implicit class HTMLElementTagNameMapMutableBuilder[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLElementTagNameMap](x: Self) {
       
-      @scala.inline
-      def `setAtom-text-editor`(value: TextEditorElement): Self = StObject.set(x, "atom-text-editor", value.asInstanceOf[js.Any])
+      inline def `setAtom-text-editor`(value: TextEditorElement): Self = StObject.set(x, "atom-text-editor", value.asInstanceOf[js.Any])
     }
   }
 }

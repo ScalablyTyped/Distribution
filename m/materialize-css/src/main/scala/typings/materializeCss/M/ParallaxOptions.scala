@@ -14,16 +14,13 @@ trait ParallaxOptions extends StObject {
 }
 object ParallaxOptions {
   
-  @scala.inline
-  def apply(responsiveThreshold: Double): ParallaxOptions = {
+  inline def apply(responsiveThreshold: Double): ParallaxOptions = {
     val __obj = js.Dynamic.literal(responsiveThreshold = responsiveThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallaxOptions]
   }
   
-  @scala.inline
-  implicit class ParallaxOptionsMutableBuilder[Self <: ParallaxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParallaxOptions](x: Self) {
     
-    @scala.inline
-    def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
+    inline def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
   }
 }

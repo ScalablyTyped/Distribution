@@ -22,8 +22,7 @@ object stepperMod {
     @JSImport("antd-mobile/lib/stepper", "default.defaultProps")
     @js.native
     def defaultProps: FocusOnUpDown = js.native
-    @scala.inline
-    def defaultProps_=(x: FocusOnUpDown): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: FocusOnUpDown): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait StepProps
@@ -38,32 +37,24 @@ object stepperMod {
   }
   object StepProps {
     
-    @scala.inline
-    def apply(): StepProps = {
+    inline def apply(): StepProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepProps]
     }
     
-    @scala.inline
-    implicit class StepPropsMutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
+    extension [Self <: StepProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setShowNumber(value: Boolean): Self = StObject.set(x, "showNumber", value.asInstanceOf[js.Any])
+      inline def setShowNumber(value: Boolean): Self = StObject.set(x, "showNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNumberUndefined: Self = StObject.set(x, "showNumber", js.undefined)
+      inline def setShowNumberUndefined: Self = StObject.set(x, "showNumber", js.undefined)
     }
   }
   

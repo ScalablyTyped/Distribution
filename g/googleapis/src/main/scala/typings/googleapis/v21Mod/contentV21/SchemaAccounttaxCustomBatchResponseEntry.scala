@@ -32,37 +32,27 @@ trait SchemaAccounttaxCustomBatchResponseEntry extends StObject {
 }
 object SchemaAccounttaxCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): SchemaAccounttaxCustomBatchResponseEntry = {
+  inline def apply(): SchemaAccounttaxCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccounttaxCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class SchemaAccounttaxCustomBatchResponseEntryMutableBuilder[Self <: SchemaAccounttaxCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccounttaxCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setAccountTax(value: SchemaAccountTax): Self = StObject.set(x, "accountTax", value.asInstanceOf[js.Any])
+    inline def setAccountTax(value: SchemaAccountTax): Self = StObject.set(x, "accountTax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountTaxUndefined: Self = StObject.set(x, "accountTax", js.undefined)
+    inline def setAccountTaxUndefined: Self = StObject.set(x, "accountTax", js.undefined)
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

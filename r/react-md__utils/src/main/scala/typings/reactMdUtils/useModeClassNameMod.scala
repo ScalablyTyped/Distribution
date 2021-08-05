@@ -11,6 +11,5 @@ object useModeClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useModeClassName(mode: UserInteractionMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useModeClassName")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useModeClassName(mode: UserInteractionMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useModeClassName")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

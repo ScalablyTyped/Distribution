@@ -18,8 +18,7 @@ trait IVaultUserSettingOperations extends StObject {
 }
 object IVaultUserSettingOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangeVaultLanguage: Double => Unit,
     GetSubstituteUsers: () => IUserOrUserGroupIDs,
     GetVaultLanguage: () => Double,
@@ -30,22 +29,16 @@ object IVaultUserSettingOperations {
     __obj.asInstanceOf[IVaultUserSettingOperations]
   }
   
-  @scala.inline
-  implicit class IVaultUserSettingOperationsMutableBuilder[Self <: IVaultUserSettingOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultUserSettingOperations](x: Self) {
     
-    @scala.inline
-    def setChangeVaultLanguage(value: Double => Unit): Self = StObject.set(x, "ChangeVaultLanguage", js.Any.fromFunction1(value))
+    inline def setChangeVaultLanguage(value: Double => Unit): Self = StObject.set(x, "ChangeVaultLanguage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSubstituteUsers(value: () => IUserOrUserGroupIDs): Self = StObject.set(x, "GetSubstituteUsers", js.Any.fromFunction0(value))
+    inline def setGetSubstituteUsers(value: () => IUserOrUserGroupIDs): Self = StObject.set(x, "GetSubstituteUsers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVaultLanguage(value: () => Double): Self = StObject.set(x, "GetVaultLanguage", js.Any.fromFunction0(value))
+    inline def setGetVaultLanguage(value: () => Double): Self = StObject.set(x, "GetVaultLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVaultLanguageCode(value: () => String): Self = StObject.set(x, "GetVaultLanguageCode", js.Any.fromFunction0(value))
+    inline def setGetVaultLanguageCode(value: () => String): Self = StObject.set(x, "GetVaultLanguageCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSubstituteUsers(value: IUserOrUserGroupIDs => Unit): Self = StObject.set(x, "SetSubstituteUsers", js.Any.fromFunction1(value))
+    inline def setSetSubstituteUsers(value: IUserOrUserGroupIDs => Unit): Self = StObject.set(x, "SetSubstituteUsers", js.Any.fromFunction1(value))
   }
 }

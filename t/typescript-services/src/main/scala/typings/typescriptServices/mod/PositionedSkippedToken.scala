@@ -18,13 +18,13 @@ class PositionedSkippedToken protected ()
     fullStart: Double
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _element: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _fullStart: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _parent: js.Any = js.native
   
   /* CompleteClass */

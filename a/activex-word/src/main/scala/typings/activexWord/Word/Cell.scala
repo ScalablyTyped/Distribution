@@ -82,7 +82,7 @@ trait Cell extends StObject {
   
   var Width: Double = js.native
   
-  @JSName("Word.Cell_typekey")
+  /* private */ @JSName("Word.Cell_typekey")
   var WordDotCell_typekey: Cell = js.native
   
   var WordWrap: Boolean = js.native

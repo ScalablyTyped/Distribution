@@ -70,63 +70,45 @@ trait Options
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
+    inline def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
+    inline def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
     
-    @scala.inline
-    def setChangePassword(value: (/* message */ String, /* language */ String) => typings.bluebird.mod.^[String]): Self = StObject.set(x, "changePassword", js.Any.fromFunction2(value))
+    inline def setChangePassword(value: (/* message */ String, /* language */ String) => typings.bluebird.mod.^[String]): Self = StObject.set(x, "changePassword", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChangePasswordUndefined: Self = StObject.set(x, "changePassword", js.undefined)
+    inline def setChangePasswordUndefined: Self = StObject.set(x, "changePassword", js.undefined)
     
-    @scala.inline
-    def setConnTimeout(value: Double): Self = StObject.set(x, "connTimeout", value.asInstanceOf[js.Any])
+    inline def setConnTimeout(value: Double): Self = StObject.set(x, "connTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnTimeoutUndefined: Self = StObject.set(x, "connTimeout", js.undefined)
+    inline def setConnTimeoutUndefined: Self = StObject.set(x, "connTimeout", js.undefined)
     
-    @scala.inline
-    def setKeepalive(value: Double): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+    inline def setKeepalive(value: Double): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+    inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
     
-    @scala.inline
-    def setPasvTimeout(value: Double): Self = StObject.set(x, "pasvTimeout", value.asInstanceOf[js.Any])
+    inline def setPasvTimeout(value: Double): Self = StObject.set(x, "pasvTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasvTimeoutUndefined: Self = StObject.set(x, "pasvTimeout", js.undefined)
+    inline def setPasvTimeoutUndefined: Self = StObject.set(x, "pasvTimeout", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyFile(value: String): Self = StObject.set(x, "privateKeyFile", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyFile(value: String): Self = StObject.set(x, "privateKeyFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyFileUndefined: Self = StObject.set(x, "privateKeyFile", js.undefined)
+    inline def setPrivateKeyFileUndefined: Self = StObject.set(x, "privateKeyFile", js.undefined)
     
-    @scala.inline
-    def setTryKeyboard(
+    inline def setTryKeyboard(
       value: (/* name */ String, /* instructions */ String, /* instructionsLang */ String, /* prompts */ js.Array[Echo]) => (js.Array[String | typings.bluebird.mod.^[String]]) | typings.bluebird.mod.^[js.Array[String]]
     ): Self = StObject.set(x, "tryKeyboard", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTryKeyboardUndefined: Self = StObject.set(x, "tryKeyboard", js.undefined)
+    inline def setTryKeyboardUndefined: Self = StObject.set(x, "tryKeyboard", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

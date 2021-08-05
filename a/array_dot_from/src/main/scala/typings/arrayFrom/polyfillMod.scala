@@ -10,8 +10,7 @@ object polyfillMod {
   /**
     * Gets the optimal `Array.from` implementation to use.
     */
-  @scala.inline
-  def apply(): FnCall = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FnCall]
+  inline def apply(): FnCall = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FnCall]
   
   @JSImport("array.from/polyfill", JSImport.Namespace)
   @js.native

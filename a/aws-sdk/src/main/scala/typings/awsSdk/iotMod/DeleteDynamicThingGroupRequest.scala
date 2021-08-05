@@ -18,22 +18,17 @@ trait DeleteDynamicThingGroupRequest extends StObject {
 }
 object DeleteDynamicThingGroupRequest {
   
-  @scala.inline
-  def apply(thingGroupName: ThingGroupName): DeleteDynamicThingGroupRequest = {
+  inline def apply(thingGroupName: ThingGroupName): DeleteDynamicThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDynamicThingGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDynamicThingGroupRequestMutableBuilder[Self <: DeleteDynamicThingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDynamicThingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
+    inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
+    inline def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
     
-    @scala.inline
-    def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
+    inline def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
   }
 }

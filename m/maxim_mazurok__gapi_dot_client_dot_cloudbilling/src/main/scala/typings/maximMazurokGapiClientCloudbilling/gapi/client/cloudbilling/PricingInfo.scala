@@ -30,43 +30,31 @@ trait PricingInfo extends StObject {
 }
 object PricingInfo {
   
-  @scala.inline
-  def apply(): PricingInfo = {
+  inline def apply(): PricingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PricingInfo]
   }
   
-  @scala.inline
-  implicit class PricingInfoMutableBuilder[Self <: PricingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PricingInfo](x: Self) {
     
-    @scala.inline
-    def setAggregationInfo(value: AggregationInfo): Self = StObject.set(x, "aggregationInfo", value.asInstanceOf[js.Any])
+    inline def setAggregationInfo(value: AggregationInfo): Self = StObject.set(x, "aggregationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationInfoUndefined: Self = StObject.set(x, "aggregationInfo", js.undefined)
+    inline def setAggregationInfoUndefined: Self = StObject.set(x, "aggregationInfo", js.undefined)
     
-    @scala.inline
-    def setCurrencyConversionRate(value: Double): Self = StObject.set(x, "currencyConversionRate", value.asInstanceOf[js.Any])
+    inline def setCurrencyConversionRate(value: Double): Self = StObject.set(x, "currencyConversionRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyConversionRateUndefined: Self = StObject.set(x, "currencyConversionRate", js.undefined)
+    inline def setCurrencyConversionRateUndefined: Self = StObject.set(x, "currencyConversionRate", js.undefined)
     
-    @scala.inline
-    def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
+    inline def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveTimeUndefined: Self = StObject.set(x, "effectiveTime", js.undefined)
+    inline def setEffectiveTimeUndefined: Self = StObject.set(x, "effectiveTime", js.undefined)
     
-    @scala.inline
-    def setPricingExpression(value: PricingExpression): Self = StObject.set(x, "pricingExpression", value.asInstanceOf[js.Any])
+    inline def setPricingExpression(value: PricingExpression): Self = StObject.set(x, "pricingExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingExpressionUndefined: Self = StObject.set(x, "pricingExpression", js.undefined)
+    inline def setPricingExpressionUndefined: Self = StObject.set(x, "pricingExpression", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

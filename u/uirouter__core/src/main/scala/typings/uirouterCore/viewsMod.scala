@@ -11,9 +11,7 @@ object viewsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerActivateViews(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerActivateViews")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerActivateViews(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerActivateViews")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def registerLoadEnteringViews(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadEnteringViews")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerLoadEnteringViews(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadEnteringViews")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.MotionEffect")
 @js.native
-class MotionEffect protected ()
+/* private */ class MotionEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.MotionEffect {
   
@@ -31,7 +31,7 @@ class MotionEffect protected ()
   /* CompleteClass */
   var Path: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.MotionEffect_typekey")
   var PowerPointDotMotionEffect_typekey: typings.activexPowerpoint.PowerPoint.MotionEffect = js.native
   

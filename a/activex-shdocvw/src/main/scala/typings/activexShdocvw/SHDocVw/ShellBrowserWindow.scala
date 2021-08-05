@@ -198,7 +198,7 @@ trait ShellBrowserWindow extends StObject {
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
   
-  @JSName("SHDocVw.ShellBrowserWindow_typekey")
+  /* private */ @JSName("SHDocVw.ShellBrowserWindow_typekey")
   var SHDocVwDotShellBrowserWindow_typekey: ShellBrowserWindow = js.native
   
   /** Set BrowserBar to Clsid */

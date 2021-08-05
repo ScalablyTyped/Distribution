@@ -3551,8 +3551,7 @@ object protocolMappingMod {
     }
     object Commands {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         AccessibilityDotdisable: ParamsType,
         AccessibilityDotenable: ParamsType,
         AccessibilityDotgetFullAXTree: ReturnTypeGetFullAXTreeResponse,
@@ -4066,1502 +4065,1003 @@ object protocolMappingMod {
         __obj.asInstanceOf[Commands]
       }
       
-      @scala.inline
-      implicit class CommandsMutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
+      extension [Self <: Commands](x: Self) {
         
-        @scala.inline
-        def setAccessibilityDotdisable(value: ParamsType): Self = StObject.set(x, "Accessibility.disable", value.asInstanceOf[js.Any])
+        inline def setAccessibilityDotdisable(value: ParamsType): Self = StObject.set(x, "Accessibility.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccessibilityDotenable(value: ParamsType): Self = StObject.set(x, "Accessibility.enable", value.asInstanceOf[js.Any])
+        inline def setAccessibilityDotenable(value: ParamsType): Self = StObject.set(x, "Accessibility.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccessibilityDotgetFullAXTree(value: ReturnTypeGetFullAXTreeResponse): Self = StObject.set(x, "Accessibility.getFullAXTree", value.asInstanceOf[js.Any])
+        inline def setAccessibilityDotgetFullAXTree(value: ReturnTypeGetFullAXTreeResponse): Self = StObject.set(x, "Accessibility.getFullAXTree", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccessibilityDotgetPartialAXTree(value: ReturnTypeGetPartialAXTreeResponse): Self = StObject.set(x, "Accessibility.getPartialAXTree", value.asInstanceOf[js.Any])
+        inline def setAccessibilityDotgetPartialAXTree(value: ReturnTypeGetPartialAXTreeResponse): Self = StObject.set(x, "Accessibility.getPartialAXTree", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccessibilityDotqueryAXTree(value: ReturnTypeQueryAXTreeResponse): Self = StObject.set(x, "Accessibility.queryAXTree", value.asInstanceOf[js.Any])
+        inline def setAccessibilityDotqueryAXTree(value: ReturnTypeQueryAXTreeResponse): Self = StObject.set(x, "Accessibility.queryAXTree", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotdisable(value: ParamsType): Self = StObject.set(x, "Animation.disable", value.asInstanceOf[js.Any])
+        inline def setAnimationDotdisable(value: ParamsType): Self = StObject.set(x, "Animation.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotenable(value: ParamsType): Self = StObject.set(x, "Animation.enable", value.asInstanceOf[js.Any])
+        inline def setAnimationDotenable(value: ParamsType): Self = StObject.set(x, "Animation.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotgetCurrentTime(value: ReturnTypeGetCurrentTimeResponse): Self = StObject.set(x, "Animation.getCurrentTime", value.asInstanceOf[js.Any])
+        inline def setAnimationDotgetCurrentTime(value: ReturnTypeGetCurrentTimeResponse): Self = StObject.set(x, "Animation.getCurrentTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotgetPlaybackRate(value: ReturnTypeGetPlaybackRateResponse): Self = StObject.set(x, "Animation.getPlaybackRate", value.asInstanceOf[js.Any])
+        inline def setAnimationDotgetPlaybackRate(value: ReturnTypeGetPlaybackRateResponse): Self = StObject.set(x, "Animation.getPlaybackRate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotreleaseAnimations(value: `24`): Self = StObject.set(x, "Animation.releaseAnimations", value.asInstanceOf[js.Any])
+        inline def setAnimationDotreleaseAnimations(value: `24`): Self = StObject.set(x, "Animation.releaseAnimations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotresolveAnimation(value: ReturnTypeResolveAnimationResponse): Self = StObject.set(x, "Animation.resolveAnimation", value.asInstanceOf[js.Any])
+        inline def setAnimationDotresolveAnimation(value: ReturnTypeResolveAnimationResponse): Self = StObject.set(x, "Animation.resolveAnimation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotseekAnimations(value: `25`): Self = StObject.set(x, "Animation.seekAnimations", value.asInstanceOf[js.Any])
+        inline def setAnimationDotseekAnimations(value: `25`): Self = StObject.set(x, "Animation.seekAnimations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotsetPaused(value: `26`): Self = StObject.set(x, "Animation.setPaused", value.asInstanceOf[js.Any])
+        inline def setAnimationDotsetPaused(value: `26`): Self = StObject.set(x, "Animation.setPaused", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotsetPlaybackRate(value: `27`): Self = StObject.set(x, "Animation.setPlaybackRate", value.asInstanceOf[js.Any])
+        inline def setAnimationDotsetPlaybackRate(value: `27`): Self = StObject.set(x, "Animation.setPlaybackRate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotsetTiming(value: `28`): Self = StObject.set(x, "Animation.setTiming", value.asInstanceOf[js.Any])
+        inline def setAnimationDotsetTiming(value: `28`): Self = StObject.set(x, "Animation.setTiming", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplicationCacheDotenable(value: ParamsType): Self = StObject.set(x, "ApplicationCache.enable", value.asInstanceOf[js.Any])
+        inline def setApplicationCacheDotenable(value: ParamsType): Self = StObject.set(x, "ApplicationCache.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplicationCacheDotgetApplicationCacheForFrame(value: ReturnTypeGetApplicationCacheForFrameResponse): Self = StObject.set(x, "ApplicationCache.getApplicationCacheForFrame", value.asInstanceOf[js.Any])
+        inline def setApplicationCacheDotgetApplicationCacheForFrame(value: ReturnTypeGetApplicationCacheForFrameResponse): Self = StObject.set(x, "ApplicationCache.getApplicationCacheForFrame", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplicationCacheDotgetFramesWithManifests(value: ReturnTypeGetFramesWithManifestsResponse): Self = StObject.set(x, "ApplicationCache.getFramesWithManifests", value.asInstanceOf[js.Any])
+        inline def setApplicationCacheDotgetFramesWithManifests(value: ReturnTypeGetFramesWithManifestsResponse): Self = StObject.set(x, "ApplicationCache.getFramesWithManifests", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplicationCacheDotgetManifestForFrame(value: ReturnTypeGetManifestForFrameResponse): Self = StObject.set(x, "ApplicationCache.getManifestForFrame", value.asInstanceOf[js.Any])
+        inline def setApplicationCacheDotgetManifestForFrame(value: ReturnTypeGetManifestForFrameResponse): Self = StObject.set(x, "ApplicationCache.getManifestForFrame", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuditsDotdisable(value: ParamsType): Self = StObject.set(x, "Audits.disable", value.asInstanceOf[js.Any])
+        inline def setAuditsDotdisable(value: ParamsType): Self = StObject.set(x, "Audits.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuditsDotenable(value: ParamsType): Self = StObject.set(x, "Audits.enable", value.asInstanceOf[js.Any])
+        inline def setAuditsDotenable(value: ParamsType): Self = StObject.set(x, "Audits.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuditsDotgetEncodedResponse(value: ReturnTypeGetEncodedResponseResponse): Self = StObject.set(x, "Audits.getEncodedResponse", value.asInstanceOf[js.Any])
+        inline def setAuditsDotgetEncodedResponse(value: ReturnTypeGetEncodedResponseResponse): Self = StObject.set(x, "Audits.getEncodedResponse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundServiceDotclearEvents(value: `32`): Self = StObject.set(x, "BackgroundService.clearEvents", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotclearEvents(value: `32`): Self = StObject.set(x, "BackgroundService.clearEvents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundServiceDotsetRecording(value: `31`): Self = StObject.set(x, "BackgroundService.setRecording", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotsetRecording(value: `31`): Self = StObject.set(x, "BackgroundService.setRecording", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundServiceDotstartObserving(value: `29`): Self = StObject.set(x, "BackgroundService.startObserving", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotstartObserving(value: `29`): Self = StObject.set(x, "BackgroundService.startObserving", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundServiceDotstopObserving(value: `30`): Self = StObject.set(x, "BackgroundService.stopObserving", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotstopObserving(value: `30`): Self = StObject.set(x, "BackgroundService.stopObserving", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotclose(value: ParamsType): Self = StObject.set(x, "Browser.close", value.asInstanceOf[js.Any])
+        inline def setBrowserDotclose(value: ParamsType): Self = StObject.set(x, "Browser.close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotcrash(value: ParamsType): Self = StObject.set(x, "Browser.crash", value.asInstanceOf[js.Any])
+        inline def setBrowserDotcrash(value: ParamsType): Self = StObject.set(x, "Browser.crash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotcrashGpuProcess(value: ParamsType): Self = StObject.set(x, "Browser.crashGpuProcess", value.asInstanceOf[js.Any])
+        inline def setBrowserDotcrashGpuProcess(value: ParamsType): Self = StObject.set(x, "Browser.crashGpuProcess", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotgetBrowserCommandLine(value: ReturnTypeGetBrowserCommandLineResponse): Self = StObject.set(x, "Browser.getBrowserCommandLine", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgetBrowserCommandLine(value: ReturnTypeGetBrowserCommandLineResponse): Self = StObject.set(x, "Browser.getBrowserCommandLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotgetHistogram(value: ReturnTypeGetHistogramResponse): Self = StObject.set(x, "Browser.getHistogram", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgetHistogram(value: ReturnTypeGetHistogramResponse): Self = StObject.set(x, "Browser.getHistogram", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotgetHistograms(value: ReturnTypeGetHistogramsResponse): Self = StObject.set(x, "Browser.getHistograms", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgetHistograms(value: ReturnTypeGetHistogramsResponse): Self = StObject.set(x, "Browser.getHistograms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotgetVersion(value: ReturnTypeGetVersionResponse): Self = StObject.set(x, "Browser.getVersion", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgetVersion(value: ReturnTypeGetVersionResponse): Self = StObject.set(x, "Browser.getVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotgetWindowBounds(value: ReturnTypeGetWindowBoundsResponse): Self = StObject.set(x, "Browser.getWindowBounds", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgetWindowBounds(value: ReturnTypeGetWindowBoundsResponse): Self = StObject.set(x, "Browser.getWindowBounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotgetWindowForTarget(value: ReturnTypeGetWindowForTargetResponse): Self = StObject.set(x, "Browser.getWindowForTarget", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgetWindowForTarget(value: ReturnTypeGetWindowForTargetResponse): Self = StObject.set(x, "Browser.getWindowForTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotgrantPermissions(value: `34`): Self = StObject.set(x, "Browser.grantPermissions", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgrantPermissions(value: `34`): Self = StObject.set(x, "Browser.grantPermissions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotresetPermissions(value: `35`): Self = StObject.set(x, "Browser.resetPermissions", value.asInstanceOf[js.Any])
+        inline def setBrowserDotresetPermissions(value: `35`): Self = StObject.set(x, "Browser.resetPermissions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotsetDockTile(value: `38`): Self = StObject.set(x, "Browser.setDockTile", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetDockTile(value: `38`): Self = StObject.set(x, "Browser.setDockTile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotsetDownloadBehavior(value: `36`): Self = StObject.set(x, "Browser.setDownloadBehavior", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetDownloadBehavior(value: `36`): Self = StObject.set(x, "Browser.setDownloadBehavior", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotsetPermission(value: `33`): Self = StObject.set(x, "Browser.setPermission", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetPermission(value: `33`): Self = StObject.set(x, "Browser.setPermission", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowserDotsetWindowBounds(value: `37`): Self = StObject.set(x, "Browser.setWindowBounds", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetWindowBounds(value: `37`): Self = StObject.set(x, "Browser.setWindowBounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotaddRule(value: ReturnTypeAddRuleResponse): Self = StObject.set(x, "CSS.addRule", value.asInstanceOf[js.Any])
+        inline def setCSSDotaddRule(value: ReturnTypeAddRuleResponse): Self = StObject.set(x, "CSS.addRule", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotcollectClassNames(value: ReturnTypeCollectClassNamesResponse): Self = StObject.set(x, "CSS.collectClassNames", value.asInstanceOf[js.Any])
+        inline def setCSSDotcollectClassNames(value: ReturnTypeCollectClassNamesResponse): Self = StObject.set(x, "CSS.collectClassNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotcreateStyleSheet(value: ReturnTypeCreateStyleSheetResponse): Self = StObject.set(x, "CSS.createStyleSheet", value.asInstanceOf[js.Any])
+        inline def setCSSDotcreateStyleSheet(value: ReturnTypeCreateStyleSheetResponse): Self = StObject.set(x, "CSS.createStyleSheet", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotdisable(value: ParamsType): Self = StObject.set(x, "CSS.disable", value.asInstanceOf[js.Any])
+        inline def setCSSDotdisable(value: ParamsType): Self = StObject.set(x, "CSS.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotenable(value: ParamsType): Self = StObject.set(x, "CSS.enable", value.asInstanceOf[js.Any])
+        inline def setCSSDotenable(value: ParamsType): Self = StObject.set(x, "CSS.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotforcePseudoState(value: `39`): Self = StObject.set(x, "CSS.forcePseudoState", value.asInstanceOf[js.Any])
+        inline def setCSSDotforcePseudoState(value: `39`): Self = StObject.set(x, "CSS.forcePseudoState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotgetBackgroundColors(value: ReturnTypeGetBackgroundColorsResponse): Self = StObject.set(x, "CSS.getBackgroundColors", value.asInstanceOf[js.Any])
+        inline def setCSSDotgetBackgroundColors(value: ReturnTypeGetBackgroundColorsResponse): Self = StObject.set(x, "CSS.getBackgroundColors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotgetComputedStyleForNode(value: ReturnTypeGetComputedStyleForNodeResponse): Self = StObject.set(x, "CSS.getComputedStyleForNode", value.asInstanceOf[js.Any])
+        inline def setCSSDotgetComputedStyleForNode(value: ReturnTypeGetComputedStyleForNodeResponse): Self = StObject.set(x, "CSS.getComputedStyleForNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotgetInlineStylesForNode(value: ReturnTypeGetInlineStylesForNodeResponse): Self = StObject.set(x, "CSS.getInlineStylesForNode", value.asInstanceOf[js.Any])
+        inline def setCSSDotgetInlineStylesForNode(value: ReturnTypeGetInlineStylesForNodeResponse): Self = StObject.set(x, "CSS.getInlineStylesForNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotgetMatchedStylesForNode(value: ReturnTypeGetMatchedStylesForNodeResponse): Self = StObject.set(x, "CSS.getMatchedStylesForNode", value.asInstanceOf[js.Any])
+        inline def setCSSDotgetMatchedStylesForNode(value: ReturnTypeGetMatchedStylesForNodeResponse): Self = StObject.set(x, "CSS.getMatchedStylesForNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotgetMediaQueries(value: ReturnTypeGetMediaQueriesResponse): Self = StObject.set(x, "CSS.getMediaQueries", value.asInstanceOf[js.Any])
+        inline def setCSSDotgetMediaQueries(value: ReturnTypeGetMediaQueriesResponse): Self = StObject.set(x, "CSS.getMediaQueries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotgetPlatformFontsForNode(value: ReturnTypeGetPlatformFontsForNodeResponse): Self = StObject.set(x, "CSS.getPlatformFontsForNode", value.asInstanceOf[js.Any])
+        inline def setCSSDotgetPlatformFontsForNode(value: ReturnTypeGetPlatformFontsForNodeResponse): Self = StObject.set(x, "CSS.getPlatformFontsForNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotgetStyleSheetText(value: ReturnTypeGetStyleSheetTextResponse): Self = StObject.set(x, "CSS.getStyleSheetText", value.asInstanceOf[js.Any])
+        inline def setCSSDotgetStyleSheetText(value: ReturnTypeGetStyleSheetTextResponse): Self = StObject.set(x, "CSS.getStyleSheetText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotsetEffectivePropertyValueForNode(value: `41`): Self = StObject.set(x, "CSS.setEffectivePropertyValueForNode", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetEffectivePropertyValueForNode(value: `41`): Self = StObject.set(x, "CSS.setEffectivePropertyValueForNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotsetKeyframeKey(value: ReturnTypeSetKeyframeKeyResponse): Self = StObject.set(x, "CSS.setKeyframeKey", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetKeyframeKey(value: ReturnTypeSetKeyframeKeyResponse): Self = StObject.set(x, "CSS.setKeyframeKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotsetLocalFontsEnabled(value: `42`): Self = StObject.set(x, "CSS.setLocalFontsEnabled", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetLocalFontsEnabled(value: `42`): Self = StObject.set(x, "CSS.setLocalFontsEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotsetMediaText(value: ReturnTypeSetMediaTextResponse): Self = StObject.set(x, "CSS.setMediaText", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetMediaText(value: ReturnTypeSetMediaTextResponse): Self = StObject.set(x, "CSS.setMediaText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotsetRuleSelector(value: ReturnTypeSetRuleSelectorResponse): Self = StObject.set(x, "CSS.setRuleSelector", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetRuleSelector(value: ReturnTypeSetRuleSelectorResponse): Self = StObject.set(x, "CSS.setRuleSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotsetStyleSheetText(value: ReturnTypeSetStyleSheetTextResponse): Self = StObject.set(x, "CSS.setStyleSheetText", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetStyleSheetText(value: ReturnTypeSetStyleSheetTextResponse): Self = StObject.set(x, "CSS.setStyleSheetText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotsetStyleTexts(value: ReturnTypeSetStyleTextsResponse): Self = StObject.set(x, "CSS.setStyleTexts", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetStyleTexts(value: ReturnTypeSetStyleTextsResponse): Self = StObject.set(x, "CSS.setStyleTexts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotstartRuleUsageTracking(value: ParamsType): Self = StObject.set(x, "CSS.startRuleUsageTracking", value.asInstanceOf[js.Any])
+        inline def setCSSDotstartRuleUsageTracking(value: ParamsType): Self = StObject.set(x, "CSS.startRuleUsageTracking", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotstopRuleUsageTracking(value: ReturnTypeStopRuleUsageTrackingResponse): Self = StObject.set(x, "CSS.stopRuleUsageTracking", value.asInstanceOf[js.Any])
+        inline def setCSSDotstopRuleUsageTracking(value: ReturnTypeStopRuleUsageTrackingResponse): Self = StObject.set(x, "CSS.stopRuleUsageTracking", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDottakeComputedStyleUpdates(value: ReturnTypeTakeComputedStyleUpdatesResponse): Self = StObject.set(x, "CSS.takeComputedStyleUpdates", value.asInstanceOf[js.Any])
+        inline def setCSSDottakeComputedStyleUpdates(value: ReturnTypeTakeComputedStyleUpdatesResponse): Self = StObject.set(x, "CSS.takeComputedStyleUpdates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDottakeCoverageDelta(value: ReturnTypeTakeCoverageDeltaResponse): Self = StObject.set(x, "CSS.takeCoverageDelta", value.asInstanceOf[js.Any])
+        inline def setCSSDottakeCoverageDelta(value: ReturnTypeTakeCoverageDeltaResponse): Self = StObject.set(x, "CSS.takeCoverageDelta", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDottrackComputedStyleUpdates(value: `40`): Self = StObject.set(x, "CSS.trackComputedStyleUpdates", value.asInstanceOf[js.Any])
+        inline def setCSSDottrackComputedStyleUpdates(value: `40`): Self = StObject.set(x, "CSS.trackComputedStyleUpdates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheStorageDotdeleteCache(value: `43`): Self = StObject.set(x, "CacheStorage.deleteCache", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotdeleteCache(value: `43`): Self = StObject.set(x, "CacheStorage.deleteCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheStorageDotdeleteEntry(value: `44`): Self = StObject.set(x, "CacheStorage.deleteEntry", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotdeleteEntry(value: `44`): Self = StObject.set(x, "CacheStorage.deleteEntry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheStorageDotrequestCacheNames(value: ReturnTypeRequestCacheNamesResponse): Self = StObject.set(x, "CacheStorage.requestCacheNames", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotrequestCacheNames(value: ReturnTypeRequestCacheNamesResponse): Self = StObject.set(x, "CacheStorage.requestCacheNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheStorageDotrequestCachedResponse(value: ReturnTypeRequestCachedResponseResponse): Self = StObject.set(x, "CacheStorage.requestCachedResponse", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotrequestCachedResponse(value: ReturnTypeRequestCachedResponseResponse): Self = StObject.set(x, "CacheStorage.requestCachedResponse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheStorageDotrequestEntries(value: ReturnTypeRequestEntriesResponse): Self = StObject.set(x, "CacheStorage.requestEntries", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotrequestEntries(value: ReturnTypeRequestEntriesResponse): Self = StObject.set(x, "CacheStorage.requestEntries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCastDotdisable(value: ParamsType): Self = StObject.set(x, "Cast.disable", value.asInstanceOf[js.Any])
+        inline def setCastDotdisable(value: ParamsType): Self = StObject.set(x, "Cast.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCastDotenable(value: `45`): Self = StObject.set(x, "Cast.enable", value.asInstanceOf[js.Any])
+        inline def setCastDotenable(value: `45`): Self = StObject.set(x, "Cast.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCastDotsetSinkToUse(value: `46`): Self = StObject.set(x, "Cast.setSinkToUse", value.asInstanceOf[js.Any])
+        inline def setCastDotsetSinkToUse(value: `46`): Self = StObject.set(x, "Cast.setSinkToUse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCastDotstartTabMirroring(value: `47`): Self = StObject.set(x, "Cast.startTabMirroring", value.asInstanceOf[js.Any])
+        inline def setCastDotstartTabMirroring(value: `47`): Self = StObject.set(x, "Cast.startTabMirroring", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCastDotstopCasting(value: `48`): Self = StObject.set(x, "Cast.stopCasting", value.asInstanceOf[js.Any])
+        inline def setCastDotstopCasting(value: `48`): Self = StObject.set(x, "Cast.stopCasting", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsoleDotclearMessages(value: ParamsType): Self = StObject.set(x, "Console.clearMessages", value.asInstanceOf[js.Any])
+        inline def setConsoleDotclearMessages(value: ParamsType): Self = StObject.set(x, "Console.clearMessages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsoleDotdisable(value: ParamsType): Self = StObject.set(x, "Console.disable", value.asInstanceOf[js.Any])
+        inline def setConsoleDotdisable(value: ParamsType): Self = StObject.set(x, "Console.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsoleDotenable(value: ParamsType): Self = StObject.set(x, "Console.enable", value.asInstanceOf[js.Any])
+        inline def setConsoleDotenable(value: ParamsType): Self = StObject.set(x, "Console.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotgetEventListeners(value: ReturnTypeGetEventListenersResponse): Self = StObject.set(x, "DOMDebugger.getEventListeners", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotgetEventListeners(value: ReturnTypeGetEventListenersResponse): Self = StObject.set(x, "DOMDebugger.getEventListeners", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotremoveDOMBreakpoint(value: `62`): Self = StObject.set(x, "DOMDebugger.removeDOMBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveDOMBreakpoint(value: `62`): Self = StObject.set(x, "DOMDebugger.removeDOMBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotremoveEventListenerBreakpoint(value: `63`): Self = StObject.set(x, "DOMDebugger.removeEventListenerBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveEventListenerBreakpoint(value: `63`): Self = StObject.set(x, "DOMDebugger.removeEventListenerBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotremoveInstrumentationBreakpoint(value: `64`): Self = StObject.set(x, "DOMDebugger.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveInstrumentationBreakpoint(value: `64`): Self = StObject.set(x, "DOMDebugger.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotremoveXHRBreakpoint(value: `65`): Self = StObject.set(x, "DOMDebugger.removeXHRBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveXHRBreakpoint(value: `65`): Self = StObject.set(x, "DOMDebugger.removeXHRBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotsetDOMBreakpoint(value: `66`): Self = StObject.set(x, "DOMDebugger.setDOMBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetDOMBreakpoint(value: `66`): Self = StObject.set(x, "DOMDebugger.setDOMBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotsetEventListenerBreakpoint(value: `67`): Self = StObject.set(x, "DOMDebugger.setEventListenerBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetEventListenerBreakpoint(value: `67`): Self = StObject.set(x, "DOMDebugger.setEventListenerBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotsetInstrumentationBreakpoint(value: `68`): Self = StObject.set(x, "DOMDebugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetInstrumentationBreakpoint(value: `68`): Self = StObject.set(x, "DOMDebugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDebuggerDotsetXHRBreakpoint(value: `69`): Self = StObject.set(x, "DOMDebugger.setXHRBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetXHRBreakpoint(value: `69`): Self = StObject.set(x, "DOMDebugger.setXHRBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotcollectClassNamesFromSubtree(value: ReturnTypeCollectClassNamesFromSubtreeResponse): Self = StObject.set(x, "DOM.collectClassNamesFromSubtree", value.asInstanceOf[js.Any])
+        inline def setDOMDotcollectClassNamesFromSubtree(value: ReturnTypeCollectClassNamesFromSubtreeResponse): Self = StObject.set(x, "DOM.collectClassNamesFromSubtree", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotcopyTo(value: ReturnTypeCopyToResponse): Self = StObject.set(x, "DOM.copyTo", value.asInstanceOf[js.Any])
+        inline def setDOMDotcopyTo(value: ReturnTypeCopyToResponse): Self = StObject.set(x, "DOM.copyTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotdescribeNode(value: ReturnTypeDescribeNodeResponse): Self = StObject.set(x, "DOM.describeNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotdescribeNode(value: ReturnTypeDescribeNodeResponse): Self = StObject.set(x, "DOM.describeNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotdisable(value: ParamsType): Self = StObject.set(x, "DOM.disable", value.asInstanceOf[js.Any])
+        inline def setDOMDotdisable(value: ParamsType): Self = StObject.set(x, "DOM.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotdiscardSearchResults(value: `50`): Self = StObject.set(x, "DOM.discardSearchResults", value.asInstanceOf[js.Any])
+        inline def setDOMDotdiscardSearchResults(value: `50`): Self = StObject.set(x, "DOM.discardSearchResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotenable(value: ParamsType): Self = StObject.set(x, "DOM.enable", value.asInstanceOf[js.Any])
+        inline def setDOMDotenable(value: ParamsType): Self = StObject.set(x, "DOM.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotfocus(value: `51`): Self = StObject.set(x, "DOM.focus", value.asInstanceOf[js.Any])
+        inline def setDOMDotfocus(value: `51`): Self = StObject.set(x, "DOM.focus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetAttributes(value: ReturnTypeGetAttributesResponse): Self = StObject.set(x, "DOM.getAttributes", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetAttributes(value: ReturnTypeGetAttributesResponse): Self = StObject.set(x, "DOM.getAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetBoxModel(value: ReturnTypeGetBoxModelResponse): Self = StObject.set(x, "DOM.getBoxModel", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetBoxModel(value: ReturnTypeGetBoxModelResponse): Self = StObject.set(x, "DOM.getBoxModel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetContentQuads(value: ReturnTypeGetContentQuadsResponse): Self = StObject.set(x, "DOM.getContentQuads", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetContentQuads(value: ReturnTypeGetContentQuadsResponse): Self = StObject.set(x, "DOM.getContentQuads", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetDocument(value: ReturnTypeGetDocumentResponse): Self = StObject.set(x, "DOM.getDocument", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetDocument(value: ReturnTypeGetDocumentResponse): Self = StObject.set(x, "DOM.getDocument", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetFileInfo(value: ReturnTypeGetFileInfoResponse): Self = StObject.set(x, "DOM.getFileInfo", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetFileInfo(value: ReturnTypeGetFileInfoResponse): Self = StObject.set(x, "DOM.getFileInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetFlattenedDocument(value: ReturnTypeGetFlattenedDocumentResponse): Self = StObject.set(x, "DOM.getFlattenedDocument", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetFlattenedDocument(value: ReturnTypeGetFlattenedDocumentResponse): Self = StObject.set(x, "DOM.getFlattenedDocument", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetFrameOwner(value: ReturnTypeGetFrameOwnerResponse): Self = StObject.set(x, "DOM.getFrameOwner", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetFrameOwner(value: ReturnTypeGetFrameOwnerResponse): Self = StObject.set(x, "DOM.getFrameOwner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetNodeForLocation(value: ReturnTypeGetNodeForLocationResponse): Self = StObject.set(x, "DOM.getNodeForLocation", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetNodeForLocation(value: ReturnTypeGetNodeForLocationResponse): Self = StObject.set(x, "DOM.getNodeForLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetNodeStackTraces(value: ReturnTypeGetNodeStackTracesResponse): Self = StObject.set(x, "DOM.getNodeStackTraces", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetNodeStackTraces(value: ReturnTypeGetNodeStackTracesResponse): Self = StObject.set(x, "DOM.getNodeStackTraces", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetNodesForSubtreeByStyle(value: ReturnTypeGetNodesForSubtreeByStyleResponse): Self = StObject.set(x, "DOM.getNodesForSubtreeByStyle", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetNodesForSubtreeByStyle(value: ReturnTypeGetNodesForSubtreeByStyleResponse): Self = StObject.set(x, "DOM.getNodesForSubtreeByStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetOuterHTML(value: ReturnTypeGetOuterHTMLResponse): Self = StObject.set(x, "DOM.getOuterHTML", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetOuterHTML(value: ReturnTypeGetOuterHTMLResponse): Self = StObject.set(x, "DOM.getOuterHTML", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetRelayoutBoundary(value: ReturnTypeGetRelayoutBoundaryResponse): Self = StObject.set(x, "DOM.getRelayoutBoundary", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetRelayoutBoundary(value: ReturnTypeGetRelayoutBoundaryResponse): Self = StObject.set(x, "DOM.getRelayoutBoundary", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotgetSearchResults(value: ReturnTypeGetSearchResultsResponse): Self = StObject.set(x, "DOM.getSearchResults", value.asInstanceOf[js.Any])
+        inline def setDOMDotgetSearchResults(value: ReturnTypeGetSearchResultsResponse): Self = StObject.set(x, "DOM.getSearchResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDothideHighlight(value: ParamsType): Self = StObject.set(x, "DOM.hideHighlight", value.asInstanceOf[js.Any])
+        inline def setDOMDothideHighlight(value: ParamsType): Self = StObject.set(x, "DOM.hideHighlight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDothighlightNode(value: ParamsType): Self = StObject.set(x, "DOM.highlightNode", value.asInstanceOf[js.Any])
+        inline def setDOMDothighlightNode(value: ParamsType): Self = StObject.set(x, "DOM.highlightNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDothighlightRect(value: ParamsType): Self = StObject.set(x, "DOM.highlightRect", value.asInstanceOf[js.Any])
+        inline def setDOMDothighlightRect(value: ParamsType): Self = StObject.set(x, "DOM.highlightRect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotmarkUndoableState(value: ParamsType): Self = StObject.set(x, "DOM.markUndoableState", value.asInstanceOf[js.Any])
+        inline def setDOMDotmarkUndoableState(value: ParamsType): Self = StObject.set(x, "DOM.markUndoableState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotmoveTo(value: ReturnTypeMoveToResponse): Self = StObject.set(x, "DOM.moveTo", value.asInstanceOf[js.Any])
+        inline def setDOMDotmoveTo(value: ReturnTypeMoveToResponse): Self = StObject.set(x, "DOM.moveTo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotperformSearch(value: ReturnTypePerformSearchResponse): Self = StObject.set(x, "DOM.performSearch", value.asInstanceOf[js.Any])
+        inline def setDOMDotperformSearch(value: ReturnTypePerformSearchResponse): Self = StObject.set(x, "DOM.performSearch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotpushNodeByPathToFrontend(value: ReturnTypePushNodeByPathToFrontendResponse): Self = StObject.set(x, "DOM.pushNodeByPathToFrontend", value.asInstanceOf[js.Any])
+        inline def setDOMDotpushNodeByPathToFrontend(value: ReturnTypePushNodeByPathToFrontendResponse): Self = StObject.set(x, "DOM.pushNodeByPathToFrontend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotpushNodesByBackendIdsToFrontend(value: ReturnTypePushNodesByBackendIdsToFrontendResponse): Self = StObject.set(x, "DOM.pushNodesByBackendIdsToFrontend", value.asInstanceOf[js.Any])
+        inline def setDOMDotpushNodesByBackendIdsToFrontend(value: ReturnTypePushNodesByBackendIdsToFrontendResponse): Self = StObject.set(x, "DOM.pushNodesByBackendIdsToFrontend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotquerySelector(value: ReturnTypeQuerySelectorResponse): Self = StObject.set(x, "DOM.querySelector", value.asInstanceOf[js.Any])
+        inline def setDOMDotquerySelector(value: ReturnTypeQuerySelectorResponse): Self = StObject.set(x, "DOM.querySelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotquerySelectorAll(value: ReturnTypeQuerySelectorAllResponse): Self = StObject.set(x, "DOM.querySelectorAll", value.asInstanceOf[js.Any])
+        inline def setDOMDotquerySelectorAll(value: ReturnTypeQuerySelectorAllResponse): Self = StObject.set(x, "DOM.querySelectorAll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotredo(value: ParamsType): Self = StObject.set(x, "DOM.redo", value.asInstanceOf[js.Any])
+        inline def setDOMDotredo(value: ParamsType): Self = StObject.set(x, "DOM.redo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotremoveAttribute(value: `52`): Self = StObject.set(x, "DOM.removeAttribute", value.asInstanceOf[js.Any])
+        inline def setDOMDotremoveAttribute(value: `52`): Self = StObject.set(x, "DOM.removeAttribute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotremoveNode(value: `53`): Self = StObject.set(x, "DOM.removeNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotremoveNode(value: `53`): Self = StObject.set(x, "DOM.removeNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotrequestChildNodes(value: `54`): Self = StObject.set(x, "DOM.requestChildNodes", value.asInstanceOf[js.Any])
+        inline def setDOMDotrequestChildNodes(value: `54`): Self = StObject.set(x, "DOM.requestChildNodes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotrequestNode(value: ReturnTypeRequestNodeResponse): Self = StObject.set(x, "DOM.requestNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotrequestNode(value: ReturnTypeRequestNodeResponse): Self = StObject.set(x, "DOM.requestNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotresolveNode(value: ReturnTypeResolveNodeResponse): Self = StObject.set(x, "DOM.resolveNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotresolveNode(value: ReturnTypeResolveNodeResponse): Self = StObject.set(x, "DOM.resolveNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotscrollIntoViewIfNeeded(value: `49`): Self = StObject.set(x, "DOM.scrollIntoViewIfNeeded", value.asInstanceOf[js.Any])
+        inline def setDOMDotscrollIntoViewIfNeeded(value: `49`): Self = StObject.set(x, "DOM.scrollIntoViewIfNeeded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetAttributeValue(value: `55`): Self = StObject.set(x, "DOM.setAttributeValue", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetAttributeValue(value: `55`): Self = StObject.set(x, "DOM.setAttributeValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetAttributesAsText(value: `56`): Self = StObject.set(x, "DOM.setAttributesAsText", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetAttributesAsText(value: `56`): Self = StObject.set(x, "DOM.setAttributesAsText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetFileInputFiles(value: `57`): Self = StObject.set(x, "DOM.setFileInputFiles", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetFileInputFiles(value: `57`): Self = StObject.set(x, "DOM.setFileInputFiles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetInspectedNode(value: `59`): Self = StObject.set(x, "DOM.setInspectedNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetInspectedNode(value: `59`): Self = StObject.set(x, "DOM.setInspectedNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetNodeName(value: ReturnTypeSetNodeNameResponse): Self = StObject.set(x, "DOM.setNodeName", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetNodeName(value: ReturnTypeSetNodeNameResponse): Self = StObject.set(x, "DOM.setNodeName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetNodeStackTracesEnabled(value: `58`): Self = StObject.set(x, "DOM.setNodeStackTracesEnabled", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetNodeStackTracesEnabled(value: `58`): Self = StObject.set(x, "DOM.setNodeStackTracesEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetNodeValue(value: `60`): Self = StObject.set(x, "DOM.setNodeValue", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetNodeValue(value: `60`): Self = StObject.set(x, "DOM.setNodeValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetOuterHTML(value: `61`): Self = StObject.set(x, "DOM.setOuterHTML", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetOuterHTML(value: `61`): Self = StObject.set(x, "DOM.setOuterHTML", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotundo(value: ParamsType): Self = StObject.set(x, "DOM.undo", value.asInstanceOf[js.Any])
+        inline def setDOMDotundo(value: ParamsType): Self = StObject.set(x, "DOM.undo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMSnapshotDotcaptureSnapshot(value: ReturnTypeCaptureSnapshotResponse): Self = StObject.set(x, "DOMSnapshot.captureSnapshot", value.asInstanceOf[js.Any])
+        inline def setDOMSnapshotDotcaptureSnapshot(value: ReturnTypeCaptureSnapshotResponse): Self = StObject.set(x, "DOMSnapshot.captureSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMSnapshotDotdisable(value: ParamsType): Self = StObject.set(x, "DOMSnapshot.disable", value.asInstanceOf[js.Any])
+        inline def setDOMSnapshotDotdisable(value: ParamsType): Self = StObject.set(x, "DOMSnapshot.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMSnapshotDotenable(value: ParamsType): Self = StObject.set(x, "DOMSnapshot.enable", value.asInstanceOf[js.Any])
+        inline def setDOMSnapshotDotenable(value: ParamsType): Self = StObject.set(x, "DOMSnapshot.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMSnapshotDotgetSnapshot(value: ReturnTypeGetSnapshotResponse): Self = StObject.set(x, "DOMSnapshot.getSnapshot", value.asInstanceOf[js.Any])
+        inline def setDOMSnapshotDotgetSnapshot(value: ReturnTypeGetSnapshotResponse): Self = StObject.set(x, "DOMSnapshot.getSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotclear(value: `70`): Self = StObject.set(x, "DOMStorage.clear", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotclear(value: `70`): Self = StObject.set(x, "DOMStorage.clear", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotdisable(value: ParamsType): Self = StObject.set(x, "DOMStorage.disable", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotdisable(value: ParamsType): Self = StObject.set(x, "DOMStorage.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotenable(value: ParamsType): Self = StObject.set(x, "DOMStorage.enable", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotenable(value: ParamsType): Self = StObject.set(x, "DOMStorage.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotgetDOMStorageItems(value: ReturnTypeGetDOMStorageItemsResponse): Self = StObject.set(x, "DOMStorage.getDOMStorageItems", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotgetDOMStorageItems(value: ReturnTypeGetDOMStorageItemsResponse): Self = StObject.set(x, "DOMStorage.getDOMStorageItems", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotremoveDOMStorageItem(value: `71`): Self = StObject.set(x, "DOMStorage.removeDOMStorageItem", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotremoveDOMStorageItem(value: `71`): Self = StObject.set(x, "DOMStorage.removeDOMStorageItem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotsetDOMStorageItem(value: `72`): Self = StObject.set(x, "DOMStorage.setDOMStorageItem", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotsetDOMStorageItem(value: `72`): Self = StObject.set(x, "DOMStorage.setDOMStorageItem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseDotdisable(value: ParamsType): Self = StObject.set(x, "Database.disable", value.asInstanceOf[js.Any])
+        inline def setDatabaseDotdisable(value: ParamsType): Self = StObject.set(x, "Database.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseDotenable(value: ParamsType): Self = StObject.set(x, "Database.enable", value.asInstanceOf[js.Any])
+        inline def setDatabaseDotenable(value: ParamsType): Self = StObject.set(x, "Database.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseDotexecuteSQL(value: ReturnTypeExecuteSQLResponse): Self = StObject.set(x, "Database.executeSQL", value.asInstanceOf[js.Any])
+        inline def setDatabaseDotexecuteSQL(value: ReturnTypeExecuteSQLResponse): Self = StObject.set(x, "Database.executeSQL", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseDotgetDatabaseTableNames(value: ReturnTypeGetDatabaseTableNamesResponse): Self = StObject.set(x, "Database.getDatabaseTableNames", value.asInstanceOf[js.Any])
+        inline def setDatabaseDotgetDatabaseTableNames(value: ReturnTypeGetDatabaseTableNamesResponse): Self = StObject.set(x, "Database.getDatabaseTableNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotcontinueToLocation(value: ReturnType): Self = StObject.set(x, "Debugger.continueToLocation", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotcontinueToLocation(value: ReturnType): Self = StObject.set(x, "Debugger.continueToLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotdisable(value: ParamsType): Self = StObject.set(x, "Debugger.disable", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotdisable(value: ParamsType): Self = StObject.set(x, "Debugger.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotenable(value: ParamsTypeReturnType): Self = StObject.set(x, "Debugger.enable", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotenable(value: ParamsTypeReturnType): Self = StObject.set(x, "Debugger.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotevaluateOnCallFrame(value: ReturnTypeEvaluateOnCallFrameResponse): Self = StObject.set(x, "Debugger.evaluateOnCallFrame", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotevaluateOnCallFrame(value: ReturnTypeEvaluateOnCallFrameResponse): Self = StObject.set(x, "Debugger.evaluateOnCallFrame", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotexecuteWasmEvaluator(value: ReturnTypeExecuteWasmEvaluatorResponse): Self = StObject.set(x, "Debugger.executeWasmEvaluator", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotexecuteWasmEvaluator(value: ReturnTypeExecuteWasmEvaluatorResponse): Self = StObject.set(x, "Debugger.executeWasmEvaluator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotgetPossibleBreakpoints(value: ReturnTypeGetPossibleBreakpointsResponse): Self = StObject.set(x, "Debugger.getPossibleBreakpoints", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotgetPossibleBreakpoints(value: ReturnTypeGetPossibleBreakpointsResponse): Self = StObject.set(x, "Debugger.getPossibleBreakpoints", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotgetScriptSource(value: ReturnTypeGetScriptSourceResponse): Self = StObject.set(x, "Debugger.getScriptSource", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotgetScriptSource(value: ReturnTypeGetScriptSourceResponse): Self = StObject.set(x, "Debugger.getScriptSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotgetStackTrace(value: ReturnTypeGetStackTraceResponse): Self = StObject.set(x, "Debugger.getStackTrace", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotgetStackTrace(value: ReturnTypeGetStackTraceResponse): Self = StObject.set(x, "Debugger.getStackTrace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotgetWasmBytecode(value: ReturnTypeGetWasmBytecodeResponse): Self = StObject.set(x, "Debugger.getWasmBytecode", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotgetWasmBytecode(value: ReturnTypeGetWasmBytecodeResponse): Self = StObject.set(x, "Debugger.getWasmBytecode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotpause(value: ParamsType): Self = StObject.set(x, "Debugger.pause", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotpause(value: ParamsType): Self = StObject.set(x, "Debugger.pause", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotpauseOnAsyncCall(value: ReturnTypeVoid): Self = StObject.set(x, "Debugger.pauseOnAsyncCall", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotpauseOnAsyncCall(value: ReturnTypeVoid): Self = StObject.set(x, "Debugger.pauseOnAsyncCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotremoveBreakpoint(value: ParamsTypeReturnTypeVoid): Self = StObject.set(x, "Debugger.removeBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotremoveBreakpoint(value: ParamsTypeReturnTypeVoid): Self = StObject.set(x, "Debugger.removeBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotrestartFrame(value: ReturnTypeRestartFrameResponse): Self = StObject.set(x, "Debugger.restartFrame", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotrestartFrame(value: ReturnTypeRestartFrameResponse): Self = StObject.set(x, "Debugger.restartFrame", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotresume(value: `0`): Self = StObject.set(x, "Debugger.resume", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotresume(value: `0`): Self = StObject.set(x, "Debugger.resume", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsearchInContent(value: ReturnTypeSearchInContentResponse): Self = StObject.set(x, "Debugger.searchInContent", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsearchInContent(value: ReturnTypeSearchInContentResponse): Self = StObject.set(x, "Debugger.searchInContent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetAsyncCallStackDepth(value: `1`): Self = StObject.set(x, "Debugger.setAsyncCallStackDepth", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetAsyncCallStackDepth(value: `1`): Self = StObject.set(x, "Debugger.setAsyncCallStackDepth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetBlackboxPatterns(value: `2`): Self = StObject.set(x, "Debugger.setBlackboxPatterns", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetBlackboxPatterns(value: `2`): Self = StObject.set(x, "Debugger.setBlackboxPatterns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetBlackboxedRanges(value: `3`): Self = StObject.set(x, "Debugger.setBlackboxedRanges", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetBlackboxedRanges(value: `3`): Self = StObject.set(x, "Debugger.setBlackboxedRanges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetBreakpoint(value: ReturnTypeSetBreakpointResponse): Self = StObject.set(x, "Debugger.setBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetBreakpoint(value: ReturnTypeSetBreakpointResponse): Self = StObject.set(x, "Debugger.setBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetBreakpointByUrl(value: ReturnTypeSetBreakpointByUrlResponse): Self = StObject.set(x, "Debugger.setBreakpointByUrl", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetBreakpointByUrl(value: ReturnTypeSetBreakpointByUrlResponse): Self = StObject.set(x, "Debugger.setBreakpointByUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetBreakpointOnFunctionCall(value: ReturnTypeSetBreakpointOnFunctionCallResponse): Self = StObject.set(x, "Debugger.setBreakpointOnFunctionCall", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetBreakpointOnFunctionCall(value: ReturnTypeSetBreakpointOnFunctionCallResponse): Self = StObject.set(x, "Debugger.setBreakpointOnFunctionCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetBreakpointsActive(value: `4`): Self = StObject.set(x, "Debugger.setBreakpointsActive", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetBreakpointsActive(value: `4`): Self = StObject.set(x, "Debugger.setBreakpointsActive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetInstrumentationBreakpoint(value: ReturnTypeSetInstrumentationBreakpointResponse): Self = StObject.set(x, "Debugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetInstrumentationBreakpoint(value: ReturnTypeSetInstrumentationBreakpointResponse): Self = StObject.set(x, "Debugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetPauseOnExceptions(value: `5`): Self = StObject.set(x, "Debugger.setPauseOnExceptions", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetPauseOnExceptions(value: `5`): Self = StObject.set(x, "Debugger.setPauseOnExceptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetReturnValue(value: `6`): Self = StObject.set(x, "Debugger.setReturnValue", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetReturnValue(value: `6`): Self = StObject.set(x, "Debugger.setReturnValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetScriptSource(value: ReturnTypeSetScriptSourceResponse): Self = StObject.set(x, "Debugger.setScriptSource", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetScriptSource(value: ReturnTypeSetScriptSourceResponse): Self = StObject.set(x, "Debugger.setScriptSource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetSkipAllPauses(value: `7`): Self = StObject.set(x, "Debugger.setSkipAllPauses", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetSkipAllPauses(value: `7`): Self = StObject.set(x, "Debugger.setSkipAllPauses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotsetVariableValue(value: `8`): Self = StObject.set(x, "Debugger.setVariableValue", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotsetVariableValue(value: `8`): Self = StObject.set(x, "Debugger.setVariableValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotstepInto(value: `9`): Self = StObject.set(x, "Debugger.stepInto", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotstepInto(value: `9`): Self = StObject.set(x, "Debugger.stepInto", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotstepOut(value: ParamsType): Self = StObject.set(x, "Debugger.stepOut", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotstepOut(value: ParamsType): Self = StObject.set(x, "Debugger.stepOut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotstepOver(value: `10`): Self = StObject.set(x, "Debugger.stepOver", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotstepOver(value: `10`): Self = StObject.set(x, "Debugger.stepOver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeviceOrientationDotclearDeviceOrientationOverride(value: ParamsType): Self = StObject.set(x, "DeviceOrientation.clearDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setDeviceOrientationDotclearDeviceOrientationOverride(value: ParamsType): Self = StObject.set(x, "DeviceOrientation.clearDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeviceOrientationDotsetDeviceOrientationOverride(value: `73`): Self = StObject.set(x, "DeviceOrientation.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setDeviceOrientationDotsetDeviceOrientationOverride(value: `73`): Self = StObject.set(x, "DeviceOrientation.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotcanEmulate(value: ReturnTypeCanEmulateResponse): Self = StObject.set(x, "Emulation.canEmulate", value.asInstanceOf[js.Any])
+        inline def setEmulationDotcanEmulate(value: ReturnTypeCanEmulateResponse): Self = StObject.set(x, "Emulation.canEmulate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotclearDeviceMetricsOverride(value: ParamsType): Self = StObject.set(x, "Emulation.clearDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotclearDeviceMetricsOverride(value: ParamsType): Self = StObject.set(x, "Emulation.clearDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotclearGeolocationOverride(value: ParamsType): Self = StObject.set(x, "Emulation.clearGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotclearGeolocationOverride(value: ParamsType): Self = StObject.set(x, "Emulation.clearGeolocationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotclearIdleOverride(value: ParamsType): Self = StObject.set(x, "Emulation.clearIdleOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotclearIdleOverride(value: ParamsType): Self = StObject.set(x, "Emulation.clearIdleOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotresetPageScaleFactor(value: ParamsType): Self = StObject.set(x, "Emulation.resetPageScaleFactor", value.asInstanceOf[js.Any])
+        inline def setEmulationDotresetPageScaleFactor(value: ParamsType): Self = StObject.set(x, "Emulation.resetPageScaleFactor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetCPUThrottlingRate(value: `75`): Self = StObject.set(x, "Emulation.setCPUThrottlingRate", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetCPUThrottlingRate(value: `75`): Self = StObject.set(x, "Emulation.setCPUThrottlingRate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetDefaultBackgroundColorOverride(value: `76`): Self = StObject.set(x, "Emulation.setDefaultBackgroundColorOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDefaultBackgroundColorOverride(value: `76`): Self = StObject.set(x, "Emulation.setDefaultBackgroundColorOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetDeviceMetricsOverride(value: `77`): Self = StObject.set(x, "Emulation.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDeviceMetricsOverride(value: `77`): Self = StObject.set(x, "Emulation.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetDocumentCookieDisabled(value: `79`): Self = StObject.set(x, "Emulation.setDocumentCookieDisabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDocumentCookieDisabled(value: `79`): Self = StObject.set(x, "Emulation.setDocumentCookieDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetEmitTouchEventsForMouse(value: `80`): Self = StObject.set(x, "Emulation.setEmitTouchEventsForMouse", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmitTouchEventsForMouse(value: `80`): Self = StObject.set(x, "Emulation.setEmitTouchEventsForMouse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetEmulatedMedia(value: `81`): Self = StObject.set(x, "Emulation.setEmulatedMedia", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmulatedMedia(value: `81`): Self = StObject.set(x, "Emulation.setEmulatedMedia", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetEmulatedVisionDeficiency(value: `82`): Self = StObject.set(x, "Emulation.setEmulatedVisionDeficiency", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmulatedVisionDeficiency(value: `82`): Self = StObject.set(x, "Emulation.setEmulatedVisionDeficiency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetFocusEmulationEnabled(value: `74`): Self = StObject.set(x, "Emulation.setFocusEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetFocusEmulationEnabled(value: `74`): Self = StObject.set(x, "Emulation.setFocusEmulationEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetGeolocationOverride(value: `83`): Self = StObject.set(x, "Emulation.setGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetGeolocationOverride(value: `83`): Self = StObject.set(x, "Emulation.setGeolocationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetIdleOverride(value: `84`): Self = StObject.set(x, "Emulation.setIdleOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetIdleOverride(value: `84`): Self = StObject.set(x, "Emulation.setIdleOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetLocaleOverride(value: `89`): Self = StObject.set(x, "Emulation.setLocaleOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetLocaleOverride(value: `89`): Self = StObject.set(x, "Emulation.setLocaleOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetNavigatorOverrides(value: `85`): Self = StObject.set(x, "Emulation.setNavigatorOverrides", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetNavigatorOverrides(value: `85`): Self = StObject.set(x, "Emulation.setNavigatorOverrides", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetPageScaleFactor(value: `86`): Self = StObject.set(x, "Emulation.setPageScaleFactor", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetPageScaleFactor(value: `86`): Self = StObject.set(x, "Emulation.setPageScaleFactor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetScriptExecutionDisabled(value: `87`): Self = StObject.set(x, "Emulation.setScriptExecutionDisabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetScriptExecutionDisabled(value: `87`): Self = StObject.set(x, "Emulation.setScriptExecutionDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetScrollbarsHidden(value: `78`): Self = StObject.set(x, "Emulation.setScrollbarsHidden", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetScrollbarsHidden(value: `78`): Self = StObject.set(x, "Emulation.setScrollbarsHidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetTimezoneOverride(value: `90`): Self = StObject.set(x, "Emulation.setTimezoneOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetTimezoneOverride(value: `90`): Self = StObject.set(x, "Emulation.setTimezoneOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetTouchEmulationEnabled(value: `88`): Self = StObject.set(x, "Emulation.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetTouchEmulationEnabled(value: `88`): Self = StObject.set(x, "Emulation.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetUserAgentOverride(value: `92`): Self = StObject.set(x, "Emulation.setUserAgentOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetUserAgentOverride(value: `92`): Self = StObject.set(x, "Emulation.setUserAgentOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetVirtualTimePolicy(value: ReturnTypeSetVirtualTimePolicyResponse): Self = StObject.set(x, "Emulation.setVirtualTimePolicy", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetVirtualTimePolicy(value: ReturnTypeSetVirtualTimePolicyResponse): Self = StObject.set(x, "Emulation.setVirtualTimePolicy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotsetVisibleSize(value: `91`): Self = StObject.set(x, "Emulation.setVisibleSize", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetVisibleSize(value: `91`): Self = StObject.set(x, "Emulation.setVisibleSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotcontinueRequest(value: `205`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueRequest(value: `205`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotcontinueWithAuth(value: `206`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueWithAuth(value: `206`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotdisable(value: ParamsType): Self = StObject.set(x, "Fetch.disable", value.asInstanceOf[js.Any])
+        inline def setFetchDotdisable(value: ParamsType): Self = StObject.set(x, "Fetch.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotenable(value: `202`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
+        inline def setFetchDotenable(value: `202`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotfailRequest(value: `203`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfailRequest(value: `203`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotfulfillRequest(value: `204`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfulfillRequest(value: `204`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotgetResponseBody(value: ParamsTypeReturnTypeGetResponseBodyResponse): Self = StObject.set(x, "Fetch.getResponseBody", value.asInstanceOf[js.Any])
+        inline def setFetchDotgetResponseBody(value: ParamsTypeReturnTypeGetResponseBodyResponse): Self = StObject.set(x, "Fetch.getResponseBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDottakeResponseBodyAsStream(value: ReturnTypeTakeResponseBodyAsStreamResponse): Self = StObject.set(x, "Fetch.takeResponseBodyAsStream", value.asInstanceOf[js.Any])
+        inline def setFetchDottakeResponseBodyAsStream(value: ReturnTypeTakeResponseBodyAsStreamResponse): Self = StObject.set(x, "Fetch.takeResponseBodyAsStream", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadlessExperimentalDotbeginFrame(value: ReturnTypeBeginFrameResponse): Self = StObject.set(x, "HeadlessExperimental.beginFrame", value.asInstanceOf[js.Any])
+        inline def setHeadlessExperimentalDotbeginFrame(value: ReturnTypeBeginFrameResponse): Self = StObject.set(x, "HeadlessExperimental.beginFrame", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadlessExperimentalDotdisable(value: ParamsType): Self = StObject.set(x, "HeadlessExperimental.disable", value.asInstanceOf[js.Any])
+        inline def setHeadlessExperimentalDotdisable(value: ParamsType): Self = StObject.set(x, "HeadlessExperimental.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadlessExperimentalDotenable(value: ParamsType): Self = StObject.set(x, "HeadlessExperimental.enable", value.asInstanceOf[js.Any])
+        inline def setHeadlessExperimentalDotenable(value: ParamsType): Self = StObject.set(x, "HeadlessExperimental.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotaddInspectedHeapObject(value: `11`): Self = StObject.set(x, "HeapProfiler.addInspectedHeapObject", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotaddInspectedHeapObject(value: `11`): Self = StObject.set(x, "HeapProfiler.addInspectedHeapObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotcollectGarbage(value: ParamsType): Self = StObject.set(x, "HeapProfiler.collectGarbage", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotcollectGarbage(value: ParamsType): Self = StObject.set(x, "HeapProfiler.collectGarbage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotdisable(value: ParamsType): Self = StObject.set(x, "HeapProfiler.disable", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotdisable(value: ParamsType): Self = StObject.set(x, "HeapProfiler.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotenable(value: ParamsType): Self = StObject.set(x, "HeapProfiler.enable", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotenable(value: ParamsType): Self = StObject.set(x, "HeapProfiler.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotgetHeapObjectId(value: ReturnTypeGetHeapObjectIdResponse): Self = StObject.set(x, "HeapProfiler.getHeapObjectId", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotgetHeapObjectId(value: ReturnTypeGetHeapObjectIdResponse): Self = StObject.set(x, "HeapProfiler.getHeapObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotgetObjectByHeapObjectId(value: ReturnTypeGetObjectByHeapObjectIdResponse): Self = StObject.set(x, "HeapProfiler.getObjectByHeapObjectId", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotgetObjectByHeapObjectId(value: ReturnTypeGetObjectByHeapObjectIdResponse): Self = StObject.set(x, "HeapProfiler.getObjectByHeapObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotgetSamplingProfile(value: ReturnTypeGetSamplingProfileResponse): Self = StObject.set(x, "HeapProfiler.getSamplingProfile", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotgetSamplingProfile(value: ReturnTypeGetSamplingProfileResponse): Self = StObject.set(x, "HeapProfiler.getSamplingProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotstartSampling(value: `12`): Self = StObject.set(x, "HeapProfiler.startSampling", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotstartSampling(value: `12`): Self = StObject.set(x, "HeapProfiler.startSampling", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotstartTrackingHeapObjects(value: `13`): Self = StObject.set(x, "HeapProfiler.startTrackingHeapObjects", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotstartTrackingHeapObjects(value: `13`): Self = StObject.set(x, "HeapProfiler.startTrackingHeapObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotstopSampling(value: ReturnTypeStopSamplingResponse): Self = StObject.set(x, "HeapProfiler.stopSampling", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotstopSampling(value: ReturnTypeStopSamplingResponse): Self = StObject.set(x, "HeapProfiler.stopSampling", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotstopTrackingHeapObjects(value: `14`): Self = StObject.set(x, "HeapProfiler.stopTrackingHeapObjects", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotstopTrackingHeapObjects(value: `14`): Self = StObject.set(x, "HeapProfiler.stopTrackingHeapObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDottakeHeapSnapshot(value: `15`): Self = StObject.set(x, "HeapProfiler.takeHeapSnapshot", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDottakeHeapSnapshot(value: `15`): Self = StObject.set(x, "HeapProfiler.takeHeapSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIODotclose(value: `93`): Self = StObject.set(x, "IO.close", value.asInstanceOf[js.Any])
+        inline def setIODotclose(value: `93`): Self = StObject.set(x, "IO.close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIODotread(value: ReturnTypeReadResponse): Self = StObject.set(x, "IO.read", value.asInstanceOf[js.Any])
+        inline def setIODotread(value: ReturnTypeReadResponse): Self = StObject.set(x, "IO.read", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIODotresolveBlob(value: ReturnTypeResolveBlobResponse): Self = StObject.set(x, "IO.resolveBlob", value.asInstanceOf[js.Any])
+        inline def setIODotresolveBlob(value: ReturnTypeResolveBlobResponse): Self = StObject.set(x, "IO.resolveBlob", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotclearObjectStore(value: `94`): Self = StObject.set(x, "IndexedDB.clearObjectStore", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotclearObjectStore(value: `94`): Self = StObject.set(x, "IndexedDB.clearObjectStore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotdeleteDatabase(value: `95`): Self = StObject.set(x, "IndexedDB.deleteDatabase", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotdeleteDatabase(value: `95`): Self = StObject.set(x, "IndexedDB.deleteDatabase", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotdeleteObjectStoreEntries(value: `96`): Self = StObject.set(x, "IndexedDB.deleteObjectStoreEntries", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotdeleteObjectStoreEntries(value: `96`): Self = StObject.set(x, "IndexedDB.deleteObjectStoreEntries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotdisable(value: ParamsType): Self = StObject.set(x, "IndexedDB.disable", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotdisable(value: ParamsType): Self = StObject.set(x, "IndexedDB.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotenable(value: ParamsType): Self = StObject.set(x, "IndexedDB.enable", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotenable(value: ParamsType): Self = StObject.set(x, "IndexedDB.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotgetMetadata(value: ReturnTypeGetMetadataResponse): Self = StObject.set(x, "IndexedDB.getMetadata", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotgetMetadata(value: ReturnTypeGetMetadataResponse): Self = StObject.set(x, "IndexedDB.getMetadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotrequestData(value: ReturnTypeRequestDataResponse): Self = StObject.set(x, "IndexedDB.requestData", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotrequestData(value: ReturnTypeRequestDataResponse): Self = StObject.set(x, "IndexedDB.requestData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotrequestDatabase(value: ReturnTypeRequestDatabaseResponse): Self = StObject.set(x, "IndexedDB.requestDatabase", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotrequestDatabase(value: ReturnTypeRequestDatabaseResponse): Self = StObject.set(x, "IndexedDB.requestDatabase", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexedDBDotrequestDatabaseNames(value: ReturnTypeRequestDatabaseNamesResponse): Self = StObject.set(x, "IndexedDB.requestDatabaseNames", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotrequestDatabaseNames(value: ReturnTypeRequestDatabaseNamesResponse): Self = StObject.set(x, "IndexedDB.requestDatabaseNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotdispatchKeyEvent(value: `97`): Self = StObject.set(x, "Input.dispatchKeyEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchKeyEvent(value: `97`): Self = StObject.set(x, "Input.dispatchKeyEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotdispatchMouseEvent(value: `99`): Self = StObject.set(x, "Input.dispatchMouseEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchMouseEvent(value: `99`): Self = StObject.set(x, "Input.dispatchMouseEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotdispatchTouchEvent(value: `100`): Self = StObject.set(x, "Input.dispatchTouchEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchTouchEvent(value: `100`): Self = StObject.set(x, "Input.dispatchTouchEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotemulateTouchFromMouseEvent(value: `101`): Self = StObject.set(x, "Input.emulateTouchFromMouseEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotemulateTouchFromMouseEvent(value: `101`): Self = StObject.set(x, "Input.emulateTouchFromMouseEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotinsertText(value: `98`): Self = StObject.set(x, "Input.insertText", value.asInstanceOf[js.Any])
+        inline def setInputDotinsertText(value: `98`): Self = StObject.set(x, "Input.insertText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotsetIgnoreInputEvents(value: `102`): Self = StObject.set(x, "Input.setIgnoreInputEvents", value.asInstanceOf[js.Any])
+        inline def setInputDotsetIgnoreInputEvents(value: `102`): Self = StObject.set(x, "Input.setIgnoreInputEvents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotsynthesizePinchGesture(value: `103`): Self = StObject.set(x, "Input.synthesizePinchGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsynthesizePinchGesture(value: `103`): Self = StObject.set(x, "Input.synthesizePinchGesture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotsynthesizeScrollGesture(value: `104`): Self = StObject.set(x, "Input.synthesizeScrollGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsynthesizeScrollGesture(value: `104`): Self = StObject.set(x, "Input.synthesizeScrollGesture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputDotsynthesizeTapGesture(value: `105`): Self = StObject.set(x, "Input.synthesizeTapGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsynthesizeTapGesture(value: `105`): Self = StObject.set(x, "Input.synthesizeTapGesture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInspectorDotdisable(value: ParamsType): Self = StObject.set(x, "Inspector.disable", value.asInstanceOf[js.Any])
+        inline def setInspectorDotdisable(value: ParamsType): Self = StObject.set(x, "Inspector.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInspectorDotenable(value: ParamsType): Self = StObject.set(x, "Inspector.enable", value.asInstanceOf[js.Any])
+        inline def setInspectorDotenable(value: ParamsType): Self = StObject.set(x, "Inspector.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotcompositingReasons(value: ReturnTypeCompositingReasonsResponse): Self = StObject.set(x, "LayerTree.compositingReasons", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotcompositingReasons(value: ReturnTypeCompositingReasonsResponse): Self = StObject.set(x, "LayerTree.compositingReasons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotdisable(value: ParamsType): Self = StObject.set(x, "LayerTree.disable", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotdisable(value: ParamsType): Self = StObject.set(x, "LayerTree.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotenable(value: ParamsType): Self = StObject.set(x, "LayerTree.enable", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotenable(value: ParamsType): Self = StObject.set(x, "LayerTree.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotloadSnapshot(value: ReturnTypeLoadSnapshotResponse): Self = StObject.set(x, "LayerTree.loadSnapshot", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotloadSnapshot(value: ReturnTypeLoadSnapshotResponse): Self = StObject.set(x, "LayerTree.loadSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotmakeSnapshot(value: ReturnTypeMakeSnapshotResponse): Self = StObject.set(x, "LayerTree.makeSnapshot", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotmakeSnapshot(value: ReturnTypeMakeSnapshotResponse): Self = StObject.set(x, "LayerTree.makeSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotprofileSnapshot(value: ReturnTypeProfileSnapshotResponse): Self = StObject.set(x, "LayerTree.profileSnapshot", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotprofileSnapshot(value: ReturnTypeProfileSnapshotResponse): Self = StObject.set(x, "LayerTree.profileSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotreleaseSnapshot(value: `106`): Self = StObject.set(x, "LayerTree.releaseSnapshot", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotreleaseSnapshot(value: `106`): Self = StObject.set(x, "LayerTree.releaseSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotreplaySnapshot(value: ReturnTypeReplaySnapshotResponse): Self = StObject.set(x, "LayerTree.replaySnapshot", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotreplaySnapshot(value: ReturnTypeReplaySnapshotResponse): Self = StObject.set(x, "LayerTree.replaySnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotsnapshotCommandLog(value: ReturnTypeSnapshotCommandLogResponse): Self = StObject.set(x, "LayerTree.snapshotCommandLog", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotsnapshotCommandLog(value: ReturnTypeSnapshotCommandLogResponse): Self = StObject.set(x, "LayerTree.snapshotCommandLog", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogDotclear(value: ParamsType): Self = StObject.set(x, "Log.clear", value.asInstanceOf[js.Any])
+        inline def setLogDotclear(value: ParamsType): Self = StObject.set(x, "Log.clear", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogDotdisable(value: ParamsType): Self = StObject.set(x, "Log.disable", value.asInstanceOf[js.Any])
+        inline def setLogDotdisable(value: ParamsType): Self = StObject.set(x, "Log.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogDotenable(value: ParamsType): Self = StObject.set(x, "Log.enable", value.asInstanceOf[js.Any])
+        inline def setLogDotenable(value: ParamsType): Self = StObject.set(x, "Log.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogDotstartViolationsReport(value: `107`): Self = StObject.set(x, "Log.startViolationsReport", value.asInstanceOf[js.Any])
+        inline def setLogDotstartViolationsReport(value: `107`): Self = StObject.set(x, "Log.startViolationsReport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogDotstopViolationsReport(value: ParamsType): Self = StObject.set(x, "Log.stopViolationsReport", value.asInstanceOf[js.Any])
+        inline def setLogDotstopViolationsReport(value: ParamsType): Self = StObject.set(x, "Log.stopViolationsReport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaDotdisable(value: ParamsType): Self = StObject.set(x, "Media.disable", value.asInstanceOf[js.Any])
+        inline def setMediaDotdisable(value: ParamsType): Self = StObject.set(x, "Media.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaDotenable(value: ParamsType): Self = StObject.set(x, "Media.enable", value.asInstanceOf[js.Any])
+        inline def setMediaDotenable(value: ParamsType): Self = StObject.set(x, "Media.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotforciblyPurgeJavaScriptMemory(value: ParamsType): Self = StObject.set(x, "Memory.forciblyPurgeJavaScriptMemory", value.asInstanceOf[js.Any])
+        inline def setMemoryDotforciblyPurgeJavaScriptMemory(value: ParamsType): Self = StObject.set(x, "Memory.forciblyPurgeJavaScriptMemory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotgetAllTimeSamplingProfile(value: ReturnTypeGetAllTimeSamplingProfileResponse): Self = StObject.set(x, "Memory.getAllTimeSamplingProfile", value.asInstanceOf[js.Any])
+        inline def setMemoryDotgetAllTimeSamplingProfile(value: ReturnTypeGetAllTimeSamplingProfileResponse): Self = StObject.set(x, "Memory.getAllTimeSamplingProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotgetBrowserSamplingProfile(value: ReturnTypeGetBrowserSamplingProfileResponse): Self = StObject.set(x, "Memory.getBrowserSamplingProfile", value.asInstanceOf[js.Any])
+        inline def setMemoryDotgetBrowserSamplingProfile(value: ReturnTypeGetBrowserSamplingProfileResponse): Self = StObject.set(x, "Memory.getBrowserSamplingProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotgetDOMCounters(value: ReturnTypeGetDOMCountersResponse): Self = StObject.set(x, "Memory.getDOMCounters", value.asInstanceOf[js.Any])
+        inline def setMemoryDotgetDOMCounters(value: ReturnTypeGetDOMCountersResponse): Self = StObject.set(x, "Memory.getDOMCounters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotgetSamplingProfile(value: ParamsTypeReturnTypeGetSamplingProfileResponse): Self = StObject.set(x, "Memory.getSamplingProfile", value.asInstanceOf[js.Any])
+        inline def setMemoryDotgetSamplingProfile(value: ParamsTypeReturnTypeGetSamplingProfileResponse): Self = StObject.set(x, "Memory.getSamplingProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotprepareForLeakDetection(value: ParamsType): Self = StObject.set(x, "Memory.prepareForLeakDetection", value.asInstanceOf[js.Any])
+        inline def setMemoryDotprepareForLeakDetection(value: ParamsType): Self = StObject.set(x, "Memory.prepareForLeakDetection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotsetPressureNotificationsSuppressed(value: `108`): Self = StObject.set(x, "Memory.setPressureNotificationsSuppressed", value.asInstanceOf[js.Any])
+        inline def setMemoryDotsetPressureNotificationsSuppressed(value: `108`): Self = StObject.set(x, "Memory.setPressureNotificationsSuppressed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotsimulatePressureNotification(value: `109`): Self = StObject.set(x, "Memory.simulatePressureNotification", value.asInstanceOf[js.Any])
+        inline def setMemoryDotsimulatePressureNotification(value: `109`): Self = StObject.set(x, "Memory.simulatePressureNotification", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotstartSampling(value: `110`): Self = StObject.set(x, "Memory.startSampling", value.asInstanceOf[js.Any])
+        inline def setMemoryDotstartSampling(value: `110`): Self = StObject.set(x, "Memory.startSampling", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemoryDotstopSampling(value: ParamsType): Self = StObject.set(x, "Memory.stopSampling", value.asInstanceOf[js.Any])
+        inline def setMemoryDotstopSampling(value: ParamsType): Self = StObject.set(x, "Memory.stopSampling", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotcanClearBrowserCache(value: ReturnTypeCanClearBrowserCacheResponse): Self = StObject.set(x, "Network.canClearBrowserCache", value.asInstanceOf[js.Any])
+        inline def setNetworkDotcanClearBrowserCache(value: ReturnTypeCanClearBrowserCacheResponse): Self = StObject.set(x, "Network.canClearBrowserCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotcanClearBrowserCookies(value: ReturnTypeCanClearBrowserCookiesResponse): Self = StObject.set(x, "Network.canClearBrowserCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotcanClearBrowserCookies(value: ReturnTypeCanClearBrowserCookiesResponse): Self = StObject.set(x, "Network.canClearBrowserCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotcanEmulateNetworkConditions(value: ReturnTypeCanEmulateNetworkConditionsResponse): Self = StObject.set(x, "Network.canEmulateNetworkConditions", value.asInstanceOf[js.Any])
+        inline def setNetworkDotcanEmulateNetworkConditions(value: ReturnTypeCanEmulateNetworkConditionsResponse): Self = StObject.set(x, "Network.canEmulateNetworkConditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotclearBrowserCache(value: ParamsType): Self = StObject.set(x, "Network.clearBrowserCache", value.asInstanceOf[js.Any])
+        inline def setNetworkDotclearBrowserCache(value: ParamsType): Self = StObject.set(x, "Network.clearBrowserCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotclearBrowserCookies(value: ParamsType): Self = StObject.set(x, "Network.clearBrowserCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotclearBrowserCookies(value: ParamsType): Self = StObject.set(x, "Network.clearBrowserCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotcontinueInterceptedRequest(value: `111`): Self = StObject.set(x, "Network.continueInterceptedRequest", value.asInstanceOf[js.Any])
+        inline def setNetworkDotcontinueInterceptedRequest(value: `111`): Self = StObject.set(x, "Network.continueInterceptedRequest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotdeleteCookies(value: `112`): Self = StObject.set(x, "Network.deleteCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotdeleteCookies(value: `112`): Self = StObject.set(x, "Network.deleteCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotdisable(value: ParamsType): Self = StObject.set(x, "Network.disable", value.asInstanceOf[js.Any])
+        inline def setNetworkDotdisable(value: ParamsType): Self = StObject.set(x, "Network.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotemulateNetworkConditions(value: `113`): Self = StObject.set(x, "Network.emulateNetworkConditions", value.asInstanceOf[js.Any])
+        inline def setNetworkDotemulateNetworkConditions(value: `113`): Self = StObject.set(x, "Network.emulateNetworkConditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotenable(value: `114`): Self = StObject.set(x, "Network.enable", value.asInstanceOf[js.Any])
+        inline def setNetworkDotenable(value: `114`): Self = StObject.set(x, "Network.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotgetAllCookies(value: ReturnTypeGetAllCookiesResponse): Self = StObject.set(x, "Network.getAllCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotgetAllCookies(value: ReturnTypeGetAllCookiesResponse): Self = StObject.set(x, "Network.getAllCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotgetCertificate(value: ReturnTypeGetCertificateResponse): Self = StObject.set(x, "Network.getCertificate", value.asInstanceOf[js.Any])
+        inline def setNetworkDotgetCertificate(value: ReturnTypeGetCertificateResponse): Self = StObject.set(x, "Network.getCertificate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotgetCookies(value: ReturnTypeGetCookiesResponse): Self = StObject.set(x, "Network.getCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotgetCookies(value: ReturnTypeGetCookiesResponse): Self = StObject.set(x, "Network.getCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotgetRequestPostData(value: ReturnTypeGetRequestPostDataResponse): Self = StObject.set(x, "Network.getRequestPostData", value.asInstanceOf[js.Any])
+        inline def setNetworkDotgetRequestPostData(value: ReturnTypeGetRequestPostDataResponse): Self = StObject.set(x, "Network.getRequestPostData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotgetResponseBody(value: ReturnTypeGetResponseBodyResponse): Self = StObject.set(x, "Network.getResponseBody", value.asInstanceOf[js.Any])
+        inline def setNetworkDotgetResponseBody(value: ReturnTypeGetResponseBodyResponse): Self = StObject.set(x, "Network.getResponseBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotgetResponseBodyForInterception(value: ReturnTypeGetResponseBodyForInterceptionResponse): Self = StObject.set(x, "Network.getResponseBodyForInterception", value.asInstanceOf[js.Any])
+        inline def setNetworkDotgetResponseBodyForInterception(value: ReturnTypeGetResponseBodyForInterceptionResponse): Self = StObject.set(x, "Network.getResponseBodyForInterception", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotgetSecurityIsolationStatus(value: ReturnTypeGetSecurityIsolationStatusResponse): Self = StObject.set(x, "Network.getSecurityIsolationStatus", value.asInstanceOf[js.Any])
+        inline def setNetworkDotgetSecurityIsolationStatus(value: ReturnTypeGetSecurityIsolationStatusResponse): Self = StObject.set(x, "Network.getSecurityIsolationStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotloadNetworkResource(value: ReturnTypeLoadNetworkResourceResponse): Self = StObject.set(x, "Network.loadNetworkResource", value.asInstanceOf[js.Any])
+        inline def setNetworkDotloadNetworkResource(value: ReturnTypeLoadNetworkResourceResponse): Self = StObject.set(x, "Network.loadNetworkResource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotreplayXHR(value: `115`): Self = StObject.set(x, "Network.replayXHR", value.asInstanceOf[js.Any])
+        inline def setNetworkDotreplayXHR(value: `115`): Self = StObject.set(x, "Network.replayXHR", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsearchInResponseBody(value: ReturnTypeSearchInResponseBodyResponse): Self = StObject.set(x, "Network.searchInResponseBody", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsearchInResponseBody(value: ReturnTypeSearchInResponseBodyResponse): Self = StObject.set(x, "Network.searchInResponseBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetAttachDebugHeader(value: `122`): Self = StObject.set(x, "Network.setAttachDebugHeader", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetAttachDebugHeader(value: `122`): Self = StObject.set(x, "Network.setAttachDebugHeader", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetBlockedURLs(value: `116`): Self = StObject.set(x, "Network.setBlockedURLs", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetBlockedURLs(value: `116`): Self = StObject.set(x, "Network.setBlockedURLs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetBypassServiceWorker(value: `117`): Self = StObject.set(x, "Network.setBypassServiceWorker", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetBypassServiceWorker(value: `117`): Self = StObject.set(x, "Network.setBypassServiceWorker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetCacheDisabled(value: `118`): Self = StObject.set(x, "Network.setCacheDisabled", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetCacheDisabled(value: `118`): Self = StObject.set(x, "Network.setCacheDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetCookie(value: ReturnTypeSetCookieResponse): Self = StObject.set(x, "Network.setCookie", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetCookie(value: ReturnTypeSetCookieResponse): Self = StObject.set(x, "Network.setCookie", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetCookies(value: `119`): Self = StObject.set(x, "Network.setCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetCookies(value: `119`): Self = StObject.set(x, "Network.setCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetDataSizeLimitsForTest(value: `120`): Self = StObject.set(x, "Network.setDataSizeLimitsForTest", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetDataSizeLimitsForTest(value: `120`): Self = StObject.set(x, "Network.setDataSizeLimitsForTest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetExtraHTTPHeaders(value: `121`): Self = StObject.set(x, "Network.setExtraHTTPHeaders", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetExtraHTTPHeaders(value: `121`): Self = StObject.set(x, "Network.setExtraHTTPHeaders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetRequestInterception(value: `123`): Self = StObject.set(x, "Network.setRequestInterception", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetRequestInterception(value: `123`): Self = StObject.set(x, "Network.setRequestInterception", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsetUserAgentOverride(value: `124`): Self = StObject.set(x, "Network.setUserAgentOverride", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetUserAgentOverride(value: `124`): Self = StObject.set(x, "Network.setUserAgentOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDottakeResponseBodyForInterceptionAsStream(value: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse): Self = StObject.set(x, "Network.takeResponseBodyForInterceptionAsStream", value.asInstanceOf[js.Any])
+        inline def setNetworkDottakeResponseBodyForInterceptionAsStream(value: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse): Self = StObject.set(x, "Network.takeResponseBodyForInterceptionAsStream", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotdisable(value: ParamsType): Self = StObject.set(x, "Overlay.disable", value.asInstanceOf[js.Any])
+        inline def setOverlayDotdisable(value: ParamsType): Self = StObject.set(x, "Overlay.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotenable(value: ParamsType): Self = StObject.set(x, "Overlay.enable", value.asInstanceOf[js.Any])
+        inline def setOverlayDotenable(value: ParamsType): Self = StObject.set(x, "Overlay.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotgetGridHighlightObjectsForTest(value: ReturnTypeGetGridHighlightObjectsForTestResponse): Self = StObject.set(x, "Overlay.getGridHighlightObjectsForTest", value.asInstanceOf[js.Any])
+        inline def setOverlayDotgetGridHighlightObjectsForTest(value: ReturnTypeGetGridHighlightObjectsForTestResponse): Self = StObject.set(x, "Overlay.getGridHighlightObjectsForTest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotgetHighlightObjectForTest(value: ReturnTypeGetHighlightObjectForTestResponse): Self = StObject.set(x, "Overlay.getHighlightObjectForTest", value.asInstanceOf[js.Any])
+        inline def setOverlayDotgetHighlightObjectForTest(value: ReturnTypeGetHighlightObjectForTestResponse): Self = StObject.set(x, "Overlay.getHighlightObjectForTest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotgetSourceOrderHighlightObjectForTest(value: ReturnTypeGetSourceOrderHighlightObjectForTestResponse): Self = StObject.set(x, "Overlay.getSourceOrderHighlightObjectForTest", value.asInstanceOf[js.Any])
+        inline def setOverlayDotgetSourceOrderHighlightObjectForTest(value: ReturnTypeGetSourceOrderHighlightObjectForTestResponse): Self = StObject.set(x, "Overlay.getSourceOrderHighlightObjectForTest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDothideHighlight(value: ParamsType): Self = StObject.set(x, "Overlay.hideHighlight", value.asInstanceOf[js.Any])
+        inline def setOverlayDothideHighlight(value: ParamsType): Self = StObject.set(x, "Overlay.hideHighlight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDothighlightFrame(value: `125`): Self = StObject.set(x, "Overlay.highlightFrame", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightFrame(value: `125`): Self = StObject.set(x, "Overlay.highlightFrame", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDothighlightNode(value: `126`): Self = StObject.set(x, "Overlay.highlightNode", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightNode(value: `126`): Self = StObject.set(x, "Overlay.highlightNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDothighlightQuad(value: `127`): Self = StObject.set(x, "Overlay.highlightQuad", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightQuad(value: `127`): Self = StObject.set(x, "Overlay.highlightQuad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDothighlightRect(value: `128`): Self = StObject.set(x, "Overlay.highlightRect", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightRect(value: `128`): Self = StObject.set(x, "Overlay.highlightRect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDothighlightSourceOrder(value: `129`): Self = StObject.set(x, "Overlay.highlightSourceOrder", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightSourceOrder(value: `129`): Self = StObject.set(x, "Overlay.highlightSourceOrder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetInspectMode(value: `130`): Self = StObject.set(x, "Overlay.setInspectMode", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetInspectMode(value: `130`): Self = StObject.set(x, "Overlay.setInspectMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetPausedInDebuggerMessage(value: `132`): Self = StObject.set(x, "Overlay.setPausedInDebuggerMessage", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetPausedInDebuggerMessage(value: `132`): Self = StObject.set(x, "Overlay.setPausedInDebuggerMessage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowAdHighlights(value: `131`): Self = StObject.set(x, "Overlay.setShowAdHighlights", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowAdHighlights(value: `131`): Self = StObject.set(x, "Overlay.setShowAdHighlights", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowDebugBorders(value: `133`): Self = StObject.set(x, "Overlay.setShowDebugBorders", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowDebugBorders(value: `133`): Self = StObject.set(x, "Overlay.setShowDebugBorders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowFPSCounter(value: `134`): Self = StObject.set(x, "Overlay.setShowFPSCounter", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowFPSCounter(value: `134`): Self = StObject.set(x, "Overlay.setShowFPSCounter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowGridOverlays(value: `135`): Self = StObject.set(x, "Overlay.setShowGridOverlays", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowGridOverlays(value: `135`): Self = StObject.set(x, "Overlay.setShowGridOverlays", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowHinge(value: `141`): Self = StObject.set(x, "Overlay.setShowHinge", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowHinge(value: `141`): Self = StObject.set(x, "Overlay.setShowHinge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowHitTestBorders(value: `139`): Self = StObject.set(x, "Overlay.setShowHitTestBorders", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowHitTestBorders(value: `139`): Self = StObject.set(x, "Overlay.setShowHitTestBorders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowLayoutShiftRegions(value: `137`): Self = StObject.set(x, "Overlay.setShowLayoutShiftRegions", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowLayoutShiftRegions(value: `137`): Self = StObject.set(x, "Overlay.setShowLayoutShiftRegions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowPaintRects(value: `136`): Self = StObject.set(x, "Overlay.setShowPaintRects", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowPaintRects(value: `136`): Self = StObject.set(x, "Overlay.setShowPaintRects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowScrollBottleneckRects(value: `138`): Self = StObject.set(x, "Overlay.setShowScrollBottleneckRects", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowScrollBottleneckRects(value: `138`): Self = StObject.set(x, "Overlay.setShowScrollBottleneckRects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotsetShowViewportSizeOnResize(value: `140`): Self = StObject.set(x, "Overlay.setShowViewportSizeOnResize", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowViewportSizeOnResize(value: `140`): Self = StObject.set(x, "Overlay.setShowViewportSizeOnResize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotaddCompilationCache(value: `163`): Self = StObject.set(x, "Page.addCompilationCache", value.asInstanceOf[js.Any])
+        inline def setPageDotaddCompilationCache(value: `163`): Self = StObject.set(x, "Page.addCompilationCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotaddScriptToEvaluateOnLoad(value: ReturnTypeAddScriptToEvaluateOnLoadResponse): Self = StObject.set(x, "Page.addScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
+        inline def setPageDotaddScriptToEvaluateOnLoad(value: ReturnTypeAddScriptToEvaluateOnLoadResponse): Self = StObject.set(x, "Page.addScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotaddScriptToEvaluateOnNewDocument(value: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse): Self = StObject.set(x, "Page.addScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
+        inline def setPageDotaddScriptToEvaluateOnNewDocument(value: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse): Self = StObject.set(x, "Page.addScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotbringToFront(value: ParamsType): Self = StObject.set(x, "Page.bringToFront", value.asInstanceOf[js.Any])
+        inline def setPageDotbringToFront(value: ParamsType): Self = StObject.set(x, "Page.bringToFront", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotcaptureScreenshot(value: ReturnTypeCaptureScreenshotResponse): Self = StObject.set(x, "Page.captureScreenshot", value.asInstanceOf[js.Any])
+        inline def setPageDotcaptureScreenshot(value: ReturnTypeCaptureScreenshotResponse): Self = StObject.set(x, "Page.captureScreenshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotcaptureSnapshot(value: ParamsTypeReturnTypeCaptureSnapshotResponse): Self = StObject.set(x, "Page.captureSnapshot", value.asInstanceOf[js.Any])
+        inline def setPageDotcaptureSnapshot(value: ParamsTypeReturnTypeCaptureSnapshotResponse): Self = StObject.set(x, "Page.captureSnapshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotclearCompilationCache(value: ParamsType): Self = StObject.set(x, "Page.clearCompilationCache", value.asInstanceOf[js.Any])
+        inline def setPageDotclearCompilationCache(value: ParamsType): Self = StObject.set(x, "Page.clearCompilationCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotclearDeviceMetricsOverride(value: ParamsType): Self = StObject.set(x, "Page.clearDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotclearDeviceMetricsOverride(value: ParamsType): Self = StObject.set(x, "Page.clearDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotclearDeviceOrientationOverride(value: ParamsType): Self = StObject.set(x, "Page.clearDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotclearDeviceOrientationOverride(value: ParamsType): Self = StObject.set(x, "Page.clearDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotclearGeolocationOverride(value: ParamsType): Self = StObject.set(x, "Page.clearGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotclearGeolocationOverride(value: ParamsType): Self = StObject.set(x, "Page.clearGeolocationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotclose(value: ParamsType): Self = StObject.set(x, "Page.close", value.asInstanceOf[js.Any])
+        inline def setPageDotclose(value: ParamsType): Self = StObject.set(x, "Page.close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotcrash(value: ParamsType): Self = StObject.set(x, "Page.crash", value.asInstanceOf[js.Any])
+        inline def setPageDotcrash(value: ParamsType): Self = StObject.set(x, "Page.crash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotcreateIsolatedWorld(value: ReturnTypeCreateIsolatedWorldResponse): Self = StObject.set(x, "Page.createIsolatedWorld", value.asInstanceOf[js.Any])
+        inline def setPageDotcreateIsolatedWorld(value: ReturnTypeCreateIsolatedWorldResponse): Self = StObject.set(x, "Page.createIsolatedWorld", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotdeleteCookie(value: `142`): Self = StObject.set(x, "Page.deleteCookie", value.asInstanceOf[js.Any])
+        inline def setPageDotdeleteCookie(value: `142`): Self = StObject.set(x, "Page.deleteCookie", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotdisable(value: ParamsType): Self = StObject.set(x, "Page.disable", value.asInstanceOf[js.Any])
+        inline def setPageDotdisable(value: ParamsType): Self = StObject.set(x, "Page.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotenable(value: ParamsType): Self = StObject.set(x, "Page.enable", value.asInstanceOf[js.Any])
+        inline def setPageDotenable(value: ParamsType): Self = StObject.set(x, "Page.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgenerateTestReport(value: `164`): Self = StObject.set(x, "Page.generateTestReport", value.asInstanceOf[js.Any])
+        inline def setPageDotgenerateTestReport(value: `164`): Self = StObject.set(x, "Page.generateTestReport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetAppManifest(value: ReturnTypeGetAppManifestResponse): Self = StObject.set(x, "Page.getAppManifest", value.asInstanceOf[js.Any])
+        inline def setPageDotgetAppManifest(value: ReturnTypeGetAppManifestResponse): Self = StObject.set(x, "Page.getAppManifest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetCookies(value: ParamsTypeReturnTypeGetCookiesResponse): Self = StObject.set(x, "Page.getCookies", value.asInstanceOf[js.Any])
+        inline def setPageDotgetCookies(value: ParamsTypeReturnTypeGetCookiesResponse): Self = StObject.set(x, "Page.getCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetFrameTree(value: ReturnTypeGetFrameTreeResponse): Self = StObject.set(x, "Page.getFrameTree", value.asInstanceOf[js.Any])
+        inline def setPageDotgetFrameTree(value: ReturnTypeGetFrameTreeResponse): Self = StObject.set(x, "Page.getFrameTree", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetInstallabilityErrors(value: ReturnTypeGetInstallabilityErrorsResponse): Self = StObject.set(x, "Page.getInstallabilityErrors", value.asInstanceOf[js.Any])
+        inline def setPageDotgetInstallabilityErrors(value: ReturnTypeGetInstallabilityErrorsResponse): Self = StObject.set(x, "Page.getInstallabilityErrors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetLayoutMetrics(value: ReturnTypeGetLayoutMetricsResponse): Self = StObject.set(x, "Page.getLayoutMetrics", value.asInstanceOf[js.Any])
+        inline def setPageDotgetLayoutMetrics(value: ReturnTypeGetLayoutMetricsResponse): Self = StObject.set(x, "Page.getLayoutMetrics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetManifestIcons(value: ReturnTypeGetManifestIconsResponse): Self = StObject.set(x, "Page.getManifestIcons", value.asInstanceOf[js.Any])
+        inline def setPageDotgetManifestIcons(value: ReturnTypeGetManifestIconsResponse): Self = StObject.set(x, "Page.getManifestIcons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetNavigationHistory(value: ReturnTypeGetNavigationHistoryResponse): Self = StObject.set(x, "Page.getNavigationHistory", value.asInstanceOf[js.Any])
+        inline def setPageDotgetNavigationHistory(value: ReturnTypeGetNavigationHistoryResponse): Self = StObject.set(x, "Page.getNavigationHistory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetResourceContent(value: ReturnTypeGetResourceContentResponse): Self = StObject.set(x, "Page.getResourceContent", value.asInstanceOf[js.Any])
+        inline def setPageDotgetResourceContent(value: ReturnTypeGetResourceContentResponse): Self = StObject.set(x, "Page.getResourceContent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotgetResourceTree(value: ReturnTypeGetResourceTreeResponse): Self = StObject.set(x, "Page.getResourceTree", value.asInstanceOf[js.Any])
+        inline def setPageDotgetResourceTree(value: ReturnTypeGetResourceTreeResponse): Self = StObject.set(x, "Page.getResourceTree", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDothandleJavaScriptDialog(value: `143`): Self = StObject.set(x, "Page.handleJavaScriptDialog", value.asInstanceOf[js.Any])
+        inline def setPageDothandleJavaScriptDialog(value: `143`): Self = StObject.set(x, "Page.handleJavaScriptDialog", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotnavigate(value: ReturnTypeNavigateResponse): Self = StObject.set(x, "Page.navigate", value.asInstanceOf[js.Any])
+        inline def setPageDotnavigate(value: ReturnTypeNavigateResponse): Self = StObject.set(x, "Page.navigate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotnavigateToHistoryEntry(value: `144`): Self = StObject.set(x, "Page.navigateToHistoryEntry", value.asInstanceOf[js.Any])
+        inline def setPageDotnavigateToHistoryEntry(value: `144`): Self = StObject.set(x, "Page.navigateToHistoryEntry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotprintToPDF(value: ReturnTypePrintToPDFResponse): Self = StObject.set(x, "Page.printToPDF", value.asInstanceOf[js.Any])
+        inline def setPageDotprintToPDF(value: ReturnTypePrintToPDFResponse): Self = StObject.set(x, "Page.printToPDF", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotreload(value: `145`): Self = StObject.set(x, "Page.reload", value.asInstanceOf[js.Any])
+        inline def setPageDotreload(value: `145`): Self = StObject.set(x, "Page.reload", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotremoveScriptToEvaluateOnLoad(value: `146`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
+        inline def setPageDotremoveScriptToEvaluateOnLoad(value: `146`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotremoveScriptToEvaluateOnNewDocument(value: `147`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
+        inline def setPageDotremoveScriptToEvaluateOnNewDocument(value: `147`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotresetNavigationHistory(value: ParamsType): Self = StObject.set(x, "Page.resetNavigationHistory", value.asInstanceOf[js.Any])
+        inline def setPageDotresetNavigationHistory(value: ParamsType): Self = StObject.set(x, "Page.resetNavigationHistory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotscreencastFrameAck(value: `148`): Self = StObject.set(x, "Page.screencastFrameAck", value.asInstanceOf[js.Any])
+        inline def setPageDotscreencastFrameAck(value: `148`): Self = StObject.set(x, "Page.screencastFrameAck", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsearchInResource(value: ReturnTypeSearchInResourceResponse): Self = StObject.set(x, "Page.searchInResource", value.asInstanceOf[js.Any])
+        inline def setPageDotsearchInResource(value: ReturnTypeSearchInResourceResponse): Self = StObject.set(x, "Page.searchInResource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetAdBlockingEnabled(value: `149`): Self = StObject.set(x, "Page.setAdBlockingEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetAdBlockingEnabled(value: `149`): Self = StObject.set(x, "Page.setAdBlockingEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetBypassCSP(value: `150`): Self = StObject.set(x, "Page.setBypassCSP", value.asInstanceOf[js.Any])
+        inline def setPageDotsetBypassCSP(value: `150`): Self = StObject.set(x, "Page.setBypassCSP", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetDeviceMetricsOverride(value: `151`): Self = StObject.set(x, "Page.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDeviceMetricsOverride(value: `151`): Self = StObject.set(x, "Page.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetDeviceOrientationOverride(value: `152`): Self = StObject.set(x, "Page.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDeviceOrientationOverride(value: `152`): Self = StObject.set(x, "Page.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetDocumentContent(value: `155`): Self = StObject.set(x, "Page.setDocumentContent", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDocumentContent(value: `155`): Self = StObject.set(x, "Page.setDocumentContent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetDownloadBehavior(value: `156`): Self = StObject.set(x, "Page.setDownloadBehavior", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDownloadBehavior(value: `156`): Self = StObject.set(x, "Page.setDownloadBehavior", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetFontFamilies(value: `153`): Self = StObject.set(x, "Page.setFontFamilies", value.asInstanceOf[js.Any])
+        inline def setPageDotsetFontFamilies(value: `153`): Self = StObject.set(x, "Page.setFontFamilies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetFontSizes(value: `154`): Self = StObject.set(x, "Page.setFontSizes", value.asInstanceOf[js.Any])
+        inline def setPageDotsetFontSizes(value: `154`): Self = StObject.set(x, "Page.setFontSizes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetGeolocationOverride(value: `157`): Self = StObject.set(x, "Page.setGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetGeolocationOverride(value: `157`): Self = StObject.set(x, "Page.setGeolocationOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetInterceptFileChooserDialog(value: `165`): Self = StObject.set(x, "Page.setInterceptFileChooserDialog", value.asInstanceOf[js.Any])
+        inline def setPageDotsetInterceptFileChooserDialog(value: `165`): Self = StObject.set(x, "Page.setInterceptFileChooserDialog", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetLifecycleEventsEnabled(value: `158`): Self = StObject.set(x, "Page.setLifecycleEventsEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetLifecycleEventsEnabled(value: `158`): Self = StObject.set(x, "Page.setLifecycleEventsEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetProduceCompilationCache(value: `162`): Self = StObject.set(x, "Page.setProduceCompilationCache", value.asInstanceOf[js.Any])
+        inline def setPageDotsetProduceCompilationCache(value: `162`): Self = StObject.set(x, "Page.setProduceCompilationCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetTouchEmulationEnabled(value: `159`): Self = StObject.set(x, "Page.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetTouchEmulationEnabled(value: `159`): Self = StObject.set(x, "Page.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotsetWebLifecycleState(value: `161`): Self = StObject.set(x, "Page.setWebLifecycleState", value.asInstanceOf[js.Any])
+        inline def setPageDotsetWebLifecycleState(value: `161`): Self = StObject.set(x, "Page.setWebLifecycleState", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotstartScreencast(value: `160`): Self = StObject.set(x, "Page.startScreencast", value.asInstanceOf[js.Any])
+        inline def setPageDotstartScreencast(value: `160`): Self = StObject.set(x, "Page.startScreencast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotstopLoading(value: ParamsType): Self = StObject.set(x, "Page.stopLoading", value.asInstanceOf[js.Any])
+        inline def setPageDotstopLoading(value: ParamsType): Self = StObject.set(x, "Page.stopLoading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotstopScreencast(value: ParamsType): Self = StObject.set(x, "Page.stopScreencast", value.asInstanceOf[js.Any])
+        inline def setPageDotstopScreencast(value: ParamsType): Self = StObject.set(x, "Page.stopScreencast", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotwaitForDebugger(value: ParamsType): Self = StObject.set(x, "Page.waitForDebugger", value.asInstanceOf[js.Any])
+        inline def setPageDotwaitForDebugger(value: ParamsType): Self = StObject.set(x, "Page.waitForDebugger", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPerformanceDotdisable(value: ParamsType): Self = StObject.set(x, "Performance.disable", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotdisable(value: ParamsType): Self = StObject.set(x, "Performance.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPerformanceDotenable(value: `166`): Self = StObject.set(x, "Performance.enable", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotenable(value: `166`): Self = StObject.set(x, "Performance.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPerformanceDotgetMetrics(value: ReturnTypeGetMetricsResponse): Self = StObject.set(x, "Performance.getMetrics", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotgetMetrics(value: ReturnTypeGetMetricsResponse): Self = StObject.set(x, "Performance.getMetrics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPerformanceDotsetTimeDomain(value: `167`): Self = StObject.set(x, "Performance.setTimeDomain", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotsetTimeDomain(value: `167`): Self = StObject.set(x, "Performance.setTimeDomain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotdisable(value: ParamsType): Self = StObject.set(x, "Profiler.disable", value.asInstanceOf[js.Any])
+        inline def setProfilerDotdisable(value: ParamsType): Self = StObject.set(x, "Profiler.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotdisableCounters(value: ParamsType): Self = StObject.set(x, "Profiler.disableCounters", value.asInstanceOf[js.Any])
+        inline def setProfilerDotdisableCounters(value: ParamsType): Self = StObject.set(x, "Profiler.disableCounters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotdisableRuntimeCallStats(value: ParamsType): Self = StObject.set(x, "Profiler.disableRuntimeCallStats", value.asInstanceOf[js.Any])
+        inline def setProfilerDotdisableRuntimeCallStats(value: ParamsType): Self = StObject.set(x, "Profiler.disableRuntimeCallStats", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotenable(value: ParamsType): Self = StObject.set(x, "Profiler.enable", value.asInstanceOf[js.Any])
+        inline def setProfilerDotenable(value: ParamsType): Self = StObject.set(x, "Profiler.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotenableCounters(value: ParamsType): Self = StObject.set(x, "Profiler.enableCounters", value.asInstanceOf[js.Any])
+        inline def setProfilerDotenableCounters(value: ParamsType): Self = StObject.set(x, "Profiler.enableCounters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotenableRuntimeCallStats(value: ParamsType): Self = StObject.set(x, "Profiler.enableRuntimeCallStats", value.asInstanceOf[js.Any])
+        inline def setProfilerDotenableRuntimeCallStats(value: ParamsType): Self = StObject.set(x, "Profiler.enableRuntimeCallStats", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotgetBestEffortCoverage(value: ReturnTypeGetBestEffortCoverageResponse): Self = StObject.set(x, "Profiler.getBestEffortCoverage", value.asInstanceOf[js.Any])
+        inline def setProfilerDotgetBestEffortCoverage(value: ReturnTypeGetBestEffortCoverageResponse): Self = StObject.set(x, "Profiler.getBestEffortCoverage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotgetCounters(value: ReturnTypeGetCountersResponse): Self = StObject.set(x, "Profiler.getCounters", value.asInstanceOf[js.Any])
+        inline def setProfilerDotgetCounters(value: ReturnTypeGetCountersResponse): Self = StObject.set(x, "Profiler.getCounters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotgetRuntimeCallStats(value: ReturnTypeGetRuntimeCallStatsResponse): Self = StObject.set(x, "Profiler.getRuntimeCallStats", value.asInstanceOf[js.Any])
+        inline def setProfilerDotgetRuntimeCallStats(value: ReturnTypeGetRuntimeCallStatsResponse): Self = StObject.set(x, "Profiler.getRuntimeCallStats", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotsetSamplingInterval(value: `16`): Self = StObject.set(x, "Profiler.setSamplingInterval", value.asInstanceOf[js.Any])
+        inline def setProfilerDotsetSamplingInterval(value: `16`): Self = StObject.set(x, "Profiler.setSamplingInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotstart(value: ParamsType): Self = StObject.set(x, "Profiler.start", value.asInstanceOf[js.Any])
+        inline def setProfilerDotstart(value: ParamsType): Self = StObject.set(x, "Profiler.start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotstartPreciseCoverage(value: ReturnTypeStartPreciseCoverageResponse): Self = StObject.set(x, "Profiler.startPreciseCoverage", value.asInstanceOf[js.Any])
+        inline def setProfilerDotstartPreciseCoverage(value: ReturnTypeStartPreciseCoverageResponse): Self = StObject.set(x, "Profiler.startPreciseCoverage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotstartTypeProfile(value: ParamsType): Self = StObject.set(x, "Profiler.startTypeProfile", value.asInstanceOf[js.Any])
+        inline def setProfilerDotstartTypeProfile(value: ParamsType): Self = StObject.set(x, "Profiler.startTypeProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotstop(value: ReturnTypeStopResponse): Self = StObject.set(x, "Profiler.stop", value.asInstanceOf[js.Any])
+        inline def setProfilerDotstop(value: ReturnTypeStopResponse): Self = StObject.set(x, "Profiler.stop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotstopPreciseCoverage(value: ParamsType): Self = StObject.set(x, "Profiler.stopPreciseCoverage", value.asInstanceOf[js.Any])
+        inline def setProfilerDotstopPreciseCoverage(value: ParamsType): Self = StObject.set(x, "Profiler.stopPreciseCoverage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotstopTypeProfile(value: ParamsType): Self = StObject.set(x, "Profiler.stopTypeProfile", value.asInstanceOf[js.Any])
+        inline def setProfilerDotstopTypeProfile(value: ParamsType): Self = StObject.set(x, "Profiler.stopTypeProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDottakePreciseCoverage(value: ReturnTypeTakePreciseCoverageResponse): Self = StObject.set(x, "Profiler.takePreciseCoverage", value.asInstanceOf[js.Any])
+        inline def setProfilerDottakePreciseCoverage(value: ReturnTypeTakePreciseCoverageResponse): Self = StObject.set(x, "Profiler.takePreciseCoverage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDottakeTypeProfile(value: ReturnTypeTakeTypeProfileResponse): Self = StObject.set(x, "Profiler.takeTypeProfile", value.asInstanceOf[js.Any])
+        inline def setProfilerDottakeTypeProfile(value: ReturnTypeTakeTypeProfileResponse): Self = StObject.set(x, "Profiler.takeTypeProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotaddBinding(value: `22`): Self = StObject.set(x, "Runtime.addBinding", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotaddBinding(value: `22`): Self = StObject.set(x, "Runtime.addBinding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotawaitPromise(value: ReturnTypeAwaitPromiseResponse): Self = StObject.set(x, "Runtime.awaitPromise", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotawaitPromise(value: ReturnTypeAwaitPromiseResponse): Self = StObject.set(x, "Runtime.awaitPromise", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotcallFunctionOn(value: ReturnTypeCallFunctionOnResponse): Self = StObject.set(x, "Runtime.callFunctionOn", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotcallFunctionOn(value: ReturnTypeCallFunctionOnResponse): Self = StObject.set(x, "Runtime.callFunctionOn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotcompileScript(value: ReturnTypeCompileScriptResponse): Self = StObject.set(x, "Runtime.compileScript", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotcompileScript(value: ReturnTypeCompileScriptResponse): Self = StObject.set(x, "Runtime.compileScript", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotdisable(value: ParamsType): Self = StObject.set(x, "Runtime.disable", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotdisable(value: ParamsType): Self = StObject.set(x, "Runtime.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotdiscardConsoleEntries(value: ParamsType): Self = StObject.set(x, "Runtime.discardConsoleEntries", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotdiscardConsoleEntries(value: ParamsType): Self = StObject.set(x, "Runtime.discardConsoleEntries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotenable(value: ParamsType): Self = StObject.set(x, "Runtime.enable", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotenable(value: ParamsType): Self = StObject.set(x, "Runtime.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotevaluate(value: ReturnTypeEvaluateResponse): Self = StObject.set(x, "Runtime.evaluate", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotevaluate(value: ReturnTypeEvaluateResponse): Self = StObject.set(x, "Runtime.evaluate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotgetHeapUsage(value: ReturnTypeGetHeapUsageResponse): Self = StObject.set(x, "Runtime.getHeapUsage", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotgetHeapUsage(value: ReturnTypeGetHeapUsageResponse): Self = StObject.set(x, "Runtime.getHeapUsage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotgetIsolateId(value: ReturnTypeGetIsolateIdResponse): Self = StObject.set(x, "Runtime.getIsolateId", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotgetIsolateId(value: ReturnTypeGetIsolateIdResponse): Self = StObject.set(x, "Runtime.getIsolateId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotgetProperties(value: ReturnTypeGetPropertiesResponse): Self = StObject.set(x, "Runtime.getProperties", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotgetProperties(value: ReturnTypeGetPropertiesResponse): Self = StObject.set(x, "Runtime.getProperties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotglobalLexicalScopeNames(value: ReturnTypeGlobalLexicalScopeNamesResponse): Self = StObject.set(x, "Runtime.globalLexicalScopeNames", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotglobalLexicalScopeNames(value: ReturnTypeGlobalLexicalScopeNamesResponse): Self = StObject.set(x, "Runtime.globalLexicalScopeNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotqueryObjects(value: ReturnTypeQueryObjectsResponse): Self = StObject.set(x, "Runtime.queryObjects", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotqueryObjects(value: ReturnTypeQueryObjectsResponse): Self = StObject.set(x, "Runtime.queryObjects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotreleaseObject(value: `17`): Self = StObject.set(x, "Runtime.releaseObject", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotreleaseObject(value: `17`): Self = StObject.set(x, "Runtime.releaseObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotreleaseObjectGroup(value: `18`): Self = StObject.set(x, "Runtime.releaseObjectGroup", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotreleaseObjectGroup(value: `18`): Self = StObject.set(x, "Runtime.releaseObjectGroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotremoveBinding(value: `23`): Self = StObject.set(x, "Runtime.removeBinding", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotremoveBinding(value: `23`): Self = StObject.set(x, "Runtime.removeBinding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotrunIfWaitingForDebugger(value: ParamsType): Self = StObject.set(x, "Runtime.runIfWaitingForDebugger", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotrunIfWaitingForDebugger(value: ParamsType): Self = StObject.set(x, "Runtime.runIfWaitingForDebugger", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotrunScript(value: ReturnTypeRunScriptResponse): Self = StObject.set(x, "Runtime.runScript", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotrunScript(value: ReturnTypeRunScriptResponse): Self = StObject.set(x, "Runtime.runScript", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotsetAsyncCallStackDepth(value: `19`): Self = StObject.set(x, "Runtime.setAsyncCallStackDepth", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotsetAsyncCallStackDepth(value: `19`): Self = StObject.set(x, "Runtime.setAsyncCallStackDepth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotsetCustomObjectFormatterEnabled(value: `20`): Self = StObject.set(x, "Runtime.setCustomObjectFormatterEnabled", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotsetCustomObjectFormatterEnabled(value: `20`): Self = StObject.set(x, "Runtime.setCustomObjectFormatterEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotsetMaxCallStackSizeToCapture(value: `21`): Self = StObject.set(x, "Runtime.setMaxCallStackSizeToCapture", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotsetMaxCallStackSizeToCapture(value: `21`): Self = StObject.set(x, "Runtime.setMaxCallStackSizeToCapture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotterminateExecution(value: ParamsType): Self = StObject.set(x, "Runtime.terminateExecution", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotterminateExecution(value: ParamsType): Self = StObject.set(x, "Runtime.terminateExecution", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchemaDotgetDomains(value: ReturnTypeGetDomainsResponse): Self = StObject.set(x, "Schema.getDomains", value.asInstanceOf[js.Any])
+        inline def setSchemaDotgetDomains(value: ReturnTypeGetDomainsResponse): Self = StObject.set(x, "Schema.getDomains", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDotdisable(value: ParamsType): Self = StObject.set(x, "Security.disable", value.asInstanceOf[js.Any])
+        inline def setSecurityDotdisable(value: ParamsType): Self = StObject.set(x, "Security.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDotenable(value: ParamsType): Self = StObject.set(x, "Security.enable", value.asInstanceOf[js.Any])
+        inline def setSecurityDotenable(value: ParamsType): Self = StObject.set(x, "Security.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDothandleCertificateError(value: `169`): Self = StObject.set(x, "Security.handleCertificateError", value.asInstanceOf[js.Any])
+        inline def setSecurityDothandleCertificateError(value: `169`): Self = StObject.set(x, "Security.handleCertificateError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDotsetIgnoreCertificateErrors(value: `168`): Self = StObject.set(x, "Security.setIgnoreCertificateErrors", value.asInstanceOf[js.Any])
+        inline def setSecurityDotsetIgnoreCertificateErrors(value: `168`): Self = StObject.set(x, "Security.setIgnoreCertificateErrors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDotsetOverrideCertificateErrors(value: `170`): Self = StObject.set(x, "Security.setOverrideCertificateErrors", value.asInstanceOf[js.Any])
+        inline def setSecurityDotsetOverrideCertificateErrors(value: `170`): Self = StObject.set(x, "Security.setOverrideCertificateErrors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotdeliverPushMessage(value: `171`): Self = StObject.set(x, "ServiceWorker.deliverPushMessage", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdeliverPushMessage(value: `171`): Self = StObject.set(x, "ServiceWorker.deliverPushMessage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotdisable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.disable", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdisable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotdispatchPeriodicSyncEvent(value: `173`): Self = StObject.set(x, "ServiceWorker.dispatchPeriodicSyncEvent", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdispatchPeriodicSyncEvent(value: `173`): Self = StObject.set(x, "ServiceWorker.dispatchPeriodicSyncEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotdispatchSyncEvent(value: `172`): Self = StObject.set(x, "ServiceWorker.dispatchSyncEvent", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdispatchSyncEvent(value: `172`): Self = StObject.set(x, "ServiceWorker.dispatchSyncEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotenable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.enable", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotenable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotinspectWorker(value: `174`): Self = StObject.set(x, "ServiceWorker.inspectWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotinspectWorker(value: `174`): Self = StObject.set(x, "ServiceWorker.inspectWorker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotsetForceUpdateOnPageLoad(value: `175`): Self = StObject.set(x, "ServiceWorker.setForceUpdateOnPageLoad", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotsetForceUpdateOnPageLoad(value: `175`): Self = StObject.set(x, "ServiceWorker.setForceUpdateOnPageLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotskipWaiting(value: `176`): Self = StObject.set(x, "ServiceWorker.skipWaiting", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotskipWaiting(value: `176`): Self = StObject.set(x, "ServiceWorker.skipWaiting", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotstartWorker(value: `177`): Self = StObject.set(x, "ServiceWorker.startWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotstartWorker(value: `177`): Self = StObject.set(x, "ServiceWorker.startWorker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotstopAllWorkers(value: ParamsType): Self = StObject.set(x, "ServiceWorker.stopAllWorkers", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotstopAllWorkers(value: ParamsType): Self = StObject.set(x, "ServiceWorker.stopAllWorkers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotstopWorker(value: `178`): Self = StObject.set(x, "ServiceWorker.stopWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotstopWorker(value: `178`): Self = StObject.set(x, "ServiceWorker.stopWorker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotunregister(value: `179`): Self = StObject.set(x, "ServiceWorker.unregister", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotunregister(value: `179`): Self = StObject.set(x, "ServiceWorker.unregister", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotupdateRegistration(value: `180`): Self = StObject.set(x, "ServiceWorker.updateRegistration", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotupdateRegistration(value: `180`): Self = StObject.set(x, "ServiceWorker.updateRegistration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotclearCookies(value: `184`): Self = StObject.set(x, "Storage.clearCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearCookies(value: `184`): Self = StObject.set(x, "Storage.clearCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotclearDataForOrigin(value: `181`): Self = StObject.set(x, "Storage.clearDataForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearDataForOrigin(value: `181`): Self = StObject.set(x, "Storage.clearDataForOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotgetCookies(value: `182`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotgetCookies(value: `182`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotgetUsageAndQuota(value: ReturnTypeGetUsageAndQuotaResponse): Self = StObject.set(x, "Storage.getUsageAndQuota", value.asInstanceOf[js.Any])
+        inline def setStorageDotgetUsageAndQuota(value: ReturnTypeGetUsageAndQuotaResponse): Self = StObject.set(x, "Storage.getUsageAndQuota", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotoverrideQuotaForOrigin(value: `185`): Self = StObject.set(x, "Storage.overrideQuotaForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotoverrideQuotaForOrigin(value: `185`): Self = StObject.set(x, "Storage.overrideQuotaForOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotsetCookies(value: `183`): Self = StObject.set(x, "Storage.setCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetCookies(value: `183`): Self = StObject.set(x, "Storage.setCookies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDottrackCacheStorageForOrigin(value: `186`): Self = StObject.set(x, "Storage.trackCacheStorageForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackCacheStorageForOrigin(value: `186`): Self = StObject.set(x, "Storage.trackCacheStorageForOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDottrackIndexedDBForOrigin(value: `187`): Self = StObject.set(x, "Storage.trackIndexedDBForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackIndexedDBForOrigin(value: `187`): Self = StObject.set(x, "Storage.trackIndexedDBForOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotuntrackCacheStorageForOrigin(value: `188`): Self = StObject.set(x, "Storage.untrackCacheStorageForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotuntrackCacheStorageForOrigin(value: `188`): Self = StObject.set(x, "Storage.untrackCacheStorageForOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotuntrackIndexedDBForOrigin(value: `189`): Self = StObject.set(x, "Storage.untrackIndexedDBForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotuntrackIndexedDBForOrigin(value: `189`): Self = StObject.set(x, "Storage.untrackIndexedDBForOrigin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSystemInfoDotgetInfo(value: ReturnTypeGetInfoResponse): Self = StObject.set(x, "SystemInfo.getInfo", value.asInstanceOf[js.Any])
+        inline def setSystemInfoDotgetInfo(value: ReturnTypeGetInfoResponse): Self = StObject.set(x, "SystemInfo.getInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSystemInfoDotgetProcessInfo(value: ReturnTypeGetProcessInfoResponse): Self = StObject.set(x, "SystemInfo.getProcessInfo", value.asInstanceOf[js.Any])
+        inline def setSystemInfoDotgetProcessInfo(value: ReturnTypeGetProcessInfoResponse): Self = StObject.set(x, "SystemInfo.getProcessInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotactivateTarget(value: `190`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotactivateTarget(value: `190`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotattachToBrowserTarget(value: ReturnTypeAttachToBrowserTargetResponse): Self = StObject.set(x, "Target.attachToBrowserTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotattachToBrowserTarget(value: ReturnTypeAttachToBrowserTargetResponse): Self = StObject.set(x, "Target.attachToBrowserTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotattachToTarget(value: ReturnTypeAttachToTargetResponse): Self = StObject.set(x, "Target.attachToTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotattachToTarget(value: ReturnTypeAttachToTargetResponse): Self = StObject.set(x, "Target.attachToTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotcloseTarget(value: ReturnTypeCloseTargetResponse): Self = StObject.set(x, "Target.closeTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotcloseTarget(value: ReturnTypeCloseTargetResponse): Self = StObject.set(x, "Target.closeTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotcreateBrowserContext(value: ReturnTypeCreateBrowserContextResponse): Self = StObject.set(x, "Target.createBrowserContext", value.asInstanceOf[js.Any])
+        inline def setTargetDotcreateBrowserContext(value: ReturnTypeCreateBrowserContextResponse): Self = StObject.set(x, "Target.createBrowserContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotcreateTarget(value: ReturnTypeCreateTargetResponse): Self = StObject.set(x, "Target.createTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotcreateTarget(value: ReturnTypeCreateTargetResponse): Self = StObject.set(x, "Target.createTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotdetachFromTarget(value: `192`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotdetachFromTarget(value: `192`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotdisposeBrowserContext(value: `193`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
+        inline def setTargetDotdisposeBrowserContext(value: `193`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotexposeDevToolsProtocol(value: `191`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
+        inline def setTargetDotexposeDevToolsProtocol(value: `191`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotgetBrowserContexts(value: ReturnTypeGetBrowserContextsResponse): Self = StObject.set(x, "Target.getBrowserContexts", value.asInstanceOf[js.Any])
+        inline def setTargetDotgetBrowserContexts(value: ReturnTypeGetBrowserContextsResponse): Self = StObject.set(x, "Target.getBrowserContexts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotgetTargetInfo(value: ReturnTypeGetTargetInfoResponse): Self = StObject.set(x, "Target.getTargetInfo", value.asInstanceOf[js.Any])
+        inline def setTargetDotgetTargetInfo(value: ReturnTypeGetTargetInfoResponse): Self = StObject.set(x, "Target.getTargetInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotgetTargets(value: ReturnTypeGetTargetsResponse): Self = StObject.set(x, "Target.getTargets", value.asInstanceOf[js.Any])
+        inline def setTargetDotgetTargets(value: ReturnTypeGetTargetsResponse): Self = StObject.set(x, "Target.getTargets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotsendMessageToTarget(value: `194`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotsendMessageToTarget(value: `194`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotsetAutoAttach(value: `195`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetAutoAttach(value: `195`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotsetDiscoverTargets(value: `196`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetDiscoverTargets(value: `196`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotsetRemoteLocations(value: `197`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetRemoteLocations(value: `197`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTetheringDotbind(value: `198`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotbind(value: `198`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTetheringDotunbind(value: `199`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotunbind(value: `199`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDotend(value: ParamsType): Self = StObject.set(x, "Tracing.end", value.asInstanceOf[js.Any])
+        inline def setTracingDotend(value: ParamsType): Self = StObject.set(x, "Tracing.end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDotgetCategories(value: ReturnTypeGetCategoriesResponse): Self = StObject.set(x, "Tracing.getCategories", value.asInstanceOf[js.Any])
+        inline def setTracingDotgetCategories(value: ReturnTypeGetCategoriesResponse): Self = StObject.set(x, "Tracing.getCategories", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDotrecordClockSyncMarker(value: `200`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
+        inline def setTracingDotrecordClockSyncMarker(value: `200`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDotrequestMemoryDump(value: ReturnTypeRequestMemoryDumpResponse): Self = StObject.set(x, "Tracing.requestMemoryDump", value.asInstanceOf[js.Any])
+        inline def setTracingDotrequestMemoryDump(value: ReturnTypeRequestMemoryDumpResponse): Self = StObject.set(x, "Tracing.requestMemoryDump", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDotstart(value: `201`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
+        inline def setTracingDotstart(value: `201`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotdisable(value: ParamsType): Self = StObject.set(x, "WebAudio.disable", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotdisable(value: ParamsType): Self = StObject.set(x, "WebAudio.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotenable(value: ParamsType): Self = StObject.set(x, "WebAudio.enable", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotenable(value: ParamsType): Self = StObject.set(x, "WebAudio.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotgetRealtimeData(value: ReturnTypeGetRealtimeDataResponse): Self = StObject.set(x, "WebAudio.getRealtimeData", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotgetRealtimeData(value: ReturnTypeGetRealtimeDataResponse): Self = StObject.set(x, "WebAudio.getRealtimeData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotaddCredential(value: `208`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotaddCredential(value: `208`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotaddVirtualAuthenticator(value: ReturnTypeAddVirtualAuthenticatorResponse): Self = StObject.set(x, "WebAuthn.addVirtualAuthenticator", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotaddVirtualAuthenticator(value: ReturnTypeAddVirtualAuthenticatorResponse): Self = StObject.set(x, "WebAuthn.addVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotclearCredentials(value: `210`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotclearCredentials(value: `210`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotdisable(value: ParamsType): Self = StObject.set(x, "WebAuthn.disable", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotdisable(value: ParamsType): Self = StObject.set(x, "WebAuthn.disable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotenable(value: ParamsType): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotenable(value: ParamsType): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotgetCredential(value: ReturnTypeGetCredentialResponse): Self = StObject.set(x, "WebAuthn.getCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotgetCredential(value: ReturnTypeGetCredentialResponse): Self = StObject.set(x, "WebAuthn.getCredential", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotgetCredentials(value: ReturnTypeGetCredentialsResponse): Self = StObject.set(x, "WebAuthn.getCredentials", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotgetCredentials(value: ReturnTypeGetCredentialsResponse): Self = StObject.set(x, "WebAuthn.getCredentials", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotremoveCredential(value: `209`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveCredential(value: `209`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotremoveVirtualAuthenticator(value: `207`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `207`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotsetAutomaticPresenceSimulation(value: `212`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `212`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAuthnDotsetUserVerified(value: `211`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetUserVerified(value: `211`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
       }
     }
     
@@ -6470,8 +5970,7 @@ object protocolMappingMod {
     }
     object Events {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         AnimationDotanimationCanceled: js.Array[AnimationCanceledEvent],
         AnimationDotanimationCreated: js.Array[AnimationCreatedEvent],
         AnimationDotanimationStarted: js.Array[AnimationStartedEvent],
@@ -6783,926 +6282,619 @@ object protocolMappingMod {
         __obj.asInstanceOf[Events]
       }
       
-      @scala.inline
-      implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+      extension [Self <: Events](x: Self) {
         
-        @scala.inline
-        def setAnimationDotanimationCanceled(value: js.Array[AnimationCanceledEvent]): Self = StObject.set(x, "Animation.animationCanceled", value.asInstanceOf[js.Any])
+        inline def setAnimationDotanimationCanceled(value: js.Array[AnimationCanceledEvent]): Self = StObject.set(x, "Animation.animationCanceled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotanimationCanceledVarargs(value: AnimationCanceledEvent*): Self = StObject.set(x, "Animation.animationCanceled", js.Array(value :_*))
+        inline def setAnimationDotanimationCanceledVarargs(value: AnimationCanceledEvent*): Self = StObject.set(x, "Animation.animationCanceled", js.Array(value :_*))
         
-        @scala.inline
-        def setAnimationDotanimationCreated(value: js.Array[AnimationCreatedEvent]): Self = StObject.set(x, "Animation.animationCreated", value.asInstanceOf[js.Any])
+        inline def setAnimationDotanimationCreated(value: js.Array[AnimationCreatedEvent]): Self = StObject.set(x, "Animation.animationCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotanimationCreatedVarargs(value: AnimationCreatedEvent*): Self = StObject.set(x, "Animation.animationCreated", js.Array(value :_*))
+        inline def setAnimationDotanimationCreatedVarargs(value: AnimationCreatedEvent*): Self = StObject.set(x, "Animation.animationCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setAnimationDotanimationStarted(value: js.Array[AnimationStartedEvent]): Self = StObject.set(x, "Animation.animationStarted", value.asInstanceOf[js.Any])
+        inline def setAnimationDotanimationStarted(value: js.Array[AnimationStartedEvent]): Self = StObject.set(x, "Animation.animationStarted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationDotanimationStartedVarargs(value: AnimationStartedEvent*): Self = StObject.set(x, "Animation.animationStarted", js.Array(value :_*))
+        inline def setAnimationDotanimationStartedVarargs(value: AnimationStartedEvent*): Self = StObject.set(x, "Animation.animationStarted", js.Array(value :_*))
         
-        @scala.inline
-        def setApplicationCacheDotapplicationCacheStatusUpdated(value: js.Array[ApplicationCacheStatusUpdatedEvent]): Self = StObject.set(x, "ApplicationCache.applicationCacheStatusUpdated", value.asInstanceOf[js.Any])
+        inline def setApplicationCacheDotapplicationCacheStatusUpdated(value: js.Array[ApplicationCacheStatusUpdatedEvent]): Self = StObject.set(x, "ApplicationCache.applicationCacheStatusUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplicationCacheDotapplicationCacheStatusUpdatedVarargs(value: ApplicationCacheStatusUpdatedEvent*): Self = StObject.set(x, "ApplicationCache.applicationCacheStatusUpdated", js.Array(value :_*))
+        inline def setApplicationCacheDotapplicationCacheStatusUpdatedVarargs(value: ApplicationCacheStatusUpdatedEvent*): Self = StObject.set(x, "ApplicationCache.applicationCacheStatusUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setApplicationCacheDotnetworkStateUpdated(value: js.Array[NetworkStateUpdatedEvent]): Self = StObject.set(x, "ApplicationCache.networkStateUpdated", value.asInstanceOf[js.Any])
+        inline def setApplicationCacheDotnetworkStateUpdated(value: js.Array[NetworkStateUpdatedEvent]): Self = StObject.set(x, "ApplicationCache.networkStateUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApplicationCacheDotnetworkStateUpdatedVarargs(value: NetworkStateUpdatedEvent*): Self = StObject.set(x, "ApplicationCache.networkStateUpdated", js.Array(value :_*))
+        inline def setApplicationCacheDotnetworkStateUpdatedVarargs(value: NetworkStateUpdatedEvent*): Self = StObject.set(x, "ApplicationCache.networkStateUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setAuditsDotissueAdded(value: js.Array[IssueAddedEvent]): Self = StObject.set(x, "Audits.issueAdded", value.asInstanceOf[js.Any])
+        inline def setAuditsDotissueAdded(value: js.Array[IssueAddedEvent]): Self = StObject.set(x, "Audits.issueAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuditsDotissueAddedVarargs(value: IssueAddedEvent*): Self = StObject.set(x, "Audits.issueAdded", js.Array(value :_*))
+        inline def setAuditsDotissueAddedVarargs(value: IssueAddedEvent*): Self = StObject.set(x, "Audits.issueAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setBackgroundServiceDotbackgroundServiceEventReceived(value: js.Array[BackgroundServiceEventReceivedEvent]): Self = StObject.set(x, "BackgroundService.backgroundServiceEventReceived", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotbackgroundServiceEventReceived(value: js.Array[BackgroundServiceEventReceivedEvent]): Self = StObject.set(x, "BackgroundService.backgroundServiceEventReceived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundServiceDotbackgroundServiceEventReceivedVarargs(value: BackgroundServiceEventReceivedEvent*): Self = StObject.set(x, "BackgroundService.backgroundServiceEventReceived", js.Array(value :_*))
+        inline def setBackgroundServiceDotbackgroundServiceEventReceivedVarargs(value: BackgroundServiceEventReceivedEvent*): Self = StObject.set(x, "BackgroundService.backgroundServiceEventReceived", js.Array(value :_*))
         
-        @scala.inline
-        def setBackgroundServiceDotrecordingStateChanged(value: js.Array[RecordingStateChangedEvent]): Self = StObject.set(x, "BackgroundService.recordingStateChanged", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotrecordingStateChanged(value: js.Array[RecordingStateChangedEvent]): Self = StObject.set(x, "BackgroundService.recordingStateChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundServiceDotrecordingStateChangedVarargs(value: RecordingStateChangedEvent*): Self = StObject.set(x, "BackgroundService.recordingStateChanged", js.Array(value :_*))
+        inline def setBackgroundServiceDotrecordingStateChangedVarargs(value: RecordingStateChangedEvent*): Self = StObject.set(x, "BackgroundService.recordingStateChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setCSSDotfontsUpdated(value: js.Array[FontsUpdatedEvent]): Self = StObject.set(x, "CSS.fontsUpdated", value.asInstanceOf[js.Any])
+        inline def setCSSDotfontsUpdated(value: js.Array[FontsUpdatedEvent]): Self = StObject.set(x, "CSS.fontsUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotfontsUpdatedVarargs(value: FontsUpdatedEvent*): Self = StObject.set(x, "CSS.fontsUpdated", js.Array(value :_*))
+        inline def setCSSDotfontsUpdatedVarargs(value: FontsUpdatedEvent*): Self = StObject.set(x, "CSS.fontsUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setCSSDotmediaQueryResultChanged(value: js.Array[js.Any]): Self = StObject.set(x, "CSS.mediaQueryResultChanged", value.asInstanceOf[js.Any])
+        inline def setCSSDotmediaQueryResultChanged(value: js.Array[js.Any]): Self = StObject.set(x, "CSS.mediaQueryResultChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotmediaQueryResultChangedVarargs(value: js.Any*): Self = StObject.set(x, "CSS.mediaQueryResultChanged", js.Array(value :_*))
+        inline def setCSSDotmediaQueryResultChangedVarargs(value: js.Any*): Self = StObject.set(x, "CSS.mediaQueryResultChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setCSSDotstyleSheetAdded(value: js.Array[StyleSheetAddedEvent]): Self = StObject.set(x, "CSS.styleSheetAdded", value.asInstanceOf[js.Any])
+        inline def setCSSDotstyleSheetAdded(value: js.Array[StyleSheetAddedEvent]): Self = StObject.set(x, "CSS.styleSheetAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotstyleSheetAddedVarargs(value: StyleSheetAddedEvent*): Self = StObject.set(x, "CSS.styleSheetAdded", js.Array(value :_*))
+        inline def setCSSDotstyleSheetAddedVarargs(value: StyleSheetAddedEvent*): Self = StObject.set(x, "CSS.styleSheetAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setCSSDotstyleSheetChanged(value: js.Array[StyleSheetChangedEvent]): Self = StObject.set(x, "CSS.styleSheetChanged", value.asInstanceOf[js.Any])
+        inline def setCSSDotstyleSheetChanged(value: js.Array[StyleSheetChangedEvent]): Self = StObject.set(x, "CSS.styleSheetChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotstyleSheetChangedVarargs(value: StyleSheetChangedEvent*): Self = StObject.set(x, "CSS.styleSheetChanged", js.Array(value :_*))
+        inline def setCSSDotstyleSheetChangedVarargs(value: StyleSheetChangedEvent*): Self = StObject.set(x, "CSS.styleSheetChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setCSSDotstyleSheetRemoved(value: js.Array[StyleSheetRemovedEvent]): Self = StObject.set(x, "CSS.styleSheetRemoved", value.asInstanceOf[js.Any])
+        inline def setCSSDotstyleSheetRemoved(value: js.Array[StyleSheetRemovedEvent]): Self = StObject.set(x, "CSS.styleSheetRemoved", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCSSDotstyleSheetRemovedVarargs(value: StyleSheetRemovedEvent*): Self = StObject.set(x, "CSS.styleSheetRemoved", js.Array(value :_*))
+        inline def setCSSDotstyleSheetRemovedVarargs(value: StyleSheetRemovedEvent*): Self = StObject.set(x, "CSS.styleSheetRemoved", js.Array(value :_*))
         
-        @scala.inline
-        def setCastDotissueUpdated(value: js.Array[IssueUpdatedEvent]): Self = StObject.set(x, "Cast.issueUpdated", value.asInstanceOf[js.Any])
+        inline def setCastDotissueUpdated(value: js.Array[IssueUpdatedEvent]): Self = StObject.set(x, "Cast.issueUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCastDotissueUpdatedVarargs(value: IssueUpdatedEvent*): Self = StObject.set(x, "Cast.issueUpdated", js.Array(value :_*))
+        inline def setCastDotissueUpdatedVarargs(value: IssueUpdatedEvent*): Self = StObject.set(x, "Cast.issueUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setCastDotsinksUpdated(value: js.Array[SinksUpdatedEvent]): Self = StObject.set(x, "Cast.sinksUpdated", value.asInstanceOf[js.Any])
+        inline def setCastDotsinksUpdated(value: js.Array[SinksUpdatedEvent]): Self = StObject.set(x, "Cast.sinksUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCastDotsinksUpdatedVarargs(value: SinksUpdatedEvent*): Self = StObject.set(x, "Cast.sinksUpdated", js.Array(value :_*))
+        inline def setCastDotsinksUpdatedVarargs(value: SinksUpdatedEvent*): Self = StObject.set(x, "Cast.sinksUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setConsoleDotmessageAdded(value: js.Array[MessageAddedEvent]): Self = StObject.set(x, "Console.messageAdded", value.asInstanceOf[js.Any])
+        inline def setConsoleDotmessageAdded(value: js.Array[MessageAddedEvent]): Self = StObject.set(x, "Console.messageAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsoleDotmessageAddedVarargs(value: MessageAddedEvent*): Self = StObject.set(x, "Console.messageAdded", js.Array(value :_*))
+        inline def setConsoleDotmessageAddedVarargs(value: MessageAddedEvent*): Self = StObject.set(x, "Console.messageAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotattributeModified(value: js.Array[AttributeModifiedEvent]): Self = StObject.set(x, "DOM.attributeModified", value.asInstanceOf[js.Any])
+        inline def setDOMDotattributeModified(value: js.Array[AttributeModifiedEvent]): Self = StObject.set(x, "DOM.attributeModified", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotattributeModifiedVarargs(value: AttributeModifiedEvent*): Self = StObject.set(x, "DOM.attributeModified", js.Array(value :_*))
+        inline def setDOMDotattributeModifiedVarargs(value: AttributeModifiedEvent*): Self = StObject.set(x, "DOM.attributeModified", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotattributeRemoved(value: js.Array[AttributeRemovedEvent]): Self = StObject.set(x, "DOM.attributeRemoved", value.asInstanceOf[js.Any])
+        inline def setDOMDotattributeRemoved(value: js.Array[AttributeRemovedEvent]): Self = StObject.set(x, "DOM.attributeRemoved", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotattributeRemovedVarargs(value: AttributeRemovedEvent*): Self = StObject.set(x, "DOM.attributeRemoved", js.Array(value :_*))
+        inline def setDOMDotattributeRemovedVarargs(value: AttributeRemovedEvent*): Self = StObject.set(x, "DOM.attributeRemoved", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotcharacterDataModified(value: js.Array[CharacterDataModifiedEvent]): Self = StObject.set(x, "DOM.characterDataModified", value.asInstanceOf[js.Any])
+        inline def setDOMDotcharacterDataModified(value: js.Array[CharacterDataModifiedEvent]): Self = StObject.set(x, "DOM.characterDataModified", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotcharacterDataModifiedVarargs(value: CharacterDataModifiedEvent*): Self = StObject.set(x, "DOM.characterDataModified", js.Array(value :_*))
+        inline def setDOMDotcharacterDataModifiedVarargs(value: CharacterDataModifiedEvent*): Self = StObject.set(x, "DOM.characterDataModified", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotchildNodeCountUpdated(value: js.Array[ChildNodeCountUpdatedEvent]): Self = StObject.set(x, "DOM.childNodeCountUpdated", value.asInstanceOf[js.Any])
+        inline def setDOMDotchildNodeCountUpdated(value: js.Array[ChildNodeCountUpdatedEvent]): Self = StObject.set(x, "DOM.childNodeCountUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotchildNodeCountUpdatedVarargs(value: ChildNodeCountUpdatedEvent*): Self = StObject.set(x, "DOM.childNodeCountUpdated", js.Array(value :_*))
+        inline def setDOMDotchildNodeCountUpdatedVarargs(value: ChildNodeCountUpdatedEvent*): Self = StObject.set(x, "DOM.childNodeCountUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotchildNodeInserted(value: js.Array[ChildNodeInsertedEvent]): Self = StObject.set(x, "DOM.childNodeInserted", value.asInstanceOf[js.Any])
+        inline def setDOMDotchildNodeInserted(value: js.Array[ChildNodeInsertedEvent]): Self = StObject.set(x, "DOM.childNodeInserted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotchildNodeInsertedVarargs(value: ChildNodeInsertedEvent*): Self = StObject.set(x, "DOM.childNodeInserted", js.Array(value :_*))
+        inline def setDOMDotchildNodeInsertedVarargs(value: ChildNodeInsertedEvent*): Self = StObject.set(x, "DOM.childNodeInserted", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotchildNodeRemoved(value: js.Array[ChildNodeRemovedEvent]): Self = StObject.set(x, "DOM.childNodeRemoved", value.asInstanceOf[js.Any])
+        inline def setDOMDotchildNodeRemoved(value: js.Array[ChildNodeRemovedEvent]): Self = StObject.set(x, "DOM.childNodeRemoved", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotchildNodeRemovedVarargs(value: ChildNodeRemovedEvent*): Self = StObject.set(x, "DOM.childNodeRemoved", js.Array(value :_*))
+        inline def setDOMDotchildNodeRemovedVarargs(value: ChildNodeRemovedEvent*): Self = StObject.set(x, "DOM.childNodeRemoved", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotdistributedNodesUpdated(value: js.Array[DistributedNodesUpdatedEvent]): Self = StObject.set(x, "DOM.distributedNodesUpdated", value.asInstanceOf[js.Any])
+        inline def setDOMDotdistributedNodesUpdated(value: js.Array[DistributedNodesUpdatedEvent]): Self = StObject.set(x, "DOM.distributedNodesUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotdistributedNodesUpdatedVarargs(value: DistributedNodesUpdatedEvent*): Self = StObject.set(x, "DOM.distributedNodesUpdated", js.Array(value :_*))
+        inline def setDOMDotdistributedNodesUpdatedVarargs(value: DistributedNodesUpdatedEvent*): Self = StObject.set(x, "DOM.distributedNodesUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotdocumentUpdated(value: js.Array[js.Any]): Self = StObject.set(x, "DOM.documentUpdated", value.asInstanceOf[js.Any])
+        inline def setDOMDotdocumentUpdated(value: js.Array[js.Any]): Self = StObject.set(x, "DOM.documentUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotdocumentUpdatedVarargs(value: js.Any*): Self = StObject.set(x, "DOM.documentUpdated", js.Array(value :_*))
+        inline def setDOMDotdocumentUpdatedVarargs(value: js.Any*): Self = StObject.set(x, "DOM.documentUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotinlineStyleInvalidated(value: js.Array[InlineStyleInvalidatedEvent]): Self = StObject.set(x, "DOM.inlineStyleInvalidated", value.asInstanceOf[js.Any])
+        inline def setDOMDotinlineStyleInvalidated(value: js.Array[InlineStyleInvalidatedEvent]): Self = StObject.set(x, "DOM.inlineStyleInvalidated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotinlineStyleInvalidatedVarargs(value: InlineStyleInvalidatedEvent*): Self = StObject.set(x, "DOM.inlineStyleInvalidated", js.Array(value :_*))
+        inline def setDOMDotinlineStyleInvalidatedVarargs(value: InlineStyleInvalidatedEvent*): Self = StObject.set(x, "DOM.inlineStyleInvalidated", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotpseudoElementAdded(value: js.Array[PseudoElementAddedEvent]): Self = StObject.set(x, "DOM.pseudoElementAdded", value.asInstanceOf[js.Any])
+        inline def setDOMDotpseudoElementAdded(value: js.Array[PseudoElementAddedEvent]): Self = StObject.set(x, "DOM.pseudoElementAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotpseudoElementAddedVarargs(value: PseudoElementAddedEvent*): Self = StObject.set(x, "DOM.pseudoElementAdded", js.Array(value :_*))
+        inline def setDOMDotpseudoElementAddedVarargs(value: PseudoElementAddedEvent*): Self = StObject.set(x, "DOM.pseudoElementAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotpseudoElementRemoved(value: js.Array[PseudoElementRemovedEvent]): Self = StObject.set(x, "DOM.pseudoElementRemoved", value.asInstanceOf[js.Any])
+        inline def setDOMDotpseudoElementRemoved(value: js.Array[PseudoElementRemovedEvent]): Self = StObject.set(x, "DOM.pseudoElementRemoved", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotpseudoElementRemovedVarargs(value: PseudoElementRemovedEvent*): Self = StObject.set(x, "DOM.pseudoElementRemoved", js.Array(value :_*))
+        inline def setDOMDotpseudoElementRemovedVarargs(value: PseudoElementRemovedEvent*): Self = StObject.set(x, "DOM.pseudoElementRemoved", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotsetChildNodes(value: js.Array[SetChildNodesEvent]): Self = StObject.set(x, "DOM.setChildNodes", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetChildNodes(value: js.Array[SetChildNodesEvent]): Self = StObject.set(x, "DOM.setChildNodes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotsetChildNodesVarargs(value: SetChildNodesEvent*): Self = StObject.set(x, "DOM.setChildNodes", js.Array(value :_*))
+        inline def setDOMDotsetChildNodesVarargs(value: SetChildNodesEvent*): Self = StObject.set(x, "DOM.setChildNodes", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotshadowRootPopped(value: js.Array[ShadowRootPoppedEvent]): Self = StObject.set(x, "DOM.shadowRootPopped", value.asInstanceOf[js.Any])
+        inline def setDOMDotshadowRootPopped(value: js.Array[ShadowRootPoppedEvent]): Self = StObject.set(x, "DOM.shadowRootPopped", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotshadowRootPoppedVarargs(value: ShadowRootPoppedEvent*): Self = StObject.set(x, "DOM.shadowRootPopped", js.Array(value :_*))
+        inline def setDOMDotshadowRootPoppedVarargs(value: ShadowRootPoppedEvent*): Self = StObject.set(x, "DOM.shadowRootPopped", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMDotshadowRootPushed(value: js.Array[ShadowRootPushedEvent]): Self = StObject.set(x, "DOM.shadowRootPushed", value.asInstanceOf[js.Any])
+        inline def setDOMDotshadowRootPushed(value: js.Array[ShadowRootPushedEvent]): Self = StObject.set(x, "DOM.shadowRootPushed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMDotshadowRootPushedVarargs(value: ShadowRootPushedEvent*): Self = StObject.set(x, "DOM.shadowRootPushed", js.Array(value :_*))
+        inline def setDOMDotshadowRootPushedVarargs(value: ShadowRootPushedEvent*): Self = StObject.set(x, "DOM.shadowRootPushed", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemAdded(value: js.Array[DomStorageItemAddedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemAdded", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotdomStorageItemAdded(value: js.Array[DomStorageItemAddedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemAddedVarargs(value: DomStorageItemAddedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemAdded", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemAddedVarargs(value: DomStorageItemAddedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemRemoved(value: js.Array[DomStorageItemRemovedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemRemoved", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotdomStorageItemRemoved(value: js.Array[DomStorageItemRemovedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemRemoved", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemRemovedVarargs(value: DomStorageItemRemovedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemRemoved", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemRemovedVarargs(value: DomStorageItemRemovedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemRemoved", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemUpdated(value: js.Array[DomStorageItemUpdatedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemUpdated", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotdomStorageItemUpdated(value: js.Array[DomStorageItemUpdatedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemUpdatedVarargs(value: DomStorageItemUpdatedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemUpdated", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemUpdatedVarargs(value: DomStorageItemUpdatedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemsCleared(value: js.Array[DomStorageItemsClearedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemsCleared", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotdomStorageItemsCleared(value: js.Array[DomStorageItemsClearedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemsCleared", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDOMStorageDotdomStorageItemsClearedVarargs(value: DomStorageItemsClearedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemsCleared", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemsClearedVarargs(value: DomStorageItemsClearedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemsCleared", js.Array(value :_*))
         
-        @scala.inline
-        def setDatabaseDotaddDatabase(value: js.Array[AddDatabaseEvent]): Self = StObject.set(x, "Database.addDatabase", value.asInstanceOf[js.Any])
+        inline def setDatabaseDotaddDatabase(value: js.Array[AddDatabaseEvent]): Self = StObject.set(x, "Database.addDatabase", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseDotaddDatabaseVarargs(value: AddDatabaseEvent*): Self = StObject.set(x, "Database.addDatabase", js.Array(value :_*))
+        inline def setDatabaseDotaddDatabaseVarargs(value: AddDatabaseEvent*): Self = StObject.set(x, "Database.addDatabase", js.Array(value :_*))
         
-        @scala.inline
-        def setDebuggerDotbreakpointResolved(value: js.Array[BreakpointResolvedEvent]): Self = StObject.set(x, "Debugger.breakpointResolved", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotbreakpointResolved(value: js.Array[BreakpointResolvedEvent]): Self = StObject.set(x, "Debugger.breakpointResolved", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotbreakpointResolvedVarargs(value: BreakpointResolvedEvent*): Self = StObject.set(x, "Debugger.breakpointResolved", js.Array(value :_*))
+        inline def setDebuggerDotbreakpointResolvedVarargs(value: BreakpointResolvedEvent*): Self = StObject.set(x, "Debugger.breakpointResolved", js.Array(value :_*))
         
-        @scala.inline
-        def setDebuggerDotpaused(value: js.Array[PausedEvent]): Self = StObject.set(x, "Debugger.paused", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotpaused(value: js.Array[PausedEvent]): Self = StObject.set(x, "Debugger.paused", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotpausedVarargs(value: PausedEvent*): Self = StObject.set(x, "Debugger.paused", js.Array(value :_*))
+        inline def setDebuggerDotpausedVarargs(value: PausedEvent*): Self = StObject.set(x, "Debugger.paused", js.Array(value :_*))
         
-        @scala.inline
-        def setDebuggerDotresumed(value: js.Array[js.Any]): Self = StObject.set(x, "Debugger.resumed", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotresumed(value: js.Array[js.Any]): Self = StObject.set(x, "Debugger.resumed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotresumedVarargs(value: js.Any*): Self = StObject.set(x, "Debugger.resumed", js.Array(value :_*))
+        inline def setDebuggerDotresumedVarargs(value: js.Any*): Self = StObject.set(x, "Debugger.resumed", js.Array(value :_*))
         
-        @scala.inline
-        def setDebuggerDotscriptFailedToParse(value: js.Array[ScriptFailedToParseEvent]): Self = StObject.set(x, "Debugger.scriptFailedToParse", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotscriptFailedToParse(value: js.Array[ScriptFailedToParseEvent]): Self = StObject.set(x, "Debugger.scriptFailedToParse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotscriptFailedToParseVarargs(value: ScriptFailedToParseEvent*): Self = StObject.set(x, "Debugger.scriptFailedToParse", js.Array(value :_*))
+        inline def setDebuggerDotscriptFailedToParseVarargs(value: ScriptFailedToParseEvent*): Self = StObject.set(x, "Debugger.scriptFailedToParse", js.Array(value :_*))
         
-        @scala.inline
-        def setDebuggerDotscriptParsed(value: js.Array[ScriptParsedEvent]): Self = StObject.set(x, "Debugger.scriptParsed", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotscriptParsed(value: js.Array[ScriptParsedEvent]): Self = StObject.set(x, "Debugger.scriptParsed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebuggerDotscriptParsedVarargs(value: ScriptParsedEvent*): Self = StObject.set(x, "Debugger.scriptParsed", js.Array(value :_*))
+        inline def setDebuggerDotscriptParsedVarargs(value: ScriptParsedEvent*): Self = StObject.set(x, "Debugger.scriptParsed", js.Array(value :_*))
         
-        @scala.inline
-        def setEmulationDotvirtualTimeBudgetExpired(value: js.Array[js.Any]): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", value.asInstanceOf[js.Any])
+        inline def setEmulationDotvirtualTimeBudgetExpired(value: js.Array[js.Any]): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmulationDotvirtualTimeBudgetExpiredVarargs(value: js.Any*): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", js.Array(value :_*))
+        inline def setEmulationDotvirtualTimeBudgetExpiredVarargs(value: js.Any*): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", js.Array(value :_*))
         
-        @scala.inline
-        def setFetchDotauthRequired(value: js.Array[AuthRequiredEvent]): Self = StObject.set(x, "Fetch.authRequired", value.asInstanceOf[js.Any])
+        inline def setFetchDotauthRequired(value: js.Array[AuthRequiredEvent]): Self = StObject.set(x, "Fetch.authRequired", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotauthRequiredVarargs(value: AuthRequiredEvent*): Self = StObject.set(x, "Fetch.authRequired", js.Array(value :_*))
+        inline def setFetchDotauthRequiredVarargs(value: AuthRequiredEvent*): Self = StObject.set(x, "Fetch.authRequired", js.Array(value :_*))
         
-        @scala.inline
-        def setFetchDotrequestPaused(value: js.Array[RequestPausedEvent]): Self = StObject.set(x, "Fetch.requestPaused", value.asInstanceOf[js.Any])
+        inline def setFetchDotrequestPaused(value: js.Array[RequestPausedEvent]): Self = StObject.set(x, "Fetch.requestPaused", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFetchDotrequestPausedVarargs(value: RequestPausedEvent*): Self = StObject.set(x, "Fetch.requestPaused", js.Array(value :_*))
+        inline def setFetchDotrequestPausedVarargs(value: RequestPausedEvent*): Self = StObject.set(x, "Fetch.requestPaused", js.Array(value :_*))
         
-        @scala.inline
-        def setHeadlessExperimentalDotneedsBeginFramesChanged(value: js.Array[NeedsBeginFramesChangedEvent]): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", value.asInstanceOf[js.Any])
+        inline def setHeadlessExperimentalDotneedsBeginFramesChanged(value: js.Array[NeedsBeginFramesChangedEvent]): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadlessExperimentalDotneedsBeginFramesChangedVarargs(value: NeedsBeginFramesChangedEvent*): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", js.Array(value :_*))
+        inline def setHeadlessExperimentalDotneedsBeginFramesChangedVarargs(value: NeedsBeginFramesChangedEvent*): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setHeapProfilerDotaddHeapSnapshotChunk(value: js.Array[AddHeapSnapshotChunkEvent]): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotaddHeapSnapshotChunk(value: js.Array[AddHeapSnapshotChunkEvent]): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotaddHeapSnapshotChunkVarargs(value: AddHeapSnapshotChunkEvent*): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", js.Array(value :_*))
+        inline def setHeapProfilerDotaddHeapSnapshotChunkVarargs(value: AddHeapSnapshotChunkEvent*): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", js.Array(value :_*))
         
-        @scala.inline
-        def setHeapProfilerDotheapStatsUpdate(value: js.Array[HeapStatsUpdateEvent]): Self = StObject.set(x, "HeapProfiler.heapStatsUpdate", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotheapStatsUpdate(value: js.Array[HeapStatsUpdateEvent]): Self = StObject.set(x, "HeapProfiler.heapStatsUpdate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotheapStatsUpdateVarargs(value: HeapStatsUpdateEvent*): Self = StObject.set(x, "HeapProfiler.heapStatsUpdate", js.Array(value :_*))
+        inline def setHeapProfilerDotheapStatsUpdateVarargs(value: HeapStatsUpdateEvent*): Self = StObject.set(x, "HeapProfiler.heapStatsUpdate", js.Array(value :_*))
         
-        @scala.inline
-        def setHeapProfilerDotlastSeenObjectId(value: js.Array[LastSeenObjectIdEvent]): Self = StObject.set(x, "HeapProfiler.lastSeenObjectId", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotlastSeenObjectId(value: js.Array[LastSeenObjectIdEvent]): Self = StObject.set(x, "HeapProfiler.lastSeenObjectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotlastSeenObjectIdVarargs(value: LastSeenObjectIdEvent*): Self = StObject.set(x, "HeapProfiler.lastSeenObjectId", js.Array(value :_*))
+        inline def setHeapProfilerDotlastSeenObjectIdVarargs(value: LastSeenObjectIdEvent*): Self = StObject.set(x, "HeapProfiler.lastSeenObjectId", js.Array(value :_*))
         
-        @scala.inline
-        def setHeapProfilerDotreportHeapSnapshotProgress(value: js.Array[ReportHeapSnapshotProgressEvent]): Self = StObject.set(x, "HeapProfiler.reportHeapSnapshotProgress", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotreportHeapSnapshotProgress(value: js.Array[ReportHeapSnapshotProgressEvent]): Self = StObject.set(x, "HeapProfiler.reportHeapSnapshotProgress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotreportHeapSnapshotProgressVarargs(value: ReportHeapSnapshotProgressEvent*): Self = StObject.set(x, "HeapProfiler.reportHeapSnapshotProgress", js.Array(value :_*))
+        inline def setHeapProfilerDotreportHeapSnapshotProgressVarargs(value: ReportHeapSnapshotProgressEvent*): Self = StObject.set(x, "HeapProfiler.reportHeapSnapshotProgress", js.Array(value :_*))
         
-        @scala.inline
-        def setHeapProfilerDotresetProfiles(value: js.Array[js.Any]): Self = StObject.set(x, "HeapProfiler.resetProfiles", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotresetProfiles(value: js.Array[js.Any]): Self = StObject.set(x, "HeapProfiler.resetProfiles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeapProfilerDotresetProfilesVarargs(value: js.Any*): Self = StObject.set(x, "HeapProfiler.resetProfiles", js.Array(value :_*))
+        inline def setHeapProfilerDotresetProfilesVarargs(value: js.Any*): Self = StObject.set(x, "HeapProfiler.resetProfiles", js.Array(value :_*))
         
-        @scala.inline
-        def setInspectorDotdetached(value: js.Array[DetachedEvent]): Self = StObject.set(x, "Inspector.detached", value.asInstanceOf[js.Any])
+        inline def setInspectorDotdetached(value: js.Array[DetachedEvent]): Self = StObject.set(x, "Inspector.detached", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInspectorDotdetachedVarargs(value: DetachedEvent*): Self = StObject.set(x, "Inspector.detached", js.Array(value :_*))
+        inline def setInspectorDotdetachedVarargs(value: DetachedEvent*): Self = StObject.set(x, "Inspector.detached", js.Array(value :_*))
         
-        @scala.inline
-        def setInspectorDottargetCrashed(value: js.Array[js.Any]): Self = StObject.set(x, "Inspector.targetCrashed", value.asInstanceOf[js.Any])
+        inline def setInspectorDottargetCrashed(value: js.Array[js.Any]): Self = StObject.set(x, "Inspector.targetCrashed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInspectorDottargetCrashedVarargs(value: js.Any*): Self = StObject.set(x, "Inspector.targetCrashed", js.Array(value :_*))
+        inline def setInspectorDottargetCrashedVarargs(value: js.Any*): Self = StObject.set(x, "Inspector.targetCrashed", js.Array(value :_*))
         
-        @scala.inline
-        def setInspectorDottargetReloadedAfterCrash(value: js.Array[js.Any]): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", value.asInstanceOf[js.Any])
+        inline def setInspectorDottargetReloadedAfterCrash(value: js.Array[js.Any]): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInspectorDottargetReloadedAfterCrashVarargs(value: js.Any*): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", js.Array(value :_*))
+        inline def setInspectorDottargetReloadedAfterCrashVarargs(value: js.Any*): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", js.Array(value :_*))
         
-        @scala.inline
-        def setLayerTreeDotlayerPainted(value: js.Array[LayerPaintedEvent]): Self = StObject.set(x, "LayerTree.layerPainted", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotlayerPainted(value: js.Array[LayerPaintedEvent]): Self = StObject.set(x, "LayerTree.layerPainted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotlayerPaintedVarargs(value: LayerPaintedEvent*): Self = StObject.set(x, "LayerTree.layerPainted", js.Array(value :_*))
+        inline def setLayerTreeDotlayerPaintedVarargs(value: LayerPaintedEvent*): Self = StObject.set(x, "LayerTree.layerPainted", js.Array(value :_*))
         
-        @scala.inline
-        def setLayerTreeDotlayerTreeDidChange(value: js.Array[LayerTreeDidChangeEvent]): Self = StObject.set(x, "LayerTree.layerTreeDidChange", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotlayerTreeDidChange(value: js.Array[LayerTreeDidChangeEvent]): Self = StObject.set(x, "LayerTree.layerTreeDidChange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerTreeDotlayerTreeDidChangeVarargs(value: LayerTreeDidChangeEvent*): Self = StObject.set(x, "LayerTree.layerTreeDidChange", js.Array(value :_*))
+        inline def setLayerTreeDotlayerTreeDidChangeVarargs(value: LayerTreeDidChangeEvent*): Self = StObject.set(x, "LayerTree.layerTreeDidChange", js.Array(value :_*))
         
-        @scala.inline
-        def setLogDotentryAdded(value: js.Array[EntryAddedEvent]): Self = StObject.set(x, "Log.entryAdded", value.asInstanceOf[js.Any])
+        inline def setLogDotentryAdded(value: js.Array[EntryAddedEvent]): Self = StObject.set(x, "Log.entryAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogDotentryAddedVarargs(value: EntryAddedEvent*): Self = StObject.set(x, "Log.entryAdded", js.Array(value :_*))
+        inline def setLogDotentryAddedVarargs(value: EntryAddedEvent*): Self = StObject.set(x, "Log.entryAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setMediaDotplayerErrorsRaised(value: js.Array[PlayerErrorsRaisedEvent]): Self = StObject.set(x, "Media.playerErrorsRaised", value.asInstanceOf[js.Any])
+        inline def setMediaDotplayerErrorsRaised(value: js.Array[PlayerErrorsRaisedEvent]): Self = StObject.set(x, "Media.playerErrorsRaised", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaDotplayerErrorsRaisedVarargs(value: PlayerErrorsRaisedEvent*): Self = StObject.set(x, "Media.playerErrorsRaised", js.Array(value :_*))
+        inline def setMediaDotplayerErrorsRaisedVarargs(value: PlayerErrorsRaisedEvent*): Self = StObject.set(x, "Media.playerErrorsRaised", js.Array(value :_*))
         
-        @scala.inline
-        def setMediaDotplayerEventsAdded(value: js.Array[PlayerEventsAddedEvent]): Self = StObject.set(x, "Media.playerEventsAdded", value.asInstanceOf[js.Any])
+        inline def setMediaDotplayerEventsAdded(value: js.Array[PlayerEventsAddedEvent]): Self = StObject.set(x, "Media.playerEventsAdded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaDotplayerEventsAddedVarargs(value: PlayerEventsAddedEvent*): Self = StObject.set(x, "Media.playerEventsAdded", js.Array(value :_*))
+        inline def setMediaDotplayerEventsAddedVarargs(value: PlayerEventsAddedEvent*): Self = StObject.set(x, "Media.playerEventsAdded", js.Array(value :_*))
         
-        @scala.inline
-        def setMediaDotplayerMessagesLogged(value: js.Array[PlayerMessagesLoggedEvent]): Self = StObject.set(x, "Media.playerMessagesLogged", value.asInstanceOf[js.Any])
+        inline def setMediaDotplayerMessagesLogged(value: js.Array[PlayerMessagesLoggedEvent]): Self = StObject.set(x, "Media.playerMessagesLogged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaDotplayerMessagesLoggedVarargs(value: PlayerMessagesLoggedEvent*): Self = StObject.set(x, "Media.playerMessagesLogged", js.Array(value :_*))
+        inline def setMediaDotplayerMessagesLoggedVarargs(value: PlayerMessagesLoggedEvent*): Self = StObject.set(x, "Media.playerMessagesLogged", js.Array(value :_*))
         
-        @scala.inline
-        def setMediaDotplayerPropertiesChanged(value: js.Array[PlayerPropertiesChangedEvent]): Self = StObject.set(x, "Media.playerPropertiesChanged", value.asInstanceOf[js.Any])
+        inline def setMediaDotplayerPropertiesChanged(value: js.Array[PlayerPropertiesChangedEvent]): Self = StObject.set(x, "Media.playerPropertiesChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaDotplayerPropertiesChangedVarargs(value: PlayerPropertiesChangedEvent*): Self = StObject.set(x, "Media.playerPropertiesChanged", js.Array(value :_*))
+        inline def setMediaDotplayerPropertiesChangedVarargs(value: PlayerPropertiesChangedEvent*): Self = StObject.set(x, "Media.playerPropertiesChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setMediaDotplayersCreated(value: js.Array[PlayersCreatedEvent]): Self = StObject.set(x, "Media.playersCreated", value.asInstanceOf[js.Any])
+        inline def setMediaDotplayersCreated(value: js.Array[PlayersCreatedEvent]): Self = StObject.set(x, "Media.playersCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMediaDotplayersCreatedVarargs(value: PlayersCreatedEvent*): Self = StObject.set(x, "Media.playersCreated", js.Array(value :_*))
+        inline def setMediaDotplayersCreatedVarargs(value: PlayersCreatedEvent*): Self = StObject.set(x, "Media.playersCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotdataReceived(value: js.Array[DataReceivedEvent]): Self = StObject.set(x, "Network.dataReceived", value.asInstanceOf[js.Any])
+        inline def setNetworkDotdataReceived(value: js.Array[DataReceivedEvent]): Self = StObject.set(x, "Network.dataReceived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotdataReceivedVarargs(value: DataReceivedEvent*): Self = StObject.set(x, "Network.dataReceived", js.Array(value :_*))
+        inline def setNetworkDotdataReceivedVarargs(value: DataReceivedEvent*): Self = StObject.set(x, "Network.dataReceived", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDoteventSourceMessageReceived(value: js.Array[EventSourceMessageReceivedEvent]): Self = StObject.set(x, "Network.eventSourceMessageReceived", value.asInstanceOf[js.Any])
+        inline def setNetworkDoteventSourceMessageReceived(value: js.Array[EventSourceMessageReceivedEvent]): Self = StObject.set(x, "Network.eventSourceMessageReceived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDoteventSourceMessageReceivedVarargs(value: EventSourceMessageReceivedEvent*): Self = StObject.set(x, "Network.eventSourceMessageReceived", js.Array(value :_*))
+        inline def setNetworkDoteventSourceMessageReceivedVarargs(value: EventSourceMessageReceivedEvent*): Self = StObject.set(x, "Network.eventSourceMessageReceived", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotloadingFailed(value: js.Array[LoadingFailedEvent]): Self = StObject.set(x, "Network.loadingFailed", value.asInstanceOf[js.Any])
+        inline def setNetworkDotloadingFailed(value: js.Array[LoadingFailedEvent]): Self = StObject.set(x, "Network.loadingFailed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotloadingFailedVarargs(value: LoadingFailedEvent*): Self = StObject.set(x, "Network.loadingFailed", js.Array(value :_*))
+        inline def setNetworkDotloadingFailedVarargs(value: LoadingFailedEvent*): Self = StObject.set(x, "Network.loadingFailed", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotloadingFinished(value: js.Array[LoadingFinishedEvent]): Self = StObject.set(x, "Network.loadingFinished", value.asInstanceOf[js.Any])
+        inline def setNetworkDotloadingFinished(value: js.Array[LoadingFinishedEvent]): Self = StObject.set(x, "Network.loadingFinished", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotloadingFinishedVarargs(value: LoadingFinishedEvent*): Self = StObject.set(x, "Network.loadingFinished", js.Array(value :_*))
+        inline def setNetworkDotloadingFinishedVarargs(value: LoadingFinishedEvent*): Self = StObject.set(x, "Network.loadingFinished", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotrequestIntercepted(value: js.Array[RequestInterceptedEvent]): Self = StObject.set(x, "Network.requestIntercepted", value.asInstanceOf[js.Any])
+        inline def setNetworkDotrequestIntercepted(value: js.Array[RequestInterceptedEvent]): Self = StObject.set(x, "Network.requestIntercepted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotrequestInterceptedVarargs(value: RequestInterceptedEvent*): Self = StObject.set(x, "Network.requestIntercepted", js.Array(value :_*))
+        inline def setNetworkDotrequestInterceptedVarargs(value: RequestInterceptedEvent*): Self = StObject.set(x, "Network.requestIntercepted", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotrequestServedFromCache(value: js.Array[RequestServedFromCacheEvent]): Self = StObject.set(x, "Network.requestServedFromCache", value.asInstanceOf[js.Any])
+        inline def setNetworkDotrequestServedFromCache(value: js.Array[RequestServedFromCacheEvent]): Self = StObject.set(x, "Network.requestServedFromCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotrequestServedFromCacheVarargs(value: RequestServedFromCacheEvent*): Self = StObject.set(x, "Network.requestServedFromCache", js.Array(value :_*))
+        inline def setNetworkDotrequestServedFromCacheVarargs(value: RequestServedFromCacheEvent*): Self = StObject.set(x, "Network.requestServedFromCache", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotrequestWillBeSent(value: js.Array[RequestWillBeSentEvent]): Self = StObject.set(x, "Network.requestWillBeSent", value.asInstanceOf[js.Any])
+        inline def setNetworkDotrequestWillBeSent(value: js.Array[RequestWillBeSentEvent]): Self = StObject.set(x, "Network.requestWillBeSent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotrequestWillBeSentExtraInfo(value: js.Array[RequestWillBeSentExtraInfoEvent]): Self = StObject.set(x, "Network.requestWillBeSentExtraInfo", value.asInstanceOf[js.Any])
+        inline def setNetworkDotrequestWillBeSentExtraInfo(value: js.Array[RequestWillBeSentExtraInfoEvent]): Self = StObject.set(x, "Network.requestWillBeSentExtraInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotrequestWillBeSentExtraInfoVarargs(value: RequestWillBeSentExtraInfoEvent*): Self = StObject.set(x, "Network.requestWillBeSentExtraInfo", js.Array(value :_*))
+        inline def setNetworkDotrequestWillBeSentExtraInfoVarargs(value: RequestWillBeSentExtraInfoEvent*): Self = StObject.set(x, "Network.requestWillBeSentExtraInfo", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotrequestWillBeSentVarargs(value: RequestWillBeSentEvent*): Self = StObject.set(x, "Network.requestWillBeSent", js.Array(value :_*))
+        inline def setNetworkDotrequestWillBeSentVarargs(value: RequestWillBeSentEvent*): Self = StObject.set(x, "Network.requestWillBeSent", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotresourceChangedPriority(value: js.Array[ResourceChangedPriorityEvent]): Self = StObject.set(x, "Network.resourceChangedPriority", value.asInstanceOf[js.Any])
+        inline def setNetworkDotresourceChangedPriority(value: js.Array[ResourceChangedPriorityEvent]): Self = StObject.set(x, "Network.resourceChangedPriority", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotresourceChangedPriorityVarargs(value: ResourceChangedPriorityEvent*): Self = StObject.set(x, "Network.resourceChangedPriority", js.Array(value :_*))
+        inline def setNetworkDotresourceChangedPriorityVarargs(value: ResourceChangedPriorityEvent*): Self = StObject.set(x, "Network.resourceChangedPriority", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotresponseReceived(value: js.Array[ResponseReceivedEvent]): Self = StObject.set(x, "Network.responseReceived", value.asInstanceOf[js.Any])
+        inline def setNetworkDotresponseReceived(value: js.Array[ResponseReceivedEvent]): Self = StObject.set(x, "Network.responseReceived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotresponseReceivedExtraInfo(value: js.Array[ResponseReceivedExtraInfoEvent]): Self = StObject.set(x, "Network.responseReceivedExtraInfo", value.asInstanceOf[js.Any])
+        inline def setNetworkDotresponseReceivedExtraInfo(value: js.Array[ResponseReceivedExtraInfoEvent]): Self = StObject.set(x, "Network.responseReceivedExtraInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotresponseReceivedExtraInfoVarargs(value: ResponseReceivedExtraInfoEvent*): Self = StObject.set(x, "Network.responseReceivedExtraInfo", js.Array(value :_*))
+        inline def setNetworkDotresponseReceivedExtraInfoVarargs(value: ResponseReceivedExtraInfoEvent*): Self = StObject.set(x, "Network.responseReceivedExtraInfo", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotresponseReceivedVarargs(value: ResponseReceivedEvent*): Self = StObject.set(x, "Network.responseReceived", js.Array(value :_*))
+        inline def setNetworkDotresponseReceivedVarargs(value: ResponseReceivedEvent*): Self = StObject.set(x, "Network.responseReceived", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotsignedExchangeReceived(value: js.Array[SignedExchangeReceivedEvent]): Self = StObject.set(x, "Network.signedExchangeReceived", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsignedExchangeReceived(value: js.Array[SignedExchangeReceivedEvent]): Self = StObject.set(x, "Network.signedExchangeReceived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotsignedExchangeReceivedVarargs(value: SignedExchangeReceivedEvent*): Self = StObject.set(x, "Network.signedExchangeReceived", js.Array(value :_*))
+        inline def setNetworkDotsignedExchangeReceivedVarargs(value: SignedExchangeReceivedEvent*): Self = StObject.set(x, "Network.signedExchangeReceived", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotwebSocketClosed(value: js.Array[WebSocketClosedEvent]): Self = StObject.set(x, "Network.webSocketClosed", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebSocketClosed(value: js.Array[WebSocketClosedEvent]): Self = StObject.set(x, "Network.webSocketClosed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotwebSocketClosedVarargs(value: WebSocketClosedEvent*): Self = StObject.set(x, "Network.webSocketClosed", js.Array(value :_*))
+        inline def setNetworkDotwebSocketClosedVarargs(value: WebSocketClosedEvent*): Self = StObject.set(x, "Network.webSocketClosed", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotwebSocketCreated(value: js.Array[WebSocketCreatedEvent]): Self = StObject.set(x, "Network.webSocketCreated", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebSocketCreated(value: js.Array[WebSocketCreatedEvent]): Self = StObject.set(x, "Network.webSocketCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotwebSocketCreatedVarargs(value: WebSocketCreatedEvent*): Self = StObject.set(x, "Network.webSocketCreated", js.Array(value :_*))
+        inline def setNetworkDotwebSocketCreatedVarargs(value: WebSocketCreatedEvent*): Self = StObject.set(x, "Network.webSocketCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotwebSocketFrameError(value: js.Array[WebSocketFrameErrorEvent]): Self = StObject.set(x, "Network.webSocketFrameError", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebSocketFrameError(value: js.Array[WebSocketFrameErrorEvent]): Self = StObject.set(x, "Network.webSocketFrameError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotwebSocketFrameErrorVarargs(value: WebSocketFrameErrorEvent*): Self = StObject.set(x, "Network.webSocketFrameError", js.Array(value :_*))
+        inline def setNetworkDotwebSocketFrameErrorVarargs(value: WebSocketFrameErrorEvent*): Self = StObject.set(x, "Network.webSocketFrameError", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotwebSocketFrameReceived(value: js.Array[WebSocketFrameReceivedEvent]): Self = StObject.set(x, "Network.webSocketFrameReceived", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebSocketFrameReceived(value: js.Array[WebSocketFrameReceivedEvent]): Self = StObject.set(x, "Network.webSocketFrameReceived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotwebSocketFrameReceivedVarargs(value: WebSocketFrameReceivedEvent*): Self = StObject.set(x, "Network.webSocketFrameReceived", js.Array(value :_*))
+        inline def setNetworkDotwebSocketFrameReceivedVarargs(value: WebSocketFrameReceivedEvent*): Self = StObject.set(x, "Network.webSocketFrameReceived", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotwebSocketFrameSent(value: js.Array[WebSocketFrameSentEvent]): Self = StObject.set(x, "Network.webSocketFrameSent", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebSocketFrameSent(value: js.Array[WebSocketFrameSentEvent]): Self = StObject.set(x, "Network.webSocketFrameSent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotwebSocketFrameSentVarargs(value: WebSocketFrameSentEvent*): Self = StObject.set(x, "Network.webSocketFrameSent", js.Array(value :_*))
+        inline def setNetworkDotwebSocketFrameSentVarargs(value: WebSocketFrameSentEvent*): Self = StObject.set(x, "Network.webSocketFrameSent", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotwebSocketHandshakeResponseReceived(value: js.Array[WebSocketHandshakeResponseReceivedEvent]): Self = StObject.set(x, "Network.webSocketHandshakeResponseReceived", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebSocketHandshakeResponseReceived(value: js.Array[WebSocketHandshakeResponseReceivedEvent]): Self = StObject.set(x, "Network.webSocketHandshakeResponseReceived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotwebSocketHandshakeResponseReceivedVarargs(value: WebSocketHandshakeResponseReceivedEvent*): Self = StObject.set(x, "Network.webSocketHandshakeResponseReceived", js.Array(value :_*))
+        inline def setNetworkDotwebSocketHandshakeResponseReceivedVarargs(value: WebSocketHandshakeResponseReceivedEvent*): Self = StObject.set(x, "Network.webSocketHandshakeResponseReceived", js.Array(value :_*))
         
-        @scala.inline
-        def setNetworkDotwebSocketWillSendHandshakeRequest(value: js.Array[WebSocketWillSendHandshakeRequestEvent]): Self = StObject.set(x, "Network.webSocketWillSendHandshakeRequest", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebSocketWillSendHandshakeRequest(value: js.Array[WebSocketWillSendHandshakeRequestEvent]): Self = StObject.set(x, "Network.webSocketWillSendHandshakeRequest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkDotwebSocketWillSendHandshakeRequestVarargs(value: WebSocketWillSendHandshakeRequestEvent*): Self = StObject.set(x, "Network.webSocketWillSendHandshakeRequest", js.Array(value :_*))
+        inline def setNetworkDotwebSocketWillSendHandshakeRequestVarargs(value: WebSocketWillSendHandshakeRequestEvent*): Self = StObject.set(x, "Network.webSocketWillSendHandshakeRequest", js.Array(value :_*))
         
-        @scala.inline
-        def setOverlayDotinspectModeCanceled(value: js.Array[js.Any]): Self = StObject.set(x, "Overlay.inspectModeCanceled", value.asInstanceOf[js.Any])
+        inline def setOverlayDotinspectModeCanceled(value: js.Array[js.Any]): Self = StObject.set(x, "Overlay.inspectModeCanceled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotinspectModeCanceledVarargs(value: js.Any*): Self = StObject.set(x, "Overlay.inspectModeCanceled", js.Array(value :_*))
+        inline def setOverlayDotinspectModeCanceledVarargs(value: js.Any*): Self = StObject.set(x, "Overlay.inspectModeCanceled", js.Array(value :_*))
         
-        @scala.inline
-        def setOverlayDotinspectNodeRequested(value: js.Array[InspectNodeRequestedEvent]): Self = StObject.set(x, "Overlay.inspectNodeRequested", value.asInstanceOf[js.Any])
+        inline def setOverlayDotinspectNodeRequested(value: js.Array[InspectNodeRequestedEvent]): Self = StObject.set(x, "Overlay.inspectNodeRequested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotinspectNodeRequestedVarargs(value: InspectNodeRequestedEvent*): Self = StObject.set(x, "Overlay.inspectNodeRequested", js.Array(value :_*))
+        inline def setOverlayDotinspectNodeRequestedVarargs(value: InspectNodeRequestedEvent*): Self = StObject.set(x, "Overlay.inspectNodeRequested", js.Array(value :_*))
         
-        @scala.inline
-        def setOverlayDotnodeHighlightRequested(value: js.Array[NodeHighlightRequestedEvent]): Self = StObject.set(x, "Overlay.nodeHighlightRequested", value.asInstanceOf[js.Any])
+        inline def setOverlayDotnodeHighlightRequested(value: js.Array[NodeHighlightRequestedEvent]): Self = StObject.set(x, "Overlay.nodeHighlightRequested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotnodeHighlightRequestedVarargs(value: NodeHighlightRequestedEvent*): Self = StObject.set(x, "Overlay.nodeHighlightRequested", js.Array(value :_*))
+        inline def setOverlayDotnodeHighlightRequestedVarargs(value: NodeHighlightRequestedEvent*): Self = StObject.set(x, "Overlay.nodeHighlightRequested", js.Array(value :_*))
         
-        @scala.inline
-        def setOverlayDotscreenshotRequested(value: js.Array[ScreenshotRequestedEvent]): Self = StObject.set(x, "Overlay.screenshotRequested", value.asInstanceOf[js.Any])
+        inline def setOverlayDotscreenshotRequested(value: js.Array[ScreenshotRequestedEvent]): Self = StObject.set(x, "Overlay.screenshotRequested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayDotscreenshotRequestedVarargs(value: ScreenshotRequestedEvent*): Self = StObject.set(x, "Overlay.screenshotRequested", js.Array(value :_*))
+        inline def setOverlayDotscreenshotRequestedVarargs(value: ScreenshotRequestedEvent*): Self = StObject.set(x, "Overlay.screenshotRequested", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotcompilationCacheProduced(value: js.Array[CompilationCacheProducedEvent]): Self = StObject.set(x, "Page.compilationCacheProduced", value.asInstanceOf[js.Any])
+        inline def setPageDotcompilationCacheProduced(value: js.Array[CompilationCacheProducedEvent]): Self = StObject.set(x, "Page.compilationCacheProduced", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotcompilationCacheProducedVarargs(value: CompilationCacheProducedEvent*): Self = StObject.set(x, "Page.compilationCacheProduced", js.Array(value :_*))
+        inline def setPageDotcompilationCacheProducedVarargs(value: CompilationCacheProducedEvent*): Self = StObject.set(x, "Page.compilationCacheProduced", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotdomContentEventFired(value: js.Array[DomContentEventFiredEvent]): Self = StObject.set(x, "Page.domContentEventFired", value.asInstanceOf[js.Any])
+        inline def setPageDotdomContentEventFired(value: js.Array[DomContentEventFiredEvent]): Self = StObject.set(x, "Page.domContentEventFired", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotdomContentEventFiredVarargs(value: DomContentEventFiredEvent*): Self = StObject.set(x, "Page.domContentEventFired", js.Array(value :_*))
+        inline def setPageDotdomContentEventFiredVarargs(value: DomContentEventFiredEvent*): Self = StObject.set(x, "Page.domContentEventFired", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotdownloadProgress(value: js.Array[DownloadProgressEvent]): Self = StObject.set(x, "Page.downloadProgress", value.asInstanceOf[js.Any])
+        inline def setPageDotdownloadProgress(value: js.Array[DownloadProgressEvent]): Self = StObject.set(x, "Page.downloadProgress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotdownloadProgressVarargs(value: DownloadProgressEvent*): Self = StObject.set(x, "Page.downloadProgress", js.Array(value :_*))
+        inline def setPageDotdownloadProgressVarargs(value: DownloadProgressEvent*): Self = StObject.set(x, "Page.downloadProgress", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotdownloadWillBegin(value: js.Array[DownloadWillBeginEvent]): Self = StObject.set(x, "Page.downloadWillBegin", value.asInstanceOf[js.Any])
+        inline def setPageDotdownloadWillBegin(value: js.Array[DownloadWillBeginEvent]): Self = StObject.set(x, "Page.downloadWillBegin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotdownloadWillBeginVarargs(value: DownloadWillBeginEvent*): Self = StObject.set(x, "Page.downloadWillBegin", js.Array(value :_*))
+        inline def setPageDotdownloadWillBeginVarargs(value: DownloadWillBeginEvent*): Self = StObject.set(x, "Page.downloadWillBegin", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotfileChooserOpened(value: js.Array[FileChooserOpenedEvent]): Self = StObject.set(x, "Page.fileChooserOpened", value.asInstanceOf[js.Any])
+        inline def setPageDotfileChooserOpened(value: js.Array[FileChooserOpenedEvent]): Self = StObject.set(x, "Page.fileChooserOpened", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotfileChooserOpenedVarargs(value: FileChooserOpenedEvent*): Self = StObject.set(x, "Page.fileChooserOpened", js.Array(value :_*))
+        inline def setPageDotfileChooserOpenedVarargs(value: FileChooserOpenedEvent*): Self = StObject.set(x, "Page.fileChooserOpened", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeAttached(value: js.Array[FrameAttachedEvent]): Self = StObject.set(x, "Page.frameAttached", value.asInstanceOf[js.Any])
+        inline def setPageDotframeAttached(value: js.Array[FrameAttachedEvent]): Self = StObject.set(x, "Page.frameAttached", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeAttachedVarargs(value: FrameAttachedEvent*): Self = StObject.set(x, "Page.frameAttached", js.Array(value :_*))
+        inline def setPageDotframeAttachedVarargs(value: FrameAttachedEvent*): Self = StObject.set(x, "Page.frameAttached", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeClearedScheduledNavigation(value: js.Array[FrameClearedScheduledNavigationEvent]): Self = StObject.set(x, "Page.frameClearedScheduledNavigation", value.asInstanceOf[js.Any])
+        inline def setPageDotframeClearedScheduledNavigation(value: js.Array[FrameClearedScheduledNavigationEvent]): Self = StObject.set(x, "Page.frameClearedScheduledNavigation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeClearedScheduledNavigationVarargs(value: FrameClearedScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameClearedScheduledNavigation", js.Array(value :_*))
+        inline def setPageDotframeClearedScheduledNavigationVarargs(value: FrameClearedScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameClearedScheduledNavigation", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeDetached(value: js.Array[FrameDetachedEvent]): Self = StObject.set(x, "Page.frameDetached", value.asInstanceOf[js.Any])
+        inline def setPageDotframeDetached(value: js.Array[FrameDetachedEvent]): Self = StObject.set(x, "Page.frameDetached", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeDetachedVarargs(value: FrameDetachedEvent*): Self = StObject.set(x, "Page.frameDetached", js.Array(value :_*))
+        inline def setPageDotframeDetachedVarargs(value: FrameDetachedEvent*): Self = StObject.set(x, "Page.frameDetached", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeNavigated(value: js.Array[FrameNavigatedEvent]): Self = StObject.set(x, "Page.frameNavigated", value.asInstanceOf[js.Any])
+        inline def setPageDotframeNavigated(value: js.Array[FrameNavigatedEvent]): Self = StObject.set(x, "Page.frameNavigated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeNavigatedVarargs(value: FrameNavigatedEvent*): Self = StObject.set(x, "Page.frameNavigated", js.Array(value :_*))
+        inline def setPageDotframeNavigatedVarargs(value: FrameNavigatedEvent*): Self = StObject.set(x, "Page.frameNavigated", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeRequestedNavigation(value: js.Array[FrameRequestedNavigationEvent]): Self = StObject.set(x, "Page.frameRequestedNavigation", value.asInstanceOf[js.Any])
+        inline def setPageDotframeRequestedNavigation(value: js.Array[FrameRequestedNavigationEvent]): Self = StObject.set(x, "Page.frameRequestedNavigation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeRequestedNavigationVarargs(value: FrameRequestedNavigationEvent*): Self = StObject.set(x, "Page.frameRequestedNavigation", js.Array(value :_*))
+        inline def setPageDotframeRequestedNavigationVarargs(value: FrameRequestedNavigationEvent*): Self = StObject.set(x, "Page.frameRequestedNavigation", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeResized(value: js.Array[js.Any]): Self = StObject.set(x, "Page.frameResized", value.asInstanceOf[js.Any])
+        inline def setPageDotframeResized(value: js.Array[js.Any]): Self = StObject.set(x, "Page.frameResized", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeResizedVarargs(value: js.Any*): Self = StObject.set(x, "Page.frameResized", js.Array(value :_*))
+        inline def setPageDotframeResizedVarargs(value: js.Any*): Self = StObject.set(x, "Page.frameResized", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeScheduledNavigation(value: js.Array[FrameScheduledNavigationEvent]): Self = StObject.set(x, "Page.frameScheduledNavigation", value.asInstanceOf[js.Any])
+        inline def setPageDotframeScheduledNavigation(value: js.Array[FrameScheduledNavigationEvent]): Self = StObject.set(x, "Page.frameScheduledNavigation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeScheduledNavigationVarargs(value: FrameScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameScheduledNavigation", js.Array(value :_*))
+        inline def setPageDotframeScheduledNavigationVarargs(value: FrameScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameScheduledNavigation", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeStartedLoading(value: js.Array[FrameStartedLoadingEvent]): Self = StObject.set(x, "Page.frameStartedLoading", value.asInstanceOf[js.Any])
+        inline def setPageDotframeStartedLoading(value: js.Array[FrameStartedLoadingEvent]): Self = StObject.set(x, "Page.frameStartedLoading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeStartedLoadingVarargs(value: FrameStartedLoadingEvent*): Self = StObject.set(x, "Page.frameStartedLoading", js.Array(value :_*))
+        inline def setPageDotframeStartedLoadingVarargs(value: FrameStartedLoadingEvent*): Self = StObject.set(x, "Page.frameStartedLoading", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotframeStoppedLoading(value: js.Array[FrameStoppedLoadingEvent]): Self = StObject.set(x, "Page.frameStoppedLoading", value.asInstanceOf[js.Any])
+        inline def setPageDotframeStoppedLoading(value: js.Array[FrameStoppedLoadingEvent]): Self = StObject.set(x, "Page.frameStoppedLoading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotframeStoppedLoadingVarargs(value: FrameStoppedLoadingEvent*): Self = StObject.set(x, "Page.frameStoppedLoading", js.Array(value :_*))
+        inline def setPageDotframeStoppedLoadingVarargs(value: FrameStoppedLoadingEvent*): Self = StObject.set(x, "Page.frameStoppedLoading", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotinterstitialHidden(value: js.Array[js.Any]): Self = StObject.set(x, "Page.interstitialHidden", value.asInstanceOf[js.Any])
+        inline def setPageDotinterstitialHidden(value: js.Array[js.Any]): Self = StObject.set(x, "Page.interstitialHidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotinterstitialHiddenVarargs(value: js.Any*): Self = StObject.set(x, "Page.interstitialHidden", js.Array(value :_*))
+        inline def setPageDotinterstitialHiddenVarargs(value: js.Any*): Self = StObject.set(x, "Page.interstitialHidden", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotinterstitialShown(value: js.Array[js.Any]): Self = StObject.set(x, "Page.interstitialShown", value.asInstanceOf[js.Any])
+        inline def setPageDotinterstitialShown(value: js.Array[js.Any]): Self = StObject.set(x, "Page.interstitialShown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotinterstitialShownVarargs(value: js.Any*): Self = StObject.set(x, "Page.interstitialShown", js.Array(value :_*))
+        inline def setPageDotinterstitialShownVarargs(value: js.Any*): Self = StObject.set(x, "Page.interstitialShown", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotjavascriptDialogClosed(value: js.Array[JavascriptDialogClosedEvent]): Self = StObject.set(x, "Page.javascriptDialogClosed", value.asInstanceOf[js.Any])
+        inline def setPageDotjavascriptDialogClosed(value: js.Array[JavascriptDialogClosedEvent]): Self = StObject.set(x, "Page.javascriptDialogClosed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotjavascriptDialogClosedVarargs(value: JavascriptDialogClosedEvent*): Self = StObject.set(x, "Page.javascriptDialogClosed", js.Array(value :_*))
+        inline def setPageDotjavascriptDialogClosedVarargs(value: JavascriptDialogClosedEvent*): Self = StObject.set(x, "Page.javascriptDialogClosed", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotjavascriptDialogOpening(value: js.Array[JavascriptDialogOpeningEvent]): Self = StObject.set(x, "Page.javascriptDialogOpening", value.asInstanceOf[js.Any])
+        inline def setPageDotjavascriptDialogOpening(value: js.Array[JavascriptDialogOpeningEvent]): Self = StObject.set(x, "Page.javascriptDialogOpening", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotjavascriptDialogOpeningVarargs(value: JavascriptDialogOpeningEvent*): Self = StObject.set(x, "Page.javascriptDialogOpening", js.Array(value :_*))
+        inline def setPageDotjavascriptDialogOpeningVarargs(value: JavascriptDialogOpeningEvent*): Self = StObject.set(x, "Page.javascriptDialogOpening", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotlifecycleEvent(value: js.Array[LifecycleEventEvent]): Self = StObject.set(x, "Page.lifecycleEvent", value.asInstanceOf[js.Any])
+        inline def setPageDotlifecycleEvent(value: js.Array[LifecycleEventEvent]): Self = StObject.set(x, "Page.lifecycleEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotlifecycleEventVarargs(value: LifecycleEventEvent*): Self = StObject.set(x, "Page.lifecycleEvent", js.Array(value :_*))
+        inline def setPageDotlifecycleEventVarargs(value: LifecycleEventEvent*): Self = StObject.set(x, "Page.lifecycleEvent", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotloadEventFired(value: js.Array[LoadEventFiredEvent]): Self = StObject.set(x, "Page.loadEventFired", value.asInstanceOf[js.Any])
+        inline def setPageDotloadEventFired(value: js.Array[LoadEventFiredEvent]): Self = StObject.set(x, "Page.loadEventFired", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotloadEventFiredVarargs(value: LoadEventFiredEvent*): Self = StObject.set(x, "Page.loadEventFired", js.Array(value :_*))
+        inline def setPageDotloadEventFiredVarargs(value: LoadEventFiredEvent*): Self = StObject.set(x, "Page.loadEventFired", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotnavigatedWithinDocument(value: js.Array[NavigatedWithinDocumentEvent]): Self = StObject.set(x, "Page.navigatedWithinDocument", value.asInstanceOf[js.Any])
+        inline def setPageDotnavigatedWithinDocument(value: js.Array[NavigatedWithinDocumentEvent]): Self = StObject.set(x, "Page.navigatedWithinDocument", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotnavigatedWithinDocumentVarargs(value: NavigatedWithinDocumentEvent*): Self = StObject.set(x, "Page.navigatedWithinDocument", js.Array(value :_*))
+        inline def setPageDotnavigatedWithinDocumentVarargs(value: NavigatedWithinDocumentEvent*): Self = StObject.set(x, "Page.navigatedWithinDocument", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotscreencastFrame(value: js.Array[ScreencastFrameEvent]): Self = StObject.set(x, "Page.screencastFrame", value.asInstanceOf[js.Any])
+        inline def setPageDotscreencastFrame(value: js.Array[ScreencastFrameEvent]): Self = StObject.set(x, "Page.screencastFrame", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotscreencastFrameVarargs(value: ScreencastFrameEvent*): Self = StObject.set(x, "Page.screencastFrame", js.Array(value :_*))
+        inline def setPageDotscreencastFrameVarargs(value: ScreencastFrameEvent*): Self = StObject.set(x, "Page.screencastFrame", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotscreencastVisibilityChanged(value: js.Array[ScreencastVisibilityChangedEvent]): Self = StObject.set(x, "Page.screencastVisibilityChanged", value.asInstanceOf[js.Any])
+        inline def setPageDotscreencastVisibilityChanged(value: js.Array[ScreencastVisibilityChangedEvent]): Self = StObject.set(x, "Page.screencastVisibilityChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotscreencastVisibilityChangedVarargs(value: ScreencastVisibilityChangedEvent*): Self = StObject.set(x, "Page.screencastVisibilityChanged", js.Array(value :_*))
+        inline def setPageDotscreencastVisibilityChangedVarargs(value: ScreencastVisibilityChangedEvent*): Self = StObject.set(x, "Page.screencastVisibilityChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setPageDotwindowOpen(value: js.Array[WindowOpenEvent]): Self = StObject.set(x, "Page.windowOpen", value.asInstanceOf[js.Any])
+        inline def setPageDotwindowOpen(value: js.Array[WindowOpenEvent]): Self = StObject.set(x, "Page.windowOpen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDotwindowOpenVarargs(value: WindowOpenEvent*): Self = StObject.set(x, "Page.windowOpen", js.Array(value :_*))
+        inline def setPageDotwindowOpenVarargs(value: WindowOpenEvent*): Self = StObject.set(x, "Page.windowOpen", js.Array(value :_*))
         
-        @scala.inline
-        def setPerformanceDotmetrics(value: js.Array[MetricsEvent]): Self = StObject.set(x, "Performance.metrics", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotmetrics(value: js.Array[MetricsEvent]): Self = StObject.set(x, "Performance.metrics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPerformanceDotmetricsVarargs(value: MetricsEvent*): Self = StObject.set(x, "Performance.metrics", js.Array(value :_*))
+        inline def setPerformanceDotmetricsVarargs(value: MetricsEvent*): Self = StObject.set(x, "Performance.metrics", js.Array(value :_*))
         
-        @scala.inline
-        def setProfilerDotconsoleProfileFinished(value: js.Array[ConsoleProfileFinishedEvent]): Self = StObject.set(x, "Profiler.consoleProfileFinished", value.asInstanceOf[js.Any])
+        inline def setProfilerDotconsoleProfileFinished(value: js.Array[ConsoleProfileFinishedEvent]): Self = StObject.set(x, "Profiler.consoleProfileFinished", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotconsoleProfileFinishedVarargs(value: ConsoleProfileFinishedEvent*): Self = StObject.set(x, "Profiler.consoleProfileFinished", js.Array(value :_*))
+        inline def setProfilerDotconsoleProfileFinishedVarargs(value: ConsoleProfileFinishedEvent*): Self = StObject.set(x, "Profiler.consoleProfileFinished", js.Array(value :_*))
         
-        @scala.inline
-        def setProfilerDotconsoleProfileStarted(value: js.Array[ConsoleProfileStartedEvent]): Self = StObject.set(x, "Profiler.consoleProfileStarted", value.asInstanceOf[js.Any])
+        inline def setProfilerDotconsoleProfileStarted(value: js.Array[ConsoleProfileStartedEvent]): Self = StObject.set(x, "Profiler.consoleProfileStarted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotconsoleProfileStartedVarargs(value: ConsoleProfileStartedEvent*): Self = StObject.set(x, "Profiler.consoleProfileStarted", js.Array(value :_*))
+        inline def setProfilerDotconsoleProfileStartedVarargs(value: ConsoleProfileStartedEvent*): Self = StObject.set(x, "Profiler.consoleProfileStarted", js.Array(value :_*))
         
-        @scala.inline
-        def setProfilerDotpreciseCoverageDeltaUpdate(value: js.Array[PreciseCoverageDeltaUpdateEvent]): Self = StObject.set(x, "Profiler.preciseCoverageDeltaUpdate", value.asInstanceOf[js.Any])
+        inline def setProfilerDotpreciseCoverageDeltaUpdate(value: js.Array[PreciseCoverageDeltaUpdateEvent]): Self = StObject.set(x, "Profiler.preciseCoverageDeltaUpdate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfilerDotpreciseCoverageDeltaUpdateVarargs(value: PreciseCoverageDeltaUpdateEvent*): Self = StObject.set(x, "Profiler.preciseCoverageDeltaUpdate", js.Array(value :_*))
+        inline def setProfilerDotpreciseCoverageDeltaUpdateVarargs(value: PreciseCoverageDeltaUpdateEvent*): Self = StObject.set(x, "Profiler.preciseCoverageDeltaUpdate", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotbindingCalled(value: js.Array[BindingCalledEvent]): Self = StObject.set(x, "Runtime.bindingCalled", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotbindingCalled(value: js.Array[BindingCalledEvent]): Self = StObject.set(x, "Runtime.bindingCalled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotbindingCalledVarargs(value: BindingCalledEvent*): Self = StObject.set(x, "Runtime.bindingCalled", js.Array(value :_*))
+        inline def setRuntimeDotbindingCalledVarargs(value: BindingCalledEvent*): Self = StObject.set(x, "Runtime.bindingCalled", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotconsoleAPICalled(value: js.Array[ConsoleAPICalledEvent]): Self = StObject.set(x, "Runtime.consoleAPICalled", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotconsoleAPICalled(value: js.Array[ConsoleAPICalledEvent]): Self = StObject.set(x, "Runtime.consoleAPICalled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotconsoleAPICalledVarargs(value: ConsoleAPICalledEvent*): Self = StObject.set(x, "Runtime.consoleAPICalled", js.Array(value :_*))
+        inline def setRuntimeDotconsoleAPICalledVarargs(value: ConsoleAPICalledEvent*): Self = StObject.set(x, "Runtime.consoleAPICalled", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotexceptionRevoked(value: js.Array[ExceptionRevokedEvent]): Self = StObject.set(x, "Runtime.exceptionRevoked", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotexceptionRevoked(value: js.Array[ExceptionRevokedEvent]): Self = StObject.set(x, "Runtime.exceptionRevoked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotexceptionRevokedVarargs(value: ExceptionRevokedEvent*): Self = StObject.set(x, "Runtime.exceptionRevoked", js.Array(value :_*))
+        inline def setRuntimeDotexceptionRevokedVarargs(value: ExceptionRevokedEvent*): Self = StObject.set(x, "Runtime.exceptionRevoked", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotexceptionThrown(value: js.Array[ExceptionThrownEvent]): Self = StObject.set(x, "Runtime.exceptionThrown", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotexceptionThrown(value: js.Array[ExceptionThrownEvent]): Self = StObject.set(x, "Runtime.exceptionThrown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotexceptionThrownVarargs(value: ExceptionThrownEvent*): Self = StObject.set(x, "Runtime.exceptionThrown", js.Array(value :_*))
+        inline def setRuntimeDotexceptionThrownVarargs(value: ExceptionThrownEvent*): Self = StObject.set(x, "Runtime.exceptionThrown", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotexecutionContextCreated(value: js.Array[ExecutionContextCreatedEvent]): Self = StObject.set(x, "Runtime.executionContextCreated", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotexecutionContextCreated(value: js.Array[ExecutionContextCreatedEvent]): Self = StObject.set(x, "Runtime.executionContextCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotexecutionContextCreatedVarargs(value: ExecutionContextCreatedEvent*): Self = StObject.set(x, "Runtime.executionContextCreated", js.Array(value :_*))
+        inline def setRuntimeDotexecutionContextCreatedVarargs(value: ExecutionContextCreatedEvent*): Self = StObject.set(x, "Runtime.executionContextCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotexecutionContextDestroyed(value: js.Array[ExecutionContextDestroyedEvent]): Self = StObject.set(x, "Runtime.executionContextDestroyed", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotexecutionContextDestroyed(value: js.Array[ExecutionContextDestroyedEvent]): Self = StObject.set(x, "Runtime.executionContextDestroyed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotexecutionContextDestroyedVarargs(value: ExecutionContextDestroyedEvent*): Self = StObject.set(x, "Runtime.executionContextDestroyed", js.Array(value :_*))
+        inline def setRuntimeDotexecutionContextDestroyedVarargs(value: ExecutionContextDestroyedEvent*): Self = StObject.set(x, "Runtime.executionContextDestroyed", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotexecutionContextsCleared(value: js.Array[js.Any]): Self = StObject.set(x, "Runtime.executionContextsCleared", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotexecutionContextsCleared(value: js.Array[js.Any]): Self = StObject.set(x, "Runtime.executionContextsCleared", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotexecutionContextsClearedVarargs(value: js.Any*): Self = StObject.set(x, "Runtime.executionContextsCleared", js.Array(value :_*))
+        inline def setRuntimeDotexecutionContextsClearedVarargs(value: js.Any*): Self = StObject.set(x, "Runtime.executionContextsCleared", js.Array(value :_*))
         
-        @scala.inline
-        def setRuntimeDotinspectRequested(value: js.Array[InspectRequestedEvent]): Self = StObject.set(x, "Runtime.inspectRequested", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotinspectRequested(value: js.Array[InspectRequestedEvent]): Self = StObject.set(x, "Runtime.inspectRequested", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntimeDotinspectRequestedVarargs(value: InspectRequestedEvent*): Self = StObject.set(x, "Runtime.inspectRequested", js.Array(value :_*))
+        inline def setRuntimeDotinspectRequestedVarargs(value: InspectRequestedEvent*): Self = StObject.set(x, "Runtime.inspectRequested", js.Array(value :_*))
         
-        @scala.inline
-        def setSecurityDotcertificateError(value: js.Array[CertificateErrorEvent]): Self = StObject.set(x, "Security.certificateError", value.asInstanceOf[js.Any])
+        inline def setSecurityDotcertificateError(value: js.Array[CertificateErrorEvent]): Self = StObject.set(x, "Security.certificateError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDotcertificateErrorVarargs(value: CertificateErrorEvent*): Self = StObject.set(x, "Security.certificateError", js.Array(value :_*))
+        inline def setSecurityDotcertificateErrorVarargs(value: CertificateErrorEvent*): Self = StObject.set(x, "Security.certificateError", js.Array(value :_*))
         
-        @scala.inline
-        def setSecurityDotsecurityStateChanged(value: js.Array[SecurityStateChangedEvent]): Self = StObject.set(x, "Security.securityStateChanged", value.asInstanceOf[js.Any])
+        inline def setSecurityDotsecurityStateChanged(value: js.Array[SecurityStateChangedEvent]): Self = StObject.set(x, "Security.securityStateChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDotsecurityStateChangedVarargs(value: SecurityStateChangedEvent*): Self = StObject.set(x, "Security.securityStateChanged", js.Array(value :_*))
+        inline def setSecurityDotsecurityStateChangedVarargs(value: SecurityStateChangedEvent*): Self = StObject.set(x, "Security.securityStateChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setSecurityDotvisibleSecurityStateChanged(value: js.Array[VisibleSecurityStateChangedEvent]): Self = StObject.set(x, "Security.visibleSecurityStateChanged", value.asInstanceOf[js.Any])
+        inline def setSecurityDotvisibleSecurityStateChanged(value: js.Array[VisibleSecurityStateChangedEvent]): Self = StObject.set(x, "Security.visibleSecurityStateChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityDotvisibleSecurityStateChangedVarargs(value: VisibleSecurityStateChangedEvent*): Self = StObject.set(x, "Security.visibleSecurityStateChanged", js.Array(value :_*))
+        inline def setSecurityDotvisibleSecurityStateChangedVarargs(value: VisibleSecurityStateChangedEvent*): Self = StObject.set(x, "Security.visibleSecurityStateChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setServiceWorkerDotworkerErrorReported(value: js.Array[WorkerErrorReportedEvent]): Self = StObject.set(x, "ServiceWorker.workerErrorReported", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotworkerErrorReported(value: js.Array[WorkerErrorReportedEvent]): Self = StObject.set(x, "ServiceWorker.workerErrorReported", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotworkerErrorReportedVarargs(value: WorkerErrorReportedEvent*): Self = StObject.set(x, "ServiceWorker.workerErrorReported", js.Array(value :_*))
+        inline def setServiceWorkerDotworkerErrorReportedVarargs(value: WorkerErrorReportedEvent*): Self = StObject.set(x, "ServiceWorker.workerErrorReported", js.Array(value :_*))
         
-        @scala.inline
-        def setServiceWorkerDotworkerRegistrationUpdated(value: js.Array[WorkerRegistrationUpdatedEvent]): Self = StObject.set(x, "ServiceWorker.workerRegistrationUpdated", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotworkerRegistrationUpdated(value: js.Array[WorkerRegistrationUpdatedEvent]): Self = StObject.set(x, "ServiceWorker.workerRegistrationUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotworkerRegistrationUpdatedVarargs(value: WorkerRegistrationUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerRegistrationUpdated", js.Array(value :_*))
+        inline def setServiceWorkerDotworkerRegistrationUpdatedVarargs(value: WorkerRegistrationUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerRegistrationUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setServiceWorkerDotworkerVersionUpdated(value: js.Array[WorkerVersionUpdatedEvent]): Self = StObject.set(x, "ServiceWorker.workerVersionUpdated", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotworkerVersionUpdated(value: js.Array[WorkerVersionUpdatedEvent]): Self = StObject.set(x, "ServiceWorker.workerVersionUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceWorkerDotworkerVersionUpdatedVarargs(value: WorkerVersionUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerVersionUpdated", js.Array(value :_*))
+        inline def setServiceWorkerDotworkerVersionUpdatedVarargs(value: WorkerVersionUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerVersionUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setStorageDotcacheStorageContentUpdated(value: js.Array[CacheStorageContentUpdatedEvent]): Self = StObject.set(x, "Storage.cacheStorageContentUpdated", value.asInstanceOf[js.Any])
+        inline def setStorageDotcacheStorageContentUpdated(value: js.Array[CacheStorageContentUpdatedEvent]): Self = StObject.set(x, "Storage.cacheStorageContentUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotcacheStorageContentUpdatedVarargs(value: CacheStorageContentUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageContentUpdated", js.Array(value :_*))
+        inline def setStorageDotcacheStorageContentUpdatedVarargs(value: CacheStorageContentUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageContentUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setStorageDotcacheStorageListUpdated(value: js.Array[CacheStorageListUpdatedEvent]): Self = StObject.set(x, "Storage.cacheStorageListUpdated", value.asInstanceOf[js.Any])
+        inline def setStorageDotcacheStorageListUpdated(value: js.Array[CacheStorageListUpdatedEvent]): Self = StObject.set(x, "Storage.cacheStorageListUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotcacheStorageListUpdatedVarargs(value: CacheStorageListUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageListUpdated", js.Array(value :_*))
+        inline def setStorageDotcacheStorageListUpdatedVarargs(value: CacheStorageListUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageListUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setStorageDotindexedDBContentUpdated(value: js.Array[IndexedDBContentUpdatedEvent]): Self = StObject.set(x, "Storage.indexedDBContentUpdated", value.asInstanceOf[js.Any])
+        inline def setStorageDotindexedDBContentUpdated(value: js.Array[IndexedDBContentUpdatedEvent]): Self = StObject.set(x, "Storage.indexedDBContentUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotindexedDBContentUpdatedVarargs(value: IndexedDBContentUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBContentUpdated", js.Array(value :_*))
+        inline def setStorageDotindexedDBContentUpdatedVarargs(value: IndexedDBContentUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBContentUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setStorageDotindexedDBListUpdated(value: js.Array[IndexedDBListUpdatedEvent]): Self = StObject.set(x, "Storage.indexedDBListUpdated", value.asInstanceOf[js.Any])
+        inline def setStorageDotindexedDBListUpdated(value: js.Array[IndexedDBListUpdatedEvent]): Self = StObject.set(x, "Storage.indexedDBListUpdated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStorageDotindexedDBListUpdatedVarargs(value: IndexedDBListUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBListUpdated", js.Array(value :_*))
+        inline def setStorageDotindexedDBListUpdatedVarargs(value: IndexedDBListUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBListUpdated", js.Array(value :_*))
         
-        @scala.inline
-        def setTargetDotattachedToTarget(value: js.Array[AttachedToTargetEvent]): Self = StObject.set(x, "Target.attachedToTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotattachedToTarget(value: js.Array[AttachedToTargetEvent]): Self = StObject.set(x, "Target.attachedToTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotattachedToTargetVarargs(value: AttachedToTargetEvent*): Self = StObject.set(x, "Target.attachedToTarget", js.Array(value :_*))
+        inline def setTargetDotattachedToTargetVarargs(value: AttachedToTargetEvent*): Self = StObject.set(x, "Target.attachedToTarget", js.Array(value :_*))
         
-        @scala.inline
-        def setTargetDotdetachedFromTarget(value: js.Array[DetachedFromTargetEvent]): Self = StObject.set(x, "Target.detachedFromTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotdetachedFromTarget(value: js.Array[DetachedFromTargetEvent]): Self = StObject.set(x, "Target.detachedFromTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotdetachedFromTargetVarargs(value: DetachedFromTargetEvent*): Self = StObject.set(x, "Target.detachedFromTarget", js.Array(value :_*))
+        inline def setTargetDotdetachedFromTargetVarargs(value: DetachedFromTargetEvent*): Self = StObject.set(x, "Target.detachedFromTarget", js.Array(value :_*))
         
-        @scala.inline
-        def setTargetDotreceivedMessageFromTarget(value: js.Array[ReceivedMessageFromTargetEvent]): Self = StObject.set(x, "Target.receivedMessageFromTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotreceivedMessageFromTarget(value: js.Array[ReceivedMessageFromTargetEvent]): Self = StObject.set(x, "Target.receivedMessageFromTarget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDotreceivedMessageFromTargetVarargs(value: ReceivedMessageFromTargetEvent*): Self = StObject.set(x, "Target.receivedMessageFromTarget", js.Array(value :_*))
+        inline def setTargetDotreceivedMessageFromTargetVarargs(value: ReceivedMessageFromTargetEvent*): Self = StObject.set(x, "Target.receivedMessageFromTarget", js.Array(value :_*))
         
-        @scala.inline
-        def setTargetDottargetCrashed(value: js.Array[TargetCrashedEvent]): Self = StObject.set(x, "Target.targetCrashed", value.asInstanceOf[js.Any])
+        inline def setTargetDottargetCrashed(value: js.Array[TargetCrashedEvent]): Self = StObject.set(x, "Target.targetCrashed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDottargetCrashedVarargs(value: TargetCrashedEvent*): Self = StObject.set(x, "Target.targetCrashed", js.Array(value :_*))
+        inline def setTargetDottargetCrashedVarargs(value: TargetCrashedEvent*): Self = StObject.set(x, "Target.targetCrashed", js.Array(value :_*))
         
-        @scala.inline
-        def setTargetDottargetCreated(value: js.Array[TargetCreatedEvent]): Self = StObject.set(x, "Target.targetCreated", value.asInstanceOf[js.Any])
+        inline def setTargetDottargetCreated(value: js.Array[TargetCreatedEvent]): Self = StObject.set(x, "Target.targetCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDottargetCreatedVarargs(value: TargetCreatedEvent*): Self = StObject.set(x, "Target.targetCreated", js.Array(value :_*))
+        inline def setTargetDottargetCreatedVarargs(value: TargetCreatedEvent*): Self = StObject.set(x, "Target.targetCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setTargetDottargetDestroyed(value: js.Array[TargetDestroyedEvent]): Self = StObject.set(x, "Target.targetDestroyed", value.asInstanceOf[js.Any])
+        inline def setTargetDottargetDestroyed(value: js.Array[TargetDestroyedEvent]): Self = StObject.set(x, "Target.targetDestroyed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDottargetDestroyedVarargs(value: TargetDestroyedEvent*): Self = StObject.set(x, "Target.targetDestroyed", js.Array(value :_*))
+        inline def setTargetDottargetDestroyedVarargs(value: TargetDestroyedEvent*): Self = StObject.set(x, "Target.targetDestroyed", js.Array(value :_*))
         
-        @scala.inline
-        def setTargetDottargetInfoChanged(value: js.Array[TargetInfoChangedEvent]): Self = StObject.set(x, "Target.targetInfoChanged", value.asInstanceOf[js.Any])
+        inline def setTargetDottargetInfoChanged(value: js.Array[TargetInfoChangedEvent]): Self = StObject.set(x, "Target.targetInfoChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetDottargetInfoChangedVarargs(value: TargetInfoChangedEvent*): Self = StObject.set(x, "Target.targetInfoChanged", js.Array(value :_*))
+        inline def setTargetDottargetInfoChangedVarargs(value: TargetInfoChangedEvent*): Self = StObject.set(x, "Target.targetInfoChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setTetheringDotaccepted(value: js.Array[AcceptedEvent]): Self = StObject.set(x, "Tethering.accepted", value.asInstanceOf[js.Any])
+        inline def setTetheringDotaccepted(value: js.Array[AcceptedEvent]): Self = StObject.set(x, "Tethering.accepted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTetheringDotacceptedVarargs(value: AcceptedEvent*): Self = StObject.set(x, "Tethering.accepted", js.Array(value :_*))
+        inline def setTetheringDotacceptedVarargs(value: AcceptedEvent*): Self = StObject.set(x, "Tethering.accepted", js.Array(value :_*))
         
-        @scala.inline
-        def setTracingDotbufferUsage(value: js.Array[BufferUsageEvent]): Self = StObject.set(x, "Tracing.bufferUsage", value.asInstanceOf[js.Any])
+        inline def setTracingDotbufferUsage(value: js.Array[BufferUsageEvent]): Self = StObject.set(x, "Tracing.bufferUsage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDotbufferUsageVarargs(value: BufferUsageEvent*): Self = StObject.set(x, "Tracing.bufferUsage", js.Array(value :_*))
+        inline def setTracingDotbufferUsageVarargs(value: BufferUsageEvent*): Self = StObject.set(x, "Tracing.bufferUsage", js.Array(value :_*))
         
-        @scala.inline
-        def setTracingDotdataCollected(value: js.Array[DataCollectedEvent]): Self = StObject.set(x, "Tracing.dataCollected", value.asInstanceOf[js.Any])
+        inline def setTracingDotdataCollected(value: js.Array[DataCollectedEvent]): Self = StObject.set(x, "Tracing.dataCollected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDotdataCollectedVarargs(value: DataCollectedEvent*): Self = StObject.set(x, "Tracing.dataCollected", js.Array(value :_*))
+        inline def setTracingDotdataCollectedVarargs(value: DataCollectedEvent*): Self = StObject.set(x, "Tracing.dataCollected", js.Array(value :_*))
         
-        @scala.inline
-        def setTracingDottracingComplete(value: js.Array[TracingCompleteEvent]): Self = StObject.set(x, "Tracing.tracingComplete", value.asInstanceOf[js.Any])
+        inline def setTracingDottracingComplete(value: js.Array[TracingCompleteEvent]): Self = StObject.set(x, "Tracing.tracingComplete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracingDottracingCompleteVarargs(value: TracingCompleteEvent*): Self = StObject.set(x, "Tracing.tracingComplete", js.Array(value :_*))
+        inline def setTracingDottracingCompleteVarargs(value: TracingCompleteEvent*): Self = StObject.set(x, "Tracing.tracingComplete", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotaudioListenerCreated(value: js.Array[AudioListenerCreatedEvent]): Self = StObject.set(x, "WebAudio.audioListenerCreated", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotaudioListenerCreated(value: js.Array[AudioListenerCreatedEvent]): Self = StObject.set(x, "WebAudio.audioListenerCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotaudioListenerCreatedVarargs(value: AudioListenerCreatedEvent*): Self = StObject.set(x, "WebAudio.audioListenerCreated", js.Array(value :_*))
+        inline def setWebAudioDotaudioListenerCreatedVarargs(value: AudioListenerCreatedEvent*): Self = StObject.set(x, "WebAudio.audioListenerCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotaudioListenerWillBeDestroyed(value: js.Array[AudioListenerWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioListenerWillBeDestroyed", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotaudioListenerWillBeDestroyed(value: js.Array[AudioListenerWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioListenerWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotaudioListenerWillBeDestroyedVarargs(value: AudioListenerWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioListenerWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotaudioListenerWillBeDestroyedVarargs(value: AudioListenerWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioListenerWillBeDestroyed", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotaudioNodeCreated(value: js.Array[AudioNodeCreatedEvent]): Self = StObject.set(x, "WebAudio.audioNodeCreated", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotaudioNodeCreated(value: js.Array[AudioNodeCreatedEvent]): Self = StObject.set(x, "WebAudio.audioNodeCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotaudioNodeCreatedVarargs(value: AudioNodeCreatedEvent*): Self = StObject.set(x, "WebAudio.audioNodeCreated", js.Array(value :_*))
+        inline def setWebAudioDotaudioNodeCreatedVarargs(value: AudioNodeCreatedEvent*): Self = StObject.set(x, "WebAudio.audioNodeCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotaudioNodeWillBeDestroyed(value: js.Array[AudioNodeWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioNodeWillBeDestroyed", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotaudioNodeWillBeDestroyed(value: js.Array[AudioNodeWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioNodeWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotaudioNodeWillBeDestroyedVarargs(value: AudioNodeWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioNodeWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotaudioNodeWillBeDestroyedVarargs(value: AudioNodeWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioNodeWillBeDestroyed", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotaudioParamCreated(value: js.Array[AudioParamCreatedEvent]): Self = StObject.set(x, "WebAudio.audioParamCreated", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotaudioParamCreated(value: js.Array[AudioParamCreatedEvent]): Self = StObject.set(x, "WebAudio.audioParamCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotaudioParamCreatedVarargs(value: AudioParamCreatedEvent*): Self = StObject.set(x, "WebAudio.audioParamCreated", js.Array(value :_*))
+        inline def setWebAudioDotaudioParamCreatedVarargs(value: AudioParamCreatedEvent*): Self = StObject.set(x, "WebAudio.audioParamCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotaudioParamWillBeDestroyed(value: js.Array[AudioParamWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioParamWillBeDestroyed", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotaudioParamWillBeDestroyed(value: js.Array[AudioParamWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioParamWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotaudioParamWillBeDestroyedVarargs(value: AudioParamWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioParamWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotaudioParamWillBeDestroyedVarargs(value: AudioParamWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioParamWillBeDestroyed", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotcontextChanged(value: js.Array[ContextChangedEvent]): Self = StObject.set(x, "WebAudio.contextChanged", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotcontextChanged(value: js.Array[ContextChangedEvent]): Self = StObject.set(x, "WebAudio.contextChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotcontextChangedVarargs(value: ContextChangedEvent*): Self = StObject.set(x, "WebAudio.contextChanged", js.Array(value :_*))
+        inline def setWebAudioDotcontextChangedVarargs(value: ContextChangedEvent*): Self = StObject.set(x, "WebAudio.contextChanged", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotcontextCreated(value: js.Array[ContextCreatedEvent]): Self = StObject.set(x, "WebAudio.contextCreated", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotcontextCreated(value: js.Array[ContextCreatedEvent]): Self = StObject.set(x, "WebAudio.contextCreated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotcontextCreatedVarargs(value: ContextCreatedEvent*): Self = StObject.set(x, "WebAudio.contextCreated", js.Array(value :_*))
+        inline def setWebAudioDotcontextCreatedVarargs(value: ContextCreatedEvent*): Self = StObject.set(x, "WebAudio.contextCreated", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotcontextWillBeDestroyed(value: js.Array[ContextWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.contextWillBeDestroyed", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotcontextWillBeDestroyed(value: js.Array[ContextWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.contextWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotcontextWillBeDestroyedVarargs(value: ContextWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.contextWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotcontextWillBeDestroyedVarargs(value: ContextWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.contextWillBeDestroyed", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotnodeParamConnected(value: js.Array[NodeParamConnectedEvent]): Self = StObject.set(x, "WebAudio.nodeParamConnected", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotnodeParamConnected(value: js.Array[NodeParamConnectedEvent]): Self = StObject.set(x, "WebAudio.nodeParamConnected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotnodeParamConnectedVarargs(value: NodeParamConnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamConnected", js.Array(value :_*))
+        inline def setWebAudioDotnodeParamConnectedVarargs(value: NodeParamConnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamConnected", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotnodeParamDisconnected(value: js.Array[NodeParamDisconnectedEvent]): Self = StObject.set(x, "WebAudio.nodeParamDisconnected", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotnodeParamDisconnected(value: js.Array[NodeParamDisconnectedEvent]): Self = StObject.set(x, "WebAudio.nodeParamDisconnected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotnodeParamDisconnectedVarargs(value: NodeParamDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamDisconnected", js.Array(value :_*))
+        inline def setWebAudioDotnodeParamDisconnectedVarargs(value: NodeParamDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamDisconnected", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotnodesConnected(value: js.Array[NodesConnectedEvent]): Self = StObject.set(x, "WebAudio.nodesConnected", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotnodesConnected(value: js.Array[NodesConnectedEvent]): Self = StObject.set(x, "WebAudio.nodesConnected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotnodesConnectedVarargs(value: NodesConnectedEvent*): Self = StObject.set(x, "WebAudio.nodesConnected", js.Array(value :_*))
+        inline def setWebAudioDotnodesConnectedVarargs(value: NodesConnectedEvent*): Self = StObject.set(x, "WebAudio.nodesConnected", js.Array(value :_*))
         
-        @scala.inline
-        def setWebAudioDotnodesDisconnected(value: js.Array[NodesDisconnectedEvent]): Self = StObject.set(x, "WebAudio.nodesDisconnected", value.asInstanceOf[js.Any])
+        inline def setWebAudioDotnodesDisconnected(value: js.Array[NodesDisconnectedEvent]): Self = StObject.set(x, "WebAudio.nodesDisconnected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebAudioDotnodesDisconnectedVarargs(value: NodesDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodesDisconnected", js.Array(value :_*))
+        inline def setWebAudioDotnodesDisconnectedVarargs(value: NodesDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodesDisconnected", js.Array(value :_*))
       }
     }
   }

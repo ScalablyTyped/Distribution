@@ -25,30 +25,22 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(): js.Promise[Transport[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[Transport[Descriptor]]]
-    @scala.inline
-    def create(openTimeout: Double): js.Promise[Transport[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Transport[Descriptor]]]
-    @scala.inline
-    def create(openTimeout: Double, listenTimeout: Double): js.Promise[Transport[Descriptor]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any], listenTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport[Descriptor]]]
-    @scala.inline
-    def create(openTimeout: Unit, listenTimeout: Double): js.Promise[Transport[Descriptor]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any], listenTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport[Descriptor]]]
+    inline def create(): js.Promise[Transport[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[Transport[Descriptor]]]
+    inline def create(openTimeout: Double): js.Promise[Transport[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Transport[Descriptor]]]
+    inline def create(openTimeout: Double, listenTimeout: Double): js.Promise[Transport[Descriptor]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any], listenTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport[Descriptor]]]
+    inline def create(openTimeout: Unit, listenTimeout: Double): js.Promise[Transport[Descriptor]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any], listenTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport[Descriptor]]]
     
     /* static member */
-    @scala.inline
-    def isSupported(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[Boolean]]
+    inline def isSupported(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[Boolean]]
     
     /* static member */
-    @scala.inline
-    def list(): js.Promise[js.Array[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[Descriptor]]]
+    inline def list(): js.Promise[js.Array[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[Descriptor]]]
     
     /* static member */
-    @scala.inline
-    def listen(observer: Observer[DescriptorEvent[Descriptor]]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(observer.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+    inline def listen(observer: Observer[DescriptorEvent[Descriptor]]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(observer.asInstanceOf[js.Any]).asInstanceOf[Subscription]
     
     /* static member */
-    @scala.inline
-    def open(descriptor: Descriptor): js.Promise[
+    inline def open(descriptor: Descriptor): js.Promise[
         Transport[
           /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
         ]
@@ -57,8 +49,7 @@ object mod {
           /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
         ]
       ]]
-    @scala.inline
-    def open(descriptor: Descriptor, timeout: Double): js.Promise[
+    inline def open(descriptor: Descriptor, timeout: Double): js.Promise[
         Transport[
           /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
         ]
@@ -69,8 +60,7 @@ object mod {
       ]]
   }
   
-  @scala.inline
-  def getAltStatusMessage(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltStatusMessage")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getAltStatusMessage(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltStatusMessage")(code.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Descriptor = String
   
@@ -84,27 +74,21 @@ object mod {
   }
   object DescriptorEvent {
     
-    @scala.inline
-    def apply[Descriptor](descriptor: Descriptor, `type`: add | remove): DescriptorEvent[Descriptor] = {
+    inline def apply[Descriptor](descriptor: Descriptor, `type`: add | remove): DescriptorEvent[Descriptor] = {
       val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescriptorEvent[Descriptor]]
     }
     
-    @scala.inline
-    implicit class DescriptorEventMutableBuilder[Self <: DescriptorEvent[?], Descriptor] (val x: Self & DescriptorEvent[Descriptor]) extends AnyVal {
+    extension [Self <: DescriptorEvent[?], Descriptor](x: Self & DescriptorEvent[Descriptor]) {
       
-      @scala.inline
-      def setDescriptor(value: Descriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+      inline def setDescriptor(value: Descriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+      inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
       
-      @scala.inline
-      def setType(value: add | remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: add | remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,23 +104,18 @@ object mod {
   }
   object Observer {
     
-    @scala.inline
-    def apply[Ev](complete: () => js.Any, error: js.Any => js.Any, next: Ev => js.Any): Observer[Ev] = {
+    inline def apply[Ev](complete: () => js.Any, error: js.Any => js.Any, next: Ev => js.Any): Observer[Ev] = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Observer[Ev]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?], Ev] (val x: Self & Observer[Ev]) extends AnyVal {
+    extension [Self <: Observer[?], Ev](x: Self & Observer[Ev]) {
       
-      @scala.inline
-      def setComplete(value: () => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNext(value: Ev => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: Ev => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -146,17 +125,14 @@ object mod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(unsubscribe: () => Unit): Subscription = {
+    inline def apply(unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   

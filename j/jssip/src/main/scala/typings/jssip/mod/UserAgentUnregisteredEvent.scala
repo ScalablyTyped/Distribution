@@ -12,22 +12,17 @@ trait UserAgentUnregisteredEvent extends StObject {
 }
 object UserAgentUnregisteredEvent {
   
-  @scala.inline
-  def apply(response: IncomingResponse): UserAgentUnregisteredEvent = {
+  inline def apply(response: IncomingResponse): UserAgentUnregisteredEvent = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentUnregisteredEvent]
   }
   
-  @scala.inline
-  implicit class UserAgentUnregisteredEventMutableBuilder[Self <: UserAgentUnregisteredEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentUnregisteredEvent](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

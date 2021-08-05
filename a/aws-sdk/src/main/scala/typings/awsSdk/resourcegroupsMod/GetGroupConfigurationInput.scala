@@ -13,19 +13,15 @@ trait GetGroupConfigurationInput extends StObject {
 }
 object GetGroupConfigurationInput {
   
-  @scala.inline
-  def apply(): GetGroupConfigurationInput = {
+  inline def apply(): GetGroupConfigurationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGroupConfigurationInput]
   }
   
-  @scala.inline
-  implicit class GetGroupConfigurationInputMutableBuilder[Self <: GetGroupConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
   }
 }

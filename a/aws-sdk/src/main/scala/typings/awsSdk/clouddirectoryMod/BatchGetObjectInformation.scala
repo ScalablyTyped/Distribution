@@ -13,16 +13,13 @@ trait BatchGetObjectInformation extends StObject {
 }
 object BatchGetObjectInformation {
   
-  @scala.inline
-  def apply(ObjectReference: ObjectReference): BatchGetObjectInformation = {
+  inline def apply(ObjectReference: ObjectReference): BatchGetObjectInformation = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetObjectInformation]
   }
   
-  @scala.inline
-  implicit class BatchGetObjectInformationMutableBuilder[Self <: BatchGetObjectInformation] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetObjectInformation](x: Self) {
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }
 }

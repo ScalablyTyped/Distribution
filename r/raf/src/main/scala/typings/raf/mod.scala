@@ -6,18 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(callback: js.Function1[/* timestamp */ Double, Unit]): Double = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(callback: js.Function1[/* timestamp */ Double, Unit]): Double = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("raf", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cancel(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancel(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def polyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")().asInstanceOf[Unit]
-  @scala.inline
-  def polyfill(globalObject: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(globalObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def polyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")().asInstanceOf[Unit]
+  inline def polyfill(globalObject: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polyfill")(globalObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

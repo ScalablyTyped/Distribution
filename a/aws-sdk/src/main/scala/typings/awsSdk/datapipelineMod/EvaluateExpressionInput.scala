@@ -23,22 +23,17 @@ trait EvaluateExpressionInput extends StObject {
 }
 object EvaluateExpressionInput {
   
-  @scala.inline
-  def apply(expression: longString, objectId: id, pipelineId: id): EvaluateExpressionInput = {
+  inline def apply(expression: longString, objectId: id, pipelineId: id): EvaluateExpressionInput = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], pipelineId = pipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluateExpressionInput]
   }
   
-  @scala.inline
-  implicit class EvaluateExpressionInputMutableBuilder[Self <: EvaluateExpressionInput] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluateExpressionInput](x: Self) {
     
-    @scala.inline
-    def setExpression(value: longString): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: longString): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: id): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: id): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
   }
 }

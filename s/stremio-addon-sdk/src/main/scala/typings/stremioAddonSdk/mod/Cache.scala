@@ -27,31 +27,23 @@ trait Cache extends StObject {
 }
 object Cache {
   
-  @scala.inline
-  def apply(): Cache = {
+  inline def apply(): Cache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cache]
   }
   
-  @scala.inline
-  implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+  extension [Self <: Cache](x: Self) {
     
-    @scala.inline
-    def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
+    inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
+    inline def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
     
-    @scala.inline
-    def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
+    inline def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
+    inline def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
     
-    @scala.inline
-    def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
+    inline def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
+    inline def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
   }
 }

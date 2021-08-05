@@ -25,25 +25,19 @@ trait SchemaSubscriptionCancelSurveyResult extends StObject {
 }
 object SchemaSubscriptionCancelSurveyResult {
   
-  @scala.inline
-  def apply(): SchemaSubscriptionCancelSurveyResult = {
+  inline def apply(): SchemaSubscriptionCancelSurveyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubscriptionCancelSurveyResult]
   }
   
-  @scala.inline
-  implicit class SchemaSubscriptionCancelSurveyResultMutableBuilder[Self <: SchemaSubscriptionCancelSurveyResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubscriptionCancelSurveyResult](x: Self) {
     
-    @scala.inline
-    def setCancelSurveyReason(value: Double): Self = StObject.set(x, "cancelSurveyReason", value.asInstanceOf[js.Any])
+    inline def setCancelSurveyReason(value: Double): Self = StObject.set(x, "cancelSurveyReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelSurveyReasonUndefined: Self = StObject.set(x, "cancelSurveyReason", js.undefined)
+    inline def setCancelSurveyReasonUndefined: Self = StObject.set(x, "cancelSurveyReason", js.undefined)
     
-    @scala.inline
-    def setUserInputCancelReason(value: String): Self = StObject.set(x, "userInputCancelReason", value.asInstanceOf[js.Any])
+    inline def setUserInputCancelReason(value: String): Self = StObject.set(x, "userInputCancelReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInputCancelReasonUndefined: Self = StObject.set(x, "userInputCancelReason", js.undefined)
+    inline def setUserInputCancelReasonUndefined: Self = StObject.set(x, "userInputCancelReason", js.undefined)
   }
 }

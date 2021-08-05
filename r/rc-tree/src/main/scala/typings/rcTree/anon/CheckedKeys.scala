@@ -28,8 +28,7 @@ trait CheckedKeys extends StObject {
 }
 object CheckedKeys {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkedKeys: js.Array[String | Double],
     dragOverNodeKey: String | Double,
     dropPosition: Double,
@@ -44,52 +43,36 @@ object CheckedKeys {
     __obj.asInstanceOf[CheckedKeys]
   }
   
-  @scala.inline
-  implicit class CheckedKeysMutableBuilder[Self <: CheckedKeys] (val x: Self) extends AnyVal {
+  extension [Self <: CheckedKeys](x: Self) {
     
-    @scala.inline
-    def setCheckedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
+    inline def setCheckedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
+    inline def setCheckedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setDragOverNodeKey(value: String | Double): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
+    inline def setDragOverNodeKey(value: String | Double): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+    inline def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
+    inline def setExpandedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
+    inline def setExpandedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setHalfCheckedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
+    inline def setHalfCheckedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHalfCheckedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
+    inline def setHalfCheckedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyEntities(value: Record[String | Double, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
+    inline def setKeyEntities(value: Record[String | Double, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
+    inline def setLoadedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "loadedKeys", js.Array(value :_*))
+    inline def setLoadedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "loadedKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadingKeys(value: js.Array[String | Double]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
+    inline def setLoadingKeys(value: js.Array[String | Double]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "loadingKeys", js.Array(value :_*))
+    inline def setLoadingKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "loadingKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
+    inline def setSelectedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+    inline def setSelectedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
   }
 }

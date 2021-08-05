@@ -11,6 +11,5 @@ object messageIdToStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def messageIdToString(msgId: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("messageIdToString")(msgId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def messageIdToString(msgId: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("messageIdToString")(msgId.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFACLMode extends StObject
 object MFACLMode {
   
-  @scala.inline
-  def AutomaticPermissionsWithComponents: `1` = 1.asInstanceOf[`1`]
+  inline def AutomaticPermissionsWithComponents: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Simple: `0` = 0.asInstanceOf[`0`]
+  inline def Simple: `0` = 0.asInstanceOf[`0`]
 }

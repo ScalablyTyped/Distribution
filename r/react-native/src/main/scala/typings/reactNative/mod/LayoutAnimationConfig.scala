@@ -16,34 +16,25 @@ trait LayoutAnimationConfig extends StObject {
 }
 object LayoutAnimationConfig {
   
-  @scala.inline
-  def apply(duration: Double): LayoutAnimationConfig = {
+  inline def apply(duration: Double): LayoutAnimationConfig = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutAnimationConfig]
   }
   
-  @scala.inline
-  implicit class LayoutAnimationConfigMutableBuilder[Self <: LayoutAnimationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutAnimationConfig](x: Self) {
     
-    @scala.inline
-    def setCreate(value: LayoutAnimationAnim): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: LayoutAnimationAnim): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDelete(value: LayoutAnimationAnim): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: LayoutAnimationAnim): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: LayoutAnimationAnim): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: LayoutAnimationAnim): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

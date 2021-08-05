@@ -29,8 +29,7 @@ object libLayerMod {
     @JSImport("office-ui-fabric-react/lib/Layer", "LayerBase.defaultProps")
     @js.native
     def defaultProps: ILayerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ILayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ILayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Layer", "LayerHost")

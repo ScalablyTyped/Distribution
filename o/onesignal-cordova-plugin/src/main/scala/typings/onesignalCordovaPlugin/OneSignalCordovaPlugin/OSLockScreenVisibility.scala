@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OSLockScreenVisibility extends StObject
 object OSLockScreenVisibility {
   
-  @scala.inline
-  def Private: `0` = 0.asInstanceOf[`0`]
+  inline def Private: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Public: `1` = 1.asInstanceOf[`1`]
+  inline def Public: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Secret: `-1` = -1.asInstanceOf[`-1`]
+  inline def Secret: `-1` = -1.asInstanceOf[`-1`]
 }

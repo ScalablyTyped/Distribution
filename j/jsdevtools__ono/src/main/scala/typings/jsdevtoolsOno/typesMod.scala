@@ -48,32 +48,24 @@ object typesMod {
   }
   object ErrorPOJO {
     
-    @scala.inline
-    def apply(): ErrorPOJO = {
+    inline def apply(): ErrorPOJO = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorPOJO]
     }
     
-    @scala.inline
-    implicit class ErrorPOJOMutableBuilder[Self <: ErrorPOJO] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorPOJO](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -261,26 +253,20 @@ object typesMod {
   }
   object OnoOptions {
     
-    @scala.inline
-    def apply(): OnoOptions = {
+    inline def apply(): OnoOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnoOptions]
     }
     
-    @scala.inline
-    implicit class OnoOptionsMutableBuilder[Self <: OnoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnoOptions](x: Self) {
       
-      @scala.inline
-      def setConcatMessages(value: Boolean): Self = StObject.set(x, "concatMessages", value.asInstanceOf[js.Any])
+      inline def setConcatMessages(value: Boolean): Self = StObject.set(x, "concatMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcatMessagesUndefined: Self = StObject.set(x, "concatMessages", js.undefined)
+      inline def setConcatMessagesUndefined: Self = StObject.set(x, "concatMessages", js.undefined)
       
-      @scala.inline
-      def setFormat(value: MessageFormatter | `false`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: MessageFormatter | `false`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   

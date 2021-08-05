@@ -17,22 +17,17 @@ trait SchemaLanguagesListResponse extends StObject {
 }
 object SchemaLanguagesListResponse {
   
-  @scala.inline
-  def apply(): SchemaLanguagesListResponse = {
+  inline def apply(): SchemaLanguagesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLanguagesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLanguagesListResponseMutableBuilder[Self <: SchemaLanguagesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLanguagesListResponse](x: Self) {
     
-    @scala.inline
-    def setLanguages(value: js.Array[SchemaLanguagesResource]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[SchemaLanguagesResource]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: SchemaLanguagesResource*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: SchemaLanguagesResource*): Self = StObject.set(x, "languages", js.Array(value :_*))
   }
 }

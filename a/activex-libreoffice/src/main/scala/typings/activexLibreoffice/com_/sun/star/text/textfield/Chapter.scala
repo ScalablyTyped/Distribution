@@ -30,8 +30,7 @@ trait Chapter
 }
 object Chapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -62,13 +61,10 @@ object Chapter {
     __obj.asInstanceOf[Chapter]
   }
   
-  @scala.inline
-  implicit class ChapterMutableBuilder[Self <: Chapter] (val x: Self) extends AnyVal {
+  extension [Self <: Chapter](x: Self) {
     
-    @scala.inline
-    def setChapterFormat(value: Double): Self = StObject.set(x, "ChapterFormat", value.asInstanceOf[js.Any])
+    inline def setChapterFormat(value: Double): Self = StObject.set(x, "ChapterFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
   }
 }

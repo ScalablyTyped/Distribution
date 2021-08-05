@@ -11,19 +11,15 @@ trait NegativeKeywordListAssignedTargetingOptionDetails extends StObject {
 }
 object NegativeKeywordListAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): NegativeKeywordListAssignedTargetingOptionDetails = {
+  inline def apply(): NegativeKeywordListAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NegativeKeywordListAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class NegativeKeywordListAssignedTargetingOptionDetailsMutableBuilder[Self <: NegativeKeywordListAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: NegativeKeywordListAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setNegativeKeywordListId(value: String): Self = StObject.set(x, "negativeKeywordListId", value.asInstanceOf[js.Any])
+    inline def setNegativeKeywordListId(value: String): Self = StObject.set(x, "negativeKeywordListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeKeywordListIdUndefined: Self = StObject.set(x, "negativeKeywordListId", js.undefined)
+    inline def setNegativeKeywordListIdUndefined: Self = StObject.set(x, "negativeKeywordListId", js.undefined)
   }
 }

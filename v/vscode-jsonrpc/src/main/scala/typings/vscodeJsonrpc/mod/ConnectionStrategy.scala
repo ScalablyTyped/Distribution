@@ -18,8 +18,7 @@ trait ConnectionStrategy extends StObject {
 }
 object ConnectionStrategy {
   
-  @scala.inline
-  def apply(): ConnectionStrategy = {
+  inline def apply(): ConnectionStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionStrategy]
   }
@@ -28,18 +27,14 @@ object ConnectionStrategy {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean]
+  inline def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean]
   
-  @scala.inline
-  implicit class ConnectionStrategyMutableBuilder[Self <: ConnectionStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionStrategy](x: Self) {
     
-    @scala.inline
-    def setCancelUndispatched(
+    inline def setCancelUndispatched(
       value: (/* message */ Message, /* next */ js.Function1[/* message */ Message, js.UndefOr[ResponseMessage]]) => js.UndefOr[ResponseMessage]
     ): Self = StObject.set(x, "cancelUndispatched", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCancelUndispatchedUndefined: Self = StObject.set(x, "cancelUndispatched", js.undefined)
+    inline def setCancelUndispatchedUndefined: Self = StObject.set(x, "cancelUndispatched", js.undefined)
   }
 }

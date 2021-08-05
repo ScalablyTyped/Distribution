@@ -23,31 +23,23 @@ trait WebsiteCaSummary extends StObject {
 }
 object WebsiteCaSummary {
   
-  @scala.inline
-  def apply(): WebsiteCaSummary = {
+  inline def apply(): WebsiteCaSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebsiteCaSummary]
   }
   
-  @scala.inline
-  implicit class WebsiteCaSummaryMutableBuilder[Self <: WebsiteCaSummary] (val x: Self) extends AnyVal {
+  extension [Self <: WebsiteCaSummary](x: Self) {
     
-    @scala.inline
-    def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setWebsiteCaId(value: Id): Self = StObject.set(x, "WebsiteCaId", value.asInstanceOf[js.Any])
+    inline def setWebsiteCaId(value: Id): Self = StObject.set(x, "WebsiteCaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteCaIdUndefined: Self = StObject.set(x, "WebsiteCaId", js.undefined)
+    inline def setWebsiteCaIdUndefined: Self = StObject.set(x, "WebsiteCaId", js.undefined)
   }
 }

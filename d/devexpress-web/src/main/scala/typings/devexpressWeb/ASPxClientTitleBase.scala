@@ -28,25 +28,19 @@ trait ASPxClientTitleBase
 }
 object ASPxClientTitleBase {
   
-  @scala.inline
-  def apply(alignment: String, chart: ASPxClientWebChart, dock: String, lines: js.Array[String]): ASPxClientTitleBase = {
+  inline def apply(alignment: String, chart: ASPxClientWebChart, dock: String, lines: js.Array[String]): ASPxClientTitleBase = {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], dock = dock.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTitleBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientTitleBaseMutableBuilder[Self <: ASPxClientTitleBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTitleBase](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDock(value: String): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
+    inline def setDock(value: String): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
   }
 }

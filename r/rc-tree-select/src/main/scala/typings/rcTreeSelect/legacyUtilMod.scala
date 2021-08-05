@@ -16,11 +16,9 @@ object legacyUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertChildrenToData(nodes: ReactNode): js.Array[DataNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[DataNode]]
+  inline def convertChildrenToData(nodes: ReactNode): js.Array[DataNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertChildrenToData")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[DataNode]]
   
-  @scala.inline
-  def fillAdditionalInfo(
+  inline def fillAdditionalInfo(
     extra: ChangeEventExtra,
     triggerValue: RawValueType,
     checkedValues: js.Array[RawValueType],
@@ -28,6 +26,5 @@ object legacyUtilMod {
     showPosition: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillAdditionalInfo")(extra.asInstanceOf[js.Any], triggerValue.asInstanceOf[js.Any], checkedValues.asInstanceOf[js.Any], treeData.asInstanceOf[js.Any], showPosition.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fillLegacyProps(dataNode: DataNode): LegacyDataNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fillLegacyProps")(dataNode.asInstanceOf[js.Any]).asInstanceOf[LegacyDataNode]
+  inline def fillLegacyProps(dataNode: DataNode): LegacyDataNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fillLegacyProps")(dataNode.asInstanceOf[js.Any]).asInstanceOf[LegacyDataNode]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Page extends StObject {
   
-  @JSName("Access.Page_typekey")
+  /* private */ @JSName("Access.Page_typekey")
   var AccessDotPage_typekey: Page = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

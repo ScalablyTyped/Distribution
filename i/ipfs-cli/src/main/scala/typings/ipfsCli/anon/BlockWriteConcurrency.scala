@@ -62,8 +62,7 @@ trait BlockWriteConcurrency extends StObject {
 }
 object BlockWriteConcurrency {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blockWriteConcurrency: js.Any,
     chunker: js.Any,
     cidBase: js.Any,
@@ -96,88 +95,60 @@ object BlockWriteConcurrency {
     __obj.asInstanceOf[BlockWriteConcurrency]
   }
   
-  @scala.inline
-  implicit class BlockWriteConcurrencyMutableBuilder[Self <: BlockWriteConcurrency] (val x: Self) extends AnyVal {
+  extension [Self <: BlockWriteConcurrency](x: Self) {
     
-    @scala.inline
-    def setBlockWriteConcurrency(value: js.Any): Self = StObject.set(x, "blockWriteConcurrency", value.asInstanceOf[js.Any])
+    inline def setBlockWriteConcurrency(value: js.Any): Self = StObject.set(x, "blockWriteConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunker(value: js.Any): Self = StObject.set(x, "chunker", value.asInstanceOf[js.Any])
+    inline def setChunker(value: js.Any): Self = StObject.set(x, "chunker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidBase(value: js.Any): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
+    inline def setCidBase(value: js.Any): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidVersion(value: js.Any): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
+    inline def setCidVersion(value: js.Any): Self = StObject.set(x, "cidVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtx(value: GetStdin): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: GetStdin): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileImportConcurrency(value: js.Any): Self = StObject.set(x, "fileImportConcurrency", value.asInstanceOf[js.Any])
+    inline def setFileImportConcurrency(value: js.Any): Self = StObject.set(x, "fileImportConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: js.Any): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: js.Any): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtime(value: js.Any): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: js.Any): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtimeNsecs(value: js.Any): Self = StObject.set(x, "mtimeNsecs", value.asInstanceOf[js.Any])
+    inline def setMtimeNsecs(value: js.Any): Self = StObject.set(x, "mtimeNsecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyHash(value: js.Any): Self = StObject.set(x, "onlyHash", value.asInstanceOf[js.Any])
+    inline def setOnlyHash(value: js.Any): Self = StObject.set(x, "onlyHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPin(value: js.Any): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: js.Any): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreload(value: js.Any): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: js.Any): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveMode(value: js.Any): Self = StObject.set(x, "preserveMode", value.asInstanceOf[js.Any])
+    inline def setPreserveMode(value: js.Any): Self = StObject.set(x, "preserveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveMtime(value: js.Any): Self = StObject.set(x, "preserveMtime", value.asInstanceOf[js.Any])
+    inline def setPreserveMtime(value: js.Any): Self = StObject.set(x, "preserveMtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: js.Any): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: js.Any): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuiet(value: js.Any): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+    inline def setQuiet(value: js.Any): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuieter(value: js.Any): Self = StObject.set(x, "quieter", value.asInstanceOf[js.Any])
+    inline def setQuieter(value: js.Any): Self = StObject.set(x, "quieter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawLeaves(value: js.Any): Self = StObject.set(x, "rawLeaves", value.asInstanceOf[js.Any])
+    inline def setRawLeaves(value: js.Any): Self = StObject.set(x, "rawLeaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: js.Any): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardSplitThreshold(value: js.Any): Self = StObject.set(x, "shardSplitThreshold", value.asInstanceOf[js.Any])
+    inline def setShardSplitThreshold(value: js.Any): Self = StObject.set(x, "shardSplitThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilent(value: js.Any): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: js.Any): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrickle(value: js.Any): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
+    inline def setTrickle(value: js.Any): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapWithDirectory(value: js.Any): Self = StObject.set(x, "wrapWithDirectory", value.asInstanceOf[js.Any])
+    inline def setWrapWithDirectory(value: js.Any): Self = StObject.set(x, "wrapWithDirectory", value.asInstanceOf[js.Any])
   }
 }

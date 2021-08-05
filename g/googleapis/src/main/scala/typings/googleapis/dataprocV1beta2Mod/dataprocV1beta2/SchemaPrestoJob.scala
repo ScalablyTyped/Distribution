@@ -53,58 +53,41 @@ trait SchemaPrestoJob extends StObject {
 }
 object SchemaPrestoJob {
   
-  @scala.inline
-  def apply(): SchemaPrestoJob = {
+  inline def apply(): SchemaPrestoJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPrestoJob]
   }
   
-  @scala.inline
-  implicit class SchemaPrestoJobMutableBuilder[Self <: SchemaPrestoJob] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPrestoJob](x: Self) {
     
-    @scala.inline
-    def setClientTags(value: js.Array[String]): Self = StObject.set(x, "clientTags", value.asInstanceOf[js.Any])
+    inline def setClientTags(value: js.Array[String]): Self = StObject.set(x, "clientTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTagsUndefined: Self = StObject.set(x, "clientTags", js.undefined)
+    inline def setClientTagsUndefined: Self = StObject.set(x, "clientTags", js.undefined)
     
-    @scala.inline
-    def setClientTagsVarargs(value: String*): Self = StObject.set(x, "clientTags", js.Array(value :_*))
+    inline def setClientTagsVarargs(value: String*): Self = StObject.set(x, "clientTags", js.Array(value :_*))
     
-    @scala.inline
-    def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
+    inline def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueOnFailureUndefined: Self = StObject.set(x, "continueOnFailure", js.undefined)
+    inline def setContinueOnFailureUndefined: Self = StObject.set(x, "continueOnFailure", js.undefined)
     
-    @scala.inline
-    def setLoggingConfig(value: SchemaLoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+    inline def setLoggingConfig(value: SchemaLoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
-    @scala.inline
-    def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+    inline def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+    inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setQueryFileUri(value: String): Self = StObject.set(x, "queryFileUri", value.asInstanceOf[js.Any])
+    inline def setQueryFileUri(value: String): Self = StObject.set(x, "queryFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryFileUriUndefined: Self = StObject.set(x, "queryFileUri", js.undefined)
+    inline def setQueryFileUriUndefined: Self = StObject.set(x, "queryFileUri", js.undefined)
     
-    @scala.inline
-    def setQueryList(value: SchemaQueryList): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
+    inline def setQueryList(value: SchemaQueryList): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryListUndefined: Self = StObject.set(x, "queryList", js.undefined)
+    inline def setQueryListUndefined: Self = StObject.set(x, "queryList", js.undefined)
   }
 }

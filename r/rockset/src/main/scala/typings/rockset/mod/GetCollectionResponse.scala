@@ -11,19 +11,15 @@ trait GetCollectionResponse extends StObject {
 }
 object GetCollectionResponse {
   
-  @scala.inline
-  def apply(): GetCollectionResponse = {
+  inline def apply(): GetCollectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCollectionResponse]
   }
   
-  @scala.inline
-  implicit class GetCollectionResponseMutableBuilder[Self <: GetCollectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCollectionResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: Collection): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Collection): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

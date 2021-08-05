@@ -22,10 +22,8 @@ object apiCallerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAPICaller(settings: CallSettings): APICaller = ^.asInstanceOf[js.Dynamic].applyDynamic("createAPICaller")(settings.asInstanceOf[js.Any]).asInstanceOf[APICaller]
-  @scala.inline
-  def createAPICaller(settings: CallSettings, descriptor: Descriptor): APICaller = (^.asInstanceOf[js.Dynamic].applyDynamic("createAPICaller")(settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[APICaller]
+  inline def createAPICaller(settings: CallSettings): APICaller = ^.asInstanceOf[js.Dynamic].applyDynamic("createAPICaller")(settings.asInstanceOf[js.Any]).asInstanceOf[APICaller]
+  inline def createAPICaller(settings: CallSettings, descriptor: Descriptor): APICaller = (^.asInstanceOf[js.Dynamic].applyDynamic("createAPICaller")(settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[APICaller]
   
   @js.native
   trait APICaller extends StObject {

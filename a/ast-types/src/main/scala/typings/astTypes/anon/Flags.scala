@@ -12,19 +12,15 @@ trait Flags extends StObject {
 }
 object Flags {
   
-  @scala.inline
-  def apply(flags: String, pattern: String): Flags = {
+  inline def apply(flags: String, pattern: String): Flags = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flags]
   }
   
-  @scala.inline
-  implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
+  extension [Self <: Flags](x: Self) {
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
   }
 }

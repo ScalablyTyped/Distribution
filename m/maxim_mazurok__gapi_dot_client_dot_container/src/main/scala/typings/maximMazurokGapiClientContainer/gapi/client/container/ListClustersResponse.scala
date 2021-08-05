@@ -14,31 +14,23 @@ trait ListClustersResponse extends StObject {
 }
 object ListClustersResponse {
   
-  @scala.inline
-  def apply(): ListClustersResponse = {
+  inline def apply(): ListClustersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListClustersResponse]
   }
   
-  @scala.inline
-  implicit class ListClustersResponseMutableBuilder[Self <: ListClustersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListClustersResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[Cluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[Cluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setMissingZones(value: js.Array[String]): Self = StObject.set(x, "missingZones", value.asInstanceOf[js.Any])
+    inline def setMissingZones(value: js.Array[String]): Self = StObject.set(x, "missingZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingZonesUndefined: Self = StObject.set(x, "missingZones", js.undefined)
+    inline def setMissingZonesUndefined: Self = StObject.set(x, "missingZones", js.undefined)
     
-    @scala.inline
-    def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value :_*))
+    inline def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value :_*))
   }
 }

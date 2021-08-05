@@ -28,8 +28,7 @@ trait XServiceDisplayName
 }
 object XServiceDisplayName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getServiceDisplayName: Locale => String,
     queryInterface: `type` => js.Any,
@@ -39,10 +38,8 @@ object XServiceDisplayName {
     __obj.asInstanceOf[XServiceDisplayName]
   }
   
-  @scala.inline
-  implicit class XServiceDisplayNameMutableBuilder[Self <: XServiceDisplayName] (val x: Self) extends AnyVal {
+  extension [Self <: XServiceDisplayName](x: Self) {
     
-    @scala.inline
-    def setGetServiceDisplayName(value: Locale => String): Self = StObject.set(x, "getServiceDisplayName", js.Any.fromFunction1(value))
+    inline def setGetServiceDisplayName(value: Locale => String): Self = StObject.set(x, "getServiceDisplayName", js.Any.fromFunction1(value))
   }
 }

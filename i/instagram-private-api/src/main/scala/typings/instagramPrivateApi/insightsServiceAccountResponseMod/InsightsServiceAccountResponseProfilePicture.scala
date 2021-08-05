@@ -10,16 +10,13 @@ trait InsightsServiceAccountResponseProfilePicture extends StObject {
 }
 object InsightsServiceAccountResponseProfilePicture {
   
-  @scala.inline
-  def apply(uri: String): InsightsServiceAccountResponseProfilePicture = {
+  inline def apply(uri: String): InsightsServiceAccountResponseProfilePicture = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseProfilePicture]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseProfilePictureMutableBuilder[Self <: InsightsServiceAccountResponseProfilePicture] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseProfilePicture](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -20,28 +20,28 @@ object mod {
     /* CompleteClass */
     override val apiDoc: js.Any = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var args: OpenAPIFrameworkConstructorArgs = js.native
     
     /* CompleteClass */
     override val basePaths: js.Array[typings.openapiFramework.basePathMod.default] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var customFormats: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var customKeywords: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var dependencies: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var enableObjectCoercion: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var errorTransformer: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var externalSchemas: js.Any = js.native
     
     /* CompleteClass */
@@ -50,7 +50,7 @@ object mod {
     /* CompleteClass */
     override def initialize(visitor: OpenAPIFrameworkVisitor): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var logger: js.Any = js.native
     
     /* CompleteClass */
@@ -59,34 +59,34 @@ object mod {
     /* CompleteClass */
     var name: String = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var operations: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var originalApiDoc: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var pathSecurity: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var paths: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var pathsIgnore: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var routesGlob: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var routesIndexFileRegExp: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var securityHandlers: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validateApiDoc: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validator: js.Any = js.native
   }
   
@@ -103,50 +103,49 @@ object mod {
     
     val apiDoc: js.Any
     
-    var args: OpenAPIFrameworkConstructorArgs
+    /* protected */ var args: OpenAPIFrameworkConstructorArgs
     
     val basePaths: js.Array[typings.openapiFramework.basePathMod.default]
     
-    var customFormats: js.Any
+    /* private */ var customFormats: js.Any
     
-    var customKeywords: js.Any
+    /* private */ var customKeywords: js.Any
     
-    var dependencies: js.Any
+    /* private */ var dependencies: js.Any
     
-    var enableObjectCoercion: js.Any
+    /* private */ var enableObjectCoercion: js.Any
     
-    var errorTransformer: js.Any
+    /* private */ var errorTransformer: js.Any
     
-    var externalSchemas: js.Any
+    /* private */ var externalSchemas: js.Any
     
     def initialize(visitor: OpenAPIFrameworkVisitor): Unit
     
-    var logger: js.Any
+    /* private */ var logger: js.Any
     
-    var operations: js.Any
+    /* private */ var operations: js.Any
     
-    var originalApiDoc: js.Any
+    /* private */ var originalApiDoc: js.Any
     
-    var pathSecurity: js.Any
+    /* private */ var pathSecurity: js.Any
     
-    var paths: js.Any
+    /* private */ var paths: js.Any
     
-    var pathsIgnore: js.Any
+    /* private */ var pathsIgnore: js.Any
     
-    var routesGlob: js.Any
+    /* private */ var routesGlob: js.Any
     
-    var routesIndexFileRegExp: js.Any
+    /* private */ var routesIndexFileRegExp: js.Any
     
-    var securityHandlers: js.Any
+    /* private */ var securityHandlers: js.Any
     
-    var validateApiDoc: js.Any
+    /* private */ var validateApiDoc: js.Any
     
-    var validator: js.Any
+    /* private */ var validator: js.Any
   }
   object OpenAPIFramework {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiDoc: js.Any,
       args: OpenAPIFrameworkConstructorArgs,
       basePaths: js.Array[typings.openapiFramework.basePathMod.default],
@@ -176,74 +175,51 @@ object mod {
       __obj.asInstanceOf[OpenAPIFramework]
     }
     
-    @scala.inline
-    implicit class OpenAPIFrameworkMutableBuilder[Self <: OpenAPIFramework] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIFramework](x: Self) {
       
-      @scala.inline
-      def setApiDoc(value: js.Any): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
+      inline def setApiDoc(value: js.Any): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgs(value: OpenAPIFrameworkConstructorArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: OpenAPIFrameworkConstructorArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePaths(value: js.Array[typings.openapiFramework.basePathMod.default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
+      inline def setBasePaths(value: js.Array[typings.openapiFramework.basePathMod.default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathsVarargs(value: typings.openapiFramework.basePathMod.default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+      inline def setBasePathsVarargs(value: typings.openapiFramework.basePathMod.default*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomFormats(value: js.Any): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+      inline def setCustomFormats(value: js.Any): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomKeywords(value: js.Any): Self = StObject.set(x, "customKeywords", value.asInstanceOf[js.Any])
+      inline def setCustomKeywords(value: js.Any): Self = StObject.set(x, "customKeywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableObjectCoercion(value: js.Any): Self = StObject.set(x, "enableObjectCoercion", value.asInstanceOf[js.Any])
+      inline def setEnableObjectCoercion(value: js.Any): Self = StObject.set(x, "enableObjectCoercion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorTransformer(value: js.Any): Self = StObject.set(x, "errorTransformer", value.asInstanceOf[js.Any])
+      inline def setErrorTransformer(value: js.Any): Self = StObject.set(x, "errorTransformer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalSchemas(value: js.Any): Self = StObject.set(x, "externalSchemas", value.asInstanceOf[js.Any])
+      inline def setExternalSchemas(value: js.Any): Self = StObject.set(x, "externalSchemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialize(value: OpenAPIFrameworkVisitor => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: OpenAPIFrameworkVisitor => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperations(value: js.Any): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: js.Any): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalApiDoc(value: js.Any): Self = StObject.set(x, "originalApiDoc", value.asInstanceOf[js.Any])
+      inline def setOriginalApiDoc(value: js.Any): Self = StObject.set(x, "originalApiDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathSecurity(value: js.Any): Self = StObject.set(x, "pathSecurity", value.asInstanceOf[js.Any])
+      inline def setPathSecurity(value: js.Any): Self = StObject.set(x, "pathSecurity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsIgnore(value: js.Any): Self = StObject.set(x, "pathsIgnore", value.asInstanceOf[js.Any])
+      inline def setPathsIgnore(value: js.Any): Self = StObject.set(x, "pathsIgnore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesGlob(value: js.Any): Self = StObject.set(x, "routesGlob", value.asInstanceOf[js.Any])
+      inline def setRoutesGlob(value: js.Any): Self = StObject.set(x, "routesGlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesIndexFileRegExp(value: js.Any): Self = StObject.set(x, "routesIndexFileRegExp", value.asInstanceOf[js.Any])
+      inline def setRoutesIndexFileRegExp(value: js.Any): Self = StObject.set(x, "routesIndexFileRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityHandlers(value: js.Any): Self = StObject.set(x, "securityHandlers", value.asInstanceOf[js.Any])
+      inline def setSecurityHandlers(value: js.Any): Self = StObject.set(x, "securityHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateApiDoc(value: js.Any): Self = StObject.set(x, "validateApiDoc", value.asInstanceOf[js.Any])
+      inline def setValidateApiDoc(value: js.Any): Self = StObject.set(x, "validateApiDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
   }
 }

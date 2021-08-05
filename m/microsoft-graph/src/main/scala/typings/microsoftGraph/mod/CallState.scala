@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CallState extends StObject
 object CallState {
   
-  @scala.inline
-  def established: typings.microsoftGraph.microsoftGraphStrings.established = "established".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.established]
+  inline def established: typings.microsoftGraph.microsoftGraphStrings.established = "established".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.established]
   
-  @scala.inline
-  def establishing: typings.microsoftGraph.microsoftGraphStrings.establishing = "establishing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.establishing]
+  inline def establishing: typings.microsoftGraph.microsoftGraphStrings.establishing = "establishing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.establishing]
   
-  @scala.inline
-  def hold: typings.microsoftGraph.microsoftGraphStrings.hold = "hold".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hold]
+  inline def hold: typings.microsoftGraph.microsoftGraphStrings.hold = "hold".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hold]
   
-  @scala.inline
-  def incoming: typings.microsoftGraph.microsoftGraphStrings.incoming = "incoming".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.incoming]
+  inline def incoming: typings.microsoftGraph.microsoftGraphStrings.incoming = "incoming".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.incoming]
   
-  @scala.inline
-  def redirecting: typings.microsoftGraph.microsoftGraphStrings.redirecting = "redirecting".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.redirecting]
+  inline def redirecting: typings.microsoftGraph.microsoftGraphStrings.redirecting = "redirecting".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.redirecting]
   
-  @scala.inline
-  def terminated: typings.microsoftGraph.microsoftGraphStrings.terminated = "terminated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.terminated]
+  inline def terminated: typings.microsoftGraph.microsoftGraphStrings.terminated = "terminated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.terminated]
   
-  @scala.inline
-  def terminating: typings.microsoftGraph.microsoftGraphStrings.terminating = "terminating".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.terminating]
+  inline def terminating: typings.microsoftGraph.microsoftGraphStrings.terminating = "terminating".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.terminating]
   
-  @scala.inline
-  def transferAccepted: typings.microsoftGraph.microsoftGraphStrings.transferAccepted = "transferAccepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.transferAccepted]
+  inline def transferAccepted: typings.microsoftGraph.microsoftGraphStrings.transferAccepted = "transferAccepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.transferAccepted]
   
-  @scala.inline
-  def transferring: typings.microsoftGraph.microsoftGraphStrings.transferring = "transferring".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.transferring]
+  inline def transferring: typings.microsoftGraph.microsoftGraphStrings.transferring = "transferring".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.transferring]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

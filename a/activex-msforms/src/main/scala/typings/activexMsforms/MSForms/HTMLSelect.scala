@@ -10,7 +10,7 @@ trait HTMLSelect extends StObject {
   
   var HTMLName: String
   
-  @JSName("MSForms.HTMLSelect_typekey")
+  /* private */ @JSName("MSForms.HTMLSelect_typekey")
   var MSFormsDotHTMLSelect_typekey: HTMLSelect
   
   var MultiSelect: Boolean
@@ -23,8 +23,7 @@ trait HTMLSelect extends StObject {
 }
 object HTMLSelect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisplayValues: js.Any,
     HTMLName: String,
     MSFormsDotHTMLSelect_typekey: HTMLSelect,
@@ -38,28 +37,20 @@ object HTMLSelect {
     __obj.asInstanceOf[HTMLSelect]
   }
   
-  @scala.inline
-  implicit class HTMLSelectMutableBuilder[Self <: HTMLSelect] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLSelect](x: Self) {
     
-    @scala.inline
-    def setDisplayValues(value: js.Any): Self = StObject.set(x, "DisplayValues", value.asInstanceOf[js.Any])
+    inline def setDisplayValues(value: js.Any): Self = StObject.set(x, "DisplayValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
+    inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotHTMLSelect_typekey(value: HTMLSelect): Self = StObject.set(x, "MSForms.HTMLSelect_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotHTMLSelect_typekey(value: HTMLSelect): Self = StObject.set(x, "MSForms.HTMLSelect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiSelect(value: Boolean): Self = StObject.set(x, "MultiSelect", value.asInstanceOf[js.Any])
+    inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "MultiSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: String): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Any): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Any): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

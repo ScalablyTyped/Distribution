@@ -46,8 +46,7 @@ trait LokiMemoryAdapter
 }
 object LokiMemoryAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteDatabase: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit,
     hashStore: StringDictionary[Lastsave],
     loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit,
@@ -58,19 +57,14 @@ object LokiMemoryAdapter {
     __obj.asInstanceOf[LokiMemoryAdapter]
   }
   
-  @scala.inline
-  implicit class LokiMemoryAdapterMutableBuilder[Self <: LokiMemoryAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: LokiMemoryAdapter](x: Self) {
     
-    @scala.inline
-    def setDeleteDatabase(value: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
+    inline def setDeleteDatabase(value: (String, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHashStore(value: StringDictionary[Lastsave]): Self = StObject.set(x, "hashStore", value.asInstanceOf[js.Any])
+    inline def setHashStore(value: StringDictionary[Lastsave]): Self = StObject.set(x, "hashStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: AsyncResponses): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AsyncResponses): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveDatabase(value: (String, js.Any, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "saveDatabase", js.Any.fromFunction3(value))
+    inline def setSaveDatabase(value: (String, js.Any, js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit): Self = StObject.set(x, "saveDatabase", js.Any.fromFunction3(value))
   }
 }

@@ -10,7 +10,7 @@ trait HTMLIsIndexElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLIsIndexElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLIsIndexElement_typekey")
   var MSHTMLDotHTMLIsIndexElement_typekey: HTMLIsIndexElement = js.native
   
   var accessKey: String = js.native

@@ -24,31 +24,23 @@ trait SchemaBatchEnableServicesResponse extends StObject {
 }
 object SchemaBatchEnableServicesResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchEnableServicesResponse = {
+  inline def apply(): SchemaBatchEnableServicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchEnableServicesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchEnableServicesResponseMutableBuilder[Self <: SchemaBatchEnableServicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchEnableServicesResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: js.Array[SchemaEnableFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: js.Array[SchemaEnableFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: SchemaEnableFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: SchemaEnableFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setServices(value: js.Array[SchemaGoogleApiServiceusageV1Service]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[SchemaGoogleApiServiceusageV1Service]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: SchemaGoogleApiServiceusageV1Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: SchemaGoogleApiServiceusageV1Service*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

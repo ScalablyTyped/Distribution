@@ -32,10 +32,8 @@ object global {
   @js.native
   val ValidationError: js.Any = js.native
   
-  @scala.inline
-  def asJSON(v: String): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def asJSON(v: js.Object): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def asJSON(v: String): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def asJSON(v: js.Object): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSGlobal("invalidPayloadTypeError")
   @js.native

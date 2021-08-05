@@ -23,7 +23,7 @@ trait EffectInformation extends StObject {
   
   val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings
   
-  @JSName("PowerPoint.EffectInformation_typekey")
+  /* private */ @JSName("PowerPoint.EffectInformation_typekey")
   var PowerPointDotEffectInformation_typekey: EffectInformation
   
   val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect
@@ -32,8 +32,7 @@ trait EffectInformation extends StObject {
 }
 object EffectInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AfterEffect: MsoAnimAfterEffect,
     AnimateBackground: MsoTriState,
     AnimateTextInReverse: MsoTriState,
@@ -51,40 +50,28 @@ object EffectInformation {
     __obj.asInstanceOf[EffectInformation]
   }
   
-  @scala.inline
-  implicit class EffectInformationMutableBuilder[Self <: EffectInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EffectInformation](x: Self) {
     
-    @scala.inline
-    def setAfterEffect(value: MsoAnimAfterEffect): Self = StObject.set(x, "AfterEffect", value.asInstanceOf[js.Any])
+    inline def setAfterEffect(value: MsoAnimAfterEffect): Self = StObject.set(x, "AfterEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateBackground(value: MsoTriState): Self = StObject.set(x, "AnimateBackground", value.asInstanceOf[js.Any])
+    inline def setAnimateBackground(value: MsoTriState): Self = StObject.set(x, "AnimateBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateTextInReverse(value: MsoTriState): Self = StObject.set(x, "AnimateTextInReverse", value.asInstanceOf[js.Any])
+    inline def setAnimateTextInReverse(value: MsoTriState): Self = StObject.set(x, "AnimateTextInReverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildByLevelEffect(value: MsoAnimateByLevel): Self = StObject.set(x, "BuildByLevelEffect", value.asInstanceOf[js.Any])
+    inline def setBuildByLevelEffect(value: MsoAnimateByLevel): Self = StObject.set(x, "BuildByLevelEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDim(value: ColorFormat): Self = StObject.set(x, "Dim", value.asInstanceOf[js.Any])
+    inline def setDim(value: ColorFormat): Self = StObject.set(x, "Dim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaySettings(value: PlaySettings): Self = StObject.set(x, "PlaySettings", value.asInstanceOf[js.Any])
+    inline def setPlaySettings(value: PlaySettings): Self = StObject.set(x, "PlaySettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotEffectInformation_typekey(value: EffectInformation): Self = StObject.set(x, "PowerPoint.EffectInformation_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotEffectInformation_typekey(value: EffectInformation): Self = StObject.set(x, "PowerPoint.EffectInformation_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundEffect(value: SoundEffect): Self = StObject.set(x, "SoundEffect", value.asInstanceOf[js.Any])
+    inline def setSoundEffect(value: SoundEffect): Self = StObject.set(x, "SoundEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUnitEffect(value: MsoAnimTextUnitEffect): Self = StObject.set(x, "TextUnitEffect", value.asInstanceOf[js.Any])
+    inline def setTextUnitEffect(value: MsoAnimTextUnitEffect): Self = StObject.set(x, "TextUnitEffect", value.asInstanceOf[js.Any])
   }
 }

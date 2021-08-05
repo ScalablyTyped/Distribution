@@ -26,25 +26,19 @@ trait IgComboLoadOnDemandSettings
 }
 object IgComboLoadOnDemandSettings {
   
-  @scala.inline
-  def apply(): IgComboLoadOnDemandSettings = {
+  inline def apply(): IgComboLoadOnDemandSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgComboLoadOnDemandSettings]
   }
   
-  @scala.inline
-  implicit class IgComboLoadOnDemandSettingsMutableBuilder[Self <: IgComboLoadOnDemandSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgComboLoadOnDemandSettings](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

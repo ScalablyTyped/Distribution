@@ -13,19 +13,15 @@ trait RegionOfInterest extends StObject {
 }
 object RegionOfInterest {
   
-  @scala.inline
-  def apply(): RegionOfInterest = {
+  inline def apply(): RegionOfInterest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionOfInterest]
   }
   
-  @scala.inline
-  implicit class RegionOfInterestMutableBuilder[Self <: RegionOfInterest] (val x: Self) extends AnyVal {
+  extension [Self <: RegionOfInterest](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
   }
 }

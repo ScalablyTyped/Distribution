@@ -29,8 +29,7 @@ object sceneViewMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(props: Props[Route], state: State): Loading | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Loading | Null]
+    inline def getDerivedStateFromProps(props: Props[Route], state: State): Loading | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Loading | Null]
   }
   
   trait Props[T /* <: Route */]
@@ -52,8 +51,7 @@ object sceneViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply[T /* <: Route */](
+    inline def apply[T /* <: Route */](
       addListener: (enter, Listener) => Unit,
       children: Loading => ReactNode,
       index: Double,
@@ -70,32 +68,23 @@ object sceneViewMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], T /* <: Route */] (val x: Self & Props[T]) extends AnyVal {
+    extension [Self <: Props[?], T /* <: Route */](x: Self & Props[T]) {
       
-      @scala.inline
-      def setChildren(value: Loading => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: Loading => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyPreloadDistance(value: Double): Self = StObject.set(x, "lazyPreloadDistance", value.asInstanceOf[js.Any])
+      inline def setLazyPreloadDistance(value: Double): Self = StObject.set(x, "lazyPreloadDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+      inline def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -112,7 +101,7 @@ object sceneViewMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSceneView(): Unit = js.native
     
-    var handleEnter: js.Any = js.native
+    /* private */ var handleEnter: js.Any = js.native
     
     @JSName("state")
     var state_SceneView: Loading = js.native
@@ -124,17 +113,14 @@ object sceneViewMod {
   }
   object State {
     
-    @scala.inline
-    def apply(loading: Boolean): State = {
+    inline def apply(loading: Boolean): State = {
       val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     }
   }
 }

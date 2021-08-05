@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenericResource extends StObject
 object GenericResource {
   
-  @scala.inline
-  def DiscreteGenericResource(): typings.dockerode.mod.DiscreteGenericResource = {
+  inline def DiscreteGenericResource(): typings.dockerode.mod.DiscreteGenericResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.dockerode.mod.DiscreteGenericResource]
   }
   
-  @scala.inline
-  def NamedGenericResource(): typings.dockerode.mod.NamedGenericResource = {
+  inline def NamedGenericResource(): typings.dockerode.mod.NamedGenericResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.dockerode.mod.NamedGenericResource]
   }

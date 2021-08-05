@@ -27,14 +27,11 @@ object emptyStateMod extends Shortcut {
   trait EmptyStateAlign extends StObject
   object EmptyStateAlign {
     
-    @scala.inline
-    def center: typings.wixStyleReact.wixStyleReactStrings.center = "center".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.center]
+    inline def center: typings.wixStyleReact.wixStyleReactStrings.center = "center".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.center]
     
-    @scala.inline
-    def end: typings.wixStyleReact.wixStyleReactStrings.end = "end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.end]
+    inline def end: typings.wixStyleReact.wixStyleReactStrings.end = "end".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.end]
     
-    @scala.inline
-    def start: typings.wixStyleReact.wixStyleReactStrings.start = "start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.start]
+    inline def start: typings.wixStyleReact.wixStyleReactStrings.start = "start".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.start]
   }
   
   trait EmptyStateProps extends StObject {
@@ -55,56 +52,40 @@ object emptyStateMod extends Shortcut {
   }
   object EmptyStateProps {
     
-    @scala.inline
-    def apply(): EmptyStateProps = {
+    inline def apply(): EmptyStateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmptyStateProps]
     }
     
-    @scala.inline
-    implicit class EmptyStatePropsMutableBuilder[Self <: EmptyStateProps] (val x: Self) extends AnyVal {
+    extension [Self <: EmptyStateProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: EmptyStateAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: EmptyStateAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setClassNames(value: ImageContainer): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: ImageContainer): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setImage(value: String | Element): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String | Element): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String | ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String | ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTheme(value: EmptyStateTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: EmptyStateTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -116,14 +97,11 @@ object emptyStateMod extends Shortcut {
   trait EmptyStateTheme extends StObject
   object EmptyStateTheme {
     
-    @scala.inline
-    def page: typings.wixStyleReact.wixStyleReactStrings.page = "page".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.page]
+    inline def page: typings.wixStyleReact.wixStyleReactStrings.page = "page".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.page]
     
-    @scala.inline
-    def `page-no-border`: typings.wixStyleReact.wixStyleReactStrings.`page-no-border` = "page-no-border".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`page-no-border`]
+    inline def `page-no-border`: typings.wixStyleReact.wixStyleReactStrings.`page-no-border` = "page-no-border".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.`page-no-border`]
     
-    @scala.inline
-    def section: typings.wixStyleReact.wixStyleReactStrings.section = "section".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.section]
+    inline def section: typings.wixStyleReact.wixStyleReactStrings.section = "section".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.section]
   }
   
   type _To = SFC[EmptyStateProps]

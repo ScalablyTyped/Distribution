@@ -21,31 +21,23 @@ trait InterconnectDiagnosticsLinkLACPStatus extends StObject {
 }
 object InterconnectDiagnosticsLinkLACPStatus {
   
-  @scala.inline
-  def apply(): InterconnectDiagnosticsLinkLACPStatus = {
+  inline def apply(): InterconnectDiagnosticsLinkLACPStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectDiagnosticsLinkLACPStatus]
   }
   
-  @scala.inline
-  implicit class InterconnectDiagnosticsLinkLACPStatusMutableBuilder[Self <: InterconnectDiagnosticsLinkLACPStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectDiagnosticsLinkLACPStatus](x: Self) {
     
-    @scala.inline
-    def setGoogleSystemId(value: String): Self = StObject.set(x, "googleSystemId", value.asInstanceOf[js.Any])
+    inline def setGoogleSystemId(value: String): Self = StObject.set(x, "googleSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleSystemIdUndefined: Self = StObject.set(x, "googleSystemId", js.undefined)
+    inline def setGoogleSystemIdUndefined: Self = StObject.set(x, "googleSystemId", js.undefined)
     
-    @scala.inline
-    def setNeighborSystemId(value: String): Self = StObject.set(x, "neighborSystemId", value.asInstanceOf[js.Any])
+    inline def setNeighborSystemId(value: String): Self = StObject.set(x, "neighborSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeighborSystemIdUndefined: Self = StObject.set(x, "neighborSystemId", js.undefined)
+    inline def setNeighborSystemIdUndefined: Self = StObject.set(x, "neighborSystemId", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

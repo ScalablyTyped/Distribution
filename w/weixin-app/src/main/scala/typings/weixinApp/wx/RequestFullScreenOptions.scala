@@ -13,16 +13,13 @@ trait RequestFullScreenOptions
 }
 object RequestFullScreenOptions {
   
-  @scala.inline
-  def apply(direction: Double): RequestFullScreenOptions = {
+  inline def apply(direction: Double): RequestFullScreenOptions = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestFullScreenOptions]
   }
   
-  @scala.inline
-  implicit class RequestFullScreenOptionsMutableBuilder[Self <: RequestFullScreenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestFullScreenOptions](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

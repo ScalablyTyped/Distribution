@@ -48,10 +48,8 @@ object mod {
       * @param options The options.
       * @returns The HTML output.
       */
-    @scala.inline
-    def ansiToHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def ansiToHtml(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ansiToHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ansiToHtml(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToHtml")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Converts ANSI input into JSON output.
@@ -60,10 +58,8 @@ object mod {
       * @param options The options.
       * @returns The HTML output.
       */
-    @scala.inline
-    def ansiToJson(txt: String): js.Array[AnserJsonEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any]).asInstanceOf[js.Array[AnserJsonEntry]]
-    @scala.inline
-    def ansiToJson(txt: String, options: AnserOptions): js.Array[AnserJsonEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AnserJsonEntry]]
+    inline def ansiToJson(txt: String): js.Array[AnserJsonEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any]).asInstanceOf[js.Array[AnserJsonEntry]]
+    inline def ansiToJson(txt: String, options: AnserOptions): js.Array[AnserJsonEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToJson")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AnserJsonEntry]]
     
     /**
       * Converts ANSI input into text output.
@@ -71,10 +67,8 @@ object mod {
       * @param txt The input text.
       * @returns The text output.
       */
-    @scala.inline
-    def ansiToText(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def ansiToText(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ansiToText(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ansiToText(txt: String, options: AnserOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ansiToText")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Escape the input HTML.
@@ -86,8 +80,7 @@ object mod {
       * @param txt The input text (containing the ANSI snippets).
       * @returns The escaped html.
       */
-    @scala.inline
-    def escapeForHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeForHtml(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForHtml")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Adds the links in the HTML.
@@ -100,8 +93,7 @@ object mod {
       * @param txt The input text.
       * @returns The HTML containing the <a> tags (unescaped).
       */
-    @scala.inline
-    def linkify(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def linkify(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkify")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -230,8 +222,7 @@ object mod {
   }
   object AnserJsonEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bg: String,
       bg_truecolor: String,
       clearLine: Boolean,
@@ -245,38 +236,27 @@ object mod {
       __obj.asInstanceOf[AnserJsonEntry]
     }
     
-    @scala.inline
-    implicit class AnserJsonEntryMutableBuilder[Self <: AnserJsonEntry] (val x: Self) extends AnyVal {
+    extension [Self <: AnserJsonEntry](x: Self) {
       
-      @scala.inline
-      def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBg_truecolor(value: String): Self = StObject.set(x, "bg_truecolor", value.asInstanceOf[js.Any])
+      inline def setBg_truecolor(value: String): Self = StObject.set(x, "bg_truecolor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearLine(value: Boolean): Self = StObject.set(x, "clearLine", value.asInstanceOf[js.Any])
+      inline def setClearLine(value: Boolean): Self = StObject.set(x, "clearLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoration(value: bold | dim | italic | underline | blink | reverse | hidden | strikethrough): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
+      inline def setDecoration(value: bold | dim | italic | underline | blink | reverse | hidden | strikethrough): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorationNull: Self = StObject.set(x, "decoration", null)
+      inline def setDecorationNull: Self = StObject.set(x, "decoration", null)
       
-      @scala.inline
-      def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+      inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFg_truecolor(value: String): Self = StObject.set(x, "fg_truecolor", value.asInstanceOf[js.Any])
+      inline def setFg_truecolor(value: String): Self = StObject.set(x, "fg_truecolor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWas_processed(value: Boolean): Self = StObject.set(x, "was_processed", value.asInstanceOf[js.Any])
+      inline def setWas_processed(value: Boolean): Self = StObject.set(x, "was_processed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,32 +272,24 @@ object mod {
   }
   object AnserOptions {
     
-    @scala.inline
-    def apply(): AnserOptions = {
+    inline def apply(): AnserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnserOptions]
     }
     
-    @scala.inline
-    implicit class AnserOptionsMutableBuilder[Self <: AnserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnserOptions](x: Self) {
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setRemove_empty(value: Boolean): Self = StObject.set(x, "remove_empty", value.asInstanceOf[js.Any])
+      inline def setRemove_empty(value: Boolean): Self = StObject.set(x, "remove_empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove_emptyUndefined: Self = StObject.set(x, "remove_empty", js.undefined)
+      inline def setRemove_emptyUndefined: Self = StObject.set(x, "remove_empty", js.undefined)
       
-      @scala.inline
-      def setUse_classes(value: Boolean): Self = StObject.set(x, "use_classes", value.asInstanceOf[js.Any])
+      inline def setUse_classes(value: Boolean): Self = StObject.set(x, "use_classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse_classesUndefined: Self = StObject.set(x, "use_classes", js.undefined)
+      inline def setUse_classesUndefined: Self = StObject.set(x, "use_classes", js.undefined)
     }
   }
   
@@ -330,17 +302,14 @@ object mod {
   }
   object OptionsWithJson {
     
-    @scala.inline
-    def apply(): OptionsWithJson = {
+    inline def apply(): OptionsWithJson = {
       val __obj = js.Dynamic.literal(json = true)
       __obj.asInstanceOf[OptionsWithJson]
     }
     
-    @scala.inline
-    implicit class OptionsWithJsonMutableBuilder[Self <: OptionsWithJson] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsWithJson](x: Self) {
       
-      @scala.inline
-      def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
 }

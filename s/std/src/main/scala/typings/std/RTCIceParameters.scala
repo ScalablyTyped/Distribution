@@ -12,25 +12,19 @@ trait RTCIceParameters extends StObject {
 }
 object RTCIceParameters {
   
-  @scala.inline
-  def apply(): RTCIceParameters = {
+  inline def apply(): RTCIceParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCIceParameters]
   }
   
-  @scala.inline
-  implicit class RTCIceParametersMutableBuilder[Self <: RTCIceParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCIceParameters](x: Self) {
     
-    @scala.inline
-    def setPassword(value: java.lang.String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: java.lang.String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUsernameFragment(value: java.lang.String): Self = StObject.set(x, "usernameFragment", value.asInstanceOf[js.Any])
+    inline def setUsernameFragment(value: java.lang.String): Self = StObject.set(x, "usernameFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameFragmentUndefined: Self = StObject.set(x, "usernameFragment", js.undefined)
+    inline def setUsernameFragmentUndefined: Self = StObject.set(x, "usernameFragment", js.undefined)
   }
 }

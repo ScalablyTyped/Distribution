@@ -26,22 +26,17 @@ trait TableBorderSettings extends StObject {
 }
 object TableBorderSettings {
   
-  @scala.inline
-  def apply(color: String, style: BorderLineStyle, width: Double): TableBorderSettings = {
+  inline def apply(color: String, style: BorderLineStyle, width: Double): TableBorderSettings = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableBorderSettings]
   }
   
-  @scala.inline
-  implicit class TableBorderSettingsMutableBuilder[Self <: TableBorderSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TableBorderSettings](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: BorderLineStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: BorderLineStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

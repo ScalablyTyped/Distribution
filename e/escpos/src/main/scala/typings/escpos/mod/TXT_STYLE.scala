@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TXT_STYLE extends StObject
 object TXT_STYLE {
   
-  @scala.inline
-  def B: typings.escpos.escposStrings.B = "B".asInstanceOf[typings.escpos.escposStrings.B]
+  inline def B: typings.escpos.escposStrings.B = "B".asInstanceOf[typings.escpos.escposStrings.B]
   
-  @scala.inline
-  def BI: typings.escpos.escposStrings.BI = "BI".asInstanceOf[typings.escpos.escposStrings.BI]
+  inline def BI: typings.escpos.escposStrings.BI = "BI".asInstanceOf[typings.escpos.escposStrings.BI]
   
-  @scala.inline
-  def BIU: typings.escpos.escposStrings.BIU = "BIU".asInstanceOf[typings.escpos.escposStrings.BIU]
+  inline def BIU: typings.escpos.escposStrings.BIU = "BIU".asInstanceOf[typings.escpos.escposStrings.BIU]
   
-  @scala.inline
-  def BIU2: typings.escpos.escposStrings.BIU2 = "BIU2".asInstanceOf[typings.escpos.escposStrings.BIU2]
+  inline def BIU2: typings.escpos.escposStrings.BIU2 = "BIU2".asInstanceOf[typings.escpos.escposStrings.BIU2]
   
-  @scala.inline
-  def BU: typings.escpos.escposStrings.BU = "BU".asInstanceOf[typings.escpos.escposStrings.BU]
+  inline def BU: typings.escpos.escposStrings.BU = "BU".asInstanceOf[typings.escpos.escposStrings.BU]
   
-  @scala.inline
-  def BU2: typings.escpos.escposStrings.BU2 = "BU2".asInstanceOf[typings.escpos.escposStrings.BU2]
+  inline def BU2: typings.escpos.escposStrings.BU2 = "BU2".asInstanceOf[typings.escpos.escposStrings.BU2]
   
-  @scala.inline
-  def I: typings.escpos.escposStrings.I = "I".asInstanceOf[typings.escpos.escposStrings.I]
+  inline def I: typings.escpos.escposStrings.I = "I".asInstanceOf[typings.escpos.escposStrings.I]
   
-  @scala.inline
-  def IU: typings.escpos.escposStrings.IU = "IU".asInstanceOf[typings.escpos.escposStrings.IU]
+  inline def IU: typings.escpos.escposStrings.IU = "IU".asInstanceOf[typings.escpos.escposStrings.IU]
   
-  @scala.inline
-  def IU2: typings.escpos.escposStrings.IU2 = "IU2".asInstanceOf[typings.escpos.escposStrings.IU2]
+  inline def IU2: typings.escpos.escposStrings.IU2 = "IU2".asInstanceOf[typings.escpos.escposStrings.IU2]
   
-  @scala.inline
-  def NORMAL: typings.escpos.escposStrings.NORMAL = "NORMAL".asInstanceOf[typings.escpos.escposStrings.NORMAL]
+  inline def NORMAL: typings.escpos.escposStrings.NORMAL = "NORMAL".asInstanceOf[typings.escpos.escposStrings.NORMAL]
   
-  @scala.inline
-  def U: typings.escpos.escposStrings.U = "U".asInstanceOf[typings.escpos.escposStrings.U]
+  inline def U: typings.escpos.escposStrings.U = "U".asInstanceOf[typings.escpos.escposStrings.U]
   
-  @scala.inline
-  def U2: typings.escpos.escposStrings.U2 = "U2".asInstanceOf[typings.escpos.escposStrings.U2]
+  inline def U2: typings.escpos.escposStrings.U2 = "U2".asInstanceOf[typings.escpos.escposStrings.U2]
 }

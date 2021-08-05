@@ -38,46 +38,33 @@ trait SetBreakpointByUrlParameterType extends StObject {
 }
 object SetBreakpointByUrlParameterType {
   
-  @scala.inline
-  def apply(lineNumber: Double): SetBreakpointByUrlParameterType = {
+  inline def apply(lineNumber: Double): SetBreakpointByUrlParameterType = {
     val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointByUrlParameterType]
   }
   
-  @scala.inline
-  implicit class SetBreakpointByUrlParameterTypeMutableBuilder[Self <: SetBreakpointByUrlParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: SetBreakpointByUrlParameterType](x: Self) {
     
-    @scala.inline
-    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+    inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptHash(value: String): Self = StObject.set(x, "scriptHash", value.asInstanceOf[js.Any])
+    inline def setScriptHash(value: String): Self = StObject.set(x, "scriptHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptHashUndefined: Self = StObject.set(x, "scriptHash", js.undefined)
+    inline def setScriptHashUndefined: Self = StObject.set(x, "scriptHash", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
+    inline def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
+    inline def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

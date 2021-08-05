@@ -16,19 +16,15 @@ trait PlotScatterClusterEventsOptions extends StObject {
 }
 object PlotScatterClusterEventsOptions {
   
-  @scala.inline
-  def apply(): PlotScatterClusterEventsOptions = {
+  inline def apply(): PlotScatterClusterEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotScatterClusterEventsOptions]
   }
   
-  @scala.inline
-  implicit class PlotScatterClusterEventsOptionsMutableBuilder[Self <: PlotScatterClusterEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotScatterClusterEventsOptions](x: Self) {
     
-    @scala.inline
-    def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
+    inline def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillToClusterUndefined: Self = StObject.set(x, "drillToCluster", js.undefined)
+    inline def setDrillToClusterUndefined: Self = StObject.set(x, "drillToCluster", js.undefined)
   }
 }

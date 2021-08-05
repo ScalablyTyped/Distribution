@@ -28,6 +28,5 @@ object Avatar {
   @JSImport("react-native-elements", "Avatar.Accessory")
   @js.native
   def Accessory: ComponentType[PartialIconPropsPartialIm] = js.native
-  @scala.inline
-  def Accessory_=(x: ComponentType[PartialIconPropsPartialIm]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Accessory")(x.asInstanceOf[js.Any])
+  inline def Accessory_=(x: ComponentType[PartialIconPropsPartialIm]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Accessory")(x.asInstanceOf[js.Any])
 }

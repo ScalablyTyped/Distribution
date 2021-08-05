@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLLocation extends StObject {
   
-  @JSName("MSHTML.IHTMLLocation_typekey")
+  /* private */ @JSName("MSHTML.IHTMLLocation_typekey")
   var MSHTMLDotIHTMLLocation_typekey: IHTMLLocation = js.native
   
   def assign(bstr: String): Unit = js.native

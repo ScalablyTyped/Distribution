@@ -22,8 +22,7 @@ trait Children extends StObject {
 }
 object Children {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]],
     columnCount: Validator[Double],
     columnMaxWidth: Requireable[Double],
@@ -34,22 +33,16 @@ object Children {
     __obj.asInstanceOf[Children]
   }
   
-  @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+  extension [Self <: Children](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Validator[js.Function1[/* props */ SizedColumnProps, ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCount(value: Validator[Double]): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Validator[Double]): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnMaxWidth(value: Requireable[Double]): Self = StObject.set(x, "columnMaxWidth", value.asInstanceOf[js.Any])
+    inline def setColumnMaxWidth(value: Requireable[Double]): Self = StObject.set(x, "columnMaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnMinWidth(value: Requireable[Double]): Self = StObject.set(x, "columnMinWidth", value.asInstanceOf[js.Any])
+    inline def setColumnMinWidth(value: Requireable[Double]): Self = StObject.set(x, "columnMinWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

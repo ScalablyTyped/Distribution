@@ -61,41 +61,30 @@ object pluginBlockSettingsMenuItemMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(label: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Props = {
+      inline def apply(label: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Props = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAllowedBlocks(value: js.Array[String]): Self = StObject.set(x, "allowedBlocks", value.asInstanceOf[js.Any])
+        inline def setAllowedBlocks(value: js.Array[String]): Self = StObject.set(x, "allowedBlocks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
+        inline def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
         
-        @scala.inline
-        def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
+        inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
         
-        @scala.inline
-        def setIcon(value: Element | Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Element | Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+        inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+        inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+        inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       }
     }
   }

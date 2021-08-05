@@ -14,8 +14,7 @@ trait ConstructorDeclaration
 }
 object ConstructorDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,13 +42,10 @@ object ConstructorDeclaration {
     __obj.asInstanceOf[ConstructorDeclaration]
   }
   
-  @scala.inline
-  implicit class ConstructorDeclarationMutableBuilder[Self <: ConstructorDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorDeclaration](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
+    inline def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
   }
 }

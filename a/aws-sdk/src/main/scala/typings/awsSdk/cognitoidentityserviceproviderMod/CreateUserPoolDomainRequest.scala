@@ -23,25 +23,19 @@ trait CreateUserPoolDomainRequest extends StObject {
 }
 object CreateUserPoolDomainRequest {
   
-  @scala.inline
-  def apply(Domain: DomainType, UserPoolId: UserPoolIdType): CreateUserPoolDomainRequest = {
+  inline def apply(Domain: DomainType, UserPoolId: UserPoolIdType): CreateUserPoolDomainRequest = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserPoolDomainRequest]
   }
   
-  @scala.inline
-  implicit class CreateUserPoolDomainRequestMutableBuilder[Self <: CreateUserPoolDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUserPoolDomainRequest](x: Self) {
     
-    @scala.inline
-    def setCustomDomainConfig(value: CustomDomainConfigType): Self = StObject.set(x, "CustomDomainConfig", value.asInstanceOf[js.Any])
+    inline def setCustomDomainConfig(value: CustomDomainConfigType): Self = StObject.set(x, "CustomDomainConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDomainConfigUndefined: Self = StObject.set(x, "CustomDomainConfig", js.undefined)
+    inline def setCustomDomainConfigUndefined: Self = StObject.set(x, "CustomDomainConfig", js.undefined)
     
-    @scala.inline
-    def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

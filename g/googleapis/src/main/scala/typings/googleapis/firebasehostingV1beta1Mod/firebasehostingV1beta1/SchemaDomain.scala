@@ -42,49 +42,35 @@ trait SchemaDomain extends StObject {
 }
 object SchemaDomain {
   
-  @scala.inline
-  def apply(): SchemaDomain = {
+  inline def apply(): SchemaDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomain]
   }
   
-  @scala.inline
-  implicit class SchemaDomainMutableBuilder[Self <: SchemaDomain] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomain](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setDomainRedirect(value: SchemaDomainRedirect): Self = StObject.set(x, "domainRedirect", value.asInstanceOf[js.Any])
+    inline def setDomainRedirect(value: SchemaDomainRedirect): Self = StObject.set(x, "domainRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainRedirectUndefined: Self = StObject.set(x, "domainRedirect", js.undefined)
+    inline def setDomainRedirectUndefined: Self = StObject.set(x, "domainRedirect", js.undefined)
     
-    @scala.inline
-    def setProvisioning(value: SchemaDomainProvisioning): Self = StObject.set(x, "provisioning", value.asInstanceOf[js.Any])
+    inline def setProvisioning(value: SchemaDomainProvisioning): Self = StObject.set(x, "provisioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningUndefined: Self = StObject.set(x, "provisioning", js.undefined)
+    inline def setProvisioningUndefined: Self = StObject.set(x, "provisioning", js.undefined)
     
-    @scala.inline
-    def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+    inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

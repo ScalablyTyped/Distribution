@@ -18,25 +18,19 @@ trait SchemaProductDestination extends StObject {
 }
 object SchemaProductDestination {
   
-  @scala.inline
-  def apply(): SchemaProductDestination = {
+  inline def apply(): SchemaProductDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductDestination]
   }
   
-  @scala.inline
-  implicit class SchemaProductDestinationMutableBuilder[Self <: SchemaProductDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductDestination](x: Self) {
     
-    @scala.inline
-    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+    inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+    inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
-    @scala.inline
-    def setIntention(value: String): Self = StObject.set(x, "intention", value.asInstanceOf[js.Any])
+    inline def setIntention(value: String): Self = StObject.set(x, "intention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentionUndefined: Self = StObject.set(x, "intention", js.undefined)
+    inline def setIntentionUndefined: Self = StObject.set(x, "intention", js.undefined)
   }
 }

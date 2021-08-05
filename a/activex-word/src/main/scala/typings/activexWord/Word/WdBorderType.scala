@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdBorderType extends StObject
 object WdBorderType {
   
-  @scala.inline
-  def wdBorderBottom: `-3` = -3.asInstanceOf[`-3`]
+  inline def wdBorderBottom: `-3` = -3.asInstanceOf[`-3`]
   
-  @scala.inline
-  def wdBorderDiagonalDown: `-7` = -7.asInstanceOf[`-7`]
+  inline def wdBorderDiagonalDown: `-7` = -7.asInstanceOf[`-7`]
   
-  @scala.inline
-  def wdBorderDiagonalUp: `-8` = -8.asInstanceOf[`-8`]
+  inline def wdBorderDiagonalUp: `-8` = -8.asInstanceOf[`-8`]
   
-  @scala.inline
-  def wdBorderHorizontal: `-5` = -5.asInstanceOf[`-5`]
+  inline def wdBorderHorizontal: `-5` = -5.asInstanceOf[`-5`]
   
-  @scala.inline
-  def wdBorderLeft: `-2` = -2.asInstanceOf[`-2`]
+  inline def wdBorderLeft: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def wdBorderRight: `-4` = -4.asInstanceOf[`-4`]
+  inline def wdBorderRight: `-4` = -4.asInstanceOf[`-4`]
   
-  @scala.inline
-  def wdBorderTop: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdBorderTop: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def wdBorderVertical: `-6` = -6.asInstanceOf[`-6`]
+  inline def wdBorderVertical: `-6` = -6.asInstanceOf[`-6`]
 }

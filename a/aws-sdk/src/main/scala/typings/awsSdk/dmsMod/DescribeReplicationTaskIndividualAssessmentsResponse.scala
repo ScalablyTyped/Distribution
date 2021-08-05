@@ -18,28 +18,21 @@ trait DescribeReplicationTaskIndividualAssessmentsResponse extends StObject {
 }
 object DescribeReplicationTaskIndividualAssessmentsResponse {
   
-  @scala.inline
-  def apply(): DescribeReplicationTaskIndividualAssessmentsResponse = {
+  inline def apply(): DescribeReplicationTaskIndividualAssessmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReplicationTaskIndividualAssessmentsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationTaskIndividualAssessmentsResponseMutableBuilder[Self <: DescribeReplicationTaskIndividualAssessmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationTaskIndividualAssessmentsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskIndividualAssessments(value: ReplicationTaskIndividualAssessmentList): Self = StObject.set(x, "ReplicationTaskIndividualAssessments", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskIndividualAssessments(value: ReplicationTaskIndividualAssessmentList): Self = StObject.set(x, "ReplicationTaskIndividualAssessments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskIndividualAssessmentsUndefined: Self = StObject.set(x, "ReplicationTaskIndividualAssessments", js.undefined)
+    inline def setReplicationTaskIndividualAssessmentsUndefined: Self = StObject.set(x, "ReplicationTaskIndividualAssessments", js.undefined)
     
-    @scala.inline
-    def setReplicationTaskIndividualAssessmentsVarargs(value: ReplicationTaskIndividualAssessment*): Self = StObject.set(x, "ReplicationTaskIndividualAssessments", js.Array(value :_*))
+    inline def setReplicationTaskIndividualAssessmentsVarargs(value: ReplicationTaskIndividualAssessment*): Self = StObject.set(x, "ReplicationTaskIndividualAssessments", js.Array(value :_*))
   }
 }

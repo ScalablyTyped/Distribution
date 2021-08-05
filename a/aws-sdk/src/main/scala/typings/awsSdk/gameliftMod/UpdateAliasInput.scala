@@ -28,34 +28,25 @@ trait UpdateAliasInput extends StObject {
 }
 object UpdateAliasInput {
   
-  @scala.inline
-  def apply(AliasId: AliasIdOrArn): UpdateAliasInput = {
+  inline def apply(AliasId: AliasIdOrArn): UpdateAliasInput = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasInput]
   }
   
-  @scala.inline
-  implicit class UpdateAliasInputMutableBuilder[Self <: UpdateAliasInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAliasInput](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: NonBlankAndLengthConstraintString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonBlankAndLengthConstraintString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRoutingStrategy(value: RoutingStrategy): Self = StObject.set(x, "RoutingStrategy", value.asInstanceOf[js.Any])
+    inline def setRoutingStrategy(value: RoutingStrategy): Self = StObject.set(x, "RoutingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingStrategyUndefined: Self = StObject.set(x, "RoutingStrategy", js.undefined)
+    inline def setRoutingStrategyUndefined: Self = StObject.set(x, "RoutingStrategy", js.undefined)
   }
 }

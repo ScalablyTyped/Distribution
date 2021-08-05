@@ -14,22 +14,17 @@ trait TaskOrchestrationOwner extends StObject {
 }
 object TaskOrchestrationOwner {
   
-  @scala.inline
-  def apply(_links: js.Any, id: Double, name: String): TaskOrchestrationOwner = {
+  inline def apply(_links: js.Any, id: Double, name: String): TaskOrchestrationOwner = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOrchestrationOwner]
   }
   
-  @scala.inline
-  implicit class TaskOrchestrationOwnerMutableBuilder[Self <: TaskOrchestrationOwner] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOrchestrationOwner](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

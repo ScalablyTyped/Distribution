@@ -31,29 +31,17 @@ object mod {
     ) = this()
   }
   
-  @scala.inline
-  def attach(server: Server): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any]).asInstanceOf[AGServer]
-  @scala.inline
-  def attach(server: Server, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def attach(server: Server): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any]).asInstanceOf[AGServer]
+  inline def attach(server: Server, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
   
-  @scala.inline
-  def listen(): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Double): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any]).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Double, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Double, options: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Double, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Double, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Unit, options: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Unit, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
-  @scala.inline
-  def listen(port: Unit, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[AGServer]
+  inline def listen(port: Double): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any]).asInstanceOf[AGServer]
+  inline def listen(port: Double, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(port: Double, options: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(port: Double, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(port: Double, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(port: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(port: Unit, options: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(port: Unit, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def listen(port: Unit, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
 }

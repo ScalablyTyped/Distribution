@@ -63,8 +63,7 @@ object Provider {
       * @param options A value that specifies additional circumstances and behaviors for when Windows requests updates.
       */
     /* static member */
-    @scala.inline
-    def setUpdateInformation(
+    inline def setUpdateInformation(
       file: IStorageFile,
       contentId: String,
       readMode: ReadActivationMode,

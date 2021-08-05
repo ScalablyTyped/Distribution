@@ -18,28 +18,21 @@ trait PushSync extends StObject {
 }
 object PushSync {
   
-  @scala.inline
-  def apply(): PushSync = {
+  inline def apply(): PushSync = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushSync]
   }
   
-  @scala.inline
-  implicit class PushSyncMutableBuilder[Self <: PushSync] (val x: Self) extends AnyVal {
+  extension [Self <: PushSync](x: Self) {
     
-    @scala.inline
-    def setApplicationArns(value: ApplicationArnList): Self = StObject.set(x, "ApplicationArns", value.asInstanceOf[js.Any])
+    inline def setApplicationArns(value: ApplicationArnList): Self = StObject.set(x, "ApplicationArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationArnsUndefined: Self = StObject.set(x, "ApplicationArns", js.undefined)
+    inline def setApplicationArnsUndefined: Self = StObject.set(x, "ApplicationArns", js.undefined)
     
-    @scala.inline
-    def setApplicationArnsVarargs(value: ApplicationArn*): Self = StObject.set(x, "ApplicationArns", js.Array(value :_*))
+    inline def setApplicationArnsVarargs(value: ApplicationArn*): Self = StObject.set(x, "ApplicationArns", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleArn(value: AssumeRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AssumeRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

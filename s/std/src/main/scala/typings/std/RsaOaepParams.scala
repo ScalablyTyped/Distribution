@@ -14,21 +14,17 @@ trait RsaOaepParams
 }
 object RsaOaepParams {
   
-  @scala.inline
-  def apply(name: java.lang.String): RsaOaepParams = {
+  inline def apply(name: java.lang.String): RsaOaepParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaOaepParams]
   }
   
-  @scala.inline
-  implicit class RsaOaepParamsMutableBuilder[Self <: RsaOaepParams] (val x: Self) extends AnyVal {
+  extension [Self <: RsaOaepParams](x: Self) {
     
-    @scala.inline
-    def setLabel(
+    inline def setLabel(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

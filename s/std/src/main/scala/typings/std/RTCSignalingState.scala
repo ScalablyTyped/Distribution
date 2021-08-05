@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCSignalingState extends StObject
 object RTCSignalingState {
   
-  @scala.inline
-  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
+  inline def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   
-  @scala.inline
-  def `have-local-offer`: typings.std.stdStrings.`have-local-offer` = "have-local-offer".asInstanceOf[typings.std.stdStrings.`have-local-offer`]
+  inline def `have-local-offer`: typings.std.stdStrings.`have-local-offer` = "have-local-offer".asInstanceOf[typings.std.stdStrings.`have-local-offer`]
   
-  @scala.inline
-  def `have-local-pranswer`: typings.std.stdStrings.`have-local-pranswer` = "have-local-pranswer".asInstanceOf[typings.std.stdStrings.`have-local-pranswer`]
+  inline def `have-local-pranswer`: typings.std.stdStrings.`have-local-pranswer` = "have-local-pranswer".asInstanceOf[typings.std.stdStrings.`have-local-pranswer`]
   
-  @scala.inline
-  def `have-remote-offer`: typings.std.stdStrings.`have-remote-offer` = "have-remote-offer".asInstanceOf[typings.std.stdStrings.`have-remote-offer`]
+  inline def `have-remote-offer`: typings.std.stdStrings.`have-remote-offer` = "have-remote-offer".asInstanceOf[typings.std.stdStrings.`have-remote-offer`]
   
-  @scala.inline
-  def `have-remote-pranswer`: typings.std.stdStrings.`have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[typings.std.stdStrings.`have-remote-pranswer`]
+  inline def `have-remote-pranswer`: typings.std.stdStrings.`have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[typings.std.stdStrings.`have-remote-pranswer`]
   
-  @scala.inline
-  def stable: typings.std.stdStrings.stable = "stable".asInstanceOf[typings.std.stdStrings.stable]
+  inline def stable: typings.std.stdStrings.stable = "stable".asInstanceOf[typings.std.stdStrings.stable]
 }

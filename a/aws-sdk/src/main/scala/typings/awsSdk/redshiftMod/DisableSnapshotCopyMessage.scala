@@ -13,16 +13,13 @@ trait DisableSnapshotCopyMessage extends StObject {
 }
 object DisableSnapshotCopyMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): DisableSnapshotCopyMessage = {
+  inline def apply(ClusterIdentifier: String): DisableSnapshotCopyMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableSnapshotCopyMessage]
   }
   
-  @scala.inline
-  implicit class DisableSnapshotCopyMessageMutableBuilder[Self <: DisableSnapshotCopyMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DisableSnapshotCopyMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

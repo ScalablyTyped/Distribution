@@ -13,16 +13,13 @@ trait GetResolverQueryLogConfigPolicyRequest extends StObject {
 }
 object GetResolverQueryLogConfigPolicyRequest {
   
-  @scala.inline
-  def apply(Arn: Arn): GetResolverQueryLogConfigPolicyRequest = {
+  inline def apply(Arn: Arn): GetResolverQueryLogConfigPolicyRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResolverQueryLogConfigPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetResolverQueryLogConfigPolicyRequestMutableBuilder[Self <: GetResolverQueryLogConfigPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResolverQueryLogConfigPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

@@ -17,37 +17,27 @@ trait GooglePrivacyDlpV2KMapEstimationConfig extends StObject {
 }
 object GooglePrivacyDlpV2KMapEstimationConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2KMapEstimationConfig = {
+  inline def apply(): GooglePrivacyDlpV2KMapEstimationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2KMapEstimationConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2KMapEstimationConfigMutableBuilder[Self <: GooglePrivacyDlpV2KMapEstimationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2KMapEstimationConfig](x: Self) {
     
-    @scala.inline
-    def setAuxiliaryTables(value: js.Array[GooglePrivacyDlpV2AuxiliaryTable]): Self = StObject.set(x, "auxiliaryTables", value.asInstanceOf[js.Any])
+    inline def setAuxiliaryTables(value: js.Array[GooglePrivacyDlpV2AuxiliaryTable]): Self = StObject.set(x, "auxiliaryTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuxiliaryTablesUndefined: Self = StObject.set(x, "auxiliaryTables", js.undefined)
+    inline def setAuxiliaryTablesUndefined: Self = StObject.set(x, "auxiliaryTables", js.undefined)
     
-    @scala.inline
-    def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2AuxiliaryTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value :_*))
+    inline def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2AuxiliaryTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value :_*))
     
-    @scala.inline
-    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2TaggedField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
+    inline def setQuasiIds(value: js.Array[GooglePrivacyDlpV2TaggedField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
+    inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2TaggedField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2TaggedField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

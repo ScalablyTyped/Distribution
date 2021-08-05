@@ -16,25 +16,19 @@ trait NewLines extends StObject {
 }
 object NewLines {
   
-  @scala.inline
-  def apply(newLines: Double, newStart: Double, oldLines: Double, oldStart: Double): NewLines = {
+  inline def apply(newLines: Double, newStart: Double, oldLines: Double, oldStart: Double): NewLines = {
     val __obj = js.Dynamic.literal(newLines = newLines.asInstanceOf[js.Any], newStart = newStart.asInstanceOf[js.Any], oldLines = oldLines.asInstanceOf[js.Any], oldStart = oldStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewLines]
   }
   
-  @scala.inline
-  implicit class NewLinesMutableBuilder[Self <: NewLines] (val x: Self) extends AnyVal {
+  extension [Self <: NewLines](x: Self) {
     
-    @scala.inline
-    def setNewLines(value: Double): Self = StObject.set(x, "newLines", value.asInstanceOf[js.Any])
+    inline def setNewLines(value: Double): Self = StObject.set(x, "newLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewStart(value: Double): Self = StObject.set(x, "newStart", value.asInstanceOf[js.Any])
+    inline def setNewStart(value: Double): Self = StObject.set(x, "newStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldLines(value: Double): Self = StObject.set(x, "oldLines", value.asInstanceOf[js.Any])
+    inline def setOldLines(value: Double): Self = StObject.set(x, "oldLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldStart(value: Double): Self = StObject.set(x, "oldStart", value.asInstanceOf[js.Any])
+    inline def setOldStart(value: Double): Self = StObject.set(x, "oldStart", value.asInstanceOf[js.Any])
   }
 }

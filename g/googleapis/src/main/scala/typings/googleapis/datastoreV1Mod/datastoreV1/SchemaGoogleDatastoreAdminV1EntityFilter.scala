@@ -34,31 +34,23 @@ trait SchemaGoogleDatastoreAdminV1EntityFilter extends StObject {
 }
 object SchemaGoogleDatastoreAdminV1EntityFilter {
   
-  @scala.inline
-  def apply(): SchemaGoogleDatastoreAdminV1EntityFilter = {
+  inline def apply(): SchemaGoogleDatastoreAdminV1EntityFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1EntityFilter]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1EntityFilterMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1EntityFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDatastoreAdminV1EntityFilter](x: Self) {
     
-    @scala.inline
-    def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
+    inline def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
+    inline def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
     
-    @scala.inline
-    def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
+    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
     
-    @scala.inline
-    def setNamespaceIds(value: js.Array[String]): Self = StObject.set(x, "namespaceIds", value.asInstanceOf[js.Any])
+    inline def setNamespaceIds(value: js.Array[String]): Self = StObject.set(x, "namespaceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceIdsUndefined: Self = StObject.set(x, "namespaceIds", js.undefined)
+    inline def setNamespaceIdsUndefined: Self = StObject.set(x, "namespaceIds", js.undefined)
     
-    @scala.inline
-    def setNamespaceIdsVarargs(value: String*): Self = StObject.set(x, "namespaceIds", js.Array(value :_*))
+    inline def setNamespaceIdsVarargs(value: String*): Self = StObject.set(x, "namespaceIds", js.Array(value :_*))
   }
 }

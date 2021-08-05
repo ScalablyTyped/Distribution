@@ -38,33 +38,23 @@ trait LineStyle
      with _WebkitBorderBeforeStyleProperty
 object LineStyle {
   
-  @scala.inline
-  def dashed: typings.csstype.csstypeStrings.dashed = "dashed".asInstanceOf[typings.csstype.csstypeStrings.dashed]
+  inline def dashed: typings.csstype.csstypeStrings.dashed = "dashed".asInstanceOf[typings.csstype.csstypeStrings.dashed]
   
-  @scala.inline
-  def dotted: typings.csstype.csstypeStrings.dotted = "dotted".asInstanceOf[typings.csstype.csstypeStrings.dotted]
+  inline def dotted: typings.csstype.csstypeStrings.dotted = "dotted".asInstanceOf[typings.csstype.csstypeStrings.dotted]
   
-  @scala.inline
-  def double: typings.csstype.csstypeStrings.double = "double".asInstanceOf[typings.csstype.csstypeStrings.double]
+  inline def double: typings.csstype.csstypeStrings.double = "double".asInstanceOf[typings.csstype.csstypeStrings.double]
   
-  @scala.inline
-  def groove: typings.csstype.csstypeStrings.groove = "groove".asInstanceOf[typings.csstype.csstypeStrings.groove]
+  inline def groove: typings.csstype.csstypeStrings.groove = "groove".asInstanceOf[typings.csstype.csstypeStrings.groove]
   
-  @scala.inline
-  def hidden: typings.csstype.csstypeStrings.hidden = "hidden".asInstanceOf[typings.csstype.csstypeStrings.hidden]
+  inline def hidden: typings.csstype.csstypeStrings.hidden = "hidden".asInstanceOf[typings.csstype.csstypeStrings.hidden]
   
-  @scala.inline
-  def inset: typings.csstype.csstypeStrings.inset = "inset".asInstanceOf[typings.csstype.csstypeStrings.inset]
+  inline def inset: typings.csstype.csstypeStrings.inset = "inset".asInstanceOf[typings.csstype.csstypeStrings.inset]
   
-  @scala.inline
-  def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
+  inline def none: typings.csstype.csstypeStrings.none = "none".asInstanceOf[typings.csstype.csstypeStrings.none]
   
-  @scala.inline
-  def outset: typings.csstype.csstypeStrings.outset = "outset".asInstanceOf[typings.csstype.csstypeStrings.outset]
+  inline def outset: typings.csstype.csstypeStrings.outset = "outset".asInstanceOf[typings.csstype.csstypeStrings.outset]
   
-  @scala.inline
-  def ridge: typings.csstype.csstypeStrings.ridge = "ridge".asInstanceOf[typings.csstype.csstypeStrings.ridge]
+  inline def ridge: typings.csstype.csstypeStrings.ridge = "ridge".asInstanceOf[typings.csstype.csstypeStrings.ridge]
   
-  @scala.inline
-  def solid: typings.csstype.csstypeStrings.solid = "solid".asInstanceOf[typings.csstype.csstypeStrings.solid]
+  inline def solid: typings.csstype.csstypeStrings.solid = "solid".asInstanceOf[typings.csstype.csstypeStrings.solid]
 }

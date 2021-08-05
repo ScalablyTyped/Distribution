@@ -18,8 +18,7 @@ trait JQueryNotifyInstance extends StObject {
 }
 object JQueryNotifyInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     element: JQuery,
     isOpen: Boolean,
@@ -30,22 +29,16 @@ object JQueryNotifyInstance {
     __obj.asInstanceOf[JQueryNotifyInstance]
   }
   
-  @scala.inline
-  implicit class JQueryNotifyInstanceMutableBuilder[Self <: JQueryNotifyInstance] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryNotifyInstance](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptions(value: JQueryNotifyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: JQueryNotifyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

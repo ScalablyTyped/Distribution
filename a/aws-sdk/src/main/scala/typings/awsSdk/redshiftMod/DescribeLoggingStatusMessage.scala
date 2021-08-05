@@ -13,16 +13,13 @@ trait DescribeLoggingStatusMessage extends StObject {
 }
 object DescribeLoggingStatusMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): DescribeLoggingStatusMessage = {
+  inline def apply(ClusterIdentifier: String): DescribeLoggingStatusMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoggingStatusMessage]
   }
   
-  @scala.inline
-  implicit class DescribeLoggingStatusMessageMutableBuilder[Self <: DescribeLoggingStatusMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoggingStatusMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

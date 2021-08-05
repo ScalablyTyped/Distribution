@@ -16,22 +16,17 @@ trait SchemaSettings extends StObject {
 }
 object SchemaSettings {
   
-  @scala.inline
-  def apply(): SchemaSettings = {
+  inline def apply(): SchemaSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSettings]
   }
   
-  @scala.inline
-  implicit class SchemaSettingsMutableBuilder[Self <: SchemaSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSettings](x: Self) {
     
-    @scala.inline
-    def setNotifications(value: js.Array[SchemaNotification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: js.Array[SchemaNotification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    @scala.inline
-    def setNotificationsVarargs(value: SchemaNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: SchemaNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
   }
 }

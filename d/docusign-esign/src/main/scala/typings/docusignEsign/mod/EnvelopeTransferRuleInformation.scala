@@ -47,62 +47,45 @@ trait EnvelopeTransferRuleInformation extends StObject {
 }
 object EnvelopeTransferRuleInformation {
   
-  @scala.inline
-  def apply(): EnvelopeTransferRuleInformation = {
+  inline def apply(): EnvelopeTransferRuleInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeTransferRuleInformation]
   }
   
-  @scala.inline
-  implicit class EnvelopeTransferRuleInformationMutableBuilder[Self <: EnvelopeTransferRuleInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeTransferRuleInformation](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setEnvelopeTransferRules(
+    inline def setEnvelopeTransferRules(
       value: js.Array[
           /* This object contains details about an envelope transfer rule. */ EnvelopeTransferRule
         ]
     ): Self = StObject.set(x, "envelopeTransferRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeTransferRulesUndefined: Self = StObject.set(x, "envelopeTransferRules", js.undefined)
+    inline def setEnvelopeTransferRulesUndefined: Self = StObject.set(x, "envelopeTransferRules", js.undefined)
     
-    @scala.inline
-    def setEnvelopeTransferRulesVarargs(value: (/* This object contains details about an envelope transfer rule. */ EnvelopeTransferRule)*): Self = StObject.set(x, "envelopeTransferRules", js.Array(value :_*))
+    inline def setEnvelopeTransferRulesVarargs(value: (/* This object contains details about an envelope transfer rule. */ EnvelopeTransferRule)*): Self = StObject.set(x, "envelopeTransferRules", js.Array(value :_*))
     
-    @scala.inline
-    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
+    inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
+    inline def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
-    @scala.inline
-    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
+    inline def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
+    inline def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
     
-    @scala.inline
-    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
+    inline def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
+    inline def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
-    @scala.inline
-    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
+    inline def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
+    inline def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

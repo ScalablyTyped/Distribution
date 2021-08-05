@@ -12,25 +12,19 @@ trait JSONFormatterOptions extends StObject {
 }
 object JSONFormatterOptions {
   
-  @scala.inline
-  def apply(): JSONFormatterOptions = {
+  inline def apply(): JSONFormatterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONFormatterOptions]
   }
   
-  @scala.inline
-  implicit class JSONFormatterOptionsMutableBuilder[Self <: JSONFormatterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JSONFormatterOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
+    inline def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
+    inline def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
+    inline def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
   }
 }

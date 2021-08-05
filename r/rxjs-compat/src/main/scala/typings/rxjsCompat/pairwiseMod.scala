@@ -10,6 +10,5 @@ object pairwiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pairwise[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pairwise")().asInstanceOf[js.Any]
+  inline def pairwise[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pairwise")().asInstanceOf[js.Any]
 }

@@ -46,8 +46,7 @@ trait Tombstone
 }
 object Tombstone {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     creep: AnyCreep,
     deathTime: Double,
     effects: js.Array[RoomObjectEffect],
@@ -60,22 +59,16 @@ object Tombstone {
     __obj.asInstanceOf[Tombstone]
   }
   
-  @scala.inline
-  implicit class TombstoneMutableBuilder[Self <: Tombstone] (val x: Self) extends AnyVal {
+  extension [Self <: Tombstone](x: Self) {
     
-    @scala.inline
-    def setCreep(value: AnyCreep): Self = StObject.set(x, "creep", value.asInstanceOf[js.Any])
+    inline def setCreep(value: AnyCreep): Self = StObject.set(x, "creep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeathTime(value: Double): Self = StObject.set(x, "deathTime", value.asInstanceOf[js.Any])
+    inline def setDeathTime(value: Double): Self = StObject.set(x, "deathTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id[Tombstone]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[Tombstone]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: StoreDefinitionUnlimited): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: StoreDefinitionUnlimited): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

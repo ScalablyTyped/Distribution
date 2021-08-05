@@ -12,20 +12,16 @@ trait VariableUsage extends StObject {
 }
 object VariableUsage {
   
-  @scala.inline
-  def apply(node: Variable, `type`: GraphQLInputType): VariableUsage = {
+  inline def apply(node: Variable, `type`: GraphQLInputType): VariableUsage = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableUsage]
   }
   
-  @scala.inline
-  implicit class VariableUsageMutableBuilder[Self <: VariableUsage] (val x: Self) extends AnyVal {
+  extension [Self <: VariableUsage](x: Self) {
     
-    @scala.inline
-    def setNode(value: Variable): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Variable): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: GraphQLInputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GraphQLInputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

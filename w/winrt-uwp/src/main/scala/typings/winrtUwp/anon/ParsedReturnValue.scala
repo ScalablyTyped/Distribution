@@ -13,19 +13,15 @@ trait ParsedReturnValue extends StObject {
 }
 object ParsedReturnValue {
   
-  @scala.inline
-  def apply(parsed: UsbEndpointDescriptor, returnValue: Boolean): ParsedReturnValue = {
+  inline def apply(parsed: UsbEndpointDescriptor, returnValue: Boolean): ParsedReturnValue = {
     val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedReturnValue]
   }
   
-  @scala.inline
-  implicit class ParsedReturnValueMutableBuilder[Self <: ParsedReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedReturnValue](x: Self) {
     
-    @scala.inline
-    def setParsed(value: UsbEndpointDescriptor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+    inline def setParsed(value: UsbEndpointDescriptor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -16,10 +16,8 @@ object ParseJSONUtil {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def parseObjectFromJsonString(json: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseObjectFromJsonString")(json.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseObjectFromJsonString(json: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseObjectFromJsonString")(json.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def validateJson(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateJson")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validateJson(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateJson")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

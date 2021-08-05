@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object createWorkerMod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canvas: HTMLCanvasElement,
     workerUrl: String,
     listener: js.Function1[/* ev */ MessageEvent[js.Any], js.Any]

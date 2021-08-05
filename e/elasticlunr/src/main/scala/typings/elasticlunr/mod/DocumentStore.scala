@@ -34,6 +34,5 @@ object DocumentStore {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def load[T](serialisedData: SerialisedDocumentStore[T]): DocumentStore[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[DocumentStore[T]]
+  inline def load[T](serialisedData: SerialisedDocumentStore[T]): DocumentStore[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[DocumentStore[T]]
 }

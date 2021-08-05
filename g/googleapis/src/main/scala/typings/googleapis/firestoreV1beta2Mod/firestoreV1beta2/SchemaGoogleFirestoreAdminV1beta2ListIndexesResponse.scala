@@ -22,28 +22,21 @@ trait SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse extends StObject {
 }
 object SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse = {
+  inline def apply(): SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1beta2ListIndexesResponseMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFirestoreAdminV1beta2ListIndexesResponse](x: Self) {
     
-    @scala.inline
-    def setIndexes(value: js.Array[SchemaGoogleFirestoreAdminV1beta2Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[SchemaGoogleFirestoreAdminV1beta2Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
+    inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    @scala.inline
-    def setIndexesVarargs(value: SchemaGoogleFirestoreAdminV1beta2Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: SchemaGoogleFirestoreAdminV1beta2Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait VideoPlayerSizeAssignedTargetingOptionDetails extends StObject {
 }
 object VideoPlayerSizeAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): VideoPlayerSizeAssignedTargetingOptionDetails = {
+  inline def apply(): VideoPlayerSizeAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoPlayerSizeAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class VideoPlayerSizeAssignedTargetingOptionDetailsMutableBuilder[Self <: VideoPlayerSizeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: VideoPlayerSizeAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
     
-    @scala.inline
-    def setVideoPlayerSize(value: String): Self = StObject.set(x, "videoPlayerSize", value.asInstanceOf[js.Any])
+    inline def setVideoPlayerSize(value: String): Self = StObject.set(x, "videoPlayerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPlayerSizeUndefined: Self = StObject.set(x, "videoPlayerSize", js.undefined)
+    inline def setVideoPlayerSizeUndefined: Self = StObject.set(x, "videoPlayerSize", js.undefined)
   }
 }

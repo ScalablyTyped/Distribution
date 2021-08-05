@@ -75,69 +75,49 @@ trait TabBarIOSItemProps
 }
 object TabBarIOSItemProps {
   
-  @scala.inline
-  def apply(): TabBarIOSItemProps = {
+  inline def apply(): TabBarIOSItemProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabBarIOSItemProps]
   }
   
-  @scala.inline
-  implicit class TabBarIOSItemPropsMutableBuilder[Self <: TabBarIOSItemProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabBarIOSItemProps](x: Self) {
     
-    @scala.inline
-    def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeColor(value: ColorValue): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
+    inline def setBadgeColor(value: ColorValue): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
+    inline def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setIcon(value: ImageURISource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ImageURISource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setRenderAsOriginal(value: Boolean): Self = StObject.set(x, "renderAsOriginal", value.asInstanceOf[js.Any])
+    inline def setRenderAsOriginal(value: Boolean): Self = StObject.set(x, "renderAsOriginal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderAsOriginalUndefined: Self = StObject.set(x, "renderAsOriginal", js.undefined)
+    inline def setRenderAsOriginalUndefined: Self = StObject.set(x, "renderAsOriginal", js.undefined)
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIcon(value: ImageURISource): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
+    inline def setSelectedIcon(value: ImageURISource): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
+    inline def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setSystemIcon(
+    inline def setSystemIcon(
       value: bookmarks | contacts | downloads | favorites | featured | history | more | `most-recent` | `most-viewed` | recents | search | `top-rated`
     ): Self = StObject.set(x, "systemIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemIconUndefined: Self = StObject.set(x, "systemIcon", js.undefined)
+    inline def setSystemIconUndefined: Self = StObject.set(x, "systemIcon", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

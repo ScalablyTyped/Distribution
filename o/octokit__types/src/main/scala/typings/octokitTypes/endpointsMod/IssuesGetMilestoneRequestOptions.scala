@@ -20,25 +20,19 @@ trait IssuesGetMilestoneRequestOptions extends StObject {
 }
 object IssuesGetMilestoneRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesGetMilestoneRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesGetMilestoneRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/milestones/:milestone_number")
     __obj.asInstanceOf[IssuesGetMilestoneRequestOptions]
   }
   
-  @scala.inline
-  implicit class IssuesGetMilestoneRequestOptionsMutableBuilder[Self <: IssuesGetMilestoneRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesGetMilestoneRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -169,8 +169,7 @@ trait XLayerHandler
 }
 object XLayerHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addOrReplaceNode: (String, Double) => Unit,
     addOrReplaceNodeFromTemplate: (String, TemplateIdentifier, Double) => Unit,
@@ -192,46 +191,32 @@ object XLayerHandler {
     __obj.asInstanceOf[XLayerHandler]
   }
   
-  @scala.inline
-  implicit class XLayerHandlerMutableBuilder[Self <: XLayerHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XLayerHandler](x: Self) {
     
-    @scala.inline
-    def setAddOrReplaceNode(value: (String, Double) => Unit): Self = StObject.set(x, "addOrReplaceNode", js.Any.fromFunction2(value))
+    inline def setAddOrReplaceNode(value: (String, Double) => Unit): Self = StObject.set(x, "addOrReplaceNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddOrReplaceNodeFromTemplate(value: (String, TemplateIdentifier, Double) => Unit): Self = StObject.set(x, "addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
+    inline def setAddOrReplaceNodeFromTemplate(value: (String, TemplateIdentifier, Double) => Unit): Self = StObject.set(x, "addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
+    inline def setAddProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddPropertyWithValue(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addPropertyWithValue", js.Any.fromFunction3(value))
+    inline def setAddPropertyWithValue(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addPropertyWithValue", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDropNode(value: String => Unit): Self = StObject.set(x, "dropNode", js.Any.fromFunction1(value))
+    inline def setDropNode(value: String => Unit): Self = StObject.set(x, "dropNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndLayer(value: () => Unit): Self = StObject.set(x, "endLayer", js.Any.fromFunction0(value))
+    inline def setEndLayer(value: () => Unit): Self = StObject.set(x, "endLayer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
+    inline def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndProperty(value: () => Unit): Self = StObject.set(x, "endProperty", js.Any.fromFunction0(value))
+    inline def setEndProperty(value: () => Unit): Self = StObject.set(x, "endProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOverrideNode(value: (String, Double, Boolean) => Unit): Self = StObject.set(x, "overrideNode", js.Any.fromFunction3(value))
+    inline def setOverrideNode(value: (String, Double, Boolean) => Unit): Self = StObject.set(x, "overrideNode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOverrideProperty(value: (String, Double, `type`, Boolean) => Unit): Self = StObject.set(x, "overrideProperty", js.Any.fromFunction4(value))
+    inline def setOverrideProperty(value: (String, Double, `type`, Boolean) => Unit): Self = StObject.set(x, "overrideProperty", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetPropertyValue(value: js.Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
+    inline def setSetPropertyValue(value: js.Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
+    inline def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartLayer(value: () => Unit): Self = StObject.set(x, "startLayer", js.Any.fromFunction0(value))
+    inline def setStartLayer(value: () => Unit): Self = StObject.set(x, "startLayer", js.Any.fromFunction0(value))
   }
 }

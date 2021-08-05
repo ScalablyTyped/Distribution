@@ -15,31 +15,23 @@ trait GetSharedFilesParams extends StObject {
 }
 object GetSharedFilesParams {
   
-  @scala.inline
-  def apply(): GetSharedFilesParams = {
+  inline def apply(): GetSharedFilesParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSharedFilesParams]
   }
   
-  @scala.inline
-  implicit class GetSharedFilesParamsMutableBuilder[Self <: GetSharedFilesParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetSharedFilesParams](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

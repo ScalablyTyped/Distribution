@@ -24,8 +24,7 @@ trait AdWordsAdExtensions
 }
 object AdWordsAdExtensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callouts: () => AdWordsSelector[Callout],
     message: () => AdWordsSelector[Message],
     mobileApps: () => AdWordsSelector[MobileApp],
@@ -45,28 +44,20 @@ object AdWordsAdExtensions {
     __obj.asInstanceOf[AdWordsAdExtensions]
   }
   
-  @scala.inline
-  implicit class AdWordsAdExtensionsMutableBuilder[Self <: AdWordsAdExtensions] (val x: Self) extends AnyVal {
+  extension [Self <: AdWordsAdExtensions](x: Self) {
     
-    @scala.inline
-    def setNewCalloutBuilder(value: () => CalloutBuilder[Callout]): Self = StObject.set(x, "newCalloutBuilder", js.Any.fromFunction0(value))
+    inline def setNewCalloutBuilder(value: () => CalloutBuilder[Callout]): Self = StObject.set(x, "newCalloutBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMessageBuilder(value: () => MessageBuilder[Message]): Self = StObject.set(x, "newMessageBuilder", js.Any.fromFunction0(value))
+    inline def setNewMessageBuilder(value: () => MessageBuilder[Message]): Self = StObject.set(x, "newMessageBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMobileAppBuilder(value: () => MobileAppBuilder[MobileApp]): Self = StObject.set(x, "newMobileAppBuilder", js.Any.fromFunction0(value))
+    inline def setNewMobileAppBuilder(value: () => MobileAppBuilder[MobileApp]): Self = StObject.set(x, "newMobileAppBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPhoneNumberBuilder(value: () => PhoneNumberBuilder[PhoneNumber]): Self = StObject.set(x, "newPhoneNumberBuilder", js.Any.fromFunction0(value))
+    inline def setNewPhoneNumberBuilder(value: () => PhoneNumberBuilder[PhoneNumber]): Self = StObject.set(x, "newPhoneNumberBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewReviewBuilder(value: () => ReviewBuilder[Review]): Self = StObject.set(x, "newReviewBuilder", js.Any.fromFunction0(value))
+    inline def setNewReviewBuilder(value: () => ReviewBuilder[Review]): Self = StObject.set(x, "newReviewBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSitelinkBuilder(value: () => SitelinkBuilder[Sitelink]): Self = StObject.set(x, "newSitelinkBuilder", js.Any.fromFunction0(value))
+    inline def setNewSitelinkBuilder(value: () => SitelinkBuilder[Sitelink]): Self = StObject.set(x, "newSitelinkBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewSnippetBuilder(value: () => SnippetBuilder[Snippet]): Self = StObject.set(x, "newSnippetBuilder", js.Any.fromFunction0(value))
+    inline def setNewSnippetBuilder(value: () => SnippetBuilder[Snippet]): Self = StObject.set(x, "newSnippetBuilder", js.Any.fromFunction0(value))
   }
 }

@@ -14,8 +14,7 @@ trait TypedFieldDef[F /* <: Field */, T /* <: Type */, B /* <: Bin */]
      with TypeMixins[T]
 object TypedFieldDef {
   
-  @scala.inline
-  def apply[F /* <: Field */, T /* <: Type */, B /* <: Bin */](): TypedFieldDef[F, T, B] = {
+  inline def apply[F /* <: Field */, T /* <: Type */, B /* <: Bin */](): TypedFieldDef[F, T, B] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypedFieldDef[F, T, B]]
   }

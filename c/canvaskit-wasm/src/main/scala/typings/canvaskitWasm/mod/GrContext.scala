@@ -18,8 +18,7 @@ trait GrContext
 }
 object GrContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: () => Unit,
     deleteAfter: () => Unit,
     getResourceCacheLimitBytes: () => Double,
@@ -33,19 +32,14 @@ object GrContext {
     __obj.asInstanceOf[GrContext]
   }
   
-  @scala.inline
-  implicit class GrContextMutableBuilder[Self <: GrContext] (val x: Self) extends AnyVal {
+  extension [Self <: GrContext](x: Self) {
     
-    @scala.inline
-    def setGetResourceCacheLimitBytes(value: () => Double): Self = StObject.set(x, "getResourceCacheLimitBytes", js.Any.fromFunction0(value))
+    inline def setGetResourceCacheLimitBytes(value: () => Double): Self = StObject.set(x, "getResourceCacheLimitBytes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResourceCacheUsageBytes(value: () => Double): Self = StObject.set(x, "getResourceCacheUsageBytes", js.Any.fromFunction0(value))
+    inline def setGetResourceCacheUsageBytes(value: () => Double): Self = StObject.set(x, "getResourceCacheUsageBytes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReleaseResourcesAndAbandonContext(value: () => Unit): Self = StObject.set(x, "releaseResourcesAndAbandonContext", js.Any.fromFunction0(value))
+    inline def setReleaseResourcesAndAbandonContext(value: () => Unit): Self = StObject.set(x, "releaseResourcesAndAbandonContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetResourceCacheLimitBytes(value: Double => Unit): Self = StObject.set(x, "setResourceCacheLimitBytes", js.Any.fromFunction1(value))
+    inline def setSetResourceCacheLimitBytes(value: Double => Unit): Self = StObject.set(x, "setResourceCacheLimitBytes", js.Any.fromFunction1(value))
   }
 }

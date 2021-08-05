@@ -13,16 +13,13 @@ trait CreateApplicationResponse extends StObject {
 }
 object CreateApplicationResponse {
   
-  @scala.inline
-  def apply(ApplicationDetail: ApplicationDetail): CreateApplicationResponse = {
+  inline def apply(ApplicationDetail: ApplicationDetail): CreateApplicationResponse = {
     val __obj = js.Dynamic.literal(ApplicationDetail = ApplicationDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationResponse]
   }
   
-  @scala.inline
-  implicit class CreateApplicationResponseMutableBuilder[Self <: CreateApplicationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateApplicationResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationDetail(value: ApplicationDetail): Self = StObject.set(x, "ApplicationDetail", value.asInstanceOf[js.Any])
+    inline def setApplicationDetail(value: ApplicationDetail): Self = StObject.set(x, "ApplicationDetail", value.asInstanceOf[js.Any])
   }
 }

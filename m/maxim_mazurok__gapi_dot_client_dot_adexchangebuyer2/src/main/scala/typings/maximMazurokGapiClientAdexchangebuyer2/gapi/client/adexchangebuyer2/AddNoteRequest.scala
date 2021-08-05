@@ -11,19 +11,15 @@ trait AddNoteRequest extends StObject {
 }
 object AddNoteRequest {
   
-  @scala.inline
-  def apply(): AddNoteRequest = {
+  inline def apply(): AddNoteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddNoteRequest]
   }
   
-  @scala.inline
-  implicit class AddNoteRequestMutableBuilder[Self <: AddNoteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddNoteRequest](x: Self) {
     
-    @scala.inline
-    def setNote(value: Note): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: Note): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

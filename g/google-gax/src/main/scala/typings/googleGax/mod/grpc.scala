@@ -41,16 +41,14 @@ object grpc {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createEmpty(): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+    inline def createEmpty(): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
     
     /**
       * Create a gRPC credential from a Google credential object.
       * @param googleCredentials The authentication client to use.
       * @return The resulting CallCredentials object.
       */
-    @scala.inline
-    def createFromGoogleCredential(googleCredentials: OAuth2Client): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredentials.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+    inline def createFromGoogleCredential(googleCredentials: OAuth2Client): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredentials.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
     
     /**
       * Creates a new CallCredentials object from a given function that generates
@@ -59,8 +57,7 @@ object grpc {
       * generates a Metadata object based on these options, which is passed back
       * to the caller via a supplied (err, metadata) callback.
       */
-    @scala.inline
-    def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+    inline def createFromMetadataGenerator(metadataGenerator: CallMetadataGenerator): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
   }
   
   @JSImport("google-gax", "grpc.Channel")
@@ -76,9 +73,9 @@ object grpc {
   
   @JSImport("google-gax", "grpc.ChannelCredentials")
   @js.native
-  abstract class ChannelCredentials protected ()
+  /* protected */ abstract class ChannelCredentials ()
     extends typings.grpcGrpcJs.mod.ChannelCredentials {
-    protected def this(callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials) = this()
+    /* protected */ def this(callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials) = this()
   }
   /* static members */
   object ChannelCredentials {
@@ -90,8 +87,7 @@ object grpc {
     /**
       * Return a new ChannelCredentials instance with no credentials.
       */
-    @scala.inline
-    def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
+    inline def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
     
     /**
       * Return a new ChannelCredentials instance with a given set of credentials.
@@ -101,8 +97,7 @@ object grpc {
       * @param privateKey The client certificate private key, if available.
       * @param certChain The client certificate key chain, if available.
       */
-    @scala.inline
-    def createSsl(
+    inline def createSsl(
       rootCerts: js.UndefOr[Buffer | Null],
       privateKey: js.UndefOr[Buffer | Null],
       certChain: js.UndefOr[Buffer | Null],
@@ -160,8 +155,7 @@ object grpc {
       * object.
       * @param headers An IncomingHttpHeaders object.
       */
-    @scala.inline
-    def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.metadataMod.Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHttp2Headers")(headers.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.metadataMod.Metadata]
+    inline def fromHttp2Headers(headers: IncomingHttpHeaders): typings.grpcGrpcJs.metadataMod.Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHttp2Headers")(headers.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.metadataMod.Metadata]
   }
   
   @JSImport("google-gax", "grpc.RequesterBuilder")
@@ -187,17 +181,12 @@ object grpc {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createInsecure(): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
+    inline def createInsecure(): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
     
-    @scala.inline
-    def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
-    @scala.inline
-    def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
-    @scala.inline
-    def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
-    @scala.inline
-    def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
+    inline def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], keyCertPairs.asInstanceOf[js.Any], checkClientCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials]
   }
   
   @JSImport("google-gax", "grpc.StatusBuilder")
@@ -205,8 +194,7 @@ object grpc {
   class StatusBuilder ()
     extends typings.grpcGrpcJs.mod.StatusBuilder
   
-  @scala.inline
-  def closeClient(client: typings.grpcGrpcJs.clientMod.Client): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def closeClient(client: typings.grpcGrpcJs.clientMod.Client): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("google-gax", "grpc.connectivityState")
   @js.native
@@ -239,8 +227,7 @@ object grpc {
       * @param additional Any number of additional CallCredentials objects.
       * @return The resulting CallCredentials object.
       */
-    @scala.inline
-    def combineCallCredentials(
+    inline def combineCallCredentials(
       first: typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
       additional: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
     ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(first.asInstanceOf[js.Any], additional.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
@@ -252,8 +239,7 @@ object grpc {
       * @param callCredentials Any number of CallCredentials objects.
       * @return The resulting ChannelCredentials object.
       */
-    @scala.inline
-    def combineChannelCredentials(
+    inline def combineChannelCredentials(
       channelCredentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
       callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
     ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(channelCredentials.asInstanceOf[js.Any], callCredentials.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
@@ -261,55 +247,46 @@ object grpc {
     @JSImport("google-gax", "grpc.credentials.createEmpty")
     @js.native
     def createEmpty: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any = js.native
-    @scala.inline
-    def createEmpty_=(
+    inline def createEmpty_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createEmpty */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createEmpty")(x.asInstanceOf[js.Any])
     
     @JSImport("google-gax", "grpc.credentials.createFromGoogleCredential")
     @js.native
     def createFromGoogleCredential: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ js.Any = js.native
-    @scala.inline
-    def createFromGoogleCredential_=(
+    inline def createFromGoogleCredential_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromGoogleCredential */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createFromGoogleCredential")(x.asInstanceOf[js.Any])
     
     @JSImport("google-gax", "grpc.credentials.createFromMetadataGenerator")
     @js.native
     def createFromMetadataGenerator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ js.Any = js.native
-    @scala.inline
-    def createFromMetadataGenerator_=(
+    inline def createFromMetadataGenerator_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CallCredentials.createFromMetadataGenerator */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createFromMetadataGenerator")(x.asInstanceOf[js.Any])
     
     @JSImport("google-gax", "grpc.credentials.createInsecure")
     @js.native
     def createInsecure: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createInsecure */ js.Any = js.native
-    @scala.inline
-    def createInsecure_=(
+    inline def createInsecure_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createInsecure */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createInsecure")(x.asInstanceOf[js.Any])
     
     @JSImport("google-gax", "grpc.credentials.createSsl")
     @js.native
     def createSsl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createSsl */ js.Any = js.native
-    @scala.inline
-    def createSsl_=(
+    inline def createSsl_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChannelCredentials.createSsl */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSsl")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getClientChannel(client: typings.grpcGrpcJs.clientMod.Client): typings.grpcGrpcJs.channelMod.Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.channelMod.Channel]
+  inline def getClientChannel(client: typings.grpcGrpcJs.clientMod.Client): typings.grpcGrpcJs.channelMod.Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[typings.grpcGrpcJs.channelMod.Channel]
   
-  @scala.inline
-  def load(filename: js.Any, format: js.Any, options: js.Any): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  inline def load(filename: js.Any, format: js.Any, options: js.Any): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   
-  @scala.inline
-  def loadObject(value: js.Any, options: js.Any): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  inline def loadObject(value: js.Any, options: js.Any): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   
-  @scala.inline
-  def loadPackageDefinition(packageDef: PackageDefinition): GrpcObject = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDef.asInstanceOf[js.Any]).asInstanceOf[GrpcObject]
+  inline def loadPackageDefinition(packageDef: PackageDefinition): GrpcObject = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDef.asInstanceOf[js.Any]).asInstanceOf[GrpcObject]
   
   @JSImport("google-gax", "grpc.logVerbosity")
   @js.native
@@ -325,15 +302,11 @@ object grpc {
     /* 1 */ val INFO: typings.grpcGrpcJs.constantsMod.LogVerbosity.INFO & Double = js.native
   }
   
-  @scala.inline
-  def makeClientConstructor(methods: js.Object, serviceName: String): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
-  @scala.inline
-  def makeClientConstructor(methods: js.Object, serviceName: String, classOptions: js.Object): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
+  inline def makeClientConstructor(methods: js.Object, serviceName: String): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
+  inline def makeClientConstructor(methods: js.Object, serviceName: String, classOptions: js.Object): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
   
-  @scala.inline
-  def makeGenericClientConstructor(methods: js.Object, serviceName: String): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGenericClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
-  @scala.inline
-  def makeGenericClientConstructor(methods: js.Object, serviceName: String, classOptions: js.Object): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGenericClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
+  inline def makeGenericClientConstructor(methods: js.Object, serviceName: String): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGenericClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
+  inline def makeGenericClientConstructor(methods: js.Object, serviceName: String, classOptions: js.Object): ServiceClientConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGenericClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[ServiceClientConstructor]
   
   @JSImport("google-gax", "grpc.propagate")
   @js.native
@@ -353,11 +326,9 @@ object grpc {
     /* 65536 */ val DEFAULTS: typings.grpcGrpcJs.constantsMod.Propagate.DEFAULTS & Double = js.native
   }
   
-  @scala.inline
-  def setLogVerbosity(verbosity: LogVerbosity): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogVerbosity(verbosity: LogVerbosity): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogger(logger: PartialConsole): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogger(logger: PartialConsole): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("google-gax", "grpc.status")
   @js.native
@@ -401,14 +372,12 @@ object grpc {
     /* 2 */ val UNKNOWN: typings.grpcGrpcJs.constantsMod.Status.UNKNOWN & Double = js.native
   }
   
-  @scala.inline
-  def waitForClientReady(
+  inline def waitForClientReady(
     client: typings.grpcGrpcJs.clientMod.Client,
     deadline: Double,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForClientReady")(client.asInstanceOf[js.Any], deadline.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def waitForClientReady(
+  inline def waitForClientReady(
     client: typings.grpcGrpcJs.clientMod.Client,
     deadline: Date,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]

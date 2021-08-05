@@ -166,23 +166,17 @@ object mod {
     def send(payload: js.Any, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
   }
   
-  @scala.inline
-  def formatLoginAccepted(payload: LoginAcceptedPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginAccepted")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def formatLoginAccepted(payload: LoginAcceptedPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginAccepted")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def formatLoginRejected(payload: LoginRejectedPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginRejected")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def formatLoginRejected(payload: LoginRejectedPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginRejected")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def formatLoginRequest(payload: LoginRequestPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginRequest")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def formatLoginRequest(payload: LoginRequestPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginRequest")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def parseLoginAccepted(payload: Buffer): LoginAcceptedPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginAccepted")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginAcceptedPayload]
+  inline def parseLoginAccepted(payload: Buffer): LoginAcceptedPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginAccepted")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginAcceptedPayload]
   
-  @scala.inline
-  def parseLoginRejected(payload: Buffer): LoginRejectedPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginRejected")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginRejectedPayload]
+  inline def parseLoginRejected(payload: Buffer): LoginRejectedPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginRejected")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginRejectedPayload]
   
-  @scala.inline
-  def parseLoginRequest(payload: Buffer): LoginRequestPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginRequest")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginRequestPayload]
+  inline def parseLoginRequest(payload: Buffer): LoginRequestPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginRequest")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginRequestPayload]
   
   trait ConnectionOptions extends StObject {
     
@@ -196,35 +190,26 @@ object mod {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(heartbeatPacketType: PacketType): ConnectionOptions = {
+    inline def apply(heartbeatPacketType: PacketType): ConnectionOptions = {
       val __obj = js.Dynamic.literal(heartbeatPacketType = heartbeatPacketType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setHeartbeatPacketType(value: PacketType): Self = StObject.set(x, "heartbeatPacketType", value.asInstanceOf[js.Any])
+      inline def setHeartbeatPacketType(value: PacketType): Self = StObject.set(x, "heartbeatPacketType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveMillis(value: Double): Self = StObject.set(x, "keepAliveMillis", value.asInstanceOf[js.Any])
+      inline def setKeepAliveMillis(value: Double): Self = StObject.set(x, "keepAliveMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveMillisUndefined: Self = StObject.set(x, "keepAliveMillis", js.undefined)
+      inline def setKeepAliveMillisUndefined: Self = StObject.set(x, "keepAliveMillis", js.undefined)
       
-      @scala.inline
-      def setRxTimeoutMillis(value: Double): Self = StObject.set(x, "rxTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setRxTimeoutMillis(value: Double): Self = StObject.set(x, "rxTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxTimeoutMillisUndefined: Self = StObject.set(x, "rxTimeoutMillis", js.undefined)
+      inline def setRxTimeoutMillisUndefined: Self = StObject.set(x, "rxTimeoutMillis", js.undefined)
       
-      @scala.inline
-      def setTxIntervalMillis(value: Double): Self = StObject.set(x, "txIntervalMillis", value.asInstanceOf[js.Any])
+      inline def setTxIntervalMillis(value: Double): Self = StObject.set(x, "txIntervalMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxIntervalMillisUndefined: Self = StObject.set(x, "txIntervalMillis", js.undefined)
+      inline def setTxIntervalMillisUndefined: Self = StObject.set(x, "txIntervalMillis", js.undefined)
     }
   }
   
@@ -236,20 +221,16 @@ object mod {
   }
   object LoginAcceptedPayload {
     
-    @scala.inline
-    def apply(sequenceNumber: Double, username: String): LoginAcceptedPayload = {
+    inline def apply(sequenceNumber: Double, username: String): LoginAcceptedPayload = {
       val __obj = js.Dynamic.literal(sequenceNumber = sequenceNumber.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoginAcceptedPayload]
     }
     
-    @scala.inline
-    implicit class LoginAcceptedPayloadMutableBuilder[Self <: LoginAcceptedPayload] (val x: Self) extends AnyVal {
+    extension [Self <: LoginAcceptedPayload](x: Self) {
       
-      @scala.inline
-      def setSequenceNumber(value: Double): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: Double): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,17 +240,14 @@ object mod {
   }
   object LoginRejectedPayload {
     
-    @scala.inline
-    def apply(rejectReasonCode: String): LoginRejectedPayload = {
+    inline def apply(rejectReasonCode: String): LoginRejectedPayload = {
       val __obj = js.Dynamic.literal(rejectReasonCode = rejectReasonCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoginRejectedPayload]
     }
     
-    @scala.inline
-    implicit class LoginRejectedPayloadMutableBuilder[Self <: LoginRejectedPayload] (val x: Self) extends AnyVal {
+    extension [Self <: LoginRejectedPayload](x: Self) {
       
-      @scala.inline
-      def setRejectReasonCode(value: String): Self = StObject.set(x, "rejectReasonCode", value.asInstanceOf[js.Any])
+      inline def setRejectReasonCode(value: String): Self = StObject.set(x, "rejectReasonCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -285,26 +263,20 @@ object mod {
   }
   object LoginRequestPayload {
     
-    @scala.inline
-    def apply(password: String, requestedSequenceNumber: Double, requestedSession: String, username: String): LoginRequestPayload = {
+    inline def apply(password: String, requestedSequenceNumber: Double, requestedSession: String, username: String): LoginRequestPayload = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], requestedSequenceNumber = requestedSequenceNumber.asInstanceOf[js.Any], requestedSession = requestedSession.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoginRequestPayload]
     }
     
-    @scala.inline
-    implicit class LoginRequestPayloadMutableBuilder[Self <: LoginRequestPayload] (val x: Self) extends AnyVal {
+    extension [Self <: LoginRequestPayload](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedSequenceNumber(value: Double): Self = StObject.set(x, "requestedSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setRequestedSequenceNumber(value: Double): Self = StObject.set(x, "requestedSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedSession(value: String): Self = StObject.set(x, "requestedSession", value.asInstanceOf[js.Any])
+      inline def setRequestedSession(value: String): Self = StObject.set(x, "requestedSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -81,10 +81,8 @@ object controlMod {
     def this(opt_options: typings.ol.zoomToExtentMod.Options) = this()
   }
   
-  @scala.inline
-  def defaults(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]]
-  @scala.inline
-  def defaults(opt_options: DefaultsOptions): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]]
+  inline def defaults(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]]
+  inline def defaults(opt_options: DefaultsOptions): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]]
   
   trait DefaultsOptions extends StObject {
     
@@ -102,50 +100,36 @@ object controlMod {
   }
   object DefaultsOptions {
     
-    @scala.inline
-    def apply(): DefaultsOptions = {
+    inline def apply(): DefaultsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultsOptions]
     }
     
-    @scala.inline
-    implicit class DefaultsOptionsMutableBuilder[Self <: DefaultsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultsOptions](x: Self) {
       
-      @scala.inline
-      def setAttribution(value: Boolean): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+      inline def setAttribution(value: Boolean): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributionOptions(value: Options): Self = StObject.set(x, "attributionOptions", value.asInstanceOf[js.Any])
+      inline def setAttributionOptions(value: Options): Self = StObject.set(x, "attributionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributionOptionsUndefined: Self = StObject.set(x, "attributionOptions", js.undefined)
+      inline def setAttributionOptionsUndefined: Self = StObject.set(x, "attributionOptions", js.undefined)
       
-      @scala.inline
-      def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+      inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateOptions(value: typings.ol.rotateMod.Options): Self = StObject.set(x, "rotateOptions", value.asInstanceOf[js.Any])
+      inline def setRotateOptions(value: typings.ol.rotateMod.Options): Self = StObject.set(x, "rotateOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateOptionsUndefined: Self = StObject.set(x, "rotateOptions", js.undefined)
+      inline def setRotateOptionsUndefined: Self = StObject.set(x, "rotateOptions", js.undefined)
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomOptions(value: typings.ol.zoomMod.Options): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
+      inline def setZoomOptions(value: typings.ol.zoomMod.Options): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
+      inline def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
 }

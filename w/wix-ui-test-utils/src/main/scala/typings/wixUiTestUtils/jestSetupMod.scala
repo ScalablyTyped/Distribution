@@ -12,10 +12,8 @@ object jestSetupMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def get(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Array[js.Any]]
+    inline def get(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Array[js.Any]]
     
-    @scala.inline
-    def reset(): js.Array[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Array[scala.Nothing]]
+    inline def reset(): js.Array[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Array[scala.Nothing]]
   }
 }

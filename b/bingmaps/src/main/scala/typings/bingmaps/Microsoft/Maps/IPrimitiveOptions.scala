@@ -14,25 +14,19 @@ trait IPrimitiveOptions extends StObject {
 }
 object IPrimitiveOptions {
   
-  @scala.inline
-  def apply(): IPrimitiveOptions = {
+  inline def apply(): IPrimitiveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPrimitiveOptions]
   }
   
-  @scala.inline
-  implicit class IPrimitiveOptionsMutableBuilder[Self <: IPrimitiveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPrimitiveOptions](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

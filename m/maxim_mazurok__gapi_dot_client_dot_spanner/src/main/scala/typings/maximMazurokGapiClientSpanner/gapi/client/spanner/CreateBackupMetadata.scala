@@ -25,37 +25,27 @@ trait CreateBackupMetadata extends StObject {
 }
 object CreateBackupMetadata {
   
-  @scala.inline
-  def apply(): CreateBackupMetadata = {
+  inline def apply(): CreateBackupMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBackupMetadata]
   }
   
-  @scala.inline
-  implicit class CreateBackupMetadataMutableBuilder[Self <: CreateBackupMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBackupMetadata](x: Self) {
     
-    @scala.inline
-    def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
+    inline def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
+    inline def setCancelTimeUndefined: Self = StObject.set(x, "cancelTime", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

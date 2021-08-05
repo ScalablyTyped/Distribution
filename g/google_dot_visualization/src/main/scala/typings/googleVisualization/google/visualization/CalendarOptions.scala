@@ -25,49 +25,35 @@ trait CalendarOptions extends StObject {
 }
 object CalendarOptions {
   
-  @scala.inline
-  def apply(calendar: CellColor, tooltip: IsHtml): CalendarOptions = {
+  inline def apply(calendar: CellColor, tooltip: IsHtml): CalendarOptions = {
     val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarOptions]
   }
   
-  @scala.inline
-  implicit class CalendarOptionsMutableBuilder[Self <: CalendarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarOptions](x: Self) {
     
-    @scala.inline
-    def setCalendar(value: CellColor): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: CellColor): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorAxis(value: Colors): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
+    inline def setColorAxis(value: Colors): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
+    inline def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
     
-    @scala.inline
-    def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
+    inline def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceIFrameUndefined: Self = StObject.set(x, "forceIFrame", js.undefined)
+    inline def setForceIFrameUndefined: Self = StObject.set(x, "forceIFrame", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setNoDataPattern(value: js.Object): Self = StObject.set(x, "noDataPattern", value.asInstanceOf[js.Any])
+    inline def setNoDataPattern(value: js.Object): Self = StObject.set(x, "noDataPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataPatternUndefined: Self = StObject.set(x, "noDataPattern", js.undefined)
+    inline def setNoDataPatternUndefined: Self = StObject.set(x, "noDataPattern", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: IsHtml): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: IsHtml): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkLabel")
 @js.native
-class OlkLabel protected ()
+/* private */ class OlkLabel ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkLabel {
   
@@ -50,7 +50,7 @@ class OlkLabel protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkLabel_typekey")
   var OutlookDotOlkLabel_typekey: typings.activexOutlook.Outlook.OlkLabel = js.native
   

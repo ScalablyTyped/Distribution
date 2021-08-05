@@ -38,37 +38,27 @@ trait IgGridColumnFixingColumnSetting
 }
 object IgGridColumnFixingColumnSetting {
   
-  @scala.inline
-  def apply(): IgGridColumnFixingColumnSetting = {
+  inline def apply(): IgGridColumnFixingColumnSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridColumnFixingColumnSetting]
   }
   
-  @scala.inline
-  implicit class IgGridColumnFixingColumnSettingMutableBuilder[Self <: IgGridColumnFixingColumnSetting] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridColumnFixingColumnSetting](x: Self) {
     
-    @scala.inline
-    def setAllowFixing(value: Boolean): Self = StObject.set(x, "allowFixing", value.asInstanceOf[js.Any])
+    inline def setAllowFixing(value: Boolean): Self = StObject.set(x, "allowFixing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFixingUndefined: Self = StObject.set(x, "allowFixing", js.undefined)
+    inline def setAllowFixingUndefined: Self = StObject.set(x, "allowFixing", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
+    inline def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
   }
 }

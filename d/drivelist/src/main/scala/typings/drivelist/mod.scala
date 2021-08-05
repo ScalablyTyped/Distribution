@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def list(callback: js.Function2[/* error */ js.Any, /* drives */ js.Array[Drive], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def list(callback: js.Function2[/* error */ js.Any, /* drives */ js.Array[Drive], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.drivelist.drivelistStrings.SATA
@@ -24,23 +23,17 @@ object mod {
   trait BusType extends StObject
   object BusType {
     
-    @scala.inline
-    def ATA: typings.drivelist.drivelistStrings.ATA = "ATA".asInstanceOf[typings.drivelist.drivelistStrings.ATA]
+    inline def ATA: typings.drivelist.drivelistStrings.ATA = "ATA".asInstanceOf[typings.drivelist.drivelistStrings.ATA]
     
-    @scala.inline
-    def IDE: typings.drivelist.drivelistStrings.IDE = "IDE".asInstanceOf[typings.drivelist.drivelistStrings.IDE]
+    inline def IDE: typings.drivelist.drivelistStrings.IDE = "IDE".asInstanceOf[typings.drivelist.drivelistStrings.IDE]
     
-    @scala.inline
-    def PCI: typings.drivelist.drivelistStrings.PCI = "PCI".asInstanceOf[typings.drivelist.drivelistStrings.PCI]
+    inline def PCI: typings.drivelist.drivelistStrings.PCI = "PCI".asInstanceOf[typings.drivelist.drivelistStrings.PCI]
     
-    @scala.inline
-    def SATA: typings.drivelist.drivelistStrings.SATA = "SATA".asInstanceOf[typings.drivelist.drivelistStrings.SATA]
+    inline def SATA: typings.drivelist.drivelistStrings.SATA = "SATA".asInstanceOf[typings.drivelist.drivelistStrings.SATA]
     
-    @scala.inline
-    def SCSI: typings.drivelist.drivelistStrings.SCSI = "SCSI".asInstanceOf[typings.drivelist.drivelistStrings.SCSI]
+    inline def SCSI: typings.drivelist.drivelistStrings.SCSI = "SCSI".asInstanceOf[typings.drivelist.drivelistStrings.SCSI]
     
-    @scala.inline
-    def UNKNOWN: typings.drivelist.drivelistStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.drivelist.drivelistStrings.UNKNOWN]
+    inline def UNKNOWN: typings.drivelist.drivelistStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.drivelist.drivelistStrings.UNKNOWN]
   }
   
   trait Drive extends StObject {
@@ -88,8 +81,7 @@ object mod {
   }
   object Drive {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       busType: BusType,
       description: String,
       device: String,
@@ -104,104 +96,71 @@ object mod {
       __obj.asInstanceOf[Drive]
     }
     
-    @scala.inline
-    implicit class DriveMutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
+    extension [Self <: Drive](x: Self) {
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockSizeNull: Self = StObject.set(x, "blockSize", null)
+      inline def setBlockSizeNull: Self = StObject.set(x, "blockSize", null)
       
-      @scala.inline
-      def setBusType(value: BusType): Self = StObject.set(x, "busType", value.asInstanceOf[js.Any])
+      inline def setBusType(value: BusType): Self = StObject.set(x, "busType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusVersion(value: String): Self = StObject.set(x, "busVersion", value.asInstanceOf[js.Any])
+      inline def setBusVersion(value: String): Self = StObject.set(x, "busVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusVersionNull: Self = StObject.set(x, "busVersion", null)
+      inline def setBusVersionNull: Self = StObject.set(x, "busVersion", null)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
+      inline def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevicePathNull: Self = StObject.set(x, "devicePath", null)
+      inline def setDevicePathNull: Self = StObject.set(x, "devicePath", null)
       
-      @scala.inline
-      def setEnumerator(value: String): Self = StObject.set(x, "enumerator", value.asInstanceOf[js.Any])
+      inline def setEnumerator(value: String): Self = StObject.set(x, "enumerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCard(value: Boolean): Self = StObject.set(x, "isCard", value.asInstanceOf[js.Any])
+      inline def setIsCard(value: Boolean): Self = StObject.set(x, "isCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCardNull: Self = StObject.set(x, "isCard", null)
+      inline def setIsCardNull: Self = StObject.set(x, "isCard", null)
       
-      @scala.inline
-      def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+      inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRemovable(value: Boolean): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
+      inline def setIsRemovable(value: Boolean): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRemovableNull: Self = StObject.set(x, "isRemovable", null)
+      inline def setIsRemovableNull: Self = StObject.set(x, "isRemovable", null)
       
-      @scala.inline
-      def setIsSCSI(value: Boolean): Self = StObject.set(x, "isSCSI", value.asInstanceOf[js.Any])
+      inline def setIsSCSI(value: Boolean): Self = StObject.set(x, "isSCSI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSCSINull: Self = StObject.set(x, "isSCSI", null)
+      inline def setIsSCSINull: Self = StObject.set(x, "isSCSI", null)
       
-      @scala.inline
-      def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
+      inline def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUAS(value: Boolean): Self = StObject.set(x, "isUAS", value.asInstanceOf[js.Any])
+      inline def setIsUAS(value: Boolean): Self = StObject.set(x, "isUAS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUASNull: Self = StObject.set(x, "isUAS", null)
+      inline def setIsUASNull: Self = StObject.set(x, "isUAS", null)
       
-      @scala.inline
-      def setIsUSB(value: Boolean): Self = StObject.set(x, "isUSB", value.asInstanceOf[js.Any])
+      inline def setIsUSB(value: Boolean): Self = StObject.set(x, "isUSB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUSBNull: Self = StObject.set(x, "isUSB", null)
+      inline def setIsUSBNull: Self = StObject.set(x, "isUSB", null)
       
-      @scala.inline
-      def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
+      inline def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVirtualNull: Self = StObject.set(x, "isVirtual", null)
+      inline def setIsVirtualNull: Self = StObject.set(x, "isVirtual", null)
       
-      @scala.inline
-      def setLogicalBlockSize(value: Double): Self = StObject.set(x, "logicalBlockSize", value.asInstanceOf[js.Any])
+      inline def setLogicalBlockSize(value: Double): Self = StObject.set(x, "logicalBlockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalBlockSizeNull: Self = StObject.set(x, "logicalBlockSize", null)
+      inline def setLogicalBlockSizeNull: Self = StObject.set(x, "logicalBlockSize", null)
       
-      @scala.inline
-      def setMountpoints(value: js.Array[MountPoint]): Self = StObject.set(x, "mountpoints", value.asInstanceOf[js.Any])
+      inline def setMountpoints(value: js.Array[MountPoint]): Self = StObject.set(x, "mountpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountpointsVarargs(value: MountPoint*): Self = StObject.set(x, "mountpoints", js.Array(value :_*))
+      inline def setMountpointsVarargs(value: MountPoint*): Self = StObject.set(x, "mountpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeNull: Self = StObject.set(x, "size", null)
+      inline def setSizeNull: Self = StObject.set(x, "size", null)
     }
   }
   
@@ -213,23 +172,18 @@ object mod {
   }
   object MountPoint {
     
-    @scala.inline
-    def apply(path: String): MountPoint = {
+    inline def apply(path: String): MountPoint = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MountPoint]
     }
     
-    @scala.inline
-    implicit class MountPointMutableBuilder[Self <: MountPoint] (val x: Self) extends AnyVal {
+    extension [Self <: MountPoint](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

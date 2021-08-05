@@ -53,53 +53,38 @@ object mod extends Shortcut {
     }
     object CSSTransitionGroupProps {
       
-      @scala.inline
-      def apply(transitionName: String | CSSTransitionGroupTransitionName): CSSTransitionGroupProps = {
+      inline def apply(transitionName: String | CSSTransitionGroupTransitionName): CSSTransitionGroupProps = {
         val __obj = js.Dynamic.literal(transitionName = transitionName.asInstanceOf[js.Any])
         __obj.asInstanceOf[CSSTransitionGroupProps]
       }
       
-      @scala.inline
-      implicit class CSSTransitionGroupPropsMutableBuilder[Self <: CSSTransitionGroupProps] (val x: Self) extends AnyVal {
+      extension [Self <: CSSTransitionGroupProps](x: Self) {
         
-        @scala.inline
-        def setTransitionAppear(value: Boolean): Self = StObject.set(x, "transitionAppear", value.asInstanceOf[js.Any])
+        inline def setTransitionAppear(value: Boolean): Self = StObject.set(x, "transitionAppear", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransitionAppearTimeout(value: Double): Self = StObject.set(x, "transitionAppearTimeout", value.asInstanceOf[js.Any])
+        inline def setTransitionAppearTimeout(value: Double): Self = StObject.set(x, "transitionAppearTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransitionAppearTimeoutUndefined: Self = StObject.set(x, "transitionAppearTimeout", js.undefined)
+        inline def setTransitionAppearTimeoutUndefined: Self = StObject.set(x, "transitionAppearTimeout", js.undefined)
         
-        @scala.inline
-        def setTransitionAppearUndefined: Self = StObject.set(x, "transitionAppear", js.undefined)
+        inline def setTransitionAppearUndefined: Self = StObject.set(x, "transitionAppear", js.undefined)
         
-        @scala.inline
-        def setTransitionEnter(value: Boolean): Self = StObject.set(x, "transitionEnter", value.asInstanceOf[js.Any])
+        inline def setTransitionEnter(value: Boolean): Self = StObject.set(x, "transitionEnter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransitionEnterTimeout(value: Double): Self = StObject.set(x, "transitionEnterTimeout", value.asInstanceOf[js.Any])
+        inline def setTransitionEnterTimeout(value: Double): Self = StObject.set(x, "transitionEnterTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransitionEnterTimeoutUndefined: Self = StObject.set(x, "transitionEnterTimeout", js.undefined)
+        inline def setTransitionEnterTimeoutUndefined: Self = StObject.set(x, "transitionEnterTimeout", js.undefined)
         
-        @scala.inline
-        def setTransitionEnterUndefined: Self = StObject.set(x, "transitionEnter", js.undefined)
+        inline def setTransitionEnterUndefined: Self = StObject.set(x, "transitionEnter", js.undefined)
         
-        @scala.inline
-        def setTransitionLeave(value: Boolean): Self = StObject.set(x, "transitionLeave", value.asInstanceOf[js.Any])
+        inline def setTransitionLeave(value: Boolean): Self = StObject.set(x, "transitionLeave", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransitionLeaveTimeout(value: Double): Self = StObject.set(x, "transitionLeaveTimeout", value.asInstanceOf[js.Any])
+        inline def setTransitionLeaveTimeout(value: Double): Self = StObject.set(x, "transitionLeaveTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransitionLeaveTimeoutUndefined: Self = StObject.set(x, "transitionLeaveTimeout", js.undefined)
+        inline def setTransitionLeaveTimeoutUndefined: Self = StObject.set(x, "transitionLeaveTimeout", js.undefined)
         
-        @scala.inline
-        def setTransitionLeaveUndefined: Self = StObject.set(x, "transitionLeave", js.undefined)
+        inline def setTransitionLeaveUndefined: Self = StObject.set(x, "transitionLeave", js.undefined)
         
-        @scala.inline
-        def setTransitionName(value: String | CSSTransitionGroupTransitionName): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+        inline def setTransitionName(value: String | CSSTransitionGroupTransitionName): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       }
     }
     
@@ -119,44 +104,32 @@ object mod extends Shortcut {
     }
     object CSSTransitionGroupTransitionName {
       
-      @scala.inline
-      def apply(enter: String, leave: String): CSSTransitionGroupTransitionName = {
+      inline def apply(enter: String, leave: String): CSSTransitionGroupTransitionName = {
         val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any], leave = leave.asInstanceOf[js.Any])
         __obj.asInstanceOf[CSSTransitionGroupTransitionName]
       }
       
-      @scala.inline
-      implicit class CSSTransitionGroupTransitionNameMutableBuilder[Self <: CSSTransitionGroupTransitionName] (val x: Self) extends AnyVal {
+      extension [Self <: CSSTransitionGroupTransitionName](x: Self) {
         
-        @scala.inline
-        def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+        inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppearActive(value: String): Self = StObject.set(x, "appearActive", value.asInstanceOf[js.Any])
+        inline def setAppearActive(value: String): Self = StObject.set(x, "appearActive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppearActiveUndefined: Self = StObject.set(x, "appearActive", js.undefined)
+        inline def setAppearActiveUndefined: Self = StObject.set(x, "appearActive", js.undefined)
         
-        @scala.inline
-        def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+        inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
         
-        @scala.inline
-        def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+        inline def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnterActive(value: String): Self = StObject.set(x, "enterActive", value.asInstanceOf[js.Any])
+        inline def setEnterActive(value: String): Self = StObject.set(x, "enterActive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnterActiveUndefined: Self = StObject.set(x, "enterActive", js.undefined)
+        inline def setEnterActiveUndefined: Self = StObject.set(x, "enterActive", js.undefined)
         
-        @scala.inline
-        def setLeave(value: String): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+        inline def setLeave(value: String): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaveActive(value: String): Self = StObject.set(x, "leaveActive", value.asInstanceOf[js.Any])
+        inline def setLeaveActive(value: String): Self = StObject.set(x, "leaveActive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaveActiveUndefined: Self = StObject.set(x, "leaveActive", js.undefined)
+        inline def setLeaveActiveUndefined: Self = StObject.set(x, "leaveActive", js.undefined)
       }
     }
   }

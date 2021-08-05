@@ -11,19 +11,15 @@ trait GoogleCloudDatacatalogV1beta1TagFieldEnumValue extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1TagFieldEnumValue {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1TagFieldEnumValue = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1TagFieldEnumValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1TagFieldEnumValue]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1TagFieldEnumValueMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1TagFieldEnumValue] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1TagFieldEnumValue](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

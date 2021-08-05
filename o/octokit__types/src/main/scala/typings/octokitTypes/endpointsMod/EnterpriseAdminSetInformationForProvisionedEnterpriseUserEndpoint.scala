@@ -40,8 +40,7 @@ trait EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint extends 
 }
 object EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emails: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails],
     enterprise: String,
     name: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName,
@@ -53,40 +52,28 @@ object EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint {
     __obj.asInstanceOf[EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpointMutableBuilder[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setEmails(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
+    inline def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

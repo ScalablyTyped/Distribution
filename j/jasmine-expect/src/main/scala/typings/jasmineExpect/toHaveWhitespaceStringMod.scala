@@ -22,19 +22,16 @@ object toHaveWhitespaceStringMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](
+        inline def apply[T](
           toHaveWhitespaceString: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
         ): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveWhitespaceString = js.Any.fromFunction2(toHaveWhitespaceString))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveWhitespaceString(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveWhitespaceString", js.Any.fromFunction2(value))
+          inline def setToHaveWhitespaceString(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveWhitespaceString", js.Any.fromFunction2(value))
         }
       }
     }

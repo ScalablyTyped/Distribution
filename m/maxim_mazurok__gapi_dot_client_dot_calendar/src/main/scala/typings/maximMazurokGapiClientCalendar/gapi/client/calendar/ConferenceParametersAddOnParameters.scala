@@ -15,23 +15,19 @@ trait ConferenceParametersAddOnParameters extends StObject {
 }
 object ConferenceParametersAddOnParameters {
   
-  @scala.inline
-  def apply(): ConferenceParametersAddOnParameters = {
+  inline def apply(): ConferenceParametersAddOnParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConferenceParametersAddOnParameters]
   }
   
-  @scala.inline
-  implicit class ConferenceParametersAddOnParametersMutableBuilder[Self <: ConferenceParametersAddOnParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ConferenceParametersAddOnParameters](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.ConferenceParametersAddOnParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

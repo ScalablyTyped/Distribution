@@ -17,25 +17,19 @@ trait TypeExtensionDefinition
 }
 object TypeExtensionDefinition {
   
-  @scala.inline
-  def apply(definition: ObjectTypeDefinition, kind: String): TypeExtensionDefinition = {
+  inline def apply(definition: ObjectTypeDefinition, kind: String): TypeExtensionDefinition = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeExtensionDefinition]
   }
   
-  @scala.inline
-  implicit class TypeExtensionDefinitionMutableBuilder[Self <: TypeExtensionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TypeExtensionDefinition](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: ObjectTypeDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: ObjectTypeDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
   }
 }

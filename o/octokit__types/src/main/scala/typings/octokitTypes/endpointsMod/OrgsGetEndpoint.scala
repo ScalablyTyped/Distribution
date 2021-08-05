@@ -11,17 +11,14 @@ trait OrgsGetEndpoint extends StObject {
 }
 object OrgsGetEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): OrgsGetEndpoint = {
+  inline def apply(org_ : String): OrgsGetEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsGetEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsGetEndpointMutableBuilder[Self <: OrgsGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

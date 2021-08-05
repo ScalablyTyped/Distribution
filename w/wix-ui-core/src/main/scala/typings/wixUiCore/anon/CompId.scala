@@ -30,8 +30,7 @@ trait CompId extends StObject {
 }
 object CompId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checked: Requireable[Boolean],
     children: Requireable[ReactNodeLike],
     className: Requireable[String],
@@ -47,37 +46,26 @@ object CompId {
     __obj.asInstanceOf[CompId]
   }
   
-  @scala.inline
-  implicit class CompIdMutableBuilder[Self <: CompId] (val x: Self) extends AnyVal {
+  extension [Self <: CompId](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Requireable[Boolean]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Requireable[Boolean]): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompId(value: Requireable[String]): Self = StObject.set(x, "compId", value.asInstanceOf[js.Any])
+    inline def setCompId(value: Requireable[String]): Self = StObject.set(x, "compId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Requireable[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Requireable[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: Requireable[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Requireable[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRel(value: Requireable[String]): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: Requireable[String]): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagIndex(value: Requireable[Double]): Self = StObject.set(x, "tagIndex", value.asInstanceOf[js.Any])
+    inline def setTagIndex(value: Requireable[Double]): Self = StObject.set(x, "tagIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Requireable[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Requireable[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

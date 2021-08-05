@@ -12,19 +12,15 @@ trait GlobalWorkflow extends StObject {
 }
 object GlobalWorkflow {
   
-  @scala.inline
-  def apply(globalWorkflow: scala.Double, workItemType: scala.Double): GlobalWorkflow = {
+  inline def apply(globalWorkflow: scala.Double, workItemType: scala.Double): GlobalWorkflow = {
     val __obj = js.Dynamic.literal(globalWorkflow = globalWorkflow.asInstanceOf[js.Any], workItemType = workItemType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalWorkflow]
   }
   
-  @scala.inline
-  implicit class GlobalWorkflowMutableBuilder[Self <: GlobalWorkflow] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalWorkflow](x: Self) {
     
-    @scala.inline
-    def setGlobalWorkflow(value: scala.Double): Self = StObject.set(x, "globalWorkflow", value.asInstanceOf[js.Any])
+    inline def setGlobalWorkflow(value: scala.Double): Self = StObject.set(x, "globalWorkflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemType(value: scala.Double): Self = StObject.set(x, "workItemType", value.asInstanceOf[js.Any])
+    inline def setWorkItemType(value: scala.Double): Self = StObject.set(x, "workItemType", value.asInstanceOf[js.Any])
   }
 }

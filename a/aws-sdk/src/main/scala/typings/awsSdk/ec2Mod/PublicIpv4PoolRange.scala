@@ -28,37 +28,27 @@ trait PublicIpv4PoolRange extends StObject {
 }
 object PublicIpv4PoolRange {
   
-  @scala.inline
-  def apply(): PublicIpv4PoolRange = {
+  inline def apply(): PublicIpv4PoolRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicIpv4PoolRange]
   }
   
-  @scala.inline
-  implicit class PublicIpv4PoolRangeMutableBuilder[Self <: PublicIpv4PoolRange] (val x: Self) extends AnyVal {
+  extension [Self <: PublicIpv4PoolRange](x: Self) {
     
-    @scala.inline
-    def setAddressCount(value: Integer): Self = StObject.set(x, "AddressCount", value.asInstanceOf[js.Any])
+    inline def setAddressCount(value: Integer): Self = StObject.set(x, "AddressCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressCountUndefined: Self = StObject.set(x, "AddressCount", js.undefined)
+    inline def setAddressCountUndefined: Self = StObject.set(x, "AddressCount", js.undefined)
     
-    @scala.inline
-    def setAvailableAddressCount(value: Integer): Self = StObject.set(x, "AvailableAddressCount", value.asInstanceOf[js.Any])
+    inline def setAvailableAddressCount(value: Integer): Self = StObject.set(x, "AvailableAddressCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableAddressCountUndefined: Self = StObject.set(x, "AvailableAddressCount", js.undefined)
+    inline def setAvailableAddressCountUndefined: Self = StObject.set(x, "AvailableAddressCount", js.undefined)
     
-    @scala.inline
-    def setFirstAddress(value: String): Self = StObject.set(x, "FirstAddress", value.asInstanceOf[js.Any])
+    inline def setFirstAddress(value: String): Self = StObject.set(x, "FirstAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstAddressUndefined: Self = StObject.set(x, "FirstAddress", js.undefined)
+    inline def setFirstAddressUndefined: Self = StObject.set(x, "FirstAddress", js.undefined)
     
-    @scala.inline
-    def setLastAddress(value: String): Self = StObject.set(x, "LastAddress", value.asInstanceOf[js.Any])
+    inline def setLastAddress(value: String): Self = StObject.set(x, "LastAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAddressUndefined: Self = StObject.set(x, "LastAddress", js.undefined)
+    inline def setLastAddressUndefined: Self = StObject.set(x, "LastAddress", js.undefined)
   }
 }

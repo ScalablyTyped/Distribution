@@ -54,8 +54,7 @@ trait XPropertyState
 }
 object XPropertyState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getPropertyDefault: String => js.Any,
     getPropertyState: String => PropertyState,
@@ -68,19 +67,14 @@ object XPropertyState {
     __obj.asInstanceOf[XPropertyState]
   }
   
-  @scala.inline
-  implicit class XPropertyStateMutableBuilder[Self <: XPropertyState] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyState](x: Self) {
     
-    @scala.inline
-    def setGetPropertyDefault(value: String => js.Any): Self = StObject.set(x, "getPropertyDefault", js.Any.fromFunction1(value))
+    inline def setGetPropertyDefault(value: String => js.Any): Self = StObject.set(x, "getPropertyDefault", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertyState(value: String => PropertyState): Self = StObject.set(x, "getPropertyState", js.Any.fromFunction1(value))
+    inline def setGetPropertyState(value: String => PropertyState): Self = StObject.set(x, "getPropertyState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyToDefault(value: String => Unit): Self = StObject.set(x, "setPropertyToDefault", js.Any.fromFunction1(value))
+    inline def setSetPropertyToDefault(value: String => Unit): Self = StObject.set(x, "setPropertyToDefault", js.Any.fromFunction1(value))
   }
 }

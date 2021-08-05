@@ -20,32 +20,24 @@ trait NumberSkeleton
 }
 object NumberSkeleton {
   
-  @scala.inline
-  def apply(parsedOptions: NumberFormatOptions, tokens: js.Array[NumberSkeletonToken]): NumberSkeleton = {
+  inline def apply(parsedOptions: NumberFormatOptions, tokens: js.Array[NumberSkeletonToken]): NumberSkeleton = {
     val __obj = js.Dynamic.literal(parsedOptions = parsedOptions.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(0)
     __obj.asInstanceOf[NumberSkeleton]
   }
   
-  @scala.inline
-  implicit class NumberSkeletonMutableBuilder[Self <: NumberSkeleton] (val x: Self) extends AnyVal {
+  extension [Self <: NumberSkeleton](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setParsedOptions(value: NumberFormatOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
+    inline def setParsedOptions(value: NumberFormatOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokens(value: js.Array[NumberSkeletonToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[NumberSkeletonToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensVarargs(value: NumberSkeletonToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: NumberSkeletonToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

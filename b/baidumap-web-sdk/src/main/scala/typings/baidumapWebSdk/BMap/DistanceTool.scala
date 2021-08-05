@@ -15,22 +15,17 @@ trait DistanceTool extends StObject {
 }
 object DistanceTool {
   
-  @scala.inline
-  def apply(close: () => Unit, ondrawend: Distance => Unit, open: () => Boolean): DistanceTool = {
+  inline def apply(close: () => Unit, ondrawend: Distance => Unit, open: () => Boolean): DistanceTool = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), ondrawend = js.Any.fromFunction1(ondrawend), open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[DistanceTool]
   }
   
-  @scala.inline
-  implicit class DistanceToolMutableBuilder[Self <: DistanceTool] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceTool](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOndrawend(value: Distance => Unit): Self = StObject.set(x, "ondrawend", js.Any.fromFunction1(value))
+    inline def setOndrawend(value: Distance => Unit): Self = StObject.set(x, "ondrawend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpen(value: () => Boolean): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Boolean): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

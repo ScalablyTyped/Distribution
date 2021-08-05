@@ -12,19 +12,15 @@ trait Redelivery extends StObject {
 }
 object Redelivery {
   
-  @scala.inline
-  def apply(): Redelivery = {
+  inline def apply(): Redelivery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Redelivery]
   }
   
-  @scala.inline
-  implicit class RedeliveryMutableBuilder[Self <: Redelivery] (val x: Self) extends AnyVal {
+  extension [Self <: Redelivery](x: Self) {
     
-    @scala.inline
-    def setCounters(value: StringDictionary[Size]): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
+    inline def setCounters(value: StringDictionary[Size]): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
+    inline def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
   }
 }

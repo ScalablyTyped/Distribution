@@ -70,8 +70,7 @@ trait XBezierPolyPolygon2D
 }
 object XBezierPolyPolygon2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FillRule: FillRule,
     NumberOfPolygons: Double,
     acquire: () => Unit,
@@ -93,19 +92,14 @@ object XBezierPolyPolygon2D {
     __obj.asInstanceOf[XBezierPolyPolygon2D]
   }
   
-  @scala.inline
-  implicit class XBezierPolyPolygon2DMutableBuilder[Self <: XBezierPolyPolygon2D] (val x: Self) extends AnyVal {
+  extension [Self <: XBezierPolyPolygon2D](x: Self) {
     
-    @scala.inline
-    def setGetBezierSegment(value: (Double, Double) => RealBezierSegment2D): Self = StObject.set(x, "getBezierSegment", js.Any.fromFunction2(value))
+    inline def setGetBezierSegment(value: (Double, Double) => RealBezierSegment2D): Self = StObject.set(x, "getBezierSegment", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBezierSegments(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealBezierSegment2D]]): Self = StObject.set(x, "getBezierSegments", js.Any.fromFunction4(value))
+    inline def setGetBezierSegments(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealBezierSegment2D]]): Self = StObject.set(x, "getBezierSegments", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetBezierSegment(value: (RealBezierSegment2D, Double, Double) => Unit): Self = StObject.set(x, "setBezierSegment", js.Any.fromFunction3(value))
+    inline def setSetBezierSegment(value: (RealBezierSegment2D, Double, Double) => Unit): Self = StObject.set(x, "setBezierSegment", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetBezierSegments(value: (SeqEquiv[SeqEquiv[RealBezierSegment2D]], Double) => Unit): Self = StObject.set(x, "setBezierSegments", js.Any.fromFunction2(value))
+    inline def setSetBezierSegments(value: (SeqEquiv[SeqEquiv[RealBezierSegment2D]], Double) => Unit): Self = StObject.set(x, "setBezierSegments", js.Any.fromFunction2(value))
   }
 }

@@ -8,16 +8,13 @@ object fluentLangnegStrings {
   
   @js.native
   sealed trait filtering extends StObject
-  @scala.inline
-  def filtering: filtering = "filtering".asInstanceOf[filtering]
+  inline def filtering: filtering = "filtering".asInstanceOf[filtering]
   
   @js.native
   sealed trait lookup extends StObject
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
   sealed trait matching extends StObject
-  @scala.inline
-  def matching: matching = "matching".asInstanceOf[matching]
+  inline def matching: matching = "matching".asInstanceOf[matching]
 }

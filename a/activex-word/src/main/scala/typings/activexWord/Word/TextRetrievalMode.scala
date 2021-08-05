@@ -20,13 +20,12 @@ trait TextRetrievalMode extends StObject {
   
   var ViewType: WdViewType
   
-  @JSName("Word.TextRetrievalMode_typekey")
+  /* private */ @JSName("Word.TextRetrievalMode_typekey")
   var WordDotTextRetrievalMode_typekey: TextRetrievalMode
 }
 object TextRetrievalMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Duplicate: TextRetrievalMode,
@@ -41,31 +40,22 @@ object TextRetrievalMode {
     __obj.asInstanceOf[TextRetrievalMode]
   }
   
-  @scala.inline
-  implicit class TextRetrievalModeMutableBuilder[Self <: TextRetrievalMode] (val x: Self) extends AnyVal {
+  extension [Self <: TextRetrievalMode](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicate(value: TextRetrievalMode): Self = StObject.set(x, "Duplicate", value.asInstanceOf[js.Any])
+    inline def setDuplicate(value: TextRetrievalMode): Self = StObject.set(x, "Duplicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFieldCodes(value: Boolean): Self = StObject.set(x, "IncludeFieldCodes", value.asInstanceOf[js.Any])
+    inline def setIncludeFieldCodes(value: Boolean): Self = StObject.set(x, "IncludeFieldCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeHiddenText(value: Boolean): Self = StObject.set(x, "IncludeHiddenText", value.asInstanceOf[js.Any])
+    inline def setIncludeHiddenText(value: Boolean): Self = StObject.set(x, "IncludeHiddenText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: WdViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: WdViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotTextRetrievalMode_typekey(value: TextRetrievalMode): Self = StObject.set(x, "Word.TextRetrievalMode_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotTextRetrievalMode_typekey(value: TextRetrievalMode): Self = StObject.set(x, "Word.TextRetrievalMode_typekey", value.asInstanceOf[js.Any])
   }
 }

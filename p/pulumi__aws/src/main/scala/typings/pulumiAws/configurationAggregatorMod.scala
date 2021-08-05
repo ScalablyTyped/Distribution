@@ -70,21 +70,16 @@ object configurationAggregatorMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationAggregatorState): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationAggregatorState, opts: CustomResourceOptions): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
+    inline def get(name: String, id: Input[ID]): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
+    inline def get(name: String, id: Input[ID], state: ConfigurationAggregatorState): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
+    inline def get(name: String, id: Input[ID], state: ConfigurationAggregatorState, opts: CustomResourceOptions): ConfigurationAggregator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationAggregator]
     
     /**
       * Returns true if the given object is an instance of ConfigurationAggregator.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/configurationAggregator.ConfigurationAggregator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/configurationAggregator.ConfigurationAggregator */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/configurationAggregator.ConfigurationAggregator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/configurationAggregator.ConfigurationAggregator */ Boolean]
   }
   
   trait ConfigurationAggregatorArgs extends StObject {
@@ -117,42 +112,32 @@ object configurationAggregatorMod {
   }
   object ConfigurationAggregatorArgs {
     
-    @scala.inline
-    def apply(): ConfigurationAggregatorArgs = {
+    inline def apply(): ConfigurationAggregatorArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationAggregatorArgs]
     }
     
-    @scala.inline
-    implicit class ConfigurationAggregatorArgsMutableBuilder[Self <: ConfigurationAggregatorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationAggregatorArgs](x: Self) {
       
-      @scala.inline
-      def setAccountAggregationSource(value: Input[typings.pulumiAws.inputMod.cfg.ConfigurationAggregatorAccountAggregationSource]): Self = StObject.set(x, "accountAggregationSource", value.asInstanceOf[js.Any])
+      inline def setAccountAggregationSource(value: Input[typings.pulumiAws.inputMod.cfg.ConfigurationAggregatorAccountAggregationSource]): Self = StObject.set(x, "accountAggregationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountAggregationSourceUndefined: Self = StObject.set(x, "accountAggregationSource", js.undefined)
+      inline def setAccountAggregationSourceUndefined: Self = StObject.set(x, "accountAggregationSource", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOrganizationAggregationSource(
+      inline def setOrganizationAggregationSource(
         value: Input[
               typings.pulumiAws.inputMod.cfg.ConfigurationAggregatorOrganizationAggregationSource
             ]
       ): Self = StObject.set(x, "organizationAggregationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationAggregationSourceUndefined: Self = StObject.set(x, "organizationAggregationSource", js.undefined)
+      inline def setOrganizationAggregationSourceUndefined: Self = StObject.set(x, "organizationAggregationSource", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -191,48 +176,36 @@ object configurationAggregatorMod {
   }
   object ConfigurationAggregatorState {
     
-    @scala.inline
-    def apply(): ConfigurationAggregatorState = {
+    inline def apply(): ConfigurationAggregatorState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationAggregatorState]
     }
     
-    @scala.inline
-    implicit class ConfigurationAggregatorStateMutableBuilder[Self <: ConfigurationAggregatorState] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationAggregatorState](x: Self) {
       
-      @scala.inline
-      def setAccountAggregationSource(value: Input[typings.pulumiAws.inputMod.cfg.ConfigurationAggregatorAccountAggregationSource]): Self = StObject.set(x, "accountAggregationSource", value.asInstanceOf[js.Any])
+      inline def setAccountAggregationSource(value: Input[typings.pulumiAws.inputMod.cfg.ConfigurationAggregatorAccountAggregationSource]): Self = StObject.set(x, "accountAggregationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountAggregationSourceUndefined: Self = StObject.set(x, "accountAggregationSource", js.undefined)
+      inline def setAccountAggregationSourceUndefined: Self = StObject.set(x, "accountAggregationSource", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOrganizationAggregationSource(
+      inline def setOrganizationAggregationSource(
         value: Input[
               typings.pulumiAws.inputMod.cfg.ConfigurationAggregatorOrganizationAggregationSource
             ]
       ): Self = StObject.set(x, "organizationAggregationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationAggregationSourceUndefined: Self = StObject.set(x, "organizationAggregationSource", js.undefined)
+      inline def setOrganizationAggregationSourceUndefined: Self = StObject.set(x, "organizationAggregationSource", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

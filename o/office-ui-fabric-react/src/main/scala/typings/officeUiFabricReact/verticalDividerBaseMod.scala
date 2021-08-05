@@ -10,8 +10,7 @@ object verticalDividerBaseMod {
   
   object VerticalDividerBase {
     
-    @scala.inline
-    def apply(props: IVerticalDividerProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: IVerticalDividerProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("office-ui-fabric-react/lib/components/Divider/VerticalDivider.base", "VerticalDividerBase")
     @js.native
@@ -20,7 +19,6 @@ object verticalDividerBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Divider/VerticalDivider.base", "VerticalDividerBase.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

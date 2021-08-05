@@ -22,19 +22,15 @@ trait DownloadTask extends StObject {
 }
 object DownloadTask {
   
-  @scala.inline
-  def apply(abort: () => Unit, onProgressUpdate: js.Function1[/* res */ Progress, Unit] => Unit): DownloadTask = {
+  inline def apply(abort: () => Unit, onProgressUpdate: js.Function1[/* res */ Progress, Unit] => Unit): DownloadTask = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), onProgressUpdate = js.Any.fromFunction1(onProgressUpdate))
     __obj.asInstanceOf[DownloadTask]
   }
   
-  @scala.inline
-  implicit class DownloadTaskMutableBuilder[Self <: DownloadTask] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadTask](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnProgressUpdate(value: js.Function1[/* res */ Progress, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
+    inline def setOnProgressUpdate(value: js.Function1[/* res */ Progress, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }
 }

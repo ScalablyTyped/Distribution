@@ -21,6 +21,5 @@ object CameraOptionsUI {
     * @param mediaCapture The MediaCapture object that provides methods for the capture of photos, audio recordings and videos.
     */
   /* static member */
-  @scala.inline
-  def show(mediaCapture: typings.winrtUwp.Windows.Media.Capture.MediaCapture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(mediaCapture.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def show(mediaCapture: typings.winrtUwp.Windows.Media.Capture.MediaCapture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(mediaCapture.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -42,37 +42,27 @@ trait SchemaAnnotation extends StObject {
 }
 object SchemaAnnotation {
   
-  @scala.inline
-  def apply(): SchemaAnnotation = {
+  inline def apply(): SchemaAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaAnnotationMutableBuilder[Self <: SchemaAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnnotation](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUserMention(value: SchemaUserMentionMetadata): Self = StObject.set(x, "userMention", value.asInstanceOf[js.Any])
+    inline def setUserMention(value: SchemaUserMentionMetadata): Self = StObject.set(x, "userMention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserMentionUndefined: Self = StObject.set(x, "userMention", js.undefined)
+    inline def setUserMentionUndefined: Self = StObject.set(x, "userMention", js.undefined)
   }
 }

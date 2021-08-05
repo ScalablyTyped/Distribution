@@ -56,17 +56,14 @@ object Collections {
   }
   object IIterable {
     
-    @scala.inline
-    def apply[T](first: () => IIterator[T]): IIterable[T] = {
+    inline def apply[T](first: () => IIterator[T]): IIterable[T] = {
       val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first))
       __obj.asInstanceOf[IIterable[T]]
     }
     
-    @scala.inline
-    implicit class IIterableMutableBuilder[Self <: IIterable[?], T] (val x: Self & IIterable[T]) extends AnyVal {
+    extension [Self <: IIterable[?], T](x: Self & IIterable[T]) {
       
-      @scala.inline
-      def setFirst(value: () => IIterator[T]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => IIterator[T]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     }
   }
   
@@ -92,26 +89,20 @@ object Collections {
   }
   object IIterator {
     
-    @scala.inline
-    def apply[T](current: T, getMany: () => Items[T], hasCurrent: Boolean, moveNext: () => Boolean): IIterator[T] = {
+    inline def apply[T](current: T, getMany: () => Items[T], hasCurrent: Boolean, moveNext: () => Boolean): IIterator[T] = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], getMany = js.Any.fromFunction0(getMany), hasCurrent = hasCurrent.asInstanceOf[js.Any], moveNext = js.Any.fromFunction0(moveNext))
       __obj.asInstanceOf[IIterator[T]]
     }
     
-    @scala.inline
-    implicit class IIteratorMutableBuilder[Self <: IIterator[?], T] (val x: Self & IIterator[T]) extends AnyVal {
+    extension [Self <: IIterator[?], T](x: Self & IIterator[T]) {
       
-      @scala.inline
-      def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetMany(value: () => Items[T]): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
+      inline def setGetMany(value: () => Items[T]): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
+      inline def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+      inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
     }
   }
   
@@ -126,20 +117,16 @@ object Collections {
   }
   object IKeyValuePair {
     
-    @scala.inline
-    def apply[K, V](key: K, value: V): IKeyValuePair[K, V] = {
+    inline def apply[K, V](key: K, value: V): IKeyValuePair[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeyValuePair[K, V]]
     }
     
-    @scala.inline
-    implicit class IKeyValuePairMutableBuilder[Self <: IKeyValuePair[?, ?], K, V] (val x: Self & (IKeyValuePair[K, V])) extends AnyVal {
+    extension [Self <: IKeyValuePair[?, ?], K, V](x: Self & (IKeyValuePair[K, V])) {
       
-      @scala.inline
-      def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,8 +177,7 @@ object Collections {
   }
   object IMap {
     
-    @scala.inline
-    def apply[K, V](
+    inline def apply[K, V](
       clear: () => Unit,
       first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       getView: () => IMapView[K, V],
@@ -205,29 +191,21 @@ object Collections {
       __obj.asInstanceOf[IMap[K, V]]
     }
     
-    @scala.inline
-    implicit class IMapMutableBuilder[Self <: IMap[?, ?], K, V] (val x: Self & (IMap[K, V])) extends AnyVal {
+    extension [Self <: IMap[?, ?], K, V](x: Self & (IMap[K, V])) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetView(value: () => IMapView[K, V]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+      inline def setGetView(value: () => IMapView[K, V]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasKey(value: K => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+      inline def setHasKey(value: K => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsert(value: (K, V) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      inline def setInsert(value: (K, V) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLookup(value: K => V): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: K => V): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: K => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: K => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,20 +220,16 @@ object Collections {
   }
   object IMapChangedEventArgs {
     
-    @scala.inline
-    def apply[K](collectionChange: CollectionChange, key: K): IMapChangedEventArgs[K] = {
+    inline def apply[K](collectionChange: CollectionChange, key: K): IMapChangedEventArgs[K] = {
       val __obj = js.Dynamic.literal(collectionChange = collectionChange.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMapChangedEventArgs[K]]
     }
     
-    @scala.inline
-    implicit class IMapChangedEventArgsMutableBuilder[Self <: IMapChangedEventArgs[?], K] (val x: Self & IMapChangedEventArgs[K]) extends AnyVal {
+    extension [Self <: IMapChangedEventArgs[?], K](x: Self & IMapChangedEventArgs[K]) {
       
-      @scala.inline
-      def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
+      inline def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,8 +262,7 @@ object Collections {
   }
   object IMapView {
     
-    @scala.inline
-    def apply[K, V](
+    inline def apply[K, V](
       first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       hasKey: K => Boolean,
       lookup: K => V,
@@ -300,20 +273,15 @@ object Collections {
       __obj.asInstanceOf[IMapView[K, V]]
     }
     
-    @scala.inline
-    implicit class IMapViewMutableBuilder[Self <: IMapView[?, ?], K, V] (val x: Self & (IMapView[K, V])) extends AnyVal {
+    extension [Self <: IMapView[?, ?], K, V](x: Self & (IMapView[K, V])) {
       
-      @scala.inline
-      def setHasKey(value: K => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+      inline def setHasKey(value: K => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLookup(value: K => V): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: K => V): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplit(value: () => First[K, V]): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
+      inline def setSplit(value: () => First[K, V]): Self = StObject.set(x, "split", js.Any.fromFunction0(value))
     }
   }
   
@@ -323,8 +291,7 @@ object Collections {
        with IMap[K, V]
   object IObservableMap {
     
-    @scala.inline
-    def apply[K, V](
+    inline def apply[K, V](
       clear: () => Unit,
       first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       getView: () => IMapView[K, V],
@@ -351,8 +318,7 @@ object Collections {
        with IObservableMap[String, js.Any]
   object IPropertySet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: () => Unit,
       first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       getView: () => IMapView[String, js.Any],
@@ -451,20 +417,16 @@ object Collections {
   }
   object IVectorChangedEventArgs {
     
-    @scala.inline
-    def apply(collectionChange: CollectionChange, index: Double): IVectorChangedEventArgs = {
+    inline def apply(collectionChange: CollectionChange, index: Double): IVectorChangedEventArgs = {
       val __obj = js.Dynamic.literal(collectionChange = collectionChange.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[IVectorChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class IVectorChangedEventArgsMutableBuilder[Self <: IVectorChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IVectorChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
+      inline def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   

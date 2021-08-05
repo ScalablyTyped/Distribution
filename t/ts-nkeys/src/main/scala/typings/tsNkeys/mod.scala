@@ -182,46 +182,34 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isValidPrefix(prefix: Prefix): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValidPrefix(prefix: Prefix): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isValidPublicPrefix(prefix: Prefix): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPublicPrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValidPublicPrefix(prefix: Prefix): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPublicPrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def parsePrefix(v: Double): Prefix = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePrefix")(v.asInstanceOf[js.Any]).asInstanceOf[Prefix]
+    inline def parsePrefix(v: Double): Prefix = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePrefix")(v.asInstanceOf[js.Any]).asInstanceOf[Prefix]
     
-    @scala.inline
-    def startsWithValidPrefix(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("startsWithValidPrefix")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def startsWithValidPrefix(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("startsWithValidPrefix")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("ts-nkeys", "VERSION")
   @js.native
   val VERSION: /* "1.0.16" */ String = js.native
   
-  @scala.inline
-  def createAccount(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")().asInstanceOf[KeyPair]
+  inline def createAccount(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")().asInstanceOf[KeyPair]
   
-  @scala.inline
-  def createCluster(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createCluster")().asInstanceOf[KeyPair]
+  inline def createCluster(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createCluster")().asInstanceOf[KeyPair]
   
-  @scala.inline
-  def createOperator(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createOperator")().asInstanceOf[KeyPair]
+  inline def createOperator(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createOperator")().asInstanceOf[KeyPair]
   
-  @scala.inline
-  def createPair(prefix: Prefix): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createPair")(prefix.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  inline def createPair(prefix: Prefix): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createPair")(prefix.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
   
-  @scala.inline
-  def createServer(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[KeyPair]
+  inline def createServer(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[KeyPair]
   
-  @scala.inline
-  def createUser(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createUser")().asInstanceOf[KeyPair]
+  inline def createUser(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createUser")().asInstanceOf[KeyPair]
   
-  @scala.inline
-  def fromPublic(src: Buffer): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(src.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  inline def fromPublic(src: Buffer): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(src.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
   
-  @scala.inline
-  def fromSeed(src: Buffer): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(src.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  inline def fromSeed(src: Buffer): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(src.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
   
   trait KeyPair extends StObject {
     
@@ -266,8 +254,7 @@ object mod {
   }
   object KeyPair {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getPrivateKey: () => Buffer,
       getPublicKey: () => Buffer,
       getSeed: () => Buffer,
@@ -278,23 +265,17 @@ object mod {
       __obj.asInstanceOf[KeyPair]
     }
     
-    @scala.inline
-    implicit class KeyPairMutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPair](x: Self) {
       
-      @scala.inline
-      def setGetPrivateKey(value: () => Buffer): Self = StObject.set(x, "getPrivateKey", js.Any.fromFunction0(value))
+      inline def setGetPrivateKey(value: () => Buffer): Self = StObject.set(x, "getPrivateKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPublicKey(value: () => Buffer): Self = StObject.set(x, "getPublicKey", js.Any.fromFunction0(value))
+      inline def setGetPublicKey(value: () => Buffer): Self = StObject.set(x, "getPublicKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSeed(value: () => Buffer): Self = StObject.set(x, "getSeed", js.Any.fromFunction0(value))
+      inline def setGetSeed(value: () => Buffer): Self = StObject.set(x, "getSeed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSign(value: Buffer => Buffer): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: Buffer => Buffer): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerify(value: (Buffer, Buffer) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (Buffer, Buffer) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
     }
   }
 }

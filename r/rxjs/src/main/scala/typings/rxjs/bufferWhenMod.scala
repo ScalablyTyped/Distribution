@@ -12,6 +12,5 @@ object bufferWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bufferWhen[T](closingSelector: js.Function0[Observable[js.Any]]): OperatorFunction[T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferWhen")(closingSelector.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  inline def bufferWhen[T](closingSelector: js.Function0[Observable[js.Any]]): OperatorFunction[T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferWhen")(closingSelector.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Array[T]]]
 }

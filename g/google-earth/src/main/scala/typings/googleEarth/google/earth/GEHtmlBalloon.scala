@@ -38,8 +38,7 @@ trait GEHtmlBalloon
 }
 object GEHtmlBalloon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBackgroundColor: () => String,
     getCloseButtonEnabled: () => Boolean,
     getFeature: () => KmlFeature,
@@ -63,19 +62,14 @@ object GEHtmlBalloon {
     __obj.asInstanceOf[GEHtmlBalloon]
   }
   
-  @scala.inline
-  implicit class GEHtmlBalloonMutableBuilder[Self <: GEHtmlBalloon] (val x: Self) extends AnyVal {
+  extension [Self <: GEHtmlBalloon](x: Self) {
     
-    @scala.inline
-    def setGetBackgroundColor(value: () => String): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction0(value))
+    inline def setGetBackgroundColor(value: () => String): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetForegroundColor(value: () => String): Self = StObject.set(x, "getForegroundColor", js.Any.fromFunction0(value))
+    inline def setGetForegroundColor(value: () => String): Self = StObject.set(x, "getForegroundColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBackgroundColor(value: String => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
+    inline def setSetBackgroundColor(value: String => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetForegroundColor(value: String => Unit): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
+    inline def setSetForegroundColor(value: String => Unit): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
   }
 }

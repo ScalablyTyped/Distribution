@@ -15,20 +15,16 @@ object observationMod {
   }
   object Observation {
     
-    @scala.inline
-    def apply(observer: BaseObserver, value: Double): Observation = {
+    inline def apply(observer: BaseObserver, value: Double): Observation = {
       val __obj = js.Dynamic.literal(observer = observer.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Observation]
     }
     
-    @scala.inline
-    implicit class ObservationMutableBuilder[Self <: Observation] (val x: Self) extends AnyVal {
+    extension [Self <: Observation](x: Self) {
       
-      @scala.inline
-      def setObserver(value: BaseObserver): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
+      inline def setObserver(value: BaseObserver): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

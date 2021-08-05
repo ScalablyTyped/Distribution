@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RatingFranceMoviesType extends StObject
 object RatingFranceMoviesType {
   
-  @scala.inline
-  def agesAbove10: typings.microsoftGraph.microsoftGraphStrings.agesAbove10 = "agesAbove10".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove10]
+  inline def agesAbove10: typings.microsoftGraph.microsoftGraphStrings.agesAbove10 = "agesAbove10".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove10]
   
-  @scala.inline
-  def agesAbove12: typings.microsoftGraph.microsoftGraphStrings.agesAbove12 = "agesAbove12".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove12]
+  inline def agesAbove12: typings.microsoftGraph.microsoftGraphStrings.agesAbove12 = "agesAbove12".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove12]
   
-  @scala.inline
-  def agesAbove16: typings.microsoftGraph.microsoftGraphStrings.agesAbove16 = "agesAbove16".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove16]
+  inline def agesAbove16: typings.microsoftGraph.microsoftGraphStrings.agesAbove16 = "agesAbove16".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove16]
   
-  @scala.inline
-  def agesAbove18: typings.microsoftGraph.microsoftGraphStrings.agesAbove18 = "agesAbove18".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove18]
+  inline def agesAbove18: typings.microsoftGraph.microsoftGraphStrings.agesAbove18 = "agesAbove18".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove18]
   
-  @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
+  inline def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   
-  @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
+  inline def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
 }

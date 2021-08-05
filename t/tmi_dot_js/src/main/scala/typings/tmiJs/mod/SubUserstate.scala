@@ -21,37 +21,27 @@ trait SubUserstate
 }
 object SubUserstate {
   
-  @scala.inline
-  def apply(): SubUserstate = {
+  inline def apply(): SubUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubUserstate]
   }
   
-  @scala.inline
-  implicit class SubUserstateMutableBuilder[Self <: SubUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: SubUserstate](x: Self) {
     
-    @scala.inline
-    def `setMessage-type`(value: sub | resub): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
+    inline def `setMessage-type`(value: sub | resub): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
+    inline def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-cumulative-months`(value: String | Boolean): Self = StObject.set(x, "msg-param-cumulative-months", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-cumulative-months`(value: String | Boolean): Self = StObject.set(x, "msg-param-cumulative-months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-cumulative-monthsUndefined`: Self = StObject.set(x, "msg-param-cumulative-months", js.undefined)
+    inline def `setMsg-param-cumulative-monthsUndefined`: Self = StObject.set(x, "msg-param-cumulative-months", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-should-share-streak`(value: Boolean): Self = StObject.set(x, "msg-param-should-share-streak", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-should-share-streak`(value: Boolean): Self = StObject.set(x, "msg-param-should-share-streak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-should-share-streakUndefined`: Self = StObject.set(x, "msg-param-should-share-streak", js.undefined)
+    inline def `setMsg-param-should-share-streakUndefined`: Self = StObject.set(x, "msg-param-should-share-streak", js.undefined)
     
-    @scala.inline
-    def `setMsg-param-streak-months`(value: String | Boolean): Self = StObject.set(x, "msg-param-streak-months", value.asInstanceOf[js.Any])
+    inline def `setMsg-param-streak-months`(value: String | Boolean): Self = StObject.set(x, "msg-param-streak-months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMsg-param-streak-monthsUndefined`: Self = StObject.set(x, "msg-param-streak-months", js.undefined)
+    inline def `setMsg-param-streak-monthsUndefined`: Self = StObject.set(x, "msg-param-streak-months", js.undefined)
   }
 }

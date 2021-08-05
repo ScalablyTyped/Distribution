@@ -18,8 +18,7 @@ trait NewsRepositoryInboxResponseOldStoriesItem extends StObject {
 }
 object NewsRepositoryInboxResponseOldStoriesItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: NewsRepositoryInboxResponseArgs,
     counts: NewsRepositoryInboxResponseCounts,
     story_type: Double,
@@ -30,25 +29,18 @@ object NewsRepositoryInboxResponseOldStoriesItem {
     __obj.asInstanceOf[NewsRepositoryInboxResponseOldStoriesItem]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseOldStoriesItemMutableBuilder[Self <: NewsRepositoryInboxResponseOldStoriesItem] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseOldStoriesItem](x: Self) {
     
-    @scala.inline
-    def setArgs(value: NewsRepositoryInboxResponseArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: NewsRepositoryInboxResponseArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounts(value: NewsRepositoryInboxResponseCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: NewsRepositoryInboxResponseCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
+    inline def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
     
-    @scala.inline
-    def setStory_type(value: Double): Self = StObject.set(x, "story_type", value.asInstanceOf[js.Any])
+    inline def setStory_type(value: Double): Self = StObject.set(x, "story_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

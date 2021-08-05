@@ -17,25 +17,19 @@ trait UserDefinedFunctionResource extends StObject {
 }
 object UserDefinedFunctionResource {
   
-  @scala.inline
-  def apply(): UserDefinedFunctionResource = {
+  inline def apply(): UserDefinedFunctionResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserDefinedFunctionResource]
   }
   
-  @scala.inline
-  implicit class UserDefinedFunctionResourceMutableBuilder[Self <: UserDefinedFunctionResource] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedFunctionResource](x: Self) {
     
-    @scala.inline
-    def setInlineCode(value: String): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
+    inline def setInlineCode(value: String): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineCodeUndefined: Self = StObject.set(x, "inlineCode", js.undefined)
+    inline def setInlineCodeUndefined: Self = StObject.set(x, "inlineCode", js.undefined)
     
-    @scala.inline
-    def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
+    inline def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
   }
 }

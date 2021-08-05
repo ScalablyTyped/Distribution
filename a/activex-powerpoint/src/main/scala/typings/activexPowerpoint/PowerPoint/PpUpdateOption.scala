@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpUpdateOption extends StObject
 object PpUpdateOption {
   
-  @scala.inline
-  def ppUpdateOptionAutomatic: `2` = 2.asInstanceOf[`2`]
+  inline def ppUpdateOptionAutomatic: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppUpdateOptionManual: `1` = 1.asInstanceOf[`1`]
+  inline def ppUpdateOptionManual: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppUpdateOptionMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppUpdateOptionMixed: `-2` = -2.asInstanceOf[`-2`]
 }

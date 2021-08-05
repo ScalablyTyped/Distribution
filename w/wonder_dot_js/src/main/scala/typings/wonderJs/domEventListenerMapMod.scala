@@ -32,8 +32,7 @@ object domEventListenerMapMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): DomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DomEventListenerMap]
+    inline def create(): DomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DomEventListenerMap]
   }
   
   trait DomEventOffData extends StObject {
@@ -46,23 +45,18 @@ object domEventListenerMapMod {
   }
   object DomEventOffData {
     
-    @scala.inline
-    def apply(dom: HTMLElement, domHandler: js.Function, eventName: EEventName): DomEventOffData = {
+    inline def apply(dom: HTMLElement, domHandler: js.Function, eventName: EEventName): DomEventOffData = {
       val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], domHandler = domHandler.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomEventOffData]
     }
     
-    @scala.inline
-    implicit class DomEventOffDataMutableBuilder[Self <: DomEventOffData] (val x: Self) extends AnyVal {
+    extension [Self <: DomEventOffData](x: Self) {
       
-      @scala.inline
-      def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
+      inline def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventName(value: EEventName): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: EEventName): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }
   }
 }

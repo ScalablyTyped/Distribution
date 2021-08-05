@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PatchType extends StObject
 object PatchType {
   
-  @scala.inline
-  def Add: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Add = "Add".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Add]
+  inline def Add: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Add = "Add".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Add]
   
-  @scala.inline
-  def Remove: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Remove = "Remove".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Remove]
+  inline def Remove: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Remove = "Remove".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Remove]
   
-  @scala.inline
-  def Replace: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Replace = "Replace".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Replace]
+  inline def Replace: typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Replace = "Replace".asInstanceOf[typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.Replace]
 }

@@ -14,23 +14,18 @@ object crashReporterOptionMod {
   }
   object CrashReporterOption {
     
-    @scala.inline
-    def apply(diagnosticMode: Boolean): CrashReporterOption = {
+    inline def apply(diagnosticMode: Boolean): CrashReporterOption = {
       val __obj = js.Dynamic.literal(diagnosticMode = diagnosticMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[CrashReporterOption]
     }
     
-    @scala.inline
-    implicit class CrashReporterOptionMutableBuilder[Self <: CrashReporterOption] (val x: Self) extends AnyVal {
+    extension [Self <: CrashReporterOption](x: Self) {
       
-      @scala.inline
-      def setDiagnosticMode(value: Boolean): Self = StObject.set(x, "diagnosticMode", value.asInstanceOf[js.Any])
+      inline def setDiagnosticMode(value: Boolean): Self = StObject.set(x, "diagnosticMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+      inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRunningUndefined: Self = StObject.set(x, "isRunning", js.undefined)
+      inline def setIsRunningUndefined: Self = StObject.set(x, "isRunning", js.undefined)
     }
   }
 }

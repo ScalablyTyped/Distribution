@@ -28,22 +28,17 @@ trait MediaTrack extends StObject {
 }
 object MediaTrack {
   
-  @scala.inline
-  def apply(duration: Double, kind: audio | video, volume: Double): MediaTrack = {
+  inline def apply(duration: Double, kind: audio | video, volume: Double): MediaTrack = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrack]
   }
   
-  @scala.inline
-  implicit class MediaTrackMutableBuilder[Self <: MediaTrack] (val x: Self) extends AnyVal {
+  extension [Self <: MediaTrack](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: audio | video): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: audio | video): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

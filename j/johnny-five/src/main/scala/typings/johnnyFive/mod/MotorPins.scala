@@ -16,31 +16,23 @@ trait MotorPins extends StObject {
 }
 object MotorPins {
   
-  @scala.inline
-  def apply(dir: Double, pwm: Double): MotorPins = {
+  inline def apply(dir: Double, pwm: Double): MotorPins = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotorPins]
   }
   
-  @scala.inline
-  implicit class MotorPinsMutableBuilder[Self <: MotorPins] (val x: Self) extends AnyVal {
+  extension [Self <: MotorPins](x: Self) {
     
-    @scala.inline
-    def setBrake(value: Double): Self = StObject.set(x, "brake", value.asInstanceOf[js.Any])
+    inline def setBrake(value: Double): Self = StObject.set(x, "brake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrakeUndefined: Self = StObject.set(x, "brake", js.undefined)
+    inline def setBrakeUndefined: Self = StObject.set(x, "brake", js.undefined)
     
-    @scala.inline
-    def setCdir(value: Double): Self = StObject.set(x, "cdir", value.asInstanceOf[js.Any])
+    inline def setCdir(value: Double): Self = StObject.set(x, "cdir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdirUndefined: Self = StObject.set(x, "cdir", js.undefined)
+    inline def setCdirUndefined: Self = StObject.set(x, "cdir", js.undefined)
     
-    @scala.inline
-    def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwm(value: Double): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
+    inline def setPwm(value: Double): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
   }
 }

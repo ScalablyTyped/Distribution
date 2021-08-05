@@ -15,8 +15,7 @@ trait ColumnPinnedEvent
 }
 object ColumnPinnedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     column: Column,
     columnApi: ColumnApi,
@@ -30,10 +29,8 @@ object ColumnPinnedEvent {
     __obj.asInstanceOf[ColumnPinnedEvent]
   }
   
-  @scala.inline
-  implicit class ColumnPinnedEventMutableBuilder[Self <: ColumnPinnedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnPinnedEvent](x: Self) {
     
-    @scala.inline
-    def setPinned(value: String): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: String): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
   }
 }

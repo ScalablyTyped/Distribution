@@ -23,19 +23,15 @@ trait IHitResultContinuousEventData extends StObject {
 }
 object IHitResultContinuousEventData {
   
-  @scala.inline
-  def apply(entity: IEntity, position: VectorXYZ): IHitResultContinuousEventData = {
+  inline def apply(entity: IEntity, position: VectorXYZ): IHitResultContinuousEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHitResultContinuousEventData]
   }
   
-  @scala.inline
-  implicit class IHitResultContinuousEventDataMutableBuilder[Self <: IHitResultContinuousEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IHitResultContinuousEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: VectorXYZ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: VectorXYZ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

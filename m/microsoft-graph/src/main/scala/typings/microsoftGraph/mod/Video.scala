@@ -38,103 +38,71 @@ trait Video extends StObject {
 }
 object Video {
   
-  @scala.inline
-  def apply(): Video = {
+  inline def apply(): Video = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Video]
   }
   
-  @scala.inline
-  implicit class VideoMutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
+  extension [Self <: Video](x: Self) {
     
-    @scala.inline
-    def setAudioBitsPerSample(value: NullableOption[Double]): Self = StObject.set(x, "audioBitsPerSample", value.asInstanceOf[js.Any])
+    inline def setAudioBitsPerSample(value: NullableOption[Double]): Self = StObject.set(x, "audioBitsPerSample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioBitsPerSampleNull: Self = StObject.set(x, "audioBitsPerSample", null)
+    inline def setAudioBitsPerSampleNull: Self = StObject.set(x, "audioBitsPerSample", null)
     
-    @scala.inline
-    def setAudioBitsPerSampleUndefined: Self = StObject.set(x, "audioBitsPerSample", js.undefined)
+    inline def setAudioBitsPerSampleUndefined: Self = StObject.set(x, "audioBitsPerSample", js.undefined)
     
-    @scala.inline
-    def setAudioChannels(value: NullableOption[Double]): Self = StObject.set(x, "audioChannels", value.asInstanceOf[js.Any])
+    inline def setAudioChannels(value: NullableOption[Double]): Self = StObject.set(x, "audioChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioChannelsNull: Self = StObject.set(x, "audioChannels", null)
+    inline def setAudioChannelsNull: Self = StObject.set(x, "audioChannels", null)
     
-    @scala.inline
-    def setAudioChannelsUndefined: Self = StObject.set(x, "audioChannels", js.undefined)
+    inline def setAudioChannelsUndefined: Self = StObject.set(x, "audioChannels", js.undefined)
     
-    @scala.inline
-    def setAudioFormat(value: NullableOption[String]): Self = StObject.set(x, "audioFormat", value.asInstanceOf[js.Any])
+    inline def setAudioFormat(value: NullableOption[String]): Self = StObject.set(x, "audioFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioFormatNull: Self = StObject.set(x, "audioFormat", null)
+    inline def setAudioFormatNull: Self = StObject.set(x, "audioFormat", null)
     
-    @scala.inline
-    def setAudioFormatUndefined: Self = StObject.set(x, "audioFormat", js.undefined)
+    inline def setAudioFormatUndefined: Self = StObject.set(x, "audioFormat", js.undefined)
     
-    @scala.inline
-    def setAudioSamplesPerSecond(value: NullableOption[Double]): Self = StObject.set(x, "audioSamplesPerSecond", value.asInstanceOf[js.Any])
+    inline def setAudioSamplesPerSecond(value: NullableOption[Double]): Self = StObject.set(x, "audioSamplesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSamplesPerSecondNull: Self = StObject.set(x, "audioSamplesPerSecond", null)
+    inline def setAudioSamplesPerSecondNull: Self = StObject.set(x, "audioSamplesPerSecond", null)
     
-    @scala.inline
-    def setAudioSamplesPerSecondUndefined: Self = StObject.set(x, "audioSamplesPerSecond", js.undefined)
+    inline def setAudioSamplesPerSecondUndefined: Self = StObject.set(x, "audioSamplesPerSecond", js.undefined)
     
-    @scala.inline
-    def setBitrate(value: NullableOption[Double]): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: NullableOption[Double]): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateNull: Self = StObject.set(x, "bitrate", null)
+    inline def setBitrateNull: Self = StObject.set(x, "bitrate", null)
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
     
-    @scala.inline
-    def setDuration(value: NullableOption[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: NullableOption[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationNull: Self = StObject.set(x, "duration", null)
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFourCC(value: NullableOption[String]): Self = StObject.set(x, "fourCC", value.asInstanceOf[js.Any])
+    inline def setFourCC(value: NullableOption[String]): Self = StObject.set(x, "fourCC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFourCCNull: Self = StObject.set(x, "fourCC", null)
+    inline def setFourCCNull: Self = StObject.set(x, "fourCC", null)
     
-    @scala.inline
-    def setFourCCUndefined: Self = StObject.set(x, "fourCC", js.undefined)
+    inline def setFourCCUndefined: Self = StObject.set(x, "fourCC", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateNull: Self = StObject.set(x, "frameRate", null)
+    inline def setFrameRateNull: Self = StObject.set(x, "frameRate", null)
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: NullableOption[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: NullableOption[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

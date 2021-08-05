@@ -28,40 +28,29 @@ trait EventInfoMap extends StObject {
 }
 object EventInfoMap {
   
-  @scala.inline
-  def apply(): EventInfoMap = {
+  inline def apply(): EventInfoMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventInfoMap]
   }
   
-  @scala.inline
-  implicit class EventInfoMapMutableBuilder[Self <: EventInfoMap] (val x: Self) extends AnyVal {
+  extension [Self <: EventInfoMap](x: Self) {
     
-    @scala.inline
-    def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
+    inline def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
+    inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    @scala.inline
-    def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setEventDescription(value: String): Self = StObject.set(x, "EventDescription", value.asInstanceOf[js.Any])
+    inline def setEventDescription(value: String): Self = StObject.set(x, "EventDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDescriptionUndefined: Self = StObject.set(x, "EventDescription", js.undefined)
+    inline def setEventDescriptionUndefined: Self = StObject.set(x, "EventDescription", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
   }
 }

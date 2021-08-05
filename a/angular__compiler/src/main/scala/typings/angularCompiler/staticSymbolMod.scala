@@ -24,7 +24,7 @@ object staticSymbolMod {
   @js.native
   class StaticSymbolCache () extends StObject {
     
-    var cache: js.Any = js.native
+    /* private */ var cache: js.Any = js.native
     
     def get(declarationFile: String, name: String): StaticSymbol = js.native
     def get(declarationFile: String, name: String, members: js.Array[String]): StaticSymbol = js.native

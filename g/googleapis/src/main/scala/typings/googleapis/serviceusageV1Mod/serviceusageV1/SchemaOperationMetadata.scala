@@ -17,22 +17,17 @@ trait SchemaOperationMetadata extends StObject {
 }
 object SchemaOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaOperationMetadata = {
+  inline def apply(): SchemaOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaOperationMetadataMutableBuilder[Self <: SchemaOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+    inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+    inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
   }
 }

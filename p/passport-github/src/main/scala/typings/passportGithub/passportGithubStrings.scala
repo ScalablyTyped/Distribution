@@ -8,6 +8,5 @@ object passportGithubStrings {
   
   @js.native
   sealed trait github extends StObject
-  @scala.inline
-  def github: github = "github".asInstanceOf[github]
+  inline def github: github = "github".asInstanceOf[github]
 }

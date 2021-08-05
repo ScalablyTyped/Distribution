@@ -16,22 +16,17 @@ trait Func extends StObject {
 }
 object Func {
   
-  @scala.inline
-  def apply(func: FNotationPrecedence): Func = {
+  inline def apply(func: FNotationPrecedence): Func = {
     val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = "min\\b", symbol = "min")
     __obj.asInstanceOf[Func]
   }
   
-  @scala.inline
-  implicit class FuncMutableBuilder[Self <: Func] (val x: Self) extends AnyVal {
+  extension [Self <: Func](x: Self) {
     
-    @scala.inline
-    def setFunc(value: FNotationPrecedence): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: FNotationPrecedence): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: minBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: minBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: min): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: min): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

@@ -20,13 +20,12 @@ trait OMathScrPre extends StObject {
   
   def ToScrSubSup(): OMathFunction
   
-  @JSName("Word.OMathScrPre_typekey")
+  /* private */ @JSName("Word.OMathScrPre_typekey")
   var WordDotOMathScrPre_typekey: OMathScrPre
 }
 object OMathScrPre {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     E: OMath,
@@ -41,31 +40,22 @@ object OMathScrPre {
     __obj.asInstanceOf[OMathScrPre]
   }
   
-  @scala.inline
-  implicit class OMathScrPreMutableBuilder[Self <: OMathScrPre] (val x: Self) extends AnyVal {
+  extension [Self <: OMathScrPre](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSub(value: OMath): Self = StObject.set(x, "Sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: OMath): Self = StObject.set(x, "Sub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSup(value: OMath): Self = StObject.set(x, "Sup", value.asInstanceOf[js.Any])
+    inline def setSup(value: OMath): Self = StObject.set(x, "Sup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToScrSubSup(value: () => OMathFunction): Self = StObject.set(x, "ToScrSubSup", js.Any.fromFunction0(value))
+    inline def setToScrSubSup(value: () => OMathFunction): Self = StObject.set(x, "ToScrSubSup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotOMathScrPre_typekey(value: OMathScrPre): Self = StObject.set(x, "Word.OMathScrPre_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathScrPre_typekey(value: OMathScrPre): Self = StObject.set(x, "Word.OMathScrPre_typekey", value.asInstanceOf[js.Any])
   }
 }

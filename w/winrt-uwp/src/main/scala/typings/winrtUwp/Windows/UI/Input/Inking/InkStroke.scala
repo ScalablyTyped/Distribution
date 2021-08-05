@@ -39,8 +39,7 @@ trait InkStroke extends StObject {
 }
 object InkStroke {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingRect: Rect,
     drawingAttributes: InkDrawingAttributes,
     getInkPoints: () => IVectorView[InkPoint],
@@ -53,28 +52,20 @@ object InkStroke {
     __obj.asInstanceOf[InkStroke]
   }
   
-  @scala.inline
-  implicit class InkStrokeMutableBuilder[Self <: InkStroke] (val x: Self) extends AnyVal {
+  extension [Self <: InkStroke](x: Self) {
     
-    @scala.inline
-    def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
+    inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawingAttributes(value: InkDrawingAttributes): Self = StObject.set(x, "drawingAttributes", value.asInstanceOf[js.Any])
+    inline def setDrawingAttributes(value: InkDrawingAttributes): Self = StObject.set(x, "drawingAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetInkPoints(value: () => IVectorView[InkPoint]): Self = StObject.set(x, "getInkPoints", js.Any.fromFunction0(value))
+    inline def setGetInkPoints(value: () => IVectorView[InkPoint]): Self = StObject.set(x, "getInkPoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRenderingSegments(value: () => IVectorView[InkStrokeRenderingSegment]): Self = StObject.set(x, "getRenderingSegments", js.Any.fromFunction0(value))
+    inline def setGetRenderingSegments(value: () => IVectorView[InkStrokeRenderingSegment]): Self = StObject.set(x, "getRenderingSegments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPointTransform(value: Matrix3x2): Self = StObject.set(x, "pointTransform", value.asInstanceOf[js.Any])
+    inline def setPointTransform(value: Matrix3x2): Self = StObject.set(x, "pointTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecognized(value: Boolean): Self = StObject.set(x, "recognized", value.asInstanceOf[js.Any])
+    inline def setRecognized(value: Boolean): Self = StObject.set(x, "recognized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

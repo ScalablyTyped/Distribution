@@ -18,19 +18,15 @@ trait SocketAddress extends StObject {
 }
 object SocketAddress {
   
-  @scala.inline
-  def apply(name: String, port: Integer): SocketAddress = {
+  inline def apply(name: String, port: Integer): SocketAddress = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketAddress]
   }
   
-  @scala.inline
-  implicit class SocketAddressMutableBuilder[Self <: SocketAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SocketAddress](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

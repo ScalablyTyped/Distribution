@@ -22,8 +22,7 @@ object conv2dBackpropInputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv2DBackpropInput(
+  inline def conv2DBackpropInput(
     xShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
     dy: Tensor[R3 | R4],
     filter: Tensor4D,

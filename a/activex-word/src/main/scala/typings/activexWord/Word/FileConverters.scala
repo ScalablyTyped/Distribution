@@ -18,13 +18,12 @@ trait FileConverters extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.FileConverters_typekey")
+  /* private */ @JSName("Word.FileConverters_typekey")
   var WordDotFileConverters_typekey: FileConverters
 }
 object FileConverters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     ConvertMacWordChevrons: WdChevronConvertRule,
     Count: Double,
@@ -38,28 +37,20 @@ object FileConverters {
     __obj.asInstanceOf[FileConverters]
   }
   
-  @scala.inline
-  implicit class FileConvertersMutableBuilder[Self <: FileConverters] (val x: Self) extends AnyVal {
+  extension [Self <: FileConverters](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertMacWordChevrons(value: WdChevronConvertRule): Self = StObject.set(x, "ConvertMacWordChevrons", value.asInstanceOf[js.Any])
+    inline def setConvertMacWordChevrons(value: WdChevronConvertRule): Self = StObject.set(x, "ConvertMacWordChevrons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => FileConverter): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => FileConverter): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotFileConverters_typekey(value: FileConverters): Self = StObject.set(x, "Word.FileConverters_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotFileConverters_typekey(value: FileConverters): Self = StObject.set(x, "Word.FileConverters_typekey", value.asInstanceOf[js.Any])
   }
 }

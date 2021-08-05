@@ -41,8 +41,7 @@ trait XCalculatable
 }
 object XCalculatable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     calculate: () => Unit,
     calculateAll: () => Unit,
@@ -55,19 +54,14 @@ object XCalculatable {
     __obj.asInstanceOf[XCalculatable]
   }
   
-  @scala.inline
-  implicit class XCalculatableMutableBuilder[Self <: XCalculatable] (val x: Self) extends AnyVal {
+  extension [Self <: XCalculatable](x: Self) {
     
-    @scala.inline
-    def setCalculate(value: () => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction0(value))
+    inline def setCalculate(value: () => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCalculateAll(value: () => Unit): Self = StObject.set(x, "calculateAll", js.Any.fromFunction0(value))
+    inline def setCalculateAll(value: () => Unit): Self = StObject.set(x, "calculateAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnableAutomaticCalculation(value: Boolean => Unit): Self = StObject.set(x, "enableAutomaticCalculation", js.Any.fromFunction1(value))
+    inline def setEnableAutomaticCalculation(value: Boolean => Unit): Self = StObject.set(x, "enableAutomaticCalculation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAutomaticCalculationEnabled(value: () => Boolean): Self = StObject.set(x, "isAutomaticCalculationEnabled", js.Any.fromFunction0(value))
+    inline def setIsAutomaticCalculationEnabled(value: () => Boolean): Self = StObject.set(x, "isAutomaticCalculationEnabled", js.Any.fromFunction0(value))
   }
 }

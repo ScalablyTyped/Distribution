@@ -24,28 +24,21 @@ trait SchemaSyncWorkspaceResponse extends StObject {
 }
 object SchemaSyncWorkspaceResponse {
   
-  @scala.inline
-  def apply(): SchemaSyncWorkspaceResponse = {
+  inline def apply(): SchemaSyncWorkspaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSyncWorkspaceResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSyncWorkspaceResponseMutableBuilder[Self <: SchemaSyncWorkspaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSyncWorkspaceResponse](x: Self) {
     
-    @scala.inline
-    def setMergeConflict(value: js.Array[SchemaMergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+    inline def setMergeConflict(value: js.Array[SchemaMergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+    inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    @scala.inline
-    def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+    inline def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
     
-    @scala.inline
-    def setSyncStatus(value: SchemaSyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
+    inline def setSyncStatus(value: SchemaSyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
+    inline def setSyncStatusUndefined: Self = StObject.set(x, "syncStatus", js.undefined)
   }
 }

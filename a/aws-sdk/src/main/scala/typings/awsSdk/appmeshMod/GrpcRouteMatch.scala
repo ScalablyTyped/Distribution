@@ -23,34 +23,25 @@ trait GrpcRouteMatch extends StObject {
 }
 object GrpcRouteMatch {
   
-  @scala.inline
-  def apply(): GrpcRouteMatch = {
+  inline def apply(): GrpcRouteMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrpcRouteMatch]
   }
   
-  @scala.inline
-  implicit class GrpcRouteMatchMutableBuilder[Self <: GrpcRouteMatch] (val x: Self) extends AnyVal {
+  extension [Self <: GrpcRouteMatch](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: GrpcRouteMetadataList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: GrpcRouteMetadataList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMetadataVarargs(value: GrpcRouteMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: GrpcRouteMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
-    @scala.inline
-    def setMethodName(value: MethodName): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: MethodName): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

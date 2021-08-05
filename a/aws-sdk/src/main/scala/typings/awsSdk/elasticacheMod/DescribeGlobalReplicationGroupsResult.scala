@@ -18,28 +18,21 @@ trait DescribeGlobalReplicationGroupsResult extends StObject {
 }
 object DescribeGlobalReplicationGroupsResult {
   
-  @scala.inline
-  def apply(): DescribeGlobalReplicationGroupsResult = {
+  inline def apply(): DescribeGlobalReplicationGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeGlobalReplicationGroupsResult]
   }
   
-  @scala.inline
-  implicit class DescribeGlobalReplicationGroupsResultMutableBuilder[Self <: DescribeGlobalReplicationGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGlobalReplicationGroupsResult](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroups(value: GlobalReplicationGroupList): Self = StObject.set(x, "GlobalReplicationGroups", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroups(value: GlobalReplicationGroupList): Self = StObject.set(x, "GlobalReplicationGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupsUndefined: Self = StObject.set(x, "GlobalReplicationGroups", js.undefined)
+    inline def setGlobalReplicationGroupsUndefined: Self = StObject.set(x, "GlobalReplicationGroups", js.undefined)
     
-    @scala.inline
-    def setGlobalReplicationGroupsVarargs(value: GlobalReplicationGroup*): Self = StObject.set(x, "GlobalReplicationGroups", js.Array(value :_*))
+    inline def setGlobalReplicationGroupsVarargs(value: GlobalReplicationGroup*): Self = StObject.set(x, "GlobalReplicationGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

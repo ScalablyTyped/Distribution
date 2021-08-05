@@ -29,8 +29,7 @@ trait ImageRendition
 }
 object ImageRendition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -49,31 +48,22 @@ object ImageRendition {
     __obj.asInstanceOf[ImageRendition]
   }
   
-  @scala.inline
-  implicit class ImageRenditionMutableBuilder[Self <: ImageRendition] (val x: Self) extends AnyVal {
+  extension [Self <: ImageRendition](x: Self) {
     
-    @scala.inline
-    def setGet_height(value: () => Double): Self = StObject.set(x, "get_height", js.Any.fromFunction0(value))
+    inline def setGet_height(value: () => Double): Self = StObject.set(x, "get_height", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_id(value: () => Double): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+    inline def setGet_id(value: () => Double): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_version(value: () => Double): Self = StObject.set(x, "get_version", js.Any.fromFunction0(value))
+    inline def setGet_version(value: () => Double): Self = StObject.set(x, "get_version", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_width(value: () => Double): Self = StObject.set(x, "get_width", js.Any.fromFunction0(value))
+    inline def setGet_width(value: () => Double): Self = StObject.set(x, "get_width", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_height(value: Double => Double): Self = StObject.set(x, "set_height", js.Any.fromFunction1(value))
+    inline def setSet_height(value: Double => Double): Self = StObject.set(x, "set_height", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_width(value: Double => Double): Self = StObject.set(x, "set_width", js.Any.fromFunction1(value))
+    inline def setSet_width(value: Double => Double): Self = StObject.set(x, "set_width", js.Any.fromFunction1(value))
   }
 }

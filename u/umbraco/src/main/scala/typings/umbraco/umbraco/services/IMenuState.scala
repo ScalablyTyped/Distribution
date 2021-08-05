@@ -26,8 +26,7 @@ trait IMenuState extends StObject {
 }
 object IMenuState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentNode: js.Any,
     dialogTitle: String,
     menuActions: js.Any,
@@ -38,22 +37,16 @@ object IMenuState {
     __obj.asInstanceOf[IMenuState]
   }
   
-  @scala.inline
-  implicit class IMenuStateMutableBuilder[Self <: IMenuState] (val x: Self) extends AnyVal {
+  extension [Self <: IMenuState](x: Self) {
     
-    @scala.inline
-    def setCurrentNode(value: js.Any): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
+    inline def setCurrentNode(value: js.Any): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
+    inline def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuActions(value: js.Any): Self = StObject.set(x, "menuActions", value.asInstanceOf[js.Any])
+    inline def setMenuActions(value: js.Any): Self = StObject.set(x, "menuActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
+    inline def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMenuDialog(value: Boolean): Self = StObject.set(x, "showMenuDialog", value.asInstanceOf[js.Any])
+    inline def setShowMenuDialog(value: Boolean): Self = StObject.set(x, "showMenuDialog", value.asInstanceOf[js.Any])
   }
 }

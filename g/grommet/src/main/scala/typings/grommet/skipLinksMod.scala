@@ -21,26 +21,20 @@ object skipLinksMod {
   }
   object SkipLinksProps {
     
-    @scala.inline
-    def apply(): SkipLinksProps = {
+    inline def apply(): SkipLinksProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkipLinksProps]
     }
     
-    @scala.inline
-    implicit class SkipLinksPropsMutableBuilder[Self <: SkipLinksProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkipLinksProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setMessages(value: SkipTo): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: SkipTo): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     }
   }
 }

@@ -14,22 +14,17 @@ trait ListViewPrefixCls extends StObject {
 }
 object ListViewPrefixCls {
   
-  @scala.inline
-  def apply(listPrefixCls: String, listViewPrefixCls: String, prefixCls: String): ListViewPrefixCls = {
+  inline def apply(listPrefixCls: String, listViewPrefixCls: String, prefixCls: String): ListViewPrefixCls = {
     val __obj = js.Dynamic.literal(listPrefixCls = listPrefixCls.asInstanceOf[js.Any], listViewPrefixCls = listViewPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewPrefixCls]
   }
   
-  @scala.inline
-  implicit class ListViewPrefixClsMutableBuilder[Self <: ListViewPrefixCls] (val x: Self) extends AnyVal {
+  extension [Self <: ListViewPrefixCls](x: Self) {
     
-    @scala.inline
-    def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
+    inline def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListViewPrefixCls(value: String): Self = StObject.set(x, "listViewPrefixCls", value.asInstanceOf[js.Any])
+    inline def setListViewPrefixCls(value: String): Self = StObject.set(x, "listViewPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

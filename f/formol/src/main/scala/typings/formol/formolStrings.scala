@@ -8,6 +8,5 @@ object formolStrings {
   
   @js.native
   sealed trait FormolProps extends StObject
-  @scala.inline
-  def FormolProps: FormolProps = "FormolProps".asInstanceOf[FormolProps]
+  inline def FormolProps: FormolProps = "FormolProps".asInstanceOf[FormolProps]
 }

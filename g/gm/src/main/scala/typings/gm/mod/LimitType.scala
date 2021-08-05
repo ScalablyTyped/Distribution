@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LimitType extends StObject
 object LimitType {
   
-  @scala.inline
-  def disk: typings.gm.gmStrings.disk = "disk".asInstanceOf[typings.gm.gmStrings.disk]
+  inline def disk: typings.gm.gmStrings.disk = "disk".asInstanceOf[typings.gm.gmStrings.disk]
   
-  @scala.inline
-  def file: typings.gm.gmStrings.file = "file".asInstanceOf[typings.gm.gmStrings.file]
+  inline def file: typings.gm.gmStrings.file = "file".asInstanceOf[typings.gm.gmStrings.file]
   
-  @scala.inline
-  def map: typings.gm.gmStrings.map = "map".asInstanceOf[typings.gm.gmStrings.map]
+  inline def map: typings.gm.gmStrings.map = "map".asInstanceOf[typings.gm.gmStrings.map]
   
-  @scala.inline
-  def memory: typings.gm.gmStrings.memory = "memory".asInstanceOf[typings.gm.gmStrings.memory]
+  inline def memory: typings.gm.gmStrings.memory = "memory".asInstanceOf[typings.gm.gmStrings.memory]
   
-  @scala.inline
-  def pixels: typings.gm.gmStrings.pixels = "pixels".asInstanceOf[typings.gm.gmStrings.pixels]
+  inline def pixels: typings.gm.gmStrings.pixels = "pixels".asInstanceOf[typings.gm.gmStrings.pixels]
   
-  @scala.inline
-  def threads: typings.gm.gmStrings.threads = "threads".asInstanceOf[typings.gm.gmStrings.threads]
+  inline def threads: typings.gm.gmStrings.threads = "threads".asInstanceOf[typings.gm.gmStrings.threads]
 }

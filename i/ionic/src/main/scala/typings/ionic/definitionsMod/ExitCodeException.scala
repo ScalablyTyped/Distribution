@@ -13,16 +13,13 @@ trait ExitCodeException
 }
 object ExitCodeException {
   
-  @scala.inline
-  def apply(exitCode: Double, message: String, name: String): ExitCodeException = {
+  inline def apply(exitCode: Double, message: String, name: String): ExitCodeException = {
     val __obj = js.Dynamic.literal(exitCode = exitCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExitCodeException]
   }
   
-  @scala.inline
-  implicit class ExitCodeExceptionMutableBuilder[Self <: ExitCodeException] (val x: Self) extends AnyVal {
+  extension [Self <: ExitCodeException](x: Self) {
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
   }
 }

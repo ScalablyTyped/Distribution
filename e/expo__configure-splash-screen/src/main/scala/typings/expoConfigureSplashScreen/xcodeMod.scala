@@ -11,8 +11,7 @@ object xcodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addStoryboardFileToProject(
+  inline def addStoryboardFileToProject(
     pbxProject: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ js.Any,
     filePath: String,
     hasTargetGroup: Group

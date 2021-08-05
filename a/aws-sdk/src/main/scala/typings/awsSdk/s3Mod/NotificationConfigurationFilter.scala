@@ -10,19 +10,15 @@ trait NotificationConfigurationFilter extends StObject {
 }
 object NotificationConfigurationFilter {
   
-  @scala.inline
-  def apply(): NotificationConfigurationFilter = {
+  inline def apply(): NotificationConfigurationFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationConfigurationFilter]
   }
   
-  @scala.inline
-  implicit class NotificationConfigurationFilterMutableBuilder[Self <: NotificationConfigurationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationConfigurationFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: S3KeyFilter): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: S3KeyFilter): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ trait Applicative[F]
 }
 object Applicative {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     URI: F,
     ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any) => js.Any,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
@@ -24,10 +23,8 @@ object Applicative {
     __obj.asInstanceOf[Applicative[F]]
   }
   
-  @scala.inline
-  implicit class ApplicativeMutableBuilder[Self <: Applicative[?], F] (val x: Self & Applicative[F]) extends AnyVal {
+  extension [Self <: Applicative[?], F](x: Self & Applicative[F]) {
     
-    @scala.inline
-    def setOf(value: js.Any => js.Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: js.Any => js.Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
   }
 }

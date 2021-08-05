@@ -10,16 +10,13 @@ trait AuthSetting extends StObject {
 }
 object AuthSetting {
   
-  @scala.inline
-  def apply(authSetting: typings.baiduApp.swan.AuthSetting): AuthSetting = {
+  inline def apply(authSetting: typings.baiduApp.swan.AuthSetting): AuthSetting = {
     val __obj = js.Dynamic.literal(authSetting = authSetting.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthSetting]
   }
   
-  @scala.inline
-  implicit class AuthSettingMutableBuilder[Self <: AuthSetting] (val x: Self) extends AnyVal {
+  extension [Self <: AuthSetting](x: Self) {
     
-    @scala.inline
-    def setAuthSetting(value: typings.baiduApp.swan.AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
+    inline def setAuthSetting(value: typings.baiduApp.swan.AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
   }
 }

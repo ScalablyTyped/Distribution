@@ -23,43 +23,31 @@ trait XmlParams extends StObject {
 }
 object XmlParams {
   
-  @scala.inline
-  def apply(): XmlParams = {
+  inline def apply(): XmlParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XmlParams]
   }
   
-  @scala.inline
-  implicit class XmlParamsMutableBuilder[Self <: XmlParams] (val x: Self) extends AnyVal {
+  extension [Self <: XmlParams](x: Self) {
     
-    @scala.inline
-    def setAttribute_prefix(value: String): Self = StObject.set(x, "attribute_prefix", value.asInstanceOf[js.Any])
+    inline def setAttribute_prefix(value: String): Self = StObject.set(x, "attribute_prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttribute_prefixUndefined: Self = StObject.set(x, "attribute_prefix", js.undefined)
+    inline def setAttribute_prefixUndefined: Self = StObject.set(x, "attribute_prefix", js.undefined)
     
-    @scala.inline
-    def setDoc_tag(value: String): Self = StObject.set(x, "doc_tag", value.asInstanceOf[js.Any])
+    inline def setDoc_tag(value: String): Self = StObject.set(x, "doc_tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoc_tagUndefined: Self = StObject.set(x, "doc_tag", js.undefined)
+    inline def setDoc_tagUndefined: Self = StObject.set(x, "doc_tag", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setRoot_tag(value: String): Self = StObject.set(x, "root_tag", value.asInstanceOf[js.Any])
+    inline def setRoot_tag(value: String): Self = StObject.set(x, "root_tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot_tagUndefined: Self = StObject.set(x, "root_tag", js.undefined)
+    inline def setRoot_tagUndefined: Self = StObject.set(x, "root_tag", js.undefined)
     
-    @scala.inline
-    def setValue_tag(value: String): Self = StObject.set(x, "value_tag", value.asInstanceOf[js.Any])
+    inline def setValue_tag(value: String): Self = StObject.set(x, "value_tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue_tagUndefined: Self = StObject.set(x, "value_tag", js.undefined)
+    inline def setValue_tagUndefined: Self = StObject.set(x, "value_tag", js.undefined)
   }
 }

@@ -30,10 +30,8 @@ object downloaderMod {
       * @returns Promise<boolean> Resolves true = downloaded. Resolves false = not downloaded.
       *          Rejected with an error.
       */
-    @scala.inline
-    def getFile(binary: Binary, fileUrl: String, fileName: String, outputDir: String, contentLength: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(binary.asInstanceOf[js.Any], fileUrl.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], outputDir.asInstanceOf[js.Any], contentLength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def getFile(
+    inline def getFile(binary: Binary, fileUrl: String, fileName: String, outputDir: String, contentLength: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(binary.asInstanceOf[js.Any], fileUrl.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], outputDir.asInstanceOf[js.Any], contentLength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    inline def getFile(
       binary: Binary,
       fileUrl: String,
       fileName: String,

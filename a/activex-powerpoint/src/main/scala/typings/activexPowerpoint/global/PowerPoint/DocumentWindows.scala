@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DocumentWindows")
 @js.native
-class DocumentWindows protected ()
+/* private */ class DocumentWindows ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DocumentWindows

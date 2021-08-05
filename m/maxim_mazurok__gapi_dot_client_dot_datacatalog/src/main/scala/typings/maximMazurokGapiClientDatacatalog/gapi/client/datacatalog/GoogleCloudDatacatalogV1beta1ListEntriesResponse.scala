@@ -14,28 +14,21 @@ trait GoogleCloudDatacatalogV1beta1ListEntriesResponse extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1ListEntriesResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1ListEntriesResponse = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1ListEntriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1ListEntriesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ListEntriesResponseMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ListEntriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1ListEntriesResponse](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[GoogleCloudDatacatalogV1beta1Entry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[GoogleCloudDatacatalogV1beta1Entry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: GoogleCloudDatacatalogV1beta1Entry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: GoogleCloudDatacatalogV1beta1Entry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

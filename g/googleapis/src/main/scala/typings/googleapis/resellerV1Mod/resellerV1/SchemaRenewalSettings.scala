@@ -24,25 +24,19 @@ trait SchemaRenewalSettings extends StObject {
 }
 object SchemaRenewalSettings {
   
-  @scala.inline
-  def apply(): SchemaRenewalSettings = {
+  inline def apply(): SchemaRenewalSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRenewalSettings]
   }
   
-  @scala.inline
-  implicit class SchemaRenewalSettingsMutableBuilder[Self <: SchemaRenewalSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRenewalSettings](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRenewalType(value: String): Self = StObject.set(x, "renewalType", value.asInstanceOf[js.Any])
+    inline def setRenewalType(value: String): Self = StObject.set(x, "renewalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalTypeUndefined: Self = StObject.set(x, "renewalType", js.undefined)
+    inline def setRenewalTypeUndefined: Self = StObject.set(x, "renewalType", js.undefined)
   }
 }

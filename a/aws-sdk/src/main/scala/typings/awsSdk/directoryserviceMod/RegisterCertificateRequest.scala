@@ -18,19 +18,15 @@ trait RegisterCertificateRequest extends StObject {
 }
 object RegisterCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateData: CertificateData, DirectoryId: DirectoryId): RegisterCertificateRequest = {
+  inline def apply(CertificateData: CertificateData, DirectoryId: DirectoryId): RegisterCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateData = CertificateData.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCertificateRequest]
   }
   
-  @scala.inline
-  implicit class RegisterCertificateRequestMutableBuilder[Self <: RegisterCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateData(value: CertificateData): Self = StObject.set(x, "CertificateData", value.asInstanceOf[js.Any])
+    inline def setCertificateData(value: CertificateData): Self = StObject.set(x, "CertificateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

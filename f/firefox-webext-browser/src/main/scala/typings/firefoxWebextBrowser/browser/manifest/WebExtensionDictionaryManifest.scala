@@ -29,8 +29,7 @@ trait WebExtensionDictionaryManifest extends StObject {
 }
 object WebExtensionDictionaryManifest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dictionaries: WebExtensionDictionaryManifestDictionaries,
     manifest_version: Double,
     name: String,
@@ -40,55 +39,38 @@ object WebExtensionDictionaryManifest {
     __obj.asInstanceOf[WebExtensionDictionaryManifest]
   }
   
-  @scala.inline
-  implicit class WebExtensionDictionaryManifestMutableBuilder[Self <: WebExtensionDictionaryManifest] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionDictionaryManifest](x: Self) {
     
-    @scala.inline
-    def setApplications(value: WebExtensionDictionaryManifestApplications): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: WebExtensionDictionaryManifestApplications): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
+    inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setBrowser_specific_settings(value: WebExtensionDictionaryManifestBrowserSpecificSettings): Self = StObject.set(x, "browser_specific_settings", value.asInstanceOf[js.Any])
+    inline def setBrowser_specific_settings(value: WebExtensionDictionaryManifestBrowserSpecificSettings): Self = StObject.set(x, "browser_specific_settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser_specific_settingsUndefined: Self = StObject.set(x, "browser_specific_settings", js.undefined)
+    inline def setBrowser_specific_settingsUndefined: Self = StObject.set(x, "browser_specific_settings", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDictionaries(value: WebExtensionDictionaryManifestDictionaries): Self = StObject.set(x, "dictionaries", value.asInstanceOf[js.Any])
+    inline def setDictionaries(value: WebExtensionDictionaryManifestDictionaries): Self = StObject.set(x, "dictionaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomepage_url(value: String): Self = StObject.set(x, "homepage_url", value.asInstanceOf[js.Any])
+    inline def setHomepage_url(value: String): Self = StObject.set(x, "homepage_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomepage_urlUndefined: Self = StObject.set(x, "homepage_url", js.undefined)
+    inline def setHomepage_urlUndefined: Self = StObject.set(x, "homepage_url", js.undefined)
     
-    @scala.inline
-    def setManifest_version(value: Double): Self = StObject.set(x, "manifest_version", value.asInstanceOf[js.Any])
+    inline def setManifest_version(value: Double): Self = StObject.set(x, "manifest_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+    inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
+    inline def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

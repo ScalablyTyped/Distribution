@@ -18,19 +18,15 @@ trait KeyframeStyle extends StObject {
 }
 object KeyframeStyle {
   
-  @scala.inline
-  def apply(easing: String, offset: String): KeyframeStyle = {
+  inline def apply(easing: String, offset: String): KeyframeStyle = {
     val __obj = js.Dynamic.literal(easing = easing.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyframeStyle]
   }
   
-  @scala.inline
-  implicit class KeyframeStyleMutableBuilder[Self <: KeyframeStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KeyframeStyle](x: Self) {
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

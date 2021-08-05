@@ -51,31 +51,24 @@ trait ShowAsRule extends StObject {
 }
 object ShowAsRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
   ): ShowAsRule = {
     val __obj = js.Dynamic.literal(calculation = calculation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowAsRule]
   }
   
-  @scala.inline
-  implicit class ShowAsRuleMutableBuilder[Self <: ShowAsRule] (val x: Self) extends AnyVal {
+  extension [Self <: ShowAsRule](x: Self) {
     
-    @scala.inline
-    def setBaseField(value: PivotField): Self = StObject.set(x, "baseField", value.asInstanceOf[js.Any])
+    inline def setBaseField(value: PivotField): Self = StObject.set(x, "baseField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFieldUndefined: Self = StObject.set(x, "baseField", js.undefined)
+    inline def setBaseFieldUndefined: Self = StObject.set(x, "baseField", js.undefined)
     
-    @scala.inline
-    def setBaseItem(value: PivotItem): Self = StObject.set(x, "baseItem", value.asInstanceOf[js.Any])
+    inline def setBaseItem(value: PivotItem): Self = StObject.set(x, "baseItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseItemUndefined: Self = StObject.set(x, "baseItem", js.undefined)
+    inline def setBaseItemUndefined: Self = StObject.set(x, "baseItem", js.undefined)
     
-    @scala.inline
-    def setCalculation(
+    inline def setCalculation(
       value: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
     ): Self = StObject.set(x, "calculation", value.asInstanceOf[js.Any])
   }

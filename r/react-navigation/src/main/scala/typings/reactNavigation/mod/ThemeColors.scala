@@ -14,12 +14,10 @@ object ThemeColors {
   @JSImport("react-navigation", "ThemeColors.dark")
   @js.native
   def dark: Theme = js.native
-  @scala.inline
-  def dark_=(x: Theme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
+  inline def dark_=(x: Theme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
   
   @JSImport("react-navigation", "ThemeColors.light")
   @js.native
   def light: Theme = js.native
-  @scala.inline
-  def light_=(x: Theme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
+  inline def light_=(x: Theme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
 }

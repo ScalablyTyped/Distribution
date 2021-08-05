@@ -22,8 +22,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def open(path: String): js.Promise[TransportNodeHid] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransportNodeHid]]
+    inline def open(path: String): js.Promise[TransportNodeHid] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransportNodeHid]]
   }
   
   @js.native

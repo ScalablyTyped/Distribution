@@ -86,76 +86,53 @@ trait SchemaRoomParticipant extends StObject {
 }
 object SchemaRoomParticipant {
   
-  @scala.inline
-  def apply(): SchemaRoomParticipant = {
+  inline def apply(): SchemaRoomParticipant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoomParticipant]
   }
   
-  @scala.inline
-  implicit class SchemaRoomParticipantMutableBuilder[Self <: SchemaRoomParticipant] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoomParticipant](x: Self) {
     
-    @scala.inline
-    def setAutoMatched(value: Boolean): Self = StObject.set(x, "autoMatched", value.asInstanceOf[js.Any])
+    inline def setAutoMatched(value: Boolean): Self = StObject.set(x, "autoMatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMatchedPlayer(value: SchemaAnonymousPlayer): Self = StObject.set(x, "autoMatchedPlayer", value.asInstanceOf[js.Any])
+    inline def setAutoMatchedPlayer(value: SchemaAnonymousPlayer): Self = StObject.set(x, "autoMatchedPlayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMatchedPlayerUndefined: Self = StObject.set(x, "autoMatchedPlayer", js.undefined)
+    inline def setAutoMatchedPlayerUndefined: Self = StObject.set(x, "autoMatchedPlayer", js.undefined)
     
-    @scala.inline
-    def setAutoMatchedUndefined: Self = StObject.set(x, "autoMatched", js.undefined)
+    inline def setAutoMatchedUndefined: Self = StObject.set(x, "autoMatched", js.undefined)
     
-    @scala.inline
-    def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setClientAddress(value: SchemaRoomClientAddress): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
+    inline def setClientAddress(value: SchemaRoomClientAddress): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
+    inline def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
     
-    @scala.inline
-    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+    inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+    inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLeaveReason(value: String): Self = StObject.set(x, "leaveReason", value.asInstanceOf[js.Any])
+    inline def setLeaveReason(value: String): Self = StObject.set(x, "leaveReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveReasonUndefined: Self = StObject.set(x, "leaveReason", js.undefined)
+    inline def setLeaveReasonUndefined: Self = StObject.set(x, "leaveReason", js.undefined)
     
-    @scala.inline
-    def setPlayer(value: SchemaPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: SchemaPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
+    inline def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

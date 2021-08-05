@@ -29,45 +29,33 @@ trait DocumentTemplate extends StObject {
 }
 object DocumentTemplate {
   
-  @scala.inline
-  def apply(): DocumentTemplate = {
+  inline def apply(): DocumentTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentTemplate]
   }
   
-  @scala.inline
-  implicit class DocumentTemplateMutableBuilder[Self <: DocumentTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentTemplate](x: Self) {
     
-    @scala.inline
-    def setDocumentEndPage(value: String): Self = StObject.set(x, "documentEndPage", value.asInstanceOf[js.Any])
+    inline def setDocumentEndPage(value: String): Self = StObject.set(x, "documentEndPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentEndPageUndefined: Self = StObject.set(x, "documentEndPage", js.undefined)
+    inline def setDocumentEndPageUndefined: Self = StObject.set(x, "documentEndPage", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
-    @scala.inline
-    def setDocumentStartPage(value: String): Self = StObject.set(x, "documentStartPage", value.asInstanceOf[js.Any])
+    inline def setDocumentStartPage(value: String): Self = StObject.set(x, "documentStartPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentStartPageUndefined: Self = StObject.set(x, "documentStartPage", js.undefined)
+    inline def setDocumentStartPageUndefined: Self = StObject.set(x, "documentStartPage", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

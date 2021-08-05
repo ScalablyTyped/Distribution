@@ -43,61 +43,43 @@ trait Pattern extends StObject {
 }
 object Pattern {
   
-  @scala.inline
-  def apply(): Pattern = {
+  inline def apply(): Pattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pattern]
   }
   
-  @scala.inline
-  implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+  extension [Self <: Pattern](x: Self) {
     
-    @scala.inline
-    def setCountersToAggregate(value: Strings): Self = StObject.set(x, "countersToAggregate", value.asInstanceOf[js.Any])
+    inline def setCountersToAggregate(value: Strings): Self = StObject.set(x, "countersToAggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountersToAggregateUndefined: Self = StObject.set(x, "countersToAggregate", js.undefined)
+    inline def setCountersToAggregateUndefined: Self = StObject.set(x, "countersToAggregate", js.undefined)
     
-    @scala.inline
-    def setCountersToAggregateVarargs(value: String*): Self = StObject.set(x, "countersToAggregate", js.Array(value :_*))
+    inline def setCountersToAggregateVarargs(value: String*): Self = StObject.set(x, "countersToAggregate", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResolutionSteps(value: String): Self = StObject.set(x, "resolutionSteps", value.asInstanceOf[js.Any])
+    inline def setResolutionSteps(value: String): Self = StObject.set(x, "resolutionSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionStepsUndefined: Self = StObject.set(x, "resolutionSteps", js.undefined)
+    inline def setResolutionStepsUndefined: Self = StObject.set(x, "resolutionSteps", js.undefined)
     
-    @scala.inline
-    def setTargetFrames(value: TargetFrames): Self = StObject.set(x, "targetFrames", value.asInstanceOf[js.Any])
+    inline def setTargetFrames(value: TargetFrames): Self = StObject.set(x, "targetFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFramesUndefined: Self = StObject.set(x, "targetFrames", js.undefined)
+    inline def setTargetFramesUndefined: Self = StObject.set(x, "targetFrames", js.undefined)
     
-    @scala.inline
-    def setTargetFramesVarargs(value: TargetFrame*): Self = StObject.set(x, "targetFrames", js.Array(value :_*))
+    inline def setTargetFramesVarargs(value: TargetFrame*): Self = StObject.set(x, "targetFrames", js.Array(value :_*))
     
-    @scala.inline
-    def setThresholdPercent(value: Percentage): Self = StObject.set(x, "thresholdPercent", value.asInstanceOf[js.Any])
+    inline def setThresholdPercent(value: Percentage): Self = StObject.set(x, "thresholdPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdPercentUndefined: Self = StObject.set(x, "thresholdPercent", js.undefined)
+    inline def setThresholdPercentUndefined: Self = StObject.set(x, "thresholdPercent", js.undefined)
   }
 }

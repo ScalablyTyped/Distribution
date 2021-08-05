@@ -25,19 +25,19 @@ object stackedBarPlotMod {
   class StackedBar[X, Y] () extends Bar[X, Y] {
     def this(orientation: BarOrientation) = this()
     
-    var _extremaFormatter: js.Any = js.native
+    /* private */ var _extremaFormatter: js.Any = js.native
     
-    var _labelArea: js.Any = js.native
+    /* private */ var _labelArea: js.Any = js.native
     
-    var _measurer: js.Any = js.native
+    /* private */ var _measurer: js.Any = js.native
     
-    var _stackedExtent: js.Any = js.native
+    /* private */ var _stackedExtent: js.Any = js.native
     
-    var _stackingOrder: js.Any = js.native
+    /* private */ var _stackingOrder: js.Any = js.native
     
-    var _stackingResult: js.Any = js.native
+    /* private */ var _stackingResult: js.Any = js.native
     
-    var _writer: js.Any = js.native
+    /* private */ var _writer: js.Any = js.native
     
     /**
       * Gets the Formatter for the stacked bar extrema labels.
@@ -80,7 +80,6 @@ object stackedBarPlotMod {
     @JSImport("plottable/build/src/plots/stackedBarPlot", "StackedBar._EXTREMA_LABEL_MARGIN_FROM_BAR")
     @js.native
     def _EXTREMA_LABEL_MARGIN_FROM_BAR: Double = js.native
-    @scala.inline
-    def _EXTREMA_LABEL_MARGIN_FROM_BAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EXTREMA_LABEL_MARGIN_FROM_BAR")(x.asInstanceOf[js.Any])
+    inline def _EXTREMA_LABEL_MARGIN_FROM_BAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EXTREMA_LABEL_MARGIN_FROM_BAR")(x.asInstanceOf[js.Any])
   }
 }

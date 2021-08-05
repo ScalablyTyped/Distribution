@@ -14,10 +14,8 @@ object getDirectoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectoryResult]]
-  @scala.inline
-  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectoryResult]]
+  inline def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectoryResult]]
+  inline def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectoryResult]]
   
   trait GetDirectoryArgs extends StObject {
     
@@ -33,23 +31,18 @@ object getDirectoryMod {
   }
   object GetDirectoryArgs {
     
-    @scala.inline
-    def apply(directoryId: String): GetDirectoryArgs = {
+    inline def apply(directoryId: String): GetDirectoryArgs = {
       val __obj = js.Dynamic.literal(directoryId = directoryId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDirectoryArgs]
     }
     
-    @scala.inline
-    implicit class GetDirectoryArgsMutableBuilder[Self <: GetDirectoryArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectoryArgs](x: Self) {
       
-      @scala.inline
-      def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -128,8 +121,7 @@ object getDirectoryMod {
   }
   object GetDirectoryResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessUrl: String,
       alias: String,
       connectSettings: js.Array[GetDirectoryConnectSetting],
@@ -151,68 +143,47 @@ object getDirectoryMod {
       __obj.asInstanceOf[GetDirectoryResult]
     }
     
-    @scala.inline
-    implicit class GetDirectoryResultMutableBuilder[Self <: GetDirectoryResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectoryResult](x: Self) {
       
-      @scala.inline
-      def setAccessUrl(value: String): Self = StObject.set(x, "accessUrl", value.asInstanceOf[js.Any])
+      inline def setAccessUrl(value: String): Self = StObject.set(x, "accessUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectSettings(value: js.Array[GetDirectoryConnectSetting]): Self = StObject.set(x, "connectSettings", value.asInstanceOf[js.Any])
+      inline def setConnectSettings(value: js.Array[GetDirectoryConnectSetting]): Self = StObject.set(x, "connectSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectSettingsVarargs(value: GetDirectoryConnectSetting*): Self = StObject.set(x, "connectSettings", js.Array(value :_*))
+      inline def setConnectSettingsVarargs(value: GetDirectoryConnectSetting*): Self = StObject.set(x, "connectSettings", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "dnsIpAddresses", value.asInstanceOf[js.Any])
+      inline def setDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "dnsIpAddresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsIpAddressesVarargs(value: String*): Self = StObject.set(x, "dnsIpAddresses", js.Array(value :_*))
+      inline def setDnsIpAddressesVarargs(value: String*): Self = StObject.set(x, "dnsIpAddresses", js.Array(value :_*))
       
-      @scala.inline
-      def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
+      inline def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSso(value: Boolean): Self = StObject.set(x, "enableSso", value.asInstanceOf[js.Any])
+      inline def setEnableSso(value: Boolean): Self = StObject.set(x, "enableSso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupId(value: String): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: String): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSettings(value: js.Array[GetDirectoryVpcSetting]): Self = StObject.set(x, "vpcSettings", value.asInstanceOf[js.Any])
+      inline def setVpcSettings(value: js.Array[GetDirectoryVpcSetting]): Self = StObject.set(x, "vpcSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSettingsVarargs(value: GetDirectoryVpcSetting*): Self = StObject.set(x, "vpcSettings", js.Array(value :_*))
+      inline def setVpcSettingsVarargs(value: GetDirectoryVpcSetting*): Self = StObject.set(x, "vpcSettings", js.Array(value :_*))
     }
   }
 }

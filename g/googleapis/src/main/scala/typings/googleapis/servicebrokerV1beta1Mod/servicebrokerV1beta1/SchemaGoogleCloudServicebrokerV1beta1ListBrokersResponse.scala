@@ -25,28 +25,21 @@ trait SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse extends StObject 
 }
 object SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponseMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse](x: Self) {
     
-    @scala.inline
-    def setBrokers(value: js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
+    inline def setBrokers(value: js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokersUndefined: Self = StObject.set(x, "brokers", js.undefined)
+    inline def setBrokersUndefined: Self = StObject.set(x, "brokers", js.undefined)
     
-    @scala.inline
-    def setBrokersVarargs(value: SchemaGoogleCloudServicebrokerV1beta1Broker*): Self = StObject.set(x, "brokers", js.Array(value :_*))
+    inline def setBrokersVarargs(value: SchemaGoogleCloudServicebrokerV1beta1Broker*): Self = StObject.set(x, "brokers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait ImageButton extends StObject {
 }
 object ImageButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setAltText: String => ImageButton,
     setAuthorizationAction: AuthorizationAction => ImageButton,
     setComposeAction: (Action, ComposedEmailType) => ImageButton,
@@ -48,31 +47,22 @@ object ImageButton {
     __obj.asInstanceOf[ImageButton]
   }
   
-  @scala.inline
-  implicit class ImageButtonMutableBuilder[Self <: ImageButton] (val x: Self) extends AnyVal {
+  extension [Self <: ImageButton](x: Self) {
     
-    @scala.inline
-    def setSetAltText(value: String => ImageButton): Self = StObject.set(x, "setAltText", js.Any.fromFunction1(value))
+    inline def setSetAltText(value: String => ImageButton): Self = StObject.set(x, "setAltText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAuthorizationAction(value: AuthorizationAction => ImageButton): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
+    inline def setSetAuthorizationAction(value: AuthorizationAction => ImageButton): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetComposeAction(value: (Action, ComposedEmailType) => ImageButton): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
+    inline def setSetComposeAction(value: (Action, ComposedEmailType) => ImageButton): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetIcon(value: Icon => ImageButton): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: Icon => ImageButton): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIconUrl(value: String => ImageButton): Self = StObject.set(x, "setIconUrl", js.Any.fromFunction1(value))
+    inline def setSetIconUrl(value: String => ImageButton): Self = StObject.set(x, "setIconUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnClickAction(value: Action => ImageButton): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickAction(value: Action => ImageButton): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnClickOpenLinkAction(value: Action => ImageButton): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickOpenLinkAction(value: Action => ImageButton): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => ImageButton): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    inline def setSetOpenLink(value: OpenLink => ImageButton): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
   }
 }

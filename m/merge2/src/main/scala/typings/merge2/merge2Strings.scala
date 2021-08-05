@@ -8,6 +8,5 @@ object merge2Strings {
   
   @js.native
   sealed trait queueDrain extends StObject
-  @scala.inline
-  def queueDrain: queueDrain = "queueDrain".asInstanceOf[queueDrain]
+  inline def queueDrain: queueDrain = "queueDrain".asInstanceOf[queueDrain]
 }

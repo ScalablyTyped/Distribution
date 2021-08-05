@@ -18,8 +18,7 @@ trait ModuleAcceleratorConfiguration
 }
 object ModuleAcceleratorConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllKeyEvents: SafeArray[KeyEvent],
     acquire: () => Unit,
     addConfigurationListener: XUIConfigurationListener => Unit,
@@ -46,10 +45,8 @@ object ModuleAcceleratorConfiguration {
     __obj.asInstanceOf[ModuleAcceleratorConfiguration]
   }
   
-  @scala.inline
-  implicit class ModuleAcceleratorConfigurationMutableBuilder[Self <: ModuleAcceleratorConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleAcceleratorConfiguration](x: Self) {
     
-    @scala.inline
-    def setCreateWithModuleIdentifier(value: String => Unit): Self = StObject.set(x, "createWithModuleIdentifier", js.Any.fromFunction1(value))
+    inline def setCreateWithModuleIdentifier(value: String => Unit): Self = StObject.set(x, "createWithModuleIdentifier", js.Any.fromFunction1(value))
   }
 }

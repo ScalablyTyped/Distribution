@@ -15,10 +15,8 @@ object CipherID {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AES_CBC_W3C_PADDING: `1` = 1.asInstanceOf[`1`]
+    inline def AES_CBC_W3C_PADDING: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def BLOWFISH_CFB_8: `2` = 2.asInstanceOf[`2`]
+    inline def BLOWFISH_CFB_8: `2` = 2.asInstanceOf[`2`]
   }
 }

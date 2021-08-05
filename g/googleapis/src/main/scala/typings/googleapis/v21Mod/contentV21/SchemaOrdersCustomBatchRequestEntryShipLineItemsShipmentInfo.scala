@@ -25,31 +25,23 @@ trait SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends StObj
 }
 object SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo {
   
-  @scala.inline
-  def apply(): SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo = {
+  inline def apply(): SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfoMutableBuilder[Self <: SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo](x: Self) {
     
-    @scala.inline
-    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
+    inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
-    @scala.inline
-    def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
+    inline def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
+    inline def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
     
-    @scala.inline
-    def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
+    inline def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
+    inline def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
   }
 }

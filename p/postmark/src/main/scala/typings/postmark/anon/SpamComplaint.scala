@@ -12,19 +12,15 @@ trait SpamComplaint extends StObject {
 }
 object SpamComplaint {
   
-  @scala.inline
-  def apply(Date: String, SpamComplaint: Double): SpamComplaint = {
+  inline def apply(Date: String, SpamComplaint: Double): SpamComplaint = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], SpamComplaint = SpamComplaint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpamComplaint]
   }
   
-  @scala.inline
-  implicit class SpamComplaintMutableBuilder[Self <: SpamComplaint] (val x: Self) extends AnyVal {
+  extension [Self <: SpamComplaint](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpamComplaint(value: Double): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
+    inline def setSpamComplaint(value: Double): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
   }
 }

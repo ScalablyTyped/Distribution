@@ -14,16 +14,13 @@ trait Options
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal(version = "v3_3")
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setVersion(value: v3_3): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: v3_3): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

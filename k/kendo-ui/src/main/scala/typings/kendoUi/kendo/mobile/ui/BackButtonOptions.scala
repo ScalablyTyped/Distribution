@@ -12,25 +12,19 @@ trait BackButtonOptions extends StObject {
 }
 object BackButtonOptions {
   
-  @scala.inline
-  def apply(): BackButtonOptions = {
+  inline def apply(): BackButtonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackButtonOptions]
   }
   
-  @scala.inline
-  implicit class BackButtonOptionsMutableBuilder[Self <: BackButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BackButtonOptions](x: Self) {
     
-    @scala.inline
-    def setClick(value: /* e */ BackButtonClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: /* e */ BackButtonClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

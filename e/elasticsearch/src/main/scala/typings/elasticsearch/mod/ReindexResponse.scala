@@ -19,8 +19,7 @@ trait ReindexResponse
 }
 object ReindexResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batches: Double,
     deleted: Double,
     failures: js.Array[js.Any],
@@ -39,28 +38,20 @@ object ReindexResponse {
     __obj.asInstanceOf[ReindexResponse]
   }
   
-  @scala.inline
-  implicit class ReindexResponseMutableBuilder[Self <: ReindexResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReindexResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: js.Array[js.Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: js.Array[js.Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresVarargs(value: js.Any*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: js.Any*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setSlices(value: js.Array[ReindexOrByQueryResponseSlice]): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
+    inline def setSlices(value: js.Array[ReindexOrByQueryResponseSlice]): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
+    inline def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     
-    @scala.inline
-    def setSlicesVarargs(value: ReindexOrByQueryResponseSlice*): Self = StObject.set(x, "slices", js.Array(value :_*))
+    inline def setSlicesVarargs(value: ReindexOrByQueryResponseSlice*): Self = StObject.set(x, "slices", js.Array(value :_*))
     
-    @scala.inline
-    def setTimed_out(value: Boolean): Self = StObject.set(x, "timed_out", value.asInstanceOf[js.Any])
+    inline def setTimed_out(value: Boolean): Self = StObject.set(x, "timed_out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTook(value: Double): Self = StObject.set(x, "took", value.asInstanceOf[js.Any])
+    inline def setTook(value: Double): Self = StObject.set(x, "took", value.asInstanceOf[js.Any])
   }
 }

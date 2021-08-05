@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PullSymbol extends StObject {
   
-  var _container: js.Any = js.native
+  /* private */ var _container: js.Any = js.native
   
-  var _declarations: js.Any = js.native
+  /* private */ var _declarations: js.Any = js.native
   
-  var _docComments: js.Any = js.native
+  /* private */ var _docComments: js.Any = js.native
   
-  var _enclosingSignature: js.Any = js.native
+  /* private */ var _enclosingSignature: js.Any = js.native
   
   def _getResolver(): PullTypeResolver = js.native
   
@@ -222,7 +222,7 @@ trait PullSymbol extends StObject {
   
   /* private */ def isSpaceChar(line: js.Any, index: js.Any): js.Any = js.native
   
-  var isSynthesized: js.Any = js.native
+  /* private */ var isSynthesized: js.Any = js.native
   
   def isType(): Boolean = js.native
   
@@ -238,7 +238,7 @@ trait PullSymbol extends StObject {
   
   var pullSymbolID: Double = js.native
   
-  var rootSymbol: js.Any = js.native
+  /* private */ var rootSymbol: js.Any = js.native
   
   def setContainer(containerSymbol: PullTypeSymbol): Unit = js.native
   

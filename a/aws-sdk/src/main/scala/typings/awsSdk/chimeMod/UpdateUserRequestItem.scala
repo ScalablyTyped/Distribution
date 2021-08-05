@@ -28,34 +28,25 @@ trait UpdateUserRequestItem extends StObject {
 }
 object UpdateUserRequestItem {
   
-  @scala.inline
-  def apply(UserId: NonEmptyString): UpdateUserRequestItem = {
+  inline def apply(UserId: NonEmptyString): UpdateUserRequestItem = {
     val __obj = js.Dynamic.literal(UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserRequestItem]
   }
   
-  @scala.inline
-  implicit class UpdateUserRequestItemMutableBuilder[Self <: UpdateUserRequestItem] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserRequestItem](x: Self) {
     
-    @scala.inline
-    def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = StObject.set(x, "AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
+    inline def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = StObject.set(x, "AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlexaForBusinessMetadataUndefined: Self = StObject.set(x, "AlexaForBusinessMetadata", js.undefined)
+    inline def setAlexaForBusinessMetadataUndefined: Self = StObject.set(x, "AlexaForBusinessMetadata", js.undefined)
     
-    @scala.inline
-    def setLicenseType(value: License): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
+    inline def setLicenseType(value: License): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseTypeUndefined: Self = StObject.set(x, "LicenseType", js.undefined)
+    inline def setLicenseTypeUndefined: Self = StObject.set(x, "LicenseType", js.undefined)
     
-    @scala.inline
-    def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserType(value: UserType): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
+    inline def setUserType(value: UserType): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
+    inline def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
   }
 }

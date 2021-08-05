@@ -12,19 +12,15 @@ trait Model extends StObject {
 }
 object Model {
   
-  @scala.inline
-  def apply(model: js.Any, schema: typings.nextAuth.adaptersMod.Schema[js.Any]): Model = {
+  inline def apply(model: js.Any, schema: typings.nextAuth.adaptersMod.Schema[js.Any]): Model = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
   
-  @scala.inline
-  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+  extension [Self <: Model](x: Self) {
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: typings.nextAuth.adaptersMod.Schema[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: typings.nextAuth.adaptersMod.Schema[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

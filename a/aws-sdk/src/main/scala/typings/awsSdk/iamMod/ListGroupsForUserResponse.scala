@@ -23,31 +23,23 @@ trait ListGroupsForUserResponse extends StObject {
 }
 object ListGroupsForUserResponse {
   
-  @scala.inline
-  def apply(Groups: groupListType): ListGroupsForUserResponse = {
+  inline def apply(Groups: groupListType): ListGroupsForUserResponse = {
     val __obj = js.Dynamic.literal(Groups = Groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupsForUserResponse]
   }
   
-  @scala.inline
-  implicit class ListGroupsForUserResponseMutableBuilder[Self <: ListGroupsForUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroupsForUserResponse](x: Self) {
     
-    @scala.inline
-    def setGroups(value: groupListType): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: groupListType): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

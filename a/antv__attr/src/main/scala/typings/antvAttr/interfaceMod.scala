@@ -28,47 +28,34 @@ object interfaceMod {
   }
   object AttributeCfg {
     
-    @scala.inline
-    def apply(scales: js.Array[typings.antvScale.mod.Scale]): AttributeCfg = {
+    inline def apply(scales: js.Array[typings.antvScale.mod.Scale]): AttributeCfg = {
       val __obj = js.Dynamic.literal(scales = scales.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeCfg]
     }
     
-    @scala.inline
-    implicit class AttributeCfgMutableBuilder[Self <: AttributeCfg] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeCfg](x: Self) {
       
-      @scala.inline
-      def setCallback(value: CallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: CallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+      inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setScales(value: js.Array[typings.antvScale.mod.Scale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+      inline def setScales(value: js.Array[typings.antvScale.mod.Scale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalesVarargs(value: typings.antvScale.mod.Scale*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: typings.antvScale.mod.Scale*): Self = StObject.set(x, "scales", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   

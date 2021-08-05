@@ -18,25 +18,19 @@ trait UnsuccessfulItem extends StObject {
 }
 object UnsuccessfulItem {
   
-  @scala.inline
-  def apply(): UnsuccessfulItem = {
+  inline def apply(): UnsuccessfulItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnsuccessfulItem]
   }
   
-  @scala.inline
-  implicit class UnsuccessfulItemMutableBuilder[Self <: UnsuccessfulItem] (val x: Self) extends AnyVal {
+  extension [Self <: UnsuccessfulItem](x: Self) {
     
-    @scala.inline
-    def setError(value: UnsuccessfulItemError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: UnsuccessfulItemError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
   }
 }

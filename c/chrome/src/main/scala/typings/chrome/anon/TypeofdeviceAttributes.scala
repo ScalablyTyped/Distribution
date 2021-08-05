@@ -16,8 +16,7 @@ trait TypeofdeviceAttributes extends StObject {
 }
 object TypeofdeviceAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeviceAnnotatedLocation: js.Function1[/* annotatedLocation */ String, Unit] => Unit,
     getDeviceAssetId: js.Function1[/* assetId */ String, Unit] => Unit,
     getDeviceSerialNumber: js.Function1[/* serialNumber */ String, Unit] => Unit,
@@ -27,19 +26,14 @@ object TypeofdeviceAttributes {
     __obj.asInstanceOf[TypeofdeviceAttributes]
   }
   
-  @scala.inline
-  implicit class TypeofdeviceAttributesMutableBuilder[Self <: TypeofdeviceAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofdeviceAttributes](x: Self) {
     
-    @scala.inline
-    def setGetDeviceAnnotatedLocation(value: js.Function1[/* annotatedLocation */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceAnnotatedLocation", js.Any.fromFunction1(value))
+    inline def setGetDeviceAnnotatedLocation(value: js.Function1[/* annotatedLocation */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceAnnotatedLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDeviceAssetId(value: js.Function1[/* assetId */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceAssetId", js.Any.fromFunction1(value))
+    inline def setGetDeviceAssetId(value: js.Function1[/* assetId */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceAssetId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDeviceSerialNumber(value: js.Function1[/* serialNumber */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceSerialNumber", js.Any.fromFunction1(value))
+    inline def setGetDeviceSerialNumber(value: js.Function1[/* serialNumber */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceSerialNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDirectoryDeviceId(value: js.Function1[/* deviceId */ String, Unit] => Unit): Self = StObject.set(x, "getDirectoryDeviceId", js.Any.fromFunction1(value))
+    inline def setGetDirectoryDeviceId(value: js.Function1[/* deviceId */ String, Unit] => Unit): Self = StObject.set(x, "getDirectoryDeviceId", js.Any.fromFunction1(value))
   }
 }

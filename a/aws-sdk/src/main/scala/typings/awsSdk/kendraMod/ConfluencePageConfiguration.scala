@@ -13,22 +13,17 @@ trait ConfluencePageConfiguration extends StObject {
 }
 object ConfluencePageConfiguration {
   
-  @scala.inline
-  def apply(): ConfluencePageConfiguration = {
+  inline def apply(): ConfluencePageConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfluencePageConfiguration]
   }
   
-  @scala.inline
-  implicit class ConfluencePageConfigurationMutableBuilder[Self <: ConfluencePageConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConfluencePageConfiguration](x: Self) {
     
-    @scala.inline
-    def setPageFieldMappings(value: ConfluencePageFieldMappingsList): Self = StObject.set(x, "PageFieldMappings", value.asInstanceOf[js.Any])
+    inline def setPageFieldMappings(value: ConfluencePageFieldMappingsList): Self = StObject.set(x, "PageFieldMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFieldMappingsUndefined: Self = StObject.set(x, "PageFieldMappings", js.undefined)
+    inline def setPageFieldMappingsUndefined: Self = StObject.set(x, "PageFieldMappings", js.undefined)
     
-    @scala.inline
-    def setPageFieldMappingsVarargs(value: ConfluencePageToIndexFieldMapping*): Self = StObject.set(x, "PageFieldMappings", js.Array(value :_*))
+    inline def setPageFieldMappingsVarargs(value: ConfluencePageToIndexFieldMapping*): Self = StObject.set(x, "PageFieldMappings", js.Array(value :_*))
   }
 }

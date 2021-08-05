@@ -20,31 +20,23 @@ trait GrantPermissionsRequest extends StObject {
 }
 object GrantPermissionsRequest {
   
-  @scala.inline
-  def apply(permissions: js.Array[PermissionType]): GrantPermissionsRequest = {
+  inline def apply(permissions: js.Array[PermissionType]): GrantPermissionsRequest = {
     val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class GrantPermissionsRequestMutableBuilder[Self <: GrantPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GrantPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
+    inline def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: js.Array[PermissionType]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[PermissionType]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsVarargs(value: PermissionType*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: PermissionType*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

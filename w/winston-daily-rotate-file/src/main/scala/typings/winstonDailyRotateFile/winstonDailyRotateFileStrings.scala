@@ -8,11 +8,9 @@ object winstonDailyRotateFileStrings {
   
   @js.native
   sealed trait filename extends StObject
-  @scala.inline
-  def filename: filename = "filename".asInstanceOf[filename]
+  inline def filename: filename = "filename".asInstanceOf[filename]
   
   @js.native
   sealed trait stream extends StObject
-  @scala.inline
-  def stream: stream = "stream".asInstanceOf[stream]
+  inline def stream: stream = "stream".asInstanceOf[stream]
 }

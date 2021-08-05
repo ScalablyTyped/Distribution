@@ -18,8 +18,7 @@ trait EmitHelper extends StObject {
 }
 object EmitHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: java.lang.String,
     scoped: Boolean,
     text: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String])
@@ -28,36 +27,26 @@ object EmitHelper {
     __obj.asInstanceOf[EmitHelper]
   }
   
-  @scala.inline
-  implicit class EmitHelperMutableBuilder[Self <: EmitHelper] (val x: Self) extends AnyVal {
+  extension [Self <: EmitHelper](x: Self) {
     
-    @scala.inline
-    def setDependencies(value: js.Array[EmitHelper]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: js.Array[EmitHelper]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    @scala.inline
-    def setDependenciesVarargs(value: EmitHelper*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: EmitHelper*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(
+    inline def setText(
       value: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String])
     ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFunction1(value: /* node */ EmitHelperUniqueNameCallback => java.lang.String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setTextFunction1(value: /* node */ EmitHelperUniqueNameCallback => java.lang.String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

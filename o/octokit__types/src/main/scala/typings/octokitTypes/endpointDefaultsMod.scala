@@ -30,32 +30,24 @@ object endpointDefaultsMod {
   }
   object EndpointDefaults {
     
-    @scala.inline
-    def apply(baseUrl: Url, headers: RequestHeadersacceptstrin, mediaType: Format, method: RequestMethod): EndpointDefaults = {
+    inline def apply(baseUrl: Url, headers: RequestHeadersacceptstrin, mediaType: Format, method: RequestMethod): EndpointDefaults = {
       val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointDefaults]
     }
     
-    @scala.inline
-    implicit class EndpointDefaultsMutableBuilder[Self <: EndpointDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointDefaults](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: Url): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: Url): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: RequestHeadersacceptstrin): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: RequestHeadersacceptstrin): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaType(value: Format): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: Format): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

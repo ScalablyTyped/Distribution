@@ -20,28 +20,21 @@ trait CatThreadPoolParams
 }
 object CatThreadPoolParams {
   
-  @scala.inline
-  def apply(format: String): CatThreadPoolParams = {
+  inline def apply(format: String): CatThreadPoolParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatThreadPoolParams]
   }
   
-  @scala.inline
-  implicit class CatThreadPoolParamsMutableBuilder[Self <: CatThreadPoolParams] (val x: Self) extends AnyVal {
+  extension [Self <: CatThreadPoolParams](x: Self) {
     
-    @scala.inline
-    def setSize(value: _empty | k | m | g | t | p): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: _empty | k | m | g | t | p): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setThreadPoolPatterns(value: NameList): Self = StObject.set(x, "threadPoolPatterns", value.asInstanceOf[js.Any])
+    inline def setThreadPoolPatterns(value: NameList): Self = StObject.set(x, "threadPoolPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadPoolPatternsUndefined: Self = StObject.set(x, "threadPoolPatterns", js.undefined)
+    inline def setThreadPoolPatternsUndefined: Self = StObject.set(x, "threadPoolPatterns", js.undefined)
     
-    @scala.inline
-    def setThreadPoolPatternsVarargs(value: String*): Self = StObject.set(x, "threadPoolPatterns", js.Array(value :_*))
+    inline def setThreadPoolPatternsVarargs(value: String*): Self = StObject.set(x, "threadPoolPatterns", js.Array(value :_*))
   }
 }

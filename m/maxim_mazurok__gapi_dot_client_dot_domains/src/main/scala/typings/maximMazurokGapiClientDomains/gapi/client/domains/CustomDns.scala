@@ -14,31 +14,23 @@ trait CustomDns extends StObject {
 }
 object CustomDns {
   
-  @scala.inline
-  def apply(): CustomDns = {
+  inline def apply(): CustomDns = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomDns]
   }
   
-  @scala.inline
-  implicit class CustomDnsMutableBuilder[Self <: CustomDns] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDns](x: Self) {
     
-    @scala.inline
-    def setDsRecords(value: js.Array[DsRecord]): Self = StObject.set(x, "dsRecords", value.asInstanceOf[js.Any])
+    inline def setDsRecords(value: js.Array[DsRecord]): Self = StObject.set(x, "dsRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsRecordsUndefined: Self = StObject.set(x, "dsRecords", js.undefined)
+    inline def setDsRecordsUndefined: Self = StObject.set(x, "dsRecords", js.undefined)
     
-    @scala.inline
-    def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value :_*))
+    inline def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+    inline def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
+    inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
     
-    @scala.inline
-    def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
   }
 }

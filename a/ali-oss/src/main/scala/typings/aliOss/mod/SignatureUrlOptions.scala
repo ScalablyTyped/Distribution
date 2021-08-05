@@ -24,49 +24,35 @@ trait SignatureUrlOptions extends StObject {
 }
 object SignatureUrlOptions {
   
-  @scala.inline
-  def apply(): SignatureUrlOptions = {
+  inline def apply(): SignatureUrlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignatureUrlOptions]
   }
   
-  @scala.inline
-  implicit class SignatureUrlOptionsMutableBuilder[Self <: SignatureUrlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureUrlOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
+    inline def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
+    inline def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
     
-    @scala.inline
-    def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setMethod(value: HTTPMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: HTTPMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     
-    @scala.inline
-    def setResponse(value: ResponseHeaderType): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: ResponseHeaderType): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

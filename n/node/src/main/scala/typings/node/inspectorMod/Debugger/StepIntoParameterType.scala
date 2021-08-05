@@ -14,19 +14,15 @@ trait StepIntoParameterType extends StObject {
 }
 object StepIntoParameterType {
   
-  @scala.inline
-  def apply(): StepIntoParameterType = {
+  inline def apply(): StepIntoParameterType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StepIntoParameterType]
   }
   
-  @scala.inline
-  implicit class StepIntoParameterTypeMutableBuilder[Self <: StepIntoParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: StepIntoParameterType](x: Self) {
     
-    @scala.inline
-    def setBreakOnAsyncCall(value: Boolean): Self = StObject.set(x, "breakOnAsyncCall", value.asInstanceOf[js.Any])
+    inline def setBreakOnAsyncCall(value: Boolean): Self = StObject.set(x, "breakOnAsyncCall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakOnAsyncCallUndefined: Self = StObject.set(x, "breakOnAsyncCall", js.undefined)
+    inline def setBreakOnAsyncCallUndefined: Self = StObject.set(x, "breakOnAsyncCall", js.undefined)
   }
 }

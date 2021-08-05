@@ -23,19 +23,15 @@ trait PlusRuntimeWidgetOptions extends StObject {
 }
 object PlusRuntimeWidgetOptions {
   
-  @scala.inline
-  def apply(): PlusRuntimeWidgetOptions = {
+  inline def apply(): PlusRuntimeWidgetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusRuntimeWidgetOptions]
   }
   
-  @scala.inline
-  implicit class PlusRuntimeWidgetOptionsMutableBuilder[Self <: PlusRuntimeWidgetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusRuntimeWidgetOptions](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

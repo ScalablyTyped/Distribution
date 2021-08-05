@@ -18,28 +18,21 @@ trait PendingMaintenanceActionsMessage extends StObject {
 }
 object PendingMaintenanceActionsMessage {
   
-  @scala.inline
-  def apply(): PendingMaintenanceActionsMessage = {
+  inline def apply(): PendingMaintenanceActionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingMaintenanceActionsMessage]
   }
   
-  @scala.inline
-  implicit class PendingMaintenanceActionsMessageMutableBuilder[Self <: PendingMaintenanceActionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PendingMaintenanceActionsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPendingMaintenanceActions(value: PendingMaintenanceActions): Self = StObject.set(x, "PendingMaintenanceActions", value.asInstanceOf[js.Any])
+    inline def setPendingMaintenanceActions(value: PendingMaintenanceActions): Self = StObject.set(x, "PendingMaintenanceActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingMaintenanceActionsUndefined: Self = StObject.set(x, "PendingMaintenanceActions", js.undefined)
+    inline def setPendingMaintenanceActionsUndefined: Self = StObject.set(x, "PendingMaintenanceActions", js.undefined)
     
-    @scala.inline
-    def setPendingMaintenanceActionsVarargs(value: ResourcePendingMaintenanceActions*): Self = StObject.set(x, "PendingMaintenanceActions", js.Array(value :_*))
+    inline def setPendingMaintenanceActionsVarargs(value: ResourcePendingMaintenanceActions*): Self = StObject.set(x, "PendingMaintenanceActions", js.Array(value :_*))
   }
 }

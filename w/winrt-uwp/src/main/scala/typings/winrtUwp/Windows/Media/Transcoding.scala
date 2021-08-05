@@ -159,8 +159,7 @@ object Transcoding {
   }
   object PrepareTranscodeResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canTranscode: Boolean,
       failureReason: TranscodeFailureReason,
       transcodeAsync: () => IPromiseWithIAsyncActionWithProgress[Double]
@@ -169,17 +168,13 @@ object Transcoding {
       __obj.asInstanceOf[PrepareTranscodeResult]
     }
     
-    @scala.inline
-    implicit class PrepareTranscodeResultMutableBuilder[Self <: PrepareTranscodeResult] (val x: Self) extends AnyVal {
+    extension [Self <: PrepareTranscodeResult](x: Self) {
       
-      @scala.inline
-      def setCanTranscode(value: Boolean): Self = StObject.set(x, "canTranscode", value.asInstanceOf[js.Any])
+      inline def setCanTranscode(value: Boolean): Self = StObject.set(x, "canTranscode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureReason(value: TranscodeFailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+      inline def setFailureReason(value: TranscodeFailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeAsync(value: () => IPromiseWithIAsyncActionWithProgress[Double]): Self = StObject.set(x, "transcodeAsync", js.Any.fromFunction0(value))
+      inline def setTranscodeAsync(value: () => IPromiseWithIAsyncActionWithProgress[Double]): Self = StObject.set(x, "transcodeAsync", js.Any.fromFunction0(value))
     }
   }
 }

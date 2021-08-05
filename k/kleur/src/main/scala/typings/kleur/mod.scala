@@ -12,357 +12,252 @@ object mod {
   val ^ : js.Any = js.native
   
   // Backgrounds
-  @scala.inline
-  def bgBlack(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")().asInstanceOf[Kleur]
+  inline def bgBlack(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")().asInstanceOf[Kleur]
   // Backgrounds
-  @scala.inline
-  def bgBlack(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgBlack(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgBlack(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgBlack(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlack")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   // Backgrounds
   @JSImport("kleur", "bgBlack")
   @js.native
   def bgBlack_Fmod: Color = js.native
   
-  @scala.inline
-  def bgBlack_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgBlack")(x.asInstanceOf[js.Any])
+  inline def bgBlack_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgBlack")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bgBlue(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")().asInstanceOf[Kleur]
-  @scala.inline
-  def bgBlue(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgBlue(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgBlue(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")().asInstanceOf[Kleur]
+  inline def bgBlue(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgBlue(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgBlue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bgBlue")
   @js.native
   def bgBlue_Fmod: Color = js.native
   
-  @scala.inline
-  def bgBlue_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgBlue")(x.asInstanceOf[js.Any])
+  inline def bgBlue_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgBlue")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bgCyan(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")().asInstanceOf[Kleur]
-  @scala.inline
-  def bgCyan(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgCyan(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgCyan(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")().asInstanceOf[Kleur]
+  inline def bgCyan(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgCyan(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgCyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bgCyan")
   @js.native
   def bgCyan_Fmod: Color = js.native
   
-  @scala.inline
-  def bgCyan_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgCyan")(x.asInstanceOf[js.Any])
+  inline def bgCyan_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgCyan")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bgGreen(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")().asInstanceOf[Kleur]
-  @scala.inline
-  def bgGreen(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgGreen(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgGreen(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")().asInstanceOf[Kleur]
+  inline def bgGreen(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgGreen(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgGreen")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bgGreen")
   @js.native
   def bgGreen_Fmod: Color = js.native
   
-  @scala.inline
-  def bgGreen_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgGreen")(x.asInstanceOf[js.Any])
+  inline def bgGreen_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgGreen")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bgMagenta(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")().asInstanceOf[Kleur]
-  @scala.inline
-  def bgMagenta(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgMagenta(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgMagenta(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")().asInstanceOf[Kleur]
+  inline def bgMagenta(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgMagenta(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgMagenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bgMagenta")
   @js.native
   def bgMagenta_Fmod: Color = js.native
   
-  @scala.inline
-  def bgMagenta_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgMagenta")(x.asInstanceOf[js.Any])
+  inline def bgMagenta_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgMagenta")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bgRed(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")().asInstanceOf[Kleur]
-  @scala.inline
-  def bgRed(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgRed(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgRed(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")().asInstanceOf[Kleur]
+  inline def bgRed(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgRed(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgRed")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bgRed")
   @js.native
   def bgRed_Fmod: Color = js.native
   
-  @scala.inline
-  def bgRed_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgRed")(x.asInstanceOf[js.Any])
+  inline def bgRed_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgRed")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bgWhite(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")().asInstanceOf[Kleur]
-  @scala.inline
-  def bgWhite(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgWhite(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgWhite(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")().asInstanceOf[Kleur]
+  inline def bgWhite(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgWhite(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgWhite")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bgWhite")
   @js.native
   def bgWhite_Fmod: Color = js.native
   
-  @scala.inline
-  def bgWhite_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgWhite")(x.asInstanceOf[js.Any])
+  inline def bgWhite_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgWhite")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bgYellow(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")().asInstanceOf[Kleur]
-  @scala.inline
-  def bgYellow(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bgYellow(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgYellow(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")().asInstanceOf[Kleur]
+  inline def bgYellow(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bgYellow(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bgYellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bgYellow")
   @js.native
   def bgYellow_Fmod: Color = js.native
   
-  @scala.inline
-  def bgYellow_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgYellow")(x.asInstanceOf[js.Any])
+  inline def bgYellow_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgYellow")(x.asInstanceOf[js.Any])
   
   // Colors
-  @scala.inline
-  def black(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("black")().asInstanceOf[Kleur]
+  inline def black(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("black")().asInstanceOf[Kleur]
   // Colors
-  @scala.inline
-  def black(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("black")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def black(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("black")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def black(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("black")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def black(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("black")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   // Colors
   @JSImport("kleur", "black")
   @js.native
   def black_Fmod: Color = js.native
   
-  @scala.inline
-  def black_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
+  inline def black_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def blue(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")().asInstanceOf[Kleur]
-  @scala.inline
-  def blue(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def blue(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def blue(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")().asInstanceOf[Kleur]
+  inline def blue(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def blue(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("blue")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "blue")
   @js.native
   def blue_Fmod: Color = js.native
   
-  @scala.inline
-  def blue_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
+  inline def blue_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bold(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bold")().asInstanceOf[Kleur]
-  @scala.inline
-  def bold(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bold")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def bold(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bold")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bold(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("bold")().asInstanceOf[Kleur]
+  inline def bold(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bold")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bold(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bold")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "bold")
   @js.native
   def bold_Fmod: Color = js.native
   
-  @scala.inline
-  def bold_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bold")(x.asInstanceOf[js.Any])
+  inline def bold_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bold")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def cyan(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")().asInstanceOf[Kleur]
-  @scala.inline
-  def cyan(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def cyan(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cyan(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")().asInstanceOf[Kleur]
+  inline def cyan(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cyan(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cyan")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "cyan")
   @js.native
   def cyan_Fmod: Color = js.native
   
-  @scala.inline
-  def cyan_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cyan")(x.asInstanceOf[js.Any])
+  inline def cyan_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cyan")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def dim(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("dim")().asInstanceOf[Kleur]
-  @scala.inline
-  def dim(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dim")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def dim(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dim")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dim(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("dim")().asInstanceOf[Kleur]
+  inline def dim(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dim")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dim(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dim")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "dim")
   @js.native
   def dim_Fmod: Color = js.native
   
-  @scala.inline
-  def dim_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dim")(x.asInstanceOf[js.Any])
+  inline def dim_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dim")(x.asInstanceOf[js.Any])
   
   @JSImport("kleur", "enabled")
   @js.native
   def enabled: Boolean = js.native
-  @scala.inline
-  def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
+  inline def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def gray(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")().asInstanceOf[Kleur]
-  @scala.inline
-  def gray(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def gray(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def gray(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")().asInstanceOf[Kleur]
+  inline def gray(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def gray(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "gray")
   @js.native
   def gray_Fmod: Color = js.native
   
-  @scala.inline
-  def gray_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray")(x.asInstanceOf[js.Any])
+  inline def gray_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def green(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("green")().asInstanceOf[Kleur]
-  @scala.inline
-  def green(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("green")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def green(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("green")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def green(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("green")().asInstanceOf[Kleur]
+  inline def green(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("green")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def green(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("green")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "green")
   @js.native
   def green_Fmod: Color = js.native
   
-  @scala.inline
-  def green_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
+  inline def green_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def grey(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("grey")().asInstanceOf[Kleur]
-  @scala.inline
-  def grey(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("grey")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def grey(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("grey")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def grey(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("grey")().asInstanceOf[Kleur]
+  inline def grey(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("grey")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def grey(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("grey")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "grey")
   @js.native
   def grey_Fmod: Color = js.native
   
-  @scala.inline
-  def grey_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grey")(x.asInstanceOf[js.Any])
+  inline def grey_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grey")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def hidden(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")().asInstanceOf[Kleur]
-  @scala.inline
-  def hidden(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def hidden(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hidden(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")().asInstanceOf[Kleur]
+  inline def hidden(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hidden(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "hidden")
   @js.native
   def hidden_Fmod: Color = js.native
   
-  @scala.inline
-  def hidden_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hidden")(x.asInstanceOf[js.Any])
+  inline def hidden_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hidden")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def inverse(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("inverse")().asInstanceOf[Kleur]
-  @scala.inline
-  def inverse(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inverse")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def inverse(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inverse")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def inverse(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("inverse")().asInstanceOf[Kleur]
+  inline def inverse(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inverse")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def inverse(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inverse")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "inverse")
   @js.native
   def inverse_Fmod: Color = js.native
   
-  @scala.inline
-  def inverse_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inverse")(x.asInstanceOf[js.Any])
+  inline def inverse_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inverse")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def italic(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("italic")().asInstanceOf[Kleur]
-  @scala.inline
-  def italic(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("italic")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def italic(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("italic")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def italic(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("italic")().asInstanceOf[Kleur]
+  inline def italic(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("italic")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def italic(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("italic")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "italic")
   @js.native
   def italic_Fmod: Color = js.native
   
-  @scala.inline
-  def italic_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("italic")(x.asInstanceOf[js.Any])
+  inline def italic_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("italic")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def magenta(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")().asInstanceOf[Kleur]
-  @scala.inline
-  def magenta(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def magenta(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def magenta(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")().asInstanceOf[Kleur]
+  inline def magenta(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def magenta(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("magenta")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "magenta")
   @js.native
   def magenta_Fmod: Color = js.native
   
-  @scala.inline
-  def magenta_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("magenta")(x.asInstanceOf[js.Any])
+  inline def magenta_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("magenta")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def red(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("red")().asInstanceOf[Kleur]
-  @scala.inline
-  def red(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def red(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def red(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("red")().asInstanceOf[Kleur]
+  inline def red(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def red(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "red")
   @js.native
   def red_Fmod: Color = js.native
   
-  @scala.inline
-  def red_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
+  inline def red_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
   
   // Modifiers
-  @scala.inline
-  def reset(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Kleur]
+  inline def reset(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Kleur]
   // Modifiers
-  @scala.inline
-  def reset(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def reset(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def reset(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def reset(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   // Modifiers
   @JSImport("kleur", "reset")
   @js.native
   def reset_Fmod: Color = js.native
   
-  @scala.inline
-  def reset_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reset")(x.asInstanceOf[js.Any])
+  inline def reset_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reset")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def strikethrough(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")().asInstanceOf[Kleur]
-  @scala.inline
-  def strikethrough(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def strikethrough(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def strikethrough(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")().asInstanceOf[Kleur]
+  inline def strikethrough(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def strikethrough(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "strikethrough")
   @js.native
   def strikethrough_Fmod: Color = js.native
   
-  @scala.inline
-  def strikethrough_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strikethrough")(x.asInstanceOf[js.Any])
+  inline def strikethrough_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strikethrough")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def underline(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("underline")().asInstanceOf[Kleur]
-  @scala.inline
-  def underline(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("underline")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def underline(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("underline")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def underline(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("underline")().asInstanceOf[Kleur]
+  inline def underline(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("underline")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def underline(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("underline")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "underline")
   @js.native
   def underline_Fmod: Color = js.native
   
-  @scala.inline
-  def underline_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("underline")(x.asInstanceOf[js.Any])
+  inline def underline_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("underline")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def white(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("white")().asInstanceOf[Kleur]
-  @scala.inline
-  def white(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("white")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def white(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("white")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def white(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("white")().asInstanceOf[Kleur]
+  inline def white(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("white")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def white(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("white")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "white")
   @js.native
   def white_Fmod: Color = js.native
   
-  @scala.inline
-  def white_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
+  inline def white_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def yellow(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")().asInstanceOf[Kleur]
-  @scala.inline
-  def yellow(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def yellow(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def yellow(): Kleur = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")().asInstanceOf[Kleur]
+  inline def yellow(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def yellow(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yellow")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   @JSImport("kleur", "yellow")
   @js.native
   def yellow_Fmod: Color = js.native
   
-  @scala.inline
-  def yellow_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
+  inline def yellow_Fmod_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Color extends StObject {
@@ -541,8 +436,7 @@ object mod {
   }
   object Kleur {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bgBlack: Color,
       bgBlue: Color,
       bgCyan: Color,
@@ -574,86 +468,59 @@ object mod {
       __obj.asInstanceOf[Kleur]
     }
     
-    @scala.inline
-    implicit class KleurMutableBuilder[Self <: Kleur] (val x: Self) extends AnyVal {
+    extension [Self <: Kleur](x: Self) {
       
-      @scala.inline
-      def setBgBlack(value: Color): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
+      inline def setBgBlack(value: Color): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgBlue(value: Color): Self = StObject.set(x, "bgBlue", value.asInstanceOf[js.Any])
+      inline def setBgBlue(value: Color): Self = StObject.set(x, "bgBlue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgCyan(value: Color): Self = StObject.set(x, "bgCyan", value.asInstanceOf[js.Any])
+      inline def setBgCyan(value: Color): Self = StObject.set(x, "bgCyan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgGreen(value: Color): Self = StObject.set(x, "bgGreen", value.asInstanceOf[js.Any])
+      inline def setBgGreen(value: Color): Self = StObject.set(x, "bgGreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgMagenta(value: Color): Self = StObject.set(x, "bgMagenta", value.asInstanceOf[js.Any])
+      inline def setBgMagenta(value: Color): Self = StObject.set(x, "bgMagenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgRed(value: Color): Self = StObject.set(x, "bgRed", value.asInstanceOf[js.Any])
+      inline def setBgRed(value: Color): Self = StObject.set(x, "bgRed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgWhite(value: Color): Self = StObject.set(x, "bgWhite", value.asInstanceOf[js.Any])
+      inline def setBgWhite(value: Color): Self = StObject.set(x, "bgWhite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgYellow(value: Color): Self = StObject.set(x, "bgYellow", value.asInstanceOf[js.Any])
+      inline def setBgYellow(value: Color): Self = StObject.set(x, "bgYellow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlack(value: Color): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: Color): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: Color): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: Color): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBold(value: Color): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Color): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyan(value: Color): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
+      inline def setCyan(value: Color): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDim(value: Color): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+      inline def setDim(value: Color): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGray(value: Color): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+      inline def setGray(value: Color): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: Color): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: Color): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrey(value: Color): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+      inline def setGrey(value: Color): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: Color): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Color): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverse(value: Color): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Color): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalic(value: Color): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Color): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagenta(value: Color): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+      inline def setMagenta(value: Color): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: Color): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: Color): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: Color): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: Color): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethrough(value: Color): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+      inline def setStrikethrough(value: Color): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderline(value: Color): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Color): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: Color): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: Color): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellow(value: Color): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      inline def setYellow(value: Color): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
     }
   }
 }

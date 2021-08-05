@@ -14,8 +14,7 @@ trait helpers extends StObject {
 }
 object helpers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     helperExpression: Node => Boolean,
     scopeId: PathExpression => Boolean,
     simpleId: PathExpression => Boolean
@@ -24,16 +23,12 @@ object helpers {
     __obj.asInstanceOf[helpers]
   }
   
-  @scala.inline
-  implicit class helpersMutableBuilder[Self <: helpers] (val x: Self) extends AnyVal {
+  extension [Self <: helpers](x: Self) {
     
-    @scala.inline
-    def setHelperExpression(value: Node => Boolean): Self = StObject.set(x, "helperExpression", js.Any.fromFunction1(value))
+    inline def setHelperExpression(value: Node => Boolean): Self = StObject.set(x, "helperExpression", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScopeId(value: PathExpression => Boolean): Self = StObject.set(x, "scopeId", js.Any.fromFunction1(value))
+    inline def setScopeId(value: PathExpression => Boolean): Self = StObject.set(x, "scopeId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSimpleId(value: PathExpression => Boolean): Self = StObject.set(x, "simpleId", js.Any.fromFunction1(value))
+    inline def setSimpleId(value: PathExpression => Boolean): Self = StObject.set(x, "simpleId", js.Any.fromFunction1(value))
   }
 }

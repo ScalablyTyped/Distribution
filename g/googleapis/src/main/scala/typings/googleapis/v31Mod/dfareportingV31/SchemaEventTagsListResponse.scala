@@ -22,28 +22,21 @@ trait SchemaEventTagsListResponse extends StObject {
 }
 object SchemaEventTagsListResponse {
   
-  @scala.inline
-  def apply(): SchemaEventTagsListResponse = {
+  inline def apply(): SchemaEventTagsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventTagsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaEventTagsListResponseMutableBuilder[Self <: SchemaEventTagsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventTagsListResponse](x: Self) {
     
-    @scala.inline
-    def setEventTags(value: js.Array[SchemaEventTag]): Self = StObject.set(x, "eventTags", value.asInstanceOf[js.Any])
+    inline def setEventTags(value: js.Array[SchemaEventTag]): Self = StObject.set(x, "eventTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTagsUndefined: Self = StObject.set(x, "eventTags", js.undefined)
+    inline def setEventTagsUndefined: Self = StObject.set(x, "eventTags", js.undefined)
     
-    @scala.inline
-    def setEventTagsVarargs(value: SchemaEventTag*): Self = StObject.set(x, "eventTags", js.Array(value :_*))
+    inline def setEventTagsVarargs(value: SchemaEventTag*): Self = StObject.set(x, "eventTags", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

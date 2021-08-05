@@ -20,17 +20,14 @@ object typesMergeShardsOutputMod {
   }
   object MergeShardsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): MergeShardsOutput = {
+    inline def apply($metadata: ResponseMetadata): MergeShardsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[MergeShardsOutput]
     }
     
-    @scala.inline
-    implicit class MergeShardsOutputMutableBuilder[Self <: MergeShardsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: MergeShardsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

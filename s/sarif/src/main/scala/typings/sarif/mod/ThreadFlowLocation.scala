@@ -86,104 +86,72 @@ trait ThreadFlowLocation extends StObject {
 }
 object ThreadFlowLocation {
   
-  @scala.inline
-  def apply(): ThreadFlowLocation = {
+  inline def apply(): ThreadFlowLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreadFlowLocation]
   }
   
-  @scala.inline
-  implicit class ThreadFlowLocationMutableBuilder[Self <: ThreadFlowLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadFlowLocation](x: Self) {
     
-    @scala.inline
-    def setExecutionOrder(value: Double): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
+    inline def setExecutionOrder(value: Double): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionOrderUndefined: Self = StObject.set(x, "executionOrder", js.undefined)
+    inline def setExecutionOrderUndefined: Self = StObject.set(x, "executionOrder", js.undefined)
     
-    @scala.inline
-    def setExecutionTimeUtc(value: String): Self = StObject.set(x, "executionTimeUtc", value.asInstanceOf[js.Any])
+    inline def setExecutionTimeUtc(value: String): Self = StObject.set(x, "executionTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionTimeUtcUndefined: Self = StObject.set(x, "executionTimeUtc", js.undefined)
+    inline def setExecutionTimeUtcUndefined: Self = StObject.set(x, "executionTimeUtc", js.undefined)
     
-    @scala.inline
-    def setImportance(value: importance): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: importance): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
+    inline def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
+    inline def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
+    inline def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
     
-    @scala.inline
-    def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
+    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
-    @scala.inline
-    def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+    inline def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+    inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setStack(value: Stack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Stack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTaxa(value: js.Array[ReportingDescriptorReference]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
+    inline def setTaxa(value: js.Array[ReportingDescriptorReference]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
+    inline def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
     
-    @scala.inline
-    def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value :_*))
+    inline def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value :_*))
     
-    @scala.inline
-    def setWebRequest(value: WebRequest): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
+    inline def setWebRequest(value: WebRequest): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebRequestUndefined: Self = StObject.set(x, "webRequest", js.undefined)
+    inline def setWebRequestUndefined: Self = StObject.set(x, "webRequest", js.undefined)
     
-    @scala.inline
-    def setWebResponse(value: WebResponse): Self = StObject.set(x, "webResponse", value.asInstanceOf[js.Any])
+    inline def setWebResponse(value: WebResponse): Self = StObject.set(x, "webResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebResponseUndefined: Self = StObject.set(x, "webResponse", js.undefined)
+    inline def setWebResponseUndefined: Self = StObject.set(x, "webResponse", js.undefined)
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -194,13 +162,10 @@ object ThreadFlowLocation {
   trait importance extends StObject
   object importance {
     
-    @scala.inline
-    def essential: typings.sarif.sarifStrings.essential = "essential".asInstanceOf[typings.sarif.sarifStrings.essential]
+    inline def essential: typings.sarif.sarifStrings.essential = "essential".asInstanceOf[typings.sarif.sarifStrings.essential]
     
-    @scala.inline
-    def important: typings.sarif.sarifStrings.important = "important".asInstanceOf[typings.sarif.sarifStrings.important]
+    inline def important: typings.sarif.sarifStrings.important = "important".asInstanceOf[typings.sarif.sarifStrings.important]
     
-    @scala.inline
-    def unimportant: typings.sarif.sarifStrings.unimportant = "unimportant".asInstanceOf[typings.sarif.sarifStrings.unimportant]
+    inline def unimportant: typings.sarif.sarifStrings.unimportant = "unimportant".asInstanceOf[typings.sarif.sarifStrings.unimportant]
   }
 }

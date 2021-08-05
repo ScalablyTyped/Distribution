@@ -14,25 +14,19 @@ trait DigitalContentLabelAssignedTargetingOptionDetails extends StObject {
 }
 object DigitalContentLabelAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): DigitalContentLabelAssignedTargetingOptionDetails = {
+  inline def apply(): DigitalContentLabelAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DigitalContentLabelAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class DigitalContentLabelAssignedTargetingOptionDetailsMutableBuilder[Self <: DigitalContentLabelAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DigitalContentLabelAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setContentRatingTier(value: String): Self = StObject.set(x, "contentRatingTier", value.asInstanceOf[js.Any])
+    inline def setContentRatingTier(value: String): Self = StObject.set(x, "contentRatingTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentRatingTierUndefined: Self = StObject.set(x, "contentRatingTier", js.undefined)
+    inline def setContentRatingTierUndefined: Self = StObject.set(x, "contentRatingTier", js.undefined)
     
-    @scala.inline
-    def setExcludedTargetingOptionId(value: String): Self = StObject.set(x, "excludedTargetingOptionId", value.asInstanceOf[js.Any])
+    inline def setExcludedTargetingOptionId(value: String): Self = StObject.set(x, "excludedTargetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedTargetingOptionIdUndefined: Self = StObject.set(x, "excludedTargetingOptionId", js.undefined)
+    inline def setExcludedTargetingOptionIdUndefined: Self = StObject.set(x, "excludedTargetingOptionId", js.undefined)
   }
 }

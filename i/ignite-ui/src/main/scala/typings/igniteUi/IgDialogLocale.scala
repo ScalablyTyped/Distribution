@@ -50,49 +50,35 @@ trait IgDialogLocale
 }
 object IgDialogLocale {
   
-  @scala.inline
-  def apply(): IgDialogLocale = {
+  inline def apply(): IgDialogLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgDialogLocale]
   }
   
-  @scala.inline
-  implicit class IgDialogLocaleMutableBuilder[Self <: IgDialogLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgDialogLocale](x: Self) {
     
-    @scala.inline
-    def setCloseButtonTitle(value: String): Self = StObject.set(x, "closeButtonTitle", value.asInstanceOf[js.Any])
+    inline def setCloseButtonTitle(value: String): Self = StObject.set(x, "closeButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonTitleUndefined: Self = StObject.set(x, "closeButtonTitle", js.undefined)
+    inline def setCloseButtonTitleUndefined: Self = StObject.set(x, "closeButtonTitle", js.undefined)
     
-    @scala.inline
-    def setMaximizeButtonTitle(value: String): Self = StObject.set(x, "maximizeButtonTitle", value.asInstanceOf[js.Any])
+    inline def setMaximizeButtonTitle(value: String): Self = StObject.set(x, "maximizeButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximizeButtonTitleUndefined: Self = StObject.set(x, "maximizeButtonTitle", js.undefined)
+    inline def setMaximizeButtonTitleUndefined: Self = StObject.set(x, "maximizeButtonTitle", js.undefined)
     
-    @scala.inline
-    def setMinimizeButtonTitle(value: String): Self = StObject.set(x, "minimizeButtonTitle", value.asInstanceOf[js.Any])
+    inline def setMinimizeButtonTitle(value: String): Self = StObject.set(x, "minimizeButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimizeButtonTitleUndefined: Self = StObject.set(x, "minimizeButtonTitle", js.undefined)
+    inline def setMinimizeButtonTitleUndefined: Self = StObject.set(x, "minimizeButtonTitle", js.undefined)
     
-    @scala.inline
-    def setPinButtonTitle(value: String): Self = StObject.set(x, "pinButtonTitle", value.asInstanceOf[js.Any])
+    inline def setPinButtonTitle(value: String): Self = StObject.set(x, "pinButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinButtonTitleUndefined: Self = StObject.set(x, "pinButtonTitle", js.undefined)
+    inline def setPinButtonTitleUndefined: Self = StObject.set(x, "pinButtonTitle", js.undefined)
     
-    @scala.inline
-    def setRestoreButtonTitle(value: String): Self = StObject.set(x, "restoreButtonTitle", value.asInstanceOf[js.Any])
+    inline def setRestoreButtonTitle(value: String): Self = StObject.set(x, "restoreButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreButtonTitleUndefined: Self = StObject.set(x, "restoreButtonTitle", js.undefined)
+    inline def setRestoreButtonTitleUndefined: Self = StObject.set(x, "restoreButtonTitle", js.undefined)
     
-    @scala.inline
-    def setUnpinButtonTitle(value: String): Self = StObject.set(x, "unpinButtonTitle", value.asInstanceOf[js.Any])
+    inline def setUnpinButtonTitle(value: String): Self = StObject.set(x, "unpinButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnpinButtonTitleUndefined: Self = StObject.set(x, "unpinButtonTitle", js.undefined)
+    inline def setUnpinButtonTitleUndefined: Self = StObject.set(x, "unpinButtonTitle", js.undefined)
   }
 }

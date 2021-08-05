@@ -19,8 +19,7 @@ trait IAnimationDescription extends StObject {
 }
 object IAnimationDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animations: IVectorView[IPropertyAnimation],
     delayLimit: Double,
     staggerDelay: Double,
@@ -31,22 +30,16 @@ object IAnimationDescription {
     __obj.asInstanceOf[IAnimationDescription]
   }
   
-  @scala.inline
-  implicit class IAnimationDescriptionMutableBuilder[Self <: IAnimationDescription] (val x: Self) extends AnyVal {
+  extension [Self <: IAnimationDescription](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: IVectorView[IPropertyAnimation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: IVectorView[IPropertyAnimation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayLimit(value: Double): Self = StObject.set(x, "delayLimit", value.asInstanceOf[js.Any])
+    inline def setDelayLimit(value: Double): Self = StObject.set(x, "delayLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaggerDelay(value: Double): Self = StObject.set(x, "staggerDelay", value.asInstanceOf[js.Any])
+    inline def setStaggerDelay(value: Double): Self = StObject.set(x, "staggerDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaggerDelayFactor(value: Double): Self = StObject.set(x, "staggerDelayFactor", value.asInstanceOf[js.Any])
+    inline def setStaggerDelayFactor(value: Double): Self = StObject.set(x, "staggerDelayFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
+    inline def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
   }
 }

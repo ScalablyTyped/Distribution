@@ -18,28 +18,21 @@ trait CacheSecurityGroupMessage extends StObject {
 }
 object CacheSecurityGroupMessage {
   
-  @scala.inline
-  def apply(): CacheSecurityGroupMessage = {
+  inline def apply(): CacheSecurityGroupMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheSecurityGroupMessage]
   }
   
-  @scala.inline
-  implicit class CacheSecurityGroupMessageMutableBuilder[Self <: CacheSecurityGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CacheSecurityGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheSecurityGroups(value: CacheSecurityGroups): Self = StObject.set(x, "CacheSecurityGroups", value.asInstanceOf[js.Any])
+    inline def setCacheSecurityGroups(value: CacheSecurityGroups): Self = StObject.set(x, "CacheSecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSecurityGroupsUndefined: Self = StObject.set(x, "CacheSecurityGroups", js.undefined)
+    inline def setCacheSecurityGroupsUndefined: Self = StObject.set(x, "CacheSecurityGroups", js.undefined)
     
-    @scala.inline
-    def setCacheSecurityGroupsVarargs(value: CacheSecurityGroup*): Self = StObject.set(x, "CacheSecurityGroups", js.Array(value :_*))
+    inline def setCacheSecurityGroupsVarargs(value: CacheSecurityGroup*): Self = StObject.set(x, "CacheSecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

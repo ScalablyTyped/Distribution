@@ -24,19 +24,15 @@ trait HorizontalPodAutoscalerBehavior extends StObject {
 }
 object HorizontalPodAutoscalerBehavior {
   
-  @scala.inline
-  def apply(scaleDown: HPAScalingRules, scaleUp: HPAScalingRules): HorizontalPodAutoscalerBehavior = {
+  inline def apply(scaleDown: HPAScalingRules, scaleUp: HPAScalingRules): HorizontalPodAutoscalerBehavior = {
     val __obj = js.Dynamic.literal(scaleDown = scaleDown.asInstanceOf[js.Any], scaleUp = scaleUp.asInstanceOf[js.Any])
     __obj.asInstanceOf[HorizontalPodAutoscalerBehavior]
   }
   
-  @scala.inline
-  implicit class HorizontalPodAutoscalerBehaviorMutableBuilder[Self <: HorizontalPodAutoscalerBehavior] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalPodAutoscalerBehavior](x: Self) {
     
-    @scala.inline
-    def setScaleDown(value: HPAScalingRules): Self = StObject.set(x, "scaleDown", value.asInstanceOf[js.Any])
+    inline def setScaleDown(value: HPAScalingRules): Self = StObject.set(x, "scaleDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUp(value: HPAScalingRules): Self = StObject.set(x, "scaleUp", value.asInstanceOf[js.Any])
+    inline def setScaleUp(value: HPAScalingRules): Self = StObject.set(x, "scaleUp", value.asInstanceOf[js.Any])
   }
 }

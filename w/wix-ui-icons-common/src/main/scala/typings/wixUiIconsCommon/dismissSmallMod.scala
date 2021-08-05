@@ -22,20 +22,16 @@ object dismissSmallMod extends Shortcut {
   }
   object DismissSmallProps {
     
-    @scala.inline
-    def apply(): DismissSmallProps = {
+    inline def apply(): DismissSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DismissSmallProps]
     }
     
-    @scala.inline
-    implicit class DismissSmallPropsMutableBuilder[Self <: DismissSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: DismissSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -13,16 +13,13 @@ trait IValueExpr extends StObject {
 }
 object IValueExpr {
   
-  @scala.inline
-  def apply(qv: String): IValueExpr = {
+  inline def apply(qv: String): IValueExpr = {
     val __obj = js.Dynamic.literal(qv = qv.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValueExpr]
   }
   
-  @scala.inline
-  implicit class IValueExprMutableBuilder[Self <: IValueExpr] (val x: Self) extends AnyVal {
+  extension [Self <: IValueExpr](x: Self) {
     
-    @scala.inline
-    def setQv(value: String): Self = StObject.set(x, "qv", value.asInstanceOf[js.Any])
+    inline def setQv(value: String): Self = StObject.set(x, "qv", value.asInstanceOf[js.Any])
   }
 }

@@ -13,13 +13,11 @@ object methodsIosMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkNotifications(): js.Promise[NotificationsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkNotifications")().asInstanceOf[js.Promise[NotificationsResponse]]
+  inline def checkNotifications(): js.Promise[NotificationsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkNotifications")().asInstanceOf[js.Promise[NotificationsResponse]]
   
   @JSImport("react-native-permissions/dist/typescript/methods.ios", "methods")
   @js.native
   val methods: Contract = js.native
   
-  @scala.inline
-  def requestNotifications(options: js.Array[NotificationOption]): js.Promise[NotificationsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestNotifications")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NotificationsResponse]]
+  inline def requestNotifications(options: js.Array[NotificationOption]): js.Promise[NotificationsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestNotifications")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NotificationsResponse]]
 }

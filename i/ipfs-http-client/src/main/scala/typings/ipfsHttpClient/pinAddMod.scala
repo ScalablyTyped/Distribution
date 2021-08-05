@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pinAddMod {
   
-  @scala.inline
-  def apply(options: js.Any): js.Function2[
+  inline def apply(options: js.Any): js.Function2[
     /* path */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
     js.Promise[Unit | typings.cids.mod.^]

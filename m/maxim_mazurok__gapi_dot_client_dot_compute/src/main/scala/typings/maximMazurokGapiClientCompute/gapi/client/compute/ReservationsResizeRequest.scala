@@ -11,19 +11,15 @@ trait ReservationsResizeRequest extends StObject {
 }
 object ReservationsResizeRequest {
   
-  @scala.inline
-  def apply(): ReservationsResizeRequest = {
+  inline def apply(): ReservationsResizeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservationsResizeRequest]
   }
   
-  @scala.inline
-  implicit class ReservationsResizeRequestMutableBuilder[Self <: ReservationsResizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationsResizeRequest](x: Self) {
     
-    @scala.inline
-    def setSpecificSkuCount(value: String): Self = StObject.set(x, "specificSkuCount", value.asInstanceOf[js.Any])
+    inline def setSpecificSkuCount(value: String): Self = StObject.set(x, "specificSkuCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecificSkuCountUndefined: Self = StObject.set(x, "specificSkuCount", js.undefined)
+    inline def setSpecificSkuCountUndefined: Self = StObject.set(x, "specificSkuCount", js.undefined)
   }
 }

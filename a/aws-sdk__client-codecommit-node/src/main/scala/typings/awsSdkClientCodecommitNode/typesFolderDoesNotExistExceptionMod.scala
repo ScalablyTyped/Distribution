@@ -16,17 +16,14 @@ object typesFolderDoesNotExistExceptionMod {
   }
   object FolderDoesNotExistException {
     
-    @scala.inline
-    def apply(): FolderDoesNotExistException = {
+    inline def apply(): FolderDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "FolderDoesNotExistException")
       __obj.asInstanceOf[FolderDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class FolderDoesNotExistExceptionMutableBuilder[Self <: FolderDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: FolderDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FolderDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -23,8 +23,7 @@ object mod {
   @JSImport("xmldom", "DOMImplementation")
   @js.native
   def DOMImplementation: DOMImplementationStatic = js.native
-  @scala.inline
-  def DOMImplementation_=(x: DOMImplementationStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMImplementation")(x.asInstanceOf[js.Any])
+  inline def DOMImplementation_=(x: DOMImplementationStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMImplementation")(x.asInstanceOf[js.Any])
   
   @js.native
   trait DOMParser extends StObject {
@@ -45,8 +44,7 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @scala.inline
-  def DOMParser_=(x: DOMParserStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMParser")(x.asInstanceOf[js.Any])
+  inline def DOMParser_=(x: DOMParserStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMParser")(x.asInstanceOf[js.Any])
   
   trait XMLSerializer extends StObject {
     
@@ -58,11 +56,9 @@ object mod {
     @js.native
     val ^ : XMLSerializerStatic = js.native
     
-    @scala.inline
-    implicit class XMLSerializerMutableBuilder[Self <: XMLSerializer] (val x: Self) extends AnyVal {
+    extension [Self <: XMLSerializer](x: Self) {
       
-      @scala.inline
-      def setSerializeToString(value: Node => String): Self = StObject.set(x, "serializeToString", js.Any.fromFunction1(value))
+      inline def setSerializeToString(value: Node => String): Self = StObject.set(x, "serializeToString", js.Any.fromFunction1(value))
     }
   }
   
@@ -100,32 +96,24 @@ object mod {
   }
   object ErrorHandlerObject {
     
-    @scala.inline
-    def apply(): ErrorHandlerObject = {
+    inline def apply(): ErrorHandlerObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorHandlerObject]
     }
     
-    @scala.inline
-    implicit class ErrorHandlerObjectMutableBuilder[Self <: ErrorHandlerObject] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorHandlerObject](x: Self) {
       
-      @scala.inline
-      def setError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFatalError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
+      inline def setFatalError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFatalErrorUndefined: Self = StObject.set(x, "fatalError", js.undefined)
+      inline def setFatalErrorUndefined: Self = StObject.set(x, "fatalError", js.undefined)
       
-      @scala.inline
-      def setWarning(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -137,29 +125,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setErrorHandler(value: ErrorHandlerFunction | ErrorHandlerObject): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
+      inline def setErrorHandler(value: ErrorHandlerFunction | ErrorHandlerObject): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorHandlerFunction2(value: (/* level */ String, /* msg */ js.Any) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+      inline def setErrorHandlerFunction2(value: (/* level */ String, /* msg */ js.Any) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setLocator(value: js.Any): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
+      inline def setLocator(value: js.Any): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocatorUndefined: Self = StObject.set(x, "locator", js.undefined)
+      inline def setLocatorUndefined: Self = StObject.set(x, "locator", js.undefined)
     }
   }
   

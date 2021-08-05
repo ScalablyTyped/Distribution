@@ -17,25 +17,19 @@ trait ExistenceFilter extends StObject {
 }
 object ExistenceFilter {
   
-  @scala.inline
-  def apply(): ExistenceFilter = {
+  inline def apply(): ExistenceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExistenceFilter]
   }
   
-  @scala.inline
-  implicit class ExistenceFilterMutableBuilder[Self <: ExistenceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ExistenceFilter](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

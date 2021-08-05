@@ -23,22 +23,17 @@ trait SchemaLintPolicyResponse extends StObject {
 }
 object SchemaLintPolicyResponse {
   
-  @scala.inline
-  def apply(): SchemaLintPolicyResponse = {
+  inline def apply(): SchemaLintPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLintPolicyResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLintPolicyResponseMutableBuilder[Self <: SchemaLintPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLintPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setLintResults(value: js.Array[SchemaLintResult]): Self = StObject.set(x, "lintResults", value.asInstanceOf[js.Any])
+    inline def setLintResults(value: js.Array[SchemaLintResult]): Self = StObject.set(x, "lintResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLintResultsUndefined: Self = StObject.set(x, "lintResults", js.undefined)
+    inline def setLintResultsUndefined: Self = StObject.set(x, "lintResults", js.undefined)
     
-    @scala.inline
-    def setLintResultsVarargs(value: SchemaLintResult*): Self = StObject.set(x, "lintResults", js.Array(value :_*))
+    inline def setLintResultsVarargs(value: SchemaLintResult*): Self = StObject.set(x, "lintResults", js.Array(value :_*))
   }
 }

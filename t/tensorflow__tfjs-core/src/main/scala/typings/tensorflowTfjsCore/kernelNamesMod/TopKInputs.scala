@@ -11,19 +11,15 @@ trait TopKInputs extends StObject {
 }
 object TopKInputs {
   
-  @scala.inline
-  def apply(): TopKInputs = {
+  inline def apply(): TopKInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopKInputs]
   }
   
-  @scala.inline
-  implicit class TopKInputsMutableBuilder[Self <: TopKInputs] (val x: Self) extends AnyVal {
+  extension [Self <: TopKInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

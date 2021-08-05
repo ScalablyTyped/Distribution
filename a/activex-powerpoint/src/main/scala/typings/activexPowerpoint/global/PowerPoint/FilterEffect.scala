@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.FilterEffect")
 @js.native
-class FilterEffect protected ()
+/* private */ class FilterEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.FilterEffect {
   
@@ -19,7 +19,7 @@ class FilterEffect protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.FilterEffect_typekey")
   var PowerPointDotFilterEffect_typekey: typings.activexPowerpoint.PowerPoint.FilterEffect = js.native
   

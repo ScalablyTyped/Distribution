@@ -26,8 +26,7 @@ trait CustomResourceDefinitionStatus extends StObject {
 }
 object CustomResourceDefinitionStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptedNames: CustomResourceDefinitionNames,
     conditions: js.Array[CustomResourceDefinitionCondition],
     storedVersions: js.Array[String]
@@ -36,22 +35,16 @@ object CustomResourceDefinitionStatus {
     __obj.asInstanceOf[CustomResourceDefinitionStatus]
   }
   
-  @scala.inline
-  implicit class CustomResourceDefinitionStatusMutableBuilder[Self <: CustomResourceDefinitionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceDefinitionStatus](x: Self) {
     
-    @scala.inline
-    def setAcceptedNames(value: CustomResourceDefinitionNames): Self = StObject.set(x, "acceptedNames", value.asInstanceOf[js.Any])
+    inline def setAcceptedNames(value: CustomResourceDefinitionNames): Self = StObject.set(x, "acceptedNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditions(value: js.Array[CustomResourceDefinitionCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[CustomResourceDefinitionCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: CustomResourceDefinitionCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: CustomResourceDefinitionCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setStoredVersions(value: js.Array[String]): Self = StObject.set(x, "storedVersions", value.asInstanceOf[js.Any])
+    inline def setStoredVersions(value: js.Array[String]): Self = StObject.set(x, "storedVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredVersionsVarargs(value: String*): Self = StObject.set(x, "storedVersions", js.Array(value :_*))
+    inline def setStoredVersionsVarargs(value: String*): Self = StObject.set(x, "storedVersions", js.Array(value :_*))
   }
 }

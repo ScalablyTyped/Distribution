@@ -16,16 +16,13 @@ trait EnableCustomConstraints extends StObject {
 }
 object EnableCustomConstraints {
   
-  @scala.inline
-  def apply(enableCustomConstraints: Boolean): EnableCustomConstraints = {
+  inline def apply(enableCustomConstraints: Boolean): EnableCustomConstraints = {
     val __obj = js.Dynamic.literal(enableCustomConstraints = enableCustomConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableCustomConstraints]
   }
   
-  @scala.inline
-  implicit class EnableCustomConstraintsMutableBuilder[Self <: EnableCustomConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: EnableCustomConstraints](x: Self) {
     
-    @scala.inline
-    def setEnableCustomConstraints(value: Boolean): Self = StObject.set(x, "enableCustomConstraints", value.asInstanceOf[js.Any])
+    inline def setEnableCustomConstraints(value: Boolean): Self = StObject.set(x, "enableCustomConstraints", value.asInstanceOf[js.Any])
   }
 }

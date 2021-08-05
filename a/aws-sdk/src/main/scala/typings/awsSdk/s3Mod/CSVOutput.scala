@@ -33,43 +33,31 @@ trait CSVOutput extends StObject {
 }
 object CSVOutput {
   
-  @scala.inline
-  def apply(): CSVOutput = {
+  inline def apply(): CSVOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSVOutput]
   }
   
-  @scala.inline
-  implicit class CSVOutputMutableBuilder[Self <: CSVOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CSVOutput](x: Self) {
     
-    @scala.inline
-    def setFieldDelimiter(value: FieldDelimiter): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
+    inline def setFieldDelimiter(value: FieldDelimiter): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDelimiterUndefined: Self = StObject.set(x, "FieldDelimiter", js.undefined)
+    inline def setFieldDelimiterUndefined: Self = StObject.set(x, "FieldDelimiter", js.undefined)
     
-    @scala.inline
-    def setQuoteCharacter(value: QuoteCharacter): Self = StObject.set(x, "QuoteCharacter", value.asInstanceOf[js.Any])
+    inline def setQuoteCharacter(value: QuoteCharacter): Self = StObject.set(x, "QuoteCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteCharacterUndefined: Self = StObject.set(x, "QuoteCharacter", js.undefined)
+    inline def setQuoteCharacterUndefined: Self = StObject.set(x, "QuoteCharacter", js.undefined)
     
-    @scala.inline
-    def setQuoteEscapeCharacter(value: QuoteEscapeCharacter): Self = StObject.set(x, "QuoteEscapeCharacter", value.asInstanceOf[js.Any])
+    inline def setQuoteEscapeCharacter(value: QuoteEscapeCharacter): Self = StObject.set(x, "QuoteEscapeCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteEscapeCharacterUndefined: Self = StObject.set(x, "QuoteEscapeCharacter", js.undefined)
+    inline def setQuoteEscapeCharacterUndefined: Self = StObject.set(x, "QuoteEscapeCharacter", js.undefined)
     
-    @scala.inline
-    def setQuoteFields(value: QuoteFields): Self = StObject.set(x, "QuoteFields", value.asInstanceOf[js.Any])
+    inline def setQuoteFields(value: QuoteFields): Self = StObject.set(x, "QuoteFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteFieldsUndefined: Self = StObject.set(x, "QuoteFields", js.undefined)
+    inline def setQuoteFieldsUndefined: Self = StObject.set(x, "QuoteFields", js.undefined)
     
-    @scala.inline
-    def setRecordDelimiter(value: RecordDelimiter): Self = StObject.set(x, "RecordDelimiter", value.asInstanceOf[js.Any])
+    inline def setRecordDelimiter(value: RecordDelimiter): Self = StObject.set(x, "RecordDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordDelimiterUndefined: Self = StObject.set(x, "RecordDelimiter", js.undefined)
+    inline def setRecordDelimiterUndefined: Self = StObject.set(x, "RecordDelimiter", js.undefined)
   }
 }

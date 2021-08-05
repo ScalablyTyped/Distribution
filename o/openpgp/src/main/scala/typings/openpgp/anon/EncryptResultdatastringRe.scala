@@ -18,8 +18,7 @@ trait EncryptResultdatastringRe extends StObject {
 }
 object EncryptResultdatastringRe {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: String | ReadableStream[String],
     message: typings.openpgp.mod.message.Message,
     sessionKey: AeadAlgorithm,
@@ -29,19 +28,14 @@ object EncryptResultdatastringRe {
     __obj.asInstanceOf[EncryptResultdatastringRe]
   }
   
-  @scala.inline
-  implicit class EncryptResultdatastringReMutableBuilder[Self <: EncryptResultdatastringRe] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptResultdatastringRe](x: Self) {
     
-    @scala.inline
-    def setData(value: String | ReadableStream[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | ReadableStream[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+    inline def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String | ReadableStream[String] | typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String | ReadableStream[String] | typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

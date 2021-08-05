@@ -24,8 +24,7 @@ trait PageMethodeModelInfoReturn extends StObject {
 }
 object PageMethodeModelInfoReturn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     length: Double,
     page: Double,
@@ -39,31 +38,22 @@ object PageMethodeModelInfoReturn {
     __obj.asInstanceOf[PageMethodeModelInfoReturn]
   }
   
-  @scala.inline
-  implicit class PageMethodeModelInfoReturnMutableBuilder[Self <: PageMethodeModelInfoReturn] (val x: Self) extends AnyVal {
+  extension [Self <: PageMethodeModelInfoReturn](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsDisplay(value: Double): Self = StObject.set(x, "recordsDisplay", value.asInstanceOf[js.Any])
+    inline def setRecordsDisplay(value: Double): Self = StObject.set(x, "recordsDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsTotal(value: Double): Self = StObject.set(x, "recordsTotal", value.asInstanceOf[js.Any])
+    inline def setRecordsTotal(value: Double): Self = StObject.set(x, "recordsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSide(value: Boolean): Self = StObject.set(x, "serverSide", value.asInstanceOf[js.Any])
+    inline def setServerSide(value: Boolean): Self = StObject.set(x, "serverSide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

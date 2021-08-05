@@ -12,19 +12,15 @@ trait SelectedCount extends StObject {
 }
 object SelectedCount {
   
-  @scala.inline
-  def apply(selectedCount: Double, totalCount: Double): SelectedCount = {
+  inline def apply(selectedCount: Double, totalCount: Double): SelectedCount = {
     val __obj = js.Dynamic.literal(selectedCount = selectedCount.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedCount]
   }
   
-  @scala.inline
-  implicit class SelectedCountMutableBuilder[Self <: SelectedCount] (val x: Self) extends AnyVal {
+  extension [Self <: SelectedCount](x: Self) {
     
-    @scala.inline
-    def setSelectedCount(value: Double): Self = StObject.set(x, "selectedCount", value.asInstanceOf[js.Any])
+    inline def setSelectedCount(value: Double): Self = StObject.set(x, "selectedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

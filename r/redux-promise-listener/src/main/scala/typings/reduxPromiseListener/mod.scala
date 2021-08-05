@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PromiseListener = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PromiseListener]
+  inline def default(): PromiseListener = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PromiseListener]
   
   object ReduxPromiseListener {
     
@@ -47,47 +46,34 @@ object mod {
     }
     object Config {
       
-      @scala.inline
-      def apply[StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn](reject: String | ActionMatcher, resolve: String | ActionMatcher, start: String): Config[StartAction, ResolveAction, RejectAction, TReturn] = {
+      inline def apply[StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn](reject: String | ActionMatcher, resolve: String | ActionMatcher, start: String): Config[StartAction, ResolveAction, RejectAction, TReturn] = {
         val __obj = js.Dynamic.literal(reject = reject.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
         __obj.asInstanceOf[Config[StartAction, ResolveAction, RejectAction, TReturn]]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config[?, ?, ?, ?], StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn] (val x: Self & (Config[StartAction, ResolveAction, RejectAction, TReturn])) extends AnyVal {
+      extension [Self <: Config[?, ?, ?, ?], StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn](x: Self & (Config[StartAction, ResolveAction, RejectAction, TReturn])) {
         
-        @scala.inline
-        def setGetError(value: /* action */ RejectAction => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
+        inline def setGetError(value: /* action */ RejectAction => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
+        inline def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
         
-        @scala.inline
-        def setGetPayload(value: /* action */ ResolveAction => TReturn): Self = StObject.set(x, "getPayload", js.Any.fromFunction1(value))
+        inline def setGetPayload(value: /* action */ ResolveAction => TReturn): Self = StObject.set(x, "getPayload", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetPayloadUndefined: Self = StObject.set(x, "getPayload", js.undefined)
+        inline def setGetPayloadUndefined: Self = StObject.set(x, "getPayload", js.undefined)
         
-        @scala.inline
-        def setReject(value: String | ActionMatcher): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
+        inline def setReject(value: String | ActionMatcher): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRejectFunction1(value: /* action */ AnyAction => Boolean): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+        inline def setRejectFunction1(value: /* action */ AnyAction => Boolean): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setResolve(value: String | ActionMatcher): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+        inline def setResolve(value: String | ActionMatcher): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResolveFunction1(value: /* action */ AnyAction => Boolean): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+        inline def setResolveFunction1(value: /* action */ AnyAction => Boolean): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetPayload(value: (/* action */ StartAction, /* payload */ js.Any) => AnyAction): Self = StObject.set(x, "setPayload", js.Any.fromFunction2(value))
+        inline def setSetPayload(value: (/* action */ StartAction, /* payload */ js.Any) => AnyAction): Self = StObject.set(x, "setPayload", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetPayloadUndefined: Self = StObject.set(x, "setPayload", js.undefined)
+        inline def setSetPayloadUndefined: Self = StObject.set(x, "setPayload", js.undefined)
         
-        @scala.inline
-        def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       }
     }
     
@@ -104,8 +90,7 @@ object mod {
     }
     object PromiseListener {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         createAsyncFunction: Config[js.Any, js.Any, js.Any, js.Any] => AsyncFunction[js.Any],
         middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
       ): PromiseListener = {
@@ -113,14 +98,11 @@ object mod {
         __obj.asInstanceOf[PromiseListener]
       }
       
-      @scala.inline
-      implicit class PromiseListenerMutableBuilder[Self <: PromiseListener] (val x: Self) extends AnyVal {
+      extension [Self <: PromiseListener](x: Self) {
         
-        @scala.inline
-        def setCreateAsyncFunction(value: Config[js.Any, js.Any, js.Any, js.Any] => AsyncFunction[js.Any]): Self = StObject.set(x, "createAsyncFunction", js.Any.fromFunction1(value))
+        inline def setCreateAsyncFunction(value: Config[js.Any, js.Any, js.Any, js.Any] => AsyncFunction[js.Any]): Self = StObject.set(x, "createAsyncFunction", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMiddleware(
+        inline def setMiddleware(
           value: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
         ): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
       }

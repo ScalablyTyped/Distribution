@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "highcharts-react-official"
-version := "3.0.0-8731ea"
+version := "3.0.0-5e7fe0"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
-  "org.scalablytyped" %%% "highcharts" % "8.2.2-5eece4",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-344a29",
+  "org.scalablytyped" %%% "highcharts" % "8.2.2-ea0196",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-49dd4c",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-76d083",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -18,31 +18,23 @@ trait OnInputLifecycle extends StObject {
 }
 object OnInputLifecycle {
   
-  @scala.inline
-  def apply(): OnInputLifecycle = {
+  inline def apply(): OnInputLifecycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnInputLifecycle]
   }
   
-  @scala.inline
-  implicit class OnInputLifecycleMutableBuilder[Self <: OnInputLifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: OnInputLifecycle](x: Self) {
     
-    @scala.inline
-    def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitionEvents(value: TransitionEvents): Self = StObject.set(x, "transitionEvents", value.asInstanceOf[js.Any])
+    inline def setTransitionEvents(value: TransitionEvents): Self = StObject.set(x, "transitionEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionEventsUndefined: Self = StObject.set(x, "transitionEvents", js.undefined)
+    inline def setTransitionEventsUndefined: Self = StObject.set(x, "transitionEvents", js.undefined)
     
-    @scala.inline
-    def setTransitionEventsVarargs(value: TransitionEvent*): Self = StObject.set(x, "transitionEvents", js.Array(value :_*))
+    inline def setTransitionEventsVarargs(value: TransitionEvent*): Self = StObject.set(x, "transitionEvents", js.Array(value :_*))
   }
 }

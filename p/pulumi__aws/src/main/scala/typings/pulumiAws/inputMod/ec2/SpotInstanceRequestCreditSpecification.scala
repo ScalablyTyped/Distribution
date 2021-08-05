@@ -14,19 +14,15 @@ trait SpotInstanceRequestCreditSpecification extends StObject {
 }
 object SpotInstanceRequestCreditSpecification {
   
-  @scala.inline
-  def apply(): SpotInstanceRequestCreditSpecification = {
+  inline def apply(): SpotInstanceRequestCreditSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotInstanceRequestCreditSpecification]
   }
   
-  @scala.inline
-  implicit class SpotInstanceRequestCreditSpecificationMutableBuilder[Self <: SpotInstanceRequestCreditSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: SpotInstanceRequestCreditSpecification](x: Self) {
     
-    @scala.inline
-    def setCpuCredits(value: Input[String]): Self = StObject.set(x, "cpuCredits", value.asInstanceOf[js.Any])
+    inline def setCpuCredits(value: Input[String]): Self = StObject.set(x, "cpuCredits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCreditsUndefined: Self = StObject.set(x, "cpuCredits", js.undefined)
+    inline def setCpuCreditsUndefined: Self = StObject.set(x, "cpuCredits", js.undefined)
   }
 }

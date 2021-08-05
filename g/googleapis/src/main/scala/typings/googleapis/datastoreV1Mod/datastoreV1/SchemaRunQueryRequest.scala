@@ -33,37 +33,27 @@ trait SchemaRunQueryRequest extends StObject {
 }
 object SchemaRunQueryRequest {
   
-  @scala.inline
-  def apply(): SchemaRunQueryRequest = {
+  inline def apply(): SchemaRunQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRunQueryRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRunQueryRequestMutableBuilder[Self <: SchemaRunQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRunQueryRequest](x: Self) {
     
-    @scala.inline
-    def setGqlQuery(value: SchemaGqlQuery): Self = StObject.set(x, "gqlQuery", value.asInstanceOf[js.Any])
+    inline def setGqlQuery(value: SchemaGqlQuery): Self = StObject.set(x, "gqlQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGqlQueryUndefined: Self = StObject.set(x, "gqlQuery", js.undefined)
+    inline def setGqlQueryUndefined: Self = StObject.set(x, "gqlQuery", js.undefined)
     
-    @scala.inline
-    def setPartitionId(value: SchemaPartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
+    inline def setPartitionId(value: SchemaPartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
+    inline def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReadOptions(value: SchemaReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
+    inline def setReadOptions(value: SchemaReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
+    inline def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
   }
 }

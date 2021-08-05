@@ -17,17 +17,14 @@ trait NumberTypeAnnotation_
 }
 object NumberTypeAnnotation_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): NumberTypeAnnotation_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): NumberTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumberTypeAnnotation")
     __obj.asInstanceOf[NumberTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class NumberTypeAnnotation_MutableBuilder[Self <: NumberTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: NumberTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: NumberTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NumberTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

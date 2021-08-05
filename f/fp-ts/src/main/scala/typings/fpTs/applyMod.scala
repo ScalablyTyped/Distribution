@@ -19,8 +19,7 @@ object applyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sequenceS[F](F: Apply[F]): js.Function1[
+  inline def sequenceS[F](F: Apply[F]): js.Function1[
     /* r */ EnforceNonEmptyRecord[
       Record[
         String, 
@@ -37,8 +36,7 @@ object applyMod {
     ], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, {[ K in keyof NER ]: [NER[K]] extends [HKT<F, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Apply1[F]): js.Function1[
+  inline def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Apply1[F]): js.Function1[
     /* r */ EnforceNonEmptyRecord[
       Record[
         String, 
@@ -55,8 +53,7 @@ object applyMod {
     ], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, {[ K in keyof NER ]: [NER[K]] extends [Kind<F, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Apply2[F]): js.Function1[
+  inline def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Apply2[F]): js.Function1[
     /* r */ (EnforceNonEmptyRecord[
       Record[
         String, 
@@ -79,8 +76,7 @@ object applyMod {
     ]), 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {[ K in keyof NER ]: [NER[K]] extends [Kind2<F, any, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Apply3[F]): js.Function1[
+  inline def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Apply3[F]): js.Function1[
     /* r */ (EnforceNonEmptyRecord[
       Record[
         String, 
@@ -103,8 +99,7 @@ object applyMod {
     ]), 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, {[ K in keyof NER ]: [NER[K]] extends [Kind3<F, any, any, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Apply4[F]): js.Function1[
+  inline def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Apply4[F]): js.Function1[
     /* r */ (EnforceNonEmptyRecord[
       Record[
         String, 
@@ -127,8 +122,7 @@ object applyMod {
     ]), 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, {[ K in keyof NER ]: [NER[K]] extends [Kind4<F, any, any, any, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Apply2C[F, E]): js.Function1[
+  inline def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Apply2C[F, E]): js.Function1[
     /* r */ EnforceNonEmptyRecord[
       Record[
         String, 
@@ -145,8 +139,7 @@ object applyMod {
     ], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {[ K in keyof NER ]: [NER[K]] extends [Kind2<F, any, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Apply3C[F, E]): js.Function1[
+  inline def sequenceS[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Apply3C[F, E]): js.Function1[
     /* r */ (EnforceNonEmptyRecord[
       Record[
         String, 
@@ -170,8 +163,7 @@ object applyMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, {[ K in keyof NER ]: [NER[K]] extends [Kind3<F, any, any, infer A>]? A : never}> */ js.Any
   ]]
   
-  @scala.inline
-  def sequenceT[F](F: Apply[F]): js.Function1[
+  inline def sequenceT[F](F: Apply[F]): js.Function1[
     /* t */ (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ js.Any
     ]) & `0`, 
@@ -182,8 +174,7 @@ object applyMod {
     ]) & `0`, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, {[ K in keyof T ]: [T[K]] extends [HKT<F, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Apply1[F]): js.Function1[
+  inline def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Apply1[F]): js.Function1[
     /* t */ (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, any> */ js.Any
     ]) & `0`, 
@@ -194,8 +185,7 @@ object applyMod {
     ]) & `0`, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, {[ K in keyof T ]: [T[K]] extends [Kind<F, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Apply2[F]): js.Function1[
+  inline def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Apply2[F]): js.Function1[
     /* t */ (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, any> */ js.Any
     ]) & `0`, 
@@ -206,8 +196,7 @@ object applyMod {
     ]) & `0`, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {[ K in keyof T ]: [T[K]] extends [Kind2<F, E, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Apply3[F]): js.Function1[
+  inline def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Apply3[F]): js.Function1[
     /* t */ (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, any> */ js.Any
     ]) & `0`, 
@@ -218,8 +207,7 @@ object applyMod {
     ]) & `0`, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, {[ K in keyof T ]: [T[K]] extends [Kind3<F, R, E, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Apply4[F]): js.Function1[
+  inline def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Apply4[F]): js.Function1[
     /* t */ (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, any> */ js.Any
     ]) & `0`, 
@@ -230,8 +218,7 @@ object applyMod {
     ]) & `0`, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, {[ K in keyof T ]: [T[K]] extends [Kind4<F, S, R, E, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Apply2C[F, E]): js.Function1[
+  inline def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Apply2C[F, E]): js.Function1[
     /* t */ (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, any> */ js.Any
     ]) & `0`, 
@@ -242,8 +229,7 @@ object applyMod {
     ]) & `0`, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, {[ K in keyof T ]: [T[K]] extends [Kind2<F, E, infer A>]? A : never}> */ js.Any
   ]]
-  @scala.inline
-  def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Apply3C[F, E]): js.Function1[
+  inline def sequenceT[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Apply3C[F, E]): js.Function1[
     /* t */ (js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, any> */ js.Any
     ]) & `0`, 
@@ -266,8 +252,7 @@ object applyMod {
   }
   object Apply {
     
-    @scala.inline
-    def apply[F](
+    inline def apply[F](
       URI: F,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any) => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
@@ -276,11 +261,9 @@ object applyMod {
       __obj.asInstanceOf[Apply[F]]
     }
     
-    @scala.inline
-    implicit class ApplyMutableBuilder[Self <: Apply[?], F] (val x: Self & Apply[F]) extends AnyVal {
+    extension [Self <: Apply[?], F](x: Self & Apply[F]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any) => js.Any
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     }
@@ -297,8 +280,7 @@ object applyMod {
   }
   object Apply1 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: F,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any) => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
@@ -307,11 +289,9 @@ object applyMod {
       __obj.asInstanceOf[Apply1[F]]
     }
     
-    @scala.inline
-    implicit class Apply1MutableBuilder[Self <: Apply1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & Apply1[F]) extends AnyVal {
+    extension [Self <: Apply1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & Apply1[F]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any) => js.Any
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     }
@@ -328,8 +308,7 @@ object applyMod {
   }
   object Apply2 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: F,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
@@ -338,11 +317,9 @@ object applyMod {
       __obj.asInstanceOf[Apply2[F]]
     }
     
-    @scala.inline
-    implicit class Apply2MutableBuilder[Self <: Apply2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Apply2[F]) extends AnyVal {
+    extension [Self <: Apply2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Apply2[F]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     }
@@ -359,8 +336,7 @@ object applyMod {
   }
   object Apply2C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: F,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
@@ -370,11 +346,9 @@ object applyMod {
       __obj.asInstanceOf[Apply2C[F, E]]
     }
     
-    @scala.inline
-    implicit class Apply2CMutableBuilder[Self <: Apply2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (Apply2C[F, E])) extends AnyVal {
+    extension [Self <: Apply2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (Apply2C[F, E])) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     }
@@ -391,8 +365,7 @@ object applyMod {
   }
   object Apply3 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: F,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
@@ -401,11 +374,9 @@ object applyMod {
       __obj.asInstanceOf[Apply3[F]]
     }
     
-    @scala.inline
-    implicit class Apply3MutableBuilder[Self <: Apply3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Apply3[F]) extends AnyVal {
+    extension [Self <: Apply3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Apply3[F]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     }
@@ -422,8 +393,7 @@ object applyMod {
   }
   object Apply3C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       URI: F,
       _E: E,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
@@ -433,11 +403,9 @@ object applyMod {
       __obj.asInstanceOf[Apply3C[F, E]]
     }
     
-    @scala.inline
-    implicit class Apply3CMutableBuilder[Self <: Apply3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (Apply3C[F, E])) extends AnyVal {
+    extension [Self <: Apply3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (Apply3C[F, E])) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     }
@@ -454,8 +422,7 @@ object applyMod {
   }
   object Apply4 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: F,
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any) => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
@@ -464,11 +431,9 @@ object applyMod {
       __obj.asInstanceOf[Apply4[F]]
     }
     
-    @scala.inline
-    implicit class Apply4MutableBuilder[Self <: Apply4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Apply4[F]) extends AnyVal {
+    extension [Self <: Apply4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Apply4[F]) {
       
-      @scala.inline
-      def setAp(
+      inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any) => js.Any
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     }

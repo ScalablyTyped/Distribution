@@ -15,19 +15,15 @@ trait TypeofTreeGrid extends StObject {
 }
 object TypeofTreeGrid {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: TreeGrid): TypeofTreeGrid = {
+  inline def apply(Locale: js.Any, fn: TreeGrid): TypeofTreeGrid = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTreeGrid]
   }
   
-  @scala.inline
-  implicit class TypeofTreeGridMutableBuilder[Self <: TypeofTreeGrid] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTreeGrid](x: Self) {
     
-    @scala.inline
-    def setFn(value: TreeGrid): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TreeGrid): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

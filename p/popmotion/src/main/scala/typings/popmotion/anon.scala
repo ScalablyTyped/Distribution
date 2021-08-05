@@ -17,20 +17,16 @@ object anon {
   }
   object Damping {
     
-    @scala.inline
-    def apply(damping: Double, stiffness: Double): Damping = {
+    inline def apply(damping: Double, stiffness: Double): Damping = {
       val __obj = js.Dynamic.literal(damping = damping.asInstanceOf[js.Any], stiffness = stiffness.asInstanceOf[js.Any])
       __obj.asInstanceOf[Damping]
     }
     
-    @scala.inline
-    implicit class DampingMutableBuilder[Self <: Damping] (val x: Self) extends AnyVal {
+    extension [Self <: Damping](x: Self) {
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +38,16 @@ object anon {
   }
   object Done {
     
-    @scala.inline
-    def apply[V](done: Boolean, value: V): Done[V] = {
+    inline def apply[V](done: Boolean, value: V): Done[V] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done[V]]
     }
     
-    @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[?], V] (val x: Self & Done[V]) extends AnyVal {
+    extension [Self <: Done[?], V](x: Self & Done[V]) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,20 +65,16 @@ object anon {
   }
   object Start {
     
-    @scala.inline
-    def apply(start: () => Unit, stop: () => Boolean): Start = {
+    inline def apply(start: () => Unit, stop: () => Boolean): Start = {
       val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[Start]
     }
     
-    @scala.inline
-    implicit class StartMutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+    extension [Self <: Start](x: Self) {
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Boolean): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Boolean): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -96,17 +84,14 @@ object anon {
   }
   object Stop {
     
-    @scala.inline
-    def apply(stop: () => Unit): Stop = {
+    inline def apply(stop: () => Unit): Stop = {
       val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[Stop]
     }
     
-    @scala.inline
-    implicit class StopMutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
+    extension [Self <: Stop](x: Self) {
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -128,20 +113,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

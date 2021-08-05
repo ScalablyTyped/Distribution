@@ -12,16 +12,13 @@ trait TypeofSkeletonClipping extends StObject {
 }
 object TypeofSkeletonClipping {
   
-  @scala.inline
-  def apply(makeClockwise: ArrayLike[Double] => Unit): TypeofSkeletonClipping = {
+  inline def apply(makeClockwise: ArrayLike[Double] => Unit): TypeofSkeletonClipping = {
     val __obj = js.Dynamic.literal(makeClockwise = js.Any.fromFunction1(makeClockwise))
     __obj.asInstanceOf[TypeofSkeletonClipping]
   }
   
-  @scala.inline
-  implicit class TypeofSkeletonClippingMutableBuilder[Self <: TypeofSkeletonClipping] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSkeletonClipping](x: Self) {
     
-    @scala.inline
-    def setMakeClockwise(value: ArrayLike[Double] => Unit): Self = StObject.set(x, "makeClockwise", js.Any.fromFunction1(value))
+    inline def setMakeClockwise(value: ArrayLike[Double] => Unit): Self = StObject.set(x, "makeClockwise", js.Any.fromFunction1(value))
   }
 }

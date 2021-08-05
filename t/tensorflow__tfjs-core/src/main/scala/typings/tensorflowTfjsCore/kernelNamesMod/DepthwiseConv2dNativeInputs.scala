@@ -13,25 +13,19 @@ trait DepthwiseConv2dNativeInputs extends StObject {
 }
 object DepthwiseConv2dNativeInputs {
   
-  @scala.inline
-  def apply(): DepthwiseConv2dNativeInputs = {
+  inline def apply(): DepthwiseConv2dNativeInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DepthwiseConv2dNativeInputs]
   }
   
-  @scala.inline
-  implicit class DepthwiseConv2dNativeInputsMutableBuilder[Self <: DepthwiseConv2dNativeInputs] (val x: Self) extends AnyVal {
+  extension [Self <: DepthwiseConv2dNativeInputs](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

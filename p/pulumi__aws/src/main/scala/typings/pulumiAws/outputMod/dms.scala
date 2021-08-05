@@ -30,32 +30,24 @@ object dms {
   }
   object EndpointElasticsearchSettings {
     
-    @scala.inline
-    def apply(endpointUri: String, serviceAccessRoleArn: String): EndpointElasticsearchSettings = {
+    inline def apply(endpointUri: String, serviceAccessRoleArn: String): EndpointElasticsearchSettings = {
       val __obj = js.Dynamic.literal(endpointUri = endpointUri.asInstanceOf[js.Any], serviceAccessRoleArn = serviceAccessRoleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointElasticsearchSettings]
     }
     
-    @scala.inline
-    implicit class EndpointElasticsearchSettingsMutableBuilder[Self <: EndpointElasticsearchSettings] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointElasticsearchSettings](x: Self) {
       
-      @scala.inline
-      def setEndpointUri(value: String): Self = StObject.set(x, "endpointUri", value.asInstanceOf[js.Any])
+      inline def setEndpointUri(value: String): Self = StObject.set(x, "endpointUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorRetryDuration(value: Double): Self = StObject.set(x, "errorRetryDuration", value.asInstanceOf[js.Any])
+      inline def setErrorRetryDuration(value: Double): Self = StObject.set(x, "errorRetryDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorRetryDurationUndefined: Self = StObject.set(x, "errorRetryDuration", js.undefined)
+      inline def setErrorRetryDurationUndefined: Self = StObject.set(x, "errorRetryDuration", js.undefined)
       
-      @scala.inline
-      def setFullLoadErrorPercentage(value: Double): Self = StObject.set(x, "fullLoadErrorPercentage", value.asInstanceOf[js.Any])
+      inline def setFullLoadErrorPercentage(value: Double): Self = StObject.set(x, "fullLoadErrorPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullLoadErrorPercentageUndefined: Self = StObject.set(x, "fullLoadErrorPercentage", js.undefined)
+      inline def setFullLoadErrorPercentageUndefined: Self = StObject.set(x, "fullLoadErrorPercentage", js.undefined)
       
-      @scala.inline
-      def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "serviceAccessRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "serviceAccessRoleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,23 +65,18 @@ object dms {
   }
   object EndpointKafkaSettings {
     
-    @scala.inline
-    def apply(broker: String): EndpointKafkaSettings = {
+    inline def apply(broker: String): EndpointKafkaSettings = {
       val __obj = js.Dynamic.literal(broker = broker.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointKafkaSettings]
     }
     
-    @scala.inline
-    implicit class EndpointKafkaSettingsMutableBuilder[Self <: EndpointKafkaSettings] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointKafkaSettings](x: Self) {
       
-      @scala.inline
-      def setBroker(value: String): Self = StObject.set(x, "broker", value.asInstanceOf[js.Any])
+      inline def setBroker(value: String): Self = StObject.set(x, "broker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }
   }
   
@@ -112,32 +99,24 @@ object dms {
   }
   object EndpointKinesisSettings {
     
-    @scala.inline
-    def apply(): EndpointKinesisSettings = {
+    inline def apply(): EndpointKinesisSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointKinesisSettings]
     }
     
-    @scala.inline
-    implicit class EndpointKinesisSettingsMutableBuilder[Self <: EndpointKinesisSettings] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointKinesisSettings](x: Self) {
       
-      @scala.inline
-      def setMessageFormat(value: String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+      inline def setMessageFormat(value: String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+      inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
       
-      @scala.inline
-      def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "serviceAccessRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "serviceAccessRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "serviceAccessRoleArn", js.undefined)
+      inline def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "serviceAccessRoleArn", js.undefined)
       
-      @scala.inline
-      def setStreamArn(value: String): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
+      inline def setStreamArn(value: String): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamArnUndefined: Self = StObject.set(x, "streamArn", js.undefined)
+      inline def setStreamArnUndefined: Self = StObject.set(x, "streamArn", js.undefined)
     }
   }
   
@@ -175,50 +154,36 @@ object dms {
   }
   object EndpointMongodbSettings {
     
-    @scala.inline
-    def apply(): EndpointMongodbSettings = {
+    inline def apply(): EndpointMongodbSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointMongodbSettings]
     }
     
-    @scala.inline
-    implicit class EndpointMongodbSettingsMutableBuilder[Self <: EndpointMongodbSettings] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointMongodbSettings](x: Self) {
       
-      @scala.inline
-      def setAuthMechanism(value: String): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
+      inline def setAuthMechanism(value: String): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthMechanismUndefined: Self = StObject.set(x, "authMechanism", js.undefined)
+      inline def setAuthMechanismUndefined: Self = StObject.set(x, "authMechanism", js.undefined)
       
-      @scala.inline
-      def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
+      inline def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthSourceUndefined: Self = StObject.set(x, "authSource", js.undefined)
+      inline def setAuthSourceUndefined: Self = StObject.set(x, "authSource", js.undefined)
       
-      @scala.inline
-      def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+      inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
+      inline def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
       
-      @scala.inline
-      def setDocsToInvestigate(value: String): Self = StObject.set(x, "docsToInvestigate", value.asInstanceOf[js.Any])
+      inline def setDocsToInvestigate(value: String): Self = StObject.set(x, "docsToInvestigate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsToInvestigateUndefined: Self = StObject.set(x, "docsToInvestigate", js.undefined)
+      inline def setDocsToInvestigateUndefined: Self = StObject.set(x, "docsToInvestigate", js.undefined)
       
-      @scala.inline
-      def setExtractDocId(value: String): Self = StObject.set(x, "extractDocId", value.asInstanceOf[js.Any])
+      inline def setExtractDocId(value: String): Self = StObject.set(x, "extractDocId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractDocIdUndefined: Self = StObject.set(x, "extractDocId", js.undefined)
+      inline def setExtractDocIdUndefined: Self = StObject.set(x, "extractDocId", js.undefined)
       
-      @scala.inline
-      def setNestingLevel(value: String): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+      inline def setNestingLevel(value: String): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+      inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
     }
   }
   
@@ -261,56 +226,40 @@ object dms {
   }
   object EndpointS3Settings {
     
-    @scala.inline
-    def apply(): EndpointS3Settings = {
+    inline def apply(): EndpointS3Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointS3Settings]
     }
     
-    @scala.inline
-    implicit class EndpointS3SettingsMutableBuilder[Self <: EndpointS3Settings] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointS3Settings](x: Self) {
       
-      @scala.inline
-      def setBucketFolder(value: String): Self = StObject.set(x, "bucketFolder", value.asInstanceOf[js.Any])
+      inline def setBucketFolder(value: String): Self = StObject.set(x, "bucketFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketFolderUndefined: Self = StObject.set(x, "bucketFolder", js.undefined)
+      inline def setBucketFolderUndefined: Self = StObject.set(x, "bucketFolder", js.undefined)
       
-      @scala.inline
-      def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+      inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
       
-      @scala.inline
-      def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
+      inline def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
+      inline def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
       
-      @scala.inline
-      def setCsvDelimiter(value: String): Self = StObject.set(x, "csvDelimiter", value.asInstanceOf[js.Any])
+      inline def setCsvDelimiter(value: String): Self = StObject.set(x, "csvDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvDelimiterUndefined: Self = StObject.set(x, "csvDelimiter", js.undefined)
+      inline def setCsvDelimiterUndefined: Self = StObject.set(x, "csvDelimiter", js.undefined)
       
-      @scala.inline
-      def setCsvRowDelimiter(value: String): Self = StObject.set(x, "csvRowDelimiter", value.asInstanceOf[js.Any])
+      inline def setCsvRowDelimiter(value: String): Self = StObject.set(x, "csvRowDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvRowDelimiterUndefined: Self = StObject.set(x, "csvRowDelimiter", js.undefined)
+      inline def setCsvRowDelimiterUndefined: Self = StObject.set(x, "csvRowDelimiter", js.undefined)
       
-      @scala.inline
-      def setExternalTableDefinition(value: String): Self = StObject.set(x, "externalTableDefinition", value.asInstanceOf[js.Any])
+      inline def setExternalTableDefinition(value: String): Self = StObject.set(x, "externalTableDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalTableDefinitionUndefined: Self = StObject.set(x, "externalTableDefinition", js.undefined)
+      inline def setExternalTableDefinitionUndefined: Self = StObject.set(x, "externalTableDefinition", js.undefined)
       
-      @scala.inline
-      def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "serviceAccessRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "serviceAccessRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "serviceAccessRoleArn", js.undefined)
+      inline def setServiceAccessRoleArnUndefined: Self = StObject.set(x, "serviceAccessRoleArn", js.undefined)
     }
   }
 }

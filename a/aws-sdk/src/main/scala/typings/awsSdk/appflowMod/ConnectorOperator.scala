@@ -78,97 +78,67 @@ trait ConnectorOperator extends StObject {
 }
 object ConnectorOperator {
   
-  @scala.inline
-  def apply(): ConnectorOperator = {
+  inline def apply(): ConnectorOperator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorOperator]
   }
   
-  @scala.inline
-  implicit class ConnectorOperatorMutableBuilder[Self <: ConnectorOperator] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorOperator](x: Self) {
     
-    @scala.inline
-    def setAmplitude(value: AmplitudeConnectorOperator): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
+    inline def setAmplitude(value: AmplitudeConnectorOperator): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
+    inline def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
-    @scala.inline
-    def setDatadog(value: DatadogConnectorOperator): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
+    inline def setDatadog(value: DatadogConnectorOperator): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
+    inline def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
     
-    @scala.inline
-    def setDynatrace(value: DynatraceConnectorOperator): Self = StObject.set(x, "Dynatrace", value.asInstanceOf[js.Any])
+    inline def setDynatrace(value: DynatraceConnectorOperator): Self = StObject.set(x, "Dynatrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynatraceUndefined: Self = StObject.set(x, "Dynatrace", js.undefined)
+    inline def setDynatraceUndefined: Self = StObject.set(x, "Dynatrace", js.undefined)
     
-    @scala.inline
-    def setGoogleAnalytics(value: GoogleAnalyticsConnectorOperator): Self = StObject.set(x, "GoogleAnalytics", value.asInstanceOf[js.Any])
+    inline def setGoogleAnalytics(value: GoogleAnalyticsConnectorOperator): Self = StObject.set(x, "GoogleAnalytics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
+    inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
     
-    @scala.inline
-    def setInforNexus(value: InforNexusConnectorOperator): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
+    inline def setInforNexus(value: InforNexusConnectorOperator): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
+    inline def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
     
-    @scala.inline
-    def setMarketo(value: MarketoConnectorOperator): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
+    inline def setMarketo(value: MarketoConnectorOperator): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
+    inline def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
     
-    @scala.inline
-    def setS3(value: S3ConnectorOperator): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3ConnectorOperator): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
-    @scala.inline
-    def setSalesforce(value: SalesforceConnectorOperator): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
+    inline def setSalesforce(value: SalesforceConnectorOperator): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
+    inline def setSalesforceUndefined: Self = StObject.set(x, "Salesforce", js.undefined)
     
-    @scala.inline
-    def setServiceNow(value: ServiceNowConnectorOperator): Self = StObject.set(x, "ServiceNow", value.asInstanceOf[js.Any])
+    inline def setServiceNow(value: ServiceNowConnectorOperator): Self = StObject.set(x, "ServiceNow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNowUndefined: Self = StObject.set(x, "ServiceNow", js.undefined)
+    inline def setServiceNowUndefined: Self = StObject.set(x, "ServiceNow", js.undefined)
     
-    @scala.inline
-    def setSingular(value: SingularConnectorOperator): Self = StObject.set(x, "Singular", value.asInstanceOf[js.Any])
+    inline def setSingular(value: SingularConnectorOperator): Self = StObject.set(x, "Singular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingularUndefined: Self = StObject.set(x, "Singular", js.undefined)
+    inline def setSingularUndefined: Self = StObject.set(x, "Singular", js.undefined)
     
-    @scala.inline
-    def setSlack(value: SlackConnectorOperator): Self = StObject.set(x, "Slack", value.asInstanceOf[js.Any])
+    inline def setSlack(value: SlackConnectorOperator): Self = StObject.set(x, "Slack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlackUndefined: Self = StObject.set(x, "Slack", js.undefined)
+    inline def setSlackUndefined: Self = StObject.set(x, "Slack", js.undefined)
     
-    @scala.inline
-    def setTrendmicro(value: TrendmicroConnectorOperator): Self = StObject.set(x, "Trendmicro", value.asInstanceOf[js.Any])
+    inline def setTrendmicro(value: TrendmicroConnectorOperator): Self = StObject.set(x, "Trendmicro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrendmicroUndefined: Self = StObject.set(x, "Trendmicro", js.undefined)
+    inline def setTrendmicroUndefined: Self = StObject.set(x, "Trendmicro", js.undefined)
     
-    @scala.inline
-    def setVeeva(value: VeevaConnectorOperator): Self = StObject.set(x, "Veeva", value.asInstanceOf[js.Any])
+    inline def setVeeva(value: VeevaConnectorOperator): Self = StObject.set(x, "Veeva", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVeevaUndefined: Self = StObject.set(x, "Veeva", js.undefined)
+    inline def setVeevaUndefined: Self = StObject.set(x, "Veeva", js.undefined)
     
-    @scala.inline
-    def setZendesk(value: ZendeskConnectorOperator): Self = StObject.set(x, "Zendesk", value.asInstanceOf[js.Any])
+    inline def setZendesk(value: ZendeskConnectorOperator): Self = StObject.set(x, "Zendesk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZendeskUndefined: Self = StObject.set(x, "Zendesk", js.undefined)
+    inline def setZendeskUndefined: Self = StObject.set(x, "Zendesk", js.undefined)
   }
 }

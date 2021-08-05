@@ -19,6 +19,5 @@ class ModalActions protected ()
 }
 object ModalActions {
   
-  @scala.inline
-  def apply: ComponentClass[ModalActionsProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("ModalActions").asInstanceOf[ComponentClass[ModalActionsProps, ComponentState]]
+  inline def apply: ComponentClass[ModalActionsProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("ModalActions").asInstanceOf[ComponentClass[ModalActionsProps, ComponentState]]
 }

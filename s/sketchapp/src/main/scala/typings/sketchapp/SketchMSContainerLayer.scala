@@ -13,8 +13,7 @@ trait SketchMSContainerLayer
 }
 object SketchMSContainerLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _class: String,
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
@@ -41,13 +40,10 @@ object SketchMSContainerLayer {
     __obj.asInstanceOf[SketchMSContainerLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSContainerLayerMutableBuilder[Self <: SketchMSContainerLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSContainerLayer](x: Self) {
     
-    @scala.inline
-    def setLayers(value: js.Array[SketchMSContainerLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[SketchMSContainerLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersVarargs(value: SketchMSContainerLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: SketchMSContainerLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

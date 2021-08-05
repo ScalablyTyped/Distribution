@@ -13,19 +13,15 @@ trait DescribeTagOptionOutput extends StObject {
 }
 object DescribeTagOptionOutput {
   
-  @scala.inline
-  def apply(): DescribeTagOptionOutput = {
+  inline def apply(): DescribeTagOptionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTagOptionOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTagOptionOutputMutableBuilder[Self <: DescribeTagOptionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTagOptionOutput](x: Self) {
     
-    @scala.inline
-    def setTagOptionDetail(value: TagOptionDetail): Self = StObject.set(x, "TagOptionDetail", value.asInstanceOf[js.Any])
+    inline def setTagOptionDetail(value: TagOptionDetail): Self = StObject.set(x, "TagOptionDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagOptionDetailUndefined: Self = StObject.set(x, "TagOptionDetail", js.undefined)
+    inline def setTagOptionDetailUndefined: Self = StObject.set(x, "TagOptionDetail", js.undefined)
   }
 }

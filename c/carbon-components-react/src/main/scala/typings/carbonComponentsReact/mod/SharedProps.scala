@@ -10,8 +10,7 @@ trait SharedProps
      with typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.SharedProps
 object SharedProps {
   
-  @scala.inline
-  def apply(): SharedProps = {
+  inline def apply(): SharedProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedProps]
   }

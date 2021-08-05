@@ -20,23 +20,18 @@ trait AnimationAnimateMetadata
 }
 object AnimationAnimateMetadata {
   
-  @scala.inline
-  def apply(timings: String | Double | AnimateTimings, `type`: AnimationMetadataType): AnimationAnimateMetadata = {
+  inline def apply(timings: String | Double | AnimateTimings, `type`: AnimationMetadataType): AnimationAnimateMetadata = {
     val __obj = js.Dynamic.literal(timings = timings.asInstanceOf[js.Any], styles = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationAnimateMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationAnimateMetadataMutableBuilder[Self <: AnimationAnimateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationAnimateMetadata](x: Self) {
     
-    @scala.inline
-    def setStyles(value: AnimationStyleMetadata | AnimationKeyframesSequenceMetadata): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: AnimationStyleMetadata | AnimationKeyframesSequenceMetadata): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesNull: Self = StObject.set(x, "styles", null)
+    inline def setStylesNull: Self = StObject.set(x, "styles", null)
     
-    @scala.inline
-    def setTimings(value: String | Double | AnimateTimings): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
+    inline def setTimings(value: String | Double | AnimateTimings): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
   }
 }

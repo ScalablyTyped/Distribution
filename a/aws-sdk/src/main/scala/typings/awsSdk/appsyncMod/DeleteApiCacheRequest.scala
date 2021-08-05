@@ -13,16 +13,13 @@ trait DeleteApiCacheRequest extends StObject {
 }
 object DeleteApiCacheRequest {
   
-  @scala.inline
-  def apply(apiId: String): DeleteApiCacheRequest = {
+  inline def apply(apiId: String): DeleteApiCacheRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApiCacheRequest]
   }
   
-  @scala.inline
-  implicit class DeleteApiCacheRequestMutableBuilder[Self <: DeleteApiCacheRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApiCacheRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
   }
 }

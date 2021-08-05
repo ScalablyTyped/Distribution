@@ -10,7 +10,7 @@ trait HTMLSemanticElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLSemanticElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLSemanticElement_typekey")
   var MSHTMLDotHTMLSemanticElement_typekey: HTMLSemanticElement = js.native
   
   var accessKey: String = js.native

@@ -18,19 +18,15 @@ trait RegisterDelegatedAdministratorRequest extends StObject {
 }
 object RegisterDelegatedAdministratorRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, ServicePrincipal: ServicePrincipal): RegisterDelegatedAdministratorRequest = {
+  inline def apply(AccountId: AccountId, ServicePrincipal: ServicePrincipal): RegisterDelegatedAdministratorRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ServicePrincipal = ServicePrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDelegatedAdministratorRequest]
   }
   
-  @scala.inline
-  implicit class RegisterDelegatedAdministratorRequestMutableBuilder[Self <: RegisterDelegatedAdministratorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDelegatedAdministratorRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
+    inline def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
   }
 }

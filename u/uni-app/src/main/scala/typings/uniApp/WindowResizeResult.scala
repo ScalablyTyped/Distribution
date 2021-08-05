@@ -18,25 +18,19 @@ trait WindowResizeResult extends StObject {
 }
 object WindowResizeResult {
   
-  @scala.inline
-  def apply(): WindowResizeResult = {
+  inline def apply(): WindowResizeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowResizeResult]
   }
   
-  @scala.inline
-  implicit class WindowResizeResultMutableBuilder[Self <: WindowResizeResult] (val x: Self) extends AnyVal {
+  extension [Self <: WindowResizeResult](x: Self) {
     
-    @scala.inline
-    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+    inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
+    inline def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
     
-    @scala.inline
-    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+    inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
+    inline def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
   }
 }

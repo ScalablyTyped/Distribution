@@ -50,85 +50,59 @@ trait DisplayData extends StObject {
 }
 object DisplayData {
   
-  @scala.inline
-  def apply(): DisplayData = {
+  inline def apply(): DisplayData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayData]
   }
   
-  @scala.inline
-  implicit class DisplayDataMutableBuilder[Self <: DisplayData] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayData](x: Self) {
     
-    @scala.inline
-    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
-    @scala.inline
-    def setDurationValue(value: String): Self = StObject.set(x, "durationValue", value.asInstanceOf[js.Any])
+    inline def setDurationValue(value: String): Self = StObject.set(x, "durationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationValueUndefined: Self = StObject.set(x, "durationValue", js.undefined)
+    inline def setDurationValueUndefined: Self = StObject.set(x, "durationValue", js.undefined)
     
-    @scala.inline
-    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
+    inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
+    inline def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
-    @scala.inline
-    def setInt64Value(value: String): Self = StObject.set(x, "int64Value", value.asInstanceOf[js.Any])
+    inline def setInt64Value(value: String): Self = StObject.set(x, "int64Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt64ValueUndefined: Self = StObject.set(x, "int64Value", js.undefined)
+    inline def setInt64ValueUndefined: Self = StObject.set(x, "int64Value", js.undefined)
     
-    @scala.inline
-    def setJavaClassValue(value: String): Self = StObject.set(x, "javaClassValue", value.asInstanceOf[js.Any])
+    inline def setJavaClassValue(value: String): Self = StObject.set(x, "javaClassValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJavaClassValueUndefined: Self = StObject.set(x, "javaClassValue", js.undefined)
+    inline def setJavaClassValueUndefined: Self = StObject.set(x, "javaClassValue", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setShortStrValue(value: String): Self = StObject.set(x, "shortStrValue", value.asInstanceOf[js.Any])
+    inline def setShortStrValue(value: String): Self = StObject.set(x, "shortStrValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortStrValueUndefined: Self = StObject.set(x, "shortStrValue", js.undefined)
+    inline def setShortStrValueUndefined: Self = StObject.set(x, "shortStrValue", js.undefined)
     
-    @scala.inline
-    def setStrValue(value: String): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
+    inline def setStrValue(value: String): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrValueUndefined: Self = StObject.set(x, "strValue", js.undefined)
+    inline def setStrValueUndefined: Self = StObject.set(x, "strValue", js.undefined)
     
-    @scala.inline
-    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
+    inline def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
+    inline def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

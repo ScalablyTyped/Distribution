@@ -13,19 +13,15 @@ trait RunCommandParameters extends StObject {
 }
 object RunCommandParameters {
   
-  @scala.inline
-  def apply(RunCommandTargets: RunCommandTargets): RunCommandParameters = {
+  inline def apply(RunCommandTargets: RunCommandTargets): RunCommandParameters = {
     val __obj = js.Dynamic.literal(RunCommandTargets = RunCommandTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunCommandParameters]
   }
   
-  @scala.inline
-  implicit class RunCommandParametersMutableBuilder[Self <: RunCommandParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RunCommandParameters](x: Self) {
     
-    @scala.inline
-    def setRunCommandTargets(value: RunCommandTargets): Self = StObject.set(x, "RunCommandTargets", value.asInstanceOf[js.Any])
+    inline def setRunCommandTargets(value: RunCommandTargets): Self = StObject.set(x, "RunCommandTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunCommandTargetsVarargs(value: RunCommandTarget*): Self = StObject.set(x, "RunCommandTargets", js.Array(value :_*))
+    inline def setRunCommandTargetsVarargs(value: RunCommandTarget*): Self = StObject.set(x, "RunCommandTargets", js.Array(value :_*))
   }
 }

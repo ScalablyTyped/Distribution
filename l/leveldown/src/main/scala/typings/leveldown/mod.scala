@@ -72,20 +72,16 @@ object mod extends Shortcut {
   }
   object LevelDownBatchOptions {
     
-    @scala.inline
-    def apply(): LevelDownBatchOptions = {
+    inline def apply(): LevelDownBatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDownBatchOptions]
     }
     
-    @scala.inline
-    implicit class LevelDownBatchOptionsMutableBuilder[Self <: LevelDownBatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownBatchOptions](x: Self) {
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   
@@ -105,50 +101,36 @@ object mod extends Shortcut {
   }
   object LevelDownClearOptions {
     
-    @scala.inline
-    def apply(): LevelDownClearOptions = {
+    inline def apply(): LevelDownClearOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDownClearOptions]
     }
     
-    @scala.inline
-    implicit class LevelDownClearOptionsMutableBuilder[Self <: LevelDownClearOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownClearOptions](x: Self) {
       
-      @scala.inline
-      def setGt(value: Bytes): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+      inline def setGt(value: Bytes): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+      inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
       
-      @scala.inline
-      def setGte(value: Bytes): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+      inline def setGte(value: Bytes): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+      inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLt(value: Bytes): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+      inline def setLt(value: Bytes): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+      inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
       
-      @scala.inline
-      def setLte(value: Bytes): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+      inline def setLte(value: Bytes): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+      inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     }
   }
   
@@ -172,20 +154,16 @@ object mod extends Shortcut {
   }
   object LevelDownDelOptions {
     
-    @scala.inline
-    def apply(): LevelDownDelOptions = {
+    inline def apply(): LevelDownDelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDownDelOptions]
     }
     
-    @scala.inline
-    implicit class LevelDownDelOptionsMutableBuilder[Self <: LevelDownDelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownDelOptions](x: Self) {
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   
@@ -197,20 +175,16 @@ object mod extends Shortcut {
   }
   object LevelDownGetOptions {
     
-    @scala.inline
-    def apply(): LevelDownGetOptions = {
+    inline def apply(): LevelDownGetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDownGetOptions]
     }
     
-    @scala.inline
-    implicit class LevelDownGetOptionsMutableBuilder[Self <: LevelDownGetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownGetOptions](x: Self) {
       
-      @scala.inline
-      def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
+      inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
+      inline def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
     }
   }
   
@@ -230,8 +204,7 @@ object mod extends Shortcut {
   }
   object LevelDownIterator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       binding: js.Any,
       cache: js.Any,
       db: AbstractLevelDOWN[Bytes, Bytes],
@@ -245,23 +218,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelDownIterator]
     }
     
-    @scala.inline
-    implicit class LevelDownIteratorMutableBuilder[Self <: LevelDownIterator] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownIterator](x: Self) {
       
-      @scala.inline
-      def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+      inline def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFastFuture(value: js.Any): Self = StObject.set(x, "fastFuture", value.asInstanceOf[js.Any])
+      inline def setFastFuture(value: js.Any): Self = StObject.set(x, "fastFuture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinished(value: js.Any): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+      inline def setFinished(value: js.Any): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeek(value: Bytes => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+      inline def setSeek(value: Bytes => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     }
   }
   
@@ -273,20 +240,16 @@ object mod extends Shortcut {
   }
   object LevelDownIteratorOptions {
     
-    @scala.inline
-    def apply(): LevelDownIteratorOptions = {
+    inline def apply(): LevelDownIteratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDownIteratorOptions]
     }
     
-    @scala.inline
-    implicit class LevelDownIteratorOptionsMutableBuilder[Self <: LevelDownIteratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownIteratorOptions](x: Self) {
       
-      @scala.inline
-      def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
+      inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
+      inline def setFillCacheUndefined: Self = StObject.set(x, "fillCache", js.undefined)
     }
   }
   
@@ -310,56 +273,40 @@ object mod extends Shortcut {
   }
   object LevelDownOpenOptions {
     
-    @scala.inline
-    def apply(): LevelDownOpenOptions = {
+    inline def apply(): LevelDownOpenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDownOpenOptions]
     }
     
-    @scala.inline
-    implicit class LevelDownOpenOptionsMutableBuilder[Self <: LevelDownOpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownOpenOptions](x: Self) {
       
-      @scala.inline
-      def setBlockRestartInterval(value: Double): Self = StObject.set(x, "blockRestartInterval", value.asInstanceOf[js.Any])
+      inline def setBlockRestartInterval(value: Double): Self = StObject.set(x, "blockRestartInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockRestartIntervalUndefined: Self = StObject.set(x, "blockRestartInterval", js.undefined)
+      inline def setBlockRestartIntervalUndefined: Self = StObject.set(x, "blockRestartInterval", js.undefined)
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
+      inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
       
-      @scala.inline
-      def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+      inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+      inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
-      @scala.inline
-      def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+      inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
       
-      @scala.inline
-      def setMaxOpenFiles(value: Double): Self = StObject.set(x, "maxOpenFiles", value.asInstanceOf[js.Any])
+      inline def setMaxOpenFiles(value: Double): Self = StObject.set(x, "maxOpenFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOpenFilesUndefined: Self = StObject.set(x, "maxOpenFiles", js.undefined)
+      inline def setMaxOpenFilesUndefined: Self = StObject.set(x, "maxOpenFiles", js.undefined)
       
-      @scala.inline
-      def setWriteBufferSize(value: Double): Self = StObject.set(x, "writeBufferSize", value.asInstanceOf[js.Any])
+      inline def setWriteBufferSize(value: Double): Self = StObject.set(x, "writeBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteBufferSizeUndefined: Self = StObject.set(x, "writeBufferSize", js.undefined)
+      inline def setWriteBufferSizeUndefined: Self = StObject.set(x, "writeBufferSize", js.undefined)
     }
   }
   
@@ -371,20 +318,16 @@ object mod extends Shortcut {
   }
   object LevelDownPutOptions {
     
-    @scala.inline
-    def apply(): LevelDownPutOptions = {
+    inline def apply(): LevelDownPutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelDownPutOptions]
     }
     
-    @scala.inline
-    implicit class LevelDownPutOptionsMutableBuilder[Self <: LevelDownPutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelDownPutOptions](x: Self) {
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   

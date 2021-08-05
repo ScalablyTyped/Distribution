@@ -12,25 +12,19 @@ trait EmailRecipients extends StObject {
 }
 object EmailRecipients {
   
-  @scala.inline
-  def apply(emailAddresses: js.Array[String], tfsIds: js.Array[String]): EmailRecipients = {
+  inline def apply(emailAddresses: js.Array[String], tfsIds: js.Array[String]): EmailRecipients = {
     val __obj = js.Dynamic.literal(emailAddresses = emailAddresses.asInstanceOf[js.Any], tfsIds = tfsIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailRecipients]
   }
   
-  @scala.inline
-  implicit class EmailRecipientsMutableBuilder[Self <: EmailRecipients] (val x: Self) extends AnyVal {
+  extension [Self <: EmailRecipients](x: Self) {
     
-    @scala.inline
-    def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
+    inline def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setTfsIds(value: js.Array[String]): Self = StObject.set(x, "tfsIds", value.asInstanceOf[js.Any])
+    inline def setTfsIds(value: js.Array[String]): Self = StObject.set(x, "tfsIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfsIdsVarargs(value: String*): Self = StObject.set(x, "tfsIds", js.Array(value :_*))
+    inline def setTfsIdsVarargs(value: String*): Self = StObject.set(x, "tfsIds", js.Array(value :_*))
   }
 }

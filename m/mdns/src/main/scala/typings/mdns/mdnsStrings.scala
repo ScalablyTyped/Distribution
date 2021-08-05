@@ -8,11 +8,9 @@ object mdnsStrings {
   
   @js.native
   sealed trait serviceDown extends StObject
-  @scala.inline
-  def serviceDown: serviceDown = "serviceDown".asInstanceOf[serviceDown]
+  inline def serviceDown: serviceDown = "serviceDown".asInstanceOf[serviceDown]
   
   @js.native
   sealed trait serviceUp extends StObject
-  @scala.inline
-  def serviceUp: serviceUp = "serviceUp".asInstanceOf[serviceUp]
+  inline def serviceUp: serviceUp = "serviceUp".asInstanceOf[serviceUp]
 }

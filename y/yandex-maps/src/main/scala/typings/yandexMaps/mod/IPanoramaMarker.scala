@@ -17,8 +17,7 @@ trait IPanoramaMarker extends StObject {
 }
 object IPanoramaMarker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getIconSet: () => js.Promise[IPanoramaMarkerIconSet],
     getPanorama: () => IPanorama,
     getPosition: () => js.Array[Double],
@@ -28,19 +27,14 @@ object IPanoramaMarker {
     __obj.asInstanceOf[IPanoramaMarker]
   }
   
-  @scala.inline
-  implicit class IPanoramaMarkerMutableBuilder[Self <: IPanoramaMarker] (val x: Self) extends AnyVal {
+  extension [Self <: IPanoramaMarker](x: Self) {
     
-    @scala.inline
-    def setGetIconSet(value: () => js.Promise[IPanoramaMarkerIconSet]): Self = StObject.set(x, "getIconSet", js.Any.fromFunction0(value))
+    inline def setGetIconSet(value: () => js.Promise[IPanoramaMarkerIconSet]): Self = StObject.set(x, "getIconSet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
+    inline def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => js.Array[Double]): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => js.Array[Double]): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProperties(value: Manager): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Manager): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

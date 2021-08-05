@@ -14,19 +14,15 @@ trait CODENAME extends StObject {
 }
 object CODENAME {
   
-  @scala.inline
-  def apply(): CODENAME = {
+  inline def apply(): CODENAME = {
     val __obj = js.Dynamic.literal(CODENAME = "InfiniteTuple", ERROR = "Cannot reverse an infinite tuple")
     __obj.asInstanceOf[CODENAME]
   }
   
-  @scala.inline
-  implicit class CODENAMEMutableBuilder[Self <: CODENAME] (val x: Self) extends AnyVal {
+  extension [Self <: CODENAME](x: Self) {
     
-    @scala.inline
-    def setCODENAME(value: InfiniteTuple): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
+    inline def setCODENAME(value: InfiniteTuple): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: `Cannot reverse an infinite tuple`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: `Cannot reverse an infinite tuple`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
   }
 }

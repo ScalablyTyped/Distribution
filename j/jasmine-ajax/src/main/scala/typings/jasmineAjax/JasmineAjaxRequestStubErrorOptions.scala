@@ -12,25 +12,19 @@ trait JasmineAjaxRequestStubErrorOptions extends StObject {
 }
 object JasmineAjaxRequestStubErrorOptions {
   
-  @scala.inline
-  def apply(): JasmineAjaxRequestStubErrorOptions = {
+  inline def apply(): JasmineAjaxRequestStubErrorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JasmineAjaxRequestStubErrorOptions]
   }
   
-  @scala.inline
-  implicit class JasmineAjaxRequestStubErrorOptionsMutableBuilder[Self <: JasmineAjaxRequestStubErrorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JasmineAjaxRequestStubErrorOptions](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+    inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

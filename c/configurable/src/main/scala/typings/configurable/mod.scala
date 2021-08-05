@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](obj: T): T & Configurable[T] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[T & Configurable[T]]
+  inline def apply[T /* <: js.Object */](obj: T): T & Configurable[T] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[T & Configurable[T]]
   
   @JSImport("configurable", JSImport.Namespace)
   @js.native
@@ -32,8 +31,7 @@ object mod {
   }
   object Configurable {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       disable: String => T & Configurable[T],
       disabled: String => Boolean,
       enable: String => T & Configurable[T],
@@ -46,29 +44,21 @@ object mod {
       __obj.asInstanceOf[Configurable[T]]
     }
     
-    @scala.inline
-    implicit class ConfigurableMutableBuilder[Self <: Configurable[?], T] (val x: Self & Configurable[T]) extends AnyVal {
+    extension [Self <: Configurable[?], T](x: Self & Configurable[T]) {
       
-      @scala.inline
-      def setDisable(value: String => T & Configurable[T]): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
+      inline def setDisable(value: String => T & Configurable[T]): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabled(value: String => Boolean): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
+      inline def setDisabled(value: String => Boolean): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnable(value: String => T & Configurable[T]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+      inline def setEnable(value: String => T & Configurable[T]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnabled(value: String => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+      inline def setEnabled(value: String => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => T & Configurable[T]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => T & Configurable[T]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSettings(value: StringDictionary[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: StringDictionary[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
 }

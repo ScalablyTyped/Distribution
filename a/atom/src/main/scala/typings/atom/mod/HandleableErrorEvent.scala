@@ -18,19 +18,15 @@ trait HandleableErrorEvent extends StObject {
 }
 object HandleableErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, handle: () => Unit): HandleableErrorEvent = {
+  inline def apply(error: Error, handle: () => Unit): HandleableErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], handle = js.Any.fromFunction0(handle))
     __obj.asInstanceOf[HandleableErrorEvent]
   }
   
-  @scala.inline
-  implicit class HandleableErrorEventMutableBuilder[Self <: HandleableErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HandleableErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
+    inline def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
   }
 }

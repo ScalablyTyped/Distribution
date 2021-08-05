@@ -12,25 +12,19 @@ trait ITestIamPermissionsResponse extends StObject {
 }
 object ITestIamPermissionsResponse {
   
-  @scala.inline
-  def apply(): ITestIamPermissionsResponse = {
+  inline def apply(): ITestIamPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestIamPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class ITestIamPermissionsResponseMutableBuilder[Self <: ITestIamPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ITestIamPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsNull: Self = StObject.set(x, "permissions", null)
+    inline def setPermissionsNull: Self = StObject.set(x, "permissions", null)
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

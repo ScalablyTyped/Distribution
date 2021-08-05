@@ -13,16 +13,13 @@ trait DeleteAddressBookRequest extends StObject {
 }
 object DeleteAddressBookRequest {
   
-  @scala.inline
-  def apply(AddressBookArn: Arn): DeleteAddressBookRequest = {
+  inline def apply(AddressBookArn: Arn): DeleteAddressBookRequest = {
     val __obj = js.Dynamic.literal(AddressBookArn = AddressBookArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAddressBookRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAddressBookRequestMutableBuilder[Self <: DeleteAddressBookRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAddressBookRequest](x: Self) {
     
-    @scala.inline
-    def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
+    inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,6 @@ object refreshAuthTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def refreshAuthToken(dependencies: FirebaseDependencies): js.Promise[CompletedAuthToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshAuthToken")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CompletedAuthToken]]
-  @scala.inline
-  def refreshAuthToken(dependencies: FirebaseDependencies, forceRefresh: Boolean): js.Promise[CompletedAuthToken] = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshAuthToken")(dependencies.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompletedAuthToken]]
+  inline def refreshAuthToken(dependencies: FirebaseDependencies): js.Promise[CompletedAuthToken] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshAuthToken")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CompletedAuthToken]]
+  inline def refreshAuthToken(dependencies: FirebaseDependencies, forceRefresh: Boolean): js.Promise[CompletedAuthToken] = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshAuthToken")(dependencies.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompletedAuthToken]]
 }

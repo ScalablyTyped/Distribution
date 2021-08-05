@@ -46,8 +46,7 @@ object transferListMod {
     @JSImport("antd/lib/transfer/list", "default.defaultProps")
     @js.native
     def defaultProps: DataSource = js.native
-    @scala.inline
-    def defaultProps_=(x: DataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type RenderListFunction[T] = js.Function1[/* props */ TransferListBodyProps[T], ReactNode]
@@ -62,26 +61,20 @@ object transferListMod {
   }
   object RenderedItem {
     
-    @scala.inline
-    def apply[RecordType](item: RecordType, renderedText: String): RenderedItem[RecordType] = {
+    inline def apply[RecordType](item: RecordType, renderedText: String): RenderedItem[RecordType] = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], renderedText = renderedText.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderedItem[RecordType]]
     }
     
-    @scala.inline
-    implicit class RenderedItemMutableBuilder[Self <: RenderedItem[?], RecordType] (val x: Self & RenderedItem[RecordType]) extends AnyVal {
+    extension [Self <: RenderedItem[?], RecordType](x: Self & RenderedItem[RecordType]) {
       
-      @scala.inline
-      def setItem(value: RecordType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: RecordType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedEl(value: ReactNode): Self = StObject.set(x, "renderedEl", value.asInstanceOf[js.Any])
+      inline def setRenderedEl(value: ReactNode): Self = StObject.set(x, "renderedEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedElUndefined: Self = StObject.set(x, "renderedEl", js.undefined)
+      inline def setRenderedElUndefined: Self = StObject.set(x, "renderedEl", js.undefined)
       
-      @scala.inline
-      def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
+      inline def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,8 +274,7 @@ object transferListMod {
   }
   object TransferListProps {
     
-    @scala.inline
-    def apply[RecordType](
+    inline def apply[RecordType](
       checkedKeys: js.Array[String],
       dataSource: js.Array[RecordType],
       direction: TransferDirection,
@@ -308,119 +300,81 @@ object transferListMod {
       __obj.asInstanceOf[TransferListProps[RecordType]]
     }
     
-    @scala.inline
-    implicit class TransferListPropsMutableBuilder[Self <: TransferListProps[?], RecordType] (val x: Self & TransferListProps[RecordType]) extends AnyVal {
+    extension [Self <: TransferListProps[?], RecordType](x: Self & TransferListProps[RecordType]) {
       
-      @scala.inline
-      def setCheckedKeys(value: js.Array[String]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
+      inline def setCheckedKeys(value: js.Array[String]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedKeysVarargs(value: String*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
+      inline def setCheckedKeysVarargs(value: String*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
-      @scala.inline
-      def setDirection(value: TransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: TransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFilterOption(value: (/* filterText */ String, /* item */ RecordType) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
+      inline def setFilterOption(value: (/* filterText */ String, /* item */ RecordType) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
+      inline def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
       
-      @scala.inline
-      def setFooter(value: /* props */ TransferListProps[RecordType] => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
+      inline def setFooter(value: /* props */ TransferListProps[RecordType] => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHandleClear(value: () => Unit): Self = StObject.set(x, "handleClear", js.Any.fromFunction0(value))
+      inline def setHandleClear(value: () => Unit): Self = StObject.set(x, "handleClear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleFilter(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "handleFilter", js.Any.fromFunction1(value))
+      inline def setHandleFilter(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "handleFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemRemove(value: /* keys */ js.Array[String] => Unit): Self = StObject.set(x, "onItemRemove", js.Any.fromFunction1(value))
+      inline def setOnItemRemove(value: /* keys */ js.Array[String] => Unit): Self = StObject.set(x, "onItemRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemRemoveUndefined: Self = StObject.set(x, "onItemRemove", js.undefined)
+      inline def setOnItemRemoveUndefined: Self = StObject.set(x, "onItemRemove", js.undefined)
       
-      @scala.inline
-      def setOnItemSelect(value: (String, Boolean) => Unit): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction2(value))
+      inline def setOnItemSelect(value: (String, Boolean) => Unit): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemSelectAll(value: (js.Array[String], Boolean) => Unit): Self = StObject.set(x, "onItemSelectAll", js.Any.fromFunction2(value))
+      inline def setOnItemSelectAll(value: (js.Array[String], Boolean) => Unit): Self = StObject.set(x, "onItemSelectAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnScroll(value: UIEvent[HTMLUListElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLUListElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPagination(value: PaginationType): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: PaginationType): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: /* item */ RecordType => RenderResult): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* item */ RecordType => RenderResult): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderList(value: /* props */ TransferListBodyProps[RecordType] => ReactNode): Self = StObject.set(x, "renderList", js.Any.fromFunction1(value))
+      inline def setRenderList(value: /* props */ TransferListBodyProps[RecordType] => ReactNode): Self = StObject.set(x, "renderList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderListUndefined: Self = StObject.set(x, "renderList", js.undefined)
+      inline def setRenderListUndefined: Self = StObject.set(x, "renderList", js.undefined)
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSelectAllLabel(value: SelectAllLabel): Self = StObject.set(x, "selectAllLabel", value.asInstanceOf[js.Any])
+      inline def setSelectAllLabel(value: SelectAllLabel): Self = StObject.set(x, "selectAllLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllLabelFunction1(value: /* info */ SelectedCount => ReactNode): Self = StObject.set(x, "selectAllLabel", js.Any.fromFunction1(value))
+      inline def setSelectAllLabelFunction1(value: /* info */ SelectedCount => ReactNode): Self = StObject.set(x, "selectAllLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectAllLabelUndefined: Self = StObject.set(x, "selectAllLabel", js.undefined)
+      inline def setSelectAllLabelUndefined: Self = StObject.set(x, "selectAllLabel", js.undefined)
       
-      @scala.inline
-      def setShowRemove(value: Boolean): Self = StObject.set(x, "showRemove", value.asInstanceOf[js.Any])
+      inline def setShowRemove(value: Boolean): Self = StObject.set(x, "showRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRemoveUndefined: Self = StObject.set(x, "showRemove", js.undefined)
+      inline def setShowRemoveUndefined: Self = StObject.set(x, "showRemove", js.undefined)
       
-      @scala.inline
-      def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
+      inline def setShowSearch(value: Boolean): Self = StObject.set(x, "showSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
+      inline def setShowSearchUndefined: Self = StObject.set(x, "showSearch", js.undefined)
       
-      @scala.inline
-      def setShowSelectAll(value: Boolean): Self = StObject.set(x, "showSelectAll", value.asInstanceOf[js.Any])
+      inline def setShowSelectAll(value: Boolean): Self = StObject.set(x, "showSelectAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSelectAllUndefined: Self = StObject.set(x, "showSelectAll", js.undefined)
+      inline def setShowSelectAllUndefined: Self = StObject.set(x, "showSelectAll", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+      inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,17 +385,14 @@ object transferListMod {
   }
   object TransferListState {
     
-    @scala.inline
-    def apply(filterValue: String): TransferListState = {
+    inline def apply(filterValue: String): TransferListState = {
       val __obj = js.Dynamic.literal(filterValue = filterValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransferListState]
     }
     
-    @scala.inline
-    implicit class TransferListStateMutableBuilder[Self <: TransferListState] (val x: Self) extends AnyVal {
+    extension [Self <: TransferListState](x: Self) {
       
-      @scala.inline
-      def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
+      inline def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
     }
   }
 }

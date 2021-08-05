@@ -15,17 +15,14 @@ object anon {
   }
   object BodyLengthChecker {
     
-    @scala.inline
-    def apply(bodyLengthChecker: /* body */ js.Any => js.UndefOr[Double]): BodyLengthChecker = {
+    inline def apply(bodyLengthChecker: /* body */ js.Any => js.UndefOr[Double]): BodyLengthChecker = {
       val __obj = js.Dynamic.literal(bodyLengthChecker = js.Any.fromFunction1(bodyLengthChecker))
       __obj.asInstanceOf[BodyLengthChecker]
     }
     
-    @scala.inline
-    implicit class BodyLengthCheckerMutableBuilder[Self <: BodyLengthChecker] (val x: Self) extends AnyVal {
+    extension [Self <: BodyLengthChecker](x: Self) {
       
-      @scala.inline
-      def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
     }
   }
 }

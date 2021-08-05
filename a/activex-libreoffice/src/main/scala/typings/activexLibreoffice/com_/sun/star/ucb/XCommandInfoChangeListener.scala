@@ -26,8 +26,7 @@ trait XCommandInfoChangeListener
 }
 object XCommandInfoChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     commandInfoChange: CommandInfoChangeEvent => Unit,
     disposing: EventObject => Unit,
@@ -38,10 +37,8 @@ object XCommandInfoChangeListener {
     __obj.asInstanceOf[XCommandInfoChangeListener]
   }
   
-  @scala.inline
-  implicit class XCommandInfoChangeListenerMutableBuilder[Self <: XCommandInfoChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XCommandInfoChangeListener](x: Self) {
     
-    @scala.inline
-    def setCommandInfoChange(value: CommandInfoChangeEvent => Unit): Self = StObject.set(x, "commandInfoChange", js.Any.fromFunction1(value))
+    inline def setCommandInfoChange(value: CommandInfoChangeEvent => Unit): Self = StObject.set(x, "commandInfoChange", js.Any.fromFunction1(value))
   }
 }

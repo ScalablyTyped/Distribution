@@ -26,31 +26,23 @@ trait SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponse extends StObject
 }
 object SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponse = {
+  inline def apply(): SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponseMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p3beta1ImportProductSetsResponse](x: Self) {
     
-    @scala.inline
-    def setReferenceImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ReferenceImage]): Self = StObject.set(x, "referenceImages", value.asInstanceOf[js.Any])
+    inline def setReferenceImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ReferenceImage]): Self = StObject.set(x, "referenceImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceImagesUndefined: Self = StObject.set(x, "referenceImages", js.undefined)
+    inline def setReferenceImagesUndefined: Self = StObject.set(x, "referenceImages", js.undefined)
     
-    @scala.inline
-    def setReferenceImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value :_*))
+    inline def setReferenceImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value :_*))
     
-    @scala.inline
-    def setStatuses(value: js.Array[SchemaStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[SchemaStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+    inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    @scala.inline
-    def setStatusesVarargs(value: SchemaStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: SchemaStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
   }
 }

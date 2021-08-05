@@ -8,11 +8,9 @@ object coteStrings {
   
   @js.native
   sealed trait coteColonadded extends StObject
-  @scala.inline
-  def coteColonadded: coteColonadded = "cote:added".asInstanceOf[coteColonadded]
+  inline def coteColonadded: coteColonadded = "cote:added".asInstanceOf[coteColonadded]
   
   @js.native
   sealed trait coteColonremoved extends StObject
-  @scala.inline
-  def coteColonremoved: coteColonremoved = "cote:removed".asInstanceOf[coteColonremoved]
+  inline def coteColonremoved: coteColonremoved = "cote:removed".asInstanceOf[coteColonremoved]
 }

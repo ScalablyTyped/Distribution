@@ -13,16 +13,13 @@ trait DeleteFlowTemplateRequest extends StObject {
 }
 object DeleteFlowTemplateRequest {
   
-  @scala.inline
-  def apply(id: Urn): DeleteFlowTemplateRequest = {
+  inline def apply(id: Urn): DeleteFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFlowTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFlowTemplateRequestMutableBuilder[Self <: DeleteFlowTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFlowTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

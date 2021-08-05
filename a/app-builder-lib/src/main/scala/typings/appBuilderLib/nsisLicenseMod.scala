@@ -13,8 +13,7 @@ object nsisLicenseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeLicensePage(
+  inline def computeLicensePage(
     packager: WinPackager,
     options: NsisOptions,
     scriptGenerator: NsisScriptGenerator,

@@ -13,19 +13,15 @@ trait PartnerWatermarking extends StObject {
 }
 object PartnerWatermarking {
   
-  @scala.inline
-  def apply(): PartnerWatermarking = {
+  inline def apply(): PartnerWatermarking = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartnerWatermarking]
   }
   
-  @scala.inline
-  implicit class PartnerWatermarkingMutableBuilder[Self <: PartnerWatermarking] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerWatermarking](x: Self) {
     
-    @scala.inline
-    def setNexguardFileMarkerSettings(value: NexGuardFileMarkerSettings): Self = StObject.set(x, "NexguardFileMarkerSettings", value.asInstanceOf[js.Any])
+    inline def setNexguardFileMarkerSettings(value: NexGuardFileMarkerSettings): Self = StObject.set(x, "NexguardFileMarkerSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNexguardFileMarkerSettingsUndefined: Self = StObject.set(x, "NexguardFileMarkerSettings", js.undefined)
+    inline def setNexguardFileMarkerSettingsUndefined: Self = StObject.set(x, "NexguardFileMarkerSettings", js.undefined)
   }
 }

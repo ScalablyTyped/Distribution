@@ -13,25 +13,19 @@ trait ComponentValue extends StObject {
 }
 object ComponentValue {
   
-  @scala.inline
-  def apply(): ComponentValue = {
+  inline def apply(): ComponentValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentValue]
   }
   
-  @scala.inline
-  implicit class ComponentValueMutableBuilder[Self <: ComponentValue] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentValue](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxDropDownBox): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxDropDownBox): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

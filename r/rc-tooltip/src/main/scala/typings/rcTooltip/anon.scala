@@ -12,20 +12,16 @@ object anon {
   }
   object KeepParent {
     
-    @scala.inline
-    def apply(): KeepParent = {
+    inline def apply(): KeepParent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeepParent]
     }
     
-    @scala.inline
-    implicit class KeepParentMutableBuilder[Self <: KeepParent] (val x: Self) extends AnyVal {
+    extension [Self <: KeepParent](x: Self) {
       
-      @scala.inline
-      def setKeepParent(value: Boolean): Self = StObject.set(x, "keepParent", value.asInstanceOf[js.Any])
+      inline def setKeepParent(value: Boolean): Self = StObject.set(x, "keepParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepParentUndefined: Self = StObject.set(x, "keepParent", js.undefined)
+      inline def setKeepParentUndefined: Self = StObject.set(x, "keepParent", js.undefined)
     }
   }
 }

@@ -23,25 +23,19 @@ trait TransformResources extends StObject {
 }
 object TransformResources {
   
-  @scala.inline
-  def apply(InstanceCount: TransformInstanceCount, InstanceType: TransformInstanceType): TransformResources = {
+  inline def apply(InstanceCount: TransformInstanceCount, InstanceType: TransformInstanceType): TransformResources = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformResources]
   }
   
-  @scala.inline
-  implicit class TransformResourcesMutableBuilder[Self <: TransformResources] (val x: Self) extends AnyVal {
+  extension [Self <: TransformResources](x: Self) {
     
-    @scala.inline
-    def setInstanceCount(value: TransformInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: TransformInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: TransformInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: TransformInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
+    inline def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
   }
 }

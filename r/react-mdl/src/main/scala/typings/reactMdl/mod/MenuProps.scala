@@ -19,28 +19,21 @@ trait MenuProps
 }
 object MenuProps {
   
-  @scala.inline
-  def apply(target: String): MenuProps = {
+  inline def apply(target: String): MenuProps = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
   
-  @scala.inline
-  implicit class MenuPropsMutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
+  extension [Self <: MenuProps](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValign(value: String): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+    inline def setValign(value: String): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
+    inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
   }
 }

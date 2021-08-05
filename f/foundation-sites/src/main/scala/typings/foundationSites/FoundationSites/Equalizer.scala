@@ -19,8 +19,7 @@ trait Equalizer extends StObject {
 }
 object Equalizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyHeight: js.Array[js.Any] => Unit,
     applyHeightByRow: js.Array[js.Any] => Unit,
     destroy: () => Unit,
@@ -31,22 +30,16 @@ object Equalizer {
     __obj.asInstanceOf[Equalizer]
   }
   
-  @scala.inline
-  implicit class EqualizerMutableBuilder[Self <: Equalizer] (val x: Self) extends AnyVal {
+  extension [Self <: Equalizer](x: Self) {
     
-    @scala.inline
-    def setApplyHeight(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "applyHeight", js.Any.fromFunction1(value))
+    inline def setApplyHeight(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "applyHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplyHeightByRow(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "applyHeightByRow", js.Any.fromFunction1(value))
+    inline def setApplyHeightByRow(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "applyHeightByRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeights(value: js.Function => js.Array[js.Any]): Self = StObject.set(x, "getHeights", js.Any.fromFunction1(value))
+    inline def setGetHeights(value: js.Function => js.Array[js.Any]): Self = StObject.set(x, "getHeights", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHeightsByRow(value: js.Function => js.Array[js.Any]): Self = StObject.set(x, "getHeightsByRow", js.Any.fromFunction1(value))
+    inline def setGetHeightsByRow(value: js.Function => js.Array[js.Any]): Self = StObject.set(x, "getHeightsByRow", js.Any.fromFunction1(value))
   }
 }

@@ -18,25 +18,19 @@ trait LocalDeviceResourceData extends StObject {
 }
 object LocalDeviceResourceData {
   
-  @scala.inline
-  def apply(): LocalDeviceResourceData = {
+  inline def apply(): LocalDeviceResourceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalDeviceResourceData]
   }
   
-  @scala.inline
-  implicit class LocalDeviceResourceDataMutableBuilder[Self <: LocalDeviceResourceData] (val x: Self) extends AnyVal {
+  extension [Self <: LocalDeviceResourceData](x: Self) {
     
-    @scala.inline
-    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = StObject.set(x, "GroupOwnerSetting", value.asInstanceOf[js.Any])
+    inline def setGroupOwnerSetting(value: GroupOwnerSetting): Self = StObject.set(x, "GroupOwnerSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupOwnerSettingUndefined: Self = StObject.set(x, "GroupOwnerSetting", js.undefined)
+    inline def setGroupOwnerSettingUndefined: Self = StObject.set(x, "GroupOwnerSetting", js.undefined)
     
-    @scala.inline
-    def setSourcePath(value: string): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: string): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
+    inline def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
   }
 }

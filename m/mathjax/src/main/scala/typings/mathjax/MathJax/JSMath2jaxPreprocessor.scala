@@ -16,16 +16,13 @@ trait JSMath2jaxPreprocessor extends StObject {
 }
 object JSMath2jaxPreprocessor {
   
-  @scala.inline
-  def apply(preview: js.Any): JSMath2jaxPreprocessor = {
+  inline def apply(preview: js.Any): JSMath2jaxPreprocessor = {
     val __obj = js.Dynamic.literal(preview = preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSMath2jaxPreprocessor]
   }
   
-  @scala.inline
-  implicit class JSMath2jaxPreprocessorMutableBuilder[Self <: JSMath2jaxPreprocessor] (val x: Self) extends AnyVal {
+  extension [Self <: JSMath2jaxPreprocessor](x: Self) {
     
-    @scala.inline
-    def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }
 }

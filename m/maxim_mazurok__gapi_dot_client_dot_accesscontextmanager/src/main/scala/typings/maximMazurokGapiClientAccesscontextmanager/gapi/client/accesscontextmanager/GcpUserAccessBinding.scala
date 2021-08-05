@@ -27,34 +27,25 @@ trait GcpUserAccessBinding extends StObject {
 }
 object GcpUserAccessBinding {
   
-  @scala.inline
-  def apply(): GcpUserAccessBinding = {
+  inline def apply(): GcpUserAccessBinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcpUserAccessBinding]
   }
   
-  @scala.inline
-  implicit class GcpUserAccessBindingMutableBuilder[Self <: GcpUserAccessBinding] (val x: Self) extends AnyVal {
+  extension [Self <: GcpUserAccessBinding](x: Self) {
     
-    @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
+    inline def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
+    inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
+    inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
+    inline def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

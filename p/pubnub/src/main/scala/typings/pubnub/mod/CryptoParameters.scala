@@ -17,37 +17,27 @@ trait CryptoParameters extends StObject {
 }
 object CryptoParameters {
   
-  @scala.inline
-  def apply(): CryptoParameters = {
+  inline def apply(): CryptoParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CryptoParameters]
   }
   
-  @scala.inline
-  implicit class CryptoParametersMutableBuilder[Self <: CryptoParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CryptoParameters](x: Self) {
     
-    @scala.inline
-    def setEncryptKey(value: Boolean): Self = StObject.set(x, "encryptKey", value.asInstanceOf[js.Any])
+    inline def setEncryptKey(value: Boolean): Self = StObject.set(x, "encryptKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptKeyUndefined: Self = StObject.set(x, "encryptKey", js.undefined)
+    inline def setEncryptKeyUndefined: Self = StObject.set(x, "encryptKey", js.undefined)
     
-    @scala.inline
-    def setKeyEncoding(value: String): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
+    inline def setKeyEncoding(value: String): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
+    inline def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
     
-    @scala.inline
-    def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+    inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+    inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

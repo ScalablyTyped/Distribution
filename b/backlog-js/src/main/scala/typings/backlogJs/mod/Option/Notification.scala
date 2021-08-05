@@ -14,20 +14,16 @@ object Notification {
   }
   object GetNotificationsCountParams {
     
-    @scala.inline
-    def apply(alreadyRead: Boolean, resourceAlreadyRead: Boolean): GetNotificationsCountParams = {
+    inline def apply(alreadyRead: Boolean, resourceAlreadyRead: Boolean): GetNotificationsCountParams = {
       val __obj = js.Dynamic.literal(alreadyRead = alreadyRead.asInstanceOf[js.Any], resourceAlreadyRead = resourceAlreadyRead.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetNotificationsCountParams]
     }
     
-    @scala.inline
-    implicit class GetNotificationsCountParamsMutableBuilder[Self <: GetNotificationsCountParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetNotificationsCountParams](x: Self) {
       
-      @scala.inline
-      def setAlreadyRead(value: Boolean): Self = StObject.set(x, "alreadyRead", value.asInstanceOf[js.Any])
+      inline def setAlreadyRead(value: Boolean): Self = StObject.set(x, "alreadyRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceAlreadyRead(value: Boolean): Self = StObject.set(x, "resourceAlreadyRead", value.asInstanceOf[js.Any])
+      inline def setResourceAlreadyRead(value: Boolean): Self = StObject.set(x, "resourceAlreadyRead", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,38 +39,28 @@ object Notification {
   }
   object GetNotificationsParams {
     
-    @scala.inline
-    def apply(): GetNotificationsParams = {
+    inline def apply(): GetNotificationsParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetNotificationsParams]
     }
     
-    @scala.inline
-    implicit class GetNotificationsParamsMutableBuilder[Self <: GetNotificationsParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetNotificationsParams](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
+      inline def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
+      inline def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
       
-      @scala.inline
-      def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
+      inline def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
+      inline def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
 }

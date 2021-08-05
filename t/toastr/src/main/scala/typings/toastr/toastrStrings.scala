@@ -10,37 +10,31 @@ object toastrStrings {
   sealed trait error
     extends StObject
        with ToastrType
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait hidden extends StObject
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait info
     extends StObject
        with ToastrType
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait success
     extends StObject
        with ToastrType
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait visible extends StObject
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
+  inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
   sealed trait warning
     extends StObject
        with ToastrType
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

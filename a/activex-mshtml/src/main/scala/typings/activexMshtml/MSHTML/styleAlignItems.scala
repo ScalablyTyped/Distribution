@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleAlignItems extends StObject
 object styleAlignItems {
   
-  @scala.inline
-  def styleAlignItemsBaseline: `3` = 3.asInstanceOf[`3`]
+  inline def styleAlignItemsBaseline: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleAlignItemsCenter: `2` = 2.asInstanceOf[`2`]
+  inline def styleAlignItemsCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleAlignItemsFlexEnd: `1` = 1.asInstanceOf[`1`]
+  inline def styleAlignItemsFlexEnd: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleAlignItemsFlexStart: `0` = 0.asInstanceOf[`0`]
+  inline def styleAlignItemsFlexStart: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleAlignItemsNotSet: `5` = 5.asInstanceOf[`5`]
+  inline def styleAlignItemsNotSet: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def styleAlignItemsStretch: `4` = 4.asInstanceOf[`4`]
+  inline def styleAlignItemsStretch: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleAlignItems_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleAlignItems_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

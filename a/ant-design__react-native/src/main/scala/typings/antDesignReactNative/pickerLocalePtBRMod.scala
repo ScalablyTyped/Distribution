@@ -15,19 +15,16 @@ object pickerLocalePtBRMod {
     @JSImport("@ant-design/react-native/lib/picker/locale/pt_BR", "default.dismissText")
     @js.native
     def dismissText: String = js.native
-    @scala.inline
-    def dismissText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dismissText")(x.asInstanceOf[js.Any])
+    inline def dismissText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dismissText")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/picker/locale/pt_BR", "default.extra")
     @js.native
     def extra: String = js.native
-    @scala.inline
-    def extra_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extra")(x.asInstanceOf[js.Any])
+    inline def extra_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extra")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/picker/locale/pt_BR", "default.okText")
     @js.native
     def okText: String = js.native
-    @scala.inline
-    def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
+    inline def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
   }
 }

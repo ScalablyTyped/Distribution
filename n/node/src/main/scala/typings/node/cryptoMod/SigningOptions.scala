@@ -17,31 +17,23 @@ trait SigningOptions extends StObject {
 }
 object SigningOptions {
   
-  @scala.inline
-  def apply(): SigningOptions = {
+  inline def apply(): SigningOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigningOptions]
   }
   
-  @scala.inline
-  implicit class SigningOptionsMutableBuilder[Self <: SigningOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SigningOptions](x: Self) {
     
-    @scala.inline
-    def setDsaEncoding(value: DSAEncoding): Self = StObject.set(x, "dsaEncoding", value.asInstanceOf[js.Any])
+    inline def setDsaEncoding(value: DSAEncoding): Self = StObject.set(x, "dsaEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsaEncodingUndefined: Self = StObject.set(x, "dsaEncoding", js.undefined)
+    inline def setDsaEncodingUndefined: Self = StObject.set(x, "dsaEncoding", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
+    inline def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltLengthUndefined: Self = StObject.set(x, "saltLength", js.undefined)
+    inline def setSaltLengthUndefined: Self = StObject.set(x, "saltLength", js.undefined)
   }
 }

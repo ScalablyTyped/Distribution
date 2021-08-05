@@ -33,25 +33,19 @@ trait WebviewPanelOptions extends StObject {
 }
 object WebviewPanelOptions {
   
-  @scala.inline
-  def apply(): WebviewPanelOptions = {
+  inline def apply(): WebviewPanelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebviewPanelOptions]
   }
   
-  @scala.inline
-  implicit class WebviewPanelOptionsMutableBuilder[Self <: WebviewPanelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebviewPanelOptions](x: Self) {
     
-    @scala.inline
-    def setEnableFindWidget(value: Boolean): Self = StObject.set(x, "enableFindWidget", value.asInstanceOf[js.Any])
+    inline def setEnableFindWidget(value: Boolean): Self = StObject.set(x, "enableFindWidget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFindWidgetUndefined: Self = StObject.set(x, "enableFindWidget", js.undefined)
+    inline def setEnableFindWidgetUndefined: Self = StObject.set(x, "enableFindWidget", js.undefined)
     
-    @scala.inline
-    def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
+    inline def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
+    inline def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
   }
 }

@@ -15,25 +15,19 @@ trait FileType extends StObject {
 }
 object FileType {
   
-  @scala.inline
-  def apply(): FileType = {
+  inline def apply(): FileType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileType]
   }
   
-  @scala.inline
-  implicit class FileTypeMutableBuilder[Self <: FileType] (val x: Self) extends AnyVal {
+  extension [Self <: FileType](x: Self) {
     
-    @scala.inline
-    def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
+    inline def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
+    inline def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

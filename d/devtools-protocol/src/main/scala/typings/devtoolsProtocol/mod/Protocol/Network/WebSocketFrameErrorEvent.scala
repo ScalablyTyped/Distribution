@@ -23,22 +23,17 @@ trait WebSocketFrameErrorEvent extends StObject {
 }
 object WebSocketFrameErrorEvent {
   
-  @scala.inline
-  def apply(errorMessage: String, requestId: RequestId, timestamp: MonotonicTime): WebSocketFrameErrorEvent = {
+  inline def apply(errorMessage: String, requestId: RequestId, timestamp: MonotonicTime): WebSocketFrameErrorEvent = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketFrameErrorEvent]
   }
   
-  @scala.inline
-  implicit class WebSocketFrameErrorEventMutableBuilder[Self <: WebSocketFrameErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WebSocketFrameErrorEvent](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

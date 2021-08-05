@@ -73,82 +73,57 @@ trait ImmunizationVaccinationProtocol
 }
 object ImmunizationVaccinationProtocol {
   
-  @scala.inline
-  def apply(doseStatus: CodeableConcept, targetDisease: js.Array[CodeableConcept]): ImmunizationVaccinationProtocol = {
+  inline def apply(doseStatus: CodeableConcept, targetDisease: js.Array[CodeableConcept]): ImmunizationVaccinationProtocol = {
     val __obj = js.Dynamic.literal(doseStatus = doseStatus.asInstanceOf[js.Any], targetDisease = targetDisease.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmunizationVaccinationProtocol]
   }
   
-  @scala.inline
-  implicit class ImmunizationVaccinationProtocolMutableBuilder[Self <: ImmunizationVaccinationProtocol] (val x: Self) extends AnyVal {
+  extension [Self <: ImmunizationVaccinationProtocol](x: Self) {
     
-    @scala.inline
-    def setAuthority(value: Reference): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+    inline def setAuthority(value: Reference): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
+    inline def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDoseSequence(value: positiveInt): Self = StObject.set(x, "doseSequence", value.asInstanceOf[js.Any])
+    inline def setDoseSequence(value: positiveInt): Self = StObject.set(x, "doseSequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoseSequenceUndefined: Self = StObject.set(x, "doseSequence", js.undefined)
+    inline def setDoseSequenceUndefined: Self = StObject.set(x, "doseSequence", js.undefined)
     
-    @scala.inline
-    def setDoseStatus(value: CodeableConcept): Self = StObject.set(x, "doseStatus", value.asInstanceOf[js.Any])
+    inline def setDoseStatus(value: CodeableConcept): Self = StObject.set(x, "doseStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoseStatusReason(value: CodeableConcept): Self = StObject.set(x, "doseStatusReason", value.asInstanceOf[js.Any])
+    inline def setDoseStatusReason(value: CodeableConcept): Self = StObject.set(x, "doseStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoseStatusReasonUndefined: Self = StObject.set(x, "doseStatusReason", js.undefined)
+    inline def setDoseStatusReasonUndefined: Self = StObject.set(x, "doseStatusReason", js.undefined)
     
-    @scala.inline
-    def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesDoses(value: positiveInt): Self = StObject.set(x, "seriesDoses", value.asInstanceOf[js.Any])
+    inline def setSeriesDoses(value: positiveInt): Self = StObject.set(x, "seriesDoses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesDosesUndefined: Self = StObject.set(x, "seriesDoses", js.undefined)
+    inline def setSeriesDosesUndefined: Self = StObject.set(x, "seriesDoses", js.undefined)
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setTargetDisease(value: js.Array[CodeableConcept]): Self = StObject.set(x, "targetDisease", value.asInstanceOf[js.Any])
+    inline def setTargetDisease(value: js.Array[CodeableConcept]): Self = StObject.set(x, "targetDisease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDiseaseVarargs(value: CodeableConcept*): Self = StObject.set(x, "targetDisease", js.Array(value :_*))
+    inline def setTargetDiseaseVarargs(value: CodeableConcept*): Self = StObject.set(x, "targetDisease", js.Array(value :_*))
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_doseSequence(value: Element): Self = StObject.set(x, "_doseSequence", value.asInstanceOf[js.Any])
+    inline def set_doseSequence(value: Element): Self = StObject.set(x, "_doseSequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_doseSequenceUndefined: Self = StObject.set(x, "_doseSequence", js.undefined)
+    inline def set_doseSequenceUndefined: Self = StObject.set(x, "_doseSequence", js.undefined)
     
-    @scala.inline
-    def set_series(value: Element): Self = StObject.set(x, "_series", value.asInstanceOf[js.Any])
+    inline def set_series(value: Element): Self = StObject.set(x, "_series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_seriesDoses(value: Element): Self = StObject.set(x, "_seriesDoses", value.asInstanceOf[js.Any])
+    inline def set_seriesDoses(value: Element): Self = StObject.set(x, "_seriesDoses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_seriesDosesUndefined: Self = StObject.set(x, "_seriesDoses", js.undefined)
+    inline def set_seriesDosesUndefined: Self = StObject.set(x, "_seriesDoses", js.undefined)
     
-    @scala.inline
-    def set_seriesUndefined: Self = StObject.set(x, "_series", js.undefined)
+    inline def set_seriesUndefined: Self = StObject.set(x, "_series", js.undefined)
   }
 }

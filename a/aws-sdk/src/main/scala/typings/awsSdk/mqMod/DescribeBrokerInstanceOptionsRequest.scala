@@ -33,43 +33,31 @@ trait DescribeBrokerInstanceOptionsRequest extends StObject {
 }
 object DescribeBrokerInstanceOptionsRequest {
   
-  @scala.inline
-  def apply(): DescribeBrokerInstanceOptionsRequest = {
+  inline def apply(): DescribeBrokerInstanceOptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBrokerInstanceOptionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBrokerInstanceOptionsRequestMutableBuilder[Self <: DescribeBrokerInstanceOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBrokerInstanceOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setEngineType(value: string): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
+    inline def setEngineType(value: string): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
+    inline def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
-    @scala.inline
-    def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
+    inline def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
+    inline def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStorageType(value: string): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
+    inline def setStorageType(value: string): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
   }
 }

@@ -28,62 +28,44 @@ trait Meta extends StObject {
 }
 object Meta {
   
-  @scala.inline
-  def apply(controller: StringDictionary[js.Any], data: js.Array[MetaData], `type`: ChartType): Meta = {
+  inline def apply(controller: StringDictionary[js.Any], data: js.Array[MetaData], `type`: ChartType): Meta = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
   
-  @scala.inline
-  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+  extension [Self <: Meta](x: Self) {
     
-    @scala.inline
-    def set$filler(value: StringDictionary[js.Any]): Self = StObject.set(x, "$filler", value.asInstanceOf[js.Any])
+    inline def set$filler(value: StringDictionary[js.Any]): Self = StObject.set(x, "$filler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$fillerUndefined: Self = StObject.set(x, "$filler", js.undefined)
+    inline def set$fillerUndefined: Self = StObject.set(x, "$filler", js.undefined)
     
-    @scala.inline
-    def setController(value: StringDictionary[js.Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: StringDictionary[js.Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[MetaData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[MetaData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: MetaData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: MetaData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDataset(value: ChartDataSets): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: ChartDataSets): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisID(value: String): Self = StObject.set(x, "xAxisID", value.asInstanceOf[js.Any])
+    inline def setXAxisID(value: String): Self = StObject.set(x, "xAxisID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisIDUndefined: Self = StObject.set(x, "xAxisID", js.undefined)
+    inline def setXAxisIDUndefined: Self = StObject.set(x, "xAxisID", js.undefined)
     
-    @scala.inline
-    def setYAxisID(value: String): Self = StObject.set(x, "yAxisID", value.asInstanceOf[js.Any])
+    inline def setYAxisID(value: String): Self = StObject.set(x, "yAxisID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisIDUndefined: Self = StObject.set(x, "yAxisID", js.undefined)
+    inline def setYAxisIDUndefined: Self = StObject.set(x, "yAxisID", js.undefined)
   }
 }

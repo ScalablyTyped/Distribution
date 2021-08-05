@@ -12,22 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, options: Attributes): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shader]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, vertex: String, fragment: String): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any])).asInstanceOf[Shader]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, vertex: String, fragment: String, uniforms: js.Array[Parameter]): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[Shader]
-  @scala.inline
-  def apply(
+  inline def apply(gl: WebGLRenderingContext, options: Attributes): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  inline def apply(gl: WebGLRenderingContext, vertex: String, fragment: String): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  inline def apply(gl: WebGLRenderingContext, vertex: String, fragment: String, uniforms: js.Array[Parameter]): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  inline def apply(
     gl: WebGLRenderingContext,
     vertex: String,
     fragment: String,
     uniforms: js.Array[Parameter],
     attributes: js.Array[Parameter]
   ): Shader = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], vertex.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Shader]
-  @scala.inline
-  def apply(
+  inline def apply(
     gl: WebGLRenderingContext,
     vertex: String,
     fragment: String,
@@ -70,21 +65,17 @@ object mod {
   }
   object Parameter {
     
-    @scala.inline
-    def apply(name: String, `type`: String): Parameter = {
+    inline def apply(name: String, `type`: String): Parameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parameter]
     }
     
-    @scala.inline
-    implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+    extension [Self <: Parameter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

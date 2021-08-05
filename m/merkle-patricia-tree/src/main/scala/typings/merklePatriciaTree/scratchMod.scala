@@ -12,6 +12,6 @@ object scratchMod {
   class ScratchDB protected () extends DB {
     def this(upstreamDB: DB) = this()
     
-    var _upstream: js.Any = js.native
+    /* private */ var _upstream: js.Any = js.native
   }
 }

@@ -26,8 +26,7 @@ trait MeshRotateParams
 }
 object MeshRotateParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object MeshRotateParams {
     __obj.asInstanceOf[MeshRotateParams]
   }
   
-  @scala.inline
-  implicit class MeshRotateParamsMutableBuilder[Self <: MeshRotateParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshRotateParams](x: Self) {
     
-    @scala.inline
-    def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: Point): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Point): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

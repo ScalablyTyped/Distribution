@@ -14,8 +14,7 @@ trait AnyNaptrRecord
 }
 object AnyNaptrRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: String,
     order: Double,
     preference: Double,
@@ -28,10 +27,8 @@ object AnyNaptrRecord {
     __obj.asInstanceOf[AnyNaptrRecord]
   }
   
-  @scala.inline
-  implicit class AnyNaptrRecordMutableBuilder[Self <: AnyNaptrRecord] (val x: Self) extends AnyVal {
+  extension [Self <: AnyNaptrRecord](x: Self) {
     
-    @scala.inline
-    def setType(value: NAPTR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NAPTR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

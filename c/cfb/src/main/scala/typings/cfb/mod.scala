@@ -88,22 +88,15 @@ object mod {
     /* 1 */ val minifat: typings.cfb.mod.CFBStorageType.minifat & Double = js.native
   }
   
-  @scala.inline
-  def find(cfb: CFBContainer, path: String): CFBEntry | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(cfb.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CFBEntry | Null]
+  inline def find(cfb: CFBContainer, path: String): CFBEntry | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(cfb.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CFBEntry | Null]
   
-  @scala.inline
-  def parse(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
-  @scala.inline
-  def parse(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
+  inline def parse(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  inline def parse(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
   
-  @scala.inline
-  def read(f: String): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
-  @scala.inline
-  def read(f: String, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
-  @scala.inline
-  def read(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
-  @scala.inline
-  def read(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
+  inline def read(f: String): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  inline def read(f: String, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
+  inline def read(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  inline def read(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
   
   @JSImport("cfb", "utils")
   @js.native
@@ -113,15 +106,11 @@ object mod {
   @js.native
   val version: String = js.native
   
-  @scala.inline
-  def write(cfb: CFBContainer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def write(cfb: CFBContainer, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def write(cfb: CFBContainer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def write(cfb: CFBContainer, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def writeFile(cfb: CFBContainer, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def writeFile(cfb: CFBContainer, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait CFBAddOpts extends StObject {
     
@@ -130,20 +119,16 @@ object mod {
   }
   object CFBAddOpts {
     
-    @scala.inline
-    def apply(): CFBAddOpts = {
+    inline def apply(): CFBAddOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CFBAddOpts]
     }
     
-    @scala.inline
-    implicit class CFBAddOptsMutableBuilder[Self <: CFBAddOpts] (val x: Self) extends AnyVal {
+    extension [Self <: CFBAddOpts](x: Self) {
       
-      @scala.inline
-      def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
+      inline def setUnsafe(value: Boolean): Self = StObject.set(x, "unsafe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
+      inline def setUnsafeUndefined: Self = StObject.set(x, "unsafe", js.undefined)
     }
   }
   
@@ -159,26 +144,20 @@ object mod {
   }
   object CFBCommonOptions {
     
-    @scala.inline
-    def apply(): CFBCommonOptions = {
+    inline def apply(): CFBCommonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CFBCommonOptions]
     }
     
-    @scala.inline
-    implicit class CFBCommonOptionsMutableBuilder[Self <: CFBCommonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CFBCommonOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: base64 | binary | buffer | file | array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: base64 | binary | buffer | file | array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWTF(value: Boolean): Self = StObject.set(x, "WTF", value.asInstanceOf[js.Any])
+      inline def setWTF(value: Boolean): Self = StObject.set(x, "WTF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWTFUndefined: Self = StObject.set(x, "WTF", js.undefined)
+      inline def setWTFUndefined: Self = StObject.set(x, "WTF", js.undefined)
     }
   }
   
@@ -195,32 +174,24 @@ object mod {
   }
   object CFBContainer {
     
-    @scala.inline
-    def apply(FileIndex: js.Array[CFBEntry], FullPaths: js.Array[String]): CFBContainer = {
+    inline def apply(FileIndex: js.Array[CFBEntry], FullPaths: js.Array[String]): CFBContainer = {
       val __obj = js.Dynamic.literal(FileIndex = FileIndex.asInstanceOf[js.Any], FullPaths = FullPaths.asInstanceOf[js.Any])
       __obj.asInstanceOf[CFBContainer]
     }
     
-    @scala.inline
-    implicit class CFBContainerMutableBuilder[Self <: CFBContainer] (val x: Self) extends AnyVal {
+    extension [Self <: CFBContainer](x: Self) {
       
-      @scala.inline
-      def setFileIndex(value: js.Array[CFBEntry]): Self = StObject.set(x, "FileIndex", value.asInstanceOf[js.Any])
+      inline def setFileIndex(value: js.Array[CFBEntry]): Self = StObject.set(x, "FileIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileIndexVarargs(value: CFBEntry*): Self = StObject.set(x, "FileIndex", js.Array(value :_*))
+      inline def setFileIndexVarargs(value: CFBEntry*): Self = StObject.set(x, "FileIndex", js.Array(value :_*))
       
-      @scala.inline
-      def setFullPaths(value: js.Array[String]): Self = StObject.set(x, "FullPaths", value.asInstanceOf[js.Any])
+      inline def setFullPaths(value: js.Array[String]): Self = StObject.set(x, "FullPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullPathsVarargs(value: String*): Self = StObject.set(x, "FullPaths", js.Array(value :_*))
+      inline def setFullPathsVarargs(value: String*): Self = StObject.set(x, "FullPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setRaw(value: Header): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Header): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -264,8 +235,7 @@ object mod {
   }
   object CFBEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clsid: String,
       color: Double,
       content: CFBBlob,
@@ -280,59 +250,41 @@ object mod {
       __obj.asInstanceOf[CFBEntry]
     }
     
-    @scala.inline
-    implicit class CFBEntryMutableBuilder[Self <: CFBEntry] (val x: Self) extends AnyVal {
+    extension [Self <: CFBEntry](x: Self) {
       
-      @scala.inline
-      def setClsid(value: String): Self = StObject.set(x, "clsid", value.asInstanceOf[js.Any])
+      inline def setClsid(value: String): Self = StObject.set(x, "clsid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: CFBBlob): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: CFBBlob): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentVarargs(value: Double*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: Double*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setCt(value: Date): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
+      inline def setCt(value: Date): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtUndefined: Self = StObject.set(x, "ct", js.undefined)
+      inline def setCtUndefined: Self = StObject.set(x, "ct", js.undefined)
       
-      @scala.inline
-      def setCtype(value: String): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
+      inline def setCtype(value: String): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtypeUndefined: Self = StObject.set(x, "ctype", js.undefined)
+      inline def setCtypeUndefined: Self = StObject.set(x, "ctype", js.undefined)
       
-      @scala.inline
-      def setMt(value: Date): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: Date): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
+      inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,20 +297,16 @@ object mod {
   }
   object CFBParsingOptions {
     
-    @scala.inline
-    def apply(): CFBParsingOptions = {
+    inline def apply(): CFBParsingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CFBParsingOptions]
     }
     
-    @scala.inline
-    implicit class CFBParsingOptionsMutableBuilder[Self <: CFBParsingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CFBParsingOptions](x: Self) {
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -407,32 +355,24 @@ object mod {
   }
   object CFBWritingOptions {
     
-    @scala.inline
-    def apply(): CFBWritingOptions = {
+    inline def apply(): CFBWritingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CFBWritingOptions]
     }
     
-    @scala.inline
-    implicit class CFBWritingOptionsMutableBuilder[Self <: CFBWritingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CFBWritingOptions](x: Self) {
       
-      @scala.inline
-      def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setFileType(value: typings.cfb.cfbStrings.cfb | zip | mad): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: typings.cfb.cfbStrings.cfb | zip | mad): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

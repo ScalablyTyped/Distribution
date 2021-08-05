@@ -16,20 +16,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String, state: Record[String, js.Any]): Id = {
+    inline def apply(id: String, state: Record[String, js.Any]): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: Record[String, js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Record[String, js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,17 +35,14 @@ object anon {
   }
   object Init {
     
-    @scala.inline
-    def apply(init: () => js.Promise[Inputs]): Init = {
+    inline def apply(init: () => js.Promise[Inputs]): Init = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init))
       __obj.asInstanceOf[Init]
     }
     
-    @scala.inline
-    implicit class InitMutableBuilder[Self <: Init] (val x: Self) extends AnyVal {
+    extension [Self <: Init](x: Self) {
       
-      @scala.inline
-      def setInit(value: () => js.Promise[Inputs]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => js.Promise[Inputs]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     }
   }
   
@@ -59,17 +52,14 @@ object anon {
   }
   object Urn {
     
-    @scala.inline
-    def apply(urn: String): Urn = {
+    inline def apply(urn: String): Urn = {
       val __obj = js.Dynamic.literal(urn = urn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Urn]
     }
     
-    @scala.inline
-    implicit class UrnMutableBuilder[Self <: Urn] (val x: Self) extends AnyVal {
+    extension [Self <: Urn](x: Self) {
       
-      @scala.inline
-      def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
+      inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,34 +16,25 @@ trait AltimeterOption extends StObject {
 }
 object AltimeterOption {
   
-  @scala.inline
-  def apply(controller: String): AltimeterOption = {
+  inline def apply(controller: String): AltimeterOption = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltimeterOption]
   }
   
-  @scala.inline
-  implicit class AltimeterOptionMutableBuilder[Self <: AltimeterOption] (val x: Self) extends AnyVal {
+  extension [Self <: AltimeterOption](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
-    @scala.inline
-    def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+    inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait XExternalSheetName
 }
 object XExternalSheetName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -40,10 +39,8 @@ object XExternalSheetName {
     __obj.asInstanceOf[XExternalSheetName]
   }
   
-  @scala.inline
-  implicit class XExternalSheetNameMutableBuilder[Self <: XExternalSheetName] (val x: Self) extends AnyVal {
+  extension [Self <: XExternalSheetName](x: Self) {
     
-    @scala.inline
-    def setSetExternalName(value: (String, String) => Unit): Self = StObject.set(x, "setExternalName", js.Any.fromFunction2(value))
+    inline def setSetExternalName(value: (String, String) => Unit): Self = StObject.set(x, "setExternalName", js.Any.fromFunction2(value))
   }
 }

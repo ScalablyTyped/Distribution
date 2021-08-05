@@ -33,8 +33,7 @@ trait JumpEdit
 }
 object JumpEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -66,16 +65,12 @@ object JumpEdit {
     __obj.asInstanceOf[JumpEdit]
   }
   
-  @scala.inline
-  implicit class JumpEditMutableBuilder[Self <: JumpEdit] (val x: Self) extends AnyVal {
+  extension [Self <: JumpEdit](x: Self) {
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolder(value: String): Self = StObject.set(x, "PlaceHolder", value.asInstanceOf[js.Any])
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "PlaceHolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolderType(value: Double): Self = StObject.set(x, "PlaceHolderType", value.asInstanceOf[js.Any])
+    inline def setPlaceHolderType(value: Double): Self = StObject.set(x, "PlaceHolderType", value.asInstanceOf[js.Any])
   }
 }

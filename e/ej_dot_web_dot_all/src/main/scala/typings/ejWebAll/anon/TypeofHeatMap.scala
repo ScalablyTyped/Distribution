@@ -15,19 +15,15 @@ trait TypeofHeatMap extends StObject {
 }
 object TypeofHeatMap {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: HeatMap): TypeofHeatMap = {
+  inline def apply(Locale: js.Any, fn: HeatMap): TypeofHeatMap = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofHeatMap]
   }
   
-  @scala.inline
-  implicit class TypeofHeatMapMutableBuilder[Self <: TypeofHeatMap] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofHeatMap](x: Self) {
     
-    @scala.inline
-    def setFn(value: HeatMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: HeatMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDOMProcessingInstruction extends StObject {
   
-  @JSName("MSHTML.IDOMProcessingInstruction_typekey")
+  /* private */ @JSName("MSHTML.IDOMProcessingInstruction_typekey")
   var MSHTMLDotIDOMProcessingInstruction_typekey: IDOMProcessingInstruction
   
   var data: String
@@ -15,8 +15,7 @@ trait IDOMProcessingInstruction extends StObject {
 }
 object IDOMProcessingInstruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIDOMProcessingInstruction_typekey: IDOMProcessingInstruction,
     data: String,
     target: String
@@ -26,16 +25,12 @@ object IDOMProcessingInstruction {
     __obj.asInstanceOf[IDOMProcessingInstruction]
   }
   
-  @scala.inline
-  implicit class IDOMProcessingInstructionMutableBuilder[Self <: IDOMProcessingInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: IDOMProcessingInstruction](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIDOMProcessingInstruction_typekey(value: IDOMProcessingInstruction): Self = StObject.set(x, "MSHTML.IDOMProcessingInstruction_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIDOMProcessingInstruction_typekey(value: IDOMProcessingInstruction): Self = StObject.set(x, "MSHTML.IDOMProcessingInstruction_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

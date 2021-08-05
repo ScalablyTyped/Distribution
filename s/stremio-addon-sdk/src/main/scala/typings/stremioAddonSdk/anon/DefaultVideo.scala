@@ -13,19 +13,15 @@ trait DefaultVideo extends StObject {
 }
 object DefaultVideo {
   
-  @scala.inline
-  def apply(): DefaultVideo = {
+  inline def apply(): DefaultVideo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultVideo]
   }
   
-  @scala.inline
-  implicit class DefaultVideoMutableBuilder[Self <: DefaultVideo] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultVideo](x: Self) {
     
-    @scala.inline
-    def setDefaultVideo(value: Boolean | String): Self = StObject.set(x, "defaultVideo", value.asInstanceOf[js.Any])
+    inline def setDefaultVideo(value: Boolean | String): Self = StObject.set(x, "defaultVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVideoUndefined: Self = StObject.set(x, "defaultVideo", js.undefined)
+    inline def setDefaultVideoUndefined: Self = StObject.set(x, "defaultVideo", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait CreateItemDataRelationshipsTip extends StObject {
 }
 object CreateItemDataRelationshipsTip {
   
-  @scala.inline
-  def apply(): CreateItemDataRelationshipsTip = {
+  inline def apply(): CreateItemDataRelationshipsTip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateItemDataRelationshipsTip]
   }
   
-  @scala.inline
-  implicit class CreateItemDataRelationshipsTipMutableBuilder[Self <: CreateItemDataRelationshipsTip] (val x: Self) extends AnyVal {
+  extension [Self <: CreateItemDataRelationshipsTip](x: Self) {
     
-    @scala.inline
-    def setData(value: CreateItemDataRelationshipsTipData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CreateItemDataRelationshipsTipData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait GetAdmChannelInput
      with typings.awsSdkClientPinpointBrowser.typesGetAdmChannelInputMod.GetAdmChannelInput
 object GetAdmChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetAdmChannelInput = {
+  inline def apply(ApplicationId: String): GetAdmChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAdmChannelInput]
   }

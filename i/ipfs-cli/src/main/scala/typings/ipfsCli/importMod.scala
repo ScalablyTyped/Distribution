@@ -23,8 +23,7 @@ object importMod {
       @js.native
       val alias1: String = js.native
       
-      @scala.inline
-      def coerce(input: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def coerce(input: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(input.asInstanceOf[js.Any]).asInstanceOf[String]
       
       @JSImport("ipfs-cli/dist/src/commands/key/import", "builder.input.demandOption")
       @js.native
@@ -70,6 +69,5 @@ object importMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintNameInputPassinTimeout: Input): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNameInputPassinTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintNameInputPassinTimeout: Input): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintNameInputPassinTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

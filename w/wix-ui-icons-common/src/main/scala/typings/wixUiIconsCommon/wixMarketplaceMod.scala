@@ -22,20 +22,16 @@ object wixMarketplaceMod extends Shortcut {
   }
   object WixMarketplaceProps {
     
-    @scala.inline
-    def apply(): WixMarketplaceProps = {
+    inline def apply(): WixMarketplaceProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WixMarketplaceProps]
     }
     
-    @scala.inline
-    implicit class WixMarketplacePropsMutableBuilder[Self <: WixMarketplaceProps] (val x: Self) extends AnyVal {
+    extension [Self <: WixMarketplaceProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

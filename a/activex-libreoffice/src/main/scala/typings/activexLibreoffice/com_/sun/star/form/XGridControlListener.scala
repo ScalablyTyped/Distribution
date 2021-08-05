@@ -24,8 +24,7 @@ trait XGridControlListener
 }
 object XGridControlListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     columnChanged: EventObject => Unit,
     disposing: EventObject => Unit,
@@ -36,10 +35,8 @@ object XGridControlListener {
     __obj.asInstanceOf[XGridControlListener]
   }
   
-  @scala.inline
-  implicit class XGridControlListenerMutableBuilder[Self <: XGridControlListener] (val x: Self) extends AnyVal {
+  extension [Self <: XGridControlListener](x: Self) {
     
-    @scala.inline
-    def setColumnChanged(value: EventObject => Unit): Self = StObject.set(x, "columnChanged", js.Any.fromFunction1(value))
+    inline def setColumnChanged(value: EventObject => Unit): Self = StObject.set(x, "columnChanged", js.Any.fromFunction1(value))
   }
 }

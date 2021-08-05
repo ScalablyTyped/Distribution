@@ -28,40 +28,29 @@ trait SdkType extends StObject {
 }
 object SdkType {
   
-  @scala.inline
-  def apply(): SdkType = {
+  inline def apply(): SdkType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SdkType]
   }
   
-  @scala.inline
-  implicit class SdkTypeMutableBuilder[Self <: SdkType] (val x: Self) extends AnyVal {
+  extension [Self <: SdkType](x: Self) {
     
-    @scala.inline
-    def setConfigurationProperties(value: ListOfSdkConfigurationProperty): Self = StObject.set(x, "configurationProperties", value.asInstanceOf[js.Any])
+    inline def setConfigurationProperties(value: ListOfSdkConfigurationProperty): Self = StObject.set(x, "configurationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationPropertiesUndefined: Self = StObject.set(x, "configurationProperties", js.undefined)
+    inline def setConfigurationPropertiesUndefined: Self = StObject.set(x, "configurationProperties", js.undefined)
     
-    @scala.inline
-    def setConfigurationPropertiesVarargs(value: SdkConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value :_*))
+    inline def setConfigurationPropertiesVarargs(value: SdkConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+    inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

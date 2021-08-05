@@ -19,23 +19,18 @@ trait Previousattributes extends StObject {
 }
 object Previousattributes {
   
-  @scala.inline
-  def apply(`object`: IObject): Previousattributes = {
+  inline def apply(`object`: IObject): Previousattributes = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Previousattributes]
   }
   
-  @scala.inline
-  implicit class PreviousattributesMutableBuilder[Self <: Previousattributes] (val x: Self) extends AnyVal {
+  extension [Self <: Previousattributes](x: Self) {
     
-    @scala.inline
-    def setObject(value: IObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: IObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "previous_attributes", value.asInstanceOf[js.Any])
+    inline def setPrevious_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "previous_attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious_attributesUndefined: Self = StObject.set(x, "previous_attributes", js.undefined)
+    inline def setPrevious_attributesUndefined: Self = StObject.set(x, "previous_attributes", js.undefined)
   }
 }

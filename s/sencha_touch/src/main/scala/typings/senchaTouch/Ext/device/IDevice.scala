@@ -10,8 +10,7 @@ trait IDevice
      with IAbstract
 object IDevice {
   
-  @scala.inline
-  def apply(): IDevice = {
+  inline def apply(): IDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDevice]
   }

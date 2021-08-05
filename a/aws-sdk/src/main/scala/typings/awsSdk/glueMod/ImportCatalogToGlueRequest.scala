@@ -13,19 +13,15 @@ trait ImportCatalogToGlueRequest extends StObject {
 }
 object ImportCatalogToGlueRequest {
   
-  @scala.inline
-  def apply(): ImportCatalogToGlueRequest = {
+  inline def apply(): ImportCatalogToGlueRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportCatalogToGlueRequest]
   }
   
-  @scala.inline
-  implicit class ImportCatalogToGlueRequestMutableBuilder[Self <: ImportCatalogToGlueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportCatalogToGlueRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
   }
 }

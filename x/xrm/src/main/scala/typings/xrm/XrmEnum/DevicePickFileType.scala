@@ -19,12 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DevicePickFileType extends StObject
 object DevicePickFileType {
   
-  @scala.inline
-  def Audio: audio = "audio".asInstanceOf[audio]
+  inline def Audio: audio = "audio".asInstanceOf[audio]
   
-  @scala.inline
-  def Image: image = "image".asInstanceOf[image]
+  inline def Image: image = "image".asInstanceOf[image]
   
-  @scala.inline
-  def Video: video = "video".asInstanceOf[video]
+  inline def Video: video = "video".asInstanceOf[video]
 }

@@ -20,42 +20,34 @@ trait PaddingProps[TLength] extends StObject {
 }
 object PaddingProps {
   
-  @scala.inline
-  def apply[TLength](): PaddingProps[TLength] = {
+  inline def apply[TLength](): PaddingProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaddingProps[TLength]]
   }
   
-  @scala.inline
-  implicit class PaddingPropsMutableBuilder[Self <: PaddingProps[?], TLength] (val x: Self & PaddingProps[TLength]) extends AnyVal {
+  extension [Self <: PaddingProps[?], TLength](x: Self & PaddingProps[TLength]) {
     
-    @scala.inline
-    def setP(
+    inline def setP(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    @scala.inline
-    def setPVarargs(
+    inline def setPVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any)*
     ): Self = StObject.set(x, "p", js.Array(value :_*))
     
-    @scala.inline
-    def setPadding(
+    inline def setPadding(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingVarargs(
+    inline def setPaddingVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any)*
     ): Self = StObject.set(x, "padding", js.Array(value :_*))
   }

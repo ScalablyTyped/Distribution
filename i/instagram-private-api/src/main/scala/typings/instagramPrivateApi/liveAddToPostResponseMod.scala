@@ -26,8 +26,7 @@ object liveAddToPostResponseMod {
   }
   object LiveAddToPostBroadcast {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       broadcast_message: String,
       broadcast_owner: LiveAddToPostBroadcastOwner,
       broadcast_status: String,
@@ -41,32 +40,23 @@ object liveAddToPostResponseMod {
       __obj.asInstanceOf[LiveAddToPostBroadcast]
     }
     
-    @scala.inline
-    implicit class LiveAddToPostBroadcastMutableBuilder[Self <: LiveAddToPostBroadcast] (val x: Self) extends AnyVal {
+    extension [Self <: LiveAddToPostBroadcast](x: Self) {
       
-      @scala.inline
-      def setBroadcast_message(value: String): Self = StObject.set(x, "broadcast_message", value.asInstanceOf[js.Any])
+      inline def setBroadcast_message(value: String): Self = StObject.set(x, "broadcast_message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcast_owner(value: LiveAddToPostBroadcastOwner): Self = StObject.set(x, "broadcast_owner", value.asInstanceOf[js.Any])
+      inline def setBroadcast_owner(value: LiveAddToPostBroadcastOwner): Self = StObject.set(x, "broadcast_owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcast_status(value: String): Self = StObject.set(x, "broadcast_status", value.asInstanceOf[js.Any])
+      inline def setBroadcast_status(value: String): Self = StObject.set(x, "broadcast_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide_from_feed_unit(value: Boolean): Self = StObject.set(x, "hide_from_feed_unit", value.asInstanceOf[js.Any])
+      inline def setHide_from_feed_unit(value: Boolean): Self = StObject.set(x, "hide_from_feed_unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+      inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
+      inline def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublished_time(value: Double): Self = StObject.set(x, "published_time", value.asInstanceOf[js.Any])
+      inline def setPublished_time(value: Double): Self = StObject.set(x, "published_time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,8 +78,7 @@ object liveAddToPostResponseMod {
   }
   object LiveAddToPostBroadcastOwner {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       friendship_status: LiveAddToPostFriendshipstatus,
       full_name: String,
       is_private: Boolean,
@@ -102,29 +91,21 @@ object liveAddToPostResponseMod {
       __obj.asInstanceOf[LiveAddToPostBroadcastOwner]
     }
     
-    @scala.inline
-    implicit class LiveAddToPostBroadcastOwnerMutableBuilder[Self <: LiveAddToPostBroadcastOwner] (val x: Self) extends AnyVal {
+    extension [Self <: LiveAddToPostBroadcastOwner](x: Self) {
       
-      @scala.inline
-      def setFriendship_status(value: LiveAddToPostFriendshipstatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: LiveAddToPostFriendshipstatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,8 +131,7 @@ object liveAddToPostResponseMod {
   }
   object LiveAddToPostFriendshipstatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blocking: Boolean,
       followed_by: Boolean,
       following: Boolean,
@@ -166,35 +146,25 @@ object liveAddToPostResponseMod {
       __obj.asInstanceOf[LiveAddToPostFriendshipstatus]
     }
     
-    @scala.inline
-    implicit class LiveAddToPostFriendshipstatusMutableBuilder[Self <: LiveAddToPostFriendshipstatus] (val x: Self) extends AnyVal {
+    extension [Self <: LiveAddToPostFriendshipstatus](x: Self) {
       
-      @scala.inline
-      def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
+      inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
+      inline def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+      inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+      inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
+      inline def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
+      inline def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+      inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,8 +186,7 @@ object liveAddToPostResponseMod {
   }
   object LiveAddToPostResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       broadcasts: js.Array[LiveAddToPostBroadcast],
       can_reply: Boolean,
       can_reshare: Boolean,
@@ -230,32 +199,23 @@ object liveAddToPostResponseMod {
       __obj.asInstanceOf[LiveAddToPostResponse]
     }
     
-    @scala.inline
-    implicit class LiveAddToPostResponseMutableBuilder[Self <: LiveAddToPostResponse] (val x: Self) extends AnyVal {
+    extension [Self <: LiveAddToPostResponse](x: Self) {
       
-      @scala.inline
-      def setBroadcasts(value: js.Array[LiveAddToPostBroadcast]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
+      inline def setBroadcasts(value: js.Array[LiveAddToPostBroadcast]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcastsVarargs(value: LiveAddToPostBroadcast*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
+      inline def setBroadcastsVarargs(value: LiveAddToPostBroadcast*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
       
-      @scala.inline
-      def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
+      inline def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
+      inline def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_seen_broadcast_ts(value: Double): Self = StObject.set(x, "last_seen_broadcast_ts", value.asInstanceOf[js.Any])
+      inline def setLast_seen_broadcast_ts(value: Double): Self = StObject.set(x, "last_seen_broadcast_ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: LiveAddToPostUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: LiveAddToPostUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -275,8 +235,7 @@ object liveAddToPostResponseMod {
   }
   object LiveAddToPostUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       full_name: String,
       is_private: Boolean,
       is_verified: Boolean,
@@ -288,26 +247,19 @@ object liveAddToPostResponseMod {
       __obj.asInstanceOf[LiveAddToPostUser]
     }
     
-    @scala.inline
-    implicit class LiveAddToPostUserMutableBuilder[Self <: LiveAddToPostUser] (val x: Self) extends AnyVal {
+    extension [Self <: LiveAddToPostUser](x: Self) {
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

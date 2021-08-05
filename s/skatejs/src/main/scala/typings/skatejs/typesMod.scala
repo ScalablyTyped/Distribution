@@ -556,8 +556,7 @@ object typesMod {
        with CustomEventInit[js.Any]
   object EventOptions {
     
-    @scala.inline
-    def apply(): EventOptions = {
+    inline def apply(): EventOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventOptions]
     }
@@ -583,44 +582,32 @@ object typesMod {
   }
   object PropOptions {
     
-    @scala.inline
-    def apply[T](): PropOptions[T] = {
+    inline def apply[T](): PropOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropOptions[T]]
     }
     
-    @scala.inline
-    implicit class PropOptionsMutableBuilder[Self <: PropOptions[?], T] (val x: Self & PropOptions[T]) extends AnyVal {
+    extension [Self <: PropOptions[?], T](x: Self & PropOptions[T]) {
       
-      @scala.inline
-      def setAttribute(value: PropOptionsAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: PropOptionsAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setCoerce(value: /* value */ js.Any => Maybe[T]): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+      inline def setCoerce(value: /* value */ js.Any => Maybe[T]): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       
-      @scala.inline
-      def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDeserialize(value: /* value */ String | Null => Maybe[T]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* value */ String | Null => Maybe[T]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
+      inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: /* value */ Maybe[T] => String | Null): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: /* value */ Maybe[T] => String | Null): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     }
   }
   
@@ -636,26 +623,20 @@ object typesMod {
   }
   object PropOptionsAttributeIdentifierMap {
     
-    @scala.inline
-    def apply(): PropOptionsAttributeIdentifierMap = {
+    inline def apply(): PropOptionsAttributeIdentifierMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropOptionsAttributeIdentifierMap]
     }
     
-    @scala.inline
-    implicit class PropOptionsAttributeIdentifierMapMutableBuilder[Self <: PropOptionsAttributeIdentifierMap] (val x: Self) extends AnyVal {
+    extension [Self <: PropOptionsAttributeIdentifierMap](x: Self) {
       
-      @scala.inline
-      def setSource(value: PropOptionsAttributeIdentifier): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: PropOptionsAttributeIdentifier): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTarget(value: PropOptionsAttributeIdentifier): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: PropOptionsAttributeIdentifier): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   

@@ -16,23 +16,18 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(id: String): Id = {
+  inline def apply(id: String): Id = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], linkType = "Environment")
     __obj.updateDynamic("type")("Link")
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkType(value: Environment): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+    inline def setLinkType(value: Environment): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

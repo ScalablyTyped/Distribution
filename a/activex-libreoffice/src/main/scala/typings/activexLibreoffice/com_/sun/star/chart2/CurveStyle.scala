@@ -27,19 +27,15 @@ trait CurveStyle extends StObject
 object CurveStyle {
   
   /** Data points are connected via a parametric, interpolating B-spline curve. */
-  @scala.inline
-  def B_SPLINES: `2` = 2.asInstanceOf[`2`]
+  inline def B_SPLINES: `2` = 2.asInstanceOf[`2`]
   
   /** Data points are connected via a smoothed cubic spline curve. The data points themselves are part of to the curve. */
-  @scala.inline
-  def CUBIC_SPLINES: `1` = 1.asInstanceOf[`1`]
+  inline def CUBIC_SPLINES: `1` = 1.asInstanceOf[`1`]
   
   /** Lines between data points are not smoothed */
-  @scala.inline
-  def LINES: `0` = 0.asInstanceOf[`0`]
+  inline def LINES: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def NURBS: `3` = 3.asInstanceOf[`3`]
+  inline def NURBS: `3` = 3.asInstanceOf[`3`]
   
   /**
     * Data points are connected via a 3-segmented stepped line. The lines is horizontal till the center of the X values.
@@ -54,8 +50,7 @@ object CurveStyle {
     *
     *          O--+
     */
-  @scala.inline
-  def STEP_CENTER_X: `6` = 6.asInstanceOf[`6`]
+  inline def STEP_CENTER_X: `6` = 6.asInstanceOf[`6`]
   
   /**
     * Data points are connected via a 3-segmented stepped line. The lines is horizontal at the center of the Y values.
@@ -70,8 +65,7 @@ object CurveStyle {
     *
     *          O
     */
-  @scala.inline
-  def STEP_CENTER_Y: `7` = 7.asInstanceOf[`7`]
+  inline def STEP_CENTER_Y: `7` = 7.asInstanceOf[`7`]
   
   /**
     * Data points are connected via a 2-segmented stepped line. The line ends horizontally.
@@ -86,8 +80,7 @@ object CurveStyle {
     *
     *         O
     */
-  @scala.inline
-  def STEP_END: `5` = 5.asInstanceOf[`5`]
+  inline def STEP_END: `5` = 5.asInstanceOf[`5`]
   
   /**
     * Data points are connected via a 2-segmented stepped line. The line starts horizontally.
@@ -102,6 +95,5 @@ object CurveStyle {
     *
     *          O-----+
     */
-  @scala.inline
-  def STEP_START: `4` = 4.asInstanceOf[`4`]
+  inline def STEP_START: `4` = 4.asInstanceOf[`4`]
 }

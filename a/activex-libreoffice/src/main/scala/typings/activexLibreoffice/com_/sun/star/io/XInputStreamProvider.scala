@@ -24,8 +24,7 @@ trait XInputStreamProvider
 }
 object XInputStreamProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInputStream: () => XInputStream,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XInputStreamProvider {
     __obj.asInstanceOf[XInputStreamProvider]
   }
   
-  @scala.inline
-  implicit class XInputStreamProviderMutableBuilder[Self <: XInputStreamProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XInputStreamProvider](x: Self) {
     
-    @scala.inline
-    def setCreateInputStream(value: () => XInputStream): Self = StObject.set(x, "createInputStream", js.Any.fromFunction0(value))
+    inline def setCreateInputStream(value: () => XInputStream): Self = StObject.set(x, "createInputStream", js.Any.fromFunction0(value))
   }
 }

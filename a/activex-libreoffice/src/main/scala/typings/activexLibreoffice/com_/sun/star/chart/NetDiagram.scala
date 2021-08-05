@@ -26,8 +26,7 @@ trait NetDiagram
      with ChartAxisYSupplier
 object NetDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     DataCaption: Double,

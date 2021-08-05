@@ -12,16 +12,13 @@ trait BulkWriteDeleteManyOperation[TSchema]
 }
 object BulkWriteDeleteManyOperation {
   
-  @scala.inline
-  def apply[TSchema](deleteMany: BulkWriteDeleteOperation[TSchema]): BulkWriteDeleteManyOperation[TSchema] = {
+  inline def apply[TSchema](deleteMany: BulkWriteDeleteOperation[TSchema]): BulkWriteDeleteManyOperation[TSchema] = {
     val __obj = js.Dynamic.literal(deleteMany = deleteMany.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkWriteDeleteManyOperation[TSchema]]
   }
   
-  @scala.inline
-  implicit class BulkWriteDeleteManyOperationMutableBuilder[Self <: BulkWriteDeleteManyOperation[?], TSchema] (val x: Self & BulkWriteDeleteManyOperation[TSchema]) extends AnyVal {
+  extension [Self <: BulkWriteDeleteManyOperation[?], TSchema](x: Self & BulkWriteDeleteManyOperation[TSchema]) {
     
-    @scala.inline
-    def setDeleteMany(value: BulkWriteDeleteOperation[TSchema]): Self = StObject.set(x, "deleteMany", value.asInstanceOf[js.Any])
+    inline def setDeleteMany(value: BulkWriteDeleteOperation[TSchema]): Self = StObject.set(x, "deleteMany", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait OrthogonalArgs
 }
 object OrthogonalArgs {
   
-  @scala.inline
-  def apply(): OrthogonalArgs = {
+  inline def apply(): OrthogonalArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrthogonalArgs]
   }
   
-  @scala.inline
-  implicit class OrthogonalArgsMutableBuilder[Self <: OrthogonalArgs] (val x: Self) extends AnyVal {
+  extension [Self <: OrthogonalArgs](x: Self) {
     
-    @scala.inline
-    def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+    inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
+    inline def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
   }
 }

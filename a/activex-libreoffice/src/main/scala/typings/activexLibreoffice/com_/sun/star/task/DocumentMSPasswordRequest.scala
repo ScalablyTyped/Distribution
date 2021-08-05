@@ -21,8 +21,7 @@ trait DocumentMSPasswordRequest
 }
 object DocumentMSPasswordRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     Message: String,
@@ -33,10 +32,8 @@ object DocumentMSPasswordRequest {
     __obj.asInstanceOf[DocumentMSPasswordRequest]
   }
   
-  @scala.inline
-  implicit class DocumentMSPasswordRequestMutableBuilder[Self <: DocumentMSPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentMSPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

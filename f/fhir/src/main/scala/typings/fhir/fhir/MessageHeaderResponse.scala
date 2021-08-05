@@ -38,37 +38,27 @@ trait MessageHeaderResponse
 }
 object MessageHeaderResponse {
   
-  @scala.inline
-  def apply(code: code, identifier: id): MessageHeaderResponse = {
+  inline def apply(code: code, identifier: id): MessageHeaderResponse = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageHeaderResponse]
   }
   
-  @scala.inline
-  implicit class MessageHeaderResponseMutableBuilder[Self <: MessageHeaderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessageHeaderResponse](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Reference): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Reference): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: id): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: id): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_identifier(value: Element): Self = StObject.set(x, "_identifier", value.asInstanceOf[js.Any])
+    inline def set_identifier(value: Element): Self = StObject.set(x, "_identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_identifierUndefined: Self = StObject.set(x, "_identifier", js.undefined)
+    inline def set_identifierUndefined: Self = StObject.set(x, "_identifier", js.undefined)
   }
 }

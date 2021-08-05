@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "npm-cache-filename"
-version := "1.0-dt-20190911Z-a5163f"
+version := "1.0-dt-20190911Z-496fd3"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

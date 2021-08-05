@@ -13,8 +13,7 @@ object Events {
        with Event
   object ChangeEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
@@ -42,8 +41,7 @@ object Events {
   }
   object CommandEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       command: String,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
@@ -61,17 +59,13 @@ object Events {
       __obj.asInstanceOf[CommandEvent]
     }
     
-    @scala.inline
-    implicit class CommandEventMutableBuilder[Self <: CommandEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CommandEvent](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi(value: Boolean): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: Boolean): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,8 +81,7 @@ object Events {
   }
   object ContentEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content: String,
       format: String,
       isDefaultPrevented: () => Boolean,
@@ -106,17 +99,13 @@ object Events {
       __obj.asInstanceOf[ContentEvent]
     }
     
-    @scala.inline
-    implicit class ContentEventMutableBuilder[Self <: ContentEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ContentEvent](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,8 +129,7 @@ object Events {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
@@ -156,32 +144,23 @@ object Events {
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+      inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,8 +172,7 @@ object Events {
   }
   object FocusBlurEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blurredEditor: Editor,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
@@ -210,11 +188,9 @@ object Events {
       __obj.asInstanceOf[FocusBlurEvent]
     }
     
-    @scala.inline
-    implicit class FocusBlurEventMutableBuilder[Self <: FocusBlurEvent] (val x: Self) extends AnyVal {
+    extension [Self <: FocusBlurEvent](x: Self) {
       
-      @scala.inline
-      def setBlurredEditor(value: Editor): Self = StObject.set(x, "blurredEditor", value.asInstanceOf[js.Any])
+      inline def setBlurredEditor(value: Editor): Self = StObject.set(x, "blurredEditor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +206,7 @@ object Events {
   }
   object NodeChangeEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: Node,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
@@ -249,20 +224,15 @@ object Events {
       __obj.asInstanceOf[NodeChangeEvent]
     }
     
-    @scala.inline
-    implicit class NodeChangeEventMutableBuilder[Self <: NodeChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NodeChangeEvent](x: Self) {
       
-      @scala.inline
-      def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParents(value: js.Array[Node]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[Node]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsVarargs(value: Node*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: Node*): Self = StObject.set(x, "parents", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectionChange(value: Boolean): Self = StObject.set(x, "selectionChange", value.asInstanceOf[js.Any])
+      inline def setSelectionChange(value: Boolean): Self = StObject.set(x, "selectionChange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,8 +256,7 @@ object Events {
   }
   object ProcessEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content: String,
       forced_root_block: String,
       format: String,
@@ -308,29 +277,21 @@ object Events {
       __obj.asInstanceOf[ProcessEvent]
     }
     
-    @scala.inline
-    implicit class ProcessEventMutableBuilder[Self <: ProcessEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessEvent](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForced_root_block(value: String): Self = StObject.set(x, "forced_root_block", value.asInstanceOf[js.Any])
+      inline def setForced_root_block(value: String): Self = StObject.set(x, "forced_root_block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: Boolean): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: Boolean): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet_inner(value: Boolean): Self = StObject.set(x, "get_inner", value.asInstanceOf[js.Any])
+      inline def setGet_inner(value: Boolean): Self = StObject.set(x, "get_inner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelection(value: `true`): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: `true`): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,8 +300,7 @@ object Events {
        with Event
   object UndoRedoEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,

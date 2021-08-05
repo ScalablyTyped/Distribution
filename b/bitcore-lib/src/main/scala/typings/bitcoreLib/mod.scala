@@ -145,21 +145,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def add(data: js.Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(data.asInstanceOf[js.Any]).asInstanceOf[Network]
+    inline def add(data: js.Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(data.asInstanceOf[js.Any]).asInstanceOf[Network]
     
-    @scala.inline
-    def get(args: String, keys: String): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
-    @scala.inline
-    def get(args: String, keys: js.Array[String]): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
-    @scala.inline
-    def get(args: Double, keys: String): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
-    @scala.inline
-    def get(args: Double, keys: js.Array[String]): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
-    @scala.inline
-    def get(args: Network, keys: String): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
-    @scala.inline
-    def get(args: Network, keys: js.Array[String]): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
+    inline def get(args: String, keys: String): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
+    inline def get(args: String, keys: js.Array[String]): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
+    inline def get(args: Double, keys: String): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
+    inline def get(args: Double, keys: js.Array[String]): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
+    inline def get(args: Network, keys: String): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
+    inline def get(args: Network, keys: js.Array[String]): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
     
     @JSImport("bitcore-lib", "Networks.livenet")
     @js.native
@@ -169,8 +162,7 @@ object mod {
     @js.native
     val mainnet: Network = js.native
     
-    @scala.inline
-    def remove(network: Network): scala.Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(network.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+    inline def remove(network: Network): scala.Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(network.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
     
     @JSImport("bitcore-lib", "Networks.testnet")
     @js.native
@@ -184,20 +176,16 @@ object mod {
     }
     object Network {
       
-      @scala.inline
-      def apply(alias: String, name: String): Network = {
+      inline def apply(alias: String, name: String): Network = {
         val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Network]
       }
       
-      @scala.inline
-      implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+      extension [Self <: Network](x: Self) {
         
-        @scala.inline
-        def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+        inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -240,8 +228,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromPrivateKey(privateKey: PrivateKey): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
+    inline def fromPrivateKey(privateKey: PrivateKey): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
   }
   
   @JSImport("bitcore-lib", "Script")
@@ -324,53 +311,35 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buildDataOut(data: String): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any]).asInstanceOf[Script]
-    @scala.inline
-    def buildDataOut(data: String, encoding: String): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Script]
-    @scala.inline
-    def buildDataOut(data: Buffer): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any]).asInstanceOf[Script]
-    @scala.inline
-    def buildDataOut(data: Buffer, encoding: String): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildDataOut(data: String): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def buildDataOut(data: String, encoding: String): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildDataOut(data: Buffer): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def buildDataOut(data: Buffer, encoding: String): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildDataOut")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Script]
     
-    @scala.inline
-    def buildMultisigIn(pubkeys: js.Array[PublicKey], threshold: Double, signatures: js.Array[Buffer], opts: js.Object): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMultisigIn")(pubkeys.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any], signatures.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildMultisigIn(pubkeys: js.Array[PublicKey], threshold: Double, signatures: js.Array[Buffer], opts: js.Object): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMultisigIn")(pubkeys.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any], signatures.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Script]
     
-    @scala.inline
-    def buildMultisigOut(publicKeys: js.Array[PublicKey], threshold: Double, opts: js.Object): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMultisigOut")(publicKeys.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildMultisigOut(publicKeys: js.Array[PublicKey], threshold: Double, opts: js.Object): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMultisigOut")(publicKeys.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Script]
     
-    @scala.inline
-    def buildP2SHMultisigIn(pubkeys: js.Array[PublicKey], threshold: Double, signatures: js.Array[Buffer], opts: js.Object): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildP2SHMultisigIn")(pubkeys.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any], signatures.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildP2SHMultisigIn(pubkeys: js.Array[PublicKey], threshold: Double, signatures: js.Array[Buffer], opts: js.Object): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildP2SHMultisigIn")(pubkeys.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any], signatures.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Script]
     
-    @scala.inline
-    def buildPublicKeyHashIn(publicKey: PublicKey, signature: Signature, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyHashIn")(publicKey.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
-    @scala.inline
-    def buildPublicKeyHashIn(publicKey: PublicKey, signature: Buffer, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyHashIn")(publicKey.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildPublicKeyHashIn(publicKey: PublicKey, signature: Signature, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyHashIn")(publicKey.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildPublicKeyHashIn(publicKey: PublicKey, signature: Buffer, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyHashIn")(publicKey.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
     
-    @scala.inline
-    def buildPublicKeyHashOut(address: Address): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyHashOut")(address.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def buildPublicKeyHashOut(address: Address): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyHashOut")(address.asInstanceOf[js.Any]).asInstanceOf[Script]
     
-    @scala.inline
-    def buildPublicKeyIn(signature: Signature, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyIn")(signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
-    @scala.inline
-    def buildPublicKeyIn(signature: Buffer, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyIn")(signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildPublicKeyIn(signature: Signature, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyIn")(signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
+    inline def buildPublicKeyIn(signature: Buffer, sigtype: Double): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyIn")(signature.asInstanceOf[js.Any], sigtype.asInstanceOf[js.Any])).asInstanceOf[Script]
     
-    @scala.inline
-    def buildPublicKeyOut(pubkey: PublicKey): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyOut")(pubkey.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def buildPublicKeyOut(pubkey: PublicKey): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPublicKeyOut")(pubkey.asInstanceOf[js.Any]).asInstanceOf[Script]
     
-    @scala.inline
-    def buildScriptHashOut(script: Script): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildScriptHashOut")(script.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def buildScriptHashOut(script: Script): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildScriptHashOut")(script.asInstanceOf[js.Any]).asInstanceOf[Script]
     
-    @scala.inline
-    def buildWitnessMultisigOutFromScript(script: Script): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildWitnessMultisigOutFromScript")(script.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def buildWitnessMultisigOutFromScript(script: Script): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("buildWitnessMultisigOutFromScript")(script.asInstanceOf[js.Any]).asInstanceOf[Script]
     
-    @scala.inline
-    def empty(): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Script]
+    inline def empty(): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Script]
     
-    @scala.inline
-    def fromAddress(address: String): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Script]
-    @scala.inline
-    def fromAddress(address: Address): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def fromAddress(address: String): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Script]
+    inline def fromAddress(address: Address): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Script]
     
     object types {
       
@@ -381,8 +350,7 @@ object mod {
       @JSImport("bitcore-lib", "Script.types.DATA_OUT")
       @js.native
       def DATA_OUT: String = js.native
-      @scala.inline
-      def DATA_OUT_=(x: String): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_OUT")(x.asInstanceOf[js.Any])
+      inline def DATA_OUT_=(x: String): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_OUT")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -511,8 +479,7 @@ object mod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromObject(o: js.Object): UnspentOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(o.asInstanceOf[js.Any]).asInstanceOf[UnspentOutput]
+      inline def fromObject(o: js.Object): UnspentOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(o.asInstanceOf[js.Any]).asInstanceOf[UnspentOutput]
     }
   }
   
@@ -536,17 +503,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromBTC(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBTC")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def fromBTC(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBTC")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def fromBits(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def fromBits(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def fromMilis(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMilis")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def fromMilis(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMilis")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def fromSatoshis(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSatoshis")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def fromSatoshis(amount: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSatoshis")(amount.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object crypto {
@@ -561,14 +524,11 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def sign(message: Buffer, key: PrivateKey): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signature]
+      inline def sign(message: Buffer, key: PrivateKey): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signature]
       
-      @scala.inline
-      def verify(hashbuf: Buffer, sig: Signature, pubkey: PublicKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hashbuf.asInstanceOf[js.Any], sig.asInstanceOf[js.Any], pubkey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def verify(hashbuf: Buffer, sig: Signature, pubkey: PublicKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hashbuf.asInstanceOf[js.Any], sig.asInstanceOf[js.Any], pubkey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def verify_little(hashbuf: Buffer, sig: Signature, pubkey: PublicKey, endian: little): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hashbuf.asInstanceOf[js.Any], sig.asInstanceOf[js.Any], pubkey.asInstanceOf[js.Any], endian.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def verify_little(hashbuf: Buffer, sig: Signature, pubkey: PublicKey, endian: little): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(hashbuf.asInstanceOf[js.Any], sig.asInstanceOf[js.Any], pubkey.asInstanceOf[js.Any], endian.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     }
     
     object Hash {
@@ -577,29 +537,21 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def ripemd160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+      inline def ripemd160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
       
-      @scala.inline
-      def sha1(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+      inline def sha1(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
       
-      @scala.inline
-      def sha256(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+      inline def sha256(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
       
-      @scala.inline
-      def sha256hmac(data: Buffer, key: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256hmac")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+      inline def sha256hmac(data: Buffer, key: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sha256hmac")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
       
-      @scala.inline
-      def sha256ripemd160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256ripemd160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+      inline def sha256ripemd160(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256ripemd160")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
       
-      @scala.inline
-      def sha256sha256(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256sha256")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+      inline def sha256sha256(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256sha256")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
       
-      @scala.inline
-      def sha512(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+      inline def sha512(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
       
-      @scala.inline
-      def sha512hmac(data: Buffer, key: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512hmac")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+      inline def sha512hmac(data: Buffer, key: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sha512hmac")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     }
     
     object Random {
@@ -608,8 +560,7 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def getRandomBuffer(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBuffer")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+      inline def getRandomBuffer(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBuffer")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     }
     
     @JSImport("bitcore-lib", "crypto.Signature")
@@ -625,12 +576,10 @@ object mod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromDER(sig: Buffer): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDER")(sig.asInstanceOf[js.Any]).asInstanceOf[Signature]
+      inline def fromDER(sig: Buffer): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDER")(sig.asInstanceOf[js.Any]).asInstanceOf[Signature]
       
       /* static member */
-      @scala.inline
-      def fromString(data: String): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(data.asInstanceOf[js.Any]).asInstanceOf[Signature]
+      inline def fromString(data: String): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(data.asInstanceOf[js.Any]).asInstanceOf[Signature]
     }
   }
   
@@ -640,17 +589,14 @@ object mod {
   }
   object Util {
     
-    @scala.inline
-    def apply(buffer: Reverse): Util = {
+    inline def apply(buffer: Reverse): Util = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
       __obj.asInstanceOf[Util]
     }
     
-    @scala.inline
-    implicit class UtilMutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
+    extension [Self <: Util](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Reverse): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Reverse): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }
   }
 }

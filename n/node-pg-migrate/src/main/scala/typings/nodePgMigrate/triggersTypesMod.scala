@@ -79,71 +79,50 @@ object triggersTypesMod {
   }
   object TriggerOptions {
     
-    @scala.inline
-    def apply(operation: String | js.Array[String]): TriggerOptions = {
+    inline def apply(operation: String | js.Array[String]): TriggerOptions = {
       val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
       __obj.asInstanceOf[TriggerOptions]
     }
     
-    @scala.inline
-    implicit class TriggerOptionsMutableBuilder[Self <: TriggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerOptions](x: Self) {
       
-      @scala.inline
-      def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setConstraint(value: Boolean): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+      inline def setConstraint(value: Boolean): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+      inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
       
-      @scala.inline
-      def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
+      inline def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+      inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
       
-      @scala.inline
-      def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+      inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+      inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
       
-      @scala.inline
-      def setFunction(value: Name): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Name): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionParams(value: js.Array[Value]): Self = StObject.set(x, "functionParams", value.asInstanceOf[js.Any])
+      inline def setFunctionParams(value: js.Array[Value]): Self = StObject.set(x, "functionParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionParamsUndefined: Self = StObject.set(x, "functionParams", js.undefined)
+      inline def setFunctionParamsUndefined: Self = StObject.set(x, "functionParams", js.undefined)
       
-      @scala.inline
-      def setFunctionParamsVarargs(value: Value*): Self = StObject.set(x, "functionParams", js.Array(value :_*))
+      inline def setFunctionParamsVarargs(value: Value*): Self = StObject.set(x, "functionParams", js.Array(value :_*))
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setLevel(value: STATEMENT | ROW): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: STATEMENT | ROW): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setOperation(value: String | js.Array[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String | js.Array[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value :_*))
+      inline def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value :_*))
       
-      @scala.inline
-      def setWhen(value: BEFORE | AFTER | (`INSTEAD OF`)): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      inline def setWhen(value: BEFORE | AFTER | (`INSTEAD OF`)): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+      inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
     }
   }
 }

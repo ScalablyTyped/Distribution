@@ -17,28 +17,21 @@ trait ListImpressionMetricsResponse extends StObject {
 }
 object ListImpressionMetricsResponse {
   
-  @scala.inline
-  def apply(): ListImpressionMetricsResponse = {
+  inline def apply(): ListImpressionMetricsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListImpressionMetricsResponse]
   }
   
-  @scala.inline
-  implicit class ListImpressionMetricsResponseMutableBuilder[Self <: ListImpressionMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListImpressionMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setImpressionMetricsRows(value: js.Array[ImpressionMetricsRow]): Self = StObject.set(x, "impressionMetricsRows", value.asInstanceOf[js.Any])
+    inline def setImpressionMetricsRows(value: js.Array[ImpressionMetricsRow]): Self = StObject.set(x, "impressionMetricsRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionMetricsRowsUndefined: Self = StObject.set(x, "impressionMetricsRows", js.undefined)
+    inline def setImpressionMetricsRowsUndefined: Self = StObject.set(x, "impressionMetricsRows", js.undefined)
     
-    @scala.inline
-    def setImpressionMetricsRowsVarargs(value: ImpressionMetricsRow*): Self = StObject.set(x, "impressionMetricsRows", js.Array(value :_*))
+    inline def setImpressionMetricsRowsVarargs(value: ImpressionMetricsRow*): Self = StObject.set(x, "impressionMetricsRows", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

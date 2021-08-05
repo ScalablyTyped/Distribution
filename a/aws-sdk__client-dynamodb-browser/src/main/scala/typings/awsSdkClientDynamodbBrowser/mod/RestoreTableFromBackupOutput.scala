@@ -10,8 +10,7 @@ trait RestoreTableFromBackupOutput
      with typings.awsSdkClientDynamodbBrowser.typesRestoreTableFromBackupOutputMod.RestoreTableFromBackupOutput
 object RestoreTableFromBackupOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): RestoreTableFromBackupOutput = {
+  inline def apply($metadata: ResponseMetadata): RestoreTableFromBackupOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreTableFromBackupOutput]
   }

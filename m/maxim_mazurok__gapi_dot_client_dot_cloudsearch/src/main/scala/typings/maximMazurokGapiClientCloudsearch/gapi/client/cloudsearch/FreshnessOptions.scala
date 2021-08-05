@@ -18,25 +18,19 @@ trait FreshnessOptions extends StObject {
 }
 object FreshnessOptions {
   
-  @scala.inline
-  def apply(): FreshnessOptions = {
+  inline def apply(): FreshnessOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FreshnessOptions]
   }
   
-  @scala.inline
-  implicit class FreshnessOptionsMutableBuilder[Self <: FreshnessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FreshnessOptions](x: Self) {
     
-    @scala.inline
-    def setFreshnessDuration(value: String): Self = StObject.set(x, "freshnessDuration", value.asInstanceOf[js.Any])
+    inline def setFreshnessDuration(value: String): Self = StObject.set(x, "freshnessDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreshnessDurationUndefined: Self = StObject.set(x, "freshnessDuration", js.undefined)
+    inline def setFreshnessDurationUndefined: Self = StObject.set(x, "freshnessDuration", js.undefined)
     
-    @scala.inline
-    def setFreshnessProperty(value: String): Self = StObject.set(x, "freshnessProperty", value.asInstanceOf[js.Any])
+    inline def setFreshnessProperty(value: String): Self = StObject.set(x, "freshnessProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreshnessPropertyUndefined: Self = StObject.set(x, "freshnessProperty", js.undefined)
+    inline def setFreshnessPropertyUndefined: Self = StObject.set(x, "freshnessProperty", js.undefined)
   }
 }

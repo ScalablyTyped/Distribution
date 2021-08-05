@@ -18,25 +18,19 @@ trait ResourceLocation extends StObject {
 }
 object ResourceLocation {
   
-  @scala.inline
-  def apply(): ResourceLocation = {
+  inline def apply(): ResourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceLocation]
   }
   
-  @scala.inline
-  implicit class ResourceLocationMutableBuilder[Self <: ResourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceLocation](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNameUndefined: Self = StObject.set(x, "regionName", js.undefined)
+    inline def setRegionNameUndefined: Self = StObject.set(x, "regionName", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait DescribeInstanceRefreshesType extends StObject {
 }
 object DescribeInstanceRefreshesType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: XmlStringMaxLen255): DescribeInstanceRefreshesType = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255): DescribeInstanceRefreshesType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceRefreshesType]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceRefreshesTypeMutableBuilder[Self <: DescribeInstanceRefreshesType] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceRefreshesType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRefreshIds(value: InstanceRefreshIds): Self = StObject.set(x, "InstanceRefreshIds", value.asInstanceOf[js.Any])
+    inline def setInstanceRefreshIds(value: InstanceRefreshIds): Self = StObject.set(x, "InstanceRefreshIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRefreshIdsUndefined: Self = StObject.set(x, "InstanceRefreshIds", js.undefined)
+    inline def setInstanceRefreshIdsUndefined: Self = StObject.set(x, "InstanceRefreshIds", js.undefined)
     
-    @scala.inline
-    def setInstanceRefreshIdsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "InstanceRefreshIds", js.Array(value :_*))
+    inline def setInstanceRefreshIdsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "InstanceRefreshIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

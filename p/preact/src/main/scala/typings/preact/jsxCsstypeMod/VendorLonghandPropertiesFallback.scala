@@ -2095,2068 +2095,1385 @@ trait VendorLonghandPropertiesFallback[TLength] extends StObject {
 }
 object VendorLonghandPropertiesFallback {
   
-  @scala.inline
-  def apply[TLength](): VendorLonghandPropertiesFallback[TLength] = {
+  inline def apply[TLength](): VendorLonghandPropertiesFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VendorLonghandPropertiesFallback[TLength]]
   }
   
-  @scala.inline
-  implicit class VendorLonghandPropertiesFallbackMutableBuilder[Self <: VendorLonghandPropertiesFallback[?], TLength] (val x: Self & VendorLonghandPropertiesFallback[TLength]) extends AnyVal {
+  extension [Self <: VendorLonghandPropertiesFallback[?], TLength](x: Self & VendorLonghandPropertiesFallback[TLength]) {
     
-    @scala.inline
-    def setMozAnimationDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
+    inline def setMozAnimationDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationDelayUndefined: Self = StObject.set(x, "MozAnimationDelay", js.undefined)
+    inline def setMozAnimationDelayUndefined: Self = StObject.set(x, "MozAnimationDelay", js.undefined)
     
-    @scala.inline
-    def setMozAnimationDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "MozAnimationDelay", js.Array(value :_*))
+    inline def setMozAnimationDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "MozAnimationDelay", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAnimationDirection(value: AnimationDirectionProperty | js.Array[AnimationDirectionProperty]): Self = StObject.set(x, "MozAnimationDirection", value.asInstanceOf[js.Any])
+    inline def setMozAnimationDirection(value: AnimationDirectionProperty | js.Array[AnimationDirectionProperty]): Self = StObject.set(x, "MozAnimationDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationDirectionUndefined: Self = StObject.set(x, "MozAnimationDirection", js.undefined)
+    inline def setMozAnimationDirectionUndefined: Self = StObject.set(x, "MozAnimationDirection", js.undefined)
     
-    @scala.inline
-    def setMozAnimationDirectionVarargs(value: AnimationDirectionProperty*): Self = StObject.set(x, "MozAnimationDirection", js.Array(value :_*))
+    inline def setMozAnimationDirectionVarargs(value: AnimationDirectionProperty*): Self = StObject.set(x, "MozAnimationDirection", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAnimationDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozAnimationDuration", value.asInstanceOf[js.Any])
+    inline def setMozAnimationDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozAnimationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationDurationUndefined: Self = StObject.set(x, "MozAnimationDuration", js.undefined)
+    inline def setMozAnimationDurationUndefined: Self = StObject.set(x, "MozAnimationDuration", js.undefined)
     
-    @scala.inline
-    def setMozAnimationDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "MozAnimationDuration", js.Array(value :_*))
+    inline def setMozAnimationDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "MozAnimationDuration", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAnimationFillMode(value: AnimationFillModeProperty | js.Array[AnimationFillModeProperty]): Self = StObject.set(x, "MozAnimationFillMode", value.asInstanceOf[js.Any])
+    inline def setMozAnimationFillMode(value: AnimationFillModeProperty | js.Array[AnimationFillModeProperty]): Self = StObject.set(x, "MozAnimationFillMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationFillModeUndefined: Self = StObject.set(x, "MozAnimationFillMode", js.undefined)
+    inline def setMozAnimationFillModeUndefined: Self = StObject.set(x, "MozAnimationFillMode", js.undefined)
     
-    @scala.inline
-    def setMozAnimationFillModeVarargs(value: AnimationFillModeProperty*): Self = StObject.set(x, "MozAnimationFillMode", js.Array(value :_*))
+    inline def setMozAnimationFillModeVarargs(value: AnimationFillModeProperty*): Self = StObject.set(x, "MozAnimationFillMode", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAnimationIterationCount(value: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]): Self = StObject.set(x, "MozAnimationIterationCount", value.asInstanceOf[js.Any])
+    inline def setMozAnimationIterationCount(value: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]): Self = StObject.set(x, "MozAnimationIterationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationIterationCountUndefined: Self = StObject.set(x, "MozAnimationIterationCount", js.undefined)
+    inline def setMozAnimationIterationCountUndefined: Self = StObject.set(x, "MozAnimationIterationCount", js.undefined)
     
-    @scala.inline
-    def setMozAnimationIterationCountVarargs(value: AnimationIterationCountProperty*): Self = StObject.set(x, "MozAnimationIterationCount", js.Array(value :_*))
+    inline def setMozAnimationIterationCountVarargs(value: AnimationIterationCountProperty*): Self = StObject.set(x, "MozAnimationIterationCount", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAnimationName(value: AnimationNameProperty | js.Array[AnimationNameProperty]): Self = StObject.set(x, "MozAnimationName", value.asInstanceOf[js.Any])
+    inline def setMozAnimationName(value: AnimationNameProperty | js.Array[AnimationNameProperty]): Self = StObject.set(x, "MozAnimationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationNameUndefined: Self = StObject.set(x, "MozAnimationName", js.undefined)
+    inline def setMozAnimationNameUndefined: Self = StObject.set(x, "MozAnimationName", js.undefined)
     
-    @scala.inline
-    def setMozAnimationNameVarargs(value: AnimationNameProperty*): Self = StObject.set(x, "MozAnimationName", js.Array(value :_*))
+    inline def setMozAnimationNameVarargs(value: AnimationNameProperty*): Self = StObject.set(x, "MozAnimationName", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAnimationPlayState(value: AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]): Self = StObject.set(x, "MozAnimationPlayState", value.asInstanceOf[js.Any])
+    inline def setMozAnimationPlayState(value: AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]): Self = StObject.set(x, "MozAnimationPlayState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationPlayStateUndefined: Self = StObject.set(x, "MozAnimationPlayState", js.undefined)
+    inline def setMozAnimationPlayStateUndefined: Self = StObject.set(x, "MozAnimationPlayState", js.undefined)
     
-    @scala.inline
-    def setMozAnimationPlayStateVarargs(value: AnimationPlayStateProperty*): Self = StObject.set(x, "MozAnimationPlayState", js.Array(value :_*))
+    inline def setMozAnimationPlayStateVarargs(value: AnimationPlayStateProperty*): Self = StObject.set(x, "MozAnimationPlayState", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAnimationTimingFunction(value: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]): Self = StObject.set(x, "MozAnimationTimingFunction", value.asInstanceOf[js.Any])
+    inline def setMozAnimationTimingFunction(value: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]): Self = StObject.set(x, "MozAnimationTimingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAnimationTimingFunctionUndefined: Self = StObject.set(x, "MozAnimationTimingFunction", js.undefined)
+    inline def setMozAnimationTimingFunctionUndefined: Self = StObject.set(x, "MozAnimationTimingFunction", js.undefined)
     
-    @scala.inline
-    def setMozAnimationTimingFunctionVarargs(value: AnimationTimingFunctionProperty*): Self = StObject.set(x, "MozAnimationTimingFunction", js.Array(value :_*))
+    inline def setMozAnimationTimingFunctionVarargs(value: AnimationTimingFunctionProperty*): Self = StObject.set(x, "MozAnimationTimingFunction", js.Array(value :_*))
     
-    @scala.inline
-    def setMozAppearance(value: MozAppearanceProperty | js.Array[MozAppearanceProperty]): Self = StObject.set(x, "MozAppearance", value.asInstanceOf[js.Any])
+    inline def setMozAppearance(value: MozAppearanceProperty | js.Array[MozAppearanceProperty]): Self = StObject.set(x, "MozAppearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozAppearanceUndefined: Self = StObject.set(x, "MozAppearance", js.undefined)
+    inline def setMozAppearanceUndefined: Self = StObject.set(x, "MozAppearance", js.undefined)
     
-    @scala.inline
-    def setMozAppearanceVarargs(value: MozAppearanceProperty*): Self = StObject.set(x, "MozAppearance", js.Array(value :_*))
+    inline def setMozAppearanceVarargs(value: MozAppearanceProperty*): Self = StObject.set(x, "MozAppearance", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBackfaceVisibility(value: BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
+    inline def setMozBackfaceVisibility(value: BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
+    inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
     
-    @scala.inline
-    def setMozBackfaceVisibilityVarargs(value: BackfaceVisibilityProperty*): Self = StObject.set(x, "MozBackfaceVisibility", js.Array(value :_*))
+    inline def setMozBackfaceVisibilityVarargs(value: BackfaceVisibilityProperty*): Self = StObject.set(x, "MozBackfaceVisibility", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderBottomColors(value: MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty]): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
+    inline def setMozBorderBottomColors(value: MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty]): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderBottomColorsUndefined: Self = StObject.set(x, "MozBorderBottomColors", js.undefined)
+    inline def setMozBorderBottomColorsUndefined: Self = StObject.set(x, "MozBorderBottomColors", js.undefined)
     
-    @scala.inline
-    def setMozBorderBottomColorsVarargs(value: MozBorderBottomColorsProperty*): Self = StObject.set(x, "MozBorderBottomColors", js.Array(value :_*))
+    inline def setMozBorderBottomColorsVarargs(value: MozBorderBottomColorsProperty*): Self = StObject.set(x, "MozBorderBottomColors", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderEndColor(value: BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty]): Self = StObject.set(x, "MozBorderEndColor", value.asInstanceOf[js.Any])
+    inline def setMozBorderEndColor(value: BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty]): Self = StObject.set(x, "MozBorderEndColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderEndColorUndefined: Self = StObject.set(x, "MozBorderEndColor", js.undefined)
+    inline def setMozBorderEndColorUndefined: Self = StObject.set(x, "MozBorderEndColor", js.undefined)
     
-    @scala.inline
-    def setMozBorderEndColorVarargs(value: BorderInlineEndColorProperty*): Self = StObject.set(x, "MozBorderEndColor", js.Array(value :_*))
+    inline def setMozBorderEndColorVarargs(value: BorderInlineEndColorProperty*): Self = StObject.set(x, "MozBorderEndColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderEndStyle(value: BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty]): Self = StObject.set(x, "MozBorderEndStyle", value.asInstanceOf[js.Any])
+    inline def setMozBorderEndStyle(value: BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty]): Self = StObject.set(x, "MozBorderEndStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderEndStyleUndefined: Self = StObject.set(x, "MozBorderEndStyle", js.undefined)
+    inline def setMozBorderEndStyleUndefined: Self = StObject.set(x, "MozBorderEndStyle", js.undefined)
     
-    @scala.inline
-    def setMozBorderEndStyleVarargs(value: BorderInlineEndStyleProperty*): Self = StObject.set(x, "MozBorderEndStyle", js.Array(value :_*))
+    inline def setMozBorderEndStyleVarargs(value: BorderInlineEndStyleProperty*): Self = StObject.set(x, "MozBorderEndStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderEndWidth(value: BorderInlineEndWidthProperty[TLength] | js.Array[BorderInlineEndWidthProperty[TLength]]): Self = StObject.set(x, "MozBorderEndWidth", value.asInstanceOf[js.Any])
+    inline def setMozBorderEndWidth(value: BorderInlineEndWidthProperty[TLength] | js.Array[BorderInlineEndWidthProperty[TLength]]): Self = StObject.set(x, "MozBorderEndWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderEndWidthUndefined: Self = StObject.set(x, "MozBorderEndWidth", js.undefined)
+    inline def setMozBorderEndWidthUndefined: Self = StObject.set(x, "MozBorderEndWidth", js.undefined)
     
-    @scala.inline
-    def setMozBorderEndWidthVarargs(value: BorderInlineEndWidthProperty[TLength]*): Self = StObject.set(x, "MozBorderEndWidth", js.Array(value :_*))
+    inline def setMozBorderEndWidthVarargs(value: BorderInlineEndWidthProperty[TLength]*): Self = StObject.set(x, "MozBorderEndWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderLeftColors(value: MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty]): Self = StObject.set(x, "MozBorderLeftColors", value.asInstanceOf[js.Any])
+    inline def setMozBorderLeftColors(value: MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty]): Self = StObject.set(x, "MozBorderLeftColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderLeftColorsUndefined: Self = StObject.set(x, "MozBorderLeftColors", js.undefined)
+    inline def setMozBorderLeftColorsUndefined: Self = StObject.set(x, "MozBorderLeftColors", js.undefined)
     
-    @scala.inline
-    def setMozBorderLeftColorsVarargs(value: MozBorderLeftColorsProperty*): Self = StObject.set(x, "MozBorderLeftColors", js.Array(value :_*))
+    inline def setMozBorderLeftColorsVarargs(value: MozBorderLeftColorsProperty*): Self = StObject.set(x, "MozBorderLeftColors", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderRightColors(value: MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty]): Self = StObject.set(x, "MozBorderRightColors", value.asInstanceOf[js.Any])
+    inline def setMozBorderRightColors(value: MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty]): Self = StObject.set(x, "MozBorderRightColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderRightColorsUndefined: Self = StObject.set(x, "MozBorderRightColors", js.undefined)
+    inline def setMozBorderRightColorsUndefined: Self = StObject.set(x, "MozBorderRightColors", js.undefined)
     
-    @scala.inline
-    def setMozBorderRightColorsVarargs(value: MozBorderRightColorsProperty*): Self = StObject.set(x, "MozBorderRightColors", js.Array(value :_*))
+    inline def setMozBorderRightColorsVarargs(value: MozBorderRightColorsProperty*): Self = StObject.set(x, "MozBorderRightColors", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderStartColor(value: BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty]): Self = StObject.set(x, "MozBorderStartColor", value.asInstanceOf[js.Any])
+    inline def setMozBorderStartColor(value: BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty]): Self = StObject.set(x, "MozBorderStartColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderStartColorUndefined: Self = StObject.set(x, "MozBorderStartColor", js.undefined)
+    inline def setMozBorderStartColorUndefined: Self = StObject.set(x, "MozBorderStartColor", js.undefined)
     
-    @scala.inline
-    def setMozBorderStartColorVarargs(value: BorderInlineStartColorProperty*): Self = StObject.set(x, "MozBorderStartColor", js.Array(value :_*))
+    inline def setMozBorderStartColorVarargs(value: BorderInlineStartColorProperty*): Self = StObject.set(x, "MozBorderStartColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderStartStyle(value: BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty]): Self = StObject.set(x, "MozBorderStartStyle", value.asInstanceOf[js.Any])
+    inline def setMozBorderStartStyle(value: BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty]): Self = StObject.set(x, "MozBorderStartStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderStartStyleUndefined: Self = StObject.set(x, "MozBorderStartStyle", js.undefined)
+    inline def setMozBorderStartStyleUndefined: Self = StObject.set(x, "MozBorderStartStyle", js.undefined)
     
-    @scala.inline
-    def setMozBorderStartStyleVarargs(value: BorderInlineStartStyleProperty*): Self = StObject.set(x, "MozBorderStartStyle", js.Array(value :_*))
+    inline def setMozBorderStartStyleVarargs(value: BorderInlineStartStyleProperty*): Self = StObject.set(x, "MozBorderStartStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBorderTopColors(value: MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty]): Self = StObject.set(x, "MozBorderTopColors", value.asInstanceOf[js.Any])
+    inline def setMozBorderTopColors(value: MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty]): Self = StObject.set(x, "MozBorderTopColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBorderTopColorsUndefined: Self = StObject.set(x, "MozBorderTopColors", js.undefined)
+    inline def setMozBorderTopColorsUndefined: Self = StObject.set(x, "MozBorderTopColors", js.undefined)
     
-    @scala.inline
-    def setMozBorderTopColorsVarargs(value: MozBorderTopColorsProperty*): Self = StObject.set(x, "MozBorderTopColors", js.Array(value :_*))
+    inline def setMozBorderTopColorsVarargs(value: MozBorderTopColorsProperty*): Self = StObject.set(x, "MozBorderTopColors", js.Array(value :_*))
     
-    @scala.inline
-    def setMozBoxSizing(value: BoxSizingProperty | js.Array[BoxSizingProperty]): Self = StObject.set(x, "MozBoxSizing", value.asInstanceOf[js.Any])
+    inline def setMozBoxSizing(value: BoxSizingProperty | js.Array[BoxSizingProperty]): Self = StObject.set(x, "MozBoxSizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozBoxSizingUndefined: Self = StObject.set(x, "MozBoxSizing", js.undefined)
+    inline def setMozBoxSizingUndefined: Self = StObject.set(x, "MozBoxSizing", js.undefined)
     
-    @scala.inline
-    def setMozBoxSizingVarargs(value: BoxSizingProperty*): Self = StObject.set(x, "MozBoxSizing", js.Array(value :_*))
+    inline def setMozBoxSizingVarargs(value: BoxSizingProperty*): Self = StObject.set(x, "MozBoxSizing", js.Array(value :_*))
     
-    @scala.inline
-    def setMozColumnCount(value: ColumnCountProperty | js.Array[ColumnCountProperty]): Self = StObject.set(x, "MozColumnCount", value.asInstanceOf[js.Any])
+    inline def setMozColumnCount(value: ColumnCountProperty | js.Array[ColumnCountProperty]): Self = StObject.set(x, "MozColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColumnCountUndefined: Self = StObject.set(x, "MozColumnCount", js.undefined)
+    inline def setMozColumnCountUndefined: Self = StObject.set(x, "MozColumnCount", js.undefined)
     
-    @scala.inline
-    def setMozColumnCountVarargs(value: ColumnCountProperty*): Self = StObject.set(x, "MozColumnCount", js.Array(value :_*))
+    inline def setMozColumnCountVarargs(value: ColumnCountProperty*): Self = StObject.set(x, "MozColumnCount", js.Array(value :_*))
     
-    @scala.inline
-    def setMozColumnFill(value: ColumnFillProperty | js.Array[ColumnFillProperty]): Self = StObject.set(x, "MozColumnFill", value.asInstanceOf[js.Any])
+    inline def setMozColumnFill(value: ColumnFillProperty | js.Array[ColumnFillProperty]): Self = StObject.set(x, "MozColumnFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
+    inline def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
     
-    @scala.inline
-    def setMozColumnFillVarargs(value: ColumnFillProperty*): Self = StObject.set(x, "MozColumnFill", js.Array(value :_*))
+    inline def setMozColumnFillVarargs(value: ColumnFillProperty*): Self = StObject.set(x, "MozColumnFill", js.Array(value :_*))
     
-    @scala.inline
-    def setMozColumnGap(value: ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]]): Self = StObject.set(x, "MozColumnGap", value.asInstanceOf[js.Any])
+    inline def setMozColumnGap(value: ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]]): Self = StObject.set(x, "MozColumnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColumnGapUndefined: Self = StObject.set(x, "MozColumnGap", js.undefined)
+    inline def setMozColumnGapUndefined: Self = StObject.set(x, "MozColumnGap", js.undefined)
     
-    @scala.inline
-    def setMozColumnGapVarargs(value: ColumnGapProperty[TLength]*): Self = StObject.set(x, "MozColumnGap", js.Array(value :_*))
+    inline def setMozColumnGapVarargs(value: ColumnGapProperty[TLength]*): Self = StObject.set(x, "MozColumnGap", js.Array(value :_*))
     
-    @scala.inline
-    def setMozColumnRuleColor(value: ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
+    inline def setMozColumnRuleColor(value: ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColumnRuleColorUndefined: Self = StObject.set(x, "MozColumnRuleColor", js.undefined)
+    inline def setMozColumnRuleColorUndefined: Self = StObject.set(x, "MozColumnRuleColor", js.undefined)
     
-    @scala.inline
-    def setMozColumnRuleColorVarargs(value: ColumnRuleColorProperty*): Self = StObject.set(x, "MozColumnRuleColor", js.Array(value :_*))
+    inline def setMozColumnRuleColorVarargs(value: ColumnRuleColorProperty*): Self = StObject.set(x, "MozColumnRuleColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMozColumnRuleStyle(value: ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]): Self = StObject.set(x, "MozColumnRuleStyle", value.asInstanceOf[js.Any])
+    inline def setMozColumnRuleStyle(value: ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]): Self = StObject.set(x, "MozColumnRuleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColumnRuleStyleUndefined: Self = StObject.set(x, "MozColumnRuleStyle", js.undefined)
+    inline def setMozColumnRuleStyleUndefined: Self = StObject.set(x, "MozColumnRuleStyle", js.undefined)
     
-    @scala.inline
-    def setMozColumnRuleStyleVarargs(value: ColumnRuleStyleProperty*): Self = StObject.set(x, "MozColumnRuleStyle", js.Array(value :_*))
+    inline def setMozColumnRuleStyleVarargs(value: ColumnRuleStyleProperty*): Self = StObject.set(x, "MozColumnRuleStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setMozColumnRuleWidth(value: ColumnRuleWidthProperty[TLength] | js.Array[ColumnRuleWidthProperty[TLength]]): Self = StObject.set(x, "MozColumnRuleWidth", value.asInstanceOf[js.Any])
+    inline def setMozColumnRuleWidth(value: ColumnRuleWidthProperty[TLength] | js.Array[ColumnRuleWidthProperty[TLength]]): Self = StObject.set(x, "MozColumnRuleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColumnRuleWidthUndefined: Self = StObject.set(x, "MozColumnRuleWidth", js.undefined)
+    inline def setMozColumnRuleWidthUndefined: Self = StObject.set(x, "MozColumnRuleWidth", js.undefined)
     
-    @scala.inline
-    def setMozColumnRuleWidthVarargs(value: ColumnRuleWidthProperty[TLength]*): Self = StObject.set(x, "MozColumnRuleWidth", js.Array(value :_*))
+    inline def setMozColumnRuleWidthVarargs(value: ColumnRuleWidthProperty[TLength]*): Self = StObject.set(x, "MozColumnRuleWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setMozColumnWidth(value: ColumnWidthProperty[TLength] | js.Array[ColumnWidthProperty[TLength]]): Self = StObject.set(x, "MozColumnWidth", value.asInstanceOf[js.Any])
+    inline def setMozColumnWidth(value: ColumnWidthProperty[TLength] | js.Array[ColumnWidthProperty[TLength]]): Self = StObject.set(x, "MozColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColumnWidthUndefined: Self = StObject.set(x, "MozColumnWidth", js.undefined)
+    inline def setMozColumnWidthUndefined: Self = StObject.set(x, "MozColumnWidth", js.undefined)
     
-    @scala.inline
-    def setMozColumnWidthVarargs(value: ColumnWidthProperty[TLength]*): Self = StObject.set(x, "MozColumnWidth", js.Array(value :_*))
+    inline def setMozColumnWidthVarargs(value: ColumnWidthProperty[TLength]*): Self = StObject.set(x, "MozColumnWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setMozContextProperties(value: MozContextPropertiesProperty | js.Array[MozContextPropertiesProperty]): Self = StObject.set(x, "MozContextProperties", value.asInstanceOf[js.Any])
+    inline def setMozContextProperties(value: MozContextPropertiesProperty | js.Array[MozContextPropertiesProperty]): Self = StObject.set(x, "MozContextProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozContextPropertiesUndefined: Self = StObject.set(x, "MozContextProperties", js.undefined)
+    inline def setMozContextPropertiesUndefined: Self = StObject.set(x, "MozContextProperties", js.undefined)
     
-    @scala.inline
-    def setMozContextPropertiesVarargs(value: MozContextPropertiesProperty*): Self = StObject.set(x, "MozContextProperties", js.Array(value :_*))
+    inline def setMozContextPropertiesVarargs(value: MozContextPropertiesProperty*): Self = StObject.set(x, "MozContextProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setMozFloatEdge(value: MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]): Self = StObject.set(x, "MozFloatEdge", value.asInstanceOf[js.Any])
+    inline def setMozFloatEdge(value: MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]): Self = StObject.set(x, "MozFloatEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozFloatEdgeUndefined: Self = StObject.set(x, "MozFloatEdge", js.undefined)
+    inline def setMozFloatEdgeUndefined: Self = StObject.set(x, "MozFloatEdge", js.undefined)
     
-    @scala.inline
-    def setMozFloatEdgeVarargs(value: MozFloatEdgeProperty*): Self = StObject.set(x, "MozFloatEdge", js.Array(value :_*))
+    inline def setMozFloatEdgeVarargs(value: MozFloatEdgeProperty*): Self = StObject.set(x, "MozFloatEdge", js.Array(value :_*))
     
-    @scala.inline
-    def setMozFontFeatureSettings(value: FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]): Self = StObject.set(x, "MozFontFeatureSettings", value.asInstanceOf[js.Any])
+    inline def setMozFontFeatureSettings(value: FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]): Self = StObject.set(x, "MozFontFeatureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozFontFeatureSettingsUndefined: Self = StObject.set(x, "MozFontFeatureSettings", js.undefined)
+    inline def setMozFontFeatureSettingsUndefined: Self = StObject.set(x, "MozFontFeatureSettings", js.undefined)
     
-    @scala.inline
-    def setMozFontFeatureSettingsVarargs(value: FontFeatureSettingsProperty*): Self = StObject.set(x, "MozFontFeatureSettings", js.Array(value :_*))
+    inline def setMozFontFeatureSettingsVarargs(value: FontFeatureSettingsProperty*): Self = StObject.set(x, "MozFontFeatureSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setMozFontLanguageOverride(value: FontLanguageOverrideProperty | js.Array[FontLanguageOverrideProperty]): Self = StObject.set(x, "MozFontLanguageOverride", value.asInstanceOf[js.Any])
+    inline def setMozFontLanguageOverride(value: FontLanguageOverrideProperty | js.Array[FontLanguageOverrideProperty]): Self = StObject.set(x, "MozFontLanguageOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozFontLanguageOverrideUndefined: Self = StObject.set(x, "MozFontLanguageOverride", js.undefined)
+    inline def setMozFontLanguageOverrideUndefined: Self = StObject.set(x, "MozFontLanguageOverride", js.undefined)
     
-    @scala.inline
-    def setMozFontLanguageOverrideVarargs(value: FontLanguageOverrideProperty*): Self = StObject.set(x, "MozFontLanguageOverride", js.Array(value :_*))
+    inline def setMozFontLanguageOverrideVarargs(value: FontLanguageOverrideProperty*): Self = StObject.set(x, "MozFontLanguageOverride", js.Array(value :_*))
     
-    @scala.inline
-    def setMozForceBrokenImageIcon(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "MozForceBrokenImageIcon", value.asInstanceOf[js.Any])
+    inline def setMozForceBrokenImageIcon(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "MozForceBrokenImageIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozForceBrokenImageIconUndefined: Self = StObject.set(x, "MozForceBrokenImageIcon", js.undefined)
+    inline def setMozForceBrokenImageIconUndefined: Self = StObject.set(x, "MozForceBrokenImageIcon", js.undefined)
     
-    @scala.inline
-    def setMozForceBrokenImageIconVarargs(value: GlobalsNumber*): Self = StObject.set(x, "MozForceBrokenImageIcon", js.Array(value :_*))
+    inline def setMozForceBrokenImageIconVarargs(value: GlobalsNumber*): Self = StObject.set(x, "MozForceBrokenImageIcon", js.Array(value :_*))
     
-    @scala.inline
-    def setMozHyphens(value: HyphensProperty | js.Array[HyphensProperty]): Self = StObject.set(x, "MozHyphens", value.asInstanceOf[js.Any])
+    inline def setMozHyphens(value: HyphensProperty | js.Array[HyphensProperty]): Self = StObject.set(x, "MozHyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozHyphensUndefined: Self = StObject.set(x, "MozHyphens", js.undefined)
+    inline def setMozHyphensUndefined: Self = StObject.set(x, "MozHyphens", js.undefined)
     
-    @scala.inline
-    def setMozHyphensVarargs(value: HyphensProperty*): Self = StObject.set(x, "MozHyphens", js.Array(value :_*))
+    inline def setMozHyphensVarargs(value: HyphensProperty*): Self = StObject.set(x, "MozHyphens", js.Array(value :_*))
     
-    @scala.inline
-    def setMozImageRegion(value: MozImageRegionProperty | js.Array[MozImageRegionProperty]): Self = StObject.set(x, "MozImageRegion", value.asInstanceOf[js.Any])
+    inline def setMozImageRegion(value: MozImageRegionProperty | js.Array[MozImageRegionProperty]): Self = StObject.set(x, "MozImageRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozImageRegionUndefined: Self = StObject.set(x, "MozImageRegion", js.undefined)
+    inline def setMozImageRegionUndefined: Self = StObject.set(x, "MozImageRegion", js.undefined)
     
-    @scala.inline
-    def setMozImageRegionVarargs(value: MozImageRegionProperty*): Self = StObject.set(x, "MozImageRegion", js.Array(value :_*))
+    inline def setMozImageRegionVarargs(value: MozImageRegionProperty*): Self = StObject.set(x, "MozImageRegion", js.Array(value :_*))
     
-    @scala.inline
-    def setMozMarginEnd(value: MarginInlineEndProperty[TLength] | js.Array[MarginInlineEndProperty[TLength]]): Self = StObject.set(x, "MozMarginEnd", value.asInstanceOf[js.Any])
+    inline def setMozMarginEnd(value: MarginInlineEndProperty[TLength] | js.Array[MarginInlineEndProperty[TLength]]): Self = StObject.set(x, "MozMarginEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozMarginEndUndefined: Self = StObject.set(x, "MozMarginEnd", js.undefined)
+    inline def setMozMarginEndUndefined: Self = StObject.set(x, "MozMarginEnd", js.undefined)
     
-    @scala.inline
-    def setMozMarginEndVarargs(value: MarginInlineEndProperty[TLength]*): Self = StObject.set(x, "MozMarginEnd", js.Array(value :_*))
+    inline def setMozMarginEndVarargs(value: MarginInlineEndProperty[TLength]*): Self = StObject.set(x, "MozMarginEnd", js.Array(value :_*))
     
-    @scala.inline
-    def setMozMarginStart(value: MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]]): Self = StObject.set(x, "MozMarginStart", value.asInstanceOf[js.Any])
+    inline def setMozMarginStart(value: MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]]): Self = StObject.set(x, "MozMarginStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozMarginStartUndefined: Self = StObject.set(x, "MozMarginStart", js.undefined)
+    inline def setMozMarginStartUndefined: Self = StObject.set(x, "MozMarginStart", js.undefined)
     
-    @scala.inline
-    def setMozMarginStartVarargs(value: MarginInlineStartProperty[TLength]*): Self = StObject.set(x, "MozMarginStart", js.Array(value :_*))
+    inline def setMozMarginStartVarargs(value: MarginInlineStartProperty[TLength]*): Self = StObject.set(x, "MozMarginStart", js.Array(value :_*))
     
-    @scala.inline
-    def setMozOrient(value: MozOrientProperty | js.Array[MozOrientProperty]): Self = StObject.set(x, "MozOrient", value.asInstanceOf[js.Any])
+    inline def setMozOrient(value: MozOrientProperty | js.Array[MozOrientProperty]): Self = StObject.set(x, "MozOrient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozOrientUndefined: Self = StObject.set(x, "MozOrient", js.undefined)
+    inline def setMozOrientUndefined: Self = StObject.set(x, "MozOrient", js.undefined)
     
-    @scala.inline
-    def setMozOrientVarargs(value: MozOrientProperty*): Self = StObject.set(x, "MozOrient", js.Array(value :_*))
+    inline def setMozOrientVarargs(value: MozOrientProperty*): Self = StObject.set(x, "MozOrient", js.Array(value :_*))
     
-    @scala.inline
-    def setMozOutlineRadiusBottomleft(
+    inline def setMozOutlineRadiusBottomleft(
       value: MozOutlineRadiusBottomleftProperty[TLength] | js.Array[MozOutlineRadiusBottomleftProperty[TLength]]
     ): Self = StObject.set(x, "MozOutlineRadiusBottomleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozOutlineRadiusBottomleftUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomleft", js.undefined)
+    inline def setMozOutlineRadiusBottomleftUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomleft", js.undefined)
     
-    @scala.inline
-    def setMozOutlineRadiusBottomleftVarargs(value: MozOutlineRadiusBottomleftProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusBottomleft", js.Array(value :_*))
+    inline def setMozOutlineRadiusBottomleftVarargs(value: MozOutlineRadiusBottomleftProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusBottomleft", js.Array(value :_*))
     
-    @scala.inline
-    def setMozOutlineRadiusBottomright(
+    inline def setMozOutlineRadiusBottomright(
       value: MozOutlineRadiusBottomrightProperty[TLength] | js.Array[MozOutlineRadiusBottomrightProperty[TLength]]
     ): Self = StObject.set(x, "MozOutlineRadiusBottomright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozOutlineRadiusBottomrightUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomright", js.undefined)
+    inline def setMozOutlineRadiusBottomrightUndefined: Self = StObject.set(x, "MozOutlineRadiusBottomright", js.undefined)
     
-    @scala.inline
-    def setMozOutlineRadiusBottomrightVarargs(value: MozOutlineRadiusBottomrightProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusBottomright", js.Array(value :_*))
+    inline def setMozOutlineRadiusBottomrightVarargs(value: MozOutlineRadiusBottomrightProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusBottomright", js.Array(value :_*))
     
-    @scala.inline
-    def setMozOutlineRadiusTopleft(
+    inline def setMozOutlineRadiusTopleft(
       value: MozOutlineRadiusTopleftProperty[TLength] | js.Array[MozOutlineRadiusTopleftProperty[TLength]]
     ): Self = StObject.set(x, "MozOutlineRadiusTopleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozOutlineRadiusTopleftUndefined: Self = StObject.set(x, "MozOutlineRadiusTopleft", js.undefined)
+    inline def setMozOutlineRadiusTopleftUndefined: Self = StObject.set(x, "MozOutlineRadiusTopleft", js.undefined)
     
-    @scala.inline
-    def setMozOutlineRadiusTopleftVarargs(value: MozOutlineRadiusTopleftProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusTopleft", js.Array(value :_*))
+    inline def setMozOutlineRadiusTopleftVarargs(value: MozOutlineRadiusTopleftProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusTopleft", js.Array(value :_*))
     
-    @scala.inline
-    def setMozOutlineRadiusTopright(
+    inline def setMozOutlineRadiusTopright(
       value: MozOutlineRadiusToprightProperty[TLength] | js.Array[MozOutlineRadiusToprightProperty[TLength]]
     ): Self = StObject.set(x, "MozOutlineRadiusTopright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozOutlineRadiusToprightUndefined: Self = StObject.set(x, "MozOutlineRadiusTopright", js.undefined)
+    inline def setMozOutlineRadiusToprightUndefined: Self = StObject.set(x, "MozOutlineRadiusTopright", js.undefined)
     
-    @scala.inline
-    def setMozOutlineRadiusToprightVarargs(value: MozOutlineRadiusToprightProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusTopright", js.Array(value :_*))
+    inline def setMozOutlineRadiusToprightVarargs(value: MozOutlineRadiusToprightProperty[TLength]*): Self = StObject.set(x, "MozOutlineRadiusTopright", js.Array(value :_*))
     
-    @scala.inline
-    def setMozPaddingEnd(value: PaddingInlineEndProperty[TLength] | js.Array[PaddingInlineEndProperty[TLength]]): Self = StObject.set(x, "MozPaddingEnd", value.asInstanceOf[js.Any])
+    inline def setMozPaddingEnd(value: PaddingInlineEndProperty[TLength] | js.Array[PaddingInlineEndProperty[TLength]]): Self = StObject.set(x, "MozPaddingEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozPaddingEndUndefined: Self = StObject.set(x, "MozPaddingEnd", js.undefined)
+    inline def setMozPaddingEndUndefined: Self = StObject.set(x, "MozPaddingEnd", js.undefined)
     
-    @scala.inline
-    def setMozPaddingEndVarargs(value: PaddingInlineEndProperty[TLength]*): Self = StObject.set(x, "MozPaddingEnd", js.Array(value :_*))
+    inline def setMozPaddingEndVarargs(value: PaddingInlineEndProperty[TLength]*): Self = StObject.set(x, "MozPaddingEnd", js.Array(value :_*))
     
-    @scala.inline
-    def setMozPaddingStart(value: PaddingInlineStartProperty[TLength] | js.Array[PaddingInlineStartProperty[TLength]]): Self = StObject.set(x, "MozPaddingStart", value.asInstanceOf[js.Any])
+    inline def setMozPaddingStart(value: PaddingInlineStartProperty[TLength] | js.Array[PaddingInlineStartProperty[TLength]]): Self = StObject.set(x, "MozPaddingStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozPaddingStartUndefined: Self = StObject.set(x, "MozPaddingStart", js.undefined)
+    inline def setMozPaddingStartUndefined: Self = StObject.set(x, "MozPaddingStart", js.undefined)
     
-    @scala.inline
-    def setMozPaddingStartVarargs(value: PaddingInlineStartProperty[TLength]*): Self = StObject.set(x, "MozPaddingStart", js.Array(value :_*))
+    inline def setMozPaddingStartVarargs(value: PaddingInlineStartProperty[TLength]*): Self = StObject.set(x, "MozPaddingStart", js.Array(value :_*))
     
-    @scala.inline
-    def setMozPerspective(value: PerspectiveProperty[TLength] | js.Array[PerspectiveProperty[TLength]]): Self = StObject.set(x, "MozPerspective", value.asInstanceOf[js.Any])
+    inline def setMozPerspective(value: PerspectiveProperty[TLength] | js.Array[PerspectiveProperty[TLength]]): Self = StObject.set(x, "MozPerspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozPerspectiveOrigin(value: PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]]): Self = StObject.set(x, "MozPerspectiveOrigin", value.asInstanceOf[js.Any])
+    inline def setMozPerspectiveOrigin(value: PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]]): Self = StObject.set(x, "MozPerspectiveOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozPerspectiveOriginUndefined: Self = StObject.set(x, "MozPerspectiveOrigin", js.undefined)
+    inline def setMozPerspectiveOriginUndefined: Self = StObject.set(x, "MozPerspectiveOrigin", js.undefined)
     
-    @scala.inline
-    def setMozPerspectiveOriginVarargs(value: PerspectiveOriginProperty[TLength]*): Self = StObject.set(x, "MozPerspectiveOrigin", js.Array(value :_*))
+    inline def setMozPerspectiveOriginVarargs(value: PerspectiveOriginProperty[TLength]*): Self = StObject.set(x, "MozPerspectiveOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setMozPerspectiveUndefined: Self = StObject.set(x, "MozPerspective", js.undefined)
+    inline def setMozPerspectiveUndefined: Self = StObject.set(x, "MozPerspective", js.undefined)
     
-    @scala.inline
-    def setMozPerspectiveVarargs(value: PerspectiveProperty[TLength]*): Self = StObject.set(x, "MozPerspective", js.Array(value :_*))
+    inline def setMozPerspectiveVarargs(value: PerspectiveProperty[TLength]*): Self = StObject.set(x, "MozPerspective", js.Array(value :_*))
     
-    @scala.inline
-    def setMozStackSizing(value: MozStackSizingProperty | js.Array[MozStackSizingProperty]): Self = StObject.set(x, "MozStackSizing", value.asInstanceOf[js.Any])
+    inline def setMozStackSizing(value: MozStackSizingProperty | js.Array[MozStackSizingProperty]): Self = StObject.set(x, "MozStackSizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozStackSizingUndefined: Self = StObject.set(x, "MozStackSizing", js.undefined)
+    inline def setMozStackSizingUndefined: Self = StObject.set(x, "MozStackSizing", js.undefined)
     
-    @scala.inline
-    def setMozStackSizingVarargs(value: MozStackSizingProperty*): Self = StObject.set(x, "MozStackSizing", js.Array(value :_*))
+    inline def setMozStackSizingVarargs(value: MozStackSizingProperty*): Self = StObject.set(x, "MozStackSizing", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTabSize(value: TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]): Self = StObject.set(x, "MozTabSize", value.asInstanceOf[js.Any])
+    inline def setMozTabSize(value: TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]): Self = StObject.set(x, "MozTabSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTabSizeUndefined: Self = StObject.set(x, "MozTabSize", js.undefined)
+    inline def setMozTabSizeUndefined: Self = StObject.set(x, "MozTabSize", js.undefined)
     
-    @scala.inline
-    def setMozTabSizeVarargs(value: TabSizeProperty[TLength]*): Self = StObject.set(x, "MozTabSize", js.Array(value :_*))
+    inline def setMozTabSizeVarargs(value: TabSizeProperty[TLength]*): Self = StObject.set(x, "MozTabSize", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTextBlink(value: MozTextBlinkProperty | js.Array[MozTextBlinkProperty]): Self = StObject.set(x, "MozTextBlink", value.asInstanceOf[js.Any])
+    inline def setMozTextBlink(value: MozTextBlinkProperty | js.Array[MozTextBlinkProperty]): Self = StObject.set(x, "MozTextBlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTextBlinkUndefined: Self = StObject.set(x, "MozTextBlink", js.undefined)
+    inline def setMozTextBlinkUndefined: Self = StObject.set(x, "MozTextBlink", js.undefined)
     
-    @scala.inline
-    def setMozTextBlinkVarargs(value: MozTextBlinkProperty*): Self = StObject.set(x, "MozTextBlink", js.Array(value :_*))
+    inline def setMozTextBlinkVarargs(value: MozTextBlinkProperty*): Self = StObject.set(x, "MozTextBlink", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTextSizeAdjust(value: TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]): Self = StObject.set(x, "MozTextSizeAdjust", value.asInstanceOf[js.Any])
+    inline def setMozTextSizeAdjust(value: TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]): Self = StObject.set(x, "MozTextSizeAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTextSizeAdjustUndefined: Self = StObject.set(x, "MozTextSizeAdjust", js.undefined)
+    inline def setMozTextSizeAdjustUndefined: Self = StObject.set(x, "MozTextSizeAdjust", js.undefined)
     
-    @scala.inline
-    def setMozTextSizeAdjustVarargs(value: TextSizeAdjustProperty*): Self = StObject.set(x, "MozTextSizeAdjust", js.Array(value :_*))
+    inline def setMozTextSizeAdjustVarargs(value: TextSizeAdjustProperty*): Self = StObject.set(x, "MozTextSizeAdjust", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "MozTransformOrigin", value.asInstanceOf[js.Any])
+    inline def setMozTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "MozTransformOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTransformOriginUndefined: Self = StObject.set(x, "MozTransformOrigin", js.undefined)
+    inline def setMozTransformOriginUndefined: Self = StObject.set(x, "MozTransformOrigin", js.undefined)
     
-    @scala.inline
-    def setMozTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "MozTransformOrigin", js.Array(value :_*))
+    inline def setMozTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "MozTransformOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTransformStyle(value: TransformStyleProperty | js.Array[TransformStyleProperty]): Self = StObject.set(x, "MozTransformStyle", value.asInstanceOf[js.Any])
+    inline def setMozTransformStyle(value: TransformStyleProperty | js.Array[TransformStyleProperty]): Self = StObject.set(x, "MozTransformStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTransformStyleUndefined: Self = StObject.set(x, "MozTransformStyle", js.undefined)
+    inline def setMozTransformStyleUndefined: Self = StObject.set(x, "MozTransformStyle", js.undefined)
     
-    @scala.inline
-    def setMozTransformStyleVarargs(value: TransformStyleProperty*): Self = StObject.set(x, "MozTransformStyle", js.Array(value :_*))
+    inline def setMozTransformStyleVarargs(value: TransformStyleProperty*): Self = StObject.set(x, "MozTransformStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTransitionDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozTransitionDelay", value.asInstanceOf[js.Any])
+    inline def setMozTransitionDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozTransitionDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTransitionDelayUndefined: Self = StObject.set(x, "MozTransitionDelay", js.undefined)
+    inline def setMozTransitionDelayUndefined: Self = StObject.set(x, "MozTransitionDelay", js.undefined)
     
-    @scala.inline
-    def setMozTransitionDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "MozTransitionDelay", js.Array(value :_*))
+    inline def setMozTransitionDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "MozTransitionDelay", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTransitionDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozTransitionDuration", value.asInstanceOf[js.Any])
+    inline def setMozTransitionDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "MozTransitionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTransitionDurationUndefined: Self = StObject.set(x, "MozTransitionDuration", js.undefined)
+    inline def setMozTransitionDurationUndefined: Self = StObject.set(x, "MozTransitionDuration", js.undefined)
     
-    @scala.inline
-    def setMozTransitionDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "MozTransitionDuration", js.Array(value :_*))
+    inline def setMozTransitionDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "MozTransitionDuration", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTransitionProperty(value: TransitionPropertyProperty | js.Array[TransitionPropertyProperty]): Self = StObject.set(x, "MozTransitionProperty", value.asInstanceOf[js.Any])
+    inline def setMozTransitionProperty(value: TransitionPropertyProperty | js.Array[TransitionPropertyProperty]): Self = StObject.set(x, "MozTransitionProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTransitionPropertyUndefined: Self = StObject.set(x, "MozTransitionProperty", js.undefined)
+    inline def setMozTransitionPropertyUndefined: Self = StObject.set(x, "MozTransitionProperty", js.undefined)
     
-    @scala.inline
-    def setMozTransitionPropertyVarargs(value: TransitionPropertyProperty*): Self = StObject.set(x, "MozTransitionProperty", js.Array(value :_*))
+    inline def setMozTransitionPropertyVarargs(value: TransitionPropertyProperty*): Self = StObject.set(x, "MozTransitionProperty", js.Array(value :_*))
     
-    @scala.inline
-    def setMozTransitionTimingFunction(value: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]): Self = StObject.set(x, "MozTransitionTimingFunction", value.asInstanceOf[js.Any])
+    inline def setMozTransitionTimingFunction(value: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]): Self = StObject.set(x, "MozTransitionTimingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozTransitionTimingFunctionUndefined: Self = StObject.set(x, "MozTransitionTimingFunction", js.undefined)
+    inline def setMozTransitionTimingFunctionUndefined: Self = StObject.set(x, "MozTransitionTimingFunction", js.undefined)
     
-    @scala.inline
-    def setMozTransitionTimingFunctionVarargs(value: TransitionTimingFunctionProperty*): Self = StObject.set(x, "MozTransitionTimingFunction", js.Array(value :_*))
+    inline def setMozTransitionTimingFunctionVarargs(value: TransitionTimingFunctionProperty*): Self = StObject.set(x, "MozTransitionTimingFunction", js.Array(value :_*))
     
-    @scala.inline
-    def setMozUserFocus(value: MozUserFocusProperty | js.Array[MozUserFocusProperty]): Self = StObject.set(x, "MozUserFocus", value.asInstanceOf[js.Any])
+    inline def setMozUserFocus(value: MozUserFocusProperty | js.Array[MozUserFocusProperty]): Self = StObject.set(x, "MozUserFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozUserFocusUndefined: Self = StObject.set(x, "MozUserFocus", js.undefined)
+    inline def setMozUserFocusUndefined: Self = StObject.set(x, "MozUserFocus", js.undefined)
     
-    @scala.inline
-    def setMozUserFocusVarargs(value: MozUserFocusProperty*): Self = StObject.set(x, "MozUserFocus", js.Array(value :_*))
+    inline def setMozUserFocusVarargs(value: MozUserFocusProperty*): Self = StObject.set(x, "MozUserFocus", js.Array(value :_*))
     
-    @scala.inline
-    def setMozUserModify(value: MozUserModifyProperty | js.Array[MozUserModifyProperty]): Self = StObject.set(x, "MozUserModify", value.asInstanceOf[js.Any])
+    inline def setMozUserModify(value: MozUserModifyProperty | js.Array[MozUserModifyProperty]): Self = StObject.set(x, "MozUserModify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozUserModifyUndefined: Self = StObject.set(x, "MozUserModify", js.undefined)
+    inline def setMozUserModifyUndefined: Self = StObject.set(x, "MozUserModify", js.undefined)
     
-    @scala.inline
-    def setMozUserModifyVarargs(value: MozUserModifyProperty*): Self = StObject.set(x, "MozUserModify", js.Array(value :_*))
+    inline def setMozUserModifyVarargs(value: MozUserModifyProperty*): Self = StObject.set(x, "MozUserModify", js.Array(value :_*))
     
-    @scala.inline
-    def setMozUserSelect(value: UserSelectProperty | js.Array[UserSelectProperty]): Self = StObject.set(x, "MozUserSelect", value.asInstanceOf[js.Any])
+    inline def setMozUserSelect(value: UserSelectProperty | js.Array[UserSelectProperty]): Self = StObject.set(x, "MozUserSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozUserSelectUndefined: Self = StObject.set(x, "MozUserSelect", js.undefined)
+    inline def setMozUserSelectUndefined: Self = StObject.set(x, "MozUserSelect", js.undefined)
     
-    @scala.inline
-    def setMozUserSelectVarargs(value: UserSelectProperty*): Self = StObject.set(x, "MozUserSelect", js.Array(value :_*))
+    inline def setMozUserSelectVarargs(value: UserSelectProperty*): Self = StObject.set(x, "MozUserSelect", js.Array(value :_*))
     
-    @scala.inline
-    def setMozWindowDragging(value: MozWindowDraggingProperty | js.Array[MozWindowDraggingProperty]): Self = StObject.set(x, "MozWindowDragging", value.asInstanceOf[js.Any])
+    inline def setMozWindowDragging(value: MozWindowDraggingProperty | js.Array[MozWindowDraggingProperty]): Self = StObject.set(x, "MozWindowDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozWindowDraggingUndefined: Self = StObject.set(x, "MozWindowDragging", js.undefined)
+    inline def setMozWindowDraggingUndefined: Self = StObject.set(x, "MozWindowDragging", js.undefined)
     
-    @scala.inline
-    def setMozWindowDraggingVarargs(value: MozWindowDraggingProperty*): Self = StObject.set(x, "MozWindowDragging", js.Array(value :_*))
+    inline def setMozWindowDraggingVarargs(value: MozWindowDraggingProperty*): Self = StObject.set(x, "MozWindowDragging", js.Array(value :_*))
     
-    @scala.inline
-    def setMozWindowShadow(value: MozWindowShadowProperty | js.Array[MozWindowShadowProperty]): Self = StObject.set(x, "MozWindowShadow", value.asInstanceOf[js.Any])
+    inline def setMozWindowShadow(value: MozWindowShadowProperty | js.Array[MozWindowShadowProperty]): Self = StObject.set(x, "MozWindowShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozWindowShadowUndefined: Self = StObject.set(x, "MozWindowShadow", js.undefined)
+    inline def setMozWindowShadowUndefined: Self = StObject.set(x, "MozWindowShadow", js.undefined)
     
-    @scala.inline
-    def setMozWindowShadowVarargs(value: MozWindowShadowProperty*): Self = StObject.set(x, "MozWindowShadow", js.Array(value :_*))
+    inline def setMozWindowShadowVarargs(value: MozWindowShadowProperty*): Self = StObject.set(x, "MozWindowShadow", js.Array(value :_*))
     
-    @scala.inline
-    def setMsAccelerator(value: MsAcceleratorProperty | js.Array[MsAcceleratorProperty]): Self = StObject.set(x, "msAccelerator", value.asInstanceOf[js.Any])
+    inline def setMsAccelerator(value: MsAcceleratorProperty | js.Array[MsAcceleratorProperty]): Self = StObject.set(x, "msAccelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
+    inline def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
     
-    @scala.inline
-    def setMsAcceleratorVarargs(value: MsAcceleratorProperty*): Self = StObject.set(x, "msAccelerator", js.Array(value :_*))
+    inline def setMsAcceleratorVarargs(value: MsAcceleratorProperty*): Self = StObject.set(x, "msAccelerator", js.Array(value :_*))
     
-    @scala.inline
-    def setMsAlignSelf(value: AlignSelfProperty | js.Array[AlignSelfProperty]): Self = StObject.set(x, "msAlignSelf", value.asInstanceOf[js.Any])
+    inline def setMsAlignSelf(value: AlignSelfProperty | js.Array[AlignSelfProperty]): Self = StObject.set(x, "msAlignSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsAlignSelfUndefined: Self = StObject.set(x, "msAlignSelf", js.undefined)
+    inline def setMsAlignSelfUndefined: Self = StObject.set(x, "msAlignSelf", js.undefined)
     
-    @scala.inline
-    def setMsAlignSelfVarargs(value: AlignSelfProperty*): Self = StObject.set(x, "msAlignSelf", js.Array(value :_*))
+    inline def setMsAlignSelfVarargs(value: AlignSelfProperty*): Self = StObject.set(x, "msAlignSelf", js.Array(value :_*))
     
-    @scala.inline
-    def setMsBlockProgression(value: MsBlockProgressionProperty | js.Array[MsBlockProgressionProperty]): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
+    inline def setMsBlockProgression(value: MsBlockProgressionProperty | js.Array[MsBlockProgressionProperty]): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
+    inline def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
     
-    @scala.inline
-    def setMsBlockProgressionVarargs(value: MsBlockProgressionProperty*): Self = StObject.set(x, "msBlockProgression", js.Array(value :_*))
+    inline def setMsBlockProgressionVarargs(value: MsBlockProgressionProperty*): Self = StObject.set(x, "msBlockProgression", js.Array(value :_*))
     
-    @scala.inline
-    def setMsContentZoomChaining(value: MsContentZoomChainingProperty | js.Array[MsContentZoomChainingProperty]): Self = StObject.set(x, "msContentZoomChaining", value.asInstanceOf[js.Any])
+    inline def setMsContentZoomChaining(value: MsContentZoomChainingProperty | js.Array[MsContentZoomChainingProperty]): Self = StObject.set(x, "msContentZoomChaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsContentZoomChainingUndefined: Self = StObject.set(x, "msContentZoomChaining", js.undefined)
+    inline def setMsContentZoomChainingUndefined: Self = StObject.set(x, "msContentZoomChaining", js.undefined)
     
-    @scala.inline
-    def setMsContentZoomChainingVarargs(value: MsContentZoomChainingProperty*): Self = StObject.set(x, "msContentZoomChaining", js.Array(value :_*))
+    inline def setMsContentZoomChainingVarargs(value: MsContentZoomChainingProperty*): Self = StObject.set(x, "msContentZoomChaining", js.Array(value :_*))
     
-    @scala.inline
-    def setMsContentZoomLimitMax(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msContentZoomLimitMax", value.asInstanceOf[js.Any])
+    inline def setMsContentZoomLimitMax(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msContentZoomLimitMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsContentZoomLimitMaxUndefined: Self = StObject.set(x, "msContentZoomLimitMax", js.undefined)
+    inline def setMsContentZoomLimitMaxUndefined: Self = StObject.set(x, "msContentZoomLimitMax", js.undefined)
     
-    @scala.inline
-    def setMsContentZoomLimitMaxVarargs(value: GlobalsString*): Self = StObject.set(x, "msContentZoomLimitMax", js.Array(value :_*))
+    inline def setMsContentZoomLimitMaxVarargs(value: GlobalsString*): Self = StObject.set(x, "msContentZoomLimitMax", js.Array(value :_*))
     
-    @scala.inline
-    def setMsContentZoomLimitMin(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msContentZoomLimitMin", value.asInstanceOf[js.Any])
+    inline def setMsContentZoomLimitMin(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msContentZoomLimitMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsContentZoomLimitMinUndefined: Self = StObject.set(x, "msContentZoomLimitMin", js.undefined)
+    inline def setMsContentZoomLimitMinUndefined: Self = StObject.set(x, "msContentZoomLimitMin", js.undefined)
     
-    @scala.inline
-    def setMsContentZoomLimitMinVarargs(value: GlobalsString*): Self = StObject.set(x, "msContentZoomLimitMin", js.Array(value :_*))
+    inline def setMsContentZoomLimitMinVarargs(value: GlobalsString*): Self = StObject.set(x, "msContentZoomLimitMin", js.Array(value :_*))
     
-    @scala.inline
-    def setMsContentZoomSnapPoints(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msContentZoomSnapPoints", value.asInstanceOf[js.Any])
+    inline def setMsContentZoomSnapPoints(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msContentZoomSnapPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsContentZoomSnapPointsUndefined: Self = StObject.set(x, "msContentZoomSnapPoints", js.undefined)
+    inline def setMsContentZoomSnapPointsUndefined: Self = StObject.set(x, "msContentZoomSnapPoints", js.undefined)
     
-    @scala.inline
-    def setMsContentZoomSnapPointsVarargs(value: GlobalsString*): Self = StObject.set(x, "msContentZoomSnapPoints", js.Array(value :_*))
+    inline def setMsContentZoomSnapPointsVarargs(value: GlobalsString*): Self = StObject.set(x, "msContentZoomSnapPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setMsContentZoomSnapType(value: MsContentZoomSnapTypeProperty | js.Array[MsContentZoomSnapTypeProperty]): Self = StObject.set(x, "msContentZoomSnapType", value.asInstanceOf[js.Any])
+    inline def setMsContentZoomSnapType(value: MsContentZoomSnapTypeProperty | js.Array[MsContentZoomSnapTypeProperty]): Self = StObject.set(x, "msContentZoomSnapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsContentZoomSnapTypeUndefined: Self = StObject.set(x, "msContentZoomSnapType", js.undefined)
+    inline def setMsContentZoomSnapTypeUndefined: Self = StObject.set(x, "msContentZoomSnapType", js.undefined)
     
-    @scala.inline
-    def setMsContentZoomSnapTypeVarargs(value: MsContentZoomSnapTypeProperty*): Self = StObject.set(x, "msContentZoomSnapType", js.Array(value :_*))
+    inline def setMsContentZoomSnapTypeVarargs(value: MsContentZoomSnapTypeProperty*): Self = StObject.set(x, "msContentZoomSnapType", js.Array(value :_*))
     
-    @scala.inline
-    def setMsContentZooming(value: MsContentZoomingProperty | js.Array[MsContentZoomingProperty]): Self = StObject.set(x, "msContentZooming", value.asInstanceOf[js.Any])
+    inline def setMsContentZooming(value: MsContentZoomingProperty | js.Array[MsContentZoomingProperty]): Self = StObject.set(x, "msContentZooming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsContentZoomingUndefined: Self = StObject.set(x, "msContentZooming", js.undefined)
+    inline def setMsContentZoomingUndefined: Self = StObject.set(x, "msContentZooming", js.undefined)
     
-    @scala.inline
-    def setMsContentZoomingVarargs(value: MsContentZoomingProperty*): Self = StObject.set(x, "msContentZooming", js.Array(value :_*))
+    inline def setMsContentZoomingVarargs(value: MsContentZoomingProperty*): Self = StObject.set(x, "msContentZooming", js.Array(value :_*))
     
-    @scala.inline
-    def setMsFilter(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msFilter", value.asInstanceOf[js.Any])
+    inline def setMsFilter(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsFilterUndefined: Self = StObject.set(x, "msFilter", js.undefined)
+    inline def setMsFilterUndefined: Self = StObject.set(x, "msFilter", js.undefined)
     
-    @scala.inline
-    def setMsFilterVarargs(value: GlobalsString*): Self = StObject.set(x, "msFilter", js.Array(value :_*))
+    inline def setMsFilterVarargs(value: GlobalsString*): Self = StObject.set(x, "msFilter", js.Array(value :_*))
     
-    @scala.inline
-    def setMsFlexDirection(value: FlexDirectionProperty | js.Array[FlexDirectionProperty]): Self = StObject.set(x, "msFlexDirection", value.asInstanceOf[js.Any])
+    inline def setMsFlexDirection(value: FlexDirectionProperty | js.Array[FlexDirectionProperty]): Self = StObject.set(x, "msFlexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsFlexDirectionUndefined: Self = StObject.set(x, "msFlexDirection", js.undefined)
+    inline def setMsFlexDirectionUndefined: Self = StObject.set(x, "msFlexDirection", js.undefined)
     
-    @scala.inline
-    def setMsFlexDirectionVarargs(value: FlexDirectionProperty*): Self = StObject.set(x, "msFlexDirection", js.Array(value :_*))
+    inline def setMsFlexDirectionVarargs(value: FlexDirectionProperty*): Self = StObject.set(x, "msFlexDirection", js.Array(value :_*))
     
-    @scala.inline
-    def setMsFlexPositive(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "msFlexPositive", value.asInstanceOf[js.Any])
+    inline def setMsFlexPositive(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "msFlexPositive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsFlexPositiveUndefined: Self = StObject.set(x, "msFlexPositive", js.undefined)
+    inline def setMsFlexPositiveUndefined: Self = StObject.set(x, "msFlexPositive", js.undefined)
     
-    @scala.inline
-    def setMsFlexPositiveVarargs(value: GlobalsNumber*): Self = StObject.set(x, "msFlexPositive", js.Array(value :_*))
+    inline def setMsFlexPositiveVarargs(value: GlobalsNumber*): Self = StObject.set(x, "msFlexPositive", js.Array(value :_*))
     
-    @scala.inline
-    def setMsFlowFrom(value: MsFlowFromProperty | js.Array[MsFlowFromProperty]): Self = StObject.set(x, "msFlowFrom", value.asInstanceOf[js.Any])
+    inline def setMsFlowFrom(value: MsFlowFromProperty | js.Array[MsFlowFromProperty]): Self = StObject.set(x, "msFlowFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsFlowFromUndefined: Self = StObject.set(x, "msFlowFrom", js.undefined)
+    inline def setMsFlowFromUndefined: Self = StObject.set(x, "msFlowFrom", js.undefined)
     
-    @scala.inline
-    def setMsFlowFromVarargs(value: MsFlowFromProperty*): Self = StObject.set(x, "msFlowFrom", js.Array(value :_*))
+    inline def setMsFlowFromVarargs(value: MsFlowFromProperty*): Self = StObject.set(x, "msFlowFrom", js.Array(value :_*))
     
-    @scala.inline
-    def setMsFlowInto(value: MsFlowIntoProperty | js.Array[MsFlowIntoProperty]): Self = StObject.set(x, "msFlowInto", value.asInstanceOf[js.Any])
+    inline def setMsFlowInto(value: MsFlowIntoProperty | js.Array[MsFlowIntoProperty]): Self = StObject.set(x, "msFlowInto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsFlowIntoUndefined: Self = StObject.set(x, "msFlowInto", js.undefined)
+    inline def setMsFlowIntoUndefined: Self = StObject.set(x, "msFlowInto", js.undefined)
     
-    @scala.inline
-    def setMsFlowIntoVarargs(value: MsFlowIntoProperty*): Self = StObject.set(x, "msFlowInto", js.Array(value :_*))
+    inline def setMsFlowIntoVarargs(value: MsFlowIntoProperty*): Self = StObject.set(x, "msFlowInto", js.Array(value :_*))
     
-    @scala.inline
-    def setMsGridColumns(value: GridAutoColumnsProperty[TLength] | js.Array[GridAutoColumnsProperty[TLength]]): Self = StObject.set(x, "msGridColumns", value.asInstanceOf[js.Any])
+    inline def setMsGridColumns(value: GridAutoColumnsProperty[TLength] | js.Array[GridAutoColumnsProperty[TLength]]): Self = StObject.set(x, "msGridColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsGridColumnsUndefined: Self = StObject.set(x, "msGridColumns", js.undefined)
+    inline def setMsGridColumnsUndefined: Self = StObject.set(x, "msGridColumns", js.undefined)
     
-    @scala.inline
-    def setMsGridColumnsVarargs(value: GridAutoColumnsProperty[TLength]*): Self = StObject.set(x, "msGridColumns", js.Array(value :_*))
+    inline def setMsGridColumnsVarargs(value: GridAutoColumnsProperty[TLength]*): Self = StObject.set(x, "msGridColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setMsGridRows(value: GridAutoRowsProperty[TLength] | js.Array[GridAutoRowsProperty[TLength]]): Self = StObject.set(x, "msGridRows", value.asInstanceOf[js.Any])
+    inline def setMsGridRows(value: GridAutoRowsProperty[TLength] | js.Array[GridAutoRowsProperty[TLength]]): Self = StObject.set(x, "msGridRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsGridRowsUndefined: Self = StObject.set(x, "msGridRows", js.undefined)
+    inline def setMsGridRowsUndefined: Self = StObject.set(x, "msGridRows", js.undefined)
     
-    @scala.inline
-    def setMsGridRowsVarargs(value: GridAutoRowsProperty[TLength]*): Self = StObject.set(x, "msGridRows", js.Array(value :_*))
+    inline def setMsGridRowsVarargs(value: GridAutoRowsProperty[TLength]*): Self = StObject.set(x, "msGridRows", js.Array(value :_*))
     
-    @scala.inline
-    def setMsHighContrastAdjust(value: MsHighContrastAdjustProperty | js.Array[MsHighContrastAdjustProperty]): Self = StObject.set(x, "msHighContrastAdjust", value.asInstanceOf[js.Any])
+    inline def setMsHighContrastAdjust(value: MsHighContrastAdjustProperty | js.Array[MsHighContrastAdjustProperty]): Self = StObject.set(x, "msHighContrastAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "msHighContrastAdjust", js.undefined)
+    inline def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "msHighContrastAdjust", js.undefined)
     
-    @scala.inline
-    def setMsHighContrastAdjustVarargs(value: MsHighContrastAdjustProperty*): Self = StObject.set(x, "msHighContrastAdjust", js.Array(value :_*))
+    inline def setMsHighContrastAdjustVarargs(value: MsHighContrastAdjustProperty*): Self = StObject.set(x, "msHighContrastAdjust", js.Array(value :_*))
     
-    @scala.inline
-    def setMsHyphenateLimitChars(value: MsHyphenateLimitCharsProperty | js.Array[MsHyphenateLimitCharsProperty]): Self = StObject.set(x, "msHyphenateLimitChars", value.asInstanceOf[js.Any])
+    inline def setMsHyphenateLimitChars(value: MsHyphenateLimitCharsProperty | js.Array[MsHyphenateLimitCharsProperty]): Self = StObject.set(x, "msHyphenateLimitChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsHyphenateLimitCharsUndefined: Self = StObject.set(x, "msHyphenateLimitChars", js.undefined)
+    inline def setMsHyphenateLimitCharsUndefined: Self = StObject.set(x, "msHyphenateLimitChars", js.undefined)
     
-    @scala.inline
-    def setMsHyphenateLimitCharsVarargs(value: MsHyphenateLimitCharsProperty*): Self = StObject.set(x, "msHyphenateLimitChars", js.Array(value :_*))
+    inline def setMsHyphenateLimitCharsVarargs(value: MsHyphenateLimitCharsProperty*): Self = StObject.set(x, "msHyphenateLimitChars", js.Array(value :_*))
     
-    @scala.inline
-    def setMsHyphenateLimitLines(value: MsHyphenateLimitLinesProperty | js.Array[MsHyphenateLimitLinesProperty]): Self = StObject.set(x, "msHyphenateLimitLines", value.asInstanceOf[js.Any])
+    inline def setMsHyphenateLimitLines(value: MsHyphenateLimitLinesProperty | js.Array[MsHyphenateLimitLinesProperty]): Self = StObject.set(x, "msHyphenateLimitLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsHyphenateLimitLinesUndefined: Self = StObject.set(x, "msHyphenateLimitLines", js.undefined)
+    inline def setMsHyphenateLimitLinesUndefined: Self = StObject.set(x, "msHyphenateLimitLines", js.undefined)
     
-    @scala.inline
-    def setMsHyphenateLimitLinesVarargs(value: MsHyphenateLimitLinesProperty*): Self = StObject.set(x, "msHyphenateLimitLines", js.Array(value :_*))
+    inline def setMsHyphenateLimitLinesVarargs(value: MsHyphenateLimitLinesProperty*): Self = StObject.set(x, "msHyphenateLimitLines", js.Array(value :_*))
     
-    @scala.inline
-    def setMsHyphenateLimitZone(value: MsHyphenateLimitZoneProperty[TLength] | js.Array[MsHyphenateLimitZoneProperty[TLength]]): Self = StObject.set(x, "msHyphenateLimitZone", value.asInstanceOf[js.Any])
+    inline def setMsHyphenateLimitZone(value: MsHyphenateLimitZoneProperty[TLength] | js.Array[MsHyphenateLimitZoneProperty[TLength]]): Self = StObject.set(x, "msHyphenateLimitZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsHyphenateLimitZoneUndefined: Self = StObject.set(x, "msHyphenateLimitZone", js.undefined)
+    inline def setMsHyphenateLimitZoneUndefined: Self = StObject.set(x, "msHyphenateLimitZone", js.undefined)
     
-    @scala.inline
-    def setMsHyphenateLimitZoneVarargs(value: MsHyphenateLimitZoneProperty[TLength]*): Self = StObject.set(x, "msHyphenateLimitZone", js.Array(value :_*))
+    inline def setMsHyphenateLimitZoneVarargs(value: MsHyphenateLimitZoneProperty[TLength]*): Self = StObject.set(x, "msHyphenateLimitZone", js.Array(value :_*))
     
-    @scala.inline
-    def setMsHyphens(value: HyphensProperty | js.Array[HyphensProperty]): Self = StObject.set(x, "msHyphens", value.asInstanceOf[js.Any])
+    inline def setMsHyphens(value: HyphensProperty | js.Array[HyphensProperty]): Self = StObject.set(x, "msHyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsHyphensUndefined: Self = StObject.set(x, "msHyphens", js.undefined)
+    inline def setMsHyphensUndefined: Self = StObject.set(x, "msHyphens", js.undefined)
     
-    @scala.inline
-    def setMsHyphensVarargs(value: HyphensProperty*): Self = StObject.set(x, "msHyphens", js.Array(value :_*))
+    inline def setMsHyphensVarargs(value: HyphensProperty*): Self = StObject.set(x, "msHyphens", js.Array(value :_*))
     
-    @scala.inline
-    def setMsImeAlign(value: MsImeAlignProperty | js.Array[MsImeAlignProperty]): Self = StObject.set(x, "msImeAlign", value.asInstanceOf[js.Any])
+    inline def setMsImeAlign(value: MsImeAlignProperty | js.Array[MsImeAlignProperty]): Self = StObject.set(x, "msImeAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsImeAlignUndefined: Self = StObject.set(x, "msImeAlign", js.undefined)
+    inline def setMsImeAlignUndefined: Self = StObject.set(x, "msImeAlign", js.undefined)
     
-    @scala.inline
-    def setMsImeAlignVarargs(value: MsImeAlignProperty*): Self = StObject.set(x, "msImeAlign", js.Array(value :_*))
+    inline def setMsImeAlignVarargs(value: MsImeAlignProperty*): Self = StObject.set(x, "msImeAlign", js.Array(value :_*))
     
-    @scala.inline
-    def setMsLineBreak(value: LineBreakProperty | js.Array[LineBreakProperty]): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
+    inline def setMsLineBreak(value: LineBreakProperty | js.Array[LineBreakProperty]): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsLineBreakUndefined: Self = StObject.set(x, "msLineBreak", js.undefined)
+    inline def setMsLineBreakUndefined: Self = StObject.set(x, "msLineBreak", js.undefined)
     
-    @scala.inline
-    def setMsLineBreakVarargs(value: LineBreakProperty*): Self = StObject.set(x, "msLineBreak", js.Array(value :_*))
+    inline def setMsLineBreakVarargs(value: LineBreakProperty*): Self = StObject.set(x, "msLineBreak", js.Array(value :_*))
     
-    @scala.inline
-    def setMsOrder(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "msOrder", value.asInstanceOf[js.Any])
+    inline def setMsOrder(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "msOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsOrderUndefined: Self = StObject.set(x, "msOrder", js.undefined)
+    inline def setMsOrderUndefined: Self = StObject.set(x, "msOrder", js.undefined)
     
-    @scala.inline
-    def setMsOrderVarargs(value: GlobalsNumber*): Self = StObject.set(x, "msOrder", js.Array(value :_*))
+    inline def setMsOrderVarargs(value: GlobalsNumber*): Self = StObject.set(x, "msOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setMsOverflowStyle(value: MsOverflowStyleProperty | js.Array[MsOverflowStyleProperty]): Self = StObject.set(x, "msOverflowStyle", value.asInstanceOf[js.Any])
+    inline def setMsOverflowStyle(value: MsOverflowStyleProperty | js.Array[MsOverflowStyleProperty]): Self = StObject.set(x, "msOverflowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsOverflowStyleUndefined: Self = StObject.set(x, "msOverflowStyle", js.undefined)
+    inline def setMsOverflowStyleUndefined: Self = StObject.set(x, "msOverflowStyle", js.undefined)
     
-    @scala.inline
-    def setMsOverflowStyleVarargs(value: MsOverflowStyleProperty*): Self = StObject.set(x, "msOverflowStyle", js.Array(value :_*))
+    inline def setMsOverflowStyleVarargs(value: MsOverflowStyleProperty*): Self = StObject.set(x, "msOverflowStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setMsOverflowX(value: OverflowXProperty | js.Array[OverflowXProperty]): Self = StObject.set(x, "msOverflowX", value.asInstanceOf[js.Any])
+    inline def setMsOverflowX(value: OverflowXProperty | js.Array[OverflowXProperty]): Self = StObject.set(x, "msOverflowX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsOverflowXUndefined: Self = StObject.set(x, "msOverflowX", js.undefined)
+    inline def setMsOverflowXUndefined: Self = StObject.set(x, "msOverflowX", js.undefined)
     
-    @scala.inline
-    def setMsOverflowXVarargs(value: OverflowXProperty*): Self = StObject.set(x, "msOverflowX", js.Array(value :_*))
+    inline def setMsOverflowXVarargs(value: OverflowXProperty*): Self = StObject.set(x, "msOverflowX", js.Array(value :_*))
     
-    @scala.inline
-    def setMsOverflowY(value: OverflowYProperty | js.Array[OverflowYProperty]): Self = StObject.set(x, "msOverflowY", value.asInstanceOf[js.Any])
+    inline def setMsOverflowY(value: OverflowYProperty | js.Array[OverflowYProperty]): Self = StObject.set(x, "msOverflowY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsOverflowYUndefined: Self = StObject.set(x, "msOverflowY", js.undefined)
+    inline def setMsOverflowYUndefined: Self = StObject.set(x, "msOverflowY", js.undefined)
     
-    @scala.inline
-    def setMsOverflowYVarargs(value: OverflowYProperty*): Self = StObject.set(x, "msOverflowY", js.Array(value :_*))
+    inline def setMsOverflowYVarargs(value: OverflowYProperty*): Self = StObject.set(x, "msOverflowY", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollChaining(value: MsScrollChainingProperty | js.Array[MsScrollChainingProperty]): Self = StObject.set(x, "msScrollChaining", value.asInstanceOf[js.Any])
+    inline def setMsScrollChaining(value: MsScrollChainingProperty | js.Array[MsScrollChainingProperty]): Self = StObject.set(x, "msScrollChaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollChainingUndefined: Self = StObject.set(x, "msScrollChaining", js.undefined)
+    inline def setMsScrollChainingUndefined: Self = StObject.set(x, "msScrollChaining", js.undefined)
     
-    @scala.inline
-    def setMsScrollChainingVarargs(value: MsScrollChainingProperty*): Self = StObject.set(x, "msScrollChaining", js.Array(value :_*))
+    inline def setMsScrollChainingVarargs(value: MsScrollChainingProperty*): Self = StObject.set(x, "msScrollChaining", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollLimitXMax(value: MsScrollLimitXMaxProperty[TLength] | js.Array[MsScrollLimitXMaxProperty[TLength]]): Self = StObject.set(x, "msScrollLimitXMax", value.asInstanceOf[js.Any])
+    inline def setMsScrollLimitXMax(value: MsScrollLimitXMaxProperty[TLength] | js.Array[MsScrollLimitXMaxProperty[TLength]]): Self = StObject.set(x, "msScrollLimitXMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollLimitXMaxUndefined: Self = StObject.set(x, "msScrollLimitXMax", js.undefined)
+    inline def setMsScrollLimitXMaxUndefined: Self = StObject.set(x, "msScrollLimitXMax", js.undefined)
     
-    @scala.inline
-    def setMsScrollLimitXMaxVarargs(value: MsScrollLimitXMaxProperty[TLength]*): Self = StObject.set(x, "msScrollLimitXMax", js.Array(value :_*))
+    inline def setMsScrollLimitXMaxVarargs(value: MsScrollLimitXMaxProperty[TLength]*): Self = StObject.set(x, "msScrollLimitXMax", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollLimitXMin(value: MsScrollLimitXMinProperty[TLength] | js.Array[MsScrollLimitXMinProperty[TLength]]): Self = StObject.set(x, "msScrollLimitXMin", value.asInstanceOf[js.Any])
+    inline def setMsScrollLimitXMin(value: MsScrollLimitXMinProperty[TLength] | js.Array[MsScrollLimitXMinProperty[TLength]]): Self = StObject.set(x, "msScrollLimitXMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollLimitXMinUndefined: Self = StObject.set(x, "msScrollLimitXMin", js.undefined)
+    inline def setMsScrollLimitXMinUndefined: Self = StObject.set(x, "msScrollLimitXMin", js.undefined)
     
-    @scala.inline
-    def setMsScrollLimitXMinVarargs(value: MsScrollLimitXMinProperty[TLength]*): Self = StObject.set(x, "msScrollLimitXMin", js.Array(value :_*))
+    inline def setMsScrollLimitXMinVarargs(value: MsScrollLimitXMinProperty[TLength]*): Self = StObject.set(x, "msScrollLimitXMin", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollLimitYMax(value: MsScrollLimitYMaxProperty[TLength] | js.Array[MsScrollLimitYMaxProperty[TLength]]): Self = StObject.set(x, "msScrollLimitYMax", value.asInstanceOf[js.Any])
+    inline def setMsScrollLimitYMax(value: MsScrollLimitYMaxProperty[TLength] | js.Array[MsScrollLimitYMaxProperty[TLength]]): Self = StObject.set(x, "msScrollLimitYMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollLimitYMaxUndefined: Self = StObject.set(x, "msScrollLimitYMax", js.undefined)
+    inline def setMsScrollLimitYMaxUndefined: Self = StObject.set(x, "msScrollLimitYMax", js.undefined)
     
-    @scala.inline
-    def setMsScrollLimitYMaxVarargs(value: MsScrollLimitYMaxProperty[TLength]*): Self = StObject.set(x, "msScrollLimitYMax", js.Array(value :_*))
+    inline def setMsScrollLimitYMaxVarargs(value: MsScrollLimitYMaxProperty[TLength]*): Self = StObject.set(x, "msScrollLimitYMax", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollLimitYMin(value: MsScrollLimitYMinProperty[TLength] | js.Array[MsScrollLimitYMinProperty[TLength]]): Self = StObject.set(x, "msScrollLimitYMin", value.asInstanceOf[js.Any])
+    inline def setMsScrollLimitYMin(value: MsScrollLimitYMinProperty[TLength] | js.Array[MsScrollLimitYMinProperty[TLength]]): Self = StObject.set(x, "msScrollLimitYMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollLimitYMinUndefined: Self = StObject.set(x, "msScrollLimitYMin", js.undefined)
+    inline def setMsScrollLimitYMinUndefined: Self = StObject.set(x, "msScrollLimitYMin", js.undefined)
     
-    @scala.inline
-    def setMsScrollLimitYMinVarargs(value: MsScrollLimitYMinProperty[TLength]*): Self = StObject.set(x, "msScrollLimitYMin", js.Array(value :_*))
+    inline def setMsScrollLimitYMinVarargs(value: MsScrollLimitYMinProperty[TLength]*): Self = StObject.set(x, "msScrollLimitYMin", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollRails(value: MsScrollRailsProperty | js.Array[MsScrollRailsProperty]): Self = StObject.set(x, "msScrollRails", value.asInstanceOf[js.Any])
+    inline def setMsScrollRails(value: MsScrollRailsProperty | js.Array[MsScrollRailsProperty]): Self = StObject.set(x, "msScrollRails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollRailsUndefined: Self = StObject.set(x, "msScrollRails", js.undefined)
+    inline def setMsScrollRailsUndefined: Self = StObject.set(x, "msScrollRails", js.undefined)
     
-    @scala.inline
-    def setMsScrollRailsVarargs(value: MsScrollRailsProperty*): Self = StObject.set(x, "msScrollRails", js.Array(value :_*))
+    inline def setMsScrollRailsVarargs(value: MsScrollRailsProperty*): Self = StObject.set(x, "msScrollRails", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollSnapPointsX(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msScrollSnapPointsX", value.asInstanceOf[js.Any])
+    inline def setMsScrollSnapPointsX(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msScrollSnapPointsX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollSnapPointsXUndefined: Self = StObject.set(x, "msScrollSnapPointsX", js.undefined)
+    inline def setMsScrollSnapPointsXUndefined: Self = StObject.set(x, "msScrollSnapPointsX", js.undefined)
     
-    @scala.inline
-    def setMsScrollSnapPointsXVarargs(value: GlobalsString*): Self = StObject.set(x, "msScrollSnapPointsX", js.Array(value :_*))
+    inline def setMsScrollSnapPointsXVarargs(value: GlobalsString*): Self = StObject.set(x, "msScrollSnapPointsX", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollSnapPointsY(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msScrollSnapPointsY", value.asInstanceOf[js.Any])
+    inline def setMsScrollSnapPointsY(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msScrollSnapPointsY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollSnapPointsYUndefined: Self = StObject.set(x, "msScrollSnapPointsY", js.undefined)
+    inline def setMsScrollSnapPointsYUndefined: Self = StObject.set(x, "msScrollSnapPointsY", js.undefined)
     
-    @scala.inline
-    def setMsScrollSnapPointsYVarargs(value: GlobalsString*): Self = StObject.set(x, "msScrollSnapPointsY", js.Array(value :_*))
+    inline def setMsScrollSnapPointsYVarargs(value: GlobalsString*): Self = StObject.set(x, "msScrollSnapPointsY", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollSnapType(value: MsScrollSnapTypeProperty | js.Array[MsScrollSnapTypeProperty]): Self = StObject.set(x, "msScrollSnapType", value.asInstanceOf[js.Any])
+    inline def setMsScrollSnapType(value: MsScrollSnapTypeProperty | js.Array[MsScrollSnapTypeProperty]): Self = StObject.set(x, "msScrollSnapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollSnapTypeUndefined: Self = StObject.set(x, "msScrollSnapType", js.undefined)
+    inline def setMsScrollSnapTypeUndefined: Self = StObject.set(x, "msScrollSnapType", js.undefined)
     
-    @scala.inline
-    def setMsScrollSnapTypeVarargs(value: MsScrollSnapTypeProperty*): Self = StObject.set(x, "msScrollSnapType", js.Array(value :_*))
+    inline def setMsScrollSnapTypeVarargs(value: MsScrollSnapTypeProperty*): Self = StObject.set(x, "msScrollSnapType", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollTranslation(value: MsScrollTranslationProperty | js.Array[MsScrollTranslationProperty]): Self = StObject.set(x, "msScrollTranslation", value.asInstanceOf[js.Any])
+    inline def setMsScrollTranslation(value: MsScrollTranslationProperty | js.Array[MsScrollTranslationProperty]): Self = StObject.set(x, "msScrollTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollTranslationUndefined: Self = StObject.set(x, "msScrollTranslation", js.undefined)
+    inline def setMsScrollTranslationUndefined: Self = StObject.set(x, "msScrollTranslation", js.undefined)
     
-    @scala.inline
-    def setMsScrollTranslationVarargs(value: MsScrollTranslationProperty*): Self = StObject.set(x, "msScrollTranslation", js.Array(value :_*))
+    inline def setMsScrollTranslationVarargs(value: MsScrollTranslationProperty*): Self = StObject.set(x, "msScrollTranslation", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollbar3dlightColor(value: MsScrollbar3dlightColorProperty | js.Array[MsScrollbar3dlightColorProperty]): Self = StObject.set(x, "msScrollbar3dlightColor", value.asInstanceOf[js.Any])
+    inline def setMsScrollbar3dlightColor(value: MsScrollbar3dlightColorProperty | js.Array[MsScrollbar3dlightColorProperty]): Self = StObject.set(x, "msScrollbar3dlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollbar3dlightColorUndefined: Self = StObject.set(x, "msScrollbar3dlightColor", js.undefined)
+    inline def setMsScrollbar3dlightColorUndefined: Self = StObject.set(x, "msScrollbar3dlightColor", js.undefined)
     
-    @scala.inline
-    def setMsScrollbar3dlightColorVarargs(value: MsScrollbar3dlightColorProperty*): Self = StObject.set(x, "msScrollbar3dlightColor", js.Array(value :_*))
+    inline def setMsScrollbar3dlightColorVarargs(value: MsScrollbar3dlightColorProperty*): Self = StObject.set(x, "msScrollbar3dlightColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollbarArrowColor(value: MsScrollbarArrowColorProperty | js.Array[MsScrollbarArrowColorProperty]): Self = StObject.set(x, "msScrollbarArrowColor", value.asInstanceOf[js.Any])
+    inline def setMsScrollbarArrowColor(value: MsScrollbarArrowColorProperty | js.Array[MsScrollbarArrowColorProperty]): Self = StObject.set(x, "msScrollbarArrowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollbarArrowColorUndefined: Self = StObject.set(x, "msScrollbarArrowColor", js.undefined)
+    inline def setMsScrollbarArrowColorUndefined: Self = StObject.set(x, "msScrollbarArrowColor", js.undefined)
     
-    @scala.inline
-    def setMsScrollbarArrowColorVarargs(value: MsScrollbarArrowColorProperty*): Self = StObject.set(x, "msScrollbarArrowColor", js.Array(value :_*))
+    inline def setMsScrollbarArrowColorVarargs(value: MsScrollbarArrowColorProperty*): Self = StObject.set(x, "msScrollbarArrowColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollbarBaseColor(value: MsScrollbarBaseColorProperty | js.Array[MsScrollbarBaseColorProperty]): Self = StObject.set(x, "msScrollbarBaseColor", value.asInstanceOf[js.Any])
+    inline def setMsScrollbarBaseColor(value: MsScrollbarBaseColorProperty | js.Array[MsScrollbarBaseColorProperty]): Self = StObject.set(x, "msScrollbarBaseColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollbarBaseColorUndefined: Self = StObject.set(x, "msScrollbarBaseColor", js.undefined)
+    inline def setMsScrollbarBaseColorUndefined: Self = StObject.set(x, "msScrollbarBaseColor", js.undefined)
     
-    @scala.inline
-    def setMsScrollbarBaseColorVarargs(value: MsScrollbarBaseColorProperty*): Self = StObject.set(x, "msScrollbarBaseColor", js.Array(value :_*))
+    inline def setMsScrollbarBaseColorVarargs(value: MsScrollbarBaseColorProperty*): Self = StObject.set(x, "msScrollbarBaseColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollbarDarkshadowColor(value: MsScrollbarDarkshadowColorProperty | js.Array[MsScrollbarDarkshadowColorProperty]): Self = StObject.set(x, "msScrollbarDarkshadowColor", value.asInstanceOf[js.Any])
+    inline def setMsScrollbarDarkshadowColor(value: MsScrollbarDarkshadowColorProperty | js.Array[MsScrollbarDarkshadowColorProperty]): Self = StObject.set(x, "msScrollbarDarkshadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollbarDarkshadowColorUndefined: Self = StObject.set(x, "msScrollbarDarkshadowColor", js.undefined)
+    inline def setMsScrollbarDarkshadowColorUndefined: Self = StObject.set(x, "msScrollbarDarkshadowColor", js.undefined)
     
-    @scala.inline
-    def setMsScrollbarDarkshadowColorVarargs(value: MsScrollbarDarkshadowColorProperty*): Self = StObject.set(x, "msScrollbarDarkshadowColor", js.Array(value :_*))
+    inline def setMsScrollbarDarkshadowColorVarargs(value: MsScrollbarDarkshadowColorProperty*): Self = StObject.set(x, "msScrollbarDarkshadowColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollbarFaceColor(value: MsScrollbarFaceColorProperty | js.Array[MsScrollbarFaceColorProperty]): Self = StObject.set(x, "msScrollbarFaceColor", value.asInstanceOf[js.Any])
+    inline def setMsScrollbarFaceColor(value: MsScrollbarFaceColorProperty | js.Array[MsScrollbarFaceColorProperty]): Self = StObject.set(x, "msScrollbarFaceColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollbarFaceColorUndefined: Self = StObject.set(x, "msScrollbarFaceColor", js.undefined)
+    inline def setMsScrollbarFaceColorUndefined: Self = StObject.set(x, "msScrollbarFaceColor", js.undefined)
     
-    @scala.inline
-    def setMsScrollbarFaceColorVarargs(value: MsScrollbarFaceColorProperty*): Self = StObject.set(x, "msScrollbarFaceColor", js.Array(value :_*))
+    inline def setMsScrollbarFaceColorVarargs(value: MsScrollbarFaceColorProperty*): Self = StObject.set(x, "msScrollbarFaceColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollbarHighlightColor(value: MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty]): Self = StObject.set(x, "msScrollbarHighlightColor", value.asInstanceOf[js.Any])
+    inline def setMsScrollbarHighlightColor(value: MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty]): Self = StObject.set(x, "msScrollbarHighlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollbarHighlightColorUndefined: Self = StObject.set(x, "msScrollbarHighlightColor", js.undefined)
+    inline def setMsScrollbarHighlightColorUndefined: Self = StObject.set(x, "msScrollbarHighlightColor", js.undefined)
     
-    @scala.inline
-    def setMsScrollbarHighlightColorVarargs(value: MsScrollbarHighlightColorProperty*): Self = StObject.set(x, "msScrollbarHighlightColor", js.Array(value :_*))
+    inline def setMsScrollbarHighlightColorVarargs(value: MsScrollbarHighlightColorProperty*): Self = StObject.set(x, "msScrollbarHighlightColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMsScrollbarShadowColor(value: MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty]): Self = StObject.set(x, "msScrollbarShadowColor", value.asInstanceOf[js.Any])
+    inline def setMsScrollbarShadowColor(value: MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty]): Self = StObject.set(x, "msScrollbarShadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsScrollbarShadowColorUndefined: Self = StObject.set(x, "msScrollbarShadowColor", js.undefined)
+    inline def setMsScrollbarShadowColorUndefined: Self = StObject.set(x, "msScrollbarShadowColor", js.undefined)
     
-    @scala.inline
-    def setMsScrollbarShadowColorVarargs(value: MsScrollbarShadowColorProperty*): Self = StObject.set(x, "msScrollbarShadowColor", js.Array(value :_*))
+    inline def setMsScrollbarShadowColorVarargs(value: MsScrollbarShadowColorProperty*): Self = StObject.set(x, "msScrollbarShadowColor", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTextAutospace(value: MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty]): Self = StObject.set(x, "msTextAutospace", value.asInstanceOf[js.Any])
+    inline def setMsTextAutospace(value: MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty]): Self = StObject.set(x, "msTextAutospace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTextAutospaceUndefined: Self = StObject.set(x, "msTextAutospace", js.undefined)
+    inline def setMsTextAutospaceUndefined: Self = StObject.set(x, "msTextAutospace", js.undefined)
     
-    @scala.inline
-    def setMsTextAutospaceVarargs(value: MsTextAutospaceProperty*): Self = StObject.set(x, "msTextAutospace", js.Array(value :_*))
+    inline def setMsTextAutospaceVarargs(value: MsTextAutospaceProperty*): Self = StObject.set(x, "msTextAutospace", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTextCombineHorizontal(value: TextCombineUprightProperty | js.Array[TextCombineUprightProperty]): Self = StObject.set(x, "msTextCombineHorizontal", value.asInstanceOf[js.Any])
+    inline def setMsTextCombineHorizontal(value: TextCombineUprightProperty | js.Array[TextCombineUprightProperty]): Self = StObject.set(x, "msTextCombineHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTextCombineHorizontalUndefined: Self = StObject.set(x, "msTextCombineHorizontal", js.undefined)
+    inline def setMsTextCombineHorizontalUndefined: Self = StObject.set(x, "msTextCombineHorizontal", js.undefined)
     
-    @scala.inline
-    def setMsTextCombineHorizontalVarargs(value: TextCombineUprightProperty*): Self = StObject.set(x, "msTextCombineHorizontal", js.Array(value :_*))
+    inline def setMsTextCombineHorizontalVarargs(value: TextCombineUprightProperty*): Self = StObject.set(x, "msTextCombineHorizontal", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTextOverflow(value: TextOverflowProperty | js.Array[TextOverflowProperty]): Self = StObject.set(x, "msTextOverflow", value.asInstanceOf[js.Any])
+    inline def setMsTextOverflow(value: TextOverflowProperty | js.Array[TextOverflowProperty]): Self = StObject.set(x, "msTextOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTextOverflowUndefined: Self = StObject.set(x, "msTextOverflow", js.undefined)
+    inline def setMsTextOverflowUndefined: Self = StObject.set(x, "msTextOverflow", js.undefined)
     
-    @scala.inline
-    def setMsTextOverflowVarargs(value: TextOverflowProperty*): Self = StObject.set(x, "msTextOverflow", js.Array(value :_*))
+    inline def setMsTextOverflowVarargs(value: TextOverflowProperty*): Self = StObject.set(x, "msTextOverflow", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTouchAction(value: TouchActionProperty | js.Array[TouchActionProperty]): Self = StObject.set(x, "msTouchAction", value.asInstanceOf[js.Any])
+    inline def setMsTouchAction(value: TouchActionProperty | js.Array[TouchActionProperty]): Self = StObject.set(x, "msTouchAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTouchActionUndefined: Self = StObject.set(x, "msTouchAction", js.undefined)
+    inline def setMsTouchActionUndefined: Self = StObject.set(x, "msTouchAction", js.undefined)
     
-    @scala.inline
-    def setMsTouchActionVarargs(value: TouchActionProperty*): Self = StObject.set(x, "msTouchAction", js.Array(value :_*))
+    inline def setMsTouchActionVarargs(value: TouchActionProperty*): Self = StObject.set(x, "msTouchAction", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTouchSelect(value: MsTouchSelectProperty | js.Array[MsTouchSelectProperty]): Self = StObject.set(x, "msTouchSelect", value.asInstanceOf[js.Any])
+    inline def setMsTouchSelect(value: MsTouchSelectProperty | js.Array[MsTouchSelectProperty]): Self = StObject.set(x, "msTouchSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTouchSelectUndefined: Self = StObject.set(x, "msTouchSelect", js.undefined)
+    inline def setMsTouchSelectUndefined: Self = StObject.set(x, "msTouchSelect", js.undefined)
     
-    @scala.inline
-    def setMsTouchSelectVarargs(value: MsTouchSelectProperty*): Self = StObject.set(x, "msTouchSelect", js.Array(value :_*))
+    inline def setMsTouchSelectVarargs(value: MsTouchSelectProperty*): Self = StObject.set(x, "msTouchSelect", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTransform(value: TransformProperty | js.Array[TransformProperty]): Self = StObject.set(x, "msTransform", value.asInstanceOf[js.Any])
+    inline def setMsTransform(value: TransformProperty | js.Array[TransformProperty]): Self = StObject.set(x, "msTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "msTransformOrigin", value.asInstanceOf[js.Any])
+    inline def setMsTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "msTransformOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTransformOriginUndefined: Self = StObject.set(x, "msTransformOrigin", js.undefined)
+    inline def setMsTransformOriginUndefined: Self = StObject.set(x, "msTransformOrigin", js.undefined)
     
-    @scala.inline
-    def setMsTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "msTransformOrigin", js.Array(value :_*))
+    inline def setMsTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "msTransformOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTransformUndefined: Self = StObject.set(x, "msTransform", js.undefined)
+    inline def setMsTransformUndefined: Self = StObject.set(x, "msTransform", js.undefined)
     
-    @scala.inline
-    def setMsTransformVarargs(value: TransformProperty*): Self = StObject.set(x, "msTransform", js.Array(value :_*))
+    inline def setMsTransformVarargs(value: TransformProperty*): Self = StObject.set(x, "msTransform", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTransitionDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msTransitionDelay", value.asInstanceOf[js.Any])
+    inline def setMsTransitionDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msTransitionDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTransitionDelayUndefined: Self = StObject.set(x, "msTransitionDelay", js.undefined)
+    inline def setMsTransitionDelayUndefined: Self = StObject.set(x, "msTransitionDelay", js.undefined)
     
-    @scala.inline
-    def setMsTransitionDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "msTransitionDelay", js.Array(value :_*))
+    inline def setMsTransitionDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "msTransitionDelay", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTransitionDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msTransitionDuration", value.asInstanceOf[js.Any])
+    inline def setMsTransitionDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "msTransitionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTransitionDurationUndefined: Self = StObject.set(x, "msTransitionDuration", js.undefined)
+    inline def setMsTransitionDurationUndefined: Self = StObject.set(x, "msTransitionDuration", js.undefined)
     
-    @scala.inline
-    def setMsTransitionDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "msTransitionDuration", js.Array(value :_*))
+    inline def setMsTransitionDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "msTransitionDuration", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTransitionProperty(value: TransitionPropertyProperty | js.Array[TransitionPropertyProperty]): Self = StObject.set(x, "msTransitionProperty", value.asInstanceOf[js.Any])
+    inline def setMsTransitionProperty(value: TransitionPropertyProperty | js.Array[TransitionPropertyProperty]): Self = StObject.set(x, "msTransitionProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTransitionPropertyUndefined: Self = StObject.set(x, "msTransitionProperty", js.undefined)
+    inline def setMsTransitionPropertyUndefined: Self = StObject.set(x, "msTransitionProperty", js.undefined)
     
-    @scala.inline
-    def setMsTransitionPropertyVarargs(value: TransitionPropertyProperty*): Self = StObject.set(x, "msTransitionProperty", js.Array(value :_*))
+    inline def setMsTransitionPropertyVarargs(value: TransitionPropertyProperty*): Self = StObject.set(x, "msTransitionProperty", js.Array(value :_*))
     
-    @scala.inline
-    def setMsTransitionTimingFunction(value: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]): Self = StObject.set(x, "msTransitionTimingFunction", value.asInstanceOf[js.Any])
+    inline def setMsTransitionTimingFunction(value: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]): Self = StObject.set(x, "msTransitionTimingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsTransitionTimingFunctionUndefined: Self = StObject.set(x, "msTransitionTimingFunction", js.undefined)
+    inline def setMsTransitionTimingFunctionUndefined: Self = StObject.set(x, "msTransitionTimingFunction", js.undefined)
     
-    @scala.inline
-    def setMsTransitionTimingFunctionVarargs(value: TransitionTimingFunctionProperty*): Self = StObject.set(x, "msTransitionTimingFunction", js.Array(value :_*))
+    inline def setMsTransitionTimingFunctionVarargs(value: TransitionTimingFunctionProperty*): Self = StObject.set(x, "msTransitionTimingFunction", js.Array(value :_*))
     
-    @scala.inline
-    def setMsUserSelect(value: MsUserSelectProperty | js.Array[MsUserSelectProperty]): Self = StObject.set(x, "msUserSelect", value.asInstanceOf[js.Any])
+    inline def setMsUserSelect(value: MsUserSelectProperty | js.Array[MsUserSelectProperty]): Self = StObject.set(x, "msUserSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsUserSelectUndefined: Self = StObject.set(x, "msUserSelect", js.undefined)
+    inline def setMsUserSelectUndefined: Self = StObject.set(x, "msUserSelect", js.undefined)
     
-    @scala.inline
-    def setMsUserSelectVarargs(value: MsUserSelectProperty*): Self = StObject.set(x, "msUserSelect", js.Array(value :_*))
+    inline def setMsUserSelectVarargs(value: MsUserSelectProperty*): Self = StObject.set(x, "msUserSelect", js.Array(value :_*))
     
-    @scala.inline
-    def setMsWordBreak(value: WordBreakProperty | js.Array[WordBreakProperty]): Self = StObject.set(x, "msWordBreak", value.asInstanceOf[js.Any])
+    inline def setMsWordBreak(value: WordBreakProperty | js.Array[WordBreakProperty]): Self = StObject.set(x, "msWordBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsWordBreakUndefined: Self = StObject.set(x, "msWordBreak", js.undefined)
+    inline def setMsWordBreakUndefined: Self = StObject.set(x, "msWordBreak", js.undefined)
     
-    @scala.inline
-    def setMsWordBreakVarargs(value: WordBreakProperty*): Self = StObject.set(x, "msWordBreak", js.Array(value :_*))
+    inline def setMsWordBreakVarargs(value: WordBreakProperty*): Self = StObject.set(x, "msWordBreak", js.Array(value :_*))
     
-    @scala.inline
-    def setMsWrapFlow(value: MsWrapFlowProperty | js.Array[MsWrapFlowProperty]): Self = StObject.set(x, "msWrapFlow", value.asInstanceOf[js.Any])
+    inline def setMsWrapFlow(value: MsWrapFlowProperty | js.Array[MsWrapFlowProperty]): Self = StObject.set(x, "msWrapFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsWrapFlowUndefined: Self = StObject.set(x, "msWrapFlow", js.undefined)
+    inline def setMsWrapFlowUndefined: Self = StObject.set(x, "msWrapFlow", js.undefined)
     
-    @scala.inline
-    def setMsWrapFlowVarargs(value: MsWrapFlowProperty*): Self = StObject.set(x, "msWrapFlow", js.Array(value :_*))
+    inline def setMsWrapFlowVarargs(value: MsWrapFlowProperty*): Self = StObject.set(x, "msWrapFlow", js.Array(value :_*))
     
-    @scala.inline
-    def setMsWrapMargin(value: MsWrapMarginProperty[TLength] | js.Array[MsWrapMarginProperty[TLength]]): Self = StObject.set(x, "msWrapMargin", value.asInstanceOf[js.Any])
+    inline def setMsWrapMargin(value: MsWrapMarginProperty[TLength] | js.Array[MsWrapMarginProperty[TLength]]): Self = StObject.set(x, "msWrapMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsWrapMarginUndefined: Self = StObject.set(x, "msWrapMargin", js.undefined)
+    inline def setMsWrapMarginUndefined: Self = StObject.set(x, "msWrapMargin", js.undefined)
     
-    @scala.inline
-    def setMsWrapMarginVarargs(value: MsWrapMarginProperty[TLength]*): Self = StObject.set(x, "msWrapMargin", js.Array(value :_*))
+    inline def setMsWrapMarginVarargs(value: MsWrapMarginProperty[TLength]*): Self = StObject.set(x, "msWrapMargin", js.Array(value :_*))
     
-    @scala.inline
-    def setMsWrapThrough(value: MsWrapThroughProperty | js.Array[MsWrapThroughProperty]): Self = StObject.set(x, "msWrapThrough", value.asInstanceOf[js.Any])
+    inline def setMsWrapThrough(value: MsWrapThroughProperty | js.Array[MsWrapThroughProperty]): Self = StObject.set(x, "msWrapThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsWrapThroughUndefined: Self = StObject.set(x, "msWrapThrough", js.undefined)
+    inline def setMsWrapThroughUndefined: Self = StObject.set(x, "msWrapThrough", js.undefined)
     
-    @scala.inline
-    def setMsWrapThroughVarargs(value: MsWrapThroughProperty*): Self = StObject.set(x, "msWrapThrough", js.Array(value :_*))
+    inline def setMsWrapThroughVarargs(value: MsWrapThroughProperty*): Self = StObject.set(x, "msWrapThrough", js.Array(value :_*))
     
-    @scala.inline
-    def setMsWritingMode(value: WritingModeProperty | js.Array[WritingModeProperty]): Self = StObject.set(x, "msWritingMode", value.asInstanceOf[js.Any])
+    inline def setMsWritingMode(value: WritingModeProperty | js.Array[WritingModeProperty]): Self = StObject.set(x, "msWritingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsWritingModeUndefined: Self = StObject.set(x, "msWritingMode", js.undefined)
+    inline def setMsWritingModeUndefined: Self = StObject.set(x, "msWritingMode", js.undefined)
     
-    @scala.inline
-    def setMsWritingModeVarargs(value: WritingModeProperty*): Self = StObject.set(x, "msWritingMode", js.Array(value :_*))
+    inline def setMsWritingModeVarargs(value: WritingModeProperty*): Self = StObject.set(x, "msWritingMode", js.Array(value :_*))
     
-    @scala.inline
-    def setOObjectFit(value: ObjectFitProperty | js.Array[ObjectFitProperty]): Self = StObject.set(x, "OObjectFit", value.asInstanceOf[js.Any])
+    inline def setOObjectFit(value: ObjectFitProperty | js.Array[ObjectFitProperty]): Self = StObject.set(x, "OObjectFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOObjectFitUndefined: Self = StObject.set(x, "OObjectFit", js.undefined)
+    inline def setOObjectFitUndefined: Self = StObject.set(x, "OObjectFit", js.undefined)
     
-    @scala.inline
-    def setOObjectFitVarargs(value: ObjectFitProperty*): Self = StObject.set(x, "OObjectFit", js.Array(value :_*))
+    inline def setOObjectFitVarargs(value: ObjectFitProperty*): Self = StObject.set(x, "OObjectFit", js.Array(value :_*))
     
-    @scala.inline
-    def setOObjectPosition(value: ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]]): Self = StObject.set(x, "OObjectPosition", value.asInstanceOf[js.Any])
+    inline def setOObjectPosition(value: ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]]): Self = StObject.set(x, "OObjectPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOObjectPositionUndefined: Self = StObject.set(x, "OObjectPosition", js.undefined)
+    inline def setOObjectPositionUndefined: Self = StObject.set(x, "OObjectPosition", js.undefined)
     
-    @scala.inline
-    def setOObjectPositionVarargs(value: ObjectPositionProperty[TLength]*): Self = StObject.set(x, "OObjectPosition", js.Array(value :_*))
+    inline def setOObjectPositionVarargs(value: ObjectPositionProperty[TLength]*): Self = StObject.set(x, "OObjectPosition", js.Array(value :_*))
     
-    @scala.inline
-    def setOTabSize(value: TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]): Self = StObject.set(x, "OTabSize", value.asInstanceOf[js.Any])
+    inline def setOTabSize(value: TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]): Self = StObject.set(x, "OTabSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOTabSizeUndefined: Self = StObject.set(x, "OTabSize", js.undefined)
+    inline def setOTabSizeUndefined: Self = StObject.set(x, "OTabSize", js.undefined)
     
-    @scala.inline
-    def setOTabSizeVarargs(value: TabSizeProperty[TLength]*): Self = StObject.set(x, "OTabSize", js.Array(value :_*))
+    inline def setOTabSizeVarargs(value: TabSizeProperty[TLength]*): Self = StObject.set(x, "OTabSize", js.Array(value :_*))
     
-    @scala.inline
-    def setOTextOverflow(value: TextOverflowProperty | js.Array[TextOverflowProperty]): Self = StObject.set(x, "OTextOverflow", value.asInstanceOf[js.Any])
+    inline def setOTextOverflow(value: TextOverflowProperty | js.Array[TextOverflowProperty]): Self = StObject.set(x, "OTextOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOTextOverflowUndefined: Self = StObject.set(x, "OTextOverflow", js.undefined)
+    inline def setOTextOverflowUndefined: Self = StObject.set(x, "OTextOverflow", js.undefined)
     
-    @scala.inline
-    def setOTextOverflowVarargs(value: TextOverflowProperty*): Self = StObject.set(x, "OTextOverflow", js.Array(value :_*))
+    inline def setOTextOverflowVarargs(value: TextOverflowProperty*): Self = StObject.set(x, "OTextOverflow", js.Array(value :_*))
     
-    @scala.inline
-    def setOTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "OTransformOrigin", value.asInstanceOf[js.Any])
+    inline def setOTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "OTransformOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOTransformOriginUndefined: Self = StObject.set(x, "OTransformOrigin", js.undefined)
+    inline def setOTransformOriginUndefined: Self = StObject.set(x, "OTransformOrigin", js.undefined)
     
-    @scala.inline
-    def setOTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "OTransformOrigin", js.Array(value :_*))
+    inline def setOTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "OTransformOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAlignContent(value: AlignContentProperty | js.Array[AlignContentProperty]): Self = StObject.set(x, "WebkitAlignContent", value.asInstanceOf[js.Any])
+    inline def setWebkitAlignContent(value: AlignContentProperty | js.Array[AlignContentProperty]): Self = StObject.set(x, "WebkitAlignContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAlignContentUndefined: Self = StObject.set(x, "WebkitAlignContent", js.undefined)
+    inline def setWebkitAlignContentUndefined: Self = StObject.set(x, "WebkitAlignContent", js.undefined)
     
-    @scala.inline
-    def setWebkitAlignContentVarargs(value: AlignContentProperty*): Self = StObject.set(x, "WebkitAlignContent", js.Array(value :_*))
+    inline def setWebkitAlignContentVarargs(value: AlignContentProperty*): Self = StObject.set(x, "WebkitAlignContent", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAlignItems(value: AlignItemsProperty | js.Array[AlignItemsProperty]): Self = StObject.set(x, "WebkitAlignItems", value.asInstanceOf[js.Any])
+    inline def setWebkitAlignItems(value: AlignItemsProperty | js.Array[AlignItemsProperty]): Self = StObject.set(x, "WebkitAlignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAlignItemsUndefined: Self = StObject.set(x, "WebkitAlignItems", js.undefined)
+    inline def setWebkitAlignItemsUndefined: Self = StObject.set(x, "WebkitAlignItems", js.undefined)
     
-    @scala.inline
-    def setWebkitAlignItemsVarargs(value: AlignItemsProperty*): Self = StObject.set(x, "WebkitAlignItems", js.Array(value :_*))
+    inline def setWebkitAlignItemsVarargs(value: AlignItemsProperty*): Self = StObject.set(x, "WebkitAlignItems", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAlignSelf(value: AlignSelfProperty | js.Array[AlignSelfProperty]): Self = StObject.set(x, "WebkitAlignSelf", value.asInstanceOf[js.Any])
+    inline def setWebkitAlignSelf(value: AlignSelfProperty | js.Array[AlignSelfProperty]): Self = StObject.set(x, "WebkitAlignSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAlignSelfUndefined: Self = StObject.set(x, "WebkitAlignSelf", js.undefined)
+    inline def setWebkitAlignSelfUndefined: Self = StObject.set(x, "WebkitAlignSelf", js.undefined)
     
-    @scala.inline
-    def setWebkitAlignSelfVarargs(value: AlignSelfProperty*): Self = StObject.set(x, "WebkitAlignSelf", js.Array(value :_*))
+    inline def setWebkitAlignSelfVarargs(value: AlignSelfProperty*): Self = StObject.set(x, "WebkitAlignSelf", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitAnimationDelay", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitAnimationDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationDelayUndefined: Self = StObject.set(x, "WebkitAnimationDelay", js.undefined)
+    inline def setWebkitAnimationDelayUndefined: Self = StObject.set(x, "WebkitAnimationDelay", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitAnimationDelay", js.Array(value :_*))
+    inline def setWebkitAnimationDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitAnimationDelay", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationDirection(value: AnimationDirectionProperty | js.Array[AnimationDirectionProperty]): Self = StObject.set(x, "WebkitAnimationDirection", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationDirection(value: AnimationDirectionProperty | js.Array[AnimationDirectionProperty]): Self = StObject.set(x, "WebkitAnimationDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationDirectionUndefined: Self = StObject.set(x, "WebkitAnimationDirection", js.undefined)
+    inline def setWebkitAnimationDirectionUndefined: Self = StObject.set(x, "WebkitAnimationDirection", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationDirectionVarargs(value: AnimationDirectionProperty*): Self = StObject.set(x, "WebkitAnimationDirection", js.Array(value :_*))
+    inline def setWebkitAnimationDirectionVarargs(value: AnimationDirectionProperty*): Self = StObject.set(x, "WebkitAnimationDirection", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitAnimationDuration", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitAnimationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationDurationUndefined: Self = StObject.set(x, "WebkitAnimationDuration", js.undefined)
+    inline def setWebkitAnimationDurationUndefined: Self = StObject.set(x, "WebkitAnimationDuration", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitAnimationDuration", js.Array(value :_*))
+    inline def setWebkitAnimationDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitAnimationDuration", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationFillMode(value: AnimationFillModeProperty | js.Array[AnimationFillModeProperty]): Self = StObject.set(x, "WebkitAnimationFillMode", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationFillMode(value: AnimationFillModeProperty | js.Array[AnimationFillModeProperty]): Self = StObject.set(x, "WebkitAnimationFillMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationFillModeUndefined: Self = StObject.set(x, "WebkitAnimationFillMode", js.undefined)
+    inline def setWebkitAnimationFillModeUndefined: Self = StObject.set(x, "WebkitAnimationFillMode", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationFillModeVarargs(value: AnimationFillModeProperty*): Self = StObject.set(x, "WebkitAnimationFillMode", js.Array(value :_*))
+    inline def setWebkitAnimationFillModeVarargs(value: AnimationFillModeProperty*): Self = StObject.set(x, "WebkitAnimationFillMode", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationIterationCount(value: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]): Self = StObject.set(x, "WebkitAnimationIterationCount", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationIterationCount(value: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]): Self = StObject.set(x, "WebkitAnimationIterationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationIterationCountUndefined: Self = StObject.set(x, "WebkitAnimationIterationCount", js.undefined)
+    inline def setWebkitAnimationIterationCountUndefined: Self = StObject.set(x, "WebkitAnimationIterationCount", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationIterationCountVarargs(value: AnimationIterationCountProperty*): Self = StObject.set(x, "WebkitAnimationIterationCount", js.Array(value :_*))
+    inline def setWebkitAnimationIterationCountVarargs(value: AnimationIterationCountProperty*): Self = StObject.set(x, "WebkitAnimationIterationCount", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationName(value: AnimationNameProperty | js.Array[AnimationNameProperty]): Self = StObject.set(x, "WebkitAnimationName", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationName(value: AnimationNameProperty | js.Array[AnimationNameProperty]): Self = StObject.set(x, "WebkitAnimationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationNameUndefined: Self = StObject.set(x, "WebkitAnimationName", js.undefined)
+    inline def setWebkitAnimationNameUndefined: Self = StObject.set(x, "WebkitAnimationName", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationNameVarargs(value: AnimationNameProperty*): Self = StObject.set(x, "WebkitAnimationName", js.Array(value :_*))
+    inline def setWebkitAnimationNameVarargs(value: AnimationNameProperty*): Self = StObject.set(x, "WebkitAnimationName", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationPlayState(value: AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]): Self = StObject.set(x, "WebkitAnimationPlayState", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationPlayState(value: AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]): Self = StObject.set(x, "WebkitAnimationPlayState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationPlayStateUndefined: Self = StObject.set(x, "WebkitAnimationPlayState", js.undefined)
+    inline def setWebkitAnimationPlayStateUndefined: Self = StObject.set(x, "WebkitAnimationPlayState", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationPlayStateVarargs(value: AnimationPlayStateProperty*): Self = StObject.set(x, "WebkitAnimationPlayState", js.Array(value :_*))
+    inline def setWebkitAnimationPlayStateVarargs(value: AnimationPlayStateProperty*): Self = StObject.set(x, "WebkitAnimationPlayState", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAnimationTimingFunction(value: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]): Self = StObject.set(x, "WebkitAnimationTimingFunction", value.asInstanceOf[js.Any])
+    inline def setWebkitAnimationTimingFunction(value: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]): Self = StObject.set(x, "WebkitAnimationTimingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAnimationTimingFunctionUndefined: Self = StObject.set(x, "WebkitAnimationTimingFunction", js.undefined)
+    inline def setWebkitAnimationTimingFunctionUndefined: Self = StObject.set(x, "WebkitAnimationTimingFunction", js.undefined)
     
-    @scala.inline
-    def setWebkitAnimationTimingFunctionVarargs(value: AnimationTimingFunctionProperty*): Self = StObject.set(x, "WebkitAnimationTimingFunction", js.Array(value :_*))
+    inline def setWebkitAnimationTimingFunctionVarargs(value: AnimationTimingFunctionProperty*): Self = StObject.set(x, "WebkitAnimationTimingFunction", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitAppearance(value: WebkitAppearanceProperty | js.Array[WebkitAppearanceProperty]): Self = StObject.set(x, "WebkitAppearance", value.asInstanceOf[js.Any])
+    inline def setWebkitAppearance(value: WebkitAppearanceProperty | js.Array[WebkitAppearanceProperty]): Self = StObject.set(x, "WebkitAppearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitAppearanceUndefined: Self = StObject.set(x, "WebkitAppearance", js.undefined)
+    inline def setWebkitAppearanceUndefined: Self = StObject.set(x, "WebkitAppearance", js.undefined)
     
-    @scala.inline
-    def setWebkitAppearanceVarargs(value: WebkitAppearanceProperty*): Self = StObject.set(x, "WebkitAppearance", js.Array(value :_*))
+    inline def setWebkitAppearanceVarargs(value: WebkitAppearanceProperty*): Self = StObject.set(x, "WebkitAppearance", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBackdropFilter(value: BackdropFilterProperty | js.Array[BackdropFilterProperty]): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
+    inline def setWebkitBackdropFilter(value: BackdropFilterProperty | js.Array[BackdropFilterProperty]): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
+    inline def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
     
-    @scala.inline
-    def setWebkitBackdropFilterVarargs(value: BackdropFilterProperty*): Self = StObject.set(x, "WebkitBackdropFilter", js.Array(value :_*))
+    inline def setWebkitBackdropFilterVarargs(value: BackdropFilterProperty*): Self = StObject.set(x, "WebkitBackdropFilter", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBackfaceVisibility(value: BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]): Self = StObject.set(x, "WebkitBackfaceVisibility", value.asInstanceOf[js.Any])
+    inline def setWebkitBackfaceVisibility(value: BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]): Self = StObject.set(x, "WebkitBackfaceVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBackfaceVisibilityUndefined: Self = StObject.set(x, "WebkitBackfaceVisibility", js.undefined)
+    inline def setWebkitBackfaceVisibilityUndefined: Self = StObject.set(x, "WebkitBackfaceVisibility", js.undefined)
     
-    @scala.inline
-    def setWebkitBackfaceVisibilityVarargs(value: BackfaceVisibilityProperty*): Self = StObject.set(x, "WebkitBackfaceVisibility", js.Array(value :_*))
+    inline def setWebkitBackfaceVisibilityVarargs(value: BackfaceVisibilityProperty*): Self = StObject.set(x, "WebkitBackfaceVisibility", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBackgroundClip(value: BackgroundClipProperty | js.Array[BackgroundClipProperty]): Self = StObject.set(x, "WebkitBackgroundClip", value.asInstanceOf[js.Any])
+    inline def setWebkitBackgroundClip(value: BackgroundClipProperty | js.Array[BackgroundClipProperty]): Self = StObject.set(x, "WebkitBackgroundClip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBackgroundClipUndefined: Self = StObject.set(x, "WebkitBackgroundClip", js.undefined)
+    inline def setWebkitBackgroundClipUndefined: Self = StObject.set(x, "WebkitBackgroundClip", js.undefined)
     
-    @scala.inline
-    def setWebkitBackgroundClipVarargs(value: BackgroundClipProperty*): Self = StObject.set(x, "WebkitBackgroundClip", js.Array(value :_*))
+    inline def setWebkitBackgroundClipVarargs(value: BackgroundClipProperty*): Self = StObject.set(x, "WebkitBackgroundClip", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBackgroundOrigin(value: BackgroundOriginProperty | js.Array[BackgroundOriginProperty]): Self = StObject.set(x, "WebkitBackgroundOrigin", value.asInstanceOf[js.Any])
+    inline def setWebkitBackgroundOrigin(value: BackgroundOriginProperty | js.Array[BackgroundOriginProperty]): Self = StObject.set(x, "WebkitBackgroundOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBackgroundOriginUndefined: Self = StObject.set(x, "WebkitBackgroundOrigin", js.undefined)
+    inline def setWebkitBackgroundOriginUndefined: Self = StObject.set(x, "WebkitBackgroundOrigin", js.undefined)
     
-    @scala.inline
-    def setWebkitBackgroundOriginVarargs(value: BackgroundOriginProperty*): Self = StObject.set(x, "WebkitBackgroundOrigin", js.Array(value :_*))
+    inline def setWebkitBackgroundOriginVarargs(value: BackgroundOriginProperty*): Self = StObject.set(x, "WebkitBackgroundOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBackgroundSize(value: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]): Self = StObject.set(x, "WebkitBackgroundSize", value.asInstanceOf[js.Any])
+    inline def setWebkitBackgroundSize(value: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]): Self = StObject.set(x, "WebkitBackgroundSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBackgroundSizeUndefined: Self = StObject.set(x, "WebkitBackgroundSize", js.undefined)
+    inline def setWebkitBackgroundSizeUndefined: Self = StObject.set(x, "WebkitBackgroundSize", js.undefined)
     
-    @scala.inline
-    def setWebkitBackgroundSizeVarargs(value: BackgroundSizeProperty[TLength]*): Self = StObject.set(x, "WebkitBackgroundSize", js.Array(value :_*))
+    inline def setWebkitBackgroundSizeVarargs(value: BackgroundSizeProperty[TLength]*): Self = StObject.set(x, "WebkitBackgroundSize", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderBeforeColor(value: WebkitBorderBeforeColorProperty | js.Array[WebkitBorderBeforeColorProperty]): Self = StObject.set(x, "WebkitBorderBeforeColor", value.asInstanceOf[js.Any])
+    inline def setWebkitBorderBeforeColor(value: WebkitBorderBeforeColorProperty | js.Array[WebkitBorderBeforeColorProperty]): Self = StObject.set(x, "WebkitBorderBeforeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderBeforeColorUndefined: Self = StObject.set(x, "WebkitBorderBeforeColor", js.undefined)
+    inline def setWebkitBorderBeforeColorUndefined: Self = StObject.set(x, "WebkitBorderBeforeColor", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderBeforeColorVarargs(value: WebkitBorderBeforeColorProperty*): Self = StObject.set(x, "WebkitBorderBeforeColor", js.Array(value :_*))
+    inline def setWebkitBorderBeforeColorVarargs(value: WebkitBorderBeforeColorProperty*): Self = StObject.set(x, "WebkitBorderBeforeColor", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderBeforeStyle(value: WebkitBorderBeforeStyleProperty | js.Array[WebkitBorderBeforeStyleProperty]): Self = StObject.set(x, "WebkitBorderBeforeStyle", value.asInstanceOf[js.Any])
+    inline def setWebkitBorderBeforeStyle(value: WebkitBorderBeforeStyleProperty | js.Array[WebkitBorderBeforeStyleProperty]): Self = StObject.set(x, "WebkitBorderBeforeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderBeforeStyleUndefined: Self = StObject.set(x, "WebkitBorderBeforeStyle", js.undefined)
+    inline def setWebkitBorderBeforeStyleUndefined: Self = StObject.set(x, "WebkitBorderBeforeStyle", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderBeforeStyleVarargs(value: WebkitBorderBeforeStyleProperty*): Self = StObject.set(x, "WebkitBorderBeforeStyle", js.Array(value :_*))
+    inline def setWebkitBorderBeforeStyleVarargs(value: WebkitBorderBeforeStyleProperty*): Self = StObject.set(x, "WebkitBorderBeforeStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderBeforeWidth(
+    inline def setWebkitBorderBeforeWidth(
       value: WebkitBorderBeforeWidthProperty[TLength] | js.Array[WebkitBorderBeforeWidthProperty[TLength]]
     ): Self = StObject.set(x, "WebkitBorderBeforeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderBeforeWidthUndefined: Self = StObject.set(x, "WebkitBorderBeforeWidth", js.undefined)
+    inline def setWebkitBorderBeforeWidthUndefined: Self = StObject.set(x, "WebkitBorderBeforeWidth", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderBeforeWidthVarargs(value: WebkitBorderBeforeWidthProperty[TLength]*): Self = StObject.set(x, "WebkitBorderBeforeWidth", js.Array(value :_*))
+    inline def setWebkitBorderBeforeWidthVarargs(value: WebkitBorderBeforeWidthProperty[TLength]*): Self = StObject.set(x, "WebkitBorderBeforeWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderBottomLeftRadius(value: BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]]): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", value.asInstanceOf[js.Any])
+    inline def setWebkitBorderBottomLeftRadius(value: BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]]): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.undefined)
+    inline def setWebkitBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderBottomLeftRadiusVarargs(value: BorderBottomLeftRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.Array(value :_*))
+    inline def setWebkitBorderBottomLeftRadiusVarargs(value: BorderBottomLeftRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderBottomRightRadius(
+    inline def setWebkitBorderBottomRightRadius(
       value: BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]]
     ): Self = StObject.set(x, "WebkitBorderBottomRightRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderBottomRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.undefined)
+    inline def setWebkitBorderBottomRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderBottomRightRadiusVarargs(value: BorderBottomRightRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.Array(value :_*))
+    inline def setWebkitBorderBottomRightRadiusVarargs(value: BorderBottomRightRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderImageSlice(value: BorderImageSliceProperty | js.Array[BorderImageSliceProperty]): Self = StObject.set(x, "WebkitBorderImageSlice", value.asInstanceOf[js.Any])
+    inline def setWebkitBorderImageSlice(value: BorderImageSliceProperty | js.Array[BorderImageSliceProperty]): Self = StObject.set(x, "WebkitBorderImageSlice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderImageSliceUndefined: Self = StObject.set(x, "WebkitBorderImageSlice", js.undefined)
+    inline def setWebkitBorderImageSliceUndefined: Self = StObject.set(x, "WebkitBorderImageSlice", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderImageSliceVarargs(value: BorderImageSliceProperty*): Self = StObject.set(x, "WebkitBorderImageSlice", js.Array(value :_*))
+    inline def setWebkitBorderImageSliceVarargs(value: BorderImageSliceProperty*): Self = StObject.set(x, "WebkitBorderImageSlice", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderTopLeftRadius(value: BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]]): Self = StObject.set(x, "WebkitBorderTopLeftRadius", value.asInstanceOf[js.Any])
+    inline def setWebkitBorderTopLeftRadius(value: BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]]): Self = StObject.set(x, "WebkitBorderTopLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderTopLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.undefined)
+    inline def setWebkitBorderTopLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderTopLeftRadiusVarargs(value: BorderTopLeftRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.Array(value :_*))
+    inline def setWebkitBorderTopLeftRadiusVarargs(value: BorderTopLeftRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBorderTopRightRadius(value: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]]): Self = StObject.set(x, "WebkitBorderTopRightRadius", value.asInstanceOf[js.Any])
+    inline def setWebkitBorderTopRightRadius(value: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]]): Self = StObject.set(x, "WebkitBorderTopRightRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBorderTopRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopRightRadius", js.undefined)
+    inline def setWebkitBorderTopRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopRightRadius", js.undefined)
     
-    @scala.inline
-    def setWebkitBorderTopRightRadiusVarargs(value: BorderTopRightRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderTopRightRadius", js.Array(value :_*))
+    inline def setWebkitBorderTopRightRadiusVarargs(value: BorderTopRightRadiusProperty[TLength]*): Self = StObject.set(x, "WebkitBorderTopRightRadius", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBoxDecorationBreak(value: BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]): Self = StObject.set(x, "WebkitBoxDecorationBreak", value.asInstanceOf[js.Any])
+    inline def setWebkitBoxDecorationBreak(value: BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]): Self = StObject.set(x, "WebkitBoxDecorationBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBoxDecorationBreakUndefined: Self = StObject.set(x, "WebkitBoxDecorationBreak", js.undefined)
+    inline def setWebkitBoxDecorationBreakUndefined: Self = StObject.set(x, "WebkitBoxDecorationBreak", js.undefined)
     
-    @scala.inline
-    def setWebkitBoxDecorationBreakVarargs(value: BoxDecorationBreakProperty*): Self = StObject.set(x, "WebkitBoxDecorationBreak", js.Array(value :_*))
+    inline def setWebkitBoxDecorationBreakVarargs(value: BoxDecorationBreakProperty*): Self = StObject.set(x, "WebkitBoxDecorationBreak", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBoxReflect(value: WebkitBoxReflectProperty[TLength] | js.Array[WebkitBoxReflectProperty[TLength]]): Self = StObject.set(x, "WebkitBoxReflect", value.asInstanceOf[js.Any])
+    inline def setWebkitBoxReflect(value: WebkitBoxReflectProperty[TLength] | js.Array[WebkitBoxReflectProperty[TLength]]): Self = StObject.set(x, "WebkitBoxReflect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBoxReflectUndefined: Self = StObject.set(x, "WebkitBoxReflect", js.undefined)
+    inline def setWebkitBoxReflectUndefined: Self = StObject.set(x, "WebkitBoxReflect", js.undefined)
     
-    @scala.inline
-    def setWebkitBoxReflectVarargs(value: WebkitBoxReflectProperty[TLength]*): Self = StObject.set(x, "WebkitBoxReflect", js.Array(value :_*))
+    inline def setWebkitBoxReflectVarargs(value: WebkitBoxReflectProperty[TLength]*): Self = StObject.set(x, "WebkitBoxReflect", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBoxShadow(value: BoxShadowProperty | js.Array[BoxShadowProperty]): Self = StObject.set(x, "WebkitBoxShadow", value.asInstanceOf[js.Any])
+    inline def setWebkitBoxShadow(value: BoxShadowProperty | js.Array[BoxShadowProperty]): Self = StObject.set(x, "WebkitBoxShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBoxShadowUndefined: Self = StObject.set(x, "WebkitBoxShadow", js.undefined)
+    inline def setWebkitBoxShadowUndefined: Self = StObject.set(x, "WebkitBoxShadow", js.undefined)
     
-    @scala.inline
-    def setWebkitBoxShadowVarargs(value: BoxShadowProperty*): Self = StObject.set(x, "WebkitBoxShadow", js.Array(value :_*))
+    inline def setWebkitBoxShadowVarargs(value: BoxShadowProperty*): Self = StObject.set(x, "WebkitBoxShadow", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitBoxSizing(value: BoxSizingProperty | js.Array[BoxSizingProperty]): Self = StObject.set(x, "WebkitBoxSizing", value.asInstanceOf[js.Any])
+    inline def setWebkitBoxSizing(value: BoxSizingProperty | js.Array[BoxSizingProperty]): Self = StObject.set(x, "WebkitBoxSizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitBoxSizingUndefined: Self = StObject.set(x, "WebkitBoxSizing", js.undefined)
+    inline def setWebkitBoxSizingUndefined: Self = StObject.set(x, "WebkitBoxSizing", js.undefined)
     
-    @scala.inline
-    def setWebkitBoxSizingVarargs(value: BoxSizingProperty*): Self = StObject.set(x, "WebkitBoxSizing", js.Array(value :_*))
+    inline def setWebkitBoxSizingVarargs(value: BoxSizingProperty*): Self = StObject.set(x, "WebkitBoxSizing", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitClipPath(value: ClipPathProperty | js.Array[ClipPathProperty]): Self = StObject.set(x, "WebkitClipPath", value.asInstanceOf[js.Any])
+    inline def setWebkitClipPath(value: ClipPathProperty | js.Array[ClipPathProperty]): Self = StObject.set(x, "WebkitClipPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitClipPathUndefined: Self = StObject.set(x, "WebkitClipPath", js.undefined)
+    inline def setWebkitClipPathUndefined: Self = StObject.set(x, "WebkitClipPath", js.undefined)
     
-    @scala.inline
-    def setWebkitClipPathVarargs(value: ClipPathProperty*): Self = StObject.set(x, "WebkitClipPath", js.Array(value :_*))
+    inline def setWebkitClipPathVarargs(value: ClipPathProperty*): Self = StObject.set(x, "WebkitClipPath", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnCount(value: ColumnCountProperty | js.Array[ColumnCountProperty]): Self = StObject.set(x, "WebkitColumnCount", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnCount(value: ColumnCountProperty | js.Array[ColumnCountProperty]): Self = StObject.set(x, "WebkitColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnCountUndefined: Self = StObject.set(x, "WebkitColumnCount", js.undefined)
+    inline def setWebkitColumnCountUndefined: Self = StObject.set(x, "WebkitColumnCount", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnCountVarargs(value: ColumnCountProperty*): Self = StObject.set(x, "WebkitColumnCount", js.Array(value :_*))
+    inline def setWebkitColumnCountVarargs(value: ColumnCountProperty*): Self = StObject.set(x, "WebkitColumnCount", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnFill(value: ColumnFillProperty | js.Array[ColumnFillProperty]): Self = StObject.set(x, "WebkitColumnFill", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnFill(value: ColumnFillProperty | js.Array[ColumnFillProperty]): Self = StObject.set(x, "WebkitColumnFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
+    inline def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnFillVarargs(value: ColumnFillProperty*): Self = StObject.set(x, "WebkitColumnFill", js.Array(value :_*))
+    inline def setWebkitColumnFillVarargs(value: ColumnFillProperty*): Self = StObject.set(x, "WebkitColumnFill", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnGap(value: ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]]): Self = StObject.set(x, "WebkitColumnGap", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnGap(value: ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]]): Self = StObject.set(x, "WebkitColumnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnGapUndefined: Self = StObject.set(x, "WebkitColumnGap", js.undefined)
+    inline def setWebkitColumnGapUndefined: Self = StObject.set(x, "WebkitColumnGap", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnGapVarargs(value: ColumnGapProperty[TLength]*): Self = StObject.set(x, "WebkitColumnGap", js.Array(value :_*))
+    inline def setWebkitColumnGapVarargs(value: ColumnGapProperty[TLength]*): Self = StObject.set(x, "WebkitColumnGap", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnRuleColor(value: ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnRuleColor(value: ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnRuleColorUndefined: Self = StObject.set(x, "WebkitColumnRuleColor", js.undefined)
+    inline def setWebkitColumnRuleColorUndefined: Self = StObject.set(x, "WebkitColumnRuleColor", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnRuleColorVarargs(value: ColumnRuleColorProperty*): Self = StObject.set(x, "WebkitColumnRuleColor", js.Array(value :_*))
+    inline def setWebkitColumnRuleColorVarargs(value: ColumnRuleColorProperty*): Self = StObject.set(x, "WebkitColumnRuleColor", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnRuleStyle(value: ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]): Self = StObject.set(x, "WebkitColumnRuleStyle", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnRuleStyle(value: ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]): Self = StObject.set(x, "WebkitColumnRuleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnRuleStyleUndefined: Self = StObject.set(x, "WebkitColumnRuleStyle", js.undefined)
+    inline def setWebkitColumnRuleStyleUndefined: Self = StObject.set(x, "WebkitColumnRuleStyle", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnRuleStyleVarargs(value: ColumnRuleStyleProperty*): Self = StObject.set(x, "WebkitColumnRuleStyle", js.Array(value :_*))
+    inline def setWebkitColumnRuleStyleVarargs(value: ColumnRuleStyleProperty*): Self = StObject.set(x, "WebkitColumnRuleStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnRuleWidth(value: ColumnRuleWidthProperty[TLength] | js.Array[ColumnRuleWidthProperty[TLength]]): Self = StObject.set(x, "WebkitColumnRuleWidth", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnRuleWidth(value: ColumnRuleWidthProperty[TLength] | js.Array[ColumnRuleWidthProperty[TLength]]): Self = StObject.set(x, "WebkitColumnRuleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnRuleWidthUndefined: Self = StObject.set(x, "WebkitColumnRuleWidth", js.undefined)
+    inline def setWebkitColumnRuleWidthUndefined: Self = StObject.set(x, "WebkitColumnRuleWidth", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnRuleWidthVarargs(value: ColumnRuleWidthProperty[TLength]*): Self = StObject.set(x, "WebkitColumnRuleWidth", js.Array(value :_*))
+    inline def setWebkitColumnRuleWidthVarargs(value: ColumnRuleWidthProperty[TLength]*): Self = StObject.set(x, "WebkitColumnRuleWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnSpan(value: ColumnSpanProperty | js.Array[ColumnSpanProperty]): Self = StObject.set(x, "WebkitColumnSpan", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnSpan(value: ColumnSpanProperty | js.Array[ColumnSpanProperty]): Self = StObject.set(x, "WebkitColumnSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnSpanUndefined: Self = StObject.set(x, "WebkitColumnSpan", js.undefined)
+    inline def setWebkitColumnSpanUndefined: Self = StObject.set(x, "WebkitColumnSpan", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnSpanVarargs(value: ColumnSpanProperty*): Self = StObject.set(x, "WebkitColumnSpan", js.Array(value :_*))
+    inline def setWebkitColumnSpanVarargs(value: ColumnSpanProperty*): Self = StObject.set(x, "WebkitColumnSpan", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitColumnWidth(value: ColumnWidthProperty[TLength] | js.Array[ColumnWidthProperty[TLength]]): Self = StObject.set(x, "WebkitColumnWidth", value.asInstanceOf[js.Any])
+    inline def setWebkitColumnWidth(value: ColumnWidthProperty[TLength] | js.Array[ColumnWidthProperty[TLength]]): Self = StObject.set(x, "WebkitColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitColumnWidthUndefined: Self = StObject.set(x, "WebkitColumnWidth", js.undefined)
+    inline def setWebkitColumnWidthUndefined: Self = StObject.set(x, "WebkitColumnWidth", js.undefined)
     
-    @scala.inline
-    def setWebkitColumnWidthVarargs(value: ColumnWidthProperty[TLength]*): Self = StObject.set(x, "WebkitColumnWidth", js.Array(value :_*))
+    inline def setWebkitColumnWidthVarargs(value: ColumnWidthProperty[TLength]*): Self = StObject.set(x, "WebkitColumnWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFilter(value: FilterProperty | js.Array[FilterProperty]): Self = StObject.set(x, "WebkitFilter", value.asInstanceOf[js.Any])
+    inline def setWebkitFilter(value: FilterProperty | js.Array[FilterProperty]): Self = StObject.set(x, "WebkitFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFilterUndefined: Self = StObject.set(x, "WebkitFilter", js.undefined)
+    inline def setWebkitFilterUndefined: Self = StObject.set(x, "WebkitFilter", js.undefined)
     
-    @scala.inline
-    def setWebkitFilterVarargs(value: FilterProperty*): Self = StObject.set(x, "WebkitFilter", js.Array(value :_*))
+    inline def setWebkitFilterVarargs(value: FilterProperty*): Self = StObject.set(x, "WebkitFilter", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFlexBasis(value: FlexBasisProperty[TLength] | js.Array[FlexBasisProperty[TLength]]): Self = StObject.set(x, "WebkitFlexBasis", value.asInstanceOf[js.Any])
+    inline def setWebkitFlexBasis(value: FlexBasisProperty[TLength] | js.Array[FlexBasisProperty[TLength]]): Self = StObject.set(x, "WebkitFlexBasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFlexBasisUndefined: Self = StObject.set(x, "WebkitFlexBasis", js.undefined)
+    inline def setWebkitFlexBasisUndefined: Self = StObject.set(x, "WebkitFlexBasis", js.undefined)
     
-    @scala.inline
-    def setWebkitFlexBasisVarargs(value: FlexBasisProperty[TLength]*): Self = StObject.set(x, "WebkitFlexBasis", js.Array(value :_*))
+    inline def setWebkitFlexBasisVarargs(value: FlexBasisProperty[TLength]*): Self = StObject.set(x, "WebkitFlexBasis", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFlexDirection(value: FlexDirectionProperty | js.Array[FlexDirectionProperty]): Self = StObject.set(x, "WebkitFlexDirection", value.asInstanceOf[js.Any])
+    inline def setWebkitFlexDirection(value: FlexDirectionProperty | js.Array[FlexDirectionProperty]): Self = StObject.set(x, "WebkitFlexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFlexDirectionUndefined: Self = StObject.set(x, "WebkitFlexDirection", js.undefined)
+    inline def setWebkitFlexDirectionUndefined: Self = StObject.set(x, "WebkitFlexDirection", js.undefined)
     
-    @scala.inline
-    def setWebkitFlexDirectionVarargs(value: FlexDirectionProperty*): Self = StObject.set(x, "WebkitFlexDirection", js.Array(value :_*))
+    inline def setWebkitFlexDirectionVarargs(value: FlexDirectionProperty*): Self = StObject.set(x, "WebkitFlexDirection", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFlexGrow(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "WebkitFlexGrow", value.asInstanceOf[js.Any])
+    inline def setWebkitFlexGrow(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "WebkitFlexGrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFlexGrowUndefined: Self = StObject.set(x, "WebkitFlexGrow", js.undefined)
+    inline def setWebkitFlexGrowUndefined: Self = StObject.set(x, "WebkitFlexGrow", js.undefined)
     
-    @scala.inline
-    def setWebkitFlexGrowVarargs(value: GlobalsNumber*): Self = StObject.set(x, "WebkitFlexGrow", js.Array(value :_*))
+    inline def setWebkitFlexGrowVarargs(value: GlobalsNumber*): Self = StObject.set(x, "WebkitFlexGrow", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFlexShrink(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "WebkitFlexShrink", value.asInstanceOf[js.Any])
+    inline def setWebkitFlexShrink(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "WebkitFlexShrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFlexShrinkUndefined: Self = StObject.set(x, "WebkitFlexShrink", js.undefined)
+    inline def setWebkitFlexShrinkUndefined: Self = StObject.set(x, "WebkitFlexShrink", js.undefined)
     
-    @scala.inline
-    def setWebkitFlexShrinkVarargs(value: GlobalsNumber*): Self = StObject.set(x, "WebkitFlexShrink", js.Array(value :_*))
+    inline def setWebkitFlexShrinkVarargs(value: GlobalsNumber*): Self = StObject.set(x, "WebkitFlexShrink", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFlexWrap(value: FlexWrapProperty | js.Array[FlexWrapProperty]): Self = StObject.set(x, "WebkitFlexWrap", value.asInstanceOf[js.Any])
+    inline def setWebkitFlexWrap(value: FlexWrapProperty | js.Array[FlexWrapProperty]): Self = StObject.set(x, "WebkitFlexWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFlexWrapUndefined: Self = StObject.set(x, "WebkitFlexWrap", js.undefined)
+    inline def setWebkitFlexWrapUndefined: Self = StObject.set(x, "WebkitFlexWrap", js.undefined)
     
-    @scala.inline
-    def setWebkitFlexWrapVarargs(value: FlexWrapProperty*): Self = StObject.set(x, "WebkitFlexWrap", js.Array(value :_*))
+    inline def setWebkitFlexWrapVarargs(value: FlexWrapProperty*): Self = StObject.set(x, "WebkitFlexWrap", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFontFeatureSettings(value: FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]): Self = StObject.set(x, "WebkitFontFeatureSettings", value.asInstanceOf[js.Any])
+    inline def setWebkitFontFeatureSettings(value: FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]): Self = StObject.set(x, "WebkitFontFeatureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFontFeatureSettingsUndefined: Self = StObject.set(x, "WebkitFontFeatureSettings", js.undefined)
+    inline def setWebkitFontFeatureSettingsUndefined: Self = StObject.set(x, "WebkitFontFeatureSettings", js.undefined)
     
-    @scala.inline
-    def setWebkitFontFeatureSettingsVarargs(value: FontFeatureSettingsProperty*): Self = StObject.set(x, "WebkitFontFeatureSettings", js.Array(value :_*))
+    inline def setWebkitFontFeatureSettingsVarargs(value: FontFeatureSettingsProperty*): Self = StObject.set(x, "WebkitFontFeatureSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFontKerning(value: FontKerningProperty | js.Array[FontKerningProperty]): Self = StObject.set(x, "WebkitFontKerning", value.asInstanceOf[js.Any])
+    inline def setWebkitFontKerning(value: FontKerningProperty | js.Array[FontKerningProperty]): Self = StObject.set(x, "WebkitFontKerning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFontKerningUndefined: Self = StObject.set(x, "WebkitFontKerning", js.undefined)
+    inline def setWebkitFontKerningUndefined: Self = StObject.set(x, "WebkitFontKerning", js.undefined)
     
-    @scala.inline
-    def setWebkitFontKerningVarargs(value: FontKerningProperty*): Self = StObject.set(x, "WebkitFontKerning", js.Array(value :_*))
+    inline def setWebkitFontKerningVarargs(value: FontKerningProperty*): Self = StObject.set(x, "WebkitFontKerning", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitFontVariantLigatures(value: FontVariantLigaturesProperty | js.Array[FontVariantLigaturesProperty]): Self = StObject.set(x, "WebkitFontVariantLigatures", value.asInstanceOf[js.Any])
+    inline def setWebkitFontVariantLigatures(value: FontVariantLigaturesProperty | js.Array[FontVariantLigaturesProperty]): Self = StObject.set(x, "WebkitFontVariantLigatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
+    inline def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
     
-    @scala.inline
-    def setWebkitFontVariantLigaturesVarargs(value: FontVariantLigaturesProperty*): Self = StObject.set(x, "WebkitFontVariantLigatures", js.Array(value :_*))
+    inline def setWebkitFontVariantLigaturesVarargs(value: FontVariantLigaturesProperty*): Self = StObject.set(x, "WebkitFontVariantLigatures", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitHyphens(value: HyphensProperty | js.Array[HyphensProperty]): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
+    inline def setWebkitHyphens(value: HyphensProperty | js.Array[HyphensProperty]): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
+    inline def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
     
-    @scala.inline
-    def setWebkitHyphensVarargs(value: HyphensProperty*): Self = StObject.set(x, "WebkitHyphens", js.Array(value :_*))
+    inline def setWebkitHyphensVarargs(value: HyphensProperty*): Self = StObject.set(x, "WebkitHyphens", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitJustifyContent(value: JustifyContentProperty | js.Array[JustifyContentProperty]): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
+    inline def setWebkitJustifyContent(value: JustifyContentProperty | js.Array[JustifyContentProperty]): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitJustifyContentUndefined: Self = StObject.set(x, "WebkitJustifyContent", js.undefined)
+    inline def setWebkitJustifyContentUndefined: Self = StObject.set(x, "WebkitJustifyContent", js.undefined)
     
-    @scala.inline
-    def setWebkitJustifyContentVarargs(value: JustifyContentProperty*): Self = StObject.set(x, "WebkitJustifyContent", js.Array(value :_*))
+    inline def setWebkitJustifyContentVarargs(value: JustifyContentProperty*): Self = StObject.set(x, "WebkitJustifyContent", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitLineBreak(value: LineBreakProperty | js.Array[LineBreakProperty]): Self = StObject.set(x, "WebkitLineBreak", value.asInstanceOf[js.Any])
+    inline def setWebkitLineBreak(value: LineBreakProperty | js.Array[LineBreakProperty]): Self = StObject.set(x, "WebkitLineBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitLineBreakUndefined: Self = StObject.set(x, "WebkitLineBreak", js.undefined)
+    inline def setWebkitLineBreakUndefined: Self = StObject.set(x, "WebkitLineBreak", js.undefined)
     
-    @scala.inline
-    def setWebkitLineBreakVarargs(value: LineBreakProperty*): Self = StObject.set(x, "WebkitLineBreak", js.Array(value :_*))
+    inline def setWebkitLineBreakVarargs(value: LineBreakProperty*): Self = StObject.set(x, "WebkitLineBreak", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitLineClamp(value: WebkitLineClampProperty | js.Array[WebkitLineClampProperty]): Self = StObject.set(x, "WebkitLineClamp", value.asInstanceOf[js.Any])
+    inline def setWebkitLineClamp(value: WebkitLineClampProperty | js.Array[WebkitLineClampProperty]): Self = StObject.set(x, "WebkitLineClamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitLineClampUndefined: Self = StObject.set(x, "WebkitLineClamp", js.undefined)
+    inline def setWebkitLineClampUndefined: Self = StObject.set(x, "WebkitLineClamp", js.undefined)
     
-    @scala.inline
-    def setWebkitLineClampVarargs(value: WebkitLineClampProperty*): Self = StObject.set(x, "WebkitLineClamp", js.Array(value :_*))
+    inline def setWebkitLineClampVarargs(value: WebkitLineClampProperty*): Self = StObject.set(x, "WebkitLineClamp", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMarginEnd(value: MarginInlineEndProperty[TLength] | js.Array[MarginInlineEndProperty[TLength]]): Self = StObject.set(x, "WebkitMarginEnd", value.asInstanceOf[js.Any])
+    inline def setWebkitMarginEnd(value: MarginInlineEndProperty[TLength] | js.Array[MarginInlineEndProperty[TLength]]): Self = StObject.set(x, "WebkitMarginEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMarginEndUndefined: Self = StObject.set(x, "WebkitMarginEnd", js.undefined)
+    inline def setWebkitMarginEndUndefined: Self = StObject.set(x, "WebkitMarginEnd", js.undefined)
     
-    @scala.inline
-    def setWebkitMarginEndVarargs(value: MarginInlineEndProperty[TLength]*): Self = StObject.set(x, "WebkitMarginEnd", js.Array(value :_*))
+    inline def setWebkitMarginEndVarargs(value: MarginInlineEndProperty[TLength]*): Self = StObject.set(x, "WebkitMarginEnd", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMarginStart(value: MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]]): Self = StObject.set(x, "WebkitMarginStart", value.asInstanceOf[js.Any])
+    inline def setWebkitMarginStart(value: MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]]): Self = StObject.set(x, "WebkitMarginStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMarginStartUndefined: Self = StObject.set(x, "WebkitMarginStart", js.undefined)
+    inline def setWebkitMarginStartUndefined: Self = StObject.set(x, "WebkitMarginStart", js.undefined)
     
-    @scala.inline
-    def setWebkitMarginStartVarargs(value: MarginInlineStartProperty[TLength]*): Self = StObject.set(x, "WebkitMarginStart", js.Array(value :_*))
+    inline def setWebkitMarginStartVarargs(value: MarginInlineStartProperty[TLength]*): Self = StObject.set(x, "WebkitMarginStart", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskAttachment(value: WebkitMaskAttachmentProperty | js.Array[WebkitMaskAttachmentProperty]): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskAttachment(value: WebkitMaskAttachmentProperty | js.Array[WebkitMaskAttachmentProperty]): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
+    inline def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskAttachmentVarargs(value: WebkitMaskAttachmentProperty*): Self = StObject.set(x, "WebkitMaskAttachment", js.Array(value :_*))
+    inline def setWebkitMaskAttachmentVarargs(value: WebkitMaskAttachmentProperty*): Self = StObject.set(x, "WebkitMaskAttachment", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskClip(value: WebkitMaskClipProperty | js.Array[WebkitMaskClipProperty]): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskClip(value: WebkitMaskClipProperty | js.Array[WebkitMaskClipProperty]): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskClipUndefined: Self = StObject.set(x, "WebkitMaskClip", js.undefined)
+    inline def setWebkitMaskClipUndefined: Self = StObject.set(x, "WebkitMaskClip", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskClipVarargs(value: WebkitMaskClipProperty*): Self = StObject.set(x, "WebkitMaskClip", js.Array(value :_*))
+    inline def setWebkitMaskClipVarargs(value: WebkitMaskClipProperty*): Self = StObject.set(x, "WebkitMaskClip", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskComposite(value: WebkitMaskCompositeProperty | js.Array[WebkitMaskCompositeProperty]): Self = StObject.set(x, "WebkitMaskComposite", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskComposite(value: WebkitMaskCompositeProperty | js.Array[WebkitMaskCompositeProperty]): Self = StObject.set(x, "WebkitMaskComposite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskCompositeUndefined: Self = StObject.set(x, "WebkitMaskComposite", js.undefined)
+    inline def setWebkitMaskCompositeUndefined: Self = StObject.set(x, "WebkitMaskComposite", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskCompositeVarargs(value: WebkitMaskCompositeProperty*): Self = StObject.set(x, "WebkitMaskComposite", js.Array(value :_*))
+    inline def setWebkitMaskCompositeVarargs(value: WebkitMaskCompositeProperty*): Self = StObject.set(x, "WebkitMaskComposite", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskImage(value: WebkitMaskImageProperty | js.Array[WebkitMaskImageProperty]): Self = StObject.set(x, "WebkitMaskImage", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskImage(value: WebkitMaskImageProperty | js.Array[WebkitMaskImageProperty]): Self = StObject.set(x, "WebkitMaskImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskImageUndefined: Self = StObject.set(x, "WebkitMaskImage", js.undefined)
+    inline def setWebkitMaskImageUndefined: Self = StObject.set(x, "WebkitMaskImage", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskImageVarargs(value: WebkitMaskImageProperty*): Self = StObject.set(x, "WebkitMaskImage", js.Array(value :_*))
+    inline def setWebkitMaskImageVarargs(value: WebkitMaskImageProperty*): Self = StObject.set(x, "WebkitMaskImage", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskOrigin(value: WebkitMaskOriginProperty | js.Array[WebkitMaskOriginProperty]): Self = StObject.set(x, "WebkitMaskOrigin", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskOrigin(value: WebkitMaskOriginProperty | js.Array[WebkitMaskOriginProperty]): Self = StObject.set(x, "WebkitMaskOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskOriginUndefined: Self = StObject.set(x, "WebkitMaskOrigin", js.undefined)
+    inline def setWebkitMaskOriginUndefined: Self = StObject.set(x, "WebkitMaskOrigin", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskOriginVarargs(value: WebkitMaskOriginProperty*): Self = StObject.set(x, "WebkitMaskOrigin", js.Array(value :_*))
+    inline def setWebkitMaskOriginVarargs(value: WebkitMaskOriginProperty*): Self = StObject.set(x, "WebkitMaskOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskPosition(value: WebkitMaskPositionProperty[TLength] | js.Array[WebkitMaskPositionProperty[TLength]]): Self = StObject.set(x, "WebkitMaskPosition", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskPosition(value: WebkitMaskPositionProperty[TLength] | js.Array[WebkitMaskPositionProperty[TLength]]): Self = StObject.set(x, "WebkitMaskPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskPositionUndefined: Self = StObject.set(x, "WebkitMaskPosition", js.undefined)
+    inline def setWebkitMaskPositionUndefined: Self = StObject.set(x, "WebkitMaskPosition", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskPositionVarargs(value: WebkitMaskPositionProperty[TLength]*): Self = StObject.set(x, "WebkitMaskPosition", js.Array(value :_*))
+    inline def setWebkitMaskPositionVarargs(value: WebkitMaskPositionProperty[TLength]*): Self = StObject.set(x, "WebkitMaskPosition", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskPositionX(value: WebkitMaskPositionXProperty[TLength] | js.Array[WebkitMaskPositionXProperty[TLength]]): Self = StObject.set(x, "WebkitMaskPositionX", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskPositionX(value: WebkitMaskPositionXProperty[TLength] | js.Array[WebkitMaskPositionXProperty[TLength]]): Self = StObject.set(x, "WebkitMaskPositionX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskPositionXUndefined: Self = StObject.set(x, "WebkitMaskPositionX", js.undefined)
+    inline def setWebkitMaskPositionXUndefined: Self = StObject.set(x, "WebkitMaskPositionX", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskPositionXVarargs(value: WebkitMaskPositionXProperty[TLength]*): Self = StObject.set(x, "WebkitMaskPositionX", js.Array(value :_*))
+    inline def setWebkitMaskPositionXVarargs(value: WebkitMaskPositionXProperty[TLength]*): Self = StObject.set(x, "WebkitMaskPositionX", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskPositionY(value: WebkitMaskPositionYProperty[TLength] | js.Array[WebkitMaskPositionYProperty[TLength]]): Self = StObject.set(x, "WebkitMaskPositionY", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskPositionY(value: WebkitMaskPositionYProperty[TLength] | js.Array[WebkitMaskPositionYProperty[TLength]]): Self = StObject.set(x, "WebkitMaskPositionY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskPositionYUndefined: Self = StObject.set(x, "WebkitMaskPositionY", js.undefined)
+    inline def setWebkitMaskPositionYUndefined: Self = StObject.set(x, "WebkitMaskPositionY", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskPositionYVarargs(value: WebkitMaskPositionYProperty[TLength]*): Self = StObject.set(x, "WebkitMaskPositionY", js.Array(value :_*))
+    inline def setWebkitMaskPositionYVarargs(value: WebkitMaskPositionYProperty[TLength]*): Self = StObject.set(x, "WebkitMaskPositionY", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskRepeat(value: WebkitMaskRepeatProperty | js.Array[WebkitMaskRepeatProperty]): Self = StObject.set(x, "WebkitMaskRepeat", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskRepeat(value: WebkitMaskRepeatProperty | js.Array[WebkitMaskRepeatProperty]): Self = StObject.set(x, "WebkitMaskRepeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskRepeatUndefined: Self = StObject.set(x, "WebkitMaskRepeat", js.undefined)
+    inline def setWebkitMaskRepeatUndefined: Self = StObject.set(x, "WebkitMaskRepeat", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskRepeatVarargs(value: WebkitMaskRepeatProperty*): Self = StObject.set(x, "WebkitMaskRepeat", js.Array(value :_*))
+    inline def setWebkitMaskRepeatVarargs(value: WebkitMaskRepeatProperty*): Self = StObject.set(x, "WebkitMaskRepeat", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskRepeatX(value: WebkitMaskRepeatXProperty | js.Array[WebkitMaskRepeatXProperty]): Self = StObject.set(x, "WebkitMaskRepeatX", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskRepeatX(value: WebkitMaskRepeatXProperty | js.Array[WebkitMaskRepeatXProperty]): Self = StObject.set(x, "WebkitMaskRepeatX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskRepeatXUndefined: Self = StObject.set(x, "WebkitMaskRepeatX", js.undefined)
+    inline def setWebkitMaskRepeatXUndefined: Self = StObject.set(x, "WebkitMaskRepeatX", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskRepeatXVarargs(value: WebkitMaskRepeatXProperty*): Self = StObject.set(x, "WebkitMaskRepeatX", js.Array(value :_*))
+    inline def setWebkitMaskRepeatXVarargs(value: WebkitMaskRepeatXProperty*): Self = StObject.set(x, "WebkitMaskRepeatX", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskRepeatY(value: WebkitMaskRepeatYProperty | js.Array[WebkitMaskRepeatYProperty]): Self = StObject.set(x, "WebkitMaskRepeatY", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskRepeatY(value: WebkitMaskRepeatYProperty | js.Array[WebkitMaskRepeatYProperty]): Self = StObject.set(x, "WebkitMaskRepeatY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskRepeatYUndefined: Self = StObject.set(x, "WebkitMaskRepeatY", js.undefined)
+    inline def setWebkitMaskRepeatYUndefined: Self = StObject.set(x, "WebkitMaskRepeatY", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskRepeatYVarargs(value: WebkitMaskRepeatYProperty*): Self = StObject.set(x, "WebkitMaskRepeatY", js.Array(value :_*))
+    inline def setWebkitMaskRepeatYVarargs(value: WebkitMaskRepeatYProperty*): Self = StObject.set(x, "WebkitMaskRepeatY", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaskSize(value: WebkitMaskSizeProperty[TLength] | js.Array[WebkitMaskSizeProperty[TLength]]): Self = StObject.set(x, "WebkitMaskSize", value.asInstanceOf[js.Any])
+    inline def setWebkitMaskSize(value: WebkitMaskSizeProperty[TLength] | js.Array[WebkitMaskSizeProperty[TLength]]): Self = StObject.set(x, "WebkitMaskSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaskSizeUndefined: Self = StObject.set(x, "WebkitMaskSize", js.undefined)
+    inline def setWebkitMaskSizeUndefined: Self = StObject.set(x, "WebkitMaskSize", js.undefined)
     
-    @scala.inline
-    def setWebkitMaskSizeVarargs(value: WebkitMaskSizeProperty[TLength]*): Self = StObject.set(x, "WebkitMaskSize", js.Array(value :_*))
+    inline def setWebkitMaskSizeVarargs(value: WebkitMaskSizeProperty[TLength]*): Self = StObject.set(x, "WebkitMaskSize", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitMaxInlineSize(value: MaxInlineSizeProperty[TLength] | js.Array[MaxInlineSizeProperty[TLength]]): Self = StObject.set(x, "WebkitMaxInlineSize", value.asInstanceOf[js.Any])
+    inline def setWebkitMaxInlineSize(value: MaxInlineSizeProperty[TLength] | js.Array[MaxInlineSizeProperty[TLength]]): Self = StObject.set(x, "WebkitMaxInlineSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitMaxInlineSizeUndefined: Self = StObject.set(x, "WebkitMaxInlineSize", js.undefined)
+    inline def setWebkitMaxInlineSizeUndefined: Self = StObject.set(x, "WebkitMaxInlineSize", js.undefined)
     
-    @scala.inline
-    def setWebkitMaxInlineSizeVarargs(value: MaxInlineSizeProperty[TLength]*): Self = StObject.set(x, "WebkitMaxInlineSize", js.Array(value :_*))
+    inline def setWebkitMaxInlineSizeVarargs(value: MaxInlineSizeProperty[TLength]*): Self = StObject.set(x, "WebkitMaxInlineSize", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitOrder(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "WebkitOrder", value.asInstanceOf[js.Any])
+    inline def setWebkitOrder(value: GlobalsNumber | js.Array[GlobalsNumber]): Self = StObject.set(x, "WebkitOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitOrderUndefined: Self = StObject.set(x, "WebkitOrder", js.undefined)
+    inline def setWebkitOrderUndefined: Self = StObject.set(x, "WebkitOrder", js.undefined)
     
-    @scala.inline
-    def setWebkitOrderVarargs(value: GlobalsNumber*): Self = StObject.set(x, "WebkitOrder", js.Array(value :_*))
+    inline def setWebkitOrderVarargs(value: GlobalsNumber*): Self = StObject.set(x, "WebkitOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitOverflowScrolling(value: WebkitOverflowScrollingProperty | js.Array[WebkitOverflowScrollingProperty]): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
+    inline def setWebkitOverflowScrolling(value: WebkitOverflowScrollingProperty | js.Array[WebkitOverflowScrollingProperty]): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
+    inline def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
     
-    @scala.inline
-    def setWebkitOverflowScrollingVarargs(value: WebkitOverflowScrollingProperty*): Self = StObject.set(x, "WebkitOverflowScrolling", js.Array(value :_*))
+    inline def setWebkitOverflowScrollingVarargs(value: WebkitOverflowScrollingProperty*): Self = StObject.set(x, "WebkitOverflowScrolling", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitPaddingEnd(value: PaddingInlineEndProperty[TLength] | js.Array[PaddingInlineEndProperty[TLength]]): Self = StObject.set(x, "WebkitPaddingEnd", value.asInstanceOf[js.Any])
+    inline def setWebkitPaddingEnd(value: PaddingInlineEndProperty[TLength] | js.Array[PaddingInlineEndProperty[TLength]]): Self = StObject.set(x, "WebkitPaddingEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitPaddingEndUndefined: Self = StObject.set(x, "WebkitPaddingEnd", js.undefined)
+    inline def setWebkitPaddingEndUndefined: Self = StObject.set(x, "WebkitPaddingEnd", js.undefined)
     
-    @scala.inline
-    def setWebkitPaddingEndVarargs(value: PaddingInlineEndProperty[TLength]*): Self = StObject.set(x, "WebkitPaddingEnd", js.Array(value :_*))
+    inline def setWebkitPaddingEndVarargs(value: PaddingInlineEndProperty[TLength]*): Self = StObject.set(x, "WebkitPaddingEnd", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitPaddingStart(value: PaddingInlineStartProperty[TLength] | js.Array[PaddingInlineStartProperty[TLength]]): Self = StObject.set(x, "WebkitPaddingStart", value.asInstanceOf[js.Any])
+    inline def setWebkitPaddingStart(value: PaddingInlineStartProperty[TLength] | js.Array[PaddingInlineStartProperty[TLength]]): Self = StObject.set(x, "WebkitPaddingStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitPaddingStartUndefined: Self = StObject.set(x, "WebkitPaddingStart", js.undefined)
+    inline def setWebkitPaddingStartUndefined: Self = StObject.set(x, "WebkitPaddingStart", js.undefined)
     
-    @scala.inline
-    def setWebkitPaddingStartVarargs(value: PaddingInlineStartProperty[TLength]*): Self = StObject.set(x, "WebkitPaddingStart", js.Array(value :_*))
+    inline def setWebkitPaddingStartVarargs(value: PaddingInlineStartProperty[TLength]*): Self = StObject.set(x, "WebkitPaddingStart", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitPerspective(value: PerspectiveProperty[TLength] | js.Array[PerspectiveProperty[TLength]]): Self = StObject.set(x, "WebkitPerspective", value.asInstanceOf[js.Any])
+    inline def setWebkitPerspective(value: PerspectiveProperty[TLength] | js.Array[PerspectiveProperty[TLength]]): Self = StObject.set(x, "WebkitPerspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitPerspectiveOrigin(value: PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]]): Self = StObject.set(x, "WebkitPerspectiveOrigin", value.asInstanceOf[js.Any])
+    inline def setWebkitPerspectiveOrigin(value: PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]]): Self = StObject.set(x, "WebkitPerspectiveOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitPerspectiveOriginUndefined: Self = StObject.set(x, "WebkitPerspectiveOrigin", js.undefined)
+    inline def setWebkitPerspectiveOriginUndefined: Self = StObject.set(x, "WebkitPerspectiveOrigin", js.undefined)
     
-    @scala.inline
-    def setWebkitPerspectiveOriginVarargs(value: PerspectiveOriginProperty[TLength]*): Self = StObject.set(x, "WebkitPerspectiveOrigin", js.Array(value :_*))
+    inline def setWebkitPerspectiveOriginVarargs(value: PerspectiveOriginProperty[TLength]*): Self = StObject.set(x, "WebkitPerspectiveOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitPerspectiveUndefined: Self = StObject.set(x, "WebkitPerspective", js.undefined)
+    inline def setWebkitPerspectiveUndefined: Self = StObject.set(x, "WebkitPerspective", js.undefined)
     
-    @scala.inline
-    def setWebkitPerspectiveVarargs(value: PerspectiveProperty[TLength]*): Self = StObject.set(x, "WebkitPerspective", js.Array(value :_*))
+    inline def setWebkitPerspectiveVarargs(value: PerspectiveProperty[TLength]*): Self = StObject.set(x, "WebkitPerspective", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitPrintColorAdjust(value: ColorAdjustProperty | js.Array[ColorAdjustProperty]): Self = StObject.set(x, "WebkitPrintColorAdjust", value.asInstanceOf[js.Any])
+    inline def setWebkitPrintColorAdjust(value: ColorAdjustProperty | js.Array[ColorAdjustProperty]): Self = StObject.set(x, "WebkitPrintColorAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitPrintColorAdjustUndefined: Self = StObject.set(x, "WebkitPrintColorAdjust", js.undefined)
+    inline def setWebkitPrintColorAdjustUndefined: Self = StObject.set(x, "WebkitPrintColorAdjust", js.undefined)
     
-    @scala.inline
-    def setWebkitPrintColorAdjustVarargs(value: ColorAdjustProperty*): Self = StObject.set(x, "WebkitPrintColorAdjust", js.Array(value :_*))
+    inline def setWebkitPrintColorAdjustVarargs(value: ColorAdjustProperty*): Self = StObject.set(x, "WebkitPrintColorAdjust", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitScrollSnapType(value: ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]): Self = StObject.set(x, "WebkitScrollSnapType", value.asInstanceOf[js.Any])
+    inline def setWebkitScrollSnapType(value: ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]): Self = StObject.set(x, "WebkitScrollSnapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitScrollSnapTypeUndefined: Self = StObject.set(x, "WebkitScrollSnapType", js.undefined)
+    inline def setWebkitScrollSnapTypeUndefined: Self = StObject.set(x, "WebkitScrollSnapType", js.undefined)
     
-    @scala.inline
-    def setWebkitScrollSnapTypeVarargs(value: ScrollSnapTypeProperty*): Self = StObject.set(x, "WebkitScrollSnapType", js.Array(value :_*))
+    inline def setWebkitScrollSnapTypeVarargs(value: ScrollSnapTypeProperty*): Self = StObject.set(x, "WebkitScrollSnapType", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitShapeMargin(value: ShapeMarginProperty[TLength] | js.Array[ShapeMarginProperty[TLength]]): Self = StObject.set(x, "WebkitShapeMargin", value.asInstanceOf[js.Any])
+    inline def setWebkitShapeMargin(value: ShapeMarginProperty[TLength] | js.Array[ShapeMarginProperty[TLength]]): Self = StObject.set(x, "WebkitShapeMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitShapeMarginUndefined: Self = StObject.set(x, "WebkitShapeMargin", js.undefined)
+    inline def setWebkitShapeMarginUndefined: Self = StObject.set(x, "WebkitShapeMargin", js.undefined)
     
-    @scala.inline
-    def setWebkitShapeMarginVarargs(value: ShapeMarginProperty[TLength]*): Self = StObject.set(x, "WebkitShapeMargin", js.Array(value :_*))
+    inline def setWebkitShapeMarginVarargs(value: ShapeMarginProperty[TLength]*): Self = StObject.set(x, "WebkitShapeMargin", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTapHighlightColor(value: WebkitTapHighlightColorProperty | js.Array[WebkitTapHighlightColorProperty]): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
+    inline def setWebkitTapHighlightColor(value: WebkitTapHighlightColorProperty | js.Array[WebkitTapHighlightColorProperty]): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
+    inline def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
     
-    @scala.inline
-    def setWebkitTapHighlightColorVarargs(value: WebkitTapHighlightColorProperty*): Self = StObject.set(x, "WebkitTapHighlightColor", js.Array(value :_*))
+    inline def setWebkitTapHighlightColorVarargs(value: WebkitTapHighlightColorProperty*): Self = StObject.set(x, "WebkitTapHighlightColor", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextCombine(value: TextCombineUprightProperty | js.Array[TextCombineUprightProperty]): Self = StObject.set(x, "WebkitTextCombine", value.asInstanceOf[js.Any])
+    inline def setWebkitTextCombine(value: TextCombineUprightProperty | js.Array[TextCombineUprightProperty]): Self = StObject.set(x, "WebkitTextCombine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextCombineUndefined: Self = StObject.set(x, "WebkitTextCombine", js.undefined)
+    inline def setWebkitTextCombineUndefined: Self = StObject.set(x, "WebkitTextCombine", js.undefined)
     
-    @scala.inline
-    def setWebkitTextCombineVarargs(value: TextCombineUprightProperty*): Self = StObject.set(x, "WebkitTextCombine", js.Array(value :_*))
+    inline def setWebkitTextCombineVarargs(value: TextCombineUprightProperty*): Self = StObject.set(x, "WebkitTextCombine", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextDecorationColor(value: TextDecorationColorProperty | js.Array[TextDecorationColorProperty]): Self = StObject.set(x, "WebkitTextDecorationColor", value.asInstanceOf[js.Any])
+    inline def setWebkitTextDecorationColor(value: TextDecorationColorProperty | js.Array[TextDecorationColorProperty]): Self = StObject.set(x, "WebkitTextDecorationColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextDecorationColorUndefined: Self = StObject.set(x, "WebkitTextDecorationColor", js.undefined)
+    inline def setWebkitTextDecorationColorUndefined: Self = StObject.set(x, "WebkitTextDecorationColor", js.undefined)
     
-    @scala.inline
-    def setWebkitTextDecorationColorVarargs(value: TextDecorationColorProperty*): Self = StObject.set(x, "WebkitTextDecorationColor", js.Array(value :_*))
+    inline def setWebkitTextDecorationColorVarargs(value: TextDecorationColorProperty*): Self = StObject.set(x, "WebkitTextDecorationColor", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextDecorationLine(value: TextDecorationLineProperty | js.Array[TextDecorationLineProperty]): Self = StObject.set(x, "WebkitTextDecorationLine", value.asInstanceOf[js.Any])
+    inline def setWebkitTextDecorationLine(value: TextDecorationLineProperty | js.Array[TextDecorationLineProperty]): Self = StObject.set(x, "WebkitTextDecorationLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextDecorationLineUndefined: Self = StObject.set(x, "WebkitTextDecorationLine", js.undefined)
+    inline def setWebkitTextDecorationLineUndefined: Self = StObject.set(x, "WebkitTextDecorationLine", js.undefined)
     
-    @scala.inline
-    def setWebkitTextDecorationLineVarargs(value: TextDecorationLineProperty*): Self = StObject.set(x, "WebkitTextDecorationLine", js.Array(value :_*))
+    inline def setWebkitTextDecorationLineVarargs(value: TextDecorationLineProperty*): Self = StObject.set(x, "WebkitTextDecorationLine", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextDecorationSkip(value: TextDecorationSkipProperty | js.Array[TextDecorationSkipProperty]): Self = StObject.set(x, "WebkitTextDecorationSkip", value.asInstanceOf[js.Any])
+    inline def setWebkitTextDecorationSkip(value: TextDecorationSkipProperty | js.Array[TextDecorationSkipProperty]): Self = StObject.set(x, "WebkitTextDecorationSkip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextDecorationSkipUndefined: Self = StObject.set(x, "WebkitTextDecorationSkip", js.undefined)
+    inline def setWebkitTextDecorationSkipUndefined: Self = StObject.set(x, "WebkitTextDecorationSkip", js.undefined)
     
-    @scala.inline
-    def setWebkitTextDecorationSkipVarargs(value: TextDecorationSkipProperty*): Self = StObject.set(x, "WebkitTextDecorationSkip", js.Array(value :_*))
+    inline def setWebkitTextDecorationSkipVarargs(value: TextDecorationSkipProperty*): Self = StObject.set(x, "WebkitTextDecorationSkip", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextDecorationStyle(value: TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]): Self = StObject.set(x, "WebkitTextDecorationStyle", value.asInstanceOf[js.Any])
+    inline def setWebkitTextDecorationStyle(value: TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]): Self = StObject.set(x, "WebkitTextDecorationStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextDecorationStyleUndefined: Self = StObject.set(x, "WebkitTextDecorationStyle", js.undefined)
+    inline def setWebkitTextDecorationStyleUndefined: Self = StObject.set(x, "WebkitTextDecorationStyle", js.undefined)
     
-    @scala.inline
-    def setWebkitTextDecorationStyleVarargs(value: TextDecorationStyleProperty*): Self = StObject.set(x, "WebkitTextDecorationStyle", js.Array(value :_*))
+    inline def setWebkitTextDecorationStyleVarargs(value: TextDecorationStyleProperty*): Self = StObject.set(x, "WebkitTextDecorationStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextEmphasisColor(value: TextEmphasisColorProperty | js.Array[TextEmphasisColorProperty]): Self = StObject.set(x, "WebkitTextEmphasisColor", value.asInstanceOf[js.Any])
+    inline def setWebkitTextEmphasisColor(value: TextEmphasisColorProperty | js.Array[TextEmphasisColorProperty]): Self = StObject.set(x, "WebkitTextEmphasisColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextEmphasisColorUndefined: Self = StObject.set(x, "WebkitTextEmphasisColor", js.undefined)
+    inline def setWebkitTextEmphasisColorUndefined: Self = StObject.set(x, "WebkitTextEmphasisColor", js.undefined)
     
-    @scala.inline
-    def setWebkitTextEmphasisColorVarargs(value: TextEmphasisColorProperty*): Self = StObject.set(x, "WebkitTextEmphasisColor", js.Array(value :_*))
+    inline def setWebkitTextEmphasisColorVarargs(value: TextEmphasisColorProperty*): Self = StObject.set(x, "WebkitTextEmphasisColor", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextEmphasisPosition(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitTextEmphasisPosition", value.asInstanceOf[js.Any])
+    inline def setWebkitTextEmphasisPosition(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitTextEmphasisPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextEmphasisPositionUndefined: Self = StObject.set(x, "WebkitTextEmphasisPosition", js.undefined)
+    inline def setWebkitTextEmphasisPositionUndefined: Self = StObject.set(x, "WebkitTextEmphasisPosition", js.undefined)
     
-    @scala.inline
-    def setWebkitTextEmphasisPositionVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitTextEmphasisPosition", js.Array(value :_*))
+    inline def setWebkitTextEmphasisPositionVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitTextEmphasisPosition", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextEmphasisStyle(value: TextEmphasisStyleProperty | js.Array[TextEmphasisStyleProperty]): Self = StObject.set(x, "WebkitTextEmphasisStyle", value.asInstanceOf[js.Any])
+    inline def setWebkitTextEmphasisStyle(value: TextEmphasisStyleProperty | js.Array[TextEmphasisStyleProperty]): Self = StObject.set(x, "WebkitTextEmphasisStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextEmphasisStyleUndefined: Self = StObject.set(x, "WebkitTextEmphasisStyle", js.undefined)
+    inline def setWebkitTextEmphasisStyleUndefined: Self = StObject.set(x, "WebkitTextEmphasisStyle", js.undefined)
     
-    @scala.inline
-    def setWebkitTextEmphasisStyleVarargs(value: TextEmphasisStyleProperty*): Self = StObject.set(x, "WebkitTextEmphasisStyle", js.Array(value :_*))
+    inline def setWebkitTextEmphasisStyleVarargs(value: TextEmphasisStyleProperty*): Self = StObject.set(x, "WebkitTextEmphasisStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextFillColor(value: WebkitTextFillColorProperty | js.Array[WebkitTextFillColorProperty]): Self = StObject.set(x, "WebkitTextFillColor", value.asInstanceOf[js.Any])
+    inline def setWebkitTextFillColor(value: WebkitTextFillColorProperty | js.Array[WebkitTextFillColorProperty]): Self = StObject.set(x, "WebkitTextFillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextFillColorUndefined: Self = StObject.set(x, "WebkitTextFillColor", js.undefined)
+    inline def setWebkitTextFillColorUndefined: Self = StObject.set(x, "WebkitTextFillColor", js.undefined)
     
-    @scala.inline
-    def setWebkitTextFillColorVarargs(value: WebkitTextFillColorProperty*): Self = StObject.set(x, "WebkitTextFillColor", js.Array(value :_*))
+    inline def setWebkitTextFillColorVarargs(value: WebkitTextFillColorProperty*): Self = StObject.set(x, "WebkitTextFillColor", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextOrientation(value: TextOrientationProperty | js.Array[TextOrientationProperty]): Self = StObject.set(x, "WebkitTextOrientation", value.asInstanceOf[js.Any])
+    inline def setWebkitTextOrientation(value: TextOrientationProperty | js.Array[TextOrientationProperty]): Self = StObject.set(x, "WebkitTextOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextOrientationUndefined: Self = StObject.set(x, "WebkitTextOrientation", js.undefined)
+    inline def setWebkitTextOrientationUndefined: Self = StObject.set(x, "WebkitTextOrientation", js.undefined)
     
-    @scala.inline
-    def setWebkitTextOrientationVarargs(value: TextOrientationProperty*): Self = StObject.set(x, "WebkitTextOrientation", js.Array(value :_*))
+    inline def setWebkitTextOrientationVarargs(value: TextOrientationProperty*): Self = StObject.set(x, "WebkitTextOrientation", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextSizeAdjust(value: TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
+    inline def setWebkitTextSizeAdjust(value: TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
+    inline def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
     
-    @scala.inline
-    def setWebkitTextSizeAdjustVarargs(value: TextSizeAdjustProperty*): Self = StObject.set(x, "WebkitTextSizeAdjust", js.Array(value :_*))
+    inline def setWebkitTextSizeAdjustVarargs(value: TextSizeAdjustProperty*): Self = StObject.set(x, "WebkitTextSizeAdjust", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextStrokeColor(value: WebkitTextStrokeColorProperty | js.Array[WebkitTextStrokeColorProperty]): Self = StObject.set(x, "WebkitTextStrokeColor", value.asInstanceOf[js.Any])
+    inline def setWebkitTextStrokeColor(value: WebkitTextStrokeColorProperty | js.Array[WebkitTextStrokeColorProperty]): Self = StObject.set(x, "WebkitTextStrokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextStrokeColorUndefined: Self = StObject.set(x, "WebkitTextStrokeColor", js.undefined)
+    inline def setWebkitTextStrokeColorUndefined: Self = StObject.set(x, "WebkitTextStrokeColor", js.undefined)
     
-    @scala.inline
-    def setWebkitTextStrokeColorVarargs(value: WebkitTextStrokeColorProperty*): Self = StObject.set(x, "WebkitTextStrokeColor", js.Array(value :_*))
+    inline def setWebkitTextStrokeColorVarargs(value: WebkitTextStrokeColorProperty*): Self = StObject.set(x, "WebkitTextStrokeColor", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextStrokeWidth(value: WebkitTextStrokeWidthProperty[TLength] | js.Array[WebkitTextStrokeWidthProperty[TLength]]): Self = StObject.set(x, "WebkitTextStrokeWidth", value.asInstanceOf[js.Any])
+    inline def setWebkitTextStrokeWidth(value: WebkitTextStrokeWidthProperty[TLength] | js.Array[WebkitTextStrokeWidthProperty[TLength]]): Self = StObject.set(x, "WebkitTextStrokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextStrokeWidthUndefined: Self = StObject.set(x, "WebkitTextStrokeWidth", js.undefined)
+    inline def setWebkitTextStrokeWidthUndefined: Self = StObject.set(x, "WebkitTextStrokeWidth", js.undefined)
     
-    @scala.inline
-    def setWebkitTextStrokeWidthVarargs(value: WebkitTextStrokeWidthProperty[TLength]*): Self = StObject.set(x, "WebkitTextStrokeWidth", js.Array(value :_*))
+    inline def setWebkitTextStrokeWidthVarargs(value: WebkitTextStrokeWidthProperty[TLength]*): Self = StObject.set(x, "WebkitTextStrokeWidth", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTextUnderlinePosition(value: TextUnderlinePositionProperty | js.Array[TextUnderlinePositionProperty]): Self = StObject.set(x, "WebkitTextUnderlinePosition", value.asInstanceOf[js.Any])
+    inline def setWebkitTextUnderlinePosition(value: TextUnderlinePositionProperty | js.Array[TextUnderlinePositionProperty]): Self = StObject.set(x, "WebkitTextUnderlinePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTextUnderlinePositionUndefined: Self = StObject.set(x, "WebkitTextUnderlinePosition", js.undefined)
+    inline def setWebkitTextUnderlinePositionUndefined: Self = StObject.set(x, "WebkitTextUnderlinePosition", js.undefined)
     
-    @scala.inline
-    def setWebkitTextUnderlinePositionVarargs(value: TextUnderlinePositionProperty*): Self = StObject.set(x, "WebkitTextUnderlinePosition", js.Array(value :_*))
+    inline def setWebkitTextUnderlinePositionVarargs(value: TextUnderlinePositionProperty*): Self = StObject.set(x, "WebkitTextUnderlinePosition", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTouchCallout(value: WebkitTouchCalloutProperty | js.Array[WebkitTouchCalloutProperty]): Self = StObject.set(x, "WebkitTouchCallout", value.asInstanceOf[js.Any])
+    inline def setWebkitTouchCallout(value: WebkitTouchCalloutProperty | js.Array[WebkitTouchCalloutProperty]): Self = StObject.set(x, "WebkitTouchCallout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTouchCalloutUndefined: Self = StObject.set(x, "WebkitTouchCallout", js.undefined)
+    inline def setWebkitTouchCalloutUndefined: Self = StObject.set(x, "WebkitTouchCallout", js.undefined)
     
-    @scala.inline
-    def setWebkitTouchCalloutVarargs(value: WebkitTouchCalloutProperty*): Self = StObject.set(x, "WebkitTouchCallout", js.Array(value :_*))
+    inline def setWebkitTouchCalloutVarargs(value: WebkitTouchCalloutProperty*): Self = StObject.set(x, "WebkitTouchCallout", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTransform(value: TransformProperty | js.Array[TransformProperty]): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
+    inline def setWebkitTransform(value: TransformProperty | js.Array[TransformProperty]): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "WebkitTransformOrigin", value.asInstanceOf[js.Any])
+    inline def setWebkitTransformOrigin(value: TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]): Self = StObject.set(x, "WebkitTransformOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTransformOriginUndefined: Self = StObject.set(x, "WebkitTransformOrigin", js.undefined)
+    inline def setWebkitTransformOriginUndefined: Self = StObject.set(x, "WebkitTransformOrigin", js.undefined)
     
-    @scala.inline
-    def setWebkitTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "WebkitTransformOrigin", js.Array(value :_*))
+    inline def setWebkitTransformOriginVarargs(value: TransformOriginProperty[TLength]*): Self = StObject.set(x, "WebkitTransformOrigin", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTransformStyle(value: TransformStyleProperty | js.Array[TransformStyleProperty]): Self = StObject.set(x, "WebkitTransformStyle", value.asInstanceOf[js.Any])
+    inline def setWebkitTransformStyle(value: TransformStyleProperty | js.Array[TransformStyleProperty]): Self = StObject.set(x, "WebkitTransformStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTransformStyleUndefined: Self = StObject.set(x, "WebkitTransformStyle", js.undefined)
+    inline def setWebkitTransformStyleUndefined: Self = StObject.set(x, "WebkitTransformStyle", js.undefined)
     
-    @scala.inline
-    def setWebkitTransformStyleVarargs(value: TransformStyleProperty*): Self = StObject.set(x, "WebkitTransformStyle", js.Array(value :_*))
+    inline def setWebkitTransformStyleVarargs(value: TransformStyleProperty*): Self = StObject.set(x, "WebkitTransformStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTransformUndefined: Self = StObject.set(x, "WebkitTransform", js.undefined)
+    inline def setWebkitTransformUndefined: Self = StObject.set(x, "WebkitTransform", js.undefined)
     
-    @scala.inline
-    def setWebkitTransformVarargs(value: TransformProperty*): Self = StObject.set(x, "WebkitTransform", js.Array(value :_*))
+    inline def setWebkitTransformVarargs(value: TransformProperty*): Self = StObject.set(x, "WebkitTransform", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTransitionDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitTransitionDelay", value.asInstanceOf[js.Any])
+    inline def setWebkitTransitionDelay(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitTransitionDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTransitionDelayUndefined: Self = StObject.set(x, "WebkitTransitionDelay", js.undefined)
+    inline def setWebkitTransitionDelayUndefined: Self = StObject.set(x, "WebkitTransitionDelay", js.undefined)
     
-    @scala.inline
-    def setWebkitTransitionDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitTransitionDelay", js.Array(value :_*))
+    inline def setWebkitTransitionDelayVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitTransitionDelay", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTransitionDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitTransitionDuration", value.asInstanceOf[js.Any])
+    inline def setWebkitTransitionDuration(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "WebkitTransitionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTransitionDurationUndefined: Self = StObject.set(x, "WebkitTransitionDuration", js.undefined)
+    inline def setWebkitTransitionDurationUndefined: Self = StObject.set(x, "WebkitTransitionDuration", js.undefined)
     
-    @scala.inline
-    def setWebkitTransitionDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitTransitionDuration", js.Array(value :_*))
+    inline def setWebkitTransitionDurationVarargs(value: GlobalsString*): Self = StObject.set(x, "WebkitTransitionDuration", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTransitionProperty(value: TransitionPropertyProperty | js.Array[TransitionPropertyProperty]): Self = StObject.set(x, "WebkitTransitionProperty", value.asInstanceOf[js.Any])
+    inline def setWebkitTransitionProperty(value: TransitionPropertyProperty | js.Array[TransitionPropertyProperty]): Self = StObject.set(x, "WebkitTransitionProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTransitionPropertyUndefined: Self = StObject.set(x, "WebkitTransitionProperty", js.undefined)
+    inline def setWebkitTransitionPropertyUndefined: Self = StObject.set(x, "WebkitTransitionProperty", js.undefined)
     
-    @scala.inline
-    def setWebkitTransitionPropertyVarargs(value: TransitionPropertyProperty*): Self = StObject.set(x, "WebkitTransitionProperty", js.Array(value :_*))
+    inline def setWebkitTransitionPropertyVarargs(value: TransitionPropertyProperty*): Self = StObject.set(x, "WebkitTransitionProperty", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitTransitionTimingFunction(value: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]): Self = StObject.set(x, "WebkitTransitionTimingFunction", value.asInstanceOf[js.Any])
+    inline def setWebkitTransitionTimingFunction(value: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]): Self = StObject.set(x, "WebkitTransitionTimingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitTransitionTimingFunctionUndefined: Self = StObject.set(x, "WebkitTransitionTimingFunction", js.undefined)
+    inline def setWebkitTransitionTimingFunctionUndefined: Self = StObject.set(x, "WebkitTransitionTimingFunction", js.undefined)
     
-    @scala.inline
-    def setWebkitTransitionTimingFunctionVarargs(value: TransitionTimingFunctionProperty*): Self = StObject.set(x, "WebkitTransitionTimingFunction", js.Array(value :_*))
+    inline def setWebkitTransitionTimingFunctionVarargs(value: TransitionTimingFunctionProperty*): Self = StObject.set(x, "WebkitTransitionTimingFunction", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitUserModify(value: WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty]): Self = StObject.set(x, "WebkitUserModify", value.asInstanceOf[js.Any])
+    inline def setWebkitUserModify(value: WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty]): Self = StObject.set(x, "WebkitUserModify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitUserModifyUndefined: Self = StObject.set(x, "WebkitUserModify", js.undefined)
+    inline def setWebkitUserModifyUndefined: Self = StObject.set(x, "WebkitUserModify", js.undefined)
     
-    @scala.inline
-    def setWebkitUserModifyVarargs(value: WebkitUserModifyProperty*): Self = StObject.set(x, "WebkitUserModify", js.Array(value :_*))
+    inline def setWebkitUserModifyVarargs(value: WebkitUserModifyProperty*): Self = StObject.set(x, "WebkitUserModify", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitUserSelect(value: UserSelectProperty | js.Array[UserSelectProperty]): Self = StObject.set(x, "WebkitUserSelect", value.asInstanceOf[js.Any])
+    inline def setWebkitUserSelect(value: UserSelectProperty | js.Array[UserSelectProperty]): Self = StObject.set(x, "WebkitUserSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitUserSelectUndefined: Self = StObject.set(x, "WebkitUserSelect", js.undefined)
+    inline def setWebkitUserSelectUndefined: Self = StObject.set(x, "WebkitUserSelect", js.undefined)
     
-    @scala.inline
-    def setWebkitUserSelectVarargs(value: UserSelectProperty*): Self = StObject.set(x, "WebkitUserSelect", js.Array(value :_*))
+    inline def setWebkitUserSelectVarargs(value: UserSelectProperty*): Self = StObject.set(x, "WebkitUserSelect", js.Array(value :_*))
     
-    @scala.inline
-    def setWebkitWritingMode(value: WritingModeProperty | js.Array[WritingModeProperty]): Self = StObject.set(x, "WebkitWritingMode", value.asInstanceOf[js.Any])
+    inline def setWebkitWritingMode(value: WritingModeProperty | js.Array[WritingModeProperty]): Self = StObject.set(x, "WebkitWritingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitWritingModeUndefined: Self = StObject.set(x, "WebkitWritingMode", js.undefined)
+    inline def setWebkitWritingModeUndefined: Self = StObject.set(x, "WebkitWritingMode", js.undefined)
     
-    @scala.inline
-    def setWebkitWritingModeVarargs(value: WritingModeProperty*): Self = StObject.set(x, "WebkitWritingMode", js.Array(value :_*))
+    inline def setWebkitWritingModeVarargs(value: WritingModeProperty*): Self = StObject.set(x, "WebkitWritingMode", js.Array(value :_*))
   }
 }

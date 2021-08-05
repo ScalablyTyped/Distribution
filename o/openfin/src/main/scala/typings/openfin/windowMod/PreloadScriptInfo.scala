@@ -13,16 +13,13 @@ trait PreloadScriptInfo extends StObject {
 }
 object PreloadScriptInfo {
   
-  @scala.inline
-  def apply(state: `load-failed` | failed | succeeded): PreloadScriptInfo = {
+  inline def apply(state: `load-failed` | failed | succeeded): PreloadScriptInfo = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreloadScriptInfo]
   }
   
-  @scala.inline
-  implicit class PreloadScriptInfoMutableBuilder[Self <: PreloadScriptInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PreloadScriptInfo](x: Self) {
     
-    @scala.inline
-    def setState(value: `load-failed` | failed | succeeded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: `load-failed` | failed | succeeded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

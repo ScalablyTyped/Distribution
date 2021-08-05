@@ -28,9 +28,7 @@ object containerSnapshotMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def of(bindings: Lookup[Binding[js.Any]]): ContainerSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(bindings.asInstanceOf[js.Any]).asInstanceOf[ContainerSnapshot]
-    @scala.inline
-    def of(bindings: Lookup[Binding[js.Any]], middleware: Next): ContainerSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(bindings.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[ContainerSnapshot]
+    inline def of(bindings: Lookup[Binding[js.Any]]): ContainerSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(bindings.asInstanceOf[js.Any]).asInstanceOf[ContainerSnapshot]
+    inline def of(bindings: Lookup[Binding[js.Any]], middleware: Next): ContainerSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(bindings.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[ContainerSnapshot]
   }
 }

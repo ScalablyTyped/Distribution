@@ -14,22 +14,17 @@ trait CameraPictureSourceTypeObject extends StObject {
 }
 object CameraPictureSourceTypeObject {
   
-  @scala.inline
-  def apply(CAMERA: Double, PHOTOLIBRARY: Double, SAVEDPHOTOALBUM: Double): CameraPictureSourceTypeObject = {
+  inline def apply(CAMERA: Double, PHOTOLIBRARY: Double, SAVEDPHOTOALBUM: Double): CameraPictureSourceTypeObject = {
     val __obj = js.Dynamic.literal(CAMERA = CAMERA.asInstanceOf[js.Any], PHOTOLIBRARY = PHOTOLIBRARY.asInstanceOf[js.Any], SAVEDPHOTOALBUM = SAVEDPHOTOALBUM.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraPictureSourceTypeObject]
   }
   
-  @scala.inline
-  implicit class CameraPictureSourceTypeObjectMutableBuilder[Self <: CameraPictureSourceTypeObject] (val x: Self) extends AnyVal {
+  extension [Self <: CameraPictureSourceTypeObject](x: Self) {
     
-    @scala.inline
-    def setCAMERA(value: Double): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
+    inline def setCAMERA(value: Double): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPHOTOLIBRARY(value: Double): Self = StObject.set(x, "PHOTOLIBRARY", value.asInstanceOf[js.Any])
+    inline def setPHOTOLIBRARY(value: Double): Self = StObject.set(x, "PHOTOLIBRARY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAVEDPHOTOALBUM(value: Double): Self = StObject.set(x, "SAVEDPHOTOALBUM", value.asInstanceOf[js.Any])
+    inline def setSAVEDPHOTOALBUM(value: Double): Self = StObject.set(x, "SAVEDPHOTOALBUM", value.asInstanceOf[js.Any])
   }
 }

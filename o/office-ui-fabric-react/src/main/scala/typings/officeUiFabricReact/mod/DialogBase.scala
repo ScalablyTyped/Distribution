@@ -21,6 +21,5 @@ object DialogBase {
   @JSImport("office-ui-fabric-react", "DialogBase.defaultProps")
   @js.native
   def defaultProps: IDialogProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

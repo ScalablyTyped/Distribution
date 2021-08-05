@@ -51,50 +51,36 @@ object shimmerCircleTypesMod {
   }
   object IShimmerCircleProps {
     
-    @scala.inline
-    def apply(): IShimmerCircleProps = {
+    inline def apply(): IShimmerCircleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerCircleProps]
     }
     
-    @scala.inline
-    implicit class IShimmerCirclePropsMutableBuilder[Self <: IShimmerCircleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerCircleProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IShimmerCircle]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IShimmerCircle]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IShimmerCircle | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IShimmerCircle | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IShimmerCircleStyleProps, IShimmerCircleStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IShimmerCircleStyleProps, IShimmerCircleStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IShimmerCircleStyleProps => DeepPartial[IShimmerCircleStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IShimmerCircleStyleProps => DeepPartial[IShimmerCircleStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -118,29 +104,22 @@ object shimmerCircleTypesMod {
   }
   object IShimmerCircleStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IShimmerCircleStyleProps = {
+    inline def apply(theme: ITheme): IShimmerCircleStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShimmerCircleStyleProps]
     }
     
-    @scala.inline
-    implicit class IShimmerCircleStylePropsMutableBuilder[Self <: IShimmerCircleStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerCircleStyleProps](x: Self) {
       
-      @scala.inline
-      def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,32 +137,24 @@ object shimmerCircleTypesMod {
   }
   object IShimmerCircleStyles {
     
-    @scala.inline
-    def apply(): IShimmerCircleStyles = {
+    inline def apply(): IShimmerCircleStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmerCircleStyles]
     }
     
-    @scala.inline
-    implicit class IShimmerCircleStylesMutableBuilder[Self <: IShimmerCircleStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmerCircleStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSvg(value: IStyle): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: IStyle): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgNull: Self = StObject.set(x, "svg", null)
+      inline def setSvgNull: Self = StObject.set(x, "svg", null)
       
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+      inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     }
   }
 }

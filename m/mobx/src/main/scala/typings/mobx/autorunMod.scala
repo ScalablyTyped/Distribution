@@ -13,18 +13,14 @@ object autorunMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autorun(view: js.Function1[/* r */ IReactionPublic, js.Any]): IReactionDisposer = ^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any]).asInstanceOf[IReactionDisposer]
-  @scala.inline
-  def autorun(view: js.Function1[/* r */ IReactionPublic, js.Any], opts: IAutorunOptions): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
+  inline def autorun(view: js.Function1[/* r */ IReactionPublic, js.Any]): IReactionDisposer = ^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any]).asInstanceOf[IReactionDisposer]
+  inline def autorun(view: js.Function1[/* r */ IReactionPublic, js.Any], opts: IAutorunOptions): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
   
-  @scala.inline
-  def reaction[T](
+  inline def reaction[T](
     expression: js.Function1[/* r */ IReactionPublic, T],
     effect: js.Function2[/* arg */ T, /* r */ IReactionPublic, Unit]
   ): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("reaction")(expression.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
-  @scala.inline
-  def reaction[T](
+  inline def reaction[T](
     expression: js.Function1[/* r */ IReactionPublic, T],
     effect: js.Function2[/* arg */ T, /* r */ IReactionPublic, Unit],
     opts: IReactionOptions
@@ -48,44 +44,32 @@ object autorunMod {
   }
   object IAutorunOptions {
     
-    @scala.inline
-    def apply(): IAutorunOptions = {
+    inline def apply(): IAutorunOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAutorunOptions]
     }
     
-    @scala.inline
-    implicit class IAutorunOptionsMutableBuilder[Self <: IAutorunOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAutorunOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setRequiresObservable(value: Boolean): Self = StObject.set(x, "requiresObservable", value.asInstanceOf[js.Any])
+      inline def setRequiresObservable(value: Boolean): Self = StObject.set(x, "requiresObservable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresObservableUndefined: Self = StObject.set(x, "requiresObservable", js.undefined)
+      inline def setRequiresObservableUndefined: Self = StObject.set(x, "requiresObservable", js.undefined)
       
-      @scala.inline
-      def setScheduler(value: /* callback */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
+      inline def setScheduler(value: /* callback */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
+      inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
     }
   }
   
@@ -100,26 +84,20 @@ object autorunMod {
   }
   object IReactionOptions {
     
-    @scala.inline
-    def apply(): IReactionOptions = {
+    inline def apply(): IReactionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IReactionOptions]
     }
     
-    @scala.inline
-    implicit class IReactionOptionsMutableBuilder[Self <: IReactionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IReactionOptions](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setFireImmediately(value: Boolean): Self = StObject.set(x, "fireImmediately", value.asInstanceOf[js.Any])
+      inline def setFireImmediately(value: Boolean): Self = StObject.set(x, "fireImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFireImmediatelyUndefined: Self = StObject.set(x, "fireImmediately", js.undefined)
+      inline def setFireImmediatelyUndefined: Self = StObject.set(x, "fireImmediately", js.undefined)
     }
   }
 }

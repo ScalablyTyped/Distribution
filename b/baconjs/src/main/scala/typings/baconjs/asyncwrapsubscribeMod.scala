@@ -12,6 +12,5 @@ object asyncwrapsubscribeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](obs: Observable[V], subscribe: Subscribe[V]): Subscribe[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obs.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[Subscribe[V]]
+  inline def default[V](obs: Observable[V], subscribe: Subscribe[V]): Subscribe[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obs.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[Subscribe[V]]
 }

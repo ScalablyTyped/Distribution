@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaStreamTrackState extends StObject
 object MediaStreamTrackState {
   
-  @scala.inline
-  def ended: typings.reactNativeWebrtc.reactNativeWebrtcStrings.ended = "ended".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.ended]
+  inline def ended: typings.reactNativeWebrtc.reactNativeWebrtcStrings.ended = "ended".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.ended]
   
-  @scala.inline
-  def live: typings.reactNativeWebrtc.reactNativeWebrtcStrings.live = "live".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.live]
+  inline def live: typings.reactNativeWebrtc.reactNativeWebrtcStrings.live = "live".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.live]
 }

@@ -10,20 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object convertFrom {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lnglat: js.Array[LocationValue],
     `type`: Null,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | Result, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(lnglat.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(
     lnglat: js.Array[LocationValue],
     `type`: Type,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | Result, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(lnglat.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(
     lnglat: LocationValue,
     `type`: Null,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | Result, Unit]
@@ -34,8 +31,7 @@ object convertFrom {
     * @param type 用于说明是哪个服务商的坐标
     * @param callback 转换完成后的回调函数
     */
-  @scala.inline
-  def apply(
+  inline def apply(
     lnglat: LocationValue,
     `type`: Type,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | Result, Unit]

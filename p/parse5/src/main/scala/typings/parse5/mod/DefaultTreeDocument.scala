@@ -22,19 +22,15 @@ trait DefaultTreeDocument
 }
 object DefaultTreeDocument {
   
-  @scala.inline
-  def apply(childNodes: js.Array[DefaultTreeNode], mode: DocumentMode): DefaultTreeDocument = {
+  inline def apply(childNodes: js.Array[DefaultTreeNode], mode: DocumentMode): DefaultTreeDocument = {
     val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], nodeName = "#document")
     __obj.asInstanceOf[DefaultTreeDocument]
   }
   
-  @scala.inline
-  implicit class DefaultTreeDocumentMutableBuilder[Self <: DefaultTreeDocument] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultTreeDocument](x: Self) {
     
-    @scala.inline
-    def setMode(value: DocumentMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: DocumentMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: Numbersigndocument): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: Numbersigndocument): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait WrappedComponent[P /* <: WrappedComponentProps[IntlPropName] */, IntlPropN
 }
 object WrappedComponent {
   
-  @scala.inline
-  def apply[P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */](WrappedComponent: ComponentType[P]): WrappedComponent[P, IntlPropName] = {
+  inline def apply[P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */](WrappedComponent: ComponentType[P]): WrappedComponent[P, IntlPropName] = {
     val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappedComponent[P, IntlPropName]]
   }
   
-  @scala.inline
-  implicit class WrappedComponentMutableBuilder[Self <: WrappedComponent[?, ?], P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */] (val x: Self & (WrappedComponent[P, IntlPropName])) extends AnyVal {
+  extension [Self <: WrappedComponent[?, ?], P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */](x: Self & (WrappedComponent[P, IntlPropName])) {
     
-    @scala.inline
-    def setWrappedComponent(value: ComponentType[P]): Self = StObject.set(x, "WrappedComponent", value.asInstanceOf[js.Any])
+    inline def setWrappedComponent(value: ComponentType[P]): Self = StObject.set(x, "WrappedComponent", value.asInstanceOf[js.Any])
   }
 }

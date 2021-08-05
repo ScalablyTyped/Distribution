@@ -19,19 +19,15 @@ trait ZeptoEffects extends StObject {
 }
 object ZeptoEffects {
   
-  @scala.inline
-  def apply(off: Boolean, speeds: ZeptoEffectsSpeeds): ZeptoEffects = {
+  inline def apply(off: Boolean, speeds: ZeptoEffectsSpeeds): ZeptoEffects = {
     val __obj = js.Dynamic.literal(off = off.asInstanceOf[js.Any], speeds = speeds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoEffects]
   }
   
-  @scala.inline
-  implicit class ZeptoEffectsMutableBuilder[Self <: ZeptoEffects] (val x: Self) extends AnyVal {
+  extension [Self <: ZeptoEffects](x: Self) {
     
-    @scala.inline
-    def setOff(value: Boolean): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
+    inline def setOff(value: Boolean): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeeds(value: ZeptoEffectsSpeeds): Self = StObject.set(x, "speeds", value.asInstanceOf[js.Any])
+    inline def setSpeeds(value: ZeptoEffectsSpeeds): Self = StObject.set(x, "speeds", value.asInstanceOf[js.Any])
   }
 }

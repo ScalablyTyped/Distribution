@@ -23,28 +23,21 @@ trait UpdateGatewayGroupRequest extends StObject {
 }
 object UpdateGatewayGroupRequest {
   
-  @scala.inline
-  def apply(GatewayGroupArn: Arn): UpdateGatewayGroupRequest = {
+  inline def apply(GatewayGroupArn: Arn): UpdateGatewayGroupRequest = {
     val __obj = js.Dynamic.literal(GatewayGroupArn = GatewayGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewayGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGatewayGroupRequestMutableBuilder[Self <: UpdateGatewayGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGatewayGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: GatewayGroupDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: GatewayGroupDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
+    inline def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: GatewayGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GatewayGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

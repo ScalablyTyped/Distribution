@@ -21,8 +21,7 @@ object listIconMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object ListIconProps {
     
-    @scala.inline
-    def apply(): ListIconProps = {
+    inline def apply(): ListIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListIconProps]
     }
@@ -37,20 +36,16 @@ object listIconMod extends Shortcut {
   }
   object StrictListIconProps {
     
-    @scala.inline
-    def apply(): StrictListIconProps = {
+    inline def apply(): StrictListIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictListIconProps]
     }
     
-    @scala.inline
-    implicit class StrictListIconPropsMutableBuilder[Self <: StrictListIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictListIconProps](x: Self) {
       
-      @scala.inline
-      def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     }
   }
   

@@ -19,16 +19,13 @@ trait CreateMergeFieldCommand
 }
 object CreateMergeFieldCommand {
   
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => SimpleCommandState): CreateMergeFieldCommand = {
+  inline def apply(execute: String => Boolean, getState: () => SimpleCommandState): CreateMergeFieldCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[CreateMergeFieldCommand]
   }
   
-  @scala.inline
-  implicit class CreateMergeFieldCommandMutableBuilder[Self <: CreateMergeFieldCommand] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMergeFieldCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

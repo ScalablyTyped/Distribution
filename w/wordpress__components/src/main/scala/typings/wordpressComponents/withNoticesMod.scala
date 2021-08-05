@@ -17,8 +17,7 @@ object withNoticesMod {
   object default {
     
     // prettier-ignore
-    @scala.inline
-    def apply[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].apply(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]]]
+    inline def apply[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].apply(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]]]
     
     @JSImport("@wordpress/components/higher-order/with-notices", JSImport.Default)
     @js.native
@@ -37,29 +36,22 @@ object withNoticesMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(noticeList: js.Array[Notice], noticeOperations: CreateErrorNotice): Props = {
+      inline def apply(noticeList: js.Array[Notice], noticeOperations: CreateErrorNotice): Props = {
         val __obj = js.Dynamic.literal(noticeList = noticeList.asInstanceOf[js.Any], noticeOperations = noticeOperations.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setNoticeList(value: js.Array[Notice]): Self = StObject.set(x, "noticeList", value.asInstanceOf[js.Any])
+        inline def setNoticeList(value: js.Array[Notice]): Self = StObject.set(x, "noticeList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoticeListVarargs(value: Notice*): Self = StObject.set(x, "noticeList", js.Array(value :_*))
+        inline def setNoticeListVarargs(value: Notice*): Self = StObject.set(x, "noticeList", js.Array(value :_*))
         
-        @scala.inline
-        def setNoticeOperations(value: CreateErrorNotice): Self = StObject.set(x, "noticeOperations", value.asInstanceOf[js.Any])
+        inline def setNoticeOperations(value: CreateErrorNotice): Self = StObject.set(x, "noticeOperations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoticeUI(value: ReactNode): Self = StObject.set(x, "noticeUI", value.asInstanceOf[js.Any])
+        inline def setNoticeUI(value: ReactNode): Self = StObject.set(x, "noticeUI", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoticeUIUndefined: Self = StObject.set(x, "noticeUI", js.undefined)
+        inline def setNoticeUIUndefined: Self = StObject.set(x, "noticeUI", js.undefined)
       }
     }
   }

@@ -15,6 +15,5 @@ object SelectorMatcher {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createNotMatcher(notSelectors: js.Array[typings.angularCompiler.selectorMod.CssSelector]): typings.angularCompiler.selectorMod.SelectorMatcher[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNotMatcher")(notSelectors.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.selectorMod.SelectorMatcher[Null]]
+  inline def createNotMatcher(notSelectors: js.Array[typings.angularCompiler.selectorMod.CssSelector]): typings.angularCompiler.selectorMod.SelectorMatcher[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNotMatcher")(notSelectors.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.selectorMod.SelectorMatcher[Null]]
 }

@@ -15,9 +15,9 @@ abstract class HostBase () extends StObject {
   
   val ignoreCase: Boolean = js.native
   
-  var innerParser: js.Any = js.native
+  /* private */ var innerParser: js.Any = js.native
   
-  var knownGrammars: js.Any = js.native
+  /* private */ var knownGrammars: js.Any = js.native
   
   def normalizeFile(file: String): String = js.native
   
@@ -36,5 +36,5 @@ abstract class HostBase () extends StObject {
   
   def resolveKnownGrammar(name: String): js.UndefOr[String] = js.native
   
-  var useBuiltinGrammars: js.Any = js.native
+  /* private */ var useBuiltinGrammars: js.Any = js.native
 }

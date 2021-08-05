@@ -232,8 +232,7 @@ object publicInterfacesMod {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `class`: IColumnField[String],
       filter: IColumnField[IFilterTemplateDefMap],
       filterData: IColumnField[IPromise[SelectData] | SelectData],
@@ -251,53 +250,37 @@ object publicInterfacesMod {
       __obj.asInstanceOf[IColumnDef]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: IColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnDef](x: Self) {
       
-      @scala.inline
-      def setClass(value: IColumnField[String]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: IColumnField[String]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: SelectData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: SelectData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFunction0(value: () => js.Array[ISelectOption] | IPromise[js.Array[ISelectOption]]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setDataFunction0(value: () => js.Array[ISelectOption] | IPromise[js.Array[ISelectOption]]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: ISelectOption*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ISelectOption*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: IColumnField[IFilterTemplateDefMap]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: IColumnField[IFilterTemplateDefMap]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterData(value: IColumnField[IPromise[SelectData] | SelectData]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
+      inline def setFilterData(value: IColumnField[IPromise[SelectData] | SelectData]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupable(value: IColumnField[String | Boolean]): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
+      inline def setGroupable(value: IColumnField[String | Boolean]): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTemplateURL(value: IColumnField[String | Boolean]): Self = StObject.set(x, "headerTemplateURL", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplateURL(value: IColumnField[String | Boolean]): Self = StObject.set(x, "headerTemplateURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTitle(value: IColumnField[String]): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+      inline def setHeaderTitle(value: IColumnField[String]): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: IColumnField[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: IColumnField[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortable(value: IColumnField[String | Boolean]): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: IColumnField[String | Boolean]): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: IColumnField[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: IColumnField[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAlt(value: IColumnField[String]): Self = StObject.set(x, "titleAlt", value.asInstanceOf[js.Any])
+      inline def setTitleAlt(value: IColumnField[String]): Self = StObject.set(x, "titleAlt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,110 +354,76 @@ object publicInterfacesMod {
   }
   object IDynamicTableColDef {
     
-    @scala.inline
-    def apply(): IDynamicTableColDef = {
+    inline def apply(): IDynamicTableColDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDynamicTableColDef]
     }
     
-    @scala.inline
-    implicit class IDynamicTableColDefMutableBuilder[Self <: IDynamicTableColDef] (val x: Self) extends AnyVal {
+    extension [Self <: IDynamicTableColDef](x: Self) {
       
-      @scala.inline
-      def setClass(value: DynamicTableColField[String]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: DynamicTableColField[String]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "class", js.Any.fromFunction1(value))
+      inline def setClassFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "class", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setFilter(value: DynamicTableColField[IFilterTemplateDefMap]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: DynamicTableColField[IFilterTemplateDefMap]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterData(value: DynamicTableColField[IPromise[SelectData] | SelectData]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
+      inline def setFilterData(value: DynamicTableColField[IPromise[SelectData] | SelectData]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterDataFunction0(value: () => js.Array[ISelectOption] | IPromise[js.Array[ISelectOption]]): Self = StObject.set(x, "filterData", js.Any.fromFunction0(value))
+      inline def setFilterDataFunction0(value: () => js.Array[ISelectOption] | IPromise[js.Array[ISelectOption]]): Self = StObject.set(x, "filterData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFilterDataFunction1(value: /* context */ ColumnFieldContext => IPromise[SelectData] | SelectData): Self = StObject.set(x, "filterData", js.Any.fromFunction1(value))
+      inline def setFilterDataFunction1(value: /* context */ ColumnFieldContext => IPromise[SelectData] | SelectData): Self = StObject.set(x, "filterData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterDataUndefined: Self = StObject.set(x, "filterData", js.undefined)
+      inline def setFilterDataUndefined: Self = StObject.set(x, "filterData", js.undefined)
       
-      @scala.inline
-      def setFilterDataVarargs(value: ISelectOption*): Self = StObject.set(x, "filterData", js.Array(value :_*))
+      inline def setFilterDataVarargs(value: ISelectOption*): Self = StObject.set(x, "filterData", js.Array(value :_*))
       
-      @scala.inline
-      def setFilterFunction1(value: /* context */ ColumnFieldContext => IFilterTemplateDefMap): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* context */ ColumnFieldContext => IFilterTemplateDefMap): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setGroupable(value: DynamicTableColField[String | Boolean]): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
+      inline def setGroupable(value: DynamicTableColField[String | Boolean]): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupableFunction1(value: /* context */ ColumnFieldContext => String | Boolean): Self = StObject.set(x, "groupable", js.Any.fromFunction1(value))
+      inline def setGroupableFunction1(value: /* context */ ColumnFieldContext => String | Boolean): Self = StObject.set(x, "groupable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroupableUndefined: Self = StObject.set(x, "groupable", js.undefined)
+      inline def setGroupableUndefined: Self = StObject.set(x, "groupable", js.undefined)
       
-      @scala.inline
-      def setHeaderTemplateURL(value: DynamicTableColField[String | Boolean]): Self = StObject.set(x, "headerTemplateURL", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplateURL(value: DynamicTableColField[String | Boolean]): Self = StObject.set(x, "headerTemplateURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTemplateURLFunction1(value: /* context */ ColumnFieldContext => String | Boolean): Self = StObject.set(x, "headerTemplateURL", js.Any.fromFunction1(value))
+      inline def setHeaderTemplateURLFunction1(value: /* context */ ColumnFieldContext => String | Boolean): Self = StObject.set(x, "headerTemplateURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderTemplateURLUndefined: Self = StObject.set(x, "headerTemplateURL", js.undefined)
+      inline def setHeaderTemplateURLUndefined: Self = StObject.set(x, "headerTemplateURL", js.undefined)
       
-      @scala.inline
-      def setHeaderTitle(value: DynamicTableColField[String]): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+      inline def setHeaderTitle(value: DynamicTableColField[String]): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTitleFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
+      inline def setHeaderTitleFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "headerTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
+      inline def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
       
-      @scala.inline
-      def setShow(value: DynamicTableColField[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: DynamicTableColField[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFunction1(value: /* context */ ColumnFieldContext => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShowFunction1(value: /* context */ ColumnFieldContext => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setSortable(value: DynamicTableColField[String | Boolean]): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: DynamicTableColField[String | Boolean]): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortableFunction1(value: /* context */ ColumnFieldContext => String | Boolean): Self = StObject.set(x, "sortable", js.Any.fromFunction1(value))
+      inline def setSortableFunction1(value: /* context */ ColumnFieldContext => String | Boolean): Self = StObject.set(x, "sortable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+      inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
       
-      @scala.inline
-      def setTitle(value: DynamicTableColField[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: DynamicTableColField[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAlt(value: DynamicTableColField[String]): Self = StObject.set(x, "titleAlt", value.asInstanceOf[js.Any])
+      inline def setTitleAlt(value: DynamicTableColField[String]): Self = StObject.set(x, "titleAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAltFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "titleAlt", js.Any.fromFunction1(value))
+      inline def setTitleAltFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "titleAlt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitleAltUndefined: Self = StObject.set(x, "titleAlt", js.undefined)
+      inline def setTitleAltUndefined: Self = StObject.set(x, "titleAlt", js.undefined)
       
-      @scala.inline
-      def setTitleFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+      inline def setTitleFunction1(value: /* context */ ColumnFieldContext => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -502,32 +451,24 @@ object publicInterfacesMod {
   }
   object IFilterConfigValues {
     
-    @scala.inline
-    def apply(): IFilterConfigValues = {
+    inline def apply(): IFilterConfigValues = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFilterConfigValues]
     }
     
-    @scala.inline
-    implicit class IFilterConfigValuesMutableBuilder[Self <: IFilterConfigValues] (val x: Self) extends AnyVal {
+    extension [Self <: IFilterConfigValues](x: Self) {
       
-      @scala.inline
-      def setAliasUrls(value: StringDictionary[String]): Self = StObject.set(x, "aliasUrls", value.asInstanceOf[js.Any])
+      inline def setAliasUrls(value: StringDictionary[String]): Self = StObject.set(x, "aliasUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUrlsUndefined: Self = StObject.set(x, "aliasUrls", js.undefined)
+      inline def setAliasUrlsUndefined: Self = StObject.set(x, "aliasUrls", js.undefined)
       
-      @scala.inline
-      def setDefaultBaseUrl(value: String): Self = StObject.set(x, "defaultBaseUrl", value.asInstanceOf[js.Any])
+      inline def setDefaultBaseUrl(value: String): Self = StObject.set(x, "defaultBaseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultBaseUrlUndefined: Self = StObject.set(x, "defaultBaseUrl", js.undefined)
+      inline def setDefaultBaseUrlUndefined: Self = StObject.set(x, "defaultBaseUrl", js.undefined)
       
-      @scala.inline
-      def setDefaultExt(value: String): Self = StObject.set(x, "defaultExt", value.asInstanceOf[js.Any])
+      inline def setDefaultExt(value: String): Self = StObject.set(x, "defaultExt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExtUndefined: Self = StObject.set(x, "defaultExt", js.undefined)
+      inline def setDefaultExtUndefined: Self = StObject.set(x, "defaultExt", js.undefined)
     }
   }
   
@@ -545,20 +486,16 @@ object publicInterfacesMod {
   }
   object IFilterTemplateDef {
     
-    @scala.inline
-    def apply(id: String, placeholder: String): IFilterTemplateDef = {
+    inline def apply(id: String, placeholder: String): IFilterTemplateDef = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFilterTemplateDef]
     }
     
-    @scala.inline
-    implicit class IFilterTemplateDefMutableBuilder[Self <: IFilterTemplateDef] (val x: Self) extends AnyVal {
+    extension [Self <: IFilterTemplateDef](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     }
   }
   
@@ -574,20 +511,16 @@ object publicInterfacesMod {
   }
   object ISelectOption {
     
-    @scala.inline
-    def apply(id: String | Double, title: String): ISelectOption = {
+    inline def apply(id: String | Double, title: String): ISelectOption = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectOption]
     }
     
-    @scala.inline
-    implicit class ISelectOptionMutableBuilder[Self <: ISelectOption] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectOption](x: Self) {
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -611,8 +544,7 @@ object publicInterfacesMod {
   }
   object ITableInputAttributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $addClass: String => Unit,
       $attr: js.Object,
       $normalize: String => String,
@@ -625,50 +557,35 @@ object publicInterfacesMod {
       __obj.asInstanceOf[ITableInputAttributes]
     }
     
-    @scala.inline
-    implicit class ITableInputAttributesMutableBuilder[Self <: ITableInputAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: ITableInputAttributes](x: Self) {
       
-      @scala.inline
-      def setDisableFilter(value: String): Self = StObject.set(x, "disableFilter", value.asInstanceOf[js.Any])
+      inline def setDisableFilter(value: String): Self = StObject.set(x, "disableFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFilterUndefined: Self = StObject.set(x, "disableFilter", js.undefined)
+      inline def setDisableFilterUndefined: Self = StObject.set(x, "disableFilter", js.undefined)
       
-      @scala.inline
-      def setNgTable(value: String): Self = StObject.set(x, "ngTable", value.asInstanceOf[js.Any])
+      inline def setNgTable(value: String): Self = StObject.set(x, "ngTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgTableDynamic(value: String): Self = StObject.set(x, "ngTableDynamic", value.asInstanceOf[js.Any])
+      inline def setNgTableDynamic(value: String): Self = StObject.set(x, "ngTableDynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgTableDynamicUndefined: Self = StObject.set(x, "ngTableDynamic", js.undefined)
+      inline def setNgTableDynamicUndefined: Self = StObject.set(x, "ngTableDynamic", js.undefined)
       
-      @scala.inline
-      def setNgTableUndefined: Self = StObject.set(x, "ngTable", js.undefined)
+      inline def setNgTableUndefined: Self = StObject.set(x, "ngTable", js.undefined)
       
-      @scala.inline
-      def setShowFilter(value: String): Self = StObject.set(x, "showFilter", value.asInstanceOf[js.Any])
+      inline def setShowFilter(value: String): Self = StObject.set(x, "showFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFilterUndefined: Self = StObject.set(x, "showFilter", js.undefined)
+      inline def setShowFilterUndefined: Self = StObject.set(x, "showFilter", js.undefined)
       
-      @scala.inline
-      def setShowGroup(value: String): Self = StObject.set(x, "showGroup", value.asInstanceOf[js.Any])
+      inline def setShowGroup(value: String): Self = StObject.set(x, "showGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowGroupUndefined: Self = StObject.set(x, "showGroup", js.undefined)
+      inline def setShowGroupUndefined: Self = StObject.set(x, "showGroup", js.undefined)
       
-      @scala.inline
-      def setTemplateHeader(value: String): Self = StObject.set(x, "templateHeader", value.asInstanceOf[js.Any])
+      inline def setTemplateHeader(value: String): Self = StObject.set(x, "templateHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateHeaderUndefined: Self = StObject.set(x, "templateHeader", js.undefined)
+      inline def setTemplateHeaderUndefined: Self = StObject.set(x, "templateHeader", js.undefined)
       
-      @scala.inline
-      def setTemplatePagination(value: String): Self = StObject.set(x, "templatePagination", value.asInstanceOf[js.Any])
+      inline def setTemplatePagination(value: String): Self = StObject.set(x, "templatePagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplatePaginationUndefined: Self = StObject.set(x, "templatePagination", js.undefined)
+      inline def setTemplatePaginationUndefined: Self = StObject.set(x, "templatePagination", js.undefined)
     }
   }
   

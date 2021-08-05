@@ -32,8 +32,7 @@ trait INxPivotPage extends StObject {
 }
 object INxPivotPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qArea: IRect,
     qData: js.Array[INxPivotValuePoint],
     qLeft: js.Array[INxPivotDimensionCell],
@@ -43,28 +42,20 @@ object INxPivotPage {
     __obj.asInstanceOf[INxPivotPage]
   }
   
-  @scala.inline
-  implicit class INxPivotPageMutableBuilder[Self <: INxPivotPage] (val x: Self) extends AnyVal {
+  extension [Self <: INxPivotPage](x: Self) {
     
-    @scala.inline
-    def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
+    inline def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQData(value: js.Array[INxPivotValuePoint]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: js.Array[INxPivotValuePoint]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDataVarargs(value: INxPivotValuePoint*): Self = StObject.set(x, "qData", js.Array(value :_*))
+    inline def setQDataVarargs(value: INxPivotValuePoint*): Self = StObject.set(x, "qData", js.Array(value :_*))
     
-    @scala.inline
-    def setQLeft(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
+    inline def setQLeft(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLeftVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qLeft", js.Array(value :_*))
+    inline def setQLeftVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qLeft", js.Array(value :_*))
     
-    @scala.inline
-    def setQTop(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
+    inline def setQTop(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTopVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qTop", js.Array(value :_*))
+    inline def setQTopVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qTop", js.Array(value :_*))
   }
 }

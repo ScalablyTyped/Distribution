@@ -28,40 +28,29 @@ trait DescribeConnectorProfilesRequest extends StObject {
 }
 object DescribeConnectorProfilesRequest {
   
-  @scala.inline
-  def apply(): DescribeConnectorProfilesRequest = {
+  inline def apply(): DescribeConnectorProfilesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConnectorProfilesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConnectorProfilesRequestMutableBuilder[Self <: DescribeConnectorProfilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectorProfilesRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorProfileNames(value: ConnectorProfileNameList): Self = StObject.set(x, "connectorProfileNames", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileNames(value: ConnectorProfileNameList): Self = StObject.set(x, "connectorProfileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileNamesUndefined: Self = StObject.set(x, "connectorProfileNames", js.undefined)
+    inline def setConnectorProfileNamesUndefined: Self = StObject.set(x, "connectorProfileNames", js.undefined)
     
-    @scala.inline
-    def setConnectorProfileNamesVarargs(value: ConnectorProfileName*): Self = StObject.set(x, "connectorProfileNames", js.Array(value :_*))
+    inline def setConnectorProfileNamesVarargs(value: ConnectorProfileName*): Self = StObject.set(x, "connectorProfileNames", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
+    inline def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

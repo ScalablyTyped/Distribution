@@ -22,8 +22,7 @@ object executorMod {
   }
   object Job {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arg: js.Any,
       context: js.Any,
       handle: js.Any => js.Any,
@@ -35,26 +34,19 @@ object executorMod {
       __obj.asInstanceOf[Job]
     }
     
-    @scala.inline
-    implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+    extension [Self <: Job](x: Self) {
       
-      @scala.inline
-      def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandle(value: js.Any => js.Any): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+      inline def setHandle(value: js.Any => js.Any): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReject(value: js.Any => js.Any): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: js.Any => js.Any): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: js.Any => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: js.Any => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,17 +56,14 @@ object executorMod {
   }
   object JobExecutor {
     
-    @scala.inline
-    def apply(add: (Task, js.Any, js.Any, js.Any) => js.Any): JobExecutor = {
+    inline def apply(add: (Task, js.Any, js.Any, js.Any) => js.Any): JobExecutor = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction4(add))
       __obj.asInstanceOf[JobExecutor]
     }
     
-    @scala.inline
-    implicit class JobExecutorMutableBuilder[Self <: JobExecutor] (val x: Self) extends AnyVal {
+    extension [Self <: JobExecutor](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (Task, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
+      inline def setAdd(value: (Task, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
     }
   }
   

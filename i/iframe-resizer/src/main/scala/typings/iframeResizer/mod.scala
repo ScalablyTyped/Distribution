@@ -16,19 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   // leave this declaration outside the namespace so the 'require'd import is still callable
-  @scala.inline
-  def apply(options: IFrameOptions, target: String): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
-  @scala.inline
-  def apply(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
+  inline def apply(options: IFrameOptions, target: String): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
+  inline def apply(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
   
   @JSImport("iframe-resizer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iframeResizer(options: IFrameOptions, target: String): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].applyDynamic("iframeResizer")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
-  @scala.inline
-  def iframeResizer(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].applyDynamic("iframeResizer")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
+  inline def iframeResizer(options: IFrameOptions, target: String): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].applyDynamic("iframeResizer")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
+  inline def iframeResizer(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].applyDynamic("iframeResizer")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.iframeResizer.iframeResizerStrings.bodyOffset
@@ -44,32 +40,23 @@ object mod {
   trait HeightCalculationMethod extends StObject
   object HeightCalculationMethod {
     
-    @scala.inline
-    def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = "bodyOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyOffset]
+    inline def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = "bodyOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyOffset]
     
-    @scala.inline
-    def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = "bodyScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyScroll]
+    inline def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = "bodyScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyScroll]
     
-    @scala.inline
-    def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = "documentElementOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementOffset]
+    inline def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = "documentElementOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementOffset]
     
-    @scala.inline
-    def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = "documentElementScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementScroll]
+    inline def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = "documentElementScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementScroll]
     
-    @scala.inline
-    def grow: typings.iframeResizer.iframeResizerStrings.grow = "grow".asInstanceOf[typings.iframeResizer.iframeResizerStrings.grow]
+    inline def grow: typings.iframeResizer.iframeResizerStrings.grow = "grow".asInstanceOf[typings.iframeResizer.iframeResizerStrings.grow]
     
-    @scala.inline
-    def lowestElement: typings.iframeResizer.iframeResizerStrings.lowestElement = "lowestElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.lowestElement]
+    inline def lowestElement: typings.iframeResizer.iframeResizerStrings.lowestElement = "lowestElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.lowestElement]
     
-    @scala.inline
-    def max: typings.iframeResizer.iframeResizerStrings.max = "max".asInstanceOf[typings.iframeResizer.iframeResizerStrings.max]
+    inline def max: typings.iframeResizer.iframeResizerStrings.max = "max".asInstanceOf[typings.iframeResizer.iframeResizerStrings.max]
     
-    @scala.inline
-    def min: typings.iframeResizer.iframeResizerStrings.min = "min".asInstanceOf[typings.iframeResizer.iframeResizerStrings.min]
+    inline def min: typings.iframeResizer.iframeResizerStrings.min = "min".asInstanceOf[typings.iframeResizer.iframeResizerStrings.min]
     
-    @scala.inline
-    def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = "taggedElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.taggedElement]
+    inline def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = "taggedElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.taggedElement]
   }
   
   // tslint:disable-next-line:interface-name
@@ -104,20 +91,16 @@ object mod {
   }
   object IFrameMessageData {
     
-    @scala.inline
-    def apply(iframe: IFrameComponent, message: js.Any): IFrameMessageData = {
+    inline def apply(iframe: IFrameComponent, message: js.Any): IFrameMessageData = {
       val __obj = js.Dynamic.literal(iframe = iframe.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFrameMessageData]
     }
     
-    @scala.inline
-    implicit class IFrameMessageDataMutableBuilder[Self <: IFrameMessageData] (val x: Self) extends AnyVal {
+    extension [Self <: IFrameMessageData](x: Self) {
       
-      @scala.inline
-      def setIframe(value: IFrameComponent): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
+      inline def setIframe(value: IFrameComponent): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -278,167 +261,114 @@ object mod {
   }
   object IFrameOptions {
     
-    @scala.inline
-    def apply(): IFrameOptions = {
+    inline def apply(): IFrameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFrameOptions]
     }
     
-    @scala.inline
-    implicit class IFrameOptionsMutableBuilder[Self <: IFrameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFrameOptions](x: Self) {
       
-      @scala.inline
-      def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+      inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+      inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
       
-      @scala.inline
-      def setBodyBackground(value: String): Self = StObject.set(x, "bodyBackground", value.asInstanceOf[js.Any])
+      inline def setBodyBackground(value: String): Self = StObject.set(x, "bodyBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyBackgroundUndefined: Self = StObject.set(x, "bodyBackground", js.undefined)
+      inline def setBodyBackgroundUndefined: Self = StObject.set(x, "bodyBackground", js.undefined)
       
-      @scala.inline
-      def setBodyMargin(value: Double | String): Self = StObject.set(x, "bodyMargin", value.asInstanceOf[js.Any])
+      inline def setBodyMargin(value: Double | String): Self = StObject.set(x, "bodyMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyMarginUndefined: Self = StObject.set(x, "bodyMargin", js.undefined)
+      inline def setBodyMarginUndefined: Self = StObject.set(x, "bodyMargin", js.undefined)
       
-      @scala.inline
-      def setBodyPadding(value: Double | String): Self = StObject.set(x, "bodyPadding", value.asInstanceOf[js.Any])
+      inline def setBodyPadding(value: Double | String): Self = StObject.set(x, "bodyPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyPaddingUndefined: Self = StObject.set(x, "bodyPadding", js.undefined)
+      inline def setBodyPaddingUndefined: Self = StObject.set(x, "bodyPadding", js.undefined)
       
-      @scala.inline
-      def setCheckOrigin(value: Boolean | js.Array[String]): Self = StObject.set(x, "checkOrigin", value.asInstanceOf[js.Any])
+      inline def setCheckOrigin(value: Boolean | js.Array[String]): Self = StObject.set(x, "checkOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckOriginUndefined: Self = StObject.set(x, "checkOrigin", js.undefined)
+      inline def setCheckOriginUndefined: Self = StObject.set(x, "checkOrigin", js.undefined)
       
-      @scala.inline
-      def setCheckOriginVarargs(value: String*): Self = StObject.set(x, "checkOrigin", js.Array(value :_*))
+      inline def setCheckOriginVarargs(value: String*): Self = StObject.set(x, "checkOrigin", js.Array(value :_*))
       
-      @scala.inline
-      def setClosedCallback(value: /* iframeId */ String => Unit): Self = StObject.set(x, "closedCallback", js.Any.fromFunction1(value))
+      inline def setClosedCallback(value: /* iframeId */ String => Unit): Self = StObject.set(x, "closedCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClosedCallbackUndefined: Self = StObject.set(x, "closedCallback", js.undefined)
+      inline def setClosedCallbackUndefined: Self = StObject.set(x, "closedCallback", js.undefined)
       
-      @scala.inline
-      def setHeightCalculationMethod(value: HeightCalculationMethod): Self = StObject.set(x, "heightCalculationMethod", value.asInstanceOf[js.Any])
+      inline def setHeightCalculationMethod(value: HeightCalculationMethod): Self = StObject.set(x, "heightCalculationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightCalculationMethodUndefined: Self = StObject.set(x, "heightCalculationMethod", js.undefined)
+      inline def setHeightCalculationMethodUndefined: Self = StObject.set(x, "heightCalculationMethod", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInPageLinks(value: Boolean): Self = StObject.set(x, "inPageLinks", value.asInstanceOf[js.Any])
+      inline def setInPageLinks(value: Boolean): Self = StObject.set(x, "inPageLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInPageLinksUndefined: Self = StObject.set(x, "inPageLinks", js.undefined)
+      inline def setInPageLinksUndefined: Self = StObject.set(x, "inPageLinks", js.undefined)
       
-      @scala.inline
-      def setInitCallback(value: /* iframe */ IFrameComponent => Unit): Self = StObject.set(x, "initCallback", js.Any.fromFunction1(value))
+      inline def setInitCallback(value: /* iframe */ IFrameComponent => Unit): Self = StObject.set(x, "initCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitCallbackUndefined: Self = StObject.set(x, "initCallback", js.undefined)
+      inline def setInitCallbackUndefined: Self = StObject.set(x, "initCallback", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMessageCallback(value: /* data */ IFrameMessageData => Unit): Self = StObject.set(x, "messageCallback", js.Any.fromFunction1(value))
+      inline def setMessageCallback(value: /* data */ IFrameMessageData => Unit): Self = StObject.set(x, "messageCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMessageCallbackUndefined: Self = StObject.set(x, "messageCallback", js.undefined)
+      inline def setMessageCallbackUndefined: Self = StObject.set(x, "messageCallback", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setResizeFrom(value: parent | child): Self = StObject.set(x, "resizeFrom", value.asInstanceOf[js.Any])
+      inline def setResizeFrom(value: parent | child): Self = StObject.set(x, "resizeFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeFromUndefined: Self = StObject.set(x, "resizeFrom", js.undefined)
+      inline def setResizeFromUndefined: Self = StObject.set(x, "resizeFrom", js.undefined)
       
-      @scala.inline
-      def setResizedCallback(value: /* data */ IFrameResizedData => Unit): Self = StObject.set(x, "resizedCallback", js.Any.fromFunction1(value))
+      inline def setResizedCallback(value: /* data */ IFrameResizedData => Unit): Self = StObject.set(x, "resizedCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResizedCallbackUndefined: Self = StObject.set(x, "resizedCallback", js.undefined)
+      inline def setResizedCallbackUndefined: Self = StObject.set(x, "resizedCallback", js.undefined)
       
-      @scala.inline
-      def setScrollCallback(value: /* data */ IFrameScrollData => Boolean): Self = StObject.set(x, "scrollCallback", js.Any.fromFunction1(value))
+      inline def setScrollCallback(value: /* data */ IFrameScrollData => Boolean): Self = StObject.set(x, "scrollCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollCallbackUndefined: Self = StObject.set(x, "scrollCallback", js.undefined)
+      inline def setScrollCallbackUndefined: Self = StObject.set(x, "scrollCallback", js.undefined)
       
-      @scala.inline
-      def setScrolling(value: Boolean | auto): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+      inline def setScrolling(value: Boolean | auto): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
+      inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
       
-      @scala.inline
-      def setSizeHeight(value: Boolean): Self = StObject.set(x, "sizeHeight", value.asInstanceOf[js.Any])
+      inline def setSizeHeight(value: Boolean): Self = StObject.set(x, "sizeHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeHeightUndefined: Self = StObject.set(x, "sizeHeight", js.undefined)
+      inline def setSizeHeightUndefined: Self = StObject.set(x, "sizeHeight", js.undefined)
       
-      @scala.inline
-      def setSizeWidth(value: Boolean): Self = StObject.set(x, "sizeWidth", value.asInstanceOf[js.Any])
+      inline def setSizeWidth(value: Boolean): Self = StObject.set(x, "sizeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeWidthUndefined: Self = StObject.set(x, "sizeWidth", js.undefined)
+      inline def setSizeWidthUndefined: Self = StObject.set(x, "sizeWidth", js.undefined)
       
-      @scala.inline
-      def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+      inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+      inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
       
-      @scala.inline
-      def setWidthCalculationMethod(value: WidthCalculationMethod): Self = StObject.set(x, "widthCalculationMethod", value.asInstanceOf[js.Any])
+      inline def setWidthCalculationMethod(value: WidthCalculationMethod): Self = StObject.set(x, "widthCalculationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthCalculationMethodUndefined: Self = StObject.set(x, "widthCalculationMethod", js.undefined)
+      inline def setWidthCalculationMethodUndefined: Self = StObject.set(x, "widthCalculationMethod", js.undefined)
     }
   }
   
@@ -547,50 +477,36 @@ object mod {
   }
   object IFramePageOptions {
     
-    @scala.inline
-    def apply(): IFramePageOptions = {
+    inline def apply(): IFramePageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFramePageOptions]
     }
     
-    @scala.inline
-    implicit class IFramePageOptionsMutableBuilder[Self <: IFramePageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFramePageOptions](x: Self) {
       
-      @scala.inline
-      def setHeightCalculationMethod(value: HeightCalculationMethod | js.Function0[Double]): Self = StObject.set(x, "heightCalculationMethod", value.asInstanceOf[js.Any])
+      inline def setHeightCalculationMethod(value: HeightCalculationMethod | js.Function0[Double]): Self = StObject.set(x, "heightCalculationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightCalculationMethodFunction0(value: () => Double): Self = StObject.set(x, "heightCalculationMethod", js.Any.fromFunction0(value))
+      inline def setHeightCalculationMethodFunction0(value: () => Double): Self = StObject.set(x, "heightCalculationMethod", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeightCalculationMethodUndefined: Self = StObject.set(x, "heightCalculationMethod", js.undefined)
+      inline def setHeightCalculationMethodUndefined: Self = StObject.set(x, "heightCalculationMethod", js.undefined)
       
-      @scala.inline
-      def setMessageCallback(value: /* message */ js.Any => Unit): Self = StObject.set(x, "messageCallback", js.Any.fromFunction1(value))
+      inline def setMessageCallback(value: /* message */ js.Any => Unit): Self = StObject.set(x, "messageCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMessageCallbackUndefined: Self = StObject.set(x, "messageCallback", js.undefined)
+      inline def setMessageCallbackUndefined: Self = StObject.set(x, "messageCallback", js.undefined)
       
-      @scala.inline
-      def setReadyCallback(value: () => Unit): Self = StObject.set(x, "readyCallback", js.Any.fromFunction0(value))
+      inline def setReadyCallback(value: () => Unit): Self = StObject.set(x, "readyCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadyCallbackUndefined: Self = StObject.set(x, "readyCallback", js.undefined)
+      inline def setReadyCallbackUndefined: Self = StObject.set(x, "readyCallback", js.undefined)
       
-      @scala.inline
-      def setTargetOrigin(value: String): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
+      inline def setTargetOrigin(value: String): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
+      inline def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
       
-      @scala.inline
-      def setWidthCalculationMethod(value: WidthCalculationMethod | js.Function0[Double]): Self = StObject.set(x, "widthCalculationMethod", value.asInstanceOf[js.Any])
+      inline def setWidthCalculationMethod(value: WidthCalculationMethod | js.Function0[Double]): Self = StObject.set(x, "widthCalculationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthCalculationMethodFunction0(value: () => Double): Self = StObject.set(x, "widthCalculationMethod", js.Any.fromFunction0(value))
+      inline def setWidthCalculationMethodFunction0(value: () => Double): Self = StObject.set(x, "widthCalculationMethod", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWidthCalculationMethodUndefined: Self = StObject.set(x, "widthCalculationMethod", js.undefined)
+      inline def setWidthCalculationMethodUndefined: Self = StObject.set(x, "widthCalculationMethod", js.undefined)
     }
   }
   
@@ -607,27 +523,21 @@ object mod {
   }
   object IFrameResizedData {
     
-    @scala.inline
-    def apply(height: Double, iframe: IFrameComponent, `type`: String, width: Double): IFrameResizedData = {
+    inline def apply(height: Double, iframe: IFrameComponent, `type`: String, width: Double): IFrameResizedData = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFrameResizedData]
     }
     
-    @scala.inline
-    implicit class IFrameResizedDataMutableBuilder[Self <: IFrameResizedData] (val x: Self) extends AnyVal {
+    extension [Self <: IFrameResizedData](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIframe(value: IFrameComponent): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
+      inline def setIframe(value: IFrameComponent): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -640,20 +550,16 @@ object mod {
   }
   object IFrameScrollData {
     
-    @scala.inline
-    def apply(x: Double, y: Double): IFrameScrollData = {
+    inline def apply(x: Double, y: Double): IFrameScrollData = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFrameScrollData]
     }
     
-    @scala.inline
-    implicit class IFrameScrollDataMutableBuilder[Self <: IFrameScrollData] (val x: Self) extends AnyVal {
+    extension [Self <: IFrameScrollData](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -701,8 +607,7 @@ object mod {
   }
   object PageInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientHeight: Double,
       clientWidth: Double,
       iframeHeight: Double,
@@ -716,32 +621,23 @@ object mod {
       __obj.asInstanceOf[PageInfo]
     }
     
-    @scala.inline
-    implicit class PageInfoMutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PageInfo](x: Self) {
       
-      @scala.inline
-      def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+      inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+      inline def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIframeHeight(value: Double): Self = StObject.set(x, "iframeHeight", value.asInstanceOf[js.Any])
+      inline def setIframeHeight(value: Double): Self = StObject.set(x, "iframeHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIframeWidth(value: Double): Self = StObject.set(x, "iframeWidth", value.asInstanceOf[js.Any])
+      inline def setIframeWidth(value: Double): Self = StObject.set(x, "iframeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
+      inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+      inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }
   }
   
@@ -759,31 +655,22 @@ object mod {
   trait WidthCalculationMethod extends StObject
   object WidthCalculationMethod {
     
-    @scala.inline
-    def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = "bodyOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyOffset]
+    inline def bodyOffset: typings.iframeResizer.iframeResizerStrings.bodyOffset = "bodyOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyOffset]
     
-    @scala.inline
-    def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = "bodyScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyScroll]
+    inline def bodyScroll: typings.iframeResizer.iframeResizerStrings.bodyScroll = "bodyScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.bodyScroll]
     
-    @scala.inline
-    def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = "documentElementOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementOffset]
+    inline def documentElementOffset: typings.iframeResizer.iframeResizerStrings.documentElementOffset = "documentElementOffset".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementOffset]
     
-    @scala.inline
-    def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = "documentElementScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementScroll]
+    inline def documentElementScroll: typings.iframeResizer.iframeResizerStrings.documentElementScroll = "documentElementScroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.documentElementScroll]
     
-    @scala.inline
-    def max: typings.iframeResizer.iframeResizerStrings.max = "max".asInstanceOf[typings.iframeResizer.iframeResizerStrings.max]
+    inline def max: typings.iframeResizer.iframeResizerStrings.max = "max".asInstanceOf[typings.iframeResizer.iframeResizerStrings.max]
     
-    @scala.inline
-    def min: typings.iframeResizer.iframeResizerStrings.min = "min".asInstanceOf[typings.iframeResizer.iframeResizerStrings.min]
+    inline def min: typings.iframeResizer.iframeResizerStrings.min = "min".asInstanceOf[typings.iframeResizer.iframeResizerStrings.min]
     
-    @scala.inline
-    def rightMostElement: typings.iframeResizer.iframeResizerStrings.rightMostElement = "rightMostElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.rightMostElement]
+    inline def rightMostElement: typings.iframeResizer.iframeResizerStrings.rightMostElement = "rightMostElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.rightMostElement]
     
-    @scala.inline
-    def scroll: typings.iframeResizer.iframeResizerStrings.scroll = "scroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.scroll]
+    inline def scroll: typings.iframeResizer.iframeResizerStrings.scroll = "scroll".asInstanceOf[typings.iframeResizer.iframeResizerStrings.scroll]
     
-    @scala.inline
-    def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = "taggedElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.taggedElement]
+    inline def taggedElement: typings.iframeResizer.iframeResizerStrings.taggedElement = "taggedElement".asInstanceOf[typings.iframeResizer.iframeResizerStrings.taggedElement]
   }
 }

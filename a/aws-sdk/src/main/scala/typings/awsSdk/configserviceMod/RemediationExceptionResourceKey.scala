@@ -18,25 +18,19 @@ trait RemediationExceptionResourceKey extends StObject {
 }
 object RemediationExceptionResourceKey {
   
-  @scala.inline
-  def apply(): RemediationExceptionResourceKey = {
+  inline def apply(): RemediationExceptionResourceKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemediationExceptionResourceKey]
   }
   
-  @scala.inline
-  implicit class RemediationExceptionResourceKeyMutableBuilder[Self <: RemediationExceptionResourceKey] (val x: Self) extends AnyVal {
+  extension [Self <: RemediationExceptionResourceKey](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: StringWithCharLimit1024): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: StringWithCharLimit1024): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

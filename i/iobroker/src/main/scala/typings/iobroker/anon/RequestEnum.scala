@@ -13,19 +13,15 @@ trait RequestEnum extends StObject {
 }
 object RequestEnum {
   
-  @scala.inline
-  def apply(requestEnum: String, result: Record[String, js.Any]): RequestEnum = {
+  inline def apply(requestEnum: String, result: Record[String, js.Any]): RequestEnum = {
     val __obj = js.Dynamic.literal(requestEnum = requestEnum.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestEnum]
   }
   
-  @scala.inline
-  implicit class RequestEnumMutableBuilder[Self <: RequestEnum] (val x: Self) extends AnyVal {
+  extension [Self <: RequestEnum](x: Self) {
     
-    @scala.inline
-    def setRequestEnum(value: String): Self = StObject.set(x, "requestEnum", value.asInstanceOf[js.Any])
+    inline def setRequestEnum(value: String): Self = StObject.set(x, "requestEnum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Record[String, js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Record[String, js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

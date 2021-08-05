@@ -17,22 +17,17 @@ trait SchedulerInteraction extends StObject {
 }
 object SchedulerInteraction {
   
-  @scala.inline
-  def apply(id: Double, name: String, timestamp: Double): SchedulerInteraction = {
+  inline def apply(id: Double, name: String, timestamp: Double): SchedulerInteraction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerInteraction]
   }
   
-  @scala.inline
-  implicit class SchedulerInteractionMutableBuilder[Self <: SchedulerInteraction] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerInteraction](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

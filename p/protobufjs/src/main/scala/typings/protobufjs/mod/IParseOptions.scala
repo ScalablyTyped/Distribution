@@ -17,31 +17,23 @@ trait IParseOptions extends StObject {
 }
 object IParseOptions {
   
-  @scala.inline
-  def apply(): IParseOptions = {
+  inline def apply(): IParseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IParseOptions]
   }
   
-  @scala.inline
-  implicit class IParseOptionsMutableBuilder[Self <: IParseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IParseOptions](x: Self) {
     
-    @scala.inline
-    def setAlternateCommentMode(value: Boolean): Self = StObject.set(x, "alternateCommentMode", value.asInstanceOf[js.Any])
+    inline def setAlternateCommentMode(value: Boolean): Self = StObject.set(x, "alternateCommentMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateCommentModeUndefined: Self = StObject.set(x, "alternateCommentMode", js.undefined)
+    inline def setAlternateCommentModeUndefined: Self = StObject.set(x, "alternateCommentMode", js.undefined)
     
-    @scala.inline
-    def setKeepCase(value: Boolean): Self = StObject.set(x, "keepCase", value.asInstanceOf[js.Any])
+    inline def setKeepCase(value: Boolean): Self = StObject.set(x, "keepCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepCaseUndefined: Self = StObject.set(x, "keepCase", js.undefined)
+    inline def setKeepCaseUndefined: Self = StObject.set(x, "keepCase", js.undefined)
     
-    @scala.inline
-    def setPreferTrailingComment(value: Boolean): Self = StObject.set(x, "preferTrailingComment", value.asInstanceOf[js.Any])
+    inline def setPreferTrailingComment(value: Boolean): Self = StObject.set(x, "preferTrailingComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferTrailingCommentUndefined: Self = StObject.set(x, "preferTrailingComment", js.undefined)
+    inline def setPreferTrailingCommentUndefined: Self = StObject.set(x, "preferTrailingComment", js.undefined)
   }
 }

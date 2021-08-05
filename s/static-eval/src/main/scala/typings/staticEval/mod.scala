@@ -13,8 +13,7 @@ object mod {
   * @param ast [ESTree.Expression] An esprima expression derived from parse.body[].expression
   * @param vars Named variables, objects or functions which may be referenced in the expression.
   */
-  @scala.inline
-  def apply(ast: Expression, vars: StringDictionary[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].apply(ast.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(ast: Expression, vars: StringDictionary[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].apply(ast.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("static-eval", JSImport.Namespace)
   @js.native

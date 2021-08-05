@@ -39,8 +39,7 @@ trait ConfigurationChangeEvent
 }
 object ConfigurationChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Configuration: XConfiguration,
     ResourceId: XResourceId,
     ResourceObject: XInterface,
@@ -52,22 +51,16 @@ object ConfigurationChangeEvent {
     __obj.asInstanceOf[ConfigurationChangeEvent]
   }
   
-  @scala.inline
-  implicit class ConfigurationChangeEventMutableBuilder[Self <: ConfigurationChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationChangeEvent](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: XConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: XConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: XResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: XResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceObject(value: XInterface): Self = StObject.set(x, "ResourceObject", value.asInstanceOf[js.Any])
+    inline def setResourceObject(value: XInterface): Self = StObject.set(x, "ResourceObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserData(value: js.Any): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: js.Any): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
   }
 }

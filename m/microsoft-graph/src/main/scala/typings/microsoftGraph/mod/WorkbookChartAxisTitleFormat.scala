@@ -13,22 +13,17 @@ trait WorkbookChartAxisTitleFormat
 }
 object WorkbookChartAxisTitleFormat {
   
-  @scala.inline
-  def apply(): WorkbookChartAxisTitleFormat = {
+  inline def apply(): WorkbookChartAxisTitleFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartAxisTitleFormat]
   }
   
-  @scala.inline
-  implicit class WorkbookChartAxisTitleFormatMutableBuilder[Self <: WorkbookChartAxisTitleFormat] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartAxisTitleFormat](x: Self) {
     
-    @scala.inline
-    def setFont(value: NullableOption[WorkbookChartFont]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: NullableOption[WorkbookChartFont]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontNull: Self = StObject.set(x, "font", null)
+    inline def setFontNull: Self = StObject.set(x, "font", null)
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
   }
 }

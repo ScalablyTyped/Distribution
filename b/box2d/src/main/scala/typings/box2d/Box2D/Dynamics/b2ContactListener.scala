@@ -36,8 +36,7 @@ trait b2ContactListener extends StObject {
 }
 object b2ContactListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginContact: b2Contact => Unit,
     EndContact: b2Contact => Unit,
     PostSolve: (b2Contact, b2ContactImpulse) => Unit,
@@ -47,19 +46,14 @@ object b2ContactListener {
     __obj.asInstanceOf[b2ContactListener]
   }
   
-  @scala.inline
-  implicit class b2ContactListenerMutableBuilder[Self <: b2ContactListener] (val x: Self) extends AnyVal {
+  extension [Self <: b2ContactListener](x: Self) {
     
-    @scala.inline
-    def setBeginContact(value: b2Contact => Unit): Self = StObject.set(x, "BeginContact", js.Any.fromFunction1(value))
+    inline def setBeginContact(value: b2Contact => Unit): Self = StObject.set(x, "BeginContact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndContact(value: b2Contact => Unit): Self = StObject.set(x, "EndContact", js.Any.fromFunction1(value))
+    inline def setEndContact(value: b2Contact => Unit): Self = StObject.set(x, "EndContact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPostSolve(value: (b2Contact, b2ContactImpulse) => Unit): Self = StObject.set(x, "PostSolve", js.Any.fromFunction2(value))
+    inline def setPostSolve(value: (b2Contact, b2ContactImpulse) => Unit): Self = StObject.set(x, "PostSolve", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPreSolve(value: (b2Contact, b2Manifold) => Unit): Self = StObject.set(x, "PreSolve", js.Any.fromFunction2(value))
+    inline def setPreSolve(value: (b2Contact, b2Manifold) => Unit): Self = StObject.set(x, "PreSolve", js.Any.fromFunction2(value))
   }
 }

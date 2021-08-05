@@ -53,20 +53,16 @@ object mod {
   }
   object NoSleep {
     
-    @scala.inline
-    def apply(disable: () => Unit, enable: () => Unit): NoSleep = {
+    inline def apply(disable: () => Unit, enable: () => Unit): NoSleep = {
       val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable))
       __obj.asInstanceOf[NoSleep]
     }
     
-    @scala.inline
-    implicit class NoSleepMutableBuilder[Self <: NoSleep] (val x: Self) extends AnyVal {
+    extension [Self <: NoSleep](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     }
   }
 }

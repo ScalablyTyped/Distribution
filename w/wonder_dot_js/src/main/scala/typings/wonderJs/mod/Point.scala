@@ -19,12 +19,8 @@ object Point {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.pointMod.Point]
-  @scala.inline
-  def create(x: Double): typings.wonderJs.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.pointMod.Point]
-  @scala.inline
-  def create(x: Double, y: Double): typings.wonderJs.pointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.pointMod.Point]
-  @scala.inline
-  def create(x: Unit, y: Double): typings.wonderJs.pointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.pointMod.Point]
+  inline def create(): typings.wonderJs.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.pointMod.Point]
+  inline def create(x: Double): typings.wonderJs.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.pointMod.Point]
+  inline def create(x: Double, y: Double): typings.wonderJs.pointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.pointMod.Point]
+  inline def create(x: Unit, y: Double): typings.wonderJs.pointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.pointMod.Point]
 }

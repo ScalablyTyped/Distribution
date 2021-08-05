@@ -9,6 +9,5 @@ object global {
   @JSGlobal("StatusBar")
   @js.native
   def StatusBar: typings.cordovaPluginStatusbar.StatusBar = js.native
-  @scala.inline
-  def StatusBar_=(x: StatusBar): Unit = js.Dynamic.global.updateDynamic("StatusBar")(x.asInstanceOf[js.Any])
+  inline def StatusBar_=(x: StatusBar): Unit = js.Dynamic.global.updateDynamic("StatusBar")(x.asInstanceOf[js.Any])
 }

@@ -19,8 +19,7 @@ trait AccessType extends StObject {
 }
 object AccessType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessType: String,
     id: js.Any,
     model: String | Model,
@@ -31,25 +30,18 @@ object AccessType {
     __obj.asInstanceOf[AccessType]
   }
   
-  @scala.inline
-  implicit class AccessTypeMutableBuilder[Self <: AccessType] (val x: Self) extends AnyVal {
+  extension [Self <: AccessType](x: Self) {
     
-    @scala.inline
-    def setAccessType(value: String): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
+    inline def setAccessType(value: String): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String | Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipals(value: js.Array[js.Any]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: js.Array[js.Any]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsVarargs(value: js.Any*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: js.Any*): Self = StObject.set(x, "principals", js.Array(value :_*))
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

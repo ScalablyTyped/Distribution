@@ -43,25 +43,19 @@ trait Block
 }
 object Block {
   
-  @scala.inline
-  def apply(declare: BlockSignature => Unit, handle: NativePointer, implementation: AnyFunction): Block = {
+  inline def apply(declare: BlockSignature => Unit, handle: NativePointer, implementation: AnyFunction): Block = {
     val __obj = js.Dynamic.literal(declare = js.Any.fromFunction1(declare), handle = handle.asInstanceOf[js.Any], implementation = implementation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setDeclare(value: BlockSignature => Unit): Self = StObject.set(x, "declare", js.Any.fromFunction1(value))
+    inline def setDeclare(value: BlockSignature => Unit): Self = StObject.set(x, "declare", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImplementation(value: AnyFunction): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: AnyFunction): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }
 }

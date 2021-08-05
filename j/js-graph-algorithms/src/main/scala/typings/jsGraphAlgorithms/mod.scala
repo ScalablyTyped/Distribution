@@ -14,19 +14,19 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.BellmanFord {
     def this(G: typings.jsGraphAlgorithms.JsGraphs.WeightedGraph, s: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cost: js.Any = js.native
     
     /* CompleteClass */
     override def distanceTo(v: Double): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edgeTo: js.Any = js.native
     
     /* CompleteClass */
     override def hasPathTo(v: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
@@ -35,7 +35,7 @@ object mod {
     /* CompleteClass */
     override def relax(e: typings.jsGraphAlgorithms.JsGraphs.Edge): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var s: js.Any = js.native
   }
   
@@ -46,22 +46,22 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.BreadthFirstSearch {
     def this(G: typings.jsGraphAlgorithms.JsGraphs.Graph, s: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var V: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edgeTo: js.Any = js.native
     
     /* CompleteClass */
     override def hasPathTo(v: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
     override def pathTo(v: Double): js.Array[Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var s: js.Any = js.native
   }
   
@@ -78,16 +78,16 @@ object mod {
     /* CompleteClass */
     override def componentId(v: Double): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var count: js.Any = js.native
     
     /* CompleteClass */
     override def dfs(G: typings.jsGraphAlgorithms.JsGraphs.Graph, v: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var id: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
   }
   
@@ -101,19 +101,19 @@ object mod {
     /* CompleteClass */
     override def dfs(G: typings.jsGraphAlgorithms.JsGraphs.Graph, v: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edgeTo: js.Any = js.native
     
     /* CompleteClass */
     override def hasPathTo(v: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
     override def pathTo(v: Double): js.Array[Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var s: js.Any = js.native
   }
   
@@ -133,19 +133,19 @@ object mod {
     /* CompleteClass */
     override def adj(v: Double): js.Array[Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var adjList: js.Any = js.native
     
     /* CompleteClass */
     override def edge(v: Double, w: Double): typings.jsGraphAlgorithms.JsGraphs.Edge | Null = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edges: js.Any = js.native
     
     /* CompleteClass */
     override def node(v: Double): Node = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nodeInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -159,31 +159,31 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.Dijkstra {
     def this(G: typings.jsGraphAlgorithms.JsGraphs.WeightedGraph, s: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cost: js.Any = js.native
     
     /* CompleteClass */
     override def distanceTo(v: Double): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edgeTo: js.Any = js.native
     
     /* CompleteClass */
     override def hasPathTo(v: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
     override def pathTo(v: Double): js.Array[typings.jsGraphAlgorithms.JsGraphs.Edge] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var pq: js.Any = js.native
     
     /* CompleteClass */
     override def relax(e: typings.jsGraphAlgorithms.JsGraphs.Edge): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var s: js.Any = js.native
   }
   
@@ -194,13 +194,13 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.EagerPrimMST {
     def this(G: typings.jsGraphAlgorithms.JsGraphs.WeightedGraph) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
     var mst: js.Array[typings.jsGraphAlgorithms.JsGraphs.Edge] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var pq: js.Any = js.native
     
     /* CompleteClass */
@@ -226,10 +226,10 @@ object mod {
     /* CompleteClass */
     override def to(): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var v: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var w: js.Any = js.native
     
     /* CompleteClass */
@@ -246,10 +246,10 @@ object mod {
     /* CompleteClass */
     override def addResidualFlowTo(x: Double, deltaFlow: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var capacity: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var flow: js.Any = js.native
     
     /* CompleteClass */
@@ -264,10 +264,10 @@ object mod {
     /* CompleteClass */
     override def to(): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var v: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var w: js.Any = js.native
   }
   
@@ -287,7 +287,7 @@ object mod {
     /* CompleteClass */
     override def adj(v: Double): js.Array[typings.jsGraphAlgorithms.JsGraphs.FlowEdge] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var adjList: js.Any = js.native
     
     /* CompleteClass */
@@ -296,7 +296,7 @@ object mod {
     /* CompleteClass */
     override def node(v: Double): Node = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nodeInfo: js.Any = js.native
   }
   
@@ -307,22 +307,22 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.FordFulkerson {
     def this(G: typings.jsGraphAlgorithms.JsGraphs.FlowNetwork, s: Double, t: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edgeTo: js.Any = js.native
     
     /* CompleteClass */
     override def hasAugmentedPath(G: typings.jsGraphAlgorithms.JsGraphs.FlowNetwork): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
     override def minCut(G: typings.jsGraphAlgorithms.JsGraphs.FlowNetwork): js.Array[typings.jsGraphAlgorithms.JsGraphs.FlowEdge] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var s: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var t: js.Any = js.native
     
     /* CompleteClass */
@@ -345,19 +345,19 @@ object mod {
     /* CompleteClass */
     override def adj(v: Double): js.Array[Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var adjList: js.Any = js.native
     
     /* CompleteClass */
     override def edge(v: Double, w: Double): typings.jsGraphAlgorithms.JsGraphs.Edge | Null = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edges: js.Any = js.native
     
     /* CompleteClass */
     override def node(v: Double): Node = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nodeInfo: js.Any = js.native
   }
   
@@ -369,10 +369,10 @@ object mod {
     def this(N: Double) = this()
     def this(N: Double, compare: js.Function2[/* a1 */ js.Any, /* a2 */ js.Any, Double]) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var N: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var compare: js.Any = js.native
     
     /* CompleteClass */
@@ -390,7 +390,7 @@ object mod {
     /* CompleteClass */
     override def isEmpty(): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var keys: js.Any = js.native
     
     /* CompleteClass */
@@ -399,10 +399,10 @@ object mod {
     /* CompleteClass */
     override def minKey(): T | Null = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var pq: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var qp: js.Any = js.native
     
     /* CompleteClass */
@@ -433,13 +433,13 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.LazyPrimMST {
     def this(G: typings.jsGraphAlgorithms.JsGraphs.WeightedGraph) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
     var mst: js.Array[typings.jsGraphAlgorithms.JsGraphs.Edge] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var pq: js.Any = js.native
     
     /* CompleteClass */
@@ -453,10 +453,10 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.MinPQ[T] {
     def this(compare: js.Function2[/* a1 */ js.Any, /* a2 */ js.Any, Double]) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var N: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var compare: js.Any = js.native
     
     /* CompleteClass */
@@ -468,7 +468,7 @@ object mod {
     /* CompleteClass */
     override def isEmpty(): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var s: js.Any = js.native
     
     /* CompleteClass */
@@ -487,7 +487,7 @@ object mod {
     extends StObject
        with typings.jsGraphAlgorithms.JsGraphs.Queue[T] {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var N: js.Any = js.native
     
     /* CompleteClass */
@@ -496,13 +496,13 @@ object mod {
     /* CompleteClass */
     override def enqueue(item: T): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var first: js.Any = js.native
     
     /* CompleteClass */
     override def isEmpty(): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var last: js.Any = js.native
     
     /* CompleteClass */
@@ -536,7 +536,7 @@ object mod {
     /* CompleteClass */
     override def connected(v: Double, w: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var id: js.Any = js.native
     
     /* CompleteClass */
@@ -579,16 +579,16 @@ object mod {
     /* CompleteClass */
     override def componentId(v: Double): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var count: js.Any = js.native
     
     /* CompleteClass */
     override def dfs(G: typings.jsGraphAlgorithms.JsGraphs.DiGraph, v: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var id: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
   }
   
@@ -602,13 +602,13 @@ object mod {
     /* CompleteClass */
     override def dfs(G: typings.jsGraphAlgorithms.JsGraphs.DiGraph, v: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
     override def order(): js.Array[Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var postOrder: js.Any = js.native
   }
   
@@ -619,19 +619,19 @@ object mod {
        with typings.jsGraphAlgorithms.JsGraphs.TopologicalSortShortestPaths {
     def this(G: typings.jsGraphAlgorithms.JsGraphs.WeightedDiGraph, s: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cost: js.Any = js.native
     
     /* CompleteClass */
     override def distanceTo(v: Double): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var edgeTo: js.Any = js.native
     
     /* CompleteClass */
     override def hasPathTo(v: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var marked: js.Any = js.native
     
     /* CompleteClass */
@@ -640,7 +640,7 @@ object mod {
     /* CompleteClass */
     override def relax(e: typings.jsGraphAlgorithms.JsGraphs.Edge): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var s: js.Any = js.native
   }
   
@@ -659,7 +659,7 @@ object mod {
     /* CompleteClass */
     override def adj(v: Double): js.Array[typings.jsGraphAlgorithms.JsGraphs.Edge] = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var adjList: js.Array[js.Array[typings.jsGraphAlgorithms.JsGraphs.Edge]] = js.native
     
     /* CompleteClass */
@@ -668,7 +668,7 @@ object mod {
     /* CompleteClass */
     override def node(v: Double): Node = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nodeInfo: js.Any = js.native
     
     /* CompleteClass */
@@ -691,7 +691,7 @@ object mod {
     /* CompleteClass */
     override def adj(v: Double): js.Array[typings.jsGraphAlgorithms.JsGraphs.Edge] = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var adjList: js.Array[js.Array[typings.jsGraphAlgorithms.JsGraphs.Edge]] = js.native
     
     /* CompleteClass */
@@ -700,7 +700,7 @@ object mod {
     /* CompleteClass */
     override def node(v: Double): Node = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nodeInfo: js.Any = js.native
   }
 }

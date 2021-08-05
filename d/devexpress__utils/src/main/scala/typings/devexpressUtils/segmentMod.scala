@@ -21,7 +21,7 @@ object segmentMod {
     
     var endPoint: T = js.native
     
-    var intersectCore: js.Any = js.native
+    /* private */ var intersectCore: js.Any = js.native
     
     def isIntersected[AnotherT /* <: Point */](segment: Segment[AnotherT]): Boolean = js.native
     

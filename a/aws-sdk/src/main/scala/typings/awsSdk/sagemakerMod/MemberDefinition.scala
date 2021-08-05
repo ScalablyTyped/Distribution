@@ -18,25 +18,19 @@ trait MemberDefinition extends StObject {
 }
 object MemberDefinition {
   
-  @scala.inline
-  def apply(): MemberDefinition = {
+  inline def apply(): MemberDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberDefinition]
   }
   
-  @scala.inline
-  implicit class MemberDefinitionMutableBuilder[Self <: MemberDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: MemberDefinition](x: Self) {
     
-    @scala.inline
-    def setCognitoMemberDefinition(value: CognitoMemberDefinition): Self = StObject.set(x, "CognitoMemberDefinition", value.asInstanceOf[js.Any])
+    inline def setCognitoMemberDefinition(value: CognitoMemberDefinition): Self = StObject.set(x, "CognitoMemberDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoMemberDefinitionUndefined: Self = StObject.set(x, "CognitoMemberDefinition", js.undefined)
+    inline def setCognitoMemberDefinitionUndefined: Self = StObject.set(x, "CognitoMemberDefinition", js.undefined)
     
-    @scala.inline
-    def setOidcMemberDefinition(value: OidcMemberDefinition): Self = StObject.set(x, "OidcMemberDefinition", value.asInstanceOf[js.Any])
+    inline def setOidcMemberDefinition(value: OidcMemberDefinition): Self = StObject.set(x, "OidcMemberDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcMemberDefinitionUndefined: Self = StObject.set(x, "OidcMemberDefinition", js.undefined)
+    inline def setOidcMemberDefinitionUndefined: Self = StObject.set(x, "OidcMemberDefinition", js.undefined)
   }
 }

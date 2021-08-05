@@ -13,16 +13,13 @@ trait OnDemandProvisioningSpecification extends StObject {
 }
 object OnDemandProvisioningSpecification {
   
-  @scala.inline
-  def apply(AllocationStrategy: OnDemandProvisioningAllocationStrategy): OnDemandProvisioningSpecification = {
+  inline def apply(AllocationStrategy: OnDemandProvisioningAllocationStrategy): OnDemandProvisioningSpecification = {
     val __obj = js.Dynamic.literal(AllocationStrategy = AllocationStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDemandProvisioningSpecification]
   }
   
-  @scala.inline
-  implicit class OnDemandProvisioningSpecificationMutableBuilder[Self <: OnDemandProvisioningSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: OnDemandProvisioningSpecification](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: OnDemandProvisioningAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: OnDemandProvisioningAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
   }
 }

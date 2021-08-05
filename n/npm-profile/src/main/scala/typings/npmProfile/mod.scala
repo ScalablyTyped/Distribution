@@ -19,30 +19,20 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String]): js.Promise[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToken")(password.asInstanceOf[js.Any], readonly.asInstanceOf[js.Any], cidr_whitelist.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token]]
-  @scala.inline
-  def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String], options: Options): js.Promise[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToken")(password.asInstanceOf[js.Any], readonly.asInstanceOf[js.Any], cidr_whitelist.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token]]
+  inline def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String]): js.Promise[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToken")(password.asInstanceOf[js.Any], readonly.asInstanceOf[js.Any], cidr_whitelist.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token]]
+  inline def createToken(password: String, readonly: Boolean, cidr_whitelist: js.Array[String], options: Options): js.Promise[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("createToken")(password.asInstanceOf[js.Any], readonly.asInstanceOf[js.Any], cidr_whitelist.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token]]
   
-  @scala.inline
-  def get(): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[ProfileData]]
-  @scala.inline
-  def get(options: Options): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileData]]
+  inline def get(): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[ProfileData]]
+  inline def get(options: Options): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileData]]
   
-  @scala.inline
-  def listTokens(): js.Promise[js.Array[Token]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTokens")().asInstanceOf[js.Promise[js.Array[Token]]]
-  @scala.inline
-  def listTokens(options: Options): js.Promise[js.Array[Token]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTokens")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Token]]]
+  inline def listTokens(): js.Promise[js.Array[Token]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTokens")().asInstanceOf[js.Promise[js.Array[Token]]]
+  inline def listTokens(options: Options): js.Promise[js.Array[Token]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTokens")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Token]]]
   
-  @scala.inline
-  def removeToken(tokenOrKey: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeToken")(tokenOrKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def removeToken(tokenOrKey: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeToken")(tokenOrKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def removeToken(tokenOrKey: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeToken")(tokenOrKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def removeToken(tokenOrKey: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeToken")(tokenOrKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def set(updateOptions: UpdateProfileData): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(updateOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileData]]
-  @scala.inline
-  def set(updateOptions: UpdateProfileData, options: Options): js.Promise[ProfileData] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(updateOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProfileData]]
+  inline def set(updateOptions: UpdateProfileData): js.Promise[ProfileData] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(updateOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProfileData]]
+  inline def set(updateOptions: UpdateProfileData, options: Options): js.Promise[ProfileData] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(updateOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProfileData]]
   
   trait FetchProfileError
     extends StObject
@@ -64,8 +54,7 @@ object mod {
   }
   object FetchProfileError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: Uint8Array,
       code: String,
       headers: StringDictionary[js.Any],
@@ -79,32 +68,23 @@ object mod {
       __obj.asInstanceOf[FetchProfileError]
     }
     
-    @scala.inline
-    implicit class FetchProfileErrorMutableBuilder[Self <: FetchProfileError] (val x: Self) extends AnyVal {
+    extension [Self <: FetchProfileError](x: Self) {
       
-      @scala.inline
-      def setBody(value: Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgid(value: String): Self = StObject.set(x, "pkgid", value.asInstanceOf[js.Any])
+      inline def setPkgid(value: String): Self = StObject.set(x, "pkgid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgidUndefined: Self = StObject.set(x, "pkgid", js.undefined)
+      inline def setPkgidUndefined: Self = StObject.set(x, "pkgid", js.undefined)
       
-      @scala.inline
-      def setStatucCode(value: Double): Self = StObject.set(x, "statucCode", value.asInstanceOf[js.Any])
+      inline def setStatucCode(value: Double): Self = StObject.set(x, "statucCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,29 +101,21 @@ object mod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def error: typings.npmProfile.npmProfileStrings.error = "error".asInstanceOf[typings.npmProfile.npmProfileStrings.error]
+    inline def error: typings.npmProfile.npmProfileStrings.error = "error".asInstanceOf[typings.npmProfile.npmProfileStrings.error]
     
-    @scala.inline
-    def http: typings.npmProfile.npmProfileStrings.http = "http".asInstanceOf[typings.npmProfile.npmProfileStrings.http]
+    inline def http: typings.npmProfile.npmProfileStrings.http = "http".asInstanceOf[typings.npmProfile.npmProfileStrings.http]
     
-    @scala.inline
-    def info: typings.npmProfile.npmProfileStrings.info = "info".asInstanceOf[typings.npmProfile.npmProfileStrings.info]
+    inline def info: typings.npmProfile.npmProfileStrings.info = "info".asInstanceOf[typings.npmProfile.npmProfileStrings.info]
     
-    @scala.inline
-    def notice: typings.npmProfile.npmProfileStrings.notice = "notice".asInstanceOf[typings.npmProfile.npmProfileStrings.notice]
+    inline def notice: typings.npmProfile.npmProfileStrings.notice = "notice".asInstanceOf[typings.npmProfile.npmProfileStrings.notice]
     
-    @scala.inline
-    def silly: typings.npmProfile.npmProfileStrings.silly = "silly".asInstanceOf[typings.npmProfile.npmProfileStrings.silly]
+    inline def silly: typings.npmProfile.npmProfileStrings.silly = "silly".asInstanceOf[typings.npmProfile.npmProfileStrings.silly]
     
-    @scala.inline
-    def timing: typings.npmProfile.npmProfileStrings.timing = "timing".asInstanceOf[typings.npmProfile.npmProfileStrings.timing]
+    inline def timing: typings.npmProfile.npmProfileStrings.timing = "timing".asInstanceOf[typings.npmProfile.npmProfileStrings.timing]
     
-    @scala.inline
-    def verbose: typings.npmProfile.npmProfileStrings.verbose = "verbose".asInstanceOf[typings.npmProfile.npmProfileStrings.verbose]
+    inline def verbose: typings.npmProfile.npmProfileStrings.verbose = "verbose".asInstanceOf[typings.npmProfile.npmProfileStrings.verbose]
     
-    @scala.inline
-    def warn: typings.npmProfile.npmProfileStrings.warn = "warn".asInstanceOf[typings.npmProfile.npmProfileStrings.warn]
+    inline def warn: typings.npmProfile.npmProfileStrings.warn = "warn".asInstanceOf[typings.npmProfile.npmProfileStrings.warn]
   }
   
   trait Options
@@ -152,8 +124,7 @@ object mod {
        with ProfileFetchOptions
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
@@ -167,21 +138,17 @@ object mod {
   }
   object PasswordUpdate {
     
-    @scala.inline
-    def apply(`new`: String, old: String): PasswordUpdate = {
+    inline def apply(`new`: String, old: String): PasswordUpdate = {
       val __obj = js.Dynamic.literal(old = old.asInstanceOf[js.Any])
       __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PasswordUpdate]
     }
     
-    @scala.inline
-    implicit class PasswordUpdateMutableBuilder[Self <: PasswordUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: PasswordUpdate](x: Self) {
       
-      @scala.inline
-      def setNew(value: String): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+      inline def setNew(value: String): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOld(value: String): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+      inline def setOld(value: String): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,20 +166,16 @@ object mod {
   }
   object ProfileCredentials {
     
-    @scala.inline
-    def apply(email: String, username: String): ProfileCredentials = {
+    inline def apply(email: String, username: String): ProfileCredentials = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProfileCredentials]
     }
     
-    @scala.inline
-    implicit class ProfileCredentialsMutableBuilder[Self <: ProfileCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: ProfileCredentials](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,8 +210,7 @@ object mod {
   }
   object ProfileData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: Date | String,
       email: String,
       email_verified: Boolean,
@@ -259,68 +221,47 @@ object mod {
       __obj.asInstanceOf[ProfileData]
     }
     
-    @scala.inline
-    implicit class ProfileDataMutableBuilder[Self <: ProfileData] (val x: Self) extends AnyVal {
+    extension [Self <: ProfileData](x: Self) {
       
-      @scala.inline
-      def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
+      inline def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidr_whitelistNull: Self = StObject.set(x, "cidr_whitelist", null)
+      inline def setCidr_whitelistNull: Self = StObject.set(x, "cidr_whitelist", null)
       
-      @scala.inline
-      def setCidr_whitelistVarargs(value: String*): Self = StObject.set(x, "cidr_whitelist", js.Array(value :_*))
+      inline def setCidr_whitelistVarargs(value: String*): Self = StObject.set(x, "cidr_whitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setCreated(value: Date | String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Date | String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
+      inline def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreenode(value: String): Self = StObject.set(x, "freenode", value.asInstanceOf[js.Any])
+      inline def setFreenode(value: String): Self = StObject.set(x, "freenode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreenodeUndefined: Self = StObject.set(x, "freenode", js.undefined)
+      inline def setFreenodeUndefined: Self = StObject.set(x, "freenode", js.undefined)
       
-      @scala.inline
-      def setFullname(value: String): Self = StObject.set(x, "fullname", value.asInstanceOf[js.Any])
+      inline def setFullname(value: String): Self = StObject.set(x, "fullname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullnameUndefined: Self = StObject.set(x, "fullname", js.undefined)
+      inline def setFullnameUndefined: Self = StObject.set(x, "fullname", js.undefined)
       
-      @scala.inline
-      def setGithub(value: String): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
+      inline def setGithub(value: String): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
+      inline def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
       
-      @scala.inline
-      def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+      inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+      inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTfa(value: TFAStatus): Self = StObject.set(x, "tfa", value.asInstanceOf[js.Any])
+      inline def setTfa(value: TFAStatus): Self = StObject.set(x, "tfa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTfaNull: Self = StObject.set(x, "tfa", null)
+      inline def setTfaNull: Self = StObject.set(x, "tfa", null)
       
-      @scala.inline
-      def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+      inline def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
+      inline def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
       
-      @scala.inline
-      def setUpdated(value: Date | String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: Date | String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,26 +278,20 @@ object mod {
   }
   object ProfileFetchOptions {
     
-    @scala.inline
-    def apply(): ProfileFetchOptions = {
+    inline def apply(): ProfileFetchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProfileFetchOptions]
     }
     
-    @scala.inline
-    implicit class ProfileFetchOptionsMutableBuilder[Self <: ProfileFetchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProfileFetchOptions](x: Self) {
       
-      @scala.inline
-      def setCreds(value: ProfileCredentials): Self = StObject.set(x, "creds", value.asInstanceOf[js.Any])
+      inline def setCreds(value: ProfileCredentials): Self = StObject.set(x, "creds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredsUndefined: Self = StObject.set(x, "creds", js.undefined)
+      inline def setCredsUndefined: Self = StObject.set(x, "creds", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     }
   }
   
@@ -377,20 +312,16 @@ object mod {
   }
   object TFAStatusUpdate {
     
-    @scala.inline
-    def apply(mode: disable | `auth-only` | `auth-and-writes`, password: String): TFAStatusUpdate = {
+    inline def apply(mode: disable | `auth-only` | `auth-and-writes`, password: String): TFAStatusUpdate = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[TFAStatusUpdate]
     }
     
-    @scala.inline
-    implicit class TFAStatusUpdateMutableBuilder[Self <: TFAStatusUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: TFAStatusUpdate](x: Self) {
       
-      @scala.inline
-      def setMode(value: disable | `auth-only` | `auth-and-writes`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: disable | `auth-only` | `auth-and-writes`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   
@@ -428,8 +359,7 @@ object mod {
   }
   object Token {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cidr_whitelist: js.Array[String],
       created: Date | String,
       key: String,
@@ -440,32 +370,23 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
+      inline def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidr_whitelistVarargs(value: String*): Self = StObject.set(x, "cidr_whitelist", js.Array(value :_*))
+      inline def setCidr_whitelistVarargs(value: String*): Self = StObject.set(x, "cidr_whitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setCreated(value: Date | String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Date | String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+      inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenNull: Self = StObject.set(x, "token", null)
+      inline def setTokenNull: Self = StObject.set(x, "token", null)
       
-      @scala.inline
-      def setUpdated(value: Date | String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: Date | String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -481,26 +402,20 @@ object mod {
   }
   object UpdateOptions {
     
-    @scala.inline
-    def apply(): UpdateOptions = {
+    inline def apply(): UpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    @scala.inline
-    implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateOptions](x: Self) {
       
-      @scala.inline
-      def setPassword(value: PasswordUpdate): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: PasswordUpdate): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setTfa(value: TFAStatusUpdate): Self = StObject.set(x, "tfa", value.asInstanceOf[js.Any])
+      inline def setTfa(value: TFAStatusUpdate): Self = StObject.set(x, "tfa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTfaUndefined: Self = StObject.set(x, "tfa", js.undefined)
+      inline def setTfaUndefined: Self = StObject.set(x, "tfa", js.undefined)
     }
   }
   
@@ -533,80 +448,56 @@ object mod {
   }
   object UpdateProfileData {
     
-    @scala.inline
-    def apply(): UpdateProfileData = {
+    inline def apply(): UpdateProfileData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateProfileData]
     }
     
-    @scala.inline
-    implicit class UpdateProfileDataMutableBuilder[Self <: UpdateProfileData] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateProfileData](x: Self) {
       
-      @scala.inline
-      def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
+      inline def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidr_whitelistNull: Self = StObject.set(x, "cidr_whitelist", null)
+      inline def setCidr_whitelistNull: Self = StObject.set(x, "cidr_whitelist", null)
       
-      @scala.inline
-      def setCidr_whitelistUndefined: Self = StObject.set(x, "cidr_whitelist", js.undefined)
+      inline def setCidr_whitelistUndefined: Self = StObject.set(x, "cidr_whitelist", js.undefined)
       
-      @scala.inline
-      def setCidr_whitelistVarargs(value: String*): Self = StObject.set(x, "cidr_whitelist", js.Array(value :_*))
+      inline def setCidr_whitelistVarargs(value: String*): Self = StObject.set(x, "cidr_whitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFreenode(value: String): Self = StObject.set(x, "freenode", value.asInstanceOf[js.Any])
+      inline def setFreenode(value: String): Self = StObject.set(x, "freenode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreenodeUndefined: Self = StObject.set(x, "freenode", js.undefined)
+      inline def setFreenodeUndefined: Self = StObject.set(x, "freenode", js.undefined)
       
-      @scala.inline
-      def setFullname(value: String): Self = StObject.set(x, "fullname", value.asInstanceOf[js.Any])
+      inline def setFullname(value: String): Self = StObject.set(x, "fullname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullnameUndefined: Self = StObject.set(x, "fullname", js.undefined)
+      inline def setFullnameUndefined: Self = StObject.set(x, "fullname", js.undefined)
       
-      @scala.inline
-      def setGithub(value: String): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
+      inline def setGithub(value: String): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
+      inline def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
       
-      @scala.inline
-      def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+      inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+      inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPassword(value: PasswordUpdate): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: PasswordUpdate): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setTfa(value: TFAStatusUpdate): Self = StObject.set(x, "tfa", value.asInstanceOf[js.Any])
+      inline def setTfa(value: TFAStatusUpdate): Self = StObject.set(x, "tfa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTfaUndefined: Self = StObject.set(x, "tfa", js.undefined)
+      inline def setTfaUndefined: Self = StObject.set(x, "tfa", js.undefined)
       
-      @scala.inline
-      def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+      inline def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
+      inline def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
     }
   }
   
@@ -626,8 +517,7 @@ object mod {
       }
       object Process {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           emit: (log, LogLevel, /* repeated */ String) => Boolean,
           on: (`log `, js.Function1[/* logLevel */ LogLevel, Unit]) => Process
         ): Process = {
@@ -635,14 +525,11 @@ object mod {
           __obj.asInstanceOf[Process]
         }
         
-        @scala.inline
-        implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+        extension [Self <: Process](x: Self) {
           
-          @scala.inline
-          def setEmit(value: (log, LogLevel, /* repeated */ String) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction3(value))
+          inline def setEmit(value: (log, LogLevel, /* repeated */ String) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setOn(value: (`log `, js.Function1[/* logLevel */ LogLevel, Unit]) => Process): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+          inline def setOn(value: (`log `, js.Function1[/* logLevel */ LogLevel, Unit]) => Process): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
         }
       }
     }

@@ -10,7 +10,7 @@ trait Dialog extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Dialog_typekey")
+  /* private */ @JSName("Excel.Dialog_typekey")
   var ExcelDotDialog_typekey: Dialog
   
   val Parent: js.Any
@@ -50,26 +50,20 @@ trait Dialog extends StObject {
 }
 object Dialog {
   
-  @scala.inline
-  def apply(Application: Application, Creator: XlCreator, ExcelDotDialog_typekey: Dialog, Parent: js.Any): Dialog = {
+  inline def apply(Application: Application, Creator: XlCreator, ExcelDotDialog_typekey: Dialog, Parent: js.Any): Dialog = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.Dialog_typekey")(ExcelDotDialog_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dialog]
   }
   
-  @scala.inline
-  implicit class DialogMutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
+  extension [Self <: Dialog](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotDialog_typekey(value: Dialog): Self = StObject.set(x, "Excel.Dialog_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotDialog_typekey(value: Dialog): Self = StObject.set(x, "Excel.Dialog_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

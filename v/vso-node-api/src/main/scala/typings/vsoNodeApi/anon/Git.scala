@@ -12,19 +12,15 @@ trait Git extends StObject {
 }
 object Git {
   
-  @scala.inline
-  def apply(git: scala.Double, tfvc: scala.Double): Git = {
+  inline def apply(git: scala.Double, tfvc: scala.Double): Git = {
     val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], tfvc = tfvc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Git]
   }
   
-  @scala.inline
-  implicit class GitMutableBuilder[Self <: Git] (val x: Self) extends AnyVal {
+  extension [Self <: Git](x: Self) {
     
-    @scala.inline
-    def setGit(value: scala.Double): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+    inline def setGit(value: scala.Double): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfvc(value: scala.Double): Self = StObject.set(x, "tfvc", value.asInstanceOf[js.Any])
+    inline def setTfvc(value: scala.Double): Self = StObject.set(x, "tfvc", value.asInstanceOf[js.Any])
   }
 }

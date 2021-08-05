@@ -14,22 +14,17 @@ trait Genre extends StObject {
 }
 object Genre {
   
-  @scala.inline
-  def apply(genre: String, search: String, skip: Double): Genre = {
+  inline def apply(genre: String, search: String, skip: Double): Genre = {
     val __obj = js.Dynamic.literal(genre = genre.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Genre]
   }
   
-  @scala.inline
-  implicit class GenreMutableBuilder[Self <: Genre] (val x: Self) extends AnyVal {
+  extension [Self <: Genre](x: Self) {
     
-    @scala.inline
-    def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+    inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
   }
 }

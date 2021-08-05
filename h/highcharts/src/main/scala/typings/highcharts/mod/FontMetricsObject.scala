@@ -23,22 +23,17 @@ trait FontMetricsObject extends StObject {
 }
 object FontMetricsObject {
   
-  @scala.inline
-  def apply(b: Double, f: Double, h: Double): FontMetricsObject = {
+  inline def apply(b: Double, f: Double, h: Double): FontMetricsObject = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontMetricsObject]
   }
   
-  @scala.inline
-  implicit class FontMetricsObjectMutableBuilder[Self <: FontMetricsObject] (val x: Self) extends AnyVal {
+  extension [Self <: FontMetricsObject](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
   }
 }

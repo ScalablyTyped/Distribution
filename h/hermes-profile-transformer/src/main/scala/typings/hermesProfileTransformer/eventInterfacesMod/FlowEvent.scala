@@ -17,20 +17,17 @@ trait FlowEvent
      with Event
 object FlowEvent {
   
-  @scala.inline
-  def FlowEventEnd(ph: FLOW_EVENTS_END): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventEnd = {
+  inline def FlowEventEnd(ph: FLOW_EVENTS_END): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventEnd = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.FlowEventEnd]
   }
   
-  @scala.inline
-  def FlowEventStart(ph: FLOW_EVENTS_START): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStart = {
+  inline def FlowEventStart(ph: FLOW_EVENTS_START): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStart = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStart]
   }
   
-  @scala.inline
-  def FlowEventStep(ph: FLOW_EVENTS_STEP): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStep = {
+  inline def FlowEventStep(ph: FLOW_EVENTS_STEP): typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStep = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.FlowEventStep]
   }

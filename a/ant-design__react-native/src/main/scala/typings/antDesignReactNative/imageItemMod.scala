@@ -25,8 +25,7 @@ object imageItemMod {
       @JSImport("@ant-design/react-native/lib/image-picker/ImageItem", "default.defaultProps.selected")
       @js.native
       def selected: Boolean = js.native
-      @scala.inline
-      def selected_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selected")(x.asInstanceOf[js.Any])
+      inline def selected_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selected")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -60,50 +59,36 @@ object imageItemMod {
   }
   object ImageItemProps {
     
-    @scala.inline
-    def apply(imageMargin: Double, imagesPerRow: Double): ImageItemProps = {
+    inline def apply(imageMargin: Double, imagesPerRow: Double): ImageItemProps = {
       val __obj = js.Dynamic.literal(imageMargin = imageMargin.asInstanceOf[js.Any], imagesPerRow = imagesPerRow.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageItemProps]
     }
     
-    @scala.inline
-    implicit class ImageItemPropsMutableBuilder[Self <: ImageItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageItemProps](x: Self) {
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
+      inline def setContainerWidthUndefined: Self = StObject.set(x, "containerWidth", js.undefined)
       
-      @scala.inline
-      def setImageMargin(value: Double): Self = StObject.set(x, "imageMargin", value.asInstanceOf[js.Any])
+      inline def setImageMargin(value: Double): Self = StObject.set(x, "imageMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesPerRow(value: Double): Self = StObject.set(x, "imagesPerRow", value.asInstanceOf[js.Any])
+      inline def setImagesPerRow(value: Double): Self = StObject.set(x, "imagesPerRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedMarker(value: Element): Self = StObject.set(x, "selectedMarker", value.asInstanceOf[js.Any])
+      inline def setSelectedMarker(value: Element): Self = StObject.set(x, "selectedMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedMarkerUndefined: Self = StObject.set(x, "selectedMarker", js.undefined)
+      inline def setSelectedMarkerUndefined: Self = StObject.set(x, "selectedMarker", js.undefined)
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     }
   }
 }

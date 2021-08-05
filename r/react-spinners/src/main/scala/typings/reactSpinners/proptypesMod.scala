@@ -14,17 +14,12 @@ object proptypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def heightWidthDefaults(height: Double, width: Double): RequiredLoaderHeightWidth = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidth]
+  inline def heightWidthDefaults(height: Double, width: Double): RequiredLoaderHeightWidth = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidth]
   
-  @scala.inline
-  def heightWidthRadiusDefaults(height: Double, width: Double): RequiredLoaderHeightWidthColor = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthRadiusDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidthColor]
-  @scala.inline
-  def heightWidthRadiusDefaults(height: Double, width: Double, radius: Double): RequiredLoaderHeightWidthColor = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthRadiusDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidthColor]
+  inline def heightWidthRadiusDefaults(height: Double, width: Double): RequiredLoaderHeightWidthColor = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthRadiusDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidthColor]
+  inline def heightWidthRadiusDefaults(height: Double, width: Double, radius: Double): RequiredLoaderHeightWidthColor = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthRadiusDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidthColor]
   
-  @scala.inline
-  def sizeDefaults(sizeValue: Double): RequiredLoaderSizeProps = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeDefaults")(sizeValue.asInstanceOf[js.Any]).asInstanceOf[RequiredLoaderSizeProps]
+  inline def sizeDefaults(sizeValue: Double): RequiredLoaderSizeProps = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeDefaults")(sizeValue.asInstanceOf[js.Any]).asInstanceOf[RequiredLoaderSizeProps]
   
-  @scala.inline
-  def sizeMarginDefaults(sizeValue: Double): RequiredLoaderSizeMarginP = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeMarginDefaults")(sizeValue.asInstanceOf[js.Any]).asInstanceOf[RequiredLoaderSizeMarginP]
+  inline def sizeMarginDefaults(sizeValue: Double): RequiredLoaderSizeMarginP = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeMarginDefaults")(sizeValue.asInstanceOf[js.Any]).asInstanceOf[RequiredLoaderSizeMarginP]
 }

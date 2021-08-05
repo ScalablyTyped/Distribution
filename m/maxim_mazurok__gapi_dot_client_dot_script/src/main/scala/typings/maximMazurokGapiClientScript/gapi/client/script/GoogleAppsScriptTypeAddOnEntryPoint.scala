@@ -26,49 +26,35 @@ trait GoogleAppsScriptTypeAddOnEntryPoint extends StObject {
 }
 object GoogleAppsScriptTypeAddOnEntryPoint {
   
-  @scala.inline
-  def apply(): GoogleAppsScriptTypeAddOnEntryPoint = {
+  inline def apply(): GoogleAppsScriptTypeAddOnEntryPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsScriptTypeAddOnEntryPoint]
   }
   
-  @scala.inline
-  implicit class GoogleAppsScriptTypeAddOnEntryPointMutableBuilder[Self <: GoogleAppsScriptTypeAddOnEntryPoint] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsScriptTypeAddOnEntryPoint](x: Self) {
     
-    @scala.inline
-    def setAddOnType(value: String): Self = StObject.set(x, "addOnType", value.asInstanceOf[js.Any])
+    inline def setAddOnType(value: String): Self = StObject.set(x, "addOnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnTypeUndefined: Self = StObject.set(x, "addOnType", js.undefined)
+    inline def setAddOnTypeUndefined: Self = StObject.set(x, "addOnType", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
+    inline def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
+    inline def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
     
-    @scala.inline
-    def setPostInstallTipUrl(value: String): Self = StObject.set(x, "postInstallTipUrl", value.asInstanceOf[js.Any])
+    inline def setPostInstallTipUrl(value: String): Self = StObject.set(x, "postInstallTipUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostInstallTipUrlUndefined: Self = StObject.set(x, "postInstallTipUrl", js.undefined)
+    inline def setPostInstallTipUrlUndefined: Self = StObject.set(x, "postInstallTipUrl", js.undefined)
     
-    @scala.inline
-    def setReportIssueUrl(value: String): Self = StObject.set(x, "reportIssueUrl", value.asInstanceOf[js.Any])
+    inline def setReportIssueUrl(value: String): Self = StObject.set(x, "reportIssueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportIssueUrlUndefined: Self = StObject.set(x, "reportIssueUrl", js.undefined)
+    inline def setReportIssueUrlUndefined: Self = StObject.set(x, "reportIssueUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

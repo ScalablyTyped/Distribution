@@ -22,8 +22,7 @@ trait Apartment extends StObject {
 }
 object Apartment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apartment: String,
     city: String,
     country: String,
@@ -36,28 +35,20 @@ object Apartment {
     __obj.asInstanceOf[Apartment]
   }
   
-  @scala.inline
-  implicit class ApartmentMutableBuilder[Self <: Apartment] (val x: Self) extends AnyVal {
+  extension [Self <: Apartment](x: Self) {
     
-    @scala.inline
-    def setApartment(value: String): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
+    inline def setApartment(value: String): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+    inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
   }
 }

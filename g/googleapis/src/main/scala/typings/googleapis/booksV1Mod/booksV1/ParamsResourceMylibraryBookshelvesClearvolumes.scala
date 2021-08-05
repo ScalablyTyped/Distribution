@@ -29,31 +29,23 @@ trait ParamsResourceMylibraryBookshelvesClearvolumes
 }
 object ParamsResourceMylibraryBookshelvesClearvolumes {
   
-  @scala.inline
-  def apply(): ParamsResourceMylibraryBookshelvesClearvolumes = {
+  inline def apply(): ParamsResourceMylibraryBookshelvesClearvolumes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMylibraryBookshelvesClearvolumes]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMylibraryBookshelvesClearvolumesMutableBuilder[Self <: ParamsResourceMylibraryBookshelvesClearvolumes] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMylibraryBookshelvesClearvolumes](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setShelf(value: String): Self = StObject.set(x, "shelf", value.asInstanceOf[js.Any])
+    inline def setShelf(value: String): Self = StObject.set(x, "shelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShelfUndefined: Self = StObject.set(x, "shelf", js.undefined)
+    inline def setShelfUndefined: Self = StObject.set(x, "shelf", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

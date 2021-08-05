@@ -14,8 +14,7 @@ object tabBarStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): TabBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TabBarStyle]
+  inline def default(theme: Theme): TabBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[TabBarStyle]
   
   trait TabBarStyle extends StObject {
     
@@ -43,8 +42,7 @@ object tabBarStyleMod {
   }
   object TabBarStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       badge: ViewStyle,
       badgeText: TextStyle,
       barIcon: ImageStyle,
@@ -61,41 +59,29 @@ object tabBarStyleMod {
       __obj.asInstanceOf[TabBarStyle]
     }
     
-    @scala.inline
-    implicit class TabBarStyleMutableBuilder[Self <: TabBarStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TabBarStyle](x: Self) {
       
-      @scala.inline
-      def setBadge(value: ViewStyle): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: ViewStyle): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeText(value: TextStyle): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
+      inline def setBadgeText(value: TextStyle): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarIcon(value: ImageStyle): Self = StObject.set(x, "barIcon", value.asInstanceOf[js.Any])
+      inline def setBarIcon(value: ImageStyle): Self = StObject.set(x, "barIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarItem(value: ViewStyle): Self = StObject.set(x, "barItem", value.asInstanceOf[js.Any])
+      inline def setBarItem(value: ViewStyle): Self = StObject.set(x, "barItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarItemSelected(value: ViewStyle): Self = StObject.set(x, "barItemSelected", value.asInstanceOf[js.Any])
+      inline def setBarItemSelected(value: ViewStyle): Self = StObject.set(x, "barItemSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarItemTitle(value: TextStyle): Self = StObject.set(x, "barItemTitle", value.asInstanceOf[js.Any])
+      inline def setBarItemTitle(value: TextStyle): Self = StObject.set(x, "barItemTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentItem(value: ViewStyle): Self = StObject.set(x, "contentItem", value.asInstanceOf[js.Any])
+      inline def setContentItem(value: ViewStyle): Self = StObject.set(x, "contentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentItemSelected(value: ViewStyle): Self = StObject.set(x, "contentItemSelected", value.asInstanceOf[js.Any])
+      inline def setContentItemSelected(value: ViewStyle): Self = StObject.set(x, "contentItemSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabbar(value: ViewStyle): Self = StObject.set(x, "tabbar", value.asInstanceOf[js.Any])
+      inline def setTabbar(value: ViewStyle): Self = StObject.set(x, "tabbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabs(value: ViewStyle): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: ViewStyle): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     }
   }
 }

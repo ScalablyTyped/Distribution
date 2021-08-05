@@ -14,19 +14,15 @@ trait DeserializerManager extends StObject {
 }
 object DeserializerManager {
   
-  @scala.inline
-  def apply(add: /* repeated */ Deserializer => Disposable, deserialize: js.Object => js.UndefOr[js.Object]): DeserializerManager = {
+  inline def apply(add: /* repeated */ Deserializer => Disposable, deserialize: js.Object => js.UndefOr[js.Object]): DeserializerManager = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), deserialize = js.Any.fromFunction1(deserialize))
     __obj.asInstanceOf[DeserializerManager]
   }
   
-  @scala.inline
-  implicit class DeserializerManagerMutableBuilder[Self <: DeserializerManager] (val x: Self) extends AnyVal {
+  extension [Self <: DeserializerManager](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* repeated */ Deserializer => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* repeated */ Deserializer => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeserialize(value: js.Object => js.UndefOr[js.Object]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+    inline def setDeserialize(value: js.Object => js.UndefOr[js.Object]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
   }
 }

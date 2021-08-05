@@ -12,17 +12,14 @@ object anon {
   }
   object AutoGenerateTag {
     
-    @scala.inline
-    def apply(autoGenerateTag: Boolean): AutoGenerateTag = {
+    inline def apply(autoGenerateTag: Boolean): AutoGenerateTag = {
       val __obj = js.Dynamic.literal(autoGenerateTag = autoGenerateTag.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoGenerateTag]
     }
     
-    @scala.inline
-    implicit class AutoGenerateTagMutableBuilder[Self <: AutoGenerateTag] (val x: Self) extends AnyVal {
+    extension [Self <: AutoGenerateTag](x: Self) {
       
-      @scala.inline
-      def setAutoGenerateTag(value: Boolean): Self = StObject.set(x, "autoGenerateTag", value.asInstanceOf[js.Any])
+      inline def setAutoGenerateTag(value: Boolean): Self = StObject.set(x, "autoGenerateTag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,20 +29,16 @@ object anon {
   }
   object TextContent {
     
-    @scala.inline
-    def apply(): TextContent = {
+    inline def apply(): TextContent = {
       val __obj = js.Dynamic.literal(textContent = null)
       __obj.asInstanceOf[TextContent]
     }
     
-    @scala.inline
-    implicit class TextContentMutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
+    extension [Self <: TextContent](x: Self) {
       
-      @scala.inline
-      def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+      inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextContentNull: Self = StObject.set(x, "textContent", null)
+      inline def setTextContentNull: Self = StObject.set(x, "textContent", null)
     }
   }
 }

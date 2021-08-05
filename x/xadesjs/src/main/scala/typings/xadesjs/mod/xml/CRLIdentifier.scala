@@ -13,6 +13,5 @@ class CRLIdentifier ()
   extends typings.xadesjs.xmlMod.CRLIdentifier
 object CRLIdentifier {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CRLIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("CRLIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CRLIdentifier]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CRLIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("CRLIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CRLIdentifier]]
 }

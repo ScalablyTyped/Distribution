@@ -18,19 +18,15 @@ trait DeleteSegmentRequest extends StObject {
 }
 object DeleteSegmentRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, SegmentId: string): DeleteSegmentRequest = {
+  inline def apply(ApplicationId: string, SegmentId: string): DeleteSegmentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSegmentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSegmentRequestMutableBuilder[Self <: DeleteSegmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSegmentRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait BoolEnum extends StObject {
 }
 object BoolEnum {
   
-  @scala.inline
-  def apply(): BoolEnum = {
+  inline def apply(): BoolEnum = {
     val __obj = js.Dynamic.literal(and = "and", eor = "eor", or = "or")
     __obj.asInstanceOf[BoolEnum]
   }
   
-  @scala.inline
-  implicit class BoolEnumMutableBuilder[Self <: BoolEnum] (val x: Self) extends AnyVal {
+  extension [Self <: BoolEnum](x: Self) {
     
-    @scala.inline
-    def setAnd(value: and): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAnd(value: and): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEor(value: eor): Self = StObject.set(x, "eor", value.asInstanceOf[js.Any])
+    inline def setEor(value: eor): Self = StObject.set(x, "eor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOr(value: or): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+    inline def setOr(value: or): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
   }
 }

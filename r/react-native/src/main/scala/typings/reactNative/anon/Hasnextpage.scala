@@ -14,28 +14,21 @@ trait Hasnextpage extends StObject {
 }
 object Hasnextpage {
   
-  @scala.inline
-  def apply(has_next_page: Boolean): Hasnextpage = {
+  inline def apply(has_next_page: Boolean): Hasnextpage = {
     val __obj = js.Dynamic.literal(has_next_page = has_next_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hasnextpage]
   }
   
-  @scala.inline
-  implicit class HasnextpageMutableBuilder[Self <: Hasnextpage] (val x: Self) extends AnyVal {
+  extension [Self <: Hasnextpage](x: Self) {
     
-    @scala.inline
-    def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
+    inline def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_cursorUndefined: Self = StObject.set(x, "end_cursor", js.undefined)
+    inline def setEnd_cursorUndefined: Self = StObject.set(x, "end_cursor", js.undefined)
     
-    @scala.inline
-    def setHas_next_page(value: Boolean): Self = StObject.set(x, "has_next_page", value.asInstanceOf[js.Any])
+    inline def setHas_next_page(value: Boolean): Self = StObject.set(x, "has_next_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_cursor(value: String): Self = StObject.set(x, "start_cursor", value.asInstanceOf[js.Any])
+    inline def setStart_cursor(value: String): Self = StObject.set(x, "start_cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_cursorUndefined: Self = StObject.set(x, "start_cursor", js.undefined)
+    inline def setStart_cursorUndefined: Self = StObject.set(x, "start_cursor", js.undefined)
   }
 }

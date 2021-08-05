@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: TrayballoonOptions, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(opts: TrayballoonOptions, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("trayballoon", JSImport.Namespace)
   @js.native

@@ -10,16 +10,13 @@ trait IPrintTaskCompletedEventArgs extends StObject {
 }
 object IPrintTaskCompletedEventArgs {
   
-  @scala.inline
-  def apply(completion: PrintTaskCompletion): IPrintTaskCompletedEventArgs = {
+  inline def apply(completion: PrintTaskCompletion): IPrintTaskCompletedEventArgs = {
     val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrintTaskCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class IPrintTaskCompletedEventArgsMutableBuilder[Self <: IPrintTaskCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintTaskCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCompletion(value: PrintTaskCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+    inline def setCompletion(value: PrintTaskCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
   }
 }

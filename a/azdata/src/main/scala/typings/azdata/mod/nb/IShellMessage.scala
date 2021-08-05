@@ -13,17 +13,14 @@ trait IShellMessage
 }
 object IShellMessage {
   
-  @scala.inline
-  def apply(content: js.Any, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IShellMessage = {
+  inline def apply(content: js.Any, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IShellMessage = {
     val __obj = js.Dynamic.literal(channel = "shell", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShellMessage]
   }
   
-  @scala.inline
-  implicit class IShellMessageMutableBuilder[Self <: IShellMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IShellMessage](x: Self) {
     
-    @scala.inline
-    def setChannel(value: shell): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: shell): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

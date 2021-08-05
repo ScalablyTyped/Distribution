@@ -18,16 +18,13 @@ trait ASPxClientTreeViewNodeProcessingModeEventArgs
 }
 object ASPxClientTreeViewNodeProcessingModeEventArgs {
   
-  @scala.inline
-  def apply(node: ASPxClientTreeViewNode, processOnServer: Boolean): ASPxClientTreeViewNodeProcessingModeEventArgs = {
+  inline def apply(node: ASPxClientTreeViewNode, processOnServer: Boolean): ASPxClientTreeViewNodeProcessingModeEventArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeViewNodeProcessingModeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeViewNodeProcessingModeEventArgsMutableBuilder[Self <: ASPxClientTreeViewNodeProcessingModeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeViewNodeProcessingModeEventArgs](x: Self) {
     
-    @scala.inline
-    def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

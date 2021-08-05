@@ -13,19 +13,15 @@ trait PurchaseProvisionedCapacityOutput extends StObject {
 }
 object PurchaseProvisionedCapacityOutput {
   
-  @scala.inline
-  def apply(): PurchaseProvisionedCapacityOutput = {
+  inline def apply(): PurchaseProvisionedCapacityOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurchaseProvisionedCapacityOutput]
   }
   
-  @scala.inline
-  implicit class PurchaseProvisionedCapacityOutputMutableBuilder[Self <: PurchaseProvisionedCapacityOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseProvisionedCapacityOutput](x: Self) {
     
-    @scala.inline
-    def setCapacityId(value: String): Self = StObject.set(x, "capacityId", value.asInstanceOf[js.Any])
+    inline def setCapacityId(value: String): Self = StObject.set(x, "capacityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityIdUndefined: Self = StObject.set(x, "capacityId", js.undefined)
+    inline def setCapacityIdUndefined: Self = StObject.set(x, "capacityId", js.undefined)
   }
 }

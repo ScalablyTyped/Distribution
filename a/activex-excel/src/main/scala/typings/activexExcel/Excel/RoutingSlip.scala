@@ -13,7 +13,7 @@ trait RoutingSlip extends StObject {
   
   var Delivery: XlRoutingSlipDelivery = js.native
   
-  @JSName("Excel.RoutingSlip_typekey")
+  /* private */ @JSName("Excel.RoutingSlip_typekey")
   var ExcelDotRoutingSlip_typekey: RoutingSlip = js.native
   
   var Message: js.Any = js.native

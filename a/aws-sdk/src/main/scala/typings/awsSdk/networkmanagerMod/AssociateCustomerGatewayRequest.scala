@@ -28,28 +28,21 @@ trait AssociateCustomerGatewayRequest extends StObject {
 }
 object AssociateCustomerGatewayRequest {
   
-  @scala.inline
-  def apply(CustomerGatewayArn: String, DeviceId: String, GlobalNetworkId: String): AssociateCustomerGatewayRequest = {
+  inline def apply(CustomerGatewayArn: String, DeviceId: String, GlobalNetworkId: String): AssociateCustomerGatewayRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayArn = CustomerGatewayArn.asInstanceOf[js.Any], DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateCustomerGatewayRequest]
   }
   
-  @scala.inline
-  implicit class AssociateCustomerGatewayRequestMutableBuilder[Self <: AssociateCustomerGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateCustomerGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
+    inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait UpdateDataSourceOutput extends StObject {
 }
 object UpdateDataSourceOutput {
   
-  @scala.inline
-  def apply(): UpdateDataSourceOutput = {
+  inline def apply(): UpdateDataSourceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDataSourceOutput]
   }
   
-  @scala.inline
-  implicit class UpdateDataSourceOutputMutableBuilder[Self <: UpdateDataSourceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDataSourceOutput](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
   }
 }

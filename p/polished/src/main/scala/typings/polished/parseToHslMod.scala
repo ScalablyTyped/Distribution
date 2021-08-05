@@ -12,6 +12,5 @@ object parseToHslMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(color: String): HslColor | HslaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[HslColor | HslaColor]
+  inline def default(color: String): HslColor | HslaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[HslColor | HslaColor]
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AppointmentItem")
 @js.native
-class AppointmentItem protected ()
+/* private */ class AppointmentItem ()
   extends StObject
      with typings.activexOutlook.Outlook.AppointmentItem

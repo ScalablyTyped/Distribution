@@ -13,19 +13,15 @@ trait CancelShortcut extends StObject {
 }
 object CancelShortcut {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Shortcut: OutlookBarShortcut): CancelShortcut = {
+  inline def apply(Cancel: Boolean, Shortcut: OutlookBarShortcut): CancelShortcut = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Shortcut = Shortcut.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelShortcut]
   }
   
-  @scala.inline
-  implicit class CancelShortcutMutableBuilder[Self <: CancelShortcut] (val x: Self) extends AnyVal {
+  extension [Self <: CancelShortcut](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcut(value: OutlookBarShortcut): Self = StObject.set(x, "Shortcut", value.asInstanceOf[js.Any])
+    inline def setShortcut(value: OutlookBarShortcut): Self = StObject.set(x, "Shortcut", value.asInstanceOf[js.Any])
   }
 }

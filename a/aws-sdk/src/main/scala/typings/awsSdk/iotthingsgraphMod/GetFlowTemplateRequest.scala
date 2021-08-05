@@ -18,22 +18,17 @@ trait GetFlowTemplateRequest extends StObject {
 }
 object GetFlowTemplateRequest {
   
-  @scala.inline
-  def apply(id: Urn): GetFlowTemplateRequest = {
+  inline def apply(id: Urn): GetFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFlowTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GetFlowTemplateRequestMutableBuilder[Self <: GetFlowTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFlowTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
+    inline def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
+    inline def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
   }
 }

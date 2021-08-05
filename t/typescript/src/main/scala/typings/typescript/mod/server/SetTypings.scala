@@ -25,8 +25,7 @@ trait SetTypings
 }
 object SetTypings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compilerOptions: CompilerOptions,
     kind: ActionSet,
     projectName: String,
@@ -39,25 +38,18 @@ object SetTypings {
     __obj.asInstanceOf[SetTypings]
   }
   
-  @scala.inline
-  implicit class SetTypingsMutableBuilder[Self <: SetTypings] (val x: Self) extends AnyVal {
+  extension [Self <: SetTypings](x: Self) {
     
-    @scala.inline
-    def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+    inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActionSet): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActionSet): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
+    inline def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypings_(value: js.Array[String]): Self = StObject.set(x, "typings", value.asInstanceOf[js.Any])
+    inline def setTypings_(value: js.Array[String]): Self = StObject.set(x, "typings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypings_Varargs(value: String*): Self = StObject.set(x, "typings", js.Array(value :_*))
+    inline def setTypings_Varargs(value: String*): Self = StObject.set(x, "typings", js.Array(value :_*))
     
-    @scala.inline
-    def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = StObject.set(x, "unresolvedImports", value.asInstanceOf[js.Any])
+    inline def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = StObject.set(x, "unresolvedImports", value.asInstanceOf[js.Any])
   }
 }

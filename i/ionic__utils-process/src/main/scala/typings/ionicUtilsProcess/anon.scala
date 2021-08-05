@@ -14,26 +14,20 @@ object anon {
   }
   object Interval {
     
-    @scala.inline
-    def apply(): Interval = {
+    inline def apply(): Interval = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Interval]
     }
     
-    @scala.inline
-    implicit class IntervalMutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
+    extension [Self <: Interval](x: Self) {
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

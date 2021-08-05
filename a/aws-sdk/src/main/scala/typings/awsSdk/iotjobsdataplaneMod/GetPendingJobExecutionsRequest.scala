@@ -13,16 +13,13 @@ trait GetPendingJobExecutionsRequest extends StObject {
 }
 object GetPendingJobExecutionsRequest {
   
-  @scala.inline
-  def apply(thingName: ThingName): GetPendingJobExecutionsRequest = {
+  inline def apply(thingName: ThingName): GetPendingJobExecutionsRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPendingJobExecutionsRequest]
   }
   
-  @scala.inline
-  implicit class GetPendingJobExecutionsRequestMutableBuilder[Self <: GetPendingJobExecutionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPendingJobExecutionsRequest](x: Self) {
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

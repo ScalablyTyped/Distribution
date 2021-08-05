@@ -18,28 +18,21 @@ trait AvailabilityZone extends StObject {
 }
 object AvailabilityZone {
   
-  @scala.inline
-  def apply(): AvailabilityZone = {
+  inline def apply(): AvailabilityZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AvailabilityZone]
   }
   
-  @scala.inline
-  implicit class AvailabilityZoneMutableBuilder[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
+  extension [Self <: AvailabilityZone](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSupportedPlatforms(value: SupportedPlatformsList): Self = StObject.set(x, "SupportedPlatforms", value.asInstanceOf[js.Any])
+    inline def setSupportedPlatforms(value: SupportedPlatformsList): Self = StObject.set(x, "SupportedPlatforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPlatformsUndefined: Self = StObject.set(x, "SupportedPlatforms", js.undefined)
+    inline def setSupportedPlatformsUndefined: Self = StObject.set(x, "SupportedPlatforms", js.undefined)
     
-    @scala.inline
-    def setSupportedPlatformsVarargs(value: SupportedPlatform*): Self = StObject.set(x, "SupportedPlatforms", js.Array(value :_*))
+    inline def setSupportedPlatformsVarargs(value: SupportedPlatform*): Self = StObject.set(x, "SupportedPlatforms", js.Array(value :_*))
   }
 }

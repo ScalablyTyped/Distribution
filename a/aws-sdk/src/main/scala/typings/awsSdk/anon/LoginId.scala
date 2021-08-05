@@ -10,19 +10,15 @@ trait LoginId extends StObject {
 }
 object LoginId {
   
-  @scala.inline
-  def apply(): LoginId = {
+  inline def apply(): LoginId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginId]
   }
   
-  @scala.inline
-  implicit class LoginIdMutableBuilder[Self <: LoginId] (val x: Self) extends AnyVal {
+  extension [Self <: LoginId](x: Self) {
     
-    @scala.inline
-    def setLoginId(value: String): Self = StObject.set(x, "LoginId", value.asInstanceOf[js.Any])
+    inline def setLoginId(value: String): Self = StObject.set(x, "LoginId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginIdUndefined: Self = StObject.set(x, "LoginId", js.undefined)
+    inline def setLoginIdUndefined: Self = StObject.set(x, "LoginId", js.undefined)
   }
 }

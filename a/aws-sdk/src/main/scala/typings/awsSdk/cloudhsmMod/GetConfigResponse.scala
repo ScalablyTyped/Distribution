@@ -23,31 +23,23 @@ trait GetConfigResponse extends StObject {
 }
 object GetConfigResponse {
   
-  @scala.inline
-  def apply(): GetConfigResponse = {
+  inline def apply(): GetConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConfigResponse]
   }
   
-  @scala.inline
-  implicit class GetConfigResponseMutableBuilder[Self <: GetConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConfigResponse](x: Self) {
     
-    @scala.inline
-    def setConfigCred(value: String): Self = StObject.set(x, "ConfigCred", value.asInstanceOf[js.Any])
+    inline def setConfigCred(value: String): Self = StObject.set(x, "ConfigCred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigCredUndefined: Self = StObject.set(x, "ConfigCred", js.undefined)
+    inline def setConfigCredUndefined: Self = StObject.set(x, "ConfigCred", js.undefined)
     
-    @scala.inline
-    def setConfigFile(value: String): Self = StObject.set(x, "ConfigFile", value.asInstanceOf[js.Any])
+    inline def setConfigFile(value: String): Self = StObject.set(x, "ConfigFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFileUndefined: Self = StObject.set(x, "ConfigFile", js.undefined)
+    inline def setConfigFileUndefined: Self = StObject.set(x, "ConfigFile", js.undefined)
     
-    @scala.inline
-    def setConfigType(value: String): Self = StObject.set(x, "ConfigType", value.asInstanceOf[js.Any])
+    inline def setConfigType(value: String): Self = StObject.set(x, "ConfigType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigTypeUndefined: Self = StObject.set(x, "ConfigType", js.undefined)
+    inline def setConfigTypeUndefined: Self = StObject.set(x, "ConfigType", js.undefined)
   }
 }

@@ -112,56 +112,40 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setNodupes(value: Boolean): Self = StObject.set(x, "nodupes", value.asInstanceOf[js.Any])
+      inline def setNodupes(value: Boolean): Self = StObject.set(x, "nodupes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodupesUndefined: Self = StObject.set(x, "nodupes", js.undefined)
+      inline def setNodupesUndefined: Self = StObject.set(x, "nodupes", js.undefined)
       
-      @scala.inline
-      def setQuantifiers(value: Boolean): Self = StObject.set(x, "quantifiers", value.asInstanceOf[js.Any])
+      inline def setQuantifiers(value: Boolean): Self = StObject.set(x, "quantifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantifiersUndefined: Self = StObject.set(x, "quantifiers", js.undefined)
+      inline def setQuantifiersUndefined: Self = StObject.set(x, "quantifiers", js.undefined)
       
-      @scala.inline
-      def setRangeLimit(value: Double): Self = StObject.set(x, "rangeLimit", value.asInstanceOf[js.Any])
+      inline def setRangeLimit(value: Double): Self = StObject.set(x, "rangeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeLimitUndefined: Self = StObject.set(x, "rangeLimit", js.undefined)
+      inline def setRangeLimitUndefined: Self = StObject.set(x, "rangeLimit", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* str */ String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* str */ String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setUnescape(value: Boolean): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
+      inline def setUnescape(value: Boolean): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
+      inline def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
     }
   }
   

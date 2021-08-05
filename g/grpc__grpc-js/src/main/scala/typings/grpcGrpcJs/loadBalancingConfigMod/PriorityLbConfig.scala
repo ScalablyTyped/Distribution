@@ -13,22 +13,17 @@ trait PriorityLbConfig extends StObject {
 }
 object PriorityLbConfig {
   
-  @scala.inline
-  def apply(children: Map[String, PriorityChild], priorities: js.Array[String]): PriorityLbConfig = {
+  inline def apply(children: Map[String, PriorityChild], priorities: js.Array[String]): PriorityLbConfig = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], priorities = priorities.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityLbConfig]
   }
   
-  @scala.inline
-  implicit class PriorityLbConfigMutableBuilder[Self <: PriorityLbConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PriorityLbConfig](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Map[String, PriorityChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Map[String, PriorityChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorities(value: js.Array[String]): Self = StObject.set(x, "priorities", value.asInstanceOf[js.Any])
+    inline def setPriorities(value: js.Array[String]): Self = StObject.set(x, "priorities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrioritiesVarargs(value: String*): Self = StObject.set(x, "priorities", js.Array(value :_*))
+    inline def setPrioritiesVarargs(value: String*): Self = StObject.set(x, "priorities", js.Array(value :_*))
   }
 }

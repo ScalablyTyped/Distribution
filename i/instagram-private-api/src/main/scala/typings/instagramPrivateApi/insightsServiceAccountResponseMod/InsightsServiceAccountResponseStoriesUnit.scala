@@ -16,8 +16,7 @@ trait InsightsServiceAccountResponseStoriesUnit extends StObject {
 }
 object InsightsServiceAccountResponseStoriesUnit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     last_week_stories_count: Double,
     state: String,
     summary_stories: InsightsServiceAccountResponseSummaryStories,
@@ -27,19 +26,14 @@ object InsightsServiceAccountResponseStoriesUnit {
     __obj.asInstanceOf[InsightsServiceAccountResponseStoriesUnit]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseStoriesUnitMutableBuilder[Self <: InsightsServiceAccountResponseStoriesUnit] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseStoriesUnit](x: Self) {
     
-    @scala.inline
-    def setLast_week_stories_count(value: Double): Self = StObject.set(x, "last_week_stories_count", value.asInstanceOf[js.Any])
+    inline def setLast_week_stories_count(value: Double): Self = StObject.set(x, "last_week_stories_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary_stories(value: InsightsServiceAccountResponseSummaryStories): Self = StObject.set(x, "summary_stories", value.asInstanceOf[js.Any])
+    inline def setSummary_stories(value: InsightsServiceAccountResponseSummaryStories): Self = StObject.set(x, "summary_stories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek_over_week_stories_delta(value: Double): Self = StObject.set(x, "week_over_week_stories_delta", value.asInstanceOf[js.Any])
+    inline def setWeek_over_week_stories_delta(value: Double): Self = StObject.set(x, "week_over_week_stories_delta", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,6 @@ object spawnPromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(exe: String, params: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(exe.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default(exe: String, params: js.Array[String], opts: SpawnOptionsWithoutStdio): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(exe.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def default(exe: String, params: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(exe.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def default(exe: String, params: js.Array[String], opts: SpawnOptionsWithoutStdio): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(exe.asInstanceOf[js.Any], params.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

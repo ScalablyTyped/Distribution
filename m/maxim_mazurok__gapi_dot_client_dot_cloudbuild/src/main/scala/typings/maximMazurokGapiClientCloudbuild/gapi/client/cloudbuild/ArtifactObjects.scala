@@ -21,34 +21,25 @@ trait ArtifactObjects extends StObject {
 }
 object ArtifactObjects {
   
-  @scala.inline
-  def apply(): ArtifactObjects = {
+  inline def apply(): ArtifactObjects = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtifactObjects]
   }
   
-  @scala.inline
-  implicit class ArtifactObjectsMutableBuilder[Self <: ArtifactObjects] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactObjects](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
-    @scala.inline
-    def setTiming(value: TimeSpan): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: TimeSpan): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+    inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

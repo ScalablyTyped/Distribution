@@ -11,6 +11,5 @@ object fakesTokenDetailsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFakeTokenDetails(): TokenDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeTokenDetails")().asInstanceOf[TokenDetails]
+  inline def getFakeTokenDetails(): TokenDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeTokenDetails")().asInstanceOf[TokenDetails]
 }

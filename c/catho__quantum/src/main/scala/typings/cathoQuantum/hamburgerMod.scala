@@ -26,38 +26,28 @@ object hamburgerMod {
   }
   object HamburgerProps {
     
-    @scala.inline
-    def apply(): HamburgerProps = {
+    inline def apply(): HamburgerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HamburgerProps]
     }
     
-    @scala.inline
-    implicit class HamburgerPropsMutableBuilder[Self <: HamburgerProps] (val x: Self) extends AnyVal {
+    extension [Self <: HamburgerProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabelDescription(value: String): Self = StObject.set(x, "ariaLabelDescription", value.asInstanceOf[js.Any])
+      inline def setAriaLabelDescription(value: String): Self = StObject.set(x, "ariaLabelDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelDescriptionUndefined: Self = StObject.set(x, "ariaLabelDescription", js.undefined)
+      inline def setAriaLabelDescriptionUndefined: Self = StObject.set(x, "ariaLabelDescription", js.undefined)
       
-      @scala.inline
-      def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+      inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+      inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      @scala.inline
-      def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
+      inline def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenedUndefined: Self = StObject.set(x, "isOpened", js.undefined)
+      inline def setIsOpenedUndefined: Self = StObject.set(x, "isOpened", js.undefined)
       
-      @scala.inline
-      def setShowNotification(value: Boolean): Self = StObject.set(x, "showNotification", value.asInstanceOf[js.Any])
+      inline def setShowNotification(value: Boolean): Self = StObject.set(x, "showNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNotificationUndefined: Self = StObject.set(x, "showNotification", js.undefined)
+      inline def setShowNotificationUndefined: Self = StObject.set(x, "showNotification", js.undefined)
     }
   }
 }

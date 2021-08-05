@@ -118,8 +118,7 @@ object anon {
   }
   object Asinh {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acosh: Double => Double,
       asinh: Double => Double,
       atanh: Double => Double,
@@ -142,59 +141,41 @@ object anon {
       __obj.asInstanceOf[Asinh]
     }
     
-    @scala.inline
-    implicit class AsinhMutableBuilder[Self <: Asinh] (val x: Self) extends AnyVal {
+    extension [Self <: Asinh](x: Self) {
       
-      @scala.inline
-      def setAcosh(value: Double => Double): Self = StObject.set(x, "acosh", js.Any.fromFunction1(value))
+      inline def setAcosh(value: Double => Double): Self = StObject.set(x, "acosh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAsinh(value: Double => Double): Self = StObject.set(x, "asinh", js.Any.fromFunction1(value))
+      inline def setAsinh(value: Double => Double): Self = StObject.set(x, "asinh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAtanh(value: Double => Double): Self = StObject.set(x, "atanh", js.Any.fromFunction1(value))
+      inline def setAtanh(value: Double => Double): Self = StObject.set(x, "atanh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCbrt(value: Double => Double): Self = StObject.set(x, "cbrt", js.Any.fromFunction1(value))
+      inline def setCbrt(value: Double => Double): Self = StObject.set(x, "cbrt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClz32(value: Double => Double): Self = StObject.set(x, "clz32", js.Any.fromFunction1(value))
+      inline def setClz32(value: Double => Double): Self = StObject.set(x, "clz32", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCosh(value: Double => Double): Self = StObject.set(x, "cosh", js.Any.fromFunction1(value))
+      inline def setCosh(value: Double => Double): Self = StObject.set(x, "cosh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpm1(value: Double => Double): Self = StObject.set(x, "expm1", js.Any.fromFunction1(value))
+      inline def setExpm1(value: Double => Double): Self = StObject.set(x, "expm1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFround(value: Double => Double): Self = StObject.set(x, "fround", js.Any.fromFunction1(value))
+      inline def setFround(value: Double => Double): Self = StObject.set(x, "fround", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHypot(value: /* repeated */ Double => Double): Self = StObject.set(x, "hypot", js.Any.fromFunction1(value))
+      inline def setHypot(value: /* repeated */ Double => Double): Self = StObject.set(x, "hypot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImul(value: (Double, Double) => Double): Self = StObject.set(x, "imul", js.Any.fromFunction2(value))
+      inline def setImul(value: (Double, Double) => Double): Self = StObject.set(x, "imul", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLog10(value: Double => Double): Self = StObject.set(x, "log10", js.Any.fromFunction1(value))
+      inline def setLog10(value: Double => Double): Self = StObject.set(x, "log10", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLog1p(value: Double => Double): Self = StObject.set(x, "log1p", js.Any.fromFunction1(value))
+      inline def setLog1p(value: Double => Double): Self = StObject.set(x, "log1p", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLog2(value: Double => Double): Self = StObject.set(x, "log2", js.Any.fromFunction1(value))
+      inline def setLog2(value: Double => Double): Self = StObject.set(x, "log2", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSign(value: Double => Double): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: Double => Double): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSinh(value: Double => Double): Self = StObject.set(x, "sinh", js.Any.fromFunction1(value))
+      inline def setSinh(value: Double => Double): Self = StObject.set(x, "sinh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTanh(value: Double => Double): Self = StObject.set(x, "tanh", js.Any.fromFunction1(value))
+      inline def setTanh(value: Double => Double): Self = StObject.set(x, "tanh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrunc(value: Double => Double): Self = StObject.set(x, "trunc", js.Any.fromFunction1(value))
+      inline def setTrunc(value: Double => Double): Self = StObject.set(x, "trunc", js.Any.fromFunction1(value))
     }
   }
   
@@ -293,8 +274,7 @@ object anon {
   }
   object Bind {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bind: (Function, js.Any, /* repeated */ js.Any) => js.Any,
       part: (Function, /* repeated */ js.Any) => js.Any
     ): Bind = {
@@ -302,14 +282,11 @@ object anon {
       __obj.asInstanceOf[Bind]
     }
     
-    @scala.inline
-    implicit class BindMutableBuilder[Self <: Bind] (val x: Self) extends AnyVal {
+    extension [Self <: Bind](x: Self) {
       
-      @scala.inline
-      def setBind(value: (Function, js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
+      inline def setBind(value: (Function, js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPart(value: (Function, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "part", js.Any.fromFunction2(value))
+      inline def setPart(value: (Function, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "part", js.Any.fromFunction2(value))
     }
   }
   
@@ -535,17 +512,14 @@ object anon {
   }
   object Escape {
     
-    @scala.inline
-    def apply(escape: java.lang.String => java.lang.String): Escape = {
+    inline def apply(escape: java.lang.String => java.lang.String): Escape = {
       val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape))
       __obj.asInstanceOf[Escape]
     }
     
-    @scala.inline
-    implicit class EscapeMutableBuilder[Self <: Escape] (val x: Self) extends AnyVal {
+    extension [Self <: Escape](x: Self) {
       
-      @scala.inline
-      def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
     }
   }
   

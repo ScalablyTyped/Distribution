@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IEventTarget")
 @js.native
-class IEventTarget protected ()
+/* private */ class IEventTarget ()
   extends StObject
      with typings.activexMshtml.MSHTML.IEventTarget {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IEventTarget_typekey")
   var MSHTMLDotIEventTarget_typekey: typings.activexMshtml.MSHTML.IEventTarget = js.native
   

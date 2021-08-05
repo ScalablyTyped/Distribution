@@ -16,19 +16,15 @@ trait SchemaHangoutsChatOptions extends StObject {
 }
 object SchemaHangoutsChatOptions {
   
-  @scala.inline
-  def apply(): SchemaHangoutsChatOptions = {
+  inline def apply(): SchemaHangoutsChatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHangoutsChatOptions]
   }
   
-  @scala.inline
-  implicit class SchemaHangoutsChatOptionsMutableBuilder[Self <: SchemaHangoutsChatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHangoutsChatOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
+    inline def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
+    inline def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
   }
 }

@@ -21,18 +21,15 @@ trait EvaluatableExpressionProvider extends StObject {
 }
 object EvaluatableExpressionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideEvaluatableExpression: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]
   ): EvaluatableExpressionProvider = {
     val __obj = js.Dynamic.literal(provideEvaluatableExpression = js.Any.fromFunction3(provideEvaluatableExpression))
     __obj.asInstanceOf[EvaluatableExpressionProvider]
   }
   
-  @scala.inline
-  implicit class EvaluatableExpressionProviderMutableBuilder[Self <: EvaluatableExpressionProvider] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluatableExpressionProvider](x: Self) {
     
-    @scala.inline
-    def setProvideEvaluatableExpression(value: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]): Self = StObject.set(x, "provideEvaluatableExpression", js.Any.fromFunction3(value))
+    inline def setProvideEvaluatableExpression(value: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]): Self = StObject.set(x, "provideEvaluatableExpression", js.Any.fromFunction3(value))
   }
 }

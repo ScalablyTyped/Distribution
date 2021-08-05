@@ -27,19 +27,15 @@ trait LineGradient extends StObject {
 }
 object LineGradient {
   
-  @scala.inline
-  def apply(addColorStop: (Double, String) => Unit, addColorStopAtIndex: (Double, String) => Unit): LineGradient = {
+  inline def apply(addColorStop: (Double, String) => Unit, addColorStopAtIndex: (Double, String) => Unit): LineGradient = {
     val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop), addColorStopAtIndex = js.Any.fromFunction2(addColorStopAtIndex))
     __obj.asInstanceOf[LineGradient]
   }
   
-  @scala.inline
-  implicit class LineGradientMutableBuilder[Self <: LineGradient] (val x: Self) extends AnyVal {
+  extension [Self <: LineGradient](x: Self) {
     
-    @scala.inline
-    def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
+    inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddColorStopAtIndex(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStopAtIndex", js.Any.fromFunction2(value))
+    inline def setAddColorStopAtIndex(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStopAtIndex", js.Any.fromFunction2(value))
   }
 }

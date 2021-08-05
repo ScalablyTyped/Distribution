@@ -11,16 +11,13 @@ trait `33` extends StObject {
 }
 object `33` {
   
-  @scala.inline
-  def apply(): `33` = {
+  inline def apply(): `33` = {
     val __obj = js.Dynamic.literal(name = "categorizeByGroup")
     __obj.asInstanceOf[`33`]
   }
   
-  @scala.inline
-  implicit class `33MutableBuilder`[Self <: `33`] (val x: Self) extends AnyVal {
+  extension [Self <: `33`](x: Self) {
     
-    @scala.inline
-    def setName(value: categorizeByGroup): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: categorizeByGroup): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

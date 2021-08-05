@@ -13,19 +13,15 @@ trait PutEncryptionConfigResult extends StObject {
 }
 object PutEncryptionConfigResult {
   
-  @scala.inline
-  def apply(): PutEncryptionConfigResult = {
+  inline def apply(): PutEncryptionConfigResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutEncryptionConfigResult]
   }
   
-  @scala.inline
-  implicit class PutEncryptionConfigResultMutableBuilder[Self <: PutEncryptionConfigResult] (val x: Self) extends AnyVal {
+  extension [Self <: PutEncryptionConfigResult](x: Self) {
     
-    @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
   }
 }

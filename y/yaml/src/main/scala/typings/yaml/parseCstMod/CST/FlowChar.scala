@@ -21,8 +21,7 @@ trait FlowChar extends StObject {
 }
 object FlowChar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     char: Leftcurlybracket | Rightcurlybracket | `[` | `]` | Comma | Questionmark | Colon,
     offset: Double
   ): FlowChar = {
@@ -30,19 +29,14 @@ object FlowChar {
     __obj.asInstanceOf[FlowChar]
   }
   
-  @scala.inline
-  implicit class FlowCharMutableBuilder[Self <: FlowChar] (val x: Self) extends AnyVal {
+  extension [Self <: FlowChar](x: Self) {
     
-    @scala.inline
-    def setChar(value: Leftcurlybracket | Rightcurlybracket | `[` | `]` | Comma | Questionmark | Colon): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+    inline def setChar(value: Leftcurlybracket | Rightcurlybracket | `[` | `]` | Comma | Questionmark | Colon): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigOffset(value: Double): Self = StObject.set(x, "origOffset", value.asInstanceOf[js.Any])
+    inline def setOrigOffset(value: Double): Self = StObject.set(x, "origOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigOffsetUndefined: Self = StObject.set(x, "origOffset", js.undefined)
+    inline def setOrigOffsetUndefined: Self = StObject.set(x, "origOffset", js.undefined)
   }
 }

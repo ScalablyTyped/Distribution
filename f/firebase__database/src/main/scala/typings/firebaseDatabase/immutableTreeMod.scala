@@ -32,7 +32,7 @@ object immutableTreeMod {
       */
     def findOnPath[V](path: Path, f: js.Function2[/* path */ Path, /* value */ T, V | Null]): V | Null = js.native
     
-    var findOnPath_ : js.Any = js.native
+    /* private */ var findOnPath_ : js.Any = js.native
     
     /**
       * Given a path and predicate, return the first node and the path to that node
@@ -74,7 +74,7 @@ object immutableTreeMod {
       * @return {V}
       * @private
       */
-    var fold_ : js.Any = js.native
+    /* private */ var fold_ : js.Any = js.native
     
     /**
       * Calls the given function for each node in the tree that has a value.
@@ -99,9 +99,9 @@ object immutableTreeMod {
       */
     def foreachOnPath(path: Path, f: js.Function2[/* path */ Path, /* value */ T, Unit]): ImmutableTree[T] = js.native
     
-    var foreachOnPath_ : js.Any = js.native
+    /* private */ var foreachOnPath_ : js.Any = js.native
     
-    var foreach_ : js.Any = js.native
+    /* private */ var foreach_ : js.Any = js.native
     
     /**
       * Gets a value from the tree.
@@ -162,15 +162,13 @@ object immutableTreeMod {
     @JSImport("@firebase/database/dist/src/core/util/ImmutableTree", "ImmutableTree.Empty")
     @js.native
     def Empty: ImmutableTree[js.Any] = js.native
-    @scala.inline
-    def Empty_=(x: ImmutableTree[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
+    inline def Empty_=(x: ImmutableTree[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
     
     /**
       * @template T
       * @param {!Object.<string, !T>} obj
       * @return {!ImmutableTree.<!T>}
       */
-    @scala.inline
-    def fromObject[T](obj: StringDictionary[T]): ImmutableTree[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[ImmutableTree[T]]
+    inline def fromObject[T](obj: StringDictionary[T]): ImmutableTree[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[ImmutableTree[T]]
   }
 }

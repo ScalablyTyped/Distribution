@@ -17,22 +17,17 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(acl: ObjectPermissions, groups: js.Array[UserGroup]): User = {
+  inline def apply(acl: ObjectPermissions, groups: js.Array[UserGroup]): User = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setAcl(value: ObjectPermissions): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: ObjectPermissions): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: js.Array[UserGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[UserGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: UserGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: UserGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
   }
 }

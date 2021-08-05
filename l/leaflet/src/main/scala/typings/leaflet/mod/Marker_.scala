@@ -13,7 +13,7 @@ class Marker_[P] protected () extends Layer {
   def this(latlng: LatLngExpression) = this()
   def this(latlng: LatLngExpression, options: MarkerOptions) = this()
   
-  var _shadow: js.UndefOr[HTMLElement] = js.native
+  /* protected */ var _shadow: js.UndefOr[HTMLElement] = js.native
   
   var dragging: js.UndefOr[Handler] = js.native
   

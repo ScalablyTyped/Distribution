@@ -20,8 +20,7 @@ object useRefetchableFragmentNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readQuery(
+  inline def readQuery(
     environment: js.Any,
     query: js.Any,
     fetchPolicy: js.Any,
@@ -32,11 +31,9 @@ object useRefetchableFragmentNodeMod {
     profilerContext: js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readQuery")(environment.asInstanceOf[js.Any], query.asInstanceOf[js.Any], fetchPolicy.asInstanceOf[js.Any], renderPolicy.asInstanceOf[js.Any], refetchGeneration.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any], hasStartComplete.asInstanceOf[js.Any], profilerContext.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def reducer(state: RefetchState, action: Action): RefetchState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[RefetchState]
+  inline def reducer(state: RefetchState, action: Action): RefetchState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[RefetchState]
   
-  @scala.inline
-  def useRefetchFunction[TQuery /* <: OperationType */](
+  inline def useRefetchFunction[TQuery /* <: OperationType */](
     fragmentNode: js.Any,
     parentFragmentRef: js.Any,
     fragmentIdentifier: js.Any,
@@ -50,8 +47,7 @@ object useRefetchableFragmentNodeMod {
   RefetchFn[TQuery, InternalOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchFunction")(fragmentNode.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any], fragmentIdentifier.asInstanceOf[js.Any], fragmentRefPathInResponse.asInstanceOf[js.Any], fragmentData.asInstanceOf[js.Any], refetchGenerationRef.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any], disposeFetch.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line:no-unnecessary-generics
   RefetchFn[TQuery, InternalOptions]]
   
-  @scala.inline
-  def useRefetchableFragmentNode[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentNode: ReaderFragment, parentFragmentRef: js.Any, componentDisplayName: String): // tslint:disable-next-line:no-unnecessary-generics
+  inline def useRefetchableFragmentNode[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentNode: ReaderFragment, parentFragmentRef: js.Any, componentDisplayName: String): // tslint:disable-next-line:no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, InternalOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragmentNode")(fragmentNode.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line:no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, InternalOptions]]
   
@@ -62,8 +58,7 @@ object useRefetchableFragmentNodeMod {
   trait Action extends StObject
   object Action {
     
-    @scala.inline
-    def Environment(
+    inline def Environment(
       environment: typings.relayRuntime.relayStoreTypesMod.Environment,
       fragmentIdentifier: String,
       `type`: String
@@ -73,8 +68,7 @@ object useRefetchableFragmentNodeMod {
       __obj.asInstanceOf[typings.entriaRelayExperimental.anon.Environment]
     }
     
-    @scala.inline
-    def FetchPolicy(environment: Environment, refetchVariables: Variables, `type`: String): typings.entriaRelayExperimental.anon.FetchPolicy = {
+    inline def FetchPolicy(environment: Environment, refetchVariables: Variables, `type`: String): typings.entriaRelayExperimental.anon.FetchPolicy = {
       val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], refetchVariables = refetchVariables.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.entriaRelayExperimental.anon.FetchPolicy]
@@ -89,20 +83,16 @@ object useRefetchableFragmentNodeMod {
   }
   object DebugIDandTypename {
     
-    @scala.inline
-    def apply(id: String, typename: String): DebugIDandTypename = {
+    inline def apply(id: String, typename: String): DebugIDandTypename = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typename = typename.asInstanceOf[js.Any])
       __obj.asInstanceOf[DebugIDandTypename]
     }
     
-    @scala.inline
-    implicit class DebugIDandTypenameMutableBuilder[Self <: DebugIDandTypename] (val x: Self) extends AnyVal {
+    extension [Self <: DebugIDandTypename](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypename(value: String): Self = StObject.set(x, "typename", value.asInstanceOf[js.Any])
+      inline def setTypename(value: String): Self = StObject.set(x, "typename", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,26 +106,20 @@ object useRefetchableFragmentNodeMod {
   }
   object InternalOptions {
     
-    @scala.inline
-    def apply(): InternalOptions = {
+    inline def apply(): InternalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternalOptions]
     }
     
-    @scala.inline
-    implicit class InternalOptionsMutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InternalOptions](x: Self) {
       
-      @scala.inline
-      def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
+      inline def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
+      inline def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
       
-      @scala.inline
-      def set__environment(value: Environment): Self = StObject.set(x, "__environment", value.asInstanceOf[js.Any])
+      inline def set__environment(value: Environment): Self = StObject.set(x, "__environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__environmentUndefined: Self = StObject.set(x, "__environment", js.undefined)
+      inline def set__environmentUndefined: Self = StObject.set(x, "__environment", js.undefined)
     }
   }
   
@@ -147,26 +131,20 @@ object useRefetchableFragmentNodeMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+      inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     }
   }
   
@@ -212,56 +190,40 @@ object useRefetchableFragmentNodeMod {
   }
   object RefetchState {
     
-    @scala.inline
-    def apply(mirroredEnvironment: Environment, mirroredFragmentIdentifier: String): RefetchState = {
+    inline def apply(mirroredEnvironment: Environment, mirroredFragmentIdentifier: String): RefetchState = {
       val __obj = js.Dynamic.literal(mirroredEnvironment = mirroredEnvironment.asInstanceOf[js.Any], mirroredFragmentIdentifier = mirroredFragmentIdentifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefetchState]
     }
     
-    @scala.inline
-    implicit class RefetchStateMutableBuilder[Self <: RefetchState] (val x: Self) extends AnyVal {
+    extension [Self <: RefetchState](x: Self) {
       
-      @scala.inline
-      def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+      inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+      inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
       
-      @scala.inline
-      def setMirroredEnvironment(value: Environment): Self = StObject.set(x, "mirroredEnvironment", value.asInstanceOf[js.Any])
+      inline def setMirroredEnvironment(value: Environment): Self = StObject.set(x, "mirroredEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirroredFragmentIdentifier(value: String): Self = StObject.set(x, "mirroredFragmentIdentifier", value.asInstanceOf[js.Any])
+      inline def setMirroredFragmentIdentifier(value: String): Self = StObject.set(x, "mirroredFragmentIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setRefetchEnvironment(value: Environment): Self = StObject.set(x, "refetchEnvironment", value.asInstanceOf[js.Any])
+      inline def setRefetchEnvironment(value: Environment): Self = StObject.set(x, "refetchEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefetchEnvironmentNull: Self = StObject.set(x, "refetchEnvironment", null)
+      inline def setRefetchEnvironmentNull: Self = StObject.set(x, "refetchEnvironment", null)
       
-      @scala.inline
-      def setRefetchEnvironmentUndefined: Self = StObject.set(x, "refetchEnvironment", js.undefined)
+      inline def setRefetchEnvironmentUndefined: Self = StObject.set(x, "refetchEnvironment", js.undefined)
       
-      @scala.inline
-      def setRefetchVariables(value: Variables): Self = StObject.set(x, "refetchVariables", value.asInstanceOf[js.Any])
+      inline def setRefetchVariables(value: Variables): Self = StObject.set(x, "refetchVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefetchVariablesNull: Self = StObject.set(x, "refetchVariables", null)
+      inline def setRefetchVariablesNull: Self = StObject.set(x, "refetchVariables", null)
       
-      @scala.inline
-      def setRefetchVariablesUndefined: Self = StObject.set(x, "refetchVariables", js.undefined)
+      inline def setRefetchVariablesUndefined: Self = StObject.set(x, "refetchVariables", js.undefined)
       
-      @scala.inline
-      def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
+      inline def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
+      inline def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
     }
   }
   
@@ -279,8 +241,7 @@ object useRefetchableFragmentNodeMod {
   }
   object ReturnTypeNode {
     
-    @scala.inline
-    def apply[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */, TOptions](
+    inline def apply[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */, TOptions](
       disableStoreUpdates: () => Unit,
       enableStoreUpdates: () => Unit,
       fragmentData: js.Any,
@@ -291,23 +252,17 @@ object useRefetchableFragmentNodeMod {
       __obj.asInstanceOf[ReturnTypeNode[TQuery, TKey, TOptions]]
     }
     
-    @scala.inline
-    implicit class ReturnTypeNodeMutableBuilder[Self <: ReturnTypeNode[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */, TOptions] (val x: Self & (ReturnTypeNode[TQuery, TKey, TOptions])) extends AnyVal {
+    extension [Self <: ReturnTypeNode[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */, TOptions](x: Self & (ReturnTypeNode[TQuery, TKey, TOptions])) {
       
-      @scala.inline
-      def setDisableStoreUpdates(value: () => Unit): Self = StObject.set(x, "disableStoreUpdates", js.Any.fromFunction0(value))
+      inline def setDisableStoreUpdates(value: () => Unit): Self = StObject.set(x, "disableStoreUpdates", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableStoreUpdates(value: () => Unit): Self = StObject.set(x, "enableStoreUpdates", js.Any.fromFunction0(value))
+      inline def setEnableStoreUpdates(value: () => Unit): Self = StObject.set(x, "enableStoreUpdates", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFragmentData(value: js.Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
+      inline def setFragmentData(value: js.Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentRef(value: js.Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
+      inline def setFragmentRef(value: js.Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefetch(value: RefetchFnDynamic[TQuery, TKey, TOptions]): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
+      inline def setRefetch(value: RefetchFnDynamic[TQuery, TKey, TOptions]): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
     }
   }
 }

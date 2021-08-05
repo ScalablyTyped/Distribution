@@ -16,23 +16,18 @@ object dragAndDropMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def drag(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_drag")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def drag(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_drag")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva/types/DragAndDrop", "DD._dragElements")
     @js.native
     def dragElements: Map[Double, DragStatus] = js.native
     
-    @scala.inline
-    def dragElements_=(x: Map[Double, DragStatus]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_dragElements")(x.asInstanceOf[js.Any])
+    inline def dragElements_=(x: Map[Double, DragStatus]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_dragElements")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def endDragAfter(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragAfter")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def endDragAfter(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragAfter")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def endDragBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")().asInstanceOf[Unit]
-    @scala.inline
-    def endDragBefore(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def endDragBefore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")().asInstanceOf[Unit]
+    inline def endDragBefore(evt: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endDragBefore")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva/types/DragAndDrop", "DD.isDragging")
     @js.native
@@ -41,8 +36,7 @@ object dragAndDropMod {
     @JSImport("konva/types/DragAndDrop", "DD.justDragged")
     @js.native
     def justDragged: Boolean = js.native
-    @scala.inline
-    def justDragged_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("justDragged")(x.asInstanceOf[js.Any])
+    inline def justDragged_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("justDragged")(x.asInstanceOf[js.Any])
     
     @JSImport("konva/types/DragAndDrop", "DD.node")
     @js.native

@@ -15,22 +15,17 @@ trait SearchEntryObject
 }
 object SearchEntryObject {
   
-  @scala.inline
-  def apply(controls: js.Array[Control], dn: String): SearchEntryObject = {
+  inline def apply(controls: js.Array[Control], dn: String): SearchEntryObject = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], dn = dn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchEntryObject]
   }
   
-  @scala.inline
-  implicit class SearchEntryObjectMutableBuilder[Self <: SearchEntryObject] (val x: Self) extends AnyVal {
+  extension [Self <: SearchEntryObject](x: Self) {
     
-    @scala.inline
-    def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
     
-    @scala.inline
-    def setDn(value: String): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
+    inline def setDn(value: String): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
   }
 }

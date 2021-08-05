@@ -15,17 +15,14 @@ trait JSXMemberExpression
 }
 object JSXMemberExpression {
   
-  @scala.inline
-  def apply(): JSXMemberExpression = {
+  inline def apply(): JSXMemberExpression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXMemberExpression")
     __obj.asInstanceOf[JSXMemberExpression]
   }
   
-  @scala.inline
-  implicit class JSXMemberExpressionMutableBuilder[Self <: JSXMemberExpression] (val x: Self) extends AnyVal {
+  extension [Self <: JSXMemberExpression](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

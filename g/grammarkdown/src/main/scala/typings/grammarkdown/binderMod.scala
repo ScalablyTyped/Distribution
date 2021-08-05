@@ -20,30 +20,30 @@ object binderMod {
   @js.native
   class Binder () extends StObject {
     
-    var bind: js.Any = js.native
+    /* private */ var bind: js.Any = js.native
     
-    var bindChildren: js.Any = js.native
+    /* private */ var bindChildren: js.Any = js.native
     
-    var bindParameter: js.Any = js.native
+    /* private */ var bindParameter: js.Any = js.native
     
-    var bindProduction: js.Any = js.native
+    /* private */ var bindProduction: js.Any = js.native
     
     def bindSourceFile(file: SourceFile, bindings: BindingTable): Unit = js.native
     def bindSourceFile(file: SourceFile, bindings: BindingTable, cancelable: Cancelable): Unit = js.native
     def bindSourceFile(file: SourceFile, bindings: BindingTable, cancelable: CancellationToken): Unit = js.native
     
-    var declareSymbol: js.Any = js.native
+    /* private */ var declareSymbol: js.Any = js.native
     
-    var parentNode: js.Any = js.native
+    /* private */ var parentNode: js.Any = js.native
     
-    var parentSymbol: js.Any = js.native
+    /* private */ var parentSymbol: js.Any = js.native
   }
   
   @JSImport("grammarkdown/dist/binder", "BindingTable")
   @js.native
   class BindingTable () extends StObject {
     
-    var addReferenceToSymbol: js.Any = js.native
+    /* private */ var addReferenceToSymbol: js.Any = js.native
     
     def getAncestor(node: Unit, kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
     def getAncestor(node: Node[SyntaxKind], kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
@@ -73,21 +73,21 @@ object binderMod {
     
     def isEmpty: Boolean = js.native
     
-    var nodeParents: js.Any = js.native
+    /* private */ var nodeParents: js.Any = js.native
     
-    var nodeSymbols: js.Any = js.native
+    /* private */ var nodeSymbols: js.Any = js.native
     
     def resolveSymbol(location: Unit, name: String, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
     def resolveSymbol(location: Unit, name: Unit, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
     def resolveSymbol(location: Node[SyntaxKind], name: String, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
     def resolveSymbol(location: Node[SyntaxKind], name: Unit, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
     
-    var setSymbolForNode: js.Any = js.native
+    /* private */ var setSymbolForNode: js.Any = js.native
     
-    var symbolDeclarations: js.Any = js.native
+    /* private */ var symbolDeclarations: js.Any = js.native
     
-    var symbolLocals: js.Any = js.native
+    /* private */ var symbolLocals: js.Any = js.native
     
-    var symbolReferences: js.Any = js.native
+    /* private */ var symbolReferences: js.Any = js.native
   }
 }

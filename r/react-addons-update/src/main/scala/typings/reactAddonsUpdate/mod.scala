@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: js.Array[js.Any], spec: UpdateArraySpec): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def apply(value: js.Object, spec: UpdateSpec): js.Any = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(value: js.Array[js.Any], spec: UpdateArraySpec): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def apply(value: js.Object, spec: UpdateSpec): js.Any = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("react-addons-update", JSImport.Namespace)
   @js.native
@@ -27,10 +25,8 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def update(value: js.Array[js.Any], spec: UpdateArraySpec): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-      @scala.inline
-      def update(value: js.Object, spec: UpdateSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def update(value: js.Array[js.Any], spec: UpdateArraySpec): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      inline def update(value: js.Object, spec: UpdateSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(value.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     }
     
     trait UpdateArraySpec
@@ -48,41 +44,30 @@ object mod {
     }
     object UpdateArraySpec {
       
-      @scala.inline
-      def apply(): UpdateArraySpec = {
+      inline def apply(): UpdateArraySpec = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateArraySpec]
       }
       
-      @scala.inline
-      implicit class UpdateArraySpecMutableBuilder[Self <: UpdateArraySpec] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateArraySpec](x: Self) {
         
-        @scala.inline
-        def set$push(value: js.Array[js.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
+        inline def set$push(value: js.Array[js.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$pushUndefined: Self = StObject.set(x, "$push", js.undefined)
+        inline def set$pushUndefined: Self = StObject.set(x, "$push", js.undefined)
         
-        @scala.inline
-        def set$pushVarargs(value: js.Any*): Self = StObject.set(x, "$push", js.Array(value :_*))
+        inline def set$pushVarargs(value: js.Any*): Self = StObject.set(x, "$push", js.Array(value :_*))
         
-        @scala.inline
-        def set$splice(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "$splice", value.asInstanceOf[js.Any])
+        inline def set$splice(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "$splice", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$spliceUndefined: Self = StObject.set(x, "$splice", js.undefined)
+        inline def set$spliceUndefined: Self = StObject.set(x, "$splice", js.undefined)
         
-        @scala.inline
-        def set$spliceVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "$splice", js.Array(value :_*))
+        inline def set$spliceVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "$splice", js.Array(value :_*))
         
-        @scala.inline
-        def set$unshift(value: js.Array[js.Any]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
+        inline def set$unshift(value: js.Array[js.Any]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$unshiftUndefined: Self = StObject.set(x, "$unshift", js.undefined)
+        inline def set$unshiftUndefined: Self = StObject.set(x, "$unshift", js.undefined)
         
-        @scala.inline
-        def set$unshiftVarargs(value: js.Any*): Self = StObject.set(x, "$unshift", js.Array(value :_*))
+        inline def set$unshiftVarargs(value: js.Any*): Self = StObject.set(x, "$unshift", js.Array(value :_*))
       }
     }
     
@@ -108,32 +93,24 @@ object mod {
     }
     object UpdateSpecCommand {
       
-      @scala.inline
-      def apply(): UpdateSpecCommand = {
+      inline def apply(): UpdateSpecCommand = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateSpecCommand]
       }
       
-      @scala.inline
-      implicit class UpdateSpecCommandMutableBuilder[Self <: UpdateSpecCommand] (val x: Self) extends AnyVal {
+      extension [Self <: UpdateSpecCommand](x: Self) {
         
-        @scala.inline
-        def set$apply(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "$apply", js.Any.fromFunction1(value))
+        inline def set$apply(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "$apply", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def set$applyUndefined: Self = StObject.set(x, "$apply", js.undefined)
+        inline def set$applyUndefined: Self = StObject.set(x, "$apply", js.undefined)
         
-        @scala.inline
-        def set$merge(value: js.Object): Self = StObject.set(x, "$merge", value.asInstanceOf[js.Any])
+        inline def set$merge(value: js.Object): Self = StObject.set(x, "$merge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$mergeUndefined: Self = StObject.set(x, "$merge", js.undefined)
+        inline def set$mergeUndefined: Self = StObject.set(x, "$merge", js.undefined)
         
-        @scala.inline
-        def set$set(value: js.Any): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
+        inline def set$set(value: js.Any): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$setUndefined: Self = StObject.set(x, "$set", js.undefined)
+        inline def set$setUndefined: Self = StObject.set(x, "$set", js.undefined)
       }
     }
     
@@ -143,8 +120,7 @@ object mod {
          with _UpdateSpec
     object UpdateSpecPath {
       
-      @scala.inline
-      def apply(): UpdateSpecPath = {
+      inline def apply(): UpdateSpecPath = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[UpdateSpecPath]
       }
@@ -153,14 +129,12 @@ object mod {
     trait _UpdateSpec extends StObject
     object _UpdateSpec {
       
-      @scala.inline
-      def UpdateSpecCommand(): typings.reactAddonsUpdate.mod.reactAugmentingMod.UpdateSpecCommand = {
+      inline def UpdateSpecCommand(): typings.reactAddonsUpdate.mod.reactAugmentingMod.UpdateSpecCommand = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.reactAddonsUpdate.mod.reactAugmentingMod.UpdateSpecCommand]
       }
       
-      @scala.inline
-      def UpdateSpecPath(): typings.reactAddonsUpdate.mod.reactAugmentingMod.UpdateSpecPath = {
+      inline def UpdateSpecPath(): typings.reactAddonsUpdate.mod.reactAugmentingMod.UpdateSpecPath = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.reactAddonsUpdate.mod.reactAugmentingMod.UpdateSpecPath]
       }

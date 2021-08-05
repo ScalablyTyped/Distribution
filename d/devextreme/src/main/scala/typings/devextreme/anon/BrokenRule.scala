@@ -44,75 +44,57 @@ trait BrokenRule extends StObject {
 }
 object BrokenRule {
   
-  @scala.inline
-  def apply(): BrokenRule = {
+  inline def apply(): BrokenRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrokenRule]
   }
   
-  @scala.inline
-  implicit class BrokenRuleMutableBuilder[Self <: BrokenRule] (val x: Self) extends AnyVal {
+  extension [Self <: BrokenRule](x: Self) {
     
-    @scala.inline
-    def setBrokenRule(
+    inline def setBrokenRule(
       value: RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ): Self = StObject.set(x, "brokenRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokenRuleUndefined: Self = StObject.set(x, "brokenRule", js.undefined)
+    inline def setBrokenRuleUndefined: Self = StObject.set(x, "brokenRule", js.undefined)
     
-    @scala.inline
-    def setBrokenRules(
+    inline def setBrokenRules(
       value: js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
     ): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrokenRulesUndefined: Self = StObject.set(x, "brokenRules", js.undefined)
+    inline def setBrokenRulesUndefined: Self = StObject.set(x, "brokenRules", js.undefined)
     
-    @scala.inline
-    def setBrokenRulesVarargs(
+    inline def setBrokenRulesVarargs(
       value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
     ): Self = StObject.set(x, "brokenRules", js.Array(value :_*))
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: valid | invalid | pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: valid | invalid | pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setValidationRules(
+    inline def setValidationRules(
       value: js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
     ): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
+    inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
     
-    @scala.inline
-    def setValidationRulesVarargs(
+    inline def setValidationRulesVarargs(
       value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
     ): Self = StObject.set(x, "validationRules", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

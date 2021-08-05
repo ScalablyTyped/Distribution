@@ -8,16 +8,13 @@ object electronNotarizeStrings {
   
   @js.native
   sealed trait `in progress` extends StObject
-  @scala.inline
-  def `in progress`: `in progress` = ("in progress").asInstanceOf[`in progress`]
+  inline def `in progress`: `in progress` = ("in progress").asInstanceOf[`in progress`]
   
   @js.native
   sealed trait invalid extends StObject
-  @scala.inline
-  def invalid: invalid = "invalid".asInstanceOf[invalid]
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
 }

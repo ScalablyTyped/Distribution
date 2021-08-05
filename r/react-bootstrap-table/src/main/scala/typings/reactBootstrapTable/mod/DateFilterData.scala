@@ -14,20 +14,16 @@ trait DateFilterData
 }
 object DateFilterData {
   
-  @scala.inline
-  def apply(value: DateFilterValue): DateFilterData = {
+  inline def apply(value: DateFilterValue): DateFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DateFilter")
     __obj.asInstanceOf[DateFilterData]
   }
   
-  @scala.inline
-  implicit class DateFilterDataMutableBuilder[Self <: DateFilterData] (val x: Self) extends AnyVal {
+  extension [Self <: DateFilterData](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DateFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DateFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

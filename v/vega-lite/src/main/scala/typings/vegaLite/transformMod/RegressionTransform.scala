@@ -67,58 +67,41 @@ trait RegressionTransform
 }
 object RegressionTransform {
   
-  @scala.inline
-  def apply(on: FieldName, regression: FieldName): RegressionTransform = {
+  inline def apply(on: FieldName, regression: FieldName): RegressionTransform = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any], regression = regression.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegressionTransform]
   }
   
-  @scala.inline
-  implicit class RegressionTransformMutableBuilder[Self <: RegressionTransform] (val x: Self) extends AnyVal {
+  extension [Self <: RegressionTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: linear | log | exp | pow | quad | poly): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: linear | log | exp | pow | quad | poly): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOn(value: FieldName): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: FieldName): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setParams(value: Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Boolean): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRegression(value: FieldName): Self = StObject.set(x, "regression", value.asInstanceOf[js.Any])
+    inline def setRegression(value: FieldName): Self = StObject.set(x, "regression", value.asInstanceOf[js.Any])
   }
 }

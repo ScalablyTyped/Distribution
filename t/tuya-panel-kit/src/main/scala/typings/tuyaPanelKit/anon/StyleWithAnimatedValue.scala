@@ -13,22 +13,17 @@ trait StyleWithAnimatedValue extends StObject {
 }
 object StyleWithAnimatedValue {
   
-  @scala.inline
-  def apply(): StyleWithAnimatedValue = {
+  inline def apply(): StyleWithAnimatedValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleWithAnimatedValue]
   }
   
-  @scala.inline
-  implicit class StyleWithAnimatedValueMutableBuilder[Self <: StyleWithAnimatedValue] (val x: Self) extends AnyVal {
+  extension [Self <: StyleWithAnimatedValue](x: Self) {
     
-    @scala.inline
-    def setStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

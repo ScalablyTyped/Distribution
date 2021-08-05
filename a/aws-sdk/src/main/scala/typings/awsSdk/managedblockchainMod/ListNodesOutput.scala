@@ -18,28 +18,21 @@ trait ListNodesOutput extends StObject {
 }
 object ListNodesOutput {
   
-  @scala.inline
-  def apply(): ListNodesOutput = {
+  inline def apply(): ListNodesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNodesOutput]
   }
   
-  @scala.inline
-  implicit class ListNodesOutputMutableBuilder[Self <: ListNodesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListNodesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNodes(value: NodeSummaryList): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: NodeSummaryList): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: NodeSummary*): Self = StObject.set(x, "Nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: NodeSummary*): Self = StObject.set(x, "Nodes", js.Array(value :_*))
   }
 }

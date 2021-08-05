@@ -94,6 +94,5 @@ object FunctionPropertyAssignmentSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.FunctionPropertyAssignmentSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.FunctionPropertyAssignmentSyntax]
+  inline def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.FunctionPropertyAssignmentSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.FunctionPropertyAssignmentSyntax]
 }

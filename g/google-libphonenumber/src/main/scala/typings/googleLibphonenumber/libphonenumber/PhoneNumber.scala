@@ -105,8 +105,7 @@ trait PhoneNumber extends StObject {
 }
 object PhoneNumber {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearCountryCode: () => Unit,
     clearCountryCodeSource: () => Unit,
     clearExtension: () => Unit,
@@ -187,151 +186,102 @@ object PhoneNumber {
          with CountryCodeSource
   }
   
-  @scala.inline
-  implicit class PhoneNumberMutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneNumber](x: Self) {
     
-    @scala.inline
-    def setClearCountryCode(value: () => Unit): Self = StObject.set(x, "clearCountryCode", js.Any.fromFunction0(value))
+    inline def setClearCountryCode(value: () => Unit): Self = StObject.set(x, "clearCountryCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearCountryCodeSource(value: () => Unit): Self = StObject.set(x, "clearCountryCodeSource", js.Any.fromFunction0(value))
+    inline def setClearCountryCodeSource(value: () => Unit): Self = StObject.set(x, "clearCountryCodeSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearExtension(value: () => Unit): Self = StObject.set(x, "clearExtension", js.Any.fromFunction0(value))
+    inline def setClearExtension(value: () => Unit): Self = StObject.set(x, "clearExtension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearItalianLeadingZero(value: () => Unit): Self = StObject.set(x, "clearItalianLeadingZero", js.Any.fromFunction0(value))
+    inline def setClearItalianLeadingZero(value: () => Unit): Self = StObject.set(x, "clearItalianLeadingZero", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearNationalNumber(value: () => Unit): Self = StObject.set(x, "clearNationalNumber", js.Any.fromFunction0(value))
+    inline def setClearNationalNumber(value: () => Unit): Self = StObject.set(x, "clearNationalNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearNumberOfLeadingZeros(value: () => Unit): Self = StObject.set(x, "clearNumberOfLeadingZeros", js.Any.fromFunction0(value))
+    inline def setClearNumberOfLeadingZeros(value: () => Unit): Self = StObject.set(x, "clearNumberOfLeadingZeros", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearPreferredDomesticCarrierCode(value: () => Unit): Self = StObject.set(x, "clearPreferredDomesticCarrierCode", js.Any.fromFunction0(value))
+    inline def setClearPreferredDomesticCarrierCode(value: () => Unit): Self = StObject.set(x, "clearPreferredDomesticCarrierCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearRawInput(value: () => Unit): Self = StObject.set(x, "clearRawInput", js.Any.fromFunction0(value))
+    inline def setClearRawInput(value: () => Unit): Self = StObject.set(x, "clearRawInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCountryCodeCount(value: () => Double): Self = StObject.set(x, "countryCodeCount", js.Any.fromFunction0(value))
+    inline def setCountryCodeCount(value: () => Double): Self = StObject.set(x, "countryCodeCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCountryCodeSourceCount(value: () => Double): Self = StObject.set(x, "countryCodeSourceCount", js.Any.fromFunction0(value))
+    inline def setCountryCodeSourceCount(value: () => Double): Self = StObject.set(x, "countryCodeSourceCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtensionCount(value: () => Double): Self = StObject.set(x, "extensionCount", js.Any.fromFunction0(value))
+    inline def setExtensionCount(value: () => Double): Self = StObject.set(x, "extensionCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountryCode(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getCountryCode", js.Any.fromFunction0(value))
+    inline def setGetCountryCode(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getCountryCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountryCodeOrDefault(value: () => Double): Self = StObject.set(x, "getCountryCodeOrDefault", js.Any.fromFunction0(value))
+    inline def setGetCountryCodeOrDefault(value: () => Double): Self = StObject.set(x, "getCountryCodeOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountryCodeSource(value: () => js.UndefOr[CountryCodeSource]): Self = StObject.set(x, "getCountryCodeSource", js.Any.fromFunction0(value))
+    inline def setGetCountryCodeSource(value: () => js.UndefOr[CountryCodeSource]): Self = StObject.set(x, "getCountryCodeSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountryCodeSourceOrDefault(value: () => CountryCodeSource): Self = StObject.set(x, "getCountryCodeSourceOrDefault", js.Any.fromFunction0(value))
+    inline def setGetCountryCodeSourceOrDefault(value: () => CountryCodeSource): Self = StObject.set(x, "getCountryCodeSourceOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtension(value: () => js.UndefOr[String]): Self = StObject.set(x, "getExtension", js.Any.fromFunction0(value))
+    inline def setGetExtension(value: () => js.UndefOr[String]): Self = StObject.set(x, "getExtension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtensionOrDefault(value: () => String): Self = StObject.set(x, "getExtensionOrDefault", js.Any.fromFunction0(value))
+    inline def setGetExtensionOrDefault(value: () => String): Self = StObject.set(x, "getExtensionOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItalianLeadingZero(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getItalianLeadingZero", js.Any.fromFunction0(value))
+    inline def setGetItalianLeadingZero(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getItalianLeadingZero", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItalianLeadingZeroOrDefault(value: () => Boolean): Self = StObject.set(x, "getItalianLeadingZeroOrDefault", js.Any.fromFunction0(value))
+    inline def setGetItalianLeadingZeroOrDefault(value: () => Boolean): Self = StObject.set(x, "getItalianLeadingZeroOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNationalNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getNationalNumber", js.Any.fromFunction0(value))
+    inline def setGetNationalNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getNationalNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNationalNumberOrDefault(value: () => Double): Self = StObject.set(x, "getNationalNumberOrDefault", js.Any.fromFunction0(value))
+    inline def setGetNationalNumberOrDefault(value: () => Double): Self = StObject.set(x, "getNationalNumberOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberOfLeadingZeros(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getNumberOfLeadingZeros", js.Any.fromFunction0(value))
+    inline def setGetNumberOfLeadingZeros(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getNumberOfLeadingZeros", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberOfLeadingZerosOrDefault(value: () => Double): Self = StObject.set(x, "getNumberOfLeadingZerosOrDefault", js.Any.fromFunction0(value))
+    inline def setGetNumberOfLeadingZerosOrDefault(value: () => Double): Self = StObject.set(x, "getNumberOfLeadingZerosOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreferredDomesticCarrierCode(value: () => js.UndefOr[String]): Self = StObject.set(x, "getPreferredDomesticCarrierCode", js.Any.fromFunction0(value))
+    inline def setGetPreferredDomesticCarrierCode(value: () => js.UndefOr[String]): Self = StObject.set(x, "getPreferredDomesticCarrierCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreferredDomesticCarrierCodeOrDefault(value: () => String): Self = StObject.set(x, "getPreferredDomesticCarrierCodeOrDefault", js.Any.fromFunction0(value))
+    inline def setGetPreferredDomesticCarrierCodeOrDefault(value: () => String): Self = StObject.set(x, "getPreferredDomesticCarrierCodeOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRawInput(value: () => js.UndefOr[String]): Self = StObject.set(x, "getRawInput", js.Any.fromFunction0(value))
+    inline def setGetRawInput(value: () => js.UndefOr[String]): Self = StObject.set(x, "getRawInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRawInputOrDefault(value: () => String): Self = StObject.set(x, "getRawInputOrDefault", js.Any.fromFunction0(value))
+    inline def setGetRawInputOrDefault(value: () => String): Self = StObject.set(x, "getRawInputOrDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasCountryCode(value: () => Boolean): Self = StObject.set(x, "hasCountryCode", js.Any.fromFunction0(value))
+    inline def setHasCountryCode(value: () => Boolean): Self = StObject.set(x, "hasCountryCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasCountryCodeSource(value: () => Boolean): Self = StObject.set(x, "hasCountryCodeSource", js.Any.fromFunction0(value))
+    inline def setHasCountryCodeSource(value: () => Boolean): Self = StObject.set(x, "hasCountryCodeSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasExtension(value: () => Boolean): Self = StObject.set(x, "hasExtension", js.Any.fromFunction0(value))
+    inline def setHasExtension(value: () => Boolean): Self = StObject.set(x, "hasExtension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasItalianLeadingZero(value: () => Boolean): Self = StObject.set(x, "hasItalianLeadingZero", js.Any.fromFunction0(value))
+    inline def setHasItalianLeadingZero(value: () => Boolean): Self = StObject.set(x, "hasItalianLeadingZero", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasNationalNumber(value: () => Boolean): Self = StObject.set(x, "hasNationalNumber", js.Any.fromFunction0(value))
+    inline def setHasNationalNumber(value: () => Boolean): Self = StObject.set(x, "hasNationalNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasNumberOfLeadingZeros(value: () => Boolean): Self = StObject.set(x, "hasNumberOfLeadingZeros", js.Any.fromFunction0(value))
+    inline def setHasNumberOfLeadingZeros(value: () => Boolean): Self = StObject.set(x, "hasNumberOfLeadingZeros", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasPreferredDomesticCarrierCode(value: () => Boolean): Self = StObject.set(x, "hasPreferredDomesticCarrierCode", js.Any.fromFunction0(value))
+    inline def setHasPreferredDomesticCarrierCode(value: () => Boolean): Self = StObject.set(x, "hasPreferredDomesticCarrierCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasRawInput(value: () => Boolean): Self = StObject.set(x, "hasRawInput", js.Any.fromFunction0(value))
+    inline def setHasRawInput(value: () => Boolean): Self = StObject.set(x, "hasRawInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItalianLeadingZeroCount(value: () => Double): Self = StObject.set(x, "italianLeadingZeroCount", js.Any.fromFunction0(value))
+    inline def setItalianLeadingZeroCount(value: () => Double): Self = StObject.set(x, "italianLeadingZeroCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNationalNumberCount(value: () => Double): Self = StObject.set(x, "nationalNumberCount", js.Any.fromFunction0(value))
+    inline def setNationalNumberCount(value: () => Double): Self = StObject.set(x, "nationalNumberCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberOfLeadingZerosCount(value: () => Double): Self = StObject.set(x, "numberOfLeadingZerosCount", js.Any.fromFunction0(value))
+    inline def setNumberOfLeadingZerosCount(value: () => Double): Self = StObject.set(x, "numberOfLeadingZerosCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreferredDomesticCarrierCodeCount(value: () => Double): Self = StObject.set(x, "preferredDomesticCarrierCodeCount", js.Any.fromFunction0(value))
+    inline def setPreferredDomesticCarrierCodeCount(value: () => Double): Self = StObject.set(x, "preferredDomesticCarrierCodeCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRawInputCount(value: () => Double): Self = StObject.set(x, "rawInputCount", js.Any.fromFunction0(value))
+    inline def setRawInputCount(value: () => Double): Self = StObject.set(x, "rawInputCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCountryCode(value: Double => Unit): Self = StObject.set(x, "setCountryCode", js.Any.fromFunction1(value))
+    inline def setSetCountryCode(value: Double => Unit): Self = StObject.set(x, "setCountryCode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCountryCodeSource(value: CountryCodeSource => Unit): Self = StObject.set(x, "setCountryCodeSource", js.Any.fromFunction1(value))
+    inline def setSetCountryCodeSource(value: CountryCodeSource => Unit): Self = StObject.set(x, "setCountryCodeSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExtension(value: String => Unit): Self = StObject.set(x, "setExtension", js.Any.fromFunction1(value))
+    inline def setSetExtension(value: String => Unit): Self = StObject.set(x, "setExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItalianLeadingZero(value: Boolean => Unit): Self = StObject.set(x, "setItalianLeadingZero", js.Any.fromFunction1(value))
+    inline def setSetItalianLeadingZero(value: Boolean => Unit): Self = StObject.set(x, "setItalianLeadingZero", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNationalNumber(value: Double => Double): Self = StObject.set(x, "setNationalNumber", js.Any.fromFunction1(value))
+    inline def setSetNationalNumber(value: Double => Double): Self = StObject.set(x, "setNationalNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNumberOfLeadingZeros(value: Double => Unit): Self = StObject.set(x, "setNumberOfLeadingZeros", js.Any.fromFunction1(value))
+    inline def setSetNumberOfLeadingZeros(value: Double => Unit): Self = StObject.set(x, "setNumberOfLeadingZeros", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPreferredDomesticCarrierCode(value: String => Unit): Self = StObject.set(x, "setPreferredDomesticCarrierCode", js.Any.fromFunction1(value))
+    inline def setSetPreferredDomesticCarrierCode(value: String => Unit): Self = StObject.set(x, "setPreferredDomesticCarrierCode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRawInput(value: String => Unit): Self = StObject.set(x, "setRawInput", js.Any.fromFunction1(value))
+    inline def setSetRawInput(value: String => Unit): Self = StObject.set(x, "setRawInput", js.Any.fromFunction1(value))
   }
 }

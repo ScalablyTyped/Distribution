@@ -13,10 +13,8 @@ object colorlikeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asColorLike(color: Color): ColorLike = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike]
-  @scala.inline
-  def asColorLike(color: ColorLike): ColorLike = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike]
+  inline def asColorLike(color: Color): ColorLike = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike]
+  inline def asColorLike(color: ColorLike): ColorLike = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike]
   
   type ColorLike = String | CanvasPattern | CanvasGradient
 }

@@ -13,16 +13,13 @@ trait ListProvisionedCapacityInput extends StObject {
 }
 object ListProvisionedCapacityInput {
   
-  @scala.inline
-  def apply(accountId: String): ListProvisionedCapacityInput = {
+  inline def apply(accountId: String): ListProvisionedCapacityInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisionedCapacityInput]
   }
   
-  @scala.inline
-  implicit class ListProvisionedCapacityInputMutableBuilder[Self <: ListProvisionedCapacityInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListProvisionedCapacityInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
   }
 }

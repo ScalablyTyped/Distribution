@@ -51,53 +51,38 @@ object gapi {
       }
       object AudioConfig {
         
-        @scala.inline
-        def apply(): AudioConfig = {
+        inline def apply(): AudioConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[AudioConfig]
         }
         
-        @scala.inline
-        implicit class AudioConfigMutableBuilder[Self <: AudioConfig] (val x: Self) extends AnyVal {
+        extension [Self <: AudioConfig](x: Self) {
           
-          @scala.inline
-          def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
+          inline def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
+          inline def setAudioEncodingUndefined: Self = StObject.set(x, "audioEncoding", js.undefined)
           
-          @scala.inline
-          def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
+          inline def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEffectsProfileIdUndefined: Self = StObject.set(x, "effectsProfileId", js.undefined)
+          inline def setEffectsProfileIdUndefined: Self = StObject.set(x, "effectsProfileId", js.undefined)
           
-          @scala.inline
-          def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value :_*))
+          inline def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value :_*))
           
-          @scala.inline
-          def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+          inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+          inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
           
-          @scala.inline
-          def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
+          inline def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
+          inline def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
           
-          @scala.inline
-          def setSpeakingRate(value: Double): Self = StObject.set(x, "speakingRate", value.asInstanceOf[js.Any])
+          inline def setSpeakingRate(value: Double): Self = StObject.set(x, "speakingRate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpeakingRateUndefined: Self = StObject.set(x, "speakingRate", js.undefined)
+          inline def setSpeakingRateUndefined: Self = StObject.set(x, "speakingRate", js.undefined)
           
-          @scala.inline
-          def setVolumeGainDb(value: Double): Self = StObject.set(x, "volumeGainDb", value.asInstanceOf[js.Any])
+          inline def setVolumeGainDb(value: Double): Self = StObject.set(x, "volumeGainDb", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVolumeGainDbUndefined: Self = StObject.set(x, "volumeGainDb", js.undefined)
+          inline def setVolumeGainDbUndefined: Self = StObject.set(x, "volumeGainDb", js.undefined)
         }
       }
       
@@ -108,23 +93,18 @@ object gapi {
       }
       object ListVoicesResponse {
         
-        @scala.inline
-        def apply(): ListVoicesResponse = {
+        inline def apply(): ListVoicesResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListVoicesResponse]
         }
         
-        @scala.inline
-        implicit class ListVoicesResponseMutableBuilder[Self <: ListVoicesResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListVoicesResponse](x: Self) {
           
-          @scala.inline
-          def setVoices(value: js.Array[Voice]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
+          inline def setVoices(value: js.Array[Voice]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVoicesUndefined: Self = StObject.set(x, "voices", js.undefined)
+          inline def setVoicesUndefined: Self = StObject.set(x, "voices", js.undefined)
           
-          @scala.inline
-          def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "voices", js.Array(value :_*))
+          inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "voices", js.Array(value :_*))
         }
       }
       
@@ -141,26 +121,20 @@ object gapi {
       }
       object SynthesisInput {
         
-        @scala.inline
-        def apply(): SynthesisInput = {
+        inline def apply(): SynthesisInput = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SynthesisInput]
         }
         
-        @scala.inline
-        implicit class SynthesisInputMutableBuilder[Self <: SynthesisInput] (val x: Self) extends AnyVal {
+        extension [Self <: SynthesisInput](x: Self) {
           
-          @scala.inline
-          def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+          inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+          inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
           
-          @scala.inline
-          def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+          inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+          inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
         }
       }
       
@@ -177,32 +151,24 @@ object gapi {
       }
       object SynthesizeSpeechRequest {
         
-        @scala.inline
-        def apply(): SynthesizeSpeechRequest = {
+        inline def apply(): SynthesizeSpeechRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SynthesizeSpeechRequest]
         }
         
-        @scala.inline
-        implicit class SynthesizeSpeechRequestMutableBuilder[Self <: SynthesizeSpeechRequest] (val x: Self) extends AnyVal {
+        extension [Self <: SynthesizeSpeechRequest](x: Self) {
           
-          @scala.inline
-          def setAudioConfig(value: AudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
+          inline def setAudioConfig(value: AudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
+          inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
           
-          @scala.inline
-          def setInput(value: SynthesisInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+          inline def setInput(value: SynthesisInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+          inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
           
-          @scala.inline
-          def setVoice(value: VoiceSelectionParams): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
+          inline def setVoice(value: VoiceSelectionParams): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
+          inline def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
         }
       }
       
@@ -216,20 +182,16 @@ object gapi {
       }
       object SynthesizeSpeechResponse {
         
-        @scala.inline
-        def apply(): SynthesizeSpeechResponse = {
+        inline def apply(): SynthesizeSpeechResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SynthesizeSpeechResponse]
         }
         
-        @scala.inline
-        implicit class SynthesizeSpeechResponseMutableBuilder[Self <: SynthesizeSpeechResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SynthesizeSpeechResponse](x: Self) {
           
-          @scala.inline
-          def setAudioContent(value: String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
+          inline def setAudioContent(value: String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAudioContentUndefined: Self = StObject.set(x, "audioContent", js.undefined)
+          inline def setAudioContentUndefined: Self = StObject.set(x, "audioContent", js.undefined)
         }
       }
       
@@ -257,41 +219,30 @@ object gapi {
       }
       object Voice {
         
-        @scala.inline
-        def apply(): Voice = {
+        inline def apply(): Voice = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Voice]
         }
         
-        @scala.inline
-        implicit class VoiceMutableBuilder[Self <: Voice] (val x: Self) extends AnyVal {
+        extension [Self <: Voice](x: Self) {
           
-          @scala.inline
-          def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
+          inline def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
+          inline def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
           
-          @scala.inline
-          def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
+          inline def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setNaturalSampleRateHertz(value: Double): Self = StObject.set(x, "naturalSampleRateHertz", value.asInstanceOf[js.Any])
+          inline def setNaturalSampleRateHertz(value: Double): Self = StObject.set(x, "naturalSampleRateHertz", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNaturalSampleRateHertzUndefined: Self = StObject.set(x, "naturalSampleRateHertz", js.undefined)
+          inline def setNaturalSampleRateHertzUndefined: Self = StObject.set(x, "naturalSampleRateHertz", js.undefined)
           
-          @scala.inline
-          def setSsmlGender(value: String): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
+          inline def setSsmlGender(value: String): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
+          inline def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
         }
       }
       
@@ -317,32 +268,24 @@ object gapi {
       }
       object VoiceSelectionParams {
         
-        @scala.inline
-        def apply(): VoiceSelectionParams = {
+        inline def apply(): VoiceSelectionParams = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[VoiceSelectionParams]
         }
         
-        @scala.inline
-        implicit class VoiceSelectionParamsMutableBuilder[Self <: VoiceSelectionParams] (val x: Self) extends AnyVal {
+        extension [Self <: VoiceSelectionParams](x: Self) {
           
-          @scala.inline
-          def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+          inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+          inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setSsmlGender(value: String): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
+          inline def setSsmlGender(value: String): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
+          inline def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
         }
       }
       

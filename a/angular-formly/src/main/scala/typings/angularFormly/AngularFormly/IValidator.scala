@@ -15,28 +15,21 @@ trait IValidator extends StObject {
 }
 object IValidator {
   
-  @scala.inline
-  def apply(expression: String | IExpressionFunction): IValidator = {
+  inline def apply(expression: String | IExpressionFunction): IValidator = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidator]
   }
   
-  @scala.inline
-  implicit class IValidatorMutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
+  extension [Self <: IValidator](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String | IExpressionFunction): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String | IExpressionFunction): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "expression", js.Any.fromFunction3(value))
+    inline def setExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "expression", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMessage(value: String | IExpressionFunction): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | IExpressionFunction): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
+    inline def setMessageFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

@@ -24,7 +24,7 @@ class PathConstraintPositionTimeline protected ()
     direction: typings.phaser.spine.MixDirection
   ): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var curves: js.Any = js.native
   
   /* CompleteClass */
@@ -67,27 +67,23 @@ object PathConstraintPositionTimeline {
   @JSGlobal("spine.PathConstraintPositionTimeline.ENTRIES")
   @js.native
   def ENTRIES: Double = js.native
-  @scala.inline
-  def ENTRIES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTRIES")(x.asInstanceOf[js.Any])
+  inline def ENTRIES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTRIES")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.PathConstraintPositionTimeline.PREV_TIME")
   @js.native
   def PREV_TIME: Double = js.native
-  @scala.inline
-  def PREV_TIME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_TIME")(x.asInstanceOf[js.Any])
+  inline def PREV_TIME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_TIME")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.PathConstraintPositionTimeline.PREV_VALUE")
   @js.native
   def PREV_VALUE: Double = js.native
-  @scala.inline
-  def PREV_VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_VALUE")(x.asInstanceOf[js.Any])
+  inline def PREV_VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_VALUE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.PathConstraintPositionTimeline.VALUE")
   @js.native
   def VALUE: Double = js.native
-  @scala.inline
-  def VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE")(x.asInstanceOf[js.Any])
+  inline def VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE")(x.asInstanceOf[js.Any])
 }

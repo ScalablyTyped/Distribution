@@ -13,16 +13,14 @@ object nonmaxUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nonMaxSuppSanityCheck(
+  inline def nonMaxSuppSanityCheck(
     boxes: Tensor2D,
     scores: Tensor1D,
     maxOutputSize: Double,
     iouThreshold: Double,
     scoreThreshold: Double
   ): IouThreshold = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppSanityCheck")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[IouThreshold]
-  @scala.inline
-  def nonMaxSuppSanityCheck(
+  inline def nonMaxSuppSanityCheck(
     boxes: Tensor2D,
     scores: Tensor1D,
     maxOutputSize: Double,

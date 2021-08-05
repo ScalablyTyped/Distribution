@@ -100,68 +100,48 @@ object gridMod {
   }
   object ColProps {
     
-    @scala.inline
-    def apply(): ColProps = {
+    inline def apply(): ColProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColProps]
     }
     
-    @scala.inline
-    implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setLg(value: String | Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: String | Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
       
-      @scala.inline
-      def setMd(value: String | Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: String | Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setSm(value: String | Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: String | Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+      inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
-      @scala.inline
-      def setSpan(value: String | Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: String | Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
       
-      @scala.inline
-      def setXl(value: String | Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: String | Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+      inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
       
-      @scala.inline
-      def setXs(value: String | Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: String | Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
     }
   }
   
@@ -177,38 +157,28 @@ object gridMod {
   }
   object ColumnsProps {
     
-    @scala.inline
-    def apply(): ColumnsProps = {
+    inline def apply(): ColumnsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnsProps]
     }
     
-    @scala.inline
-    implicit class ColumnsPropsMutableBuilder[Self <: ColumnsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnsProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setStretchViewsVertically(value: Boolean): Self = StObject.set(x, "stretchViewsVertically", value.asInstanceOf[js.Any])
+      inline def setStretchViewsVertically(value: Boolean): Self = StObject.set(x, "stretchViewsVertically", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchViewsVerticallyUndefined: Self = StObject.set(x, "stretchViewsVertically", js.undefined)
+      inline def setStretchViewsVerticallyUndefined: Self = StObject.set(x, "stretchViewsVertically", js.undefined)
     }
   }
   
@@ -222,32 +192,24 @@ object gridMod {
   }
   object ContainerProps {
     
-    @scala.inline
-    def apply(): ContainerProps = {
+    inline def apply(): ContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerProps]
     }
     
-    @scala.inline
-    implicit class ContainerPropsMutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+      inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      @scala.inline
-      def setStretchVertically(value: Boolean): Self = StObject.set(x, "stretchVertically", value.asInstanceOf[js.Any])
+      inline def setStretchVertically(value: Boolean): Self = StObject.set(x, "stretchVertically", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchVerticallyUndefined: Self = StObject.set(x, "stretchVertically", js.undefined)
+      inline def setStretchVerticallyUndefined: Self = StObject.set(x, "stretchVertically", js.undefined)
     }
   }
 }

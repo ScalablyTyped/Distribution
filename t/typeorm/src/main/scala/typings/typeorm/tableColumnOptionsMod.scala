@@ -145,165 +145,113 @@ object tableColumnOptionsMod {
   }
   object TableColumnOptions {
     
-    @scala.inline
-    def apply(name: String, `type`: String): TableColumnOptions = {
+    inline def apply(name: String, `type`: String): TableColumnOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableColumnOptions]
     }
     
-    @scala.inline
-    implicit class TableColumnOptionsMutableBuilder[Self <: TableColumnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableColumnOptions](x: Self) {
       
-      @scala.inline
-      def setAsExpression(value: String): Self = StObject.set(x, "asExpression", value.asInstanceOf[js.Any])
+      inline def setAsExpression(value: String): Self = StObject.set(x, "asExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsExpressionUndefined: Self = StObject.set(x, "asExpression", js.undefined)
+      inline def setAsExpressionUndefined: Self = StObject.set(x, "asExpression", js.undefined)
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+      inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+      inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumName(value: String): Self = StObject.set(x, "enumName", value.asInstanceOf[js.Any])
+      inline def setEnumName(value: String): Self = StObject.set(x, "enumName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumNameUndefined: Self = StObject.set(x, "enumName", js.undefined)
+      inline def setEnumNameUndefined: Self = StObject.set(x, "enumName", js.undefined)
       
-      @scala.inline
-      def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+      inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      @scala.inline
-      def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
       
-      @scala.inline
-      def setGeneratedType(value: VIRTUAL | STORED): Self = StObject.set(x, "generatedType", value.asInstanceOf[js.Any])
+      inline def setGeneratedType(value: VIRTUAL | STORED): Self = StObject.set(x, "generatedType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratedTypeUndefined: Self = StObject.set(x, "generatedType", js.undefined)
+      inline def setGeneratedTypeUndefined: Self = StObject.set(x, "generatedType", js.undefined)
       
-      @scala.inline
-      def setGenerationStrategy(value: uuid | increment | rowid): Self = StObject.set(x, "generationStrategy", value.asInstanceOf[js.Any])
+      inline def setGenerationStrategy(value: uuid | increment | rowid): Self = StObject.set(x, "generationStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationStrategyUndefined: Self = StObject.set(x, "generationStrategy", js.undefined)
+      inline def setGenerationStrategyUndefined: Self = StObject.set(x, "generationStrategy", js.undefined)
       
-      @scala.inline
-      def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+      inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
+      inline def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
       
-      @scala.inline
-      def setIsGenerated(value: Boolean): Self = StObject.set(x, "isGenerated", value.asInstanceOf[js.Any])
+      inline def setIsGenerated(value: Boolean): Self = StObject.set(x, "isGenerated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGeneratedUndefined: Self = StObject.set(x, "isGenerated", js.undefined)
+      inline def setIsGeneratedUndefined: Self = StObject.set(x, "isGenerated", js.undefined)
       
-      @scala.inline
-      def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
+      inline def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNullableUndefined: Self = StObject.set(x, "isNullable", js.undefined)
+      inline def setIsNullableUndefined: Self = StObject.set(x, "isNullable", js.undefined)
       
-      @scala.inline
-      def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+      inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+      inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
       
-      @scala.inline
-      def setIsUnique(value: Boolean): Self = StObject.set(x, "isUnique", value.asInstanceOf[js.Any])
+      inline def setIsUnique(value: Boolean): Self = StObject.set(x, "isUnique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUniqueUndefined: Self = StObject.set(x, "isUnique", js.undefined)
+      inline def setIsUniqueUndefined: Self = StObject.set(x, "isUnique", js.undefined)
       
-      @scala.inline
-      def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdate(value: String): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: String): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionNull: Self = StObject.set(x, "precision", null)
+      inline def setPrecisionNull: Self = StObject.set(x, "precision", null)
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setSpatialFeatureType(value: String): Self = StObject.set(x, "spatialFeatureType", value.asInstanceOf[js.Any])
+      inline def setSpatialFeatureType(value: String): Self = StObject.set(x, "spatialFeatureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpatialFeatureTypeUndefined: Self = StObject.set(x, "spatialFeatureType", js.undefined)
+      inline def setSpatialFeatureTypeUndefined: Self = StObject.set(x, "spatialFeatureType", js.undefined)
       
-      @scala.inline
-      def setSrid(value: Double): Self = StObject.set(x, "srid", value.asInstanceOf[js.Any])
+      inline def setSrid(value: Double): Self = StObject.set(x, "srid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSridUndefined: Self = StObject.set(x, "srid", js.undefined)
+      inline def setSridUndefined: Self = StObject.set(x, "srid", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
+      inline def setUnsigned(value: Boolean): Self = StObject.set(x, "unsigned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
+      inline def setUnsignedUndefined: Self = StObject.set(x, "unsigned", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZerofill(value: Boolean): Self = StObject.set(x, "zerofill", value.asInstanceOf[js.Any])
+      inline def setZerofill(value: Boolean): Self = StObject.set(x, "zerofill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZerofillUndefined: Self = StObject.set(x, "zerofill", js.undefined)
+      inline def setZerofillUndefined: Self = StObject.set(x, "zerofill", js.undefined)
     }
   }
 }

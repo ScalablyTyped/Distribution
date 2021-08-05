@@ -14,22 +14,17 @@ trait Instances extends StObject {
 }
 object Instances {
   
-  @scala.inline
-  def apply(count: Double, instances: Double, start: Double): Instances = {
+  inline def apply(count: Double, instances: Double, start: Double): Instances = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instances]
   }
   
-  @scala.inline
-  implicit class InstancesMutableBuilder[Self <: Instances] (val x: Self) extends AnyVal {
+  extension [Self <: Instances](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

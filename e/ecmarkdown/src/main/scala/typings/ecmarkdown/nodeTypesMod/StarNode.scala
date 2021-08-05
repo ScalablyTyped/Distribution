@@ -18,25 +18,19 @@ trait StarNode
 }
 object StarNode {
   
-  @scala.inline
-  def apply(contents: js.Array[FragmentNode], location: LocationRange): StarNode = {
+  inline def apply(contents: js.Array[FragmentNode], location: LocationRange): StarNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "star")
     __obj.asInstanceOf[StarNode]
   }
   
-  @scala.inline
-  implicit class StarNodeMutableBuilder[Self <: StarNode] (val x: Self) extends AnyVal {
+  extension [Self <: StarNode](x: Self) {
     
-    @scala.inline
-    def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: star): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: star): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

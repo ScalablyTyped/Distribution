@@ -18,19 +18,15 @@ trait AuthenticationProviderInformation extends StObject {
 }
 object AuthenticationProviderInformation {
   
-  @scala.inline
-  def apply(id: String, label: String): AuthenticationProviderInformation = {
+  inline def apply(id: String, label: String): AuthenticationProviderInformation = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationProviderInformation]
   }
   
-  @scala.inline
-  implicit class AuthenticationProviderInformationMutableBuilder[Self <: AuthenticationProviderInformation] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationProviderInformation](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

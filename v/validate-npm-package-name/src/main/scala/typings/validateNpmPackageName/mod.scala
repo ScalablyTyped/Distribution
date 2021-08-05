@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(name: String): Result = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def apply(name: String): Result = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   @JSImport("validate-npm-package-name", JSImport.Namespace)
   @js.native
@@ -17,8 +16,7 @@ object mod {
   @JSImport("validate-npm-package-name", "scopedPackagePattern")
   @js.native
   def scopedPackagePattern: RegExp = js.native
-  @scala.inline
-  def scopedPackagePattern_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scopedPackagePattern")(x.asInstanceOf[js.Any])
+  inline def scopedPackagePattern_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scopedPackagePattern")(x.asInstanceOf[js.Any])
   
   trait Result extends StObject {
     
@@ -32,38 +30,28 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(validForNewPackages: Boolean, validForOldPackages: Boolean): Result = {
+    inline def apply(validForNewPackages: Boolean, validForOldPackages: Boolean): Result = {
       val __obj = js.Dynamic.literal(validForNewPackages = validForNewPackages.asInstanceOf[js.Any], validForOldPackages = validForOldPackages.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setValidForNewPackages(value: Boolean): Self = StObject.set(x, "validForNewPackages", value.asInstanceOf[js.Any])
+      inline def setValidForNewPackages(value: Boolean): Self = StObject.set(x, "validForNewPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidForOldPackages(value: Boolean): Self = StObject.set(x, "validForOldPackages", value.asInstanceOf[js.Any])
+      inline def setValidForOldPackages(value: Boolean): Self = StObject.set(x, "validForOldPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
       
-      @scala.inline
-      def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
 }

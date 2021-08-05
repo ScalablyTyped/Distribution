@@ -12,19 +12,15 @@ trait TestPlan extends StObject {
 }
 object TestPlan {
   
-  @scala.inline
-  def apply(testPlan: scala.Double, testSuite: scala.Double): TestPlan = {
+  inline def apply(testPlan: scala.Double, testSuite: scala.Double): TestPlan = {
     val __obj = js.Dynamic.literal(testPlan = testPlan.asInstanceOf[js.Any], testSuite = testSuite.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestPlan]
   }
   
-  @scala.inline
-  implicit class TestPlanMutableBuilder[Self <: TestPlan] (val x: Self) extends AnyVal {
+  extension [Self <: TestPlan](x: Self) {
     
-    @scala.inline
-    def setTestPlan(value: scala.Double): Self = StObject.set(x, "testPlan", value.asInstanceOf[js.Any])
+    inline def setTestPlan(value: scala.Double): Self = StObject.set(x, "testPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSuite(value: scala.Double): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
+    inline def setTestSuite(value: scala.Double): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
   }
 }

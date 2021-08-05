@@ -19,22 +19,17 @@ trait SaveImageOptions
 }
 object SaveImageOptions {
   
-  @scala.inline
-  def apply(url: String): SaveImageOptions = {
+  inline def apply(url: String): SaveImageOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveImageOptions]
   }
   
-  @scala.inline
-  implicit class SaveImageOptionsMutableBuilder[Self <: SaveImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveImageOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ErrMsg => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

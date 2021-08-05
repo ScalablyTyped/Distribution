@@ -88,109 +88,75 @@ trait DescribeTypeOutput extends StObject {
 }
 object DescribeTypeOutput {
   
-  @scala.inline
-  def apply(): DescribeTypeOutput = {
+  inline def apply(): DescribeTypeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTypeOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTypeOutputMutableBuilder[Self <: DescribeTypeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTypeOutput](x: Self) {
     
-    @scala.inline
-    def setArn(value: TypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: TypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setDefaultVersionId(value: TypeVersionId): Self = StObject.set(x, "DefaultVersionId", value.asInstanceOf[js.Any])
+    inline def setDefaultVersionId(value: TypeVersionId): Self = StObject.set(x, "DefaultVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionIdUndefined: Self = StObject.set(x, "DefaultVersionId", js.undefined)
+    inline def setDefaultVersionIdUndefined: Self = StObject.set(x, "DefaultVersionId", js.undefined)
     
-    @scala.inline
-    def setDeprecatedStatus(value: DeprecatedStatus): Self = StObject.set(x, "DeprecatedStatus", value.asInstanceOf[js.Any])
+    inline def setDeprecatedStatus(value: DeprecatedStatus): Self = StObject.set(x, "DeprecatedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedStatusUndefined: Self = StObject.set(x, "DeprecatedStatus", js.undefined)
+    inline def setDeprecatedStatusUndefined: Self = StObject.set(x, "DeprecatedStatus", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDocumentationUrl(value: OptionalSecureUrl): Self = StObject.set(x, "DocumentationUrl", value.asInstanceOf[js.Any])
+    inline def setDocumentationUrl(value: OptionalSecureUrl): Self = StObject.set(x, "DocumentationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUrlUndefined: Self = StObject.set(x, "DocumentationUrl", js.undefined)
+    inline def setDocumentationUrlUndefined: Self = StObject.set(x, "DocumentationUrl", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
-    @scala.inline
-    def setIsDefaultVersion(value: IsDefaultVersion): Self = StObject.set(x, "IsDefaultVersion", value.asInstanceOf[js.Any])
+    inline def setIsDefaultVersion(value: IsDefaultVersion): Self = StObject.set(x, "IsDefaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
+    inline def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
     
-    @scala.inline
-    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
-    @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "LoggingConfig", value.asInstanceOf[js.Any])
+    inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "LoggingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigUndefined: Self = StObject.set(x, "LoggingConfig", js.undefined)
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "LoggingConfig", js.undefined)
     
-    @scala.inline
-    def setProvisioningType(value: ProvisioningType): Self = StObject.set(x, "ProvisioningType", value.asInstanceOf[js.Any])
+    inline def setProvisioningType(value: ProvisioningType): Self = StObject.set(x, "ProvisioningType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningTypeUndefined: Self = StObject.set(x, "ProvisioningType", js.undefined)
+    inline def setProvisioningTypeUndefined: Self = StObject.set(x, "ProvisioningType", js.undefined)
     
-    @scala.inline
-    def setSchema(value: TypeSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: TypeSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
-    @scala.inline
-    def setSourceUrl(value: OptionalSecureUrl): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: OptionalSecureUrl): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
     
-    @scala.inline
-    def setTimeCreated(value: Timestamp): Self = StObject.set(x, "TimeCreated", value.asInstanceOf[js.Any])
+    inline def setTimeCreated(value: Timestamp): Self = StObject.set(x, "TimeCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeCreatedUndefined: Self = StObject.set(x, "TimeCreated", js.undefined)
+    inline def setTimeCreatedUndefined: Self = StObject.set(x, "TimeCreated", js.undefined)
     
-    @scala.inline
-    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: Visibility): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Visibility): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

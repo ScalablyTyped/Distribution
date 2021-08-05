@@ -13,19 +13,15 @@ trait ComparatorDate extends StObject {
 }
 object ComparatorDate {
   
-  @scala.inline
-  def apply(comparator: CSSProperties, date: CSSProperties): ComparatorDate = {
+  inline def apply(comparator: CSSProperties, date: CSSProperties): ComparatorDate = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComparatorDate]
   }
   
-  @scala.inline
-  implicit class ComparatorDateMutableBuilder[Self <: ComparatorDate] (val x: Self) extends AnyVal {
+  extension [Self <: ComparatorDate](x: Self) {
     
-    @scala.inline
-    def setComparator(value: CSSProperties): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: CSSProperties): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: CSSProperties): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: CSSProperties): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

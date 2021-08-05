@@ -22,20 +22,16 @@ object infoMod extends Shortcut {
   }
   object InfoProps {
     
-    @scala.inline
-    def apply(): InfoProps = {
+    inline def apply(): InfoProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InfoProps]
     }
     
-    @scala.inline
-    implicit class InfoPropsMutableBuilder[Self <: InfoProps] (val x: Self) extends AnyVal {
+    extension [Self <: InfoProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

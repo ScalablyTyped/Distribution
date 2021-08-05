@@ -53,70 +53,49 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(): Event = {
+  inline def apply(): Event = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
+    inline def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
     
-    @scala.inline
-    def setCloudTrailEvent(value: String): Self = StObject.set(x, "CloudTrailEvent", value.asInstanceOf[js.Any])
+    inline def setCloudTrailEvent(value: String): Self = StObject.set(x, "CloudTrailEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudTrailEventUndefined: Self = StObject.set(x, "CloudTrailEvent", js.undefined)
+    inline def setCloudTrailEventUndefined: Self = StObject.set(x, "CloudTrailEvent", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "EventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "EventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNameUndefined: Self = StObject.set(x, "EventName", js.undefined)
+    inline def setEventNameUndefined: Self = StObject.set(x, "EventName", js.undefined)
     
-    @scala.inline
-    def setEventSource(value: String): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
+    inline def setEventSource(value: String): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceUndefined: Self = StObject.set(x, "EventSource", js.undefined)
+    inline def setEventSourceUndefined: Self = StObject.set(x, "EventSource", js.undefined)
     
-    @scala.inline
-    def setEventTime(value: Date): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: Date): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
+    inline def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: String): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: String): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "ReadOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "ReadOnly", js.undefined)
     
-    @scala.inline
-    def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

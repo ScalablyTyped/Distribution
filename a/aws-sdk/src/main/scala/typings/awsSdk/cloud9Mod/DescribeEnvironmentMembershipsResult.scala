@@ -18,28 +18,21 @@ trait DescribeEnvironmentMembershipsResult extends StObject {
 }
 object DescribeEnvironmentMembershipsResult {
   
-  @scala.inline
-  def apply(): DescribeEnvironmentMembershipsResult = {
+  inline def apply(): DescribeEnvironmentMembershipsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEnvironmentMembershipsResult]
   }
   
-  @scala.inline
-  implicit class DescribeEnvironmentMembershipsResultMutableBuilder[Self <: DescribeEnvironmentMembershipsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEnvironmentMembershipsResult](x: Self) {
     
-    @scala.inline
-    def setMemberships(value: EnvironmentMembersList): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
+    inline def setMemberships(value: EnvironmentMembersList): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
+    inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    @scala.inline
-    def setMembershipsVarargs(value: EnvironmentMember*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: EnvironmentMember*): Self = StObject.set(x, "memberships", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait UserAgentMetadata extends StObject {
 }
 object UserAgentMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     architecture: String,
     brands: js.Array[UserAgentBrandVersion],
     fullVersion: String,
@@ -36,31 +35,22 @@ object UserAgentMetadata {
     __obj.asInstanceOf[UserAgentMetadata]
   }
   
-  @scala.inline
-  implicit class UserAgentMetadataMutableBuilder[Self <: UserAgentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentMetadata](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrands(value: js.Array[UserAgentBrandVersion]): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
+    inline def setBrands(value: js.Array[UserAgentBrandVersion]): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandsVarargs(value: UserAgentBrandVersion*): Self = StObject.set(x, "brands", js.Array(value :_*))
+    inline def setBrandsVarargs(value: UserAgentBrandVersion*): Self = StObject.set(x, "brands", js.Array(value :_*))
     
-    @scala.inline
-    def setFullVersion(value: String): Self = StObject.set(x, "fullVersion", value.asInstanceOf[js.Any])
+    inline def setFullVersion(value: String): Self = StObject.set(x, "fullVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+    inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
   }
 }

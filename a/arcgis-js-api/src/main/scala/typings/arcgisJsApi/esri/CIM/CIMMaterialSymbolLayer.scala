@@ -26,34 +26,26 @@ trait CIMMaterialSymbolLayer
 }
 object CIMMaterialSymbolLayer {
   
-  @scala.inline
-  def apply(): CIMMaterialSymbolLayer = {
+  inline def apply(): CIMMaterialSymbolLayer = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMaterialSymbolLayer")
     __obj.asInstanceOf[CIMMaterialSymbolLayer]
   }
   
-  @scala.inline
-  implicit class CIMMaterialSymbolLayerMutableBuilder[Self <: CIMMaterialSymbolLayer] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMaterialSymbolLayer](x: Self) {
     
-    @scala.inline
-    def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setMaterialMode(
+    inline def setMaterialMode(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MaterialMode * / any */ String
     ): Self = StObject.set(x, "materialMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialModeUndefined: Self = StObject.set(x, "materialMode", js.undefined)
+    inline def setMaterialModeUndefined: Self = StObject.set(x, "materialMode", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialSymbolLayer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialSymbolLayer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

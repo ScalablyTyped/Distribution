@@ -28,37 +28,27 @@ trait CanaryRunConfigInput extends StObject {
 }
 object CanaryRunConfigInput {
   
-  @scala.inline
-  def apply(): CanaryRunConfigInput = {
+  inline def apply(): CanaryRunConfigInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryRunConfigInput]
   }
   
-  @scala.inline
-  implicit class CanaryRunConfigInputMutableBuilder[Self <: CanaryRunConfigInput] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryRunConfigInput](x: Self) {
     
-    @scala.inline
-    def setActiveTracing(value: NullableBoolean): Self = StObject.set(x, "ActiveTracing", value.asInstanceOf[js.Any])
+    inline def setActiveTracing(value: NullableBoolean): Self = StObject.set(x, "ActiveTracing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTracingUndefined: Self = StObject.set(x, "ActiveTracing", js.undefined)
+    inline def setActiveTracingUndefined: Self = StObject.set(x, "ActiveTracing", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVariables(value: EnvironmentVariablesMap): Self = StObject.set(x, "EnvironmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: EnvironmentVariablesMap): Self = StObject.set(x, "EnvironmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "EnvironmentVariables", js.undefined)
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "EnvironmentVariables", js.undefined)
     
-    @scala.inline
-    def setMemoryInMB(value: MaxSize3008): Self = StObject.set(x, "MemoryInMB", value.asInstanceOf[js.Any])
+    inline def setMemoryInMB(value: MaxSize3008): Self = StObject.set(x, "MemoryInMB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInMBUndefined: Self = StObject.set(x, "MemoryInMB", js.undefined)
+    inline def setMemoryInMBUndefined: Self = StObject.set(x, "MemoryInMB", js.undefined)
     
-    @scala.inline
-    def setTimeoutInSeconds(value: MaxFifteenMinutesInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutInSeconds(value: MaxFifteenMinutesInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
+    inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
   }
 }

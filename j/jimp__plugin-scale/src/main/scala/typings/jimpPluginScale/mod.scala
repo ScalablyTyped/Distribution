@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Scale]
+  inline def default(): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Scale]
   
   @js.native
   trait Scale extends StObject {

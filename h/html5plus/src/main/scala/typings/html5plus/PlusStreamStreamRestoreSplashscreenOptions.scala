@@ -31,25 +31,19 @@ trait PlusStreamStreamRestoreSplashscreenOptions extends StObject {
 }
 object PlusStreamStreamRestoreSplashscreenOptions {
   
-  @scala.inline
-  def apply(): PlusStreamStreamRestoreSplashscreenOptions = {
+  inline def apply(): PlusStreamStreamRestoreSplashscreenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusStreamStreamRestoreSplashscreenOptions]
   }
   
-  @scala.inline
-  implicit class PlusStreamStreamRestoreSplashscreenOptionsMutableBuilder[Self <: PlusStreamStreamRestoreSplashscreenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusStreamStreamRestoreSplashscreenOptions](x: Self) {
     
-    @scala.inline
-    def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
+    inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
+    inline def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

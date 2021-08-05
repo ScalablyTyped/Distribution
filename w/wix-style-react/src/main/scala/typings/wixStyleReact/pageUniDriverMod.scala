@@ -25,8 +25,7 @@ object pageUniDriverMod {
   }
   object PageUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundImageExists: () => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -41,26 +40,19 @@ object pageUniDriverMod {
       __obj.asInstanceOf[PageUniDriver]
     }
     
-    @scala.inline
-    implicit class PageUniDriverMutableBuilder[Self <: PageUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: PageUniDriver](x: Self) {
       
-      @scala.inline
-      def setBackgroundImageExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "backgroundImageExists", js.Any.fromFunction0(value))
+      inline def setBackgroundImageExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "backgroundImageExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageHtml(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getPageHtml", js.Any.fromFunction0(value))
+      inline def setGetPageHtml(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getPageHtml", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGradientClassNameExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "gradientClassNameExists", js.Any.fromFunction0(value))
+      inline def setGradientClassNameExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "gradientClassNameExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGradientContainerHeight(value: () => js.Promise[String]): Self = StObject.set(x, "gradientContainerHeight", js.Any.fromFunction0(value))
+      inline def setGradientContainerHeight(value: () => js.Promise[String]): Self = StObject.set(x, "gradientContainerHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClass(value: String => js.Promise[Boolean]): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => js.Promise[Boolean]): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTailExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "tailExists", js.Any.fromFunction0(value))
+      inline def setTailExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "tailExists", js.Any.fromFunction0(value))
     }
   }
 }

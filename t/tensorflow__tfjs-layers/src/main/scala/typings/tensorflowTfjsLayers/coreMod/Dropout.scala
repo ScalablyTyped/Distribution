@@ -15,11 +15,11 @@ class Dropout protected () extends Layer {
   
   /* protected */ def getNoiseShape(input: Tensor[Rank]): Shape = js.native
   
-  val noiseShape: js.Any = js.native
+  /* private */ val noiseShape: js.Any = js.native
   
-  val rate: js.Any = js.native
+  /* private */ val rate: js.Any = js.native
   
-  val seed: js.Any = js.native
+  /* private */ val seed: js.Any = js.native
 }
 /* static members */
 object Dropout {
@@ -32,6 +32,5 @@ object Dropout {
   @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Dropout.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

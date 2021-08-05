@@ -19,43 +19,31 @@ trait WorkbookChartSeries
 }
 object WorkbookChartSeries {
   
-  @scala.inline
-  def apply(): WorkbookChartSeries = {
+  inline def apply(): WorkbookChartSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartSeries]
   }
   
-  @scala.inline
-  implicit class WorkbookChartSeriesMutableBuilder[Self <: WorkbookChartSeries] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartSeries](x: Self) {
     
-    @scala.inline
-    def setFormat(value: NullableOption[WorkbookChartSeriesFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: NullableOption[WorkbookChartSeriesFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatNull: Self = StObject.set(x, "format", null)
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPoints(value: NullableOption[js.Array[WorkbookChartPoint]]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: NullableOption[js.Array[WorkbookChartPoint]]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsNull: Self = StObject.set(x, "points", null)
+    inline def setPointsNull: Self = StObject.set(x, "points", null)
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: WorkbookChartPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: WorkbookChartPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

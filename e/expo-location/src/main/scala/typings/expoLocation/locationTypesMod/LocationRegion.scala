@@ -20,40 +20,29 @@ trait LocationRegion extends StObject {
 }
 object LocationRegion {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double, radius: Double): LocationRegion = {
+  inline def apply(latitude: Double, longitude: Double, radius: Double): LocationRegion = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRegion]
   }
   
-  @scala.inline
-  implicit class LocationRegionMutableBuilder[Self <: LocationRegion] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRegion](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyOnEnter(value: Boolean): Self = StObject.set(x, "notifyOnEnter", value.asInstanceOf[js.Any])
+    inline def setNotifyOnEnter(value: Boolean): Self = StObject.set(x, "notifyOnEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyOnEnterUndefined: Self = StObject.set(x, "notifyOnEnter", js.undefined)
+    inline def setNotifyOnEnterUndefined: Self = StObject.set(x, "notifyOnEnter", js.undefined)
     
-    @scala.inline
-    def setNotifyOnExit(value: Boolean): Self = StObject.set(x, "notifyOnExit", value.asInstanceOf[js.Any])
+    inline def setNotifyOnExit(value: Boolean): Self = StObject.set(x, "notifyOnExit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyOnExitUndefined: Self = StObject.set(x, "notifyOnExit", js.undefined)
+    inline def setNotifyOnExitUndefined: Self = StObject.set(x, "notifyOnExit", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }
 }

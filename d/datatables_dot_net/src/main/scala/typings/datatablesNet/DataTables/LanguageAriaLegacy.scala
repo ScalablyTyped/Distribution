@@ -12,25 +12,19 @@ trait LanguageAriaLegacy extends StObject {
 }
 object LanguageAriaLegacy {
   
-  @scala.inline
-  def apply(): LanguageAriaLegacy = {
+  inline def apply(): LanguageAriaLegacy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageAriaLegacy]
   }
   
-  @scala.inline
-  implicit class LanguageAriaLegacyMutableBuilder[Self <: LanguageAriaLegacy] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageAriaLegacy](x: Self) {
     
-    @scala.inline
-    def setSSortAscending(value: String): Self = StObject.set(x, "sSortAscending", value.asInstanceOf[js.Any])
+    inline def setSSortAscending(value: String): Self = StObject.set(x, "sSortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSortAscendingUndefined: Self = StObject.set(x, "sSortAscending", js.undefined)
+    inline def setSSortAscendingUndefined: Self = StObject.set(x, "sSortAscending", js.undefined)
     
-    @scala.inline
-    def setSSortDescending(value: String): Self = StObject.set(x, "sSortDescending", value.asInstanceOf[js.Any])
+    inline def setSSortDescending(value: String): Self = StObject.set(x, "sSortDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSortDescendingUndefined: Self = StObject.set(x, "sSortDescending", js.undefined)
+    inline def setSSortDescendingUndefined: Self = StObject.set(x, "sSortDescending", js.undefined)
   }
 }

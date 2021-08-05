@@ -15,34 +15,25 @@ trait PopoverOptions extends StObject {
 }
 object PopoverOptions {
   
-  @scala.inline
-  def apply(): PopoverOptions = {
+  inline def apply(): PopoverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopoverOptions]
   }
   
-  @scala.inline
-  implicit class PopoverOptionsMutableBuilder[Self <: PopoverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopoverOptions](x: Self) {
     
-    @scala.inline
-    def setAir(value: popoverAirDef): Self = StObject.set(x, "air", value.asInstanceOf[js.Any])
+    inline def setAir(value: popoverAirDef): Self = StObject.set(x, "air", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAirUndefined: Self = StObject.set(x, "air", js.undefined)
+    inline def setAirUndefined: Self = StObject.set(x, "air", js.undefined)
     
-    @scala.inline
-    def setImage(value: popoverImageDef): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: popoverImageDef): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLink(value: popoverLinkDef): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: popoverLinkDef): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: (js.Tuple2[link, js.Array[popoverLinkLinkOptions]])*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: (js.Tuple2[link, js.Array[popoverLinkLinkOptions]])*): Self = StObject.set(x, "link", js.Array(value :_*))
   }
 }

@@ -11,27 +11,23 @@ object gtinStrings {
   sealed trait `GTIN-12`
     extends StObject
        with GtinFormat
-  @scala.inline
-  def `GTIN-12`: `GTIN-12` = "GTIN-12".asInstanceOf[`GTIN-12`]
+  inline def `GTIN-12`: `GTIN-12` = "GTIN-12".asInstanceOf[`GTIN-12`]
   
   @js.native
   sealed trait `GTIN-13`
     extends StObject
        with GtinFormat
-  @scala.inline
-  def `GTIN-13`: `GTIN-13` = "GTIN-13".asInstanceOf[`GTIN-13`]
+  inline def `GTIN-13`: `GTIN-13` = "GTIN-13".asInstanceOf[`GTIN-13`]
   
   @js.native
   sealed trait `GTIN-14`
     extends StObject
        with GtinFormat
-  @scala.inline
-  def `GTIN-14`: `GTIN-14` = "GTIN-14".asInstanceOf[`GTIN-14`]
+  inline def `GTIN-14`: `GTIN-14` = "GTIN-14".asInstanceOf[`GTIN-14`]
   
   @js.native
   sealed trait `GTIN-8`
     extends StObject
        with GtinFormat
-  @scala.inline
-  def `GTIN-8`: `GTIN-8` = "GTIN-8".asInstanceOf[`GTIN-8`]
+  inline def `GTIN-8`: `GTIN-8` = "GTIN-8".asInstanceOf[`GTIN-8`]
 }

@@ -40,27 +40,21 @@ object urlPopoverMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(Props: typings.wordpressComponents.popoverMod.Popover.Props): Props = {
+      inline def apply(Props: typings.wordpressComponents.popoverMod.Popover.Props): Props = {
         val __obj = js.Dynamic.literal()
         js.Dynamic.global.Object.assign(__obj, Props)
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAdditionalControls(value: ReactNode): Self = StObject.set(x, "additionalControls", value.asInstanceOf[js.Any])
+        inline def setAdditionalControls(value: ReactNode): Self = StObject.set(x, "additionalControls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAdditionalControlsUndefined: Self = StObject.set(x, "additionalControls", js.undefined)
+        inline def setAdditionalControlsUndefined: Self = StObject.set(x, "additionalControls", js.undefined)
         
-        @scala.inline
-        def setRenderSettings(value: () => Element): Self = StObject.set(x, "renderSettings", js.Any.fromFunction0(value))
+        inline def setRenderSettings(value: () => Element): Self = StObject.set(x, "renderSettings", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRenderSettingsUndefined: Self = StObject.set(x, "renderSettings", js.undefined)
+        inline def setRenderSettingsUndefined: Self = StObject.set(x, "renderSettings", js.undefined)
       }
     }
   }
